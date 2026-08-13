@@ -21,6 +21,8 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [🔔 通知与集成](#-通知与集成)
 - [🧑‍💻 开发与运行时](#-开发与运行时)
 - [🎮 娱乐](#-娱乐)
+- [徽章](#徽章)
+- [免责声明](#免责声明)
 
 ## 🎨 UI 增强
 
@@ -161,3 +163,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 ```markdown
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
 ```
+
+## 免责声明
+
+本项目是社区维护的索引。插件由各自作者开发与维护，收录不构成背书，亦不对任何插件的安全性、质量或维护状态作出保证。安装插件即在你的机器上运行第三方代码——请自行审阅源码、风险自担。本项目与 DeepSeek 无隶属关系。

@@ -22,6 +22,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [Development & Runtime](#development--runtime)
 - [Just for Fun](#just-for-fun)
 - [Badge](#badge)
+- [Disclaimer](#disclaimer)
 
 ## UI Enhancements
 
@@ -162,3 +163,7 @@ Listed here? Show it off:
 ```markdown
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
 ```
+
+## Disclaimer
+
+This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
