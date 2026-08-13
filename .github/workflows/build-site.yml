@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/index.html
+          git add docs README.md README.zh.md
           git diff --cached --quiet && echo "no changes" && exit 0
           git commit -m "chore: rebuild site from README"
           git push
