@@ -40,7 +40,7 @@ function parseReadme(path) {
       }
       continue
     }
-    const m = line.match(/^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) — (.+)$/)
+    const m = line.match(/^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) [—-] (.+)$/)
     if (m && cat) out.set(m[2], { name: m[1], url: m[2], desc: m[3], cat })
   }
   return out
