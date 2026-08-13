@@ -6,6 +6,10 @@ English | [中文](README.zh.md)
 
 > A curated list of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
+DeepSeek Harness is DeepSeek's open-source agent harness — a runnable coding agent (Web and headless), built on a framework where everything is a plugin: models, tools, sandboxes, session storage, UI, even the agent loop itself. Plugins can extend the official coding agent, swap out its core parts, or assemble something entirely different.
+
+This list collects community plugins that are installable via `dsh plugin add` (each declares a `dsh.bundle` manifest). Every entry is reviewed before it lands here.
+
 **104** plugins · [PRs welcome](#contributing)
 
 ## Contents
