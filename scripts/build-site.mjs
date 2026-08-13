@@ -75,12 +75,12 @@ const jsonld = (url) => JSON.stringify({
   itemListElement: ordered.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 
-function buildRows(loc) {
+function buildRows(loc, only) {
   let idx = 0
-  return CAT_IDS.map((id) => {
+  return CAT_IDS.filter((id) => !only || id === only).map((id) => {
     const group = ordered.filter((e) => e.cat === id)
     if (!group.length) return ''
-    const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}">${loc.categories[id]} <small>${group.length}</small></h2></li>`
+    const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}"><a href="${loc.urlPath}${id}/">${loc.categories[id]}</a> <small>${group.length}</small></h2></li>`
     const items = group.map((e) => {
       idx++
       const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
@@ -105,6 +105,16 @@ function buildChips(loc) {
     ...CAT_IDS.map((id) => {
       const n = ordered.filter((e) => e.cat === id).length
       return `      <button class="chip" type="button" data-cat="${id}">${loc.categories[id]} <small>${n}</small></button>`
+    }),
+  ].join('\n')
+}
+
+function buildChipLinks(loc, activeId) {
+  return [
+    `      <a class="chip${activeId ? '' : ' active'}" href="${loc.urlPath}">${loc.strings.ALL} <small>${N}</small></a>`,
+    ...CAT_IDS.map((id) => {
+      const n = ordered.filter((e) => e.cat === id).length
+      return `      <a class="chip${id === activeId ? ' active' : ''}" href="${loc.urlPath}${id}/">${loc.categories[id]} <small>${n}</small></a>`
     }),
   ].join('\n')
 }
@@ -145,6 +155,46 @@ for (const loc of LOCALES) {
   fs.writeFileSync(loc.out, page)
 }
 
+// Category pages: /{cat}/ per locale
+const catJsonld = (url, id) => JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Awesome DSH Plugin',
+  url,
+  numberOfItems: ordered.filter((e) => e.cat === id).length,
+  itemListElement: ordered.filter((e) => e.cat === id).map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
+})
+for (const loc of LOCALES) {
+  for (const id of CAT_IDS) {
+    const n = ordered.filter((e) => e.cat === id).length
+    if (!n) continue
+    const url = `${ORIGIN}${loc.urlPath}${id}/`
+    const catHreflangs = [
+      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}${id}/">`),
+      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/">`,
+    ].join('\n')
+    let page = master
+    page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${catJsonld(url, id)}</script>`)
+    page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, `$1\n\n${buildRows(loc, id)}\n\n  $2`)
+    page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, `$1\n${buildChipLinks(loc, id)}\n    $2`)
+    page = page
+      .replaceAll('__LANG__', loc.htmlLang)
+      .replaceAll('__TITLE__', loc.CAT_TITLE.replace('{CAT}', loc.categories[id]))
+      .replaceAll('__DESC__', loc.CAT_DESC.replace('{CAT}', loc.categories[id]).replace('{N}', n))
+      .replaceAll('__URL__', url)
+      .replaceAll('__HREFLANGS__', catHreflangs)
+      .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
+      .replaceAll('__LOCALE_LINKS__', LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}${id}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
+      .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
+      .replaceAll('__LANG_REDIRECT__', '')
+      .replaceAll('__FEED__', loc.feed)
+    for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
+    const outDir = loc.out.replace(/index\.html$/, '') + id
+    fs.mkdirSync(outDir, { recursive: true })
+    fs.writeFileSync(`${outDir}/index.html`, page)
+  }
+}
+
 // Atom feeds: newest 30 entries per locale
 for (const loc of LOCALES) {
   const recent = [...ordered].sort((a, b2) => b2.added < a.added ? -1 : b2.added > a.added ? 1 : 0).slice(0, 30)
@@ -180,6 +230,12 @@ ${LOCALES.map((l) => `  <url>
     <changefreq>daily</changefreq>
 ${alternates}
   </url>`).join('\n')}
+${LOCALES.flatMap((l) => CAT_IDS.map((id) => `  <url>
+    <loc>${ORIGIN}${l.urlPath}${id}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}${id}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/"/>`].join('\n')}
+  </url>`)).join('\n')}
 </urlset>
 `)
 

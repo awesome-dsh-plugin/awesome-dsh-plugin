@@ -25,6 +25,8 @@ export default [
     TITLE: 'Awesome DSH Plugin — Curated DeepSeek Harness (dsh) Plugin List',
     DESC: 'A curated list of {N} DeepSeek Harness (dsh) plugins: UI enhancements, sessions, tools, workflow, notifications, development, and fun. Updated continuously.',
     SEARCH_PH: 'Search plugins…',
+    CAT_TITLE: '{CAT} — Awesome DSH Plugin',
+    CAT_DESC: '{N} curated {CAT} plugins for DeepSeek Harness (dsh). Install commands, descriptions, and links — updated continuously.',
     COPY_LABEL: 'Copy install command',
     COPY_TEXT: 'copy install',
     categories: {
@@ -70,6 +72,8 @@ export default [
     TITLE: 'Awesome DSH Plugin — DeepSeek Harness（dsh）插件精选列表',
     DESC: 'DeepSeek Harness（dsh）插件精选列表，收录 {N} 个：UI 增强、会话与消息、工具、工作流与自动化、通知与集成、开发与娱乐，持续更新。',
     SEARCH_PH: '搜索插件…',
+    CAT_TITLE: '{CAT} — Awesome DSH Plugin · DeepSeek Harness 插件精选',
+    CAT_DESC: 'DeepSeek Harness（dsh）{CAT}插件精选，共 {N} 个：含安装命令、功能描述与仓库链接，持续更新。',
     COPY_LABEL: '复制安装命令',
     COPY_TEXT: '复制安装命令',
     categories: {
