@@ -72,6 +72,7 @@ English | [中文](README.zh.md)
 - [dsh-tool-time](https://github.com/omdsh-dev/dsh-tool-time) — Strict ISO 8601 parsing, IANA timezone conversion, and UTC calendar arithmetic.
 - [dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — Build auditable KB packs (SQLite FTS5) from md/txt/docx/pdf with deterministic retrieval and original-text reading.
 - [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — Expose MineRU document parsing tools to the model.
+- [dsh-cowork](https://github.com/Jesse-njx/dsh-cowork) — doc_read/doc_write: bounded, cell-addressed reading and editing of xlsx / pdf / docx / pptx / ipynb, plus an MCP server and CLI.
 - [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — Per-agent on-demand tool discovery and progressive schema disclosure.
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — OpenMAIC: classrooms, slides, interactive widgets, and Socratic teaching.
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — Academic assistant plugin.
