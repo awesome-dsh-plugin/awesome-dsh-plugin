@@ -293,10 +293,13 @@ dsh plugin --profile default add github:&lt;owner&gt;/&lt;repo&gt;</pre>
 </footer>
 
 <script>
-// language: saved choice > browser default
+// language: URL param > saved choice > browser default
 const html = document.documentElement;
+const param = new URLSearchParams(location.search).get('lang');
 const saved = localStorage.getItem('lang');
-if (saved) html.lang = saved;
+if (param === 'en') html.lang = 'en';
+else if (param === 'zh') html.lang = 'zh-CN';
+else if (saved) html.lang = saved;
 else if (!/^zh/i.test(navigator.language)) html.lang = 'en';
 document.getElementById('langToggle').addEventListener('click', () => {
   html.lang = html.lang === 'en' ? 'zh-CN' : 'en';
