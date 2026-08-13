@@ -1111,7 +1111,7 @@ const savedLang = localStorage.getItem('lang');
 if (langParam === 'en') html.lang = 'en';
 else if (langParam === 'zh') html.lang = 'zh-CN';
 else if (savedLang) html.lang = savedLang;
-else if (!/^zh/i.test(navigator.language)) html.lang = 'en';
+else html.lang = 'en'; // default: English
 const I18N = {
   'zh-CN': { placeholder: '搜索插件…', search: '搜索插件' },
   'en':    { placeholder: 'Search plugins…', search: 'Search plugins' },
