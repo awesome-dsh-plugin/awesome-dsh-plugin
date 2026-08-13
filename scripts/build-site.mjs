@@ -186,4 +186,10 @@ ${alternates}
 </urlset>
 `)
 
-console.log(`site built: ${N} rows × 2 locales + sitemap`)
+// keep the hand-written counts in the READMEs in sync
+const enReadme = fs.readFileSync('README.md', 'utf8').replace(/\*\*\d+\*\* plugins/, `**${N}** plugins`)
+fs.writeFileSync('README.md', enReadme)
+const zhReadme = fs.readFileSync('README.zh.md', 'utf8').replace(/\*\*\d+\*\* 个插件/, `**${N}** 个插件`)
+fs.writeFileSync('README.zh.md', zhReadme)
+
+console.log(`site built: ${N} rows × 2 locales + sitemap, README counts synced`)

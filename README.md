@@ -4,7 +4,7 @@ English | [中文](README.zh.md)
 
 > A curated list of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-**94** plugins · [Website](https://awesome-dsh-plugin.com/) · [PRs welcome](#contributing)
+**95** plugins · [Website](https://awesome-dsh-plugin.com/) · [PRs welcome](#contributing)
 
 ## Contents
 
