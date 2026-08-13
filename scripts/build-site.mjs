@@ -14,6 +14,7 @@ import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
+const DATES_FILE = 'data/added-dates.json'
 const CAT_IDS = ['ui', 'session', 'tools', 'workflow', 'notify', 'dev', 'fun']
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -52,6 +53,13 @@ console.log(`${entries.length} entries parsed across ${LOCALES.length} locales`)
 
 const ordered = CAT_IDS.flatMap((id) => entries.filter((e) => e.cat === id))
 const N = ordered.length
+
+// added-date ledger: existing URLs keep their date, new URLs are stamped today
+const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
+const today0 = new Date().toISOString().slice(0, 10)
+for (const e of ordered) if (!dates[e.url]) dates[e.url] = today0
+fs.writeFileSync(DATES_FILE, JSON.stringify(Object.fromEntries(Object.entries(dates).sort()), null, 1))
+for (const e of ordered) e.added = dates[e.url]
 
 const hreflangs = [
   ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}">`),
@@ -131,9 +139,32 @@ for (const loc of LOCALES) {
     .replaceAll('__LOCALE_LINKS__', localeLinks(loc))
     .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
     .replaceAll('__LANG_REDIRECT__', langRedirect(loc))
+    .replaceAll('__FEED__', loc.feed)
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
+}
+
+// Atom feeds: newest 30 entries per locale
+for (const loc of LOCALES) {
+  const recent = [...ordered].sort((a, b2) => b2.added < a.added ? -1 : b2.added > a.added ? 1 : 0).slice(0, 30)
+  const feed = `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>${esc(loc.TITLE)}</title>
+  <id>${ORIGIN}${loc.urlPath}</id>
+  <link href="${ORIGIN}${loc.urlPath}"/>
+  <link rel="self" href="${ORIGIN}${loc.feed}"/>
+  <updated>${new Date().toISOString()}</updated>
+${recent.map((e) => `  <entry>
+    <title>${esc(e.name)}</title>
+    <id>${e.url}</id>
+    <link href="${e.url}"/>
+    <updated>${e.added}T00:00:00Z</updated>
+    <summary>${esc(e.descs[loc.code])}</summary>
+  </entry>`).join('\n')}
+</feed>
+`
+  fs.writeFileSync(loc.feedOut, feed)
 }
 
 const today = new Date().toISOString().slice(0, 10)

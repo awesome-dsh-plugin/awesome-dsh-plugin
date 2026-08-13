@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Awesome DSH Plugin — Curated DeepSeek Harness (dsh) Plugin List</title>
+  <id>https://awesome-dsh-plugin.com/</id>
+  <link href="https://awesome-dsh-plugin.com/"/>
+  <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
+  <updated>2026-08-13T17:53:00.471Z</updated>
+  <entry>
+    <title>dsh-crosstalk</title>
+    <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
+    <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</summary>
+  </entry>
+  <entry>
+    <title>nowledge-mem-deepseek-harness</title>
+    <id>https://github.com/nowledge-co/nowledge-mem-deepseek-harness</id>
+    <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</summary>
+  </entry>
+  <entry>
+    <title>dsh-memory</title>
+    <id>https://github.com/Jesse-njx/dsh-memory</id>
+    <link href="https://github.com/Jesse-njx/dsh-memory"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</summary>
+  </entry>
+  <entry>
+    <title>dsh-cowork</title>
+    <id>https://github.com/Jesse-njx/dsh-cowork</id>
+    <link href="https://github.com/Jesse-njx/dsh-cowork"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Bounded, cell-addressed `doc_read`/`doc_write` for xlsx / pdf / docx / pptx / ipynb, plus an MCP server and CLI.</summary>
+  </entry>
+  <entry>
+    <title>dsh-skillport</title>
+    <id>https://github.com/Jesse-njx/dsh-skillport</id>
+    <link href="https://github.com/Jesse-njx/dsh-skillport"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Bring your existing Agent Skills (SKILL.md) library to DSH: discover skills across Claude/Codex/Cursor/Gemini paths, inject a progressive-disclosure index, and load bodies on demand.</summary>
+  </entry>
+  <entry>
+    <title>dsh-apple-mode</title>
+    <id>https://github.com/jihongboo/dsh-apple-mode</id>
+    <link href="https://github.com/jihongboo/dsh-apple-mode"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Xcode AI integration for DSH: 26 Xcode MCP tools (mcpbridge) + Apple platform skills + Xcode Intelligence-style persona (agent preset or global bundle).</summary>
+  </entry>
+  <entry>
+    <title>dsh-routines</title>
+    <id>https://github.com/Jesse-njx/dsh-routines</id>
+    <link href="https://github.com/Jesse-njx/dsh-routines"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.</summary>
+  </entry>
+  <entry>
+    <title>dsh-chatnode-wechat</title>
+    <id>https://github.com/Jesse-njx/dsh-chatnode-wechat</id>
+    <link href="https://github.com/Jesse-njx/dsh-chatnode-wechat"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Chat with, monitor, and approve your DSH agents from WeChat via the iLink gateway: text both ways, session targeting, digest heartbeats, and numbered approval prompts.</summary>
+  </entry>
+  <entry>
+    <title>dsh-polyglot</title>
+    <id>https://github.com/Jesse-njx/dsh-polyglot</id>
+    <link href="https://github.com/Jesse-njx/dsh-polyglot"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.</summary>
+  </entry>
+  <entry>
+    <title>dsh-tianshu-tui</title>
+    <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
+    <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>A terminal UI (TUI) for DeepSeek Harness.</summary>
+  </entry>
+  <entry>
+    <title>dsh-at-file</title>
+    <id>https://github.com/omdsh-dev/dsh-at-file</id>
+    <link href="https://github.com/omdsh-dev/dsh-at-file"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</summary>
+  </entry>
+  <entry>
+    <title>ui-status-label</title>
+    <id>https://github.com/alingalingling/ui-status-label</id>
+    <link href="https://github.com/alingalingling/ui-status-label"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Customize the &quot;deep diving&quot; thinking status label to anything you like.</summary>
+  </entry>
+  <entry>
+    <title>dsh-openpencil</title>
+    <id>https://github.com/ZSeven-W/dsh-openpencil</id>
+    <link href="https://github.com/ZSeven-W/dsh-openpencil"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>OpenPencil design preview and editing plugin.</summary>
+  </entry>
+  <entry>
+    <title>dsh-visualize</title>
+    <id>https://github.com/Nagi-ovo/dsh-visualize</id>
+    <link href="https://github.com/Nagi-ovo/dsh-visualize"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</summary>
+  </entry>
+  <entry>
+    <title>dsh-side-panel</title>
+    <id>https://github.com/ccq1/dsh-side-panel</id>
+    <link href="https://github.com/ccq1/dsh-side-panel"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Side panel with file browser, terminal, and Git review for quick file previews.</summary>
+  </entry>
+  <entry>
+    <title>dsh-focus-chat</title>
+    <id>https://github.com/dingyi222666/dsh-focus-chat</id>
+    <link href="https://github.com/dingyi222666/dsh-focus-chat"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>A &quot;focus chat&quot; minimal view that shows only final outputs.</summary>
+  </entry>
+  <entry>
+    <title>dsh-genui</title>
+    <id>https://github.com/omdsh-dev/dsh-genui</id>
+    <link href="https://github.com/omdsh-dev/dsh-genui"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</summary>
+  </entry>
+  <entry>
+    <title>dsh-annotation</title>
+    <id>https://github.com/omdsh-dev/dsh-annotation</id>
+    <link href="https://github.com/omdsh-dev/dsh-annotation"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Select text → annotate → send with your message; replies map back to each annotation.</summary>
+  </entry>
+  <entry>
+    <title>dsh-navbar</title>
+    <id>https://github.com/vlln/dsh-navbar</id>
+    <link href="https://github.com/vlln/dsh-navbar"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Conversation node navigation bar for quick jumps between user messages.</summary>
+  </entry>
+  <entry>
+    <title>dsh-task-status</title>
+    <id>https://github.com/vlln/dsh-task-status</id>
+    <link href="https://github.com/vlln/dsh-task-status"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Background task status bar: progress plus live output tail on the chat page.</summary>
+  </entry>
+  <entry>
+    <title>dsh-web-archive</title>
+    <id>https://github.com/renat3u/dsh-web-archive</id>
+    <link href="https://github.com/renat3u/dsh-web-archive"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Collapse noisy messages (Think, Bash, etc.) in conversations.</summary>
+  </entry>
+  <entry>
+    <title>dsh-spotlight</title>
+    <id>https://github.com/0xsline/dsh-spotlight</id>
+    <link href="https://github.com/0xsline/dsh-spotlight"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Keyboard-first command palette for the DSH Web UI.</summary>
+  </entry>
+  <entry>
+    <title>dsh-101</title>
+    <id>https://github.com/bill9109/dsh-101</id>
+    <link href="https://github.com/bill9109/dsh-101"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Document reading mode for DSH.</summary>
+  </entry>
+  <entry>
+    <title>dsh-drag-and-drop</title>
+    <id>https://github.com/bill9109/dsh-drag-and-drop</id>
+    <link href="https://github.com/bill9109/dsh-drag-and-drop"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Cross-platform file drag-and-drop with raw path insertion, no file copying.</summary>
+  </entry>
+  <entry>
+    <title>dsh-deeplink</title>
+    <id>https://github.com/qyw233/dsh-deeplink</id>
+    <link href="https://github.com/qyw233/dsh-deeplink"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Deep links: open a specific session or workspace via `?session=` / `?workspace=`.</summary>
+  </entry>
+  <entry>
+    <title>dsh-diff-viewer</title>
+    <id>https://github.com/lehhair/dsh-diff-viewer</id>
+    <link href="https://github.com/lehhair/dsh-diff-viewer"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>PiUI-style diff viewer replacing the stock DiffBlock for write/edit tool calls.</summary>
+  </entry>
+  <entry>
+    <title>ex-setting</title>
+    <id>https://github.com/omdsh-dev/ex-setting</id>
+    <link href="https://github.com/omdsh-dev/ex-setting"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Settings extensions for DSH.</summary>
+  </entry>
+  <entry>
+    <title>web-components</title>
+    <id>https://github.com/omdsh-dev/web-components</id>
+    <link href="https://github.com/omdsh-dev/web-components"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Web Components support.</summary>
+  </entry>
+  <entry>
+    <title>dsh-turn-navigator</title>
+    <id>https://github.com/vibeinging/dsh-turn-navigator</id>
+    <link href="https://github.com/vibeinging/dsh-turn-navigator"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Turn navigation for the DSH Web UI.</summary>
+  </entry>
+  <entry>
+    <title>dsh-turn-rewind</title>
+    <id>https://github.com/Anionex/dsh-turn-rewind</id>
+    <link href="https://github.com/Anionex/dsh-turn-rewind"/>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Rewind conversation and workspace state, powered by a persistent Change Ledger.</summary>
+  </entry>
+</feed>
