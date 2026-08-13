@@ -1,12 +1,12 @@
 # Awesome DSH Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
 
-![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com)
 
 English | [中文](README.zh.md)
 
 > A curated list of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-**104** plugins · [Website](https://awesome-dsh-plugin.com/) · [PRs welcome](#contributing)
+**104** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
