@@ -117,7 +117,8 @@ h1{
   text-transform:uppercase;
   text-wrap:balance;
 }
-h1 em{font-style:normal;color:var(--accent)}
+h1 em{display:block;font-style:normal;color:var(--accent)}
+h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .tagline{margin-top:1rem;max-width:40rem;color:var(--text-2);font-size:clamp(.95rem,1.6vw,1.05rem);text-wrap:pretty}
 .tagline b{color:var(--text);font-weight:700}
 .issue-line{
@@ -258,7 +259,7 @@ footer{padding-block:0 3rem}
         <rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" fill="#c0392b"/>
       </svg>
       <div>
-        <h1 translate="no">Awesome<br>DeepSeek Harness<br><em>(DSH)</em> Plugin</h1>
+        <h1 translate="no"><span class="h1-sm">Awesome</span><em>DeepSeek Harness</em><span class="h1-sm">(DSH) Plugin</span></h1>
         <p class="tagline">
           <b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表。
         </p>
