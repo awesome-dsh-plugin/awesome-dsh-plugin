@@ -52,26 +52,31 @@ console.log(`${entries.length} entries parsed`)
 // Order: category order, then README order within category (already curated).
 const ordered = CATS.flatMap(([id]) => entries.filter((e) => e.cat === id))
 
-// Depth rail: accelerating dive that lands at 6,000 m on the last row.
 const N = ordered.length
-const depth = (i) => Math.round((6000 * Math.pow((i + 1) / N, 1.35)) / 10) * 10
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
-const rows = ordered.map((e, i) => {
-  const d = depth(i).toLocaleString('en-US')
-  const delay = Math.min(i * 0.03, 0.45).toFixed(2)
-  const repo = e.url.replace('https://github.com/', '')
-  const cmd = `dsh plugin --profile web add github:${repo}`
-  return `    <li data-cat="${e.cat}" style="animation-delay:${delay}s">
-      <div class="depth"><span class="no">${String(i + 1).padStart(2, '0')}</span><span>−${d} m</span></div>
+let idx = 0
+const rows = CATS.map(([id, emoji, zhName, enName]) => {
+  const group = ordered.filter((e) => e.cat === id)
+  if (!group.length) return ''
+  const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}">${emoji} <span class="zh">${zhName}</span><span class="en">${enName}</span> <small>${group.length}</small></h2></li>`
+  const items = group.map((e) => {
+    idx++
+    const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
+    const repo = e.url.replace('https://github.com/', '')
+    const cmd = `dsh plugin --profile web add github:${repo}`
+    return `    <li class="item" data-cat="${e.cat}" style="animation-delay:${delay}s">
+      <span class="no" aria-hidden="true">№ ${String(idx).padStart(2, '0')}</span>
       <div>
-        <h2><a href="${e.url}" rel="noopener">${esc(e.name)}</a><span class="by">${esc(e.owner)}</span></h2>
+        <h3><a href="${e.url}" rel="noopener" translate="no">${esc(e.name)}</a><span class="by" translate="no">${esc(e.owner)}</span></h3>
         <p><span class="zh">${esc(e.zh)}</span><span class="en">${esc(e.en)}</span></p>
-        <button class="copy" type="button" data-cmd="${esc(cmd)}"><span class="zh">复制安装命令</span><span class="en">copy install command</span></button>
       </div>
+      <button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="复制安装命令 / Copy install command"><span class="zh">复制安装命令</span><span class="en">copy install</span></button>
     </li>`
-}).join('\n\n')
+  }).join('\n\n')
+  return sec + '\n\n' + items
+}).filter(Boolean).join('\n\n')
 
 const chips = [
   `      <button class="chip active" type="button" data-cat="all"><span class="zh">全部</span><span class="en">All</span> <small>${N}</small></button>`,
@@ -95,7 +100,6 @@ let html = fs.readFileSync('docs/index.html', 'utf8')
 html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">\n${jsonld}\n</script>`)
 html = html.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, `$1\n\n${rows}\n\n  $2`)
 html = html.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, `$1\n${chips}\n    $2`)
-html = html.replace(/94 <span class="zh">[^<]*<\/span><span class="en">[^<]*<\/span>/, `${N} <span class="zh">个插件 · GitHub ↗</span><span class="en">plugins · GitHub ↗</span>`)
 
 fs.writeFileSync('docs/index.html', html)
 console.log(`site built: ${N} rows`)
