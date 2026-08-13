@@ -24,7 +24,7 @@ function parseReadme(loc) {
   const out = new Map() // url -> {name, url, desc, cat}
   let cat = null
   for (const line of text.split('\n')) {
-    const h = line.match(/^## (.+)$/)
+    const h = line.match(/^#{2,3} (.+)$/)
     if (h) {
       cat = CAT_IDS.find((id) => h[1].includes(loc.categories[id])) ?? null
       continue

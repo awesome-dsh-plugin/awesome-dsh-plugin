@@ -1,4 +1,4 @@
-# Awesome DSH Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
+# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-zh.png)](https://awesome-dsh-plugin.com/zh/)
 
@@ -10,21 +10,24 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 
 本列表收录可通过 `dsh plugin add` 安装的社区插件（均声明了 `dsh.bundle` manifest）。
 
-**104** 个插件 · 欢迎 [PR](#贡献)
+**105** 个插件 · 欢迎 [PR](#贡献)
 
 ## 目录
 
-- [🎨 UI 增强](#-ui-增强)
-- [💬 会话与消息](#-会话与消息)
-- [🛠️ 工具与能力](#️-工具与能力)
-- [🔁 工作流与自动化](#-工作流与自动化)
-- [🔔 通知与集成](#-通知与集成)
-- [🧑‍💻 开发与运行时](#-开发与运行时)
-- [🎮 娱乐](#-娱乐)
+- [插件](#插件)
+  - [🎨 UI 增强](#-ui-增强)
+  - [💬 会话与消息](#-会话与消息)
+  - [🛠️ 工具与能力](#️-工具与能力)
+  - [🔁 工作流与自动化](#-工作流与自动化)
+  - [🔔 通知与集成](#-通知与集成)
+  - [🧑‍💻 开发与运行时](#-开发与运行时)
+  - [🎮 娱乐](#-娱乐)
 - [徽章](#徽章)
 - [免责声明](#免责声明)
 
-## 🎨 UI 增强
+## 插件
+
+### 🎨 UI 增强
 
 - [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — DeepSeek Harness 的终端 UI（TUI）。
 - [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。
@@ -46,8 +49,9 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [ex-setting](https://github.com/omdsh-dev/ex-setting) — DSH 的设置扩展。
 - [web-components](https://github.com/omdsh-dev/web-components) — Web Components 支持。
 - [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) — 对话轮次导航。
+- [dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) — 右侧圆点时间轴导航条，点击跳转到任意用户消息。
 
-## 💬 会话与消息
+### 💬 会话与消息
 
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
 - [dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
@@ -63,7 +67,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) — 带实时预览的用户/内置 system prompt 分节编辑器。
 - [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 把 Claude Code / Codex / ChatGPT / Cursor 的聊天记录全保真导入为可续聊的 DSH 会话。
 
-## 🛠️ 工具与能力
+### 🛠️ 工具与能力
 
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — 让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) — 用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。
@@ -88,7 +92,8 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — 学术助手插件。
 - [dsh-apple-mode](https://github.com/jihongboo/dsh-apple-mode) — DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。
-## 🔁 工作流与自动化
+
+### 🔁 工作流与自动化
 
 - [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) — 把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — AgentTeams 多智能体团队。
@@ -102,7 +107,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [dsh-track](https://github.com/fakechris/dsh-track) — 嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) — 搭配一个副模型，每轮被动审查并注入见解。
 
-## 🔔 通知与集成
+### 🔔 通知与集成
 
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) — 从 Web GUI 一键在 VS Code 中打开工作区目录。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification) — 回合完成桌面通知，按结果分控 + 关键词过滤。
@@ -113,7 +118,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) — 桌面通知提醒。
 - [dsh-webbridge](https://github.com/bill9109/dsh-webbridge) — DSH 结合 Kimi WebBridge。
 
-## 🧑‍💻 开发与运行时
+### 🧑‍💻 开发与运行时
 
 - [fabric](https://github.com/omdsh-dev/fabric) — 类似 MC Fabric 的 hook 处理器。
 - [dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。
@@ -134,7 +139,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) — Qwen 多模态插件支持。
 - [dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — TPS 指标插件。
 
-## 🎮 娱乐
+### 🎮 娱乐
 
 - [dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — 2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。
 - [dsh-gomoku](https://github.com/omdsh-dev/dsh-gomoku) — 与 AI 下五子棋，也可让 AI 对局比棋力。

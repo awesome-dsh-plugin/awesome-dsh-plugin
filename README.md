@@ -1,4 +1,4 @@
-﻿# Awesome DSH Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
+# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com)
 
@@ -10,21 +10,24 @@ DeepSeek Harness is DeepSeek's open-source agent harness — a runnable coding a
 
 This list collects community plugins that are installable via `dsh plugin add` (each declares a `dsh.bundle` manifest).
 
-**104** plugins · [PRs welcome](#contributing)
+**105** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
-- [UI Enhancements](#ui-enhancements)
-- [Sessions & Messages](#sessions--messages)
-- [Tools & Capabilities](#tools--capabilities)
-- [Workflow & Automation](#workflow--automation)
-- [Notifications & Integrations](#notifications--integrations)
-- [Development & Runtime](#development--runtime)
-- [Just for Fun](#just-for-fun)
+- [Plugins](#plugins)
+  - [UI Enhancements](#ui-enhancements)
+  - [Sessions & Messages](#sessions--messages)
+  - [Tools & Capabilities](#tools--capabilities)
+  - [Workflow & Automation](#workflow--automation)
+  - [Notifications & Integrations](#notifications--integrations)
+  - [Development & Runtime](#development--runtime)
+  - [Just for Fun](#just-for-fun)
 - [Badge](#badge)
 - [Disclaimer](#disclaimer)
 
-## UI Enhancements
+## Plugins
+
+### UI Enhancements
 
 - [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) - A terminal UI (TUI) for DeepSeek Harness.
 - [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) - Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.
@@ -48,7 +51,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) - Turn navigation for the DSH Web UI.
 - [dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) - Right-side dot-timeline rail: jump between user messages.
 
-## Sessions & Messages
+### Sessions & Messages
 
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) - Rewind conversation and workspace state, powered by a persistent Change Ledger.
 - [dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) - Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.
@@ -64,7 +67,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) - Edit user and built-in system-prompt sections with live preview.
 - [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) - Import Claude Code / Codex / ChatGPT / Cursor chat histories as resumable DeepSeek Harness sessions.
 
-## Tools & Capabilities
+### Tools & Capabilities
 
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) - Vision tasks for text-only models: intent-aware image Q&A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) - Create and manage sandboxed JavaScript tools with a Monaco editor and model-driven tool lifecycle.
@@ -89,7 +92,8 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) - OpenMAIC: classrooms, slides, interactive widgets, and Socratic teaching.
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) - Academic assistant plugin.
 - [dsh-apple-mode](https://github.com/jihongboo/dsh-apple-mode) - Xcode AI integration for DSH: 26 Xcode MCP tools (mcpbridge) + Apple platform skills + Xcode Intelligence-style persona (agent preset or global bundle).
-## Workflow & Automation
+
+### Workflow & Automation
 
 - [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) - UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) - AgentTeams multi-agent teams.
@@ -103,7 +107,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-track](https://github.com/fakechris/dsh-track) - Embedded task management engine: decision-point protocol, idea capture wall, Linear-style issue store.
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) - Pair a second model that passively reviews each turn and injects notes.
 
-## Notifications & Integrations
+### Notifications & Integrations
 
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) - Open DSH workspace directories in VS Code directly from the web GUI.
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification) - Desktop notifications for turn completions, with per-outcome controls and keyword rules.
@@ -114,7 +118,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) - Desktop notification reminders.
 - [dsh-webbridge](https://github.com/bill9109/dsh-webbridge) - DSH meets Kimi WebBridge.
 
-## Development & Runtime
+### Development & Runtime
 
 - [fabric](https://github.com/omdsh-dev/fabric) - An MC-Fabric-style hook processor.
 - [dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) - Pin Git commits to the environment's own author identity; env-var injection overrides all `git config` settings.
@@ -135,7 +139,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) - Qwen multi-modal plugin support.
 - [dsh-tps](https://github.com/Small-tailqwq/dsh-tps) - A TPS metrics plugin.
 
-## Just for Fun
+### Just for Fun
 
 - [dsh-ads](https://github.com/Nagi-ovo/dsh-ads) - Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.
 - [dsh-gomoku](https://github.com/omdsh-dev/dsh-gomoku) - Play Gomoku against the AI, or let two AIs battle it out.

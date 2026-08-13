@@ -209,10 +209,10 @@
     <summary>Turn navigation for the DSH Web UI.</summary>
   </entry>
   <entry>
-    <title>dsh-turn-rewind</title>
-    <id>https://github.com/Anionex/dsh-turn-rewind</id>
-    <link href="https://github.com/Anionex/dsh-turn-rewind"/>
+    <title>dsh-milestone</title>
+    <id>https://github.com/SnowCrescenter-tech/dsh-milestone</id>
+    <link href="https://github.com/SnowCrescenter-tech/dsh-milestone"/>
     <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Rewind conversation and workspace state, powered by a persistent Change Ledger.</summary>
+    <summary>Right-side dot-timeline rail: jump between user messages.</summary>
   </entry>
 </feed>

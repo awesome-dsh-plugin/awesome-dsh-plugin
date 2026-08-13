@@ -209,10 +209,10 @@
     <summary>对话轮次导航。</summary>
   </entry>
   <entry>
-    <title>dsh-turn-rewind</title>
-    <id>https://github.com/Anionex/dsh-turn-rewind</id>
-    <link href="https://github.com/Anionex/dsh-turn-rewind"/>
+    <title>dsh-milestone</title>
+    <id>https://github.com/SnowCrescenter-tech/dsh-milestone</id>
+    <link href="https://github.com/SnowCrescenter-tech/dsh-milestone"/>
     <updated>2026-08-13T00:00:00Z</updated>
-    <summary>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</summary>
+    <summary>右侧圆点时间轴导航条，点击跳转到任意用户消息。</summary>
   </entry>
 </feed>
