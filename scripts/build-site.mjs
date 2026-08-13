@@ -66,7 +66,7 @@ let idx = 0
 const rows = CATS.map(([id, emoji, zhName, enName]) => {
   const group = ordered.filter((e) => e.cat === id)
   if (!group.length) return ''
-  const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}">${emoji} <span class="zh">${zhName}</span><span class="en">${enName}</span> <small>${group.length}</small></h2></li>`
+  const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}"><span class="zh">${zhName}</span><span class="en">${enName}</span> <small>${group.length}</small></h2></li>`
   const items = group.map((e) => {
     idx++
     const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
@@ -88,7 +88,7 @@ const chips = [
   `      <button class="chip active" type="button" data-cat="all"><span class="zh">全部</span><span class="en">All</span> <small>${N}</small></button>`,
   ...CATS.map(([id, emoji, zhName, enName]) => {
     const n = ordered.filter((e) => e.cat === id).length
-    return `      <button class="chip" type="button" data-cat="${id}">${emoji} <span class="zh">${zhName}</span><span class="en">${enName}</span> <small>${n}</small></button>`
+    return `      <button class="chip" type="button" data-cat="${id}"><span class="zh">${zhName}</span><span class="en">${enName}</span> <small>${n}</small></button>`
   }),
 ].join('\n')
 
