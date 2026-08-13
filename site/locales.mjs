@@ -39,9 +39,8 @@ export default [
       fun: 'Just for Fun',
     },
     strings: {
-      KICKER: 'Plugins for DeepSeek Harness',
       SKIP: 'Skip to plugin list',
-      TAGLINE: 'A curated list of <b>DeepSeek Harness</b> (<code translate="no">dsh</code>) plugins, continuously updated.',
+      TAGLINE: 'A curated list of <b>DeepSeek Harness</b> (<code translate="no">dsh</code>) plugins.',
       LISTING_PRE: 'Listing',
       LISTING_POST: 'plugins',
       FULLLIST: 'Full list on GitHub ↗',
@@ -87,9 +86,8 @@ export default [
       fun: '娱乐',
     },
     strings: {
-      KICKER: 'DeepSeek Harness 插件精选',
       SKIP: '跳到插件列表',
-      TAGLINE: '<b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表，持续更新。',
+      TAGLINE: '<b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表。',
       LISTING_PRE: '收录',
       LISTING_POST: '个插件',
       FULLLIST: '完整列表（GitHub）↗',
