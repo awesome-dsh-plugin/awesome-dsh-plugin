@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome DSH Plugin — DeepSeek Harness 插件大全 · Plugin Directory</title>
+<meta name="description" content="精选 DeepSeek Harness（dsh）插件目录：UI 增强、工作流、工具、通知与集成。A curated directory of DeepSeek Harness plugins — browse, search, and install.">
+<link rel="canonical" href="https://awesome-dsh-plugin.com/">
+<meta property="og:title" content="Awesome DSH Plugin — DeepSeek Harness 插件大全">
+<meta property="og:description" content="精选 DeepSeek Harness（dsh）插件目录 · A curated directory of DeepSeek Harness plugins.">
+<meta property="og:url" content="https://awesome-dsh-plugin.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐋%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Awesome DSH Plugin","url":"https://awesome-dsh-plugin.com/","numberOfItems":10,"itemListElement":[
+{"@type":"ListItem","position":1,"name":"dsh-vision-toolkit","url":"https://github.com/Anionex/dsh-vision-toolkit"},
+{"@type":"ListItem","position":2,"name":"dsh-tianshu-tui","url":"https://github.com/huiliyi37/dsh-tianshu-tui"},
+{"@type":"ListItem","position":3,"name":"dsh-at-file","url":"https://github.com/omdsh-dev/dsh-at-file"},
+{"@type":"ListItem","position":4,"name":"dsh-open-in-vscode","url":"https://github.com/omdsh-dev/dsh-open-in-vscode"},
+{"@type":"ListItem","position":5,"name":"dsh-notification","url":"https://github.com/omdsh-dev/dsh-notification"},
+{"@type":"ListItem","position":6,"name":"dsh-custom-tool","url":"https://github.com/omdsh-dev/dsh-custom-tool"},
+{"@type":"ListItem","position":7,"name":"dsh_workflow","url":"https://github.com/icetomoyo/dsh_workflow"},
+{"@type":"ListItem","position":8,"name":"dsh-turn-rewind","url":"https://github.com/Anionex/dsh-turn-rewind"},
+{"@type":"ListItem","position":9,"name":"dsh-visualize","url":"https://github.com/Nagi-ovo/dsh-visualize"},
+{"@type":"ListItem","position":10,"name":"dsh-share","url":"https://github.com/hellodigua/dsh-share"}]}
+</script>
+<style>
+:root{
+  --ink-0: oklch(17% .030 255);   /* surface */
+  --ink-1: oklch(13.5% .034 258); /* deeper  */
+  --ink-2: oklch(10% .036 260);   /* abyss   */
+  --line:  oklch(30% .030 255);
+  --ivory: oklch(93% .012 90);
+  --mist:  oklch(64% .020 255);
+  --faint: oklch(46% .022 255);
+  --blue:  oklch(74% .130 262);   /* links   */
+  --amber: oklch(80% .110 75);    /* depth marks */
+  --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
+  --body: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --disp: "Fraunces", "PingFang SC", "Noto Sans SC", serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  color:var(--ivory);
+  background:linear-gradient(to bottom, var(--ink-0) 0%, var(--ink-1) 55%, var(--ink-2) 100%);
+  min-height:100vh;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+.wrap{max-width:56rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
+
+/* ── language switch: html[lang] decides which span shows ── */
+html[lang="zh-CN"] .en{display:none}
+html[lang="en"] .zh{display:none}
+
+/* ── masthead ── */
+header{padding-block:clamp(2.5rem,8vh,5.5rem) clamp(2rem,6vh,4rem)}
+.topline{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:clamp(2.5rem,7vh,4.5rem)}
+.brand{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;color:var(--faint)}
+.nav{display:flex;gap:1.25rem;align-items:baseline;font-size:.85rem}
+.lang-btn{background:none;border:none;color:var(--mist);font:inherit;font-family:var(--mono);cursor:pointer;padding:0}
+.lang-btn:hover{color:var(--ivory)}
+h1{
+  font-family:var(--disp);
+  font-weight:900;
+  font-size:clamp(2.6rem,7.5vw,4.8rem);
+  line-height:1.04;
+  letter-spacing:-.015em;
+  max-width:15ch;
+}
+h1 .thin{font-weight:500;color:var(--mist)}
+.tagline{margin-top:1.4rem;max-width:38rem;color:var(--mist);font-size:clamp(.95rem,1.6vw,1.05rem)}
+.tagline b{color:var(--ivory);font-weight:600}
+.meta-row{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:.6rem 2rem;font-family:var(--mono);font-size:.78rem;color:var(--faint)}
+.meta-row a{color:var(--amber)}
+
+/* ── search ── */
+.search{position:sticky;top:0;z-index:5;background:color-mix(in oklch, var(--ink-0) 88%, transparent);backdrop-filter:blur(8px);padding-block:.9rem;border-block:1px solid var(--line)}
+.search .wrap{display:flex;gap:1rem;align-items:center}
+.search input{
+  flex:1;background:none;border:none;outline:none;
+  color:var(--ivory);font:inherit;font-size:1rem;
+}
+.search input::placeholder{color:var(--faint)}
+.search .count{font-family:var(--mono);font-size:.75rem;color:var(--faint);white-space:nowrap}
+
+/* ── plugin index: editorial rows, no cards ── */
+ol.dex{list-style:none;padding:0}
+ol.dex li{
+  display:grid;
+  grid-template-columns:5.5rem 1fr;
+  gap:0 1.5rem;
+  padding-block:1.6rem;
+  border-bottom:1px solid var(--line);
+  animation:surface .5s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes surface{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){ol.dex li{animation:none}}
+.depth{
+  font-family:var(--mono);font-size:.72rem;color:var(--amber);
+  display:flex;flex-direction:column;gap:.15rem;padding-top:.35rem;
+}
+.depth .no{color:var(--faint)}
+.dex h2{font-family:var(--disp);font-weight:650;font-size:1.28rem;letter-spacing:-.01em;line-height:1.3}
+.dex h2 a{color:var(--ivory)}
+.dex h2 a:hover{color:var(--blue);text-decoration:none}
+.dex .by{font-family:var(--mono);font-size:.74rem;color:var(--faint);margin-left:.5rem}
+.dex p{margin-top:.35rem;color:var(--mist);font-size:.94rem;max-width:44rem}
+.tags{margin-top:.55rem;display:flex;gap:.5rem;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:.68rem;color:var(--faint);border:1px solid var(--line);border-radius:2px;padding:.1rem .45rem}
+li.hidden{display:none}
+.noresult{padding-block:3rem;color:var(--faint);text-align:center;display:none}
+
+/* ── install strip ── */
+.install{margin-block:clamp(3rem,9vh,5.5rem)}
+.install h3, .contribute h3{font-family:var(--disp);font-weight:650;font-size:1.15rem;margin-bottom:.9rem}
+.install pre{
+  font-family:var(--mono);font-size:.85rem;line-height:1.9;
+  color:var(--ivory);background:var(--ink-2);
+  border:1px solid var(--line);padding:1rem 1.25rem;overflow-x:auto;
+}
+.install pre .c{color:var(--faint)}
+.install .note{margin-top:.7rem;font-size:.82rem;color:var(--faint);max-width:44rem}
+
+/* ── contribute / footer ── */
+.contribute{padding-block:clamp(2.5rem,7vh,4rem);border-top:1px solid var(--line)}
+.contribute p{color:var(--mist);max-width:44rem}
+footer{padding-block:2.5rem 3.5rem;color:var(--faint);font-size:.78rem;font-family:var(--mono)}
+footer .depth-final{color:var(--amber);letter-spacing:.15em;margin-bottom:1rem}
+footer a{color:var(--mist)}
+@media (max-width:560px){
+  ol.dex li{grid-template-columns:1fr;gap:.3rem}
+  .depth{flex-direction:row;gap:.8rem;padding-top:0}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="topline">
+    <span class="brand">awesome-dsh-plugin.com</span>
+    <nav class="nav">
+      <button class="lang-btn" id="langToggle" aria-label="Switch language">EN / 中</button>
+      <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+  <h1>Awesome<br>DSH Plugin<br><span class="thin"><span class="zh">未至之境的装备清单</span><span class="en">gear for the unknown</span></span></h1>
+  <p class="tagline">
+    <span class="zh">精选 <b>DeepSeek Harness</b>（<code>dsh</code>）插件目录。每一件都经人工筛选——描述清楚、真实可装，然后才会出现在这里。</span>
+    <span class="en">A hand-curated directory of <b>DeepSeek Harness</b> (<code>dsh</code>) plugins. Every entry is vetted — clearly described and actually installable — before it surfaces here.</span>
+  </p>
+  <div class="meta-row">
+    <span>10 <span class="zh">个插件收录</span><span class="en">plugins listed</span></span>
+    <span><span class="zh">持续更新</span><span class="en">continuously updated</span></span>
+    <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener"><span class="zh">什么是 dsh？↗</span><span class="en">what is dsh? ↗</span></a>
+  </div>
+</header>
+
+<div class="search">
+  <div class="wrap">
+    <span aria-hidden="true">⌕</span>
+    <input id="q" type="search" autocomplete="off"
+      placeholder="搜索插件 / search plugins…" aria-label="Search plugins">
+    <span class="count" id="count">10 / 10</span>
+  </div>
+</div>
+
+<main class="wrap">
+  <ol class="dex" id="dex">
+
+    <li style="animation-delay:.03s">
+      <div class="depth"><span class="no">01</span><span>−200 m</span></div>
+      <div>
+        <h2><a href="https://github.com/Anionex/dsh-vision-toolkit" rel="noopener">dsh-vision-toolkit</a><span class="by">Anionex</span></h2>
+        <p><span class="zh">让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</span><span class="en">Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, and more.</span></p>
+        <div class="tags"><span class="tag">vision</span><span class="tag">ocr</span><span class="tag">tools</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.06s">
+      <div class="depth"><span class="no">02</span><span>−450 m</span></div>
+      <div>
+        <h2><a href="https://github.com/huiliyi37/dsh-tianshu-tui" rel="noopener">dsh-tianshu-tui</a><span class="by">huiliyi37</span></h2>
+        <p><span class="zh">DeepSeek Harness 的终端 UI（TUI）。</span><span class="en">A terminal UI (TUI) for DeepSeek Harness.</span></p>
+        <div class="tags"><span class="tag">tui</span><span class="tag">terminal</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.09s">
+      <div class="depth"><span class="no">03</span><span>−700 m</span></div>
+      <div>
+        <h2><a href="https://github.com/omdsh-dev/dsh-at-file" rel="noopener">dsh-at-file</a><span class="by">omdsh-dev</span></h2>
+        <p><span class="zh">Codex 风格的 <code>@file</code> 文件引用，输入框里直接搜索并引用工作区文件。</span><span class="en">Codex-style <code>@file</code> mentions: search and reference workspace files right from the input box.</span></p>
+        <div class="tags"><span class="tag">input</span><span class="tag">ux</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.12s">
+      <div class="depth"><span class="no">04</span><span>−1,000 m</span></div>
+      <div>
+        <h2><a href="https://github.com/omdsh-dev/dsh-open-in-vscode" rel="noopener">dsh-open-in-vscode</a><span class="by">omdsh-dev</span></h2>
+        <p><span class="zh">一键在 VS Code 中打开 DSH 工作区目录。</span><span class="en">Open DSH workspace directories in VS Code with one click.</span></p>
+        <div class="tags"><span class="tag">vscode</span><span class="tag">integration</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.15s">
+      <div class="depth"><span class="no">05</span><span>−1,400 m</span></div>
+      <div>
+        <h2><a href="https://github.com/omdsh-dev/dsh-notification" rel="noopener">dsh-notification</a><span class="by">omdsh-dev</span></h2>
+        <p><span class="zh">桌面通知：回合完成等事件的系统级提醒。</span><span class="en">Desktop notifications for turn completions and other events.</span></p>
+        <div class="tags"><span class="tag">notify</span><span class="tag">desktop</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.18s">
+      <div class="depth"><span class="no">06</span><span>−1,900 m</span></div>
+      <div>
+        <h2><a href="https://github.com/omdsh-dev/dsh-custom-tool" rel="noopener">dsh-custom-tool</a><span class="by">omdsh-dev</span></h2>
+        <p><span class="zh">创建和管理沙箱化的自定义 JavaScript 工具。</span><span class="en">Create and manage sandboxed custom JavaScript tools.</span></p>
+        <div class="tags"><span class="tag">tools</span><span class="tag">sandbox</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.21s">
+      <div class="depth"><span class="no">07</span><span>−2,500 m</span></div>
+      <div>
+        <h2><a href="https://github.com/icetomoyo/dsh_workflow" rel="noopener">dsh_workflow</a><span class="by">icetomoyo</span></h2>
+        <p><span class="zh">把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可复用的工作流。</span><span class="en">UltraCode-style multi-agent orchestration for DSH: generatable, savable, reusable workflows.</span></p>
+        <div class="tags"><span class="tag">workflow</span><span class="tag">agents</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.24s">
+      <div class="depth"><span class="no">08</span><span>−3,200 m</span></div>
+      <div>
+        <h2><a href="https://github.com/Anionex/dsh-turn-rewind" rel="noopener">dsh-turn-rewind</a><span class="by">Anionex</span></h2>
+        <p><span class="zh">对话回退：回滚会话与工作区到任意轮次。</span><span class="en">Conversation rewind: roll back session and workspace to any turn.</span></p>
+        <div class="tags"><span class="tag">session</span><span class="tag">undo</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.27s">
+      <div class="depth"><span class="no">09</span><span>−4,000 m</span></div>
+      <div>
+        <h2><a href="https://github.com/Nagi-ovo/dsh-visualize" rel="noopener">dsh-visualize</a><span class="by">Nagi-ovo</span></h2>
+        <p><span class="zh">对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流。</span><span class="en">In-conversation generative UI: the model renders interactive HTML cards directly into the chat stream.</span></p>
+        <div class="tags"><span class="tag">genui</span><span class="tag">html</span></div>
+      </div>
+    </li>
+
+    <li style="animation-delay:.30s">
+      <div class="depth"><span class="no">10</span><span>−5,000 m</span></div>
+      <div>
+        <h2><a href="https://github.com/hellodigua/dsh-share" rel="noopener">dsh-share</a><span class="by">hellodigua</span></h2>
+        <p><span class="zh">一键分享你的 DSH 对话。</span><span class="en">Share your DSH conversations with one click.</span></p>
+        <div class="tags"><span class="tag">share</span><span class="tag">social</span></div>
+      </div>
+    </li>
+
+  </ol>
+  <p class="noresult" id="noresult"><span class="zh">没有匹配的插件——换个关键词试试。</span><span class="en">No plugins match — try another keyword.</span></p>
+
+  <section class="install">
+    <h3><span class="zh">安装</span><span class="en">Installing</span></h3>
+    <pre><span class="c"># <span class="zh">npm 包（推荐：预构建，一次成功）</span><span class="en">from npm (recommended: prebuilt, works first try)</span></span>
+dsh plugin --profile default add &lt;npm-package&gt;
+
+<span class="c"># <span class="zh">GitHub 源码（首次会要求构建授权，按提示配置 allowBuilds 后重试）</span><span class="en">from GitHub (first run asks for build approval — follow the allowBuilds hint, retry)</span></span>
+dsh plugin --profile default add github:&lt;owner&gt;/&lt;repo&gt;</pre>
+    <p class="note"><span class="zh">⚠️ GitHub 来源的插件在安装时会于你的机器上执行构建脚本，请只安装可信来源，并尽量锁定 commit（<code>github:owner/repo#sha</code>）。</span><span class="en">⚠️ GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code>github:owner/repo#sha</code>).</span></p>
+  </section>
+
+  <section class="contribute">
+    <h3><span class="zh">收录你的插件</span><span class="en">Get your plugin listed</span></h3>
+    <p>
+      <span class="zh">给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在 <code>README.md</code> 与 <code>README.zh.md</code> 中各加一行。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code>dsh-plugin</code></a> topic，方便大家发现。</span>
+      <span class="en">Open a PR against <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> — one line each in <code>README.md</code> and <code>README.zh.md</code>. Add the <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code>dsh-plugin</code></a> topic to your repo so others can find it.</span>
+    </p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="depth-final">— 6,000 m · <span class="zh">探索未至之境</span><span class="en">into the unknown</span> —</div>
+  <div>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · <span class="zh">与 DeepSeek 无隶属关系</span><span class="en">not affiliated with DeepSeek</span></div>
+</footer>
+
+<script>
+// language: saved choice > browser default
+const html = document.documentElement;
+const saved = localStorage.getItem('lang');
+if (saved) html.lang = saved;
+else if (!/^zh/i.test(navigator.language)) html.lang = 'en';
+document.getElementById('langToggle').addEventListener('click', () => {
+  html.lang = html.lang === 'en' ? 'zh-CN' : 'en';
+  localStorage.setItem('lang', html.lang);
+});
+
+// search: filter rows on name + description + tags (both languages)
+const rows = [...document.querySelectorAll('#dex li')];
+const count = document.getElementById('count');
+const noresult = document.getElementById('noresult');
+document.getElementById('q').addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  let shown = 0;
+  for (const li of rows) {
+    const hit = !q || li.textContent.toLowerCase().includes(q);
+    li.classList.toggle('hidden', !hit);
+    if (hit) shown++;
+  }
+  count.textContent = `${shown} / ${rows.length}`;
+  noresult.style.display = shown ? 'none' : 'block';
+});
+</script>
+</body>
+</html>
