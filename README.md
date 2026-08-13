@@ -4,7 +4,7 @@ English | [中文](README.zh.md)
 
 > A curated list of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-**95** plugins · [Website](https://awesome-dsh-plugin.com/) · [PRs welcome](#contributing)
+**96** plugins · [Website](https://awesome-dsh-plugin.com/) · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -46,6 +46,7 @@ English | [中文](README.zh.md)
 - [dsh-share](https://github.com/hellodigua/dsh-share) — Share your conversations with one click.
 - [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — Branch-based message editing, reroll, retry, and a version timeline.
 - [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).
+- [nowledge-mem-deepseek-harness](https://github.com/nowledge-co/nowledge-mem-deepseek-harness) — One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.
 - [dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) — `/side` persistent side sessions and `/btw` one-shot side questions, run in a temporary fork without touching main history.
 - [dsh-conversation-share](https://github.com/bill9109/dsh-conversation-share) — Share any excerpt of a conversation.
 - [dsh-explain](https://github.com/yuezengwu/dsh-explain) — Local-first learning mode: cross-session learning threads with per-source explanations.
