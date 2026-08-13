@@ -204,7 +204,7 @@ for (const loc of LOCALES) {
   <id>${ORIGIN}${loc.urlPath}</id>
   <link href="${ORIGIN}${loc.urlPath}"/>
   <link rel="self" href="${ORIGIN}${loc.feed}"/>
-  <updated>${new Date().toISOString()}</updated>
+  <updated>${[...ordered].map((e) => e.added).sort().pop()}T00:00:00Z</updated>
 ${recent.map((e) => `  <entry>
     <title>${esc(e.name)}</title>
     <id>${e.url}</id>
