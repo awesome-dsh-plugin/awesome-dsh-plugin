@@ -1,4 +1,4 @@
-# Awesome DSH Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome DSH Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
 
 [English](README.md) | 中文
 
