@@ -4,7 +4,7 @@
 
 > [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件精选列表。
 
-**96** 个插件 · [网站](https://awesome-dsh-plugin.com/zh/) · 欢迎 [PR](#贡献)
+**97** 个插件 · [网站](https://awesome-dsh-plugin.com/zh/) · 欢迎 [PR](#贡献)
 
 ## 目录
 
