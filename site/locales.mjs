@@ -1,0 +1,99 @@
+/**
+ * Locale registry — the single source of truth for internationalization.
+ *
+ * Adding a language:
+ *   1. Add an entry here (copy an existing one, translate every string).
+ *   2. Create README.<code>.md with the same category headings you declare
+ *      in `categories` and one `- [name](url) - description` line per plugin.
+ *   3. Add banner-<code>.png and og-<code>.png to docs/ (render from the
+ *      shared card template; see scripts notes).
+ * Everything else — page, hreflang set, sitemap, JSON-LD — is generated.
+ *
+ * The first entry is the default locale (x-default, served at /).
+ */
+export default [
+  {
+    code: 'en',
+    htmlLang: 'en',
+    label: 'EN',
+    urlPath: '/',
+    out: 'docs/index.html',
+    readme: 'README.md',
+    og: '/og-en.png',
+    TITLE: 'Awesome DSH Plugin — Curated DeepSeek Harness (dsh) Plugin List',
+    DESC: 'A curated list of {N} DeepSeek Harness (dsh) plugins: UI enhancements, sessions, tools, workflow, notifications, development, and fun. Updated continuously.',
+    SEARCH_PH: 'Search plugins…',
+    COPY_LABEL: 'Copy install command',
+    COPY_TEXT: 'copy install',
+    categories: {
+      ui: 'UI Enhancements',
+      session: 'Sessions & Messages',
+      tools: 'Tools & Capabilities',
+      workflow: 'Workflow & Automation',
+      notify: 'Notifications & Integrations',
+      dev: 'Development & Runtime',
+      fun: 'Just for Fun',
+    },
+    strings: {
+      SKIP: 'Skip to plugin list',
+      TAGLINE: 'A curated list of <b>DeepSeek Harness</b> (<code translate="no">dsh</code>) plugins, continuously updated.',
+      LISTING_PRE: 'Listing',
+      LISTING_POST: 'plugins',
+      FULLLIST: 'Full list on GitHub ↗',
+      WHATIS: 'What is DeepSeek Harness? ↗',
+      NORESULT: 'No plugins match.',
+      CLEAR: 'Clear filters',
+      INSTALL: 'Installing',
+      NPM_C: 'from npm (prebuilt)',
+      GH_C: 'from GitHub (first run asks for allowBuilds approval — follow the hint, retry)',
+      INSTALL_NOTE: 'GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).',
+      CONTRIB: 'Get your plugin listed',
+      CONTRIB_BODY: 'Open a PR against <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> — one line each in every <code translate="no">README</code> language file; the site syncs automatically. Add the <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic to your repo too.',
+      MOTTO: 'Into the Unknown',
+      NOTAFF: 'Not affiliated with DeepSeek',
+      ALL: 'All',
+    },
+  },
+  {
+    code: 'zh',
+    htmlLang: 'zh-CN',
+    label: '中文',
+    urlPath: '/zh/',
+    out: 'docs/zh/index.html',
+    readme: 'README.zh.md',
+    og: '/og-zh.png',
+    TITLE: 'Awesome DSH Plugin — DeepSeek Harness（dsh）插件精选列表',
+    DESC: 'DeepSeek Harness（dsh）插件精选列表，收录 {N} 个：UI 增强、会话与消息、工具、工作流与自动化、通知与集成、开发与娱乐，持续更新。',
+    SEARCH_PH: '搜索插件…',
+    COPY_LABEL: '复制安装命令',
+    COPY_TEXT: '复制安装命令',
+    categories: {
+      ui: 'UI 增强',
+      session: '会话与消息',
+      tools: '工具与能力',
+      workflow: '工作流与自动化',
+      notify: '通知与集成',
+      dev: '开发与运行时',
+      fun: '娱乐',
+    },
+    strings: {
+      SKIP: '跳到插件列表',
+      TAGLINE: '<b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表，持续更新。',
+      LISTING_PRE: '收录',
+      LISTING_POST: '个插件',
+      FULLLIST: '完整列表（GitHub）↗',
+      WHATIS: '什么是 DeepSeek Harness？↗',
+      NORESULT: '没有匹配的插件。',
+      CLEAR: '清除筛选',
+      INSTALL: '安装',
+      NPM_C: 'npm 包（预构建）',
+      GH_C: 'GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）',
+      INSTALL_NOTE: 'GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。',
+      CONTRIB: '收录你的插件',
+      CONTRIB_BODY: '给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在每个 <code translate="no">README</code> 语言文件中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。',
+      MOTTO: '探索未至之境',
+      NOTAFF: '与 DeepSeek 无隶属关系',
+      ALL: '全部',
+    },
+  },
+]

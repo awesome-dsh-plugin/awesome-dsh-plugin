@@ -12,12 +12,12 @@
 <meta property="og:title" content="Awesome DSH Plugin — DeepSeek Harness（dsh）插件精选列表">
 <meta property="og:description" content="DeepSeek Harness（dsh）插件精选列表，收录 104 个：UI 增强、会话与消息、工具、工作流与自动化、通知与集成、开发与娱乐，持续更新。">
 <meta property="og:url" content="https://awesome-dsh-plugin.com/zh/">
-<meta property="og:image" content="https://awesome-dsh-plugin.com/og.png">
+<meta property="og:image" content="https://awesome-dsh-plugin.com/og-zh.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://awesome-dsh-plugin.com/og.png">
-<script>if(new URLSearchParams(location.search).get('lang')==='en'){const p=new URLSearchParams(location.search);p.delete('lang');location.replace('/'+(p.size?'?'+p:''))}</script>
+<meta name="twitter:image" content="https://awesome-dsh-plugin.com/og-zh.png">
+<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');if(v==='en'){p.delete('lang');location.replace('/'+(p.size?'?'+p:''))}}</script>
 <meta property="og:type" content="website">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#221e19">
@@ -85,10 +85,6 @@ button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-fa
 .wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
 .skip{position:absolute;left:-9999px;top:0;background:var(--canvas-0);color:var(--accent-strong);padding:.6rem 1rem;z-index:99}
 .skip:focus{left:0}
-
-/* ── language switch ── */
-html[lang="zh-CN"] .en{display:none}
-html[lang="en"] .zh{display:none}
 
 /* ── masthead: catalog cover on graph paper ── */
 header{
@@ -261,7 +257,6 @@ footer{padding-block:0 3rem}
         <h1 translate="no">Awesome<br><em>DSH</em> Plugin</h1>
         <p class="tagline">
           <b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表，持续更新。
-          
         </p>
       </div>
     </div>
@@ -1267,10 +1262,7 @@ dsh plugin --profile web add github:&lt;owner&gt;/&lt;repo&gt;</pre>
 
   <section class="contribute">
     <h2>收录你的插件</h2>
-    <p>
-      给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在 <code translate="no">README.md</code> 与 <code translate="no">README.zh.md</code> 中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。
-      
-    </p>
+    <p>给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在每个 <code translate="no">README</code> 语言文件中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。</p>
   </section>
 </main>
 

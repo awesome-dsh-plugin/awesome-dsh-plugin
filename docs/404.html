@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Awesome DSH Plugin</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --canvas:#f6f2ea; --grid:#e9e4da; --text:#2b2620; --text-2:#5d554a; --accent:#c0392b;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --canvas:#221e19; --grid:#2b2620; --text:#ece7dd; --text-2:#a89e8f; --accent:#d96a4f; }
+}
+*{margin:0;box-sizing:border-box}
+body{
+  font-family:"Archivo","PingFang SC",system-ui,sans-serif;
+  background:var(--canvas);color:var(--text);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:26px 26px;
+  min-height:100vh;display:grid;place-items:center;padding:2rem;
+}
+main{text-align:center;max-width:32rem}
+.no{font-family:ui-monospace,Menlo,monospace;font-size:.85rem;color:var(--accent);letter-spacing:.15em}
+h1{font-weight:900;font-size:clamp(4rem,15vw,7rem);line-height:1;letter-spacing:-.02em;margin:.2em 0 .3em}
+h1 em{font-style:normal;color:var(--accent)}
+p{color:var(--text-2);line-height:1.7}
+.links{margin-top:1.6rem;display:flex;gap:1.4rem;justify-content:center;font-family:ui-monospace,Menlo,monospace;font-size:.85rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+  <div class="no">№ 404 · PART NOT FOUND</div>
+  <h1>4<em>0</em>4</h1>
+  <p>This part isn't in the catalog. / 目录里没有这个零件。</p>
+  <div class="links">
+    <a href="/">← Back to the list</a>
+    <a href="/zh/">← 返回列表</a>
+  </div>
+</main>
+</body>
+</html>

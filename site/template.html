@@ -6,17 +6,15 @@
 <title>__TITLE__</title>
 <meta name="description" content="__DESC__">
 <link rel="canonical" href="__URL__">
-<link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/">
-<link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/">
-<link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/">
+__HREFLANGS__
 <meta property="og:title" content="__TITLE__">
 <meta property="og:description" content="__DESC__">
 <meta property="og:url" content="__URL__">
-<meta property="og:image" content="https://awesome-dsh-plugin.com/og.png">
+<meta property="og:image" content="__OG_IMAGE__">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://awesome-dsh-plugin.com/og.png">__LANG_REDIRECT__
+<meta name="twitter:image" content="__OG_IMAGE__">__LANG_REDIRECT__
 <meta property="og:type" content="website">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#221e19">
@@ -86,10 +84,6 @@ button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-fa
 .wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
 .skip{position:absolute;left:-9999px;top:0;background:var(--canvas-0);color:var(--accent-strong);padding:.6rem 1rem;z-index:99}
 .skip:focus{left:0}
-
-/* ── language switch ── */
-html[lang="zh-CN"] .en{display:none}
-html[lang="en"] .zh{display:none}
 
 /* ── masthead: catalog cover on graph paper ── */
 header{
@@ -233,14 +227,14 @@ footer{padding-block:0 3rem}
 </style>
 </head>
 <body>
-<a class="skip" href="#dex"><span class="zh">跳到插件列表</span><span class="en">Skip to plugin list</span></a>
+<a class="skip" href="#dex">__T_SKIP__</a>
 
 <header>
   <div class="wrap">
     <div class="topline">
       <span class="brand" translate="no">awesome-dsh-plugin.com</span>
       <nav class="nav" aria-label="site">
-        <a class="lang-btn" href="__ALT_URL__" hreflang="__ALT_LANG__" rel="alternate">__ALT_LABEL__</a>
+        __LOCALE_LINKS__
         <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
       </nav>
     </div>
@@ -261,17 +255,16 @@ footer{padding-block:0 3rem}
       <div>
         <h1 translate="no">Awesome<br><em>DSH</em> Plugin</h1>
         <p class="tagline">
-          <span class="zh"><b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表，持续更新。</span>
-          <span class="en">A curated list of <b>DeepSeek Harness</b> (<code translate="no">dsh</code>) plugins, continuously updated.</span>
+          __T_TAGLINE__
         </p>
       </div>
     </div>
   </div>
   <div class="wrap">
     <div class="issue-line">
-      <span><span class="zh">收录</span><span class="en">Listing</span> <span id="total">0</span> <span class="zh">个插件</span><span class="en">plugins</span></span>
-      <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener"><span class="zh">完整列表（GitHub）↗</span><span class="en">Full list on GitHub ↗</span></a>
-      <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener"><span class="zh">什么是 DeepSeek Harness？↗</span><span class="en">What is DeepSeek Harness? ↗</span></a>
+      <span>__T_LISTING_PRE__ <span id="total">0</span> __T_LISTING_POST__</span>
+      <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">__T_FULLLIST__</a>
+      <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">__T_WHATIS__</a>
     </div>
   </div>
 </header>
@@ -1162,34 +1155,31 @@ footer{padding-block:0 3rem}
 
   </ol>
   <p class="noresult" id="noresult">
-    <span class="zh">没有匹配的插件。</span><span class="en">No plugins match.</span>
-    <button type="button" id="clearFilter"><span class="zh">清除筛选</span><span class="en">Clear filters</span></button>
+    __T_NORESULT__
+    <button type="button" id="clearFilter">__T_CLEAR__</button>
   </p>
 
   <section class="install">
-    <h2><span class="zh">安装</span><span class="en">Installing</span></h2>
-    <pre translate="no"><span class="c"># <span class="zh">npm 包（预构建）</span><span class="en">from npm (prebuilt)</span></span>
+    <h2>__T_INSTALL__</h2>
+    <pre translate="no"><span class="c"># __T_NPM_C__</span>
 dsh plugin --profile web add &lt;npm-package&gt;
 
-<span class="c"># <span class="zh">GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</span><span class="en">from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</span></span>
+<span class="c"># __T_GH_C__</span>
 dsh plugin --profile web add github:&lt;owner&gt;/&lt;repo&gt;</pre>
-    <p class="note"><span class="zh">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</span><span class="en">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</span></p>
+    <p class="note">__T_INSTALL_NOTE__</p>
   </section>
 
   <section class="contribute">
-    <h2><span class="zh">收录你的插件</span><span class="en">Get your plugin listed</span></h2>
-    <p>
-      <span class="zh">给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在 <code translate="no">README.md</code> 与 <code translate="no">README.zh.md</code> 中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。</span>
-      <span class="en">Open a PR against <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> — one line each in <code translate="no">README.md</code> and <code translate="no">README.zh.md</code>; the site syncs automatically. Add the <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic to your repo too.</span>
-    </p>
+    <h2>__T_CONTRIB__</h2>
+    <p>__T_CONTRIB_BODY__</p>
   </section>
 </main>
 
 <footer class="wrap">
   <div class="titleblock">
     <div><span class="lbl">Project</span><span translate="no">awesome-dsh-plugin · <a href="https://awesome-dsh-plugin.com">awesome-dsh-plugin.com</a></span></div>
-    <div><span class="lbl">Motto</span><span class="slogan"><span class="zh">探索未至之境</span><span class="en">Into the Unknown</span></span></div>
-    <div><span class="lbl">Issued</span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · <span class="zh">与 DeepSeek 无隶属关系</span><span class="en">Not affiliated with DeepSeek</span></div>
+    <div><span class="lbl">Motto</span><span class="slogan">__T_MOTTO__</span></div>
+    <div><span class="lbl">Issued</span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · __T_NOTAFF__</div>
   </div>
 </footer>
 

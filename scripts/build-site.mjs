@@ -1,43 +1,31 @@
 #!/usr/bin/env node
 /**
- * Build the site from README.md + README.zh.md (the source of truth).
+ * Build the site from the per-locale READMEs (the source of truth).
  *
- * site/template.html is a bilingual master carrying __TOKENS__ and paired
- * <span class="zh">/<span class="en"> text. This script injects the plugin
- * rows, then emits one fully-localized page per language — plus a sitemap
- * with hreflang alternates:
- *
- *   docs/index.html     (en, canonical /, x-default)
- *   docs/zh/index.html  (zh-CN, canonical /zh/)
- *   docs/sitemap.xml
+ * Locales are declared once in site/locales.mjs. For every locale this
+ * script parses its README, emits a fully single-language page from
+ * site/template.html (__TOKENS__), and generates the shared artifacts:
+ * hreflang sets, sitemap with alternates, per-locale JSON-LD and og:image.
+ * It also re-syncs the plugin-count figure inside every README.
  *
  * Usage: node scripts/build-site.mjs
  */
 import fs from 'node:fs'
+import LOCALES from '../site/locales.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
+const CAT_IDS = ['ui', 'session', 'tools', 'workflow', 'notify', 'dev', 'fun']
 
-const CATS = [
-  ['ui', '🎨', 'UI 增强', 'UI Enhancements'],
-  ['session', '💬', '会话与消息', 'Sessions & Messages'],
-  ['tools', '🛠️', '工具与能力', 'Tools & Capabilities'],
-  ['workflow', '🔁', '工作流与自动化', 'Workflow & Automation'],
-  ['notify', '🔔', '通知与集成', 'Notifications & Integrations'],
-  ['dev', '🧑‍💻', '开发与运行时', 'Development & Runtime'],
-  ['fun', '🎮', '娱乐', 'Just for Fun'],
-]
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
-function parseReadme(path) {
-  const text = fs.readFileSync(path, 'utf8')
+function parseReadme(loc) {
+  const text = fs.readFileSync(loc.readme, 'utf8')
   const out = new Map() // url -> {name, url, desc, cat}
   let cat = null
   for (const line of text.split('\n')) {
     const h = line.match(/^## (.+)$/)
     if (h) {
-      cat = null
-      for (const [id, , zh, en] of CATS) {
-        if (h[1].includes(zh) || h[1].includes(en)) cat = id
-      }
+      cat = CAT_IDS.find((id) => h[1].includes(loc.categories[id])) ?? null
       continue
     }
     const m = line.match(/^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) [—-] (.+)$/)
@@ -46,150 +34,128 @@ function parseReadme(path) {
   return out
 }
 
-const en = parseReadme('README.md')
-const zh = parseReadme('README.zh.md')
-
+// Join all locales on plugin URL; the default locale defines the roster.
+const parsed = LOCALES.map((loc) => ({ loc, entries: parseReadme(loc) }))
+const [base, ...others] = parsed
 const entries = []
-for (const [url, e] of en) {
-  const z = zh.get(url)
-  if (!z) { console.error(`zh missing: ${url}`); continue }
-  entries.push({ ...e, zh: z.desc, en: e.desc, owner: url.split('/')[3] })
+for (const [url, e] of base.entries) {
+  const descs = { [base.loc.code]: e.desc }
+  let ok = true
+  for (const { loc, entries: map } of others) {
+    const t = map.get(url)
+    if (!t) { console.error(`${loc.readme} missing: ${url}`); ok = false; break }
+    descs[loc.code] = t.desc
+  }
+  if (ok) entries.push({ name: e.name, url: e.url, cat: e.cat, owner: url.split('/')[3], descs })
 }
-console.log(`${entries.length} entries parsed`)
+console.log(`${entries.length} entries parsed across ${LOCALES.length} locales`)
 
-const ordered = CATS.flatMap(([id]) => entries.filter((e) => e.cat === id))
+const ordered = CAT_IDS.flatMap((id) => entries.filter((e) => e.cat === id))
 const N = ordered.length
 
-const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
-
-let idx = 0
-const rows = CATS.map(([id, emoji, zhName, enName]) => {
-  const group = ordered.filter((e) => e.cat === id)
-  if (!group.length) return ''
-  const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}"><span class="zh">${zhName}</span><span class="en">${enName}</span> <small>${group.length}</small></h2></li>`
-  const items = group.map((e) => {
-    idx++
-    const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
-    const repo = e.url.replace('https://github.com/', '')
-    const cmd = `dsh plugin --profile web add github:${repo}`
-    return `    <li class="item" data-cat="${e.cat}" style="animation-delay:${delay}s">
-      <span class="no" aria-hidden="true">№ ${String(idx).padStart(2, '0')}</span>
-      <div>
-        <h3><a href="${e.url}" rel="noopener" translate="no">${esc(e.name)}</a><span class="by" translate="no">${esc(e.owner)}</span></h3>
-        <p><span class="zh">${esc(e.zh)}</span><span class="en">${esc(e.en)}</span></p>
-      </div>
-      <button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="__COPY_LABEL__"><span class="zh">复制安装命令</span><span class="en">copy install</span></button>
-    </li>`
-  }).join('\n\n')
-  return sec + '\n\n' + items
-}).filter(Boolean).join('\n\n')
-
-const chips = [
-  `      <button class="chip active" type="button" data-cat="all"><span class="zh">全部</span><span class="en">All</span> <small>${N}</small></button>`,
-  ...CATS.map(([id, emoji, zhName, enName]) => {
-    const n = ordered.filter((e) => e.cat === id).length
-    return `      <button class="chip" type="button" data-cat="${id}"><span class="zh">${zhName}</span><span class="en">${enName}</span> <small>${n}</small></button>`
-  }),
+const hreflangs = [
+  ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}">`),
+  `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}">`,
 ].join('\n')
 
-const jsonld = (url, name) => JSON.stringify({
+const jsonld = (url) => JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name,
+  name: 'Awesome DSH Plugin',
   url,
   numberOfItems: N,
   itemListElement: ordered.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 
-// ── localize: drop the other language's spans, unwrap this language's ──
-// Language spans never nest other spans, so a span-boundary guard is safe.
-const spanRe = (cls) => new RegExp(`<span class="${cls}">((?:(?!</?span)[\\s\\S])*?)</span>`, 'g')
-function localize(html, keep) {
-  const drop = keep === 'en' ? 'zh' : 'en'
-  let out = html
-  for (let i = 0; i < 3; i++) { // a few passes for adjacent matches
-    out = out.replace(spanRe(drop), '').replace(spanRe(keep), '$1')
-  }
-  return out
+function buildRows(loc) {
+  let idx = 0
+  return CAT_IDS.map((id) => {
+    const group = ordered.filter((e) => e.cat === id)
+    if (!group.length) return ''
+    const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}">${loc.categories[id]} <small>${group.length}</small></h2></li>`
+    const items = group.map((e) => {
+      idx++
+      const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
+      const repo = e.url.replace('https://github.com/', '')
+      const cmd = `dsh plugin --profile web add github:${repo}`
+      return `    <li class="item" data-cat="${e.cat}" style="animation-delay:${delay}s">
+      <span class="no" aria-hidden="true">№ ${String(idx).padStart(2, '0')}</span>
+      <div>
+        <h3><a href="${e.url}" rel="noopener" translate="no">${esc(e.name)}</a><span class="by" translate="no">${esc(e.owner)}</span></h3>
+        <p>${esc(e.descs[loc.code])}</p>
+      </div>
+      <button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button>
+    </li>`
+    }).join('\n\n')
+    return sec + '\n\n' + items
+  }).filter(Boolean).join('\n\n')
 }
 
-const LOCALES = {
-  en: {
-    LANG: 'en',
-    TITLE: 'Awesome DSH Plugin — Curated DeepSeek Harness (dsh) Plugin List',
-    DESC: `A curated list of ${N} DeepSeek Harness (dsh) plugins: UI enhancements, sessions, tools, workflow, notifications, development, and fun. Updated continuously.`,
-    URL: `${ORIGIN}/`,
-    ALT_URL: '/zh/',
-    ALT_LANG: 'zh',
-    ALT_LABEL: '中文',
-    SEARCH_PH: 'Search plugins…',
-    COPY_LABEL: 'Copy install command',
-    LANG_REDIRECT: `\n<script>if(new URLSearchParams(location.search).get('lang')==='zh'){const p=new URLSearchParams(location.search);p.delete('lang');location.replace('/zh/'+(p.size?'?'+p:''))}</script>`,
-    out: 'docs/index.html',
-  },
-  zh: {
-    LANG: 'zh-CN',
-    TITLE: 'Awesome DSH Plugin — DeepSeek Harness（dsh）插件精选列表',
-    DESC: `DeepSeek Harness（dsh）插件精选列表，收录 ${N} 个：UI 增强、会话与消息、工具、工作流与自动化、通知与集成、开发与娱乐，持续更新。`,
-    URL: `${ORIGIN}/zh/`,
-    ALT_URL: '/',
-    ALT_LANG: 'en',
-    ALT_LABEL: 'EN',
-    SEARCH_PH: '搜索插件…',
-    COPY_LABEL: '复制安装命令',
-    LANG_REDIRECT: `\n<script>if(new URLSearchParams(location.search).get('lang')==='en'){const p=new URLSearchParams(location.search);p.delete('lang');location.replace('/'+(p.size?'?'+p:''))}</script>`,
-    out: 'docs/zh/index.html',
-  },
+function buildChips(loc) {
+  return [
+    `      <button class="chip active" type="button" data-cat="all">${loc.strings.ALL} <small>${N}</small></button>`,
+    ...CAT_IDS.map((id) => {
+      const n = ordered.filter((e) => e.cat === id).length
+      return `      <button class="chip" type="button" data-cat="${id}">${loc.categories[id]} <small>${n}</small></button>`
+    }),
+  ].join('\n')
 }
 
-let master = fs.readFileSync('site/template.html', 'utf8')
-master = master.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">__JSONLD__</script>`)
-master = master.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, `$1\n\n${rows}\n\n  $2`)
-master = master.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, `$1\n${chips}\n    $2`)
+function localeLinks(current) {
+  return LOCALES.filter((l) => l.code !== current.code)
+    .map((l) => `<a class="lang-btn" href="${l.urlPath}" hreflang="${l.code}" rel="alternate">${l.label}</a>`)
+    .join('\n        ')
+}
 
-for (const [key, loc] of Object.entries(LOCALES)) {
-  let page = localize(master, key)
+function langRedirect(current) {
+  const cases = LOCALES.filter((l) => l.code !== current.code)
+    .map((l) => `if(v==='${l.code}'){p.delete('lang');location.replace('${l.urlPath}'+(p.size?'?'+p:''))}`)
+    .join('else ')
+  return `\n<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');${cases}}</script>`
+}
+
+const master = fs.readFileSync('site/template.html', 'utf8')
+
+for (const loc of LOCALES) {
+  let page = master
+  page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${jsonld(ORIGIN + loc.urlPath)}</script>`)
+  page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, `$1\n\n${buildRows(loc)}\n\n  $2`)
+  page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, `$1\n${buildChips(loc)}\n    $2`)
   page = page
-    .replaceAll('__LANG__', loc.LANG)
+    .replaceAll('__LANG__', loc.htmlLang)
     .replaceAll('__TITLE__', loc.TITLE)
-    .replaceAll('__DESC__', loc.DESC)
-    .replaceAll('__URL__', loc.URL)
-    .replaceAll('__ALT_URL__', loc.ALT_URL)
-    .replaceAll('__ALT_LANG__', loc.ALT_LANG)
-    .replaceAll('__ALT_LABEL__', loc.ALT_LABEL)
+    .replaceAll('__DESC__', loc.DESC.replace('{N}', N))
+    .replaceAll('__URL__', ORIGIN + loc.urlPath)
+    .replaceAll('__HREFLANGS__', hreflangs)
+    .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
+    .replaceAll('__LOCALE_LINKS__', localeLinks(loc))
     .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
-    .replaceAll('__COPY_LABEL__', loc.COPY_LABEL)
-    .replaceAll('__LANG_REDIRECT__', loc.LANG_REDIRECT)
-    .replaceAll('__JSONLD__', jsonld(loc.URL, 'Awesome DSH Plugin'))
+    .replaceAll('__LANG_REDIRECT__', langRedirect(loc))
+  for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
 }
 
 const today = new Date().toISOString().slice(0, 10)
-const alternates = `      <xhtml:link rel="alternate" hreflang="en" href="${ORIGIN}/"/>
-      <xhtml:link rel="alternate" hreflang="zh" href="${ORIGIN}/zh/"/>
-      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}/"/>`
+const alternates = [
+  ...LOCALES.map((l) => `      <xhtml:link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}"/>`),
+  `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}"/>`,
+].join('\n')
 fs.writeFileSync('docs/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>${ORIGIN}/</loc>
+${LOCALES.map((l) => `  <url>
+    <loc>${ORIGIN}${l.urlPath}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
 ${alternates}
-  </url>
-  <url>
-    <loc>${ORIGIN}/zh/</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>daily</changefreq>
-${alternates}
-  </url>
+  </url>`).join('\n')}
 </urlset>
 `)
 
-// keep the hand-written counts in the READMEs in sync
+// keep the hand-written counts in every README in sync
 const enReadme = fs.readFileSync('README.md', 'utf8').replace(/\*\*\d+\*\* plugins/, `**${N}** plugins`)
 fs.writeFileSync('README.md', enReadme)
 const zhReadme = fs.readFileSync('README.zh.md', 'utf8').replace(/\*\*\d+\*\* 个插件/, `**${N}** 个插件`)
 fs.writeFileSync('README.zh.md', zhReadme)
 
-console.log(`site built: ${N} rows × 2 locales + sitemap, README counts synced`)
+console.log(`site built: ${N} rows × ${LOCALES.length} locales + sitemap, README counts synced`)
