@@ -19,8 +19,9 @@
 <meta name="twitter:image" content="https://awesome-dsh-plugin.com/og.png">
 <script>if(new URLSearchParams(location.search).get('lang')==='en'){const p=new URLSearchParams(location.search);p.delete('lang');location.replace('/'+(p.size?'?'+p:''))}</script>
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#f6f2ea">
-<meta name="color-scheme" content="light">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#221e19">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,8 +43,25 @@
   --accent:        oklch(52% .190 30);
   --accent-strong: oklch(44% .200 30);
   --accent-tint:   color-mix(in oklch, oklch(52% .190 30) 22%, transparent);
+  --on-accent: oklch(96.5% .008 85);
   --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
   --body: "Archivo", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --canvas-0: oklch(19% .012 70);
+    --canvas-1: oklch(22% .013 70);
+    --canvas-2: oklch(16% .012 70);
+    --line:     oklch(33% .012 70);
+    --grid:     oklch(23.5% .012 70);
+    --text:   oklch(92% .010 85);
+    --text-2: oklch(70% .012 80);
+    --text-3: oklch(62% .012 80);
+    --accent:        oklch(66% .160 33);
+    --accent-strong: oklch(74% .165 38);
+    --accent-tint:   color-mix(in oklch, oklch(66% .160 33) 26%, transparent);
+    --on-accent: oklch(15% .012 70);
+  }
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
@@ -113,6 +131,9 @@ h1 em{font-style:normal;color:var(--accent)}
 }
 .issue-line a{color:var(--accent)}
 
+.mark g{fill:var(--text)}
+.mark .plug-block{fill:var(--accent)}
+
 /* ── sticky finder ── */
 .finder{position:sticky;top:0;z-index:5;background:color-mix(in oklch, var(--canvas-0) 92%, transparent);
   backdrop-filter:blur(8px);border-block-end:1px solid var(--text)}
@@ -127,8 +148,8 @@ h1 em{font-style:normal;color:var(--accent)}
   border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer}
 .chip small{color:var(--text-3);font-size:.66rem}
 .chip:hover{border-color:var(--text)}
-.chip.active{color:var(--canvas-0);border-color:var(--accent);background:var(--accent)}
-.chip.active small{color:var(--canvas-0)}
+.chip.active{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
+.chip.active small{color:var(--on-accent)}
 
 /* ── the parts catalog ── */
 ol.dex{list-style:none;padding:0;counter-reset:sec}
@@ -141,7 +162,7 @@ ol.dex li.sec h2{
 ol.dex li.sec h2::before{
   content:counter(sec, upper-alpha);
   font-family:var(--mono);font-size:.95rem;font-weight:700;
-  color:var(--canvas-0);background:var(--accent);
+  color:var(--on-accent);background:var(--accent);
   width:1.7rem;height:1.7rem;display:grid;place-items:center;flex:none;
 }
 ol.dex li.sec small{font-family:var(--mono);font-size:.72rem;color:var(--text-3);font-weight:400;margin-left:auto}
@@ -165,8 +186,8 @@ li.item:hover .no{transform:translateX(5px)}
 .dex p{margin-top:.25rem;color:var(--text-2);font-size:.92rem;max-width:46rem;overflow-wrap:break-word}
 .copy{align-self:start;margin-top:.3rem;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
   background:none;border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap}
-.copy:hover{color:var(--canvas-0);border-color:var(--accent);background:var(--accent)}
-.copy.done{color:var(--canvas-0);border-color:var(--accent);background:var(--accent)}
+.copy:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
+.copy.done{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
 li.hidden{display:none}
 .noresult{padding-block:3rem;color:var(--text-3);text-align:center;display:none}
 .noresult button{background:none;border:none;color:var(--accent);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
