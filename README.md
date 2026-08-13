@@ -1,4 +1,4 @@
-# Awesome DSH Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
+﻿# Awesome DSH Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com)
 
@@ -46,6 +46,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [ex-setting](https://github.com/omdsh-dev/ex-setting) - Settings extensions for DSH.
 - [web-components](https://github.com/omdsh-dev/web-components) - Web Components support.
 - [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) - Turn navigation for the DSH Web UI.
+- [dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) - Right-side dot-timeline rail: jump between user messages.
 
 ## Sessions & Messages
 
