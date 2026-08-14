@@ -49,13 +49,15 @@ async function fetchJson(url) {
 
 async function probe(url) {
   const repoPath = url.replace('https://github.com/', '').replace(/\/$/, '')
+  const repo = repoPath.split('/').slice(0, 2).join('/')
+  const sub = repoPath.includes('/tree/') ? repoPath.split('/tree/')[1].replace(/^[^/]+\//, '') : null
   try {
-    const pkg = await fetchJson(`https://raw.githubusercontent.com/${repoPath}/HEAD/package.json`)
+    const pkg = await fetchJson(`https://raw.githubusercontent.com/${repo}/HEAD/${sub ? sub + '/' : ''}package.json`)
     const name = typeof pkg.name === 'string' ? pkg.name : null
     if (name === null) return { npm: null, checkedAt: today }
     const meta = await fetchJson(`https://registry.npmjs.org/${encodeURIComponent(name)}`)
     const repoField = typeof meta.repository === 'string' ? meta.repository : meta.repository?.url ?? ''
-    const linked = repoField.toLowerCase().includes(repoPath.toLowerCase())
+    const linked = repoField.toLowerCase().includes(repo.toLowerCase())
     return { npm: linked ? name : null, checkedAt: today }
   } catch {
     return null // network failure or 404 chain — keep whatever we had
@@ -73,6 +75,9 @@ for (let i = 0; i < pending.length; i += CONCURRENCY) {
   done += batch.length
   console.log(`probed ${done}/${pending.length}`)
 }
+
+const listed = new Set(urls)
+for (const k of Object.keys(map)) if (!listed.has(k)) delete map[k]
 
 const sorted = Object.fromEntries(Object.entries(map).sort(([a], [b]) => a.localeCompare(b)))
 fs.writeFileSync(MAP_FILE, JSON.stringify(sorted, null, 1) + '\n')

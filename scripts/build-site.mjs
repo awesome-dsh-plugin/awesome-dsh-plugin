@@ -19,6 +19,7 @@ const DATES_FILE = 'data/added-dates.json'
 const NPM_MAP_FILE = 'data/npm-map.json'
 const CAT_IDS = ['ui', 'theme', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'model', 'dev', 'fun']
 
+const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
 function parseReadme(loc) {
@@ -41,15 +42,23 @@ function parseReadme(loc) {
 const parsed = LOCALES.map((loc) => ({ loc, entries: parseReadme(loc) }))
 const [base, ...others] = parsed
 const entries = []
+let parityBroken = false
 for (const [url, e] of base.entries) {
   const descs = { [base.loc.code]: e.desc }
   let ok = true
   for (const { loc, entries: map } of others) {
     const t = map.get(url)
-    if (!t) { console.error(`${loc.readme} missing: ${url}`); ok = false; break }
+    if (!t) { console.error(`${loc.readme} missing: ${url}`); ok = false; parityBroken = true; break }
     descs[loc.code] = t.desc
   }
   if (ok) entries.push({ name: e.name, url: e.url, cat: e.cat, owner: url.split('/')[3], descs })
+}
+for (const { loc, entries: map } of others)
+  for (const url of map.keys())
+    if (!base.entries.has(url)) { console.error(`${loc.readme} has an entry missing from ${base.loc.readme}: ${url}`); parityBroken = true }
+if (parityBroken) {
+  console.error('README locale parity broken — fix the language files; refusing to build (a silent drop would delist and delete pages).')
+  process.exit(1)
 }
 console.log(`${entries.length} entries parsed across ${LOCALES.length} locales`)
 
@@ -162,7 +171,7 @@ const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
   let page = master
-  page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${jsonld(ORIGIN + loc.urlPath)}</script>`)
+  page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(jsonld(ORIGIN + loc.urlPath))}</script>`)
   page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc)}\n\n  ${b}`)
   page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChips(loc)}\n    ${b}`)
   page = page
@@ -201,7 +210,7 @@ for (const loc of LOCALES) {
       `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/">`,
     ].join('\n')
     let page = master
-    page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${catJsonld(url, id)}</script>`)
+    page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(catJsonld(url, id))}</script>`)
     page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id)}\n\n  ${b}`)
     page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChipLinks(loc, id)}\n    ${b}`)
     page = page
@@ -230,14 +239,15 @@ const readmes = fs.existsSync('data/readmes.json') ? JSON.parse(fs.readFileSync(
 // render a plugin README to safe HTML: raw HTML dropped, headings demoted,
 // relative links/images resolved against the repo (probe supplies the bases)
 function renderReadme(rm) {
-  const abs = (href, base) => {
-    if (!href || /^(https?:|mailto:|#|data:)/i.test(href)) return href
+  const abs = (href, base, allowData = false) => {
+    if (!href || /^(https?:|mailto:|#)/i.test(href)) return href
+    if (/^data:/i.test(href)) return allowData ? href : '#'
     return base + href.replace(/^\.\//, '').replace(/^\//, '')
   }
   const md = new Marked({
     walkTokens(t) {
       if (t.type === 'heading') t.depth = Math.min(t.depth + 1, 6)
-      else if (t.type === 'image') t.href = abs(t.href, rm.base)
+      else if (t.type === 'image') t.href = abs(t.href, rm.base, true)
       else if (t.type === 'link') t.href = abs(t.href, rm.blobBase)
     },
     renderer: { html: () => '' },
@@ -330,7 +340,7 @@ ${readmeHtml}
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => dHreflangs)
       .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
-      .replaceAll('__JSONLD__', () => jsonldDetail)
+      .replaceAll('__JSONLD__', () => ldSafe(jsonldDetail))
       .replaceAll('__HOME__', () => loc.urlPath)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
@@ -353,7 +363,7 @@ ${readmeHtml}
 // Prune detail pages for entries no longer listed — otherwise a removed or
 // renamed plugin leaves a live orphan page behind.
 {
-  const liveSlugs = new Set(ordered.map((e) => e.slug))
+  const liveSlugs = new Set(ordered.map((e) => e.slug.toLowerCase()))
   for (const loc of LOCALES) {
     const pRoot = `${loc.out.replace(/index\.html$/, '')}p`
     if (!fs.existsSync(pRoot)) continue
@@ -361,7 +371,8 @@ ${readmeHtml}
       const ownerDir = `${pRoot}/${owner}`
       if (!fs.statSync(ownerDir).isDirectory()) continue
       for (const name of fs.readdirSync(ownerDir)) {
-        if (!liveSlugs.has(`${owner}/${name}`)) {
+        if (!fs.statSync(`${ownerDir}/${name}`).isDirectory()) continue
+        if (!liveSlugs.has(`${owner}/${name}`.toLowerCase())) {
           fs.rmSync(`${ownerDir}/${name}`, { recursive: true, force: true })
           console.log(`pruned stale detail page ${ownerDir}/${name}`)
         }
@@ -383,8 +394,8 @@ for (const loc of LOCALES) {
   <updated>${isoTs([...ordered].map((e) => e.addedAt).sort().pop())}</updated>
 ${recent.map((e) => `  <entry>
     <title>${esc(e.name)}</title>
-    <id>${e.url}</id>
-    <link href="${e.url}"/>
+    <id>${esc(e.url)}</id>
+    <link href="${esc(e.url)}"/>
     <updated>${isoTs(e.addedAt)}</updated>
     <summary>${esc(e.descs[loc.code])}</summary>
   </entry>`).join('\n')}
@@ -425,7 +436,7 @@ const registry = {
 }
 fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 
-const today = new Date().toISOString().slice(0, 10)
+const lastAdded = [...ordered].map((e) => e.added).sort().pop()
 const alternates = [
   ...LOCALES.map((l) => `      <xhtml:link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}"/>`),
   `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}"/>`,
@@ -434,19 +445,19 @@ fs.writeFileSync('docs/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${LOCALES.map((l) => `  <url>
     <loc>${ORIGIN}${l.urlPath}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastAdded}</lastmod>
     <changefreq>daily</changefreq>
 ${alternates}
   </url>`).join('\n')}
 ${LOCALES.flatMap((l) => CAT_IDS.map((id) => `  <url>
     <loc>${ORIGIN}${l.urlPath}${id}/</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastAdded}</lastmod>
     <changefreq>daily</changefreq>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}${id}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/"/>`].join('\n')}
   </url>`)).join('\n')}
 ${LOCALES.flatMap((l) => ordered.map((e) => `  <url>
     <loc>${ORIGIN}${l.urlPath}p/${e.slug}/</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${e.added}</lastmod>
     <changefreq>weekly</changefreq>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${e.slug}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/"/>`].join('\n')}
   </url>`)).join('\n')}

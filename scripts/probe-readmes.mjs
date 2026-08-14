@@ -91,14 +91,16 @@ async function probe(url) {
     const listings = {}
     const listDir = async (d) => {
       if (!(d in listings)) {
-        try { listings[d] = new Set((await gh(`/repos/${repo}/contents/${d}`)).map((e) => e.path)) } catch { listings[d] = new Set() }
+        try { listings[d] = new Map((await gh(`/repos/${repo}/contents/${d}`)).map((e) => [e.path.toLowerCase(), e.path])) } catch { listings[d] = new Map() }
       }
       return listings[d]
     }
     for (const name of names) {
-      const path = dir ? `${dir}/${name}` : name
-      const parent = path.split('/').slice(0, -1).join('/')
-      if (!(await listDir(parent)).has(path)) continue
+      const want = dir ? `${dir}/${name}` : name
+      const parent = want.split('/').slice(0, -1).join('/')
+      // case-insensitive: some repos ship README-ZH.md etc.
+      const path = (await listDir(parent)).get(want.toLowerCase())
+      if (!path) continue
       try {
         const alt = await gh(`/repos/${repo}/contents/${path}`)
         if (alt.content) {

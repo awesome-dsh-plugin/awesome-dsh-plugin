@@ -203,10 +203,6 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
- "https://github.com/caoqinnan-web/dsh-project-organizer": {
-  "npm": "dsh-project-organizer",
-  "checkedAt": "2026-08-14"
- },
  "https://github.com/causebefore/dsh-pomodoro": {
   "npm": "dsh-pomodoro",
   "checkedAt": "2026-08-14"
@@ -992,7 +988,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet": {
-  "npm": null,
+  "npm": "dsh-pet",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/pc439527/dsh-notify-bark": {
@@ -1072,7 +1068,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/severin-ye/uagent-sync/tree/master/packages/dsh": {
-  "npm": null,
+  "npm": "uagent-sync-dsh",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/siberiah2o/dsh-plugin-terminal": {
@@ -1228,7 +1224,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager": {
-  "npm": null,
+  "npm": "@dsh-suite/plugin-manager",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify": {
@@ -1240,7 +1236,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board": {
-  "npm": null,
+  "npm": "@dsh-suite/plugin-team-board",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/william-jin-cmu/dsh-evolve": {
@@ -1316,10 +1312,6 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ysr666/dsh-vision-router": {
-  "npm": null,
-  "checkedAt": "2026-08-14"
- },
- "https://github.com/YTxue/dsh-skill-manager": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },

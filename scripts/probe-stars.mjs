@@ -60,6 +60,9 @@ for (let i = 0; i < urls.length; i += CONCURRENCY) {
   if (done % 50 === 0 || done >= urls.length) console.log(`stars ${done}/${urls.length}`)
 }
 
+const listed = new Set(urls)
+for (const k of Object.keys(map)) if (!listed.has(k)) delete map[k]
+
 const sorted = Object.fromEntries(Object.entries(map).sort(([a], [b]) => a.localeCompare(b)))
 fs.writeFileSync(STARS_FILE, JSON.stringify(sorted, null, 1) + '\n')
 console.log(`stars.json written: ${Object.keys(sorted).length} repos`)

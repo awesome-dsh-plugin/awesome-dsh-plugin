@@ -3211,9 +3211,9 @@
     "en": "In-app plugin store for the DSH Web UI: browse, search, one-click install, compat badges.",
     "zh": "DSH Web UI 内置插件商店：浏览、搜索、一键安装、兼容性徽章。"
    },
-   "npm": null,
+   "npm": "@dsh-suite/plugin-manager",
    "stars": 15,
-   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-manager",
+   "install": "dsh plugin --profile web add @dsh-suite/plugin-manager",
    "added": "2026-08-14"
   },
   {
@@ -3841,9 +3841,9 @@
     "en": "Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.",
     "zh": "多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。"
    },
-   "npm": null,
+   "npm": "@dsh-suite/plugin-team-board",
    "stars": 15,
-   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-team-board",
+   "install": "dsh plugin --profile web add @dsh-suite/plugin-team-board",
    "added": "2026-08-14"
   },
   {
@@ -3886,9 +3886,9 @@
     "en": "Cross-device workspace backup, restore, and ecosystem update via the uagent-sync CLI.",
     "zh": "工作区跨设备备份、恢复与扩展更新，经 uagent-sync CLI 桥接执行。"
    },
-   "npm": null,
+   "npm": "uagent-sync-dsh",
    "stars": 0,
-   "install": "dsh plugin --profile web add github:severin-ye/uagent-sync#path:/packages/dsh",
+   "install": "dsh plugin --profile web add uagent-sync-dsh",
    "added": "2026-08-14"
   },
   {
@@ -5341,9 +5341,9 @@
     "en": "Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.",
     "zh": "DSH Web UI 桌面宠物：25 个透明动画、屏幕漫游、点击反应与拖拽，附可复现的素材生成链。"
    },
-   "npm": null,
+   "npm": "dsh-pet",
    "stars": 8,
-   "install": "dsh plugin --profile web add github:PC2005-cloud/dsh-pet#path:/dsh-pet",
+   "install": "dsh plugin --profile web add dsh-pet",
    "added": "2026-08-14"
   },
   {

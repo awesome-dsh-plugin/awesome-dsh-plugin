@@ -6,10 +6,16 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['README.md', 'README.zh.md', 'scripts/*.mjs', 'site/*', '.github/workflows/build-site.yml']
+    paths: ['README.md', 'README.zh.md', 'scripts/*.mjs', 'site/*', 'package.json', 'package-lock.json', '.github/workflows/build-site.yml']
 
 permissions:
   contents: write
+
+# serialize runs — the cron and a merge-triggered run overlapping caused
+# non-fast-forward push failures before
+concurrency:
+  group: build-site
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -35,4 +41,5 @@ jobs:
           git add docs README.md README.zh.md data
           git diff --cached --quiet && echo "no changes" && exit 0
           git commit -m "chore: rebuild site from README"
+          git pull --rebase origin main
           git push
