@@ -447,6 +447,7 @@ dsh plugin --profile web add dshmarket
 - [anweat/dsh-restart](https://github.com/anweat/dsh-restart) - Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.
 - [yyh-001/dsh-expression](https://github.com/yyh-001/dsh-expression) - Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.
 - [PC2005-cloud/dsh-pet#dsh-pet](https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet) - Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.
+- [xiekai886/dsh-MusicPlayer](https://github.com/xiekai886/dsh-MusicPlayer) - A collapsible/expandable draggable floating music player with NetEase Cloud Music playlist import and song/artist search — chat and listen at the same time.
 
 
 ## Contributing
