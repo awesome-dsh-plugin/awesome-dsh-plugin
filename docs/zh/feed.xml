@@ -146,6 +146,13 @@
     <summary>Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。</summary>
   </entry>
   <entry>
+    <title>a903067276-rgb/dsh-file-mentions</title>
+    <id>https://github.com/a903067276-rgb/dsh-file-mentions</id>
+    <link href="https://github.com/a903067276-rgb/dsh-file-mentions"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DSH 回复中的文件路径可点击：Codex 风格行内打开、文件管理器定位、回合尾部文件 chip 列表。</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/modusensus/dsh-mneme"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</summary>
-  </entry>
-  <entry>
-    <title>nowledge-co/nowledge-mem-deepseek-harness</title>
-    <id>https://github.com/nowledge-co/nowledge-mem-deepseek-harness</id>
-    <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</summary>
   </entry>
 </feed>

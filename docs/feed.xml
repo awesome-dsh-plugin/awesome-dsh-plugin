@@ -146,6 +146,13 @@
     <summary>Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.</summary>
   </entry>
   <entry>
+    <title>a903067276-rgb/dsh-file-mentions</title>
+    <id>https://github.com/a903067276-rgb/dsh-file-mentions</id>
+    <link href="https://github.com/a903067276-rgb/dsh-file-mentions"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/modusensus/dsh-mneme"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</summary>
-  </entry>
-  <entry>
-    <title>nowledge-co/nowledge-mem-deepseek-harness</title>
-    <id>https://github.com/nowledge-co/nowledge-mem-deepseek-harness</id>
-    <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</summary>
   </entry>
 </feed>
