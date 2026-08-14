@@ -27,6 +27,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
   - [🔌 模型与账号接入](#-模型与账号接入)
   - [🧑‍💻 开发与运行时](#-开发与运行时)
   - [🎮 娱乐](#-娱乐)
+  - [🧩 技能（Skills）](#-技能skills)
 - [徽章](#徽章)
 - [免责声明](#免责声明)
 
@@ -276,6 +277,14 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [@anweat/dsh-browser](https://github.com/anweat/dsh-browser) — 自包含浏览器运行时：Playwright（chromium）+ OpenCLI 作为插件本地依赖（全局复用回退），提供 `browser` 服务与 9 个交互式浏览器工具。
 - [dsh-voice-webspeech](https://github.com/anweat/dsh-voice-webspeech) — 浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。
 - [dsh-restart](https://github.com/anweat/dsh-restart) — DSH 重启插件：可配置的重启方式（Node 原生/旧 PowerShell 适配）、重启后自动继续的提示词、可选看门狗自动拉起。
+
+
+### 🧩 技能（Skills）
+
+- [conservative-code-edits](https://github.com/addxing/conservative-code-edits) — 保守代码修改守则 skill：最小化改动、保留既有架构与风格、规避无关重构与共享代码风险。
+- [function-extraction](https://github.com/addxing/function-extraction) — 功能链路提取 skill：从代码库提取某功能的完整实现链路，生成含数据流、异常处理与 Mermaid 图表的技术文档。
+- [function-testing](https://github.com/addxing/function-testing) — 功能测试 skill：从 PRD、Git 提交或用户故事生成功能测试用例，输出 Excel 风格报告。
+- [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — Android 功能复刻 skill：以源项目实际实现为准，将指定功能完整迁移到其他项目或平台。
 
 
 ## 贡献
