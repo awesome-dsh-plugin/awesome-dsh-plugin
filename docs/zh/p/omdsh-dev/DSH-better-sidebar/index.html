@@ -203,7 +203,7 @@ footer p+p{margin-top:.5rem}
 <li><strong>🌏 多语言</strong>：界面文案跟随 DSH 语言（zh / en）实时切换</li>
 </ul>
 <blockquote>
-<p>🔌 <strong>我们的态度</strong>：把插件做成服务、把自己当用户——内置的 7 tab + 6 viewer 与外部插件走同一套 <code>ctx.betterSidebar</code> API，不自留特权；可被生态替代的就交给生态。详见下方「🔌 服务化」一节与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>。</p>
+<p>🔌 <strong>核心理念</strong>：服务优先——内置的 7 tab + 6 viewer 与第三方插件通过同一套 <code>ctx.betterSidebar</code> API 注册，能力完全对等；官方不再内置、可由生态提供的功能，交由生态插件实现。接入文档见下方「🔌 服务化」与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>。</p>
 </blockquote>
 <h3>🆕 最近更新</h3>
 <p>v0.12.1</p>
@@ -377,7 +377,7 @@ dsh registry enable dsh-external/dsh-better-sidebar
 </tr>
 </tbody></table>
 <h3>🔌 服务化：注册 tab 与文件预览器</h3>
-<p>从 v0.4.0 起暴露 <code>ctx.betterSidebar</code> 服务，其他插件可注册侧边栏页面与文件预览器（内置 7 tab + 6 viewer 也走同一服务，吃自己的狗粮）：</p>
+<p>从 v0.4.0 起暴露 <code>ctx.betterSidebar</code> 服务，其他插件可注册侧边栏页面与文件预览器（内置 7 tab + 6 viewer 亦通过同一服务注册）：</p>
 <pre><code class="language-ts">import type {} from &#39;dsh-better-sidebar&#39;  // 触发 ctx.betterSidebar 类型合并
 export const inject = [&#39;betterSidebar&#39;]
 export function apply(ctx: Context) {
