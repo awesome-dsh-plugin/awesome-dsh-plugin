@@ -127,6 +127,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-cost-balance",
+   "owner": "zoumutou",
+   "url": "https://github.com/zoumutou/dsh-cost-balance",
+   "page": "https://awesome-dsh-plugin.com/p/zoumutou/dsh-cost-balance/",
+   "category": "ui",
+   "description": {
+    "en": "Collapsible iOS-style stats pill under the composer: session cost, DeepSeek account balance, cache-hit rate, and token usage in a frosted panel.",
+    "zh": "输入框下方的 iOS 风格统计条：一键展开查看会话花费、DeepSeek 账户余额、缓存命中率与 Token 用量。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:zoumutou/dsh-cost-balance",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-context",
    "owner": "bowenliang123",
    "url": "https://github.com/bowenliang123/dsh-context",
@@ -3349,21 +3364,6 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:dfycaly98931680/dsh-trajectory-governance",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-project-organizer",
-   "owner": "caoqinnan-web",
-   "url": "https://github.com/caoqinnan-web/dsh-project-organizer",
-   "page": "https://awesome-dsh-plugin.com/p/caoqinnan-web/dsh-project-organizer/",
-   "category": "skill",
-   "description": {
-    "en": "Project context engineering skill that distills scattered conversations, files, decisions, and tasks into a minimal actionable workspace and handoff.",
-    "zh": "项目上下文工程 Skill：把零散对话、文件、决策和任务提炼为最小但可执行的项目空间与交接上下文。"
-   },
-   "npm": "dsh-project-organizer",
-   "stars": 1,
-   "install": "dsh plugin --profile web add dsh-project-organizer",
    "added": "2026-08-14"
   },
   {

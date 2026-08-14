@@ -41,6 +41,13 @@
     <summary>GitHub 风格用量热力图看板：按工作区统计使用次数与 Token 花费（含缓存命中率）、DeepSeek 账户余额查询、工作区别名管理。</summary>
   </entry>
   <entry>
+    <title>zoumutou/dsh-cost-balance</title>
+    <id>https://github.com/zoumutou/dsh-cost-balance</id>
+    <link href="https://github.com/zoumutou/dsh-cost-balance"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>输入框下方的 iOS 风格统计条：一键展开查看会话花费、DeepSeek 账户余额、缓存命中率与 Token 用量。</summary>
+  </entry>
+  <entry>
     <title>bowenliang123/dsh-context</title>
     <id>https://github.com/bowenliang123/dsh-context</id>
     <link href="https://github.com/bowenliang123/dsh-context"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。</summary>
-  </entry>
-  <entry>
-    <title>Meredith2328/dsh-sticky-note</title>
-    <id>https://github.com/Meredith2328/dsh-sticky-note</id>
-    <link href="https://github.com/Meredith2328/dsh-sticky-note"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>编辑框工具栏便签，随手记点子和 TODO，自动保存为 Markdown，一键发送到对话。</summary>
   </entry>
 </feed>

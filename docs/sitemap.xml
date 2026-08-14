@@ -233,6 +233,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Make0209/dsh-usage-stats/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/zoumutou/dsh-cost-balance/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/zoumutou/dsh-cost-balance/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/zoumutou/dsh-cost-balance/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/zoumutou/dsh-cost-balance/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/bowenliang123/dsh-context/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -1953,14 +1961,6 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/dfycaly98931680/dsh-trajectory-governance/"/>
   </url>
   <url>
-    <loc>https://awesome-dsh-plugin.com/p/caoqinnan-web/dsh-project-organizer/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/caoqinnan-web/dsh-project-organizer/"/>
-      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/caoqinnan-web/dsh-project-organizer/"/>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/caoqinnan-web/dsh-project-organizer/"/>
-  </url>
-  <url>
     <loc>https://awesome-dsh-plugin.com/p/dhicoc/dsh-reverse-skill/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -3023,6 +3023,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Make0209/dsh-usage-stats/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Make0209/dsh-usage-stats/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Make0209/dsh-usage-stats/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/zoumutou/dsh-cost-balance/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/zoumutou/dsh-cost-balance/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/zoumutou/dsh-cost-balance/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/zoumutou/dsh-cost-balance/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/bowenliang123/dsh-context/</loc>
@@ -4743,14 +4751,6 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/dfycaly98931680/dsh-trajectory-governance/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/dfycaly98931680/dsh-trajectory-governance/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/dfycaly98931680/dsh-trajectory-governance/"/>
-  </url>
-  <url>
-    <loc>https://awesome-dsh-plugin.com/zh/p/caoqinnan-web/dsh-project-organizer/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/caoqinnan-web/dsh-project-organizer/"/>
-      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/caoqinnan-web/dsh-project-organizer/"/>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/caoqinnan-web/dsh-project-organizer/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/dhicoc/dsh-reverse-skill/</loc>
