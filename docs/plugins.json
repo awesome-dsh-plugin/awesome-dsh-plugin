@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 335,
+ "count": 341,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1204,6 +1204,21 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:RAFOLIE/dsh-desktop-windowos#path:/plugin",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-workshop",
+   "owner": "yyyyukari",
+   "url": "https://github.com/yyyyukari/dsh-plugin-workshop",
+   "page": "https://awesome-dsh-plugin.com/p/yyyyukari/dsh-plugin-workshop/",
+   "category": "ui",
+   "description": {
+    "en": "Steam Workshop-style in-app plugin browser: search, hot/newest/trending (7/30/90-day) sorting, Chinese keyword mapping, bilingual descriptions and README translation, plugin-signature filtering, and one-click install/update.",
+    "zh": "创意工坊式插件浏览器：侧栏常驻入口，搜索/最热/最新/近 7-90 天飙升榜、中文关键词映射、描述与 README 机翻、插件特征验证过滤、一键安装/更新。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:yyyyukari/dsh-plugin-workshop",
    "added": "2026-08-14"
   },
   {
@@ -3217,6 +3232,36 @@
    "added": "2026-08-14"
   },
   {
+   "name": "knowlp-rag",
+   "owner": "wly8691-jpg",
+   "url": "https://github.com/wly8691-jpg/knowlp-rag",
+   "page": "https://awesome-dsh-plugin.com/p/wly8691-jpg/knowlp-rag/",
+   "category": "tools",
+   "description": {
+    "en": "Dual knowledge-graph RAG for Markdown notes: prerequisite + similarity graphs (P/S-Agent traversal), paragraph chunking, n-gram/embedding hybrid search, and an explicit weight feedback loop — via MCP.",
+    "zh": "Markdown 笔记的双知识图谱 RAG：前置依赖 + 相似关联双图（P/S-Agent 遍历）、段落级匹配、ngram/embedding 混合检索、显式权重反馈闭环，以 MCP 接入。"
+   },
+   "npm": "@eqman00003/knowlp-rag",
+   "stars": null,
+   "install": "dsh plugin --profile web add @eqman00003/knowlp-rag",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-mcpguard",
+   "owner": "ChenLaoshiYF",
+   "url": "https://github.com/ChenLaoshiYF/dsh-mcpguard",
+   "page": "https://awesome-dsh-plugin.com/p/ChenLaoshiYF/dsh-mcpguard/",
+   "category": "tools",
+   "description": {
+    "en": "Scans skills and MCP configs for prompt injection, homoglyphs, hidden Unicode, dangerous shell, and credential leaks.",
+    "zh": "扫描 skill 与 MCP 配置中的提示注入、同形字、Unicode 隐形字符、危险 shell 与凭据泄露。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:ChenLaoshiYF/dsh-mcpguard",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-project-organizer",
    "owner": "caoqinnan-web",
    "url": "https://github.com/caoqinnan-web/dsh-project-organizer",
@@ -3667,6 +3712,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "uagent-sync#packages/dsh",
+   "owner": "severin-ye",
+   "url": "https://github.com/severin-ye/uagent-sync/tree/master/packages/dsh",
+   "page": "https://awesome-dsh-plugin.com/p/severin-ye/uagent-sync--packages-dsh/",
+   "category": "workflow",
+   "description": {
+    "en": "Cross-device workspace backup, restore, and ecosystem update via the uagent-sync CLI.",
+    "zh": "工作区跨设备备份、恢复与扩展更新，经 uagent-sync CLI 桥接执行。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:severin-ye/uagent-sync#path:/packages/dsh",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-plugin-call-me",
    "owner": "radres",
    "url": "https://github.com/radres/dsh-plugin-call-me",
@@ -3979,6 +4039,36 @@
    "npm": null,
    "stars": 1,
    "install": "dsh plugin --profile web add github:muretai/muretai-dsh-skill",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-feishu",
+   "owner": "itr-del",
+   "url": "https://github.com/itr-del/dsh-feishu",
+   "page": "https://awesome-dsh-plugin.com/p/itr-del/dsh-feishu/",
+   "category": "notify",
+   "description": {
+    "en": "Feishu (Lark) IM bridge for DeepSeek Harness via `dsh plugin add`; one DM user to one persistent dsh session, with full debugging docs.",
+    "zh": "DeepSeek Harness 的飞书/Lark 私聊桥接插件，支持 `dsh plugin add` 一键安装，配套完整调试文档。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:itr-del/dsh-feishu",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-feishu-bridge",
+   "owner": "wz-heng",
+   "url": "https://github.com/wz-heng/dsh-feishu-bridge",
+   "page": "https://awesome-dsh-plugin.com/p/wz-heng/dsh-feishu-bridge/",
+   "category": "notify",
+   "description": {
+    "en": "Fail-closed Feishu (Lark) channel bridge: chat with a bot, get dsh agent turns back. Official-Python-SDK-only integration (exact-pinned); deny-by-default allowlist, webhook signature/timestamp/replay verification, per-chat sticky sessions; bilingual docs.",
+    "zh": "Fail-closed 的飞书（Lark）channel 桥：和机器人聊天即驱动 dsh agent turn。仅经官方 Python SDK 集成（精确锁版）；白名单默认全拒、webhook 验签/时间窗/防重放、按 chat 粘性会话；中英双语文档。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:wz-heng/dsh-feishu-bridge",
    "added": "2026-08-14"
   },
   {

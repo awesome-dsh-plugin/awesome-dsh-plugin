@@ -215,6 +215,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/ChenLaoshiYF/dsh-mcpguard": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/CheshireJCat/blender": {
   "npm": "dsh-blender",
   "checkedAt": "2026-08-14"
@@ -436,6 +440,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/imetn/dsh-lark-bridge": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/itr-del/dsh-feishu": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -1035,6 +1043,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/severin-ye/uagent-sync/tree/master/packages/dsh": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/siberiah2o/dsh-plugin-terminal": {
   "npm": "dsh-plugin-terminal",
   "checkedAt": "2026-08-14"
@@ -1211,6 +1223,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/wly8691-jpg/knowlp-rag": {
+  "npm": "@eqman00003/knowlp-rag",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/pet-bridge": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1220,6 +1236,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/wz-heng/dsh-feishu-bridge": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -1281,6 +1301,10 @@
  },
  "https://github.com/yyh-001/dsh-expression": {
   "npm": "dsh-expression",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/yyyyukari/dsh-plugin-workshop": {
+  "npm": null,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/zealot00/dsh-pet": {
