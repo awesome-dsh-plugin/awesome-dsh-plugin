@@ -83,6 +83,13 @@
     <summary>DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。</summary>
   </entry>
   <entry>
+    <title>dsh-fail-logger</title>
+    <id>https://github.com/Areium/dsh-fail-logger</id>
+    <link href="https://github.com/Areium/dsh-fail-logger"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。</summary>
+  </entry>
+  <entry>
     <title>dsh-tianshu-tui</title>
     <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
     <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/omdsh-dev/ex-setting"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>DSH 的设置扩展。</summary>
-  </entry>
-  <entry>
-    <title>web-components</title>
-    <id>https://github.com/omdsh-dev/web-components</id>
-    <link href="https://github.com/omdsh-dev/web-components"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Web Components 支持。</summary>
   </entry>
 </feed>

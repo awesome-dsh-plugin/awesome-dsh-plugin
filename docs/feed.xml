@@ -83,6 +83,13 @@
     <summary>The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.</summary>
   </entry>
   <entry>
+    <title>dsh-fail-logger</title>
+    <id>https://github.com/Areium/dsh-fail-logger</id>
+    <link href="https://github.com/Areium/dsh-fail-logger"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Auto-log failed tool calls across native tools, PTC run_code, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.</summary>
+  </entry>
+  <entry>
     <title>dsh-tianshu-tui</title>
     <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
     <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/omdsh-dev/ex-setting"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Settings extensions for DSH.</summary>
-  </entry>
-  <entry>
-    <title>web-components</title>
-    <id>https://github.com/omdsh-dev/web-components</id>
-    <link href="https://github.com/omdsh-dev/web-components"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Web Components support.</summary>
   </entry>
 </feed>
