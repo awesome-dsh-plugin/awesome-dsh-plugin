@@ -55,6 +55,27 @@
     <summary>一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。</summary>
   </entry>
   <entry>
+    <title>dsh-sticky-note</title>
+    <id>https://github.com/Meredith2328/dsh-sticky-note</id>
+    <link href="https://github.com/Meredith2328/dsh-sticky-note"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>编辑框工具栏便签，随手记点子和 TODO，自动保存为 Markdown，一键发送到对话。</summary>
+  </entry>
+  <entry>
+    <title>dsh-web-attention-badge</title>
+    <id>https://github.com/Luaphes/dsh-web-attention-badge</id>
+    <link href="https://github.com/Luaphes/dsh-web-attention-badge"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。</summary>
+  </entry>
+  <entry>
+    <title>dsh-skin</title>
+    <id>https://github.com/KinGao294/dsh-skin</id>
+    <link href="https://github.com/KinGao294/dsh-skin"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -193,26 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-voice"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。</summary>
-  </entry>
-  <entry>
-    <title>dsh-docker</title>
-    <id>https://github.com/Jesse-njx/dsh-docker</id>
-    <link href="https://github.com/Jesse-njx/dsh-docker"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。</summary>
-  </entry>
-  <entry>
-    <title>dsh-excel-chat</title>
-    <id>https://github.com/hccccc01333/dsh-excel-chat</id>
-    <link href="https://github.com/hccccc01333/dsh-excel-chat"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。</summary>
-  </entry>
-  <entry>
-    <title>dsh-context-proxy</title>
-    <id>https://github.com/EvilIrving/dsh-context-proxy</id>
-    <link href="https://github.com/EvilIrving/dsh-context-proxy"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。</summary>
   </entry>
 </feed>

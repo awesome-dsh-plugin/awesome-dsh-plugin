@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 160,
+ "count": 163,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -369,6 +369,42 @@
     "zh": "一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。"
    },
    "install": "dsh plugin --profile web add github:Han-1413141/dsh-sticky-disclosure",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-sticky-note",
+   "owner": "Meredith2328",
+   "url": "https://github.com/Meredith2328/dsh-sticky-note",
+   "category": "ui",
+   "description": {
+    "en": "Quick sticky notes on the composer toolbar: jot ideas or TODOs, auto-saved as Markdown, one click to send into the chat.",
+    "zh": "编辑框工具栏便签，随手记点子和 TODO，自动保存为 Markdown，一键发送到对话。"
+   },
+   "install": "dsh plugin --profile web add github:Meredith2328/dsh-sticky-note",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-attention-badge",
+   "owner": "Luaphes",
+   "url": "https://github.com/Luaphes/dsh-web-attention-badge",
+   "category": "ui",
+   "description": {
+    "en": "Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.",
+    "zh": "会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。"
+   },
+   "install": "dsh plugin --profile web add github:Luaphes/dsh-web-attention-badge",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-skin",
+   "owner": "KinGao294",
+   "url": "https://github.com/KinGao294/dsh-skin",
+   "category": "ui",
+   "description": {
+    "en": "Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.",
+    "zh": "Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。"
+   },
+   "install": "dsh plugin --profile web add github:KinGao294/dsh-skin",
    "added": "2026-08-14"
   },
   {

@@ -55,6 +55,27 @@
     <summary>One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.</summary>
   </entry>
   <entry>
+    <title>dsh-sticky-note</title>
+    <id>https://github.com/Meredith2328/dsh-sticky-note</id>
+    <link href="https://github.com/Meredith2328/dsh-sticky-note"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Quick sticky notes on the composer toolbar: jot ideas or TODOs, auto-saved as Markdown, one click to send into the chat.</summary>
+  </entry>
+  <entry>
+    <title>dsh-web-attention-badge</title>
+    <id>https://github.com/Luaphes/dsh-web-attention-badge</id>
+    <link href="https://github.com/Luaphes/dsh-web-attention-badge"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.</summary>
+  </entry>
+  <entry>
+    <title>dsh-skin</title>
+    <id>https://github.com/KinGao294/dsh-skin</id>
+    <link href="https://github.com/KinGao294/dsh-skin"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -193,26 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-voice"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under ~/.dsh/voice.</summary>
-  </entry>
-  <entry>
-    <title>dsh-docker</title>
-    <id>https://github.com/Jesse-njx/dsh-docker</id>
-    <link href="https://github.com/Jesse-njx/dsh-docker"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.</summary>
-  </entry>
-  <entry>
-    <title>dsh-excel-chat</title>
-    <id>https://github.com/hccccc01333/dsh-excel-chat</id>
-    <link href="https://github.com/hccccc01333/dsh-excel-chat"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.</summary>
-  </entry>
-  <entry>
-    <title>dsh-context-proxy</title>
-    <id>https://github.com/EvilIrving/dsh-context-proxy</id>
-    <link href="https://github.com/EvilIrving/dsh-context-proxy"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.</summary>
   </entry>
 </feed>
