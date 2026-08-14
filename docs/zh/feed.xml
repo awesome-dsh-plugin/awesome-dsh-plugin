@@ -195,6 +195,13 @@
     <summary>增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。</summary>
   </entry>
   <entry>
+    <title>dsh-science</title>
+    <id>https://github.com/biociao/dsh-science</id>
+    <link href="https://github.com/biociao/dsh-science"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。</summary>
+  </entry>
+  <entry>
     <title>deepseek-harness-acp</title>
     <id>https://github.com/openma-ai/deepseek-harness-acp</id>
     <link href="https://github.com/openma-ai/deepseek-harness-acp"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-chatnode-wechat"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>通过 iLink 网关在微信里与 DSH agent 聊天、监控与审批：双向文本、会话切换、进度摘要与编号审批提示。</summary>
-  </entry>
-  <entry>
-    <title>dsh-im-bridge</title>
-    <id>https://github.com/BiBoyang/dsh-im-bridge</id>
-    <link href="https://github.com/BiBoyang/dsh-im-bridge"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。</summary>
   </entry>
 </feed>

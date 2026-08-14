@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 138,
+ "count": 139,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1089,6 +1089,18 @@
     "zh": "增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。"
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-specflow",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-science",
+   "owner": "biociao",
+   "url": "https://github.com/biociao/dsh-science",
+   "category": "workflow",
+   "description": {
+    "en": "Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.",
+    "zh": "面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。"
+   },
+   "install": "dsh plugin --profile web add github:biociao/dsh-science",
    "added": "2026-08-14"
   },
   {

@@ -195,6 +195,13 @@
     <summary>Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.</summary>
   </entry>
   <entry>
+    <title>dsh-science</title>
+    <id>https://github.com/biociao/dsh-science</id>
+    <link href="https://github.com/biociao/dsh-science"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.</summary>
+  </entry>
+  <entry>
     <title>deepseek-harness-acp</title>
     <id>https://github.com/openma-ai/deepseek-harness-acp</id>
     <link href="https://github.com/openma-ai/deepseek-harness-acp"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-chatnode-wechat"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Chat with, monitor, and approve your DSH agents from WeChat via the iLink gateway: text both ways, session targeting, digest heartbeats, and numbered approval prompts.</summary>
-  </entry>
-  <entry>
-    <title>dsh-im-bridge</title>
-    <id>https://github.com/BiBoyang/dsh-im-bridge</id>
-    <link href="https://github.com/BiBoyang/dsh-im-bridge"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Two-way WeChat (iLink) bridge: turn-end and approval-request push, in-chat approve/reject and message injection, persistent dedup and convergent long-reply chunking; channel layer extensible to other IMs.</summary>
   </entry>
 </feed>
