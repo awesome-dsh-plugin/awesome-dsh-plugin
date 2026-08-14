@@ -193,198 +193,199 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p><strong>兼容性提示：</strong> 当前兼容基线为 DeepSeek Harness <code>0.1.0-rc.6</code>。Harness 仍处于开发者预览阶段，升级 DSH 后请重新确认插件兼容性。</p>
+<p><strong>Compatibility:</strong> The current compatibility baseline is DeepSeek Harness <code>0.1.0-rc.6</code>. Harness is still in developer preview, so recheck plugin compatibility after upgrading DSH.</p>
 </blockquote>
-<h3>界面预览</h3>
-<p>支持明暗主题、迷你模式和 DSH 插件配置。</p>
-<h4>迷你模式</h4>
-<h4>设置页面</h4>
-<h3>功能亮点</h3>
+<h3>Interface Preview</h3>
+<p>Supports light and dark themes, a compact mini mode, and configuration through DSH plugin settings.</p>
+<h4>Mini mode</h4>
+<h4>Settings</h4>
+<h3>Highlights</h3>
 <ul>
-<li><strong>融入 DSH：</strong> 从侧栏打开番茄钟，在插件配置页面统一管理设置。</li>
-<li><strong>完整计时控制：</strong> 支持开始、暂停、重置、跳过、环形进度、阶段提示和已完成专注计数。</li>
-<li><strong>低干扰迷你模式：</strong> 收起后只保留阶段、倒计时和开始/暂停，仍可拖动、展开或关闭。</li>
-<li><strong>可配置循环：</strong> 专注与休息时长可调，并可分别控制是否自动开始休息或下一轮专注。</li>
-<li><strong>阶段结束提醒：</strong> 无论面板是否打开都会显示 DSH 内提醒，还可选择提示音和后台系统通知。</li>
-<li><strong>界面适配：</strong> 自动适配 DSH 明暗主题、键盘操作和“减少动态效果”偏好。</li>
+<li><strong>Native DSH integration:</strong> Open Pomodoro from the sidebar and manage its options from the DSH plugin settings page.</li>
+<li><strong>Complete timer controls:</strong> Start, pause, reset, or skip a phase, with a circular progress indicator, phase status, and completed-focus count.</li>
+<li><strong>Low-distraction mini mode:</strong> Collapse the panel to the phase, countdown, and primary control while retaining drag, expand, and close actions.</li>
+<li><strong>Configurable cycles:</strong> Set focus and break durations independently, and choose whether breaks or the next focus session start automatically.</li>
+<li><strong>Completion feedback:</strong> Always receive an in-app DSH reminder when a phase ends, with optional sound and background system notifications.</li>
+<li><strong>DSH language support:</strong> Follows the DSH global locale for Chinese and English. Switching languages updates the mounted plugin UI without resetting the timer or unsaved settings draft.</li>
+<li><strong>Interface-aware:</strong> Adapts to DSH light and dark themes, keyboard operation, and the reduced-motion preference.</li>
 </ul>
-<h3>环境要求</h3>
+<h3>Requirements</h3>
 <table>
 <thead>
 <tr>
-<th>组件</th>
-<th>要求</th>
+<th>Component</th>
+<th>Requirement</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>DeepSeek Harness</td>
-<td>兼容基线 <code>0.1.0-rc.6</code></td>
+<td>Compatibility baseline <code>0.1.0-rc.6</code></td>
 </tr>
 <tr>
 <td>Node.js</td>
-<td><code>^22.19.0</code> 或 <code>&gt;=24.0.0</code></td>
+<td><code>^22.19.0</code> or <code>&gt;=24.0.0</code></td>
 </tr>
 <tr>
 <td>DSH profile</td>
-<td><code>web</code>；headless profile 不提供界面</td>
+<td><code>web</code>; headless profiles do not provide the UI</td>
 </tr>
 <tr>
 <td>pnpm</td>
-<td>可从命令行使用</td>
+<td>Available from the command line</td>
 </tr>
 </tbody></table>
-<h3>快速安装</h3>
-<p>将插件安装到 <code>web</code> profile：</p>
+<h3>Quick Start</h3>
+<p>Install the plugin into the <code>web</code> profile:</p>
 <pre><code class="language-powershell">dsh plugin --profile web add dsh-pomodoro
 </code></pre>
-<p>安装后启动或重启 DSH Web：</p>
+<p>Then start or restart DSH Web:</p>
 <pre><code class="language-powershell">dsh web
 </code></pre>
-<p>侧栏底部出现 🍅 按钮即表示插件已加载。</p>
-<h3>基本使用</h3>
-<p>点击侧栏 🍅 按钮打开或关闭面板，拖动标题栏可以调整面板位置。标题栏中的“迷你”会收起次要信息，“展开”可恢复完整面板。</p>
+<p>The plugin is loaded when the 🍅 button appears at the bottom of the sidebar.</p>
+<h3>Usage</h3>
+<p>Click the sidebar 🍅 button to open or close the panel. Drag the title bar to reposition it. Use <strong>Mini</strong> in the title bar to hide secondary information, and <strong>Expand</strong> to restore the full panel.</p>
 <table>
 <thead>
 <tr>
-<th>控件</th>
-<th>行为</th>
+<th>Control</th>
+<th>Behavior</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>开始 / 暂停</td>
-<td>启动或暂停当前阶段</td>
+<td>Start / Pause</td>
+<td>Start or pause the current phase</td>
 </tr>
 <tr>
-<td>重置</td>
-<td>将当前阶段恢复到完整时长并暂停</td>
+<td>Reset</td>
+<td>Restore the current phase to its full duration and pause it</td>
 </tr>
 <tr>
-<td>跳过</td>
-<td>切换到下一阶段并保持暂停</td>
+<td>Skip</td>
+<td>Move to the next phase and keep it paused</td>
 </tr>
 <tr>
-<td>迷你 / 展开</td>
-<td>在低遮挡布局与完整控制之间切换</td>
+<td>Mini / Expand</td>
+<td>Switch between the low-obstruction layout and full controls</td>
 </tr>
 </tbody></table>
-<h3>设置与提醒</h3>
-<p>在 DSH 的“设置 → 插件 → 插件配置 → 番茄钟”中展开卡片即可修改：</p>
+<h3>Settings and Notifications</h3>
+<p>Open <strong>Settings → Plugins → Plugin configuration → Pomodoro</strong> in DSH to configure:</p>
 <table>
 <thead>
 <tr>
-<th>设置</th>
-<th align="right">默认值</th>
-<th>作用</th>
+<th>Setting</th>
+<th align="right">Default</th>
+<th>Behavior</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>专注时长</td>
-<td align="right">25 分钟</td>
-<td>每轮专注阶段的完整时长，可设置为 1–240 分钟的整数</td>
+<td>Focus duration</td>
+<td align="right">25 minutes</td>
+<td>Full duration of each focus phase; accepts an integer from 1 to 240 minutes</td>
 </tr>
 <tr>
-<td>休息时长</td>
-<td align="right">5 分钟</td>
-<td>每轮休息阶段的完整时长，可设置为 1–240 分钟的整数</td>
+<td>Break duration</td>
+<td align="right">5 minutes</td>
+<td>Full duration of each break phase; accepts an integer from 1 to 240 minutes</td>
 </tr>
 <tr>
-<td>自动开始休息</td>
-<td align="right">开启</td>
-<td>专注自然结束后自动启动休息</td>
+<td>Start breaks automatically</td>
+<td align="right">On</td>
+<td>Start the break when a focus phase ends naturally</td>
 </tr>
 <tr>
-<td>自动开始下一轮专注</td>
-<td align="right">关闭</td>
-<td>休息自然结束后自动启动下一轮</td>
+<td>Start the next focus session automatically</td>
+<td align="right">Off</td>
+<td>Start the next focus session when a break ends naturally</td>
 </tr>
 <tr>
-<td>阶段结束时播放提示音</td>
-<td align="right">关闭</td>
-<td>阶段自然结束时播放三次提示音，可直接试听</td>
+<td>Play a sound when a phase ends</td>
+<td align="right">Off</td>
+<td>Play the completion sound three times; a preview is available</td>
 </tr>
 <tr>
-<td>后台时发送系统通知</td>
-<td align="right">关闭</td>
-<td>DSH 页面位于后台时发送浏览器通知</td>
+<td>Send system notifications in the background</td>
+<td align="right">Off</td>
+<td>Send a browser notification while the DSH page is in the background</td>
 </tr>
 </tbody></table>
-<p>当前阶段尚未开始时，新时长会立即生效；计时已经开始后，从下一阶段生效。</p>
-<h4>完成提醒</h4>
+<p>If the current phase has not started, a new duration takes effect immediately. Once timing has started, the new duration applies from the next phase.</p>
+<h4>Completion feedback</h4>
 <ul>
-<li><strong>DSH 内提醒：</strong> 始终开启。专注或休息自然结束时会显示，即使番茄钟面板已经关闭也能看到；若下一阶段自动开始，提醒中会一并说明。</li>
-<li><strong>提示音：</strong> 默认关闭。开启并保存后，每次阶段自然结束会播放三次提示音；“试听”无需先保存。</li>
-<li><strong>系统通知：</strong> 默认关闭。首次开启时请按浏览器提示允许通知，然后点击“保存”。通知只在 DSH 页面位于后台或失去焦点时发送。</li>
+<li><strong>In-app DSH reminder:</strong> Always enabled. It appears when a focus or break phase ends naturally, even if the Pomodoro panel is closed, and indicates whether the next phase started automatically.</li>
+<li><strong>Sound:</strong> Off by default. After enabling and saving it, each naturally completed phase plays the sound three times. <strong>Preview</strong> works without saving first.</li>
+<li><strong>System notification:</strong> Off by default. When enabling it for the first time, allow notifications in the browser prompt and then select <strong>Save</strong>. Notifications are sent only while the DSH page is in the background or does not have focus.</li>
 </ul>
-<p>系统通知需要通过 <code>localhost</code>、<code>127.0.0.1</code> 或 HTTPS 访问，并保持 DSH 页面打开。提示音或系统通知不可用时，DSH 内提醒仍然有效。</p>
-<h3>更新与移除</h3>
-<pre><code class="language-powershell"># 更新插件
+<p>System notifications require DSH to be served from <code>localhost</code>, <code>127.0.0.1</code>, or HTTPS, and the DSH page must remain open. The in-app reminder continues to work if sound or system notifications are unavailable.</p>
+<h3>Updating and Removing</h3>
+<pre><code class="language-powershell"># Update the plugin
 dsh plugin --profile web update dsh-pomodoro
 
-# 移除插件
+# Remove the plugin
 dsh plugin --profile web remove dsh-pomodoro
 </code></pre>
-<p>执行后重启 <code>dsh web</code>。</p>
-<h3>相关链接</h3>
+<p>Restart <code>dsh web</code> after either command.</p>
+<h3>Links</h3>
 <ul>
-<li><a href="https://www.npmjs.com/package/dsh-pomodoro">npm 包</a></li>
-<li><a href="https://github.com/causebefore/dsh-pomodoro/releases">版本发布</a></li>
-<li><a href="https://github.com/causebefore/dsh-pomodoro/issues">问题反馈</a></li>
+<li><a href="https://www.npmjs.com/package/dsh-pomodoro">npm package</a></li>
+<li><a href="https://github.com/causebefore/dsh-pomodoro/releases">Releases</a></li>
+<li><a href="https://github.com/causebefore/dsh-pomodoro/issues">Issue tracker</a></li>
 <li><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a></li>
 </ul>
 <h3>License</h3>
-<p><a href="https://github.com/causebefore/dsh-pomodoro/blob/dev/LICENSE">MIT</a>。React/ReactDOM 与 CC0 完成提示音等第三方素材的许可信息见 <a href="https://github.com/causebefore/dsh-pomodoro/blob/dev/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>。</p>
-<h3>开发与维护</h3>
-<h4>本地开发</h4>
+<p><a href="https://github.com/causebefore/dsh-pomodoro/blob/dev/LICENSE">MIT</a>. See <a href="https://github.com/causebefore/dsh-pomodoro/blob/dev/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a> for the licenses covering React/ReactDOM and third-party assets such as the CC0 completion sound.</p>
+<h3>Development and Maintenance</h3>
+<h4>Local development</h4>
 <pre><code class="language-powershell">git clone https://github.com/causebefore/dsh-pomodoro.git
 Set-Location dsh-pomodoro
 dsh plugin --profile web add .
 npm run check
 npm pack --dry-run
 </code></pre>
-<p>项目没有生成步骤，<code>lib/client.js</code> 就是直接发布的浏览器 bundle。日常开发在 <code>dev</code> 分支进行，<code>main</code> 只接收已经完成发布检查的版本。</p>
-<h4>项目结构</h4>
+<p>The project has no build step: <code>lib/client.js</code> is the browser bundle that is published directly. Daily development happens on <code>dev</code>; <code>main</code> only receives versions that have completed release checks.</p>
+<h4>Project structure</h4>
 <table>
 <thead>
 <tr>
-<th>路径</th>
-<th>职责</th>
+<th>Path</th>
+<th>Responsibility</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>lib/index.js</code></td>
-<td>Node/Cordis 入口、配置 schema 和 loopback RPC</td>
+<td>Node/Cordis entry point, configuration schema, and loopback RPC</td>
 </tr>
 <tr>
 <td><code>lib/client.js</code></td>
-<td>浏览器计时引擎、React UI、slot 注册和设置同步</td>
+<td>Browser timer engine, React UI, slot registration, locale messages, and settings synchronization</td>
 </tr>
 <tr>
 <td><code>assets/sounds/deep-ding.mp3</code></td>
-<td>CC0 低沉提示音源文件；运行时字节嵌入客户端 bundle</td>
+<td>Source for the CC0 completion sound; its runtime bytes are embedded in the client bundle</td>
 </tr>
 <tr>
-<td><code>docs/images/social-preview.jpg</code></td>
-<td>GitHub 仓库链接的 Social Preview 图片</td>
+<td><code>docs/images/</code></td>
+<td>Chinese and English README screenshots plus the GitHub Social Preview image</td>
 </tr>
 <tr>
 <td><code>cordis.patch.yml</code></td>
-<td>向 DSH Web 组合插入插件服务</td>
+<td>Inserts the plugin service into the DSH Web composition</td>
 </tr>
 <tr>
 <td><code>package.json</code></td>
-<td>exports、peer 范围、bundle 声明和 npm 发布清单</td>
+<td>Exports, peer ranges, bundle declaration, and npm publication allowlist</td>
 </tr>
 <tr>
 <td><code>.github/workflows/publish.yml</code></td>
-<td>GitHub Release 到 npm 的可信发布流程</td>
+<td>Trusted Publishing workflow from a GitHub Release to npm</td>
 </tr>
 </tbody></table>
-<h4>发布流程</h4>
+<h4>Release workflow</h4>
 <ol>
-<li>在 <code>dev</code> 完成开发和验证，并更新 <code>package.json</code> 版本。</li>
-<li>通过发布 PR 将 <code>dev</code> 合入 <code>main</code>。</li>
-<li>从对应的 <code>main</code> 提交创建名称匹配 <code>vX.Y.Z</code> 的稳定 GitHub Release。</li>
-<li>发布工作流会验证版本、tag 和 <code>main</code> 归属，运行语法与打包检查，再通过 npm Trusted Publishing 发布。</li>
+<li>Complete development and validation on <code>dev</code>, then update the version in <code>package.json</code>.</li>
+<li>Merge <code>dev</code> into <code>main</code> through a release pull request.</li>
+<li>Create a stable GitHub Release from the corresponding <code>main</code> commit with a name matching <code>vX.Y.Z</code>.</li>
+<li>The publish workflow validates the version, tag, and <code>main</code> ancestry, runs syntax and package checks, and publishes through npm Trusted Publishing.</li>
 </ol>
 
     </div>
@@ -403,12 +404,12 @@ npm pack --dry-run
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1766</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 829</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 705</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 131</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 709</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 79</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

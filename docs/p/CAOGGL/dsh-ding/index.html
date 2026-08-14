@@ -327,6 +327,7 @@ footer p+p{margin-top:.5rem}
 </ol>
 <h4>更新日志</h4>
 <ul>
+<li><strong>v0.4.3</strong>（2026-08-14）：滑杆旋钮改为<strong>亮色黑球 / 暗色白球</strong>（跟随 WebUI 主题实时切换）；移除音量条标题行；菜单文案改为跟随 <strong>WebUI 语言设置</strong>（<code>ctx.locale</code>，切换语言即时生效，不再是页面 lang）</li>
 <li><strong>v0.4.2</strong>（2026-08-14）：<strong>滑杆与右键菜单改用 WebUI 设计令牌</strong>（<code>--dsw-alias-*</code>）——自定义滑杆：4px 圆角轨道 + 品牌色填充 + 主题化旋钮（悬停/按压放大）；菜单表面/边框/阴影/文字/悬停/选中色全部对齐 WebUI 弹层样式（<code>--dsw-specific-menu</code> / <code>--dsw-shadow-lv3</code>），自动适配明暗主题</li>
 <li><strong>v0.4.1</strong>（2026-08-14）：铃铛交互改版——音量条移至铃铛正左侧（行内宽度动画、同行元素自动左移）；右键设置面板新增<strong>提示音/气泡通知开关</strong>（全关 = 无任何提示）；弹层增加过渡动画；修复悬停时菜单被误关的问题</li>
 <li><strong>v0.4.0</strong>（2026-08-14）：<strong>新增 Web 铃铛按钮</strong>——对话页顶栏单击开关提示音、悬停调音量（松手试听）、右键选音效/上传自定义音频；新增 <code>GET/POST /dsh-ding/settings</code>、<code>/dsh-ding/test</code>、<code>/dsh-ding/sounds</code> HTTP API，设置持久化到 <code>data/dsh-ding.json</code></li>
@@ -476,6 +477,7 @@ footer p+p{margin-top:.5rem}
 </ol>
 <h4>Changelog</h4>
 <ul>
+<li><strong>v0.4.3</strong> (2026-08-14): Slider knob is now <strong>black in light mode / white in dark mode</strong> (follows the WebUI theme live); the volume-bar title row was removed; the menu copy now follows the <strong>WebUI language setting</strong> (<code>ctx.locale</code>, switches instantly, no longer tied to the page lang)</li>
 <li><strong>v0.4.2</strong> (2026-08-14): <strong>Slider and right-click menu restyled with WebUI design tokens</strong> (<code>--dsw-alias-*</code>) — custom slider: 4px rounded track, brand-colored fill, themed knob (grows on hover/press); the menu surface/border/shadow/text/hover/active colors now match the WebUI popover style (<code>--dsw-specific-menu</code> / <code>--dsw-shadow-lv3</code>) and adapt to light/dark themes automatically</li>
 <li><strong>v0.4.1</strong> (2026-08-14): Bell interaction redesign — the volume bar moved to the left of the bell (in-flow width animation, row items shift left); the right-click panel gained <strong>Sound/Toast toggles</strong> (both off = completely silent); popups got transition animations; fixed the hover menu closing too early</li>
 <li><strong>v0.4.0</strong> (2026-08-14): <strong>Web bell button added</strong> — click the bell in the conversation header to toggle the sound, hover for a volume slider (release to preview), right-click to pick/upload sounds; new <code>GET/POST /dsh-ding/settings</code>, <code>/dsh-ding/test</code>, <code>/dsh-ding/sounds</code> HTTP APIs; settings persist to <code>data/dsh-ding.json</code></li>
@@ -510,7 +512,7 @@ footer p+p{margin-top:.5rem}
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/omdsh-dev/dsh-open-in-vscode/" translate="no">omdsh-dev/dsh-open-in-vscode</a><span class="stars" translate="no">★ 39</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-open-in-vscode/" tabindex="-1"><p>Open DSH workspace directories in VS Code directly from the web GUI.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-notification/" translate="no">omdsh-dev/dsh-notification</a><span class="stars" translate="no">★ 37</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-notification/" tabindex="-1"><p>Desktop notifications for turn completions, with per-outcome controls and keyword rules.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-notification/" translate="no">omdsh-dev/dsh-notification</a><span class="stars" translate="no">★ 38</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-notification/" tabindex="-1"><p>Desktop notifications for turn completions, with per-outcome controls and keyword rules.</p></a></li>
       <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" translate="no">whyihaveyou/dsh-suite#plugin-notify</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" tabindex="-1"><p>IM webhook and local notifications on turn completion, errors, or approval (Feishu/WeCom/DingTalk/Slack/Discord/custom).</p></a></li>
       <li><h3><a href="/p/bobleer/dsh-acp-for-bitfun/" translate="no">bobleer/dsh-acp-for-bitfun</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/p/bobleer/dsh-acp-for-bitfun/" tabindex="-1"><p>ACP bridge between BitFun and DSH.</p></a></li>
       <li><h3><a href="/p/bill9109/dsh-web-ui-notify/" translate="no">bill9109/dsh-web-ui-notify</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/p/bill9109/dsh-web-ui-notify/" tabindex="-1"><p>Desktop notification reminders.</p></a></li>

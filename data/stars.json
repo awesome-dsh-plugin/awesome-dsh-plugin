@@ -8,11 +8,11 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/030611/dsh-verification-receipt": {
-  "stars": 2,
+  "stars": 3,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/030611/qiushi-dsh-evidence-audit": {
-  "stars": 3,
+  "stars": 4,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/0xsline/dsh-spotlight": {
@@ -33,6 +33,14 @@
  },
  "https://github.com/a903067276-rgb/dsh-hud": {
   "stars": 0,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/AcidGr/dsh-web-lan-access": {
+  "stars": 1,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/AcidGr/dsh-web-mobile-fix": {
+  "stars": 1,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/AKIRACOD/dsh-drag-and-drop": {
@@ -56,7 +64,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Anionex/dsh-turn-rewind": {
-  "stars": 35,
+  "stars": 36,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Anionex/dsh-vision-toolkit": {
@@ -92,7 +100,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/awesome-dsh-plugin/dsh-find-plugin": {
-  "stars": 11,
+  "stars": 12,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/BiBoyang/dsh-eval-harness": {
@@ -133,6 +141,10 @@
  },
  "https://github.com/bobleer/dsh-acp-for-bitfun": {
   "stars": 9,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/bowenliang123/dsh-context": {
+  "stars": 20,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/BrambleXu/dsh-annotate": {
@@ -184,7 +196,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ccch1mneyyy/dsh-TUI": {
-  "stars": 829,
+  "stars": 835,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ccq1/dsh-side-panel": {
@@ -244,7 +256,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/dsh-market/dsh-market": {
-  "stars": 22,
+  "stars": 23,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/dylan121322/llm-adaptive": {
@@ -275,6 +287,10 @@
   "stars": 1,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Fishsb/dsh-prompt-enhancer": {
+  "stars": 1,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/fishxcode/dsh-plugin-deepseek-balance": {
   "stars": 0,
   "checkedAt": "2026-08-14"
@@ -296,7 +312,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/forrestchang/dsh-multica-runtime": {
-  "stars": 28,
+  "stars": 29,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/franksong2702/dsh-codex-connect": {
@@ -316,7 +332,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Ghost011118/dsh-balance-meter": {
-  "stars": 11,
+  "stars": 12,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/GIT121995/dsh-memory-gate": {
@@ -372,11 +388,11 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/huiliyi37/dsh-tianshu-tui": {
-  "stars": 131,
+  "stars": 132,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/hust-open-atom-club/oh-dsh": {
-  "stars": 161,
+  "stars": 162,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ICCuse/dsh-file-memory": {
@@ -459,7 +475,23 @@
   "stars": 1,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/jiayan-xu/dsh-codebase-memory": {
+  "stars": 0,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/jiayan-xu/dsh-memoria": {
+  "stars": 0,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/jiayan-xu/dsh-memoria-extra": {
+  "stars": 0,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/jiayan-xu/dsh-nuphus-mcp": {
+  "stars": 0,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/jiayan-xu/dsh-ocr-review": {
   "stars": 0,
   "checkedAt": "2026-08-14"
  },
@@ -516,7 +548,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/LeemanCheung/dsh-token-usage": {
-  "stars": 0,
+  "stars": 1,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/LeemanCheung/dsh-whale-animation": {
@@ -576,11 +608,11 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/liustack/modlens": {
-  "stars": 1199,
+  "stars": 1208,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/liustack/modsearch": {
-  "stars": 85,
+  "stars": 86,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/loguhan/dsh-workshop": {
@@ -615,6 +647,18 @@
   "stars": 6,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle": {
+  "stars": 1,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/lsz-asd/dsh-plugin-device-info": {
+  "stars": 0,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/lsz-asd/dsh-plugin-session-delete": {
+  "stars": 3,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/Luaphes/dsh-web-attention-badge": {
   "stars": 3,
   "checkedAt": "2026-08-14"
@@ -624,7 +668,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Lum1104/dsh-browser": {
-  "stars": 80,
+  "stars": 81,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/lynx-gt/dsh-subagent-cwd": {
@@ -684,11 +728,11 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Nagi-ovo/dsh-ads": {
-  "stars": 318,
+  "stars": 321,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Nagi-ovo/dsh-visualize": {
-  "stars": 79,
+  "stars": 80,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Nanki-nn/dsh-answer-pet": {
@@ -696,7 +740,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/NanmiCoder/dsh-agent-teams": {
-  "stars": 230,
+  "stars": 231,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/nonewind/dsh-spend": {
@@ -732,7 +776,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/omdsh-dev/DSH-better-sidebar": {
-  "stars": 705,
+  "stars": 709,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/omdsh-dev/dsh-custom-tool": {
@@ -768,7 +812,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/omdsh-dev/dsh-notification": {
-  "stars": 37,
+  "stars": 38,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/omdsh-dev/dsh-open-in-vscode": {
@@ -871,6 +915,10 @@
   "stars": 15,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude": {
+  "stars": 0,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet": {
   "stars": 4,
   "checkedAt": "2026-08-14"
@@ -932,7 +980,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Sanqi-normal/dsh-webui-market-plugin": {
-  "stars": 15,
+  "stars": 16,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Sev7een/ds-api-usage": {
@@ -952,7 +1000,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Small-tailqwq/dsh-deep-whale": {
-  "stars": 532,
+  "stars": 535,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Small-tailqwq/dsh-tps": {
@@ -977,6 +1025,10 @@
  },
  "https://github.com/suntianc/dsh-codex-auth": {
   "stars": 1,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/superboy911/dsh-model-router": {
+  "stars": 0,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/taxueseek/argo": {
@@ -1036,7 +1088,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/vlln/dsh-navbar": {
-  "stars": 14,
+  "stars": 15,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/vlln/dsh-task-status": {
@@ -1044,7 +1096,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/vlln/plugin-registry": {
-  "stars": 33,
+  "stars": 34,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/vlln/whale-girl": {
@@ -1115,6 +1167,10 @@
   "stars": 0,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/yeruizhi/dsh-lark-meeting-notifier": {
+  "stars": 4,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/yflmq001/dsh-cost-tracker": {
   "stars": 1,
   "checkedAt": "2026-08-14"
@@ -1124,10 +1180,14 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ysr666/dsh-vision-router": {
-  "stars": 36,
+  "stars": 37,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/YTxue/dsh-skill-manager": {
+  "stars": 1,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/YTxue/dsh-skill-manager-ytxue": {
   "stars": 1,
   "checkedAt": "2026-08-14"
  },
@@ -1160,7 +1220,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/zhu1090093659/dsh-web-ui": {
-  "stars": 1766,
+  "stars": 1782,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/zimai233/dsh-adhd-copilot": {
@@ -1192,11 +1252,15 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/zp-home/dsh-recommend": {
-  "stars": 10,
+  "stars": 11,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/ZRui-C/dsh-computer-use": {
+  "stars": 0,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ZSeven-W/dsh-openpencil": {
-  "stars": 64,
+  "stars": 65,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ztl34245881-commits/dsh-task-planner": {

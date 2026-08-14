@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">yeruizhi/</span><wbr><span class="name">dsh-lark-meeting-notifier</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 4</b></span>
         <span>分类 <a href="/zh/notify/">通知与集成</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,135 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>这个插件只有副作用：在你跟 AI 聊得神魂颠倒的时候，提醒你「不得不去跟碳基生命开会了」。</p>
+</blockquote>
+<p>一个 DeepSeek Harness（DSH）插件：在工作区右侧显示一个可展开/收起的悬浮框，列出<strong>今天剩余的飞书会议</strong>，让你埋头写代码时不会错过会议。</p>
+<ul>
+<li>会议室名称（从飞书日历的「会议室」资源参会人读取）</li>
+<li>多闹钟提醒：每个提醒提前量独立触发，开始前到点闪烁（黄/橙/红随紧迫度）</li>
+<li>点击会议记录关闭当前提醒（关闹钟）；可开启「30 秒后自动停止闪烁」</li>
+<li>提醒触发时自动展开面板（可关）</li>
+<li>单条「✕」移除提醒（本地持久化，不会动飞书日历里的真实日程）</li>
+<li>开始时间已过的会议自动移除；今日会议清空时可查看「明日」会议</li>
+<li>配置持久化，设置面板可调</li>
+</ul>
+<h3>效果图</h3>
+<p><img src="https://raw.githubusercontent.com/yeruizhi/dsh-lark-meeting-notifier/main/docs/screenshot.png" alt="飞书会议提醒效果图"></p>
+<hr>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add github:yeruizhi/dsh-lark-meeting-notifier
+</code></pre>
+<p>然后重启 <code>dsh web</code>（或 <code>npx @deepseek-ai/dsh web</code>）。页面右侧会出现「🕐 会议」小胶囊。</p>
+<h3>前置条件：lark-cli 安装与授权</h3>
+<p>本插件通过 <a href="https://www.npmjs.com/package/@larksuite/cli"><code>@larksuite/cli</code></a>（命令名 <code>lark-cli</code>）读取飞书日历。</p>
+<h4>1. 安装 lark-cli</h4>
+<pre><code class="language-bash">npm install -g @larksuite/cli
+</code></pre>
+<p>验证：<code>lark-cli --version</code> 应输出 <code>lark-cli version x.y.z</code>。</p>
+<h4>2. 初始化应用配置</h4>
+<pre><code class="language-bash">lark-cli config init
+</code></pre>
+<p>按提示完成应用配置（打开授权链接或扫描二维码）。</p>
+<h4>3. 授权日历读取权限（user 身份，最小 scope）</h4>
+<pre><code class="language-bash">lark-cli auth login --scope &quot;calendar:calendar:readonly&quot;
+</code></pre>
+<blockquote>
+<p>必须使用 user 身份（<code>--as user</code>），bot 身份看不到个人日历。</p>
+</blockquote>
+<h4>4. 验证</h4>
+<pre><code class="language-bash">lark-cli auth status --json --verify
+</code></pre>
+<p>确认 <code>identity</code> 为 <code>user</code>、<code>verified</code> 为 <code>true</code>。</p>
+<hr>
+<h3>使用</h3>
+<ul>
+<li><strong>展开/收起</strong>：点击右侧「🕐 会议 N」胶囊。</li>
+<li><strong>会议条目</strong>：时间段、标题（有视频会议可点击打开）、组织人、会议室。</li>
+<li><strong>关闭提醒</strong>：会议闪烁时点击该条目（关闹钟）。</li>
+<li><strong>移除提醒</strong>：点条目右侧 ✕。</li>
+<li><strong>明日</strong>：今日会议清空时，展开面板头部出现「明日」，点击加载明天的会议。</li>
+</ul>
+<h3>配置（设置 → 飞书会议提醒）</h3>
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>说明</th>
+<th>默认</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>提醒提前时间</td>
+<td>多选（分钟），每个是一个独立闹钟</td>
+<td>20、10、5</td>
+</tr>
+<tr>
+<td>30 秒后自动停止闪烁</td>
+<td>开关</td>
+<td>开</td>
+</tr>
+<tr>
+<td>提醒时自动展开</td>
+<td>开关</td>
+<td>开</td>
+</tr>
+<tr>
+<td>刷新间隔</td>
+<td>30 / 60 / 120 秒</td>
+<td>30 秒</td>
+</tr>
+<tr>
+<td>会议室名显示</td>
+<td>完整 / 简短</td>
+<td>完整</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>故障排查</h3>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>原因</th>
+<th>解决</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>面板显示「lark-cli 未安装」</td>
+<td>缺少 <code>@larksuite/cli</code></td>
+<td><code>npm install -g @larksuite/cli</code></td>
+</tr>
+<tr>
+<td>面板显示「飞书未授权或缺少日历权限」</td>
+<td>未授权 / scope 缺失 / 登录态过期</td>
+<td><code>lark-cli auth login --scope &quot;calendar:calendar:readonly&quot;</code></td>
+</tr>
+<tr>
+<td>列表为空</td>
+<td>今天确实没有剩余会议</td>
+<td><code>lark-cli calendar +agenda --as user</code> 核对</td>
+</tr>
+</tbody></table>
+<h3>技术要点（二次开发参考）</h3>
+<ul>
+<li>数据源：<code>lark-cli calendar +agenda --as user</code>（今日日程列表）</li>
+<li>会议室名：<code>lark-cli calendar events get --calendar-id primary --event-id &lt;id&gt; --need-attendee</code>，取 <code>type=resource</code> 参会人的 <code>display_name</code><ul>
+<li>重复日程实例用 <code>recurring_event_id</code>，例外实例用 <code>event_id</code></li>
+</ul>
+</li>
+<li>Host 内执行 lark-cli 需 <code>sandboxPolicy: { mode: &#39;danger-full-access&#39; }</code>（读配置 + 联网）</li>
+<li>Client↔Host 通信：Host 注册 webServer 路由（<code>/dsh-lark-meeting/list</code>、<code>/health</code>），Client 用 <code>fetch</code> 拉取</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/yeruizhi/dsh-lark-meeting-notifier/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -199,7 +328,7 @@ footer p+p{margin-top:.5rem}
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/omdsh-dev/dsh-open-in-vscode/" translate="no">omdsh-dev/dsh-open-in-vscode</a><span class="stars" translate="no">★ 39</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-open-in-vscode/" tabindex="-1"><p>从 Web GUI 一键在 VS Code 中打开工作区目录。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-notification/" translate="no">omdsh-dev/dsh-notification</a><span class="stars" translate="no">★ 37</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-notification/" tabindex="-1"><p>回合完成桌面通知，按结果分控 + 关键词过滤。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-notification/" translate="no">omdsh-dev/dsh-notification</a><span class="stars" translate="no">★ 38</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-notification/" tabindex="-1"><p>回合完成桌面通知，按结果分控 + 关键词过滤。</p></a></li>
       <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" translate="no">whyihaveyou/dsh-suite#plugin-notify</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" tabindex="-1"><p>回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。</p></a></li>
       <li><h3><a href="/zh/p/bobleer/dsh-acp-for-bitfun/" translate="no">bobleer/dsh-acp-for-bitfun</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/bobleer/dsh-acp-for-bitfun/" tabindex="-1"><p>BitFun 与 DSH 的 ACP 交互对接。</p></a></li>
       <li><h3><a href="/zh/p/bill9109/dsh-web-ui-notify/" translate="no">bill9109/dsh-web-ui-notify</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/bill9109/dsh-web-ui-notify/" tabindex="-1"><p>桌面通知提醒。</p></a></li>

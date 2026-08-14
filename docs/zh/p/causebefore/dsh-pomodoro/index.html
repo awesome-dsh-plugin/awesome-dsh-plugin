@@ -206,6 +206,7 @@ footer p+p{margin-top:.5rem}
 <li><strong>低干扰迷你模式：</strong> 收起后只保留阶段、倒计时和开始/暂停，仍可拖动、展开或关闭。</li>
 <li><strong>可配置循环：</strong> 专注与休息时长可调，并可分别控制是否自动开始休息或下一轮专注。</li>
 <li><strong>阶段结束提醒：</strong> 无论面板是否打开都会显示 DSH 内提醒，还可选择提示音和后台系统通知。</li>
+<li><strong>DSH 语言支持：</strong> 跟随 DSH 全局语言提供中文和英文；切换语言会立即更新已打开的插件界面，不会重置计时或未保存的设置草稿。</li>
 <li><strong>界面适配：</strong> 自动适配 DSH 明暗主题、键盘操作和“减少动态效果”偏好。</li>
 </ul>
 <h3>环境要求</h3>
@@ -356,15 +357,15 @@ npm pack --dry-run
 </tr>
 <tr>
 <td><code>lib/client.js</code></td>
-<td>浏览器计时引擎、React UI、slot 注册和设置同步</td>
+<td>浏览器计时引擎、React UI、slot 注册、locale 文案和设置同步</td>
 </tr>
 <tr>
 <td><code>assets/sounds/deep-ding.mp3</code></td>
 <td>CC0 低沉提示音源文件；运行时字节嵌入客户端 bundle</td>
 </tr>
 <tr>
-<td><code>docs/images/social-preview.jpg</code></td>
-<td>GitHub 仓库链接的 Social Preview 图片</td>
+<td><code>docs/images/</code></td>
+<td>中英文 README 截图与 GitHub Social Preview 图片</td>
 </tr>
 <tr>
 <td><code>cordis.patch.yml</code></td>
@@ -388,7 +389,7 @@ npm pack --dry-run
 </ol>
 
     </div>
-    <p class="note"><a href="https://github.com/causebefore/dsh-pomodoro/blob/dev/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/causebefore/dsh-pomodoro/blob/dev/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
@@ -403,12 +404,12 @@ npm pack --dry-run
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1766</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 829</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 705</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 131</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 709</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 79</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>
