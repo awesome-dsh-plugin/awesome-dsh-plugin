@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 219,
+ "count": 220,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -972,6 +972,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:ICCuse/dsh-premise-guard",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-vision-router",
+   "owner": "ysr666",
+   "url": "https://github.com/ysr666/dsh-vision-router",
+   "category": "tools",
+   "description": {
+    "en": "Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image and it just works — no Python, one-command install.",
+    "zh": "为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用，无 Python，一条命令安装。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:ysr666/dsh-vision-router",
    "added": "2026-08-14"
   },
   {
