@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">ysr666/</span><wbr><span class="name">dsh-vision-router</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 33</b></span>
+        <span>Star 数 <b>★ 34</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -216,10 +216,12 @@ footer p+p{margin-top:.5rem}
 <li><strong>Original pixels, real answers.</strong> The vision chain reads the image at original resolution (auto-downscaled only to protect latency/quota); the agent&#39;s question travels with the image, so answers are about <em>your</em> question, not a generic description.</li>
 <li><strong>Automatic failover with classified errors.</strong> Region blocks, ToS filtering, 402 quota, 429 rate limits (with Retry-After backoff), context overflow, network failures — the chain walks providers one by one and only reports after all of them failed, with actionable advice.</li>
 <li><strong>Image memory.</strong> Vision answers are cached by attachment content hash; later text turns substitute the recorded description (marked as untrusted evidence), so DeepSeek genuinely remembers earlier images without re-spending vision calls.</li>
-<li><strong>A verifiable pixel loop.</strong> Reference → <code>vision_html_screenshot</code> → <code>vision_pixel_diff</code> (ratio + red heatmap + worst-region ranking) → fix → repeat until the diff reaches zero. UI restoration becomes measurable instead of eyeballed.</li>
+<li><strong>A verifiable pixel loop.</strong> Reference → <code>vision_html_screenshot</code> → <code>vision_pixel_diff</code> (ratio + red heatmap + worst-region ranking) → fix → repeat until the mismatch converges. UI restoration becomes measurable instead of eyeballed.</li>
 <li><strong>Progressive schema exposure.</strong> Only a zero-arg <code>vision_activate</code> bootstrap is always visible; image turns auto-mount all ten deep tools with a one-time usage note, and a <code>vision-tools</code> skill is registered for text-only turns.</li>
 <li><strong>Selective proxy.</strong> Only the configured vision provider hosts go through your local proxy; DeepSeek stays direct.</li>
 </ul>
+<h4>Pixel loop in practice</h4>
+<p>The agent rebuilt the UI from the reference image, then verified the final result with <code>vision_pixel_diff</code>: <strong>2.54% final diff</strong> (32,939 / 1,296,000 differing pixels, threshold 16/channel).</p>
 <h3>How it works</h3>
 <p>The vision model is <strong>only the eyes</strong>; DeepSeek is <strong>always the brain</strong>. An image turn is never hijacked by a one-shot vision answer — the agent drives the tools itself and can keep operating on the image across as many steps as the task needs.</p>
 <h3>Tools</h3>
@@ -470,7 +472,7 @@ dsh --profile web --dump-config | grep vision-router   # one row, mounted by the
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1190</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1194</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
       <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 307</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 85</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>

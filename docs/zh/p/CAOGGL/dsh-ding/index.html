@@ -309,15 +309,15 @@ footer p+p{margin-top:.5rem}
 </thead>
 <tbody><tr>
 <td>单击铃铛</td>
-<td>开/关提示音（通知气泡不受影响）</td>
+<td>快速开关提示音</td>
 </tr>
 <tr>
 <td>悬停铃铛</td>
-<td>弹出音量滑杆；拖动松手自动试听一次</td>
+<td>铃铛<strong>正左侧</strong>滑出音量条（行内元素带宽度动画，同行元素自动左移）；拖动松手自动试听</td>
 </tr>
 <tr>
 <td>右键铃铛</td>
-<td>选择音效（内置叮咚 / 已上传的音频），或上传新音效（mp3/wav/mid/wma/aac/m4a/ogg/flac，存到 <code>data/sounds/</code>）</td>
+<td>打开通知设置面板：<strong>提示音</strong>/<strong>气泡通知</strong>开关（两个都关 = 对话完成时无任何提示），下方可选音效（内置叮咚 / 已上传的音频）或上传新音效（mp3/wav/mid/wma/aac/m4a/ogg/flac，存到 <code>data/sounds/</code>）</td>
 </tr>
 </tbody></table>
 <h4>卸载</h4>
@@ -327,6 +327,7 @@ footer p+p{margin-top:.5rem}
 </ol>
 <h4>更新日志</h4>
 <ul>
+<li><strong>v0.4.1</strong>（2026-08-14）：铃铛交互改版——音量条移至铃铛正左侧（行内宽度动画、同行元素自动左移）；右键设置面板新增<strong>提示音/气泡通知开关</strong>（全关 = 无任何提示）；弹层增加过渡动画；修复悬停时菜单被误关的问题</li>
 <li><strong>v0.4.0</strong>（2026-08-14）：<strong>新增 Web 铃铛按钮</strong>——对话页顶栏单击开关提示音、悬停调音量（松手试听）、右键选音效/上传自定义音频；新增 <code>GET/POST /dsh-ding/settings</code>、<code>/dsh-ding/test</code>、<code>/dsh-ding/sounds</code> HTTP API，设置持久化到 <code>data/dsh-ding.json</code></li>
 <li><strong>v0.3.1</strong>（2026-08-14）：通知图标改为 DSH 蓝鲸 logo；README 同步安装方法并新增本日志</li>
 <li><strong>v0.3.0</strong>（2026-08-14）：<strong>修复原生通知不显示</strong>——自动注册 AppUserModelID（未注册的 AUMID 会被 Windows 静默丢弃）</li>
@@ -346,7 +347,7 @@ footer p+p{margin-top:.5rem}
 <li>🔔 <strong>Sound alert</strong>: plays <code>ding.mp3</code> (configurable to any audio file: mp3/wav/mid/wma/aac) when a conversation completes; falls back to the system &quot;ding-dong&quot; beep if the file is missing</li>
 <li>🪟 <strong>Native Windows notification</strong>: shows a system toast (including the session title and the DSH whale logo). On first use the plugin registers an AppUserModelID (Start Menu shortcut) so the toast is actually displayed — toasts with an unregistered AUMID are silently dropped by Windows</li>
 <li>🎚️ <strong>Adjustable volume</strong>: the <code>volume</code> option (0.0 ~ 1.0) controls the alert loudness; config changes apply immediately</li>
-<li>🔔 <strong>Web bell button</strong>: a bell in the conversation header — <strong>click</strong> toggles the sound, <strong>hover</strong> shows a volume slider (release to preview), <strong>right-click</strong> picks a sound and lets you upload your own audio files; changes save immediately, no config editing</li>
+<li>🔔 <strong>Web bell button</strong>: a bell in the conversation header — <strong>click</strong> toggles the sound, <strong>hover</strong> slides a volume bar out on the left of the bell (in-flow width animation; the other items in the row shift left), <strong>right-click</strong> opens the notification settings panel: sound/toast toggles (both off = no notification at all), sound picker and upload; changes save immediately, no config editing</li>
 <li>🎯 <strong>Precise timing</strong>: subscribes to the host <code>agent/status</code> event and fires when the status transitions from <code>running</code> to <code>idle</code> — exactly the moment the turn is fully done with no more proactive output</li>
 <li>🧹 <strong>No false positives</strong>: ignores subagent completion events (they are just intermediate steps of the main conversation) and idle states with pending inbox messages (the agent is about to continue)</li>
 <li>⚡ <strong>Debounced &amp; throttled</strong>: 800ms debounce and 3s global rate limit by default</li>
@@ -456,15 +457,15 @@ footer p+p{margin-top:.5rem}
 </thead>
 <tbody><tr>
 <td>Click the bell</td>
-<td>Toggle the sound on/off (the notification balloon is unaffected)</td>
+<td>Quickly toggle the sound</td>
 </tr>
 <tr>
 <td>Hover the bell</td>
-<td>Volume slider appears; releasing the slider previews the sound once</td>
+<td>A volume bar slides out on the <strong>left</strong> of the bell (in-flow width animation; the other items in the row shift left automatically); releasing the slider previews the sound once</td>
 </tr>
 <tr>
 <td>Right-click the bell</td>
-<td>Pick a sound (built-in ding / your uploaded files), or upload a new one (mp3/wav/mid/wma/aac/m4a/ogg/flac, stored in <code>data/sounds/</code>)</td>
+<td>Notification settings panel: <strong>Sound</strong> / <strong>Toast</strong> toggles (both off = no notification when a conversation finishes), plus the sound picker (built-in ding / your uploaded files) and upload (mp3/wav/mid/wma/aac/m4a/ogg/flac, stored in <code>data/sounds/</code>)</td>
 </tr>
 </tbody></table>
 <h4>Uninstall</h4>
@@ -474,6 +475,7 @@ footer p+p{margin-top:.5rem}
 </ol>
 <h4>Changelog</h4>
 <ul>
+<li><strong>v0.4.1</strong> (2026-08-14): Bell interaction redesign — the volume bar moved to the left of the bell (in-flow width animation, row items shift left); the right-click panel gained <strong>Sound/Toast toggles</strong> (both off = completely silent); popups got transition animations; fixed the hover menu closing too early</li>
 <li><strong>v0.4.0</strong> (2026-08-14): <strong>Web bell button added</strong> — click the bell in the conversation header to toggle the sound, hover for a volume slider (release to preview), right-click to pick/upload sounds; new <code>GET/POST /dsh-ding/settings</code>, <code>/dsh-ding/test</code>, <code>/dsh-ding/sounds</code> HTTP APIs; settings persist to <code>data/dsh-ding.json</code></li>
 <li><strong>v0.3.1</strong> (2026-08-14): Toast icon switched to the DSH whale logo; README install methods updated, changelog added</li>
 <li><strong>v0.3.0</strong> (2026-08-14): <strong>Fixed native notifications not showing</strong> — auto-registers an AppUserModelID (toasts with an unregistered AUMID are silently dropped by Windows)</li>

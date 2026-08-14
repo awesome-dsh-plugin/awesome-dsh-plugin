@@ -208,11 +208,17 @@ footer p+p{margin-top:.5rem}
 <p>Each result shows the filename first and its parent directory underneath. Duplicate filenames include the parent directory in the main label. Built-in SVG icons distinguish folders, source files, text, PDFs, images, data and configuration files, archives, and other files.</p>
 <p>The default index skips common version-control directories, IDE metadata, dependency trees, caches, and build output. The list covers VS Code, Visual Studio, JetBrains IDEs, Fleet, Eclipse, Android and Gradle, Xcode, CMake, Flutter, .NET, Unity, Unreal, and common JavaScript and Python output directories. OS metadata files named <code>desktop.ini</code>, <code>Thumbs.db</code>, and <code>.DS_Store</code> are excluded by default.</p>
 <h3>Install or Update</h3>
-<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.0.tar.gz
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.1.tar.gz
 </code></pre>
-<p>Use the same command to update an existing installation. Restart <code>dsh web</code> after installation so the Host and browser client load version <code>0.5.0</code>.</p>
-<p>File filters are managed under <strong>Settings -&gt; File mentions</strong>. The <strong>Global</strong> tab applies its rules to every workspace. The <strong>Workspace</strong> tab adds rules for one selected workspace while retaining the global rules. Each rule is a complete basename and matching is case-insensitive.</p>
-<p>Rules are added and removed individually. The global list can be restored to the built-in defaults, and a workspace list can be cleared without changing other workspaces. Every change invalidates cached indexes, so the next <code>@</code> search uses the updated filters immediately.</p>
+<p>Use the same command to update an existing installation. Restart <code>dsh web</code> after installation so the Host and browser client load version <code>0.5.1</code>.</p>
+<h3>File Filters</h3>
+<p>Open <strong>Settings -&gt; File mentions</strong> to manage file-name filters.</p>
+<ul>
+<li><strong>Global</strong> contains rules shared by every workspace.</li>
+<li><strong>Workspace</strong> contains additional rules for the selected workspace path. Each workspace keeps its own list, and the panel shows the global rules it inherits.</li>
+</ul>
+<p>Each rule matches one complete basename, without case sensitivity. Add and remove rules individually. <strong>Restore defaults</strong> resets the global list to the built-in file names. <strong>Clear workspace rules</strong> removes only the selected workspace&#39;s additions.</p>
+<p>Settings are saved in the DSH web profile through the plugin&#39;s own Host connection. Existing <code>ignoreFiles</code> values from <code>0.4.1</code> remain in the global list after updating. A change clears the affected index cache, so the next <code>@</code> search uses the saved rules.</p>
 <h3>Configuration</h3>
 <p>The available options apply to the path picker index:</p>
 <ul>
@@ -262,12 +268,12 @@ pnpm run build
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1753</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1762</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
       <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 827</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 701</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 705</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 130</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 78</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 71</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 79</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 72</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

@@ -253,10 +253,10 @@ footer p+p{margin-top:.5rem}
 dsh plugin --profile web add dsh-fail-logger
 
 # or pin to an exact version
-dsh plugin --profile web add dsh-fail-logger@0.4.2
+dsh plugin --profile web add dsh-fail-logger@0.4.3
 
 # or GitHub release tag (no npm registry dependency; auditability &amp; rollback)
-dsh plugin --profile web add &quot;github:Areium/dsh-fail-logger#v0.4.2&quot;
+dsh plugin --profile web add &quot;github:Areium/dsh-fail-logger#v0.4.3&quot;
 
 # or manually: merge cordis.patch.yml&#39;s insert entry into ~/.dsh/profiles/web/cordis.patch.yml
 </code></pre>
@@ -328,7 +328,7 @@ tail -20 ~/.dsh/skills/fail-log-guide/SKILL.md
 <pre><code class="language-powershell"># Windows PowerShell variant of step 2
 Get-Content &quot;$env:USERPROFILE\.dsh\skills\fail-log-guide\SKILL.md&quot; -Tail 20
 </code></pre>
-<p>Expected: a <code>FAIL-LOG</code> section with a <code>[read] ENOENT…</code> cause. If missing, check in order: ① startup log <code>[dsh-fail-logger] v0.4.2 active</code>; ② logDir writability warning; ③ whether that profile was restarted after install.</p>
+<p>Expected: a <code>FAIL-LOG</code> section with a <code>[read] ENOENT…</code> cause. If missing, check in order: ① startup log <code>[dsh-fail-logger] v0.4.x active</code>; ② logDir writability warning; ③ whether that profile was restarted after install.</p>
 <h3>License</h3>
 <p>MIT, &#39;deliberate|noise&#39;])</p>
 <pre><code>
@@ -392,7 +392,7 @@ tail -20 ~/.dsh/skills/fail-log-guide/SKILL.md                              # FA
     <ul class="rel">
       <li><h3><a href="/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 161</span></h3><a class="desc-link" href="/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>Community distribution: TUI, desktop, and Web UI as one bundle with layered installation.</p></a></li>
       <li><h3><a href="/p/Jayden-X-L/forkprobe/" translate="no">Jayden-X-L/forkprobe</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/p/Jayden-X-L/forkprobe/" tabindex="-1"><p>Compare multiple skills on the same task and pick the winner.</p></a></li>
-      <li><h3><a href="/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/p/vlln/plugin-registry/" tabindex="-1"><p>Ecosystem infrastructure: a thin browser console for managing official repository plugins (zero patches) plus a make-dsh-plugin skill for guided plugin development.</p></a></li>
+      <li><h3><a href="/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 33</span></h3><a class="desc-link" href="/p/vlln/plugin-registry/" tabindex="-1"><p>Ecosystem infrastructure: a thin browser console for managing official repository plugins (zero patches) plus a make-dsh-plugin skill for guided plugin development.</p></a></li>
       <li><h3><a href="/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 28</span></h3><a class="desc-link" href="/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>Run the dsh runtime on Multica.</p></a></li>
       <li><h3><a href="/p/DietCokewithSugar/dsh-user-experience/" translate="no">DietCokewithSugar/dsh-user-experience</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/p/DietCokewithSugar/dsh-user-experience/" tabindex="-1"><p>Finds potential UX issues in your project: automatically reviews React/TypeScript code, pinpoints each problem, and gives concrete suggestions.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-plugin-check/" translate="no">omdsh-dev/dsh-plugin-check</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-plugin-check/" tabindex="-1"><p>Plugin health checks: manifest protocol / patch format / build traps, zero-dependency and read-only.</p></a></li>
