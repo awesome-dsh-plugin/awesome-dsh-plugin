@@ -132,6 +132,13 @@
     <summary>VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。</summary>
   </entry>
   <entry>
+    <title>tsonglew/dsh-media-preview</title>
+    <id>https://github.com/tsonglew/dsh-media-preview</id>
+    <link href="https://github.com/tsonglew/dsh-media-preview"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。</summary>
+  </entry>
+  <entry>
     <title>Han-1413141/dsh-sticky-disclosure</title>
     <id>https://github.com/Han-1413141/dsh-sticky-disclosure</id>
     <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/a903067276-rgb/dsh-file-mentions"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DSH 回复中的文件路径可点击：Codex 风格行内打开、文件管理器定位、回合尾部文件 chip 列表。</summary>
-  </entry>
-  <entry>
-    <title>bobcat848/dsh-calculator</title>
-    <id>https://github.com/bobcat848/dsh-calculator</id>
-    <link href="https://github.com/bobcat848/dsh-calculator"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。</summary>
   </entry>
 </feed>

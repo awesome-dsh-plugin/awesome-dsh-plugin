@@ -132,6 +132,13 @@
     <summary>VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.</summary>
   </entry>
   <entry>
+    <title>tsonglew/dsh-media-preview</title>
+    <id>https://github.com/tsonglew/dsh-media-preview</id>
+    <link href="https://github.com/tsonglew/dsh-media-preview"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Audio/video FileViewer for dsh-better-sidebar: native inline playback for mp4/webm/mkv/mov and mp3/flac/wav, served by a Range-capable streaming media route.</summary>
+  </entry>
+  <entry>
     <title>Han-1413141/dsh-sticky-disclosure</title>
     <id>https://github.com/Han-1413141/dsh-sticky-disclosure</id>
     <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/a903067276-rgb/dsh-file-mentions"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.</summary>
-  </entry>
-  <entry>
-    <title>bobcat848/dsh-calculator</title>
-    <id>https://github.com/bobcat848/dsh-calculator</id>
-    <link href="https://github.com/bobcat848/dsh-calculator"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.</summary>
   </entry>
 </feed>

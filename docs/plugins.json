@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 276,
+ "count": 281,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -595,6 +595,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:tsonglew/dsh-workspace-search",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-media-preview",
+   "owner": "tsonglew",
+   "url": "https://github.com/tsonglew/dsh-media-preview",
+   "category": "ui",
+   "description": {
+    "en": "Audio/video FileViewer for dsh-better-sidebar: native inline playback for mp4/webm/mkv/mov and mp3/flac/wav, served by a Range-capable streaming media route.",
+    "zh": "better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:tsonglew/dsh-media-preview",
    "added": "2026-08-14"
   },
   {
@@ -1396,6 +1410,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "deepseek-harness-forge-plugins#forge-memory",
+   "owner": "jinguanghai",
+   "url": "https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory",
+   "category": "memory",
+   "description": {
+    "en": "BM25 keyword-based memory recall.",
+    "zh": "基于 BM25 关键词检索的记忆召回。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory",
+   "added": "2026-08-14"
+  },
+  {
    "name": "blender",
    "owner": "CheshireJCat",
    "url": "https://github.com/CheshireJCat/blender",
@@ -1449,6 +1477,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:ximengxiaolan/dsh-vision-bridge",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-vision",
+   "owner": "linenxi-ctrl",
+   "url": "https://github.com/linenxi-ctrl/dsh-vision",
+   "category": "tools",
+   "description": {
+    "en": "External vision plugin for DeepSeek Harness: whale-button config panel, image recognition with auto-reply, and agent screenshot/recognize tools.",
+    "zh": "外挂识图插件：鲸鱼按钮配置面板、图片识图自动回传、模型自主截图识图工具。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:linenxi-ctrl/dsh-vision",
    "added": "2026-08-14"
   },
   {
@@ -2415,6 +2457,34 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:LeslieWylie/dsh-md-preview",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "deepseek-harness-forge-plugins#forge-gates",
+   "owner": "jinguanghai",
+   "url": "https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates",
+   "category": "tools",
+   "description": {
+    "en": "Real-compute verification gates: math simplification, logic proofs, regex validation, E-prover FOL, state-machine checks, and code repair, backed by Go-compiled binaries with prebuilt Windows executables.",
+    "zh": "真实计算验证门：数学化简、逻辑证明、正则校验、E-prover 一阶逻辑、状态机检查与代码修复，由 Go 编译的二进制支撑（附 Windows 预编译产物）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "deepseek-harness-forge-plugins#forge-tcm",
+   "owner": "jinguanghai",
+   "url": "https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm",
+   "category": "tools",
+   "description": {
+    "en": "Traditional Chinese Medicine toolkit: eight-axes diagnosis and herb-pair lookup.",
+    "zh": "中医工具集：八纲辨证与药对查询。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm",
    "added": "2026-08-14"
   },
   {
