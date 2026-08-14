@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">ZRui-C/</span><wbr><span class="name">dsh-computer-use</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,96 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h3>Install</h3>
+<ol>
+<li>Download the latest <code>DSH-Computer-Use-*-universal.dmg</code> from <a href="https://github.com/ZRui-C/dsh-computer-use/releases/latest">Releases</a>.</li>
+<li>Drag <strong>DSH Computer Use</strong> into <strong>Applications</strong> and open it.</li>
+<li>Authorize <strong>Accessibility</strong> and <strong>Screen Recording</strong> when the setup center asks.</li>
+<li>Select <strong>Install</strong> under <strong>DSH Plugin</strong>, then restart the running DSH Host.</li>
+</ol>
+<p>The official DMG is Universal 2, Developer ID signed, Apple-notarized, and published with a SHA-256 checksum. Users do not need Xcode, Swift, or this source checkout. DSH and Google Chrome must already be installed.</p>
+<h3>What it does</h3>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Perception</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chromium</td>
+<td>Playwright, CDP accessibility/DOM, frames, tabs, optional OCR</td>
+<td>Ref-pinned navigation, pointer, keyboard, forms, scroll, drag, upload</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>Accessibility tree first, Vision OCR for semantic gaps, independent window capture</td>
+<td>AX actions, targeted SkyLight/CoreGraphics, global HID only without a target</td>
+</tr>
+</tbody></table>
+<p>Every action returns a fresh bounded text observation. The model works with roles, names, values, state, geometry, and stable snapshot refs instead of assuming it can inspect screenshots. UI and OCR strings are explicitly untrusted data.</p>
+<h4>Background macOS control</h4>
+<ul>
+<li>Carries PID, WindowServer window ID, AX window frame, and element identity through every action.</li>
+<li>Prefers semantic AX actions before coordinate input.</li>
+<li>Routes supported pointer and keyboard events directly to the target process/window.</li>
+<li>Uses a click-through software cursor; targeted actions do not move the physical pointer.</li>
+<li>Keeps post-action observation pinned to the previous target, even while another app stays active.</li>
+<li>Falls back to public CoreGraphics or fails closed when a private capability is unavailable.</li>
+</ul>
+<h3>Platform boundary</h3>
+<p>ScreenCaptureKit is public API. The optional background input path dynamically loads private SkyLight symbols and is intended for Developer ID distribution, not the Mac App Store. Private APIs are unsupported by Apple and can change between macOS releases.</p>
+<p>On macOS 26, Stage Manager may expose a shelved window only as a small WindowServer thumbnail. Constructing a capture filter for that representation can abort inside SkyLight. DSH Computer Use detects the geometry mismatch first, preserves AX observation, returns an explicit warning, and never stretches a thumbnail into a fake full-window screenshot.</p>
+<h3>DSH integration</h3>
+<p>The embedded package declares a DSH bundle in <code>package.json</code>. The setup center runs the official equivalent of:</p>
+<pre><code class="language-bash">dsh plugin --profile web add --save-exact file:/path/to/DSH\ Computer\ Use.app/Contents/Resources/Plugin
+</code></pre>
+<p><code>cordis.patch.yml</code> installs both the Host runtime and the model-facing <code>computer_observe</code> / <code>computer_action</code> tools. No manual edits to user profile YAML or shipped presets are required. A running DSH Host must be restarted after install or upgrade.</p>
+<h3>Build from source</h3>
+<p>Requirements: macOS 14+, Xcode/Swift 5.9+, Node.js 22+, pnpm 11+, DSH, and Google Chrome.</p>
+<pre><code class="language-bash">pnpm install
+pnpm run typecheck
+pnpm run test
+pnpm run test:native
+pnpm run build
+</code></pre>
+<p><code>pnpm run build</code> creates:</p>
+<pre><code class="language-text">native/macos-helper/dist/DSH Computer Use.app
+</code></pre>
+<p>The default build is Universal 2. For faster local iteration:</p>
+<pre><code class="language-bash">COMPUTER_USE_ARCHS=arm64 pnpm run build
+</code></pre>
+<p>Create a local drag-to-Applications DMG:</p>
+<pre><code class="language-bash">pnpm run package:dmg
+</code></pre>
+<p>Public releases require a <code>Developer ID Application</code> identity and notarization. See <a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/documentation/distribution.md">documentation/distribution.md</a> for the exact local and GitHub Actions flows.</p>
+<h3>Tool contract</h3>
+<p><code>computer_observe</code> returns <code>interactive</code>, <code>full</code>, or <code>changes</code> snapshots for <code>browser</code> and <code>desktop</code>, with optional query filtering and <code>auto | always | never</code> OCR.</p>
+<p><code>computer_action</code> performs exactly one browser or desktop action and returns the post-action semantic state. Ref and coordinate actions require the latest <code>snapshot_id</code>; stale targets fail closed and require another observation. File uploads are fenced to the DSH session workspace.</p>
+<h3>Project</h3>
+<ul>
+<li><a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/documentation/architecture.md">Architecture</a></li>
+<li><a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/documentation/distribution.md">Distribution and notarization</a></li>
+<li><a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/SECURITY.md">Security policy</a></li>
+<li><a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/CONTRIBUTING.md">Contributing</a></li>
+<li><a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/CHANGELOG.md">Changelog</a></li>
+<li><a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a></li>
+</ul>
+<h3>Community</h3>
+<ul>
+<li><a href="https://github.com/ZRui-C/dsh-computer-use/discussions">GitHub Discussions</a> — ask questions, share usage, report ideas</li>
+<li><a href="https://discord.gg/Ycq5dCaS4">DeepSeek Harness Discord</a> — the wider DSH ecosystem</li>
+<li>Star the repo if DSH Computer Use saves your pointer 🖱️</li>
+</ul>
+<p>Licensed under <a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/LICENSE">Apache-2.0</a>. This independent project is not endorsed by Apple. “DeepSeek” and related marks belong to their respective owners; the name is used only to describe compatibility with DeepSeek Harness/DSH.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ZRui-C/dsh-computer-use/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,11 +288,11 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1199</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1208</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
       <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 308</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 85</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>

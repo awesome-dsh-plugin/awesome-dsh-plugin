@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">AcidGr/</span><wbr><span class="name">dsh-web-lan-access</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-web-lan-access" rel="noopener" translate="no">dsh-web-lan-access</a></span>
@@ -188,7 +189,74 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web UI 的局域网/远程访问支持插件。</p>
+<h3>问题</h3>
+<p>Web UI 在启动关键路径上调用 <code>crypto.randomUUID()</code>（RPC id 生成、消息 id、草稿附件）。该 Web API <strong>只在安全上下文存在</strong>（HTTPS，或 <code>http://localhost</code> / <code>http://127.0.0.1</code>）。当界面通过纯 HTTP 从非回环地址（局域网 IP、Tailscale IP、主机名）提供服务时，<code>crypto.randomUUID</code> 是 <code>undefined</code>，所有 RPC 抛错，<strong>会话和模型完全无法显示</strong>。</p>
+<h3>原理</h3>
+<p>宿主端插件使用 webserver 官方扩展点（<code>webServer.tapIndex</code>），在每次返回的 index.html 的 <code>&lt;head&gt;</code> 之后注入一段 polyfill（基于 <code>crypto.getRandomValues</code> 的 RFC 4122 v4 实现——该 API 在非安全上下文<strong>可用</strong>），位置在启动清单和 shell 入口之前。安全上下文下 polyfill 为空操作。</p>
+<ul>
+<li>不修改产品源码，完全可逆</li>
+<li>与版本无关（只转换下发的 index.html）</li>
+<li>跨平台（Linux / macOS / Windows / Android）</li>
+</ul>
+<h3>安装</h3>
+<h4>方式一：bundle 安装（推荐）</h4>
+<p>从 npm 安装：</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-web-lan-access
+</code></pre>
+<p>（不走 npm / 本地开发时，可用仓库地址：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:AcidGr/dsh-web-lan-access
+</code></pre>
+<p>）</p>
+<p>重启 <code>dsh web</code>，浏览器硬刷新。</p>
+<h4>方式二：手动安装（无 pnpm / 离线）</h4>
+<pre><code class="language-sh">PROFILE=&quot;$DSH_HOME/profiles/web&quot;                 # 按实际修改 DSH_HOME 和 profile 名
+mkdir -p &quot;$PROFILE/plugins&quot; &quot;$PROFILE/node_modules/@dsh-profile&quot;
+cp -r dsh-web-lan-access &quot;$PROFILE/plugins/lan-access&quot;
+ln -sfn ../../plugins/lan-access &quot;$PROFILE/node_modules/@dsh-profile/lan-access&quot;
+# 在 $PROFILE/cordis.patch.yml 追加：
+#   - insert:
+#       - id: lan-access
+#         name: &#39;@dsh-profile/lan-access&#39;
+</code></pre>
+<h3>使用</h3>
+<ol>
+<li><p><strong>绑定所有网卡</strong>，让其他设备可连接：</p>
+<pre><code class="language-sh">dsh --profile web --host 0.0.0.0 --port 3080
+</code></pre>
+<p>绑定 <code>0.0.0.0</code> 后，harness 会自动把本机所有非内部 IPv4 加入 <code>/api</code> 信任围栏（<code>resolveLanTrust</code>）——<strong>局域网 IP 访问零额外配置</strong>。</p>
+</li>
+<li><p><strong>域名/远程（如 Tailscale）</strong>——把<strong>你自己的</strong>入口加进 <code>trustedHosts</code>：</p>
+<pre><code class="language-yaml">- id: web-runtime
+  config:
+    trustedHosts:
+      - &lt;短名&gt;            # 如 myhost —— 必须单独列出！
+      - &lt;名称&gt;.tailXXXX.ts.net  # 完整域名
+      - 100.x.x.x         # tailnet IP
+</code></pre>
+<p>⚠️ 围栏<strong>逐字比对</strong> Host 头：MagicDNS 短名（<code>http://myhost:3080</code>）≠ 完整域名，短名必须单独列一行，否则所有 <code>/api</code> 请求返回 403（页面壳能开、会话/模型全无）。</p>
+</li>
+</ol>
+<h3>验证</h3>
+<pre><code class="language-sh">curl http://127.0.0.1:3080/ | grep lan-access-polyfill   # 必须有输出
+</code></pre>
+<p>再从另一台设备打开 <code>http://&lt;服务器IP&gt;:3080</code>——会话和模型应正常加载。</p>
+<h3>安全警告</h3>
+<p>绑定 <code>0.0.0.0</code> 后，同一网络内<strong>任何设备</strong>都能无鉴权操作该 agent（<code>/api</code> 只是来源围栏，不是登录）。公网 IP 的服务器等于向整个互联网开放。请只在可信网络使用；用防火墙限制网段（如 <code>ufw allow from 192.168.0.0/16</code>），或走 Tailscale / 带鉴权的反向代理。走 TLS 反代的话连这个 polyfill 都不需要。</p>
+<h3>回滚</h3>
+<ul>
+<li>bundle 安装：<code>dsh plugin --profile web remove dsh-web-lan-access</code></li>
+<li>手动安装：删掉 <code>cordis.patch.yml</code> 里的 <code>lan-access</code> insert 块；可选：启动时去掉 <code>--host 0.0.0.0</code></li>
+</ul>
+<h3>许可证</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/AcidGr/dsh-web-lan-access/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -202,12 +270,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1766</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 829</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 705</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 131</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 709</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 79</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

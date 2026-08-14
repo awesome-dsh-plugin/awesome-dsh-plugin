@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
-**312** plugins · [PRs welcome](#contributing)
+**316** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -150,7 +150,7 @@ dsh plugin --profile web add dshmarket
 - [yuezengwu/dsh-explain](https://github.com/yuezengwu/dsh-explain) - Local-first learning mode: cross-session learning threads with per-source explanations.
 - [Moeblack/dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) - Edit user and built-in system-prompt sections with live preview.
 - [czm15053/dsh-peer-link](https://github.com/czm15053/dsh-peer-link) - Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).
-- [Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) - Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode chat histories as resumable DeepSeek Harness sessions.
+- [Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) - Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.
 - [Nwflower/dsh-file-claim](https://github.com/Nwflower/dsh-file-claim) - File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).
 - [Chinesezjc/dsh-interconnect](https://github.com/Chinesezjc/dsh-interconnect) - Cross-instance message and event handoff between DSH instances via an interconnect server.
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) - Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).
@@ -181,6 +181,7 @@ dsh plugin --profile web add dshmarket
 - [jiayan-xu/dsh-memoria](https://github.com/jiayan-xu/dsh-memoria) - Vector + graph memory backend: observe/remember/search/recall tools against a local memoria server, fusing HNSW semantic recall, FTS5 keyword search, and knowledge-graph signals via RRF ranking, with automatic turn-end persistence and per-agent namespace isolation.
 - [jinguanghai/deepseek-harness-forge-plugins#forge-memory](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory) - BM25 keyword-based memory recall.
 - [FuRongJun-1999/dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) - Multi-agent spatiotemporal memory graph with cross-session persistence and importance-gated recall.
+- [jiayan-xu/dsh-memoria-extra](https://github.com/jiayan-xu/dsh-memoria-extra) - Advanced memoria tools: session context injection (profile + recall), recent decisions, health report, namespace allowlist, memory relation graph, and entity search; companion to dsh-memoria.
 
 
 ### Tools & Capabilities
@@ -268,6 +269,8 @@ dsh plugin --profile web add dshmarket
 - [jinguanghai/deepseek-harness-forge-plugins#forge-gates](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates) - Real-compute verification gates: math simplification, logic proofs, regex validation, E-prover FOL, state-machine checks, and code repair, backed by Go-compiled binaries with prebuilt Windows executables.
 - [jinguanghai/deepseek-harness-forge-plugins#forge-tcm](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm) - Traditional Chinese Medicine toolkit: eight-axes diagnosis and herb-pair lookup.
 - [lsz-asd/dsh-plugin-device-info](https://github.com/lsz-asd/dsh-plugin-device-info) - Read-only Windows device information tools: one agent tool per Win32 device category (time, system, cpu, memory, disk, gpu, network, battery, processes, usb, audio, printers) via WMI/CIM and Node os collectors.
+- [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) - Code knowledge graph bridge for codebase-memory-mcp: semantic symbol search (BM25), source snippets, architecture overview with Leiden communities, call/data-flow/cross-service traces, graph-augmented grep.
+- [jiayan-xu/dsh-nuphus-mcp](https://github.com/jiayan-xu/dsh-nuphus-mcp) - Desktop and browser automation bridge (36 tools): window/screen/mouse/keyboard control with PaddleOCR element perception, Chrome CDP browsing with accessibility snapshots.
 
 ### Skills
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
@@ -384,6 +387,7 @@ dsh plugin --profile web add dshmarket
 - [Yuuz12/dsh-webui-auth](https://github.com/Yuuz12/dsh-webui-auth) - WebUI authentication enforced at the HTTP/transport layer: four-layer login gate (resources, plugin bundles, /api, WebSocket), server-side sessions with HttpOnly cookies.
 - [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) - LAN access for the Web GUI: 0.0.0.0 bind plus a crypto.randomUUID polyfill for non-secure (LAN HTTP) contexts.
 - [lsz-asd/dsh-chameleon#bundle](https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle) - Self-editing desktop workbench for DeepSeek Harness: a full dsh web replica with an edit mode in which the agent modifies the workbench (patch layers, plugins, UI) with hot reload.
+- [jiayan-xu/dsh-ocr-review](https://github.com/jiayan-xu/dsh-ocr-review) - Local AI code-review gate: review a workspace/branch/commit diff via the managed ocr.js, returning structured findings with token stats; gate mode fails on findings.
 
 
 ### Just for Fun

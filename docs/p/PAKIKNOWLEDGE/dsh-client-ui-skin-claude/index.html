@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">PAKIKNOWLEDGE/</span><wbr><span class="name">dsh-client-ui-skin-claude</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/theme/">Themes & Appearance</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,42 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>A Claude-style skin for the DSH Web GUI: warm-black canvas, clay accent, serif UI, follows the native light/dark theme.</p>
+<p><img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/dark.png" alt="Dark"> · <img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/light.png" alt="Light"></p>
+<h3>Features</h3>
+<ul>
+<li>Warm-black (#141413) canvas with an Anthropic clay (#d97757) accent</li>
+<li>Serif UI type (Georgia), monospace stack for code</li>
+<li>Slim scrollbars, clay selection/focus, pill badges</li>
+<li>Light and dark variants that follow the system theme</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
+</code></pre>
+<p>Restart <code>dsh web</code>, then refresh the page.</p>
+<h3>Switching</h3>
+<p>Only one skin is active at a time. Edit <code>~/.dsh/cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml"># outside the dsh-skin managed section
+- insert:
+    - id: ui-skin-claude
+      name: &#39;@dsh-external/dsh-client-ui-skin-claude&#39;
+</code></pre>
+<p>(and add <code>disabled: true</code> to the currently active skin&#39;s row). The config watcher hot-reloads within seconds; refresh the page.</p>
+<h3>Uninstall</h3>
+<ol>
+<li>Remove the <code>ui-skin-claude</code> insert row from <code>~/.dsh/cordis.patch.yml</code>.</li>
+<li><code>dsh plugin --profile web remove @dsh-external/dsh-client-ui-skin-claude</code></li>
+<li>Restart <code>dsh web</code>.</li>
+</ol>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,7 +234,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 532</span></h3><a class="desc-link" href="/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p></a></li>
+      <li><h3><a href="/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 535</span></h3><a class="desc-link" href="/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p></a></li>
       <li><h3><a href="/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 6</span></h3><a class="desc-link" href="/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</p></a></li>
       <li><h3><a href="/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/wsxwj123/dsh-plugins--packages-theme-gallery/" tabindex="-1"><p>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</p></a></li>
     </ul>

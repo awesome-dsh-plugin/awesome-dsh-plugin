@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">PAKIKNOWLEDGE/</span><wbr><span class="name">dsh-client-ui-skin-claude</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/theme/">主题与外观</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,43 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/blob/main/README.en.md">English</a> | 中文</p>
+<p>Claude 风格的 DSH Web 界面皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。</p>
+<p><img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/dark.png" alt="暗色"> · <img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/light.png" alt="亮色"></p>
+<h3>特性</h3>
+<ul>
+<li>暖黑（#141413）画布 + Anthropic 陶橙（#d97757）点缀</li>
+<li>衬线界面字体（Georgia），代码用等宽栈</li>
+<li>细滚动条、陶橙选中 / 焦点、胶囊徽章</li>
+<li>亮 / 暗双主题，跟随系统切换</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
+</code></pre>
+<p>装完重启 <code>dsh web</code>，刷新页面。</p>
+<h3>切换</h3>
+<p>同一时刻只启用一个皮肤。编辑 <code>~/.dsh/cordis.patch.yml</code>：</p>
+<pre><code class="language-yaml"># dsh-skin managed 段之外
+- insert:
+    - id: ui-skin-claude
+      name: &#39;@dsh-external/dsh-client-ui-skin-claude&#39;
+</code></pre>
+<p>（并把当前启用皮肤的 <code>disabled: true</code> 加上。）配置 watcher 几秒内热加载，刷新页面生效。</p>
+<h3>卸载</h3>
+<ol>
+<li>删除 <code>~/.dsh/cordis.patch.yml</code> 里的 <code>ui-skin-claude</code> insert 行</li>
+<li><code>dsh plugin --profile web remove @dsh-external/dsh-client-ui-skin-claude</code></li>
+<li>重启 <code>dsh web</code></li>
+</ol>
+<h3>许可</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,7 +235,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 532</span></h3><a class="desc-link" href="/zh/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</p></a></li>
+      <li><h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 535</span></h3><a class="desc-link" href="/zh/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</p></a></li>
       <li><h3><a href="/zh/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 6</span></h3><a class="desc-link" href="/zh/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</p></a></li>
       <li><h3><a href="/zh/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/wsxwj123/dsh-plugins--packages-theme-gallery/" tabindex="-1"><p>15 个精选主题家族，浅深配色完整，跟随 DSH 原生浅色/深色/跟随系统模式。</p></a></li>
     </ul>

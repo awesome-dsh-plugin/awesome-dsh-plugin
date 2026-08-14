@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">AcidGr/</span><wbr><span class="name">dsh-web-mobile-fix</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-web-mobile-fix" rel="noopener" translate="no">dsh-web-mobile-fix</a></span>
@@ -188,7 +189,61 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web UI 的移动端布局修复插件。</p>
+<p>纯客户端 CSS 覆盖层，在窄屏（视口 ≤700px）下修复最影响使用的移动端问题，完全不改动产品源码：</p>
+<ul>
+<li>设置面板改为全屏纵向布局，不再被挤成桌面布局</li>
+<li>目录选择器底部（取消/确定）固定在同一个底部行</li>
+<li>侧边栏打开时全屏显示，不再挤压对话区</li>
+<li>设置页插件导航（4 个按钮）单行排满</li>
+<li>会话日志按钮收成图标</li>
+<li>输入框模型名隐藏（只留下拉箭头）</li>
+<li>下拉菜单/弹层/菜单居中显示</li>
+</ul>
+<h3>工作原理</h3>
+<p>插件带一个浏览器端（<code>exports[&quot;./client&quot;]</code>，通过 <code>dsh.client.platform: &quot;web&quot;</code> 声明），由 client-modules 扫描器发现并随启动清单加载。它注入一个 <code>&lt;style&gt;</code> 标签，内容是针对产品稳定 <code>data-slot</code> 属性的 <code>@media (max-width: 700px)</code> 覆盖；插件卸载时标签自动移除——完全可逆。</p>
+<h3>兼容性</h3>
+<ul>
+<li>需要 Harness Web profile（<code>dsh --profile web</code>），0.1.x 系列均可</li>
+<li>选择器针对产品槽位契约，同版本线内稳定；产品大改版后可能需要小幅调整</li>
+</ul>
+<h3>安装</h3>
+<h4>方式一：bundle 安装（推荐）</h4>
+<p>从 npm 安装：</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-web-mobile-fix
+</code></pre>
+<p>（不走 npm / 本地开发时，可用仓库地址：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:AcidGr/dsh-web-mobile-fix
+</code></pre>
+<p>）</p>
+<p>重启 <code>dsh web</code>（或等 profile 热加载），浏览器硬刷新即可。</p>
+<h4>方式二：手动安装（无 pnpm / 离线）</h4>
+<pre><code class="language-sh">PROFILE=&quot;$DSH_HOME/profiles/web&quot;                 # 按实际修改 DSH_HOME 和 profile 名
+mkdir -p &quot;$PROFILE/plugins&quot; &quot;$PROFILE/node_modules/@dsh-profile&quot;
+cp -r dsh-web-mobile-fix &quot;$PROFILE/plugins/mobile-fix&quot;
+ln -sfn ../../plugins/mobile-fix &quot;$PROFILE/node_modules/@dsh-profile/mobile-fix&quot;
+# 在 $PROFILE/cordis.patch.yml 追加：
+#   - insert:
+#       - id: mobile-fix
+#         name: &#39;@dsh-profile/mobile-fix&#39;
+</code></pre>
+<h3>验证</h3>
+<p>用手机宽度窗口打开 Web UI——设置面板、侧边栏、弹层应已适配移动端。</p>
+<h3>回滚</h3>
+<ul>
+<li>bundle 安装：<code>dsh plugin --profile web remove dsh-web-mobile-fix</code></li>
+<li>手动安装：删掉 <code>cordis.patch.yml</code> 里的 <code>mobile-fix</code> insert 块（插件目录可留可删）</li>
+</ul>
+<p>不修改任何产品源码，升级不覆盖、无残留。</p>
+<h3>许可证</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/AcidGr/dsh-web-mobile-fix/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -202,12 +257,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1766</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 829</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 705</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 131</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 709</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 79</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>
