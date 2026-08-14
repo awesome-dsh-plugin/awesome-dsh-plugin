@@ -277,6 +277,7 @@ dsh plugin --profile web add dshmarket
 - [lsz-asd/dsh-plugin-device-info](https://github.com/lsz-asd/dsh-plugin-device-info) - Read-only Windows device information tools: one agent tool per Win32 device category (time, system, cpu, memory, disk, gpu, network, battery, processes, usb, audio, printers) via WMI/CIM and Node os collectors.
 - [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) - Code knowledge graph bridge for codebase-memory-mcp: semantic symbol search (BM25), source snippets, architecture overview with Leiden communities, call/data-flow/cross-service traces, graph-augmented grep.
 - [jiayan-xu/dsh-nuphus-mcp](https://github.com/jiayan-xu/dsh-nuphus-mcp) - Desktop and browser automation bridge (36 tools): window/screen/mouse/keyboard control with PaddleOCR element perception, Chrome CDP browsing with accessibility snapshots.
+- [superagents-lab/dsh-s1](https://github.com/superagents-lab/dsh-s1) - Native Search1API (s1) web research tools: search, news, page crawling, sitemap discovery, and trending topics as first-class `s1_*` tools, with a bundled s1 skill.
 
 ### Skills
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
