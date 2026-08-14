@@ -196,6 +196,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 
 ### Workflow & Automation
 
+- [ParticleLight/dsh-ultracode](https://github.com/ParticleLight/dsh-ultracode) - UltraCode agent preset: max-depth reasoning + plan-execute-verify + parallel subagent orchestration as a one-command-install working mode.
 - [icetomoyo/dsh_workflow](https://github.com/icetomoyo/dsh_workflow) - UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.
 - [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) - AgentTeams multi-agent teams.
 - [titanwings/dsh-automation](https://github.com/titanwings/dsh-automation) - Scheduled coding runs in fresh agent sessions with auditable history.

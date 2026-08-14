@@ -194,6 +194,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 
 
 ### 🔁 工作流与自动化
+- [ParticleLight/dsh-ultracode](https://github.com/ParticleLight/dsh-ultracode) — UltraCode Agent 预设：最大推理深度 + 规划-执行-验证 + 并行子代理编排，一键安装即得的完整工作模式。
 
 - [icetomoyo/dsh_workflow](https://github.com/icetomoyo/dsh_workflow) — 把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。
 - [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — AgentTeams 多智能体团队。
