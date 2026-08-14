@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GIT121995/dsh-memory-gate","url":"https://awesome-dsh-plugin.com/p/GIT121995/dsh-memory-gate/","description":"Bounded local memory with CBDC authority gating: SQLite + FTS5 claims, scoped recall with explainable use/verify/ignore decisions and a full audit trail, /memory commands, ≤3-claim/1200-char injection per call, no extra model call.","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/GIT121995/dsh-memory-gate"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All plugins","item":"https://awesome-dsh-plugin.com/"},{"@type":"ListItem","position":2,"name":"Memory","item":"https://awesome-dsh-plugin.com/memory/"},{"@type":"ListItem","position":3,"name":"GIT121995/dsh-memory-gate","item":"https://awesome-dsh-plugin.com/p/GIT121995/dsh-memory-gate/"}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GIT121995/dsh-memory-gate","url":"https://awesome-dsh-plugin.com/p/GIT121995/dsh-memory-gate/","description":"Bounded local memory with CBDC authority gating: SQLite + FTS5 claims, scoped recall with explainable use/verify/ignore decisions and a full audit trail, /memory commands, ≤3-claim/1200-char injection per call, no extra model call.","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/GIT121995/dsh-memory-gate","https://www.npmjs.com/package/dsh-memory-gate"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All plugins","item":"https://awesome-dsh-plugin.com/"},{"@type":"ListItem","position":2,"name":"Memory","item":"https://awesome-dsh-plugin.com/memory/"},{"@type":"ListItem","position":3,"name":"GIT121995/dsh-memory-gate","item":"https://awesome-dsh-plugin.com/p/GIT121995/dsh-memory-gate/"}]}]</script>
 <style>
 :root{
   --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
@@ -169,6 +169,7 @@ footer p+p{margin-top:.5rem}
         <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/memory/">Memory</a></span>
         <span>Added <b>2026-08-14</b></span>
+        <span>npm <a href="https://www.npmjs.com/package/dsh-memory-gate" rel="noopener" translate="no">dsh-memory-gate</a></span>
       </div>
     </div>
   </div>
@@ -179,6 +180,8 @@ footer p+p{margin-top:.5rem}
 
   <section class="panel">
     <h2>Install</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># from npm (prebuilt)</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add dsh-memory-gate</pre><button type="button" data-cmd="dsh plugin --profile web add dsh-memory-gate" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:GIT121995/dsh-memory-gate</pre><button type="button" data-cmd="dsh plugin --profile web add github:GIT121995/dsh-memory-gate" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
@@ -322,6 +325,7 @@ npm pack --dry-run
     <h2>Links</h2>
     <div class="links">
       <a href="https://github.com/GIT121995/dsh-memory-gate" rel="noopener">GitHub repository ↗</a>
+      <a href="https://www.npmjs.com/package/dsh-memory-gate" rel="noopener">npm package ↗</a>
       <a href="https://github.com/dsh-market/dsh-market" rel="noopener">Install via dsh-market ↗</a>
     </div>
   </section>

@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"qjcnmd/dsh-reasoning-slider","url":"https://awesome-dsh-plugin.com/zh/p/qjcnmd/dsh-reasoning-slider/","description":"Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/qjcnmd/dsh-reasoning-slider"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"全部插件","item":"https://awesome-dsh-plugin.com/zh/"},{"@type":"ListItem","position":2,"name":"UI 增强","item":"https://awesome-dsh-plugin.com/zh/ui/"},{"@type":"ListItem","position":3,"name":"qjcnmd/dsh-reasoning-slider","item":"https://awesome-dsh-plugin.com/zh/p/qjcnmd/dsh-reasoning-slider/"}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"qjcnmd/dsh-reasoning-slider","url":"https://awesome-dsh-plugin.com/zh/p/qjcnmd/dsh-reasoning-slider/","description":"Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/qjcnmd/dsh-reasoning-slider","https://www.npmjs.com/package/reasoning-slider"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"全部插件","item":"https://awesome-dsh-plugin.com/zh/"},{"@type":"ListItem","position":2,"name":"UI 增强","item":"https://awesome-dsh-plugin.com/zh/ui/"},{"@type":"ListItem","position":3,"name":"qjcnmd/dsh-reasoning-slider","item":"https://awesome-dsh-plugin.com/zh/p/qjcnmd/dsh-reasoning-slider/"}]}]</script>
 <style>
 :root{
   --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
@@ -169,6 +169,7 @@ footer p+p{margin-top:.5rem}
         <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
+        <span>npm <a href="https://www.npmjs.com/package/reasoning-slider" rel="noopener" translate="no">reasoning-slider</a></span>
       </div>
     </div>
   </div>
@@ -179,6 +180,8 @@ footer p+p{margin-top:.5rem}
 
   <section class="panel">
     <h2>安装</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># npm 包（预构建）</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add reasoning-slider</pre><button type="button" data-cmd="dsh plugin --profile web add reasoning-slider" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider</pre><button type="button" data-cmd="dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
@@ -229,6 +232,7 @@ dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider
     <h2>链接</h2>
     <div class="links">
       <a href="https://github.com/qjcnmd/dsh-reasoning-slider" rel="noopener">GitHub 仓库 ↗</a>
+      <a href="https://www.npmjs.com/package/reasoning-slider" rel="noopener">npm 包 ↗</a>
       <a href="https://github.com/dsh-market/dsh-market" rel="noopener">通过 dsh-market 安装 ↗</a>
     </div>
   </section>
@@ -236,12 +240,12 @@ dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1732</span></h3><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 810</span></h3><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 694</span></h3><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 129</span></h3><p>DeepSeek Harness 的终端 UI（TUI）。</p></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1753</span></h3><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 827</span></h3><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 701</span></h3><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 130</span></h3><p>DeepSeek Harness 的终端 UI（TUI）。</p></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 76</span></h3><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 78</span></h3><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

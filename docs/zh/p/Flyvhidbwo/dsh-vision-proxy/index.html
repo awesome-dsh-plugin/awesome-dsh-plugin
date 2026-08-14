@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Flyvhidbwo/dsh-vision-proxy","url":"https://awesome-dsh-plugin.com/zh/p/Flyvhidbwo/dsh-vision-proxy/","description":"DeepSeek 大脑 + 自动识图：GUI 附加的每张图片自动经 OpenAI 兼容 VLM 转译成文字，再交给纯文本的 DeepSeek 作答——有 key 自动走快速通道（默认 qwen3.7-flash，支持百炼/智谱/OpenRouter 等任意 OpenAI 兼容端点），无 key 自动探测本地 Ollama（零配置，图片不出本机）。","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/Flyvhidbwo/dsh-vision-proxy"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"全部插件","item":"https://awesome-dsh-plugin.com/zh/"},{"@type":"ListItem","position":2,"name":"工具与能力","item":"https://awesome-dsh-plugin.com/zh/tools/"},{"@type":"ListItem","position":3,"name":"Flyvhidbwo/dsh-vision-proxy","item":"https://awesome-dsh-plugin.com/zh/p/Flyvhidbwo/dsh-vision-proxy/"}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Flyvhidbwo/dsh-vision-proxy","url":"https://awesome-dsh-plugin.com/zh/p/Flyvhidbwo/dsh-vision-proxy/","description":"DeepSeek 大脑 + 自动识图：GUI 附加的每张图片自动经 OpenAI 兼容 VLM 转译成文字，再交给纯文本的 DeepSeek 作答——有 key 自动走快速通道（默认 qwen3.7-flash，支持百炼/智谱/OpenRouter 等任意 OpenAI 兼容端点），无 key 自动探测本地 Ollama（零配置，图片不出本机）。","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/Flyvhidbwo/dsh-vision-proxy","https://www.npmjs.com/package/dsh-vision-proxy"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"全部插件","item":"https://awesome-dsh-plugin.com/zh/"},{"@type":"ListItem","position":2,"name":"工具与能力","item":"https://awesome-dsh-plugin.com/zh/tools/"},{"@type":"ListItem","position":3,"name":"Flyvhidbwo/dsh-vision-proxy","item":"https://awesome-dsh-plugin.com/zh/p/Flyvhidbwo/dsh-vision-proxy/"}]}]</script>
 <style>
 :root{
   --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
@@ -169,6 +169,7 @@ footer p+p{margin-top:.5rem}
         <span>Star 数 <b>★ 6</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-14</b></span>
+        <span>npm <a href="https://www.npmjs.com/package/dsh-vision-proxy" rel="noopener" translate="no">dsh-vision-proxy</a></span>
       </div>
     </div>
   </div>
@@ -179,6 +180,8 @@ footer p+p{margin-top:.5rem}
 
   <section class="panel">
     <h2>安装</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># npm 包（预构建）</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add dsh-vision-proxy</pre><button type="button" data-cmd="dsh plugin --profile web add dsh-vision-proxy" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy</pre><button type="button" data-cmd="dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
@@ -449,6 +452,7 @@ allowBuilds:
     <h2>链接</h2>
     <div class="links">
       <a href="https://github.com/Flyvhidbwo/dsh-vision-proxy" rel="noopener">GitHub 仓库 ↗</a>
+      <a href="https://www.npmjs.com/package/dsh-vision-proxy" rel="noopener">npm 包 ↗</a>
       <a href="https://github.com/dsh-market/dsh-market" rel="noopener">通过 dsh-market 安装 ↗</a>
     </div>
   </section>
@@ -456,8 +460,8 @@ allowBuilds:
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1173</span></h3><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 305</span></h3><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1190</span></h3><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 307</span></h3><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 85</span></h3><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 80</span></h3><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></li>
