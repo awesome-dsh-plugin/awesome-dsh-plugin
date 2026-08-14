@@ -132,6 +132,13 @@
     <summary>HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。</summary>
   </entry>
   <entry>
+    <title>dsh-turn-scrubber</title>
+    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber</id>
+    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>右侧紧凑回合刻度条，悬停显示回合摘要，点击跳转到对应用户回合。</summary>
+  </entry>
+  <entry>
     <title>dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -144,6 +151,13 @@
     <link href="https://github.com/Small-tailqwq/dsh-deep-whale"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</summary>
+  </entry>
+  <entry>
+    <title>dsh-theme-gallery</title>
+    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery</id>
+    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>15 个精选主题家族，浅深配色完整，跟随 DSH 原生浅色/深色/跟随系统模式。</summary>
   </entry>
   <entry>
     <title>dsh-crosstalk</title>
@@ -200,19 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-memory"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</summary>
-  </entry>
-  <entry>
-    <title>dsh-memory-vault</title>
-    <id>https://github.com/flymysql/dsh-memory</id>
-    <link href="https://github.com/flymysql/dsh-memory"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>跨会话记忆库：remember / recall / forget 工具、每轮提示注入与设置页条目浏览。</summary>
-  </entry>
-  <entry>
-    <title>dsh-plugin-asmemory</title>
-    <id>https://github.com/Xplore-LAB/dsh-plugin-asmemory</id>
-    <link href="https://github.com/Xplore-LAB/dsh-plugin-asmemory"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。</summary>
   </entry>
 </feed>

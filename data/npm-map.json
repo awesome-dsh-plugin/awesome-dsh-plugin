@@ -735,6 +735,14 @@
   "npm": "dsh-prompt-stash",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/xingyingyuzhui/dsh-updater-ui": {
   "npm": null,
   "checkedAt": "2026-08-14"

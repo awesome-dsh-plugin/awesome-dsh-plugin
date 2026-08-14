@@ -132,6 +132,13 @@
     <summary>HUD status panel: git status, MCP servers, skills, model and token usage in a floating side panel.</summary>
   </entry>
   <entry>
+    <title>dsh-turn-scrubber</title>
+    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber</id>
+    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Compact right-edge turn rail with hover summaries and click-to-jump navigation.</summary>
+  </entry>
+  <entry>
     <title>dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -144,6 +151,13 @@
     <link href="https://github.com/Small-tailqwq/dsh-deep-whale"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Whale-girl skin series for the DSH Web UI (maid-atelier).</summary>
+  </entry>
+  <entry>
+    <title>dsh-theme-gallery</title>
+    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery</id>
+    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</summary>
   </entry>
   <entry>
     <title>dsh-crosstalk</title>
@@ -200,19 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-memory"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</summary>
-  </entry>
-  <entry>
-    <title>dsh-memory-vault</title>
-    <id>https://github.com/flymysql/dsh-memory</id>
-    <link href="https://github.com/flymysql/dsh-memory"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.</summary>
-  </entry>
-  <entry>
-    <title>dsh-plugin-asmemory</title>
-    <id>https://github.com/Xplore-LAB/dsh-plugin-asmemory</id>
-    <link href="https://github.com/Xplore-LAB/dsh-plugin-asmemory"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.</summary>
   </entry>
 </feed>
