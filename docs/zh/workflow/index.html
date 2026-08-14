@@ -131,6 +131,18 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .mark g{fill:var(--text)}
 .mark .plug-block{fill:var(--accent)}
 
+/* ── market strip ── */
+.market{border-block-end:1px solid var(--text);background:var(--accent-tint)}
+.market .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:center;padding-block:.7rem}
+.market .lead{font-size:.9rem;color:var(--text-2)}
+.market .lead b{color:var(--accent-strong)}
+.market .cart{flex:none;font-size:1rem}
+.market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
+  border:1px solid var(--text-3);padding:.3rem .6rem;white-space:nowrap}
+.market .copy{margin:0}
+.market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
+@media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
+
 /* ── sticky finder ── */
 .finder{position:sticky;top:0;z-index:5;background:color-mix(in oklch, var(--canvas-0) 92%, transparent);
   backdrop-filter:blur(8px);border-block-end:1px solid var(--text)}
@@ -139,8 +151,7 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .finder input{flex:1;background:none;border:none;outline:none;color:var(--text);font:inherit;font-size:1rem;caret-color:var(--accent);min-width:0}
 .finder input::placeholder{color:var(--text-3)}
 .finder .count{font-family:var(--mono);font-size:.74rem;color:var(--text-3);white-space:nowrap;font-variant-numeric:tabular-nums}
-.filters{display:flex;gap:.45rem;overflow-x:auto;padding-block:0 .75rem;scrollbar-width:none}
-.filters::-webkit-scrollbar{display:none}
+.filters{display:flex;flex-wrap:wrap;gap:.45rem;padding-block:0 .75rem}
 .chip{font-family:var(--mono);font-size:.72rem;color:var(--text-2);background:none;white-space:nowrap;
   border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer}
 .chip small{color:var(--text-3);font-size:.66rem}
@@ -181,7 +192,10 @@ li.item:hover .no{transform:translateX(5px)}
 .dex h3{font-weight:700;font-size:1.12rem;letter-spacing:-.005em;line-height:1.35;text-wrap:balance}
 .dex h3 a{color:var(--text)}
 .dex h3 a:hover{color:var(--accent-strong);text-decoration:none}
-.dex h3 .stars{font-family:var(--mono);font-weight:400;font-size:.72rem;color:var(--text-3);margin-left:.55em;vertical-align:.1em}
+.dex h3 .stars{font-family:var(--mono);font-weight:400;font-size:.74rem;color:var(--text-2);margin-left:.55em;vertical-align:.1em}
+.dex h3 .stars::first-letter{color:var(--accent)}
+.dex h3 .ext{font-size:.78rem;color:var(--text-3);margin-left:.45em;vertical-align:.05em}
+.dex h3 .ext:hover{color:var(--accent-strong)}
 .by{font-family:var(--mono);font-size:.7rem;color:var(--text-3);margin-left:.5rem;font-weight:400}
 .dex p{margin-top:.25rem;color:var(--text-2);font-size:.92rem;max-width:46rem;overflow-wrap:break-word}
 .copy{align-self:start;margin-top:.3rem;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
@@ -276,6 +290,16 @@ footer{padding-block:0 3rem}
   </div>
 </header>
 
+<div class="market">
+  <div class="wrap">
+    <span class="cart" aria-hidden="true">🛒</span>
+    <span class="lead"><b>dsh-market</b> —— 在 DeepSeek Harness 里直接逛并安装本列表全部插件</span>
+    <code translate="no">dsh plugin --profile web add dshmarket</code>
+    <button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="复制安装命令">复制安装命令</button>
+    <a class="about" href="https://github.com/dsh-market/dsh-market" rel="noopener">了解 dsh-market ↗</a>
+  </div>
+</div>
+
 <div class="finder">
   <div class="wrap">
     <div class="row1">
@@ -285,11 +309,11 @@ footer{padding-block:0 3rem}
       <span class="count" id="count" aria-live="polite">0 / 0</span>
     </div>
     <div class="filters" id="filters">
-      <a class="chip" href="/zh/">全部 <small>281</small></a>
+      <a class="chip" href="/zh/">全部 <small>282</small></a>
       <a class="chip" href="/zh/ui/">UI 增强 <small>61</small></a>
       <a class="chip" href="/zh/theme/">主题与外观 <small>3</small></a>
       <a class="chip" href="/zh/session/">会话与消息 <small>19</small></a>
-      <a class="chip" href="/zh/memory/">记忆 <small>15</small></a>
+      <a class="chip" href="/zh/memory/">记忆 <small>16</small></a>
       <a class="chip" href="/zh/tools/">工具与能力 <small>76</small></a>
       <a class="chip" href="/zh/skill/">技能包 <small>2</small></a>
       <a class="chip active" href="/zh/workflow/">工作流与自动化 <small>20</small></a>
@@ -309,7 +333,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.02s">
       <span class="no" aria-hidden="true">№ 01</span>
       <div>
-        <h3><a href="https://github.com/icetomoyo/dsh_workflow" rel="noopener" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 52</span></h3>
+        <h3><a href="/zh/p/icetomoyo/dsh_workflow/" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 52</span><a class="ext" href="https://github.com/icetomoyo/dsh_workflow" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:icetomoyo/dsh_workflow" aria-label="复制安装命令">复制安装命令</button>
@@ -318,7 +342,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.04s">
       <span class="no" aria-hidden="true">№ 02</span>
       <div>
-        <h3><a href="https://github.com/NanmiCoder/dsh-agent-teams" rel="noopener" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 198</span></h3>
+        <h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 198</span><a class="ext" href="https://github.com/NanmiCoder/dsh-agent-teams" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>AgentTeams 多智能体团队。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams" aria-label="复制安装命令">复制安装命令</button>
@@ -327,7 +351,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.06s">
       <span class="no" aria-hidden="true">№ 03</span>
       <div>
-        <h3><a href="https://github.com/titanwings/dsh-automation" rel="noopener" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 23</span></h3>
+        <h3><a href="/zh/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 23</span><a class="ext" href="https://github.com/titanwings/dsh-automation" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:titanwings/dsh-automation" aria-label="复制安装命令">复制安装命令</button>
@@ -336,7 +360,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.08s">
       <span class="no" aria-hidden="true">№ 04</span>
       <div>
-        <h3><a href="https://github.com/Sev7een/dsh-plugin-automations" rel="noopener" translate="no">Sev7een/dsh-plugin-automations</a><span class="stars" translate="no">★ 1</span></h3>
+        <h3><a href="/zh/p/Sev7een/dsh-plugin-automations/" translate="no">Sev7een/dsh-plugin-automations</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/Sev7een/dsh-plugin-automations" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>设置页定时任务：支持准点或 DeepSeek 谷时段执行、单次/每日重复，并持久化任务状态。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Sev7een/dsh-plugin-automations" aria-label="复制安装命令">复制安装命令</button>
@@ -345,7 +369,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.10s">
       <span class="no" aria-hidden="true">№ 05</span>
       <div>
-        <h3><a href="https://github.com/Jesse-njx/dsh-routines" rel="noopener" translate="no">Jesse-njx/dsh-routines</a><span class="stars" translate="no">★ 1</span></h3>
+        <h3><a href="/zh/p/Jesse-njx/dsh-routines/" translate="no">Jesse-njx/dsh-routines</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/Jesse-njx/dsh-routines" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-routines" aria-label="复制安装命令">复制安装命令</button>
@@ -354,7 +378,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.12s">
       <span class="no" aria-hidden="true">№ 06</span>
       <div>
-        <h3><a href="https://github.com/titanwings/dsh-plannotator" rel="noopener" translate="no">titanwings/dsh-plannotator</a><span class="stars" translate="no">★ 3</span></h3>
+        <h3><a href="/zh/p/titanwings/dsh-plannotator/" translate="no">titanwings/dsh-plannotator</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/titanwings/dsh-plannotator" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:titanwings/dsh-plannotator" aria-label="复制安装命令">复制安装命令</button>
@@ -363,7 +387,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.14s">
       <span class="no" aria-hidden="true">№ 07</span>
       <div>
-        <h3><a href="https://github.com/vlln/dsh-loop" rel="noopener" translate="no">vlln/dsh-loop</a><span class="stars" translate="no">★ 3</span></h3>
+        <h3><a href="/zh/p/vlln/dsh-loop/" translate="no">vlln/dsh-loop</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/vlln/dsh-loop" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>定时循环：`/loop` 命令 + loop 工具 + 活动状态条。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vlln/dsh-loop" aria-label="复制安装命令">复制安装命令</button>
@@ -372,7 +396,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.16s">
       <span class="no" aria-hidden="true">№ 08</span>
       <div>
-        <h3><a href="https://github.com/fuhefei/dsh-sentinel" rel="noopener" translate="no">fuhefei/dsh-sentinel</a><span class="stars" translate="no">★ 4</span></h3>
+        <h3><a href="/zh/p/fuhefei/dsh-sentinel/" translate="no">fuhefei/dsh-sentinel</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/fuhefei/dsh-sentinel" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:fuhefei/dsh-sentinel" aria-label="复制安装命令">复制安装命令</button>
@@ -381,7 +405,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.18s">
       <span class="no" aria-hidden="true">№ 09</span>
       <div>
-        <h3><a href="https://github.com/omdsh-dev/dsh-deep-research" rel="noopener" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 7</span></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 7</span><a class="ext" href="https://github.com/omdsh-dev/dsh-deep-research" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>自适应深度研究编排器（基于官方 workflow 引擎）。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-deep-research" aria-label="复制安装命令">复制安装命令</button>
@@ -390,7 +414,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.20s">
       <span class="no" aria-hidden="true">№ 10</span>
       <div>
-        <h3><a href="https://github.com/omdsh-dev/dsh-inspect" rel="noopener" translate="no">omdsh-dev/dsh-inspect</a><span class="stars" translate="no">★ 2</span></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-inspect/" translate="no">omdsh-dev/dsh-inspect</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-inspect" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>发现问题→修复交付→质量复查的对抗式闭环工具集。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-inspect" aria-label="复制安装命令">复制安装命令</button>
@@ -399,7 +423,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.22s">
       <span class="no" aria-hidden="true">№ 11</span>
       <div>
-        <h3><a href="https://github.com/fakechris/dsh-track" rel="noopener" translate="no">fakechris/dsh-track</a><span class="stars" translate="no">★ 3</span></h3>
+        <h3><a href="/zh/p/fakechris/dsh-track/" translate="no">fakechris/dsh-track</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/fakechris/dsh-track" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:fakechris/dsh-track" aria-label="复制安装命令">复制安装命令</button>
@@ -408,7 +432,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.24s">
       <span class="no" aria-hidden="true">№ 12</span>
       <div>
-        <h3><a href="https://github.com/btspoony/dsh-advisor" rel="noopener" translate="no">btspoony/dsh-advisor</a><span class="stars" translate="no">★ 4</span></h3>
+        <h3><a href="/zh/p/btspoony/dsh-advisor/" translate="no">btspoony/dsh-advisor</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/btspoony/dsh-advisor" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>搭配一个副模型，每轮被动审查并注入见解。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:btspoony/dsh-advisor" aria-label="复制安装命令">复制安装命令</button>
@@ -417,7 +441,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.26s">
       <span class="no" aria-hidden="true">№ 13</span>
       <div>
-        <h3><a href="https://github.com/lonelymoon87/dsh-specflow" rel="noopener" translate="no">lonelymoon87/dsh-specflow</a><span class="stars" translate="no">★ 0</span></h3>
+        <h3><a href="/zh/p/lonelymoon87/dsh-specflow/" translate="no">lonelymoon87/dsh-specflow</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/lonelymoon87/dsh-specflow" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-specflow" aria-label="复制安装命令">复制安装命令</button>
@@ -426,7 +450,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.28s">
       <span class="no" aria-hidden="true">№ 14</span>
       <div>
-        <h3><a href="https://github.com/biociao/dsh-science" rel="noopener" translate="no">biociao/dsh-science</a><span class="stars" translate="no">★ 4</span></h3>
+        <h3><a href="/zh/p/biociao/dsh-science/" translate="no">biociao/dsh-science</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/biociao/dsh-science" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:biociao/dsh-science" aria-label="复制安装命令">复制安装命令</button>
@@ -435,7 +459,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.30s">
       <span class="no" aria-hidden="true">№ 15</span>
       <div>
-        <h3><a href="https://github.com/EvilIrving/dsh-proof" rel="noopener" translate="no">EvilIrving/dsh-proof</a><span class="stars" translate="no">★ 1</span></h3>
+        <h3><a href="/zh/p/EvilIrving/dsh-proof/" translate="no">EvilIrving/dsh-proof</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/EvilIrving/dsh-proof" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>独立只读验收层：顶层 turn 收尾前 spawn 只读 verifier，未通过时把缺口注回主 agent。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:EvilIrving/dsh-proof" aria-label="复制安装命令">复制安装命令</button>
@@ -444,7 +468,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.32s">
       <span class="no" aria-hidden="true">№ 16</span>
       <div>
-        <h3><a href="https://github.com/PerryLink/dsh-doublecheck" rel="noopener" translate="no">PerryLink/dsh-doublecheck</a><span class="stars" translate="no">★ 1</span></h3>
+        <h3><a href="/zh/p/PerryLink/dsh-doublecheck/" translate="no">PerryLink/dsh-doublecheck</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/PerryLink/dsh-doublecheck" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审（grill-requirements 技能 + 工具策略门）。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:PerryLink/dsh-doublecheck" aria-label="复制安装命令">复制安装命令</button>
@@ -453,7 +477,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.34s">
       <span class="no" aria-hidden="true">№ 17</span>
       <div>
-        <h3><a href="https://github.com/btspoony/mstar-harness" rel="noopener" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 41</span></h3>
+        <h3><a href="/zh/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 41</span><a class="ext" href="https://github.com/btspoony/mstar-harness" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>技能驱动的 harness/loop 工程化工作流插件。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:btspoony/mstar-harness" aria-label="复制安装命令">复制安装命令</button>
@@ -462,25 +486,25 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="workflow" style="animation-delay:0.36s">
       <span class="no" aria-hidden="true">№ 18</span>
       <div>
-        <h3><a href="https://github.com/Letter2025/dsh-approval-llm" rel="noopener" translate="no">Letter2025/dsh-approval-llm</a><span class="stars" translate="no">★ 1</span></h3>
+        <h3><a href="/zh/p/Letter2025/dsh-approval-llm/" translate="no">Letter2025/dsh-approval-llm</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/Letter2025/dsh-approval-llm" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>基于模型的权限审批：由独立审查模型自动应答 approval 权限请求。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Letter2025/dsh-approval-llm" aria-label="复制安装命令">复制安装命令</button>
+      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-approval-llm" aria-label="复制安装命令">复制安装命令</button>
     </li>
 
     <li class="item" data-cat="workflow" style="animation-delay:0.38s">
       <span class="no" aria-hidden="true">№ 19</span>
       <div>
-        <h3><a href="https://github.com/Letter2025/dsh-model-failover" rel="noopener" translate="no">Letter2025/dsh-model-failover</a><span class="stars" translate="no">★ 0</span></h3>
+        <h3><a href="/zh/p/Letter2025/dsh-model-failover/" translate="no">Letter2025/dsh-model-failover</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/Letter2025/dsh-model-failover" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>两级模型熔断与回退：模型或平台连续失败后自动熔断，并把下一个请求路由到配置好的备用模型。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Letter2025/dsh-model-failover" aria-label="复制安装命令">复制安装命令</button>
+      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-model-failover" aria-label="复制安装命令">复制安装命令</button>
     </li>
 
     <li class="item" data-cat="workflow" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 20</span>
       <div>
-        <h3><a href="https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board" rel="noopener" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a></h3>
+        <h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><a class="ext" href="https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-team-board" aria-label="复制安装命令">复制安装命令</button>
@@ -568,7 +592,7 @@ document.getElementById('clearFilter').addEventListener('click', () => {
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
   applyFilter();
 });
-document.getElementById('dex').addEventListener('click', async (e) => {
+document.addEventListener('click', async (e) => {
   const btn = e.target.closest('.copy');
   if (!btn) return;
   try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}

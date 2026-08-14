@@ -1,0 +1,206 @@
+<!doctype html>
+<!-- Plugin detail page template. Design tokens are copied from template.html — keep the :root blocks in sync when the theme changes. -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>omdsh-dev/dsh-kb-sieve — 工具与能力 · DeepSeek Harness 插件</title>
+<meta name="description" content="从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。">
+<link rel="canonical" href="https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-kb-sieve/">
+<link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-kb-sieve/">
+<link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-kb-sieve/">
+<link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-kb-sieve/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="omdsh-dev/dsh-kb-sieve — 工具与能力 · DeepSeek Harness 插件">
+<meta property="og:description" content="从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。">
+<meta property="og:url" content="https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-kb-sieve/">
+<meta property="og:image" content="https://awesome-dsh-plugin.com/og-zh.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"omdsh-dev/dsh-kb-sieve","url":"https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-kb-sieve/","description":"从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/omdsh-dev/dsh-kb-sieve"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"全部插件","item":"https://awesome-dsh-plugin.com/zh/"},{"@type":"ListItem","position":2,"name":"工具与能力","item":"https://awesome-dsh-plugin.com/zh/tools/"},{"@type":"ListItem","position":3,"name":"omdsh-dev/dsh-kb-sieve","item":"https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-kb-sieve/"}]}]</script>
+<style>
+:root{
+  --canvas-0: oklch(96.5% .008 85);
+  --canvas-1: oklch(94% .010 85);
+  --canvas-2: oklch(91% .012 85);
+  --line:     oklch(84% .010 85);
+  --grid:     oklch(90% .010 85);
+  --text:   oklch(23% .015 70);
+  --text-2: oklch(42% .015 70);
+  --text-3: oklch(50% .015 70);
+  --accent:        oklch(52% .190 30);
+  --accent-strong: oklch(44% .200 30);
+  --accent-tint:   color-mix(in oklch, oklch(52% .190 30) 22%, transparent);
+  --on-accent: oklch(96.5% .008 85);
+  --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
+  --body: "Archivo", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --canvas-0: oklch(19% .012 70);
+    --canvas-1: oklch(22% .013 70);
+    --canvas-2: oklch(16% .012 70);
+    --line:     oklch(33% .012 70);
+    --grid:     oklch(23.5% .012 70);
+    --text:   oklch(92% .010 85);
+    --text-2: oklch(70% .012 80);
+    --text-3: oklch(62% .012 80);
+    --accent:        oklch(66% .160 33);
+    --accent-strong: oklch(74% .165 38);
+    --accent-tint:   color-mix(in oklch, oklch(66% .160 33) 26%, transparent);
+    --on-accent: oklch(15% .012 70);
+  }
+}
+*{box-sizing:border-box;margin:0}
+::selection{background:var(--accent-tint);color:var(--text)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+body{font-family:var(--body);color:var(--text);background:var(--canvas-0);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;touch-action:manipulation}
+a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--accent-strong)}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit}
+.wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
+
+header{
+  border-block-end:2px solid var(--text);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size:26px 26px;
+}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  padding-block:.7rem;border-block-end:1px solid var(--text)}
+.brand{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:var(--text-3)}
+.brand a{color:inherit}
+.nav{display:flex;gap:1.4rem;align-items:center;font-size:.85rem}
+.lang-btn{color:var(--text-2);font-family:var(--mono);text-decoration:none}
+.crumbs{display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:center;
+  font-family:var(--mono);font-size:.74rem;color:var(--text-3);padding-block:.85rem}
+.crumbs .sep{color:var(--line)}
+
+.plate{padding-block:clamp(1.8rem,5vh,3rem)}
+.plate .kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
+.plate h1{font-weight:900;font-size:clamp(1.5rem,4vw,2.5rem);line-height:1.1;letter-spacing:-.02em;margin-top:.35rem;text-wrap:balance;overflow-wrap:anywhere}
+.plate h1 .owner{color:var(--text-3);font-weight:700}
+.plate h1 .name{color:var(--accent)}
+.specrow{display:flex;flex-wrap:wrap;gap:.5rem 2.2rem;font-family:var(--mono);font-size:.74rem;color:var(--text-3);
+  border-block-start:1px solid var(--text);padding-block:.65rem;margin-top:1.2rem}
+.specrow b{color:var(--text-2);font-weight:400}
+.specrow a{color:var(--accent)}
+
+main{padding-block:clamp(1.8rem,5vh,3rem)}
+.desc{font-size:clamp(1rem,1.8vw,1.12rem);color:var(--text-2);max-width:46rem;text-wrap:pretty}
+
+.panel{margin-block:clamp(1.8rem,5vh,2.8rem) 0}
+.panel h2{font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:-.01em;
+  border:2px solid var(--text);padding:.45rem .8rem;margin-bottom:1rem;display:flex;align-items:center;gap:.7rem}
+.panel h2::before{content:attr(data-k);font-family:var(--mono);font-size:.9rem;font-weight:700;
+  color:var(--on-accent);background:var(--accent);width:1.6rem;height:1.6rem;display:grid;place-items:center;flex:none}
+.cmd{display:flex;align-items:stretch;gap:0;border:1px solid var(--text-3);background:var(--canvas-1)}
+.cmd pre{font-family:var(--mono);font-size:.85rem;line-height:1.9;color:var(--text);padding:.7rem 1.1rem;overflow-x:auto;flex:1;margin:0}
+.cmd button{font-family:var(--mono);font-size:.7rem;color:var(--text-3);background:none;border:none;border-left:1px solid var(--text-3);padding:0 1rem;cursor:pointer;white-space:nowrap}
+.cmd button:hover,.cmd button.done{color:var(--on-accent);background:var(--accent)}
+.panel .note{margin-top:.7rem;font-size:.82rem;color:var(--text-3);max-width:46rem;text-wrap:pretty}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.links a{font-family:var(--mono);font-size:.78rem;border:1px solid var(--text-3);padding:.45rem .9rem;color:var(--text-2)}
+.links a:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent);text-decoration:none}
+
+ul.rel{list-style:none;padding:0}
+ul.rel li{border-bottom:1px solid var(--line);padding-block:.7rem}
+ul.rel h3{font-weight:700;font-size:.98rem}
+ul.rel h3 a{color:var(--text)}
+ul.rel h3 a:hover{color:var(--accent-strong);text-decoration:none}
+ul.rel h3 .stars{font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--text-3);margin-left:.55em}
+ul.rel p{color:var(--text-2);font-size:.85rem;max-width:46rem;margin-top:.1rem;
+  display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.morelink{display:inline-block;margin-top:.9rem;font-family:var(--mono);font-size:.78rem}
+
+footer{padding-block:2rem 3rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3.5rem)}
+.legal{font-size:.75rem;color:var(--text-3);max-width:56rem;text-wrap:pretty}
+.legal a{color:var(--text-2)}
+@media (max-width:640px){
+  .cmd{flex-direction:column}
+  .cmd button{border-left:none;border-top:1px solid var(--text-3);padding:.5rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="topline">
+      <span class="brand" translate="no"><a href="/zh/">awesome-dsh-plugin.com</a></span>
+      <nav class="nav" aria-label="site">
+        <a class="lang-btn" href="/p/omdsh-dev/dsh-kb-sieve/" hreflang="en" rel="alternate">EN</a>
+        <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+    <nav class="crumbs" aria-label="breadcrumb">
+      <a href="/zh/">全部插件</a>
+      <span class="sep">/</span>
+      <a href="/zh/tools/">工具与能力</a>
+      <span class="sep">/</span>
+      <span translate="no">dsh-kb-sieve</span>
+    </nav>
+    <div class="plate">
+      <p class="kicker">DeepSeek Harness 插件</p>
+      <h1 translate="no"><span class="owner">omdsh-dev/</span><wbr><span class="name">dsh-kb-sieve</span></h1>
+      <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
+        <span>分类 <a href="/zh/tools/">工具与能力</a></span>
+        <span>收录于 <b>2026-08-13</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="desc">从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。</p>
+
+  <section class="panel">
+    <h2 data-k="A">安装</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/dsh-kb-sieve</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-kb-sieve" aria-label="复制安装命令">复制安装命令</button></div>
+    <p class="note">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel">
+    <h2 data-k="B">链接</h2>
+    <div class="links">
+      <a href="https://github.com/omdsh-dev/dsh-kb-sieve" rel="noopener">GitHub 仓库 ↗</a>
+      <a href="https://github.com/dsh-market/dsh-market" rel="noopener">🛒 通过 dsh-market 安装</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 data-k="C">同类插件</h2>
+    <ul class="rel">
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1037</span></h3><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 283</span></h3><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></li>
+      <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></li>
+      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 78</span></h3><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></li>
+      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 68</span></h3><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></li>
+      <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 65</span></h3><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></li>
+    </ul>
+    <a class="morelink" href="/zh/tools/">查看整个分类 →</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p class="legal">插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。</p>
+  <p class="legal" style="margin-top:.6rem">© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · 与 DeepSeek 无隶属关系</p>
+</footer>
+
+<script>
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('.cmd button');
+  if (!btn) return;
+  try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
+  btn.classList.add('done');
+  const old = btn.textContent;
+  btn.textContent = '✓';
+  setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
+});
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

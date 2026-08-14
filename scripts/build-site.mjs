@@ -64,6 +64,19 @@ for (const e of ordered) if (!dates[e.url]) dates[e.url] = today0
 fs.writeFileSync(DATES_FILE, JSON.stringify(Object.fromEntries(Object.entries(dates).sort()), null, 1))
 for (const e of ordered) e.added = dates[e.url]
 
+// derive repo/subdir install specs and the detail-page slug once
+for (const e of ordered) {
+  const repoPath = e.url.replace('https://github.com/', '')
+  e.repo = repoPath.split('/').slice(0, 2).join('/')
+  e.sub = repoPath.includes('/tree/') ? repoPath.split('/tree/')[1].replace(/^[^/]+\//, '') : null
+  e.cmdGit = e.sub
+    ? `dsh plugin --profile web add github:${e.repo}#path:/${e.sub}`
+    : `dsh plugin --profile web add github:${e.repo}`
+  e.npm = npmMap[e.url]?.npm ?? null
+  e.stars = starsMap[e.url]?.stars ?? null
+  e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
+}
+
 const hreflangs = [
   ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}">`),
   `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}">`,
@@ -87,16 +100,11 @@ function buildRows(loc, only) {
     const items = group.map((e) => {
       idx++
       const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
-      const repoPath = e.url.replace('https://github.com/', '')
-      const repo = repoPath.split('/').slice(0, 2).join('/')
-      const sub = repoPath.includes('/tree/') ? repoPath.split('/tree/')[1].replace(/^[^/]+\//, '') : null
-      const cmd = sub
-        ? `dsh plugin --profile web add github:${repo}#path:/${sub}`
-        : `dsh plugin --profile web add github:${repo}`
+      const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
       return `    <li class="item" data-cat="${e.cat}" style="animation-delay:${delay}s">
       <span class="no" aria-hidden="true">№ ${String(idx).padStart(2, '0')}</span>
       <div>
-        <h3><a href="${e.url}" rel="noopener" translate="no">${esc(e.name)}</a>${starsMap[e.url]?.stars != null ? `<span class="stars" translate="no">★ ${starsMap[e.url].stars}</span>` : ''}</h3>
+        <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no">${esc(e.name)}</a>${e.stars != null ? `<span class="stars" translate="no">★ ${e.stars}</span>` : ''}<a class="ext" href="${e.url}" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>${esc(e.descs[loc.code])}</p>
       </div>
       <button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button>
@@ -155,6 +163,8 @@ for (const loc of LOCALES) {
     .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
     .replaceAll('__LOCALE_LINKS__', localeLinks(loc))
     .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
+    .replaceAll('__T_COPY_LABEL2__', loc.COPY_LABEL)
+    .replaceAll('__T_COPY_TEXT2__', loc.COPY_TEXT)
     .replaceAll('__LANG_REDIRECT__', langRedirect(loc))
     .replaceAll('__FEED__', loc.feed)
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
@@ -193,10 +203,101 @@ for (const loc of LOCALES) {
       .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
       .replaceAll('__LOCALE_LINKS__', LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}${id}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
+    .replaceAll('__T_COPY_LABEL2__', loc.COPY_LABEL)
+    .replaceAll('__T_COPY_TEXT2__', loc.COPY_TEXT)
       .replaceAll('__LANG_REDIRECT__', '')
       .replaceAll('__FEED__', loc.feed)
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
+    fs.mkdirSync(outDir, { recursive: true })
+    fs.writeFileSync(`${outDir}/index.html`, page)
+  }
+}
+
+// Plugin detail pages: /p/{owner}/{repo}[--subdir]/ per locale
+const detailMaster = fs.readFileSync('site/detail-template.html', 'utf8')
+for (const loc of LOCALES) {
+  for (const e of ordered) {
+    const url = `${ORIGIN}${loc.urlPath}p/${e.slug}/`
+    const catUrl = `${loc.urlPath}${e.cat}/`
+    const dHreflangs = [
+      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}p/${e.slug}/">`),
+      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/">`,
+    ].join('\n')
+    const desc = e.descs[loc.code]
+    const metaDesc = desc.length > 155 ? desc.slice(0, 152) + '…' : desc
+
+    const short = e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name
+    const h1 = `<span class="owner">${esc(e.owner)}/</span><wbr><span class="name">${esc(short)}</span>`
+
+    const specs = [
+      e.stars != null ? `<span>${loc.strings.P_STARS} <b>★ ${e.stars}</b></span>` : '',
+      `<span>${loc.strings.P_CAT} <a href="${catUrl}">${loc.categories[e.cat]}</a></span>`,
+      `<span>${loc.strings.P_ADDED} <b>${e.added}</b></span>`,
+      e.npm ? `<span>npm <a href="https://www.npmjs.com/package/${e.npm}" rel="noopener" translate="no">${esc(e.npm)}</a></span>` : '',
+    ].filter(Boolean).join('\n        ')
+
+    const cmds = []
+    if (e.npm) cmds.push({ cmd: `dsh plugin --profile web add ${e.npm}`, note: loc.strings.NPM_C })
+    cmds.push({ cmd: e.cmdGit, note: loc.strings.GH_C })
+    const install = cmds.map(({ cmd, note }) => `<p class="note" style="margin:.2rem 0 .45rem"># ${note}</p>
+    <div class="cmd"><pre translate="no">${esc(cmd)}</pre><button type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button></div>`).join('\n    ')
+
+    const links = [
+      `<a href="${e.url}" rel="noopener">${loc.strings.P_GH}</a>`,
+      e.npm ? `<a href="https://www.npmjs.com/package/${e.npm}" rel="noopener">${loc.strings.P_NPM}</a>` : '',
+      `<a href="https://github.com/dsh-market/dsh-market" rel="noopener">🛒 ${loc.strings.P_MARKET}</a>`,
+    ].filter(Boolean).join('\n      ')
+
+    const related = ordered
+      .filter((r) => r.cat === e.cat && r.url !== e.url)
+      .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+      .slice(0, 6)
+      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><p>${esc(r.descs[loc.code])}</p></li>`)
+      .join('\n')
+
+    const jsonldDetail = JSON.stringify([{
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: e.name,
+      url,
+      description: desc,
+      applicationCategory: 'DeveloperApplication',
+      operatingSystem: 'DeepSeek Harness',
+      sameAs: [e.url, e.npm ? `https://www.npmjs.com/package/${e.npm}` : null].filter(Boolean),
+    }, {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: loc.strings.CRUMB_ALL, item: `${ORIGIN}${loc.urlPath}` },
+        { '@type': 'ListItem', position: 2, name: loc.categories[e.cat], item: `${ORIGIN}${catUrl}` },
+        { '@type': 'ListItem', position: 3, name: e.name, item: url },
+      ],
+    }])
+
+    let page = detailMaster
+    page = page
+      .replaceAll('__LANG__', loc.htmlLang)
+      .replaceAll('__TITLE__', esc(loc.P_TITLE.replace('{NAME}', e.name).replace('{CAT}', loc.categories[e.cat])))
+      .replaceAll('__DESC__', esc(metaDesc))
+      .replaceAll('__URL__', url)
+      .replaceAll('__HREFLANGS__', dHreflangs)
+      .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
+      .replaceAll('__JSONLD__', jsonldDetail)
+      .replaceAll('__HOME__', loc.urlPath)
+      .replaceAll('__LOCALE_LINKS__', LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
+      .replaceAll('__CAT_URL__', catUrl)
+      .replaceAll('__CAT_NAME__', loc.categories[e.cat])
+      .replaceAll('__P_SHORT__', esc(short))
+      .replaceAll('__P_H1__', h1)
+      .replaceAll('__P_SPECS__', specs)
+      .replaceAll('__P_DESC__', esc(desc))
+      .replaceAll('__P_INSTALL__', install)
+      .replaceAll('__P_INSTALL_NOTE__', loc.strings.INSTALL_NOTE)
+      .replaceAll('__P_LINKS__', links)
+      .replaceAll('__P_RELATED__', related)
+    for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
+    const outDir = `${loc.out.replace(/index\.html$/, '')}p/${e.slug}`
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
   }
@@ -237,7 +338,6 @@ const registry = {
     // Registry installs beat full-repo GitHub tarballs (smaller, prebuilt, CDN);
     // the probe (scripts/probe-npm.mjs) only maps packages whose repository
     // field points back at the listed repo.
-    const npm = npmMap[e.url]?.npm ?? null
     return {
       // READMEs render "owner/name" for human disambiguation; machine
       // consumers (find-plugin, dsh-market) match on the bare plugin name,
@@ -245,11 +345,12 @@ const registry = {
       name: e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name,
       owner: e.owner,
       url: e.url,
+      page: `${ORIGIN}/p/${e.slug}/`,
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
-      npm,
-      stars: starsMap[e.url]?.stars ?? null,
-      install: `dsh plugin --profile web add ${npm ?? `github:${e.url.replace('https://github.com/', '')}`}`,
+      npm: e.npm,
+      stars: e.stars,
+      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit,
       added: e.added,
     }
   }),
@@ -274,6 +375,12 @@ ${LOCALES.flatMap((l) => CAT_IDS.map((id) => `  <url>
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}${id}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/"/>`].join('\n')}
+  </url>`)).join('\n')}
+${LOCALES.flatMap((l) => ordered.map((e) => `  <url>
+    <loc>${ORIGIN}${l.urlPath}p/${e.slug}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${e.slug}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/"/>`].join('\n')}
   </url>`)).join('\n')}
 </urlset>
 `)

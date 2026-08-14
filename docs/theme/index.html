@@ -131,6 +131,18 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .mark g{fill:var(--text)}
 .mark .plug-block{fill:var(--accent)}
 
+/* ── market strip ── */
+.market{border-block-end:1px solid var(--text);background:var(--accent-tint)}
+.market .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:center;padding-block:.7rem}
+.market .lead{font-size:.9rem;color:var(--text-2)}
+.market .lead b{color:var(--accent-strong)}
+.market .cart{flex:none;font-size:1rem}
+.market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
+  border:1px solid var(--text-3);padding:.3rem .6rem;white-space:nowrap}
+.market .copy{margin:0}
+.market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
+@media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
+
 /* ── sticky finder ── */
 .finder{position:sticky;top:0;z-index:5;background:color-mix(in oklch, var(--canvas-0) 92%, transparent);
   backdrop-filter:blur(8px);border-block-end:1px solid var(--text)}
@@ -139,8 +151,7 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .finder input{flex:1;background:none;border:none;outline:none;color:var(--text);font:inherit;font-size:1rem;caret-color:var(--accent);min-width:0}
 .finder input::placeholder{color:var(--text-3)}
 .finder .count{font-family:var(--mono);font-size:.74rem;color:var(--text-3);white-space:nowrap;font-variant-numeric:tabular-nums}
-.filters{display:flex;gap:.45rem;overflow-x:auto;padding-block:0 .75rem;scrollbar-width:none}
-.filters::-webkit-scrollbar{display:none}
+.filters{display:flex;flex-wrap:wrap;gap:.45rem;padding-block:0 .75rem}
 .chip{font-family:var(--mono);font-size:.72rem;color:var(--text-2);background:none;white-space:nowrap;
   border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer}
 .chip small{color:var(--text-3);font-size:.66rem}
@@ -181,7 +192,10 @@ li.item:hover .no{transform:translateX(5px)}
 .dex h3{font-weight:700;font-size:1.12rem;letter-spacing:-.005em;line-height:1.35;text-wrap:balance}
 .dex h3 a{color:var(--text)}
 .dex h3 a:hover{color:var(--accent-strong);text-decoration:none}
-.dex h3 .stars{font-family:var(--mono);font-weight:400;font-size:.72rem;color:var(--text-3);margin-left:.55em;vertical-align:.1em}
+.dex h3 .stars{font-family:var(--mono);font-weight:400;font-size:.74rem;color:var(--text-2);margin-left:.55em;vertical-align:.1em}
+.dex h3 .stars::first-letter{color:var(--accent)}
+.dex h3 .ext{font-size:.78rem;color:var(--text-3);margin-left:.45em;vertical-align:.05em}
+.dex h3 .ext:hover{color:var(--accent-strong)}
 .by{font-family:var(--mono);font-size:.7rem;color:var(--text-3);margin-left:.5rem;font-weight:400}
 .dex p{margin-top:.25rem;color:var(--text-2);font-size:.92rem;max-width:46rem;overflow-wrap:break-word}
 .copy{align-self:start;margin-top:.3rem;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
@@ -276,6 +290,16 @@ footer{padding-block:0 3rem}
   </div>
 </header>
 
+<div class="market">
+  <div class="wrap">
+    <span class="cart" aria-hidden="true">🛒</span>
+    <span class="lead"><b>dsh-market</b> — browse and install everything on this list inside DeepSeek Harness</span>
+    <code translate="no">dsh plugin --profile web add dshmarket</code>
+    <button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="Copy install command">copy install</button>
+    <a class="about" href="https://github.com/dsh-market/dsh-market" rel="noopener">About dsh-market ↗</a>
+  </div>
+</div>
+
 <div class="finder">
   <div class="wrap">
     <div class="row1">
@@ -285,11 +309,11 @@ footer{padding-block:0 3rem}
       <span class="count" id="count" aria-live="polite">0 / 0</span>
     </div>
     <div class="filters" id="filters">
-      <a class="chip" href="/">All <small>281</small></a>
+      <a class="chip" href="/">All <small>282</small></a>
       <a class="chip" href="/ui/">UI Enhancements <small>61</small></a>
       <a class="chip active" href="/theme/">Themes & Appearance <small>3</small></a>
       <a class="chip" href="/session/">Sessions & Messages <small>19</small></a>
-      <a class="chip" href="/memory/">Memory <small>15</small></a>
+      <a class="chip" href="/memory/">Memory <small>16</small></a>
       <a class="chip" href="/tools/">Tools & Capabilities <small>76</small></a>
       <a class="chip" href="/skill/">Skills <small>2</small></a>
       <a class="chip" href="/workflow/">Workflow & Automation <small>20</small></a>
@@ -309,7 +333,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="theme" style="animation-delay:0.02s">
       <span class="no" aria-hidden="true">№ 01</span>
       <div>
-        <h3><a href="https://github.com/KinGao294/dsh-skin" rel="noopener" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 4</span></h3>
+        <h3><a href="/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/KinGao294/dsh-skin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:KinGao294/dsh-skin" aria-label="Copy install command">copy install</button>
@@ -318,7 +342,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="theme" style="animation-delay:0.04s">
       <span class="no" aria-hidden="true">№ 02</span>
       <div>
-        <h3><a href="https://github.com/Small-tailqwq/dsh-deep-whale" rel="noopener" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 416</span></h3>
+        <h3><a href="/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 416</span><a class="ext" href="https://github.com/Small-tailqwq/dsh-deep-whale" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale" aria-label="Copy install command">copy install</button>
@@ -327,7 +351,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="theme" style="animation-delay:0.06s">
       <span class="no" aria-hidden="true">№ 03</span>
       <div>
-        <h3><a href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery" rel="noopener" translate="no">wsxwj123/dsh-plugins#theme-gallery</a></h3>
+        <h3><a href="/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><a class="ext" href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/theme-gallery" aria-label="Copy install command">copy install</button>
@@ -415,7 +439,7 @@ document.getElementById('clearFilter').addEventListener('click', () => {
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
   applyFilter();
 });
-document.getElementById('dex').addEventListener('click', async (e) => {
+document.addEventListener('click', async (e) => {
   const btn = e.target.closest('.copy');
   if (!btn) return;
   try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}

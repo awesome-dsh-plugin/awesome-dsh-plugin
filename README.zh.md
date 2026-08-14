@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 更喜欢对话式？装 [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme)，想要什么插件直接问 agent（`dsh plugin --profile web add dsh-find-plugin`）。
 
-**281** 个插件 · 欢迎 [PR](#贡献)
+**282** 个插件 · 欢迎 [PR](#贡献)
 
 ## 目录
 
@@ -154,6 +154,7 @@ dsh plugin --profile web add dshmarket
 - [Phant0Meow/dsh-memory-meow](https://github.com/Phant0Meow/dsh-memory-meow) — 项目级跨会话记忆：PROJECT.md 快照注入首条用户消息（缓存友好）+ memory_remember 工具 + ReAct 任务结束自动反思；各项目独立记忆文件，互不互通。
 - [jiayan-xu/dsh-memoria](https://github.com/jiayan-xu/dsh-memoria) — 向量+图记忆后端：observe/remember/search/recall 四个工具对接本地 memoria 服务，HNSW 语义召回 + FTS5 关键词 + 知识图谱信号经 RRF 融合排序，回合结束自动写入，按 Agent 命名空间隔离。
 - [jinguanghai/deepseek-harness-forge-plugins#forge-memory](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory) — 基于 BM25 关键词检索的记忆召回。
+- [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) — 有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。
 
 
 ### 🛠️ 工具与能力

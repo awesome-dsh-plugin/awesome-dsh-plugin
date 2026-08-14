@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 281,
+ "count": 282,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -55,6 +55,7 @@
    "name": "dsh-plugin-hub",
    "owner": "Noob-stupid",
    "url": "https://github.com/Noob-stupid/dsh-plugin-hub",
+   "page": "https://awesome-dsh-plugin.com/p/Noob-stupid/dsh-plugin-hub/",
    "category": "ui",
    "description": {
     "en": "A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.",
@@ -69,6 +70,7 @@
    "name": "dsh-web-default-session",
    "owner": "wjy9902",
    "url": "https://github.com/wjy9902/dsh-web-default-session",
+   "page": "https://awesome-dsh-plugin.com/p/wjy9902/dsh-web-default-session/",
    "category": "ui",
    "description": {
     "en": "The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.",
@@ -83,6 +85,7 @@
    "name": "dsh-tianshu-tui",
    "owner": "huiliyi37",
    "url": "https://github.com/huiliyi37/dsh-tianshu-tui",
+   "page": "https://awesome-dsh-plugin.com/p/huiliyi37/dsh-tianshu-tui/",
    "category": "ui",
    "description": {
     "en": "A terminal UI (TUI) for DeepSeek Harness.",
@@ -97,6 +100,7 @@
    "name": "deepseek-harness-tui",
    "owner": "openma-ai",
    "url": "https://github.com/openma-ai/deepseek-harness-tui",
+   "page": "https://awesome-dsh-plugin.com/p/openma-ai/deepseek-harness-tui/",
    "category": "ui",
    "description": {
     "en": "A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.",
@@ -111,6 +115,7 @@
    "name": "dsh-at-file",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-at-file",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-at-file/",
    "category": "ui",
    "description": {
     "en": "Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.",
@@ -125,6 +130,7 @@
    "name": "ui-status-label",
    "owner": "alingalingling",
    "url": "https://github.com/alingalingling/ui-status-label",
+   "page": "https://awesome-dsh-plugin.com/p/alingalingling/ui-status-label/",
    "category": "ui",
    "description": {
     "en": "Customize the \"deep diving\" thinking status label to anything you like.",
@@ -139,6 +145,7 @@
    "name": "dsh-whale-animation",
    "owner": "LeemanCheung",
    "url": "https://github.com/LeemanCheung/dsh-whale-animation",
+   "page": "https://awesome-dsh-plugin.com/p/LeemanCheung/dsh-whale-animation/",
    "category": "ui",
    "description": {
     "en": "Persistent black whale-dive animation beside the DSH Web turn status, with a reduced-motion fallback and a seamless closed loop.",
@@ -153,6 +160,7 @@
    "name": "dsh-openpencil",
    "owner": "ZSeven-W",
    "url": "https://github.com/ZSeven-W/dsh-openpencil",
+   "page": "https://awesome-dsh-plugin.com/p/ZSeven-W/dsh-openpencil/",
    "category": "ui",
    "description": {
     "en": "OpenPencil design preview and editing plugin.",
@@ -167,6 +175,7 @@
    "name": "dsh-visualize",
    "owner": "Nagi-ovo",
    "url": "https://github.com/Nagi-ovo/dsh-visualize",
+   "page": "https://awesome-dsh-plugin.com/p/Nagi-ovo/dsh-visualize/",
    "category": "ui",
    "description": {
     "en": "In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.",
@@ -181,6 +190,7 @@
    "name": "dsh-side-panel",
    "owner": "ccq1",
    "url": "https://github.com/ccq1/dsh-side-panel",
+   "page": "https://awesome-dsh-plugin.com/p/ccq1/dsh-side-panel/",
    "category": "ui",
    "description": {
     "en": "Side panel with file browser, terminal, and Git review for quick file previews.",
@@ -195,6 +205,7 @@
    "name": "dsh-focus-chat",
    "owner": "dingyi222666",
    "url": "https://github.com/dingyi222666/dsh-focus-chat",
+   "page": "https://awesome-dsh-plugin.com/p/dingyi222666/dsh-focus-chat/",
    "category": "ui",
    "description": {
     "en": "A \"focus chat\" minimal view that shows only final outputs.",
@@ -209,6 +220,7 @@
    "name": "dsh-genui",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-genui",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-genui/",
    "category": "ui",
    "description": {
     "en": "Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.",
@@ -223,6 +235,7 @@
    "name": "dsh-annotation",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-annotation",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-annotation/",
    "category": "ui",
    "description": {
     "en": "Select text → annotate → send with your message; replies map back to each annotation.",
@@ -237,6 +250,7 @@
    "name": "dsh-navbar",
    "owner": "vlln",
    "url": "https://github.com/vlln/dsh-navbar",
+   "page": "https://awesome-dsh-plugin.com/p/vlln/dsh-navbar/",
    "category": "ui",
    "description": {
     "en": "Conversation node navigation bar for quick jumps between user messages.",
@@ -251,6 +265,7 @@
    "name": "dsh-message-preview",
    "owner": "asukasec",
    "url": "https://github.com/asukasec/dsh-message-preview",
+   "page": "https://awesome-dsh-plugin.com/p/asukasec/dsh-message-preview/",
    "category": "ui",
    "description": {
     "en": "Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.",
@@ -265,6 +280,7 @@
    "name": "dsh-task-status",
    "owner": "vlln",
    "url": "https://github.com/vlln/dsh-task-status",
+   "page": "https://awesome-dsh-plugin.com/p/vlln/dsh-task-status/",
    "category": "ui",
    "description": {
     "en": "Background task status bar: progress plus live output tail on the chat page.",
@@ -279,6 +295,7 @@
    "name": "dsh-answer-pet",
    "owner": "Nanki-nn",
    "url": "https://github.com/Nanki-nn/dsh-answer-pet",
+   "page": "https://awesome-dsh-plugin.com/p/Nanki-nn/dsh-answer-pet/",
    "category": "ui",
    "description": {
     "en": "Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.",
@@ -293,6 +310,7 @@
    "name": "dsh-web-archive",
    "owner": "renat3u",
    "url": "https://github.com/renat3u/dsh-web-archive",
+   "page": "https://awesome-dsh-plugin.com/p/renat3u/dsh-web-archive/",
    "category": "ui",
    "description": {
     "en": "Collapse noisy messages (Think, Bash, etc.) in conversations.",
@@ -307,6 +325,7 @@
    "name": "dsh-spotlight",
    "owner": "0xsline",
    "url": "https://github.com/0xsline/dsh-spotlight",
+   "page": "https://awesome-dsh-plugin.com/p/0xsline/dsh-spotlight/",
    "category": "ui",
    "description": {
     "en": "Keyboard-first command palette for the DSH Web UI.",
@@ -321,6 +340,7 @@
    "name": "dsh-101",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-101",
+   "page": "https://awesome-dsh-plugin.com/p/bill9109/dsh-101/",
    "category": "ui",
    "description": {
     "en": "Document reading mode for DSH.",
@@ -335,6 +355,7 @@
    "name": "dsh-drag-and-drop",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-drag-and-drop",
+   "page": "https://awesome-dsh-plugin.com/p/bill9109/dsh-drag-and-drop/",
    "category": "ui",
    "description": {
     "en": "Cross-platform file drag-and-drop with raw path insertion, no file copying.",
@@ -349,6 +370,7 @@
    "name": "dsh-files",
    "owner": "taxueseek",
    "url": "https://github.com/taxueseek/dsh-files",
+   "page": "https://awesome-dsh-plugin.com/p/taxueseek/dsh-files/",
    "category": "ui",
    "description": {
     "en": "File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.",
@@ -363,6 +385,7 @@
    "name": "dsh-file-uploads",
    "owner": "l541402398",
    "url": "https://github.com/l541402398/dsh-file-uploads",
+   "page": "https://awesome-dsh-plugin.com/p/l541402398/dsh-file-uploads/",
    "category": "ui",
    "description": {
     "en": "Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.",
@@ -377,6 +400,7 @@
    "name": "dsh-deeplink",
    "owner": "qyw233",
    "url": "https://github.com/qyw233/dsh-deeplink",
+   "page": "https://awesome-dsh-plugin.com/p/qyw233/dsh-deeplink/",
    "category": "ui",
    "description": {
     "en": "Deep links: open a specific session or workspace via `?session=` / `?workspace=`.",
@@ -391,6 +415,7 @@
    "name": "dsh-diff-viewer",
    "owner": "lehhair",
    "url": "https://github.com/lehhair/dsh-diff-viewer",
+   "page": "https://awesome-dsh-plugin.com/p/lehhair/dsh-diff-viewer/",
    "category": "ui",
    "description": {
     "en": "PiUI-style diff viewer replacing the stock DiffBlock for write/edit tool calls.",
@@ -405,6 +430,7 @@
    "name": "ex-setting",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/ex-setting",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/ex-setting/",
    "category": "ui",
    "description": {
     "en": "Settings extensions for DSH.",
@@ -419,6 +445,7 @@
    "name": "web-components",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/web-components",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/web-components/",
    "category": "ui",
    "description": {
     "en": "Web Components support.",
@@ -433,6 +460,7 @@
    "name": "dsh-turn-navigator",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-turn-navigator",
+   "page": "https://awesome-dsh-plugin.com/p/vibeinging/dsh-turn-navigator/",
    "category": "ui",
    "description": {
     "en": "Turn navigation for the DSH Web UI.",
@@ -447,6 +475,7 @@
    "name": "dsh-milestone",
    "owner": "SnowCrescenter-tech",
    "url": "https://github.com/SnowCrescenter-tech/dsh-milestone",
+   "page": "https://awesome-dsh-plugin.com/p/SnowCrescenter-tech/dsh-milestone/",
    "category": "ui",
    "description": {
     "en": "Right-side dot-timeline rail: jump between user messages.",
@@ -461,6 +490,7 @@
    "name": "dsh-balance-meter",
    "owner": "Ghost011118",
    "url": "https://github.com/Ghost011118/dsh-balance-meter",
+   "page": "https://awesome-dsh-plugin.com/p/Ghost011118/dsh-balance-meter/",
    "category": "ui",
    "description": {
     "en": "DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.",
@@ -475,6 +505,7 @@
    "name": "dsh-opencode-go-usage",
    "owner": "v587d",
    "url": "https://github.com/v587d/dsh-opencode-go-usage",
+   "page": "https://awesome-dsh-plugin.com/p/v587d/dsh-opencode-go-usage/",
    "category": "ui",
    "description": {
     "en": "OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.",
@@ -489,6 +520,7 @@
    "name": "dsh-cost-meter",
    "owner": "Han-1413141",
    "url": "https://github.com/Han-1413141/dsh-cost-meter",
+   "page": "https://awesome-dsh-plugin.com/p/Han-1413141/dsh-cost-meter/",
    "category": "ui",
    "description": {
     "en": "Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.",
@@ -503,6 +535,7 @@
    "name": "dsh-plugin-deepseek-balance",
    "owner": "fishxcode",
    "url": "https://github.com/fishxcode/dsh-plugin-deepseek-balance",
+   "page": "https://awesome-dsh-plugin.com/p/fishxcode/dsh-plugin-deepseek-balance/",
    "category": "ui",
    "description": {
     "en": "DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.",
@@ -517,6 +550,7 @@
    "name": "ds-api-usage",
    "owner": "Sev7een",
    "url": "https://github.com/Sev7een/ds-api-usage",
+   "page": "https://awesome-dsh-plugin.com/p/Sev7een/ds-api-usage/",
    "category": "ui",
    "description": {
     "en": "DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.",
@@ -531,6 +565,7 @@
    "name": "dsh-spend",
    "owner": "nonewind",
    "url": "https://github.com/nonewind/dsh-spend",
+   "page": "https://awesome-dsh-plugin.com/p/nonewind/dsh-spend/",
    "category": "ui",
    "description": {
     "en": "Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.",
@@ -545,6 +580,7 @@
    "name": "dsh-balance-plugin",
    "owner": "stevenx65",
    "url": "https://github.com/stevenx65/dsh-balance-plugin",
+   "page": "https://awesome-dsh-plugin.com/p/stevenx65/dsh-balance-plugin/",
    "category": "ui",
    "description": {
     "en": "DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.",
@@ -559,6 +595,7 @@
    "name": "dsh-TUI",
    "owner": "ccch1mneyyy",
    "url": "https://github.com/ccch1mneyyy/dsh-TUI",
+   "page": "https://awesome-dsh-plugin.com/p/ccch1mneyyy/dsh-TUI/",
    "category": "ui",
    "description": {
     "en": "Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.",
@@ -573,6 +610,7 @@
    "name": "DSH-better-sidebar",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/DSH-better-sidebar",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/DSH-better-sidebar/",
    "category": "ui",
    "description": {
     "en": "Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.",
@@ -587,6 +625,7 @@
    "name": "dsh-workspace-search",
    "owner": "tsonglew",
    "url": "https://github.com/tsonglew/dsh-workspace-search",
+   "page": "https://awesome-dsh-plugin.com/p/tsonglew/dsh-workspace-search/",
    "category": "ui",
    "description": {
     "en": "VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.",
@@ -601,6 +640,7 @@
    "name": "dsh-media-preview",
    "owner": "tsonglew",
    "url": "https://github.com/tsonglew/dsh-media-preview",
+   "page": "https://awesome-dsh-plugin.com/p/tsonglew/dsh-media-preview/",
    "category": "ui",
    "description": {
     "en": "Audio/video FileViewer for dsh-better-sidebar: native inline playback for mp4/webm/mkv/mov and mp3/flac/wav, served by a Range-capable streaming media route.",
@@ -615,6 +655,7 @@
    "name": "dsh-sticky-disclosure",
    "owner": "Han-1413141",
    "url": "https://github.com/Han-1413141/dsh-sticky-disclosure",
+   "page": "https://awesome-dsh-plugin.com/p/Han-1413141/dsh-sticky-disclosure/",
    "category": "ui",
    "description": {
     "en": "One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.",
@@ -629,6 +670,7 @@
    "name": "dsh-sticky-note",
    "owner": "Meredith2328",
    "url": "https://github.com/Meredith2328/dsh-sticky-note",
+   "page": "https://awesome-dsh-plugin.com/p/Meredith2328/dsh-sticky-note/",
    "category": "ui",
    "description": {
     "en": "Quick sticky notes on the composer toolbar: jot ideas or TODOs, auto-saved as Markdown, one click to send into the chat.",
@@ -643,6 +685,7 @@
    "name": "dsh-web-attention-badge",
    "owner": "Luaphes",
    "url": "https://github.com/Luaphes/dsh-web-attention-badge",
+   "page": "https://awesome-dsh-plugin.com/p/Luaphes/dsh-web-attention-badge/",
    "category": "ui",
    "description": {
     "en": "Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.",
@@ -657,6 +700,7 @@
    "name": "dsh-web-ui",
    "owner": "zhu1090093659",
    "url": "https://github.com/zhu1090093659/dsh-web-ui",
+   "page": "https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui/",
    "category": "ui",
    "description": {
     "en": "Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.",
@@ -671,6 +715,7 @@
    "name": "dsh-pet",
    "owner": "zealot00",
    "url": "https://github.com/zealot00/dsh-pet",
+   "page": "https://awesome-dsh-plugin.com/p/zealot00/dsh-pet/",
    "category": "ui",
    "description": {
     "en": "Desktop pet for the DSH Web UI: sprite-sheet animation, agent state linkage, drag, alarm (daily/one-shot) and pomodoro widgets, skin picker with preview.",
@@ -685,6 +730,7 @@
    "name": "dsh-builtin-toggles",
    "owner": "Starfie1d1272",
    "url": "https://github.com/Starfie1d1272/dsh-builtin-toggles",
+   "page": "https://awesome-dsh-plugin.com/p/Starfie1d1272/dsh-builtin-toggles/",
    "category": "ui",
    "description": {
     "en": "Adds a built-in plugin catalog to DSH Web with search, status explanations, and safe toggles for audited UI plugins.",
@@ -699,6 +745,7 @@
    "name": "dsh-ux",
    "owner": "jiangnanquan",
    "url": "https://github.com/jiangnanquan/dsh-ux",
+   "page": "https://awesome-dsh-plugin.com/p/jiangnanquan/dsh-ux/",
    "category": "ui",
    "description": {
     "en": "Solarized light theme, compact layout, think/tool-chain collapse capsules, and balance, session cost, and usage dashboards for the DSH web UI.",
@@ -713,6 +760,7 @@
    "name": "dsh-hud",
    "owner": "a903067276-rgb",
    "url": "https://github.com/a903067276-rgb/dsh-hud",
+   "page": "https://awesome-dsh-plugin.com/p/a903067276-rgb/dsh-hud/",
    "category": "ui",
    "description": {
     "en": "HUD status panel: Git status, MCP servers, skills, model and token usage in a floating side panel.",
@@ -727,6 +775,7 @@
    "name": "dsh-plugins#turn-scrubber",
    "owner": "wsxwj123",
    "url": "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber",
+   "page": "https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-turn-scrubber/",
    "category": "ui",
    "description": {
     "en": "Compact right-edge turn rail with hover summaries and click-to-jump navigation.",
@@ -734,13 +783,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber",
+   "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber",
    "added": "2026-08-14"
   },
   {
    "name": "dsh-cost-meter",
    "owner": "Sttrevens",
    "url": "https://github.com/Sttrevens/dsh-cost-meter",
+   "page": "https://awesome-dsh-plugin.com/p/Sttrevens/dsh-cost-meter/",
    "category": "ui",
    "description": {
     "en": "Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.",
@@ -755,6 +805,7 @@
    "name": "dsh-file-mentions",
    "owner": "a903067276-rgb",
    "url": "https://github.com/a903067276-rgb/dsh-file-mentions",
+   "page": "https://awesome-dsh-plugin.com/p/a903067276-rgb/dsh-file-mentions/",
    "category": "ui",
    "description": {
     "en": "Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.",
@@ -769,6 +820,7 @@
    "name": "dsh-calculator",
    "owner": "bobcat848",
    "url": "https://github.com/bobcat848/dsh-calculator",
+   "page": "https://awesome-dsh-plugin.com/p/bobcat848/dsh-calculator/",
    "category": "ui",
    "description": {
     "en": "DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.",
@@ -783,6 +835,7 @@
    "name": "dsh-deepseek-billing",
    "owner": "Jolly-J",
    "url": "https://github.com/Jolly-J/dsh-deepseek-billing",
+   "page": "https://awesome-dsh-plugin.com/p/Jolly-J/dsh-deepseek-billing/",
    "category": "ui",
    "description": {
     "en": "DeepSeek account balance and per-session cost card in the sidebar foot.",
@@ -797,6 +850,7 @@
    "name": "dsh-drag-and-drop",
    "owner": "AKIRACOD",
    "url": "https://github.com/AKIRACOD/dsh-drag-and-drop",
+   "page": "https://awesome-dsh-plugin.com/p/AKIRACOD/dsh-drag-and-drop/",
    "category": "ui",
    "description": {
     "en": "File-drag fork: drop documents as removable chips above the composer, send without typing.",
@@ -811,6 +865,7 @@
    "name": "dsh-auto-continue",
    "owner": "HsiangNianian",
    "url": "https://github.com/HsiangNianian/dsh-auto-continue",
+   "page": "https://awesome-dsh-plugin.com/p/HsiangNianian/dsh-auto-continue/",
    "category": "ui",
    "description": {
     "en": "Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.",
@@ -825,6 +880,7 @@
    "name": "dsh-chat-outline",
    "owner": "liliuCourier",
    "url": "https://github.com/liliuCourier/dsh-chat-outline",
+   "page": "https://awesome-dsh-plugin.com/p/liliuCourier/dsh-chat-outline/",
    "category": "ui",
    "description": {
     "en": "Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.",
@@ -839,6 +895,7 @@
    "name": "dsh-token-usage",
    "owner": "LaoYueHanNi",
    "url": "https://github.com/LaoYueHanNi/dsh-token-usage",
+   "page": "https://awesome-dsh-plugin.com/p/LaoYueHanNi/dsh-token-usage/",
    "category": "ui",
    "description": {
     "en": "Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.",
@@ -853,6 +910,7 @@
    "name": "dsh-mic-input",
    "owner": "QT-Chen",
    "url": "https://github.com/QT-Chen/dsh-mic-input",
+   "page": "https://awesome-dsh-plugin.com/p/QT-Chen/dsh-mic-input/",
    "category": "ui",
    "description": {
     "en": "Microphone voice input for the composer: browser Web Speech API live transcription, dedupe/auto-continue, smart punctuation, language and auto-send settings.",
@@ -867,6 +925,7 @@
    "name": "dsh-task-dag",
    "owner": "LeemanCheung",
    "url": "https://github.com/LeemanCheung/dsh-task-dag",
+   "page": "https://awesome-dsh-plugin.com/p/LeemanCheung/dsh-task-dag/",
    "category": "ui",
    "description": {
     "en": "Displays a Session's subagents and durable workflow runs as a live DAG with status, navigation, and restart-safe history.",
@@ -881,6 +940,7 @@
    "name": "widget-dock",
    "owner": "MorGogh",
    "url": "https://github.com/MorGogh/widget-dock",
+   "page": "https://awesome-dsh-plugin.com/p/MorGogh/widget-dock/",
    "category": "ui",
    "description": {
     "en": "Draggable workbench of mini-cards (API balance, token usage, session stats, goal, cost) on the blank areas beside the conversation, with size tiers and official DeepSeek pricing.",
@@ -895,6 +955,7 @@
    "name": "dsh-reasoning-slider",
    "owner": "qjcnmd",
    "url": "https://github.com/qjcnmd/dsh-reasoning-slider",
+   "page": "https://awesome-dsh-plugin.com/p/qjcnmd/dsh-reasoning-slider/",
    "category": "ui",
    "description": {
     "en": "Codex-style reasoning-effort slider embedded in the model selector.",
@@ -909,6 +970,7 @@
    "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
+   "page": "https://awesome-dsh-plugin.com/p/KinGao294/dsh-skin/",
    "category": "theme",
    "description": {
     "en": "Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.",
@@ -923,6 +985,7 @@
    "name": "dsh-deep-whale",
    "owner": "Small-tailqwq",
    "url": "https://github.com/Small-tailqwq/dsh-deep-whale",
+   "page": "https://awesome-dsh-plugin.com/p/Small-tailqwq/dsh-deep-whale/",
    "category": "theme",
    "description": {
     "en": "Whale-girl skin series for the DSH Web UI (maid-atelier).",
@@ -937,6 +1000,7 @@
    "name": "dsh-plugins#theme-gallery",
    "owner": "wsxwj123",
    "url": "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery",
+   "page": "https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-theme-gallery/",
    "category": "theme",
    "description": {
     "en": "Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.",
@@ -944,13 +1008,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins/tree/main/packages/theme-gallery",
+   "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/theme-gallery",
    "added": "2026-08-14"
   },
   {
    "name": "dsh-turn-rewind",
    "owner": "Anionex",
    "url": "https://github.com/Anionex/dsh-turn-rewind",
+   "page": "https://awesome-dsh-plugin.com/p/Anionex/dsh-turn-rewind/",
    "category": "session",
    "description": {
     "en": "Rewind conversation and workspace state, powered by a persistent Change Ledger.",
@@ -965,6 +1030,7 @@
    "name": "dsh-crosstalk",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-crosstalk",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-crosstalk/",
    "category": "session",
    "description": {
     "en": "Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.",
@@ -979,6 +1045,7 @@
    "name": "task-passport",
    "owner": "dongsheng123132",
    "url": "https://github.com/dongsheng123132/task-passport",
+   "page": "https://awesome-dsh-plugin.com/p/dongsheng123132/task-passport/",
    "category": "session",
    "description": {
     "en": "Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.",
@@ -993,6 +1060,7 @@
    "name": "dsh-share",
    "owner": "hellodigua",
    "url": "https://github.com/hellodigua/dsh-share",
+   "page": "https://awesome-dsh-plugin.com/p/hellodigua/dsh-share/",
    "category": "session",
    "description": {
     "en": "Share your conversations with one click.",
@@ -1007,6 +1075,7 @@
    "name": "dsh-message-edit",
    "owner": "Moeblack",
    "url": "https://github.com/Moeblack/dsh-message-edit",
+   "page": "https://awesome-dsh-plugin.com/p/Moeblack/dsh-message-edit/",
    "category": "session",
    "description": {
     "en": "Branch-based message editing, reroll, retry, and a version timeline.",
@@ -1021,6 +1090,7 @@
    "name": "dsh-sidechain",
    "owner": "Buyi-wsgzg",
    "url": "https://github.com/Buyi-wsgzg/dsh-sidechain",
+   "page": "https://awesome-dsh-plugin.com/p/Buyi-wsgzg/dsh-sidechain/",
    "category": "session",
    "description": {
     "en": "`/side` persistent side sessions and `/btw` one-shot side questions, run in a temporary fork without touching main history.",
@@ -1035,6 +1105,7 @@
    "name": "dsh-conversation-share",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-conversation-share",
+   "page": "https://awesome-dsh-plugin.com/p/bill9109/dsh-conversation-share/",
    "category": "session",
    "description": {
     "en": "Share any excerpt of a conversation.",
@@ -1049,6 +1120,7 @@
    "name": "dsh-explain",
    "owner": "yuezengwu",
    "url": "https://github.com/yuezengwu/dsh-explain",
+   "page": "https://awesome-dsh-plugin.com/p/yuezengwu/dsh-explain/",
    "category": "session",
    "description": {
     "en": "Local-first learning mode: cross-session learning threads with per-source explanations.",
@@ -1063,6 +1135,7 @@
    "name": "dsh-prompt-studio",
    "owner": "Moeblack",
    "url": "https://github.com/Moeblack/dsh-prompt-studio",
+   "page": "https://awesome-dsh-plugin.com/p/Moeblack/dsh-prompt-studio/",
    "category": "session",
    "description": {
     "en": "Edit user and built-in system-prompt sections with live preview.",
@@ -1077,6 +1150,7 @@
    "name": "dsh-peer-link",
    "owner": "czm15053",
    "url": "https://github.com/czm15053/dsh-peer-link",
+   "page": "https://awesome-dsh-plugin.com/p/czm15053/dsh-peer-link/",
    "category": "session",
    "description": {
     "en": "Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).",
@@ -1091,6 +1165,7 @@
    "name": "dsh-chat-import",
    "owner": "Nwflower",
    "url": "https://github.com/Nwflower/dsh-chat-import",
+   "page": "https://awesome-dsh-plugin.com/p/Nwflower/dsh-chat-import/",
    "category": "session",
    "description": {
     "en": "Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode chat histories as resumable DeepSeek Harness sessions.",
@@ -1105,6 +1180,7 @@
    "name": "dsh-file-claim",
    "owner": "Nwflower",
    "url": "https://github.com/Nwflower/dsh-file-claim",
+   "page": "https://awesome-dsh-plugin.com/p/Nwflower/dsh-file-claim/",
    "category": "session",
    "description": {
     "en": "File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).",
@@ -1119,6 +1195,7 @@
    "name": "dsh-interconnect",
    "owner": "Chinesezjc",
    "url": "https://github.com/Chinesezjc/dsh-interconnect",
+   "page": "https://awesome-dsh-plugin.com/p/Chinesezjc/dsh-interconnect/",
    "category": "session",
    "description": {
     "en": "Cross-instance message and event handoff between DSH instances via an interconnect server.",
@@ -1133,6 +1210,7 @@
    "name": "dsh-inline-images",
    "owner": "3403473060",
    "url": "https://github.com/3403473060/dsh-inline-images",
+   "page": "https://awesome-dsh-plugin.com/p/3403473060/dsh-inline-images/",
    "category": "session",
    "description": {
     "en": "Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).",
@@ -1147,6 +1225,7 @@
    "name": "dsh-prompt-stash",
    "owner": "Wine-Red",
    "url": "https://github.com/Wine-Red/dsh-prompt-stash",
+   "page": "https://awesome-dsh-plugin.com/p/Wine-Red/dsh-prompt-stash/",
    "category": "session",
    "description": {
     "en": "Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.",
@@ -1161,6 +1240,7 @@
    "name": "dsh-side-chat",
    "owner": "heartmove",
    "url": "https://github.com/heartmove/dsh-side-chat",
+   "page": "https://awesome-dsh-plugin.com/p/heartmove/dsh-side-chat/",
    "category": "session",
    "description": {
     "en": "Select part of a conversation and ask about it in a right-side side chat; bring AI replies back to the main chat directly or as a summary.",
@@ -1175,6 +1255,7 @@
    "name": "dsh-session-export",
    "owner": "bwndlct",
    "url": "https://github.com/bwndlct/dsh-session-export",
+   "page": "https://awesome-dsh-plugin.com/p/bwndlct/dsh-session-export/",
    "category": "session",
    "description": {
     "en": "Export the current session to portable, schema-versioned Markdown and JSON files via the `session_export` tool and slash commands, with cross-platform-safe filenames.",
@@ -1189,6 +1270,7 @@
    "name": "dsh-token-usage",
    "owner": "LeemanCheung",
    "url": "https://github.com/LeemanCheung/dsh-token-usage",
+   "page": "https://awesome-dsh-plugin.com/p/LeemanCheung/dsh-token-usage/",
    "category": "session",
    "description": {
     "en": "Persistent per-session Token usage records and a settings dashboard with provider/model breakdowns and a 52-week activity heatmap.",
@@ -1203,6 +1285,7 @@
    "name": "dsh-suite#plugin-session-export",
    "owner": "whyihaveyou",
    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export",
+   "page": "https://awesome-dsh-plugin.com/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/",
    "category": "session",
    "description": {
     "en": "Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.",
@@ -1210,13 +1293,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export",
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-session-export",
    "added": "2026-08-14"
   },
   {
    "name": "distill",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/distill",
+   "page": "https://awesome-dsh-plugin.com/p/LoserFox/distill/",
    "category": "memory",
    "description": {
     "en": "Automatic conversation distillation: background subagent reflection + skill create/update.",
@@ -1231,6 +1315,7 @@
    "name": "dsh-mnemon",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-mnemon",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-mnemon/",
    "category": "memory",
    "description": {
     "en": "Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).",
@@ -1245,6 +1330,7 @@
    "name": "dsh-mneme",
    "owner": "modusensus",
    "url": "https://github.com/modusensus/dsh-mneme",
+   "page": "https://awesome-dsh-plugin.com/p/modusensus/dsh-mneme/",
    "category": "memory",
    "description": {
     "en": "Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.",
@@ -1259,6 +1345,7 @@
    "name": "nowledge-mem-deepseek-harness",
    "owner": "nowledge-co",
    "url": "https://github.com/nowledge-co/nowledge-mem-deepseek-harness",
+   "page": "https://awesome-dsh-plugin.com/p/nowledge-co/nowledge-mem-deepseek-harness/",
    "category": "memory",
    "description": {
     "en": "One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.",
@@ -1273,6 +1360,7 @@
    "name": "dsh-memory",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-memory",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-memory/",
    "category": "memory",
    "description": {
     "en": "Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.",
@@ -1287,6 +1375,7 @@
    "name": "dsh-memory",
    "owner": "flymysql",
    "url": "https://github.com/flymysql/dsh-memory",
+   "page": "https://awesome-dsh-plugin.com/p/flymysql/dsh-memory/",
    "category": "memory",
    "description": {
     "en": "Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.",
@@ -1301,6 +1390,7 @@
    "name": "dsh-plugin-asmemory",
    "owner": "Xplore-LAB",
    "url": "https://github.com/Xplore-LAB/dsh-plugin-asmemory",
+   "page": "https://awesome-dsh-plugin.com/p/Xplore-LAB/dsh-plugin-asmemory/",
    "category": "memory",
    "description": {
     "en": "Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.",
@@ -1315,6 +1405,7 @@
    "name": "dsh-memento",
    "owner": "PerryLink",
    "url": "https://github.com/PerryLink/dsh-memento",
+   "page": "https://awesome-dsh-plugin.com/p/PerryLink/dsh-memento/",
    "category": "memory",
    "description": {
     "en": "Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.",
@@ -1326,9 +1417,25 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-memory-gate",
+   "owner": "GIT121995",
+   "url": "https://github.com/GIT121995/dsh-memory-gate",
+   "page": "https://awesome-dsh-plugin.com/p/GIT121995/dsh-memory-gate/",
+   "category": "memory",
+   "description": {
+    "en": "Bounded local memory with CBDC authority gating: SQLite + FTS5 claims, scoped recall with explainable use/verify/ignore decisions and a full audit trail, /memory commands, ≤3-claim/1200-char injection per call, no extra model call.",
+    "zh": "有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:GIT121995/dsh-memory-gate",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-file-memory",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-file-memory",
+   "page": "https://awesome-dsh-plugin.com/p/ICCuse/dsh-file-memory/",
    "category": "memory",
    "description": {
     "en": "File-backed working memory: memorize/recall key premises verbatim in a session notes file so they survive context compaction losslessly.",
@@ -1343,6 +1450,7 @@
    "name": "dsh-knowledge",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-knowledge",
+   "page": "https://awesome-dsh-plugin.com/p/ICCuse/dsh-knowledge/",
    "category": "memory",
    "description": {
     "en": "Bridge into a global Markdown knowledge base shared with the Codex kb.cmd CLI: kb_add/kb_search/kb_show/kb_timeline tools with byte-compatible frontmatter.",
@@ -1357,6 +1465,7 @@
    "name": "dsh-premise-guard",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-premise-guard",
+   "page": "https://awesome-dsh-plugin.com/p/ICCuse/dsh-premise-guard/",
    "category": "memory",
    "description": {
     "en": "Post-compaction premise-drift guard: injects a one-shot notice when a compaction summary drops a critical literal anchor.",
@@ -1371,6 +1480,7 @@
    "name": "sgme",
    "owner": "freehul",
    "url": "https://github.com/freehul/sgme",
+   "page": "https://awesome-dsh-plugin.com/p/freehul/sgme/",
    "category": "memory",
    "description": {
     "en": "ShiGuang Memory Engine (SGME) bridge: multi-agent shared long-term memory via HTTP — L0/L1/L1.5/L2 distillation, scenario-based injection, unified search, and proactive care signals (memory_search / wiki_search / signal_pull / signal_claim / signal_ack), installable as `dsh-sgme`.",
@@ -1385,6 +1495,7 @@
    "name": "dsh-memory-meow",
    "owner": "Phant0Meow",
    "url": "https://github.com/Phant0Meow/dsh-memory-meow",
+   "page": "https://awesome-dsh-plugin.com/p/Phant0Meow/dsh-memory-meow/",
    "category": "memory",
    "description": {
     "en": "Project-scoped cross-session memory: PROJECT.md snapshot injected into the first user message, a memory_remember tool, and auto-reflection after ReAct tasks; each project keeps its own memory file.",
@@ -1399,6 +1510,7 @@
    "name": "dsh-memoria",
    "owner": "jiayan-xu",
    "url": "https://github.com/jiayan-xu/dsh-memoria",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-memoria/",
    "category": "memory",
    "description": {
     "en": "Vector + graph memory backend: observe/remember/search/recall tools against a local memoria server, fusing HNSW semantic recall, FTS5 keyword search, and knowledge-graph signals via RRF ranking, with automatic turn-end persistence and per-agent namespace isolation.",
@@ -1413,6 +1525,7 @@
    "name": "deepseek-harness-forge-plugins#forge-memory",
    "owner": "jinguanghai",
    "url": "https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory",
+   "page": "https://awesome-dsh-plugin.com/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-memory/",
    "category": "memory",
    "description": {
     "en": "BM25 keyword-based memory recall.",
@@ -1420,13 +1533,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory",
+   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-memory",
    "added": "2026-08-14"
   },
   {
    "name": "blender",
    "owner": "CheshireJCat",
    "url": "https://github.com/CheshireJCat/blender",
+   "page": "https://awesome-dsh-plugin.com/p/CheshireJCat/blender/",
    "category": "tools",
    "description": {
     "en": "Blender 3D production plugin with 30 modeling/reconstruction skills, 13 runtime tools, and 26 deterministic helpers for reference fitting, rendering, validation, animation, and portable export; installable as `dsh-blender`.",
@@ -1441,6 +1555,7 @@
    "name": "dsh-vision-router",
    "owner": "ysr666",
    "url": "https://github.com/ysr666/dsh-vision-router",
+   "page": "https://awesome-dsh-plugin.com/p/ysr666/dsh-vision-router/",
    "category": "tools",
    "description": {
     "en": "Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image to use it.",
@@ -1455,6 +1570,7 @@
    "name": "dsh-vision-proxy",
    "owner": "Flyvhidbwo",
    "url": "https://github.com/Flyvhidbwo/dsh-vision-proxy",
+   "page": "https://awesome-dsh-plugin.com/p/Flyvhidbwo/dsh-vision-proxy/",
    "category": "tools",
    "description": {
     "en": "DeepSeek brain + automatic image transcription: attach images in the GUI and each one is transcribed to text via any OpenAI-compatible VLM before reaching the text-only DeepSeek — free anonymous endpoint by default, or a paid fast path (qwen3.7-flash) with your own key (DashScope/Zhipu/Ollama/OpenRouter).",
@@ -1469,6 +1585,7 @@
    "name": "dsh-vision-bridge",
    "owner": "ximengxiaolan",
    "url": "https://github.com/ximengxiaolan/dsh-vision-bridge",
+   "page": "https://awesome-dsh-plugin.com/p/ximengxiaolan/dsh-vision-bridge/",
    "category": "tools",
    "description": {
     "en": "Composer-attached images are transcribed to text by an OpenAI-compatible vision model before reaching text-only DeepSeek models.",
@@ -1483,6 +1600,7 @@
    "name": "dsh-vision",
    "owner": "linenxi-ctrl",
    "url": "https://github.com/linenxi-ctrl/dsh-vision",
+   "page": "https://awesome-dsh-plugin.com/p/linenxi-ctrl/dsh-vision/",
    "category": "tools",
    "description": {
     "en": "External vision plugin for DeepSeek Harness: whale-button config panel, image recognition with auto-reply, and agent screenshot/recognize tools.",
@@ -1497,6 +1615,7 @@
    "name": "dsh-undo-plugin",
    "owner": "lire1131",
    "url": "https://github.com/lire1131/dsh-undo-plugin",
+   "page": "https://awesome-dsh-plugin.com/p/lire1131/dsh-undo-plugin/",
    "category": "tools",
    "description": {
     "en": "Undo/redo & rollback system for DSH: every config change is auto-snapshotted; undo/redo/restore to any version from the WebUI or the offline CLI/GUI tools (works even when DSH fails to boot).",
@@ -1511,6 +1630,7 @@
    "name": "dsh-bash-terminal",
    "owner": "MAXeaglet",
    "url": "https://github.com/MAXeaglet/dsh-bash-terminal",
+   "page": "https://awesome-dsh-plugin.com/p/MAXeaglet/dsh-bash-terminal/",
    "category": "tools",
    "description": {
     "en": "One shell tool for PowerShell / Git Bash / WSL on Windows plus an interactive PTY terminal; the default terminal is chosen by the user in DSH settings.",
@@ -1525,6 +1645,7 @@
    "name": "dsh-vision-toolkit",
    "owner": "Anionex",
    "url": "https://github.com/Anionex/dsh-vision-toolkit",
+   "page": "https://awesome-dsh-plugin.com/p/Anionex/dsh-vision-toolkit/",
    "category": "tools",
    "description": {
     "en": "Vision tasks for text-only models: intent-aware image Q&A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.",
@@ -1539,6 +1660,7 @@
    "name": "dsh-custom-tool",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-custom-tool",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-custom-tool/",
    "category": "tools",
    "description": {
     "en": "Create and manage sandboxed JavaScript tools with a Monaco editor and model-driven tool lifecycle.",
@@ -1553,6 +1675,7 @@
    "name": "dsh-computer-use",
    "owner": "Anionex",
    "url": "https://github.com/Anionex/dsh-computer-use",
+   "page": "https://awesome-dsh-plugin.com/p/Anionex/dsh-computer-use/",
    "category": "tools",
    "description": {
     "en": "Accessibility-first macOS computer use: fresh observations, stale-state rejection, scoped permissions, and safe input.",
@@ -1567,6 +1690,7 @@
    "name": "dsh-mobile-gui-agent",
    "owner": "kunjinkao-os",
    "url": "https://github.com/kunjinkao-os/dsh-mobile-gui-agent",
+   "page": "https://awesome-dsh-plugin.com/p/kunjinkao-os/dsh-mobile-gui-agent/",
    "category": "tools",
    "description": {
     "en": "Android GUI Agent with ADB screenshots, compact UI hierarchy grounding, verified iterative actions, approvals, and a Mobile Web view.",
@@ -1581,6 +1705,7 @@
    "name": "dsh-data-agent",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-data-agent",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-data-agent/",
    "category": "tools",
    "description": {
     "en": "Let the AI connect to databases and write SQL for you.",
@@ -1595,6 +1720,7 @@
    "name": "dsh-toolkit",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-toolkit",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-toolkit/",
    "category": "tools",
    "description": {
     "en": "Zero-dependency toolkit: time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema — ten deterministic tools in one install.",
@@ -1609,6 +1735,7 @@
    "name": "dsh-remote",
    "owner": "flymysql",
    "url": "https://github.com/flymysql/dsh-remote",
+   "page": "https://awesome-dsh-plugin.com/p/flymysql/dsh-remote/",
    "category": "tools",
    "description": {
     "en": "Multi-machine remote workspace: manage many SSH hosts, pick a local or remote workspace in the native Add-workspace flow (system folder chooser / local path / remote dir browse), mirror a remote workspace to a real local folder, and operate it with rw_* tools.",
@@ -1623,6 +1750,7 @@
    "name": "dsh-tool-csv",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-csv",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-csv/",
    "category": "tools",
    "description": {
     "en": "Parse/query/aggregate/convert CSV (RFC 4180) with a zero-dependency state-machine parser.",
@@ -1637,6 +1765,7 @@
    "name": "dsh-tool-calculator",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-calculator",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-calculator/",
    "category": "tools",
    "description": {
     "en": "Safe math expression evaluator, zero-dependency recursive-descent parser.",
@@ -1651,6 +1780,7 @@
    "name": "dsh-tool-diff",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-diff",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-diff/",
    "category": "tools",
    "description": {
     "en": "Structured comparison and unified diffs for text/JSON/CSV/Markdown.",
@@ -1665,6 +1795,7 @@
    "name": "dsh-tool-encoding",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-encoding",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-encoding/",
    "category": "tools",
    "description": {
     "en": "base64/url/hex encoding, common hashes, and UUID generation.",
@@ -1679,6 +1810,7 @@
    "name": "dsh-tool-json",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-json",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-json/",
    "category": "tools",
    "description": {
     "en": "JSON queries with a JMESPath subset.",
@@ -1693,6 +1825,7 @@
    "name": "dsh-tool-markdown",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-markdown",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-markdown/",
    "category": "tools",
    "description": {
     "en": "HTML↔Markdown conversion, GFM table normalization, and TOC generation.",
@@ -1707,6 +1840,7 @@
    "name": "dsh-tool-regex",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-regex",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-regex/",
    "category": "tools",
    "description": {
     "en": "Test/extract/safe-replace/statically explain regexes without executing code.",
@@ -1721,6 +1855,7 @@
    "name": "dsh-tool-schema",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-schema",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-schema/",
    "category": "tools",
    "description": {
     "en": "JSON Schema validation: validate/paths/explain/normalize.",
@@ -1735,6 +1870,7 @@
    "name": "dsh-tool-stat",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-stat",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-stat/",
    "category": "tools",
    "description": {
     "en": "Descriptive statistics, percentiles, frequency distributions, and correlation.",
@@ -1749,6 +1885,7 @@
    "name": "dsh-tool-time",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-time",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-tool-time/",
    "category": "tools",
    "description": {
     "en": "Strict ISO 8601 parsing, IANA timezone conversion, and UTC calendar arithmetic.",
@@ -1763,6 +1900,7 @@
    "name": "dsh-kb-sieve",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-kb-sieve",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-kb-sieve/",
    "category": "tools",
    "description": {
     "en": "Build auditable KB packs (SQLite FTS5) from md/txt/docx/pdf with deterministic retrieval and original-text reading.",
@@ -1777,6 +1915,7 @@
    "name": "dsh-plugin-mineru",
    "owner": "HuanLinOTO",
    "url": "https://github.com/HuanLinOTO/dsh-plugin-mineru",
+   "page": "https://awesome-dsh-plugin.com/p/HuanLinOTO/dsh-plugin-mineru/",
    "category": "tools",
    "description": {
     "en": "Expose MineRU document parsing tools to the model.",
@@ -1791,6 +1930,7 @@
    "name": "dsh-cowork",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-cowork",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-cowork/",
    "category": "tools",
    "description": {
     "en": "Bounded, cell-addressed `doc_read`/`doc_write` for xlsx / pdf / docx / pptx / ipynb, plus an MCP server and CLI.",
@@ -1805,6 +1945,7 @@
    "name": "dsh-skillport",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-skillport",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-skillport/",
    "category": "tools",
    "description": {
     "en": "Bring your existing Agent Skills (SKILL.md) library to DSH: discover skills across Claude/Codex/Cursor/Gemini paths, inject a progressive-disclosure index, and load bodies on demand.",
@@ -1819,6 +1960,7 @@
    "name": "pack-agent",
    "owner": "sakikoTGW",
    "url": "https://github.com/sakikoTGW/pack-agent",
+   "page": "https://awesome-dsh-plugin.com/p/sakikoTGW/pack-agent/",
    "category": "tools",
    "description": {
     "en": "Project .pack.json/.pack.zip into .agent-pack/modpacks/ and expose skills via a workspace allow-list.",
@@ -1833,6 +1975,7 @@
    "name": "dsh-tool-search",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-tool-search",
+   "page": "https://awesome-dsh-plugin.com/p/vibeinging/dsh-tool-search/",
    "category": "tools",
    "description": {
     "en": "Per-agent on-demand tool discovery and progressive schema disclosure.",
@@ -1847,6 +1990,7 @@
    "name": "dsh-openmaic",
    "owner": "THU-MAIC",
    "url": "https://github.com/THU-MAIC/dsh-openmaic",
+   "page": "https://awesome-dsh-plugin.com/p/THU-MAIC/dsh-openmaic/",
    "category": "tools",
    "description": {
     "en": "OpenMAIC: classrooms, slides, interactive widgets, and Socratic teaching.",
@@ -1861,6 +2005,7 @@
    "name": "dsh-scholar",
    "owner": "lzszq",
    "url": "https://github.com/lzszq/dsh-scholar",
+   "page": "https://awesome-dsh-plugin.com/p/lzszq/dsh-scholar/",
    "category": "tools",
    "description": {
     "en": "Academic assistant plugin.",
@@ -1875,6 +2020,7 @@
    "name": "noatmark-dsh-plugin",
    "owner": "ylwl1997",
    "url": "https://github.com/ylwl1997/noatmark-dsh-plugin",
+   "page": "https://awesome-dsh-plugin.com/p/ylwl1997/noatmark-dsh-plugin/",
    "category": "tools",
    "description": {
     "en": "Text hygiene as a dsh plugin: sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV formula injection.",
@@ -1889,6 +2035,7 @@
    "name": "dsh-apple-mode",
    "owner": "jihongboo",
    "url": "https://github.com/jihongboo/dsh-apple-mode",
+   "page": "https://awesome-dsh-plugin.com/p/jihongboo/dsh-apple-mode/",
    "category": "tools",
    "description": {
     "en": "Xcode AI integration for DSH: 26 Xcode MCP tools (mcpbridge) + Apple platform skills + Xcode Intelligence-style persona (agent preset or global bundle).",
@@ -1903,6 +2050,7 @@
    "name": "dsh-continual-evolve",
    "owner": "ZK-Andy",
    "url": "https://github.com/ZK-Andy/dsh-continual-evolve",
+   "page": "https://awesome-dsh-plugin.com/p/ZK-Andy/dsh-continual-evolve/",
    "category": "tools",
    "description": {
     "en": "Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.",
@@ -1917,6 +2065,7 @@
    "name": "dsh-recommend",
    "owner": "zp-home",
    "url": "https://github.com/zp-home/dsh-recommend",
+   "page": "https://awesome-dsh-plugin.com/p/zp-home/dsh-recommend/",
    "category": "tools",
    "description": {
     "en": "Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.",
@@ -1931,6 +2080,7 @@
    "name": "modlens",
    "owner": "liustack",
    "url": "https://github.com/liustack/modlens",
+   "page": "https://awesome-dsh-plugin.com/p/liustack/modlens/",
    "category": "tools",
    "description": {
     "en": "Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).",
@@ -1945,6 +2095,7 @@
    "name": "dsh-market",
    "owner": "dsh-market",
    "url": "https://github.com/dsh-market/dsh-market",
+   "page": "https://awesome-dsh-plugin.com/p/dsh-market/dsh-market/",
    "category": "tools",
    "description": {
     "en": "The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.",
@@ -1959,6 +2110,7 @@
    "name": "dsh-plugin-suite#dsh-plugin-center",
    "owner": "crTnT",
    "url": "https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center",
+   "page": "https://awesome-dsh-plugin.com/p/crTnT/dsh-plugin-suite--dsh-plugin-center/",
    "category": "tools",
    "description": {
     "en": "Plugin center: discover, install, and manage DSH plugins from Settings.",
@@ -1966,13 +2118,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center",
+   "install": "dsh plugin --profile web add github:crTnT/dsh-plugin-suite#path:/dsh-plugin-center",
    "added": "2026-08-14"
   },
   {
    "name": "dsh-plugin-suite#dsh-plugin-updater",
    "owner": "crTnT",
    "url": "https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater",
+   "page": "https://awesome-dsh-plugin.com/p/crTnT/dsh-plugin-suite--dsh-plugin-updater/",
    "category": "tools",
    "description": {
     "en": "Update manager for installed plugins: check for updates, back up, and roll back.",
@@ -1980,13 +2133,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater",
+   "install": "dsh plugin --profile web add github:crTnT/dsh-plugin-suite#path:/dsh-plugin-updater",
    "added": "2026-08-14"
   },
   {
    "name": "dsh-find-plugin",
    "owner": "awesome-dsh-plugin",
    "url": "https://github.com/awesome-dsh-plugin/dsh-find-plugin",
+   "page": "https://awesome-dsh-plugin.com/p/awesome-dsh-plugin/dsh-find-plugin/",
    "category": "tools",
    "description": {
     "en": "Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.",
@@ -2001,6 +2155,7 @@
    "name": "dsh-code-intel",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-code-intel",
+   "page": "https://awesome-dsh-plugin.com/p/lonelymoon87/dsh-code-intel/",
    "category": "tools",
    "description": {
     "en": "Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.",
@@ -2015,6 +2170,7 @@
    "name": "dsh-subagent-tools",
    "owner": "lynx-gt",
    "url": "https://github.com/lynx-gt/dsh-subagent-tools",
+   "page": "https://awesome-dsh-plugin.com/p/lynx-gt/dsh-subagent-tools/",
    "category": "tools",
    "description": {
     "en": "Per-call model, provider, persona, and toolFilter overrides for subagent delegation, with @preset: references and provider/model composite ids.",
@@ -2029,6 +2185,7 @@
    "name": "dsh-subagent-cwd",
    "owner": "lynx-gt",
    "url": "https://github.com/lynx-gt/dsh-subagent-cwd",
+   "page": "https://awesome-dsh-plugin.com/p/lynx-gt/dsh-subagent-cwd/",
    "category": "tools",
    "description": {
     "en": "Extends dsh-subagent-tools with a per-call cwd for subagents, shipped with the two in-process provider patches it requires.",
@@ -2043,6 +2200,7 @@
    "name": "dsh-voice",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-voice",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-voice/",
    "category": "tools",
    "description": {
     "en": "Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under ~/.dsh/voice.",
@@ -2057,6 +2215,7 @@
    "name": "dsh-docker",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-docker",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-docker/",
    "category": "tools",
    "description": {
     "en": "Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.",
@@ -2071,6 +2230,7 @@
    "name": "dsh-excel-chat",
    "owner": "hccccc01333",
    "url": "https://github.com/hccccc01333/dsh-excel-chat",
+   "page": "https://awesome-dsh-plugin.com/p/hccccc01333/dsh-excel-chat/",
    "category": "tools",
    "description": {
     "en": "Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.",
@@ -2085,6 +2245,7 @@
    "name": "dsh-context-proxy",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-context-proxy",
+   "page": "https://awesome-dsh-plugin.com/p/EvilIrving/dsh-context-proxy/",
    "category": "tools",
    "description": {
     "en": "Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.",
@@ -2099,6 +2260,7 @@
    "name": "notes",
    "owner": "zhaoolee",
    "url": "https://github.com/zhaoolee/notes",
+   "page": "https://awesome-dsh-plugin.com/p/zhaoolee/notes/",
    "category": "tools",
    "description": {
     "en": "Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.",
@@ -2113,6 +2275,7 @@
    "name": "dsh-figma-to-lottie",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-figma-to-lottie",
+   "page": "https://awesome-dsh-plugin.com/p/zimai233/dsh-figma-to-lottie/",
    "category": "tools",
    "description": {
     "en": "Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.",
@@ -2127,6 +2290,7 @@
    "name": "dsh-exam-countdown",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-exam-countdown",
+   "page": "https://awesome-dsh-plugin.com/p/zimai233/dsh-exam-countdown/",
    "category": "tools",
    "description": {
     "en": "Query 64 Chinese exams (高考/考研/四六级/CPA/法考…) with rule-aware date math (2nd-Saturday, 1st-Sunday) and countdowns.",
@@ -2141,6 +2305,7 @@
    "name": "dsh-wash-calendar",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-wash-calendar",
+   "page": "https://awesome-dsh-plugin.com/p/zimai233/dsh-wash-calendar/",
    "category": "tools",
    "description": {
     "en": "Recurring-habit scheduling from pure date math: next occurrence, range schedules, and overdue advice.",
@@ -2155,6 +2320,7 @@
    "name": "dsh-adhd-copilot",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-adhd-copilot",
+   "page": "https://awesome-dsh-plugin.com/p/zimai233/dsh-adhd-copilot/",
    "category": "tools",
    "description": {
     "en": "ADHD behavioral coaching skill: task breakdown, overwhelm management, launch rituals, and failure recovery.",
@@ -2169,6 +2335,7 @@
    "name": "dsh-image-search",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-image-search",
+   "page": "https://awesome-dsh-plugin.com/p/zimai233/dsh-image-search/",
    "category": "tools",
    "description": {
     "en": "Multi-engine reverse image search aggregator: Google Lens, Baidu, Yandex, TinEye, SauceNAO, IQDB, Ascii2d.",
@@ -2183,6 +2350,7 @@
    "name": "dsh-video-downloader",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-video-downloader",
+   "page": "https://awesome-dsh-plugin.com/p/zimai233/dsh-video-downloader/",
    "category": "tools",
    "description": {
     "en": "Detect and download media from Bilibili/YouTube/Douyin/Xiaohongshu with quality and format analysis.",
@@ -2197,6 +2365,7 @@
    "name": "dsh-plugin-knowledge-graph",
    "owner": "Luke-Yong",
    "url": "https://github.com/Luke-Yong/dsh-plugin-knowledge-graph",
+   "page": "https://awesome-dsh-plugin.com/p/Luke-Yong/dsh-plugin-knowledge-graph/",
    "category": "tools",
    "description": {
     "en": "A read_graph tool backed by a codebase knowledge graph (CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL relations).",
@@ -2211,6 +2380,7 @@
    "name": "modsearch",
    "owner": "liustack",
    "url": "https://github.com/liustack/modsearch",
+   "page": "https://awesome-dsh-plugin.com/p/liustack/modsearch/",
    "category": "tools",
    "description": {
     "en": "Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).",
@@ -2225,6 +2395,7 @@
    "name": "argo",
    "owner": "taxueseek",
    "url": "https://github.com/taxueseek/argo",
+   "page": "https://awesome-dsh-plugin.com/p/taxueseek/argo/",
    "category": "tools",
    "description": {
     "en": "Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.",
@@ -2239,6 +2410,7 @@
    "name": "dsh-web-search-exa",
    "owner": "TonyDua",
    "url": "https://github.com/TonyDua/dsh-web-search-exa",
+   "page": "https://awesome-dsh-plugin.com/p/TonyDua/dsh-web-search-exa/",
    "category": "tools",
    "description": {
     "en": "Zero-config Exa web search provider for the ctx.web seam: anonymous MCP fallback without an API key, plus keyed REST search.",
@@ -2253,6 +2425,7 @@
    "name": "dsh-browser",
    "owner": "Lum1104",
    "url": "https://github.com/Lum1104/dsh-browser",
+   "page": "https://awesome-dsh-plugin.com/p/Lum1104/dsh-browser/",
    "category": "tools",
    "description": {
     "en": "Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.",
@@ -2267,6 +2440,7 @@
    "name": "dsh-webui-market-plugin",
    "owner": "Sanqi-normal",
    "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
+   "page": "https://awesome-dsh-plugin.com/p/Sanqi-normal/dsh-webui-market-plugin/",
    "category": "tools",
    "description": {
     "en": "In-harness plugin market for the dsh web GUI: browse the awesome-dsh-plugin.com catalog and install/uninstall plugins into a profile from Settings → Plugins → Plugin Market.",
@@ -2281,6 +2455,7 @@
    "name": "trio",
    "owner": "huey1in",
    "url": "https://github.com/huey1in/trio",
+   "page": "https://awesome-dsh-plugin.com/p/huey1in/trio/",
    "category": "tools",
    "description": {
     "en": "Browser automation (Playwright) with a live view, an MCP server exposing DSH agents to any MCP client, and GitHub issue/PR/webhook review tools.",
@@ -2295,6 +2470,7 @@
    "name": "dsh-adb",
    "owner": "SamXiaBing",
    "url": "https://github.com/SamXiaBing/dsh-adb",
+   "page": "https://awesome-dsh-plugin.com/p/SamXiaBing/dsh-adb/",
    "category": "tools",
    "description": {
     "en": "ADB device & bench operations for DSH: device discovery, structured logcat (background streaming), apk install, file pull/push, and dumpsys performance snapshots.",
@@ -2309,6 +2485,7 @@
    "name": "dsh-backup",
    "owner": "xiaoyuyu6420",
    "url": "https://github.com/xiaoyuyu6420/dsh-backup",
+   "page": "https://awesome-dsh-plugin.com/p/xiaoyuyu6420/dsh-backup/",
    "category": "tools",
    "description": {
     "en": "One-command backup of DSH user data: /backup, scheduled auto-backup, sha256 checksums and rotation.",
@@ -2323,6 +2500,7 @@
    "name": "dsh-tool-search",
    "owner": "Letter2025",
    "url": "https://github.com/Letter2025/dsh-tool-search",
+   "page": "https://awesome-dsh-plugin.com/p/Letter2025/dsh-tool-search/",
    "category": "tools",
    "description": {
     "en": "Hermes-style tool search & slimming: progressive disclosure, semantic search, describe, and call long-tail tools on demand while core tools stay eager.",
@@ -2337,6 +2515,7 @@
    "name": "dsh-hdc-bridge",
    "owner": "1na-ko",
    "url": "https://github.com/1na-ko/dsh-hdc-bridge",
+   "page": "https://awesome-dsh-plugin.com/p/1na-ko/dsh-hdc-bridge/",
    "category": "tools",
    "description": {
     "en": "HarmonyOS device bridge: hdc screenshot/install/log/crash/UI automation loop with read_image, official-first versioned API knowledge (SDK .d.ts + offline bundled docs), and a DevEco CLI build/sign/lint lane.",
@@ -2351,6 +2530,7 @@
    "name": "dsh-plugin",
    "owner": "PicGo",
    "url": "https://github.com/PicGo/dsh-plugin",
+   "page": "https://awesome-dsh-plugin.com/p/PicGo/dsh-plugin/",
    "category": "tools",
    "description": {
     "en": "Upload local images and files to your image host through PicGo's existing configuration (PicGo Cloud, GitHub, S3, COS, Qiniu, or any installed uploader plugin), via a `picgo_upload` tool and a `/picgo` command.",
@@ -2365,6 +2545,7 @@
    "name": "dsh-net-proxy",
    "owner": "mafeis",
    "url": "https://github.com/mafeis/dsh-net-proxy",
+   "page": "https://awesome-dsh-plugin.com/p/mafeis/dsh-net-proxy/",
    "category": "tools",
    "description": {
     "en": "Route agent network requests through a local HTTP/CONNECT/SOCKS5 proxy.",
@@ -2379,6 +2560,7 @@
    "name": "dsh-session-audit",
    "owner": "bwndlct",
    "url": "https://github.com/bwndlct/dsh-session-audit",
+   "page": "https://awesome-dsh-plugin.com/p/bwndlct/dsh-session-audit/",
    "category": "tools",
    "description": {
     "en": "Session execution analytics: steps, tool calls, failures, repeated actions, token usage and verification signals, rendered as text/Markdown/JSON reports.",
@@ -2393,6 +2575,7 @@
    "name": "dsh-overleaf",
    "owner": "fly233338",
    "url": "https://github.com/fly233338/dsh-overleaf",
+   "page": "https://awesome-dsh-plugin.com/p/fly233338/dsh-overleaf/",
    "category": "tools",
    "description": {
     "en": "Connect multiple Overleaf projects to DSH through OverleafMCP for browsing, analysis, and Git-based file updates.",
@@ -2407,6 +2590,7 @@
    "name": "dsh-fleet-audit",
    "owner": "LeslieWylie",
    "url": "https://github.com/LeslieWylie/dsh-fleet-audit",
+   "page": "https://awesome-dsh-plugin.com/p/LeslieWylie/dsh-fleet-audit/",
    "category": "tools",
    "description": {
     "en": "Read-only agent-fleet credential hygiene audit: credential-file permissions, embedded credentials in git remotes (masked in output), and provider token literal counts; zero-dependency and deterministic.",
@@ -2421,6 +2605,7 @@
    "name": "dsh-suite#plugin-manager",
    "owner": "whyihaveyou",
    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager",
+   "page": "https://awesome-dsh-plugin.com/p/whyihaveyou/dsh-suite--packages-plugins-plugin-manager/",
    "category": "tools",
    "description": {
     "en": "In-app plugin store for the DSH Web UI: browse, search, one-click install, compat badges.",
@@ -2428,13 +2613,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager",
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-manager",
    "added": "2026-08-14"
   },
   {
    "name": "dsh-workshop",
    "owner": "loguhan",
    "url": "https://github.com/loguhan/dsh-workshop",
+   "page": "https://awesome-dsh-plugin.com/p/loguhan/dsh-workshop/",
    "category": "tools",
    "description": {
     "en": "Steam Workshop-style plugin store for the DSH Web UI: browse, search, and one-click install community plugins with mirror acceleration, progress UI, security checks, and Chinese descriptions.",
@@ -2449,6 +2635,7 @@
    "name": "dsh-md-preview",
    "owner": "LeslieWylie",
    "url": "https://github.com/LeslieWylie/dsh-md-preview",
+   "page": "https://awesome-dsh-plugin.com/p/LeslieWylie/dsh-md-preview/",
    "category": "tools",
    "description": {
     "en": "Render Markdown to a standalone, self-contained HTML page: an `md_html_render` tool that works in a headless profile, plus a web drawer to browse, preview, edit and export local `.md` files; both share one renderer, with no runtime dependencies.",
@@ -2463,6 +2650,7 @@
    "name": "deepseek-harness-forge-plugins#forge-gates",
    "owner": "jinguanghai",
    "url": "https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates",
+   "page": "https://awesome-dsh-plugin.com/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-gates/",
    "category": "tools",
    "description": {
     "en": "Real-compute verification gates: math simplification, logic proofs, regex validation, E-prover FOL, state-machine checks, and code repair, backed by Go-compiled binaries with prebuilt Windows executables.",
@@ -2470,13 +2658,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates",
+   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-gates",
    "added": "2026-08-14"
   },
   {
    "name": "deepseek-harness-forge-plugins#forge-tcm",
    "owner": "jinguanghai",
    "url": "https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm",
+   "page": "https://awesome-dsh-plugin.com/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-tcm/",
    "category": "tools",
    "description": {
     "en": "Traditional Chinese Medicine toolkit: eight-axes diagnosis and herb-pair lookup.",
@@ -2484,13 +2673,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm",
+   "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-tcm",
    "added": "2026-08-14"
   },
   {
    "name": "skills",
    "owner": "creght-dev",
    "url": "https://github.com/creght-dev/skills",
+   "page": "https://awesome-dsh-plugin.com/p/creght-dev/skills/",
    "category": "skill",
    "description": {
     "en": "Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.",
@@ -2505,6 +2695,7 @@
    "name": "dsh-skill-manager",
    "owner": "YTxue",
    "url": "https://github.com/YTxue/dsh-skill-manager",
+   "page": "https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager/",
    "category": "skill",
    "description": {
     "en": "Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.",
@@ -2519,6 +2710,7 @@
    "name": "dsh_workflow",
    "owner": "icetomoyo",
    "url": "https://github.com/icetomoyo/dsh_workflow",
+   "page": "https://awesome-dsh-plugin.com/p/icetomoyo/dsh_workflow/",
    "category": "workflow",
    "description": {
     "en": "UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.",
@@ -2533,6 +2725,7 @@
    "name": "dsh-agent-teams",
    "owner": "NanmiCoder",
    "url": "https://github.com/NanmiCoder/dsh-agent-teams",
+   "page": "https://awesome-dsh-plugin.com/p/NanmiCoder/dsh-agent-teams/",
    "category": "workflow",
    "description": {
     "en": "AgentTeams multi-agent teams.",
@@ -2547,6 +2740,7 @@
    "name": "dsh-automation",
    "owner": "titanwings",
    "url": "https://github.com/titanwings/dsh-automation",
+   "page": "https://awesome-dsh-plugin.com/p/titanwings/dsh-automation/",
    "category": "workflow",
    "description": {
     "en": "Scheduled coding runs in fresh agent sessions with auditable history.",
@@ -2561,6 +2755,7 @@
    "name": "dsh-plugin-automations",
    "owner": "Sev7een",
    "url": "https://github.com/Sev7een/dsh-plugin-automations",
+   "page": "https://awesome-dsh-plugin.com/p/Sev7een/dsh-plugin-automations/",
    "category": "workflow",
    "description": {
     "en": "Settings-based scheduled tasks that run on time or during DeepSeek off-peak hours, with one-time and daily schedules backed by durable task state.",
@@ -2575,6 +2770,7 @@
    "name": "dsh-routines",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-routines",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-routines/",
    "category": "workflow",
    "description": {
     "en": "Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.",
@@ -2589,6 +2785,7 @@
    "name": "dsh-plannotator",
    "owner": "titanwings",
    "url": "https://github.com/titanwings/dsh-plannotator",
+   "page": "https://awesome-dsh-plugin.com/p/titanwings/dsh-plannotator/",
    "category": "workflow",
    "description": {
     "en": "Plan review with anchored annotations and structured feedback back to the agent.",
@@ -2603,6 +2800,7 @@
    "name": "dsh-loop",
    "owner": "vlln",
    "url": "https://github.com/vlln/dsh-loop",
+   "page": "https://awesome-dsh-plugin.com/p/vlln/dsh-loop/",
    "category": "workflow",
    "description": {
     "en": "Recurring loops: `/loop` command + loop tool + activity status bar.",
@@ -2617,6 +2815,7 @@
    "name": "dsh-sentinel",
    "owner": "fuhefei",
    "url": "https://github.com/fuhefei/dsh-sentinel",
+   "page": "https://awesome-dsh-plugin.com/p/fuhefei/dsh-sentinel/",
    "category": "workflow",
    "description": {
     "en": "Condition-driven wakeup: durable file/command/http/process/webhook watches that wake the agent.",
@@ -2631,6 +2830,7 @@
    "name": "dsh-deep-research",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-deep-research",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-deep-research/",
    "category": "workflow",
    "description": {
     "en": "Adaptive deep-research orchestrator built on the official workflow engine.",
@@ -2645,6 +2845,7 @@
    "name": "dsh-inspect",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-inspect",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-inspect/",
    "category": "workflow",
    "description": {
     "en": "Adversarial checkup → fix → review loop toolset.",
@@ -2659,6 +2860,7 @@
    "name": "dsh-track",
    "owner": "fakechris",
    "url": "https://github.com/fakechris/dsh-track",
+   "page": "https://awesome-dsh-plugin.com/p/fakechris/dsh-track/",
    "category": "workflow",
    "description": {
     "en": "Embedded task management engine: decision-point protocol, idea capture wall, Linear-style issue store.",
@@ -2673,6 +2875,7 @@
    "name": "dsh-advisor",
    "owner": "btspoony",
    "url": "https://github.com/btspoony/dsh-advisor",
+   "page": "https://awesome-dsh-plugin.com/p/btspoony/dsh-advisor/",
    "category": "workflow",
    "description": {
     "en": "Pair a second model that passively reviews each turn and injects notes.",
@@ -2687,6 +2890,7 @@
    "name": "dsh-specflow",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-specflow",
+   "page": "https://awesome-dsh-plugin.com/p/lonelymoon87/dsh-specflow/",
    "category": "workflow",
    "description": {
     "en": "Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.",
@@ -2701,6 +2905,7 @@
    "name": "dsh-science",
    "owner": "biociao",
    "url": "https://github.com/biociao/dsh-science",
+   "page": "https://awesome-dsh-plugin.com/p/biociao/dsh-science/",
    "category": "workflow",
    "description": {
     "en": "Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.",
@@ -2715,6 +2920,7 @@
    "name": "dsh-proof",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-proof",
+   "page": "https://awesome-dsh-plugin.com/p/EvilIrving/dsh-proof/",
    "category": "workflow",
    "description": {
     "en": "Independent read-only acceptance layer: spawns a read-only verifier before each top-level turn closes and steers non-pass gaps back into the agent.",
@@ -2729,6 +2935,7 @@
    "name": "dsh-doublecheck",
    "owner": "PerryLink",
    "url": "https://github.com/PerryLink/dsh-doublecheck",
+   "page": "https://awesome-dsh-plugin.com/p/PerryLink/dsh-doublecheck/",
    "category": "workflow",
    "description": {
     "en": "Engineering-discipline guard: grill the requirements before the first edit, enforce red/green test evidence gates, and audit the delivery with a forked adversary (grill-requirements skill + tool-policy gates).",
@@ -2743,6 +2950,7 @@
    "name": "mstar-harness",
    "owner": "btspoony",
    "url": "https://github.com/btspoony/mstar-harness",
+   "page": "https://awesome-dsh-plugin.com/p/btspoony/mstar-harness/",
    "category": "workflow",
    "description": {
     "en": "Skill-driven harness/loop engineering workflow agent plugin.",
@@ -2757,6 +2965,7 @@
    "name": "dsh-approval-llm",
    "owner": "Letter2025",
    "url": "https://github.com/Letter2025/dsh-approval-llm",
+   "page": "https://awesome-dsh-plugin.com/p/Letter2025/dsh-approval-llm/",
    "category": "workflow",
    "description": {
     "en": "Model-based permission approval: an approval-request answerer backed by a separate reviewer model.",
@@ -2771,6 +2980,7 @@
    "name": "dsh-model-failover",
    "owner": "Letter2025",
    "url": "https://github.com/Letter2025/dsh-model-failover",
+   "page": "https://awesome-dsh-plugin.com/p/Letter2025/dsh-model-failover/",
    "category": "workflow",
    "description": {
     "en": "Two-level model circuit breaker with failover: trip a model or a whole provider after repeated request failures and route the next request to a configured fallback.",
@@ -2785,6 +2995,7 @@
    "name": "dsh-suite#plugin-team-board",
    "owner": "whyihaveyou",
    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board",
+   "page": "https://awesome-dsh-plugin.com/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/",
    "category": "workflow",
    "description": {
     "en": "Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.",
@@ -2792,13 +3003,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board",
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-team-board",
    "added": "2026-08-14"
   },
   {
    "name": "dsh-open-in-vscode",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-open-in-vscode",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-open-in-vscode/",
    "category": "notify",
    "description": {
     "en": "Open DSH workspace directories in VS Code directly from the web GUI.",
@@ -2813,6 +3025,7 @@
    "name": "dsh-notification",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-notification",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-notification/",
    "category": "notify",
    "description": {
     "en": "Desktop notifications for turn completions, with per-outcome controls and keyword rules.",
@@ -2827,6 +3040,7 @@
    "name": "dsh-acp-for-bitfun",
    "owner": "bobleer",
    "url": "https://github.com/bobleer/dsh-acp-for-bitfun",
+   "page": "https://awesome-dsh-plugin.com/p/bobleer/dsh-acp-for-bitfun/",
    "category": "notify",
    "description": {
     "en": "ACP bridge between BitFun and DSH.",
@@ -2841,6 +3055,7 @@
    "name": "deepseek-harness-acp",
    "owner": "openma-ai",
    "url": "https://github.com/openma-ai/deepseek-harness-acp",
+   "page": "https://awesome-dsh-plugin.com/p/openma-ai/deepseek-harness-acp/",
    "category": "notify",
    "description": {
     "en": "ACP profile plugin and standalone stdio server for using the full DSH agent from Zed and other ACP clients while sharing DSH credentials and sessions.",
@@ -2855,6 +3070,7 @@
    "name": "telegram",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/telegram",
+   "page": "https://awesome-dsh-plugin.com/p/LoserFox/telegram/",
    "category": "notify",
    "description": {
     "en": "Bridge to the Telegram Bot API: long polling, per-chat sessions, HTML formatting.",
@@ -2869,6 +3085,7 @@
    "name": "dsh-chatnode-wechat",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-chatnode-wechat",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-chatnode-wechat/",
    "category": "notify",
    "description": {
     "en": "Chat with, monitor, and approve your DSH agents from WeChat via the iLink gateway: text both ways, session targeting, digest heartbeats, and numbered approval prompts.",
@@ -2883,6 +3100,7 @@
    "name": "dsh-session-notification",
    "owner": "dingyi222666",
    "url": "https://github.com/dingyi222666/dsh-session-notification",
+   "page": "https://awesome-dsh-plugin.com/p/dingyi222666/dsh-session-notification/",
    "category": "notify",
    "description": {
     "en": "Notifications for four session states, with browser alerts and prompts.",
@@ -2897,6 +3115,7 @@
    "name": "dsh-web-ui-notify",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-web-ui-notify",
+   "page": "https://awesome-dsh-plugin.com/p/bill9109/dsh-web-ui-notify/",
    "category": "notify",
    "description": {
     "en": "Desktop notification reminders.",
@@ -2911,6 +3130,7 @@
    "name": "dsh-plugins#pet-bridge",
    "owner": "wsxwj123",
    "url": "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/pet-bridge",
+   "page": "https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-pet-bridge/",
    "category": "notify",
    "description": {
     "en": "Bridge dsh session status to the cc-pet desktop pet bubble: thinking, tool calls, and completion in real time.",
@@ -2918,13 +3138,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins/tree/main/packages/pet-bridge",
+   "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/pet-bridge",
    "added": "2026-08-14"
   },
   {
    "name": "dsh-webbridge",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-webbridge",
+   "page": "https://awesome-dsh-plugin.com/p/bill9109/dsh-webbridge/",
    "category": "notify",
    "description": {
     "en": "DSH meets Kimi WebBridge.",
@@ -2939,6 +3160,7 @@
    "name": "dsh-im-bridge",
    "owner": "BiBoyang",
    "url": "https://github.com/BiBoyang/dsh-im-bridge",
+   "page": "https://awesome-dsh-plugin.com/p/BiBoyang/dsh-im-bridge/",
    "category": "notify",
    "description": {
     "en": "Two-way WeChat (iLink) bridge: turn-end and approval-request push, in-chat approve/reject and message injection, persistent dedup and convergent long-reply chunking; channel layer extensible to other IMs.",
@@ -2953,6 +3175,7 @@
    "name": "dsh-lark-bridge",
    "owner": "imetn",
    "url": "https://github.com/imetn/dsh-lark-bridge",
+   "page": "https://awesome-dsh-plugin.com/p/imetn/dsh-lark-bridge/",
    "category": "notify",
    "description": {
     "en": "Bidirectional Lark/Feishu controller for DeepSeek Harness with project and session routing, interactive cards, approvals, attachments, and task controls.",
@@ -2967,6 +3190,7 @@
    "name": "dsh-notify-bark",
    "owner": "pc439527",
    "url": "https://github.com/pc439527/dsh-notify-bark",
+   "page": "https://awesome-dsh-plugin.com/p/pc439527/dsh-notify-bark/",
    "category": "notify",
    "description": {
     "en": "Bark push notifications to iPhone: turn completion, waiting-for-input, and approval events sent from the DSH Host.",
@@ -2981,6 +3205,7 @@
    "name": "dsh-ding",
    "owner": "CAOGGL",
    "url": "https://github.com/CAOGGL/dsh-ding",
+   "page": "https://awesome-dsh-plugin.com/p/CAOGGL/dsh-ding/",
    "category": "notify",
    "description": {
     "en": "Notifies you when a conversation finishes: plays a sound and shows a Windows notification when the agent goes idle (configurable sound file, volume, debounce/throttle).",
@@ -2995,6 +3220,7 @@
    "name": "dsh-plugin-notify-sound",
    "owner": "ldchaowin",
    "url": "https://github.com/ldchaowin/dsh-plugin-notify-sound",
+   "page": "https://awesome-dsh-plugin.com/p/ldchaowin/dsh-plugin-notify-sound/",
    "category": "notify",
    "description": {
     "en": "Per-workspace completion ringtones plus attention sounds for approval, question, plan-review, goal-blocked, and task-failure events, with built-in synth, voice (TTS), and custom audio.",
@@ -3009,6 +3235,7 @@
    "name": "dsh-suite#plugin-notify",
    "owner": "whyihaveyou",
    "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify",
+   "page": "https://awesome-dsh-plugin.com/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/",
    "category": "notify",
    "description": {
     "en": "IM webhook and local notifications on turn completion, errors, or approval (Feishu/WeCom/DingTalk/Slack/Discord/custom).",
@@ -3016,13 +3243,14 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify",
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-notify",
    "added": "2026-08-14"
   },
   {
    "name": "llm-adaptive",
    "owner": "dylan121322",
    "url": "https://github.com/dylan121322/llm-adaptive",
+   "page": "https://awesome-dsh-plugin.com/p/dylan121322/llm-adaptive/",
    "category": "model",
    "description": {
     "en": "Adaptive model routing: per-request complexity classification with automatic provider routing.",
@@ -3037,6 +3265,7 @@
    "name": "dsh-llm-fallbacks",
    "owner": "btspoony",
    "url": "https://github.com/btspoony/dsh-llm-fallbacks",
+   "page": "https://awesome-dsh-plugin.com/p/btspoony/dsh-llm-fallbacks/",
    "category": "model",
    "description": {
     "en": "Role-based LLM retry & fallback strategies.",
@@ -3051,6 +3280,7 @@
    "name": "dsh-codex-connect",
    "owner": "franksong2702",
    "url": "https://github.com/franksong2702/dsh-codex-connect",
+   "page": "https://awesome-dsh-plugin.com/p/franksong2702/dsh-codex-connect/",
    "category": "model",
    "description": {
     "en": "Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.",
@@ -3065,6 +3295,7 @@
    "name": "dsh-everything-oauth",
    "owner": "kam74515-boop",
    "url": "https://github.com/kam74515-boop/dsh-everything-oauth",
+   "page": "https://awesome-dsh-plugin.com/p/kam74515-boop/dsh-everything-oauth/",
    "category": "model",
    "description": {
     "en": "Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.",
@@ -3079,6 +3310,7 @@
    "name": "Qwen-MM-Plugins",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/Qwen-MM-Plugins",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/Qwen-MM-Plugins/",
    "category": "model",
    "description": {
     "en": "Qwen multi-modal plugin support.",
@@ -3093,6 +3325,7 @@
    "name": "dsh-codex-auth",
    "owner": "suntianc",
    "url": "https://github.com/suntianc/dsh-codex-auth",
+   "page": "https://awesome-dsh-plugin.com/p/suntianc/dsh-codex-auth/",
    "category": "model",
    "description": {
     "en": "Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.",
@@ -3107,6 +3340,7 @@
    "name": "deepseek-harness-wallet",
    "owner": "feibi-mochi",
    "url": "https://github.com/feibi-mochi/deepseek-harness-wallet",
+   "page": "https://awesome-dsh-plugin.com/p/feibi-mochi/deepseek-harness-wallet/",
    "category": "model",
    "description": {
     "en": "Multi-provider wallet chip: official DeepSeek balance, per-session cost & tokens, third-party token totals, recharge shortcut, low-balance alerts.",
@@ -3121,6 +3355,7 @@
    "name": "dsh-testgen",
    "owner": "bujue600-arch",
    "url": "https://github.com/bujue600-arch/dsh-testgen",
+   "page": "https://awesome-dsh-plugin.com/p/bujue600-arch/dsh-testgen/",
    "category": "dev",
    "description": {
     "en": "Automated unit-test generation: a /testgen command and generate_tests tool that scaffold, run, and fix tests until they pass (LLM + offline template generators; vitest/jest/mocha/node:test).",
@@ -3135,6 +3370,7 @@
    "name": "fabric",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/fabric",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/fabric/",
    "category": "dev",
    "description": {
     "en": "An MC-Fabric-style hook processor.",
@@ -3149,6 +3385,7 @@
    "name": "dsh-git-identity",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/dsh-git-identity",
+   "page": "https://awesome-dsh-plugin.com/p/LoserFox/dsh-git-identity/",
    "category": "dev",
    "description": {
     "en": "Pin Git commits to the environment's own author identity; env-var injection overrides all `git config` settings.",
@@ -3163,6 +3400,7 @@
    "name": "dsh-context-doctor",
    "owner": "Zhenyu98",
    "url": "https://github.com/Zhenyu98/dsh-context-doctor",
+   "page": "https://awesome-dsh-plugin.com/p/Zhenyu98/dsh-context-doctor/",
    "category": "dev",
    "description": {
     "en": "Context injection audit: token costs of instruction chains / skill catalogs / tool schemas, duplicate and conflict detection.",
@@ -3177,6 +3415,7 @@
    "name": "dsh-pain-point-check",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-pain-point-check",
+   "page": "https://awesome-dsh-plugin.com/p/ICCuse/dsh-pain-point-check/",
    "category": "dev",
    "description": {
     "en": "Enforced pain-point gate: after two non-converged experiments it injects the three questions, denies non-investigative tool calls until answered, and blocks same-direction retries.",
@@ -3191,6 +3430,7 @@
    "name": "dsh-plugin-check",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-plugin-check",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-plugin-check/",
    "category": "dev",
    "description": {
     "en": "Plugin health checks: manifest protocol / patch format / build traps, zero-dependency and read-only.",
@@ -3205,6 +3445,7 @@
    "name": "dsh-security-audit",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-security-audit",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-security-audit/",
    "category": "dev",
    "description": {
     "en": "Local security audit: config, plugin origins, sessions, network exposure — read-only redacted risk report.",
@@ -3219,6 +3460,7 @@
    "name": "dsh-session-health",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-session-health",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-session-health/",
    "category": "dev",
    "description": {
     "en": "Frame-level scan diagnostics for session files (torn/corrupt/empty detection).",
@@ -3233,6 +3475,7 @@
    "name": "dsh-evolve",
    "owner": "william-jin-cmu",
    "url": "https://github.com/william-jin-cmu/dsh-evolve",
+   "page": "https://awesome-dsh-plugin.com/p/william-jin-cmu/dsh-evolve/",
    "category": "dev",
    "description": {
     "en": "Self-evolution: the agent hot-mounts/removes persistent plugins on itself mid-session.",
@@ -3247,6 +3490,7 @@
    "name": "dsh-trace",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-trace",
+   "page": "https://awesome-dsh-plugin.com/p/vibeinging/dsh-trace/",
    "category": "dev",
    "description": {
     "en": "Telemetry backend exporting turns, model steps, and tool calls to yiTrace.",
@@ -3261,6 +3505,7 @@
    "name": "dsh-telemetry-redactor",
    "owner": "030611",
    "url": "https://github.com/030611/dsh-telemetry-redactor",
+   "page": "https://awesome-dsh-plugin.com/p/030611/dsh-telemetry-redactor/",
    "category": "dev",
    "description": {
     "en": "Redacts supported secret patterns from the `session-telemetry/record` export copy before configured telemetry backends receive it.",
@@ -3275,6 +3520,7 @@
    "name": "dsh-verification-receipt",
    "owner": "030611",
    "url": "https://github.com/030611/dsh-verification-receipt",
+   "page": "https://awesome-dsh-plugin.com/p/030611/dsh-verification-receipt/",
    "category": "dev",
    "description": {
     "en": "Writes local JSONL summaries of per-turn tool counts and coarse verification signals without storing prompts, tool arguments, or result text.",
@@ -3289,6 +3535,7 @@
    "name": "qiushi-dsh-evidence-audit",
    "owner": "030611",
    "url": "https://github.com/030611/qiushi-dsh-evidence-audit",
+   "page": "https://awesome-dsh-plugin.com/p/030611/qiushi-dsh-evidence-audit/",
    "category": "dev",
    "description": {
     "en": "Appends local hash-chained JSONL receipts for tool results and session events without storing prompts, tool arguments, result text, or raw session IDs.",
@@ -3303,6 +3550,7 @@
    "name": "sandbox-micro",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/sandbox-micro",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/sandbox-micro/",
    "category": "dev",
    "description": {
     "en": "Support for the microsandbox backend.",
@@ -3317,6 +3565,7 @@
    "name": "sandbox-mxc",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/sandbox-mxc",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/sandbox-mxc/",
    "category": "dev",
    "description": {
     "en": "Microsoft cross-platform sandbox support.",
@@ -3331,6 +3580,7 @@
    "name": "sandbox-nono",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/sandbox-nono",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/sandbox-nono/",
    "category": "dev",
    "description": {
     "en": "Support for the nono sandbox backend.",
@@ -3345,6 +3595,7 @@
    "name": "dsh-agent-budget",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-agent-budget",
+   "page": "https://awesome-dsh-plugin.com/p/vibeinging/dsh-agent-budget/",
    "category": "dev",
    "description": {
     "en": "Agent-tree token budget management.",
@@ -3359,6 +3610,7 @@
    "name": "dsh-polyglot",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-polyglot",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-polyglot/",
    "category": "dev",
    "description": {
     "en": "The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.",
@@ -3373,6 +3625,7 @@
    "name": "dsh-tool-approval",
    "owner": "ilharp",
    "url": "https://github.com/ilharp/dsh-tool-approval",
+   "page": "https://awesome-dsh-plugin.com/p/ilharp/dsh-tool-approval/",
    "category": "dev",
    "description": {
     "en": "Manual approval mode (\"Manual Mode\" / \"Ask Mode\").",
@@ -3387,6 +3640,7 @@
    "name": "dsh-turn-approval",
    "owner": "arrow949",
    "url": "https://github.com/arrow949/dsh-turn-approval",
+   "page": "https://awesome-dsh-plugin.com/p/arrow949/dsh-turn-approval/",
    "category": "dev",
    "description": {
     "en": "Turn-scoped “Allow for this task” approvals: automatically allow matching `danger-full-access` escalations only for the current task, then expire.",
@@ -3401,6 +3655,7 @@
    "name": "plugin-template",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/plugin-template",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/plugin-template/",
    "category": "dev",
    "description": {
     "en": "Plugin template repo (based on the official turtle-ui repo).",
@@ -3415,6 +3670,7 @@
    "name": "dsh-tps",
    "owner": "Small-tailqwq",
    "url": "https://github.com/Small-tailqwq/dsh-tps",
+   "page": "https://awesome-dsh-plugin.com/p/Small-tailqwq/dsh-tps/",
    "category": "dev",
    "description": {
     "en": "A TPS metrics plugin.",
@@ -3429,6 +3685,7 @@
    "name": "dsh-tool-call-stats",
    "owner": "disyli",
    "url": "https://github.com/disyli/dsh-tool-call-stats",
+   "page": "https://awesome-dsh-plugin.com/p/disyli/dsh-tool-call-stats/",
    "category": "dev",
    "description": {
     "en": "Per-process tool-call statistics: a `tool_stats` tool reporting per-tool call counts, error counts, and average durations.",
@@ -3443,6 +3700,7 @@
    "name": "dsh-fail-logger",
    "owner": "Areium",
    "url": "https://github.com/Areium/dsh-fail-logger",
+   "page": "https://awesome-dsh-plugin.com/p/Areium/dsh-fail-logger/",
    "category": "dev",
    "description": {
     "en": "Auto-log failed tool calls across native tools, PTC run_code, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.",
@@ -3457,6 +3715,7 @@
    "name": "dsh-eval-harness",
    "owner": "BiBoyang",
    "url": "https://github.com/BiBoyang/dsh-eval-harness",
+   "page": "https://awesome-dsh-plugin.com/p/BiBoyang/dsh-eval-harness/",
    "category": "dev",
    "description": {
     "en": "Evaluation harness for DSH plugins: YAML cases drive real headless agent runs, assert on tool calls, args, results and token usage, with a baseline gate for CI regression.",
@@ -3471,6 +3730,7 @@
    "name": "oh-dsh",
    "owner": "hust-open-atom-club",
    "url": "https://github.com/hust-open-atom-club/oh-dsh",
+   "page": "https://awesome-dsh-plugin.com/p/hust-open-atom-club/oh-dsh/",
    "category": "dev",
    "description": {
     "en": "Community distribution: TUI, desktop, and Web UI as one bundle with layered installation.",
@@ -3485,6 +3745,7 @@
    "name": "dsh-annotate",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-annotate",
+   "page": "https://awesome-dsh-plugin.com/p/BrambleXu/dsh-annotate/",
    "category": "dev",
    "description": {
     "en": "Select browser elements directly during Vibe Coding and send structured visual feedback to the DeepSeek Harness Agent.",
@@ -3499,6 +3760,7 @@
    "name": "dsh-prompt-profile",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-prompt-profile",
+   "page": "https://awesome-dsh-plugin.com/p/BrambleXu/dsh-prompt-profile/",
    "category": "dev",
    "description": {
     "en": "Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.",
@@ -3513,6 +3775,7 @@
    "name": "dsh-revdiff",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-revdiff",
+   "page": "https://awesome-dsh-plugin.com/p/BrambleXu/dsh-revdiff/",
    "category": "dev",
    "description": {
     "en": "Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.",
@@ -3527,6 +3790,7 @@
    "name": "dsh-gitflow",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-gitflow",
+   "page": "https://awesome-dsh-plugin.com/p/lonelymoon87/dsh-gitflow/",
    "category": "dev",
    "description": {
     "en": "Adds approval-gated Git status, diff, log, commit, branch, and optional checkpoint tools.",
@@ -3541,6 +3805,7 @@
    "name": "dsh-guardian",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-guardian",
+   "page": "https://awesome-dsh-plugin.com/p/lonelymoon87/dsh-guardian/",
    "category": "dev",
    "description": {
     "en": "Adds dangerous-operation policy checks, output redaction, and a security-review workflow.",
@@ -3555,6 +3820,7 @@
    "name": "dsh-plugin-manager",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-plugin-manager",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-plugin-manager/",
    "category": "dev",
    "description": {
     "en": "The `dsh pm` plugin manager: multi-source search (awesome list + GitHub + npm), install/remove/update per profile, and a doctor audit of manifests, bundle patches, and version drift.",
@@ -3569,6 +3835,7 @@
    "name": "dsh-tmuxctl",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-tmuxctl",
+   "page": "https://awesome-dsh-plugin.com/p/Jesse-njx/dsh-tmuxctl/",
    "category": "dev",
    "description": {
     "en": "Take control of your tmux panes: list/send-keys/capture, run long jobs in a pane with watch mode, and approval-gated destructive commands.",
@@ -3583,6 +3850,7 @@
    "name": "dsh-updater-ui",
    "owner": "xingyingyuzhui",
    "url": "https://github.com/xingyingyuzhui/dsh-updater-ui",
+   "page": "https://awesome-dsh-plugin.com/p/xingyingyuzhui/dsh-updater-ui/",
    "category": "dev",
    "description": {
     "en": "DSH self-updater in the settings page: one-click check/pull (`git pull --ff-only`), auto background checks, version diff and changelog preview with a red-dot reminder.",
@@ -3597,6 +3865,7 @@
    "name": "dsh-repro",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-repro",
+   "page": "https://awesome-dsh-plugin.com/p/EvilIrving/dsh-repro/",
    "category": "dev",
    "description": {
     "en": "/repro exports a minimal, secret-scrubbed, replayable problem bundle: the session log, failed commands, and Git diff.",
@@ -3611,6 +3880,7 @@
    "name": "dsh-mcp-panel",
    "owner": "PerryLink",
    "url": "https://github.com/PerryLink/dsh-mcp-panel",
+   "page": "https://awesome-dsh-plugin.com/p/PerryLink/dsh-mcp-panel/",
    "category": "dev",
    "description": {
     "en": "Read-only runtime management panel for the official DSH MCP client: connection status, registered tools, errors, and reconnect counts through the /mcp command and a Settings tab, with sanitized display and enable/disable patch suggestions.",
@@ -3625,6 +3895,7 @@
    "name": "forkprobe",
    "owner": "Jayden-X-L",
    "url": "https://github.com/Jayden-X-L/forkprobe",
+   "page": "https://awesome-dsh-plugin.com/p/Jayden-X-L/forkprobe/",
    "category": "dev",
    "description": {
     "en": "Compare multiple skills on the same task and pick the winner.",
@@ -3639,6 +3910,7 @@
    "name": "plugin-registry",
    "owner": "vlln",
    "url": "https://github.com/vlln/plugin-registry",
+   "page": "https://awesome-dsh-plugin.com/p/vlln/plugin-registry/",
    "category": "dev",
    "description": {
     "en": "Ecosystem infrastructure: a thin browser console for managing official repository plugins (zero patches) plus a make-dsh-plugin skill for guided plugin development.",
@@ -3653,6 +3925,7 @@
    "name": "dsh-multica-runtime",
    "owner": "forrestchang",
    "url": "https://github.com/forrestchang/dsh-multica-runtime",
+   "page": "https://awesome-dsh-plugin.com/p/forrestchang/dsh-multica-runtime/",
    "category": "dev",
    "description": {
     "en": "Run the dsh runtime on Multica.",
@@ -3667,6 +3940,7 @@
    "name": "dsh-user-experience",
    "owner": "DietCokewithSugar",
    "url": "https://github.com/DietCokewithSugar/dsh-user-experience",
+   "page": "https://awesome-dsh-plugin.com/p/DietCokewithSugar/dsh-user-experience/",
    "category": "dev",
    "description": {
     "en": "Finds potential UX issues in your project: automatically reviews React/TypeScript code, pinpoints each problem, and gives concrete suggestions.",
@@ -3681,6 +3955,7 @@
    "name": "dsh-cost-tracker",
    "owner": "yflmq001",
    "url": "https://github.com/yflmq001/dsh-cost-tracker",
+   "page": "https://awesome-dsh-plugin.com/p/yflmq001/dsh-cost-tracker/",
    "category": "dev",
    "description": {
     "en": "Per-model token cost tracking with configurable cache-hit/miss, output and peak-window pricing, a live session cost bar, and unconfigured-model flags.",
@@ -3695,6 +3970,7 @@
    "name": "dsh-passwords",
    "owner": "slywalker2006",
    "url": "https://github.com/slywalker2006/dsh-passwords",
+   "page": "https://awesome-dsh-plugin.com/p/slywalker2006/dsh-passwords/",
    "category": "dev",
    "description": {
     "en": "Login gateway for the DSH web UI: password door with first-run setup, bcrypt + at-rest encryption (AES-256-GCM/HMAC), brute-force lockout, audit log, TLS 1.2+ with 80→443 redirect, CSRF, anti-framing.",
@@ -3709,6 +3985,7 @@
    "name": "dsh-webui-auth",
    "owner": "Yuuz12",
    "url": "https://github.com/Yuuz12/dsh-webui-auth",
+   "page": "https://awesome-dsh-plugin.com/p/Yuuz12/dsh-webui-auth/",
    "category": "dev",
    "description": {
     "en": "WebUI authentication enforced at the HTTP/transport layer: four-layer login gate (resources, plugin bundles, /api, WebSocket), server-side sessions with HttpOnly cookies.",
@@ -3723,6 +4000,7 @@
    "name": "dsh-lan-access",
    "owner": "Leon0555",
    "url": "https://github.com/Leon0555/dsh-lan-access",
+   "page": "https://awesome-dsh-plugin.com/p/Leon0555/dsh-lan-access/",
    "category": "dev",
    "description": {
     "en": "LAN access for the Web GUI: 0.0.0.0 bind plus a crypto.randomUUID polyfill for non-secure (LAN HTTP) contexts.",
@@ -3737,6 +4015,7 @@
    "name": "dsh-ads",
    "owner": "Nagi-ovo",
    "url": "https://github.com/Nagi-ovo/dsh-ads",
+   "page": "https://awesome-dsh-plugin.com/p/Nagi-ovo/dsh-ads/",
    "category": "fun",
    "description": {
     "en": "Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.",
@@ -3751,6 +4030,7 @@
    "name": "dsh-gomoku",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-gomoku",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-gomoku/",
    "category": "fun",
    "description": {
     "en": "Play Gomoku against the AI, or let two AIs battle it out.",
@@ -3765,6 +4045,7 @@
    "name": "dsh-stock-market",
    "owner": "AnacondaKC",
    "url": "https://github.com/AnacondaKC/dsh-stock-market",
+   "page": "https://awesome-dsh-plugin.com/p/AnacondaKC/dsh-stock-market/",
    "category": "fun",
    "description": {
     "en": "Fixes the bug where your account can't lose money while you code.",
@@ -3779,6 +4060,7 @@
    "name": "dsh-emoji",
    "owner": "hellodigua",
    "url": "https://github.com/hellodigua/dsh-emoji",
+   "page": "https://awesome-dsh-plugin.com/p/hellodigua/dsh-emoji/",
    "category": "fun",
    "description": {
     "en": "Automatically add emojis to AI replies.",
@@ -3793,6 +4075,7 @@
    "name": "dsh-minigames",
    "owner": "lhh010",
    "url": "https://github.com/lhh010/dsh-minigames",
+   "page": "https://awesome-dsh-plugin.com/p/lhh010/dsh-minigames/",
    "category": "fun",
    "description": {
     "en": "Side-panel arcade: 18 offline mini-games to play while the model thinks.",
@@ -3807,6 +4090,7 @@
    "name": "dsh-stickers",
    "owner": "william-jin-cmu",
    "url": "https://github.com/william-jin-cmu/dsh-stickers",
+   "page": "https://awesome-dsh-plugin.com/p/william-jin-cmu/dsh-stickers/",
    "category": "fun",
    "description": {
     "en": "Bidirectional sticker reactions between user and agent.",
@@ -3821,6 +4105,7 @@
    "name": "whale-girl",
    "owner": "vlln",
    "url": "https://github.com/vlln/whale-girl",
+   "page": "https://awesome-dsh-plugin.com/p/vlln/whale-girl/",
    "category": "fun",
    "description": {
     "en": "Desktop pet (QQ-pet style): floats in the corner, draggable, feedable, playable.",
@@ -3835,6 +4120,7 @@
    "name": "deepseek-manners",
    "owner": "Moeblack",
    "url": "https://github.com/Moeblack/deepseek-manners",
+   "page": "https://awesome-dsh-plugin.com/p/Moeblack/deepseek-manners/",
    "category": "fun",
    "description": {
     "en": "Append a thank-you note after every message. Mind your manners.",
@@ -3849,6 +4135,7 @@
    "name": "dsh-plugin-d399",
    "owner": "HuanLinOTO",
    "url": "https://github.com/HuanLinOTO/dsh-plugin-d399",
+   "page": "https://awesome-dsh-plugin.com/p/HuanLinOTO/dsh-plugin-d399/",
    "category": "fun",
    "description": {
     "en": "Pops up a mini-game menu (wordle, match-3, extensible) while the model generates.",
@@ -3863,6 +4150,7 @@
    "name": "dsh-auto-chess",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-auto-chess",
+   "page": "https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-auto-chess/",
    "category": "fun",
    "description": {
     "en": "Auto chess: human vs AI, or AI vs AI.",
@@ -3877,6 +4165,7 @@
    "name": "dsh-douyin",
    "owner": "AnacondaKC",
    "url": "https://github.com/AnacondaKC/dsh-douyin",
+   "page": "https://awesome-dsh-plugin.com/p/AnacondaKC/dsh-douyin/",
    "category": "fun",
    "description": {
     "en": "Short-video sidebar: native player, series navigation, precise history replay.",
@@ -3891,6 +4180,7 @@
    "name": "DeepSeek-Harness-Pet",
    "owner": "minybear",
    "url": "https://github.com/minybear/DeepSeek-Harness-Pet",
+   "page": "https://awesome-dsh-plugin.com/p/minybear/DeepSeek-Harness-Pet/",
    "category": "fun",
    "description": {
     "en": "Codex-style desktop pet: a floating animated sprite in the corner that mirrors the agent's running state (working, waiting, failed, done).",
@@ -3905,6 +4195,7 @@
    "name": "dsh-web-search-pro",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-web-search-pro",
+   "page": "https://awesome-dsh-plugin.com/p/anweat/dsh-web-search-pro/",
    "category": "fun",
    "description": {
     "en": "Persistent enhanced web search: multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/Bilibili/YouTube/V2EX/Xiaohongshu/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, Playwright rendering.",
@@ -3919,6 +4210,7 @@
    "name": "dsh-browser",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-browser",
+   "page": "https://awesome-dsh-plugin.com/p/anweat/dsh-browser/",
    "category": "fun",
    "description": {
     "en": "Self-contained browser runtime: Playwright (chromium) + OpenCLI as plugin-local dependencies (global reuse fallback), exposes a `browser` service and 9 interactive browser tools.",
@@ -3933,6 +4225,7 @@
    "name": "dsh-voice-webspeech",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-voice-webspeech",
+   "page": "https://awesome-dsh-plugin.com/p/anweat/dsh-voice-webspeech/",
    "category": "fun",
    "description": {
     "en": "Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).",
@@ -3947,6 +4240,7 @@
    "name": "dsh-restart",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-restart",
+   "page": "https://awesome-dsh-plugin.com/p/anweat/dsh-restart/",
    "category": "fun",
    "description": {
     "en": "Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.",
@@ -3961,6 +4255,7 @@
    "name": "dsh-expression",
    "owner": "yyh-001",
    "url": "https://github.com/yyh-001/dsh-expression",
+   "page": "https://awesome-dsh-plugin.com/p/yyh-001/dsh-expression/",
    "category": "fun",
    "description": {
     "en": "Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.",
@@ -3975,6 +4270,7 @@
    "name": "dsh-pet#dsh-pet",
    "owner": "PC2005-cloud",
    "url": "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet",
+   "page": "https://awesome-dsh-plugin.com/p/PC2005-cloud/dsh-pet--dsh-pet/",
    "category": "fun",
    "description": {
     "en": "Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.",
@@ -3982,7 +4278,7 @@
    },
    "npm": null,
    "stars": null,
-   "install": "dsh plugin --profile web add github:PC2005-cloud/dsh-pet/tree/main/dsh-pet",
+   "install": "dsh plugin --profile web add github:PC2005-cloud/dsh-pet#path:/dsh-pet",
    "added": "2026-08-14"
   }
  ]

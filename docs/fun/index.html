@@ -131,6 +131,18 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .mark g{fill:var(--text)}
 .mark .plug-block{fill:var(--accent)}
 
+/* ── market strip ── */
+.market{border-block-end:1px solid var(--text);background:var(--accent-tint)}
+.market .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:center;padding-block:.7rem}
+.market .lead{font-size:.9rem;color:var(--text-2)}
+.market .lead b{color:var(--accent-strong)}
+.market .cart{flex:none;font-size:1rem}
+.market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
+  border:1px solid var(--text-3);padding:.3rem .6rem;white-space:nowrap}
+.market .copy{margin:0}
+.market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
+@media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
+
 /* ── sticky finder ── */
 .finder{position:sticky;top:0;z-index:5;background:color-mix(in oklch, var(--canvas-0) 92%, transparent);
   backdrop-filter:blur(8px);border-block-end:1px solid var(--text)}
@@ -139,8 +151,7 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .finder input{flex:1;background:none;border:none;outline:none;color:var(--text);font:inherit;font-size:1rem;caret-color:var(--accent);min-width:0}
 .finder input::placeholder{color:var(--text-3)}
 .finder .count{font-family:var(--mono);font-size:.74rem;color:var(--text-3);white-space:nowrap;font-variant-numeric:tabular-nums}
-.filters{display:flex;gap:.45rem;overflow-x:auto;padding-block:0 .75rem;scrollbar-width:none}
-.filters::-webkit-scrollbar{display:none}
+.filters{display:flex;flex-wrap:wrap;gap:.45rem;padding-block:0 .75rem}
 .chip{font-family:var(--mono);font-size:.72rem;color:var(--text-2);background:none;white-space:nowrap;
   border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer}
 .chip small{color:var(--text-3);font-size:.66rem}
@@ -181,7 +192,10 @@ li.item:hover .no{transform:translateX(5px)}
 .dex h3{font-weight:700;font-size:1.12rem;letter-spacing:-.005em;line-height:1.35;text-wrap:balance}
 .dex h3 a{color:var(--text)}
 .dex h3 a:hover{color:var(--accent-strong);text-decoration:none}
-.dex h3 .stars{font-family:var(--mono);font-weight:400;font-size:.72rem;color:var(--text-3);margin-left:.55em;vertical-align:.1em}
+.dex h3 .stars{font-family:var(--mono);font-weight:400;font-size:.74rem;color:var(--text-2);margin-left:.55em;vertical-align:.1em}
+.dex h3 .stars::first-letter{color:var(--accent)}
+.dex h3 .ext{font-size:.78rem;color:var(--text-3);margin-left:.45em;vertical-align:.05em}
+.dex h3 .ext:hover{color:var(--accent-strong)}
 .by{font-family:var(--mono);font-size:.7rem;color:var(--text-3);margin-left:.5rem;font-weight:400}
 .dex p{margin-top:.25rem;color:var(--text-2);font-size:.92rem;max-width:46rem;overflow-wrap:break-word}
 .copy{align-self:start;margin-top:.3rem;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
@@ -276,6 +290,16 @@ footer{padding-block:0 3rem}
   </div>
 </header>
 
+<div class="market">
+  <div class="wrap">
+    <span class="cart" aria-hidden="true">🛒</span>
+    <span class="lead"><b>dsh-market</b> — browse and install everything on this list inside DeepSeek Harness</span>
+    <code translate="no">dsh plugin --profile web add dshmarket</code>
+    <button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="Copy install command">copy install</button>
+    <a class="about" href="https://github.com/dsh-market/dsh-market" rel="noopener">About dsh-market ↗</a>
+  </div>
+</div>
+
 <div class="finder">
   <div class="wrap">
     <div class="row1">
@@ -285,11 +309,11 @@ footer{padding-block:0 3rem}
       <span class="count" id="count" aria-live="polite">0 / 0</span>
     </div>
     <div class="filters" id="filters">
-      <a class="chip" href="/">All <small>281</small></a>
+      <a class="chip" href="/">All <small>282</small></a>
       <a class="chip" href="/ui/">UI Enhancements <small>61</small></a>
       <a class="chip" href="/theme/">Themes & Appearance <small>3</small></a>
       <a class="chip" href="/session/">Sessions & Messages <small>19</small></a>
-      <a class="chip" href="/memory/">Memory <small>15</small></a>
+      <a class="chip" href="/memory/">Memory <small>16</small></a>
       <a class="chip" href="/tools/">Tools & Capabilities <small>76</small></a>
       <a class="chip" href="/skill/">Skills <small>2</small></a>
       <a class="chip" href="/workflow/">Workflow & Automation <small>20</small></a>
@@ -309,7 +333,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.02s">
       <span class="no" aria-hidden="true">№ 01</span>
       <div>
-        <h3><a href="https://github.com/Nagi-ovo/dsh-ads" rel="noopener" translate="no">Nagi-ovo/dsh-ads</a><span class="stars" translate="no">★ 277</span></h3>
+        <h3><a href="/p/Nagi-ovo/dsh-ads/" translate="no">Nagi-ovo/dsh-ads</a><span class="stars" translate="no">★ 277</span><a class="ext" href="https://github.com/Nagi-ovo/dsh-ads" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Nagi-ovo/dsh-ads" aria-label="Copy install command">copy install</button>
@@ -318,7 +342,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.04s">
       <span class="no" aria-hidden="true">№ 02</span>
       <div>
-        <h3><a href="https://github.com/omdsh-dev/dsh-gomoku" rel="noopener" translate="no">omdsh-dev/dsh-gomoku</a><span class="stars" translate="no">★ 10</span></h3>
+        <h3><a href="/p/omdsh-dev/dsh-gomoku/" translate="no">omdsh-dev/dsh-gomoku</a><span class="stars" translate="no">★ 10</span><a class="ext" href="https://github.com/omdsh-dev/dsh-gomoku" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Play Gomoku against the AI, or let two AIs battle it out.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-gomoku" aria-label="Copy install command">copy install</button>
@@ -327,7 +351,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.06s">
       <span class="no" aria-hidden="true">№ 03</span>
       <div>
-        <h3><a href="https://github.com/AnacondaKC/dsh-stock-market" rel="noopener" translate="no">AnacondaKC/dsh-stock-market</a><span class="stars" translate="no">★ 9</span></h3>
+        <h3><a href="/p/AnacondaKC/dsh-stock-market/" translate="no">AnacondaKC/dsh-stock-market</a><span class="stars" translate="no">★ 9</span><a class="ext" href="https://github.com/AnacondaKC/dsh-stock-market" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Fixes the bug where your account can't lose money while you code.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:AnacondaKC/dsh-stock-market" aria-label="Copy install command">copy install</button>
@@ -336,7 +360,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.08s">
       <span class="no" aria-hidden="true">№ 04</span>
       <div>
-        <h3><a href="https://github.com/hellodigua/dsh-emoji" rel="noopener" translate="no">hellodigua/dsh-emoji</a><span class="stars" translate="no">★ 9</span></h3>
+        <h3><a href="/p/hellodigua/dsh-emoji/" translate="no">hellodigua/dsh-emoji</a><span class="stars" translate="no">★ 9</span><a class="ext" href="https://github.com/hellodigua/dsh-emoji" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Automatically add emojis to AI replies.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:hellodigua/dsh-emoji" aria-label="Copy install command">copy install</button>
@@ -345,7 +369,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.10s">
       <span class="no" aria-hidden="true">№ 05</span>
       <div>
-        <h3><a href="https://github.com/lhh010/dsh-minigames" rel="noopener" translate="no">lhh010/dsh-minigames</a><span class="stars" translate="no">★ 11</span></h3>
+        <h3><a href="/p/lhh010/dsh-minigames/" translate="no">lhh010/dsh-minigames</a><span class="stars" translate="no">★ 11</span><a class="ext" href="https://github.com/lhh010/dsh-minigames" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Side-panel arcade: 18 offline mini-games to play while the model thinks.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lhh010/dsh-minigames" aria-label="Copy install command">copy install</button>
@@ -354,7 +378,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.12s">
       <span class="no" aria-hidden="true">№ 06</span>
       <div>
-        <h3><a href="https://github.com/william-jin-cmu/dsh-stickers" rel="noopener" translate="no">william-jin-cmu/dsh-stickers</a><span class="stars" translate="no">★ 8</span></h3>
+        <h3><a href="/p/william-jin-cmu/dsh-stickers/" translate="no">william-jin-cmu/dsh-stickers</a><span class="stars" translate="no">★ 8</span><a class="ext" href="https://github.com/william-jin-cmu/dsh-stickers" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Bidirectional sticker reactions between user and agent.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:william-jin-cmu/dsh-stickers" aria-label="Copy install command">copy install</button>
@@ -363,7 +387,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.14s">
       <span class="no" aria-hidden="true">№ 07</span>
       <div>
-        <h3><a href="https://github.com/vlln/whale-girl" rel="noopener" translate="no">vlln/whale-girl</a><span class="stars" translate="no">★ 106</span></h3>
+        <h3><a href="/p/vlln/whale-girl/" translate="no">vlln/whale-girl</a><span class="stars" translate="no">★ 106</span><a class="ext" href="https://github.com/vlln/whale-girl" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Desktop pet (QQ-pet style): floats in the corner, draggable, feedable, playable.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vlln/whale-girl" aria-label="Copy install command">copy install</button>
@@ -372,7 +396,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.16s">
       <span class="no" aria-hidden="true">№ 08</span>
       <div>
-        <h3><a href="https://github.com/Moeblack/deepseek-manners" rel="noopener" translate="no">Moeblack/deepseek-manners</a><span class="stars" translate="no">★ 4</span></h3>
+        <h3><a href="/p/Moeblack/deepseek-manners/" translate="no">Moeblack/deepseek-manners</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/Moeblack/deepseek-manners" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Append a thank-you note after every message. Mind your manners.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Moeblack/deepseek-manners" aria-label="Copy install command">copy install</button>
@@ -381,7 +405,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.18s">
       <span class="no" aria-hidden="true">№ 09</span>
       <div>
-        <h3><a href="https://github.com/HuanLinOTO/dsh-plugin-d399" rel="noopener" translate="no">HuanLinOTO/dsh-plugin-d399</a><span class="stars" translate="no">★ 4</span></h3>
+        <h3><a href="/p/HuanLinOTO/dsh-plugin-d399/" translate="no">HuanLinOTO/dsh-plugin-d399</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/HuanLinOTO/dsh-plugin-d399" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Pops up a mini-game menu (wordle, match-3, extensible) while the model generates.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-d399" aria-label="Copy install command">copy install</button>
@@ -390,7 +414,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.20s">
       <span class="no" aria-hidden="true">№ 10</span>
       <div>
-        <h3><a href="https://github.com/omdsh-dev/dsh-auto-chess" rel="noopener" translate="no">omdsh-dev/dsh-auto-chess</a><span class="stars" translate="no">★ 2</span></h3>
+        <h3><a href="/p/omdsh-dev/dsh-auto-chess/" translate="no">omdsh-dev/dsh-auto-chess</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-auto-chess" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Auto chess: human vs AI, or AI vs AI.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-auto-chess" aria-label="Copy install command">copy install</button>
@@ -399,7 +423,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.22s">
       <span class="no" aria-hidden="true">№ 11</span>
       <div>
-        <h3><a href="https://github.com/AnacondaKC/dsh-douyin" rel="noopener" translate="no">AnacondaKC/dsh-douyin</a><span class="stars" translate="no">★ 2</span></h3>
+        <h3><a href="/p/AnacondaKC/dsh-douyin/" translate="no">AnacondaKC/dsh-douyin</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/AnacondaKC/dsh-douyin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Short-video sidebar: native player, series navigation, precise history replay.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:AnacondaKC/dsh-douyin" aria-label="Copy install command">copy install</button>
@@ -408,7 +432,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.24s">
       <span class="no" aria-hidden="true">№ 12</span>
       <div>
-        <h3><a href="https://github.com/minybear/DeepSeek-Harness-Pet" rel="noopener" translate="no">minybear/DeepSeek-Harness-Pet</a><span class="stars" translate="no">★ 0</span></h3>
+        <h3><a href="/p/minybear/DeepSeek-Harness-Pet/" translate="no">minybear/DeepSeek-Harness-Pet</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/minybear/DeepSeek-Harness-Pet" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Codex-style desktop pet: a floating animated sprite in the corner that mirrors the agent's running state (working, waiting, failed, done).</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:minybear/DeepSeek-Harness-Pet" aria-label="Copy install command">copy install</button>
@@ -417,43 +441,43 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.26s">
       <span class="no" aria-hidden="true">№ 13</span>
       <div>
-        <h3><a href="https://github.com/anweat/dsh-web-search-pro" rel="noopener" translate="no">anweat/dsh-web-search-pro</a><span class="stars" translate="no">★ 3</span></h3>
+        <h3><a href="/p/anweat/dsh-web-search-pro/" translate="no">anweat/dsh-web-search-pro</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/anweat/dsh-web-search-pro" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Persistent enhanced web search: multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/Bilibili/YouTube/V2EX/Xiaohongshu/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, Playwright rendering.</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:anweat/dsh-web-search-pro" aria-label="Copy install command">copy install</button>
+      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-web-search-pro" aria-label="Copy install command">copy install</button>
     </li>
 
     <li class="item" data-cat="fun" style="animation-delay:0.28s">
       <span class="no" aria-hidden="true">№ 14</span>
       <div>
-        <h3><a href="https://github.com/anweat/dsh-browser" rel="noopener" translate="no">anweat/dsh-browser</a><span class="stars" translate="no">★ 1</span></h3>
+        <h3><a href="/p/anweat/dsh-browser/" translate="no">anweat/dsh-browser</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/anweat/dsh-browser" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Self-contained browser runtime: Playwright (chromium) + OpenCLI as plugin-local dependencies (global reuse fallback), exposes a `browser` service and 9 interactive browser tools.</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:anweat/dsh-browser" aria-label="Copy install command">copy install</button>
+      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @anweat/dsh-browser" aria-label="Copy install command">copy install</button>
     </li>
 
     <li class="item" data-cat="fun" style="animation-delay:0.30s">
       <span class="no" aria-hidden="true">№ 15</span>
       <div>
-        <h3><a href="https://github.com/anweat/dsh-voice-webspeech" rel="noopener" translate="no">anweat/dsh-voice-webspeech</a><span class="stars" translate="no">★ 0</span></h3>
+        <h3><a href="/p/anweat/dsh-voice-webspeech/" translate="no">anweat/dsh-voice-webspeech</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/anweat/dsh-voice-webspeech" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:anweat/dsh-voice-webspeech" aria-label="Copy install command">copy install</button>
+      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-voice-webspeech" aria-label="Copy install command">copy install</button>
     </li>
 
     <li class="item" data-cat="fun" style="animation-delay:0.32s">
       <span class="no" aria-hidden="true">№ 16</span>
       <div>
-        <h3><a href="https://github.com/anweat/dsh-restart" rel="noopener" translate="no">anweat/dsh-restart</a><span class="stars" translate="no">★ 1</span></h3>
+        <h3><a href="/p/anweat/dsh-restart/" translate="no">anweat/dsh-restart</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/anweat/dsh-restart" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:anweat/dsh-restart" aria-label="Copy install command">copy install</button>
+      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-restart" aria-label="Copy install command">copy install</button>
     </li>
 
     <li class="item" data-cat="fun" style="animation-delay:0.34s">
       <span class="no" aria-hidden="true">№ 17</span>
       <div>
-        <h3><a href="https://github.com/yyh-001/dsh-expression" rel="noopener" translate="no">yyh-001/dsh-expression</a></h3>
+        <h3><a href="/p/yyh-001/dsh-expression/" translate="no">yyh-001/dsh-expression</a><a class="ext" href="https://github.com/yyh-001/dsh-expression" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:yyh-001/dsh-expression" aria-label="Copy install command">copy install</button>
@@ -462,7 +486,7 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="fun" style="animation-delay:0.36s">
       <span class="no" aria-hidden="true">№ 18</span>
       <div>
-        <h3><a href="https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet" rel="noopener" translate="no">PC2005-cloud/dsh-pet#dsh-pet</a></h3>
+        <h3><a href="/p/PC2005-cloud/dsh-pet--dsh-pet/" translate="no">PC2005-cloud/dsh-pet#dsh-pet</a><a class="ext" href="https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.</p>
       </div>
       <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:PC2005-cloud/dsh-pet#path:/dsh-pet" aria-label="Copy install command">copy install</button>
@@ -550,7 +574,7 @@ document.getElementById('clearFilter').addEventListener('click', () => {
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
   applyFilter();
 });
-document.getElementById('dex').addEventListener('click', async (e) => {
+document.addEventListener('click', async (e) => {
   const btn = e.target.closest('.copy');
   if (!btn) return;
   try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
