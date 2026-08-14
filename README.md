@@ -10,7 +10,7 @@ DeepSeek Harness is DeepSeek's open-source agent harness — a runnable coding a
 
 This list collects community plugins that are installable via `dsh plugin add` (each declares a `dsh.bundle` manifest).
 
-> 🛒 **NEW — [dsh-market](https://github.com/dsh-market/dsh-market): the visual plugin market.** Everything on this list, browsable inside DeepSeek Harness itself — search, star counts, one-click install/update/uninstall, most plugins live without a restart. `dsh plugin --profile web add dshmarket`
+> 🛒 **NEW — [dsh-market](https://github.com/dsh-market/dsh-market#readme): the visual plugin market.** Everything on this list, browsable inside DeepSeek Harness itself — search, star counts, one-click install/update/uninstall, most plugins live without a restart. `dsh plugin --profile web add dshmarket`
 
 > 💡 New here? Install [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) first — then just ask your agent to find plugins for you: `dsh plugin --profile web add dsh-find-plugin`
 
