@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 245,
+ "count": 246,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -2486,6 +2486,20 @@
    "stars": 6,
    "install": "dsh plugin --profile web add github:bill9109/dsh-web-ui-notify",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-plugins#pet-bridge",
+   "owner": "wsxwj123",
+   "url": "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/pet-bridge",
+   "category": "notify",
+   "description": {
+    "en": "Bridge dsh session status to the cc-pet desktop pet bubble: thinking, tool calls, and completion in real time.",
+    "zh": "dsh ↔ cc-pet 桌面宠物状态桥：把会话状态（思考中 / 读取文件 / 运行命令 / 完成）实时推送到桌面宠物气泡。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins/tree/main/packages/pet-bridge",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-webbridge",
