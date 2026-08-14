@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 345,
+ "count": 349,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1942,6 +1942,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "unified-agent-memory",
+   "owner": "Noelune",
+   "url": "https://github.com/Noelune/unified-agent-memory",
+   "page": "https://awesome-dsh-plugin.com/p/Noelune/unified-agent-memory/",
+   "category": "memory",
+   "description": {
+    "en": "One shared Obsidian vault for every agent: dependency-free Python core (search/promote/adjudicate/forget), vault template, dsh plugin (memory_search/show/submit/status).",
+    "zh": "多 Agent 共享一个 Obsidian vault：零依赖 Python core（检索/晋升/裁决/遗忘）+ vault 模板 + dsh 插件（memory_search/show/submit/status）。"
+   },
+   "npm": "dsh-unified-agent-memory",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-unified-agent-memory",
+   "added": "2026-08-14"
+  },
+  {
    "name": "godot-bridge",
    "owner": "Smalldy",
    "url": "https://github.com/Smalldy/godot-bridge",
@@ -3307,6 +3322,36 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-wsl-workspace",
+   "owner": "6Mikao9",
+   "url": "https://github.com/6Mikao9/dsh-wsl-workspace",
+   "page": "https://awesome-dsh-plugin.com/p/6Mikao9/dsh-wsl-workspace/",
+   "category": "tools",
+   "description": {
+    "en": "Add a WSL workspace from the web GUI without needing to install dsh or related tools again inside WSL. Bash commands and file read/write operations run within the local WSL distribution on the host machine, while Windows files remain accessible.",
+    "zh": "从 Web GUI 添加 WSL 工作区，无需在 WSL 之中再次安装 dsh 以及相关工具，bash 命令与文件读写运行在本机 WSL 发行版内，Windows 文件仍可访问。"
+   },
+   "npm": "dsh-wsl-workspace",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-wsl-workspace",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-trajectory-governance",
+   "owner": "dfycaly98931680",
+   "url": "https://github.com/dfycaly98931680/dsh-trajectory-governance",
+   "page": "https://awesome-dsh-plugin.com/p/dfycaly98931680/dsh-trajectory-governance/",
+   "category": "tools",
+   "description": {
+    "en": "Agent trajectory governance and anomaly diagnosis: rebuilds flat session logs into multi-branch trajectory trees, detects loop deadlock, invalid retry, and goal drift, alerts with cost attribution, one-click interrupt and breakpoint fork via official APIs, independent GUI tab.",
+    "zh": "Agent 轨迹治理与异常诊断：把平铺会话日志重建为多分支轨迹树，识别循环死锁/无效重试/目标漂移，带成本归因的告警与一键中断/断点分支（官方 API），独立 GUI Tab。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:dfycaly98931680/dsh-trajectory-governance",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-project-organizer",
    "owner": "caoqinnan-web",
    "url": "https://github.com/caoqinnan-web/dsh-project-organizer",
@@ -3784,6 +3829,21 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:severin-ye/uagent-sync#path:/packages/dsh",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-agent-relay",
+   "owner": "Noelune",
+   "url": "https://github.com/Noelune/dsh-agent-relay",
+   "page": "https://awesome-dsh-plugin.com/p/Noelune/dsh-agent-relay/",
+   "category": "workflow",
+   "description": {
+    "en": "Loopback-first multi-agent message relay: HMAC-authenticated broker plus dsh plugin (relay_send/recv/peers/history), zero-dependency CLI and Python clients, wire protocol v1.0.",
+    "zh": "本地优先的多 Agent 协作中继：HMAC 认证 broker + dsh 插件（relay_send/recv/peers/history）+ 零依赖 CLI 与 Python 客户端，wire protocol v1.0。"
+   },
+   "npm": "dsh-agent-relay",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-agent-relay",
    "added": "2026-08-14"
   },
   {

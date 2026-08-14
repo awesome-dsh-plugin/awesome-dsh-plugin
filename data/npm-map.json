@@ -31,6 +31,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/6Mikao9/dsh-wsl-workspace": {
+  "npm": "dsh-wsl-workspace",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/a903067276-rgb/dsh-file-mentions": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -248,6 +252,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/CZX2244/dsh-bilibili": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/dfycaly98931680/dsh-trajectory-governance": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -789,6 +797,14 @@
  },
  "https://github.com/NanmiCoder/dsh-agent-teams": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Noelune/dsh-agent-relay": {
+  "npm": "dsh-agent-relay",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Noelune/unified-agent-memory": {
+  "npm": "dsh-unified-agent-memory",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/nonewind/dsh-spend": {
