@@ -131,6 +131,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-track](https://github.com/fakechris/dsh-track) - Embedded task management engine: decision-point protocol, idea capture wall, Linear-style issue store.
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) - Pair a second model that passively reviews each turn and injects notes.
 - [dsh-specflow](https://github.com/lonelymoon87/dsh-specflow) - Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.
+- [dsh-projects](https://github.com/Alexis-fish/dsh-projects) - Codex-style projects for DSH: isolated named work units with a persistent background/goal description injected into every bound session (default on, toggle per session).
 
 ### Notifications & Integrations
 

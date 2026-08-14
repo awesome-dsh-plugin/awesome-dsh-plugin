@@ -131,6 +131,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 - [dsh-track](https://github.com/fakechris/dsh-track) — 嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) — 搭配一个副模型，每轮被动审查并注入见解。
 - [dsh-specflow](https://github.com/lonelymoon87/dsh-specflow) — 增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。
+- [dsh-projects](https://github.com/Alexis-fish/dsh-projects) — 类 Codex 项目工作区：创建相互隔离的命名项目并设定背景/目标说明，按会话注入（默认开，可单独关闭）。
 
 ### 🔔 通知与集成
 
