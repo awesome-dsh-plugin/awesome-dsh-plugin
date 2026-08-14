@@ -13,6 +13,13 @@
     <summary>GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.</summary>
   </entry>
   <entry>
+    <title>starslittle/dsh-blue-whale</title>
+    <id>https://github.com/starslittle/dsh-blue-whale</id>
+    <link href="https://github.com/starslittle/dsh-blue-whale"/>
+    <updated>2026-08-14T17:52:18.112Z</updated>
+    <summary>DeepSeek-Chat-style blue-whale skin: brand #4D6BFE on light and dark, following the built-in appearance.</summary>
+  </entry>
+  <entry>
     <title>PwnKY/dsh-session-link</title>
     <id>https://github.com/PwnKY/dsh-session-link</id>
     <link href="https://github.com/PwnKY/dsh-session-link"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/l541402398/dsh-file-uploads"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.</summary>
-  </entry>
-  <entry>
-    <title>Ghost011118/dsh-balance-meter</title>
-    <id>https://github.com/Ghost011118/dsh-balance-meter</id>
-    <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
   </entry>
 </feed>
