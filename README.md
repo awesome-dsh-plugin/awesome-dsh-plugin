@@ -92,6 +92,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) - Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.
 - [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) - Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.
 - [LaoYueHanNi/dsh-token-usage](https://github.com/LaoYueHanNi/dsh-token-usage) - Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.
+- [QT-Chen/dsh-mic-input](https://github.com/QT-Chen/dsh-mic-input) - Microphone voice input for the composer: browser Web Speech API live transcription, dedupe/auto-continue, smart punctuation, language and auto-send settings.
 
 
 ### Themes & Appearance
