@@ -160,21 +160,21 @@
     <summary>Community distribution: TUI, desktop, and Web UI as one bundle with layered installation.</summary>
   </entry>
   <entry>
-    <title>BrambleXu/dsh-annotate</title>
+    <title>dsh-annotate</title>
     <id>https://github.com/BrambleXu/dsh-annotate</id>
     <link href="https://github.com/BrambleXu/dsh-annotate"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Select browser elements directly during Vibe Coding and send structured visual feedback to the DeepSeek Harness Agent.</summary>
   </entry>
   <entry>
-    <title>BrambleXu/dsh-prompt-profile</title>
+    <title>dsh-prompt-profile</title>
     <id>https://github.com/BrambleXu/dsh-prompt-profile</id>
     <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.</summary>
   </entry>
   <entry>
-    <title>BrambleXu/dsh-revdiff</title>
+    <title>dsh-revdiff</title>
     <id>https://github.com/BrambleXu/dsh-revdiff</id>
     <link href="https://github.com/BrambleXu/dsh-revdiff"/>
     <updated>2026-08-14T00:00:00Z</updated>

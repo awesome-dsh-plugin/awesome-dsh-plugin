@@ -1320,7 +1320,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "BrambleXu/dsh-annotate",
+   "name": "dsh-annotate",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-annotate",
    "category": "dev",
@@ -1332,7 +1332,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "BrambleXu/dsh-prompt-profile",
+   "name": "dsh-prompt-profile",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-prompt-profile",
    "category": "dev",
@@ -1344,7 +1344,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "BrambleXu/dsh-revdiff",
+   "name": "dsh-revdiff",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-revdiff",
    "category": "dev",

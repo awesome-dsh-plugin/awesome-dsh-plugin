@@ -160,21 +160,21 @@
     <summary>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</summary>
   </entry>
   <entry>
-    <title>BrambleXu/dsh-annotate</title>
+    <title>dsh-annotate</title>
     <id>https://github.com/BrambleXu/dsh-annotate</id>
     <link href="https://github.com/BrambleXu/dsh-annotate"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。</summary>
   </entry>
   <entry>
-    <title>BrambleXu/dsh-prompt-profile</title>
+    <title>dsh-prompt-profile</title>
     <id>https://github.com/BrambleXu/dsh-prompt-profile</id>
     <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。</summary>
   </entry>
   <entry>
-    <title>BrambleXu/dsh-revdiff</title>
+    <title>dsh-revdiff</title>
     <id>https://github.com/BrambleXu/dsh-revdiff</id>
     <link href="https://github.com/BrambleXu/dsh-revdiff"/>
     <updated>2026-08-14T00:00:00Z</updated>
