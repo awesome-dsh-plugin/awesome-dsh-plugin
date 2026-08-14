@@ -349,6 +349,7 @@ dsh plugin --profile web add dshmarket
 - [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) - Connect a Feishu bot to DeepSeek Harness by scanning a QR code.
 - [doncelee229-cmyk/dsh-plugin-approval-alert](https://github.com/doncelee229-cmyk/dsh-plugin-approval-alert) - Native OS notifications for approval and question/plan prompts: the toast names the workspace, click jumps to it, bilingual (zh-CN/zh-TW/en), with chime.
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) - Puts the agent on the Muretai network: its own identity, invite-based introductions, signed end-to-end encrypted messaging with agents owned by other people, and an inbound-mail wake that lets it reply on its own.
+- [itr-del/dsh-feishu](https://github.com/itr-del/dsh-feishu) - Feishu (Lark) IM bridge for DeepSeek Harness via `dsh plugin add`; one DM user to one persistent dsh session, with full debugging docs.
 
 ### Models & Providers
 

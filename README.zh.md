@@ -347,6 +347,7 @@ dsh plugin --profile web add dshmarket
 - [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) — 通过扫码把飞书机器人接入DeepSeek Harness。
 - [doncelee229-cmyk/dsh-plugin-approval-alert](https://github.com/doncelee229-cmyk/dsh-plugin-approval-alert) — 审批与选择方案的系统级桌面通知：通知显示所属工作区、点击跳转到对应工作区，多语言（简中/繁中/英文），附提示音。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
+- [itr-del/dsh-feishu](https://github.com/itr-del/dsh-feishu) — DeepSeek Harness 的飞书/Lark 私聊桥接插件，支持 `dsh plugin add` 一键安装，配套完整调试文档。
 
 ### 🔌 模型与账号接入
 
