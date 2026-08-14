@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,91 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:PC2005-cloud/dsh-pet#path:/dsh-pet</pre><button type="button" data-cmd="dsh plugin --profile web add github:PC2005-cloud/dsh-pet#path:/dsh-pet" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>A floating desktop pet for the <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web UI.
+一只住在 DeepSeek Harness Web 界面里的桌面宠物：待机呼吸、随机动作、屏幕漫游、点击反应、可拖拽。</p>
+</blockquote>
+<hr>
+<h3>✨ 功能特性</h3>
+<ul>
+<li><strong>25 个手绘风透明动画</strong>：待机呼吸、打瞌睡、玩魔方、哼歌、炸毛、吐泡泡……全部无缝衔接</li>
+<li><strong>永不停止的动画链</strong>：每段动画播完立即按概率选下一个（30% 待机 / 10% 转向 / 40% 动作 / 20% 移动）</li>
+<li><strong>屏幕漫游</strong>：朝 facing 方向行走，自动检查空间、不走出屏幕</li>
+<li><strong>点击 / 拖拽</strong>：点击有随机回应动画（开心 / 害羞 / 傲娇），可拖到任意位置</li>
+<li><strong>左右朝向</strong>：所有动画 CSS 镜像，人物可朝左 / 朝右</li>
+<li><strong>落地对齐</strong>：动画统一脚底线，宠物始终站在&quot;地面&quot;上</li>
+<li><strong>流畅切换</strong>：双缓冲 video 交叉淡入，切换零空白帧</li>
+<li><strong>无障碍友好</strong>：支持 <code>prefers-reduced-motion</code></li>
+</ul>
+<h3>📦 安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-pet
+</code></pre>
+<p>重启 <code>dsh web</code>，宠物出现在界面右下角。</p>
+<h3>⚙️ 配置</h3>
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>说明</th>
+<th>当前状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>size</code></td>
+<td>宠物显示高度（px）</td>
+<td>默认 260，<strong>暂未下发到浏览器</strong>（DSH 客户端配置管线限制，走代码默认值）</td>
+</tr>
+<tr>
+<td><code>position</code></td>
+<td>默认角落位置</td>
+<td>默认右下角，同上暂未下发</td>
+</tr>
+<tr>
+<td><code>fullRoot</code></td>
+<td>原始 1200×1200 母版资源目录</td>
+<td>默认 <code>$DSH_HOME/pet-assets</code>，需手动下载母版后生效</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>说明：插件安装即用，上述配置均为可选；<code>size</code>/<code>position</code> 的浏览器侧配置化正在规划中。</p>
+</blockquote>
+<h3>🗑️ 卸载</h3>
+<pre><code class="language-sh">dsh plugin --profile web remove dsh-pet
+</code></pre>
+<h3>🖥️ 运行效果</h3>
+<p>宠物实际运行在 DSH Web 界面中的样子：</p>
+<h3>🎬 效果预览</h3>
+<blockquote>
+<p>动画为透明背景；GIF 预览中透明部分显示为页面底色，实际播放为透明。</p>
+</blockquote>
+<p>全部 25 个动画见仓库：<code>dsh-pet/assets/thumb/</code>。</p>
+<h3>📚 完整项目（不止是插件）</h3>
+<p>这是<strong>完整的三件套项目</strong>，任何人 clone 仓库都可以从零生成自己的桌面宠物：</p>
+<pre><code>① 提示词（配方）    →  ② 素材生成链（引擎）  →  ③ 插件（成品）
+AI 生成动画的配方     源视频 → 透明动画的管线    运行在 DSH 里的宠物
+</code></pre>
+<ul>
+<li>仓库：<a href="https://github.com/PC2005-cloud/dsh-pet">PC2005-cloud/dsh-pet</a></li>
+<li>设计与实现文档：<a href="https://github.com/PC2005-cloud/dsh-pet/blob/master/DESIGN.md">DESIGN.md</a></li>
+</ul>
+<h3>🔎 发现更多 DSH 插件</h3>
+<ul>
+<li>社区插件目录：<a href="https://awesome-dsh-plugin.com">awesome-dsh-plugin.com</a></li>
+<li>DSH 官方仓库：<a href="https://github.com/deepseek-ai/deepseek-harness">deepseek-ai/DeepSeek-Harness</a></li>
+</ul>
+<h3>📄 许可</h3>
+<ul>
+<li>代码：MIT</li>
+<li>素材（动画/提示词）：见仓库说明</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/PC2005-cloud/dsh-pet/blob/main/dsh-pet/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

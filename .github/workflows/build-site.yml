@@ -20,12 +20,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: npm ci
       - name: Build site rows from READMEs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           node scripts/probe-npm.mjs
           node scripts/probe-stars.mjs
+          node scripts/probe-readmes.mjs
           node scripts/build-site.mjs
       - name: Commit if changed
         run: |

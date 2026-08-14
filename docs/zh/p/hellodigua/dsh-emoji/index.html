@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,85 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:hellodigua/dsh-emoji</pre><button type="button" data-cmd="dsh plugin --profile web add github:hellodigua/dsh-emoji" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/hellodigua/dsh-emoji/blob/main/README.en.md">English</a> | 简体中文</p>
+<p>为 DeepSeek Harness 的回复加入可切换、自定义的行内表情。</p>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/banner.png" alt="dsh-emoji 蓝鲸表情包"></p>
+<h3>效果预览</h3>
+<p>默认的大肥鱼表情：</p>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/chat-preview.png" alt="蓝鲸表情在 DSH 对话中的行内显示效果"></p>
+<p>切换到贴吧表情包后，也能使用同一套语义协议展示贴吧表情：</p>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/chat-preview.tieba.png" alt="贴吧表情在 DSH 对话中的行内显示效果"></p>
+<p>上传并切换到 B 站表情包后，也能保留熟悉的社区表达风格：</p>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/chat-preview.bilibili.png" alt="B 站表情在 DSH 对话中的行内显示效果"></p>
+<p>同一套语义协议也可用于小红书、抖音、微博等自定义表情包。</p>
+<h3>安装</h3>
+<p>使用 DSH CLI 把插件加入 Web Profile，然后重启 Web Host：</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-emoji
+</code></pre>
+<p>如需固定当前版本，使用 <code>dsh-emoji@0.2.0</code>。普通 <code>npm install dsh-emoji</code> 只会把包加入当前 Node.js 项目，不会启用 DSH 插件。</p>
+<h3>工作方式</h3>
+<ul>
+<li>AI 想加入情绪或装饰性表情时，内置协议要求它输出 <code>::happy::</code> 这类语义标记；插件会在 Host 端将其转换为当前表情包的行内图片，无需额外模型调用。</li>
+<li>内置和用户上传的表情包共用 40 个稳定语义 key，可随时切换，并支持小、正常、偏大、大四档尺寸。</li>
+<li>转写只作用于插件 marker 和插件图片，不影响普通正文中的 Unicode emoji、代码、链接、未知标记或其他 Markdown 图片。多张插件表情必须由有效正文分隔，相同表情可以在不同位置重复使用。</li>
+</ul>
+<h3>调整 AI 的表情频率</h3>
+<p>安装并重启 Web Host 后，打开「设置 → 插件 → 表情（Whale Emoji）」：</p>
+<ul>
+<li><code>关闭</code>：不使用表情。</li>
+<li><code>智能</code>：仅在表情确实有助于表达时自然使用，每回合最多 3 张，默认选项。</li>
+<li><code>高频</code>：更积极地考虑使用，但不强制每次出现，也不追求多张；每回合最多 4 张。</li>
+</ul>
+<p>还可以选择表情包、调整显示尺寸，或填写“附加提示词”控制表情的选择、语气和使用场景。保存后从下一次回复生效，无需重启；是否实际使用表情仍由模型决定。</p>
+<h3>上传自己的表情包</h3>
+<p>在同一张设置卡片中点击“上传 ZIP”。上传成功后选择新表情包并保存，下一次模型调用立即使用，无需重启。自定义包复用内置的 40 个稳定语义 key，因此 AI 仍输出 <code>::happy::</code> 等 marker，只替换最终图片，不需要重新猜测每套素材的含义。</p>
+<p>ZIP 可以直接包含下列文件，也可以再包一层同名目录：</p>
+<pre><code class="language-text">my-whale.zip
+├── pack.json
+└── images/
+    ├── happy.png
+    ├── sad.png
+    ├── thinking.png
+    ├── celebrate.png
+    └── ...其余标准 key
+</code></pre>
+<p><code>pack.json</code> 格式：</p>
+<pre><code class="language-json">{
+  &quot;schemaVersion&quot;: 1,
+  &quot;keySet&quot;: &quot;dsh-emoji-core@1&quot;,
+  &quot;id&quot;: &quot;my-whale&quot;,
+  &quot;name&quot;: &quot;我的鲸鱼表情&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;
+}
+</code></pre>
+<p><code>schemaVersion</code> 表示 ZIP 技术格式，<code>keySet</code> 表示图片实现的语义集合。当前上传包必须声明 <code>dsh-emoji-core@1</code>；每个 key 的准确含义、相近语义边界和绘制建议见 <a href="https://github.com/hellodigua/dsh-emoji/blob/main/EMOJI_KEYS.md">核心语义契约</a>。</p>
+<p>40 个文件名 key 是：</p>
+<pre><code class="language-text">happy, sad, confused, watching, angry, speechless, doge, overloaded,
+neutral, laughing, crying, sweating, thinking, okay, nodding, sleeping,
+hurt, peeking, approve, heart, shy, star-eyes, laugh-cry, touched,
+scared, facepalm, eye-roll, sigh, frustrated, playful, snickering,
+sarcastic, cool, celebrate, cheer, thanks, sorry, hug, please, applause
+</code></pre>
+<p>每个 key 必须且只能提供一个同名 <code>.png</code>。<code>id</code> 使用小写字母、数字和连字符，<code>version</code> 使用 SemVer；同一个 <code>id@version</code> 的内容不可覆盖，更新素材时必须提升版本。ZIP 上限 20 MiB，解压后上限 80 MiB，单文件上限 2 MiB，图片宽高均不得超过 512 像素；路径逃逸、额外文件、缺失 key、未知 <code>keySet</code>、伪造格式和同版本冲突都会被拒绝。</p>
+<p>用户包保存在 <code>$DSH_HOME/emoji-packs/</code>（默认 <code>~/.dsh/emoji-packs/</code>），Settings 只保存当前 <code>id@version</code>。从选择列表“移除”不会物理删除素材字节，因此历史消息里的版本化 URL 仍能回放；重新上传完全相同的 ZIP 可以恢复该版本。</p>
+<h3>兼容性</h3>
+<p>当前版本面向 npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code>，DSH peers 声明为 <code>^0.1.0-rc.6</code>。本地开发固定精确 rc.6 类型链，部署时由 Web Profile 提供共享运行时。</p>
+<h3>本地开发</h3>
+<p>需要 Node.js <code>^22.19.0 || &gt;=24</code> 和 pnpm 11。</p>
+<pre><code class="language-sh">corepack pnpm install
+corepack pnpm typecheck
+corepack pnpm test
+corepack pnpm build
+corepack pnpm pack --dry-run
+</code></pre>
+
+    </div>
+    <p class="note"><a href="https://github.com/hellodigua/dsh-emoji/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

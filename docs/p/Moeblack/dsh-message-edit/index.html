@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,123 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Moeblack/dsh-message-edit</pre><button type="button" data-cmd="dsh plugin --profile web add github:Moeblack/dsh-message-edit" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://www.npmjs.com/package/dsh-message-edit"><img src="https://img.shields.io/npm/v/dsh-message-edit" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/dsh-message-edit"><img src="https://img.shields.io/npm/dm/dsh-message-edit" alt="npm downloads"></a>
+<a href="https://github.com/Moeblack/dsh-message-edit/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/dsh-message-edit" alt="license"></a></p>
+<p><code>dsh-message-edit</code>（<a href="https://www.npmjs.com/package/dsh-message-edit">npm</a> · <a href="https://github.com/Moeblack/dsh-message-edit">GitHub</a>）为 DeepSeek Harness 补充基于事件溯源的「消息编辑与重生成」能力。插件不改写历史事件，也不修改 DSH 引擎内部；每次编辑、重生成或重试都会从目标回合之前创建一个新会话版本，原会话始终保留并可随时切回。</p>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-message-edit
+</code></pre>
+<h3>功能</h3>
+<ul>
+<li><strong>编辑消息</strong>：可编辑已落定的用户文本、<code>assistant.reasoning</code> 思考块与 <code>assistant.response</code> 回复文本。</li>
+<li><strong>重生成</strong>：从最后一条已落定助手回复所属回合之前分支，使用原用户输入重新生成。</li>
+<li><strong>重试任意回合</strong>：在 Timeline 中选择任意历史回合重新执行。</li>
+<li><strong>级联策略</strong>：<ul>
+<li><code>truncate</code>（默认）：只重新执行目标输入，删除该点之后的旧后续。</li>
+<li><code>preserve</code>：保留后续用户输入，并在新分支中依次重新执行；助手输出与工具链全部重新生成。</li>
+</ul>
+</li>
+<li><strong>版本切换</strong>：会话标题栏的 <code>←</code> 撤销当前原子效果，<code>→</code> 重施加最新直接子效果；Timeline 展示完整已知分支树、操作时间、编辑前后内容与当前版本。</li>
+<li><strong>Timeline 标签页</strong>：注册到 <code>conversation.view</code>，<code>order: 15</code>，位于 Trajectory（10）与 Prompt Studio（20）之间。</li>
+</ul>
+<h3>设计</h3>
+<h4>时间可组合性</h4>
+<p>插件把<strong>完整回合</strong>作为效果原子。目标回合的 <code>turn/start</code>、模型请求、工具调用、工具结果与 <code>turn/end</code> 不会被局部复制后拼接；新版本从该回合之前的闭合边界分支：</p>
+<ol>
+<li>用户消息编辑、Reroll 与 Retry：回退整个目标回合，再把目标用户输入作为新回合交给 Agent。</li>
+<li>助手块编辑：回退整个目标回合，以原用户输入和编辑后的助手内容构造一个新的完整闭合回合；原工具链不进入新版本。选择 <code>preserve</code> 时，后续用户输入再依次交给 Agent，产生新的完整工具链。</li>
+<li>每个版本都追加一个不可拆分的 <code>message-edit/version</code> 效果对：<code>effect</code> 记录正向效果，<code>inverse</code> 记录恢复目标。父版本链自动导出组合逆；恢复不是删除事件，而是沿逆链切换到仍然存在的版本。</li>
+<li>消息历史变换彼此不交换，因此撤销遵循 LIFO：一次只撤销当前原子效果并保留更早效果；各后继分支始终保留，可从父版本重新施加。</li>
+</ol>
+<h4>分支与 Agent 接线</h4>
+<p>旧实现先用短生命周期 Session 暂存分支、落盘、移除 live Session，再用 <code>agents.resume()</code> 重建 Agent。这个过程存在两个分离的生命周期边界：暂存日志已经持久化后，Agent 仍可能创建失败。现实现只使用 <code>AgentRegistry.create()</code> 已公开的 <code>seed + meta</code> 事务缝：</p>
+<ol>
+<li>在来源 Agent 的 runMaintenance() 内，从已闭合边界取得不可变 seed；第一回合之前使用空 seed。</li>
+<li>用本地等价的纯事件构造器把版本效果对与可选手工助手回合加入 seed，再调用 <code>ctx.agents.create({ seed, meta })</code>。Session 在 Agent 构造前一次性验证完整 seed；任何一步失败都会由 AgentFactory 的结构性逆撤销，外部观察者看不到半成品 Session，Agent 的回合计数也直接从完整历史初始化。</li>
+<li>发布后调用 <code>ctx.sessions.flush()</code>，在 HTTP 操作成功前建立耐久性屏障。</li>
+<li>Workspace 挂接与 child Agent 生命周期分别返回原子逆；操作失败时按相反顺序组合恢复。随后通过 <code>child.agent.followup()</code> 排入需要重新执行的用户输入。</li>
+</ol>
+<p>此路径不接触 <code>ReactLoopAgent</code>、AgentLoop 私有方法或 apiproxy 的收窄 fork RPC；分支 seed 仍由同一 Session 公共事件契约验证。</p>
+<h4>空间可组合性</h4>
+<ul>
+<li>Host 只依赖公开的 <code>sessions</code>、<code>agents</code>、<code>sessionPersistence</code>、<code>sessionQuery</code>、<code>workspaceRegistry</code> 与 <code>webServer</code> 服务。</li>
+<li>Browser 只通过 <code>slots</code>、<code>conversation</code>、<code>connection</code> 与 runtime <code>sessions</code> 服务组合。</li>
+<li>Timeline 与标题栏共享一个按 <code>sessionId</code> 建立的值级 Snapshot source；控制器反应式订阅当前 Session 的闭合回合值与 Session 列表中的谱系值，Session 身份替换时重新绑定，不缓存旧 Session 对象。</li>
+<li>新版本导航等待 runtime Session 列表发布对应 ID 后再执行 <code>ctx.sessions.open()</code>，依赖可用性变化直接驱动导航。</li>
+</ul>
+<h3>数据模型</h3>
+<p>每个插件版本在自己的非继承后缀中包含一个 <code>message-edit/version</code> 事件：</p>
+<pre><code class="language-ts">interface MessageEditVersionEvent {
+  schemaVersion: 2
+  effect: {
+    id: string
+    operation: &#39;edit&#39; | &#39;reroll&#39; | &#39;retry&#39;
+    cascade: &#39;truncate&#39; | &#39;preserve&#39;
+    targetTurn: number
+    targetEventSeq: number
+    targetBlockIndex?: number
+    blockKind?: &#39;user&#39; | &#39;assistant.reasoning&#39; | &#39;assistant.response&#39;
+    before?: string
+    after?: string
+  }
+  inverse: {
+    kind: &#39;restore-version&#39;
+    sessionId: string
+  }
+}
+</code></pre>
+<p>会话头的 <code>parentSession</code> 构成版本树，且必须与事件中的 <code>inverse.sessionId</code> 一致；<code>seedLength</code> 区分当前版本自己的元数据与从祖先继承的同名事件。Timeline 通过 <code>ctx.sessionQuery.traceSession()</code> 和 <code>readSession()</code> 生成完整值级投影，并由原子逆链导出 <code>undoStack</code> 与直接 <code>redoSessionIds</code>。旧版平面事件仍可读取，并在投影时规范化为同一效果对。</p>
+<h3>UI</h3>
+<ul>
+<li><code>conversation.view</code><ul>
+<li><code>id: message-edit-timeline</code></li>
+<li><code>order: 15</code></li>
+<li><code>label: Timeline</code></li>
+</ul>
+</li>
+<li><code>conversation.session.header.actions</code><ul>
+<li><code>id: message-edit-controls</code></li>
+<li>直接父效果撤销、直接子效果重施加、效果链计数、最后回复重生成</li>
+</ul>
+</li>
+</ul>
+<p>组件使用 CSS Modules 与 <code>--dsw-*</code> 语义 token，不引入 UI 库。所有产品文案为中文，代码注释为英文。</p>
+<h3>构建</h3>
+<pre><code class="language-bash">npm install
+npm run build
+</code></pre>
+<p>构建基于 npm 发布的 <code>@deepseek-ai/*@0.1.0-rc.6</code> 类型与本地工具链（typescript、tsdown、lightningcss），不再依赖 dsh 源码树。构建生成：</p>
+<ul>
+<li><code>index.mjs</code>：Host 插件</li>
+<li><code>client.js</code>：Browser 插件</li>
+<li><code>client.js.map</code>：Browser source map</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-message-edit
+</code></pre>
+<p>或本地开发：</p>
+<pre><code class="language-bash">dsh plugin --profile web add -w link:/path/to/dsh-message-edit
+</code></pre>
+<p><code>dsh plugin</code> 是 pnpm 转发器：<code>add</code> 后会自动识别 <code>dsh.bundle</code> 声明并把插件收编进 profile 的 <code>dsh.profile.bundles</code>，重启 dsh 即生效。本地开发建议用 <code>link:</code>（符号链接），改动源码重构建后重启即更新。</p>
+<h3>HTTP 接口</h3>
+<ul>
+<li><code>GET /message-edit?sessionId=&lt;id&gt;</code>：读取可编辑消息、可重试回合与完整版本树。</li>
+<li><code>POST /message-edit</code>：执行 <code>edit</code>、<code>reroll</code> 或 <code>retry</code>，返回已发布的新 Session ID。</li>
+</ul>
+<h3>范围边界</h3>
+<ul>
+<li>不原地改写 Session 事件；历史是 append-only、deep-frozen。</li>
+<li>不联动恢复或修改工作区文件、命令外部效果与既有产物。</li>
+<li>不修改 DSH 引擎、apiproxy 或官方 UI 包。</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/Moeblack/dsh-message-edit/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

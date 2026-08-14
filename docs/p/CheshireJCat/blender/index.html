@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,53 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:CheshireJCat/blender</pre><button type="button" data-cmd="dsh plugin --profile web add github:CheshireJCat/blender" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/CheshireJCat/blender/blob/main/README.zh-CN.md">简体中文</a></p>
+<p>An installable <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> plugin that gives dsh a complete Blender-backed 3D production workflow. It registers one orchestrator plus 29 directly loadable domain skills, all 26 upstream analysis/validation helpers, and 13 workspace-scoped Blender tools.</p>
+<h3>Tools</h3>
+<ul>
+<li><code>blender_status</code> checks Blender, analysis Python, skills, helpers, and the active workspace.</li>
+<li><code>blender_scene_info</code> and <code>blender_object_info</code> inspect scenes and object-level geometry, materials, UVs, constraints, shape keys, and animation.</li>
+<li><code>blender_import</code> converts supported portable assets into versioned <code>.blend</code> sources.</li>
+<li><code>blender_python</code> runs a small reviewed <code>bpy</code>/<code>bmesh</code> chunk and saves a versioned <code>.blend</code>.</li>
+<li><code>blender_preview</code>, <code>blender_render</code>, and <code>blender_render_frames</code> create blockout, look-dev, and animation evidence for <code>read_image</code> QA.</li>
+<li><code>blender_export</code> exports GLB/glTF, FBX, OBJ, STL, USD, or PLY.</li>
+<li><code>blender_validate_scene</code> and <code>blender_validate_export</code> perform target-aware audits and clean-process re-import checks.</li>
+<li><code>blender_helper_catalog</code> and <code>blender_helper_run</code> expose all 26 deterministic reference, wireframe, contour, multiview, UV, texture, look, repair, and animation-QA helpers.</li>
+<li>The bundled 30-skill stack coordinates blockout, refinement, materials, lighting, cameras, animation, reconstruction, validation, and artifact handoff.</li>
+</ul>
+<p>No Blender add-on or control port is required: each operation launches a local Blender background process.</p>
+<h3>Requirements</h3>
+<ul>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code></li>
+<li>Node.js 20+</li>
+<li>Blender 4.3+ available as <code>blender</code> on <code>PATH</code>, or configured with an absolute path</li>
+<li>Python 3.10+ for the optional reference-analysis helpers</li>
+</ul>
+<h3>Install from npm</h3>
+<pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add dsh-blender
+npx @deepseek-ai/dsh plugin --profile web exec dsh-blender-setup
+npx @deepseek-ai/dsh --profile web --dump-config
+npx @deepseek-ai/dsh web
+</code></pre>
+<p>The setup command creates a private <code>.venv</code> inside the installed package and installs OpenCV, NumPy, Pillow, and SciPy. Skip it only if you do not need reference, wireframe, multiview, texture, or animation-analysis helpers.</p>
+<p>To install a pinned GitHub release instead:</p>
+<pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add github:CheshireJCat/blender#v0.2.1
+</code></pre>
+<h3>Develop from source</h3>
+<pre><code class="language-bash">pnpm install
+pnpm setup:analysis
+npx @deepseek-ai/dsh plugin --profile web add .
+</code></pre>
+<p>Open <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>, create a session whose workspace is the modeling directory, and ask dsh to use <code>create-3d-model</code>.</p>
+<p>See <a href="https://github.com/CheshireJCat/blender/blob/main/README.zh-CN.md">README.zh-CN.md</a> for configuration, security boundaries, headless use, and validation commands.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/CheshireJCat/blender/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

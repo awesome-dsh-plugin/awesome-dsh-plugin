@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,234 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/omdsh-dev/dsh-tool-csv/blob/main/README.en.md">English</a></p>
+<p>DSH CSV 数据工具插件 —— 解析、查询、过滤、统计和转换 CSV 文本。零依赖、纯函数、RFC 4180 状态机解析器。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-tool-csv/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
+<h3>动机</h3>
+<p>Agent 会话里表格形态的数据（导出文件、API 响应、报告片段）出现频率很高。现有路径是起 <code>bash</code> 进程让模型现写解析脚本：</p>
+<ol>
+<li><strong>每次调用都起进程</strong>——Windows 上尤其昂贵</li>
+<li><strong>模型手写 CSV 解析器错误率高</strong>——引号内逗号、<code>&quot;&quot;</code> 转义、BOM、跨行字段、CRLF 这些边界手写代码极易踩坑，且结果不可验证</li>
+</ol>
+<p>本插件提供确定性、零依赖、纯函数的 CSV 处理：一次函数调用，毫秒级返回结构化 JSON。</p>
+<p>与 <code>dsh-tool-json</code> 形成&quot;结构化数据处理&quot;对：JSON 管对象，CSV 管表格。</p>
+<h3>安全模型</h3>
+<ul>
+<li><strong>零依赖</strong>：不引入 csv 解析库，手写状态机（单遍扫描，O(n)）</li>
+<li><strong>纯函数</strong>：不读文件、不写文件、不联网、不 eval</li>
+<li><strong>无注入面</strong>：查询过滤只做字面精确匹配（<code>===</code>），不支持表达式求值</li>
+<li><strong>预算</strong>：输入上限 256,000 字节（超限直接报错，不截断）；<code>timeoutMs: 2000</code>；<code>limit</code> 默认 100 行防输出膨胀</li>
+<li>工具参数会记入会话日志，不要传入敏感数据</li>
+</ul>
+<h3>工具声明</h3>
+<p>注册 <code>csv</code> 工具（<code>@deepseek-ai/dsh-tool-csv</code>，row id <code>tool-csv</code>），统一输出 JSON 文本字符串。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>action</code></td>
+<td>string</td>
+<td>✅</td>
+<td><code>parse</code> / <code>query</code> / <code>stats</code> / <code>to_json</code></td>
+</tr>
+<tr>
+<td><code>csv</code></td>
+<td>string</td>
+<td>✅</td>
+<td>CSV 文本（RFC 4180；引号字段可含逗号/换行；<code>&quot;&quot;</code> 转义；忽略 BOM）</td>
+</tr>
+<tr>
+<td><code>column</code></td>
+<td>string</td>
+<td></td>
+<td>查询列：列名（有表头时）或 1-based 索引如 <code>&quot;2&quot;</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>string</td>
+<td></td>
+<td>查询精确匹配值（严格相等，非子串）</td>
+</tr>
+<tr>
+<td><code>delimiter</code></td>
+<td>string</td>
+<td></td>
+<td>分隔符，默认 <code>&quot;,&quot;</code>；单字符或 <code>&quot;tab&quot;</code></td>
+</tr>
+<tr>
+<td><code>header</code></td>
+<td>boolean</td>
+<td></td>
+<td>首行是否为表头，默认 <code>true</code>；<code>false</code> 时行解析为数组</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td></td>
+<td>返回行数上限（query/parse），默认 100</td>
+</tr>
+</tbody></table>
+<h3>Actions</h3>
+<table>
+<thead>
+<tr>
+<th>action</th>
+<th>功能</th>
+<th>输出示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>parse</code></td>
+<td>解析为 JSON 数组（有表头时每行一个对象）</td>
+<td><code>[{&quot;name&quot;:&quot;Alice&quot;,&quot;city&quot;:&quot;NYC&quot;}]</code></td>
+</tr>
+<tr>
+<td><code>query</code></td>
+<td>按列名/索引精确过滤行（结果含表头，可回读）</td>
+<td><code>[[&quot;name&quot;,&quot;city&quot;],[&quot;Alice&quot;,&quot;NYC&quot;]]</code></td>
+</tr>
+<tr>
+<td><code>stats</code></td>
+<td>行数 / 列数 / 列名 / 空行数 / 警告（含重复列名、字段数不一致）</td>
+<td><code>{&quot;rows&quot;:2,&quot;columns&quot;:2,...}</code></td>
+</tr>
+<tr>
+<td><code>to_json</code></td>
+<td><code>parse</code> 的别名（模型友好）</td>
+<td>同 <code>parse</code></td>
+</tr>
+</tbody></table>
+<h3>示例</h3>
+<pre><code>csv { action: &quot;parse&quot;, csv: &quot;name,city\nalice,nyc\nbob,la&quot; }
+  → [{&quot;name&quot;:&quot;alice&quot;,&quot;city&quot;:&quot;nyc&quot;},{&quot;name&quot;:&quot;bob&quot;,&quot;city&quot;:&quot;la&quot;}]
+
+csv { action: &quot;query&quot;, csv: &quot;name,city\nalice,nyc\nbob,la&quot;, column: &quot;city&quot;, value: &quot;la&quot; }
+  → [[&quot;name&quot;,&quot;city&quot;],[&quot;bob&quot;,&quot;la&quot;]]
+
+csv { action: &quot;stats&quot;, csv: &quot;name,city\nalice,nyc&quot; }
+  → {&quot;rows&quot;:1,&quot;columns&quot;:2,&quot;columnNames&quot;:[&quot;name&quot;,&quot;city&quot;],&quot;emptyRows&quot;:0,&quot;warnings&quot;:[]}
+</code></pre>
+<h3>边界行为</h3>
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>引号内逗号/换行/CRLF</td>
+<td>视为字段内容（跨行字段）</td>
+</tr>
+<tr>
+<td><code>&quot;&quot;</code> 转义</td>
+<td>解码为单个 <code>&quot;</code></td>
+</tr>
+<tr>
+<td><strong>未闭合引号</strong></td>
+<td><strong>报错</strong>：<code>csv: unterminated quoted field</code>（严格模式，不静默容错）</td>
+</tr>
+<tr>
+<td><strong>闭合引号后非法字符</strong></td>
+<td><strong>报错</strong>：<code>csv: invalid character &quot;x&quot; after closing quote</code>（RFC 4180：闭合后只允许分隔符/换行/EOF）</td>
+</tr>
+<tr>
+<td>首行 BOM</td>
+<td>剥离后再解析</td>
+</tr>
+<tr>
+<td>空行</td>
+<td>跳过（stats 报告空行数）</td>
+</tr>
+<tr>
+<td>字段数不一致</td>
+<td>不报错：缺失补 <code>null</code>、多余并入最后一个字段（stats 记录警告）</td>
+</tr>
+<tr>
+<td>重复列名</td>
+<td>后出现的列覆盖先出现的（stats 记录警告）</td>
+</tr>
+<tr>
+<td><strong><code>__proto__</code>/<code>constructor</code>/<code>prototype</code> 表头</strong></td>
+<td>null-prototype 对象写入，<strong>无损序列化</strong>（<code>{&quot;__proto__&quot;:&quot;value&quot;}</code>）</td>
+</tr>
+<tr>
+<td>delimiter</td>
+<td>仅单 UTF-16 code unit 或 <code>&quot;tab&quot;</code>；拒绝 surrogate pair（如 <code>😀</code>）与控制字符（除 <code>\t</code>）</td>
+</tr>
+<tr>
+<td>无表头</td>
+<td><code>header: false</code>，行解析为数组，<code>column</code> 用 1-based 索引</td>
+</tr>
+<tr>
+<td>超 256KB 输入</td>
+<td>直接报错（不截断）</td>
+</tr>
+<tr>
+<td>十万行级输入</td>
+<td>单遍聚合计算列宽（无 spread），不触发 RangeError</td>
+</tr>
+</tbody></table>
+<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
+<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 的隔离 consumer 中完成全链路验证：</p>
+<ul>
+<li><strong>类型/运行时</strong>：<code>@deepseek-ai/cordis: ^4.0.1</code> + <code>@deepseek-ai/dsh-tools: &gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants: &gt;=0.0.1-rc.1 &lt;0.2.0</code>（peer）；不再依赖 unscoped <code>cordis</code></li>
+<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>消费验证</strong>：tarball 装入 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
+<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+</ul>
+<h3>安装</h3>
+<h4>Profile Bundle（推荐）</h4>
+<p>DSH 0.1.0-rc.6（npm）起，本插件可作为独立 bundle 一键安装到任意 profile（仓库位于 <a href="https://github.com/omdsh-dev%EF%BC%8Cpublic%EF%BC%89%EF%BC%9A">https://github.com/omdsh-dev，public）：</a></p>
+<pre><code class="language-sh"># 交互式（web）profile
+dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv
+# 一次性任务（headless）profile —— dsh run 默认使用 headless
+dsh plugin --profile headless add github:omdsh-dev/dsh-tool-csv
+</code></pre>
+<p>也可以先用 <code>npm pack</code> 打出 tarball 再安装：</p>
+<pre><code class="language-sh">git clone https://github.com/omdsh-dev/dsh-tool-csv
+cd dsh-tool-csv
+npm install &amp;&amp; npm pack
+dsh plugin --profile web add ./deepseek-ai-dsh-tool-csv-*.tgz
+dsh plugin --profile headless add ./deepseek-ai-dsh-tool-csv-*.tgz
+</code></pre>
+<p>包内 <code>dsh.bundle.patch</code> 会在安装后自动把插件加入 profile 的 layer stack（row id：<code>tool-csv</code>）。插件缺失的 peer 依赖（<code>@deepseek-ai/cordis</code>、<code>@deepseek-ai/dsh-tools</code>、<code>@deepseek-ai/dsh-invariants</code>）由 profile 的 healed <code>profiles/node_modules</code> 回退安装提供。</p>
+<blockquote>
+<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。Windows 路径使用正斜杠（<code>C:/...</code>）。</p>
+</blockquote>
+<h4>验证安装</h4>
+<pre><code class="language-sh">dsh --profile web --dump-config | grep tool-csv
+</code></pre>
+<h4>运行验证</h4>
+<pre><code class="language-sh">dsh run &quot;使用 csv 工具解析 &#39;a,b
+1,2&#39;&quot;
+</code></pre>
+<h4>手动安装（源码贡献 / 旧 snapshot 场景）</h4>
+<p>仅适用于源码贡献（在 monorepo 中开发调试本插件）或仍在使用旧 snapshot 的场景（本地 junction/symlink、手动编辑 profile 层）。</p>
+<h3>测试</h3>
+<pre><code class="language-bash">node &lt;monorepo&gt;/node_modules/vitest/vitest.mjs run tests
+</code></pre>
+<ul>
+<li><code>parse.spec.ts</code>：RFC 4180 边界（引号/转义/BOM/CRLF/空行/tab/大小上限/严格引号错误/delimiter 校验）</li>
+<li><code>query.spec.ts</code>：列名/索引过滤、精确匹配、limit、错误路径、stats 警告、JSON 映射、危险表头、12.5 万行压力</li>
+<li><code>register.spec.ts</code>：注册契约（AUDIT-CROSS-02 风格）</li>
+</ul>
+<h3>许可</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-csv/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

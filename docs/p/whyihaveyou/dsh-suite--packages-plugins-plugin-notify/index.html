@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,126 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-notify</pre><button type="button" data-cmd="dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-notify" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>DSH 插件：回合完成 / 出错 / 待审批时，把通知推到 IM webhook + 本机系统通知。
+社区现有 <code>dsh-notification</code> 只弹本机窗口；本插件做<strong>远程 IM webhook</strong>（飞书 / 企业微信 / 钉钉 / Slack / Discord / 自定义），是差异化能力。</p>
+</blockquote>
+<blockquote>
+<p>DSH plugin: push turn-completion / error / approval notifications to IM webhooks
+plus a local system notification. Unlike <code>dsh-notification</code> (local-only popup),
+this sends <strong>remote IM webhooks</strong> (Feishu / WeCom / DingTalk / Slack / Discord / custom).</p>
+</blockquote>
+<hr>
+<h3>特性 / Features</h3>
+<ul>
+<li><p>监听 DSH 持久的 <code>session/event</code> 流，命中三类事件即发通知：</p>
+<ul>
+<li><code>turn/end</code>（reason=<code>completed</code>）→ <strong>task_done</strong>（回合完成，含标题 + 结果摘要 + 耗时）</li>
+<li><code>turn/end</code>（reason=<code>error</code>/<code>aborted</code>/<code>blocked</code>/<code>max-tokens</code>/<code>interrupted</code>）→ <strong>error</strong></li>
+<li><code>approval/asked</code>（来自 <code>@deepseek-ai/dsh-user-approval</code>）→ <strong>approval_requested</strong>（待审批）</li>
+</ul>
+</li>
+<li><p>配置驱动，6 种通道：飞书、企业微信、钉钉、Slack、Discord、自定义（POST JSON）。</p>
+</li>
+<li><p>本机通知：macOS 走 <code>osascript display notification</code>，非 macOS 自动跳过。</p>
+</li>
+<li><p>发射是<strong>不可逆副作用</strong>：POST 失败只 <code>console.warn</code>，绝不重试、绝不阻塞 agent 循环。</p>
+</li>
+<li><p>Listens on DSH&#39;s durable <code>session/event</code> firehose and notifies on three event kinds:</p>
+<ul>
+<li><code>turn/end</code> (<code>reason=completed</code>) → <strong>task_done</strong> (title + result summary + duration)</li>
+<li><code>turn/end</code> (<code>reason=error/aborted/blocked/max-tokens/interrupted</code>) → <strong>error</strong></li>
+<li><code>approval/asked</code> (from <code>@deepseek-ai/dsh-user-approval</code>) → <strong>approval_requested</strong></li>
+</ul>
+</li>
+<li><p>Config-driven, 6 channels: Feishu, WeCom, DingTalk, Slack, Discord, custom JSON.</p>
+</li>
+<li><p>Local notification via <code>osascript</code> on macOS; skipped elsewhere.</p>
+</li>
+<li><p>Emission is irreversible: failed POSTs only <code>console.warn</code>, never retried, never block the loop.</p>
+</li>
+</ul>
+<hr>
+<h3>安装 / Install</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add @dsh-suite/plugin-notify
+</code></pre>
+<p>（本地开发：<code>dsh plugin --profile &lt;name&gt; add ./packages/plugins/plugin-notify</code>）</p>
+<h3>配置 / Configuration</h3>
+<p>在 profile 的 <code>cordis.patch.yml</code> 里给插件行加 <code>config</code>（Schemastery schema，见 <code>export const Config</code>）：</p>
+<p>Add a <code>config</code> block to this plugin&#39;s row in the profile&#39;s <code>cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- id: plugin-notify
+  name: &#39;@dsh-suite/plugin-notify&#39;
+  config:
+    webhooks:
+      feishu: &#39;https://open.feishu.cn/open-apis/bot/v2/hook/xxxx&#39;   # 飞书
+      wecom: &#39;https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxx&#39;  # 企业微信
+      dingtalk: &#39;https://oapi.dingtalk.com/robot/send?access_token=xxxx&#39;  # 钉钉
+      slack: &#39;https://hooks.slack.com/services/T/B/xxxx&#39;            # Slack
+      discord: &#39;https://discord.com/api/webhooks/xxxx/xxxx&#39;         # Discord
+      custom: &#39;https://example.com/hook&#39;                            # 自定义 JSON
+    events: [&#39;task_done&#39;, &#39;error&#39;, &#39;approval_requested&#39;]            # 触发过滤，缺省三者全开
+    local: true                                                     # 本机系统通知（macOS）
+    timeoutMs: 5000                                                 # 单次 POST 超时
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>字段 / Field</th>
+<th>默认 / Default</th>
+<th>说明 / Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>webhooks.*</code></td>
+<td>空 / empty</td>
+<td>各通道 webhook 地址；留空该通道不发送 / empty = that channel disabled</td>
+</tr>
+<tr>
+<td><code>events</code></td>
+<td><code>[&#39;task_done&#39;,&#39;error&#39;,&#39;approval_requested&#39;]</code></td>
+<td>触发通知的事件白名单 / notification event whitelist</td>
+</tr>
+<tr>
+<td><code>local</code></td>
+<td><code>true</code></td>
+<td>是否发本机系统通知 / also send a local notification</td>
+</tr>
+<tr>
+<td><code>timeoutMs</code></td>
+<td><code>5000</code></td>
+<td>单次 webhook 超时 / per-request timeout</td>
+</tr>
+</tbody></table>
+<h3>消息格式 / Message shape</h3>
+<p>飞书/企业微信/钉钉发送 <code>text</code> 卡片，Slack 发 <code>{ text }</code>，Discord 发 <code>{ content }</code>，
+<code>custom</code> 发 <code>{ text, kind, title, sessionId, durationMs, time }</code>。文本内容统一为：</p>
+<p>Feishu/WeCom/DingTalk send a text card; Slack <code>{ text }</code>; Discord <code>{ content }</code>;
+<code>custom</code> posts <code>{ text, kind, title, sessionId, durationMs, time }</code>. The text body:</p>
+<pre><code>【任务完成】帮我查一下 Kuramoto 临界指数
+摘要：临界指数为 γ⁻ = γ⁺ = 1…
+耗时：3 分 42 秒
+会话：session-1
+</code></pre>
+<h3>验证 / Verification</h3>
+<ul>
+<li>✅ 纯 ESM 编译（<code>pnpm build</code>）</li>
+<li>✅ <code>dsh.bundle</code> + <code>cordis.patch.yml</code> 装载进真实 DSH profile（<code>--dump-config</code> 含本行）</li>
+<li>✅ <code>turn/end</code> → 通知派发路径（缺省无 key 场景，<code>turn/end(reason=error)</code> 已触发）</li>
+<li>⚠️ 真实 IM 投递（需真实 webhook URL 与外部网络）——未闭环，见下</li>
+</ul>
+<p>Blocked / not closed: 本环境无真实 webhook 地址，远程投递只验证到「POST 已发起、失败仅
+<code>console.warn</code>」，未验证到对方 IM 收到消息。</p>
+<h3>设计准则 / Design principles</h3>
+<p>遵守 <code>dsh-plugin-design-principles.md</code>：<code>inject</code> 声明依赖（#3）、<code>ctx.on</code> 注册即 effect（#1）、
+发射副作用只补偿不阻塞（#9）、事件走类型化 <code>session/event</code>（#15）。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/whyihaveyou/dsh-suite/blob/main/packages/plugins/plugin-notify/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

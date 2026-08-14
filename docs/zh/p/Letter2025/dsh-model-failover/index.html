@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,142 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Letter2025/dsh-model-failover</pre><button type="button" data-cmd="dsh plugin --profile web add github:Letter2025/dsh-model-failover" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.md">English</a> | <a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>Two-level model circuit breaker with failover for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. When a model (or a whole provider) starts failing repeatedly, the plugin opens a circuit and routes the next model request to a configured fallback — no core changes, installable with <code>dsh plugin</code>.</p>
+<h3>What it does</h3>
+<ul>
+<li><strong>Model circuit</strong> — a <code>provider/model</code> route opens after <code>modelCircuitThreshold</code> failures inside <code>burstWindowMs</code>.</li>
+<li><strong>Platform circuit</strong> — a provider opens when <code>platformCircuitThreshold</code> distinct models under it are open at once (a platform outage usually takes down every model on it).</li>
+<li><strong>Failover</strong> — the next request goes to the first healthy fallback in <code>fallbacks</code>; the switch is recorded by the loop itself (<code>request/header</code> change) and optionally announced as a user-visible message.</li>
+<li><strong>Recovery probes</strong> — an open model circuit is probed after <code>modelCooldownMs</code> with a tiny real call; a successful probe closes the circuit, a failed one extends the cooldown.</li>
+<li><strong>Composes with <code>llm-retry</code></strong> — per-request backoff retries stay owned by the bundled <code>llm-retry</code> policy; the breaker observes the failures that escape it, so transient blips that recover after a retry never trip a circuit.</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-model-failover
+</code></pre>
+<p>Then configure <code>fallbacks</code> (the only field you must set) and, if needed, the thresholds in your profile <code>cordis.patch.yml</code> — see the <a href="https://github.com/Letter2025/dsh-model-failover/blob/main/cordis.patch.yml">plugin row in cordis.patch.yml</a> for the full default config.</p>
+<p>A companion skill, <code>configure-model-failover</code>, walks the agent through setting the fallback models (AI probes the current model config, writes the fallback override, then asks you to confirm). It is <strong>installed automatically with the plugin</strong>: the package ships <code>skills/configure-model-failover/SKILL.md</code> and the plugin registers it as a bundled skill whenever the <code>skills</code> service is present — no copy step needed. For a standalone install (profile without the plugin), copy it into <code>~/.dsh/skills/configure-model-failover/</code> (user-level skills are picked up live).</p>
+<h3>How it works</h3>
+<p>The plugin decorates two agent-loop waterfalls (both official extension points, no core changes):</p>
+<table>
+<thead>
+<tr>
+<th>Waterfall</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>agent/request-error</code></td>
+<td>Records failures whose <code>code</code> is in <code>tripCodes</code> into the circuit breaker, then delegates through <code>next()</code> so <code>llm-retry</code> still owns retries.</td>
+</tr>
+<tr>
+<td><code>agent/request</code></td>
+<td><code>await next()</code> for the resolved config, then returns the healthy primary route, or the first healthy fallback when the primary&#39;s circuit is open.</td>
+</tr>
+</tbody></table>
+<pre><code class="language-text">request ──&gt; agent/request ──&gt; primary (mock/m1) ──&gt; fail ×2 ──&gt; circuit open
+                                                                │
+next request ──&gt; agent/request ──&gt; primary open ──&gt; fallback (mock2/m2) ✔
+                                                                │
+                                     probe after cooldown ──&gt; success ──&gt; circuit closed
+</code></pre>
+<h3>Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>enabled</code></td>
+<td><code>true</code></td>
+<td>Master switch.</td>
+</tr>
+<tr>
+<td><code>fallbacks</code></td>
+<td><code>[]</code></td>
+<td>Ordered fallback routes <code>{provider, model}</code>; must point at providers with a registered adapter.</td>
+</tr>
+<tr>
+<td><code>tripCodes</code></td>
+<td><code>RATE_LIMIT, SERVER, TIMEOUT, TRANSPORT, QUOTA, EMPTY_RESPONSE</code></td>
+<td>Failure codes that count toward a circuit; e.g. <code>AUTH</code>/<code>INVALID_CREDENTIAL</code> stay terminal.</td>
+</tr>
+<tr>
+<td><code>modelCircuitThreshold</code></td>
+<td><code>2</code></td>
+<td>Failures inside the burst window that open a model circuit.</td>
+</tr>
+<tr>
+<td><code>modelCooldownMs</code></td>
+<td><code>60000</code></td>
+<td>Cooldown before an open model circuit is probed.</td>
+</tr>
+<tr>
+<td><code>platformCircuitThreshold</code></td>
+<td><code>2</code></td>
+<td>Distinct open models that open the whole provider.</td>
+</tr>
+<tr>
+<td><code>platformCooldownMs</code></td>
+<td><code>120000</code></td>
+<td>Provider-wide cooldown.</td>
+</tr>
+<tr>
+<td><code>burstWindowMs</code></td>
+<td><code>300000</code></td>
+<td>Failures older than this start a fresh burst.</td>
+</tr>
+<tr>
+<td><code>enableProbe</code></td>
+<td><code>true</code></td>
+<td>Probe open models after cooldown to recover circuits.</td>
+</tr>
+<tr>
+<td><code>probeMaxTokens</code></td>
+<td><code>8</code></td>
+<td>Output cap for probe calls.</td>
+</tr>
+<tr>
+<td><code>stripReasoningEffort</code></td>
+<td><code>true</code></td>
+<td>Drop the primary&#39;s reasoning effort when failing over (fallbacks may not support it).</td>
+</tr>
+<tr>
+<td><code>notifyUser</code></td>
+<td><code>true</code></td>
+<td>Append a user-visible message when a route switches.</td>
+</tr>
+</tbody></table>
+<h3>Events</h3>
+<p>Plugin-defined (emit) events, typed via the <code>@deepseek-ai/cordis</code> augmentation in <code>src/types.ts</code>:</p>
+<ul>
+<li><code>model-failover/circuit-opened</code> — <code>{provider, model, level: &#39;model&#39; | &#39;platform&#39;}</code></li>
+<li><code>model-failover/circuit-closed</code> — <code>{provider, model, level: &#39;model&#39;}</code></li>
+<li><code>model-failover/failover</code> — <code>{from, to, agentId}</code></li>
+<li><code>model-failover/probe</code> — <code>{provider, model, ok, message?}</code></li>
+</ul>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li><strong>Process-local state</strong> — circuit state lives in memory and resets on plugin reload (like every harness registry). Cross-instance sharing is deferred.</li>
+<li><strong>Agent-loop calls only</strong> — <code>agent/request</code> covers the main conversation loop. Auxiliary calls (<code>session-title</code>, <code>compaction</code>, hand-built <code>ctx.llm.stream</code>) are not routed.</li>
+<li><strong><code>retryPolicy.mode: &#39;always&#39;</code></strong> — the bundled <code>llm-retry</code> never delegates a failure to this breaker in that mode, so failover stays idle by design (the operator chose unbounded retries).</li>
+<li><strong>No context-window adaptation</strong> — a fallback with a smaller context window may hit <code>CONTEXT_WINDOW_EXCEEDED</code>; set <code>stripReasoningEffort</code> and pick compatible fallbacks.</li>
+<li><strong>No platform probe</strong> — the platform circuit recovers by cooldown expiry; only model circuits are probed.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,127 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-mineru</pre><button type="button" data-cmd="dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-mineru" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>本项目已被dshfind.com收录</p>
+<h2>dsh-mineru</h2>
+<p><a href="https://www.npmjs.com/package/@huanlin/dsh-plugin-mineru"><img src="https://img.shields.io/npm/v/@huanlin/dsh-plugin-mineru" alt="npm version"></a></p>
+<p>DSH 插件：向模型暴露 <a href="https://github.com/opendatalab/MinerU">MinerU</a> 文档解析工具。MinerU 可将 PDF、图片、DOCX、PPTX、XLSX 等文件转换为结构化的 Markdown / JSON。</p>
+<h3>安装</h3>
+<pre><code class="language-sh"># 从 npm 安装（推荐）：
+dsh plugin --profile web add @huanlin/dsh-plugin-mineru
+
+# 从本地 checkout 开发安装：
+dsh plugin --profile web add link:D:\Projects\deepseek-harness\dsh-mineru
+</code></pre>
+<p>若从 git 安装（pnpm ≥10），需在 profile 的 <code>pnpm-workspace.yaml</code> 中允许构建：</p>
+<pre><code class="language-yaml">allowBuilds:
+  &#39;@huanlin/dsh-plugin-mineru&#39;: true
+</code></pre>
+<h3>配置</h3>
+<p>在 DSH GUI 设置页或 <code>cordis.patch.yml</code> 中配置：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>baseURL</code></td>
+<td>string</td>
+<td><em>(必填)</em></td>
+<td>MinerU API 地址，如 <code>http://your-mineru-host:18000</code></td>
+</tr>
+<tr>
+<td><code>apiKeyEnv</code></td>
+<td>credential-ref</td>
+<td><code>MINERU_API_KEY</code></td>
+<td>API key 的环境变量名 / 凭据引用。测试实例无需鉴权。</td>
+</tr>
+<tr>
+<td><code>defaultBackend</code></td>
+<td>enum</td>
+<td><code>pipeline</code></td>
+<td><code>pipeline</code> / <code>vlm-engine</code> / <code>hybrid-engine</code> / <code>vlm-http-client</code> / <code>hybrid-http-client</code></td>
+</tr>
+<tr>
+<td><code>defaultParseMethod</code></td>
+<td>enum</td>
+<td><code>auto</code></td>
+<td><code>auto</code> / <code>txt</code> / <code>ocr</code></td>
+</tr>
+<tr>
+<td><code>defaultLang</code></td>
+<td>string</td>
+<td><code>ch</code></td>
+<td>pipeline 后端的语言代码</td>
+</tr>
+<tr>
+<td><code>pollIntervalMs</code></td>
+<td>number</td>
+<td><code>2000</code></td>
+<td>异步状态轮询间隔</td>
+</tr>
+<tr>
+<td><code>pollTimeoutMs</code></td>
+<td>number</td>
+<td><code>600000</code></td>
+<td><code>mineru_parse_document</code> 最大轮询时长（10 分钟）</td>
+</tr>
+<tr>
+<td><code>requestTimeoutMs</code></td>
+<td>number</td>
+<td><code>60000</code></td>
+<td>单次 HTTP 请求超时</td>
+</tr>
+<tr>
+<td><code>maxMdOutputChars</code></td>
+<td>number</td>
+<td><code>200000</code></td>
+<td>内联返回给模型的 markdown 字符上限；超出时完整内容存到临时文件</td>
+</tr>
+</tbody></table>
+<h3>工具</h3>
+<h4><code>mineru_parse_document</code>（推荐）</h4>
+<p>解析本地文档并返回提取出的 markdown。内部自动完成：提交文件 → 轮询至完成 → 返回 markdown。大多数解析任务用这个即可。</p>
+<h4><code>mineru_submit_parse_job</code></h4>
+<p>异步提交解析任务，立即返回 <code>task_id</code>。适合大文档或并行批量提交。</p>
+<h4><code>mineru_get_parse_status</code></h4>
+<p>轮询异步任务状态，返回 <code>pending</code> / <code>processing</code> / <code>completed</code> / <code>failed</code>。</p>
+<h4><code>mineru_get_parse_result</code></h4>
+<p>获取已完成任务的结果。内联返回 markdown（过大则截断），并将完整结构化 JSON 存到 <code>raw_result_path</code>。</p>
+<h4><code>mineru_health</code></h4>
+<p>检查服务器健康状态、版本、队列深度与并发容量。</p>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install          # 安装开发依赖（schemastery、typescript、vitest）
+pnpm run typecheck    # tsc --noEmit 类型检查
+pnpm test             # vitest run 单元测试
+pnpm run build        # tsdown 构建 → lib/
+</code></pre>
+<h3>目录结构</h3>
+<pre><code>dsh-mineru/
+├── src/
+│   ├── index.ts        # 入口：name、inject、Config（Schemastery）、apply
+│   ├── client.ts       # MinerUClient（基于 fetch 的 HTTP 客户端 + 类型）
+│   ├── tools.ts        # 5 个 defineTool 定义 + 辅助函数 + registerTools
+│   └── types.d.ts      # @deepseek-ai/dsh-tools + cordis 的环境类型声明
+├── tests/
+│   └── tools.spec.ts   # 单元测试（mock fetch，无需真实服务器）
+├── cordis.patch.yml    # bundle 层：插入 dsh-mineru 插件行
+├── package.json        # dsh.bundle.patch 声明 + peerDeps
+└── tsconfig.json       # NodeNext、ES2022、strict
+</code></pre>
+<h3>测试 API</h3>
+<p>请自己部署 MinerU 实例。<code>cordis.patch.yml</code> 默认指向 <code>http://localhost:18000</code>，请在 DSH GUI 中覆盖 <code>baseURL</code> 改为你的 MinerU 服务器地址。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/HuanLinOTO/dsh-plugin-mineru/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

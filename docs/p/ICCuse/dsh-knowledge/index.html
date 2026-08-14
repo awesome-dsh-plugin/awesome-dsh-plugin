@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,81 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ICCuse/dsh-knowledge</pre><button type="button" data-cmd="dsh plugin --profile web add github:ICCuse/dsh-knowledge" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/ICCuse/dsh-knowledge/blob/main/README.zh.md">中文</a> | English</p>
+<p>Bridge the agent into the user&#39;s <strong>global knowledge base</strong> at <code>D:\knowledge</code> — the same Markdown + YAML frontmatter library the Codex <code>kb.cmd</code> CLI writes. Knowledge accumulated by either tool is visible to both: one library, two agents.</p>
+<h3>Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>kb_add</code></td>
+<td>Write one typed note (lesson/pattern/preference/project/reference/concept/moc/decision/note), byte-compatible with the Python CLI: slugified unique filename, typed directory, YAML frontmatter (<code>title/type/tags/aliases/status/created/updated</code> + project/domain).</td>
+</tr>
+<tr>
+<td><code>kb_search</code></td>
+<td>Keyword scan over notes (title &gt; tags &gt; content), returns path/title/type + snippet.</td>
+</tr>
+<tr>
+<td><code>kb_show</code></td>
+<td>Locate a note by title/path/tag and return its full text.</td>
+</tr>
+<tr>
+<td><code>kb_timeline</code></td>
+<td>Append a timestamped line to <code>notes/99_时间线.md</code> — mandatory after every writeback (&quot;失联等于白写&quot;).</td>
+</tr>
+</tbody></table>
+<p>The heavy read side (ask/reflect/map/ingest) stays on the Python CLI; this package owns the deterministic write + quick-read surface so no shell encoding ever touches your Chinese content.</p>
+<h3>Config</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>kbRoot</code></td>
+<td><code>D:\knowledge</code></td>
+<td>Knowledge base root.</td>
+</tr>
+<tr>
+<td><code>maxSearchResults</code></td>
+<td><code>8</code></td>
+<td>Search result cap.</td>
+</tr>
+</tbody></table>
+<p>Companion discipline: the <code>knowledge-writeback</code> skill (writeback three questions + retrieval protocol + causal-paradigm worldview).</p>
+<h3>Notes on compatibility</h3>
+<ul>
+<li><code>slugify</code> replicates <code>kb/ingest.py</code>: NFKC normalize, collapse chars outside <code>[\w\u4e00-\u9fff]</code>, 60-char cap, <code>untitled</code> fallback.</li>
+<li><code>unique_path</code> replicates <code>stem.md</code> → <code>stem-2.md</code> dedup.</li>
+<li>Frontmatter is emitted as quoted-YAML scalars and flow arrays, readable by python-frontmatter. If <code>kb/frontmatter.py</code> changes, update this package to match.</li>
+</ul>
+<h3>Install</h3>
+<p>Not on npm yet - install from this repository:</p>
+<pre><code class="language-sh">npm install github:ICCuse/dsh-knowledge
+# or: pnpm add github:ICCuse/dsh-knowledge
+</code></pre>
+<p>Then mount the bundle (declared in package.json &#39;dsh.bundle&#39;) and point it at your knowledge base:</p>
+<pre><code class="language-yaml">- id: knowledge
+  name: &#39;dsh-knowledge&#39;
+  config:
+    kbRoot: &#39;D:\knowledge&#39;
+</code></pre>
+<p>Companion discipline: the &#39;knowledge-writeback&#39; skill (writeback three questions + retrieval protocol).</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ICCuse/dsh-knowledge/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,67 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/omdsh-dev/Qwen-MM-Plugins/blob/main/README.zh.md">中文</a></p>
+<p>Qwen-MM capabilities as an installable DSH profile bundle. The package keeps the Qwen-MM implementation small and explicit: it fetches each selected Agent Skill at a configured upstream ref, starts its MCP server through the existing DSH client in required-initial-discovery mode, and mounts the skill only after tool discovery succeeds.</p>
+<h3>Repository shape</h3>
+<pre><code class="language-text">package.json              # runtime package and dsh.bundle manifest
+cordis.patch.yml          # opt-in profile layer
+src/                      # Cordis plugin and invariant companion
+lib/                      # generated install artifact
+legacy/                   # source-compatible host integration patch for older DSH snapshots
+tests/                    # plugin and composition tests
+</code></pre>
+<p>The package is intentionally private and can be installed from a Git checkout or linked into a profile. It does not vendor the Qwen-MM Python implementation.</p>
+<h3>Bundle behavior</h3>
+<p>Installing the bundle adds a disabled <code>qwen-mm</code> row. This is deliberate: enabling it starts remote Git fetches and external MCP processes, so the deployment must provide the exact Qwen-MM ref, capability list, and any capability environment explicitly in its profile layer.</p>
+<pre><code class="language-yaml">- id: qwen-mm
+  disabled: false
+  config:
+    source: https://github.com/QwenLM/Qwen-MM-Plugins.git
+    ref: &lt;exact commit or tag&gt;
+    capabilities:
+      - id: core
+      - id: video-memory
+</code></pre>
+<p>The bundle patch only composes the plugin row. Image content blocks, MCP image results, model modality checks, token accounting, compaction, replay, and Web summaries must be provided by the DSH version used by the profile; the old host patch is retained under <code>legacy/</code> only as a migration artifact for snapshots that do not yet provide those seams.</p>
+<h3>Capabilities</h3>
+<p>The plugin currently recognizes:</p>
+<pre><code class="language-text">core
+video-memory
+video-edit
+blender
+freecad
+edu-agent
+</code></pre>
+<p>Each capability can override its command, arguments, environment, and working directory. <code>strict: true</code> turns a per-capability warning into a load failure; the default skips only the failed capability.</p>
+<h3>Development</h3>
+<p>A full typecheck expects sibling checkouts:</p>
+<pre><code class="language-text">~/git/deepseek-harness
+~/git/Qwen-MM-Plugins
+</code></pre>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck
+pnpm test
+pnpm run build
+</code></pre>
+<p>The <code>prepare</code> script uses a source-only tsdown configuration so a Git install can build <code>lib/</code> without a DSH sibling checkout or project references. pnpm 10 may require the profile to allow the package&#39;s <code>prepare</code> script; only approve a pinned, trusted checkout.</p>
+<h3>Model Experience</h3>
+<p>The plugin contributes no fixed prompt text. Its selected Agent Skills and MCP tools become model-visible through the authoritative DSH skill and tool services, which own logging, lifecycle, cancellation, and result rendering.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li>External capability fetches require <code>git</code>; default MCP launches require <code>uvx</code> and the capability&#39;s Python environment.</li>
+<li>Capabilities that produce images require a resolved model route that declares image-input support.</li>
+<li>The bundle does not silently forward credential-shaped environment variables; capability credentials must be configured explicitly.</li>
+<li>The real Loader composition checks require a DSH <code>mcp-client</code> build whose async plugin load performs required initial discovery; older synchronous host snapshots skip those checks because they can mount the skill before tools are ready.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/Qwen-MM-Plugins/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

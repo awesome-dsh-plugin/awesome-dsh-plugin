@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,138 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:dongsheng123132/task-passport</pre><button type="button" data-cmd="dsh plugin --profile web add github:dongsheng123132/task-passport" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/dongsheng123132/task-passport/actions/workflows/ci.yml"><img src="https://github.com/dongsheng123132/task-passport/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/dongsheng123132/task-passport/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dongsheng123132/task-passport" alt="MIT 许可证"></a>
+<a href="https://github.com/dongsheng123132/task-passport/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%E2%89%A520-339933?logo=nodedotjs&logoColor=white" alt="Node.js 20+"></a>
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/DeepSeek_Harness-plugin-0969da" alt="DeepSeek Harness plugin"></a></p>
+<p>让一个任务带着“当前世界状态”在 DeepSeek Harness、Claude Code、Codex 等 AI Harness 之间接力，不搬运聊天记录。</p>
+<blockquote>
+<p>一个项目可以有多个任务护照；一个任务护照可以经历多个 Harness 和多个会话。</p>
+</blockquote>
+<h3>现在能做什么</h3>
+<ul>
+<li>每个任务一个稳定短号，例如 <code>TP-7K4M-9D2Q</code>。</li>
+<li><code>list</code>：只列身份与摘要，不误装载别的任务。</li>
+<li><code>open</code>：读取目标、当前状态、验证过的事实、决策理由和下一步。</li>
+<li><code>checkpoint</code>：工作完成后写回；带状态版本，过期写入直接冲突，不静默覆盖。</li>
+<li>同一个包既是通用 CLI，也是 DeepSeek Harness 原生 bundle。</li>
+<li>状态可由 U-King Action Core、本地目录参考存储或第三方 Provider 托管；插件本身是可装可卸的薄适配器。</li>
+</ul>
+<p>它不做两件事：不复制上一位 AI 的聊天记录；不把“刚改过的任务”猜成当前任务。</p>
+<h3>在 DeepSeek Harness 中安装</h3>
+<p>从 GitHub 安装（纯 JavaScript，仓库已包含运行产物，不需要 <code>prepare</code> 构建权限）：</p>
+<pre><code class="language-sh">dsh plugin --profile web add task-passport@0.2.2
+dsh --profile web --dump-config
+dsh web
+</code></pre>
+<p><code>dsh web</code> 在当前 rc.5 固定组合 <code>web</code> profile；需要浏览器界面时，插件也应安装到这个 profile。自定义 profile 可用于 TUI，但不能作为 <code>web</code> 子命令的父级 profile。</p>
+<p>如果 U-King 不在 PATH，在该 profile 的 <code>cordis.patch.yml</code> 覆盖插件配置：</p>
+<pre><code class="language-yaml">- id: task-passport
+  name: task-passport
+  config:
+    ukingExecutable: &#39;C:/path/to/U-King.exe&#39;
+    # 或者不依赖 U-King：storeDirectory: &#39;D:/task-passports&#39;
+    allowCheckpoint: true
+</code></pre>
+<p>Windows 上会自动发现 U-King 默认安装目录 <code>%LOCALAPPDATA%\u-king\u-king-mini.exe</code>；便携版或自定义目录才需要上面的显式配置。</p>
+<p>也可以在启动 DSH 前设置：</p>
+<pre><code class="language-powershell">$env:TASK_PASSPORT_UKING = &#39;C:\path\to\U-King.exe&#39;
+dsh --profile passport web
+</code></pre>
+<p>安装后可以直接对 DSH 说：</p>
+<pre><code class="language-text">请接手任务护照 TP-7K4M-9D2Q：先读取当前状态与下一步，只继承已验证事实，不继承上一位 AI 的聊天记录。
+</code></pre>
+<p>如果记不住编号，也可以说任务名。插件会先列护照；只有名称唯一时才继续，重名时必须让人选择。</p>
+<h3>通用 CLI</h3>
+<p>任何能运行命令的 Harness 都能使用同一条机器通道：</p>
+<pre><code class="language-sh">task-passport list
+task-passport open TP-7K4M-9D2Q
+task-passport new --title &quot;发布插件&quot; --goal &quot;今晚发布 DeepSeek Harness 插件&quot;
+task-passport prompt TP-7K4M-9D2Q
+task-passport checkpoint --file next-state.json --expected-version 4
+</code></pre>
+<p>长状态只接受文件，不塞命令行参数。stdout 除 <code>prompt</code> 外只输出 JSON，适合 Agent 与脚本调用。</p>
+<h3>不依赖 U-King 的本地存储</h3>
+<p>v0.2.2 提供开放 Provider 合约和本地目录参考实现。同一台机器上的所有 Harness 只要指向同一个目录，就会读写同一本护照：</p>
+<pre><code class="language-powershell">task-passport list --store D:\TaskPassports
+task-passport new --store D:\TaskPassports --title &quot;发布插件&quot; --goal &quot;完成 WorkBuddy 发布&quot;
+
+$env:TASK_PASSPORT_STORE = &#39;D:\TaskPassports&#39;
+task-passport mcp
+</code></pre>
+<p>本地存储为每本护照使用独立 JSON 文件、跨进程锁、同目录原子替换和 <code>expected_version</code> 冲突检测。它不会将密钥写入护照。</p>
+<p><strong>一个任务只能选一个权威存储。</strong> 不要让 Claude 指向本地目录、DSH 却仍指向 U-King，否则会形成两本同名护照。</p>
+<p>第三方看板可直接实现三个方法：</p>
+<pre><code class="language-js">import { createPassportClient } from &#39;task-passport/core&#39;
+
+const provider = {
+  async list() {},                         // 返回 state[]
+  async open(passportId) {},               // 返回 { state, compiledContext? } | null
+  async save(state, expectedVersion) {},   // 返回保存后的 state；过期版本必须拒绝
+}
+
+const client = createPassportClient({ provider, harness: &#39;my-dashboard&#39; })
+</code></pre>
+<h3>Claude Code / Codex</h3>
+<p>同一个 npm 包也提供标准输入输出 MCP 服务。Claude Code 和 Codex 只是薄适配器，仍然读写同一本护照：</p>
+<pre><code class="language-powershell">claude mcp add --scope user task-passport -- npx --yes task-passport@0.2.2 mcp
+codex mcp add task-passport -- npx --yes task-passport@0.2.2 mcp
+</code></pre>
+<p>接入后，两边都能看到相同的四个工具：<code>task_passport_list</code>、<code>task_passport_open</code>、<code>task_passport_new</code>、<code>task_passport_checkpoint</code>。如果是 U-King 便携版，可给 MCP 进程设置 <code>TASK_PASSPORT_UKING</code> 指向实际 exe。</p>
+<h3>WorkBuddy / CodeBuddy</h3>
+<p>仓库同时是一个 WorkBuddy 第三方插件市场：</p>
+<pre><code class="language-sh">codebuddy plugin marketplace add dongsheng123132/task-passport
+codebuddy plugin install task-passport@task-passport-marketplace
+</code></pre>
+<p>安装后重载插件。WorkBuddy 会同时得到 Task Passport Skill 和同一套 MCP 工具；不会另造一份状态。本地开发验证可用：</p>
+<pre><code class="language-sh">codebuddy --plugin-dir /path/to/task-passport
+</code></pre>
+<h3>长文与项目交接</h3>
+<p>长文可以稳定交接，但护照不携带整篇正文。正文放在 Git、共享目录或对象存储；护照只记录精确路径或 URL、revision/hash、当前章节、已验证事实和下一步。这比复制整段对话更稳定，也不会用无关历史挤占下一个模型的上下文。</p>
+<p>任务护照当前不搬运整个项目。项目文件仍由 Git / 共享工作区 / artifact store 搬运，护照负责指向精确版本并携带状态。后续的 Project Passport 会在这个边界上补充仓库 revision、运行时、插件需求和目标 Harness 就绪报告，但不保存密钥值。</p>
+<h3>三个概念</h3>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>生命周期</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目</td>
+<td>容器，可包含多个任务</td>
+<td><code>U-King</code> 仓库</td>
+</tr>
+<tr>
+<td>任务护照</td>
+<td>一个需要持续推进的目标</td>
+<td>“发布 DSH 插件”</td>
+</tr>
+<tr>
+<td>会话</td>
+<td>某个 Harness 的一次执行</td>
+<td>Claude 会话、DSH 会话</td>
+</tr>
+</tbody></table>
+<p>护照号不使用“1 号项目”作为全局身份；界面可以显示本地序号，但机器交接使用不透明的 <code>TP-…</code>，避免重名、碰撞和泄露项目名称。</p>
+<h3>为什么是薄插件</h3>
+<p><a href="https://github.com/cordiverse/paper">Cordiverse 的论文</a>说明了动态插件需要可卸载的副作用和可重绑定的依赖。任务护照采用同样的边界：DSH 插件可以随时装卸，任务状态放在插件生命周期之外长期存在。插件消失，护照不能跟着消失。</p>
+<p>U-King 是默认 Provider 和官方参考看板，但不是协议前置条件。公开产品名是 Task Passport；<code>2origin/0.1</code> 是底层状态模型，不要求用户理解。</p>
+<h3>开发</h3>
+<pre><code class="language-sh">npm test
+npm run check
+npm run pack:check
+</code></pre>
+<p>MIT License</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/dongsheng123132/task-passport/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

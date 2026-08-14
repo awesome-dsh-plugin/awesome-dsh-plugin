@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,83 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ylwl1997/noatmark-dsh-plugin</pre><button type="button" data-cmd="dsh plugin --profile web add github:ylwl1997/noatmark-dsh-plugin" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p><strong>NoAtMark text hygiene</strong> as a <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh) plugin.</p>
+<p>Everything-is-a-plugin: this plugin gives your dsh agent four text-hygiene tools, backed by the same deterministic engines behind <a href="https://noatmark.com">noatmark.com</a>.</p>
+<h3>Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>sanitize_text</code></td>
+<td>Strip invisible/zero-width characters and flag prompt-injection + hidden-text signals.</td>
+</tr>
+<tr>
+<td><code>scan_text</code></td>
+<td>Report invisible characters (with code points + positions), injection patterns, and hidden text.</td>
+</tr>
+<tr>
+<td><code>clean_format</code></td>
+<td>Clean LLM formatting artifacts (blank lines, stray fences, trailing spaces) — meaning untouched.</td>
+</tr>
+<tr>
+<td><code>sanitize_csv</code></td>
+<td>Escape CSV formula injection (OWASP): <code>= + - @</code> prefixes get a leading quote.</td>
+</tr>
+</tbody></table>
+<p>All processing is deterministic and local — no data leaves your machine.</p>
+<h3>Install</h3>
+<p>Add this plugin to your dsh Web UI. If you&#39;re running from a source checkout, use a <code>cordis.yml</code> patch:</p>
+<pre><code class="language-yaml">- insert:
+    - id: noatmark
+      name: noatmark-dsh-plugin
+</code></pre>
+<p>or point at the source directly (absolute path):</p>
+<pre><code class="language-yaml">- insert:
+    - id: noatmark
+      name: &#39;/path/to/noatmark-dsh-plugin/src/index.ts&#39;
+</code></pre>
+<p>Start dsh with the patch:</p>
+<pre><code class="language-sh">npx @deepseek-ai/dsh web --patch ./cordis.yml
+</code></pre>
+<h3>Usage</h3>
+<p>In a dsh session, ask the agent to use a tool, e.g.:</p>
+<blockquote>
+<p>Sanitize this pasted text before you summarize it.</p>
+</blockquote>
+<blockquote>
+<p>Scan this file for invisible characters.</p>
+</blockquote>
+<blockquote>
+<p>Clean the formatting of this AI output.</p>
+</blockquote>
+<blockquote>
+<p>Escape this CSV before saving it.</p>
+</blockquote>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm build   # tsc -&gt; dist/
+</code></pre>
+<h3>Resources</h3>
+<ul>
+<li>Web tools: <a href="https://noatmark.com/">https://noatmark.com/</a></li>
+<li>NoAtMark SDK (npm/PyPI): <code>noatmark-text-hygiene</code></li>
+<li>DeepSeek Harness: <a href="https://github.com/deepseek-ai/deepseek-harness">https://github.com/deepseek-ai/deepseek-harness</a></li>
+<li>Official docs: <a href="https://deepseek-harness.github.io/deepseek-harness/">https://deepseek-harness.github.io/deepseek-harness/</a></li>
+</ul>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ylwl1997/noatmark-dsh-plugin/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

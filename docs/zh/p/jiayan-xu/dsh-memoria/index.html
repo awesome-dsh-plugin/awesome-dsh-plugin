@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,107 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:jiayan-xu/dsh-memoria</pre><button type="button" data-cmd="dsh plugin --profile web add github:jiayan-xu/dsh-memoria" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>memoria 记忆后端插件：把 <a href="https://github.com/jiayan-xu/memoria">memoria</a>（向量 + 图记忆层）接入 DeepSeek Harness (dsh)，让 dsh agent 会话可以<strong>记住</strong>和<strong>回忆</strong>。</p>
+<ul>
+<li>4 个工具：<code>memoria_observe</code> / <code>memoria_remember</code> / <code>memoria_search</code> / <code>memoria_recall</code></li>
+<li>自动写入：每轮对话结束自动 <code>observe</code> 沉淀；用户肯定反馈（不错/很好/good/赞…）自动 <code>remember</code>（importance=5）</li>
+<li>配置热重载：改 <code>~/.dsh/settings.yaml</code> 的 <code>memoria:</code> section 免重启生效</li>
+<li>命名空间隔离：所有读写强制落在配置的 namespace（默认 <code>dsh-test</code>），不碰其他业务数据</li>
+</ul>
+<h3>使用前提</h3>
+<p>⚠️ <strong>本插件是 memoria 的前端，不是记忆存储本身</strong>。使用前需要：</p>
+<ol>
+<li><strong>自建并运行 memoria 服务</strong>（默认连接 <code>http://127.0.0.1:9003</code>）：memoria 是独立的开源项目（<a href="https://github.com/jiayan-xu/memoria">jiayan-xu/memoria</a>，Rust 向量 + 图记忆服务）。没有该服务时工具会报连接失败。</li>
+<li><strong>准备 badge token</strong>：memoria 工具调用要求 <code>register_agent</code> 签发的 badge token（admin key 不能直连），见下文「获取 memoria badge token」。以环境变量 <code>MEMORIA_AGENT_KEY</code> 提供（不落盘）。</li>
+</ol>
+<p>装完发现工具报 <code>Connection refused</code> / <code>HTTP 200 but auth failed</code>，先检查这两项。</p>
+<h3>安装</h3>
+<p>前置：<code>@deepseek-ai/dsh</code> CLI 与 pnpm。</p>
+<pre><code class="language-sh"># 安装（自动挂载，无需手动改 profile）——两种源任选
+dsh plugin --profile web add github:jiayan-xu/dsh-memoria
+# 或 npm 源：
+dsh plugin --profile web add @jhp830901/dsh-memoria
+
+# 启动 dsh web 即可使用
+dsh web
+</code></pre>
+<h3>配置</h3>
+<p>插件默认连 <code>http://127.0.0.1:9003</code>（本地 memoria）。可配置项：</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>baseURL</code></td>
+<td><code>http://127.0.0.1:9003</code></td>
+<td>memoria 服务地址</td>
+</tr>
+<tr>
+<td><code>agentId</code></td>
+<td><code>dsh-memoria</code></td>
+<td>memoria agent 身份（需已注册）</td>
+</tr>
+<tr>
+<td><code>apiKeyEnv</code></td>
+<td><code>MEMORIA_AGENT_KEY</code></td>
+<td>环境变量名，值 = memoria badge token</td>
+</tr>
+<tr>
+<td><code>namespace</code></td>
+<td><code>dsh-test</code></td>
+<td>记忆命名空间（隔离边界）</td>
+</tr>
+<tr>
+<td><code>autoWrite</code></td>
+<td><code>true</code></td>
+<td>自动写入开关</td>
+</tr>
+</tbody></table>
+<p>推荐用 settings section 覆盖（热重载）：</p>
+<pre><code class="language-yaml"># ~/.dsh/settings.yaml
+memoria:
+  baseURL: http://127.0.0.1:9003
+  namespace: my-namespace
+  autoWrite: true
+</code></pre>
+<p>agentKey <strong>不要落盘</strong>，用环境变量：</p>
+<pre><code class="language-sh">export MEMORIA_AGENT_KEY=&lt;badge-token&gt;
+</code></pre>
+<h4>获取 memoria badge token</h4>
+<p>memoria 的工具调用要求 X-Agent-Key 为 <code>register_agent</code> 签发的 badge token（admin key 不能直连）。未注册时先注册：</p>
+<pre><code class="language-sh"># 用 admin key 注册 agent（示例），返回 badge 有效期 1 年
+curl -X POST http://127.0.0.1:9003/mcp -H &#39;Content-Type: application/json&#39; \
+  -H &#39;X-Agent-Id: dsh-memoria&#39; -H &#39;X-Agent-Key: &lt;ADMIN_KEY&gt;&#39; \
+  -d &#39;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:1,&quot;method&quot;:&quot;tools/call&quot;,&quot;params&quot;:{&quot;name&quot;:&quot;register_agent&quot;,&quot;arguments&quot;:{&quot;agent_id&quot;:&quot;dsh-memoria&quot;,&quot;display_name&quot;:&quot;dsh-memoria plugin&quot;,&quot;namespace&quot;:&quot;dsh-test&quot;}}}&#39;
+</code></pre>
+<h3>使用</h3>
+<pre><code>用户：记住一个重要事实：我的仓库密码是 42
+用户：我之前记住的仓库密码是什么？   → 命中回忆
+</code></pre>
+<h3>验收用例</h3>
+<ol>
+<li><strong>写入</strong>：<code>memoria_remember {content, namespace}</code> → <code>{&quot;status&quot;:&quot;remembered&quot;,&quot;id&quot;:...}</code></li>
+<li><strong>召回</strong>：<code>memoria_search {query, namespace}</code> → 语义 + 关键词多信号命中</li>
+<li><strong>隔离</strong>：其他 namespace 检索本插件数据 → 授权拒绝/空结果</li>
+</ol>
+<h3>开发</h3>
+<pre><code class="language-sh">npm install -D typescript @types/node --legacy-peer-deps
+bash scripts/build.sh   # 产出 lib/（Windows 下依赖 junction，见 scripts/build.sh 注释）
+</code></pre>
+<h3>License</h3>
+<p>BSD-3-Clause</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/jiayan-xu/dsh-memoria/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

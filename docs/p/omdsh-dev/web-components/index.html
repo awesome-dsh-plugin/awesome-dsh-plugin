@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,54 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/web-components</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/web-components" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/omdsh-dev/web-components/blob/main/README.zh.md">中文</a></p>
+<p>The DSH Web Component adapter as an installable profile bundle. It exposes a browser-side <code>webComponent</code> service that mounts registered slot trees as native Custom Elements, while keeping slot ownership, typed descriptors, property/event bindings, DOM outlets, and incarnation lifetimes behind the adapter boundary.</p>
+<h3>Repository shape</h3>
+<pre><code class="language-text">package.json              # plugin package and dsh.bundle/dshClient manifests
+cordis.patch.yml          # browser opt-in profile layer
+src/index.ts              # host loader entry
+src/client/               # browser implementation
+src/invariant.ts          # package invariant companion
+lib/                      # generated host/client artifacts
+legacy/                   # source-compatible host integration patch for older DSH snapshots
+docs/                     # detailed protocol reference
+tests/                    # unit, composition, and terminal-free browser tests
+</code></pre>
+<h3>Bundle behavior</h3>
+<p>Installing the bundle adds a disabled <code>web-component</code> row. A Web profile enables it explicitly after the slot host and browser runtime are present:</p>
+<pre><code class="language-yaml">- id: web-component
+  disabled: false
+  name: &#39;@deepseek-ai/dsh-client-web-component&#39;
+</code></pre>
+<p>The bundle layer only composes the plugin row. Slot host APIs, descriptor types, browser runtime, and the React renderer seam must come from the DSH version selected by the profile. The previous host-source integration patch is retained under <code>legacy/</code> for migration of older DSH snapshots and is not part of the bundle package contract.</p>
+<p>The client module never exposes a live React tree or raw DOM context to feature plugins. It accepts plain descriptors, resolves declared values from the incarnation context, assigns JavaScript properties rather than serialized attributes, and reports CustomEvent details through declared handlers.</p>
+<h3>Development</h3>
+<p>A full typecheck expects a sibling DSH checkout:</p>
+<pre><code class="language-text">~/git/deepseek-harness
+~/git/web-components
+</code></pre>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck
+pnpm test
+pnpm run build
+</code></pre>
+<p>The <code>prepare</code> script builds the host and browser entries directly from <code>src/</code>, so a Git install does not require sibling project references. pnpm 10 may ask the profile to allow the package&#39;s prepare script; only approve a pinned, trusted checkout.</p>
+<h3>Model Experience</h3>
+<p>This package contributes no model-visible text, tools, or prompt sections. It only projects browser slot state and Custom Element events; model-visible behavior remains owned by the DSH services rendered through the slots.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li><code>CustomElementRegistry</code> definitions are page-lifetime resources and cannot be unregistered; the adapter rejects constructor replacement.</li>
+<li>The bundle does not provide a DOM or React renderer; the profile must already mount the DSH slot host and browser runtime.</li>
+<li>Older DSH snapshots require the compatibility patch in <code>legacy/</code> because a bundle cannot add missing host source APIs; the current <code>master</code> also predates the Slots election/incarnation APIs, so full typecheck requires the compatible Slots change (for example <code>d97d6a1e</code>).</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/web-components/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

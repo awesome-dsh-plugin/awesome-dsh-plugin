@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,111 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:a903067276-rgb/dsh-file-mentions</pre><button type="button" data-cmd="dsh plugin --profile web add github:a903067276-rgb/dsh-file-mentions" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/README.md">English</a> | <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/README.zh-CN.md">简体中文</a></p>
+<p><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></p>
+<p><strong>Clickable file paths in DSH replies</strong> — a DeepSeek Harness (DSH) web plugin with a Codex-style experience.</p>
+<p>Inline paths wrapped in backticks (<code>`~/...`</code>, absolute, relative, or Chinese paths) become
+<strong>click-to-open</strong>; each clickable path carries a small 📂 button that reveals the file in your
+file manager; a &quot;📎 mentioned files&quot; chip list at the turn tail covers the rest. URLs are
+already auto-linked by the official renderer, so this plugin leaves them alone.</p>
+<h3>Features</h3>
+<table>
+<thead>
+<tr>
+<th>Where</th>
+<th>What</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Inline path text</td>
+<td>click</td>
+<td>Open with default app / open directory</td>
+</tr>
+<tr>
+<td>📂 after inline path</td>
+<td>click</td>
+<td>Reveal in file manager (macOS Finder)</td>
+</tr>
+<tr>
+<td>&quot;📎 mentioned files&quot; chip</td>
+<td>click name</td>
+<td>Preview content inside DSH</td>
+</tr>
+<tr>
+<td>📂 in the chip list</td>
+<td>click</td>
+<td>Reveal in file manager</td>
+</tr>
+<tr>
+<td>Inline URL</td>
+<td>click</td>
+<td>Browser opens it (official autolink)</td>
+</tr>
+</tbody></table>
+<p>Supports <code>~/</code> expansion, relative paths (resolved against the session cwd), and absolute
+paths in macOS / Linux / Windows forms. Non-existent paths silently do nothing.</p>
+<h3>Install</h3>
+<h4>Official bundle install (recommended)</h4>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:a903067276-rgb/dsh-file-mentions#main&quot;
+</code></pre>
+<p>Restart <code>dsh web</code>. Requires pnpm on PATH (<code>dsh plugin</code> forwards to pnpm).</p>
+<h4>Manual mount (fallback)</h4>
+<p>See <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/docs/install.md">docs/install.md</a>: symlink into
+<code>~/.dsh/profiles/web/node_modules/</code> plus a <strong>single entry</strong> in <code>~/.dsh/cordis.patch.yml</code>
+(a double entry makes the plugin apply twice and crash on duplicate route registration),
+then restart.</p>
+<h3>Usage</h3>
+<p>Have the agent wrap paths in backticks (e.g. <code>`~/docs/plan.md`</code>) to make them clickable
+inline. The tail chip list appears automatically — no configuration.</p>
+<h3>Platform support</h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>macOS</td>
+<td>✅ fully tested (incl. Chinese paths)</td>
+</tr>
+<tr>
+<td>Linux / Windows</td>
+<td>⚠️ not tested; expected to work (command branching and path parsing implemented)</td>
+</tr>
+</tbody></table>
+<h3>How it works</h3>
+<ul>
+<li><strong>Host</strong> (<code>lib/index.js</code>): two routes — <code>/api/file-mentions/check</code> (existence check) and
+<code>/api/file-mentions/open</code> (system open, <code>mode: open/reveal</code>, per-platform command). Pure
+Node stdlib; <code>execFile</code> avoids shell injection.</li>
+<li><strong>Client</strong> (<code>lib/client.js</code>): a conversationEvents collector extracts paths from each
+reply → publishes them to turn data → the tail list filters non-existent paths before
+rendering; inline clicks use a <strong>document-level click delegation</strong> (the official render
+entry is occupied by the official &quot;deliverables&quot; plugin, so DOM delegation is the only
+viable path); inline 📂 buttons are inserted by a MutationObserver and restored
+automatically after React re-renders.</li>
+</ul>
+<p>See <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/docs/architecture.md">docs/architecture.md</a>.</p>
+<h3>Compatibility notes</h3>
+<ul>
+<li>Inline clicks rely on backtick-wrapped paths (the agent-output convention, same as
+Codex); bare paths in prose are intentionally not clickable.</li>
+<li>The official &quot;produced files&quot; list and this plugin coexist: official wins when it has
+output, otherwise this plugin shows.</li>
+<li>Windows / Linux validation via issue or PR is welcome.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

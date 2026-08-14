@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,75 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:lonelymoon87/dsh-guardian</pre><button type="button" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-guardian" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/ci.yml"><img src="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/dsh-compatibility.yml"><img src="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/dsh-compatibility.yml/badge.svg" alt="Latest DSH compatibility"></a>
+<a href="https://github.com/lonelymoon87/dsh-guardian/releases/latest"><img src="https://img.shields.io/github/v/release/lonelymoon87/dsh-guardian" alt="Release"></a>
+<a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/LICENSE"><img src="https://img.shields.io/github/license/lonelymoon87/dsh-guardian" alt="License"></a></p>
+<p>Runtime dangerous-operation policy, canonical output redaction, and security-review workflow for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>The installable v0.1.2 release targets DSH 0.1.0-rc.6. This project currently distributes prebuilt packages through GitHub Releases and is not published on npm.</p>
+<p><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/README.zh-CN.md">简体中文</a></p>
+<h3>MVP</h3>
+<ul>
+<li>A <code>tools/pre-execute</code> waterfall classifies dangerous shell, SQL, and structured file-write arguments as <code>deny</code>, <code>ask</code>, or unchanged.</li>
+<li><code>standard</code>, <code>strict</code>, and <code>permissive</code> profiles provide different approval levels while retaining non-negotiable deny rules.</li>
+<li>Custom regular-expression rules add deployment-specific <code>deny</code> or <code>ask</code> decisions.</li>
+<li>A <code>tools/post-execute</code> waterfall redacts common credentials from canonical JSON results, failures, rendered text, and block feedback.</li>
+<li>Consecutive text blocks are scanned as one stream so splitting a credential across blocks does not bypass redaction.</li>
+<li><code>/security-review</code> loads a bundled, read-only security-review skill.</li>
+</ul>
+<p>The MVP is not a process sandbox, authorization system, data-loss-prevention service, or substitute for the provider policies mounted below it.</p>
+<h3>Policy behavior</h3>
+<p>The built-in rules deny recursive forced deletion of root or home paths, network-response pipes into shells, raw writes to <code>/dev</code>, and writes to <code>/etc</code>. Force pushes, destructive SQL, and other recursive forced deletions ask for approval. Strict mode additionally asks for <code>sudo</code>; permissive mode retains only deny rules.</p>
+<p>Guardian always delegates through <code>next()</code>. When another policy listener returns a decision, the most restrictive result wins: <code>deny</code> outranks <code>ask</code>, which outranks <code>allow</code>.</p>
+<h3>Redaction behavior</h3>
+<p>Built-in patterns cover AWS access-key IDs, GitHub tokens, <code>sk-</code> API keys, PEM private-key blocks, and common credential assignments. Redaction is applied to the canonical JSON value when one exists, preserving arrays, objects, numbers, booleans, and null values. This prevents Code Mode and downstream renderers from retaining an unredacted value behind safe-looking display text.</p>
+<p>Logs contain only the tool name, match count, and redaction labels. The plugin does not append custom session events because the current external plugin API does not expose an ignorable event envelope; emitting a required unknown event would make old sessions unreadable after uninstall.</p>
+<h3>Install</h3>
+<p>The package currently targets DSH <code>0.1.0-rc.6</code> plugin APIs and Node.js <code>^22.19 || &gt;=24</code>.</p>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/lonelymoon87/dsh-guardian/releases/download/v0.1.2/dsh-guardian-0.1.2.tgz
+</code></pre>
+<p>The release tarball is prebuilt and needs no build allowance. A pinned source install is also supported:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:lonelymoon87/dsh-guardian#v0.1.2
+</code></pre>
+<p>The source install runs this package&#39;s <code>prepare</code> build. pnpm 10 and later reject it until the profile allowlists the exact package key printed by the failed command; apply that instruction and rerun the same <code>dsh plugin add</code> command. Replace <code>web</code> with <code>headless</code> to install into the one-shot agent profile.</p>
+<p>To upgrade, rerun <code>dsh plugin add</code> with the newer release URL. To uninstall:</p>
+<pre><code class="language-sh">dsh plugin --profile web remove dsh-guardian
+</code></pre>
+<h3>Configuration</h3>
+<pre><code class="language-yaml">- id: guardian
+  name: dsh-guardian
+  config:
+    profile: standard
+    rules:
+      - name: production-host
+        pattern: production\\.internal
+        action: ask
+        reason: production target requires review
+    redaction:
+      enabled: true
+      patterns:
+        - label: internal-token
+          pattern: INT_[A-Z0-9]{12}
+</code></pre>
+<p>Regular-expression flags may contain only <code>i</code>, <code>m</code>, <code>s</code>, and <code>u</code>. Invalid expressions and labels fail during plugin loading.</p>
+<h3>Verification</h3>
+<p>The tests cover positive and negative cases for every built-in rule, structured paths, profile behavior, downstream policy composition, nested canonical values, custom credentials, block feedback, split text blocks, disabled redaction, command dispatch, and invalid configuration.</p>
+<ul>
+<li>The v0.1.2 tarball installs directly from its HTTPS release URL into a clean DSH profile.</li>
+<li>The packed bundle and pinned GitHub source install both appear in <code>dsh --dump-config</code>.</li>
+<li>CI covers Node 22.19 and Node 24; a scheduled workflow repeats the real install against <code>@deepseek-ai/dsh@latest</code>.</li>
+<li>Bugs and compatibility reports are tracked in <a href="https://github.com/lonelymoon87/dsh-guardian/issues">GitHub Issues</a>.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

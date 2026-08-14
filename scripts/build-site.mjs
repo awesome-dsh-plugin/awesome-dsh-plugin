@@ -11,6 +11,7 @@
  * Usage: node scripts/build-site.mjs
  */
 import fs from 'node:fs'
+import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
@@ -223,6 +224,31 @@ for (const loc of LOCALES) {
 
 // Plugin detail pages: /p/{owner}/{repo}[--subdir]/ per locale
 const detailMaster = fs.readFileSync('site/detail-template.html', 'utf8')
+const readmes = fs.existsSync('data/readmes.json') ? JSON.parse(fs.readFileSync('data/readmes.json', 'utf8')) : {}
+
+// render a plugin README to safe HTML: raw HTML dropped, headings demoted,
+// relative links/images resolved against the repo (probe supplies the bases)
+function renderReadme(rm) {
+  const abs = (href, base) => {
+    if (!href || /^(https?:|mailto:|#|data:)/i.test(href)) return href
+    return base + href.replace(/^\.\//, '').replace(/^\//, '')
+  }
+  const md = new Marked({
+    walkTokens(t) {
+      if (t.type === 'heading') t.depth = Math.min(t.depth + 1, 6)
+      else if (t.type === 'image') t.href = abs(t.href, rm.base)
+      else if (t.type === 'link') t.href = abs(t.href, rm.blobBase)
+    },
+    renderer: { html: () => '' },
+  })
+  try {
+    // drop a leading H1 — the page already has one
+    const src = rm.md.replace(/^\s*# .*\n/, '')
+    return md.parse(src)
+  } catch {
+    return null
+  }
+}
 for (const loc of LOCALES) {
   for (const e of ordered) {
     const url = `${ORIGIN}${loc.urlPath}p/${e.slug}/`
@@ -282,8 +308,19 @@ for (const loc of LOCALES) {
       ],
     }])
 
+    const rm = readmes[e.url]
+    const readmeHtml = rm ? renderReadme(rm) : null
+    const readmeSection = readmeHtml ? `<section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+${readmeHtml}
+    </div>
+    <p class="note"><a href="${rm.htmlUrl}" rel="noopener">${loc.strings.P_README_SRC}</a></p>
+  </section>` : ''
+
     let page = detailMaster
     page = page
+      .replaceAll('__P_README_SECTION__', readmeSection)
       .replaceAll('__LANG__', loc.htmlLang)
       .replaceAll('__TITLE__', esc(loc.P_TITLE.replace('{NAME}', e.name).replace('{CAT}', loc.categories[e.cat])))
       .replaceAll('__DESC__', esc(metaDesc))

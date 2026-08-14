@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,140 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:LeemanCheung/dsh-token-usage</pre><button type="button" data-cmd="dsh plugin --profile web add github:LeemanCheung/dsh-token-usage" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>真实 DSH 设置页截图。截图仅展示聚合 Token 统计与模型路由，不包含会话标题、提示词或回复正文。</p>
+</blockquote>
+<h3>🗺️ 功能概览</h3>
+<h3>✨ 亮点</h3>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>完整 Token bucket</strong></td>
+<td>分别记录未缓存输入、输出、缓存读取与缓存写入；<code>reasoningTokens</code> 已包含在输出中，不重复计算。</td>
+</tr>
+<tr>
+<td><strong>多维统计</strong></td>
+<td>以 provider / model、会话与 UTC 日期聚合普通对话、每次重试和上下文压缩用量。</td>
+</tr>
+<tr>
+<td><strong>52 周热力图</strong></td>
+<td>GitHub commit graph 风格的 Token 活跃度图；颜色越深代表当天总用量越高，悬停可查看精确数值。</td>
+</tr>
+<tr>
+<td><strong>紧凑布局</strong></td>
+<td>使用 <code>K</code> / <code>M</code> / <code>B</code> 展示大数字，悬停显示完整数值；热力图自适应设置页宽度，默认无需横向拖动。</td>
+</tr>
+<tr>
+<td><strong>历史预热</strong></td>
+<td>启动后顺序回放可读取的历史会话并写入 projection cache，不阻塞插件启动。</td>
+</tr>
+<tr>
+<td><strong>隐私优先</strong></td>
+<td>仅保留统计 bucket、日期和模型路由，不复制提示词、回复内容或其他会话正文。</td>
+</tr>
+</tbody></table>
+<h3>🚀 安装</h3>
+<pre><code class="language-powershell">dsh plugin --profile web add github:LeemanCheung/dsh-token-usage
+</code></pre>
+<p>安装后重启当前 <code>dsh web</code> 进程并刷新 <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>，再打开 <strong>设置 → Token 用量</strong>。</p>
+<p>在本目录的上一级运行：</p>
+<pre><code class="language-powershell">dsh plugin --profile web add ./dsh-token-usage
+</code></pre>
+<h3>📊 仪表盘内容</h3>
+<ul>
+<li><strong>概览卡片</strong>：总 Token、输入 Token、输出 Token、缓存命中率和有用量会话数。</li>
+<li><strong>Token 活跃度</strong>：最近 52 周按天汇总的热力图；每个方格提供“日期 · 精确 Token 数”的悬停说明。</li>
+<li><strong>模型用量</strong>：按 provider / model 汇总调用次数、总量、输入与输出；缓存读写作为输入的辅助明细展示。</li>
+<li><strong>会话记录</strong>：可搜索会话标题、会话 ID 或模型路由，并查看最近活动时间及用量分布。</li>
+</ul>
+<h4>统计口径</h4>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>计算方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>输入 Token</td>
+<td><code>uncachedInputTokens + cacheReadTokens + cacheWriteTokens</code></td>
+</tr>
+<tr>
+<td>总 Token</td>
+<td>输入 Token + <code>outputTokens</code></td>
+</tr>
+<tr>
+<td>缓存命中率</td>
+<td><code>cacheReadTokens / 输入 Token</code></td>
+</tr>
+<tr>
+<td>输出 Token</td>
+<td>使用 provider 上报的 <code>outputTokens</code>；不另加 <code>reasoningTokens</code></td>
+</tr>
+</tbody></table>
+<p>同一请求步骤若先后出现流式 usage 与最终消息 usage，最终值会替换该步骤的临时值，避免重复记账；发生 <code>llm/retry</code> 后，每个重试尝试仍会被独立统计。</p>
+<h3>🧭 数据流</h3>
+<pre><code class="language-mermaid">flowchart LR
+  A[DSH session log] --&gt; B[Token usage projection]
+  B --&gt; C[Session projection cache]
+  C --&gt; D[Settings · Token 用量]
+  D --&gt; E[概览与模型统计]
+  D --&gt; F[52 周活跃度热力图]
+</code></pre>
+<ul>
+<li>Host 侧监听普通模型请求、重试和上下文压缩事件，构建会话级持久 projection。</li>
+<li>历史会话在后台按顺序预热；冷会话在恢复期间重新附着时，会重新写入最新 live checkpoint，避免回退缓存水位。</li>
+<li>Web 侧将所有会话 projection 聚合为仪表盘数据。较旧的内置 projection 会显示为“未归因用量”，以保持总量守恒。</li>
+</ul>
+<h3>🔄 更新与热加载</h3>
+<table>
+<thead>
+<tr>
+<th>改动类型</th>
+<th>如何生效</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host 逻辑（projection、事件、统计）</td>
+<td>重启 <code>dsh web</code>，使 Node Host 重新加载插件。</td>
+</tr>
+<tr>
+<td>Client/UI（React、CSS）</td>
+<td>仅当同一 DSH checkout 正运行 <code>pnpm run dev:web</code> 监听器时，重建 bundle 后可通过 HMR 更新；否则重启并刷新。</td>
+</tr>
+<tr>
+<td>GitHub 源码更新</td>
+<td>新安装会取得仓库当前默认分支的预构建 bundle；已运行的实例仍按上两行规则更新。</td>
+</tr>
+</tbody></table>
+<h3>🛠️ 开发</h3>
+<p>本项目当前以 GitHub 源码插件形式分发，不发布到 npm。源码与 DSH checkout 并排放置，<code>tsdown.config.ts</code> 复用 DSH 的官方 Client bundle preset。</p>
+<pre><code class="language-powershell">npm test
+npm run typecheck
+npm run build
+</code></pre>
+<p>构建产物为 <code>lib/index.js</code> 与 <code>lib/client.js</code>，已提交到仓库，确保可直接通过 GitHub 安装。</p>
+<h3>⚠️ 已知限制</h3>
+<ul>
+<li>历史预热依赖 DSH session projection cache。预热完成前，仅有内置 projection 的旧会话会被显示为“未归因用量”；刷新后可读取新的模型明细。</li>
+<li>单个损坏或不可读取的历史会话只会记录警告，不会阻止插件启动。</li>
+<li>热力图按持久事件的 UTC 日期统计；旧版内置 projection 缺少逐日数据时，会暂按会话最后活动日归档。</li>
+</ul>
+<h3>📄 License</h3>
+<p><a href="https://github.com/LeemanCheung/dsh-token-usage/blob/main/LICENSE">MIT</a> © LeemanCheung</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LeemanCheung/dsh-token-usage/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

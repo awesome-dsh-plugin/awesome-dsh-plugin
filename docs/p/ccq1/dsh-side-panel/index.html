@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,71 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ccq1/dsh-side-panel</pre><button type="button" data-cmd="dsh plugin --profile web add github:ccq1/dsh-side-panel" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH Web 的右侧工作区面板，在当前会话旁集中提供 Git 审查、终端和文件操作。
+可以点击dsh会话区弹出的文件链接，会自动打开相应的文件以供审阅。</p>
+<p><img src="https://raw.githubusercontent.com/ccq1/dsh-side-panel/main/assets/overview.png" alt="DSH Side Panel 界面预览"></p>
+<h3>功能</h3>
+<ol>
+<li>Git审查，可以查看工作区和暂存区的文件，以及dsh每轮修改的代码，后续会增加回退。</li>
+<li>文件浏览器， 可以在会话区点击文件跳转到文件浏览器浏览文件。</li>
+<li>终端，在当前工作区直接运行命令，无需离开工作区，专注你的任务。</li>
+</ol>
+<h3>安装</h3>
+<p>从 github-dsh-external仓库安装</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:dsh-external/dsh-side-panel
+dsh web
+</code></pre>
+<p>或者可以先从git clone 到本地，然后从本地目录安装</p>
+<pre><code class="language-sh">git clone git@github.com:dsh-external/dsh-side-panel.git
+cd dsh-side-panel
+npm install
+npm run build
+dsh plugin --profile web add .
+</code></pre>
+<h3>配置</h3>
+<p>组合包默认启用以下配置：</p>
+<pre><code class="language-yaml">- insert:
+    - id: side-panel
+      name: &#39;@dsh-external/dsh-side-panel&#39;
+      config:
+        maxTextBytes: 2097152
+        maxImageBytes: 10485760
+        searchMaxResults: 200
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th align="right">默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>maxTextBytes</code></td>
+<td align="right">2 MiB</td>
+<td>可读取和编辑的单个文本文件大小上限</td>
+</tr>
+<tr>
+<td><code>maxImageBytes</code></td>
+<td align="right">10 MiB</td>
+<td>可预览的单个图片大小上限</td>
+</tr>
+<tr>
+<td><code>searchMaxResults</code></td>
+<td align="right">200</td>
+<td>文件筛选返回的最大结果数</td>
+</tr>
+</tbody></table>
+<h3>许可</h3>
+<p><a href="https://github.com/ccq1/dsh-side-panel/blob/main/LICENSE">BSD 3-Clause License</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ccq1/dsh-side-panel/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

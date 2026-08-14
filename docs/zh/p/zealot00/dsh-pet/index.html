@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,126 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zealot00/dsh-pet</pre><button type="button" data-cmd="dsh plugin --profile web add github:zealot00/dsh-pet" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>一个 DeepSeek Harness (dsh) WebUI 客户端插件：右下角桌面宠物，<strong>宠物陪伴 + 实用工具</strong>二合一——精灵图多帧动画、agent 状态联动、自由拖拽、闹钟、番茄钟、皮肤分离。</p>
+<blockquote>
+<p>⚠️ 皮肤版权：<code>assets/zhuangfangyi.png</code> 与 <code>zhuangfangyi.sheet.png</code> 为默认皮肤（来自用户提供的图片，透明化 + AI 动作帧处理）。若为游戏官方立绘/同人图，<strong>仅限个人使用，勿商用</strong>。换皮肤时请使用你有权使用的素材。</p>
+</blockquote>
+<h3>效果图</h3>
+<p><img src="https://raw.githubusercontent.com/zealot00/dsh-pet/main/docs/screenshot-states.png" alt="精灵图动画系统"></p>
+<p><img src="https://raw.githubusercontent.com/zealot00/dsh-pet/main/docs/screenshot-scene.png" alt="使用场景"></p>
+<h3>特性</h3>
+<ul>
+<li><strong>精灵图动画</strong>：5 状态 × 32 帧（idle/thinking/working/done/sleeping），canvas 逐帧渲染（无重影闪烁），帧率可调 1-32</li>
+<li><strong>agent 状态联动</strong>：agent 开始 → 思考（1.8s）→ 工作（弹跳）→ 完成（庆祝跳跃）</li>
+<li><strong>自由拖动</strong>：pointer events 拖拽，松手自动保存位置</li>
+<li><strong>闹钟</strong>：每天/一次两种模式；&quot;已触发&quot;标记持久化，重启不重复响</li>
+<li><strong>番茄钟</strong>：工作/休息循环，宠物脚下倒计时，到点通知+宠物说话；<strong>状态持久化</strong>（墙钟时间驱动，刷新/重启不重置）</li>
+<li><strong>便签</strong>：国风祥云告示牌（白底绿框+四角祥云），宠物侧边循环显示</li>
+<li><strong>久坐/喝水提醒</strong>：间隔提醒（持久化防重置），到点通知+宠物说话</li>
+<li><strong>提醒互斥</strong>：闹钟/番茄钟/提醒共用 10s 冷却，防通知轰炸</li>
+<li><strong>右键设置面板</strong>：启用/大小/位置/透明度/<strong>皮肤下拉+预览</strong>/台词/帧率/入睡秒/闹钟/番茄钟/便签/提醒</li>
+<li><strong>皮肤分离</strong>：素材走 <code>/pet-assets/&lt;文件名&gt;</code>，皮肤下拉选择 + 自定义输入 + 实时预览</li>
+<li><strong>纯前端驱动</strong>：设置存 <code>localStorage</code>，不依赖 host settings 服务</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-bash">./install.sh &amp;&amp; dsh web
+# 或 DSH_PROFILE=~/.dsh/profiles/其他名字 ./install.sh
+</code></pre>
+<p>install.sh 自动：复制插件包到 profile 的 node_modules → 从 dsh 安装树复制依赖（schemastery 零依赖叶子）→ 注册插件行 → 验证 loader 解析。</p>
+<blockquote>
+<p>包声明 <code>dsh.bundle.patch</code>，未来 npm 发布后可直接 <code>dsh plugin --profile web add dsh-pet</code>。</p>
+</blockquote>
+<h3>交互</h3>
+<ul>
+<li><strong>左键点击</strong>：说话（随机台词气泡）</li>
+<li><strong>右键</strong>：设置面板</li>
+<li><strong>拖拽</strong>：任意位置</li>
+<li><strong>agent 跑任务</strong>：思考→工作→庆祝动画</li>
+<li><strong>闲置 60s</strong>（可配）：入睡；点击/拖拽唤醒</li>
+</ul>
+<h3>配置项（localStorage: <code>dsh-pet:settings</code>）</h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>enabled / width / right / bottom / opacity</td>
+<td>true / 180 / 24 / 20 / 1</td>
+<td>基础外观</td>
+</tr>
+<tr>
+<td>image</td>
+<td>zhuangfangyi.sheet.png</td>
+<td>皮肤（下拉 + 自定义）</td>
+</tr>
+<tr>
+<td>lines</td>
+<td>默认台词</td>
+<td>随机台词</td>
+</tr>
+<tr>
+<td>fps</td>
+<td>6</td>
+<td>精灵图帧率</td>
+</tr>
+<tr>
+<td>sleepAfter</td>
+<td>60</td>
+<td>闲置入睡秒（0=禁用）</td>
+</tr>
+<tr>
+<td>alarmEnabled / alarmTime / alarmMessage / alarmMode</td>
+<td>false / 09:00 / 默认 / repeat</td>
+<td>闹钟（repeat=每天 / once=一次）</td>
+</tr>
+<tr>
+<td>pomodoroEnabled / pomodoroWork / pomodoroBreak</td>
+<td>false / 25 / 5</td>
+<td>番茄钟</td>
+</tr>
+</tbody></table>
+<h3>项目结构</h3>
+<pre><code>dsh-pet/
+├── package.json        # dsh.client + dsh.bundle.patch
+├── cordis.patch.yml    # bundle patch（插件行）
+├── lib/
+│   ├── index.js        # host 半部：/pet-assets 素材路由
+│   └── client.js       # 浏览器半部：宠物/动画/拖拽/闹钟/番茄钟/设置面板
+├── assets/             # 皮肤（zhuangfangyi.png 单图 + zhuangfangyi.sheet.png 精灵图）
+├── scripts-gen-sheet.py # 程序化生成精灵图（Pillow）
+├── prepare_sheet.py    # AI 动作条拆帧拼精灵图
+├── deps-copy.py        # 依赖复制助手
+├── install.sh / uninstall.sh
+└── README.md
+</code></pre>
+<h3>精灵图格式</h3>
+<ul>
+<li>网格：32 列 × 5 行（行 = 状态：idle/thinking/working/done/sleeping）</li>
+<li>文件名含 <code>.sheet.</code> 即视为精灵图（如 <code>xxx.sheet.png</code>）</li>
+<li>生成：<code>python3 scripts-gen-sheet.py</code>（程序化）或 <code>python3 prepare_sheet.py</code>（AI 动作条拆帧）</li>
+<li>AI 动作条生成：<code>gen_strips.sh</code>（mmx + subject-ref + 自动质检重试）</li>
+</ul>
+<h3>卸载</h3>
+<pre><code class="language-bash">./uninstall.sh &amp;&amp; dsh web
+</code></pre>
+<h3>已知说明</h3>
+<ul>
+<li>设置存 localStorage（按浏览器）；单机个人使用最佳</li>
+<li>精灵图 thinking/done 为 AI 帧，其余程序化——后续可替换更高质量动作帧</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/zealot00/dsh-pet/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

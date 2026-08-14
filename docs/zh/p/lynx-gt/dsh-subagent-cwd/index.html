@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,161 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd</pre><button type="button" data-cmd="dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Enhanced subagent delegation tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh)
+<strong>with per-call working-directory control</strong>.</p>
+<p>Everything in <a href="https://github.com/lynx-gt/dsh-subagent-tools">dsh-subagent-tools</a> (per-call model / provider /
+persona / toolFilter overrides, <code>@preset:</code> references, <code>provider/model</code> composite ids) <strong>plus</strong> a per-call
+<code>cwd</code> parameter — shipped with the two small provider patches that make <code>cwd</code> actually work.</p>
+<p>| <a href="https://github.com/lynx-gt/dsh-subagent-cwd/blob/master/README.md">English</a> | <a href="https://github.com/lynx-gt/dsh-subagent-cwd/blob/master/README.zh.md">中文</a> |</p>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<h3>Choose one of the two packages — not both</h3>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Per-call model/provider/persona/toolFilter</th>
+<th><code>@preset:</code></th>
+<th><code>cwd</code></th>
+<th>Patches</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>dsh-subagent-tools</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td><strong>none (bundle only)</strong></td>
+</tr>
+<tr>
+<td><strong>dsh-subagent-cwd</strong> (this)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>2 provider patches</td>
+</tr>
+</tbody></table>
+<p>Install <strong>either</strong> one. Both expose the same tool surface (<code>subagent</code> / <code>subagent_fork</code>) and colliding
+installations would fight over the tool names.</p>
+<h3>Why cwd needs patches (and the other features don&#39;t)</h3>
+<p><code>SubagentStartRequest</code> has <strong>no cwd field</strong>, and the in-process drive layer builds child session meta purely
+from <code>childSessionMeta(parent, ...)</code> — a per-call cwd is never forwarded. Two code paths create in-process
+children, and <strong>both</strong> must be patched or you hit the classic trap where the foreground path honors <code>cwd</code>
+while the background path silently ignores it:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Package to patch</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Foreground (one-shot)</td>
+<td><code>@deepseek-ai/dsh-subagent-in-process-driver</code></td>
+<td><code>lib/index.js</code></td>
+</tr>
+<tr>
+<td>Background (continuable)</td>
+<td><code>@deepseek-ai/dsh-subagent</code></td>
+<td><strong><code>lib/index.js</code> (the BUNDLE — not <code>lib/types/continuation.js</code>!)</strong></td>
+</tr>
+</tbody></table>
+<p>The second one is a bundle trap: <code>package.json</code> main/exports point at <code>lib/index.js</code>, which contains an
+inline copy of the continuation manager. Patching the source-shaped <code>lib/types/continuation.js</code> has <strong>no
+effect</strong> — always patch and verify the bundle.</p>
+<h3>Installation</h3>
+<pre><code class="language-sh"># 1. install the plugin (npm / git / local)
+dsh plugin --profile web add dsh-subagent-cwd
+
+# 2. apply the two provider patches (required for `cwd`)
+powershell -ExecutionPolicy Bypass -File patches\install.ps1    # Windows
+# or: ./patches/install.sh                                       # POSIX
+
+# 3. Web sessions: also run the preset adapter (see below)
+powershell -ExecutionPolicy Bypass -File install-preset.ps1     # Windows
+# or: ./install-preset.sh                                       # POSIX
+</code></pre>
+<p>Restart <code>dsh --profile web</code> and start a NEW session.</p>
+<h4>Web sessions need the preset adapter</h4>
+<p>In the <strong>web</strong> profile, agent tools are provided by the mounted agent <strong>preset</strong>
+(the default <code>standard</code> preset composes <code>subagent</code> / <code>subagent_fork</code> pointing at
+<code>@deepseek-ai/dsh-tool-subagent</code>), <strong>not</strong> by the host plane — a bundle patch is
+invisible to Web sessions. <code>install-preset.ps1</code> / <code>install-preset.sh</code> copies
+<code>standard</code> to <code>$DSH_HOME/.agent-presets/standard-plus</code>, rewrites its delegation
+rows to point at this package, and switches the default preset. Presets are read
+at session creation, so you must start a NEW session (live sessions cannot
+switch). Revert: pick <code>standard</code> in the UI (General &gt; Agent preset) and delete
+<code>standard-plus</code>.</p>
+<blockquote>
+<p><code>headless</code> and other non-web profiles do not need the preset adapter.</p>
+</blockquote>
+<h4>Upgrading dsh</h4>
+<p>A dsh upgrade rewrites <code>node_modules</code> and <strong>wipes both patches</strong>. After every upgrade:</p>
+<pre><code class="language-sh"># re-run the installer (it is idempotent; it also detects version-mismatched anchors)
+powershell -ExecutionPolicy Bypass -File patches\install.ps1
+</code></pre>
+<p>If the installer reports &quot;anchor not found&quot;, the target packages changed shape — check for a new
+dsh-subagent-cwd release or file an issue.</p>
+<h4>Uninstall</h4>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -File patches\uninstall.ps1   # Windows
+# or: ./patches/uninstall.sh                                     # POSIX
+dsh plugin --profile web remove dsh-subagent-cwd
+</code></pre>
+<h3>Example</h3>
+<pre><code>Let a subagent work in a directory without the repo&#39;s AGENTS.md injected:
+  subagent(description=&quot;Summarize this file&quot;, prompt=&quot;...&quot;, cwd=&quot;D:\\projects\\scratch\\notes&quot;)
+</code></pre>
+<h3>Design</h3>
+<ul>
+<li><strong>The tool surface is a bundle.</strong> The shipped <code>tool-subagent</code> /
+<code>tool-subagent-fork</code> rows are disabled and replaced by this package&#39;s rows;
+no official package file is modified for the tool surface itself.</li>
+<li><strong><code>cwd</code> is the one capability that cannot stay a bundle-only feature.</strong>
+<code>SubagentStartRequest</code> has no cwd field, so a per-call cwd must be forwarded
+by the in-process subagent providers. That needs the two small patches (one
+hunk each) in <code>patches/</code> — idempotent, backed up on first run, and
+<code>node --check</code>-verified. This is the entire reason this package exists
+separately from <code>dsh-subagent-tools</code>.</li>
+<li><strong>Version contract:</strong> <code>peerDependencies</code> pin the public dsh packages
+(<code>^0.1.0-rc.6</code>). The patches target the same version; a dsh upgrade rewrites
+the dsh installation&#39;s <code>node_modules</code> and <strong>wipes both patches</strong> — re-run
+<code>patches/install.ps1</code> / <code>install.sh</code> after every upgrade (see <em>Upgrading dsh</em>).
+The bundle itself lives in the profile&#39;s own <code>node_modules</code> and survives an
+upgrade, but a changed public API will make <code>peerDependencies</code> refuse to load.</li>
+</ul>
+<h3>Verified</h3>
+<p>Tested against a stock dsh <code>0.1.0-rc.6</code> install on Windows (headless + web):</p>
+<ul>
+<li>Everything <code>dsh-subagent-tools</code> verifies (per-call model/provider/persona/
+toolFilter, <code>@preset:</code>, <code>presetHints</code>) ✅</li>
+<li><strong><code>cwd</code> on the foreground path</strong> ✅ — the child&#39;s <code>pwd</code> and its sandbox
+workspace both switch to the requested directory</li>
+<li><strong><code>cwd</code> on the continuable (background) path</strong> ✅ — background children honor
+the same directory (the classic &quot;foreground works, background silently
+ignores cwd&quot; trap does not occur)</li>
+<li><code>toolFilter</code> scoping ✅</li>
+<li><code>patches/install.ps1</code> and <code>patches/uninstall.ps1</code> round-trip ✅ (backup,
+apply, <code>node --check</code>, restore, re-verify)</li>
+</ul>
+<h3>Limitations</h3>
+<ul>
+<li><strong>Patches target rc.6 only.</strong> The two patches match exact anchors in the
+rc.6 bundle; a dsh upgrade invalidates them until re-run (or a new release).</li>
+<li><strong><code>@preset:</code> depends on the local preset layout</strong> — same caveat as
+<code>dsh-subagent-tools</code>.</li>
+<li><strong>Web sessions need the preset adapter</strong> (<code>install-preset.ps1</code>) for the same
+reason as <code>dsh-subagent-tools</code>.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/lynx-gt/dsh-subagent-cwd/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

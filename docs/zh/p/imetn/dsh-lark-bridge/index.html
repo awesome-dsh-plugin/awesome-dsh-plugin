@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,250 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:imetn/dsh-lark-bridge</pre><button type="button" data-cmd="dsh plugin --profile web add github:imetn/dsh-lark-bridge" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/imetn/dsh-lark-bridge/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://github.com/imetn/dsh-lark-bridge/actions/workflows/ci.yml"><img src="https://github.com/imetn/dsh-lark-bridge/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/imetn/dsh-lark-bridge/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://github.com/imetn/dsh-lark-bridge/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%3E%3D22-339933.svg" alt="Node.js"></a></p>
+<p>A secure, bidirectional Feishu/Lark controller for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>Send a task from a DM, group, or topic. The Bridge runs it in the right Harness Project and Session, updates one native card as work progresses, and routes approvals, questions, files, images, and controls back to the same conversation.</p>
+<p>Tested with DeepSeek Harness <code>0.1.0-rc.6</code>. Harness is still in developer preview.</p>
+<h3>What works</h3>
+<ul>
+<li>Start, continue, steer, stop, resume, and inspect Harness Sessions from Lark.</li>
+<li>Map each group to a Project, working directory, model route, access policy, and card preset.</li>
+<li>Map each topic or thread to an isolated Session by default.</li>
+<li>Update one card from running to completed, blocked, cancelled, or failed.</li>
+<li>Approve one tool call or answer structured Agent questions from card buttons.</li>
+<li>Receive text, images, and files. The Agent can send safe workspace files back with <code>lark_deliver</code>.</li>
+<li>Choose compact, standard, or developer card detail per Project or Session.</li>
+<li>Use WebSocket long connections, with no public webhook server.</li>
+</ul>
+<p>Cards show bounded tool summaries, never hidden model reasoning.</p>
+<h3>Quick start</h3>
+<p>Requirements: Node.js 22+, <code>pnpm</code>, a working DeepSeek Harness model configuration, and either an installed <code>dsh</code> CLI or an official Harness source checkout nearby.</p>
+<p>Run this from the Project you want the bot to control:</p>
+<pre><code class="language-bash">pnpm dlx github:imetn/dsh-lark-bridge setup --project &quot;$PWD&quot;
+</code></pre>
+<p>The setup command:</p>
+<ol>
+<li>Opens the official Feishu/Lark authorization page for a new bot app.</li>
+<li>Requests only the messaging, attachment, reaction, event, and card callback capabilities used by the Bridge.</li>
+<li>Stores the returned App Secret in Harness&#39;s owner-only credential file, never in the Profile.</li>
+<li>Installs the plugin, writes an idempotent <code>lark</code> Profile, binds the authorizing user, and starts the Bridge.</li>
+<li>Opens the bot. A welcome card arrives automatically when the platform returns the user&#39;s Open ID.</li>
+</ol>
+<p>For a ByteDance <code>larkoffice.com</code> tenant, add <code>--brand larkoffice</code>. For international Lark, add <code>--brand lark</code>.</p>
+<pre><code class="language-bash">pnpm dlx github:imetn/dsh-lark-bridge setup --project &quot;$PWD&quot; --brand larkoffice
+</code></pre>
+<p>The automatic flow always passes <code>createOnly: true</code>. It cannot select or change an existing app.</p>
+<h4>Use an existing app</h4>
+<p>Existing apps stay untouched. The command only validates the credentials and writes local Harness files:</p>
+<pre><code class="language-bash">printf &#39;%s&#39; &quot;$LARK_APP_SECRET&quot; | pnpm dlx github:imetn/dsh-lark-bridge setup \
+  --project &quot;$PWD&quot; \
+  --app-id cli_xxxxxxxxxxxxxxxx \
+  --app-secret-stdin
+</code></pre>
+<p>If your enterprise blocks one-click creation, add <code>--manual</code>. The wizard opens the developer console and asks for the App ID and hidden App Secret.</p>
+<p>For manual apps, enable the bot capability, select long connections, publish a version, and add:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Required values</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Permissions</td>
+<td><code>im:message.p2p_msg:readonly</code>, <code>im:message.group_at_msg:readonly</code>, <code>im:message:send_as_bot</code>, <code>im:resource</code></td>
+</tr>
+<tr>
+<td>Inbound attachments</td>
+<td><code>im:message:readonly</code></td>
+</tr>
+<tr>
+<td>Message event</td>
+<td><code>im.message.receive_v1</code></td>
+</tr>
+<tr>
+<td>Card callback</td>
+<td><code>card.action.trigger</code></td>
+</tr>
+<tr>
+<td>Stop reactions, optional</td>
+<td><code>im:message.reactions:read</code>, <code>im.message.reaction.created_v1</code></td>
+</tr>
+</tbody></table>
+<p>Keep the group mention permission instead of requesting every group message.</p>
+<h4>Verify</h4>
+<p>In the bot DM, send:</p>
+<pre><code class="language-text">/status
+</code></pre>
+<p>Then send a small task. The reply card should show the Project, result, elapsed time, and the detail selected by its view preset. The original task stays in Lark&#39;s quoted reply and is not duplicated inside the card.</p>
+<p>Check the local setup at any time:</p>
+<pre><code class="language-bash">pnpm dlx github:imetn/dsh-lark-bridge doctor
+</code></pre>
+<p>The welcome card&#39;s callback test is optional. Text tasks work before you click it.</p>
+<p><code>dsh --profile lark</code> starts the Bridge only. It does not expose an HTTP page. <code>http://127.0.0.1:3080</code> belongs to the separate <code>dsh web</code> command.</p>
+<h3>Projects, groups, and Sessions</h3>
+<p>Use this mapping for most teams:</p>
+<table>
+<thead>
+<tr>
+<th>Lark</th>
+<th>Harness</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bot DM</td>
+<td>Personal control surface</td>
+<td>Switch Projects and handle private tasks</td>
+</tr>
+<tr>
+<td>One group</td>
+<td>One Project</td>
+<td>Keep a codebase or durable workstream in one place</td>
+</tr>
+<tr>
+<td>One topic or thread</td>
+<td>One Session</td>
+<td>Keep one task and its follow-ups together</td>
+</tr>
+</tbody></table>
+<p>With the default <code>groupSessionScope: thread</code>, replies in one topic share context and a new topic starts a separate Session. A normal group&#39;s top-level message gets its own thread-scoped Session.</p>
+<p>If the Profile contains one accessible Project, the first owner message that mentions the bot automatically binds that group. With multiple Projects, send <code>@bot /bind &lt;project-id&gt;</code> once.</p>
+<p><code>sender</code> scope keeps one Session per group member. <code>chat</code> shares one Session across the group and should only be used when shared context is intentional.</p>
+<h3>Card detail</h3>
+<p>The card is already a reply to the original task, so it does not repeat the prompt.</p>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Shows</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>compact</code></td>
+<td>Result, elapsed time, essential actions</td>
+</tr>
+<tr>
+<td><code>standard</code></td>
+<td>Compact view plus Project, model, recent tool names, total tool calls and tokens</td>
+</tr>
+<tr>
+<td><code>developer</code></td>
+<td>Standard view plus cwd, Session ID, redacted tool summaries and durations, input/output/cache tokens</td>
+</tr>
+</tbody></table>
+<p>Set <code>cardPreset</code> globally or per Project. Use <code>/view compact|standard|developer</code> or the terminal card button for the current Session.</p>
+<h3>Controls</h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Plain text or attachments</td>
+<td>Continue the current Agent</td>
+</tr>
+<tr>
+<td><code>/steer &lt;text&gt;</code></td>
+<td>Correct or add context to the running step</td>
+</tr>
+<tr>
+<td><code>/status</code></td>
+<td>Show connection, Project, model, directory, Session, and pending interactions</td>
+</tr>
+<tr>
+<td><code>/stop</code></td>
+<td>Cancel the running task</td>
+</tr>
+<tr>
+<td><code>/approve</code>, <code>/reject</code></td>
+<td>Text fallback for a pending one-shot approval</td>
+</tr>
+<tr>
+<td><code>/new</code></td>
+<td>Start a new Session</td>
+</tr>
+<tr>
+<td><code>/sessions</code>, <code>/resume &lt;id&gt;</code></td>
+<td>List or resume Sessions owned by this Lark origin</td>
+</tr>
+<tr>
+<td><code>/projects</code>, <code>/project &lt;id&gt;</code></td>
+<td>List or select Projects in a DM</td>
+</tr>
+<tr>
+<td><code>/bind [project-id]</code>, <code>/unbind</code></td>
+<td>Manage a group&#39;s Project binding</td>
+</tr>
+<tr>
+<td><code>/commands</code>, <code>/help</code></td>
+<td>Show native Harness commands or Bridge help</td>
+</tr>
+</tbody></table>
+<p>Card buttons also handle stop, new Session, status, approval, view changes, and structured questions.</p>
+<h3>Multiple Projects</h3>
+<p>Setup writes <code>~/.dsh/profiles/lark/cordis.patch.yml</code>. Add Projects there when needed:</p>
+<pre><code class="language-yaml">- id: dsh-lark-bridge
+  config:
+    appId: cli_xxxxxxxxxxxxxxxx
+    appSecretRef: DSH_LARK_APP_SECRET
+    brand: feishu
+    defaultProjectId: web
+    groupSessionScope: thread
+    projects:
+      - id: web
+        name: Web App
+        cwd: /absolute/path/to/web-app
+        workspaceRoot: /absolute/path/to/web-app
+        cardPreset: developer
+      - id: ios
+        name: iOS App
+        cwd: /absolute/path/to/ios-app
+        workspaceRoot: /absolute/path/to/ios-app
+        cardPreset: compact
+</code></pre>
+<p>Each Project may also set <code>chatIds</code>, <code>allowedOpenIds</code>, <code>provider</code>, <code>model</code>, and <code>inboundDir</code>. Group bindings created from Lark are stored in the owner-only Bridge state file. Static <code>chatIds</code> take precedence.</p>
+<h3>Security and files</h3>
+<ul>
+<li>Owners pair through the official authorization identity or a hashed, ten-minute, one-use <code>/claim</code> code.</li>
+<li>Users, chats, Project access, and card operators are checked before an Agent action.</li>
+<li>Secrets are redacted from cards, errors, tool summaries, and spill files.</li>
+<li>Inbound files use <code>0700</code> directories and <code>0600</code> files with sanitized random names.</li>
+<li>Outbound files must resolve to regular files inside the Project&#39;s <code>workspaceRoot</code>; symlink escapes are rejected.</li>
+<li>Incoming events are deduplicated, stale events are rejected, and each chat is serialized.</li>
+<li>One approval button grants one operation only.</li>
+</ul>
+<p>See <a href="https://github.com/imetn/dsh-lark-bridge/blob/main/SECURITY.md">SECURITY.md</a> for the full trust model.</p>
+<h3>Development and discovery</h3>
+<pre><code class="language-bash">git clone https://github.com/imetn/dsh-lark-bridge.git
+cd dsh-lark-bridge
+pnpm install --frozen-lockfile
+pnpm run check
+</code></pre>
+<p>The repository commits built <code>lib/</code> artifacts and bundles the official Lark SDK, so Git installation needs no install-time build. <code>package.json</code> declares <code>dsh.bundle.patch</code> for automatic Harness activation and the <code>dsh-plugin</code> keyword for plugin discovery.</p>
+<p>Common fixes:</p>
+<ul>
+<li>No inbound messages: publish the app, select long connections, and check the message event and permissions.</li>
+<li>No group response: add the bot and mention it. One accessible Project binds automatically; multiple Projects require <code>/bind &lt;id&gt;</code>.</li>
+<li>Card buttons do nothing: add <code>card.action.trigger</code>. Text tasks, <code>/approve</code>, <code>/reject</code>, and plain-text answers still work.</li>
+<li>Attachments fail: add <code>im:message:readonly</code> and check file size limits.</li>
+<li><code>127.0.0.1:3080</code> is empty: run <code>dsh web</code>; the Lark Profile is a Bridge process, not the Web UI.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/imetn/dsh-lark-bridge/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/imetn/dsh-lark-bridge/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

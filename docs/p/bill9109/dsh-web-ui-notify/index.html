@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,131 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:bill9109/dsh-web-ui-notify</pre><button type="button" data-cmd="dsh plugin --profile web add github:bill9109/dsh-web-ui-notify" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/bill9109/dsh-web-ui-notify/releases/tag/v0.1.3"><img src="https://img.shields.io/badge/release-v0.1.3-5B4CF0?style=flat-square" alt="Release v0.1.3"></a>
+<a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-0B7285?style=flat-square" alt="License: BSD-3-Clause"></a>
+<a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%5E20%20%7C%20%3E%3D22-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a>
+<a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/cordis.patch.yml"><img src="https://img.shields.io/badge/DSH-Web-5B4CF0?style=flat-square" alt="DSH profiles"></a></p>
+<p><strong>Install:</strong> <code>dsh plugin --profile web add github:bill9109/dsh-web-ui-notify</code></p>
+<p><strong>A DeepSeek Harness Web UI client plugin: when a tool needs approval, DSH asks you a question, or a turn finishes while you are looking at another tab, it pops a system desktop notification — so neither DSH nor you end up waiting.</strong></p>
+<p><a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.md">English</a> | <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.zh.md">中文</a></p>
+<h3>Why this exists</h3>
+<p>While you browse other pages, DSH needs human confirmation (tool approvals, questions) or finishes a round of work, and the Web UI in the foreground tab is the only place it asks. If you are looking anywhere else, the request waits silently. This plugin moves those moments onto your desktop: a native system notification appears, names the session, and clicks back into the conversation.</p>
+<h3>Features</h3>
+<ul>
+<li><strong>Notify on interaction with the current session</strong>: tool approvals and DSH questions carry context in the body (approvals show the over-permission reason, questions show the question text)</li>
+<li><strong>Notify on background sessions too</strong>: sessions you are not looking at also notify when they need approval or a question (same contextual body as the current session); a finished background session notifies as well — click it to jump straight to that session</li>
+<li><strong>Notify on turn completion</strong>: every finished turn of the current session notifies, with the first 80 characters of the final answer; tool-only turns without a final answer show the turn number. Completion, interruption, and error turns all notify</li>
+<li><strong>Session name in the title</strong>: every notification title names its session, e.g. &quot;Refactor database · needs approval&quot;</li>
+<li><strong>Click to jump to the session</strong>: clicking a notification not only returns to the DSH page but also opens that session</li>
+<li>Notifies only while you are away from the tab; when the page is in the foreground DSH already shows its own prompts, so it does not double-notify</li>
+<li>Each event notifies once — reconnects do not repeat it, and opening a session with history does not replay old turns</li>
+<li>Notifications do not auto-dismiss after a few seconds; they wait for you</li>
+<li>A toggle lives in Settings → General, following the DSH language (zh/en)</li>
+</ul>
+<h3>Install</h3>
+<p>The plugin is a DSH <strong>bundle</strong> (<code>package.json</code> declares <code>dsh.bundle</code> + <code>dsh.client</code>). Install it into the <code>web</code> profile with the standard <code>dsh plugin</code> mechanism — <strong>no DSH source changes and no hand-written patch</strong>:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:bill9109/dsh-web-ui-notify
+</code></pre>
+<p>Internally the command runs <code>pnpm add &lt;spec&gt;</code> in the profile directory and automatically appends packages that declare <code>dsh.bundle</code> to <code>dsh.profile.bundles</code>. You can also clone it and install from a local path (for development — rebuild and it takes effect):</p>
+<pre><code class="language-sh">dsh plugin --profile web add /path/to/dsh-web-ui-notify
+</code></pre>
+<p>The repository ships its build output (<code>lib/</code>), so the plugin works right after installing — no build step needed. It has zero runtime dependencies: the browser-side <code>require</code>s (react, react/jsx-runtime, ui-slots) resolve through DSH&#39;s own frontend module table, not npm.</p>
+<blockquote>
+<p>Older DSH (before the profile system) installed via <code>pnpm --filter @deepseek-ai/dsh add</code> + <code>config.yaml</code>; since the 20260806 snapshot the profile flow above is the way. If your DSH is still old, use the historical README (visible in git history).</p>
+</blockquote>
+<p>After installing, <strong>restart the Web UI</strong> (the way you normally start DSH) and refresh the browser page — the plugin takes effect.</p>
+<h4>Upgrade</h4>
+<pre><code class="language-sh">dsh plugin --profile web update github:bill9109/dsh-web-ui-notify
+</code></pre>
+<p>For a local-path installation, run <code>add</code> again against the replacement checkout. User settings (the Settings → General toggle) live in the profile&#39;s Settings provider and survive upgrades.</p>
+<h4>Uninstall</h4>
+<pre><code class="language-sh">dsh plugin --profile web remove @bill9109/dsh-web-ui-notify
+</code></pre>
+<p>The command runs <code>pnpm remove &lt;pkg&gt;</code> in the profile directory and removes it from <code>dsh.profile.bundles</code>. After uninstalling, restart web and hard-refresh the browser.</p>
+<h3>Usage</h3>
+<p>After installation you must also grant browser notification permission, otherwise the plugin stays silent — without permission the browser simply blocks notifications.</p>
+<ol>
+<li>Open <strong>Settings → General → Desktop notifications</strong> and click <strong>Enable</strong></li>
+<li>When the browser asks, choose Allow; the status becomes &quot;Enabled&quot;</li>
+<li>On macOS, also allow your browser under <strong>System Settings → Notifications</strong></li>
+</ol>
+<p>Then switch to another tab — approvals, questions, or finished turns produce system notifications, and clicking one brings you back to handle it.</p>
+<p>The settings row has four states:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Enabled</td>
+<td>Working normally</td>
+</tr>
+<tr>
+<td>Not granted</td>
+<td>Click the button to grant</td>
+</tr>
+<tr>
+<td>Blocked by browser</td>
+<td>Previously denied — change the site setting back to Allow; the button alone will not help</td>
+</tr>
+<tr>
+<td>Unsupported</td>
+<td>The environment has no Notification API</td>
+</tr>
+</tbody></table>
+<h3>Troubleshooting</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>No notifications appear</td>
+<td>Confirm the toggle in Settings → General is Enabled, the browser permission for the DSH site is Allow, and on macOS the browser is allowed under System Settings → Notifications; then switch to another tab — the plugin only notifies while you are away</td>
+</tr>
+<tr>
+<td>Notifications worked, then stopped after a restart</td>
+<td>The browser may have reset site permissions; re-grant, or re-enable the toggle if the settings row shows a different state</td>
+</tr>
+<tr>
+<td>&quot;Blocked by browser&quot;</td>
+<td>The site permission was previously denied — change it back to Allow in the browser&#39;s site settings; clicking Enable alone will not help</td>
+</tr>
+<tr>
+<td>&quot;Unsupported&quot;</td>
+<td>The environment has no Notification API (e.g. an old or unusual browser); desktop notifications cannot work there</td>
+</tr>
+<tr>
+<td>Plugin not in Settings → General after install</td>
+<td>The plugin only appears after the Web UI is restarted and the page hard-refreshed; verify the bundle row is in the profile (`dsh --profile web --dump-config</td>
+</tr>
+</tbody></table>
+<h3>Development and verification</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run build     # tsc + tsdown -&gt; lib/ (committed)
+pnpm test          # vitest: browser-plugin + settings-row suites
+</code></pre>
+<p><code>pnpm run build</code> emits the host + client bundles into <code>lib/</code>, which is committed so consumers install without building. The test suite covers plugin wiring on a real cordis context and the settings row in jsdom. Changes that alter the plugin&#39;s visible surface (which events notify, the settings row, locales) should add or update coverage in <code>tests/</code>.</p>
+<h3>Community and About</h3>
+<ul>
+<li>Use <a href="https://github.com/bill9109/dsh-web-ui-notify/issues">GitHub Issues</a> for reproducible bugs, focused feature requests, and usage questions.</li>
+<li>Read <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> before proposing changes; report vulnerabilities privately via <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/SECURITY.md">SECURITY.md</a>.</li>
+<li>Follow releases and compatibility notes in <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</li>
+</ul>
+<h3>License</h3>
+<p>BSD-3-Clause</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

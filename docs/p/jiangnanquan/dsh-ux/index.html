@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,81 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:jiangnanquan/dsh-ux</pre><button type="button" data-cmd="dsh plugin --profile web add github:jiangnanquan/dsh-ux" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH(DeepSeek Harness)Web 界面体验套件,包含两件东西:</p>
+<table>
+<thead>
+<tr>
+<th>部分</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>dsh-enhance</strong>(仓库根目录)</td>
+<td>DSH web 插件:主题、布局、折叠胶囊、账户用量</td>
+</tr>
+<tr>
+<td><strong>dsh-desktop</strong>(<code>desktop/</code> 子目录)</td>
+<td>无边框 Electron 桌面壳,双击即用</td>
+</tr>
+</tbody></table>
+<p><img src="https://raw.githubusercontent.com/jiangnanquan/dsh-ux/main/screenshot.png" alt="dsh-enhance"></p>
+<h3>能力(dsh-enhance)</h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主题</td>
+<td>Solarized 浅色配色(深色保留官方默认)+ Maple Mono 字体栈(检测到才启用)</td>
+</tr>
+<tr>
+<td>布局</td>
+<td>加宽消息列、紧凑间距、收窄输入队列、禁用橡皮筋滚动</td>
+</tr>
+<tr>
+<td>折叠胶囊</td>
+<td>思考块聚合为 <code>Think ×N</code> 胶囊、工具调用聚合为 <code>A → B → C</code> 链路胶囊,点击展开,最大限度压缩对话行数</td>
+</tr>
+<tr>
+<td>账户用量</td>
+<td>底部显示官方账户余额、本轮 token 成本、近 30 天用量图表</td>
+</tr>
+</tbody></table>
+<h3>安装</h3>
+<p>前置:已按 DSH 的 profile 机制运行(<code>dsh web</code>)。</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:jiangnanquan/dsh-ux#main
+</code></pre>
+<p>本包声明了 <code>dsh.bundle.patch</code> 与 <code>dsh.client</code>,<code>dsh plugin add</code> 会自动把它加入 profile 的 bundles,<strong>重启 dsh 后即生效</strong>,无需手改任何配置。重复执行该命令是安全的(幂等);升级用 <code>dsh plugin --profile web update dsh-enhance</code>。</p>
+<h3>交给你的 AI</h3>
+<p>不想手动敲命令?把下面这段话粘贴给任意 AI agent(Claude Code、dsh、Gemini CLI……),让它读 INSTALL.md 并完成安装与自检:</p>
+<blockquote>
+<p>请按照 <a href="https://github.com/jiangnanquan/dsh-ux/blob/main/INSTALL.md">https://github.com/jiangnanquan/dsh-ux/blob/main/INSTALL.md</a> 里的步骤,在我的机器上安装并验证 dsh-enhance 插件(profile 用 web),然后运行文档里的健康检查并告诉我结果。如果任何一步失败,按文档的回滚步骤恢复原状并说明原因。</p>
+</blockquote>
+<h3>桌面壳(dsh-desktop)</h3>
+<p>macOS 无边框沉浸式窗口,把 dsh web 装进桌面应用形态:双击 <code>启动 DSH.command</code> 自动拉起后端 + 窗口,退出时只清理自己拉起的后端。支持 <code>DSH_URL</code> / <code>DSH_SNAPSHOT</code> 环境变量。</p>
+<p>见 <a href="https://github.com/jiangnanquan/dsh-ux/blob/main/desktop/README.md">desktop/README.md</a>。</p>
+<h3>依赖与前提(dsh-enhance)</h3>
+<ul>
+<li><strong>字体</strong>:优先使用 Maple Mono;未安装时自动回退到 PingFang SC / SF Mono / Menlo / 等宽字体,效果略有差异。推荐安装 <a href="https://github.com/subframe7536/maple-font">Maple Mono</a> 获得完整观感。</li>
+<li><strong>余额 / 本轮成本 / 用量图表</strong>:调用 DeepSeek 官方接口,需要当前 DSH 已配置 <code>DEEPSEEK_API_KEY</code> 凭据;未配置时这些信息显示为查询失败/不可用,不影响其余功能。</li>
+<li>计价表按官方峰谷价(北京时间 9–12、14–18 高峰,其余空闲半价)硬编码,官方调价后需更新 <code>lib/index.js</code> 里的 <code>pricingFor</code>。</li>
+</ul>
+<h3>卸载</h3>
+<pre><code class="language-bash">dsh plugin --profile web remove dsh-enhance
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/jiangnanquan/dsh-ux/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

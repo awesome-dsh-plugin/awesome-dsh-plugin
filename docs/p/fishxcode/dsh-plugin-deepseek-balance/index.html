@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,90 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:fishxcode/dsh-plugin-deepseek-balance</pre><button type="button" data-cmd="dsh plugin --profile web add github:fishxcode/dsh-plugin-deepseek-balance" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p><a href="#english">English</a> | <a href="#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87">简体中文</a></p>
+<hr>
+<h3>English</h3>
+<p>A DeepSeek Harness Web client plugin that adds a <strong>DeepSeek Balance</strong> tab to the Web settings plugin area. It shows the live DeepSeek API balance from the official <code>/user/balance</code> endpoint, a local balance trend, and daily cost / token usage charts powered by ECharts.</p>
+<p><strong>API reference:</strong> <a href="https://api-docs.deepseek.com/zh-cn/api/get-user-balance">https://api-docs.deepseek.com/zh-cn/api/get-user-balance</a></p>
+<h4>Features</h4>
+<ul>
+<li>Live balance: calls <code>GET https://api.deepseek.com/user/balance</code> with <code>Authorization: Bearer &lt;API key&gt;</code>, shows <code>is_available</code> and every <code>balance_infos</code> entry (<code>currency</code>, <code>total_balance</code>, <code>granted_balance</code>, <code>topped_up_balance</code>). Refreshes on demand and every 60 seconds.</li>
+<li>Balance trend: every successful balance read records one point per day in <code>localStorage</code>; a line chart appears once two points exist.</li>
+<li>Collapsible sections: live balance, trend, and daily usage blocks can be collapsed/expanded; the state is remembered per browser.</li>
+<li>Floating window: a draggable, always-on-top mini window shows the latest balance, availability, and a sparkline. Toggle it from the tab header; position and visibility persist.</li>
+<li>Daily usage (optional): paste your DeepSeek <strong>Platform</strong> <code>userToken</code> (from <code>platform.deepseek.com</code> DevTools → Local Storage) and pick a range (7 days / 30 days / this month / last month). The plugin fetches the private Platform usage endpoints through a same-origin host proxy and renders:<ul>
+<li>a bar + line chart of daily cost and daily tokens (ECharts, loaded from CDN),</li>
+<li>summary stats: total cost, request count, input/output/cached tokens, cache hit rate.</li>
+</ul>
+</li>
+<li>Keys: the API key and the Platform <code>userToken</code> are both stored in the browser&#39;s <code>localStorage</code> (keys <code>dsh-plugin-deepseek-balance.apiKey</code> / <code>...platformToken</code>) so they survive reloads; a &quot;Clear token&quot; button removes the Platform token.</li>
+</ul>
+<h4>Security</h4>
+<ul>
+<li>The API key is stored in the current browser&#39;s <code>localStorage</code> and is sent only to <code>https://api.deepseek.com</code>.</li>
+<li>The Platform <code>userToken</code> is a full session credential. It is persisted in the browser&#39;s <code>localStorage</code> (same trust domain as the API key) and is only POSTed to the plugin&#39;s same-origin host endpoint (<code>POST /api/dsh-deepseek-balance/usage</code>), which forwards it to <code>platform.deepseek.com</code> with browser-like headers and returns only the normalized usage data. Nothing is written to disk on the host side.</li>
+<li>The daily-usage feature relies on undocumented private Platform endpoints and the WAF may rate-limit or block requests; failures surface as clear error messages.</li>
+</ul>
+<h4>Build</h4>
+<pre><code class="language-sh">npm ci
+npm run bundle
+</code></pre>
+<p><code>bundle</code> runs tsdown and then <code>scripts/wrap-client.mjs</code>, which converts the ESM client output into the DSH Web client-loader format (<code>window.__ModuleLoader__.load({ id, factory })</code>) required by the browser-side module system. The host entry (<code>lib/index.js</code>) stays plain ESM and registers the usage proxy through <code>ctx.webServer</code>.</p>
+<p>The package metadata declares the DSH Web client entry at <code>./client</code>. Enable the built package through the Harness plugin loader or composition, following the same mechanism as other DSH Web client plugins.</p>
+<h4>Project Files</h4>
+<ul>
+<li><code>src/index.ts</code>: Host half — same-origin usage proxy via <code>ctx.webServer</code> (no token persistence).</li>
+<li><code>src/client.tsx</code>: Settings tab: balance, balance trend, daily usage, ECharts rendering.</li>
+<li><code>scripts/wrap-client.mjs</code>: Post-build wrap into the DSH client-loader format.</li>
+<li><code>package.json</code>: DSH client plugin metadata.</li>
+<li><code>.github/workflows/ci.yml</code>: GitHub Actions build verification.</li>
+</ul>
+<hr>
+<h3>简体中文</h3>
+<p>这是一个 DeepSeek Harness Web 客户端插件。它会在 Web 设置的插件区域新增 <strong>DeepSeek 余额</strong> 标签页：显示官方 <code>/user/balance</code> 接口的实时余额、本地余额趋势，以及基于 ECharts 的每日消耗 / Token 用量图表。</p>
+<p><strong>API 文档：</strong> <a href="https://api-docs.deepseek.com/zh-cn/api/get-user-balance">https://api-docs.deepseek.com/zh-cn/api/get-user-balance</a></p>
+<h4>功能</h4>
+<ul>
+<li>实时余额：使用 <code>Authorization: Bearer &lt;API Key&gt;</code> 调用 <code>GET https://api.deepseek.com/user/balance</code>，展示 <code>is_available</code> 与全部 <code>balance_infos</code> 条目（<code>currency</code>、<code>total_balance</code>、<code>granted_balance</code>、<code>topped_up_balance</code>）。支持手动刷新与每 60 秒自动刷新。</li>
+<li>余额趋势：每次成功读取余额后在 <code>localStorage</code> 记录一个数据点（每天一个）；积累两个点后显示折线图。</li>
+<li>可折叠区块：实时余额、余额趋势、每日用量三块均可展开 / 折叠，状态按浏览器记忆。</li>
+<li>悬浮窗：可拖拽、置顶的迷你窗口，显示最新余额、账户可用状态与余额走势（SVG 迷你图）。可在标签页头部切换显示；位置与可见性会持久化。</li>
+<li>每日用量（可选）：粘贴 DeepSeek <strong>开放平台</strong> 的 <code>userToken</code>（登录 <code>platform.deepseek.com</code> 后 F12 → Application → Local Storage 复制），选择范围（近 7 天 / 近 30 天 / 本月 / 上月）。插件通过同源 host 代理调用平台私有用量接口并渲染：<ul>
+<li>每日消耗柱状图 + 每日 Token 折线图（ECharts，从 CDN 加载）；</li>
+<li>汇总统计：总消耗、请求数、输入 / 输出 / 缓存 Token、缓存命中率。</li>
+</ul>
+</li>
+<li>密钥处理：API Key 与 Platform <code>userToken</code> 都保存在浏览器 <code>localStorage</code>（键 <code>dsh-plugin-deepseek-balance.apiKey</code> / <code>...platformToken</code>），刷新页面后仍在；提供「清除 Token」按钮。</li>
+</ul>
+<h4>安全说明</h4>
+<ul>
+<li>API Key 保存在当前浏览器 <code>localStorage</code>，仅发送到 <code>https://api.deepseek.com</code>。</li>
+<li>Platform <code>userToken</code> 是完整会话凭据。它持久化在浏览器 <code>localStorage</code>（与 API Key 同一信任域），只 POST 到插件的同源 host 端点（<code>POST /api/dsh-deepseek-balance/usage</code>），由 host 带浏览器特征头转发到 <code>platform.deepseek.com</code>，仅返回规范化后的用量数据；host 侧不写入磁盘。</li>
+<li>每日用量依赖未公开的平台私有接口，WAF 可能限流或拦截；失败时会显示明确错误信息。</li>
+</ul>
+<h4>构建</h4>
+<pre><code class="language-sh">npm ci
+npm run bundle
+</code></pre>
+<p><code>bundle</code> 先执行 tsdown，再运行 <code>scripts/wrap-client.mjs</code>，将 ESM 客户端产物转换为 DSH Web 客户端加载器格式（<code>window.__ModuleLoader__.load({ id, factory })</code>），这是浏览器端模块系统要求的格式。host 入口（<code>lib/index.js</code>）保持普通 ESM，并通过 <code>ctx.webServer</code> 注册用量代理。</p>
+<p>包元数据已声明 DSH Web 客户端入口 <code>./client</code>。构建完成后，请按 DSH 其他 Web 客户端插件相同的方式，通过 Harness 插件 loader 或 composition 启用此包。</p>
+<h4>项目文件</h4>
+<ul>
+<li><code>src/index.ts</code>：Host 半侧 — 基于 <code>ctx.webServer</code> 的同源用量代理（不持久化 token）。</li>
+<li><code>src/client.tsx</code>：设置页标签：余额、余额趋势、每日用量、ECharts 渲染。</li>
+<li><code>scripts/wrap-client.mjs</code>：构建后转换为 DSH 客户端加载器格式。</li>
+<li><code>package.json</code>：DSH 客户端插件元数据。</li>
+<li><code>.github/workflows/ci.yml</code>：GitHub Actions 构建校验。</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/fishxcode/dsh-plugin-deepseek-balance/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

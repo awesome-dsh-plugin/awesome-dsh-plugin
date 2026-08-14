@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,113 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:dingyi222666/dsh-session-notification</pre><button type="button" data-cmd="dsh plugin --profile web add github:dingyi222666/dsh-session-notification" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://www.npmjs.com/package/@dingyi222666/dsh-session-notification"><img src="https://img.shields.io/npm/v/@dingyi222666/dsh-session-notification.svg" alt="npm version"></a></p>
+<p>English | <a href="https://github.com/dingyi222666/dsh-session-notification/blob/main/README.zh.md">中文</a></p>
+<p>A notification plugin for the dsh web GUI. When a session finishes, hits an error, asks you a question, or needs your permission, you get a heads-up: a sound plays, and when you step away from the tab a system notification keeps you in the loop.</p>
+<h3>Screenshots</h3>
+<table>
+<thead>
+<tr>
+<th>The settings panel with the <strong>Notifications</strong> entry in the sidebar and the section content</th>
+<th>The sound picker for each kind (the official dropdown)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/dingyi222666/dsh-session-notification/main/screenshots/01-notifications-section.png" alt="The Notifications settings section"></td>
+<td><img src="https://raw.githubusercontent.com/dingyi222666/dsh-session-notification/main/screenshots/02-sound-menu-open.png" alt="The sound picker menu"></td>
+</tr>
+</tbody></table>
+<h3>Install</h3>
+<pre><code class="language-sh"># Install from npm (requires dsh &gt;= 0.1.0-rc.6)
+dsh plugin --profile web add @dingyi222666/dsh-session-notification
+# Restart dsh web for it to take effect
+dsh web
+</code></pre>
+<p>Everything lives in this plugin — no harness (host) changes:</p>
+<ul>
+<li>The settings section is registered through the client slot system (<code>settings.section</code>), exactly like official sections.</li>
+<li>Preferences persist in the browser (localStorage) and sync across tabs; nothing requires the host&#39;s <code>WEB_SETTINGS_NAMESPACES</code> or any other host-package change. (The node half still reserves the <code>dsh-session-notification</code> namespace host-side through the settings seam; that reservation is inert without exposure.)</li>
+<li>The settings shell maps only its own section ids to nav icons, so the Notifications nav row shows the shell&#39;s default gear.</li>
+</ul>
+<h3>The four notification kinds</h3>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>When it fires</th>
+<th>Default sound</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Session completed</td>
+<td>A turn ends normally (<code>turn/end</code> completed)</td>
+<td>chime</td>
+</tr>
+<tr>
+<td>Session failed</td>
+<td>A turn breaks with an error, or the host reports an agent error</td>
+<td>fault</td>
+</tr>
+<tr>
+<td>Question asked</td>
+<td>The agent is waiting for your answer (<code>question/requested</code>)</td>
+<td>pop</td>
+</tr>
+<tr>
+<td>Permission requested</td>
+<td>The agent requests an authorized operation (<code>approval/requested</code>)</td>
+<td>alert</td>
+</tr>
+</tbody></table>
+<p>Each kind can be enabled or disabled and reassigned to any of the four built-in sound effects (or muted). The four sounds are synthesized with Web Audio — no audio files are shipped — and the master volume is adjustable with the official-style slider.</p>
+<h3>Custom audio</h3>
+<p>Beyond the four built-in sounds, each kind accepts <strong>your own audio file</strong> (mp3/ogg/wav, up to 1 MB): pick Custom audio on a kind&#39;s row to upload one, and it replaces the built-in for that kind — with a Replace and remove affordance, plus the Custom audio in use tag. Custom files are stored browser-locally (they are device media, not shared preferences).</p>
+<h3>Browser notifications &amp; the quiet default</h3>
+<p>Browser (system-level) notifications are <strong>off by default</strong>; turning the switch on asks for the browser&#39;s permission first (a user gesture). Once granted, a notification is shown when the event&#39;s session is not the one you are reading, or when the tab is in the background. Notifications carry the <strong>page&#39;s own icon</strong> (the favicon the harness serves). A completed session&#39;s notification carries its <strong>final reply text</strong> (the last assistant message). The Test notification button in the section sends one immediately to verify the channel once permission is granted. The session you are reading stays <strong>quiet by default</strong> — its own events don&#39;t interrupt you; flip the Alert for the current session toggle if you want it to alert too.</p>
+<h3>The Notifications settings section</h3>
+<p>The plugin registers a <strong>Notifications</strong> section in the settings panel (Settings ⚙ → Notifications):</p>
+<ul>
+<li><strong>Browser notifications</strong> master switch (+ permission state and an enable button),</li>
+<li><strong>Alert for the current session</strong> toggle (opt in to being alerted while reading that session),</li>
+<li><strong>Sound</strong> master switch,</li>
+<li><strong>Volume</strong> slider,</li>
+<li>one row per notification kind: enable switch, custom-audio upload, sound picker (the official dropdown menu), and a Preview button,</li>
+<li>a Test notification button on the browser-notifications row (verifies the OS channel once permission is granted).</li>
+</ul>
+<p>Preferences are stored <strong>browser-locally</strong> (localStorage) under the <code>dsh-session-notification</code> key — no host settings-namespace exposure required — so they persist across sessions and sync across tabs, and never depend on a harness change.</p>
+<h3>How it works</h3>
+<p>The browser half watches the sessions list snapshot and each session&#39;s conversation snapshot — no polling, no new wire channels:</p>
+<ul>
+<li>A session&#39;s <code>running</code> edge true→false ends a run; the run is classified <strong>failed</strong> when a new <code>turn-error</code> node or a host <code>agent-error</code> appeared during it, otherwise <strong>completed</strong> (a failure that a retry recovered reads as completed).</li>
+<li>A pending-interaction edge (<code>question</code> / <code>approval</code>) raises the question / permission kinds, with the question text or the tool name+reason in the notification body.</li>
+<li>Sessions already idle (or already pending) when the plugin loads raise nothing.</li>
+</ul>
+<h3>Development</h3>
+<ul>
+<li><code>yarn run build</code> — builds the browser bundle (<code>lib/client.js</code>) and the Node half (<code>lib/index.js</code> / <code>lib/invariant.js</code>).</li>
+<li><code>src/client/notification-service.ts</code> — the engine (classification) and dispatcher (gating); <code>src/client/settings-store.ts</code> — the settings section bridge; <code>src/client/NotificationsSection.tsx</code> — the section UI; <code>src/client/sounds.ts</code> + <code>src/client/custom-audio.ts</code> — the built-in and custom sounds.</li>
+<li><code>yarn test</code> — behavior tests; <code>yarn run typecheck</code> — type gate.</li>
+<li>Node-half changes need a <code>dsh web</code> restart; browser-bundle changes need a rebuild (<code>yarn run build</code>) — a <code>--dev</code> server hot-reloads them.</li>
+</ul>
+<h3>Known limitations</h3>
+<ul>
+<li>Failure detection reads the conversation snapshot, which the client only maintains for sessions that have been opened; a session that runs without ever being opened notifies as completed even on failure.</li>
+<li>Browser notifications require permission, and sound playback requires the page to have user activation (the browser&#39;s autoplay policy) — both are normal for browser apps and resolve as soon as the user interacts with the GUI.</li>
+<li>Custom audio files live in the browser (localStorage), so they do not follow you across browsers or profiles.</li>
+<li>The browser half is event-driven from the sessions list; it does not observe the raw event stream, so a run that starts and finishes between two list snapshots could in principle be missed (the host sends a status flip per edge, so this does not happen in practice).</li>
+</ul>
+<h3>Model Experience</h3>
+<p>None. The plugin is a pure client-side observer over the already-logged session state; nothing here reaches a model request.</p>
+<h5>KV Cache effect</h5>
+<p>None; this package neither assembles nor sends provider requests.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/dingyi222666/dsh-session-notification/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,66 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/ex-setting</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/ex-setting" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/omdsh-dev/ex-setting/blob/main/README.zh.md">中文</a></p>
+<p>The automatic DSH Web settings bundle. It combines the host-side configuration crawler with its browser settings navigation in one external package: the host enumerates registered settings namespaces and schema-bearing composition rows, while the client projects them into first-level settings sections and editors.</p>
+<h3>Repository shape</h3>
+<pre><code class="language-text">package.json              # host/client package and dsh.bundle/dshClient manifests
+cordis.patch.yml          # profile layer that mounts the crawler
+src/index.ts              # host crawler plugin (service provide + Fabric handler binding)
+src/routes.ts             # crawler-owned webserver composition route
+src/nav-scroll.ts         # browser bundle rewrite contract (serveBrowserTransform)
+src/invariant.ts          # crawler invariant companion
+src/client/               # browser settings page (store, section, crawler wire)
+lib/                      # generated host/client artifacts
+docs/                     # detailed host and client protocol references
+tests/host/               # crawler, route, invariant, loader, and Fabric composition tests
+tests/client/             # browser store and section tests
+patches/                  # host patch contract (empty: zero out-of-package changes)
+scripts/                  # verify:self-contained, host patch extraction/applier
+.agents/skills/           # dsh-plugin-* contributor workflow
+</code></pre>
+<p>The two runtime faces share one package identity so Git/profile installation has one root artifact. The browser face is exported as <code>@deepseek-ai/dsh-ex-setting/client</code> and is selected by the package&#39;s <code>dshClient</code> manifest.</p>
+<h3>Bundle behavior</h3>
+<p>Installing the bundle adds the <code>web-config-crawler</code> row. That is the deployment-level decision to expose all registered settings namespaces and schema-carrying composition rows through the Web configuration plane. A profile can disable it:</p>
+<pre><code class="language-yaml">- id: web-config-crawler
+  disabled: true
+</code></pre>
+<p>The crawler redacts secrets, applies path-addressed edits with schema resolution, persists complete rows into the personal overlay, and removes rows to restore lower bundle layers. The browser page keeps settings namespaces and composition rows source-distinct and renders schema fields, secret controls, reset, revision conflicts, restart notices, and live invalidation refreshes.</p>
+<h3>External zero-change design</h3>
+<p>This bundle ships with <strong>zero out-of-package host changes</strong>. Three mechanisms make that possible:</p>
+<ul>
+<li><strong>Fabric exposure widening</strong> — the crawler&#39;s <code>cordis.patch.yml</code> overrides the web roster&#39;s <code>cordis-fabric</code> row by id, carrying the static <code>web-config-crawler/exposed-namespaces</code> stub. The Fabric layer rewrites the gateway&#39;s private <code>exposedNamespaces()</code> decision at load time, and the crawler binds the matching <code>after</code> handler when it mounts (see <code>docs/web-config-crawler.md</code>).</li>
+<li><strong>Crawler-owned composition route</strong> — the browser half reads and edits composition rows through the crawler&#39;s own webserver route (<code>/dsh-config/crawler/composition</code>, <code>src/routes.ts</code>) instead of a gateway RPC domain, so the write path adds nothing to <code>apiproxy</code> or <code>connection</code>.</li>
+<li><strong>Served browser rewrite</strong> — the crawler serves the <code>ui-settings-general</code> client bundle through <code>serveBrowserTransform</code>, rewriting <code>SettingsRoot</code> to publish <code>web-config-crawler/nav-scroll</code>; the browser half registers the matching <code>before</code> handler that injects the dialog navigation scroll styles (see <code>docs/ui-settings-plugins.md</code>).</li>
+</ul>
+<p>The settings/composition wire protocol, API proxy handlers, slot host, and browser shell are supplied by the DSH version selected by the profile.</p>
+<h3>Development</h3>
+<p>A full typecheck expects sibling checkouts (host-provided <code>@deepseek-ai/*</code> packages are private and not installable from the registry):</p>
+<pre><code class="language-text">~/git/deepseek-harness
+~/git/ex-setting
+</code></pre>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck
+pnpm test
+pnpm run build
+pnpm run verify:self-contained
+</code></pre>
+<p>The <code>prepare</code> script builds both host and browser entries directly from <code>src/</code>, so Git installation does not require sibling project references. pnpm 10 may require the profile to allow the package&#39;s prepare script; only approve a pinned, trusted checkout.</p>
+<h3>Model Experience</h3>
+<p>This bundle adds no model-visible prompt text or tools. It exposes configuration only through the loopback Web settings surface; the owning DSH settings, composition, session, and permission services retain logging, redaction, and authorization semantics.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li>Native Zod composition Config schemas remain file-configurable but are not rendered by the generic editor, which requires schemastery <code>toJSON()</code>.</li>
+<li>The crawler is intentionally broad; deployments that do not want automatic composition editing should disable the row and keep the gateway allowlist posture.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/ex-setting/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

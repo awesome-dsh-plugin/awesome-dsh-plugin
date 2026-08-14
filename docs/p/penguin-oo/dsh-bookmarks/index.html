@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,86 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:penguin-oo/dsh-bookmarks</pre><button type="button" data-cmd="dsh plugin --profile web add github:penguin-oo/dsh-bookmarks" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Bookmark assistant replies in <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH) Web UI: bookmark any finalized assistant reply with a note and tags, browse every bookmark from every session in one center panel, and export them to Markdown in one click.</p>
+<p><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/README.zh.md">中文说明</a></p>
+<h3>Features</h3>
+<ul>
+<li><strong>Per-message bookmark</strong> — an archive button on each finalized assistant reply (right next to the 👍/👎 feedback buttons), with an inline editor for a note and comma-separated tags.</li>
+<li><strong>Server-derived snippet</strong> — the bookmark stores a text preview of the actual reply, so the center stays useful even without a note.</li>
+<li><strong>Cross-session center</strong> — one panel listing bookmarks from all sessions and workspaces, with full-text search, tag filter, inline editing and deletion.</li>
+<li><strong>Jump back</strong> — every entry opens its session in one click.</li>
+<li><strong>Markdown export</strong> — one click downloads all bookmarks as <code>dsh-bookmarks.md</code>.</li>
+<li><strong>Keyboard</strong> — <code>Alt+B</code> toggles the center from anywhere.</li>
+<li><strong>Safe writes</strong> — per-item compare-and-set versions (multi-tab safe), server-side validation, and durable storage via the DSH storage domain.</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-bookmarks
+</code></pre>
+<p>Then restart DSH (<code>dsh web</code>). The plugin appends itself to the profile bundle layer automatically; nothing else to configure.</p>
+<p>For a local checkout:</p>
+<pre><code class="language-sh"># from the plugin repo
+dsh plugin --profile web add file:./        # relative file spec, anchored to your cwd
+</code></pre>
+<h3>Config</h3>
+<p>The bundle row exposes three limits (all optional):</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>maxNoteBytes</code></td>
+<td><code>4096</code></td>
+<td>Max UTF-8 bytes of one note (<code>&quot;&quot;</code> clears a note; omitting the field keeps it).</td>
+</tr>
+<tr>
+<td><code>maxSnippetChars</code></td>
+<td><code>300</code></td>
+<td>Max characters of the server-derived reply snippet.</td>
+</tr>
+<tr>
+<td><code>maxTags</code></td>
+<td><code>8</code></td>
+<td>Max tags per bookmark; each tag ≤ 32 chars, trimmed and deduplicated.</td>
+</tr>
+</tbody></table>
+<p>Override them in the profile patch layer (<code>$DSH_HOME/profiles/web/cordis.patch.yml</code>):</p>
+<pre><code class="language-yaml">- id: bookmarks
+  config:
+    maxNoteBytes: 2048
+    maxSnippetChars: 200
+    maxTags: 5
+</code></pre>
+<h3>How it works</h3>
+<p>One npm package hosts both halves of the plugin:</p>
+<ul>
+<li><strong>Host half</strong> (<code>lib/index.js</code>) — the <code>bookmarks</code> Remote service (Typert), backed by a storage-domain table (<code>$DSH_HOME/storages/bookmarks.json</code>). <code>put</code> inspects the persisted session log to validate the target reply and derive its snippet, mirrors the official <code>message-feedback</code> durability barrier, and serializes mutations with per-item version tokens.</li>
+<li><strong>Browser half</strong> (<code>src/client</code>, bundled to <code>lib/client.js</code>) — mounts the Remote contribution through <code>ctx.remote.$mount</code>, then registers two UI slots: <code>conversation.chat.assistant-actions</code> (the per-message button) and <code>sidebar.footer.action</code> (the center toggle).</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">npm install            # zod + esbuild (dev only)
+npm run build          # bundles src/client into lib/client.js
+</code></pre>
+<p><code>lib/client.js</code> is committed and shipped; no build step runs on install.</p>
+<h3>Limitations</h3>
+<ul>
+<li>Bookmarks are stored in one global row: fine for personal use, not a shared multi-user store.</li>
+<li>The center panel jumps to the bookmarked <em>session</em>; it does not auto-scroll to the exact message yet.</li>
+<li>The panel toggle lives in the sidebar footer; use <code>Alt+B</code> when the sidebar is collapsed.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

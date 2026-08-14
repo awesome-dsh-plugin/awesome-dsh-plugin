@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,157 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zimai233/dsh-image-search</pre><button type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-image-search" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>多引擎反向图片搜索聚合器，为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 而生。</p>
+<p>Multi-engine reverse image search aggregator for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>把一张公网图片 URL，一键转成 Google Lens / 百度识图 / Yandex / TinEye / Bing 视觉搜索 / 搜狗识图 / SauceNAO / IQDB / Ascii2d 的搜索链接——纯 URL 构造，零网络请求，零依赖。</p>
+<p>Turn one public image URL into search links for Google Lens / Baidu / Yandex / TinEye / Bing Visual Search / Sogou / SauceNAO / IQDB / Ascii2d — pure URL construction, zero network calls, zero dependencies.</p>
+<h3>为什么需要它 / Why</h3>
+<p>视觉生态里已经有 OCR 和 UI 还原，<strong>但没有插件做多引擎反向图片搜索聚合</strong>——没有任何东西能把 Google Lens / 百度 / Yandex / TinEye / SauceNAO / IQDB / Ascii2d 一次配齐。</p>
+<p>The vision ecosystem has OCR and UI restoration, but <strong>nobody aggregates multi-engine reverse image search</strong> — nothing puts Google Lens / Baidu / Yandex / TinEye / SauceNAO / IQDB / Ascii2d together in one call. This plugin is the aggregation wedge: 一次提交，全网溯源。</p>
+<h3>特性 / Features</h3>
+<ul>
+<li><strong><code>image_search_urls</code></strong> — 返回 JSON 数组 <code>[{ id, name, group, url }]</code>，每个引擎一条搜索链接。可按 <code>engines</code>（逗号分隔 id）或 <code>group</code>（<code>通用</code> / <code>插画/动漫</code>）过滤。</li>
+<li><strong><code>image_search_engines</code></strong> — 返回按分组归类的全部 9 个引擎（含模板与是否编码），用于发现引擎 id。</li>
+<li><strong><code>image_search_best</code></strong> — 返回人类可读的 Markdown 摘要：一行总览 + 每个引擎一条可点击链接。</li>
+<li>纯 URL 构造，<strong>不发起任何实际抓取请求</strong>——安全、零依赖、可离线运行。</li>
+<li>零构建步骤——纯 ESM，发布即运行时代码。无 <code>prepare</code> 脚本，无需构建权限。</li>
+</ul>
+<h3>安装 / Install</h3>
+<pre><code class="language-bash"># from npm
+dsh plugin --profile myprofile add dsh-image-search
+
+# from GitHub (lock the commit for supply-chain hygiene)
+dsh plugin --profile myprofile add github:zimai233/dsh-image-search#&lt;sha&gt;
+</code></pre>
+<h3>用法 / Usage</h3>
+<p>用自然语言让 agent 执行：</p>
+<blockquote>
+<p>&quot;帮我用这张图搜一下源头：<a href="https://example.com/img.png">https://example.com/img.png</a> —— 先列出所有引擎的搜索链接&quot;</p>
+</blockquote>
+<p>Agent 会调用 <code>image_search_urls</code>：</p>
+<pre><code class="language-json">{
+  &quot;imageUrl&quot;: &quot;https://example.com/img.png&quot;
+}
+</code></pre>
+<p>返回示例（截取）：</p>
+<pre><code class="language-json">[
+  { &quot;id&quot;: &quot;google&quot;, &quot;name&quot;: &quot;Google Lens&quot;, &quot;group&quot;: &quot;通用&quot;, &quot;url&quot;: &quot;https://lens.google.com/uploadbyurl?url=https%3A%2F%2Fexample.com%2Fimg.png&quot; },
+  { &quot;id&quot;: &quot;saucenao&quot;, &quot;name&quot;: &quot;SauceNAO&quot;, &quot;group&quot;: &quot;插画/动漫&quot;, &quot;url&quot;: &quot;https://saucenao.com/search.php?url=https://example.com/img.png&quot; }
+]
+</code></pre>
+<p>也可以限定引擎 / 分组：</p>
+<pre><code class="language-json">{
+  &quot;imageUrl&quot;: &quot;https://example.com/img.png&quot;,
+  &quot;engines&quot;: &quot;google,saucenao&quot;,
+  &quot;group&quot;: &quot;插画/动漫&quot;
+}
+</code></pre>
+<h3>工具参考 / Tool Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>参数 Parameters</th>
+<th>返回 Returns</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>image_search_urls</code></td>
+<td><code>imageUrl</code> (required), <code>engines?</code>, <code>group?</code></td>
+<td>JSON 数组 <code>[{ id, name, group, url }]</code></td>
+</tr>
+<tr>
+<td><code>image_search_engines</code></td>
+<td>—</td>
+<td>按 <code>group</code> 分组的 JSON，含模板与 <code>encode</code> 标志</td>
+</tr>
+<tr>
+<td><code>image_search_best</code></td>
+<td><code>imageUrl</code> (required), <code>engines?</code></td>
+<td>Markdown：总览行 + 每个引擎一条链接</td>
+</tr>
+</tbody></table>
+<h4>引擎表 / Engines</h4>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>group</th>
+<th>encode</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>google</code></td>
+<td>Google Lens</td>
+<td>通用</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><code>baidu</code></td>
+<td>百度识图</td>
+<td>通用</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><code>yandex</code></td>
+<td>Yandex</td>
+<td>通用</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><code>tineye</code></td>
+<td>TinEye</td>
+<td>通用</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><code>bing</code></td>
+<td>Bing 视觉搜索</td>
+<td>通用</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><code>sogou</code></td>
+<td>搜狗识图</td>
+<td>通用</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><code>saucenao</code></td>
+<td>SauceNAO</td>
+<td>插画/动漫</td>
+<td>✗</td>
+</tr>
+<tr>
+<td><code>iqdb</code></td>
+<td>IQDB</td>
+<td>插画/动漫</td>
+<td>✗</td>
+</tr>
+<tr>
+<td><code>ascii2d</code></td>
+<td>Ascii2d</td>
+<td>插画/动漫</td>
+<td>✗</td>
+</tr>
+</tbody></table>
+<p><code>encode</code> 为 true 的引擎走 query-string 参数（图片 URL 需 <code>encodeURIComponent</code> 编码）；为 false 的引擎走路径式参数（需原样 URL）。</p>
+<h3>开发 / Development</h3>
+<pre><code class="language-bash">npm install
+npm test          # node:test 直接跑纯核心函数 buildEngineUrls / groupEngines
+npm run pack      # dry-run publish (pnpm pack equivalent)
+</code></pre>
+<h3>许可证 / License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zimai233/dsh-image-search/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

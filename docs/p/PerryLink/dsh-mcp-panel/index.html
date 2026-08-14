@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,182 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:PerryLink/dsh-mcp-panel</pre><button type="button" data-cmd="dsh plugin --profile web add github:PerryLink/dsh-mcp-panel" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Read-only runtime management panel for the official DeepSeek Harness MCP client — see every MCP server&#39;s status, tools, errors, and reconnect counts, without touching your config.</strong></p>
+<p><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.md">English</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.zh.md">简体中文</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.es.md">Español</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.pt.md">Português</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.hi.md">हिन्दी</a></p>
+<p><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"></a>
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/ecosystem-dsh--plugin-8b5cf6" alt="dsh-plugin"></a>
+<a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/runtime-deepseek--harness-4f46e5" alt="deepseek-harness"></a></p>
+<blockquote>
+<p>🔭 <strong>Observability-first.</strong> <a href="https://github.com/deepseek-ai/deepseek-harness/tree/master/packages/mcp/mcp-client"><code>@deepseek-ai/dsh-mcp-client</code></a> keeps its connection state private — logs only. This plugin shows everything it <em>can</em> observe (config, tool registry, loader state) and says <strong>&quot;unknown&quot;</strong> for what it cannot, instead of guessing. It also proposes the minimal upstream seam that would make status real: see the <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">upstream proposal</a>.</p>
+</blockquote>
+<h3>Compatibility</h3>
+<ul>
+<li><strong>Runtime</strong>: DeepSeek Harness ≥ <code>0.1.0-rc.5</code> (peer dependencies pin the <code>0.1.0-rc.6</code> package line).</li>
+<li><strong>Last verified</strong>: 2026-08-14 against a source checkout of deepseek-harness (workspace packages at <code>0.1.0-rc.5</code>, mainline <code>7b9644f</code>) — headless <code>/mcp</code> end-to-end plus a live web profile; evidence in <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/research-notes.zh.md">docs/research-notes.zh.md</a>. Re-verified the same day against mainline <code>47f9438</code> with the <code>mcp/status</code> seam branch (<code>feat/mcp-client-status-observability-seam</code>): a real <code>server-everything</code> row renders <code>status: connected (source: upstream-event)</code> through the packed plugin, plus the launcher-faithful compat flow; record in <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/optimization-plan-v2.zh.md">docs/optimization-plan-v2.zh.md</a>.</li>
+</ul>
+<h3>What you get</h3>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong><code>/mcp</code> command</strong></td>
+<td>transport, target, tool count, connection status, last error, reconnect count — model-readable, session-log reconstructable, bilingual (<code>outputLanguage: en|zh</code>)</td>
+</tr>
+<tr>
+<td><strong>Settings → Plugins → MCP tab</strong></td>
+<td>the same snapshot read-only, with status badges, expandable tool lists, sanitized errors, probe results</td>
+</tr>
+<tr>
+<td><strong>Panel probe button</strong></td>
+<td>one-click connectivity probe of one streamable-http server from the tab; results stay panel-only</td>
+</tr>
+<tr>
+<td><strong>Passive probes</strong></td>
+<td>optional background reachability badges per server, kept separate from connection status</td>
+</tr>
+<tr>
+<td><strong>Auto refresh</strong></td>
+<td>the host suggests a refresh interval (<code>refreshIntervalMs</code>); the tab polls and pauses while hidden</td>
+</tr>
+<tr>
+<td><strong><code>/mcp &lt;server&gt; disable|enable</code></strong></td>
+<td>the exact <code>cordis.patch.yml</code> line to apply — a <em>suggestion</em>, never a write</td>
+</tr>
+<tr>
+<td><strong><code>mcp_probe</code> tool</strong></td>
+<td>one-shot Streamable HTTP connectivity probe as a background job; results are <strong>panel-only</strong></td>
+</tr>
+</tbody></table>
+<h3>Quick start</h3>
+<pre><code class="language-sh"># git channel (builds via the package&#39;s prepare script)
+dsh plugin --profile web add github:PerryLink/dsh-mcp-panel#v0.2.0
+# npm channel (published tarball, no build approval needed)
+dsh plugin --profile web add dsh-mcp-panel@0.2.0
+</code></pre>
+<p>Then restart (or let the web surface hot-reload its <code>cordis.patch.yml</code>) and:</p>
+<pre><code class="language-text">/mcp
+/mcp everything tools
+/mcp everything disable
+</code></pre>
+<pre><code class="language-text">MCP servers (1):
+- everything [mcp-everything] stdio node …/server-everything/dist/index.js
+  | 13 tools | enabled | status: unknown (source: derived) | reconnects: — | last error: —
+</code></pre>
+<p>Manual install: put <code>dsh-mcp-panel</code> into the profile&#39;s <code>node_modules</code> (or the shared
+<code>$DSH_HOME/profiles/node_modules</code> fallback) and add the row to <code>cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- insert:
+    - id: mcp-panel
+      name: dsh-mcp-panel
+      config:
+        probeEnabled: true
+        probeTimeoutMs: 10000
+</code></pre>
+<h4>Uninstall</h4>
+<ol>
+<li>Remove the <code>mcp-panel</code> row from <code>cordis.patch.yml</code> (the web surface hot-reloads it; other surfaces restart).</li>
+<li>Delete the package from the profile&#39;s <code>node_modules</code> (or the shared <code>profiles/node_modules</code> fallback).</li>
+<li>Verify with <code>dsh web --dump-config</code> that no <code>mcp-panel</code> row remains.</li>
+</ol>
+<h3>Honest by contract</h3>
+<ul>
+<li><strong>Read-only.</strong> No configuration file is ever written. <code>disable</code>/<code>enable</code> prints a suggestion you apply yourself.</li>
+<li><strong>No fake status.</strong> Connection fields without upstream data read <code>unknown</code> / <code>—</code>, with <code>statusSource: derived</code>.</li>
+<li><strong>Sanitized display.</strong> URL query credentials, userinfo passwords, header values, bearer tokens, and JWTs are redacted before rendering; configured <code>headers</code> never enter any snapshot.</li>
+<li><strong>Panel-only results.</strong> Probe details live in the settings tab, never in model context; <code>/mcp</code> output is the model-readable surface and is fully reconstructable from the session log.</li>
+<li><strong>No mcp-client changes.</strong> Transport, OAuth, and protocol stay untouched — the observability gap is covered by the <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">upstream proposal</a>, which this plugin already consumes (typed <code>mcp/status</code> event + <code>mcpStatus</code> query service, feature-detected at runtime).</li>
+</ul>
+<h3>Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>probeEnabled</code></td>
+<td><code>true</code></td>
+<td>Register the <code>mcp_probe</code> tool (needs <code>ctx.jobs</code> in the composition)</td>
+</tr>
+<tr>
+<td><code>probeTimeoutMs</code></td>
+<td><code>10000</code></td>
+<td>Per-probe timeout</td>
+</tr>
+<tr>
+<td><code>maxProbes</code></td>
+<td><code>10</code></td>
+<td>Cap on probe records shown in the panel</td>
+</tr>
+<tr>
+<td><code>refreshIntervalMs</code></td>
+<td><code>0</code></td>
+<td>Suggested panel refresh interval in ms (<code>0</code> = on demand only)</td>
+</tr>
+<tr>
+<td><code>outputLanguage</code></td>
+<td><code>en</code></td>
+<td>Output language of the <code>/mcp</code> command (<code>en</code> | <code>zh</code> | <code>es</code> | <code>pt</code> | <code>hi</code>)</td>
+</tr>
+<tr>
+<td><code>passiveProbeEnabled</code></td>
+<td><code>false</code></td>
+<td>Periodically probe streamable-http servers in the background</td>
+</tr>
+<tr>
+<td><code>passiveProbeIntervalMs</code></td>
+<td><code>60000</code></td>
+<td>Passive probe interval in milliseconds</td>
+</tr>
+</tbody></table>
+<h3>Permissions &amp; data</h3>
+<ul>
+<li><strong>Reads</strong>: loader entries, the tool registry (<code>mcp__&lt;server&gt;__</code> names), and — when upstream ships it — <code>mcp/status</code> events.</li>
+<li><strong>Writes</strong>: none. No configuration file is ever modified.</li>
+<li><strong>Network</strong>: only the one-shot <code>mcp_probe</code> (and the optional passive probe) POSTs one MCP <code>initialize</code> request to endpoints you configured; configured headers are used for the request and are never displayed or logged.</li>
+<li>No telemetry, no external services, no background work beyond the optional probe timers.</li>
+</ul>
+<h3>Troubleshooting</h3>
+<ul>
+<li>Row not visible? Run <code>dsh web --dump-config</code> and check that the <code>mcp-panel</code> insert landed with a unique id.</li>
+<li>Panel shows <code>status: unknown (source: derived)</code> — expected until the upstream seam lands; see <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">docs/upstream-proposal.md</a>.</li>
+<li>Panel looks stale? Set <code>refreshIntervalMs</code> to a positive value (e.g. <code>5000</code>) in the <code>mcp-panel</code> config row to poll automatically.</li>
+<li>Boot log shows a FAILED <code>mcp-panel</code> fiber — the package must resolve from the profile (bare <code>name: dsh-mcp-panel</code> resolves via the profile&#39;s <code>node_modules</code> or the shared fallback).</li>
+<li>Rollback: remove the row (see Uninstall).</li>
+</ul>
+<h3>Security</h3>
+<p>Found a security issue? Open a GitHub issue <strong>without</strong> pasting secrets, keys, or tokens — redact everything first. This plugin holds the credentials of your configured MCP servers only in memory for probe requests; they never reach logs or snapshots.</p>
+<h3>How it works</h3>
+<ul>
+<li><strong>Host half</strong> — a <code>mcpPanel</code> Typert Remote service assembles the snapshot from three read-only sources: loader rows (<code>@deepseek-ai/dsh-mcp-client</code> entries), <code>ctx.tools.schemas()</code> grouped by the <code>mcp__&lt;server&gt;__</code> namespace, and upstream <code>mcp/status</code> observations. The hand-written <code>./typert</code> manifest registers <code>mcpPanel/status</code> with the gateway; <code>zod</code> is bundled, so the host bundle is self-contained.</li>
+<li><strong>Browser half</strong> — a <code>dsh.client</code> bundle (served at <code>/plugins/dsh-mcp-panel/client.js</code>) mounts the same descriptor via <code>ctx.remote.$mount</code> and registers a read-only <code>settings.plugins.tab</code> entry (<code>id: mcp</code>). The presenter is a pure function; styles are scoped and token-driven.</li>
+<li><strong>The <code>/mcp</code> command</strong> goes through the standard command registry — every line lands in <code>command/run</code> + <code>command/done</code> session events.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck
+pnpm test          # 96 tests: sanitizer extremes, grouping, aggregation tolerance, command output (5 languages), probe gating, client wiring, presenter
+pnpm run build     # tsc declarations → lib/types; tsdown → lib/index.js + lib/typert.host.js + lib/client.js
+pnpm run verify:self-contained
+pnpm pack
+</code></pre>
+<p>Verification against a real harness checkout:
+<code>node --import tsx/esm scripts/verify-headless.mjs</code> boots the full web profile in process (ephemeral port) and prints the exact <code>/mcp</code>, <code>/mcp &lt;server&gt; tools</code>, and <code>/mcp &lt;server&gt; disable</code> output.</p>
+<h3>License</h3>
+<p><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/LICENSE">Apache License 2.0</a> © 2026 dsh-mcp-panel contributors</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

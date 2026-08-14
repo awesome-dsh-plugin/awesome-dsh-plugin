@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,120 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:SamXiaBing/dsh-adb</pre><button type="button" data-cmd="dsh plugin --profile web add github:SamXiaBing/dsh-adb" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>ADB device &amp; bench operations for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a></p>
+</blockquote>
+<p>Give DSH agents direct control over Android devices and automotive bench rigs: device discovery, structured logcat, APK install, file pull/push, and performance snapshots. Built for on-vehicle and bench debugging workflows — generic within the domain (no Unity, no vendor protocol lock-in).</p>
+<p><strong>English</strong> | <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/README.zh-CN.md">简体中文</a></p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-adb
+</code></pre>
+<p>Or install directly from GitHub: <code>dsh plugin --profile web add github:SamXiaBing/dsh-adb</code></p>
+<h3>Ecosystem</h3>
+<ul>
+<li>✅ <a href="https://www.npmjs.com/package/dsh-adb">npm</a> — <code>dsh-adb</code> published (latest: 0.1.5)</li>
+<li>✅ <a href="https://github.com/0xsline/awesome-deepseek-harness/pull/87">awesome-deepseek-harness#87</a> — <strong>merged</strong></li>
+<li>✅ <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/85">awesome-dsh-plugin#85</a> — <strong>merged</strong></li>
+<li>⏳ <a href="https://github.com/Alex-Yanggg/awesome-DSH-plugin/pull/29">awesome-DSH-plugin#29</a> — pending</li>
+</ul>
+<p>Topics: <code>dsh-plugin</code> <code>dsh</code> <code>adb</code> <code>android</code> <code>automotive</code> <code>bench</code></p>
+<h3>Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>adb_devices</code></td>
+<td>List devices (serial/state/product/model); run first to discover serials</td>
+</tr>
+<tr>
+<td><code>adb_connect</code> / <code>adb_disconnect</code></td>
+<td>Wireless bench connection (host:port, default 5555)</td>
+</tr>
+<tr>
+<td><code>adb_logcat</code></td>
+<td>Filtered read (tag/level/keyword/time-window/tail); <code>run_in_background</code> streams continuously as a job — read deltas with <code>job_output</code>, stop with <code>job_kill</code></td>
+</tr>
+<tr>
+<td><code>adb_install</code></td>
+<td>Install APKs (<code>-r</code>/<code>-d</code>/<code>-g</code> options); validates the local file exists</td>
+</tr>
+<tr>
+<td><code>adb_file</code></td>
+<td>pull / push / ls / rm, per-device isolation</td>
+</tr>
+<tr>
+<td><code>adb_perf_snapshot</code></td>
+<td>Structured <code>dumpsys meminfo / gfxinfo / battery</code> snapshots (PSS, frame percentiles, jank rate, battery)</td>
+</tr>
+</tbody></table>
+<p>Errors are structured <code>AdbError</code> with stable codes: <code>ADB_NOT_FOUND</code>, <code>ADB_UNAVAILABLE</code>, <code>DEVICE_NOT_FOUND</code>, <code>NO_DEVICES</code>, <code>CONNECT_FAILED</code>, <code>INSTALL_FAILED</code>, <code>ADB_EXIT_&lt;code&gt;</code>, etc.</p>
+<h3>Configuration</h3>
+<p>Set the <code>config</code> block in <code>cordis.patch.yml</code> (or a profile patch):</p>
+<pre><code class="language-yaml">- id: dsh-adb
+  name: dsh-adb
+  config:
+    adbPath: C:\Users\me\AppData\Local\Android\Sdk\platform-tools\adb.exe
+    defaultSerial: emulator-5554
+    timeoutMs: 30000
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>adbPath</code></td>
+<td>Absolute path to the adb executable</td>
+<td>Auto-detect PATH / ANDROID_HOME / ANDROID_SDK_ROOT/platform-tools</td>
+</tr>
+<tr>
+<td><code>defaultSerial</code></td>
+<td>Default target device serial</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>timeoutMs</code></td>
+<td>Per-command timeout</td>
+<td>30000</td>
+</tr>
+</tbody></table>
+<h3>Development</h3>
+<pre><code class="language-sh">npm install            # add --include=dev when NODE_ENV=production
+npm run build          # tsc → lib/
+npm test               # parser/classification unit tests (node --test)
+npm pack --dry-run     # verify publish contents (lib/ + cordis.patch.yml)
+</code></pre>
+<h3>Testing &amp; Verification</h3>
+<ul>
+<li>Principle: <strong>ship only what is tested</strong> — every committed feature has unit and/or end-to-end coverage.</li>
+<li>Verified on: Android 13 automotive bench + Android 13 phone.</li>
+<li>Per-version changes and verification: <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/CHANGELOG.md">CHANGELOG.md</a>; test methodology and coverage: <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.md">docs/TESTING.md</a> (Chinese).</li>
+</ul>
+<h3>Project Docs (bilingual; for AI agents &amp; contributors)</h3>
+<ul>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/AGENTS.md">docs/AGENTS.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/AGENTS.en.md">docs/AGENTS.en.md</a> — read first: purpose, rules, commands, environment facts, doc map</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/REQUIREMENTS.md">docs/REQUIREMENTS.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/REQUIREMENTS.en.md">docs/REQUIREMENTS.en.md</a> — purpose / scope / non-goals / acceptance criteria</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.md">docs/TESTING.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.en.md">docs/TESTING.en.md</a> — testing philosophy, three test layers, E2E steps, regression checklist</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/DEVELOPMENT-LOG.md">docs/DEVELOPMENT-LOG.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/DEVELOPMENT-LOG.en.md">docs/DEVELOPMENT-LOG.en.md</a> — timeline, fixed-bug lessons, environment &amp; ecosystem notes</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/PLAN.md">PLAN.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/PLAN.en.md">PLAN.en.md</a> — milestones &amp; backlog</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

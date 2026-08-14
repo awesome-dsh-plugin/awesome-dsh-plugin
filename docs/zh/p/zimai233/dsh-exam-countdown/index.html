@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,207 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zimai233/dsh-exam-countdown</pre><button type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-exam-countdown" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 提供的<strong>中国考试倒数日</strong>插件。</p>
+<p>内置 64 场中国主要考试（高考、考研、国考、四六级、教资、CPA、法考、一建、软考、护士执业……），
+把纯日期计算封装成两个 agent 可调用的工具。日期一旦过去，自动顺延到下一年（循环滚动）；
+四六级等按「每年 6 月/12 月第二个周六」、JLPT 按「每年 7 月/12 月第一个周日」精确计算。</p>
+<p>纯 ESM，零构建步骤 —— 发布的 npm 包本身就是运行时代码。</p>
+<h3>为什么需要它</h3>
+<p>DSH 生态里 <strong>教育 / 考试类目非常单薄</strong>：现成的插件多集中在工具链、媒体与设计领域，
+没有任何一个提供中国考试的日程数据与倒数计算。这个插件补上了这块空白：
+把「考程」网页应用（<code>china-exam-countdown</code>）的数据与日期数学移植为服务端工具，
+agent 可以直接回答「高考还有多少天」「下一次 CPA 是什么时候」这类问题。</p>
+<h3>功能特性</h3>
+<ul>
+<li><strong>64 场内置考试</strong>，覆盖 9 大分类：升学考试、公务员、英语考试、教师资格、会计金融、法律工程、医学健康、计算机、其他</li>
+<li><strong>精确规则日期</strong>：<code>2nd-sat</code>（第二个周六）与 <code>1st-sun</code>（第一个周日）由纯日期数学计算</li>
+<li><strong>循环滚动</strong>：日期已过自动顺延到下一年同一天，<code>days &gt;= 0</code> 只返回未过期的场次</li>
+<li><strong>灵活查询</strong>：按 <code>id</code> 精确查找、按名称关键字模糊搜索、按分类筛选，结果按临近排序</li>
+<li><strong>两个工具</strong>：<code>exam_countdown</code>（倒数查询）+ <code>exam_categories</code>（分类清单）</li>
+<li>零构建、零 DOM/localStorage —— 纯服务端数据 + 日期数学</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-bash"># 从 npm
+dsh plugin --profile myprofile add dsh-exam-countdown
+</code></pre>
+<h3>使用</h3>
+<p>直接用自然语言让 agent 查询，例如：</p>
+<blockquote>
+<p>「高考还有多少天？」</p>
+</blockquote>
+<p>agent 会调用 <code>exam_countdown</code>，例如：</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;gaokao&quot;
+}
+</code></pre>
+<p>返回：</p>
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: &quot;gaokao&quot;,
+    &quot;name&quot;: &quot;高考&quot;,
+    &quot;cat&quot;: &quot;升学考试&quot;,
+    &quot;dateLabel&quot;: &quot;6月7日&quot;,
+    &quot;days&quot;: 327,
+    &quot;nextOccurrence&quot;: &quot;2027-06-07&quot;
+  }
+]
+</code></pre>
+<p>再如：</p>
+<blockquote>
+<p>「帮我看看最近要考的英语类考试，列出 5 个」</p>
+</blockquote>
+<pre><code class="language-json">{
+  &quot;query&quot;: &quot;英语&quot;,
+  &quot;limit&quot;: 5
+}
+</code></pre>
+<blockquote>
+<p>「有哪些考试分类？」</p>
+</blockquote>
+<p>agent 调用 <code>exam_categories</code>，返回各分类及其考试数量，用来发现 <code>category</code> 参数的合法取值。</p>
+<h3>工具参考</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>exam_countdown</code></td>
+<td><code>id</code> (string, 可选) — 精确 slug，如 <code>gaokao</code>、<code>kaoyan</code>、<code>cpa</code>、<code>cet-6</code>；<code>query</code> (string, 可选) — 名称/id/备注子串匹配；<code>category</code> (string, 可选) — 分类名；<code>limit</code> (number, 可选, 默认 10)</td>
+<td>返回 JSON 数组，每项 <code>{ id, name, cat, dateLabel, days, nextOccurrence }</code>，按剩余天数升序，仅含未过期场次</td>
+</tr>
+<tr>
+<td><code>exam_categories</code></td>
+<td>无</td>
+<td>返回 <code>[{ category, count }]</code>，按考试数量降序</td>
+</tr>
+</tbody></table>
+<h4>可用的 <code>id</code>（64 场）</h4>
+<p><code>gaokao</code> <code>zhongkao</code> <code>kaoyan</code> <code>kaoyan-2</code> <code>chengkao</code> <code>zikao-4</code> <code>zikao-10</code> <code>zsb</code> <code>guokao</code> <code>shengkao</code>
+<code>wendui</code> <code>xuanxiao</code> <code>shiye</code> <code>cet-6</code> <code>cet-12</code> <code>tem4</code> <code>tem8</code> <code>pets-3</code> <code>pets-9</code> <code>putonghua</code>
+<code>jlpt-7</code> <code>jlpt-12</code> <code>topik</code> <code>jzb-3</code> <code>jzb-9</code> <code>jzm-1</code> <code>jzm-5</code> <code>chuji</code> <code>gaoji</code> <code>zhongji</code>
+<code>cpa</code> <code>sws</code> <code>jjs</code> <code>zcpg</code> <code>sjs</code> <code>yinhang</code> <code>jijin</code> <code>zq</code> <code>fakao-k</code> <code>fakao-z</code>
+<code>yjzs</code> <code>ejzs</code> <code>zjzs</code> <code>xf</code> <code>jzs</code> <code>ytjg</code> <code>jl</code> <code>zx</code> <code>gh</code> <code>yishi-b</code>
+<code>yishi-j</code> <code>hushi</code> <code>yaoshi</code> <code>weish</code> <code>sg</code> <code>rk-5</code> <code>rk-11</code> <code>ncre-3</code> <code>ncre-9</code> <code>catti-6</code>
+<code>catti-11</code> <code>chuban</code> <code>zhuanli</code> <code>daoyou</code></p>
+<h4>日期说明</h4>
+<ul>
+<li>固定日期的考试按全国统一日期收录；时间不固定的（如考研、省考、事业单位）使用历年典型日期</li>
+<li>四六级 = 每年 6 月 / 12 月第二个周六；JLPT = 每年 7 月 / 12 月第一个周日，由程序精确计算</li>
+<li><strong>所有日期仅供参考，最终以各考试主办方官方公告为准</strong></li>
+</ul>
+<h3>开发</h3>
+<pre><code class="language-bash">npm install
+npm test          # 纯核心逻辑测试（ruleDate / nextOccurrence / queryExams / 数据集）
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+<hr>
+<h2>dsh-exam-countdown</h2>
+<p>Chinese exam countdown for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>A port of the <a href="https://github.com/zimai233/china-exam-countdown">考程 / china-exam-countdown</a>
+app into a DSH tool plugin: the 64-exam dataset and the pure date math, exposed as
+agent-callable tools. No UI, no DOM — just data + countdown computation on the server side.</p>
+<h3>Why</h3>
+<p>The DSH plugin ecosystem&#39;s <strong>education category is thin</strong>: most plugins target
+tooling, media and design. None provide Chinese exam schedules or countdown math.
+This plugin fills that gap so agents can answer questions like &quot;how many days until
+gaokao?&quot; or &quot;when is the next CPA exam?&quot; directly from conversation.</p>
+<h3>Features</h3>
+<ul>
+<li><strong>64 built-in exams</strong> across 9 categories: 升学考试, 公务员, 英语考试, 教师资格, 会计金融, 法律工程, 医学健康, 计算机, 其他</li>
+<li><strong>Exact rule dates</strong>: <code>2nd-sat</code> (second Saturday) and <code>1st-sun</code> (first Sunday) computed by pure date math (CET-4/6, JLPT)</li>
+<li><strong>Rolling recurrence</strong>: once a date passes it rolls to the same date next year; only upcoming (<code>days &gt;= 0</code>) results are returned</li>
+<li><strong>Flexible queries</strong>: exact <code>id</code>, substring <code>query</code> against name/id/note, or <code>category</code> filter, sorted by days ascending</li>
+<li><strong>Two tools</strong>: <code>exam_countdown</code> + <code>exam_categories</code></li>
+<li>Zero build step — pure ESM, the published package is the runtime code</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-bash"># from npm
+dsh plugin --profile myprofile add dsh-exam-countdown
+</code></pre>
+<h3>Usage</h3>
+<p>Ask the agent in natural language:</p>
+<blockquote>
+<p>&quot;How many days until gaokao?&quot;</p>
+</blockquote>
+<p>The agent calls <code>exam_countdown</code> with:</p>
+<pre><code class="language-json">{ &quot;id&quot;: &quot;gaokao&quot; }
+</code></pre>
+<p>Result:</p>
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: &quot;gaokao&quot;,
+    &quot;name&quot;: &quot;高考&quot;,
+    &quot;cat&quot;: &quot;升学考试&quot;,
+    &quot;dateLabel&quot;: &quot;6月7日&quot;,
+    &quot;days&quot;: 327,
+    &quot;nextOccurrence&quot;: &quot;2027-06-07&quot;
+  }
+]
+</code></pre>
+<p>More examples:</p>
+<blockquote>
+<p>&quot;List 5 English-language exams coming up soon&quot;</p>
+</blockquote>
+<pre><code class="language-json">{ &quot;query&quot;: &quot;英语&quot;, &quot;limit&quot;: 5 }
+</code></pre>
+<blockquote>
+<p>&quot;Which exam categories do you have?&quot;</p>
+</blockquote>
+<p>The agent calls <code>exam_categories</code>, which returns each category with its exam count —
+use it to discover valid <code>category</code> values.</p>
+<h3>Tool Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>exam_countdown</code></td>
+<td><code>id</code> (string, optional) — exact slug e.g. <code>gaokao</code>, <code>kaoyan</code>, <code>cpa</code>, <code>cet-6</code>; <code>query</code> (string, optional) — substring match against name/id/note; <code>category</code> (string, optional) — category name; <code>limit</code> (number, optional, default 10)</td>
+<td>Returns a JSON array of <code>{ id, name, cat, dateLabel, days, nextOccurrence }</code> sorted by days ascending, upcoming only</td>
+</tr>
+<tr>
+<td><code>exam_categories</code></td>
+<td>—</td>
+<td>Returns <code>[{ category, count }]</code> sorted by count descending</td>
+</tr>
+</tbody></table>
+<h4>Available <code>id</code>s (64)</h4>
+<p><code>gaokao</code> <code>zhongkao</code> <code>kaoyan</code> <code>kaoyan-2</code> <code>chengkao</code> <code>zikao-4</code> <code>zikao-10</code> <code>zsb</code> <code>guokao</code> <code>shengkao</code>
+<code>wendui</code> <code>xuanxiao</code> <code>shiye</code> <code>cet-6</code> <code>cet-12</code> <code>tem4</code> <code>tem8</code> <code>pets-3</code> <code>pets-9</code> <code>putonghua</code>
+<code>jlpt-7</code> <code>jlpt-12</code> <code>topik</code> <code>jzb-3</code> <code>jzb-9</code> <code>jzm-1</code> <code>jzm-5</code> <code>chuji</code> <code>gaoji</code> <code>zhongji</code>
+<code>cpa</code> <code>sws</code> <code>jjs</code> <code>zcpg</code> <code>sjs</code> <code>yinhang</code> <code>jijin</code> <code>zq</code> <code>fakao-k</code> <code>fakao-z</code>
+<code>yjzs</code> <code>ejzs</code> <code>zjzs</code> <code>xf</code> <code>jzs</code> <code>ytjg</code> <code>jl</code> <code>zx</code> <code>gh</code> <code>yishi-b</code>
+<code>yishi-j</code> <code>hushi</code> <code>yaoshi</code> <code>weish</code> <code>sg</code> <code>rk-5</code> <code>rk-11</code> <code>ncre-3</code> <code>ncre-9</code> <code>catti-6</code>
+<code>catti-11</code> <code>chuban</code> <code>zhuanli</code> <code>daoyou</code></p>
+<h4>Dates</h4>
+<ul>
+<li>Fixed-date exams use the national unified date; flexible ones (考研, 省考, 事业单位) use typical dates from recent years</li>
+<li>CET-4/6 = 2nd Saturday of June / December; JLPT = 1st Sunday of July / December — computed exactly</li>
+<li><strong>All dates are for reference only — always confirm with official announcements</strong></li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-bash">npm install
+npm test          # runs the pure-core tests (ruleDate / nextOccurrence / queryExams / dataset)
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zimai233/dsh-exam-countdown/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

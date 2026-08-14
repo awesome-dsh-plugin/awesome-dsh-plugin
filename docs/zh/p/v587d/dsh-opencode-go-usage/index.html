@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,144 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:v587d/dsh-opencode-go-usage</pre><button type="button" data-cmd="dsh plugin --profile web add github:v587d/dsh-opencode-go-usage" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/v587d/dsh-opencode-go-usage/blob/main/README.en.md">English</a> | 中文</p>
+<p><a href="https://www.npmjs.com/package/dsh-ocgo-usage"><img src="https://img.shields.io/npm/v/dsh-ocgo-usage" alt="npm"></a>
+<a href="https://github.com/v587d/dsh-opencode-go-usage/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license: MIT"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p><img src="https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/custom-footer.png" alt="Footer demo"></p>
+<p>一个 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh) <strong>bundle</strong>，在 Web 界面的输入框上方 dock（与内置 token 统计同位置）显示 <a href="https://opencode.ai/docs/go/">OpenCode Go</a> 订阅用量。</p>
+<p>它是 <a href="https://github.com/v587d/pi-ocgo-usage">pi-ocgo-usage</a>（Pi 插件）的 Web 对应物：三个用量窗口（5h 滚动 / 每周 / 每月）的百分比与重置倒计时，按阈值变色，让你在窗口耗尽、请求被限流之前就发现。</p>
+<pre><code>OpenCode Go: 5h 0% (1h 23m) · wk 65% (2d 20h) · mo 83% (6d 21h) · upd 20:15
+</code></pre>
+<h3>特性</h3>
+<ul>
+<li><strong>三个窗口</strong> —— 5h 滚动 / 每周 / 每月 的百分比 + 重置倒计时</li>
+<li><strong>颜色阈值</strong> —— 正常 → 黄色警告（≥80%）→ 红色错误（≥90% 或已限流）</li>
+<li><strong>数据新鲜度</strong> —— <code>upd HH:MM</code> 显示最近一次成功抓取时间</li>
+<li><strong>轻量轮询</strong> —— 每 10s 轮询（切回标签页立即刷新）；host 端 300s 缓存（TTL 可配）+ 60s 失败冷却，不会频繁打扰 opencode.ai</li>
+<li><strong>Provider 感知</strong> —— 仅当会话当前模型走 <code>opencode-go</code> provider 时显示；每次轮询读取内存中的实时模型选择（<code>session.models</code>，毫秒级），切到 DeepSeek 官方等其它 provider 后一个轮询周期内自动隐藏，切回自动恢复（与 pi-ocgo-usage 行为一致）</li>
+<li><strong>点击展开</strong> —— 详情面板显示每个窗口的重置倒计时，左下角 <code>Set</code> 可配置凭据，右侧 <code>refresh upd HH:MM</code> 手动刷新</li>
+<li><strong>内置凭据编辑器</strong> —— 无需碰终端：<code>Set</code> 面板直接修改 workspace id 与 cookie（输入框以 <code>••••</code> + 末尾 4 位显示，点击外部 / Esc / 保存确认写入）</li>
+<li><strong>优雅降级</strong> —— 配置缺失显示 <code>&lt;err:noconfig&gt;</code>，HTTP 失败显示 <code>&lt;err:httpXXX&gt;</code>；出错时点击 chip 直接进入 Set 面板</li>
+<li><strong>Cookie 只在 host 侧</strong> —— 浏览器只访问同源 <code>/api/ocgo-usage</code> JSON 端点，cookie 永不进入页面</li>
+</ul>
+<blockquote>
+<p><strong>⚠️ 需要 OpenCode Go 会话 cookie。</strong> 该 cookie 是完整用户会话（不是 API key），可访问你 OpenCode 账户的全部内容。请像对待密码一样对待它——见 <a href="#%E9%85%8D%E7%BD%AE">配置</a>。</p>
+</blockquote>
+<h3>环境要求</h3>
+<ul>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code> 或更新（web profile）</li>
+<li><code>PATH</code> 上有 pnpm（<code>dsh plugin</code> 需要）</li>
+</ul>
+<h3>安装</h3>
+<p>这是一个标准的 dsh <strong>bundle</strong>：<code>package.json</code> 声明了 <code>dsh.bundle</code>，通过 <code>dsh plugin --profile web add &lt;spec&gt;</code> 安装（pnpm 转发器），自动加入 profile 的 <code>dsh.profile.bundles</code>。仓库内置预构建的 <code>lib/</code> 产物，<strong>安装无需任何构建步骤或构建权限</strong>——遵循官方 <a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/publish.md">publish 指南</a>。</p>
+<h4>从 GitHub 安装（推荐）</h4>
+<pre><code class="language-sh">dsh plugin --profile web add github:v587d/dsh-opencode-go-usage
+</code></pre>
+<p>因为 <code>lib/</code> 已提交到仓库，pnpm 直接安装构建好的包，不会要求构建脚本授权。</p>
+<h4>从 npm 安装（发布后）</h4>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-ocgo-usage
+</code></pre>
+<blockquote>
+<p><strong>关于包名：</strong> 仓库名为 <code>dsh-opencode-go-usage</code>，但 npm 上同名包已被他人抢先占用（一个功能类似的第三方插件），因此 npm 发布名定为 <code>dsh-ocgo-usage</code>。GitHub 安装（推荐）不受影响：<code>dsh plugin --profile web add github:v587d/dsh-opencode-go-usage</code>。</p>
+</blockquote>
+<h4>从 tarball 安装</h4>
+<pre><code class="language-sh">pnpm pack            # 在本仓库内 → dsh-ocgo-usage-0.1.0.tgz
+dsh plugin --profile web add ./dsh-ocgo-usage-0.1.0.tgz
+</code></pre>
+<h4>本地开发安装</h4>
+<pre><code class="language-sh">git clone https://github.com/v587d/dsh-opencode-go-usage.git
+cd dsh-opencode-go-usage
+pnpm install
+pnpm run build
+dsh plugin --profile web add link:$(pwd)
+</code></pre>
+<p><strong>重启 <code>dsh web</code> 并刷新页面</strong>，chip 出现在输入框上方的 dock。不启动即可验证插件层已组合：</p>
+<pre><code class="language-sh">dsh --profile web --dump-config   # 应显示 &quot;# == dsh-ocgo-usage&quot; 层
+</code></pre>
+<h3>配置</h3>
+<h4>方式一：界面内 Set 面板（最简单）</h4>
+<p>点击 chip 展开详情 → 左下角 <code>Set</code> → 输入 workspace id 与 cookie（已设置的值以 <code>••••</code> + 末尾 4 位显示，聚焦即可输入新值）→ 点击外部 / Esc / 保存按钮确认，立即生效。</p>
+<p><img src="https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/set-cookie-wid.png" alt="Set editor"></p>
+<h4>方式二：环境变量（与 pi-ocgo-usage 同名）</h4>
+<pre><code class="language-sh">export OPENCODE_GO_COOKIE=&quot;auth=Fe26.2*...; oc_locale=en&quot;
+export OPENCODE_GO_WORKSPACE_ID=&quot;wrk_01XXXXXXXXXXXXXXXXXXXXXXXX&quot;
+</code></pre>
+<h4>方式三：配置文件</h4>
+<p>写入 <code>$DSH_HOME/ocgo-usage.json</code>（默认 <code>~/.dsh/ocgo-usage.json</code>）：</p>
+<pre><code class="language-jsonc">{
+  &quot;cookie&quot;: &quot;auth=Fe26.2*...; oc_locale=en&quot;,
+  &quot;workspaceID&quot;: &quot;wrk_01XXXXXXXXXXXXXXXXXXXXXXXX&quot;
+}
+</code></pre>
+<pre><code class="language-sh">chmod 600 ~/.dsh/ocgo-usage.json
+</code></pre>
+<p>优先级：环境变量 &gt; 配置文件 &gt; 内置默认。</p>
+<h4>可选覆盖项</h4>
+<table>
+<thead>
+<tr>
+<th>环境变量</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>OPENCODE_GO_BASE_URL</code></td>
+<td><code>https://opencode.ai</code></td>
+<td>API 基础地址</td>
+</tr>
+<tr>
+<td><code>OPENCODE_GO_CACHE_TTL</code></td>
+<td><code>300</code></td>
+<td>host 缓存秒数，范围 60–3600</td>
+</tr>
+<tr>
+<td><code>OPENCODE_GO_TIMEOUT_MS</code></td>
+<td><code>10000</code></td>
+<td>HTTP 超时</td>
+</tr>
+</tbody></table>
+<p>组合层配置（<code>~/.dsh/profiles/web/cordis.patch.yml</code>）：</p>
+<pre><code class="language-yaml">- id: ocgo-usage
+  config:
+    enabled: false    # 总开关，默认 true
+</code></pre>
+<blockquote>
+<p><strong>Cookie 过期：</strong> <code>auth</code> cookie 签发后有效期 1 年。过期（或被吊销）后页面 302 跳转到登录页，chip 显示 <code>&lt;err:http302&gt;</code> 而非过期数字。重新登录 opencode.ai 后，通过 Set 面板更新 cookie 即可。</p>
+</blockquote>
+<h3>使用</h3>
+<p>点击 chip 展开详情面板：每个窗口显示完整名称、百分比与重置倒计时；右下角 <code>refresh upd HH:MM</code> 手动刷新并显示数据时间。</p>
+<p><img src="https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/usage-detail.png" alt="Usage detail"></p>
+<h3>工作原理</h3>
+<ul>
+<li><strong>Host 半</strong>（<code>src/index.ts</code>、<code>src/service.ts</code>、<code>src/api.ts</code>、<code>src/routes.ts</code>）—— 携带 cookie 抓取 <code>GET /workspace/&lt;wrk&gt;/go</code>，解析 SSR 渲染的 <code>data-slot=&quot;usage-item&quot;</code> 块为每个窗口的 <code>{percent, resetInSec, status}</code>，缓存结果，通过同源 JSON 端点 <code>/api/ocgo-usage</code>（+ <code>/api/ocgo-usage/refresh</code>、<code>/api/ocgo-usage/config</code>）提供数据。</li>
+<li><strong>浏览器半</strong>（<code>src/client/</code>）—— 向 <code>conversation.composer.dock</code> slot 注册 chip，每 10s 轮询 host 端点，按严重级别着色渲染三个窗口；可见性来自 <code>session.models</code> 的实时 provider 判断。</li>
+</ul>
+<p>浏览器永远看不到 cookie；抓取与解析全部在 host 侧完成。</p>
+<h3>安全</h3>
+<ul>
+<li><code>auth</code> cookie 是<strong>完整的 OpenCode 用户会话</strong>。任何人拿到它都能访问你账户内的所有 workspace、订阅与账单信息。</li>
+<li>插件<strong>绝不</strong>记录 cookie、不把它放进错误信息、不发送给浏览器。</li>
+<li>配置编辑器只把新值写入 <code>$DSH_HOME/ocgo-usage.json</code>（chmod 600），浏览器始终只看到 <code>••••</code> + 末尾 4 位的掩码视图。</li>
+</ul>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run build     # tsc -b &amp;&amp; tsdown → lib/
+pnpm run typecheck # tsc -b --pretty false
+pnpm test          # vitest run（解析器 / 配置 / 服务）
+</code></pre>
+<p>构建配置（<code>shared/tsdown.client.ts</code>）改编自 <a href="https://github.com/Ghost011118/dsh-balance-meter">dsh-balance-meter</a>（BSD-3-Clause），后者是官方 DSH <code>packages/client/tsdown.client.ts</code> 的副本——它产出 web shell 模块表所需的 <code>window.__ModuleLoader__.load({id, factory})</code> 闭包工厂产物。</p>
+<h3>License</h3>
+<p>MIT —— 见 <a href="https://github.com/v587d/dsh-opencode-go-usage/blob/main/LICENSE">LICENSE</a>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/v587d/dsh-opencode-go-usage/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,103 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:vibeinging/dsh-tool-search</pre><button type="button" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-tool-search" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/vibeinging/dsh-tool-search/blob/main/README.zh.md">中文</a></p>
+<p>An experimental external Native Tool Mode plugin for per-agent tool discovery and progressive schema disclosure. Each live agent sees one scope-local <code>tool_search</code> tool plus the global tools matched by <code>alwaysVisible</code>; other eligible global tools stay executable only after <code>tool_search</code> selects them. The plugin uses the existing <code>ctx.tools.restrict()</code> seam and does not change <code>agent-loop</code>.</p>
+<p>This private repository is the plugin&#39;s source of truth. The package is unreleased and carries no compatibility promise. See the <a href="https://github.com/vibeinging/dsh-tool-search/blob/main/docs/reports/2026-08-11-tool-search-benchmark.md">scale benchmark report</a> for keyless 10/30/50/100-tool results and the <a href="https://github.com/vibeinging/dsh-tool-search/blob/main/docs/design/2026-08-11-tool-search-progressive-disclosure.md">design record</a> for the decision and trade-offs.</p>
+<h3>Installation</h3>
+<p>The repository is private and the package is not published to an npm registry. Install a reviewed commit directly from GitHub with Git credentials and pnpm <code>11.7.0</code>; install it separately into every profile that should use tool search. The <code>-w</code> flag is required because a DSH profile is a pnpm workspace root:</p>
+<pre><code class="language-sh">dsh plugin --profile headless add -w github:dsh-external/dsh-tool-search#&lt;reviewed-commit&gt;
+dsh plugin --profile web add -w github:dsh-external/dsh-tool-search#&lt;reviewed-commit&gt;
+dsh --profile web --dump-config
+</code></pre>
+<p>The package&#39;s <code>dsh.bundle.patch</code> loads both the runtime plugin and its invariant companion. Profiles are independent; installing into <code>web</code> does not enable <code>headless</code>. <code>--dump-config</code> must show <code>tool-search</code> and <code>tool-search-invariant</code> before the profile is booted. Remove the bundle from one profile with <code>dsh plugin --profile &lt;profile&gt; remove -w @deepseek-ai/dsh-tool-search</code>.</p>
+<h3>Config</h3>
+<pre><code class="language-yaml">- id: tool-search
+  name: &#39;@deepseek-ai/dsh-tool-search&#39;
+  config:
+    alwaysVisible: [read_file, todo_*]
+    maxResults: 5
+    maxQueryChars: 512
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th align="right">Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>alwaysVisible</code></td>
+<td align="right"><code>[]</code></td>
+<td>Global tool-name patterns that remain visible before search. Only <code>*</code> is a wildcard; every other character is literal.</td>
+</tr>
+<tr>
+<td><code>maxResults</code></td>
+<td align="right"><code>5</code></td>
+<td>Largest allowed result limit for one search.</td>
+</tr>
+<tr>
+<td><code>maxQueryChars</code></td>
+<td align="right"><code>512</code></td>
+<td>Largest trimmed query accepted in JavaScript characters.</td>
+</tr>
+</tbody></table>
+<p>Invalid positive-integer bounds, empty or whitespace-padded patterns, and repeated patterns fail at plugin load. A model may request a smaller <code>limit</code>, from <code>1</code> through <code>maxResults</code>; it cannot raise the deployment bound.</p>
+<h3>Selection and safety</h3>
+<p>Search ranks exact callable names first, then name and description matches with deterministic BM25 scoring and code-point name tie-breaking. A successful expansion writes one <code>tool-search/selection</code> session event containing the trimmed query and the complete sorted selected-name set. Later events must be strict cumulative supersets; the invariant companion enforces the event shape and monotonic rule for live and restored sessions.</p>
+<p>Each agent owns an independent selection and restriction. A resumed or forked session restores the latest selection before its first request. Installing the plugin after agents already exist attaches them; unloading it removes <code>tool_search</code> and lifts only its own restrictions.</p>
+<p>This plugin never widens another filter. Existing creation-time restrictions, parent/subagent policy, scoped shadows, and other <code>ctx.tools.restrict()</code> calls still intersect after search, so a selected but independently denied tool reports <code>unavailable</code>. The initial catalog includes only globals already visible to that agent. Late global registrations such as MCP tools join the catalog only when the agent started with an unrestricted global view; an agent that started behind another restriction stays on its original eligible-name set. <code>alwaysVisible</code> is the explicit override for a known late name pattern.</p>
+<h3>Model Experience</h3>
+<h4>Tool schema</h4>
+<h5>What the model sees</h5>
+<p>Every protected agent sees the following description even when no global tool is initially visible; the complete declaration lives in <a href="https://github.com/vibeinging/dsh-tool-search/blob/main/src/index.ts"><code>src/index.ts</code></a>. The schema has <code>query</code> (required string) and <code>limit</code> (optional integer bounded by config). The tool is scope-local, so this plugin&#39;s global allow-list cannot hide it.</p>
+<h6>Tool description</h6>
+<pre><code class="language-markdown">Search tools that are not currently visible. Describe the capability you need or name a tool exactly. Matching tools are loaded for the next model request; call them only after this result returns.
+</code></pre>
+<h5>Token effect</h5>
+<p>The fixed <code>tool_search</code> schema and the <code>alwaysVisible</code> schemas are paid on every request. Deferred tool schemas cost no request tokens until selected. A search result adds a small retained history entry; selected full schemas begin on the next request.</p>
+<h5>KV Cache effect</h5>
+<p>The request prefix stays stable while the selected set and registry stay unchanged; selecting the same tool again does not change the schema list. The current registry emits newly visible global tools before the scope-local <code>tool_search</code>, so the serialized tool schemas after the first selection retain only about 2% of their initial prefix in the <a href="https://github.com/vibeinging/dsh-tool-search/blob/main/docs/reports/2026-08-11-tool-search-benchmark.md">keyless scale benchmark</a>. Functional behavior is unaffected, but strong KV Cache gains require the mainline to provide stable schema ordering or a formal deferred contribution seam. Tool registration, removal, or plugin lifecycle can also change the schema prefix.</p>
+<h4>Search result</h4>
+<h5>What the model sees</h5>
+<p>Matching results use the following concise format. No match renders <code>No matching tools found.</code> The canonical value also includes the trimmed <code>query</code>, ordered <code>tools</code> records, and <code>remainingDeferred</code>. <code>loaded</code> means the tool became visible, <code>already_loaded</code> means it was already visible, and <code>unavailable</code> means another restriction still blocks it. Full schemas are not copied into the result; they arrive through the next normal request header.</p>
+<h6>Result example</h6>
+<pre><code class="language-markdown">Tool search results:
+- &lt;tool_name&gt;: &lt;loaded|already_loaded|unavailable&gt;
+Remaining deferred tools: &lt;count&gt;.
+</code></pre>
+<h5>Token effect</h5>
+<p>Result size is bounded by <code>maxResults</code> and retained until compaction. The newly selected schemas then add their normal fixed per-request cost.</p>
+<h5>KV Cache effect</h5>
+<p>The result appends after the reusable history prefix. The following request changes its schema prefix when at least one tool was newly selected.</p>
+<h4>Argument errors</h4>
+<h5>What the model sees</h5>
+<p>Blank or overlong queries, an out-of-range or non-integer <code>limit</code>, calls without the owning live agent, and nested Code Mode dispatch return ordinary tool errors. A failed call does not change the selection or append <code>tool-search/selection</code>.</p>
+<h5>Token effect</h5>
+<p>The error result enters history as an ordinary tool result and is retained until compaction; it introduces no deferred tool schemas.</p>
+<h5>KV Cache effect</h5>
+<p>The error result appends after the existing prefix and does not change the tool-schema prefix. If the same failure occurs again, it extends the request like any other new history.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li><strong>Native Tool Mode only.</strong> Calls nested under <code>run_code</code> fail loud; Code Mode needs a separate SDK/search transport contract.</li>
+<li><strong>Lexical search only.</strong> Exact names, name boosts, descriptions, and BM25 achieve 100% recall for exact name @1 and representative capability queries @5 in the keyless scale benchmark; this small fixed corpus does not represent ambiguous queries, multilingual queries, or real model-use quality. Embeddings and provider-native search remain deferred.</li>
+<li><strong>Global tools only.</strong> Agent-scoped tools are already visible and never enter the deferred catalog. MCP resources and prompts are outside the tool registry and need their own consumer seams.</li>
+<li><strong>Conservative late-tool policy.</strong> Any restricted initial global view freezes the eligible-name set, so a harmless later registration may stay undiscoverable unless <code>alwaysVisible</code> names it.</li>
+<li><strong>No namespace grouping.</strong> Individual tool names remain the selection unit; large MCP servers may need a namespace-level result and load operation.</li>
+<li><strong>No real provider cache benchmark.</strong> Current token counts use the repository&#39;s fixed character estimate, and KV Cache compares only structural prefixes; no real tokenizer, bill, cache bucket, or end-to-end latency was measured.</li>
+<li><strong>Private Git distribution.</strong> The package is not published to a registry; installation requires authorized GitHub access, pnpm <code>11.7.0</code>, a reviewed commit, and a compatible DSH profile.</li>
+</ul>
+<h3>Development and verification</h3>
+<p>The checked-in <code>lib/</code> output is installable without rebuilding. The project <code>.npmrc</code> selects the private <code>@deepseek-ai/*</code> scope; pnpm 11 reads its <code>${NPM_TOKEN}</code> authentication mapping from the trusted user-level <code>~/.npmrc</code>. Set <code>NPM_TOKEN</code>, then run <code>pnpm install --ignore-scripts</code> and <code>pnpm run check</code>. The SDK packages are pinned to the reviewed <code>0.0.1-rc.2</code> set. Do not link a DSH source checkout into this repository. The optional benchmark also requires <code>DSH_TOOL_CATALOG_PATH</code> to name an exported DSH tool catalog. The <code>compat/</code> directory is an external compatibility fixture, not a source-development dependency.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/vibeinging/dsh-tool-search/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

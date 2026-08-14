@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,220 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Jesse-njx/dsh-routines</pre><button type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-routines" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Scheduled agents for DSH — run a prompt on a cron, get the digest where you already are.</p>
+<p><code>dsh-routines</code> is a plugin bundle for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. A <strong>routine</strong> is a named prompt + schedule + delivery stored as a plain YAML file — human-diffable, git-committable. The scheduler launches each due run through the headless runner as its <strong>own one-shot session</strong> (full session log = full audit, replay-able later by dsh-replay), then delivers a digest: the last assistant message when it is short, otherwise a one-shot summarizer call over the session log.</p>
+<pre><code>┌──────────────────────┐   every night 02:00   ┌──────────────────────────────┐
+│  dsh --profile ops   │ ─────────────────────▶ │ dsh --profile headless        │
+│  scheduler tick      │   (own session, cwd   │  &quot;run the test suite, ...&quot;     │
+│  reads .dsh/routines │    = routine cwd,     │  approval policy: never        │
+│  /*.yaml             │    approval: never)   └──────────────┬───────────────┘
+└──────────────────────┘                                      │ run record: status,
+       │ digest + run record                                  │ digest, session id,
+       ▼                                                      │ denied approvals
+  .dsh/routines/runs/&lt;runId&gt;.json  (+ .md)  ──►  file delivery (always on)
+  ctx.chatnode (optional)          ──►  chatnode delivery (soft dependency)
+</code></pre>
+<h3>Flagship demo — nightly test triage</h3>
+<p>A routine that runs your test suite at 2am, diagnoses the top failure, and leaves a digest in the project — then, with a conversation node installed, that digest lands in WeChat and you reply to approve follow-ups (v0.2; v0.1 delivers to file and chatnode when a node is installed).</p>
+<pre><code class="language-yaml"># ~/work/projectx/.dsh/routines/nightly-tests.yaml
+name: nightly-tests
+schedule: &quot;0 2 * * *&quot;        # 5-field cron; also accept &quot;@daily&quot;, &quot;every 4h&quot;
+timezone: Asia/Shanghai       # explicit, no silent host-tz default
+prompt: |
+  Run the test suite. If anything fails, diagnose the top failure
+  and draft a fix on a branch. Summarize in &lt;10 lines.
+cwd: ~/work/projectx
+profile: headless              # which DSH profile/plugin set the run uses
+overlap: skip                  # skip | queue | cancel-previous
+timeoutMin: 45
+deliver:
+  - type: file                 # always on: digest written under .dsh/routines/runs/
+  - type: chatnode             # optional: any installed conversation node (wechat…)
+</code></pre>
+<pre><code class="language-console">$ dsh --profile ops routines list
+nightly-tests          active   0 2 * * *           tz=Asia/Shanghai next=2026-08-15T02:00:00.000Z
+</code></pre>
+<p>Next morning, the digest is waiting:</p>
+<pre><code class="language-console">$ dsh --profile ops routines logs nightly-tests --limit 3
+[completed] 2026-08-14T18:00:01.000Z 41213 ms session=session-2f7d…
+  tests: 3 failed of 412; top failure: flaky wait in auth.spec.ts — drafted fix on branch fix/auth-wait
+</code></pre>
+<h3>Install</h3>
+<pre><code class="language-console"># 1. Create the profile that hosts the scheduler + CLI (installs this bundle).
+#    From the npm registry once published, or straight from this repository:
+dsh plugin --profile ops add @dsh-routines/bundle          # npm (when published)
+dsh plugin --profile ops add github:Jesse-njx/dsh-routines  # or: straight from GitHub
+
+# 2. Keep it alive so schedules fire (daemon mode; Ctrl-C to stop).
+dsh --profile ops
+</code></pre>
+<p>Routine runs boot the <code>headless</code> profile by default, which ships with DSH — <strong>no extra setup needed</strong>. A routine that needs another profile&#39;s plugin set sets <code>profile: &lt;name&gt;</code>; that profile must be one-shot-capable (include the headless bundle, or install this bundle into it as well — the run overlay disables the nested scheduler either way).</p>
+<h4>Scheduler host</h4>
+<p>The scheduler ticks inside whatever profile the bundle is installed into, so you can also add the bundle to your main <code>web</code> profile and routines fire while the web app runs:</p>
+<pre><code class="language-console">dsh plugin --profile web add @dsh-routines/bundle
+</code></pre>
+<p>Keep the process alive for schedules to fire; <code>dsh --profile ops</code> with no inner arguments is the intended daemon form (the CLI stays silent and the scheduler owns process lifetime).</p>
+<h3>Routine files</h3>
+<p>Routines live in two watched directories (hot-reload on change; invalid files are reported, never crash the store):</p>
+<table>
+<thead>
+<tr>
+<th>Directory</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;cwd&gt;/.dsh/routines/*.yaml</code></td>
+<td>Project routines (override global on name)</td>
+</tr>
+<tr>
+<td><code>~/.dsh/routines/*.yaml</code></td>
+<td>Global routines</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>name</code></td>
+<td>— (required)</td>
+<td><code>[a-z0-9][a-z0-9-]*</code>, ≤ 64 chars</td>
+</tr>
+<tr>
+<td><code>schedule</code></td>
+<td>— (required)</td>
+<td><code>0 2 * * *</code>, <code>@daily</code>, <code>@hourly</code>, <code>@weekly</code>, <code>@monthly</code>, <code>@yearly</code>, <code>every 4h</code>, <code>every 30m</code></td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td><code>UTC</code></td>
+<td>IANA zone for schedule math (never the host zone)</td>
+</tr>
+<tr>
+<td><code>prompt</code></td>
+<td>— (required)</td>
+<td>The task the headless run executes</td>
+</tr>
+<tr>
+<td><code>cwd</code></td>
+<td>operator cwd</td>
+<td>Working directory of the run; also where its digest lands</td>
+</tr>
+<tr>
+<td><code>profile</code></td>
+<td><code>headless</code></td>
+<td>DSH profile the run boots</td>
+</tr>
+<tr>
+<td><code>overlap</code></td>
+<td><code>skip</code></td>
+<td><code>skip</code> (never stack two agents on one repo), <code>queue</code> (run after the current one), <code>cancel-previous</code></td>
+</tr>
+<tr>
+<td><code>timeoutMin</code></td>
+<td><code>45</code></td>
+<td>Hard stop; a wedged 2am agent must not still hold the repo at 9am</td>
+</tr>
+<tr>
+<td><code>deliver</code></td>
+<td><code>[{type: file}]</code></td>
+<td>Digest delivery channels</td>
+</tr>
+</tbody></table>
+<p>Cron fields support <code>*</code>, step suffixes (<code>*/15</code>), ranges (<code>9-17</code>), lists (<code>0,30</code>), <code>?</code>, and month/day names. When both day-of-month and day-of-week are restricted, a day matches if either matches (Vixie cron semantics).</p>
+<p>Scheduler bookkeeping (paused set, last-run anchors) lives in <code>&lt;cwd&gt;/.dsh/routines/state.json</code>.</p>
+<h3>CLI</h3>
+<p><code>dsh --profile ops routines &lt;command&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>list</code></td>
+<td>routines with schedule, pause state, next run</td>
+</tr>
+<tr>
+<td><code>run &lt;name&gt;</code></td>
+<td>manual trigger (runs now; prints the digest and exits)</td>
+</tr>
+<tr>
+<td><code>pause &lt;name&gt;</code> / <code>resume &lt;name&gt;</code></td>
+<td>stop / restart scheduled runs</td>
+</tr>
+<tr>
+<td><code>logs &lt;name&gt; [--limit n]</code></td>
+<td>recent run records: status, duration, digest, session id</td>
+</tr>
+</tbody></table>
+<p>Run records are JSON files under <code>&lt;routine.cwd&gt;/.dsh/routines/runs/&lt;runId&gt;.json</code>, with a human-readable <code>&lt;runId&gt;.md</code> digest next to them. <code>run</code> is also the manual trigger for testing a routine before you trust its schedule.</p>
+<h3>Safety defaults</h3>
+<p>Scheduled agents run unattended, so each run subprocess is patched to:</p>
+<ul>
+<li><strong>Auto-deny anything that would prompt</strong> — the run overlay forces the approval policy to <code>never</code> (sandbox mode stays whatever the profile inherits, normally <code>workspace-write</code>). Denied requests are collected into the run record (<code>denied</code>) and surface in the digest.</li>
+<li><strong>Never schedule nested runs</strong> — the run overlay disables the scheduler row inside the run profile.</li>
+<li><strong>Never crash the scheduler</strong> — delivery failures, summarizer failures, and spawn failures are recorded on the run record, not thrown.</li>
+</ul>
+<p>Missed runs (laptop asleep): at most one catch-up run fires on wake, never a backlog replay.</p>
+<h3>Delivery</h3>
+<ul>
+<li><strong>file</strong> (always on): the run record + digest markdown under <code>.dsh/routines/runs/</code>.</li>
+<li><strong>chatnode</strong> (optional): digests are sent through a <code>ctx.chatnode</code> service (<code>{ send(input: { text, title? }): Promise&lt;void&gt; }</code>) when one is installed; otherwise the delivery is recorded as <code>not-installed</code> and the run still completes. A future <code>@dsh-cowork/chatnode-wechat</code> exposing that service lights this up automatically.</li>
+</ul>
+<h3>Architecture</h3>
+<p>One bundle, three plugins (+ a run driver), all installable as subpaths:</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>@dsh-routines/bundle/store</code></td>
+<td>watches <code>.dsh/routines/*.yaml</code> (project + global), validates, hot-reloads, owns durable state</td>
+</tr>
+<tr>
+<td><code>@dsh-routines/bundle/scheduler</code></td>
+<td>registers due routines on <code>ctx.jobs</code> (kind <code>routine</code>); owns overlap, missed-run, and timeout semantics</td>
+</tr>
+<tr>
+<td><code>@dsh-routines/bundle/cli</code></td>
+<td>the <code>dsh routines ...</code> command line</td>
+</tr>
+<tr>
+<td><code>@dsh-routines/bundle/run</code></td>
+<td>child-side driver injected into each one-shot run via a generated <code>--patch</code> overlay; writes the run record and digest</td>
+</tr>
+</tbody></table>
+<p>Runs boot <code>dsh --profile &lt;routine.profile&gt; --patch &lt;generated overlay&gt; -- &quot;&lt;prompt&gt;&quot;</code> with the routine&#39;s cwd as the workspace. The overlay disables the stock headless runner, mounts the <code>run</code> driver on the same task service, and forces the unattended approval policy — so the run keeps the full headless experience (fresh persisted session, provider selection) while writing the audit record only dsh-routines knows how to read.</p>
+<h3>Development</h3>
+<pre><code class="language-console">pnpm install
+pnpm build      # tsc -&gt; lib/
+pnpm test       # node --test (46 tests: cron, scheduler matrix, store, run, cli, e2e)
+</code></pre>
+<p>The e2e test boots a real <code>dsh</code> subprocess against a scripted mock LLM adapter (no network, no credentials) in a throwaway <code>DSH_HOME</code>, so the whole pipeline — store → scheduler → jobs → subprocess → run driver → digest → record — is exercised in CI.</p>
+<h3>Promo</h3>
+<p><code>promo/</code> holds a self-contained 60-second promo deck for screen recording: <code>slideshow.html</code> (keyboard-advanceable, 1280×720, no external assets) and <code>narration.txt</code> (a timed read-aloud script). Open <code>slideshow.html</code> and press <code>→</code>/<code>space</code> to advance.</p>
+<h3>Non-goals</h3>
+<p>Cloud execution (local machine only; the missed-run policy handles an asleep laptop honestly), routine marketplaces, sub-minute schedules.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-routines/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

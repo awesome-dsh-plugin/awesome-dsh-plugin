@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,200 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Jesse-njx/dsh-chatnode-wechat</pre><button type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-chatnode-wechat" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Chat with, monitor, and approve your DSH agents from WeChat.</strong></p>
+<p>A <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> bundle
+that connects a DSH profile to a WeChat personal account over Tencent&#39;s
+unofficial <strong>iLink bot gateway</strong> (<code>ilinkai.weixin.qq.com</code>) — the same
+mechanism hermes-agent and OpenClaw use. Text messages go both ways, session
+targeting works with <code>/sessions /use /new /stop /status</code>, permission requests
+are answered with <code>/yes</code> / <code>/no</code> right in the chat, and progress is reported
+as digest-style messages instead of a tool-call firehose.</p>
+<pre><code>你 (WeChat)  ⇄  iLink  ⇄  wechat-gateway  ⇄  wechat-conversation-node  ⇄  DSH agent session
+</code></pre>
+<p>The bundle ships <strong>two separable Cordis plugins</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>wechat-gateway</code> (<code>WechatGateway</code>)</td>
+<td>iLink service (<code>ctx.wechat</code>): QR login, authenticated long-poll, reconnect/backoff, send retry + rate-limit circuit, typing indicator, encrypted CDN media download.</td>
+</tr>
+<tr>
+<td><code>wechat-conversation-node</code></td>
+<td>WeChat ⇄ DSH bridge: allowlist gate, session targeting, commands, digest outbound (chunked + throttled), approvals.</td>
+</tr>
+</tbody></table>
+<h3>⚠️ Read this first</h3>
+<ul>
+<li><strong>One poller per account.</strong> iLink allows exactly ONE authenticated poller
+per bot token. If you also run <strong>hermes-agent</strong> or <strong>OpenClaw</strong> on the same
+WeChat account, one of them gets HTTP 403s and drops messages. Use a
+<strong>dedicated WeChat account</strong> for the agent, and never run two instances of
+this bundle against the same token.</li>
+<li><strong>Unofficial gateway.</strong> This rides the same unofficial mechanism as
+hermes/openclaw; Tencent could restrict the account. Again: use a dedicated
+account you are willing to lose.</li>
+<li><strong>Unofficial protocol.</strong> iLink details are reconstructed from hermes-agent
+source, not Tencent docs. Recorded transcripts live in
+<code>test/fixtures/inbound.ndjson</code> so CI never needs a live account.</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-sh">git clone https://github.com/Jesse-njx/dsh-chatnode-wechat.git
+cd dsh-chatnode-wechat
+pnpm install &amp;&amp; pnpm build
+dsh plugin --profile &lt;your-profile&gt; add .
+</code></pre>
+<p>Credentials are stored through the <strong>dsh credentials service</strong> — never in the
+patch file. Pair your WeChat account once:</p>
+<pre><code class="language-sh">pnpm login          # prints a QR URL; scan it with WeChat and confirm
+</code></pre>
+<p>This writes <code>WEIXIN_ACCOUNT_ID</code> / <code>WEIXIN_BOT_TOKEN</code> / <code>WEIXIN_BASE_URL</code> to
+<code>$DSH_HOME/.credentials.yaml</code> (via <code>dsh-credentials-local</code>). The bundle
+resolves them at boot and starts polling automatically.</p>
+<h3>Configuration</h3>
+<pre><code class="language-yaml"># profile patch (cordis.patch.yml)
+plugins:
+  dsh-chatnode-wechat:
+    allowFrom: [&quot;&lt;your-wechat-id&gt;&quot;]   # hard allowlist, REQUIRED, no default
+    digestIntervalSec: 300            # heartbeat summary while a turn runs
+    approvalTimeoutSec: 600           # approval prompt timeout → default deny
+    maxMessageChars: 2000             # WeChat bubble cap (protocol limit)
+    sendChunkDelayMs: 1500            # throttle between outbound bubbles
+    # cwd: /path/to/workspace         # working dir for `/new` sessions
+    # agentPreset: &lt;preset-name&gt;      # agent preset for `/new` sessions
+    # agentProvider / agentModel: ... # model route for `/new` agents
+</code></pre>
+<p><code>allowFrom</code> is <strong>mandatory with no permissive default</strong>: an agent that accepts
+instructions from any WeChat contact is a prompt-injection front door.
+Messages from non-allowlisted senders are logged and ignored — they are never
+fed to the model.</p>
+<h3>Usage</h3>
+<p>Send text to the bot. Everything is zero-config once one session exists —
+the <strong>most recent session</strong> is the default target.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>(plain text)</em></td>
+<td>routes to the active agent (<code>agent.followup</code>)</td>
+</tr>
+<tr>
+<td><code>/sessions</code></td>
+<td>numbered session list (most recent first)</td>
+</tr>
+<tr>
+<td><code>/use N</code></td>
+<td>switch the active session</td>
+</tr>
+<tr>
+<td><code>/new &lt;prompt&gt;</code></td>
+<td>create a fresh agent+session and start</td>
+</tr>
+<tr>
+<td><code>/stop</code></td>
+<td>cancel the active turn</td>
+</tr>
+<tr>
+<td><code>/status</code></td>
+<td>agent status + session summary</td>
+</tr>
+<tr>
+<td><code>/yes</code> <code>/no</code> (or <code>1</code>/<code>2</code> while one request is pending)</td>
+<td>answer a permission request</td>
+</tr>
+<tr>
+<td><code>/help</code></td>
+<td>command list</td>
+</tr>
+</tbody></table>
+<p>Outbound is digest-style, never a mirror of every tool call:</p>
+<ul>
+<li><code>⏳ 收到，开始处理…</code> when a turn starts,</li>
+<li>a one-line <code>🔄 仍在处理中…</code> heartbeat every <code>digestIntervalSec</code>,</li>
+<li>the assistant&#39;s actual text (chunked to <code>maxMessageChars</code>, throttled),</li>
+<li><code>❌ 出错…</code> / <code>⏹ 已停止</code> / <code>⚠️ 输出截断</code> on turn end,</li>
+<li><code>🔐 #N 需要你的确认</code> permission prompts, answered in-chat.</li>
+</ul>
+<h3>Approvals</h3>
+<p>WeChat personal accounts have no buttons. When a DSH permission request
+fires, the bridge renders it as a numbered text prompt and waits:</p>
+<pre><code>🔐 #1 需要你的确认
+工具: bash
+原因: run a destructive command
+回复 /yes 同意，/no 拒绝（仅一条待确认时也可回复 1/2）
+10 分钟内未回复将自动拒绝。
+</code></pre>
+<p><code>/yes</code> (or <code>1</code> while exactly one request is pending) grants <code>allowed-once</code>;
+<code>/no</code> (<code>2</code>) rejects; a timeout falls back to DSH&#39;s default <strong>deny</strong>. The
+bridge only answers requests for the agent currently driven by the WeChat
+user — anything else is delegated down the answerer chain.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm -r build
+pnpm --filter @dsh-cowork/chatnode-wechat test   # 35 tests, no WeChat account
+</code></pre>
+<ul>
+<li><code>test/fake-ilink-server.ts</code> implements the iLink endpoints (getupdates
+long-poll, sendmessage, sendtyping, getconfig, QR login, encrypted CDN) and
+replays <code>test/fixtures/inbound.ndjson</code>; the full
+inbound→session→outbound loop runs in CI.</li>
+<li><code>pnpm smoke</code> is the manual live-account script (set <code>WEIXIN_ALLOW_FROM</code>).</li>
+<li>Pin the dsh-base family (<code>@deepseek-ai/*</code> at <code>0.1.0-rc.6</code> in this repo) —
+DSH is a developer preview and upstream breaks are expected.</li>
+</ul>
+<h3>Risks</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>iLink exclusive lock</strong> — two pollers on one token → 403 + dropped messages</td>
+<td>Dedicated account; loud fatal error + polling stop on 403; documented coexistence warning</td>
+</tr>
+<tr>
+<td><strong>Account restriction</strong> — unofficial gateway</td>
+<td>Dedicated account; stated plainly in this README</td>
+</tr>
+<tr>
+<td><strong>DSH v0.1 churn</strong></td>
+<td>Pinned <code>@deepseek-ai/*</code> deps; CI against the pinned versions</td>
+</tr>
+<tr>
+<td><strong>Protocol opacity</strong></td>
+<td>Protocol ported from hermes-agent; fixtures recorded so refactors need no live account</td>
+</tr>
+</tbody></table>
+<h3>Roadmap</h3>
+<ul>
+<li><strong>v0.1 (this package)</strong>: QR login, text both directions, session targeting,
+commands, approvals, digests, allowlist.</li>
+<li><strong>v0.2</strong>: images/files both directions (inbound media download already
+shipped in the gateway), outbound voice replies.</li>
+<li><strong>v0.3</strong>: group chats (risk-heavy), multi-account, a hermesclaw-style
+shared-poller proxy so the bundle can coexist with hermes/openclaw.</li>
+<li><strong>Later</strong>: WeCom / DingTalk / Feishu bundles sharing the <code>node/</code> layer.</li>
+</ul>
+<h3>License</h3>
+<p>MIT — see <a href="https://github.com/Jesse-njx/dsh-chatnode-wechat/blob/main/LICENSE">LICENSE</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-chatnode-wechat/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,86 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:BiBoyang/dsh-im-bridge</pre><button type="button" data-cmd="dsh plugin --profile web add github:BiBoyang/dsh-im-bridge" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH（DeepSeek Harness）插件：把 DSH 桥接到 IM。v0.1 先落地微信（iLink 通道），架构上通道层（<code>src/ilink.ts</code> 协议客户端）与桥接层（<code>src/index.ts</code> 事件/批准/注入）分离，后续按同样模式接钉钉、飞书、Telegram。</p>
+<p>当前（微信通道）能力：在电脑上跑长任务，离开后用微信远程监控、批准、追加指令。</p>
+<ul>
+<li>DSH → 微信：turn 完成 / 出错 / 被阻塞、批准请求（含工具名与原因）实时推送</li>
+<li>微信 → DSH：回复文本注入绑定会话；回复「批准 / 拒绝」应答 pending approval；<code>/bind &lt;session&gt;</code> 切换绑定会话</li>
+<li>iLink 扫码登录，单用户白名单，消息去重、长回复分段、<code>..</code> / <code>!!</code> / 超时合并</li>
+</ul>
+<h3>差异化：为什么又一个微信桥</h3>
+<p>IM 桥方向已有一批竞品（dsh-chatnode-wechat、dsh2wechat、dsh-wechat-notify 等）。本插件不抢&quot;先做出来&quot;，而是把一个生产级微信 bot（AMClaw，Rust）在微信通道上踩过的坑完整移植到 DSH 插件形态：</p>
+<ul>
+<li><strong>消息去重是持久的</strong>：iLink 的轮询 cursor 不落盘，重启后全靠去重防重复回复。本插件用持久化去重表（跨重启有效）+ 内存 FIFO 双层判重，而不是只在内存里记 msg_id。</li>
+<li><strong>长回复分段是收敛的</strong>：微信单条消息有长度限制，按 1200 字符（Unicode 码点）拆分，分段前缀 <code>（i/n）</code> 的长度参与递归收敛，不会出&quot;第 3/2 段&quot;；某段发送失败即停后续段并持久化补发队列，避免乱序。</li>
+<li><strong><code>..</code> / <code>!!</code> / 超时合并</strong>：手机输入长指令天然分多条发。<code>..</code> 后缀=还有后续先别回，<code>!!</code> 后缀=说完了立即提交，裸文本进 5 秒合并窗口。缓冲会话每次写入即快照落盘，进程崩溃重启后自动恢复并 flush。</li>
+<li><strong>context_token 缓存</strong>：iLink 回复必须携带该用户最近的 context_token，双层缓存（内存 + 落盘）保证重启后仍能回复。</li>
+<li><strong>协议层容错</strong>：iLink 响应字段全部多候选 fallback（qrcode/cursor/msgs/message_id），异构消息宽松解析、单条失败跳过不炸整个轮询；登录确认后支持服务端下发的新 baseurl 运行时切换。</li>
+<li><strong>安全默认</strong>：approval 应答强制校验白名单 user_id + pending approval id 一一对应；微信消息只能进会话流，不能直接执行任意 shell。</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add &lt;本仓库目录&gt;
+# headless profile 需单独安装：
+dsh plugin --profile headless add &lt;本仓库目录&gt;
+</code></pre>
+<h3>使用</h3>
+<ol>
+<li>启动 DSH Web 后查看日志获取微信扫码链接，手机扫码完成登录</li>
+<li>扫码确认的用户自动成为白名单用户（也可在配置里显式指定 <code>allowedUserId</code>）</li>
+<li>微信里发消息即注入当前绑定会话；<code>/bind &lt;session-id&gt;</code> 切换；<code>/status</code> 查看状态</li>
+<li>agent 请求批准时收到推送，回复「批准」或「拒绝」</li>
+</ol>
+<h3>配置</h3>
+<p>在 profile 的 <code>cordis.patch.yml</code> 行上加 <code>config</code> 字段：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>allowedUserId</code></td>
+<td>空</td>
+<td>白名单微信用户 id；空时首个扫码确认的用户自动绑定</td>
+</tr>
+<tr>
+<td><code>mergeTimeoutSecs</code></td>
+<td>5</td>
+<td>消息合并窗口</td>
+</tr>
+<tr>
+<td><code>chunkMaxChars</code></td>
+<td>1200</td>
+<td>分段长度（字符）</td>
+</tr>
+<tr>
+<td><code>pollTimeoutSecs</code></td>
+<td>70</td>
+<td>iLink 长轮询超时</td>
+</tr>
+</tbody></table>
+<h3>安全红线</h3>
+<ul>
+<li>微信通道等于绕过本机批准体系：approval 应答必须来自白名单 user_id 且对应真实的 pending approval id</li>
+<li>token 不落库；不打印聊天内容明文以外的任何东西</li>
+<li>微信来的消息只能进会话流（<code>source.kind = &#39;plugin&#39;</code>），不能直接执行任意 shell</li>
+</ul>
+<h3>开发命令</h3>
+<pre><code class="language-bash">pnpm install
+pnpm build     # tsc，产物在 lib/（提交入库，git 安装不跑构建）
+pnpm test      # vitest
+</code></pre>
+<p>改完代码必须 <code>pnpm build</code> 并重启 DSH Web 才生效（ESM 缓存）。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/BiBoyang/dsh-im-bridge/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

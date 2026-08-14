@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,85 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-harness</pre><button type="button" data-cmd="dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-harness" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Community DeepSeek Harness (<code>dsh</code>) bundle for Nowledge Mem, published from the standalone <code>nowledge-co/nowledge-mem-deepseek-harness</code> repo and mirrored in <code>nowledge-co/community</code>.</p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-harness
+dsh web
+</code></pre>
+<p>For a local checkout of <code>nowledge-co/community</code>, run this from the repository root:</p>
+<pre><code class="language-sh">dsh plugin --profile web add ./nowledge-mem-deepseek-harness-plugin
+dsh web
+</code></pre>
+<p>Make sure the <code>nmem</code> CLI is on <code>PATH</code>, then verify:</p>
+<pre><code class="language-sh">nmem status
+nmem config mcp show --host deepseek-harness
+</code></pre>
+<p>The bundle connects to the local Mem MCP endpoint by default:</p>
+<pre><code class="language-text">http://127.0.0.1:14242/mcp/
+</code></pre>
+<p>For Nowledge Cloud or another remote Mem, set:</p>
+<pre><code class="language-sh">export NMEM_MCP_URL=&quot;https://&lt;workspace&gt;/mcp&quot;
+export NMEM_API_KEY=&quot;&lt;mem-api-key&gt;&quot;
+</code></pre>
+<h3>What It Does</h3>
+<ul>
+<li>Injects the Nowledge Mem Context Bundle once per DSH session through <code>agent/pre-step</code>.</li>
+<li>Runs prompt-time memory recall for continuation, release, regression, connector, plugin, and other recall-shaped prompts.</li>
+<li>Adds the Mem MCP server through DSH&#39;s <code>@deepseek-ai/dsh-mcp-client</code>, so tools appear as <code>mcp__nowledge_mem__...</code>.</li>
+<li>Imports the real DSH surface transcript after completed turns with <code>nmem t import --source deepseek-harness</code>.</li>
+<li>Stamps CLI imports with <code>NMEM_IMPORT_ORIGIN=deepseek-harness</code>.</li>
+</ul>
+<h3>Configuration</h3>
+<p>The bundle accepts these row config fields in a later <code>cordis.patch.yml</code> override:</p>
+<pre><code class="language-yaml">- id: nowledge-mem
+  config:
+    cliPath: nmem
+    sourceApp: deepseek-harness
+    importOrigin: deepseek-harness
+    contextOnSessionStart: true
+    recallOnPrompt: true
+    syncOnTurnEnd: true
+    recallLimit: 8
+    spaceId: my-space-id
+    agentId: deepseek-harness
+</code></pre>
+<p>Ambient variables also work:</p>
+<ul>
+<li><code>NMEM_SPACE</code></li>
+<li><code>NMEM_AGENT_ID</code></li>
+<li><code>NMEM_HOST_AGENT_ID</code></li>
+<li><code>NMEM_MCP_URL</code> or <code>NOWLEDGE_MEM_MCP_URL</code></li>
+<li><code>NMEM_API_KEY</code></li>
+</ul>
+<h3>Model Experience</h3>
+<h4>Startup Context</h4>
+<p>The model sees one plugin-sourced user message containing the current Nowledge Mem Context Bundle. It is marked as <code>form: &quot;snapshot&quot;</code> and reminds the model that it is cross-tool context, not an instruction override.</p>
+<h4>Prompt-Time Recall</h4>
+<p>When the user asks to continue, remember, review previous work, ship a release, debug a regression, or discuss connectors/plugins, the plugin calls:</p>
+<pre><code class="language-sh">nmem --json m search &quot;&lt;prompt&gt;&quot; -n 8
+</code></pre>
+<p>The model sees a bounded recall message with memory titles, source hints, scores, and content.</p>
+<h4>MCP Tools</h4>
+<p>Mem MCP tools are registered through DSH&#39;s MCP bridge under the <code>nowledge_mem</code> namespace. DSH currently bridges MCP tools only; MCP resources and prompts are not surfaced by the Harness client.</p>
+<h4>Thread Capture</h4>
+<p>After each completed DSH turn, the plugin serializes user, assistant, and tool-result events, skips its own injected context messages, and imports the transcript into Mem as <code>source=deepseek-harness</code>.</p>
+<h3>Known Limitations</h3>
+<ul>
+<li>DeepSeek Harness is in developer preview, so public package APIs may change.</li>
+<li>Historical DSH sessions are not backfilled by this package yet; it captures new sessions while the plugin is active.</li>
+<li>The DSH MCP bridge exposes tools only, so Nowledge Mem resources/prompts are not shown through MCP today.</li>
+<li>Turn capture depends on the local <code>nmem</code> CLI being available in the DSH process environment.</li>
+</ul>
+<h3>Community Position</h3>
+<p>The canonical public repository is <code>nowledge-co/nowledge-mem-deepseek-harness</code>, tagged with <code>dsh-plugin</code> for DeepSeek Harness ecosystem discovery. The <code>community</code> repository keeps a registry/index mirror for Nowledge Mem surfaces.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

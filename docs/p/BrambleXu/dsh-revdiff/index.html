@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,73 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:BrambleXu/dsh-revdiff</pre><button type="button" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-revdiff" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><img src="https://raw.githubusercontent.com/BrambleXu/dsh-revdiff/main/assets/hero.png" alt="dsh-revdiff hero"></p>
+<p>Native interactive diff review for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. The plugin reads a Git unified diff, parses it into files, hunks, and line locations, presents its own terminal review interface, and queues submitted annotations as the Agent&#39;s next durable follow-up turn.</p>
+<h3>Why this exists 💡</h3>
+<p>Reviewing a diff in a separate tool breaks the connection between the change, the review context, and the Agent that will act on the feedback. <code>dsh-revdiff</code> keeps review inside Harness, so annotations are created against the actual Git diff and returned to the same durable session.</p>
+<h3>Features ✨</h3>
+<ul>
+<li>Review tracked working-tree, staged, unstaged, or base-revision changes with optional path filters.</li>
+<li>Navigate between files, hunks, and diff lines from an interactive terminal.</li>
+<li>Add, edit, and delete issue, suggestion, question, or praise annotations.</li>
+<li>Submit structured annotations to the current Agent through <code>agent.followup()</code> with message provenance.</li>
+<li>Configure Git execution, diff context, size and time limits, terminal grace period, and comment length.</li>
+</ul>
+<h3>Install 📦</h3>
+<p>Add this checkout to a Harness profile:</p>
+<pre><code class="language-sh">dsh plugin --profile demo add ./dsh-revdiff
+</code></pre>
+<p>The only external runtime requirement is Git in the same execution world as Harness.</p>
+<h3>Use 🚀</h3>
+<pre><code class="language-text">/revdiff
+/revdiff --staged
+/revdiff --unstaged
+/revdiff main
+/revdiff --base main -- src/index.ts README.md
+</code></pre>
+<p>The default reviews all tracked working-tree changes against <code>HEAD</code>, including staged and unstaged changes. <code>--staged</code> reviews the index, <code>--unstaged</code> reviews only worktree changes relative to the index, and a base revision reviews the working tree against that revision. Put path filters after <code>--</code>.</p>
+<p>The Harness process must own an interactive terminal. The review interface supports:</p>
+<ul>
+<li><code>↑</code>/<code>↓</code> or <code>k</code>/<code>j</code>: move between diff lines</li>
+<li><code>n</code>/<code>p</code>: move between hunks</li>
+<li><code>]</code>/<code>[</code> or <code>→</code>/<code>←</code>: move between files</li>
+<li><code>a</code>: add an issue, suggestion, question, or praise annotation</li>
+<li><code>e</code>: edit the selected line&#39;s annotation</li>
+<li><code>d</code>: delete the selected line&#39;s annotation</li>
+<li><code>s</code>: submit annotations to the current Agent</li>
+<li><code>q</code>, Escape, or Ctrl-C: cancel without sending a message</li>
+</ul>
+<p>Annotations retain the file, old/new side, line number, selected code, kind, and comment. They are sent through <code>agent.followup()</code> with <code>dsh-revdiff</code> message provenance, so the review enters the same Harness session rather than an external side channel.</p>
+<h3>Configure ⚙️</h3>
+<p>Override the inserted row in a later Harness patch layer:</p>
+<pre><code class="language-yaml">- id: dsh-revdiff
+  name: dsh-revdiff
+  config:
+    gitBinary: git
+    contextLines: 3
+    maxDiffBytes: 2097152
+    diffTimeoutMs: 30000
+    graceMs: 2000
+    maxCommentLength: 4000
+</code></pre>
+<h3>Develop 🧑‍💻</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run check
+</code></pre>
+<h3>Scope 🎯</h3>
+<p>Version 0.1 reviews textual changes already represented by <code>git diff</code>. Untracked files, binary patches, side-by-side rendering, mouse input, and a browser-hosted review surface are not included yet. The review engine and annotation model are owned by this project so those capabilities can evolve for Harness without following another review tool&#39;s interface.</p>
+<h3>License 📄</h3>
+<p>MIT</p>
+<h3>Credits 🙏</h3>
+<p>The product idea is informed by <a href="https://github.com/badlogic/pi-diff-review"><code>pi-diff-review</code></a> and <a href="https://github.com/umputun/revdiff"><code>revdiff</code></a>, but this is an independent implementation built specifically around Harness commands, managed subprocesses, Agent lifecycle, and message provenance. It does not install, execute, wrap, or parse output from <code>revdiff</code>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/BrambleXu/dsh-revdiff/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

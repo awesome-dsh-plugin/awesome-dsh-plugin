@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,83 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:hellodigua/dsh-share</pre><button type="button" data-cmd="dsh plugin --profile web add github:hellodigua/dsh-share" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>简体中文 | <a href="https://github.com/hellodigua/dsh-share/blob/main/README.en.md">English</a></p>
+<p>把 DSH 中的一轮问答生成 PNG 图片，可直接复制到剪贴板或下载。</p>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-share/main/assets/readme/share-dialog.webp" alt="dsh-share 分享图片预览"></p>
+<h3>功能</h3>
+<ul>
+<li>在每轮回答末尾增加分享按钮，可复制或下载 PNG</li>
+<li>保留 Markdown、代码块、表格、图片和工具调用摘要</li>
+<li>可调整图片宽度和字号，长图支持滚动预览</li>
+<li>可勾选“不展示过程”，只保留提问和最终回答</li>
+</ul>
+<p>默认使用“平板 + 标准字号”，设置会自动保存在浏览器中。</p>
+<h3>安装</h3>
+<h4>从 GitHub tag 安装</h4>
+<p>建议固定版本，避免仓库后续更新改变已经安装的代码：</p>
+<pre><code class="language-sh">dsh plugin --profile web add \
+  --ignore-scripts --config.auto-install-peers=false \
+  &#39;github:hellodigua/dsh-share#v0.1.0&#39;
+</code></pre>
+<p>安装完成后重启 <code>dsh web</code>。</p>
+<h4>从本地 checkout 安装</h4>
+<pre><code class="language-sh">git clone https://github.com/hellodigua/dsh-share.git
+cd dsh-share
+
+dsh plugin --profile web add \
+  --ignore-scripts --config.auto-install-peers=false \
+  .
+</code></pre>
+<p>修改源码后先运行 <code>corepack pnpm build</code>，再强制刷新 profile 中的本地包：</p>
+<pre><code class="language-sh">corepack pnpm build
+
+dsh plugin --profile web add --force \
+  --ignore-scripts --config.auto-install-peers=false \
+  .
+</code></pre>
+<h4>从 <code>local-plugins</code> tarball 安装</h4>
+<p>仓库提交了预构建的 <code>lib/</code>，也可以打包成和 DSH <code>local-plugins</code> 目录中其他插件相同的 tarball：</p>
+<pre><code class="language-sh">corepack pnpm install --frozen-lockfile
+corepack pnpm verify
+mkdir -p ../local-plugins
+corepack pnpm pack --pack-destination ../local-plugins
+</code></pre>
+<p>然后安装生成的文件：</p>
+<pre><code class="language-sh">dsh plugin --profile web add \
+  --ignore-scripts --config.auto-install-peers=false \
+  /absolute/path/to/local-plugins/dsh-external-dsh-share-0.1.0.tgz
+</code></pre>
+<p>tarball 已包含浏览器构建产物，安装时不需要执行第三方构建脚本。</p>
+<h3>兼容性</h3>
+<p>当前版本面向 npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code>，DSH peers 声明为 <code>^0.1.0-rc.6</code>。本地开发使用精确 rc.6 类型包，部署时仍由 Web Profile 提供共享运行时。</p>
+<p>分享按钮通过官方 <code>conversation.chat.assistant-actions</code> 插槽挂载，并直接使用官方 Client 类型，不扫描或修改按钮栏 DOM。生成图片时会读取当前轮已经渲染的 <code>data-*</code> 节点，因此 DSH 调整对话内容结构后可能需要同步适配。</p>
+<h3>开发</h3>
+<p>项目不依赖本机 DSH checkout 即可安装依赖、运行测试和构建：</p>
+<pre><code class="language-sh">corepack pnpm install --frozen-lockfile
+corepack pnpm typecheck
+corepack pnpm test
+corepack pnpm build
+</code></pre>
+<p>也可以用一条命令执行完整检查：</p>
+<pre><code class="language-sh">corepack pnpm verify
+</code></pre>
+<p><code>lib/</code> 是 DSH 直接加载的交付物，需要和源码一起提交。修改 <code>src/</code> 后，请重新构建并确认 <code>lib/</code> 已同步更新。</p>
+<h3>已知限制</h3>
+<ul>
+<li>复制图片依赖浏览器 Clipboard API；权限不足时仍可下载 PNG。</li>
+<li>图片中的远程资源必须允许浏览器读取；无法读取的单个资源会用透明占位跳过，不影响整张 PNG 生成。</li>
+<li>超长图片在其他聊天软件中仍可能被整体缩放；插件弹窗只负责提供可滚动的清晰预览。</li>
+</ul>
+<h3>License</h3>
+<p>项目使用 <a href="https://github.com/hellodigua/dsh-share/blob/main/LICENSE">MIT</a> 许可证。浏览器 bundle 内联依赖的许可证见 <a href="https://github.com/hellodigua/dsh-share/blob/main/THIRD_PARTY_LICENSES.md">THIRD_PARTY_LICENSES.md</a>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/hellodigua/dsh-share/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

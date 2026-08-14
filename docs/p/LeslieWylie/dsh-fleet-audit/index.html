@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,112 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit</pre><button type="button" data-cmd="dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/LeslieWylie/dsh-fleet-audit/blob/main/README.en.md">English</a></p>
+<p><strong>DSH agent 舰队卫生审计插件</strong>：只读、零依赖、确定性。检查三件事，输出全程脱敏：</p>
+<ol>
+<li><strong>凭据文件权限</strong> —— 常用凭据文件（<code>~/.gitconfig</code>、<code>~/.netrc</code>、<code>~/.npmrc</code>、<code>~/.env</code>、<code>~/.ssh/</code>）应收紧为 <code>600</code>/《700<code>，组/其他可读一律标记为 </code>tooOpen`</li>
+<li><strong>git remote 内嵌凭据</strong> —— 扫描 <code>~/.gitconfig</code> 与给定目录下的 <code>.git/config</code>，识别 <code>https://user:pass@host</code>、<code>https://oauth2:TOKEN@host</code>、token 型用户名等；输出 URL 中凭据以 <code>***</code> 掩码，<strong>逐字节保证不泄露原文</strong></li>
+<li><strong>provider token 前缀字面量</strong>（可关）—— github / github-fine-grained / gitlab / gitlab-ci / slack / aws / openai / jwt 常见前缀，只报「类型 × 出现次数」</li>
+</ol>
+<h3>为什么</h3>
+<p>多 agent 时代的机器上，凭据散落在 <code>~/.gitconfig</code>、agent 配置、<code>.git/config</code> 与各种 <code>.env</code> 里。git 的 <code>url.*.insteadof</code> 或 <code>pushurl</code> 一旦嵌了 token（例如 <code>https://oauth2:&lt;token&gt;@gitlab.example.com/...</code>），任何 <code>git remote -v</code> 都会把密钥打印进日志/对话/CI。一键只读审计 + 脱敏输出，是安全基线体检的第一道。</p>
+<h3>安装</h3>
+<pre><code class="language-sh"># 本地验证
+dsh plugin --profile web add /path/to/dsh-fleet-audit
+
+# 发布后（npm / GitHub）
+dsh plugin --profile web add dsh-fleet-audit
+# 或
+dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit
+</code></pre>
+<p>安装后重启 <code>dsh web</code>，直接说「审计一下本机凭据卫生 / run fleet_audit」。</p>
+<h3>用法（工具参数）</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>roots</code></td>
+<td>string[]</td>
+<td>递归扫描 <code>.git/config</code> 的目录（可选；默认只查 <code>~/.gitconfig</code>）</td>
+</tr>
+<tr>
+<td><code>files</code></td>
+<td>string[]</td>
+<td>额外要查权限的凭据文件绝对路径</td>
+</tr>
+<tr>
+<td><code>scanSecrets</code></td>
+<td>boolean</td>
+<td>是否扫描 token 前缀字面量（默认 <code>true</code>）</td>
+</tr>
+<tr>
+<td><code>maxGitConfigs</code></td>
+<td>number</td>
+<td>git config 扫描上限（默认 200，上限 2000）</td>
+</tr>
+<tr>
+<td><code>maxDepth</code></td>
+<td>number</td>
+<td>目录递归深度（默认 5，上限 20）</td>
+</tr>
+</tbody></table>
+<h3>输出示例（脱敏）</h3>
+<pre><code class="language-jsonc">{
+  &quot;ok&quot;: true,
+  &quot;summary&quot;: { &quot;files&quot;: 5, &quot;tooOpen&quot;: 1, &quot;gitLeaks&quot;: 2, &quot;secretFiles&quot;: 1, &quot;issues&quot;: 4, &quot;scannedGitConfigs&quot;: 12 },
+  &quot;checks&quot;: {
+    &quot;credentialFiles&quot;: [
+      { &quot;path&quot;: &quot;/Users/alice/.gitconfig&quot;, &quot;exists&quot;: true, &quot;mode&quot;: &quot;644&quot;, &quot;tooOpen&quot;: true }
+    ],
+    &quot;gitRemoteLeaks&quot;: [
+      { &quot;file&quot;: &quot;/Users/alice/code/proj/.git/config&quot;, &quot;host&quot;: &quot;gitlab.example.com&quot;, &quot;maskedUrl&quot;: &quot;https://***:***@gitlab.example.com/group/proj.git&quot; }
+    ],
+    &quot;secrets&quot;: [
+      { &quot;file&quot;: &quot;/Users/alice/.gitconfig&quot;, &quot;providers&quot;: [ { &quot;provider&quot;: &quot;github&quot;, &quot;count&quot;: 1 } ] }
+    ]
+  },
+  &quot;note&quot;: &quot;Read-only audit; secret-like values are masked in the output. Fix permissions with chmod 600 and rotate any exposed credentials.&quot;
+}
+</code></pre>
+<h3>安全边界</h3>
+<ul>
+<li>只读：不写文件、不启进程、不访问网络、不保存状态</li>
+<li>脱敏：所有疑似凭据一律掩码；测试同时断言「输出 JSON 不含原始密钥」</li>
+<li>有界：git config 数量与递归深度均设上限，可防扫描失控</li>
+</ul>
+<h3>开发</h3>
+<pre><code class="language-sh">npm install
+npm run check   # typecheck + vitest + build
+</code></pre>
+<h3>已知局限</h3>
+<ul>
+<li>仅扫描文本类配置文件（不会解析加密存储、系统钥匙串、二进制文件）</li>
+<li>token 前缀识别为启发式规则：可能漏报（非常规前缀）或误报（需人工复核）</li>
+<li>默认只检查固定凭据列表；任意路径凭据请通过 <code>roots</code> / <code>files</code> 显式指定</li>
+<li>不主动修改任何文件；发现泄漏后请自行 <code>chmod 600</code> 并轮换密钥</li>
+</ul>
+<h3>回滚</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;p&gt; remove dsh-fleet-audit   # 或从 dsh.profile.bundles 删除该行
+</code></pre>
+<p>插件只读、无状态，卸载不影响任何用户数据。</p>
+<h3>独立社区插件</h3>
+<p>本项目为独立社区插件，与 DeepSeek 官方或其 DSH 仓库无隶属关系；&quot;official&quot;
+身份仅通过官方渠道授予。发布时会给仓库添加 <code>dsh-plugin</code> topic 以便发现。</p>
+<h3>许可</h3>
+<p>MIT © LeslieWylie</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LeslieWylie/dsh-fleet-audit/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

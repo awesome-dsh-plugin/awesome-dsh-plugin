@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,139 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:l541402398/dsh-file-uploads</pre><button type="button" data-cmd="dsh plugin --profile web add github:l541402398/dsh-file-uploads" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+<a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-4f46e5" alt="DeepSeek Harness"></a></p>
+<p>English | <a href="https://github.com/l541402398/dsh-file-uploads/blob/main/README.zh.md">简体中文</a></p>
+<p>Upload arbitrary local files from the DeepSeek Harness Web composer, attach their container paths to prompts, and manage stored uploads from Settings.</p>
+<h3>Features</h3>
+<ul>
+<li>Adds a <strong>Files</strong> button beside the existing composer controls.</li>
+<li>Accepts multiple arbitrary local files, not only images.</li>
+<li>Shows pending files as image-like cards above the composer.</li>
+<li>Keeps the text editor clean: no visible path or generated description is inserted into the draft.</li>
+<li>Serializes each hidden file reference into a model-readable absolute path only when the message is submitted.</li>
+<li>Clears pending cards after submission and restores them when submission fails.</li>
+<li>Stores every upload in one fixed directory, <code>$DSH_HOME/uploads</code> by default.</li>
+<li>Lists uploaded files in <strong>Settings → Uploaded files</strong>, with download and delete actions.</li>
+<li>Prevents overwrites by publishing duplicates as <code>name (1).ext</code>, <code>name (2).ext</code>, and so on.</li>
+<li>Enforces per-file and total-directory quotas.</li>
+</ul>
+<h3>Compatibility</h3>
+<ul>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code></li>
+<li>Web profile</li>
+<li>Node.js 22 or newer</li>
+</ul>
+<p>Harness currently transports native attachments as raster images only. This plugin intentionally uses the arbitrary-file path supported by the agent environment: it stores the file inside the Harness host/container and adds that path to the submitted text through the built-in input-reference serializer.</p>
+<h3>Install</h3>
+<p>Install the tagged GitHub release into the Web profile:</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:l541402398/dsh-file-uploads#v1.0.0&quot;
+</code></pre>
+<p>Restart the running Web profile after installation, then refresh the browser page.</p>
+<p>To install the latest development branch instead:</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:l541402398/dsh-file-uploads#main&quot;
+</code></pre>
+<p>To remove it:</p>
+<pre><code class="language-sh">dsh plugin --profile web remove dsh-file-uploads
+</code></pre>
+<h3>Use</h3>
+<ol>
+<li><p>Open a conversation in the Harness Web GUI.</p>
+</li>
+<li><p>Select <strong>Files</strong> in the composer toolbar.</p>
+</li>
+<li><p>Choose one or more local files.</p>
+</li>
+<li><p>Review or remove the pending cards above the composer.</p>
+</li>
+<li><p>Add any normal prompt text you want, or leave the editor empty.</p>
+</li>
+<li><p>Submit the message. The model receives a line such as:</p>
+<pre><code class="language-text">上传文件：`/path/to/.dsh/uploads/report.pdf`
+</code></pre>
+</li>
+</ol>
+<p>The generated line is never shown in the editor before submission. The stored path refers to the filesystem visible to the Harness host; in a Docker deployment, this is the path inside the container.</p>
+<h3>Settings</h3>
+<p>The plugin adds an <strong>Uploaded files</strong> section to Settings. It displays:</p>
+<ul>
+<li>the fixed storage directory;</li>
+<li>per-file and total-directory limits;</li>
+<li>current storage usage;</li>
+<li>file name, size, modification time, and absolute path;</li>
+<li>download and delete actions.</li>
+</ul>
+<p>Files persist until they are deleted manually.</p>
+<h3>Configuration</h3>
+<p>The plugin works without configuration. These environment variables override its defaults:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th align="right">Default</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DSH_UPLOAD_DIR</code></td>
+<td align="right"><code>$DSH_HOME/uploads</code></td>
+<td>Absolute upload directory.</td>
+</tr>
+<tr>
+<td><code>DSH_UPLOAD_MAX_BYTES</code></td>
+<td align="right"><code>104857600</code></td>
+<td>Maximum bytes per file (100 MiB).</td>
+</tr>
+<tr>
+<td><code>DSH_UPLOAD_TOTAL_MAX_BYTES</code></td>
+<td align="right"><code>1073741824</code></td>
+<td>Maximum total bytes in the directory (1 GiB).</td>
+</tr>
+</tbody></table>
+<p>Example Docker Compose fragment:</p>
+<pre><code class="language-yaml">services:
+  dsh:
+    environment:
+      DSH_UPLOAD_DIR: /data/dsh/uploads
+      DSH_UPLOAD_MAX_BYTES: 104857600
+      DSH_UPLOAD_TOTAL_MAX_BYTES: 1073741824
+    volumes:
+      - ./dsh-data:/data/dsh
+</code></pre>
+<h3>Security model</h3>
+<ul>
+<li>List, upload, download, and delete routes use the same loopback/trusted-host and Origin checks as the built-in Harness Web API.</li>
+<li>Cross-site browser requests are rejected.</li>
+<li>File names are normalized and stripped of path components and control characters.</li>
+<li>Downloads and deletions accept only regular files in the configured directory and do not follow symbolic links.</li>
+<li>Uploads are written to private temporary files, synced, and atomically published without overwriting existing files.</li>
+<li>Interrupted <code>.upload-*</code> temporary files are removed when the plugin starts.</li>
+<li>Unexpected server errors are logged without returning internal paths to the browser.</li>
+</ul>
+<p>This trust fence is not a user-account authentication system. If the Harness Web GUI is exposed to other users or the public Internet, protect the whole deployment with an authenticated reverse proxy and configure Harness trusted hosts correctly.</p>
+<h3>Development</h3>
+<p>Run the checks:</p>
+<pre><code class="language-sh">npm test
+npm run check
+</code></pre>
+<p>The package is a persistent dual-face Cordis bundle:</p>
+<ul>
+<li><code>index.js</code> — Host HTTP routes, storage, quotas, and trust checks.</li>
+<li><code>client.js</code> — composer button, pending-file rail, hidden reference codec, and Settings UI.</li>
+<li><code>cordis.patch.yml</code> — installable <code>dsh.bundle</code> composition row.</li>
+<li><code>test/upload-manager.test.js</code> — Host storage and security regression tests.</li>
+</ul>
+<p>See <a href="https://github.com/l541402398/dsh-file-uploads/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for local-link development instructions.</p>
+<h3>License</h3>
+<p><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,54 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber</pre><button type="button" data-cmd="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>A Codex-style <strong>turn cluster</strong> for the DeepSeek Harness Web GUI: a block of thin horizontal lines pinned to the right edge of the conversation, vertically centered. Each user turn is one line — idle lines are uniform, short and unobtrusive; hovering ripples them like a waveform; clicking a line smooth-scrolls to that turn.</p>
+<p>Ported from <a href="https://github.com/wsxwj123/claude-gui">claude-gui</a>&#39;s TurnScrubber idea, re-styled as a linear waveform per user preference.</p>
+<h3>Preview</h3>
+<h3>Behavior</h3>
+<ul>
+<li><strong>Idle</strong>: a cluster of equal-length short ticks (3–17px, growing gently with turn count), 6px off the window edge, faint — invisible while chatting.</li>
+<li><strong>Hover</strong>: a continuous Gaussian-falloff wave — the line nearest the pointer magnifies to 2.4× and brightens; neighbors taper 1.7× → 1.1× → 1×. The peak glides smoothly (fractional position, not per-line jumps).</li>
+<li><strong>Tooltip</strong>: after 220ms a summary card fades in (&quot;回合 N&quot; + the first 200 chars of the turn).</li>
+<li><strong>Click</strong>: rAF-eased smooth scroll to the turn&#39;s anchor row.</li>
+<li>The cluster is a fixed control, not a minimap: it does not map message positions and stays vertically centered while you scroll.</li>
+<li>Hidden on narrow viewports (&lt;768px) and on conversations with fewer than 2 turns.</li>
+</ul>
+<h3>How it works</h3>
+<ul>
+<li><strong>Data</strong>: reads the runtime session store — <code>ctx.sessions.list</code> tracks the active session; <code>ctx.sessions.binding(id).session</code> subscribes to the live chat snapshot. Turns come from <code>snapshot.chat.locations.turns</code> (turn → node keys); the summary is the first user/steering node&#39;s text, extracted safely from strings, Anthropic-style content-block arrays, or structured objects (never crashes on images/files).</li>
+<li><strong>DOM</strong>: the rail is a sibling of the <code>[data-conversation-scroll]</code> scrollport inside its relative parent, sized from layout offsets (<code>offsetTop</code>/<code>offsetHeight</code>, immune to CSS zoom). Click-jump anchors to DSH&#39;s native <code>[data-chat-anchor-key]</code> rows.</li>
+<li><strong>Scroll</strong>: programmatic <code>scrollIntoView({ behavior: &#39;smooth&#39; })</code> is unreliable in some webviews, so jumping uses a hand-rolled rAF cubic ease.</li>
+<li><strong>Client-only</strong>: the node half is a deliberate no-op stub; everything happens in the browser bundle.</li>
+</ul>
+<h3>Install</h3>
+<p>Clone the repository and install the package into a DSH Web profile:</p>
+<pre><code class="language-bash">git clone &lt;repository-url&gt;
+cd dsh-plugins
+dsh plugin --profile web add &quot;link:$PWD/packages/turn-scrubber&quot;
+</code></pre>
+<p>After installation, restart the existing <code>dsh web</code> process and refresh its current URL. Do not start a second replacement server.</p>
+<blockquote>
+<p>After any profile install, verify that <code>~/.dsh/profiles/web/node_modules/@deepseek-ai</code> was not created as a physical directory. DSH core packages must resolve through the profile fallback symlinks to preserve Cordis/Tool Symbol identity (see <a href="https://github.com/deepseek-ai/deepseek-harness/discussions/783">deepseek-harness discussion #783</a>).</p>
+</blockquote>
+<h3>Build</h3>
+<pre><code class="language-bash">pnpm install          # from the monorepo root
+pnpm build            # pnpm -r build → packages/turn-scrubber/lib/
+</code></pre>
+<p>The client bundle is built with the official DSH client-bundle preset shape (<code>window.__ModuleLoader__.load</code>), a purity gate that forbids non-platform <code>@deepseek-ai</code> value imports, and CSS Modules inlined as <code>&lt;style data-plugin&gt;</code> tags. Virtual ids are repo-relative — the built bundle contains no machine paths.</p>
+<h3>Known boundaries</h3>
+<ul>
+<li>The cluster overlays the message area&#39;s right padding (the chat column is centered); on narrow windows it may overlap text.</li>
+<li>Compaction removes anchors of compacted turns, so their markers disappear — expected DSH behavior.</li>
+<li>The rail is a per-conversation overlay for the active session.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/wsxwj123/dsh-plugins/blob/main/packages/turn-scrubber/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

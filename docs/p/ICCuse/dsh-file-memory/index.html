@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,67 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ICCuse/dsh-file-memory</pre><button type="button" data-cmd="dsh plugin --profile web add github:ICCuse/dsh-file-memory" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/ICCuse/dsh-file-memory/blob/main/README.zh.md">中文</a> | English</p>
+<p>File-backed working memory for long tasks. Two model-facing tools — <code>memorize</code> and <code>recall</code> — keep key premises as <strong>verbatim bytes</strong> in a session-scoped notes file inside the workspace, so they survive context compaction losslessly: a summarizer can blur or drop a fact, but a file round-trips it byte-exact.</p>
+<h3>Why</h3>
+<p>Compaction checkpoints are LLM-generated and LLM-rewritten generation after generation; the prompt-space &quot;state document&quot; proposals still re-summarize the previous state every pass. Files are the only lossless medium the agent already has: write once, read back exactly. This is the pragmatic complement to prompt-space compaction, usable today on the shipped <code>compaction-basic</code> backend.</p>
+<h3>Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>memorize(entries)</code></td>
+<td>Appends verbatim deduplicated lines to <code>&lt;workspace&gt;/.dsh-notes/&lt;session&gt;.md</code>.</td>
+</tr>
+<tr>
+<td><code>recall(query?)</code></td>
+<td>Reads the notes back, optionally filtered to lines containing <code>query</code>; caps output at <code>maxRecallChars</code>.</td>
+</tr>
+</tbody></table>
+<p>Both require an agent-backed session and a mounted <code>fs</code> service; they resolve the notes file relative to the session&#39;s workspace cwd (falling back to the backend default when the session has no cwd).</p>
+<h3>Config</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>maxRecallChars</code></td>
+<td><code>6000</code></td>
+<td>Recall output cap.</td>
+</tr>
+<tr>
+<td><code>notesDir</code></td>
+<td><code>.dsh-notes</code></td>
+<td>Notes directory name inside the workspace; must be a bare directory name.</td>
+</tr>
+</tbody></table>
+<p><code>maxRecallChars</code> must be an integer <code>&gt;= 1</code>; misconfiguration throws at plugin load.</p>
+<h3>Install</h3>
+<p>Not on npm yet - install from this repository:</p>
+<pre><code class="language-sh">npm install github:ICCuse/dsh-file-memory
+# or: pnpm add github:ICCuse/dsh-file-memory
+</code></pre>
+<p>Then mount the bundle (declared in package.json &#39;dsh.bundle&#39;):</p>
+<pre><code class="language-yaml">- id: dsh-file-memory
+  name: &#39;dsh-file-memory&#39;
+</code></pre>
+<p>Or, once published, &#39;dsh plugin --profile web add dsh-file-memory&#39;.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ICCuse/dsh-file-memory/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

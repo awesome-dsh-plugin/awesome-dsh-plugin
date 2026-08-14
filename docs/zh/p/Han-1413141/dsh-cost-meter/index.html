@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,249 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Han-1413141/dsh-cost-meter</pre><button type="button" data-cmd="dsh plugin --profile web add github:Han-1413141/dsh-cost-meter" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>DeepSeek Harness 会话费用统计插件(界面中英双语)</strong></p>
+<p>本会话费用 · 当日费用 · 预算与已用百分比 · 官方账户余额 · 历史记录 · 峰谷计价 · 官方价格一键同步</p>
+<p><a href="https://github.com/Han-1413141/dsh-cost-meter"><img src="https://img.shields.io/badge/version-1.2.0-4176E6" alt="version"></a>
+<a href="https://github.com/Han-1413141/dsh-cost-meter/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license"></a>
+<a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek%20Harness-dsh--plugin-4176E6" alt="dsh"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p><a href="https://github.com/Han-1413141/dsh-cost-meter/blob/master/README.en.md">English</a> | <strong>中文</strong></p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/promo.png" alt="宣传图"></p>
+<h3>功能总览</h3>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>位置</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>本会话费用</td>
+<td>输入区下方 / 会话标题栏</td>
+<td>实时累计费用 + 输入/缓存/输出 token,位置可配</td>
+</tr>
+<tr>
+<td>官方余额</td>
+<td>侧边栏顶部 / 设置页(可配)</td>
+<td>总余额 / 赠送 / 充值,自动刷新 + 手动刷新</td>
+</tr>
+<tr>
+<td>当日费用</td>
+<td>侧边栏底部(设置按钮上方)</td>
+<td>「今日 ¥x」,悬停见调用次数与 token 明细</td>
+</tr>
+<tr>
+<td>预算图框</td>
+<td>侧边栏底部(余额行与设置按钮之间)</td>
+<td>圆角方形图框:预算、已用%、进度条、今日费用与占预算%、已用/额度,≥80% 预警、≥100% 超支</td>
+</tr>
+<tr>
+<td>汇总卡片</td>
+<td>设置页</td>
+<td>今日 / 本月 / 累计费用与调用次数</td>
+</tr>
+<tr>
+<td>今日会话明细</td>
+<td>设置页</td>
+<td>每个会话的调用次数、输入/缓存/输出 token 与费用</td>
+</tr>
+<tr>
+<td>历史记录</td>
+<td>设置页</td>
+<td>按天汇总,保留天数可配(默认 180 天)</td>
+</tr>
+<tr>
+<td>预算设置</td>
+<td>设置页顶部</td>
+<td>额度、周期(今日/本月/累计/自定义日期区间)、已用%</td>
+</tr>
+<tr>
+<td>价格表</td>
+<td>设置页</td>
+<td>每模型 基础/谷时/峰时 三档价格,增删改自由</td>
+</tr>
+<tr>
+<td>峰谷计价</td>
+<td>设置页</td>
+<td>DeepSeek 官方峰谷方案,带生效时间门控与当前档位状态</td>
+</tr>
+<tr>
+<td>官方价格同步</td>
+<td>设置页</td>
+<td>抓取解析官方定价页,一键应用</td>
+</tr>
+<tr>
+<td>界面语言</td>
+<td>设置页 → 显示设置</td>
+<td>简体中文 / English / 跟随浏览器(自动);切换即时生效并自动保存</td>
+</tr>
+<tr>
+<td>AI 价格同步</td>
+<td><a href="https://github.com/Han-1413141/dsh-cost-meter/blob/master/docs/AI-PRICE-SYNC-PROMPT.md">提示词</a></td>
+<td>交给任意 AI 自主同步多模型、分时价格</td>
+</tr>
+</tbody></table>
+<h3>双语界面</h3>
+<p>插件界面(会话徽章、侧边栏余额与预算图框、设置页全部文案)支持<strong>简体中文</strong>与<strong>English</strong>:</p>
+<ul>
+<li>语言可选 <strong>简体中文</strong> / <strong>English</strong> / <strong>跟随浏览器(自动)</strong>;</li>
+<li>默认「跟随浏览器」:自动探测浏览器语言(<code>zh*</code> → 中文,其余 → 英文),并把探测结果写回配置,服务端消息(余额查询、价格同步等)与界面语言保持一致;</li>
+<li>在 <strong>设置 → 费用 → 显示设置 → 界面语言</strong> 中切换,切换后整个插件界面即时生效并自动保存;设置页左侧的分节标签也随之切换(费用 / Cost);</li>
+<li>服务端返回的提示(余额刷新、官方价格同步、配置校验错误等)同样按当前语言输出。</li>
+</ul>
+<h3>图文演示</h3>
+<blockquote>
+<p>截图均取自真实 DeepSeek Harness 实例,默认以中文界面展示;插件界面本身中英双语,可在设置中切换为 English。</p>
+</blockquote>
+<h4>主页面</h4>
+<p><strong>侧边栏底部</strong>(自上而下:官方余额 → 预算图框 → 设置按钮;关闭预算时余额仍显示在设置按钮上方):</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-sidebar-footer.png" alt="侧边栏底部"></p>
+<ul>
+<li>余额行显示官方开放平台总余额,悬停可见赠送/充值拆分;</li>
+<li>启用预算后,圆角方形图框显示「预算 · 已用% · 进度条 · 今日费用与占预算% · 已用/额度」;窄栏(rail)模式收窄为百分比方块;</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-budget-box.png" alt="预算图框"></p>
+<ul>
+<li>未启用预算时,该位置显示「今日 ¥x」徽章。</li>
+</ul>
+<p><strong>本会话费用</strong>(两个位置,可在设置中切换):</p>
+<table>
+<thead>
+<tr>
+<th>输入区下方</th>
+<th>会话标题栏</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-session-dock.png" alt="会话 dock"></td>
+<td><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-session-header.png" alt="会话标题栏"></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>上图:本会话 ¥5.5939 · 输入 321K · 缓存 119M · 输出 235K;右图:标题栏徽章「费用 ¥6.1606」(真实会话截图)</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-session.png" alt="会话页"></p>
+<h4>设置 → 费用</h4>
+<p><strong>概览</strong>(预算 → 余额 → 汇总卡片 → 今日会话 → 历史记录 → 显示设置 → 价格表 → 数据与同步):</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-settings.png" alt="设置页"></p>
+<p><strong>预算面板</strong>(顶部,含自定义日期区间):</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-budget-panel.png" alt="预算"></p>
+<p><strong>余额面板</strong>(总余额/赠送/充值 + 手动刷新):</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-balance-panel.png" alt="余额"></p>
+<p><strong>汇总卡片</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-cards.png" alt="卡片"></p>
+<p><strong>今日会话 / 历史记录</strong>(输入、缓存、输出 token 分列):</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-table-1.png" alt="今日会话"> <img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-table-2.png" alt="历史记录"></p>
+<p><strong>价格表</strong>(基础/谷时/峰时三档,美元 / 1M tokens):</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-price-card.png" alt="价格表"></p>
+<p><strong>数据与同步</strong>(配置即时自动保存 + 官方价格同步 + 清除历史):</p>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/screenshot-sync.png" alt="同步"></p>
+<h3>安装</h3>
+<blockquote>
+<p>需求:Node.js ≥ 20 + DeepSeek Harness(带 <code>dsh plugin</code> 命令的版本,<code>npm install -g @deepseek-ai/dsh</code>)。</p>
+</blockquote>
+<h4>一键安装(推荐)</h4>
+<p><strong>PowerShell 一键脚本</strong>(复制整行粘贴回车;自动补齐 pnpm、自动探测 git,无需克隆仓库):</p>
+<pre><code class="language-powershell">irm https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/install.ps1 | iex
+</code></pre>
+<p><strong>或直接命令行</strong>(机器上需已有 pnpm 与 git):</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:Han-1413141/dsh-cost-meter
+</code></pre>
+<p>没有 git 时可用 GitHub 打包直链(更新时先 remove 再 add):</p>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/Han-1413141/dsh-cost-meter/archive/refs/heads/master.tar.gz
+</code></pre>
+<p>安装后<strong>重启</strong> <code>dsh web</code>(插件行、Typert 清单与客户端 bundle 均在启动时扫描):</p>
+<pre><code class="language-sh">dsh web
+</code></pre>
+<h4>更新 / 卸载</h4>
+<pre><code class="language-sh">dsh plugin --profile web update dsh-cost-meter  # 更新到最新提交(git 方式;或重跑一键脚本)
+dsh plugin --profile web remove dsh-cost-meter  # 卸载
+</code></pre>
+<h4>开发者本地调试</h4>
+<pre><code class="language-sh">git clone https://github.com/Han-1413141/dsh-cost-meter.git
+cd &lt;克隆目录的父目录&gt;
+dsh plugin --profile web add link:./dsh-cost-meter  # 符号链接,改 lib/client.js 后刷新页面即生效
+</code></pre>
+<h3>计费规则</h3>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/diagram-pricing.zh.svg" alt="计费规则与峰谷计价"></p>
+<ul>
+<li>价格单位与官方文档一致:<strong>美元 / 1M tokens</strong>;</li>
+<li>成本 = 未命中输入 × cache-miss + 输出 × output + (缓存读 + 缓存写) × cache-hit(缓存写沿用官方历史规则按命中价计费);</li>
+<li><strong>峰谷计价按时点门控</strong>:<code>peakEffectiveAt</code>(默认 2026-08-16 16:00 UTC)之前一律按基础价格;之后峰时段(01:00–04:00、06:00–10:00 UTC)按峰时价、其余按谷时价;设置页实时显示当前档位(未生效/峰时段/谷时段);</li>
+<li>账本金额恒以<strong>美元</strong>存储,币种/汇率仅影响显示(默认 1 USD = 7.2 CNY,可改);</li>
+<li>会话徽章按当前档位<strong>估算</strong>,当日/月度/累计与预算为按调用实际时刻<strong>精确计费</strong>;</li>
+<li>计费来源为每次模型调用的 usage 块(含子代理、压缩、标题等辅助调用),与账单口径一致;</li>
+<li>预算与超支提示<strong>仅提醒,不阻止调用</strong>。</li>
+</ul>
+<h3>数据存储</h3>
+<ul>
+<li>账本:<code>$DSH_HOME/storages/cost-meter/ledger.json</code>(原子写入 + 2 秒防抖;按 <code>historyDays</code> 保留,每日最多 200 个会话明细);</li>
+<li>所有设置修改<strong>即时自动保存</strong>(600ms 防抖),无需手动保存;</li>
+<li>删除账本文件即可清零,或使用设置页「清除全部历史」。</li>
+</ul>
+<h3>架构</h3>
+<p><img src="https://raw.githubusercontent.com/Han-1413141/dsh-cost-meter/master/docs/diagram-architecture.zh.svg" alt="架构与数据流"></p>
+<pre><code>dsh-cost-meter
+├── cordis.patch.yml        # bundle 补丁:向 web profile 插入 cost-meter 行
+├── install.ps1             # 一键安装/更新脚本(irm … | iex)
+├── .github/workflows/      # CI:install-smoke 一键安装冒烟验证
+├── package.json            # dsh.bundle 补丁声明 + dsh.client 浏览器声明
+└── lib/
+    ├── index.js            # 宿主插件:llm/stream 计费包裹、costUsage 会话投影、
+    │                       #   costMeter 服务(手写 typertRemote 绑定)、余额查询
+    ├── pricing.js          # 官方价格表、官方页面 HTML 解析、峰谷计费数学
+    ├── store.js            # 账本持久化与配置管理($DSH_HOME/storages/cost-meter)
+    ├── typert.host.js      # ./typert 导出:Typert 清单(typert-loader 自动注册)
+    └── client.js           # ./client 导出:浏览器单文件 bundle(徽章/图框/设置页)
+</code></pre>
+<p>数据通道:</p>
+<ul>
+<li><strong>本会话费用</strong>:宿主注册 <code>costUsage</code> 会话投影(纯 token 桶 + 按模型拆分),浏览器经 <code>useProjection(&#39;costUsage&#39;)</code> 读取并按当前价格表计价;</li>
+<li><strong>全局账本 / 预算 / 余额 / 配置</strong>:<code>costMeter/getState | updateConfig | fetchPrices | refreshBalance | resetHistory</code>,经 Typert 网关 RPC(<code>remote.costMeter.*</code>);</li>
+<li><strong>余额</strong>:调用官方 <code>GET {baseURL}/user/balance</code>,复用模型请求的同一把 API Key(凭证服务/环境变量),进程内缓存按 <code>refreshMinutes</code> 过期。</li>
+</ul>
+<p>插件不导入 cordis/dsh 的 Service/Context 运行时类(仅 Node 内建模块、zod、dsh-home-paths、dsh-credentials 的纯函数),与宿主共享同一运行时实例,无重复依赖风险。</p>
+<h3>官方价格同步原理</h3>
+<p><code>fetchPrices</code> 抓取官方定价页(Docusaurus 服务端预渲染),解析:</p>
+<ol>
+<li>基础价格表(转置布局:首行 MODEL + 模型 id,价格行标签后紧跟价格);</li>
+<li>峰谷价格表(每模型两行:OFF-PEAK / PEAK);</li>
+<li>生效时间(take effect at …)与峰时段窗口(Peak hours are …)。</li>
+</ol>
+<p>解析结果写入价格表并持久化;页面结构变化时同步报错并保留原价格,可手动编辑兜底。</p>
+<h3>AI 价格同步</h3>
+<p><a href="https://github.com/Han-1413141/dsh-cost-meter/blob/master/docs/AI-PRICE-SYNC-PROMPT.md">docs/AI-PRICE-SYNC-PROMPT.md</a>(中文)与 <a href="https://github.com/Han-1413141/dsh-cost-meter/blob/master/docs/AI-PRICE-SYNC-PROMPT.en.md">docs/AI-PRICE-SYNC-PROMPT.en.md</a>(English) 提供可直接复制给任意 AI 的提示词:
+AI 自主读取官方定价 → 输出多模型、分时(基础/谷时/峰时 + 生效时间)价格 JSON → 人工核对后应用(设置页 / RPC / 文件三选一)。适合官方价格变动时自主同步。</p>
+<h3>开发与验证</h3>
+<pre><code class="language-sh">corepack pnpm install                                   # 依赖
+node --check lib/index.js &amp;&amp; node --check lib/pricing.js \
+  &amp;&amp; node --check lib/store.js &amp;&amp; node --check lib/typert.host.js \
+  &amp;&amp; node --check lib/client.js                         # 语法检查
+node test/verify.mjs                                    # 纯模块验证(解析/计费/账本/配置)
+node test/mock-balance.mjs                              # (可选)本地余额接口模拟:3101
+dsh --profile web --dump-config                         # 组合树校验
+dsh --profile web --port 3099                           # 真机启动(观察启动日志与 UI)
+</code></pre>
+<h3>已知限制</h3>
+<ul>
+<li>官方页面解析依赖当前页面结构;改版后「从官方文档同步价格」会报错,可手动编辑价格表兜底;</li>
+<li>会话徽章按当前价格档位估算,精确费用以账本为准;</li>
+<li>价格同步会覆盖官方页面列出的同名模型价格,自定义模型条目不受影响;</li>
+<li>余额查询需要可访问 api.deepseek.com 的网络与有效 API Key;</li>
+<li>安装/更新插件后需重启 <code>dsh web</code> 生效。</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/Han-1413141/dsh-cost-meter/blob/master/LICENSE">MIT</a> © 2026 dsh-cost-meter contributors</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Han-1413141/dsh-cost-meter/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

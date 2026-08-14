@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,243 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:hccccc01333/dsh-excel-chat</pre><button type="button" data-cmd="dsh plugin --profile web add github:hccccc01333/dsh-excel-chat" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://www.npmjs.com/package/dsh-excel-chat"><img src="https://img.shields.io/npm/v/dsh-excel-chat" alt="npm version"></a>
+<a href="https://github.com/hccccc01333/dsh-excel-chat/releases"><img src="https://img.shields.io/github/v/release/hccccc01333/dsh-excel-chat" alt="GitHub release"></a>
+<a href="https://github.com/hccccc01333/dsh-excel-chat/blob/master/LICENSE"><img src="https://img.shields.io/github/license/hccccc01333/dsh-excel-chat" alt="license"></a></p>
+<p><img src="https://raw.githubusercontent.com/hccccc01333/dsh-excel-chat/master/assets/banner.png" alt="dsh-excel-chat banner"></p>
+<p>在 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 里用自然语言
+操作 Excel：说一句“给 D 列加毛利公式、表头加粗、冻结首行、加筛选”，agent 会自动
+调用 <code>excel_operate</code> 完成；每次编辑后自动体检公式有没有被弄坏，也可以让它
+“检查这个表哪里算错了”并自动修复。所有工作都在对话里完成，不需要记 Excel 操作。</p>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile demo add dsh-excel-chat          # 从 npm 安装
+dsh plugin --profile demo add ./bundle                # 或本地 bundle 目录
+</code></pre>
+<p>装完直接聊，例如：</p>
+<blockquote>
+<p>帮我把 report.xlsx 做成报表：D 列是毛利（收入减成本），E 列加合计，
+表头加粗填浅灰，冻结第一行，加筛选。</p>
+</blockquote>
+<blockquote>
+<p>检查 sales.xlsx 里 D 列公式是不是每行都是“收入-成本”，不对的帮我修掉。</p>
+</blockquote>
+<p>完整使用指南见 <a href="https://github.com/hccccc01333/dsh-excel-chat/blob/master/docs/usage.md">docs/usage.md</a>，岗位用法（运营/产品/数分）见
+<a href="https://github.com/hccccc01333/dsh-excel-chat/blob/master/docs/roles.md">docs/roles.md</a>。</p>
+<h3>给使用者：一分钟上手</h3>
+<p>前提：已安装 DeepSeek Harness（<code>dsh</code> CLI 或桌面端）。</p>
+<pre><code class="language-sh">dsh plugin --profile demo add dsh-excel-chat      # 从 npm 安装
+# 或从 GitHub 安装：
+# dsh plugin --profile demo add github:hccccc01333/dsh-excel-chat
+dsh web --profile demo                             # 打开对话界面
+</code></pre>
+<p>然后在对话里直接说：</p>
+<ul>
+<li>“帮我把 report.xlsx 做成报表：D 列毛利、E 列合计、表头加粗、冻结首行、加筛选”</li>
+<li>“检查 sales.xlsx 的 D 列公式有没有错，不对的修掉”</li>
+<li>“按区域生成透视表，金额合计，再生成柱状图”</li>
+</ul>
+<p>平台说明：公式校验/修复、读写单元格、样式、汇总、合并、邮件合并等功能跨平台；
+图表创建/改参、原生透视表、图表 PNG 导出需要 Windows + 本机安装 Excel。</p>
+<p>锁定版本：<code>dsh plugin --profile demo add dsh-excel-chat@0.23.0</code>（不写版本默认 latest）。</p>
+<h3>工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>excel_validate_formulas</code></td>
+<td>静默公式错误检测：列 pattern 偏移、结构不匹配、hardcode、空行、循环引用、<code>#REF!</code>/<code>#DIV/0!</code> 等错误值</td>
+</tr>
+<tr>
+<td><code>excel_compile_formula</code></td>
+<td>Formula IR（binary / ratio / aggregate / function：VLOOKUP、IF、XLOOKUP、统计、日期等）→ 确定性 Excel 公式</td>
+</tr>
+<tr>
+<td><code>excel_read</code></td>
+<td>精确读取：值/公式/类型/数字格式/字体/填充/对齐/合并/数据有效性，编辑前看清单元格状态</td>
+</tr>
+<tr>
+<td><code>excel_profile</code></td>
+<td>大表速览：识别表头、每列类型/缺失/唯一值/数值区间/高频值/样例，给出建议读取范围；配合 <code>excel_read</code> 的 <code>maxRows</code> 分页，避免整表灌入对话爆 token</td>
+</tr>
+<tr>
+<td><code>excel_undo</code></td>
+<td>按 <code>excel_operate</code> 自动生成的 <code>.patch.json</code> 审计日志回滚编辑</td>
+</tr>
+<tr>
+<td><code>excel_repair_formulas</code></td>
+<td>确定性修复 + 可选 LLM 修复（<code>useLlm</code> / <code>autoTable</code> / <code>oraclePath</code> / <code>outPath</code>），输出修复副本并复验</td>
+</tr>
+<tr>
+<td><code>excel_autofix</code></td>
+<td>一键自愈闭环：体检 → 确定性修复（可选 LLM）→ 复检 → 人话汇报，输出修复副本</td>
+</tr>
+<tr>
+<td><code>excel_diff_workbook</code></td>
+<td>两个 workbook 的单元格级 diff</td>
+</tr>
+<tr>
+<td><code>excel_operate</code></td>
+<td>精细化 Excel 操作：写值、填充/序列、行列增删、复制/移动、排序、<code>report</code> 一键报表模板（排序+汇总+动态透视+筛选+样式+冻结+格式）、分类汇总、动态透视报表、高级筛选、样式（字号/字体/边框）、数据有效性、条件格式（数据条/色阶/图标集）、自动筛选、结构化表格、页面设置、命名区域、冻结窗格、查找替换、工作表保护（细化权限）、邮件合并、工作表管理、合并、数据清洗（去重/填充缺失/删空行空列/去空格/大小写转换/分列）；操作后自动复验公式并写审计日志</td>
+</tr>
+<tr>
+<td><code>excel_validate_charts</code></td>
+<td>图表结构校验：类型、系列、缺失单元格、二维范围、日期排序</td>
+</tr>
+<tr>
+<td><code>excel_validate_charts_visual</code></td>
+<td>Excel 导出 PNG + 视觉 LLM 评审</td>
+</tr>
+<tr>
+<td><code>excel_export_charts</code></td>
+<td>用本地 Excel 把图表导出为 PNG（Windows）</td>
+</tr>
+<tr>
+<td><code>excel_create_chart</code></td>
+<td>用本地 Excel 创建图表：数据范围、类型、标题（Windows）</td>
+</tr>
+<tr>
+<td><code>excel_modify_chart</code></td>
+<td>修改图表参数：类型、标题、图例、坐标轴（Windows）</td>
+</tr>
+<tr>
+<td><code>excel_create_pivot</code></td>
+<td>原生数据透视表（pivotCache + pivotTable）：多行字段、列字段、报表筛选器 + 值字段（求和/计数/平均/最大/最小），Excel 生成、可刷新（Windows）</td>
+</tr>
+</tbody></table>
+<p>生态功能整合对照（复刻了哪些主流 AI + Excel 方案的效果）见
+<a href="https://github.com/hccccc01333/dsh-excel-chat/blob/master/docs/ecosystem-parity.md">docs/ecosystem-parity.md</a>。</p>
+<h3>Modules</h3>
+<ul>
+<li><code>src/formula.ts</code> — A1 reference parser (cell, range, cross-sheet, whole-column), canonical cell ids, column helpers.</li>
+<li><code>src/graph.ts</code> — dependency graph with bounded range expansion and cycle detection.</li>
+<li><code>src/patterns.ts</code> — per-column reference-pattern analysis: offset anomalies, structure mismatches, hardcode breaks, empty gaps.</li>
+<li><code>src/validator.ts</code> — <code>validate(cells)</code> entry point returning graph + column reports + anomalies.</li>
+<li><code>src/ir.ts</code> — Formula IR 类型（binary / ratio / aggregate）。</li>
+<li><code>src/ir-schema.ts</code> — Formula IR 的 dsh 工具 DSL schema（严格 oneOf 校验）。</li>
+<li><code>src/compiler.ts</code> — <code>compileFormula(ir, { baseCell, table })</code> 编译为 Excel 公式。</li>
+<li><code>src/advisor.ts</code> — LLM 修复顾问：异常 + 表结构 → prompt → IR 修复 → Patch。</li>
+<li><code>src/llm.ts</code> — <code>llmTextFromContext</code>：把 <code>ctx.llm</code> 流式服务接入修复顾问（可选注入）。</li>
+<li><code>src/diff.ts</code> — Workbook Diff 与 Patch Log：diff / apply / rollback。</li>
+<li><code>src/charts.ts</code> / <code>src/chart-validator.ts</code> — xlsx 图表 XML 解析与结构校验。</li>
+<li><code>src/chart-visual.ts</code> — Excel COM 图表创建/参数修改/导出 + 可注入视觉评审（VLM 接口）。</li>
+<li><code>src/vision.ts</code> — <code>visionTextFromContext</code>：把 <code>ctx.attachments</code> + <code>ctx.llm</code> 接成视觉评审。</li>
+<li><code>src/deepseek.ts</code> — DeepSeek chat completions 客户端（读 <code>DEEPSEEK_API_KEY</code>），接修复顾问。</li>
+<li><code>src/patch.ts</code> — 最小补丁抽象：apply / revert / 写回 workbook。</li>
+<li><code>src/repair.ts</code> — 从验证结果生成确定性修复（引用偏移 + 空行填充），写出
+<code>.repaired.xlsx</code> 并复验；可选传入 oracle cells 返回 <code>oracleScore</code>。</li>
+<li><code>src/workbook.ts</code> — ExcelJS-based workbook reader: <code>.xlsx</code> → cell-content map, and <code>validateWorkbookFile(path)</code>.</li>
+<li><code>src/tables.ts</code> — <code>detectTableFromCells</code>：从单元格内容推断 <code>{ sheet, columns }</code>，
+供 <code>excel_repair_formulas</code> 的 <code>autoTable</code> 自动识别表头。</li>
+<li><code>src/score.ts</code> — <code>scoreWorkbookAgainstOracle</code>：oracle 单元格级判分，容忍公式
+大小写/空白与数字格式差异，输出准确率与 mismatch 明细。</li>
+<li><code>src/read.ts</code> — <code>readWorkbookDetail</code>：精确读取单元格（值/公式/类型/格式/合并/
+数据有效性），供 <code>excel_read</code> 工具使用。</li>
+<li><code>src/profile.ts</code> — <code>profileWorkbook</code>：结构化表格编码（借鉴 SpreadsheetLLM
+思路），输出每表/每列的紧凑画像与建议读取范围，供 <code>excel_profile</code> 工具使用。</li>
+<li><code>src/autofix.ts</code> — <code>autofixWorkbookFile</code>：体检 → 修复 → 复检 → 人话总结的
+一键自愈闭环（借鉴 SheetMind 反思思路），供 <code>excel_autofix</code> 工具使用。</li>
+<li><code>src/pivot.ts</code> — <code>createPivotTable</code>：驱动 Excel COM 生成原生数据透视表
+（pivotCache + pivotTable），保证文件始终合法可打开。</li>
+<li><code>src/operation-schema.ts</code> — <code>excel_operate</code> 的 27 操作严格判别联合 schema，
+让模型按 <code>op</code> 字段直接生成正确结构。</li>
+<li><code>src/operations.ts</code> — Excel 操作 DSL：set（自动类型识别）/ fill / fillSeries /
+insertRows / deleteRows / insertColumns / deleteColumns（公式引用联动，含跨表，
+被删单元格引用转 <code>#REF!</code>）/ sortRange（多键排序）/ copyRange / moveRange /
+style / dataValidation（下拉与数值校验）/ conditionalFormatting / setColumnWidth /
+autoFilter / addTable（结构化表格）/ setRowHeight / freezePanes / findReplace /
+addSheet / renameSheet / deleteSheet / duplicateSheet / hideSheet / setTabColor /
+clear / merge / unmerge。</li>
+<li><code>src/benchmark.ts</code> — Pass@1 benchmark：确定性修复 → LLM 修复，与 oracle 对比判分。</li>
+<li><code>src/benchmark-cases.ts</code> — 11 个 benchmark 任务：范围端点、绝对引用、空行、
+跨表、多表、聚合结构、hardcode 等场景。</li>
+<li><code>src/index.ts</code> — dsh plugin entry exposing eight tools（validate / compile / repair / diff / operate / chart structure / chart export / chart visual）。</li>
+<li><code>bundle/</code> — 可发布 dsh bundle：manifest + cordis.patch.yml + 编译产物。</li>
+</ul>
+<h3>Run tests</h3>
+<pre><code class="language-sh">node --test tests/formula-validator.test.ts
+node --test tests/compiler.test.ts
+node --test tests/workbook-reader.test.ts
+node --test tests/patch.test.ts
+node --test tests/repair.test.ts
+node --test tests/ir-schema.test.ts
+node --test tests/advisor.test.ts
+node --test tests/llm-wiring.test.ts
+node --test tests/diff.test.ts
+node --test tests/chart-validator.test.ts
+node --test tests/load-bundle.test.ts
+node --test tests/chart-visual.test.ts
+node --test tests/pack-bundle.test.ts
+node --test tests/vision-wiring.test.ts
+node --test tests/deepseek.test.ts
+node --test tests/tables.test.ts
+node --test tests/score.test.ts
+node --test tests/benchmark.test.ts
+</code></pre>
+<p>真实模型端到端：</p>
+<pre><code class="language-sh">node tests/invoke-real-llm.ts
+node tests/invoke-conversation.ts   # 对话直用：自然语言 -&gt; 工具调用 -&gt; 执行 -&gt; 复验
+</code></pre>
+<p>Pass@1 benchmark（确定性修复 + 可选 LLM）：</p>
+<pre><code class="language-sh">node tests/invoke-benchmark.ts                 # 仅确定性路线
+VERA_BENCH_LLM=1 node tests/invoke-benchmark.ts # 接真实 DeepSeek
+</code></pre>
+<p>构建并安装 bundle：</p>
+<pre><code class="language-sh">npm run build:bundle
+dsh plugin --profile demo add ./bundle
+</code></pre>
+<p>发布 bundle（可选，本地打包）：</p>
+<pre><code class="language-sh">cd bundle &amp;&amp; npm pack
+</code></pre>
+<p>自动发布（GitHub Actions，需在仓库配置 <code>NPM_TOKEN</code> 自动化 token）：</p>
+<pre><code class="language-sh">git tag v0.18.0 &amp;&amp; git push origin v0.18.0
+</code></pre>
+<p>CI 会执行测试、构建、<code>npm pack</code> 校验 tag 与版本一致、发布 npm，并在 GitHub
+Release 上附带 tarball。</p>
+<p>通过真实执行管线调用工具：</p>
+<pre><code class="language-sh">node --import tsx tests/invoke-plugin.ts
+node --import tsx tests/invoke-compiler.ts
+node --import tsx tests/invoke-workbook.ts
+node --import tsx tests/invoke-repair.ts
+</code></pre>
+<p>挂进 Web UI（可选，两种方式）：</p>
+<pre><code class="language-sh"># 方式一：从仓库目录启动，patch 指向本目录
+pnpm dsh web --patch D:/vera/cordis.yml
+
+# 方式二：安装官方 CLI 后从本目录启动（依赖树较大，机器空闲时再装）
+npm install --save-dev @deepseek-ai/dsh@0.1.0-rc.6
+npx dsh web --patch D:/vera/cordis.yml
+</code></pre>
+<p>Windows 上 <code>cordis.yml</code> 的入口路径必须是 <code>file:///D:/vera/src/index.ts</code> 形式的 URL。</p>
+<h3>Example</h3>
+<p><code>D4 = B4-C3</code> inside a column where every other row is <code>=B[row]-C[row]</code> is reported as a
+<code>reference-offset</code> anomaly with confidence = majority support fraction (e.g. 3/4 = 0.75).</p>
+<p>The tool accepts either <code>cells</code> (a map) or <code>path</code> (an absolute <code>.xlsx</code> path) — exactly one.</p>
+<h3>相关链接</h3>
+<ul>
+<li>npm：<a href="https://www.npmjs.com/package/dsh-excel-chat">https://www.npmjs.com/package/dsh-excel-chat</a></li>
+<li>GitHub：<a href="https://github.com/hccccc01333/dsh-excel-chat">https://github.com/hccccc01333/dsh-excel-chat</a></li>
+<li>社区收录：<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a></li>
+</ul>
+<h3>Known limitations (P0)</h3>
+<ul>
+<li>Formula parsing is a lightweight scanner, not a full grammar: quoted strings are stripped,
+cell-like tokens followed by <code>(</code> are treated as function names, and exotic constructs
+(e.g. <code>1E5</code> inside an expression before a real cell ref) may still mis-parse.</li>
+<li>Whole-column references (<code>Sales!$H:$H</code>) do not produce cell-level dependency edges.</li>
+<li>Range edges are enumerated only up to 10,000 cells; larger ranges contribute start/end edges only.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/hccccc01333/dsh-excel-chat/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

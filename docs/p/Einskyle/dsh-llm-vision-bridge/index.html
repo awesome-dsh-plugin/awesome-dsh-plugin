@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,200 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Einskyle/dsh-llm-vision-bridge</pre><button type="button" data-cmd="dsh plugin --profile web add github:Einskyle/dsh-llm-vision-bridge" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/Einskyle/dsh-llm-vision-bridge/blob/master/README.zh.md">中文</a></p>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>Let <strong>text-only LLMs (DeepSeek) &quot;see&quot; images</strong> in the dsh web GUI: paste an image into the chat and the plugin automatically routes it to a vision model (Qwen3-VL via your existing pi-ai / llama.cpp route), then feeds the resulting text description to DeepSeek, which continues the conversation as if it were a native multimodal model.</p>
+<h3>Features</h3>
+<ul>
+<li><strong>Native LLM provider</strong> — registers <code>deepseek-vision</code> on the DSH <code>LlmAdapter</code> seam. Image admission, request routing, and session compaction all run through harness-native mechanisms; no UI changes, no front-end interception.</li>
+<li><strong>Zero overhead without images</strong> — image-free requests pass straight through to the fallback provider (default <code>deepseek-official</code>).</li>
+<li><strong>Vision-assisted replies</strong> — each image block is described by the vision model (attached user text is included in the prompt), then replaced with a <code>[图片 N 描述]</code> text block before the request reaches DeepSeek.</li>
+<li><strong>LRU description cache</strong> — the same image + prompt is never re-described; history replay and compaction do not re-run the vision model.</li>
+<li><strong>503/429 auto-retry</strong> — tolerates the desktop GPU&#39;s single-card exclusive scheduling (vision gateway returns 503 while other tools occupy VRAM).</li>
+<li><strong>Configurable failure policy</strong> — <code>placeholder</code> (insert a failure note and continue) or <code>error</code> (fail the turn).</li>
+</ul>
+<h3>How it works</h3>
+<p>The chat composer natively supports image attachments: images enter the model request as <code>{type:&quot;image&quot;, attachment}</code> content blocks. The DeepSeek chat-completions adapter rejects image blocks with <code>UNSUPPORTED_CONTENT</code>, so a text-only model cannot process them directly.</p>
+<p>This plugin&#39;s bridge provider (<code>deepseek-vision</code>) declares <code>inputModalities: [&quot;text&quot;, &quot;image&quot;]</code>, which satisfies the host&#39;s image-admission check (<code>MODEL_DOES_NOT_SUPPORT_IMAGES</code> is otherwise thrown before the message ever reaches the agent). Inside its <code>stream()</code>:</p>
+<ol>
+<li><strong>No image</strong> → <code>yield* ctx.llm.stream({ ...options, provider: fallbackProvider })</code> — passthrough, zero cost.</li>
+<li><strong>Has image</strong> → for each image block, call the vision model via a nested <code>ctx.llm.stream()</code> against the configured vision provider (e.g. pi-ai&#39;s <code>llama</code> route; image bytes are read automatically by the attachment service), then replace the image block with a <code>[图片 N 描述]\n&lt;description&gt;</code> text block and forward the rewritten messages to the fallback provider.</li>
+</ol>
+<p>Session compaction reuses the provider of the most recent request, so image-bearing history is also bridged automatically. The optional <code>autoRoute</code> setting (default off) additionally rewrites <code>deepseek-official</code> agent requests to this provider, but it cannot bypass the host&#39;s image-admission check — it is only a fallback. To actually send images, set the main model to <code>deepseek-vision</code>.</p>
+<h3>Install</h3>
+<pre><code class="language-sh"># From GitHub (plain JS, no build step, no allowBuilds needed)
+dsh plugin --profile web add github:Einskyle/dsh-llm-vision-bridge
+
+# Or from the npm registry
+dsh plugin --profile web add dsh-llm-vision-bridge
+
+# Restart the web service
+pnpm dsh web
+</code></pre>
+<p>Manual install without pnpm (equivalent):</p>
+<ol>
+<li>Copy this package into <code>%USERPROFILE%\.dsh\profiles\web\node_modules\dsh-llm-vision-bridge\</code></li>
+<li>Edit <code>%USERPROFILE%\.dsh\profiles\web\package.json</code>:<ul>
+<li>add <code>&quot;dsh-llm-vision-bridge&quot;: &quot;file:&lt;absolute path&gt;&quot;</code> to <code>dependencies</code></li>
+<li>add <code>&quot;dsh-llm-vision-bridge&quot;</code> to <code>dsh.profile.bundles</code></li>
+</ul>
+</li>
+<li>Restart the web service</li>
+</ol>
+<h3>Quick start</h3>
+<ol>
+<li>Open <strong>Settings → Models</strong>: the new provider <strong>「DeepSeek（视觉桥接）」</strong> appears with models <code>deepseek-v4-flash</code> / <code>deepseek-v4-pro</code>.</li>
+<li><strong>Set the main model to the bridge provider</strong> — <code>agent-default-model.provider: deepseek-vision</code>. This is required: the host&#39;s image-admission check reads the session-selected model&#39;s <code>inputModalities</code>, and only the bridge model advertises <code>image</code>.</li>
+<li>Paste/upload an image (PNG/JPEG/WebP/GIF) in the chat composer, optionally with a question, and send. The image is described first (10–40s including cold load), then DeepSeek replies from the description.</li>
+<li>Switch the main model back to <code>deepseek-official</code> any time for pure text (image uploads are then rejected by admission, as expected).</li>
+</ol>
+<h3>Configuration (Settings → Models → llm-vision-bridge)</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>enabled</code></td>
+<td><code>true</code></td>
+<td>Master switch; when off the bridge provider degrades to pure passthrough</td>
+</tr>
+<tr>
+<td><code>autoRoute</code></td>
+<td><code>false</code></td>
+<td>Additionally rewrite <code>deepseek-official</code> agent requests to the bridge provider (cannot bypass image admission; fallback only)</td>
+</tr>
+<tr>
+<td><code>fallbackProvider</code></td>
+<td><code>deepseek-official</code></td>
+<td>The text-only provider that actually generates the reply</td>
+</tr>
+<tr>
+<td><code>visionProvider</code></td>
+<td><code>llama</code></td>
+<td>Vision provider route (pi-ai)</td>
+</tr>
+<tr>
+<td><code>visionModel</code></td>
+<td><code>/models/qwen3-vl-4b-thinking/Qwen3-VL-4B-Thinking-Q4_K_M.gguf</code></td>
+<td>Vision model id</td>
+</tr>
+<tr>
+<td><code>visionPrompt</code></td>
+<td>(built-in Chinese prompt)</td>
+<td>System prompt for the vision model</td>
+</tr>
+<tr>
+<td><code>visionMaxTokens</code></td>
+<td><code>2048</code></td>
+<td>Vision output cap (keep ≥1024; thinking consumes tokens)</td>
+</tr>
+<tr>
+<td><code>visionRetries</code></td>
+<td><code>3</code></td>
+<td>Max retries for retryable errors (503/429/timeout)</td>
+</tr>
+<tr>
+<td><code>visionRetryDelayMs</code></td>
+<td><code>30000</code></td>
+<td>Retry delay</td>
+</tr>
+<tr>
+<td><code>onVisionFailure</code></td>
+<td><code>placeholder</code></td>
+<td>Final failure policy: <code>placeholder</code> = insert a failure note and continue; <code>error</code> = fail the turn</td>
+</tr>
+</tbody></table>
+<h3>Vision model options</h3>
+<p>The vision call goes through the pi-ai adapter (<code>ctx.llm.stream</code> against <code>visionProvider</code>/<code>visionModel</code>), so <strong>any OpenAI-compatible vision endpoint works</strong> — a local llama.cpp gateway is only the default, not a requirement.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+<th>API key</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Local llama.cpp gateway (current default)</td>
+<td><code>Qwen3-VL-4B</code> via <code>http://&lt;desktop-ip&gt;:18081/v1</code></td>
+<td>No</td>
+<td>Free, private, LAN-only; image bytes never leave your network</td>
+</tr>
+<tr>
+<td>Cloud OpenAI-compatible APIs</td>
+<td><code>qwen-vl-max</code> (DashScope), <code>glm-4v-plus</code> (Zhipu), <code>gpt-4o</code> (OpenAI), OpenRouter/ SiliconFlow, …</td>
+<td>Yes</td>
+<td>Stronger models; images are sent to the cloud provider</td>
+</tr>
+</tbody></table>
+<p>Example — add a DashScope route to <code>settings.yaml</code> (or Settings → Models → llm-pi-ai) and point the bridge at it:</p>
+<pre><code class="language-yaml">llm-pi-ai:
+  providers:
+    dashscope:
+      displayName: DashScope
+      apiKeyEnv: DASHSCOPE_API_KEY
+      api: openai-completions
+      baseURL: https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
+      models:
+        - id: qwen-vl-max
+          name: Qwen-VL-Max
+          input: [ text, image ]
+
+llm-vision-bridge:
+  visionProvider: dashscope
+  visionModel: qwen-vl-max
+</code></pre>
+<p>Settings changes apply without a restart. Constraints: the endpoint must be OpenAI-compatible and accept image input; the vision provider must not be the bridge provider itself (<code>deepseek-vision</code>, recursion guard); cloud routes need a stored credential (<code>apiKeyEnv</code> → Settings → Models), otherwise pi-ai reports <code>MISSING_CREDENTIAL</code>.</p>
+<h3>Prerequisites</h3>
+<ul>
+<li>A vision model route on the pi-ai adapter, configured under <strong>Settings → Models → llm-pi-ai</strong> (e.g. the <code>llama</code> route: baseURL pointing at the desktop llama.cpp <code>http://&lt;desktop-ip&gt;:18081/v1</code>, model declaring <code>input: [text, image]</code>).</li>
+<li>If the vision provider declares <code>apiKeyEnv</code> but the credential is not set, pi-ai reports <code>MISSING_CREDENTIAL</code>: store any placeholder value on the Settings page (local llama.cpp does not validate the key), or remove that <code>apiKeyEnv</code>.</li>
+<li>Single-GPU exclusive scheduling on the desktop: while other tools occupy VRAM the vision gateway returns 503, which this plugin retries automatically per <code>visionRetries</code>.</li>
+</ul>
+<h3>Troubleshooting</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>「DeepSeek（视觉桥接）」 missing in Settings</td>
+<td>Plugin not loaded; check the web service startup log and confirm the bundle is in the profile</td>
+</tr>
+<tr>
+<td><code>attachment-error</code> / <code>MODEL_DOES_NOT_SUPPORT_IMAGES</code> on send</td>
+<td>Session model is not the bridge model: set <code>agent-default-model.provider: deepseek-vision</code>, or select 「DeepSeek（视觉桥接）」 for the session</td>
+</tr>
+<tr>
+<td><code>VISION_UNAVAILABLE</code></td>
+<td>Vision model unreachable: check the <code>llama</code> provider baseURL, the desktop is powered on, and <code>LLAMA_API_KEY</code> is present</td>
+</tr>
+<tr>
+<td><code>UNSUPPORTED_CONTENT</code> after sending</td>
+<td>Request did not go through the bridge provider: confirm the main model is <code>deepseek-vision</code>, not <code>deepseek-official</code></td>
+</tr>
+<tr>
+<td>Slow vision replies</td>
+<td>Qwen3-VL cold load of 10–40s is normal; on frequent 503, wait for other desktop GPU jobs</td>
+</tr>
+</tbody></table>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Einskyle/dsh-llm-vision-bridge/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

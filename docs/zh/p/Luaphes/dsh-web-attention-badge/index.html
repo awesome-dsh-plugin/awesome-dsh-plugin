@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,52 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Luaphes/dsh-web-attention-badge</pre><button type="button" data-cmd="dsh plugin --profile web add github:Luaphes/dsh-web-attention-badge" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/README.md">English</a> | <a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/README.zh-CN.md">简体中文</a></p>
+<p>Attention reminders for the DeepSeek Harness Web UI. Whenever a session needs
+you, three surfaces light up at once: a <code>(1)</code>-style badge in the top-left of
+the frame, a <code>(N)</code> count in the browser tab title, and a recolored whale
+favicon.</p>
+<ul>
+<li><strong>Amber</strong> — sessions waiting for your input (<code>ask_user</code> question, approval
+prompt, plan-mode review).</li>
+<li><strong>Green</strong> — sessions that finished while you were away and have not been
+opened yet.</li>
+</ul>
+<p>All three share the same counts from the built-in sessions store — no host
+code, no extra transports. The badge is click-through and never blocks the
+sidebar.</p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-web-attention-badge
+</code></pre>
+<p>Or install straight from GitHub:</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:Luaphes/dsh-web-attention-badge#v0.3.1&quot;
+</code></pre>
+<p>Upgrade / uninstall:</p>
+<pre><code class="language-sh">dsh plugin --profile web update dsh-web-attention-badge
+dsh plugin --profile web remove dsh-web-attention-badge
+</code></pre>
+<p><code>dsh plugin</code> registers the bundle automatically — no manual config.</p>
+<h3>Tuning</h3>
+<p>Constants at the top of <code>lib/client.js</code>:</p>
+<ul>
+<li><code>TAB_TITLE_ENABLED</code> — the <code>(N)</code> browser tab title prefix.</li>
+<li><code>FAVICON_ENABLED</code> — the whale-favicon recolor.</li>
+<li>Pill colors/position — the <code>style</code> maps in <code>AttentionBadge</code> / <code>Pill</code>.</li>
+</ul>
+<p>Bundle edits apply on a page refresh; manifest edits need a <code>dsh web</code>
+restart.</p>
+<h3>License</h3>
+<p><a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/LICENSE">MIT</a></p>
+<h3>Development</h3>
+<p>See <a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for layout, release and publishing.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

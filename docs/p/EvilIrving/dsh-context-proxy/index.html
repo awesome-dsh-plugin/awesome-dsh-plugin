@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,101 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:EvilIrving/dsh-context-proxy</pre><button type="button" data-cmd="dsh plugin --profile web add github:EvilIrving/dsh-context-proxy" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Thin on-demand context-retrieval layer for the DeepSeek Harness.</p>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>Automatic truncation, spill-to-disk, compaction, and token metering are already
+owned by <code>output-retention</code>, <code>spill-policy</code>, <code>compaction-basic</code>, and
+<code>session-query</code>. This package adds only the missing piece: three model-facing
+tools that read already-persisted history back on demand.</p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add github:EvilIrving/dsh-context-proxy
+</code></pre>
+<p>Or, from a checkout:</p>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add ./dsh-context-proxy
+</code></pre>
+<p>The bundle patch inserts one plugin row (<code>dsh-context-proxy</code>). <code>sessionQuery</code>
+and <code>subprocess</code> are optional backends (<code>ctx.get</code>): without a <code>sessionQuery</code>
+backend each tool degrades to an <code>isError</code> result instead of waiting forever.</p>
+<h3>Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Backing seam</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>context_query</code></td>
+<td><code>sessionQuery.filterEvents</code></td>
+<td>lightweight <code>{ seq, type, text }</code> matches by seq/type/surface/text</td>
+</tr>
+<tr>
+<td><code>context_slice</code></td>
+<td><code>sessionQuery.readEvent</code></td>
+<td>one event plus a bounded <code>before</code>/<code>after</code> window</td>
+</tr>
+<tr>
+<td><code>context_grep</code></td>
+<td><code>subprocess</code> (packaged <code>rg</code>) or <code>sessionQuery.filterEvents</code></td>
+<td>matches with <code>{ text, citation }</code></td>
+</tr>
+</tbody></table>
+<p>Citations are replay-safe: <code>context_query</code>/<code>context_slice</code> cite <code>session:&lt;seq&gt;</code>
+(rebuildable from the canonical log), and <code>context_grep</code> cites either a spill
+path (<code>path:line</code>, fast local path) or <code>session:&lt;seq&gt;</code> (semantic-text fallback
+when no spill path is supplied or available).</p>
+<h3>Config</h3>
+<pre><code class="language-ts">export interface Config {
+  readWindowDefault: number  // default before/after for context_slice (default 0)
+  grepMaxBytes: number       // rg stdout in-memory cap (default 1 MiB)
+  rgGraceMs: number          // rg termination grace (default 5000)
+}
+</code></pre>
+<h3>Dependencies</h3>
+<ul>
+<li><code>sessionQuery</code> and <code>subprocess</code> are <strong>optional</strong> services read via
+<code>ctx.get(...)</code>. A missing <code>sessionQuery</code> backend degrades each tool to an
+<code>isError</code> result (<code>session query backend unavailable</code>) instead of leaving the
+plugin waiting forever; the same applies to <code>subprocess</code> for <code>context_grep</code>
+with an explicit path.</li>
+<li><code>tools</code> is a hard dependency (<code>inject</code>).</li>
+<li>The packaged ripgrep binary comes from <code>@vscode/ripgrep</code> — the same mechanism
+<code>dsh-tool-fs-search</code> uses — so no system <code>rg</code> install is required and no
+shell layer exists between the argv vector and ripgrep.</li>
+</ul>
+<h3>Model Experience</h3>
+<h4>Request context and condition</h4>
+<h5>What the model sees</h5>
+<p>Three tool schemas (<code>context_query</code>, <code>context_slice</code>, <code>context_grep</code>) are
+registered into the agent&#39;s tool set. Each result is a compact JSON object of
+matches/items plus citations; no prose is returned for the model to parse ids
+out of.</p>
+<h5>Token effect</h5>
+<p>Zero-direct effect until a tool is invoked; each invocation&#39;s cost is bounded
+by the query/slice window and the <code>grepMaxBytes</code> cap.</p>
+<h5>KV Cache effect</h5>
+<p>Append-only: tool results append to the surface; they never rewrite earlier
+request tokens.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li><strong><code>context_grep</code> line parse is <code>path:line:text</code></strong> — a spill path containing a
+newline (not expressible in the durable locator) would confuse the parser;
+absolute spill paths never contain one.</li>
+<li><strong>Fallback text scan is literal, not regex</strong> — when no spill path is
+supplied, <code>context_grep</code> falls back to <code>sessionQuery</code>&#39;s literal,
+case-insensitive, whitespace-flexible scan, not a regex search.</li>
+<li><strong>Bundle writing is not sandboxed</strong> — nothing here writes files; retrieval
+only reads through the seams.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/EvilIrving/dsh-context-proxy/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

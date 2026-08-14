@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,79 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale</pre><button type="button" data-cmd="dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness Web GUI 的鲸鱼娘主题皮肤系列(独立分发仓库)。</p>
+<h3>效果预览</h3>
+<p>点击图片可查看完整尺寸。</p>
+<table>
+<thead>
+<tr>
+<th>亮色模式</th>
+<th>暗色模式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/Small-tailqwq/dsh-deep-whale/blob/main/maid-atelier/preview/light.webp"><img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/main/maid-atelier/preview/light.webp" alt="maid-atelier 亮色模式"></a></td>
+<td><a href="https://github.com/Small-tailqwq/dsh-deep-whale/blob/main/maid-atelier/preview/dark.webp"><img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/main/maid-atelier/preview/dark.webp" alt="maid-atelier 暗色模式"></a></td>
+</tr>
+</tbody></table>
+<h3>住户</h3>
+<table>
+<thead>
+<tr>
+<th>皮肤</th>
+<th>包名</th>
+<th>说明</th>
+<th>许可</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/Small-tailqwq/dsh-deep-whale/blob/main/maid-atelier/">maid-atelier</a></td>
+<td><code>@dsh-external/dsh-client-ui-skin-maid-atelier</code></td>
+<td>深海女仆工坊:双女仆背景、深海蓝蕾丝界面与 Q 版侧栏</td>
+<td>CC BY-NC-SA 4.0</td>
+</tr>
+</tbody></table>
+<h3>版权所有人</h3>
+<table>
+<thead>
+<tr>
+<th>版权所有人</th>
+<th>版权所有内容</th>
+<th>个人主页</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上善</td>
+<td>鲸鱼娘角色形象原作</td>
+<td><a href="https://www.pixiv.net/users/62155430">Pixiv</a> · <a href="https://b23.tv/8h5L4xz">Bilibili（上善无形）</a></td>
+</tr>
+<tr>
+<td>ZipZipPipe</td>
+<td>加入 DeepSeek 元素的女仆鲸鱼娘二次设计</td>
+<td><a href="https://www.pixiv.net/users/18604994">Pixiv</a> · <a href="https://b23.tv/Pnw6nG8">Bilibili（ZipZipPipe）</a></td>
+</tr>
+</tbody></table>
+<p>*反馈问题尽可能在 issue 中发起，而不是跑去联系上面两位老师。但是，看鲸鱼娘二创可以去关注一下，谢谢喵</p>
+<h3>安装</h3>
+<h4>懒人版</h4>
+<p>对你的 dsh 说：</p>
+<pre><code>安装一下这个皮肤包：https://github.com/Small-tailqwq/dsh-deep-whale
+</code></pre>
+<pre><code class="language-sh">git clone https://github.com/Small-tailqwq/dsh-deep-whale
+cd &lt;harness&gt;
+dsh plugin --profile web add ../dsh-deep-whale/maid-atelier
+</code></pre>
+<h3>许可</h3>
+<p>本仓库各皮肤为<strong>衍生创作</strong>,整体以 CC BY-NC-SA 4.0(署名-非商业性使用-相同方式共享)发布,禁止商业性使用。署名链见各皮肤 <code>NOTICE</code>。</p>
+<p>皮肤工程脚手架来自 <a href="https://github.com/zhu1090093659/dsh-web-ui">zhu1090093659/dsh-web-ui</a> ,本仓库仅分发皮肤成品,不包含脚手架。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Small-tailqwq/dsh-deep-whale/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

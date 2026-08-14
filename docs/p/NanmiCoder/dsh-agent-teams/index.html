@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,87 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams</pre><button type="button" data-cmd="dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://www.npmjs.com/package/@nanmicoder/dsh-agent-teams"><img src="https://img.shields.io/npm/v/@nanmicoder/dsh-agent-teams.svg" alt="npm"></a>
+<a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@nanmicoder/dsh-agent-teams.svg" alt="license"></a></p>
+<p>DeepSeek Harness 的 AgentTeams 插件：安装后，任何会话只需一句自然语言（例如&quot;用 AgentTeams 调研一下 XX&quot;），即可驱动一个<strong>多智能体团队</strong>协作完成目标，并在 Web GUI 右上角实时看到团队活动面板。</p>
+<p>核心语义移植自 Claude Code 的 AgentTeams：<strong>创建团队</strong>（队长 = 当前会话 agent）→ <strong>拉成员</strong>（可续聊子代理）→ <strong>拆任务并声明依赖</strong> → <strong>成员间直接收发消息</strong>（邮箱直达 + 唤醒，无队长中转）。</p>
+<h3>界面预览</h3>
+<p><img src="https://raw.githubusercontent.com/NanmiCoder/dsh-agent-teams/main/assets/ui.png" alt="AgentTeams 活动面板"></p>
+<h3>安装</h3>
+<p><strong>前置要求</strong>：已安装 <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a>（<code>dsh</code> 命令可用）；Node.js <code>^22.19</code> 或 <code>&gt;=24</code>；pnpm 11。</p>
+<p>插件已发布到 npm（<code>@nanmicoder</code> scope），一条命令装好：</p>
+<pre><code class="language-sh">dsh plugin --profile web add @nanmicoder/dsh-agent-teams
+</code></pre>
+<p><code>dsh plugin</code> 会把插件加入 <code>web</code> profile，并根据包内的 <code>dsh.bundle</code> 声明自动启用它；工具、系统提示和 Web 客户端入口随该 profile 一起加载。</p>
+<blockquote>
+<p><strong>重启生效</strong>：安装完成后，重启正在运行的 DeepSeek Harness Web 服务并刷新页面。</p>
+</blockquote>
+<p>装好后可以用 <code>dsh plugin --profile web list</code> 确认插件在列表里。升级用同一条 add 命令即可。</p>
+<h4>其他安装方式</h4>
+<p><strong>指定版本</strong>——<code>latest</code> 的解析可能受 registry 缓存影响（国内镜像源同步新版本通常有延迟），想钉死版本时：</p>
+<pre><code class="language-sh">dsh plugin --profile web add @nanmicoder/dsh-agent-teams@&lt;version&gt;
+</code></pre>
+<p>版本号见 <a href="https://www.npmjs.com/package/@nanmicoder/dsh-agent-teams?activeTab=versions">npm 发布页</a>。</p>
+<p><strong>还没装 DSH，或不想全局安装</strong>——用 <code>npx</code> 直接跑，无需预装：</p>
+<pre><code class="language-sh">npx -p @deepseek-ai/dsh dsh plugin --profile web add @nanmicoder/dsh-agent-teams
+</code></pre>
+<p><strong>从 GitHub 安装</strong>——想用尚未发布到 npm 的最新提交：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams
+</code></pre>
+<p><strong>从源码安装</strong>——要改插件本身，或参与开发：</p>
+<pre><code class="language-sh">git clone https://github.com/NanmiCoder/dsh-agent-teams.git
+cd dsh-agent-teams
+pnpm install
+pnpm build
+dsh plugin --profile web add &quot;link:$(pwd)&quot;
+</code></pre>
+<p><code>link:</code> 安装后，改完代码跑 <code>pnpm build</code> 即时生效，不必重装插件（客户端改动需刷新页面，host 侧改动需重启 dsh 服务）。提交前跑 <code>pnpm verify</code> 做离线校验。</p>
+<h3>使用</h3>
+<p>安装并重启后，直接对助手说：</p>
+<blockquote>
+<p>用 AgentTeams 帮我调研一下开源 RAG 框架的选型，输出对比报告</p>
+</blockquote>
+<p>插件内置提示段会指导模型按协议执行：建团队 → 按角色拉成员 → 拆任务声明依赖 → 领取并唤醒成员 → 轮询收集产出 → 汇报后删除（归档保留）。</p>
+<h3>开发 Skill</h3>
+<p>仓库按开放 Agent Skills 规范提供 <a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/skills/dsh-plugin-development/SKILL.md"><code>dsh-plugin-development</code></a>，可直接安装：</p>
+<pre><code class="language-sh">npx skills add NanmiCoder/dsh-agent-teams --skill dsh-plugin-development
+</code></pre>
+<p><code>skills/dsh-plugin-development/</code> 是唯一权威源码；<code>.dsh/skills/</code> 保存供 DSH 在本仓库作为 cwd 时自动发现的跨平台镜像。修改 Skill 后运行 <code>pnpm sync:skill</code>，<code>pnpm verify</code> 会检查镜像没有漂移。</p>
+<h3>文档</h3>
+<table>
+<thead>
+<tr>
+<th>文档</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/usage.md">docs/usage.md</a></td>
+<td>工作原理、Web UI 行为、工具一览、配置、已知限制、验证</td>
+</tr>
+<tr>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/verification-guide.md">docs/verification-guide.md</a></td>
+<td>四层验证方法（离线 / 组合 / 真实 e2e / ego-browser GUI）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/skills/dsh-plugin-development/SKILL.md">skills/dsh-plugin-development/SKILL.md</a></td>
+<td>可通过 <code>npx skills</code> 安装的 DSH 插件开发 Skill</td>
+</tr>
+<tr>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/developing-dsh-plugins.md">docs/developing-dsh-plugins.md</a></td>
+<td>面向人类阅读的开发指南（本插件为样例）</td>
+</tr>
+</tbody></table>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

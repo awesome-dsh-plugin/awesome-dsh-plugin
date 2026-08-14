@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,122 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-session-export</pre><button type="button" data-cmd="dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-session-export" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>DSH 插件：把 append-only 会话日志导出成<strong>人读的 Markdown / HTML</strong>，按 Trajectory 来源分组渲染
+（系统提示 / 思维链 / 工具调用 / 子agent）。官方 <code>session-log-export</code> 只给 raw JSONL，本插件补齐
+「一段对话一份干净文档，可直接贴飞书 / 周报 / 复盘」的缺口。</p>
+</blockquote>
+<blockquote>
+<p>DSH plugin: export the append-only session log as <strong>human-readable Markdown / HTML</strong>, grouped by
+trajectory source (system prompt / reasoning / tool calls / subagent). The official
+<code>session-log-export</code> only emits raw JSONL; this plugin produces a clean per-conversation document
+you can paste into a report, IM, or review.</p>
+</blockquote>
+<hr>
+<h3>特性 / Features</h3>
+<ul>
+<li><p>工具 <code>export_session</code>（<code>defineTool</code>，<code>inject: [&#39;tools&#39;,&#39;sessions&#39;]</code>）：</p>
+<ul>
+<li><code>format: &#39;markdown&#39; | &#39;html&#39;</code>（默认 markdown）；HTML 版带折叠与基本样式。</li>
+<li>导出<strong>当前会话</strong>（默认）、指定 <code>sessionId</code>，或 <code>all: true</code> <strong>批量导出</strong>全部 live 会话。</li>
+<li><code>path</code> 缺省写会话 workspace（<code>session.header.cwd</code>）。</li>
+</ul>
+</li>
+<li><p>按来源分组渲染：系统提示（<code>request/header</code>）、用户/助手正文、思维链（reasoning 折叠）、
+工具调用（参数 + 结果折叠，<code>subagent*</code> 等委派工具标为「子agent」）、todo 列表、用量统计。</p>
+</li>
+<li><p>子agent 会话（<code>header.origin === &#39;subagent&#39;</code>）在头部标注来源与委托深度。</p>
+</li>
+<li><p>Tool <code>export_session</code> (<code>defineTool</code>, <code>inject: [&#39;tools&#39;,&#39;sessions&#39;]</code>):</p>
+<ul>
+<li><code>format: &#39;markdown&#39; | &#39;html&#39;</code> (default markdown); HTML has collapsibles + base styling.</li>
+<li>Export the <strong>current</strong> session (default), a named <code>sessionId</code>, or <code>all: true</code> to batch-export
+every live session.</li>
+<li><code>path</code> defaults to the session workspace (<code>session.header.cwd</code>).</li>
+</ul>
+</li>
+<li><p>Grouped by source: system prompt (<code>request/header</code>), user/assistant prose, reasoning (collapsed),
+tool calls (args + result collapsed, delegation tools flagged as subagent), todos, usage totals.</p>
+</li>
+<li><p>Subagent sessions (<code>header.origin === &#39;subagent&#39;</code>) are annotated with origin and delegation depth.</p>
+</li>
+</ul>
+<hr>
+<h3>安装 / Install</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add @dsh-suite/plugin-session-export
+</code></pre>
+<p>（本地开发：<code>dsh plugin --profile &lt;name&gt; add ./packages/plugins/plugin-session-export</code>）</p>
+<h3>使用 / Usage</h3>
+<p>模型（或 CLI）可直接调用该工具：</p>
+<p>The model (or CLI) can call the tool directly:</p>
+<pre><code class="language-text">export_session({ format: &#39;html&#39; })
+export_session({ all: true, path: &#39;/tmp/session-dumps&#39; })
+export_session({ sessionId: &#39;session-3&#39;, format: &#39;markdown&#39; })
+</code></pre>
+<p>输出示例 / Output sample (Markdown):</p>
+<pre><code class="language-markdown"># 帮我查一下 Kuramoto 临界指数
+
+会话：`session-1` · 创建时间：2026-08-13T…Z · 模型：`deepseek-official/deepseek-chat`
+
+## 系统提示
+```text
+You are a helpful assistant…
+```
+
+## 对话
+
+### Turn 1
+**👤 用户**
+帮我查一下 D 维 Kuramoto 模型的临界指数
+
+**🤖 助手**
+临界指数为 γ⁻ = γ⁺ = 1 …
+
+&lt;details&gt;
+&lt;summary&gt;🧠 思维链（Thinking）&lt;/summary&gt;
+
+```text
+先定位 Daido 2015 的磁化率定义…
+```
+
+&lt;/details&gt;
+
+&lt;details&gt;
+&lt;summary&gt;🔧 工具调用：web_search&lt;/summary&gt;
+
+**参数**
+```json
+{ &quot;query&quot;: &quot;Daido 2015 Kuramoto susceptibility&quot; }
+```
+
+**结果**
+```text
+… 检索到 3 条结果 …
+```
+
+&lt;/details&gt;
+</code></pre>
+<h3>验证 / Verification</h3>
+<ul>
+<li>✅ 纯 ESM 编译（<code>pnpm build</code>）</li>
+<li>✅ <code>dsh.bundle</code> + <code>cordis.patch.yml</code> 装载进真实 DSH profile（<code>--dump-config</code> 含本行）</li>
+<li>✅ 工具注册进 registry（<code>ctx.tools.register</code> self-check）</li>
+<li>⚠️ 端到端「模型调 export_session → 落盘 → 读回」需真实会话 + API key——未闭环，见下</li>
+</ul>
+<p>Blocked / not closed: 无 <code>DEEPSEEK_API_KEY</code> 无法让模型真实调用工具；导出渲染逻辑已按
+DSH 真实 <code>SessionEvent</code> 类型实现并编译通过，但尚未在有完整轨迹的会话上端到端落盘验证。</p>
+<h3>设计准则 / Design principles</h3>
+<p>遵守 <code>dsh-plugin-design-principles.md</code>：<code>inject</code> 声明依赖（#3）、<code>ctx.tools.register</code> 注册即
+effect（#1）、会话数据走 <code>ctx.sessions</code>（服务依赖，非全局状态，#2）、读写文件是不可逆发射、
+失败即抛错不半写（#9）。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/whyihaveyou/dsh-suite/blob/main/packages/plugins/plugin-session-export/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

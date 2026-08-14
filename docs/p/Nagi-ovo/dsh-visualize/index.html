@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,30 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Nagi-ovo/dsh-visualize</pre><button type="button" data-cmd="dsh plugin --profile web add github:Nagi-ovo/dsh-visualize" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH does not have to answer with text alone. When the model calls <code>visualize</code>, the Web UI renders an interactive card inside the conversation for simulators, charts, comparison panels, and UI mockups.</p>
+<p><a href="https://github.com/Nagi-ovo/dsh-visualize/blob/main/assets/demo.mp4"><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-visualize/main/assets/demo.webp" alt="Interactive visualization rendered inside a DSH conversation"></a></p>
+<h3>Install</h3>
+<p>Install the plugin from GitHub into DSH&#39;s <code>web</code> profile:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:Nagi-ovo/dsh-visualize
+# If dsh web is running, restart it and refresh the page.
+</code></pre>
+<p>Run <code>dsh --profile web --dump-config</code> to confirm that the plugin is present in the final configuration. For local development, clone the repository and run <code>dsh plugin --profile web add .</code> from its root; committed build output means no separate build step is required. Users of the community <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> can also install it from Settings → Plugins.</p>
+<h3>Use it</h3>
+<p>Tell the model what you want to explore, for example, “make an adjustable visualization of a sorting algorithm.” The model writes an HTML fragment, then calls <code>visualize(path, title?, mode?)</code> to place it in the conversation. Side-by-side comparisons can use <code>mode: &quot;wide&quot;</code>.</p>
+<p>Cards follow the DSH light or dark theme and whale-blue palette. Session replay restores them from the persistent tool result, so the original fragment file does not need to remain on disk.</p>
+<h3>Security</h3>
+<p>Each card runs in a sandboxed iframe with an opaque origin and cannot access the host page. Its CSP blocks network requests, nested pages, and form submissions, while allowing static assets from a fixed set of CDNs. Fragments are limited to <code>1000000</code> bytes by default; change <code>maxFragmentBytes</code> to use a different limit.</p>
+<h3>Limitations</h3>
+<p>Interactive cards currently render only in the Web UI. TUI and headless clients show the standard tool result instead. Buttons inside a card cannot yet send follow-up messages to the conversation.</p>
+<p>Inspired by <code>/visualize</code> in the Codex desktop app. The layered skill references and Chart.js-first approach draw from <a href="https://github.com/himself65/finance-skills/tree/main/plugins/ui-tools/skills/generative-ui">himself65/finance-skills</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Nagi-ovo/dsh-visualize/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

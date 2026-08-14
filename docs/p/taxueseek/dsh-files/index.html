@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,73 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:taxueseek/dsh-files</pre><button type="button" data-cmd="dsh plugin --profile web add github:taxueseek/dsh-files" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness 双面插件（dual-face plugin）：一个包、一行 cordis 配置，为 Web UI 提供「文件上传」与「文档读取」两项能力。</p>
+<ul>
+<li><strong>上传</strong>：输入框工具栏回形针按钮，文件以浮动彩色卡片呈现，发送时自动把路径附入消息；按会话隔离存储到 <code>&lt;会话工作区&gt;/.dsh-filess/&lt;sessionId&gt;/</code>，TTL 定期清扫，sha256 内容去重</li>
+<li><strong>文档读取</strong>：<code>read_document</code> 工具读取文本 / PDF / DOCX / XLSX，内容嗅探判定真实格式（不信任扩展名），大小预检，LRU 解析缓存</li>
+</ul>
+<h3>功能</h3>
+<h4>上传</h4>
+<ul>
+<li>会话隔离存储：文件落在发起会话自己的工作区 <code>.dsh-filess/&lt;sessionId&gt;/</code> 下，agent 的 fs 后端一定能读到；会话之间互不可见</li>
+<li>浮动彩色卡片：按扩展名着色（PDF 红 / DOC 蓝 / XLS 绿 / TXT 灰 / ZIP 紫），显示文件名、大小、移除按钮，支持多文件横排</li>
+<li>发送联动：卡片挂载后文件路径自动注入输入框，随消息发出</li>
+<li>安全护栏：loopback host + same-origin + sec-fetch-site 三重校验；文件名消毒（控制字符、路径分隔、点段、前导点全部剥离）；未知会话 403；并发限流（默认 4）超限 429</li>
+<li>生命周期管理：TTL 清扫（默认 7 天），空会话目录自动回收</li>
+</ul>
+<h4>文档读取</h4>
+<ul>
+<li>内容嗅探：PDF 头 / ZIP 中央目录成员 / UTF-8 / UTF-16 BOM / GB18030，全部从字节判定，扩展名伪装（可执行文件、图片改成 .pdf）一律拒绝</li>
+<li>编码链：UTF-16 BOM → UTF-8（fatal）→ GB18030（fatal），中文 GBK 文件可直接读取</li>
+<li>分页读取：行号 + offset/limit 分页，长文档按需翻页</li>
+<li>解析缓存：LRU 双约束（条目数 + 字节预算），键为 <code>(targetKey, fileVersion, format)</code>，文件改动自动失效</li>
+<li>XLSX 多 sheet：合并读取（默认前 5 个 sheet），截断显式标记，模型不会把部分表格误当全量</li>
+<li>大小预检：<code>stat</code> 先查，超限直接报 <code>FS_TOO_LARGE</code>，不读字节</li>
+</ul>
+<h3>安全</h3>
+<ul>
+<li>解析依赖全部为无已知漏洞的维护中库：<code>pdfjs-dist</code>（Mozilla 官方）、<code>mammoth</code>、<code>read-excel-file</code>（纯只读）</li>
+<li>ZIP 中央目录探测不展开任何成员，成员数与成员名长度均有上限，恶意归档安全拒绝</li>
+<li>文件读取走 <code>ctx.fs</code>，继承会话沙箱与 fs 观察策略，与内置 read 工具同权</li>
+<li>上传内容不做格式白名单强制（默认全允许），由会话沙箱兜底</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-files
+# 重启 dsh web
+</code></pre>
+<h3>配置</h3>
+<pre><code class="language-yaml">- id: upload-toolkit
+  name: &#39;dsh-files&#39;
+  config:
+    maxFileBytes: 25165824        # 单次文档读取字节上限
+    readLimit: 2000               # 单次返回行数上限
+    sheetRowLimit: 200            # 每个 sheet 保留行数
+    maxSheets: 5                  # 每个工作簿读取的 sheet 数
+    cacheEntries: 16              # 解析缓存条目数
+    cacheMaxBytes: 67108864       # 解析缓存字节预算
+    uploadMaxBytes: 25165824      # 单次上传字节上限
+    allowedExtensions: []         # 上传扩展名白名单（空 = 全部允许）
+    uploadTtlMs: 604800000        # 上传文件保留时长（7 天）
+    sweepIntervalMs: 3600000      # 清扫间隔
+    maxConcurrentUploads: 4       # 并发上传数
+    uploadDir: /abs/path          # 无 sessions 服务时的回退上传根目录
+</code></pre>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install
+pnpm test          # node --test 单元测试（39 项）
+pnpm build         # esbuild 打包客户端 bundle
+npx tsc --noEmit   # 类型检查
+</code></pre>
+<h3>许可</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/taxueseek/dsh-files/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

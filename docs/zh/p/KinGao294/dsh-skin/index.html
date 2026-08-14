@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,165 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:KinGao294/dsh-skin</pre><button type="button" data-cmd="dsh plugin --profile web add github:KinGao294/dsh-skin" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Skin switcher + custom wallpaper for DeepSeek Harness — a &quot;change the skin&quot;
+feature in the spirit of Codex themes. It registers a curated catalog of
+palettes into DSH&#39;s built-in theme runtime and adds two rows to
+<strong>Settings → General</strong> (below the built-in Appearance row):</p>
+<ul>
+<li><strong>皮肤 / Skins</strong> — pick one of 7 curated palettes (or <strong>默认 / Default</strong> to
+follow the built-in appearance).</li>
+<li><strong>背景图片 / Wallpaper</strong> — set your own background image with opacity and
+blur controls.</li>
+</ul>
+<p>Both choices persist across reloads (localStorage).</p>
+<h3>How it works</h3>
+<p>DSH&#39;s theme system is token-based: the web shell ships <code>--dsw-*</code> design tokens,
+and <code>ThemeRuntime</code> lets third-party plugins register themes that override the
+alias layer (<code>--dsw-alias-*</code>) per color scheme. This package is a regular
+dual-face plugin:</p>
+<ul>
+<li><strong>Host half</strong> (<code>lib/index.js</code>) — a <code>dsh.bundle</code> patch layer that inserts one
+loader entry (<code>skin</code>); a no-op <code>apply</code>, exactly like the shipped ui-* packages.</li>
+<li><strong>Browser half</strong> (<code>lib/client.js</code>) — a <code>dsh.client</code> bundle (served at
+<code>/plugins/dsh-skin/client.js</code>) that:<ol>
+<li>registers 7 curated skins via <code>ctx.theme.register(...)</code>;</li>
+<li>restores the saved skin id and applies it with <code>ctx.theme.setTheme(...)</code>;</li>
+<li>renders the wallpaper as a fixed backdrop layer (<code>z-index: -1</code>) and stacks
+a token override (<code>ctx.theme.overrideTokens</code>) that makes the main canvas
+(<code>--dsw-alias-bg-base</code>) and sidebar (<code>--dsw-specific-sidebar-fill</code>)
+translucent, so the image shows through while inner surfaces (cards,
+inputs, bubbles) stay opaque and readable;</li>
+<li>keeps the slot stores in sync with <code>theme/change</code> (and re-shades the
+wallpaper when the active skin or light/dark scheme changes);</li>
+<li>mounts both rows into <code>settings.general.item</code>.</li>
+</ol>
+</li>
+</ul>
+<p>Each skin sets its <code>colorScheme</code> (<code>light</code>/<code>dark</code>), which drives
+<code>body[data-ds-dark-theme]</code>, plus alias-token overrides applied as inline custom
+properties on <code>&lt;body&gt;</code> by ui-layout&#39;s ThemePresenter.</p>
+<h3>Skins</h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>scheme</th>
+<th>vibe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ocean</code></td>
+<td>dark</td>
+<td>DeepSeek-blue deep sea</td>
+</tr>
+<tr>
+<td><code>graphite</code></td>
+<td>dark</td>
+<td>neutral monochrome</td>
+</tr>
+<tr>
+<td><code>forest</code></td>
+<td>dark</td>
+<td>green calm</td>
+</tr>
+<tr>
+<td><code>sunset</code></td>
+<td>dark</td>
+<td>warm purple</td>
+</tr>
+<tr>
+<td><code>midnight</code></td>
+<td>dark</td>
+<td>pure black OLED</td>
+</tr>
+<tr>
+<td><code>paper</code></td>
+<td>light</td>
+<td>warm paper</td>
+</tr>
+<tr>
+<td><code>sakura</code></td>
+<td>light</td>
+<td>pink accents</td>
+</tr>
+</tbody></table>
+<p>Picking <strong>默认 / Default</strong> reverts to the built-in appearance (follow system)
+and clears the stored skin.</p>
+<h3>Wallpaper</h3>
+<p>In <strong>Settings → General → 背景图片 / Wallpaper</strong>:</p>
+<ul>
+<li><strong>选择图片 / Choose image</strong> — pick a local image (≤ 2MB, stored as a data
+URL, kept in this browser only).</li>
+<li><strong>透明度 / Opacity</strong> and <strong>模糊 / Blur</strong> sliders tune how the image sits
+behind the UI.</li>
+<li><strong>移除图片 / Remove</strong> clears it.</li>
+</ul>
+<p>The wallpaper lives on a <code>z-index: -1</code> fixed layer, so it is only visible
+through the translucent main canvas and sidebar; message surfaces keep their
+solid backgrounds for readability. It also follows your active skin&#39;s tint
+(switching skins re-shades the translucent surfaces).</p>
+<h3>Persistence</h3>
+<p>Choices are stored in <code>localStorage</code> (<code>dsh-skin:skin</code>, <code>dsh-skin:wallpaper</code>,
+<code>dsh-skin:wallpaper-opacity</code>, <code>dsh-skin:wallpaper-blur</code>).
+DSH&#39;s Host settings wire only exposes an allowlisted set of namespaces to
+browser clients (<code>WEB_SETTINGS_NAMESPACES</code> in <code>dsh-host-apiproxy</code>), so a
+third-party namespace would answer <code>settings-not-exposed</code>; the product itself
+keeps remote browser preferences process-local, and localStorage matches that
+boundary for a visual preference while surviving reloads on the same origin.</p>
+<h3>Install</h3>
+<p>From anywhere, add the package to the <code>web</code> profile:</p>
+<pre><code class="language-sh">dsh plugin --profile web add -w /path/to/dsh-skin
+</code></pre>
+<blockquote>
+<p>The <code>-w</code> flag is required: every profile ships a <code>pnpm-workspace.yaml</code>, so
+pnpm 9 treats the profile directory as a workspace root and refuses a bare
+<code>add</code> with <code>ERR_PNPM_ADDING_TO_ROOT</code>.</p>
+</blockquote>
+<p>This runs pnpm in <code>~/.dsh/profiles/web</code>, installs the package, and appends it
+to <code>dsh.profile.bundles</code> (its patch layer inserts the <code>skin</code> loader entry).
+The running web server must be restarted to pick up the new bundle layer:</p>
+<pre><code class="language-sh"># stop the running instance, then:
+dsh web
+</code></pre>
+<p>Open <strong>Settings → General</strong> to use both features.</p>
+<h3>Publishing (npm)</h3>
+<p>DSH (rc.6) has <strong>no separate plugin marketplace</strong> — the plugin distribution
+channel <em>is</em> the npm registry. A package that declares <code>dsh.bundle</code> (host patch
+layer) and <code>dsh.client</code> (browser bundle) is exactly what <code>dsh plugin --profile &lt;name&gt; add &lt;package&gt;</code> installs, so publishing this package to npm is
+what &quot;上架&quot; means today:</p>
+<ol>
+<li>Pick a unique name (scoped names are safer, e.g. <code>@yourscope/dsh-skin</code>) and
+fill in <code>author</code>, <code>repository</code>, <code>keywords</code>, and a CHANGELOG.</li>
+<li>Make sure <code>files</code> ships <code>lib/index.js</code>, <code>lib/client.js</code>, <code>lib/types</code>,
+<code>cordis.patch.yml</code> (already configured).</li>
+<li>Publish to the <strong>official npm registry</strong> (this machine&#39;s default registry is
+a mirror — publishing to a mirror does not reach npmjs):<pre><code class="language-sh">npm publish --registry https://registry.npmjs.org
+</code></pre>
+</li>
+<li>Users install with:<pre><code class="language-sh">dsh plugin --profile web add -w @yourscope/dsh-skin
+</code></pre>
+then restart <code>dsh web</code>.</li>
+</ol>
+<p>Known platform boundaries to document for users: browser-side preferences are
+stored in localStorage (third-party settings namespaces are not exposed over
+the wire yet), and the client bundle may only <code>require</code> module-table entities
+(platform seeds + registered client bundles).</p>
+<h3>Development</h3>
+<p>The client bundle is written directly in the <code>__ModuleLoader__</code> bundle format
+(the same shape tsdown emits for the shipped <code>ui-*</code> packages), so no build step
+is required. <code>lib/client.js</code> may <code>require</code> only module-table entities: platform
+seed words (<code>react</code>, <code>react/jsx-runtime</code>, …) and registered client bundles
+(<code>@deepseek-ai/dsh-client-runtime/client</code>, <code>@deepseek-ai/dsh-client-ui-theme/client</code>,
+…). After editing, restart the web server (bundle content is re-hashed and
+served with a new <code>rev</code>; loader entries are rescanned at boot).</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/KinGao294/dsh-skin/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

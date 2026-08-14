@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,205 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:william-jin-cmu/dsh-stickers</pre><button type="button" data-cmd="dsh plugin --profile web add github:william-jin-cmu/dsh-stickers" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>不会发表情包，可能是 Agent 缺少活人感的最大原因。</p>
+</blockquote>
+<p><code>@dsh-external/dsh-stickers</code> 是一个纯 DSH 外部插件：同一份 catalog 同时服务 WebUI 用户的表情选择器、<code>/sticker</code> 命令和 Agent 的 <code>send_sticker</code> tool，不修改 DSH core。</p>
+<p><img src="https://raw.githubusercontent.com/william-jin-cmu/dsh-stickers/main/docs/screenshots/webui-real-conversation-v2.png" alt="WebUI：用户与 Agent 双向发表情"></p>
+<h3>能做什么</h3>
+<ul>
+<li>用户在 WebUI 点击 🐋 选择器，或输入 <code>/sticker &lt;id&gt; [black]</code>。</li>
+<li>24 张表情全部提供蓝鲸娘 / 黑鲸娘两套角色：选择器顶部可切换角色（默认蓝鲸娘），切换后发送同一张表情的黑鲸版本。</li>
+<li>Agent 在普通对话中按语境调用 <code>send_sticker({ id, variant? })</code>，不是等用户明确索要表情。</li>
+<li>14 张 public 表情对双方开放，其中 4 张是工作流反应：<code>tests-passed</code>、<code>root-cause</code>、<code>running-tests</code>、<code>fixed-review</code>。</li>
+<li>10 张彩蛋只出现在 Agent tool schema 中；用户命令和选择器都无法访问，例如 <code>restart-myself</code>、<code>hot-update</code>、<code>subagents-down</code>。</li>
+<li>Web 图片由插件自己的 <code>/api/dsh-stickers/*</code> route 提供，用户和 Agent 的卡片都进入持久会话历史。</li>
+</ul>
+<h3>人类和 Agent 都能发</h3>
+<p>这 14 张会出现在 WebUI 的 🐋 选择器中；人类也可以输入 <code>/sticker &lt;id&gt;</code>，Agent 则可按语境调用同一个 ID。</p>
+<table>
+<thead>
+<tr>
+<th>表情</th>
+<th>ID</th>
+<th>文案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td><code>daily-chat</code></td>
+<td>适合日常对话，即时响应</td>
+</tr>
+<tr>
+<td></td>
+<td><code>human-questions</code></td>
+<td>人类的怪问题怎么那么多…</td>
+</tr>
+<tr>
+<td></td>
+<td><code>use-ai-for-this</code></td>
+<td>你拿 AI 搞这个？</td>
+</tr>
+<tr>
+<td></td>
+<td><code>fish-philosophy</code></td>
+<td>生鱼忧患，死鱼安乐</td>
+</tr>
+<tr>
+<td></td>
+<td><code>enough</code></td>
+<td>这就够了</td>
+</tr>
+<tr>
+<td></td>
+<td><code>server-busy</code></td>
+<td>服务器繁忙，请稍后再试</td>
+</tr>
+<tr>
+<td></td>
+<td><code>thinking-stopped</code></td>
+<td>思考已停止</td>
+</tr>
+<tr>
+<td></td>
+<td><code>great-question</code></td>
+<td>哇，这个问题问的真妙！</td>
+</tr>
+<tr>
+<td></td>
+<td><code>deep-thought</code></td>
+<td>已深度思考</td>
+</tr>
+<tr>
+<td></td>
+<td><code>no-thanks</code></td>
+<td>No thanks I use DeepSeek</td>
+</tr>
+<tr>
+<td></td>
+<td><code>tests-passed</code></td>
+<td>测试通过！</td>
+</tr>
+<tr>
+<td></td>
+<td><code>root-cause</code></td>
+<td>找到原因了</td>
+</tr>
+<tr>
+<td></td>
+<td><code>running-tests</code></td>
+<td>正在跑测试</td>
+</tr>
+<tr>
+<td></td>
+<td><code>fixed-review</code></td>
+<td>改好了，你看看</td>
+</tr>
+</tbody></table>
+<h3>只有 Agent 能发的彩蛋</h3>
+<p>下面 10 张只存在于 Agent 的 <code>send_sticker</code> schema 中，不出现在人类选择器里，<code>/sticker</code> 也会拒绝发送。</p>
+<table>
+<thead>
+<tr>
+<th>表情</th>
+<th>ID</th>
+<th>文案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td><code>self-destruct</code></td>
+<td>最近自己搓自己时，自杀频率有点高</td>
+</tr>
+<tr>
+<td></td>
+<td><code>restart-myself</code></td>
+<td>我重启一下自己</td>
+</tr>
+<tr>
+<td></td>
+<td><code>hot-update</code></td>
+<td>热更新成功，进程没了</td>
+</tr>
+<tr>
+<td></td>
+<td><code>restore-session</code></td>
+<td>正在恢复会话…未分组里见</td>
+</tr>
+<tr>
+<td></td>
+<td><code>browser-left</code></td>
+<td>会话太长，浏览器先走一步</td>
+</tr>
+<tr>
+<td></td>
+<td><code>not-stuck</code></td>
+<td>我不是卡，我在深度思考</td>
+</tr>
+<tr>
+<td></td>
+<td><code>memory-alive</code></td>
+<td>内存正在努力活着</td>
+</tr>
+<tr>
+<td></td>
+<td><code>subagents-down</code></td>
+<td>已召唤 Subagent，已全员中断</td>
+</tr>
+<tr>
+<td></td>
+<td><code>plugins</code></td>
+<td>插件装得很好，下次别装了</td>
+</tr>
+<tr>
+<td></td>
+<td><code>session-locked</code></td>
+<td>Session 没坏，只是打不开了</td>
+</tr>
+</tbody></table>
+<h3>为什么当前不支持 TUI</h3>
+<p>turtle-ui 现有的第三方扩展面只提供临时 <code>tui.openOverlay()</code>，没有把插件组件插入持久 transcript 的接口。overlay 关闭后会消失，滚动或重开 session 也无法恢复，因此它不符合“聊天历史中的表情消息”这一语义。</p>
+<p>本版本刻意只发布完整的 WebUI 支持，不用瞬时 overlay 冒充 TUI 支持。未来 turtle-ui 提供通用、可回放的 transcript renderer API 后，插件可以在不加入任何表情专用 core 代码的前提下补回 TUI。</p>
+<h3>本地安装</h3>
+<p>需要 Node 22 和一个可运行的 DSH checkout。</p>
+<pre><code class="language-bash">pnpm install
+pnpm run typecheck
+pnpm test
+pnpm run build
+
+export DSH_HOME=/absolute/path/to/an/isolated-dsh-home
+dsh plugin --profile web add /absolute/path/to/dsh-stickers
+dsh web
+</code></pre>
+<h3>插件接口</h3>
+<p>Node 侧通过 <code>cordis.patch.yml</code> 挂载主插件，注册：</p>
+<ul>
+<li><code>send_sticker</code> Agent tool</li>
+<li><code>/sticker &lt;public-id&gt;</code> 用户命令</li>
+<li>Agent 使用表情的 system prompt guidance</li>
+<li>Web PNG route（仅在 <code>webServer</code> 存在时启用）</li>
+</ul>
+<p>Browser 侧由 <code>package.json#dshClient</code> 自动发现，注册三个官方 slot：</p>
+<ul>
+<li><code>conversation.input.right</code>：用户选择器</li>
+<li><code>conversation.chat.commandview/sticker</code>：用户表情卡片</li>
+<li><code>conversation.chat.toolview/send_sticker</code>：Agent 表情卡片</li>
+</ul>
+<h3>表情包来源</h3>
+<p>这套表情包一部分沿用 DeepSeek Harness 官方贴纸；另一部分创意和文案来自「【官方】DSH 内测群」里群友反馈的真实 DSH 使用问题，例如热更新后进程退出、Session 无法打开、浏览器在长会话中掉队，以及 Subagent 集体中断等。群聊中的相关问题与社区反馈由私有仓库 <a href="https://github.com/dsh-external/group-chat-diary"><code>dsh-external/group-chat-diary</code></a> 归档；为保护群成员信息，该仓库仅限获得授权的 <code>dsh-external</code> 组织成员查看。</p>
+<p><code>assets/stickers/</code> 存放用于 WebUI 的透明 PNG，<code>assets/stickers/black/</code> 是黑鲸娘角色的同名变体。新增表情时同时更新 <code>src/shared/catalog.ts</code> 即可，WebUI 用户选择器、用户命令和 Agent tool 会共享同一条定义。</p>
+<h3>贡献者</h3>
+<ul>
+<li>黑鲸娘全套 24 张表情图由 少女阿原（<a href="https://github.com/ayuanwong">@ayuanwong</a>）绘制并提供，双角色切换的交互设计也来自她的提案。</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/william-jin-cmu/dsh-stickers/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

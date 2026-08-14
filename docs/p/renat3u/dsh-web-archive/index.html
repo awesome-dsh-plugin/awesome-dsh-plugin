@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,162 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:renat3u/dsh-web-archive</pre><button type="button" data-cmd="dsh plugin --profile web add github:renat3u/dsh-web-archive" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Deep Sleeping...</strong> — DeepSeek Harness (dsh) Web 模式的客户端插件。</p>
+<p>把会话里<strong>正文之外的所有 display</strong>（工具卡片 read / bash / web_search / grep /
+edit 等，以及消息内的 <strong>Think 推理块</strong>，含运行中的调用）折叠成内联的小卡片，
+<strong>无 emoji、与 Read/Think/Bash 卡片同款样式、放在它们原来的位置</strong>：</p>
+<ul>
+<li><strong>每条消息的 think 组 + 其后紧跟的工具组合成一块</strong>（落单的 think 组 /
+工具组各自成块），工具组区域随块折叠、不留空白；</li>
+<li>正文消息保持 <code>文本a - [折叠块] - 文本b - 文本c</code> 的原始结构。</li>
+</ul>
+<pre><code>Deep Sleeping... (3)            ← 折叠态，点击展开
+Deep Sleeping... (3) · 收起     ← 展开态，所有卡片原地显示
+</code></pre>
+<p>前端不再出现一长串 Read / Think / Bash 卡片；正文消息完全不受影响。</p>
+<h3>特性</h3>
+<ul>
+<li><strong>零核心改动</strong>：纯浏览器端插件，不修改 dsh 任何源码、不注册 slot key，
+不会与内置工具卡片的 <code>conversation.chat.toolview</code> 注册冲突。</li>
+<li><strong>零运行时依赖</strong>：bundle 完全自包含，不 require 任何模块表条目。</li>
+<li><strong>Think 也折叠</strong>：消息内的推理块（<code>data-variant=&quot;think&quot;</code>）与工具卡片
+一并合并。</li>
+<li><strong>实时跟随</strong>：MutationObserver + rAF 合并，流式新卡片、卡片结算、切换
+会话都自动重放折叠状态。</li>
+<li><strong>选择联动</strong>：折叠态下若有行被选中（详情联动），自动展开该簇，避免
+看不到正在查看的卡片。</li>
+<li><strong>主题适配</strong>：颜色走 dsh 的 <code>--dsw-*</code> CSS 变量（带兜底值），明暗主题
+都可用。</li>
+</ul>
+<h3>工作原理</h3>
+<p>ChatView 渲染时对每个工具调用行写入稳定 data 属性：</p>
+<table>
+<thead>
+<tr>
+<th>元素</th>
+<th>属性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会话流容器</td>
+<td><code>[data-chat-flow]</code></td>
+</tr>
+<tr>
+<td>工具调用行（含运行中）</td>
+<td><code>[data-chat-call-id]</code> / <code>data-chat-anchor-key=&quot;call:…&quot;</code></td>
+</tr>
+<tr>
+<td>Think 推理块行</td>
+<td><code>[data-variant=&quot;think&quot;]</code> 且无 <code>data-tool</code></td>
+</tr>
+<tr>
+<td>run_code 子派发行</td>
+<td>位于 <code>[data-subcalls]</code> 内（不折叠，跟随父卡片）</td>
+</tr>
+<tr>
+<td>正文消息</td>
+<td><code>data-chat-anchor-key=&quot;node:…&quot;</code>（不折叠，且会断开簇）</td>
+</tr>
+</tbody></table>
+<p>插件只做两件事：</p>
+<ol>
+<li>把 <code>[data-chat-flow]</code> 里的<strong>非正文行</strong>——顶层 <code>[data-chat-call-id]</code>
+工具卡片行 + <code>[data-variant=&quot;think&quot;]</code> 且无 <code>data-tool</code> 的推理块行——
+<code>display:none</code>（React 的 vdom diff 不会覆盖 CSSOM 上的手动样式）；</li>
+<li>把<strong>每个回合合成一块</strong>：某条消息的 think 组与紧跟其后的工具组（跳过
+装饰元素）合并，在 think 消息的<strong>原位</strong>插入一张与工具卡片同款样式的
+小卡片（<code>Deep Sleeping... (N)</code>，N = think 行数 + 工具卡片数），工具组
+元素随块折叠；点击切换展开/收起。落单的 think 组 / 工具组各自成块。
+正文消息保持 <code>文本a - [折叠块] - 文本b - 文本c</code> 的原始结构。</li>
+</ol>
+<p>注入的 chip 在 React 管理的 flow 子树内，但只做前置插入与 display 切换，
+MutationObserver + rAF 合并重放，React 重渲染/切换会话/流式新卡片都会自动
+跟上（自愈）；卸载时全部还原。</p>
+<h3>安装</h3>
+<p>插件以 <strong>bundle 层</strong> 方式挂载进 dsh web profile（<code>package.json</code> 里的
+<code>dsh.bundle.patch</code> 声明 + 包内 <code>cordis.patch.yml</code> 的 <code>insert</code> 行），
+<code>dsh.client</code> 声明（<code>platform: &quot;web&quot;</code>）让 client-modules 服务自动注入浏览器 bundle。</p>
+<blockquote>
+<p>命令形式：官方约定源码 checkout 场景统一用 <code>pnpm dsh &lt;args...&gt;</code> 运行
+TypeScript 入口并透传参数（见下文「运行与构建」）；npm 全局安装后可直接
+<code>dsh &lt;args...&gt;</code>。下文命令按 <code>dsh …</code> 泛称书写。</p>
+</blockquote>
+<h4>方式一：本地路径</h4>
+<pre><code class="language-sh">pnpm dsh plugin --profile web add file:/path/to/dsh-web-archive
+</code></pre>
+<p><code>dsh plugin add</code> 会 pnpm 安装依赖，并把声明了 <code>dsh.bundle</code> 的包自动加进
+profile 的 <code>dsh.profile.bundles</code> 层列表。</p>
+<h4>方式二：手动挂载（等价于上面的结果）</h4>
+<ol>
+<li><p>把插件放进 profile 的 node_modules（pnpm 风格软链）：</p>
+<pre><code class="language-sh">ln -s /path/to/dsh-web-archive $DSH_HOME/profiles/node_modules/dsh-web-archive
+</code></pre>
+</li>
+<li><p>在 profile manifest（<code>$DSH_HOME/profiles/web/package.json</code>）里登记：</p>
+<pre><code class="language-json">&quot;dependencies&quot;: { &quot;dsh-web-archive&quot;: &quot;file:/path/to/dsh-web-archive&quot; },
+&quot;dsh&quot;: { &quot;profile&quot;: { &quot;bundles&quot;: [&quot;@deepseek-ai/dsh-base&quot;, &quot;@deepseek-ai/dsh-web-app&quot;, &quot;dsh-web-archive&quot;] } }
+</code></pre>
+</li>
+<li><p>重启 web 表面（源码环境 Ctrl+C 后重跑 <code>pnpm dsh web</code>），刷新页面。</p>
+</li>
+</ol>
+<blockquote>
+<p>注：profile 的 <code>cordis.patch.yml</code> 用户层与 bundle 层走同一个 patch
+算法，支持 <code>insert</code> 行；长驻表面（web profile）通过 watch-only HMR
+热重放用户层——新插入的行不需要重启即可挂载（新增的 client 行要等一次
+页面刷新让浏览器拿到新的 <code>window.__DSH_BOOT__</code> 图）。bundle 层
+（<code>dsh.profile.bundles</code>）的增删则要重启 web 表面才生效。</p>
+</blockquote>
+<h3>运行与构建</h3>
+<p>官方源码构建形式（仓库 checkout 内）：</p>
+<pre><code class="language-sh">pnpm install      # 安装依赖（一次性）
+pnpm run build    # 准备仓库产物（一次性）
+pnpm dsh web      # 启动 Web UI，无需重新构建
+</code></pre>
+<p><code>pnpm dsh &lt;args...&gt;</code> 是官方约定的源码运行形式（<code>dsh web</code> 是
+<code>--profile web</code> 的别名）。<code>pnpm install</code> <strong>不会</strong>把 <code>dsh</code> 注册进 shell 的
+全局 PATH——<code>pnpm dsh</code> 每次都要带前缀。裸 <code>dsh</code> 命令需要 npm 全局安装
+（<code>npm install -g @deepseek-ai/dsh</code>），或走官方安装包示例
+<code>npx @deepseek-ai/dsh web</code>。开发 client 插件时可另开 <code>pnpm run dev:web</code>
+（官方 dev 监视器）：它重建 client bundle 并触发 client-hmr 热替换；新增
+插件行仍需一次页面刷新拿到新的 boot 图。</p>
+<p>插件自身 bundle 构建：</p>
+<pre><code class="language-sh">node build.mjs    # 产出 lib/client.js（esbuild，自包含 iife）
+</code></pre>
+<p>构建走本地 devDependency esbuild（JS API，无 shell 依赖）；仓库根执行
+<code>npm install</code>（或 pnpm install）后即可运行。<code>lib/client.js</code> 随包提供，
+改 <code>src/</code> 后重新构建即可。</p>
+<h3>文件结构</h3>
+<pre><code>dsh-web-archive/
+├── package.json        # dsh.client + dsh.bundle 声明 + npm 发布元数据 + exports[&quot;./client&quot;]
+├── cordis.patch.yml    # bundle 层：insert 一行挂载本插件
+├── build.mjs           # 构建脚本（esbuild；prepack 钩子调用）
+├── tsconfig.json
+├── src/
+│   ├── index.ts        # host half：空 apply（让插件出现在宿主插件树）
+│   ├── client.ts       # browser half：cordis 插件入口
+│   └── deep-sleep.ts   # DeepSleepController：折叠/展开核心
+└── lib/
+    ├── index.js        # host half 产物
+    ├── client.js       # 浏览器 bundle（已构建）
+    └── types/          # 手写类型声明（index.d.ts / client/index.d.ts）
+</code></pre>
+<h3>兼容性</h3>
+<p>DOM 契约基于官方 Web 客户端 ChatView 渲染的稳定 data 属性：
+<code>data-chat-flow</code> / <code>data-chat-call-id</code> / <code>data-chat-anchor-key</code> /
+<code>data-subcalls</code> / <code>data-selected</code> / <code>data-state</code> / <code>data-variant</code>。
+当前构建的 CSS Modules 类名是短哈希，正文检测不使用类名字面量，而是文本
+节点 walker（跳过 think 行 / 工具卡片 / 插件自身的 chip），对类名变化
+免疫。官方后续版本若改动这些属性，更新 <code>src/deep-sleep.ts</code> 顶部的
+选择器即可。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/renat3u/dsh-web-archive/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

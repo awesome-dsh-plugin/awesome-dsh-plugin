@@ -8,6 +8,19 @@
     "url": "git+https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.git"
   },
   "license": "CC0-1.0",
-  "files": ["README.md", "README.zh.md"],
-  "keywords": ["awesome", "awesome-list", "dsh", "dsh-plugin", "deepseek-harness", "deepseek"]
+  "files": [
+    "README.md",
+    "README.zh.md"
+  ],
+  "keywords": [
+    "awesome",
+    "awesome-list",
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek"
+  ],
+  "devDependencies": {
+    "marked": "^18.0.9"
+  }
 }

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,122 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:biociao/dsh-science</pre><button type="button" data-cmd="dsh plugin --profile web add github:biociao/dsh-science" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h3><a href="https://www.npmjs.com/package/dsh-science"><img src="https://img.shields.io/npm/v/dsh-science" alt="npm version"></a>
+<a href="https://github.com/biociao/dsh-science/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/dsh-science" alt="license"></a>
+<a href="https://github.com/biociao/dsh-science/blob/main/package.json"><img src="https://img.shields.io/badge/node-%3E%3D18-339933" alt="node"></a>
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/GitHub-topic%3A%20dsh--plugin-181717" alt="dsh-plugin topic"></a></h3>
+<p><strong>A Claude Science–style research workbench for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> — for genomics / pathogens / human health / bioinformatics projects.</strong></p>
+<blockquote>
+<p>One-liner: <strong>dsh-science</strong> — Claude Science-style research workbench for DSH: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics / pathogens / bioinformatics.</p>
+</blockquote>
+<ul>
+<li><strong>ReAct research loop engine</strong> — <code>research_init</code> / <code>research_state</code> / <code>research_hypothesis</code> / <code>research_experiment</code> / <code>research_findings</code> / <code>research_phase</code> / <code>research_review</code>, persisted in a <code>research-manifest.json</code> state machine (Question → Hypothesis → Experiment → Observe → Analyze → Conclude → Next Question).</li>
+<li><strong>Versioned artifacts with provenance</strong> — <code>artifact_save</code> / <code>artifact_list</code> / <code>artifact_show</code> / <code>artifact_reproduce</code>: every result saved as <code>artifacts/&lt;name&gt;/v&lt;N&gt;/</code> with per-file SHA-256, <code>artifact.json</code> provenance (command / inputs / notes / environment) and an append-only <code>provenance.md</code>.</li>
+<li><strong>10 science skills</strong> — research-loop, science-project-setup, artifact-provenance, scientific-reviewer, literature-connector, parallel-delegation, manuscript-writing, bioinformatics-toolkit, conda-environments, data-inventory.</li>
+</ul>
+<p>Both engine plugins are <strong>zero-dependency</strong> (Node built-ins only) and register plain cordis tools. Installable either as a profile bundle (<code>dsh plugin add</code>) or as an agent preset (<code>科学模式</code>).</p>
+<h3>Install</h3>
+<h4>Option A — profile bundle (community standard)</h4>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-science            # after npm publish
+# or straight from GitHub:
+dsh plugin --profile web add &quot;github:biociao/dsh-science&quot;
+</code></pre>
+<p>Restart the profile (or refresh the Web GUI). The bundle inserts the two engines
+into the profile layer stack; the <code>research_*</code> / <code>artifact_*</code> tools become
+available to every agent on that profile.</p>
+<h4>Option B — agent preset (full 科学模式 experience, per-agent)</h4>
+<pre><code class="language-bash">git clone https://github.com/biociao/dsh-science ~/.dsh/.agent-presets/science
+# or from a local checkout:
+bash scripts/install.sh          # copy   (or: bash scripts/install.sh link)
+</code></pre>
+<p>Then create a session in the DSH Web GUI and pick the <strong>科学模式</strong> preset — the
+preset carries the research persona + engines with per-agent scoping.</p>
+<h4>Skills</h4>
+<p>The 10 skills are discovered automatically from a project&#39;s <code>.dsh/skills/</code>
+(drop this repo&#39;s <code>skills/</code> into your project), or install them machine-wide:</p>
+<pre><code class="language-bash">bash scripts/install-skills.sh          # -&gt; ~/.dsh/skills (respects $DSH_HOME)
+</code></pre>
+<h3>Quick start (first session)</h3>
+<ol>
+<li><code>research_init</code> — create <code>research-manifest.json</code> + the project skeleton
+(<code>experiments/ literature/ artifacts/ analyses/ figures/ manuscript/ reviews/ data/ envs/</code>).</li>
+<li>Read <code>research_state</code> at the start of every session; the loop state persists
+across sessions.</li>
+<li>Run the loop: <code>research_hypothesis</code> (H1/H2/…) → <code>research_experiment</code> (E01/…,
+creates <code>experiments/&lt;id&gt;/{design.md,log.md,code/,results/}</code>) → run code →
+<code>research_findings</code> (appends to log.md, updates hypothesis status, advances
+the loop) → <code>artifact_save</code> for anything worth citing or reproducing.</li>
+<li>For key claims: extract the claim, have a review subagent check it against the
+execution records (see the <code>scientific-reviewer</code> skill), archive with
+<code>research_review</code> (writes <code>reviews/R0n/report.md</code>).</li>
+</ol>
+<h3>Repository layout</h3>
+<pre><code>dsh-science/
+├── package.json          # dsh.bundle.patch -&gt; ./cordis.patch.yml (+ exports)
+├── cordis.patch.yml      # bundle patch: inserts the two engines by subpath export
+├── engines/              # canonical engine sources (bundle form)
+│   ├── research-loop.mjs
+│   └── artifact-registry.mjs
+├── preset/               # agent-preset form (mirrors engines/ via sync-engines.sh)
+│   ├── agent.cordis.yml  #   references ./engines/*.mjs (relative, preset mount)
+│   ├── preset.yml
+│   └── engines/          #   mirror — keep in sync: bash scripts/sync-engines.sh
+├── skills/               # 10 SKILL.md skills
+├── scripts/
+│   ├── install.sh        # install preset -&gt; ~/.dsh/.agent-presets/science
+│   ├── install-skills.sh # install skills -&gt; ~/.dsh/skills
+│   ├── sync-engines.sh   # mirror engines/ -&gt; preset/engines/
+│   ├── init-project.sh   # project skeleton without a science session
+│   └── smoke-test.mjs    # 23 checks against a temp workspace (node &gt;= 18)
+└── test/verify-bundle.sh # isolated end-to-end bundle install + boot check
+</code></pre>
+<h3>Verification</h3>
+<pre><code class="language-bash">node scripts/smoke-test.mjs     # engine logic + end-to-end loop against a temp workspace
+bash test/verify-bundle.sh      # pnpm pack -&gt; isolated profile -&gt; install -&gt; boot check
+</code></pre>
+<p>Both are part of the release checklist and are safe to run in CI (the smoke test
+writes only to a temp workspace; the bundle test uses an isolated <code>$DSH_HOME</code>).</p>
+<h3>FAQ</h3>
+<p><strong>Why subpath exports and not relative paths in the bundle?</strong>
+<code>dsh plugin add</code> installs the package into the profile and its <code>cordis.patch.yml</code>
+rows join the profile composition. The profile loader resolves a row <code>name</code>
+relative to the <strong>profile directory</strong> (not the package), so <code>./engines/x.mjs</code>
+fails with <code>ERR_MODULE_NOT_FOUND</code>. Referencing <code>dsh-science/engines/x.mjs</code>
+(subpath export, <code>exports</code> in <code>package.json</code>) resolves from the profile&#39;s
+<code>node_modules</code> and works — verified experimentally on dsh <code>0.1.0-rc.6</code>.
+The agent-preset mount, by contrast, resolves relative names from the preset
+directory, which is why <code>preset/agent.cordis.yml</code> can use <code>./engines/*.mjs</code>.</p>
+<p><strong>Bundle or preset — which should I use?</strong></p>
+<ul>
+<li>Bundle: tools available to every agent on the profile; one command to install.</li>
+<li>Preset: the full 科学模式 experience (research persona, per-agent scoping).
+The persona row in <code>cordis.patch.yml</code> is commented out because a profile-wide
+persona would apply to all agents — uncomment it before publishing if that is
+what you want.</li>
+</ul>
+<p><strong>Where do the skills come from?</strong>
+A project&#39;s <code>.dsh/skills/</code> is auto-discovered; <code>scripts/install-skills.sh</code> puts
+them machine-wide in <code>~/.dsh/skills</code> (respecting <code>$DSH_HOME</code>).</p>
+<h3>Development</h3>
+<pre><code class="language-bash">bash scripts/sync-engines.sh    # after editing engines/*.mjs — keeps preset/engines in sync
+node scripts/smoke-test.mjs     # logic + static package checks
+bash test/verify-bundle.sh      # end-to-end bundle install + boot
+</code></pre>
+<h3>Community</h3>
+<ul>
+<li>Topic: <a href="https://github.com/topics/dsh-plugin">github.com/topics/dsh-plugin</a></li>
+<li>Curated lists: <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> · <a href="https://github.com/0xsline/awesome-deepseek-harness">awesome-deepseek-harness</a></li>
+</ul>
+<h3>License</h3>
+<p>MIT — see <a href="https://github.com/biociao/dsh-science/blob/main/LICENSE">LICENSE</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/biociao/dsh-science/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

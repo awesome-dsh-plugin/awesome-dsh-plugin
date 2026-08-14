@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,84 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:lonelymoon87/dsh-code-intel</pre><button type="button" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-code-intel" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/lonelymoon87/dsh-code-intel/actions/workflows/ci.yml"><img src="https://github.com/lonelymoon87/dsh-code-intel/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/lonelymoon87/dsh-code-intel/actions/workflows/dsh-compatibility.yml"><img src="https://github.com/lonelymoon87/dsh-code-intel/actions/workflows/dsh-compatibility.yml/badge.svg" alt="Latest DSH compatibility"></a>
+<a href="https://github.com/lonelymoon87/dsh-code-intel/releases/latest"><img src="https://img.shields.io/github/v/release/lonelymoon87/dsh-code-intel" alt="Release"></a>
+<a href="https://github.com/lonelymoon87/dsh-code-intel/blob/main/LICENSE"><img src="https://img.shields.io/github/license/lonelymoon87/dsh-code-intel" alt="License"></a></p>
+<p>Symbol-aware code outline, persistent workspace indexing, and explicit lexical or embedding-assisted search for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>The installable v0.1.2 release targets DSH 0.1.0-rc.6. This project currently distributes prebuilt packages through GitHub Releases and is not published on npm.</p>
+<p><a href="https://github.com/lonelymoon87/dsh-code-intel/blob/main/README.zh-CN.md">简体中文</a></p>
+<h3>MVP</h3>
+<ul>
+<li><code>code_search</code> ranks AST symbol chunks and bounded module windows, returning <code>path:line</code>, symbol metadata, snippets, scores, and the active retrieval mode.</li>
+<li><code>code_outline</code> parses one file immediately or projects a directory from the persistent index.</li>
+<li>The first workspace search starts a cancellable <code>code-index</code> background job instead of blocking the agent turn.</li>
+<li>SQLite persistence under <code>.dsh/code-index/</code> uses DSH filesystem versions for incremental rebuilds.</li>
+<li><code>fs/observed</code> marks successful DSH file operations dirty; a Chokidar watcher covers local shell, IDE, and external changes.</li>
+<li>TypeScript, TSX, JavaScript, JSX, Python, Go, Rust, and Java use the install-script-free Tree-sitter WASM grammars published for VS Code.</li>
+<li>An optional OpenAI-compatible embedding endpoint adds cosine similarity to lexical ranking. Without it, results explicitly say <code>mode: lexical</code>.</li>
+</ul>
+<p>DeepSeek&#39;s official API does not currently expose a public embedding endpoint, so this plugin does not invent one or silently label lexical results as semantic.</p>
+<h3>Index lifecycle</h3>
+<p>On the first <code>code_search</code> or directory <code>code_outline</code>, the tool returns an <code>indexing</code> result and a job id. Inspect or wait for that job with the built-in jobs tools, then call the code tool again. File outlines do not require a complete workspace index.</p>
+<p>The cache contains derived source text and optional vectors. It stays inside the workspace, excludes <code>.dsh</code> from its own scan, and may be deleted at any time for a full rebuild. A retrieval-configuration fingerprint automatically invalidates vectors when the embedding endpoint or model changes.</p>
+<p>Source traversal and reads use the mounted DSH filesystem service. SQLite and Chokidar require the provider&#39;s <code>processPath()</code> to be accessible from the plugin host, so the MVP targets the standard local filesystem execution world. If a remote filesystem exposes paths that are not host-accessible, cache creation fails loudly instead of indexing a different directory.</p>
+<p>Node 22 currently labels the built-in SQLite module experimental. The on-disk cache is disposable and schema-versioned; source files remain the only source of truth.</p>
+<h3>Retrieval modes</h3>
+<p>Lexical mode scores exact query matches, query tokens, symbol names, and paths. Hybrid mode combines that score with cosine similarity over endpoint-produced vectors. A configured endpoint or credential failure fails the indexing job or search; fallback occurs only when embedding is not configured.</p>
+<p>Credentials are references, not secret values in YAML. The plugin resolves the reference through <code>ctx.credentials</code> for each indexing or query operation and never stores the credential.</p>
+<h3>Install</h3>
+<p>The package currently targets DSH <code>0.1.0-rc.6</code> plugin APIs and Node.js <code>^22.19 || &gt;=24</code>.</p>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/lonelymoon87/dsh-code-intel/releases/download/v0.1.2/dsh-code-intel-0.1.2.tgz
+</code></pre>
+<p>The release tarball is prebuilt and needs no build allowance. A pinned source install is also supported:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:lonelymoon87/dsh-code-intel#v0.1.2
+</code></pre>
+<p>The source install runs this package&#39;s <code>prepare</code> build. pnpm 10 and later reject it until the profile allowlists the exact package key printed by the failed command; apply that instruction and rerun the same <code>dsh plugin add</code> command. Replace <code>web</code> with <code>headless</code> to install into the one-shot agent profile.</p>
+<p>To upgrade, rerun <code>dsh plugin add</code> with the newer release URL. To uninstall:</p>
+<pre><code class="language-sh">dsh plugin --profile web remove dsh-code-intel
+</code></pre>
+<h3>Configuration</h3>
+<p>Lexical mode needs no provider configuration:</p>
+<pre><code class="language-yaml">- id: code-intel
+  name: dsh-code-intel
+  config:
+    indexDir: .dsh/code-index
+    include: [.ts, .tsx, .js, .jsx, .py, .go, .rs, .java]
+    exclude: [.dsh, .git, node_modules, dist, build, coverage, vendor]
+    maxFileSize: 1000000
+    maxChunkChars: 12000
+    maxResults: 20
+    watch: true
+    embedding: false
+</code></pre>
+<p>Hybrid mode uses a complete OpenAI-compatible embeddings URL:</p>
+<pre><code class="language-yaml">    embedding:
+      provider: openai-compatible
+      endpoint: https://embedding.example/v1/embeddings
+      model: your-embedding-model
+      credentialRef: EMBEDDING_API_KEY
+      batchSize: 32
+</code></pre>
+<p><code>indexDir</code> and exclusions must stay workspace-relative. Only the listed, parser-backed extensions are accepted in MVP.</p>
+<h3>Verification</h3>
+<p>Tests use real temporary workspaces and SQLite databases. They cover all parser families, background indexing, lexical retrieval, direct outline, <code>fs/observed</code> refresh, hybrid ranking, credential absence, vector persistence, cache replacement, and invalid configuration.</p>
+<ul>
+<li>The v0.1.2 tarball installs directly from its HTTPS release URL into a clean DSH profile.</li>
+<li>The packed bundle and pinned GitHub source install both appear in <code>dsh --dump-config</code>.</li>
+<li>CI covers Node 22.19 and Node 24; a scheduled workflow repeats the real install against <code>@deepseek-ai/dsh@latest</code>.</li>
+<li>Bugs and compatibility reports are tracked in <a href="https://github.com/lonelymoon87/dsh-code-intel/issues">GitHub Issues</a>.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/lonelymoon87/dsh-code-intel/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/lonelymoon87/dsh-code-intel/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

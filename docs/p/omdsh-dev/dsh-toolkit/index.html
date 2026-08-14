@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,166 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/dsh-toolkit</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-toolkit" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/omdsh-dev/dsh-toolkit/blob/main/README.en.md">English</a></p>
+<p>DSH 零依赖工具包 collection —— time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十个确定性工具，<strong>统一入口一键安装</strong>。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-toolkit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
+<h3>为什么</h3>
+<p>DSH 生态仓库持续增长，单插件在 hub 中容易被淹没；collection 分类是辨识度最高的形态。本仓库把 10 个工具插件 <strong>vendored 冻结</strong>为发布态快照（各子仓库独立演进，均位于 <a href="https://github.com/omdsh-dev">omdsh-dev</a> 组织下公开），统一工程、统一测试、统一维护。</p>
+<p><strong>定位（官方 Profile Bundle 生态方向）</strong>：本仓库是 <strong>collection 与安装辅助仓库</strong>——每个子包都是可独立安装/启用/禁用/卸载的 bundle（<code>dsh plugin --profile &lt;p&gt; add &lt;子包&gt;</code>）；collection 提供目录、清单与批量安装脚本。meta 包 <code>@deepseek-ai/dsh-toolkit</code> 保留为<strong>可选</strong>的原子挂载模型（见下文两种运行模型）。</p>
+<h3>工具一览</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>能力</th>
+<th>用例数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>ISO 8601 / 时区 / 日历运算 / 时长差</td>
+<td>65</td>
+</tr>
+<tr>
+<td><code>encoding</code></td>
+<td>base64 / url / hex / hash / UUID</td>
+<td>46</td>
+</tr>
+<tr>
+<td><code>json</code></td>
+<td>JMESPath 子集查询</td>
+<td>66</td>
+</tr>
+<tr>
+<td><code>calculator</code></td>
+<td>安全数学表达式求值（无 eval）</td>
+<td>31</td>
+</tr>
+<tr>
+<td><code>csv</code></td>
+<td>RFC 4180 解析 / 查询 / 统计（严格引号）</td>
+<td>50</td>
+</tr>
+<tr>
+<td><code>regex</code></td>
+<td>测试 / 提取 / 替换 / 静态解释（worker 硬超时）</td>
+<td>63</td>
+</tr>
+<tr>
+<td><code>markdown</code></td>
+<td>HTML↔Markdown / GFM 表格 / 目录生成（白名单安全）</td>
+<td>71</td>
+</tr>
+<tr>
+<td><code>diff</code></td>
+<td>文本/JSON/CSV/Markdown 结构化比较与 unified diff（只读）</td>
+<td>124</td>
+</tr>
+<tr>
+<td><code>stat</code></td>
+<td>描述统计 / 百分位数 / 频数分布 / 相关性（零依赖确定性）</td>
+<td>82</td>
+</tr>
+<tr>
+<td><code>schema</code></td>
+<td>JSON Schema 验证 / 路径 / 解释 / 安全 default（零网络零动态）</td>
+<td>125</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td><strong>723</strong></td>
+</tr>
+</tbody></table>
+<h3>架构</h3>
+<pre><code>dsh-toolkit/
+├── src/index.ts          # meta 包：相对路径动态导入 10 个子包 apply()，聚合注册
+├── packages/dsh-tool-*   # vendored 子包（发布态快照，name 保持 @deepseek-ai/dsh-tool-*）
+├── scripts/
+│   ├── link-deps.sh      # 构建期 junction（cordis → vendor/cordis，dsh-tools → packages/core/tools）
+│   ├── build-all.sh      # 一键构建 10 子包 + meta 包（tsc）
+│   ├── test-all.sh       # 一键跑 10 子包 vitest（合计用例数）
+│   ├── install.sh        # meta / 逐包两种挂载模式（含 dry-run）
+│   ├── install-web.sh    # 独立 bundle 批量安装 → web profile
+│   ├── install-headless.sh # 独立 bundle 批量安装 → headless profile
+│   └── install-all.sh    # web + headless 都装
+├── catalog.json          # collection 清单（hub collection 分类识别依据）
+└── tsconfig.base.json    # 共享编译配置（固化踩坑经验）
+</code></pre>
+<blockquote>
+<p>与实施文档方案 A 的工程化适配：子包为私有未发布包，peer 名解析在 profile 内不可行，
+故 meta 包采用<strong>相对路径动态导入</strong>（零解析魔法、打包自足）；子包 runtime 依赖
+（<code>@deepseek-ai/dsh-tools</code>）在 npm 独立模式（默认）下不依赖 DSH monorepo，monorepo 模式经子包构建期 junction 解析。</p>
+</blockquote>
+<h3>安装</h3>
+<p>仓库位于 <a href="https://github.com/omdsh-dev/dsh-toolkit">omdsh-dev/dsh-toolkit</a>（public）。</p>
+<h4>独立 bundle 模型（推荐）</h4>
+<p>每个子包独立安装、启用、禁用、卸载：</p>
+<pre><code class="language-sh"># 安装单个工具到 web profile
+dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv
+# 一次性任务（headless）profile
+dsh plugin --profile headless add github:omdsh-dev/dsh-tool-diff
+</code></pre>
+<p>批量安装（collection 辅助脚本，幂等——重复执行不会重复添加）：</p>
+<pre><code class="language-sh">./scripts/install-web.sh       # 全部 10 工具 → web profile
+./scripts/install-headless.sh  # 全部 10 工具 → headless profile（dsh run 使用面）
+./scripts/install-all.sh       # 两个 profile 都装
+</code></pre>
+<p>验证与运行：</p>
+<pre><code class="language-sh">dsh --profile web --dump-config | grep tool-csv     # 行存在即安装成功
+dsh run &quot;使用 csv 工具解析 &#39;a,b\n1,2&#39;&quot;               # headless 端到端
+</code></pre>
+<blockquote>
+<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless。
+Windows 路径使用正斜杠（<code>C:/...</code>）。</p>
+</blockquote>
+<h4>npm pack tarball 安装</h4>
+<p>本地构建后用 tarball 路径安装（不依赖 GitHub）：</p>
+<pre><code class="language-sh"># tarball 方式（web 为例；headless 同）
+npm pack
+dsh plugin --profile web add &lt;npm pack 产物 tarball 路径&gt;
+</code></pre>
+<h4>meta bundle 模型（可选）</h4>
+<p>需要一次原子挂载全部工具时，挂载根 meta 包：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:omdsh-dev/dsh-toolkit
+dsh --profile web --dump-config | grep tool-kit
+</code></pre>
+<blockquote>
+<p>⚠️ 若 profile 已单独挂载过同名插件（tool-time/.../tool-diff/tool-stat/tool-schema），挂 meta 包会注册重名报错——
+此时先移除旧插件，或用独立 bundle 模型。meta apply 具备原子性（任一子插件失败时
+逆序回滚已注册工具，不残留部分状态）。</p>
+</blockquote>
+<h4>手动安装与旧版本兼容</h4>
+<p>旧场景（monorepo 集成、不支持 Profile Bundle 的旧快照或插件开发调试环境——本地 junction/symlink、手动编辑 profile 层）。</p>
+<h3>构建与测试</h3>
+<p><strong>npm 独立模式（默认，推荐）</strong>：无需 DSH monorepo；<code>npm install</code>（devDependencies 自包含）后即可：</p>
+<pre><code class="language-bash">npm run build:all           # 10 子包 + meta 包 tsc + 产物完整性验证（无 .ts 残留导入、10+1 个 lib/index.js）
+bash scripts/test-all.sh    # 10 子包 vitest 全量（723 用例）；任一失败整体非零退出
+npm pack                    # prepack 自包含（build:all），tarball 含 lib + 10 个子包
+</code></pre>
+<p><strong>monorepo 模式（可选：源码贡献/旧 snapshot）</strong>：显式提供 DSH monorepo 根：</p>
+<pre><code class="language-bash">export DSH_MONOREPO=&lt;DSH 0.1.0-rc.6（npm）安装路径&gt;   # 或作为第一个参数
+bash scripts/build-all.sh   # link-deps + 10 子包 + meta 包 tsc + 产物完整性验证
+bash scripts/test-all.sh
+</code></pre>
+<blockquote>
+<p><code>prepack</code> 已指向 <code>build:all</code>（完整构建 10 子包 + meta），保证发布 tarball 含全部运行入口。
+npm 0.1.0-rc.6 兼容（已验证）：peer 全部为 <code>@deepseek-ai/cordis@^4.0.1</code> 等 scoped 包；已在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 隔离 consumer 中完成 profile compose（tool-kit row）与 10 工具真实注册/执行验证。</p>
+</blockquote>
+<h3>同步 vendored（子仓库有更新时）</h3>
+<p>把 <code>packages/&lt;name&gt;</code> 与源仓库重新同步（src/tests/package.json/tsconfig/cordis.patch.yml/LICENSE/README.md），并在 README 标注子包版本。</p>
+<h3>新增工具</h3>
+<p>见 <a href="https://github.com/omdsh-dev/dsh-toolkit/blob/main/docs/CONTRIBUTING.md">docs/CONTRIBUTING.md</a>：复制模板子包 → 实现 → 测试 → build-all 验证 → 更新 catalog.json。</p>
+<h3>许可</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-toolkit/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

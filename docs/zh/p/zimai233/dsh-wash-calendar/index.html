@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,176 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zimai233/dsh-wash-calendar</pre><button type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-wash-calendar" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>用于 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的周期性习惯打卡日历。</p>
+<p>把「上次洗护日期 + 间隔天数」变成四个可被 Agent 直接调用的工具：下一次提醒、区间排期、单日校验、文字建议。无需任何前端页面，直接在对话中管理所有周期性健康习惯。</p>
+<h3>为什么</h3>
+<p>DSH 插件生态中 <strong>health/habit（健康/习惯）分类是空的</strong>——没有任何插件能帮 Agent 计算周期性的习惯排期。本插件填补了这个空缺：它把洗护日历的日期数学（ISO 日期辅助、间隔推算、排期枚举）提炼为四个工具，覆盖「下次啥时候、这段区间内有哪些天、某天是不是、现在该怎么办」四个问题。</p>
+<h3>功能</h3>
+<ul>
+<li><strong><code>habit_next</code></strong> — 计算今天之后的下一次习惯日，返回 <code>{ nextDate, daysUntil }</code>。</li>
+<li><strong><code>habit_schedule</code></strong> — 枚举某段日期区间内所有计划中的习惯日（含首尾）。</li>
+<li><strong><code>habit_check</code></strong> — 校验某一天是否是排期日，并给出距上次的天数 <code>{ scheduled, daysSince }</code>。</li>
+<li><strong><code>habit_advice</code></strong> — 直接返回一句中文建议：「今日洗护」「距下次洗护还有 N 天」「已逾期 N 天，建议尽快」。</li>
+<li>零构建步骤——纯 ESM，发布的包就是运行时代码。无 <code>prepare</code> 脚本、无需构建权限。</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-bash"># 从 npm 安装
+dsh plugin --profile myprofile add dsh-wash-calendar
+
+# 从 GitHub 安装（锁定 commit，保障供应链卫生）
+dsh plugin --profile myprofile add github:zimai233/dsh-wash-calendar#&lt;sha&gt;
+</code></pre>
+<h3>用法</h3>
+<p>用自然语言告诉 Agent：</p>
+<blockquote>
+<p>「我上次洗护是 2026-08-01，每 4 天一次。今天该不该洗？下次是哪天？帮我列出 8 月剩下的排期。」</p>
+</blockquote>
+<p>Agent 会依次调用：</p>
+<pre><code class="language-json">// habit_check
+{ &quot;dateISO&quot;: &quot;2026-08-14&quot;, &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4 }
+// -&gt; {&quot;scheduled&quot;:false,&quot;daysSince&quot;:13}
+
+// habit_next
+{ &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4, &quot;today&quot;: &quot;2026-08-14&quot; }
+// -&gt; {&quot;nextDate&quot;:&quot;2026-08-17&quot;,&quot;daysUntil&quot;:3}
+
+// habit_schedule
+{ &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4, &quot;startISO&quot;: &quot;2026-08-14&quot;, &quot;endISO&quot;: &quot;2026-08-31&quot; }
+// -&gt; [&quot;2026-08-17&quot;,&quot;2026-08-21&quot;,&quot;2026-08-25&quot;,&quot;2026-08-29&quot;]
+
+// habit_advice
+{ &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4, &quot;today&quot;: &quot;2026-08-14&quot; }
+// -&gt; &quot;已逾期 9 天，建议尽快&quot;
+</code></pre>
+<p>洗护之外的场景同样适用：浇花、喂鱼、换药、锻炼、大扫除……任何「上次时间 + 固定间隔」的周期性习惯。</p>
+<h3>工具参考</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>参数</th>
+<th>返回</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>habit_next</code></td>
+<td><code>lastDate</code> (string, 必填), <code>interval</code> (number, 必填, 1-7), <code>today?</code> (string, 默认今天)</td>
+<td><code>{ nextDate, daysUntil }</code></td>
+</tr>
+<tr>
+<td><code>habit_schedule</code></td>
+<td><code>lastDate</code>, <code>interval</code>, <code>startISO</code>, <code>endISO</code> (均必填)</td>
+<td>排期 ISO 日期数组</td>
+</tr>
+<tr>
+<td><code>habit_check</code></td>
+<td><code>dateISO</code>, <code>lastDate</code>, <code>interval</code> (均必填)</td>
+<td><code>{ scheduled, daysSince }</code></td>
+</tr>
+<tr>
+<td><code>habit_advice</code></td>
+<td><code>lastDate</code>, <code>interval</code>, <code>today?</code> (默认今天)</td>
+<td>纯文本建议</td>
+</tr>
+</tbody></table>
+<p>日期一律使用 <code>YYYY-MM-DD</code> ISO 格式；<code>interval</code> 表示相邻两次之间的天数（1-7）。</p>
+<h3>开发</h3>
+<pre><code class="language-bash">npm install
+npm test          # 对纯函数核心运行 node:test 测试
+npm run pack      # 预演发布（等价于 pnpm pack）
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+<hr>
+<h2>dsh-wash-calendar</h2>
+<p>Recurring habit scheduling calendar for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>Turn a &quot;last occurrence + interval&quot; pair into four agent-callable tools: next reminder, range schedule, single-day check, and plain-text advice — for any recurring health/habit routine, directly from your conversation.</p>
+<h3>Why</h3>
+<p>The <strong>health/habit category is empty in the DSH plugin ecosystem</strong> — no plugin helps an agent compute recurring habit schedules. This plugin fills that gap: it extracts the wash-calendar&#39;s date math (ISO date helpers, recurrence computation, schedule enumeration) into four tools answering &quot;when is next&quot;, &quot;which days in this range&quot;, &quot;is this day one&quot;, and &quot;what should I do now&quot;.</p>
+<h3>Features</h3>
+<ul>
+<li><strong><code>habit_next</code></strong> — next occurrence strictly after today, returning <code>{ nextDate, daysUntil }</code>.</li>
+<li><strong><code>habit_schedule</code></strong> — every scheduled date inside an inclusive range.</li>
+<li><strong><code>habit_check</code></strong> — is a given date a scheduled occurrence, plus days since the anchor.</li>
+<li><strong><code>habit_advice</code></strong> — a short text recommendation: &quot;今日洗护&quot; (wash today), &quot;距下次洗护还有 N 天&quot; (N days to go), or &quot;已逾期 N 天，建议尽快&quot; (overdue by N days).</li>
+<li>Zero build step — pure ESM, the published package is the runtime code. No <code>prepare</code> script, no build permission needed.</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-bash"># from npm
+dsh plugin --profile myprofile add dsh-wash-calendar
+
+# from GitHub (lock the commit for supply-chain hygiene)
+dsh plugin --profile myprofile add github:zimai233/dsh-wash-calendar#&lt;sha&gt;
+</code></pre>
+<h3>Usage</h3>
+<p>Ask the agent in natural language:</p>
+<blockquote>
+<p>&quot;My last wash was 2026-08-01, every 4 days. Should I wash today? When is next? List the remaining August schedule.&quot;</p>
+</blockquote>
+<p>The agent calls:</p>
+<pre><code class="language-json">// habit_check
+{ &quot;dateISO&quot;: &quot;2026-08-14&quot;, &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4 }
+// -&gt; {&quot;scheduled&quot;:false,&quot;daysSince&quot;:13}
+
+// habit_next
+{ &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4, &quot;today&quot;: &quot;2026-08-14&quot; }
+// -&gt; {&quot;nextDate&quot;:&quot;2026-08-17&quot;,&quot;daysUntil&quot;:3}
+
+// habit_schedule
+{ &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4, &quot;startISO&quot;: &quot;2026-08-14&quot;, &quot;endISO&quot;: &quot;2026-08-31&quot; }
+// -&gt; [&quot;2026-08-17&quot;,&quot;2026-08-21&quot;,&quot;2026-08-25&quot;,&quot;2026-08-29&quot;]
+
+// habit_advice
+{ &quot;lastDate&quot;: &quot;2026-08-01&quot;, &quot;interval&quot;: 4, &quot;today&quot;: &quot;2026-08-14&quot; }
+// -&gt; &quot;已逾期 9 天，建议尽快&quot;
+</code></pre>
+<p>Works for far more than washing: watering plants, feeding fish, refilling medication, exercising, cleaning — any recurring &quot;last time + fixed interval&quot; habit.</p>
+<h3>Tool Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Parameters</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>habit_next</code></td>
+<td><code>lastDate</code> (string, required), <code>interval</code> (number, required, 1-7), <code>today?</code> (string, default today)</td>
+<td><code>{ nextDate, daysUntil }</code></td>
+</tr>
+<tr>
+<td><code>habit_schedule</code></td>
+<td><code>lastDate</code>, <code>interval</code>, <code>startISO</code>, <code>endISO</code> (all required)</td>
+<td>Array of scheduled ISO dates</td>
+</tr>
+<tr>
+<td><code>habit_check</code></td>
+<td><code>dateISO</code>, <code>lastDate</code>, <code>interval</code> (all required)</td>
+<td><code>{ scheduled, daysSince }</code></td>
+</tr>
+<tr>
+<td><code>habit_advice</code></td>
+<td><code>lastDate</code>, <code>interval</code>, <code>today?</code> (default today)</td>
+<td>Plain-text recommendation</td>
+</tr>
+</tbody></table>
+<p>All dates use <code>YYYY-MM-DD</code> ISO format; <code>interval</code> is the days between consecutive occurrences (1-7).</p>
+<h3>Development</h3>
+<pre><code class="language-bash">npm install
+npm test          # runs node:test against the pure core
+npm run pack      # dry-run publish (pnpm pack equivalent)
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zimai233/dsh-wash-calendar/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

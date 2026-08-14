@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,48 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:lehhair/dsh-diff-viewer</pre><button type="button" data-cmd="dsh plugin --profile web add github:lehhair/dsh-diff-viewer" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH Web GUI 的 PiUI 风格 diff 查看器插件：替换 write/edit 工具调用的 diff 渲染（原 DiffBlock）。</p>
+<ul>
+<li><strong>unified 单栏默认</strong>：同一 gutter 并排显示旧/新行号，无左右错位；split 双栏可选（<code>viewMode</code>）</li>
+<li><strong>变更条</strong>：新增实心绿条、删除条纹红条；行背景色带统一延伸到最宽行</li>
+<li><strong>词级高亮</strong>：行内改动叠加绿/红标记，shiki 语法着色（<code>highlightLines</code>）</li>
+<li><strong>上下文折叠</strong>：长段未变更行折叠为&quot;<code>N 行未变更</code>&quot;，向上/向下/全部展开</li>
+<li><strong>窗口化渲染</strong>：固定行高窗口化，大 diff 不挂载全部行；sticky 横向滚动条（hover 显现）</li>
+<li><strong>复制 + <code>└ +A -R · N file(s)</code> 页脚</strong></li>
+</ul>
+<h3>机制</h3>
+<p>插件通过 <strong>keyed 接管</strong>替换 write/edit 的工具行渲染：ui-tool 的 <code>tool.call.toolview</code> 槽是开放 key 域，同一 key 以<strong>更低 priority 阴影</strong>（最低优先渲染）。插件注册 <code>edit</code>/<code>write</code> 键（priority -1），接管后的行<strong>完全复刻官方 FileMutationRow</strong>（复用官方 ToolRow 样式 + DisclosureRow/StateDot 等平台组件），只把展开后的 diff 卡换成 PiUI 风格 DiffViewer——<strong>不改任何核心，纯插件</strong>，卸载即还原官方行。</p>
+<ul>
+<li><strong>不限制高度</strong>：展开的 diff 直接撑开显示完整内容（不套滚动容器），窗口化渲染保证超大 diff 依然高效</li>
+<li><strong>diff 数据</strong>：从工具调用的 <code>callView</code>/<code>resultView</code> 的 <code>card:&#39;diff&#39;</code> 意图提取（running 用调用时 diff，settled 用应用后的 hunks）；执行错误（无 diff 卡）走官方行的错误摘要 + IN/OUT 卡</li>
+</ul>
+<h3>效果</h3>
+<h3>安装</h3>
+<h4>任意 dsh 版本（纯插件）</h4>
+<pre><code class="language-sh"># 直接安装插件（path/tarball/github 均可）
+dsh plugin --profile web add E:\dev\dsh-diff-viewer   # 或 tarball / github:lehhair/dsh-diff-viewer
+
+# 重启 dsh web 生效
+dsh web
+</code></pre>
+<blockquote>
+<p>Windows 注意：<code>dsh plugin add &lt;本地目录&gt;</code> 的 <code>link:</code> 绝对路径有 junction bug（pnpm 拼错目标）。用 <strong>tarball</strong>（<code>npm pack</code> 后 <code>dsh plugin add *.tgz</code>）或 GitHub 安装可绕过。</p>
+</blockquote>
+<h3>卸载</h3>
+<pre><code class="language-sh">dsh plugin --profile web remove @dsh-external/dsh-diff-viewer
+</code></pre>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install &amp;&amp; pnpm run check    # typecheck + test + build
+</code></pre>
+<p>测试需要 workspace 内的 <code>@deepseek-ai/dsh-*</code> 包（devDependencies 用 <code>link:</code> 指向 <code>../dsh2026/deepseek-harness</code>，vitest alias 统一 react 单实例；接管行复用 ui-tool 的 <code>ToolRow.module.css</code>，经包导出的 src 子路径内联进 bundle）。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/lehhair/dsh-diff-viewer/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

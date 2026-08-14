@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,79 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:stevenx65/dsh-balance-plugin</pre><button type="button" data-cmd="dsh plugin --profile web add github:stevenx65/dsh-balance-plugin" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>A DeepSeek Harness (dsh) web plugin: shows <strong>DeepSeek API balance</strong> and <strong>token usage</strong> at the bottom of the web sidebar (port 3080), with a <strong>Today / All-time</strong> toggle, filtered by provider (only <code>deepseek-official</code>, ignoring other vendors).</p>
+<h3>Features</h3>
+<ul>
+<li>💰 Balance: calls DeepSeek&#39;s official <code>GET /user/balance</code>, reusing dsh&#39;s credentials (<code>~/.dsh/.credentials.yaml</code>) — no manual key entry</li>
+<li>📊 Token usage: reads dsh session logs (<code>session.jsonl.zstd</code>), aggregates by provider<ul>
+<li>Uncached input / cache read / output / model call count</li>
+</ul>
+</li>
+<li>🔄 Today / All-time toggle: today (Beijing time) or full history</li>
+<li>🎨 Auto-adapts to light/dark theme + refresh button + close button</li>
+</ul>
+<h3>Screenshot</h3>
+<p><img src="https://raw.githubusercontent.com/stevenx65/dsh-balance-plugin/main/docs/screenshot.png" alt="dsh-balance-plugin"></p>
+<h3>Install (from the plugin market)</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-balance-plugin
+</code></pre>
+<p>Restart <code>dsh web</code>, then refresh the page — a balance button appears at the bottom of the sidebar.</p>
+<h3>Architecture</h3>
+<pre><code>Browser (3080 page)
+  client.js ──fetch──▶ /dsh-balance/data?scope=today|all
+                              │
+node side (index.js, inside the dsh process)
+  ├── credentials.resolve(&quot;DEEPSEEK_API_KEY&quot;)  ← reuses dsh&#39;s key
+  ├── fetch(https://api.deepseek.com/user/balance)
+  └── decompress ~/.dsh/sessions/*/*/session.jsonl.zstd
+      filter assistant/message rows + provider=deepseek-official
+</code></pre>
+<ul>
+<li><code>index.js</code>: node-side cordis plugin, registers HTTP route <code>/dsh-balance/data</code></li>
+<li><code>client.js</code>: browser-side plugin, injects into <code>sidebar.footer.action</code> (sidebar bottom button + floating panel)</li>
+<li><code>package.json</code>: <code>dsh.bundle</code> + <code>dsh.client.platform: &quot;web&quot;</code> + <code>exports[&quot;./client&quot;]</code></li>
+<li><code>cordis.patch.yml</code>: bundle patch registering the node entry</li>
+</ul>
+<h3>Manual install</h3>
+<pre><code class="language-sh">mkdir -p ~/.dsh/profiles/web/node_modules/dsh-balance-plugin
+cp index.js client.js cordis.patch.yml package.json ~/.dsh/profiles/web/node_modules/dsh-balance-plugin/
+</code></pre>
+<p>Then add to <code>~/.dsh/profiles/web/cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- insert:
+    - id: dsh-balance
+      name: dsh-balance-plugin
+</code></pre>
+<p>Restart <code>dsh web</code> and refresh the browser.</p>
+<h3>Dependencies</h3>
+<ul>
+<li>node side: Node built-ins only (<code>node:fs</code>, <code>node:child_process</code>, <code>node:path</code>); requires the <code>zstd</code> CLI for decompressing session logs</li>
+<li>browser side: <code>@deepseek-ai/dsh-client-ui-primitives</code> (peer dep, ships with dsh 0.1.0-rc.6)</li>
+</ul>
+<h3>Data source</h3>
+<p>Session logs at <code>~/.dsh/sessions/&lt;scope&gt;/&lt;session-id&gt;/session.jsonl.zstd</code>. Each <code>assistant/message</code> row:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;assistant/message&quot;,
+  &quot;time&quot;: 1786635270943,
+  &quot;data&quot;: {
+    &quot;message&quot;: { &quot;source&quot;: { &quot;kind&quot;: &quot;model&quot;, &quot;provider&quot;: &quot;deepseek-official&quot;, &quot;model&quot;: &quot;deepseek-v4-pro&quot; } },
+    &quot;usage&quot;: { &quot;inputTokens&quot;: 8702, &quot;outputTokens&quot;: 298, &quot;cacheReadTokens&quot;: 0 }
+  }
+}
+</code></pre>
+<h3>Pack</h3>
+<pre><code class="language-sh">npm pack   # produces dsh-balance-plugin-0.1.0.tgz
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/stevenx65/dsh-balance-plugin/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

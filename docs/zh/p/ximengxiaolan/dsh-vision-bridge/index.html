@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,61 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ximengxiaolan/dsh-vision-bridge</pre><button type="button" data-cmd="dsh plugin --profile web add github:ximengxiaolan/dsh-vision-bridge" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>让纯文本模型（DeepSeek V4 / V4-Flash）在对话里&quot;看见&quot;图片：<strong>在输入框直接粘贴图片并发送，插件自动调用一个 OpenAI 兼容的视觉模型（VLM）把图片识别成文字描述，再把描述喂给 DeepSeek 继续处理。</strong></p>
+<p>会话中图片照常显示；只有发给模型的内容变成文字。</p>
+<h3>原理</h3>
+<p>DSH 对纯文本模型会在提交时拒绝图片（<code>MODEL_DOES_NOT_SUPPORT_IMAGES</code>）。本插件打通两个官方扩展点：</p>
+<ol>
+<li><strong>准入放行</strong>：给 <code>ctx.llm.resolveModelInfo</code> 打补丁，声明当前模型支持 <code>image</code> 输入，让图片附件能进入会话。</li>
+<li><strong>发模型前转换</strong>：包装 <code>llm.streamWithRegistration</code>，每次请求发往模型前扫描所有消息中的图片块，调用配置的 VLM 生成文字描述，替换成：</li>
+</ol>
+<pre><code>[用户附上的图片已由视觉模型自动识别（qwen-vl-max）]
+&lt;描述内容&gt;
+</code></pre>
+<p>如果路由到的模型<strong>原生支持图片</strong>，则放行原图、不做转换。</p>
+<h3>安装</h3>
+<pre><code class="language-sh"># 前置：dsh CLI 与 pnpm
+dsh plugin --profile web add dsh-vision-bridge
+# 或从 git 安装：
+dsh plugin --profile web add https://github.com/&lt;your-name&gt;/dsh-vision-bridge
+</code></pre>
+<p>安装后重启 profile（<code>dsh web</code>）。</p>
+<h3>配置</h3>
+<p>唯一需要的是一个 <strong>OpenAI 兼容多模态模型</strong>（<code>/chat/completions</code> + <code>image_url</code>），例如阿里云百炼 <code>qwen-vl-max</code>、智谱 GLM-4V 等。</p>
+<p>环境变量：</p>
+<pre><code class="language-powershell">$env:VISION_API_KEY  = &quot;sk-...&quot;
+$env:VISION_BASE_URL = &quot;https://dashscope.aliyuncs.com/compatible-mode/v1&quot;
+$env:VISION_MODEL    = &quot;qwen-vl-max&quot;
+$env:VISION_LANG     = &quot;zh&quot;   # zh | en
+</code></pre>
+<p>或在 profile 的 <code>cordis.patch.yml</code> 中配置（优先于环境变量）：</p>
+<pre><code class="language-yaml">- id: dsh-vision-bridge
+  config:
+    apiKey: &#39;sk-...&#39;
+    baseURL: &#39;https://dashscope.aliyuncs.com/compatible-mode/v1&#39;
+    model: &#39;qwen-vl-max&#39;
+    lang: zh
+    timeoutMs: 180000
+    enabled: true
+</code></pre>
+<h3>使用</h3>
+<p>重启后直接在输入框粘贴图片并发送即可。DeepSeek 会基于视觉模型的描述继续处理。</p>
+<h3>说明</h3>
+<ul>
+<li>同一张图片（按 attachmentId）在同一进程内缓存描述，重复发送不重复计费。</li>
+<li>VLM 调用失败时降级为 <code>[图片识别失败: 原因]</code>，对话不会中断。</li>
+<li>子智能体会话（subagent）仍受 DSH 内核限制，不支持贴图。</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ximengxiaolan/dsh-vision-bridge/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,60 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Sanqi-normal/dsh-webui-market-plugin</pre><button type="button" data-cmd="dsh plugin --profile web add github:Sanqi-normal/dsh-webui-market-plugin" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>在 dsh web GUI 内部的社区插件市场：浏览 <a href="https://awesome-dsh-plugin.com/">awesome-dsh-plugin.com</a> 的插件目录，直接在 <strong>设置 → 插件 → 插件市场</strong> 里安装 / 卸载插件到 profile。界面风格与 harness 前端一致（跟随系统深浅色主题），支持中英文（按系统语言自动切换）。</p>
+<p>An in-harness community plugin market for the dsh web GUI: browse the awesome-dsh-plugin.com catalog and install/uninstall plugins into a profile from <strong>Settings → Plugins → Plugin Market</strong>.</p>
+<h3>推荐 Recommended</h3>
+<p>本插件为社区独立实现，<strong>推荐优先使用网站官方实现 <a href="https://github.com/dsh-market/dsh-market">dsh-market</a></strong>（由 awesome-dsh-plugin.com 维护者开发，功能一致、维护更活跃）。</p>
+<p>A community implementation — <strong>prefer the official <a href="https://github.com/dsh-market/dsh-market">dsh-market</a></strong> by the awesome-dsh-plugin.com maintainer (same functionality, more actively maintained).</p>
+<h3>效果展示 Screenshot</h3>
+<p><img src="https://raw.githubusercontent.com/Sanqi-normal/dsh-webui-market-plugin/master/img/7f0810a3710382f3810e9aa42f160cc1.png" alt="插件市场效果"></p>
+<h3>安装 Install</h3>
+<p>方式一：从 <strong>npm registry</strong> 安装（推荐，无 git 克隆 / prepare 脚本步骤）：</p>
+<pre><code class="language-sh">dsh plugin --profile web add @sanqi-normal/dsh-webui-market-plugin
+</code></pre>
+<p>方式二：从 GitHub 源码安装：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:Sanqi-normal/dsh-webui-market-plugin
+</code></pre>
+<p>安装后<strong>重启 web 服务</strong>生效：</p>
+<pre><code class="language-sh">pnpm dsh web
+</code></pre>
+<p>GitHub 源安装会执行包内 prepare 脚本，如被 pnpm 拦截，把提示的包名加入 profile 的 <code>pnpm-workspace.yaml</code> 的 <code>allowBuilds</code> 后重试。</p>
+<h3>使用 Usage</h3>
+<p>打开 <strong>设置（Settings）→ 插件（Plugins）→ 插件市场（Plugin Market）</strong>：</p>
+<ul>
+<li>目录按分类分组，支持搜索与&quot;已安装&quot;过滤；每个卡片显示 GitHub Star 数（无数据不显示），可一键按 <strong>最热（Star 降序，无 Star 的排最后）/ 最新（收录日期）</strong> 排序，或恢复官网默认顺序</li>
+<li>点 <strong>详情</strong> 查看该插件的官方安装命令（含目标 profile）</li>
+<li><strong>安装 / 卸载</strong> 以弹窗形式确认，任务后台执行、实时显示 pnpm 输出，可最小化到后台、随时终止；超过 120 秒自动超时报错</li>
+<li>每个插件卡片显示真实的已安装状态（与 profile 的 <code>package.json</code> 同步）</li>
+<li>顶部显示插件目录来源官网链接，可直接打开</li>
+</ul>
+<h3>工作原理 How it works</h3>
+<p>持久化 bundle（<code>package.json</code> 的 <code>dsh.bundle.patch</code> → <code>cordis.patch.yml</code>），由 <code>dsh plugin add</code> 的 reconcile 自动加入 profile 的 <code>dsh.profile.bundles</code> 层：</p>
+<ul>
+<li><strong>Host 半</strong>（<code>lib/host.js</code>）：注册 <code>/api/dsh-market</code> 路由，提供 <code>list</code>（读取官网 JSON API <code>plugins.json</code>，失败回退静态页解析 / 离线快照，含 stars/added）、<code>probe</code>（环境探测）、<code>installed</code>（读取 profile package.json）、<code>install</code> / <code>uninstall</code>（后台 spawn <code>dsh plugin</code> CLI）、<code>op</code>（轮询任务状态）、<code>kill</code>（终止任务）</li>
+<li><strong>Client 半</strong>（<code>lib/client.js</code>）：通过 <code>exports[&quot;./client&quot;]</code> + <code>dsh.client</code> 声明被 web 前端加载，注册到 <code>settings.plugins.tab</code> 槽位</li>
+</ul>
+<h3>安全与限制 Safety and limitations</h3>
+<ul>
+<li><strong>来源白名单</strong>：安装只接受精选目录（awesome-dsh-plugin.com curated registry）收录的 <code>github:</code> 源，目录外的一律拒绝，与 <a href="https://github.com/dsh-market/dsh-market">dsh-market</a> 的白名单策略一致（目录抓取失败或 registry/link 源不做此限制）</li>
+<li><strong>试装验证（trial boot）</strong>：白名单通过后，若插件未声明 web client 半端（<code>dsh.client.platform === &#39;web&#39;</code>），会先做<strong>试装验证</strong>：在临时 DSH_HOME 里按 web profile 模板重建组合，用同一套 <code>dsh plugin add</code> 装入候选插件，再以 <code>--port 0</code>（系统空闲端口）实际启动一次，只有出现 <code>dsh web:</code> 就绪行（Loader 树成功结算后才打印）才判定可装。验证失败会给出<strong>真实的启动错误</strong>（如重复 api-gateway / webserver 等）并拒绝安装，此时真实 profile 从未被写入、试装目录自动清理，无需任何回退操作</li>
+<li><strong>同源校验</strong>：<code>install</code> / <code>uninstall</code> / <code>update</code> / <code>kill</code> 写操作只接受同源 POST（Origin 头与 Host 一致），跨源请求一律 403</li>
+<li><strong>热挂载（免重启）</strong>：安装成功后，若新插件的 <code>cordis.patch.yml</code> 是纯 <code>id</code>/<code>name</code> 插入行，会尝试挂入运行中的组合并<strong>自动刷新页面生效</strong>（无需手动操作）；patch 复杂或环境不支持时回退&quot;重启生效&quot;。热挂载输入存于 <code>&lt;profile&gt;/.dsh-market/</code>，每次启动自动清理</li>
+<li><strong>更新检测与更新</strong>：已安装插件卡片自动显示&quot;更新&quot;按钮（github 源对比 lockfile 锁定 commit 与 GitHub HEAD；registry 源对比 npm latest 与已装版本；本地 link/file 源不检测），点击即重新解析最新版本并作为后台任务执行，完成后下次重启生效；检测失败静默降级为&quot;无更新&quot;，不会阻塞列表</li>
+<li><strong>离线目录快照</strong>：<code>data/catalog-snapshot.json</code> 作为官网抓取失败时的离线兜底，可用 <code>pnpm run snapshot</code> 刷新</li>
+<li><strong>安装前自动快照</strong>：写入真实 profile 前会把 <code>package.json</code> 备份为同目录 <code>.mkts-snapshot-&lt;时间戳&gt;.json</code>，配合 <code>dsh plugin --profile web remove &lt;包名&gt;</code> 可手工回退</li>
+<li><strong>CI=true</strong>：pnpm 子进程以 CI 模式运行，避免无 TTY 时静默卡在交互提示</li>
+<li>安装 / 卸载后需重启 web 服务生效（热挂载成功的除外，本插件不做自动重启）</li>
+<li>目录数据优先来自官网 JSON API（<code>plugins.json</code>，与 <a href="https://github.com/dsh-market/dsh-market">dsh-market</a> 同源，含 Star 数），API 不可用时回退官网静态页解析，再回退内置离线快照；插件数量与分类以官网为准</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/Sanqi-normal/dsh-webui-market-plugin/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

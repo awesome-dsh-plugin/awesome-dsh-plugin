@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,55 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:LoserFox/dsh-git-identity</pre><button type="button" data-cmd="dsh plugin --profile web add github:LoserFox/dsh-git-identity" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH <strong>profile bundle</strong>（0812+ 的官方插件系统）：让 DSH 内产生的所有 git 提交使用
+环境自身的作者身份。优先读取 gh CLI 的登录账号（name 取 login，email 取 GitHub
+noreply 地址 <code>&lt;id&gt;+&lt;login&gt;@users.noreply.github.com</code>），其次启动环境的
+<code>GIT_AUTHOR_*</code>、<code>git config --global</code> 兜底。</p>
+<h3>为什么需要它</h3>
+<p>DSH 的 agent 会话通过 bash 工具执行 <code>git commit</code>。历史上一旦某个会话显式
+<code>-c user.name=&quot;DSH Agent&quot;</code> 或改掉了 git 配置，后续提交就会带着错误的作者。
+本插件在加载时把解析到的身份写入 <code>GIT_AUTHOR_*</code> / <code>GIT_COMMITTER_*</code> 四个环境变量，
+DSH 的 subprocess 层会把 <code>process.env</code>（剔除凭据）传给每个 bash 子进程，而 git 的
+环境变量优先级高于一切 git config——所以 DSH 内任何路径发起的提交都必然使用该身份。</p>
+<p>同时幂等同步回 <code>git config --global</code>，让插件进程外的普通终端提交也保持一致
+（仅当 global 配置缺失或被改错时写回）。</p>
+<h3>安装（0812 profile bundle 系统）</h3>
+<pre><code class="language-sh"># 从本仓库 checkout 安装到 profile（web / headless 等），bundle 声明自动加入组合层
+dsh plugin --profile web add /path/to/dsh-git-identity
+dsh plugin --profile headless add /path/to/dsh-git-identity
+# 验证
+dsh --profile web --dump-config | grep git-identity
+</code></pre>
+<p>安装后需重启目标 profile 的 DSH 进程（组合层变更不参与 HMR 热更新）。</p>
+<h3>身份解析优先级</h3>
+<ol>
+<li>插件配置 <code>{ name, email }</code>（显式钉死，最稳；未登录 gh 时可在此配置）</li>
+<li>gh CLI 登录账号（<code>gh api user</code>）</li>
+<li>启动环境的 <code>GIT_AUTHOR_NAME</code> / <code>GIT_AUTHOR_EMAIL</code></li>
+<li><code>git config --global user.name</code> / <code>user.email</code> 兜底</li>
+</ol>
+<p>全部解析不到时只告警、不注入，绝不凭空编造身份。</p>
+<h3>配置</h3>
+<pre><code class="language-yaml"># 在 bundle 的 patch 里给行加 config（可选；不配置则按上述优先级自动解析）
+- insert:
+    - id: git-identity
+      name: &#39;@loserfox/git-identity&#39;
+      config:
+        name: LoserFox
+        email: 57448027+LoserFox@users.noreply.github.com
+</code></pre>
+<h3>开发</h3>
+<p>编辑 <code>index.mjs</code> 后无需构建（纯 ESM，零依赖）。<code>package.json</code> 的
+<code>dsh.bundle.patch</code> 声明本包是一个 profile bundle；<code>cordis.patch.yml</code> 是它贡献的
+组合层。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LoserFox/dsh-git-identity/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,47 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:anweat/dsh-restart</pre><button type="button" data-cmd="dsh plugin --profile web add github:anweat/dsh-restart" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>重启整个 DeepSeek Harness 进程的插件，用于重新加载插件与配置（profile 的 cordis 组合、settings 等）。host + client 双半，装进 profile 的 bundle 后即可用。</p>
+<h3>功能</h3>
+<ul>
+<li><strong>模型工具 <code>restart_harness</code></strong>：让 agent 直接安排一次进程重启（可选 <code>delayMs</code>）。</li>
+<li><strong><code>/restart</code> 斜杠命令</strong>：在 UI 里手动触发重启。</li>
+<li><strong>配置卡片</strong>（设置 → 插件 → 插件配置 → 「DSH 重启」）：可视化编辑以下设置，改动即时写入 <code>settings.yaml</code>：<ul>
+<li><code>legacyRestart</code> — 旧 PowerShell/WMI/taskkill 重启方式（默认关闭，用 Node 原生方式）。</li>
+<li><code>continuePrompt</code> — 重启后自动继续时注入给 agent 的提示词。</li>
+<li><code>watchdogEnabled</code> — 崩溃/关闭时自动拉起 DSH（默认关闭，需谨慎）。</li>
+<li><code>watchdogCooldownMs</code> / <code>watchdogPollMs</code> — 看门狗冷却与轮询间隔。</li>
+</ul>
+</li>
+<li><strong>「立即重启」按钮</strong>：卡片内的同源重启端点。出于安全考虑，仅接受来自环回地址（127.0.0.1 / localhost）的同源 POST 请求；经反向代理/远程访问时该按钮会被拒绝（403）。</li>
+</ul>
+<h3>安装</h3>
+<ol>
+<li>把包加入 profile 依赖并挂进 bundle：</li>
+</ol>
+<pre><code class="language-jsonc">// profiles/&lt;profile&gt;/package.json
+{
+  &quot;dependencies&quot;: { &quot;dsh-restart&quot;: &quot;...&quot; },
+  &quot;dsh&quot;: { &quot;profile&quot;: { &quot;bundles&quot;: [&quot;...&quot;, &quot;dsh-restart&quot;] } }
+}
+</code></pre>
+<ol start="2">
+<li>重启 DSH（<code>/restart</code> 或 <code>restart_harness</code>），刷新页面后即可看到卡片。</li>
+</ol>
+<h3>构建</h3>
+<pre><code class="language-bash">pnpm install
+node scripts/link-dsh-workspace.mjs --source &lt;path-to-deepseek-harness&gt;
+pnpm run build
+</code></pre>
+<p>host 半由 <code>tsc</code> 输出到 <code>lib/index.js</code>（<code>@deepseek-ai/*</code> 保持外部依赖）；client 半由 <code>tsdown</code> 打成单文件 <code>lib/client.js</code>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/anweat/dsh-restart/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

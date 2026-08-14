@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,71 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/dsh-at-file</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-at-file" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Workspace path references for the DeepSeek Harness web interface. Type <code>@</code> in the composer to search the current workspace and insert a file or directory path.</p>
+<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-at-file/main/assets/screenshots/show-case.png" alt="@ path picker"></p>
+<h3>Usage</h3>
+<p>Choose a result from the <code>@</code> menu. The selected path remains visible in the draft and can be opened or removed from the reference bar.</p>
+<pre><code class="language-text">Review @docs/spec.pdf
+</code></pre>
+<p>Before the agent starts a step, the plugin confirms that the path exists inside the active workspace. It then adds a short reference message:</p>
+<pre><code class="language-xml">&lt;workspace-reference path=&quot;docs/spec.pdf&quot; kind=&quot;file&quot; /&gt;
+</code></pre>
+<p>The reference contains the workspace-relative path and its kind. The plugin does not open the referenced file or list the contents of a referenced directory. The agent can inspect the path with the tools available in the current session when the task requires it.</p>
+<p>File format and file size do not change this behavior. A PDF follows the same path-reference flow as any other workspace file.</p>
+<p>This mechanism applies to version <code>0.3.0</code> and later. Earlier releases read file content during submission and enforced file-size limits.</p>
+<h3>Path Picker</h3>
+<p>Plain queries match filenames. Exact names, prefixes, and compact matches rank ahead of looser results, without matching letters scattered across a long directory path.</p>
+<p>A query containing <code>/</code> matches path segments in order. For example, <code>src/view</code> can find <code>src/client/view.ts</code>. A trailing slash such as <code>src/</code> searches within that path.</p>
+<p>When a directory is highlighted, press <code>ArrowRight</code> to enter it. The draft advances to <code>@path/</code> without a trailing space, and the candidate menu stays open for the next selection. <code>Enter</code> and pointer selection keep the existing behavior and finish the directory reference.</p>
+<p>Each result shows the filename first and its parent directory underneath. Duplicate filenames include the parent directory in the main label. Built-in SVG icons distinguish folders, source files, text, PDFs, images, data and configuration files, archives, and other files.</p>
+<p>The default index skips common version-control directories, IDE metadata, dependency trees, caches, and build output. The list covers VS Code, Visual Studio, JetBrains IDEs, Fleet, Eclipse, Android and Gradle, Xcode, CMake, Flutter, .NET, Unity, Unreal, and common JavaScript and Python output directories. OS metadata files named <code>desktop.ini</code>, <code>Thumbs.db</code>, and <code>.DS_Store</code> are excluded by default.</p>
+<h3>Install or Update</h3>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.0.tar.gz
+</code></pre>
+<p>Use the same command to update an existing installation. Restart <code>dsh web</code> after installation so the Host and browser client load version <code>0.5.0</code>.</p>
+<p>File filters are managed under <strong>Settings -&gt; File mentions</strong>. The <strong>Global</strong> tab applies its rules to every workspace. The <strong>Workspace</strong> tab adds rules for one selected workspace while retaining the global rules. Each rule is a complete basename and matching is case-insensitive.</p>
+<p>Rules are added and removed individually. The global list can be restored to the built-in defaults, and a workspace list can be cleared without changing other workspaces. Every change invalidates cached indexes, so the next <code>@</code> search uses the updated filters immediately.</p>
+<h3>Configuration</h3>
+<p>The available options apply to the path picker index:</p>
+<ul>
+<li><code>maxIndexedFiles</code> sets the maximum number of indexed workspace entries.</li>
+<li><code>ignoreDirs</code> replaces the built-in list of directory names excluded from the picker. Set it to <code>[]</code> to index every directory.</li>
+</ul>
+<p>Add the complete configuration to the selected profile&#39;s <code>cordis.patch.yml</code>. The usual path is <code>~/.dsh/profiles/web/cordis.patch.yml</code>.</p>
+<pre><code class="language-yaml">- id: dsh-at-file
+  config:
+    maxIndexedFiles: 10000
+</code></pre>
+<p>Omitting <code>ignoreDirs</code> keeps the built-in list. When you provide it, include every directory name you want excluded.</p>
+<h3>Path Handling</h3>
+<ul>
+<li>The picker indexes regular files and directories in the active workspace. Configured directory names and symbolic links are skipped.</li>
+<li>Global and workspace file-name filters are combined during the Host index walk, before entries count toward <code>maxIndexedFiles</code> or reach the browser.</li>
+<li>The Host accepts workspace-relative paths. Absolute paths and paths that escape the workspace are ignored.</li>
+<li>Reference markers are created only from user-authored text.</li>
+<li>Clicking a referenced path uses the Harness <code>host.openPath</code> endpoint.</li>
+<li>The picker index is cached per session for 30 seconds.</li>
+<li>An <code>@path</code> token cannot contain whitespace or another <code>@</code> character.</li>
+<li><code>maxIndexedFiles</code> limits picker results. A manually entered path can still be referenced when it exists inside the workspace.</li>
+</ul>
+<p>The active agent may lack a tool for a particular file format. DSH provides <code>read</code> for UTF-8 text and <code>read_image</code> for supported images. PDF support depends on the tools available in the session.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run check
+pnpm run test
+pnpm run build
+</code></pre>
+<p>The development setup expects the Harness checkout at <code>../dsh</code>. Built files under <code>lib/</code> are committed so profile installation does not require package build scripts.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-at-file/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,167 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/plugin-template</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/plugin-template" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/omdsh-dev/plugin-template/blob/main/README.zh.md">中文</a></p>
+<p>A self-contained standalone repository template for an ESM Cordis plugin. Every source file, compiler setting, test fixture, contributor instruction, skill, and build helper used by the repository is inside this directory; every development input resolves below this repository root.</p>
+<p>Normal npm dependencies are resolved from the package registry. A DSH host is a runtime consumer of the finished package, not a source or build input.</p>
+<h3>Repository layout</h3>
+<pre><code class="language-text">.
+├── .agents/skills/               # Repository-local plugin development workflow
+│   ├── dsh-plugin-development/   # End-to-end coordinator
+│   └── dsh-plugin-*/             # Plan, scaffold, implement, compose, test, release
+├── docs/
+│   └── dsh-plugin-contracts.md   # Shared local contract for all plugin skills
+├── patches/
+│   └── README.md                 # Dependency and DSH-host patch contract
+├── scripts/
+│   ├── extract-patch.mjs         # Config-driven host patch regeneration (see patches/README.md)
+│   ├── patch.sh                  # Idempotent host patch application
+│   ├── prepare.mjs               # Self-contained declaration and runtime prepare build
+│   └── verify-self-contained.mjs # Repository-boundary and skill metadata check
+├── src/
+│   ├── README.md                 # Growth rules for services and feature modules
+│   ├── config.ts                 # Serializable schema and resolved defaults
+│   ├── index.ts                  # Loader-facing function-plugin namespace
+│   ├── invariant.ts              # Package-owned invariant companion
+│   └── runtime.ts                # Fakeable host boundary and Cordis activation
+├── tests/
+│   ├── README.md                 # Harness, feature-test, and snapshot conventions
+│   ├── harness.ts                # Shared real-Cordis test mount
+│   ├── plugin.spec.ts            # Loader export and activation tests
+│   └── snapshots/
+│       └── README.md             # Optional product-visible fixture contract
+├── .gitignore                    # Generated artifact exclusions
+├── AGENTS.md                     # Repository-local contributor rules
+├── LICENSE                       # Template license
+├── README.md                     # Repository and usage contract
+├── cordis.patch.yml              # Profile bundle contribution
+├── package.json                  # Exports, peers, dsh.bundle.patch
+├── pnpm-lock.yaml                # Reproducible registry dependency graph
+├── pnpm-workspace.yaml           # Package-manager and optional patch policy
+├── tsconfig.base.json            # Local strict compiler baseline
+├── tsconfig.json                 # Development declaration project
+├── tsconfig.vitest.json          # Source-plane test project
+├── tsconfig.prepare.json         # Runtime bundle resolution settings
+├── tsconfig.prepare.dts.json     # Self-contained prepare declarations
+├── tsdown.config.ts              # Development runtime bundle
+├── tsdown.prepare.config.ts      # Prepare runtime bundle
+└── vitest.config.ts              # Test runner configuration
+</code></pre>
+<h3>Scalable source and test structure</h3>
+<p>The baseline mirrors the scalable first-level split used by larger DSH plugins while keeping product behavior minimal:</p>
+<ul>
+<li><code>src/index.ts</code> owns the Loader namespace;</li>
+<li><code>src/config.ts</code> owns the serializable schema and direct-call defaults;</li>
+<li><code>src/runtime.ts</code> owns fakeable host boundaries and Cordis activation;</li>
+<li><code>tests/harness.ts</code> owns the shared real-Cordis test mount;</li>
+<li>cohesive production behavior grows under capability-named <code>src/&lt;feature&gt;/</code> directories;</li>
+<li>stable product-visible expected output belongs under <code>tests/snapshots/</code>;</li>
+<li>dependency and DSH-host patches belong under <code>patches/</code>: pnpm <code>patchedDependencies</code> for exact registry versions, self-contained diffs against the DSH host when the plugin needs host source changes.</li>
+</ul>
+<p>Directories such as Turtle UI&#39;s chat, components, and extension areas describe that product, not the DSH plugin contract. Create equivalent feature directories only when the new plugin owns those capabilities. See <code>src/README.md</code>, <code>tests/README.md</code>, <code>tests/snapshots/README.md</code>, and <code>patches/README.md</code> for the local rules.</p>
+<h3>Create your plugin</h3>
+<ol>
+<li>Replace the package identity in <code>package.json</code>, <code>src/index.ts</code>, <code>src/config.ts</code>, <code>src/runtime.ts</code>, <code>src/invariant.ts</code>, <code>tests/plugin.spec.ts</code>, <code>cordis.patch.yml</code>, the TypeScript package metadata, <code>README.md</code>, and <code>AGENTS.md</code>.</li>
+<li>Replace the template package name <code>@your-scope/dsh-plugin-template</code> and plugin ids only in those identity owners. Do not perform a global replacement inside <code>.agents/skills/</code>; its generic examples and marker checks must remain reusable.</li>
+<li>Update <code>description</code>, <code>LICENSE</code>, and <code>cordis.patch.yml</code>.</li>
+<li>Add only the DSH host services used by the implementation to the package contract and composition patch. Keep source and build dependencies resolvable from this repository&#39;s <code>node_modules</code>.</li>
+<li>Replace the empty invariant installer when the package owns an authoritative event or mutable data relationship.</li>
+<li>Implement activation and host-boundary behavior in <code>src/runtime.ts</code>, moving cohesive capabilities into project-specific <code>src/&lt;feature&gt;/</code> directories as needed. Keep <code>src/index.ts</code> limited to Loader metadata and public re-exports, and scope registrations through <code>ctx.effect()</code>, <code>ctx.on()</code>, or registry disposers.</li>
+<li>Keep every source, compiler, documentation, and project-reference path inside this repository. Describe files from the project root, for example <code>docs/dsh-plugin-contracts.md</code>. Do not add local-path <code>link:</code> or <code>file:</code> dependencies.</li>
+<li>Set <code>private</code> to <code>false</code> only when the package&#39;s public dependencies and distribution artifacts are ready.</li>
+</ol>
+<p>Do not add a default export to a function plugin. Cordis Loader unwraps <code>exports.default ?? exports</code>; a stray default export discards namespace exports such as <code>inject</code>, <code>Config</code>, and <code>apply</code>.</p>
+<h3>Bundled development skills</h3>
+<p>DSH discovers the repository-local workflow under <code>.agents/skills/</code>. Start with <a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-development/SKILL.md"><code>dsh-plugin-development</code></a> for the complete sequence, or invoke one stage directly:</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-plan/SKILL.md"><code>dsh-plugin-plan</code></a></td>
+<td>Decide plugin form, dependencies, configuration, invariant, composition, and evidence.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-scaffold/SKILL.md"><code>dsh-plugin-scaffold</code></a></td>
+<td>Instantiate and baseline-verify a new repository from this template.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-implement/SKILL.md"><code>dsh-plugin-implement</code></a></td>
+<td>Implement lifecycle-safe Cordis behavior, metadata, docs, and invariants.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-compose/SKILL.md"><code>dsh-plugin-compose</code></a></td>
+<td>Install the bundle into an isolated profile and prove effective activation.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-test/SKILL.md"><code>dsh-plugin-test</code></a></td>
+<td>Verify Loader exports, behavior, disposal, composition, snapshots, and artifacts.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-release/SKILL.md"><code>dsh-plugin-release</code></a></td>
+<td>Check local, Git, or npm distribution readiness without publishing implicitly.</td>
+</tr>
+</tbody></table>
+<p>Keep these directories when copying the template so future sessions rooted in the plugin repository retain the same workflow.</p>
+<h3>Independent development</h3>
+<p>Run every command from this directory:</p>
+<pre><code class="language-sh">pnpm install
+pnpm run verify:self-contained
+pnpm run typecheck
+pnpm test
+pnpm run build
+pnpm run prepare
+</code></pre>
+<p><code>pnpm install</code> resolves only the dependencies declared by this package. <code>verify:self-contained</code> rejects filesystem dependency specs, compiler paths that leave the repository, external or broken Markdown links, absolute workstation paths, and malformed bundled skill metadata. <code>typecheck</code> checks both the declaration project in <code>tsconfig.json</code> and the source-plane tests in <code>tsconfig.vitest.json</code> against the local strict compiler baseline. <code>prepare</code> first removes this repository&#39;s generated <code>lib/</code>, emits declarations into <code>lib/types</code>, and bundles runtime JavaScript from <code>src</code>; it reads only files below this repository root.</p>
+<p>The development build and prepare build use separate configurations, but both are fully contained in this repository. <code>pnpm run build</code> is the development/CI type-safety gate. <code>pnpm run prepare</code> is the consumer-side artifact build for Git and tarball installation.</p>
+<h3>Profile activation</h3>
+<p>The package manifest declares the bundle patch:</p>
+<pre><code class="language-json">{
+  &quot;dsh&quot;: {
+    &quot;bundle&quot;: {
+      &quot;patch&quot;: &quot;./cordis.patch.yml&quot;
+    }
+  }
+}
+</code></pre>
+<p>A DSH host may install this package into a profile and apply <code>cordis.patch.yml</code> over its own runtime composition. That host integration is intentionally outside this repository&#39;s build and test inputs. The patch composes plugins; it does not alter host source, compiler settings, build scripts, or catalogs.</p>
+<p>The invariant companion uses a narrow local interface for the host&#39;s <code>invariants</code> service. This keeps the package build independent of the host&#39;s private source package while preserving the runtime registration used by a DSH profile.</p>
+<h3>Plugin forms</h3>
+<p>This template demonstrates a function plugin and therefore named exports:</p>
+<pre><code class="language-ts">// src/index.ts
+export const name = &#39;plugin-template&#39;
+export const inject: string[] = []
+export { Config } from &#39;./config.ts&#39;
+export { apply } from &#39;./runtime.ts&#39;
+
+// src/config.ts
+export interface Config { /* serializable fields */ }
+export const Config: z&lt;Config&gt; = z.object({ /* validation and defaults */ })
+
+// src/runtime.ts
+export function apply(ctx: Context, config: Config): void { /* effects */ }
+</code></pre>
+<p>A service provider instead normally default-exports its <code>Service</code> subclass. Do not mix the two forms.</p>
+<h3>Distribution checks</h3>
+<p>Before considering Git or npm distribution, run a clean prepare and inspect the final archive:</p>
+<pre><code class="language-sh">pnpm run prepare
+pnpm pack --dry-run --json
+pnpm run build
+</code></pre>
+<p>The final package must contain every runtime and declaration file named by <code>main</code>, <code>types</code>, <code>exports</code>, and <code>files</code>. The final <code>pnpm run build</code> restores the development artifact after pack lifecycle scripts. Keep <code>private: true</code> until the package&#39;s DSH host peers are available through the selected distribution channel.</p>
+<h3>Testing guidance</h3>
+<p>The included test proves Loader-safe ESM exports and schema-resolved activation. Replace the activation assertions with observable behavior and disposal assertions for every registry contribution. Product-visible plugins should add a real Loader/profile composition test in the consuming DSH application rather than relying only on hand-mounted unit tests.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/plugin-template/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

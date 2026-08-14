@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,347 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Nwflower/dsh-file-claim</pre><button type="button" data-cmd="dsh plugin --profile web add github:Nwflower/dsh-file-claim" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/Nwflower/dsh-file-claim/blob/main/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a> <a href="https://github.com/Nwflower/dsh-file-claim/blob/main/README.zh-CN.md"><img src="https://img.shields.io/badge/lang-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-red.svg" alt="简体中文"></a></p>
+<p><a href="https://www.npmjs.com/package/dsh-file-claim"><img src="https://img.shields.io/npm/v/dsh-file-claim" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/dsh-file-claim"><img src="https://img.shields.io/npm/dm/dsh-file-claim" alt="npm downloads"></a>
+<a href="https://github.com/Nwflower/dsh-file-claim/actions/workflows/ci.yml"><img src="https://github.com/Nwflower/dsh-file-claim/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/Nwflower/dsh-file-claim/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://github.com/Nwflower/dsh-file-claim/blob/main/package.json"><img src="https://img.shields.io/badge/node-%3E%3D18-green.svg" alt="node"></a></p>
+<blockquote>
+<p><strong>Write in parallel. Never overwrite.</strong>
+File claim / protection for concurrent DeepSeek Harness (DSH) sessions working the same workspace.</p>
+</blockquote>
+<p>When several DSH sessions run in parallel against one workspace, they have no awareness of each
+other: two sessions can overwrite the same file, a crashed session leaves stale state behind, and a
+session that wants to edit a file another session owns can only wait or guess. <code>dsh-file-claim</code>
+turns a proven coordination protocol into native DSH tools, lifecycle events, and a write guard —
+so parallel agents cooperate instead of clobbering each other.</p>
+<pre><code class="language-text">claim_files({ paths: [&quot;README.md&quot;] })   # &quot;I&#39;m editing this&quot;
+write / edit ...                          # writes to files claimed by others are denied
+release_files({ paths: [&quot;README.md&quot;] })  # &quot;done — pending edits auto-merge now&quot;
+</code></pre>
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#why">Why</a></li>
+<li><a href="#install">Install</a></li>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#usage-examples">Usage Examples</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#commands">Commands</a></li>
+<li><a href="#write-guard">Write Guard</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#audit-log">Audit Log</a></li>
+<li><a href="#pending-merge-area">Pending Merge Area</a></li>
+<li><a href="#enforcement-boundary">Enforcement Boundary</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#related-projects">Related Projects</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h3>Features</h3>
+<ul>
+<li>🔒 <strong>claim / release</strong> — a session declares exclusive ownership of file paths before editing
+them; duplicates merge idempotently, directory claims cover descendants, and <code>&#39;.&#39;</code> claims the
+whole workspace.</li>
+<li>❤️ <strong>heartbeat + stale takeover</strong> — heartbeats refresh automatically via agent lifecycle events;
+a crashed session&#39;s claims expire (default 2h) and can be taken over with <code>--force</code>.</li>
+<li>🧩 <strong>async pending merge area</strong> — instead of blocking, a session writes its edited content plus
+the git HEAD base into a pending area; when the owner releases, the entry is <strong>auto-merged</strong> via
+a <strong>git 3-way merge</strong> (<code>current × base × pending</code>) when conflict-free, or applied manually with
+<code>pending apply</code> when it conflicts.</li>
+<li>🛡️ <strong>write guard</strong> — a <code>tools/pre-execute</code> guard refuses writes to files actively claimed by
+another session, with a hint (wait / takeover when stale / pend) and an opt-in commit guard.</li>
+<li>⚡ <strong>zero automation burden</strong> — <code>agent/created</code> / <code>agent/status</code> refresh the heartbeat, and
+<code>agent/disposed</code> auto-releases every claim of a departed session.</li>
+<li>📦 <strong>pure Host plugin, zero dependencies</strong> — no Browser side, no build step, <code>node:</code> builtins
+only; Windows-friendly.</li>
+<li>🧾 <strong>audit trail</strong> — every claim / release / takeover / pending mutation is appended as one JSON
+line, for traceability and post-crash reconciliation.</li>
+</ul>
+<h3>Why</h3>
+<p>The DSH host has no built-in cross-session file protection, and a full scan of 505
+<code>dsh-plugin</code> topic repositories found <strong>zero</strong> file-claim/coordination plugins. The pending merge
+area — write your edit now, merge it cleanly once the owner releases — is unique in the agent
+file-lock category. This is a gap-filler, not a duplicate.</p>
+<h4>Compared with the category</h4>
+<p>Checked against 11 Claude Code / Codex file-lock and coordination tools (claude-code-file-locks,
+parallel-sessions, guardex, agent-orchestrator, blackboard-mcp, mclaude, ruah-orch, knot, …):</p>
+<table>
+<thead>
+<tr>
+<th>Differentiator</th>
+<th>dsh-file-claim</th>
+<th>Typical alternatives</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Conflict handling</td>
+<td><strong>async pending area + git 3-way merge</strong> — write now, merge cleanly once the owner releases</td>
+<td>wait / deny only (&quot;lock → write → release&quot;)</td>
+</tr>
+<tr>
+<td>Target platform</td>
+<td><strong>DSH-native</strong> — identity, tools, events, guard and slash commands all integrated</td>
+<td>Claude Code / Codex hooks; none target DSH</td>
+</tr>
+<tr>
+<td>Platform support</td>
+<td>zero-dependency Node, <strong>Windows-friendly</strong></td>
+<td>Bash/jq/flock solutions lean macOS/Linux; guardex has no native Windows</td>
+</tr>
+<tr>
+<td>Enforcement</td>
+<td>cooperative tool-layer guardrail (fail-open, matching the category&#39;s de-facto standard)</td>
+<td>hook interception / declarative locks; top tools fall back to worktree isolation</td>
+</tr>
+</tbody></table>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin add dsh-file-claim
+</code></pre>
+<p>For development / manual verification against a local checkout:</p>
+<pre><code class="language-sh">dsh plugin --profile web add -w link:&lt;repo-path&gt;
+</code></pre>
+<p>Requires DSH with <code>node &gt;= 18</code> and <code>git</code> on <code>PATH</code> (used only by the 3-way merge).</p>
+<h3>Quick Start</h3>
+<ol>
+<li><strong>Claim before you write.</strong> Editing files? Call <code>claim_files</code> first — it declares exclusive
+ownership so other sessions leave them alone.</li>
+<li><strong>Write freely.</strong> Your own claims never block you; writes to files actively claimed by
+<em>another</em> session are denied with a hint (wait / takeover when stale / pend).</li>
+<li><strong>Busy file? Don&#39;t wait — pend.</strong> Use <code>pending_write</code> to drop your edited content into the
+pending area (with the git HEAD base). Once the owner calls <code>release_files</code>, the entry is
+auto-merged when conflict-free — or run <code>pending_apply</code> manually for a clean 3-way merge.</li>
+<li><strong>Release when done.</strong> <code>release_files</code> clears your claims, auto-merges waiting pending entries,
+and surfaces the ones that need manual attention.</li>
+</ol>
+<pre><code class="language-text">claim_files({ paths: [&quot;README.md&quot;, &quot;src/&quot;] })
+write / edit ...
+release_files({ paths: [&quot;README.md&quot;] })
+</code></pre>
+<h3>Usage Examples</h3>
+<p><strong>Two sessions, one workspace.</strong> Session A owns <code>README.md</code>; session B wants to edit it too:</p>
+<pre><code class="language-text">// Session A
+claim_files({ paths: [&quot;README.md&quot;], note: &quot;rewriting the docs&quot; })
+write  ...  README.md          // allowed: own claim
+release_files({ paths: [&quot;README.md&quot;] })
+
+// Session B — meanwhile
+who_claims({ paths: [&quot;README.md&quot;] })          // → claimed by A
+write ... README.md                           // → DENIED with a hint
+pending_write({ path: &quot;README.md&quot;, content: &quot;...&quot; })  // async, no blocking
+// When A releases, the entry is auto 3-way merged (or surfaced for manual pending_apply)
+</code></pre>
+<p><strong>Recover from a crashed session.</strong> Session A dies mid-work; its claims expire after <code>staleMs</code>
+(2h default), then:</p>
+<pre><code class="language-text">claim_status()                      # → A shows [stale]
+claim_files({ paths: [&quot;README.md&quot;], force: true })   # take over
+</code></pre>
+<h3>Tools</h3>
+<p>Eight model-facing tools (identity is the calling session — no <code>--as</code> needed):</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>claim_files</code></td>
+<td>Claim file/dir paths exclusively before editing (<code>paths</code>, optional <code>note</code>, <code>force</code> for stale takeover)</td>
+</tr>
+<tr>
+<td><code>release_files</code></td>
+<td>Release paths (<code>paths</code>) or everything (<code>all</code>)</td>
+</tr>
+<tr>
+<td><code>who_claims</code></td>
+<td>Read-only: who claims given paths</td>
+</tr>
+<tr>
+<td><code>claim_status</code></td>
+<td>Read-only: session registry, claims, pending area overview, recent audit</td>
+</tr>
+<tr>
+<td><code>pending_write</code></td>
+<td>Async write: put edited content (+ git HEAD base) into the pending area for a file actively claimed by another session</td>
+</tr>
+<tr>
+<td><code>pending_apply</code></td>
+<td>3-way merge <code>current × base × pending</code> onto disk; conflict-free auto-clears, conflicts leave markers</td>
+</tr>
+<tr>
+<td><code>pending_show</code></td>
+<td>Read-only: view one pending entry&#39;s meta and content</td>
+</tr>
+<tr>
+<td><code>pending_drop</code></td>
+<td>Discard one pending entry (no merge)</td>
+</tr>
+</tbody></table>
+<h3>Commands</h3>
+<p>Human-usable slash commands (same semantics as the tools above — useful when the model is
+unavailable, or for shell-bound users). The line after the command name is split quote-aware, so
+paths and notes containing spaces work (<code>--note &quot;multi word note&quot;</code>). Command runs are recorded in
+the session log only, never fed to the model.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/claim &lt;path&gt;... [--note &lt;text&gt;] [--force]</code></td>
+<td>Claim file/dir paths exclusively; <code>--force</code> takes over a stale holder</td>
+</tr>
+<tr>
+<td><code>/release [&lt;path&gt;... | --all]</code></td>
+<td>Release paths or everything</td>
+</tr>
+<tr>
+<td><code>/claim-status</code></td>
+<td>Read-only: session registry, claims, pending area overview</td>
+</tr>
+</tbody></table>
+<p>The standalone core also ships a CLI: <code>node claim.mjs status | audit [n] | claim ...</code> — same
+semantics, no DSH required.</p>
+<h3>Write Guard</h3>
+<p><code>tools/pre-execute</code> denies <code>write</code> / <code>edit</code> / <code>bash</code> / <code>pwsh</code> calls whose target path is actively
+claimed by <strong>another</strong> session. The denial message names the holder and suggests: wait for
+<code>release_files</code>, take over with <code>claim_files(force: true)</code> once stale, or use <code>pending_write</code>.
+<code>read</code> is <strong>not</strong> intercepted — reading is observation, not modification, and the claim contract
+only protects the write surface. Shell-path parsing (<code>bash</code>/<code>pwsh</code>) is best-effort: only
+<strong>redirection targets</strong> and the target arguments of <strong>explicit write commands</strong> are extracted
+(pwsh <code>Set-Content</code> / <code>Add-Content</code> / <code>Out-File</code> / <code>New-Item</code> / <code>Copy-Item</code> / <code>Move-Item</code> /
+<code>Remove-Item</code> / <code>Rename-Item</code>; bash <code>tee</code> / <code>dd of=</code> / <code>cp</code> / <code>mv</code> / <code>rm</code>). Quoted literals are
+<strong>never</strong> treated as write targets — they are data, URLs or patterns, not files being written —
+and commands that yield no parseable target pass through (fail-open).</p>
+<p>With <code>guardCommit: true</code>, a <code>git commit</code> that explicitly stages paths actively claimed by another
+session (<code>git commit -- &lt;path&gt;</code> or legacy <code>git commit &lt;path&gt;</code>) is also denied; commit messages are
+never inspected, and a bare <code>git commit</code> (no paths) passes through — its scope cannot be known.</p>
+<h3>Configuration</h3>
+<p>Passed as plugin config in the bundle (<code>cordis.patch.yml</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>staleMs</code></td>
+<td><code>7200000</code> (2h)</td>
+<td>Heartbeat expiry before a session is considered stale</td>
+</tr>
+<tr>
+<td><code>stateDirName</code></td>
+<td><code>.dsh-file-claim</code></td>
+<td>Registry + pending area directory under the workspace root</td>
+</tr>
+<tr>
+<td><code>guard</code></td>
+<td><code>true</code></td>
+<td>Set <code>false</code> to disable the pre-execute write guard</td>
+</tr>
+<tr>
+<td><code>guardCommit</code></td>
+<td><code>false</code></td>
+<td>Opt-in: also deny <code>git commit</code> that explicitly stages paths actively claimed by another session</td>
+</tr>
+<tr>
+<td><code>heartbeatMs</code></td>
+<td><code>600000</code> (10min)</td>
+<td>Fallback heartbeat interval</td>
+</tr>
+</tbody></table>
+<pre><code class="language-yaml">- insert:
+    - id: dsh-file-claim
+      name: dsh-file-claim
+      config:
+        staleMs: 3600000        # 1h
+        guardCommit: true       # also guard explicit git commits
+</code></pre>
+<p>The claim registry and pending area live in <code>&lt;workspaceRoot&gt;/&lt;stateDirName&gt;/</code> — recommend adding it
+to <code>.gitignore</code>. State survives restarts; nothing ever touches <code>.git/</code>.</p>
+<h3>Audit Log</h3>
+<p>Every business mutation — claim, takeover, release, pending write / apply / drop, prune, drop — is
+appended as one JSON line to <code>&lt;stateDir&gt;/audit.jsonl</code> (<code>{ at, tag, type, paths/path, detail }</code>),
+for traceability and post-crash reconciliation. Heartbeats are intentionally <strong>not</strong> logged (noise).
+<code>node claim.mjs audit [n]</code> prints the latest <code>n</code> entries (default 10); <code>claim_status</code> always shows
+the three most recent. Audit writes are append-only and never block or alter claim semantics; a
+failed audit append surfaces a warning line without failing the operation. The file self-rotates
+at 1 MB (keeping the most recent half plus the new entry), so it never grows without bound.</p>
+<h3>Pending Merge Area</h3>
+<p>Storage layout (under <code>&lt;workspaceRoot&gt;/&lt;stateDirName&gt;/pending/</code>):</p>
+<pre><code class="language-text">pending/&lt;relpath&gt;/content     new file content to merge
+pending/&lt;relpath&gt;/base        git HEAD version at write time (merge base)
+pending/&lt;relpath&gt;/meta.json   { pender, claimedBy, at, baseSha }
+</code></pre>
+<p>Write conditions: <code>pending_write</code> requires the target to be actively claimed by another session —
+otherwise write the file directly after <code>claim_files</code>. <code>base</code> is only recorded when <code>git HEAD</code>
+contains the path; a missing base is a deliberate non-mergeable entry.</p>
+<p>Apply semantics (<code>pending_apply</code>): runs <code>git merge-file</code> over <code>current × base × pending</code> (three
+real file snapshots staged in a temp dir). No conflicts → merged content lands on disk and the
+entry is cleared. Conflicts → the merged output (with conflict markers) lands on disk and the
+entry is <strong>kept</strong> for manual resolution. Missing base → refused, never a blind merge. Active claim
+by any session → refused until released.</p>
+<p><code>release_files</code> runs an unlock check: pending entries aimed at the released paths (or at the
+releasing session) are <strong>auto-merged</strong> when the 3-way merge is conflict-free (content lands on
+disk, entry cleared); entries that cannot merge — still occupied, missing base, conflicts, or
+missing file — stay pending and are surfaced with manual <code>pending_apply</code> / <code>pending_show</code> /
+<code>pending_drop</code> hints.</p>
+<h3>Enforcement Boundary</h3>
+<p>The guard is <strong>advisory / cooperative</strong>, not a mandatory lock: arbitrary shell commands
+(<code>echo &gt; file</code>, <code>git checkout</code>, scripts), external editors, and IDE/git operations bypass the tool
+stack entirely. It upgrades &quot;self-discipline via AGENTS.md&quot; to &quot;tool-layer guardrail + model-visible
+state&quot;, matching the fail-open posture of the whole category.</p>
+<h3>FAQ</h3>
+<p><strong>Can bash/pwsh writes be fully intercepted?</strong> No. Only redirection targets and the target
+arguments of explicit write commands are parsed; arbitrary shell, scripts, external editors and
+IDE/git operations bypass the tool stack. That is the documented cooperative boundary, not a bug —
+see <a href="#enforcement-boundary">Enforcement Boundary</a>.</p>
+<p><strong>How long until a crashed session&#39;s claims expire?</strong> <code>staleMs</code>, default 2h. Departing sessions
+release automatically via <code>agent/disposed</code>, so stale takeover is only a last-resort fallback.</p>
+<p><strong>Does this work across multiple repos?</strong> Yes. The claim root is the workspace resolved from the
+session&#39;s cwd (<code>workspaceRegistry</code>), falling back to cwd — parallel repos are isolated by design.</p>
+<p><strong>Where is state stored?</strong> <code>&lt;workspaceRoot&gt;/.dsh-file-claim/</code> (registry, pending area, audit).
+Add it to <code>.gitignore</code>; it survives restarts and never touches <code>.git/</code>.</p>
+<p><strong>Why can&#39;t the model see the claim tools?</strong> Model-visible tools depend on the deployment&#39;s tool
+presentation/restrictions (like every plugin tool). The plugin registers globally via
+<code>ctx.tools.register</code>, the same path as official tool packages.</p>
+<p><strong>What if a pending entry can&#39;t merge?</strong> It stays pending with the reason surfaced (still occupied,
+missing base, conflicts, missing file). Use <code>pending_show</code> to inspect and <code>pending_apply</code> /
+<code>pending_drop</code> to resolve — nothing is ever blindly merged.</p>
+<p><strong>Do the registry and audit files grow forever?</strong> No. Stale sessions are pruned automatically on
+the heartbeat interval (so departed sessions&#39; records don&#39;t accumulate), and <code>audit.jsonl</code>
+self-rotates at 1 MB. Both stay bounded in normal use.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">npm test        # node --test: claim.mjs unit tests (17) + index.mjs mock-ctx integration (11)
+npm pack --dry-run
+</code></pre>
+<p>Layout: <code>claim.mjs</code> is the zero-dependency pure-logic core (portable, CLI entry retained);
+<code>index.mjs</code> is the only host-facing file; <code>test/</code> covers both. CI runs tests, a bilingual-README
+structure sync check, and a pack dry-run.</p>
+<h3>Related Projects</h3>
+<ul>
+<li><a href="https://github.com/Nwflower/dsh-chat-import">dsh-chat-import</a> — the sibling DSH plugin whose
+<code>session.mjs</code> coordination protocol this plugin was ported and enhanced from.</li>
+<li><a href="https://github.com/bruc3van/awesome-dsh-plugin">awesome-dsh-plugin</a> — the DSH plugin ecosystem
+index (505 repos scanned during this project&#39;s research).</li>
+<li><a href="https://www.npmjs.com/package/@deepseek-ai/dsh">@deepseek-ai/dsh</a> — the DeepSeek Harness host.</li>
+</ul>
+<h3>License</h3>
+<p>MIT — see <a href="https://github.com/Nwflower/dsh-file-claim/blob/main/LICENSE">LICENSE</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Nwflower/dsh-file-claim/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

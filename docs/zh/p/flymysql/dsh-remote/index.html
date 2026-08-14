@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,150 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:flymysql/dsh-remote</pre><button type="button" data-cmd="dsh plugin --profile web add github:flymysql/dsh-remote" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Remote-work assistant for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH).</strong></p>
+<p>Manage several SSH machines, then pick a <strong>remote workspace</strong> (or a <strong>local</strong> one) and let the agent operate right there without leaving the harness — listing files, reading code, running builds &amp; commands over the remote host, and keeping that remote directory mirrored into a real local workspace object.</p>
+<p>The harness Web UI intentionally binds <code>127.0.0.1</code> (the CLI rejects <code>--host 0.0.0.0</code> for safety). This plugin goes the other way: <strong>you connect out</strong> to the machines you maintain, pick a workspace, and work in it through the normal DSH workspace + agent fs flows — no changes to <code>dsh-workspace</code> or the harness core.</p>
+<h3>Screen previews</h3>
+<p>Settings → <strong>远程工作区</strong> — a multi-machine SSH registry (add / edit / delete / set-current, password stored locally):</p>
+<p>The native <strong>&quot;Add workspace&quot; / &quot;Select workspace&quot;</strong> flow — one dialog, two tabs (本地 local / 远程 remote):</p>
+<hr>
+<h3>Features</h3>
+<ul>
+<li><strong>Multi-machine SSH</strong> — save any number of hosts (<code>host</code>/<code>port</code>/<code>user</code> + <strong>private key</strong> or <strong>password</strong>). Passwords are stored locally and never shown back in the UI. Switch with one click in Settings.</li>
+<li><strong>Two-tab workspace picker</strong> (fills the native &quot;Add workspace&quot; flow):<ul>
+<li><strong>本机 / Local</strong> — opens the <strong>native OS folder chooser</strong> over the host, or lets you type a local path → adopted directly as a normal DSH local workspace (local workspaces fully coexist).</li>
+<li><strong>远程 / Remote</strong> — pick a <strong>machine</strong>, then browse its directories (or type a path) 🡺 on confirm it creates a <strong>real local mirror</strong> (<code>~/.dsh/remote-workspaces/&lt;host&gt;/&lt;base&gt;-&lt;hash&gt;</code>) that passes <code>fs.realpath</code> → the harness adopts it as a real workspace while dsh-remote keeps it synced over SFTP.</li>
+</ul>
+</li>
+<li><strong>Bidirectional SFTP sync</strong> — <code>rw_sync</code> (remote → mirror) and <code>rw_push</code> (mirror → remote) round-trip your local-mirror edits back to the machine.</li>
+<li><strong>Model tools</strong> — <code>rw_info</code>, <code>rw_connect</code>, <code>rw_pick_workspace</code>, <code>rw_list_dir</code>, <code>rw_read_file</code>, <code>rw_exec</code>, <code>rw_sync</code>, <code>rw_push</code>.</li>
+<li>The active <code>user@host:/path</code> is injected into every system prompt so the agent knows its working root.</li>
+<li><strong>No official <code>dsh-workspace</code> core is modified</strong> — everything is delivered as a normal plugin (directory-flow holes filled by the client half at <code>priority -100</code>).</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-bash">dsh plugin add dsh-remote            # add the bundle
+</code></pre>
+<p>(or <code>npm install dsh-remote</code> + add <code>- id: dsh-remote / name: dsh-remote</code> in <code>cordis.patch.yml</code>).</p>
+<h3>Quick start</h3>
+<ol>
+<li><strong>Add a machine</strong> — Settings → 远程工作区 → add host/port/user + key or password → (optional) set it current.</li>
+<li><strong>Open a workspace</strong> — click <strong>Add workspace</strong> in the sidebar / conversation:<ul>
+<li><strong>本机</strong> → system folder chooser (or type a local path) → local workspace.</li>
+<li><strong>远程</strong> → choose the machine → browse to a remote directory (or type <code>/path</code>) → &quot;设为远程工作区&quot; ⇒ a local mirror workspace is created and adopted.</li>
+</ul>
+</li>
+<li><strong>Work with the agent</strong> — treat it like any workspace:<ul>
+<li><code>rw_list_dir(path?)</code>/<code>rw_read_file</code> — inspect remote files</li>
+<li><code>rw_exec(command)</code> — run remote shell commands</li>
+<li><code>rw_sync</code> / <code>rw_push</code> — pull/push the local mirror to and from the remote</li>
+</ul>
+</li>
+</ol>
+<h3>CLI defaults (optional)</h3>
+<p>Provide a default machine in <code>cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml"># Example only — use values for your own machine.
+- id: dsh-remote
+  name: dsh-remote
+  config:
+    host: 203.0.113.10   # or your real host / hostname
+    port: 22
+    username: dev
+    privateKeyPath: ~/.ssh/id_rsa
+    # or password: &#39;…&#39;
+    workspace: ~/project
+</code></pre>
+<p>If <code>host</code> is empty the plugin starts disconnected and you configure machines in the UI.</p>
+<h3>CLI quick reference</h3>
+<p>Installing and driving DSH may live in different shells, so both the <code>dsh</code> binary and the <code>npx</code> form are shown. Always tell DSH <strong>which profile</strong> to use with <code>--profile &lt;name&gt;</code> (usually <code>web</code>).</p>
+<pre><code class="language-bash"># install the bundle into a profile (npm is pulled by pnpm; recommended)
+dsh plugin --profile web add dsh-remote
+# same but when `dsh` is not on PATH (e.g. Windows PowerShell inside a repo)
+npx --yes @deepseek-ai/dsh plugin --profile web add dsh-remote
+
+# confirm it is installed wire
+dsh plugin --profile web list
+npx --yes @deepseek-ai/dsh plugin --profile web list
+
+# start the web surface (reload profile; the plugin activates on boot)
+dsh --profile web
+npx --yes @deepseek-ai/dsh --profile web   # http://127.0.0.1:3080
+
+# use a local checkout instead of the npm version (dev iteration)
+npx --yes @deepseek-ai/dsh plugin --profile web add /path/to/dsh-remote
+npx --yes @deepseek-ai/dsh plugin --profile web remove dsh-remote   # back to release
+</code></pre>
+<p>After a successful start, <code>Settings → 远程工作区</code> appears and the &quot;Add workspace&quot; flow gains the 本机 / 远程 tabs (screenshots above).</p>
+<h3>Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>host</code></td>
+<td>string</td>
+<td><code>&#39;&#39;</code></td>
+<td>default SSH host (else start disconnected)</td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>int</td>
+<td><code>22</code></td>
+<td>default SSH port</td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td>string</td>
+<td><code>&#39;&#39;</code></td>
+<td>default SSH user</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>string</td>
+<td><code>&#39;&#39;</code></td>
+<td>default SSH password (non-empty overrides key)</td>
+</tr>
+<tr>
+<td><code>privateKeyPath</code></td>
+<td>string</td>
+<td><code>&#39;&#39;</code></td>
+<td>private key path (<code>~/.ssh/id_rsa</code> when empty)</td>
+</tr>
+<tr>
+<td><code>workspace</code></td>
+<td>string</td>
+<td><code>&#39;&#39;</code></td>
+<td>default remote workspace path</td>
+</tr>
+<tr>
+<td><code>commandTimeoutMs</code></td>
+<td>int</td>
+<td>20000</td>
+<td>per remote command timeout</td>
+</tr>
+<tr>
+<td><code>connectTimeoutMs</code></td>
+<td>int</td>
+<td>15000</td>
+<td>SSH connect timeout</td>
+</tr>
+</tbody></table>
+<h3>Safety</h3>
+<p>Giving the plugin a machine&#39;s credentials lets the agent run <strong>shell commands as your user</strong> on that host. Only add machines you trust. Passwords are saved on the local machine file; treat it as sensitive (you may lock file ACLs).</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/flymysql/dsh-remote/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

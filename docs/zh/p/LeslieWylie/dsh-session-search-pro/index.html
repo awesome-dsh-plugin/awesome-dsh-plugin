@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,329 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:LeslieWylie/dsh-session-search-pro</pre><button type="button" data-cmd="dsh plugin --profile web add github:LeslieWylie/dsh-session-search-pro" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>English</strong> | <a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/README.zh-CN.md">简体中文</a></p>
+<blockquote>
+<p><strong>Search every DSH session you&#39;ve ever had — past and current — without leaving the one you&#39;re in.</strong></p>
+</blockquote>
+<p><a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/dsh-plugin-8A2BE2" alt="dsh-plugin"></a></p>
+<p>Three agent tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>, built on the runtime&#39;s own indexed <strong><code>sessionQuery</code></strong> service instead of scanning session files by hand.</p>
+<hr>
+<h3>Install</h3>
+<p>Nothing here is on npm yet, so install straight from GitHub. Add it to your profile&#39;s <code>package.json</code>:</p>
+<pre><code class="language-jsonc">// ~/.dsh/profiles/&lt;profile&gt;/package.json
+{
+  &quot;dependencies&quot;: {
+    &quot;dsh-session-search-pro&quot;: &quot;github:LeslieWylie/dsh-session-search-pro&quot;
+  },
+  &quot;dsh&quot;: {
+    &quot;profile&quot;: {
+      &quot;bundles&quot;: [&quot;dsh-session-search-pro&quot;]
+    }
+  }
+}
+</code></pre>
+<p>Then reinstall and restart the profile:</p>
+<pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt; &amp;&amp; pnpm install
+dsh --profile &lt;profile&gt;
+</code></pre>
+<p>Pin a tag instead of tracking the default branch with <code>github:LeslieWylie/dsh-session-search-pro#v0.1.0</code>.</p>
+<p>The package ships its own <code>cordis.patch.yml</code>, so once it&#39;s installed into the profile&#39;s <code>node_modules</code> you can mount it for a single run with the launcher&#39;s <code>--patch</code> flag instead of touching <code>dsh.profile.bundles</code>:</p>
+<pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt; &amp;&amp; pnpm add github:LeslieWylie/dsh-session-search-pro
+dsh --profile &lt;profile&gt; --patch ./node_modules/dsh-session-search-pro/cordis.patch.yml
+</code></pre>
+<h3>Why another session-search plugin?</h3>
+<p><a href="https://github.com/Tieboyh/dsh-session-search">dsh-session-search</a> by Tieboyh
+takes a different route: it reads session files directly, decompressing and
+scanning zstd frames itself, which lets it search <strong>other runtimes&#39; sessions
+too</strong> — Codex, Claude Code, PI, OpenCode. If you work across several agent CLIs,
+that is the one you want.</p>
+<p>This plugin goes through the harness&#39;s own <code>sessionQuery</code> service instead. That
+buys the live in-progress session, no file-format assumptions, and no external
+binaries — and it means the plugin inherits whatever indexing the deployment has
+configured, including none (see
+<a href="#search-on-a-stock-profile">Search on a stock profile</a>).</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>dsh-session-search (Tieboyh)</th>
+<th>dsh-session-search-pro</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Search method</td>
+<td>Reads and scans session files directly</td>
+<td>Harness <code>sessionQuery</code> — FTS5 index when enabled, bounded scan otherwise</td>
+</tr>
+<tr>
+<td>Current (in-progress) session</td>
+<td>❌ Not searchable</td>
+<td>✅ Searchable</td>
+</tr>
+<tr>
+<td>Session file format</td>
+<td>Parsed directly (zstd frame scan)</td>
+<td>Never touched — harness API only</td>
+</tr>
+<tr>
+<td>External sources</td>
+<td>codex, claude, pi, opencode</td>
+<td>DSH only (single runtime)</td>
+</tr>
+<tr>
+<td>Tool count</td>
+<td>2 tools</td>
+<td>3 tools (search + list + read)</td>
+</tr>
+<tr>
+<td>Long event text</td>
+<td>Capped at 4,000 chars</td>
+<td>Capped at 4,000 chars per event</td>
+</tr>
+<tr>
+<td>Dependencies</td>
+<td>ripgrep, node:zlib</td>
+<td>None (zero runtime dependencies)</td>
+</tr>
+</tbody></table>
+<h4>Benefits</h4>
+<ul>
+<li>✅ <strong>Zero runtime dependencies</strong> — no ripgrep, no zstd parsing, no local database</li>
+<li>✅ <strong>Works on a stock profile</strong> — uses the FTS5 index when the deployment enables it, and falls back to a bounded scan when it does not, instead of returning a configuration error as the search result</li>
+<li>✅ <strong>Current session is searchable</strong> — not just sessions that have already ended</li>
+<li>✅ <strong>Fails closed, not half-open</strong> — if <code>sessionQuery</code> isn&#39;t available at all, the plugin logs a warning and registers no tools, rather than registering tools that would throw on first use</li>
+<li>✅ <strong>Read-only</strong> — never writes to a session; no database or cache of its own</li>
+<li>✅ <strong>MIT licensed</strong></li>
+</ul>
+<h3>Usage</h3>
+<p>The agent has access to these tools automatically once the plugin is bundled. Ask things like:</p>
+<blockquote>
+<p>&quot;Search my past sessions for anything about session search&quot;
+&quot;List my recent sessions in ~/Desktop&quot;
+&quot;Read session a4d75296-fc89-44b1 for me&quot;</p>
+</blockquote>
+<p>and the model reaches for <code>agent_session_search</code>, <code>agent_session_list</code>, or <code>agent_session_read</code> on its own.</p>
+<h3>Tool reference</h3>
+<h4><code>agent_session_search</code></h4>
+<p>Full-text search across all DSH sessions, each hit carrying its best-matching snippet.</p>
+<p>Two engines, picked automatically — see <a href="#search-on-a-stock-profile">Search on a stock profile</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>query</code></td>
+<td>string</td>
+<td>✅</td>
+<td>Text to find. Case-insensitive, whitespace-flexible, and matched <strong>literally</strong> — regex metacharacters have no special meaning.</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>number</td>
+<td>—</td>
+<td>Maximum sessions to return, 1–50. Defaults to the plugin&#39;s <code>maxResults</code> config (10 unless overridden).</td>
+</tr>
+<tr>
+<td><code>maxScan</code></td>
+<td>number</td>
+<td>—</td>
+<td>Maximum sessions to open when falling back to a scan, 1–500. Defaults to the plugin&#39;s <code>maxScan</code> config (200). Ignored when the index is in use.</td>
+</tr>
+</tbody></table>
+<p>The result carries <code>engine: &quot;index&quot; | &quot;scan&quot;</code> so you can tell which path answered, plus <code>scanned</code> and <code>truncated</code> on the scan path.</p>
+<h4><code>agent_session_list</code></h4>
+<p>Lists sessions — past and current — with an optional working-directory filter, sorted newest- or oldest-first.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>limit</code></td>
+<td>number</td>
+<td>—</td>
+<td>Maximum sessions to return, 1–100. Default 20.</td>
+</tr>
+<tr>
+<td><code>cwd</code></td>
+<td>string</td>
+<td>—</td>
+<td>Substring filter over the session&#39;s working directory.</td>
+</tr>
+<tr>
+<td><code>sort</code></td>
+<td><code>&quot;newest&quot;</code> | <code>&quot;oldest&quot;</code></td>
+<td>—</td>
+<td>Sort order. Default <code>newest</code>.</td>
+</tr>
+</tbody></table>
+<h4><code>agent_session_read</code></h4>
+<p>Reads one session by id: title, metadata, and its events in order.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>sessionId</code></td>
+<td>string</td>
+<td>✅</td>
+<td>The session id to read, e.g. <code>&quot;a4d75296-fc89-44b1&quot;</code>.</td>
+</tr>
+<tr>
+<td><code>maxEvents</code></td>
+<td>number</td>
+<td>—</td>
+<td>Maximum events to return, most recent first, 1–200. Default 50.</td>
+</tr>
+</tbody></table>
+<h3>Plugin config</h3>
+<p>Set in the bundle row of <code>cordis.patch.yml</code> (or your own patch overlay):</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>maxResults</code></td>
+<td><code>10</code></td>
+<td>Default <code>limit</code> for <code>agent_session_search</code> when the caller omits it.</td>
+</tr>
+<tr>
+<td><code>maxScan</code></td>
+<td><code>200</code></td>
+<td>Default <code>maxScan</code> for <code>agent_session_search</code> — how many sessions the fallback scan may open.</td>
+</tr>
+</tbody></table>
+<h3>Search on a stock profile</h3>
+<p><code>agent_session_search</code> has two engines and picks one at call time.</p>
+<p><strong>The index.</strong> <code>@deepseek-ai/dsh-session-query-sqlite</code> is the concrete <code>sessionQuery</code>
+backend in the stock <code>dsh-base</code> bundle, and it exposes a <code>searchSessions()</code> backed by
+SQLite FTS5. When it is available, this plugin uses it and returns <code>engine: &quot;index&quot;</code>.</p>
+<p><strong>But it is off by default.</strong> <code>dsh-base</code> wires that backend as:</p>
+<pre><code class="language-yaml">- id: session-query-sqlite
+  name: &#39;@deepseek-ai/dsh-session-query-sqlite&#39;
+  config:
+    path: &#39;:memory:&#39;
+    openAt: never
+</code></pre>
+<p>and the engine&#39;s own guard throws <code>SESSION_QUERY_SEARCH_DISABLED</code> whenever
+<code>openAt</code> is <code>never</code>. Content search is opt-in: a deployment turns it on by
+overriding <code>openAt</code> to <code>first-search</code> or <code>startup</code> in a later patch layer,
+normally with a durable <code>path</code>.</p>
+<p>So on a stock profile the index call fails. This plugin catches exactly that
+error and falls back to scanning sessions newest-first through <code>listSessions()</code>
+and <code>filterEvents()</code> — primitives every <code>sessionQuery</code> backend has — and returns
+<code>engine: &quot;scan&quot;</code>. A failure that is <em>not</em> an unavailable index (a real backend
+fault) is reported as an error instead, because answering a broken store with a
+slower scan of the same broken store helps nobody.</p>
+<p>Measured against a real 24-session corpus on this machine:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>index (<code>openAt: first-search</code>)</th>
+<th>scan (stock <code>openAt: never</code>)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>term that matches</td>
+<td>3 hits</td>
+<td>3 hits</td>
+</tr>
+<tr>
+<td>term that matches nothing</td>
+<td>17 ms</td>
+<td>3,042 ms</td>
+</tr>
+</tbody></table>
+<p>The index is worth having — that is why the fast path exists. It just cannot be
+the only path, and versions of this plugin up to and including 0.1.0 assumed it
+was. On every default install they returned
+<code>{&quot;error&quot;: &quot;session search is disabled…&quot;}</code> for every query. Nothing threw, so it
+looked like a working tool that simply never found anything.</p>
+<p>To turn the index on, override the bundle row in your profile&#39;s
+<code>cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- update:
+    id: session-query-sqlite
+    config:
+      path: &#39;~/.dsh/session-index.db&#39;
+      openAt: first-search
+</code></pre>
+<h3>How it works</h3>
+<p>The plugin is a thin layer over the harness&#39;s <code>sessionQuery</code> service — no parsing, no indexing, no cache of its own:</p>
+<ul>
+<li><strong><code>searchSessions()</code></strong> — FTS5 full-text search; backs the <code>engine: &quot;index&quot;</code> path of <code>agent_session_search</code>. <strong>Optional</strong>: present only on the SQLite backend, and only usable when that backend has search enabled. Always called behind a capability check.</li>
+<li><strong><code>listSessions()</code></strong> — the full session list in deterministic newest-first order; backs <code>agent_session_list</code> and the <code>engine: &quot;scan&quot;</code> fallback.</li>
+<li><strong><code>filterEvents()</code></strong> — flat, pre-extracted per-event text; backs <code>agent_session_read</code>&#39;s event content and, with a <code>text</code> filter, the scan fallback&#39;s matching.</li>
+<li><strong><code>filterSessions()</code></strong> — a safe existence check by id (returns <code>[]</code> rather than throwing for an unknown id); used by <code>agent_session_read</code> before it tries to fetch content.</li>
+<li><strong><code>readTitle()</code></strong> / <strong><code>readTitleSnapshots()</code></strong> — single and batched title resolution. Session headers carry no title field of their own, so every tool that shows a title resolves it separately through one of these.</li>
+</ul>
+<p>All access is read-only. The plugin creates no database, index, or persistent cache of its own — it reads whatever <code>sessionQuery</code> already maintains.</p>
+<h3>Limitations</h3>
+<ul>
+<li><strong>DSH only</strong> — does not search Codex, Claude Code, PI, or OpenCode sessions (unlike dsh-session-search).</li>
+<li><strong>Requires <code>sessionQuery</code></strong> — all three tools depend on it; there&#39;s no reduced-functionality mode. If the service isn&#39;t injected, the plugin registers nothing rather than registering tools that would fail.</li>
+<li><strong>The scan fallback opens sessions one at a time.</strong> <code>filterEvents()</code> works per-session and reads that session&#39;s whole log, so a search with no matches walks the corpus. <code>maxScan</code> bounds it, and <code>truncated: true</code> tells you when the bound was hit. Enable the index if your corpus is large.</li>
+<li><strong><code>agent_session_read</code>&#39;s event fetch has no cancellation support</strong> — <code>filterEvents()</code> doesn&#39;t accept an abort signal in the underlying service, so an aborted read still finishes fetching before its result is discarded.</li>
+</ul>
+<h3>Development</h3>
+<p>Pure JavaScript, no build step. Source and release are the same file: <code>lib/index.js</code>.</p>
+<pre><code class="language-sh">git clone https://github.com/LeslieWylie/dsh-session-search-pro.git
+cd dsh-session-search-pro
+pnpm install
+npm test
+</code></pre>
+<p>Two suites, both of which execute the real <code>lib/index.js</code> — neither is a
+source-text or regex check:</p>
+<ul>
+<li><strong><code>tests/tools.test.mjs</code></strong> drives <code>apply()</code> against a stubbed <code>sessionQuery</code>,
+covering both engines, the fallback, and the argument-validation paths.</li>
+<li><strong><code>tests/boot.test.mjs</code></strong> boots a real cordis <code>Context</code>, loads the harness&#39;s
+own session services, loads this package the way a profile does, and executes
+the tools through the <strong>real</strong> tool registry.</li>
+</ul>
+<p>The second one exists because of how 0.1.0 shipped broken. Its search tool called
+<code>sq.searchSessions(...)</code> unconditionally; the unit-test fixture defined its own
+<code>searchSessions</code> stub, so every test passed, while on a stock profile the call
+threw <code>SESSION_QUERY_SEARCH_DISABLED</code> and the tool returned that config error as
+its answer to every query. <strong>A stub you write yourself will confirm your own
+misconception.</strong> So <code>boot.test.mjs</code> checks every <code>sq.&lt;method&gt;()</code> call site in the
+source against the service the harness actually ships — requiring unguarded calls
+to exist, allowing guarded ones to be absent, and separately confirming that a
+guarded method is real on <em>some</em> shipped backend rather than an invention that
+would leave the fast path as dead code.</p>
+<p>It needs the harness packages, so it exits 0 (skipped) from a bare clone. To
+actually run it:</p>
+<pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt;/node_modules/dsh-session-search-pro &amp;&amp; node tests/boot.test.mjs
+</code></pre>
+<h3>License</h3>
+<p>MIT © LeslieWylie</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

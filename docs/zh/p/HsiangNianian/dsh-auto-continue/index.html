@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,242 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue</pre><button type="button" data-cmd="dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<hr>
+<h3>What It Does</h3>
+<p>For <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (<code>dsh web</code>): whenever a request in the web GUI gets interrupted by a <strong>non-human cause</strong>, the plugin simulates the user typing <strong>「继续」</strong> and sends it, so the agent keeps working without manual intervention. The message enters the session log exactly like a manual prompt — the model sees it, and the interrupted work resumes.</p>
+<p><img src="https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/main/docs/demo.svg" alt="demo"></p>
+<p><strong>Smart recovery</strong> (all configurable):</p>
+<ul>
+<li><strong>Error classification</strong> — transient failures (network / timeout / 5xx / 429…) are auto-resumed; permanent ones are <strong>skipped</strong> and notified, because retrying them never helps. A failure counts as permanent when its HTTP status is 401/403 or its code/message matches auth, credential/API-key, balance/quota, unknown-model, or context-length/overflow keywords. Turn classification off to resume everything</li>
+<li><strong>Adaptive backoff</strong> — consecutive failures wait longer each time (cooldown × factor: 20s → 40s → 80s…), capped at the max backoff, instead of hammering a broken upstream</li>
+<li><strong>Templated continue text</strong> — <code>continueText</code> supports <code>{code}</code> <code>{message}</code> <code>{status}</code> <code>{tool}</code> <code>{turn}</code> placeholders, so the resume message can carry the failure context (&quot;继续 (git push failed: UPSTREAM)&quot;)</li>
+<li><strong>Browser notifications</strong> — optional alerts when auto-continue fires, gives up, or hits a permanent error; the browser asks for permission on first use, and nothing is shown again after a denial</li>
+</ul>
+<p>It watches the live event streams and reacts to:</p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>turn/end</code> → <code>error</code></td>
+<td>Turn failed (model / network / timeout, …)</td>
+</tr>
+<tr>
+<td><code>turn/end</code> → <code>interrupted</code></td>
+<td>Crash-orphaned turn left behind by a host restart</td>
+</tr>
+<tr>
+<td><code>turn/end</code> → <code>max-tokens</code></td>
+<td>Output token ceiling reached</td>
+</tr>
+<tr>
+<td><code>host/agent-error</code></td>
+<td>Agent failure with no turn position</td>
+</tr>
+</tbody></table>
+<p><strong>Never auto-continues:</strong> user-aborted turns (<code>aborted</code>) or policy rejections (<code>blocked</code>); sessions the host already resumed itself; running sessions or sessions with queued messages; subagent sessions; anything inside the cooldown / consecutive-cap windows (configurable in the settings card, below).</p>
+<hr>
+<h3>How It Works</h3>
+<p>The plugin opens two extra SSE streams in the browser — <code>events.mux</code> (session events) and <code>events.host</code> (host events). The host supports multiple consumers, so this never interferes with the built-in runtime. On an interruption it waits a <strong>grace period</strong> (default 3 s) — if the host starts a new turn by itself (<code>turn/start</code>), the auto-continue is cancelled — then calls <code>sessions.prompt</code> in <code>queue</code> mode with the configured text.</p>
+<p>On page load / reconnect it also scans the most recently updated sessions: a session whose last turn ended with a non-human reason <strong>within the scan window</strong> (default 15 minutes), with no later <code>turn/start</code> or user message, gets resumed automatically too (e.g. the host crashed while the browser was closed).</p>
+<p>With the page open in several tabs, a localStorage mutex plus a shared per-session cooldown stamp guarantee exactly one tab sends — no duplicated 「继续」.</p>
+<p>All knobs live in the plugin&#39;s settings card — see <a href="#configuration">Configuration</a>.</p>
+<hr>
+<h3>Quick Start</h3>
+<p>DSH plugins install into a <strong>profile</strong> (<code>dsh web</code> → <code>web</code> profile). Install, restart <code>dsh web</code>, done.</p>
+<h4>From npm (recommended)</h4>
+<p>Published as <a href="https://www.npmjs.com/package/dsh-client-auto-continue"><code>dsh-client-auto-continue</code></a>:</p>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-client-auto-continue
+dsh web
+</code></pre>
+<h4>Directly from GitHub (no clone needed)</h4>
+<p>Installs straight from the repository&#39;s default branch — built artifacts are committed, so no local clone or build step:</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue
+dsh web
+</code></pre>
+<blockquote>
+<p>This tracks the <code>main</code> branch rather than released tags — great for trying the latest changes, while the npm method above is the stable choice. Switching between install sources is just re-running <code>dsh plugin --profile web add &lt;other-spec&gt;</code>; the profile dependency is replaced in place.</p>
+</blockquote>
+<h4>From this repository</h4>
+<p>Requires Node.js ≥ 18.</p>
+<pre><code class="language-bash">git clone https://github.com/HsiangNianian/dsh-auto-continue.git
+cd dsh-auto-continue
+npm install
+npm run build
+
+# the package carries its own cordis.patch.yml (dsh.bundle.patch),
+# so the plugin row registers itself
+dsh plugin --profile web add link:$(pwd)
+
+dsh web
+</code></pre>
+<h4>Manual (no pnpm / dsh plugin needed)</h4>
+<pre><code class="language-bash">ln -sfn &quot;$(pwd)&quot; ~/.dsh/profiles/node_modules/dsh-client-auto-continue
+# then append to ~/.dsh/profiles/web/cordis.patch.yml:
+#   - insert:
+#       - id: auto-continue
+#         name: &#39;dsh-client-auto-continue&#39;
+dsh web
+</code></pre>
+<blockquote>
+<p>Switching from a manual install to <code>dsh plugin add</code>? Remove the manual <code>insert</code> entry first — the bundle patch registers the row and a duplicate would conflict.</p>
+</blockquote>
+<blockquote>
+<p><strong>Known DSH limitation (0.1.0-rc.6):</strong> the web plugin-configuration section only
+exposes settings namespaces on a hardcoded allowlist in the installed
+<code>@deepseek-ai/dsh-host-apiproxy</code> bundle. Until upstream moves exposure into
+<code>settings.register()</code>, one idempotent vendor patch is required for the
+settings card to appear (re-run it after reinstalling dsh):</p>
+<pre><code class="language-sh">node node_modules/dsh-client-auto-continue/scripts/patch-expose.mjs
+dsh web
+</code></pre>
+<p>The patch script ships inside the npm package (no repo clone needed) and
+covers every reachable dsh installation: the profile-linked copy, a global
+<code>npm i -g @deepseek-ai/dsh</code> install, and the invoking directory&#39;s own. The
+auto-continue engine itself works without this patch — it only gates the
+GUI settings card.</p>
+</blockquote>
+<h4>Verify &amp; uninstall</h4>
+<pre><code class="language-bash">dsh --profile web --dump-config | grep auto-continue   # config layer mounted
+</code></pre>
+<p>In the browser console (Ctrl/Cmd+Shift+I): <code>[auto-continue] 已启动(文本=&quot;继续&quot;, …)</code> — every detection and auto-send is logged.</p>
+<pre><code class="language-bash">dsh plugin --profile web remove dsh-client-auto-continue   # npm / repo install
+# or remove the symlink + the insert entry                  # manual install
+dsh web
+</code></pre>
+<hr>
+<h3>Configuration</h3>
+<p>Everything is configurable from the GUI — no file or console edits needed. Open <strong>Settings → Plugin configuration</strong> and find the <strong>Auto continue</strong> card.</p>
+<p><strong>How the card works:</strong></p>
+<ul>
+<li>Edits are <strong>staged</strong> — nothing reaches the disk until you hit <strong>Save</strong>; an unsaved badge marks the card while drafts are pending, and <strong>Discard</strong> drops them</li>
+<li>A field you changed shows an <strong>Overridden</strong> badge with a per-field <strong>Reset to default</strong> button that restores the built-in value</li>
+<li>Boolean fields are <strong>tri-state</strong>: <em>Inherit</em> (use the default) / <em>On</em> / <em>Off</em></li>
+<li>Invalid drafts (non-numbers, values below the minimum) block the save with a hint</li>
+<li>In a read-only deployment the card shows the stored values but disables every control</li>
+<li>Changes apply immediately after Save and persist in <code>~/.dsh/settings.yaml</code> (uninstalling the plugin leaves the section behind — harmless, delete it by hand if you like)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Continue text</td>
+<td><code>继续</code></td>
+<td>Text automatically sent after an interruption</td>
+</tr>
+<tr>
+<td>Grace period (ms)</td>
+<td><code>3000</code></td>
+<td>Wait after an interruption; cancelled if the host recovers on its own</td>
+</tr>
+<tr>
+<td>Cooldown (ms)</td>
+<td><code>20000</code></td>
+<td>Min interval between auto-continues per session (failed attempts count too)</td>
+</tr>
+<tr>
+<td>Max consecutive</td>
+<td><code>3</code></td>
+<td>Max consecutive auto-continues; stops until a user intervenes or a turn completes</td>
+</tr>
+<tr>
+<td>Scan on load / reconnect</td>
+<td><code>on</code></td>
+<td>Scan recently interrupted sessions on load / reconnect</td>
+</tr>
+<tr>
+<td>Scan limit</td>
+<td><code>8</code></td>
+<td>Max sessions scanned (running / subagent sessions excluded)</td>
+</tr>
+<tr>
+<td>Scan window (ms)</td>
+<td><code>900000</code></td>
+<td>Scan only considers interruptions inside this window</td>
+</tr>
+<tr>
+<td>Reconnect scan delay (ms)</td>
+<td><code>5000</code></td>
+<td>Delay before scanning after a reconnect</td>
+</tr>
+<tr>
+<td>Reconnect backoff (ms)</td>
+<td><code>3000</code></td>
+<td>SSE reconnect backoff</td>
+</tr>
+<tr>
+<td>Verbose logs</td>
+<td><code>on</code></td>
+<td><code>[auto-continue]</code> console logs</td>
+</tr>
+<tr>
+<td>Classify errors</td>
+<td><code>on</code></td>
+<td>Auto-resume transient failures only; auth / balance / model errors are skipped and notified</td>
+</tr>
+<tr>
+<td>Backoff factor</td>
+<td><code>2</code></td>
+<td>Cooldown multiplier per consecutive failure (2 = 20s → 40s → 80s…)</td>
+</tr>
+<tr>
+<td>Max backoff (ms)</td>
+<td><code>300000</code></td>
+<td>Cap on the adaptive backoff interval</td>
+</tr>
+<tr>
+<td>Browser notifications</td>
+<td><code>off</code></td>
+<td>Notify when auto-continue fires, gives up, or hits a permanent error</td>
+</tr>
+</tbody></table>
+<p><code>continueText</code> accepts the placeholders <code>{code}</code>, <code>{message}</code>, <code>{status}</code>, <code>{tool}</code> (last tool call before the failure) and <code>{turn}</code> — e.g. <code>继续 ({tool}: {code})</code> becomes <code>继续 (git push: UPSTREAM)</code>.</p>
+<hr>
+<h3>Privacy &amp; permissions</h3>
+<p>The plugin is browser-only and touches <strong>no files, credentials, or network beyond the dsh host</strong>:</p>
+<ul>
+<li>It opens the same two read-only event streams the web UI already uses (no extra server, no third-party endpoints)</li>
+<li>The only write it ever performs is <code>sessions.prompt</code> — the same call the Send button makes — with the text you configured</li>
+<li>Browser storage is limited to small <code>localStorage</code> keys for cross-tab coordination</li>
+<li>Browser notifications are opt-in (<code>notify</code> setting) and permission is requested on first use only</li>
+</ul>
+<hr>
+<h3>Development</h3>
+<pre><code class="language-bash">npm run typecheck   # tsc --noEmit
+npm run build       # lib/client.js + lib/index.js + lib/types
+npm run watch       # rebuild on change; host HMR hot-reloads without a page refresh
+npm run test        # node tests/simulate.mjs — 12 behavioral scenarios
+</code></pre>
+<p>While <code>npm run watch</code> runs, the profile&#39;s client-hmr row polls <code>lib/client.js</code> every 500 ms and hot-reloads the plugin in the browser — no server restart needed for code changes.</p>
+<hr>
+<h3>Activity</h3>
+<p><a href="https://gitstock.org/HsiangNianian/dsh-auto-continue"><img src="https://gitstock.org/HsiangNianian/dsh-auto-continue/stock.svg" alt="HsiangNianian/dsh-auto-continue GitStock K-Line Chart"></a></p>
+<hr>
+<h3>Links</h3>
+<ul>
+<li><strong>Repository</strong>: <a href="https://github.com/HsiangNianian/dsh-auto-continue">github.com/HsiangNianian/dsh-auto-continue</a></li>
+<li><strong>DeepSeek Harness</strong>: <a href="https://github.com/deepseek-ai/deepseek-harness">github.com/deepseek-ai/deepseek-harness</a></li>
+</ul>
+<hr>
+<h3>License</h3>
+<p><a href="https://github.com/HsiangNianian/dsh-auto-continue/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-65a30d" alt="MIT"></a></p>
+<p>MIT © Hsiang Nianian</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/HsiangNianian/dsh-auto-continue/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

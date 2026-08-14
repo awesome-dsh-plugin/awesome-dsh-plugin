@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,64 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:forrestchang/dsh-multica-runtime</pre><button type="button" data-cmd="dsh plugin --profile web add github:forrestchang/dsh-multica-runtime" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Private, out-of-tree runtime bridge between Multica and the public
+<a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. It exposes
+a versioned JSONL protocol over stdio and composes over
+<code>@deepseek-ai/dsh-base</code>. It does not require changes to DeepSeek Harness.</p>
+<p><img src="https://raw.githubusercontent.com/forrestchang/dsh-multica-runtime/main/docs/images/multica-dsh-runtime.png" alt="DeepSeek Harness runtime online in Multica"></p>
+<h3>Privacy</h3>
+<ul>
+<li>This repository contains only the Multica integration layer. It does not
+vendor or redistribute DeepSeek Harness source code.</li>
+<li>Never commit API keys, MCP secrets, session logs, or generated profiles.</li>
+<li>DSH telemetry is disabled by the bundle patch.</li>
+<li>stdout is protocol-only; diagnostics go to stderr.</li>
+</ul>
+<h3>Local development</h3>
+<p>The DSH packages used by this plugin are public npm packages. This checkout is
+currently validated against <code>@deepseek-ai/dsh@0.1.0-rc.6</code> and its matching
+<code>@deepseek-ai/dsh-*</code> package family.</p>
+<pre><code class="language-bash">pnpm install
+pnpm check
+pnpm build
+</code></pre>
+<p>Install the local bundle into a DSH profile after building it:</p>
+<pre><code class="language-bash">dsh plugin --profile multica add /absolute/path/to/multica-dsh-runtime
+</code></pre>
+<p>The plugin supports:</p>
+<pre><code class="language-bash">dsh --profile multica --probe
+dsh --profile multica --list-models
+dsh --profile multica --stdio
+</code></pre>
+<p>Multica discovers the profile only after <code>--probe</code> returns protocol version 1.
+For a non-standard DSH installation, point the daemon at its launcher:</p>
+<pre><code class="language-bash">export MULTICA_DSH_PATH=/absolute/path/to/dsh
+</code></pre>
+<p>The runtime contract includes:</p>
+<ul>
+<li>model and thinking-level discovery from DSH itself;</li>
+<li>committed text, reasoning, tool, result, and token-usage events;</li>
+<li>cooperative cancellation and durable session resume;</li>
+<li>canonical Multica MCP configuration translated to DSH stdio or
+streamable-HTTP clients;</li>
+<li>per-runtime/agent session roots supplied by the Multica daemon;</li>
+<li>headless one-shot approvals, with no interactive question surface.</li>
+<li>narrowly forwards only Multica&#39;s server-minted <code>mat_</code> task token into DSH&#39;s
+otherwise credential-scrubbed shell, so in-task <code>multica</code> commands retain
+task attribution without exposing model-provider credentials.</li>
+</ul>
+<p>The local <code>.local/</code> tree is ignored. It may hold an isolated DSH home and a
+development launcher, but neither belongs in source control.</p>
+<p><code>DEEPSEEK_API_KEY</code> is read by DSH&#39;s credential provider at process runtime. It
+must not be stored in this repository.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/multica-ai/dsh-multica-runtime/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

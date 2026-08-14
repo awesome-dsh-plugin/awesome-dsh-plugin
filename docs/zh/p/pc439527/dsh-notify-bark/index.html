@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,151 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:pc439527/dsh-notify-bark</pre><button type="button" data-cmd="dsh plugin --profile web add github:pc439527/dsh-notify-bark" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<blockquote>
+<p><strong>License:</strong> MIT · <strong>Requires:</strong> Node ^22.19 · <strong>Platform:</strong> DSH Host + Web settings page</p>
+</blockquote>
+<p><strong><a href="https://github.com/pc439527/dsh-notify-bark/blob/main/README.md">English</a> · <a href="https://github.com/pc439527/dsh-notify-bark/blob/main/README.zh-CN.md">简体中文</a></strong></p>
+<p>A <a href="https://github.com/Finb/Bark">Bark</a> push-notification plugin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH): the <strong>DSH Host</strong> listens for events such as turn completion, waiting for your answer, and waiting for approval, and pushes notifications to your iPhone through a Bark Server. Notifications are sent entirely from the Host — closing the browser, refreshing the page, or putting your computer to sleep does not affect delivery.</p>
+<ul>
+<li><strong>Host half</strong> (<code>src/index.ts</code> + <code>lib/*.js</code>): session/event listener + Bark HTTP sending + <code>bark</code> settings namespace (<code>ctx.settings</code> → <code>settings.yaml</code>, hot-reloaded) + <code>/dsh-notify-bark</code> loopback RPC.</li>
+<li><strong>Browser half</strong> (<code>src/client/</code> + <code>lib/client.js</code>): registers a <code>settings.section</code> slot; the form reads and writes Host config through the RPC. <strong>The Bark URL never crosses the wire to the browser</strong> — only a masked status is shown (configured: <code>••••••••3F82</code>).</li>
+</ul>
+<h3>Notification events (9 switches)</h3>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Trigger</th>
+<th align="center">Default</th>
+<th>Bark level</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>✅ Task completed</td>
+<td><code>turn/end</code> reason <code>completed</code></td>
+<td align="center">On</td>
+<td><code>active</code></td>
+</tr>
+<tr>
+<td>❌ Execution failed</td>
+<td><code>turn/end</code> reason <code>error</code></td>
+<td align="center">On</td>
+<td><code>timeSensitive</code></td>
+</tr>
+<tr>
+<td>🚫 Execution blocked</td>
+<td><code>turn/end</code> reason <code>blocked</code></td>
+<td align="center">On</td>
+<td><code>timeSensitive</code></td>
+</tr>
+<tr>
+<td>⏹ Aborted</td>
+<td><code>turn/end</code> reason <code>aborted</code></td>
+<td align="center">Off</td>
+<td><code>passive</code></td>
+</tr>
+<tr>
+<td>⚠️ Token limit reached</td>
+<td><code>turn/end</code> reason <code>max-tokens</code></td>
+<td align="center">On</td>
+<td><code>timeSensitive</code></td>
+</tr>
+<tr>
+<td>⏸ Interrupted</td>
+<td><code>turn/end</code> reason <code>interrupted</code></td>
+<td align="center">On</td>
+<td><code>timeSensitive</code></td>
+</tr>
+<tr>
+<td>❓ Awaiting your answer</td>
+<td><code>tool/call</code> <code>ask_user_question</code></td>
+<td align="center">On</td>
+<td><code>timeSensitive</code></td>
+</tr>
+<tr>
+<td>🔐 Awaiting your approval</td>
+<td><code>approval/asked</code></td>
+<td align="center">On</td>
+<td><code>timeSensitive</code></td>
+</tr>
+<tr>
+<td>📋 Plan awaiting confirmation</td>
+<td><code>tool/call</code> <code>exit_plan_mode</code></td>
+<td align="center">Off</td>
+<td><code>timeSensitive</code></td>
+</tr>
+</tbody></table>
+<p>The notification title is fixed to the workspace name (last path segment of <code>session.header.cwd</code>); the status is placed on the first line of the body. Optional extras: the AI&#39;s last reply text, a body length cap, and a Bark Group.</p>
+<h3>Installation</h3>
+<p>Install directly from GitHub (the repo ships compiled output — clone and use, no build step required):</p>
+<pre><code>dsh plugin --profile web add https://github.com/pc439527/dsh-notify-bark.git
+</code></pre>
+<p>Or from a local path:</p>
+<pre><code>dsh plugin --profile web add /path/to/dsh-notify-bark
+</code></pre>
+<p><code>dsh plugin add</code> runs <code>pnpm add</code> (writing dependencies + <code>dsh.profile.bundles</code>), and the plugin&#39;s own <code>cordis.patch.yml</code> inserts the <code>bark-notify</code> line. <strong>A running dsh web watches the profile&#39;s <code>cordis.patch.yml</code> through Cordis HMR</strong> — appending the same insert line at the user layer hot-loads the plugin without restarting the service:</p>
+<pre><code># $DSH_HOME/profiles/web/cordis.patch.yml
+- insert:
+    - id: bark-notify
+      name: &#39;dsh-notify-bark&#39;
+</code></pre>
+<p>Refresh the browser settings page (gear → Bark notifications) to see the configuration form.</p>
+<h3>Security &amp; privacy</h3>
+<ul>
+<li><strong>No built-in keys:</strong> <code>barkUrl</code> defaults to empty; each deployer fills in their own Bark URL on the settings page (<code>https://api.day.app/your-key</code>). This repository contains no real credentials (tests use only a fake <code>testkey</code>).</li>
+<li><strong>Credentials never reach the browser:</strong> <code>barkUrl</code> is declared <code>role(&#39;secret&#39;)</code> in the schema; the RPC returns only a masked status (configured: <code>••••••••3F82</code>) and logs only <code>configured: true/false</code>.</li>
+<li><strong>Config is stored on the Host only:</strong> written to the Host-side <code>settings.yaml</code> and never uploaded to any third party; notifications are sent only to the Bark URL you configured.</li>
+</ul>
+<h3>Development</h3>
+<pre><code>pnpm install        # typescript / @types/node (lockfile: pnpm-lock.yaml)
+pnpm run build      # tsc compiles the Host half to lib/; the client bundle is maintained directly in lib/client.js
+pnpm test           # node:test unit tests (send layer / event mapping / defaults / dedup / masking)
+</code></pre>
+<h3>Structure</h3>
+<pre><code>dsh-notify-bark/
+├── package.json          # dsh.client declaration + bundle patch declaration + repo metadata
+├── pnpm-lock.yaml        # pnpm lockfile
+├── cordis.patch.yml      # plugin line insertion
+├── LICENSE               # MIT
+├── src/
+│   ├── index.ts          # Host entry: settings registration + event listener + RPC
+│   ├── bark-service.ts   # Bark HTTP sending (timeout / error classification)
+│   ├── event-listener.ts # session/event → notification intent (dedup / title / content)
+│   ├── settings-store.ts # settings model / schema / defaults / masking
+│   ├── rpc-contract.ts   # /dsh-notify-bark channel contract
+│   ├── rpc.ts            # Host RPC (get masked / set / test)
+│   └── client/           # browser-half source (lib/client.js is its bundle mirror)
+├── lib/                  # deployment artifacts (tsc-compiled Host + hand-maintained module-loader bundle)
+└── tests/                # node:test unit tests
+</code></pre>
+<h3>Design notes</h3>
+<ul>
+<li><strong>Notifications go through the Host:</strong> <code>ctx.on(&#39;session/event&#39;)</code> listens directly (the same path dsh-im-bridge uses); the browser is only a configuration panel.</li>
+<li><strong>Config is stored on the Host:</strong> the <code>bark</code> namespace is registered into <code>ctx.settings</code> and persisted to <code>settings.yaml</code>; DSH&#39;s web settings wire has a namespace whitelist (<code>WEB_SETTINGS_NAMESPACES</code>), and third-party namespaces go through <code>settings-not-exposed</code>, so the settings page uses a dedicated RPC (same architecture as dsh-codex-auth) to read and write.</li>
+<li><strong>Credentials never reach the browser:</strong> <code>barkUrl</code> is <code>role(&#39;secret&#39;)</code> and the RPC returns only masked status (<code>configured: ••••••••3F82</code>); logs output only <code>configured: true/false</code>.</li>
+<li><strong>Event dedup:</strong> <code>sessionId</code> + <code>event.seq</code> key with a bounded ledger, so reconnects or replays never push duplicates.</li>
+</ul>
+<h3>References &amp; acknowledgments</h3>
+<ul>
+<li>Architecture patterns referenced (design only — no code copied):<ul>
+<li><strong>dsh-im-bridge</strong> — the session/event listening path (internal DeepSeek plugin, not public);</li>
+<li><strong>dsh-codex-auth</strong> — the pattern of a settings page reading/writing Host config through a dedicated RPC (internal DeepSeek plugin, not public).</li>
+</ul>
+</li>
+<li>Plugin platform: <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (MIT).</li>
+<li>Push service: <a href="https://github.com/Finb/Bark">Bark</a> (open-source iOS push service) — this plugin only sends HTTP requests to the Bark URL you configured; it does not include or distribute Bark code.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/pc439527/dsh-notify-bark/blob/main/LICENSE">MIT</a>. Provided as-is, without any express or implied warranty; any loss arising from use of this plugin is borne by the user. Contributors agree to license their contributions under MIT.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/pc439527/dsh-notify-bark/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

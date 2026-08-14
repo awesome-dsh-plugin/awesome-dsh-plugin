@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,134 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools</pre><button type="button" data-cmd="dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Enhanced subagent delegation tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh):
+<strong>per-call model / provider / persona / toolFilter overrides</strong>, <strong><code>@preset:</code> persona references</strong>, and
+<strong><code>provider/model</code> composite model ids</strong> — shipped as a standard <strong>bundle</strong> that patches <strong>no official
+package file</strong>.</p>
+<p>| <a href="https://github.com/lynx-gt/dsh-subagent-tools/blob/master/README.md">English</a> | <a href="https://github.com/lynx-gt/dsh-subagent-tools/blob/master/README.zh.md">中文</a> |</p>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<h3>What it adds</h3>
+<p>The stock <code>subagent</code> / <code>subagent_fork</code> tools only accept <code>description</code>, <code>prompt</code>, and <code>run_in_background</code>.
+This plugin replaces them with the same surface plus per-call overrides:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>model</code></td>
+<td>Override the child&#39;s LLM model for this call. Accepts a bare id (<code>k3</code>) or a composite (<code>kimi-code/k3</code>) that also switches the provider.</td>
+</tr>
+<tr>
+<td><code>provider</code></td>
+<td>Override the delegation provider for this call (<code>spawn</code> / <code>fork</code> / ...).</td>
+</tr>
+<tr>
+<td><code>persona</code></td>
+<td>Override the child&#39;s persona for this call — raw text, or <code>@preset:&lt;id&gt;</code> to load a saved agent preset&#39;s persona (by display name or directory id).</td>
+</tr>
+<tr>
+<td><code>toolFilter</code></td>
+<td>Override the child&#39;s tool allow/deny filter for this call.</td>
+</tr>
+</tbody></table>
+<p>All overrides default to the instance configuration, so a bare install behaves exactly like the stock tools.</p>
+<h3>Installation</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-subagent-tools          # npm
+# or: dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools#main
+# or: dsh plugin --profile web add ./dsh-subagent-tools  # local checkout
+</code></pre>
+<p>Restart <code>dsh --profile web</code>.</p>
+<h4>Web sessions: also run the preset adapter (important)</h4>
+<p>In the <strong>web</strong> profile, agent tools are provided by the mounted agent <strong>preset</strong>
+(the default <code>standard</code> preset composes <code>subagent</code> / <code>subagent_fork</code> pointing at
+<code>@deepseek-ai/dsh-tool-subagent</code>), <strong>not</strong> by the host plane. A bundle patch that
+disables the stock rows and inserts its own is invisible to Web sessions — the
+stock tools keep loading and this package&#39;s per-call overrides never appear
+(headless works without this step).</p>
+<p>Run the preset adapter to make Web sessions use this package:</p>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -File install-preset.ps1   # Windows
+# or: ./install-preset.sh                                     # POSIX
+</code></pre>
+<p>It copies the <code>standard</code> preset into <code>$DSH_HOME/.agent-presets/standard-plus</code>,
+rewrites its <code>tool-subagent</code> / <code>tool-subagent-fork</code> rows to point at this
+package, and switches the default preset. Then <strong>restart <code>dsh web</code> and start a
+NEW session</strong> (presets are read at session creation and cannot be switched in a
+live session). To revert: pick <code>standard</code> again in the UI (General &gt; Agent
+preset) and delete the <code>standard-plus</code> directory.</p>
+<blockquote>
+<p><code>headless</code> and other non-web profiles do not need this step.</p>
+</blockquote>
+<h4>Telling the model which presets exist (<code>presetHints</code>)</h4>
+<p>The <code>persona</code> parameter accepts <code>@preset:&lt;id&gt;</code> references, but the tool schema
+does not list which presets exist on your deployment. Set <code>presetHints</code> on the
+tool rows (see <code>cordis.patch.yml</code>) to surface them in the schema — the model
+then sees &quot;Available presets on this deployment: @preset:翻译员, ...&quot; and can
+pick one itself. Omit the key to stay generic (presets differ per machine).</p>
+<h4>Compatibility</h4>
+<p>Declares <code>peerDependencies</code> on the public dsh packages (<code>^0.1.0-rc.6</code>). If your dsh version moves out of
+the compatible range, pnpm reports a peer conflict and the plugin refuses to load — bump this package
+instead of running on a silently broken API.</p>
+<h3>Verified</h3>
+<p>Tested against a stock dsh <code>0.1.0-rc.6</code> install (no local patches) on Windows via
+headless and web profiles:</p>
+<ul>
+<li>per-call <code>model=&quot;kimi-code/k3&quot;</code> composite routing ✅</li>
+<li>per-call <code>provider=&quot;fork&quot;</code> and raw-text <code>persona</code> ✅</li>
+<li><code>@preset:</code> by display name (<code>@preset:审校员</code>) and directory id (<code>@preset:translation-reviewer</code>) ✅</li>
+<li><code>presetHints</code> schema injection ✅</li>
+<li>Web profile: the preset adapter (<code>install-preset.ps1</code>) makes Web sessions use
+this bundle&#39;s tools (verified with the 5 presets above in a live web session)</li>
+</ul>
+<h3>Example</h3>
+<pre><code>Delegate a task to a subagent using model kimi-code/k3 with the reviewer persona:
+  subagent(description=&quot;Review the translation&quot;, prompt=&quot;...&quot;, model=&quot;kimi-code/k3&quot;, persona=&quot;@preset:审校员&quot;)
+</code></pre>
+<h3>Design</h3>
+<ul>
+<li><strong>A bundle, not a patched install.</strong> This package is a standard dsh <strong>bundle</strong>
+(<code>dsh.bundle</code> manifest + <code>cordis.patch.yml</code>): it disables the shipped
+<code>tool-subagent</code> / <code>tool-subagent-fork</code> rows and inserts its own. <strong>No official
+package file is patched</strong> — nothing in the dsh installation is modified.</li>
+<li><strong>Independent implementation.</strong> The tool is written against the public dsh API
+(<code>defineTool</code>, <code>ctx.subagents.start</code> / <code>startContinuable</code>, <code>settleRun</code>), not a fork of the official source.</li>
+<li><strong>Upgrades.</strong> The bundle lives in the profile&#39;s own <code>node_modules</code> (pnpm
+symlink), so a dsh upgrade does not remove it. But dsh is in developer preview
+(rc.6): if an upgrade changes the public API, <code>peerDependencies</code> makes the
+plugin refuse to load instead of failing silently — bump this package then.</li>
+<li><strong>No <code>cwd</code> parameter here.</strong> Per-call working-directory control needs two
+small patches in the dsh installation&#39;s in-process subagent providers
+(foreground + continuable child creation). That lives in the companion
+package <strong><code>dsh-subagent-tools-cwd</code></strong>, which bundles this plugin&#39;s
+functionality <strong>plus</strong> the <code>cwd</code> parameter <strong>plus</strong> the required patches.
+Install one or the other — not both.</li>
+</ul>
+<h3>Limitations</h3>
+<ul>
+<li><strong><code>@preset:</code> depends on the local preset layout.</strong> <code>$DSH_HOME/.agent-presets</code>
+is where dsh stores user-authored presets; the path is not a hard public
+contract, so a future dsh release could change discovery. Presets also differ
+per machine — an <code>@preset:翻译员</code> reference only works where that preset exists.</li>
+<li><strong>Web sessions need the preset adapter.</strong> The <code>standard</code> preset that ships
+with dsh still points its delegation rows at the official package; until you
+run <code>install-preset.ps1</code> / <code>install-preset.sh</code>, Web sessions keep the stock
+tools (headless and other non-web profiles use this bundle directly).</li>
+<li><strong><code>provider</code> means the subagent backend</strong>, not an LLM provider. To route a
+child to a different LLM provider use the composite <code>model</code> id
+(<code>kimi-code/k3</code>) or the instance <code>agentOptions</code>.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/lynx-gt/dsh-subagent-tools/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

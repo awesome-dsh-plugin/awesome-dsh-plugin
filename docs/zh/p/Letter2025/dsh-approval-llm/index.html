@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,284 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Letter2025/dsh-approval-llm</pre><button type="button" data-cmd="dsh plugin --profile web add github:Letter2025/dsh-approval-llm" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>English | <a href="https://github.com/Letter2025/dsh-approval-llm/blob/main/README.zh.md">中文</a></p>
+<p><strong>Model-based permission approval (approve-for-me) for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</strong></p>
+<p>A community plugin that adds a <strong>&quot;model approval&quot; permission mode</strong> (approve-for-me) to DeepSeek Harness: in that mode, <code>approval/request</code> asks are answered by a <strong>separate reviewer model</strong> instead of a human — the reviewer decides <code>ALLOW / DENY / ESCALATE</code>, and the request only reaches a human when the reviewer cannot decide or fails. In every other permission mode the plugin stays silent, so human approval is never front-run by the model.</p>
+<p>It is the dsh equivalent of Codex&#39;s <code>approvals_reviewer=auto_review</code> (<code>--approve-for-me</code>), and it follows the review design of AGENTSCOPE-PLAN-058 / 062 / 063 (orthogonal reviewer dimension, three-way decision, routing policy, prompt isolation, fail-to-human, circuit breaker).</p>
+<blockquote>
+<p><strong>Warning</strong>: an AI reviewer is a policy choice, not a security guarantee. It can be fooled by prompt injection from tool output or the agent&#39;s own reason. Prefer it for low-risk workflows; keep <code>humanOnlyList</code>, the <code>denyList</code>, and the circuit breaker tight.</p>
+</blockquote>
+<h3>Design</h3>
+<table>
+<thead>
+<tr>
+<th>Concept (this plugin)</th>
+<th>Codex</th>
+<th>AGENTSCOPE-PLAN-058</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A dedicated permission mode activates the reviewer</td>
+<td><code>approvals_reviewer: auto_review</code> + <code>--approve-for-me</code></td>
+<td>UI preset <code>帮我批准</code> = <code>DEFAULT</code> + <code>ApprovalReviewer=MODEL</code></td>
+</tr>
+<tr>
+<td>Outside that mode the plugin delegates everything</td>
+<td>human approval unchanged</td>
+<td><code>请求批准</code> = <code>DEFAULT</code> + <code>HUMAN</code></td>
+</tr>
+<tr>
+<td>Answer the <code>approval/request</code> waterfall</td>
+<td><code>approvals_reviewer: auto_review</code></td>
+<td><code>ApprovalReviewer = MODEL</code> (orthogonal to the permission mode)</td>
+</tr>
+<tr>
+<td>Deterministic routing before any model call</td>
+<td>&quot;deterministic sandbox/network allowlist runs before the guardian&quot;</td>
+<td><code>SAFE_ALLOW / DENY / HUMAN_ONLY</code> routing policy</td>
+</tr>
+<tr>
+<td>Reviewer model decides <code>ALLOW / DENY / ESCALATE</code></td>
+<td>Guardian subagent (<code>Approved / Denied / TimedOut / Abort</code>)</td>
+<td><code>ALLOW / DENY / ESCALATE</code></td>
+</tr>
+<tr>
+<td>Reviewer holds an isolated security policy</td>
+<td>Guardian prompt isolated from the main agent</td>
+<td>§4.5 prompt isolation</td>
+</tr>
+<tr>
+<td>Tool description injected at review time</td>
+<td>—</td>
+<td>§4.5 dynamic tool-description injection</td>
+</tr>
+<tr>
+<td>Tool arguments recovered from the session log</td>
+<td>trust layering (arguments reviewed, not just the name)</td>
+<td>§4.4 argument-level risk</td>
+</tr>
+<tr>
+<td>Model failure → hand to human, not counted in the breaker</td>
+<td>fail-closed guardian</td>
+<td>§4.8 fail-to-human vs policy decision</td>
+</tr>
+<tr>
+<td>Consecutive DENY threshold → hand off to a human</td>
+<td>circuit breaker (3 consecutive)</td>
+<td>§4.14 circuit breaker</td>
+</tr>
+<tr>
+<td>Explicit <code>provider</code>/<code>model</code>, else the logged conversation route</td>
+<td>—</td>
+<td>PLAN-062 per-agent model config + fallback</td>
+</tr>
+<tr>
+<td>Decision appended to the session as a user-visible message</td>
+<td>guardian badge in the UI</td>
+<td>DENY event pushed to the frontend (§4.17.5)</td>
+</tr>
+</tbody></table>
+<h3>How it works</h3>
+<pre><code>approval/request (waterfall)
+   │
+   ├─ enabled? no ────────────────────────────────► next() (unchanged)
+   │
+   ├─ mode gate: session preset ≠ modePreset ─────► next() (human approval unchanged)
+   │    (default modePreset = model-approval)
+   │
+   ├─ RoutingPolicy (deterministic, no model call)
+   │    ├─ denyList hit ──────────────────────────► &#39;rejected&#39;
+   │    ├─ allowlist hit ─────────────────────────► &#39;allowed-once&#39;
+   │    ├─ humanOnlyList hit ─────────────────────► next() (human decides)
+   │    └─ else: REVIEW
+   │
+   ├─ circuit breaker: consecutive DENY ≥ max ────► next() (human takes over)
+   │
+   ├─ Reviewer model (isolated security-policy prompt)
+   │    input: tool name + description (ctx.tools)
+   │          + reason + tool arguments (from the session log `tool/call`)
+   │    decision: ALLOW ──────────────────────────► &#39;allowed-once&#39; (counter resets)
+   │              DENY ───────────────────────────► &#39;rejected&#39; (counter +1)
+   │              ESCALATE ───────────────────────► next()
+   │              timeout / parse error / provider error ─► next() (fail-to-human)
+   │
+   └─ ALLOW / DENY also append a user-visible decision message to the session,
+      so the main chain records why the call was approved or denied.
+</code></pre>
+<ul>
+<li><strong>ALLOW / DENY / ESCALATE map 1:1 onto the dsh outcome vocabulary</strong> (<code>allowed-once</code> / <code>rejected</code> / delegate). ESCALATE and model failures never fabricate a rejection — they hand the request to the next answerer (the human UI), and a deployment with no human answerer fails closed (<code>unavailable</code>), exactly like Codex&#39;s fail-closed guardian.</li>
+<li><strong>The mode gate makes the modes exclusive.</strong> In the <code>帮我批准</code> preset the reviewer answers; in <code>请求批准</code> (and every other preset) the plugin delegates, so human approval behaves exactly as before. The two presets share sandbox/approval knobs; the recorded <code>permission/preset</code> selection tells them apart.</li>
+<li><strong>One terminal answerer per deployment.</strong> The dsh approval chain is not a priority list of competing judges — compose one answerer. To keep human override, put a human UI answerer behind this plugin (the waterfall <code>next()</code> reaches it).</li>
+<li><strong>Arguments are read from the session log</strong>, not from the approval request (the request deliberately carries no arguments to avoid a second rendering that could drift).</li>
+</ul>
+<h3>Configuration</h3>
+<p>All fields are validated by the Loader schema; defaults apply when omitted.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>enabled</code></td>
+<td><code>true</code></td>
+<td>Master switch; when <code>false</code> every request is delegated unchanged.</td>
+</tr>
+<tr>
+<td><code>modePreset</code></td>
+<td><code>model-approval</code></td>
+<td>The permission preset that activates the reviewer. When set, the plugin only answers asks from sessions whose effective preset equals this name; every other session delegates to the human channel. Set to <code>&#39;&#39;</code> to review every ask.</td>
+</tr>
+<tr>
+<td><code>provider</code> / <code>model</code></td>
+<td>unset</td>
+<td>Explicit reviewer route. Must be set together; when unset the plugin reuses the conversation route from the last <code>request/header</code> in the session log, and fails to human when the log has none.</td>
+</tr>
+<tr>
+<td><code>timeoutMs</code></td>
+<td><code>60000</code></td>
+<td>End-to-end reviewer deadline; on expiry the request is handed to a human (TIMEOUT, not counted in the breaker).</td>
+</tr>
+<tr>
+<td><code>maxOutputTokens</code></td>
+<td><code>256</code></td>
+<td>Reviewer output cap.</td>
+</tr>
+<tr>
+<td><code>systemPrompt</code></td>
+<td>built-in policy</td>
+<td>Custom security policy for the reviewer. The built-in policy is a short allow-by-default, deny-on-critical-harm rule set; see <code>src/reviewer.ts</code>.</td>
+</tr>
+<tr>
+<td><code>allowlist</code></td>
+<td><code>[]</code></td>
+<td>Tool names auto-approved without a model call (SAFE_ALLOW).</td>
+</tr>
+<tr>
+<td><code>denyList</code></td>
+<td><code>[]</code></td>
+<td>Tool names rejected outright without a model call. Wins over the allowlist.</td>
+</tr>
+<tr>
+<td><code>humanOnlyList</code></td>
+<td><code>[]</code></td>
+<td>Tool names that must be decided by a human; never auto-reviewed.</td>
+</tr>
+<tr>
+<td><code>maxConsecutiveDenials</code></td>
+<td><code>3</code></td>
+<td>Consecutive DENY threshold per session before the reviewer hands off to a human; <code>0</code> disables the breaker. ALLOW resets the counter.</td>
+</tr>
+<tr>
+<td><code>maxArgsChars</code></td>
+<td><code>4000</code></td>
+<td>Cap on tool-argument JSON rendered to the reviewer.</td>
+</tr>
+<tr>
+<td><code>includeArgs</code></td>
+<td><code>true</code></td>
+<td>Recover tool arguments from the session log for the review.</td>
+</tr>
+<tr>
+<td><code>notifyUser</code></td>
+<td><code>true</code></td>
+<td>Append a user-visible decision message (<code>✅ 模型审批通过/❌ 模型审批拒绝</code> with the risk and reason) to the session after every model ALLOW/DENY, so the main chain records why.</td>
+</tr>
+</tbody></table>
+<p>Example overlay (<code>cordis.patch.yml</code> of your profile):</p>
+<pre><code class="language-yaml">- id: approval-llm
+  config:
+    provider: deepseek-official
+    model: deepseek-v4-flash
+    allowlist: [read, read_image, glob, grep]
+    humanOnlyList: [delete, terminal_send]
+    denyList: [job_kill]
+    maxConsecutiveDenials: 3
+</code></pre>
+<h3>Install</h3>
+<blockquote>
+<p><strong>Copy-paste for an AI agent</strong> — hand this one sentence to any AI coding agent to have it install the plugin for you: &quot;Read <a href="https://github.com/Letter2025/dsh-approval-llm/blob/main/README.md">https://github.com/Letter2025/dsh-approval-llm/blob/main/README.md</a> and follow its <code>## Install</code> section to install the <code>dsh-approval-llm</code> bundle into the DeepSeek Harness web profile, restart the <code>dsh web</code> server, and verify that the permission selector shows the <code>model-approval</code> (帮我批准) preset with its shield-sparkle icon.&quot;</p>
+</blockquote>
+<h4>As an installable bundle (recommended)</h4>
+<p>This package declares <code>dsh.bundle.patch</code> in its <code>package.json</code>, so installing it activates a configuration layer that inserts the plugin row <strong>and</strong> adds the <code>model-approval</code> (&quot;帮我批准&quot;) preset to the <code>permission</code> table — no manual preset config needed:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-approval-llm   # installs the published npm package
+</code></pre>
+<p>Restart <code>dsh web</code>, then pick <strong>帮我批准</strong> in the permission selector (the Access chip in the input bar, which carries a shield-sparkle glyph) to switch that session&#39;s reviewer to the model. The preset table is process-level, so changing presets requires a dsh restart.</p>
+<p>In-box bundle rows resolve from the dsh installation itself; the <code>@deepseek-ai/*</code> imports are <code>peerDependencies</code> provided by the host dsh, so pin your dsh version (the project is in developer preview with breaking changes). Installing from a local checkout instead: <code>pnpm run build</code>, then <code>dsh plugin --profile web add ./dsh-approval-llm</code> from the parent directory.</p>
+<h4>Bundled skill: configure the reviewer</h4>
+<p>The package ships one bundled skill (<code>configure-approval-llm</code>, source <code>bundled</code>), so installing the plugin also puts a configuration guide in the skill catalog. Ask any agent to &quot;configure the approval reviewer&quot;, or load the skill directly — it walks an <strong>AI-proposes / user-confirms</strong> flow: probe the current model and provider settings, write the <code>approval-llm</code> overlay into <code>~/.dsh/profiles/web/cordis.patch.yml</code>, then present the full config for your confirmation before a restart takes effect. The guide covers choosing a reviewer model (same provider preferred, <code>contextWindow</code> ≥ the main model), and tightening <code>allowlist</code> / <code>denyList</code> / <code>humanOnlyList</code> / <code>maxConsecutiveDenials</code> for your deployment.</p>
+<h4>As a source overlay (dev)</h4>
+<pre><code class="language-yaml">- insert:
+    - id: approval-llm
+      name: &#39;./src/index.ts&#39;        # path to this package&#39;s entry, or an absolute path
+      config:
+        provider: deepseek-official
+        model: deepseek-v4-flash
+</code></pre>
+<p>Run dsh with the overlay (<code>dsh web --patch ./cordis.patch.yml</code>), or merge the row into your profile&#39;s <code>cordis.patch.yml</code>. The source overlay inserts only the plugin row, not the preset — either also install the bundle layer above, or add the <code>model-approval</code> preset to the <code>permission</code> row yourself (a patch replaces the whole row config, so restate every preset):</p>
+<pre><code class="language-yaml">- id: permission
+  config:
+    presets:
+      read-only:
+        sandbox: read-only
+        approval: ask
+        name: 只读
+      workspace-write:
+        sandbox: workspace-write
+        approval: ask
+        name: 请求批准
+      model-approval:
+        sandbox: workspace-write
+        approval: ask
+        name: 帮我批准
+        description: 审批由独立的评审模型决定；拿不准或模型故障时转人工。
+      danger-full-access:
+        sandbox: danger-full-access
+        approval: never
+        name: 完全放开
+</code></pre>
+<h3>Build &amp; test</h3>
+<p>The plugin lives inside the DeepSeek Harness checkout at <code>custom_plugin/dsh-approval-llm</code>; <code>@deepseek-ai/*</code> resolves against the checkout&#39;s own <code>node_modules</code> (built <code>lib</code> declarations + <code>@types</code>), so keep the harness built (<code>pnpm run build</code> at the repo root). The <code>node_modules</code> junction into the harness is provided by the checkout.</p>
+<pre><code class="language-sh">pnpm run typecheck   # tsc --noEmit (strict)
+pnpm run test        # vitest: 39 unit tests, no network
+pnpm run build       # tsc emit to lib/ (ESM, relative imports rewritten)
+</code></pre>
+<h3>Roadmap</h3>
+<ul>
+<li><strong>Client-side badge &amp; toggle</strong>: a browser half (<code>dsh.client</code> in this package) can render a shield icon on tool cards whose ask the reviewer decided, and a settings row that writes the plugin&#39;s <code>enabled</code>/<code>modePreset</code> to a hot-reloaded settings namespace. The host loader already discovers <code>dsh.client</code> packages from the same row, so the install path is unchanged.</li>
+<li><strong>Batch review</strong> (PLAN-063): one reviewer call for several pending tools needs a batch entry point in the approval service.</li>
+<li><strong>Wildcard / argument-pattern routing</strong> in the deterministic policy.</li>
+</ul>
+<h3>Security model</h3>
+<ul>
+<li><strong>Mode gating keeps human approval unchanged</strong>: outside the configured preset the plugin delegates every request, so <code>请求批准</code> behaves exactly as before the plugin existed.</li>
+<li><strong>Prompt isolation</strong>: the reviewer prompt is assembled by this plugin from its own config; the main agent never sees the security policy, so it cannot tailor asks to pass review. Tool descriptions come from the live registry (<code>ctx.tools.schemas()</code>), arguments from the durable log — the reviewer judges the real call, not the agent&#39;s claim.</li>
+<li><strong>Fail-to-human</strong>: <code>TIMEOUT</code>, <code>PARSE_ERROR</code>, and provider errors produce ESCALATE (delegate), never a fabricated denial, and are not counted in the circuit breaker (PLAN-058 §4.8 separation of model failure from policy decision).</li>
+<li><strong>Fail-closed by composition</strong>: a deployment with no human answerer resolves <code>unavailable</code>, which callers treat as denial.</li>
+<li><strong>Circuit breaker</strong>: <code>maxConsecutiveDenials</code> consecutive DENY on one session hands the rest of the session&#39;s asks to a human — the reviewer stops being the judge when it keeps saying no.</li>
+<li><strong>Sensitive data</strong>: review input (tool arguments, reason) is used only for the reviewer request and structured logs; it is not stored beyond the ordinary session log and console output. Turn <code>includeArgs</code> off if arguments are sensitive.</li>
+</ul>
+<h3>Known limitations</h3>
+<ul>
+<li><strong>No dedicated log-only audit event.</strong> Model decisions are visible in the main chain as <code>user/message</code> notices (durable and replayable), and the built-in <code>approval/asked</code> + <code>approval/decided</code> pair records the ask/outcome. A dedicated machine-readable audit event (like a <code>session/approval-llm-request</code> with the full review context) is still blocked by the harness persistence policy for out-of-repo event types; when the harness ships a registration surface, this plugin should add one.</li>
+<li><strong>No client-side badge (yet).</strong> The decision notice appears as a transcript message; a Codex-style shield icon anchored to the tool card needs a client plugin (the package ships no browser half yet). See the roadmap below.</li>
+<li><strong>One request per model call.</strong> PLAN-063&#39;s batch review (one call for several pending tools) needs a batch entry point in the approval service; the dsh seam processes one request at a time. Per-request latency is bounded by <code>timeoutMs</code> and the reviewer model choice.</li>
+<li><strong>AI-reviewer trust is a deployment decision.</strong> The reviewer can be prompt-injected through tool output. Keep <code>humanOnlyList</code>, <code>denyList</code>, and the breaker configured; do not enable this for high-risk, unattended workflows.</li>
+<li><strong>Exact-name routing only.</strong> Lists match whole tool names; there is no wildcard or argument-pattern matching. Add patterns as a follow-up if needed.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Letter2025/dsh-approval-llm/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

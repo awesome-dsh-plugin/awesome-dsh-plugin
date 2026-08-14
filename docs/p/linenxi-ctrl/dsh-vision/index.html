@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,247 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:linenxi-ctrl/dsh-vision</pre><button type="button" data-cmd="dsh plugin --profile web add github:linenxi-ctrl/dsh-vision" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
+<img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey" alt="Platform">
+<img src="https://img.shields.io/badge/DeepSeek%20Harness-0.1.0--rc.6-blueviolet" alt="DSH">
+<img src="https://img.shields.io/badge/version-v0.2.0-green" alt="Version">
+<img src="https://img.shields.io/npm/v/@linenxi-ctrl/dsh-vision" alt="npm"></p>
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 增加「外挂识图模型」能力：让本来不具备视觉能力的模型，通过一个可自定义地址/密钥/提示词的外部视觉模型来「看懂」图片与屏幕。</p>
+<h3>功能</h3>
+<ol>
+<li><strong>网页配置按钮与面板</strong>：页面右下角出现一个DeepSeek 鲸鱼圆形按钮（可拖动），点击即可配置外挂识图模型的 API 地址、密钥、模型名、识图提示词（skill）、代理与超时。</li>
+<li><strong>发送图片识图并自动回传</strong>：点鲸鱼按钮打开面板，点「📤 发送图片」选图，插件会先把它发给外挂识图模型，等识别完成后把识别文本<strong>自动作为消息发回当前会话</strong>（无需手动复制粘贴），DeepSeek 基于识别文本作答。</li>
+<li><strong>模型自己截图 + 识图</strong>：插件为 agent 注入 <code>screenshot</code>（截屏）与 <code>recognize_image</code>（识图）两个工具，并注入提示词，模型可自行「截图 → 识图 → 等待结果」。</li>
+<li><strong>自动适配识图 API 协议</strong>：内置 OpenAI Chat Completions、OpenAI Responses、Anthropic Messages、Google Gemini 四种协议，并按 <code>apiBase</code> 自动探测；另有 <code>custom</code> 模板协议适配任意长尾接口。</li>
+</ol>
+<h3>文件结构</h3>
+<pre><code>dsh-vision/
+├── install.bat        # Windows 一键安装（双击）
+├── install.sh         # macOS/Linux 一键安装
+├── install.mjs        # 安装脚本本体（npm 场景只做 agent 工具平面；目录场景全自动）
+├── bootstrap-node.ps1 # Windows 引导脚本：未装 Node.js 时从国内镜像自动下载免安装版
+├── package.json       # 包定义（dsh.bundle + dsh.client 声明；tool 为独立子路径）
+├── cordis.patch.yml   # 插件挂载声明（dsh.bundle.patch 自动应用到 profile layer）
+├── lib/
+│   ├── index.js       # host 平面插件：识图服务 + 协议适配 + settings 配置 + HTTP 路由
+│   ├── tool.js        # agent 工具插件：recognize_image / screenshot + 提示词注入
+│   └── client.js      # 客户端插件：鲸鱼按钮 / 配置面板 / 发送图片识图 / 自动回传
+└── README.md
+</code></pre>
+<h3>工作原理</h3>
+<pre><code>[用户点鲸鱼按钮选图]                [模型调用工具]
+      │                               │
+      ▼                               ▼
+  client 转 base64 发送          screenshot 工具截屏
+      │                               │
+      ▼                               ▼
+  POST /api/vision/recognize    recognize_image 工具
+      │                               │
+      ▼                               ▼
+  host 插件 ctx.vision 服务 ──► 协议自动适配后调用外挂识图 API
+      │                               │
+      ▼                               ▼
+  识别文本 → 自动注入当前会话    识别文本返回给模型
+</code></pre>
+<p>识图请求在 <strong>host（Node）侧</strong>发起，因此不受浏览器 CORS 限制；图片请求走同源 <code>/api/vision/recognize</code>，同样无 CORS 问题。</p>
+<h3>安装</h3>
+<blockquote>
+<p>两种方式任选：<strong>npm 安装</strong>（标准，推荐）或<strong>手动 / 离线</strong>（下载 zip，无需 pnpm）。</p>
+</blockquote>
+<h4>方式一：npm 安装（推荐）</h4>
+<p>需要系统已装 <a href="https://nodejs.org">Node.js 18+</a> 与 <a href="https://pnpm.io/zh/installation">pnpm</a>。</p>
+<pre><code class="language-bash"># 在 DSH 的 web profile 安装本插件（DSH 自动把 cordis.patch.yml 加入 profile layer）
+dsh plugin --profile web add @linenxi-ctrl/dsh-vision
+
+# （可选）配置 agent 工具平面：让模型能自己截图 + 识图
+node ~/.dsh/profiles/web/node_modules/@linenxi-ctrl/dsh-vision/install.mjs
+</code></pre>
+<p>安装后<strong>无需手动改任何配置文件</strong>：<code>package.json</code> 的 <code>dsh.bundle.patch</code> 声明会被 DSH 自动 reconcile 进 profile 的 <code>dsh.profile.bundles</code>，<code>cordis.patch.yml</code> 即成为该 profile 的一个 bundle layer。</p>
+<h4>方式二：手动 / 离线（无需 pnpm，小白友好）</h4>
+<p>从 <a href="https://github.com/linenxi-ctrl/dsh-vision/releases">Releases</a> 下载 zip 解压：</p>
+<ol>
+<li>Windows 双击 <code>install.bat</code>，macOS/Linux 运行 <code>bash install.sh</code>——<strong>无需预装 Node.js</strong>：脚本检测不到时会自动从国内镜像（npmmirror / 华为云 / 腾讯云）下载免安装版（无需管理员权限）；</li>
+<li>脚本会自动：复制英文副本、复制进每个 profile 的 <code>node_modules</code>、在 <code>cordis.patch.yml</code> 加 vision 行、创建 agent preset <code>vision</code>（复制随附 standard 并加入识图工具）并设为默认；</li>
+<li><strong>重启 DSH</strong>（关闭后重新 <code>dsh web</code>）。</li>
+</ol>
+<blockquote>
+<p>实测要点（DSH 0.1.0-rc.6）：host + client 插件（<code>cordis.patch.yml</code>）的 <code>name</code> 必须用「包名」，插件须在 profile 的 <code>node_modules</code> 下；agent 工具插件（preset）的 <code>name</code> 支持绝对路径（自动转 <code>file://</code>）；agent preset 不能叫 <code>standard</code>（会被随附 standard 遮蔽）。</p>
+</blockquote>
+<h3>配置</h3>
+<p>点页面右下角鲸鱼按钮，或直接编辑 <code>$DSH_HOME/settings.yaml</code> 中的 <code>vision</code> 段：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>apiBase</code></td>
+<td><code>https://api.openai.com/v1</code></td>
+<td>识图模型地址（按所选协议填到基础路径即可）</td>
+</tr>
+<tr>
+<td><code>apiKey</code></td>
+<td>空</td>
+<td>API 密钥（secret，不回显）</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td><code>gpt-4o-mini</code></td>
+<td>模型名称</td>
+</tr>
+<tr>
+<td><code>protocol</code></td>
+<td><code>auto</code></td>
+<td>协议：<code>auto</code> / <code>openai-chat</code> / <code>openai-responses</code> / <code>anthropic</code> / <code>gemini</code> / <code>custom</code></td>
+</tr>
+<tr>
+<td><code>prompt</code></td>
+<td>见下</td>
+<td>识图提示词（skill），可自定义</td>
+</tr>
+<tr>
+<td><code>proxy</code></td>
+<td>空</td>
+<td>可选 HTTP 代理，如 <code>http://127.0.0.1:65532</code></td>
+</tr>
+<tr>
+<td><code>timeoutMs</code></td>
+<td><code>60000</code></td>
+<td>单次识图超时（毫秒）</td>
+</tr>
+<tr>
+<td><code>requestTemplate</code></td>
+<td>空</td>
+<td>仅 <code>custom</code>：请求体 JSON 模板</td>
+</tr>
+<tr>
+<td><code>responsePath</code></td>
+<td>空</td>
+<td>仅 <code>custom</code>：响应文本取路径，如 <code>choices.0.message.content</code></td>
+</tr>
+</tbody></table>
+<p>默认识图提示词：</p>
+<blockquote>
+<p>你是一名专业的图像识别助手。请仔细观察用户提供的图片……（详细描述 + 逐字转录文字 + 截图场景重点描述）</p>
+</blockquote>
+<h3>使用</h3>
+<ul>
+<li><strong>发送图片识图</strong>：打开一个会话后，点右下角鲸鱼按钮 → 面板点「📤 发送图片」选图。识别期间右上角显示「外挂模型正在识图当中」，完成后自动把识别文本发回当前会话。</li>
+<li><strong>模型自主识图</strong>：直接对模型说「看看我现在屏幕上的报错」，模型会调用 <code>screenshot</code> 截图、再调用 <code>recognize_image</code> 识图并继续。</li>
+</ul>
+<h3>API 协议自动适配</h3>
+<p><code>protocol</code> 默认 <code>auto</code>，按 <code>apiBase</code> 自动识别；也可手动指定：</p>
+<table>
+<thead>
+<tr>
+<th>协议</th>
+<th>识别条件 / 用法</th>
+<th>请求要点</th>
+<th>响应取文本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>openai-chat</code></td>
+<td>默认；<code>apiBase</code> 填到 <code>/v1</code></td>
+<td><code>POST /chat/completions</code>，<code>image_url</code> 内嵌 data URL</td>
+<td><code>choices[0].message.content</code></td>
+</tr>
+<tr>
+<td><code>openai-responses</code></td>
+<td><code>apiBase</code> 含 <code>/responses</code></td>
+<td><code>POST /responses</code>，<code>input_image</code></td>
+<td><code>output[].content[].text</code></td>
+</tr>
+<tr>
+<td><code>anthropic</code></td>
+<td><code>apiBase</code> 含 <code>anthropic</code></td>
+<td><code>POST /v1/messages</code>，<code>x-api-key</code> 头，<code>source.base64</code></td>
+<td><code>content[].text</code></td>
+</tr>
+<tr>
+<td><code>gemini</code></td>
+<td><code>apiBase</code> 含 <code>gemini</code>/<code>generativelanguage</code>/<code>googleapis</code></td>
+<td><code>POST /models/{model}:generateContent</code>，<code>inline_data</code>，<code>x-goog-api-key</code> 头</td>
+<td><code>candidates[0].content.parts[].text</code></td>
+</tr>
+<tr>
+<td><code>custom</code></td>
+<td>手动指定</td>
+<td>按 <code>requestTemplate</code> 构造</td>
+<td>按 <code>responsePath</code> 取路径</td>
+</tr>
+</tbody></table>
+<h4>custom 模板协议</h4>
+<p><code>custom</code> 用于适配上述四种之外的长尾接口：</p>
+<ul>
+<li><p><strong><code>requestTemplate</code></strong>：请求体 JSON 模板。占位符<strong>必须裸写（不带引号）</strong>，替换时会自动补上 JSON 引号。支持的占位符：</p>
+<ul>
+<li><code>{{model}}</code> → 模型名</li>
+<li><code>{{prompt}}</code> → 识图提示词</li>
+<li><code>{{image}}</code> → 图片纯 base64（不含 data: 前缀）</li>
+<li><code>{{dataUrl}}</code> → 完整 <code>data:image/...;base64,...</code></li>
+<li><code>{{mime}}</code> → 图片 MIME 类型</li>
+</ul>
+<p>示例（等价于 OpenAI Chat）：</p>
+<pre><code class="language-json">{&quot;model&quot;:{{model}},&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:{{prompt}}},{&quot;type&quot;:&quot;image_url&quot;,&quot;image_url&quot;:{&quot;url&quot;:{{dataUrl}}}}]}]}
+</code></pre>
+</li>
+<li><p><strong><code>responsePath</code></strong>：从响应 JSON 取文本的点号路径（数字为数组下标），如 <code>choices.0.message.content</code>、<code>data.text</code>、<code>result.0.content</code>。</p>
+</li>
+<li><p>鉴权默认走 <code>Authorization: Bearer &lt;apiKey&gt;</code>（<code>apiKey</code> 为空则不携带）；需要特殊鉴权头的接口暂不支持，可提 issue 扩展。</p>
+</li>
+</ul>
+<blockquote>
+<p>提示：占位符若误加了引号（写成 <code>&quot;{{image}}&quot;</code>），替换后会得到 <code>&quot;&quot;base64&quot;&quot;</code> 导致 JSON 非法。请保持裸写。</p>
+</blockquote>
+<h3>故障排查</h3>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>识图失败：HTTP 401/403</td>
+<td><code>apiKey</code> 未填或填错，去面板重新保存密钥</td>
+</tr>
+<tr>
+<td>识图失败：HTTP 404</td>
+<td><code>apiBase</code> 拼错或与协议不匹配；确认填到基础路径（如 OpenAI 填到 <code>/v1</code>，Anthropic 填 <code>https://api.anthropic.com</code>，Gemini 填到 <code>/v1beta</code>）</td>
+</tr>
+<tr>
+<td>识图失败：结果为空</td>
+<td>协议识别不对时手动指定 <code>protocol</code>；<code>custom</code> 协议检查 <code>responsePath</code> 是否正确</td>
+</tr>
+<tr>
+<td>外网直连不通</td>
+<td>在 <code>proxy</code> 填 <code>http://127.0.0.1:65532</code>（或你自己的代理）</td>
+</tr>
+<tr>
+<td>点「发送图片」没反应</td>
+<td>确认已打开一个会话；确认右下角有鲸鱼按钮（client 插件已挂载）</td>
+</tr>
+<tr>
+<td>模型不调用识图工具</td>
+<td>确认 <code>tool.js</code> 已加进 preset 的 <code>agent.cordis.yml</code>，且该会话使用该 preset</td>
+</tr>
+<tr>
+<td>截图失败</td>
+<td>Windows 下需 PowerShell 可用（<code>System.Drawing</code>）；macOS 用 <code>screencapture</code>；Linux 需 ImageMagick <code>import</code></td>
+</tr>
+</tbody></table>
+
+    </div>
+    <p class="note"><a href="https://github.com/linenxi-ctrl/dsh-vision/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

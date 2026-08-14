@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,36 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Nagi-ovo/dsh-ads</pre><button type="button" data-cmd="dsh plugin --profile web add github:Nagi-ovo/dsh-ads" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/screenshot.webp" alt="中文模式实机：两侧广告栏、对话内插件推荐、贪玩蓝鲸和 DSH 消息中心"></p>
+<p><code>dsh-ads</code> 会在侧栏、对话、推理中途和右下角塞入一整套虚构广告。它看起来会暂停 inference，实际上模型一直在后台工作，只是后续回答和工具调用要等广告结束才显示。</p>
+<p>插件不会只拿自己开涮。GitHub 上带 <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> topic、且最近两周更新过的公开插件会进入推荐位，点击广告就能打开真实仓库。仓库换到个人账号或其他组织后仍能被发现。</p>
+<h3>两套互联网垃圾美学</h3>
+<p>切换 DSH 的「设置 → 语言」，当前页面会立即更换整套素材、文案和交互，不用刷新。中文模式主打页游、财神和「这次一定」，两张贪玩蓝鲸海报每 20 秒自动切换；English mode 则是 fake antivirus、weird tricks 和 actual gameplay*。</p>
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/reward-gate.png" alt="流式回答中插入的 V4 Pro 正式版抽奖广告：财神鲸、每轮一抽的转盘与四道解锁进度条"></p>
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/english-mode.png" alt="English 模式实机：Imagegen 虎鲸插件广告、假杀毒广告、假游戏和消息中心"></p>
+<h3>安装</h3>
+<p>推荐直接从 GitHub 安装到 DSH 的 <code>web</code> profile：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:Nagi-ovo/dsh-ads
+# 如果 dsh web 正在运行，重启后刷新页面
+</code></pre>
+<p>可以运行 <code>dsh --profile web --dump-config</code> 确认插件已经进入最终配置。需要修改源码时，克隆仓库并在仓库目录运行 <code>dsh plugin --profile web add .</code>；构建产物已经提交，不需要额外构建。使用社区 <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> 的用户也可以从「设置 → 插件」安装。</p>
+<p>每个广告位都能在「设置 → 广告（非官方）」里单独关闭，选择会保留到下次启动。</p>
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/settings.webp" alt="DSH 设置面板里的广告开关"></p>
+<h3>免费广告位</h3>
+<p>带 <code>dsh-plugin</code> topic 的公开插件会自动参与轮播。想指定自己的文案或图片，可以查看<a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/contrib/README.md">投稿说明</a>并发 PR。曝光记录只保存在本机浏览器里。</p>
+<p>同一个作者的 <a href="https://github.com/Nagi-ovo/dsh-visualize">dsh-visualize</a> 可以让模型直接在对话里画出交互界面。这条是整个 README 唯一正经的广告。</p>
+<p><a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/assets/visualize-demo.mp4"><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/visualize-demo.webp" alt="dsh-visualize 对话内生成交互式可视化演示"></a></p>
+<h3>免责声明</h3>
+<p>本插件纯属娱乐，与 DeepSeek 以及任何真实公司、产品或服务均无关联。广告里的品牌、人物、域名、价格、病毒和承诺均为虚构。插件不会扫描、读取或修改机器上的文件。</p>
+<p>「验证修复」只会在用户主动点击后查询一次 GitHub Star 状态，优先使用本机 <code>gh</code> 或 token，否则调用匿名公开 API。结果只保存在本机浏览器中。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

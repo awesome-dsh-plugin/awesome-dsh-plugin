@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,65 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:BrambleXu/dsh-annotate</pre><button type="button" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-annotate" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><img src="https://raw.githubusercontent.com/BrambleXu/dsh-annotate/main/assets/hero.png" alt="dsh-annotate hero"></p>
+<p>Visual browser feedback for DeepSeek Harness. <code>/annotate</code> asks the companion Chrome extension to enter selection mode; each selected element contributes a selector, DOM facts, computed style highlights, accessibility data, a comment, and an optional viewport screenshot to the agent&#39;s next turn.</p>
+<h3>Why this exists 💡</h3>
+<p>Browser UI problems are difficult to describe precisely through plain text. <code>dsh-annotate</code> lets you point at the relevant element and send the Agent the surrounding browser facts, so visual feedback stays attached to the page element instead of becoming a vague description or a copied screenshot.</p>
+<h3>Features ✨</h3>
+<ul>
+<li>Select elements directly in Chrome or Chromium through <code>/annotate</code>.</li>
+<li>Capture selectors, DOM facts, computed-style highlights, accessibility data, comments, and optional viewport screenshots.</li>
+<li>Send structured annotations to the Agent through a local loopback WebSocket bridge.</li>
+<li>Restrict browser connections by loopback host, extension origin, and optional extension ID.</li>
+</ul>
+<h3>Install 📦</h3>
+<p>Add the plugin project to a Harness profile:</p>
+<pre><code class="language-sh">dsh plugin --profile demo add ./dsh-annotate
+</code></pre>
+<p>Then install the companion extension:</p>
+<ol>
+<li>Open <code>chrome://extensions</code> in Chrome or Chromium.</li>
+<li>Enable <strong>Developer mode</strong>.</li>
+<li>Choose <strong>Load unpacked</strong> and select this project&#39;s <code>browser-extension</code> directory.</li>
+<li>Open the extension popup and keep the default bridge endpoint.</li>
+</ol>
+<p>For tighter local authorization, copy the extension ID shown in the popup into <code>allowedExtensionId</code> in a later Harness patch layer.</p>
+<h3>Use 🚀</h3>
+<pre><code class="language-text">/annotate
+/annotate http://localhost:3000
+</code></pre>
+<p>Click an element, enter its comment, and repeat as needed. <strong>Submit</strong> sends all captured facts and the visible-tab screenshot to the agent. <strong>Escape</strong> cancels.</p>
+<h3>Configure ⚙️</h3>
+<pre><code class="language-yaml">- id: dsh-annotate
+  name: dsh-annotate
+  config:
+    host: 127.0.0.1
+    port: 43119
+    allowedExtensionId: abcdefghijklmnopqrstuvwxyzabcdef
+    requestTimeoutMs: 300000
+    maxPayloadBytes: 16777216
+    includeScreenshot: true
+</code></pre>
+<p>The server refuses non-loopback hosts and browser connections whose origin is not <code>chrome-extension://</code>. An empty <code>allowedExtensionId</code> accepts any locally installed Chrome extension; set the exact ID for stricter isolation.</p>
+<h3>Develop 🧑‍💻</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run check
+</code></pre>
+<p>Reload the unpacked browser extension after editing its files.</p>
+<h3>Scope 🎯</h3>
+<p>Version 0.1 targets one local Chrome/Chromium browser, one active tab, and visible-viewport screenshots. Remote browsers, full-page capture, edit recording, and inline draggable note cards are deferred.</p>
+<h3>License 📄</h3>
+<p>MIT</p>
+<h3>Credits 🙏</h3>
+<p>The interaction is inspired by <a href="https://github.com/nicobailon/pi-annotate"><code>pi-annotate</code></a>. This implementation is built around Harness&#39;s human-command, attachment, and Agent APIs and uses a small loopback WebSocket bridge instead of a native-messaging host.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/BrambleXu/dsh-annotate/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

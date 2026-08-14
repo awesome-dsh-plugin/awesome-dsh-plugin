@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,147 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:030611/qiushi-dsh-evidence-audit</pre><button type="button" data-cmd="dsh plugin --profile web add github:030611/qiushi-dsh-evidence-audit" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/README.zh-CN.md">简体中文</a></p>
+<p><a href="https://www.npmjs.com/package/qiushi-dsh-evidence-audit"><img src="https://img.shields.io/npm/v/qiushi-dsh-evidence-audit.svg" alt="npm version"></a>
+<a href="https://github.com/030611/qiushi-dsh-evidence-audit/actions/workflows/ci.yml"><img src="https://github.com/030611/qiushi-dsh-evidence-audit/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/qiushi-dsh-evidence-audit.svg" alt="license"></a>
+<a href="https://whyihaveyou.github.io/dsh-suite/"><img src="https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe" alt="featured on dsh-suite"></a></p>
+<p><img src="https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/social-preview.jpg" alt="Qiushi DSH Evidence Audit social preview"></p>
+<p><strong>Leave a locally checkable execution trail without storing prompts, tool arguments, tool results, or session IDs in plaintext.</strong></p>
+<pre><code class="language-sh">dsh plugin --profile web add qiushi-dsh-evidence-audit
+</code></pre>
+<blockquote>
+<p>Community-maintained and not an official DeepSeek project. Related trust-layer plugins: <a href="https://github.com/030611/dsh-telemetry-redactor">Telemetry Redactor</a>, <a href="https://github.com/030611/dsh-verification-receipt">Verification Receipt</a>, and <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>.</p>
+</blockquote>
+<p>Qiushi DSH Evidence Audit is an observe-only DeepSeek Harness Profile Bundle. It listens to the official <code>tools/result</code> and <code>session/event</code> extension points and appends deterministic, hash-chained JSONL evidence receipts. It never registers a model-facing tool, changes a prompt, transforms a tool result, or appends to a session.</p>
+<p><img src="https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg" alt="Evidence Audit data flow: DSH observations are canonicalized and hashed into a private JSONL chain, while observed plaintext is omitted"></p>
+<h3>Install from npm</h3>
+<p>Prerequisites are Node.js <code>^22.19.0 || &gt;=24.0.0</code> and a DSH installation built from the <a href="#compatibility">tested commit</a>.</p>
+<pre><code class="language-powershell">dsh plugin --profile &lt;profile&gt; add qiushi-dsh-evidence-audit
+dsh --profile &lt;profile&gt; --dump-config
+</code></pre>
+<p>The config dump should contain a row with id <code>qiushi-evidence-audit</code> and name <code>qiushi-dsh-evidence-audit</code>. Receipts then default to <code>$DSH_HOME/evidence-audit/evidence-receipts.jsonl</code>, or <code>~/.dsh/evidence-audit/evidence-receipts.jsonl</code> when <code>DSH_HOME</code> is unset. If running DSH from its source checkout, replace <code>dsh</code> with that checkout&#39;s documented <code>pnpm dsh</code> launcher.</p>
+<p>To remove the bundle:</p>
+<pre><code class="language-powershell">dsh plugin --profile &lt;profile&gt; remove qiushi-dsh-evidence-audit
+</code></pre>
+<h3>What it can and cannot establish</h3>
+<ul>
+<li>It can make edits to retained records, untouched-prefix removal, broken links, and partial final lines detectable when the existing file is verified.</li>
+<li>It can show that this observer saw specific event categories and hashes in a particular local sequence.</li>
+<li>It <strong>cannot</strong> prove that a command ran correctly, that a result was truthful, who produced the file, or that a valid suffix was not deleted.</li>
+<li>Its hashes are <strong>not</strong> redaction, encryption, digital signatures, or an external trust anchor. Protect the receipt file as sensitive pseudonymous data.</li>
+</ul>
+<h3>Compatibility</h3>
+<p>This release has one deliberately narrow compatibility claim: it was implemented and tested against <code>deepseek-ai/deepseek-harness</code> commit <code>47f943859bef60e4160492346772ded9b24f765a</code> on 2026-08-13. That checkout identifies its packages as <code>0.1.0-rc.5</code>, but that version was not available from npm during verification. This is therefore a commit-pinned claim, not a promise for npm release <code>0.0.1-rc.1</code>, future DSH commits, or a semver range.</p>
+<p>The official installer reads <code>package.json#dsh.bundle.patch</code>. <a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/dsh.plugin.json"><code>dsh.plugin.json</code></a> is additional project metadata with a local schema; the pinned DSH commit does not read that file and this project does not claim otherwise.</p>
+<h3>Receipt data</h3>
+<p>The default file is <code>$DSH_HOME/evidence-audit/evidence-receipts.jsonl</code>, or <code>~/.dsh/evidence-audit/evidence-receipts.jsonl</code> when <code>DSH_HOME</code> is unset or blank. The plugin creates the default directory with owner-only mode <code>0700</code> and the file with owner-only mode <code>0600</code> where the operating system honors POSIX modes. It never defaults to the current working directory.</p>
+<p>Every line contains <code>schemaVersion</code>, <code>sequence</code>, <code>collectedAt</code>, <code>previousRecordHash</code>, and <code>recordHash</code>. <code>recordHash</code> is SHA-256 over canonical JSON for every field except <code>recordHash</code> itself. The next line commits to it through <code>previousRecordHash</code>; the first line uses <code>null</code>. Startup verifies the complete existing file and refuses to append if a line, sequence, record hash, or previous-hash link is invalid.</p>
+<p>A <code>session-event</code> receipt stores the hashed session ID, event type, event sequence and time, a hash of event data, and the optional <code>ignorable</code> marker. A <code>tool-result</code> receipt stores the tool name, hashed call/root-call/session IDs, argument hash, final outcome hash, error flag, parent-presence flag, and optional error code.</p>
+<blockquote>
+<p>[!WARNING]
+<strong><code>eventDataHash</code>, <code>argumentsHash</code>, and <code>outcomeHash</code> are not redaction, encryption, or digital signatures.</strong> The JSONL excludes the observed plaintext, but an attacker who can guess a low-entropy value can hash candidates and confirm a match offline. Treat the receipt file as sensitive pseudonymous data and protect it accordingly.</p>
+</blockquote>
+<p>Event types and tool names remain readable because they are the stable audit categories. The two feeds are not deduplicated: DSH may publish one logical tool outcome first on <code>tools/result</code> and then durably as a <code>tool/result</code> <code>session/event</code>. In that case this plugin intentionally writes two receipts describing two observations. Do not sum those receipts as independent tool executions.</p>
+<h4>Canonical JSON boundary</h4>
+<p><code>hashObservedValue</code> accepts only lossless JSON values: <code>null</code>, booleans, finite numbers, strings, dense arrays, and plain objects with string keys. Object keys are sorted recursively using JavaScript&#39;s default UTF-16 code-unit order. Strings use <code>JSON.stringify</code> escaping, SHA-256 consumes the resulting UTF-8 bytes, and Unicode normalization is not performed; canonically equivalent NFC and NFD strings therefore hash differently.</p>
+<p><code>undefined</code> (including an object property), <code>BigInt</code>, non-finite numbers, functions, symbols, sparse array holes, extra array properties, accessors, non-enumerable or symbol keys, circular references, proxies, array subclasses, and non-plain objects such as <code>Date</code>, <code>Map</code>, or class instances are rejected. Accessor getters are not invoked. Direct callers receive a path-bearing <code>TypeError</code>; observer callbacks catch the failure, log a warning, omit only that receipt, and leave the DSH publication unchanged. Existing-file verification still fails plugin startup loudly.</p>
+<h3>Observe-only behavior</h3>
+<p>Both listeners are ordinary contained observers. They do not return a waterfall decision and do not mutate either callback argument. A receipt serialization or append error is logged and contained so the tool outcome and session publication continue unchanged. A startup error, including an invalid output path or damaged existing chain, fails plugin loading loudly instead of silently discarding audit records.</p>
+<p>One cleanup effect explicitly unregisters both listeners before closing the writer; Cordis&#39;s automatic listener disposers are idempotent with that cleanup. Appends and close are synchronous (<code>writeSync</code>/<code>closeSync</code>), with no promise-backed write queue left pending at unload. A real Cordis test awaits disposal and verifies that a later emission does not change the file.</p>
+<p>Model experience: no prompt text, tool schema, token, model request, result, or KV-cache behavior changes. The only runtime costs are canonical serialization, SHA-256, synchronous append I/O per observed record, and complete chain verification at plugin startup.</p>
+<h3>Optional output override</h3>
+<p>The override must be absolute. A later profile patch replaces the complete row config, so keep the row name and provide the full config:</p>
+<pre><code class="language-yaml">- id: qiushi-evidence-audit
+  name: qiushi-dsh-evidence-audit
+  config:
+    outputPath: &#39;D:\private-audit\evidence-receipts.jsonl&#39;
+</code></pre>
+<p>The configured destination is operator-owned; its parent-directory permissions and link safety are not changed by the plugin. Prefer a private directory that other users cannot write.</p>
+<h3>Verify and build</h3>
+<pre><code class="language-powershell">pnpm run typecheck
+pnpm run test
+pnpm run build
+pnpm run test:built
+pnpm run publint
+pnpm pack --dry-run
+pnpm run test:tarball
+$env:DSH_UPSTREAM_CHECKOUT=&#39;D:\path\to\pinned\deepseek-harness&#39;
+pnpm run test:upstream
+</code></pre>
+<p>Tests cover canonical JSON acceptance/rejection and Unicode behavior, a fixed SHA-256 vector, deterministic chain creation, exact mutation/truncation boundaries, a real two-process append race, plaintext exclusion, duplicate feed observations, fail containment, safe default resolution, real Cordis mount/event/disposal, built-artifact loading, publint, an exact pack list, install/import/mount from the tarball, and commit-pinned bundle composition with the byte-identical official <code>applyEntryPatches</code> implementation.</p>
+<h3>Integrity detection boundaries</h3>
+<p>This file is <strong>not generically tamper-evident</strong>. It has an unkeyed, self-contained hash chain with no external anchor. The tested boundaries are:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Detected?</th>
+<th>Exact boundary</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Edit a retained line or link</td>
+<td>Yes, at verification/startup</td>
+<td>Unless an attacker recomputes that line and every following hash.</td>
+</tr>
+<tr>
+<td>Remove an untouched prefix</td>
+<td>Yes, at verification/startup</td>
+<td>The first remaining sequence/link no longer starts at <code>0</code>/<code>null</code>; rewritten and re-chained files can evade this.</td>
+</tr>
+<tr>
+<td>Leave a partial final line</td>
+<td>Yes, at verification/startup</td>
+<td>A non-empty file must end with a newline after a complete JSON record.</td>
+</tr>
+<tr>
+<td>Delete the whole file</td>
+<td><strong>No</strong></td>
+<td>Re-creation is indistinguishable from first use without an external anchor.</td>
+</tr>
+<tr>
+<td>Remove a complete suffix</td>
+<td><strong>No</strong></td>
+<td>The shorter retained prefix remains a valid chain.</td>
+</tr>
+<tr>
+<td>Two processes append one file</td>
+<td>Not prevented</td>
+<td>There is no cross-process lock. The adversarial test makes two processes open the same head; later verification rejects the resulting duplicate/stale sequence. Use a separate file per process.</td>
+</tr>
+<tr>
+<td>Attacker rewrites and re-chains records</td>
+<td><strong>No</strong></td>
+<td>SHA-256 is unkeyed and the file carries no trusted signature/checkpoint.</td>
+</tr>
+</tbody></table>
+<h3>Known limitations and remaining risks</h3>
+<ul>
+<li>Hashes do not prove author identity and provide neither a digital signature nor a checkpoint anchored outside the host.</li>
+<li>A completed <code>writeSync</code> is not an <code>fsync</code> durability guarantee. A power loss or kernel/storage failure can lose the last receipt.</li>
+<li>Multiple DSH processes must not write the same file concurrently. Detection occurs only on a later verification and is not recovery; use one output file per process/profile.</li>
+<li>Startup verification is linear in the existing file size, and synchronous append I/O adds latency to the event publisher.</li>
+<li>POSIX modes do not express full Windows ACL policy. Verify ACLs for sensitive deployments.</li>
+<li>The plugin observes live publications after it mounts. Constructor seed/replay events that DSH deliberately does not publish on <code>session/event</code> are not backfilled.</li>
+<li>The compatibility smoke did not perform a model-backed DSH turn: the pinned shallow checkout had no installed/built workspace dependencies or API credential. It did exercise the real Cordis runtime and the official bundle patch parser/application semantics.</li>
+</ul>
+<h3>Project links</h3>
+<ul>
+<li><a href="https://github.com/030611/qiushi-dsh-evidence-audit">GitHub repository</a></li>
+<li><a href="https://www.npmjs.com/package/qiushi-dsh-evidence-audit">npm package</a></li>
+<li><a href="https://github.com/030611/qiushi-dsh-evidence-audit/releases/tag/v0.1.0">v0.1.0 release notes</a></li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

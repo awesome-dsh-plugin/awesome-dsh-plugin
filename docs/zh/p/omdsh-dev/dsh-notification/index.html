@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,116 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/dsh-notification</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-notification" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Desktop notifications for the DeepSeek Harness web GUI. When a session finishes a turn, the browser shows a system notification (via the <code>Notification</code> API), so you can switch tabs and still know when DSH is done. Per-outcome toggles and include/exclude keyword rules control exactly which completions notify.</p>
+<p>No harness change is needed: the host contributes a session projection (a bounded summary of each session&#39;s last completed turn), and the client watches the session list&#39;s completion reminder and applies its own persisted preferences.</p>
+<pre><code>host:  notification projection (last turn&#39;s reason/text/tools) --session/projection--&gt; browser
+client: session list completion reminder (live, dedup) + persisted settings
+        -&gt; permission + current-session visibility gate
+        -&gt; new Notification(&quot;DSH finished&quot;, { body: &quot;deploy done&quot; })
+</code></pre>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/heads/main.tar.gz
+</code></pre>
+<p>Restart the web server so the host half and the served client bundle pick up the plugin. The default <code>dsh web</code> profile has the required client composition (the session list, the settings shell, and locale).</p>
+<p>The settings section lives under <strong>Settings &gt; Notifications</strong>.</p>
+<h3>Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Enable notifications</td>
+<td>on</td>
+<td>Master switch; off stops every notification while keeping rules.</td>
+</tr>
+<tr>
+<td>Notify on completed / error / aborted / blocked / token limit</td>
+<td>completed + error on, rest off</td>
+<td>Which turn-end reasons notify (the host projection reports the reason).</td>
+</tr>
+<tr>
+<td>Keyword rules</td>
+<td>none</td>
+<td>Include/exclude filters matched against the session title, the turn&#39;s reply text, and its tool names. Include rules: at least one must match. Exclude rules: a match suppresses. Rules support literal or regex matching with an optional case-sensitive flag.</td>
+</tr>
+<tr>
+<td>Require manual dismiss</td>
+<td>off</td>
+<td>The notification stays until dismissed.</td>
+</tr>
+<tr>
+<td>Only notify when the task is out of view</td>
+<td>on</td>
+<td>Suppress a notification only when its session is currently in view. A completion still notifies while the page is hidden or while another session/workspace is open. Turn it off to notify even for the session being watched. Notifications for the same session replace each other.</td>
+</tr>
+</tbody></table>
+<p>Preferences persist in the browser (localStorage). The section also grants browser permission and sends a test notification.</p>
+<h3>Configuration</h3>
+<p>Host-side tunables live on the plugin row in <code>cordis.yml</code>:</p>
+<pre><code class="language-yaml">- id: dsh-notification
+  name: dsh-notification
+  config:
+    maxBodyChars: 400      # projection body budget; longer replies are ellipsized host-side
+</code></pre>
+<h3>Model experience</h3>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token cost</td>
+<td>None — notifications are UI-only and never enter a request.</td>
+</tr>
+<tr>
+<td>Tool calls</td>
+<td>None — the model gets no new tool.</td>
+</tr>
+<tr>
+<td>Session log</td>
+<td>Unchanged — the projection reads the existing log and adds no events.</td>
+</tr>
+<tr>
+<td>Prompt</td>
+<td>Unchanged — no system-prompt section is registered.</td>
+</tr>
+</tbody></table>
+<h3>Permission boundary</h3>
+<ul>
+<li>The host folds a pure projection over the session log (turn reason, bounded reply text, tool names) and the projection seam delivers it to the browser; the plugin writes nothing to the log and registers no model-facing tools.</li>
+<li>The client watches the session list&#39;s completion reminder (a live &quot;finished while not selected&quot; edge the runtime already computes) and shows a notification only when the user has granted Notification permission.</li>
+<li>Rule matching runs client-side against the projected content; the reply body never exceeds <code>maxBodyChars</code>.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install            # links the sibling dsh checkout for build and tests
+pnpm run check          # typecheck + tests + build
+pnpm run test           # vitest (host projection + composition, client decision/runner/helpers/section)
+pnpm run build          # esbuild host/client/invariant bundles + tsc declarations
+</code></pre>
+<p>The repo expects the harness checkout at <code>../dsh</code> for the dev-time <code>link:</code> resolutions. The composition spec boots the real <code>SessionStore</code> and <code>SessionProjectionRegistry</code> and proves the fold.</p>
+<h3>Known limitations</h3>
+<ul>
+<li>Notifications require the page to be open (the browser shows them while it is hidden, but not after the tab is closed) and Notification permission granted; a denied site permission cannot be overridden from inside the page.</li>
+<li>Notifications fire once per finished turn (a running→idle edge on any session); a completion that happened while the page was disconnected is not re-notified on reconnect.</li>
+<li>The rule subject is the session title plus the last turn&#39;s reply text and tool names — earlier turns are not matched.</li>
+<li>Notification body is a flat text snippet; the click action only focuses the window (no deep link to the turn).</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-notification/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

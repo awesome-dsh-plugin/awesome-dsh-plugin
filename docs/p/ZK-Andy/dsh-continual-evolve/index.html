@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,296 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve</pre><button type="button" data-cmd="dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/README.zh.md">中文</a> | English</p>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
+<a href="https://github.com/ZK-Andy/dsh-continual-evolve/actions/workflows/ci.yml"><img src="https://github.com/ZK-Andy/dsh-continual-evolve/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/package.json"><img src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933" alt="Node"></a>
+<a href=""><img src="https://img.shields.io/badge/tests-112%20passing-brightgreen" alt="Tests"></a>
+<a href=""><img src="https://img.shields.io/badge/status-all%20phases%20complete-ff69b4" alt="Status"></a></p>
+<p>Continual self-evolution for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>: a versioned, auditable, rollback-safe layer of harness state — prompt notes, memories, skills, and subagent specs — refined from session trajectories.</p>
+<blockquote>
+<p><strong>Status: all phases complete.</strong> Phase 2 adds a real system-prompt section:
+<code>prompt</code> entries are injected as additive prompt notes and <code>subagent</code>
+entries as reusable delegation specs — both capped (6/kind, 180 chars),
+inherited by subagents through the parent-session chain, and dropped
+entirely when the store is empty (zero token cost). On top of that,
+Phase 3&#39;s evaluation matrix runner (host-plane <code>subagents</code>, frozen
+runtime, structured-output cells) feeds a code-owned scoreboard; the
+non-regressive acceptance rule decides accept/reject with no model-written
+aggregates.</p>
+</blockquote>
+<h3>Background</h3>
+<p>This project started as a research question: <em>can a harness improve itself,
+and what would a production-grade version look like?</em> Three lines of evidence
+shaped the answer:</p>
+<ul>
+<li><strong>penguin-harness</strong> demonstrated the concept (benchmark → evaluate →
+optimize → accept/rollback) but with <strong>zero code-level enforcement</strong> — every
+guarantee was a prompt contract. Its report (<code>docs/research/</code>) became the
+hardening checklist this project implements.</li>
+<li><strong>prime-agent <code>/refine</code></strong> proved the engineering shape: versioned harness
+entries, atomic persistence, optimistic concurrency, inverse-op rollback.
+This package is an original implementation of that shape on the DSH plugin
+surface.</li>
+<li>Academic work (Self-Harness, AHE, HarnessOpt-Bench) supplied the discipline:
+frozen evaluation runtime, code-owned aggregation, non-regressive
+acceptance.</li>
+</ul>
+<p>The result: <strong>the model proposes, the code guarantees.</strong> Every mechanical
+safety property (schema validation, snapshots, versioning, audit trail,
+acceptance decisions) is enforced in code — never by asking the model to
+behave.</p>
+<h3>Why</h3>
+<p>Agents accumulate reusable experience in every session — repeated failures, durable facts, reusable procedures — and then forget it at the next turn or session. This plugin makes that experience first-class persistent state:</p>
+<ul>
+<li><strong>Versioned entries</strong> keyed by kind (<code>prompt</code> / <code>memory</code> / <code>skill</code> / <code>subagent</code>), each with a recorded provenance and version</li>
+<li><strong>Evidence trail</strong>: every refinement appends an event carrying <code>trigger / changes / evidence / outcome</code></li>
+<li><strong>Deterministic rollback</strong>: inverse edits are generated from applied results — no LLM re-guessing</li>
+<li><strong>Code-enforced safety</strong>, not prompt discipline: schema validation, atomic writes, corrupt-file degrade, optimistic concurrency, immutable base system prompt</li>
+<li><strong>Local (session) and global (cross-session) scopes</strong> with merge semantics</li>
+</ul>
+<h3>Design provenance</h3>
+<p>Inspired by three bodies of work (see <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/design.md"><code>docs/design.md</code></a>):</p>
+<ul>
+<li><strong>prime-agent <code>/refine</code></strong> (MIT): the state model, atomic persistence, optimistic concurrency, per-edit validation, and inverse-op rollback this package implements — annotated reference source in <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/research/prime-agent-refinement.ts"><code>docs/research/prime-agent-refinement.ts</code></a>. The code here is an original implementation, written for the DSH plugin surface.</li>
+<li><strong>penguin-harness</strong> (Apache-2.0): the benchmark-driven evolution loop — research report in <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/research/penguin-harness-self-evolution.md"><code>docs/research/penguin-harness-self-evolution.md</code></a>; its prompt-only contracts are the anti-pattern this package hardens.</li>
+<li>Academic: Self-Harness (arXiv 2606.09498), AHE (arXiv 2604.25850), HarnessOpt-Bench (arXiv 2608.06301).</li>
+</ul>
+<h3>Tech stack</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Choice</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Language</td>
+<td>TypeScript (strict, ES2024, ESM)</td>
+</tr>
+<tr>
+<td>Runtime</td>
+<td>Node <code>^22.19.0 || &gt;=24.0.0</code> (matches DSH)</td>
+</tr>
+<tr>
+<td>Plugin seam</td>
+<td><code>@deepseek-ai/cordis</code> (<code>name</code> / <code>apply</code> / <code>inject</code> entry)</td>
+</tr>
+<tr>
+<td>Package manager</td>
+<td>pnpm (DSH ecosystem standard)</td>
+</tr>
+<tr>
+<td>Build</td>
+<td><code>tsc</code> → <code>lib/</code> (main <code>lib/index.js</code>, types <code>lib/index.d.ts</code>)</td>
+</tr>
+<tr>
+<td>Tests</td>
+<td>Vitest</td>
+</tr>
+<tr>
+<td>Lint</td>
+<td>oxlint (DSH official repo convention)</td>
+</tr>
+<tr>
+<td>License</td>
+<td>MIT</td>
+</tr>
+</tbody></table>
+<h3>Project layout</h3>
+<pre><code>dsh-continual-evolve/
+├── package.json          # exports / files / engines / scripts + dsh.bundle manifest
+├── cordis.patch.yml      # bundle patch (dsh plugin add activates on install)
+├── tsconfig.json / .oxlintrc.json / .editorconfig / .gitignore
+├── LICENSE / README.md / README.zh.md
+├── docs/
+│   ├── design.md               # full design doc (incl. hardening matrix)
+│   └── research/               # penguin-harness report + prime-agent reference source
+├── src/
+│   ├── index.ts          # cordis plugin entry (service mount + wiring)
+│   ├── types.ts          # HarnessState / entry / edit / result types
+│   ├── state.ts          # atomic persistence, corrupt degrade, merge, concurrency
+│   ├── validate.ts       # code-enforced edit validation
+│   ├── apply.ts          # per-edit apply pass with optimistic locking
+│   ├── rollback.ts       # deterministic inverse-op rollback
+│   ├── plan.ts           # proposal JSON parsing (truncation-aware)
+│   ├── tool.ts           # evolve_* model-facing tools (5)
+│   ├── command.ts        # /evolve command (incl. benchmark subcommands)
+│   ├── planner.ts        # ctx.llm planner
+│   ├── render.ts         # bounded prompt rendering
+│   ├── inject.ts         # dynamic system-prompt section (prompt notes + delegation specs)
+│   ├── auto.ts           # auto-review gate (turn/compaction triggers + audit)
+│   ├── goal.ts           # goal-driven evolution rounds (/evolve goal)
+│   ├── review.ts         # gate LLM judgment
+│   ├── approval.ts       # human approval for global edits
+│   ├── skill.ts          # skill materialization ($DSH_HOME/skills/)
+│   ├── mount.ts          # hot-mounted skill plugins (loader.create + boot restore)
+│   ├── benchmark.ts      # benchmark store
+│   ├── rubric.ts         # rubric ACL (AES-256-GCM envelopes)
+│   ├── score.ts          # code-owned aggregation + acceptance rule
+│   ├── evaluate.ts       # evaluation matrix runner (structured-output subagents)
+│   ├── store.ts          # store layout + snapshots + result history
+│   └── service.ts        # evolution engine (onApplied hook)
+└── test/                 # 16 files, 112 tests
+</code></pre>
+<h3>In-session usage (after restart)</h3>
+<pre><code>/evolve                  help + current local store
+/evolve list [global]    list entries
+/evolve history          applied refinements (ids for rollback)
+/evolve rollback &lt;id&gt;    deterministically revert a refinement
+/evolve plan [msg]       LLM planner against the current store
+/evolve export &lt;path&gt;    backup the local store to JSON
+/evolve import &lt;path&gt;    restore a store from an export file
+/evolve mount &lt;skillId&gt;  hot-mount a skill entry as a live cordis plugin (tool: skill_&lt;name&gt;)
+/evolve mount list       list hot-mounted plugins (restored on boot)
+/evolve unmount &lt;id&gt;     remove a hot-mounted plugin
+/evolve goal             show the evolution goal (round-driven auto-review)
+/evolve goal &lt;objective&gt; create/update the evolution goal — while active, the review gate runs EVERY round
+/evolve goal done        complete the evolution goal
+</code></pre>
+<p>Model-facing tools: <code>evolve_list</code>, <code>evolve_add</code>, <code>evolve_update</code>, <code>evolve_delete</code>, <code>evolve_rollback</code>.</p>
+<h3>Benchmark-driven validation (Phase 3)</h3>
+<pre><code>/evolve benchmark new &lt;title&gt; [runs]                   create a benchmark (runs = repeats per case, default 1)
+/evolve benchmark add-case &lt;bid&gt; &lt;title&gt; &lt;statement&gt; &lt;rubric&gt;
+/evolve benchmark list                                 list benchmarks
+/evolve benchmark reset &lt;bid&gt;                          clear the scoreboard (re-run reference)
+/evolve benchmark status &lt;bid&gt;                         scoreboard + decisions
+/evolve benchmark run &lt;bid&gt;                            evaluate current state → reference
+/evolve benchmark run &lt;bid&gt; candidate &lt;refinementId&gt;   evaluate post-refinement state → decide
+</code></pre>
+<p>The loop: freeze a reference score → evolve a candidate (<code>/evolve plan</code>) →
+run the same case × run matrix against the post-refinement state → the
+<strong>code-owned</strong> acceptance rule keeps the candidate only if the overall mean
+strictly improves with no case regressing (Self-Harness style). The model
+produces raw per-cell scores only; aggregation and decisions live in
+<code>src/score.ts</code>. Rubric isolation is by construction (the planner never sees
+rubric files); rejection is recorded and suggested for rollback (human in
+the loop, no auto-rollback).</p>
+<h4>Real recorded run (ACCEPT)</h4>
+<p>A live <code>dsh web</code> session, one case, one candidate — the first genuine
+acceptance:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Command</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>reference</td>
+<td><code>/evolve benchmark run lint_convention</code></td>
+<td><strong>90</strong> — the evaluator agent actually grepped the harness store and reported <em>&quot;lint/ruff/eslint/mypy appear in zero entries&quot;</em></td>
+</tr>
+<tr>
+<td>candidate</td>
+<td><code>/evolve plan 记住：写代码前必须先运行适用的 lint 检查</code></td>
+<td>creates <code>memory:convention_lint_before_code</code></td>
+</tr>
+<tr>
+<td>re-evaluate</td>
+<td><code>/evolve benchmark run lint_convention candidate &lt;id&gt;</code></td>
+<td><strong>100</strong> — evaluator ran <code>evolve_list</code>, hit the memory, quoted it verbatim</td>
+</tr>
+<tr>
+<td>decision</td>
+<td>—</td>
+<td><code>overall: 90 → 100</code> · <code>lint_knowledge: 90 → 100</code> · <strong>DECISION: ACCEPTED</strong></td>
+</tr>
+</tbody></table>
+<p>The evaluator does not grade model common sense — it inspects the actual
+harness state under test (grep, <code>evolve_list</code>) and scores against it, so a
+harness change measurably moves the score. Earlier runs in the same session
+produced honest <code>REJECTED</code> decisions (0 → 0 placeholder cases, and 100 → 100
+where the baseline was already perfect).</p>
+<h3>Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>baseDir</code></td>
+<td>resolved DSH home</td>
+<td>root for the <code>evolve/</code> stores</td>
+</tr>
+<tr>
+<td><code>sectionOrder</code></td>
+<td>118</td>
+<td>system-prompt section order</td>
+</tr>
+<tr>
+<td><code>autoReview</code></td>
+<td><code>false</code></td>
+<td>enable the automatic review gate (costs a cheap model call per interval)</td>
+</tr>
+<tr>
+<td><code>reviewIntervalTurns</code></td>
+<td>6</td>
+<td>gate runs when this many turns passed since the last review</td>
+</tr>
+<tr>
+<td><code>maxReviewInputChars</code></td>
+<td>40000</td>
+<td>trajectory slice handed to the gate</td>
+</tr>
+<tr>
+<td><code>reviewBudgetTokens</code></td>
+<td>4096</td>
+<td>output budget for the gate call</td>
+</tr>
+<tr>
+<td><code>requireGlobalApproval</code></td>
+<td><code>true</code></td>
+<td>cross-session (global) edits ask the user for &quot;批准&quot; before applying</td>
+</tr>
+<tr>
+<td><code>skillsDir</code></td>
+<td><code>&lt;dshHome&gt;/skills</code></td>
+<td>root where skill entries materialize as SKILL.md bundles</td>
+</tr>
+<tr>
+<td><code>rubricKey</code></td>
+<td><code>DSH_EVOLVE_RUBRIC_KEY</code> → dev key</td>
+<td>passphrase for AES-256-GCM rubric encryption (benchmark rubrics never touch the disk in plaintext)</td>
+</tr>
+</tbody></table>
+<p>Example (profile <code>cordis.patch.yml</code>):</p>
+<pre><code class="language-yaml">- insert:
+    - id: continual-evolve
+      name: &#39;dsh-continual-evolve&#39;
+      config:
+        autoReview: true
+        reviewIntervalTurns: 6
+</code></pre>
+<h3>Development</h3>
+<pre><code class="language-bash">pnpm install        # install dev deps
+pnpm build          # tsc -&gt; lib/
+pnpm test           # vitest run
+pnpm lint           # oxlint src test
+</code></pre>
+<p>Hit a wall? See <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/FAQ.md"><code>docs/FAQ.md</code></a> — real failure/fix records (service planes, schema DSL, structured output, gate counting, verifying prompt injection).</p>
+<h3>Roadmap</h3>
+<ul>
+<li><strong>Phase 1 (done)</strong>: pure-core engine — state model, validation, apply, rollback, proposal parsing; tested.</li>
+<li><strong>Phase 1b (done)</strong>: <code>evolve_*</code> tools, <code>/evolve</code> command, and the <code>ctx.llm</code> planner; installed into the web profile.</li>
+<li><strong>Phase 2 (done)</strong>: ✅ auto-refine review gate (turn-interval checkpoints); ✅ compaction checkpoint (<code>compaction/start</code>); ✅ global-scope approval gate (userQuestions); ✅ executable skills (materialize to <code>$DSH_HOME/skills/</code>); ✅ prompt entries injected as a real system-prompt section (additive, capped 6/kind, inherited by subagents through the parent chain); ✅ subagent entries rendered as reusable delegation specs at the delegation seam.</li>
+<li><strong>Phase 3 (done)</strong>: ✅ benchmark-driven validation loop — evaluation matrix via the workflow engine, code-owned scoreboard aggregation, non-regressive acceptance rule, rubric isolation by construction; ✅ rubric ACL (rubric plaintext never on disk — AES-256-GCM envelopes, decrypted only by the evaluation runner); ✅ hot-mounted skill plugins (<code>/evolve mount &lt;skillId&gt;</code>, live loader entry, restored on boot); ✅ goal-driven evolution rounds (<code>/evolve goal</code> — an active goal drives the review gate every round). (Future: automated rollback on rejection.)</li>
+</ul>
+<h3>License</h3>
+<p>MIT. Independent project — not affiliated with DeepSeek.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,131 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:fuhefei/dsh-sentinel</pre><button type="button" data-cmd="dsh plugin --profile web add github:fuhefei/dsh-sentinel" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Condition-driven wakeup for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>: the agent registers a watch, goes to sleep — even closes the session — and the sentinel wakes it when the condition happens. Every subscription and every fire is a user-visible session event, and the browser dock shows what is on duty.</p>
+<p><img src="https://raw.githubusercontent.com/fuhefei/dsh-sentinel/main/docs/preview/sentinel-panel.png" alt="Sentinel dock panel, expanded"></p>
+<h3>How it works</h3>
+<p>The node half owns one server-lifetime runtime that folds a plugin-owned sidecar log (<code>$DSH_HOME/sentinel.jsonl</code>) into live subscriptions, probes every sensor on a shared 5s heartbeat, and delivers wakeups through the official followup channel — resuming a dormant session&#39;s agent first when needed. Subscriptions therefore survive process restarts, and conditions that become true while the server is down late-fire on the next probe.</p>
+<p>Watching is a resident-process concern: probing and fire delivery only run while a long-running dsh process (typically <code>dsh web</code>) is up. Headless one-shot runs load the plugin and can create, list and cancel watches, but nothing probes after the process exits — those watches become active once a resident process starts.</p>
+<p>One duty owner per <code>$DSH_HOME</code>: a lease file (<code>sentinel.lease</code>) makes the first process own probing and delivery; a second dsh process on the same home stays passive (tools work, writes persist to the shared sidecar) and takes over within one lease TTL of the owner dying. The owner re-reads the sidecar every heartbeat, so watches created on a passive instance are adopted automatically. Delivery is at-least-once: a fire logged but not delivered before a crash is requeued on the next boot from its <code>delivered</code> watermark.</p>
+<p>The browser half is a dock card above the composer (the <code>conversation.input.dock</code> family) listing the session&#39;s active watches — sensor, target, live probe state, fire budget, next-probe countdown — plus recent fire history when expanded. It polls the read-only state route and renders nothing when the session has no watches.</p>
+<p>Two surfaces make the server-global watch set visible. A sidebar branch grows under every session row that has active watches (<code>sidebar.workspaces.sessionRow.branch</code>, one shared poller for all rows) — collapsed it is a <code>👁</code> count, expanded it lists the session&#39;s watches and links to the dashboard. The dashboard is a standalone table of every watch across every session: session (active/dormant), sensor, target, pattern, fire budget, last probe state, next probe.</p>
+<table>
+<thead>
+<tr>
+<th>Sidebar branch</th>
+<th>Global dashboard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/fuhefei/dsh-sentinel/main/docs/preview/sentinel-sidebar-branch.png" alt="Sidebar branch"></td>
+<td><img src="https://raw.githubusercontent.com/fuhefei/dsh-sentinel/main/docs/preview/sentinel-dashboard.png" alt="Dashboard"></td>
+</tr>
+</tbody></table>
+<h3>Sensors</h3>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Engine</th>
+<th>Fires on</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>file</code></td>
+<td>path snapshot + inotify push</td>
+<td>snapshot change (sub-second); accelerated by fs events</td>
+</tr>
+<tr>
+<td><code>command</code></td>
+<td>read-only shell line, probed on an interval</td>
+<td>output/exit-code change</td>
+</tr>
+<tr>
+<td><code>http</code></td>
+<td>URL probed on an interval</td>
+<td>status/body change</td>
+</tr>
+<tr>
+<td><code>process</code></td>
+<td><code>pgrep -f</code> pattern, probed on an interval</td>
+<td>match-set change</td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>TCP connect to <code>[host:]port</code>, probed on an interval</td>
+<td>reachability change (open/closed/timeout)</td>
+</tr>
+<tr>
+<td><code>webhook</code></td>
+<td>pure push</td>
+<td>any POST to the returned hook URL</td>
+</tr>
+</tbody></table>
+<p>With <code>pattern</code>, probe kinds fire on the no-match→match edge of that regex and webhooks accept only matching payloads; without it, probe kinds fire on any change after the baseline.</p>
+<h3>Configuration</h3>
+<p>All deployment-tunable knobs live in the plugin&#39;s config schema (defaults in parentheses); override them on the bundle row in your profile&#39;s <code>cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- id: dsh-sentinel
+  name: &#39;@dsh-external/dsh-sentinel&#39;
+  config:
+    heartbeatMs: 5000            # probe round interval
+    probeConcurrency: 8          # in-flight probes per round
+    maxSubscriptionsPerSession: 16
+    maxPendingWakeups: 8         # queued wakeups per session before dropping oldest
+    defaultIntervalSeconds: 30   # when a watch does not specify one (5–86400)
+    defaultCooldownSeconds: 60
+    dutyLeaseTtlMs: 30000        # passive-instance takeover window after the owner dies
+    notifyWebhookUrl: &#39;&#39;         # optional: POST every fire here as JSON
+</code></pre>
+<p>Invalid values fail plugin load with a schema error rather than misbehaving at runtime.</p>
+<p><code>notifyWebhookUrl</code> fans every fire out of the harness as a JSON POST (<code>{plugin, event, sessionId, id, kind, target, note, fireNumber, maxFires, summary, after}</code>) — point it at a Lark/WeCom/Slack bot or any receiver. Delivery is at-most-once: a failed POST warns in the log and never blocks the in-harness wakeup.</p>
+<h3>Tools</h3>
+<ul>
+<li><code>sentinel_watch</code> — register a watch: <code>kind</code>, <code>target</code>, optional <code>pattern</code>, <code>interval</code> (1–3600s, default 30), <code>note</code> (delivered verbatim with every wakeup), <code>maxFires</code> (default 1: one-shot), <code>cooldown</code> (default 60s), optional <code>ttl</code>.</li>
+<li><code>sentinel_list</code> — active watches with live probe state.</li>
+<li><code>sentinel_cancel</code> — cancel one watch by id.</li>
+</ul>
+<h3>Routes</h3>
+<ul>
+<li><code>GET /plugins/dsh-sentinel/state?sessionId=…</code> — read-only state for the dock and the sidebar branch (omit <code>sessionId</code> for every session).</li>
+<li><code>GET /plugins/dsh-sentinel/dashboard</code> — the server-global watch table.</li>
+<li><code>POST /plugins/dsh-sentinel/hook?id=watch-N</code> — webhook entry; put a <code>curl</code> into a CI job, git hook, or another machine&#39;s script to wake the agent.</li>
+</ul>
+<h3>Install</h3>
+<p>One line through the official bundle channel (build artifacts are committed, so the git-source install runs no build):</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:fuhefei/dsh-sentinel#v0.7.0&quot;
+</code></pre>
+<p>Alternatively, add the node half manually through a patch-list configuration over the shipped base:</p>
+<pre><code class="language-yaml"># cordis.patch.yml
+- insert:
+    - id: dsh-sentinel
+      name: &#39;@dsh-external/dsh-sentinel&#39;
+</code></pre>
+<p>The browser half ships in the same package (<code>./client</code>) and is injected by the Web UI&#39;s plugin loader.</p>
+<h4>Sidebar branch prerequisite</h4>
+<p>The dock and the dashboard work on a stock host. The sidebar branch needs the session-row extension holes, which the official tree does not declare yet; apply the bundled patch to your DSH source checkout and rebuild <code>ui-workspace</code>:</p>
+<pre><code class="language-sh">git apply /path/to/dsh-sentinel/patches/session-row-holes.patch
+</code></pre>
+<p>The patch declares <code>sidebar.workspaces.sessionRow</code> and <code>sidebar.workspaces.sessionRow.branch</code> as <strong>list</strong> holes (every registrant renders, in order) at <strong>root</strong> scope (sidebar rows render outside any session binding; the row passes its <code>sessionId</code> through owner props). <a href="https://github.com/dsh-external/dsh-subagent-tree">dsh-subagent-tree</a> ships a patch for the same hole names with different semantics (keyed/session); apply one or the other, not both.</p>
+<h4>better-sidebar integration (optional)</h4>
+<p>When <a href="https://github.com/omdsh-dev/DSH-better-sidebar">dsh-better-sidebar</a> is installed in the same profile, sentinel registers its global watch table as a sidebar tab (<code>dsh-sentinel:watches</code>, in the <strong>+</strong> menu) through better-sidebar&#39;s documented <code>ctx.betterSidebar.registerTab</code> extension surface: every watch server-wide with live probe state, fire budgets and recent fire history, fed by one shared poller. No configuration needed; without better-sidebar the registration is silently skipped and the dock / branch / dashboard keep working as before.</p>
+<p><img src="https://raw.githubusercontent.com/fuhefei/dsh-sentinel/main/docs/preview/sentinel-better-sidebar-tab.png" alt="Sentinel tab inside the better-sidebar workbench"></p>
+<h4>Plays well with</h4>
+<p>Install <a href="https://github.com/omdsh-dev/dsh-notification">dsh-notification</a> alongside sentinel and the whole wakeup loop reaches your desktop: sentinel wakes the agent, the agent works the turn, and the turn&#39;s completion fires a desktop notification — no integration needed, the two plugins compose on their own.</p>
+<h3>Develop</h3>
+<pre><code class="language-sh">npm install
+npm run build     # tsc -b + tsdown (lib/index.js, lib/client.js)
+npm test          # vitest: domain fold/normalize, sensors, dashboard escaping, e2e wakeup flow
+</code></pre>
+<h3>License</h3>
+<p>BSD 3-Clause. See <a href="https://github.com/fuhefei/dsh-sentinel/blob/main/LICENSE">LICENSE</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/fuhefei/dsh-sentinel/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

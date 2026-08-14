@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,222 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zimai233/dsh-figma-to-lottie</pre><button type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-figma-to-lottie" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 打造的 Figma/SVG → Lottie 动画编译器。</p>
+<p>将 SVG 路径与关键帧数据编译成自包含的 <code>.lottie.json</code> 文件——直接在 agent 对话中完成，无需任何设计工具。</p>
+<h3>为什么需要它</h3>
+<p>DSH 插件生态<strong>没有设计工具桥接层</strong>（虽然有 Figma MCP，但没有插件能把设计数据编译成动画资产）。本插件填补了这个空白：它把 SVG→Lottie 的编译管道——路径解析、贝塞尔进出切线转换、关键帧缓动——提炼成两个可被 agent 调用的工具。</p>
+<h3>功能特性</h3>
+<ul>
+<li><strong><code>lottie_compile_shape</code></strong> — 将 SVG 路径 <code>d</code> 字符串解析为 Lottie 形状值 <code>{ i, o, v, c }</code>，带正确的贝塞尔切线。编译完整动画前，可先检查任意 SVG 路径的转换结果。</li>
+<li><strong><code>lottie_compile</code></strong> — 从紧凑的图层规格组装完整的 Lottie 5.7.4 JSON 文档：矩形（支持渐变填充）、路径、图片（base64 内嵌）、文字，每层均支持透明度 / 上滑关键帧动画。</li>
+<li>零构建步骤——纯 ESM，发布即运行时代码。无需 <code>prepare</code> 脚本，无需构建授权。</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-bash"># 从 npm 安装
+dsh plugin --profile myprofile add dsh-figma-to-lottie
+
+# 从 GitHub 安装（建议锁定 commit，供应链更安全）
+dsh plugin --profile myprofile add github:zimai233/dsh-figma-to-lottie#&lt;sha&gt;
+</code></pre>
+<h3>使用</h3>
+<p>用自然语言告诉 agent：</p>
+<blockquote>
+<p>&quot;编译一个 3 秒的加载动画：345×414 画布，浅灰背景，10 根蓝色柱子在 x=215.5 处以 0.48/0.24/0.4/1.4 的缓动上滑，每根错开 100ms。写入 ./loading.lottie.json&quot;</p>
+</blockquote>
+<p>agent 会调用 <code>lottie_compile</code>，传入类似这样的规格：</p>
+<pre><code class="language-json">{
+  &quot;frame&quot;: { &quot;w&quot;: 345, &quot;h&quot;: 414, &quot;bg&quot;: &quot;#f3f4f6&quot;, &quot;name&quot;: &quot;loading&quot; },
+  &quot;fps&quot;: 60,
+  &quot;durationMs&quot;: 3000,
+  &quot;layers&quot;: [
+    { &quot;type&quot;: &quot;rect&quot;, &quot;id&quot;: &quot;bar-1&quot;, &quot;x&quot;: 215.5, &quot;y&quot;: 112, &quot;w&quot;: 57, &quot;h&quot;: 13, &quot;r&quot;: 6.5,
+      &quot;gradient&quot;: [&quot;#61adf8&quot;, &quot;#8fd1fa&quot;], &quot;slideUp&quot;: 15, &quot;startMs&quot;: 0 },
+    { &quot;type&quot;: &quot;rect&quot;, &quot;id&quot;: &quot;bar-2&quot;, &quot;x&quot;: 215.5, &quot;y&quot;: 137, &quot;w&quot;: 57, &quot;h&quot;: 13, &quot;r&quot;: 6.5,
+      &quot;gradient&quot;: [&quot;#61adf8&quot;, &quot;#8fd1fa&quot;], &quot;slideUp&quot;: 15, &quot;startMs&quot;: 100 }
+  ]
+}
+</code></pre>
+<p>产出的 Lottie JSON 可直接用于 iOS / Android / Web（LottieWeb、lottie-ios、lottie-android）。</p>
+<h3>图层规格参考</h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>frame.w</code> / <code>frame.h</code></td>
+<td>number</td>
+<td>画布尺寸（像素，必填）</td>
+</tr>
+<tr>
+<td><code>frame.bg</code></td>
+<td>hex 字符串</td>
+<td>可选背景色</td>
+</tr>
+<tr>
+<td><code>fps</code></td>
+<td>number</td>
+<td>帧率，默认 60</td>
+</tr>
+<tr>
+<td><code>durationMs</code></td>
+<td>number</td>
+<td>动画总时长（必填）</td>
+</tr>
+<tr>
+<td><code>bezier</code></td>
+<td>{p1x,p1y,p2x,p2y}</td>
+<td>可选缓动曲线，默认为上滑缓动</td>
+</tr>
+</tbody></table>
+<h4>图层类型</h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>字段</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>rect</code></td>
+<td><code>x</code>、<code>y</code>、<code>w</code>、<code>h</code>、<code>r?</code>、<code>fill?</code>、<code>gradient?: [c1,c2]</code>、<code>slideUp?</code>、<code>opacity?</code>、<code>startMs?</code>、<code>endMs?</code></td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td><code>d</code>（SVG 路径）、<code>x?</code>、<code>y?</code>、<code>fill?</code>、<code>opacity?</code></td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td><code>path</code>（绝对文件路径，PNG 以 base64 内嵌）、<code>x</code>、<code>y</code>、<code>w</code>、<code>h</code></td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td><code>text</code>、<code>x</code>、<code>y</code>、<code>size</code>、<code>color?</code>、<code>font?</code></td>
+</tr>
+</tbody></table>
+<h3>开发</h3>
+<pre><code class="language-bash">npm install
+npm test          # 对 buildLottie + svgPathToLottie 运行纯核心测试
+npm run pack      # 打包预检（相当于 pnpm pack）
+</code></pre>
+<h3>许可证</h3>
+<p>MIT</p>
+<hr>
+<h2>dsh-figma-to-lottie</h2>
+<p>Figma/SVG → Lottie animation compiler for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>Turn SVG paths and keyframe data into self-contained <code>.lottie.json</code> files — directly from your agent conversation, no design tool required.</p>
+<h3>Why</h3>
+<p>The DSH plugin ecosystem has <strong>no design-tool bridge</strong> (the Figma MCP exists, but no plugin compiles design data into animation assets). This plugin fills that gap: it extracts the SVG→Lottie compilation pipeline — path parsing, bezier in/out tangent conversion, keyframe easing — into two agent-callable tools.</p>
+<h3>Features</h3>
+<ul>
+<li><strong><code>lottie_compile_shape</code></strong> — parse an SVG path <code>d</code> string into a Lottie shape value <code>{ i, o, v, c }</code> with correct bezier tangents. Inspect how any SVG path translates before compiling a full animation.</li>
+<li><strong><code>lottie_compile</code></strong> — assemble a complete Lottie 5.7.4 JSON document from a compact layer spec: rects (with gradient fills), paths, images (base64-embedded), and text, each with per-layer opacity/slide-up keyframe animation.</li>
+<li>Zero build step — pure ESM, the published package is the runtime code. No <code>prepare</code> script, no build permission needed.</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-bash"># from npm
+dsh plugin --profile myprofile add dsh-figma-to-lottie
+
+# from GitHub (lock the commit for supply-chain hygiene)
+dsh plugin --profile myprofile add github:zimai233/dsh-figma-to-lottie#&lt;sha&gt;
+</code></pre>
+<h3>Usage</h3>
+<p>Ask the agent in natural language:</p>
+<blockquote>
+<p>&quot;Compile a 3-second loading animation: 345×414 frame, light gray background, 10 blue bars at x=215.5 that slide up with a 0.48/0.24/0.4/1.4 ease, staggered 100ms apart. Write it to ./loading.lottie.json&quot;</p>
+</blockquote>
+<p>The agent calls <code>lottie_compile</code> with a spec like:</p>
+<pre><code class="language-json">{
+  &quot;frame&quot;: { &quot;w&quot;: 345, &quot;h&quot;: 414, &quot;bg&quot;: &quot;#f3f4f6&quot;, &quot;name&quot;: &quot;loading&quot; },
+  &quot;fps&quot;: 60,
+  &quot;durationMs&quot;: 3000,
+  &quot;layers&quot;: [
+    { &quot;type&quot;: &quot;rect&quot;, &quot;id&quot;: &quot;bar-1&quot;, &quot;x&quot;: 215.5, &quot;y&quot;: 112, &quot;w&quot;: 57, &quot;h&quot;: 13, &quot;r&quot;: 6.5,
+      &quot;gradient&quot;: [&quot;#61adf8&quot;, &quot;#8fd1fa&quot;], &quot;slideUp&quot;: 15, &quot;startMs&quot;: 0 },
+    { &quot;type&quot;: &quot;rect&quot;, &quot;id&quot;: &quot;bar-2&quot;, &quot;x&quot;: 215.5, &quot;y&quot;: 137, &quot;w&quot;: 57, &quot;h&quot;: 13, &quot;r&quot;: 6.5,
+      &quot;gradient&quot;: [&quot;#61adf8&quot;, &quot;#8fd1fa&quot;], &quot;slideUp&quot;: 15, &quot;startMs&quot;: 100 }
+  ]
+}
+</code></pre>
+<p>The result is a ready-to-play Lottie JSON for iOS / Android / Web (LottieWeb, lottie-ios, lottie-android).</p>
+<h3>Layer Spec Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>frame.w</code> / <code>frame.h</code></td>
+<td>number</td>
+<td>Canvas size in px (required)</td>
+</tr>
+<tr>
+<td><code>frame.bg</code></td>
+<td>hex string</td>
+<td>Optional background fill</td>
+</tr>
+<tr>
+<td><code>fps</code></td>
+<td>number</td>
+<td>Frames per second, default 60</td>
+</tr>
+<tr>
+<td><code>durationMs</code></td>
+<td>number</td>
+<td>Total animation length (required)</td>
+</tr>
+<tr>
+<td><code>bezier</code></td>
+<td>{p1x,p1y,p2x,p2y}</td>
+<td>Optional easing curve, defaults to slide-up ease</td>
+</tr>
+</tbody></table>
+<h4>Layer types</h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Fields</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>rect</code></td>
+<td><code>x</code>, <code>y</code>, <code>w</code>, <code>h</code>, <code>r?</code>, <code>fill?</code>, <code>gradient?: [c1,c2]</code>, <code>slideUp?</code>, <code>opacity?</code>, <code>startMs?</code>, <code>endMs?</code></td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td><code>d</code> (SVG path), <code>x?</code>, <code>y?</code>, <code>fill?</code>, <code>opacity?</code></td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td><code>path</code> (absolute file path, PNG base64-embedded), <code>x</code>, <code>y</code>, <code>w</code>, <code>h</code></td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td><code>text</code>, <code>x</code>, <code>y</code>, <code>size</code>, <code>color?</code>, <code>font?</code></td>
+</tr>
+</tbody></table>
+<h3>Development</h3>
+<pre><code class="language-bash">npm install
+npm test          # runs the pure-core tests against buildLottie + svgPathToLottie
+npm run pack      # dry-run publish (pnpm pack equivalent)
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zimai233/dsh-figma-to-lottie/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

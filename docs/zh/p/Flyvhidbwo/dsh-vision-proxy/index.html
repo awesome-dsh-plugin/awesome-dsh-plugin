@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,267 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy</pre><button type="button" data-cmd="dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/Flyvhidbwo/dsh-vision-proxy/blob/main/README.md">English</a> | <a href="https://github.com/Flyvhidbwo/dsh-vision-proxy/blob/main/README.zh-CN.md">简体中文</a></p>
+<p><strong>Keep DeepSeek as the brain — paste images anyway.</strong> GUI image attachments auto-transcribed for text-only DeepSeek on <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<h3>Why this exists</h3>
+<p>DeepSeek Harness natively gates image attachments on the selected model&#39;s declared <code>inputModalities</code>. DeepSeek&#39;s chat-completions line is text-only, so attaching an image with DeepSeek selected is rejected by design. Tool-based vision plugins exist, but <strong>GUI image attachments still fail</strong> with a text-only model.</p>
+<p>This plugin closes that gap: it registers a new provider route (<code>deepseek-vision</code>) that wraps the real DeepSeek adapter, claims image input (so the preflight admits attachments), and <strong>transcribes every attached image to text in the request stream</strong> before delegating to DeepSeek. The conversation is still answered by DeepSeek; vision is an add-on.</p>
+<pre><code>user attaches image ──▶ deepseek-vision route ──▶ transcribe via VLM (OCR + layout + details)
+                          │                          │
+                          ▼                          ▼
+                   DeepSeek answers ◀── text-only conversation (images replaced by [图片转译] text)
+</code></pre>
+<h3>Features</h3>
+<ul>
+<li><strong>No hangs, ever.</strong> Anonymous endpoints are hard-capped at 20 s (a hanging free tier can no longer stall a turn for minutes); HTTP 429 on anonymous endpoints fails immediately instead of sleeping on a useless <code>Retry-After</code>; endpoints that just failed (429/timeout) are cooled down for 60 s and skipped.</li>
+<li><strong>Multi-model, multi-provider.</strong> Any OpenAI-compatible VLM endpoint works — DashScope/Qwen, QwenCloud (international), Zhipu, OpenRouter, local Ollama, or your own. Each <code>fallbackModels</code> entry can carry its <strong>own</strong> <code>baseURL</code>/<code>model</code>, so one install can chain providers.</li>
+<li><strong>Zero-config local path.</strong> With <code>autoLocalOllama</code> (default on), a running Ollama at <code>http://localhost:11434</code> is detected at startup and prepended to the fallback chain — images never leave your machine. No key, no account.</li>
+<li><strong>Fast, clear failures.</strong> With no key and no local Ollama, transcription fails in seconds with actionable guidance (configure <code>VISION_API_KEY</code> / <code>DASHSCOPE_API_KEY</code> or install Ollama) — never a silent stall.</li>
+<li><strong>Automatic upgrade when you have a key.</strong> Export <code>VISION_API_KEY</code> / <code>DASHSCOPE_API_KEY</code> and your configured paid endpoint is used automatically (default: DashScope <code>qwen3.7-flash</code> — fast, cheap, no rate limit; DashScope, QwenCloud, Zhipu, OpenRouter, or any OpenAI-compatible endpoint all work); keyless entries are skipped, not failed.</li>
+<li><strong>Install-time consent prompt.</strong> <code>postinstall</code> asks whether you have a VLM API key. Non-interactive environments skip the prompt; the install never hangs. A PRIVACY NOTICE is printed at startup naming the active endpoint.</li>
+<li><strong>Fallback chain with classified errors.</strong> <code>rate_limit</code> / <code>quota</code> / <code>auth</code> / <code>region</code> / <code>model_not_found</code> / <code>context_too_large</code> / <code>http</code> are classified with actionable hints.</li>
+<li><strong>Content-hash cache.</strong> Transcriptions are cached by the SHA-256 of the image bytes (in-process, capped at 200) — the same image is transcribed at most once per process, even re-attached or in another conversation.</li>
+<li><strong>Auto-downscale (optional).</strong> With <code>sharp</code> installed, images above <code>maxImagePixels</code> are downscaled before transcription — fewer image tokens, much faster on big screenshots. Degrades gracefully without sharp.</li>
+<li><strong><code>read_image</code> compatible.</strong> The native <code>read_image</code> tool also works on this route (its capability gate reads the same model info).</li>
+</ul>
+<h3>Supported models &amp; providers</h3>
+<p>One config (<code>baseURL</code> + <code>model</code>, optionally <code>apiKey</code>) covers every backend:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>baseURL</th>
+<th>model</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>DashScope (China)</strong> — default main</td>
+<td><code>https://dashscope.aliyuncs.com/compatible-mode/v1</code></td>
+<td><code>qwen3.7-flash</code> / <code>qwen3-vl-flash</code></td>
+<td>Cheap, fast, no rate limit. Keys: <code>sk-ws-…</code> from <a href="https://platform.qianwenai.com">platform.qianwenai.com</a> or <code>sk-…</code> from <a href="https://bailian.console.aliyun.com">bailian.console.aliyun.com</a></td>
+</tr>
+<tr>
+<td><strong>Local Ollama (auto-detected)</strong></td>
+<td><code>http://localhost:11434/v1</code></td>
+<td>first vision-capable model</td>
+<td>Zero config when installed; images never leave the machine</td>
+</tr>
+<tr>
+<td><strong>QwenCloud (intl.)</strong></td>
+<td><code>https://dashscope-intl.aliyuncs.com/compatible-mode/v1</code></td>
+<td><code>qwen3-vl-plus</code> etc.</td>
+<td>International variant</td>
+</tr>
+<tr>
+<td><strong>Zhipu (free tier)</strong></td>
+<td><code>https://open.bigmodel.cn/api/paas/v4</code></td>
+<td><code>glm-4.6v-flash</code></td>
+<td>Free tier, still needs a (free) Zhipu API key</td>
+</tr>
+<tr>
+<td><strong>Anything OpenAI-compatible</strong></td>
+<td>your endpoint</td>
+<td>your model</td>
+<td>OpenRouter, Ark, vLLM, gateways… the plugin only speaks <code>/chat/completions</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>⚠️ <strong>Anonymous third-party free tiers are NOT bundled as a default fallback.</strong> In field testing, anonymous free endpoints (e.g. OVHcloud AI Endpoints) were strictly rate-limited AND occasionally hung without a response — as a default they just reproduce a broken experience. If you still want to point at one, add it yourself via <code>fallbackModels</code> with <code>anonymous: true</code> (the 20 s cap still applies).</p>
+</blockquote>
+<p><strong>Key resolution order</strong>: config <code>apiKey</code> → <code>$VISION_API_KEY</code> → <code>$DASHSCOPE_API_KEY</code>. Anonymous endpoints (<code>anonymous: true</code>) and local hosts need no key; keyless non-anonymous entries are skipped automatically.</p>
+<h3>Quick start</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-vision-proxy
+</code></pre>
+<p>During install you are asked one question — <em>do you have a VLM API key?</em> Answer <code>y</code> for the paid fast path, or <code>N</code> (default) for the local/zero-config path. Restart <code>dsh web</code>, pick <strong>DeepSeek + 自动识图</strong> in the model selector, then paste an image into any conversation.</p>
+<p><strong>pnpm ≥ 10 blocks dependency build scripts by default</strong> — the first install exits non-zero with <code>Ignored build scripts: dsh-vision-proxy, sharp</code>. Approve both (the plugin&#39;s consent prompt and <code>sharp</code>&#39;s optional binary), then re-run the install to finish bundle registration:</p>
+<pre><code class="language-yaml"># in the profile&#39;s pnpm-workspace.yaml
+allowBuilds:
+  dsh-vision-proxy: true
+  sharp: true
+</code></pre>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-vision-proxy   # re-run after approving
+</code></pre>
+<blockquote>
+<p><strong>Slow npm registry in China?</strong> <code>dsh plugin --profile web add dsh-vision-proxy --registry=https://registry.npmmirror.com</code> (the flag is forwarded to pnpm).</p>
+</blockquote>
+<h3>Live demo: a real GUI image turn</h3>
+<p>A real conversation on the <code>deepseek-vision</code> route (DeepSeek-V4-Flash as the brain): the user pasted a meme and asked <strong>&quot;你看到了什么&quot;</strong> (what do you see?); the image was auto-transcribed by the VLM and DeepSeek answered from the text — one step, ~7.6 s.</p>
+<p><em>Left: the model picker showing the <code>deepseek-vision</code> route (<strong>DeepSeek + 自动识图</strong>) selected — that is what admits image attachments. Right: DeepSeek&#39;s full answer derived from the transcribed image text.</em></p>
+<pre><code>user pastes a meme image + &quot;你看到了什么&quot;
+  → image block auto-transcribed via the VLM (OCR + layout):
+      &quot;我是吃白饭的 / 蓝色大肥鱼！ (理直气壮.jpg) — Q-version blue-haired maid girl
+       with a whale tail, holding a bowl of rice and chopsticks, excited expression&quot;
+  → DeepSeek answers with a full visual analysis of the meme
+</code></pre>
+<p>Two autonomous paths are covered: the <code>view_image</code> tool (any route, file paths &amp; URLs) and image-block auto-transcription (on the <code>deepseek-vision</code> route — images you attach mid-conversation).</p>
+<h3>Configuration</h3>
+<p>The bundle already ships sensible defaults (see the strategy above) — you normally don&#39;t need to configure anything. To override them in your profile, use an <strong>id-targeted override</strong>, NOT an <code>insert</code> (see the warning below):</p>
+<pre><code class="language-yaml"># $DSH_HOME/profiles/web/cordis.patch.yml — user-layer override example
+- id: dsh-vision-proxy
+  name: &#39;dsh-vision-proxy&#39;
+  config:
+    baseURL: https://dashscope.aliyuncs.com/compatible-mode/v1
+    apiKey: &#39;sk-…&#39;          # or leave &#39;&#39; to read env vars (writing it here is the reliable way on Windows)
+    model: qwen3.7-flash
+    maxTokens: 4096
+    timeoutMs: 120000       # anonymous endpoints are hard-capped at 20 s anyway
+    maxImagePixels: 4000000
+    marker: &#39;[图片转译]&#39;
+    autoLocalOllama: true
+    fallbackModels: []      # add your own {model, baseURL, apiKey?, anonymous?, timeoutMs?}
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>Do NOT write this as <code>- insert: [{id: dsh-vision-proxy, …}]</code>.</strong> In dsh&#39;s patch semantics an <code>insert</code> <strong>appends</strong> entries to the list — the bundle&#39;s own entry and yours (same id) would both be instantiated, registering the <code>deepseek-vision</code> adapter <strong>twice</strong> (undefined behavior). A top-level <code>- id:</code> entry targets the existing row and <strong>replaces its whole <code>config</code></strong>; keys you omit fall back to the plugin schema&#39;s <code>.default()</code> values (e.g. <code>maxTokens=4096</code>, <code>timeoutMs=120000</code>, <code>autoLocalOllama=true</code>), so writing only <code>apiKey</code>/<code>model</code> also works.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>providerId</code></td>
+<td><code>deepseek-vision</code></td>
+<td>Route id shown in the model picker</td>
+</tr>
+<tr>
+<td><code>innerProvider</code></td>
+<td><code>deepseek-official</code></td>
+<td>Existing adapter route to wrap</td>
+</tr>
+<tr>
+<td><code>baseURL</code></td>
+<td>DashScope compatible-mode</td>
+<td>OpenAI-compatible VLM endpoint (any vendor, Ollama included)</td>
+</tr>
+<tr>
+<td><code>apiKey</code></td>
+<td><code>&#39;&#39;</code></td>
+<td>VLM key; falls back to <code>$VISION_API_KEY</code>, then <code>$DASHSCOPE_API_KEY</code>. On Windows, environment changes may not reach a running dsh — writing <code>apiKey</code> here is the reliable way</td>
+</tr>
+<tr>
+<td><code>anonymous</code></td>
+<td><code>false</code></td>
+<td>Skip the Authorization header (for registration-free endpoints; 20 s timeout cap applies)</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td><code>qwen3.7-flash</code></td>
+<td>Vision model id (e.g. <code>Qwen2.5-VL-72B-Instruct</code>, <code>qwen3-vl-flash</code>, <code>glm-4.6v-flash</code>, <code>qwen3-vl:4b</code>)</td>
+</tr>
+<tr>
+<td><code>maxTokens</code></td>
+<td><code>4096</code></td>
+<td>VLM output cap (thinking models spend tokens on reasoning first)</td>
+</tr>
+<tr>
+<td><code>timeoutMs</code></td>
+<td><code>120000</code></td>
+<td>VLM request timeout (anonymous endpoints are capped at 20 s regardless)</td>
+</tr>
+<tr>
+<td><code>maxImagePixels</code></td>
+<td><code>4000000</code></td>
+<td>Images above this are downscaled before transcription when <code>sharp</code> is installed (0 disables)</td>
+</tr>
+<tr>
+<td><code>marker</code></td>
+<td><code>[图片转译]</code></td>
+<td>Marker prepended to each transcription</td>
+</tr>
+<tr>
+<td><code>autoLocalOllama</code></td>
+<td><code>true</code></td>
+<td>Probe <code>http://localhost:11434</code> at startup; when found, prepend it to the fallback chain</td>
+</tr>
+<tr>
+<td><code>localOllamaModel</code></td>
+<td><code>&#39;&#39;</code></td>
+<td>Ollama model id; empty picks the first vision-capable model the local Ollama reports</td>
+</tr>
+<tr>
+<td><code>fallbackModels</code></td>
+<td><code>[]</code></td>
+<td>Ordered fallback list <code>{model, baseURL?, apiKey?, anonymous?, timeoutMs?}</code> — each entry may point at a <strong>different provider</strong>; keyless non-anonymous entries are skipped</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>About API keys on Windows</strong>: <code>dsh --profile &lt;name&gt; --dump-config</code> prints the composed config as-is (so a key in <code>cordis.patch.yml</code> shows in plaintext dumps), but environment variables set after a process started (explorer.exe caches them) may never reach a running dsh. If you see <code>skipped — no API key</code> despite having exported the key, <strong>write <code>apiKey</code> directly into the plugin config</strong> — it is the only reliable path on Windows. (Note: dsh rc.6 does NOT load <code>.env</code> files, so that is not an alternative.)</p>
+</blockquote>
+<h3>Verify the install</h3>
+<pre><code class="language-sh">dsh --profile web --dump-config | grep -A3 dsh-vision-proxy   # exactly ONE entry (note: dumps config in plaintext, key included)
+</code></pre>
+<ol>
+<li>Restart <code>dsh web</code> → the model picker shows <strong>DeepSeek + 自动识图</strong>.</li>
+<li>Paste an image into a conversation → you should see the <code>[图片转译]</code> marker followed by DeepSeek&#39;s answer.</li>
+<li>With no key and no local Ollama, the turn should fail <strong>fast</strong> (seconds) with the guidance message — that is the intended no-hang behavior.</li>
+</ol>
+<h3>Behavior notes</h3>
+<ul>
+<li>Only messages containing image blocks are touched; plain-text conversations hit DeepSeek with zero overhead.</li>
+<li>Anonymous endpoints: 20 s hard timeout cap, HTTP 429 fails immediately (no retry), failures arm a 60 s endpoint cooldown — consecutive images don&#39;t re-hit a broken endpoint.</li>
+<li>The request only fails after every chain entry failed, with one error listing each attempt plus actionable guidance.</li>
+<li>Transcription results are cached in-process by image content hash (never persisted).</li>
+<li>On startup the plugin logs a one-line summary — route id, wrapped provider, VLM model, endpoint, timeout, maxTokens, apiKey source and fallback list (the key itself is never logged), plus a PRIVACY NOTICE and a local-Ollama detection line.</li>
+<li>Tested: 14 unit tests on Node 22 and 24 via GitHub Actions (incl. no-hang fast-fail, cooldown skip, and Ollama detection).</li>
+<li>Transcription quality: dense UI screenshots may lose small text details — that is the vision model&#39;s capability ceiling, not a plugin bug. For OCR-heavy work, use a stronger model (e.g. <code>qwen3-vl-plus</code>) or raise <code>maxTokens</code>.</li>
+</ul>
+<h3>Troubleshooting</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause &amp; fix</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>skipped — no API key</code> despite exporting <code>VISION_API_KEY</code></td>
+<td>Windows caches environment variables in explorer.exe; the running dsh never saw them. Write <code>apiKey</code> directly into the plugin config, then restart dsh</td>
+</tr>
+<tr>
+<td><code>Ignored build scripts: dsh-vision-proxy, sharp</code> on install</td>
+<td>pnpm ≥ 10 blocks dependency build scripts. Add <code>allowBuilds: {dsh-vision-proxy: true, sharp: true}</code> to the profile&#39;s <code>pnpm-workspace.yaml</code>, then re-run the install</td>
+</tr>
+<tr>
+<td><code>ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION</code> on a fresh release day</td>
+<td>pnpm 11 defaults <code>minimumReleaseAge</code> to 1 day (supply-chain policy). Add <code>minimumReleaseAge: 0</code> to the profile&#39;s <code>pnpm-workspace.yaml</code>, or pass <code>--config.minimum-release-age=0</code> to <code>dsh plugin add</code>, then re-run</td>
+</tr>
+<tr>
+<td><code>all N vision model(s) failed … rate_limit</code> on an anonymous endpoint</td>
+<td>Anonymous free tiers are strictly rate-limited and may hang. Configure a key or use local Ollama</td>
+</tr>
+<tr>
+<td>Turn stalls ~20 s then fails on a fresh install with no key</td>
+<td>No key and no local Ollama — that is the intended fast-fail path. Install Ollama or add a key</td>
+</tr>
+<tr>
+<td>Slow downloads from registry.npmjs.org</td>
+<td>Use <code>--registry=https://registry.npmmirror.com</code> (forwarded to pnpm)</td>
+</tr>
+</tbody></table>
+<h3>Privacy</h3>
+<p>Transcription sends image bytes (base64, over HTTPS) to the configured VLM endpoint — <strong>the image data leaves your machine</strong> unless <code>baseURL</code> points at a local service (e.g. Ollama). Nothing is stored beyond the harness&#39;s own attachment store. For sensitive images, use your own endpoint or a local model — or don&#39;t install.</p>
+<h3>How it works (for plugin developers)</h3>
+<p>The plugin uses only public harness seams, stable on rc.6:</p>
+<ul>
+<li><code>ctx.llm.registration(innerProvider).adapter</code> — reach the wrapped adapter;</li>
+<li><code>ctx.llm.registerAdapter([providerId], proxyAdapter)</code> — register a NEW route (no <code>DUPLICATE_ADAPTER</code> conflict);</li>
+<li>proxy <code>resolveModel</code> overrides <code>inputModalities</code> to <code>[&#39;text&#39;, &#39;image&#39;]</code> — satisfies the attachment preflight (<code>api-proxy</code>) and the <code>read_image</code> gate (<code>dsh-tool-fs</code>);</li>
+<li>proxy <code>stream</code> transcribes image blocks (shape <code>{ type: &#39;image&#39;, attachment }</code>, bytes via <code>ctx.get(&#39;attachments&#39;).readImage(ref)</code>) and <code>yield*</code>s the inner adapter&#39;s stream unchanged.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Flyvhidbwo/dsh-vision-proxy/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

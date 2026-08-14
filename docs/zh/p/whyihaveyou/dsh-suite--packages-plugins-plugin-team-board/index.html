@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,113 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-team-board</pre><button type="button" data-cmd="dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-team-board" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>DSH 插件：多 agent / subagent 共享的持久任务看板。通过一个 Cordis <strong>服务键 <code>ctx.teamBoard</code></strong> 物化
+共享状态（不是模块级全局变量），用 <code>defineTool</code> 暴露 <code>task_create</code> / <code>task_claim</code> / <code>task_update</code> /
+<code>task_list</code> / <code>task_delete</code>，并用 sessions seam 做跨重载持久化。生态位空白：<code>ccteam</code> 是独立产品，
+没人做成 DSH 原生插件。</p>
+</blockquote>
+<blockquote>
+<p>DSH plugin: a shared, durable task board for multi-agent / subagent collaboration. Shared state is
+materialized as a Cordis <strong>service key <code>ctx.teamBoard</code></strong> (not a module global), exposed through
+<code>defineTool</code> as <code>task_create</code> / <code>task_claim</code> / <code>task_update</code> / <code>task_list</code> / <code>task_delete</code>, and
+persisted across reload via the sessions seam. A DSH-native board — an empty niche (<code>ccteam</code> is a
+standalone product, nobody built the DSH-native one).</p>
+</blockquote>
+<hr>
+<h3>特性 / Features</h3>
+<ul>
+<li><p><strong>共享状态 = 协作用键</strong>（设计准则 #2/#10）：看板状态活在 <code>TeamBoardService</code>（<code>ctx.teamBoard</code>），
+跨会话/subagent 可见；插件闭包里没有全局可变态。</p>
+</li>
+<li><p><strong>持久化走 sessions seam</strong>：每次变更追加一个 <code>board/snapshot</code> 事件到专用 <code>team-board</code> 会话日志，
+由 base bundle 自带的 <code>session-persistence-jsonl</code> 落盘；重启后重放最后一个快照重建状态。</p>
+</li>
+<li><p><strong>5 个工具</strong>（<code>defineTool</code>）：创建 / 认领 / 状态流转 / 查询 / 删除。</p>
+</li>
+<li><p>注册即 effect：工具经 <code>ctx.tools.register</code> 注册，卸载自动反注册。</p>
+</li>
+<li><p><strong>Shared state as a service key</strong> (principles #2/#10): board state lives in <code>TeamBoardService</code>
+(<code>ctx.teamBoard</code>), visible across sessions/subagents; no module-level mutable state.</p>
+</li>
+<li><p><strong>Persistence via the sessions seam</strong>: every mutation appends a <code>board/snapshot</code> event to a dedicated
+<code>team-board</code> session log, stored by the base bundle&#39;s <code>session-persistence-jsonl</code>; on restart the last
+snapshot is replayed to rebuild state.</p>
+</li>
+<li><p><strong>5 tools</strong> (<code>defineTool</code>): create / claim / transition / query / delete.</p>
+</li>
+<li><p>Registrations are effects: tools go through <code>ctx.tools.register</code> and unregister on unload.</p>
+</li>
+</ul>
+<h3>任务模型 / Task model</h3>
+<pre><code>{ id, subject, status: todo|doing|done, owner?, deps: string[], createdAt, updatedAt }
+</code></pre>
+<h3>工具 / Tools</h3>
+<table>
+<thead>
+<tr>
+<th>工具 / Tool</th>
+<th>参数 / Params</th>
+<th>行为 / Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>task_create</code></td>
+<td><code>subject</code>(必), <code>owner?</code>, <code>deps?</code></td>
+<td>建任务，状态 <code>todo</code>，生成 <code>id</code></td>
+</tr>
+<tr>
+<td><code>task_claim</code></td>
+<td><code>id</code>(必), <code>owner?</code></td>
+<td>认领：状态 → <code>doing</code>，owner 缺省为调用方 agent id</td>
+</tr>
+<tr>
+<td><code>task_update</code></td>
+<td><code>id</code>(必), <code>subject?</code>/<code>status?</code>/<code>owner?</code>/<code>deps?</code></td>
+<td>只改传入字段</td>
+</tr>
+<tr>
+<td><code>task_list</code></td>
+<td><code>status?</code>, <code>owner?</code></td>
+<td>按创建时间排序，可按状态/owner 过滤</td>
+</tr>
+<tr>
+<td><code>task_delete</code></td>
+<td><code>id</code>(必)</td>
+<td>删除任务</td>
+</tr>
+</tbody></table>
+<h3>安装 / Install</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add @dsh-suite/plugin-team-board
+</code></pre>
+<p>（本地开发：<code>dsh plugin --profile &lt;name&gt; add ./packages/plugins/plugin-team-board</code>）</p>
+<p>无配置项。程序化消费者可用 <code>ctx.teamBoard.createTask/claimTask/updateTask/listTasks</code> 直接调用。</p>
+<p>No config. Programmatic consumers call <code>ctx.teamBoard.createTask / claimTask / updateTask / listTasks</code>.</p>
+<h3>验证 / Verification</h3>
+<ul>
+<li>✅ 纯 ESM 编译（<code>pnpm build</code>）</li>
+<li>✅ 核心逻辑 smoke：<code>scripts/board-smoke.mjs</code> 15/15 断言（create/claim/update/list/delete/snapshot 回放）</li>
+<li>✅ 真实装载：<code>dsh plugin add</code> → <code>--dump-config</code> 含 <code>team-board</code> 行 → headless boot
+<code>task_create listed=true</code>（Service 实例化 + 工具注册成功）</li>
+<li>⚠️ 端到端「模型调 task_create → 看板状态」需 <code>DEEPSEEK_API_KEY</code>（无 key 时 headless 停在 MISSING_CREDENTIAL）</li>
+<li>⚠️ 跨进程重启恢复：依赖 <code>session-persistence-jsonl</code> 回放 <code>team-board</code> 会话，未在本环境做「重启→状态还在」闭环（需持久化后端 + 真实会话）</li>
+</ul>
+<h3>设计准则 / Design principles</h3>
+<p>遵守 <code>dsh-plugin-design-principles.md</code>：共享状态物化为协作用键（#2）、长命状态放依赖不放闭包（#10）、
+<code>inject</code> 声明依赖（#3）、注册即 effect（#1）、事件走类型化 <code>session/event</code> + declaration merging（#15）。</p>
+<h3>Known Limitations / 已知局限</h3>
+<ul>
+<li>MVP 为<strong>单进程内</strong>共享看板（跨进程/跨机器同步是 v2，架构蓝图 §5.3 已注明）。</li>
+<li>看板状态以「整板快照」形式持久化（每次写 O(n)），任务量级小（几十条）时足够；海量任务可改为 per-task 事件流。</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/whyihaveyou/dsh-suite/blob/main/packages/plugins/plugin-team-board/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

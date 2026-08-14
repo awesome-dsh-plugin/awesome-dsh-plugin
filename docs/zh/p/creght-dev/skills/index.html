@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,61 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:creght-dev/skills</pre><button type="button" data-cmd="dsh plugin --profile web add github:creght-dev/skills" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>This repository provides Codex/agent skills for Creght. They help agents understand Creght project structure, CLI workflows, page development conventions, CMS/Form/Auth/Func backend/SEO features, and other platform capabilities.</p>
+<h3>Skills</h3>
+<ul>
+<li><strong><code>creght</code></strong> — the base platform skill: CLI workflows, pages/components conventions, CMS, forms, Auth, Func backend, SEO, publishing.</li>
+<li><strong><code>site-replica</code></strong> — replicate any existing website onto Creght (&quot;复刻网站&quot;): probes the source in a real browser, audits every animation and interaction, rebuilds it as an original React/Tailwind implementation with license-safe placeholder assets, then verifies desktop + mobile against the source in a loop until parity. Builds on top of <code>creght</code>.</li>
+</ul>
+<h3>What This Skill Does</h3>
+<ul>
+<li>Guides agents through Creght CLI workflows for creating projects, pulling workspace files, pushing frontend and Func backend file changes, resolving merge conflicts, previewing, and publishing sites.</li>
+<li>Discovers project and site IDs from rendered Creght page URLs through <code>/.well-known/creght.json</code>.</li>
+<li>Enforces Creght page development conventions, such as <code>/pages</code> routes, the <code>/components</code> directory, native <code>&lt;a&gt;</code> navigation, and <code>getServerSideProps</code> for data loading.</li>
+<li>Helps write React + Tailwind v4 pages and components that follow Creght platform requirements.</li>
+<li>Provides implementation references for common platform capabilities such as CMS, form submissions, Auth, file-based Func backend code under <code>backend/func</code>, SEO metadata, sitemaps, and carousel components.</li>
+<li>Helps debug local-to-platform sync, preview, and publishing issues.</li>
+</ul>
+<h3>Examples</h3>
+<pre><code class="language-text">Add an About page to this Creght project, following the existing pages and components structure. {YOUR_CREGHT_PROJECT_EDIT_URL like https://creght.cn/editor/project/pveao61akhoy/site/pveao646es1u}
+</code></pre>
+<pre><code class="language-text">Connect the homepage to Creght CMS data, using the schema and types that already exist in the project. {YOUR_CREGHT_PROJECT_EDIT_URL like https://creght.cn/editor/project/pveao61akhoy/site/pveao646es1u}
+</code></pre>
+<pre><code class="language-text">Optimize the project&#39;s SEO configuration, including title, description, keywords, Open Graph, and related metadata. {YOUR_CREGHT_PROJECT_EDIT_URL like https://creght.cn/editor/project/pveao61akhoy/site/pveao646es1u}
+</code></pre>
+<pre><code class="language-text">https://www.creght.cn/docs/ai/ai-edit-content-guide 新增一个文章，内容是关于 ai 积分的价格
+</code></pre>
+<pre><code class="language-text">复刻 https://example-portfolio.framer.website/ 到 Creght，保留布局和所有动效，独立运行直到完成
+</code></pre>
+<h3>Installation</h3>
+<p>Install with <code>npx</code>:</p>
+<pre><code class="language-bash">npx skills add creght-dev/skills -g -y
+</code></pre>
+<p>Or use <code>bunx</code>:</p>
+<pre><code class="language-bash">bunx skills add creght-dev/skills -g -y
+</code></pre>
+<p>After installation, supported Codex/agent environments will automatically load the corresponding skill guidance when working with Creght projects.</p>
+<h4>DeepSeek Harness (dsh)</h4>
+<p>This repository is also a dsh bundle, so it installs into a dsh profile directly (requires <code>pnpm</code> on <code>PATH</code>):</p>
+<pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add github:creght-dev/skills
+</code></pre>
+<p>Pin a tag or commit with <code>github:creght-dev/skills#v1.0.0</code>. Remove it with <code>... plugin --profile web remove creght-skills</code>, update with <code>... plugin --profile web update creght-skills</code>.</p>
+<h3>Update</h3>
+<p>Update to the latest version with <code>npx</code>:</p>
+<pre><code class="language-bash">npx skills update creght
+</code></pre>
+<p>Or use <code>bunx</code>:</p>
+<pre><code class="language-bash">bunx skills update creght
+</code></pre>
+<p>Re-running the add command above also works — it is idempotent and pulls the latest.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/creght-dev/skills/blob/main/readme.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,97 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Sev7een/ds-api-usage</pre><button type="button" data-cmd="dsh plugin --profile web add github:Sev7een/ds-api-usage" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>English</strong> | <a href="https://github.com/Sev7een/ds-api-usage/blob/main/README.zh-CN.md">简体中文</a></p>
+<p>After installation, open <strong>Settings → API Usage</strong> in <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a> to view your DeepSeek API usage. The page shows your account balance, estimated spend, token counts, and API request count over the last 24 hours, rendered as a timeline bar chart similar to the official DeepSeek platform usage page.</p>
+<h3>Features</h3>
+<ul>
+<li>💰 <strong>Balance card</strong> — total balance with granted / topped-up split, plus an availability badge, fetched from the official <a href="https://api-docs.deepseek.com/api/get-user-balance/"><code>GET /user/balance</code></a> endpoint.</li>
+<li>📊 <strong>Metric cards</strong> — 24h estimated spend (CNY), token counts (input / output split), and API request count.</li>
+<li>📈 <strong>Timeline chart</strong> — hourly bars of estimated spend over the last 24 hours (hover for exact values).</li>
+<li>🔄 <strong>Live refresh</strong> — balance refreshes every 60 s on the host; the page polls every 30 s and has a manual refresh button.</li>
+<li>🔑 <strong>No extra key setup</strong> — reuses the deployment&#39;s existing <code>DEEPSEEK_API_KEY</code> credential through the harness <code>credentials</code> service.</li>
+</ul>
+<h3>Architecture</h3>
+<pre><code>┌─────────────────────────────── Host (Node.js) ───────────────────────────────┐
+│ src/index.js                                                                 │
+│  • ctx.on(&#39;llm/stream&#39;, ...)  ← waterfall: folds every real model call&#39;s     │
+│      provider-reported TokenUsage (input/output/cache-hit/cache-miss,        │
+│      already disjoint, matching DeepSeek billing vocabulary)                 │
+│      into in-memory hourly + daily buckets                                   │
+│  • fetchBalance()             ← credentials.resolve(&#39;DEEPSEEK_API_KEY&#39;)      │
+│      → subprocess curl → https://api.deepseek.com/user/balance               │
+│      (web.fetch cannot send an Authorization header, hence curl)             │
+│  • webServer.register(&#39;/ds-api-usage/snapshot&#39;)  ← JSON endpoint for client  │
+└──────────────────────────────────────────────────────────────────────────────┘
+                              │ fetch(&#39;/ds-api-usage/snapshot&#39;)
+                              ▼
+┌────────────────────────────── Client (browser) ─────────────────────────────┐
+│ client/bundle.js (web bundle; client/index.js = dynamic-plugin source)      │
+│  • slots.inject(&#39;settings.section&#39;)  → new settings page &quot;API用量&quot;             │
+│  • balance card + 3 metric cards + 24h timeline bar chart                   │
+│  • auto-refresh every 30 s via ctx.interval                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h4>Data notes</h4>
+<ul>
+<li><strong>Token counts are real</strong> — they come from the <code>usage</code> chunk of every streaming model call (<code>StreamChunk</code> with <code>type: &#39;usage&#39;</code>, <code>TokenUsage</code>), the same provider-reported numbers the harness itself uses for session stats.</li>
+<li><strong>Cost is an estimate</strong> — CNY is computed from DeepSeek&#39;s public list prices (Chinese docs, <a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/">模型 &amp; 价格</a>) in <code>PRICING</code> (<code>src/index.js</code>), applied per model:<ul>
+<li>cache hit input → <code>hit</code> price</li>
+<li>cache miss input → <code>miss</code> price</li>
+<li>output → <code>output</code> price</li>
+<li>cache write is not billed separately by DeepSeek and is excluded.</li>
+</ul>
+</li>
+<li><strong>In-memory only</strong> — hourly buckets keep 48 h, daily keep 14 d; all data resets when the plugin (re)starts. No persistence is added on purpose: the harness has its own durable token-usage projection for sessions; this plugin is a live dashboard.</li>
+</ul>
+<h3>Installation</h3>
+<h4>Via <code>dsh plugin add</code> (recommended, from GitHub or npm)</h4>
+<p>Install directly from this GitHub repository:</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:Sev7een/ds-api-usage
+</code></pre>
+<p>or, once published to npm:</p>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-plugin-ds-api-usage
+</code></pre>
+<p><code>dsh plugin</code> forwards to pnpm in the profile directory and reconciles the
+package into the profile&#39;s bundle list (<code>dsh.profile.bundles</code>). The package&#39;s
+<code>cordis.patch.yml</code> (declared via <code>dsh.bundle.patch</code> in <code>package.json</code>) then
+inserts the plugin row into the host composition, and the <code>dsh.client</code>
+declaration makes the web shell load <code>client/bundle.js</code> as the settings page.</p>
+<h4>As a dynamic plugin (dev / session-scoped)</h4>
+<p>The original is a dynamic Cordis plugin, created per session with <code>cordis_define</code> / <code>cordis_run</code> (see the <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness docs</a>). The <code>code.host</code> body is <code>src/index.js</code> minus the <code>module.exports</code> wrapper; the <code>code.client</code> body is <code>client/index.js</code> minus the wrapper.</p>
+<blockquote>
+<p>Note: the dynamic form uses the sandbox-private <code>harness.handle</code> / <code>host.call</code> channel (<code>client/index.js</code>), while the static bundle form (<code>client/bundle.js</code>) talks to the host over the HTTP route <code>/ds-api-usage/snapshot</code>. Keep both in sync when changing the protocol.</p>
+</blockquote>
+<h4>As a composition plugin (persistent, manual)</h4>
+<p>Add a row to the host composition (<code>cordis.patch.yml</code> of your profile):</p>
+<pre><code class="language-yaml">- insert:
+    - id: ds-api-usage
+      name: &#39;dsh-plugin-ds-api-usage&#39;
+</code></pre>
+<p>or, without installing the package, by a relative path to this repository. The plugin is <em>host-plane</em>: it reads the host <code>credentials</code>, <code>subprocess</code>, <code>timer</code>, and <code>webServer</code> services and registers the client settings page in the root-scoped <code>settings.section</code> slot, so it should live in the <strong>host composition</strong>, not inside an agent preset.</p>
+<h4>Requirements</h4>
+<ul>
+<li>DeepSeek Harness with the DeepSeek LLM adapter configured (<code>DEEPSEEK_API_KEY</code> credential resolvable via the <code>credentials</code> service)</li>
+<li><code>curl</code> available on the host for the balance endpoint</li>
+<li>A browser client with the settings sidebar (for the UI)</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-bash">npm run check   # syntax-check both halves
+</code></pre>
+<ul>
+<li>Prices may drift: update <code>PRICING</code> in <code>src/index.js</code> when DeepSeek changes list prices (the constant is annotated with its snapshot date).</li>
+<li>The client currently hard-codes English labels; localize via the <code>locale</code> service if contributed back.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/Sev7een/ds-api-usage/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Sev7een/ds-api-usage/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

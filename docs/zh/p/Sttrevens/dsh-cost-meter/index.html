@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,71 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Sttrevens/dsh-cost-meter</pre><button type="button" data-cmd="dsh plugin --profile web add github:Sttrevens/dsh-cost-meter" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Out-of-tree <a href="https://github.com/deepseek-ai/deepseek-harness">dsh</a> plugin that
+shows a live <strong>USD cost badge</strong> for the open conversation in the Web UI.</p>
+<p>It is a dual-face <code>dsh.client</code> package:</p>
+<ul>
+<li><strong>Host half</strong> (<code>lib/index.js</code>) registers a <code>sessionCost</code> projection on the
+session-projection seam. The fold tracks the current provider/model from
+<code>request/header</code> events and accumulates cost from the provider-reported usage
+buckets (uncached input / output / cache-read / cache-write), reusing
+token-meter&#39;s &quot;replace the same <code>(turn, step)</code> sample instead of
+double-counting&quot; rule. The view exposes the whole-session totals plus a
+<code>byTurn</code> map keyed by turn number.</li>
+<li><strong>Client half</strong> (<code>lib/client.js</code>) registers a badge into the
+<code>conversation.chat.assistant-actions</code> slot — the action row at the end of each
+assistant message, alongside the turn&#39;s time/duration info. Each badge shows
+<strong>that turn&#39;s</strong> cost; hovering opens a tooltip with the per-bucket breakdown
+(input / output / cache-read / cache-write) plus the session total.</li>
+</ul>
+<h3>Pricing table</h3>
+<p>Pricing is USD per <strong>million</strong> tokens, keyed by <code>provider/model</code>:</p>
+<pre><code class="language-jsonc">{
+  &quot;per&quot;: 1000000,
+  &quot;currency&quot;: &quot;USD&quot;,
+  &quot;default&quot;: { &quot;input&quot;: 0.435, &quot;output&quot;: 0.87, &quot;cacheRead&quot;: 0.003625, &quot;cacheWrite&quot;: 0 },
+  &quot;models&quot;: {
+    &quot;deepseek-official/deepseek-v4-pro&quot;:   { &quot;input&quot;: 0.435, &quot;output&quot;: 0.87,   &quot;cacheRead&quot;: 0.003625, &quot;cacheWrite&quot;: 0 },
+    &quot;deepseek-official/deepseek-v4-flash&quot;: { &quot;input&quot;: 0.14,  &quot;output&quot;: 0.28,   &quot;cacheRead&quot;: 0.0028,   &quot;cacheWrite&quot;: 0 }
+  }
+}
+</code></pre>
+<p>The plugin reads <code>~/.dsh/cost-pricing.json</code> on boot (override the path with the
+<code>DSH_COST_PRICING</code> env var or the row&#39;s <code>config.pricingPath</code>). On first run it
+writes the default table to that path; edit it and restart <code>dsh web</code> to apply
+changes. A model without a <code>models</code> entry falls back to <code>default</code> (zero cost
+when no <code>default</code> is present).</p>
+<h3>Install</h3>
+<p>The package declares a <code>dsh.bundle</code> manifest, so <code>dsh plugin add</code> installs it
+<strong>and</strong> adds it to the profile&#39;s bundle layers automatically — no manual patch
+edit:</p>
+<pre><code class="language-sh">dsh plugin --profile web add @steven-wu/dsh-cost-meter
+# restart the web profile, then refresh the page
+</code></pre>
+<p>For a local checkout during development:</p>
+<pre><code class="language-sh">dsh plugin --profile web add file:/path/to/dsh-cost-meter
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li><code>@deepseek-ai/dsh-*</code> are declared as <strong>peerDependencies</strong> (resolved from the
+harness), never as <code>dependencies</code> — installing them into a profile shadows the
+harness copy and can pull a stale dist-tag.</li>
+<li>The Settings &quot;Plugins&quot; panel is read-only (inventory + config cards); install
+happens only through <code>dsh plugin --profile … add</code>.</li>
+<li>Purely-cordis mounting (a <code>cordis.patch.yml</code> insert row) also works — the
+shipped <code>cordis.patch.yml</code> holds that row for either path.</li>
+</ul>
+<p>The <code>sessionCost</code> projection is delivered through the same seam as
+<code>tokenUsage</code> / <code>sessionStats</code>, so it also appears in every projection carrier
+(history tail page, <code>session/projection</code> push frames) without extra wiring.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Sttrevens/dsh-cost-meter/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

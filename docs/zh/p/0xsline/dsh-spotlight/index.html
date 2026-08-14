@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,90 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:0xsline/dsh-spotlight</pre><button type="button" data-cmd="dsh plugin --profile web add github:0xsline/dsh-spotlight" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/0xsline/dsh-spotlight/blob/main/README.zh.md">简体中文</a> | English</p>
+<p>A keyboard-first command palette for DeepSeek Harness Web. Open one palette to
+find native slash commands, recent sessions, visible UI actions, and installed
+plugin settings—without leaving the keyboard.</p>
+<h3>Features</h3>
+<ul>
+<li><strong>One shortcut:</strong> <code>⌘K</code> on macOS, <code>Ctrl+K</code> on other platforms.</li>
+<li><strong>Customizable:</strong> click the shortcut control in the footer, then press a new
+key combination. The setting is stored in the current browser.</li>
+<li><strong>Native actions:</strong> discovers and triggers the actions already provided by
+DSH Web, and contributes one <code>/spotlight</code> command to the native slash menu
+instead of maintaining a second command registry.</li>
+<li><strong>Fast search:</strong> deterministic fuzzy matching across slash commands, recent
+sessions, UI actions, and plugin settings.</li>
+<li><strong>Keyboard navigation:</strong> Arrow Up/Down to select, Enter to run, Escape to
+close.</li>
+<li><strong>Clean lifecycle:</strong> removes its event listeners, styles, and DOM nodes when
+unloaded.</li>
+</ul>
+<h3>Install</h3>
+<p>Install the bundle into your DSH Web profile. From npm:</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;@0xsline/dsh-spotlight&quot;
+</code></pre>
+<p>Or from the Git source:</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:0xsline/dsh-spotlight#main&quot;
+</code></pre>
+<p>Then start DSH Web and press <code>⌘K</code> or <code>Ctrl+K</code>:</p>
+<pre><code class="language-sh">dsh --profile web
+</code></pre>
+<h3>Usage</h3>
+<ol>
+<li>Open Spotlight with the global shortcut, or type <code>/spotlight</code> in the DSH
+Web composer and pick the entry from the slash menu.</li>
+<li>Type to filter commands and actions.</li>
+<li>Use Arrow Up/Down and Enter, or click a result.</li>
+<li>Click <strong>Shortcut</strong> in the footer to record a different key combination.</li>
+<li>Click <strong>Reset</strong> to restore the platform default.</li>
+</ol>
+<p>Shortcut preferences are local to the current browser origin and profile.</p>
+<h3>How it works</h3>
+<p>DSH Spotlight is a standalone Cordis bundle with a small Web client. The
+client mounts once the host&#39;s sessions, command-plane, plugin-inventory, and
+command-UI services exist — all standard in every stock DSH Web deployment —
+then reads recent sessions, slash commands, and the plugin inventory directly
+from those services. It also discovers actionable elements in the current page
+and delegates execution back to those native elements. A catalog RPC failure
+degrades only its own category. The plugin adds no server data channel and
+stores no durable server-side state.</p>
+<pre><code class="language-text">src/index.ts             Loader metadata
+src/client/index.ts      Web client activation and disposal
+src/spotlight/           Host + DOM discovery, search, keyboard handling, and UI
+cordis.patch.yml         DSH Web profile composition
+</code></pre>
+<p>Because part of the discovery follows the current DSH Web DOM, host UI
+changes may require updating the selectors in <code>src/spotlight/discovery.ts</code>.</p>
+<h3>Development</h3>
+<p>Requirements: Node.js <code>^22.19.0 || &gt;=24.0.0</code> and pnpm <code>11.7.0</code>.</p>
+<pre><code class="language-sh">git clone https://github.com/0xsline/dsh-spotlight.git
+cd dsh-spotlight
+pnpm install
+
+pnpm run verify:self-contained
+pnpm run typecheck
+pnpm test
+pnpm run build
+</code></pre>
+<p>Test a local checkout in DSH Web:</p>
+<pre><code class="language-sh">pnpm run prepare
+dsh plugin --profile web add &quot;link:$(pwd)&quot;
+dsh --profile web
+</code></pre>
+<p>Inspect the package contents before publishing:</p>
+<pre><code class="language-sh">pnpm pack --dry-run --json
+</code></pre>
+<h3>License</h3>
+<p><a href="https://github.com/0xsline/dsh-spotlight/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/0xsline/dsh-spotlight/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

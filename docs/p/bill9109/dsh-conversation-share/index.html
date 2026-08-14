@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,145 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:bill9109/dsh-conversation-share</pre><button type="button" data-cmd="dsh plugin --profile web add github:bill9109/dsh-conversation-share" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/bill9109/dsh-conversation-share/releases/tag/v0.1.1"><img src="https://img.shields.io/badge/release-v0.1.1-5B4CF0?style=flat-square" alt="Release v0.1.1"></a>
+<a href="https://github.com/bill9109/dsh-conversation-share/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-0B7285?style=flat-square" alt="License: BSD-3-Clause"></a>
+<a href="https://github.com/bill9109/dsh-conversation-share/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%5E20%20%7C%20%3E%3D22-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a>
+<a href="https://github.com/bill9109/dsh-conversation-share/blob/main/cordis.patch.yml"><img src="https://img.shields.io/badge/DSH-Web-5B4CF0?style=flat-square" alt="DSH profiles"></a></p>
+<p><strong>Install:</strong> <code>dsh plugin --profile web add github:bill9109/dsh-conversation-share</code></p>
+<p><strong>Render a selected range of a DeepSeek Harness conversation into a PNG long image with a branded footer, ready to share.</strong></p>
+<p><a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.md">English</a> | <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.zh.md">中文</a></p>
+<h3>Why this exists</h3>
+<p>Conversation history lives inside the DSH Web UI, and sharing a meaningful part of it usually means screenshots spliced by hand — cropped, misaligned, with no brand or context. This plugin lets you pick an exact range of a conversation with two draggable, magnetically snapping markers and render it into a single polished PNG long image with a DeepSeek Harness branded footer.</p>
+<h3>Screenshots</h3>
+<h3>Features</h3>
+<ul>
+<li><strong>Share capsule</strong> to the left of the Session log button in the top-right corner (same style as log; clicking activates a blue highlight, with <code>[Cancel][Confirm]</code> expanding to its left)</li>
+<li><strong>Two draggable range markers</strong> (horizontal labels: &quot;Start here&quot; / &quot;End here&quot;) with magnetic snapping<ul>
+<li>Snap points = semantic message rows + markdown blocks (p/pre/ul/li/table/headings) + visual boxes (code blocks/cards) + content-level buttons (artifact file chips) + every text line inside paragraphs</li>
+<li>The start handle snaps to an element&#39;s <strong>top edge</strong>, the end handle to its <strong>bottom edge</strong>; the two handles cannot cross</li>
+<li>Snap hint = light blue translucent rounded-rect fill (flat style)</li>
+</ul>
+</li>
+<li><strong>Scrolling model</strong>: handles follow the pointer 1:1 within the viewport without scrolling; only when the pointer enters the top/bottom edge zones (64px) does the page scroll (clamped penetration depth, frame-rate independent), stopping when it leaves; clicking does not scroll (a real drag of ≥8px is required)</li>
+<li><strong>Capture</strong>: 40pt theme-background padding (symmetric on all sides) + a DeepSeek Harness brand icon at the bottom (with the BETA badge text); extra-long content is rendered in chunks and stitched together to bypass the canvas height limit</li>
+<li><strong>Preview modal</strong>: image width adapts, vertical scroll to review, download PNG, copy image</li>
+</ul>
+<h3>Usage</h3>
+<ol>
+<li>Click the share capsule next to the Session log button in the top-right corner; it activates (blue highlight) and the <code>[Cancel][Confirm]</code> controls appear</li>
+<li>Drag the two range markers to select the conversation range — they snap to message rows, markdown blocks, and line-level text; the start handle snaps to a top edge, the end handle to a bottom edge</li>
+<li>Click <strong>Confirm</strong> to render the selection into a PNG long image (extra-long content is chunked and stitched automatically)</li>
+<li>Review the result in the preview modal: download the PNG or copy the image to the clipboard</li>
+</ol>
+<h3>Install</h3>
+<p>Install into the <code>web</code> profile with the standard <code>dsh plugin</code> mechanism (no source changes, no manual package.json edits):</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:bill9109/dsh-conversation-share
+
+# Or pin a branch/commit
+dsh plugin --profile web add github:bill9109/dsh-conversation-share#main
+
+# Or install from a local checkout (development — rebuild and it takes effect)
+dsh plugin --profile web add /path/to/your/dsh-conversation-share
+</code></pre>
+<p>Internally the command runs <code>pnpm add &lt;spec&gt;</code> in the profile directory and automatically appends packages that declare <code>dsh.bundle</code> to <code>dsh.profile.bundles</code>. The repository ships its build output (<code>lib/</code>), so no consumer-side build is needed.</p>
+<p>After installing, <strong>restart web</strong> and <strong>hard-refresh</strong> the browser (Cmd+Shift+R) — old tabs do not load the new bundle.</p>
+<h4>Upgrade</h4>
+<pre><code class="language-sh">dsh plugin --profile web update github:bill9109/dsh-conversation-share
+</code></pre>
+<p>For a local-path installation, run <code>add</code> again against the replacement checkout, then restart web and hard-refresh.</p>
+<h4>Uninstall</h4>
+<pre><code class="language-sh">dsh plugin --profile web remove @bill9109/dsh-conversation-share
+</code></pre>
+<p>The command runs <code>pnpm remove &lt;pkg&gt;</code> in the profile directory and removes it from <code>dsh.profile.bundles</code>. After uninstalling, <strong>restart web</strong> and <strong>hard-refresh</strong> the browser.</p>
+<h3>Troubleshooting</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Share capsule does not appear</td>
+<td>The plugin only loads after restarting web and hard-refreshing the browser; verify the bundle row exists in the profile (`dsh --profile web --dump-config</td>
+</tr>
+<tr>
+<td>Handles cannot cross or snap oddly</td>
+<td>That is by design — the start handle snaps to top edges, the end handle to bottom edges, and they cannot cross; drag past an element to flip which edge binds</td>
+</tr>
+<tr>
+<td>The page scrolls while dragging</td>
+<td>Scrolling only happens in the 64px top/bottom edge zones; drag within the viewport to move the handle 1:1 without scrolling</td>
+</tr>
+<tr>
+<td>Confirm does nothing / blank image</td>
+<td>Ensure the selection covers at least one message; the capture pipeline chunks and stitches extra-long content, so very long ranges may take a moment</td>
+</tr>
+<tr>
+<td>Copied image is missing from the clipboard</td>
+<td>The browser may have blocked clipboard image writes; use <strong>Download PNG</strong> instead</td>
+</tr>
+</tbody></table>
+<h3>Directory structure</h3>
+<pre><code>dsh-conversation-share/
+├── src/
+│   ├── index.ts              # host half of the plugin (no-op)
+│   ├── client/               # browser half (client bundle entry src/client/index.ts)
+│   │   ├── index.ts          # apply(ctx): mounts the share flow
+│   │   ├── controller.ts     # share button / cancel-confirm / mode switching / capture orchestration
+│   │   ├── markers.ts        # range marker handles (snapping, scrolling, state machine)
+│   │   ├── snap-targets.ts   # snap-target collection (rows/blocks/line-level text/content buttons + position dedup)
+│   │   ├── capture.ts        # capture pipeline (chunking, cropping, stitching, branded footer)
+│   │   ├── brand.ts          # brand SVG clone (var() baking + clip-path neutralization)
+│   │   ├── modal.ts          # preview modal + download/copy
+│   │   └── dom.ts / theme.ts / icons.ts / toast.ts
+│   └── vendor/html-to-image/ # vendored html-to-image 1.11.13 (MIT, see its LICENSE)
+├── scripts/build.mjs         # build script (links DSH checkout deps → tsc → tsdown)
+├── lib/                      # build output (client.js is the browser bundle, committed)
+├── package.json              # dsh.bundle + dsh.client declarations
+├── cordis.patch.yml          # bundle patch (inserts the conversation-share plugin)
+└── tsconfig.json / tsdown.config.mjs
+</code></pre>
+<h3>Build</h3>
+<p>Requires a DSH checkout (the official repository or a snapshot directory both work):</p>
+<pre><code class="language-sh">DSH_CHECKOUT=/path/to/dsh-checkout node scripts/build.mjs
+# or via pnpm:
+DSH_CHECKOUT=/path/to/dsh-checkout pnpm run build
+</code></pre>
+<p>The script temporarily symlinks the DSH checkout&#39;s <code>node_modules</code> into this directory (cleaned up automatically when the build ends) and runs <code>tsc</code> (type check) then <code>tsdown</code> (producing <code>lib/index.js</code> + <code>lib/client.js</code>).</p>
+<h3>Development and verification</h3>
+<pre><code class="language-sh">pnpm run check     # tsc --noEmit
+DSH_CHECKOUT=/path/to/dsh-checkout pnpm run build   # -&gt; lib/ (committed)
+</code></pre>
+<p><code>lib/</code> is committed so consumers install without building. Changes to the share flow (markers, snapping, capture, preview) should be exercised against a live web profile and the built bundle committed in the same change.</p>
+<h3>Release</h3>
+<ol>
+<li><p>Make sure the build output is up to date:</p>
+<pre><code class="language-sh">DSH_CHECKOUT=/path/to/dsh-checkout node scripts/build.mjs
+</code></pre>
+</li>
+<li><p>Bump the version, update <code>CHANGELOG.md</code>, commit and push to <code>main</code>, and tag the release:</p>
+<pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;release v0.1.x&quot; &amp;&amp; git push origin main
+git tag v0.1.x &amp;&amp; git push origin v0.1.x
+</code></pre>
+</li>
+</ol>
+<h3>Community and About</h3>
+<ul>
+<li>Use <a href="https://github.com/bill9109/dsh-conversation-share/issues">GitHub Issues</a> for reproducible bugs, focused feature requests, and usage questions.</li>
+<li>Read <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> before proposing changes; report vulnerabilities privately via <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/SECURITY.md">SECURITY.md</a>.</li>
+<li>Follow releases and compatibility notes in <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</li>
+</ul>
+<h3>License</h3>
+<p>BSD-3-Clause (the vendored html-to-image is MIT, see <code>src/vendor/html-to-image/LICENSE</code>).</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

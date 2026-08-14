@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,77 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:vlln/plugin-registry</pre><button type="button" data-cmd="dsh plugin --profile web add github:vlln/plugin-registry" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<hr>
+<blockquote>
+<p><strong>转向（2026-08）</strong>：官方 0809 推出仓库插件机制（<code>.dsh-plugin</code>）覆盖旧独立机制 ~95%，本仓库收敛为
+<strong>薄控制台 + 插件开发规范和引导</strong>（旧 patch/CLI/面板已移除）。<strong>0811 起官方删除
+repository-plugins 机制</strong>（<code>vendor/loader/src/repository.ts</code>），外部插件统一经 web profile 安装：
+bundle 插件（<code>dsh.bundle</code> 包）进 <code>dsh.profile.bundles</code> 层栈；非 bundle 插件（纯 cordis 包）经
+profile <code>cordis.patch.yml</code> insert 行挂载（配置 HMR 实时生效）。完整评估见 <a href="https://github.com/vlln/plugin-registry/blob/main/docs/official-0809-coverage.md">官方 0809 覆盖度</a>。</p>
+</blockquote>
+<h3>定位</h3>
+<p>DeepSeek Harness 官方机制管「插件是什么、怎么跑」；本仓库补两件事（面板结构见 <a href="https://github.com/vlln/plugin-registry/blob/main/packages/plugin/console/README.md">console README</a>，开发引导见下文）：</p>
+<ol>
+<li><strong>薄控制台</strong>（<code>packages/plugin/console</code>）——管理 profile 插件安装态的浏览器面板 + 4 个 agent 工具</li>
+<li><strong>开发规范和引导</strong>——<code>make-dsh-plugin</code> skill + cookbook，指导创建官方 bundle / cordis 插件</li>
+</ol>
+<h3>生态关系（谁能干什么）</h3>
+<pre><code>官方 DSH（DeepSeek Harness）     插件运行时 + profile bundle 机制（0811 起无 repository 机制）
+   │
+   ├── 官方插件（bundle）        loop / task-status / navbar 等——`dsh plugin --profile web add` 装进 profile 层栈
+   ├── 第三方插件（bundle/纯插件）独立 GitHub 仓库或 npm 包——bundle 进层栈；纯插件走 insert 行（实时）
+   │
+   └── 本仓库（plugin-registry） ① 薄控制台：管理安装态的浏览器面板 + agent 工具
+                                ② make-dsh-plugin skill + cookbook：引导开发第三方插件
+</code></pre>
+<p>插件形态与安装路径说明见 <a href="https://github.com/vlln/plugin-registry/blob/main/docs/plugin-types.md">插件类型对比</a>；现有插件的安装示例见 <a href="https://github.com/vlln/plugin-registry/blob/main/examples/README.md">examples</a>。</p>
+<h3>薄控制台</h3>
+<p><img src="https://raw.githubusercontent.com/vlln/plugin-registry/main/screenshots/console-panel.png" alt="插件管理面板"></p>
+<p>设置页「插件」面板管理 profile 插件安装态：<strong>insert 插件区</strong>（非 bundle 插件实时挂载/移除，配置 HMR 零重启）+ <strong>已加载插件区</strong>（<code>disabled</code> 启停持久化 + bundle 更新/卸载）+ <strong>bundle 安装区</strong>（pnpm add + 层栈 reconcile）。</p>
+<h3>安装</h3>
+<p><strong>方式一：git 源直接安装（推荐，真一行）</strong></p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:vlln/plugin-registry#main&amp;path:/packages/plugin/console&quot;
+</code></pre>
+<p>构建产物已入库（git 源安装不触发构建），一行命令直接装（实测约 15 秒）。</p>
+<p><strong>方式二：本地目录（有源码时）</strong></p>
+<pre><code class="language-sh">git clone https://github.com/vlln/plugin-registry
+cd plugin-registry/packages/plugin/console
+dsh plugin --profile web add .   # 产物已入库，无需构建；当前目录即 bundle 包子目录（dsh 锚定 . 为绝对路径）
+</code></pre>
+<p>挂载后刷新 Web 页面，设置页出现「插件」面板。</p>
+<h3>Agent Skills</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/vlln/plugin-registry/blob/main/skills/make-dsh-plugin/SKILL.md">make-dsh-plugin</a></td>
+<td>创建官方 bundle / cordis 插件：先选形态（skill 包 / MCP / Node 工具 / 带 UI）→ 声明 <code>dsh.bundle</code> 或纯 apply → 安装验证纪律。详情分置 <code>references/</code>；仓库内参考实现 <code>packages/plugin/console</code></td>
+</tr>
+</tbody></table>
+<h3>开发前须知（踩过的坑）</h3>
+<p>关键坑（官方包未发布、Node half 改动需重启、宿主 CSS 覆盖等）与完整清单见 <a href="https://github.com/vlln/plugin-registry/blob/main/skills/make-dsh-plugin/references/gotchas.md">skill references/gotchas</a>——<strong>开发前先读</strong>。</p>
+<h3>文档</h3>
+<ul>
+<li><a href="https://github.com/vlln/plugin-registry/blob/main/docs/plugin-types.md">插件类型对比</a> — bundle 插件 vs 纯 cordis 插件：开发/分发/安装/管理四维 + 选型</li>
+<li><a href="https://github.com/vlln/plugin-registry/blob/main/docs/official-0809-coverage.md">官方 0809 覆盖度评估</a> — 官方机制覆盖度、转向决策（含 0811 repository 移除说明见 CHANGELOG）</li>
+<li><a href="https://github.com/vlln/plugin-registry/blob/main/docs/console-ui-plugin-management.md">薄控制台设计</a> — 统一管理安装态的设计</li>
+<li>历史机制文档（已转向，仅存档）：<a href="https://github.com/vlln/plugin-registry/blob/main/docs/architecture.md">架构（旧）</a>、<a href="https://github.com/vlln/plugin-registry/blob/main/docs/cookbook/creating-a-plugin.md">创建插件（旧）</a>、<a href="https://github.com/vlln/plugin-registry/blob/main/docs/manifest-format.md">清单格式（旧）</a>、<a href="https://github.com/vlln/plugin-registry/blob/main/docs/cookbook/creating-a-repository-plugin.md">创建 repository-plugin（旧）</a> 等</li>
+<li><a href="https://github.com/vlln/plugin-registry/blob/main/CHANGELOG.md">变更记录</a> / <a href="https://github.com/vlln/plugin-registry/blob/main/ROADMAP.md">路线图</a></li>
+</ul>
+<h3>版权</h3>
+<p>MIT License。见 <a href="https://github.com/vlln/plugin-registry/blob/main/LICENSE">LICENSE</a>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/vlln/plugin-registry/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

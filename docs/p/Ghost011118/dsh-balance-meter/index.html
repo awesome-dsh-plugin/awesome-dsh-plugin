@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,156 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Ghost011118/dsh-balance-meter</pre><button type="button" data-cmd="dsh plugin --profile web add github:Ghost011118/dsh-balance-meter" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/Ghost011118/dsh-balance-meter/blob/master/README.zh.md">中文</a></p>
+<p>DeepSeek account balance and session-cost readout for the DeepSeek Harness (DSH) Web GUI.</p>
+<ul>
+<li>Live account balance (queries the official Get User Balance endpoint)</li>
+<li>Current session estimated spend (token usage x official pricing)</li>
+<li>Per-model pricing: reads the model actually driving each session from its
+request header (flash vs pro), so the cost tracks the model you used instead
+of a fixed default</li>
+<li>Auto-fetches the official pricing page every 6h, so price changes and the
+2026-08-17 peak/off-peak pricing rollout never require a plugin update</li>
+<li>Peak-hour band (Beijing 09:00-12:00 / 14:00-18:00) applied automatically
+once the peak pricing goes live</li>
+</ul>
+<h3>Features</h3>
+<p>The composer dock shows a chip with the account total balance and the
+current session&#39;s estimated cost:</p>
+<pre><code>Balance CNY 4.16 · This session CNY 2.57
+</code></pre>
+<p>Clicking the chip reveals the per-currency balance breakdown (granted +
+top-up) and the per-bucket cost breakdown (input / cache read / output).
+Clicking while an error is shown forces an immediate refresh.</p>
+<h3>Requirements</h3>
+<ul>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code> or newer (web profile)</li>
+<li>A DeepSeek API key stored through the DSH credentials seam
+(<code>DEEPSEEK_API_KEY</code> — the web Models page writes it)</li>
+</ul>
+<h3>Installation</h3>
+<p>From a git URL (no npm account needed):</p>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/Ghost011118/dsh-balance-meter
+</code></pre>
+<p>Or from a local checkout:</p>
+<pre><code class="language-sh">git clone https://github.com/Ghost011118/dsh-balance-meter.git
+dsh plugin --profile web add link:$(pwd)/dsh-balance-meter
+</code></pre>
+<p>Restart <code>dsh web</code>, then refresh the page. The balance chip appears in the
+composer dock next to the conversation stats line.</p>
+<h3>Configuration</h3>
+<p>The plugin is zero-config by default (uses <code>DEEPSEEK_API_KEY</code> and the
+official pricing page). Optional composition settings:</p>
+<pre><code class="language-yaml">- insert:
+    - id: balance
+      name: &#39;dsh-balance-meter&#39;
+      config:
+        model: auto         # &#39;auto&#39; (default) | &#39;flash&#39; | &#39;pro&#39;
+        pricingRefreshHours: 6
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>model</code></td>
+<td><code>&#39;auto&#39; | &#39;flash&#39; | &#39;pro&#39;</code></td>
+<td><code>auto</code></td>
+<td><code>auto</code> detects each session&#39;s model from its request header (flash/pro); <code>flash</code>/<code>pro</code> force that preset regardless of auto-detection</td>
+</tr>
+<tr>
+<td><code>pricingRefreshHours</code></td>
+<td><code>number</code></td>
+<td><code>6</code></td>
+<td>Hours between automatic official-pricing refreshes</td>
+</tr>
+<tr>
+<td><code>apiKeyEnv</code></td>
+<td><code>string</code></td>
+<td><code>DEEPSEEK_API_KEY</code></td>
+<td>Credential ref storing the DeepSeek API key</td>
+</tr>
+<tr>
+<td><code>baseUrl</code></td>
+<td><code>string</code></td>
+<td><code>https://api.deepseek.com</code></td>
+<td>API base URL (gateway/compat override)</td>
+</tr>
+<tr>
+<td><code>refreshIntervalSeconds</code></td>
+<td><code>number</code></td>
+<td><code>30</code></td>
+<td>Minimum seconds between balance queries</td>
+</tr>
+</tbody></table>
+<h3>How the cost is estimated</h3>
+<p>The plugin reads DSH&#39;s durable <code>tokenUsage</code> projection (the same accounting
+the built-in stats line uses) and converts the four buckets — uncached
+input, cache read, cache write, output — to money using prices parsed from
+the official pricing page. Cache-write tokens are not billed separately by
+DeepSeek and default to 0.</p>
+<p>For the price set, in <code>auto</code> mode (the default) it uses the model actually
+driving the session: each session&#39;s request header records the provider/model
+of the most recent request, and the plugin maps that id (<code>deepseek-v4-flash</code>
+→ flash, <code>deepseek-v4-pro</code> → pro) to the matching per-million prices. A
+session is therefore priced at whatever model produced its usage, not a
+hard-coded flash. When no header exists yet or the model id is unrecognized,
+<code>auto</code> falls back to flash. Setting <code>model: flash</code> or <code>model: pro</code> explicitly
+forces that preset and ignores auto-detection, so you can pin the estimate to
+one model when you want to.</p>
+<p>Before the 2026-08-17 peak-pricing rollout the current single prices stay
+authoritative; after it, the peak/off-peak band for the current Beijing hour
+is applied. If the pricing page cannot be fetched, built-in presets (flash:
+0.02 / 1 / 2 CNY per 1M) are used. Explicit <code>cost.*</code> overrides in the
+composition config take precedence over any preset. The cost JSON also
+reports <code>pricingKey</code> and <code>model</code> so the chip can show which model was priced.</p>
+<h3>Troubleshooting</h3>
+<h4>&quot;no API key for provider route `deepseek-official`&quot;</h4>
+<p>The host reads your key from the DSH credentials store — the file
+<code>&lt;harness home&gt;/.credentials.yaml</code> (default <code>~/.dsh/.credentials.yaml</code>), the
+same store the web <strong>Models</strong> page writes. This plugin&#39;s balance query and the
+LLM route resolve through that same seam.</p>
+<ul>
+<li>If this error appears, make sure the document contains
+<code>DEEPSEEK_API_KEY: sk-...</code> (a strict mapping of reference to non-empty
+string). Editing it while DSH runs is fine — the provider hot-reloads and
+re-reads the file.</li>
+<li>When a credentials seam is mounted, both the LLM route and this plugin read
+the key <em>only</em> from the credential store; a plain <code>export DEEPSEEK_API_KEY</code>
+is ignored in that case. Exporting still helps for the plugin&#39;s own fallback
+when no seam is present.</li>
+<li>Prefer running <code>dsh web</code> through a single supervised instance (e.g.
+<code>dsh-autostart</code>) instead of launching several ad-hoc <code>npx dsh web</code>
+processes that can race on the same port and settle different credential
+snapshots. If you encounter this right after killing a manual instance,
+confirm the other (still-supervised) instance read the key — the balance
+chip recovering to a live total means the key resolved.</li>
+<li>The error is transient-friendly: the balance chip auto-recovers, because an
+error state is never cached as fresh — the next poll re-queries the
+provider.</li>
+</ul>
+<h4>Balance stuck on &quot;unavailable&quot; and only updates on click</h4>
+<p>An error/unavailable snapshot used to be served from the cache until it aged
+out, so a transient failure could hold the chip on &quot;unavailable&quot; until you
+clicked to force a refresh. Now an erroneous view is <strong>never</strong> reused as a
+fresh cache: every poll re-queries the provider, so the chip recovers on its
+own as soon as the underlying condition clears (balance reachable, network
+back, key stored).</p>
+<h3>License</h3>
+<p>BSD-3-Clause. Copyright (c) 2026, Ghost011118.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Ghost011118/dsh-balance-meter/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

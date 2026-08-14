@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,123 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Jesse-njx/dsh-skillport</pre><button type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-skillport" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Every skill you already have — Claude Code, Codex, Cursor, Gemini CLI — works in DSH.</strong></p>
+<p><code>dsh-skillport</code> is a <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> plugin bundle that makes DSH the next implementer of the open <strong>Agent Skills</strong> standard (<code>SKILL.md</code>). Anthropic released the spec in Dec 2025 and 30+ harnesses read it (Codex CLI, Cursor, Gemini CLI, Copilot/VS Code, Goose, Windsurf); DSH did not. Skillport imports the whole existing ecosystem with <strong>zero migration</strong>: your <code>.claude/skills/</code> library, your Cursor rules, your Claude Code slash commands all become DSH skills the moment the plugin loads.</p>
+<h3>What you get</h3>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Source</th>
+<th>How it lands in DSH</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Agent Skills <code>SKILL.md</code></td>
+<td><code>.claude/skills/</code>, <code>~/.claude/skills/</code> (Claude Code)</td>
+<td>model-invocable skills</td>
+</tr>
+<tr>
+<td>Agent Skills <code>SKILL.md</code></td>
+<td><code>~/.gemini/antigravity/skills/</code> (Gemini CLI)</td>
+<td>model-invocable skills</td>
+</tr>
+<tr>
+<td>Agent Skills <code>SKILL.md</code></td>
+<td><code>extraPaths</code> (config)</td>
+<td>model-invocable skills</td>
+</tr>
+<tr>
+<td>Agent Skills <code>SKILL.md</code></td>
+<td><code>.dsh/skills/</code>, <code>.agents/skills/</code> (+ user roots)</td>
+<td>scanned natively by DSH — skillport never double-scans</td>
+</tr>
+<tr>
+<td>Cursor rules</td>
+<td><code>.cursor/rules/*.mdc</code></td>
+<td>converted to model-invocable skills (source <code>cursor</code>)</td>
+</tr>
+<tr>
+<td>Claude Code commands</td>
+<td><code>.claude/commands/*.md</code></td>
+<td>converted to <strong>user-invokable</strong> skills (<code>/name</code>)</td>
+</tr>
+<tr>
+<td>Context files</td>
+<td><code>AGENTS.md</code>, <code>CLAUDE.md</code></td>
+<td>injected as project context <strong>only if</strong> DSH does not already (native <code>dsh-agent-instructions</code> wins — no double-injection)</td>
+</tr>
+</tbody></table>
+<p>Skills flow into the native skill registry (<code>ctx.skills</code>), so the platform&#39;s own catalog injection, progressive-disclosure index, and the <code>skill</code> loader tool surface them automatically. <strong>Registrations are Cordis effects: <code>dsh plugin remove @dsh-skillport/bundle</code> unloads every imported skill cleanly</strong> — a live demo of the platform&#39;s teardown model.</p>
+<h3>Why this shape</h3>
+<p>DSH already ships a full skill stack: a provider registry with rank-based dedup, catalog injection (names + descriptions in the system prompt), and a <code>skill</code> tool that loads bodies and resolves bundled file paths. Skillport&#39;s job is narrower and honest: <strong>discover the locations DSH does not cover, convert the adjacent formats, and make the result debuggable.</strong> That is exactly the spec&#39;s &quot;check first — don&#39;t double-inject&quot; instruction applied to the whole surface:</p>
+<ul>
+<li><code>.dsh/skills</code> + <code>.agents/skills</code> are scanned by DSH&#39;s native <code>dsh-skill-filesystem</code>; skillport detects that provider and skips those sets (falling back to scanning them itself only when the native provider is absent, so the full table holds in any composition).</li>
+<li>The spec&#39;s &quot;injection&quot; (names + descriptions) and &quot;use_skill&quot; (load body + resolve resources) are the native <code>dsh-tool-skill</code> catalog and <code>skill</code> tool — skillport feeds them, it does not duplicate them.</li>
+<li><code>AGENTS.md</code>/<code>CLAUDE.md</code> are injected natively by <code>dsh-agent-instructions</code>; skillport takes over only when that plugin is absent.</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add @dsh-skillport/bundle
+</code></pre>
+<p>Then in a session: ask the model to load a skill you used to own in Claude Code — the catalog lists it and the <code>skill</code> tool loads it, bundled resources included.</p>
+<h3>Config</h3>
+<p>All fields optional (profile patch or <code>cordis.patch.yml</code>):</p>
+<pre><code class="language-yaml">plugins:
+  dsh-skillport:
+    sources: [dsh, claude, agents, gemini]   # which discovery sets to scan
+    extraPaths: []                            # extra SKILL.md dirs (e.g. ~/skills, a shared drive)
+    convert:
+      cursorRules: true                       # .cursor/rules/*.mdc → skills
+      contextFiles: true                      # AGENTS.md / CLAUDE.md (skipped when DSH handles natively)
+      claudeCommands: true                    # .claude/commands/*.md → user-invokable skills
+    maxIndexEntries: 100                      # prompt-bloat cap: beyond this, skillport&#39;s model-invocable
+                                              # candidates become user-invocable only (find_skill surfaces them)
+    providerName: skillport                   # provider name in the skill registry
+</code></pre>
+<h3>Skills doctor</h3>
+<p>Trigger-quality is the fuzzy failure mode: skills tuned for Claude&#39;s triggering habits may fire differently on DeepSeek models. Skillport turns that into a debuggable surface.</p>
+<p>In-session (<code>/skills doctor [&lt;description&gt;]</code>):</p>
+<pre><code>/skills doctor
+## project-claude (1)
+- commit-helper — Craft conventional-commit messages from staged changes.
+## project-dsh (1)
+- deploy — Deploy the application to staging or production with rollback.
+
+/skills doctor deploy the app to production
+Test-fire: &quot;deploy the app to production&quot;
+- deploy [skillport/project-dsh] score=0.83
+    &quot;Deploy the application to staging or production with rollback.&quot;
+</code></pre>
+<p>Terminal (no DSH session needed):</p>
+<pre><code class="language-sh">skills-doctor --cwd ~/work/projectx list
+skills-doctor --cwd ~/work/projectx test-fire &quot;deploy the app to production&quot;
+</code></pre>
+<h3>Pinned spec revision</h3>
+<p>The Agent Skills format is young and versioned. Skillport pins the revision it implements — see <a href="https://github.com/Jesse-njx/dsh-skillport/blob/main/docs/spec-revision.md">docs/spec-revision.md</a> — and ships a conformance fixture suite (missing fields, unicode names, nested resources) so spec drift fails loudly in CI.</p>
+<h3>Non-goals (deliberately)</h3>
+<ul>
+<li><strong>Claude Code plugins / hooks / subagents</strong> — executable host-specific semantics; porting prose-and-scripts is honest, pretending to port hook systems is a bug factory.</li>
+<li><strong>MCP config translation</strong> — out of scope.</li>
+<li><strong>Codex / Cursor extension binaries</strong> — out of scope.</li>
+<li>Skillport never gets its own execution path: skills that carry scripts run through DSH&#39;s normal shell tool inside its sandbox, so the sandbox policy stays the single enforcement point.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm build
+pnpm test        # 60 tests: spec conformance, discovery, dedup, converters,
+                 # doctor, find_skill, plugin integration, CLI, goldens
+</code></pre>
+<p>Fixtures: <code>test/fixtures/</code> holds one skill per source format, conformance edge cases, and the checked-in goldens for the injected index + doctor report.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-skillport/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

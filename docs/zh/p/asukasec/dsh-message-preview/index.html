@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,120 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:asukasec/dsh-message-preview</pre><button type="button" data-cmd="dsh plugin --profile web add github:asukasec/dsh-message-preview" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/asukasec/dsh-message-preview/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p>DeepSeek Harness Web UI 的右侧消息导航条。它为当前会话中的每条用户消息生成一个导航块，可悬停预览、显示当前阅读位置，并点击跳转到对应消息。</p>
+<blockquote>
+<p>Right-side user-message navigator for the DeepSeek Harness Web UI, with hover previews, reading-position tracking, and click-to-jump navigation.</p>
+</blockquote>
+<h3>功能</h3>
+<ul>
+<li>只索引用户直接发送的消息，排除工具通知、后台任务和注入上下文。</li>
+<li>当前阅读位置随会话滚动自动高亮。</li>
+<li>悬停显示消息序号、相对时间和文本预览。</li>
+<li>点击后自动加载较早的会话历史，平滑滚动并高亮目标消息。</li>
+<li>导航块会根据消息数量和文本长度自适应排布；少于两条用户消息时自动隐藏。</li>
+<li>默认仅显示当前位置指示，鼠标靠近会话右侧时展开完整导航条。</li>
+<li>中英文界面文案随 DSH locale 自动切换。</li>
+</ul>
+<h3>安装</h3>
+<p>要求：</p>
+<ul>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code> 或更高版本</li>
+<li>Node.js 22 或更高版本</li>
+</ul>
+<p>从 GitHub 安装：</p>
+<pre><code class="language-powershell">dsh plugin --profile web add &quot;github:asukasec/dsh-message-preview#main&quot;
+</code></pre>
+<p>安装完成后完整重启 Web UI：</p>
+<pre><code class="language-powershell">dsh web
+</code></pre>
+<p>也可以克隆仓库后从本地目录安装：</p>
+<pre><code class="language-powershell">git clone https://github.com/asukasec/dsh-message-preview.git
+cd dsh-message-preview
+dsh plugin --profile web add .
+</code></pre>
+<p>Windows 用户还可以在克隆后的目录中双击 <code>install.cmd</code>。该脚本会定位 <code>DSH_HOME</code>、复制插件，并以幂等方式更新指定 profile 的 <code>cordis.patch.yml</code>：</p>
+<pre><code class="language-powershell">.\install.ps1 -Profile web -DshHome &quot;D:\path\to\dsh-data&quot;
+</code></pre>
+<h3>使用</h3>
+<p>打开至少包含两条用户消息的会话。会话右侧会显示一枚当前位置指示；将鼠标移到右缘即可展开导航条。</p>
+<ul>
+<li>悬停导航块：查看消息序号、发送时间和文本预览。</li>
+<li>点击导航块：跳转到该条用户消息。</li>
+<li>滚动会话：高亮块会跟随当前阅读位置。</li>
+<li>键盘导航：按 <code>Tab</code> 聚焦当前位置，使用 <code>↑</code> / <code>↓</code>、<code>Home</code> / <code>End</code> 选取消息，按 <code>Enter</code> 跳转。</li>
+</ul>
+<p>插件没有设置项，安装后即可使用。</p>
+<h3>工作原理</h3>
+<p>插件由宿主端和浏览器端两部分组成：</p>
+<table>
+<thead>
+<tr>
+<th>部分</th>
+<th>文件</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>宿主端</td>
+<td><code>lib/index.js</code></td>
+<td>注册 <code>dshMessagePreview</code> 会话投影，维护用户消息的序号、时间、短预览和持久 ID。</td>
+</tr>
+<tr>
+<td>浏览器端</td>
+<td><code>lib/client.js</code></td>
+<td>挂载到 <code>conversation.input.dock</code>，通过 React Portal 渲染导航条，并负责预览、滚动定位和历史补载。</td>
+</tr>
+<tr>
+<td>Bundle</td>
+<td><code>cordis.patch.yml</code></td>
+<td>让 <code>dsh plugin add</code> 自动把插件加载到 Web profile。</td>
+</tr>
+</tbody></table>
+<p>数据按以下优先级获取：</p>
+<ol>
+<li>宿主端 <code>dshMessagePreview</code> 投影，提供完整且轻量的消息索引。</li>
+<li>当前已加载的会话节点，用于首屏回退。</li>
+<li>投影尚未就绪时，通过 <code>loadOlder()</code> 补载更早的历史。</li>
+</ol>
+<p>插件不会向第三方服务发送请求，也不会修改会话内容。消息预览只在本地 DSH 进程和浏览器之间传递，宿主端预览最多保留 80 个字符。</p>
+<h3>卸载</h3>
+<p>如果使用 <code>dsh plugin</code> 安装：</p>
+<pre><code class="language-powershell">dsh plugin --profile web remove dsh-message-preview
+</code></pre>
+<p>如果使用 <code>install.cmd</code> / <code>install.ps1</code> 安装，请删除：</p>
+<ul>
+<li><code>$DSH_HOME/profiles/node_modules/dsh-message-preview</code></li>
+<li><code>$DSH_HOME/profiles/web/cordis.patch.yml</code> 中 <code>id: message-preview</code> 对应的插入项</li>
+</ul>
+<p>然后重启 <code>dsh web</code>。</p>
+<h3>故障排查</h3>
+<h4>导航条没有出现</h4>
+<ul>
+<li>确认当前会话至少有两条用户消息。</li>
+<li>确认正在 Chat 会话视图中；其他页签不会挂载聊天 DOM。</li>
+<li>完整停止并重新启动 <code>dsh web</code>，仅刷新浏览器不足以加载宿主端插件。</li>
+<li>检查目标 profile 的 <code>cordis.patch.yml</code> 是否包含 <code>dsh-message-preview</code>。</li>
+</ul>
+<h4>点击后没有跳转</h4>
+<p>目标消息可能尚未加载。插件会自动请求较早历史；超长会话可能需要稍等片刻。如果目标已被宿主永久移除或对应 DOM 锚点不可用，则不会执行跳转。</p>
+<h3>开发与检查</h3>
+<p>仓库提交的是可直接加载的构建产物，不需要安装开发依赖即可做语法检查：</p>
+<pre><code class="language-powershell">npm run check
+npm pack --dry-run
+</code></pre>
+<p>发布前还应在 DSH Web UI 中验证：导航条展开、鼠标与键盘预览、滚动高亮、较早消息补载和点击跳转。</p>
+<h3>License</h3>
+<p><a href="https://github.com/asukasec/dsh-message-preview/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/asukasec/dsh-message-preview/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

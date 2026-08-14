@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,187 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:vlln/whale-girl</pre><button type="button" data-cmd="dsh plugin --profile web add github:vlln/whale-girl" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<hr>
+<h3>安装</h3>
+<p>官方 <strong>bundle 插件</strong> 格式（仓库根 <code>package.json</code> 的 <code>dsh.bundle</code> + <code>dsh.client</code>）。经官方 profile 管理：</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:vlln/whale-girl#main&quot;   # 推荐：git 源一行（构建产物已入库）
+# 或本地目录：dsh plugin --profile web add &lt;whale-girl 本地路径&gt;
+</code></pre>
+<p>装完 <strong>重启 web</strong>（bundle 层在启动时合成），右下角出现宠物：点击弹出菜单（🍗 喂食 / 🎾 玩耍），拖拽可移动；hover 显示状态条（资历等级/任务数/最近共同回忆）。初始配置/欢迎页（onboarding）宠物隐藏。</p>
+<p>更新插件时 <code>dsh plugin --profile web update whale-girl</code>（或换 git 源 ref），重启生效。</p>
+<h3>使用</h3>
+<table>
+<thead>
+<tr>
+<th>你做什么 / 发生什么</th>
+<th>宠物表现</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>拖拽宠物</td>
+<td>被斜向拉扯（<code>drag</code>）</td>
+</tr>
+<tr>
+<td>点击菜单 🍗 喂食 / 🎾 玩耍</td>
+<td>啃咬/抛接球（<code>eat</code>/<code>play</code>）→ 开心（<code>joy</code>）</td>
+</tr>
+<tr>
+<td>空闲 ≥60s</td>
+<td>打盹（<code>sleep</code>）；互动时醒过来（<code>wake</code>）</td>
+</tr>
+<tr>
+<td>任务完成 / 升级 / 称号 / 回合完成</td>
+<td>举手欢呼（<code>celebrate</code>）</td>
+</tr>
+<tr>
+<td>任务失败 / 请求出错</td>
+<td>惊吓（<code>error</code>）→ 失落（<code>disappointed</code>）</td>
+</tr>
+<tr>
+<td>新会话开始</td>
+<td>挥手欢迎（<code>welcome</code>）</td>
+</tr>
+<tr>
+<td>任一会话运行/思考中</td>
+<td>沉思陪伴（<code>think</code>，偶尔 <code>working</code> 工作姿态）</td>
+</tr>
+<tr>
+<td>等待批准</td>
+<td>期待等待（<code>wait</code>）</td>
+</tr>
+<tr>
+<td>周期游走</td>
+<td>散步（<code>walk</code>）</td>
+</tr>
+<tr>
+<td>常态</td>
+<td>待机（<code>idle</code>，随机眨眼/转身）</td>
+</tr>
+</tbody></table>
+<p>完整状态机（优先级/转换语义/触发源）见 <a href="https://github.com/vlln/whale-girl/blob/main/docs/state-machine.md">docs/state-machine.md</a>。</p>
+<h3>状态预览</h3>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>触发</th>
+<th>预览</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>idle</code></td>
+<td>常态待机</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/idle.gif" alt="idle"></td>
+</tr>
+<tr>
+<td><code>working</code></td>
+<td>会话思考期随机工作插曲</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/working.gif" alt="working"></td>
+</tr>
+<tr>
+<td><code>celebrate</code></td>
+<td>任务完成/升级/称号/回合完成</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/celebrate.gif" alt="celebrate"></td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>任务失败/请求出错</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/error.gif" alt="error"></td>
+</tr>
+<tr>
+<td><code>disappointed</code></td>
+<td>失败后短时失落</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/disappointed.gif" alt="disappointed"></td>
+</tr>
+<tr>
+<td><code>joy</code></td>
+<td>投喂/玩耍后开心</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/joy.gif" alt="joy"></td>
+</tr>
+<tr>
+<td><code>eat</code></td>
+<td>点击投喂</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/eat.gif" alt="eat"></td>
+</tr>
+<tr>
+<td><code>play</code></td>
+<td>点击玩耍</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/play.gif" alt="play"></td>
+</tr>
+<tr>
+<td><code>drag</code></td>
+<td>拖拽中</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/drag.gif" alt="drag"></td>
+</tr>
+<tr>
+<td><code>walk</code></td>
+<td>周期游走</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/walk.gif" alt="walk"></td>
+</tr>
+<tr>
+<td><code>sleep</code></td>
+<td>空闲 ≥60s</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/sleep.gif" alt="sleep"></td>
+</tr>
+<tr>
+<td><code>wake</code></td>
+<td>睡醒过渡</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/wake.gif" alt="wake"></td>
+</tr>
+<tr>
+<td><code>welcome</code></td>
+<td>新会话</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/welcome.gif" alt="welcome"></td>
+</tr>
+<tr>
+<td><code>think</code></td>
+<td>会话思考陪伴</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/think.gif" alt="think"></td>
+</tr>
+<tr>
+<td><code>wait</code></td>
+<td>等待批准</td>
+<td><img src="https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/wait.gif" alt="wait"></td>
+</tr>
+</tbody></table>
+<h3>配置</h3>
+<p>参数经宿主 settings 配置，<code>&lt;dshHome&gt;/settings.yaml</code> 的 <code>whale-girl:</code> section（或设置 UI）修改后<strong>热生效免重启</strong>：</p>
+<pre><code class="language-yaml">whale-girl:
+  size: 110          # 宠物尺寸 px（64–160）
+  opacity: 1         # 常态透明度（0.2–1）
+  walk:
+    enabled: true    # 游走开关
+  sleepAfterMs: 60000
+</code></pre>
+<p>完整配置项清单与语义层（XP/称号）封闭说明见 <code>.dsh-plugin/src/config.mjs</code>。<strong>语义层不可配</strong>（改 XP/称号阈值会破坏积累账本一致性）。</p>
+<h3>角色</h3>
+<p>菜单「🎭 换角色」循环切换角色（或设置 localStorage <code>whale-girl:character</code>）。每个角色提供<strong>全部 15 状态</strong>素材（素材全量契约，见 <a href="https://github.com/vlln/whale-girl/blob/main/docs/sprites-spec.md">docs/sprites-spec.md</a>）；贡献新角色指南见 <a href="https://github.com/vlln/whale-girl/blob/main/docs/adding-a-character.md">docs/adding-a-character.md</a>。</p>
+<h3>作为参考实现</h3>
+<p>whale-girl 是官方 repository-plugin 格式的<strong>完整范本</strong>（不绑定具体基线版本，随官方机制演进）——开发新插件可对照：</p>
+<ul>
+<li><strong>结构</strong>：<code>.dsh-plugin/</code>（入口/纯逻辑/client/素材）与 docs/decisions/scripts 分离，见根 <a href="https://github.com/vlln/whale-girl/blob/main/AGENTS.md">AGENTS.md</a></li>
+<li><strong>规范</strong>：门禁（<code>scripts/gates/run.mjs</code>）+ 决策记录 + 素材全量契约；开发引导见 plugin-registry 的 <a href="https://github.com/vlln/plugin-registry/tree/main/skills/plugin-registry-create">plugin-registry-create skill</a> 与 <a href="https://github.com/vlln/plugin-registry/blob/main/docs/cookbook/creating-a-repository-plugin.md">cookbook</a>，踩过的坑见 <a href="https://github.com/vlln/plugin-registry/blob/main/skills/plugin-registry-create/references/gotchas.md">gotchas</a></li>
+</ul>
+<h3>贡献</h3>
+<p><strong>欢迎提交 issue 和建议</strong>——你的反馈直接决定宠物的下一步：</p>
+<ul>
+<li>🐛 <strong>遇到问题</strong>：提交 issue，附复现步骤、浏览器与 dsh 版本；客户端问题附控制台报错更佳</li>
+<li>💡 <strong>功能建议</strong>：参考 <a href="https://github.com/vlln/whale-girl/blob/main/docs/state-machine.md">docs/state-machine.md</a> 与 <a href="https://github.com/vlln/whale-girl/blob/main/docs/growth-system.md">docs/growth-system.md</a> 了解现状，说明期待效果</li>
+<li>🎨 <strong>新角色</strong>：见 <a href="https://github.com/vlln/whale-girl/blob/main/docs/adding-a-character.md">docs/adding-a-character.md</a> §贡献角色速览——只读契约，产出 15 张 sheet + manifest 条目，本地 <code>verify-assets</code> 验收</li>
+<li>🔧 <strong>代码贡献</strong>：每个非平凡改动带决策记录（<code>decisions/</code>）、门禁自证、单一性质提交（见 <a href="https://github.com/vlln/whale-girl/blob/main/docs/AGENTS.md">docs/AGENTS.md</a> 与根 <a href="https://github.com/vlln/whale-girl/blob/main/AGENTS.md">AGENTS.md</a>）</li>
+</ul>
+<h3>致谢</h3>
+<p>角色形象由 <a href="https://space.bilibili.com/4168597">ZipZipPipe</a> 创作（《鲸鱼娘》表情包角色），sprites 基于其角色设定生成。</p>
+<h3>License</h3>
+<p>MIT License</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/vlln/whale-girl/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

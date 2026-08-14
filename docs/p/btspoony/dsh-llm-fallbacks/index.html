@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,155 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks</pre><button type="button" data-cmd="dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/README.md">English</a> | <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/README.zh-CN.md">中文</a></p>
+<p><a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+<img src="https://img.shields.io/badge/node-%3E%3D22-339933.svg" alt="node">
+<img src="https://img.shields.io/badge/pnpm-%3E%3D10-f69220.svg" alt="pnpm">
+<img src="https://img.shields.io/badge/dsh-DeepSeek%20Harness%20compatible-4B32C3.svg" alt="dsh"></p>
+<p>Automatic provider/model fallback chains for dsh (DeepSeek Harness): when an agent&#39;s LLM requests keep failing — retries exhausted, auth errors, quota exceeded, rate limiting (429) — the plugin switches provider/model along the fallback chain for the current role, and the current step/turn continues on the target model: tasks are not interrupted by model problems.</p>
+<p>Install with a single command (see <a href="#install">Install</a>):</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-llm-fallbacks   # pin a version with @&lt;version&gt;
+</code></pre>
+<h3>Features</h3>
+<ul>
+<li><strong>Automatic fallback for root and subagents</strong>: any agent switches down the chain to the next available provider/model on model failure — no manual model switching.</li>
+<li><strong>Two-block config</strong>: block 1 <code>rootChain</code> — the root agent&#39;s single fallback chain (empty = root does not fall back); block 2 declared roles — <code>roles.list</code> role entities (id/label/description/chain/fallback) that <code>roles.rules</code> reference by id (or the built-in <code>inherit</code>); no rule match → <code>inherit</code> → <code>rootChain</code>.</li>
+<li><strong>Entry syntax</strong>: chain entries are <code>provider/model</code> (exact switch) or <code>provider/*</code> (keep the failed model id, switch provider only) — the old chain-key namespace (provider/model keys, role-name keys) is gone.</li>
+<li><strong>Cooldown and revert</strong>: models that were switched away from / failed are not re-selected during the cooldown period; <code>revertPolicy: cooldown-expiry</code> automatically returns to the primary model when the cooldown expires, while <code>never</code> does not return within the session.</li>
+<li><strong>Visible behavior</strong>: every switch appends a persisted session event <code>fallbacks/switch</code> (from/to/role/reason), alongside info-level logs (candidate attempt order and skip reasons) and the read-only status block on the Settings → 插件配置 → Fallbacks card — no silent model switching.</li>
+<li><strong>Safety valves</strong>: switching stops and the original error semantics are kept once <code>maxSwitchesPerStep</code> is exceeded for a step, preventing chain loops from amplifying latency; <code>mode: &#39;always&#39;</code> providers additionally have a retry cap (<code>alwaysModeRetryCap</code>).</li>
+<li><strong>No-config no-op</strong>: <code>enabled</code> defaults to off (<code>false</code>); with no <code>rootChain</code>/role chains, unmatched trigger codes, or unresolved roles the plugin is a complete no-op — identical to not being installed, and no events are emitted.</li>
+</ul>
+<h3>Install</h3>
+<h4>One-line install</h4>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-llm-fallbacks   # pin a version with @&lt;version&gt;
+</code></pre>
+<p>A registry install fetches the <strong>built package</strong> (<code>dist/</code>) — nothing is built on the target machine. The plugin is <strong>mount-only</strong>: it never modifies the dsh source tree, and no patch / postinstall step exists — dsh upgrades never require re-patching. Versioning follows npm dist-tags (<code>latest</code> by default); pin an exact version with <code>dsh plugin --profile web add dsh-llm-fallbacks@&lt;version&gt;</code>.</p>
+<blockquote>
+<p><strong>Release status</strong>: published as <code>dsh-llm-fallbacks@0.1.0-alpha.2</code> (latest). The first publish used a one-time <code>NODE_AUTH_TOKEN</code> bootstrap secret; Trusted Publishing is configured afterwards for tokenless releases.</p>
+</blockquote>
+<h4>Registry package (npm / pnpm)</h4>
+<pre><code class="language-sh">npm install dsh-llm-fallbacks   # or: pnpm add dsh-llm-fallbacks
+</code></pre>
+<blockquote>
+<p>Release process → <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/release.md">docs/release.md</a>.</p>
+</blockquote>
+<h4>Git install (works today)</h4>
+<pre><code class="language-sh">dsh plugin --profile web add github:omdsh-dev/dsh-llm-fallbacks   # pin a commit with #&lt;sha&gt;
+</code></pre>
+<p>A git install fetches <strong>sources, not built artifacts</strong> — the bundle builds itself on install (<code>prepare</code> self-build), so the target machine needs node + pnpm. pnpm ≥ 10 blocks a git dependency&#39;s <code>prepare</code> by default (<code>ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED</code>); allow the build in the profile&#39;s <code>pnpm-workspace.yaml</code> and re-run the <code>add</code> (details in <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/install.md">docs/install.md</a>).</p>
+<h4>Local directory install (recommended for development / verification)</h4>
+<pre><code class="language-sh"># 1) Build in the plugin repo (the prepare self-build runs the pnpm toolchain: tsdown + tsc, no bun)
+pnpm install
+# 2) Add to the target profile (example: web)
+dsh plugin --profile web add .
+</code></pre>
+<blockquote>
+<p><strong>Development prerequisite</strong>: type-checking and tests resolve the real
+<code>@deepseek-ai/*</code> packages (peer deps, host-provided at runtime) from the npm
+registry at <code>0.1.0-rc.6</code> — <code>autoInstallPeers</code> + the registry auth token in
+the user-level <code>~/.npmrc</code> (pnpm 11 no longer expands <code>${NPM_TOKEN}</code> from a
+project <code>.npmrc</code>), no local link farm.</p>
+</blockquote>
+<blockquote>
+<p>Both methods, uninstall, and <code>--dump-config</code> verification — including the bundle-layer ordering requirements — are covered in <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/install.md">docs/install.md</a>.</p>
+</blockquote>
+<h3>Quick start</h3>
+<h4>Minimal configuration</h4>
+<p>Add a <code>fallbacks:</code> section to the dsh settings document (default <code>$DSH_HOME/settings.yaml</code>):</p>
+<pre><code class="language-yaml">fallbacks:
+  enabled: true            # feature switch; defaults to false — set explicitly to enable
+  rootChain:               # block 1: root agent&#39;s chain; tried in order after the primary model fails
+    - anthropic/claude-3-5-sonnet
+    - openai/*
+  roles:                   # block 2: declare roles first, then let rules reference them
+    list:
+      - id: reviewer       # role entity: unique id (/^[a-z0-9-]{1,32}$/); &quot;inherit&quot; is reserved
+        label: Reviewer
+        description: Code-review subagents
+        chain:
+          - openai/gpt-4o-mini
+        fallback: inherit-root   # default: role chain, then append rootChain
+    rules:
+      - origin: subagent   # all subagents → reviewer role (own chain + inherited root)
+        role: reviewer
+</code></pre>
+<p>Roles are declared entities: <code>roles.list</code> holds role cards (id/label/description + chain/fallback), and <code>roles.rules</code> match origin/provider/model in order to a declared role id or the built-in <code>inherit</code> (first match wins) — <strong>no rule match → <code>inherit</code> → <code>rootChain</code></strong>. A declared role is only ever hit when a rule references it. A role without a chain is meaningless — the settings card blocks saving it and the host warns at startup; give every declared role a chain, or point its rules at the built-in <code>inherit</code>. (A hand-written YAML role with a missing/empty chain is not fatal: with <code>fallback: inherit-root</code> (the default) an empty chain still falls back to <code>rootChain</code>; with <code>fallback: none</code> an empty chain leaves no candidates and the request passes through untouched — either way it is only a startup warn.) The legacy chain-key namespace and role-default field are gone (migration table: <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/configuration.md">docs/configuration.md</a>).</p>
+<p>Save and restart the web session for the changes to take effect. The feature switch <code>fallbacks.enabled</code> <strong>defaults to off (<code>false</code>)</strong> — the plugin only engages once it is turned on; <code>triggerCodes</code> defaults to <code>AUTH</code> / <code>QUOTA</code> / <code>RATE_LIMIT</code>; and with <strong>no <code>rootChain</code>/role chains configured the behavior is identical to not having the plugin installed</strong>. More examples (role entities, fallback strategies, rules referencing <code>inherit</code>) → <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/configuration.md">docs/configuration.md</a>.</p>
+<blockquote>
+<p><strong>Upgrade note (behavior change)</strong>: an existing <code>fallbacks:</code> section <strong>without an explicit <code>enabled</code> key</strong> now resolves to <code>false</code> after upgrading — add <code>enabled: true</code> to keep the plugin active.</p>
+</blockquote>
+<h3><code>/fallbacks</code> command (in-session diagnostics)</h3>
+<p>Type <code>/fallbacks</code> in any session to inspect this session&#39;s fallback state — no need to open the settings page:</p>
+<ul>
+<li><strong>Session origin</strong> (<code>root</code> / <code>subagent</code>) and the <strong>resolved role</strong> (the <code>role</code> of the first matching <code>roles.rules</code> entry, otherwise the built-in <code>inherit</code>);</li>
+<li>the <strong>resolved chain</strong> for that role (the role&#39;s own chain entries, annotated <code>（inherit-root）</code> when <code>rootChain</code> is appended — <code>rootChain</code> entries render in full only when the role has no own chain; <code>fallback: none</code> with an empty own chain, or no chain at all, → <code>not configured</code>);</li>
+<li>the <strong>recent switches</strong> (<code>fallbacks/switch</code> events, newest first, up to 5): from/to provider/model, role, reason;</li>
+<li>the <strong>cooldown status</strong>: which <code>provider/model</code> keys are currently suppressed and until when.</li>
+</ul>
+<p>The command is <strong>read-only</strong> — it never mutates fallback state (no cooldown reset, no pending-switch writes). It registers through a conditional <code>commands</code> child, so it appears only when the host composes the slash-command registry — with no registry the command is silently unavailable (no top-level inject pollution). Output is zh by default (the host carries no per-session locale signal); the en dictionary lives in the same copy table.</p>
+<h3>Mount-only (no dsh modification)</h3>
+<p>The plugin installs as a <strong>pure mount</strong> — it never modifies the dsh source tree:</p>
+<ul>
+<li><strong>Install = bundle insert + client inject + own gateway</strong>: <code>bundle/cordis.patch.yml</code>
+inserts the plugin row over the profile bundle stack, <code>dsh.client.inject</code> mounts
+the Fallbacks card on the Settings → 插件配置 page, and settings read/write/reset
+go through the plugin&#39;s own gateway channel (<code>/api/fallbacks/get|set|reset</code>).</li>
+<li><strong>No patches, no auto-apply step</strong>: there are no dsh-body patch files and no install
+lifecycle step that applies one. A one-line registry install works as-is.</li>
+<li><strong>dsh upgrades never require re-patching</strong>: a dsh upgrade that resets the source
+tree changes nothing for this plugin — it keeps working without any re-apply step.</li>
+<li><strong>Stale leftover patches are harmless</strong>: the plugin never depends on a patch
+export (role resolution is rules-only; the model-selection marker coordination
+was removed), so a previously patched dsh tree can be left as-is or manually
+reverted — neither is required.</li>
+</ul>
+<h3>Developer consumption</h3>
+<p>Beyond the dsh plugin mount, <code>dsh-llm-fallbacks</code> exposes a programmable consumer surface — both faces share the same function implementations (single point of truth, no copied logic):</p>
+<ul>
+<li><strong>Library API</strong>: import the runtime functions and types from the package root — <code>import { resolveRole, resolveChain, validateFallbacksConfig } from &#39;dsh-llm-fallbacks&#39;</code>.</li>
+<li><strong>Named cordis service</strong>: while the plugin is applied, <code>ctx.get(&#39;llm-fallbacks&#39;)</code> returns a pure-function service (<code>{ name, version, resolveRole, resolveChain, validateFallbacksConfig, detectLegacyKeys }</code>); after the plugin is disposed it is <code>undefined</code>. Runtime state stays observable via <code>fallbacks/switch</code> events, not through the service.</li>
+</ul>
+<p>Full contract (export inventory, minimal examples, lifecycle, typing) → <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/consumer-api.md">docs/consumer-api.md</a>.</p>
+<h3>Documentation</h3>
+<table>
+<thead>
+<tr>
+<th>Doc</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/install.md">docs/install.md</a></td>
+<td>profile install / registry install / uninstall / <code>--dump-config</code> verification</td>
+</tr>
+<tr>
+<td><a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/release.md">docs/release.md</a></td>
+<td>release process: Trusted Publishing setup, Release prep SOP, fragment format, rollback</td>
+</tr>
+<tr>
+<td><a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/configuration.md">docs/configuration.md</a></td>
+<td>full <code>fallbacks</code> namespace reference, selector syntax, example YAML, plugin-config card usage, behavior notes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/consumer-api.md">docs/consumer-api.md</a></td>
+<td>developer consumption contract: export inventory, minimal examples, lifecycle, typing</td>
+</tr>
+<tr>
+<td><a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/docs/verification.md">docs/verification.md</a></td>
+<td>verification records (test matrix, bundle layer order, runtime contracts, QA gate script)</td>
+</tr>
+</tbody></table>
+<h3>License</h3>
+<p>Released under the <strong>MIT</strong> License — see <a href="https://github.com/btspoony/dsh-llm-fallbacks/blob/main/LICENSE">LICENSE</a>. The LICENSE file is authoritative for copyright and license terms.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-llm-fallbacks/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

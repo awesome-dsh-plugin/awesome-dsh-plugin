@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,111 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:THU-MAIC/dsh-openmaic</pre><button type="button" data-cmd="dsh plugin --profile web add github:THU-MAIC/dsh-openmaic" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>把 OpenMAIC 带进 DeepSeek Harness。Bring OpenMAIC into DeepSeek Harness.</p>
+<p><code>dsh-openmaic</code> is a DeepSeek Harness plugin that registers four tools and a
+Socratic teaching skill:</p>
+<ul>
+<li><code>openmaic_generate</code>: tell your agent &quot;make me a lesson about X&quot;, and the plugin submits the requirement to <a href="https://open.maic.chat/">open.maic.chat</a>, waits for the async generation job, and returns a playable classroom link.</li>
+<li><code>openmaic_slide</code>: the agent writes one OpenMAIC slide (PPTist-style Slide JSON) and the plugin renders it with OpenMAIC&#39;s official renderer (text, shapes, images, tables, charts, formulas, code).</li>
+<li><code>openmaic_widget</code>: the agent writes an OpenMAIC-style interactive widget (simulation, game, or code) per the bundled contract; the code streams as it writes, then renders inline as a sandboxed card.</li>
+<li><code>openmaic_render</code>: the agent writes an inline HTML teaching fragment (concept card, quiz, walkthrough) and the plugin renders it as a sandboxed card right in the conversation.</li>
+<li><code>openmaic-teach</code> skill: turns a session into a Socratic OpenMAIC lesson, teaching by guided questioning and pulling in slides, widgets, and cards as aids.</li>
+</ul>
+<h3>What it looks like</h3>
+<pre><code>用户: 帮我做一节量子物理入门课
+模型 → openmaic_generate(requirement=&quot;量子物理入门课&quot;, language=&quot;zh-CN&quot;)
+     ← &quot;Classroom ID: class-abc123
+        Classroom URL:
+        https://open.maic.chat/classroom/class-abc123&quot;
+模型: 课堂已经生成好了，点开就能上课：
+     https://open.maic.chat/classroom/class-abc123
+</code></pre>
+<p>Interactive widget:</p>
+<pre><code>用户: 做一个抛体运动模拟器
+模型 → 按 openmaic-widget 模板写完整 HTML（流式输出）
+     → openmaic_widget(html=&quot;&lt;!doctype html&gt;…&quot;, widgetType=&quot;simulation&quot;, title=&quot;抛体运动&quot;)
+     ← &quot;Rendered the simulation widget …&quot;
+     对话里就地出现一个可交互的 OpenMAIC 模拟器
+</code></pre>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add git+https://github.com/THU-MAIC/dsh-openmaic.git
+</code></pre>
+<p>Then restart <code>dsh web</code> and refresh. The plugin ships its compiled <code>lib/</code>, so a
+git install needs no build step.</p>
+<h3>Config</h3>
+<pre><code class="language-yaml">dsh-openmaic:
+  baseUrl: https://open.maic.chat
+  accessCode: &quot;&quot;     # invite code; not enforced online yet, leave empty
+  pollIntervalMs: 5000
+  maxWaitMs: 600000
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>baseUrl</code></td>
+<td><code>https://open.maic.chat</code></td>
+<td>API base. Point at <code>http://localhost:3000</code> to develop against a local OpenMAIC.</td>
+</tr>
+<tr>
+<td><code>accessCode</code></td>
+<td><code>&quot;&quot;</code></td>
+<td>Invite code for open.maic.chat. Not enforced online yet, leave empty; fill it in once enabled.</td>
+</tr>
+<tr>
+<td><code>pollIntervalMs</code></td>
+<td><code>5000</code></td>
+<td>Poll interval in ms. Generation is slow, so 60000 is friendlier than the default.</td>
+</tr>
+<tr>
+<td><code>maxWaitMs</code></td>
+<td><code>600000</code></td>
+<td>Cap for one job, 10 minutes.</td>
+</tr>
+</tbody></table>
+<h3>API flow</h3>
+<ol>
+<li>If <code>accessCode</code> is set, <code>POST /api/access-code/verify</code> and replay the <code>openmaic_access</code> cookie on later requests.</li>
+<li><code>POST /api/generate-classroom</code> with the requirement, plus only the optional flags you passed. Returns a <code>jobId</code> and <code>pollUrl</code>.</li>
+<li>Poll <code>GET {pollUrl}</code> until the job is <code>succeeded</code> or <code>failed</code>, or <code>maxWaitMs</code> runs out.</li>
+<li>On success, return <code>{baseUrl}/classroom/{classroomId}</code> (or the server-provided <code>result.url</code>).</li>
+</ol>
+<h3>Scope</h3>
+<ul>
+<li><code>openmaic_generate</code>: generate a classroom and return a playable link.</li>
+<li><code>openmaic_slide</code>: render one OpenMAIC slide with the official renderer.</li>
+<li><code>openmaic_widget</code>: render a simulation / game / code widget the agent writes (a full HTML document). It streams the code while the agent writes it and renders on completion.</li>
+<li><code>openmaic_render</code>: render an inline HTML teaching fragment as a sandboxed card.</li>
+<li><code>openmaic-teach</code>: Socratic teaching session that uses the tools above as aids.</li>
+</ul>
+<p>The slide/widget/render tools do no server-side generation; they render content
+the agent authors against the OpenMAIC SDK contracts (<code>@openmaic/dsl</code>,
+<code>@openmaic/generation</code>, <code>@openmaic/renderer</code>).</p>
+<h3>Roadmap</h3>
+<ul>
+<li>Wire the remaining widget types (diagram, visualization3d, procedural-skill).</li>
+<li>Action loop back to the model (teaching-agent interactions: highlight/annotate/reveal widget elements).</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">./scripts/build.sh  # links host deps, bundles src/ to lib/ with tsdown
+./scripts/test.sh   # links host deps, runs the vitest suite
+</code></pre>
+<p>The scripts locate the harness checkout from <code>dsh</code> on <code>PATH</code>; set <code>DSH_CHECKOUT</code> to build against a specific checkout.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/THU-MAIC/dsh-openmaic/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,92 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ICCuse/dsh-pain-point-check</pre><button type="button" data-cmd="dsh plugin --profile web add github:ICCuse/dsh-pain-point-check" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>中文版见 <a href="https://github.com/ICCuse/dsh-pain-point-check/blob/main/README.zh.md">README.zh.md</a></p>
+<p>An enforced pain-point-check guard plugin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh).</p>
+<p>Where the official <a href="https://github.com/deepseek-ai/deepseek-harness"><code>repeat-tool-reminder</code></a> is advisory — it nudges an agent that repeats the exact same call — this guard <strong>vetoes</strong>: after two non-converged experiments on the same problem it injects the three questions, denies non-investigative tool calls until the model answers them in its reply text, and blocks further same-direction shots.</p>
+<h3>Why</h3>
+<p>An agent in &quot;solution state&quot; loses meta-cognition and keeps attacking the same problem — confirmation bias (designing experiments that support the current hypothesis), sunk cost (refusing to change direction), and narrative closure (wanting to finish the story). The gate forces a return to the blocker before the next shot, turning negative results into information.</p>
+<h3>Install</h3>
+<p>The package is not on npm yet; install it straight from this repository:</p>
+<pre><code class="language-sh">npm install github:ICCuse/dsh-pain-point-check
+# or: pnpm add github:ICCuse/dsh-pain-point-check
+</code></pre>
+<p>Then mount it in your profile composition. Add one row to your profile patch — for the web profile, <code>~/.dsh/profiles/web/cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- id: pain-point-check
+  name: &#39;dsh-pain-point-check&#39;
+  config:
+    failureThreshold: 2
+    repeatThreshold: 2
+</code></pre>
+<p>Restart the harness (<code>dsh web</code>) and the guard is live for every session.</p>
+<h3>How it works</h3>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>tools/result</code></td>
+<td>Counts per-agent experiments on the current problem: failed (errored) calls and consecutive identical calls.</td>
+</tr>
+<tr>
+<td><code>agent/pre-step</code></td>
+<td>Resets the counters on a real user interjection (a new problem); while the gate is pending, appends the three-question check block to the next step.</td>
+</tr>
+<tr>
+<td><code>tools/pre-execute</code></td>
+<td><strong>Denies</strong> every non-investigative call while the gate is pending (allowlist: <code>read</code>, <code>read_image</code>, <code>glob</code>, <code>grep</code>, <code>web_search</code>, <code>ask_user_question</code>, <code>skill</code>, <code>todo_write</code>).</td>
+</tr>
+<tr>
+<td><code>session/event</code></td>
+<td>Detects the three answers in the model&#39;s reply text (<code>卡点=… 排除=… 性价比=…</code>, English markers accepted) and lifts the gate.</td>
+</tr>
+</tbody></table>
+<p>The three questions: is this blocker still the most critical one to solve? What did the last negative result actually rule out? Which path is the most cost-effective (not necessarily the cheapest)? If the model cannot name what the negative result excluded, it has no falsifiable hypothesis — the check text tells it to go write one instead of firing another shot.</p>
+<h3>Config</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>failureThreshold</code></td>
+<td><code>2</code></td>
+<td>Failed calls that arm the gate.</td>
+</tr>
+<tr>
+<td><code>repeatThreshold</code></td>
+<td><code>2</code></td>
+<td>Consecutive identical calls that arm the gate.</td>
+</tr>
+<tr>
+<td><code>allowlist</code></td>
+<td>investigation set</td>
+<td>Tools still callable while pending.</td>
+</tr>
+</tbody></table>
+<p>Both thresholds must be integers <code>&gt;= 1</code>; a misconfiguration throws at plugin load.</p>
+<h3>Development</h3>
+<p><code>lib/</code> is prebuilt (built from the DeepSeek Harness monorepo toolchain). Tests:</p>
+<pre><code class="language-sh">npm install
+npm test
+</code></pre>
+<p>The test suite drives a real agent loop against a scripted mock adapter (no network): arming, denial, allowlist, lifting, partial answers, resets, and fail-loud config validation.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ICCuse/dsh-pain-point-check/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

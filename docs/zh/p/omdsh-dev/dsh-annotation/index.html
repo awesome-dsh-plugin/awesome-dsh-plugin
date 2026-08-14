@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,146 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/dsh-annotation</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-annotation" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>English</strong> · <a href="https://github.com/omdsh-dev/dsh-annotation/blob/main/README.zh-CN.md">简体中文</a></p>
+<p>Select any text in an assistant reply to annotate it (the annotation body may be left empty = just mark the passage). Annotations accumulate across messages and turns. An <strong>Annotations ×N</strong> chip appears next to the input box — hover to view all annotations, remove them one by one. Press Enter and the annotation block goes to the model together with whatever question is in the input box. <strong>The annotation block never shows up as text in your own message bubble</strong> — only the question plus the chip (content visible on hover; hidden before paint, zero flicker). The model replies with <code>Annotation 1: …</code> … <code>Annotation N: …</code>, one per annotation, and every Annotation label in the reply is a hoverable chip showing the annotated passage and your note.</p>
+<p>Form: official <strong>bundle plugin</strong> (<code>dsh.bundle</code> + a <code>dsh.client</code> declaration in package.json, injected into the browser via client-modules; the Node half is an empty implementation). <strong>Zero core changes</strong> — no DSH files are touched; <code>cordis.patch.yml</code> only inserts its own id once, and the profile patch stays <code>[]</code>.</p>
+<h3>Features</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Select-to-annotate</td>
+<td>Select assistant text → toolbar &quot;Annotate&quot; → write your note (may be empty); dismiss by clicking elsewhere or pressing Esc</td>
+</tr>
+<tr>
+<td>Numbered marker + highlight</td>
+<td>A blue numbered marker + highlight anchored to the passage, viewport-anchored with collision avoidance, never lost when scrolled out of view</td>
+</tr>
+<tr>
+<td>Cross-turn collection</td>
+<td>Any number of annotations accumulate across messages/turns, numbered from 1</td>
+</tr>
+<tr>
+<td>&quot;Annotations ×N&quot; chip</td>
+<td>Small chip beside the input box; hover shows every annotation, deletable individually</td>
+</tr>
+<tr>
+<td>Enter sends with your message</td>
+<td>Annotation block + the question in the input box are sent to the model together (the model receives the full content)</td>
+</tr>
+<tr>
+<td>Hidden in your bubble</td>
+<td>The annotation block is removed from your bubble&#39;s DOM the moment you send (before the browser paints), leaving only the question + the chip (hover to view); historical messages self-heal after a refresh</td>
+</tr>
+<tr>
+<td>Numbered reply correspondence</td>
+<td>A format instruction is injected into the message so the model replies <code>Annotation 1: …</code> … <code>Annotation N: …</code> one by one</td>
+</tr>
+<tr>
+<td>Reply annotation chips</td>
+<td><code>Annotation N:</code> in the reply renders as hoverable chips showing the passage + your note</td>
+</tr>
+</tbody></table>
+<h3>Interaction flow</h3>
+<pre><code>Select assistant text ──▶ Toolbar &quot;Annotate&quot; ──▶ Write note / save empty ──▶ Blue numbered marker + highlight
+        ▲                                                        │
+        └────────────── any number, accumulate across turns ◀────┘
+                                │
+                                ▼
+              &quot;Annotations ×N&quot; chip beside the input (hover to view / delete)
+                                │
+                            Press Enter
+                                ▼
+    Model receives: annotation block (number + passage + note) + your question
+    Your bubble: question only + &quot;Annotations ×N&quot; chip (zero flicker)
+    Model reply: Annotation 1: … Annotation 2: … (hoverable chips)
+</code></pre>
+<h3>Install (official bundle path · the only one)</h3>
+<pre><code class="language-sh"># Public GitHub install (works without an npm account)
+dsh plugin --profile web add git+https://github.com/omdsh-dev/dsh-annotation.git
+# local path install (development / debugging)
+cd /path/to/dsh-annotation
+dsh plugin --profile web add .
+# restart the web service
+launchctl kickstart -k &quot;gui/$(id -u)/com.dsh.web&quot;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Do</th>
+<th>Don&#39;t</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Only <code>dsh plugin add</code> / only write <code>bundles</code></td>
+<td><strong>Never</strong> insert the same id again in the profile/home <code>cordis.patch.yml</code></td>
+</tr>
+</tbody></table>
+<p>Self-check:</p>
+<pre><code class="language-sh">dsh --profile web --dump-config | rg &quot;id: dsh-annotation&quot;   # must be exactly 1 line
+curl -s -o /dev/null -w &#39;%{http_code}\n&#39; &quot;http://127.0.0.1:3080/plugins/@omdsh-dev/dsh-annotation/client.js&quot;   # 200
+</code></pre>
+<h3>Architecture notes</h3>
+<ul>
+<li><p><strong>Pure browser-side</strong>: everything lives in <code>client.js</code> (a hand-written CJS bundle, no build step, served no-cache per request)</p>
+</li>
+<li><p><strong>Message format</strong> (the literal protocol block sent to the model):</p>
+<pre><code>我批注了以下 N 处内容…\n\n1. 原文\n   批注：…\n\n请用「Annotation 1：…」…\n\n提问：
+</code></pre>
+<p>The delimiter is 「提问：」(ask:) rather than 「问题：」(question:) — the heading line &quot;回答我的问题：&quot; also contains the latter, and the bubble-hiding surgery would misfire on it.</p>
+</li>
+<li><p><strong>Bubble hiding</strong>: user bubbles are plain-text rendered (a single MessageText node, not markdown); a MutationObserver in the microtask phase (before paint) splits at the last <code>\n提问：</code>, cuts the annotation block, and attaches the chip; a 1 s polling fallback plus historical-message repair after refresh</p>
+</li>
+<li><p><strong>Reply chips</strong>: after streaming settles (<code>data-streaming</code> removed), each <code>Annotation N:</code> is replaced with a hoverable chip; item data is stored on the most recent user message carrying the annotation tag (<code>tag.__annotationItems</code>) and rebuilt after refresh; <strong>snapshot the text nodes collected by the TreeWalker before touching the DOM, then replace one by one</strong> — replacing a child mid-walk invalidates the walker pointer and only the first node gets processed</p>
+</li>
+<li><p><strong>IME-safe</strong>: the Enter interception carries <code>isComposing</code> / keyCode 229 guards; never hard-edits the composer textarea&#39;s DOM; <code>setDraft</code> only assembles the annotation block at the last moment before submit and never clobbers the user&#39;s draft</p>
+</li>
+<li><p><strong>No reliance on send-completion event chains</strong>: bubble decoration uses MutationObserver + polling (<code>watchInputDraft</code> can be ineffective before the session is loaded at init; it is only a staging entry)</p>
+</li>
+</ul>
+<h3>Version history</h3>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Highlights</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>v1.3.x</td>
+<td>Numbered reply correspondence: format-instruction injection + hoverable <code>Annotation N:</code> chips (TreeWalker snapshot fix)</td>
+</tr>
+<tr>
+<td>v1.2.x</td>
+<td>Hidden annotation block in bubble: MutationObserver microtask zero-flicker + polling fallback + historical-message repair</td>
+</tr>
+<tr>
+<td>v1.x</td>
+<td>Self-contained annotation flow (replaces the v0.9 chip design): capture-Enter assembles the block and sends it with the message</td>
+</tr>
+<tr>
+<td>v0.9.x</td>
+<td>Early chip design (insertReference + slash codec), superseded by v1.x</td>
+</tr>
+</tbody></table>
+<h3>Friendly links</h3>
+<ul>
+<li><a href="https://linux.do">Linux.do</a></li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-annotation/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

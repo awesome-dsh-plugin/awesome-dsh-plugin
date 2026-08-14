@@ -85,6 +85,7 @@ export default [
       P_GH: 'GitHub repository ↗',
       P_NPM: 'npm package ↗',
       P_MARKET: 'Install via dsh-market',
+      P_README_SRC: 'Content from the project README on GitHub ↗',
     },
   },
   {
@@ -160,6 +161,7 @@ export default [
       P_GH: 'GitHub 仓库 ↗',
       P_NPM: 'npm 包 ↗',
       P_MARKET: '通过 dsh-market 安装',
+      P_README_SRC: '内容来自项目 README（GitHub）↗',
     },
   },
 ]

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,108 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/dsh-open-in-vscode</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-open-in-vscode" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Open a workspace directory in VS Code straight from the DeepSeek Harness web
+GUI: every real Workspace row in the sidebar gains an <strong>Open in VSCode</strong> row
+inside its <strong>…</strong> overflow menu.</p>
+<h3>What it does</h3>
+<ul>
+<li>The client half uses the harness&#39;s <code>sidebar.workspaces.row-menu</code> slot when
+available and falls back to a scoped compatibility adapter on the public
+DSH <code>0.1.0-rc.6</code> build. Both paths render the same locale-following menu row
+— <strong>在 VSCode 中打开</strong> under the Chinese locale, <strong>Open in VSCode</strong> under
+English.</li>
+<li>The row&#39;s click closes the menu and calls the host over the strict Typert
+Remote <code>openInVscode/open</code>, passing the workspace directory.</li>
+<li>The host half spawns the configured editor CLI on that directory
+(<code>code &lt;path&gt;</code> by default), detached, so the editor outlives the server.</li>
+</ul>
+<h3>Prerequisites</h3>
+<ul>
+<li>VS Code, or an editor CLI on PATH. On Windows, the default <code>code</code> command
+also discovers standard per-user and system VS Code installations. On macOS,
+install the
+<a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">VS Code shell command</a>
+or set the plugin <code>command</code> to any editor that opens a directory).</li>
+<li>DSH <code>0.1.0-rc.6</code> or newer. The plugin uses the native Workspace row-menu
+extension point where present and a compatibility adapter on <code>rc.6</code>.</li>
+</ul>
+<h3>Install</h3>
+<p>Add the plugin to your web profile (this runs pnpm inside the profile and
+reconciles the bundle layer):</p>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-open-in-vscode/archive/refs/tags/v0.1.5.tar.gz
+</code></pre>
+<p>Restart the web server (<code>kill -TERM &lt;pid&gt;</code> and wait for exit — never
+<code>kill -9</code>, it tears the session zstd log mid-frame), then refresh the page.
+The host plugin mounts under <code>dsh-open-in-vscode</code>; the client bundle is
+served at <code>/plugins/dsh-open-in-vscode/client.js</code>.</p>
+<p>The versioned tarball replaces older pinned commits without running a git
+<code>prepare</code> script. Confirm the installed version with:</p>
+<pre><code class="language-sh">dsh plugin --profile web list dsh-open-in-vscode --depth 0
+</code></pre>
+<h3>Configuration</h3>
+<p>Deployment-varying choices are validated <code>Config</code> fields, changeable from
+cordis.yml:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>command</code></td>
+<td><code>code</code></td>
+<td>Executable that opens a directory. The default also probes standard Windows VS Code install locations; other commands resolve through PATH.</td>
+</tr>
+<tr>
+<td><code>args</code></td>
+<td><code>[]</code></td>
+<td>Extra arguments passed before the directory path.</td>
+</tr>
+</tbody></table>
+<p>A missing executable fails loud with a fix hint; relative paths are refused.</p>
+<h3>Capability boundary</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Runs where</th>
+<th>Requires approval</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Open a workspace directory in the editor</td>
+<td>Host (user gesture)</td>
+<td>No — the user clicked the row</td>
+</tr>
+<tr>
+<td>Anything else</td>
+<td>—</td>
+<td>The plugin has no tools, no settings namespace, and no model-facing surface</td>
+</tr>
+</tbody></table>
+<p>The plugin adds no tools, no skills, and no settings; it only opens the
+directory the user already opened in DSH. It never reads or writes files
+itself.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run check   # typecheck + lint + test + build; commit lib/ (file: installs run without a build)
+</code></pre>
+<p>Layout: the wire contract lives in one module (<code>src/contract.ts</code>) shared by
+the host manifest (<code>src/typert.ts</code>) and the client contribution
+(<code>src/client/remote.ts</code>); the harness owns the slot declaration and the
+Menu node-entry kind this plugin composes through.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-open-in-vscode/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

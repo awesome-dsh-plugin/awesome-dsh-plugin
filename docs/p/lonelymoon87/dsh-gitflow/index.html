@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,77 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:lonelymoon87/dsh-gitflow</pre><button type="button" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-gitflow" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/ci.yml"><img src="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/dsh-compatibility.yml"><img src="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/dsh-compatibility.yml/badge.svg" alt="Latest DSH compatibility"></a>
+<a href="https://github.com/lonelymoon87/dsh-gitflow/releases/latest"><img src="https://img.shields.io/github/v/release/lonelymoon87/dsh-gitflow" alt="Release"></a>
+<a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/LICENSE"><img src="https://img.shields.io/github/license/lonelymoon87/dsh-gitflow" alt="License"></a></p>
+<p>Git status, diff, log, commit, branch, and optional restore-point tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>The installable v0.1.2 release targets DSH 0.1.0-rc.6. This project currently distributes prebuilt packages through GitHub Releases and is not published on npm.</p>
+<p><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/README.zh-CN.md">简体中文</a></p>
+<h3>MVP</h3>
+<ul>
+<li><code>git_status</code> reads branch and working-tree counts.</li>
+<li><code>git_diff</code> reads unstaged or staged unified diffs without touching the index.</li>
+<li><code>git_log</code> returns bounded structured commit history and handles unborn repositories.</li>
+<li><code>git_commit</code> commits only existing staged changes and requires DSH approval.</li>
+<li><code>git_branch</code> lists local branches; create and switch require approval.</li>
+<li><code>/commit</code> loads a staged-change review skill before calling <code>git_commit</code>.</li>
+<li><code>checkpoint_list</code> and two-phase <code>checkpoint_restore</code> delegate to an optional Change Ledger service.</li>
+<li>Optional <code>autoCheckpoint</code> captures a Change Ledger restore point at <code>tools/pre-execute</code> for configured mutation tools.</li>
+</ul>
+<p>Pull-request creation, push, worktree management, and branch deletion are deliberately outside the MVP.</p>
+<h3>Safety model</h3>
+<p>GitFlow never stages files implicitly. It does not run <code>git add</code>, <code>git reset</code>, <code>git stash</code>, <code>git push</code>, hook-bypass flags, or destructive branch commands. Git arguments are shell-quoted and commit messages are passed through stdin. Every Git process uses the mounted DSH shell service, preserving its timeout, sandbox, cancellation, and execution-world behavior.</p>
+<p>Mutating tool calls pass through the DSH approval seam. Direct command handlers do not bypass it: <code>/commit</code> queues a user-invoked skill, and the eventual <code>git_commit</code> tool call asks for approval.</p>
+<h3>Change Ledger integration</h3>
+<p><a href="https://github.com/Anionex/dsh-turn-rewind">dsh-turn-rewind</a> owns workspace snapshots, restore planning, rescue points, stale-plan checks, and post-restore verification. GitFlow does not implement a competing stash or commit-tree restore engine.</p>
+<p>When no compatible <code>ctx.changeLedger</code> service is mounted, ordinary Git tools continue to work and checkpoint tools fail with a configuration message. Because the restore point is already the durable source of truth, GitFlow does not duplicate it into required custom session events.</p>
+<h3>Install</h3>
+<p>The package currently targets DSH <code>0.1.0-rc.6</code> plugin APIs and Node.js <code>^22.19 || &gt;=24</code>.</p>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/lonelymoon87/dsh-gitflow/releases/download/v0.1.2/dsh-gitflow-0.1.2.tgz
+</code></pre>
+<p>The release tarball is prebuilt and needs no build allowance. A pinned source install is also supported:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:lonelymoon87/dsh-gitflow#v0.1.2
+</code></pre>
+<p>The source install runs this package&#39;s <code>prepare</code> build. pnpm 10 and later reject it until the profile allowlists the exact package key printed by the failed command; apply that instruction and rerun the same <code>dsh plugin add</code> command. Replace <code>web</code> with <code>headless</code> to install into the one-shot agent profile.</p>
+<p>To upgrade, rerun <code>dsh plugin add</code> with the newer release URL. To uninstall:</p>
+<pre><code class="language-sh">dsh plugin --profile web remove dsh-gitflow
+</code></pre>
+<h3>Configuration</h3>
+<pre><code class="language-yaml">- id: gitflow
+  name: dsh-gitflow
+  config:
+    timeoutMs: 30000
+    maxOutputBytes: 2097152
+    maxLogEntries: 100
+    conventionalCommits: true
+    autoCheckpoint: false
+    checkpointTools:
+      - write
+      - edit
+      - str_replace_editor
+      - git_commit
+      - git_branch
+</code></pre>
+<p><code>autoCheckpoint</code> is disabled by default. Enabling it without a Change Ledger service does not pretend recovery exists; it leaves calls unchanged.</p>
+<h3>Verification</h3>
+<p>The test suite uses real temporary Git repositories. It covers dirty status, staged and unstaged diffs, commits, branch creation, unborn history, approval decisions, automatic checkpoint delegation, and two-phase restore delegation.</p>
+<ul>
+<li>The v0.1.2 tarball installs directly from its HTTPS release URL into a clean DSH profile.</li>
+<li>The packed bundle and pinned GitHub source install both appear in <code>dsh --dump-config</code>.</li>
+<li>CI covers Node 22.19 and Node 24; a scheduled workflow repeats the real install against <code>@deepseek-ai/dsh@latest</code>.</li>
+<li>Bugs and compatibility reports are tracked in <a href="https://github.com/lonelymoon87/dsh-gitflow/issues">GitHub Issues</a>.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

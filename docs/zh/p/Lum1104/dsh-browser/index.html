@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,130 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Lum1104/dsh-browser</pre><button type="button" data-cmd="dsh plugin --profile web add github:Lum1104/dsh-browser" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>English</strong> | <a href="https://github.com/Lum1104/dsh-browser/blob/main/README.zh.md">中文</a></p>
+<p>Connect <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> to the Chrome tab you are already using. The model can read page content, click controls, fill forms, scroll, and navigate while preserving your login state, session, and cookies. A side panel provides the conversation UI.</p>
+<p><code>dsh</code> is DeepSeek AI&#39;s open-source, plugin-based agent harness. This repository provides a companion browser bridge plugin and Chrome MV3 extension as one standalone pnpm workspace.</p>
+<p>The integration is text-only: pages become structured text with a numbered inventory of interactive elements, and the model addresses those elements by number. Screenshots never enter the model-facing pipeline.</p>
+<p>The workspace uses a pinned, publicly available <code>@deepseek-ai/dsh</code> release for reproducible installation. It requires neither a DeepSeek Harness source checkout, dependencies from a parent directory, nor npm credentials. DeepSeek Harness is currently a developer preview, so upgrades may require coordinated dependency and API updates.</p>
+<h3>Core capabilities</h3>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Tool</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Read page</td>
+<td><code>browser_snapshot</code></td>
+<td>Structured text snapshot: title, URL, main text, numbered controls, and masked form fields; <code>delta: true</code> returns only changes</td>
+</tr>
+<tr>
+<td>Click element</td>
+<td><code>browser_click</code></td>
+<td>Click links, buttons, checkboxes, and other controls by inventory number</td>
+</tr>
+<tr>
+<td>Fill forms</td>
+<td><code>browser_type</code></td>
+<td>React/Vue-compatible input; <code>replace</code> clears the field first</td>
+</tr>
+<tr>
+<td>Press keys</td>
+<td><code>browser_press</code></td>
+<td>Keyboard events such as Enter, Tab, Escape, and arrow keys</td>
+</tr>
+<tr>
+<td>Scroll</td>
+<td><code>browser_scroll</code></td>
+<td>Viewport scrolling: up, down, top, and bottom</td>
+</tr>
+<tr>
+<td>Navigate</td>
+<td><code>browser_navigate</code> / <code>browser_back</code> / <code>browser_forward</code> / <code>browser_reload</code></td>
+<td>In-tab navigation with login state preserved</td>
+</tr>
+<tr>
+<td>Read region</td>
+<td><code>browser_get_text</code></td>
+<td>Lazy-loaded or partial page text</td>
+</tr>
+<tr>
+<td>Wait for stability</td>
+<td><code>browser_wait</code></td>
+<td>Page-load and render-settle detection</td>
+</tr>
+</tbody></table>
+<h3>Repository layout</h3>
+<pre><code>packages/browser/bridge-browser/
+  cordis.patch.yml
+extensions/dsh-browser/
+scripts/install.sh
+</code></pre>
+<h3>Why this design</h3>
+<ul>
+<li><strong>Your real browser, not a headless copy</strong>: the model works in the page you already have open, retaining logins, sessions, and cookies.</li>
+<li><strong>A text-first model interface</strong>: numbered controls, stable IDs across snapshots, delta updates, and masked sensitive values make pages operable without vision.</li>
+<li><strong>A narrow privacy boundary</strong>: passwords and payment-card values are always rendered as <code>••••</code> and never leave the page.</li>
+<li><strong>A guarded bridge</strong>: authenticated handshakes protect remote connections, privileged gateway methods reject non-loopback callers, and the extension only operates the active tab.</li>
+</ul>
+<h3>Zero-configuration install and use</h3>
+<p>Prerequisites: Node.js <code>^22.19</code> or <code>&gt;=24</code>, Corepack/pnpm, and Google Chrome. All required <code>@deepseek-ai</code> packages are available from the public npm registry; installation does not require an npm token.</p>
+<p><strong>Step 1 — install the bridge and extension</strong>. The recommended command does not require Git or a local clone:</p>
+<pre><code class="language-sh">curl -fsSL https://raw.githubusercontent.com/Lum1104/dsh-browser/refs/heads/main/scripts/install.sh | bash
+</code></pre>
+<p>The remote installer downloads <code>main</code> into the installer-managed directory <code>~/.dsh/dsh-browser</code>, then installs the pinned public npm dependencies from the lockfile, builds the bridge plugin, registers its official bundle in dsh&#39;s local <code>web</code> profile, builds the extension, copies it to <code>~/.dsh/browser-extension</code>, and opens <code>chrome://extensions</code>. Enable Developer mode and load the extension directory when prompted. Running the same command again updates the managed installation; keep source edits in a clone instead.</p>
+<p>Developers can clone the repository and run the same installer from any checkout. This mode uses the current branch without downloading or overwriting source files:</p>
+<pre><code class="language-sh">git clone https://github.com/Lum1104/dsh-browser.git
+cd dsh-browser
+./scripts/install.sh
+</code></pre>
+<p><strong>Step 2 — start dsh</strong>. For a managed installation, use its pinned version:</p>
+<pre><code class="language-sh">cd ~/.dsh/dsh-browser &amp;&amp; pnpm start
+</code></pre>
+<p>From a clone, run <code>pnpm start</code> in the repository root instead.</p>
+<p>Or run the latest public release directly from npm:</p>
+<pre><code class="language-sh">npx @deepseek-ai/dsh web
+</code></pre>
+<p>Both commands load the same browser bundle from the local <code>web</code> profile. Port 3080 is used by default; if it is occupied, run <code>pnpm start -- --port &lt;port&gt;</code> or <code>npx @deepseek-ai/dsh web --port &lt;port&gt;</code>. When the DeepSeek whale icon appears in the toolbar, click it to open the side panel.</p>
+<p><strong>For subsequent use</strong>, the extension does not need to be installed again. Run either startup command above.</p>
+<p><strong>No configuration is required for local use</strong>: the extension discovers dsh through <code>/ext/bridge-config</code>, and loopback connections do not require a bridge token. This runtime security token is unrelated to npm authentication; an address and bridge token are only needed for remote deployment with <code>--host 0.0.0.0</code>.</p>
+<p><strong>Step 3 — use it</strong>: open any normal <code>http://</code> or <code>https://</code> page and click the DeepSeek whale icon. When the side panel reports &quot;Connected&quot;, chat normally or click &quot;Read page&quot; first. A page that was already open before the extension was installed or reloaded is instrumented automatically on the first action; no page refresh is needed. Browser-internal and protected pages such as <code>chrome://</code> and the Chrome Web Store cannot be read or operated.</p>
+<p>To update a managed installation, run the same <code>curl | bash</code> command again. To update a clone, pull or switch to the desired revision and run <code>./scripts/install.sh</code>. Then click Reload for &quot;dsh Browser Assistant&quot; in <code>chrome://extensions</code> and reopen the side panel. Chrome should load <code>~/.dsh/browser-extension</code>; do not load the source directory <code>extensions/dsh-browser/</code>.</p>
+<h3>Development</h3>
+<p>The bridge plugin and Chrome extension are both members of this repository&#39;s workspace. Run all commands from the repository root. For the first development installation, run <code>pnpm install</code>.</p>
+<pre><code class="language-sh">pnpm run build
+pnpm run typecheck
+pnpm run test
+
+pnpm --filter @deepseek-ai/dsh-bridge-browser run build
+pnpm --filter @deepseek-ai/dsh-bridge-browser run typecheck
+pnpm --filter @deepseek-ai/dsh-bridge-browser run test
+
+pnpm --filter dsh-browser-extension run build
+pnpm --filter dsh-browser-extension run test
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li>The bridge plugin must have a built <code>lib/</code> before startup because the loader consumes it; both <code>scripts/install.sh</code> and the root <code>pnpm run build</code> build the plugin before the extension.</li>
+<li>The dependencies of <code>@deepseek-ai/dsh</code> and the bridge plugin are pinned to the same tested public release line. An upgrade must update the manifests and lockfile together and rerun the root checks.</li>
+</ul>
+<h3>Security</h3>
+<ul>
+<li>The bridge path sits outside the <code>/api</code> trust boundary and performs its own bearer-token authentication.</li>
+<li>Privileged gateway methods such as <code>settings.*</code>, <code>credentials.*</code>, and <code>host.open*</code> reject non-loopback sources.</li>
+<li>The model-facing pipeline is text-only; passwords and payment-card values never leave the page.</li>
+<li>Only the active tab is operated; the extension never switches tabs silently.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/Lum1104/dsh-browser/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

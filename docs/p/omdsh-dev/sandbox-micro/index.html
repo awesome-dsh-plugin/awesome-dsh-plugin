@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,61 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/sandbox-micro</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/sandbox-micro" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/omdsh-dev/sandbox-micro/blob/main/README.zh.md">中文</a></p>
+<p>A DSH profile bundle for the fail-closed microsandbox microVM capability. The root package contains the <code>ctx.microsandbox</code> provider and exports the model-facing tools as <code>@deepseek-ai/dsh-sandbox-microsandbox/tool</code>.</p>
+<h3>Repository shape</h3>
+<pre><code class="language-text">package.json              # provider/tool package and dsh.bundle manifest
+cordis.patch.yml          # dormant provider and tool rows
+src/                      # provider, runtime, resolver, and tool subpath
+lib/                      # generated install artifacts
+legacy/                   # source-compatible host integration patch for older DSH snapshots
+docs/                     # detailed provider/tool references
+tests/provider/            # provider, resolver, SDK, and host tests
+tests/tool/                # model-tool and renderer tests
+</code></pre>
+<p>The single root artifact keeps Git/profile installation self-contained while preserving two Cordis entry points:</p>
+<pre><code class="language-yaml">- id: microsandbox
+  name: &#39;@deepseek-ai/dsh-sandbox-microsandbox&#39;
+
+- id: tool-microsandbox
+  name: &#39;@deepseek-ai/dsh-sandbox-microsandbox/tool&#39;
+</code></pre>
+<p>Both rows are disabled by the bundle. To enable the capability, a profile must explicitly enable the provider with <code>config.enabled: true</code> and enable the tool row separately. This prevents installation from starting a microVM capability or exposing model-facing tools implicitly.</p>
+<h3>Capability boundary</h3>
+<p><code>ctx.microsandbox</code> is an environment-coherent microVM service, not a <code>dsh-sandbox</code> same-world provider. It uses the pinned <code>microsandbox@0.6.7</code> SDK, package-owned <code>msb</code> resolution, bounded functional qualification, and fail-closed platform checks. It never degrades to unconfined host execution.</p>
+<p>The tool entry exposes:</p>
+<pre><code class="language-text">microsandbox_exec  exact argv execution with captured output
+microsandbox_fs    guest file read, write, and directory listing
+</code></pre>
+<p>The old host integration patch remains under <code>legacy/</code> for DSH snapshots that do not yet provide the provider/tool catalog and composition seams. A new bundle layer does not modify DSH host source.</p>
+<h3>Development</h3>
+<p>A full typecheck expects sibling checkouts:</p>
+<pre><code class="language-text">~/git/deepseek-harness
+~/git/sandbox-micro
+</code></pre>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck
+pnpm test
+pnpm run build
+</code></pre>
+<p>The <code>prepare</code> script builds provider, invariant, and tool entries directly from <code>src/</code>, so a Git install does not require sibling project references. pnpm 10 may require the profile to allow the package&#39;s prepare script; only approve a pinned, trusted checkout.</p>
+<h3>Model Experience</h3>
+<p>The provider adds no prompt text. The tool subpath adds <code>microsandbox_exec</code> and <code>microsandbox_fs</code> to the authoritative tools service; their output preserves guest exit codes, captured streams, runner failures, timeout/abort classification, and guest file content.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li>Linux requires <code>/dev/kvm</code>; unsupported or unqualified hosts remain unavailable.</li>
+<li>macOS Apple Silicon real-host acceptance is not included in the first release posture.</li>
+<li>Secrets, network policy, snapshots, and image/volume lifecycle tools remain provider-only or fail closed.</li>
+<li>The external SDK and platform binaries are pinned to <code>0.6.7</code> and require their corresponding registry packages.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/sandbox-micro/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

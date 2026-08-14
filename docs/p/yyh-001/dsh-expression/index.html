@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,145 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:yyh-001/dsh-expression</pre><button type="button" data-cmd="dsh plugin --profile web add github:yyh-001/dsh-expression" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<hr>
+<p>聊天 Agent 斗图最容易翻车的三件事：</p>
+<ul>
+<li>手写假路径  </li>
+<li>乱发不贴题的图  </li>
+<li>搜不到就硬发</li>
+</ul>
+<p><strong>dsh-expression</strong> 是 DeepSeek Harness 的表情包插件：直接读你现成的表情包库，语义检索后只发<strong>真实存在的文件</strong>。<br>数据来自 <a href="https://github.com/yyh-001/selfloom">selfloom</a>（单用户陪伴 agent）的表情包库——<strong>零迁移、开箱即搜</strong>。发送走 <a href="https://github.com/yyh-001/dsh-companion"><code>dsh-companion</code></a> 的 QQ 通道（<code>companionQq</code> 服务）；没有 QQ 通道就不挂工具，绝不给模型一个发不出去的空工具。</p>
+<p><strong>配合陪伴插件 dsh-companion 的效果</strong>：不需要任何插件 API，模型会结合会话上下文主动判断情绪、恰到好处地发一张贴题的表情包——情绪到了直接发，实现「陪伴式斗图」。</p>
+<p>想换一套聊天搭子人设？另装 <strong><a href="https://github.com/yyh-001/dsh-companion">dsh-companion</a></strong>（人设 + Hermes 记忆 + QQ 通道）——两者独立、可选搭配，本仓不含人设。</p>
+<p>交流 / 反馈：<strong>QQ 群 <a href="https://qm.qq.com/q/7AD2g70HqS">993579665</a></strong>（<a href="https://qm.qq.com/q/7AD2g70HqS">点击加入</a>）</p>
+<hr>
+<h3>安装</h3>
+<p>已发布到 <strong>npm</strong>（<code>dsh-expression@0.1.0</code>），一行装进任意 DSH profile（如 <code>~/.dsh/profiles/web/</code>）：</p>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-expression
+# 等价于:
+pnpm add dsh-expression
+</code></pre>
+<p>或从 GitHub / 本地直接装：</p>
+<pre><code class="language-bash">pnpm add github:yyh-001/dsh-expression   # 或
+pnpm add file:/path/to/dsh-expression
+</code></pre>
+<h3>配置</h3>
+<p>默认直接内置图库（<code>memes/official-001</code>），开箱即用，绝大多数情况<strong>无需任何配置</strong>。若你要指向别的图库，在 cordis.yml 里加一行覆盖 <code>memeRoot</code>：</p>
+<pre><code class="language-yaml">- id: selfloom-expression
+  name: dsh-expression
+  config:
+    memeRoot: /your/path/to/meme-pack   # 可选；默认内置 memes/official-001
+</code></pre>
+<p>装完后新开一个会话，模型就会看到 <code>send_meme</code>。</p>
+<h3>装完即用</h3>
+<pre><code class="language-text">用户: 发个无语的表情包
+模型: 调 send_meme query=「无语」→ 拿到真实文件 → 发图并简短接话
+</code></pre>
+<p>也可以在输入框左侧点 <strong>😊</strong> 直接选图一键发出，无需让模型代劳：</p>
+<pre><code class="language-bash"># 模型视角自检图库:
+# 「send_meme 搜一下&#39;下班&#39;有什么」
+</code></pre>
+<p>实际效果（会话里让模型发表情包，search 选图 → 发出）：</p>
+<p>配合 <a href="https://github.com/yyh-001/dsh-companion">dsh-companion</a>（陪伴插件），模型也可以根据情绪主动发送表情包——情绪到了直接发。</p>
+<h3>界面</h3>
+<p>设置页「表情包」面板：浏览 / 编辑 / 删除图库，也可直接上传新图。</p>
+<p>输入框 😊 一键发表情包：点开面板 → 搜索 / 浏览缩略图 → 点一张直接发出（点外部自动收起）。</p>
+<h3>它做什么</h3>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>语义搜图</strong></td>
+<td>口语 query → bigram Dice 相似度排序；口语词同义词兜底（「摸鱼」→ 下班/工作分类）</td>
+</tr>
+<tr>
+<td><strong>真实路径发出</strong></td>
+<td>索引内相对路径解析后禁止逃出图库根，只发 <code>MemesStore</code> 返回的真实文件</td>
+</tr>
+<tr>
+<td><strong>输入框一键发图</strong></td>
+<td>会话输入框左侧 😊 按钮 → 悬浮面板选图 → 一点即发；点外部自动收起</td>
+</tr>
+<tr>
+<td><strong>情绪主动发图</strong></td>
+<td>工具描述鼓励&quot;情绪到了直接发&quot;；发完不啰嗦、不复述图</td>
+</tr>
+<tr>
+<td><strong>数据零迁移</strong></td>
+<td>直接读 selfloom 图库（<code>index.db</code> SQLite 只读 + <code>memes/&lt;tag&gt;/</code> 图片），无需任何导入步骤</td>
+</tr>
+</tbody></table>
+<h3>日常命令（模型视角）</h3>
+<pre><code class="language-text">send_meme query=「想下班」          # 语义检索 + 发送
+send_meme tag=shy                  # 按分类发一张
+send_meme query=「不存在的词」      # 无命中 → 返回图库分类清单，引导换词重试
+</code></pre>
+<p>数据根目录默认是随包内置的 <code>memes/official-001</code>；可用 <code>config.memeRoot</code> 覆盖到别处。</p>
+<h3>给模型的三条铁律</h3>
+<p>完整约定见 <code>send_meme</code> 工具描述。</p>
+<ol>
+<li>只用 <code>MemesStore</code> 返回的真实路径，不手写路径、不自己 <code>ls</code> 挑图  </li>
+<li>搜失败就回文字、列分类让用户换词，别硬发  </li>
+<li>发完保持简短，让图自己说话——不复述、不描述图的内容</li>
+</ol>
+<h3>图库来源</h3>
+<p>内置默认图库（<code>id: official-001</code>，名「官方表情包1号」）来自 <strong>Astrbot mememanager 官方初始表情包</strong>：</p>
+<ul>
+<li>上游仓库：<a href="https://github.com/anka-afk/astrbot-meme-pack-official-01">anka-afk/astrbot-meme-pack-official-01</a>（<code>main</code> 分支），维护者 <strong>anka-afk</strong></li>
+<li>构成：<code>index.db</code>（SQLite 索引，含每张 caption/关键词，供语义检索）+ <code>manifest.json</code>（分类说明 + 来源标注）+ <code>memes/&lt;tag&gt;/</code> 图片 + <code>previews/</code></li>
+<li>本仓库内置版本已删减 8 张不合适的图片（92 张），索引与磁盘保持一致</li>
+<li>⚠️ 上游<strong>未提供 LICENSE</strong>：这套图缺乏显式的再分发许可。随插件打包作为个人默认库使用没问题；如需公开对外分发，请保留 manifest.json 中的上游来源标注。</li>
+</ul>
+<h3>接到你的 Agent</h3>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>dsh-expression</strong></td>
+<td>本插件：<code>MemesStore</code>（检索）+ <code>send_meme</code>（发送）</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/yyh-001/dsh-companion">dsh-companion</a></strong></td>
+<td>人设 + Hermes 记忆 + QQ 通道；提供 <code>companionQq</code> 服务供发图</td>
+</tr>
+<tr>
+<td><strong>图库</strong></td>
+<td>内置默认图库 <code>memes/official-001/</code>（可 <code>memeRoot</code> 覆盖），源自 <a href="https://github.com/anka-afk/astrbot-meme-pack-official-01">astrbot-meme-pack-official-01</a></td>
+</tr>
+</tbody></table>
+<pre><code class="language-text">dsh-expression/
+  index.js        插件入口：memeRoot 配置 + companionQq 服务消费
+  memes.js        MemesStore：SQLite 只读索引 + bigram Dice 检索 + 路径安全
+  memes/
+    official-001/   内置默认图库（index.db + manifest.json + memes/&lt;tag&gt;/）
+  package.json    name / inject / peer deps
+  README.md
+  LICENSE
+</code></pre>
+<h3>已知限制</h3>
+<ul>
+<li>管理操作（上传/删除/改元数据）未移植——图库维护仍走原 selfloom 控制台或直接操作目录；</li>
+<li>发送目标是 QQ 通道的&quot;最近聊天&quot;（与 dsh-companion 的单目标 MVP 一致）；</li>
+<li>检索算法与 selfloom 原版一致（bigram Dice），部分口语词的匹配质量取决于图库 caption。</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/yyh-001/dsh-expression/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/yyh-001/dsh-expression/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

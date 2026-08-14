@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,126 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Luke-Yong/dsh-plugin-knowledge-graph</pre><button type="button" data-cmd="dsh plugin --profile web add github:Luke-Yong/dsh-plugin-knowledge-graph" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>A <a href="https://github.com/deepseek-ai">DeepSeek Harness (DSH)</a> plugin that exposes a <code>read_graph</code> tool backed by a codebase <strong>knowledge graph</strong>. The graph tracks every file, directory, exported symbol, and their relationships so an agent can answer structural and dependency questions faster than grepping or reading files.</p>
+<blockquote>
+<p><strong>Status: infancy.</strong> This project is in its infancy stage. Execution behavior, the query surface, and compatibility may change while the project is iterated on and tested by the open source community.</p>
+</blockquote>
+<blockquote>
+<p><strong>Derived work.</strong> This project is derived from the knowledge graph tool in <a href="https://github.com/Luke-Yong/H">Luke-Yong/H</a>, adapted to DeepSeek Harness&#39;s &quot;everything is a plugin&quot; model.</p>
+</blockquote>
+<h3>What it does</h3>
+<p>Given a workspace root, the plugin builds an in-memory graph and answers queries such as:</p>
+<ul>
+<li><code>structure</code> — print the full directory tree</li>
+<li><code>exports &lt;file&gt;</code> — list every symbol exported by a file</li>
+<li><code>imports_of &lt;file&gt;</code> — list symbols a file imports (with their source files)</li>
+<li><code>exporters_of &lt;symbol&gt;</code> — find which files export a symbol</li>
+<li><code>dependents &lt;file&gt;</code> — find which files import from a file</li>
+</ul>
+<h3>Graph model</h3>
+<p>The graph uses three node types and four edge types:</p>
+<table>
+<thead>
+<tr>
+<th>Nodes</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>dir</code></td>
+<td>A directory</td>
+</tr>
+<tr>
+<td><code>file</code></td>
+<td>A source file</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>An exported symbol (function, class, const, type, interface, enum, default)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Edges</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>CONTAINS</code></td>
+<td>Structural parent → child (dir → dir/file, file → symbol)</td>
+</tr>
+<tr>
+<td><code>EXPORTS</code></td>
+<td>File → symbol it exports</td>
+</tr>
+<tr>
+<td><code>IMPORTS</code></td>
+<td>File-level dependency (file → file)</td>
+</tr>
+<tr>
+<td><code>IMPORTS_SYMBOL</code></td>
+<td>Precise symbol-level dependency (file → symbol)</td>
+</tr>
+</tbody></table>
+<h3>Installation</h3>
+<p>Install with the DSH CLI into a profile:</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:Luke-Yong/dsh-plugin-knowledge-graph
+</code></pre>
+<p>Pin to a specific commit for reproducibility:</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:Luke-Yong/dsh-plugin-knowledge-graph#&lt;commit-sha&gt;
+</code></pre>
+<h3>Usage</h3>
+<p>The plugin registers a single tool, <code>read_graph</code>, on <code>ctx.tools</code>. Its parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>query</code></td>
+<td>string</td>
+<td>yes</td>
+<td>Query string in <code>&lt;query_type&gt; &lt;target&gt;</code> form</td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>string</td>
+<td>no</td>
+<td>Absolute workspace root to graph. Defaults to <code>process.cwd()</code></td>
+</tr>
+</tbody></table>
+<p>Example queries:</p>
+<pre><code>exports src/index.ts
+exporters_of buildKnowledgeGraph
+imports_of src/query.ts
+dependents src/knowledgeGraph.ts
+structure
+</code></pre>
+<h3>Project structure</h3>
+<pre><code>src/
+  index.ts         Plugin entry — registers the read_graph tool
+  knowledgeGraph.ts  Graph builder (filesystem walk, import/export parsing, serialization)
+  query.ts         Query engine (runGraphQuery)
+</code></pre>
+<h3>Building</h3>
+<pre><code class="language-bash">npm run build   # tsc -p tsconfig.json
+</code></pre>
+<p>Output is emitted to <code>dist/</code> (<code>dist/index.js</code> is the package entry point).</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Luke-Yong/dsh-plugin-knowledge-graph/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,185 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Jesse-njx/dsh-cowork</pre><button type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-cowork" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>READ + WRITE for office documents and Jupyter notebooks inside
+<a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> — and
+anywhere else your agent runs.</strong></p>
+<p>DSH Cowork adds first-class document handling to coding agents:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Read</th>
+<th>Write (v1)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>xlsx</strong> spreadsheets</td>
+<td>✅ bounded, cell-addressed windows</td>
+<td>✅ create + edit by cell ref</td>
+</tr>
+<tr>
+<td><strong>ipynb</strong> notebooks</td>
+<td>✅ cells + inline outputs</td>
+<td>✅ create + edit by cell index</td>
+</tr>
+<tr>
+<td><strong>pdf</strong></td>
+<td>✅ text windows (<code>pages</code>)</td>
+<td>— (v2: form-fill)</td>
+</tr>
+<tr>
+<td><strong>docx</strong></td>
+<td>✅ paragraphs + word count</td>
+<td>— (v2: generation)</td>
+</tr>
+<tr>
+<td><strong>pptx</strong></td>
+<td>✅ slides + shape ids</td>
+<td>— (v2: generation)</td>
+</tr>
+</tbody></table>
+<p><strong>中文版见 <a href="https://github.com/Jesse-njx/dsh-cowork/blob/main/README.zh.md">README.zh.md</a>.</strong></p>
+<h3>Why</h3>
+<p>DeepSeek Harness&#39;s built-in <code>read</code> is UTF-8 text only — it cannot open a
+spreadsheet, a PDF, a slide deck, or a notebook. Claude Code reads PDFs and
+notebooks natively; Codex has nothing. DSH Cowork closes that gap as an
+out-of-tree plugin (no fork, no PR needed — the ecosystem path
+CONTRIBUTING.md recommends).</p>
+<p>Two ideas make &quot;Cowork = READ + WRITE&quot; coherent instead of two separate
+tools:</p>
+<ol>
+<li><strong>Stable addresses.</strong> <code>doc_read</code> returns <em>cell refs</em> for xlsx (<code>A1</code>, <code>C12</code>)
+and <em>shape ids</em> for pptx — <code>doc_write</code> consumes them. Line numbers cannot
+address binary formats; addresses can.</li>
+<li><strong>Bounded windows, explicit truncation.</strong> Every read is capped
+(pages / rows / slides / cells / bytes). Silent truncation is the cardinal
+sin: a <code>&gt; Truncated:</code> notice always tells you the window was cut short.</li>
+</ol>
+<h3>Packages</h3>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>packages/core</code></td>
+<td>Pure TS, zero DSH deps: sniff → extract → build, windowing, safety caps</td>
+</tr>
+<tr>
+<td><code>packages/dsh</code></td>
+<td><strong>DSH bundle</strong>: <code>doc_read</code> / <code>doc_write</code> tools (install with <code>dsh plugin add</code>)</td>
+</tr>
+<tr>
+<td><code>packages/mcp</code></td>
+<td><strong>MCP server</strong> over stdio — for Codex, Claude Code, any MCP client</td>
+</tr>
+<tr>
+<td><code>packages/cli</code></td>
+<td><code>doc-read</code> / <code>doc-write</code> binaries + <code>SKILL.md</code> (the <code>pi</code> harness adapter)</td>
+</tr>
+<tr>
+<td><code>packages/chatnode-wechat</code></td>
+<td><strong>DSH bundle</strong>: chat with / monitor / approve your DSH agents from WeChat (iLink gateway + conversation node)</td>
+</tr>
+</tbody></table>
+<h3>Install into DeepSeek Harness</h3>
+<pre><code class="language-sh"># GitHub delivery (not published to npm)
+git clone https://github.com/Jesse-njx/dsh-cowork.git
+cd dsh-cowork
+pnpm install          # installs deps and builds all packages (prepare)
+dsh plugin --profile &lt;your-profile&gt; add ./packages/dsh
+</code></pre>
+<p>Then <code>doc_read</code> / <code>doc_write</code> are available to the model. (A live agent
+session also verifies: ask the model to <code>doc_read</code> an <code>.xlsx</code>.)</p>
+<p>Configure (all optional, sensible defaults):</p>
+<pre><code class="language-yaml"># in your profile&#39;s cordis.patch.yml, override the cowork-docs row
+- id: cowork-docs
+  name: &#39;@dsh-cowork/plugin&#39;
+  config:
+    maxInputBytes: 67108864      # 64 MiB
+    maxOutputBytes: 262144       # 256 KiB model-facing window
+    maxDecompressedBytes: 536870912  # zip-bomb guard (512 MiB)
+    maxZipEntries: 4096
+    maxPages: 20
+    maxSheetRows: 200
+    maxSheets: 1
+    maxSlides: 20
+    maxCells: 200
+</code></pre>
+<h3>Use from any agent (MCP)</h3>
+<pre><code class="language-sh"># Codex / Claude Code MCP config
+# { &quot;mcpServers&quot;: { &quot;cowork&quot;: { &quot;command&quot;: &quot;node&quot;, &quot;args&quot;: [&quot;&lt;repo&gt;/packages/mcp/lib/index.js&quot;], &quot;cwd&quot;: &quot;&lt;your working dir&gt;&quot; } } }
+</code></pre>
+<pre><code class="language-sh"># or the plain CLI
+doc-read report.xlsx --sheets Data --rows 50
+doc-write edit report.xlsx --spec edit-spec.json
+</code></pre>
+<h3>Safety model</h3>
+<ul>
+<li><strong>Zip bombs</strong>: entry-count + decompressed-size caps on every OOXML archive,
+checked before any codec expands bytes.</li>
+<li><strong>Macros</strong>: <code>.xlsm</code> / <code>.docm</code> / <code>.pptm</code> (anything with <code>vbaProject.bin</code>) are
+rejected outright — Cowork never reads or writes macro formats.</li>
+<li><strong>Read-only mode</strong>: in <code>read-only</code> sandbox mode, <code>doc_write</code> is hard-blocked
+while <code>doc_read</code> stays available.</li>
+<li><strong>Edit guards</strong>: <code>doc_write</code> edit refuses unless the file was read this
+session (<code>expected_version</code>), and optionally fails on content change
+(<code>expected_sha256</code>) — a hash-check on every edit.</li>
+<li><strong>No silent overwrite</strong>: creating over an existing file requires having read
+it (DSH) or <code>force</code> (CLI/MCP).</li>
+<li><strong>Atomic writes</strong>: temp file + rename, never a partial target.</li>
+<li><strong>Stale formulas</strong>: edited xlsx sheets get cached formula results cleared so
+Excel / LibreOffice recalculate on open (exceljs never recalculates).</li>
+<li><strong>Untrusted input</strong>: formulas, hidden sheets, and speaker notes are treated
+as data, surfaced with the extraction, never executed.</li>
+</ul>
+<h3>Architecture</h3>
+<pre><code>                   ┌──────────────────────────────────────────────┐
+                   │                @dsh-cowork/core              │
+                   │  sniff → readDocument / writeDocument → caps │
+                   └───────┬──────────────┬──────────────┬────────┘
+                           │              │              │
+                ┌──────────▼───┐  ┌───────▼──────┐  ┌────▼───────┐
+                │  packages/dsh│  │ packages/mcp │  │ packages/cli│
+                │ DSH bundle   │  │ MCP stdio    │  │ + SKILL.md │
+                └──────────────┘  └──────────────┘  └────────────┘
+</code></pre>
+<p>The DSH bundle routes reads through <code>ctx.fs</code> (bounded <code>readBytes</code>,
+sandbox-aware resolution, <code>fs/observed</code> events) and performs atomic byte
+writes itself because the fs service is text-only — re-observing the real
+post-write version so the built-in policy machinery stays coherent.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm -r build
+pnpm -r test      # core 35 + plugin 15 + cli 6 + mcp 7 tests
+</code></pre>
+<ul>
+<li>Fixtures: <code>node packages/core/scripts/make-fixtures.mjs</code> (needs macOS
+<code>cupsfilter</code> for the PDF; skip otherwise).</li>
+<li>Node 20+; tests run on Node&#39;s native TS type-stripping.</li>
+</ul>
+<h3>Roadmap</h3>
+<ul>
+<li><strong>v1 (this repo)</strong>: read all five formats; write xlsx + ipynb.</li>
+<li><strong>v2</strong>: ipynb write polish, docx/pptx <em>generation</em>, PDF form-fill
+(pdf-lib), PDF page-render-to-image for vision models, docx raw-OOXML edit.</li>
+<li><strong>Ship</strong>: <code>dsh-plugin</code> GitHub topic, awesome-list entry, Discussions post.</li>
+</ul>
+<h3>Contributing</h3>
+<p>This is a <code>dsh-plugin</code>-topic project. Issues, PRs, and Discussions welcome —
+and per <a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/CONTRIBUTING.md">deepseek-harness CONTRIBUTING.md</a>,
+associate your own plugins with the <code>dsh-plugin</code> topic too.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-cowork/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,145 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation</pre><button type="button" data-cmd="dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h3>Preview</h3>
+<blockquote>
+<p>The preview uses every second frame to keep the repository page lightweight. The plugin ships the full <strong>618-frame</strong> lossless animation.</p>
+</blockquote>
+<h3>Screenshots</h3>
+<p>Each screenshot is rendered from the committed <code>assets/whale-dive.webp</code>, so the gallery represents the frames users actually receive—not separate concept art.</p>
+<h3>Highlights</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Feature</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🌊</td>
+<td><strong>Seamless closed loop</strong></td>
+<td>A forward/return trajectory avoids the visible final-frame-to-first-frame snap.</td>
+</tr>
+<tr>
+<td>🐋</td>
+<td><strong>Recognizable black whale</strong></td>
+<td>A monochrome whale silhouette stays legible beside the compact turn-status label.</td>
+</tr>
+<tr>
+<td>📦</td>
+<td><strong>Self-contained bundle</strong></td>
+<td>Animated WebP and PNG fallback are embedded in the built client; no runtime URL or source-frame directory is required.</td>
+</tr>
+<tr>
+<td>♿</td>
+<td><strong>Reduced-motion aware</strong></td>
+<td><code>prefers-reduced-motion</code> switches the animation to the included static PNG.</td>
+</tr>
+<tr>
+<td>🔌</td>
+<td><strong>Persistent DSH plugin</strong></td>
+<td>The <code>dsh.bundle</code> manifest and <code>cordis.patch.yml</code> mount the client automatically in the Web profile.</td>
+</tr>
+</tbody></table>
+<h3>Install</h3>
+<p>Install directly from GitHub into the DSH Web profile:</p>
+<pre><code class="language-powershell">dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation
+</code></pre>
+<p>Then hard-refresh the DSH Web page. Restart DSH if the running profile has already cached its client bundle.</p>
+<h4>Uninstall</h4>
+<pre><code class="language-powershell">dsh plugin --profile web remove dsh-whale-animation
+</code></pre>
+<h3>Animation profile</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="right">Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Canvas</td>
+<td align="right">184 × 184 px</td>
+</tr>
+<tr>
+<td>Source frames</td>
+<td align="right">618</td>
+</tr>
+<tr>
+<td>Frame duration</td>
+<td align="right">17 ms</td>
+</tr>
+<tr>
+<td>Loop duration</td>
+<td align="right">10.506 s</td>
+</tr>
+<tr>
+<td>Encoding</td>
+<td align="right">Lossless animated WebP with alpha</td>
+</tr>
+<tr>
+<td>Reduced-motion asset</td>
+<td align="right">Transparent PNG</td>
+</tr>
+<tr>
+<td>Runtime asset requests</td>
+<td align="right">None</td>
+</tr>
+</tbody></table>
+<p>The final encoded WebP is decoded during validation—not merely checked at the source-frame level. The current closed-loop seam has an alpha-difference score of <code>0.01858</code>, and its 17 ms cadence produces no skipped source frames under the project’s 60 Hz sampling check.</p>
+<h3>How it works</h3>
+<pre><code class="language-mermaid">flowchart LR
+  A[Animated WebP + static PNG] --&gt; B[scripts/build-client.mjs]
+  B --&gt; C[Embedded data URLs]
+  C --&gt; D[DSH client bundle]
+  D --&gt; E[Turn-status ::after element]
+  F[prefers-reduced-motion] --&gt; D
+</code></pre>
+<p>The client adds a package-owned stylesheet to the DSH turn-status element. Both assets are embedded as data URLs in <code>lib/client.js</code>, so activation does not depend on the repository checkout after installation.</p>
+<h3>Development</h3>
+<p>Requirements: <strong>Node.js 20+</strong>. Python and Pillow are needed only when rebuilding the README artwork.</p>
+<pre><code class="language-powershell">node scripts/build-client.mjs
+node scripts/check.mjs
+python scripts/build-readme-assets.py
+python scripts/check-readme-assets.py
+</code></pre>
+<h4>Repository layout</h4>
+<pre><code class="language-text">assets/
+  whale-dive.webp        Full lossless animation
+  whale-static.png       Reduced-motion fallback
+docs/
+  hero.png               README hero artwork
+  preview.webp           Lightweight animated README preview
+  screenshots/           Breach, apex, and deep-dive frame gallery
+lib/
+  client.js              Prebuilt DSH browser client
+scripts/
+  build-client.mjs       Embeds source assets into the client
+  build-readme-assets.py Rebuilds repository artwork from the real animation
+  check-readme-assets.py Validates artwork timing, size, and README links
+  check.mjs              Validates registration, lifecycle, and embedded assets
+cordis.patch.yml         Persistent DSH bundle composition patch
+</code></pre>
+<p><code>lib/client.js</code> is committed intentionally: GitHub installs work without a package build or external asset fetch.</p>
+<h3>Compatibility</h3>
+<ul>
+<li>Targets the <strong>DeepSeek Harness Web UI</strong>.</li>
+<li>Requires a DSH version compatible with <code>@deepseek-ai/dsh-client-runtime ^0.1.0-rc.6</code>.</li>
+<li>Relies on the current turn-status CSS class pattern; a future DSH shell redesign may require a selector update.</li>
+</ul>
+<h3>Attribution</h3>
+<p>This project is independent and is not affiliated with or endorsed by DeepSeek. The animation is an original UI illustration designed to harmonize with DeepSeek Harness&#39; whale-themed status experience. See <a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/NOTICE.md">NOTICE.md</a> for visual-design and trademark details.</p>
+<h3>License</h3>
+<p>Released under the <a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/LICENSE">MIT License</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

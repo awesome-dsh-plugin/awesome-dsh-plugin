@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,249 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Jesse-njx/dsh-docker</pre><button type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-docker" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Typed, guarded container control for DSH — structured Docker access that is hard to destroy by accident.</p>
+<p><code>dsh-docker</code> is a plugin bundle for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. It wraps the <code>docker</code> CLI through DSH&#39;s <code>ctx.shell</code> seam and gives your agent a <strong>typed, project-aware, guarded</strong> surface for containers and compose stacks — every tool returns structured JSON (<code>await tools.docker_ps(...)</code> gets real objects, never scraped prose), destructive operations require <strong>human sign-off through the approval gate</strong>, and <code>stop dev-api</code> means <em>your</em> local compose service, not a coincidentally-named container on the machine.</p>
+<pre><code>┌──────────────┐   docker ps --format json    ┌──────────────┐
+│  agent tool  │ ───────────────────────────▶ │  ctx.shell   │ ──▶ docker CLI
+│  call        │                              │  (sandbox/   │
+└──────┬───────┘                              │   remote)    │
+       │ classify()                           └──────────────┘
+       ▼
+┌──────────────┐   destructive?  ┌──────────────────────┐
+│ pre-execute  │ ──────────────▶ │ approval gate         │  allowed-once → run
+│ policy       │  (guarded)      │ (ctx.approval,        │  rejected/unavailable
+└──────┬───────┘                 │  fails closed)        │  → refused
+       │ safe / token recorded   └──────────────────────┘
+       ▼
+┌──────────────┐   hard-destructive without a token? → refused (monotonic)
+│ ctx.tools    │
+│ .guard()     │   backstop: no later listener can undo a denial
+└──────────────┘
+</code></pre>
+<h3>Flagship demo — debug a failing integration test</h3>
+<p>Your agent runs a failing test against <code>docker-compose.yml</code>:</p>
+<pre><code>$ docker_ps            → { containers: [{ name: &quot;app-api-1&quot;, state: &quot;running&quot;, ... }] }
+$ docker_logs { container: &quot;app-api-1&quot;, tail: 200 }
+  → { lines: [...], truncated: true }        # capped pull never reads as complete
+$ docker_compose_ps   → { project: &quot;app&quot;, services: [{ name: &quot;db&quot;, state: &quot;running&quot; }] }
+</code></pre>
+<p>The agent <em>reads</em> freely. The moment it tries something destructive — <code>docker_rm -f</code> on the running API container, <code>docker_rmi</code> on an image a container still uses, <code>docker system prune -a</code>, or <code>docker compose down -v</code> — the call is paused and routed to the human approval gate:</p>
+<pre><code>⏸ docker_rmi &quot;app-api:latest&quot; — image in use by container app-api-1
+   [approve]  [reject]
+</code></pre>
+<p>No approval channel, or a denied request? The operation is <strong>refused</strong>. <code>execReadOnly</code> is on by default, so <code>docker_exec</code> without <code>write</code>/<code>interactive</code> never prompts, and a writeful exec is treated as destructive. And even if some other plugin&#39;s policy said &quot;allow&quot;, the monotonic guard still refuses the hard-destructive set unless this call carries the dsh-docker approval token.</p>
+<h3>Install</h3>
+<pre><code class="language-console"># From the npm registry once published, or straight from this repository:
+dsh plugin --profile web add @dsh-docker/bundle          # npm (when published)
+dsh plugin --profile web add github:Jesse-njx/dsh-docker  # or: straight from GitHub
+</code></pre>
+<p>Install into whatever profile your agents run under (<code>web</code> for the desktop UI, <code>headless</code> for CLI sessions). The bundle mounts the tools, the policy, the opt-in health context, and the web status renderer.</p>
+<h3>Tools</h3>
+<p>Every tool is a <code>defineTool</code> with typed parameters and a structured output schema — Code Mode sees <code>await tools.&lt;name&gt;(...)</code> returning the canonical JSON value, never rendered prose.</p>
+<h4>Containers</h4>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Output</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>docker_ps</code></td>
+<td><code>{ containers: [{ id, name, image, state, status, ports[], project?, service? }] }</code></td>
+<td><code>--all</code> flag; scoped to the detected compose project by default</td>
+</tr>
+<tr>
+<td><code>docker_logs</code></td>
+<td><code>{ lines: string[], truncated }</code></td>
+<td>bounded pull (<code>tail</code>, default 200, cap 5000); pulls <code>tail+1</code> so <code>truncated</code> is honest</td>
+</tr>
+<tr>
+<td><code>docker_inspect</code></td>
+<td>raw engine JSON (open object)</td>
+<td>the adapter — engine-native structure, validated</td>
+</tr>
+<tr>
+<td><code>docker_exec</code></td>
+<td><code>{ exitCode, stdout, stderr }</code></td>
+<td>read-only by default (no TTY); <code>write</code>/<code>interactive</code> reclassifies into the approval bucket</td>
+</tr>
+<tr>
+<td><code>docker_start</code> / <code>docker_stop</code> / <code>docker_restart</code></td>
+<td><code>{ affected: string[] }</code></td>
+<td>one ref, or the whole detected project with no ref</td>
+</tr>
+<tr>
+<td><code>docker_rm</code></td>
+<td><code>{ affected: string[] }</code></td>
+<td><strong>guarded</strong> when the target is running or <code>force</code> is set</td>
+</tr>
+</tbody></table>
+<h4>Images</h4>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Output</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>docker_images</code></td>
+<td><code>{ images: [{ id, repository, tag, size, inUse }] }</code></td>
+<td><code>inUse</code> from a <code>docker ps -a</code> cross-reference</td>
+</tr>
+<tr>
+<td><code>docker_rmi</code></td>
+<td><code>{ removed: string[] }</code></td>
+<td><strong>guarded</strong> when the image is in use</td>
+</tr>
+<tr>
+<td><code>docker_prune</code></td>
+<td><code>{ scope, all, volumes, ok }</code></td>
+<td><strong>guarded</strong> for <code>--all</code>, <code>--volumes</code>, or system scope</td>
+</tr>
+</tbody></table>
+<h4>Compose</h4>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Output</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>docker_compose_up</code></td>
+<td><code>{ project, services, detached }</code></td>
+<td>detached by default; optional <code>services[]</code></td>
+</tr>
+<tr>
+<td><code>docker_compose_down</code></td>
+<td><code>{ project, affected, volumes }</code></td>
+<td><strong>guarded</strong> when <code>volumes: true</code> (the <code>-v</code> flag)</td>
+</tr>
+<tr>
+<td><code>docker_compose_ps</code></td>
+<td><code>{ project, services: [{ name, id, state, status, ports }] }</code></td>
+<td>one read builds the health context</td>
+</tr>
+</tbody></table>
+<h3>Project-aware targeting</h3>
+<p>Every tool resolves the compose project once per call (a pure, unit-tested <code>ProjectResolver</code>):</p>
+<ol>
+<li>Walk up from the tool&#39;s working directory for the first <code>composeFiles</code> match (<code>docker-compose.yml</code>, <code>compose.yaml</code>, config-ordered).</li>
+<li>Derive the project name (directory basename, lowercased) and pass <code>-p &lt;project&gt; -f &lt;file&gt;</code> to every compose call; <code>docker_ps</code>/<code>start</code>/<code>stop</code> default filters scope to <code>--filter label=com.docker.compose.project=&lt;project&gt;</code>.</li>
+<li>Every tool accepts an explicit <code>project: string</code> override; with no compose file and no override, container-scoped tools operate globally but the project-aware behaviors are off.</li>
+</ol>
+<p>A bare container name resolves within the project first, falling back to a global match only when unambiguous. Ambiguous refs return an error listing candidates instead of guessing.</p>
+<h3>Guardrails</h3>
+<p>Two layers, both in the tools pipeline:</p>
+<ul>
+<li><strong><code>tools/pre-execute</code> policy</strong> — <code>classify(toolName, args, resolved)</code> (a pure function, unit-tested without a daemon) judges each call&#39;s intended effect. Guarded ops route a one-shot approval request through <code>ctx.approval</code> (<code>approval/request</code> waterfall); approval absent fails <strong>closed</strong> to <code>unavailable</code> ⇒ refused. A guarded op not covered by the configured <code>approval</code> globs is refused outright.</li>
+<li><strong><code>ctx.tools.guard()</code> backstop</strong> — a monotonic deny that a later listener cannot undo. Even if another plugin&#39;s pre-execute said &quot;allow&quot;, the guard refuses the hard-destructive set unless this call carries the dsh-docker approval token.</li>
+</ul>
+<p>Read-only <code>docker_exec</code> is free by default; <code>execReadOnly: false</code> flips that for operators who accept the risk.</p>
+<h3>Service-health context (opt-in)</h3>
+<pre><code class="language-yaml">plugins:
+  dsh-docker:
+    healthContext: { enabled: true, maxServices: 12 }
+</code></pre>
+<p>When enabled, each pre-step injects one compact line per detected compose service — <code>dev-api ▲up  dev-db ▲up  worker ▼exited(1)</code> — as durable appended context the <strong>next</strong> model request sees (not a wake-up). Built from a single <code>docker_compose_ps</code> read, TTL-cached, capped at <code>maxServices</code>, and skipped entirely when no compose project is detected.</p>
+<h3>Status renderer (web client)</h3>
+<p>The client half registers a replayable conversation node for <code>docker_ps</code> / <code>docker_compose_ps</code> / <code>docker_logs</code> output: one stable node per tool call (keyed by <code>callId</code>), a <strong>table collapsed by default</strong> and expandable on click, with a log pane whose <code>truncated</code> flag is surfaced so a capped pull never reads as complete. Replay-safe: the renderer consumes only the durable <code>tool/result</code> presentation metadata, never the execution-local value.</p>
+<h3>Config</h3>
+<pre><code class="language-yaml">plugins:
+  dsh-docker:
+    enabled: true
+    composeFiles: [docker-compose.yml, compose.yaml]
+    approval: [&quot;rmi:*&quot;, &quot;rm:*&quot;, &quot;prune:*&quot;, &quot;compose down -v&quot;, &quot;exec:*&quot;]
+    execReadOnly: true
+    timeoutMs: 30000
+    healthContext: { enabled: false, maxServices: 12 }
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>enabled</code></td>
+<td><code>true</code></td>
+<td>master switch</td>
+</tr>
+<tr>
+<td><code>composeFiles</code></td>
+<td><code>[docker-compose.yml, compose.yaml]</code></td>
+<td>config-ordered discovery list</td>
+</tr>
+<tr>
+<td><code>approval</code></td>
+<td><code>[&quot;rmi:*&quot;, &quot;rm:*&quot;, &quot;prune:*&quot;, &quot;compose down -v&quot;, &quot;exec:*&quot;]</code></td>
+<td>ops routed to the approval gate (<code>*</code> matches any args; <code>compose down -v</code> matches only volume-removing downs)</td>
+</tr>
+<tr>
+<td><code>execReadOnly</code></td>
+<td><code>true</code></td>
+<td><code>false</code> runs <code>docker_exec</code> ungated</td>
+</tr>
+<tr>
+<td><code>timeoutMs</code></td>
+<td><code>30000</code></td>
+<td>per docker invocation timeout</td>
+</tr>
+<tr>
+<td><code>healthContext.enabled</code></td>
+<td><code>false</code></td>
+<td>inject per-service health lines before each step</td>
+</tr>
+<tr>
+<td><code>healthContext.maxServices</code></td>
+<td><code>12</code></td>
+<td>cap on health lines (+ <code>N more</code> tail)</td>
+</tr>
+</tbody></table>
+<p>The same schema registers as the <code>dsh-docker</code> user-settings section, so a live edit reaches the very next tool call.</p>
+<h3>Non-goals (v0.1)</h3>
+<p>Docker contexts / remote-host management UI; building images from a Dockerfile with any DSL (raw <code>docker build</code> passthrough is fine — no wrapping); swarm / k8s; container runtime introspection beyond <code>docker inspect</code>; log streaming / follow; registry auth flows. Each is a v0.2+ question, not a config flag away.</p>
+<h3>Testing</h3>
+<ul>
+<li><strong>Unit (no daemon):</strong> arg-schema acceptance/rejection per tool; <code>ProjectResolver</code> fixtures (compose-file discovery, project-name derivation, ambiguous-ref handling); the <code>classify()</code> policy matrix — every destructive op asserts <code>guarded</code>, every safe op asserts <code>safe</code>, the <code>execReadOnly</code> toggle flips <code>docker_exec</code>; the approval-glob matcher.</li>
+<li><strong>Guard (no daemon):</strong> a mock approval gate that always denies — <code>rmi</code> in-use, <code>rm</code> running, <code>prune --all</code>, <code>compose down -v</code>, and writeful <code>exec</code> are <strong>refused</strong>; an approving mock — they proceed <strong>exactly once</strong>; a preempting &quot;allow&quot; from another listener is refused by the backstop.</li>
+<li><strong>Integration (feature-detected):</strong> probes for a live daemon (<code>docker version</code>) and, when present, <code>compose up</code>/<code>ps</code>/<code>down</code> a tiny alpine <code>sleep</code> stack with a mock approval gate — typed rows match reality and <code>down -v</code> requires approval. <strong>Skips cleanly</strong> (marked skipped, not failed) when no daemon is available.</li>
+</ul>
+<pre><code class="language-sh">pnpm install
+pnpm typecheck &amp;&amp; pnpm build &amp;&amp; pnpm test
+</code></pre>
+<h3>Model Experience</h3>
+<h4>Request context and condition</h4>
+<h5>What the model sees</h5>
+<p>The 14 tool schemas (names, descriptions, parameters) flow into system-prompt assembly through the tool registry, exactly like every other registered tool; there is no additional fixed prompt prose owned by this package. When <code>healthContext.enabled</code> is on and a compose project is detected in the agent&#39;s working directory, each pre-step injects a <code>source: { kind: &#39;plugin&#39;, plugin: &#39;dsh-docker&#39; }</code> user message:</p>
+<pre><code class="language-markdown">[dsh-docker] &lt;project&gt; services: dev-api ▲up  dev-db ▲up  worker ▼exited(1)
+</code></pre>
+<h5>Token effect</h5>
+<p>The tool schemas are fixed prompt tokens owned by the registry. The health line is conditional: bounded to <code>maxServices</code> lines plus a <code>+N more</code> tail, present only while the feature is enabled and a compose project is detected.</p>
+<h5>KV Cache effect</h5>
+<p>Append-only in the sense that each step appends a fresh health message that the next request consumes and discards; the message text is data-dependent (service states change), so a stable prefix is preserved but the tail invalidates reuse whenever a service state changes. Package-owned changes that can invalidate reuse: none at runtime — a reinstall/upgrade of the bundle changes the schemas, which is a normal dependency-change invalidation.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li><strong><code>docker_ps</code>/<code>docker_compose_ps</code> need the docker CLI to support <code>--format json</code></strong> (Docker ≥ 25 for <code>ps</code>, compose v2 for compose <code>ps</code>). Older CLIs surface a clear error rather than scraped text; the <code>docker inspect</code> batch is the adapter where the ps <code>Labels</code> field is absent.</li>
+<li><strong>Failed tool calls render no status table</strong> — <code>presentationMeta</code> is computed from successful canonical values only, so a failed <code>docker_ps</code> shows the standard error card, not a table. The durable log carries no canonical value by design.</li>
+<li><strong><code>docker_prune</code> cannot report what the engine reclaimed</strong> without scraping human prose; the canonical output carries the request and success, and the engine&#39;s reclaimed-space line lives in the rendered text only.</li>
+<li><strong><code>docker_exec --interactive</code> output may carry TTY framing</strong> (CRLF/ANSI); the canonical value returns it verbatim rather than laundering it.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-docker/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

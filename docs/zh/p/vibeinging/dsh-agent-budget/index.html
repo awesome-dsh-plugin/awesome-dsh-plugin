@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,181 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:vibeinging/dsh-agent-budget</pre><button type="button" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-agent-budget" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/README.zh.md">中文</a></p>
+<p><code>dsh-agent-budget</code> gives one live agent session, or its complete local descendant tree, a durable Token limit and absolute deadline. It reserves capacity before every attributed <code>llm/stream</code> provider attempt and replaces that estimate with provider-reported usage after the stream settles, so concurrent child agents cannot all spend the same remaining balance.</p>
+<p>The plugin is an out-of-tree DSH bundle for one Host process. A hard budget refuses new provider attempts before dispatch; it is not an exact billing system and does not forcibly cancel work already in flight.</p>
+<p>Decision record: <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/design/2026-08-09-agent-budget-admission.md">durable agent-tree token admission</a>.</p>
+<h3>What it provides</h3>
+<ul>
+<li>Durable <code>session</code> and local descendant-tree scopes, restored through the DSH Storage Domain.</li>
+<li>Soft accounting or hard admission with concurrency-safe local reservations.</li>
+<li>Absolute deadlines that survive restart, plus fail-closed recovery when dispatched usage is unknown.</li>
+<li>Direct human control through <code>/budget</code>; optional model-facing tools are available for intentional manual compositions.</li>
+<li>Output convergence that reduces <code>maxTokens</code> as a bounded account approaches exhaustion.</li>
+</ul>
+<h3>Install</h3>
+<p>The shipped <code>web</code> and <code>headless</code> profiles provide the Storage, Storage Domain, Token Meter, and command services this bundle requires. A custom profile must provide those services itself.</p>
+<h4>From a pinned GitHub commit</h4>
+<p>The repository is private and the package is not published to an npm registry. Git and pnpm <code>11.7.0</code> must already have GitHub credentials. Pin a reviewed commit instead of installing a moving branch; <code>-w</code> is required because a DSH profile is a pnpm workspace root:</p>
+<pre><code class="language-sh">dsh plugin --profile web add -w github:dsh-external/dsh-agent-budget#&lt;reviewed-commit&gt;
+</code></pre>
+<p>The repository commits its <code>lib/</code> runtime entries, so installation does not need permission to execute a dependency build script. Inspect the composed entries, then boot the profile:</p>
+<pre><code class="language-sh">dsh --profile web --dump-config
+dsh --profile web
+</code></pre>
+<h4>From a local checkout</h4>
+<p>From this repository root, link the checkout into a profile. The committed <code>lib/</code> directory must match <code>src/</code>:</p>
+<pre><code class="language-sh">dsh plugin --profile web add -w .
+dsh --profile web --dump-config
+dsh --profile web
+</code></pre>
+<p>Create and inspect the first tree-wide hard budget from the authenticated human command path:</p>
+<pre><code class="language-text">/budget set 3 tree hard 2h
+/budget
+</code></pre>
+<p>Token amounts use millions, so <code>3</code> means 3,000,000 Tokens. See the complete <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/command.md"><code>/budget</code> command reference</a> for additions and deadline extensions.</p>
+<p>Remove the bundle and its profile dependency with:</p>
+<pre><code class="language-sh">dsh plugin --profile web remove -w @deepseek-ai/dsh-agent-budget
+</code></pre>
+<h3>Bundle contents</h3>
+<p><a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a> loads the budget service and <code>/budget</code> command. The bundle disables model-facing budget tools and gives direct human control to <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/command.md"><code>@deepseek-ai/dsh-agent-budget/command</code></a>. It deliberately does not create a second shared invariant registry; manual compositions can mount the package&#39;s invariant companions against an existing registry. Its host profile must provide a Storage backend, <code>ctx.storageDomain</code>, <code>ctx.tokenMeter</code>, and the shared command service.</p>
+<h3>Manual composition</h3>
+<p>Use manual composition only when the bundle defaults are not appropriate. Load a Storage backend and <code>ctx.storageDomain</code> before the budget plugin. The JSON backend below is one local choice; another Storage Domain backend can replace it without changing this package. Add <code>@deepseek-ai/dsh-invariants</code> only when the host does not already provide <code>ctx.invariants</code>.</p>
+<pre><code class="language-yaml">- name: &#39;@deepseek-ai/dsh-storage&#39;
+- name: &#39;@deepseek-ai/dsh-storage-json&#39;
+  config:
+    root: &#39;./.dsh/state&#39;
+- name: &#39;@deepseek-ai/dsh-storage-domain&#39;
+  config:
+    backend: json
+- name: &#39;@deepseek-ai/dsh-token-meter&#39;
+- name: &#39;@deepseek-ai/dsh-invariants&#39;
+- name: &#39;@deepseek-ai/dsh-agent-budget&#39;
+  config:
+    fallbackMaxOutputTokens: 8192
+    guardedToolNames: [subagent, subagent_fork, workflow, ralph]
+    modelTools: true
+- name: &#39;@deepseek-ai/dsh-agent-budget/invariant&#39;
+</code></pre>
+<p><code>fallbackMaxOutputTokens</code> is required and must be a positive safe integer. For a loop-built budgeted request with no <code>maxTokens</code>, the plugin writes this ceiling into <code>agent/request</code>, making the amount reserved at <code>llm/stream</code> explicit and reconstructable in <code>request/header</code>. An attributed direct <code>llm/stream</code> call receives the same ceiling before provider resolution. The plugin does not guess a provider default or treat an unknown ceiling as zero.</p>
+<p><code>warnRatio</code> and <code>warnMaxOutputTokens</code> form one optional output-convergence tier; <code>criticalRatio</code> and <code>criticalMaxOutputTokens</code> form a stricter optional tier. A tier activates when remaining Tokens divided by the total Token limit falls strictly below its ratio. The active tier replaces <code>maxTokens</code> with the smaller of the request&#39;s current ceiling and the configured tier ceiling, so it never raises a caller&#39;s limit. Each tier is all-or-nothing, and when both exist the warning ratio and ceiling must both exceed the critical values. Deadline-only accounts are not clamped.</p>
+<p><code>guardedToolNames</code> lists model-facing tools that start resource-owning work. After a hard account becomes exhausted, expired, or uncertain, <code>tools/pre-execute</code> rejects those names before their bodies run. This protects the standard tool route; a trusted plugin calling a Workflow or Subagent service directly does not pass through the tool policy.</p>
+<p><code>modelTools</code> controls whether <code>set_agent_budget</code> and <code>get_agent_budget</code> are present in the model tool registry. It defaults to <code>true</code> for manual compositions that intentionally let a top-level agent handle a user&#39;s direct request to create a budget. Set it to <code>false</code> when a human command owns budget control. This package&#39;s bundle does so, which keeps balances and budget tool schemas out of model requests and their reusable prefix cache.</p>
+<p><code>managementCommandName</code> is optional and has no default. Set it only when the composition provides that exact lowercase human command; hard Token and deadline refusals then include command-specific recovery guidance. Without it, the service returns a truthful generic failure instead of naming a command that may not exist.</p>
+<h3>Budget semantics</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Scope</td>
+<td><code>session</code> charges only the bound root; <code>tree</code> also binds descendants announced later with <code>session.header.parentSession</code></td>
+</tr>
+<tr>
+<td>Token total</td>
+<td><code>inputTokens + outputTokens + cacheReadTokens + cacheWriteTokens</code>; <code>reasoningTokens</code> is already included in output and is not added again</td>
+</tr>
+<tr>
+<td>Deadline</td>
+<td><code>wallTimeMs</code> is converted once to an absolute <code>deadlineAt</code>; restart and reload do not extend it</td>
+</tr>
+<tr>
+<td>Soft</td>
+<td>Records reservations and usage but does not refuse work</td>
+</tr>
+<tr>
+<td>Hard</td>
+<td>Refuses a provider attempt when <code>spent + reserved + estimated input + max output</code> exceeds the limit, the deadline passed, or earlier dispatched usage is uncertain</td>
+</tr>
+<tr>
+<td>Missing usage</td>
+<td>Retains the reservation as <code>uncertain</code>; it is never settled as zero</td>
+</tr>
+<tr>
+<td>Crash recovery</td>
+<td>Any leftover <code>reserved</code> or <code>dispatched</code> attempt becomes <code>uncertain</code> when the domain reopens</td>
+</tr>
+<tr>
+<td>Creation recovery</td>
+<td>A failed root-binding write rolls back its new account; if both writes fail or the process stops between them, startup removes only the pristine unreferenced account residue</td>
+</tr>
+</tbody></table>
+<p>“Hard” means hard request admission, not an exact billing guarantee. Input is the provider-neutral estimate from <code>ctx.tokenMeter</code>; a provider can tokenize differently, and a dispatched request may incur usage that never reaches DSH. The plugin therefore reports <code>accuracy: reported | estimated | uncertain</code> instead of presenting a false exact percentage.</p>
+<p>Every account mutation uses one Storage Domain table record&#39;s serialized <code>update()</code> path. Concurrent local requests reevaluate the latest <code>spent + reserved</code> value, so only requests that fit can reserve. A separate durable <code>SessionId -&gt; BudgetId</code> table retains tree ownership across process restarts.</p>
+<p>Account creation reports both the binding failure and a failed account rollback. Startup deletes an unbound account only when it has never been referenced, reserved, settled, or otherwise revised; any non-pristine account without its root binding fails plugin initialization as corruption.</p>
+<h3>Service API</h3>
+<p><code>ctx.agentBudget</code> exposes the policy service. Ordinary integrations create and inspect accounts; integrations that own provider attempts use the explicit lifecycle methods.</p>
+<pre><code class="language-ts">const view = await ctx.agentBudget.create(agent, {
+  scope: &#39;tree&#39;,
+  enforcement: &#39;hard&#39;,
+  tokenLimit: 200_000,
+  wallTimeMs: 30 * 60_000,
+})
+
+ctx.agentBudget.get(agent)
+
+const reservation = await ctx.agentBudget.reserve({
+  sessionId: agent.id,
+  provider: &#39;deepseek-official&#39;,
+  model: &#39;deepseek-v4-flash&#39;,
+  purpose: &#39;conversation&#39;,
+  estimatedInputTokens: 12_000,
+  maxOutputTokens: 8_000,
+})
+
+await ctx.agentBudget.increase(agent, {
+  additionalTokens: 1_000_000,
+  additionalWallTimeMs: 15 * 60_000,
+})
+</code></pre>
+<p>An account cannot be replaced or reset. Only its exact root Agent can increase its Token limit or extend its deadline. Additional capacity can restore exhausted or expired admission, but it never clears uncertain usage. <code>markDispatched()</code>, <code>settle()</code>, <code>release()</code>, and <code>markUncertain()</code> are idempotent for an attempt that is no longer present, allowing cleanup paths to converge without double charging.</p>
+<h3>Development and verification</h3>
+<p><code>lib/</code> is the checked-in Git installation artifact. The project <code>.npmrc</code> selects the private <code>@deepseek-ai/*</code> scope; pnpm 11 reads its <code>${NPM_TOKEN}</code> authentication mapping from the trusted user-level <code>~/.npmrc</code>. Set <code>NPM_TOKEN</code>, run <code>pnpm install --ignore-scripts</code>, then run <code>pnpm run check</code>. The SDK packages are pinned to the reviewed <code>0.0.1-rc.2</code> set. Do not link a DSH source checkout into this repository. After changing <code>src/</code>, review the generated <code>lib/</code> diff and keep the runtime entries and declarations aligned.</p>
+<p>Run the deterministic Token policy eval without an API key:</p>
+<pre><code class="language-sh">pnpm run test:eval
+</code></pre>
+<p>The eval drives the public service against durable JSON storage. Its seven scenarios cover exact-limit admission, a one-Token overrun, concurrent reservations, one shared descendant-tree account, soft-limit continuation, fail-closed missing usage, and a root-only additive grant that reopens exhausted admission. <code>npm test</code> adds service, command, invariant, recovery, lifecycle, clamp, and Loader-composition coverage.</p>
+<h3>Model Experience</h3>
+<h4><code>set_agent_budget</code></h4>
+<h5>What the model sees</h5>
+<p>The tool creates the first budget for the calling top-level agent. It succeeds only inside that exact live agent&#39;s active driver and only when the current open turn contains a host-attested <code>{ kind: &#39;user&#39; }</code> message. Plugin-generated context, a child agent, a direct registry call, or a later model decision cannot grant itself more capacity. Existing accounts cannot be increased, replaced, or reset through the tool. The model supplies <code>scope</code>, <code>enforcement</code>, and at least one of <code>token_limit</code> or <code>wall_time_ms</code>; the result contains status, totals, remaining tokens when bounded, deadline when present, and accuracy.</p>
+<h6>Successful creation result</h6>
+<pre><code class="language-markdown">{&quot;active&quot;:true,&quot;budget_id&quot;:&quot;budget-…&quot;,&quot;root_session_id&quot;:&quot;main&quot;,&quot;scope&quot;:&quot;tree&quot;,&quot;enforcement&quot;:&quot;hard&quot;,&quot;token_limit&quot;:200000,&quot;spent_tokens&quot;:0,&quot;reserved_tokens&quot;:0,&quot;remaining_tokens&quot;:200000,&quot;status&quot;:&quot;active&quot;,&quot;accuracy&quot;:&quot;reported&quot;}
+</code></pre>
+<h5>Token effect</h5>
+<p>When <code>modelTools</code> is enabled, the stable schema is present on every request. Each call retains its small fixed-shape arguments and result in Session history. When it is disabled, this tool contributes no schema or call history.</p>
+<h5>KV Cache effect</h5>
+<p>Append-only tool calls and results follow the reusable request prefix. Balance changes do not rewrite earlier prompt content.</p>
+<h4><code>get_agent_budget</code></h4>
+<h5>What the model sees</h5>
+<p>The tool returns the budget bound to the exact calling agent, or <code>{ &quot;active&quot;: false }</code> when none exists. It is read-only and requires the same live-driver identity check so one agent cannot query another session by guessing an ID.</p>
+<h6>No-budget result</h6>
+<pre><code class="language-markdown">{&quot;active&quot;:false}
+</code></pre>
+<h5>Token effect</h5>
+<p>When <code>modelTools</code> is enabled, the stable schema is present on every request. Each query retains one compact status object in Session history. When it is disabled, this tool contributes no schema or call history.</p>
+<h5>KV Cache effect</h5>
+<p>Append-only tool calls and results follow the reusable request prefix. The plugin does not rewrite the system prompt on settlement; admission failures instead become terminal logged stream errors.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li>Accounting is atomic only inside one Harness process. Two processes must not write the same account until Storage Domain has a transactional or compare-and-set backend suitable for cross-process counters.</li>
+<li>Calls without <code>sessionId</code>, sessions that predate the plugin without a binding, and external child agents with no local Session are not attributed.</li>
+<li>Input tokens are estimated before dispatch. Exact provider count-token APIs and versioned price tables are deferred; monetary, organization-wide, periodic, and paid-tool budgets are not implemented.</li>
+<li>Standard Workflow/Subagent model tools are guarded, but trusted direct service calls can bypass that route. Strict tree admission needs provider-attempt IDs plus Subagent and Workflow pre-start seams.</li>
+<li>A deadline stops new work; it does not forcibly kill an already-dispatched provider call or an uncooperative tool.</li>
+<li>Existing accounts can only be increased or extended by their exact root Agent. Lower, replace, pause, reset, close, and uncertain-usage reconciliation are not implemented. Missing usage remains fail-closed for hard budgets.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

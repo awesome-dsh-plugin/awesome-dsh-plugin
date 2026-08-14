@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,46 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Meredith2328/dsh-sticky-note</pre><button type="button" data-cmd="dsh plugin --profile web add github:Meredith2328/dsh-sticky-note" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>左下角便签：随手记点子 / 感想 / TODO，实时保存到归档目录，清单 + 悬浮归档。</p>
+<p><img src="https://raw.githubusercontent.com/Meredith2328/dsh-sticky-note/main/assets/screenshot.png" alt="dsh-sticky-note 示意图"></p>
+<h3>✨ 功能</h3>
+<ul>
+<li>📝 <strong>随手记</strong>：编辑框工具栏上的便签按钮，点击弹出便签面板</li>
+<li>💾 <strong>自动保存</strong>：按设定间隔（10 秒 / 1 分钟 / 5 分钟）自动落盘，<code>Ctrl+S</code> 立即保存</li>
+<li>🏷️ <strong>三分类</strong>：点子 / 感想 / TODO，快捷键 <code>Ctrl+Shift+1/2/3</code> 切换</li>
+<li>📤 <strong>一键发送</strong>：便签内容直接发给当前对话（或追加到输入框）</li>
+<li>📋 <strong>历史便签</strong>：分组清单 + 展开收起，双击查看、单击预备发送</li>
+<li>✏️ <strong>可编辑</strong>：历史便签可二次编辑保存</li>
+<li>📌 <strong>选择保留</strong>：标记保留的便签不会被自动清除（针形图标）</li>
+<li>🧹 <strong>自动清除</strong>：过期未保留的文件自动删除（1 / 3 / 7 天或永久）</li>
+<li>🖥️ <strong>Markdown</strong>：编辑 ↔ 实时预览（<code>Ctrl+Shift+V</code>），格式化快捷键齐全</li>
+<li>⚙️ <strong>可配置</strong>：存储路径、保存间隔、清除周期、默认类别、发送方式</li>
+</ul>
+<h3>📦 安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-sticky-note
+</code></pre>
+<p>或本地目录：</p>
+<pre><code class="language-sh">dsh plugin --profile web add file:/path/to/dsh-sticky-note
+</code></pre>
+<p>安装后重启 DSH（Web 或 Desktop）。</p>
+<h3>🗂️ 存储结构</h3>
+<pre><code>&lt;root&gt;/
+├── 点子/    ← 以时间戳命名的 .md 文件
+├── 感想/
+├── TODO/
+└── 归档/    ← 归档的便签（前缀类别名）
+</code></pre>
+<p>默认根路径 <code>~/.dsh/sticky-notes</code>（<code>DSH_HOME</code> 下），可在设置页修改。</p>
+<h3>📄 License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Meredith2328/dsh-sticky-note/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

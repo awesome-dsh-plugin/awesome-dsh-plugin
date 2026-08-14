@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,92 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:EvilIrving/dsh-repro</pre><button type="button" data-cmd="dsh plugin --profile web add github:EvilIrving/dsh-repro" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Export a minimal, secret-scrubbed, replayable problem bundle for the DeepSeek
+Harness.</p>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p><code>/repro</code> reads the current session&#39;s complete canonical log through
+<code>sessionPersistence.inspect</code>, scrubs secrets value by value, collects failed
+commands and a <code>git diff</code>, and writes a <code>repro-&lt;sessionId&gt;.json</code> manifest.</p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add github:EvilIrving/dsh-repro
+</code></pre>
+<p>Or, from a checkout:</p>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add ./dsh-repro
+</code></pre>
+<p>The bundle patch inserts one plugin row (<code>dsh-repro</code>); it needs the
+<code>commands</code> and <code>sessionPersistence</code> services, which the base profile already
+mounts.</p>
+<h3>What the bundle contains</h3>
+<pre><code class="language-ts">interface ReproManifest {
+  formatVersion: number          // 1
+  header: SessionHeader          // cwd, lineage, delegation depth
+  events: SessionEvent[]         // complete, secret-scrubbed canonical log
+  failedCommands: string[]       // `name &lt;arguments&gt;` for each errored tool call
+  gitDiff: string                // empty when git or a repo is unavailable
+  versions: Record&lt;string, string&gt;
+}
+</code></pre>
+<p>The <code>events</code> array is the full canonical log (contiguous from seq 0), so it can
+later be replayed via <code>ctx.sessions.create(id, { seed })</code>; secrets are redacted,
+not dropped, which preserves replay balance.</p>
+<h3>Secret scrubbing (fail-closed)</h3>
+<p><code>redactValue</code> walks the detached JSON log and:</p>
+<ol>
+<li>redacts any object key matching the harness&#39;s credential pattern
+(<code>/KEY|PASSWORD|SECRET|TOKEN/i</code>) <strong>whole</strong>;</li>
+<li>redacts any string beginning with a known token prefix (<code>sk-</code>, <code>ghp_</code>,
+<code>xoxb-</code>, <code>Bearer </code>, …);</li>
+<li>redacts any high-entropy run (long base64/hex/token-shaped sequence).</li>
+</ol>
+<p>Both prefix and entropy thresholds are <code>Config</code>-driven. The default is
+fail-closed: a string that looks credential-shaped is redacted rather than
+passed through. This mirrors <code>session-telemetry</code>&#39;s waterfall <em>shape</em> (rewrite an
+outbound copy, never the canonical log) while supplying the value-level rules
+the telemetry seam deliberately ships without.</p>
+<h3>Config</h3>
+<pre><code class="language-ts">export interface Config {
+  tokenPrefixes: string[]
+  minHighEntropyLength: number  // default 20
+  gitDiffMaxBytes: number       // default 256 KiB
+  gitGraceMs: number            // default 5000
+}
+</code></pre>
+<h3>Dependencies</h3>
+<ul>
+<li><code>commands</code> and <code>sessionPersistence</code> are hard dependencies (<code>inject</code>).</li>
+<li><code>subprocess</code> is optional (<code>ctx.get</code>): <code>git diff</code> degrades to an empty string
+when it is absent or the cwd is not a repository.</li>
+</ul>
+<h3>Model Experience</h3>
+<h4>Request context and condition</h4>
+<h5>What the model sees</h5>
+<p>A single slash command <code>/repro [output directory]</code>. Its result is a one-line
+success message naming the written bundle path; the bundle contents are never
+injected into the model context.</p>
+<h5>Token effect</h5>
+<p>Zero-direct effect; the command result is a single short text line.</p>
+<h5>KV Cache effect</h5>
+<p>Append-only: the command lifecycle events (<code>command/run</code>, <code>command/done</code>) append
+to the log and never rewrite earlier tokens.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li><strong>Bundle write bypasses the sandboxed <code>ctx.fs</code> seam</strong> — v1 uses
+<code>node:fs/promises</code> directly; routing the write through <code>ctx.fs</code> (so a
+sandboxed deployment constrains the output path) is deferred.</li>
+<li><strong>Replay CLI is out of scope</strong> — <code>dsh repro run &lt;bundle&gt;</code> is a separate
+process-level seam (<code>boot/cmdline</code> + <code>cmdlineArgs</code>), not <code>/repro</code>; v1 only
+exports.</li>
+<li><strong>No oversized-artifact inlining</strong> — spill artifacts are referenced by
+locator, never inlined; any file-byte inlining would need a size policy.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/EvilIrving/dsh-repro/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

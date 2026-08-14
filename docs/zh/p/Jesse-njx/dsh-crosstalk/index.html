@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,87 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Jesse-njx/dsh-crosstalk</pre><button type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-crosstalk" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Cross-session messaging for DSH.</strong> Any session on the machine can list and message any other — Claude Code-style horizontal messaging, no daemon.</p>
+<p><code>dsh-crosstalk</code> is a DeepSeek Harness bundle. Every session running the bundle publishes a heartbeat to a local registry under <code>~/.dsh/crosstalk/</code> (files + atomic rename, no daemon — if two sessions can see the same home directory, they can message). Each session gets a stable name (<code>&lt;repo-or-cwd-slug&gt;-&lt;adjective&gt;</code>, e.g. <code>dsh-cowork-amber</code>) plus a durable ref id; any session can list the live ones and send a message that arrives in the target as a <strong>clearly-labeled turn</strong> — <code>[message from session dsh-cowork-amber (/Users/me/projects/dsh-cowork)]</code> — with the sender&#39;s name riding along, so replying is just <code>send_message</code> back.</p>
+<h3>Why this shape</h3>
+<p>DSH ships <code>send_message</code> and <code>list_agents</code>, but strictly hierarchical: a parent messages its own background subagents. Sibling sessions — two DSH sessions in different repos on the same machine — cannot see or message each other. Multi-session workflows (one session per repo, a coordinator farming work out, a routine pinging a live session, a chatnode human-in-the-loop peer) all need the missing primitive: horizontal messaging. dsh-crosstalk copies Claude Code&#39;s model — <code>ListAgents</code> shows every live local session; <code>SendMessage</code> addresses any of them by name — onto DSH&#39;s existing tool names, so the tools you already know gain a <code>peers</code> scope and peer addressing without a second vocabulary.</p>
+<h3>How it works</h3>
+<ol>
+<li><strong>Identity</strong> — at start, the session derives <code>&lt;slug&gt;-&lt;adjective&gt;</code> from its working directory plus a process-unique ref (<code>ct-…</code>). Same cwd, two sessions → different adjectives, distinct names; the ref disambiguates and is what inbox paths use.</li>
+<li><strong>Registry</strong> — one heartbeat JSON file per live session under <code>&lt;home&gt;/registry/&lt;ref&gt;.json</code> (<code>name</code>, <code>ref</code>, <code>pid</code>, <code>cwd</code>, <code>status</code>, <code>startedAt</code>, <code>heartbeatAt</code>, <code>uid</code>, <code>inbox</code>). Refreshed on a timer; entries with no beat for 2× the interval are shown as dead and garbage-collected (heartbeat file + orphan inbox removed).</li>
+<li><strong>Tools — extend, don&#39;t duplicate</strong>:<ul>
+<li><code>list_agents</code> gains <code>scope: peers</code> (other live sessions on this machine: name, status, cwd, last activity) and <code>scope: all</code> (descendants + peers). The stock children/descendants scopes are delegated to the captured stock definition.</li>
+<li><code>send_message</code> accepts a peer name or ref in <code>to</code> alongside subagent ids, with an optional <code>summary</code> (5–10 word recap shown in the target UI).</li>
+<li>The stock tools stay registered; this bundle shadows them <strong>per agent</strong> (scoped registrations are reversible Cordis effects), so unloading cleanly restores stock behavior exactly.</li>
+</ul>
+</li>
+<li><strong>Delivery</strong> — the message is one JSON file appended to the target&#39;s inbox (<code>&lt;home&gt;/inbox/&lt;ref&gt;/</code>), written atomically (temp file + rename), so a crash mid-write is never observed as a partial message. The target&#39;s watcher polls its inbox and injects each accepted message into the live session via <code>followup</code>: <strong>an idle target wakes for a turn; a busy target receives it at the next turn boundary</strong>. Delivery is best-effort — <code>list_agents</code> status is not a delivery promise.</li>
+<li><strong>Injection</strong> — the turn is labeled <code>[message from session &lt;name&gt; (&lt;cwd&gt;)]</code> and carries a <code>crosstalk</code> source (<code>form: relay</code>), so the append-only log records provenance by construction and the DSH UI renders it as a labeled relay card — never as user text. The system prompt tells the model these are requests from a peer agent, not instructions from the user.</li>
+</ol>
+<h3>Install</h3>
+<p>Add the bundle to every profile that should participate (each side of a conversation needs it). From the repo checkout:</p>
+<pre><code class="language-sh">git clone https://github.com/Jesse-njx/dsh-crosstalk
+cd dsh-crosstalk &amp;&amp; pnpm install &amp;&amp; pnpm build
+dsh plugin --profile web add /path/to/dsh-crosstalk
+dsh plugin --profile &lt;other-profile&gt; add /path/to/dsh-crosstalk
+</code></pre>
+<p>(Once the package is published to npm, <code>dsh plugin add @dsh-crosstalk/bundle</code> works the same way.)</p>
+<p>That&#39;s it. Two terminals (or two repos) running DSH with the bundle installed can now do:</p>
+<pre><code>You: list_agents peers
+      dsh-cowork-amber [idle] — /Users/me/projects/dsh-cowork
+      dsh-memory-azure  [running] — /Users/me/projects/dsh-memory
+You: send_message to=&quot;dsh-cowork-amber&quot; message=&quot;Round-trip check: can you list the files in your repo?&quot; summary=&quot;ping for round-trip&quot;
+</code></pre>
+<p>The peer session wakes (or picks it up at its next turn boundary), sees <code>[message from session …]</code>, replies with <code>send_message</code> to your name, and its reply wakes you the same way.</p>
+<h3>Config</h3>
+<p>Adding the bundle mounts the plugin automatically (its <code>cordis.patch.yml</code>
+inserts the <code>crosstalk</code> entry). To override any field, target that entry by id
+in your profile&#39;s <code>cordis.patch.yml</code> — do <strong>not</strong> insert a second <code>crosstalk</code>
+row (that is a duplicate-entry error):</p>
+<pre><code class="language-yaml"># in &lt;DSH_HOME&gt;/profiles/&lt;name&gt;/cordis.patch.yml
+- id: crosstalk
+  config:
+    homeDir: ~/.dsh/crosstalk   # registry root (default: $DSH_HOME/crosstalk or ~/.dsh/crosstalk)
+    cwd: /path/to/repo          # advertised working directory (default: process cwd)
+    name: my-custom-name        # explicit session name override (must match [a-z0-9][a-z0-9-]*)
+    accept: same-user           # v0.1 fixed: only sessions running as the same OS user
+    mode: open                  # open | allowlist
+    allowlist: []               # allowlist mode: exact session names or cwd globs (e.g. /Users/me/work/*)
+    notifyUser: true            # show inbound messages in the UI as labeled relay cards
+    heartbeatIntervalMs: 10000  # heartbeat refresh interval
+    inboxPollMs: 1000           # inbox poll interval (delivery latency bound)
+    staleAfterMs: 20000         # entry dead after (default: 2× heartbeatIntervalMs)
+    maxInboxAttempts: 30        # polls a message waits for a live agent before being dropped
+</code></pre>
+<p>(Unset fields fall back to their defaults; the loader replaces <code>config</code>
+wholesale, so list only the fields you want to change.)</p>
+<h4>Trust model</h4>
+<p>A message from another session is <strong>not</strong> an instruction from the user. Injected turns are framed as peer requests, and the system prompt instructs the agent to act on them only within its user&#39;s standing instructions and to surface anything side-effectful. Acceptance is <strong>same-user only</strong> (v0.1 fixed — the OS uid is compared on both send and receive), with an optional name/cwd <strong>allowlist</strong> for stricter inbound filtering. No network transport in v0.1: same machine, same user, period.</p>
+<h3>Layout under the hood</h3>
+<pre><code>~/.dsh/crosstalk/
+├── registry/&lt;ref&gt;.json     # one heartbeat per live session
+└── inbox/&lt;ref&gt;/&lt;msgId&gt;.json # one file per message, written atomically
+</code></pre>
+<p>Message files are consumed (deleted) only after a successful handoff to a live agent; corrupt files are quarantined (<code>*.corrupt</code>), temp files (<code>*.tmp.json</code>) are never read.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm typecheck &amp;&amp; pnpm build
+pnpm test          # 49 tests: identity, registry, message codec, inbox watcher,
+                   # tool decoration (real Cordis scope shadowing), two-session round-trip
+</code></pre>
+<h3>Roadmap</h3>
+<ul>
+<li><strong>v0.3</strong>: remote/cloud sessions (a network transport — not a config flag away), presence beyond same-user.</li>
+<li>Coordinator &quot;drive a worker session&quot; affordances (e.g. structured task replies) once the round-trip proves out.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-crosstalk/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,76 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:030611/dsh-telemetry-redactor</pre><button type="button" data-cmd="dsh plugin --profile web add github:030611/dsh-telemetry-redactor" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/030611/dsh-telemetry-redactor/actions/workflows/ci.yml"><img src="https://github.com/030611/dsh-telemetry-redactor/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://www.npmjs.com/package/dsh-telemetry-redactor"><img src="https://img.shields.io/npm/v/dsh-telemetry-redactor" alt="npm"></a>
+<a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/LICENSE"><img src="https://img.shields.io/github/license/030611/dsh-telemetry-redactor" alt="License"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
+<a href="https://whyihaveyou.github.io/dsh-suite/"><img src="https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe" alt="featured on dsh-suite"></a></p>
+<p>English | <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/README.zh.md">中文</a></p>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-telemetry-redactor/main/docs/social-preview.jpg" alt="DSH Telemetry Redactor social preview"></p>
+<p><strong>Redact supported credential patterns from outbound telemetry copies before configured backends receive them—without rewriting canonical session logs.</strong></p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-telemetry-redactor
+</code></pre>
+<blockquote>
+<p>Community-maintained and not an official DeepSeek project. Related trust-layer plugins: <a href="https://github.com/030611/dsh-verification-receipt">Verification Receipt</a>, <a href="https://github.com/030611/qiushi-dsh-evidence-audit">Evidence Audit</a>, and <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>.</p>
+</blockquote>
+<p><code>dsh-telemetry-redactor</code> is a minimal DeepSeek Harness Profile Bundle that redacts sensitive values from session telemetry before a backend receives them. It mounts on the official <code>session-telemetry/record</code> waterfall, calls <code>next()</code> so other deployment rules still compose, and returns a new recursively redacted record.</p>
+<p>The official telemetry coordinator deep-copies canonical session events before this waterfall and contains thrown rules per record. Therefore this plugin changes only the outbound copy: it never rewrites the canonical session log. In this document, <strong>fail-closed means only that this coordinator withholds one failing export copy</strong> and continues the agent loop. It is not a claim that every telemetry path or listener order is impossible to bypass.</p>
+<h3>What it redacts</h3>
+<ul>
+<li>Values under high-risk key names such as <code>authorization</code>, <code>cookie</code>, <code>credential</code>, <code>password</code>, <code>secret</code>, <code>token</code>, <code>apiKey</code>, <code>access_token</code>, <code>clientSecret</code>, and <code>privateKey</code>; recognized credential patterns in key names are replaced too.</li>
+<li>Bearer and Basic authorization values embedded in strings.</li>
+<li>Common credential forms including <code>sk-...</code>, GitHub tokens, Slack tokens, JWT-like triples, and <code>token=...</code> / <code>api_key: ...</code> assignments.</li>
+</ul>
+<p>Keys are tokenized before matching, so telemetry counters such as <code>inputTokens</code>, <code>output_tokens</code>, <code>tokenUsage</code>, <code>tokenCount</code>, and <code>contextTokenCount</code>, and ordinary fields such as <code>tokenizer</code>, remain intact. Redaction is a safety filter, not a proof that an arbitrary unknown secret format is absent. The exact supported and unsupported cases are in <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/SECRET-MATRIX.md">SECRET-MATRIX.md</a>; see <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/SECURITY.md">SECURITY.md</a> for the trust boundary.</p>
+<p>The listener is prepended so it normally wraps deployment rules mounted before or after it and redacts their final output. A deliberately prepended outer listener can still add content after this plugin; review the complete waterfall listener set in security-sensitive deployments.</p>
+<h3>Install</h3>
+<p>Install the public package into the selected DSH profile, then inspect the resolved configuration:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-telemetry-redactor
+dsh --profile web --dump-config
+</code></pre>
+<p>The dump must contain the inserted <code>telemetry-redactor</code> row. The bundle does not add, replace, or enable a telemetry backend; it only protects records handled by whatever backend the deployment already selected.</p>
+<h3>Configuration</h3>
+<p>The only option is <code>replacement</code>, which defaults to <code>[REDACTED]</code>. It must contain 1 to 128 characters and must not itself match a supported credential pattern; invalid values fail loudly when the Cordis plugin fiber is awaited.</p>
+<pre><code class="language-yaml">- id: telemetry-redactor
+  config:
+    replacement: &#39;[TELEMETRY-REDACTED]&#39;
+</code></pre>
+<p>The key and pattern rules are fixed security behavior and cannot be disabled through configuration.</p>
+<h3>Verification</h3>
+<pre><code class="language-sh">pnpm run typecheck
+pnpm test
+pnpm run build
+pnpm run test:smoke
+pnpm run test:performance
+pnpm run test:official-head
+pnpm run test:official-patch
+pnpm run test:packed:clean-env
+</code></pre>
+<p>The tests include a real Cordis Loader composition with the <code>SessionTelemetryCoordinator</code>: the backend receives the replacement while the authoritative session event retains the fixture secret, and an over-deep record is withheld without escaping the capture handler. Release smokes use the packaged frozen fixture for official commit <code>47f943859bef60e4160492346772ded9b24f765a</code>: it pins the reviewed source hashes, exact published runtime versions and runtime-file hashes, then verifies the required Cordis/session/LLM/coordinator API surface before composing it with the built or tarball-installed plugin. <code>test:official-patch</code> similarly pins the reviewed Include source hash before applying <code>cordis.patch.yml</code>. No environment variable or installed official checkout is required.</p>
+<h3>Model Experience</h3>
+<p>None. The plugin observes an outbound telemetry copy after session logging and contributes no prompt text, tool schema, message, or provider request.</p>
+<h5>KV Cache effect</h5>
+<p>None; no model request changes.</p>
+<h3>Known limitations</h3>
+<ul>
+<li>Unknown secret formats that have neither a sensitive key nor a recognized string pattern may pass through. Add deterministic coverage before extending the fixed patterns.</li>
+<li>Accessor properties and non-plain objects are rejected rather than read or silently converted. Enumerable JSON data in arrays, ordinary objects, and null-prototype objects is supported; non-enumerable fields are outside the telemetry contract.</li>
+<li>A key-name match redacts the complete value. This favors safety over retaining structure beneath fields named as credentials.</li>
+<li>Redaction occurs synchronously on the telemetry capture path. The implementation is recursive and bounded to 64 nested containers; very large but shallow records still cost linear CPU time.</li>
+<li>A Proxy can run or throw from reflection traps before the plugin can inspect its contents. The official coordinator&#39;s own <code>structuredClone</code> normally rejects a Proxy before this waterfall; direct third-party dispatch is not a supported hostile-object sandbox.</li>
+<li><code>dsh.plugin.json</code> is supplemental community metadata. DSH installation is controlled by <code>package.json</code>&#39;s <code>dsh.bundle</code> field and <code>cordis.patch.yml</code>.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

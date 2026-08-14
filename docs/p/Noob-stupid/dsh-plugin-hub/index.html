@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,109 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub</pre><button type="button" data-cmd="dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h2>DSH 插件中心（dsh-plugin-hub）</h2>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p>给 DeepSeek Harness（DSH）Web 界面加上<strong>插件管理面板</strong>：一键启用/停用已安装插件，
+并直接在 <strong>GitHub 上浏览 dsh-plugin 插件项目</strong>，一键添加并启用。</p>
+<ul>
+<li>宿主端：环回 HTTP 路由（state / toggle / search / repo / install），直接读写
+profile 用户补丁层 <code>cordis.patch.yml</code>，由 DSH 的 HMR 自动生效；</li>
+<li>浏览器端：设置 → 插件 → <strong>插件管理</strong> tab（开关列表 + GitHub 插件市场）；</li>
+<li>插件市场走<strong>浏览器直连 GitHub</strong>（你的浏览器能打开 GitHub，市场就能用；
+打不开时自动回退到服务端通道）。</li>
+</ul>
+<h3>一键部署</h3>
+<h4>方式一：官方命令（推荐）</h4>
+<p>插件声明了 <code>dsh.bundle</code> 官方清单，一条命令装好并自动启用：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub
+</code></pre>
+<p>然后重启 dsh 服务 → 刷新页面 → 设置 → 插件 → 插件管理。</p>
+<h4>方式二：部署脚本（网络受限时的兜底）</h4>
+<p>Windows（PowerShell）：</p>
+<pre><code class="language-powershell">git clone https://github.com/Noob-stupid/dsh-plugin-hub &quot;$env:TEMP\dsh-plugin-console&quot; 2&gt;$null; &amp; &quot;$env:TEMP\dsh-plugin-console\deploy.ps1&quot;
+</code></pre>
+<p>Linux / macOS：</p>
+<pre><code class="language-bash">git clone https://github.com/Noob-stupid/dsh-plugin-hub /tmp/dsh-plugin-console 2&gt;/dev/null; bash /tmp/dsh-plugin-console/deploy.sh
+</code></pre>
+<p>脚本会做两件事：把插件包拷进 <code>$DSH_HOME/profiles/&lt;profile&gt;/node_modules/</code>，
+并在 <code>cordis.patch.yml</code> 幂等追加启用条目。完成后：</p>
+<ol>
+<li>重启 dsh 服务（宿主代码变更需要重启进程；命令行方式重启进程，桌面客户端退出重开）；</li>
+<li>刷新页面 → 设置 → 插件 → <strong>插件管理</strong>。</li>
+</ol>
+<p>要求：DSH ≥ 0.1.0-rc.6（web profile，含 <code>dsh-client-modules</code> / <code>dsh-host-plugin-inventory</code>）。</p>
+<h3>功能</h3>
+<h4>已安装插件（一键开关 + 详情）</h4>
+<ul>
+<li>列出全部插件条目（名称、加载状态、启用状态）；</li>
+<li>点「停用」= 在用户补丁层写入 <code>- id: X</code> + <code>disabled: true</code>，HMR 立即生效；</li>
+<li>点「启用」= 移除该停用条目；bundle 层本就停用的行用 <code>disabled: false</code> 覆盖；</li>
+<li>打标「补丁停用 / 补丁强制启用」区分用户补丁状态；</li>
+<li><strong>基础设施保护</strong>：host 传输/热加载/存储/设置链上的插件（timer、hmr、webserver 等
+70+ 行）标记「受保护」，禁止开关——误停用会破坏热加载本身；</li>
+<li><strong>详情面板</strong>：每个插件可点「详情」，展开简介、版本、仓库/主页链接与 README
+摘要（读取插件包自带的 README，说明它的作用）。</li>
+</ul>
+<h4>插件市场（GitHub）</h4>
+<ul>
+<li>默认搜索 <code>dsh-plugin</code>（与 GitHub 网页搜索 <code>https://github.com/search?q=dsh-plugin&amp;type=repositories</code> 一致）；</li>
+<li>查看仓库的 npm 包名、DSH 插件特征提示与 <strong>README 摘要</strong>（浏览器直连 GitHub，说明插件作用）；</li>
+<li>「添加并启用」= npm 安装该包到 profile（registry 失败自动回退 <code>github:owner/repo</code>）<ul>
+<li>写入启用条目，HMR 生效。</li>
+</ul>
+</li>
+</ul>
+<h3>原理</h3>
+<p>DSH 的 web profile 由 bundle 补丁层 + 用户补丁层（<code>$DSH_HOME/profiles/web/cordis.patch.yml</code>）
+组合而成，补丁是<strong>逐键覆盖</strong>语义。插件开关只是往用户补丁层追加/移除两行 YAML：</p>
+<pre><code class="language-yaml">- id: 插件条目id
+  disabled: true
+</code></pre>
+<p>配置文件监视器（HMR）会在保存后 1 秒内重组合，无需重启——除宿主代码本身变更外。</p>
+<h3>兼容性策略</h3>
+<ul>
+<li>当前支持 <strong>DSH 0.1.0 系列</strong>（<code>0.1.0-rc.6</code> 及同系列版本）。</li>
+<li>面板会读取运行中的 <code>@deepseek-ai/dsh-web-app</code> 版本：官方发布破坏性升级
+（0.2 / 1.0 等）后，面板顶部会显示兼容性警告并给出本仓库地址，而不是默默失效。</li>
+<li>官方破坏性更新可能改动的接口：补丁层语义、<code>webServer.register</code>、
+加载器条目结构、<code>dsh.client</code> bundle 格式、<code>settings.plugins.tab</code> 插槽。
+届时随官方版本更新本仓库即可（依赖面已收窄到上述几个点）。</li>
+<li>部署脚本不校验版本、直接安装；面板里的警告是权威提示。</li>
+</ul>
+<h3>项目结构</h3>
+<pre><code>lib/index.js       宿主端插件（/plugin-console/* 路由 + 补丁读写 + npm 安装）
+lib/client.js      浏览器端 bundle（ModuleLoader 格式，设置页 tab）
+deploy.ps1 / deploy.sh   一键部署脚本（Windows / Linux·macOS）
+test-harness.mjs   逻辑自检（state/toggle/校验/环回保护；搜索视网络环境 SKIP）
+</code></pre>
+<h3>安全说明</h3>
+<ul>
+<li>全部路由仅允许环回地址访问；</li>
+<li>GitHub 元数据只用于发现公开插件，npm 安装走 registry 的完整 TLS 校验；</li>
+<li>插件市场搜索在浏览器内直连 GitHub，不经过服务端。</li>
+</ul>
+<h3>帮助 / Help</h3>
+<p>遇到问题先看这里；仍有疑问请到 <a href="https://github.com/Noob-stupid/dsh-plugin-hub/issues">Issues</a> 提问。</p>
+<ul>
+<li><strong>面板没出现</strong>：重启 dsh 服务 → 刷新页面 → 设置 → 插件 → 插件管理。</li>
+<li><strong>点开关没反应</strong>：基础设施行带&quot;受保护&quot;标签（禁止开关，这是保护机制）；普通插件开关经
+HMR 生效，约 1-3 秒，可点刷新查看。</li>
+<li><strong>顶部出现兼容性警告</strong>：官方发布了破坏性更新，请到本仓库获取适配版本（见兼容性策略）。</li>
+<li><strong>市场搜索没结果/报错</strong>：市场走浏览器直连 GitHub（与浏览器可用性一致），失败自动回退
+服务端通道；网络黑洞期请稍后重试。</li>
+<li><strong>安装失败</strong>：确认仓库有 package.json 且包名已发布到 npm；npm 装不了的会回退
+<code>github:owner/repo</code> 安装（需要 git）。</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Noob-stupid/dsh-plugin-hub/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,143 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zhaoolee/notes</pre><button type="button" data-cmd="dsh plugin --profile web add github:zhaoolee/notes" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/aab7c89dace491a0c90f98d04f53ab503e755968249ea9a89521f56b69eedeac.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/e99a408cc01fdffd81fca6dcafc4152b171f0be7d7003032338443197f9e23da.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/fdf4b92e91f316425ce457400a9219fe91afbd8d87668c32a2c488579f2ac116.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>支持手机版</th>
+<th>一键发送公众号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/a1cc07be6396cb67288b2cebacc26b6746aa0409d976f230b762fcc467706ccc.gif" alt=""></td>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/ef2ef8e599f5afb747e1c78f8bbb38bc4ce8209070cb699552607507dac63b6b.gif" alt=""></td>
+</tr>
+</tbody></table>
+<ul>
+<li>一个锤子便签风格的导出器，预览与图片导出支持<strong>暖白纸感</strong>、<strong>深夜便签</strong>、<strong>iPhone 备忘录深浅模式</strong>和 <strong>Bear 极简排版</strong>。</li>
+<li>可用来分享与openclaw的对话记录。</li>
+<li>完美复刻锤子便签网页版和PC版，支持多便签，分类存储。</li>
+<li>支持Docker一键私有化部署</li>
+<li>纯WEB应用，无需安装任何App，打开即用</li>
+<li>支持PC端和手机版，多端数据同步，支持公网部署</li>
+<li>支持图片插入。</li>
+<li>支持一键粘贴到公众号助手。</li>
+<li>支持直接导出便签为图片，或复制为markdown格式进行分享。</li>
+<li>自带浏览器持久化，关闭页面也不会丢失数据。</li>
+<li>开源免费，可私有化部署。</li>
+<li>工匠精神沁入AI，可以通过AI Skill直接调用工具，生成便签。</li>
+<li>支持自定义底部标识（点击即可编辑）</li>
+<li>API原生封装支持Hermes Agent，OpenClaw直接通过skill驱动管理便签</li>
+<li>支持 DeepSeek Harness（DSH），让智能体将对话导出为锤子便签。</li>
+<li>支持接入DeepSeek润色书写内容，语法标点检查，重点加粗，复杂概念通俗化释义。</li>
+<li>支持一键下载包含图片的Markdown资源包</li>
+<li>支持下载为html离线查看</li>
+</ul>
+<h3>通过DSH调用</h3>
+<pre><code>dsh plugin --profile web add @zhaoolee/dsh-notes
+</code></pre>
+<p>安装后请重启目标 profile，使插件生效。重启后，在 DeepSeek Harness 对话中说：<strong>把我们的对话导出成便签</strong>， 智能体会自动整理当前对话并调用插件生成便签。</p>
+<table>
+<thead>
+<tr>
+<th>Deepseek Harness 生成分享便签</th>
+<th>导出效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/b66a25f62ae0f1ab7f0ef0f71540594ac5c2a4c57b63bbfa4e693693fafb61dc.png" alt=""></td>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/def783d53d1c75b1e8f74ff29c4bd4b460105d1c5c7453aa8c50615f8f92c86a.png" alt=""></td>
+</tr>
+</tbody></table>
+<h3>通过skill调用</h3>
+<p>clawhub地址 <a href="https://clawhub.ai/zhaoolee/notes-export-api">https://clawhub.ai/zhaoolee/notes-export-api</a></p>
+<pre><code>从clawhub安装 notes-export-api这个 skill,
+联网获取最近一周 AI 相关的新闻，将新闻转化为 markdown 生成便签图片，把便签图片绝对路径返回给我，把图片往“下载”文件夹复制一份
+</code></pre>
+<h3>支持自定义底部品牌标识(点击就能改)</h3>
+<p>只要你喜欢，可以把底部的「锤子便签」改成「凿子便签」或「榔头便签」</p>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/e8549f76a4254c998d4b8aa2eb5be0bef5ecfcf3ddd56ee119cb159f993a3d67.png" alt=""></p>
+<h3>支持下载文章，包含网页，markdown以及管理的图片资源</h3>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/0c60fb3e65140f312596ea29be241881ffa7a67d50bcda49783117a8487d5fad.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/6cfa5f69414ba904b1211b9fa1147209967c6010a6a69b4c8567a7ba90fdbfff.gif" alt=""></p>
+<h3>支持接入DeepSeek，修正语法错误，重点加粗，通俗化润色</h3>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/44a5d5ab4aad2f44f713be9d06275c7bf8a8c73f22c124af7675bfbe81d17adb.png" alt=""></p>
+<h3>零配置，复制即可将权限导入hermes agent</h3>
+<p>登陆后，复制一行专属链接，粘贴给Hermes Agent或OpenClaw，即可获取包含登身份认证的skill包，实现人机协同</p>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/c7cacf577167ab7ed8ca053b1bc0f68486959ba0dd2e662e8182cee37ed5283b.png" alt=""></p>
+<h3>支持多用户隔离</h3>
+<p>可以给AI分配一个账号，人类分配一个账号，数据严格隔离</p>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/0c079169e397b53644b312e54561db9c1da8477806ff290fa36eb7bfb7701178.png" alt=""></p>
+<h3>支持一键粘贴到公众号助手</h3>
+<p>在手机的网页写完，直接一键粘贴到公众号即可发送，文本格式和图片，统统自动处理好！</p>
+<h3>支持子公司和各类知名主题</h3>
+<table>
+<thead>
+<tr>
+<th>子公司主题</th>
+<th>母公司主题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/526e1a90ca99914fdd811d22c53202e5c22c18c103b926baaab709728abac20e.png" alt=""></td>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/23b514e3546014b65d00b7b0b655c3350cd4546a462e152538021010a750822e.png" alt=""></td>
+</tr>
+</tbody></table>
+<h3>网页版</h3>
+<table>
+<thead>
+<tr>
+<th>暖白纸感</th>
+<th>深夜便签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/9182e3af534b27a1daac8cb9d301abe6935214ded96539df96b58727830a22bb.png" alt=""></td>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/07b3426e6f163673cd4e0a1ebaf7e88f798aafcb795b7cb87dafce4643ba766b.png" alt=""></td>
+</tr>
+<tr>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/28d864deb17cb0ec9d9a7740392ca8bed1e71d3dabee8cc7cbb821d17f74176c.png" alt=""></td>
+<td><img src="https://raw.githubusercontent.com/zhaoolee/notes/main/README.assets/53da5ab92d9aaecb9d246124fd6db1592f528b3b5c1793b9c1bbdcec7beafddb.png" alt=""></td>
+</tr>
+</tbody></table>
+<h3>Skill 服务地址</h3>
+<p>便签管理和 PNG 导出统一使用 <code>NOTES_API_BASE_URL</code>，可写入
+<code>skills/notes-export-api/.env</code>，或通过 <code>--base-url</code> 传入：</p>
+<pre><code class="language-dotenv">NOTES_API_BASE_URL=http://127.0.0.1:18080
+</code></pre>
+<p>认证及完整配置见 <a href="https://github.com/zhaoolee/notes/blob/main/skills/notes-export-api/SKILL.md"><code>skills/notes-export-api/SKILL.md</code></a>。</p>
+<h3>使用 Docker Hub 镜像部署</h3>
+<p>单镜像同时包含 Web 前端和后端服务，便签管理、图片导入和 PNG 导出均可在本地
+运行。公众号复制和 AI 等可选功能需另行配置相应服务。</p>
+<p>需要登录、多端同步或 Skill 工作区管理时，先复制 <code>.env.example</code>，并配置
+<code>SUPERADMIN</code>、<code>SUPERADMINPASSWORD</code> 和高熵 <code>SESSION_SECRET</code>：</p>
+<pre><code class="language-bash">cp .env.example .env
+mkdir -p ./storage/images ./storage/data
+
+docker run -d \
+  --restart unless-stopped \
+  --name notes \
+  -p 127.0.0.1:18080:3001 \
+  --env-file .env \
+  -v &quot;$(pwd)/storage/images:/app/storage/images&quot; \
+  -v &quot;$(pwd)/storage/data:/app/storage/data&quot; \
+  zhaoolee/notes:latest
+</code></pre>
+<p>启动后访问 <code>http://127.0.0.1:18080</code>。<code>storage/images</code> 保存图片和导出的 PNG，
+<code>storage/data</code> 保存账号与云端工作区，两者都应持久化和备份。仅使用匿名编辑与导出
+时可省略 <code>--env-file .env</code>；需要局域网访问时可将端口映射改为
+<code>-p 18080:3001</code>，公网部署应使用 HTTPS 反向代理。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zhaoolee/notes/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

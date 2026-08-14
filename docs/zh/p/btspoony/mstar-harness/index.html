@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,396 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:btspoony/mstar-harness</pre><button type="button" data-cmd="dsh plugin --profile web add github:btspoony/mstar-harness" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h2><a href="https://github.com/btspoony/mstar-harness">Morning Star</a></h2>
+<p>Harness Workflow Engine · Agent Plugin</p>
+<p>English / <a href="https://github.com/btspoony/mstar-harness/blob/main/README_CN.md">中文</a></p>
+<p>GitHub · Issues</p>
+<p><a href="https://github.com/btspoony/mstar-harness/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/btspoony/mstar-harness/ci.yml?branch=main&style=flat-square&label=CI&labelColor=black" alt="CI"></a>
+<a href="https://github.com/btspoony/mstar-harness/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square" alt="License"></a>
+<a href="https://github.com/btspoony/mstar-harness/releases"><img src="https://img.shields.io/github/v/release/btspoony/mstar-harness?include_prereleases&sort=semver&label=version&style=flat-square&labelColor=black&color=c4f042" alt="Version"></a>
+<a href="https://github.com/btspoony/mstar-harness/commits/main"><img src="https://img.shields.io/github/last-commit/btspoony/mstar-harness?color=c4f042&labelColor=black&style=flat-square" alt="Last commit"></a>
+<a href="https://www.npmjs.com/package/@mstar-harness/cli"><img src="https://img.shields.io/npm/v/@mstar-harness/cli?style=flat-square&label=cli&labelColor=black&color=c4f042" alt="npm cli"></a>
+<a href="https://dshfind.com/zh/plugins"><img src="https://img.shields.io/badge/DSHFIND-plugins-c4f042?style=flat-square&labelColor=black" alt="DSHFIND"></a></p>
+<p><strong>Morning Star</strong> is an Agent Plugin for harness engineering workflows: a TypeScript <strong>Harness Workflow Engine</strong> (<code>@mstar-harness/engine</code>) enforces deterministic workflow gates, while <code>mstar-*</code> judgment skills drive multi-agent code delivery.</p>
+<ul>
+<li><strong>Deterministic gates, enforced by a TS engine</strong> — path/status/lease/dispatch/sdd/iteration/lint gates run in <code>@mstar-harness/engine</code>, not as prompt suggestions</li>
+<li><strong>Judgment stays in <code>mstar-*</code> skills</strong> — skills remain the single source of truth (SSOT) for roles, gates, and workflow judgment</li>
+<li><strong>One engine across hosts</strong> — the same engine + skills power dsh (DeepSeek Harness), omp, OpenCode, Cursor, Kimi Code, ZCode, and Codex</li>
+<li><strong>Agent Plugin packaging</strong> — one-command install; portable across any Agent Plugins v1.0.0 client</li>
+<li><strong>Recommended host</strong> (best → usable): <strong>dsh = omp ≥ OpenCode ≥ Cursor &gt; Kimi = ZCode &gt; Codex</strong></li>
+</ul>
+<p><strong>What ships</strong></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Harness Workflow Engine</td>
+<td><code>@mstar-harness/engine</code> — TS enforcement of deterministic workflow gates</td>
+</tr>
+<tr>
+<td>mstar CLI</td>
+<td><code>@mstar-harness/cli</code> — installer bootstrap + <code>mstar</code> workflow verbs</td>
+</tr>
+<tr>
+<td><code>mstar-*</code> skills</td>
+<td>Role, gate, and workflow judgment (single source of truth)</td>
+</tr>
+<tr>
+<td>Host adapters</td>
+<td>dsh, omp, OpenCode, Cursor, Kimi Code, ZCode, Codex</td>
+</tr>
+</tbody></table>
+<p>Release notes: <a href="https://github.com/btspoony/mstar-harness/blob/main/CHANGELOG.md">CHANGELOG.md</a> / <a href="https://github.com/btspoony/mstar-harness/blob/main/CHANGELOG_CN.md">CHANGELOG_CN.md</a>.</p>
+<h3>Install</h3>
+<blockquote>
+<p><strong>dsh installs through its own plugin manager — not the CLI.</strong> <code>npx @mstar-harness/cli init</code> has <strong>no dsh target</strong> (it covers omp / OpenCode / Cursor / Kimi / ZCode / Codex only). On dsh (DeepSeek Harness), install the profile bundle with the host&#39;s own command: <code>dsh plugin --profile web add @mstar-harness/dsh</code>.</p>
+</blockquote>
+<pre><code class="language-bash">npx @mstar-harness/cli init
+# or: bunx @mstar-harness/cli init
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Host</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dsh (DeepSeek Harness)</td>
+<td><code>dsh plugin --profile web add @mstar-harness/dsh</code></td>
+</tr>
+<tr>
+<td>omp</td>
+<td><code>npx @mstar-harness/cli init --target omp</code> (links <code>~/.mstar/harness</code>) or <code>omp plugin install github:btspoony/mstar-harness</code></td>
+</tr>
+<tr>
+<td>OpenCode</td>
+<td><code>npx @mstar-harness/cli init --target opencode</code></td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td><code>npx @mstar-harness/cli init --target cursor</code></td>
+</tr>
+<tr>
+<td>Kimi</td>
+<td>Kimi TUI: <code>/plugins install https://github.com/btspoony/mstar-harness</code> → <code>/plugins reload</code></td>
+</tr>
+<tr>
+<td>ZCode</td>
+<td><code>npx @mstar-harness/cli init --target zcode</code> then install <strong>morning-star-harness</strong> in ZCode → Settings → Plugin Management</td>
+</tr>
+<tr>
+<td>Codex</td>
+<td><code>npx @mstar-harness/cli init --target codex</code> then <code>codex plugin add morning-star-harness --marketplace personal</code></td>
+</tr>
+<tr>
+<td>Generic (Agent Plugins v1)</td>
+<td>point any Agent Plugins v1.0.0 conformant client at this repo root (<code>plugin.json</code> + <code>skills/</code> are the portable package)</td>
+</tr>
+</tbody></table>
+<p>The repo ships a portable <strong>Agent Plugins v1.0.0</strong> manifest (<code>plugin.json</code>) at its root; <code>skills/</code> is the Agent Skills component. Verify with <code>npx @mstar-harness/cli plugin validate</code>.</p>
+<p>Verify: <code>npx @mstar-harness/cli doctor --target &lt;opencode\|cursor\|codex\|zcode\|omp&gt;</code>.</p>
+<p>Manual install / path layout: <a href="https://github.com/btspoony/mstar-harness/blob/main/INSTALL.md"><code>INSTALL.md</code></a>. CLI flags: <a href="https://github.com/btspoony/mstar-harness/blob/main/docs/cli.md"><code>docs/cli.md</code></a>.</p>
+<p>Reload the host after install (OpenCode restart / Cursor <strong>Developer: Reload Window</strong> / reopen Codex / Kimi <code>/plugins reload</code> or <code>/new</code> / ZCode reload plugin / omp new session or <code>/reload-plugins</code> if available).</p>
+<h3>Use</h3>
+<p>Three entry shapes: <strong>without iteration</strong> (single plan / hotfix), <strong>with iteration</strong> (multi-plan Phase 1–5), or <strong>codebase audit</strong> (discover what to do).</p>
+<h4>General (without iteration)</h4>
+<p>Enter PM, then run the per-plan cycle: <code>Prepare → Execute → QC → QA gate → Done</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Host</th>
+<th>Enter PM</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dsh (DeepSeek Harness)</td>
+<td><code>pm</code> skill (via the mstar skill provider; no auto-load)</td>
+</tr>
+<tr>
+<td>omp</td>
+<td><code>/skill:pm</code> each session (no auto-load)</td>
+</tr>
+<tr>
+<td>OpenCode</td>
+<td><code>agent.project-manager</code> (<code>agents/project-manager.md</code>)</td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td><code>/pm</code></td>
+</tr>
+<tr>
+<td>Kimi</td>
+<td>session auto-loads <code>pm</code>; or <code>/skill:pm</code></td>
+</tr>
+<tr>
+<td>ZCode</td>
+<td><code>/morning-star-harness:pm</code> each session (no auto-load)</td>
+</tr>
+<tr>
+<td>Codex</td>
+<td><code>/pm</code></td>
+</tr>
+</tbody></table>
+<h4>Iteration</h4>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/iteration-start</code></td>
+<td>Phase 1 (interactive grill-me) then auto-continues Phase 2→5; <code>pause</code> to stop after Phase 1</td>
+</tr>
+<tr>
+<td><code>/iteration-drive</code></td>
+<td>Resume Phase 2→5 on an already-locked iteration</td>
+</tr>
+<tr>
+<td><code>/iteration-loop</code></td>
+<td>Full Phase 1→5 autonomous (no grill-me; optional <code>direction</code>, <code>scale</code> S|M|L|XL)</td>
+</tr>
+</tbody></table>
+<h4>Codebase audit</h4>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/codebase-audit</code></td>
+<td>Survey a repo read-only → prioritized, self-contained improvement plans in <code>{PLAN_DIR}/audit-&lt;date&gt;/</code></td>
+</tr>
+</tbody></table>
+<p>Read-only advisory — never edits source. Output feeds iteration-start Research or normal Prepare → Execute. Effort levels: <code>quick</code> / <code>standard</code> (default) / <code>deep</code>; category focus (<code>security</code>, <code>perf</code>, <code>tests</code>, …) or <code>branch</code> / <code>next</code> variants. SSOT → <code>mstar-audit</code>.</p>
+<h4>Command loading</h4>
+<table>
+<thead>
+<tr>
+<th>Host</th>
+<th>How commands load</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dsh (DeepSeek Harness)</td>
+<td><code>/iteration-start</code> · <code>/iteration-drive</code> · <code>/iteration-loop</code> · <code>/codebase-audit</code> (bundled <code>harness-commands/</code> via <code>ctx.commands</code>)</td>
+</tr>
+<tr>
+<td>omp</td>
+<td><code>/iteration-start</code> · <code>/iteration-drive</code> · <code>/iteration-loop</code> · <code>/codebase-audit</code> (filename commands from plugin <code>commands/</code>)</td>
+</tr>
+<tr>
+<td>OpenCode / Cursor</td>
+<td>Bundled from <code>commands/</code> (OpenCode: plugin <code>harness-commands/</code>)</td>
+</tr>
+<tr>
+<td>Kimi / ZCode</td>
+<td><code>/morning-star-harness:iteration-start</code> · <code>:codebase-audit</code> (etc.) via plugin manifest</td>
+</tr>
+<tr>
+<td>Codex project</td>
+<td><code>.agents/skills/&lt;name&gt;/SKILL.md</code> (CLI symlinks from <code>commands/</code>)</td>
+</tr>
+<tr>
+<td>Codex global</td>
+<td>Project-scoped commands <strong>not</strong> installed — use <code>--scope project</code></td>
+</tr>
+</tbody></table>
+<p>Phase 2 defaults: per-plan worktree + lease, <code>Findings cleanup: zero-residual</code>. Override only with explicit <code>Worktree mode: waived</code> / <code>Findings cleanup: allow-residual</code>. SSOT → <code>mstar-iteration</code>, <code>mstar-branch-worktree</code>, <code>mstar-plan-artifacts</code>.</p>
+<p>Project knowledge bootstrap: <code>mstar-compound-refresh</code> → <code>references/project-knowledge-bootstrap.md</code>.</p>
+<h3>Harness Workflow</h3>
+<pre><code class="language-mermaid">flowchart TD
+    A[&quot;PM: entry and intent clarification&quot;] --&gt; B{&quot;PM: spec and context ready&quot;}
+    B --&gt;|No| C[&quot;PM: clarify and refine requirements&quot;]
+    C --&gt; B
+    B --&gt;|Yes| D[&quot;PM: initialize/load HARNESS_DIR and PLAN_DIR&quot;]
+    D --&gt; E{&quot;Iteration scope needed&quot;}
+    E --&gt;|Deep / first iteration| F[&quot;iteration-start: grill-me → compass → review → lock&quot;]
+    E --&gt;|Fast autonomous loop| F2[&quot;iteration-loop: Phase 1→5 continuous&quot;]
+    F --&gt; G[&quot;PM: lock compass and create integration branch&quot;]
+    F2 --&gt; G
+    G --&gt; H[&quot;Phase 2→5: execute → close → PR → merge-ready&quot;]
+    E --&gt;|No| I[&quot;PM: select active plan from status.json&quot;]
+    H --&gt; I
+    I --&gt; J{&quot;Any plan not Done&quot;}
+    J --&gt;|Yes| K[&quot;PM: dispatch one plan on a feature branch&quot;]
+    K --&gt; L[&quot;Dev roles: implement and report&quot;]
+    L --&gt; M[&quot;PM: update plan and status.json&quot;]
+    M --&gt; N[&quot;QC trio: review gate&quot;]
+    N --&gt; O{&quot;QC decision&quot;}
+    O --&gt;|Request Changes| K
+    O --&gt;|Approve| P{&quot;QA gate&quot;}
+    P --&gt;|mandatory| P1[&quot;qa-engineer: acceptance verification&quot;]
+    P --&gt;|pm-acceptance| P2[&quot;PM: acceptance checklist&quot;]
+    P1 --&gt; Q{&quot;Residual findings remain&quot;}
+    P2 --&gt; Q
+    Q --&gt;|Yes| R[&quot;PM/QA: register or accept residuals in status.json&quot;]
+    R --&gt; S[&quot;PM: mark plan Done and merge to integration branch&quot;]
+    Q --&gt;|No| S
+    S --&gt; T[&quot;PM: sync compass plan status&quot;]
+    T --&gt; J
+    J --&gt;|No| U[&quot;iteration-close: close entry checklist&quot;]
+    U --&gt; V[&quot;PM: compound round and knowledge index&quot;]
+    V --&gt; W[&quot;PM: update roadmap and compass completed frontmatter&quot;]
+    W --&gt; X[&quot;PM: close exit checklist and commit&quot;]
+    X --&gt; Y[&quot;Phase 4: create PR&quot;]
+    Y --&gt; Z[&quot;Phase 5: merge-ready loop until CI green and reviews resolved&quot;]
+</code></pre>
+<p>Without iteration: same per-plan gates, no <code>iteration-start</code> / <code>iteration-close</code> wrapper.</p>
+<h3>Roles and skills</h3>
+<table>
+<thead>
+<tr>
+<th>Agent ID</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>project-manager</code></td>
+<td>Routing, assignment, phase progression</td>
+</tr>
+<tr>
+<td><code>product-manager</code></td>
+<td>Requirements, product planning, research</td>
+</tr>
+<tr>
+<td><code>architect</code></td>
+<td>Architecture and technical contracts</td>
+</tr>
+<tr>
+<td><code>fullstack-dev</code> / <code>fullstack-dev-2</code></td>
+<td>Backend-led implement / second parallel track</td>
+</tr>
+<tr>
+<td><code>frontend-dev</code></td>
+<td>UI, interaction, frontend performance</td>
+</tr>
+<tr>
+<td><code>qa-engineer</code></td>
+<td>Acceptance when <code>QA gate: mandatory</code></td>
+</tr>
+<tr>
+<td><code>code-reviewer</code></td>
+<td>SDD per-task review; codebase audit (<code>audit</code> category)</td>
+</tr>
+<tr>
+<td><code>qc-specialist</code> / <code>-2</code> / <code>-3</code></td>
+<td>QC trio</td>
+</tr>
+<tr>
+<td><code>ops-engineer</code></td>
+<td>Deploy, monitoring, infrastructure</td>
+</tr>
+<tr>
+<td><code>writing-specialist</code></td>
+<td>Docs, fiction, copy, scripts</td>
+</tr>
+<tr>
+<td><code>prompt-engineer</code></td>
+<td>Prompt / skill / rule work</td>
+</tr>
+</tbody></table>
+<p>Load <strong><code>mstar-harness-core</code> first</strong>, then topic skills on demand (<code>mstar-roles</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>mstar-harness-core</code></td>
+<td>Entry, state machine, Task category, skill index</td>
+</tr>
+<tr>
+<td><code>mstar-phase-gates</code></td>
+<td>Prepare/Execute, clarify, hotfix</td>
+</tr>
+<tr>
+<td><code>mstar-iteration</code></td>
+<td>Phase 1–5 iteration lifecycle</td>
+</tr>
+<tr>
+<td><code>mstar-dispatch-gates</code></td>
+<td>Dispatch, Delegation, anti-recursion</td>
+</tr>
+<tr>
+<td><code>mstar-sdd</code></td>
+<td>Subagent-driven development</td>
+</tr>
+<tr>
+<td><code>mstar-branch-worktree</code></td>
+<td>Branches, worktrees, QC/QA checkout</td>
+</tr>
+<tr>
+<td><code>mstar-plan-conventions</code></td>
+<td><code>{HARNESS_DIR}</code> discovery / init</td>
+</tr>
+<tr>
+<td><code>mstar-plan-artifacts</code></td>
+<td>Plans, <code>status.json</code>, residuals, Findings cleanup</td>
+</tr>
+<tr>
+<td><code>mstar-design-md</code></td>
+<td>DESIGN.md gate for UI plans</td>
+</tr>
+<tr>
+<td><code>mstar-review-qc</code></td>
+<td>PM QC tri orchestration</td>
+</tr>
+<tr>
+<td><code>mstar-coding-behavior</code></td>
+<td>RCA, test-first, review feedback, evidence</td>
+</tr>
+<tr>
+<td><code>mstar-compound</code> / <code>mstar-compound-refresh</code></td>
+<td>Knowledge crystallize / maintain</td>
+</tr>
+<tr>
+<td><code>mstar-strategy</code></td>
+<td><code>STRATEGY.md</code> alignment</td>
+</tr>
+<tr>
+<td><code>mstar-skill-authoring</code></td>
+<td>General skill authoring (SkillsBench gate)</td>
+</tr>
+<tr>
+<td><code>mstar-audit</code></td>
+<td>Read-only codebase audit → prioritized improvement plans</td>
+</tr>
+<tr>
+<td><code>mstar-roles</code></td>
+<td>Role prompts + load lists</td>
+</tr>
+<tr>
+<td><code>mstar-host</code></td>
+<td>Host adapters (dsh / omp / OpenCode / Cursor / Kimi / ZCode / Codex)</td>
+</tr>
+<tr>
+<td><code>pm</code></td>
+<td><code>/pm</code> / <code>/skill:pm</code> / host PM entry</td>
+</tr>
+</tbody></table>
+<p>Consumer plans default to <strong><code>.mstar/</code></strong>. Process artifacts (<code>plans/</code>, <code>iterations/</code>, <code>status.json</code>, <code>sdd/</code>, …) are gitignored; tracked results: <code>{HARNESS_DIR}/AGENTS.md</code>, <code>knowledge/</code>, <code>specs/</code>. Specs resolve <code>.mstar/specs/</code> → <code>docs/specs/</code> → repo-root <code>specs/</code>. Details → <code>mstar-plan-conventions</code>.</p>
+<p>Maintainers: <a href="https://github.com/btspoony/mstar-harness/blob/main/AGENTS.md"><code>AGENTS.md</code></a>.</p>
+<h3>License</h3>
+<p>MIT. See <a href="https://github.com/btspoony/mstar-harness/blob/main/LICENSE">LICENSE</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/btspoony/mstar-harness/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

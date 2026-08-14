@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,85 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Moeblack/deepseek-manners</pre><button type="button" data-cmd="dsh plugin --profile web add github:Moeblack/deepseek-manners" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>在每次发消息之后给可爱的鲸鱼娘说谢谢（默认「谢谢你，鲸鱼大人」），仅当轮生效。</p>
+<h3>安装</h3>
+<p>本插件是 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness（DSH）</a> 的插件，需要先有一个可运行的 DSH。</p>
+<h4>本地源码装配</h4>
+<pre><code class="language-sh">dsh plugin --profile web add -w link:/path/to/deepseek-manners
+</code></pre>
+<h4>从 GitHub 安装</h4>
+<pre><code class="language-sh">dsh plugin --profile web add github:moeblack/deepseek-manners
+</code></pre>
+<p>构建产物（<code>index.mjs</code> / <code>client.js</code>）已随仓库提交，git 安装无需额外构建步骤。</p>
+<p>装配完成后，Web 界面输入框右侧会多出一个心形开关，用于随时开关注入。</p>
+<h3>配置</h3>
+<p><code>DSH_HOME/settings.yaml</code>：</p>
+<pre><code class="language-yaml">deepseek-manners:
+  text: 谢谢你，鲸鱼大人
+  enabled: true
+  hideAboveChars: 2000   # 最近一Turn assistant 回复超过此字符数时跳过遮蔽（保护 prompt cache）；0 = 总是遮蔽
+</code></pre>
+<h3>机制</h3>
+<ul>
+<li>仅在包含用户直接输入的 step（turn 的第一个模型请求）注入，落在 payload 底部</li>
+<li>只看最近一次 assistant 回复长度——<ul>
+<li>回复短 → 回收最近一条旧后缀（surface replace 为空，日志保留）</li>
+<li>回复超长 → 跳过回收，该后缀<strong>永久保留</strong>（保护长回复的 prompt cache）</li>
+</ul>
+</li>
+</ul>
+<h3>如何自定义注入文本</h3>
+<p><code>text</code> 字段的内容会原样注入到每次上行 payload 的底部。你可以把它写成一段<strong>多行指令</strong>（YAML 块标量），用于：</p>
+<ul>
+<li>追加角色扮演风格的回复引导</li>
+<li>覆写模型的思考模式（think 标签行为）</li>
+<li>追加风格、语气、输出格式要求</li>
+</ul>
+<p><code>text</code> 不支持模板变量，写入什么就注入什么。</p>
+<h4>多行长文本写法</h4>
+<p>YAML 中使用 <code>|</code>（保留换行）或 <code>|-</code>（去掉末尾换行）块标量：</p>
+<pre><code class="language-yaml">deepseek-manners:
+  text: |-
+    以下是对本次回复的补充要求，请严格遵守：
+
+    1. 回复开头使用角色惯用的口头禅，保持角色语气一致。
+    2. 思考过程放在 &lt;think&gt; 标签内，正文直接输出。
+    3. 正文不使用列表式结构，用自然段落叙述。
+    4. 每次回复控制在 200 字以内。
+  enabled: true
+  hideAboveChars: 600
+</code></pre>
+<p>块标量内的每一行都要<strong>至少缩进 6 个空格</strong>（<code>text:</code> 本身缩进 2，正文在它之下再缩进 4）。</p>
+<h4>生效方式</h4>
+<ul>
+<li>修改 <code>settings.yaml</code> 后<strong>无需重启</strong>：DSH 的 <code>dsh-settings-file</code> 默认开启文件热重载（chokidar，100ms 防抖），改动 1-2 秒内自动生效。</li>
+<li>若 YAML 语法错误，服务会保留最后一份合法配置并在日志告警，不会崩溃。</li>
+</ul>
+<h4>示例：注入思考模式覆写</h4>
+<pre><code class="language-yaml">deepseek-manners:
+  text: |-
+    &lt;think&gt;
+    请在思考过程中遵循以下约定：
+
+    - 先简要分析当前对话的目标与立场。
+    - 列出 2-3 个可选回应方向，再选择最符合角色设定的一项。
+    - 思考结束后直接输出正文，不重写、不检查。
+    &lt;/think&gt;
+  enabled: true
+  hideAboveChars: 600
+</code></pre>
+<h3>额外用法（主要用法）</h3>
+<ul>
+<li>适配 <a href="https://github.com/victorchen96/deepseek_v4_rolepaly_instruct/blob/main/README_EN.md">https://github.com/victorchen96/deepseek_v4_rolepaly_instruct/blob/main/README_EN.md</a> 仓库的思维链覆写模式</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/Moeblack/deepseek-manners/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,127 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Sev7een/dsh-plugin-automations</pre><button type="button" data-cmd="dsh plugin --profile web add github:Sev7een/dsh-plugin-automations" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/README.md">English</a> | <a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/README.zh-CN.md">简体中文</a></p>
+<h2>dsh-plugin-automations</h2>
+<blockquote>
+<p>为 DeepSeek Harness Web Profile 提供定时任务：支持准点执行、只在 DeepSeek 谷时段执行的“空闲执行”，以及每天重复执行。</p>
+<p>Scheduled tasks for the DeepSeek Harness Web Profile: run on time, run only during DeepSeek off-peak (valley) hours, or repeat daily.</p>
+</blockquote>
+<h3>Features</h3>
+<ul>
+<li>Settings-page form and task list with 5-second polling.</li>
+<li>Two execution modes: <strong>on time</strong> and <strong>when idle (valley hours)</strong>.</li>
+<li>Two repeat modes: <strong>once</strong> and <strong>daily</strong>.</li>
+<li><code>when_idle</code> runs outside Beijing peak hours (<code>09:00-12:00</code> and <code>14:00-18:00</code>) and automatically defers to the next valley window.</li>
+<li>Daily tasks keep the same local wall-clock time across month and daylight-saving transitions.</li>
+<li>Durable task state through <code>ctx.storageDomain</code>.</li>
+<li>One serialized scheduler pump persists <code>running</code> before launching the runner.</li>
+<li>Each run uses an isolated Session with the default Agent preset, model, and Host workspace root.</li>
+<li>Fixed 30-minute execution timeout and explicit <code>host_interrupted</code> recovery.</li>
+<li>Strict JSON API validation, request-size limits, same-origin checks, and a custom mutation header.</li>
+<li>Automated messages use <code>{ kind: &#39;plugin&#39;, plugin: &#39;dsh-plugin-automations&#39; }</code> and never impersonate direct human input.</li>
+</ul>
+<p>The full behavioral contract is documented in <a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/SDD.zh-CN.md">SDD.zh-CN.md</a>.</p>
+<h3>Installation</h3>
+<h4><code>dsh plugin add</code> (recommended)</h4>
+<p>Install into the Web profile and restart DSH after installation.</p>
+<h5>From GitHub</h5>
+<pre><code class="language-bash">dsh plugin --profile web add github:Sev7een/dsh-plugin-automations
+</code></pre>
+<h5>From npm</h5>
+<p>Once the package is published to npm:</p>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-plugin-automations
+</code></pre>
+<p>If you run DSH through <code>npx</code>, use the equivalent command:</p>
+<pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add github:Sev7een/dsh-plugin-automations
+</code></pre>
+<p>Verify the composed profile and restart the Web app:</p>
+<pre><code class="language-bash">dsh --profile web --dump-config
+dsh web
+</code></pre>
+<p>Then open <strong>Settings → 定时任务 (Scheduled Tasks)</strong>.</p>
+<h4>Local checkout (development)</h4>
+<pre><code class="language-bash">git clone https://github.com/Sev7een/dsh-plugin-automations.git
+dsh plugin --profile web add ./dsh-plugin-automations
+</code></pre>
+<h4>Remove</h4>
+<pre><code class="language-bash">dsh plugin --profile web remove dsh-plugin-automations
+</code></pre>
+<h3>Usage</h3>
+<h4>Execution modes</h4>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>on_time</code></td>
+<td>Creates an isolated DSH Session and starts as soon as the task is due.</td>
+</tr>
+<tr>
+<td><code>when_idle</code></td>
+<td>Runs only outside Beijing peak hours; a task due during peak hours waits for the next valley window.</td>
+</tr>
+</tbody></table>
+<h4>Repeat modes</h4>
+<table>
+<thead>
+<tr>
+<th>Repeat</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>once</code></td>
+<td>Reaches a terminal state and does not run again.</td>
+</tr>
+<tr>
+<td><code>daily</code></td>
+<td>Rolls to the same local wall-clock time on the next calendar day.</td>
+</tr>
+</tbody></table>
+<h3>HTTP API</h3>
+<ul>
+<li><code>POST /dsh-scheduled-tasks/api/v1/tasks</code><ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-DSH-Scheduled-Tasks: 1</code></li>
+<li>Body: <code>{ prompt, scheduledAt, timeZone, mode, repeat }</code></li>
+</ul>
+</li>
+<li><code>GET /dsh-scheduled-tasks/api/v1/tasks</code></li>
+</ul>
+<pre><code class="language-bash">curl -X POST http://127.0.0.1:3080/dsh-scheduled-tasks/api/v1/tasks \
+  -H &#39;Content-Type: application/json&#39; \
+  -H &#39;X-DSH-Scheduled-Tasks: 1&#39; \
+  -d &#39;{
+    &quot;prompt&quot;: &quot;check project tests&quot;,
+    &quot;scheduledAt&quot;: &quot;2026-08-15T01:00:00+08:00&quot;,
+    &quot;timeZone&quot;: &quot;Asia/Shanghai&quot;,
+    &quot;mode&quot;: &quot;when_idle&quot;,
+    &quot;repeat&quot;: &quot;daily&quot;
+  }&#39;
+</code></pre>
+<p>The MVP has no edit, delete, pause, cancel, retry, or pagination endpoints.</p>
+<h3>Development</h3>
+<pre><code class="language-bash">npm install --legacy-peer-deps
+npm run check
+npm test
+npm run build
+npm pack --dry-run
+</code></pre>
+<p><code>--legacy-peer-deps</code> is currently needed for local development because the published <code>@deepseek-ai/dsh-storage-domain</code> package still carries an older peer range than the current DSH Web bundle.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

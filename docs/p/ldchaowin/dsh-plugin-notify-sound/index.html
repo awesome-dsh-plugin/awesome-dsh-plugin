@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,119 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ldchaowin/dsh-plugin-notify-sound</pre><button type="button" data-cmd="dsh plugin --profile web add github:ldchaowin/dsh-plugin-notify-sound" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/README.zh.md">中文</a></p>
+<p>A DeepSeek Harness (DSH) plugin for the <strong>Web UI</strong>: play a customizable ringtone when a task
+finishes — <strong>per workspace</strong> — and an attention sound whenever something needs a human.</p>
+<h3>Features</h3>
+<h4>Completion sounds (per workspace)</h4>
+<ul>
+<li>Plays when a session turn finishes (<code>running: true → false</code>) or a background job completes.</li>
+<li>The sound is resolved per workspace: a workspace-specific override wins, otherwise the default.</li>
+<li>Three sound sources:<ul>
+<li><strong>Built-in synthesized sounds</strong> — 6 options (Ding / Chime / Bell / Complete / Success / Mute),
+generated live with Web Audio, no audio files required.</li>
+<li><strong>Voice announcement (TTS)</strong> — the browser speaks a custom phrase (e.g. “我做完啦！”, “All done!”)
+using a system Chinese voice; voice and rate are configurable.</li>
+<li><strong>Custom audio</strong> — upload any MP3/WAV/etc. file.</li>
+</ul>
+</li>
+</ul>
+<h4>Attention sounds (when a human is needed)</h4>
+<p>The following events <strong>always</strong> ring (they are not affected by the “quiet current session” option):</p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Detection</th>
+<th>Default sound</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Approval request</td>
+<td>session <code>pendingInteraction: approval</code></td>
+<td>generic attention sound</td>
+</tr>
+<tr>
+<td>User question</td>
+<td><code>pendingInteraction: question</code></td>
+<td>generic attention sound</td>
+</tr>
+<tr>
+<td>Plan review</td>
+<td><code>pendingInteraction: plan-review</code></td>
+<td>generic attention sound</td>
+</tr>
+<tr>
+<td>Goal blocked</td>
+<td>goal projection enters <code>blocked</code></td>
+<td>generic attention sound</td>
+</tr>
+<tr>
+<td>Background task failure</td>
+<td>job status <code>failed</code></td>
+<td>Bell (dedicated failure sound)</td>
+</tr>
+</tbody></table>
+<p>Each kind can override the generic attention sound, or use a shared TTS phrase
+(e.g. “需要你的确认” / “Your confirmation is needed”).</p>
+<h4>Settings panel (Settings → 通知铃声 / Notification Sounds)</h4>
+<p>Master switch, “quiet when viewing the current session”, default completion sound,
+per-workspace completion sounds, generic + per-kind attention sounds, voice settings
+(voice / rate / preview / refresh), per-row preview and custom-audio upload.</p>
+<h3>Install</h3>
+<p>Requires a DSH version with bundle-plugin support (<code>dsh.profile.bundles</code> + <code>dsh.bundle.patch</code>)
+and <code>pnpm</code> on PATH (<code>corepack enable</code> or <code>npm i -g pnpm</code>).</p>
+<pre><code class="language-sh"># One command: pnpm installs the package and adds it to the profile&#39;s bundle layer
+dsh plugin --profile web add dsh-plugin-notify-sound
+
+# Restart the server (or refresh the page), then open Settings → 通知铃声
+</code></pre>
+<p>Other profiles work the same way: <code>dsh plugin --profile &lt;name&gt; add dsh-plugin-notify-sound</code>.</p>
+<h4>Manual install (without pnpm)</h4>
+<ol>
+<li>Copy this package and its runtime deps (<code>@deepseek-ai/schemastery</code>,
+<code>@deepseek-ai/cosmokit</code>, <code>@standard-schema/spec</code>) into
+<code>$DSH_HOME/profiles/web/node_modules/</code>.</li>
+<li>Append <code>&quot;dsh-plugin-notify-sound&quot;</code> to <code>dsh.profile.bundles</code> in
+<code>$DSH_HOME/profiles/web/package.json</code>.</li>
+<li>Restart <code>dsh web</code>.</li>
+</ol>
+<h3>Configuration storage</h3>
+<ul>
+<li>The browser half persists its configuration in <strong>localStorage</strong> (key
+<code>dsh-notify-sound:config</code>), sanitizing every read and filling defaults.</li>
+<li>The host half also registers the <code>dsh-plugin-notify-sound</code> settings namespace: on rc.6 the
+settings API allowlist (<code>WEB_SETTINGS_NAMESPACES</code> in <code>dsh-host-apiproxy</code>) does not expose
+third-party namespaces to browsers, so the client does not depend on <code>settingsScope</code> today;
+the registration keeps the migration path open for future releases.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">npm test      # 50+ assertions across host and client halves (Node only, no browser needed)
+npm run check # syntax check
+</code></pre>
+<p>Layout:</p>
+<ul>
+<li><code>lib/index.js</code> — host half: registers the settings namespace (schema + defaults)</li>
+<li><code>lib/client.js</code> — browser bundle: completion/attention event detection, sound engine
+(Web Audio / TTS / Audio), settings panel</li>
+<li><code>lib/types/index.d.ts</code> — host-side type declarations</li>
+<li><code>cordis.patch.yml</code> — bundle patch layer (inserts the <code>notify-sound</code> row)</li>
+<li><code>tools/</code> — tests and verification scripts (not shipped in the npm package)</li>
+</ul>
+<h3>Publish</h3>
+<pre><code class="language-sh">npm login                       # npm account (2FA recommended)
+npm publish --access public
+</code></pre>
+<h3>License</h3>
+<p><a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

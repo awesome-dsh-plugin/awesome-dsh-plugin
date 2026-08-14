@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,172 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:MorGogh/widget-dock</pre><button type="button" data-cmd="dsh plugin --profile web add github:MorGogh/widget-dock" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>DeepSeek Harness (dsh) 客户端插件：在对话两侧的空白区域提供可自由拖动的卡片工作台，一眼掌握 API 余额、Token 用量、会话统计等状态。</p>
+<p>Widget dock plugin for DeepSeek Harness — a draggable workbench of mini-cards on the blank areas beside the conversation.</p>
+</blockquote>
+<p><a href="https://github.com/MorGogh/widget-dock/stargazers"><img src="https://img.shields.io/github/stars/MorGogh/widget-dock?style=flat-square&label=Stars" alt="GitHub stars"></a>
+<a href="https://github.com/MorGogh/widget-dock/blob/main/LICENSE"><img src="https://img.shields.io/github/license/MorGogh/widget-dock?style=flat-square" alt="License"></a>
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/DSH-Plugin-4D6BFE?style=flat-square&logo=github" alt="DSH Plugin"></a>
+<a href="https://github.com/MorGogh/widget-dock/releases"><img src="https://img.shields.io/github/v/release/MorGogh/widget-dock?style=flat-square" alt="Release"></a></p>
+<hr>
+<h3>🖼️ 效果预览 / Preview</h3>
+<table>
+<thead>
+<tr>
+<th>工作台（对话页两侧）</th>
+<th>添加面板（右侧侧栏）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/MorGogh/widget-dock/main/assets/screenshots/workbench.png" alt="widget-dock 工作台"></td>
+<td><img src="https://raw.githubusercontent.com/MorGogh/widget-dock/main/assets/screenshots/panel.png" alt="添加面板"></td>
+</tr>
+</tbody></table>
+<h3>✨ 功能 / Features</h3>
+<ul>
+<li><p><strong>双侧工作台填满空白</strong>：卡片吸附在对话内容的左/右两侧空白区，工作台宽度跟随可用空白（不再有 440px 上限），卡片按尺寸自动换行排布</p>
+</li>
+<li><p><strong>卡片尺寸档位</strong>：每张卡片头部有尺寸按钮，支持 <strong>S / M / L / XL</strong> 四档宽度（160 / 220 / 300 / 400px），内容随宽度自适应</p>
+</li>
+<li><p><strong>头部随时拖动</strong>：按住卡片头部（<code>⠿</code>）即可拖动——<strong>无需进入排序模式</strong>；同侧拖动排序，拖到另一侧自动换侧</p>
+</li>
+<li><p><strong>右侧管理侧栏</strong>：点击右侧工作台右上角 <code>＋</code> 打开侧栏，集中管理：添加面板、切换左右侧、最小化、关闭</p>
+</li>
+<li><p><strong>窄窗口与轨迹页</strong>：空间不足或切换到「轨迹」时，工作台缩成贴边标签，不遮挡正文</p>
+</li>
+<li><p><strong>官方定价成本估算</strong>：成本卡内置 DeepSeek <strong>官方峰谷定价</strong>（8/17 生效），支持 <code>v4-flash</code> / <code>v4-pro</code> 一键切换模型，单价可手动调整；费用按输入/输出/缓存分项显示</p>
+</li>
+<li><p><strong>大数字友好</strong>：Token 用量等大数字自动格式化（<code>102780061</code> → <code>1.03亿</code>），不会溢出卡片</p>
+</li>
+<li><p><strong>组件编辑</strong>：余额可改 API Key，成本可改单价</p>
+</li>
+<li><p><strong>持久化</strong>：卡片项目、位置、尺寸、配置全部存入 localStorage，重启保留</p>
+</li>
+<li><p><strong>Dual-side workbench</strong>: cards use only the blank space beside the conversation; workbench width follows the free space, cards wrap by size</p>
+</li>
+<li><p><strong>Size tiers</strong>: S / M / L / XL (160 / 220 / 300 / 400px) per card, content adapts</p>
+</li>
+<li><p><strong>Always-draggable heads</strong>: grab the card head (<code>⠿</code>) anytime — reorder within a side or drag across sides; no arrange mode needed</p>
+</li>
+<li><p><strong>Right management drawer</strong>: click <code>＋</code> at the top-right of the right workbench to add/manage/minimize/close</p>
+</li>
+<li><p><strong>Official pricing cost estimate</strong>: DeepSeek peak/off-peak pricing (effective 8/17), switch between <code>v4-flash</code> / <code>v4-pro</code>, itemized input/output/cache fees</p>
+</li>
+<li><p><strong>Big-number friendly</strong>: token counts auto-format (<code>102780061</code> → <code>1.03亿</code>), no overflow</p>
+</li>
+<li><p><strong>Editable widgets</strong>: edit your API Key in the balance card, adjust per-unit cost in the cost card</p>
+</li>
+<li><p><strong>Persistent</strong>: your layout, sizes and configuration survive restarts via localStorage</p>
+</li>
+</ul>
+<h3>🧩 内置小组件 / Widgets</h3>
+<table>
+<thead>
+<tr>
+<th>图标</th>
+<th>组件</th>
+<th>数据来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>📊</td>
+<td>上下文压力</td>
+<td><code>contextPressure</code> 投影（窗口占用比例）</td>
+</tr>
+<tr>
+<td>☑️</td>
+<td>待办</td>
+<td><code>todos</code> 投影（任务清单）</td>
+</tr>
+<tr>
+<td>🔐</td>
+<td>权限模式</td>
+<td><code>permissions</code> 投影（访问范围）</td>
+</tr>
+<tr>
+<td>💰</td>
+<td>API 余额</td>
+<td>DeepSeek <code>user/balance</code> 接口（含充值跳转、KEY 编辑）</td>
+</tr>
+<tr>
+<td>📈</td>
+<td>Token 用量</td>
+<td><code>tokenUsage</code> 投影（输入/输出/缓存，自动格式化）</td>
+</tr>
+<tr>
+<td>🕒</td>
+<td>会话统计</td>
+<td><code>sessionStats</code> 投影（回合/步骤/耗时）</td>
+</tr>
+<tr>
+<td>🎯</td>
+<td>目标进度</td>
+<td><code>goal</code> 投影（阶段 + 目标）</td>
+</tr>
+<tr>
+<td>🧾</td>
+<td>成本估算</td>
+<td>token × 官方单价（flash/pro 切换，分项费用）</td>
+</tr>
+</tbody></table>
+<h3>🚀 快速开始 / Quick Start</h3>
+<pre><code class="language-bash"># 1. 把插件目录链接进 web profile 的 node_modules
+mkdir -p ~/.dsh/profiles/web/node_modules
+ln -sfn &quot;$(pwd)&quot; ~/.dsh/profiles/web/node_modules/widget-dock
+
+# 2. 在 ~/.dsh/profiles/web/cordis.patch.yml 追加：
+# - insert:
+#     - id: widget-dock
+#       name: &#39;widget-dock&#39;
+
+# 3. 重启 dsh web
+dsh web
+</code></pre>
+<p>重启后：对话两侧出现工作台。点击右侧工作台右上角 <code>＋</code> 打开侧栏添加面板；按住卡片头部即可拖动排序/换侧。</p>
+<blockquote>
+<p>安装遇到问题？可在 <a href="https://github.com/MorGogh/widget-dock/issues">Issues</a> 提问，或查看下方 FAQ。</p>
+</blockquote>
+<h3>🔧 配置 / Configuration</h3>
+<ul>
+<li><strong>API 余额</strong>：组件<strong>不内置密钥</strong>——首次使用点击「KEY 编辑」填入 DeepSeek API Key（存 localStorage，仅本机）</li>
+<li><strong>成本估算</strong>：默认按 <code>deepseek-v4-flash</code> 官方高峰价（输入 ¥3 / 缓存命中 ¥0.1 / 输出 ¥9 每百万 tokens，2026-08-17 生效）；组件内可切换 <code>v4-pro</code>（输入 ¥9 / 缓存命中 ¥0.3 / 输出 ¥27）或手动调整单价</li>
+</ul>
+<h3>❓ 常见问题 / FAQ</h3>
+<p><strong>Q：打开后没有工作台？</strong>
+A：确认已重启 <code>dsh web</code>，并在宽窗口下查看；空间不足时工作台会缩成贴边标签，点击展开。</p>
+<p><strong>Q：余额显示不出来？</strong>
+A：余额组件需要 DeepSeek API Key，点击组件内「KEY 编辑」填入后刷新。</p>
+<p><strong>Q：卡片拖不动？</strong>
+A：按住卡片<strong>头部</strong>（<code>⠿</code> 或名称区域）拖动；内容区是正常点击区，不会误拖。</p>
+<p><strong>Q：布局会被重置吗？</strong>
+A：不会，布局、尺寸与配置保存在浏览器 localStorage 中，重启后保留。</p>
+<p><strong>Q：支持 TUI / 其他平台吗？</strong>
+A：当前为 Web 客户端插件（<code>dsh.client</code>，platform: web）。TUI 支持在规划中，欢迎 PR。</p>
+<h3>📄 协议 / License</h3>
+<p>MIT</p>
+<h3>💝 赞助支持 / Sponsor</h3>
+<p>如果 widget-dock 对你有帮助，欢迎扫码打赏支持开发维护，感谢每一位支持者！</p>
+<table>
+<thead>
+<tr>
+<th>微信赞赏</th>
+<th>支付宝赞赏</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/MorGogh/widget-dock/main/assets/sponsor/wechat-qr.jpg" alt="WeChat QR"></td>
+<td><img src="https://raw.githubusercontent.com/MorGogh/widget-dock/main/assets/sponsor/alipay-qr.jpg" alt="Alipay QR"></td>
+</tr>
+</tbody></table>
+
+    </div>
+    <p class="note"><a href="https://github.com/MorGogh/widget-dock/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

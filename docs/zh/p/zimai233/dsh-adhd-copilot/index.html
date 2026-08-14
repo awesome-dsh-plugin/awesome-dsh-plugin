@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,296 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zimai233/dsh-adhd-copilot</pre><button type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-adhd-copilot" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 打造的行为教练技能插件——把 ADHD 用户从&quot;想做但动不了&quot;带到&quot;带走一个最小行动&quot;。</p>
+<blockquote>
+<p>dsh 生态中<strong>唯一一个 ADHD 聚焦的行为教练插件</strong>：行为 / 心理健康分类目前是空的，本插件填补了这个空白。</p>
+</blockquote>
+<p>不要求自律，而是通过降低启动成本、提供外部结构、陪伴执行和即时反馈，把复杂任务转化为可带走的最小行动。核心原则：<strong>永远只推动下一步，不要求完成全部。内容质量永远高于格式。</strong></p>
+<h3>为什么</h3>
+<p>AI 很擅长做计划——但对 ADHD 大脑来说，计划本身就是问题的一部分。</p>
+<p>三条驱动理念（来自源技能的 SKILL.md + 11 个 references）：</p>
+<ol>
+<li><strong>永远只推动下一步</strong>。从不要求完成整个任务。</li>
+<li><strong>可带走行动</strong>。每条回复给出用户能独立执行的最小动作，不需要回到聊天框；反馈循环全可选。</li>
+<li><strong>质量地板</strong>。内容质量 &gt; 格式；规则与好答案冲突时，规则让路。</li>
+</ol>
+<p>DSH 插件生态还没有任何行为 / 心理健康方向的插件。本插件把一套经过实战打磨的 ADHD 教练方法论完整打包成可安装、可调用、零构建的插件。</p>
+<h3>功能</h3>
+<ul>
+<li><strong><code>adhd_breakdown</code> 工具</strong> —— 扫描任务 + 状态信号（启动困难 / 过载 / 分心 / 时间误估 / 没动力 / 自责 / 不知道怎么选），按 <strong>状态优先级「情绪 &gt; 结构 &gt; 启动」</strong> 路由到 8 个模块（M1-M8），返回结构化的<strong>单一下一步行动</strong>拆解：<ul>
+<li><code>module</code> / <code>moduleName</code> —— 命中的模块</li>
+<li><code>nextAction</code> —— 30 秒内能做的下一步</li>
+<li><code>whyNow</code> —— 为什么是这一步（绑定模块的认知事实）</li>
+<li><code>timeboxEstimate</code> —— 具体分钟估时（不用&quot;一会儿&quot;）</li>
+<li><code>energyRequired</code> —— 这一步需要的能量等级</li>
+<li><code>steps</code> —— 1-3 步（每步 &lt;60 秒），绝不一次抛完整清单</li>
+<li>完整技能内容：<code>skills/adhd-copilot/SKILL.md</code> + <code>references/*.md</code>（11 个文件，<strong>原样打包</strong>，这是插件本身交付的价值）</li>
+</ul>
+</li>
+<li><strong>Pre-flight 门</strong>：无任务信号 → 保持静默，零干扰；请求很小 → 直接回答，不套流程。</li>
+<li><strong>信号模糊</strong> → 给 A-G 自助菜单（用户自选 = 掌控感 + 防误判）。</li>
+<li><strong>输出纪律</strong>：首行是行动、编号步骤 ≤3、结尾一个 30 秒内能做的下一步、表扬绑定具体胜利、绝不假扮计时器。</li>
+<li>零构建、零运行时依赖 —— 纯 ESM，发布即运行。</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-bash"># from npm
+dsh plugin --profile myprofile add dsh-adhd-copilot
+
+# from GitHub（锁定 commit，供应链卫生）
+dsh plugin --profile myprofile add github:zimai233/dsh-adhd-copilot#&lt;sha&gt;
+</code></pre>
+<h3>用法</h3>
+<p>直接用自然语言跟 agent 说：</p>
+<blockquote>
+<p>&quot;我拖着不写周报，两周了，帮我开始。&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;好多事情堆着，脑子乱成一团，不知道先做哪个。&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;我又没做完，我怎么这么差。&quot;</p>
+</blockquote>
+<p>Agent 会调用 <code>adhd_breakdown</code>，拿到类似这样的结构化拆解：</p>
+<pre><code class="language-json">{
+  &quot;module&quot;: &quot;M1&quot;,
+  &quot;moduleName&quot;: &quot;任务破碎机 (Task Breaker)&quot;,
+  &quot;nextAction&quot;: &quot;打开与「周报」相关的文件或页面（30 秒内）&quot;,
+  &quot;whyNow&quot;: &quot;启动最难：第一个动作必须明显、微小、现在就能做。一次只给 1-3 步，每步 &lt;60 秒，跑完再要。&quot;,
+  &quot;timeboxEstimate&quot;: &quot;第一步 &lt;60 秒；本轮 2 步，跑完再要下一步&quot;,
+  &quot;energyRequired&quot;: &quot;低（仅需打开文件）&quot;,
+  &quot;steps&quot;: [&quot;打开与「周报」相关的文件或页面（30 秒内）&quot;, &quot;写下这一行标题：「周报」&quot;]
+}
+</code></pre>
+<p>并渲染成符合输出纪律的教练回复：</p>
+<blockquote>
+<p>周报，先别想完成。只做第一步：</p>
+<ol>
+<li>打开与「周报」相关的文件或页面（30 秒内）</li>
+<li>写下这一行标题：「周报」</li>
+</ol>
+<p>每步 &lt;60 秒。做完回复&quot;完成&quot;（可选，不阻塞）。你开始了，这一步就成了。</p>
+</blockquote>
+<p>可选参数：<code>battery</code>（电量，M3 用）、<code>narrative</code>（叙事风格，M5 opt-in 用）、<code>estimatedMinutes</code>（你的估时，M6 用）、<code>parked</code> / <code>dropped</code>（稍后 / 废弃清单，M2 用）。</p>
+<h3>技能结构</h3>
+<p><code>skills/adhd-copilot/</code> 里是完整的、可独立阅读的教练方法论：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>SKILL.md</code></td>
+<td>何时用、核心原则、状态路由表、输出纪律摘要、反模式、安全边界、发送前检查</td>
+</tr>
+<tr>
+<td><code>references/core-workflow.md</code></td>
+<td>五条认知事实、Pre-flight 门、五步流程、状态优先级、质量地板</td>
+</tr>
+<tr>
+<td><code>references/state-scanner.md</code></td>
+<td>状态路由表、A-G 自助菜单、懒加载用户档案</td>
+</tr>
+<tr>
+<td><code>references/output-discipline.md</code></td>
+<td>七条输出纪律 + 例外 + 发送前检查</td>
+</tr>
+<tr>
+<td><code>references/M1-task-breaker.md</code></td>
+<td>启动困难 → 一次 1-3 步，每步 &lt;60 秒</td>
+</tr>
+<tr>
+<td><code>references/M2-external-brain.md</code></td>
+<td>过载 → 现在区只留 1 件事 + 唯一 Next Action</td>
+</tr>
+<tr>
+<td><code>references/M3-dopamine-architect.md</code></td>
+<td>没劲 → 按电量配菜单（开胃菜 / 主菜 / 配菜）</td>
+</tr>
+<tr>
+<td><code>references/M4-body-double.md</code></td>
+<td>分心 / 要陪伴 → 自足启动指令，检查点可选</td>
+</tr>
+<tr>
+<td><code>references/M5-interest-gamifier.md</code></td>
+<td>兴趣游戏化（仅 opt-in）</td>
+</tr>
+<tr>
+<td><code>references/M6-time-auditor.md</code></td>
+<td>时间误估 → 预计 vs 现实三部分</td>
+</tr>
+<tr>
+<td><code>references/M7-adhd-reset.md</code></td>
+<td>自责 → 停止评价 → 缩小目标 → 30 秒动作</td>
+</tr>
+<tr>
+<td><code>references/M8-router.md</code></td>
+<td>不知道怎么选 → 2-3 框架 + 陷阱标注 + 收敛 1 行动</td>
+</tr>
+</tbody></table>
+<h3>开发</h3>
+<pre><code class="language-bash">npm test          # node --test test/ —— 覆盖纯拆解逻辑、技能文件完整性与逐字拷贝校验
+node --check src/index.js
+</code></pre>
+<h3>诚实设计（Honest by design）</h3>
+<ul>
+<li><strong>没有计时器</strong>：AI 无法在执行期间出现；所有中途检查点可选。</li>
+<li><strong>不承诺跨会话记忆</strong>：仅在平台有长期记忆时持久化。</li>
+<li><strong>零打扰</strong>：无任务信号时完全静默。</li>
+<li><strong>安全边界</strong>：这是执行辅助工具，不是医疗诊断或治疗工具；用户表现出情绪危机 / 自伤信号时，温和建议寻求专业帮助。</li>
+</ul>
+<hr>
+<h2>dsh-adhd-copilot (English)</h2>
+<p>A behavioral coaching skill plugin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> — it moves a user with ADHD from &quot;I want to start but can&#39;t&quot; to &quot;here is one minimal action you can take away.&quot;</p>
+<blockquote>
+<p>The <strong>only ADHD-focused behavioral coaching plugin in the dsh ecosystem</strong>: the behavioral / mental-health category is empty, and this plugin fills the gap.</p>
+</blockquote>
+<p>Instead of demanding willpower, it lowers the cost of starting, provides external structure, stays with you while you execute, and gives instant feedback — so complex tasks become a series of tiny actions you can actually take. Core principle: <strong>always push only the next step, never require finishing everything. Content quality always beats format.</strong></p>
+<h3>Why</h3>
+<p>AI is great at planning — but for ADHD brains, plans are part of the problem.</p>
+<p>Three ideas drive everything (from the source skill&#39;s SKILL.md + 11 references):</p>
+<ol>
+<li><strong>Always push only the next step.</strong> Never require finishing the whole task.</li>
+<li><strong>Takeaway actions.</strong> Every reply gives a smallest action you can do on your own, without coming back to the chat. All feedback loops are optional.</li>
+<li><strong>Quality floor.</strong> Content quality &gt; format. When a rule would hurt a good answer, the rule yields.</li>
+</ol>
+<p>The dsh plugin ecosystem had no behavioral / mental-health entry. This plugin packages a battle-tested ADHD coaching methodology into an installable, callable, zero-build plugin.</p>
+<h3>Features</h3>
+<ul>
+<li><strong><code>adhd_breakdown</code> tool</strong> — scans the task + state signals (can&#39;t-start / overwhelm / distractible / time-misjudged / unmotivated / self-blame / can&#39;t-decide) and routes through the 8 modules (M1-M8) by the state priority <strong>&quot;emotion &gt; structure &gt; start&quot;</strong>, returning a structured <strong>single-next-action</strong> breakdown:<ul>
+<li><code>module</code> / <code>moduleName</code> — the module hit</li>
+<li><code>nextAction</code> — the next step doable within 30 seconds</li>
+<li><code>whyNow</code> — why this step (the module&#39;s cognitive fact)</li>
+<li><code>timeboxEstimate</code> — concrete minute estimate (never &quot;soon&quot;)</li>
+<li><code>energyRequired</code> — how much energy this step needs</li>
+<li><code>steps</code> — 1-3 steps (each &lt;60 s), never a full list dumped at once</li>
+<li>Full skill content: <code>skills/adhd-copilot/SKILL.md</code> + <code>references/*.md</code> (11 files, shipped <strong>verbatim</strong> — that is the deliverable value)</li>
+</ul>
+</li>
+<li><strong>Pre-flight gate</strong>: no task signal → stay silent, zero interference; tiny request → answer directly without the process.</li>
+<li><strong>Fuzzy signals</strong> → offer the A-G self-service menu (user choice = agency + fewer misreads).</li>
+<li><strong>Output discipline</strong>: first line is an action, numbered steps ≤3, ends with a 30-second next step, praise bound to concrete wins, never fakes a timer.</li>
+<li>Zero build, zero runtime dependencies — pure ESM, the published package is the runtime code.</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-bash"># from npm
+dsh plugin --profile myprofile add dsh-adhd-copilot
+
+# from GitHub (lock the commit for supply-chain hygiene)
+dsh plugin --profile myprofile add github:zimai233/dsh-adhd-copilot#&lt;sha&gt;
+</code></pre>
+<h3>Usage</h3>
+<p>Ask the agent in natural language:</p>
+<blockquote>
+<p>&quot;I&#39;ve been putting off my weekly report for two weeks, help me start.&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;Too many things piled up, my head is a mess, I don&#39;t know what to do first.&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;I failed again, why am I so bad at this.&quot;</p>
+</blockquote>
+<p>The agent calls <code>adhd_breakdown</code> and gets a structured breakdown like:</p>
+<pre><code class="language-json">{
+  &quot;module&quot;: &quot;M1&quot;,
+  &quot;moduleName&quot;: &quot;任务破碎机 (Task Breaker)&quot;,
+  &quot;nextAction&quot;: &quot;打开与「周报」相关的文件或页面（30 秒内）&quot;,
+  &quot;whyNow&quot;: &quot;启动最难：第一个动作必须明显、微小、现在就能做。一次只给 1-3 步，每步 &lt;60 秒，跑完再要。&quot;,
+  &quot;timeboxEstimate&quot;: &quot;第一步 &lt;60 秒；本轮 2 步，跑完再要下一步&quot;,
+  &quot;energyRequired&quot;: &quot;低（仅需打开文件）&quot;,
+  &quot;steps&quot;: [&quot;打开与「周报」相关的文件或页面（30 秒内）&quot;, &quot;写下这一行标题：「周报」&quot;]
+}
+</code></pre>
+<p>Which renders into a discipline-compliant coaching reply:</p>
+<blockquote>
+<p>Weekly report — don&#39;t finish it yet. Just do the first step:</p>
+<ol>
+<li>Open the file or page for the weekly report (within 30 seconds)</li>
+<li>Write this line as the title: &quot;Weekly report&quot;</li>
+</ol>
+<p>Each step &lt;60 s. Reply &quot;done&quot; when finished (optional, non-blocking). You started — this step is already won.</p>
+</blockquote>
+<p>Optional parameters: <code>battery</code> (energy level, for M3), <code>narrative</code> (narrative style, M5 opt-in), <code>estimatedMinutes</code> (your own time estimate, for M6), <code>parked</code> / <code>dropped</code> (park / drop lists, for M2).</p>
+<h3>Skill structure</h3>
+<p><code>skills/adhd-copilot/</code> holds the complete, standalone coaching methodology:</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>SKILL.md</code></td>
+<td>When to use, core principles, state routing table, output discipline summary, anti-patterns, safety boundary, pre-send check</td>
+</tr>
+<tr>
+<td><code>references/core-workflow.md</code></td>
+<td>Five cognitive facts, pre-flight gate, five-step flow, state priority, quality floor</td>
+</tr>
+<tr>
+<td><code>references/state-scanner.md</code></td>
+<td>State routing table, A-G self-service menu, lazy user profile</td>
+</tr>
+<tr>
+<td><code>references/output-discipline.md</code></td>
+<td>Seven output disciplines + exceptions + pre-send check</td>
+</tr>
+<tr>
+<td><code>references/M1-task-breaker.md</code></td>
+<td>Can&#39;t-start → 1-3 steps at a time, each &lt;60 s</td>
+</tr>
+<tr>
+<td><code>references/M2-external-brain.md</code></td>
+<td>Overwhelm → one thing + one Next Action in the now zone</td>
+</tr>
+<tr>
+<td><code>references/M3-dopamine-architect.md</code></td>
+<td>Unmotivated → energy-matched menu (appetizer / main / side)</td>
+</tr>
+<tr>
+<td><code>references/M4-body-double.md</code></td>
+<td>Distractible / needs company → self-contained launch instruction, checkpoints optional</td>
+</tr>
+<tr>
+<td><code>references/M5-interest-gamifier.md</code></td>
+<td>Interest gamification (opt-in only)</td>
+</tr>
+<tr>
+<td><code>references/M6-time-auditor.md</code></td>
+<td>Time misjudgment → estimate vs. reality in three parts</td>
+</tr>
+<tr>
+<td><code>references/M7-adhd-reset.md</code></td>
+<td>Self-blame → stop evaluating → shrink the goal → one 30-second action</td>
+</tr>
+<tr>
+<td><code>references/M8-router.md</code></td>
+<td>Can&#39;t decide → 2-3 frameworks + traps + converge to one action</td>
+</tr>
+</tbody></table>
+<h3>Development</h3>
+<pre><code class="language-bash">npm test          # node --test test/ — covers pure breakdown logic, skill-file integrity, verbatim-copy checks
+node --check src/index.js
+</code></pre>
+<h3>Honest by design</h3>
+<ul>
+<li><strong>No timers.</strong> AI can&#39;t appear while you work; all mid-task checkpoints are optional.</li>
+<li><strong>No cross-session memory promises.</strong> Persistence only if the platform has it.</li>
+<li><strong>Zero interference.</strong> Completely silent when there&#39;s no task signal.</li>
+<li><strong>Safety boundary.</strong> This is an execution aid, not medical care. On signs of crisis or self-harm, it gently suggests professional help instead of pushing tasks.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zimai233/dsh-adhd-copilot/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

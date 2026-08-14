@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,143 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:anweat/dsh-voice-webspeech</pre><button type="button" data-cmd="dsh plugin --profile web add github:anweat/dsh-voice-webspeech" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/anweat/dsh-voice-webspeech"><img src="https://img.shields.io/badge/GitHub-anweat%2Fdsh--voice--webspeech-24292e?logo=github" alt="GitHub"></a>
+<a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DSH-%3E%3D0.1.0--rc.3%20%3C0.2.0-5b8def" alt="DSH"></a>
+<a href="https://github.com/anweat/dsh-voice-webspeech/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></p>
+<p>DSH Web GUI 的<strong>纯浏览器语音输入</strong>插件：零服务端、零 API Key、零模型下载、零 Python。
+按住输入框旁的麦克风按钮说话，松手即把语音转成文字——转写完全由<strong>浏览器内置语音识别</strong>
+（Web Speech API）完成：</p>
+<table>
+<thead>
+<tr>
+<th>浏览器</th>
+<th>实际语音服务</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Microsoft Edge</td>
+<td>微软 Azure 语音</td>
+</tr>
+<tr>
+<td>Google Chrome</td>
+<td>Google/Chrome 语音</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>与社区里 <code>dsh-voice-funasr</code> 的差异：后者以<strong>本地 FunASR 引擎</strong>为主（需安装 Python +
+下载 ~520MB 模型），浏览器识别只是回退路径。本插件只做&quot;浏览器内置识别&quot;这一件事，
+安装即用，适合不想要本地引擎开销的用户。</p>
+</blockquote>
+<h3>特性</h3>
+<ul>
+<li><strong>按住说话 / 松手转文字</strong>：按住麦克风按钮开始聆听，松手停止；期间连续短句自动累积。</li>
+<li><strong>实时反馈</strong>：聆听时按钮上方悬浮显示&quot;正在聆听… + 实时识别文字&quot;（可关闭）。</li>
+<li><strong>两种落字方式</strong>（设置里切换）：<ul>
+<li>默认&quot;转进输入框&quot;：识别结果写入 composer，可编辑后再发送；支持<strong>追加</strong>到已有文字。</li>
+<li>&quot;松手自动发送&quot;：识别完成直接发送（免提）。</li>
+</ul>
+</li>
+<li><strong>多语言</strong>：中文普通话/粤语/繁体、英/日/韩/法/德/西/俄等（BCP-47）。</li>
+<li><strong>隐私</strong>：音频直接交给浏览器语音服务，不经过任何 DSH 服务端、不落盘。</li>
+</ul>
+<h3>兼容性</h3>
+<ul>
+<li>DSH：<code>&gt;=0.1.0-rc.3 &lt;0.2.0</code>（Profile Bundle + 嵌套 <code>dsh.client</code> 契约）</li>
+<li>Node.js：<code>^22.19.0 || &gt;=24.0.0</code></li>
+<li>浏览器：需 Edge 或 Chrome（Web Speech API）；Firefox/Safari 不支持</li>
+<li>麦克风：浏览器需获得麦克风权限（首次使用会在地址栏请求授权）</li>
+</ul>
+<h3>安装</h3>
+<p>插件为 out-of-tree client bundle（<code>dsh.client</code> + <code>dsh.bundle.patch</code>）。
+仓库已提交构建产物 <code>lib/</code>，git 安装无需再 build。</p>
+<h4>方式 A：从 GitHub 安装（推荐）</h4>
+<pre><code class="language-sh">pnpm dsh plugin --profile web add github:anweat/dsh-voice-webspeech
+</code></pre>
+<blockquote>
+<p>若 pnpm ≥10 提示需要 allowBuilds（因 <code>prepare</code>），把打印的包键写进 profile 的
+<code>pnpm-workspace.yaml</code> 后重跑；本仓库已提交 <code>lib/</code>，通常不会触发。建议固定到提交：
+<code>github:anweat/dsh-voice-webspeech#&lt;sha&gt;</code>。</p>
+</blockquote>
+<h4>方式 B：本地 checkout 开发链接</h4>
+<pre><code class="language-sh">cd D:/codeproject/dsh-voice-webspeech
+pnpm dsh plugin --profile web add .
+</code></pre>
+<h4>方式 C：打包 tgz 安装</h4>
+<pre><code class="language-sh">cd D:/codeproject/dsh-voice-webspeech
+pnpm run build
+pnpm pack    # 产出 dsh-voice-webspeech-0.1.0.tgz
+pnpm dsh plugin --profile web add ./dsh-voice-webspeech-0.1.0.tgz
+</code></pre>
+<p><strong>激活</strong>：重启 <code>dsh web</code>（<code>pnpm dsh web</code>）。插件的 <code>dsh.bundle.patch</code> 会把它自动挂进
+插件树，客户端 bundle 由 <code>dsh.client</code> 声明 + <code>exports[&quot;./client&quot;]</code> 自动加载。
+不要手工把本插件插进 profile 的 <code>cordis.patch.yml</code>，否则同一 loader id 会重复。</p>
+<h3>使用</h3>
+<ul>
+<li>输入框工具行左侧出现<strong>麦克风按钮</strong>：<strong>按住说话，松手转文字</strong>。</li>
+<li>默认把文字写进输入框（追加到已有文字后）；可在 <strong>设置 → 语音输入（Web Speech）</strong> 改为
+&quot;松手自动发送&quot;。</li>
+<li>聆听时按钮变红并脉动；识别中的文字实时显示在按钮上方。</li>
+</ul>
+<h3>设置（设置 → 语音输入（Web Speech））</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>识别语言</td>
+<td>zh-CN</td>
+<td>普通话/粤语/繁体/英/日/韩/法/德/西/俄</td>
+</tr>
+<tr>
+<td>松手自动发送</td>
+<td>关</td>
+<td>开启后按住说话、松手直接发送</td>
+</tr>
+<tr>
+<td>追加到已有文字</td>
+<td>开</td>
+<td>关闭则每次识别替换输入框内容</td>
+</tr>
+<tr>
+<td>显示实时识别</td>
+<td>开</td>
+<td>聆听时实时显示识别中的文字</td>
+</tr>
+</tbody></table>
+<h3>隐私与卸载</h3>
+<ul>
+<li>音频只交给浏览器语音服务（Edge=Azure、Chrome=Google），不经过 DSH 服务端、不落盘、无遥测。</li>
+<li>卸载：<code>pnpm dsh plugin --profile web remove dsh-voice-webspeech</code>（或从 profile 依赖里删掉再 <code>pnpm install</code>）。</li>
+</ul>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run dev:link-dsh -- --source D:/codeproject/deepseek-harness   # 可选：从源码链接 @deepseek-ai 类型
+pnpm run build
+pnpm run typecheck
+</code></pre>
+<ul>
+<li>host 半：<code>src/index.ts</code>（空 <code>apply</code>，仅让插件出现在宿主插件树）</li>
+<li>客户端：<code>src/client/</code>（tsdown → <code>lib/client.js</code>，<code>__ModuleLoader__</code> 注册）</li>
+<li>识别：<code>src/client/webspeech.ts</code>（Web Speech API 封装：continuous + interim + abort）</li>
+<li><code>@deepseek-ai/*</code> 是 peer 依赖（optional），构建时外部化，运行时由 DSH 提供。</li>
+</ul>
+<h3>路线图</h3>
+<ul>
+<li>v0.1：按住说话 + 连续听写 + 追加/自动发送 + 多语言 + 实时反馈 ✅</li>
+<li>后续：本地 ASR 可选后端（SenseVoice/Whisper）；TTS 语音朗读回复；快捷键按住</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/anweat/dsh-voice-webspeech/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

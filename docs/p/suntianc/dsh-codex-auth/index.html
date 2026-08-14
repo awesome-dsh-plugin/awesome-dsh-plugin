@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,151 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:suntianc/dsh-codex-auth</pre><button type="button" data-cmd="dsh plugin --profile web add github:suntianc/dsh-codex-auth" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p>English | <a href="https://github.com/suntianc/dsh-codex-auth/blob/main/README.zh.md">中文</a></p>
+<p>A self-contained <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>
+plugin that reuses the ChatGPT login maintained by the official <strong>Codex CLI</strong>
+(<code>~/.codex/auth.json</code>, or <code>$CODEX_HOME/auth.json</code>). It registers the
+<code>openai-codex</code> LLM route and adds a native <strong>GPT Auth</strong> section to the Harness
+Settings UI.</p>
+<blockquote>
+<p><strong>⚠️ Unofficial channel — personal development only.</strong> The pi-ai Codex
+provider talks to the unofficial <code>chatgpt.com/backend-api</code> surface. It may be
+rate-limited, revoked, or changed at any time and must not be relied on for
+production use.</p>
+</blockquote>
+<h3>Features</h3>
+<ul>
+<li>Registers the <code>openai-codex</code> route using the installed pi-ai provider.</li>
+<li>Reads the current Codex access token only when needed and refreshes it through
+the official OAuth token endpoint before expiry.</li>
+<li>Starts the official <code>codex login</code> browser or device-code flow.</li>
+<li>Adds an independently navigable <code>GPT Auth</code> Settings section using native DSH
+buttons, status indicators, tokens, and the stock gear icon.</li>
+<li>Uses a plugin-owned, loopback-only <code>/codex-auth</code> Connection RPC channel.</li>
+<li>Never sends token values to the browser, Harness settings, or logs.</li>
+<li>Installs without modifying the Harness Web shell, apiproxy, or source tree.</li>
+</ul>
+<h3>Requirements</h3>
+<ul>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code> or newer compatible <code>0.1.x</code> release.</li>
+<li>Node.js <code>^22.19.0</code> or <code>&gt;=24.0.0</code>.</li>
+<li>The <code>codex</code> CLI available on <code>PATH</code>.</li>
+<li>Run <code>codex login</code> before use, or start login from the GPT Auth card.</li>
+</ul>
+<h3>Install from npm (recommended)</h3>
+<p>The npm package includes prebuilt Host and browser bundles, so no install-time
+build permission is required:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-codex-auth
+</code></pre>
+<p>Restart <code>dsh web</code>, open Settings, and select <strong>GPT Auth</strong>.</p>
+<h3>Install a prebuilt release</h3>
+<p>The release tarball already contains both bundles and needs no install-time
+build permission:</p>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/suntianc/dsh-codex-auth/releases/download/v0.1.0/dsh-codex-auth-0.1.0.tgz
+</code></pre>
+<p>Restart <code>dsh web</code>, open Settings, and select <strong>GPT Auth</strong>.</p>
+<h3>Install from GitHub source</h3>
+<p>Install the repository into the profile you run:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:suntianc/dsh-codex-auth
+</code></pre>
+<p>Git dependencies are built from source by the package&#39;s <code>prepare</code> script.
+pnpm 10+ blocks that script until explicitly allowed, so the first command may
+print an <code>allowBuilds</code> key and stop. Copy the <strong>exact key printed by dsh</strong> under
+<code>allowBuilds</code> in <code>~/.dsh/profiles/web/pnpm-workspace.yaml</code>, then run the command
+again. Only grant this permission after reviewing the source.</p>
+<p>For a reproducible install, pin a release tag or commit:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:suntianc/dsh-codex-auth#v0.1.0
+</code></pre>
+<p>Restart <code>dsh web</code>, open Settings, and select <strong>GPT Auth</strong>.</p>
+<h3>Install a tarball</h3>
+<p>A tarball contains prebuilt Host and browser bundles and requires no install-time
+build permission:</p>
+<pre><code class="language-sh">git clone https://github.com/suntianc/dsh-codex-auth.git
+cd dsh-codex-auth
+pnpm install
+pnpm pack
+dsh plugin --profile web add ./dsh-codex-auth-0.1.0.tgz
+</code></pre>
+<h3>Configuration</h3>
+<p>All plugin-row fields are optional:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>authJsonPath</code></td>
+<td><code>&#39;&#39;</code> → <code>$CODEX_HOME</code>/<code>~/.codex/auth.json</code></td>
+<td>Codex auth file</td>
+</tr>
+<tr>
+<td><code>credentialRef</code></td>
+<td><code>CODEX_CHATGPT_TOKEN</code></td>
+<td>Value-free reference shown by the card</td>
+</tr>
+<tr>
+<td><code>refreshLeadMs</code></td>
+<td><code>300000</code></td>
+<td>Refresh lead time in milliseconds</td>
+</tr>
+<tr>
+<td><code>codexCommand</code></td>
+<td><code>codex</code></td>
+<td>CLI command used for login and version probing</td>
+</tr>
+<tr>
+<td><code>displayName</code></td>
+<td><code>OpenAI Codex (chatgpt)</code></td>
+<td>Provider label in model selectors</td>
+</tr>
+</tbody></table>
+<p>The package includes its own <code>dsh.bundle</code> patch, so <code>dsh plugin</code> installs and
+activates it. Do not also add an <code>openai-codex</code> entry under
+<code>llm-pi-ai.providers</code>; duplicate route registrations conflict.</p>
+<h3>Security and limitations</h3>
+<ul>
+<li>Token contents never cross the dedicated RPC channel. Status contains only
+availability, auth mode, expiry, refresh time, and a non-secret reference.</li>
+<li>Refresh writes preserve unknown fields and atomically replace the auth file
+with owner-only (<code>0600</code>) permissions.</li>
+<li>The RPC channel is restricted to loopback authorities.</li>
+<li>When Codex stores credentials only in the OS keyring, <code>auth.json</code> may contain
+no usable token. Set <code>cli_auth_credentials_store = &quot;file&quot;</code> in
+<code>~/.codex/config.toml</code>, then run <code>codex login</code> again.</li>
+<li>A missing login or failed refresh produces a <code>MISSING_CREDENTIAL</code> diagnostic;
+a missing Codex CLI disables the login actions.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run check
+</code></pre>
+<p><code>pnpm run build</code> emits:</p>
+<ul>
+<li><code>lib/index.js</code> — Host plugin</li>
+<li><code>lib/invariant.js</code> — invariant companion</li>
+<li><code>lib/client.js</code> — loader-compatible browser plugin with inline CSS Modules</li>
+<li><code>lib/types/**</code> — declaration files</li>
+</ul>
+<p>The standalone build preset in <code>build/client-bundle.ts</code> deliberately carries the
+small Web-loader and CSS contract needed by this dual-face plugin; it does not
+import files from a DeepSeek Harness checkout.</p>
+<p>See <a href="https://github.com/suntianc/dsh-codex-auth/blob/main/docs/design.md"><code>docs/design.md</code></a> for the design record and glossary.</p>
+<h3>Friendship links</h3>
+<ul>
+<li><a href="https://linux.do/">L 站</a></li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/suntianc/dsh-codex-auth/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

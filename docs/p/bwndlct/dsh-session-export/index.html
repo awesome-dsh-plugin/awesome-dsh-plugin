@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,171 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:bwndlct/dsh-session-export</pre><button type="button" data-cmd="dsh plugin --profile web add github:bwndlct/dsh-session-export" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>简体中文</strong> | <a href="https://github.com/bwndlct/dsh-session-export/blob/main/README.en.md">English</a></p>
+<h2>dsh-session-export</h2>
+<p>将 DeepSeek Harness（DSH）会话导出为可移植、人类可读的 <strong>Markdown</strong> 和结构化 <strong>JSON</strong> 文件。</p>
+<p><code>dsh-session-export</code> 是 <a href="https://www.npmjs.com/package/@deepseek-ai/dsh">DeepSeek Harness</a> 的社区插件。它读取当前会话的事件溯源日志，输出自包含的对话记录文件——可阅读、归档、分享、diff，或喂给另一个 agent——导出格式采用稳定、带版本号的 schema，与 DSH 内部实现解耦。</p>
+<h3>特性</h3>
+<ul>
+<li><strong>两种入口</strong><ul>
+<li><code>session_export()</code> 工具 — 随时让模型执行导出</li>
+<li><code>/session-export [markdown|json|all]</code> 斜杠命令 — Web UI 中一键触发，零模型 token 消耗</li>
+</ul>
+</li>
+<li><strong>忠实还原执行顺序</strong> — 用户消息、助手消息（含推理过程）、工具调用（含解析后的参数）、工具结果（含失败）严格按发生顺序排列</li>
+<li><strong>稳定的导出 schema</strong> — 每个 JSON 文档都带 <code>schemaVersion</code>，为后续演进留出空间</li>
+<li><strong>健壮设计</strong> — 未知的未来事件类型、缺失元数据、恶意代码围栏、超大工具结果、非文本块均不会导致导出崩溃</li>
+<li><strong>跨平台安全的文件名</strong> — 处理 Windows 保留名称/字符；已有文件绝不覆盖</li>
+<li><strong>零运行时依赖</strong> — 仅 TypeScript + Node 内置模块</li>
+</ul>
+<h3>安装</h3>
+<p>需要 <code>dsh &gt;= 0.1.0-rc.6</code>。</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-session-export
+</code></pre>
+<p>然后将包加入 profile 的 <code>package.json</code> 中的 <code>bundles</code> 列表（插件自带 <code>dsh.bundle</code> patch manifest）：</p>
+<pre><code class="language-jsonc">// ~/.dsh/profiles/web/package.json
+&quot;dsh&quot;: {
+  &quot;profile&quot;: {
+    &quot;bundles&quot;: [
+      // ...,
+      &quot;dsh-session-export&quot;
+    ]
+  }
+}
+</code></pre>
+<p>完成后重启 <code>dsh</code>。如果要从 GitHub 而非 npm 安装：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:&lt;your-org&gt;/dsh-session-export
+</code></pre>
+<h3>用法</h3>
+<p>直接让模型执行：</p>
+<pre><code class="language-text">把当前会话导出成 Markdown
+Export this session, json only
+</code></pre>
+<p>或在 Web UI 中直接输入斜杠命令：</p>
+<pre><code class="language-text">/session-export            # 两种格式（默认）
+/session-export markdown   # 仅 .md
+/session-export json       # 仅 .json
+/session-export all        # 两种格式
+</code></pre>
+<p>不想带参数？固定格式别名一个词搞定（UI 命令输入框没有枚举补全，别名最方便）：</p>
+<pre><code class="language-text">/export-md       # 仅 Markdown
+/export-json     # 仅 JSON
+</code></pre>
+<p>命令在 UI 命令平面中执行——其输出不会进入模型对话历史。</p>
+<h3>导出格式</h3>
+<h4>Markdown</h4>
+<p>可读的对话记录：元数据头部 + 按执行顺序排列的会话内容。工具调用将其（解析后的）参数渲染为 JSON；工具结果渲染为围栏 <code>text</code> 代码块——围栏会自动加宽，确保含 ``` 的结果内容不会撑破代码块。超过 8,000 字符的结果会被截断并标记。</p>
+<h4>JSON</h4>
+<p>由本插件定义的稳定文档格式（非 DSH 内部结构转储）：</p>
+<pre><code class="language-json">{
+  &quot;schemaVersion&quot;: &quot;1.0&quot;,
+  &quot;session&quot;: {
+    &quot;id&quot;: &quot;session-e6bb6821-…&quot;,
+    &quot;createdAt&quot;: &quot;2026-08-14T09:52:59.798Z&quot;,
+    &quot;exportedAt&quot;: &quot;2026-08-14T09:53:24.300Z&quot;,
+    &quot;model&quot;: &quot;glm-5.3&quot;,
+    &quot;provider&quot;: &quot;zai-coding-cn&quot;,
+    &quot;cwd&quot;: &quot;/private/tmp/dsh-export-verify&quot;,
+    &quot;asOfSeq&quot;: 137,
+    &quot;eventCount&quot;: 6,
+    &quot;omitted&quot;: { &quot;contextMessages&quot;: 2 }
+  },
+  &quot;events&quot;: [
+    { &quot;type&quot;: &quot;user_message&quot;, &quot;seq&quot;: 6, &quot;timestamp&quot;: &quot;…&quot;, &quot;content&quot;: &quot;…&quot; },
+    { &quot;type&quot;: &quot;assistant_message&quot;, &quot;seq&quot;: 9, &quot;timestamp&quot;: &quot;…&quot;, &quot;content&quot;: &quot;…&quot;, &quot;reasoning&quot;: &quot;…&quot;, &quot;provider&quot;: &quot;…&quot;, &quot;model&quot;: &quot;…&quot; },
+    { &quot;type&quot;: &quot;tool_call&quot;, &quot;seq&quot;: 10, &quot;timestamp&quot;: &quot;…&quot;, &quot;callId&quot;: &quot;…&quot;, &quot;tool&quot;: &quot;bash&quot;, &quot;arguments&quot;: { &quot;command&quot;: &quot;echo hi&quot; } },
+    { &quot;type&quot;: &quot;tool_result&quot;, &quot;seq&quot;: 11, &quot;timestamp&quot;: &quot;…&quot;, &quot;callId&quot;: &quot;…&quot;, &quot;tool&quot;: &quot;bash&quot;, &quot;success&quot;: true, &quot;content&quot;: &quot;hi\n&quot; },
+    { &quot;type&quot;: &quot;unknown_event&quot;, &quot;seq&quot;: 99, &quot;timestamp&quot;: &quot;…&quot;, &quot;eventType&quot;: &quot;future/thing&quot; }
+  ]
+}
+</code></pre>
+<p>关于保真度的说明：</p>
+<ul>
+<li><code>tool_call.arguments</code> 在模型输出的原始字符串不是合法 JSON 时保留原样。</li>
+<li><code>tool_result.error</code> 携带失败调用的内部 <code>{ name, code }</code> 标识。</li>
+<li>推理过程在 DSH 将其记录到助手消息上时才会导出；不会反射或提取任何私密信息。</li>
+<li>仅用于日志记录的簿记事件（轮次/步骤边界、流式块、todo 快照、请求头、权限预设等）有意跳过；注入的上下文消息（指令、技能、通知）默认省略，计入 <code>session.omitted</code>。</li>
+<li>压缩替换节点被跳过（按 DSH 对话记录约定，面向人类的记录只投影追加来源事件）；数量记录在 <code>session.omitted.replacedEvents</code> 中。</li>
+<li>未知的未来事件类型以 <code>unknown_event</code> 条目呈现——绝不崩溃。</li>
+</ul>
+<h3>示例</h3>
+<p>Markdown 输出（截短）：</p>
+<pre><code class="language-markdown"># DSH Session Export
+
+## Metadata
+
+- Session ID: session-e6bb6821-2a4c-40a3-a178-13ea25ccfe4e
+- Model: zai-coding-cn / glm-5.3
+- Working Directory: /private/tmp/dsh-export-verify
+- Exported Events: 6
+
+---
+
+## User
+
+先用 bash 运行 echo verify-2 …
+
+## Assistant
+
+_zai-coding-cn / glm-5.3_
+
+&gt; The user wants me to: …
+
+### Tool Call: `bash`
+
+```json
+{
+  &quot;command&quot;: &quot;echo verify-2&quot;
+}
+```
+
+### Tool Result — `bash` (ok)
+
+```text
+verify-2
+```
+</code></pre>
+<h3>输出目录</h3>
+<p>导出文件位于 <code>&lt;会话工作目录&gt;/.dsh/exports/</code>：</p>
+<pre><code class="language-text">.dsh/exports/session-&lt;session-id&gt;-&lt;UTC 时间戳&gt;.md
+.dsh/exports/session-&lt;session-id&gt;-&lt;UTC 时间戳&gt;.json
+</code></pre>
+<p>目录自动创建，文件名经 Windows/macOS/Linux 安全处理，重名时追加 <code>-1</code>、<code>-2</code>……而非覆盖。</p>
+<h3>隐私</h3>
+<p>**导出文件可能包含敏感数据。**对话记录可能含有你的源代码、工具读取的文件内容、工具参数（路径、命令、查询）、工具结果、API 响应以及绝对文件系统路径。分享前请务必检查——本插件不做任何脱敏处理。</p>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck
+pnpm run build
+pnpm test          # node:test，无额外依赖
+</code></pre>
+<p>代码布局：</p>
+<pre><code class="language-text">src/
+  index.ts            # 插件入口：工具 + 斜杠命令
+  session-adapter.ts  # DSH 会话 -&gt; 导出 schema（唯一含 DSH 类型的模块）
+  schema.ts           # 插件自有导出 schema 类型定义
+  markdown.ts         # Markdown 渲染器（纯函数）
+  json.ts             # JSON 渲染器（纯函数）
+  exporter.ts         # 文件名生成 + 文件写入
+test/                 # node:test 套件，覆盖 markdown / json / 文件名
+</code></pre>
+<p>渲染器和 schema 不依赖 DSH，因此导出格式可独立于 DSH Developer Preview API 进行单元测试和演进。</p>
+<h3>兼容性</h3>
+<ul>
+<li>基于 <code>@deepseek-ai/dsh 0.1.0-rc.6</code>（DSH Developer Preview）构建和验证。</li>
+<li>使用公开插件接口：<code>@deepseek-ai/dsh-tools</code> 的 <code>ctx.tools.register()</code> / <code>defineTool</code>、<code>@deepseek-ai/dsh-commands</code> 的可选 <code>ctx.commands</code> 服务，以及 <code>@deepseek-ai/dsh-session</code> 的公开 <code>Session</code> 事件日志。不触及任何私有字段，不做核心修改。</li>
+<li>斜杠命令仅在挂载了 commands 服务的 profile（如 <code>web</code>）中注册；工具在所有 profile 下均可使用，包括 <code>headless</code>。</li>
+</ul>
+<h3>许可证</h3>
+<p><a href="https://github.com/bwndlct/dsh-session-export/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/bwndlct/dsh-session-export/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

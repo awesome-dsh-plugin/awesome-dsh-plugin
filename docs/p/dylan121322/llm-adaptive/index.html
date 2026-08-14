@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,56 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:dylan121322/llm-adaptive</pre><button type="button" data-cmd="dsh plugin --profile web add github:dylan121322/llm-adaptive" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>Adaptive model routing plugin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. Adds an <code>adaptive</code> provider to the model picker: every LLM request is classified by a flash classifier (low / medium / high / critical) and routed to the matching backend provider through config-driven chains.</p>
+<h3>Features</h3>
+<ul>
+<li><strong>Per-request complexity classification</strong> — <code>deepseek-v4-flash</code> called directly (never through a proxy, no recursion).</li>
+<li><strong>Context-aware judging</strong> — injects a rolling session-goal summary plus the recent turns into the classifier prompt (continuation / wrap-up / error-loop rules).</li>
+<li><strong>Sticky level protection</strong> — a mid-task downgrade is held at the previous level unless the message carries explicit downgrade or wrap-up signals.</li>
+<li><strong>Config-driven routing chains</strong> — chains come from <code>pool.json</code> → <code>routing.levels</code> (<code>$active</code> expands to the active provider, missing entries fall back to defaults); transport failures walk down the chain.</li>
+<li><strong>Classifier config from the pool</strong> — URL / model / key reference read from the <code>classifier</code> section of <code>pool.json</code> (no hardcoded credentials).</li>
+<li><strong>Fail-open</strong> — any classification failure degrades to <code>medium</code>; never blocks a request.</li>
+<li><strong>Observable</strong> — every decision (level, cause: llm/sticky/cache) is written to the plugin log.</li>
+<li><strong>120s decision cache</strong> — keyed by user-text head plus goal fingerprint.</li>
+</ul>
+<h3>Requirements</h3>
+<ul>
+<li>DeepSeek Harness (dsh)</li>
+<li>A model pool file at <code>~/.dsh/tools/cc-switch-sync/pool.json</code> with:<ul>
+<li><code>classifier</code> section: <code>url</code>, <code>model</code>, <code>key_ref</code> (resolved against <code>~/.dsh/.credentials.yaml</code>, pool <code>api_key</code> as fallback)</li>
+<li><code>routing.levels</code>: <code>low</code> / <code>medium</code> / <code>high</code> / <code>critical</code> chains</li>
+</ul>
+</li>
+<li>A DeepSeek API key for the classifier</li>
+</ul>
+<p>The pool file is produced by the <code>cc-switch-sync</code> import tool (or can be authored by hand). The plugin reads it on every request, so pool edits take effect immediately.</p>
+<h3>Install</h3>
+<pre><code class="language-bash">dsh plugin add llm-adaptive
+</code></pre>
+<p>or, from a local checkout:</p>
+<pre><code class="language-bash">cd ~/.dsh/profiles/web &amp;&amp; npx pnpm@10 install   # with &quot;llm-adaptive&quot;: &quot;file:plugins/llm-adaptive&quot;
+</code></pre>
+<p>Restart the dsh web service, then select <code>adaptive（自动路由）</code> in the <code>/model</code> picker.</p>
+<h3>Usage</h3>
+<ol>
+<li>Open <code>/model</code> and choose <code>adaptive（自动路由）</code>.</li>
+<li>Every subsequent LLM request is classified (low/medium/high/critical) and routed to the first available provider of that level&#39;s chain.</li>
+<li>Decisions are logged with <code>level=… cause=… chain=…</code> to <code>~/.dsh/hooks/plugin.log</code>.</li>
+</ol>
+<p>The explicit level models (<code>low</code>, <code>medium</code>, <code>high</code>, <code>critical</code>) are also listed in the picker for direct selection.</p>
+<h3>How it works</h3>
+<p>A custom <code>LlmAdapter</code> for the <code>adaptive</code> provider: <code>stream()</code> awaits classification (async generator), then forwards to the target backend via <code>ctx.llm.prepareCall</code> + <code>stream</code> (unified chunk protocol, passthrough). Request-level interception was chosen over proxy or request-layer hooks because dsh hot-swaps configuration and the prepared-call contract requires matching provider/model options.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/dylan121322/llm-adaptive/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

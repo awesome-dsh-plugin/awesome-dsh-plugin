@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,100 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:LoserFox/telegram</pre><button type="button" data-cmd="dsh plugin --profile web add github:LoserFox/telegram" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h3>安装（DSH profile bundle）</h3>
+<pre><code class="language-sh"># 从本仓库 checkout 安装到 profile（web / headless 等），bundle 声明自动加入组合层
+dsh plugin --profile web add &lt;dir|git-url&gt;
+# 验证
+dsh --profile web --dump-config | grep telegram
+</code></pre>
+<ul>
+<li>插入行 id：<code>telegram</code>（cordis.patch.yml）；不声明模型面工具或技能——它是把 Telegram 聊天桥接到 agent 会话的后台服务插件。</li>
+<li><strong>加载即需要 token</strong>：缺少 bot token（配置 <code>token</code> 或环境变量 <code>DSH_TELEGRAM_TOKEN</code>）时 <code>apply</code> 直接报错；没有 token 不会惰性启动。</li>
+<li><strong>宿主前置条件</strong>：dsh 组合必须挂载 <code>agents</code> 服务（<code>@deepseek-ai/dsh-agent</code>）；LLM 适配器、会话与工具来自外围 <code>cordis.yml</code>（见 <a href="https://github.com/LoserFox/telegram/blob/main/examples/telegram-agent/README.zh.md"><code>telegram-agent</code></a> 示例）。</li>
+<li>卸载：<code>dsh plugin --profile web remove telegram</code>。</li>
+<li>安装后需重启目标 profile 的 DSH 进程（组合层变更不参与 HMR 热更新）。</li>
+</ul>
+<h3>概述</h3>
+<p><code>telegram</code> 插件通过 Bot API 长轮询把 Telegram 聊天桥接到 harness agent 会话，每个聊天一个 agent 会话。设计参照 <a href="https://github.com/NousResearch/hermes-agent">Hermes</a> 的 telegram 平台适配器——每聊天会话、用户白名单、HTML 格式化、4096 字符分片、typing 指示——裁剪为 harness 的纯文本接缝。<a href="https://github.com/LoserFox/telegram/blob/main/examples/telegram-agent/README.zh.md"><code>telegram-agent</code></a> 是可运行的 <code>cordis.yml</code> 应用。</p>
+<h3>接线</h3>
+<p><code>inject: [&#39;agents&#39;]</code>。每条已授权文本消息为每个聊天创建或复用 agent（<code>ctx.agents.create</code>），经 <code>followup</code> 以用户消息转发文本，并把每条 <code>assistant/message</code> 文本作为分片的 HTML 格式 Telegram 消息送回聊天。命令：<code>/start</code>（欢迎）、<code>/new</code> 与 <code>/clear</code>（新会话，旧 agent 释放）、<code>/help</code>。LLM 适配器、会话与工具来自外围 <code>cordis.yml</code>。</p>
+<h3>配置</h3>
+<table>
+<thead>
+<tr>
+<th>键</th>
+<th>默认</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>token</code></td>
+<td><code>&#39;&#39;</code></td>
+<td>@BotFather 创建的 bot token；为空时回退到 <code>DSH_TELEGRAM_TOKEN</code></td>
+</tr>
+<tr>
+<td><code>allowedUserIds</code></td>
+<td><code>[]</code></td>
+<td>允许与 bot 对话的 Telegram 用户 id；空列表拒绝所有人</td>
+</tr>
+<tr>
+<td><code>allowAllUsers</code></td>
+<td><code>false</code></td>
+<td>允许任意用户（仅开发用）</td>
+</tr>
+<tr>
+<td><code>provider</code></td>
+<td><code>deepseek-official</code></td>
+<td>传给每个创建 agent 的 LLM provider id</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td><code>deepseek-v4-flash</code></td>
+<td>传给每个创建 agent 的模型 id</td>
+</tr>
+<tr>
+<td><code>maxMessageLength</code></td>
+<td><code>4096</code></td>
+<td>每条 Telegram 消息的长度上限</td>
+</tr>
+<tr>
+<td><code>pollingTimeoutSec</code></td>
+<td><code>30</code></td>
+<td>长轮询超时（秒）</td>
+</tr>
+</tbody></table>
+<p>缺少 token 时加载即报错（fail loud）。未配置白名单时 bot 拒绝所有用户（fail closed）。<code>TelegramConfig</code> 还接受仅运行时使用的 <code>client</code> 与 <code>sleep</code> 接缝供测试使用；生产环境使用全局 <code>fetch</code> 与真实定时器。所有错误经 <code>ctx.logger</code> 记录且 bot token 被脱敏。</p>
+<h3>投递语义</h3>
+<ul>
+<li>assistant 文本按保守的 Markdown 子集转换（围栏代码 → <code>&lt;pre&gt;</code>、行内代码 → <code>&lt;code&gt;</code>、<code>**粗体**</code> → <code>&lt;b&gt;</code>，其余 HTML 转义），并按 <code>maxMessageLength</code> 分片，优先在换行、中文句号、句点+空格处断行。</li>
+<li>Telegram 拒绝 HTML 正文（分片后实体不完整）时，该片回退为纯文本发送。</li>
+<li><code>turn/start</code> 发送 <code>typing</code> 聊天动作；投递为 fire-and-forget，逐片记录日志。</li>
+<li>单条长轮询循环服务所有聊天；空批次休眠 50ms 节奏下限，避免即时空传输让事件循环空转。</li>
+</ul>
+<h3>模型体验</h3>
+<h4>Telegram 用户消息</h4>
+<h5>模型看到什么</h5>
+<p>每条入站聊天消息，模型在该聊天会话中收到逐字的一条用户消息。本包不添加系统提示词或工具 schema；它们来自外围 <code>cordis.yml</code> 的插件。命令（<code>/start</code>、<code>/new</code>、<code>/clear</code>、<code>/help</code>）不会到达模型。</p>
+<h5>Token 影响</h5>
+<p>数据相关的用户消息 token 进入保留的会话历史，后续回合会重发，直到其它包压缩它们。轮询帧、聊天簿记与投递调用不增加模型上下文 token。</p>
+<h5>KV Cache 影响</h5>
+<p>仅追加；新可见内容跟在可复用请求前缀之后，不会使既有 KV-cache 条目失效。</p>
+<h3>已知限制与待办</h3>
+<ul>
+<li><strong>仅文本消息</strong>——照片、文档、语音、贴纸与 caption 被忽略。</li>
+<li><strong>仅私聊</strong>——群聊 @ 提及与话题（topics）未处理。</li>
+<li><strong>每条 assistant 输出一条消息</strong>——工具中间进度不会作为独立可编辑 Telegram 消息流式发送。</li>
+<li><strong>仅长轮询</strong>——无 webhook 模式，主机需可出站访问 Telegram API。</li>
+<li><strong>除纯文本回退外无重试</strong>——投递失败记录日志后丢弃；Hermes 风格的发送重试与投递账本留待后续。</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/LoserFox/telegram/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

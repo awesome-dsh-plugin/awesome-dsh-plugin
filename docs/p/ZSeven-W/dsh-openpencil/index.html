@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,189 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:ZSeven-W/dsh-openpencil</pre><button type="button" data-cmd="dsh plugin --profile web add github:ZSeven-W/dsh-openpencil" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h3>Why DSH OpenPencil</h3>
+<p>DSH OpenPencil connects <a href="https://github.com/deepseek-ai/DSH">DeepSeek Harness</a> with <a href="https://github.com/ZSeven-W/openpencil">OpenPencil</a> so an Agent drives a real, editable, interactive design canvas instead of returning a generated image.</p>
+<h4>🖼️ Exact Multi-Frame Previews</h4>
+<p>The installed OpenPencil headless exporter renders design-faithful previews: the first top-level frame as a large replay-safe PNG, plus a horizontally scrollable thumbnail rail, click-to-select, and previous/next navigation for multi-frame documents.</p>
+<h4>🗺️ Interactive Canvas</h4>
+<p>&quot;Open interactive canvas&quot; lazily mounts the read-only OpenPencil Web SDK with pan, zoom, and fit — inspect any page, nested node, or inactive page without leaving the conversation.</p>
+<h4>✏️ Managed Editor</h4>
+<p>With <code>editable: true</code>, the edit action opens the managed OpenPencil editor — selection, layers, properties, drawing tools, undo/redo, and explicit save semantics — in a resizable right-hand workbench with a full-screen option.</p>
+<h4>🤖 Agent-Native Design Tools</h4>
+<p>Five tools — <code>openpencil_new</code>, <code>openpencil_create</code>, <code>openpencil_edit</code>, <code>openpencil_render</code>, <code>openpencil_selection</code> — let the Agent create, modify, and read a real canvas through transactional <code>batch_design</code> programs.</p>
+<h4>🔐 Capability-Gated Grants</h4>
+<p>Image and document grants are signed, hash-bound capabilities. Browser metadata never exposes an arbitrary host path, and signed preview/editor capabilities never enter the canonical tool result or model context.</p>
+<h4>⚡ Transactional Safety</h4>
+<p>A new document is published only after the whole <code>batch_design</code> program succeeds. The tool never overwrites an existing path, a failed batch leaves no empty file behind, and saves use an optimistic hash with atomic replace.</p>
+<h4>🌍 Follows DSH Look &amp; Feel</h4>
+<p>The tool card and managed editor follow DSH&#39;s Chinese/English locale and light/dark theme without reloading the editing session.</p>
+<h4>🎯 One Complete Workflow</h4>
+<p>&quot;Requirement in conversation → Agent edits the real canvas → live preview and interaction validation → keep iterating&quot; — one loop, no screenshot round-trips.</p>
+<h3>Install into DSH</h3>
+<p>Install the public plugin into an authenticated DSH prerelease without installing DSH globally:</p>
+<pre><code class="language-sh">pnpm dlx --package=@deepseek-ai/dsh@0.1.0-rc.6 dsh plugin --profile web add @zseven-w/dsh-openpencil@latest
+pnpm dlx --package=@deepseek-ai/dsh@0.1.0-rc.6 dsh web
+</code></pre>
+<blockquote>
+<p>The OpenPencil plugin is public and requires no npm token. If the DSH prerelease itself requires registry authentication, keep that credential in a user-level or temporary npm config outside the checkout. This repository intentionally contains no registry credentials.</p>
+</blockquote>
+<h3>Design Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>openpencil_new</code></td>
+<td>Creates a brand-new <code>.op</code> from one transactional <code>batch_design</code> program, saves it atomically through DSH&#39;s sandboxed filesystem, and requires no pre-opened editor.</td>
+</tr>
+<tr>
+<td><code>openpencil_create</code></td>
+<td>Applies a transactional <code>batch_design</code> program to generate or restructure nodes on an existing live canvas.</td>
+</tr>
+<tr>
+<td><code>openpencil_edit</code></td>
+<td>Modifies an explicit node or the single node selected by the user.</td>
+</tr>
+<tr>
+<td><code>openpencil_render</code></td>
+<td>Creates an immutable, content-addressed <code>.op</code> snapshot and renders every top-level frame on the active page — optional <code>scale</code> and <code>editable</code>.</td>
+</tr>
+<tr>
+<td><code>openpencil_selection</code></td>
+<td>Reads the exact nodes selected in the live editor canvas.</td>
+</tr>
+</tbody></table>
+<h3>Agent Design Workflow</h3>
+<p>For a natural-language request with no existing document, the Agent should call <code>openpencil_new</code> with a new workspace-relative <code>.op</code> path and the first complete <code>batch_design</code> program. The tool runs that program in a private managed OpenPencil daemon and publishes the authoritative document only after the whole batch succeeds. It never overwrites an existing path and a failed batch leaves no empty file behind. The Agent should then call <code>openpencil_render</code> with the returned path, <code>editable: true</code>, and <code>autoOpen: true</code> to present the gallery and expand the editor once. Replayed or initially-settled historical cards never auto-open.</p>
+<p>Use <code>openpencil_create</code> and <code>openpencil_edit</code> only for an existing live canvas. Their edits remain unsaved until the editor Save action.</p>
+<h3>Rendering Contract</h3>
+<p><code>openpencil_render</code> accepts a <code>.op</code> path, an optional <code>scale</code> (<code>0 &lt; scale &lt;= 8</code>, default <code>1</code>), and optional <code>editable</code> (<code>false</code> by default). Leave <code>width</code> and <code>height</code> unset for the exact OpenPencil path: they describe a runtime viewport, not design export dimensions, and are accepted only by the lower-fidelity Jian fallback.</p>
+<p>OpenPencil binary discovery checks, in order:</p>
+<ol>
+<li><code>DSH_OPENPENCIL_BINARY</code> or <code>DSH_OPENPENCIL_DESKTOP</code></li>
+<li><code>/Applications/OpenPencil.app/Contents/MacOS/openpencil-desktop</code></li>
+<li><code>~/Applications/OpenPencil.app/Contents/MacOS/openpencil-desktop</code></li>
+<li><code>openpencil-desktop</code> on <code>PATH</code></li>
+</ol>
+<p>Jian fallback discovery uses <code>DSH_OPENPENCIL_JIAN</code>, a known local release build, then <code>PATH</code>. If the exact OpenPencil binary is genuinely unavailable, Jian may produce a clearly labelled <code>runtime-preview</code> fallback. Exact renderer failures, timeouts, and invalid PNGs do not silently fall back.</p>
+<h3>Web Viewer Assets</h3>
+<p>DSH serves only <code>client.js</code> for a client plugin, so the OpenPencil ESM SDK, its WASM, and CanvasKit are staged as explicit same-origin assets:</p>
+<pre><code class="language-sh">pnpm run sync:viewer-assets
+</code></pre>
+<p>The sync command prefers a sibling <code>../openpencil</code> checkout (local development), falling back to the vendored <code>vendor/openpencil</code> submodule (CI and fresh clones). Override it with <code>OPENPENCIL_ROOT</code> or <code>--openpencil-root</code>. A complete prebuilt asset directory can be selected with <code>DSH_OPENPENCIL_VIEWER_SOURCE</code>. Runtime lookup can be overridden with <code>DSH_OPENPENCIL_VIEWER_ASSET_DIR</code>.</p>
+<p>Viewer assets are lazy-loaded only after the user opens the canvas. If they are absent or invalid, PNG preview remains available and no canvas button is advertised.</p>
+<h3>Managed Editor</h3>
+<p>Editable sessions use OpenPencil&#39;s managed web host — the same architecture used by <code>op-vscode</code>. The plugin starts the host only after an authorized user action, keeps the daemon token in memory, validates iframe source and origin, and closes the process when the editor session ends. The editor surface is selected progressively: native Tool details when the host declares that seam, otherwise the plugin&#39;s right-hand workbench with resize and full-screen controls.</p>
+<p>If DSH reloads or unloads the plugin while the canvas is dirty, the host keeps an opaque local recovery draft for up to seven days. Reopening the same source asks before restoring it into the live canvas; recovery never overwrites the <code>.op</code> file until the user explicitly saves.</p>
+<p>Binary and source discovery can be overridden with:</p>
+<ul>
+<li><code>DSH_OPENPENCIL_EDITOR_BINARY</code> for <code>op-host-web-server</code>;</li>
+<li><code>DSH_OPENPENCIL_SOURCE_ROOT</code> (or <code>OPENPENCIL_SOURCE_ROOT</code>) for the web bundle and CanvasKit assets.</li>
+</ul>
+<p>Saves use an optimistic source hash, an atomic replace, and a successor capability. If the source changes outside the editor, the plugin reports a conflict instead of overwriting it.</p>
+<h3>Result Metadata</h3>
+<p>The model-visible result stays plain JSON. Browser-only <code>presentationMeta.$dshOpenPencil</code> carries additive grants for:</p>
+<ul>
+<li><code>image</code>: PNG path, preview/download URLs, and real width/height;</li>
+<li><code>frames</code>: every exact-rendered top-level frame in active-page order, including its node id/name/index and signed PNG URLs;</li>
+<li><code>document</code>: source action path plus immutable snapshot URL, bytes, and SHA-256;</li>
+<li><code>viewer</code>: revisioned SDK/WASM/CanvasKit URLs when the asset route is attached;</li>
+<li><code>editor</code>: scoped launch/refresh capabilities when <code>editable: true</code> is authorized.</li>
+</ul>
+<p>The result also records <code>renderer</code>, <code>rendererBinary</code>, <code>fidelity</code>, and any warnings. Existing PNG-only schema-v1 messages remain renderable.</p>
+<p>DSH <code>0.1.0-rc.6</code> does not persist browser presentation metadata for tools nested under PTC/Code Mode. The plugin recovers that UI-only projection through a same-origin, session-bound endpoint: the browser sends only the session id, call id, and immutable document SHA-256, while the host resolves the authoritative result from the durable DSH session log and uses a short-lived in-process marker only to authorize recent live editing. Signed preview/editor capabilities never enter the canonical tool result or model context. Durable history can restore read-only previews; editor grants are issued only for recent, trusted live results.</p>
+<p>For bounded replay, nested metadata recovery accepts up to 128 top-level frames; larger Code Mode results remain available through their canonical JSON fallback.</p>
+<h3>Current Limits</h3>
+<ul>
+<li>Follow-up edits to an existing canvas require an already-open managed editor. Changes remain unsaved until the user invokes its Save action.</li>
+<li>The lightweight Web SDK canvas is read-only; full editing uses the separate managed editor surface. On DSH <code>0.1.0-rc.6</code>, the plugin uses the resizable right workbench with a full-screen option.</li>
+<li>The exact gallery covers top-level frames on the active page; the interactive canvas remains the way to inspect inactive pages and nested nodes.</li>
+<li>Render and snapshot caches still need a product-level retention policy.</li>
+</ul>
+<h3>Project Structure</h3>
+<pre><code class="language-text">dsh-openpencil/
+├── src/                       Plugin sources (TypeScript)
+│   ├── index.ts               Host plugin entry — Cordis service, tools, assets
+│   ├── tool.ts / design-tools.ts / new-tool.ts   Host-side design tools
+│   ├── renderer.ts            Exact OpenPencil renderer + Jian fallback
+│   ├── editor-host.ts / editor-recovery.ts       Managed editor lifecycle + drafts
+│   ├── viewer-assets.ts       Web SDK / WASM / CanvasKit asset staging
+│   ├── mcp-client.ts          OpenPencil MCP connection
+│   └── client/                Browser client — React workbench, gallery, selection dock
+├── lib/                       Compiled output (published to npm)
+├── scripts/                   Build helpers — viewer asset sync, client build, host tests
+├── tests/                     Node test suites (client, host API, MCP, viewer assets)
+├── docs/images/               Documentation screenshots
+├── vendor/openpencil/         OpenPencil checkout (git submodule — viewer asset source)
+├── cordis.patch.yml           DSH bundle patch that mounts the plugin
+├── tsconfig.json              Host / Node TypeScript config
+└── tsconfig.client.json       Browser client TypeScript config
+</code></pre>
+<h3>Build and Verify</h3>
+<pre><code class="language-sh">pnpm run sync:viewer-assets
+pnpm run build
+pnpm run test:viewer-assets
+pnpm run test:client
+pnpm run test:host -- /absolute/path/to/design.op 375 1091
+</code></pre>
+<p>Builds require Node 24.11 or newer and pnpm. DSH host/client packages are peer dependencies supplied by the target DSH profile. Build tools are resolved from local dev dependencies, the active linked DSH checkout, or an installed DSH source bundle; <code>DSH_SOURCE_ROOT</code> can select a source checkout explicitly. The lockfile pins standalone public build tooling when that environment is provisioned separately.</p>
+<p>For a private DSH prerelease, keep the issued npm credential outside this repository (for example in a user-level or temporary <code>.npmrc</code>) and run the requested version directly:</p>
+<pre><code class="language-sh">pnpm dlx --package=@deepseek-ai/dsh@0.1.0-rc.6 dsh web
+</code></pre>
+<p>Never commit <code>.npmrc</code>, <code>NPM_TOKEN</code>, or copied registry credentials. This repository ignores local npm configuration by default.</p>
+<p><code>test:host</code> performs a real exact render, validates PNG IHDR geometry and SHA-256, exercises immutable image/document capabilities over HTTP, and checks that viewer assets are grantable. The expected dimensions are fixture-specific.</p>
+<h3>Ecosystem</h3>
+<p>DSH OpenPencil is the DeepSeek Harness plugin for <strong><a href="https://github.com/ZSeven-W/openpencil">OpenPencil</a></strong> — the world&#39;s first open-source AI-native vector design tool — and part of the <strong><a href="https://github.com/ZSeven-W">ZSeven-W</a></strong> family of pure-Rust, AI-native tools.</p>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong><a href="https://github.com/ZSeven-W/openpencil">OpenPencil</a></strong></td>
+<td>The design tool this plugin drives — prompt-to-canvas generation, concurrent agent teams, design-as-code <code>.op</code> files, and a built-in MCP server. The exact previews, interactive canvas, and managed editor here are powered by OpenPencil itself.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ZSeven-W/agent-rs">agent-rs</a></strong></td>
+<td>A pure-Rust async runtime for shipping LLM agents — multi-provider, tool-capable end-to-end, structured permissions, real MCP, zero <code>unsafe</code>. Powers OpenPencil&#39;s built-in agent runtime.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ZSeven-W/jian">jian</a></strong></td>
+<td>Pure-Rust, GPU-Skia UI framework — widgets, layout, events, and hot reload in one stack. OpenPencil&#39;s UI framework, and the source of this plugin&#39;s fallback renderer.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ZSeven-W/zode">Zode</a></strong></td>
+<td>Open-source, AI-native coding assistant for your terminal — reads your code, runs commands, and drives OpenPencil over MCP.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ZSeven-W/noema">noema</a></strong></td>
+<td>Local-first, non-vector memory system for coding agents — durable memory as inspectable files, works across runtimes.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ZSeven-W/openpencil-skill">openpencil-skill</a></strong></td>
+<td>The LLM skill plugin that teaches AI agents how to design with <code>op</code> — a companion to this DSH plugin.</td>
+</tr>
+</tbody></table>
+<h3>Contributing</h3>
+<p>Contributions are welcome! Fork and clone, create a branch, run <code>pnpm run build</code> and the test suites, commit with <a href="https://www.conventionalcommits.org/">Conventional Commits</a>, and open a PR against <code>main</code>.</p>
+<h3>Community</h3>
+<p><strong>Recognized community: <a href="https://linux.do/">LINUX DO</a></strong></p>
+<h3>License</h3>
+<p><a href="https://github.com/ZSeven-W/dsh-openpencil/blob/main/LICENSE">MIT</a> — Copyright (c) 2026 ZSeven-W</p>
+<p>Third-party components are listed in <a href="https://github.com/ZSeven-W/dsh-openpencil/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ZSeven-W/dsh-openpencil/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

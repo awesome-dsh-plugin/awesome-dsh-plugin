@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,167 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:anweat/dsh-web-search-pro</pre><button type="button" data-cmd="dsh plugin --profile web add github:anweat/dsh-web-search-pro" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>增强型、可持久化的扩展网页搜索插件 for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（DSH）。</p>
+<p>一个 DSH <strong>bundle 插件</strong>，把多引擎网页搜索、平台搜索、持久化缓存、脚本猫式按站提取、Playwright 渲染打包成模型可直接调用的 9 个工具。灵感来自 <a href="https://github.com/NanmiCoder/MediaCrawler">MediaCrawler</a>、<a href="https://github.com/Panniantong/Agent-Reach">Agent-Reach</a>、脚本猫/油猴 userscript、opencli 与 playwright。</p>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-web-search-pro   # 自动装 dsh-browser（dependency）+ 自动挂载 browser 行（本 patch）
+# 或本地目录 / tarball：
+dsh plugin --profile web add ./dsh-web-search-pro
+# 重启（web profile 关闭了 HMR）：
+dsh --profile web
+</code></pre>
+<blockquote>
+<p>dsh-browser 需先发布到 npm（本地测试可用 <code>dsh plugin --profile web add ../dsh-browser ../dsh-web-search-pro</code> 一条命令显式列两个）。
+依赖 <code>@deepseek-ai/*</code> 已发布到 npm（<code>^0.1.0-rc.6</code>，与社区 dsh-cc-tui 一致）。
+若你的 harness 是本地源码 checkout（如 <code>0.1.0-rc.5</code>），版本号可能有出入——用
+<code>dsh plugin --profile web add ./&lt;path&gt;</code> 并在 profile 的 <code>pnpm-workspace.yaml</code>
+里对齐版本后重装即可。</p>
+</blockquote>
+<h3>工具（9 个）</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>web_search_pro</code></td>
+<td>多引擎搜索 + RRF 融合 + 内存/SQLite 双层缓存 + 历史</td>
+</tr>
+<tr>
+<td><code>web_fetch_pro</code></td>
+<td>可读化抓取（Jina → HTTP+规则抽取 → Playwright 兜底）+ 快照缓存</td>
+</tr>
+<tr>
+<td><code>web_platform_search</code></td>
+<td>20 平台：GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/IG/FB/RSS + 知乎/微博/豆瓣/贴吧/抖音/快手（Playwright 登录态）</td>
+</tr>
+<tr>
+<td><code>web_snapshot</code></td>
+<td>Playwright 全页截图 + HTML + 文本落盘</td>
+</tr>
+<tr>
+<td><code>web_history</code> / <code>web_cache_clear</code> / <code>web_search_stats</code></td>
+<td>持久历史 / 清缓存 / 存储统计</td>
+</tr>
+<tr>
+<td><code>web_rule</code></td>
+<td>持久化按站提取规则（脚本猫式，list/upsert/remove）</td>
+</tr>
+<tr>
+<td><code>web_deps</code></td>
+<td>检测/安装外部依赖（gh/bili/yt-dlp/opencli/agent-reach/mcporter/playwright）</td>
+</tr>
+</tbody></table>
+<h3>配置</h3>
+<p>三层，越靠前越日常：</p>
+<ol>
+<li><p><strong><code>$DSH_HOME/settings.yaml</code> → <code>web-search-pro:</code> 段</strong>（热重载，改完即生效）：</p>
+<pre><code class="language-yaml">web-search-pro:
+  exaApiKey: &#39;sk-...&#39;       # 或环境变量 EXA_API_KEY / .credentials.yaml
+  jinaApiKey: &#39;jina_...&#39;    # 或环境变量 JINA_API_KEY
+  engines: [ddg, bing, exa, seam, jina]
+  parallelEngines: false
+  ttlSeconds: 3600
+  searchMaxResults: 8
+</code></pre>
+</li>
+<li><p><strong>cordis.yml <code>config:</code></strong>（部署级默认值，见 <code>cordis.patch.yml</code>）。</p>
+</li>
+<li><p><strong>环境变量 / 凭据</strong>：<code>$EXA_API_KEY</code>、<code>$JINA_API_KEY</code>（<code>exaApiKeyEnv</code>/<code>jinaApiKeyEnv</code> 引用）。</p>
+</li>
+</ol>
+<h3>外部依赖（按需）</h3>
+<p>多数后端需要系统额外安装的工具；插件提供 <code>web_deps</code> 工具检测与安装：</p>
+<table>
+<thead>
+<tr>
+<th>依赖</th>
+<th>用途</th>
+<th>安装</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>gh</td>
+<td>GitHub 后端</td>
+<td><code>winget install GitHub.cli</code> / <code>choco install gh</code></td>
+</tr>
+<tr>
+<td>bili-cli</td>
+<td>B站后端</td>
+<td><code>uv tool install bili-cli</code> / <code>pipx install bili-cli</code></td>
+</tr>
+<tr>
+<td>yt-dlp</td>
+<td>YouTube 后端</td>
+<td><code>uv tool install yt-dlp</code> / <code>pip install yt-dlp</code></td>
+</tr>
+<tr>
+<td>opencli</td>
+<td>小红书/Twitter/Reddit/IG/FB</td>
+<td><code>npm i -g opencli</code></td>
+</tr>
+<tr>
+<td>agent-reach</td>
+<td>agent-reach 后端</td>
+<td><code>uv tool install agent-reach</code> / <code>pip install agent-reach</code></td>
+</tr>
+<tr>
+<td>playwright</td>
+<td>渲染/截图后端</td>
+<td><code>npm i -g playwright &amp;&amp; playwright install chromium</code></td>
+</tr>
+</tbody></table>
+<h3>平台与引擎</h3>
+<p><code>seam</code>（ctx.web/DeepSeek 原生）· <code>exa</code> · <code>ddg</code> · <code>bing</code> · <code>jina</code> · <code>github</code> · <code>bilibili</code> · <code>v2ex</code> · <code>youtube</code>。默认顺序 <code>ddg, bing, exa, seam, jina</code>（免费优先），失败自动回退；<code>multi</code> 并行融合。</p>
+<h3>开发</h3>
+<pre><code class="language-bash">pnpm install
+pnpm build        # tsc src → lib
+</code></pre>
+<p>源码在 <code>src/</code>；<code>lib/</code> 为发布产物（已提交）。</p>
+<h3>License</h3>
+<p>MIT</p>
+<h3>中文社区平台登录态</h3>
+<p>zhihu / weibo / douban / tieba / douyin / kuaishou 的免登录公开接口都被风控，
+所以走 <strong>Playwright 驱动登录态浏览器</strong>（借鉴 MediaCrawler 思路、MIT 独立实现，未用其签名算法）：</p>
+<ol>
+<li>登录一次保存登录态：<code>node scripts/save-login.mjs all login-state.json</code></li>
+<li>在 <code>$DSH_HOME/settings.yaml</code> 里设 <code>playwright.storageStatePath</code></li>
+<li>站点改版时无需改代码，用 <code>platformRules</code> 按平台覆盖结果选择器</li>
+</ol>
+<p>详见 <a href="https://github.com/anweat/dsh-web-search-pro/blob/master/LOGIN.md">LOGIN.md</a>。</p>
+<h3>历史管理</h3>
+<p>web_history 支持：kind/query/engine/platform 过滤、replay（用 queryId 回放已存结果）、
+export（把过滤后的历史+结果写成 JSON 文件）。</p>
+<h3>自定义平台（解析 cookie 去搜索）</h3>
+<p>在 settings.yaml 里定义任意站点（URL 模板 + 结果选择器 + 可选 Cookie），
+web_platform_search 就能直接搜它——不需要改代码：</p>
+<pre><code>web-search-pro:
+  customPlatforms:
+    mybili:
+      name: &#39;我的B站&#39;
+      url: &#39;https://search.bilibili.com/all?keyword={query}&#39;
+      item: &#39;.bili-video-card&#39;
+      title: &#39;.bili-video-card__info--tit&#39;
+      link: &#39;a&#39;
+    # 需要登录的站点补 cookie（a=b; c=d，自动应用到 url 域名）
+    myforum:
+      name: &#39;某论坛&#39;
+      url: &#39;https://forum.example.com/search?q={query}&#39;
+      item: &#39;.thread&#39;
+      title: &#39;.thread-title a&#39;
+      link: &#39;.thread-title a&#39;
+      cookie: &#39;sessionid=abc123; csrftoken=xyz&#39;
+</code></pre>
+
+    </div>
+    <p class="note"><a href="https://github.com/anweat/dsh-web-search-pro/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

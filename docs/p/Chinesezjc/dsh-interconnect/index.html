@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,75 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:Chinesezjc/dsh-interconnect</pre><button type="button" data-cmd="dsh plugin --profile web add github:Chinesezjc/dsh-interconnect" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>跨实例消息互通与事件通知插件，用于 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH)。
+让一个 DSH 实例能向同一个实例、另一台机器、或另一台机器上的别的 DSH 实例发送消息、探测活性，并在实例之间双向推送事件。</p>
+<h3>包含两个插件</h3>
+<p><strong><code>interconnect</code></strong> —— host 服务（<code>ctx.interconnect</code>）：</p>
+<ul>
+<li><code>send</code> / <code>ping</code> HTTP 端点（<code>/interconnect/*</code>）：跨实例、跨机器投递消息、探测活性</li>
+<li><code>/interconnect/link</code> WebSocket 端点：双向实时事件推流，含心跳与指数退避重连</li>
+<li>事件 fan-out（HTTP + WebSocket），入站事件以 <code>interconnect/event</code> 发出</li>
+<li>共享密钥鉴权（<code>DSH_INTERCONNECT_TOKEN</code>，bearer，fail-closed，timing-safe 比较）</li>
+</ul>
+<p><strong><code>tool-interconnect</code></strong> —— 模型可见工具：</p>
+<ul>
+<li><code>interconnect_send</code>：向对端实例的指定 session 投递消息</li>
+<li><code>interconnect_ping</code>：探测对端实例活性与身份</li>
+</ul>
+<h3>安装</h3>
+<p>本包已发布到 npm：<a href="https://www.npmjs.com/package/dsh-interconnect"><code>dsh-interconnect</code></a>。
+本仓库是一个 DSH profile bundle（根 <code>package.json</code> 声明 <code>dsh.bundle.patch</code> 指向
+根 <code>cordis.patch.yml</code>，后者 <code>insert</code> 两个插件行）。</p>
+<pre><code class="language-bash"># 从 npm
+dsh plugin --profile &lt;name&gt; add dsh-interconnect
+
+# 或从本地路径（已实测）
+dsh plugin --profile &lt;name&gt; add file:/path/to/dsh-interconnect
+</code></pre>
+<p>registry 上的 tarball 自带 <code>lib/*.js</code> 与 <code>lib/types/**/*.d.ts</code>，安装时不跑构建。</p>
+<p><code>dsh plugin add</code> 会把仓库识别为 bundle 并追加进 profile 的 <code>dsh.profile.bundles</code>。重启
+web 服务使 host 侧生效。两端实例的 <code>.credentials.yaml</code>（或等价凭据源）设置相同的
+<code>DSH_INTERCONNECT_TOKEN</code> 作为共享密钥。</p>
+<h3>开发</h3>
+<p>依赖 <a href="https://github.com/deepseek-ai/deepseek-harness">公开的 DeepSeek Harness monorepo</a>
+作为 sibling checkout：<code>package.json</code> 的 <code>devDependencies</code> 用 <code>link:../dsh/...</code> 指向它，
+peer 依赖由该 checkout 提供，构建与测试都跑在这份源码上。</p>
+<pre><code class="language-bash">ln -s /path/to/deepseek-harness ../dsh
+pnpm install --config.auto-install-peers=false   # peer @deepseek-ai/dsh-* 由 sibling checkout 提供
+pnpm run check    # typecheck + test + build
+pnpm run build    # esbuild → lib/
+</code></pre>
+<h3>架构说明</h3>
+<ul>
+<li>两个插件都挂在 <strong>host composition</strong>：<code>interconnect</code> 是跨 session、跨机器的进程级
+服务（有 HTTP/WS 端点），必须 host 级；<code>tool-interconnect</code> 也放 host，因为
+<code>interconnect</code> 未做 TypeRT <code>@Remote</code>/Gateway 绑定，放进 agent preset 的 isolate
+realm 会导致工具行无法 inject 到该服务。</li>
+<li><code>ws</code> 是运行依赖，由宿主的 node_modules 提供（构建时 external）。</li>
+</ul>
+<h3>验证</h3>
+<ul>
+<li>22/22 单测通过（服务 17 + 工具 5）；类型检查、构建均干净。</li>
+<li>已在两台机器之间实测双向互通：消息投递、WebSocket 事件推流、以及 agent 经
+<code>interconnect_send</code> 工具反向回发，均验证通过。</li>
+<li>CI（GitHub Actions）：clone 公开 DSH 仓库作为 sibling，跑 <code>pnpm run check</code>。</li>
+<li>已发布版本：从 registry 下载的 tarball 与本地构建 shasum 一致；干净消费端
+解析 <code>.</code>、<code>./tool-interconnect</code> 两个入口的类型均通过，负例（把 <code>string</code> 赋给
+<code>number</code>）如期报 <code>TS2322</code>。</li>
+<li>投递消息的 <code>source</code> 为 <code>{ kind: &#39;plugin&#39;, plugin: &#39;dsh-interconnect&#39; }</code>，不是
+<code>{ kind: &#39;user&#39; }</code>——接收方 agent 据此区分跨实例投递与本地用户输入。负例：把
+该 source 改回 <code>kind: &#39;user&#39;</code>，对应断言转红。</li>
+</ul>
+<h3>许可</h3>
+<p><a href="https://github.com/Chinesezjc/dsh-interconnect/blob/main/LICENSE">MIT</a>，Copyright (c) 2026 Chinesezjc。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Chinesezjc/dsh-interconnect/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

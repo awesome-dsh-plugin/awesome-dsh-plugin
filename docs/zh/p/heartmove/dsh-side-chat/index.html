@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,226 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:heartmove/dsh-side-chat</pre><button type="button" data-cmd="dsh plugin --profile web add github:heartmove/dsh-side-chat" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>A <a href="https://www.deepseek.com">DSH</a> web plugin that lets you select part of a
+conversation and ask about it in a <strong>side chat</strong> — a dedicated chat opened in a
+right-side panel, scoped to the conversation it was started from. Side-chat AI
+replies can also be <strong>brought back to the main conversation</strong> (directly or as a
+summary, into the composer draft or as a collapsed context row).</p>
+<blockquote>
+<p>中文文档见 <a href="https://github.com/heartmove/dsh-side-chat/blob/main/README.zh.md">README.zh.md</a>.</p>
+</blockquote>
+<h3>What it does</h3>
+<ul>
+<li><strong>Select text → ask in a side chat.</strong> Select any part of a message and a
+floating button <em>&quot;Ask in side chat&quot;</em> appears. The selected text is carried
+into the side chat automatically.</li>
+<li><strong>Per-conversation isolation.</strong> Each side chat is a hidden ordinary DSH
+session (<code>meta.parentSession</code> links it to the conversation that started it,
+and the session is archived so it never appears in the main session list).
+Every conversation gets its own side chat.</li>
+<li><strong>Inherits main-conversation context.</strong> The side chat is aware of the
+conversation it was started from and its working directory, and inherits the
+main conversation&#39;s model, thinking effort, and permission preset by default.</li>
+<li><strong>Model / effort / permission are adjustable.</strong> A two-level model menu
+(provider → model → effort) and a permission menu are copied from the main
+conversation, so each side chat can be tuned independently.</li>
+<li><strong>&quot;Look up workspace / parent when needed&quot; switch</strong> (default off). When on,
+the side chat may read files from the workspace and the parent conversation
+when it needs more information.</li>
+<li><strong>Normal conversation capabilities.</strong> Markdown replies, thinking/reasoning
+display, image attachments (paste / drag-and-drop), send/stop controls, and
+thinking-duration display — all reuse the same UI primitives as the main
+conversation.</li>
+<li><strong>Bring AI replies back to the main conversation.</strong> Every assistant reply in
+the side chat can be brought into the current main conversation: select part
+of it with the mouse, or insert the whole reply in one click. Either way you
+can choose <strong>&quot;Insert directly&quot;</strong> (verbatim) or <strong>&quot;Summarize &amp; insert&quot;</strong> (the
+side chat&#39;s inherited model summarizes it first). Where it lands is
+configurable: <strong>into the composer draft</strong>, or <strong>as a collapsed context row</strong>
+(injected as context — not into the composer, never sent).</li>
+<li><strong>Ask about the current question dialog.</strong> When the main conversation shows a
+question dialog (the agent asking you something), the side panel automatically
+lists the question and each option (no manual text selection needed). Each
+question has &quot;Bring all&quot; and each option has &quot;Bring&quot;, both offering to
+<strong>continue an existing side chat</strong> or <strong>start a new one</strong>. The list can be
+<strong>collapsed / expanded</strong>, and items can be <strong>deleted individually or all at
+once</strong> (deleted items stay gone).</li>
+<li><strong>Deletable side chats.</strong> Each entry in the side-chat list can be deleted
+individually, or all of them at once via &quot;Delete all&quot;.</li>
+<li><strong>Resizable, collapsible panel.</strong> Drag to resize (280–720 px), collapse and
+expand; no close button.</li>
+<li><strong>Language-aware.</strong> The plugin follows DSH&#39;s language setting (Chinese /
+English).</li>
+</ul>
+<h3>Requirements</h3>
+<ul>
+<li><a href="https://nodejs.org">Node.js</a> ≥ 20</li>
+<li><a href="https://pnpm.io">pnpm</a></li>
+<li>DSH ≥ <code>0.1.0-rc.6</code> (the harness <code>engines.dsh</code> constraint)</li>
+</ul>
+<h3>Build</h3>
+<pre><code class="language-bash">pnpm install
+pnpm build
+</code></pre>
+<p><code>pnpm build</code> clears <code>lib/</code>, runs <code>tsc -p tsconfig.build.json</code> for type
+declarations, then bundles the host (<code>lib/index.js</code>) and client
+(<code>lib/client.js</code> + <code>lib/client-registry.js</code>) with tsdown.</p>
+<h3>Deploy</h3>
+<p>DSH web loads external plugins from the active profile. This package is a
+<strong>bundle</strong>: its <code>package.json</code> declares <code>dsh.bundle.patch</code> →
+<a href="https://github.com/heartmove/dsh-side-chat/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a>, whose <code>insert</code> row mounts the plugin.
+That declaration is what lets <code>dsh plugin add</code> install the package <em>and</em>
+activate it in one step.</p>
+<h4>Install from GitHub</h4>
+<pre><code class="language-bash">npx -p @deepseek-ai/dsh dsh plugin --profile web add github:heartmove/dsh-side-chat
+</code></pre>
+<p><code>dsh plugin</code> forwards to pnpm inside <code>~/.dsh/profiles/web/</code>, then reconciles the
+bundle into the profile&#39;s <code>dsh.profile.bundles</code> layer list. A git install
+fetches sources, so pnpm runs the package&#39;s <code>prepare</code> script (<code>tsdown</code>) to build
+<code>lib/</code> from <code>src/</code> after checkout.</p>
+<p>pnpm ≥ 10 refuses to run a git dependency&#39;s <code>prepare</code> script until it is
+allowlisted, so the first <code>add</code> fails with an &quot;Ignored build scripts&quot; hint. Copy
+the exact package key pnpm printed into the profile&#39;s <code>pnpm-workspace.yaml</code>
+(<code>~/.dsh/profiles/web/pnpm-workspace.yaml</code>):</p>
+<pre><code class="language-yaml">allowBuilds:
+  dsh-side-chat: true
+</code></pre>
+<p>then re-run the <code>add</code>. That allowance means &quot;run this package&#39;s code on my
+machine at install time&quot; — only allow packages whose source you trust, and pin a
+commit (<code>github:heartmove/dsh-side-chat#&lt;sha&gt;</code>) so a later push cannot silently
+change what runs.</p>
+<p>Restart <code>dsh web</code>, then hard-refresh the page (Ctrl/Cmd+Shift+R).</p>
+<h4>Install from a local checkout</h4>
+<p>From the directory that contains this checkout:</p>
+<pre><code class="language-bash">npx -p @deepseek-ai/dsh dsh plugin --profile web add ./dsh-side-chat
+</code></pre>
+<p>pnpm links the checkout and <code>dsh</code> activates the bundle the same way.</p>
+<h4>Manual link</h4>
+<p>To manage the profile by hand, link the package and list it as a bundle in
+<code>~/.dsh/profiles/web/package.json</code> (the bundle&#39;s own <code>cordis.patch.yml</code> supplies
+the loader row, so no <code>insert</code> entry is needed):</p>
+<pre><code class="language-json">{
+  &quot;dependencies&quot;: {
+    &quot;dsh-side-chat&quot;: &quot;link:D:\\path\\to\\dsh-side-chat&quot;
+  },
+  &quot;dsh&quot;: {
+    &quot;profile&quot;: {
+      &quot;bundles&quot;: [&quot;@deepseek-ai/dsh-base&quot;, &quot;@deepseek-ai/dsh-web-app&quot;, &quot;dsh-side-chat&quot;]
+    }
+  }
+}
+</code></pre>
+<p>(On POSIX systems use <code>link:/path/to/dsh-side-chat</code>.) Then run <code>pnpm install</code>
+in the profile directory and restart <code>dsh web</code>.</p>
+<h3>Usage</h3>
+<ol>
+<li>Select part of any message in the main conversation.</li>
+<li>A floating <strong>&quot;Ask in side chat&quot;</strong> button appears — click it.<ul>
+<li>If a side chat already exists for this conversation, you&#39;ll also see
+<strong>&quot;Continue active side chat&quot;</strong>.</li>
+</ul>
+</li>
+<li>The right-side panel opens (or expands) with the selected text staged in the
+composer.</li>
+<li>Adjust <strong>model / effort</strong> and <strong>permission</strong>, and toggle <strong>&quot;Look up workspace
+/ parent when needed&quot;</strong> as desired.</li>
+<li>Send. The reply streams back with markdown rendering and, where applicable,
+a &quot;Think&quot; row for the model&#39;s reasoning.</li>
+<li>Drag the panel&#39;s left edge to resize, or use the collapse/expand control.</li>
+</ol>
+<h4>Sending behavior</h4>
+<p>By default (<code>sendImmediately</code> on), selecting text <strong>sends it immediately</strong> and
+appends your configured <strong>default prompt</strong>. Turn <code>sendImmediately</code> off in
+settings to stage the selection as an attachment instead, so you can review and
+edit before sending.</p>
+<h4>Bring replies back to the main conversation</h4>
+<p>Assistant replies in the side chat can be brought into the current main
+conversation (<strong>never sent</strong>):</p>
+<ol>
+<li><strong>Bring a selection.</strong> Select part of an assistant reply in the side chat,
+then choose <strong>&quot;Insert directly&quot;</strong> (verbatim) or <strong>&quot;Summarize &amp; insert&quot;</strong> (the
+side chat&#39;s inherited model summarizes it first) from the floating menu.</li>
+<li><strong>Bring the whole reply.</strong> Each assistant reply has <strong>&quot;Insert directly&quot;</strong> and
+<strong>&quot;Summarize &amp; insert&quot;</strong> buttons under its text, for inserting the full reply
+(or its summary) in one click.</li>
+<li>Per the <strong>bring-back target</strong> setting, the content is either <strong>appended to
+the main composer draft</strong> (edit before sending) or <strong>injected as a collapsed
+context row</strong> (source-tagged, not into the composer; the model sees it next
+turn).</li>
+</ol>
+<h4>Ask about the current question dialog</h4>
+<p>When the main conversation shows a question dialog, the side panel automatically
+lists the question and its options:</p>
+<ol>
+<li>While the panel is closed, a <strong>floating entry</strong> appears beside the dialog&#39;s
+header — click it to open the panel.</li>
+<li>Each question has &quot;Bring all&quot; and each option has &quot;Bring&quot;, both offering to
+<strong>continue an existing side chat</strong> or <strong>start a new one</strong>.</li>
+<li>The list can be <strong>collapsed / expanded</strong>, and items can be <strong>deleted
+individually or all at once</strong> (deleted items stay gone).</li>
+</ol>
+<h4>Delete side chats</h4>
+<p>Each entry in the side-chat list has a &quot;×&quot; delete button; &quot;Delete all&quot; at the
+top-right removes every side chat of the current conversation.</p>
+<h3>Settings</h3>
+<p>Open DSH <strong>Settings → 侧边聊天 (Side chat)</strong> to configure:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>lookupDefault</code></td>
+<td>off</td>
+<td>Whether the &quot;look up workspace / parent&quot; switch is on by default for new side chats.</td>
+</tr>
+<tr>
+<td><code>sendImmediately</code></td>
+<td>on</td>
+<td>Whether selecting text sends it immediately, or stages it as an attachment.</td>
+</tr>
+<tr>
+<td><code>defaultPrompt</code></td>
+<td><em>(empty)</em></td>
+<td>Extra prompt appended when the selection is sent immediately.</td>
+</tr>
+<tr>
+<td><code>bringMode</code></td>
+<td><code>draft</code></td>
+<td>Where brought-back content lands: <code>draft</code> into the composer, or <code>context</code> as a collapsed context row.</td>
+</tr>
+</tbody></table>
+<p>Preferences are stored in the DSH settings namespace <code>dsh-side-chat</code>.</p>
+<h3>Project layout</h3>
+<pre><code>src/
+  index.ts            host plugin (routes, session/agent lifecycle, transcript folding)
+  wire.ts             request/response helpers
+  trust-fence.ts      loopback / trusted-API request guard
+  settings-shared.ts  preference vocabulary shared by host and client
+  context-types.ts    Cordis Context type augmentation
+  client/
+    index.tsx         client plugin (panel, composer, settings section, floating buttons)
+    api.ts            client↔host API types
+    locales.ts        zh/en dictionaries
+    client.module.css panel/composer/settings styles
+    layout.css        #root margin-right driven by panel width
+cordis.patch.yml      bundle patch layer (inserts the loader row; dsh.bundle.patch)
+dsh.plugin.json       external plugin manifest
+tsdown.config.ts      bundle config (client externals + CSS inlining)
+</code></pre>
+<h3>License</h3>
+<p><a href="https://github.com/heartmove/dsh-side-chat/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/heartmove/dsh-side-chat/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

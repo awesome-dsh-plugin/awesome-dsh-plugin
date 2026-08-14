@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,198 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:bujue600-arch/dsh-testgen</pre><button type="button" data-cmd="dsh plugin --profile web add github:bujue600-arch/dsh-testgen" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>Automated unit-test generation for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>: a <code>/testgen</code> command and a <code>generate_tests</code> tool that scaffold tests, run your project&#39;s test runner, and <strong>fix failures until they pass</strong> — bounded, observable, and honest about what it changed.</p>
+</blockquote>
+<p><a href="https://github.com/bujue600-arch/dsh-testgen/releases"><img src="https://img.shields.io/github/v/release/bujue600-arch/dsh-testgen?color=4D6BFE" alt="release"></a>
+<a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/LICENSE"><img src="https://img.shields.io/github/license/bujue600-arch/dsh-testgen" alt="license"></a>
+<a href="https://github.com/bujue600-arch/dsh-testgen/actions/workflows/ci.yml"><img src="https://github.com/bujue600-arch/dsh-testgen/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a>
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/dsh-plugin-4D6BFE?logo=deepseek&logoColor=white" alt="dsh-plugin"></a></p>
+<p>English | <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/README.zh.md">中文</a></p>
+<hr>
+<h3>Why this plugin</h3>
+<p>DeepSeek Harness agents write code constantly — and leave it untested. <code>dsh-testgen</code> closes that loop <strong>inside the harness</strong>:</p>
+<ul>
+<li><strong>One command for humans</strong> — <code>/testgen src/utils/math.ts</code> generates, runs, and fixes in a single step.</li>
+<li><strong>One tool for agents</strong> — the agent itself can call <code>generate_tests</code> after writing code, keeping the loop in the session.</li>
+<li><strong>Two generators, no dead ends</strong> — behavioral tests through your composed LLM when available; deterministic structural smoke tests (zero LLM, works offline) otherwise.</li>
+<li><strong>A real fix loop</strong> — failures are parsed from vitest / jest / mocha / node:test output and fed back to the LLM, up to a bounded number of iterations, only ever rewriting the test files it generated.</li>
+</ul>
+<p>No duplicated wheels: the ecosystem has git tools and eval harnesses, but no plugin that <em>generates, runs, and fixes</em> unit tests as a first-class harness surface.</p>
+<h3>Features</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>⚡ <code>/testgen</code> slash command</td>
+<td><code>[options] &lt;file-or-glob&gt;</code>, <code>--json</code>, <code>--help</code>; rendered directly in the Web UI</td>
+</tr>
+<tr>
+<td>🛠️ <code>generate_tests</code> model tool</td>
+<td>structured JSON input/output, cooperative cancellation, never runs in parallel</td>
+</tr>
+<tr>
+<td>🧠 LLM generator</td>
+<td>streams through <code>ctx.llm</code>, honors your provider/model, bounded source truncation</td>
+</tr>
+<tr>
+<td>🧩 Template generator</td>
+<td>zero-dependency smoke tests scaffolded from exported symbols — no API key needed</td>
+</tr>
+<tr>
+<td>🔁 Generate → run → fix loop</td>
+<td>per-framework failure parsing, bounded by <code>maxIterations</code></td>
+</tr>
+<tr>
+<td>🧪 Runner autodetect</td>
+<td>vitest / jest / mocha detected from the project; <code>node --test</code> as the universal fallback</td>
+</tr>
+<tr>
+<td>🔥 Hot-reloaded config</td>
+<td><code>testgen:</code> section in <code>settings.yaml</code>; edits apply on the next invocation, no restart</td>
+</tr>
+<tr>
+<td>🧰 Lifecycle-clean</td>
+<td>registrations and in-flight runs unwind with the plugin fiber; refuses to overwrite user tests</td>
+</tr>
+<tr>
+<td>📐 Typed end to end</td>
+<td>TypeScript, schemastery config, stable error codes, 78 unit tests including a real end-to-end run</td>
+</tr>
+</tbody></table>
+<h3>Demo</h3>
+<p>Terminal-style demo (deterministic template generator + real <code>node --test</code> run):</p>
+<p><img src="https://raw.githubusercontent.com/bujue600-arch/dsh-testgen/main/assets/demo-cli.png" alt="dsh-testgen CLI demo"></p>
+<p>In the Web UI, the plugin shows up in <strong>Settings → Plugins → Plugin list</strong> with an active status (real <code>dsh web</code> boot, 134 plugins loaded):</p>
+<p><img src="https://raw.githubusercontent.com/bujue600-arch/dsh-testgen/main/assets/demo-web.png" alt="dsh-testgen in the Web UI"></p>
+<h3>Installation</h3>
+<p>Requires Node ≥ 22 and <code>dsh</code> (DeepSeek Harness CLI).</p>
+<pre><code class="language-sh"># Install straight from GitHub
+dsh plugin --profile web add github:bujue600-arch/dsh-testgen
+</code></pre>
+<p><code>dsh plugin add</code> installs the package into the profile and reconciles the bundle layer stack — the plugin declares a <code>dsh.bundle</code> manifest (<code>&quot;dsh&quot;: { &quot;bundle&quot;: { &quot;patch&quot;: &quot;./cordis.patch.yml&quot; } }</code>), so no hand-editing is required. It works for any profile: <code>web</code>, <code>headless</code>, or your own. (An npm package will be published with the first stable dsh release it targets; pinning to a release tag is recommended once available.)</p>
+<blockquote>
+<p>Note for git/file installs: pnpm exits non-zero on missing peers for linked dependencies; that is expected — the harness resolves the peer packages (<code>@deepseek-ai/dsh-*</code>, cordis) from the profile&#39;s own module fallback at boot. The plugin loads normally.</p>
+</blockquote>
+<p>Verify it loaded (Web): <strong>Settings → Plugins → Plugin list</strong> shows the <code>testgen</code> entry with an active status dot.</p>
+<h3>Usage</h3>
+<h4>Slash command</h4>
+<pre><code>/testgen [options] &lt;file-or-glob&gt; [more targets…]
+
+Options:
+  --runner &lt;vitest|jest|node-test|mocha|auto&gt;  framework (default: auto)
+  --generator &lt;llm|template|auto&gt;              generator (default: auto)
+  --iterations &lt;n&gt;                             fix-loop bound (default: 3)
+  --model &lt;provider/model&gt;                     generation model override
+  --no-run                                     generate only, do not run
+  --json                                       machine-readable report
+  -h, --help                                   show this help
+</code></pre>
+<pre><code class="language-sh">/testgen src/utils/math.ts
+/testgen --runner vitest &quot;src/**/*.ts&quot;
+/testgen --generator template --no-run src/app.ts
+/testgen --model deepseek-official/deepseek-chat src/parser.ts
+</code></pre>
+<h4>Model tool</h4>
+<p>The agent can call it directly — same pipeline, structured result:</p>
+<pre><code>generate_tests({ target: &quot;src/utils/math.ts&quot;, runner: &quot;vitest&quot;, maxIterations: 3 })
+</code></pre>
+<h4>What gets written</h4>
+<p>For <code>src/utils/math.ts</code>, tests land in <code>src/utils/__tests__/math.test.ts</code> (framework-dependent; <code>node:test</code> uses <code>.test.mts</code>). Existing test files are <strong>never overwritten</strong> — a target that already has a test file is skipped with a warning.</p>
+<h3>Configuration</h3>
+<p>All settings live under the <code>testgen:</code> key of your harness settings document (<code>$DSH_HOME/settings.yaml</code>) and are <strong>hot-reloaded</strong> — edit, save, done. Layering: schema defaults → composition entry (<code>cordis.patch.yml</code>) → your settings section.</p>
+<pre><code class="language-yaml">testgen:
+  runner: auto            # auto | vitest | jest | node-test | mocha
+  generator: auto         # auto | llm | template
+  maxIterations: 3        # generate → run → fix loop bound (0 disables fixing)
+  timeoutSec: 120         # per-run wall-clock timeout
+  autoRun: true           # run the suite after generation
+  includeGlobs:
+    - &#39;**/*.{ts,tsx,js,jsx}&#39;
+  excludeGlobs:
+    - &#39;**/node_modules/**&#39;
+    - &#39;**/dist/**&#39;
+    - &#39;**/*.test.*&#39;
+    - &#39;**/*.spec.*&#39;
+    - &#39;**/__tests__/**&#39;
+  testDir: __tests__      # generated tests land here, next to the target
+  model:                  # optional provider/model override
+    provider: deepseek-official
+    model: deepseek-chat
+  maxSourceChars: 60000   # source characters fed to the LLM per target
+</code></pre>
+<p>You can also override any of these per profile by patching the <code>testgen</code> row in the profile&#39;s <code>cordis.patch.yml</code> (a patch replaces the row&#39;s whole config). See <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/docs/config.md"><code>docs/config.md</code></a> for the full reference.</p>
+<h3>Input / output specification</h3>
+<p>Every surface — command, tool, engine — speaks the same contract. The tool&#39;s canonical output schema is the JSON projection of <code>TestgenReport</code>; <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/docs/io-spec.md"><code>docs/io-spec.md</code></a> documents it in full.</p>
+<pre><code class="language-ts">interface TestgenReport {
+  status: &#39;passed&#39; | &#39;fixed&#39; | &#39;generated&#39; | &#39;failed&#39; | &#39;skipped&#39;
+  targets: { path: string; language: string }[]
+  generated: GeneratedTest[]        // path, framework, generator, testCount
+  runs: TestRun[]                   // per-iteration exit code, summary, failures
+  warnings: string[]
+  stats: { generatedFiles: number; passed: number; failed: number; iterations: number }
+  elapsedMs: number
+}
+</code></pre>
+<h3>Architecture</h3>
+<p>Everything is a plugin, and this plugin stays inside its box:</p>
+<pre><code>dsh-testgen
+├── src/
+│   ├── index.ts            # cordis entry: name / inject / Config / apply
+│   ├── schema.ts           # schemastery config + settings namespace schema
+│   ├── settings.ts         # hot-reload aware effective-config resolution
+│   ├── command.ts          # /testgen grammar + handler
+│   ├── tool.ts             # generate_tests definition (input/output schemas)
+│   ├── report.ts           # plain / markdown / JSON rendering
+│   ├── errors.ts           # stable TESTGEN_* error codes (HarnessError)
+│   └── engine/             # pure, framework-free core (fully unit-tested)
+│       ├── resolve.ts      # path/glob → SourceTarget[], language detection
+│       ├── template.ts     # deterministic smoke-test generator
+│       ├── generate-llm.ts # ctx.llm streaming, prompt assembly, extraction
+│       ├── runner.ts       # framework detect, spawn, output parsing
+│       └── pipeline.ts     # generate → run → fix orchestration
+├── cordis.patch.yml        # bundle patch: one `testgen` insert row
+├── docs/                   # io-spec, config reference
+├── examples/fixture/       # demo project
+└── test/                   # 78 unit tests (vitest)
+</code></pre>
+<ul>
+<li><strong>Non-invasive</strong>: one insert row in the composition; no core patches, no monkey-patching. Removable with <code>dsh plugin --profile web remove dsh-testgen</code>.</li>
+<li><strong>Composable</strong>: hard-injects only <code>commands</code> and <code>tools</code> (present in every shipped profile); <code>settings</code>, <code>llm</code>, and the agent session are consumed opportunistically, so a profile without a settings provider or LLM adapter still works.</li>
+<li><strong>Honest side effects</strong>: writes test files only, refuses to overwrite existing ones, and fixes only files it generated. Test processes run with your project&#39;s runner, from the workspace root, with a tree-killing timeout and abort wiring.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck     # tsc --noEmit
+pnpm run lint          # eslint
+pnpm test              # vitest (78 tests)
+pnpm run build         # tsdown → lib/
+pnpm run verify:manifest  # dsh.bundle / exports / files contract
+pnpm run demo          # end-to-end demo against examples/fixture
+</code></pre>
+<p>Contributions welcome — see <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>. Report bugs or propose features through the issue templates.</p>
+<h3>FAQ</h3>
+<p><strong>Does it need an API key?</strong> No. Without an LLM adapter, <code>generator: auto</code> uses the deterministic template generator — structural smoke tests that prove imports resolve and exports exist. With an LLM composed, <code>auto</code> prefers behavioral tests.</p>
+<p><strong>Which projects work with <code>node --test</code>?</strong> TypeScript targets need an ESM project (<code>&quot;type&quot;: &quot;module&quot;</code> in package.json — the normal case) because Node strips types only from ESM files; JSX targets need vitest or jest (pin <code>runner</code>).</p>
+<p><strong>Will it modify my source code?</strong> Never. It writes test files only, and skips targets that already have a test file.</p>
+<p><strong>What if the fix loop can&#39;t make it green?</strong> It stops at <code>maxIterations</code> and reports <code>failed</code> with the last failures and warnings — no infinite retries.</p>
+<h3>Changelog &amp; versioning</h3>
+<p><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CHANGELOG.md"><code>CHANGELOG.md</code></a> — versions follow <a href="https://semver.org">SemVer</a>.</p>
+<h3>License</h3>
+<p><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/LICENSE">MIT</a> © bujue600-arch and dsh-testgen contributors. This is a community project, not affiliated with DeepSeek.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,105 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:liliuCourier/dsh-chat-outline</pre><button type="button" data-cmd="dsh plugin --profile web add github:liliuCourier/dsh-chat-outline" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p>对话一长就没法一直往上翻了。这个插件在对话栏左侧常驻一个对话大纲：按轮次列出每次提问和该轮最后一条回复，点击任意一条即可跳回对应位置。蓝框会始终标记你当前读到哪，随滚动跟随；顶部的输入框可以按关键词过滤。它读取全部历史来生成完整大纲，但只保留精简信息，不会把整个会话加载进内存。</p>
+<p><img src="https://raw.githubusercontent.com/liliuCourier/dsh-chat-outline/main/docs/gif4.gif" alt="dsh-chat-outline 演示"></p>
+<h3>中文文档</h3>
+<h4>功能特性</h4>
+<ul>
+<li>覆盖完整会话历史，打开后自动加载，无需手动翻页</li>
+<li>点击任意条目，聊天区平滑滚动到对应消息</li>
+<li>蓝框标记当前阅读位置，随滚动跟随</li>
+<li>支持按关键词过滤</li>
+<li>跟随 DSH 明暗主题</li>
+</ul>
+<h4>安装</h4>
+<p>通过 npm 安装：</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-chat-outline
+</code></pre>
+<p>或者从 GitHub 安装：</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:liliuCourier/dsh-chat-outline
+</code></pre>
+<p>然后在 <code>$DSH_HOME/profiles/web/cordis.patch.yml</code> 中加入：</p>
+<pre><code class="language-yaml">- insert:
+    - id: dsh-chat-outline
+      name: dsh-chat-outline
+</code></pre>
+<p>最后刷新浏览器页面即可生效。</p>
+<blockquote>
+<p>从 0.1.6 起包内已含 <code>dsh.bundle</code>，通过 npm / GitHub 安装会自动激活，无需手动追加上面的 insert；手动 insert 仅对旧版本或源码目录安装适用。</p>
+</blockquote>
+<h4>使用</h4>
+<p>面板常驻在对话栏左侧。每条记录分「我」和「助手」两行，点击任意一行即可跳转。面板顶部的输入框支持按关键词过滤。</p>
+<h4>常见问题</h4>
+<ul>
+<li><p><strong>Windows 下 Git 报 SSL 凭据错误</strong>：<code>fatal: schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS</code>。这是 Windows Git 的 schannel 后端问题，改用 OpenSSL 后端即可：</p>
+<pre><code class="language-sh">git -c http.sslBackend=openssl clone https://github.com/liliuCourier/dsh-chat-outline.git
+</code></pre>
+<p>或者直接使用 npm 方式安装，不经过 Git。</p>
+</li>
+<li><p><strong>安装时提示 peer dependency 警告</strong>：pnpm 报 <code>unmet peer dependency</code> 属正常，DSH 的 web bundle 已包含这些模块，不影响使用。</p>
+</li>
+<li><p><strong>安装后看不到面板</strong>：先刷新浏览器页面，必要时重启 <code>dsh web</code>。服务端清单会即时更新，但已经打开的页面需要刷新一次才会加载插件。</p>
+</li>
+</ul>
+<h4>兼容性</h4>
+<p>适配 DSH 0.1.0-rc.6。DSH 升级后如遇异常，请更新插件。</p>
+<h4>许可证</h4>
+<p><a href="https://github.com/liliuCourier/dsh-chat-outline/blob/main/LICENSE">MIT</a></p>
+<hr>
+<h3>English Documentation</h3>
+<p>Long conversations make scrolling back painful. This plugin keeps a persistent outline on the left of the chat column: every question and its final reply, listed by turn, with one-click jump to any of them. A blue frame always marks where you are reading and follows the scroll, and the input at the top filters by keyword. It scans the full history to build a complete outline while keeping only compact data — the whole session is never loaded into memory.</p>
+<h4>Features</h4>
+<ul>
+<li>Covers the full session history and loads it automatically, no manual paging</li>
+<li>Click any entry to smoothly scroll the chat to the corresponding message</li>
+<li>A blue frame marks your current reading position and follows the scroll</li>
+<li>Filter by keyword</li>
+<li>Follows the DSH light/dark theme</li>
+</ul>
+<h4>Installation</h4>
+<p>Via npm:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-chat-outline
+</code></pre>
+<p>Or from GitHub:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:liliuCourier/dsh-chat-outline
+</code></pre>
+<p>Then add the following to <code>$DSH_HOME/profiles/web/cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- insert:
+    - id: dsh-chat-outline
+      name: dsh-chat-outline
+</code></pre>
+<p>Finally, refresh the browser page.</p>
+<blockquote>
+<p>Since 0.1.6 the package ships a <code>dsh.bundle</code> manifest, so npm / GitHub installs activate automatically — the manual insert above is only needed for older versions or source-folder installs.</p>
+</blockquote>
+<h4>Usage</h4>
+<p>The panel stays on the left of the conversation. Each entry has a &quot;Me&quot; row and an &quot;AI&quot; row; click either to jump. The input at the top filters the list by keyword.</p>
+<h4>Troubleshooting</h4>
+<ul>
+<li><p><strong>Git SSL credential error on Windows</strong>: <code>fatal: schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS</code>. This is a Git-on-Windows schannel issue; switch to the OpenSSL backend:</p>
+<pre><code class="language-sh">git -c http.sslBackend=openssl clone https://github.com/liliuCourier/dsh-chat-outline.git
+</code></pre>
+<p>Or simply install via npm, which does not go through Git.</p>
+</li>
+<li><p><strong>Peer dependency warnings during install</strong>: pnpm may report <code>unmet peer dependency</code>; these are expected and harmless — the DSH web bundle already includes those modules.</p>
+</li>
+<li><p><strong>Panel not visible after install</strong>: refresh the browser page first, and restart <code>dsh web</code> if necessary. The server manifest updates immediately, but an already-open page needs a refresh to load the plugin.</p>
+</li>
+</ul>
+<h4>Compatibility</h4>
+<p>Works with DSH 0.1.0-rc.6. If you run into issues after a DSH upgrade, update the plugin.</p>
+<h4>License</h4>
+<p><a href="https://github.com/liliuCourier/dsh-chat-outline/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/liliuCourier/dsh-chat-outline/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

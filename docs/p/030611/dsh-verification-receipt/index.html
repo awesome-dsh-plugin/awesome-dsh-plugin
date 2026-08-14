@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -161,6 +185,189 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:030611/dsh-verification-receipt</pre><button type="button" data-cmd="dsh plugin --profile web add github:030611/dsh-verification-receipt" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/030611/dsh-verification-receipt/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://github.com/030611/dsh-verification-receipt/actions/workflows/ci.yml"><img src="https://github.com/030611/dsh-verification-receipt/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://www.npmjs.com/package/dsh-verification-receipt"><img src="https://img.shields.io/npm/v/dsh-verification-receipt" alt="npm"></a>
+<a href="https://github.com/030611/dsh-verification-receipt/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
+<a href="https://whyihaveyou.github.io/dsh-suite/"><img src="https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe" alt="featured on dsh-suite"></a></p>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/social-preview.jpg" alt="DSH Verification Receipt social preview"></p>
+<blockquote>
+<p>Ask a smaller, checkable question: what verification-shaped execution signals did DSH record this turn?</p>
+</blockquote>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-verification-receipt
+</code></pre>
+<p>The receipt summarizes recorded tool counts and lexical verification-shaped signals. It does <strong>not</strong> prove that tests ran or that code is correct.</p>
+<blockquote>
+<p>Community-maintained and not an official DeepSeek project. Related trust-layer plugins: <a href="https://github.com/030611/dsh-telemetry-redactor">Telemetry Redactor</a>, <a href="https://github.com/030611/qiushi-dsh-evidence-audit">Evidence Audit</a>, and <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>.</p>
+</blockquote>
+<p>DSH Verification Receipt is a small, passive Profile Bundle for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. After each durable <code>turn/end</code>, it appends one privacy-minimal, heuristic execution summary to a local JSONL file.</p>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/verification-flow.svg" alt="Verification Receipt data flow"></p>
+<p>It records execution traces, not semantic correctness. A receipt shows only that DSH logged tool calls and that a lexical heuristic found a possible verification signal. It never proves that a test ran. It cannot show that the right command executed, that assertions were sufficient, that output was truthful, or that the assistant&#39;s conclusion was correct.</p>
+<p>This is intentionally not an evidence-audit ledger: rows stay independent and there is no hash chain, artifact capture, claim-evidence linkage, or protocol attestation.</p>
+<h3>Compatibility evidence</h3>
+<p>The package is audited against DeepSeek Harness commit <code>47f943859bef60e4160492346772ded9b24f765a</code>, whose manifests declare <code>@deepseek-ai/dsh-session</code> <code>0.1.0-rc.5</code>, Cordis <code>4.0.1</code>, and Schemastery <code>3.18.1</code>. Peer ranges start at those versions and stop before <code>dsh-session</code> stable <code>0.1.0</code> or the next Cordis/Schemastery semver major. The release checks also exercise the available <code>dsh-session</code> <code>0.1.0-rc.6</code> package. Versions admitted by the range but not named here are compatibility expectations, not tested evidence. Cordis and Session are optional host peers because DSH supplies their runtime services; Schemastery is included as an exact runtime dependency and also declared as a compatibility peer.</p>
+<h3>Install</h3>
+<p>Add the published package to every profile that should emit receipts:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-verification-receipt
+dsh --profile web --dump-config
+</code></pre>
+<p>Repeat the first command with another profile name (for example, <code>headless</code>) when that profile also needs receipts. For local development, clone this repository, run <code>pnpm install --frozen-lockfile &amp;&amp; pnpm run check</code>, and pass the checkout path to <code>dsh plugin ... add</code> instead of the package name.</p>
+<p><code>package.json</code> declares <code>dsh.bundle.patch</code>; <code>cordis.patch.yml</code> inserts one ordinary observer plugin. It works on any DSH surface that provides the core Session service.</p>
+<h3>Output</h3>
+<p>The default file is:</p>
+<pre><code class="language-text">$DSH_HOME/verification-receipts/v1/receipts.jsonl
+</code></pre>
+<p>When <code>DSH_HOME</code> is unset, it resolves below <code>~/.dsh</code>. Override it with an absolute path in the profile&#39;s <code>cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- id: verification-receipt
+  config:
+    outputPath: /absolute/private/path/receipts.jsonl
+</code></pre>
+<p>Each line has this form:</p>
+<pre><code class="language-json">{
+  &quot;schemaVersion&quot;: 1,
+  &quot;kind&quot;: &quot;dsh-verification-receipt&quot;,
+  &quot;sessionIdHash&quot;: &quot;sha256:…&quot;,
+  &quot;turn&quot;: 3,
+  &quot;turnEndSeq&quot;: 42,
+  &quot;endedAt&quot;: 1786630000000,
+  &quot;outcome&quot;: &quot;completed&quot;,
+  &quot;tools&quot;: {
+    &quot;calls&quot;: 4,
+    &quot;succeeded&quot;: 3,
+    &quot;failed&quot;: 1,
+    &quot;unresolved&quot;: 0,
+    &quot;topLevel&quot;: 2,
+    &quot;nested&quot;: 2
+  },
+  &quot;verificationSignals&quot;: [
+    {
+      &quot;source&quot;: &quot;command&quot;,
+      &quot;category&quot;: &quot;test&quot;,
+      &quot;status&quot;: &quot;failed&quot;
+    }
+  ],
+  &quot;claim&quot;: &quot;execution-trace-only&quot;,
+  &quot;receiptHash&quot;: &quot;sha256:…&quot;
+}
+</code></pre>
+<h4>Integrity warning</h4>
+<p>Both hashes are unkeyed and recomputable. <code>receiptHash</code> is SHA-256 over the exact preceding receipt fields in their emitted order. Anyone who can edit a row can recompute it. Independent rows do not reveal deletion, insertion, reordering, truncation, rollback, or replacement. The hash is neither a signature nor a trusted timestamp, hash chain, commitment, or tamper-evident log.</p>
+<h3>Privacy and agent behavior</h3>
+<p>The persisted receipt does not contain:</p>
+<ul>
+<li>tool arguments or call ids;</li>
+<li>tool result content or error messages;</li>
+<li>assistant or user message text;</li>
+<li>raw session ids, working directories, provider names, or model names.</li>
+</ul>
+<p>The plugin temporarily reads tool names, raw arguments, and result status from existing durable events to compute the summary. It does not persist those inputs, append a Session event, register a tool, add a prompt section, inject context, make a model call, or change model history.</p>
+<p><code>sessionIdHash</code> is deterministic, unkeyed, and domain-separated so receipts from one Session can be grouped without storing its raw id. It is linkable across files. If a Session id is predictable or low entropy, an observer can guess candidates offline and recompute the hash; this is pseudonymization, not anonymization.</p>
+<h3>Verification-signal heuristic</h3>
+<p>A heuristic signal is emitted when either:</p>
+<ul>
+<li>a tool name resembles test, typecheck, lint, build, check, verify, or validate work; or</li>
+<li>a shell-like tool&#39;s in-memory <code>command</code> or <code>cmd</code> argument resembles such work.</li>
+</ul>
+<p>The stored signal keeps only <code>source</code>, coarse <code>category</code>, and observed <code>status</code>. Native DSH tool errors and recognized non-zero shell exit markers count as failure. Background commands remain <code>unresolved</code> because their later job result may occur outside this turn. Even <code>status: succeeded</code> means only that the observed call completed without a recognized failure marker; it does not mean tests passed or even ran.</p>
+<p>Classification is lexical; it does not parse shell syntax, expand aliases, or execute commands:</p>
+<table>
+<thead>
+<tr>
+<th>Input shape</th>
+<th>Support</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>JSON-string or object arguments with string <code>command</code>/<code>cmd</code></td>
+<td>Supported</td>
+<td>Only recognized shell-like tool names are inspected.</td>
+</tr>
+<tr>
+<td>Upper/lower case, quotes, or visible wrappers such as <code>bash -lc</code>/<code>pwsh -Command</code></td>
+<td>Supported lexically</td>
+<td>A category keyword must remain visible in the string.</td>
+</tr>
+<tr>
+<td>Array commands, <code>argv</code>, nested command objects, custom shell tool names</td>
+<td>Unsupported</td>
+<td>No signal is emitted.</td>
+</tr>
+<tr>
+<td>Aliases or wrappers with no visible category keyword</td>
+<td>Unsupported</td>
+<td>False negatives are expected.</td>
+</tr>
+<tr>
+<td>Quoted prose such as <code>echo &quot;do not run tests&quot;</code></td>
+<td>Lexically matched</td>
+<td>False positives are expected because intent and execution are not parsed.</td>
+</tr>
+</tbody></table>
+<p>Treat every match as a discovery hint named “heuristic signal,” never as “tests ran,” an attestation, or a quality gate.</p>
+<h3>Model experience</h3>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token cost</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Tool calls</td>
+<td>None; the model gets no new tool.</td>
+</tr>
+<tr>
+<td>Session log</td>
+<td>Unchanged; the plugin reads existing events and adds no events.</td>
+</tr>
+<tr>
+<td>Prompt and context</td>
+<td>Unchanged.</td>
+</tr>
+<tr>
+<td>Turn latency</td>
+<td>The listener scans the completed turn synchronously and queues local file I/O; it does not await disk on the turn path.</td>
+</tr>
+</tbody></table>
+<h3>Known limitations</h3>
+<ul>
+<li>Receipts cover events observed by the running plugin. Constructor seed history and turns completed while it was unloaded are not backfilled.</li>
+<li>A process crash can lose a queued receipt because <code>turn/end</code> does not synchronously wait for this optional local sink. Normal plugin/application disposal drains accepted writes.</li>
+<li>Disposal first closes the enqueue gate, then unregisters listeners, then drains accepted writes. Abrupt process termination cannot run that lifecycle.</li>
+<li>Receipt rows are independent; deletion, reordering, truncation, and rollback are not detectable.</li>
+<li>Receipt status repeats DSH&#39;s recorded tool outcome and recognized shell markers. It does not independently execute or validate anything.</li>
+<li>Projection cost grows with the number and size of events in a turn; unusually large tool arguments can add end-of-turn CPU time while they are classified in memory.</li>
+<li>The in-process write queue is ordered but unbounded. A slow or stuck filesystem can grow memory usage until writes recover or the process ends.</li>
+<li>There is no cross-process lock. Two DSH processes targeting one file have no guaranteed row order or row-boundary integrity; use one file per process. A crash can leave an incomplete final line, which readers must reject or quarantine.</li>
+<li>Creation modes request <code>0700</code>/<code>0600</code> on supporting POSIX filesystems only. Existing permissions are not tightened, Windows may ignore POSIX modes, and pre-existing symbolic links are followed. Configure a trusted, private, non-symlink path.</li>
+<li>The file has no built-in rotation, retention, encryption, signing, or recovery.</li>
+</ul>
+<p>See <a href="https://github.com/030611/dsh-verification-receipt/blob/main/SECURITY.md">SECURITY.md</a> for the trust and disclosure model.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm run typecheck
+pnpm run test
+pnpm run build
+pnpm run check
+pnpm run release:smoke
+pnpm run performance:smoke
+</code></pre>
+<p>Tests cover privacy exclusions, deterministic hashing, top-level and Code Mode final states, the supported/unsupported classification matrix, listener disposal, disk draining, and a real DSH <code>Context + SessionStore</code> composition. <code>release:smoke</code> enforces the exact tarball file list, installs the real <code>.tgz</code> into a temporary project, and imports it by package name.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/030611/dsh-verification-receipt/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

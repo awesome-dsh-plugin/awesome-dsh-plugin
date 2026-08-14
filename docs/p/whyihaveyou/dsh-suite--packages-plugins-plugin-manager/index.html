@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,113 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-manager</pre><button type="button" data-cmd="dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-manager" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>v0.4.0 — 复制按钮反馈修复 + GitHub opengraph 卡片预览缩略图（lazy）。</p>
+</blockquote>
+<blockquote>
+<p>嵌入 DSH Web UI 设置页的插件商店面板：目录浏览 / 搜索 / 一键安装 / 兼容徽章 / 已装列表。
+A plugin-store panel embedded in DSH Web UI: catalog browse / search / one-click install / compat badges / installed list.</p>
+</blockquote>
+<p>旗舰功能（本团队）。官方只做了「设置页只读清单 + 命令行安装」，本插件补上「在 Web UI 里发现 + 搜索 + 一键安装」这半截断掉的链路。</p>
+<h3>架构 / Architecture（双半插件 dual-half）</h3>
+<pre><code>plugin-manager/
+├── lib/index.js   宿主半 / host half  — install 服务 + 已装清单，经 /plugin-manager/* HTTP 路由暴露
+│                   (spawn 官方 `dsh plugin add`；inject webServer + loader)
+└── lib/client.js  浏览器半 / browser half — 「Store」tab 注入官方 settings.plugins.tab slot
+                   (fetch GitHub Pages catalog.json；卡片/搜索/排序/徽章/安装确认框)
+</code></pre>
+<ul>
+<li>浏览器不能跑 <code>dsh plugin add</code> → 安装必须走 host 侧服务（spawn 官方 CLI，复用安装机制）。</li>
+<li>已装清单：host 读 <code>ctx.loader.entries()</code> 投影，经 <code>/plugin-manager/list</code> 返回。</li>
+<li>目录：浏览器侧 fetch <code>catalog.json</code>（GH Pages，CORS <code>*</code>），不 host 代理。</li>
+</ul>
+<h3>功能 / Features（MVP = F1-F3 + F5 + F4 只读）</h3>
+<ul>
+<li><strong>F1 目录</strong>：<code>catalog.json</code> 的 <code>plugins</code> 数组渲染卡片（name / 双语描述 / author / stars / license）。</li>
+<li><strong>F2 搜索/分类/排序</strong>：子串搜索（name/desc_zh/desc_en/author/repo/tags）；分类下拉；排序（星标↓ / 最近验证 / 兼容优先）。</li>
+<li><strong>F3 一键安装</strong>：点 Install → 确认框（包名/repo/star/license，未知 license 标黄）→ host spawn <code>dsh plugin add</code> → 成功绿勾+「需重启生效」/ 失败红叉+日志 / 超时提示。每卡 [📋] 复制 installCmd。</li>
+<li><strong>F5 兼容徽章</strong>：🟢 ok / 🔴 broken / ⚪ unknown / ⚫ unmaintained；broken 卡片置灰 + 安装按钮标黄「⚠ 已知不兼容」（仍可装，知情自担）。</li>
+<li><strong>F4 已装</strong>：只读列表；商店卡片标 ✅ 已装，Install 变禁用。</li>
+</ul>
+<h3>三态 / Three states</h3>
+<p>加载（骨架/文字）· 空（搜索无结果 + 清除筛选 / 目录空 + 重试）· 错误（fetch 失败 + 重试）。全部双语（<code>ctx.locale.register(NS, {zh, en})</code>）。</p>
+<h3>安装运行 / Install &amp; run</h3>
+<pre><code class="language-sh">export DSH_HOME=/tmp/dsh-pm
+npx -y @deepseek-ai/dsh plugin --profile web add @dsh-suite/plugin-manager
+npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
+# 设置 Settings → Plugins → 「Store 商店」tab
+</code></pre>
+<h3>配置 / Config（后续接 cordis schema；当前硬编码默认值）</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>catalogUrl</td>
+<td><code>https://whyihaveyou.github.io/dsh-suite/catalog.json</code></td>
+<td>目录源</td>
+</tr>
+<tr>
+<td>profile</td>
+<td><code>web</code></td>
+<td>安装目标 profile</td>
+</tr>
+<tr>
+<td>installTimeoutMs</td>
+<td>120000</td>
+<td>spawn 超时</td>
+</tr>
+<tr>
+<td>confirmBeforeInstall</td>
+<td>true</td>
+<td>安装前二次确认</td>
+</tr>
+<tr>
+<td>allowInstall</td>
+<td>true</td>
+<td>安装开关</td>
+</tr>
+</tbody></table>
+<h3>变更 / Changelog</h3>
+<ul>
+<li><strong>v0.4.0</strong>：新增「已装管理」视图（与 Store 顶部切换）——按来源分组（官方内建 @deepseek-ai/* / 第三方 npm / git 源 / 自研 @dsh-suite/* / 其他）+ 搜索过滤 + 各组计数徽标 + 版本/来源/状态；每项 Remove 按钮 + 确认框（显示名称/来源/「需重启完全卸载」提示），执行 <code>dsh plugin remove</code>（pnpm remove + bundle 协调）。</li>
+</ul>
+<h3>变更 / Changelog</h3>
+<ul>
+<li><strong>v0.3.0</strong>：首屏提速（宿主侧 <code>/plugin-manager/catalog</code> 裁剪目录路由，只含面板必需字段 + gzip/deflate，缓存 1h，浏览器优先走宿主路由、失败回退 Pages 完整版）；已装 npm 源插件更新检查（<code>npm view</code> 批量查询，并发 ≤4、缓存 1h，卡片加「⬆ 有更新」角标，git/link 源跳过）。</li>
+</ul>
+<h3>变更 / Changelog</h3>
+<ul>
+<li><strong>v0.4.0</strong>：新增「已装管理」视图（与 Store 顶部切换）——按来源分组（官方内建 @deepseek-ai/* / 第三方 npm / git 源 / 自研 @dsh-suite/* / 其他）+ 搜索过滤 + 各组计数徽标 + 版本/来源/状态；每项 Remove 按钮 + 确认框（显示名称/来源/「需重启完全卸载」提示），执行 <code>dsh plugin remove</code>（pnpm remove + bundle 协调）。</li>
+</ul>
+<h3>变更 / Changelog</h3>
+<ul>
+<li><strong>v0.2.0</strong>：复制按钮修复（剪贴板降级链 navigator.clipboard → execCommand(&#39;copy&#39;) → 命令文本弹层）+ 复制成功 ✓ 反馈；卡片顶部 GitHub opengraph 预览缩略图（IntersectionObserver 按需加载、onerror 隐藏、点击展开）；装完提示加「立即重启」指引。</li>
+<li><strong>v0.2.0 (P1 修复)</strong>：安装成功判定不再只看 exit 0——改成「exit 0 + 解析 pnpm <code>+ &lt;name&gt;</code> 确认依赖真加了 + <code>--dump-config</code> 确认包进了 bundle 栈」才翻绿；未挂载（monorepo 根包/缺 dsh.bundle）显示黄色警告，失败显示 stderr 摘要；目标 profile 从硬编码 <code>web</code> 改为从启动 argv 探测当前 profile。</li>
+<li><strong>v0.1.1</strong>：复制按钮无反馈 bug 修复（同 0.2 降级链）。</li>
+</ul>
+<h3>与官方「Plugin list」的差异 / vs the official Plugin list</h3>
+<p>官方「Plugin list」是<strong>清单</strong>（只读平铺，160+ 个名字难找）；本插件的「已装管理」是<strong>管理</strong>——分组、搜索、显示版本/来源/状态，并可移除。两者共存于 Settings → Plugins 的 tab 栏。</p>
+<h3>已知限制 / Known limitations</h3>
+<ol>
+<li>install 通过 HTTP 路由（非 typert Remote）：因 typert 代码生成需 monorepo 构建链，第三方双半插件用 webServer 路由是已验证的等价路径（同 aionui-panel）。</li>
+<li>安装非流式：spawn 完成后一次性回传完整日志（进度用「安装中…」spinner 表示）。</li>
+<li>已装匹配是近似子串（catalog.name ↔ 已装包名），非精确 npm 包名对齐。</li>
+<li>卡片描述同时展示 en+zh（未按 UI locale 切换单语）。</li>
+<li>卸载/更新检查/启停未做（设计规格明确推到后续迭代）。</li>
+</ol>
+
+    </div>
+    <p class="note"><a href="https://github.com/whyihaveyou/dsh-suite/blob/main/packages/plugins/plugin-manager/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

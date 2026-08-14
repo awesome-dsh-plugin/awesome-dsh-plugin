@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,72 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage</pre><button type="button" data-cmd="dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
+<p><img src="https://raw.githubusercontent.com/LaoYueHanNi/dsh-token-usage/main/token-usage.png" alt="Token Usage stats page"></p>
+<p><a href="https://github.com/LaoYueHanNi/dsh-token-usage/blob/main/README.zh.md">简体中文</a> | English</p>
+<p>A dsh usage plugin that displays model token usage right in the Web UI. After installation, open <strong>Settings</strong> (the gear icon in the sidebar) and you&#39;ll find the <strong>Token Usage</strong> page — summary cards, a daily total-token line chart and a per-model breakdown, all filterable by date range and model, exactly as shown in the screenshot above.</p>
+<p>Repo: <a href="https://github.com/LaoYueHanNi/dsh-token-usage">https://github.com/LaoYueHanNi/dsh-token-usage</a></p>
+<h3>Features</h3>
+<ul>
+<li><strong>Live hook</strong>: every successful model request is appended to per-day JSONL files (request id, model, input / output / cache-read / cache-write tokens, time, session id).</li>
+<li><strong>Web stats page</strong>: filters (date range + model + <code>1d</code>/<code>7d</code>/<code>30d</code> shortcuts), summary cards, daily trend chart, per-model table.</li>
+<li><strong>Cost figures &amp; model pricing</strong>: per-request cost is computed live from per-model rates (¥ per million tokens) — a highlighted total-cost card, a cost column plus the per-model rates under each model name in the per-model table, and a warning strip for unpriced models (their cost counts as ¥0). The rate table is maintained by you in <code>pricing.json</code> inside the data directory; <code>/token-usage-pricing</code> prints the active table anytime.</li>
+<li><strong>History backfill</strong>: the first startup syncs requests that happened before installation; the <code>/token-usage-sync</code> command re-runs the same idempotent backfill anytime.</li>
+</ul>
+<h3>Model pricing</h3>
+<p>Cost = each token bucket × its rate ÷ 1,000,000. Rates live in <code>pricing.json</code> in the data directory (no pricing configured means every model is unpriced):</p>
+<pre><code class="language-json">{
+  &quot;deepseek-chat&quot;: { &quot;inputPerMillion&quot;: 2, &quot;outputPerMillion&quot;: 8, &quot;cacheReadPerMillion&quot;: 0.5 },
+  &quot;deepseek-reasoner&quot;: { &quot;inputPerMillion&quot;: 4, &quot;outputPerMillion&quot;: 16, &quot;cacheReadPerMillion&quot;: 1 }
+}
+</code></pre>
+<ul>
+<li>Keys are model ids (must match the recorded <code>model</code> exactly); values are ¥ per million tokens.</li>
+<li><code>inputPerMillion</code> and <code>outputPerMillion</code> are required; <code>cacheReadPerMillion</code> (cache hit) and <code>cacheWritePerMillion</code> (cache write) are optional and fall back to the input rate when absent.</li>
+<li>A broken file or invalid entries leave the affected models unpriced without breaking the stats page; save and refresh (or re-run the command) to apply changes.</li>
+<li>Default location: <code>~/.dsh/token-usage/pricing.json</code> (wherever <code>path</code> points when configured).</li>
+</ul>
+<h3>Install</h3>
+<h4>From GitHub (recommended)</h4>
+<pre><code class="language-sh">dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage
+</code></pre>
+<blockquote>
+<p>The package declares <code>dsh.bundle</code>, so <code>add</code> wires the plugin into the profile&#39;s layer stack automatically — no config editing needed. The built <code>lib/</code> ships in the repo (there is no <code>prepare</code> script), so git installs work out of the box without any build allowlist. The first startup runs one history backfill, afterwards it records in real time.</p>
+</blockquote>
+<h4>From a local directory (development)</h4>
+<pre><code class="language-sh">dsh plugin --profile web add link:D:/plugins/dsh-token-usage
+</code></pre>
+<p><code>link:</code> installs a symlink: rebuild the plugin and restart <code>dsh web</code> to apply changes.</p>
+<h3>Update</h3>
+<pre><code class="language-sh">dsh plugin --profile web update dsh-token-usage
+</code></pre>
+<h3>Remove</h3>
+<pre><code class="language-sh">dsh plugin --profile web remove dsh-token-usage
+</code></pre>
+<p>The plugin is removed from the profile and stops loading. Data files under <code>$DSH_HOME/token-usage/</code> are kept — delete them manually if you no longer need them.</p>
+<h3>Development</h3>
+<p>Build the plugin once:</p>
+<pre><code class="language-sh">npm install
+npm run build &amp;&amp; npm run build:client
+</code></pre>
+<blockquote>
+<p><strong>No <code>prepare</code> script — by design.</strong> The compiled <code>lib/</code> output is committed to the repo. pnpm ≥ 10 refuses to run build scripts of git-hosted dependencies unless they are allowlisted (<code>ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED</code>), so a <code>prepare</code> script would break the zero-config <code>github:</code> install for every user. Shipping prebuilt output instead keeps <code>dsh plugin add github:LaoYueHanNi/dsh-token-usage</code> working out of the box. <strong>After changing anything under <code>src/</code>, always rebuild and commit the updated <code>lib/</code></strong>, or installs will get stale output:</p>
+</blockquote>
+<pre><code class="language-sh">npm run build &amp;&amp; npm run build:client
+git add lib/
+</code></pre>
+<p>Temporary mount — effective for this launch only, no profile changes. <code>cordis.yml</code> points at the built <code>lib/index.js</code>:</p>
+<pre><code class="language-sh">dsh web --patch &lt;plugin-dir&gt;/cordis.yml
+</code></pre>
+<p>This mode only mounts the host half (data recording and commands work); the stats page needs the client bundle resolved by package name, so for UI development use the <code>link:</code> install above instead: run <code>npm run build &amp;&amp; npm run build:client</code> (or <code>npx tsdown --watch</code> in the plugin directory), restart <code>dsh web</code>, and the browser plugin hot-reloads automatically.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LaoYueHanNi/dsh-token-usage/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -106,6 +106,30 @@ ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -158,6 +182,109 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:omdsh-dev/fabric</pre><button type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/fabric" aria-label="复制安装命令">复制安装命令</button></div>
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/omdsh-dev/fabric/blob/main/README.zh.md">中文</a></p>
+<p>The Fabric/Mixin extension layer for DSH as a self-contained workspace of three packages plus an installable profile bundle carrier. The workspace mirrors the upstream fabric split: a pure-Cordis pair (<code>cordis-fabric</code>, <code>cordis-fabric-api</code>) and the DSH integration package (<code>cordis-fabric-dsh</code>) that supplies the Host and browser facades, the package invariant, and the profile bootstrap.</p>
+<h3>Packages</h3>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Kind</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>cordis-fabric</code></td>
+<td>pure Cordis</td>
+<td>Trusted load-time transformation service (<code>FabricService</code>, <code>bootstrapFabric</code>), Orchestrion transform, node-loader hooks, bridge, browser transform, testkit. No DSH imports.</td>
+</tr>
+<tr>
+<td><code>cordis-fabric-api</code></td>
+<td>pure Cordis</td>
+<td>Cooperative compat facade over the fabric registry: <code>FabricCompatService</code> + <code>buildCompatInstrumentations</code>. Peers only Cordis and <code>cordis-fabric</code>.</td>
+</tr>
+<tr>
+<td><code>cordis-fabric-dsh</code></td>
+<td>DSH-facing</td>
+<td>Mod-facing facades (<code>ctx.fabricAgent</code>, <code>ctx.fabricTools</code>, <code>ctx.fabricPrompt</code>, <code>ctx.fabricCommands</code>), browser facade (<code>ctx.fabricClient</code>), the package invariant, and the profile bootstrap (<code>installFabricBootstrap</code>).</td>
+</tr>
+</tbody></table>
+<p>Only these three packages exist as code in this repository. Anything outside them — for example the official <code>@deepseek-ai/dsh-tool-cordis</code> toolset or a corrected upstream dependency — is never added as a fourth package; it is applied as a pnpm dependency patch stored in <code>patches/</code> (see <code>patches/README.md</code>).</p>
+<h3>Repository shape</h3>
+<pre><code class="language-text">package.json              # workspace root and dsh.bundle bundle carrier
+pnpm-workspace.yaml       # packages/* workspace
+cordis.patch.yml          # explicit Fabric profile rows (opt-in, disabled)
+AGENTS.md                 # repository-local contributor rules
+docs/                     # detailed Fabric, API, and contract references
+patches/README.md         # pnpm dependency-patch contract
+scripts/                  # self-contained prepare and boundary verification
+packages/
+  cordis-fabric/          # pure transformation service + browser client entry
+  cordis-fabric-api/      # pure compat facade (peer-only library)
+  cordis-fabric-dsh/      # DSH facades, invariant, profile bootstrap
+lib/                      # build outputs (ignored; each package prepares its own on install)
+</code></pre>
+<h3>Repository boundary</h3>
+<p>This repository is fully self-contained: every source file, compiler setting, test fixture, contributor instruction, and build helper lives below this repository root, and every development input resolves from this repository&#39;s own manifests and lockfile. The DSH host packages (<code>@deepseek-ai/dsh-agent</code>, <code>@deepseek-ai/dsh-invariants</code>, and the other <code>@deepseek-ai/dsh-*</code> services the facades delegate to) are installable from the npm registry; the facades import their real types directly (declared as peer + dev dependencies), and a composed DSH profile supplies the real services at runtime.</p>
+<p>Run <code>pnpm run verify:self-contained</code> to enforce the boundary: it rejects local-path dependency specs, compiler or code paths that leave the repository, external or broken Markdown links, absolute workstation paths, and the removal of any repository-layout contract.</p>
+<h3>Bundle behavior</h3>
+<p>The bundle carrier adds both profile rows as disabled opt-ins:</p>
+<pre><code class="language-yaml">- id: cordis-fabric
+  name: &#39;cordis-fabric&#39;
+  disabled: true
+
+- id: cordis-fabric-dsh
+  name: &#39;cordis-fabric-dsh&#39;
+  disabled: true
+</code></pre>
+<p>Fabric patch handlers are trusted code registered through <code>ctx.fabric.register()</code>. Patch descriptors are configuration metadata, but executable handlers are never deserialized from YAML or model input. The service supports Node ESM/CommonJS load-time transformation, browser build-time transformation, priority composition, HMR-safe disposal, static target validation, generator delegation, and watched browser transforms.</p>
+<p>The bundle patch only composes these package rows. The launcher/bootstrap and browser build seams the trio needs to RUN are host-side code outside the three packages and are carried as <code>patches/fabric-host-integration.patch</code> (apply it to a deepseek-harness checkout at snapshot <code>9f9e2782a4</code> (0813); see <code>patches/README.md</code>). A host already at the split commit needs nothing.</p>
+<h3>Installation</h3>
+<p>The bundle installs through DSH&#39;s official bundle-plugin channel; the trio resolves from this same GitHub repository through git subdirectory specs, so nothing is published:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:dsh-external/fabric
+</code></pre>
+<p>Restart the web app afterwards. The profile rows are disabled opt-ins; enable <code>cordis-fabric</code> / <code>cordis-fabric-dsh</code> in the profile composition to activate the Fabric layer.</p>
+<p>The repository carries no build artifacts: the trio&#39;s <code>prepare</code> scripts build <code>lib/</code> during a Git install (pnpm installs the package&#39;s devDependencies and runs <code>prepare</code> on the consumer machine). Installations track <code>main</code>.</p>
+<p>For the Fabric layer to actually engage, the host launcher must call the trio&#39;s bootstrap before any target module import. Official DSH master does not do this yet. Two host situations:</p>
+<p><strong>Source host (fully usable now)</strong> — a deepseek-harness checkout plus the host patch (<code>patches/fabric-host-integration.patch</code>, see <code>patches/README.md</code>). The patch wires the launcher, the browser build seam, and the tool-cordis catalog, and the CLI&#39;s trio dependencies are git specs, so a plain official checkout resolves and builds the trio on <code>pnpm install</code>:</p>
+<pre><code class="language-sh">git clone &lt;deepseek-harness&gt; &amp;&amp; cd deepseek-harness
+pnpm run patch:host -- .          # from this bundle repo; or git apply the patch
+pnpm install --no-frozen-lockfile # first install: lockfile gains the two git deps,
+                                  # pulls the trio from GitHub, prepare builds it
+pnpm run build
+pnpm dsh web            # the web-app bundle layer already composes the fabric rows
+</code></pre>
+<p>Or in one step from this bundle repo: <code>pnpm run install:host -- &lt;deepseek-harness-checkout&gt;</code> (apply patch, install, build).</p>
+<p><strong>npm-installed official <code>dsh</code></strong> — cannot take the source patch (the CLI ships prebuilt); it works once the official repository merges the wiring (the fork at <code>65bcaf9902</code> contains it).</p>
+<p>Two prerequisites:</p>
+<ul>
+<li>pnpm resolves GitHub dependencies over SSH, so the installing machine needs GitHub SSH access for <code>dsh-external/fabric</code>.</li>
+<li>The load-time transformation hooks must be installed by the host launcher before any target module import; see the host situations above.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run verify:self-contained
+pnpm run typecheck
+pnpm test
+pnpm run build
+</code></pre>
+<p><code>lib/</code> is a build output, never committed: it is recreated by the trio&#39;s <code>prepare</code> scripts (the root <code>build</code> script runs them locally). In this workspace, the root manifest&#39;s git subdirectory specs for the trio are redirected to the local packages through <code>pnpm-workspace.yaml</code> overrides, so <code>pnpm install</code> never re-clones the repository.</p>
+<h3>Model Experience</h3>
+<p>The low-level transformer contributes no model-visible content. The cooperative facades delegate prompt, tools, commands, agent events, and browser command/slot registrations to their authoritative DSH services; those owners retain logging, permissions, approval, cancellation, and rendering semantics.</p>
+<h3>Known Limitations and Deferred Work</h3>
+<ul>
+<li>Node load-time transformation requires precompiled JavaScript; browser transforms strip TypeScript before applying handlers.</li>
+<li>The browser faces are split across the two dual-face packages (<code>cordis-fabric/client</code> for the bridge and service, <code>cordis-fabric-dsh/client</code> for the Mod-facing facade); consumers that need the complete typed SlotMap should use the authoritative DSH slot service instead of widening the facade.</li>
+<li>On an npm-installed official <code>dsh</code>, the load-time and browser build seams do not engage (the CLI ships prebuilt and cannot take the source patch); those hosts work once the official repository merges the wiring. Source hosts use <code>patches/fabric-host-integration.patch</code> to add the seams (see <code>patches/README.md</code>).</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/omdsh-dev/fabric/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
