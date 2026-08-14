@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 139,
+ "count": 140,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -309,6 +309,18 @@
     "zh": "输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。"
    },
    "install": "dsh plugin --profile web add github:Ghost011118/dsh-balance-meter",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-deepseek-balance",
+   "owner": "fishxcode",
+   "url": "https://github.com/fishxcode/dsh-plugin-deepseek-balance",
+   "category": "ui",
+   "description": {
+    "en": "DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.",
+    "zh": "在 DSH Web 设置中展示 DeepSeek API 余额、余额趋势与每日用量图表。"
+   },
+   "install": "dsh plugin --profile web add github:fishxcode/dsh-plugin-deepseek-balance",
    "added": "2026-08-14"
   },
   {

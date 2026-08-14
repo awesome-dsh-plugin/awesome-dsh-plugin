@@ -20,6 +20,13 @@
     <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
   </entry>
   <entry>
+    <title>dsh-plugin-deepseek-balance</title>
+    <id>https://github.com/fishxcode/dsh-plugin-deepseek-balance</id>
+    <link href="https://github.com/fishxcode/dsh-plugin-deepseek-balance"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.</summary>
+  </entry>
+  <entry>
     <title>ds-api-usage</title>
     <id>https://github.com/Sev7een/ds-api-usage</id>
     <link href="https://github.com/Sev7een/ds-api-usage"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/openma-ai/deepseek-harness-acp"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>ACP profile plugin and standalone stdio server for using the full DSH agent from Zed and other ACP clients while sharing DSH credentials and sessions.</summary>
-  </entry>
-  <entry>
-    <title>dsh-chatnode-wechat</title>
-    <id>https://github.com/Jesse-njx/dsh-chatnode-wechat</id>
-    <link href="https://github.com/Jesse-njx/dsh-chatnode-wechat"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Chat with, monitor, and approve your DSH agents from WeChat via the iLink gateway: text both ways, session targeting, digest heartbeats, and numbered approval prompts.</summary>
   </entry>
 </feed>
