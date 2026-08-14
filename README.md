@@ -262,7 +262,7 @@ dsh plugin --profile web add dshmarket
 - [creght-dev/skills](https://github.com/creght-dev/skills) - Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.
 
 
-- [YTxue/dsh-skill-manager](https://github.com/YTxue/dsh-skill-manager) - Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.
+- [YTxue/dsh-skill-manager-ytxue](https://github.com/YTxue/dsh-skill-manager-ytxue) - Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.
 ### Workflow & Automation
 
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) - Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.
