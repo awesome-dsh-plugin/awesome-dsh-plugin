@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 323,
+ "count": 324,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -3484,6 +3484,21 @@
    "npm": null,
    "stars": 14,
    "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-team-board",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "DSH-EvoResearch#evoresearch-plugin",
+   "owner": "Karbo123",
+   "url": "https://github.com/Karbo123/DSH-EvoResearch/tree/main/packages/evoresearch-plugin",
+   "page": "https://awesome-dsh-plugin.com/p/Karbo123/DSH-EvoResearch--packages-evoresearch-plugin/",
+   "category": "workflow",
+   "description": {
+    "en": "Research agent suite: long-horizon goal control with auditable evidence chains, cron scheduling, multi-agent expert teams, self-evolving research memory (FTS5 + RRF recall), project workspaces, and a custom workspace UI.",
+    "zh": "科研 agent 套件：长程目标控制（可审计证据链）、定时任务、多智能体专家团队、自进化科研记忆（FTS5 + RRF 召回）、科研项目工作区与自定义工作台界面。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Karbo123/DSH-EvoResearch#path:/packages/evoresearch-plugin",
    "added": "2026-08-14"
   },
   {
