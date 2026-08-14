@@ -45,6 +45,11 @@ Requirements / 要求：
 
 Maintainers also add notable plugins directly — the list grows through both community PRs and editorial curation. / 维护者也会主动收录值得关注的插件——列表由社区 PR 与编辑精选共同生长。
 
+Recommended for a better install experience / 推荐（更好的安装体验）：
+
+- Publish your plugin to npm — prebuilt installs skip the `allowBuilds` build-approval step. / 发布 npm 包：预构建安装免 `allowBuilds` 构建授权。
+- Declare official `@deepseek-ai/*` packages as `peerDependencies`, not `dependencies`. / 官方 `@deepseek-ai/*` 包请用 `peerDependencies` 声明。
+
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
 
 ## Removing or updating / 移除与更新
