@@ -20,6 +20,13 @@
     <summary>Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。</summary>
   </entry>
   <entry>
+    <title>Bernardxu123/dsh-mobile-gate</title>
+    <id>https://github.com/Bernardxu123/dsh-mobile-gate</id>
+    <link href="https://github.com/Bernardxu123/dsh-mobile-gate"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>局域网手机访问网关：独立子进程反向代理 + 首次访问审批 + 设备令牌绑定 + 限流 + 手机端紧凑排版注入（输入区权限/模型小胶囊、randomUUID polyfill）。</summary>
+  </entry>
+  <entry>
     <title>Noob-stupid/dsh-plugin-hub</title>
     <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
     <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Meredith2328/dsh-sticky-note"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>编辑框工具栏便签，随手记点子和 TODO，自动保存为 Markdown，一键发送到对话。</summary>
-  </entry>
-  <entry>
-    <title>Luaphes/dsh-web-attention-badge</title>
-    <id>https://github.com/Luaphes/dsh-web-attention-badge</id>
-    <link href="https://github.com/Luaphes/dsh-web-attention-badge"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。</summary>
   </entry>
 </feed>

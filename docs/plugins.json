@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 329,
+ "count": 331,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -79,6 +79,21 @@
    "npm": "dsh-web-lan-access",
    "stars": 1,
    "install": "dsh plugin --profile web add dsh-web-lan-access",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-mobile-gate",
+   "owner": "Bernardxu123",
+   "url": "https://github.com/Bernardxu123/dsh-mobile-gate",
+   "page": "https://awesome-dsh-plugin.com/p/Bernardxu123/dsh-mobile-gate/",
+   "category": "ui",
+   "description": {
+    "en": "LAN mobile gateway: isolated child-process reverse proxy with first-visit approval, per-device token binding, rate limiting, and mobile layout injection (compact composer pills, randomUUID polyfill).",
+    "zh": "局域网手机访问网关：独立子进程反向代理 + 首次访问审批 + 设备令牌绑定 + 限流 + 手机端紧凑排版注入（输入区权限/模型小胶囊、randomUUID polyfill）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Bernardxu123/dsh-mobile-gate",
    "added": "2026-08-14"
   },
   {
@@ -3154,6 +3169,21 @@
    "npm": "dsh-s1",
    "stars": 0,
    "install": "dsh plugin --profile web add dsh-s1",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-project-organizer",
+   "owner": "caoqinnan-web",
+   "url": "https://github.com/caoqinnan-web/dsh-project-organizer",
+   "page": "https://awesome-dsh-plugin.com/p/caoqinnan-web/dsh-project-organizer/",
+   "category": "skill",
+   "description": {
+    "en": "Project context engineering skill that distills scattered conversations, files, decisions, and tasks into a minimal actionable workspace and handoff.",
+    "zh": "项目上下文工程 Skill：把零散对话、文件、决策和任务提炼为最小但可执行的项目空间与交接上下文。"
+   },
+   "npm": "dsh-project-organizer",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-project-organizer",
    "added": "2026-08-14"
   },
   {

@@ -107,6 +107,10 @@
   "npm": "dsh-find-plugin",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Bernardxu123/dsh-mobile-gate": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/BiBoyang/dsh-eval-harness": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -193,6 +197,10 @@
  },
  "https://github.com/CAOGGL/dsh-ding": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/caoqinnan-web/dsh-project-organizer": {
+  "npm": "dsh-project-organizer",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/causebefore/dsh-pomodoro": {
