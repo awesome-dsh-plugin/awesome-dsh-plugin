@@ -231,7 +231,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [forkprobe](https://github.com/Jayden-X-L/forkprobe) - Compare multiple skills on the same task and pick the winner.
 - [plugin-registry](https://github.com/vlln/plugin-registry) - Ecosystem infrastructure: a thin browser console for managing official repository plugins (zero patches) plus a make-dsh-plugin skill for guided plugin development.
 - [dsh-multica-runtime](https://github.com/forrestchang/dsh-multica-runtime) - Run the dsh runtime on Multica.
-- [dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) - Persona-driven UX review of React/TypeScript source: nine static rules for microcopy, state coverage, and dark mode, with per-finding confirm/reject cards.
+- [dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) - Finds potential UX issues in your project: automatically reviews React/TypeScript code, pinpoints each problem, and gives concrete suggestions.
 
 ### Just for Fun
 
