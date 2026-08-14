@@ -1,5 +1,17 @@
 {
+ "https://github.com/030611/dsh-telemetry-redactor": {
+  "npm": "dsh-telemetry-redactor",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/030611/dsh-verification-receipt": {
+  "npm": "dsh-verification-receipt",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/0xsline/dsh-spotlight": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/a903067276-rgb/dsh-hud": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -651,6 +663,14 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/TonyDua/dsh-web-search-exa": {
+  "npm": "@tonydua/dsh-web-search-exa",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/v587d/dsh-opencode-go-usage": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/vibeinging/dsh-agent-budget": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -695,11 +715,19 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Wine-Red/dsh-prompt-stash": {
+  "npm": "dsh-prompt-stash",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/xingyingyuzhui/dsh-updater-ui": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Xplore-LAB/dsh-plugin-asmemory": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/yflmq001/dsh-cost-tracker": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },

@@ -368,6 +368,7 @@
     "en": "OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.",
     "zh": "在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。"
    },
+   "npm": null,
    "install": "dsh plugin --profile web add github:v587d/dsh-opencode-go-usage",
    "added": "2026-08-14"
   },
@@ -536,6 +537,7 @@
     "en": "HUD status panel: git status, MCP servers, skills, model and token usage in a floating side panel.",
     "zh": "HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。"
    },
+   "npm": null,
    "install": "dsh plugin --profile web add github:a903067276-rgb/dsh-hud",
    "added": "2026-08-14"
   },
@@ -730,7 +732,8 @@
     "en": "Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.",
     "zh": "本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。"
    },
-   "install": "dsh plugin --profile web add github:Wine-Red/dsh-prompt-stash",
+   "npm": "dsh-prompt-stash",
+   "install": "dsh plugin --profile web add dsh-prompt-stash",
    "added": "2026-08-14"
   },
   {
@@ -1509,7 +1512,8 @@
     "en": "Zero-config Exa web search provider for the ctx.web seam: anonymous MCP fallback without an API key, plus keyed REST search.",
     "zh": "ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。"
    },
-   "install": "dsh plugin --profile web add github:TonyDua/dsh-web-search-exa",
+   "npm": "@tonydua/dsh-web-search-exa",
+   "install": "dsh plugin --profile web add @tonydua/dsh-web-search-exa",
    "added": "2026-08-14"
   },
   {
@@ -2093,7 +2097,8 @@
     "en": "Redacts supported secret patterns from the `session-telemetry/record` export copy before configured telemetry backends receive it.",
     "zh": "在已配置遥测后端接收前，对 `session-telemetry/record` 导出副本中的已支持秘密模式进行脱敏。"
    },
-   "install": "dsh plugin --profile web add github:030611/dsh-telemetry-redactor",
+   "npm": "dsh-telemetry-redactor",
+   "install": "dsh plugin --profile web add dsh-telemetry-redactor",
    "added": "2026-08-14"
   },
   {
@@ -2105,7 +2110,8 @@
     "en": "Writes local JSONL summaries of per-turn tool counts and coarse verification signals without storing prompts, tool arguments, or result text.",
     "zh": "把每轮工具计数与粗粒度验证信号写入本地 JSONL，不保存提示词、工具参数或结果正文。"
    },
-   "install": "dsh plugin --profile web add github:030611/dsh-verification-receipt",
+   "npm": "dsh-verification-receipt",
+   "install": "dsh plugin --profile web add dsh-verification-receipt",
    "added": "2026-08-14"
   },
   {
@@ -2455,6 +2461,7 @@
     "en": "Per-model token cost tracking with configurable cache-hit/miss, output and peak-window pricing, a live session cost bar, and unconfigured-model flags.",
     "zh": "按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。"
    },
+   "npm": null,
    "install": "dsh plugin --profile web add github:yflmq001/dsh-cost-tracker",
    "added": "2026-08-14"
   },
