@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 364,
+ "count": 365,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -5509,6 +5509,21 @@
    "npm": null,
    "stars": 1,
    "install": "dsh plugin --profile web add github:xiekai886/dsh-MusicPlayer",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-LorebookMD",
+   "owner": "609476965",
+   "url": "https://github.com/609476965/dsh-LorebookMD",
+   "page": "https://awesome-dsh-plugin.com/p/609476965/dsh-LorebookMD/",
+   "category": "fun",
+   "description": {
+    "en": "Import SillyTavern/TavernAI character cards and world books, save them as local Markdown lore documents, and generate novel prose from your prompts with the world settings as reference.",
+    "zh": "导入酒馆（SillyTavern/TavernAI）角色卡与世界书，落地为本地 Markdown 设定文档，激活创作模式后根据用户输入、参考世界书创作小说。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:609476965/dsh-LorebookMD",
    "added": "2026-08-14"
   }
  ]

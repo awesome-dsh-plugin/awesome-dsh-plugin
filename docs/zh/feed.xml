@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-14T17:54:16.456Z</updated>
+  <updated>2026-08-14T17:58:35.167Z</updated>
+  <entry>
+    <title>609476965/dsh-LorebookMD</title>
+    <id>https://github.com/609476965/dsh-LorebookMD</id>
+    <link href="https://github.com/609476965/dsh-LorebookMD"/>
+    <updated>2026-08-14T17:58:35.167Z</updated>
+    <summary>导入酒馆（SillyTavern/TavernAI）角色卡与世界书，落地为本地 Markdown 设定文档，激活创作模式后根据用户输入、参考世界书创作小说。</summary>
+  </entry>
   <entry>
     <title>liqichen/dsh-plugin-manager</title>
     <id>https://github.com/liqichen/dsh-plugin-manager</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/taxueseek/dsh-files"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。</summary>
-  </entry>
-  <entry>
-    <title>l541402398/dsh-file-uploads</title>
-    <id>https://github.com/l541402398/dsh-file-uploads</id>
-    <link href="https://github.com/l541402398/dsh-file-uploads"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。</summary>
   </entry>
 </feed>
