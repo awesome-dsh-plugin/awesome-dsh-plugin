@@ -104,6 +104,13 @@
     <summary>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</summary>
   </entry>
   <entry>
+    <title>dsh-pet</title>
+    <id>https://github.com/zealot00/dsh-pet</id>
+    <link href="https://github.com/zealot00/dsh-pet"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Desktop pet for the DSH Web UI: sprite-sheet animation, agent state linkage, drag, alarm (daily/one-shot) and pomodoro widgets, skin picker with preview.</summary>
+  </entry>
+  <entry>
     <title>dsh-builtin-toggles</title>
     <id>https://github.com/Starfie1d1272/dsh-builtin-toggles</id>
     <link href="https://github.com/Starfie1d1272/dsh-builtin-toggles"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Xplore-LAB/dsh-plugin-asmemory"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.</summary>
-  </entry>
-  <entry>
-    <title>dsh-memento</title>
-    <id>https://github.com/PerryLink/dsh-memento</id>
-    <link href="https://github.com/PerryLink/dsh-memento"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.</summary>
   </entry>
 </feed>

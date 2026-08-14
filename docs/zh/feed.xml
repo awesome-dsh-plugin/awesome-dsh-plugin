@@ -104,6 +104,13 @@
     <summary>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</summary>
   </entry>
   <entry>
+    <title>dsh-pet</title>
+    <id>https://github.com/zealot00/dsh-pet</id>
+    <link href="https://github.com/zealot00/dsh-pet"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。</summary>
+  </entry>
+  <entry>
     <title>dsh-builtin-toggles</title>
     <id>https://github.com/Starfie1d1272/dsh-builtin-toggles</id>
     <link href="https://github.com/Starfie1d1272/dsh-builtin-toggles"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Xplore-LAB/dsh-plugin-asmemory"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。</summary>
-  </entry>
-  <entry>
-    <title>dsh-memento</title>
-    <id>https://github.com/PerryLink/dsh-memento</id>
-    <link href="https://github.com/PerryLink/dsh-memento"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</summary>
   </entry>
 </feed>
