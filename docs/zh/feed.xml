@@ -20,9 +20,9 @@
     <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
   </entry>
   <entry>
-    <title>dsh-cc-tui</title>
-    <id>https://github.com/ccch1mneyyy/dsh-cc-tui</id>
-    <link href="https://github.com/ccch1mneyyy/dsh-cc-tui"/>
+    <title>dsh-TUI</title>
+    <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
+    <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</summary>
   </entry>

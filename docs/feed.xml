@@ -20,9 +20,9 @@
     <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
   </entry>
   <entry>
-    <title>dsh-cc-tui</title>
-    <id>https://github.com/ccch1mneyyy/dsh-cc-tui</id>
-    <link href="https://github.com/ccch1mneyyy/dsh-cc-tui"/>
+    <title>dsh-TUI</title>
+    <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
+    <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</summary>
   </entry>
