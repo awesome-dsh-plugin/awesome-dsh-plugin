@@ -111,6 +111,13 @@
     <summary>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</summary>
   </entry>
   <entry>
+    <title>dsh-find-plugin</title>
+    <id>https://github.com/awesome-dsh-plugin/dsh-find-plugin</id>
+    <link href="https://github.com/awesome-dsh-plugin/dsh-find-plugin"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/ZSeven-W/dsh-openpencil"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>OpenPencil design preview and editing plugin.</summary>
-  </entry>
-  <entry>
-    <title>dsh-visualize</title>
-    <id>https://github.com/Nagi-ovo/dsh-visualize</id>
-    <link href="https://github.com/Nagi-ovo/dsh-visualize"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</summary>
   </entry>
 </feed>

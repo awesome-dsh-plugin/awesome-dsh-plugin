@@ -10,7 +10,7 @@ DeepSeek Harness is DeepSeek's open-source agent harness — a runnable coding a
 
 This list collects community plugins that are installable via `dsh plugin add` (each declares a `dsh.bundle` manifest).
 
-**121** plugins · [PRs welcome](#contributing)
+**122** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -103,6 +103,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) - Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.
 - [dsh-recommend](https://github.com/zp-home/dsh-recommend) - Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.
 - [modlens](https://github.com/liustack/modlens) - Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).
+- [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) - Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.
 
 
 ### Workflow & Automation

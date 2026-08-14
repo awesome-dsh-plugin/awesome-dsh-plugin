@@ -111,6 +111,13 @@
     <summary>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</summary>
   </entry>
   <entry>
+    <title>dsh-find-plugin</title>
+    <id>https://github.com/awesome-dsh-plugin/dsh-find-plugin</id>
+    <link href="https://github.com/awesome-dsh-plugin/dsh-find-plugin"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/ZSeven-W/dsh-openpencil"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>OpenPencil 设计预览与编辑插件。</summary>
-  </entry>
-  <entry>
-    <title>dsh-visualize</title>
-    <id>https://github.com/Nagi-ovo/dsh-visualize</id>
-    <link href="https://github.com/Nagi-ovo/dsh-visualize"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</summary>
   </entry>
 </feed>
