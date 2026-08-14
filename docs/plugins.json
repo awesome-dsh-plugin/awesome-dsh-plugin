@@ -9,9 +9,17 @@
    "en": "UI Enhancements",
    "zh": "UI 增强"
   },
+  "theme": {
+   "en": "Themes & Appearance",
+   "zh": "主题与外观"
+  },
   "session": {
    "en": "Sessions & Messages",
    "zh": "会话与消息"
+  },
+  "memory": {
+   "en": "Memory",
+   "zh": "记忆"
   },
   "tools": {
    "en": "Tools & Capabilities",
@@ -24,6 +32,10 @@
   "notify": {
    "en": "Notifications & Integrations",
    "zh": "通知与集成"
+  },
+  "model": {
+   "en": "Models & Providers",
+   "zh": "模型与账号接入"
   },
   "dev": {
    "en": "Development & Runtime",
@@ -408,10 +420,22 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-web-ui",
+   "owner": "zhu1090093659",
+   "url": "https://github.com/zhu1090093659/dsh-web-ui",
+   "category": "ui",
+   "description": {
+    "en": "Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.",
+    "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
+   },
+   "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
-   "category": "ui",
+   "category": "theme",
    "description": {
     "en": "Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.",
     "zh": "Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。"
@@ -420,22 +444,10 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dsh-web-ui",
-   "owner": "zhu1090093659",
-   "url": "https://github.com/zhu1090093659/dsh-web-ui",
-   "category": "ui",
-   "description": {
-    "en": "Plugin and skin collection for the DSH Web UI: task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.",
-    "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
-   },
-   "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
-   "added": "2026-08-14"
-  },
-  {
    "name": "dsh-deep-whale",
    "owner": "Small-tailqwq",
    "url": "https://github.com/Small-tailqwq/dsh-deep-whale",
-   "category": "ui",
+   "category": "theme",
    "description": {
     "en": "Whale-girl skin series for the DSH Web UI (maid-atelier).",
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。"
@@ -468,18 +480,6 @@
    "added": "2026-08-14"
   },
   {
-   "name": "distill",
-   "owner": "LoserFox",
-   "url": "https://github.com/LoserFox/distill",
-   "category": "session",
-   "description": {
-    "en": "Automatic conversation distillation: background subagent reflection + skill create/update.",
-    "zh": "自动对话蒸馏：后台 subagent 反省 + 技能 create/update。"
-   },
-   "install": "dsh plugin --profile web add github:LoserFox/distill",
-   "added": "2026-08-13"
-  },
-  {
    "name": "dsh-share",
    "owner": "hellodigua",
    "url": "https://github.com/hellodigua/dsh-share",
@@ -502,78 +502,6 @@
    },
    "install": "dsh plugin --profile web add github:Moeblack/dsh-message-edit",
    "added": "2026-08-13"
-  },
-  {
-   "name": "dsh-mnemon",
-   "owner": "omdsh-dev",
-   "url": "https://github.com/omdsh-dev/dsh-mnemon",
-   "category": "session",
-   "description": {
-    "en": "Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).",
-    "zh": "Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。"
-   },
-   "install": "dsh plugin --profile web add github:omdsh-dev/dsh-mnemon",
-   "added": "2026-08-13"
-  },
-  {
-   "name": "dsh-mneme",
-   "owner": "modusensus",
-   "url": "https://github.com/modusensus/dsh-mneme",
-   "category": "session",
-   "description": {
-    "en": "Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.",
-    "zh": "跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。"
-   },
-   "install": "dsh plugin --profile web add github:modusensus/dsh-mneme",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "nowledge-mem-deepseek-harness",
-   "owner": "nowledge-co",
-   "url": "https://github.com/nowledge-co/nowledge-mem-deepseek-harness",
-   "category": "session",
-   "description": {
-    "en": "One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.",
-    "zh": "给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。"
-   },
-   "install": "dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-harness",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-memory",
-   "owner": "Jesse-njx",
-   "url": "https://github.com/Jesse-njx/dsh-memory",
-   "category": "session",
-   "description": {
-    "en": "Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.",
-    "zh": "基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。"
-   },
-   "install": "dsh plugin --profile web add github:Jesse-njx/dsh-memory",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-memory-vault",
-   "owner": "flymysql",
-   "url": "https://github.com/flymysql/dsh-memory",
-   "category": "session",
-   "description": {
-    "en": "Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.",
-    "zh": "跨会话记忆库：remember / recall / forget 工具、每轮提示注入与设置页条目浏览。"
-   },
-   "install": "dsh plugin --profile web add github:flymysql/dsh-memory",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-plugin-asmemory",
-   "owner": "Xplore-LAB",
-   "url": "https://github.com/Xplore-LAB/dsh-plugin-asmemory",
-   "category": "session",
-   "description": {
-    "en": "Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.",
-    "zh": "动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。"
-   },
-   "install": "dsh plugin --profile web add github:Xplore-LAB/dsh-plugin-asmemory",
-   "added": "2026-08-14"
   },
   {
    "name": "dsh-sidechain",
@@ -657,6 +585,102 @@
     "zh": "跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。"
    },
    "install": "dsh plugin --profile web add github:Chinesezjc/dsh-interconnect",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "distill",
+   "owner": "LoserFox",
+   "url": "https://github.com/LoserFox/distill",
+   "category": "memory",
+   "description": {
+    "en": "Automatic conversation distillation: background subagent reflection + skill create/update.",
+    "zh": "自动对话蒸馏：后台 subagent 反省 + 技能 create/update。"
+   },
+   "install": "dsh plugin --profile web add github:LoserFox/distill",
+   "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-mnemon",
+   "owner": "omdsh-dev",
+   "url": "https://github.com/omdsh-dev/dsh-mnemon",
+   "category": "memory",
+   "description": {
+    "en": "Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).",
+    "zh": "Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。"
+   },
+   "install": "dsh plugin --profile web add github:omdsh-dev/dsh-mnemon",
+   "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-mneme",
+   "owner": "modusensus",
+   "url": "https://github.com/modusensus/dsh-mneme",
+   "category": "memory",
+   "description": {
+    "en": "Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.",
+    "zh": "跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。"
+   },
+   "install": "dsh plugin --profile web add github:modusensus/dsh-mneme",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "nowledge-mem-deepseek-harness",
+   "owner": "nowledge-co",
+   "url": "https://github.com/nowledge-co/nowledge-mem-deepseek-harness",
+   "category": "memory",
+   "description": {
+    "en": "One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.",
+    "zh": "给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。"
+   },
+   "install": "dsh plugin --profile web add github:nowledge-co/nowledge-mem-deepseek-harness",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-memory",
+   "owner": "Jesse-njx",
+   "url": "https://github.com/Jesse-njx/dsh-memory",
+   "category": "memory",
+   "description": {
+    "en": "Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.",
+    "zh": "基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。"
+   },
+   "install": "dsh plugin --profile web add github:Jesse-njx/dsh-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-memory-vault",
+   "owner": "flymysql",
+   "url": "https://github.com/flymysql/dsh-memory",
+   "category": "memory",
+   "description": {
+    "en": "Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.",
+    "zh": "跨会话记忆库：remember / recall / forget 工具、每轮提示注入与设置页条目浏览。"
+   },
+   "install": "dsh plugin --profile web add github:flymysql/dsh-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-asmemory",
+   "owner": "Xplore-LAB",
+   "url": "https://github.com/Xplore-LAB/dsh-plugin-asmemory",
+   "category": "memory",
+   "description": {
+    "en": "Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.",
+    "zh": "动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。"
+   },
+   "install": "dsh plugin --profile web add github:Xplore-LAB/dsh-plugin-asmemory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-memento",
+   "owner": "PerryLink",
+   "url": "https://github.com/PerryLink/dsh-memento",
+   "category": "memory",
+   "description": {
+    "en": "Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.",
+    "zh": "有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。"
+   },
+   "install": "dsh plugin --profile web add github:PerryLink/dsh-memento",
    "added": "2026-08-14"
   },
   {
@@ -1176,18 +1200,6 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dsh-memento",
-   "owner": "PerryLink",
-   "url": "https://github.com/PerryLink/dsh-memento",
-   "category": "tools",
-   "description": {
-    "en": "Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.",
-    "zh": "有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。"
-   },
-   "install": "dsh plugin --profile web add github:PerryLink/dsh-memento",
-   "added": "2026-08-14"
-  },
-  {
    "name": "dsh-plugin-knowledge-graph",
    "owner": "Luke-Yong",
    "url": "https://github.com/Luke-Yong/dsh-plugin-knowledge-graph",
@@ -1548,6 +1560,66 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-llm-fallbacks",
+   "owner": "btspoony",
+   "url": "https://github.com/btspoony/dsh-llm-fallbacks",
+   "category": "model",
+   "description": {
+    "en": "Role-based LLM retry & fallback strategies.",
+    "zh": "基于角色的模型重试与备用策略。"
+   },
+   "install": "dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks",
+   "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-codex-connect",
+   "owner": "franksong2702",
+   "url": "https://github.com/franksong2702/dsh-codex-connect",
+   "category": "model",
+   "description": {
+    "en": "Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.",
+    "zh": "通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。"
+   },
+   "install": "dsh plugin --profile web add github:franksong2702/dsh-codex-connect",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-everything-oauth",
+   "owner": "kam74515-boop",
+   "url": "https://github.com/kam74515-boop/dsh-everything-oauth",
+   "category": "model",
+   "description": {
+    "en": "Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.",
+    "zh": "把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。"
+   },
+   "install": "dsh plugin --profile web add github:kam74515-boop/dsh-everything-oauth",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "Qwen-MM-Plugins",
+   "owner": "omdsh-dev",
+   "url": "https://github.com/omdsh-dev/Qwen-MM-Plugins",
+   "category": "model",
+   "description": {
+    "en": "Qwen multi-modal plugin support.",
+    "zh": "Qwen 多模态插件支持。"
+   },
+   "install": "dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins",
+   "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-codex-auth",
+   "owner": "suntianc",
+   "url": "https://github.com/suntianc/dsh-codex-auth",
+   "category": "model",
+   "description": {
+    "en": "Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.",
+    "zh": "复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。"
+   },
+   "install": "dsh plugin --profile web add github:suntianc/dsh-codex-auth",
+   "added": "2026-08-14"
+  },
+  {
    "name": "fabric",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/fabric",
@@ -1704,18 +1776,6 @@
    "added": "2026-08-13"
   },
   {
-   "name": "dsh-llm-fallbacks",
-   "owner": "btspoony",
-   "url": "https://github.com/btspoony/dsh-llm-fallbacks",
-   "category": "dev",
-   "description": {
-    "en": "Role-based LLM retry & fallback strategies.",
-    "zh": "基于角色的模型重试与备用策略。"
-   },
-   "install": "dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks",
-   "added": "2026-08-13"
-  },
-  {
    "name": "dsh-polyglot",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-polyglot",
@@ -1725,30 +1785,6 @@
     "zh": "DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-polyglot",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-codex-connect",
-   "owner": "franksong2702",
-   "url": "https://github.com/franksong2702/dsh-codex-connect",
-   "category": "dev",
-   "description": {
-    "en": "Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.",
-    "zh": "通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。"
-   },
-   "install": "dsh plugin --profile web add github:franksong2702/dsh-codex-connect",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-everything-oauth",
-   "owner": "kam74515-boop",
-   "url": "https://github.com/kam74515-boop/dsh-everything-oauth",
-   "category": "dev",
-   "description": {
-    "en": "Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.",
-    "zh": "把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。"
-   },
-   "install": "dsh plugin --profile web add github:kam74515-boop/dsh-everything-oauth",
    "added": "2026-08-14"
   },
   {
@@ -1785,18 +1821,6 @@
     "zh": "插件模板仓库（基于 turtle-ui 官方仓库）。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/plugin-template",
-   "added": "2026-08-13"
-  },
-  {
-   "name": "Qwen-MM-Plugins",
-   "owner": "omdsh-dev",
-   "url": "https://github.com/omdsh-dev/Qwen-MM-Plugins",
-   "category": "dev",
-   "description": {
-    "en": "Qwen multi-modal plugin support.",
-    "zh": "Qwen 多模态插件支持。"
-   },
-   "install": "dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins",
    "added": "2026-08-13"
   },
   {
@@ -1937,7 +1961,7 @@
    "url": "https://github.com/xingyingyuzhui/dsh-updater-ui",
    "category": "dev",
    "description": {
-    "en": "DSH self-updater in the settings page: one-click check/pull (git pull --ff-only), auto background checks, version diff and changelog preview with a red-dot reminder.",
+    "en": "DSH self-updater in the settings page: one-click check/pull (`git pull --ff-only`), auto background checks, version diff and changelog preview with a red-dot reminder.",
     "zh": "设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。"
    },
    "install": "dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui",
@@ -1949,7 +1973,7 @@
    "url": "https://github.com/EvilIrving/dsh-repro",
    "category": "dev",
    "description": {
-    "en": "/repro exports a minimal, secret-scrubbed, replayable problem bundle: the session log, failed commands, and git diff.",
+    "en": "/repro exports a minimal, secret-scrubbed, replayable problem bundle: the session log, failed commands, and Git diff.",
     "zh": "/repro 导出最小可复现问题包：去 secret 的会话日志、失败命令与 git diff。"
    },
    "install": "dsh plugin --profile web add github:EvilIrving/dsh-repro",
@@ -1965,18 +1989,6 @@
     "zh": "官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。"
    },
    "install": "dsh plugin --profile web add github:PerryLink/dsh-mcp-panel",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-codex-auth",
-   "owner": "suntianc",
-   "url": "https://github.com/suntianc/dsh-codex-auth",
-   "category": "dev",
-   "description": {
-    "en": "Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.",
-    "zh": "复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。"
-   },
-   "install": "dsh plugin --profile web add github:suntianc/dsh-codex-auth",
    "added": "2026-08-14"
   },
   {

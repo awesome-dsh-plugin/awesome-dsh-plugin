@@ -15,7 +15,7 @@ import LOCALES from '../site/locales.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
-const CAT_IDS = ['ui', 'session', 'tools', 'workflow', 'notify', 'dev', 'fun']
+const CAT_IDS = ['ui', 'theme', 'session', 'memory', 'tools', 'workflow', 'notify', 'model', 'dev', 'fun']
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 

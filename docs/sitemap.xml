@@ -25,12 +25,28 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/ui/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/theme/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>daily</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/theme/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/theme/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/theme/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/session/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/session/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/session/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/session/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/memory/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>daily</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/memory/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/memory/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/memory/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/tools/</loc>
@@ -57,6 +73,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/notify/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/model/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>daily</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/model/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/model/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/model/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/dev/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
@@ -81,12 +105,28 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/ui/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/zh/theme/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>daily</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/theme/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/theme/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/theme/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/session/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/session/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/session/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/session/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/memory/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>daily</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/memory/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/memory/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/memory/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/tools/</loc>
@@ -111,6 +151,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/notify/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/notify/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/notify/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/model/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>daily</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/model/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/model/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/model/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/dev/</loc>

@@ -76,18 +76,18 @@
     <summary>Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.</summary>
   </entry>
   <entry>
+    <title>dsh-web-ui</title>
+    <id>https://github.com/zhu1090093659/dsh-web-ui</id>
+    <link href="https://github.com/zhu1090093659/dsh-web-ui"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</summary>
+  </entry>
+  <entry>
     <title>dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</summary>
-  </entry>
-  <entry>
-    <title>dsh-web-ui</title>
-    <id>https://github.com/zhu1090093659/dsh-web-ui</id>
-    <link href="https://github.com/zhu1090093659/dsh-web-ui"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Plugin and skin collection for the DSH Web UI: task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</summary>
   </entry>
   <entry>
     <title>dsh-deep-whale</title>
@@ -102,6 +102,20 @@
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</summary>
+  </entry>
+  <entry>
+    <title>dsh-file-claim</title>
+    <id>https://github.com/Nwflower/dsh-file-claim</id>
+    <link href="https://github.com/Nwflower/dsh-file-claim"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</summary>
+  </entry>
+  <entry>
+    <title>dsh-interconnect</title>
+    <id>https://github.com/Chinesezjc/dsh-interconnect</id>
+    <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
   </entry>
   <entry>
     <title>dsh-mneme</title>
@@ -139,18 +153,11 @@
     <summary>Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.</summary>
   </entry>
   <entry>
-    <title>dsh-file-claim</title>
-    <id>https://github.com/Nwflower/dsh-file-claim</id>
-    <link href="https://github.com/Nwflower/dsh-file-claim"/>
+    <title>dsh-memento</title>
+    <id>https://github.com/PerryLink/dsh-memento</id>
+    <link href="https://github.com/PerryLink/dsh-memento"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</summary>
-  </entry>
-  <entry>
-    <title>dsh-interconnect</title>
-    <id>https://github.com/Chinesezjc/dsh-interconnect</id>
-    <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
+    <summary>Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.</summary>
   </entry>
   <entry>
     <title>dsh-bash-terminal</title>
@@ -207,12 +214,5 @@
     <link href="https://github.com/dsh-market/dsh-market"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.</summary>
-  </entry>
-  <entry>
-    <title>dsh-find-plugin</title>
-    <id>https://github.com/awesome-dsh-plugin/dsh-find-plugin</id>
-    <link href="https://github.com/awesome-dsh-plugin/dsh-find-plugin"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.</summary>
   </entry>
 </feed>
