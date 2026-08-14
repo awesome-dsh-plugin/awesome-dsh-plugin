@@ -29,7 +29,8 @@ const urls = [...readme.matchAll(/^- \[.+?\]\((https:\/\/github\.com\/[^)]+)\) [
 const today = new Date().toISOString().slice(0, 10)
 
 async function probe(url) {
-  const repoPath = url.replace('https://github.com/', '').replace(/\/$/, '')
+  // monorepo subdir entries (…/tree/main/path) inherit the parent repo's stars
+  const repoPath = url.replace('https://github.com/', '').replace(/\/$/, '').split('/').slice(0, 2).join('/')
   try {
     const res = await fetch(`https://api.github.com/repos/${repoPath}`, {
       headers: {
