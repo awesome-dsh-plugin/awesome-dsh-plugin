@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 225,
+ "count": 226,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -621,6 +621,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:Jolly-J/dsh-deepseek-billing",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-drag-and-drop",
+   "owner": "AKIRACOD",
+   "url": "https://github.com/AKIRACOD/dsh-drag-and-drop",
+   "category": "ui",
+   "description": {
+    "en": "File-drag fork: drop documents as removable chips above the composer, send without typing.",
+    "zh": "拖放 fork：文档以可删除「文件芯片」挂在输入框上方，不打字也能发送。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:AKIRACOD/dsh-drag-and-drop",
    "added": "2026-08-14"
   },
   {

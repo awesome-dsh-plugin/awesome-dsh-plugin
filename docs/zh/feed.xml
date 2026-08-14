@@ -167,6 +167,13 @@
     <summary>侧边栏底部 DeepSeek 账户余额显示与会话费用估算卡片。</summary>
   </entry>
   <entry>
+    <title>AKIRACOD/dsh-drag-and-drop</title>
+    <id>https://github.com/AKIRACOD/dsh-drag-and-drop</id>
+    <link href="https://github.com/AKIRACOD/dsh-drag-and-drop"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>拖放 fork：文档以可删除「文件芯片」挂在输入框上方，不打字也能发送。</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Nwflower/dsh-file-claim"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。</summary>
-  </entry>
-  <entry>
-    <title>Chinesezjc/dsh-interconnect</title>
-    <id>https://github.com/Chinesezjc/dsh-interconnect</id>
-    <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</summary>
   </entry>
 </feed>

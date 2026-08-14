@@ -167,6 +167,13 @@
     <summary>DeepSeek account balance and per-session cost card in the sidebar foot.</summary>
   </entry>
   <entry>
+    <title>AKIRACOD/dsh-drag-and-drop</title>
+    <id>https://github.com/AKIRACOD/dsh-drag-and-drop</id>
+    <link href="https://github.com/AKIRACOD/dsh-drag-and-drop"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>File-drag fork: drop documents as removable chips above the composer, send without typing.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Nwflower/dsh-file-claim"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</summary>
-  </entry>
-  <entry>
-    <title>Chinesezjc/dsh-interconnect</title>
-    <id>https://github.com/Chinesezjc/dsh-interconnect</id>
-    <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
   </entry>
 </feed>
