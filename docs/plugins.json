@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 247,
+ "count": 249,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -847,6 +847,20 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-crosstalk",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "task-passport",
+   "owner": "dongsheng123132",
+   "url": "https://github.com/dongsheng123132/task-passport",
+   "category": "session",
+   "description": {
+    "en": "Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.",
+    "zh": "通过机器可读检查点与乐观锁，在 DeepSeek Harness、WorkBuddy、Claude Code 和 Codex 之间交接持久任务状态。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:dongsheng123132/task-passport",
    "added": "2026-08-14"
   },
   {
@@ -2583,6 +2597,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:CAOGGL/dsh-ding",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-notify-sound",
+   "owner": "ldchaowin",
+   "url": "https://github.com/ldchaowin/dsh-plugin-notify-sound",
+   "category": "notify",
+   "description": {
+    "en": "Per-workspace completion ringtones plus attention sounds for approval, question, plan-review, goal-blocked, and task-failure events, with built-in synth, voice (TTS), and custom audio.",
+    "zh": "按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:ldchaowin/dsh-plugin-notify-sound",
    "added": "2026-08-14"
   },
   {
