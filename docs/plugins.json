@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 152,
+ "count": 153,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1546,6 +1546,18 @@
    },
    "install": "dsh plugin --profile web add github:ilharp/dsh-tool-approval",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-turn-approval",
+   "owner": "arrow949",
+   "url": "https://github.com/arrow949/dsh-turn-approval",
+   "category": "dev",
+   "description": {
+    "en": "Turn-scoped “Allow for this task” approvals: automatically allow matching `danger-full-access` escalations only for the current task, then expire.",
+    "zh": "DSH「允许本次任务」临时授权：仅在当前任务内自动放行同类 `danger-full-access` 请求，任务结束自动失效。"
+   },
+   "install": "dsh plugin --profile web add github:arrow949/dsh-turn-approval",
+   "added": "2026-08-14"
   },
   {
    "name": "plugin-template",
