@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 153,
+ "count": 154,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1737,6 +1737,18 @@
     "zh": "/repro 导出最小可复现问题包：去 secret 的会话日志、失败命令与 git diff。"
    },
    "install": "dsh plugin --profile web add github:EvilIrving/dsh-repro",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-mcp-panel",
+   "owner": "PerryLink",
+   "url": "https://github.com/PerryLink/dsh-mcp-panel",
+   "category": "dev",
+   "description": {
+    "en": "Read-only runtime management panel for the official DSH MCP client: connection status, registered tools, errors, and reconnect counts through the /mcp command and a Settings tab, with sanitized display and enable/disable patch suggestions.",
+    "zh": "官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。"
+   },
+   "install": "dsh plugin --profile web add github:PerryLink/dsh-mcp-panel",
    "added": "2026-08-14"
   },
   {
