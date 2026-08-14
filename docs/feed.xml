@@ -104,6 +104,13 @@
     <summary>Adds a built-in plugin catalog to DSH Web with search, status explanations, and safe toggles for audited UI plugins.</summary>
   </entry>
   <entry>
+    <title>dsh-enhance</title>
+    <id>https://github.com/jiangnanquan/dsh-ux</id>
+    <link href="https://github.com/jiangnanquan/dsh-ux"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Solarized light theme, compact layout, think/tool-chain collapse capsules, and balance, session cost, and usage dashboards for the DSH web UI.</summary>
+  </entry>
+  <entry>
     <title>dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/ICCuse/dsh-premise-guard"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Post-compaction premise-drift guard: injects a one-shot notice when a compaction summary drops a critical literal anchor.</summary>
-  </entry>
-  <entry>
-    <title>dsh-bash-terminal</title>
-    <id>https://github.com/MAXeaglet/dsh-bash-terminal</id>
-    <link href="https://github.com/MAXeaglet/dsh-bash-terminal"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>One shell tool for PowerShell / Git Bash / WSL on Windows plus an interactive PTY terminal; the default terminal is chosen by the user in DSH settings.</summary>
   </entry>
 </feed>

@@ -104,6 +104,13 @@
     <summary>为 DSH Web 添加官方内置插件目录、搜索与状态说明，并提供经过审核的安全 UI 插件开关。</summary>
   </entry>
   <entry>
+    <title>dsh-enhance</title>
+    <id>https://github.com/jiangnanquan/dsh-ux</id>
+    <link href="https://github.com/jiangnanquan/dsh-ux"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。</summary>
+  </entry>
+  <entry>
     <title>dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/ICCuse/dsh-premise-guard"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。</summary>
-  </entry>
-  <entry>
-    <title>dsh-bash-terminal</title>
-    <id>https://github.com/MAXeaglet/dsh-bash-terminal</id>
-    <link href="https://github.com/MAXeaglet/dsh-bash-terminal"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。</summary>
   </entry>
 </feed>
