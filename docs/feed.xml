@@ -209,10 +209,10 @@
     <summary>Bring your existing Agent Skills (SKILL.md) library to DSH: discover skills across Claude/Codex/Cursor/Gemini paths, inject a progressive-disclosure index, and load bodies on demand.</summary>
   </entry>
   <entry>
-    <title>dsh-apple-mode</title>
-    <id>https://github.com/jihongboo/dsh-apple-mode</id>
-    <link href="https://github.com/jihongboo/dsh-apple-mode"/>
+    <title>noatmark-dsh-plugin</title>
+    <id>https://github.com/ylwl1997/noatmark-dsh-plugin</id>
+    <link href="https://github.com/ylwl1997/noatmark-dsh-plugin"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Xcode AI integration for DSH: 26 Xcode MCP tools (mcpbridge) + Apple platform skills + Xcode Intelligence-style persona (agent preset or global bundle).</summary>
+    <summary>Text hygiene as a dsh plugin: sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV formula injection.</summary>
   </entry>
 </feed>

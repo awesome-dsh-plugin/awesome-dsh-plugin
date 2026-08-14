@@ -209,10 +209,10 @@
     <summary>把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。</summary>
   </entry>
   <entry>
-    <title>dsh-apple-mode</title>
-    <id>https://github.com/jihongboo/dsh-apple-mode</id>
-    <link href="https://github.com/jihongboo/dsh-apple-mode"/>
+    <title>noatmark-dsh-plugin</title>
+    <id>https://github.com/ylwl1997/noatmark-dsh-plugin</id>
+    <link href="https://github.com/ylwl1997/noatmark-dsh-plugin"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。</summary>
+    <summary>文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。</summary>
   </entry>
 </feed>
