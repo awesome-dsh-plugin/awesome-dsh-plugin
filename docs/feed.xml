@@ -13,6 +13,13 @@
     <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
   </entry>
   <entry>
+    <title>dsh-balance-meter</title>
+    <id>https://github.com/Ghost011118/dsh-balance-meter</id>
+    <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/bill9109/dsh-101"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Document reading mode for DSH.</summary>
-  </entry>
-  <entry>
-    <title>dsh-drag-and-drop</title>
-    <id>https://github.com/bill9109/dsh-drag-and-drop</id>
-    <link href="https://github.com/bill9109/dsh-drag-and-drop"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Cross-platform file drag-and-drop with raw path insertion, no file copying.</summary>
   </entry>
 </feed>

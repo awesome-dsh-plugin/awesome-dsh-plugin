@@ -13,6 +13,13 @@
     <summary>Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。</summary>
   </entry>
   <entry>
+    <title>dsh-balance-meter</title>
+    <id>https://github.com/Ghost011118/dsh-balance-meter</id>
+    <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/bill9109/dsh-101"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>DSH 文档阅读模式。</summary>
-  </entry>
-  <entry>
-    <title>dsh-drag-and-drop</title>
-    <id>https://github.com/bill9109/dsh-drag-and-drop</id>
-    <link href="https://github.com/bill9109/dsh-drag-and-drop"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>跨平台文件拖拽与原始路径插入，无需复制文件。</summary>
   </entry>
 </feed>
