@@ -68,6 +68,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-share](https://github.com/hellodigua/dsh-share) - Share your conversations with one click.
 - [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) - Branch-based message editing, reroll, retry, and a version timeline.
 - [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) - Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).
+- [dsh-mneme](https://github.com/modusensus/dsh-mneme) - Cross-session memory with memory sovereignty: SQLite + human-editable Markdown mirror, autoDream background consolidation (dedup/merge/conflict resolution), 6 memory tools, 106 tests.
 - [nowledge-mem-deepseek-harness](https://github.com/nowledge-co/nowledge-mem-deepseek-harness) - One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.
 - [dsh-memory](https://github.com/Jesse-njx/dsh-memory) - Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.
 - [dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) - `/side` persistent side sessions and `/btw` one-shot side questions, run in a temporary fork without touching main history.
