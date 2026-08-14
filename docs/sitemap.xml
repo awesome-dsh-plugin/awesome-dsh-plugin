@@ -3105,6 +3105,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/xiekai886/dsh-MusicPlayer/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/609476965/dsh-LorebookMD/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/609476965/dsh-LorebookMD/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/609476965/dsh-LorebookMD/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/609476965/dsh-LorebookMD/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-mobile-fix/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -6015,5 +6023,13 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/xiekai886/dsh-MusicPlayer/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/xiekai886/dsh-MusicPlayer/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/xiekai886/dsh-MusicPlayer/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/609476965/dsh-LorebookMD/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/609476965/dsh-LorebookMD/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/609476965/dsh-LorebookMD/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/609476965/dsh-LorebookMD/"/>
   </url>
 </urlset>

@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-14T17:54:16.456Z</updated>
+  <updated>2026-08-14T17:58:35.167Z</updated>
+  <entry>
+    <title>609476965/dsh-LorebookMD</title>
+    <id>https://github.com/609476965/dsh-LorebookMD</id>
+    <link href="https://github.com/609476965/dsh-LorebookMD"/>
+    <updated>2026-08-14T17:58:35.167Z</updated>
+    <summary>Import SillyTavern/TavernAI character cards and world books, save them as local Markdown lore documents, and generate novel prose from your prompts with the world settings as reference.</summary>
+  </entry>
   <entry>
     <title>liqichen/dsh-plugin-manager</title>
     <id>https://github.com/liqichen/dsh-plugin-manager</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/taxueseek/dsh-files"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.</summary>
-  </entry>
-  <entry>
-    <title>l541402398/dsh-file-uploads</title>
-    <id>https://github.com/l541402398/dsh-file-uploads</id>
-    <link href="https://github.com/l541402398/dsh-file-uploads"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.</summary>
   </entry>
 </feed>
