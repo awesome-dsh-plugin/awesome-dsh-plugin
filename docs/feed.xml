@@ -83,6 +83,13 @@
     <summary>Chat with, monitor, and approve your DSH agents from WeChat via the iLink gateway: text both ways, session targeting, digest heartbeats, and numbered approval prompts.</summary>
   </entry>
   <entry>
+    <title>dsh-im-bridge</title>
+    <id>https://github.com/BiBoyang/dsh-im-bridge</id>
+    <link href="https://github.com/BiBoyang/dsh-im-bridge"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Two-way WeChat (iLink) bridge: turn-end and approval-request push, in-chat approve/reject and message injection, persistent dedup and convergent long-reply chunking; channel layer extensible to other IMs.</summary>
+  </entry>
+  <entry>
     <title>dsh-polyglot</title>
     <id>https://github.com/Jesse-njx/dsh-polyglot</id>
     <link href="https://github.com/Jesse-njx/dsh-polyglot"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/qyw233/dsh-deeplink"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Deep links: open a specific session or workspace via `?session=` / `?workspace=`.</summary>
-  </entry>
-  <entry>
-    <title>dsh-diff-viewer</title>
-    <id>https://github.com/lehhair/dsh-diff-viewer</id>
-    <link href="https://github.com/lehhair/dsh-diff-viewer"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>PiUI-style diff viewer replacing the stock DiffBlock for write/edit tool calls.</summary>
   </entry>
 </feed>

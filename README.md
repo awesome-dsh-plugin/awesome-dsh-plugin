@@ -10,7 +10,7 @@ DeepSeek Harness is DeepSeek's open-source agent harness — a runnable coding a
 
 This list collects community plugins that are installable via `dsh plugin add` (each declares a `dsh.bundle` manifest).
 
-**109** plugins · [PRs welcome](#contributing)
+**110** plugins · [PRs welcome](#contributing)
 
 ## Contents
 

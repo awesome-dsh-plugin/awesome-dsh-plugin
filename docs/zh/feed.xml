@@ -83,6 +83,13 @@
     <summary>通过 iLink 网关在微信里与 DSH agent 聊天、监控与审批：双向文本、会话切换、进度摘要与编号审批提示。</summary>
   </entry>
   <entry>
+    <title>dsh-im-bridge</title>
+    <id>https://github.com/BiBoyang/dsh-im-bridge</id>
+    <link href="https://github.com/BiBoyang/dsh-im-bridge"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。</summary>
+  </entry>
+  <entry>
     <title>dsh-polyglot</title>
     <id>https://github.com/Jesse-njx/dsh-polyglot</id>
     <link href="https://github.com/Jesse-njx/dsh-polyglot"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/qyw233/dsh-deeplink"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>`?session=` / `?workspace=` 深链直达指定项目对话。</summary>
-  </entry>
-  <entry>
-    <title>dsh-diff-viewer</title>
-    <id>https://github.com/lehhair/dsh-diff-viewer</id>
-    <link href="https://github.com/lehhair/dsh-diff-viewer"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>PiUI 风格 diff 查看器，替换 write/edit 工具调用的默认 DiffBlock。</summary>
   </entry>
 </feed>
