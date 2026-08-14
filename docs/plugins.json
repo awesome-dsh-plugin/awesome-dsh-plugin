@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 215,
+ "count": 216,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1661,6 +1661,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:SamXiaBing/dsh-adb",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "xiaoyuyu6420/dsh-backup",
+   "owner": "xiaoyuyu6420",
+   "url": "https://github.com/xiaoyuyu6420/dsh-backup",
+   "category": "tools",
+   "description": {
+    "en": "One-command backup of DSH user data: /backup, scheduled auto-backup, sha256 checksums and rotation.",
+    "zh": "一键备份 DSH 用户数据：/backup 命令、定时自动备份、sha256 校验与自动轮换。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:xiaoyuyu6420/dsh-backup",
    "added": "2026-08-14"
   },
   {
