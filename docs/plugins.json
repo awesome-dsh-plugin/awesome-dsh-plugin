@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 271,
+ "count": 276,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -63,6 +63,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-default-session",
+   "owner": "wjy9902",
+   "url": "https://github.com/wjy9902/dsh-web-default-session",
+   "category": "ui",
+   "description": {
+    "en": "The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.",
+    "zh": "点「新会话」默认打开绑定宿主启动目录的「默认目录」工作区（无需选文件夹），工作区选择菜单中也可选该项。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:wjy9902/dsh-web-default-session",
    "added": "2026-08-14"
   },
   {
@@ -864,6 +878,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-reasoning-slider",
+   "owner": "qjcnmd",
+   "url": "https://github.com/qjcnmd/dsh-reasoning-slider",
+   "category": "ui",
+   "description": {
+    "en": "Codex-style reasoning-effort slider embedded in the model selector.",
+    "zh": "Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
@@ -1351,6 +1379,20 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-memoria",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-memoria",
+   "category": "memory",
+   "description": {
+    "en": "Vector + graph memory backend: observe/remember/search/recall tools against a local memoria server, fusing HNSW semantic recall, FTS5 keyword search, and knowledge-graph signals via RRF ranking, with automatic turn-end persistence and per-agent namespace isolation.",
+    "zh": "向量+图记忆后端：observe/remember/search/recall 四个工具对接本地 memoria 服务，HNSW 语义召回 + FTS5 关键词 + 知识图谱信号经 RRF 融合排序，回合结束自动写入，按 Agent 命名空间隔离。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-memoria",
    "added": "2026-08-14"
   },
   {
@@ -3174,6 +3216,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "qiushi-dsh-evidence-audit",
+   "owner": "030611",
+   "url": "https://github.com/030611/qiushi-dsh-evidence-audit",
+   "category": "dev",
+   "description": {
+    "en": "Appends local hash-chained JSONL receipts for tool results and session events without storing prompts, tool arguments, result text, or raw session IDs.",
+    "zh": "把工具结果与会话事件的 receipt 写入本地哈希链 JSONL，不保存提示词、工具参数、结果正文或原始会话 ID。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:030611/qiushi-dsh-evidence-audit",
+   "added": "2026-08-14"
+  },
+  {
    "name": "sandbox-micro",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/sandbox-micro",
@@ -3843,6 +3899,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:yyh-001/dsh-expression",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-pet#dsh-pet",
+   "owner": "PC2005-cloud",
+   "url": "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet",
+   "category": "fun",
+   "description": {
+    "en": "Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.",
+    "zh": "DSH Web UI 桌面宠物：25 个透明动画、屏幕漫游、点击反应与拖拽，附可复现的素材生成链。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:PC2005-cloud/dsh-pet/tree/main/dsh-pet",
    "added": "2026-08-14"
   }
  ]

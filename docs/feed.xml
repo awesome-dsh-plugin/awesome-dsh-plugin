@@ -13,6 +13,13 @@
     <summary>A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.</summary>
   </entry>
   <entry>
+    <title>wjy9902/dsh-web-default-session</title>
+    <id>https://github.com/wjy9902/dsh-web-default-session</id>
+    <link href="https://github.com/wjy9902/dsh-web-default-session"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.</summary>
+  </entry>
+  <entry>
     <title>openma-ai/deepseek-harness-tui</title>
     <id>https://github.com/openma-ai/deepseek-harness-tui</id>
     <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/bobcat848/dsh-calculator"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.</summary>
-  </entry>
-  <entry>
-    <title>Jolly-J/dsh-deepseek-billing</title>
-    <id>https://github.com/Jolly-J/dsh-deepseek-billing</id>
-    <link href="https://github.com/Jolly-J/dsh-deepseek-billing"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DeepSeek account balance and per-session cost card in the sidebar foot.</summary>
   </entry>
 </feed>

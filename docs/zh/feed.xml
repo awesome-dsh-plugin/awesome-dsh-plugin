@@ -13,6 +13,13 @@
     <summary>插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。</summary>
   </entry>
   <entry>
+    <title>wjy9902/dsh-web-default-session</title>
+    <id>https://github.com/wjy9902/dsh-web-default-session</id>
+    <link href="https://github.com/wjy9902/dsh-web-default-session"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>点「新会话」默认打开绑定宿主启动目录的「默认目录」工作区（无需选文件夹），工作区选择菜单中也可选该项。</summary>
+  </entry>
+  <entry>
     <title>openma-ai/deepseek-harness-tui</title>
     <id>https://github.com/openma-ai/deepseek-harness-tui</id>
     <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/bobcat848/dsh-calculator"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。</summary>
-  </entry>
-  <entry>
-    <title>Jolly-J/dsh-deepseek-billing</title>
-    <id>https://github.com/Jolly-J/dsh-deepseek-billing</id>
-    <link href="https://github.com/Jolly-J/dsh-deepseek-billing"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>侧边栏底部 DeepSeek 账户余额显示与会话费用估算卡片。</summary>
   </entry>
 </feed>
