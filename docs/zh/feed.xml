@@ -4,7 +4,35 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-14T00:00:00Z</updated>
+  <updated>2026-08-14T17:49:55.495Z</updated>
+  <entry>
+    <title>GLFzr/dsh-opencode-go-quota</title>
+    <id>https://github.com/GLFzr/dsh-opencode-go-quota</id>
+    <link href="https://github.com/GLFzr/dsh-opencode-go-quota"/>
+    <updated>2026-08-14T17:49:55.495Z</updated>
+    <summary>模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。</summary>
+  </entry>
+  <entry>
+    <title>ZichengGurrr/dsh-window#plugin</title>
+    <id>https://github.com/ZichengGurrr/dsh-window/tree/main/plugin</id>
+    <link href="https://github.com/ZichengGurrr/dsh-window/tree/main/plugin"/>
+    <updated>2026-08-14T17:49:55.495Z</updated>
+    <summary>DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。</summary>
+  </entry>
+  <entry>
+    <title>Realyujie/dsh-us-stocks</title>
+    <id>https://github.com/Realyujie/dsh-us-stocks</id>
+    <link href="https://github.com/Realyujie/dsh-us-stocks"/>
+    <updated>2026-08-14T17:49:55.495Z</updated>
+    <summary>美股行情、历史 K 线、财务报表、分析师共识与新闻，数据来自 yahoo-finance2。</summary>
+  </entry>
+  <entry>
+    <title>SaiSenBox/dsh-boot-guard</title>
+    <id>https://github.com/SaiSenBox/dsh-boot-guard</id>
+    <link href="https://github.com/SaiSenBox/dsh-boot-guard"/>
+    <updated>2026-08-14T17:49:55.495Z</updated>
+    <summary>独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。</summary>
+  </entry>
   <entry>
     <title>AcidGr/dsh-web-mobile-fix</title>
     <id>https://github.com/AcidGr/dsh-web-mobile-fix</id>
@@ -186,33 +214,5 @@
     <link href="https://github.com/nonewind/dsh-spend"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DSH Web 用量与费用统计插件：右下角悬浮窗，按模型/按天/按会话多维聚合与预计花费。</summary>
-  </entry>
-  <entry>
-    <title>stevenx65/dsh-balance-plugin</title>
-    <id>https://github.com/stevenx65/dsh-balance-plugin</id>
-    <link href="https://github.com/stevenx65/dsh-balance-plugin"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。</summary>
-  </entry>
-  <entry>
-    <title>ccch1mneyyy/dsh-TUI</title>
-    <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
-    <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</summary>
-  </entry>
-  <entry>
-    <title>omdsh-dev/DSH-better-sidebar</title>
-    <id>https://github.com/omdsh-dev/DSH-better-sidebar</id>
-    <link href="https://github.com/omdsh-dev/DSH-better-sidebar"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</summary>
-  </entry>
-  <entry>
-    <title>tsonglew/dsh-workspace-search</title>
-    <id>https://github.com/tsonglew/dsh-workspace-search</id>
-    <link href="https://github.com/tsonglew/dsh-workspace-search"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。</summary>
   </entry>
 </feed>

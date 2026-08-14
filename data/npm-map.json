@@ -371,6 +371,10 @@
   "npm": "dsh-memory-gate",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/GLFzr/dsh-opencode-go-quota": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/GooodWei/arcana": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1039,8 +1043,16 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Realyujie/dsh-us-stocks": {
+  "npm": "dsh-us-stocks",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/renat3u/dsh-web-archive": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/SaiSenBox/dsh-boot-guard": {
+  "npm": "dsh-boot-guard",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/sakikoTGW/pack-agent": {
@@ -1360,6 +1372,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/zhu1090093659/dsh-web-ui": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/ZichengGurrr/dsh-window/tree/main/plugin": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
