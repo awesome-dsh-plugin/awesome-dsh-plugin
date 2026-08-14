@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 246,
+ "count": 247,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -2093,6 +2093,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:mafeis/dsh-net-proxy",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-session-audit",
+   "owner": "bwndlct",
+   "url": "https://github.com/bwndlct/dsh-session-audit",
+   "category": "tools",
+   "description": {
+    "en": "Session execution analytics: steps, tool calls, failures, repeated actions, token usage and verification signals, rendered as text/Markdown/JSON reports.",
+    "zh": "会话执行分析：步骤、工具调用、失败、重复动作、token 用量与验证信号，输出 text/Markdown/JSON 报告。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:bwndlct/dsh-session-audit",
    "added": "2026-08-14"
   },
   {
