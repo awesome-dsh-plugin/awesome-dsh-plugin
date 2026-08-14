@@ -115,6 +115,7 @@ dsh plugin --profile web add dshmarket
 
 
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) — 底部多标签终端面板（node-pty + xterm.js）：贴底全宽，输入框始终在终端上方。
+- [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — 上下文洞察面板：在 Chat 与 Trajectory 旁新增「上下文」标签页，按六大类别对照窗口大小拆解模型上下文窗口构成，提供按请求粒度的历史柱状图（含服务商实际 token 用量）与压缩/裁剪/注入事件。
 ### 🎭 主题与外观
 
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) — Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。

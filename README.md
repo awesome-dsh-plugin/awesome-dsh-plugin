@@ -116,6 +116,7 @@ dsh plugin --profile web add dshmarket
 
 
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) - Bottom multi-tab terminal panel (node-pty + xterm.js) pinned to the viewport bottom, always below the input box.
+- [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) - Context insight panel: a Context tab beside Chat and Trajectory showing what the model's context window is made of — six categories scaled against the window, per-request history bars with provider-reported token usage, and compaction/prune/injection events.
 ### Themes & Appearance
 
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) - Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.
