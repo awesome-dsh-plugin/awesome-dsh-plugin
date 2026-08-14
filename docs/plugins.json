@@ -2752,7 +2752,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dsh-browser",
+   "name": "@anweat/dsh-browser",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-browser",
    "category": "fun",
