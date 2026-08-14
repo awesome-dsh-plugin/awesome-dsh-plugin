@@ -671,6 +671,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/liqichen/dsh-plugin-manager": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/lire1131/dsh-undo-plugin": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1133,6 +1137,10 @@
  },
  "https://github.com/Starfie1d1272/dsh-builtin-toggles": {
   "npm": "dsh-builtin-toggles",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/starslittle/dsh-blue-whale": {
+  "npm": null,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/stevenx65/dsh-balance-plugin": {

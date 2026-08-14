@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 362,
+ "count": 364,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1384,6 +1384,21 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:tianyhjg-lab/dsh-font",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-blue-whale",
+   "owner": "starslittle",
+   "url": "https://github.com/starslittle/dsh-blue-whale",
+   "page": "https://awesome-dsh-plugin.com/p/starslittle/dsh-blue-whale/",
+   "category": "theme",
+   "description": {
+    "en": "DeepSeek-Chat-style blue-whale skin: brand #4D6BFE on light and dark, following the built-in appearance.",
+    "zh": "复刻 DeepSeek Chat 蓝鲸配色的皮肤：主色 #4D6BFE，亮色/深色跟随系统外观。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:starslittle/dsh-blue-whale",
    "added": "2026-08-14"
   },
   {
@@ -5194,6 +5209,21 @@
    "npm": "dsh-store",
    "stars": null,
    "install": "dsh plugin --profile web add dsh-store",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-manager",
+   "owner": "liqichen",
+   "url": "https://github.com/liqichen/dsh-plugin-manager",
+   "page": "https://awesome-dsh-plugin.com/p/liqichen/dsh-plugin-manager/",
+   "category": "dev",
+   "description": {
+    "en": "GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.",
+    "zh": "在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:liqichen/dsh-plugin-manager",
    "added": "2026-08-14"
   },
   {

@@ -4,7 +4,21 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-14T17:51:11.163Z</updated>
+  <updated>2026-08-14T17:52:18.112Z</updated>
+  <entry>
+    <title>starslittle/dsh-blue-whale</title>
+    <id>https://github.com/starslittle/dsh-blue-whale</id>
+    <link href="https://github.com/starslittle/dsh-blue-whale"/>
+    <updated>2026-08-14T17:52:18.112Z</updated>
+    <summary>复刻 DeepSeek Chat 蓝鲸配色的皮肤：主色 #4D6BFE，亮色/深色跟随系统外观。</summary>
+  </entry>
+  <entry>
+    <title>liqichen/dsh-plugin-manager</title>
+    <id>https://github.com/liqichen/dsh-plugin-manager</id>
+    <link href="https://github.com/liqichen/dsh-plugin-manager"/>
+    <updated>2026-08-14T17:52:18.112Z</updated>
+    <summary>在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。</summary>
+  </entry>
   <entry>
     <title>PwnKY/dsh-session-link</title>
     <id>https://github.com/PwnKY/dsh-session-link</id>
@@ -200,19 +214,5 @@
     <link href="https://github.com/l541402398/dsh-file-uploads"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。</summary>
-  </entry>
-  <entry>
-    <title>Ghost011118/dsh-balance-meter</title>
-    <id>https://github.com/Ghost011118/dsh-balance-meter</id>
-    <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
-  </entry>
-  <entry>
-    <title>v587d/dsh-opencode-go-usage</title>
-    <id>https://github.com/v587d/dsh-opencode-go-usage</id>
-    <link href="https://github.com/v587d/dsh-opencode-go-usage"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。</summary>
   </entry>
 </feed>
