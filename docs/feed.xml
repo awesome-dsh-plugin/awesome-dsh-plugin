@@ -188,6 +188,13 @@
     <summary>Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.</summary>
   </entry>
   <entry>
+    <title>liliuCourier/dsh-chat-outline</title>
+    <id>https://github.com/liliuCourier/dsh-chat-outline</id>
+    <link href="https://github.com/liliuCourier/dsh-chat-outline"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</summary>
-  </entry>
-  <entry>
-    <title>Jesse-njx/dsh-crosstalk</title>
-    <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
-    <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</summary>
   </entry>
 </feed>

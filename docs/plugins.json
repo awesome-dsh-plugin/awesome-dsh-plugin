@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 231,
+ "count": 235,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -710,6 +710,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-chat-outline",
+   "owner": "liliuCourier",
+   "url": "https://github.com/liliuCourier/dsh-chat-outline",
+   "category": "ui",
+   "description": {
+    "en": "Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.",
+    "zh": "对话栏左侧常驻大纲：按轮次列出提问与最后回复，支持关键词过滤与一键跳转。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:liliuCourier/dsh-chat-outline",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
@@ -931,6 +945,20 @@
    "npm": "dsh-prompt-stash",
    "stars": 1,
    "install": "dsh plugin --profile web add dsh-prompt-stash",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-side-chat",
+   "owner": "heartmove",
+   "url": "https://github.com/heartmove/dsh-side-chat",
+   "category": "session",
+   "description": {
+    "en": "Select part of a conversation and ask about it in a right-side side chat; bring AI replies back to the main chat directly or as a summary.",
+    "zh": "选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:heartmove/dsh-side-chat",
    "added": "2026-08-14"
   },
   {
@@ -1928,6 +1956,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-tool-search",
+   "owner": "Letter2025",
+   "url": "https://github.com/Letter2025/dsh-tool-search",
+   "category": "tools",
+   "description": {
+    "en": "Hermes-style tool search & slimming: progressive disclosure, semantic search, describe, and call long-tail tools on demand while core tools stay eager.",
+    "zh": "Hermes 风格工具搜索与瘦身：渐进式披露，语义搜索/查看/调用长尾工具，核心工具保持直通。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Letter2025/dsh-tool-search",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-hdc-bridge",
    "owner": "1na-ko",
    "url": "https://github.com/1na-ko/dsh-hdc-bridge",
@@ -2387,6 +2429,20 @@
    "npm": null,
    "stars": 3,
    "install": "dsh plugin --profile web add github:imetn/dsh-lark-bridge",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-notify-bark",
+   "owner": "pc439527",
+   "url": "https://github.com/pc439527/dsh-notify-bark",
+   "category": "notify",
+   "description": {
+    "en": "Bark push notifications to iPhone: turn completion, waiting-for-input, and approval events sent from the DSH Host.",
+    "zh": "Bark 推送通知到 iPhone：回合完成、等待回答、等待授权等事件由 Host 端发送。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:pc439527/dsh-notify-bark",
    "added": "2026-08-14"
   },
   {
