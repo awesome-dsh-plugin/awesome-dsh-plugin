@@ -6,6 +6,20 @@
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
   <updated>2026-08-14T00:00:00Z</updated>
   <entry>
+    <title>AcidGr/dsh-web-mobile-fix</title>
+    <id>https://github.com/AcidGr/dsh-web-mobile-fix</id>
+    <link href="https://github.com/AcidGr/dsh-web-mobile-fix"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。</summary>
+  </entry>
+  <entry>
+    <title>AcidGr/dsh-web-lan-access</title>
+    <id>https://github.com/AcidGr/dsh-web-lan-access</id>
+    <link href="https://github.com/AcidGr/dsh-web-lan-access"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。</summary>
+  </entry>
+  <entry>
     <title>Noob-stupid/dsh-plugin-hub</title>
     <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
     <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
@@ -20,11 +34,25 @@
     <summary>GitHub 风格用量热力图看板：按工作区统计使用次数与 Token 花费（含缓存命中率）、DeepSeek 账户余额查询、工作区别名管理。</summary>
   </entry>
   <entry>
+    <title>bowenliang123/dsh-context</title>
+    <id>https://github.com/bowenliang123/dsh-context</id>
+    <link href="https://github.com/bowenliang123/dsh-context"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。</summary>
+  </entry>
+  <entry>
     <title>wjy9902/dsh-web-default-session</title>
     <id>https://github.com/wjy9902/dsh-web-default-session</id>
     <link href="https://github.com/wjy9902/dsh-web-default-session"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>点「新会话」默认打开绑定宿主启动目录的「默认目录」工作区（无需选文件夹），工作区选择菜单中也可选该项。</summary>
+  </entry>
+  <entry>
+    <title>Fishsb/dsh-prompt-enhancer</title>
+    <id>https://github.com/Fishsb/dsh-prompt-enhancer</id>
+    <link href="https://github.com/Fishsb/dsh-prompt-enhancer"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>一键提示词增强：独立 LLM 调用把模糊草稿改写为更强的提示词，不满意可撤回。</summary>
   </entry>
   <entry>
     <title>openma-ai/deepseek-harness-tui</title>
@@ -186,33 +214,5 @@
     <link href="https://github.com/Luaphes/dsh-web-attention-badge"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。</summary>
-  </entry>
-  <entry>
-    <title>zhu1090093659/dsh-web-ui</title>
-    <id>https://github.com/zhu1090093659/dsh-web-ui</id>
-    <link href="https://github.com/zhu1090093659/dsh-web-ui"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</summary>
-  </entry>
-  <entry>
-    <title>zealot00/dsh-pet</title>
-    <id>https://github.com/zealot00/dsh-pet</id>
-    <link href="https://github.com/zealot00/dsh-pet"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。</summary>
-  </entry>
-  <entry>
-    <title>Starfie1d1272/dsh-builtin-toggles</title>
-    <id>https://github.com/Starfie1d1272/dsh-builtin-toggles</id>
-    <link href="https://github.com/Starfie1d1272/dsh-builtin-toggles"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>为 DSH Web 添加官方内置插件目录、搜索与状态说明，并提供经过审核的安全 UI 插件开关。</summary>
-  </entry>
-  <entry>
-    <title>jiangnanquan/dsh-ux</title>
-    <id>https://github.com/jiangnanquan/dsh-ux</id>
-    <link href="https://github.com/jiangnanquan/dsh-ux"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。</summary>
   </entry>
 </feed>

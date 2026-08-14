@@ -1,4 +1,4 @@
-﻿# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
+# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com)
 
@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
-**301** plugins · [PRs welcome](#contributing)
+**312** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -41,12 +41,19 @@ dsh plugin --profile web add dshmarket
 
 ### UI Enhancements
 
+- [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) - Mobile layout fixes for the Web UI on narrow screens: full-screen settings panel, one-row plugin nav, full-screen sidebar, centered popups, icon-only session-log button.
+
+- [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) - LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.
+
 - [Noob-stupid/dsh-plugin-hub](https://github.com/Noob-stupid/dsh-plugin-hub) - A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.
 
 - [Make0209/dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) - GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.
 
+- [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) - Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.
+
 - [wjy9902/dsh-web-default-session](https://github.com/wjy9902/dsh-web-default-session) - The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.
 
+- [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) - One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.
 
 - [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) - A terminal UI (TUI) for DeepSeek Harness.
 - [openma-ai/deepseek-harness-tui](https://github.com/openma-ai/deepseek-harness-tui) - A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.
@@ -122,6 +129,7 @@ dsh plugin --profile web add dshmarket
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) - Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.
 - [Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) - Whale-girl skin series for the DSH Web UI (maid-atelier).
 - [wsxwj123/dsh-plugins#theme-gallery](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery) - Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.
+- [PAKIKNOWLEDGE/dsh-client-ui-skin-claude](https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude) - Claude-style skin with a warm-black canvas, clay accent, and serif UI that follows the native light and dark themes.
 
 
 ### Sessions & Messages
@@ -152,6 +160,7 @@ dsh plugin --profile web add dshmarket
 - [LeemanCheung/dsh-token-usage](https://github.com/LeemanCheung/dsh-token-usage) - Persistent per-session Token usage records and a settings dashboard with provider/model breakdowns and a 52-week activity heatmap.
 - [whyihaveyou/dsh-suite#plugin-session-export](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export) - Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.
 - [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) - Search, list and read past and current sessions through the harness's own `sessionQuery` service: uses the SQLite FTS5 index where a deployment enables it, and falls back to a bounded newest-first scan where it does not.
+- [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) - Delete DSH sessions from the web UI and desktop client: header danger button and session-row menu item with a risk-consent dialog; host endpoint and agent tool remove the session log, projection cache, and workspace accounting.
 
 ### Memory
 
@@ -187,6 +196,7 @@ dsh plugin --profile web add dshmarket
 - [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) - Vision tasks for text-only models: intent-aware image Q&A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.
 - [yun520-1/deepseek-heartflow](https://github.com/yun520-1/deepseek-heartflow) - HeartFlow (心虫) AGI layer-1 discriminator gate as a DSH plugin: 47-dimension rule-based text checking (heartflow_check tool) plus automatic output supervision at tools/post-execute, fail-closed when engine missing.
 - [omdsh-dev/dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) - Create and manage sandboxed JavaScript tools with a Monaco editor and model-driven tool lifecycle.
+- [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) - Text-first computer use for DSH: background Chromium control via Playwright/CDP plus accessibility-first macOS control; actions stay pinned to the right process and window without taking the user's pointer, ships a Developer ID signed, notarized Universal 2 DMG.
 - [Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) - Accessibility-first macOS computer use: fresh observations, stale-state rejection, scoped permissions, and safe input.
 - [kunjinkao-os/dsh-mobile-gui-agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent) - Android GUI Agent with ADB screenshots, compact UI hierarchy grounding, verified iterative actions, approvals, and a Mobile Web view.
 - [omdsh-dev/dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) - Let the AI connect to databases and write SQL for you.
@@ -257,13 +267,14 @@ dsh plugin --profile web add dshmarket
 - [LeslieWylie/dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) - Render Markdown to a standalone, self-contained HTML page: an `md_html_render` tool that works in a headless profile, plus a web drawer to browse, preview, edit and export local `.md` files; both share one renderer, with no runtime dependencies.
 - [jinguanghai/deepseek-harness-forge-plugins#forge-gates](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates) - Real-compute verification gates: math simplification, logic proofs, regex validation, E-prover FOL, state-machine checks, and code repair, backed by Go-compiled binaries with prebuilt Windows executables.
 - [jinguanghai/deepseek-harness-forge-plugins#forge-tcm](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm) - Traditional Chinese Medicine toolkit: eight-axes diagnosis and herb-pair lookup.
+- [lsz-asd/dsh-plugin-device-info](https://github.com/lsz-asd/dsh-plugin-device-info) - Read-only Windows device information tools: one agent tool per Win32 device category (time, system, cpu, memory, disk, gpu, network, battery, processes, usb, audio, printers) via WMI/CIM and Node os collectors.
 
 ### Skills
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
 - [creght-dev/skills](https://github.com/creght-dev/skills) - Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.
 
 
-- [YTxue/dsh-skill-manager](https://github.com/YTxue/dsh-skill-manager) - Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.
+- [YTxue/dsh-skill-manager-ytxue](https://github.com/YTxue/dsh-skill-manager-ytxue) - Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.
 ### Workflow & Automation
 
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) - Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.
@@ -304,6 +315,7 @@ dsh plugin --profile web add dshmarket
 - [bill9109/dsh-webbridge](https://github.com/bill9109/dsh-webbridge) - DSH meets Kimi WebBridge.
 - [BiBoyang/dsh-im-bridge](https://github.com/BiBoyang/dsh-im-bridge) - Two-way WeChat (iLink) bridge: turn-end and approval-request push, in-chat approve/reject and message injection, persistent dedup and convergent long-reply chunking; channel layer extensible to other IMs.
 - [imetn/dsh-lark-bridge](https://github.com/imetn/dsh-lark-bridge) - Bidirectional Lark/Feishu controller for DeepSeek Harness with project and session routing, interactive cards, approvals, attachments, and task controls.
+- [yeruizhi/dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier) - Feishu meeting reminder: a dsh-plugin which has only side effect: reminding you, mid-flow with AI, that you "have to go meet carbon-based lifeforms".
 - [pc439527/dsh-notify-bark](https://github.com/pc439527/dsh-notify-bark) - Bark push notifications to iPhone: turn completion, waiting-for-input, and approval events sent from the DSH Host.
 
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) - Notifies you when a conversation finishes: plays a sound and shows a Windows notification when the agent goes idle (configurable sound file, volume, debounce/throttle).
@@ -322,6 +334,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) - Qwen multi-modal plugin support.
 - [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) - Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.
 - [feibi-mochi/deepseek-harness-wallet](https://github.com/feibi-mochi/deepseek-harness-wallet) - Multi-provider wallet chip: official DeepSeek balance, per-session cost & tokens, third-party token totals, recharge shortcut, low-balance alerts.
+- [superboy911/dsh-model-router](https://github.com/superboy911/dsh-model-router) - Deterministic keyword routing, allowlisted model switching, and an isolated image_gen channel for DeepSeek Harness.
 
 ### Development & Runtime
 
@@ -370,6 +383,7 @@ dsh plugin --profile web add dshmarket
 - [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) - Login gateway for the DSH web UI: password door with first-run setup, bcrypt + at-rest encryption (AES-256-GCM/HMAC), brute-force lockout, audit log, TLS 1.2+ with 80→443 redirect, CSRF, anti-framing.
 - [Yuuz12/dsh-webui-auth](https://github.com/Yuuz12/dsh-webui-auth) - WebUI authentication enforced at the HTTP/transport layer: four-layer login gate (resources, plugin bundles, /api, WebSocket), server-side sessions with HttpOnly cookies.
 - [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) - LAN access for the Web GUI: 0.0.0.0 bind plus a crypto.randomUUID polyfill for non-secure (LAN HTTP) contexts.
+- [lsz-asd/dsh-chameleon#bundle](https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle) - Self-editing desktop workbench for DeepSeek Harness: a full dsh web replica with an edit mode in which the agent modifies the workbench (patch layers, plugins, UI) with hot reload.
 
 
 ### Just for Fun
