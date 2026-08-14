@@ -6,210 +6,210 @@
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
   <updated>2026-08-14T00:00:00Z</updated>
   <entry>
-    <title>deepseek-harness-tui</title>
+    <title>openma-ai/deepseek-harness-tui</title>
     <id>https://github.com/openma-ai/deepseek-harness-tui</id>
     <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
   </entry>
   <entry>
-    <title>dsh-file-uploads</title>
+    <title>l541402398/dsh-file-uploads</title>
     <id>https://github.com/l541402398/dsh-file-uploads</id>
     <link href="https://github.com/l541402398/dsh-file-uploads"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.</summary>
   </entry>
   <entry>
-    <title>dsh-balance-meter</title>
+    <title>Ghost011118/dsh-balance-meter</title>
     <id>https://github.com/Ghost011118/dsh-balance-meter</id>
     <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
   </entry>
   <entry>
-    <title>dsh-opencode-go-usage</title>
+    <title>v587d/dsh-opencode-go-usage</title>
     <id>https://github.com/v587d/dsh-opencode-go-usage</id>
     <link href="https://github.com/v587d/dsh-opencode-go-usage"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.</summary>
   </entry>
   <entry>
-    <title>dsh-cost-meter</title>
+    <title>Han-1413141/dsh-cost-meter</title>
     <id>https://github.com/Han-1413141/dsh-cost-meter</id>
     <link href="https://github.com/Han-1413141/dsh-cost-meter"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.</summary>
   </entry>
   <entry>
-    <title>dsh-plugin-deepseek-balance</title>
+    <title>fishxcode/dsh-plugin-deepseek-balance</title>
     <id>https://github.com/fishxcode/dsh-plugin-deepseek-balance</id>
     <link href="https://github.com/fishxcode/dsh-plugin-deepseek-balance"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.</summary>
   </entry>
   <entry>
-    <title>ds-api-usage</title>
+    <title>Sev7een/ds-api-usage</title>
     <id>https://github.com/Sev7een/ds-api-usage</id>
     <link href="https://github.com/Sev7een/ds-api-usage"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.</summary>
   </entry>
   <entry>
-    <title>dsh-spend</title>
+    <title>nonewind/dsh-spend</title>
     <id>https://github.com/nonewind/dsh-spend</id>
     <link href="https://github.com/nonewind/dsh-spend"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.</summary>
   </entry>
   <entry>
-    <title>dsh-TUI</title>
+    <title>ccch1mneyyy/dsh-TUI</title>
     <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
     <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</summary>
   </entry>
   <entry>
-    <title>DSH-better-sidebar</title>
+    <title>omdsh-dev/DSH-better-sidebar</title>
     <id>https://github.com/omdsh-dev/DSH-better-sidebar</id>
     <link href="https://github.com/omdsh-dev/DSH-better-sidebar"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</summary>
   </entry>
   <entry>
-    <title>dsh-sticky-disclosure</title>
+    <title>Han-1413141/dsh-sticky-disclosure</title>
     <id>https://github.com/Han-1413141/dsh-sticky-disclosure</id>
     <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.</summary>
   </entry>
   <entry>
-    <title>dsh-sticky-note</title>
+    <title>Meredith2328/dsh-sticky-note</title>
     <id>https://github.com/Meredith2328/dsh-sticky-note</id>
     <link href="https://github.com/Meredith2328/dsh-sticky-note"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Quick sticky notes on the composer toolbar: jot ideas or TODOs, auto-saved as Markdown, one click to send into the chat.</summary>
   </entry>
   <entry>
-    <title>dsh-web-attention-badge</title>
+    <title>Luaphes/dsh-web-attention-badge</title>
     <id>https://github.com/Luaphes/dsh-web-attention-badge</id>
     <link href="https://github.com/Luaphes/dsh-web-attention-badge"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.</summary>
   </entry>
   <entry>
-    <title>dsh-web-ui</title>
+    <title>zhu1090093659/dsh-web-ui</title>
     <id>https://github.com/zhu1090093659/dsh-web-ui</id>
     <link href="https://github.com/zhu1090093659/dsh-web-ui"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</summary>
   </entry>
   <entry>
-    <title>dsh-pet</title>
+    <title>zealot00/dsh-pet</title>
     <id>https://github.com/zealot00/dsh-pet</id>
     <link href="https://github.com/zealot00/dsh-pet"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Desktop pet for the DSH Web UI: sprite-sheet animation, agent state linkage, drag, alarm (daily/one-shot) and pomodoro widgets, skin picker with preview.</summary>
   </entry>
   <entry>
-    <title>dsh-builtin-toggles</title>
+    <title>Starfie1d1272/dsh-builtin-toggles</title>
     <id>https://github.com/Starfie1d1272/dsh-builtin-toggles</id>
     <link href="https://github.com/Starfie1d1272/dsh-builtin-toggles"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Adds a built-in plugin catalog to DSH Web with search, status explanations, and safe toggles for audited UI plugins.</summary>
   </entry>
   <entry>
-    <title>dsh-enhance</title>
+    <title>jiangnanquan/dsh-ux</title>
     <id>https://github.com/jiangnanquan/dsh-ux</id>
     <link href="https://github.com/jiangnanquan/dsh-ux"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Solarized light theme, compact layout, think/tool-chain collapse capsules, and balance, session cost, and usage dashboards for the DSH web UI.</summary>
   </entry>
   <entry>
-    <title>dsh-hud</title>
+    <title>a903067276-rgb/dsh-hud</title>
     <id>https://github.com/a903067276-rgb/dsh-hud</id>
     <link href="https://github.com/a903067276-rgb/dsh-hud"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>HUD status panel: git status, MCP servers, skills, model and token usage in a floating side panel.</summary>
   </entry>
   <entry>
-    <title>dsh-turn-scrubber</title>
+    <title>wsxwj123/dsh-plugins#turn-scrubber</title>
     <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber</id>
     <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Compact right-edge turn rail with hover summaries and click-to-jump navigation.</summary>
   </entry>
   <entry>
-    <title>dsh-skin</title>
+    <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</summary>
   </entry>
   <entry>
-    <title>dsh-deep-whale</title>
+    <title>Small-tailqwq/dsh-deep-whale</title>
     <id>https://github.com/Small-tailqwq/dsh-deep-whale</id>
     <link href="https://github.com/Small-tailqwq/dsh-deep-whale"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Whale-girl skin series for the DSH Web UI (maid-atelier).</summary>
   </entry>
   <entry>
-    <title>dsh-theme-gallery</title>
+    <title>wsxwj123/dsh-plugins#theme-gallery</title>
     <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery</id>
     <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</summary>
   </entry>
   <entry>
-    <title>dsh-crosstalk</title>
+    <title>Jesse-njx/dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</summary>
   </entry>
   <entry>
-    <title>dsh-peer-link</title>
+    <title>czm15053/dsh-peer-link</title>
     <id>https://github.com/czm15053/dsh-peer-link</id>
     <link href="https://github.com/czm15053/dsh-peer-link"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).</summary>
   </entry>
   <entry>
-    <title>dsh-file-claim</title>
+    <title>Nwflower/dsh-file-claim</title>
     <id>https://github.com/Nwflower/dsh-file-claim</id>
     <link href="https://github.com/Nwflower/dsh-file-claim"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</summary>
   </entry>
   <entry>
-    <title>dsh-interconnect</title>
+    <title>Chinesezjc/dsh-interconnect</title>
     <id>https://github.com/Chinesezjc/dsh-interconnect</id>
     <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
   </entry>
   <entry>
-    <title>dsh-prompt-stash</title>
+    <title>Wine-Red/dsh-prompt-stash</title>
     <id>https://github.com/Wine-Red/dsh-prompt-stash</id>
     <link href="https://github.com/Wine-Red/dsh-prompt-stash"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.</summary>
   </entry>
   <entry>
-    <title>dsh-mneme</title>
+    <title>modusensus/dsh-mneme</title>
     <id>https://github.com/modusensus/dsh-mneme</id>
     <link href="https://github.com/modusensus/dsh-mneme"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</summary>
   </entry>
   <entry>
-    <title>nowledge-mem-deepseek-harness</title>
+    <title>nowledge-co/nowledge-mem-deepseek-harness</title>
     <id>https://github.com/nowledge-co/nowledge-mem-deepseek-harness</id>
     <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</summary>
   </entry>
   <entry>
-    <title>dsh-memory</title>
+    <title>Jesse-njx/dsh-memory</title>
     <id>https://github.com/Jesse-njx/dsh-memory</id>
     <link href="https://github.com/Jesse-njx/dsh-memory"/>
     <updated>2026-08-14T00:00:00Z</updated>

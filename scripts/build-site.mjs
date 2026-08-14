@@ -95,7 +95,7 @@ function buildRows(loc, only) {
       return `    <li class="item" data-cat="${e.cat}" style="animation-delay:${delay}s">
       <span class="no" aria-hidden="true">№ ${String(idx).padStart(2, '0')}</span>
       <div>
-        <h3><a href="${e.url}" rel="noopener" translate="no">${esc(e.name)}</a><span class="by" translate="no">${esc(e.owner)}</span></h3>
+        <h3><a href="${e.url}" rel="noopener" translate="no">${esc(e.name)}</a></h3>
         <p>${esc(e.descs[loc.code])}</p>
       </div>
       <button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button>
