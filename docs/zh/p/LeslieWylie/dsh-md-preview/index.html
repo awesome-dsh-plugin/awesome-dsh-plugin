@@ -189,20 +189,20 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/LeslieWylie/dsh-md-preview/blob/main/README.md">English</a> | <strong>简体中文</strong></p>
+<p><strong>English</strong> | <a href="https://github.com/LeslieWylie/dsh-md-preview/blob/main/README.zh-CN.md">简体中文</a></p>
 <blockquote>
-<p><strong>把 Markdown 变成一个可以直接发给别人的网页。</strong></p>
+<p><strong>Turn Markdown into a page you can send to someone.</strong></p>
 </blockquote>
-<p><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的 Markdown 渲染插件，两个入口、一套引擎：</p>
+<p>A Markdown renderer for the <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> with two front doors and one engine behind them:</p>
 <ul>
-<li><strong><code>md_html_render</code></strong> —— 模型可以直接调用的工具。传入 Markdown，返回一份完整、自包含的 HTML 文档，可选写入磁盘。<strong>无图形界面的 headless 配置下同样可用</strong>。</li>
-<li><strong>MD 抽屉</strong> —— 在网页会话头部按 <strong>MD</strong>，浏览当前工作目录，点开任意 <code>.md</code> 文件即时渲染。不开新标签页，不换编辑器，不打断当前上下文。</li>
+<li><strong><code>md_html_render</code></strong> — a tool the model can call. Give it Markdown, get back a complete, self-contained HTML document, optionally written to disk. Works in a headless profile with no GUI at all.</li>
+<li><strong>The MD drawer</strong> — press <strong>MD</strong> in the web session header, browse your working directory, click a <code>.md</code> file. It renders in place. No new tab, no second editor, no context switch.</li>
 </ul>
-<p>两者共用同一个渲染器，所以模型生成的页面和你从抽屉导出的页面<strong>逐字节一致</strong>——这一点由测试对整个用例集断言。</p>
-<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/drawer.png" alt="MD 抽屉在会话上层展开，就地渲染一份 README"></p>
+<p>Both go through the same renderer, so a page the model generates and a page you export from the drawer are byte-for-byte identical. A test asserts that on every case in the corpus.</p>
+<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/drawer.png" alt="The MD drawer open over a session, rendering a README in place"></p>
 <hr>
-<h3>安装</h3>
-<p>尚未发布到 npm，直接从 GitHub 安装。写进你的 profile <code>package.json</code>：</p>
+<h3>Install</h3>
+<p>Not on npm yet — install straight from GitHub. Add it to your profile&#39;s <code>package.json</code>:</p>
 <pre><code class="language-jsonc">// ~/.dsh/profiles/&lt;profile&gt;/package.json
 {
   &quot;dependencies&quot;: {
@@ -215,50 +215,50 @@ footer p+p{margin-top:.5rem}
   }
 }
 </code></pre>
-<p>然后重装并重启 profile：</p>
+<p>Then reinstall and restart the profile:</p>
 <pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt; &amp;&amp; pnpm install
 dsh --profile &lt;profile&gt;
 </code></pre>
-<p>去掉 <code>#v0.2.2</code> 即可跟随默认分支，不锁版本。</p>
+<p>Drop the <code>#v0.2.2</code> to track the default branch instead of pinning.</p>
 <pre><code class="language-sh">dsh --profile web --patch &lt;(printf -- &quot;- insert:\n    - id: md-preview\n      name: dsh-md-preview\n&quot;)
 </code></pre>
-<p>包本身仍需能从 profile 的 <code>node_modules</code> 解析到，所以还是要先执行上面的 <code>pnpm install</code>。</p>
+<p>The package still has to resolve from the profile&#39;s <code>node_modules</code>, so run the <code>pnpm install</code> above first.</p>
 <hr>
-<h3>工具</h3>
+<h3>The tool</h3>
 <pre><code>md_html_render(markdown, title?, save_path?) -&gt; { html, savedPath?, error? }
 </code></pre>
 <table>
 <thead>
 <tr>
-<th>参数</th>
+<th>Parameter</th>
 <th></th>
 <th></th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>markdown</code></td>
-<td>必填</td>
-<td>Markdown 原文。</td>
+<td>required</td>
+<td>The Markdown source.</td>
 </tr>
 <tr>
 <td><code>title</code></td>
-<td>可选</td>
-<td>网页 <code>&lt;title&gt;</code>，缺省为 <code>Markdown</code>。</td>
+<td>optional</td>
+<td>Page <code>&lt;title&gt;</code>. Defaults to <code>Markdown</code>.</td>
 </tr>
 <tr>
 <td><code>save_path</code></td>
-<td>可选</td>
-<td>写入路径。经由会话文件服务解析，因此与其他写操作遵守同一套沙箱策略。</td>
+<td>optional</td>
+<td>Where to write the file. Resolved through the session filesystem service, so it obeys the same sandbox policy as every other write.</td>
 </tr>
 </tbody></table>
-<p>报告、方案、对比表——任何原本只能堆在对话里的内容，都可以变成一个能用浏览器打开、能直接发给同事的文件。</p>
+<p>Ask for a report, a plan, a comparison table — anything the model would otherwise dump into the transcript — and get a file you can open in a browser or mail to a colleague.</p>
 <blockquote>
-<p>把这份迁移方案渲染到 <code>~/Desktop/plan.html</code></p>
+<p>Render this migration plan to <code>~/Desktop/plan.html</code></p>
 </blockquote>
-<p>产物是<strong>自包含</strong>的：样式内嵌，不加载任何外部样式表、字体、脚本或图片。从磁盘打开、从 U 盘打开、在完全断网的机器上打开，效果都一样，并且自动跟随阅读者的深色模式。它不会向外发起任何请求，因为根本没有可发起的目标。</p>
-<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/export.png" alt="导出的页面直接从磁盘打开——单文件，不联网"></p>
-<p>如果 <code>save_path</code> 被沙箱拒绝，工具仍会连同错误信息一起返回 HTML 正文，不会因为一个权限问题就把成果丢掉。</p>
-<h3>抽屉</h3>
+<p>The output is <strong>standalone</strong>: styles are embedded, there is no stylesheet, font, script, or image loaded from anywhere. It opens from disk, from a USB stick, or on an airgapped machine and looks the same. It follows the reader&#39;s dark mode. Nothing phones home, because there is nothing to phone home to.</p>
+<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/export.png" alt="An exported page opened straight from disk — one file, no network"></p>
+<p>If <code>save_path</code> is refused by the sandbox, the tool still returns the HTML along with the error, so the work is never lost to a permissions problem.</p>
+<h3>The drawer</h3>
 <table>
 <thead>
 <tr>
@@ -267,86 +267,86 @@ dsh --profile &lt;profile&gt;
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>原地浏览</strong></td>
-<td>从当前工作目录打开。点文件夹进入，<strong>↑</strong> 返回上级。不弹系统文件对话框。</td>
+<td><strong>Browse in place</strong></td>
+<td>Opens on your working directory. Click a folder to descend, <strong>↑</strong> to go back. No system file dialog.</td>
 </tr>
 <tr>
-<td><strong>点开即渲染</strong></td>
-<td>标题、粗体/斜体/删除线、行内代码、围栏代码块、引用、有序/无序/任务列表、表格、链接、图片、分隔线。</td>
+<td><strong>Render on click</strong></td>
+<td>Headings, bold/italic/strikethrough, inline code, fenced code, blockquotes, ordered/unordered/task lists, tables, links, images, rules.</td>
 </tr>
 <tr>
-<td><strong>编辑</strong></td>
-<td>切换到纯文本框改一行或记点东西，再切回渲染视图。</td>
+<td><strong>Edit</strong></td>
+<td>Toggle to a plain textarea to scratch a note or fix a line, then toggle back.</td>
 </tr>
 <tr>
-<td><strong>导出</strong></td>
-<td>在源文件旁写出一份自包含 HTML —— 与 <code>md_html_render</code> 产出的是同一份文档。</td>
+<td><strong>Export</strong></td>
+<td>Writes a standalone HTML page next to the source — the same document <code>md_html_render</code> produces.</td>
 </tr>
 <tr>
-<td><strong>主题自适应</strong></td>
-<td>读取 harness 主题变量，明暗主题都无需额外配置。</td>
+<td><strong>Theme-aware</strong></td>
+<td>Reads the harness theme variables, so it matches light and dark without configuration.</td>
 </tr>
 </tbody></table>
-<h3>为什么还要再写一个 Markdown 插件</h3>
-<p>三件这个插件坚持不做的事：</p>
+<h3>Why another Markdown plugin</h3>
+<p>Three things this one does not do:</p>
 <ul>
-<li><strong>零运行时依赖。</strong> 客户端半边以纯脚本方式加载、不经打包器，因此 <code>marked</code>、<code>markdown-it</code> 这类库根本用不了。渲染器是约 150 行手写 JavaScript，你要审计的依赖树就是这一个文件。</li>
-<li><strong>不开第二条通往磁盘的路。</strong> 所有读写都走 harness 的 <code>fs</code> 服务，因此插件直接继承会话已有的沙箱策略，绝不自行开辟文件访问通道。抽屉的 <code>readFile</code> 会拒绝 <code>.md</code>、<code>.markdown</code>、<code>.mdx</code>、<code>.txt</code> 以外的一切。</li>
-<li><strong>不执行任何原始 HTML。</strong> 文档文本在任何行内语法处理之前就已全部转义；非 <code>http(s):</code>、<code>#</code>、<code>/</code>、<code>mailto:</code> 的链接目标一律折叠为 <code>#</code>。含 <code>&lt;script&gt;</code> 或 <code>javascript:</code> 链接的文档只会渲染成字面字符。</li>
+<li><strong>No runtime dependencies.</strong> The client half loads as a plain script with no bundler, so <code>marked</code> and <code>markdown-it</code> are not available to it. The renderer is ~150 lines of hand-written JavaScript. The dependency tree you audit is one file.</li>
+<li><strong>No second path to your disk.</strong> Every read and write goes through the harness <code>fs</code> service, so the plugin inherits whatever sandbox policy the session already runs under. It never opens its own filesystem access. The drawer&#39;s <code>readFile</code> refuses anything that is not <code>.md</code>, <code>.markdown</code>, <code>.mdx</code>, or <code>.txt</code>.</li>
+<li><strong>No raw HTML execution.</strong> Every scrap of document text is HTML-escaped before any inline syntax runs, and link targets that are not <code>http(s):</code>, <code>#</code>, <code>/</code>, or <code>mailto:</code> collapse to <code>#</code>. A document containing <code>&lt;script&gt;</code> or a <code>javascript:</code> link renders as literal characters.</li>
 </ul>
-<h3>工作原理</h3>
-<pre><code>                        lib/render.js          ← 唯一的渲染器
+<h3>How it works</h3>
+<pre><code>                        lib/render.js          ← the only renderer
                        ╱             ╲
-   md_html_render  ◀──╯               ╰──▶  导出按钮
-   （宿主端，可无界面）                        （客户端，浏览器内）
+   md_html_render  ◀──╯               ╰──▶  Export button
+   (host, headless)                          (client, in-browser)
           │                                        │
           ╰──────────▶  ctx.fs  ◀──────────────────╯
-                     所有读写都走这里
+                   every read and write
 </code></pre>
-<p>只有 <code>fs</code> 是硬依赖。工具注册表和客户端连接都通过 <code>ctx.inject</code> 按需获取，因此插件在 headless、在网页界面、或两者同时存在的情况下都能运行，并自动退化到当前 profile 实际具备的那个入口，而不是直接加载失败。</p>
-<h3>兼容性</h3>
+<p>Only <code>fs</code> is a hard requirement. The tool registry and the client connection are picked up opportunistically through <code>ctx.inject</code>, so the plugin runs headless, in the GUI, or in both, and degrades to whichever surface the profile actually has instead of failing to load.</p>
+<h3>Compatibility</h3>
 <table>
 <thead>
 <tr>
-<th>Profile 形态</th>
-<th>你会得到</th>
+<th>Profile</th>
+<th>What you get</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Headless / 命令行</td>
+<td>Headless / CLI</td>
 <td><code>md_html_render</code></td>
 </tr>
 <tr>
-<td>网页界面</td>
-<td><code>md_html_render</code> <strong>加上</strong> MD 抽屉</td>
+<td>Web GUI</td>
+<td><code>md_html_render</code> <strong>and</strong> the MD drawer</td>
 </tr>
 <tr>
-<td>无 <code>fs</code> 服务</td>
-<td>打印一条警告并保持惰性，而不是半加载</td>
+<td>No <code>fs</code> service</td>
+<td>Logs a warning and stays inert rather than half-loading</td>
 </tr>
 </tbody></table>
-<p>需要 Node <code>^22.19.0 || &gt;=24.0.0</code>。</p>
-<h3>测试</h3>
+<p>Requires Node <code>^22.19.0 || &gt;=24.0.0</code>.</p>
+<h3>Tests</h3>
 <pre><code class="language-sh">npm test
 </code></pre>
-<p>四套真实执行的测试，不对被测对象打桩：</p>
+<p>Four executing suites, no mocks of the thing under test:</p>
 <ul>
-<li><strong><code>tests/render.test.cjs</code></strong> 从浏览器 bundle 中把客户端渲染器抽出来实际运行。</li>
-<li><strong><code>tests/host.test.mjs</code></strong> 用同一套用例集跑宿主端渲染器，<strong>断言两者输出完全一致</strong>（正是这种漂移，导致此前出现了两个互相竞争的 Markdown 插件，后来才合并），再用桩 context 驱动 <code>apply()</code>，检查工具形态、RPC 各端点，以及沙箱拒写时的兜底路径。</li>
-<li><strong><code>tests/client.test.mjs</code></strong> 覆盖抽屉的路径渲染，包括下文提到的 bidi 处理。</li>
-<li><strong><code>tests/boot.test.mjs</code></strong> 启动一个真实的 harness <code>Context</code>，加载 harness 自己的文件服务，按 profile 的方式装载本包，然后向<strong>真实的</strong>工具注册表索取 <code>md_html_render</code> 并对真实磁盘执行一次。</li>
+<li><strong><code>tests/render.test.cjs</code></strong> extracts the client renderer from the browser bundle and runs it.</li>
+<li><strong><code>tests/host.test.mjs</code></strong> runs the host renderer on the same corpus, <strong>asserts the two agree exactly</strong> (a drift between them is what produced two competing Markdown plugins before they were merged), then drives <code>apply()</code> against a stub context to check the tool shape, the RPC endpoints, and the sandbox-refusal path.</li>
+<li><strong><code>tests/client.test.mjs</code></strong> covers the drawer&#39;s path rendering, including the bidi guard described below.</li>
+<li><strong><code>tests/boot.test.mjs</code></strong> boots a real harness <code>Context</code> with the harness&#39;s own filesystem service, loads this package the way a profile does, then asks the <strong>real</strong> tool registry for <code>md_html_render</code> and executes it against the real disk.</li>
 </ul>
-<p>最后这套的存在理由是：DSH 插件完全可能顺利 import、跑过全部单元测试，却在 <code>Context</code> 真正启动时什么都没注册——而且是静默的，不报错。单元测试看不见这件事。</p>
-<p>它需要 harness 依赖，所以缺依赖时是&quot;跳过&quot;而不是&quot;失败&quot;。这恰恰让跳过这条路径变得危险：集成那一半根本没跑的时候，绿勾什么也证明不了。因此 harness 依赖被放在普通的 <strong><code>devDependencies</code></strong> 里，而不是可选 peer——npm 不会自动安装可选 peer，用那种方式声明，正好会让这套测试在 CI 里被永久跳过。从全新 clone 执行 <code>npm install &amp;&amp; npm test</code> 就会真实跑到。<strong>如果日志里写的是 <code>SKIPPED</code>，这次运行就应当视为未经验证。</strong></p>
-<p>XSS 相关断言检查的是一条结构性不变式——任何生成的标签都不会出现未闭合的属性或 <code>on*=</code> 事件处理器——并且测试里还包含&quot;检查器本身遇到真正危险的标记时会变红&quot;的元断言，避免一条安全断言悄悄退化成永远通过的摆设。</p>
-<h3>附注</h3>
-<p><strong>路径栏开头的 <code>~/</code>。</strong> 面包屑用了 <code>direction: rtl</code>，这样当路径长过栏宽时，<code>text-overflow: ellipsis</code> 会从<strong>开头</strong>截断，保留最深的那一级目录——也就是你真正在看的那部分。副作用是：开头那串双向中性字符（<code>~/</code> 正是如此）会被重排到末尾，<code>~/projects/app</code> 显示成了 <code>projects/app/~</code>。解法是在开头加一个 U+200E（从左至右标记），它把这串字符锚定为 LTR，同时不影响从头截断的行为。<code>unicode-bidi: plaintext</code> 同样能修好顺序，但会把省略号翻回尾部，丢掉当初用 <code>rtl</code> 想要的那个特性；而把标记加在<strong>末尾</strong>则完全没有效果。这一行为由 <code>tests/client.test.mjs</code> 固定。</p>
-<p><strong>截图是生成的，不是摆拍的。</strong> <code>node docs/screenshot.mjs --shoot</code> 会用真实渲染器重建两张图，其中抽屉的 CSS 是从 <code>lib/client.js</code> 里切出来的而非重新誊写，因此不会和插件实际画出来的样子发生漂移。</p>
-<h3>许可</h3>
+<p>That last one exists because a DSH plugin can import cleanly, pass every unit test, and still register nothing when a <code>Context</code> actually boots it — silently, with no error. Unit tests cannot see that.</p>
+<p>It needs the harness packages, so it is written to skip rather than fail when they are missing. That makes the skip path dangerous: a green tick proves nothing if the integration half never ran. The harness packages are therefore ordinary <strong><code>devDependencies</code></strong>, not optional peers — npm does not auto-install optional peers, so declaring them that way is exactly what leaves this suite permanently skipped in CI. A plain <code>npm install &amp;&amp; npm test</code> from a fresh clone runs it for real. If the log says <code>SKIPPED</code>, treat the run as unverified.</p>
+<p>The XSS checks assert a structural invariant — no emitted tag ever carries an unterminated attribute or an <code>on*=</code> handler — and the suite includes checks that the checker itself goes red on genuinely unsafe markup, so a security assertion cannot silently rot into one that always passes.</p>
+<h3>Notes</h3>
+<p><strong>The <code>~/</code> in the path bar.</strong> The breadcrumb is <code>direction: rtl</code> so that when a path outgrows the bar, <code>text-overflow: ellipsis</code> trims it from the <em>front</em> and keeps the deepest directory — the part you are actually looking at — visible. The side effect is that a leading run of bidi-neutral characters, which is precisely what <code>~/</code> is, gets reordered to the far end: <code>~/projects/app</code> displayed as <code>projects/app/~</code>. The fix is a single leading U+200E (LEFT-TO-RIGHT MARK), which anchors the run without disturbing the front-truncation. <code>unicode-bidi: plaintext</code> also fixes the order but flips the ellipsis back to the tail, losing the property the <code>rtl</code> was there for; a <em>trailing</em> mark does nothing at all. <code>tests/client.test.mjs</code> pins this.</p>
+<p><strong>The screenshots are generated, not staged.</strong> <code>node docs/screenshot.mjs --shoot</code> rebuilds both images from the real renderer, with the drawer CSS sliced out of <code>lib/client.js</code> rather than retyped, so they cannot drift from what the plugin actually draws.</p>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/LeslieWylie/dsh-md-preview/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/LeslieWylie/dsh-md-preview/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
@@ -360,11 +360,11 @@ dsh --profile &lt;profile&gt;
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1252</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 317</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1254</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 318</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
+      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
-      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/tools/">查看整个分类 →</a>
