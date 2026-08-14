@@ -732,6 +732,42 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-file-memory",
+   "owner": "ICCuse",
+   "url": "https://github.com/ICCuse/dsh-file-memory",
+   "category": "memory",
+   "description": {
+    "en": "File-backed working memory: memorize/recall key premises verbatim in a session notes file so they survive context compaction losslessly.",
+    "zh": "文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。"
+   },
+   "install": "dsh plugin --profile web add github:ICCuse/dsh-file-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-knowledge",
+   "owner": "ICCuse",
+   "url": "https://github.com/ICCuse/dsh-knowledge",
+   "category": "memory",
+   "description": {
+    "en": "Bridge into a global Markdown knowledge base shared with the Codex kb.cmd CLI: kb_add/kb_search/kb_show/kb_timeline tools with byte-compatible frontmatter.",
+    "zh": "全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\\knowledge（格式逐字节兼容）。"
+   },
+   "install": "dsh plugin --profile web add github:ICCuse/dsh-knowledge",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-premise-guard",
+   "owner": "ICCuse",
+   "url": "https://github.com/ICCuse/dsh-premise-guard",
+   "category": "memory",
+   "description": {
+    "en": "Post-compaction premise-drift guard: injects a one-shot notice when a compaction summary drops a critical literal anchor.",
+    "zh": "压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。"
+   },
+   "install": "dsh plugin --profile web add github:ICCuse/dsh-premise-guard",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-bash-terminal",
    "owner": "MAXeaglet",
    "url": "https://github.com/MAXeaglet/dsh-bash-terminal",
@@ -1749,42 +1785,6 @@
     "zh": "强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。"
    },
    "install": "dsh plugin --profile web add github:ICCuse/dsh-pain-point-check",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-file-memory",
-   "owner": "ICCuse",
-   "url": "https://github.com/ICCuse/dsh-file-memory",
-   "category": "dev",
-   "description": {
-    "en": "File-backed working memory: memorize/recall key premises verbatim in a session notes file so they survive context compaction losslessly.",
-    "zh": "文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。"
-   },
-   "install": "dsh plugin --profile web add github:ICCuse/dsh-file-memory",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-knowledge",
-   "owner": "ICCuse",
-   "url": "https://github.com/ICCuse/dsh-knowledge",
-   "category": "dev",
-   "description": {
-    "en": "Bridge into a global Markdown knowledge base shared with the Codex kb.cmd CLI: kb_add/kb_search/kb_show/kb_timeline tools with byte-compatible frontmatter.",
-    "zh": "全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\\knowledge（格式逐字节兼容）。"
-   },
-   "install": "dsh plugin --profile web add github:ICCuse/dsh-knowledge",
-   "added": "2026-08-14"
-  },
-  {
-   "name": "dsh-premise-guard",
-   "owner": "ICCuse",
-   "url": "https://github.com/ICCuse/dsh-premise-guard",
-   "category": "dev",
-   "description": {
-    "en": "Post-compaction premise-drift guard: injects a one-shot notice when a compaction summary drops a critical literal anchor.",
-    "zh": "压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。"
-   },
-   "install": "dsh plugin --profile web add github:ICCuse/dsh-premise-guard",
    "added": "2026-08-14"
   },
   {

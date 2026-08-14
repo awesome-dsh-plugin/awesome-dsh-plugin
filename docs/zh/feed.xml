@@ -188,31 +188,31 @@
     <summary>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</summary>
   </entry>
   <entry>
+    <title>dsh-file-memory</title>
+    <id>https://github.com/ICCuse/dsh-file-memory</id>
+    <link href="https://github.com/ICCuse/dsh-file-memory"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。</summary>
+  </entry>
+  <entry>
+    <title>dsh-knowledge</title>
+    <id>https://github.com/ICCuse/dsh-knowledge</id>
+    <link href="https://github.com/ICCuse/dsh-knowledge"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\knowledge（格式逐字节兼容）。</summary>
+  </entry>
+  <entry>
+    <title>dsh-premise-guard</title>
+    <id>https://github.com/ICCuse/dsh-premise-guard</id>
+    <link href="https://github.com/ICCuse/dsh-premise-guard"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。</summary>
+  </entry>
+  <entry>
     <title>dsh-bash-terminal</title>
     <id>https://github.com/MAXeaglet/dsh-bash-terminal</id>
     <link href="https://github.com/MAXeaglet/dsh-bash-terminal"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。</summary>
-  </entry>
-  <entry>
-    <title>dsh-cowork</title>
-    <id>https://github.com/Jesse-njx/dsh-cowork</id>
-    <link href="https://github.com/Jesse-njx/dsh-cowork"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>doc_read/doc_write：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。</summary>
-  </entry>
-  <entry>
-    <title>dsh-skillport</title>
-    <id>https://github.com/Jesse-njx/dsh-skillport</id>
-    <link href="https://github.com/Jesse-njx/dsh-skillport"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。</summary>
-  </entry>
-  <entry>
-    <title>noatmark-dsh-plugin</title>
-    <id>https://github.com/ylwl1997/noatmark-dsh-plugin</id>
-    <link href="https://github.com/ylwl1997/noatmark-dsh-plugin"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。</summary>
   </entry>
 </feed>
