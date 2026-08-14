@@ -52,6 +52,12 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
 
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
 
+### Themes & skins / 主题与皮肤
+
+Entries under the **Themes & Appearance / 主题与外观** category automatically appear in the [dsh-market](https://github.com/dsh-market/dsh-market) plugin's dedicated **Themes tab**, where users install, switch, and uninstall them with one click — so put your theme/skin there, not under UI Enhancements. Monorepo subpackages are supported: link the subdirectory directly, e.g. `https://github.com/owner/repo/tree/main/packages/my-theme`.
+
+**主题与外观**分类下的条目会自动进入 [dsh-market](https://github.com/dsh-market/dsh-market) 插件市场的**主题 Tab**，用户可一键安装、切换、卸载——主题/皮肤类插件请务必放这个分类，不要放 UI 增强。支持 monorepo 子包：直接链接子目录，如 `https://github.com/owner/repo/tree/main/packages/my-theme`。
+
 ## Removing or updating / 移除与更新
 
 PRs fixing descriptions, moving entries between categories, or removing dead projects are equally welcome. / 修正描述、调整分类、移除失效项目的 PR 同样欢迎。
