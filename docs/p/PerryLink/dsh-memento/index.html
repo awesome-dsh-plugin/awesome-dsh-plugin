@@ -245,7 +245,7 @@ dsh --profile web --dump-config               # expect a &quot;# == dsh-memento&
 <td>Model-facing writes/reads, budget-headed frozen snapshot, two-part recall, user-side command, browser drawer</td>
 </tr>
 </tbody></table>
-<p><strong>Two tracks × two layers.</strong> <code>user</code> track = facts about the user (preferences, communication style, landmines); <code>agent</code> track = environment facts, project conventions, lessons learned. Each track has <code>user-global</code> (cross-workspace) and <code>workspace</code> (per-session cwd) layers — Codex-style merged layering, not Hermes-style global-only.</p>
+<p><strong>Two tracks × two layers × per-agent key.</strong> <code>user</code> track = facts about the user (preferences, communication style, landmines); <code>agent</code> track = environment facts, project conventions, lessons learned. Each track has <code>user-global</code> (cross-workspace) and <code>workspace</code> (per-session cwd) layers — Codex-style merged layering, not Hermes-style global-only. A third dimension isolates entries by the session&#39;s <code>agentPreset</code> (per-agent scope); entries without a preset stay in the shared layer visible to everyone.</p>
 <p><strong>Frozen snapshots.</strong> The snapshot is rendered once per session at first prompt assembly (synchronous SQLite read + per-session cache) and never changes mid-session — prefix-cache stable by construction. Session-internal changes persist to disk + audit only.</p>
 <pre><code>Consumer: memory tool          Consumer: frozen snapshot (systemPrompt section, order -50)
    add/replace/remove/query       per-session freeze, budget-headed
@@ -259,7 +259,7 @@ Provider: lib/store.mjs — node:sqlite (WAL, 0600), entries + audit tables, uni
 </code></pre>
 <h3>🧰 Install &amp; uninstall</h3>
 <pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add ./dsh-memento        # local checkout (no build step)
-dsh plugin --profile &lt;name&gt; add dsh-memento          # npm, once published
+dsh plugin --profile &lt;name&gt; add git+https://github.com/PerryLink/dsh-memento.git   # GitHub install; npm after first release
 dsh plugin --profile &lt;name&gt; remove dsh-memento       # uninstall: DB + session logs are kept
 </code></pre>
 <p>After uninstall the memory database and the session logs that recorded memory activity remain; old sessions stay loadable.</p>
@@ -299,6 +299,16 @@ dsh plugin --profile &lt;name&gt; remove dsh-memento       # uninstall: DB + ses
 <td><code>&#39;ask&#39;</code> = user approval; <code>&#39;auto&#39;</code> = allow through (approval source recorded); <code>&#39;off&#39;</code> = reject. Model-invisible</td>
 </tr>
 <tr>
+<td><code>writePolicies</code></td>
+<td><code>{}</code></td>
+<td>per-track/scope or per-source overrides: keys <code>user/workspace</code>, <code>agent/user-global</code>, <code>source:claude</code>, … → <code>ask</code>/<code>auto</code>/<code>off</code>; unmatched falls back to <code>writePolicy</code></td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td><code>&#39;en&#39;</code></td>
+<td>model-visible text and command output language: <code>&#39;en&#39;</code> (default) or <code>&#39;zh&#39;</code> — tool descriptions, frozen snapshot, <code>/memory</code> command, and web panel all follow it</td>
+</tr>
+<tr>
 <td><code>snapshotOrder</code></td>
 <td><code>-50</code></td>
 <td>snapshot section order: after harness identity (<code>-100</code>), before persona (<code>0</code>)</td>
@@ -306,16 +316,80 @@ dsh plugin --profile &lt;name&gt; remove dsh-memento       # uninstall: DB + ses
 <tr>
 <td><code>maxEntriesPerQuery</code></td>
 <td><code>20</code></td>
-<td>per-query result cap</td>
+<td>default per-query result cap (explicit <code>limit</code> allowed, hard-capped at 1000)</td>
+</tr>
+<tr>
+<td><code>commandListLimit</code></td>
+<td><code>50</code></td>
+<td>entries rendered per <code>/memory list</code> / <code>query</code> command</td>
+</tr>
+<tr>
+<td><code>commandAuditLimit</code></td>
+<td><code>10</code></td>
+<td>audit rows rendered per <code>/memory audit</code> command</td>
+</tr>
+<tr>
+<td><code>recall.historyLimitDefault</code> / <code>recall.snippetCap</code> / <code>recall.snippetChars</code> / <code>recall.windowDays</code></td>
+<td><code>8</code> / <code>5</code> / <code>300</code> / <code>30</code></td>
+<td><code>memory_recall</code> history defaults: sessions scanned, snippets per session, snippet chars, recency window in days</td>
+</tr>
+<tr>
+<td><code>panelEntriesLimit</code></td>
+<td><code>200</code></td>
+<td>web panel entries page size (and clamp)</td>
+</tr>
+<tr>
+<td><code>panelAuditLimit</code></td>
+<td><code>20</code></td>
+<td>web panel audit rows by default (ceiling 200)</td>
+</tr>
+<tr>
+<td><code>auditRetentionDays</code></td>
+<td><code>0</code></td>
+<td>audit retention: 0 = keep forever, &gt;0 = prune rows older than N days at store open</td>
+</tr>
+<tr>
+<td><code>proposals.enabled</code> / <code>proposals.maxChars</code> / <code>proposals.maxPending</code></td>
+<td><code>true</code> / <code>2000</code> / <code>8</code></td>
+<td>auto-capture: pending memory proposal after each successful compaction (truncated, one per session); disable or tune caps</td>
 </tr>
 </tbody></table>
 <h3>🛠 Tools &amp; surfaces</h3>
 <ul>
-<li><strong><code>memory</code></strong> — add/replace/remove/query with Save/Skip guidance embedded in the description (save user preferences, corrections, environment facts, conventions, lessons; skip trivia, re-derivable facts, dumps, one-off paths). Writes ride the approval gate; reads are free; replace/remove target a <strong>unique substring</strong> (ambiguous matches fail with the candidate list).</li>
+<li><strong><code>memory</code></strong> — add/replace/remove/consolidate/query with Save/Skip guidance embedded in the description (save user preferences, corrections, environment facts, conventions, lessons; skip trivia, re-derivable facts, dumps, one-off paths). Writes ride the approval gate; reads are free; replace/remove target a <strong>unique substring</strong> (ambiguous matches fail with the candidate list); consolidate merges 1..20 entries into one with a single approval and one atomic write.</li>
 <li><strong><code>memory_recall</code></strong> — two-part recall: bounded memory matches <strong>plus</strong> recent session-history matches via <code>ctx.sessionQuery</code> (degrades gracefully to memory-only where the service is absent).</li>
-<li><strong><code>/memory</code></strong> — user-triggered command (not a model turn): <code>list</code> · <code>query &lt;word&gt;</code> · <code>add [--track=user|agent] [--scope=user-global|workspace] &lt;text&gt;</code> · <code>remove [flags] &lt;substring&gt;</code> · <code>budgets</code> · <code>audit</code>. Command writes ride the same waterfall + policy; audit lands in the plugin audit table + <code>command/done</code>.</li>
+<li><strong><code>/memory</code></strong> — user-triggered command (not a model turn): <code>list</code> · <code>query &lt;word&gt;</code> · <code>add [--track=user|agent] [--scope=user-global|workspace] &lt;text&gt;</code> · <code>remove [flags] &lt;substring&gt;</code> · <code>consolidate [flags] &lt;substring...&gt; =&gt; &lt;text&gt;</code> · <code>proposals [approve|dismiss &lt;id&gt;]</code> · <code>budgets</code> · <code>audit</code> · <code>export</code>. Command writes ride the same waterfall + policy; audit lands in the plugin audit table + <code>command/done</code>. <code>export</code> is read-only and dumps all entries + budgets as one JSON document (backup / migration).</li>
+<li><strong>Auto-capture proposals</strong> — after a successful session compaction, the summary lands as a pending memory proposal (<code>agent/workspace</code>); approving writes it through the approval gate, dismissing drops it. Pending proposals appear in the frozen snapshot and the panel.</li>
 <li><strong>Web panel</strong> — zero-build <code>dsh.client</code> drawer: browse entries by track/layer, search, budget bars, audit tail. Read-only by design: writes and approval happen through the <code>memory</code> tool and the built-in approval UI.</li>
 </ul>
+<h3>🎓 What we learned from the terminal memories</h3>
+<p>dsh-memento is not a port of Claude Code, Codex, or Hermes — but its design deliberately absorbed the parts each of them got right, and refused the parts that hurt:</p>
+<table>
+<thead>
+<tr>
+<th>Terminal memory</th>
+<th>What it got right</th>
+<th>What dsh-memento adopted</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Claude Code</strong> — <code>CLAUDE.md</code></td>
+<td>hierarchical <strong>plain-text memory files</strong> (user-level → project-level) that are human-readable, human-editable, and merged automatically into every session — memory you can read and fix yourself</td>
+<td>plain-text entries; <code>user-global</code> / <code>workspace</code> layers merged per session; a store you can browse, <code>export</code>, and audit — transparency as a feature</td>
+</tr>
+<tr>
+<td><strong>Codex</strong> — <code>AGENTS.md</code></td>
+<td><strong>per-directory scoped instructions</strong> auto-discovered and injected with zero model friction — locality beats volume, no tool call needed to &quot;load&quot; memory</td>
+<td><code>workspace</code> layer keyed by the session&#39;s cwd (Windows case-insensitive); the frozen snapshot is injected automatically at session start</td>
+</tr>
+<tr>
+<td><strong>Hermes</strong> — <code>memory.md</code></td>
+<td><strong>proactive memory saves</strong> (save/update/delete) and, in <a href="https://github.com/NousResearch/hermes-agent/issues/48181">issue #48181</a>, the security lesson that a gate enforced only in the tool layer is bypassable by late tool injection — enforce it where every write path meets</td>
+<td>the <code>memory</code> tool with explicit Save/Skip guidance + approval-gated auto-capture proposals; the approval gate lives <strong>inside</strong> <code>ctx.memory</code>&#39;s write methods, not in the tool layer</td>
+</tr>
+</tbody></table>
+<p>Sources: <a href="https://code.claude.com/docs/en/memory">Claude Code memory</a> · <a href="https://developers.openai.com/codex/cli/agents-md">Codex AGENTS.md</a> · <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/memory.md">Hermes memory</a> · <a href="https://github.com/NousResearch/hermes-agent/issues/48181">Hermes #48181</a>.</p>
+<p>And the parts we deliberately refused: hidden auto-summarization into model-private state (compaction summaries here become <strong>pending proposals</strong> that wait for a human approve/dismiss), warehouse/vector-store ambitions, and any write that lacks a human-visible approval or audit trail. Also adopted: Hermes&#39;s documented caveat that two processes sharing one home directory write the same memory file — see Security boundaries.</p>
 <h3>🆚 How it&#39;s different</h3>
 <table>
 <thead>
@@ -373,11 +447,14 @@ dsh plugin --profile &lt;name&gt; remove dsh-memento       # uninstall: DB + ses
 <ul>
 <li><strong>Session events vocabulary is declared, not yet emitted (rc.6).</strong> <code>memory/added|updated|removed|recalled|snapshot</code> are merge-declared in <code>types.d.ts</code>, but rc.6 has no registration surface for out-of-repo event types (unregistered appends would make persisted sessions unloadable). Audit completeness comes from the approval pair + the audit table; emission turns on automatically once a harness build registers the types. See <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a> decision 4.</li>
 <li><strong><code>ask</code> policy needs an answerer.</strong> With no UI/ACP answerer composed, writes fail closed (<code>unavailable</code>) — by design, the approval seam&#39;s fail-closed stance.</li>
-<li><strong>No per-agent scope yet.</strong> V1 layers are <code>user-global</code> and <code>workspace</code> only.</li>
+<li><strong>No FTS5 indexing.</strong> Substring search runs on case-insensitive <code>instr</code> (correct for CJK); recall ranking uses per-entry hit counts. FTS5&#39;s trigram tokenizer cannot index single-character CJK tokens, so it is not used — see <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a> decision 10.</li>
 </ul>
 <h3>🧪 Development</h3>
 <pre><code class="language-sh">npm install
-npm test    # node --test: 66 tests — budget, unique-substring, gate policy, store, snapshot, mock-ctx integration (S2/S3 invariants), V2 command/recall/panel
+npm test                # node --test: 103 tests — budget, unique-substring, gate policy, store, snapshot, mock-ctx integration (S2/S3 invariants), V2 command/recall/panel
+npm run typecheck       # tsc --checkJs gate over index.mjs / lib / scripts
+npm run check:coverage  # line-coverage gate: lib ≥90%, index.mjs ≥85%, all files ≥90%
+npm run check:readmes   # five-language README consistency gate
 </code></pre>
 <p><code>lib/</code> is zero-DSH-dependency (node: builtins only); DSH imports exist only in <code>index.mjs</code>. Full discipline in <a href="https://github.com/PerryLink/dsh-memento/blob/main/AGENTS.md">AGENTS.md</a>; design decisions in <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a>.</p>
 <h3>🏷 Topics</h3>
@@ -401,7 +478,7 @@ npm test    # node --test: 66 tests — budget, unique-substring, gate policy, s
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/LoserFox/distill/" tabindex="-1"><p>Automatic conversation distillation: background subagent reflection + skill create/update.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 12</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
       <li><h3><a href="/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/p/modusensus/dsh-mneme/" tabindex="-1"><p>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</p></a></li>
       <li><h3><a href="/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</p></a></li>
       <li><h3><a href="/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</p></a></li>

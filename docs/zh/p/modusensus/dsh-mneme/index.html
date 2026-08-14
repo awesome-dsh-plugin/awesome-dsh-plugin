@@ -190,7 +190,7 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p><strong>把记忆主权还给人的记忆插件</strong> —— 记忆不再是黑盒,而是你读得懂、改得动的 Markdown。</p>
+<p><strong>记忆主权，归还于你</strong> —— 记忆不再是黑盒，而是你读得懂、改得动的 Markdown。</p>
 </blockquote>
 <p><code>dsh-mneme</code> 是一个 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness (DSH)</a> 插件，为 Agent 提供持久的跨会话记忆能力。<strong>Mneme</strong>（Μνήμη）——希腊记忆女神 Mnemosyne 之名，掌管记忆与梦境，正如 autoDream 在后台巩固记忆。</p>
 <p>不同于把记忆锁进数据库的插件，Mneme 把记忆<strong>写成你读得懂的 Markdown</strong>——你始终握着记忆的主权：看得见、改得动、删得掉，记忆这回事不该让 Agent 一个人说了算。</p>
@@ -235,15 +235,19 @@ npm run sync      # src → lib 同步（发布时自动执行）
 <td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/README.md">dsh-mneme/README.md</a></td>
 </tr>
 <tr>
-<td>记忆库设计</td>
-<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-memory-design.md">docs/superpowers/specs/2026-08-13-dsh-memory-design.md</a></td>
+<td>插件设计</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-mneme-design.md">docs/superpowers/specs/2026-08-13-dsh-mneme-design.md</a></td>
 </tr>
 <tr>
 <td>autoDream 设计</td>
-<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-memory-autodream-design.md">docs/superpowers/specs/2026-08-13-dsh-memory-autodream-design.md</a></td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-mneme-autodream-design.md">docs/superpowers/specs/2026-08-13-dsh-mneme-autodream-design.md</a></td>
 </tr>
 <tr>
-<td>实施计划</td>
+<td>实施计划（核心插件）</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/plans/2026-08-13-dsh-memory.md">docs/superpowers/plans/2026-08-13-dsh-memory.md</a></td>
+</tr>
+<tr>
+<td>实施计划（autoDream）</td>
 <td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md">docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md</a></td>
 </tr>
 </tbody></table>
@@ -266,7 +270,7 @@ npm run sync      # src → lib 同步（发布时自动执行）
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/LoserFox/distill/" tabindex="-1"><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 12</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
       <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></a></li>
       <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></a></li>
       <li><h3><a href="/zh/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/PerryLink/dsh-memento/" tabindex="-1"><p>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</p></a></li>

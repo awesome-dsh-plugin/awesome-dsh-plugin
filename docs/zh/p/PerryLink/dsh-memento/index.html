@@ -245,7 +245,7 @@ dsh --profile web --dump-config               # 应看到 &quot;# == dsh-memento
 <td>模型读写、带用量头的冻结快照、两段式召回、用户侧命令、浏览器抽屉</td>
 </tr>
 </tbody></table>
-<p><strong>双轨 × 双层。</strong> <code>user</code> 轨 = 用户画像（偏好、沟通风格、雷区）；<code>agent</code> 轨 = 环境事实、项目约定、教训。每轨分 <code>user-global</code>（跨工作区）与 <code>workspace</code>（按会话 cwd）两层——学 Codex 的合并分层，不学 Hermes 的纯全局。</p>
+<p><strong>双轨 × 双层 × per-agent 键。</strong> <code>user</code> 轨 = 用户画像（偏好、沟通风格、雷区）；<code>agent</code> 轨 = 环境事实、项目约定、教训。每轨分 <code>user-global</code>（跨工作区）与 <code>workspace</code>（按会话 cwd）两层——学 Codex 的合并分层，不学 Hermes 的纯全局。第三维按会话 <code>agentPreset</code> 隔离条目（per-agent 作用域）；无 preset 的条目留在人人可见的共享层。</p>
 <p><strong>冻结快照。</strong> 快照在会话首个 prompt 组装时渲染一次（SQLite 同步读 + 按会话缓存），会话内不再变化——前缀缓存天然稳定。会话内变更只落盘 + 落审计。</p>
 <pre><code>Consumer: memory 工具           Consumer: 冻结快照（systemPrompt 段，顺序 -50）
    add/replace/remove/query        按会话冻结，带用量头
@@ -259,7 +259,7 @@ Provider: lib/store.mjs —— node:sqlite（WAL，0600），条目表+审计表
 </code></pre>
 <h3>🧰 安装与卸载</h3>
 <pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add ./dsh-memento        # 本地 checkout（无构建步骤）
-dsh plugin --profile &lt;name&gt; add dsh-memento          # 发布到 npm 后
+dsh plugin --profile &lt;name&gt; add git+https://github.com/PerryLink/dsh-memento.git   # GitHub 安装；npm 首发后可用
 dsh plugin --profile &lt;name&gt; remove dsh-memento       # 卸载：库与会话日志保留
 </code></pre>
 <p>卸载后记忆库与记录过记忆活动的会话日志保留，旧会话仍可正常加载。</p>
@@ -299,6 +299,16 @@ dsh plugin --profile &lt;name&gt; remove dsh-memento       # 卸载：库与会�
 <td><code>&#39;ask&#39;</code>=用户审批；<code>&#39;auto&#39;</code>=放行但记录审批来源；<code>&#39;off&#39;</code>=拒绝。模型不可见</td>
 </tr>
 <tr>
+<td><code>writePolicies</code></td>
+<td><code>{}</code></td>
+<td>按 track/scope 或来源覆盖：键 <code>user/workspace</code>、<code>agent/user-global</code>、<code>source:claude</code> 等 → <code>ask</code>/<code>auto</code>/<code>off</code>；未命中回退 <code>writePolicy</code></td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td><code>&#39;en&#39;</code></td>
+<td>模型可见文案与命令输出语言：<code>&#39;en&#39;</code>（默认）或 <code>&#39;zh&#39;</code>——工具描述、冻结快照、<code>/memory</code> 命令、Web 面板全部跟随</td>
+</tr>
+<tr>
 <td><code>snapshotOrder</code></td>
 <td><code>-50</code></td>
 <td>快照段注入顺序：harness identity(<code>-100</code>) 之后、persona(<code>0</code>) 之前</td>
@@ -306,16 +316,80 @@ dsh plugin --profile &lt;name&gt; remove dsh-memento       # 卸载：库与会�
 <tr>
 <td><code>maxEntriesPerQuery</code></td>
 <td><code>20</code></td>
-<td>query 单次返回上限</td>
+<td>query 默认返回上限（显式 <code>limit</code> 可超出，硬钳 1000）</td>
+</tr>
+<tr>
+<td><code>commandListLimit</code></td>
+<td><code>50</code></td>
+<td><code>/memory list</code>/<code>query</code> 命令单次渲染条目上限</td>
+</tr>
+<tr>
+<td><code>commandAuditLimit</code></td>
+<td><code>10</code></td>
+<td><code>/memory audit</code> 命令单次渲染审计行上限</td>
+</tr>
+<tr>
+<td><code>recall.historyLimitDefault</code> / <code>recall.snippetCap</code> / <code>recall.snippetChars</code> / <code>recall.windowDays</code></td>
+<td><code>8</code> / <code>5</code> / <code>300</code> / <code>30</code></td>
+<td><code>memory_recall</code> 历史段默认值：扫描会话数 / 每会话片段数 / 片段字符数 / 回溯天数</td>
+</tr>
+<tr>
+<td><code>panelEntriesLimit</code></td>
+<td><code>200</code></td>
+<td>Web 面板条目页大小（兼钳制上限）</td>
+</tr>
+<tr>
+<td><code>panelAuditLimit</code></td>
+<td><code>20</code></td>
+<td>Web 面板审计默认条数（天花板 200）</td>
+</tr>
+<tr>
+<td><code>auditRetentionDays</code></td>
+<td><code>0</code></td>
+<td>审计保留天数：0 = 永久，&gt;0 = 打开库时裁剪更早的审计行</td>
+</tr>
+<tr>
+<td><code>proposals.enabled</code> / <code>proposals.maxChars</code> / <code>proposals.maxPending</code></td>
+<td><code>true</code> / <code>2000</code> / <code>8</code></td>
+<td>auto-capture：每次压缩成功后生成待审批记忆提案（截断、每会话一条）；可关闭或调上限</td>
 </tr>
 </tbody></table>
 <h3>🛠 工具与观察面</h3>
 <ul>
-<li><strong><code>memory</code></strong> —— add/replace/remove/query，工具描述内嵌 Save/Skip 行为指引（存用户偏好、纠正、环境事实、项目约定、教训；跳过琐碎事实、可再查的百科知识、大数据转储、一次性路径）。写走审批门，读免费；replace/remove 用<strong>唯一子串</strong>定位（歧义时报候选清单）。</li>
+<li><strong><code>memory</code></strong> —— add/replace/remove/consolidate/query，工具描述内嵌 Save/Skip 行为指引（存用户偏好、纠正、环境事实、项目约定、教训；跳过琐碎事实、可再查的百科知识、大数据转储、一次性路径）。写走审批门，读免费；replace/remove 用<strong>唯一子串</strong>定位（歧义时报候选清单）；consolidate 一次审批 + 一次原子写把 1..20 条整合为一条。</li>
 <li><strong><code>memory_recall</code></strong> —— 两段式召回：有界记忆匹配 <strong>+</strong> 经 <code>ctx.sessionQuery</code> 的近期会话历史匹配（服务缺失时优雅降级为纯记忆结果）。</li>
-<li><strong><code>/memory</code></strong> —— 用户触发命令（非模型回合）：<code>list</code> · <code>query &lt;词&gt;</code> · <code>add [--track=user|agent] [--scope=user-global|workspace] &lt;文本&gt;</code> · <code>remove [选项] &lt;子串&gt;</code> · <code>budgets</code> · <code>audit</code>。命令写走同一 waterfall 与策略；审计落插件审计表 + <code>command/done</code>。</li>
+<li><strong><code>/memory</code></strong> —— 用户触发命令（非模型回合）：<code>list</code> · <code>query &lt;词&gt;</code> · <code>add [--track=user|agent] [--scope=user-global|workspace] &lt;文本&gt;</code> · <code>remove [选项] &lt;子串&gt;</code> · <code>consolidate [选项] &lt;子串...&gt; =&gt; &lt;新文本&gt;</code> · <code>proposals [approve|dismiss &lt;id&gt;]</code> · <code>budgets</code> · <code>audit</code> · <code>export</code>。命令写走同一 waterfall 与策略；审计落插件审计表 + <code>command/done</code>。<code>export</code> 只读，把所有条目 + 预算导出为一份 JSON 文档（备份/迁移）。</li>
+<li><strong>Auto-capture 提案</strong> —— 会话压缩成功后，摘要落为待审批记忆提案（<code>agent/workspace</code>）；approve 经审批门写入记忆，dismiss 丢弃。待审批提案出现在冻结快照与面板中。</li>
 <li><strong>Web 面板</strong> —— 零构建 <code>dsh.client</code> 抽屉：按轨/层浏览条目、搜索、预算用量条、审计尾。设计上只读：写与审批走 <code>memory</code> 工具与内置审批 UI。</li>
 </ul>
+<h3>🎓 向终端记忆们学到的优点</h3>
+<p>dsh-memento 不是 Claude Code、Codex 或 Hermes 的移植版——但它的设计刻意吸收了这三家各自做对的部分，也刻意拒绝了它们吃过的亏：</p>
+<table>
+<thead>
+<tr>
+<th>终端记忆</th>
+<th>做对了什么</th>
+<th>dsh-memento 吸收了</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Claude Code</strong> —— <code>CLAUDE.md</code></td>
+<td>分层<strong>纯文本记忆文件</strong>（用户级 → 项目级），人可读、人可改，每个会话自动合并——你能自己读、自己修的记忆</td>
+<td>纯文本条目；每会话合并 <code>user-global</code> / <code>workspace</code> 层；可浏览、可 <code>export</code>、可审计的库——透明即特性</td>
+</tr>
+<tr>
+<td><strong>Codex</strong> —— <code>AGENTS.md</code></td>
+<td><strong>按目录作用域的指令</strong>自动发现、零摩擦注入——就近比堆量更重要，加载记忆无需任何工具调用</td>
+<td><code>workspace</code> 层按会话 cwd 隔离（Windows 大小写不敏感）；冻结快照会话启动时自动注入</td>
+</tr>
+<tr>
+<td><strong>Hermes</strong> —— <code>memory.md</code></td>
+<td><strong>主动记忆保存</strong>（存/改/删），以及 <a href="https://github.com/NousResearch/hermes-agent/issues/48181">issue #48181</a> 的安全教训：只做在工具层的门会被迟到的工具注入绕过——应把门做在所有写路径的交汇处</td>
+<td>内嵌 Save/Skip 指引的 <code>memory</code> 工具 + 走审批门的 auto-capture 提案；审批门做在 <strong><code>ctx.memory</code> 写方法内部</strong>，不在工具层</td>
+</tr>
+</tbody></table>
+<p>出处：<a href="https://code.claude.com/docs/en/memory">Claude Code 记忆</a> · <a href="https://developers.openai.com/codex/cli/agents-md">Codex AGENTS.md</a> · <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/memory.md">Hermes 记忆</a> · <a href="https://github.com/NousResearch/hermes-agent/issues/48181">Hermes #48181</a>。</p>
+<p>刻意拒绝的部分：把自动摘要写进模型私有状态的隐藏记忆（本插件把压缩摘要变成<strong>待审批提案</strong>，等人 approve/dismiss）、仓库/向量库野心、以及任何缺少人可见审批或审计痕迹的写入。同时采纳 Hermes 文档的警告：两个进程共用一个 home 目录会写同一份记忆文件——见安全边界。</p>
 <h3>🆚 与其它记忆插件的差异</h3>
 <table>
 <thead>
@@ -373,11 +447,14 @@ dsh plugin --profile &lt;name&gt; remove dsh-memento       # 卸载：库与会�
 <ul>
 <li><strong>会话事件词汇已声明、rc.6 上暂不派发。</strong> <code>memory/added|updated|removed|recalled|snapshot</code> 已在 <code>types.d.ts</code> 声明合并，但 rc.6 没有仓外插件事件类型的注册面（append 未注册类型会让持久化会话无法加载）。审计完整性由审批审计对 + 审计表承担；harness 收录这些类型后自动开启派发。见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a> 决策 4。</li>
 <li><strong><code>ask</code> 策略需要 answerer。</strong> 没有 UI/ACP answerer 组合时写失败封闭（<code>unavailable</code>）——这是审批 seam 的失败封闭姿态，属设计行为。</li>
-<li><strong>暂无 per-agent 作用域。</strong> V1 只有 <code>user-global</code> 与 <code>workspace</code> 两层。</li>
+<li><strong>不使用 FTS5 索引。</strong> 子串检索走大小写不敏感 <code>instr</code>（对 CJK 正确）；召回排序用逐条目命中计数。FTS5 的 trigram 分词器无法索引单字 CJK 字符，故不采用——见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a> 决策 10。</li>
 </ul>
 <h3>🧪 开发</h3>
 <pre><code class="language-sh">npm install
-npm test    # node --test：66 个测试——预算、唯一子串、审批策略、store、快照、mock ctx 集成（S2/S3 不变量）、V2 命令/召回/面板
+npm test                # node --test：103 个测试——预算、唯一子串、审批策略、store、快照、mock ctx 集成（S2/S3 不变量）、V2 命令/召回/面板
+npm run typecheck       # tsc --checkJs 类型检查门（index.mjs / lib / scripts）
+npm run check:coverage  # 行覆盖率门：lib ≥90%、index.mjs ≥85%、全部 ≥90%
+npm run check:readmes   # 五语 README 一致性门
 </code></pre>
 <p><code>lib/</code> 零 DSH 依赖（仅 node: 内置模块）；DSH 依赖只出现在 <code>index.mjs</code>。完整纪律见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/AGENTS.md">AGENTS.md</a>；设计决策见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a>。</p>
 <h3>🏷 话题</h3>
@@ -401,7 +478,7 @@ npm test    # node --test：66 个测试——预算、唯一子串、审批策�
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/LoserFox/distill/" tabindex="-1"><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 12</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
       <li><h3><a href="/zh/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/zh/p/modusensus/dsh-mneme/" tabindex="-1"><p>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</p></a></li>
       <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></a></li>
       <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></a></li>

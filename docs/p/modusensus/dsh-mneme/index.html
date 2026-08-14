@@ -190,60 +190,64 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p><strong>把记忆主权还给人的记忆插件</strong> —— 记忆不再是黑盒,而是你读得懂、改得动的 Markdown。</p>
+<p><strong>Memory sovereignty, returned to you</strong> — memory is no longer a black box, but Markdown you can read and edit.</p>
 </blockquote>
-<p><code>dsh-mneme</code> 是一个 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness (DSH)</a> 插件，为 Agent 提供持久的跨会话记忆能力。<strong>Mneme</strong>（Μνήμη）——希腊记忆女神 Mnemosyne 之名，掌管记忆与梦境，正如 autoDream 在后台巩固记忆。</p>
-<p>不同于把记忆锁进数据库的插件，Mneme 把记忆<strong>写成你读得懂的 Markdown</strong>——你始终握着记忆的主权：看得见、改得动、删得掉，记忆这回事不该让 Agent 一个人说了算。</p>
-<h3>✨ 特性一览</h3>
+<p><code>dsh-mneme</code> is a <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness (DSH)</a> plugin that gives agents persistent cross-session memory. <strong>Mneme</strong> (Μνήμη) — named after Mnemosyne, the Greek goddess of memory who governs memory and dreams, just as autoDream consolidates memories in the background.</p>
+<p>Unlike plugins that lock memory inside a database, Mneme writes memory as <strong>Markdown you can read</strong> — memory sovereignty stays with you: you can see it, edit it, delete it. Memory shouldn&#39;t be decided by the agent alone.</p>
+<h3>✨ Features</h3>
 <ul>
-<li><strong>🧠 记忆主权</strong>：SQLite + <strong>可人工编辑的 Markdown 镜像</strong>，双向同步——记忆透明、可审查、归你所有</li>
-<li><strong>autoDream 梦境巩固</strong>：后台自动去重 / 合并 / 归档 / 冲突裁决（fail-safe 校验），越用越精炼</li>
-<li><strong>6 个模型工具</strong>：<code>memory_save</code> / <code>memory_search</code> / <code>memory_list</code> / <code>memory_update</code> / <code>memory_delete</code> / <code>memory_forget</code></li>
-<li><strong>自动注入 + 会话摘要</strong>：新会话自动带入相关记忆，会话结束自动提炼偏好 / 决策 / 教训</li>
-<li><strong>Web 记忆面板</strong>：官方设置面板内嵌，按类型浏览、全文搜索 + 语义（向量）搜索</li>
-<li><strong>用户设置</strong>：用户画像 + 行为规则，每轮注入系统提示</li>
-<li><strong>自定义指令</strong>：注册斜杠命令（/名称），触发时交给 Agent</li>
-<li><strong>向量搜索</strong>：接入 OpenAI 兼容 embeddings API，语义匹配字面不同但意思相近的记忆</li>
+<li><strong>🧠 Memory sovereignty</strong>: SQLite + <strong>human-editable Markdown mirror</strong>, two-way sync — memory is transparent, auditable, and yours</li>
+<li><strong>autoDream consolidation</strong>: background dedup / merge / archive / conflict resolution (fail-safe validation), refined with use</li>
+<li><strong>6 model tools</strong>: <code>memory_save</code> / <code>memory_search</code> / <code>memory_list</code> / <code>memory_update</code> / <code>memory_delete</code> / <code>memory_forget</code></li>
+<li><strong>Auto-injection + session summary</strong>: relevant memories injected at session start, preferences / decisions / lessons distilled at session end</li>
+<li><strong>Web memory panel</strong>: embedded in the official settings panel — browse by type, full-text + semantic (vector) search</li>
+<li><strong>User settings</strong>: user profile + behavior rules, injected into system prompt every turn</li>
+<li><strong>Custom commands</strong>: register slash commands (/name), routed to the agent when triggered</li>
+<li><strong>Vector search</strong>: OpenAI-compatible embeddings API for semantic matching of differently-worded but related memories</li>
 </ul>
-<h3>📦 安装（DSH）</h3>
+<h3>📦 Install (DSH)</h3>
 <pre><code class="language-bash">dsh plugin --profile web add @modusensus/dsh-mneme
 dsh web
 </code></pre>
 <blockquote>
-<p>需要 Node 24+（<code>node:sqlite</code>）。安装 / 配置 / 架构详见 <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/README.md">插件完整文档</a>。</p>
+<p>Requires Node 24+ (<code>node:sqlite</code>). See <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/README.md">full plugin docs</a> for install / config / architecture.</p>
 </blockquote>
-<h3>📁 仓库结构</h3>
-<pre><code>dsh-mneme/   插件本体（npm 包 @modusensus/dsh-mneme）
-docs/        设计文档与实施计划
+<h3>📁 Repository Structure</h3>
+<pre><code>dsh-mneme/   plugin package (npm @modusensus/dsh-mneme)
+docs/        design docs &amp; implementation plans
 </code></pre>
-<h3>🧪 本地开发</h3>
+<h3>🧪 Local Development</h3>
 <pre><code class="language-bash">cd dsh-mneme
 npm install
-npm test          # 140 个测试
-npm run sync      # src → lib 同步（发布时自动执行）
+npm test          # 140 tests
+npm run sync      # src → lib sync (runs automatically on publish)
 </code></pre>
-<h3>📄 文档</h3>
+<h3>📄 Docs</h3>
 <table>
 <thead>
 <tr>
-<th>文档</th>
-<th>路径</th>
+<th>Doc</th>
+<th>Path</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>插件完整文档（功能 / 安装 / 配置 / 架构）</td>
+<td>Full plugin docs (features / install / config / architecture)</td>
 <td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/README.md">dsh-mneme/README.md</a></td>
 </tr>
 <tr>
-<td>记忆库设计</td>
-<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-memory-design.md">docs/superpowers/specs/2026-08-13-dsh-memory-design.md</a></td>
+<td>Plugin design</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-mneme-design.md">docs/superpowers/specs/2026-08-13-dsh-mneme-design.md</a></td>
 </tr>
 <tr>
-<td>autoDream 设计</td>
-<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-memory-autodream-design.md">docs/superpowers/specs/2026-08-13-dsh-memory-autodream-design.md</a></td>
+<td>autoDream design</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-mneme-autodream-design.md">docs/superpowers/specs/2026-08-13-dsh-mneme-autodream-design.md</a></td>
 </tr>
 <tr>
-<td>实施计划</td>
+<td>Implementation plan (core)</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/plans/2026-08-13-dsh-memory.md">docs/superpowers/plans/2026-08-13-dsh-memory.md</a></td>
+</tr>
+<tr>
+<td>Implementation plan (autoDream)</td>
 <td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md">docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md</a></td>
 </tr>
 </tbody></table>
@@ -251,7 +255,7 @@ npm run sync      # src → lib 同步（发布时自动执行）
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/modusensus/dsh-mneme/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/modusensus/dsh-mneme/blob/main/README_EN.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">
@@ -266,7 +270,7 @@ npm run sync      # src → lib 同步（发布时自动执行）
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/LoserFox/distill/" tabindex="-1"><p>Automatic conversation distillation: background subagent reflection + skill create/update.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 12</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
       <li><h3><a href="/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</p></a></li>
       <li><h3><a href="/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</p></a></li>
       <li><h3><a href="/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/PerryLink/dsh-memento/" tabindex="-1"><p>Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.</p></a></li>

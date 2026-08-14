@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">CAOGGL/</span><wbr><span class="name">dsh-ding</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 0</b></span>
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/notify/">Notifications & Integrations</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -327,6 +327,7 @@ footer p+p{margin-top:.5rem}
 </ol>
 <h4>更新日志</h4>
 <ul>
+<li><strong>v0.4.4</strong>（2026-08-14）：<strong>松手立即试听</strong>——新增 <code>GET /dsh-ding/audio</code> 路由，浏览器直接用 HTMLAudio 播放音效（不再等 PowerShell 启动）；宿主端对&quot;内置叮咚&quot;做与 notify.ps1 相同的 ding.mp3 兜底解析。音量条改版：百分比数字移到滑杆<strong>右侧同一行</strong>、滑杆与铃铛按钮<strong>同高（30px）垂直对齐</strong>、滑杆左右留白使轨道圆角不被按钮遮挡</li>
 <li><strong>v0.4.3</strong>（2026-08-14）：滑杆旋钮改为<strong>亮色黑球 / 暗色白球</strong>（跟随 WebUI 主题实时切换）；移除音量条标题行；菜单文案改为跟随 <strong>WebUI 语言设置</strong>（<code>ctx.locale</code>，切换语言即时生效，不再是页面 lang）</li>
 <li><strong>v0.4.2</strong>（2026-08-14）：<strong>滑杆与右键菜单改用 WebUI 设计令牌</strong>（<code>--dsw-alias-*</code>）——自定义滑杆：4px 圆角轨道 + 品牌色填充 + 主题化旋钮（悬停/按压放大）；菜单表面/边框/阴影/文字/悬停/选中色全部对齐 WebUI 弹层样式（<code>--dsw-specific-menu</code> / <code>--dsw-shadow-lv3</code>），自动适配明暗主题</li>
 <li><strong>v0.4.1</strong>（2026-08-14）：铃铛交互改版——音量条移至铃铛正左侧（行内宽度动画、同行元素自动左移）；右键设置面板新增<strong>提示音/气泡通知开关</strong>（全关 = 无任何提示）；弹层增加过渡动画；修复悬停时菜单被误关的问题</li>
@@ -477,6 +478,7 @@ footer p+p{margin-top:.5rem}
 </ol>
 <h4>Changelog</h4>
 <ul>
+<li><strong>v0.4.4</strong> (2026-08-14): <strong>Instant preview on release</strong> — new <code>GET /dsh-ding/audio</code> route lets the browser play the sound directly via HTMLAudio (no more PowerShell startup wait); the host resolves <code>ding.mp3</code> for the built-in sound exactly like notify.ps1 does. Volume bar redesign: the percentage moved to the <strong>same row, right of the slider</strong>, the slider is now <strong>aligned with the bell button (30px)</strong>, and horizontal padding keeps the track&#39;s rounded ends clear of the button</li>
 <li><strong>v0.4.3</strong> (2026-08-14): Slider knob is now <strong>black in light mode / white in dark mode</strong> (follows the WebUI theme live); the volume-bar title row was removed; the menu copy now follows the <strong>WebUI language setting</strong> (<code>ctx.locale</code>, switches instantly, no longer tied to the page lang)</li>
 <li><strong>v0.4.2</strong> (2026-08-14): <strong>Slider and right-click menu restyled with WebUI design tokens</strong> (<code>--dsw-alias-*</code>) — custom slider: 4px rounded track, brand-colored fill, themed knob (grows on hover/press); the menu surface/border/shadow/text/hover/active colors now match the WebUI popover style (<code>--dsw-specific-menu</code> / <code>--dsw-shadow-lv3</code>) and adapt to light/dark themes automatically</li>
 <li><strong>v0.4.1</strong> (2026-08-14): Bell interaction redesign — the volume bar moved to the left of the bell (in-flow width animation, row items shift left); the right-click panel gained <strong>Sound/Toast toggles</strong> (both off = completely silent); popups got transition animations; fixed the hover menu closing too early</li>

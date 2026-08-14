@@ -23,6 +23,10 @@
   "npm": "dsh-hdc-bridge",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/283Gawin/dsh-heatmap": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/3403473060/dsh-inline-images": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -519,6 +523,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Karbo123/DSH-EvoResearch/tree/main/packages/evoresearch-plugin": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/KinGao294/dsh-skin": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -568,6 +576,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/LeslieWylie/dsh-md-preview": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/LeslieWylie/dsh-ops-kit": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -671,6 +683,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/lunw/shopline-ai-toolkit-dsh": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/lynx-gt/dsh-subagent-cwd": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -689,6 +705,10 @@
  },
  "https://github.com/Make0209/dsh-usage-stats": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Max-Samson/dsh-usage-chart": {
+  "npm": "dsh-usage-chart",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/MAXeaglet/dsh-bash-terminal": {
@@ -983,6 +1003,10 @@
   "npm": "@sanqi-normal/dsh-webui-market-plugin",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/sereinmono/dsh-desktop-pet": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/Sev7een/ds-api-usage": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -995,6 +1019,10 @@
   "npm": "dsh-plugin-terminal",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/simon300000/dsh-auto": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/slywalker2006/dsh-passwords": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1004,6 +1032,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Small-tailqwq/dsh-tps": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Smalldy/godot-bridge": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
