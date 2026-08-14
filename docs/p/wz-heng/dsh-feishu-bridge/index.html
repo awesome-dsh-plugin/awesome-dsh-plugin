@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">wz-heng/</span><wbr><span class="name">dsh-feishu-bridge</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 3</b></span>
         <span>Category <a href="/notify/">Notifications & Integrations</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,244 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/wz-heng/dsh-feishu-bridge/blob/main/README.zh.md">中文</a></p>
+<p>A Feishu (Lark) channel bridge for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (<code>dsh</code>): message a Feishu bot, it runs a <code>dsh</code> agent turn, the reply comes back to the chat.</p>
+<p><strong>This is an independent community project. It is not built, maintained, or endorsed by DeepSeek.</strong> It drives <code>dsh</code> entirely through its public Python SDK (<code>deepseek-harness-sdk</code>) — a subprocess boundary, no forked/patched harness code.</p>
+<h3>What this is</h3>
+<ul>
+<li>A production-grade Feishu bot bridge (fail-closed allowlist, one-time card nonces, per-chat verbosity, sticky sessions, both <code>ws</code> and <code>webhook</code> transports) ported from a mature bridge in another agent-harness project and adapted to drive <code>dsh</code> instead.</li>
+<li>The thin adapter that talks to <code>deepseek-harness-sdk</code> lives in one file, <code>src/dsh_feishu_bridge/dsh_adapter.py</code>, and the SDK version is pinned exactly — the harness is a v0.1 developer preview that documents breaking changes between releases.</li>
+</ul>
+<h3>Quickstart (5 minutes)</h3>
+<pre><code class="language-sh">git clone https://github.com/wz-heng/dsh-feishu-bridge.git
+cd dsh-feishu-bridge
+python3.12 -m venv .venv
+. .venv/bin/activate
+pip install -e &quot;.[dev]&quot;
+</code></pre>
+<p>Set your credentials as environment variables — never in a committed file:</p>
+<pre><code class="language-sh">export DEEPSEEK_API_KEY=sk-your-key-here
+# export DEEPSEEK_BASE_URL=http://127.0.0.1:8000/v1   # only if using a proxy
+
+export FEISHU_APP_ID=cli_xxxxxxxx
+export FEISHU_APP_SECRET=xxxxxxxx
+export FEISHU_TRANSPORT=ws          # or &quot;webhook&quot; if you have a public URL
+# export FEISHU_VERIFICATION_TOKEN=xxxx   # required when FEISHU_TRANSPORT=webhook
+# export FEISHU_ENCRYPT_KEY=xxxx          # required when FEISHU_TRANSPORT=webhook
+
+# Fail-closed allowlist — REQUIRED. With no ids configured the bot answers
+# no one; every message is rejected by design (see &quot;Security posture&quot; below).
+export FEISHU_ALLOWED_OPEN_IDS=ou_xxxxxxxxxxxxxxxx
+# export FEISHU_ALLOWED_CHAT_IDS=oc_xxxxxxxxxxxxxxxx   # optional group allowlist
+</code></pre>
+<p>Run it:</p>
+<pre><code class="language-sh">python -m dsh_feishu_bridge
+# or: dsh-feishu-bridge
+</code></pre>
+<p>Message the bot in Feishu. First message from an unlisted <code>open_id</code> is silently rejected and logged — that log line is how you discover your own <code>open_id</code> to put in the allowlist (see &quot;Getting your open_id&quot; below).</p>
+<h4>Getting your open_id</h4>
+<p>Send the bot a message once (it will not reply — this is expected, fail-closed). Check the server log for a line like:</p>
+<pre><code>Feishu: rejecting message from unauthorized open_id=ou_xxxxxxxxxxxxxxxx (chat=oc_xxxx)
+</code></pre>
+<p>Copy that <code>open_id</code> into <code>FEISHU_ALLOWED_OPEN_IDS</code> and restart.</p>
+<h3>Install as a dsh plugin</h3>
+<p>Instead of running the standalone process above, <code>dsh plugin add</code> can install this repo into a <code>dsh</code> profile: the plugin is a thin Node/cordis shell (<code>package.json</code>, <code>cordis.patch.yml</code>, <code>lib/</code>) that spawns and supervises the same unmodified Python process — it does not reimplement or patch any bridge logic.</p>
+<p><strong>Two steps, in order — the plugin never installs Python dependencies for you:</strong></p>
+<ol>
+<li><p><strong>Install the Python side yourself first</strong>, exactly as in the Quickstart above:</p>
+<pre><code class="language-sh">git clone https://github.com/wz-heng/dsh-feishu-bridge.git
+cd dsh-feishu-bridge
+python3.12 -m venv .venv
+. .venv/bin/activate
+pip install -e .
+</code></pre>
+<p>Set <code>FEISHU_APP_ID</code> / <code>FEISHU_APP_SECRET</code> / <code>FEISHU_ALLOWED_OPEN_IDS</code> / etc. — either exported in the shell that starts <code>dsh</code>, or in a <code>.env</code> file at this repo&#39;s root (<code>KEY=value</code> per line; the plugin reads it directly and merges it into the spawned process&#39;s inherited environment, since the Python side itself only reads <code>os.environ</code>).</p>
+</li>
+<li><p><strong>Then add the plugin to your profile:</strong></p>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add /path/to/dsh-feishu-bridge
+</code></pre>
+<p><code>dsh</code> starts the bridge as a managed child the next time that profile boots: it spawns <code>&lt;repo&gt;/.venv/bin/python -m dsh_feishu_bridge</code> (falling back to <code>python3</code> on <code>PATH</code> if no <code>.venv</code> exists at the repo root), waits for <code>GET /health</code> to report <code>{&quot;status&quot;: &quot;ok&quot;}</code>, and on profile/plugin dispose sends <code>SIGTERM</code>, escalating to <code>SIGKILL</code> if the process hasn&#39;t exited within 5 seconds — the same clean-shutdown behavior as <code>Ctrl-C</code>-ing the standalone process, just automatic.</p>
+<p>Every row config field is optional (<code>host</code>, <code>port</code>, <code>pythonBin</code>, <code>startupTimeoutMs</code>, <code>env</code>) — a bare <code>add</code> with no row edits works as long as step 1 is done and the defaults (<code>0.0.0.0:8788</code>, repo-root <code>.venv</code>) match your setup. <code>host</code>/<code>port</code> set <code>DSH_FEISHU_BRIDGE_HOST</code>/<code>DSH_FEISHU_BRIDGE_PORT</code> in the spawned process&#39;s env (see &quot;Configuration reference&quot; below) — they change where the Python side actually binds, and the plugin&#39;s own health check follows the same value, so the two never drift apart. Override in your profile&#39;s own <code>cordis.patch.yml</code>, e.g. to point at a different interpreter and port:</p>
+<pre><code class="language-yaml">- insert:
+    - id: feishu-bridge
+      name: dsh-feishu-bridge
+      config:
+        pythonBin: /usr/local/bin/python3.12
+        port: 8799
+</code></pre>
+</li>
+</ol>
+<p>This wrapper is v1: no build step (plain ESM under <code>lib/</code>), zero npm dependencies, and it never bootstraps a Python environment — there&#39;s no established convention for that among installable dsh plugins wrapping an external process today, so this repo doesn&#39;t invent one. Its own tests live under <code>tests-node/</code> (<code>node --test tests-node/**/*.test.mjs</code>), separate from the Python suite in <code>tests/</code>.</p>
+<h3>Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/new [name]</code></td>
+<td>Start a fresh session</td>
+</tr>
+<tr>
+<td><code>/sessions</code></td>
+<td>List sessions (tap one to switch)</td>
+</tr>
+<tr>
+<td><code>/switch &lt;id&gt;</code></td>
+<td>Point at an existing session</td>
+</tr>
+<tr>
+<td><code>/current</code></td>
+<td>Show current session info</td>
+</tr>
+<tr>
+<td><code>/quiet</code></td>
+<td>Only show replies (default)</td>
+</tr>
+<tr>
+<td><code>/verbose</code></td>
+<td>Also show status/result lines</td>
+</tr>
+<tr>
+<td><code>/help</code></td>
+<td>List commands</td>
+</tr>
+</tbody></table>
+<h3>Configuration reference</h3>
+<p>Everything is an environment variable. An optional YAML file (path via <code>DSH_FEISHU_BRIDGE_CONFIG</code>, or <code>--config</code>) can supply the non-secret knobs (allowlists, model, provider) — see <code>examples/config.example.yaml</code>. Env vars always win when both are set, and credentials are never read from the YAML file on purpose.</p>
+<table>
+<thead>
+<tr>
+<th>Env var</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DEEPSEEK_API_KEY</code></td>
+<td>—</td>
+<td>Required. Same var the SDK itself reads.</td>
+</tr>
+<tr>
+<td><code>DEEPSEEK_BASE_URL</code></td>
+<td>—</td>
+<td>Optional, for an OpenAI-compatible proxy.</td>
+</tr>
+<tr>
+<td><code>DSH_PROVIDER</code></td>
+<td><code>deepseek-official</code></td>
+<td>Provider route (see SDK docs).</td>
+</tr>
+<tr>
+<td><code>DSH_MODEL</code></td>
+<td><code>deepseek-v4-flash</code></td>
+<td>Model id.</td>
+</tr>
+<tr>
+<td><code>DSH_MAX_TOKENS</code></td>
+<td>unset</td>
+<td>Optional per-request output cap.</td>
+</tr>
+<tr>
+<td><code>DSH_CORDIS</code></td>
+<td>unset</td>
+<td>Path to a custom Cordis composition; omit to use the bundled default.</td>
+</tr>
+<tr>
+<td><code>DSH_SESSION_ROOT</code></td>
+<td>unset</td>
+<td>Where the runtime writes its JSONL session logs.</td>
+</tr>
+<tr>
+<td><code>DSH_WORKSPACE</code></td>
+<td>current dir</td>
+<td>The workspace the agent&#39;s tools operate in.</td>
+</tr>
+<tr>
+<td><code>FEISHU_APP_ID</code> / <code>FEISHU_APP_SECRET</code></td>
+<td>—</td>
+<td>Both required together, or leave both unset.</td>
+</tr>
+<tr>
+<td><code>FEISHU_TRANSPORT</code></td>
+<td><code>ws</code></td>
+<td><code>ws</code> (no public URL needed) or <code>webhook</code>.</td>
+</tr>
+<tr>
+<td><code>FEISHU_VERIFICATION_TOKEN</code></td>
+<td>—</td>
+<td>Required when <code>FEISHU_TRANSPORT=webhook</code>.</td>
+</tr>
+<tr>
+<td><code>FEISHU_ENCRYPT_KEY</code></td>
+<td>unset</td>
+<td>Required when <code>FEISHU_TRANSPORT=webhook</code> — enable &quot;Encrypt Key&quot; for this event subscription in the Feishu console and paste the same value here. Used to verify each request&#39;s <code>X-Lark-Signature</code> (see &quot;Security posture&quot;).</td>
+</tr>
+<tr>
+<td><code>FEISHU_DOMAIN</code></td>
+<td><code>https://open.feishu.cn</code></td>
+<td>Change for Lark international / a proxy.</td>
+</tr>
+<tr>
+<td><code>FEISHU_ALLOWED_OPEN_IDS</code></td>
+<td><em>(empty)</em></td>
+<td>Comma-separated. <strong>Required</strong> — empty means nobody is authorized.</td>
+</tr>
+<tr>
+<td><code>FEISHU_ALLOWED_CHAT_IDS</code></td>
+<td><em>(empty = no restriction)</em></td>
+<td>Comma-separated group allowlist.</td>
+</tr>
+<tr>
+<td><code>DSH_FEISHU_BRIDGE_HOST</code></td>
+<td><code>0.0.0.0</code></td>
+<td>HTTP server bind address (health check + webhook route).</td>
+</tr>
+<tr>
+<td><code>DSH_FEISHU_BRIDGE_PORT</code></td>
+<td><code>8788</code></td>
+<td>HTTP server port.</td>
+</tr>
+</tbody></table>
+<h3>Security posture</h3>
+<ul>
+<li><strong>Fail-closed by default.</strong> No configured <code>FEISHU_ALLOWED_OPEN_IDS</code> means every sender is rejected — there is no implicit allow-all. This is deliberate: an agent bridge with a blank allowlist would otherwise let anyone in your tenant run arbitrary agent turns.</li>
+<li><strong>Webhook mode requires both a verification token and an encrypt key.</strong> Without either, the webhook route is never registered — the process refuses to boot half-configured rather than silently accepting unverified events. The encrypt key is not optional: a verification token alone is a static value carried in the request body, not a per-request signature, so it cannot authenticate where a request actually came from.</li>
+<li><strong>Every webhook request is signature-, timestamp-, and replay-verified at this bridge&#39;s own boundary</strong> — before it is ever handed to the underlying SDK. <code>X-Lark-Signature</code> is checked against <code>sha256(timestamp + nonce + encrypt_key + body)</code>; the timestamp must fall within a 5-minute window of &quot;now&quot;; and a <code>(timestamp, nonce)</code> pair already seen is rejected as a replay. A request that fails any of these checks gets a <code>401</code> and never reaches message handling. The one deliberate exception is Feishu&#39;s own &quot;save request URL&quot; console step: that handshake is never signed (no subscription is confirmed yet to sign against), so this bridge checks only <code>FEISHU_VERIFICATION_TOKEN</code> for it and echoes the challenge back directly — the same, already-mandatory check the underlying SDK would otherwise perform.</li>
+<li><strong>Card buttons (session-switch) use one-time, identity-bound nonces.</strong> A nonce is minted for one exact action + session; a second click, a replayed nonce, or a tampered card value is rejected without being honored.</li>
+<li><strong>Sessions are owned by the chat that created them.</strong> <code>/sessions</code> only lists (and <code>/switch</code> only accepts) sessions owned by the requesting chat — even between two allowlisted chats, one can&#39;t list or hijack another&#39;s session id and start receiving its replies.</li>
+<li>Run this bridge&#39;s process with the least privilege the composition needs. The bundled default <code>dsh</code> composition (<code>examples/jsonrpc-agent</code> upstream) uses <code>danger-full-access</code> bash + file editing — run it in a disposable workspace/container, not against a machine you care about.</li>
+</ul>
+<h3>Limitations (v1, by design)</h3>
+<p>These are deliberate scope decisions driven by what <code>deepseek-harness-sdk</code> v0.1 actually exposes today — documented here rather than silently missing:</p>
+<ul>
+<li><strong>No incremental streaming.</strong> <code>DeepSeekHarness.run()</code> is a synchronous call that blocks until the turn is idle; the SDK&#39;s <code>on_notification</code> hook receives raw protocol notifications mid-call, but their event schema isn&#39;t part of the documented v0.1 contract. So the bridge posts one status line at turn start and the full reply once the turn completes — not a token-by-token stream like some other bridges.</li>
+<li><strong>No tool-approval flow.</strong> The bundled example <code>dsh</code> composition runs Bash/editor tools without an interactive approval prompt, and the SDK&#39;s high-level <code>Session</code> API has no hook to surface a server-initiated approval request even if a future composition added one (only the low-level <code>HarnessClient.next_request()/respond()</code> does). The approve/deny card machinery is ported and unit-tested for interface parity, but no session backend triggers it today.</li>
+<li><strong>Sessions are sticky only within one bridge process.</strong> A restart starts a fresh <code>DeepSeekHarness</code> subprocess, and cross-restart resume via a shared <code>session_root</code> isn&#39;t a behavior the SDK&#39;s v0.1 docs commit to — so this bridge doesn&#39;t build undocumented persistence on top of it. A chat&#39;s sticky session pointer and its <code>/quiet</code>/<code>/verbose</code> preference both reset on restart.</li>
+<li><strong>Text messages only</strong> — no voice, image, or file attachments, and no topic/thread replies (one sticky session per chat would silently cross wires across threads).</li>
+<li><strong>One model configuration per bridge process</strong> — provider/model/cordis composition are subprocess-wide, not per-chat. There&#39;s no <code>/agent</code>-style rebind command; run a second bridge process (different port, different Feishu app or allowlist) if you need a second configuration.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">pip install -e &quot;.[dev]&quot;
+pytest                       # fast — no network, no subprocess, no API quota
+pytest -m real_sdk           # real smoke test: needs DEEPSEEK_API_KEY + the runtime; auto-skips otherwise
+</code></pre>
+<p>The test suite fakes both edges: a scripted <code>DshBackend</code> stands in for the real SDK (no subprocess spawned, no quota spent), and a local <code>FakeFeishuServer</code> stands in for <code>open.feishu.cn</code> to assert what the bridge actually sends outbound. See <code>tests/</code>.</p>
+<p>If your network runs through a proxy (e.g. Clash) without a <code>127.0.0.1</code>/<code>localhost</code> exemption, export <code>no_proxy=127.0.0.1,localhost</code> before running the loopback-server tests — otherwise the proxy can swallow the bridge&#39;s own outbound calls to the fake server. The bridge itself already forces <code>trust_env=False</code> for loopback domains at runtime, so this only matters for the test process.</p>
+<p>The dsh plugin shell (<code>lib/</code>, see &quot;Install as a dsh plugin&quot; above) has its own, separate JS test suite — no Python involved:</p>
+<pre><code class="language-sh">node --test tests-node/**/*.test.mjs
+</code></pre>
+<h3>License</h3>
+<p>MIT — see <a href="https://github.com/wz-heng/dsh-feishu-bridge/blob/main/LICENSE">LICENSE</a>.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/wz-heng/dsh-feishu-bridge/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>

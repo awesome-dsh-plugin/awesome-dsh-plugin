@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">truelove-dreamer/</span><wbr><span class="name">dsh-plugin-recall</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/memory/">记忆</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-plugin-recall" rel="noopener" translate="no">dsh-plugin-recall</a></span>
@@ -188,7 +189,49 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness 插件:给模型<strong>跨会话记忆</strong> —— 全文检索所有历史会话,把最强匹配片段带回当前上下文。</p>
+<h3>背景</h3>
+<p>DSH 已经把每个会话持久化,并用 SQLite FTS5 建了全文索引(<code>ctx.sessionQuery.searchSessions</code>),但<strong>没有任何面向模型的工具去读它</strong> —— 新会话对旧会话的决策、命令、踩过的坑一无所知。<code>recall</code> 把这个现成索引变成模型的能力:开新会话先 <code>recall</code> 一下,接着上次的进度继续。</p>
+<h3>使用</h3>
+<p><strong>模型工具 <code>recall</code>:</strong></p>
+<pre><code class="language-text">recall query: &quot;we decided to use sqlite&quot;     # 默认返回最多 5 个会话
+recall query: &quot;publish script&quot; limit: 3
+recall query: &quot;权限绕过&quot; sessionIds: [&quot;s_xxx&quot;]   # 限定会话范围
+</code></pre>
+<p>返回每个命中会话:session id、时间、事件类型、live/persisted 标记、最强匹配片段。查询按<strong>字面短语</strong>处理(永不解释为 FTS 可执行语法)。</p>
+<p><strong>人类命令 <code>/recall &lt;查询&gt;</code>:</strong> 同样输出。</p>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-plugin-recall
+</code></pre>
+<p>挂载(标准 web profile 已含 <code>dsh-session-query-sqlite</code>,无需额外配置):</p>
+<pre><code class="language-yaml">- insert:
+    - id: recall
+      name: dsh-plugin-recall
+</code></pre>
+<h3>设计说明</h3>
+<ul>
+<li><strong>复用官方基建</strong>:直接调用 <code>ctx.sessionQuery.searchSessions</code>(SQLite FTS5),不改任何官方包;<code>sessionQuery</code> 未挂载时工具给出明确提示,而不是让组合加载失败。</li>
+<li><strong>纯逻辑可单测</strong>:参数校验 / 请求构建 / 命中映射 / 渲染在 <code>lib/recall.js</code>,<code>npm test</code> 零依赖。</li>
+<li><strong>只拷贝叶字段</strong>:命中结果从 live 服务对象提取为纯 JSON(sessionId / time / type / snippet),绝不引用内部对象。</li>
+</ul>
+<h3>诚实边界</h3>
+<ul>
+<li>依赖 <code>ctx.sessionQuery</code> 存在;<code>openAt: never</code> 配置下全文检索被禁用时,<code>recall</code> 会报错提示。</li>
+<li>命中片段是 FTS5 的高亮摘录(unicode61 分词器,<code>AI</code> 匹配不到 token <code>BRAID</code> 这类子串),不是精确回溯;需要精确读取请配合 session 工具。</li>
+<li>检索范围为当前 DSH_HOME 的持久化会话语料,不含其他机器/部署的历史。</li>
+</ul>
+<h3>本地开发</h3>
+<pre><code class="language-bash">cd plugins/dsh-plugin-recall
+npm test          # node --test,零依赖
+</code></pre>
+<p>接线集成测试(真实 Cordis + mock sessionQuery):见仓库根 <code>test-wiring.mjs</code>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/truelove-dreamer/dsh-plugin-recall/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -203,7 +246,7 @@ footer p+p{margin-top:.5rem}
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/LoserFox/distill/" tabindex="-1"><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 13</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
       <li><h3><a href="/zh/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/zh/p/modusensus/dsh-mneme/" tabindex="-1"><p>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</p></a></li>
       <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></a></li>
       <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></a></li>

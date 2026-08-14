@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">6Mikao9/</span><wbr><span class="name">dsh-wsl-workspace</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 2</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-wsl-workspace" rel="noopener" translate="no">dsh-wsl-workspace</a></span>
@@ -188,7 +189,47 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/6Mikao9/dsh-wsl-workspace/blob/main/README.zh.md">中文</a>
+<img src="https://raw.githubusercontent.com/6Mikao9/dsh-wsl-workspace/main/image-3.png" alt="alt text">
+Add a WSL workspace from the DeepSeek Harness web GUI and run the whole agent session — bash commands and file reads/writes — inside a local WSL distribution with Linux paths. Nothing needs to be installed inside WSL. The session can reach both WSL and Windows at the same time: bash commands run inside the WSL distribution, while Windows files stay accessible via <code>/mnt/&lt;drive&gt;</code> (for example <code>/mnt/c/Users/...</code>).</p>
+<h3>Install</h3>
+<p>Pick one of the three ways below, then restart <code>dsh web</code>:</p>
+<pre><code class="language-powershell"># 1) npm package
+dsh plugin --profile web add dsh-wsl-workspace
+
+# 2) GitHub repository (ships the prebuilt lib/, no local build required)
+dsh plugin --profile web add https://github.com/6Mikao9/dsh-wsl-workspace
+
+# 3) Local directory (development / self-hosted)
+dsh plugin --profile web add D:\path\to\dsh-wsl-workspace
+</code></pre>
+<p>After restarting <code>dsh web</code>, a W button appears beside Settings at the sidebar foot.</p>
+<h3>Usage</h3>
+<p>Click the W button beside Settings at the sidebar foot to open the &quot;Add WSL workspace&quot; dialog. Pick a distribution from the list, then browse the directory tree or type an absolute Linux path (for example <code>/home/me/proj</code>) — use the Check button to verify the path exists before creating the workspace. The dialog follows the DeepSeek Harness UI language. The username field is optional: leave it empty to run commands as the distribution&#39;s default user, or name a Linux user of that distribution to run the session as that user instead (equivalent to <code>wsl.exe -u &lt;username&gt;</code>). The username only changes the bash tool&#39;s run identity — the file tools go through the Windows-side WSL share and are unaffected. Each workspace&#39;s username is kept in <code>&lt;dshHome&gt;/wsl-workspaces.json</code>; delete the entry (or recreate the workspace from the dialog) to return to the default user.</p>
+<p>Click &quot;Create &amp; open&quot; to start a new session in the workspace. In the new session the bash tool executes commands inside the chosen distribution and <code>read</code>/<code>write</code>/<code>edit</code> operate on WSL files, so every path the model sees is a Linux path. The mode picker keeps working as usual: Standard, PTC, Minimal and Creative each land on their WSL variant automatically (the WSL variant entries in the picker are bilingual, e.g. <code>WSL · Standard mode（标准模式）</code>), and Windows files stay reachable from inside the session under <code>/mnt/&lt;drive&gt;</code> (for example <code>/mnt/c/Users/...</code>).
+<img src="https://raw.githubusercontent.com/6Mikao9/dsh-wsl-workspace/main/image-2.png" alt="alt text"></p>
+<h3>Behavior notes</h3>
+<ul>
+<li><strong>bash tool</strong>: runs inside the WSL distribution as the configured username (empty = the distro default user, often <code>root</code>), so it can read and write anywhere in the distro. The Windows ACL sandbox cannot wrap <code>wsl.exe</code> — its children run on the Linux kernel side — so WSL itself is the isolation boundary and the DSH file policy does not apply to bash.</li>
+<li><strong>File tools (<code>read</code>/<code>write</code>/<code>edit</code>)</strong>: go through the Windows-side WSL 9P share and run under the DSH file policy. Under <code>workspace-write</code>, reads work anywhere but writes are restricted to the session workspace; switch the file policy to <code>danger-full-access</code> to also allow writes outside it. The username field does not affect the file tools.</li>
+<li>The garbled <code>localhost</code> port-forwarding banner <code>wsl.exe</code> prints to stderr when the distro was not running yet is harmless.</li>
+</ul>
+<h3>License &amp; attribution</h3>
+<p>MIT — see <a href="https://github.com/6Mikao9/dsh-wsl-workspace/blob/main/LICENSE">LICENSE</a> and <a href="https://github.com/6Mikao9/dsh-wsl-workspace/blob/main/NOTICE">NOTICE</a>. The NOTICE precisely lists:</p>
+<ul>
+<li><strong>Adapted/inherited source code</strong>: DeepSeek Harness (MIT) — <code>dsh-bash-local</code> (executor mechanics), <code>dsh-fs-local</code> (<code>WslFileSystem</code> subclasses it), and the shipped agent presets (read and transformed by the variant generator);</li>
+<li><strong>Design references (no source copied)</strong>: <a href="https://github.com/MAXeaglet/dsh-bash-terminal">dsh-bash-terminal</a> (MIT, wsl argv / WSLENV approach), <a href="https://github.com/ccq1/dsh-side-panel">dsh-side-panel</a> (BSD-3-Clause, host-route pattern), <a href="https://github.com/Sdongmaker/vpshub">vpshub</a> (MIT, roadmap reference).</li>
+</ul>
+<p>Keep <code>LICENSE</code> and <code>NOTICE</code> when redistributing.</p>
+<h3>Acknowledgments</h3>
+<p>Special thanks to <a href="https://github.com/Small-tailqwq/dsh-deep-whale">dsh-deep-whale</a> (DSH Web 鲸鱼娘 skin series · 深海女仆工坊 maid-atelier, CC BY-NC-SA 4.0): the whale girl skin plugin brings a full set of adorable skins to the DeepSeek Harness Web UI and makes daily use of DSH a warmer experience.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/6Mikao9/dsh-wsl-workspace/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -202,8 +243,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

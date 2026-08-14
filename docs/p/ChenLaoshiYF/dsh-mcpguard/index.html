@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">ChenLaoshiYF/</span><wbr><span class="name">dsh-mcpguard</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,116 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness (dsh) 安全扫描插件：扫描 skill 文件、MCP 配置与工具描述，检测<strong>提示注入、同形字混淆、Unicode 隐形字符、危险 shell、凭据泄露</strong>。</p>
+<p><strong>DSH 生态首个安全类插件</strong>（截至 2026-08 调研，163 个社区插件中安全方向空白）。</p>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add &quot;github:ChenLaoshiYF/dsh-mcpguard&quot;
+</code></pre>
+<p>或在管理面板 Settings → Plugins 中安装。重启 <code>dsh --profile web</code> 生效。</p>
+<h3>工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>mcpguard_scan</code></td>
+<td>扫描本机默认位置（MCP 配置 + skill 目录）</td>
+</tr>
+<tr>
+<td><code>mcpguard_scan_path</code></td>
+<td>扫描指定目录或文件</td>
+</tr>
+</tbody></table>
+<h3>检测规则</h3>
+<p>与 mcpguard 主项目同一套引擎（Python / Go / TS 三实现规则一致）：</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>规则</th>
+<th>严重度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UNI-001</td>
+<td>Unicode 隐形字符（零宽/Bidi/私有区）</td>
+<td>high</td>
+</tr>
+<tr>
+<td>B64-001</td>
+<td>可疑 base64 长串</td>
+<td>medium</td>
+</tr>
+<tr>
+<td>INJ-001</td>
+<td>指令覆盖（ignore previous instructions）</td>
+<td><strong>critical</strong></td>
+</tr>
+<tr>
+<td>INJ-002</td>
+<td>角色扮演注入（&quot;从现在开始你是…&quot;）</td>
+<td><strong>critical</strong></td>
+</tr>
+<tr>
+<td>INJ-003</td>
+<td>多语言指令覆盖（日語/韓語指令忽略）</td>
+<td>high</td>
+</tr>
+<tr>
+<td>PTH-001</td>
+<td>敏感路径（~/.ssh、token、.env）</td>
+<td>high</td>
+</tr>
+<tr>
+<td>SHL-001</td>
+<td>危险 shell（curl|sh、eval、IEX）</td>
+<td><strong>critical</strong></td>
+</tr>
+<tr>
+<td>PWD-001</td>
+<td>密码赋值形态</td>
+<td>info</td>
+</tr>
+<tr>
+<td>BH-001</td>
+<td>静默外发/工具行为异常</td>
+<td>high</td>
+</tr>
+<tr>
+<td>HMG-001</td>
+<td>同形字混淆（西里尔/数学体）</td>
+<td>high</td>
+</tr>
+</tbody></table>
+<p>报告自动脱敏：API key、GitHub token、SSH 私钥块、JWT → <code>***</code>。</p>
+<h3>开发</h3>
+<pre><code class="language-bash">npm install
+npm run build     # 编译到 lib/
+node test/smoke.mjs  # 运行自测（19 项）
+</code></pre>
+<h3>配置</h3>
+<pre><code class="language-yaml"># cordis.patch.yml
+- insert:
+    - id: mcpguard
+      name: dsh-mcpguard
+      config:
+        sensitivity: medium   # low/medium/high
+        scanOnStartup: false  # 启动时自动扫描
+</code></pre>
+<h3>隐私</h3>
+<p>完全本地运行，零网络请求，零遥测。</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ChenLaoshiYF/dsh-mcpguard/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,8 +308,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

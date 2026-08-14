@@ -199,7 +199,10 @@ footer p+p{margin-top:.5rem}
 <h3>What it recommends</h3>
 <p>Observed aggregate behavior is mapped to:</p>
 <ul>
-<li>built-in presets: <code>minimal</code>, <code>code</code>, or <code>standard</code>;</li>
+<li>capability presets: <code>minimal</code> or <code>standard</code>.</li>
+</ul>
+<p><code>code</code> is a Code Mode presentation variant of <code>standard</code>, so this scanner never infers it from local activity volume or silently recommends it as a capability tier.</p>
+<ul>
 <li>optional capabilities: Codex delegation, Claude Code delegation, workflows, web, MCP, and LSP.</li>
 </ul>
 <p>Every recommendation includes confidence and numerical evidence. Thresholds are deterministic and local; results never automatically change DSH.</p>
@@ -260,20 +263,20 @@ footer p+p{margin-top:.5rem}
 <tr>
 <td>CodeBuddy CLI</td>
 <td><code>$CODEBUDDY_CONFIG_DIR/projects</code> or <code>~/.codebuddy/projects</code></td>
-<td>Bounded canonical project <code>.jsonl</code> records; ignores stale global process maps and tool-result/blob directories</td>
+<td>Bounded canonical project <code>.jsonl</code> records; <code>~/.codebuddy/workflows/*.js</code> and project-local workflow scripts are inventoried by presence only. Process maps, tool-result/blob directories, and workflow runtime sidecars are excluded</td>
 </tr>
 <tr>
 <td>WorkBuddy</td>
 <td><code>$WORKBUDDY_CONFIG_DIR/projects</code> or <code>~/.workbuddy/projects</code>, <code>~/.workbuddy-ai/projects</code></td>
-<td>Bounded project <code>.jsonl</code> records; project-local <code>.workbuddy</code> metadata is inventory-only</td>
+<td>Heuristic, version-sensitive project <code>.jsonl</code> inventory; native session layout is not vendor-contracted, so it is never treated as proof of CodeBuddy session equivalence</td>
 </tr>
 <tr>
 <td>Project-local CodeBuddy/WorkBuddy metadata</td>
 <td><code>&lt;project&gt;/.codebuddy</code> or <code>&lt;project&gt;/.workbuddy</code> <code>memory</code>, <code>workflows</code>, <code>plans</code>, or <code>automations</code></td>
-<td>Count and day only; content is not read; memory never becomes workflow evidence</td>
+<td>Count and day only, including workflow <code>.js</code>; content is not read; memory never becomes workflow evidence</td>
 </tr>
 </tbody></table>
-<p>Formats vary between product releases. Unknown fields are ignored, malformed records are skipped, and malformed files are counted as errors without stopping the scan.</p>
+<p>Formats vary between product releases. CodeBuddy paths/workflow scripts are documented; WorkBuddy session-file detection is an observed heuristic. Unknown fields are ignored, malformed records are skipped, and malformed files are counted as errors without stopping the scan.</p>
 <h3>Configuration</h3>
 <p>Configure the inserted <code>agent-preset-recommender</code> row in a DSH patch:</p>
 <pre><code class="language-yaml">- id: agent-preset-recommender
@@ -321,7 +324,7 @@ footer p+p{margin-top:.5rem}
 <li>Keyed IDs are stable only while the private state directory remains available; deleting <code>identity.key</code> intentionally creates a new identifier set.</li>
 <li>A recommendation reflects observed local frequency, not task quality or organizational policy.</li>
 <li>The plugin does not verify that optional products or capabilities are installed or authenticated.</li>
-<li>JSONL data after the byte cap, oversized JSON files, old files, and older files beyond a source limit are intentionally omitted. Compressed Codex <code>.jsonl.zst</code> rollouts are not read in 0.1.2. Claude workflow scripts and dynamic workflow sidecars are deliberately not parsed.</li>
+<li>JSONL data after the byte cap, oversized JSON files, old files, and older files beyond a source limit are intentionally omitted. Compressed Codex <code>.jsonl.zst</code> rollouts are not read in 0.1.4. Claude workflow scripts and dynamic workflow sidecars are deliberately not parsed.</li>
 </ul>
 <h3>Development</h3>
 <pre><code class="language-sh">npm install
@@ -346,8 +349,8 @@ npm test
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

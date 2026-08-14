@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">yyyyukari/</span><wbr><span class="name">dsh-plugin-workshop</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 14</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,99 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>A <strong>Steam Workshop-style plugin browser</strong> for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH) — zero-server, single-package, living right inside the DSH Web UI sidebar, directly under the &quot;New Session&quot; button.</p>
+<blockquote>
+<p>Unlike the centralized marketplace-platform approach of <a href="https://github.com/OBdangshang07/DSH_Creative_Workshop">DSH_Creative_Workshop</a>, this project takes the <strong>zero-infrastructure</strong> route: catalog, search, popularity and publish time are all provided by GitHub for free. No control plane, no account system — install into a profile and it just works.</p>
+</blockquote>
+<p><a href="https://github.com/yyyyukari/dsh-plugin-workshop/blob/master/README.md">简体中文</a> | English</p>
+<h3>✨ Features</h3>
+<ul>
+<li><strong>Permanent sidebar entry</strong>: cloned under the official &quot;New Session&quot; button with identical styling (DOM clone of the official button, adapts to wide/rail sidebar states, survives refreshes and restarts)</li>
+<li><strong>Search &amp; sorting</strong>: keyword search (Chinese input auto-mapped to English keywords), ★ hottest / ⏰ newest, and <strong>trending time windows</strong> (repos created in the last 7/30/90 days sorted by stars — the closest GitHub-API approximation of Steam&#39;s Trending)</li>
+<li><strong>DSH plugins only by default</strong>: the &quot;Plugin topic&quot; scope (<code>topic:dsh-plugin</code>); search results exclude the official harness and other core repos (query-level <code>-repo:</code> filter, so they no longer top the board); the whole-site mode includes <strong>plugin-signature verification</strong> (checks <code>package.json</code> <code>dsh</code> field / <code>cordis.yml</code> etc. via the raw CDN — costs no API quota) and filters out unrelated repos by default</li>
+<li><strong>Installed management</strong>: the &quot;📦 Installed&quot; view merges profile dependencies / activation rows / local presets to show your machine&#39;s plugins (type, active state, install source) with one-click update (pnpm update / git pull) and uninstall</li>
+<li><strong>Bilingual experience</strong>: one-click switch between original / machine-translated Chinese descriptions; README can be fully translated (Google Translate endpoint, cached)</li>
+<li><strong>Smart one-click install / uninstall</strong>: repo type is auto-detected — bundle-type (package.json declares <code>dsh.*</code>) installs via the official <code>dsh plugin add</code> flow; packages that declare <code>dsh.bundle.patch</code> are auto-added to the profile&#39;s <code>dsh.profile.bundles</code> by DSH itself (patch layer auto-activates, zero config), while legacy packages get an auto-written activation row; nested-type (exactly one dsh package anywhere in the tree — recursive scan supporting multi-level monorepos like <code>packages/&lt;name&gt;</code>, e.g. skin collections) gets a local copy + <code>link:</code> to the subpackage; preset-type is copied into <code>.agent-presets</code>. Uninstall reverses the install path (no files are touched when pnpm remove fails — no dangling links; on success dsh web restarts automatically to refresh the plugin table); missing git is reported with clear guidance</li>
+<li><strong>Detail page</strong>: stars/forks/language/license/created time, lightweight README rendering (headings/bold/code/lists/links), manual install command, GitHub link</li>
+<li><strong>Quota transparency</strong>: live GitHub search rate-limit remaining + recovery countdown; optional GitHub Token (30 req/min, stored in the local browser only)</li>
+<li><strong>Zero-server</strong>: all data comes from the GitHub search API (browser-direct, CORS) + raw.githubusercontent.com (verification &amp; README); optionally connecting a stats service unlocks community install badges + a real trending board (see <a href="https://github.com/yyyyukari/dsh-plugin-workshop/blob/master/remote/README.md"><code>remote/README.md</code></a> — zero impact when not deployed)</li>
+</ul>
+<h3>📦 Install</h3>
+<p>For the web profile:</p>
+<pre><code class="language-bash"># One command is enough: this package declares dsh.bundle.patch in its
+# package.json, so `dsh plugin add` auto-adds it to the profile&#39;s
+# dsh.profile.bundles and its cordis.patch.yml is applied as a bundle
+# patch layer on boot — no manual config.
+dsh plugin --profile web add &quot;github:yyyyukari/dsh-plugin-workshop&quot;
+
+# Restart dsh web and refresh the browser
+</code></pre>
+<blockquote>
+<p>Legacy manual flow: add the package to the profile dependencies, then add to <code>$DSH_HOME/profiles/web/cordis.patch.yml</code>:</p>
+<pre><code class="language-yaml">- insert:
+    - id: plugin-workshop
+      name: &#39;@dsh-external/dsh-plugin-workshop&#39;
+</code></pre>
+</blockquote>
+<p>After activation, the &quot;🧩 插件工坊&quot; button appears under &quot;New Session&quot; in the sidebar; the workshop also lives in Settings → Plugins as a tab.</p>
+<h3>🧭 Usage</h3>
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Find DSH plugins</td>
+<td>Default view is the plugin-topic list (repos tagged <code>topic:dsh-plugin</code>)</td>
+</tr>
+<tr>
+<td>Trending</td>
+<td>Time dropdown: 7/30/90-day windows + ★ hottest</td>
+</tr>
+<tr>
+<td>Search in Chinese</td>
+<td>Type Chinese words like 天气 / 翻译 — auto-mapped to English keywords</td>
+</tr>
+<tr>
+<td>Read Chinese descriptions</td>
+<td>Toolbar &quot;描述中文&quot;; detail page &quot;翻译 README&quot;</td>
+</tr>
+<tr>
+<td>Install / update / uninstall</td>
+<td>Detail page buttons, install path chosen by repo type (needs git, warned otherwise)</td>
+</tr>
+<tr>
+<td>Raise search quota</td>
+<td>Toolbar ⚙ → paste a GitHub Personal Access Token</td>
+</tr>
+</tbody></table>
+<h3>🏗️ Architecture</h3>
+<ul>
+<li><strong>Host half</strong> (<code>lib/index.js</code>): registers same-origin HTTP routes on the <code>webServer</code> service — <code>/dsh-plugin-workshop/api/{status,install,update,uninstall}</code> — smart install (bundle/preset type detection) and reverse uninstall with strict input validation and a custom-header CSRF guard</li>
+<li><strong>Client half</strong> (<code>lib/client.js</code>): React over platform seed modules; DOM-clones the official sidebar button with a MutationObserver self-heal; mounts the workshop in <code>shell.overlay</code> and <code>settings.plugins.tab</code></li>
+<li><strong>Data flow</strong>: GitHub search API (10 req/min anonymous) → signature verification &amp; README via raw CDN (no quota) → machine translation via Google gtx</li>
+<li><strong>Security</strong>: no third-party code is executed by the browser half; installs only write under <code>.agent-presets</code>; the Token lives in localStorage only</li>
+</ul>
+<h3>🗺️ Roadmap</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> v1.1 One-click install / update (host API: git detection, clone/pull into <code>.agent-presets</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> v1.2 Smart install / uninstall: bundle-type via official <code>dsh plugin add</code> + activation row, preset-type via <code>.agent-presets</code>, uninstall reverses the path (tested end-to-end)</li>
+<li><input checked="" disabled="" type="checkbox"> v1.3 DSH bundle compliance: <code>dsh.bundle.patch</code> declared in package.json (one-command auto-activation via <code>dsh plugin add</code>); smart install covers all three repo shapes (bundle / nested / preset)</li>
+<li><input checked="" disabled="" type="checkbox"> v1.4 &quot;Installed&quot; management view (update/uninstall, type &amp; active state); official core repos excluded from search; uninstall hardened (no mutation on failure, auto-restart to refresh)</li>
+<li><input checked="" disabled="" type="checkbox"> v1.5 Optional stats service (Phase A): anonymous install telemetry + community install badges + real trending board (Cloudflare Worker reference implementation in <code>remote/</code>; zero impact when not deployed)</li>
+<li><input checked="" disabled="" type="checkbox"> Community index exposure: ✅ <a href="https://github.com/0xsline/awesome-deepseek-harness">awesome-deepseek-harness</a> (listed + description refreshed); ⏳ awesome-dsh-plugin / awesome-dsh-plugins (PR #42 / #50 open)</li>
+</ul>
+<h3>📄 License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/yyyyukari/dsh-plugin-workshop/blob/master/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,12 +291,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

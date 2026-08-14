@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">truelove-dreamer/</span><wbr><span class="name">dsh-plugin-git-workflow</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-plugin-git-workflow" rel="noopener" translate="no">dsh-plugin-git-workflow</a></span>
@@ -188,7 +189,82 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness 插件:给模型提供<strong>一等公民的 Git 工作流工具</strong> —— 仓库状态、diff、规范 commit、历史、分支,不再需要裸 <code>bash</code>/<code>pwsh</code> 手搓 git。</p>
+<h3>背景</h3>
+<p>DSH 内置没有任何 git 工具。模型只能通过 <code>bash</code>/<code>pwsh</code> 调用 <code>git</code>,输出原始、易错、难解析,还容易把用户输入拼进 shell 命令(注入风险)。这个插件把 Git 变成<strong>结构化、安全、可解析</strong>的工具集。</p>
+<h3>工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>git_status</code></td>
+<td>分支、upstream、ahead/behind、staged / unstaged / untracked / conflicts 清单(porcelain 解析)</td>
+</tr>
+<tr>
+<td><code>git_diff</code></td>
+<td>工作区 diff 或 staged diff(<code>--cached</code>),支持 <code>--stat</code> 摘要、路径过滤、行数截断</td>
+</tr>
+<tr>
+<td><code>git_log</code></td>
+<td>最近提交(hash/日期/subject),可选 <code>files</code> 列出每个提交改动的文件</td>
+</tr>
+<tr>
+<td><code>git_commit</code></td>
+<td>校验 message 后 <code>git add</code>(可选路径)+ <code>git commit -m</code>;清晰报出 &quot;nothing to commit&quot;</td>
+</tr>
+<tr>
+<td><code>git_branch</code></td>
+<td>本地分支列表,标记当前分支</td>
+</tr>
+</tbody></table>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-plugin-git-workflow
+</code></pre>
+<p>挂载(profile <code>cordis.patch.yml</code> 或 agent preset):</p>
+<pre><code class="language-yaml">- insert:
+    - id: git-workflow
+      name: dsh-plugin-git-workflow
+</code></pre>
+<h3>使用</h3>
+<pre><code class="language-text">git_status                        # 看当前仓库状态
+git_diff                          # 看未暂存改动
+git_diff staged: true             # 看已暂存改动
+git_commit message: &quot;fix: ...&quot;    # 提交(全部已暂存内容)
+git_commit message: &quot;feat: ...&quot; paths: [&quot;src/a.js&quot;]   # 先 add 再提交
+git_log count: 20 files: true     # 最近 20 条 + 改动文件
+git_branch                        # 分支列表
+</code></pre>
+<p>所有工具都接受 <code>workdir</code>(默认会话工作目录,相对路径按会话目录解析)。</p>
+<h3>设计说明</h3>
+<ul>
+<li><strong>零 shell</strong>:所有 git 调用走 <code>child_process.execFile(&quot;git&quot;, argsArray)</code>,参数数组传递,用户输入永远不可能被解释为 shell 语法。</li>
+<li><strong>输入校验</strong>:commit message 非空、≤2000 字符、无 NUL;路径拒绝绝对路径与 <code>..</code> 穿越(反斜杠归一化后检查),保证不越出仓库。</li>
+<li><strong>纯逻辑可单测</strong>:解析(porcelain / diff-stat / log / branch)与校验全部在 <code>lib/git.js</code> 纯函数里,<code>npm test</code> 零依赖。</li>
+<li><strong>结构化输出</strong>:每个工具返回带 schema 的 JSON,render 输出可读文本;失败返回 <code>{ ok:false, exitCode, message }</code> 而非裸报错。</li>
+</ul>
+<h3>诚实边界</h3>
+<ul>
+<li>工具直接以 host 进程身份运行 <code>git</code>,<strong>不经过 fs-sandbox 围栏</strong>;路径校验是词法级的,符号链接/工作树外路径依赖 git 自身约束。需要更强隔离时,请勿在 untrusted 会话挂载此插件。</li>
+<li>commit 需要仓库已配置 <code>user.name</code>/<code>user.email</code>(git 自身报错会透传)。</li>
+<li><code>git_log</code> 的 <code>files</code> 解析假设 <code>--name-status</code> 输出格式;非常规编码的路径可能显示不完整。</li>
+<li>不含 push / pull / rebase 等网络操作(后续版本可加,需审批语义配合)。</li>
+</ul>
+<h3>本地开发</h3>
+<pre><code class="language-bash">cd plugins/dsh-plugin-git-workflow
+npm test          # node --test,零依赖
+</code></pre>
+<p>接线集成测试(需 harness checkout 的 Cordis):见仓库根 <code>test-wiring.mjs</code>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/truelove-dreamer/dsh-plugin-git-workflow/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -202,8 +278,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Noelune/</span><wbr><span class="name">unified-agent-memory</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/memory/">Memory</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-unified-agent-memory" rel="noopener" translate="no">dsh-unified-agent-memory</a></span>
@@ -188,7 +189,137 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>Unified agent memory for DeepSeek Harness — <strong>one shared Obsidian vault for every agent</strong> (dsh, Codex, Claude Code, Hermes, …), with a dependency-free Python core: search, promotion, conflict adjudication and forgetting. Local-first, zero cloud, 5 minutes to a working loop. · 统一 Agent 记忆系统：多 Agent 共享一个 Obsidian vault，零依赖 Python core 完成检索/晋升/裁决/遗忘生命周期。</p>
+</blockquote>
+<p><a href="https://www.npmjs.com/package/dsh-unified-agent-memory"><img src="https://img.shields.io/npm/v/dsh-unified-agent-memory" alt="npm version"></a>
+<a href="https://github.com/Noelune/unified-agent-memory/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://github.com/Noelune/unified-agent-memory/actions/workflows/ci.yml"><img src="https://github.com/Noelune/unified-agent-memory/actions/workflows/ci.yml/badge.svg" alt="CI"></a></p>
+<h3>Why this exists — and how it differs from other memory plugins</h3>
+<p>Most memory plugins are single-agent: they remember <em>your</em> session inside <em>your</em> harness. This project is a <strong>complete self-hosted memory system for a fleet of agents</strong> sharing one source of truth:</p>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>unified-agent-memory</th>
+<th>typical single-agent memory plugin (dsh-mnemon, dsh-memory, …)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shared by dsh + Codex + Claude + Hermes</td>
+<td>✅ same vault, same facts</td>
+<td>❌ one harness only</td>
+</tr>
+<tr>
+<td>Standalone core (no agent runtime)</td>
+<td>✅ pure Python stdlib, CLI-only usable</td>
+<td>❌ requires the plugin host</td>
+</tr>
+<tr>
+<td>Full lifecycle: promote / dedup / conflict adjudicate / forget</td>
+<td>✅ built-in</td>
+<td>⚠️ usually just store+recall</td>
+</tr>
+<tr>
+<td>Local-first index (SQLite FTS5, no cloud)</td>
+<td>✅ default</td>
+<td>varies</td>
+</tr>
+<tr>
+<td>Human-confirmed promotion</td>
+<td>✅ review → apply (auto is opt-in)</td>
+<td>n/a</td>
+</tr>
+</tbody></table>
+<p>Compared with <strong>sgme</strong> (a memory <em>bridge</em> to an external engine) this repo is a <strong>self-contained starter kit</strong>: vault template + core + agent integrations + setup, deployable by anyone with no server. Compared with <strong>nowledge-mem</strong> (prompt-time recall MCP layer) this repo owns the whole lifecycle including promotion and forgetting.</p>
+<h3>What you get</h3>
+<ul>
+<li><strong>One Obsidian vault = one source of truth</strong> for all your agents (canonical notes, write inbox, conflict queue, forget zone).</li>
+<li><strong>Dependency-free Python core</strong> (core/): memory init|search|show|submit, promoter --review/--apply/--auto/adjudicate, forgetter. Zero third-party packages; no agent runtime required.</li>
+<li><strong>Local-first semantic index</strong>: SQLite FTS5 on your machine (~/.unified-memory/index.db) — privacy stays local. Remote index is an optional advanced mode.</li>
+<li><strong>Safe by default</strong>: credential-shaped lines are rejected at submission and redacted in output; search results are wrapped in  markers (data, not instructions); promotion is human-confirmed; a file lock + atomic writes make concurrent promoters safe.</li>
+<li><strong>dsh first-class</strong>: cordis plugin with memory_search / memory_show / memory_submit / memory_status model tools, graceful degradation when unconfigured.</li>
+<li><strong>Codex / Claude / Hermes integrations</strong>: ready-to-copy AGENTS.md / CLAUDE.md templates and hook examples.</li>
+</ul>
+<h3>Quick start (5 steps, no servers, no Hermes)</h3>
+<pre><code># 1. get the code and install the dependency-free core
+git clone https://github.com/Noelune/unified-agent-memory.git &amp;&amp; cd unified-agent-memory
+pip install -e ./core
+
+# 2. initialize a vault (creates the full template + config)
+python setup/setup.py init --vault ~/Documents/AgentMemory
+
+# 3. connect your agents (pick any)
+dsh plugin --profile web add dsh-unified-agent-memory   # + set vaultPath/UNIFIED_MEMORY_VAULT
+cp AGENTS.md ~/.codex/AGENTS.md                          # Codex
+cp CLAUDE.md ~/.claude/CLAUDE.md                         # Claude Code
+
+# 4. write and read a fact
+memory submit &quot;the staging server runs on 127.0.0.1:8080&quot; --agent alpha
+memory search &quot;staging server&quot;
+
+# 5. promote into canonical (human-confirmed by default)
+python -m unified_memory.promoter --review
+python -m unified_memory.promoter --apply
+</code></pre>
+<p>Full guide: <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/DEPLOY.md">docs/DEPLOY.md</a> · Architecture: <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a> · Security: <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/SECURITY.md">docs/SECURITY.md</a></p>
+<h3>Repository layout</h3>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>core/</td>
+<td>Dependency-free Python package: memory.py (init/search/show/submit), promoter.py (review/apply/adjudicate), forgetter.py, conflict.py</td>
+</tr>
+<tr>
+<td>vault-template/</td>
+<td>Copy-ready Obsidian vault: 7 canonical notes + 提交区 inbox + 情境信息 + 记忆遗忘区</td>
+</tr>
+<tr>
+<td>lib/</td>
+<td>dsh plugin: memory_search / memory_show / memory_submit / memory_status tools</td>
+</tr>
+<tr>
+<td>integrations/</td>
+<td>AGENTS.md (Codex), CLAUDE.md (Claude), Hermes hook examples</td>
+</tr>
+<tr>
+<td>setup/</td>
+<td>setup.py (init/cron/selfcheck), selfcheck.py</td>
+</tr>
+<tr>
+<td>docs/</td>
+<td>ARCHITECTURE / DEPLOY / SECURITY</td>
+</tr>
+</tbody></table>
+<h3>Requirements</h3>
+<ul>
+<li>Python ≥ 3.10 (core; standard library only)</li>
+<li>Node.js ≥ 20 + dsh 0.1.0-rc.6 (only for the dsh plugin)</li>
+<li>Obsidian is recommended for browsing the vault, but not required — everything is plain Markdown + SQLite.</li>
+</ul>
+<h3>Maintenance status</h3>
+<ul>
+<li>Maintainer: <a href="https://github.com/Noelune">Noelune</a></li>
+<li><strong>Community-maintained</strong> — issues and PRs welcome; no SLA promised. Bug fixes usually land within 1–2 weeks; security issues get priority.</li>
+<li>Compatibility: tested against <strong>dsh 0.1.0-rc.6</strong>. dsh API changes are tracked with upgrade notes in <a href="https://github.com/Noelune/unified-agent-memory/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</li>
+<li>License: <strong>MIT</strong> — commercial use allowed.</li>
+</ul>
+<h3>Security</h3>
+<p>See <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/SECURITY.md">docs/SECURITY.md</a>. Short version: vault content is data (never instructions), credentials never enter the vault in plaintext, the default index stays on your machine, and promotion is human-confirmed with lock+atomic-write safety.</p>
+<h3>Contributing</h3>
+<p>PRs welcome. Run python -m unittest discover -s core/tests (core) before submitting; CI runs core tests, a secrets scan (gitleaks) and a license check on every push.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Noelune/unified-agent-memory/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -203,7 +334,7 @@ footer p+p{margin-top:.5rem}
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/LoserFox/distill/" tabindex="-1"><p>Automatic conversation distillation: background subagent reflection + skill create/update.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 13</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
       <li><h3><a href="/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/p/modusensus/dsh-mneme/" tabindex="-1"><p>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</p></a></li>
       <li><h3><a href="/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</p></a></li>
       <li><h3><a href="/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</p></a></li>

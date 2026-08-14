@@ -190,9 +190,9 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
-<p><img src="https://raw.githubusercontent.com/LaoYueHanNi/dsh-token-usage/main/token-usage.png" alt="Token 用量统计页"></p>
+<p><img src="https://raw.githubusercontent.com/LaoYueHanNi/dsh-token-usage/main/token-usage_zh.png" alt="Token 用量统计页"></p>
 <p>简体中文 | <a href="https://github.com/LaoYueHanNi/dsh-token-usage/blob/main/README.md">English</a></p>
-<p>一个 <a href="https://github.com/cordiverse/dsh">dsh</a> 用量插件：在 Web 界面直接展示模型 token 用量。安装后打开<strong>设置</strong>（侧栏底部齿轮），即可看到「Token 用量」页 —— 汇总卡片、按日总 token 折线图、按模型明细表，支持按日期区间和模型筛选，效果见上图。</p>
+<p>一个 <a href="https://github.com/cordiverse/dsh">dsh</a> 用量插件：在 Web 界面直接展示模型 token 用量。安装后打开<strong>设置</strong>（侧栏底部齿轮），即可看到「Token 用量」页 —— 汇总卡片（含费用）、按日总 token 折线图、按模型明细表与定价弹窗，支持按日期区间和模型筛选，效果见上图。</p>
 <p>仓库：<a href="https://github.com/LaoYueHanNi/dsh-token-usage">https://github.com/LaoYueHanNi/dsh-token-usage</a></p>
 <h3>功能</h3>
 <ul>
@@ -202,6 +202,7 @@ footer p+p{margin-top:.5rem}
 <li><strong>历史补齐</strong>：首次启动自动同步安装前已发生的请求；<code>/token-usage-sync</code> 命令可随时手动补写（幂等）。</li>
 </ul>
 <h3>模型定价</h3>
+<p><img src="https://raw.githubusercontent.com/LaoYueHanNi/dsh-token-usage/main/model-price_zh.png" alt="模型定价弹窗"></p>
 <p><strong>逐条请求精确计费</strong>：每条记录按自身时间戳走 cc-switch-analyzer 同款规则链——时间区间规则（<code>timeRules</code>）优先，命中后用规则内上下文档位（<code>contextTiers</code>）与峰谷价（<code>dailySlots</code>）；未命中走模型根的档位 → 峰谷 → 基础价。档位匹配以上下文 token 量近似（本请求 input + cacheRead + cacheWrite）。定价表更新价格后，全部历史按新价即时重算，无需重建数据。定价来自两个文件，读取时合并，<code>pricing.json</code> 的条目永远优先（整模型覆盖，含禁用其云端规则）：</p>
 <table>
 <thead>
@@ -292,12 +293,12 @@ git add lib/
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

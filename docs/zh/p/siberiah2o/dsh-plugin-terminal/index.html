@@ -219,9 +219,25 @@ footer p+p{margin-top:.5rem}
 <ul>
 <li>底部终端面板：贴底固定，宽度对齐对话列；输入框始终在终端上方</li>
 <li>`Ctrl+`` 展开/收起；拖拽顶部 grip 调整高度（120px–78% 视口，自动记忆）</li>
-<li>多标签：<code>+</code> 新建、✕ 关闭、⟳ 重启；切 tab 不中断进程，刷新自动恢复会话</li>
-<li>xterm.js 6：颜色、闪烁光标、备用屏幕、Unicode、5000 行回滚</li>
+<li>多标签：<code>+</code> 新建、✕ 关闭、⟳ 重启；切 tab 不中断进程，刷新或切换工作区自动恢复会话</li>
+<li><strong>重启 dsh web 不丢终端</strong>：会话元数据 + 滚动缓冲实时落盘（<code>$DSH_HOME/plugin-data/terminal/</code>），重启后恢复为&quot;已退出&quot;历史标签（画面完整回放，点 ⟳ 一键重启进程）；手动关闭的标签不留痕</li>
+<li><strong>重启 dsh web 不丢终端</strong>：会话元数据 + 滚动缓冲实时落盘（<code>$DSH_HOME/plugin-data/terminal/</code>），重启后恢复为&quot;已退出&quot;历史标签（画面完整回放，点 ⟳ 一键重启进程）；手动关闭的标签不留痕</li>
+<li>xterm.js 6：颜色、闪烁光标、备用屏幕、Unicode v11（CJK 宽度表）、10000 行回滚</li>
 <li>WebSocket 直连 PTY，低延迟；深浅主题下终端颜色均可读</li>
+</ul>
+<h3>在面板里运行 codex / claude code</h3>
+<p>这类 AI 编码 CLI 是全屏式 TUI（ANSI 转义序列 + 备用屏幕 + truecolor），对终端链路要求高。本插件已针对它们做了渲染调优：</p>
+<ul>
+<li>子进程环境注入 TERM=xterm-256color、COLORTERM=truecolor（缺失时），非 Windows 下补 LANG/LC_ALL=en_US.UTF-8、PYTHONIOENCODING=utf-8，避免 256 色降级和中英文乱码</li>
+<li>xterm.js 6 内置 OSC 10/11/12 应答（Codex 查询终端背景色做主题适配可直接工作）</li>
+<li>unicodeVersion: &quot;11&quot; 保证中英混排不串位；drawBoldTextInBrightColors: false 保持粗体真实颜色；字体链带 CJK 兜底；回滚 10000 行（服务端环形缓冲 500k 字符）</li>
+</ul>
+<p>仍遇到渲染问题时的建议：</p>
+<ul>
+<li><strong>Claude Code</strong>：在会话里运行 /tui fullscreen（或 CLAUDE_CODE_NO_FLICKER=1 claude）切到全屏渲染，解决闪烁、滚动跳顶、resize 错乱；/tui default 切回</li>
+<li><strong>tmux 里跑</strong>：确认 TERM=tmux-256color、tmux ≥ 3.4，必要时 set -ga terminal-overrides &#39;,xterm-256color:RGB&#39;</li>
+<li><strong>Windows 中文乱码</strong>：用 Windows Terminal，chcp 65001，系统区域设置勾选&quot;Beta: 使用 Unicode UTF-8&quot;；仍乱码就在 WSL 里跑</li>
+<li><strong>升级到最新版</strong>：多数渲染问题是工具自身的回归 bug，已在新版本修复</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
@@ -242,12 +258,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

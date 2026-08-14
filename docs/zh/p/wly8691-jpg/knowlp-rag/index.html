@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">wly8691-jpg/</span><wbr><span class="name">knowlp-rag</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/@eqman00003/knowlp-rag" rel="noopener" translate="no">@eqman00003/knowlp-rag</a></span>
@@ -188,7 +189,293 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Dual knowledge graph retrieval for your Markdown notes.</strong></p>
+<blockquote>
+<p>Install as a <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness (dsh)</a> bundle:
+<code>dsh plugin add &quot;github:wly8691-jpg/knowlp-rag#main&quot;</code> — see <a href="https://github.com/wly8691-jpg/knowlp-rag/blob/main/dsh/README.md">dsh/README.md</a>. Also runs in Claude Code.</p>
+</blockquote>
+<blockquote>
+<p>Works with Obsidian, Logseq, Joplin, or any plain Markdown folder. 306 notes → 555 prerequisite edges + 624 similarity edges → P/S-Agent graph traversal + paragraph chunking + embedding + visual PixelRAG.</p>
+</blockquote>
+<p><a href="https://python.org"><img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python"></a>
+<a href="https://github.com/wly8691-jpg/knowlp-rag/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License: MIT"></a></p>
+<blockquote>
+<p><a href="https://wly8691-jpg.github.io/knowlp-rag/architecture.html">View Architecture Diagram</a></p>
+</blockquote>
+<hr>
+<h3>Why KnowLP?</h3>
+<p>Grep gives you 105 files for &quot;RAG architecture&quot;. KnowLP gives you 3 ranked hits with dependency context.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>grep</code></th>
+<th>Naive vector DB</th>
+<th><strong>KnowLP</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ranks results</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Dependency chain (P-Agent)</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Finds similar alternatives (S-Agent)</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Works without GPU</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅ (n-gram mode)</td>
+</tr>
+<tr>
+<td>Gets better with use</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅ (feedback loop)</td>
+</tr>
+<tr>
+<td>Paragraph-level matching</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅ (542 chunks)</td>
+</tr>
+<tr>
+<td>Visual search</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅ (PixelRAG)</td>
+</tr>
+</tbody></table>
+<p><strong>The difference:</strong> vector search finds documents that <em>contain</em> your keywords. KnowLP finds documents you should read <em>because</em> of your query — complete with a reading path.</p>
+<hr>
+<h3>Demo</h3>
+<pre><code>$ knowlp_search &quot;RAG architecture&quot;
+  1. [LINK] RAG检索架构.md (score 0.77)
+  2. [LINK] 向量数据库选型.md (score 0.61)     ← Prerequisite chain
+  3. [LINK] 检索评估踩坑记录.md (score 0.42)
+  4. [LINK] _索引-阅读顺序 (depth 1)          ← tells you where to start
+  5. [LINK] _索引-相关概念.md (depth 2)
+  Done.  Top-5 matches returned.
+</code></pre>
+<blockquote>
+<p>Grep returns 105 files for &quot;RAG architecture&quot;. KnowLP returns 3 ranked hits with a reading path.</p>
+</blockquote>
+<hr>
+<h3>What is KnowLP?</h3>
+<p>KnowLP transforms your Markdown notes into a <strong>dual knowledge graph</strong> and provides a multi-engine retrieval system:</p>
+<ul>
+<li><strong>P-Agent</strong> — traverses prerequisite dependency chains (read A before B → A depends on B)</li>
+<li><strong>S-Agent</strong> — finds similar notes as alternatives (same directory, shared tags, semantic similarity)</li>
+<li><strong>Paragraph chunking</strong> — solves the &quot;keyword in body but not in title&quot; blind spot (542 chunks)</li>
+<li><strong>Real embedding</strong> — Qwen3-VL-Embedding-2B vectors for semantic search (305 × 2048dim)</li>
+<li><strong>PixelRAG</strong> — visual search for screenshots, tables, charts, UI layouts</li>
+<li><strong>Weight feedback loop</strong> — rule-based: consumed edges +0.05, ignored -0.02, cold decay ×0.95 (active learning, not RL)</li>
+</ul>
+<h3>Architecture</h3>
+<p><a href="https://wly8691-jpg.github.io/knowlp-rag/architecture.html">View 7-Layer Architecture Diagram</a></p>
+<h3>DeepSeek Harness (dsh)</h3>
+<pre><code class="language-bash"># 1. 指定笔记目录 + 索引目录 (Python 环境由插件首次启动时自动自举)
+export KNOWLP_VAULT=&quot;$HOME/Notes&quot;
+export KNOWLP_GRAPH_DIR=&quot;$HOME/.knowlp-dsh&quot;   # 索引存放处 (knowlp-build 输出到这里)
+
+# 2. 一条命令装入 dsh
+dsh plugin add &quot;@eqman00003/knowlp-rag&quot;
+# 或 github 源: dsh plugin add &quot;github:wly8691-jpg/knowlp-rag#main&quot;
+</code></pre>
+<p>前置: Node 18+ 与 Python 3.11+。首次检索时插件会在 <code>~/.knowlp-dsh/venv</code>
+自举 Python 环境 (mcp + pyyaml, 约 30s)。建索引:
+<code>python -m build_graph</code> 或 <code>pip install -e . &amp;&amp; knowlp-build</code>。</p>
+<p>向 agent 暴露 5 个 MCP 工具：<code>knowlp_search</code>（四引擎扇出）、<code>knowlp_record_feedback</code>、
+<code>knowlp_get_note</code>、<code>knowlp_stats</code>、<code>skill_search</code>。完整说明见 <a href="https://github.com/wly8691-jpg/knowlp-rag/blob/main/dsh/README.md">dsh/README.md</a>。</p>
+<h4>与 dsh 生态里其他知识/记忆插件的差异</h4>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>管什么</th>
+<th>检索方式</th>
+<th>反馈</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/omdsh-dev/dsh-kb-sieve">dsh-kb-sieve</a></td>
+<td>md/pdf/docx 知识包</td>
+<td>SQLite FTS5 确定性全文</td>
+<td>无</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Jesse-njx/dsh-memory">dsh-memory</a></td>
+<td>会话日志</td>
+<td>引用式蒸馏记忆</td>
+<td>自动</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness">nowledge-mem</a></td>
+<td>跨工具统一记忆</td>
+<td>Context Bundle 提示时召回</td>
+<td>回合捕获</td>
+</tr>
+<tr>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon">dsh-mnemon</a></td>
+<td>本地三层记忆</td>
+<td>可检索文档</td>
+<td>监督空间</td>
+</tr>
+<tr>
+<td><strong>KnowLP-RAG</strong></td>
+<td><strong>你已有的 Markdown 笔记</strong></td>
+<td><strong>双图 P/S-Agent 依赖链遍历 + 段落 chunk + 混合向量</strong></td>
+<td><strong>显式权重闭环</strong></td>
+</tr>
+</tbody></table>
+<p>KnowLP 不记&quot;聊过什么&quot;，它管的是<strong>笔记之间的结构</strong>：agent 需要背景知识时，得到的是
+该读的三篇笔记和阅读顺序（前置依赖 → 正文 → 相似替代），并且权重随实际使用演化——
+被消费的边 +0.05、被忽略的 -0.02、冷边 ×0.95 衰减。</p>
+<h3>Quick Start</h3>
+<pre><code class="language-bash"># 1. Install
+git clone https://github.com/wly8691-jpg/knowlp-rag.git
+cd knowlp-rag
+pip install -e .
+
+# 2. Point to your notes in config.yaml
+#    vault: &quot;/path/to/your/notes&quot;    ← any Markdown folder
+
+# 3. Build graph
+python build_graph.py
+
+# 4. Search
+python knowlp_search.py &quot;RAG architecture&quot;
+python knowlp_search.py --hybrid &quot;cel shading rendering&quot;
+
+# 5. Evaluate
+python run_eval.py
+</code></pre>
+<h3>Not using Obsidian?</h3>
+<p>KnowLP works with <strong>any folder of Markdown files</strong> — no Obsidian dependency.</p>
+<pre><code class="language-yaml"># Obsidian
+vault: &quot;/home/user/Obsidian/Vault&quot;
+
+# Logseq
+vault: &quot;/home/user/logseq/pages&quot;
+
+# Plain Markdown
+vault: &quot;/home/user/notes&quot;
+
+# Joplin export
+vault: &quot;/home/user/joplin-mds&quot;
+</code></pre>
+<p>The <code>.obsidian/</code> and <code>.trash/</code> directories are auto-ignored — no impact on non-Obsidian users.</p>
+<h3>Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Prerequisite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Core search</td>
+<td>Python 3.11+, pyyaml</td>
+</tr>
+<tr>
+<td>Real embedding</td>
+<td>RTX GPU + Qwen3-VL-Embedding-2B (4GB)</td>
+</tr>
+<tr>
+<td>Visual search</td>
+<td>PixelRAG server on GPU machine</td>
+</tr>
+<tr>
+<td>Honcho integration</td>
+<td>Honcho running on localhost:8000</td>
+</tr>
+<tr>
+<td>Feedback loop</td>
+<td>None — pure JSON log processing</td>
+</tr>
+</tbody></table>
+<h3>Evaluation Baseline</h3>
+<p>20 ground-truth queries × 8 query types, ranked by difficulty (2026-08-14, 775-note vault):</p>
+<pre><code>  P@5:  0.280     MRR&gt;0:  19/20 (95%)
+  R@5:  0.600     Zero recall: 1/20 (5%)
+  MRR:  0.696
+
+Type breakdown (best → worst):
+  exact_keyword:     F1=0.571  ███████████
+  exact_name:        F1=0.500  ██████████
+  multi_term:        F1=0.452  █████████
+  exact_partial:     F1=0.419  ████████
+  natural_language:  F1=0.393  ███████
+  cross_domain:      F1=0.274  █████
+  body_only:         F1=0.250  █████
+  broad_semantic:    F1=0.000  ▁ (pure semantic, PixelRAG-eligible)
+</code></pre>
+<p><strong>Context:</strong> the same queries run through grep return 2–105 files with zero structure — KnowLP reduces &quot;RAG architecture&quot; from 105 raw matches to 3 ranked results with dependency chains. And it gets better over time: the feedback loop raises weights on edges you actually use, making future searches converge on what matters.</p>
+<p>Run it yourself: <code>python run_eval.py</code></p>
+<h3>Configuration</h3>
+<p>All paths in <code>config.yaml</code>:</p>
+<pre><code class="language-yaml">vault: &quot;/path/to/your/notes&quot;
+model_path: &quot;D:\\hf_models\\Qwen3-VL-Embedding-2B&quot;
+honcho_base_url: &quot;http://localhost:8000&quot;
+pixelrag_desktop: &quot;http://100.75.28.20:30001/search&quot;
+</code></pre>
+<p>Or override via environment:</p>
+<pre><code class="language-bash">export KNOWLP_VAULT=&quot;/home/user/notes&quot;
+export KNOWLP_MODEL_PATH=&quot;/models/qwen-embed&quot;
+</code></pre>
+<h3>CLI Commands</h3>
+<pre><code>knowlp-search &quot;query&quot;          # Graph search
+knowlp-search --hybrid &quot;q&quot;     # Graph + vector
+knowlp-build                   # Rebuild graph (preserves weights)
+knowlp-eval                    # Run 20-query evaluation
+knowlp-feedback --session-id X --query &quot;q&quot; --consumed &quot;A||B||pre&quot;
+knowlp-apply                   # Apply accumulated feedback to weights
+</code></pre>
+<h3>File Structure</h3>
+<pre><code>knowlp-rag/
+├── build_graph.py          # Graph builder + chunking
+├── knowlp_search.py        # P/S-Agent search engine
+├── activation_engine.py    # 🧪 Spreading Activation (Phase C, experimental)
+├── triple_hybrid.py        # 🧪 Triple Hybrid fusion (Phase C, experimental)
+├── pagerank.py             # 🧪 PageRank precomputation (Phase C, experimental)
+├── vector_index.py         # n-gram / real embedding index
+├── run_eval.py             # P@5/R@5/MRR evaluation
+├── record_feedback.py      # Feedback logger
+├── apply_feedback.py       # Weight engine (+0.05/-0.02/×0.95)
+├── unified_search.py       # 4-engine unified search
+├── honcho_to_graph.py      # Honcho conversation → graph
+├── server.py               # FastAPI REST server
+├── config.py               # Config loader
+├── config.yaml.example     # User config template
+├── eval_queries.json       # 20 ground-truth queries
+├── knowlp.sh               # Bash convenience wrapper
+└── tests/                  # 6 test files, 36 test cases
+</code></pre>
+<h3>Design Decisions</h3>
+<p><strong>Why dual graph?</strong> Prerequisites (what to read first) and similarities (viable alternatives) are fundamentally different relationships. Mixing them in a single graph degrades both routing and ranking.</p>
+<p><strong>Why paragraph chunking?</strong> Keywords like &quot;cel-shading&quot; often appear only in body text, never in titles. Without chunk-level matching, these queries return zero results.</p>
+<p><strong>Why record/apply split?</strong> Recording feedback and applying weights are separate concerns with different failure modes. Record is append-only (naturally idempotent). Apply preserves <code>_last_feedback_applied</code> timestamp across graph rebuilds to avoid double-counting.</p>
+<p><strong>Why n-gram + real embedding dual-mode?</strong> N-gram index runs on CPU in ~1s — always available. Real embedding requires GPU but provides semantic understanding. When GPU is offline, CPU fallback keeps search working.</p>
+<h3>License</h3>
+<p>MIT © 2026 峄</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/wly8691-jpg/knowlp-rag/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -202,8 +489,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>

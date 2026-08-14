@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">Noelune/</span><wbr><span class="name">unified-agent-memory</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/memory/">记忆</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-unified-agent-memory" rel="noopener" translate="no">dsh-unified-agent-memory</a></span>
@@ -188,7 +189,136 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>统一 Agent 记忆系统（DeepSeek Harness 插件）：<strong>多 Agent 共享一个 Obsidian vault</strong>（dsh / Codex / Claude Code / Hermes…），配零依赖 Python core 完成检索/晋升/冲突裁决/遗忘生命周期。本地优先、零云依赖、5 分钟跑通闭环。</p>
+</blockquote>
+<p><a href="https://www.npmjs.com/package/dsh-unified-agent-memory"><img src="https://img.shields.io/npm/v/dsh-unified-agent-memory" alt="npm version"></a>
+<a href="https://github.com/Noelune/unified-agent-memory/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a></p>
+<h3>为什么需要它——与同类记忆插件的区别</h3>
+<p>大多数记忆插件是单 Agent 的：只记得<em>你自己</em>在<em>你的 harness</em> 里的会话。本项目是一个<strong>供一群 Agent 共享的完整自托管记忆系统</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>unified-agent-memory</th>
+<th>典型单 Agent 记忆插件（dsh-mnemon、dsh-memory…）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dsh + Codex + Claude + Hermes 共享</td>
+<td>✅ 同一 vault、同一份事实</td>
+<td>❌ 仅限单一 harness</td>
+</tr>
+<tr>
+<td>独立 core（不依赖任何 Agent 运行时）</td>
+<td>✅ 纯 Python 标准库，纯 CLI 可用</td>
+<td>❌ 依赖插件宿主</td>
+</tr>
+<tr>
+<td>完整生命周期：晋升/去重/冲突裁决/遗忘</td>
+<td>✅ 内置</td>
+<td>⚠️ 通常只有存+取</td>
+</tr>
+<tr>
+<td>本地优先索引（SQLite FTS5，无云）</td>
+<td>✅ 默认</td>
+<td>不一</td>
+</tr>
+<tr>
+<td>人工确认晋升</td>
+<td>✅ review → apply（auto 需显式开启）</td>
+<td>无</td>
+</tr>
+</tbody></table>
+<p>对比 <strong>sgme</strong>（外部记忆引擎的桥接层）：本仓库是<strong>自带全套的 starter-kit</strong>——vault 模板 + core + 各 Agent 接入 + setup，无服务器也能完整部署。对比 <strong>nowledge-mem</strong>（prompt 召回 MCP 层）：本项目拥有包括晋升与遗忘在内的完整生命周期。</p>
+<h3>包含什么</h3>
+<ul>
+<li><strong>一个 Obsidian vault = 所有 Agent 的最高事实源</strong>（canonical 笔记、写入口提交区、冲突队列、遗忘区）。</li>
+<li><strong>零依赖 Python core</strong>（core/）：memory init|search|show|submit、promoter --review/--apply/--auto/adjudicate、forgetter。零第三方包；不依赖任何 Agent 运行时。</li>
+<li><strong>本地优先语义索引</strong>：本机 SQLite FTS5（~/.unified-memory/index.db）——隐私不出本机；远端索引为可选进阶。</li>
+<li><strong>安全默认</strong>：凭据样式的行在提交时拒绝、输出时脱敏；检索结果包在  标记内（数据而非指令）；晋升默认人工确认；文件锁 + 原子写保证多 Agent 并发安全。</li>
+<li><strong>dsh 一等公民</strong>：cordis 插件注册 memory_search / memory_show / memory_submit / memory_status 模型工具，未配置时优雅降级。</li>
+<li><strong>Codex / Claude / Hermes 接入</strong>：现成的 AGENTS.md / CLAUDE.md 模板与 hooks 示例。</li>
+</ul>
+<h3>快速开始（5 步，无服务器、无 Hermes）</h3>
+<pre><code># 1. 获取代码并安装零依赖 core
+git clone https://github.com/Noelune/unified-agent-memory.git &amp;&amp; cd unified-agent-memory
+pip install -e ./core
+
+# 2. 一键初始化 vault（完整模板 + 配置）
+python setup/setup.py init --vault ~/Documents/AgentMemory
+
+# 3. 接入你的 Agent（任选）
+dsh plugin --profile web add dsh-unified-agent-memory   # + 配置 vaultPath/UNIFIED_MEMORY_VAULT
+cp AGENTS.md ~/.codex/AGENTS.md                          # Codex
+cp CLAUDE.md ~/.claude/CLAUDE.md                         # Claude Code
+
+# 4. 写一条、查一条
+memory submit &quot;the staging server runs on 127.0.0.1:8080&quot; --agent alpha
+memory search &quot;staging server&quot;
+
+# 5. 晋升到 canonical（默认人工确认）
+python -m unified_memory.promoter --review
+python -m unified_memory.promoter --apply
+</code></pre>
+<p>完整部署：docs/DEPLOY.md · 架构：docs/ARCHITECTURE.md · 安全：docs/SECURITY.md</p>
+<h3>仓库结构</h3>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>core/</td>
+<td>零依赖 Python 包：memory.py（init/search/show/submit）、promoter.py（review/apply/adjudicate）、forgetter.py、conflict.py</td>
+</tr>
+<tr>
+<td>vault-template/</td>
+<td>可整体复制的 Obsidian vault：7 个 canonical 笔记 + 提交区 + 情境信息 + 记忆遗忘区</td>
+</tr>
+<tr>
+<td>lib/</td>
+<td>dsh 插件：memory_search / memory_show / memory_submit / memory_status 工具</td>
+</tr>
+<tr>
+<td>integrations/</td>
+<td>AGENTS.md（Codex）、CLAUDE.md（Claude）、Hermes hooks 示例</td>
+</tr>
+<tr>
+<td>setup/</td>
+<td>setup.py（init/cron/selfcheck）、selfcheck.py</td>
+</tr>
+<tr>
+<td>docs/</td>
+<td>ARCHITECTURE / DEPLOY / SECURITY</td>
+</tr>
+</tbody></table>
+<h3>环境要求</h3>
+<ul>
+<li>Python ≥ 3.10（core；仅标准库）</li>
+<li>Node.js ≥ 20 + dsh 0.1.0-rc.6（仅 dsh 插件需要）</li>
+<li>推荐用 Obsidian 浏览 vault，但非必需——一切皆纯 Markdown + SQLite。</li>
+</ul>
+<h3>维护状态</h3>
+<ul>
+<li>维护者：<a href="https://github.com/Noelune">Noelune</a></li>
+<li><strong>社区维护</strong>：接受 issue/PR，不承诺 SLA；缺陷修复通常 1–2 周内响应，安全漏洞优先。</li>
+<li>兼容性：针对 <strong>dsh 0.1.0-rc.6</strong> 测试；dsh API 变动在 CHANGELOG.md 记录升级说明。</li>
+<li>许可：<strong>MIT</strong>，允许商用。</li>
+</ul>
+<h3>安全</h3>
+<p>详见 docs/SECURITY.md。要点：vault 内容一律视为数据而非指令；明文凭据永不进 vault；默认索引不出本机；晋升人工确认 + 文件锁 + 原子写。</p>
+<h3>贡献</h3>
+<p>欢迎 PR。提交前请运行 python -m unittest discover -s core/tests（core）；CI 每次 push 自动跑 core 单测、gitleaks 密钥扫描与许可证检查。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Noelune/unified-agent-memory/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -203,7 +333,7 @@ footer p+p{margin-top:.5rem}
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/LoserFox/distill/" tabindex="-1"><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 13</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
       <li><h3><a href="/zh/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/zh/p/modusensus/dsh-mneme/" tabindex="-1"><p>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</p></a></li>
       <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></a></li>
       <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></a></li>

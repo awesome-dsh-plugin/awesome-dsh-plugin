@@ -305,16 +305,10 @@ footer p+p{margin-top:.5rem}
 <p><strong>Recommended — one command</strong> (requires the <code>dsh</code> CLI):</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:Smalldy/godot-bridge
 </code></pre>
-<p>The package ships a <code>dsh.bundle</code> manifest (<code>cordis.patch.yml</code>) that inserts the <code>tool-godot-bridge</code> row into your profile. After a restart, the fifteen <code>godot_*</code> tools are available in every session on that profile. Listed in the <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> community registry (topic: <code>dsh-plugin</code>).</p>
-<p><strong>No dsh CLI? Manual install</strong> — copy <code>plugin/godot-bridge.mjs</code> to your user preset and add one row to its <code>agent.cordis.yml</code>:</p>
-<pre><code>${DSH_HOME:-~/.dsh}/.agent-presets/&lt;your-preset&gt;/plugins/godot-bridge.mjs
-</code></pre>
-<pre><code class="language-yaml">- id: tool-godot-bridge
-  name: &#39;./plugins/godot-bridge.mjs&#39;
-</code></pre>
-<p>Then start a session on that preset — the fifteen <code>godot_*</code> tools are available. (Validate the mount with <code>agentPresets.standingKeyFor(&#39;&lt;your-preset&gt;&#39;)</code> if you want to check before launching.)</p>
+<p><code>dsh plugin</code> is a pnpm forwarder: it installs the package into the profile&#39;s <code>node_modules</code> and — because the package declares <code>dsh.bundle</code> (its <code>cordis.patch.yml</code> inserts the <code>tool-godot-bridge</code> row) — appends it to the profile&#39;s <code>dsh.profile.bundles</code> layer list. The <code>web</code> profile is the standard one the Web app already boots from, so this simply adds the tools to standard mode — <strong>no new profile is created</strong>. After a restart, the fifteen <code>godot_*</code> tools are available in every session on that profile. Listed in the <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> community registry (topic: <code>dsh-plugin</code>).</p>
+<p>The same command installs a local checkout or tarball (<code>dsh plugin --profile web add ./path/to/godot-bridge</code>).</p>
 <blockquote>
-<p>The module is deliberately <strong>zero-import</strong>: user presets live under <code>~/.dsh</code>, where Node cannot resolve the harness&#39;s <code>node_modules</code>. It builds tool definitions with hand-written JSON Schema and registers them via <code>ctx.tools.register</code> (which validates <code>output.render</code> / <code>output.schema</code> / <code>timeoutMs</code>, no <code>defineTool</code> import needed).</p>
+<p>The plugin is a standard DSH bundle module: it imports <code>defineTool</code> from <code>@deepseek-ai/dsh-tools</code> and registers via <code>ctx.tools.register</code>. It must be installed through the bundle mechanism above — the harness heals the shared <code>@deepseek-ai/*</code> dependency layer inside the profile&#39;s <code>node_modules</code>, which is what makes the import resolve. Do not copy the file into a user agent preset (<code>~/.dsh/.agent-presets/...</code>); Node cannot resolve <code>@deepseek-ai/dsh-tools</code> from that location.</p>
 </blockquote>
 <h3>Usage</h3>
 <pre><code class="language-text">godot_run_project            # start the game (default: current workspace)
@@ -336,7 +330,7 @@ godot_stop_project           # done
 <li><strong>Real exe, not the gdvm shim</strong>: the gdvm shim exits immediately and orphans the real Godot; process management misjudges it as dead.</li>
 </ul>
 <h3>Project layout</h3>
-<pre><code>plugin/godot-bridge.mjs           # the plugin (zero-import ESM module, named exports)
+<pre><code>plugin/godot-bridge.mjs           # the plugin (standard DSH module, named exports name/inject/apply)
 plugin/mcp_interaction_server.gd  # vendored from godot-mcp (MIT) — in-game TCP server autoload
 plugin/godot_operations.gd        # vendored from godot-mcp (MIT) — headless ops script
 plugin/validate_script.gd         # vendored from godot-mcp (MIT) — GDScript compile-check
@@ -365,8 +359,8 @@ COVERAGE.md / COVERAGE.zh-CN.md   # full tool-by-tool comparison vs godot-mcp
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

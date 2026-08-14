@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">Cavan-Ou/</span><wbr><span class="name">hermes-dsh-collab</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/skill/">技能包</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,98 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>把 DeepSeek Harness 接进你的 Hermes 管线：派单、执行、验收全自动——质量门不信任自报。</strong></p>
+<p><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT">
+<img src="https://img.shields.io/badge/DSH-0.1.0--rc.6-orange" alt="DSH">
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/GitHub-dsh--plugin-0969da?style=flat-square" alt="dsh-plugin"></a>
+<img src="https://img.shields.io/badge/Hermes-ready-9B30FF?style=flat-square" alt="Hermes"></p>
+<p>你的 AI 助手能自己干一整天活，问题是：你敢放手吗？</p>
+<p>这个 skill 让放手变得安全：Hermes 写派单 spec，DSH 执行，Hermes 验收——只有质量门真失败时才轮到你介入。从一条真实跑过的 14 天管线提炼（30 个 commit，7/7 阶段零返工交付）。</p>
+<p><strong>依赖：</strong> DSH 0.1.x（headless profile）+ 任意编排方 agent（用 Hermes 构建并实测）。</p>
+<hr>
+<h3>为什么需要它</h3>
+<p>Hermes 是你的个人助手，DSH 是能干活的执行器。缺的是两者之间的<strong>运行契约</strong>：一份合格的派单 spec 长什么样、哪个阶段用哪档模型、谁有资格 commit、验证到底怎么做。</p>
+<p>大多数管线跳过这份契约，然后为返工买单。最近的工作（<a href="https://arxiv.org/abs/2504.02095">COPE</a>）证明 planner/executor 分离有效——但前提是执行方的行为被约束。这个 skill 固化的就是这些约束，全部来自一条实测过的管线：</p>
+<ul>
+<li><strong>模型分层路由</strong> —— 常规阶段 Flash（<code>reasoning: max</code>），多文件重构/长提炼 Pro，视觉 qwen。拿不准先 Flash 试一轮——返工就升级</li>
+<li><strong>Spec 三铁律</strong> —— Plan 先行 · 测试先行（TDD 红→绿）· 范围声明。缺一不派单</li>
+<li><strong>Git 唯一写者</strong> —— 只有编排方 commit。执行方永远不碰 git，历史保持线性可审计</li>
+<li><strong>质量门归编排方</strong> —— 全量测试 + build + diff 对照范围 + 真浏览器走查。自报不算证据</li>
+<li><strong>写回靠启动目录</strong> —— <code>cd &lt;项目&gt; &amp;&amp; dsh --profile headless &quot;任务&quot;</code> 直接写回。不要 /tmp 镜像，不要 patch 交接</li>
+<li><strong>踩坑都有实锤</strong> —— 每一条都是真实事故：patch 配置是整段替换（不是深合并）、qwen 不支持 <code>reasoning: max</code>、vision patch 不改主模型、旧后端进程会让&quot;测试全绿&quot;验到旧代码……</li>
+</ul>
+<h3>快速开始</h3>
+<pre><code class="language-bash"># 方式一：dsh plugin 安装（bundle，推荐）
+dsh plugin --profile headless add github:Cavan-Ou/hermes-dsh-collab
+
+# 方式二：直接复制 skill 包（轻量，任意 profile）
+git clone https://github.com/Cavan-Ou/hermes-dsh-collab
+cp -r skills/hermes-dsh-collab &quot;$DSH_HOME/skills/&quot;   # 默认：~/.dsh/skills/
+</code></pre>
+<p>任选其一，下次 DSH 会话自动加载（bundle 注册 skill provider；复制方式由 skills 扫描器发现）。</p>
+<p>三个验证：</p>
+<ol>
+<li>新会话的技能列表出现 <code>hermes-dsh-collab</code></li>
+<li>说&quot;帮我写一份派单任务书&quot;——按场景自动触发</li>
+<li>问&quot;执行者可以自己 git commit 吗？&quot;——它回答<strong>不可以</strong>，并解释原因（唯一写者约定）</li>
+</ol>
+<h3>里面有什么</h3>
+<pre><code>skills/hermes-dsh-collab/
+├── SKILL.md                      # 判断指引：阻断项 → 判断表格 → What NOT to do
+└── references/                   # 按需加载，保持主文件精简
+    ├── spec-template.md          # 可复制的派单 spec 模板（三铁律 + 不 commit 条款）
+    ├── model-routing.md          # 档位表 + patch 机制 + 三个 patch 坑
+    ├── quality-gates.md          # 质量门四步命令 + 回炉/升级链
+    └── pitfalls.md               # 10 条真实踩坑清单（症状 → 根因 → 对策）
+</code></pre>
+<p>写法对齐 DeepSeek 官方仓库自用 skill（见 <a href="https://github.com/deepseek-ai/deepseek-harness">deepseek-ai/deepseek-harness</a> 的 <code>.agents/skills</code>）：引导式而非清单 · 指明真源而非复述 · 专门的 &quot;What NOT to do&quot; 节。</p>
+<blockquote>
+<p><strong>安装形态说明</strong>：两种方式都支持——bundle（<code>dsh plugin add</code>，官方分发路径，已在 DSH 0.1.0-rc.6 实测）与直接复制（<code>$DSH_HOME/skills/</code>，轻量免构建）。</p>
+</blockquote>
+<h3>实测结果</h3>
+<table>
+<thead>
+<tr>
+<th>结果</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>质量门自动抓系统性错误</strong></td>
+<td>一次长提炼（74 份设计文档，约 60 万 token）中，验证环节揪出 <strong>3 条方向完全相反的反判据</strong> + 一个&quot;全宇宙特征&quot;（发丝线在 5 个流派 78–100% 高频）——这类错误人工检查要数小时且大概率漏掉</td>
+</tr>
+<tr>
+<td>Flash 常规阶段零返工</td>
+<td>3/3 阶段——TDD 红→绿，质量门全绿，真浏览器走查通过</td>
+</tr>
+<tr>
+<td>skill 真的改变行为</td>
+<td>真实会话：加载后 DSH 拒绝 commit 并复述唯一写者规则</td>
+</tr>
+</tbody></table>
+<p><strong>人工只在升级链上介入</strong>：质量门失败，或同一阶段重试两次。其余全自动。</p>
+<h3>文档</h3>
+<ul>
+<li><code>SKILL.md</code> —— 判断指引本体（先读这个）</li>
+<li><code>REPORT.md</code> —— 构建报告：设计决策、自测方法（隔离 <code>DSH_HOME</code> 验证）、遗留项</li>
+</ul>
+<p><strong>路线图：</strong> 按工作区隔离失败记录 · 路由表从观测卡活体刷新 · references 英文镜像</p>
+<blockquote>
+<p><strong>可移植性说明</strong>：skill 的&quot;真源&quot;指向工作区专属路径（如 <code>~/.dsh/profiles/headless/*.patch.yml</code>）。规则本身可移植——把路径换成你的工作区即可。</p>
+</blockquote>
+<h3>贡献</h3>
+<p>这个 skill 靠真实使用长大。遇到清单里没有的坑？开 issue 带上事故现场（症状 → 根因 → 对策）。中英文 PR 都欢迎。</p>
+<h3>License</h3>
+<p>MIT</p>
+<hr>
+<p><em>不是读文档写出来的，是跑真实管线跑出来的。</em></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Cavan-Ou/hermes-dsh-collab/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -202,7 +294,7 @@ footer p+p{margin-top:.5rem}
       <li><h3><a href="/zh/p/dhicoc/dsh-reverse-skill/" translate="no">dhicoc/dsh-reverse-skill</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/dhicoc/dsh-reverse-skill/" tabindex="-1"><p>完整 reverse-skill（85 个 SKILL.md）的 DeepSeek Harness 插件：逆向工程、授权渗透测试与安全研究的技能路由包。</p></a></li>
       <li><h3><a href="/zh/p/YTxue/dsh-skill-manager-ytxue/" translate="no">YTxue/dsh-skill-manager-ytxue</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/YTxue/dsh-skill-manager-ytxue/" tabindex="-1"><p>设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。</p></a></li>
       <li><h3><a href="/zh/p/lunw/shopline-ai-toolkit-dsh/" translate="no">lunw/shopline-ai-toolkit-dsh</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/lunw/shopline-ai-toolkit-dsh/" tabindex="-1"><p>SHOPLINE AI 工具包：接入 SHOPLINE 官方开发者 MCP 服务器，内置七个 SHOPLINE 平台技能（Admin REST、GraphQL、OAuth、Webhook、Sline），是 Shopify AI Toolkit 的 SHOPLINE 对应版。</p></a></li>
-      <li><h3><a href="/zh/p/zhaiyateng/dsh-design-skills/" translate="no">zhaiyateng/dsh-design-skills</a></h3><a class="desc-link" href="/zh/p/zhaiyateng/dsh-design-skills/" tabindex="-1"><p>设计美学技能包：6 种风格（深色 SaaS、极简白、新拟态、粗野主义、毛玻璃、日式极简），每种含 token、组件规则、禁用清单与验收清单，附可运行落地页 demo。</p></a></li>
+      <li><h3><a href="/zh/p/zhaiyateng/dsh-design-skills/" translate="no">zhaiyateng/dsh-design-skills</a><span class="stars" translate="no">★ 0</span></h3><a class="desc-link" href="/zh/p/zhaiyateng/dsh-design-skills/" tabindex="-1"><p>设计美学技能包：6 种风格（深色 SaaS、极简白、新拟态、粗野主义、毛玻璃、日式极简），每种含 token、组件规则、禁用清单与验收清单，附可运行落地页 demo。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/skill/">查看整个分类 →</a>
   </section>

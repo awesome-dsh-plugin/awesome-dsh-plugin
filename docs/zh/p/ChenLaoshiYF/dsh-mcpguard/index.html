@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">ChenLaoshiYF/</span><wbr><span class="name">dsh-mcpguard</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,116 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness (dsh) 安全扫描插件：扫描 skill 文件、MCP 配置与工具描述，检测<strong>提示注入、同形字混淆、Unicode 隐形字符、危险 shell、凭据泄露</strong>。</p>
+<p><strong>DSH 生态首个安全类插件</strong>（截至 2026-08 调研，163 个社区插件中安全方向空白）。</p>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add &quot;github:ChenLaoshiYF/dsh-mcpguard&quot;
+</code></pre>
+<p>或在管理面板 Settings → Plugins 中安装。重启 <code>dsh --profile web</code> 生效。</p>
+<h3>工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>mcpguard_scan</code></td>
+<td>扫描本机默认位置（MCP 配置 + skill 目录）</td>
+</tr>
+<tr>
+<td><code>mcpguard_scan_path</code></td>
+<td>扫描指定目录或文件</td>
+</tr>
+</tbody></table>
+<h3>检测规则</h3>
+<p>与 mcpguard 主项目同一套引擎（Python / Go / TS 三实现规则一致）：</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>规则</th>
+<th>严重度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UNI-001</td>
+<td>Unicode 隐形字符（零宽/Bidi/私有区）</td>
+<td>high</td>
+</tr>
+<tr>
+<td>B64-001</td>
+<td>可疑 base64 长串</td>
+<td>medium</td>
+</tr>
+<tr>
+<td>INJ-001</td>
+<td>指令覆盖（ignore previous instructions）</td>
+<td><strong>critical</strong></td>
+</tr>
+<tr>
+<td>INJ-002</td>
+<td>角色扮演注入（&quot;从现在开始你是…&quot;）</td>
+<td><strong>critical</strong></td>
+</tr>
+<tr>
+<td>INJ-003</td>
+<td>多语言指令覆盖（日語/韓語指令忽略）</td>
+<td>high</td>
+</tr>
+<tr>
+<td>PTH-001</td>
+<td>敏感路径（~/.ssh、token、.env）</td>
+<td>high</td>
+</tr>
+<tr>
+<td>SHL-001</td>
+<td>危险 shell（curl|sh、eval、IEX）</td>
+<td><strong>critical</strong></td>
+</tr>
+<tr>
+<td>PWD-001</td>
+<td>密码赋值形态</td>
+<td>info</td>
+</tr>
+<tr>
+<td>BH-001</td>
+<td>静默外发/工具行为异常</td>
+<td>high</td>
+</tr>
+<tr>
+<td>HMG-001</td>
+<td>同形字混淆（西里尔/数学体）</td>
+<td>high</td>
+</tr>
+</tbody></table>
+<p>报告自动脱敏：API key、GitHub token、SSH 私钥块、JWT → <code>***</code>。</p>
+<h3>开发</h3>
+<pre><code class="language-bash">npm install
+npm run build     # 编译到 lib/
+node test/smoke.mjs  # 运行自测（19 项）
+</code></pre>
+<h3>配置</h3>
+<pre><code class="language-yaml"># cordis.patch.yml
+- insert:
+    - id: mcpguard
+      name: dsh-mcpguard
+      config:
+        sensitivity: medium   # low/medium/high
+        scanOnStartup: false  # 启动时自动扫描
+</code></pre>
+<h3>隐私</h3>
+<p>完全本地运行，零网络请求，零遥测。</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ChenLaoshiYF/dsh-mcpguard/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,8 +308,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>

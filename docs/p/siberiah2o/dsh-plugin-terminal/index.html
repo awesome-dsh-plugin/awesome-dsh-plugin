@@ -219,9 +219,25 @@ footer p+p{margin-top:.5rem}
 <ul>
 <li>Bottom panel pinned to the viewport, aligned with the conversation column; the input box always stays above the terminal</li>
 <li>`Ctrl+`` toggles; drag the top grip to resize (120px–78% viewport, remembered)</li>
-<li>Multi-tab: <code>+</code> new, ✕ close, ⟳ restart; processes keep running on tab switch; live sessions restore after refresh</li>
-<li>xterm.js 6: colors, blinking cursor, alternate screen, Unicode, 5000-line scrollback</li>
+<li>Multi-tab: <code>+</code> new, ✕ close, ⟳ restart; processes keep running on tab switch; live sessions restore after refresh or workspace switch</li>
+<li><strong>Terminals survive dsh web restarts</strong>: session metadata + scrollback are persisted live to <code>$DSH_HOME/plugin-data/terminal/</code>; after a restart they come back as &quot;exited&quot; history tabs (full screen replay, one-click restart of the process); tabs you closed stay closed</li>
+<li><strong>Terminals survive dsh web restarts</strong>: session metadata + scrollback are persisted live to <code>$DSH_HOME/plugin-data/terminal/</code>; after a restart they come back as &quot;exited&quot; history tabs (full screen replay, one-click restart of the process); tabs you closed stay closed</li>
+<li>xterm.js 6: colors, blinking cursor, alternate screen, Unicode v11 (CJK width tables), 10000-line scrollback</li>
 <li>WebSocket duplex channel to the PTY; dark terminal surface in both light and dark themes</li>
+</ul>
+<h3>Running codex / claude code in the panel</h3>
+<p>These AI coding CLIs are full-screen TUIs (ANSI escapes + alternate screen + truecolor) and demand a lot from the terminal link. The plugin is tuned for them:</p>
+<ul>
+<li>Child env gets TERM=xterm-256color and COLORTERM=truecolor (when unset), plus LANG/LC_ALL=en_US.UTF-8 and PYTHONIOENCODING=utf-8 on non-Windows, preventing 256-color fallback and CJK mojibake</li>
+<li>xterm.js 6 answers OSC 10/11/12 queries out of the box (Codex theme detection via background-color query just works)</li>
+<li>unicodeVersion &quot;11&quot; keeps mixed CN/EN output aligned; drawBoldTextInBrightColors: false keeps true colors on bold text; CJK fallbacks in the font stack; 10000-line scrollback (500k-char server ring buffer)</li>
+</ul>
+<p>If rendering still misbehaves:</p>
+<ul>
+<li><strong>Claude Code</strong>: run /tui fullscreen in the session (or CLAUDE_CODE_NO_FLICKER=1 claude) to switch to the flicker-free fullscreen renderer; /tui default reverts</li>
+<li><strong>Inside tmux</strong>: make sure TERM=tmux-256color and tmux &gt;= 3.4, add <code>set -ga terminal-overrides &#39;,xterm-256color:RGB&#39;</code> if needed</li>
+<li><strong>Windows mojibake</strong>: use Windows Terminal, chcp 65001, enable the &quot;Beta: Use Unicode UTF-8&quot; system option; fall back to WSL if it persists</li>
+<li><strong>Update the CLI</strong>: most rendering bugs are regressions already fixed in newer versions</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
@@ -242,12 +258,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

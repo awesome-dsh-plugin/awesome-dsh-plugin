@@ -200,57 +200,76 @@ footer p+p{margin-top:.5rem}
 <li><strong>Transparent to the user.</strong> Uploaded images keep rendering as images in the conversation UI; the rewrite that points the model at the vision tools happens only inside the model call, never in the session log.</li>
 </ul>
 <h3>How it compares</h3>
-<p>The closest alternative is <a href="https://github.com/Anionex/dsh-vision-toolkit">@anionex/dsh-vision-toolkit</a> (Anionex), a native DSH bundle of the well-known <code>agent-vision-toolkit</code> lineage. Both packages ship a <code>vision-tools</code> skill and a family of pixel-level tools; they differ in philosophy — <strong>zero-config paste-and-go</strong> versus <strong>agent-driven visual engineering</strong>:</p>
+<p>Most DSH vision plugins feed DeepSeek a <em>text description</em> of the image. This plugin keeps the <strong>original pixels on the vision model&#39;s side</strong>, ships a <strong>built-in free chain</strong>, and treats looking at an image as an <strong>ordinary tool call</strong> — paste it and it just works, multi-step until done.</p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>dsh-vision-router</th>
+<th>Manual model switching</th>
+<th>Description bridges (dsh-vision-sidecar · dsh-vision-proxy · dsh-vision · dsh-tool-vision)</th>
 <th>@anionex/dsh-vision-toolkit</th>
+<th>modlens</th>
+<th>dsh-vision-router</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Image Q&amp;A out of the box</td>
-<td>✅ Built-in free chain (anonymous OVHcloud endpoint) — no account, no key</td>
-<td>Requires your own vision API key (local pixel tools work without one)</td>
+<td>Works out of the box, no key</td>
+<td>❌</td>
+<td>partial</td>
+<td>❌ remote tools need your own key</td>
+<td>❌ needs your own key</td>
+<td>✅ built-in keyless vision chain</td>
 </tr>
 <tr>
-<td>Runtime</td>
-<td>✅ Node only — no Python</td>
-<td>Python 3.11+ managed runtime</td>
+<td>Original-pixel fidelity</td>
+<td>✅ after manual switching</td>
+<td>❌ text description only</td>
+<td>✅</td>
+<td>✅ structured evidence</td>
+<td>✅ original pixels + pixel tools</td>
 </tr>
 <tr>
-<td>Getting an image in</td>
-<td>✅ Paste it — the turn auto-routes to the vision chain and auto-mounts the tools</td>
-<td>Workspace path + <code>/vision-tools</code> command, then explicit tool calls</td>
+<td>No per-turn manual switching</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ auto tool mounting + stealth routing</td>
 </tr>
 <tr>
-<td>Turn routing</td>
-<td>✅ Image turns switch to vision, text turns switch back to DeepSeek — stealth takeover, the model picker looks stock</td>
-<td>Tool-driven; no whole-turn auto-routing</td>
+<td>Daily model untouched</td>
+<td>❌ session swapped</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ DeepSeek stays the brain</td>
 </tr>
 <tr>
-<td>Profiles</td>
-<td>Web</td>
-<td>Web + Headless</td>
+<td>Multi-provider fallback with classified errors</td>
+<td>❌</td>
+<td>❌</td>
+<td>partial</td>
+<td>—</td>
+<td>✅ chain + 429 backoff + downscale</td>
 </tr>
 <tr>
-<td>Playbooks</td>
-<td>The pixel loop: ground → crop → diff → fix → screenshot again</td>
-<td>Richer case library (long-screenshot OCR, UI restoration, GUI automation)</td>
+<td>No Python runtime</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌ Python 3.11+</td>
+<td>✅</td>
+<td>✅ Node only</td>
 </tr>
 <tr>
-<td>Tests</td>
-<td>86</td>
-<td>162</td>
-</tr>
-<tr>
-<td>Install</td>
-<td>One command</td>
-<td>One command (npm)</td>
+<td>One-command install</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ bundle patch, zero file edits</td>
 </tr>
 </tbody></table>
-<p>Both are MIT-licensed and one command away. Pick this plugin when you want images to <em>just work</em> with zero setup; pick theirs when you need headless profiles or the extended playbook library. (Feature comparison reflects their README as of 2026-08.)</p>
+<p>Want the pixel loop instead? All five routes converge on the same <code>vision_*</code> tool family — grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots — so you can mix and match as you like.</p>
 <h3>Quick start</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-vision-router
 </code></pre>
@@ -524,8 +543,8 @@ dsh --profile web --dump-config | grep vision-router   # one row, mounted by the
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

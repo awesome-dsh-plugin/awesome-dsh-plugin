@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">Noelune/</span><wbr><span class="name">dsh-agent-relay</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/workflow/">工作流与自动化</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-agent-relay" rel="noopener" translate="no">dsh-agent-relay</a></span>
@@ -188,7 +189,110 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>多 Agent 协作中继（DeepSeek Harness 插件）：让本机各 Agent（dsh / Codex / Claude / Hermes / OpenClaw…）经一个轻量、HMAC 认证的 broker 互相收发消息。默认单机回环、零第三方依赖、5 分钟跑通闭环。</p>
+</blockquote>
+<p><a href="https://www.npmjs.com/package/dsh-agent-relay"><img src="https://img.shields.io/npm/v/dsh-agent-relay" alt="npm version"></a>
+<a href="https://github.com/Noelune/dsh-agent-relay/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a></p>
+<h3>为什么需要它</h3>
+<p>Agent 框架给每个 Agent 一张&quot;嘴&quot;，却没有&quot;对讲机&quot;。dsh、Codex、Claude、Hermes 共处一台机器时，彼此之间没有互发消息的通道——除非你自己搭。<strong>dsh-agent-relay 就是这条通道</strong>：一个完整可部署的 starter-kit（broker + dsh 插件 + CLI 客户端 + Python 客户端 + setup 脚本），任何人都能在几分钟内部署。</p>
+<ul>
+<li><strong>不是编排引擎</strong>：不管 workflow/DAG/调度，只负责&quot;把消息送到&quot;。</li>
+<li><strong>不是记忆系统</strong>：不落库消息内容（除未读排队外）。共享记忆请用 <a href="https://github.com/Noelune/unified-agent-memory">unified-agent-memory</a>。</li>
+<li><strong>不是聊天服务器</strong>：没有房间概念，只有在线/离线心跳。</li>
+</ul>
+<h3>特性</h3>
+<ul>
+<li><strong>协议先行</strong>：一份版本化 wire protocol（<a href="https://github.com/Noelune/dsh-agent-relay/blob/main/docs/PROTOCOL.md">docs/PROTOCOL.md</a>），所有适配器（JS 插件 / JS CLI / Python 客户端）按同一协议实现，天然互通。</li>
+<li><strong>默认单机、零配置</strong>：broker 默认监听 127.0.0.1:19121，无需服务器 / TLS / 云。</li>
+<li><strong>HMAC-SHA256 认证</strong>：时间戳防重放、连续失败 5 次锁定 5 分钟、按 IP 限流。</li>
+<li><strong>可靠投递</strong>：增量轮询游标、7 天 TTL、JSONL 落盘重启不丢、2/4/8s 退避重试、消息 id 幂等（发送端重试 + 接收端去重）。</li>
+<li><strong>dsh 一等公民</strong>：cordis 插件注册 relay_send / relay_recv / relay_peers / relay_history 模型工具，另附可选侧边栏状态面板。</li>
+<li><strong>隐私设计</strong>：broker 与插件只记 id 与事件，不记消息内容。</li>
+<li><strong>分布式（可选进阶）</strong>：一台 broker、多台机器，文档强制要求 TLS。</li>
+</ul>
+<h3>快速开始（5 步，单机）</h3>
+<pre><code># 1. 克隆
+git clone https://github.com/Noelune/dsh-agent-relay.git &amp;&amp; cd dsh-agent-relay
+# 2. 生成配置与随机密钥
+node setup/setup.js init
+# 3. 启动 broker
+node setup/setup.js start
+# 4. 另开终端，接入两个 agent
+export DSH_RELAY_SECRET=&lt;broker/config.yaml 里的 secret&gt;
+node adapters/cli/relay.mjs register --agent alpha --secret $DSH_RELAY_SECRET
+node adapters/cli/relay.mjs register --agent beta  --secret $DSH_RELAY_SECRET
+# 5. 互发消息
+node adapters/cli/relay.mjs send beta &quot;hello from alpha&quot; --agent alpha --secret $DSH_RELAY_SECRET
+node adapters/cli/relay.mjs recv --agent beta --secret $DSH_RELAY_SECRET
+</code></pre>
+<p>装 dsh 插件（替代 CLI 接入）：</p>
+<pre><code>dsh plugin --profile web add dsh-agent-relay
+export DSH_RELAY_AGENT=dsh-agent DSH_RELAY_SECRET=&lt;secret&gt;
+# 重启 web profile 后，模型即获得 relay_send / relay_recv / relay_peers 工具
+</code></pre>
+<p>完整部署：docs/DEPLOY.md · 协议：docs/PROTOCOL.md · 架构：docs/ARCHITECTURE.md · 安全：docs/SECURITY.md</p>
+<h3>仓库结构</h3>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>broker/</td>
+<td>中继服务（零依赖 Node；config / HMAC 认证 / JSONL 存储 / HTTP 服务）+ Dockerfile</td>
+</tr>
+<tr>
+<td>lib/</td>
+<td>dsh 插件：模型工具 + relay 客户端库（CLI 复用）</td>
+</tr>
+<tr>
+<td>adapters/cli/</td>
+<td>零依赖 Node CLI 客户端</td>
+</tr>
+<tr>
+<td>adapters/hermes/</td>
+<td>纯标准库 Python 客户端 + Hermes 风格接入示例</td>
+</tr>
+<tr>
+<td>adapters/openclaw/</td>
+<td>OpenClaw 接入说明</td>
+</tr>
+<tr>
+<td>setup/</td>
+<td>setup.js（init/start/selfcheck）、selfcheck.js、可选 docker-compose 演示</td>
+</tr>
+<tr>
+<td>docs/</td>
+<td>PROTOCOL（规范）/ ARCHITECTURE / DEPLOY / SECURITY</td>
+</tr>
+</tbody></table>
+<h3>环境要求</h3>
+<ul>
+<li>Node.js ≥ 20（broker / CLI / dsh 插件）</li>
+<li>Python ≥ 3.10（仅 Python 客户端需要，可选）</li>
+<li>dsh 0.1.0-rc.6（已测试；dsh 插件需要）</li>
+</ul>
+<h3>维护状态</h3>
+<ul>
+<li>维护者：<a href="https://github.com/Noelune">Noelune</a></li>
+<li><strong>社区维护</strong>：接受 issue/PR，不承诺 SLA；缺陷修复通常 1–2 周内响应，安全漏洞优先。</li>
+<li>兼容性：针对 <strong>dsh 0.1.0-rc.6</strong> 测试；dsh 本体为 rc 版，API 变动在 CHANGELOG.md 记录升级说明。</li>
+<li>许可：<strong>MIT</strong>，允许商用。</li>
+</ul>
+<h3>安全</h3>
+<p>详见 docs/SECURITY.md。要点：HMAC 防伪造、TLS 防窃听；默认用回环模式；<strong>绝不要把明文 broker 暴露到网络</strong>。所有收到的 relay 消息一律视为不可信数据，而非指令。</p>
+<h3>贡献</h3>
+<p>欢迎 PR。提交前请运行 npm test；CI 每次 push 自动跑单测、gitleaks 密钥扫描与许可证检查。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Noelune/dsh-agent-relay/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -202,9 +306,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 238</span></h3><a class="desc-link" href="/zh/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams 多智能体团队。</p></a></li>
+      <li><h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 241</span></h3><a class="desc-link" href="/zh/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams 多智能体团队。</p></a></li>
       <li><h3><a href="/zh/p/icetomoyo/dsh_workflow/" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 54</span></h3><a class="desc-link" href="/zh/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。</p></a></li>
-      <li><h3><a href="/zh/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 42</span></h3><a class="desc-link" href="/zh/p/btspoony/mstar-harness/" tabindex="-1"><p>技能驱动的 harness/loop 工程化工作流插件。</p></a></li>
+      <li><h3><a href="/zh/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 43</span></h3><a class="desc-link" href="/zh/p/btspoony/mstar-harness/" tabindex="-1"><p>技能驱动的 harness/loop 工程化工作流插件。</p></a></li>
       <li><h3><a href="/zh/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/zh/p/titanwings/dsh-automation/" tabindex="-1"><p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p></a></li>
       <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>自适应深度研究编排器（基于官方 workflow 引擎）。</p></a></li>

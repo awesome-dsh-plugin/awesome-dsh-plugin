@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">omdsh-dev/</span><wbr><span class="name">DSH-better-sidebar</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 724</b></span>
+        <span>Star 数 <b>★ 728</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -191,7 +191,7 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86">https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86</a></p>
 <h3>🆕 最近更新</h3>
-<p>v0.12.0</p>
+<p>v0.12.1</p>
 <table>
 <thead>
 <tr>
@@ -235,7 +235,7 @@ footer p+p{margin-top:.5rem}
 <li><strong>🔧 分栏工作台</strong>：拖 Tab 拆分/合并（可跨面板）、分隔线调比例；右上角按钮一键折叠/展开面板</li>
 <li><strong>🔁 会话隔离</strong>：布局 / Tab / 面板状态按会话持久化，陈旧状态自动净化；「产出文件」在侧边栏打开</li>
 <li><strong>⚙️ 声明式设置</strong>：设置页「侧边卡片」按注册表渲染开关网格，逐项独立开/关；二级设置（自动展开、终端工具、沙箱等）经齿轮弹窗编辑</li>
-<li><strong>🔌 服务化（基座）</strong>：暴露 <code>ctx.betterSidebar</code>，其他插件可注册 tab 与文件预览器（内置 7 tab + 9 viewer 同走一服务）；v0.12.0 起支持角标/生命周期回调/状态订阅/定向打开/插件自有设置（见 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md">AGENTS.md</a> 与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>）</li>
+<li><strong>🔌 服务化（基座）</strong>：暴露 <code>ctx.betterSidebar</code>，其他插件可注册 tab 与文件预览器（内置 7 tab + 9 viewer 同走一服务）；v0.12.1 起支持角标/生命周期回调/状态订阅/定向打开/插件自有设置（见 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md">AGENTS.md</a> 与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>）</li>
 <li><strong>➕ 添加插件</strong>：设置页「侧边卡片」两个网格（侧边栏内容 / 文件预览）末尾的虚线卡片分别打开 Tab / 预览插件弹窗：声明扩展点、「在 GitHub 上浏览更多插件」按钮、推荐插件目录（「跳转」直达仓库、「复制」安装命令到剪贴板）；弹窗不打开终端、无失败路径，不阻塞启动与侧边栏</li>
 <li><strong>🌏 多语言</strong>：界面文案跟随 DSH 语言（zh/en）实时切换，无需刷新</li>
 </ul>
@@ -249,10 +249,10 @@ footer p+p{margin-top:.5rem}
 </code></pre>
 <p>装完<strong>硬刷新浏览器</strong>（Cmd/Ctrl+Shift+R）即可看到侧边栏（DSH 对 client 改动热加载，无需重启；仅 host 半更新时需要重启）。</p>
 <pre><code class="language-sh"># macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash -s 0.12.0 --restart
+curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash -s 0.12.1 --restart
 
 # Windows PowerShell
-&amp; ([scriptblock]::Create((irm &#39;https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1&#39;))) -Version 0.12.0 -Restart
+&amp; ([scriptblock]::Create((irm &#39;https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1&#39;))) -Version 0.12.1 -Restart
 </code></pre>
 <p>不确定的话，可先加 <code>--dry-run</code>（PowerShell 用 <code>-DryRun</code>）预览步骤再执行。</p>
 <p>与一键脚本等价。<strong>第 ③ 步可重复执行；①② 只需做一次。</strong></p>
@@ -268,7 +268,7 @@ minimumReleaseAgeExclude:
   - dsh-better-sidebar
 EOF
 
-# ③ 安装并自动挂载（不带 @版本 = npm 的 latest；固定版本写 dsh-better-sidebar@0.12.0）
+# ③ 安装并自动挂载（不带 @版本 = npm 的 latest；固定版本写 dsh-better-sidebar@0.12.1）
 npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
 <p><strong>Windows（PowerShell）</strong>：</p>
@@ -290,7 +290,7 @@ npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sideba
 <li>执行 <code>dsh plugin --profile web add dsh-better-sidebar</code>：登记依赖 → 识别包内 <code>dsh.bundle.patch</code> → 自动注册进 <code>dsh.profile.bundles</code> 挂载；</li>
 <li>清理旧版残留的手动挂载行，避免「双挂载」（页面出现两个侧边栏）。</li>
 </ol>
-<p><code>curl | bash</code> / <code>irm | iex</code> 会执行远程代码——脚本已随仓库开源（<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>），可先下载审阅。插件以 npm 包 <code>dsh-better-sidebar@0.12.0</code> 发布，通过 <code>dsh.bundle.patch</code>（随包的 <code>cordis.patch.yml</code>）由官方 CLI 自动挂载，<strong>不修改 DSH 源码</strong>。</p>
+<p><code>curl | bash</code> / <code>irm | iex</code> 会执行远程代码——脚本已随仓库开源（<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>），可先下载审阅。插件以 npm 包 <code>dsh-better-sidebar@0.12.1</code> 发布，通过 <code>dsh.bundle.patch</code>（随包的 <code>cordis.patch.yml</code>）由官方 CLI 自动挂载，<strong>不修改 DSH 源码</strong>。</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
 <p>或重跑一次一键脚本；也可把 <code>~/.dsh/profiles/web/package.json</code> 里的版本号改高后 <code>pnpm install</code>。改完<strong>硬刷新浏览器</strong>（Cmd/Ctrl+Shift+R）即可（client 改动无需重启 DSH）。</p>
@@ -337,7 +337,7 @@ npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sideba
 4. 在 ~/.dsh/profiles/web 执行 pnpm install
 5. 硬刷新浏览器（Cmd/Ctrl+Shift+R）即可看到效果（client 改动无需重启 DSH；host 半改动才需重启）
 </code></pre>
-<p>更新：<code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → 硬刷新浏览器即可（client 改动热加载生效，无需重启 DSH；host 半改动才需重启）。切回 npm 通道时，把依赖改回 <code>&quot;dsh-better-sidebar&quot;: &quot;^0.12.0&quot;</code> 再 <code>pnpm install</code>。</p>
+<p>更新：<code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → 硬刷新浏览器即可（client 改动热加载生效，无需重启 DSH；host 半改动才需重启）。切回 npm 通道时，把依赖改回 <code>&quot;dsh-better-sidebar&quot;: &quot;^0.12.1&quot;</code> 再 <code>pnpm install</code>。</p>
 <p>前置：DSH 已集成 <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a>（<code>dsh registry</code> 可用）。<strong>同时启用两个通道会双挂载</strong>（Node 半挂两次、页面两个侧边栏）。</p>
 <pre><code class="language-sh">git clone https://github.com/omdsh-dev/DSH-better-sidebar.git &amp;&amp; cd DSH-better-sidebar
 pnpm install &amp;&amp; pnpm build
@@ -389,7 +389,7 @@ export function apply(ctx: Context) {
   }))
 }
 </code></pre>
-<p>v0.12.0 补齐基座能力（完整类型导出、能力探测、状态订阅、tab 角标、生命周期回调、定向打开、插件自有设置等），详见下方接入文档。</p>
+<p>v0.12.1 补齐基座能力（完整类型导出、能力探测、状态订阅、tab 角标、生命周期回调、定向打开、插件自有设置等），详见下方接入文档。</p>
 <p>完整接入文档：</p>
 <ul>
 <li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md"><code>AGENTS.md</code></a></strong>——仓库内维护的接入文档（全字段、匹配算法、HMR 陷阱、声明式设置、版本探测）；</li>
@@ -445,11 +445,11 @@ pnpm watch        # tsdown --watch
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 73</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>

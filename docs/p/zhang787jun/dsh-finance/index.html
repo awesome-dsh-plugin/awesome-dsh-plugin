@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">zhang787jun/</span><wbr><span class="name">dsh-finance</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,101 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml"><img src="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome DSH plugin"></a>
+<a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></p>
+<p>Financial research and portfolio risk workflow tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>This plugin adapts the structure of Claude financial research plugins, especially the
+skill-heavy Bigdata.com Claude plugin pattern, into a native DSH bundle:</p>
+<ul>
+<li>a DSH <code>dsh.bundle.patch</code> entry in <code>package.json</code></li>
+<li>a <code>cordis.patch.yml</code> layer</li>
+<li>bundled finance skills</li>
+<li>DSH tools registered through <code>@deepseek-ai/dsh-tools</code></li>
+</ul>
+<p>It does not ship a market-data provider. The tools are designed to make the agent plan,
+cite, and bound financial work without inventing current prices, estimates, filings, or
+brokerage facts.</p>
+<p><a href="https://github.com/zhang787jun/dsh-finance/blob/main/README.zh-CN.md">简体中文</a></p>
+<h3>Tools</h3>
+<ul>
+<li><code>finance_research_workflow</code> creates a source-backed workflow for:<ul>
+<li>company briefs</li>
+<li>investment memos</li>
+<li>valuation snapshots</li>
+<li>risk assessments</li>
+<li>earnings quality checks</li>
+<li>catalyst monitors</li>
+<li>sector maps</li>
+<li>macro or country reviews</li>
+</ul>
+</li>
+<li><code>portfolio_risk_snapshot</code> computes exposure and control flags from user-supplied
+positions, NAV, cash, and optional sector data.</li>
+</ul>
+<h3>Bundled Skills</h3>
+<ul>
+<li><code>dsh-finance-research</code> routes finance requests into the right workflow and enforces
+current-source discipline.</li>
+<li><code>dsh-portfolio-risk</code> reviews user-provided portfolio data for gross/net exposure,
+concentration, cash, and control breaches.</li>
+</ul>
+<h3>Install</h3>
+<p>Install from GitHub into the DSH web profile:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:zhang787jun/dsh-finance
+</code></pre>
+<p>Restart DSH:</p>
+<pre><code class="language-sh">dsh web
+</code></pre>
+<p>For local development from this checkout:</p>
+<pre><code class="language-sh">pnpm install
+pnpm run check
+dsh plugin --profile web add .
+</code></pre>
+<h3>Example</h3>
+<p>Ask DSH:</p>
+<pre><code class="language-text">Build a valuation snapshot workflow for MSFT. Use current sources only.
+</code></pre>
+<p>Or provide portfolio inputs:</p>
+<pre><code class="language-json">{
+  &quot;netLiquidation&quot;: 100000,
+  &quot;cash&quot;: 4000,
+  &quot;positions&quot;: [
+    { &quot;symbol&quot;: &quot;MSFT&quot;, &quot;marketValue&quot;: 30000, &quot;sector&quot;: &quot;Technology&quot; },
+    { &quot;symbol&quot;: &quot;GOOGL&quot;, &quot;marketValue&quot;: 25000, &quot;sector&quot;: &quot;Communication Services&quot; },
+    { &quot;symbol&quot;: &quot;SMH&quot;, &quot;marketValue&quot;: 20000, &quot;sector&quot;: &quot;Technology&quot; }
+  ]
+}
+</code></pre>
+<p>The plugin will calculate control flags, but the data itself must come from
+the user, a broker snapshot, or a cited source.</p>
+<h3>Safety Model</h3>
+<p>Financial and market data changes quickly. This plugin deliberately requires
+dated sources for market-sensitive claims and carries unavailable data as an
+explicit limitation.</p>
+<p>It is for research assistance only. It is not investment, legal, tax, or
+accounting advice and is not a recommendation to buy, sell, or hold any
+security.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm install
+pnpm run typecheck
+pnpm run test
+pnpm run build
+pnpm run check
+</code></pre>
+<p><code>pnpm run check</code> runs typecheck, tests, build, and <code>npm pack --dry-run</code>.</p>
+<h3>Community</h3>
+<p>This repo uses the <code>dsh-plugin</code> GitHub topic so it can be discovered by DSH
+plugin search tools and the broader DSH plugin community.</p>
+<h3>License</h3>
+<p><a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zhang787jun/dsh-finance/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,8 +293,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

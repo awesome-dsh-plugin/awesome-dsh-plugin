@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">omdsh-dev/</span><wbr><span class="name">DSH-better-sidebar</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 724</b></span>
+        <span>Stars <b>★ 728</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -191,7 +191,7 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86">https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86</a></p>
 <h3>🆕 Recent Updates</h3>
-<p>v0.12.0</p>
+<p>v0.12.1</p>
 <table>
 <thead>
 <tr>
@@ -249,10 +249,10 @@ footer p+p{margin-top:.5rem}
 </code></pre>
 <p>Then <strong>hard-refresh the browser</strong> (Cmd/Ctrl+Shift+R) to see the sidebar (DSH hot-reloads client changes; only host-half updates need a restart).</p>
 <pre><code class="language-sh"># macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash -s 0.12.0 --restart
+curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash -s 0.12.1 --restart
 
 # Windows PowerShell
-&amp; ([scriptblock]::Create((irm &#39;https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1&#39;))) -Version 0.12.0 -Restart
+&amp; ([scriptblock]::Create((irm &#39;https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1&#39;))) -Version 0.12.1 -Restart
 </code></pre>
 <p>Not sure? Add <code>--dry-run</code> (<code>-DryRun</code> in PowerShell) to preview before running.</p>
 <p>Equivalent to the one-click script. <strong>Step ③ is repeatable; ①② only need to run once.</strong></p>
@@ -268,7 +268,7 @@ minimumReleaseAgeExclude:
   - dsh-better-sidebar
 EOF
 
-# ③ Install and auto-mount (no @version = npm&#39;s latest; pin with dsh-better-sidebar@0.12.0)
+# ③ Install and auto-mount (no @version = npm&#39;s latest; pin with dsh-better-sidebar@0.12.1)
 npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
 <p><strong>Windows (PowerShell)</strong>:</p>
@@ -290,10 +290,10 @@ npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sideba
 <li>Runs <code>dsh plugin --profile web add dsh-better-sidebar</code>: registers the dependency → detects <code>dsh.bundle.patch</code> → auto-appends the plugin to <code>dsh.profile.bundles</code>;</li>
 <li>Removes any leftover hand-written mount line to avoid double-mounting (two sidebars on the page).</li>
 </ol>
-<p><code>curl | bash</code> / <code>irm | iex</code> executes remote code — the scripts are open source in the repo (<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>); download and review them first if you prefer. The plugin ships as npm package <code>dsh-better-sidebar@0.12.0</code> and mounts via <code>dsh.bundle.patch</code> (the shipped <code>cordis.patch.yml</code>), so the DSH source is never modified.</p>
+<p><code>curl | bash</code> / <code>irm | iex</code> executes remote code — the scripts are open source in the repo (<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>); download and review them first if you prefer. The plugin ships as npm package <code>dsh-better-sidebar@0.12.1</code> and mounts via <code>dsh.bundle.patch</code> (the shipped <code>cordis.patch.yml</code>), so the DSH source is never modified.</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
-<p>or re-run the one-click script; or bump the version in <code>~/.dsh/profiles/web/package.json</code> (e.g. <code>&quot;^0.12.0&quot;</code>) and run <code>pnpm install</code>. Then hard-refresh the browser (Cmd/Ctrl+Shift+R) — client changes do not need a DSH restart.</p>
+<p>or re-run the one-click script; or bump the version in <code>~/.dsh/profiles/web/package.json</code> (e.g. <code>&quot;^0.12.1&quot;</code>) and run <code>pnpm install</code>. Then hard-refresh the browser (Cmd/Ctrl+Shift+R) — client changes do not need a DSH restart.</p>
 <table>
 <thead>
 <tr>
@@ -337,7 +337,7 @@ npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sideba
 4. Run pnpm install in ~/.dsh/profiles/web
 5. Restart DSH and hard-refresh
 </code></pre>
-<p>Update: <code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → just hard-refresh the browser (client changes hot-reload; only host-half changes need a DSH restart). To switch back to the npm channel, restore <code>&quot;dsh-better-sidebar&quot;: &quot;^0.12.0&quot;</code> and re-run <code>pnpm install</code>.</p>
+<p>Update: <code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → just hard-refresh the browser (client changes hot-reload; only host-half changes need a DSH restart). To switch back to the npm channel, restore <code>&quot;dsh-better-sidebar&quot;: &quot;^0.12.1&quot;</code> and re-run <code>pnpm install</code>.</p>
 <p>Prerequisite: DSH with <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> integrated (<code>dsh registry</code> available). <strong>Enabling both channels double-mounts</strong> (the Node half loads twice, the page gets two sidebars).</p>
 <pre><code class="language-sh">git clone https://github.com/omdsh-dev/DSH-better-sidebar.git &amp;&amp; cd DSH-better-sidebar
 pnpm install &amp;&amp; pnpm build
@@ -389,7 +389,7 @@ export function apply(ctx: Context) {
   }))
 }
 </code></pre>
-<p>v0.12.0+ base capabilities (complete type exports, capability detection, state subscription, tab badge, lifecycle callbacks, targeted open, plugin-owned settings, etc.) — see the integration docs below.</p>
+<p>v0.12.1+ base capabilities (complete type exports, capability detection, state subscription, tab badge, lifecycle callbacks, targeted open, plugin-owned settings, etc.) — see the integration docs below.</p>
 <p>Full integration docs:</p>
 <ul>
 <li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md"><code>AGENTS.md</code></a></strong> — the in-repo integration doc (full fields, matching algorithm, HMR pitfalls, declarative settings, version detection);</li>
@@ -445,11 +445,11 @@ pnpm watch        # tsdown --watch
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 73</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>

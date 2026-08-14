@@ -199,7 +199,10 @@ footer p+p{margin-top:.5rem}
 <h3>推荐内容</h3>
 <p>聚合行为会映射到：</p>
 <ul>
-<li>内置 preset：<code>minimal</code>、<code>code</code>、<code>standard</code>；</li>
+<li>能力 preset：<code>minimal</code> 或 <code>standard</code>。</li>
+</ul>
+<p><code>code</code> 是 <code>standard</code> 的 Code Mode 展示变体；扫描器不会根据本地活动量推断它，也不会把它作为能力等级自动推荐。</p>
+<ul>
 <li>可选能力：Codex 委派、Claude Code 委派、workflows、web、MCP、LSP。</li>
 </ul>
 <p>每条建议都包含置信度与证据计数。规则完全确定且仅在本地运行，不会自动更改 DSH。</p>
@@ -260,20 +263,20 @@ footer p+p{margin-top:.5rem}
 <tr>
 <td>CodeBuddy CLI</td>
 <td><code>$CODEBUDDY_CONFIG_DIR/projects</code> 或 <code>~/.codebuddy/projects</code></td>
-<td>读取有界、规范项目 <code>.jsonl</code> 记录；跳过易过期的全局进程映射及 tool-result/blob 目录</td>
+<td>读取有界、规范项目 <code>.jsonl</code> 记录；<code>~/.codebuddy/workflows/*.js</code> 与项目内 workflow 脚本仅清点存在。跳过全局进程映射、tool-result/blob 目录与 workflow runtime sidecar</td>
 </tr>
 <tr>
 <td>WorkBuddy</td>
 <td><code>$WORKBUDDY_CONFIG_DIR/projects</code> 或 <code>~/.workbuddy/projects</code>、<code>~/.workbuddy-ai/projects</code></td>
-<td>读取有界项目 <code>.jsonl</code> 记录；项目内 <code>.workbuddy</code> 元数据只做清单</td>
+<td>启发式、版本敏感的项目 <code>.jsonl</code> 清单；原生 session 布局不是厂商契约，绝不据此推断与 CodeBuddy session 等价</td>
 </tr>
 <tr>
 <td>项目内 CodeBuddy/WorkBuddy 元数据</td>
 <td><code>&lt;project&gt;/.codebuddy</code> 或 <code>&lt;project&gt;/.workbuddy</code> 的 <code>memory</code>、<code>workflows</code>、<code>plans</code>、<code>automations</code></td>
-<td>只计数与日期；不读正文；memory 不会成为 workflow 证据</td>
+<td>只计数与日期（含 workflow <code>.js</code>）；不读正文；memory 不会成为 workflow 证据</td>
 </tr>
 </tbody></table>
-<p>不同产品版本的格式可能变化。未知字段会被忽略；畸形记录跳过，畸形文件计入错误但不会终止扫描。</p>
+<p>不同产品版本的格式可能变化。CodeBuddy 路径/workflow 脚本有官方文档，WorkBuddy session 文件识别仅为观测性启发式。未知字段会被忽略；畸形记录跳过，畸形文件计入错误但不会终止扫描。</p>
 <h3>配置</h3>
 <p>在 DSH patch 中配置 <code>agent-preset-recommender</code> 行：</p>
 <pre><code class="language-yaml">- id: agent-preset-recommender
@@ -321,7 +324,7 @@ footer p+p{margin-top:.5rem}
 <li>私有状态目录存在时，同一来源/路径的密钥派生 ID 保持稳定；删除 <code>identity.key</code> 会主动生成一组新的 ID。</li>
 <li>推荐反映本地使用频率，不代表任务质量或组织策略。</li>
 <li>插件不会验证可选产品/能力是否已安装或已认证。</li>
-<li>JSONL 超出字节上限的后续数据、过大的 JSON 文件、过旧文件，以及超出每来源数量限制的较旧文件会主动忽略。0.1.2 不读取压缩的 Codex <code>.jsonl.zst</code> rollout；Claude workflow 脚本与动态 workflow sidecar 也会有意跳过。</li>
+<li>JSONL 超出字节上限的后续数据、过大的 JSON 文件、过旧文件，以及超出每来源数量限制的较旧文件会主动忽略。0.1.4 不读取压缩的 Codex <code>.jsonl.zst</code> rollout；Claude workflow 脚本与动态 workflow sidecar 也会有意跳过。</li>
 </ul>
 <h3>开发</h3>
 <pre><code class="language-sh">npm install
@@ -346,8 +349,8 @@ npm test
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>

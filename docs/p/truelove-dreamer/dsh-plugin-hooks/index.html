@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">truelove-dreamer/</span><wbr><span class="name">dsh-plugin-hooks</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/workflow/">Workflow & Automation</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-plugin-hooks" rel="noopener" translate="no">dsh-plugin-hooks</a></span>
@@ -188,7 +189,96 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness 插件:把 <strong>Claude Code 风格的 lifecycle hooks</strong> 带到 DSH —— 配置驱动的 shell 命令,在模型工具调用前后自动执行。</p>
+<h3>背景</h3>
+<p>DSH 0.1.0-rc.6 没有 hooks 能力,但架构已经预留了接缝:<code>tools/pre-execute</code> / <code>tools/post-execute</code> 两个有序 waterfall,以及 shell 服务&quot;通过 stdin 给命令喂 JSON payload&quot;的词汇表(见 <code>@deepseek-ai/dsh-shell</code>)。这个插件以<strong>纯外部插件</strong>形式补上这块空白,设计对齐官方预留接口:</p>
+<ul>
+<li><code>pre-tool</code> hook:匹配的工具执行<strong>前</strong>运行;命令非零退出 → <strong>阻止</strong>该工具调用(等价 Claude Code PreToolUse 返回 error);</li>
+<li><code>post-tool</code> hook:工具结果落地后运行;退出码只记录,不改变工具结果。</li>
+</ul>
+<h3>配置</h3>
+<p>JSON 配置,来源二选一或叠加:</p>
+<ol>
+<li><strong>文件</strong>(默认 <code>$DSH_HOME/hooks.json</code>):</li>
+</ol>
+<pre><code class="language-json">{
+  &quot;hooks&quot;: [
+    {
+      &quot;id&quot;: &quot;lint-after-edit&quot;,
+      &quot;event&quot;: &quot;post-tool&quot;,
+      &quot;tools&quot;: [&quot;edit&quot;, &quot;write&quot;],
+      &quot;command&quot;: &quot;npm run lint -- --quiet&quot;,
+      &quot;timeoutMs&quot;: 30000
+    },
+    {
+      &quot;id&quot;: &quot;guard-prod&quot;,
+      &quot;event&quot;: &quot;pre-tool&quot;,
+      &quot;tools&quot;: [&quot;bash&quot;, &quot;pwsh&quot;],
+      &quot;command&quot;: &quot;node guard.js&quot;
+    }
+  ]
+}
+</code></pre>
+<ol start="2">
+<li><strong>内联</strong>(挂载 config,追加在文件 hooks 之后):</li>
+</ol>
+<pre><code class="language-yaml">- id: hooks
+  name: dsh-plugin-hooks
+  config:
+    configFile: C:/path/to/hooks.json   # 可选
+    hooks:
+      - id: always-deny-db
+        event: pre-tool
+        tools: [bash]
+        command: &quot;node deny-db.js&quot;
+</code></pre>
+<p>字段:<code>id</code>(必填、唯一)、<code>event</code>(<code>pre-tool</code> | <code>post-tool</code>)、<code>tools</code>(可选,默认全部)、<code>command</code>(必填)、<code>timeoutMs</code>(可选)、<code>enabled</code>(默认 true)。</p>
+<h3>安装</h3>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-plugin-hooks
+</code></pre>
+<p>挂载:</p>
+<pre><code class="language-yaml">- insert:
+    - id: hooks
+      name: dsh-plugin-hooks
+</code></pre>
+<h3>Hook 命令收到的数据</h3>
+<p>命令通过 <strong>stdin</strong> 收到一行 JSON payload:</p>
+<pre><code class="language-json">{ &quot;event&quot;: &quot;PostToolUse&quot;, &quot;hookId&quot;: &quot;lint-after-edit&quot;, &quot;toolName&quot;: &quot;edit&quot;,
+  &quot;args&quot;: { &quot;path&quot;: &quot;a.js&quot; }, &quot;sessionId&quot;: &quot;s_xxx&quot;, &quot;cwd&quot;: &quot;C:/repo&quot;,
+  &quot;result&quot;: { &quot;isError&quot;: false, &quot;exitCode&quot;: 0, &quot;error&quot;: null }, &quot;durationMs&quot;: 123 }
+</code></pre>
+<p>环境变量:<code>CLAUDE_PROJECT_DIR</code>(会话 cwd)、<code>DSH_HOOK_EVENT</code>、<code>DSH_HOOK_ID</code>、<code>DSH_SESSION_ID</code>。<code>pre-tool</code> payload 无 <code>result</code>/<code>durationMs</code> 字段。</p>
+<h3>命令</h3>
+<ul>
+<li><code>/hooks</code> — 列出已配置 hooks + 最近 20 次运行记录(含退出码/错误摘要)</li>
+<li><code>/hooks-reload</code> — 重新读配置文件,热加载,无需重启</li>
+</ul>
+<h3>设计说明</h3>
+<ul>
+<li>通过 <code>ctx.on(&quot;tools/pre-execute&quot;|&quot;tools/post-execute&quot;)</code> 接入 Cordis waterfall;<code>pre-tool</code> 非零退出时返回 <code>{ kind:&quot;deny&quot;, reason }</code> 阻断调用(与 dsh-tools 的 deny 决策契约一致,见 <code>prepareExecution</code>)。</li>
+<li>钩子命令经 <code>ctx.shell.run</code> 执行(自动套用沙箱策略与超时),payload 走 stdin、cwd 走 env —— 与 DSH 为 hooks bridges 预留的 shell 词汇表一致。</li>
+<li>配置解析/匹配/payload 构建全部在 <code>lib/config.js</code> 纯函数里,<code>npm test</code> 零依赖。</li>
+<li>hook 运行<strong>不会递归触发工具事件</strong>(shell 是服务调用,不是工具调用)。</li>
+</ul>
+<h3>诚实边界</h3>
+<ul>
+<li>hook 命令是<strong>受信任的 host 配置</strong>(等同 Claude Code hooks):能读写任何 host 能访问的东西,只在可信 profile 启用。</li>
+<li><code>pre-tool</code> 命令会阻塞工具执行(超时/退出码决定放行与否);<code>post-tool</code> 命令失败只记录,不影响结果。</li>
+<li>v1 只支持工具生命周期事件;Stop / SessionEnd 类 hook 需要会话事件订阅,官方尚未暴露,留待后续。</li>
+<li>若 <code>ctx.shell</code> 未挂载,插件照常加载但 hook 不会运行(启动时在 <code>/hooks</code> 里提示)。</li>
+</ul>
+<h3>本地开发</h3>
+<pre><code class="language-bash">cd plugins/dsh-plugin-hooks
+npm test          # node --test,零依赖
+</code></pre>
+<p>接线集成测试(真实 Cordis + mock shell,验证 allow/deny 语义与 payload):见仓库根 <code>test-wiring.mjs</code>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/truelove-dreamer/dsh-plugin-hooks/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -202,9 +292,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 238</span></h3><a class="desc-link" href="/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams multi-agent teams.</p></a></li>
+      <li><h3><a href="/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 241</span></h3><a class="desc-link" href="/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams multi-agent teams.</p></a></li>
       <li><h3><a href="/p/icetomoyo/dsh_workflow/" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 54</span></h3><a class="desc-link" href="/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.</p></a></li>
-      <li><h3><a href="/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 42</span></h3><a class="desc-link" href="/p/btspoony/mstar-harness/" tabindex="-1"><p>Skill-driven harness/loop engineering workflow agent plugin.</p></a></li>
+      <li><h3><a href="/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 43</span></h3><a class="desc-link" href="/p/btspoony/mstar-harness/" tabindex="-1"><p>Skill-driven harness/loop engineering workflow agent plugin.</p></a></li>
       <li><h3><a href="/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/p/titanwings/dsh-automation/" tabindex="-1"><p>Scheduled coding runs in fresh agent sessions with auditable history.</p></a></li>
       <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>Adaptive deep-research orchestrator built on the official workflow engine.</p></a></li>

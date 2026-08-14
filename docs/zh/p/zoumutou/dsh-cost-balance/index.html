@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">zoumutou/</span><wbr><span class="name">dsh-cost-balance</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,112 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://www.npmjs.com/package/dsh-cost-balance"><img src="https://img.shields.io/npm/v/dsh-cost-balance" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/dsh-cost-balance"><img src="https://img.shields.io/npm/dm/dsh-cost-balance" alt="npm downloads"></a>
+<a href="https://github.com/zoumutou/dsh-cost-balance/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></p>
+<p>DeepSeek Harness（DSH）Web UI 插件：在输入框下方显示一条 iOS 风格的小黑条，点击展开轻盈的半透明多行面板，查看<strong>会话花费、账户余额、缓存命中、Token 用量</strong>等统计。</p>
+<p>默认折叠为一条居中的小黑条（类似 iOS 底部横条），点击展开毛玻璃面板：</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>轮次 · 步数</td>
+<td>3 轮 · 12 步</td>
+</tr>
+<tr>
+<td>LLM 耗时 / 工具调用</td>
+<td>45.2s / 12.3s</td>
+</tr>
+<tr>
+<td>首 token 平均 / 吞吐</td>
+<td>1.4s / 25.4 tok/s</td>
+</tr>
+<tr>
+<td>缓存命中</td>
+<td>87%</td>
+</tr>
+<tr>
+<td>Token</td>
+<td>输入 12.2K · 输出 517</td>
+</tr>
+<tr>
+<td>花费</td>
+<td>$0.0123（本会话，按官方定价）</td>
+</tr>
+<tr>
+<td>余额</td>
+<td>¥9.00（DeepSeek 账户实时余额，60s 自动刷新）</td>
+</tr>
+</tbody></table>
+<h3>安装（npm 发布版）</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-cost-balance
+</code></pre>
+<blockquote>
+<p>该命令从 npm registry 拉取已发布的 <a href="https://www.npmjs.com/package/dsh-cost-balance">dsh-cost-balance</a>（dsh.bundle），自动加入 profile 的 bundle 层。</p>
+</blockquote>
+<p>然后重启（或刷新）DSH Web UI。卸载：<code>dsh plugin --profile web remove dsh-cost-balance</code>。</p>
+<h3>工作原理</h3>
+<ul>
+<li><strong>Client 半</strong>（<code>lib/client.js</code>）：注册在 <code>conversation.composer.dock</code> 槽位（接管 shipped 的 <code>stats</code> 单元格，与产品自带统计行同源同数据），展示折叠/展开 UI；通过同源 <code>GET /api/cost-balance</code> 读取数据，每 60 秒自动刷新，token 用量变化时即时重算。</li>
+<li><strong>Host 半</strong>（<code>lib/index.js</code>）：经 <code>webServer</code> 注册 <code>/api/cost-balance</code> 路由——花费按会话累计 token（未命中输入 / 缓存命中 / 缓存写入 / 输出）× 模型单价计算；余额经 <code>credentials</code> 服务解析 <code>DEEPSEEK_API_KEY</code> 后调用 DeepSeek 官方 <code>GET /user/balance</code>（60s 缓存、失败 30s 抑制）。</li>
+</ul>
+<p>余额取自<strong>用户自己的 API Key 账户</strong>，无需任何配置；未配置或抓取失败时面板显示 <code>余额 --</code>。</p>
+<h3>定价与覆盖</h3>
+<p>内置 DeepSeek 官方定价（USD / 1M tokens）：</p>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>缓存命中</th>
+<th>缓存未命中</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>deepseek-v4-flash</td>
+<td>$0.0028</td>
+<td>$0.14</td>
+<td>$0.28</td>
+</tr>
+<tr>
+<td>deepseek-v4-pro</td>
+<td>$0.003625</td>
+<td>$0.435</td>
+<td>$0.87</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>DeepSeek 将于 2026-08-16 16:00 UTC 起切换峰谷计费（off-peak 为 peak 的一半）。价格变更时无需等插件更新——在 profile 的 <code>cordis.patch.yml</code> 里覆盖即可：</p>
+</blockquote>
+<pre><code class="language-yaml"># ~/.dsh/profiles/&lt;你的profile&gt;/cordis.patch.yml
+- id: cost-balance
+  config:
+    prices:
+      deepseek-v4-flash:
+        cacheHit: 0.014
+        cacheMiss: 0.44
+        output: 1.32
+</code></pre>
+<p>（覆盖是整行替换，务必保留 <code>id: cost-balance</code>。）</p>
+<h3>从源码安装（开发）</h3>
+<pre><code class="language-sh">git clone https://github.com/zoumutou/dsh-cost-balance.git
+cd dsh-cost-balance
+dsh plugin --profile web add .
+</code></pre>
+<p>发布新版本：修改 <code>package.json</code> 的 <code>version</code> 后 <code>npm publish</code>（账号需 2FA 绕过 token，见 npm 文档）。</p>
+<h3>许可</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zoumutou/dsh-cost-balance/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,12 +304,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Cavan-Ou/</span><wbr><span class="name">hermes-dsh-collab</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/skill/">Skills</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,101 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>Hook DeepSeek Harness into your Hermes pipeline: automated dispatch, execution, and verification — with quality gates that don&#39;t trust self-reports.</strong></p>
+<p><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT">
+<img src="https://img.shields.io/badge/DSH-0.1.0--rc.6-orange" alt="DSH">
+<a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/GitHub-dsh--plugin-0969da?style=flat-square" alt="dsh-plugin"></a>
+<img src="https://img.shields.io/badge/Hermes-ready-9B30FF?style=flat-square" alt="Hermes"></p>
+<blockquote>
+<p>简体中文版见 <a href="https://github.com/Cavan-Ou/hermes-dsh-collab/blob/main/README.zh.md">README.zh.md</a></p>
+</blockquote>
+<p>Your AI assistant can work all day. The question is whether you can walk away.</p>
+<p>This skill makes it safe to: Hermes writes the dispatch spec, DSH executes it, Hermes verifies it — and you only step in when a quality gate actually fails. Distilled from a real 14-day pipeline (30 commits, 7/7 stages shipped without rework).</p>
+<p><strong>Dependencies:</strong> DSH 0.1.x (headless profile) + any orchestrator agent (built and tested with Hermes).</p>
+<hr>
+<h3>Why this exists</h3>
+<p>Hermes is your personal assistant. DSH is a capable executor. The gap is the <strong>operating contract</strong> between them: what a good dispatch spec looks like, which model tier to use for which stage, who is allowed to commit, and how verification actually happens.</p>
+<p>Most pipelines skip that contract and pay for it in rework. Recent work (<a href="https://arxiv.org/abs/2504.02095">COPE</a>) shows planner/executor separation works — but only when the executor&#39;s behavior is controlled. This skill encodes those controls, from a pipeline where they were tested:</p>
+<ul>
+<li><strong>Model-tier routing</strong> — Flash (<code>reasoning: max</code>) for routine stages, Pro for multi-file refactors and long synthesis, qwen for vision. When in doubt: try Flash once — rework means escalate.</li>
+<li><strong>Spec 3 iron rules</strong> — Plan first · test first (TDD red→green) · scope declaration. A spec missing any of these is not shippable.</li>
+<li><strong>Git single-writer</strong> — only the orchestrator commits. The executor never touches git, so history stays linear and auditable.</li>
+<li><strong>Quality gates owned by the orchestrator</strong> — full test suite + build + diff-vs-scope audit + real browser walkthrough. Self-reports are not evidence.</li>
+<li><strong>Write-back via cwd</strong> — <code>cd &lt;project&gt; &amp;&amp; dsh --profile headless &quot;task&quot;</code> writes straight back. No /tmp mirrors, no patch handoffs.</li>
+<li><strong>Pitfalls with receipts</strong> — every entry is a real incident: patch config <em>replaces</em> whole sections (not deep-merge), qwen rejects <code>reasoning: max</code>, vision patches don&#39;t change the main model, stale backend processes invalidate green tests…</li>
+</ul>
+<h3>Quick start</h3>
+<pre><code class="language-bash"># via dsh plugin (bundle — recommended)
+dsh plugin --profile headless add github:Cavan-Ou/hermes-dsh-collab
+
+# or copy the skill pack directly (lightweight, any profile)
+git clone https://github.com/Cavan-Ou/hermes-dsh-collab
+cp -r skills/hermes-dsh-collab &quot;$DSH_HOME/skills/&quot;   # default: ~/.dsh/skills/
+</code></pre>
+<p>Either way, the next DSH session loads it automatically (bundle registers a skill provider; the copy is picked up by the skills scanner).</p>
+<p>Verify with three checks:</p>
+<ol>
+<li>A new session lists <code>hermes-dsh-collab</code> in its skills</li>
+<li>Say <em>&quot;write me a dispatch spec&quot;</em> — the skill triggers on the scenario</li>
+<li>Ask <em>&quot;can the executor git commit?&quot;</em> — it says <strong>no</strong>, and explains why (single-writer rule)</li>
+</ol>
+<h3>What&#39;s inside</h3>
+<pre><code>skills/hermes-dsh-collab/
+├── SKILL.md                      # judgment guide: blocking rules → decision tables → What NOT to do
+└── references/                   # loaded on demand; keeps the guide lean
+    ├── spec-template.md          # copyable dispatch-spec template (3 iron rules + no-commit clause)
+    ├── model-routing.md          # tier table, patch mechanics, and the 3 patch traps
+    ├── quality-gates.md          # 4-step gate commands + rework/escalation chain
+    └── pitfalls.md               # canonical list of 10 real incidents (symptom → cause → fix)
+</code></pre>
+<p>Shaped like DeepSeek&#39;s own repo skills (see <code>.agents/skills</code> in <a href="https://github.com/deepseek-ai/deepseek-harness">deepseek-ai/deepseek-harness</a>): guidance rather than a checklist · points at sources of truth instead of restating them · a dedicated &quot;What NOT to do&quot; section.</p>
+<blockquote>
+<p><strong>Install forms:</strong> both supported — bundle (<code>dsh plugin add</code>, official distribution path, verified on DSH 0.1.0-rc.6) and direct copy to <code>$DSH_HOME/skills/</code> (lightweight, no build).</p>
+</blockquote>
+<h3>Observed results</h3>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Quality gates catch systemic errors automatically</strong></td>
+<td>In one long-synthesis run (74 design docs, ~600K tokens), verification surfaced <strong>3 inverted negative-features</strong> and a &quot;universe feature&quot; (hairline borders: 78–100% across all five style families) — mistakes that would take hours of manual review and would likely slip through</td>
+</tr>
+<tr>
+<td>Routine stages on Flash ship without rework</td>
+<td>3/3 stages — TDD red→green, all gates green, real-browser walkthrough passed</td>
+</tr>
+<tr>
+<td>The skill changes behavior</td>
+<td>Live session: after loading, DSH refuses to commit and restates the single-writer rule with reasons</td>
+</tr>
+</tbody></table>
+<p><strong>Where you (the human) step in:</strong> only on the escalation chain — a quality gate fails, or the same stage retries twice. Everything else runs unattended.</p>
+<h3>Documentation</h3>
+<ul>
+<li><code>SKILL.md</code> — the judgment guide itself (read this first)</li>
+<li><code>REPORT.md</code> — build report: design decisions, self-test methodology (isolated <code>DSH_HOME</code> verification), open items</li>
+</ul>
+<p><strong>Roadmap:</strong> bundle packaging (<code>dsh plugin add</code> support) · per-workspace failure isolation · live routing-table refresh from the observations card · English mirror of references</p>
+<blockquote>
+<p><strong>Portability note:</strong> the skill&#39;s &quot;sources of truth&quot; point at workspace-specific paths (e.g. <code>~/.dsh/profiles/headless/*.patch.yml</code>). The rules are portable — update the paths to match your workspace.</p>
+</blockquote>
+<h3>Contributing</h3>
+<p>This skill is meant to grow from real use. Hit a pitfall not listed here? Open an issue with the incident (symptom → root cause → fix). PRs welcome in Chinese or English.</p>
+<h3>License</h3>
+<p>MIT</p>
+<hr>
+<p><em>Built by running a real pipeline, not by reading docs.</em></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Cavan-Ou/hermes-dsh-collab/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -202,7 +297,7 @@ footer p+p{margin-top:.5rem}
       <li><h3><a href="/p/dhicoc/dsh-reverse-skill/" translate="no">dhicoc/dsh-reverse-skill</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/dhicoc/dsh-reverse-skill/" tabindex="-1"><p>Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.</p></a></li>
       <li><h3><a href="/p/YTxue/dsh-skill-manager-ytxue/" translate="no">YTxue/dsh-skill-manager-ytxue</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/YTxue/dsh-skill-manager-ytxue/" tabindex="-1"><p>Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check &amp; auto-fix, system/project scope labels.</p></a></li>
       <li><h3><a href="/p/lunw/shopline-ai-toolkit-dsh/" translate="no">lunw/shopline-ai-toolkit-dsh</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/lunw/shopline-ai-toolkit-dsh/" tabindex="-1"><p>SHOPLINE AI Toolkit: bridges the official SHOPLINE Developer MCP server and ships seven SHOPLINE agent skills (Admin REST, GraphQL, OAuth, webhooks, Sline) — the SHOPLINE counterpart of the Shopify AI Toolkit.</p></a></li>
-      <li><h3><a href="/p/zhaiyateng/dsh-design-skills/" translate="no">zhaiyateng/dsh-design-skills</a></h3><a class="desc-link" href="/p/zhaiyateng/dsh-design-skills/" tabindex="-1"><p>Design-aesthetics skill pack (6 styles: dark SaaS, minimal white, neumorphism, brutalism, glassmorphism, Japanese minimal) with runnable landing-page demos: tokens, component rules, forbidden lists, and acceptance checklists per style.</p></a></li>
+      <li><h3><a href="/p/zhaiyateng/dsh-design-skills/" translate="no">zhaiyateng/dsh-design-skills</a><span class="stars" translate="no">★ 0</span></h3><a class="desc-link" href="/p/zhaiyateng/dsh-design-skills/" tabindex="-1"><p>Design-aesthetics skill pack (6 styles: dark SaaS, minimal white, neumorphism, brutalism, glassmorphism, Japanese minimal) with runnable landing-page demos: tokens, component rules, forbidden lists, and acceptance checklists per style.</p></a></li>
     </ul>
     <a class="morelink" href="/skill/">View the whole category →</a>
   </section>

@@ -201,11 +201,13 @@ footer p+p{margin-top:.5rem}
 <li>🧠 <strong>记忆功能独立开关（v2.2.0）</strong>：所有模式可开/关；开启后上一轮优化结果作为记忆注入下一轮（首次自动走轻量兜底）；关闭后完全不读取/写入记忆；开启期间写入记忆、撤回清除</li>
 <li>🔀 <strong>组合叠加</strong>：模式上下文块 + 记忆块可同时注入（记忆优先占用预算 ≤1200 字符，模式块用剩余预算）</li>
 <li>🔄 <strong>配置自动迁移</strong>：v2.1 的 <code>mode:&#39;memory&#39;</code>/<code>autoMemory</code> 自动迁移为 <code>mode:&#39;lite&#39;</code> + <code>memory:true</code>；显式 <code>memory</code> 字段最高优先（含 false 关闭）</li>
-<li>🧪 <strong>单测保障</strong>：host 纯函数单测（node:test，31/31 通过），PURE 区段切片求值保证测试即发布代码</li>
+<li>🧪 <strong>单测保障</strong>：host 纯函数单测（node:test，38/38 通过），PURE 区段切片求值保证测试即发布代码</li>
 <li>📊 <strong>步骤进度（v2.3.0）</strong>：增强进行中按钮实时显示当前阶段（准备中… / 读取会话… / 分析任务… / 检索文件… / 检索会话… / 组装上下文… / LLM 优化中…），避免长时间等待误判卡死；鼠标悬停切换为红色「取消」提醒</li>
 <li>🏷️ <strong>模式短标签（v2.3.0）</strong>：输入框 ✨ 按钮显示当前模式（基础/轻量/标准/智能），切换即时同步</li>
 <li>🧠 <strong>记忆状态 → 图标饱和度（v2.3.2）</strong>：优化按钮 ✨ 图标饱和度表达记忆开/关——开=正常彩色、关=低饱和（去色偏灰）；<strong>仅影响图标，文字饱和度不变</strong>；记忆开关位于设置面板「优化参数」页，<strong>空输入时点击 ✨ 按钮也可直接切换记忆</strong>（v2.3.3）</li>
 <li>📏 <strong>字体对齐 + hover 零抖动（v2.3.3）</strong>：按钮/短标签 font-weight:500 对齐 DSH 模型选择器；优化中 hover「取消」切换只变透明度，按钮宽度恒定无闪烁</li>
+<li>🚀 <strong>版本检测与一键更新（v2.4.0）</strong>：设置 →「模型与插件」→「插件管理」顶部新增版本检测卡片——检测任意公开 GitHub 仓库（默认本仓库）的版本状态（远端以 tags 取最大为准），发现新版本时一键拉取 6 个发布文件到本地目录（默认工作区下 <code>dsh-prompt-enhancer-&lt;tag&gt;/</code>，可配置并持久化）；拉取后按页面指引应用（bundle <code>dsh plugin update</code> / 动态重定义 / 脚本分发覆盖副本）——运行中的插件不可自替换，拉取 ≠ 应用</li>
+<li>🔤 <strong>按钮字体对齐（v2.4.0）</strong>：输入框 ✨ 按钮三态（空闲/执行中/撤回）文字显式 13px/500/20px 字体锚点，与模型选择器一致；分发副本已同步升级（此前副本为 v2.1.0 旧版）</li>
 </ul>
 <h3>安装</h3>
 <h4>方式一：bundle 一键安装（推荐）</h4>
@@ -302,12 +304,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

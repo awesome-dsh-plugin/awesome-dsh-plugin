@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">itr-del/</span><wbr><span class="name">dsh-feishu</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/notify/">通知与集成</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,122 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>可插拔 cordis 插件，把飞书自建机器人接入运行中的
+<a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness (dsh)</a> <code>web</code>
+profile —— 通过 <code>dsh plugin add</code> 一行安装。</p>
+</blockquote>
+<pre><code>┌────────┐   WS    ┌──────────────┐   cordis    ┌──────────┐    LLM    ┌──────────┐
+│ 飞书 IM │ ──────&gt; │  本插件      │ ──────────&gt; │ dsh agent │ ────────&gt; │ DeepSeek │
+│        │ &lt;────── │              │ &lt;────────── │          │ &lt;──────── │          │
+└────────┘   API   └──────────────┘  events     └──────────┘  stream   └──────────┘
+</code></pre>
+<h3>功能</h3>
+<ul>
+<li>一个飞书私聊用户 ↔ 一个持久化 dsh 会话（<code>feishu:&lt;open_id&gt;</code>）。</li>
+<li>多轮对话跨重连保持。</li>
+<li>把助手回复流回飞书，4000 字分块。</li>
+<li>过滤 DeepSeek <code>&lt;|DSML|...&gt;</code> 工具调用标记。</li>
+<li>纯 ESM，无需 TypeScript 编译。</li>
+<li>无遥测、完全本地。</li>
+</ul>
+<h3>安装</h3>
+<h4>1. 安装 dsh</h4>
+<pre><code class="language-bash">npm install -g @deepseek-ai/dsh
+dsh web --help
+</code></pre>
+<h4>2. 安装本插件</h4>
+<pre><code class="language-bash">dsh plugin add dsh-feishu
+</code></pre>
+<p>会自动装到 <code>~/.dsh/profiles/web/node_modules/dsh-feishu</code> 并写入 <code>cordis.patch.yml</code>。</p>
+<h4>3. 配置飞书应用</h4>
+<p>到 <a href="https://open.feishu.cn/app">https://open.feishu.cn/app</a> 创建<strong>自建应用</strong>，复制 <code>appId</code> + <code>appSecret</code>。</p>
+<p>在<strong>事件与回调</strong>里：</p>
+<ul>
+<li>订阅方式选<strong>使用长连接接收事件/回调</strong>。</li>
+<li>添加事件 <code>im.message.receive_v1</code>。</li>
+</ul>
+<p>在<strong>权限</strong>里授予：</p>
+<ul>
+<li><code>im:message</code></li>
+<li><code>im:message.p2p_msg</code>（私聊必需）</li>
+</ul>
+<p><strong>发布版本</strong> —— 没发布就收不到事件。发布后等约 2 分钟缓存刷新。</p>
+<h4>4. 导出环境变量并启动</h4>
+<pre><code class="language-bash">export DEEPSEEK_API_KEY=&quot;sk-...&quot;
+export FEISHU_APP_ID=&quot;cli_...&quot;
+export FEISHU_APP_SECRET=&quot;...&quot;
+
+dsh web
+</code></pre>
+<p>日志里应该看到：</p>
+<pre><code>[feishu] WebSocket started (appId=cli_xxx)
+[feishu] FeishuBridgeService initialized
+</code></pre>
+<p>给机器人发私聊消息，agent 会在同一会话里回复。</p>
+<h3>环境变量</h3>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>必需</th>
+<th>默认</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DEEPSEEK_API_KEY</code></td>
+<td>是（LLM 调用）</td>
+<td>—</td>
+<td><a href="https://platform.deepseek.com">https://platform.deepseek.com</a></td>
+</tr>
+<tr>
+<td><code>DEEPSEEK_BASE_URL</code></td>
+<td>否</td>
+<td><code>https://api.deepseek.com</code></td>
+<td>代理场景</td>
+</tr>
+<tr>
+<td><code>FEISHU_APP_ID</code></td>
+<td>是</td>
+<td>—</td>
+<td>应用控制台里的 <code>cli_xxx</code></td>
+</tr>
+<tr>
+<td><code>FEISHU_APP_SECRET</code></td>
+<td>是</td>
+<td>—</td>
+<td>应用控制台 —— <strong>切勿提交</strong></td>
+</tr>
+</tbody></table>
+<h3>消息流</h3>
+<ol>
+<li>用户私聊机器人。</li>
+<li>飞书 SDK 触发 <code>im.message.receive_v1</code> → 本插件。</li>
+<li>插件为 <code>feishu:&lt;open_id&gt;</code> 加载/创建 agent。</li>
+<li>插件调用 <code>agent.followup(userMessage)</code>。</li>
+<li>agent 回到 <code>idle</code> 后，插件读取 <code>agent.session.events</code>，过滤 DSML 噪声，通过
+<code>larkClient.im.message.create(...)</code> 把回复发回飞书。</li>
+</ol>
+<h3>限制</h3>
+<ul>
+<li><strong>仅文本</strong>。图片/文件/卡片/post 消息未处理。</li>
+<li><strong>不流式</strong>。turn 结束后再发送回复。</li>
+<li><strong>暂不支持群聊</strong>。仅私聊。</li>
+</ul>
+<h3>协议</h3>
+<p>MIT。</p>
+<h3>作者</h3>
+<p><a href="https://github.com/itr-del">itr-del</a> — <code>13918029394@163.com</code></p>
+<p>在 Ubuntu 22.04 上集成 dsh 与自托管飞书机器人过程中编写。</p>
+<p>English docs: <a href="https://github.com/itr-del/dsh-feishu/blob/master/README.md">README.md</a>。</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/itr-del/dsh-feishu/blob/master/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>

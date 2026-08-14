@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">zhang787jun/</span><wbr><span class="name">dsh-finance</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,57 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml"><img src="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome DSH plugin"></a>
+<a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></p>
+<p>面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的金融研究与组合风控工作流插件。</p>
+<p>这个插件参考 Claude 金融研究插件的组织方式，尤其是 Bigdata.com Claude 插件的
+<code>manifest + skills + MCP/tool</code> 分层，但实现为 DSH 原生 bundle：</p>
+<ul>
+<li><code>package.json</code> 声明 <code>dsh.bundle.patch</code></li>
+<li><code>cordis.patch.yml</code> 注入 DSH profile layer</li>
+<li>内置金融研究与组合风控 skills</li>
+<li>通过 <code>@deepseek-ai/dsh-tools</code> 注册 DSH tools</li>
+</ul>
+<p>它不自带实时行情、券商或财务数据库。插件的目标是让 agent 在做金融研究时先规划、
+引用、标注时间戳和边界，避免把过期或无来源的数据说成当前事实。</p>
+<h3>工具</h3>
+<ul>
+<li><code>finance_research_workflow</code>：生成有来源约束的研究工作流，覆盖公司简报、投资 memo、
+估值快照、风险评估、财报质量、催化剂跟踪、行业地图、宏观/国家分析。</li>
+<li><code>portfolio_risk_snapshot</code>：基于用户提供的持仓市值、NAV、现金和行业数据，计算总敞口、
+净敞口、现金比例、集中度和控制线触发项。</li>
+</ul>
+<h3>内置 Skills</h3>
+<ul>
+<li><code>dsh-finance-research</code>：把金融问题路由到合适研究工作流，并强制当前来源纪律。</li>
+<li><code>dsh-portfolio-risk</code>：审查用户提供的组合数据，输出敞口、集中度、现金和风险控制项。</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:zhang787jun/dsh-finance
+dsh web
+</code></pre>
+<p>本地开发：</p>
+<pre><code class="language-sh">pnpm install
+pnpm run check
+dsh plugin --profile web add .
+</code></pre>
+<h3>安全边界</h3>
+<p>金融数据变化很快。凡是价格、市值、估值倍数、盈利预期、持仓、评级、宏观数据等
+市场敏感事实，都必须来自当前会话里的有日期来源。</p>
+<p>本插件仅用于研究辅助，不构成投资、法律、税务或会计建议，也不是买入、卖出或持有
+任何证券的推荐。</p>
+<h3>社区</h3>
+<p>仓库会添加 <code>dsh-plugin</code> GitHub topic，方便 DSH 插件搜索工具和社区索引发现。</p>
+<h3>License</h3>
+<p><a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/zhang787jun/dsh-finance/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,8 +249,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>

@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">severin-ye/</span><wbr><span class="name">uagent-sync#packages/dsh</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/workflow/">工作流与自动化</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,183 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>uagent-sync 的 DeepSeek Harness bundle 形态。注册 16 个 <code>sync_*</code> 工具（与 opencode plugin 的 <code>opencode_sync_*</code>、CLI 的 16 命令一一对应），全部通过 <strong>uagent-sync CLI 桥接执行</strong>——与 Codex 形态（skills + hooks）保持同一&quot;CLI 单一执行通道&quot;架构。</p>
+<p>插件加载时还会把共享 skills（<code>uagent-sync-backup/restore/update</code>）注册为 DSH runtime skills——从 CLI 所在 checkout 的 <code>skills/</code> 目录读取，与 opencode/Codex 是同一份，正文中的 <code>&lt;uagent-sync&gt;</code> 占位符自动替换为真实路径，Agent 可直接执行。skills 目录缺失时静默跳过（工具不受影响）。</p>
+<p>中文名：<strong>U同步</strong>（别名 <strong>优同步</strong>）。语音命令：</p>
+<ul>
+<li>&quot;U同步，更新所有扩展&quot; → <code>sync_update</code></li>
+<li>&quot;U同步，备份&quot; → <code>sync_push</code>（配合 init/create_repo/api_keys/guide）</li>
+<li>&quot;U同步，恢复&quot; → <code>sync_pull</code>（配合 init/setup/api_keys）</li>
+<li>&quot;U同步，检查环境&quot; → <code>sync_verify</code></li>
+</ul>
+<h3>工具清单（16 个）</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>CLI 命令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>sync_export</code></td>
+<td><code>export</code></td>
+<td>导出工作区状态 JSON</td>
+</tr>
+<tr>
+<td><code>sync_import</code></td>
+<td><code>import</code></td>
+<td>从 JSON/URL 恢复</td>
+</tr>
+<tr>
+<td><code>sync_diff</code></td>
+<td><code>diff</code></td>
+<td>对比当前与已保存状态</td>
+</tr>
+<tr>
+<td><code>sync_push</code></td>
+<td><code>push</code></td>
+<td>导出 + 提交 + 推送到 GitHub</td>
+</tr>
+<tr>
+<td><code>sync_pull</code></td>
+<td><code>pull</code></td>
+<td>拉取 + 应用状态</td>
+</tr>
+<tr>
+<td><code>sync_status</code></td>
+<td><code>status</code></td>
+<td>子模块状态</td>
+</tr>
+<tr>
+<td><code>sync_verify</code></td>
+<td><code>verify</code></td>
+<td>环境健康检查</td>
+</tr>
+<tr>
+<td><code>sync_setup</code></td>
+<td><code>setup</code></td>
+<td>安装工作区依赖</td>
+</tr>
+<tr>
+<td><code>sync_init</code></td>
+<td><code>init</code></td>
+<td>初始化（backup/sync）</td>
+</tr>
+<tr>
+<td><code>sync_create_repo</code></td>
+<td><code>create-repo</code></td>
+<td>创建私人 GitHub 仓库</td>
+</tr>
+<tr>
+<td><code>sync_api_keys</code></td>
+<td><code>api-keys</code></td>
+<td>密钥模板 detect/generate/add</td>
+</tr>
+<tr>
+<td><code>sync_guide</code></td>
+<td><code>guide</code></td>
+<td>生成 SYNC-GUIDE.md</td>
+</tr>
+<tr>
+<td><code>sync_log</code></td>
+<td><code>log</code></td>
+<td>安装溯源日志 read/add/export</td>
+</tr>
+<tr>
+<td><code>sync_crystallize</code></td>
+<td><code>crystallize</code></td>
+<td>记录安装 + 文档 + 导出 + 一键提交</td>
+</tr>
+<tr>
+<td><code>sync_update</code></td>
+<td><code>update</code></td>
+<td>更新 coding-agent 生态</td>
+</tr>
+<tr>
+<td><code>sync_changelog</code></td>
+<td><code>changelog</code></td>
+<td>从更新报告提取变更证据</td>
+</tr>
+</tbody></table>
+<h3>安装</h3>
+<blockquote>
+<p>DeepSeek Harness 目前是 Developer Preview，以下命令以当前版本为准。</p>
+</blockquote>
+<p><strong>方式一：从 GitHub 安装（本仓库 monorepo 子包）</strong></p>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add &quot;github:severin-ye/uagent-sync#main&amp;path:packages/dsh&quot;
+</code></pre>
+<blockquote>
+<p>本包是纯 JavaScript，无需 <code>prepare</code> 构建授权（pnpm ≥10 的 allowBuilds 步骤不会出现）。</p>
+</blockquote>
+<p><strong>方式二：本地 checkout 安装</strong></p>
+<pre><code class="language-sh"># 在 uagent-sync 仓库内先构建 CLI：
+npm install &amp;&amp; npm run build
+
+dsh plugin --profile &lt;name&gt; add ./packages/dsh
+</code></pre>
+<p>本地安装时插件自动通过相对路径发现 <code>dist/cli.js</code>，无需配置。</p>
+<p><strong>方式三：npm 发布后</strong></p>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add uagent-sync-dsh
+</code></pre>
+<h3>CLI 定位与配置</h3>
+<p>工具执行前按以下顺序定位 <code>dist/cli.js</code>：</p>
+<ol>
+<li>cordis.yml 配置：<code>config: { cliPath: &#39;/abs/path/to/uagent-sync/dist/cli.js&#39; }</code></li>
+<li>环境变量：<code>OPENCODE_SYNC_UAGENT_SYNC_CLI</code></li>
+<li>本地 checkout 相对路径（方式二自动命中）</li>
+<li>工作区递归：从 cwd 向上找 <code>.gitmodules</code>，在其下找 <code>uagent-sync/dist/cli.js</code></li>
+</ol>
+<p>全部失败时工具返回可操作的错误指引（fail loud）。</p>
+<pre><code class="language-yaml"># 在 profile 的 cordis.patch.yml 里覆盖配置示例
+- id: uagent-sync
+  name: uagent-sync-dsh
+  config:
+    cliPath: &#39;C:/Users/you/Codelib/2_Business/uagent-sync/dist/cli.js&#39;
+    commandTimeoutMs: 1800000   # update 全量可能 30 分钟，默认 10 分钟
+</code></pre>
+<h3>三端对照</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>opencode</th>
+<th>Codex</th>
+<th>DeepSeek Harness</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>形态</td>
+<td>plugin（16 <code>opencode_sync_*</code> 工具）</td>
+<td>skills + hooks</td>
+<td>bundle（16 <code>sync_*</code> 工具）</td>
+</tr>
+<tr>
+<td>执行通道</td>
+<td>进程内调用业务函数</td>
+<td>CLI</td>
+<td>CLI 桥接</td>
+</tr>
+<tr>
+<td>共享资产</td>
+<td>skills/ 目录</td>
+<td>skills/ 目录</td>
+<td>skills/ 目录 + CLI</td>
+</tr>
+<tr>
+<td>分发</td>
+<td><code>dist/plugin.js</code></td>
+<td>marketplace</td>
+<td><code>dsh plugin add</code></td>
+</tr>
+</tbody></table>
+
+    </div>
+    <p class="note"><a href="https://github.com/severin-ye/uagent-sync/blob/master/packages/dsh/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,9 +375,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 238</span></h3><a class="desc-link" href="/zh/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams 多智能体团队。</p></a></li>
+      <li><h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 241</span></h3><a class="desc-link" href="/zh/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams 多智能体团队。</p></a></li>
       <li><h3><a href="/zh/p/icetomoyo/dsh_workflow/" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 54</span></h3><a class="desc-link" href="/zh/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。</p></a></li>
-      <li><h3><a href="/zh/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 42</span></h3><a class="desc-link" href="/zh/p/btspoony/mstar-harness/" tabindex="-1"><p>技能驱动的 harness/loop 工程化工作流插件。</p></a></li>
+      <li><h3><a href="/zh/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 43</span></h3><a class="desc-link" href="/zh/p/btspoony/mstar-harness/" tabindex="-1"><p>技能驱动的 harness/loop 工程化工作流插件。</p></a></li>
       <li><h3><a href="/zh/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/zh/p/titanwings/dsh-automation/" tabindex="-1"><p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p></a></li>
       <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>自适应深度研究编排器（基于官方 workflow 引擎）。</p></a></li>
