@@ -211,6 +211,10 @@
   "npm": "dsh-pomodoro",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Cavan-Ou/hermes-dsh-collab": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/ccch1mneyyy/dsh-TUI": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1384,6 +1388,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/zoumutou/dsh-cost-balance": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/zoumutou/dsh-web-preview": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },

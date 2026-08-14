@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 349,
+ "count": 351,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1234,6 +1234,21 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:yyyyukari/dsh-plugin-workshop",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-preview",
+   "owner": "zoumutou",
+   "url": "https://github.com/zoumutou/dsh-web-preview",
+   "page": "https://awesome-dsh-plugin.com/p/zoumutou/dsh-web-preview/",
+   "category": "ui",
+   "description": {
+    "en": "Side web-preview panel: local static hosting, Markdown/code/image preview, one-click run of non-static projects (Cargo/npm/Go/Python) with live logs, web element mark & annotate, and link-click takeover into the side panel.",
+    "zh": "侧边网页预览面板：本地静态托管、Markdown/代码/图片预览、非静态项目一键运行（Cargo/npm/Go/Python）实时日志、网页元素标记批注、链接点击接管到侧边预览。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:zoumutou/dsh-web-preview",
    "added": "2026-08-14"
   },
   {
@@ -3439,6 +3454,21 @@
    "npm": null,
    "stars": 2,
    "install": "dsh plugin --profile web add github:lunw/shopline-ai-toolkit-dsh",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "hermes-dsh-collab",
+   "owner": "Cavan-Ou",
+   "url": "https://github.com/Cavan-Ou/hermes-dsh-collab",
+   "page": "https://awesome-dsh-plugin.com/p/Cavan-Ou/hermes-dsh-collab/",
+   "category": "skill",
+   "description": {
+    "en": "Hook DeepSeek Harness into a Hermes pipeline: dispatch-spec template, model-tier routing, orchestrator-run quality gates, git single-writer rule, as a SKILL.md pack (bundle installable).",
+    "zh": "把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Cavan-Ou/hermes-dsh-collab",
    "added": "2026-08-14"
   },
   {
