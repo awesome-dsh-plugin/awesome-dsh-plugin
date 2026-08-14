@@ -132,7 +132,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}

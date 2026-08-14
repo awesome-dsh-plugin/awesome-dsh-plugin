@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -344,12 +346,12 @@ reverted — neither is required.</li>
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/franksong2702/dsh-codex-connect/" translate="no">franksong2702/dsh-codex-connect</a><span class="stars" translate="no">★ 4</span></h3><p>通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。</p></li>
-      <li><h3><a href="/zh/p/omdsh-dev/Qwen-MM-Plugins/" translate="no">omdsh-dev/Qwen-MM-Plugins</a><span class="stars" translate="no">★ 4</span></h3><p>Qwen 多模态插件支持。</p></li>
-      <li><h3><a href="/zh/p/dylan121322/llm-adaptive/" translate="no">dylan121322/llm-adaptive</a><span class="stars" translate="no">★ 2</span></h3><p>自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。</p></li>
-      <li><h3><a href="/zh/p/kam74515-boop/dsh-everything-oauth/" translate="no">kam74515-boop/dsh-everything-oauth</a><span class="stars" translate="no">★ 1</span></h3><p>把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。</p></li>
-      <li><h3><a href="/zh/p/suntianc/dsh-codex-auth/" translate="no">suntianc/dsh-codex-auth</a><span class="stars" translate="no">★ 1</span></h3><p>复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。</p></li>
-      <li><h3><a href="/zh/p/feibi-mochi/deepseek-harness-wallet/" translate="no">feibi-mochi/deepseek-harness-wallet</a><span class="stars" translate="no">★ 1</span></h3><p>多供应商钱包标签：官方 DeepSeek 余额、本会话花费与 token、第三方合计 token、一键充值、低余额提醒。</p></li>
+      <li><h3><a href="/zh/p/franksong2702/dsh-codex-connect/" translate="no">franksong2702/dsh-codex-connect</a><span class="stars" translate="no">★ 4</span></h3><a class="desc-link" href="/zh/p/franksong2702/dsh-codex-connect/" tabindex="-1"><p>通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/Qwen-MM-Plugins/" translate="no">omdsh-dev/Qwen-MM-Plugins</a><span class="stars" translate="no">★ 4</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/Qwen-MM-Plugins/" tabindex="-1"><p>Qwen 多模态插件支持。</p></a></li>
+      <li><h3><a href="/zh/p/dylan121322/llm-adaptive/" translate="no">dylan121322/llm-adaptive</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/dylan121322/llm-adaptive/" tabindex="-1"><p>自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。</p></a></li>
+      <li><h3><a href="/zh/p/kam74515-boop/dsh-everything-oauth/" translate="no">kam74515-boop/dsh-everything-oauth</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/kam74515-boop/dsh-everything-oauth/" tabindex="-1"><p>把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。</p></a></li>
+      <li><h3><a href="/zh/p/suntianc/dsh-codex-auth/" translate="no">suntianc/dsh-codex-auth</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/suntianc/dsh-codex-auth/" tabindex="-1"><p>复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。</p></a></li>
+      <li><h3><a href="/zh/p/feibi-mochi/deepseek-harness-wallet/" translate="no">feibi-mochi/deepseek-harness-wallet</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/feibi-mochi/deepseek-harness-wallet/" tabindex="-1"><p>多供应商钱包标签：官方 DeepSeek 余额、本会话花费与 token、第三方合计 token、一键充值、低余额提醒。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/model/">查看整个分类 →</a>
   </section>

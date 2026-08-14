@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no"><span class="owner">Anionex/</span>dsh-turn-rewind</a></h3>
         <span class="stars" translate="no">35</span>
       </div>
-      <p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p>
+      <a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no"><span class="owner">Chinesezjc/</span>dsh-interconnect</a></h3>
         <span class="stars" translate="no">24</span>
       </div>
-      <p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p>
+      <a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Nwflower/dsh-chat-import/" translate="no"><span class="owner">Nwflower/</span>dsh-chat-import</a></h3>
         <span class="stars" translate="no">21</span>
       </div>
-      <p>Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode chat histories as resumable DeepSeek Harness sessions.</p>
+      <a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode chat histories as resumable DeepSeek Harness sessions.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/hellodigua/dsh-share/" translate="no"><span class="owner">hellodigua/</span>dsh-share</a></h3>
         <span class="stars" translate="no">16</span>
       </div>
-      <p>Share your conversations with one click.</p>
+      <a class="desc-link" href="/p/hellodigua/dsh-share/" tabindex="-1"><p>Share your conversations with one click.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Moeblack/dsh-message-edit/" translate="no"><span class="owner">Moeblack/</span>dsh-message-edit</a></h3>
         <span class="stars" translate="no">16</span>
       </div>
-      <p>Branch-based message editing, reroll, retry, and a version timeline.</p>
+      <a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no"><span class="owner">whyihaveyou/</span>dsh-suite#plugin-session-export</a></h3>
         <span class="stars" translate="no">14</span>
       </div>
-      <p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p>
+      <a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/yuezengwu/dsh-explain/" translate="no"><span class="owner">yuezengwu/</span>dsh-explain</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>Local-first learning mode: cross-session learning threads with per-source explanations.</p>
+      <a class="desc-link" href="/p/yuezengwu/dsh-explain/" tabindex="-1"><p>Local-first learning mode: cross-session learning threads with per-source explanations.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/dongsheng123132/task-passport/" translate="no"><span class="owner">dongsheng123132/</span>task-passport</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.</p>
+      <a class="desc-link" href="/p/dongsheng123132/task-passport/" tabindex="-1"><p>Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/czm15053/dsh-peer-link/" translate="no"><span class="owner">czm15053/</span>dsh-peer-link</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).</p>
+      <a class="desc-link" href="/p/czm15053/dsh-peer-link/" tabindex="-1"><p>Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Buyi-wsgzg/dsh-sidechain/" translate="no"><span class="owner">Buyi-wsgzg/</span>dsh-sidechain</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>`/side` persistent side sessions and `/btw` one-shot side questions, run in a temporary fork without touching main history.</p>
+      <a class="desc-link" href="/p/Buyi-wsgzg/dsh-sidechain/" tabindex="-1"><p>`/side` persistent side sessions and `/btw` one-shot side questions, run in a temporary fork without touching main history.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Moeblack/dsh-prompt-studio/" translate="no"><span class="owner">Moeblack/</span>dsh-prompt-studio</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Edit user and built-in system-prompt sections with live preview.</p>
+      <a class="desc-link" href="/p/Moeblack/dsh-prompt-studio/" tabindex="-1"><p>Edit user and built-in system-prompt sections with live preview.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Nwflower/dsh-file-claim/" translate="no"><span class="owner">Nwflower/</span>dsh-file-claim</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</p>
+      <a class="desc-link" href="/p/Nwflower/dsh-file-claim/" tabindex="-1"><p>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/heartmove/dsh-side-chat/" translate="no"><span class="owner">heartmove/</span>dsh-side-chat</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Select part of a conversation and ask about it in a right-side side chat; bring AI replies back to the main chat directly or as a summary.</p>
+      <a class="desc-link" href="/p/heartmove/dsh-side-chat/" tabindex="-1"><p>Select part of a conversation and ask about it in a right-side side chat; bring AI replies back to the main chat directly or as a summary.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/bwndlct/dsh-session-export/" translate="no"><span class="owner">bwndlct/</span>dsh-session-export</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Export the current session to portable, schema-versioned Markdown and JSON files via the `session_export` tool and slash commands, with cross-platform-safe filenames.</p>
+      <a class="desc-link" href="/p/bwndlct/dsh-session-export/" tabindex="-1"><p>Export the current session to portable, schema-versioned Markdown and JSON files via the `session_export` tool and slash commands, with cross-platform-safe filenames.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Jesse-njx/dsh-crosstalk/" translate="no"><span class="owner">Jesse-njx/</span>dsh-crosstalk</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</p>
+      <a class="desc-link" href="/p/Jesse-njx/dsh-crosstalk/" tabindex="-1"><p>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/LeslieWylie/dsh-task-relay/" translate="no"><span class="owner">LeslieWylie/</span>dsh-task-relay</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Cross-session task queue with handoff notes: sessions and subagents push, claim, complete and cancel tasks on a shared file-backed queue, and leave a handoff summary for whoever picks up next.</p>
+      <a class="desc-link" href="/p/LeslieWylie/dsh-task-relay/" tabindex="-1"><p>Cross-session task queue with handoff notes: sessions and subagents push, claim, complete and cancel tasks on a shared file-backed queue, and leave a handoff summary for whoever picks up next.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/bill9109/dsh-conversation-share/" translate="no"><span class="owner">bill9109/</span>dsh-conversation-share</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Share any excerpt of a conversation.</p>
+      <a class="desc-link" href="/p/bill9109/dsh-conversation-share/" tabindex="-1"><p>Share any excerpt of a conversation.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Wine-Red/dsh-prompt-stash/" translate="no"><span class="owner">Wine-Red/</span>dsh-prompt-stash</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.</p>
+      <a class="desc-link" href="/p/Wine-Red/dsh-prompt-stash/" tabindex="-1"><p>Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -648,7 +650,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/LeslieWylie/dsh-session-search-pro/" translate="no"><span class="owner">LeslieWylie/</span>dsh-session-search-pro</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Search, list and read past and current sessions through the harness's own `sessionQuery` service: uses the SQLite FTS5 index where a deployment enables it, and falls back to a bounded newest-first scan where it does not.</p>
+      <a class="desc-link" href="/p/LeslieWylie/dsh-session-search-pro/" tabindex="-1"><p>Search, list and read past and current sessions through the harness's own `sessionQuery` service: uses the SQLite FTS5 index where a deployment enables it, and falls back to a bounded newest-first scan where it does not.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -669,7 +671,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/penguin-oo/dsh-bookmarks/" translate="no"><span class="owner">penguin-oo/</span>dsh-bookmarks</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.</p>
+      <a class="desc-link" href="/p/penguin-oo/dsh-bookmarks/" tabindex="-1"><p>Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -690,7 +692,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/3403473060/dsh-inline-images/" translate="no"><span class="owner">3403473060/</span>dsh-inline-images</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).</p>
+      <a class="desc-link" href="/p/3403473060/dsh-inline-images/" tabindex="-1"><p>Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">
@@ -711,7 +713,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/LeemanCheung/dsh-token-usage/" translate="no"><span class="owner">LeemanCheung/</span>dsh-token-usage</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Persistent per-session Token usage records and a settings dashboard with provider/model breakdowns and a 52-week activity heatmap.</p>
+      <a class="desc-link" href="/p/LeemanCheung/dsh-token-usage/" tabindex="-1"><p>Persistent per-session Token usage records and a settings dashboard with provider/model breakdowns and a 52-week activity heatmap.</p></a>
       <div class="foot">
         <a class="tag" href="/session/">Sessions & Messages</a>
         <details class="inst">

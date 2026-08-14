@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Nagi-ovo/dsh-ads/" translate="no"><span class="owner">Nagi-ovo/</span>dsh-ads</a></h3>
         <span class="stars" translate="no">313</span>
       </div>
-      <p>Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.</p>
+      <a class="desc-link" href="/p/Nagi-ovo/dsh-ads/" tabindex="-1"><p>Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/vlln/whale-girl/" translate="no"><span class="owner">vlln/</span>whale-girl</a></h3>
         <span class="stars" translate="no">119</span>
       </div>
-      <p>Desktop pet (QQ-pet style): floats in the corner, draggable, feedable, playable.</p>
+      <a class="desc-link" href="/p/vlln/whale-girl/" tabindex="-1"><p>Desktop pet (QQ-pet style): floats in the corner, draggable, feedable, playable.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/dsh-gomoku/" translate="no"><span class="owner">omdsh-dev/</span>dsh-gomoku</a></h3>
         <span class="stars" translate="no">12</span>
       </div>
-      <p>Play Gomoku against the AI, or let two AIs battle it out.</p>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-gomoku/" tabindex="-1"><p>Play Gomoku against the AI, or let two AIs battle it out.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/lhh010/dsh-minigames/" translate="no"><span class="owner">lhh010/</span>dsh-minigames</a></h3>
         <span class="stars" translate="no">12</span>
       </div>
-      <p>Side-panel arcade: 18 offline mini-games to play while the model thinks.</p>
+      <a class="desc-link" href="/p/lhh010/dsh-minigames/" tabindex="-1"><p>Side-panel arcade: 18 offline mini-games to play while the model thinks.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/AnacondaKC/dsh-stock-market/" translate="no"><span class="owner">AnacondaKC/</span>dsh-stock-market</a></h3>
         <span class="stars" translate="no">11</span>
       </div>
-      <p>Fixes the bug where your account can't lose money while you code.</p>
+      <a class="desc-link" href="/p/AnacondaKC/dsh-stock-market/" tabindex="-1"><p>Fixes the bug where your account can't lose money while you code.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/hellodigua/dsh-emoji/" translate="no"><span class="owner">hellodigua/</span>dsh-emoji</a></h3>
         <span class="stars" translate="no">11</span>
       </div>
-      <p>Automatically add emojis to AI replies.</p>
+      <a class="desc-link" href="/p/hellodigua/dsh-emoji/" tabindex="-1"><p>Automatically add emojis to AI replies.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/william-jin-cmu/dsh-stickers/" translate="no"><span class="owner">william-jin-cmu/</span>dsh-stickers</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>Bidirectional sticker reactions between user and agent.</p>
+      <a class="desc-link" href="/p/william-jin-cmu/dsh-stickers/" tabindex="-1"><p>Bidirectional sticker reactions between user and agent.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Moeblack/deepseek-manners/" translate="no"><span class="owner">Moeblack/</span>deepseek-manners</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>Append a thank-you note after every message. Mind your manners.</p>
+      <a class="desc-link" href="/p/Moeblack/deepseek-manners/" tabindex="-1"><p>Append a thank-you note after every message. Mind your manners.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/HuanLinOTO/dsh-plugin-d399/" translate="no"><span class="owner">HuanLinOTO/</span>dsh-plugin-d399</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>Pops up a mini-game menu (wordle, match-3, extensible) while the model generates.</p>
+      <a class="desc-link" href="/p/HuanLinOTO/dsh-plugin-d399/" tabindex="-1"><p>Pops up a mini-game menu (wordle, match-3, extensible) while the model generates.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/PC2005-cloud/dsh-pet--dsh-pet/" translate="no"><span class="owner">PC2005-cloud/</span>dsh-pet#dsh-pet</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.</p>
+      <a class="desc-link" href="/p/PC2005-cloud/dsh-pet--dsh-pet/" tabindex="-1"><p>Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/dsh-auto-chess/" translate="no"><span class="owner">omdsh-dev/</span>dsh-auto-chess</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>Auto chess: human vs AI, or AI vs AI.</p>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-auto-chess/" tabindex="-1"><p>Auto chess: human vs AI, or AI vs AI.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/anweat/dsh-web-search-pro/" translate="no"><span class="owner">anweat/</span>dsh-web-search-pro</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>Persistent enhanced web search: multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/Bilibili/YouTube/V2EX/Xiaohongshu/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, Playwright rendering.</p>
+      <a class="desc-link" href="/p/anweat/dsh-web-search-pro/" tabindex="-1"><p>Persistent enhanced web search: multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/Bilibili/YouTube/V2EX/Xiaohongshu/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, Playwright rendering.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/yyh-001/dsh-expression/" translate="no"><span class="owner">yyh-001/</span>dsh-expression</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.</p>
+      <a class="desc-link" href="/p/yyh-001/dsh-expression/" tabindex="-1"><p>Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/AnacondaKC/dsh-douyin/" translate="no"><span class="owner">AnacondaKC/</span>dsh-douyin</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Short-video sidebar: native player, series navigation, precise history replay.</p>
+      <a class="desc-link" href="/p/AnacondaKC/dsh-douyin/" tabindex="-1"><p>Short-video sidebar: native player, series navigation, precise history replay.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/minybear/DeepSeek-Harness-Pet/" translate="no"><span class="owner">minybear/</span>DeepSeek-Harness-Pet</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Codex-style desktop pet: a floating animated sprite in the corner that mirrors the agent's running state (working, waiting, failed, done).</p>
+      <a class="desc-link" href="/p/minybear/DeepSeek-Harness-Pet/" tabindex="-1"><p>Codex-style desktop pet: a floating animated sprite in the corner that mirrors the agent's running state (working, waiting, failed, done).</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/anweat/dsh-browser/" translate="no"><span class="owner">anweat/</span>dsh-browser</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Self-contained browser runtime: Playwright (chromium) + OpenCLI as plugin-local dependencies (global reuse fallback), exposes a `browser` service and 9 interactive browser tools.</p>
+      <a class="desc-link" href="/p/anweat/dsh-browser/" tabindex="-1"><p>Self-contained browser runtime: Playwright (chromium) + OpenCLI as plugin-local dependencies (global reuse fallback), exposes a `browser` service and 9 interactive browser tools.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/anweat/dsh-restart/" translate="no"><span class="owner">anweat/</span>dsh-restart</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.</p>
+      <a class="desc-link" href="/p/anweat/dsh-restart/" tabindex="-1"><p>Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/anweat/dsh-voice-webspeech/" translate="no"><span class="owner">anweat/</span>dsh-voice-webspeech</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).</p>
+      <a class="desc-link" href="/p/anweat/dsh-voice-webspeech/" tabindex="-1"><p>Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).</p></a>
       <div class="foot">
         <a class="tag" href="/fun/">Just for Fun</a>
         <details class="inst">

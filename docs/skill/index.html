@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/creght-dev/skills/" translate="no"><span class="owner">creght-dev/</span>skills</a></h3>
         <span class="stars" translate="no">7</span>
       </div>
-      <p>Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.</p>
+      <a class="desc-link" href="/p/creght-dev/skills/" tabindex="-1"><p>Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.</p></a>
       <div class="foot">
         <a class="tag" href="/skill/">Skills</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/dhicoc/dsh-reverse-skill/" translate="no"><span class="owner">dhicoc/</span>dsh-reverse-skill</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.</p>
+      <a class="desc-link" href="/p/dhicoc/dsh-reverse-skill/" tabindex="-1"><p>Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.</p></a>
       <div class="foot">
         <a class="tag" href="/skill/">Skills</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/YTxue/dsh-skill-manager/" translate="no"><span class="owner">YTxue/</span>dsh-skill-manager</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check &amp; auto-fix, system/project scope labels.</p>
+      <a class="desc-link" href="/p/YTxue/dsh-skill-manager/" tabindex="-1"><p>Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check &amp; auto-fix, system/project scope labels.</p></a>
       <div class="foot">
         <a class="tag" href="/skill/">Skills</a>
         <details class="inst">

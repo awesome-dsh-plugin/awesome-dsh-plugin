@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no"><span class="owner">hust-open-atom-club/</span>oh-dsh</a></h3>
         <span class="stars" translate="no">160</span>
       </div>
-      <p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p>
+      <a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Jayden-X-L/forkprobe/" translate="no"><span class="owner">Jayden-X-L/</span>forkprobe</a></h3>
         <span class="stars" translate="no">65</span>
       </div>
-      <p>同一任务并行试跑多个技能，对比结果选出最优。</p>
+      <a class="desc-link" href="/zh/p/Jayden-X-L/forkprobe/" tabindex="-1"><p>同一任务并行试跑多个技能，对比结果选出最优。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/vlln/plugin-registry/" translate="no"><span class="owner">vlln/</span>plugin-registry</a></h3>
         <span class="stars" translate="no">31</span>
       </div>
-      <p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p>
+      <a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no"><span class="owner">forrestchang/</span>dsh-multica-runtime</a></h3>
         <span class="stars" translate="no">27</span>
       </div>
-      <p>让 dsh 运行时跑在 Multica 上。</p>
+      <a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/DietCokewithSugar/dsh-user-experience/" translate="no"><span class="owner">DietCokewithSugar/</span>dsh-user-experience</a></h3>
         <span class="stars" translate="no">18</span>
       </div>
-      <p>帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。</p>
+      <a class="desc-link" href="/zh/p/DietCokewithSugar/dsh-user-experience/" tabindex="-1"><p>帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/dsh-plugin-check/" translate="no"><span class="owner">omdsh-dev/</span>dsh-plugin-check</a></h3>
         <span class="stars" translate="no">17</span>
       </div>
-      <p>插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/dsh-plugin-check/" tabindex="-1"><p>插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/dsh-security-audit/" translate="no"><span class="owner">omdsh-dev/</span>dsh-security-audit</a></h3>
         <span class="stars" translate="no">10</span>
       </div>
-      <p>本机安全审计：配置/插件来源/会话/网络暴露面，只读脱敏风险报告。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/dsh-security-audit/" tabindex="-1"><p>本机安全审计：配置/插件来源/会话/网络暴露面，只读脱敏风险报告。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/fabric/" translate="no"><span class="owner">omdsh-dev/</span>fabric</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>类似 MC Fabric 的 hook 处理器。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/fabric/" tabindex="-1"><p>类似 MC Fabric 的 hook 处理器。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/dsh-session-health/" translate="no"><span class="owner">omdsh-dev/</span>dsh-session-health</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>会话文件帧级扫描诊断（torn/损坏/空会话检测）。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/dsh-session-health/" tabindex="-1"><p>会话文件帧级扫描诊断（torn/损坏/空会话检测）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/LoserFox/dsh-git-identity/" translate="no"><span class="owner">LoserFox/</span>dsh-git-identity</a></h3>
         <span class="stars" translate="no">7</span>
       </div>
-      <p>git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。</p>
+      <a class="desc-link" href="/zh/p/LoserFox/dsh-git-identity/" tabindex="-1"><p>git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Zhenyu98/dsh-context-doctor/" translate="no"><span class="owner">Zhenyu98/</span>dsh-context-doctor</a></h3>
         <span class="stars" translate="no">6</span>
       </div>
-      <p>上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。</p>
+      <a class="desc-link" href="/zh/p/Zhenyu98/dsh-context-doctor/" tabindex="-1"><p>上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/xingyingyuzhui/dsh-updater-ui/" translate="no"><span class="owner">xingyingyuzhui/</span>dsh-updater-ui</a></h3>
         <span class="stars" translate="no">6</span>
       </div>
-      <p>设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。</p>
+      <a class="desc-link" href="/zh/p/xingyingyuzhui/dsh-updater-ui/" tabindex="-1"><p>设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/william-jin-cmu/dsh-evolve/" translate="no"><span class="owner">william-jin-cmu/</span>dsh-evolve</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>自进化：agent 在会话内给自己热挂载/卸载持久化插件。</p>
+      <a class="desc-link" href="/zh/p/william-jin-cmu/dsh-evolve/" tabindex="-1"><p>自进化：agent 在会话内给自己热挂载/卸载持久化插件。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/plugin-template/" translate="no"><span class="owner">omdsh-dev/</span>plugin-template</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>插件模板仓库（基于 turtle-ui 官方仓库）。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/plugin-template/" tabindex="-1"><p>插件模板仓库（基于 turtle-ui 官方仓库）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Areium/dsh-fail-logger/" translate="no"><span class="owner">Areium/</span>dsh-fail-logger</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。</p>
+      <a class="desc-link" href="/zh/p/Areium/dsh-fail-logger/" tabindex="-1"><p>全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/BrambleXu/dsh-annotate/" translate="no"><span class="owner">BrambleXu/</span>dsh-annotate</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。</p>
+      <a class="desc-link" href="/zh/p/BrambleXu/dsh-annotate/" tabindex="-1"><p>面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/030611/qiushi-dsh-evidence-audit/" translate="no"><span class="owner">030611/</span>qiushi-dsh-evidence-audit</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>把工具结果与会话事件的 receipt 写入本地哈希链 JSONL，不保存提示词、工具参数、结果正文或原始会话 ID。</p>
+      <a class="desc-link" href="/zh/p/030611/qiushi-dsh-evidence-audit/" tabindex="-1"><p>把工具结果与会话事件的 receipt 写入本地哈希链 JSONL，不保存提示词、工具参数、结果正文或原始会话 ID。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/PerryLink/dsh-mcp-panel/" translate="no"><span class="owner">PerryLink/</span>dsh-mcp-panel</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。</p>
+      <a class="desc-link" href="/zh/p/PerryLink/dsh-mcp-panel/" tabindex="-1"><p>官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -648,7 +650,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Yuuz12/dsh-webui-auth/" translate="no"><span class="owner">Yuuz12/</span>dsh-webui-auth</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。</p>
+      <a class="desc-link" href="/zh/p/Yuuz12/dsh-webui-auth/" tabindex="-1"><p>WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -669,7 +671,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/bujue600-arch/dsh-testgen/" translate="no"><span class="owner">bujue600-arch/</span>dsh-testgen</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>自动化单元测试生成：/testgen 命令与 generate_tests 工具，生成、运行并修复测试直至通过（LLM 与离线模板双生成器；支持 vitest/jest/mocha/node:test）。</p>
+      <a class="desc-link" href="/zh/p/bujue600-arch/dsh-testgen/" tabindex="-1"><p>自动化单元测试生成：/testgen 命令与 generate_tests 工具，生成、运行并修复测试直至通过（LLM 与离线模板双生成器；支持 vitest/jest/mocha/node:test）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -690,7 +692,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/vibeinging/dsh-trace/" translate="no"><span class="owner">vibeinging/</span>dsh-trace</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>遥测后端：把 turns、model steps、tool calls 导出到 yiTrace。</p>
+      <a class="desc-link" href="/zh/p/vibeinging/dsh-trace/" tabindex="-1"><p>遥测后端：把 turns、model steps、tool calls 导出到 yiTrace。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -711,7 +713,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/030611/dsh-telemetry-redactor/" translate="no"><span class="owner">030611/</span>dsh-telemetry-redactor</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>在已配置遥测后端接收前，对 `session-telemetry/record` 导出副本中的已支持秘密模式进行脱敏。</p>
+      <a class="desc-link" href="/zh/p/030611/dsh-telemetry-redactor/" tabindex="-1"><p>在已配置遥测后端接收前，对 `session-telemetry/record` 导出副本中的已支持秘密模式进行脱敏。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -732,7 +734,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/030611/dsh-verification-receipt/" translate="no"><span class="owner">030611/</span>dsh-verification-receipt</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>把每轮工具计数与粗粒度验证信号写入本地 JSONL，不保存提示词、工具参数或结果正文。</p>
+      <a class="desc-link" href="/zh/p/030611/dsh-verification-receipt/" tabindex="-1"><p>把每轮工具计数与粗粒度验证信号写入本地 JSONL，不保存提示词、工具参数或结果正文。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -753,7 +755,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/sandbox-micro/" translate="no"><span class="owner">omdsh-dev/</span>sandbox-micro</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>microsandbox 沙箱支持。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/sandbox-micro/" tabindex="-1"><p>microsandbox 沙箱支持。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -774,7 +776,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/sandbox-nono/" translate="no"><span class="owner">omdsh-dev/</span>sandbox-nono</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>nono 沙盒支持。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/sandbox-nono/" tabindex="-1"><p>nono 沙盒支持。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -795,7 +797,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/vibeinging/dsh-agent-budget/" translate="no"><span class="owner">vibeinging/</span>dsh-agent-budget</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>agent 树 token 预算管理。</p>
+      <a class="desc-link" href="/zh/p/vibeinging/dsh-agent-budget/" tabindex="-1"><p>agent 树 token 预算管理。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -816,7 +818,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Leon0555/dsh-lan-access/" translate="no"><span class="owner">Leon0555/</span>dsh-lan-access</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。</p>
+      <a class="desc-link" href="/zh/p/Leon0555/dsh-lan-access/" tabindex="-1"><p>局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -837,7 +839,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/ICCuse/dsh-pain-point-check/" translate="no"><span class="owner">ICCuse/</span>dsh-pain-point-check</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。</p>
+      <a class="desc-link" href="/zh/p/ICCuse/dsh-pain-point-check/" tabindex="-1"><p>强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -858,7 +860,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/sandbox-mxc/" translate="no"><span class="owner">omdsh-dev/</span>sandbox-mxc</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>微软跨平台沙盒支持。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/sandbox-mxc/" tabindex="-1"><p>微软跨平台沙盒支持。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -879,7 +881,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/ilharp/dsh-tool-approval/" translate="no"><span class="owner">ilharp/</span>dsh-tool-approval</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>手动审批模式（Manual/Ask Mode）。</p>
+      <a class="desc-link" href="/zh/p/ilharp/dsh-tool-approval/" tabindex="-1"><p>手动审批模式（Manual/Ask Mode）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -900,7 +902,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/arrow949/dsh-turn-approval/" translate="no"><span class="owner">arrow949/</span>dsh-turn-approval</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>DSH「允许本次任务」临时授权：仅在当前任务内自动放行同类 `danger-full-access` 请求，任务结束自动失效。</p>
+      <a class="desc-link" href="/zh/p/arrow949/dsh-turn-approval/" tabindex="-1"><p>DSH「允许本次任务」临时授权：仅在当前任务内自动放行同类 `danger-full-access` 请求，任务结束自动失效。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -921,7 +923,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Small-tailqwq/dsh-tps/" translate="no"><span class="owner">Small-tailqwq/</span>dsh-tps</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>TPS 指标插件。</p>
+      <a class="desc-link" href="/zh/p/Small-tailqwq/dsh-tps/" tabindex="-1"><p>TPS 指标插件。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -942,7 +944,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/BiBoyang/dsh-eval-harness/" translate="no"><span class="owner">BiBoyang/</span>dsh-eval-harness</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。</p>
+      <a class="desc-link" href="/zh/p/BiBoyang/dsh-eval-harness/" tabindex="-1"><p>DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -963,7 +965,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/BrambleXu/dsh-prompt-profile/" translate="no"><span class="owner">BrambleXu/</span>dsh-prompt-profile</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。</p>
+      <a class="desc-link" href="/zh/p/BrambleXu/dsh-prompt-profile/" tabindex="-1"><p>DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -984,7 +986,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/BrambleXu/dsh-revdiff/" translate="no"><span class="owner">BrambleXu/</span>dsh-revdiff</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。</p>
+      <a class="desc-link" href="/zh/p/BrambleXu/dsh-revdiff/" tabindex="-1"><p>DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1005,7 +1007,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/lonelymoon87/dsh-gitflow/" translate="no"><span class="owner">lonelymoon87/</span>dsh-gitflow</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。</p>
+      <a class="desc-link" href="/zh/p/lonelymoon87/dsh-gitflow/" tabindex="-1"><p>增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1026,7 +1028,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/EvilIrving/dsh-repro/" translate="no"><span class="owner">EvilIrving/</span>dsh-repro</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>/repro 导出最小可复现问题包：去 secret 的会话日志、失败命令与 git diff。</p>
+      <a class="desc-link" href="/zh/p/EvilIrving/dsh-repro/" tabindex="-1"><p>/repro 导出最小可复现问题包：去 secret 的会话日志、失败命令与 git diff。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1047,7 +1049,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/yflmq001/dsh-cost-tracker/" translate="no"><span class="owner">yflmq001/</span>dsh-cost-tracker</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。</p>
+      <a class="desc-link" href="/zh/p/yflmq001/dsh-cost-tracker/" tabindex="-1"><p>按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1068,7 +1070,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/slywalker2006/dsh-passwords/" translate="no"><span class="owner">slywalker2006/</span>dsh-passwords</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>DSH Web UI 登录网关：首次配置、bcrypt + 静态加密（AES-256-GCM/HMAC）、防爆破、审计日志、TLS 1.2+ 与 80→443 跳转、CSRF 与防嵌框。</p>
+      <a class="desc-link" href="/zh/p/slywalker2006/dsh-passwords/" tabindex="-1"><p>DSH Web UI 登录网关：首次配置、bcrypt + 静态加密（AES-256-GCM/HMAC）、防爆破、审计日志、TLS 1.2+ 与 80→443 跳转、CSRF 与防嵌框。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1089,7 +1091,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/leechen298/Code2Skill/" translate="no"><span class="owner">leechen298/</span>Code2Skill</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>从用户授权的源码生成 Function、MCP 工具、工作流 Skill 与离线测试包。</p>
+      <a class="desc-link" href="/zh/p/leechen298/Code2Skill/" tabindex="-1"><p>从用户授权的源码生成 Function、MCP 工具、工作流 Skill 与离线测试包。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1110,7 +1112,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Jesse-njx/dsh-polyglot/" translate="no"><span class="owner">Jesse-njx/</span>dsh-polyglot</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。</p>
+      <a class="desc-link" href="/zh/p/Jesse-njx/dsh-polyglot/" tabindex="-1"><p>DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1131,7 +1133,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/disyli/dsh-tool-call-stats/" translate="no"><span class="owner">disyli/</span>dsh-tool-call-stats</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>进程内工具调用统计：提供 `tool_stats` 工具，按工具汇报调用次数、失败次数与平均耗时。</p>
+      <a class="desc-link" href="/zh/p/disyli/dsh-tool-call-stats/" tabindex="-1"><p>进程内工具调用统计：提供 `tool_stats` 工具，按工具汇报调用次数、失败次数与平均耗时。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1152,7 +1154,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/lonelymoon87/dsh-guardian/" translate="no"><span class="owner">lonelymoon87/</span>dsh-guardian</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>增加危险操作策略检查、输出脱敏和安全审查工作流。</p>
+      <a class="desc-link" href="/zh/p/lonelymoon87/dsh-guardian/" tabindex="-1"><p>增加危险操作策略检查、输出脱敏和安全审查工作流。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1173,7 +1175,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Jesse-njx/dsh-plugin-manager/" translate="no"><span class="owner">Jesse-njx/</span>dsh-plugin-manager</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>`dsh pm` 插件管理器：多源搜索（awesome 列表 + GitHub + npm）、按 profile 安装/移除/更新，以及 doctor 审计（清单、bundle patch、版本漂移）。</p>
+      <a class="desc-link" href="/zh/p/Jesse-njx/dsh-plugin-manager/" tabindex="-1"><p>`dsh pm` 插件管理器：多源搜索（awesome 列表 + GitHub + npm）、按 profile 安装/移除/更新，以及 doctor 审计（清单、bundle patch、版本漂移）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">
@@ -1194,7 +1196,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Jesse-njx/dsh-tmuxctl/" translate="no"><span class="owner">Jesse-njx/</span>dsh-tmuxctl</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。</p>
+      <a class="desc-link" href="/zh/p/Jesse-njx/dsh-tmuxctl/" tabindex="-1"><p>掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/dev/">开发与运行时</a>
         <details class="inst">

@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Anionex/dsh-turn-rewind/" translate="no"><span class="owner">Anionex/</span>dsh-turn-rewind</a></h3>
         <span class="stars" translate="no">35</span>
       </div>
-      <p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p>
+      <a class="desc-link" href="/zh/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Chinesezjc/dsh-interconnect/" translate="no"><span class="owner">Chinesezjc/</span>dsh-interconnect</a></h3>
         <span class="stars" translate="no">24</span>
       </div>
-      <p>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</p>
+      <a class="desc-link" href="/zh/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Nwflower/dsh-chat-import/" translate="no"><span class="owner">Nwflower/</span>dsh-chat-import</a></h3>
         <span class="stars" translate="no">21</span>
       </div>
-      <p>把 Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode 的聊天记录全保真导入为可续聊的 DSH 会话。</p>
+      <a class="desc-link" href="/zh/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>把 Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode 的聊天记录全保真导入为可续聊的 DSH 会话。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/hellodigua/dsh-share/" translate="no"><span class="owner">hellodigua/</span>dsh-share</a></h3>
         <span class="stars" translate="no">16</span>
       </div>
-      <p>一键分享你的对话。</p>
+      <a class="desc-link" href="/zh/p/hellodigua/dsh-share/" tabindex="-1"><p>一键分享你的对话。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Moeblack/dsh-message-edit/" translate="no"><span class="owner">Moeblack/</span>dsh-message-edit</a></h3>
         <span class="stars" translate="no">16</span>
       </div>
-      <p>基于分支的消息编辑、reroll、重试与版本时间线。</p>
+      <a class="desc-link" href="/zh/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>基于分支的消息编辑、reroll、重试与版本时间线。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no"><span class="owner">whyihaveyou/</span>dsh-suite#plugin-session-export</a></h3>
         <span class="stars" translate="no">14</span>
       </div>
-      <p>把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。</p>
+      <a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/yuezengwu/dsh-explain/" translate="no"><span class="owner">yuezengwu/</span>dsh-explain</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>本地优先学习模式：跨会话全局学习线程、按来源讲解。</p>
+      <a class="desc-link" href="/zh/p/yuezengwu/dsh-explain/" tabindex="-1"><p>本地优先学习模式：跨会话全局学习线程、按来源讲解。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/dongsheng123132/task-passport/" translate="no"><span class="owner">dongsheng123132/</span>task-passport</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>通过机器可读检查点与乐观锁，在 DeepSeek Harness、WorkBuddy、Claude Code 和 Codex 之间交接持久任务状态。</p>
+      <a class="desc-link" href="/zh/p/dongsheng123132/task-passport/" tabindex="-1"><p>通过机器可读检查点与乐观锁，在 DeepSeek Harness、WorkBuddy、Claude Code 和 Codex 之间交接持久任务状态。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/czm15053/dsh-peer-link/" translate="no"><span class="owner">czm15053/</span>dsh-peer-link</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。</p>
+      <a class="desc-link" href="/zh/p/czm15053/dsh-peer-link/" tabindex="-1"><p>让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Buyi-wsgzg/dsh-sidechain/" translate="no"><span class="owner">Buyi-wsgzg/</span>dsh-sidechain</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>`/side` 持续性侧会话与 `/btw` 一次性侧问，在临时 fork 中运行、不写入主会话历史。</p>
+      <a class="desc-link" href="/zh/p/Buyi-wsgzg/dsh-sidechain/" tabindex="-1"><p>`/side` 持续性侧会话与 `/btw` 一次性侧问，在临时 fork 中运行、不写入主会话历史。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Moeblack/dsh-prompt-studio/" translate="no"><span class="owner">Moeblack/</span>dsh-prompt-studio</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>带实时预览的用户/内置 system prompt 分节编辑器。</p>
+      <a class="desc-link" href="/zh/p/Moeblack/dsh-prompt-studio/" tabindex="-1"><p>带实时预览的用户/内置 system prompt 分节编辑器。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Nwflower/dsh-file-claim/" translate="no"><span class="owner">Nwflower/</span>dsh-file-claim</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。</p>
+      <a class="desc-link" href="/zh/p/Nwflower/dsh-file-claim/" tabindex="-1"><p>同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/heartmove/dsh-side-chat/" translate="no"><span class="owner">heartmove/</span>dsh-side-chat</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。</p>
+      <a class="desc-link" href="/zh/p/heartmove/dsh-side-chat/" tabindex="-1"><p>选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/bwndlct/dsh-session-export/" translate="no"><span class="owner">bwndlct/</span>dsh-session-export</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>把当前会话导出为可移植、带 schema 版本的 Markdown 与 JSON 文件，提供 `session_export` 工具与斜杠命令两种入口，文件名跨平台安全。</p>
+      <a class="desc-link" href="/zh/p/bwndlct/dsh-session-export/" tabindex="-1"><p>把当前会话导出为可移植、带 schema 版本的 Markdown 与 JSON 文件，提供 `session_export` 工具与斜杠命令两种入口，文件名跨平台安全。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Jesse-njx/dsh-crosstalk/" translate="no"><span class="owner">Jesse-njx/</span>dsh-crosstalk</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。</p>
+      <a class="desc-link" href="/zh/p/Jesse-njx/dsh-crosstalk/" tabindex="-1"><p>跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/LeslieWylie/dsh-task-relay/" translate="no"><span class="owner">LeslieWylie/</span>dsh-task-relay</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>跨会话任务队列与交接摘要：会话与子 agent 在共享的文件队列上投递、认领、完成、取消任务，并留下交接摘要供后续会话查看。</p>
+      <a class="desc-link" href="/zh/p/LeslieWylie/dsh-task-relay/" tabindex="-1"><p>跨会话任务队列与交接摘要：会话与子 agent 在共享的文件队列上投递、认领、完成、取消任务，并留下交接摘要供后续会话查看。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/bill9109/dsh-conversation-share/" translate="no"><span class="owner">bill9109/</span>dsh-conversation-share</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>分享任意段落的对话。</p>
+      <a class="desc-link" href="/zh/p/bill9109/dsh-conversation-share/" tabindex="-1"><p>分享任意段落的对话。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Wine-Red/dsh-prompt-stash/" translate="no"><span class="owner">Wine-Red/</span>dsh-prompt-stash</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。</p>
+      <a class="desc-link" href="/zh/p/Wine-Red/dsh-prompt-stash/" tabindex="-1"><p>本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -648,7 +650,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/LeslieWylie/dsh-session-search-pro/" translate="no"><span class="owner">LeslieWylie/</span>dsh-session-search-pro</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>通过 harness 自带的 `sessionQuery` 服务搜索、列出、读取历史与当前会话：部署启用了 SQLite FTS5 索引时走索引，未启用时回退到有上限的倒序扫描。</p>
+      <a class="desc-link" href="/zh/p/LeslieWylie/dsh-session-search-pro/" tabindex="-1"><p>通过 harness 自带的 `sessionQuery` 服务搜索、列出、读取历史与当前会话：部署启用了 SQLite FTS5 索引时走索引，未启用时回退到有上限的倒序扫描。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -669,7 +671,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/penguin-oo/dsh-bookmarks/" translate="no"><span class="owner">penguin-oo/</span>dsh-bookmarks</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>收藏 AI 回复（备注/标签），跨会话收藏中心（搜索/筛选/跳回会话），一键导出 Markdown。</p>
+      <a class="desc-link" href="/zh/p/penguin-oo/dsh-bookmarks/" tabindex="-1"><p>收藏 AI 回复（备注/标签），跨会话收藏中心（搜索/筛选/跳回会话），一键导出 Markdown。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -690,7 +692,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/3403473060/dsh-inline-images/" translate="no"><span class="owner">3403473060/</span>dsh-inline-images</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。</p>
+      <a class="desc-link" href="/zh/p/3403473060/dsh-inline-images/" tabindex="-1"><p>对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">
@@ -711,7 +713,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/LeemanCheung/dsh-token-usage/" translate="no"><span class="owner">LeemanCheung/</span>dsh-token-usage</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>持久化记录每个会话的 Token 用量，在设置页提供 provider/model 统计与最近 52 周活跃度热力图。</p>
+      <a class="desc-link" href="/zh/p/LeemanCheung/dsh-token-usage/" tabindex="-1"><p>持久化记录每个会话的 Token 用量，在设置页提供 provider/model 统计与最近 52 周活跃度热力图。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/session/">会话与消息</a>
         <details class="inst">

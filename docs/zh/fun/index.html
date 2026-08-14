@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Nagi-ovo/dsh-ads/" translate="no"><span class="owner">Nagi-ovo/</span>dsh-ads</a></h3>
         <span class="stars" translate="no">313</span>
       </div>
-      <p>2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。</p>
+      <a class="desc-link" href="/zh/p/Nagi-ovo/dsh-ads/" tabindex="-1"><p>2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/vlln/whale-girl/" translate="no"><span class="owner">vlln/</span>whale-girl</a></h3>
         <span class="stars" translate="no">119</span>
       </div>
-      <p>桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。</p>
+      <a class="desc-link" href="/zh/p/vlln/whale-girl/" tabindex="-1"><p>桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/dsh-gomoku/" translate="no"><span class="owner">omdsh-dev/</span>dsh-gomoku</a></h3>
         <span class="stars" translate="no">12</span>
       </div>
-      <p>与 AI 下五子棋，也可让 AI 对局比棋力。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/dsh-gomoku/" tabindex="-1"><p>与 AI 下五子棋，也可让 AI 对局比棋力。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/lhh010/dsh-minigames/" translate="no"><span class="owner">lhh010/</span>dsh-minigames</a></h3>
         <span class="stars" translate="no">12</span>
       </div>
-      <p>右侧小游戏面板：18 款离线小游戏，等模型回复时的摸鱼神器。</p>
+      <a class="desc-link" href="/zh/p/lhh010/dsh-minigames/" tabindex="-1"><p>右侧小游戏面板：18 款离线小游戏，等模型回复时的摸鱼神器。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/AnacondaKC/dsh-stock-market/" translate="no"><span class="owner">AnacondaKC/</span>dsh-stock-market</a></h3>
         <span class="stars" translate="no">11</span>
       </div>
-      <p>有效解决了写代码的时候账户不能同时亏钱的 BUG。</p>
+      <a class="desc-link" href="/zh/p/AnacondaKC/dsh-stock-market/" tabindex="-1"><p>有效解决了写代码的时候账户不能同时亏钱的 BUG。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/hellodigua/dsh-emoji/" translate="no"><span class="owner">hellodigua/</span>dsh-emoji</a></h3>
         <span class="stars" translate="no">11</span>
       </div>
-      <p>为 AI 回复自动添加表情。</p>
+      <a class="desc-link" href="/zh/p/hellodigua/dsh-emoji/" tabindex="-1"><p>为 AI 回复自动添加表情。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/william-jin-cmu/dsh-stickers/" translate="no"><span class="owner">william-jin-cmu/</span>dsh-stickers</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>用户与 agent 双向表情贴纸互动。</p>
+      <a class="desc-link" href="/zh/p/william-jin-cmu/dsh-stickers/" tabindex="-1"><p>用户与 agent 双向表情贴纸互动。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Moeblack/deepseek-manners/" translate="no"><span class="owner">Moeblack/</span>deepseek-manners</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>给每次消息后注入感谢语，做个有礼貌的人。</p>
+      <a class="desc-link" href="/zh/p/Moeblack/deepseek-manners/" tabindex="-1"><p>给每次消息后注入感谢语，做个有礼貌的人。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/HuanLinOTO/dsh-plugin-d399/" translate="no"><span class="owner">HuanLinOTO/</span>dsh-plugin-d399</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>模型生成时弹出小游戏菜单（wordle/消消乐，可扩展）。</p>
+      <a class="desc-link" href="/zh/p/HuanLinOTO/dsh-plugin-d399/" tabindex="-1"><p>模型生成时弹出小游戏菜单（wordle/消消乐，可扩展）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/PC2005-cloud/dsh-pet--dsh-pet/" translate="no"><span class="owner">PC2005-cloud/</span>dsh-pet#dsh-pet</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>DSH Web UI 桌面宠物：25 个透明动画、屏幕漫游、点击反应与拖拽，附可复现的素材生成链。</p>
+      <a class="desc-link" href="/zh/p/PC2005-cloud/dsh-pet--dsh-pet/" tabindex="-1"><p>DSH Web UI 桌面宠物：25 个透明动画、屏幕漫游、点击反应与拖拽，附可复现的素材生成链。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/dsh-auto-chess/" translate="no"><span class="owner">omdsh-dev/</span>dsh-auto-chess</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>自走棋：人机对战或双 AI 对弈。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/dsh-auto-chess/" tabindex="-1"><p>自走棋：人机对战或双 AI 对弈。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/anweat/dsh-web-search-pro/" translate="no"><span class="owner">anweat/</span>dsh-web-search-pro</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>增强型、可持久化的网页搜索：多引擎路由（DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS）、SQLite+LRU 缓存、userscript 风格抽取、Playwright 渲染。</p>
+      <a class="desc-link" href="/zh/p/anweat/dsh-web-search-pro/" tabindex="-1"><p>增强型、可持久化的网页搜索：多引擎路由（DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS）、SQLite+LRU 缓存、userscript 风格抽取、Playwright 渲染。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/yyh-001/dsh-expression/" translate="no"><span class="owner">yyh-001/</span>dsh-expression</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>陪 AI 斗图的搞笑插件：说个感觉，AI 帮你搜到、发出那张恰到好处的真实表情包。</p>
+      <a class="desc-link" href="/zh/p/yyh-001/dsh-expression/" tabindex="-1"><p>陪 AI 斗图的搞笑插件：说个感觉，AI 帮你搜到、发出那张恰到好处的真实表情包。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/AnacondaKC/dsh-douyin/" translate="no"><span class="owner">AnacondaKC/</span>dsh-douyin</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>侧栏短视频：原生播放器、系列导航、精确历史回放。</p>
+      <a class="desc-link" href="/zh/p/AnacondaKC/dsh-douyin/" tabindex="-1"><p>侧栏短视频：原生播放器、系列导航、精确历史回放。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/minybear/DeepSeek-Harness-Pet/" translate="no"><span class="owner">minybear/</span>DeepSeek-Harness-Pet</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Codex 风格桌面宠物：右下角悬浮动画精灵，随 agent 运行状态实时变化（工作、等待、报错、完成）。</p>
+      <a class="desc-link" href="/zh/p/minybear/DeepSeek-Harness-Pet/" tabindex="-1"><p>Codex 风格桌面宠物：右下角悬浮动画精灵，随 agent 运行状态实时变化（工作、等待、报错、完成）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/anweat/dsh-browser/" translate="no"><span class="owner">anweat/</span>dsh-browser</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>自包含浏览器运行时：Playwright（chromium）+ OpenCLI 作为插件本地依赖（全局复用回退），提供 `browser` 服务与 9 个交互式浏览器工具。</p>
+      <a class="desc-link" href="/zh/p/anweat/dsh-browser/" tabindex="-1"><p>自包含浏览器运行时：Playwright（chromium）+ OpenCLI 作为插件本地依赖（全局复用回退），提供 `browser` 服务与 9 个交互式浏览器工具。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/anweat/dsh-restart/" translate="no"><span class="owner">anweat/</span>dsh-restart</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>DSH 重启插件：可配置的重启方式（Node 原生/旧 PowerShell 适配）、重启后自动继续的提示词、可选看门狗自动拉起。</p>
+      <a class="desc-link" href="/zh/p/anweat/dsh-restart/" tabindex="-1"><p>DSH 重启插件：可配置的重启方式（Node 原生/旧 PowerShell 适配）、重启后自动继续的提示词、可选看门狗自动拉起。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/anweat/dsh-voice-webspeech/" translate="no"><span class="owner">anweat/</span>dsh-voice-webspeech</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。</p>
+      <a class="desc-link" href="/zh/p/anweat/dsh-voice-webspeech/" tabindex="-1"><p>浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/fun/">娱乐</a>
         <details class="inst">

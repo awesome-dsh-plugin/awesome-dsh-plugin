@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -296,12 +298,12 @@ bash scripts/build.sh   # 产出 lib/（Windows 下依赖 junction，见 scripts
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 11</span></h3><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></li>
-      <li><h3><a href="/zh/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><p>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</p></li>
-      <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></li>
-      <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></li>
-      <li><h3><a href="/zh/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 1</span></h3><p>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</p></li>
+      <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/LoserFox/distill/" tabindex="-1"><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
+      <li><h3><a href="/zh/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/zh/p/modusensus/dsh-mneme/" tabindex="-1"><p>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</p></a></li>
+      <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></a></li>
+      <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></a></li>
+      <li><h3><a href="/zh/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/PerryLink/dsh-memento/" tabindex="-1"><p>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/memory/">查看整个分类 →</a>
   </section>

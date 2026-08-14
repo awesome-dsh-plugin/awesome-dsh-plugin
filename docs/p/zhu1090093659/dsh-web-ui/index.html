@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -392,12 +394,12 @@ dsh plugin --profile web add @linxin666/dsh-pet                    # 鲸鱼娘�
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 810</span></h3><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 694</span></h3><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 129</span></h3><p>A terminal UI (TUI) for DeepSeek Harness.</p></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 76</span></h3><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 71</span></h3><p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 810</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 694</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 129</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 76</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 71</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

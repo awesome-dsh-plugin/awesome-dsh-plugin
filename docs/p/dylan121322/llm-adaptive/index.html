@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -245,12 +247,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/franksong2702/dsh-codex-connect/" translate="no">franksong2702/dsh-codex-connect</a><span class="stars" translate="no">★ 4</span></h3><p>Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.</p></li>
-      <li><h3><a href="/p/omdsh-dev/Qwen-MM-Plugins/" translate="no">omdsh-dev/Qwen-MM-Plugins</a><span class="stars" translate="no">★ 4</span></h3><p>Qwen multi-modal plugin support.</p></li>
-      <li><h3><a href="/p/btspoony/dsh-llm-fallbacks/" translate="no">btspoony/dsh-llm-fallbacks</a><span class="stars" translate="no">★ 2</span></h3><p>Role-based LLM retry &amp; fallback strategies.</p></li>
-      <li><h3><a href="/p/kam74515-boop/dsh-everything-oauth/" translate="no">kam74515-boop/dsh-everything-oauth</a><span class="stars" translate="no">★ 1</span></h3><p>Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.</p></li>
-      <li><h3><a href="/p/suntianc/dsh-codex-auth/" translate="no">suntianc/dsh-codex-auth</a><span class="stars" translate="no">★ 1</span></h3><p>Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.</p></li>
-      <li><h3><a href="/p/feibi-mochi/deepseek-harness-wallet/" translate="no">feibi-mochi/deepseek-harness-wallet</a><span class="stars" translate="no">★ 1</span></h3><p>Multi-provider wallet chip: official DeepSeek balance, per-session cost &amp; tokens, third-party token totals, recharge shortcut, low-balance alerts.</p></li>
+      <li><h3><a href="/p/franksong2702/dsh-codex-connect/" translate="no">franksong2702/dsh-codex-connect</a><span class="stars" translate="no">★ 4</span></h3><a class="desc-link" href="/p/franksong2702/dsh-codex-connect/" tabindex="-1"><p>Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/Qwen-MM-Plugins/" translate="no">omdsh-dev/Qwen-MM-Plugins</a><span class="stars" translate="no">★ 4</span></h3><a class="desc-link" href="/p/omdsh-dev/Qwen-MM-Plugins/" tabindex="-1"><p>Qwen multi-modal plugin support.</p></a></li>
+      <li><h3><a href="/p/btspoony/dsh-llm-fallbacks/" translate="no">btspoony/dsh-llm-fallbacks</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/btspoony/dsh-llm-fallbacks/" tabindex="-1"><p>Role-based LLM retry &amp; fallback strategies.</p></a></li>
+      <li><h3><a href="/p/kam74515-boop/dsh-everything-oauth/" translate="no">kam74515-boop/dsh-everything-oauth</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/kam74515-boop/dsh-everything-oauth/" tabindex="-1"><p>Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.</p></a></li>
+      <li><h3><a href="/p/suntianc/dsh-codex-auth/" translate="no">suntianc/dsh-codex-auth</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/suntianc/dsh-codex-auth/" tabindex="-1"><p>Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.</p></a></li>
+      <li><h3><a href="/p/feibi-mochi/deepseek-harness-wallet/" translate="no">feibi-mochi/deepseek-harness-wallet</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/feibi-mochi/deepseek-harness-wallet/" tabindex="-1"><p>Multi-provider wallet chip: official DeepSeek balance, per-session cost &amp; tokens, third-party token totals, recharge shortcut, low-balance alerts.</p></a></li>
     </ul>
     <a class="morelink" href="/model/">View the whole category →</a>
   </section>

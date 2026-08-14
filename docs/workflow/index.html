@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/NanmiCoder/dsh-agent-teams/" translate="no"><span class="owner">NanmiCoder/</span>dsh-agent-teams</a></h3>
         <span class="stars" translate="no">225</span>
       </div>
-      <p>AgentTeams multi-agent teams.</p>
+      <a class="desc-link" href="/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams multi-agent teams.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/icetomoyo/dsh_workflow/" translate="no"><span class="owner">icetomoyo/</span>dsh_workflow</a></h3>
         <span class="stars" translate="no">54</span>
       </div>
-      <p>UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.</p>
+      <a class="desc-link" href="/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/btspoony/mstar-harness/" translate="no"><span class="owner">btspoony/</span>mstar-harness</a></h3>
         <span class="stars" translate="no">42</span>
       </div>
-      <p>Skill-driven harness/loop engineering workflow agent plugin.</p>
+      <a class="desc-link" href="/p/btspoony/mstar-harness/" tabindex="-1"><p>Skill-driven harness/loop engineering workflow agent plugin.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/titanwings/dsh-automation/" translate="no"><span class="owner">titanwings/</span>dsh-automation</a></h3>
         <span class="stars" translate="no">29</span>
       </div>
-      <p>Scheduled coding runs in fresh agent sessions with auditable history.</p>
+      <a class="desc-link" href="/p/titanwings/dsh-automation/" tabindex="-1"><p>Scheduled coding runs in fresh agent sessions with auditable history.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no"><span class="owner">whyihaveyou/</span>dsh-suite#plugin-team-board</a></h3>
         <span class="stars" translate="no">14</span>
       </div>
-      <p>Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.</p>
+      <a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/dsh-deep-research/" translate="no"><span class="owner">omdsh-dev/</span>dsh-deep-research</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>Adaptive deep-research orchestrator built on the official workflow engine.</p>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>Adaptive deep-research orchestrator built on the official workflow engine.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/biociao/dsh-science/" translate="no"><span class="owner">biociao/</span>dsh-science</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.</p>
+      <a class="desc-link" href="/p/biociao/dsh-science/" tabindex="-1"><p>Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/fakechris/dsh-track/" translate="no"><span class="owner">fakechris/</span>dsh-track</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>Embedded task management engine: decision-point protocol, idea capture wall, Linear-style issue store.</p>
+      <a class="desc-link" href="/p/fakechris/dsh-track/" tabindex="-1"><p>Embedded task management engine: decision-point protocol, idea capture wall, Linear-style issue store.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/btspoony/dsh-advisor/" translate="no"><span class="owner">btspoony/</span>dsh-advisor</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>Pair a second model that passively reviews each turn and injects notes.</p>
+      <a class="desc-link" href="/p/btspoony/dsh-advisor/" tabindex="-1"><p>Pair a second model that passively reviews each turn and injects notes.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/fuhefei/dsh-sentinel/" translate="no"><span class="owner">fuhefei/</span>dsh-sentinel</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Condition-driven wakeup: durable file/command/http/process/webhook watches that wake the agent.</p>
+      <a class="desc-link" href="/p/fuhefei/dsh-sentinel/" tabindex="-1"><p>Condition-driven wakeup: durable file/command/http/process/webhook watches that wake the agent.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/dsh-inspect/" translate="no"><span class="owner">omdsh-dev/</span>dsh-inspect</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Adversarial checkup → fix → review loop toolset.</p>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-inspect/" tabindex="-1"><p>Adversarial checkup → fix → review loop toolset.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/titanwings/dsh-plannotator/" translate="no"><span class="owner">titanwings/</span>dsh-plannotator</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>Plan review with anchored annotations and structured feedback back to the agent.</p>
+      <a class="desc-link" href="/p/titanwings/dsh-plannotator/" tabindex="-1"><p>Plan review with anchored annotations and structured feedback back to the agent.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/vlln/dsh-loop/" translate="no"><span class="owner">vlln/</span>dsh-loop</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>Recurring loops: `/loop` command + loop tool + activity status bar.</p>
+      <a class="desc-link" href="/p/vlln/dsh-loop/" tabindex="-1"><p>Recurring loops: `/loop` command + loop tool + activity status bar.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/ztl34245881-commits/dsh-task-planner/" translate="no"><span class="owner">ztl34245881-commits/</span>dsh-task-planner</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.</p>
+      <a class="desc-link" href="/p/ztl34245881-commits/dsh-task-planner/" tabindex="-1"><p>Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Sev7een/dsh-plugin-automations/" translate="no"><span class="owner">Sev7een/</span>dsh-plugin-automations</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Settings-based scheduled tasks that run on time or during DeepSeek off-peak hours, with one-time and daily schedules backed by durable task state.</p>
+      <a class="desc-link" href="/p/Sev7een/dsh-plugin-automations/" tabindex="-1"><p>Settings-based scheduled tasks that run on time or during DeepSeek off-peak hours, with one-time and daily schedules backed by durable task state.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Jesse-njx/dsh-routines/" translate="no"><span class="owner">Jesse-njx/</span>dsh-routines</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.</p>
+      <a class="desc-link" href="/p/Jesse-njx/dsh-routines/" tabindex="-1"><p>Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/EvilIrving/dsh-proof/" translate="no"><span class="owner">EvilIrving/</span>dsh-proof</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Independent read-only acceptance layer: spawns a read-only verifier before each top-level turn closes and steers non-pass gaps back into the agent.</p>
+      <a class="desc-link" href="/p/EvilIrving/dsh-proof/" tabindex="-1"><p>Independent read-only acceptance layer: spawns a read-only verifier before each top-level turn closes and steers non-pass gaps back into the agent.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/PerryLink/dsh-doublecheck/" translate="no"><span class="owner">PerryLink/</span>dsh-doublecheck</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Engineering-discipline guard: grill the requirements before the first edit, enforce red/green test evidence gates, and audit the delivery with a forked adversary (grill-requirements skill + tool-policy gates).</p>
+      <a class="desc-link" href="/p/PerryLink/dsh-doublecheck/" tabindex="-1"><p>Engineering-discipline guard: grill the requirements before the first edit, enforce red/green test evidence gates, and audit the delivery with a forked adversary (grill-requirements skill + tool-policy gates).</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -648,7 +650,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Letter2025/dsh-approval-llm/" translate="no"><span class="owner">Letter2025/</span>dsh-approval-llm</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Model-based permission approval: an approval-request answerer backed by a separate reviewer model.</p>
+      <a class="desc-link" href="/p/Letter2025/dsh-approval-llm/" tabindex="-1"><p>Model-based permission approval: an approval-request answerer backed by a separate reviewer model.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -669,7 +671,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Letter2025/dsh-model-failover/" translate="no"><span class="owner">Letter2025/</span>dsh-model-failover</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Two-level model circuit breaker with failover: trip a model or a whole provider after repeated request failures and route the next request to a configured fallback.</p>
+      <a class="desc-link" href="/p/Letter2025/dsh-model-failover/" tabindex="-1"><p>Two-level model circuit breaker with failover: trip a model or a whole provider after repeated request failures and route the next request to a configured fallback.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">
@@ -690,7 +692,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/lonelymoon87/dsh-specflow/" translate="no"><span class="owner">lonelymoon87/</span>dsh-specflow</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.</p>
+      <a class="desc-link" href="/p/lonelymoon87/dsh-specflow/" tabindex="-1"><p>Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.</p></a>
       <div class="foot">
         <a class="tag" href="/workflow/">Workflow & Automation</a>
         <details class="inst">

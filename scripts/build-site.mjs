@@ -106,7 +106,7 @@ function buildRows(loc, only) {
         <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
         ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
       </div>
-      <p>${esc(e.descs[loc.code])}</p>
+      <a class="desc-link" href="${loc.urlPath}p/${e.slug}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
       <div class="foot">
         <a class="tag" href="${loc.urlPath}${e.cat}/">${loc.categories[e.cat]}</a>
         <details class="inst">
@@ -286,7 +286,7 @@ for (const loc of LOCALES) {
       .filter((r) => r.cat === e.cat && r.url !== e.url)
       .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
       .slice(0, 6)
-      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><p>${esc(r.descs[loc.code])}</p></li>`)
+      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${r.slug}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
       .join('\n')
 
     const jsonldDetail = JSON.stringify([{

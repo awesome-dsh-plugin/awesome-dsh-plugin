@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no"><span class="owner">NanmiCoder/</span>dsh-agent-teams</a></h3>
         <span class="stars" translate="no">225</span>
       </div>
-      <p>AgentTeams 多智能体团队。</p>
+      <a class="desc-link" href="/zh/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams 多智能体团队。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/icetomoyo/dsh_workflow/" translate="no"><span class="owner">icetomoyo/</span>dsh_workflow</a></h3>
         <span class="stars" translate="no">54</span>
       </div>
-      <p>把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。</p>
+      <a class="desc-link" href="/zh/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/btspoony/mstar-harness/" translate="no"><span class="owner">btspoony/</span>mstar-harness</a></h3>
         <span class="stars" translate="no">42</span>
       </div>
-      <p>技能驱动的 harness/loop 工程化工作流插件。</p>
+      <a class="desc-link" href="/zh/p/btspoony/mstar-harness/" tabindex="-1"><p>技能驱动的 harness/loop 工程化工作流插件。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/titanwings/dsh-automation/" translate="no"><span class="owner">titanwings/</span>dsh-automation</a></h3>
         <span class="stars" translate="no">29</span>
       </div>
-      <p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p>
+      <a class="desc-link" href="/zh/p/titanwings/dsh-automation/" tabindex="-1"><p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no"><span class="owner">whyihaveyou/</span>dsh-suite#plugin-team-board</a></h3>
         <span class="stars" translate="no">14</span>
       </div>
-      <p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p>
+      <a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no"><span class="owner">omdsh-dev/</span>dsh-deep-research</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>自适应深度研究编排器（基于官方 workflow 引擎）。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>自适应深度研究编排器（基于官方 workflow 引擎）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/biociao/dsh-science/" translate="no"><span class="owner">biociao/</span>dsh-science</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。</p>
+      <a class="desc-link" href="/zh/p/biociao/dsh-science/" tabindex="-1"><p>面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/fakechris/dsh-track/" translate="no"><span class="owner">fakechris/</span>dsh-track</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。</p>
+      <a class="desc-link" href="/zh/p/fakechris/dsh-track/" tabindex="-1"><p>嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/btspoony/dsh-advisor/" translate="no"><span class="owner">btspoony/</span>dsh-advisor</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>搭配一个副模型，每轮被动审查并注入见解。</p>
+      <a class="desc-link" href="/zh/p/btspoony/dsh-advisor/" tabindex="-1"><p>搭配一个副模型，每轮被动审查并注入见解。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/fuhefei/dsh-sentinel/" translate="no"><span class="owner">fuhefei/</span>dsh-sentinel</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。</p>
+      <a class="desc-link" href="/zh/p/fuhefei/dsh-sentinel/" tabindex="-1"><p>条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/dsh-inspect/" translate="no"><span class="owner">omdsh-dev/</span>dsh-inspect</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>发现问题→修复交付→质量复查的对抗式闭环工具集。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/dsh-inspect/" tabindex="-1"><p>发现问题→修复交付→质量复查的对抗式闭环工具集。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/titanwings/dsh-plannotator/" translate="no"><span class="owner">titanwings/</span>dsh-plannotator</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。</p>
+      <a class="desc-link" href="/zh/p/titanwings/dsh-plannotator/" tabindex="-1"><p>计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/vlln/dsh-loop/" translate="no"><span class="owner">vlln/</span>dsh-loop</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>定时循环：`/loop` 命令 + loop 工具 + 活动状态条。</p>
+      <a class="desc-link" href="/zh/p/vlln/dsh-loop/" tabindex="-1"><p>定时循环：`/loop` 命令 + loop 工具 + 活动状态条。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/ztl34245881-commits/dsh-task-planner/" translate="no"><span class="owner">ztl34245881-commits/</span>dsh-task-planner</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>带经验肌肉记忆的任务规划：条件反射检索历史方案 + LLM 能力匹配 + 经验自动沉淀。</p>
+      <a class="desc-link" href="/zh/p/ztl34245881-commits/dsh-task-planner/" tabindex="-1"><p>带经验肌肉记忆的任务规划：条件反射检索历史方案 + LLM 能力匹配 + 经验自动沉淀。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Sev7een/dsh-plugin-automations/" translate="no"><span class="owner">Sev7een/</span>dsh-plugin-automations</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>设置页定时任务：支持准点或 DeepSeek 谷时段执行、单次/每日重复，并持久化任务状态。</p>
+      <a class="desc-link" href="/zh/p/Sev7een/dsh-plugin-automations/" tabindex="-1"><p>设置页定时任务：支持准点或 DeepSeek 谷时段执行、单次/每日重复，并持久化任务状态。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Jesse-njx/dsh-routines/" translate="no"><span class="owner">Jesse-njx/</span>dsh-routines</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。</p>
+      <a class="desc-link" href="/zh/p/Jesse-njx/dsh-routines/" tabindex="-1"><p>定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/EvilIrving/dsh-proof/" translate="no"><span class="owner">EvilIrving/</span>dsh-proof</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>独立只读验收层：顶层 turn 收尾前 spawn 只读 verifier，未通过时把缺口注回主 agent。</p>
+      <a class="desc-link" href="/zh/p/EvilIrving/dsh-proof/" tabindex="-1"><p>独立只读验收层：顶层 turn 收尾前 spawn 只读 verifier，未通过时把缺口注回主 agent。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/PerryLink/dsh-doublecheck/" translate="no"><span class="owner">PerryLink/</span>dsh-doublecheck</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审（grill-requirements 技能 + 工具策略门）。</p>
+      <a class="desc-link" href="/zh/p/PerryLink/dsh-doublecheck/" tabindex="-1"><p>工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审（grill-requirements 技能 + 工具策略门）。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -648,7 +650,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Letter2025/dsh-approval-llm/" translate="no"><span class="owner">Letter2025/</span>dsh-approval-llm</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>基于模型的权限审批：由独立审查模型自动应答 approval 权限请求。</p>
+      <a class="desc-link" href="/zh/p/Letter2025/dsh-approval-llm/" tabindex="-1"><p>基于模型的权限审批：由独立审查模型自动应答 approval 权限请求。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -669,7 +671,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/Letter2025/dsh-model-failover/" translate="no"><span class="owner">Letter2025/</span>dsh-model-failover</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>两级模型熔断与回退：模型或平台连续失败后自动熔断，并把下一个请求路由到配置好的备用模型。</p>
+      <a class="desc-link" href="/zh/p/Letter2025/dsh-model-failover/" tabindex="-1"><p>两级模型熔断与回退：模型或平台连续失败后自动熔断，并把下一个请求路由到配置好的备用模型。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">
@@ -690,7 +692,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/lonelymoon87/dsh-specflow/" translate="no"><span class="owner">lonelymoon87/</span>dsh-specflow</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。</p>
+      <a class="desc-link" href="/zh/p/lonelymoon87/dsh-specflow/" tabindex="-1"><p>增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/workflow/">工作流与自动化</a>
         <details class="inst">

@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no"><span class="owner">zhu1090093659/</span>dsh-web-ui</a></h3>
         <span class="stars" translate="no">1732</span>
       </div>
-      <p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p>
+      <a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no"><span class="owner">ccch1mneyyy/</span>dsh-TUI</a></h3>
         <span class="stars" translate="no">810</span>
       </div>
-      <p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p>
+      <a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no"><span class="owner">omdsh-dev/</span>DSH-better-sidebar</a></h3>
         <span class="stars" translate="no">694</span>
       </div>
-      <p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p>
+      <a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no"><span class="owner">huiliyi37/</span>dsh-tianshu-tui</a></h3>
         <span class="stars" translate="no">129</span>
       </div>
-      <p>A terminal UI (TUI) for DeepSeek Harness.</p>
+      <a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no"><span class="owner">omdsh-dev/</span>dsh-at-file</a></h3>
         <span class="stars" translate="no">117</span>
       </div>
-      <p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no"><span class="owner">Nagi-ovo/</span>dsh-visualize</a></h3>
         <span class="stars" translate="no">76</span>
       </div>
-      <p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p>
+      <a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/dsh-genui/" translate="no"><span class="owner">omdsh-dev/</span>dsh-genui</a></h3>
         <span class="stars" translate="no">71</span>
       </div>
-      <p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -417,7 +419,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/ZSeven-W/dsh-openpencil/" translate="no"><span class="owner">ZSeven-W/</span>dsh-openpencil</a></h3>
         <span class="stars" translate="no">64</span>
       </div>
-      <p>OpenPencil design preview and editing plugin.</p>
+      <a class="desc-link" href="/p/ZSeven-W/dsh-openpencil/" tabindex="-1"><p>OpenPencil design preview and editing plugin.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -438,7 +440,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/dsh-annotation/" translate="no"><span class="owner">omdsh-dev/</span>dsh-annotation</a></h3>
         <span class="stars" translate="no">39</span>
       </div>
-      <p>Select text → annotate → send with your message; replies map back to each annotation.</p>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-annotation/" tabindex="-1"><p>Select text → annotate → send with your message; replies map back to each annotation.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -459,7 +461,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/alingalingling/ui-status-label/" translate="no"><span class="owner">alingalingling/</span>ui-status-label</a></h3>
         <span class="stars" translate="no">28</span>
       </div>
-      <p>Customize the &quot;deep diving&quot; thinking status label to anything you like.</p>
+      <a class="desc-link" href="/p/alingalingling/ui-status-label/" tabindex="-1"><p>Customize the &quot;deep diving&quot; thinking status label to anything you like.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -480,7 +482,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/ccq1/dsh-side-panel/" translate="no"><span class="owner">ccq1/</span>dsh-side-panel</a></h3>
         <span class="stars" translate="no">17</span>
       </div>
-      <p>Side panel with file browser, terminal, and Git review for quick file previews.</p>
+      <a class="desc-link" href="/p/ccq1/dsh-side-panel/" tabindex="-1"><p>Side panel with file browser, terminal, and Git review for quick file previews.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -501,7 +503,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/openma-ai/deepseek-harness-tui/" translate="no"><span class="owner">openma-ai/</span>deepseek-harness-tui</a></h3>
         <span class="stars" translate="no">15</span>
       </div>
-      <p>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</p>
+      <a class="desc-link" href="/p/openma-ai/deepseek-harness-tui/" tabindex="-1"><p>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -522,7 +524,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/vlln/dsh-navbar/" translate="no"><span class="owner">vlln/</span>dsh-navbar</a></h3>
         <span class="stars" translate="no">14</span>
       </div>
-      <p>Conversation node navigation bar for quick jumps between user messages.</p>
+      <a class="desc-link" href="/p/vlln/dsh-navbar/" tabindex="-1"><p>Conversation node navigation bar for quick jumps between user messages.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -543,7 +545,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/dingyi222666/dsh-focus-chat/" translate="no"><span class="owner">dingyi222666/</span>dsh-focus-chat</a></h3>
         <span class="stars" translate="no">12</span>
       </div>
-      <p>A &quot;focus chat&quot; minimal view that shows only final outputs.</p>
+      <a class="desc-link" href="/p/dingyi222666/dsh-focus-chat/" tabindex="-1"><p>A &quot;focus chat&quot; minimal view that shows only final outputs.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -564,7 +566,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Ghost011118/dsh-balance-meter/" translate="no"><span class="owner">Ghost011118/</span>dsh-balance-meter</a></h3>
         <span class="stars" translate="no">11</span>
       </div>
-      <p>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</p>
+      <a class="desc-link" href="/p/Ghost011118/dsh-balance-meter/" tabindex="-1"><p>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -585,7 +587,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/HsiangNianian/dsh-auto-continue/" translate="no"><span class="owner">HsiangNianian/</span>dsh-auto-continue</a></h3>
         <span class="stars" translate="no">10</span>
       </div>
-      <p>Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.</p>
+      <a class="desc-link" href="/p/HsiangNianian/dsh-auto-continue/" tabindex="-1"><p>Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -606,7 +608,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/SnowCrescenter-tech/dsh-milestone/" translate="no"><span class="owner">SnowCrescenter-tech/</span>dsh-milestone</a></h3>
         <span class="stars" translate="no">9</span>
       </div>
-      <p>Right-side dot-timeline rail: jump between user messages.</p>
+      <a class="desc-link" href="/p/SnowCrescenter-tech/dsh-milestone/" tabindex="-1"><p>Right-side dot-timeline rail: jump between user messages.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -627,7 +629,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Han-1413141/dsh-cost-meter/" translate="no"><span class="owner">Han-1413141/</span>dsh-cost-meter</a></h3>
         <span class="stars" translate="no">8</span>
       </div>
-      <p>Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.</p>
+      <a class="desc-link" href="/p/Han-1413141/dsh-cost-meter/" tabindex="-1"><p>Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -648,7 +650,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/vlln/dsh-task-status/" translate="no"><span class="owner">vlln/</span>dsh-task-status</a></h3>
         <span class="stars" translate="no">7</span>
       </div>
-      <p>Background task status bar: progress plus live output tail on the chat page.</p>
+      <a class="desc-link" href="/p/vlln/dsh-task-status/" tabindex="-1"><p>Background task status bar: progress plus live output tail on the chat page.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -669,7 +671,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/01Virex/dsh-status-rotator/" translate="no"><span class="owner">01Virex/</span>dsh-status-rotator</a></h3>
         <span class="stars" translate="no">6</span>
       </div>
-      <p>Replaces the &quot;Deep diving...&quot; turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.</p>
+      <a class="desc-link" href="/p/01Virex/dsh-status-rotator/" tabindex="-1"><p>Replaces the &quot;Deep diving...&quot; turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -690,7 +692,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/lehhair/dsh-diff-viewer/" translate="no"><span class="owner">lehhair/</span>dsh-diff-viewer</a></h3>
         <span class="stars" translate="no">6</span>
       </div>
-      <p>PiUI-style diff viewer replacing the stock DiffBlock for write/edit tool calls.</p>
+      <a class="desc-link" href="/p/lehhair/dsh-diff-viewer/" tabindex="-1"><p>PiUI-style diff viewer replacing the stock DiffBlock for write/edit tool calls.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -711,7 +713,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Sev7een/ds-api-usage/" translate="no"><span class="owner">Sev7een/</span>ds-api-usage</a></h3>
         <span class="stars" translate="no">6</span>
       </div>
-      <p>DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.</p>
+      <a class="desc-link" href="/p/Sev7een/ds-api-usage/" tabindex="-1"><p>DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -732,7 +734,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Meredith2328/dsh-sticky-note/" translate="no"><span class="owner">Meredith2328/</span>dsh-sticky-note</a></h3>
         <span class="stars" translate="no">5</span>
       </div>
-      <p>Quick sticky notes on the composer toolbar: jot ideas or TODOs, auto-saved as Markdown, one click to send into the chat.</p>
+      <a class="desc-link" href="/p/Meredith2328/dsh-sticky-note/" tabindex="-1"><p>Quick sticky notes on the composer toolbar: jot ideas or TODOs, auto-saved as Markdown, one click to send into the chat.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -753,7 +755,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Noob-stupid/dsh-plugin-hub/" translate="no"><span class="owner">Noob-stupid/</span>dsh-plugin-hub</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.</p>
+      <a class="desc-link" href="/p/Noob-stupid/dsh-plugin-hub/" tabindex="-1"><p>A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -774,7 +776,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/renat3u/dsh-web-archive/" translate="no"><span class="owner">renat3u/</span>dsh-web-archive</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Collapse noisy messages (Think, Bash, etc.) in conversations.</p>
+      <a class="desc-link" href="/p/renat3u/dsh-web-archive/" tabindex="-1"><p>Collapse noisy messages (Think, Bash, etc.) in conversations.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -795,7 +797,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/0xsline/dsh-spotlight/" translate="no"><span class="owner">0xsline/</span>dsh-spotlight</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Keyboard-first command palette for the DSH Web UI.</p>
+      <a class="desc-link" href="/p/0xsline/dsh-spotlight/" tabindex="-1"><p>Keyboard-first command palette for the DSH Web UI.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -816,7 +818,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/stevenx65/dsh-balance-plugin/" translate="no"><span class="owner">stevenx65/</span>dsh-balance-plugin</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.</p>
+      <a class="desc-link" href="/p/stevenx65/dsh-balance-plugin/" tabindex="-1"><p>DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -837,7 +839,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/LaoYueHanNi/dsh-token-usage/" translate="no"><span class="owner">LaoYueHanNi/</span>dsh-token-usage</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.</p>
+      <a class="desc-link" href="/p/LaoYueHanNi/dsh-token-usage/" tabindex="-1"><p>Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -858,7 +860,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/MorGogh/widget-dock/" translate="no"><span class="owner">MorGogh/</span>widget-dock</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Draggable workbench of mini-cards (API balance, token usage, session stats, goal, cost) on the blank areas beside the conversation, with size tiers and official DeepSeek pricing.</p>
+      <a class="desc-link" href="/p/MorGogh/widget-dock/" tabindex="-1"><p>Draggable workbench of mini-cards (API balance, token usage, session stats, goal, cost) on the blank areas beside the conversation, with size tiers and official DeepSeek pricing.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -879,7 +881,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Nanki-nn/dsh-answer-pet/" translate="no"><span class="owner">Nanki-nn/</span>dsh-answer-pet</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.</p>
+      <a class="desc-link" href="/p/Nanki-nn/dsh-answer-pet/" tabindex="-1"><p>Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -900,7 +902,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/GooodWei/context-vista/" translate="no"><span class="owner">GooodWei/</span>context-vista</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>A right-side floating panel and /context command for DeepSeek Harness — a live donut chart of context token usage, allocation, and estimated cost.</p>
+      <a class="desc-link" href="/p/GooodWei/context-vista/" tabindex="-1"><p>A right-side floating panel and /context command for DeepSeek Harness — a live donut chart of context token usage, allocation, and estimated cost.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -921,7 +923,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Han-1413141/dsh-sticky-disclosure/" translate="no"><span class="owner">Han-1413141/</span>dsh-sticky-disclosure</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.</p>
+      <a class="desc-link" href="/p/Han-1413141/dsh-sticky-disclosure/" tabindex="-1"><p>One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -942,7 +944,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Starfie1d1272/dsh-builtin-toggles/" translate="no"><span class="owner">Starfie1d1272/</span>dsh-builtin-toggles</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>Adds a built-in plugin catalog to DSH Web with search, status explanations, and safe toggles for audited UI plugins.</p>
+      <a class="desc-link" href="/p/Starfie1d1272/dsh-builtin-toggles/" tabindex="-1"><p>Adds a built-in plugin catalog to DSH Web with search, status explanations, and safe toggles for audited UI plugins.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -963,7 +965,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/bobcat848/dsh-calculator/" translate="no"><span class="owner">bobcat848/</span>dsh-calculator</a></h3>
         <span class="stars" translate="no">3</span>
       </div>
-      <p>DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.</p>
+      <a class="desc-link" href="/p/bobcat848/dsh-calculator/" tabindex="-1"><p>DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -984,7 +986,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/bill9109/dsh-101/" translate="no"><span class="owner">bill9109/</span>dsh-101</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Document reading mode for DSH.</p>
+      <a class="desc-link" href="/p/bill9109/dsh-101/" tabindex="-1"><p>Document reading mode for DSH.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1005,7 +1007,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/bill9109/dsh-drag-and-drop/" translate="no"><span class="owner">bill9109/</span>dsh-drag-and-drop</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Cross-platform file drag-and-drop with raw path insertion, no file copying.</p>
+      <a class="desc-link" href="/p/bill9109/dsh-drag-and-drop/" tabindex="-1"><p>Cross-platform file drag-and-drop with raw path insertion, no file copying.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1026,7 +1028,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/ex-setting/" translate="no"><span class="owner">omdsh-dev/</span>ex-setting</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Settings extensions for DSH.</p>
+      <a class="desc-link" href="/p/omdsh-dev/ex-setting/" tabindex="-1"><p>Settings extensions for DSH.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1047,7 +1049,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/omdsh-dev/web-components/" translate="no"><span class="owner">omdsh-dev/</span>web-components</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Web Components support.</p>
+      <a class="desc-link" href="/p/omdsh-dev/web-components/" tabindex="-1"><p>Web Components support.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1068,7 +1070,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/v587d/dsh-opencode-go-usage/" translate="no"><span class="owner">v587d/</span>dsh-opencode-go-usage</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.</p>
+      <a class="desc-link" href="/p/v587d/dsh-opencode-go-usage/" tabindex="-1"><p>OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1089,7 +1091,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/tsonglew/dsh-media-preview/" translate="no"><span class="owner">tsonglew/</span>dsh-media-preview</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Audio/video FileViewer for dsh-better-sidebar: native inline playback for mp4/webm/mkv/mov and mp3/flac/wav, served by a Range-capable streaming media route.</p>
+      <a class="desc-link" href="/p/tsonglew/dsh-media-preview/" tabindex="-1"><p>Audio/video FileViewer for dsh-better-sidebar: native inline playback for mp4/webm/mkv/mov and mp3/flac/wav, served by a Range-capable streaming media route.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1110,7 +1112,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Luaphes/dsh-web-attention-badge/" translate="no"><span class="owner">Luaphes/</span>dsh-web-attention-badge</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.</p>
+      <a class="desc-link" href="/p/Luaphes/dsh-web-attention-badge/" tabindex="-1"><p>Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1131,7 +1133,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Make0209/dsh-usage-stats/" translate="no"><span class="owner">Make0209/</span>dsh-usage-stats</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.</p>
+      <a class="desc-link" href="/p/Make0209/dsh-usage-stats/" tabindex="-1"><p>GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1152,7 +1154,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/asukasec/dsh-message-preview/" translate="no"><span class="owner">asukasec/</span>dsh-message-preview</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.</p>
+      <a class="desc-link" href="/p/asukasec/dsh-message-preview/" tabindex="-1"><p>Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1173,7 +1175,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/qyw233/dsh-deeplink/" translate="no"><span class="owner">qyw233/</span>dsh-deeplink</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Deep links: open a specific session or workspace via `?session=` / `?workspace=`.</p>
+      <a class="desc-link" href="/p/qyw233/dsh-deeplink/" tabindex="-1"><p>Deep links: open a specific session or workspace via `?session=` / `?workspace=`.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1194,7 +1196,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/vibeinging/dsh-turn-navigator/" translate="no"><span class="owner">vibeinging/</span>dsh-turn-navigator</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Turn navigation for the DSH Web UI.</p>
+      <a class="desc-link" href="/p/vibeinging/dsh-turn-navigator/" tabindex="-1"><p>Turn navigation for the DSH Web UI.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1215,7 +1217,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/nonewind/dsh-spend/" translate="no"><span class="owner">nonewind/</span>dsh-spend</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.</p>
+      <a class="desc-link" href="/p/nonewind/dsh-spend/" tabindex="-1"><p>Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1236,7 +1238,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/tsonglew/dsh-workspace-search/" translate="no"><span class="owner">tsonglew/</span>dsh-workspace-search</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.</p>
+      <a class="desc-link" href="/p/tsonglew/dsh-workspace-search/" tabindex="-1"><p>VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1257,7 +1259,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/zealot00/dsh-pet/" translate="no"><span class="owner">zealot00/</span>dsh-pet</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Desktop pet for the DSH Web UI: sprite-sheet animation, agent state linkage, drag, alarm (daily/one-shot) and pomodoro widgets, skin picker with preview.</p>
+      <a class="desc-link" href="/p/zealot00/dsh-pet/" tabindex="-1"><p>Desktop pet for the DSH Web UI: sprite-sheet animation, agent state linkage, drag, alarm (daily/one-shot) and pomodoro widgets, skin picker with preview.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1278,7 +1280,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/jiangnanquan/dsh-ux/" translate="no"><span class="owner">jiangnanquan/</span>dsh-ux</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Solarized light theme, compact layout, think/tool-chain collapse capsules, and balance, session cost, and usage dashboards for the DSH web UI.</p>
+      <a class="desc-link" href="/p/jiangnanquan/dsh-ux/" tabindex="-1"><p>Solarized light theme, compact layout, think/tool-chain collapse capsules, and balance, session cost, and usage dashboards for the DSH web UI.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1299,7 +1301,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Jolly-J/dsh-deepseek-billing/" translate="no"><span class="owner">Jolly-J/</span>dsh-deepseek-billing</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>DeepSeek account balance and per-session cost card in the sidebar foot.</p>
+      <a class="desc-link" href="/p/Jolly-J/dsh-deepseek-billing/" tabindex="-1"><p>DeepSeek account balance and per-session cost card in the sidebar foot.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1320,7 +1322,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/AKIRACOD/dsh-drag-and-drop/" translate="no"><span class="owner">AKIRACOD/</span>dsh-drag-and-drop</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>File-drag fork: drop documents as removable chips above the composer, send without typing.</p>
+      <a class="desc-link" href="/p/AKIRACOD/dsh-drag-and-drop/" tabindex="-1"><p>File-drag fork: drop documents as removable chips above the composer, send without typing.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1341,7 +1343,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/liliuCourier/dsh-chat-outline/" translate="no"><span class="owner">liliuCourier/</span>dsh-chat-outline</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.</p>
+      <a class="desc-link" href="/p/liliuCourier/dsh-chat-outline/" tabindex="-1"><p>Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1362,7 +1364,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/QT-Chen/dsh-mic-input/" translate="no"><span class="owner">QT-Chen/</span>dsh-mic-input</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Microphone voice input for the composer: browser Web Speech API live transcription, dedupe/auto-continue, smart punctuation, language and auto-send settings.</p>
+      <a class="desc-link" href="/p/QT-Chen/dsh-mic-input/" tabindex="-1"><p>Microphone voice input for the composer: browser Web Speech API live transcription, dedupe/auto-continue, smart punctuation, language and auto-send settings.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1383,7 +1385,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/causebefore/dsh-pomodoro/" translate="no"><span class="owner">causebefore/</span>dsh-pomodoro</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>Pomodoro focus-and-break timer for DSH Web with configurable cycles, a draggable mini panel, and in-app, sound, and browser notifications.</p>
+      <a class="desc-link" href="/p/causebefore/dsh-pomodoro/" tabindex="-1"><p>Pomodoro focus-and-break timer for DSH Web with configurable cycles, a draggable mini panel, and in-app, sound, and browser notifications.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1404,7 +1406,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/wjy9902/dsh-web-default-session/" translate="no"><span class="owner">wjy9902/</span>dsh-web-default-session</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.</p>
+      <a class="desc-link" href="/p/wjy9902/dsh-web-default-session/" tabindex="-1"><p>The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1425,7 +1427,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/LeemanCheung/dsh-whale-animation/" translate="no"><span class="owner">LeemanCheung/</span>dsh-whale-animation</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Persistent black whale-dive animation beside the DSH Web turn status, with a reduced-motion fallback and a seamless closed loop.</p>
+      <a class="desc-link" href="/p/LeemanCheung/dsh-whale-animation/" tabindex="-1"><p>Persistent black whale-dive animation beside the DSH Web turn status, with a reduced-motion fallback and a seamless closed loop.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1446,7 +1448,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/GooodWei/arcana/" translate="no"><span class="owner">GooodWei/</span>arcana</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.</p>
+      <a class="desc-link" href="/p/GooodWei/arcana/" tabindex="-1"><p>A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1467,7 +1469,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/taxueseek/dsh-files/" translate="no"><span class="owner">taxueseek/</span>dsh-files</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.</p>
+      <a class="desc-link" href="/p/taxueseek/dsh-files/" tabindex="-1"><p>File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1488,7 +1490,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/l541402398/dsh-file-uploads/" translate="no"><span class="owner">l541402398/</span>dsh-file-uploads</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.</p>
+      <a class="desc-link" href="/p/l541402398/dsh-file-uploads/" tabindex="-1"><p>Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1509,7 +1511,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/fishxcode/dsh-plugin-deepseek-balance/" translate="no"><span class="owner">fishxcode/</span>dsh-plugin-deepseek-balance</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.</p>
+      <a class="desc-link" href="/p/fishxcode/dsh-plugin-deepseek-balance/" tabindex="-1"><p>DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1530,7 +1532,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/a903067276-rgb/dsh-hud/" translate="no"><span class="owner">a903067276-rgb/</span>dsh-hud</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>HUD status panel: Git status, MCP servers, skills, model and token usage in a floating side panel.</p>
+      <a class="desc-link" href="/p/a903067276-rgb/dsh-hud/" tabindex="-1"><p>HUD status panel: Git status, MCP servers, skills, model and token usage in a floating side panel.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1551,7 +1553,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/wsxwj123/dsh-plugins--packages-turn-scrubber/" translate="no"><span class="owner">wsxwj123/</span>dsh-plugins#turn-scrubber</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Compact right-edge turn rail with hover summaries and click-to-jump navigation.</p>
+      <a class="desc-link" href="/p/wsxwj123/dsh-plugins--packages-turn-scrubber/" tabindex="-1"><p>Compact right-edge turn rail with hover summaries and click-to-jump navigation.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1572,7 +1574,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/Sttrevens/dsh-cost-meter/" translate="no"><span class="owner">Sttrevens/</span>dsh-cost-meter</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.</p>
+      <a class="desc-link" href="/p/Sttrevens/dsh-cost-meter/" tabindex="-1"><p>Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1593,7 +1595,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/a903067276-rgb/dsh-file-mentions/" translate="no"><span class="owner">a903067276-rgb/</span>dsh-file-mentions</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.</p>
+      <a class="desc-link" href="/p/a903067276-rgb/dsh-file-mentions/" tabindex="-1"><p>Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1614,7 +1616,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/LeemanCheung/dsh-task-dag/" translate="no"><span class="owner">LeemanCheung/</span>dsh-task-dag</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Displays a Session's subagents and durable workflow runs as a live DAG with status, navigation, and restart-safe history.</p>
+      <a class="desc-link" href="/p/LeemanCheung/dsh-task-dag/" tabindex="-1"><p>Displays a Session's subagents and durable workflow runs as a live DAG with status, navigation, and restart-safe history.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1635,7 +1637,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/qjcnmd/dsh-reasoning-slider/" translate="no"><span class="owner">qjcnmd/</span>dsh-reasoning-slider</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Codex-style reasoning-effort slider embedded in the model selector.</p>
+      <a class="desc-link" href="/p/qjcnmd/dsh-reasoning-slider/" tabindex="-1"><p>Codex-style reasoning-effort slider embedded in the model selector.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">
@@ -1656,7 +1658,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/p/siberiah2o/dsh-plugin-terminal/" translate="no"><span class="owner">siberiah2o/</span>dsh-plugin-terminal</a></h3>
         <span class="stars" translate="no">0</span>
       </div>
-      <p>Bottom multi-tab terminal panel (node-pty + xterm.js) pinned to the viewport bottom, always below the input box.</p>
+      <a class="desc-link" href="/p/siberiah2o/dsh-plugin-terminal/" tabindex="-1"><p>Bottom multi-tab terminal panel (node-pty + xterm.js) pinned to the viewport bottom, always below the input box.</p></a>
       <div class="foot">
         <a class="tag" href="/ui/">UI Enhancements</a>
         <details class="inst">

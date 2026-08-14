@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -276,12 +278,12 @@ pnpm test          # 49 tests: identity, registry, message codec, inbox watcher,
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 35</span></h3><p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p></li>
-      <li><h3><a href="/zh/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><p>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</p></li>
-      <li><h3><a href="/zh/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 21</span></h3><p>把 Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode 的聊天记录全保真导入为可续聊的 DSH 会话。</p></li>
-      <li><h3><a href="/zh/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><p>一键分享你的对话。</p></li>
-      <li><h3><a href="/zh/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 16</span></h3><p>基于分支的消息编辑、reroll、重试与版本时间线。</p></li>
-      <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 14</span></h3><p>把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。</p></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 35</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p></a></li>
+      <li><h3><a href="/zh/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/zh/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</p></a></li>
+      <li><h3><a href="/zh/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 21</span></h3><a class="desc-link" href="/zh/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>把 Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode 的聊天记录全保真导入为可续聊的 DSH 会话。</p></a></li>
+      <li><h3><a href="/zh/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/hellodigua/dsh-share/" tabindex="-1"><p>一键分享你的对话。</p></a></li>
+      <li><h3><a href="/zh/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>基于分支的消息编辑、reroll、重试与版本时间线。</p></a></li>
+      <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/session/">查看整个分类 →</a>
   </section>

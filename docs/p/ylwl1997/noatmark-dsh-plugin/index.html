@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -272,12 +274,12 @@ pnpm build   # tsc -&gt; dist/
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1173</span></h3><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 305</span></h3><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></li>
-      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 85</span></h3><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 80</span></h3><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></li>
-      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1173</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 305</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 85</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>
   </section>

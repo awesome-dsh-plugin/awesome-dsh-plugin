@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -306,8 +308,8 @@ plugins:
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/creght-dev/skills/" translate="no">creght-dev/skills</a><span class="stars" translate="no">★ 7</span></h3><p>Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。</p></li>
-      <li><h3><a href="/zh/p/YTxue/dsh-skill-manager/" translate="no">YTxue/dsh-skill-manager</a><span class="stars" translate="no">★ 0</span></h3><p>设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。</p></li>
+      <li><h3><a href="/zh/p/creght-dev/skills/" translate="no">creght-dev/skills</a><span class="stars" translate="no">★ 7</span></h3><a class="desc-link" href="/zh/p/creght-dev/skills/" tabindex="-1"><p>Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。</p></a></li>
+      <li><h3><a href="/zh/p/YTxue/dsh-skill-manager/" translate="no">YTxue/dsh-skill-manager</a><span class="stars" translate="no">★ 0</span></h3><a class="desc-link" href="/zh/p/YTxue/dsh-skill-manager/" tabindex="-1"><p>设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/skill/">查看整个分类 →</a>
   </section>

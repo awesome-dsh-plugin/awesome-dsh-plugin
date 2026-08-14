@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -326,12 +328,12 @@ row 与 col 必须是 0 到 14 的整数，且目标交叉点必须为空；违�
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-ads/" translate="no">Nagi-ovo/dsh-ads</a><span class="stars" translate="no">★ 313</span></h3><p>2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。</p></li>
-      <li><h3><a href="/zh/p/vlln/whale-girl/" translate="no">vlln/whale-girl</a><span class="stars" translate="no">★ 119</span></h3><p>桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。</p></li>
-      <li><h3><a href="/zh/p/lhh010/dsh-minigames/" translate="no">lhh010/dsh-minigames</a><span class="stars" translate="no">★ 12</span></h3><p>右侧小游戏面板：18 款离线小游戏，等模型回复时的摸鱼神器。</p></li>
-      <li><h3><a href="/zh/p/AnacondaKC/dsh-stock-market/" translate="no">AnacondaKC/dsh-stock-market</a><span class="stars" translate="no">★ 11</span></h3><p>有效解决了写代码的时候账户不能同时亏钱的 BUG。</p></li>
-      <li><h3><a href="/zh/p/hellodigua/dsh-emoji/" translate="no">hellodigua/dsh-emoji</a><span class="stars" translate="no">★ 11</span></h3><p>为 AI 回复自动添加表情。</p></li>
-      <li><h3><a href="/zh/p/william-jin-cmu/dsh-stickers/" translate="no">william-jin-cmu/dsh-stickers</a><span class="stars" translate="no">★ 9</span></h3><p>用户与 agent 双向表情贴纸互动。</p></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-ads/" translate="no">Nagi-ovo/dsh-ads</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-ads/" tabindex="-1"><p>2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。</p></a></li>
+      <li><h3><a href="/zh/p/vlln/whale-girl/" translate="no">vlln/whale-girl</a><span class="stars" translate="no">★ 119</span></h3><a class="desc-link" href="/zh/p/vlln/whale-girl/" tabindex="-1"><p>桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。</p></a></li>
+      <li><h3><a href="/zh/p/lhh010/dsh-minigames/" translate="no">lhh010/dsh-minigames</a><span class="stars" translate="no">★ 12</span></h3><a class="desc-link" href="/zh/p/lhh010/dsh-minigames/" tabindex="-1"><p>右侧小游戏面板：18 款离线小游戏，等模型回复时的摸鱼神器。</p></a></li>
+      <li><h3><a href="/zh/p/AnacondaKC/dsh-stock-market/" translate="no">AnacondaKC/dsh-stock-market</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/zh/p/AnacondaKC/dsh-stock-market/" tabindex="-1"><p>有效解决了写代码的时候账户不能同时亏钱的 BUG。</p></a></li>
+      <li><h3><a href="/zh/p/hellodigua/dsh-emoji/" translate="no">hellodigua/dsh-emoji</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/zh/p/hellodigua/dsh-emoji/" tabindex="-1"><p>为 AI 回复自动添加表情。</p></a></li>
+      <li><h3><a href="/zh/p/william-jin-cmu/dsh-stickers/" translate="no">william-jin-cmu/dsh-stickers</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/william-jin-cmu/dsh-stickers/" tabindex="-1"><p>用户与 agent 双向表情贴纸互动。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/fun/">查看整个分类 →</a>
   </section>

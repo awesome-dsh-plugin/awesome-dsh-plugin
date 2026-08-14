@@ -134,7 +134,9 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
 li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
 li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
@@ -270,7 +272,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/franksong2702/dsh-codex-connect/" translate="no"><span class="owner">franksong2702/</span>dsh-codex-connect</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。</p>
+      <a class="desc-link" href="/zh/p/franksong2702/dsh-codex-connect/" tabindex="-1"><p>通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/model/">模型与账号接入</a>
         <details class="inst">
@@ -291,7 +293,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/omdsh-dev/Qwen-MM-Plugins/" translate="no"><span class="owner">omdsh-dev/</span>Qwen-MM-Plugins</a></h3>
         <span class="stars" translate="no">4</span>
       </div>
-      <p>Qwen 多模态插件支持。</p>
+      <a class="desc-link" href="/zh/p/omdsh-dev/Qwen-MM-Plugins/" tabindex="-1"><p>Qwen 多模态插件支持。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/model/">模型与账号接入</a>
         <details class="inst">
@@ -312,7 +314,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/dylan121322/llm-adaptive/" translate="no"><span class="owner">dylan121322/</span>llm-adaptive</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。</p>
+      <a class="desc-link" href="/zh/p/dylan121322/llm-adaptive/" tabindex="-1"><p>自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/model/">模型与账号接入</a>
         <details class="inst">
@@ -333,7 +335,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/btspoony/dsh-llm-fallbacks/" translate="no"><span class="owner">btspoony/</span>dsh-llm-fallbacks</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <p>基于角色的模型重试与备用策略。</p>
+      <a class="desc-link" href="/zh/p/btspoony/dsh-llm-fallbacks/" tabindex="-1"><p>基于角色的模型重试与备用策略。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/model/">模型与账号接入</a>
         <details class="inst">
@@ -354,7 +356,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/kam74515-boop/dsh-everything-oauth/" translate="no"><span class="owner">kam74515-boop/</span>dsh-everything-oauth</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。</p>
+      <a class="desc-link" href="/zh/p/kam74515-boop/dsh-everything-oauth/" tabindex="-1"><p>把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/model/">模型与账号接入</a>
         <details class="inst">
@@ -375,7 +377,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/suntianc/dsh-codex-auth/" translate="no"><span class="owner">suntianc/</span>dsh-codex-auth</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。</p>
+      <a class="desc-link" href="/zh/p/suntianc/dsh-codex-auth/" tabindex="-1"><p>复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/model/">模型与账号接入</a>
         <details class="inst">
@@ -396,7 +398,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
         <h3><a href="/zh/p/feibi-mochi/deepseek-harness-wallet/" translate="no"><span class="owner">feibi-mochi/</span>deepseek-harness-wallet</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <p>多供应商钱包标签：官方 DeepSeek 余额、本会话花费与 token、第三方合计 token、一键充值、低余额提醒。</p>
+      <a class="desc-link" href="/zh/p/feibi-mochi/deepseek-harness-wallet/" tabindex="-1"><p>多供应商钱包标签：官方 DeepSeek 余额、本会话花费与 token、第三方合计 token、一键充值、低余额提醒。</p></a>
       <div class="foot">
         <a class="tag" href="/zh/model/">模型与账号接入</a>
         <details class="inst">

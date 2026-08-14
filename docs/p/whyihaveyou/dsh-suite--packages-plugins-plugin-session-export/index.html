@@ -101,8 +101,10 @@ ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:
 ul.rel h3 a{overflow-wrap:anywhere}
 ul.rel h3 a:hover{color:var(--cinnabar-deep)}
 ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
 ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
@@ -311,12 +313,12 @@ effect（#1）、会话数据走 <code>ctx.sessions</code>（服务依赖，非�
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 35</span></h3><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></li>
-      <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></li>
-      <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 21</span></h3><p>Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode chat histories as resumable DeepSeek Harness sessions.</p></li>
-      <li><h3><a href="/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><p>Share your conversations with one click.</p></li>
-      <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 16</span></h3><p>Branch-based message editing, reroll, retry, and a version timeline.</p></li>
-      <li><h3><a href="/p/yuezengwu/dsh-explain/" translate="no">yuezengwu/dsh-explain</a><span class="stars" translate="no">★ 9</span></h3><p>Local-first learning mode: cross-session learning threads with per-source explanations.</p></li>
+      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 35</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
+      <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
+      <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 21</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode chat histories as resumable DeepSeek Harness sessions.</p></a></li>
+      <li><h3><a href="/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/hellodigua/dsh-share/" tabindex="-1"><p>Share your conversations with one click.</p></a></li>
+      <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a></li>
+      <li><h3><a href="/p/yuezengwu/dsh-explain/" translate="no">yuezengwu/dsh-explain</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/p/yuezengwu/dsh-explain/" tabindex="-1"><p>Local-first learning mode: cross-session learning threads with per-source explanations.</p></a></li>
     </ul>
     <a class="morelink" href="/session/">View the whole category →</a>
   </section>
