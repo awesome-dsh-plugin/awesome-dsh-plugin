@@ -1139,6 +1139,10 @@
   "npm": "dsh-builtin-toggles",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/starslittle/dsh-blue-whale": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/stevenx65/dsh-balance-plugin": {
   "npm": null,
   "checkedAt": "2026-08-14"

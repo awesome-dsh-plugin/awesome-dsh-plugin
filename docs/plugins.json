@@ -1387,6 +1387,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-blue-whale",
+   "owner": "starslittle",
+   "url": "https://github.com/starslittle/dsh-blue-whale",
+   "page": "https://awesome-dsh-plugin.com/p/starslittle/dsh-blue-whale/",
+   "category": "theme",
+   "description": {
+    "en": "DeepSeek-Chat-style blue-whale skin: brand #4D6BFE on light and dark, following the built-in appearance.",
+    "zh": "复刻 DeepSeek Chat 蓝鲸配色的皮肤：主色 #4D6BFE，亮色/深色跟随系统外观。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:starslittle/dsh-blue-whale",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-webchatlike",
    "owner": "cindyguyuehu123",
    "url": "https://github.com/cindyguyuehu123/dsh-webchatlike",
