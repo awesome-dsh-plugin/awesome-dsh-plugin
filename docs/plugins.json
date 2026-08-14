@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 164,
+ "count": 165,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1137,6 +1137,18 @@
     "zh": "有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。"
    },
    "install": "dsh plugin --profile web add github:PerryLink/dsh-memento",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-knowledge-graph",
+   "owner": "Luke-Yong",
+   "url": "https://github.com/Luke-Yong/dsh-plugin-knowledge-graph",
+   "category": "tools",
+   "description": {
+    "en": "A read_graph tool backed by a codebase knowledge graph (CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL relations).",
+    "zh": "基于代码库知识图谱的 read_graph 工具（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL 关系）。"
+   },
+   "install": "dsh plugin --profile web add github:Luke-Yong/dsh-plugin-knowledge-graph",
    "added": "2026-08-14"
   },
   {
