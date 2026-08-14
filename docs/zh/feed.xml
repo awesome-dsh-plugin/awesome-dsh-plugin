@@ -62,6 +62,13 @@
     <summary>持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。</summary>
   </entry>
   <entry>
+    <title>dsh-recommend</title>
+    <id>https://github.com/zp-home/dsh-recommend</id>
+    <link href="https://github.com/zp-home/dsh-recommend"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/lehhair/dsh-diff-viewer"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>PiUI 风格 diff 查看器，替换 write/edit 工具调用的默认 DiffBlock。</summary>
-  </entry>
-  <entry>
-    <title>ex-setting</title>
-    <id>https://github.com/omdsh-dev/ex-setting</id>
-    <link href="https://github.com/omdsh-dev/ex-setting"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>DSH 的设置扩展。</summary>
   </entry>
 </feed>

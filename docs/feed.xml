@@ -62,6 +62,13 @@
     <summary>Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.</summary>
   </entry>
   <entry>
+    <title>dsh-recommend</title>
+    <id>https://github.com/zp-home/dsh-recommend</id>
+    <link href="https://github.com/zp-home/dsh-recommend"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/lehhair/dsh-diff-viewer"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>PiUI-style diff viewer replacing the stock DiffBlock for write/edit tool calls.</summary>
-  </entry>
-  <entry>
-    <title>ex-setting</title>
-    <id>https://github.com/omdsh-dev/ex-setting</id>
-    <link href="https://github.com/omdsh-dev/ex-setting"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Settings extensions for DSH.</summary>
   </entry>
 </feed>
