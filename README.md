@@ -12,7 +12,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 
 > 💡 New here? Install [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) first — then just ask your agent to find plugins for you: `dsh plugin --profile web add dsh-find-plugin`
 
-**138** plugins · [PRs welcome](#contributing)
+**139** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -54,6 +54,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) - Turn navigation for the DSH Web UI.
 - [dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) - Right-side dot-timeline rail: jump between user messages.
 - [dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) - DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.
+- [dsh-plugin-deepseek-balance](https://github.com/fishxcode/dsh-plugin-deepseek-balance) - DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.
 - [ds-api-usage](https://github.com/Sev7een/ds-api-usage) - DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.
 - [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) - Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) - Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.
