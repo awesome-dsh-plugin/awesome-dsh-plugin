@@ -118,11 +118,32 @@
     <summary>会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。</summary>
   </entry>
   <entry>
+    <title>dsh-code-intel</title>
+    <id>https://github.com/lonelymoon87/dsh-code-intel</id>
+    <link href="https://github.com/lonelymoon87/dsh-code-intel"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。</summary>
+  </entry>
+  <entry>
+    <title>dsh-specflow</title>
+    <id>https://github.com/lonelymoon87/dsh-specflow</id>
+    <link href="https://github.com/lonelymoon87/dsh-specflow"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。</summary>
+  </entry>
+  <entry>
+    <title>deepseek-harness-acp</title>
+    <id>https://github.com/openma-ai/deepseek-harness-acp</id>
+    <link href="https://github.com/openma-ai/deepseek-harness-acp"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。</summary>
   </entry>
   <entry>
     <title>dsh-chatnode-wechat</title>
@@ -188,31 +209,10 @@
     <summary>DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。</summary>
   </entry>
   <entry>
-    <title>dsh-tianshu-tui</title>
-    <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
-    <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>DeepSeek Harness 的终端 UI（TUI）。</summary>
-  </entry>
-  <entry>
-    <title>dsh-at-file</title>
-    <id>https://github.com/omdsh-dev/dsh-at-file</id>
-    <link href="https://github.com/omdsh-dev/dsh-at-file"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</summary>
-  </entry>
-  <entry>
-    <title>ui-status-label</title>
-    <id>https://github.com/alingalingling/ui-status-label</id>
-    <link href="https://github.com/alingalingling/ui-status-label"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>把鲸鱼娘思考时的 &quot;deep diving&quot; 状态文案自定义成任意你想要的样子。</summary>
-  </entry>
-  <entry>
-    <title>dsh-openpencil</title>
-    <id>https://github.com/ZSeven-W/dsh-openpencil</id>
-    <link href="https://github.com/ZSeven-W/dsh-openpencil"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>OpenPencil 设计预览与编辑插件。</summary>
+    <title>dsh-gitflow</title>
+    <id>https://github.com/lonelymoon87/dsh-gitflow</id>
+    <link href="https://github.com/lonelymoon87/dsh-gitflow"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。</summary>
   </entry>
 </feed>

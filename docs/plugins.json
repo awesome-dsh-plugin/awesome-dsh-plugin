@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 122,
+ "count": 127,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -840,6 +840,18 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-code-intel",
+   "owner": "lonelymoon87",
+   "url": "https://github.com/lonelymoon87/dsh-code-intel",
+   "category": "tools",
+   "description": {
+    "en": "Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.",
+    "zh": "用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。"
+   },
+   "install": "dsh plugin --profile web add github:lonelymoon87/dsh-code-intel",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh_workflow",
    "owner": "icetomoyo",
    "url": "https://github.com/icetomoyo/dsh_workflow",
@@ -972,6 +984,18 @@
    "added": "2026-08-13"
   },
   {
+   "name": "dsh-specflow",
+   "owner": "lonelymoon87",
+   "url": "https://github.com/lonelymoon87/dsh-specflow",
+   "category": "workflow",
+   "description": {
+    "en": "Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.",
+    "zh": "增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。"
+   },
+   "install": "dsh plugin --profile web add github:lonelymoon87/dsh-specflow",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-open-in-vscode",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-open-in-vscode",
@@ -1006,6 +1030,18 @@
    },
    "install": "dsh plugin --profile web add github:bobleer/dsh-acp-for-bitfun",
    "added": "2026-08-13"
+  },
+  {
+   "name": "deepseek-harness-acp",
+   "owner": "openma-ai",
+   "url": "https://github.com/openma-ai/deepseek-harness-acp",
+   "category": "notify",
+   "description": {
+    "en": "ACP profile plugin and standalone stdio server for using the full DSH agent from Zed and other ACP clients while sharing DSH credentials and sessions.",
+    "zh": "ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。"
+   },
+   "install": "dsh plugin --profile web add github:openma-ai/deepseek-harness-acp",
+   "added": "2026-08-14"
   },
   {
    "name": "telegram",
@@ -1365,6 +1401,30 @@
     "zh": "DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。"
    },
    "install": "dsh plugin --profile web add github:BrambleXu/dsh-revdiff",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-gitflow",
+   "owner": "lonelymoon87",
+   "url": "https://github.com/lonelymoon87/dsh-gitflow",
+   "category": "dev",
+   "description": {
+    "en": "Adds approval-gated Git status, diff, log, commit, branch, and optional checkpoint tools.",
+    "zh": "增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。"
+   },
+   "install": "dsh plugin --profile web add github:lonelymoon87/dsh-gitflow",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-guardian",
+   "owner": "lonelymoon87",
+   "url": "https://github.com/lonelymoon87/dsh-guardian",
+   "category": "dev",
+   "description": {
+    "en": "Adds dangerous-operation policy checks, output redaction, and a security-review workflow.",
+    "zh": "增加危险操作策略检查、输出脱敏和安全审查工作流。"
+   },
+   "install": "dsh plugin --profile web add github:lonelymoon87/dsh-guardian",
    "added": "2026-08-14"
   },
   {

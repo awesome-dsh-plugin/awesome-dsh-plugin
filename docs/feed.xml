@@ -118,11 +118,32 @@
     <summary>Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.</summary>
   </entry>
   <entry>
+    <title>dsh-code-intel</title>
+    <id>https://github.com/lonelymoon87/dsh-code-intel</id>
+    <link href="https://github.com/lonelymoon87/dsh-code-intel"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.</summary>
+  </entry>
+  <entry>
+    <title>dsh-specflow</title>
+    <id>https://github.com/lonelymoon87/dsh-specflow</id>
+    <link href="https://github.com/lonelymoon87/dsh-specflow"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.</summary>
+  </entry>
+  <entry>
+    <title>deepseek-harness-acp</title>
+    <id>https://github.com/openma-ai/deepseek-harness-acp</id>
+    <link href="https://github.com/openma-ai/deepseek-harness-acp"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>ACP profile plugin and standalone stdio server for using the full DSH agent from Zed and other ACP clients while sharing DSH credentials and sessions.</summary>
   </entry>
   <entry>
     <title>dsh-chatnode-wechat</title>
@@ -188,31 +209,10 @@
     <summary>Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.</summary>
   </entry>
   <entry>
-    <title>dsh-tianshu-tui</title>
-    <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
-    <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>A terminal UI (TUI) for DeepSeek Harness.</summary>
-  </entry>
-  <entry>
-    <title>dsh-at-file</title>
-    <id>https://github.com/omdsh-dev/dsh-at-file</id>
-    <link href="https://github.com/omdsh-dev/dsh-at-file"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</summary>
-  </entry>
-  <entry>
-    <title>ui-status-label</title>
-    <id>https://github.com/alingalingling/ui-status-label</id>
-    <link href="https://github.com/alingalingling/ui-status-label"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Customize the &quot;deep diving&quot; thinking status label to anything you like.</summary>
-  </entry>
-  <entry>
-    <title>dsh-openpencil</title>
-    <id>https://github.com/ZSeven-W/dsh-openpencil</id>
-    <link href="https://github.com/ZSeven-W/dsh-openpencil"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>OpenPencil design preview and editing plugin.</summary>
+    <title>dsh-gitflow</title>
+    <id>https://github.com/lonelymoon87/dsh-gitflow</id>
+    <link href="https://github.com/lonelymoon87/dsh-gitflow"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Adds approval-gated Git status, diff, log, commit, branch, and optional checkpoint tools.</summary>
   </entry>
 </feed>
