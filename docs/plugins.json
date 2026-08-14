@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 217,
+ "count": 218,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1921,6 +1921,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:btspoony/mstar-harness",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "Letter2025/dsh-approval-llm",
+   "owner": "Letter2025",
+   "url": "https://github.com/Letter2025/dsh-approval-llm",
+   "category": "workflow",
+   "description": {
+    "en": "Model-based permission approval: an approval-request answerer backed by a separate reviewer model.",
+    "zh": "基于模型的权限审批：由独立审查模型自动应答 approval 权限请求。"
+   },
+   "npm": "dsh-approval-llm",
+   "install": "dsh plugin --profile web add dsh-approval-llm",
    "added": "2026-08-14"
   },
   {
