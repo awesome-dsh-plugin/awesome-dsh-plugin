@@ -20,7 +20,7 @@
     <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
   </entry>
   <entry>
-    <title>DHS API Usage</title>
+    <title>ds-api-usage</title>
     <id>https://github.com/Sev7een/ds-api-usage</id>
     <link href="https://github.com/Sev7een/ds-api-usage"/>
     <updated>2026-08-14T00:00:00Z</updated>

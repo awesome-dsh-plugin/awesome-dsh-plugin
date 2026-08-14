@@ -20,7 +20,7 @@
     <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
   </entry>
   <entry>
-    <title>DHS API Usage</title>
+    <title>ds-api-usage</title>
     <id>https://github.com/Sev7een/ds-api-usage</id>
     <link href="https://github.com/Sev7een/ds-api-usage"/>
     <updated>2026-08-14T00:00:00Z</updated>
