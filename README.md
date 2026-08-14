@@ -108,6 +108,8 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [Nwflower/dsh-file-claim](https://github.com/Nwflower/dsh-file-claim) - File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).
 - [Chinesezjc/dsh-interconnect](https://github.com/Chinesezjc/dsh-interconnect) - Cross-instance message and event handoff between DSH instances via an interconnect server.
 - [Wine-Red/dsh-prompt-stash](https://github.com/Wine-Red/dsh-prompt-stash) - Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.
+- [heartmove/dsh-side-chat](https://github.com/heartmove/dsh-side-chat) - Select part of a conversation and ask about it in a right-side side chat; bring AI replies back to the main chat directly or as a summary.
+
 
 ### Memory
 
