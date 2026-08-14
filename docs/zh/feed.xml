@@ -160,7 +160,7 @@
     <summary>右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。</summary>
   </entry>
   <entry>
-    <title>dsh-deepseek-billing</title>
+    <title>Jolly-J/dsh-deepseek-billing</title>
     <id>https://github.com/Jolly-J/dsh-deepseek-billing</id>
     <link href="https://github.com/Jolly-J/dsh-deepseek-billing"/>
     <updated>2026-08-14T00:00:00Z</updated>
