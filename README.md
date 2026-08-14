@@ -437,6 +437,7 @@ dsh plugin --profile web add dshmarket
 - [huguangyu666/dsh-store](https://github.com/huguangyu666/dsh-store) - Plugin store: npm authoritative catalog + awesome curated list (550+ plugins, 11 categories), dsh-field quality verification, official `dsh plugin add/remove` one-click install, sidebar + settings entry.
 - [liqichen/dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) - GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.
 
+- [tianyaZTY/dsh-hot-plugin-host](https://github.com/tianyaZTY/dsh-hot-plugin-host) - Runtime plugin loading for the Web UI: a watched hot directory installs/updates client-plugin bundles live on every open page, no restart. Includes a right-column subagent dashboard example.
 
 ### Just for Fun
 
