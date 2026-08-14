@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 237,
+ "count": 242,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -51,6 +51,20 @@
   }
  },
  "plugins": [
+  {
+   "name": "dsh-plugin-hub",
+   "owner": "Noob-stupid",
+   "url": "https://github.com/Noob-stupid/dsh-plugin-hub",
+   "category": "ui",
+   "description": {
+    "en": "A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.",
+    "zh": "插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub",
+   "added": "2026-08-14"
+  },
   {
    "name": "dsh-tianshu-tui",
    "owner": "huiliyi37",
@@ -990,6 +1004,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-session-export",
+   "owner": "bwndlct",
+   "url": "https://github.com/bwndlct/dsh-session-export",
+   "category": "session",
+   "description": {
+    "en": "Export the current session to portable, schema-versioned Markdown and JSON files via the `session_export` tool and slash commands, with cross-platform-safe filenames.",
+    "zh": "把当前会话导出为可移植、带 schema 版本的 Markdown 与 JSON 文件，提供 `session_export` 工具与斜杠命令两种入口，文件名跨平台安全。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:bwndlct/dsh-session-export",
+   "added": "2026-08-14"
+  },
+  {
    "name": "distill",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/distill",
@@ -1186,6 +1214,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-vision-proxy",
+   "owner": "Flyvhidbwo",
+   "url": "https://github.com/Flyvhidbwo/dsh-vision-proxy",
+   "category": "tools",
+   "description": {
+    "en": "DeepSeek brain + automatic image transcription: attach images in the GUI and each one is transcribed to text via any OpenAI-compatible VLM (qwen3.7-flash by default) before reaching the text-only DeepSeek.",
+    "zh": "DeepSeek 大脑 + 自动识图：GUI 附加的每张图片自动经 OpenAI 兼容 VLM（默认 qwen3.7-flash）转译成文字，再交给纯文本的 DeepSeek 作答。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-undo-plugin",
    "owner": "lire1131",
    "url": "https://github.com/lire1131/dsh-undo-plugin",
@@ -1303,8 +1345,8 @@
    "url": "https://github.com/flymysql/dsh-remote",
    "category": "tools",
    "description": {
-    "en": "Remote workspace: connect a host over SSH (password or key), pick a remote workspace directory and operate on it with rw_pick_workspace / rw_list_dir / rw_read_file / rw_exec tools.",
-    "zh": "远程工作区：SSH 密码或 key 连接远程主机，选取远程工作区目录，用 rw_pick_workspace / rw_list_dir / rw_read_file / rw_exec 工具在远程直接操作。"
+    "en": "Multi-machine remote workspace: manage many SSH hosts, pick a local or remote workspace in the native Add-workspace flow (system folder chooser / local path / remote dir browse), mirror a remote workspace to a real local folder, and operate it with rw_* tools.",
+    "zh": "多机远程工作区：管理多台 SSH 主机，在原生「添加工作区」流程里选本机系统文件夹或远程目录，把远程工作区镜像成真实本地文件夹并用 rw_* 工具操作。"
    },
    "npm": null,
    "stars": 0,
@@ -2023,6 +2065,20 @@
    "npm": "@picgo/dsh-plugin",
    "stars": 3,
    "install": "dsh plugin --profile web add @picgo/dsh-plugin",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-net-proxy",
+   "owner": "mafeis",
+   "url": "https://github.com/mafeis/dsh-net-proxy",
+   "category": "tools",
+   "description": {
+    "en": "Route agent network requests through a local HTTP/CONNECT/SOCKS5 proxy.",
+    "zh": "让 agent 的网络请求走本机 HTTP/CONNECT/SOCKS5 代理。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:mafeis/dsh-net-proxy",
    "added": "2026-08-14"
   },
   {
@@ -3367,6 +3423,20 @@
    "npm": "dsh-restart",
    "stars": 1,
    "install": "dsh plugin --profile web add dsh-restart",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-expression",
+   "owner": "yyh-001",
+   "url": "https://github.com/yyh-001/dsh-expression",
+   "category": "fun",
+   "description": {
+    "en": "Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.",
+    "zh": "陪 AI 斗图的搞笑插件：说个感觉，AI 帮你搜到、发出那张恰到好处的真实表情包。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:yyh-001/dsh-expression",
    "added": "2026-08-14"
   }
  ]

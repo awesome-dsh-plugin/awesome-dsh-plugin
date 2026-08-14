@@ -14,7 +14,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 
 > 💡 New here? Install [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) first — then just ask your agent to find plugins for you: `dsh plugin --profile web add dsh-find-plugin`
 
-**237** plugins · [PRs welcome](#contributing)
+**242** plugins · [PRs welcome](#contributing)
 
 ## Contents
 

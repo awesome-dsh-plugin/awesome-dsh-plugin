@@ -6,6 +6,13 @@
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
   <updated>2026-08-14T00:00:00Z</updated>
   <entry>
+    <title>Noob-stupid/dsh-plugin-hub</title>
+    <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
+    <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。</summary>
+  </entry>
+  <entry>
     <title>openma-ai/deepseek-harness-tui</title>
     <id>https://github.com/openma-ai/deepseek-harness-tui</id>
     <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/LaoYueHanNi/dsh-token-usage"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>按请求持久化模型 token 用量，Web 设置「Token 用量」统计页：按日趋势图、按模型明细表、日期/模型筛选。</summary>
-  </entry>
-  <entry>
-    <title>KinGao294/dsh-skin</title>
-    <id>https://github.com/KinGao294/dsh-skin</id>
-    <link href="https://github.com/KinGao294/dsh-skin"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</summary>
   </entry>
 </feed>

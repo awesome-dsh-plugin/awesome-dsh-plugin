@@ -6,6 +6,13 @@
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
   <updated>2026-08-14T00:00:00Z</updated>
   <entry>
+    <title>Noob-stupid/dsh-plugin-hub</title>
+    <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
+    <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.</summary>
+  </entry>
+  <entry>
     <title>openma-ai/deepseek-harness-tui</title>
     <id>https://github.com/openma-ai/deepseek-harness-tui</id>
     <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/LaoYueHanNi/dsh-token-usage"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.</summary>
-  </entry>
-  <entry>
-    <title>KinGao294/dsh-skin</title>
-    <id>https://github.com/KinGao294/dsh-skin</id>
-    <link href="https://github.com/KinGao294/dsh-skin"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</summary>
   </entry>
 </feed>
