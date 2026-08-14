@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 213,
+ "count": 214,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1648,6 +1648,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:SamXiaBing/dsh-adb",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "creght-dev/skills",
+   "owner": "creght-dev",
+   "url": "https://github.com/creght-dev/skills",
+   "category": "skill",
+   "description": {
+    "en": "Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.",
+    "zh": "Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:creght-dev/skills",
    "added": "2026-08-14"
   },
   {
