@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 222,
+ "count": 224,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -972,6 +972,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:ICCuse/dsh-premise-guard",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "sgme",
+   "owner": "freehul",
+   "url": "https://github.com/freehul/sgme",
+   "category": "memory",
+   "description": {
+    "en": "ShiGuang Memory Engine (SGME) bridge: multi-agent shared long-term memory via HTTP — L0/L1/L1.5/L2 distillation, scenario-based injection, unified search, and proactive care signals (memory_search / wiki_search / signal_pull / signal_claim / signal_ack), installable as `dsh-sgme`.",
+    "zh": "拾光记忆引擎（SGME）桥接：多智能体共享长期记忆（HTTP）—— L0/L1/L1.5/L2 分层提炼、按场景注入、统一检索、主动关怀信号（memory_search / wiki_search / signal_pull / signal_claim / signal_ack），npm 包名 `dsh-sgme`。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:freehul/sgme",
    "added": "2026-08-14"
   },
   {
@@ -2468,6 +2481,19 @@
    "npm": null,
    "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-tps",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-tool-call-stats",
+   "owner": "disyli",
+   "url": "https://github.com/disyli/dsh-tool-call-stats",
+   "category": "dev",
+   "description": {
+    "en": "Per-process tool-call statistics: a `tool_stats` tool reporting per-tool call counts, error counts, and average durations.",
+    "zh": "进程内工具调用统计：提供 `tool_stats` 工具，按工具汇报调用次数、失败次数与平均耗时。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:disyli/dsh-tool-call-stats",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-fail-logger",

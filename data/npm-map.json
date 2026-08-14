@@ -175,6 +175,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/disyli/dsh-tool-call-stats": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/dsh-market/dsh-market": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -217,6 +221,10 @@
  },
  "https://github.com/franksong2702/dsh-codex-connect": {
   "npm": "dsh-codex-connect",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/freehul/sgme": {
+  "npm": null,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/fuhefei/dsh-sentinel": {
