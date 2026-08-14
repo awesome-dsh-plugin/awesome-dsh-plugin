@@ -306,6 +306,7 @@ dsh plugin --profile web add dshmarket
 - [whyihaveyou/dsh-suite#plugin-notify](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify) — 回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。
 - [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) — 通过扫码把飞书机器人接入DeepSeek Harness。
 - [doncelee229-cmyk/dsh-plugin-approval-alert](https://github.com/doncelee229-cmyk/dsh-plugin-approval-alert) — 审批与选择方案的系统级桌面通知：通知显示所属工作区、点击跳转到对应工作区，多语言（简中/繁中/英文），附提示音。
+- [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 
 ### 🔌 模型与账号接入
 
