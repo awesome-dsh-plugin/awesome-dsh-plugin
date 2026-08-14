@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 221,
+ "count": 222,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1090,6 +1090,19 @@
    "npm": null,
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-toolkit",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-remote",
+   "owner": "flymysql",
+   "url": "https://github.com/flymysql/dsh-remote",
+   "category": "tools",
+   "description": {
+    "en": "Remote workspace: connect a host over SSH (password or key), pick a remote workspace directory and operate on it with rw_pick_workspace / rw_list_dir / rw_read_file / rw_exec tools.",
+    "zh": "远程工作区：SSH 密码或 key 连接远程主机，选取远程工作区目录，用 rw_pick_workspace / rw_list_dir / rw_read_file / rw_exec 工具在远程直接操作。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:flymysql/dsh-remote",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-tool-csv",

@@ -207,6 +207,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/flymysql/dsh-remote": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/forrestchang/dsh-multica-runtime": {
   "npm": null,
   "checkedAt": "2026-08-14"
