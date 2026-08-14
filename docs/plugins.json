@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 201,
+ "count": 202,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -2659,6 +2659,19 @@
    "npm": null,
    "install": "dsh plugin --profile web add github:AnacondaKC/dsh-douyin",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-pet",
+   "owner": "minybear",
+   "url": "https://github.com/minybear/DeepSeek-Harness-Pet",
+   "category": "fun",
+   "description": {
+    "en": "Codex-style desktop pet: a floating animated sprite in the corner that mirrors the agent's running state (working, waiting, failed, done).",
+    "zh": "Codex 风格桌面宠物：右下角悬浮动画精灵，随 agent 运行状态实时变化（工作、等待、报错、完成）。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:minybear/DeepSeek-Harness-Pet",
+   "added": "2026-08-14"
   }
  ]
 }
