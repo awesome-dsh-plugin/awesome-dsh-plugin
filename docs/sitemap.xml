@@ -777,6 +777,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/Max-Samson/dsh-usage-chart/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Max-Samson/dsh-usage-chart/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Max-Samson/dsh-usage-chart/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Max-Samson/dsh-usage-chart/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/KinGao294/dsh-skin/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -3351,6 +3359,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/283Gawin/dsh-heatmap/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/Max-Samson/dsh-usage-chart/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Max-Samson/dsh-usage-chart/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Max-Samson/dsh-usage-chart/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Max-Samson/dsh-usage-chart/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/KinGao294/dsh-skin/</loc>

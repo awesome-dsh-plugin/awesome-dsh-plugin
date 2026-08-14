@@ -703,6 +703,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Max-Samson/dsh-usage-chart": {
+  "npm": "dsh-usage-chart",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/MAXeaglet/dsh-bash-terminal": {
   "npm": null,
   "checkedAt": "2026-08-14"
