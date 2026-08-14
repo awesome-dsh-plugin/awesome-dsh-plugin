@@ -107,7 +107,13 @@ function buildRows(loc, only) {
         <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no">${esc(e.name)}</a>${e.stars != null ? `<span class="stars" translate="no">★ ${e.stars}</span>` : ''}<a class="ext" href="${e.url}" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>${esc(e.descs[loc.code])}</p>
       </div>
-      <button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">${loc.strings.INSTALL_BTN} ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>${loc.strings.MENU_MARKET}</b><small>${loc.strings.MENU_MARKET_HINT}</small></button>
+          <button type="button" role="menuitem" data-cmd="${esc(cmd)}"><b>${loc.strings.MENU_CLI}</b><small>${loc.strings.MENU_CLI_HINT}</small></button>
+        </div>
+      </details>
     </li>`
     }).join('\n\n')
     return sec + '\n\n' + items
@@ -246,7 +252,7 @@ for (const loc of LOCALES) {
     const links = [
       `<a href="${e.url}" rel="noopener">${loc.strings.P_GH}</a>`,
       e.npm ? `<a href="https://www.npmjs.com/package/${e.npm}" rel="noopener">${loc.strings.P_NPM}</a>` : '',
-      `<a href="https://github.com/dsh-market/dsh-market" rel="noopener">🛒 ${loc.strings.P_MARKET}</a>`,
+      `<a href="https://github.com/dsh-market/dsh-market" rel="noopener">${loc.strings.P_MARKET} ↗</a>`,
     ].filter(Boolean).join('\n      ')
 
     const related = ordered

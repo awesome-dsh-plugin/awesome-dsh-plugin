@@ -81,7 +81,9 @@ body{
 }
 a{color:var(--accent);text-decoration:none;touch-action:manipulation}
 a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--accent-strong)}
-button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
 .skip{position:absolute;left:-9999px;top:0;background:var(--canvas-0);color:var(--accent-strong);padding:.6rem 1rem;z-index:99}
 .skip:focus{left:0}
@@ -136,10 +138,11 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .market .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:center;padding-block:.7rem}
 .market .lead{font-size:.9rem;color:var(--text-2)}
 .market .lead b{color:var(--accent-strong)}
-.market .cart{flex:none;font-size:1rem}
+.market .cart{flex:none;color:var(--accent-strong)}
+.market .mcmd{display:inline-flex;align-items:stretch;border:1px solid var(--text-3)}
 .market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
-  border:1px solid var(--text-3);padding:.3rem .6rem;white-space:nowrap}
-.market .copy{margin:0}
+  padding:.3rem .6rem;white-space:nowrap}
+.market .copy{margin:0;border:none;border-left:1px solid var(--text-3)}
 .market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
 @media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
 
@@ -153,7 +156,8 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .finder .count{font-family:var(--mono);font-size:.74rem;color:var(--text-3);white-space:nowrap;font-variant-numeric:tabular-nums}
 .filters{display:flex;flex-wrap:wrap;gap:.45rem;padding-block:0 .75rem}
 .chip{font-family:var(--mono);font-size:.72rem;color:var(--text-2);background:none;white-space:nowrap;
-  border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer}
+  border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer;
+  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
 .chip small{color:var(--text-3);font-size:.66rem}
 .chip:hover{border-color:var(--text)}
 .chip.active{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
@@ -168,6 +172,7 @@ ol.dex li.sec h2{
   font-weight:800;font-size:1.3rem;letter-spacing:-.01em;text-transform:uppercase;
   display:flex;align-items:center;gap:.7rem;
   border:2px solid var(--text);padding:.5rem .8rem;
+  scroll-margin-top:7.5rem;
 }
 ol.dex li.sec h2::before{
   content:counter(sec, upper-alpha);
@@ -199,9 +204,39 @@ li.item:hover .no{transform:translateX(5px)}
 .by{font-family:var(--mono);font-size:.7rem;color:var(--text-3);margin-left:.5rem;font-weight:400}
 .dex p{margin-top:.25rem;color:var(--text-2);font-size:.92rem;max-width:46rem;overflow-wrap:break-word}
 .copy{align-self:start;margin-top:.3rem;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
-  background:none;border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap}
+  background:none;border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap;
+  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
 .copy:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
 .copy.done{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
+
+/* ── per-row install dropdown ── */
+.inst{position:relative;align-self:start;margin-top:.3rem}
+.inst summary{list-style:none;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
+  border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap;user-select:none;
+  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
+.inst summary::-webkit-details-marker{display:none}
+.inst summary:hover{color:var(--text);border-color:var(--text-3)}
+.inst[open] summary{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
+.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:15rem;
+  background:var(--canvas-0);border:1px solid var(--text-3);box-shadow:0 6px 24px rgb(0 0 0 / .12);
+  overscroll-behavior:contain}
+.inst .menu button{display:block;width:100%;text-align:left;background:none;border:none;
+  padding:.55rem .8rem;border-bottom:1px solid var(--line);
+  transition:background-color .16s ease}
+.inst .menu button:last-child{border-bottom:none}
+.inst .menu button:hover{background:var(--accent-tint)}
+.inst .menu b{display:block;font-family:var(--mono);font-size:.7rem;font-weight:700;color:var(--text)}
+.inst .menu small{display:block;font-size:.66rem;color:var(--text-3);margin-top:.1rem}
+.inst .menu button.done b{color:var(--accent-strong)}
+
+/* ── back to top ── */
+#toTop{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:30;
+  width:2.75rem;height:2.75rem;display:grid;place-items:center;
+  font-family:var(--mono);font-size:1rem;color:var(--text-2);
+  background:var(--canvas-0);border:1px solid var(--text-3);
+  opacity:0;pointer-events:none;transition:opacity .2s ease,color .16s ease,border-color .16s ease,background-color .16s ease}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
 li.hidden{display:none}
 .noresult{padding-block:3rem;color:var(--text-3);text-align:center;display:none}
 .noresult button{background:none;border:none;color:var(--accent);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
@@ -292,10 +327,9 @@ footer{padding-block:0 3rem}
 
 <div class="market">
   <div class="wrap">
-    <span class="cart" aria-hidden="true">🛒</span>
+    <svg class="cart" aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>
     <span class="lead"><b>dsh-market</b> —— 在 DeepSeek Harness 里直接逛并安装本列表全部插件</span>
-    <code translate="no">dsh plugin --profile web add dshmarket</code>
-    <button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="复制安装命令">复制安装命令</button>
+    <span class="mcmd" translate="no"><code>dsh plugin --profile web add dshmarket</code><button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="复制安装命令">复制安装命令</button></span>
     <a class="about" href="https://github.com/dsh-market/dsh-market" rel="noopener">了解 dsh-market ↗</a>
   </div>
 </div>
@@ -333,55 +367,91 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="tools" style="animation-delay:0.02s">
       <span class="no" aria-hidden="true">№ 01</span>
       <div>
-        <h3><a href="/zh/p/CheshireJCat/blender/" translate="no">CheshireJCat/blender</a><a class="ext" href="https://github.com/CheshireJCat/blender" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/CheshireJCat/blender/" translate="no">CheshireJCat/blender</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/CheshireJCat/blender" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Blender 3D 生产插件：提供 30 个建模/重建 Skill、13 个运行时工具和 26 个确定性 Helper，覆盖参考图拟合、渲染、验证、动画与可移植格式导出；npm 包名 `dsh-blender`。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:CheshireJCat/blender" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:CheshireJCat/blender"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.04s">
       <span class="no" aria-hidden="true">№ 02</span>
       <div>
-        <h3><a href="/zh/p/ysr666/dsh-vision-router/" translate="no">ysr666/dsh-vision-router</a><span class="stars" translate="no">★ 17</span><a class="ext" href="https://github.com/ysr666/dsh-vision-router" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/ysr666/dsh-vision-router/" translate="no">ysr666/dsh-vision-router</a><span class="stars" translate="no">★ 29</span><a class="ext" href="https://github.com/ysr666/dsh-vision-router" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ysr666/dsh-vision-router" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ysr666/dsh-vision-router"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.06s">
       <span class="no" aria-hidden="true">№ 03</span>
       <div>
-        <h3><a href="/zh/p/Flyvhidbwo/dsh-vision-proxy/" translate="no">Flyvhidbwo/dsh-vision-proxy</a><a class="ext" href="https://github.com/Flyvhidbwo/dsh-vision-proxy" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Flyvhidbwo/dsh-vision-proxy/" translate="no">Flyvhidbwo/dsh-vision-proxy</a><span class="stars" translate="no">★ 6</span><a class="ext" href="https://github.com/Flyvhidbwo/dsh-vision-proxy" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>DeepSeek 大脑 + 自动识图：GUI 附加的每张图片自动经 OpenAI 兼容 VLM 转译成文字，再交给纯文本的 DeepSeek 作答——默认走免费匿名端点（零配置），填自己的 key 可启用付费快速通道（qwen3.7-flash，支持 DashScope/智谱/Ollama/OpenRouter）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.08s">
       <span class="no" aria-hidden="true">№ 04</span>
       <div>
-        <h3><a href="/zh/p/ximengxiaolan/dsh-vision-bridge/" translate="no">ximengxiaolan/dsh-vision-bridge</a><a class="ext" href="https://github.com/ximengxiaolan/dsh-vision-bridge" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/ximengxiaolan/dsh-vision-bridge/" translate="no">ximengxiaolan/dsh-vision-bridge</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/ximengxiaolan/dsh-vision-bridge" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>输入框贴图自动识别：由 OpenAI 兼容视觉模型转成文字描述后，再交给纯文本 DeepSeek 模型处理。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ximengxiaolan/dsh-vision-bridge" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ximengxiaolan/dsh-vision-bridge"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.10s">
       <span class="no" aria-hidden="true">№ 05</span>
       <div>
-        <h3><a href="/zh/p/linenxi-ctrl/dsh-vision/" translate="no">linenxi-ctrl/dsh-vision</a><a class="ext" href="https://github.com/linenxi-ctrl/dsh-vision" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/linenxi-ctrl/dsh-vision/" translate="no">linenxi-ctrl/dsh-vision</a><span class="stars" translate="no">★ 8</span><a class="ext" href="https://github.com/linenxi-ctrl/dsh-vision" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>外挂识图插件：鲸鱼按钮配置面板、图片识图自动回传、模型自主截图识图工具。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:linenxi-ctrl/dsh-vision" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:linenxi-ctrl/dsh-vision"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.12s">
       <span class="no" aria-hidden="true">№ 06</span>
       <div>
-        <h3><a href="/zh/p/lire1131/dsh-undo-plugin/" translate="no">lire1131/dsh-undo-plugin</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/lire1131/dsh-undo-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/lire1131/dsh-undo-plugin/" translate="no">lire1131/dsh-undo-plugin</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/lire1131/dsh-undo-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>DSH 撤销/回退系统：配置变更自动存档，一键撤销/恢复/回退到任意版本，支持 WebUI 与离线 CLI/GUI 工具（DSH 启动失败也能救）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lire1131/dsh-undo-plugin" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lire1131/dsh-undo-plugin"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.14s">
@@ -390,34 +460,58 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/MAXeaglet/dsh-bash-terminal/" translate="no">MAXeaglet/dsh-bash-terminal</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/MAXeaglet/dsh-bash-terminal" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:MAXeaglet/dsh-bash-terminal" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:MAXeaglet/dsh-bash-terminal"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.16s">
       <span class="no" aria-hidden="true">№ 08</span>
       <div>
-        <h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 283</span><a class="ext" href="https://github.com/Anionex/dsh-vision-toolkit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 303</span><a class="ext" href="https://github.com/Anionex/dsh-vision-toolkit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @dsh-external/dsh-vision-toolkit" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @dsh-external/dsh-vision-toolkit"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.18s">
       <span class="no" aria-hidden="true">№ 09</span>
       <div>
-        <h3><a href="/zh/p/omdsh-dev/dsh-custom-tool/" translate="no">omdsh-dev/dsh-custom-tool</a><span class="stars" translate="no">★ 20</span><a class="ext" href="https://github.com/omdsh-dev/dsh-custom-tool" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-custom-tool/" translate="no">omdsh-dev/dsh-custom-tool</a><span class="stars" translate="no">★ 22</span><a class="ext" href="https://github.com/omdsh-dev/dsh-custom-tool" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-custom-tool" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-custom-tool"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.20s">
       <span class="no" aria-hidden="true">№ 10</span>
       <div>
-        <h3><a href="/zh/p/Anionex/dsh-computer-use/" translate="no">Anionex/dsh-computer-use</a><span class="stars" translate="no">★ 15</span><a class="ext" href="https://github.com/Anionex/dsh-computer-use" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Anionex/dsh-computer-use/" translate="no">Anionex/dsh-computer-use</a><span class="stars" translate="no">★ 18</span><a class="ext" href="https://github.com/Anionex/dsh-computer-use" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Anionex/dsh-computer-use" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Anionex/dsh-computer-use"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.22s">
@@ -426,34 +520,58 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/kunjinkao-os/dsh-mobile-gui-agent/" translate="no">kunjinkao-os/dsh-mobile-gui-agent</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Android GUI Agent：ADB 截图、压缩 UI hierarchy 定位、逐步动作验证、审批和 Mobile Web 视图。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:kunjinkao-os/dsh-mobile-gui-agent" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:kunjinkao-os/dsh-mobile-gui-agent"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.24s">
       <span class="no" aria-hidden="true">№ 12</span>
       <div>
-        <h3><a href="/zh/p/omdsh-dev/dsh-data-agent/" translate="no">omdsh-dev/dsh-data-agent</a><span class="stars" translate="no">★ 11</span><a class="ext" href="https://github.com/omdsh-dev/dsh-data-agent" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-data-agent/" translate="no">omdsh-dev/dsh-data-agent</a><span class="stars" translate="no">★ 17</span><a class="ext" href="https://github.com/omdsh-dev/dsh-data-agent" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>让 AI 帮你连数据库、写 SQL。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-data-agent" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-data-agent"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.26s">
       <span class="no" aria-hidden="true">№ 13</span>
       <div>
-        <h3><a href="/zh/p/omdsh-dev/dsh-toolkit/" translate="no">omdsh-dev/dsh-toolkit</a><span class="stars" translate="no">★ 14</span><a class="ext" href="https://github.com/omdsh-dev/dsh-toolkit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-toolkit/" translate="no">omdsh-dev/dsh-toolkit</a><span class="stars" translate="no">★ 15</span><a class="ext" href="https://github.com/omdsh-dev/dsh-toolkit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>零依赖工具包：time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十件套一键安装。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-toolkit" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-toolkit"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.28s">
       <span class="no" aria-hidden="true">№ 14</span>
       <div>
-        <h3><a href="/zh/p/flymysql/dsh-remote/" translate="no">flymysql/dsh-remote</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/flymysql/dsh-remote" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/flymysql/dsh-remote/" translate="no">flymysql/dsh-remote</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/flymysql/dsh-remote" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>多机远程工作区：管理多台 SSH 主机，在原生「添加工作区」流程里选本机系统文件夹或远程目录，把远程工作区镜像成真实本地文件夹并用 rw_* 工具操作。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:flymysql/dsh-remote" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:flymysql/dsh-remote"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.30s">
@@ -462,16 +580,28 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-csv/" translate="no">omdsh-dev/dsh-tool-csv</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-csv" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>CSV 解析/查询/统计/转换（RFC 4180），零依赖状态机解析器。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-csv"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.32s">
       <span class="no" aria-hidden="true">№ 16</span>
       <div>
-        <h3><a href="/zh/p/omdsh-dev/dsh-tool-calculator/" translate="no">omdsh-dev/dsh-tool-calculator</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-calculator" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-tool-calculator/" translate="no">omdsh-dev/dsh-tool-calculator</a><span class="stars" translate="no">★ 5</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-calculator" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>安全的数学表达式求值器，零依赖递归下降解析器。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-calculator" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-calculator"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.34s">
@@ -480,7 +610,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-diff/" translate="no">omdsh-dev/dsh-tool-diff</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-diff" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>文本/JSON/CSV/Markdown 结构化比较与 unified diff。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-diff" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-diff"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.36s">
@@ -489,7 +625,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-encoding/" translate="no">omdsh-dev/dsh-tool-encoding</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-encoding" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>base64/url/hex 编解码、常用哈希、UUID 生成。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-encoding" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-encoding"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.38s">
@@ -498,7 +640,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-json/" translate="no">omdsh-dev/dsh-tool-json</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-json" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>JMESPath 子集 JSON 查询。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-json" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-json"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -507,7 +655,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-markdown/" translate="no">omdsh-dev/dsh-tool-markdown</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-markdown" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>HTML↔Markdown 转换、GFM 表格规范化、目录生成。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-markdown" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-markdown"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -516,7 +670,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-regex/" translate="no">omdsh-dev/dsh-tool-regex</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-regex" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>正则测试/提取/安全替换/静态解释（不执行代码）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-regex" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-regex"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -525,7 +685,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-schema/" translate="no">omdsh-dev/dsh-tool-schema</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-schema" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>JSON Schema 验证：validate/paths/explain/normalize。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -534,43 +700,73 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/omdsh-dev/dsh-tool-stat/" translate="no">omdsh-dev/dsh-tool-stat</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-stat" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>描述统计/百分位数/频数分布/相关性。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-stat" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-stat"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 24</span>
       <div>
-        <h3><a href="/zh/p/omdsh-dev/dsh-tool-time/" translate="no">omdsh-dev/dsh-tool-time</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-time" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-tool-time/" translate="no">omdsh-dev/dsh-tool-time</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/omdsh-dev/dsh-tool-time" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>严格 ISO 8601 解析、IANA 时区转换、UTC 日历运算。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-time" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-tool-time"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 25</span>
       <div>
-        <h3><a href="/zh/p/omdsh-dev/dsh-kb-sieve/" translate="no">omdsh-dev/dsh-kb-sieve</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/omdsh-dev/dsh-kb-sieve" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/omdsh-dev/dsh-kb-sieve/" translate="no">omdsh-dev/dsh-kb-sieve</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/omdsh-dev/dsh-kb-sieve" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-kb-sieve" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-kb-sieve"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 26</span>
       <div>
-        <h3><a href="/zh/p/HuanLinOTO/dsh-plugin-mineru/" translate="no">HuanLinOTO/dsh-plugin-mineru</a><span class="stars" translate="no">★ 7</span><a class="ext" href="https://github.com/HuanLinOTO/dsh-plugin-mineru" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/HuanLinOTO/dsh-plugin-mineru/" translate="no">HuanLinOTO/dsh-plugin-mineru</a><span class="stars" translate="no">★ 9</span><a class="ext" href="https://github.com/HuanLinOTO/dsh-plugin-mineru" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>向模型暴露 MineRU 文档解析工具。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-mineru" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-mineru"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 27</span>
       <div>
-        <h3><a href="/zh/p/Jesse-njx/dsh-cowork/" translate="no">Jesse-njx/dsh-cowork</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/Jesse-njx/dsh-cowork" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Jesse-njx/dsh-cowork/" translate="no">Jesse-njx/dsh-cowork</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/Jesse-njx/dsh-cowork" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>doc_read/doc_write：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-cowork" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-cowork"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -579,7 +775,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/Jesse-njx/dsh-skillport/" translate="no">Jesse-njx/dsh-skillport</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/Jesse-njx/dsh-skillport" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-skillport" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-skillport"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -588,7 +790,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/sakikoTGW/pack-agent/" translate="no">sakikoTGW/pack-agent</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/sakikoTGW/pack-agent" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>把 .pack.json/.pack.zip 投影到 .agent-pack/modpacks/，按工作区白名单暴露 skill。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @sakikotgw/pack-agent" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @sakikotgw/pack-agent"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -597,7 +805,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/vibeinging/dsh-tool-search/" translate="no">vibeinging/dsh-tool-search</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/vibeinging/dsh-tool-search" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>按 agent 的按需工具发现与渐进式 schema 披露。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-tool-search" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-tool-search"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -606,16 +820,28 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/THU-MAIC/dsh-openmaic/" translate="no">THU-MAIC/dsh-openmaic</a><span class="stars" translate="no">★ 5</span><a class="ext" href="https://github.com/THU-MAIC/dsh-openmaic" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:THU-MAIC/dsh-openmaic" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:THU-MAIC/dsh-openmaic"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 32</span>
       <div>
-        <h3><a href="/zh/p/lzszq/dsh-scholar/" translate="no">lzszq/dsh-scholar</a><span class="stars" translate="no">★ 9</span><a class="ext" href="https://github.com/lzszq/dsh-scholar" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/lzszq/dsh-scholar/" translate="no">lzszq/dsh-scholar</a><span class="stars" translate="no">★ 11</span><a class="ext" href="https://github.com/lzszq/dsh-scholar" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>学术助手插件。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lzszq/dsh-scholar" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lzszq/dsh-scholar"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -624,7 +850,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/ylwl1997/noatmark-dsh-plugin/" translate="no">ylwl1997/noatmark-dsh-plugin</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/ylwl1997/noatmark-dsh-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ylwl1997/noatmark-dsh-plugin" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ylwl1997/noatmark-dsh-plugin"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -633,7 +865,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/jihongboo/dsh-apple-mode/" translate="no">jihongboo/dsh-apple-mode</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/jihongboo/dsh-apple-mode" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:jihongboo/dsh-apple-mode" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:jihongboo/dsh-apple-mode"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -642,61 +880,103 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/ZK-Andy/dsh-continual-evolve/" translate="no">ZK-Andy/dsh-continual-evolve</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/ZK-Andy/dsh-continual-evolve" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ZK-Andy/dsh-continual-evolve"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 36</span>
       <div>
-        <h3><a href="/zh/p/zp-home/dsh-recommend/" translate="no">zp-home/dsh-recommend</a><span class="stars" translate="no">★ 8</span><a class="ext" href="https://github.com/zp-home/dsh-recommend" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/zp-home/dsh-recommend/" translate="no">zp-home/dsh-recommend</a><span class="stars" translate="no">★ 9</span><a class="ext" href="https://github.com/zp-home/dsh-recommend" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-recommend" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-recommend"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 37</span>
       <div>
-        <h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1037</span><a class="ext" href="https://github.com/liustack/modlens" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1152</span><a class="ext" href="https://github.com/liustack/modlens" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @liustack/modlens" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @liustack/modlens"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 38</span>
       <div>
-        <h3><a href="/zh/p/dsh-market/dsh-market/" translate="no">dsh-market/dsh-market</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/dsh-market/dsh-market" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/dsh-market/dsh-market/" translate="no">dsh-market/dsh-market</a><span class="stars" translate="no">★ 12</span><a class="ext" href="https://github.com/dsh-market/dsh-market" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 39</span>
       <div>
-        <h3><a href="/zh/p/crTnT/dsh-plugin-suite--dsh-plugin-center/" translate="no">crTnT/dsh-plugin-suite#dsh-plugin-center</a><a class="ext" href="https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/crTnT/dsh-plugin-suite--dsh-plugin-center/" translate="no">crTnT/dsh-plugin-suite#dsh-plugin-center</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>插件中心：在设置页发现、安装与管理 DSH 插件。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:crTnT/dsh-plugin-suite#path:/dsh-plugin-center" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:crTnT/dsh-plugin-suite#path:/dsh-plugin-center"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 40</span>
       <div>
-        <h3><a href="/zh/p/crTnT/dsh-plugin-suite--dsh-plugin-updater/" translate="no">crTnT/dsh-plugin-suite#dsh-plugin-updater</a><a class="ext" href="https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/crTnT/dsh-plugin-suite--dsh-plugin-updater/" translate="no">crTnT/dsh-plugin-suite#dsh-plugin-updater</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>已装插件更新管理：检查更新、备份与回滚。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:crTnT/dsh-plugin-suite#path:/dsh-plugin-updater" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:crTnT/dsh-plugin-suite#path:/dsh-plugin-updater"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 41</span>
       <div>
-        <h3><a href="/zh/p/awesome-dsh-plugin/dsh-find-plugin/" translate="no">awesome-dsh-plugin/dsh-find-plugin</a><span class="stars" translate="no">★ 8</span><a class="ext" href="https://github.com/awesome-dsh-plugin/dsh-find-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/awesome-dsh-plugin/dsh-find-plugin/" translate="no">awesome-dsh-plugin/dsh-find-plugin</a><span class="stars" translate="no">★ 11</span><a class="ext" href="https://github.com/awesome-dsh-plugin/dsh-find-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-find-plugin" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-find-plugin"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -705,7 +985,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/lonelymoon87/dsh-code-intel/" translate="no">lonelymoon87/dsh-code-intel</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/lonelymoon87/dsh-code-intel" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-code-intel" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-code-intel"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -714,7 +1000,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/lynx-gt/dsh-subagent-tools/" translate="no">lynx-gt/dsh-subagent-tools</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/lynx-gt/dsh-subagent-tools" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -723,7 +1015,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/lynx-gt/dsh-subagent-cwd/" translate="no">lynx-gt/dsh-subagent-cwd</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/lynx-gt/dsh-subagent-cwd" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -732,7 +1030,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/Jesse-njx/dsh-voice/" translate="no">Jesse-njx/dsh-voice</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/Jesse-njx/dsh-voice" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-voice" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-voice"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -741,7 +1045,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/Jesse-njx/dsh-docker/" translate="no">Jesse-njx/dsh-docker</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/Jesse-njx/dsh-docker" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-docker" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-docker"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -750,7 +1060,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/hccccc01333/dsh-excel-chat/" translate="no">hccccc01333/dsh-excel-chat</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/hccccc01333/dsh-excel-chat" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:hccccc01333/dsh-excel-chat" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:hccccc01333/dsh-excel-chat"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -759,7 +1075,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/EvilIrving/dsh-context-proxy/" translate="no">EvilIrving/dsh-context-proxy</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/EvilIrving/dsh-context-proxy" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:EvilIrving/dsh-context-proxy" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:EvilIrving/dsh-context-proxy"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -768,7 +1090,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span><a class="ext" href="https://github.com/zhaoolee/notes" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zhaoolee/notes" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zhaoolee/notes"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -777,7 +1105,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/zimai233/dsh-figma-to-lottie/" translate="no">zimai233/dsh-figma-to-lottie</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/zimai233/dsh-figma-to-lottie" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>将 SVG 路径与关键帧参数编译成自包含的 Lottie JSON 动画文件。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-figma-to-lottie" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zimai233/dsh-figma-to-lottie"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -786,7 +1120,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/zimai233/dsh-exam-countdown/" translate="no">zimai233/dsh-exam-countdown</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/zimai233/dsh-exam-countdown" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>查询 64 场中国考试（高考/考研/四六级/CPA/法考…）的规则日期（第二个周六、第一个周日）与倒计时。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-exam-countdown" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zimai233/dsh-exam-countdown"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -795,7 +1135,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/zimai233/dsh-wash-calendar/" translate="no">zimai233/dsh-wash-calendar</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/zimai233/dsh-wash-calendar" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>基于纯日期数学的周期习惯排程：下次发生日、区间排程与逾期提醒。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-wash-calendar" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zimai233/dsh-wash-calendar"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -804,7 +1150,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/zimai233/dsh-adhd-copilot/" translate="no">zimai233/dsh-adhd-copilot</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/zimai233/dsh-adhd-copilot" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>ADHD 行为辅导技能：任务拆解、事项过载管理、启动仪式与失败重启。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-adhd-copilot" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zimai233/dsh-adhd-copilot"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -813,7 +1165,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/zimai233/dsh-image-search/" translate="no">zimai233/dsh-image-search</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/zimai233/dsh-image-search" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>多引擎反向识图聚合：Google Lens、百度、Yandex、TinEye、SauceNAO、IQDB、Ascii2d。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-image-search" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zimai233/dsh-image-search"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -822,7 +1180,13 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/zimai233/dsh-video-downloader/" translate="no">zimai233/dsh-video-downloader</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/zimai233/dsh-video-downloader" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>检测并下载 B站/YouTube/抖音/小红书视频媒体，带清晰度与格式分析。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zimai233/dsh-video-downloader" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zimai233/dsh-video-downloader"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -831,52 +1195,88 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/Luke-Yong/dsh-plugin-knowledge-graph/" translate="no">Luke-Yong/dsh-plugin-knowledge-graph</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/Luke-Yong/dsh-plugin-knowledge-graph" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>基于代码库知识图谱的 read_graph 工具（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL 关系）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Luke-Yong/dsh-plugin-knowledge-graph" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Luke-Yong/dsh-plugin-knowledge-graph"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 57</span>
       <div>
-        <h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 78</span><a class="ext" href="https://github.com/liustack/modsearch" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 85</span><a class="ext" href="https://github.com/liustack/modsearch" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @liustack/modsearch" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @liustack/modsearch"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 58</span>
       <div>
-        <h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 65</span><a class="ext" href="https://github.com/taxueseek/argo" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span><a class="ext" href="https://github.com/taxueseek/argo" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add argo-search" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add argo-search"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 59</span>
       <div>
-        <h3><a href="/zh/p/TonyDua/dsh-web-search-exa/" translate="no">TonyDua/dsh-web-search-exa</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/TonyDua/dsh-web-search-exa" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/TonyDua/dsh-web-search-exa/" translate="no">TonyDua/dsh-web-search-exa</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/TonyDua/dsh-web-search-exa" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @tonydua/dsh-web-search-exa" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @tonydua/dsh-web-search-exa"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 60</span>
       <div>
-        <h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 68</span><a class="ext" href="https://github.com/Lum1104/dsh-browser" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 78</span><a class="ext" href="https://github.com/Lum1104/dsh-browser" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Lum1104/dsh-browser" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Lum1104/dsh-browser"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 61</span>
       <div>
-        <h3><a href="/zh/p/Sanqi-normal/dsh-webui-market-plugin/" translate="no">Sanqi-normal/dsh-webui-market-plugin</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/Sanqi-normal/dsh-webui-market-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Sanqi-normal/dsh-webui-market-plugin/" translate="no">Sanqi-normal/dsh-webui-market-plugin</a><span class="stars" translate="no">★ 10</span><a class="ext" href="https://github.com/Sanqi-normal/dsh-webui-market-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @sanqi-normal/dsh-webui-market-plugin" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @sanqi-normal/dsh-webui-market-plugin"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -885,16 +1285,28 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/huey1in/trio/" translate="no">huey1in/trio</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/huey1in/trio" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>浏览器自动化（Playwright，带实时画面）+ MCP Server（把 DSH agent 暴露给任何 MCP 客户端）+ GitHub issue/PR/webhook 评审工具。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:huey1in/trio" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:huey1in/trio"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 63</span>
       <div>
-        <h3><a href="/zh/p/SamXiaBing/dsh-adb/" translate="no">SamXiaBing/dsh-adb</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/SamXiaBing/dsh-adb" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/SamXiaBing/dsh-adb/" translate="no">SamXiaBing/dsh-adb</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/SamXiaBing/dsh-adb" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>ADB 设备·台架运维工具集：设备发现、结构化 logcat（后台采集）、apk 安装、文件 pull/push、性能快照。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:SamXiaBing/dsh-adb" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:SamXiaBing/dsh-adb"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
@@ -903,115 +1315,193 @@ footer{padding-block:0 3rem}
         <h3><a href="/zh/p/xiaoyuyu6420/dsh-backup/" translate="no">xiaoyuyu6420/dsh-backup</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/xiaoyuyu6420/dsh-backup" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>一键备份 DSH 用户数据：/backup 命令、定时自动备份、sha256 校验与自动轮换。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:xiaoyuyu6420/dsh-backup" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:xiaoyuyu6420/dsh-backup"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 65</span>
       <div>
-        <h3><a href="/zh/p/Letter2025/dsh-tool-search/" translate="no">Letter2025/dsh-tool-search</a><a class="ext" href="https://github.com/Letter2025/dsh-tool-search" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Letter2025/dsh-tool-search/" translate="no">Letter2025/dsh-tool-search</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/Letter2025/dsh-tool-search" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Hermes 风格工具搜索与瘦身：渐进式披露，语义搜索/查看/调用长尾工具，核心工具保持直通。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-tool-search" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-tool-search"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 66</span>
       <div>
-        <h3><a href="/zh/p/1na-ko/dsh-hdc-bridge/" translate="no">1na-ko/dsh-hdc-bridge</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/1na-ko/dsh-hdc-bridge" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/1na-ko/dsh-hdc-bridge/" translate="no">1na-ko/dsh-hdc-bridge</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/1na-ko/dsh-hdc-bridge" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>鸿蒙设备桥：hdc 截图/装包/日志/崩溃/UI 自动化闭环（配 read_image 看图），官方优先版本化 API 知识层（SDK .d.ts + 离线随包文档），以及 DevEco CLI 构建/签名/lint 通道。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-hdc-bridge" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-hdc-bridge"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 67</span>
       <div>
-        <h3><a href="/zh/p/PicGo/dsh-plugin/" translate="no">PicGo/dsh-plugin</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/PicGo/dsh-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/PicGo/dsh-plugin/" translate="no">PicGo/dsh-plugin</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/PicGo/dsh-plugin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>通过 PicGo 已有配置（PicGo Cloud、GitHub、S3、腾讯云 COS、七牛，或任意已安装的上传插件）把本地图片和文件上传到图床，提供 `picgo_upload` 工具与 `/picgo` 命令。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add @picgo/dsh-plugin" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @picgo/dsh-plugin"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 68</span>
       <div>
-        <h3><a href="/zh/p/mafeis/dsh-net-proxy/" translate="no">mafeis/dsh-net-proxy</a><a class="ext" href="https://github.com/mafeis/dsh-net-proxy" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/mafeis/dsh-net-proxy/" translate="no">mafeis/dsh-net-proxy</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/mafeis/dsh-net-proxy" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>让 agent 的网络请求走本机 HTTP/CONNECT/SOCKS5 代理。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:mafeis/dsh-net-proxy" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:mafeis/dsh-net-proxy"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 69</span>
       <div>
-        <h3><a href="/zh/p/bwndlct/dsh-session-audit/" translate="no">bwndlct/dsh-session-audit</a><a class="ext" href="https://github.com/bwndlct/dsh-session-audit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/bwndlct/dsh-session-audit/" translate="no">bwndlct/dsh-session-audit</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/bwndlct/dsh-session-audit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>会话执行分析：步骤、工具调用、失败、重复动作、token 用量与验证信号，输出 text/Markdown/JSON 报告。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:bwndlct/dsh-session-audit" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:bwndlct/dsh-session-audit"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 70</span>
       <div>
-        <h3><a href="/zh/p/fly233338/dsh-overleaf/" translate="no">fly233338/dsh-overleaf</a><a class="ext" href="https://github.com/fly233338/dsh-overleaf" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/fly233338/dsh-overleaf/" translate="no">fly233338/dsh-overleaf</a><span class="stars" translate="no">★ 3</span><a class="ext" href="https://github.com/fly233338/dsh-overleaf" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>通过 OverleafMCP 将多个 Overleaf 项目接入 DSH，支持浏览、分析和通过 Git 写回 LaTeX 文件。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:fly233338/dsh-overleaf" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:fly233338/dsh-overleaf"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 71</span>
       <div>
-        <h3><a href="/zh/p/LeslieWylie/dsh-fleet-audit/" translate="no">LeslieWylie/dsh-fleet-audit</a><a class="ext" href="https://github.com/LeslieWylie/dsh-fleet-audit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/LeslieWylie/dsh-fleet-audit/" translate="no">LeslieWylie/dsh-fleet-audit</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/LeslieWylie/dsh-fleet-audit" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>只读的 agent 机群凭据卫生审计：检查凭据文件权限、git remote 内嵌凭据（输出脱敏）与 provider token 字面量计数；零依赖、确定性。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 72</span>
       <div>
-        <h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-manager/" translate="no">whyihaveyou/dsh-suite#plugin-manager</a><a class="ext" href="https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-manager/" translate="no">whyihaveyou/dsh-suite#plugin-manager</a><span class="stars" translate="no">★ 12</span><a class="ext" href="https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>DSH Web UI 内置插件商店：浏览、搜索、一键安装、兼容性徽章。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-manager" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:whyihaveyou/dsh-suite#path:/packages/plugins/plugin-manager"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 73</span>
       <div>
-        <h3><a href="/zh/p/loguhan/dsh-workshop/" translate="no">loguhan/dsh-workshop</a><a class="ext" href="https://github.com/loguhan/dsh-workshop" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/loguhan/dsh-workshop/" translate="no">loguhan/dsh-workshop</a><span class="stars" translate="no">★ 2</span><a class="ext" href="https://github.com/loguhan/dsh-workshop" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>DSH Web UI 的 Steam 创意工坊式插件商店：浏览、搜索并一键安装社区插件，支持镜像加速、进度 UI、安全检测与中文描述。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:loguhan/dsh-workshop" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:loguhan/dsh-workshop"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 74</span>
       <div>
-        <h3><a href="/zh/p/LeslieWylie/dsh-md-preview/" translate="no">LeslieWylie/dsh-md-preview</a><a class="ext" href="https://github.com/LeslieWylie/dsh-md-preview" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/LeslieWylie/dsh-md-preview/" translate="no">LeslieWylie/dsh-md-preview</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/LeslieWylie/dsh-md-preview" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>把 Markdown 渲染为自包含的独立 HTML 页面：提供在 headless 配置下同样可用的 `md_html_render` 工具，以及在网页端浏览、预览、编辑并导出本地 `.md` 文件的抽屉；两个入口共用同一个渲染器，无运行时依赖。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:LeslieWylie/dsh-md-preview" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:LeslieWylie/dsh-md-preview"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 75</span>
       <div>
-        <h3><a href="/zh/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-gates/" translate="no">jinguanghai/deepseek-harness-forge-plugins#forge-gates</a><a class="ext" href="https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-gates/" translate="no">jinguanghai/deepseek-harness-forge-plugins#forge-gates</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>真实计算验证门：数学化简、逻辑证明、正则校验、E-prover 一阶逻辑、状态机检查与代码修复，由 Go 编译的二进制支撑（附 Windows 预编译产物）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-gates" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-gates"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="tools" style="animation-delay:0.40s">
       <span class="no" aria-hidden="true">№ 76</span>
       <div>
-        <h3><a href="/zh/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-tcm/" translate="no">jinguanghai/deepseek-harness-forge-plugins#forge-tcm</a><a class="ext" href="https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-tcm/" translate="no">jinguanghai/deepseek-harness-forge-plugins#forge-tcm</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>中医工具集：八纲辨证与药对查询。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-tcm" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-tcm"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
   </ol>
@@ -1035,6 +1525,9 @@ dsh plugin --profile web add github:&lt;owner&gt;/&lt;repo&gt;</pre>
     <p>给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在每个 <code translate="no">README</code> 语言文件中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。</p>
   </section>
 </main>
+
+<button id="toTop" type="button" aria-label="返回顶部">↑</button>
+<span id="live" class="sr" aria-live="polite"></span>
 
 <footer class="wrap">
   <p class="legal">插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。</p>
@@ -1096,15 +1589,47 @@ document.getElementById('clearFilter').addEventListener('click', () => {
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
   applyFilter();
 });
-document.addEventListener('click', async (e) => {
-  const btn = e.target.closest('.copy');
-  if (!btn) return;
+const live = document.getElementById('live');
+async function copyCmd(btn) {
   try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
-  btn.classList.add('done');
-  const old = btn.innerHTML;
-  btn.textContent = '✓';
-  setTimeout(() => { btn.classList.remove('done'); btn.innerHTML = old; }, 1200);
+  live.textContent = '已复制';
+  setTimeout(() => { live.textContent = ''; }, 1500);
+}
+document.addEventListener('click', async (e) => {
+  const mi = e.target.closest('.inst .menu button');
+  if (mi) {
+    await copyCmd(mi);
+    mi.classList.add('done');
+    const b = mi.querySelector('b');
+    const old = b.textContent;
+    b.textContent = '✓ 已复制';
+    setTimeout(() => { b.textContent = old; mi.classList.remove('done'); mi.closest('details').open = false; }, 900);
+    return;
+  }
+  const btn = e.target.closest('.copy');
+  if (btn) {
+    await copyCmd(btn);
+    btn.classList.add('done');
+    const old = btn.innerHTML;
+    btn.textContent = '✓';
+    setTimeout(() => { btn.classList.remove('done'); btn.innerHTML = old; }, 1200);
+    return;
+  }
+  // close any open install menu on outside click
+  if (!e.target.closest('details.inst')) for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
 });
+// one menu open at a time; Esc closes
+document.addEventListener('toggle', (e) => {
+  if (e.target.matches?.('details.inst') && e.target.open)
+    for (const d of document.querySelectorAll('details.inst[open]')) if (d !== e.target) d.open = false;
+}, true);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
+});
+// back to top
+const toTop = document.getElementById('toTop');
+addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
+toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
 // restore state from URL on load
 for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
 applyFilter();

@@ -81,7 +81,9 @@ body{
 }
 a{color:var(--accent);text-decoration:none;touch-action:manipulation}
 a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--accent-strong)}
-button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
 .skip{position:absolute;left:-9999px;top:0;background:var(--canvas-0);color:var(--accent-strong);padding:.6rem 1rem;z-index:99}
 .skip:focus{left:0}
@@ -136,10 +138,11 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .market .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:center;padding-block:.7rem}
 .market .lead{font-size:.9rem;color:var(--text-2)}
 .market .lead b{color:var(--accent-strong)}
-.market .cart{flex:none;font-size:1rem}
+.market .cart{flex:none;color:var(--accent-strong)}
+.market .mcmd{display:inline-flex;align-items:stretch;border:1px solid var(--text-3)}
 .market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
-  border:1px solid var(--text-3);padding:.3rem .6rem;white-space:nowrap}
-.market .copy{margin:0}
+  padding:.3rem .6rem;white-space:nowrap}
+.market .copy{margin:0;border:none;border-left:1px solid var(--text-3)}
 .market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
 @media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
 
@@ -153,7 +156,8 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .finder .count{font-family:var(--mono);font-size:.74rem;color:var(--text-3);white-space:nowrap;font-variant-numeric:tabular-nums}
 .filters{display:flex;flex-wrap:wrap;gap:.45rem;padding-block:0 .75rem}
 .chip{font-family:var(--mono);font-size:.72rem;color:var(--text-2);background:none;white-space:nowrap;
-  border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer}
+  border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer;
+  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
 .chip small{color:var(--text-3);font-size:.66rem}
 .chip:hover{border-color:var(--text)}
 .chip.active{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
@@ -168,6 +172,7 @@ ol.dex li.sec h2{
   font-weight:800;font-size:1.3rem;letter-spacing:-.01em;text-transform:uppercase;
   display:flex;align-items:center;gap:.7rem;
   border:2px solid var(--text);padding:.5rem .8rem;
+  scroll-margin-top:7.5rem;
 }
 ol.dex li.sec h2::before{
   content:counter(sec, upper-alpha);
@@ -199,9 +204,39 @@ li.item:hover .no{transform:translateX(5px)}
 .by{font-family:var(--mono);font-size:.7rem;color:var(--text-3);margin-left:.5rem;font-weight:400}
 .dex p{margin-top:.25rem;color:var(--text-2);font-size:.92rem;max-width:46rem;overflow-wrap:break-word}
 .copy{align-self:start;margin-top:.3rem;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
-  background:none;border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap}
+  background:none;border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap;
+  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
 .copy:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
 .copy.done{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
+
+/* ── per-row install dropdown ── */
+.inst{position:relative;align-self:start;margin-top:.3rem}
+.inst summary{list-style:none;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
+  border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap;user-select:none;
+  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
+.inst summary::-webkit-details-marker{display:none}
+.inst summary:hover{color:var(--text);border-color:var(--text-3)}
+.inst[open] summary{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
+.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:15rem;
+  background:var(--canvas-0);border:1px solid var(--text-3);box-shadow:0 6px 24px rgb(0 0 0 / .12);
+  overscroll-behavior:contain}
+.inst .menu button{display:block;width:100%;text-align:left;background:none;border:none;
+  padding:.55rem .8rem;border-bottom:1px solid var(--line);
+  transition:background-color .16s ease}
+.inst .menu button:last-child{border-bottom:none}
+.inst .menu button:hover{background:var(--accent-tint)}
+.inst .menu b{display:block;font-family:var(--mono);font-size:.7rem;font-weight:700;color:var(--text)}
+.inst .menu small{display:block;font-size:.66rem;color:var(--text-3);margin-top:.1rem}
+.inst .menu button.done b{color:var(--accent-strong)}
+
+/* ── back to top ── */
+#toTop{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:30;
+  width:2.75rem;height:2.75rem;display:grid;place-items:center;
+  font-family:var(--mono);font-size:1rem;color:var(--text-2);
+  background:var(--canvas-0);border:1px solid var(--text-3);
+  opacity:0;pointer-events:none;transition:opacity .2s ease,color .16s ease,border-color .16s ease,background-color .16s ease}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
 li.hidden{display:none}
 .noresult{padding-block:3rem;color:var(--text-3);text-align:center;display:none}
 .noresult button{background:none;border:none;color:var(--accent);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
@@ -292,10 +327,9 @@ footer{padding-block:0 3rem}
 
 <div class="market">
   <div class="wrap">
-    <span class="cart" aria-hidden="true">🛒</span>
+    <svg class="cart" aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>
     <span class="lead"><b>dsh-market</b> —— 在 DeepSeek Harness 里直接逛并安装本列表全部插件</span>
-    <code translate="no">dsh plugin --profile web add dshmarket</code>
-    <button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="复制安装命令">复制安装命令</button>
+    <span class="mcmd" translate="no"><code>dsh plugin --profile web add dshmarket</code><button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="复制安装命令">复制安装命令</button></span>
     <a class="about" href="https://github.com/dsh-market/dsh-market" rel="noopener">了解 dsh-market ↗</a>
   </div>
 </div>
@@ -333,28 +367,46 @@ footer{padding-block:0 3rem}
     <li class="item" data-cat="theme" style="animation-delay:0.02s">
       <span class="no" aria-hidden="true">№ 01</span>
       <div>
-        <h3><a href="/zh/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 4</span><a class="ext" href="https://github.com/KinGao294/dsh-skin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 6</span><a class="ext" href="https://github.com/KinGao294/dsh-skin" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:KinGao294/dsh-skin" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:KinGao294/dsh-skin"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="theme" style="animation-delay:0.04s">
       <span class="no" aria-hidden="true">№ 02</span>
       <div>
-        <h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 416</span><a class="ext" href="https://github.com/Small-tailqwq/dsh-deep-whale" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 506</span><a class="ext" href="https://github.com/Small-tailqwq/dsh-deep-whale" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
     <li class="item" data-cat="theme" style="animation-delay:0.06s">
       <span class="no" aria-hidden="true">№ 03</span>
       <div>
-        <h3><a href="/zh/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><a class="ext" href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
+        <h3><a href="/zh/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
         <p>15 个精选主题家族，浅深配色完整，跟随 DSH 原生浅色/深色/跟随系统模式。</p>
       </div>
-      <button class="copy" type="button" data-cmd="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/theme-gallery" aria-label="复制安装命令">复制安装命令</button>
+      <details class="inst">
+        <summary aria-haspopup="menu">安装 ▾</summary>
+        <div class="menu" role="menu">
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/theme-gallery"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+        </div>
+      </details>
     </li>
 
   </ol>
@@ -378,6 +430,9 @@ dsh plugin --profile web add github:&lt;owner&gt;/&lt;repo&gt;</pre>
     <p>给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在每个 <code translate="no">README</code> 语言文件中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。</p>
   </section>
 </main>
+
+<button id="toTop" type="button" aria-label="返回顶部">↑</button>
+<span id="live" class="sr" aria-live="polite"></span>
 
 <footer class="wrap">
   <p class="legal">插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。</p>
@@ -439,15 +494,47 @@ document.getElementById('clearFilter').addEventListener('click', () => {
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
   applyFilter();
 });
-document.addEventListener('click', async (e) => {
-  const btn = e.target.closest('.copy');
-  if (!btn) return;
+const live = document.getElementById('live');
+async function copyCmd(btn) {
   try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
-  btn.classList.add('done');
-  const old = btn.innerHTML;
-  btn.textContent = '✓';
-  setTimeout(() => { btn.classList.remove('done'); btn.innerHTML = old; }, 1200);
+  live.textContent = '已复制';
+  setTimeout(() => { live.textContent = ''; }, 1500);
+}
+document.addEventListener('click', async (e) => {
+  const mi = e.target.closest('.inst .menu button');
+  if (mi) {
+    await copyCmd(mi);
+    mi.classList.add('done');
+    const b = mi.querySelector('b');
+    const old = b.textContent;
+    b.textContent = '✓ 已复制';
+    setTimeout(() => { b.textContent = old; mi.classList.remove('done'); mi.closest('details').open = false; }, 900);
+    return;
+  }
+  const btn = e.target.closest('.copy');
+  if (btn) {
+    await copyCmd(btn);
+    btn.classList.add('done');
+    const old = btn.innerHTML;
+    btn.textContent = '✓';
+    setTimeout(() => { btn.classList.remove('done'); btn.innerHTML = old; }, 1200);
+    return;
+  }
+  // close any open install menu on outside click
+  if (!e.target.closest('details.inst')) for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
 });
+// one menu open at a time; Esc closes
+document.addEventListener('toggle', (e) => {
+  if (e.target.matches?.('details.inst') && e.target.open)
+    for (const d of document.querySelectorAll('details.inst[open]')) if (d !== e.target) d.open = false;
+}, true);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
+});
+// back to top
+const toTop = document.getElementById('toTop');
+addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
+toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
 // restore state from URL on load
 for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
 applyFilter();
