@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-14T17:51:11.163Z</updated>
+  <updated>2026-08-14T17:54:16.456Z</updated>
+  <entry>
+    <title>liqichen/dsh-plugin-manager</title>
+    <id>https://github.com/liqichen/dsh-plugin-manager</id>
+    <link href="https://github.com/liqichen/dsh-plugin-manager"/>
+    <updated>2026-08-14T17:54:16.456Z</updated>
+    <summary>GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.</summary>
+  </entry>
   <entry>
     <title>PwnKY/dsh-session-link</title>
     <id>https://github.com/PwnKY/dsh-session-link</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
-  </entry>
-  <entry>
-    <title>v587d/dsh-opencode-go-usage</title>
-    <id>https://github.com/v587d/dsh-opencode-go-usage</id>
-    <link href="https://github.com/v587d/dsh-opencode-go-usage"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.</summary>
   </entry>
 </feed>

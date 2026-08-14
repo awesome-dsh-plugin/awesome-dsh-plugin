@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-14T17:51:11.163Z</updated>
+  <updated>2026-08-14T17:54:16.456Z</updated>
+  <entry>
+    <title>liqichen/dsh-plugin-manager</title>
+    <id>https://github.com/liqichen/dsh-plugin-manager</id>
+    <link href="https://github.com/liqichen/dsh-plugin-manager"/>
+    <updated>2026-08-14T17:54:16.456Z</updated>
+    <summary>在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。</summary>
+  </entry>
   <entry>
     <title>PwnKY/dsh-session-link</title>
     <id>https://github.com/PwnKY/dsh-session-link</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
-  </entry>
-  <entry>
-    <title>v587d/dsh-opencode-go-usage</title>
-    <id>https://github.com/v587d/dsh-opencode-go-usage</id>
-    <link href="https://github.com/v587d/dsh-opencode-go-usage"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。</summary>
   </entry>
 </feed>

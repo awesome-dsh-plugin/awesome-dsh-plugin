@@ -671,6 +671,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/liqichen/dsh-plugin-manager": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/lire1131/dsh-undo-plugin": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1387,8 +1391,8 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
- "https://github.com/zhu1090093659/dsh-web-ui": {
-  "npm": null,
+ "https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-web-ui-all": {
+  "npm": "@linxin666/dsh-web-ui-all",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ZichengGurrr/dsh-window/tree/main/plugin": {

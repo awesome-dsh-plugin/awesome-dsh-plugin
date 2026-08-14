@@ -641,12 +641,12 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Luaphes/dsh-web-attention-badge/"/>
   </url>
   <url>
-    <loc>https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui/</loc>
+    <loc>https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
-      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui/"/>
-      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/zhu1090093659/dsh-web-ui/"/>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/p/zealot00/dsh-pet/</loc>
@@ -2937,6 +2937,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/huguangyu666/dsh-store/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/liqichen/dsh-plugin-manager/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/liqichen/dsh-plugin-manager/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/liqichen/dsh-plugin-manager/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/liqichen/dsh-plugin-manager/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/Nagi-ovo/dsh-ads/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -3537,12 +3545,12 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Luaphes/dsh-web-attention-badge/"/>
   </url>
   <url>
-    <loc>https://awesome-dsh-plugin.com/zh/p/zhu1090093659/dsh-web-ui/</loc>
+    <loc>https://awesome-dsh-plugin.com/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
-      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui/"/>
-      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/zhu1090093659/dsh-web-ui/"/>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/zealot00/dsh-pet/</loc>
@@ -5831,6 +5839,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/huguangyu666/dsh-store/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/huguangyu666/dsh-store/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/huguangyu666/dsh-store/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/liqichen/dsh-plugin-manager/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/liqichen/dsh-plugin-manager/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/liqichen/dsh-plugin-manager/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/liqichen/dsh-plugin-manager/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/Nagi-ovo/dsh-ads/</loc>

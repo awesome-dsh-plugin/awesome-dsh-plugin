@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">huguangyu666/</span><wbr><span class="name">dsh-plugin-session-import</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/session/">会话与消息</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-plugin-session-import" rel="noopener" translate="no">dsh-plugin-session-import</a></span>
@@ -188,7 +189,127 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DeepSeek Harness（dsh）插件：把 <strong>claude-code / codex / reasonix / zcode</strong> 的历史聊天记录导入为 dsh 会话（含工作区绑定与工具能力），导入后可直接续聊。</p>
+<h3>功能</h3>
+<ul>
+<li><strong>四种工具解析</strong>：<ul>
+<li>claude-code（含 Claude-3p 新端、中文路径 <code>.claude.json</code> 权威映射）</li>
+<li>codex（新旧两种响应格式，<code>custom_tool_call</code> 参数自动从 JS 代码转 JSON）</li>
+<li>reasonix（旧 CLI + 新桌面版，项目 slug 贪心解码真实路径）</li>
+<li>zcode（<code>db.sqlite</code> 权威索引 + compaction 压缩摘要还原）</li>
+</ul>
+</li>
+<li><strong>会话发现</strong>：标题 / 项目名 / 消息数 / 时间齐全，30s 缓存扫描</li>
+<li><strong>搜索</strong>：按标题 / 项目名过滤（防抖输入）</li>
+<li><strong>批量导入</strong>：多选会话一次导入，每个会话独立 seed + 工作区绑定</li>
+<li><strong>工具完整可用</strong>：导入会话自动加入默认 preset scope，25+ 工具（read/edit/glob/grep/pwsh 等）与正常会话一致</li>
+<li><strong>超长会话保护</strong>：三层保障（内容裁剪 → 消息截断 → 单条兜底），任何长度 / 任何模型窗口都不超限</li>
+<li><strong>Web UI</strong>：侧边栏「⇩ 导入会话」按钮（明暗主题自适应），导入成功自动关闭</li>
+<li><strong>命令</strong>：<code>/import &lt;tool&gt; &lt;path&gt;</code>（文件或目录批量）</li>
+</ul>
+<h3>安装</h3>
+<p><strong>方式一：官方命令（推荐）</strong></p>
+<pre><code class="language-bash"># 装进 web profile（自动 reconcile dsh.profile.bundles）
+dsh plugin --profile web add dsh-plugin-session-import
+dsh web   # 重启生效
+</code></pre>
+<p><strong>方式二：商店一键安装</strong></p>
+<p>装 <a href="https://github.com/huguangyu666/dsh-store">dsh-store</a>，打开「插件商店」搜索安装。</p>
+<p><strong>方式三：手动</strong></p>
+<pre><code class="language-bash"># 1. 安装插件包
+npm i dsh-plugin-session-import
+
+# 2. 在 profile 挂载（~/.dsh/profiles/web/cordis.patch.yml）：
+# - insert:
+#     - id: session-import
+#       name: &#39;dsh-plugin-session-import&#39;
+
+# 3. 重启 dsh web
+dsh web
+</code></pre>
+<h3>使用</h3>
+<ul>
+<li>点击侧边栏底部的 <strong>「⇩ 导入会话」</strong> → 选择工具 → 搜索 / 滚动分批加载 → 勾选 → 导入</li>
+<li>或命令行：<code>/import codex C:\Users\xxx\.codex\sessions</code>（目录=批量）</li>
+<li></li>
+</ul>
+<h3>会话数据位置</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>会话目录</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>claude-code</td>
+<td><code>~/.claude/projects/</code> + <code>%LOCALAPPDATA%\Claude-3p\claude-code-sessions</code>（新端）</td>
+</tr>
+<tr>
+<td>codex</td>
+<td><code>~/.codex/sessions/</code></td>
+</tr>
+<tr>
+<td>reasonix</td>
+<td><code>~/.reasonix/sessions/</code>（CLI）+ <code>%APPDATA%\reasonix\projects\*\sessions</code>（桌面版）</td>
+</tr>
+<tr>
+<td>zcode</td>
+<td><code>~/.zcode/cli/db/db.sqlite</code>（权威索引）</td>
+</tr>
+</tbody></table>
+<h3>导入质量保障</h3>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>工具调用链</td>
+<td>seed 中 assistant/message 承载 tool-call 块，tool/result 紧跟对应调用（含孤儿 result 丢弃、迟到 result 配对），满足 OpenAI/DeepSeek wire 规则</td>
+</tr>
+<tr>
+<td>zcode 压缩</td>
+<td>识别 compaction 标记，摘要正文（summary.body）原样还原为上下文</td>
+</tr>
+<tr>
+<td>codex 参数</td>
+<td><code>custom_tool_call</code> 的 JS 代码参数（<code>tools.exec_command({...})</code>）自动转成标准 JSON，避免模型学到错误调用格式</td>
+</tr>
+<tr>
+<td>超长截断</td>
+<td>文本 ≤16K 字符、工具结果 ≤40K 字符裁剪；消息按预算截断（保留开头锚点 + 压缩摘要 + 尾部）；单条超预算一半直接丢弃</td>
+</tr>
+<tr>
+<td>预算自适应</td>
+<td>按默认模型真实窗口（contextWindow − maxTokens − 25% 余量）动态计算，<code>DSH_IMPORT_CONTEXT_BUDGET</code> 可覆盖</td>
+</tr>
+<tr>
+<td>cwd 修复</td>
+<td>claude 中文路径（<code>.claude.json</code> 权威映射）、reasonix slug 贪心解码——避免 workspace=主目录导致沙箱拒绝</td>
+</tr>
+</tbody></table>
+<h3>已知限制</h3>
+<ul>
+<li>图片附件降级为占位文本（部分工具不支持 image block）</li>
+<li>被截断的历史消息不保留（超长会话的中间轮次丢失，但保留摘要与锚点）</li>
+<li>reasonix 桌面版部分会话标题依赖 <code>.titles.json</code>，缺失时回退文件名提取</li>
+</ul>
+<h3>开发</h3>
+<pre><code class="language-bash">npm run build      # esbuild 构建 lib/index.js + lib/client.js
+npm pack           # 打包验证
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/huguangyu666/dsh-plugin-session-import/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -206,7 +327,7 @@ footer p+p{margin-top:.5rem}
       <li><h3><a href="/zh/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 25</span></h3><a class="desc-link" href="/zh/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</p></a></li>
       <li><h3><a href="/zh/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/zh/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>把 13 家 coding agent（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode 等）的完整对话历史导入为可续聊的 DeepSeek Harness 会话，并支持反向导出回 Claude Code。</p></a></li>
       <li><h3><a href="/zh/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/zh/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>基于分支的消息编辑、reroll、重试与版本时间线。</p></a></li>
-      <li><h3><a href="/zh/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/hellodigua/dsh-share/" tabindex="-1"><p>一键分享你的对话。</p></a></li>
+      <li><h3><a href="/zh/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/zh/p/hellodigua/dsh-share/" tabindex="-1"><p>一键分享你的对话。</p></a></li>
       <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/session/">查看整个分类 →</a>

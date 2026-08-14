@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">ZichengGurrr/</span><wbr><span class="name">dsh-window#plugin</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,77 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH 插件：安装并启动 <a href="https://github.com/ZichengGurrr/dsh-window">dsh-window</a> 桌面应用——DeepSeek Harness 的 Windows 原生窗口（WebView2）。</p>
+<ul>
+<li>插件激活时自动确保桌面应用就绪：缺失或版本落后时从 GitHub Releases 下载精简 zip 到 <code>%LOCALAPPDATA%\Programs\dsh-window\</code>，并在桌面创建/刷新<strong>不带版本号</strong>的快捷方式「DeepSeek Harness Window」；已是最新则跳过下载</li>
+<li>注册 <code>desktop_launch</code> 工具：对话里说&quot;打开桌面应用&quot;即可安装并拉起，agent 可直接调用</li>
+<li>安装/下载失败不影响 DSH 启动，错误只记录日志，下次激活或调用工具时重试</li>
+<li>下载走精简版（约 256KB）；便携版（自带 Node/DSH/Git）请从 Releases 手动下载</li>
+</ul>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-window
+# 或从 GitHub 源安装：
+dsh plugin --profile web add github:ZichengGurrr/dsh-window#path:/plugin
+</code></pre>
+<p>重启 DSH（<code>dsh web</code>）后生效。要求 Windows + Node ^22.19 或 ≥ 24。</p>
+<h3>配置（cordis.patch.yml）</h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>autoInstall</td>
+<td>true</td>
+<td>激活时自动安装/升级</td>
+</tr>
+<tr>
+<td>createShortcut</td>
+<td>true</td>
+<td>创建桌面快捷方式</td>
+</tr>
+<tr>
+<td>installDir</td>
+<td>%LOCALAPPDATA%\Programs\dsh-window</td>
+<td>应用安装目录</td>
+</tr>
+<tr>
+<td>shortcutName</td>
+<td>DeepSeek Harness Window</td>
+<td>快捷方式名称（无版本号）</td>
+</tr>
+<tr>
+<td>repoSlug</td>
+<td>ZichengGurrr/dsh-window</td>
+<td>应用 zip 的 GitHub Release 来源</td>
+</tr>
+</tbody></table>
+<h2>English</h2>
+<p>DSH plugin that installs and launches <a href="https://github.com/ZichengGurrr/dsh-window">dsh-window</a> — the native Windows (WebView2) window for DeepSeek Harness.</p>
+<ul>
+<li>On activation it ensures the desktop app is ready: downloads the slim zip from GitHub Releases into <code>%LOCALAPPDATA%\Programs\dsh-window</code> when missing or outdated and creates/refreshes a version-less desktop shortcut &quot;DeepSeek Harness Window&quot;; up-to-date installs are left alone</li>
+<li>Registers the <code>desktop_launch</code> tool — say &quot;open the desktop app&quot; in chat and the agent installs/launches it</li>
+<li>A failed install never blocks DSH startup; errors are logged and retried on next activation or tool call</li>
+<li>Uses the slim build (~256KB); the portable bundle (Node/DSH/Git included) stays a manual download from Releases</li>
+</ul>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-window
+# or from the GitHub source:
+dsh plugin --profile web add github:ZichengGurrr/dsh-window#path:/plugin
+</code></pre>
+<p>Restart DSH (<code>dsh web</code>) to activate. Requires Windows + Node ^22.19 or ≥ 24.</p>
+<h3>Configuration</h3>
+<p>See the table above; all keys are optional with those defaults.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/ZichengGurrr/dsh-window/blob/main/plugin/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,9 +269,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1868</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 869</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 735</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1878</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 875</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 738</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
       <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>

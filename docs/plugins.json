@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 362,
+ "count": 363,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -92,7 +92,7 @@
     "zh": "局域网手机访问网关：独立子进程反向代理 + 首次访问审批 + 设备令牌绑定 + 限流 + 手机端紧凑排版注入（输入区权限/模型小胶囊、randomUUID polyfill）。"
    },
    "npm": null,
-   "stars": 0,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:Bernardxu123/dsh-mobile-gate",
    "added": "2026-08-14"
   },
@@ -107,7 +107,7 @@
     "zh": "插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。"
    },
    "npm": null,
-   "stars": 7,
+   "stars": 8,
    "install": "dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub",
    "added": "2026-08-14"
   },
@@ -137,7 +137,7 @@
     "zh": "输入框下方的 iOS 风格统计条：一键展开查看会话花费、DeepSeek 账户余额、缓存命中率与 Token 用量。"
    },
    "npm": null,
-   "stars": 0,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:zoumutou/dsh-cost-balance",
    "added": "2026-08-14"
   },
@@ -257,7 +257,7 @@
     "zh": "把鲸鱼娘思考时的 \"deep diving\" 状态文案自定义成任意你想要的样子。"
    },
    "npm": null,
-   "stars": 29,
+   "stars": 30,
    "install": "dsh plugin --profile web add github:alingalingling/ui-status-label",
    "added": "2026-08-13"
   },
@@ -377,7 +377,7 @@
     "zh": "选中文字→批注→随消息发送，回复按批注逐条对照。"
    },
    "npm": null,
-   "stars": 39,
+   "stars": 40,
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-annotation",
    "added": "2026-08-13"
   },
@@ -707,7 +707,7 @@
     "zh": "模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:GLFzr/dsh-opencode-go-quota",
    "added": "2026-08-14"
   },
@@ -797,7 +797,7 @@
     "zh": "Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。"
    },
    "npm": null,
-   "stars": 869,
+   "stars": 875,
    "install": "dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI",
    "added": "2026-08-14"
   },
@@ -812,7 +812,7 @@
     "zh": "侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。"
    },
    "npm": null,
-   "stars": 735,
+   "stars": 738,
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
    "added": "2026-08-14"
   },
@@ -892,18 +892,18 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dsh-web-ui",
+   "name": "dsh-web-ui#packages/dsh-web-ui-all",
    "owner": "zhu1090093659",
-   "url": "https://github.com/zhu1090093659/dsh-web-ui",
-   "page": "https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui/",
+   "url": "https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-web-ui-all",
+   "page": "https://awesome-dsh-plugin.com/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/",
    "category": "ui",
    "description": {
     "en": "Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.",
     "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
    },
-   "npm": null,
-   "stars": 1868,
-   "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
+   "npm": "@linxin666/dsh-web-ui-all",
+   "stars": 1878,
+   "install": "dsh plugin --profile web add @linxin666/dsh-web-ui-all",
    "added": "2026-08-14"
   },
   {
@@ -1052,7 +1052,7 @@
     "zh": "侧边栏底部 DeepSeek 账户余额显示与会话费用估算卡片。"
    },
    "npm": null,
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add github:Jolly-J/dsh-deepseek-billing",
    "added": "2026-08-14"
   },
@@ -1277,7 +1277,7 @@
     "zh": "DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add github:ZichengGurrr/dsh-window#path:/plugin",
    "added": "2026-08-14"
   },
@@ -1292,7 +1292,7 @@
     "zh": "创意工坊式插件浏览器：侧栏常驻入口，搜索/最热/最新/近 7-90 天飙升榜、中文关键词映射、描述与 README 机翻、插件特征验证过滤、一键安装/更新。"
    },
    "npm": null,
-   "stars": 14,
+   "stars": 15,
    "install": "dsh plugin --profile web add github:yyyyukari/dsh-plugin-workshop",
    "added": "2026-08-14"
   },
@@ -1307,7 +1307,7 @@
     "zh": "侧边网页预览面板：本地静态托管、Markdown/代码/图片预览、非静态项目一键运行（Cargo/npm/Go/Python）实时日志、网页元素标记批注、链接点击接管到侧边预览。"
    },
    "npm": null,
-   "stars": 0,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:zoumutou/dsh-web-preview",
    "added": "2026-08-14"
   },
@@ -1337,7 +1337,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。"
    },
    "npm": null,
-   "stars": 570,
+   "stars": 574,
    "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale",
    "added": "2026-08-14"
   },
@@ -1382,7 +1382,7 @@
     "zh": "DSH Web GUI 字体切换器：99 个界面字体与 31 个代码字体，中西文自动搭配，即选即生效，localStorage 持久化。"
    },
    "npm": null,
-   "stars": 0,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:tianyhjg-lab/dsh-font",
    "added": "2026-08-14"
   },
@@ -1397,7 +1397,7 @@
     "zh": "更贴近 deepseek 网页版/App 的聊天体验：原位编辑提问、重新生成回复、每条消息带 <i/N> 版本翻页器（树状版本模型，跨对话保持稳定）。"
    },
    "npm": null,
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add github:cindyguyuehu123/dsh-webchatlike",
    "added": "2026-08-14"
   },
@@ -1487,7 +1487,7 @@
     "zh": "一键分享你的对话。"
    },
    "npm": null,
-   "stars": 16,
+   "stars": 17,
    "install": "dsh plugin --profile web add github:hellodigua/dsh-share",
    "added": "2026-08-13"
   },
@@ -1592,7 +1592,7 @@
     "zh": "复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。"
    },
    "npm": "dsh-session-link",
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add dsh-session-link",
    "added": "2026-08-14"
   },
@@ -1772,7 +1772,7 @@
     "zh": "把 claude-code / codex / reasonix / zcode 的聊天历史导入为 dsh 会话：工作区绑定、工具调用保留、超长会话保护、zcode 压缩还原。"
    },
    "npm": "dsh-plugin-session-import",
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add dsh-plugin-session-import",
    "added": "2026-08-14"
   },
@@ -2072,7 +2072,7 @@
     "zh": "多 Agent 共享一个 Obsidian vault：零依赖 Python core（检索/晋升/裁决/遗忘）+ vault 模板 + dsh 插件（memory_search/show/submit/status）。"
    },
    "npm": "dsh-unified-agent-memory",
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add dsh-unified-agent-memory",
    "added": "2026-08-14"
   },
@@ -2252,7 +2252,7 @@
     "zh": "让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。"
    },
    "npm": "@dsh-external/dsh-vision-toolkit",
-   "stars": 319,
+   "stars": 322,
    "install": "dsh plugin --profile web add @dsh-external/dsh-vision-toolkit",
    "added": "2026-08-13"
   },
@@ -2732,7 +2732,7 @@
     "zh": "为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。"
    },
    "npm": "@liustack/modlens",
-   "stars": 1254,
+   "stars": 1259,
    "install": "dsh plugin --profile web add @liustack/modlens",
    "added": "2026-08-14"
   },
@@ -2747,7 +2747,7 @@
     "zh": "装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。"
    },
    "npm": "dshmarket",
-   "stars": 39,
+   "stars": 41,
    "install": "dsh plugin --profile web add dshmarket",
    "added": "2026-08-14"
   },
@@ -2912,7 +2912,7 @@
     "zh": "美股行情、历史 K 线、财务报表、分析师共识与新闻，数据来自 yahoo-finance2。"
    },
    "npm": "dsh-us-stocks",
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add dsh-us-stocks",
    "added": "2026-08-14"
   },
@@ -3122,7 +3122,7 @@
     "zh": "dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。"
    },
    "npm": "@sanqi-normal/dsh-webui-market-plugin",
-   "stars": 23,
+   "stars": 25,
    "install": "dsh plugin --profile web add @sanqi-normal/dsh-webui-market-plugin",
    "added": "2026-08-14"
   },
@@ -3482,7 +3482,7 @@
     "zh": "Agent 轨迹治理与异常诊断：把平铺会话日志重建为多分支轨迹树，识别循环死锁/无效重试/目标漂移，带成本归因的告警与一键中断/断点分支（官方 API），独立 GUI Tab。"
    },
    "npm": null,
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add github:dfycaly98931680/dsh-trajectory-governance",
    "added": "2026-08-14"
   },
@@ -3527,7 +3527,7 @@
     "zh": "设计美学技能包：10 种风格（深色 SaaS、极简白、新拟态、粗野主义、毛玻璃、日式极简、便当盒、赛博朋克、蒸汽波、装饰艺术），每种含 token、组件规则、禁用清单与验收清单，附可运行落地页 demo。"
    },
    "npm": null,
-   "stars": 0,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:zhaiyateng/dsh-design-skills",
    "added": "2026-08-14"
   },
@@ -3572,7 +3572,7 @@
     "zh": "把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。"
    },
    "npm": null,
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add github:Cavan-Ou/hermes-dsh-collab",
    "added": "2026-08-14"
   },
@@ -3617,7 +3617,7 @@
     "zh": "AgentTeams 多智能体团队。"
    },
    "npm": null,
-   "stars": 243,
+   "stars": 244,
    "install": "dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams",
    "added": "2026-08-13"
   },
@@ -3977,7 +3977,7 @@
     "zh": "本地优先的多 Agent 协作中继：HMAC 认证 broker + dsh 插件（relay_send/recv/peers/history）+ 零依赖 CLI 与 Python 客户端，wire protocol v1.0。"
    },
    "npm": "dsh-agent-relay",
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add dsh-agent-relay",
    "added": "2026-08-14"
   },
@@ -4337,7 +4337,7 @@
     "zh": "通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。"
    },
    "npm": "dsh-plugin-notify",
-   "stars": null,
+   "stars": 2,
    "install": "dsh plugin --profile web add dsh-plugin-notify",
    "added": "2026-08-14"
   },
@@ -4472,7 +4472,7 @@
     "zh": "独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。"
    },
    "npm": "dsh-boot-guard",
-   "stars": null,
+   "stars": 2,
    "install": "dsh plugin --profile web add dsh-boot-guard",
    "added": "2026-08-14"
   },
@@ -4847,7 +4847,7 @@
     "zh": "全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。"
    },
    "npm": null,
-   "stars": 6,
+   "stars": 7,
    "install": "dsh plugin --profile web add github:Areium/dsh-fail-logger",
    "added": "2026-08-14"
   },
@@ -5147,7 +5147,7 @@
     "zh": "局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。"
    },
    "npm": "dsh-lan-access",
-   "stars": 2,
+   "stars": 3,
    "install": "dsh plugin --profile web add dsh-lan-access",
    "added": "2026-08-14"
   },
@@ -5192,8 +5192,23 @@
     "zh": "dsh 插件商店：npm 权威目录 + awesome 精选（550+ 插件、11 分类）、dsh 字段质量验证、官方 `dsh plugin add/remove` 一键安装，侧边栏与设置页入口。"
    },
    "npm": "dsh-store",
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add dsh-store",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-manager",
+   "owner": "liqichen",
+   "url": "https://github.com/liqichen/dsh-plugin-manager",
+   "page": "https://awesome-dsh-plugin.com/p/liqichen/dsh-plugin-manager/",
+   "category": "dev",
+   "description": {
+    "en": "GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.",
+    "zh": "在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。"
+   },
+   "npm": null,
+   "stars": 1,
+   "install": "dsh plugin --profile web add github:liqichen/dsh-plugin-manager",
    "added": "2026-08-14"
   },
   {
@@ -5297,7 +5312,7 @@
     "zh": "桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。"
    },
    "npm": null,
-   "stars": 125,
+   "stars": 126,
    "install": "dsh plugin --profile web add github:vlln/whale-girl",
    "added": "2026-08-13"
   },
@@ -5477,7 +5492,7 @@
     "zh": "可折叠/展开、自由拖动的悬浮音乐播放器，接入网易云音乐，支持歌单导入和按歌名或歌手搜索单曲导入，边对话边听歌。"
    },
    "npm": null,
-   "stars": 0,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:xiekai886/dsh-MusicPlayer",
    "added": "2026-08-14"
   }

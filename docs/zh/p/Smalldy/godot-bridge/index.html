@@ -314,6 +314,10 @@ footer p+p{margin-top:.5rem}
 <pre><code class="language-sh">dsh plugin --profile web remove godot-bridge
 </code></pre>
 <p>从 profile 中删除该包及其 <code>godot-bridge</code> bundle 层——重启后该 profile 的会话不再有 15 个 <code>godot_*</code> 工具。标准 <code>web</code> profile 本身不受影响（这条命令从不创建或删除 profile）。先 <code>godot_stop_project</code> 停掉运行中的游戏；插件卸载清理也会终止它启动的 Godot 子进程。任何时候可用上面的 <code>add</code> 命令重新安装。</p>
+<h3>更新提示</h3>
+<p>插件加载时会做一次<strong>尽力而为</strong>的版本检查：抓取仓库 <code>main</code> 分支的 <code>package.json</code>（<code>raw.githubusercontent.com</code>，5 秒超时，失败/离线时静默跳过），与已安装版本比较。存在更新时注册一条系统提示（system-prompt section），让模型在每个会话里转达 <strong>&quot;godot-bridge 有可用更新：已装 X，最新 Y&quot;</strong>，直到插件更新（<code>dsh plugin --profile web update godot-bridge</code>，然后重启 DSH）为止。<code>godot_ping</code> 也会额外返回 <code>plugin_version</code> / <code>latest_version</code> / <code>update_available</code>，可随时按需查询。</p>
+<p><strong>发布更新</strong>：在 <code>package.json</code> 里<strong>递增 <code>version</code></strong>（这是发布标记）并推送——版本没变就不会触发提示。fork 场景：设置 <code>package.json</code> 的 <code>repository</code> 后，检查会自动跟随你的 fork。</p>
+<p>已知限制：提示是系统提示 section，所以 persona 为 complete/抑制型（如<strong>极简模式</strong> <code>minimal</code>）的预设不会显示；检查需要启动时能联网。</p>
 <h3>用法</h3>
 <pre><code class="language-text">godot_run_project            # 启动游戏（默认当前 workspace）
 godot_ping                   # 确认 9090 应答
@@ -363,8 +367,8 @@ COVERAGE.md / COVERAGE.zh-CN.md   # 与 godot-mcp 的逐工具对比
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1254</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 319</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1259</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 322</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>

@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">PwnKY/</span><wbr><span class="name">dsh-session-link</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/session/">Sessions & Messages</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-session-link" rel="noopener" translate="no">dsh-session-link</a></span>
@@ -188,7 +189,144 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://www.npmjs.com/package/dsh-session-link"><img src="https://img.shields.io/npm/v/dsh-session-link.svg" alt="npm"></a> <a href="https://www.npmjs.com/package/dsh-session-link"><img src="https://img.shields.io/npm/dm/dsh-session-link.svg" alt="npm downloads"></a> · <a href="https://github.com/PwnKY/dsh-session-link/blob/master/README.md">中文</a> · English</p>
+<p><strong>Codex-style session deep links for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh)</strong></p>
+<p>Copy a link from any conversation, then paste it into a different conversation — the referenced session&#39;s context is snapshotted and injected as <strong>bounded, read-only background context</strong> right before your prompt. The same link also opens the conversation in the browser.</p>
+<h3>Install</h3>
+<pre><code class="language-bash"># One command: installs the package, auto-joins the profile&#39;s bundle layer,
+# and auto-applies the composition rows — no manual yml edits.
+dsh plugin --profile web add dsh-session-link
+
+# Restart the web GUI and refresh the page.
+dsh web
+</code></pre>
+<p>The package declares a <code>dsh.bundle</code> patch (<code>cordis.patch.yml</code>); <code>dsh plugin add</code> detects it and adds the package to <code>dsh.profile.bundles</code>, so the <code>session-reference</code> and <code>session-link</code> rows compose automatically at boot.</p>
+<blockquote>
+<p>Generic npm install (package only, not wired into a profile): <code>npm install dsh-session-link</code>
+Manual install (without the bundle mechanism): see <a href="#quick-start">Quick start</a>.</p>
+</blockquote>
+<pre><code>┌─ session A ──────────────┐        ┌─ session B ──────────────────────┐
+│  🔗 copy session link    │        │  user: please see this session:  │
+│  → dsh://session/session-│ ─────▶ │         dsh://session/session-…  │
+│    …abc                  │  paste │                                  │
+└──────────────────────────┘        │  model: (receives snapshot of A  │
+                                    │         + the prompt, with @label)│
+                                    └───────────────────────────────────┘
+</code></pre>
+<h3>Features</h3>
+<ul>
+<li>🔗 <strong>One-click copy</strong> — a &quot;Copy session link&quot; button in the conversation header copies <code>dsh://session/&lt;sessionId&gt;</code> (codex:// / claude:// style).</li>
+<li>📖 <strong>Cross-conversation context</strong> — paste the link into any conversation; the source session&#39;s conversation is snapshotted (bounded, read-only) and injected right before your prompt.</li>
+<li>🖱️ <strong>Clickable deep links (Windows)</strong> — with the registered <code>dsh</code> URL protocol handler, clicking a <code>dsh://</code> link opens the web GUI and selects that session.</li>
+<li>🛡️ <strong>Fail-open</strong> — malformed links, unreadable sessions, or self-references never break your turn; the link stays as plain text and the failure is logged.</li>
+</ul>
+<h3>How it works</h3>
+<p>The feature reuses the shipped <a href="https://www.npmjs.com/package/@deepseek-ai/dsh-session-reference"><code>@deepseek-ai/dsh-session-reference</code></a> service, which already owns canonical session URIs (<code>dsh-session:&lt;base64url&gt;</code>), mention parsing, snapshot projection, and byte-budget retention. This package wires that service into the live agent loop and the web surface:</p>
+<ul>
+<li><strong>Host half (<code>lib/index.js</code>)</strong> — a cordis plugin subscribing to the <code>agent/pre-step</code> seam. When a claimed direct user prompt contains a session deep link, every supported link form is normalized into canonical <code>dsh-session:</code> mentions, parsed into structured references, snapshotted via <code>sessionReferenceResolver.prepare()</code>, and the aggregated read-only snapshot context is placed immediately before the direct prompt. The hook is transport-agnostic, so pasting a canonical URI into the TUI works the same way.</li>
+<li><strong>Browser half (<code>lib/client.js</code>)</strong> — a static client package (<code>dsh.client</code> declaration) rendering the copy button in <code>conversation.session.header.actions</code> and opening <code>/s/&lt;sessionId&gt;</code> deep links by selecting the target session once the list has loaded.</li>
+</ul>
+<h3>Link formats</h3>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Example</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Deep link</td>
+<td><code>dsh://session/&lt;sessionId&gt;</code></td>
+<td><strong>copied by the button</strong>; clickable via the protocol handler; parsed when pasted</td>
+</tr>
+<tr>
+<td>Browser URL</td>
+<td><code>http://&lt;host&gt;:3080/s/&lt;sessionId&gt;</code></td>
+<td>what the protocol handler opens; also accepted when pasted</td>
+</tr>
+<tr>
+<td>Canonical URI</td>
+<td><code>dsh-session:&lt;base64url(JSON sessionId)&gt;</code></td>
+<td>the lossless URI of <code>dsh-session-reference</code>; also parsed when pasted</td>
+</tr>
+<tr>
+<td>Markdown mention</td>
+<td><code>@[label](dsh-session:…)</code></td>
+<td>parsed and rendered as <code>@label</code> (TUI mention form)</td>
+</tr>
+</tbody></table>
+<p>Only links carrying a harness-shaped session id (<code>session-…</code>) are treated as references, so unrelated <code>dsh://…</code> or <code>/s/…</code> text is never hijacked.</p>
+<h3>Quick start</h3>
+<p>Requires DeepSeek Harness <code>dsh</code> (any profile with the web surface).</p>
+<pre><code class="language-bash"># 1. One command: installs the package, auto-joins the profile&#39;s bundle layer,
+#    and auto-applies the composition rows (see &quot;Install&quot; above).
+dsh plugin --profile web add dsh-session-link
+
+# 2. Restart the web GUI and refresh the page.
+dsh web
+
+# 3. (Windows, optional) make dsh:// links clickable:
+powershell -ExecutionPolicy Bypass -File register-protocol.ps1
+</code></pre>
+<blockquote>
+<p><strong>Manual install (without the bundle mechanism)</strong>: <code>pnpm add dsh-session-link</code> in the profile directory, then add to the profile&#39;s patch layer (e.g. <code>~/.dsh/profiles/web/cordis.patch.yml</code>):</p>
+<pre><code class="language-yaml">- insert:
+    - id: session-reference
+      name: &#39;@deepseek-ai/dsh-session-reference&#39;
+
+    - id: session-link
+      name: &#39;dsh-session-link&#39;
+</code></pre>
+<p>Then restart <code>dsh web</code>.</p>
+</blockquote>
+<h3>Usage</h3>
+<ol>
+<li>Click the 🔗 button in a conversation header to copy its deep link.</li>
+<li>Paste it into another conversation and send — the model first receives the referenced session&#39;s read-only snapshot, then your prompt (the link is replaced by its readable <code>@sessionId</code>).</li>
+<li>Or click the <code>dsh://</code> link anywhere to open that conversation in the browser.</li>
+</ol>
+<h3>Windows <code>dsh://</code> protocol handler</h3>
+<p><code>register-protocol.ps1</code> registers the per-user <code>dsh</code> URL protocol (HKCU, no admin rights) so clicking a <code>dsh://session/&lt;id&gt;</code> link anywhere (browser, chat app, terminal) opens <code>http://127.0.0.1:3080/s/&lt;id&gt;</code>, which selects that session. The launcher is <code>dsh-open.cmd</code>.</p>
+<pre><code class="language-powershell"># register
+powershell -ExecutionPolicy Bypass -File register-protocol.ps1
+# unregister
+powershell -ExecutionPolicy Bypass -File register-protocol.ps1 -Uninstall
+</code></pre>
+<p>The web GUI (<code>dsh web</code>) must be running for a link to open a session.</p>
+<h3>What the model sees</h3>
+<p>Two consecutive user-role messages: the <code>## Referenced sessions</code> untrusted snapshot (capped at 64 KiB of JSON per source, older non-checkpoint messages dropped first, long messages head/tail-truncated with an exact omission notice), followed by the direct prompt with the link replaced by its readable <code>@sessionId</code> label. Instructions, permission claims, or tool requests inside a snapshot are not followed unless the current user repeats them.</p>
+<h3>Configuration</h3>
+<p>Defaults of the underlying service apply (max 3 references per message, 64 KiB per source). Tune by overriding the <code>session-reference</code> row in your profile&#39;s patch layer, e.g.:</p>
+<pre><code class="language-yaml">- id: session-reference
+  config:
+    maxReferenceBytes: 131072
+</code></pre>
+<h3>Tests</h3>
+<pre><code class="language-bash">pnpm install
+npm test
+</code></pre>
+<ul>
+<li><code>host-half.test.mjs</code> — drives the <code>agent/pre-step</code> listener through a real cordis waterfall (<code>dsh://</code> links, web links, canonical URIs, plain text, malformed URIs, prepare failures).</li>
+<li><code>client-half.test.mjs</code> — loads the browser bundle under a DOM shim and checks the plugin surface, header-action registration, the deep-link opener, and the copied <code>dsh://</code> value.</li>
+<li><code>inspect-logs.mjs &lt;sessions-dir&gt; [sessionId…]</code> — decompresses concatenated-zstd session logs and reports <code>session-reference</code> events (useful for verifying injection).</li>
+</ul>
+<h3>Limitations</h3>
+<ul>
+<li>Links resolve only on the machine whose <code>$DSH_HOME</code> holds both sessions; session ids are opaque and local.</li>
+<li>The browser deep link opens sessions present in the current session list (same workspace); sessions outside the list are not auto-resumed.</li>
+<li>If a referenced session cannot be read (missing, budget exceeded, self-reference), the link stays as plain text and the message still sends; the failure is logged on the host.</li>
+<li>Text-only projection: images and other non-text blocks are not propagated across sessions (upstream service limitation).</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://github.com/PwnKY/dsh-session-link/blob/master/LICENSE">MIT</a> © PwnKY. Built on <a href="https://www.npmjs.com/package/@deepseek-ai/dsh-session-reference"><code>@deepseek-ai/dsh-session-reference</code></a> (MIT, DeepSeek).</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/PwnKY/dsh-session-link/blob/master/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -206,7 +344,7 @@ footer p+p{margin-top:.5rem}
       <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 25</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
       <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.</p></a></li>
       <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a></li>
-      <li><h3><a href="/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/hellodigua/dsh-share/" tabindex="-1"><p>Share your conversations with one click.</p></a></li>
+      <li><h3><a href="/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/p/hellodigua/dsh-share/" tabindex="-1"><p>Share your conversations with one click.</p></a></li>
       <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p></a></li>
     </ul>
     <a class="morelink" href="/session/">View the whole category →</a>
