@@ -104,6 +104,13 @@
     <summary>Auto-log failed tool calls across native tools, PTC run_code, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.</summary>
   </entry>
   <entry>
+    <title>dsh-eval-harness</title>
+    <id>https://github.com/BiBoyang/dsh-eval-harness</id>
+    <link href="https://github.com/BiBoyang/dsh-eval-harness"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Evaluation harness for DSH plugins: YAML cases drive real headless agent runs, assert on tool calls, args, results and token usage, with a baseline gate for CI regression.</summary>
+  </entry>
+  <entry>
     <title>dsh-tianshu-tui</title>
     <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
     <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/bill9109/dsh-drag-and-drop"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Cross-platform file drag-and-drop with raw path insertion, no file copying.</summary>
-  </entry>
-  <entry>
-    <title>dsh-deeplink</title>
-    <id>https://github.com/qyw233/dsh-deeplink</id>
-    <link href="https://github.com/qyw233/dsh-deeplink"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Deep links: open a specific session or workspace via `?session=` / `?workspace=`.</summary>
   </entry>
 </feed>

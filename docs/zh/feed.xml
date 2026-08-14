@@ -104,6 +104,13 @@
     <summary>全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。</summary>
   </entry>
   <entry>
+    <title>dsh-eval-harness</title>
+    <id>https://github.com/BiBoyang/dsh-eval-harness</id>
+    <link href="https://github.com/BiBoyang/dsh-eval-harness"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。</summary>
+  </entry>
+  <entry>
     <title>dsh-tianshu-tui</title>
     <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
     <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/bill9109/dsh-drag-and-drop"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>跨平台文件拖拽与原始路径插入，无需复制文件。</summary>
-  </entry>
-  <entry>
-    <title>dsh-deeplink</title>
-    <id>https://github.com/qyw233/dsh-deeplink</id>
-    <link href="https://github.com/qyw233/dsh-deeplink"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>`?session=` / `?workspace=` 深链直达指定项目对话。</summary>
   </entry>
 </feed>
