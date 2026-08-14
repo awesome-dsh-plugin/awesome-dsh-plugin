@@ -160,6 +160,13 @@
     <summary>DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.</summary>
   </entry>
   <entry>
+    <title>dsh-deepseek-billing</title>
+    <id>https://github.com/Jolly-J/dsh-deepseek-billing</id>
+    <link href="https://github.com/Jolly-J/dsh-deepseek-billing"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek account balance and per-session cost card in the sidebar foot.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
-  </entry>
-  <entry>
-    <title>Wine-Red/dsh-prompt-stash</title>
-    <id>https://github.com/Wine-Red/dsh-prompt-stash</id>
-    <link href="https://github.com/Wine-Red/dsh-prompt-stash"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.</summary>
   </entry>
 </feed>

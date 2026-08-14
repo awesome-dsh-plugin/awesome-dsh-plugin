@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 218,
+ "count": 219,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -608,6 +608,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:bobcat848/dsh-calculator",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-deepseek-billing",
+   "owner": "Jolly-J",
+   "url": "https://github.com/Jolly-J/dsh-deepseek-billing",
+   "category": "ui",
+   "description": {
+    "en": "DeepSeek account balance and per-session cost card in the sidebar foot.",
+    "zh": "侧边栏底部 DeepSeek 账户余额显示与会话费用估算卡片。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:Jolly-J/dsh-deepseek-billing",
    "added": "2026-08-14"
   },
   {

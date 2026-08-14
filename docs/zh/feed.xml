@@ -160,6 +160,13 @@
     <summary>右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。</summary>
   </entry>
   <entry>
+    <title>dsh-deepseek-billing</title>
+    <id>https://github.com/Jolly-J/dsh-deepseek-billing</id>
+    <link href="https://github.com/Jolly-J/dsh-deepseek-billing"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>侧边栏底部 DeepSeek 账户余额显示与会话费用估算卡片。</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</summary>
-  </entry>
-  <entry>
-    <title>Wine-Red/dsh-prompt-stash</title>
-    <id>https://github.com/Wine-Red/dsh-prompt-stash</id>
-    <link href="https://github.com/Wine-Red/dsh-prompt-stash"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。</summary>
   </entry>
 </feed>
