@@ -203,7 +203,7 @@ footer p+p{margin-top:.5rem}
 <li><strong>🌏 i18n</strong>: UI text follows DSH&#39;s language (zh / en) with live switching</li>
 </ul>
 <blockquote>
-<p>🔌 <strong>Our stance</strong>: build a plugin like a service, and use it like a user. The 7 built-in tabs + 6 viewers hold no special privileges — they register through the same <code>ctx.betterSidebar</code> API as third-party plugins; whatever the ecosystem can do better, we hand off. See the &quot;🔌 Service&quot; section below and the <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">external plugin guide</a>.</p>
+<p>🔌 <strong>Core principle</strong>: service-first — the 7 built-in tabs + 6 viewers register through the same <code>ctx.betterSidebar</code> API as third-party plugins, with fully equal capabilities; anything the ecosystem can provide better is delegated to ecosystem plugins. See the &quot;🔌 Service&quot; section below and the <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">external plugin guide</a>.</p>
 </blockquote>
 <h3>🆕 Recent Updates</h3>
 <p>v0.12.1</p>
@@ -377,7 +377,7 @@ dsh registry enable dsh-external/dsh-better-sidebar
 </tr>
 </tbody></table>
 <h3>🔌 Service: register tabs &amp; file viewers</h3>
-<p>Since v0.4.0 the plugin exposes the <code>ctx.betterSidebar</code> service — other plugins can register sidebar pages and file viewers (the 7 built-in tabs + 6 viewers go through the same service, eating our own dog food):</p>
+<p>Since v0.4.0 the plugin exposes the <code>ctx.betterSidebar</code> service — other plugins can register sidebar pages and file viewers (the 7 built-in tabs + 6 viewers register through the same service):</p>
 <pre><code class="language-ts">import type {} from &#39;dsh-better-sidebar&#39;  // triggers the ctx.betterSidebar type merge
 export const inject = [&#39;betterSidebar&#39;]
 export function apply(ctx: Context) {

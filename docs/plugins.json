@@ -107,7 +107,7 @@
     "zh": "插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。"
    },
    "npm": null,
-   "stars": 6,
+   "stars": 7,
    "install": "dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub",
    "added": "2026-08-14"
   },
@@ -2687,7 +2687,7 @@
     "zh": "装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。"
    },
    "npm": "dshmarket",
-   "stars": 36,
+   "stars": 37,
    "install": "dsh plugin --profile web add dshmarket",
    "added": "2026-08-14"
   },
@@ -3032,7 +3032,7 @@
     "zh": "Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。"
    },
    "npm": null,
-   "stars": 87,
+   "stars": 88,
    "install": "dsh plugin --profile web add github:Lum1104/dsh-browser",
    "added": "2026-08-14"
   },
