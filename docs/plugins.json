@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 165,
+ "count": 174,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -405,6 +405,30 @@
     "zh": "Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。"
    },
    "install": "dsh plugin --profile web add github:KinGao294/dsh-skin",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-ui",
+   "owner": "zhu1090093659",
+   "url": "https://github.com/zhu1090093659/dsh-web-ui",
+   "category": "ui",
+   "description": {
+    "en": "Plugin and skin collection for the DSH Web UI: task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.",
+    "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
+   },
+   "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-deep-whale",
+   "owner": "Small-tailqwq",
+   "url": "https://github.com/Small-tailqwq/dsh-deep-whale",
+   "category": "ui",
+   "description": {
+    "en": "Whale-girl skin series for the DSH Web UI (maid-atelier).",
+    "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。"
+   },
+   "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale",
    "added": "2026-08-14"
   },
   {
@@ -1152,6 +1176,42 @@
    "added": "2026-08-14"
   },
   {
+   "name": "modsearch",
+   "owner": "liustack",
+   "url": "https://github.com/liustack/modsearch",
+   "category": "tools",
+   "description": {
+    "en": "Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).",
+    "zh": "纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。"
+   },
+   "install": "dsh plugin --profile web add github:liustack/modsearch",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "argo",
+   "owner": "taxueseek",
+   "url": "https://github.com/taxueseek/argo",
+   "category": "tools",
+   "description": {
+    "en": "Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.",
+    "zh": "专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。"
+   },
+   "install": "dsh plugin --profile web add github:taxueseek/argo",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-browser",
+   "owner": "Lum1104",
+   "url": "https://github.com/Lum1104/dsh-browser",
+   "category": "tools",
+   "description": {
+    "en": "Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.",
+    "zh": "Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。"
+   },
+   "install": "dsh plugin --profile web add github:Lum1104/dsh-browser",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh_workflow",
    "owner": "icetomoyo",
    "url": "https://github.com/icetomoyo/dsh_workflow",
@@ -1329,6 +1389,18 @@
     "zh": "工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审（grill-requirements 技能 + 工具策略门）。"
    },
    "install": "dsh plugin --profile web add github:PerryLink/dsh-doublecheck",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "mstar-harness",
+   "owner": "btspoony",
+   "url": "https://github.com/btspoony/mstar-harness",
+   "category": "workflow",
+   "description": {
+    "en": "Skill-driven harness/loop engineering workflow agent plugin.",
+    "zh": "技能驱动的 harness/loop 工程化工作流插件。"
+   },
+   "install": "dsh plugin --profile web add github:btspoony/mstar-harness",
    "added": "2026-08-14"
   },
   {
@@ -1881,6 +1953,42 @@
     "zh": "复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。"
    },
    "install": "dsh plugin --profile web add github:suntianc/dsh-codex-auth",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "forkprobe",
+   "owner": "Jayden-X-L",
+   "url": "https://github.com/Jayden-X-L/forkprobe",
+   "category": "dev",
+   "description": {
+    "en": "Compare multiple skills on the same task and pick the winner.",
+    "zh": "同一任务并行试跑多个技能，对比结果选出最优。"
+   },
+   "install": "dsh plugin --profile web add github:Jayden-X-L/forkprobe",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "plugin-registry",
+   "owner": "vlln",
+   "url": "https://github.com/vlln/plugin-registry",
+   "category": "dev",
+   "description": {
+    "en": "Ecosystem infrastructure: a thin browser console for managing official repository plugins (zero patches) plus a make-dsh-plugin skill for guided plugin development.",
+    "zh": "插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。"
+   },
+   "install": "dsh plugin --profile web add github:vlln/plugin-registry",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-multica-runtime",
+   "owner": "forrestchang",
+   "url": "https://github.com/forrestchang/dsh-multica-runtime",
+   "category": "dev",
+   "description": {
+    "en": "Run the dsh runtime on Multica.",
+    "zh": "让 dsh 运行时跑在 Multica 上。"
+   },
+   "install": "dsh plugin --profile web add github:forrestchang/dsh-multica-runtime",
    "added": "2026-08-14"
   },
   {

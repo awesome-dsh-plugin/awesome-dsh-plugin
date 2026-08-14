@@ -76,6 +76,20 @@
     <summary>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</summary>
   </entry>
   <entry>
+    <title>dsh-web-ui</title>
+    <id>https://github.com/zhu1090093659/dsh-web-ui</id>
+    <link href="https://github.com/zhu1090093659/dsh-web-ui"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Plugin and skin collection for the DSH Web UI: task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</summary>
+  </entry>
+  <entry>
+    <title>dsh-deep-whale</title>
+    <id>https://github.com/Small-tailqwq/dsh-deep-whale</id>
+    <link href="https://github.com/Small-tailqwq/dsh-deep-whale"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Whale-girl skin series for the DSH Web UI (maid-atelier).</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -200,19 +214,5 @@
     <link href="https://github.com/lynx-gt/dsh-subagent-tools"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Per-call model, provider, persona, and toolFilter overrides for subagent delegation, with @preset: references and provider/model composite ids.</summary>
-  </entry>
-  <entry>
-    <title>dsh-subagent-cwd</title>
-    <id>https://github.com/lynx-gt/dsh-subagent-cwd</id>
-    <link href="https://github.com/lynx-gt/dsh-subagent-cwd"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Extends dsh-subagent-tools with a per-call cwd for subagents, shipped with the two in-process provider patches it requires.</summary>
-  </entry>
-  <entry>
-    <title>dsh-voice</title>
-    <id>https://github.com/Jesse-njx/dsh-voice</id>
-    <link href="https://github.com/Jesse-njx/dsh-voice"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under ~/.dsh/voice.</summary>
   </entry>
 </feed>

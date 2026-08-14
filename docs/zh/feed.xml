@@ -76,6 +76,20 @@
     <summary>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</summary>
   </entry>
   <entry>
+    <title>dsh-web-ui</title>
+    <id>https://github.com/zhu1090093659/dsh-web-ui</id>
+    <link href="https://github.com/zhu1090093659/dsh-web-ui"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</summary>
+  </entry>
+  <entry>
+    <title>dsh-deep-whale</title>
+    <id>https://github.com/Small-tailqwq/dsh-deep-whale</id>
+    <link href="https://github.com/Small-tailqwq/dsh-deep-whale"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -200,19 +214,5 @@
     <link href="https://github.com/lynx-gt/dsh-subagent-tools"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。</summary>
-  </entry>
-  <entry>
-    <title>dsh-subagent-cwd</title>
-    <id>https://github.com/lynx-gt/dsh-subagent-cwd</id>
-    <link href="https://github.com/lynx-gt/dsh-subagent-cwd"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。</summary>
-  </entry>
-  <entry>
-    <title>dsh-voice</title>
-    <id>https://github.com/Jesse-njx/dsh-voice</id>
-    <link href="https://github.com/Jesse-njx/dsh-voice"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。</summary>
   </entry>
 </feed>
