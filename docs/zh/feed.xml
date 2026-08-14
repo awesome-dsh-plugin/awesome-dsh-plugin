@@ -20,6 +20,13 @@
     <summary>右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。</summary>
   </entry>
   <entry>
+    <title>Nanki-nn/dsh-answer-pet</title>
+    <id>https://github.com/Nanki-nn/dsh-answer-pet</id>
+    <link href="https://github.com/Nanki-nn/dsh-answer-pet"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>蓝鲸桌面宠物：按会话实时展示回答进度、模型动作与工具调用轨迹、token、输出速率与耗时，并支持多会话状态卡片展开和收起。</summary>
+  </entry>
+  <entry>
     <title>l541402398/dsh-file-uploads</title>
     <id>https://github.com/l541402398/dsh-file-uploads</id>
     <link href="https://github.com/l541402398/dsh-file-uploads"/>
@@ -195,24 +202,17 @@
     <summary>对话栏左侧常驻大纲：按轮次列出提问与最后回复，支持关键词过滤与一键跳转。</summary>
   </entry>
   <entry>
+    <title>LaoYueHanNi/dsh-token-usage</title>
+    <id>https://github.com/LaoYueHanNi/dsh-token-usage</id>
+    <link href="https://github.com/LaoYueHanNi/dsh-token-usage"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>按请求持久化模型 token 用量，Web 设置「Token 用量」统计页：按日趋势图、按模型明细表、日期/模型筛选。</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</summary>
-  </entry>
-  <entry>
-    <title>Small-tailqwq/dsh-deep-whale</title>
-    <id>https://github.com/Small-tailqwq/dsh-deep-whale</id>
-    <link href="https://github.com/Small-tailqwq/dsh-deep-whale"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</summary>
-  </entry>
-  <entry>
-    <title>wsxwj123/dsh-plugins#theme-gallery</title>
-    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery</id>
-    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>15 个精选主题家族，浅深配色完整，跟随 DSH 原生浅色/深色/跟随系统模式。</summary>
   </entry>
 </feed>

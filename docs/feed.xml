@@ -20,6 +20,13 @@
     <summary>Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.</summary>
   </entry>
   <entry>
+    <title>Nanki-nn/dsh-answer-pet</title>
+    <id>https://github.com/Nanki-nn/dsh-answer-pet</id>
+    <link href="https://github.com/Nanki-nn/dsh-answer-pet"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.</summary>
+  </entry>
+  <entry>
     <title>l541402398/dsh-file-uploads</title>
     <id>https://github.com/l541402398/dsh-file-uploads</id>
     <link href="https://github.com/l541402398/dsh-file-uploads"/>
@@ -195,24 +202,17 @@
     <summary>Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.</summary>
   </entry>
   <entry>
+    <title>LaoYueHanNi/dsh-token-usage</title>
+    <id>https://github.com/LaoYueHanNi/dsh-token-usage</id>
+    <link href="https://github.com/LaoYueHanNi/dsh-token-usage"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</summary>
-  </entry>
-  <entry>
-    <title>Small-tailqwq/dsh-deep-whale</title>
-    <id>https://github.com/Small-tailqwq/dsh-deep-whale</id>
-    <link href="https://github.com/Small-tailqwq/dsh-deep-whale"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Whale-girl skin series for the DSH Web UI (maid-atelier).</summary>
-  </entry>
-  <entry>
-    <title>wsxwj123/dsh-plugins#theme-gallery</title>
-    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery</id>
-    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</summary>
   </entry>
 </feed>

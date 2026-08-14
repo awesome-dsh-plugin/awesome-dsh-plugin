@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 235,
+ "count": 237,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -232,6 +232,20 @@
    "stars": 7,
    "install": "dsh plugin --profile web add github:vlln/dsh-task-status",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-answer-pet",
+   "owner": "Nanki-nn",
+   "url": "https://github.com/Nanki-nn/dsh-answer-pet",
+   "category": "ui",
+   "description": {
+    "en": "Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.",
+    "zh": "蓝鲸桌面宠物：按会话实时展示回答进度、模型动作与工具调用轨迹、token、输出速率与耗时，并支持多会话状态卡片展开和收起。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Nanki-nn/dsh-answer-pet",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-web-archive",
@@ -721,6 +735,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:liliuCourier/dsh-chat-outline",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-token-usage",
+   "owner": "LaoYueHanNi",
+   "url": "https://github.com/LaoYueHanNi/dsh-token-usage",
+   "category": "ui",
+   "description": {
+    "en": "Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.",
+    "zh": "按请求持久化模型 token 用量，Web 设置「Token 用量」统计页：按日趋势图、按模型明细表、日期/模型筛选。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage",
    "added": "2026-08-14"
   },
   {
