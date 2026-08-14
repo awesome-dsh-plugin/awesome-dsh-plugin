@@ -238,7 +238,10 @@ const registry = {
     // field points back at the listed repo.
     const npm = npmMap[e.url]?.npm ?? null
     return {
-      name: e.name,
+      // READMEs render "owner/name" for human disambiguation; machine
+      // consumers (find-plugin, dsh-market) match on the bare plugin name,
+      // with `owner` as its own field.
+      name: e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name,
       owner: e.owner,
       url: e.url,
       category: e.cat,

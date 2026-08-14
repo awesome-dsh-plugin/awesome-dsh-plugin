@@ -12,7 +12,11 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 
 > 💡 新来的话，先装 `dsh-find-plugin`——之后想要什么插件，直接问 agent 就行：`dsh plugin --profile web add dsh-find-plugin`
 
+<<<<<<< HEAD
 **218** 个插件 · 欢迎 [PR](#贡献)
+=======
+**217** 个插件 · 欢迎 [PR](#贡献)
+>>>>>>> b2f2172 (registry: bare plugin name in plugins.json; owner/name stays a README display concern)
 
 ## 目录
 

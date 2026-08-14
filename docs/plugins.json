@@ -52,7 +52,7 @@
  },
  "plugins": [
   {
-   "name": "huiliyi37/dsh-tianshu-tui",
+   "name": "dsh-tianshu-tui",
    "owner": "huiliyi37",
    "url": "https://github.com/huiliyi37/dsh-tianshu-tui",
    "category": "ui",
@@ -65,7 +65,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "openma-ai/deepseek-harness-tui",
+   "name": "deepseek-harness-tui",
    "owner": "openma-ai",
    "url": "https://github.com/openma-ai/deepseek-harness-tui",
    "category": "ui",
@@ -78,7 +78,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/dsh-at-file",
+   "name": "dsh-at-file",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-at-file",
    "category": "ui",
@@ -91,7 +91,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "alingalingling/ui-status-label",
+   "name": "ui-status-label",
    "owner": "alingalingling",
    "url": "https://github.com/alingalingling/ui-status-label",
    "category": "ui",
@@ -104,7 +104,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "ZSeven-W/dsh-openpencil",
+   "name": "dsh-openpencil",
    "owner": "ZSeven-W",
    "url": "https://github.com/ZSeven-W/dsh-openpencil",
    "category": "ui",
@@ -117,7 +117,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Nagi-ovo/dsh-visualize",
+   "name": "dsh-visualize",
    "owner": "Nagi-ovo",
    "url": "https://github.com/Nagi-ovo/dsh-visualize",
    "category": "ui",
@@ -130,7 +130,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "ccq1/dsh-side-panel",
+   "name": "dsh-side-panel",
    "owner": "ccq1",
    "url": "https://github.com/ccq1/dsh-side-panel",
    "category": "ui",
@@ -143,7 +143,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "dingyi222666/dsh-focus-chat",
+   "name": "dsh-focus-chat",
    "owner": "dingyi222666",
    "url": "https://github.com/dingyi222666/dsh-focus-chat",
    "category": "ui",
@@ -156,7 +156,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-genui",
+   "name": "dsh-genui",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-genui",
    "category": "ui",
@@ -169,7 +169,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-annotation",
+   "name": "dsh-annotation",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-annotation",
    "category": "ui",
@@ -182,7 +182,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "vlln/dsh-navbar",
+   "name": "dsh-navbar",
    "owner": "vlln",
    "url": "https://github.com/vlln/dsh-navbar",
    "category": "ui",
@@ -195,7 +195,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "vlln/dsh-task-status",
+   "name": "dsh-task-status",
    "owner": "vlln",
    "url": "https://github.com/vlln/dsh-task-status",
    "category": "ui",
@@ -208,7 +208,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "renat3u/dsh-web-archive",
+   "name": "dsh-web-archive",
    "owner": "renat3u",
    "url": "https://github.com/renat3u/dsh-web-archive",
    "category": "ui",
@@ -221,7 +221,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "0xsline/dsh-spotlight",
+   "name": "dsh-spotlight",
    "owner": "0xsline",
    "url": "https://github.com/0xsline/dsh-spotlight",
    "category": "ui",
@@ -234,7 +234,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "bill9109/dsh-101",
+   "name": "dsh-101",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-101",
    "category": "ui",
@@ -247,7 +247,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "bill9109/dsh-drag-and-drop",
+   "name": "dsh-drag-and-drop",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-drag-and-drop",
    "category": "ui",
@@ -260,7 +260,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "l541402398/dsh-file-uploads",
+   "name": "dsh-file-uploads",
    "owner": "l541402398",
    "url": "https://github.com/l541402398/dsh-file-uploads",
    "category": "ui",
@@ -273,7 +273,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "qyw233/dsh-deeplink",
+   "name": "dsh-deeplink",
    "owner": "qyw233",
    "url": "https://github.com/qyw233/dsh-deeplink",
    "category": "ui",
@@ -286,7 +286,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "lehhair/dsh-diff-viewer",
+   "name": "dsh-diff-viewer",
    "owner": "lehhair",
    "url": "https://github.com/lehhair/dsh-diff-viewer",
    "category": "ui",
@@ -299,7 +299,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/ex-setting",
+   "name": "ex-setting",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/ex-setting",
    "category": "ui",
@@ -312,7 +312,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/web-components",
+   "name": "web-components",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/web-components",
    "category": "ui",
@@ -325,7 +325,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "vibeinging/dsh-turn-navigator",
+   "name": "dsh-turn-navigator",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-turn-navigator",
    "category": "ui",
@@ -338,7 +338,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "SnowCrescenter-tech/dsh-milestone",
+   "name": "dsh-milestone",
    "owner": "SnowCrescenter-tech",
    "url": "https://github.com/SnowCrescenter-tech/dsh-milestone",
    "category": "ui",
@@ -351,7 +351,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Ghost011118/dsh-balance-meter",
+   "name": "dsh-balance-meter",
    "owner": "Ghost011118",
    "url": "https://github.com/Ghost011118/dsh-balance-meter",
    "category": "ui",
@@ -364,7 +364,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "v587d/dsh-opencode-go-usage",
+   "name": "dsh-opencode-go-usage",
    "owner": "v587d",
    "url": "https://github.com/v587d/dsh-opencode-go-usage",
    "category": "ui",
@@ -377,7 +377,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Han-1413141/dsh-cost-meter",
+   "name": "dsh-cost-meter",
    "owner": "Han-1413141",
    "url": "https://github.com/Han-1413141/dsh-cost-meter",
    "category": "ui",
@@ -390,7 +390,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "fishxcode/dsh-plugin-deepseek-balance",
+   "name": "dsh-plugin-deepseek-balance",
    "owner": "fishxcode",
    "url": "https://github.com/fishxcode/dsh-plugin-deepseek-balance",
    "category": "ui",
@@ -403,7 +403,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Sev7een/ds-api-usage",
+   "name": "ds-api-usage",
    "owner": "Sev7een",
    "url": "https://github.com/Sev7een/ds-api-usage",
    "category": "ui",
@@ -416,7 +416,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "nonewind/dsh-spend",
+   "name": "dsh-spend",
    "owner": "nonewind",
    "url": "https://github.com/nonewind/dsh-spend",
    "category": "ui",
@@ -429,7 +429,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "ccch1mneyyy/dsh-TUI",
+   "name": "dsh-TUI",
    "owner": "ccch1mneyyy",
    "url": "https://github.com/ccch1mneyyy/dsh-TUI",
    "category": "ui",
@@ -442,7 +442,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/DSH-better-sidebar",
+   "name": "DSH-better-sidebar",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/DSH-better-sidebar",
    "category": "ui",
@@ -455,7 +455,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Han-1413141/dsh-sticky-disclosure",
+   "name": "dsh-sticky-disclosure",
    "owner": "Han-1413141",
    "url": "https://github.com/Han-1413141/dsh-sticky-disclosure",
    "category": "ui",
@@ -468,7 +468,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Meredith2328/dsh-sticky-note",
+   "name": "dsh-sticky-note",
    "owner": "Meredith2328",
    "url": "https://github.com/Meredith2328/dsh-sticky-note",
    "category": "ui",
@@ -481,7 +481,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Luaphes/dsh-web-attention-badge",
+   "name": "dsh-web-attention-badge",
    "owner": "Luaphes",
    "url": "https://github.com/Luaphes/dsh-web-attention-badge",
    "category": "ui",
@@ -494,7 +494,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zhu1090093659/dsh-web-ui",
+   "name": "dsh-web-ui",
    "owner": "zhu1090093659",
    "url": "https://github.com/zhu1090093659/dsh-web-ui",
    "category": "ui",
@@ -507,7 +507,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zealot00/dsh-pet",
+   "name": "dsh-pet",
    "owner": "zealot00",
    "url": "https://github.com/zealot00/dsh-pet",
    "category": "ui",
@@ -520,7 +520,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Starfie1d1272/dsh-builtin-toggles",
+   "name": "dsh-builtin-toggles",
    "owner": "Starfie1d1272",
    "url": "https://github.com/Starfie1d1272/dsh-builtin-toggles",
    "category": "ui",
@@ -533,7 +533,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "jiangnanquan/dsh-ux",
+   "name": "dsh-ux",
    "owner": "jiangnanquan",
    "url": "https://github.com/jiangnanquan/dsh-ux",
    "category": "ui",
@@ -546,7 +546,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "a903067276-rgb/dsh-hud",
+   "name": "dsh-hud",
    "owner": "a903067276-rgb",
    "url": "https://github.com/a903067276-rgb/dsh-hud",
    "category": "ui",
@@ -559,7 +559,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "wsxwj123/dsh-plugins#turn-scrubber",
+   "name": "dsh-plugins#turn-scrubber",
    "owner": "wsxwj123",
    "url": "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber",
    "category": "ui",
@@ -572,7 +572,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Sttrevens/dsh-cost-meter",
+   "name": "dsh-cost-meter",
    "owner": "Sttrevens",
    "url": "https://github.com/Sttrevens/dsh-cost-meter",
    "category": "ui",
@@ -585,7 +585,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "a903067276-rgb/dsh-file-mentions",
+   "name": "dsh-file-mentions",
    "owner": "a903067276-rgb",
    "url": "https://github.com/a903067276-rgb/dsh-file-mentions",
    "category": "ui",
@@ -598,7 +598,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "bobcat848/dsh-calculator",
+   "name": "dsh-calculator",
    "owner": "bobcat848",
    "url": "https://github.com/bobcat848/dsh-calculator",
    "category": "ui",
@@ -611,7 +611,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "KinGao294/dsh-skin",
+   "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
    "category": "theme",
@@ -624,7 +624,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Small-tailqwq/dsh-deep-whale",
+   "name": "dsh-deep-whale",
    "owner": "Small-tailqwq",
    "url": "https://github.com/Small-tailqwq/dsh-deep-whale",
    "category": "theme",
@@ -637,7 +637,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "wsxwj123/dsh-plugins#theme-gallery",
+   "name": "dsh-plugins#theme-gallery",
    "owner": "wsxwj123",
    "url": "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery",
    "category": "theme",
@@ -650,7 +650,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Anionex/dsh-turn-rewind",
+   "name": "dsh-turn-rewind",
    "owner": "Anionex",
    "url": "https://github.com/Anionex/dsh-turn-rewind",
    "category": "session",
@@ -663,7 +663,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Jesse-njx/dsh-crosstalk",
+   "name": "dsh-crosstalk",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-crosstalk",
    "category": "session",
@@ -676,7 +676,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "hellodigua/dsh-share",
+   "name": "dsh-share",
    "owner": "hellodigua",
    "url": "https://github.com/hellodigua/dsh-share",
    "category": "session",
@@ -689,7 +689,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Moeblack/dsh-message-edit",
+   "name": "dsh-message-edit",
    "owner": "Moeblack",
    "url": "https://github.com/Moeblack/dsh-message-edit",
    "category": "session",
@@ -702,7 +702,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Buyi-wsgzg/dsh-sidechain",
+   "name": "dsh-sidechain",
    "owner": "Buyi-wsgzg",
    "url": "https://github.com/Buyi-wsgzg/dsh-sidechain",
    "category": "session",
@@ -715,7 +715,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "bill9109/dsh-conversation-share",
+   "name": "dsh-conversation-share",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-conversation-share",
    "category": "session",
@@ -728,7 +728,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "yuezengwu/dsh-explain",
+   "name": "dsh-explain",
    "owner": "yuezengwu",
    "url": "https://github.com/yuezengwu/dsh-explain",
    "category": "session",
@@ -741,7 +741,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Moeblack/dsh-prompt-studio",
+   "name": "dsh-prompt-studio",
    "owner": "Moeblack",
    "url": "https://github.com/Moeblack/dsh-prompt-studio",
    "category": "session",
@@ -754,7 +754,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "czm15053/dsh-peer-link",
+   "name": "dsh-peer-link",
    "owner": "czm15053",
    "url": "https://github.com/czm15053/dsh-peer-link",
    "category": "session",
@@ -767,7 +767,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Nwflower/dsh-chat-import",
+   "name": "dsh-chat-import",
    "owner": "Nwflower",
    "url": "https://github.com/Nwflower/dsh-chat-import",
    "category": "session",
@@ -780,7 +780,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Nwflower/dsh-file-claim",
+   "name": "dsh-file-claim",
    "owner": "Nwflower",
    "url": "https://github.com/Nwflower/dsh-file-claim",
    "category": "session",
@@ -793,7 +793,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Chinesezjc/dsh-interconnect",
+   "name": "dsh-interconnect",
    "owner": "Chinesezjc",
    "url": "https://github.com/Chinesezjc/dsh-interconnect",
    "category": "session",
@@ -806,7 +806,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Wine-Red/dsh-prompt-stash",
+   "name": "dsh-prompt-stash",
    "owner": "Wine-Red",
    "url": "https://github.com/Wine-Red/dsh-prompt-stash",
    "category": "session",
@@ -819,7 +819,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "LoserFox/distill",
+   "name": "distill",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/distill",
    "category": "memory",
@@ -832,7 +832,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-mnemon",
+   "name": "dsh-mnemon",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-mnemon",
    "category": "memory",
@@ -845,7 +845,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "modusensus/dsh-mneme",
+   "name": "dsh-mneme",
    "owner": "modusensus",
    "url": "https://github.com/modusensus/dsh-mneme",
    "category": "memory",
@@ -858,7 +858,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "nowledge-co/nowledge-mem-deepseek-harness",
+   "name": "nowledge-mem-deepseek-harness",
    "owner": "nowledge-co",
    "url": "https://github.com/nowledge-co/nowledge-mem-deepseek-harness",
    "category": "memory",
@@ -871,7 +871,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jesse-njx/dsh-memory",
+   "name": "dsh-memory",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-memory",
    "category": "memory",
@@ -884,7 +884,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "flymysql/dsh-memory",
+   "name": "dsh-memory",
    "owner": "flymysql",
    "url": "https://github.com/flymysql/dsh-memory",
    "category": "memory",
@@ -897,7 +897,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Xplore-LAB/dsh-plugin-asmemory",
+   "name": "dsh-plugin-asmemory",
    "owner": "Xplore-LAB",
    "url": "https://github.com/Xplore-LAB/dsh-plugin-asmemory",
    "category": "memory",
@@ -910,7 +910,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "PerryLink/dsh-memento",
+   "name": "dsh-memento",
    "owner": "PerryLink",
    "url": "https://github.com/PerryLink/dsh-memento",
    "category": "memory",
@@ -923,7 +923,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "ICCuse/dsh-file-memory",
+   "name": "dsh-file-memory",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-file-memory",
    "category": "memory",
@@ -936,7 +936,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "ICCuse/dsh-knowledge",
+   "name": "dsh-knowledge",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-knowledge",
    "category": "memory",
@@ -949,7 +949,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "ICCuse/dsh-premise-guard",
+   "name": "dsh-premise-guard",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-premise-guard",
    "category": "memory",
@@ -962,7 +962,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "lire1131/dsh-undo-plugin",
+   "name": "dsh-undo-plugin",
    "owner": "lire1131",
    "url": "https://github.com/lire1131/dsh-undo-plugin",
    "category": "tools",
@@ -975,7 +975,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "MAXeaglet/dsh-bash-terminal",
+   "name": "dsh-bash-terminal",
    "owner": "MAXeaglet",
    "url": "https://github.com/MAXeaglet/dsh-bash-terminal",
    "category": "tools",
@@ -988,7 +988,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Anionex/dsh-vision-toolkit",
+   "name": "dsh-vision-toolkit",
    "owner": "Anionex",
    "url": "https://github.com/Anionex/dsh-vision-toolkit",
    "category": "tools",
@@ -1001,7 +1001,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-custom-tool",
+   "name": "dsh-custom-tool",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-custom-tool",
    "category": "tools",
@@ -1014,7 +1014,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Anionex/dsh-computer-use",
+   "name": "dsh-computer-use",
    "owner": "Anionex",
    "url": "https://github.com/Anionex/dsh-computer-use",
    "category": "tools",
@@ -1027,7 +1027,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "kunjinkao-os/dsh-mobile-gui-agent",
+   "name": "dsh-mobile-gui-agent",
    "owner": "kunjinkao-os",
    "url": "https://github.com/kunjinkao-os/dsh-mobile-gui-agent",
    "category": "tools",
@@ -1040,7 +1040,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/dsh-data-agent",
+   "name": "dsh-data-agent",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-data-agent",
    "category": "tools",
@@ -1053,7 +1053,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-toolkit",
+   "name": "dsh-toolkit",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-toolkit",
    "category": "tools",
@@ -1066,7 +1066,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-csv",
+   "name": "dsh-tool-csv",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-csv",
    "category": "tools",
@@ -1079,7 +1079,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-calculator",
+   "name": "dsh-tool-calculator",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-calculator",
    "category": "tools",
@@ -1092,7 +1092,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-diff",
+   "name": "dsh-tool-diff",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-diff",
    "category": "tools",
@@ -1105,7 +1105,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-encoding",
+   "name": "dsh-tool-encoding",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-encoding",
    "category": "tools",
@@ -1118,7 +1118,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-json",
+   "name": "dsh-tool-json",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-json",
    "category": "tools",
@@ -1131,7 +1131,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-markdown",
+   "name": "dsh-tool-markdown",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-markdown",
    "category": "tools",
@@ -1144,7 +1144,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-regex",
+   "name": "dsh-tool-regex",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-regex",
    "category": "tools",
@@ -1157,7 +1157,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-schema",
+   "name": "dsh-tool-schema",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-schema",
    "category": "tools",
@@ -1170,7 +1170,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-stat",
+   "name": "dsh-tool-stat",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-stat",
    "category": "tools",
@@ -1183,7 +1183,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-tool-time",
+   "name": "dsh-tool-time",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-tool-time",
    "category": "tools",
@@ -1196,7 +1196,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-kb-sieve",
+   "name": "dsh-kb-sieve",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-kb-sieve",
    "category": "tools",
@@ -1209,7 +1209,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "HuanLinOTO/dsh-plugin-mineru",
+   "name": "dsh-plugin-mineru",
    "owner": "HuanLinOTO",
    "url": "https://github.com/HuanLinOTO/dsh-plugin-mineru",
    "category": "tools",
@@ -1222,7 +1222,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Jesse-njx/dsh-cowork",
+   "name": "dsh-cowork",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-cowork",
    "category": "tools",
@@ -1235,7 +1235,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jesse-njx/dsh-skillport",
+   "name": "dsh-skillport",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-skillport",
    "category": "tools",
@@ -1248,7 +1248,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "sakikoTGW/pack-agent",
+   "name": "pack-agent",
    "owner": "sakikoTGW",
    "url": "https://github.com/sakikoTGW/pack-agent",
    "category": "tools",
@@ -1261,7 +1261,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "vibeinging/dsh-tool-search",
+   "name": "dsh-tool-search",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-tool-search",
    "category": "tools",
@@ -1274,7 +1274,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "THU-MAIC/dsh-openmaic",
+   "name": "dsh-openmaic",
    "owner": "THU-MAIC",
    "url": "https://github.com/THU-MAIC/dsh-openmaic",
    "category": "tools",
@@ -1287,7 +1287,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "lzszq/dsh-scholar",
+   "name": "dsh-scholar",
    "owner": "lzszq",
    "url": "https://github.com/lzszq/dsh-scholar",
    "category": "tools",
@@ -1300,7 +1300,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "ylwl1997/noatmark-dsh-plugin",
+   "name": "noatmark-dsh-plugin",
    "owner": "ylwl1997",
    "url": "https://github.com/ylwl1997/noatmark-dsh-plugin",
    "category": "tools",
@@ -1313,7 +1313,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "jihongboo/dsh-apple-mode",
+   "name": "dsh-apple-mode",
    "owner": "jihongboo",
    "url": "https://github.com/jihongboo/dsh-apple-mode",
    "category": "tools",
@@ -1326,7 +1326,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "ZK-Andy/dsh-continual-evolve",
+   "name": "dsh-continual-evolve",
    "owner": "ZK-Andy",
    "url": "https://github.com/ZK-Andy/dsh-continual-evolve",
    "category": "tools",
@@ -1339,7 +1339,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zp-home/dsh-recommend",
+   "name": "dsh-recommend",
    "owner": "zp-home",
    "url": "https://github.com/zp-home/dsh-recommend",
    "category": "tools",
@@ -1352,7 +1352,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "liustack/modlens",
+   "name": "modlens",
    "owner": "liustack",
    "url": "https://github.com/liustack/modlens",
    "category": "tools",
@@ -1365,7 +1365,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dsh-market/dsh-market",
+   "name": "dsh-market",
    "owner": "dsh-market",
    "url": "https://github.com/dsh-market/dsh-market",
    "category": "tools",
@@ -1378,7 +1378,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "awesome-dsh-plugin/dsh-find-plugin",
+   "name": "dsh-find-plugin",
    "owner": "awesome-dsh-plugin",
    "url": "https://github.com/awesome-dsh-plugin/dsh-find-plugin",
    "category": "tools",
@@ -1391,7 +1391,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "lonelymoon87/dsh-code-intel",
+   "name": "dsh-code-intel",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-code-intel",
    "category": "tools",
@@ -1404,7 +1404,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "lynx-gt/dsh-subagent-tools",
+   "name": "dsh-subagent-tools",
    "owner": "lynx-gt",
    "url": "https://github.com/lynx-gt/dsh-subagent-tools",
    "category": "tools",
@@ -1417,7 +1417,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "lynx-gt/dsh-subagent-cwd",
+   "name": "dsh-subagent-cwd",
    "owner": "lynx-gt",
    "url": "https://github.com/lynx-gt/dsh-subagent-cwd",
    "category": "tools",
@@ -1430,7 +1430,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jesse-njx/dsh-voice",
+   "name": "dsh-voice",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-voice",
    "category": "tools",
@@ -1443,7 +1443,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jesse-njx/dsh-docker",
+   "name": "dsh-docker",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-docker",
    "category": "tools",
@@ -1456,7 +1456,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "hccccc01333/dsh-excel-chat",
+   "name": "dsh-excel-chat",
    "owner": "hccccc01333",
    "url": "https://github.com/hccccc01333/dsh-excel-chat",
    "category": "tools",
@@ -1469,7 +1469,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "EvilIrving/dsh-context-proxy",
+   "name": "dsh-context-proxy",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-context-proxy",
    "category": "tools",
@@ -1482,7 +1482,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zhaoolee/notes",
+   "name": "notes",
    "owner": "zhaoolee",
    "url": "https://github.com/zhaoolee/notes",
    "category": "tools",
@@ -1495,7 +1495,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zimai233/dsh-figma-to-lottie",
+   "name": "dsh-figma-to-lottie",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-figma-to-lottie",
    "category": "tools",
@@ -1508,7 +1508,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zimai233/dsh-exam-countdown",
+   "name": "dsh-exam-countdown",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-exam-countdown",
    "category": "tools",
@@ -1521,7 +1521,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zimai233/dsh-wash-calendar",
+   "name": "dsh-wash-calendar",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-wash-calendar",
    "category": "tools",
@@ -1534,7 +1534,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zimai233/dsh-adhd-copilot",
+   "name": "dsh-adhd-copilot",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-adhd-copilot",
    "category": "tools",
@@ -1547,7 +1547,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zimai233/dsh-image-search",
+   "name": "dsh-image-search",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-image-search",
    "category": "tools",
@@ -1560,7 +1560,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "zimai233/dsh-video-downloader",
+   "name": "dsh-video-downloader",
    "owner": "zimai233",
    "url": "https://github.com/zimai233/dsh-video-downloader",
    "category": "tools",
@@ -1573,7 +1573,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Luke-Yong/dsh-plugin-knowledge-graph",
+   "name": "dsh-plugin-knowledge-graph",
    "owner": "Luke-Yong",
    "url": "https://github.com/Luke-Yong/dsh-plugin-knowledge-graph",
    "category": "tools",
@@ -1586,7 +1586,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "liustack/modsearch",
+   "name": "modsearch",
    "owner": "liustack",
    "url": "https://github.com/liustack/modsearch",
    "category": "tools",
@@ -1599,7 +1599,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "taxueseek/argo",
+   "name": "argo",
    "owner": "taxueseek",
    "url": "https://github.com/taxueseek/argo",
    "category": "tools",
@@ -1612,7 +1612,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "TonyDua/dsh-web-search-exa",
+   "name": "dsh-web-search-exa",
    "owner": "TonyDua",
    "url": "https://github.com/TonyDua/dsh-web-search-exa",
    "category": "tools",
@@ -1625,7 +1625,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Lum1104/dsh-browser",
+   "name": "dsh-browser",
    "owner": "Lum1104",
    "url": "https://github.com/Lum1104/dsh-browser",
    "category": "tools",
@@ -1638,7 +1638,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Sanqi-normal/dsh-webui-market-plugin",
+   "name": "dsh-webui-market-plugin",
    "owner": "Sanqi-normal",
    "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
    "category": "tools",
@@ -1651,7 +1651,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "huey1in/trio",
+   "name": "trio",
    "owner": "huey1in",
    "url": "https://github.com/huey1in/trio",
    "category": "tools",
@@ -1664,7 +1664,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "SamXiaBing/dsh-adb",
+   "name": "dsh-adb",
    "owner": "SamXiaBing",
    "url": "https://github.com/SamXiaBing/dsh-adb",
    "category": "tools",
@@ -1677,7 +1677,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "xiaoyuyu6420/dsh-backup",
+   "name": "dsh-backup",
    "owner": "xiaoyuyu6420",
    "url": "https://github.com/xiaoyuyu6420/dsh-backup",
    "category": "tools",
@@ -1690,7 +1690,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "creght-dev/skills",
+   "name": "skills",
    "owner": "creght-dev",
    "url": "https://github.com/creght-dev/skills",
    "category": "skill",
@@ -1703,7 +1703,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "icetomoyo/dsh_workflow",
+   "name": "dsh_workflow",
    "owner": "icetomoyo",
    "url": "https://github.com/icetomoyo/dsh_workflow",
    "category": "workflow",
@@ -1716,7 +1716,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "NanmiCoder/dsh-agent-teams",
+   "name": "dsh-agent-teams",
    "owner": "NanmiCoder",
    "url": "https://github.com/NanmiCoder/dsh-agent-teams",
    "category": "workflow",
@@ -1729,7 +1729,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "titanwings/dsh-automation",
+   "name": "dsh-automation",
    "owner": "titanwings",
    "url": "https://github.com/titanwings/dsh-automation",
    "category": "workflow",
@@ -1742,7 +1742,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Sev7een/dsh-plugin-automations",
+   "name": "dsh-plugin-automations",
    "owner": "Sev7een",
    "url": "https://github.com/Sev7een/dsh-plugin-automations",
    "category": "workflow",
@@ -1755,7 +1755,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jesse-njx/dsh-routines",
+   "name": "dsh-routines",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-routines",
    "category": "workflow",
@@ -1768,7 +1768,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "titanwings/dsh-plannotator",
+   "name": "dsh-plannotator",
    "owner": "titanwings",
    "url": "https://github.com/titanwings/dsh-plannotator",
    "category": "workflow",
@@ -1781,7 +1781,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "vlln/dsh-loop",
+   "name": "dsh-loop",
    "owner": "vlln",
    "url": "https://github.com/vlln/dsh-loop",
    "category": "workflow",
@@ -1794,7 +1794,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "fuhefei/dsh-sentinel",
+   "name": "dsh-sentinel",
    "owner": "fuhefei",
    "url": "https://github.com/fuhefei/dsh-sentinel",
    "category": "workflow",
@@ -1807,7 +1807,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-deep-research",
+   "name": "dsh-deep-research",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-deep-research",
    "category": "workflow",
@@ -1820,7 +1820,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-inspect",
+   "name": "dsh-inspect",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-inspect",
    "category": "workflow",
@@ -1833,7 +1833,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "fakechris/dsh-track",
+   "name": "dsh-track",
    "owner": "fakechris",
    "url": "https://github.com/fakechris/dsh-track",
    "category": "workflow",
@@ -1846,7 +1846,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "btspoony/dsh-advisor",
+   "name": "dsh-advisor",
    "owner": "btspoony",
    "url": "https://github.com/btspoony/dsh-advisor",
    "category": "workflow",
@@ -1859,7 +1859,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "lonelymoon87/dsh-specflow",
+   "name": "dsh-specflow",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-specflow",
    "category": "workflow",
@@ -1872,7 +1872,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "biociao/dsh-science",
+   "name": "dsh-science",
    "owner": "biociao",
    "url": "https://github.com/biociao/dsh-science",
    "category": "workflow",
@@ -1885,7 +1885,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "EvilIrving/dsh-proof",
+   "name": "dsh-proof",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-proof",
    "category": "workflow",
@@ -1898,7 +1898,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "PerryLink/dsh-doublecheck",
+   "name": "dsh-doublecheck",
    "owner": "PerryLink",
    "url": "https://github.com/PerryLink/dsh-doublecheck",
    "category": "workflow",
@@ -1911,7 +1911,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "btspoony/mstar-harness",
+   "name": "mstar-harness",
    "owner": "btspoony",
    "url": "https://github.com/btspoony/mstar-harness",
    "category": "workflow",
@@ -1924,7 +1924,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Letter2025/dsh-approval-llm",
+   "name": "dsh-approval-llm",
    "owner": "Letter2025",
    "url": "https://github.com/Letter2025/dsh-approval-llm",
    "category": "workflow",
@@ -1937,7 +1937,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/dsh-open-in-vscode",
+   "name": "dsh-open-in-vscode",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-open-in-vscode",
    "category": "notify",
@@ -1950,7 +1950,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-notification",
+   "name": "dsh-notification",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-notification",
    "category": "notify",
@@ -1963,7 +1963,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "bobleer/dsh-acp-for-bitfun",
+   "name": "dsh-acp-for-bitfun",
    "owner": "bobleer",
    "url": "https://github.com/bobleer/dsh-acp-for-bitfun",
    "category": "notify",
@@ -1976,7 +1976,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "openma-ai/deepseek-harness-acp",
+   "name": "deepseek-harness-acp",
    "owner": "openma-ai",
    "url": "https://github.com/openma-ai/deepseek-harness-acp",
    "category": "notify",
@@ -1989,7 +1989,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "LoserFox/telegram",
+   "name": "telegram",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/telegram",
    "category": "notify",
@@ -2002,7 +2002,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Jesse-njx/dsh-chatnode-wechat",
+   "name": "dsh-chatnode-wechat",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-chatnode-wechat",
    "category": "notify",
@@ -2015,7 +2015,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dingyi222666/dsh-session-notification",
+   "name": "dsh-session-notification",
    "owner": "dingyi222666",
    "url": "https://github.com/dingyi222666/dsh-session-notification",
    "category": "notify",
@@ -2028,7 +2028,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "bill9109/dsh-web-ui-notify",
+   "name": "dsh-web-ui-notify",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-web-ui-notify",
    "category": "notify",
@@ -2041,7 +2041,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "bill9109/dsh-webbridge",
+   "name": "dsh-webbridge",
    "owner": "bill9109",
    "url": "https://github.com/bill9109/dsh-webbridge",
    "category": "notify",
@@ -2054,7 +2054,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "BiBoyang/dsh-im-bridge",
+   "name": "dsh-im-bridge",
    "owner": "BiBoyang",
    "url": "https://github.com/BiBoyang/dsh-im-bridge",
    "category": "notify",
@@ -2067,7 +2067,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "imetn/dsh-lark-bridge",
+   "name": "dsh-lark-bridge",
    "owner": "imetn",
    "url": "https://github.com/imetn/dsh-lark-bridge",
    "category": "notify",
@@ -2080,7 +2080,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dylan121322/llm-adaptive",
+   "name": "llm-adaptive",
    "owner": "dylan121322",
    "url": "https://github.com/dylan121322/llm-adaptive",
    "category": "model",
@@ -2093,7 +2093,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "btspoony/dsh-llm-fallbacks",
+   "name": "dsh-llm-fallbacks",
    "owner": "btspoony",
    "url": "https://github.com/btspoony/dsh-llm-fallbacks",
    "category": "model",
@@ -2106,7 +2106,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "franksong2702/dsh-codex-connect",
+   "name": "dsh-codex-connect",
    "owner": "franksong2702",
    "url": "https://github.com/franksong2702/dsh-codex-connect",
    "category": "model",
@@ -2119,7 +2119,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "kam74515-boop/dsh-everything-oauth",
+   "name": "dsh-everything-oauth",
    "owner": "kam74515-boop",
    "url": "https://github.com/kam74515-boop/dsh-everything-oauth",
    "category": "model",
@@ -2132,7 +2132,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/Qwen-MM-Plugins",
+   "name": "Qwen-MM-Plugins",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/Qwen-MM-Plugins",
    "category": "model",
@@ -2145,7 +2145,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "suntianc/dsh-codex-auth",
+   "name": "dsh-codex-auth",
    "owner": "suntianc",
    "url": "https://github.com/suntianc/dsh-codex-auth",
    "category": "model",
@@ -2158,7 +2158,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/fabric",
+   "name": "fabric",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/fabric",
    "category": "dev",
@@ -2171,7 +2171,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "LoserFox/dsh-git-identity",
+   "name": "dsh-git-identity",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/dsh-git-identity",
    "category": "dev",
@@ -2184,7 +2184,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Zhenyu98/dsh-context-doctor",
+   "name": "dsh-context-doctor",
    "owner": "Zhenyu98",
    "url": "https://github.com/Zhenyu98/dsh-context-doctor",
    "category": "dev",
@@ -2197,7 +2197,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "ICCuse/dsh-pain-point-check",
+   "name": "dsh-pain-point-check",
    "owner": "ICCuse",
    "url": "https://github.com/ICCuse/dsh-pain-point-check",
    "category": "dev",
@@ -2210,7 +2210,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/dsh-plugin-check",
+   "name": "dsh-plugin-check",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-plugin-check",
    "category": "dev",
@@ -2223,7 +2223,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-security-audit",
+   "name": "dsh-security-audit",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-security-audit",
    "category": "dev",
@@ -2236,7 +2236,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-session-health",
+   "name": "dsh-session-health",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-session-health",
    "category": "dev",
@@ -2249,7 +2249,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "william-jin-cmu/dsh-evolve",
+   "name": "dsh-evolve",
    "owner": "william-jin-cmu",
    "url": "https://github.com/william-jin-cmu/dsh-evolve",
    "category": "dev",
@@ -2262,7 +2262,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "vibeinging/dsh-trace",
+   "name": "dsh-trace",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-trace",
    "category": "dev",
@@ -2275,7 +2275,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "030611/dsh-telemetry-redactor",
+   "name": "dsh-telemetry-redactor",
    "owner": "030611",
    "url": "https://github.com/030611/dsh-telemetry-redactor",
    "category": "dev",
@@ -2288,7 +2288,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "030611/dsh-verification-receipt",
+   "name": "dsh-verification-receipt",
    "owner": "030611",
    "url": "https://github.com/030611/dsh-verification-receipt",
    "category": "dev",
@@ -2301,7 +2301,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/sandbox-micro",
+   "name": "sandbox-micro",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/sandbox-micro",
    "category": "dev",
@@ -2314,7 +2314,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/sandbox-mxc",
+   "name": "sandbox-mxc",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/sandbox-mxc",
    "category": "dev",
@@ -2327,7 +2327,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/sandbox-nono",
+   "name": "sandbox-nono",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/sandbox-nono",
    "category": "dev",
@@ -2340,7 +2340,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "vibeinging/dsh-agent-budget",
+   "name": "dsh-agent-budget",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-agent-budget",
    "category": "dev",
@@ -2353,7 +2353,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Jesse-njx/dsh-polyglot",
+   "name": "dsh-polyglot",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-polyglot",
    "category": "dev",
@@ -2366,7 +2366,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "ilharp/dsh-tool-approval",
+   "name": "dsh-tool-approval",
    "owner": "ilharp",
    "url": "https://github.com/ilharp/dsh-tool-approval",
    "category": "dev",
@@ -2379,7 +2379,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "arrow949/dsh-turn-approval",
+   "name": "dsh-turn-approval",
    "owner": "arrow949",
    "url": "https://github.com/arrow949/dsh-turn-approval",
    "category": "dev",
@@ -2392,7 +2392,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "omdsh-dev/plugin-template",
+   "name": "plugin-template",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/plugin-template",
    "category": "dev",
@@ -2405,7 +2405,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Small-tailqwq/dsh-tps",
+   "name": "dsh-tps",
    "owner": "Small-tailqwq",
    "url": "https://github.com/Small-tailqwq/dsh-tps",
    "category": "dev",
@@ -2418,7 +2418,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Areium/dsh-fail-logger",
+   "name": "dsh-fail-logger",
    "owner": "Areium",
    "url": "https://github.com/Areium/dsh-fail-logger",
    "category": "dev",
@@ -2431,7 +2431,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "BiBoyang/dsh-eval-harness",
+   "name": "dsh-eval-harness",
    "owner": "BiBoyang",
    "url": "https://github.com/BiBoyang/dsh-eval-harness",
    "category": "dev",
@@ -2444,7 +2444,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "hust-open-atom-club/oh-dsh",
+   "name": "oh-dsh",
    "owner": "hust-open-atom-club",
    "url": "https://github.com/hust-open-atom-club/oh-dsh",
    "category": "dev",
@@ -2457,7 +2457,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "BrambleXu/dsh-annotate",
+   "name": "dsh-annotate",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-annotate",
    "category": "dev",
@@ -2470,7 +2470,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "BrambleXu/dsh-prompt-profile",
+   "name": "dsh-prompt-profile",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-prompt-profile",
    "category": "dev",
@@ -2483,7 +2483,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "BrambleXu/dsh-revdiff",
+   "name": "dsh-revdiff",
    "owner": "BrambleXu",
    "url": "https://github.com/BrambleXu/dsh-revdiff",
    "category": "dev",
@@ -2496,7 +2496,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "lonelymoon87/dsh-gitflow",
+   "name": "dsh-gitflow",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-gitflow",
    "category": "dev",
@@ -2509,7 +2509,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "lonelymoon87/dsh-guardian",
+   "name": "dsh-guardian",
    "owner": "lonelymoon87",
    "url": "https://github.com/lonelymoon87/dsh-guardian",
    "category": "dev",
@@ -2522,7 +2522,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jesse-njx/dsh-plugin-manager",
+   "name": "dsh-plugin-manager",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-plugin-manager",
    "category": "dev",
@@ -2535,7 +2535,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jesse-njx/dsh-tmuxctl",
+   "name": "dsh-tmuxctl",
    "owner": "Jesse-njx",
    "url": "https://github.com/Jesse-njx/dsh-tmuxctl",
    "category": "dev",
@@ -2548,7 +2548,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "xingyingyuzhui/dsh-updater-ui",
+   "name": "dsh-updater-ui",
    "owner": "xingyingyuzhui",
    "url": "https://github.com/xingyingyuzhui/dsh-updater-ui",
    "category": "dev",
@@ -2561,7 +2561,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "EvilIrving/dsh-repro",
+   "name": "dsh-repro",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-repro",
    "category": "dev",
@@ -2574,7 +2574,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "PerryLink/dsh-mcp-panel",
+   "name": "dsh-mcp-panel",
    "owner": "PerryLink",
    "url": "https://github.com/PerryLink/dsh-mcp-panel",
    "category": "dev",
@@ -2587,7 +2587,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Jayden-X-L/forkprobe",
+   "name": "forkprobe",
    "owner": "Jayden-X-L",
    "url": "https://github.com/Jayden-X-L/forkprobe",
    "category": "dev",
@@ -2600,7 +2600,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "vlln/plugin-registry",
+   "name": "plugin-registry",
    "owner": "vlln",
    "url": "https://github.com/vlln/plugin-registry",
    "category": "dev",
@@ -2613,7 +2613,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "forrestchang/dsh-multica-runtime",
+   "name": "dsh-multica-runtime",
    "owner": "forrestchang",
    "url": "https://github.com/forrestchang/dsh-multica-runtime",
    "category": "dev",
@@ -2626,7 +2626,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "DietCokewithSugar/dsh-user-experience",
+   "name": "dsh-user-experience",
    "owner": "DietCokewithSugar",
    "url": "https://github.com/DietCokewithSugar/dsh-user-experience",
    "category": "dev",
@@ -2639,7 +2639,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "yflmq001/dsh-cost-tracker",
+   "name": "dsh-cost-tracker",
    "owner": "yflmq001",
    "url": "https://github.com/yflmq001/dsh-cost-tracker",
    "category": "dev",
@@ -2652,7 +2652,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "slywalker2006/dsh-passwords",
+   "name": "dsh-passwords",
    "owner": "slywalker2006",
    "url": "https://github.com/slywalker2006/dsh-passwords",
    "category": "dev",
@@ -2665,7 +2665,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Yuuz12/dsh-webui-auth",
+   "name": "dsh-webui-auth",
    "owner": "Yuuz12",
    "url": "https://github.com/Yuuz12/dsh-webui-auth",
    "category": "dev",
@@ -2678,7 +2678,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "Nagi-ovo/dsh-ads",
+   "name": "dsh-ads",
    "owner": "Nagi-ovo",
    "url": "https://github.com/Nagi-ovo/dsh-ads",
    "category": "fun",
@@ -2691,7 +2691,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-gomoku",
+   "name": "dsh-gomoku",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-gomoku",
    "category": "fun",
@@ -2704,7 +2704,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "AnacondaKC/dsh-stock-market",
+   "name": "dsh-stock-market",
    "owner": "AnacondaKC",
    "url": "https://github.com/AnacondaKC/dsh-stock-market",
    "category": "fun",
@@ -2717,7 +2717,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "hellodigua/dsh-emoji",
+   "name": "dsh-emoji",
    "owner": "hellodigua",
    "url": "https://github.com/hellodigua/dsh-emoji",
    "category": "fun",
@@ -2730,7 +2730,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "lhh010/dsh-minigames",
+   "name": "dsh-minigames",
    "owner": "lhh010",
    "url": "https://github.com/lhh010/dsh-minigames",
    "category": "fun",
@@ -2743,7 +2743,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "william-jin-cmu/dsh-stickers",
+   "name": "dsh-stickers",
    "owner": "william-jin-cmu",
    "url": "https://github.com/william-jin-cmu/dsh-stickers",
    "category": "fun",
@@ -2756,7 +2756,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "vlln/whale-girl",
+   "name": "whale-girl",
    "owner": "vlln",
    "url": "https://github.com/vlln/whale-girl",
    "category": "fun",
@@ -2769,7 +2769,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "Moeblack/deepseek-manners",
+   "name": "deepseek-manners",
    "owner": "Moeblack",
    "url": "https://github.com/Moeblack/deepseek-manners",
    "category": "fun",
@@ -2782,7 +2782,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "HuanLinOTO/dsh-plugin-d399",
+   "name": "dsh-plugin-d399",
    "owner": "HuanLinOTO",
    "url": "https://github.com/HuanLinOTO/dsh-plugin-d399",
    "category": "fun",
@@ -2795,7 +2795,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "omdsh-dev/dsh-auto-chess",
+   "name": "dsh-auto-chess",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-auto-chess",
    "category": "fun",
@@ -2808,7 +2808,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "AnacondaKC/dsh-douyin",
+   "name": "dsh-douyin",
    "owner": "AnacondaKC",
    "url": "https://github.com/AnacondaKC/dsh-douyin",
    "category": "fun",
@@ -2821,7 +2821,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "minybear/DeepSeek-Harness-Pet",
+   "name": "DeepSeek-Harness-Pet",
    "owner": "minybear",
    "url": "https://github.com/minybear/DeepSeek-Harness-Pet",
    "category": "fun",
@@ -2834,7 +2834,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "anweat/dsh-web-search-pro",
+   "name": "dsh-web-search-pro",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-web-search-pro",
    "category": "fun",
@@ -2847,7 +2847,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "anweat/dsh-browser",
+   "name": "dsh-browser",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-browser",
    "category": "fun",
@@ -2860,7 +2860,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "anweat/dsh-voice-webspeech",
+   "name": "dsh-voice-webspeech",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-voice-webspeech",
    "category": "fun",
@@ -2873,7 +2873,7 @@
    "added": "2026-08-14"
   },
   {
-   "name": "anweat/dsh-restart",
+   "name": "dsh-restart",
    "owner": "anweat",
    "url": "https://github.com/anweat/dsh-restart",
    "category": "fun",

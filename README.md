@@ -12,7 +12,11 @@ This list collects community plugins that are installable via `dsh plugin add` (
 
 > 💡 New here? Install `dsh-find-plugin` first — then just ask your agent to find plugins for you: `dsh plugin --profile web add dsh-find-plugin`
 
+<<<<<<< HEAD
 **218** plugins · [PRs welcome](#contributing)
+=======
+**217** plugins · [PRs welcome](#contributing)
+>>>>>>> b2f2172 (registry: bare plugin name in plugins.json; owner/name stays a README display concern)
 
 ## Contents
 
