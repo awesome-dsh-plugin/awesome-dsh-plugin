@@ -58,6 +58,7 @@ const N = ordered.length
 // added-date ledger: existing URLs keep their date, new URLs are stamped today
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
+const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
 const today0 = new Date().toISOString().slice(0, 10)
 for (const e of ordered) if (!dates[e.url]) dates[e.url] = today0
 fs.writeFileSync(DATES_FILE, JSON.stringify(Object.fromEntries(Object.entries(dates).sort()), null, 1))
@@ -247,6 +248,7 @@ const registry = {
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm,
+      stars: starsMap[e.url]?.stars ?? null,
       install: `dsh plugin --profile web add ${npm ?? `github:${e.url.replace('https://github.com/', '')}`}`,
       added: e.added,
     }
