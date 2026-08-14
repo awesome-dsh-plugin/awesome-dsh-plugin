@@ -27,6 +27,13 @@
     <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
   </entry>
   <entry>
+    <title>dsh-opencode-go-usage</title>
+    <id>https://github.com/v587d/dsh-opencode-go-usage</id>
+    <link href="https://github.com/v587d/dsh-opencode-go-usage"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。</summary>
+  </entry>
+  <entry>
     <title>dsh-cost-meter</title>
     <id>https://github.com/Han-1413141/dsh-cost-meter</id>
     <link href="https://github.com/Han-1413141/dsh-cost-meter"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/PerryLink/dsh-memento"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</summary>
-  </entry>
-  <entry>
-    <title>dsh-file-memory</title>
-    <id>https://github.com/ICCuse/dsh-file-memory</id>
-    <link href="https://github.com/ICCuse/dsh-file-memory"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。</summary>
   </entry>
 </feed>

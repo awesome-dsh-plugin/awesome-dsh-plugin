@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 194,
+ "count": 195,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -333,6 +333,18 @@
     "zh": "输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。"
    },
    "install": "dsh plugin --profile web add github:Ghost011118/dsh-balance-meter",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-opencode-go-usage",
+   "owner": "v587d",
+   "url": "https://github.com/v587d/dsh-opencode-go-usage",
+   "category": "ui",
+   "description": {
+    "en": "OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.",
+    "zh": "在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。"
+   },
+   "install": "dsh plugin --profile web add github:v587d/dsh-opencode-go-usage",
    "added": "2026-08-14"
   },
   {
