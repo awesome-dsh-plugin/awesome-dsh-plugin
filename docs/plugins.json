@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 184,
+ "count": 187,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1752,6 +1752,42 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-file-memory",
+   "owner": "ICCuse",
+   "url": "https://github.com/ICCuse/dsh-file-memory",
+   "category": "dev",
+   "description": {
+    "en": "File-backed working memory: memorize/recall key premises verbatim in a session notes file so they survive context compaction losslessly.",
+    "zh": "文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。"
+   },
+   "install": "dsh plugin --profile web add github:ICCuse/dsh-file-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-knowledge",
+   "owner": "ICCuse",
+   "url": "https://github.com/ICCuse/dsh-knowledge",
+   "category": "dev",
+   "description": {
+    "en": "Bridge into a global Markdown knowledge base shared with the Codex kb.cmd CLI: kb_add/kb_search/kb_show/kb_timeline tools with byte-compatible frontmatter.",
+    "zh": "全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\\knowledge（格式逐字节兼容）。"
+   },
+   "install": "dsh plugin --profile web add github:ICCuse/dsh-knowledge",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-premise-guard",
+   "owner": "ICCuse",
+   "url": "https://github.com/ICCuse/dsh-premise-guard",
+   "category": "dev",
+   "description": {
+    "en": "Post-compaction premise-drift guard: injects a one-shot notice when a compaction summary drops a critical literal anchor.",
+    "zh": "压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。"
+   },
+   "install": "dsh plugin --profile web add github:ICCuse/dsh-premise-guard",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-plugin-check",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-plugin-check",
@@ -2117,8 +2153,8 @@
    "url": "https://github.com/DietCokewithSugar/dsh-user-experience",
    "category": "dev",
    "description": {
-    "en": "Persona-driven UX review of React/TypeScript source: nine static rules for microcopy, state coverage, and dark mode, with per-finding confirm/reject cards.",
-    "zh": "以目标用户画像为前置输入的 React/TypeScript 源码 UX 走查：微文案/状态覆盖/深色模式 9 条规则，逐条定位并可确认/否决。"
+    "en": "Finds potential UX issues in your project: automatically reviews React/TypeScript code, pinpoints each problem, and gives concrete suggestions.",
+    "zh": "帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。"
    },
    "install": "dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience",
    "added": "2026-08-14"
