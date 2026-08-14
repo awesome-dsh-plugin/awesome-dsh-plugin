@@ -189,198 +189,183 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>中文 | <a href="https://github.com/zhu1090093659/dsh-web-ui/blob/main/README.en.md">English</a></p>
+<p><a href="https://github.com/zhu1090093659/dsh-web-ui/blob/main/README.md">中文</a> | English</p>
 <p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/dsh-web-ui-banner.png" alt="dsh-web-ui"></p>
-<p>dsh-web-ui 是 DeepSeek Harness（DSH）Web UI 的插件与皮肤集合：任务看板、Git 图谱、右侧面板、移动端远程、远程连接、图像理解工具、鲸鱼娘宠物、实时令牌统计，以及皮肤中心。所有插件既可独立安装，也可通过聚合包一次装齐。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/13-hero-main.png" alt="DSH Web UI 主界面"></p>
-<h3>功能插件</h3>
-<h4>任务看板</h4>
-<p>在侧边栏点击「任务看板」进入。任务按五列状态组织：待规划、待办、进行中、已完成、已失败。点击卡片上的「执行」，任务将由真实的 DSH 智能体会话执行，完成后状态自动回写；需要复盘时，可直接跳转到执行会话查看完整过程。</p>
-<p>任务支持定时执行：在详情中配置 cron 表达式（如每天 23:00 自动升级 DSH、每周一 09:00 生成周报），到点自动开工，无需人工值守。</p>
+<p>dsh-web-ui is a collection of plugins and skins for the DeepSeek Harness (DSH) Web UI: a task board, a Git graph, the right panel, mobile remote control, remote connection, a whale-girl pet, live token statistics, and the Skin Center. Every plugin can be installed individually, or all at once through the aggregate packages.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/13-hero-main.png" alt="DSH Web UI main screen"></p>
+<h3>Feature Plugins</h3>
+<h4>Task Board</h4>
+<p>Open it from the sidebar. Tasks are organized into five columns: Planned, To-do, In Progress, Done, and Failed. Clicking &quot;Run&quot; on a card hands the task to a real DSH agent session; when it finishes, the card status updates automatically. To review what happened, jump directly into the execution session for the full transcript.</p>
+<p>Tasks also support scheduled execution: configure a cron expression in the detail view (e.g. auto-upgrade DSH at 23:00 daily, generate a weekly report at 09:00 every Monday), and the task runs on its own at the scheduled time.</p>
 <table>
 <thead>
 <tr>
-<th>多列看板</th>
-<th>定时执行</th>
+<th>Multi-column board</th>
+<th>Scheduled execution</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/09-task-board.png" alt="任务看板"></td>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/10-task-board-detail-cron.png" alt="任务定时执行"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/09-task-board.png" alt="Task board"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/10-task-board-detail-cron.png" alt="Scheduled task detail"></td>
 </tr>
 </tbody></table>
-<h4>Git 图谱</h4>
-<p>输入框上方的分支选择器，支持切换分支与查看提交历史；Git 图谱将分支泳道与提交历史可视化，仓库再大也能顺着时间线快速定位变更。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/04-git-graph.png" alt="Git 图谱"></p>
-<h4>右侧面板</h4>
-<p>项目会话打开时，聊天区右侧出现「预览」与「文件/变更」两块面板：</p>
+<h4>Git Graph</h4>
+<p>The branch picker above the input box handles branch switching and commit history browsing; the Git graph visualizes branch lanes and commit history, making it easy to trace changes along the timeline even in large repositories.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/04-git-graph.png" alt="Git graph"></p>
+<h4>Right Panel</h4>
+<p>When a project session is open, two panels appear to the right of the chat area — &quot;Preview&quot; and &quot;Files/Changes&quot;:</p>
 <ul>
-<li><strong>文件树</strong>：浏览工作目录，点击文件即在预览面板打开，整行点击展开文件夹，支持按文件名搜索定位；</li>
-<li><strong>预览</strong>：多标签预览 markdown、HTML、代码、diff、CSV、PDF、Office、图片与文本等格式，支持源码 / 预览切换、分屏编辑与保存；</li>
-<li><strong>变更（SCM）</strong>：真实 git 变更面板，支持 stage / unstage / discard；</li>
-<li>面板宽度可拖拽调整，双击把手复位默认宽度，折叠状态与宽度按项目持久化；</li>
-<li>9 款皮肤全部适配右侧面板，换肤后面板随之融入主题。</li>
+<li><strong>File tree</strong>: browse the working directory; click a file to open it in the preview panel, click a folder row to expand it, and search for files by name;</li>
+<li><strong>Preview</strong>: multi-tab preview for markdown, HTML, code, diff, CSV, PDF, Office, images and plain text, with source/preview switching, split-screen editing and saving;</li>
+<li><strong>Changes (SCM)</strong>: a real git changes panel with stage / unstage / discard;</li>
+<li>Panel widths are draggable (double-click a handle to reset), and the collapsed state plus widths persist per project;</li>
+<li>All nine skins adapt the right panel — switching skins restyles the panels to match the theme.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/19-right-panel.png" alt="右侧面板"></p>
-<h4>鲸鱼娘宠物</h4>
-<p>一只常驻界面的鲸鱼娘宠物，会跟随智能体的状态切换动画：思考、等待、工作、庆祝。点击可互动（摸头），投喂小鱼干可提升亲密度，陪伴度从幼鲸一路成长至「深海羁绊」。支持自定义名称、自由拖动位置，也可随时隐藏。</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/19-right-panel.png" alt="Right panel"></p>
+<h4>Whale-Girl Pet</h4>
+<p>A whale girl who lives at the edge of the interface and switches animations with the agent&#39;s state: thinking, waiting, working, celebrating. Click her to interact (pet her head), feed her dried fish to raise affinity, and grow her from a baby whale to &quot;deep-sea bond&quot;. She can be renamed, dragged to any position, or hidden whenever you want.</p>
 <table>
 <thead>
 <tr>
-<th>陪伴工作</th>
-<th>互动面板</th>
+<th>Working companion</th>
+<th>Interaction panel</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/11-pet-new-chat.png" alt="鲸鱼娘宠物"></td>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/12-pet-panel.png" alt="宠物互动面板"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/11-pet-new-chat.png" alt="Whale pet"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/12-pet-panel.png" alt="Pet interaction panel"></td>
 </tr>
 </tbody></table>
-<h4>实时令牌统计</h4>
-<p>在输入框下方实时显示生成速度（TPS）、LLM 耗时、上下文占用、缓存命中率以及输入 / 输出 token 数，每次生成的用量一目了然。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/18-live-stats.png" alt="实时令牌统计"></p>
-<h4>移动端远程</h4>
-<p>侧边栏底部的手机图标打开配对面板：扫码配对（或复制链接）后，手机进入独立的移动端界面，远程控制当前 dsh web 工作区——查看与新建会话、收发消息、切换模型与思考强度、调整权限预设，全部与桌面端同步。配对令牌一次性且限时，「停止」可随时吊销所有设备；二维码默认走局域网，也可开启 cloudflared 公网隧道，让手机在任意网络配对。</p>
-<blockquote>
-<p><strong>实时消息与隧道</strong>：移动端依赖 SSE（Server-Sent Events）实时接收消息。Cloudflare quick tunnel（trycloudflare.com）与 Tailscale Serve 不透传 SSE，普通 HTTP 正常、实时推送不可达；此场景下插件自动降级为轮询，可正常收发消息，仅新消息可能延迟数秒到达。需要即时推送请使用支持 SSE 的隧道（Cloudflare named tunnel、自定义 TCP 端口转发等）。</p>
-</blockquote>
+<h4>Live Token Stats</h4>
+<p>Real-time usage shown directly below the input box: generation speed (TPS), LLM time, context usage, cache hit rate, and input / output token counts — the cost of every generation stays visible at a glance.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/18-live-stats.png" alt="Live token stats"></p>
+<h4>Mobile Remote Control</h4>
+<p>The phone icon at the bottom of the sidebar opens the pairing panel: scan the QR code (or copy the link) to pair, and the phone lands on a standalone mobile surface that remote-controls the current dsh web workspace — browse and create sessions, send and receive messages, switch models and reasoning effort, and adjust the permission preset, all in sync with the desktop. Pairing tokens are one-time and time-limited; &quot;Stop&quot; revokes every paired device at any time. The QR defaults to the LAN, or turn on the cloudflared public tunnel so the phone can pair from any network.</p>
 <table>
 <thead>
 <tr>
-<th>工作区列表</th>
-<th>会话列表与新建会话</th>
+<th>Workspaces</th>
+<th>Sessions &amp; new session</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/20-mobile-workspaces.png" alt="移动端工作区"></td>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/21-mobile-sessions.png" alt="移动端会话列表"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/20-mobile-workspaces.png" alt="Mobile workspaces"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/21-mobile-sessions.png" alt="Mobile sessions"></td>
 </tr>
 <tr>
-<td>聊天（折叠的深度思考与工具调用）</td>
-<td>模型与思考强度选择</td>
+<td>Chat (folded reasoning &amp; tool calls)</td>
+<td>Model &amp; reasoning-effort picker</td>
 </tr>
 <tr>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/22-mobile-chat.png" alt="移动端聊天"></td>
-<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/23-mobile-model-sheet.png" alt="模型选择"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/22-mobile-chat.png" alt="Mobile chat"></td>
+<td><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/23-mobile-model-sheet.png" alt="Model picker"></td>
 </tr>
 </tbody></table>
-<h4>远程连接</h4>
-<p>侧边栏「SSH」入口打开远程运维面板。主机支持密钥 / 密码认证，可从 <code>~/.ssh/config</code> 一键导入；配置统一存于 <code>~/.dsh/dsh-ssh.json</code>。对已配置主机可执行真实操作：</p>
+<h4>Remote Connection</h4>
+<p>The &quot;SSH&quot; sidebar entry opens the remote-ops panel. Hosts support key / password auth and one-click import from <code>~/.ssh/config</code>; config lives in <code>~/.dsh/dsh-ssh.json</code>. Real operations on configured hosts:</p>
 <ul>
-<li><strong>Web 终端</strong>：xterm.js 远程终端，实时输出、随窗口自适应；</li>
-<li><strong>文件传输</strong>：SFTP 上传 / 下载，带进度条与远程目录浏览；</li>
-<li><strong>端口转发</strong>：本地隧道直达远程内网服务（数据库、API、管理后台），仅监听 127.0.0.1；</li>
-<li><strong>集群执行</strong>：一条命令并发跑多台主机，按别名 / 环境 / 标签过滤；</li>
-<li><strong>Agent 直连</strong>：Agent 与面板共享同一份主机配置，对话中直接说「连一下 xxx 看看状态」即可由智能体执行远程命令。</li>
+<li><strong>Web terminal</strong>: xterm.js PTY with live output and auto-fit;</li>
+<li><strong>File transfer</strong>: SFTP upload / download with progress and a remote directory browser;</li>
+<li><strong>Port forwarding</strong>: local tunnels to remote internal services (databases, APIs, admin consoles), bound to 127.0.0.1 only;</li>
+<li><strong>Cluster runs</strong>: one command across many hosts concurrently, filtered by alias / environment / tags;</li>
+<li><strong>Agent direct control</strong>: agents share the same host config — just say &quot;check xxx&quot; in chat and the agent runs remote commands for you.</li>
 </ul>
-<h4>图像理解</h4>
-<p>为纯文本模型提供视觉能力：对话中提到图片（本地路径、http(s) URL 或会话附件）时，<code>describe_image</code> 工具把图片交给配置的 OpenAI 兼容视觉端点（Qwen-VL、GLM-4V、GPT-4o、本地 Ollama 等）回答，<strong>只有返回的文本进入会话，图片本身不进会话记录</strong>。纯文本模型的输入框没有图片入口，插件在输入框加了一个图片按钮：选图后自动生成附件引用插入草稿，模型即可用 <code>describe_image</code> 分析；工具还支持 <code>prompt</code> 参数传入自定义指令（如 OCR、UI 诊断、翻译），比默认描述更精准。端点、模型、密钥与默认指令在「设置 &gt; 插件配置 &gt; Image understanding」卡配置，即时生效。</p>
-<h4>设置中心</h4>
-<p>全部插件的开关与参数统一收纳于「设置 &gt; 插件配置」，修改即时生效；组内另有「社区插件」卡片，索引社区贡献者自行登记的插件并链接到他们的仓库。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/02-settings-web-ui-plugins.png" alt="插件配置中心"></p>
-<h3>皮肤</h3>
-<p>皮肤中心提供 9 款皮肤，均支持先试穿再应用：试穿即时生效、退出完全还原，确认满意后一键应用。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/03-settings-skin-center.png" alt="皮肤中心"></p>
-<h4>Windows XP（Luna）</h4>
-<p>还原 Luna 经典界面：蓝色渐变窗口条、绿色「开始」按钮、Bliss 蓝天桌面，全局直角风格。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/16-skin-xp-light.png" alt="Windows XP 皮肤"></p>
-<h4>Minecraft 方块世界</h4>
-<p>以《我的世界》主界面为灵感：像素全景天空盒在界面后方缓慢旋转，按钮为灰石板样式，输入框为木告示牌样式。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/15-skin-minecraft-light.png" alt="Minecraft 皮肤"></p>
-<h4>Blue Fantasy 蓝色幻想</h4>
-<p>鲸鱼插画铺于半透明面板之下，靛蓝色调色板贯穿全局，暗色主题下效果尤为突出。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/17-skin-blue-fantasy-dark.png" alt="Blue Fantasy 暗色"></p>
-<h4>鲸吟（Whale Song）</h4>
-<p>深海鲸语女神主题：无文字纯氛围背景画（蓝发女神与鲸群居左、冰蓝星座网格与金色细线点缀、右侧大量留白）垫在半透明面板之下，冰蓝 / 浅青 / 深海军蓝 / 钴蓝冷色体系贯穿全局，暗色变体为深海夜航调。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/24-skin-whale-song-light.png" alt="鲸吟 亮色"> · <img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/25-skin-whale-song-dark.png" alt="鲸吟 暗色"></p>
-<h4>交易终端（Trading Terminal）</h4>
-<p>带实时行情的炒股皮肤：顶栏滚动跑马灯（A股 / 港股 / 美股 / 指数 / 加密 / 外汇，红涨绿跌），标题栏行情快签，状态栏展示 A股 / 港股 / 美股交易时段与港美股指数。已安装 <code>dsh-fun-ticker</code> 时跑马灯跟随你的自选列表（同源代理取数），已安装 <code>dsh-longbridge</code> 时指数格渲染长桥券商快照；两个插件都没装也能直接走公共行情源（腾讯 / 币安 / Frankfurter）独立工作，所有路径失败都安全降级为 <code>--</code>。</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/26-skin-trading-light.png" alt="交易终端 亮色"> · <img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/27-skin-trading-dark.png" alt="交易终端 暗色"></p>
-<p>其余四款：QQ2008 怀旧版（水晶蓝配色与企鹅元素）、同花顺风格（行情元素融入界面）、龙的传人（朱砂龙印主题）、初音未来（蓝紫品红渐变与磨砂玻璃面板，亮暗双主题）。</p>
-<h3>安装</h3>
-<p>DSH 插件通过 <code>dsh plugin</code> 命令安装进 <strong>profile</strong>（<code>dsh web</code> 对应 <code>web</code> profile）。推荐直接安装聚合包 <code>dsh-web-ui-all</code>——一个包装齐全部功能插件与皮肤；只想用皮肤则装 <code>dsh-skins</code>。</p>
-<h4>方式一：从 npm 安装（推荐）</h4>
-<p>插件已发布到 npm（<code>@linxin666</code> scope），一条命令装齐：</p>
+<h4>Image Understanding</h4>
+<p>Gives text-only models vision: when a conversation mentions an image (local path, http(s) URL, or session attachment), the <code>describe_image</code> tool sends it to a configured OpenAI-compatible vision endpoint (Qwen-VL, GLM-4V, GPT-4o, a local Ollama endpoint…) and returns the answer. <strong>Only the returned text enters the conversation — the image itself never enters the session log.</strong> Since text-only models have no image entry in the input box, the plugin adds an image button there: picking a file inserts an attachment reference into your draft, and the model can analyze it via <code>describe_image</code>; the tool also accepts a <code>prompt</code> argument for precise custom instructions (OCR, UI diagnosis, translation) that beat a generic description. Endpoint, model, key, and the default instruction are configured live under Settings &gt; Plugin config &gt; &quot;Image understanding&quot;.</p>
+<h4>Settings Hub</h4>
+<p>All family plugins&#39; toggles and parameters live under &quot;Settings &gt; Plugin config&quot;, and changes apply immediately; a &quot;Community plugins&quot; card inside the group indexes plugins registered by community contributors and links to their repositories.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/02-settings-web-ui-plugins.png" alt="Plugin config hub"></p>
+<h3>Skins</h3>
+<p>The skin center ships nine skins, each supporting try-on before applying: preview applies instantly and reverts fully on exit; once you are satisfied, apply it with one click.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/03-settings-skin-center.png" alt="Skin center"></p>
+<h4>Windows XP (Luna)</h4>
+<p>A faithful recreation of the classic Luna interface: blue gradient window chrome, a green Start button, the Bliss blue-sky desktop, and square corners throughout.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/16-skin-xp-light.png" alt="Windows XP skin"></p>
+<h4>Minecraft Voxel</h4>
+<p>Inspired by the Minecraft main menu: a pixel-art panorama skybox rotates slowly behind the interface, buttons adopt the gray stone slab style, and inputs become wooden sign posts.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/15-skin-minecraft-light.png" alt="Minecraft skin"></p>
+<h4>Blue Fantasy</h4>
+<p>Whale artwork lies beneath translucent panes, wrapped in a periwinkle-indigo palette — particularly striking in dark mode.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/17-skin-blue-fantasy-dark.png" alt="Blue Fantasy dark"></p>
+<h4>Whale Song</h4>
+<p>The deep-sea whale-goddess theme: a text-free ambience painting (a blue-haired goddess with a whale pod on the left, an ice-blue constellation grid with gold-thread accents, and generous open water on the right) sits beneath translucent panes, wrapped in an ice-blue / cyan / navy / cobalt palette — with a night-cruise dark variant.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/24-skin-whale-song-light.png" alt="Whale Song light"> · <img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/25-skin-whale-song-dark.png" alt="Whale Song dark"></p>
+<h4>Trading Terminal</h4>
+<p>A live-data stock-trading skin: a scrolling ticker tape (A-shares / HK / US / indices / crypto / FX, 红涨绿跌), live quote chips in the title bar, and a status bar with A-share / HK / US trading sessions plus HK/US index cells. With <code>dsh-fun-ticker</code> installed the tape follows your watchlist (served through its same-origin proxy); with <code>dsh-longbridge</code> installed the index cells render the broker snapshot. With neither plugin installed the skin still works standalone on public feeds (Tencent / Binance / Frankfurter) — and every fetch path fails safe to <code>--</code> cells.</p>
+<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/26-skin-trading-light.png" alt="Trading Terminal light"> · <img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/27-skin-trading-dark.png" alt="Trading Terminal dark"></p>
+<p>Four more: QQ2008 Retro (crystal blue with penguin motifs), Tonghuashun Trading (market elements woven into the interface), Dragon Heir (cinnabar dragon seal theme), and Miku (blue-violet-magenta gradients with frosted glass panels, light and dark themes).</p>
+<h3>Installation</h3>
+<p>DSH plugins are installed per <strong>profile</strong> with the <code>dsh plugin</code> command (<code>dsh web</code> runs the <code>web</code> profile). The recommended way is the aggregate package <code>dsh-web-ui-all</code> — one package with all plugins and skins; install <code>dsh-skins</code> instead if you only want the skins.</p>
+<h4>Option 1: Install from npm (recommended)</h4>
+<p>The plugins are published to npm (the <code>@linxin666</code> scope) — one command installs everything:</p>
 <pre><code class="language-sh">dsh plugin --profile web add @linxin666/dsh-web-ui-all@0.1.12
 </code></pre>
-<p>装完重启 <code>dsh web</code>，侧边栏即可看到全部插件入口。只想用皮肤则装 <code>@linxin666/dsh-skins</code>。</p>
+<p>Restart <code>dsh web</code> and all plugin entries appear in the sidebar. Skins only? Install <code>@linxin666/dsh-skins</code> instead.</p>
 <blockquote>
-<p>版本固定为当前最新发布版 <code>0.1.12</code>。<code>0.1.1</code> 的 <code>dsh-pet</code> 缺少运行时文件（<code>lib/types/*.js</code>），且个别环境对 npm <code>latest</code> 的解析可能受 registry 缓存影响，带版本号安装最稳妥；升级时把 <code>@0.1.12</code> 换成新版本号。</p>
+<p>Pinned to the current latest release <code>0.1.12</code>. The <code>0.1.1</code> build of <code>dsh-pet</code> shipped without runtime files (<code>lib/types/*.js</code>), and some environments may resolve npm&#39;s <code>latest</code> from a stale registry cache — pinning the version is the safest install; bump <code>@0.1.12</code> to the new version when upgrading.</p>
 </blockquote>
 <blockquote>
-<p>首次安装若提示 <code>ERR_PNPM_IGNORED_BUILDS</code>（pnpm 拒绝依赖的构建脚本），按提示把 <code>cloudflared</code> / <code>cpu-features</code> / <code>ssh2</code> 加入 profile 的 <code>pnpm-workspace.yaml</code> <code>allowBuilds</code> 后重新执行即可。</p>
+<p>First install may stop on <code>ERR_PNPM_IGNORED_BUILDS</code> (pnpm blocks dependency build scripts): copy the printed keys (<code>cloudflared</code> / <code>cpu-features</code> / <code>ssh2</code>) into the profile&#39;s <code>pnpm-workspace.yaml</code> <code>allowBuilds</code> list and re-run.</p>
 </blockquote>
-<h4>方式二：从 GitHub 仓库安装（改代码调试）</h4>
-<p>插件包已在 npm 发布，仓库安装仅供开发调试（需要 Node.js &gt;= 22 与 pnpm）：</p>
-<pre><code class="language-sh"># 1. 克隆仓库
+<h4>Option 2: Install from the GitHub repository (development)</h4>
+<p>The packages are already on npm; installing from this repository is only for development (requires Node.js &gt;= 22 and pnpm):</p>
+<pre><code class="language-sh"># 1. Clone the repository
 git clone https://github.com/zhu1090093659/dsh-web-ui.git
 cd dsh-web-ui
 
-# 2. 安装依赖并构建
+# 2. Install dependencies and build
 pnpm install
 pnpm -r build
 
-# 3. 把全家桶链接进 web profile（推荐，先链接全部子包再注册聚合包）
-node scripts/link-profile.mjs
+# 3. Install the aggregate package into the web profile
 dsh plugin --profile web add link:$(pwd)/packages/dsh-web-ui-all
 
-# 4. 重启 dsh web，侧边栏即可看到全部插件入口
+# 4. Restart dsh web — all plugin entries appear in the sidebar
 dsh web
 </code></pre>
 <blockquote>
-<p>只想用皮肤：第 3 步只执行 link-profile 后安装 <code>packages/dsh-skins</code> 即可。</p>
-<p>注意：profile 目录不是 pnpm workspace，聚合包里的 <code>workspace:*</code> 依赖会回退拉取 npm 已发布版本；
-若 npm 版本滞后或损坏会出现「宿主已挂载但 UI 不显示」，此时先用 <code>node scripts/link-profile.mjs</code>
-让全部子包走仓库构建产物。</p>
+<p>Skins only? Point step 3 at <code>packages/dsh-skins</code> instead.</p>
 </blockquote>
-<h4>单独安装某个插件</h4>
-<p>不想装全家桶时，可单独安装任意插件（npm 已发布，直接用包名）：</p>
-<pre><code class="language-sh">dsh plugin --profile web add @linxin666/dsh-client-ui-task-board   # 任务看板
-dsh plugin --profile web add @linxin666/dsh-ssh                    # 远程连接（SSH）
-dsh plugin --profile web add @linxin666/dsh-tool-describe-image    # 图像理解工具
-dsh plugin --profile web add @linxin666/dsh-pet                    # 鲸鱼娘宠物
+<h4>Install a single plugin</h4>
+<p>Prefer individual plugins? Install them one by one (published on npm, so use the package name directly):</p>
+<pre><code class="language-sh">dsh plugin --profile web add @linxin666/dsh-client-ui-task-board   # Task board
+dsh plugin --profile web add @linxin666/dsh-ssh                    # Remote connection (SSH)
+dsh plugin --profile web add @linxin666/dsh-tool-describe-image    # Image understanding tool
+dsh plugin --profile web add @linxin666/dsh-pet                    # Whale-girl pet
 </code></pre>
-<h4>验证与卸载</h4>
-<p>安装成功后重启 <code>dsh web</code>，侧边栏出现对应入口即生效；也可用 <code>dsh --profile web --dump-config</code> 确认插件配置层已挂载。若侧边栏没有新入口，多半是安装后没有重启 <code>dsh web</code>。</p>
-<p>卸载：<code>dsh plugin --profile web remove @linxin666/dsh-web-ui-all</code>，然后重启 <code>dsh web</code>。</p>
-<p>技术细节见 <a href="https://github.com/zhu1090093659/dsh-web-ui/blob/main/docs/plugins.md">docs/plugins.md</a>。</p>
-<h3>社区</h3>
-<p>欢迎加入<strong>中心社区</strong>，与开发者和其他用户一起交流使用心得、反馈问题、参与讨论。微信扫码即可加入：</p>
-<p><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/community-center.jpg" alt="中心社区"></p>
-<h3>来源与版权</h3>
+<h4>Verify and uninstall</h4>
+<p>After installing, restart <code>dsh web</code> — a working plugin shows up in the sidebar. You can also confirm the mounted config layers with <code>dsh --profile web --dump-config</code>. If nothing appears in the sidebar, you most likely forgot to restart <code>dsh web</code>.</p>
+<p>Uninstall: <code>dsh plugin --profile web remove @linxin666/dsh-web-ui-all</code>, then restart <code>dsh web</code>.</p>
+<p>Technical details live in <a href="https://github.com/zhu1090093659/dsh-web-ui/blob/main/docs/plugins.md">docs/plugins.md</a>.</p>
+<h3>Community</h3>
+<p>Join our Discord server to connect with developers and other users:</p>
+<p><a href="https://discord.gg/6v4gm9u4S">Join the dsh-web-ui community on Discord</a></p>
+<h3>Sources &amp; Licensing</h3>
 <table>
 <thead>
 <tr>
-<th>包</th>
-<th>来源</th>
-<th>版权</th>
+<th>Package</th>
+<th>Origin</th>
+<th>License</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>dsh-task-board / dsh-git-graph / dsh-aionui-panel / dsh-pet / dsh-remote-web-ui / dsh-live-stats / dsh-web-ui-settings / dsh-skins / dsh-web-ui-all / skins</td>
-<td>作者 zhu1090093659 个人开发</td>
-<td>Apache-2.0（zhu1090093659）</td>
+<td>Authored by zhu1090093659</td>
+<td>Apache-2.0 (zhu1090093659)</td>
 </tr>
 <tr>
 <td>dsh-tool-describe-image</td>
-<td>移植自 <a href="https://github.com/whitelonng/dsh-plugin-describe-image">whitelonng/dsh-plugin-describe-image</a>（deepseek-harness <code>packages/vision/tool-describe-image</code>）</td>
-<td>Apache-2.0（zhu1090093659）</td>
+<td>Ported from <a href="https://github.com/whitelonng/dsh-plugin-describe-image">whitelonng/dsh-plugin-describe-image</a> (deepseek-harness <code>packages/vision/tool-describe-image</code>)</td>
+<td>Apache-2.0 (zhu1090093659)</td>
 </tr>
 </tbody></table>
-<p>迁入第三方代码必须保留 LICENSE 与署名；活跃且有上游的第三方优先 fork 或依赖引用，不搬代码。</p>
-<ul>
-<li><a href="https://linux.do">https://linux.do</a></li>
-<li><a href="https://dshfind.com">dshfind</a> —— 面向 DeepSeek Harness 的学习与分享社区，聚合论文精读、插件超市与用户排名。</li>
-<li><a href="https://github.com/Ericwong5021/deepseek-plugin-store">deepseek-plugin-store</a> —— DeepSeek Harness 独立社区插件商店，发现、安装并提交经过验证的插件、工具与扩展。</li>
-<li><a href="https://github.com/omdsh-dev/dsh-data-agent">dsh-data-agent</a> —— 为 DSH 定义专用 Data Agent 预设，让 AI 帮你查询、更新、分析数据。</li>
-<li><a href="https://github.com/ccch1mneyyy/dsh-TUI">dsh-TUI</a> —— Claude Code 风格全屏交互终端插件，补位官方缺失的终端 TUI：像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条与 TPS 仪表。</li>
-<li><a href="https://github.com/huiliyi37/dsh-tianshu-tui">dsh-tianshu-tui</a> —— 基于官方 DeepSeek Harness 的交互式终端 UI 插件，在官方基础上增加 TDD 与证据门等工作流。</li>
-</ul>
-<h3>Star 历史</h3>
+<p>Third-party code merged in must keep its LICENSE and attribution; active third parties with an upstream are forked or referenced as dependencies instead of vendored.</p>
+<h3>Star History</h3>
 <p><a href="https://www.star-history.com/?repos=zhu1090093659%2Fdsh-web-ui&type=date&legend=top-left"><img src="https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/star-history/star-history.svg" alt="Star History Chart"></a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/zhu1090093659/dsh-web-ui/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/zhu1090093659/dsh-web-ui/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

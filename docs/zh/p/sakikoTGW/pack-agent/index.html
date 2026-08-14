@@ -193,26 +193,26 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
-<p>English | <a href="https://github.com/sakikoTGW/pack-agent/blob/main/README.zh-CN.md">中文</a></p>
-<p>Manage DeepSeek Harness config like a Minecraft modpack. Agent Modpack (<code>packagent</code>) packs skills, rules, and MCP into a <code>.pack.zip</code> and installs them into Claude Code, Codex, Cursor, and other harnesses. Uninstall uses the install ledger.</p>
-<p>Requires <a href="https://bun.sh">Bun</a> ≥ 1.1. npm: <a href="https://www.npmjs.com/package/@sakikotgw/pack-agent"><code>@sakikotgw/pack-agent</code></a>.</p>
-<p>DeepSeek Harness uses a separate package: <a href="https://www.npmjs.com/package/@sakikotgw/pack-agent-dsh"><code>@sakikotgw/pack-agent-dsh</code></a>. See <a href="https://github.com/sakikoTGW/pack-agent/blob/main/dsh-plugin/README.md">dsh-plugin/README.md</a>.</p>
-<h3>Install</h3>
-<h4>From npm</h4>
+<p><a href="https://github.com/sakikoTGW/pack-agent/blob/main/README.md">English</a> | 中文</p>
+<p>像 MC 整合包一样管理 DeepSeek Harness 配置。Agent Modpack（<code>packagent</code>）把 skills、rules、MCP 打成 <code>.pack.zip</code>，装进 Claude Code、Codex、Cursor 等 harness。卸装按账本撤。</p>
+<p>需要 <a href="https://bun.sh">Bun</a> ≥ 1.1。npm：<a href="https://www.npmjs.com/package/@sakikotgw/pack-agent"><code>@sakikotgw/pack-agent</code></a>。</p>
+<p>DeepSeek Harness 用另一个包：<a href="https://www.npmjs.com/package/@sakikotgw/pack-agent-dsh"><code>@sakikotgw/pack-agent-dsh</code></a>。见 <a href="https://github.com/sakikoTGW/pack-agent/blob/main/dsh-plugin/README.zh.md">dsh-plugin/README.zh.md</a>。</p>
+<h3>安装</h3>
+<h4>通过 npm</h4>
 <pre><code class="language-sh">npm install @sakikotgw/pack-agent
 packagent detect
 </code></pre>
-<p>One-off:</p>
-<pre><code class="language-sh">npx --yes -p @sakikotgw/pack-agent packagent install foo.pack.json
+<p>只跑一次：</p>
+<pre><code class="language-sh">npm exec --yes --package=@sakikotgw/pack-agent -- packagent install foo.pack.zip
 </code></pre>
-<p>On Windows, <code>npx --package @sakikotgw/pack-agent -- pack-agent</code> fails. The bin name is <code>packagent</code>.</p>
-<h3>Use</h3>
+<p>Windows 不要写成 <code>npx --package @sakikotgw/pack-agent -- pack-agent</code>，命令名是 <code>packagent</code>。</p>
+<h3>使用</h3>
 <pre><code class="language-sh">packagent agents init
 packagent export --agent &lt;id&gt;
 packagent install .agent-pack/exports/&lt;id&gt;.pack.json --runtime claude-code
 packagent eject --name &lt;id&gt;
 </code></pre>
-<p><code>--runtime</code> installs to one harness. Without it, install targets every harness listed under <code>Will install to</code> in <code>packagent detect</code>. Install writes the current project only. Pass <code>--global-config</code> to write user-global harness config.</p>
+<p><code>--runtime</code> 只装一家。不加则装到 <code>packagent detect</code> 里 <code>Will install to</code> 列出的 harness。默认只写当前项目。要写用户全局配置时加 <code>--global-config</code>。</p>
 <h3>MCP</h3>
 <pre><code class="language-json">{
   &quot;mcpServers&quot;: {
@@ -224,7 +224,7 @@ packagent eject --name &lt;id&gt;
   }
 }
 </code></pre>
-<h3>Supported harnesses</h3>
+<h3>支持的 harness</h3>
 <table>
 <thead>
 <tr>
@@ -283,16 +283,16 @@ packagent eject --name &lt;id&gt;
 <td><code>.vscode/mcp.json</code></td>
 </tr>
 </tbody></table>
-<h3>Run from source</h3>
+<h3>从源码运行</h3>
 <pre><code class="language-sh">git clone https://github.com/sakikoTGW/pack-agent.git
 cd pack-agent
 bun install
 </code></pre>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/sakikoTGW/pack-agent/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/sakikoTGW/pack-agent/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/sakikoTGW/pack-agent/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

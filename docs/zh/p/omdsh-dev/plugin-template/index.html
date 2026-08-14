@@ -189,113 +189,113 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/omdsh-dev/plugin-template/blob/main/README.zh.md">中文</a></p>
-<p>A self-contained standalone repository template for an ESM Cordis plugin. Every source file, compiler setting, test fixture, contributor instruction, skill, and build helper used by the repository is inside this directory; every development input resolves below this repository root.</p>
-<p>Normal npm dependencies are resolved from the package registry. A DSH host is a runtime consumer of the finished package, not a source or build input.</p>
-<h3>Repository layout</h3>
+<p><a href="https://github.com/omdsh-dev/plugin-template/blob/main/README.md">English</a> | 中文</p>
+<p>面向 ESM Cordis 插件的自包含独立仓库模板。仓库用到的每个源文件、编译器配置、测试夹具、贡献说明、skill 和构建辅助都位于本目录内;每个开发输入都从本仓库根目录以下解析。</p>
+<p>普通 npm 依赖从包 registry 解析。DSH 宿主是成品包的运行时消费者,不是源码或构建输入。</p>
+<h3>仓库布局</h3>
 <pre><code class="language-text">.
-├── .agents/skills/               # Repository-local plugin development workflow
-│   ├── dsh-plugin-development/   # End-to-end coordinator
-│   └── dsh-plugin-*/             # Plan, scaffold, implement, compose, test, release
+├── .agents/skills/               # 仓库本地插件开发工作流
+│   ├── dsh-plugin-development/   # 端到端协调器
+│   └── dsh-plugin-*/             # plan、scaffold、implement、compose、test、release
 ├── docs/
-│   └── dsh-plugin-contracts.md   # Shared local contract for all plugin skills
+│   └── dsh-plugin-contracts.md   # 所有插件 skill 共享的本地契约
 ├── patches/
-│   └── README.md                 # Dependency and DSH-host patch contract
+│   └── README.md                 # 依赖补丁与 DSH host patch 契约
 ├── scripts/
-│   ├── extract-patch.mjs         # Config-driven host patch regeneration (see patches/README.md)
-│   ├── patch.sh                  # Idempotent host patch application
-│   ├── prepare.mjs               # Self-contained declaration and runtime prepare build
-│   └── verify-self-contained.mjs # Repository-boundary and skill metadata check
+│   ├── extract-patch.mjs         # 配置驱动的 host patch 再生成(见 patches/README.md)
+│   ├── patch.sh                  # 幂等的 host patch 应用
+│   ├── prepare.mjs               # 自包含声明与运行时 prepare 构建
+│   └── verify-self-contained.mjs # 仓库边界与 skill 元数据检查
 ├── src/
-│   ├── README.md                 # Growth rules for services and feature modules
-│   ├── config.ts                 # Serializable schema and resolved defaults
-│   ├── index.ts                  # Loader-facing function-plugin namespace
-│   ├── invariant.ts              # Package-owned invariant companion
-│   └── runtime.ts                # Fakeable host boundary and Cordis activation
+│   ├── README.md                 # 服务与功能模块的增长规则
+│   ├── config.ts                 # 可序列化 schema 与解析后的默认值
+│   ├── index.ts                  # Loader 面向的函数插件命名空间
+│   ├── invariant.ts              # 包自有的 invariant companion
+│   └── runtime.ts                # 可 fake 的宿主边界与 Cordis 激活
 ├── tests/
-│   ├── README.md                 # Harness, feature-test, and snapshot conventions
-│   ├── harness.ts                # Shared real-Cordis test mount
-│   ├── plugin.spec.ts            # Loader export and activation tests
+│   ├── README.md                 # harness、功能测试与快照约定
+│   ├── harness.ts                # 共享的真实 Cordis 测试挂载
+│   ├── plugin.spec.ts            # Loader 导出与激活测试
 │   └── snapshots/
-│       └── README.md             # Optional product-visible fixture contract
-├── .gitignore                    # Generated artifact exclusions
-├── AGENTS.md                     # Repository-local contributor rules
-├── LICENSE                       # Template license
-├── README.md                     # Repository and usage contract
-├── cordis.patch.yml              # Profile bundle contribution
-├── package.json                  # Exports, peers, dsh.bundle.patch
-├── pnpm-lock.yaml                # Reproducible registry dependency graph
-├── pnpm-workspace.yaml           # Package-manager and optional patch policy
-├── tsconfig.base.json            # Local strict compiler baseline
-├── tsconfig.json                 # Development declaration project
-├── tsconfig.vitest.json          # Source-plane test project
-├── tsconfig.prepare.json         # Runtime bundle resolution settings
-├── tsconfig.prepare.dts.json     # Self-contained prepare declarations
-├── tsdown.config.ts              # Development runtime bundle
-├── tsdown.prepare.config.ts      # Prepare runtime bundle
-└── vitest.config.ts              # Test runner configuration
+│       └── README.md             # 可选的产品可见 fixture 契约
+├── .gitignore                    # 生成产物排除
+├── AGENTS.md                     # 仓库本地贡献规则
+├── LICENSE                       # 模板许可证
+├── README.md                     # 仓库与使用契约
+├── cordis.patch.yml              # profile bundle 贡献
+├── package.json                  # 导出、peers、dsh.bundle.patch
+├── pnpm-lock.yaml                # 可复现的 registry 依赖图
+├── pnpm-workspace.yaml           # 包管理器与可选补丁策略
+├── tsconfig.base.json            # 本地严格编译器基线
+├── tsconfig.json                 # 开发声明工程
+├── tsconfig.vitest.json          # 源码平面测试工程
+├── tsconfig.prepare.json         # 运行时 bundle 解析设置
+├── tsconfig.prepare.dts.json     # 自包含 prepare 声明
+├── tsdown.config.ts              # 开发运行时 bundle
+├── tsdown.prepare.config.ts      # prepare 运行时 bundle
+└── vitest.config.ts              # 测试运行器配置
 </code></pre>
-<h3>Scalable source and test structure</h3>
-<p>The baseline mirrors the scalable first-level split used by larger DSH plugins while keeping product behavior minimal:</p>
+<h3>可扩展的源码与测试结构</h3>
+<p>基线镜像了大型 DSH 插件使用的可扩展一级拆分,同时保持产品行为最小:</p>
 <ul>
-<li><code>src/index.ts</code> owns the Loader namespace;</li>
-<li><code>src/config.ts</code> owns the serializable schema and direct-call defaults;</li>
-<li><code>src/runtime.ts</code> owns fakeable host boundaries and Cordis activation;</li>
-<li><code>tests/harness.ts</code> owns the shared real-Cordis test mount;</li>
-<li>cohesive production behavior grows under capability-named <code>src/&lt;feature&gt;/</code> directories;</li>
-<li>stable product-visible expected output belongs under <code>tests/snapshots/</code>;</li>
-<li>dependency and DSH-host patches belong under <code>patches/</code>: pnpm <code>patchedDependencies</code> for exact registry versions, self-contained diffs against the DSH host when the plugin needs host source changes.</li>
+<li><code>src/index.ts</code> 拥有 Loader 命名空间;</li>
+<li><code>src/config.ts</code> 拥有可序列化 schema 与直接调用默认值;</li>
+<li><code>src/runtime.ts</code> 拥有可 fake 的宿主边界与 Cordis 激活;</li>
+<li><code>tests/harness.ts</code> 拥有共享的真实 Cordis 测试挂载;</li>
+<li>内聚的产品行为按能力命名的 <code>src/&lt;feature&gt;/</code> 目录增长;</li>
+<li>稳定的产品可见期望输出属于 <code>tests/snapshots/</code>;</li>
+<li>依赖补丁与 DSH host patch 属于 <code>patches/</code>:精确 registry 版本用 pnpm <code>patchedDependencies</code>,插件需要宿主源码改动时用针对 DSH 宿主的自包含 diff。</li>
 </ul>
-<p>Directories such as Turtle UI&#39;s chat, components, and extension areas describe that product, not the DSH plugin contract. Create equivalent feature directories only when the new plugin owns those capabilities. See <code>src/README.md</code>, <code>tests/README.md</code>, <code>tests/snapshots/README.md</code>, and <code>patches/README.md</code> for the local rules.</p>
-<h3>Create your plugin</h3>
+<p>Turtle UI 的 chat、components、extension 目录描述的是那个产品,不是 DSH 插件契约。只有新插件真正拥有那些能力时才创建对应的功能目录。本地规则见 <code>src/README.md</code>、<code>tests/README.md</code>、<code>tests/snapshots/README.md</code> 与 <code>patches/README.md</code>。</p>
+<h3>创建你的插件</h3>
 <ol>
-<li>Replace the package identity in <code>package.json</code>, <code>src/index.ts</code>, <code>src/config.ts</code>, <code>src/runtime.ts</code>, <code>src/invariant.ts</code>, <code>tests/plugin.spec.ts</code>, <code>cordis.patch.yml</code>, the TypeScript package metadata, <code>README.md</code>, and <code>AGENTS.md</code>.</li>
-<li>Replace the template package name <code>@your-scope/dsh-plugin-template</code> and plugin ids only in those identity owners. Do not perform a global replacement inside <code>.agents/skills/</code>; its generic examples and marker checks must remain reusable.</li>
-<li>Update <code>description</code>, <code>LICENSE</code>, and <code>cordis.patch.yml</code>.</li>
-<li>Add only the DSH host services used by the implementation to the package contract and composition patch. Keep source and build dependencies resolvable from this repository&#39;s <code>node_modules</code>.</li>
-<li>Replace the empty invariant installer when the package owns an authoritative event or mutable data relationship.</li>
-<li>Implement activation and host-boundary behavior in <code>src/runtime.ts</code>, moving cohesive capabilities into project-specific <code>src/&lt;feature&gt;/</code> directories as needed. Keep <code>src/index.ts</code> limited to Loader metadata and public re-exports, and scope registrations through <code>ctx.effect()</code>, <code>ctx.on()</code>, or registry disposers.</li>
-<li>Keep every source, compiler, documentation, and project-reference path inside this repository. Describe files from the project root, for example <code>docs/dsh-plugin-contracts.md</code>. Do not add local-path <code>link:</code> or <code>file:</code> dependencies.</li>
-<li>Set <code>private</code> to <code>false</code> only when the package&#39;s public dependencies and distribution artifacts are ready.</li>
+<li>在 <code>package.json</code>、<code>src/index.ts</code>、<code>src/config.ts</code>、<code>src/runtime.ts</code>、<code>src/invariant.ts</code>、<code>tests/plugin.spec.ts</code>、<code>cordis.patch.yml</code>、TypeScript 包元数据、<code>README.md</code> 与 <code>AGENTS.md</code> 中替换包身份。</li>
+<li>只在上述身份属主中替换模板包名 <code>@your-scope/dsh-plugin-template</code> 和插件 id。不要对 <code>.agents/skills/</code> 做全局替换;它的通用示例与标记检查必须保持可复用。</li>
+<li>更新 <code>description</code>、<code>LICENSE</code> 与 <code>cordis.patch.yml</code>。</li>
+<li>只把实现用到的 DSH 宿主服务加入包契约与组合补丁。源码和构建依赖必须能从本仓库的 <code>node_modules</code> 解析。</li>
+<li>当包拥有权威事件或可变数据关系时,替换空的 invariant installer。</li>
+<li>在 <code>src/runtime.ts</code> 实现激活与宿主边界行为,按需把内聚能力移入项目专属的 <code>src/&lt;feature&gt;/</code> 目录。保持 <code>src/index.ts</code> 只含 Loader 元数据与公共 re-export,并通过 <code>ctx.effect()</code>、<code>ctx.on()</code> 或 registry disposer 限定注册范围。</li>
+<li>保持每个源码、编译器、文档和工程引用路径都在本仓库内。从项目根描述文件,例如 <code>docs/dsh-plugin-contracts.md</code>。不要添加本地路径 <code>link:</code> 或 <code>file:</code> 依赖。</li>
+<li>只有当包的公共依赖与分发产物就绪时,才把 <code>private</code> 设为 <code>false</code>。</li>
 </ol>
-<p>Do not add a default export to a function plugin. Cordis Loader unwraps <code>exports.default ?? exports</code>; a stray default export discards namespace exports such as <code>inject</code>, <code>Config</code>, and <code>apply</code>.</p>
-<h3>Bundled development skills</h3>
-<p>DSH discovers the repository-local workflow under <code>.agents/skills/</code>. Start with <a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-development/SKILL.md"><code>dsh-plugin-development</code></a> for the complete sequence, or invoke one stage directly:</p>
+<p>不要给函数插件添加 default export。Cordis Loader 会解包 <code>exports.default ?? exports</code>;多余的 default export 会丢弃 <code>inject</code>、<code>Config</code>、<code>apply</code> 等命名空间导出。</p>
+<h3>内置开发 skills</h3>
+<p>DSH 会发现在 <code>.agents/skills/</code> 下的仓库本地工作流。完整流程从 <a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-development/SKILL.md"><code>dsh-plugin-development</code></a> 开始,也可以直接调用某一阶段:</p>
 <table>
 <thead>
 <tr>
 <th>Skill</th>
-<th>Purpose</th>
+<th>用途</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-plan/SKILL.md"><code>dsh-plugin-plan</code></a></td>
-<td>Decide plugin form, dependencies, configuration, invariant, composition, and evidence.</td>
+<td>决定插件形态、依赖、配置、invariant、组合与证据。</td>
 </tr>
 <tr>
 <td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-scaffold/SKILL.md"><code>dsh-plugin-scaffold</code></a></td>
-<td>Instantiate and baseline-verify a new repository from this template.</td>
+<td>从本模板实例化并基线验证新仓库。</td>
 </tr>
 <tr>
 <td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-implement/SKILL.md"><code>dsh-plugin-implement</code></a></td>
-<td>Implement lifecycle-safe Cordis behavior, metadata, docs, and invariants.</td>
+<td>实现生命周期安全的 Cordis 行为、元数据、文档与 invariants。</td>
 </tr>
 <tr>
 <td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-compose/SKILL.md"><code>dsh-plugin-compose</code></a></td>
-<td>Install the bundle into an isolated profile and prove effective activation.</td>
+<td>把 bundle 安装进隔离 profile 并证明有效激活。</td>
 </tr>
 <tr>
 <td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-test/SKILL.md"><code>dsh-plugin-test</code></a></td>
-<td>Verify Loader exports, behavior, disposal, composition, snapshots, and artifacts.</td>
+<td>验证 Loader 导出、行为、销毁、组合、快照与产物。</td>
 </tr>
 <tr>
 <td><a href="https://github.com/omdsh-dev/plugin-template/blob/main/.agents/skills/dsh-plugin-release/SKILL.md"><code>dsh-plugin-release</code></a></td>
-<td>Check local, Git, or npm distribution readiness without publishing implicitly.</td>
+<td>在不隐式发布的前提下检查本地、Git 或 npm 分发就绪度。</td>
 </tr>
 </tbody></table>
-<p>Keep these directories when copying the template so future sessions rooted in the plugin repository retain the same workflow.</p>
-<h3>Independent development</h3>
-<p>Run every command from this directory:</p>
+<p>复制模板时保留这些目录,这样未来扎根于插件仓库的会话能沿用同一工作流。</p>
+<h3>独立开发</h3>
+<p>所有命令都在本目录运行:</p>
 <pre><code class="language-sh">pnpm install
 pnpm run verify:self-contained
 pnpm run typecheck
@@ -303,10 +303,10 @@ pnpm test
 pnpm run build
 pnpm run prepare
 </code></pre>
-<p><code>pnpm install</code> resolves only the dependencies declared by this package. <code>verify:self-contained</code> rejects filesystem dependency specs, compiler paths that leave the repository, external or broken Markdown links, absolute workstation paths, and malformed bundled skill metadata. <code>typecheck</code> checks both the declaration project in <code>tsconfig.json</code> and the source-plane tests in <code>tsconfig.vitest.json</code> against the local strict compiler baseline. <code>prepare</code> first removes this repository&#39;s generated <code>lib/</code>, emits declarations into <code>lib/types</code>, and bundles runtime JavaScript from <code>src</code>; it reads only files below this repository root.</p>
-<p>The development build and prepare build use separate configurations, but both are fully contained in this repository. <code>pnpm run build</code> is the development/CI type-safety gate. <code>pnpm run prepare</code> is the consumer-side artifact build for Git and tarball installation.</p>
-<h3>Profile activation</h3>
-<p>The package manifest declares the bundle patch:</p>
+<p><code>pnpm install</code> 只解析本包声明的依赖。<code>verify:self-contained</code> 拒绝文件系统依赖 spec、离开仓库的编译器路径、外部或损坏的 Markdown 链接、绝对工作站路径和格式错误的 bundle skill 元数据。<code>typecheck</code> 同时检查 <code>tsconfig.json</code> 的声明工程与 <code>tsconfig.vitest.json</code> 的源码平面测试,对照本地严格编译器基线。<code>prepare</code> 先移除本仓库生成的 <code>lib/</code>,向 <code>lib/types</code> 输出声明,再从 <code>src</code> 打包运行时 JavaScript;它只读取本仓库根目录以下的文件。</p>
+<p>开发构建与 prepare 构建使用独立配置,但都完全包含在本仓库内。<code>pnpm run build</code> 是开发/CI 类型安全门禁。<code>pnpm run prepare</code> 是 Git 与 tarball 安装的消费者侧产物构建。</p>
+<h3>Profile 激活</h3>
+<p>包 manifest 声明 bundle 补丁:</p>
 <pre><code class="language-json">{
   &quot;dsh&quot;: {
     &quot;bundle&quot;: {
@@ -315,10 +315,10 @@ pnpm run prepare
   }
 }
 </code></pre>
-<p>A DSH host may install this package into a profile and apply <code>cordis.patch.yml</code> over its own runtime composition. That host integration is intentionally outside this repository&#39;s build and test inputs. The patch composes plugins; it does not alter host source, compiler settings, build scripts, or catalogs.</p>
-<p>The invariant companion uses a narrow local interface for the host&#39;s <code>invariants</code> service. This keeps the package build independent of the host&#39;s private source package while preserving the runtime registration used by a DSH profile.</p>
-<h3>Plugin forms</h3>
-<p>This template demonstrates a function plugin and therefore named exports:</p>
+<p>DSH 宿主可以把本包安装进 profile,并用 <code>cordis.patch.yml</code> 覆盖自身的运行时组合。该宿主集成刻意位于本仓库的构建与测试输入之外。补丁只组合插件;它不修改宿主源码、编译器设置、构建脚本或 catalog。</p>
+<p>invariant companion 通过窄本地接口使用宿主的 <code>invariants</code> 服务。这让包构建不依赖宿主私有源码包,同时保留 DSH profile 使用的运行时注册。</p>
+<h3>插件形态</h3>
+<p>本模板演示函数插件,因此使用命名导出:</p>
 <pre><code class="language-ts">// src/index.ts
 export const name = &#39;plugin-template&#39;
 export const inject: string[] = []
@@ -326,25 +326,25 @@ export { Config } from &#39;./config.ts&#39;
 export { apply } from &#39;./runtime.ts&#39;
 
 // src/config.ts
-export interface Config { /* serializable fields */ }
-export const Config: z&lt;Config&gt; = z.object({ /* validation and defaults */ })
+export interface Config { /* 可序列化字段 */ }
+export const Config: z&lt;Config&gt; = z.object({ /* 校验与默认值 */ })
 
 // src/runtime.ts
 export function apply(ctx: Context, config: Config): void { /* effects */ }
 </code></pre>
-<p>A service provider instead normally default-exports its <code>Service</code> subclass. Do not mix the two forms.</p>
-<h3>Distribution checks</h3>
-<p>Before considering Git or npm distribution, run a clean prepare and inspect the final archive:</p>
+<p>服务提供者通常改为 default-export 它的 <code>Service</code> 子类。两种形态不要混用。</p>
+<h3>分发检查</h3>
+<p>在考虑 Git 或 npm 分发前,运行一次干净的 prepare 并检查最终归档:</p>
 <pre><code class="language-sh">pnpm run prepare
 pnpm pack --dry-run --json
 pnpm run build
 </code></pre>
-<p>The final package must contain every runtime and declaration file named by <code>main</code>, <code>types</code>, <code>exports</code>, and <code>files</code>. The final <code>pnpm run build</code> restores the development artifact after pack lifecycle scripts. Keep <code>private: true</code> until the package&#39;s DSH host peers are available through the selected distribution channel.</p>
-<h3>Testing guidance</h3>
-<p>The included test proves Loader-safe ESM exports and schema-resolved activation. Replace the activation assertions with observable behavior and disposal assertions for every registry contribution. Product-visible plugins should add a real Loader/profile composition test in the consuming DSH application rather than relying only on hand-mounted unit tests.</p>
+<p>最终包必须包含 <code>main</code>、<code>types</code>、<code>exports</code> 与 <code>files</code> 命名的每个运行时与声明文件。最后的 <code>pnpm run build</code> 在 pack 生命周期脚本之后恢复开发产物。在包的 DSH 宿主 peers 通过所选分发通道可用之前,保持 <code>private: true</code>。</p>
+<h3>测试指引</h3>
+<p>自带测试证明 Loader 安全的 ESM 导出与 schema 解析后的激活。把激活断言替换为对每个 registry 贡献的可观察行为与销毁断言。产品可见插件应在消费它的 DSH 应用中添加真实 Loader/profile 组合测试,而不是只依赖手工挂载的单元测试。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/plugin-template/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/plugin-template/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

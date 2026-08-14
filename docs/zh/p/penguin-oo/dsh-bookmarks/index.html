@@ -189,81 +189,81 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Bookmark assistant replies in <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH) Web UI: bookmark any finalized assistant reply with a note and tags, browse every bookmark from every session in one center panel, and export them to Markdown in one click.</p>
-<p><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/README.zh.md">中文说明</a></p>
-<h3>Features</h3>
+<p>给 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（DSH）Web 界面加「回复收藏夹」：收藏任意一条已完成的 AI 回复（可加备注和标签），在统一的收藏中心里跨会话浏览、搜索、筛选，一键导出 Markdown。</p>
+<p><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/README.md">English</a></p>
+<h3>功能</h3>
 <ul>
-<li><strong>Per-message bookmark</strong> — an archive button on each finalized assistant reply (right next to the 👍/👎 feedback buttons), with an inline editor for a note and comma-separated tags.</li>
-<li><strong>Server-derived snippet</strong> — the bookmark stores a text preview of the actual reply, so the center stays useful even without a note.</li>
-<li><strong>Cross-session center</strong> — one panel listing bookmarks from all sessions and workspaces, with full-text search, tag filter, inline editing and deletion.</li>
-<li><strong>Jump back</strong> — every entry opens its session in one click.</li>
-<li><strong>Markdown export</strong> — one click downloads all bookmarks as <code>dsh-bookmarks.md</code>.</li>
-<li><strong>Keyboard</strong> — <code>Alt+B</code> toggles the center from anywhere.</li>
-<li><strong>Safe writes</strong> — per-item compare-and-set versions (multi-tab safe), server-side validation, and durable storage via the DSH storage domain.</li>
+<li><strong>逐条收藏</strong> — 每条已定稿的 AI 回复旁边有一个归档按钮（就在 👍/👎 反馈按钮旁），点击收藏，并可内联编辑备注与逗号分隔的标签。</li>
+<li><strong>服务端摘要</strong> — 收藏时宿主端自动从会话日志提取该回复的文本预览，不写备注也能在收藏中心里认出来。</li>
+<li><strong>跨会话收藏中心</strong> — 一个面板汇集所有会话、所有工作区的收藏，支持全文搜索、标签筛选、内联编辑与删除。</li>
+<li><strong>一键跳回</strong> — 每条收藏都能直接打开所属会话。</li>
+<li><strong>导出 Markdown</strong> — 一键下载全部收藏为 <code>dsh-bookmarks.md</code>。</li>
+<li><strong>快捷键</strong> — 任意界面按 <code>Alt+B</code> 开关收藏中心。</li>
+<li><strong>安全写入</strong> — 每条收藏带版本号做 compare-and-set（多标签页安全），服务端严格校验，经 DSH storage domain 持久化。</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-bookmarks
 </code></pre>
-<p>Then restart DSH (<code>dsh web</code>). The plugin appends itself to the profile bundle layer automatically; nothing else to configure.</p>
-<p>For a local checkout:</p>
-<pre><code class="language-sh"># from the plugin repo
-dsh plugin --profile web add file:./        # relative file spec, anchored to your cwd
+<p>然后重启 DSH（<code>dsh web</code>）。插件会自动加入 profile 的 bundle 层，无需其他配置。</p>
+<p>本地开发目录安装：</p>
+<pre><code class="language-sh"># 在插件仓库目录里执行（相对路径会锚定到当前目录）
+dsh plugin --profile web add file:./
 </code></pre>
-<h3>Config</h3>
-<p>The bundle row exposes three limits (all optional):</p>
+<h3>配置</h3>
+<p>bundle 行暴露三个可选上限：</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>键</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>maxNoteBytes</code></td>
 <td><code>4096</code></td>
-<td>Max UTF-8 bytes of one note (<code>&quot;&quot;</code> clears a note; omitting the field keeps it).</td>
+<td>单条备注的最大 UTF-8 字节数（<code>&quot;&quot;</code> 清除备注；省略该字段则保留原值）。</td>
 </tr>
 <tr>
 <td><code>maxSnippetChars</code></td>
 <td><code>300</code></td>
-<td>Max characters of the server-derived reply snippet.</td>
+<td>服务端摘要的最大字符数。</td>
 </tr>
 <tr>
 <td><code>maxTags</code></td>
 <td><code>8</code></td>
-<td>Max tags per bookmark; each tag ≤ 32 chars, trimmed and deduplicated.</td>
+<td>每条收藏的标签上限；单个标签 ≤ 32 字符，自动去空白与去重。</td>
 </tr>
 </tbody></table>
-<p>Override them in the profile patch layer (<code>$DSH_HOME/profiles/web/cordis.patch.yml</code>):</p>
+<p>在 profile 补丁层（<code>$DSH_HOME/profiles/web/cordis.patch.yml</code>）覆盖：</p>
 <pre><code class="language-yaml">- id: bookmarks
   config:
     maxNoteBytes: 2048
     maxSnippetChars: 200
     maxTags: 5
 </code></pre>
-<h3>How it works</h3>
-<p>One npm package hosts both halves of the plugin:</p>
+<h3>原理</h3>
+<p>一个 npm 包承载插件的两个半边：</p>
 <ul>
-<li><strong>Host half</strong> (<code>lib/index.js</code>) — the <code>bookmarks</code> Remote service (Typert), backed by a storage-domain table (<code>$DSH_HOME/storages/bookmarks.json</code>). <code>put</code> inspects the persisted session log to validate the target reply and derive its snippet, mirrors the official <code>message-feedback</code> durability barrier, and serializes mutations with per-item version tokens.</li>
-<li><strong>Browser half</strong> (<code>src/client</code>, bundled to <code>lib/client.js</code>) — mounts the Remote contribution through <code>ctx.remote.$mount</code>, then registers two UI slots: <code>conversation.chat.assistant-actions</code> (the per-message button) and <code>sidebar.footer.action</code> (the center toggle).</li>
+<li><strong>宿主半边</strong>（<code>lib/index.js</code>）— <code>bookmarks</code> Remote 服务（Typert），数据存于 storage-domain（<code>$DSH_HOME/storages/bookmarks.json</code>）。<code>put</code> 会读取持久化的会话日志，校验目标回复真实存在并提取摘要，复刻官方 <code>message-feedback</code> 的持久性屏障，所有写入按版本号串行 + 冲突对账。</li>
+<li><strong>浏览器半边</strong>（<code>src/client</code>，构建为 <code>lib/client.js</code>）— 通过 <code>ctx.remote.$mount</code> 挂载 Remote 描述符，再注册两个 UI 槽位：<code>conversation.chat.assistant-actions</code>（逐条收藏按钮）与 <code>sidebar.footer.action</code>（收藏中心入口）。</li>
 </ul>
-<h3>Development</h3>
-<pre><code class="language-sh">npm install            # zod + esbuild (dev only)
-npm run build          # bundles src/client into lib/client.js
+<h3>开发</h3>
+<pre><code class="language-sh">npm install            # zod + esbuild（仅开发）
+npm run build          # 将 src/client 打包为 lib/client.js
 </code></pre>
-<p><code>lib/client.js</code> is committed and shipped; no build step runs on install.</p>
-<h3>Limitations</h3>
+<p><code>lib/client.js</code> 随包发布，安装时无构建步骤。</p>
+<h3>已知限制</h3>
 <ul>
-<li>Bookmarks are stored in one global row: fine for personal use, not a shared multi-user store.</li>
-<li>The center panel jumps to the bookmarked <em>session</em>; it does not auto-scroll to the exact message yet.</li>
-<li>The panel toggle lives in the sidebar footer; use <code>Alt+B</code> when the sidebar is collapsed.</li>
+<li>收藏存于单个全局行：个人使用完全够用，但不是多用户共享存储。</li>
+<li>收藏中心会跳转到所属<strong>会话</strong>，暂不自动滚动到具体消息。</li>
+<li>中心入口在侧栏底部；侧栏收起时用 <code>Alt+B</code>。</li>
 </ul>
 <h3>License</h3>
 <p><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/penguin-oo/dsh-bookmarks/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

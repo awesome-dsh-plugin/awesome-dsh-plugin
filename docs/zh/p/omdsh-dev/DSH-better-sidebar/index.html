@@ -200,7 +200,7 @@ footer p+p{margin-top:.5rem}
 <ul>
 <li><strong>🗂️ 资源管理器</strong>：懒加载目录树（根 = 会话 cwd），点击打开、<code>@文件</code> 引用、右键复制路径</li>
 <li><strong>📝 编辑与预览</strong>：CodeMirror 6 编辑（Ctrl/Cmd+S 原子保存，切 Tab 不丢草稿）；图片 / Markdown / HTML / PDF / Word / Excel / PPT 内联预览（HTML 走沙箱 iframe）</li>
-<li><strong>⚡ 客户端懒加载</strong>：启动只拉 ~325KB 核心，Office / 终端 / 编辑器等重依赖用到才按需拉取（详见 <code>docs/plans/2026-08-12-lazy-chunks-design.md</code>）</li>
+<li><strong>⚡ 客户端懒加载</strong>：启动只拉 ~325KB 核心，终端 / 编辑器等重依赖用到才按需拉取（详见 <code>docs/plans/2026-08-12-lazy-chunks-design.md</code>）</li>
 <li><strong>🌐 浏览器</strong>：多开内嵌网页 tab，后退/前进/刷新；内容运行在沙箱 iframe（无法访问界面数据与本地文件，拒绝本机地址），可临时解锁（红色警示）；被站点拒绝嵌入时显示原因；外链默认在侧边栏打开</li>
 <li><strong>💻 终端</strong>：xterm.js + node-pty 真实 shell、断线重连回放；可选为模型注入 <code>terminal_*</code> 工具；支持自定义字体（字体族 + 9–32px 字号，实时生效）</li>
 <li><strong>🌿 Git 面板</strong>：真 diff + VSCode 式 diff tab、历史、右键暂存/提交/还原等</li>
@@ -211,6 +211,7 @@ footer p+p{margin-top:.5rem}
 <li><strong>🔁 会话隔离</strong>：布局 / Tab / 面板状态按会话持久化，陈旧状态自动净化；「产出文件」在侧边栏打开</li>
 <li><strong>⚙️ 声明式设置</strong>：设置页「侧边卡片」按注册表渲染开关网格，逐项独立开/关；二级设置（自动展开、终端工具、沙箱等）经齿轮弹窗编辑</li>
 <li><strong>🔌 服务化（基座）</strong>：暴露 <code>ctx.betterSidebar</code>，其他插件可注册 tab 与文件预览器（内置 7 tab + 9 viewer 同走一服务）；v0.12.0 起支持角标/生命周期回调/状态订阅/定向打开/插件自有设置（见 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md">AGENTS.md</a> 与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>）</li>
+<li><strong>➕ 添加插件</strong>：设置页「侧边卡片」两个网格（侧边栏内容 / 文件预览）末尾的虚线卡片分别打开 Tab / 预览插件弹窗：声明扩展点、「在 GitHub 上浏览更多插件」按钮、推荐插件目录（「跳转」直达仓库、「复制」安装命令到剪贴板）；弹窗不打开终端、无失败路径，不阻塞启动与侧边栏</li>
 <li><strong>🌏 多语言</strong>：界面文案跟随 DSH 语言（zh/en）实时切换，无需刷新</li>
 </ul>
 <h3>🚀 安装</h3>
@@ -369,6 +370,13 @@ export function apply(ctx: Context) {
 <li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md"><code>AGENTS.md</code></a></strong>——仓库内维护的接入文档（全字段、匹配算法、HMR 陷阱、声明式设置、版本探测）；</li>
 <li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md"><code>docs/external-plugin-guide.md</code></a></strong>——面向外部插件开发者的接入指南（含完整最小示例）。</li>
 </ul>
+<h4>➕ 添加插件（推荐插件目录）</h4>
+<p>设置页「侧边卡片」→「侧边栏内容」网格末尾的<strong>虚线卡片</strong>打开「添加 Tab 插件」弹窗、「文件预览」网格末尾的<strong>虚线卡片</strong>打开「添加预览插件」弹窗：各自声明对应扩展点可由插件扩展（<code>ctx.betterSidebar</code> 服务）、提供「<strong>在 GitHub 上浏览更多插件</strong>」按钮（新标签页打开 <a href="https://github.com/topics/dsh-better-sidebar">GitHub topic <code>dsh-better-sidebar</code></a>）、并展示对应 kind 的推荐插件目录（名字 / 仓库链接 / 简介 / 安装脚本）。每个条目两个按钮：</p>
+<ul>
+<li><strong>跳转</strong>：新标签页直达插件仓库；</li>
+<li><strong>复制</strong>：把安装命令（<code>cd ~/.dsh &amp;&amp; dsh plugin --profile web add &lt;包名&gt;</code>）写入剪贴板，按钮闪现「已复制」——粘贴到 DSH 所在环境的终端执行即可。弹窗保持打开、不打开终端、无失败路径。</li>
+</ul>
+<p><strong>收录新插件</strong>：按扩展点把一条 <code>PluginEntry</code>（<code>id</code> = npm 包名、<code>name</code>、<code>url</code>、<code>description</code>（i18n 友好，可在 <code>src/client/locales.ts</code> 加 <code>pluginXxxDesc</code> 键）、<code>install</code> = 完整安装命令）追加到 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-tabs.ts"><code>src/client/plugins-tabs.ts</code></a>（Tab 注册）或 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-viewers.ts"><code>src/client/plugins-viewers.ts</code></a>（文件预览注册），并把仓库打上 <code>dsh-better-sidebar</code> topic；数据完整性由 <code>tests/plugin-list.spec.ts</code> 守护。</p>
 <h3>🛠️ 开发与构建</h3>
 <pre><code class="language-sh">pnpm install      # @deepseek-ai/* 已发布到 npm（^0.1.0-rc.6），直接解析、无需令牌
 pnpm typecheck    # tsc --noEmit
@@ -387,7 +395,7 @@ pnpm watch        # tsdown --watch
 <ul>
 <li>Git 无 push/pull/fetch；无文件 watcher（手动刷新）；工具行内文件打开按钮不可拦截</li>
 <li>终端 Tab 拖到另一分栏会重挂载（shell 重开）</li>
-<li><code>.xlsx</code> 预览不保留单元格样式（SheetJS 社区版限制）；Office/PPTX 预览内联进 client bundle（约 23MB），首次加载较慢</li>
+<li>Office 三件套预览（.docx/.xlsx/.pptx）已移至「推荐插件」（Office 预览插件，见设置页「添加插件」弹窗）；未安装时此类文件走代码/下载查看兜底</li>
 <li>浏览器沙箱无登录态/第三方 Cookie 受限，部分站点登录需走弹窗；被 <code>X-Frame-Options</code>/<code>frame-ancestors</code> 拒绝嵌入的站点（如 arxiv.org）显示原因面板（含「在浏览器中打开」）；iframe 内部跳转不进后退栈</li>
 <li>HTML 预览渲染的是已保存文件（不反映未保存草稿）</li>
 <li>移动端（&lt;768px）无底部面板：进入窄屏时其标签页一次性并入右侧栏（迁移后回桌面仍保留在右侧栏），桌面端的底部面板只在宽视口下可用；移动端底部首展自动开终端不触发</li>

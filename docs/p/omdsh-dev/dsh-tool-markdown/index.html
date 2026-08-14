@@ -189,30 +189,30 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-tool-markdown/blob/main/README.en.md">English</a></p>
-<p>DSH Markdown 工具插件 —— HTML↔Markdown 转换、GFM 表格规范化、目录生成。零依赖、纯函数、手写轻量解析器。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-tool-markdown/blob/main/README.md">中文</a></p>
+<p>DSH Markdown tool plugin — HTML↔Markdown conversion, GFM table normalization, table-of-contents generation. Zero dependencies, pure functions, hand-written lightweight parser.</p>
 <p><a href="https://github.com/omdsh-dev/dsh-tool-markdown/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<h3>动机</h3>
-<p>模型最常见的文档场景：用户贴一段 HTML（网页源码、邮件、导出文件）、贴表格要求整理、或要求&quot;转成 markdown&quot;。没有工具时模型只能硬编码处理——HTML 实体会错、表格会乱、网页噪音（导航/脚本/广告）会混入。本插件提供确定性转换，与 <code>dsh-tool-csv</code> 互补：<strong>csv 管结构化表格，markdown 管文档/网页</strong>。</p>
-<h3>安全模型</h3>
+<h3>Motivation</h3>
+<p>The most common document scenarios for models: the user pastes a block of HTML (web page source, email, exported file), pastes a table asking for cleanup, or asks to &quot;convert to markdown&quot;. Without a tool, the model can only hard-code the handling — HTML entities go wrong, tables get mangled, and web noise (nav/scripts/ads) leaks in. This plugin provides deterministic conversion and complements <code>dsh-tool-csv</code>: <strong>csv handles structured tables, markdown handles documents/web pages</strong>.</p>
+<h3>Security model</h3>
 <ul>
-<li><strong>零依赖</strong>：手写递归下降 HTML 解析器（不引入 cheerio/jsdom——净增数十 MB 且是攻击面）</li>
-<li><strong>零执行面</strong>：不 eval、不 new Function、不加载远程资源、不解析 CSS 布局</li>
-<li><strong>内容剥离</strong>：script/style/iframe/object/noscript 内容整体剥离（安全 + 噪音）</li>
-<li><strong>md2html 白名单</strong>：只输出 <code>p h1-h6 ul ol li blockquote pre code a img strong em br hr table thead tbody tr th td</code>；文本一律 HTML 转义——markdown 内嵌 <code>&lt;script&gt;</code> 只会显示为文本</li>
-<li><strong>链接 scheme 白名单</strong>：<code>http/https/mailto</code>；<code>javascript:</code>/<code>data:</code> 链接降级为纯文本</li>
-<li><strong>资源上限</strong>：嵌套深度 64 层报错（防栈溢出）；输入 <code>maxBytes</code> 默认 256KB、硬顶 1MB（超限报错不截断）</li>
-<li>工具参数会记入会话日志，<strong>不要传入含密钥/会话数据的 HTML</strong></li>
+<li><strong>Zero dependencies</strong>: hand-written recursive-descent HTML parser (no cheerio/jsdom — they add tens of MB and are an attack surface)</li>
+<li><strong>Zero execution surface</strong>: no eval, no new Function, no remote resource loading, no CSS layout parsing</li>
+<li><strong>Content stripping</strong>: script/style/iframe/object/noscript contents are stripped entirely (security + noise)</li>
+<li><strong>md2html whitelist</strong>: only outputs <code>p h1-h6 ul ol li blockquote pre code a img strong em br hr table thead tbody tr th td</code>; all text is HTML-escaped — a <code>&lt;script&gt;</code> embedded in markdown is only displayed as text</li>
+<li><strong>Link scheme whitelist</strong>: <code>http/https/mailto</code>; <code>javascript:</code>/<code>data:</code> links degrade to plain text</li>
+<li><strong>Resource limits</strong>: nesting deeper than 64 levels errors (prevents stack overflow); input <code>maxBytes</code> defaults to 256 KB with a hard cap of 1 MB (errors on exceeding, never truncates)</li>
+<li>Tool arguments are recorded in session logs; <strong>do not pass in HTML containing secrets/session data</strong></li>
 </ul>
-<h3>工具声明</h3>
-<p>注册 <code>markdown</code> 工具（<code>@deepseek-ai/dsh-tool-markdown</code>，row id <code>tool-markdown</code>），统一输出文本。</p>
+<h3>Tool declaration</h3>
+<p>Registers the <code>markdown</code> tool (<code>@deepseek-ai/dsh-tool-markdown</code>, row id <code>tool-markdown</code>) with unified text output.</p>
 <table>
 <thead>
 <tr>
-<th>参数</th>
-<th>类型</th>
-<th>必填</th>
-<th>说明</th>
+<th>parameter</th>
+<th>type</th>
+<th>required</th>
+<th>description</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -225,31 +225,31 @@ footer p+p{margin-top:.5rem}
 <td><code>html</code></td>
 <td>string</td>
 <td></td>
-<td>html2md 输入（片段或完整文档）</td>
+<td>html2md input (fragment or full document)</td>
 </tr>
 <tr>
 <td><code>markdown</code></td>
 <td>string</td>
 <td></td>
-<td>md2html/toc 输入</td>
+<td>md2html/toc input</td>
 </tr>
 <tr>
 <td><code>text</code></td>
 <td>string</td>
 <td></td>
-<td>table 输入（HTML <code>&lt;table&gt;</code> 或管道分隔文本）</td>
+<td>table input (HTML <code>&lt;table&gt;</code> or pipe-delimited text)</td>
 </tr>
 <tr>
 <td><code>baseUrl</code></td>
 <td>string</td>
 <td></td>
-<td>相对 href/src 解析基准（naive join）</td>
+<td>Base for resolving relative href/src (naive join)</td>
 </tr>
 <tr>
 <td><code>maxBytes</code></td>
 <td>integer</td>
 <td></td>
-<td>输入上限，默认 256000，硬顶 1000000</td>
+<td>Input cap, default 256000, hard max 1000000</td>
 </tr>
 </tbody></table>
 <h3>Actions</h3>
@@ -257,27 +257,27 @@ footer p+p{margin-top:.5rem}
 <thead>
 <tr>
 <th>action</th>
-<th>功能</th>
+<th>function</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>html2md</code></td>
-<td>HTML → GFM Markdown：块级/行内全映射、表格转 GFM（colspan 占位补齐）、实体解码、script/style 剥离、链接 scheme 过滤（<strong>不做 readability 正文选择</strong>，nav/header/footer 默认透传）</td>
+<td>HTML → GFM Markdown: full block/inline mapping, tables to GFM (colspan placeholder padding), entity decoding, script/style stripping, link scheme filtering (<strong>no readability article extraction</strong> — nav/header/footer pass through by default)</td>
 </tr>
 <tr>
 <td><code>md2html</code></td>
-<td>Markdown → 白名单安全 HTML：全文本转义，无标签可逃逸</td>
+<td>Markdown → whitelist-safe HTML: all text escaped, no tag can escape</td>
 </tr>
 <tr>
 <td><code>table</code></td>
-<td>HTML <code>&lt;table&gt;</code> 或<strong>含未转义 <code>|</code></strong> 的管道分隔文本 → GFM 表格（列补齐、<code>|</code> 转义、分隔行识别；无管道输入报错）</td>
+<td>HTML <code>&lt;table&gt;</code> or pipe-delimited text <strong>containing unescaped <code>|</code></strong> → GFM table (column padding, <code>|</code> escaping, separator row detection; errors on input without pipes)</td>
 </tr>
 <tr>
 <td><code>toc</code></td>
-<td>Markdown 标题 → 嵌套目录列表（简化 GitHub 风格锚点：重复标题自动 -1/-2 后缀、跳过代码围栏内伪标题）</td>
+<td>Markdown headings → nested table-of-contents list (simplified GitHub-style anchors: duplicate headings get automatic -1/-2 suffixes, fake headings inside code fences are skipped)</td>
 </tr>
 </tbody></table>
-<h3>示例</h3>
+<h3>Examples</h3>
 <pre><code>markdown { action: &quot;html2md&quot;, html: &quot;&lt;h1&gt;标题&lt;/h1&gt;&lt;p&gt;你好 &lt;b&gt;世界&lt;/b&gt;&lt;/p&gt;&quot; }
   → # 标题\n\n你好 **世界**
 
@@ -290,104 +290,104 @@ markdown { action: &quot;table&quot;, text: &quot;a|b\n1|2&quot; }
 markdown { action: &quot;toc&quot;, markdown: &quot;# 标题一\n## 小节&quot; }
   → - [标题一](#标题一)\n  - [小节](#小节)
 </code></pre>
-<h3>边界行为</h3>
+<h3>Edge-case behavior</h3>
 <table>
 <thead>
 <tr>
-<th>情况</th>
-<th>处理</th>
+<th>case</th>
+<th>handling</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>未闭合标签</td>
-<td>EOF 自动闭合（与浏览器方向一致）；<code>&lt;p&gt;</code> 中遇块级自动关闭</td>
+<td>Unclosed tags</td>
+<td>Auto-closed at EOF (consistent with browsers); auto-closed on block-level elements inside <code>&lt;p&gt;</code></td>
 </tr>
 <tr>
-<td>大小写</td>
-<td>标签/属性名归一为小写</td>
+<td>Case</td>
+<td>Tag/attribute names normalized to lowercase</td>
 </tr>
 <tr>
-<td>注释/DOCTYPE/CDATA</td>
-<td>剥离</td>
+<td>Comments/DOCTYPE/CDATA</td>
+<td>Stripped</td>
 </tr>
 <tr>
-<td>实体</td>
-<td>命名 + 数字实体解码；未知实体按字面保留（<code>&amp;amp;lt;</code> → <code>&amp;lt;</code>，不二次解码）</td>
+<td>Entities</td>
+<td>Named + numeric entities decoded; unknown entities kept literally (<code>&amp;amp;lt;</code> → <code>&amp;lt;</code>, no double decoding)</td>
 </tr>
 <tr>
-<td>嵌套列表</td>
-<td><code>li</code> 只被新 <code>li</code> 关闭——嵌套 <code>ul/ol</code> 合法（2 空格/层缩进）</td>
+<td>Nested lists</td>
+<td><code>li</code> is only closed by a new <code>li</code> — nested <code>ul/ol</code> is legal (2 spaces/level indentation)</td>
 </tr>
 <tr>
-<td>空白</td>
-<td>行内折叠为单空格；<code>pre/code</code> 原样保留</td>
+<td>Whitespace</td>
+<td>Inline collapsed to single spaces; <code>pre/code</code> preserved as-is</td>
 </tr>
 <tr>
-<td>表格</td>
-<td>首行（thead <code>th</code> 或首行 <code>td</code>）为表头；<code>colspan=N</code> 补 N-1 个占位单元格</td>
+<td>Tables</td>
+<td>First row (thead <code>th</code> or first-row <code>td</code>) is the header; <code>colspan=N</code> pads N-1 placeholder cells</td>
 </tr>
 <tr>
-<td>深度 &gt; 64 层</td>
+<td>Depth &gt; 64 levels</td>
 <td><code>markdown: HTML nesting exceeds 64 levels</code></td>
 </tr>
 <tr>
-<td>输入超限</td>
-<td><code>markdown: &lt;label&gt; exceeds N bytes</code>（不截断）</td>
+<td>Input over limit</td>
+<td><code>markdown: &lt;label&gt; exceeds N bytes</code> (no truncation)</td>
 </tr>
 <tr>
-<td>md2html 内嵌 HTML</td>
-<td>原样转义为文本，绝无白名单外标签输出</td>
+<td>Embedded HTML in md2html</td>
+<td>Escaped as text as-is; whitelist-external tags are never output</td>
 </tr>
 </tbody></table>
-<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
-<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 的隔离 consumer 中完成全链路验证：</p>
+<h3>npm 0.1.0-rc.6 compatibility (verified)</h3>
+<p>This plugin has been migrated to the npm 0.1.0-rc.6 dependency line and fully verified in an isolated consumer of <code>@deepseek-ai/dsh@0.1.0-rc.6</code>:</p>
 <ul>
-<li><strong>类型/运行时</strong>：<code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code>（peer）；不再依赖 unscoped <code>cordis</code></li>
-<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
-<li><strong>消费验证</strong>：tarball 装入 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
-<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+<li><strong>Types/runtime</strong>: <code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code> (peer); no longer depends on unscoped <code>cordis</code></li>
+<li><strong>Standalone build</strong>: <code>npm install</code> (devDependencies are self-contained: typescript/vitest/@types/node) → <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>Consumption verification</strong>: tarball installed into the 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> shows this plugin&#39;s row → the tool actually registers and executes</li>
+<li><strong>Startup</strong>: <code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code> (lib production mode; do not <code>install -g</code> globally)</li>
 </ul>
-<h3>安装</h3>
-<p>插件源码仓库：<code>https://github.com/omdsh-dev/dsh-tool-markdown</code>（public）。</p>
-<h4>Profile Bundle（推荐）</h4>
-<p>将本插件作为独立 bundle 安装到 profile（DSH 0.1.0-rc.6，npm）：</p>
+<h3>Installation</h3>
+<p>Plugin source repository: <code>https://github.com/omdsh-dev/dsh-tool-markdown</code> (public).</p>
+<h4>Profile Bundle (recommended)</h4>
+<p>Install this plugin as a standalone bundle into a profile (DSH 0.1.0-rc.6, npm):</p>
 <pre><code class="language-sh"># 交互式（web）profile
 dsh plugin --profile web add github:omdsh-dev/dsh-tool-markdown
 # 一次性任务（headless）profile —— dsh run 默认使用 headless
 dsh plugin --profile headless add github:omdsh-dev/dsh-tool-markdown
 </code></pre>
-<p>包内 <code>dsh.bundle.patch</code> 会在安装后自动把插件加入 profile 的 layer stack（row id：<code>tool-markdown</code>）。</p>
+<p>The <code>dsh.bundle.patch</code> inside the package automatically adds the plugin to the profile&#39;s layer stack after installation (row id: <code>tool-markdown</code>).</p>
 <blockquote>
-<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。</p>
+<p>⚠️ web and headless are <strong>different profiles</strong>: installing into web does not automatically cover headless; <code>dsh run</code> uses the headless profile by default.</p>
 </blockquote>
-<h4>npm pack tarball 安装</h4>
-<pre><code class="language-sh">npm pack    # 生成 dsh-tool-markdown-*.tgz
+<h4>Install via npm pack tarball</h4>
+<pre><code class="language-sh">npm pack    # generates dsh-tool-markdown-*.tgz
 dsh plugin --profile web add ./dsh-tool-markdown-*.tgz
 dsh plugin --profile headless add ./dsh-tool-markdown-*.tgz
 </code></pre>
-<h4>验证安装</h4>
+<h4>Verify installation</h4>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep tool-markdown
 </code></pre>
-<h4>运行验证</h4>
+<h4>Run verification</h4>
 <pre><code class="language-sh">dsh run &quot;使用 markdown 工具把 &lt;h1&gt;标题&lt;/h1&gt; 转成 Markdown&quot;
 </code></pre>
-<h4>手动安装与旧版本兼容</h4>
-<p>仅适用于不支持 Profile Bundle 的旧快照或插件开发调试环境（本地 junction/symlink、手动编辑 profile 层）。</p>
-<h3>测试</h3>
+<h4>Manual installation and legacy compatibility</h4>
+<p>Only for legacy snapshots that do not support Profile Bundle, or plugin development/debugging environments (local junction/symlink, manually editing profile layers).</p>
+<h3>Testing</h3>
 <pre><code class="language-bash">node &lt;monorepo&gt;/node_modules/vitest/vitest.mjs run tests
 </code></pre>
 <ul>
-<li><code>html.spec.ts</code>：解析器边界（嵌套/未闭合/大小写/自闭合/注释/script 剥离/实体/畸形属性/深度守卫）</li>
-<li><code>html2md.spec.ts</code>：块级与行内映射全表、表格（colspan/表头/转义）、scheme 过滤、baseUrl</li>
-<li><code>md2html.spec.ts</code>：白名单结构 + 安全（内嵌 script 转义、javascript: 降级、引号转义）</li>
-<li><code>table.spec.ts</code>：HTML/管道输入、列补齐、<code>\|</code> 转义；<code>toc.spec</code> 目录与 slugify</li>
-<li><code>register.spec.ts</code>：注册契约（AUDIT-CROSS-02 风格）</li>
+<li><code>html.spec.ts</code>: parser boundaries (nesting/unclosed/case/self-closing/comments/script stripping/entities/malformed attributes/depth guard)</li>
+<li><code>html2md.spec.ts</code>: full block/inline mapping table, tables (colspan/header/escaping), scheme filtering, baseUrl</li>
+<li><code>md2html.spec.ts</code>: whitelist structure + security (embedded script escaping, javascript: degradation, quote escaping)</li>
+<li><code>table.spec.ts</code>: HTML/pipe inputs, column padding, <code>\|</code> escaping; <code>toc.spec</code> TOC and slugify</li>
+<li><code>register.spec.ts</code>: registration contract (AUDIT-CROSS-02 style)</li>
 </ul>
-<h3>许可</h3>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-markdown/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-markdown/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

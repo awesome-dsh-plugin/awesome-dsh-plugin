@@ -189,62 +189,62 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/ICCuse/dsh-file-memory/blob/main/README.zh.md">中文</a> | English</p>
-<p>File-backed working memory for long tasks. Two model-facing tools — <code>memorize</code> and <code>recall</code> — keep key premises as <strong>verbatim bytes</strong> in a session-scoped notes file inside the workspace, so they survive context compaction losslessly: a summarizer can blur or drop a fact, but a file round-trips it byte-exact.</p>
-<h3>Why</h3>
-<p>Compaction checkpoints are LLM-generated and LLM-rewritten generation after generation; the prompt-space &quot;state document&quot; proposals still re-summarize the previous state every pass. Files are the only lossless medium the agent already has: write once, read back exactly. This is the pragmatic complement to prompt-space compaction, usable today on the shipped <code>compaction-basic</code> backend.</p>
-<h3>Tools</h3>
+<p><a href="https://github.com/ICCuse/dsh-file-memory/blob/main/README.md">English</a> | 中文</p>
+<p>面向长任务的文件型工作记忆。两个模型侧工具——<code>memorize</code> 与 <code>recall</code>——把关键前提以<strong>逐字字节</strong>形式保存在工作区内按会话隔离的笔记文件里，因此能无损地挺过上下文压缩：摘要器可以把事实模糊或丢掉，但文件能逐字节原样往返。</p>
+<h3>为什么</h3>
+<p>压缩检查点是 LLM 生成的、并逐代被 LLM 重写；prompt 空间里的&quot;状态文档&quot;提案每一轮仍会对上一版状态再摘要。文件是 agent 手上唯一无损的介质：写一次，读回即原样。这是对 prompt 空间压缩的务实补充，在当前随附的 <code>compaction-basic</code> 后端上今天就能用。</p>
+<h3>工具</h3>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Behavior</th>
+<th>工具</th>
+<th>行为</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>memorize(entries)</code></td>
-<td>Appends verbatim deduplicated lines to <code>&lt;workspace&gt;/.dsh-notes/&lt;session&gt;.md</code>.</td>
+<td>把逐字去重后的行追加到 <code>&lt;workspace&gt;/.dsh-notes/&lt;session&gt;.md</code>。</td>
 </tr>
 <tr>
 <td><code>recall(query?)</code></td>
-<td>Reads the notes back, optionally filtered to lines containing <code>query</code>; caps output at <code>maxRecallChars</code>.</td>
+<td>读回笔记，可选按包含 <code>query</code> 的行过滤；输出上限 <code>maxRecallChars</code>。</td>
 </tr>
 </tbody></table>
-<p>Both require an agent-backed session and a mounted <code>fs</code> service; they resolve the notes file relative to the session&#39;s workspace cwd (falling back to the backend default when the session has no cwd).</p>
-<h3>Config</h3>
+<p>两者都要求 agent 会话与已挂载的 <code>fs</code> 服务；笔记文件相对会话工作区 cwd 解析（会话无 cwd 时回退到后端默认基准）。</p>
+<h3>配置</h3>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>maxRecallChars</code></td>
 <td><code>6000</code></td>
-<td>Recall output cap.</td>
+<td>recall 输出上限。</td>
 </tr>
 <tr>
 <td><code>notesDir</code></td>
 <td><code>.dsh-notes</code></td>
-<td>Notes directory name inside the workspace; must be a bare directory name.</td>
+<td>工作区内的笔记目录名；必须是裸目录名。</td>
 </tr>
 </tbody></table>
-<p><code>maxRecallChars</code> must be an integer <code>&gt;= 1</code>; misconfiguration throws at plugin load.</p>
-<h3>Install</h3>
-<p>Not on npm yet - install from this repository:</p>
+<p><code>maxRecallChars</code> 必须为 <code>&gt;= 1</code> 的整数；配置错误在插件加载时直接抛错。</p>
+<h3>安装</h3>
+<p>尚未发布到 npm —— 直接从此仓库安装：</p>
 <pre><code class="language-sh">npm install github:ICCuse/dsh-file-memory
-# or: pnpm add github:ICCuse/dsh-file-memory
+# 或：pnpm add github:ICCuse/dsh-file-memory
 </code></pre>
-<p>Then mount the bundle (declared in package.json &#39;dsh.bundle&#39;):</p>
+<p>然后在 profile 组装中挂载（package.json 已声明 <code>dsh.bundle</code>）：</p>
 <pre><code class="language-yaml">- id: dsh-file-memory
   name: &#39;dsh-file-memory&#39;
 </code></pre>
-<p>Or, once published, &#39;dsh plugin --profile web add dsh-file-memory&#39;.</p>
+<p>发布后亦可 <code>dsh plugin --profile web add dsh-file-memory</code>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/ICCuse/dsh-file-memory/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/ICCuse/dsh-file-memory/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

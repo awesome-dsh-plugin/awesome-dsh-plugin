@@ -189,19 +189,19 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/ilharp/dsh-tool-approval/blob/master/README.zh.md">中文</a></p>
-<p>Add pre-approval to any Tool Calling, aka &quot;Manual Mode&quot;/&quot;Ask Mode&quot;.</p>
+<p><a href="https://github.com/ilharp/dsh-tool-approval/blob/master/README.md">English</a> | 中文</p>
+<p>给任意 Tool Calling 加上前置审批，aka &quot;Manual Mode&quot;/&quot;Ask Mode&quot;。</p>
 <p><img src="https://raw.githubusercontent.com/ilharp/dsh-tool-approval/master/assets/img1.png" alt=""></p>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-tool-approval
 </code></pre>
-<h3>Config</h3>
-<h4>Default config</h4>
+<h3>配置</h3>
+<h4>默认配置</h4>
 <pre><code class="language-yml">- id: tool-approval
   name: dsh-tool-approval
 </code></pre>
-<p>With the default config, every Tool Calling goes through pre-approval.</p>
-<h4>Custom config</h4>
+<p>默认配置下每次 Tool Calling 都会加上前置审批。</p>
+<h4>自定义配置</h4>
 <pre><code class="language-yml">- id: tool-approval
   name: dsh-tool-approval
   config:
@@ -209,12 +209,12 @@ footer p+p{margin-top:.5rem}
     exclude: [task_output]
     reason: tool execution requires your approval
 </code></pre>
-<p>Only tools specified in <code>include</code> get pre-approval; tools in <code>exclude</code> pass through. Wildcards are supported.</p>
+<p>只有 <code>include</code> 指定了的工具会前置审批，<code>exclude</code> 的工具会放行。支持通配符。</p>
 <h3>LICENSE</h3>
 <p><a href="https://github.com/ilharp/dsh-tool-approval/blob/master/LICENSE">BSD 3-Clause</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/ilharp/dsh-tool-approval/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/ilharp/dsh-tool-approval/blob/master/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

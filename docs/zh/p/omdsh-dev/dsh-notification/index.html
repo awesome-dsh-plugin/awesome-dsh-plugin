@@ -189,111 +189,111 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Desktop notifications for the DeepSeek Harness web GUI. When a session finishes a turn, the browser shows a system notification (via the <code>Notification</code> API), so you can switch tabs and still know when DSH is done. Per-outcome toggles and include/exclude keyword rules control exactly which completions notify.</p>
-<p>No harness change is needed: the host contributes a session projection (a bounded summary of each session&#39;s last completed turn), and the client watches the session list&#39;s completion reminder and applies its own persisted preferences.</p>
-<pre><code>host:  notification projection (last turn&#39;s reason/text/tools) --session/projection--&gt; browser
-client: session list completion reminder (live, dedup) + persisted settings
-        -&gt; permission + current-session visibility gate
-        -&gt; new Notification(&quot;DSH finished&quot;, { body: &quot;deploy done&quot; })
+<p>DeepSeek Harness Web GUI 的桌面通知插件。当会话结束一轮任务时，浏览器通过系统 <code>Notification</code> API 弹出通知，让你切到别的标签页也能知道 DSH 已经完成。按结束状态开关 + 关键词包含/排除规则，精确控制哪些完成要提醒。</p>
+<p><strong>无需改动 harness</strong>：host 侧贡献一个会话投影（每个会话最近完成一轮的有界摘要），client 侧监听会话列表的完成提醒，并应用自己持久化的偏好设置。</p>
+<pre><code>host:   notification 投影（最近一轮的原因/正文/工具名） --session/projection--&gt; 浏览器
+client: 会话列表完成提醒（实时、去重）+ 持久化设置
+        -&gt; 权限 + 当前会话可见性门控
+        -&gt; new Notification(&quot;DSH 已完成&quot;, { body: &quot;部署完成&quot; })
 </code></pre>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/heads/main.tar.gz
 </code></pre>
-<p>Restart the web server so the host half and the served client bundle pick up the plugin. The default <code>dsh web</code> profile has the required client composition (the session list, the settings shell, and locale).</p>
-<p>The settings section lives under <strong>Settings &gt; Notifications</strong>.</p>
-<h3>Settings</h3>
+<p>随后重启 web 服务以加载 host 半部分与新的 client bundle。默认的 <code>dsh web</code> profile 已包含所需 client 组合（会话列表、设置外壳、locale）。</p>
+<p>设置段位于 <strong>设置 &gt; 通知</strong>。</p>
+<h3>设置</h3>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Default</th>
-<th>Effect</th>
+<th>设置项</th>
+<th>默认</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Enable notifications</td>
-<td>on</td>
-<td>Master switch; off stops every notification while keeping rules.</td>
+<td>启用通知</td>
+<td>开</td>
+<td>总开关；关闭后不再弹出，规则与偏好保留。</td>
 </tr>
 <tr>
-<td>Notify on completed / error / aborted / blocked / token limit</td>
-<td>completed + error on, rest off</td>
-<td>Which turn-end reasons notify (the host projection reports the reason).</td>
+<td>正常完成 / 出错 / 中止 / 阻塞 / 达 Token 上限</td>
+<td>完成 + 出错开，其余关</td>
+<td>哪些结束状态触发通知（host 投影会报告结束原因）。</td>
 </tr>
 <tr>
-<td>Keyword rules</td>
-<td>none</td>
-<td>Include/exclude filters matched against the session title, the turn&#39;s reply text, and its tool names. Include rules: at least one must match. Exclude rules: a match suppresses. Rules support literal or regex matching with an optional case-sensitive flag.</td>
+<td>关键词规则</td>
+<td>无</td>
+<td>针对会话标题、该轮回复文本与调用过的工具名做包含/排除匹配。包含规则：至少命中一条才通知；排除规则：命中即不通知。支持字面量或正则，可区分大小写。</td>
 </tr>
 <tr>
-<td>Require manual dismiss</td>
-<td>off</td>
-<td>The notification stays until dismissed.</td>
+<td>需要手动关闭</td>
+<td>关</td>
+<td>通知保持显示直到手动关闭。</td>
 </tr>
 <tr>
-<td>Only notify when the task is out of view</td>
-<td>on</td>
-<td>Suppress a notification only when its session is currently in view. A completion still notifies while the page is hidden or while another session/workspace is open. Turn it off to notify even for the session being watched. Notifications for the same session replace each other.</td>
+<td>仅在任务不在眼前时通知</td>
+<td>开</td>
+<td>只有完成任务所属会话正显示在眼前时才不提醒；页面在后台，或正在查看其他会话、其他工作区时仍会提醒。关闭后，即使正在观看该会话也会通知。同一会话的通知会互相替换。</td>
 </tr>
 </tbody></table>
-<p>Preferences persist in the browser (localStorage). The section also grants browser permission and sends a test notification.</p>
-<h3>Configuration</h3>
-<p>Host-side tunables live on the plugin row in <code>cordis.yml</code>:</p>
+<p>偏好保存在浏览器（localStorage）。设置段内还可授予浏览器权限并发送测试通知。</p>
+<h3>配置</h3>
+<p>Host 侧可调参数在 <code>cordis.yml</code> 的插件行上：</p>
 <pre><code class="language-yaml">- id: dsh-notification
   name: dsh-notification
   config:
-    maxBodyChars: 400      # projection body budget; longer replies are ellipsized host-side
+    maxBodyChars: 400      # 投影正文预算；更长的回复会在 host 侧省略号截断
 </code></pre>
-<h3>Model experience</h3>
+<h3>对模型的影响</h3>
 <table>
 <thead>
 <tr>
-<th>Aspect</th>
-<th>Effect</th>
+<th>方面</th>
+<th>效果</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Token cost</td>
-<td>None — notifications are UI-only and never enter a request.</td>
+<td>Token 开销</td>
+<td>无 —— 通知纯属 UI，绝不进入请求。</td>
 </tr>
 <tr>
-<td>Tool calls</td>
-<td>None — the model gets no new tool.</td>
+<td>工具调用</td>
+<td>无 —— 模型没有新增任何工具。</td>
 </tr>
 <tr>
-<td>Session log</td>
-<td>Unchanged — the projection reads the existing log and adds no events.</td>
+<td>会话日志</td>
+<td>不变 —— 投影只读已有日志，不新增事件。</td>
 </tr>
 <tr>
-<td>Prompt</td>
-<td>Unchanged — no system-prompt section is registered.</td>
+<td>提示词</td>
+<td>不变 —— 不注册任何 system prompt 段。</td>
 </tr>
 </tbody></table>
-<h3>Permission boundary</h3>
+<h3>权限边界</h3>
 <ul>
-<li>The host folds a pure projection over the session log (turn reason, bounded reply text, tool names) and the projection seam delivers it to the browser; the plugin writes nothing to the log and registers no model-facing tools.</li>
-<li>The client watches the session list&#39;s completion reminder (a live &quot;finished while not selected&quot; edge the runtime already computes) and shows a notification only when the user has granted Notification permission.</li>
-<li>Rule matching runs client-side against the projected content; the reply body never exceeds <code>maxBodyChars</code>.</li>
+<li>host 侧对会话日志做纯投影折叠（轮次原因、有界的回复文本、工具名），由投影通道交付给浏览器；插件不写日志，不注册面向模型的工具。</li>
+<li>client 侧监听会话列表的完成提醒（运行时已计算的&quot;未选中会话已完成&quot;实时去重信号），仅在用户授予 Notification 权限后弹通知。</li>
+<li>规则匹配在 client 侧针对投影内容进行；回复正文不超过 <code>maxBodyChars</code>。</li>
 </ul>
-<h3>Development</h3>
-<pre><code class="language-sh">pnpm install            # links the sibling dsh checkout for build and tests
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install            # 链接同级 dsh 仓库用于构建与测试
 pnpm run check          # typecheck + tests + build
-pnpm run test           # vitest (host projection + composition, client decision/runner/helpers/section)
-pnpm run build          # esbuild host/client/invariant bundles + tsc declarations
+pnpm run test           # vitest（host 投影 + 组合、client 判定/runner/辅助函数/设置段）
+pnpm run build          # esbuild host/client/invariant 打包 + tsc 声明
 </code></pre>
-<p>The repo expects the harness checkout at <code>../dsh</code> for the dev-time <code>link:</code> resolutions. The composition spec boots the real <code>SessionStore</code> and <code>SessionProjectionRegistry</code> and proves the fold.</p>
-<h3>Known limitations</h3>
+<p>仓库依赖同级 <code>../dsh</code> 仓库用于开发期 <code>link:</code> 解析。组合测试用真实 <code>SessionStore</code> 与 <code>SessionProjectionRegistry</code> 验证投影折叠。</p>
+<h3>已知限制</h3>
 <ul>
-<li>Notifications require the page to be open (the browser shows them while it is hidden, but not after the tab is closed) and Notification permission granted; a denied site permission cannot be overridden from inside the page.</li>
-<li>Notifications fire once per finished turn (a running→idle edge on any session); a completion that happened while the page was disconnected is not re-notified on reconnect.</li>
-<li>The rule subject is the session title plus the last turn&#39;s reply text and tool names — earlier turns are not matched.</li>
-<li>Notification body is a flat text snippet; the click action only focuses the window (no deep link to the turn).</li>
+<li>通知需要页面处于打开状态（隐藏时可弹，但关闭标签页后不再弹），且需授予 Notification 权限；站点权限被拒后无法从页面内恢复。</li>
+<li>通知在每轮结束（任意会话的 running→idle 边沿）触发一次；断线期间完成的轮次在重连后不会补发。</li>
+<li>规则匹配对象为会话标题 + 最近一轮的回复文本与工具名，不匹配更早的轮次。</li>
+<li>通知正文是纯文本摘要；点击仅聚焦窗口（不深链到具体轮次）。</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-notification/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-notification/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

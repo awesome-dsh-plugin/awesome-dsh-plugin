@@ -189,41 +189,29 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/omdsh-dev/Qwen-MM-Plugins/blob/main/README.zh.md">中文</a></p>
-<p>Qwen-MM capabilities as an installable DSH profile bundle. The package keeps the Qwen-MM implementation small and explicit: it fetches each selected Agent Skill at a configured upstream ref, starts its MCP server through the existing DSH client in required-initial-discovery mode, and mounts the skill only after tool discovery succeeds.</p>
-<h3>Repository shape</h3>
-<pre><code class="language-text">package.json              # runtime package and dsh.bundle manifest
-cordis.patch.yml          # opt-in profile layer
-src/                      # Cordis plugin and invariant companion
-lib/                      # generated install artifact
-legacy/                   # source-compatible host integration patch for older DSH snapshots
-tests/                    # plugin and composition tests
+<p><a href="https://github.com/omdsh-dev/Qwen-MM-Plugins/blob/main/README.md">English</a> | 中文</p>
+<p>Qwen-MM 能力的可安装 DSH profile 组合包。插件在配置的上游 ref 下拉取 Agent Skill，通过现有 DSH MCP client 以 required-initial-discovery 模式启动 MCP server，并且只在工具发现成功后挂载 skill。</p>
+<h3>仓库结构</h3>
+<pre><code class="language-text">package.json              # 运行时包和 dsh.bundle 清单
+cordis.patch.yml          # 显式 opt-in 的 profile 层
+src/                      # Cordis 插件和 invariant companion
+lib/                      # 生成的安装产物
+legacy/                   # 旧 DSH 快照的宿主接线补丁，仅作迁移资料
+tests/                    # 插件和组合测试
 </code></pre>
-<p>The package is intentionally private and can be installed from a Git checkout or linked into a profile. It does not vendor the Qwen-MM Python implementation.</p>
-<h3>Bundle behavior</h3>
-<p>Installing the bundle adds a disabled <code>qwen-mm</code> row. This is deliberate: enabling it starts remote Git fetches and external MCP processes, so the deployment must provide the exact Qwen-MM ref, capability list, and any capability environment explicitly in its profile layer.</p>
+<p>组合包安装后只加入一个默认禁用的 <code>qwen-mm</code> 行。这是有意设计：启用后会进行远程 Git 拉取并启动外部 MCP 进程，因此部署必须在自己的 profile 层明确提供精确 ref、能力列表和环境变量。</p>
 <pre><code class="language-yaml">- id: qwen-mm
   disabled: false
   config:
     source: https://github.com/QwenLM/Qwen-MM-Plugins.git
-    ref: &lt;exact commit or tag&gt;
+    ref: &lt;精确 commit 或 tag&gt;
     capabilities:
       - id: core
       - id: video-memory
 </code></pre>
-<p>The bundle patch only composes the plugin row. Image content blocks, MCP image results, model modality checks, token accounting, compaction, replay, and Web summaries must be provided by the DSH version used by the profile; the old host patch is retained under <code>legacy/</code> only as a migration artifact for snapshots that do not yet provide those seams.</p>
-<h3>Capabilities</h3>
-<p>The plugin currently recognizes:</p>
-<pre><code class="language-text">core
-video-memory
-video-edit
-blender
-freecad
-edu-agent
-</code></pre>
-<p>Each capability can override its command, arguments, environment, and working directory. <code>strict: true</code> turns a per-capability warning into a load failure; the default skips only the failed capability.</p>
-<h3>Development</h3>
-<p>A full typecheck expects sibling checkouts:</p>
+<p>旧宿主补丁只保留在 <code>legacy/</code> 中，供尚未提供图像内容块、MCP image result、model modality、token 计价、compaction、replay 和 Web 摘要接缝的 DSH 快照迁移使用；新的 bundle 层不再修改宿主源码。</p>
+<h3>开发</h3>
+<p>完整 typecheck 需要 sibling checkout：</p>
 <pre><code class="language-text">~/git/deepseek-harness
 ~/git/Qwen-MM-Plugins
 </code></pre>
@@ -232,19 +220,17 @@ pnpm run typecheck
 pnpm test
 pnpm run build
 </code></pre>
-<p>The <code>prepare</code> script uses a source-only tsdown configuration so a Git install can build <code>lib/</code> without a DSH sibling checkout or project references. pnpm 10 may require the profile to allow the package&#39;s <code>prepare</code> script; only approve a pinned, trusted checkout.</p>
-<h3>Model Experience</h3>
-<p>The plugin contributes no fixed prompt text. Its selected Agent Skills and MCP tools become model-visible through the authoritative DSH skill and tool services, which own logging, lifecycle, cancellation, and result rendering.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<p>Git 安装通过 <code>prepare</code> 使用不依赖 sibling checkout 的 tsdown 配置生成 <code>lib/</code>。pnpm 10 可能要求 profile 允许该 prepare 脚本；只应批准固定且可信的 checkout。</p>
+<h3>已知限制</h3>
 <ul>
-<li>External capability fetches require <code>git</code>; default MCP launches require <code>uvx</code> and the capability&#39;s Python environment.</li>
-<li>Capabilities that produce images require a resolved model route that declares image-input support.</li>
-<li>The bundle does not silently forward credential-shaped environment variables; capability credentials must be configured explicitly.</li>
-<li>The real Loader composition checks require a DSH <code>mcp-client</code> build whose async plugin load performs required initial discovery; older synchronous host snapshots skip those checks because they can mount the skill before tools are ready.</li>
+<li>外部能力拉取需要 <code>git</code>；默认 MCP 启动需要 <code>uvx</code> 和对应的 Python 环境。</li>
+<li>产生图片的能力需要使用声明支持 image input 的模型 route。</li>
+<li>插件不会自动转发 credential-shaped 环境变量，能力凭据必须显式配置。</li>
+<li>真实 Loader 组合测试要求 DSH <code>mcp-client</code> 使用异步插件加载并执行 required initial discovery；较旧的同步宿主快照会跳过这些测试，因为它们可能在工具就绪前挂载 skill。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/Qwen-MM-Plugins/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/Qwen-MM-Plugins/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

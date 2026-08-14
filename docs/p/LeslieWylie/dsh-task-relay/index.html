@@ -189,100 +189,97 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/LeslieWylie/dsh-task-relay/blob/main/README.en.md">English</a></p>
-<p>DSH 跨会话任务接力板插件 —— 基于持久队列的<strong>跨会话/子agent 任务接力</strong> + <strong>交接摘要</strong>。</p>
+<p><a href="https://github.com/LeslieWylie/dsh-task-relay/blob/main/README.md">中文</a></p>
+<p>DSH cross-session task relay plugin — a <strong>persistent shared task queue</strong> with <strong>handoff notes</strong> for cross-session and subagent coordination.</p>
 <p><a href="https://github.com/LeslieWylie/dsh-task-relay/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<h3>为什么</h3>
-<p>DSH 的会话生命周期是独立的：会话 A 做完的工作，会话 B 默认不知道。<code>dsh-task-relay</code> 填补了这个空白——它提供一个<strong>跨会话共享任务队列</strong>，任何会话（包括子 agent）都可以：</p>
+<h3>Why</h3>
+<p>DSH sessions are independent: work done in session A is invisible to session B by default. <code>dsh-task-relay</code> fills this gap with a <strong>cross-session task queue</strong> that any session (including subagents) can:</p>
 <ul>
-<li>投递任务给未来的自己 / 其他会话 / 子 agent</li>
-<li>认领和完成开放任务</li>
-<li>记录会话交接摘要，供后续会话查看</li>
+<li>Push tasks for future sessions / other sessions / subagents</li>
+<li>Claim and complete open tasks</li>
+<li>Record session handoff summaries for later sessions</li>
 </ul>
-<h3>工具一览</h3>
+<h3>Tools</h3>
 <table>
 <thead>
 <tr>
-<th>工具</th>
-<th>能力</th>
-<th>描述</th>
+<th>Tool</th>
+<th>Action</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>task_push</code></td>
-<td>推送任务</td>
-<td>投递新任务到共享队列，指定标题/描述/优先级/标签</td>
+<td>Push task</td>
+<td>Submit a task to the shared queue with title/description/priority/tags</td>
 </tr>
 <tr>
 <td><code>task_list</code></td>
-<td>查询任务</td>
-<td>按状态/优先级/标签筛选，返回降序列表</td>
+<td>List tasks</td>
+<td>Filter by status/priority/tags, returned in descending order</td>
 </tr>
 <tr>
 <td><code>task_claim</code></td>
-<td>认领任务</td>
-<td>认领一个开放任务，标记为 claimed</td>
+<td>Claim task</td>
+<td>Claim an open task, marking it as claimed</td>
 </tr>
 <tr>
 <td><code>task_done</code></td>
-<td>完成任务</td>
-<td>标记任务为已完成，记录结果</td>
+<td>Complete task</td>
+<td>Mark a task as done with a result description</td>
 </tr>
 <tr>
 <td><code>task_cancel</code></td>
-<td>取消任务</td>
-<td>open 则删除，claimed 则退回 open</td>
+<td>Cancel task</td>
+<td>Delete open tasks, return claimed tasks to open</td>
 </tr>
 <tr>
 <td><code>handoff_write</code></td>
-<td>写交接摘要</td>
-<td>记录当前会话的工作进展和待办事项</td>
+<td>Write handoff</td>
+<td>Record current session&#39;s progress and TODOs</td>
 </tr>
 <tr>
 <td><code>handoff_read</code></td>
-<td>读交接摘要</td>
-<td>按会话 ID 或最近 N 条读取</td>
+<td>Read handoff</td>
+<td>Read by session ID or latest N handoffs</td>
 </tr>
 </tbody></table>
-<h3>安装</h3>
-<pre><code class="language-sh"># 安装到 web profile
-dsh plugin --profile web add github:LeslieWylie/dsh-task-relay
-
-# 安装到 headless profile
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:LeslieWylie/dsh-task-relay
 dsh plugin --profile headless add github:LeslieWylie/dsh-task-relay
 </code></pre>
-<p>或者在 <code>cordis.yml</code> 中追加：</p>
+<p>Or add to <code>cordis.yml</code>:</p>
 <pre><code class="language-yaml">- id: task-relay
   name: &#39;dsh-task-relay&#39;
 </code></pre>
-<h3>使用示例</h3>
-<h4>跨会话任务接力</h4>
-<p><strong>会话 A</strong>：推送一条任务</p>
-<pre><code>task_push title=&quot;修复登录页 Bug&quot; priority=&quot;high&quot; tags=[&quot;bug&quot;,&quot;frontend&quot;]
-→ { &quot;id&quot;: &quot;T1723647600000-1&quot;, &quot;title&quot;: &quot;修复登录页 Bug&quot;, &quot;status&quot;: &quot;open&quot;, ... }
+<h3>Usage</h3>
+<h4>Cross-session task relay</h4>
+<p><strong>Session A</strong>: Push a task</p>
+<pre><code>task_push title=&quot;Fix login page bug&quot; priority=&quot;high&quot; tags=[&quot;bug&quot;,&quot;frontend&quot;]
+→ { &quot;id&quot;: &quot;T1723647600000-1&quot;, &quot;title&quot;: &quot;Fix login page bug&quot;, &quot;status&quot;: &quot;open&quot;, ... }
 </code></pre>
-<p><strong>会话 B</strong>：查看并认领</p>
+<p><strong>Session B</strong>: List and claim</p>
 <pre><code>task_list status=&quot;open&quot; priority=&quot;high&quot;
-→ 共 1 条任务，显示 1 条
+→ Showing 1 of 1 tasks
 task_claim id=&quot;T1723647600000-1&quot;
 → { &quot;id&quot;: &quot;T1723647600000-1&quot;, &quot;status&quot;: &quot;claimed&quot;, &quot;claimedBy&quot;: &quot;session-b&quot;, ... }
 </code></pre>
-<p><strong>会话 B</strong>：完成后通知</p>
-<pre><code>task_done id=&quot;T1723647600000-1&quot; result=&quot;已修复，commit abc123&quot;
-→ { &quot;id&quot;: &quot;T1723647600000-1&quot;, &quot;status&quot;: &quot;done&quot;, &quot;result&quot;: &quot;已修复，commit abc123&quot;, ... }
+<p><strong>Session B</strong>: Complete</p>
+<pre><code>task_done id=&quot;T1723647600000-1&quot; result=&quot;Fixed in commit abc123&quot;
+→ { &quot;id&quot;: &quot;T1723647600000-1&quot;, &quot;status&quot;: &quot;done&quot;, &quot;result&quot;: &quot;Fixed in commit abc123&quot;, ... }
 </code></pre>
-<h4>会话交接</h4>
-<p><strong>会话结束时</strong>：</p>
-<pre><code>handoff_write summary=&quot;完成了功能 A 的开发，剩余功能 B 和 C 待做。功能 B 的前端组件已搭好框架，后端 API 需要从 session-x 的交接中获取接口文档。&quot;
+<h4>Session handoff</h4>
+<p><strong>End of session</strong>:</p>
+<pre><code>handoff_write summary=&quot;Completed feature A development. Features B and C remain. Feature B&#39;s frontend scaffold is ready, backend API docs needed from session-x&#39;s handoff.&quot;
 → { &quot;sessionId&quot;: &quot;session-a&quot;, &quot;summary&quot;: &quot;...&quot;, &quot;openTasks&quot;: 2, ... }
 </code></pre>
-<p><strong>新会话启动时</strong>：</p>
+<p><strong>New session startup</strong>:</p>
 <pre><code>handoff_read
-→ 共 3 条交接摘要，显示最近 5 条
+→ Showing 3 handoffs, 3 most recent
 </code></pre>
-<h3>数据存储</h3>
-<p>所有数据存储在 <code>$HOME/.dsh/task-relay/queue.json</code>，使用原子写入（temp file + rename）防止数据损坏。</p>
-<p>改用别的目录，在 bundle 行加 <code>config.root</code>：</p>
+<h3>Data Storage</h3>
+<p>All data is stored in <code>$HOME/.dsh/task-relay/queue.json</code> with atomic writes (temp file + rename) to prevent corruption.</p>
+<p>To put the queue somewhere else, set <code>config.root</code> on the bundle row:</p>
 <pre><code class="language-yaml">- id: task-relay
   name: &#39;dsh-task-relay&#39;
   config:
@@ -291,69 +288,69 @@ task_claim id=&quot;T1723647600000-1&quot;
 <table>
 <thead>
 <tr>
-<th>配置项</th>
-<th>默认值</th>
-<th>说明</th>
+<th>Key</th>
+<th>Default</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>root</code></td>
 <td><code>$HOME/.dsh/task-relay</code></td>
-<td>队列文件所在目录。不同 profile 指向不同目录即可各自独立。</td>
+<td>Directory holding the queue file. Point separate profiles at separate roots to keep their queues apart.</td>
 </tr>
 </tbody></table>
-<h3>架构</h3>
+<h3>Architecture</h3>
 <pre><code>dsh-task-relay/
 ├── src/
-│   ├── index.ts      # 插件入口：注册 7 个工具
-│   ├── store.ts      # 持久化存储层（JSON 文件 + 原子写入）
-│   ├── tools.ts      # 工具定义（defineTool）
-│   ├── types.ts      # 类型定义
-│   └── invariant.ts  # 输入验证
+│   ├── index.ts      # Plugin entry: registers 7 tools
+│   ├── store.ts      # Persistence layer (JSON file + atomic writes)
+│   ├── tools.ts      # Tool definitions (defineTool)
+│   ├── types.ts      # Type definitions
+│   └── invariant.ts  # Input validation
 ├── tests/
-│   ├── store.spec.ts # 存储层单元测试（18 个）
-│   └── tools.spec.ts # 工具注册与执行测试（8 个）
+│   ├── store.spec.ts # Store unit tests (18)
+│   └── tools.spec.ts # Tool registration &amp; execution tests (8)
 ├── cordis.patch.yml  # DSH bundle patch
 ├── LICENSE           # MIT
-├── README.md         # 中文文档
+├── README.md         # Chinese docs
 ├── README.en.md      # English docs
 └── package.json
 </code></pre>
-<h3>开发</h3>
+<h3>Development</h3>
 <pre><code class="language-sh">npm install
 npm run typecheck   # tsc --noEmit
 npm test            # vitest run (26 tests)
-npm run test:boot   # 通过真实 cordis registry 执行已构建产物
+npm run test:boot   # executes the built artifact through a real cordis registry
 npm run build       # tsc
 npm run check       # typecheck + test + build
 </code></pre>
-<h4>为什么 <code>lib/</code> 提交进了仓库</h4>
-<p>因为不提交就没人装得上。</p>
-<p>包的入口是 <code>lib/index.js</code>，由 <code>tsc</code> 生成。而 pnpm 出于安全考虑，<strong>默认拒绝为 git 依赖执行构建脚本</strong>，所以从 GitHub 安装会直接失败：</p>
+<h4>Why <code>lib/</code> is committed</h4>
+<p>Because otherwise nobody can install it.</p>
+<p>The entry point is <code>lib/index.js</code>, produced by <code>tsc</code>. pnpm refuses by default to run build scripts for a git dependency, so installing from GitHub failed outright:</p>
 <pre><code>ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED  The git-hosted package &quot;dsh-task-relay@0.0.1&quot;
 needs to execute build scripts but is not in the &quot;onlyBuiltDependencies&quot; allowlist.
 </code></pre>
-<p>包甚至没能进入 <code>node_modules</code>。而 v0.0.1 期间 26 个单测始终全绿——因为它们 import 的是 <code>src/*.ts</code>，<strong>从不碰包对外承诺的那个入口</strong>。作者本机一直正常，只是因为 profile 用 <code>link:</code> 指向了一份本地已构建的目录。</p>
-<p>提交构建产物换来了可安装性，代价是可能与源码脱节。<code>tests/boot.test.mjs</code> 和 CI 各自重新构建一次再比对，脱节就报错——这是为那个代价买的单。</p>
-<h4>为什么 peer 范围写得这么别扭</h4>
-<p><code>@deepseek-ai/dsh-tools</code> 的 peer 范围是：</p>
+<p>The package never even reached <code>node_modules</code>. All 26 unit tests stayed green throughout, because they import <code>src/*.ts</code> and never touch the entry point the package actually publishes. It worked on the author&#39;s machine only because the profile used <code>link:</code> to point at a locally built copy.</p>
+<p>Committing build output buys installability and costs freshness. <code>tests/boot.test.mjs</code> and CI each rebuild and diff against the committed <code>lib/</code>, failing if it drifts — that is what pays the cost back.</p>
+<h4>Why the peer range looks so awkward</h4>
+<p>The peer range for <code>@deepseek-ai/dsh-tools</code> is:</p>
 <pre><code>&gt;=0.0.1-rc.1 &lt;0.1.0 || &gt;=0.1.0-rc.1 &lt;0.2.0-0
 </code></pre>
-<p>看着啰嗦，但直觉写法是错的。semver 规定：<strong>预发布版本只有在某个比较符与它 major.minor.patch 完全相同、且该比较符自身也带预发布标签时，才算命中。</strong></p>
-<p>所以 v0.1.0 用的 <code>&gt;=0.0.1-rc.1 &lt;0.2.0</code> <strong>匹配不上 <code>0.1.0-rc.6</code></strong>——而这正是当前 harness 实际运行的版本（npm 上 <code>latest</code> 标签停在旧的 <code>0.0.1-rc.1</code>，当前线在 <code>next</code> 标签）。npm 于是转而去装 <code>0.0.1-rc.1</code>，在任何真实 profile 里都会 ERESOLVE 报错。</p>
-<p>顺带一提，<code>&gt;=0.0.0-0 &lt;0.2.0-0</code> 这种&quot;通配预发布&quot;的写法同样无效——实测它一个 <code>0.1.0</code> 的预发布都匹配不到。只有显式 <code>||</code> 把两条预发布线分别列出来才行。</p>
-<h3>安全边界</h3>
+<p>Verbose, but the intuitive version is wrong. semver&#39;s rule is that <strong>a prerelease only satisfies a comparator set if some comparator shares its exact major.minor.patch tuple <em>and</em> carries a prerelease tag of its own.</strong></p>
+<p>So the <code>&gt;=0.0.1-rc.1 &lt;0.2.0</code> shipped in v0.1.0 <strong>does not match <code>0.1.0-rc.6</code></strong> — which is the version shipping harnesses actually run (npm&#39;s <code>latest</code> tag is pinned to the older <code>0.0.1-rc.1</code>; the current line lives on <code>next</code>). npm therefore tried to install <code>0.0.1-rc.1</code> alongside it and failed with ERESOLVE in any real profile.</p>
+<p>Note also that the &quot;wildcard prerelease&quot; form <code>&gt;=0.0.0-0 &lt;0.2.0-0</code> does not work either — measured, it matches no <code>0.1.0</code> prerelease at all. Only an explicit <code>||</code> naming both prerelease lines does.</p>
+<h3>Security</h3>
 <ul>
-<li>纯工具插件，不联网、不执行外部命令</li>
-<li>数据存储在用户主目录下的 <code>~/.dsh/task-relay/</code>，目录权限 700</li>
-<li>输入验证：标题 200 字符、描述 4000 字符、摘要 2000 字符、标签 10 个</li>
-<li>认领/完成操作有会话归属校验</li>
+<li>Pure tool plugin: no network access, no external commands</li>
+<li>Data stored in <code>~/.dsh/task-relay/</code> with directory mode 700</li>
+<li>Input validation: 200-char title, 4000-char description, 2000-char summary, 10 tags max</li>
+<li>Claim/complete operations validate session ownership</li>
 </ul>
-<h3>许可</h3>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/LeslieWylie/dsh-task-relay/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/LeslieWylie/dsh-task-relay/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

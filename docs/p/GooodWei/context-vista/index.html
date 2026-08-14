@@ -195,22 +195,22 @@ footer p+p{margin-top:.5rem}
 <h2>context-vista</h2>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
 <blockquote>
-<p>一眼看清你的上下文窗口 —— token 用量、压缩收益、成本估算，尽收眼底。</p>
+<p>See your context window at a glance — token usage, compaction savings, and cost estimates, all in one view.</p>
 </blockquote>
-<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 提供 <code>/context</code> 斜杠命令，用<strong>环形图</strong>实时展示当前上下文 token 用量与分配。对话区右侧还常驻一张迷你悬浮卡，实时显示占用率与估算费用，可拖动、可收起。</p>
-<h3>安装</h3>
+<p>A <code>/context</code> slash command for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> that shows the current context token usage and allocation as a <strong>donut chart</strong>. A mini floating card also stays on the right side of the conversation area, showing occupancy and estimated cost live — draggable and collapsible.</p>
+<h3>Installation</h3>
 <pre><code class="language-sh">npx @deepseek-ai/dsh plugin --profile web add github:GooodWei/context-vista
 npx @deepseek-ai/dsh web
 </code></pre>
 <blockquote>
-<p>需先安装 pnpm（<code>dsh plugin add</code> 内部会调用它）。已全局安装 dsh 时，<code>npx @deepseek-ai/dsh</code> 可简写为 <code>dsh</code>。</p>
+<p>Install pnpm first (<code>dsh plugin add</code> invokes it internally). If dsh is installed globally, <code>npx @deepseek-ai/dsh</code> can be shortened to <code>dsh</code>.</p>
 </blockquote>
-<h3>使用</h3>
-<p>输入 <code>/context</code> 回车，展示一张卡片：上下文组成环形图（系统 / 工具 / 消息 / 剩余）、占用进度条、会话累计与估算费用。</p>
-<p>右侧的迷你环形图悬浮卡实时更新、无需输入命令；按住标题栏可上下拖动（位置自动记忆），点右上角箭头可收起/展开。悬浮卡底部还有「压缩上下文」按钮，点击即触发 <code>/compact</code>（效果等同输入命令），压缩进行中会显示「压缩中…」并禁用。</p>
-<h3>自定义定价</h3>
-<p>内置 DeepSeek 官方定价（人民币 ¥，含峰谷）。要覆盖或新增，编辑 <code>~/.dsh/settings.yaml</code>（热加载，无需重启）。<strong>货币单位与峰谷定义都跟随 API（路由）</strong>，每个路由可各自指定。</p>
-<h4>最简示例</h4>
+<h3>Usage</h3>
+<p>Type <code>/context</code> and press Enter to see a card: a context composition donut (system / tools / messages / free), an occupancy bar, session totals, and an estimated cost.</p>
+<p>The mini donut card on the right updates live with no input; drag its title bar to move it vertically (position is remembered), and click the arrow to collapse/expand. A &quot;Compact context&quot; button at the bottom of the card triggers <code>/compact</code> (same effect as typing the command); it shows &quot;Compacting…&quot; and disables while the compaction runs.</p>
+<h3>Custom pricing</h3>
+<p>Built-in DeepSeek official pricing (CNY ¥, with peak/off-peak). To override or add, edit <code>~/.dsh/settings.yaml</code> (hot-reloaded, no restart). <strong>Currency and peak/off-peak definitions both follow the API (route)</strong> — each route can set its own.</p>
+<h4>Minimal example</h4>
 <pre><code class="language-yaml">context-vista:
   pricing:
     &quot;https://api.deepseek.com&quot;:
@@ -219,52 +219,52 @@ npx @deepseek-ai/dsh web
           peak:    { hit: 0.3, miss: 9, output: 27 }
           offpeak: { hit: 0.15, miss: 4.5, output: 13.5 }
 </code></pre>
-<h4>完整示例（DeepSeek ¥ + OpenAI $，标注全部键值对）</h4>
+<h4>Full example (DeepSeek ¥ + OpenAI $, all keys annotated)</h4>
 <pre><code class="language-yaml">context-vista:
-  pricing:                                  # 定价表：外层键 = 路由名 或 baseURL
-    &quot;https://api.deepseek.com&quot;:             # 路由①：DeepSeek，人民币 + 北京时间峰谷
-      currency: &quot;¥&quot;                         #   本 API 的计价货币单位（省略默认 &quot;¥&quot;）
-      timezone: 8                           #   峰谷时段所在时区（UTC 偏移；省略默认 8）
-      peakWindows:                          #   高峰窗口，HH:MM，含起点不含终点；start &gt; end 表示跨午夜
-        - start: &quot;09:00&quot;                    #     高峰起点
-          end: &quot;12:00&quot;                      #     高峰终点
-        - start: &quot;14:00&quot;                    #     第二段高峰起点
-          end: &quot;18:00&quot;                      #     第二段高峰终点
-      models:                               #   本 API 下的模型（必填）
-        deepseek-v4-pro:                    #     模型名
-          peak:                             #       写法一（峰谷分档）· 高峰价
-            hit: 0.3                        #         输入 · 命中缓存，每百万 tokens
-            miss: 9                         #         输入 · 未命中缓存，每百万 tokens
-            output: 27                      #         输出，每百万 tokens
-          offpeak:                          #       空闲价
-            hit: 0.15                       #         输入 · 命中缓存
-            miss: 4.5                       #         输入 · 未命中缓存
-            output: 13.5                    #         输出
+  pricing:                                  # pricing table: outer key = route name or baseURL
+    &quot;https://api.deepseek.com&quot;:             # route 1: DeepSeek, CNY + Beijing-time peak/off-peak
+      currency: &quot;¥&quot;                         #   this API&#39;s currency symbol (omit for default &quot;¥&quot;)
+      timezone: 8                           #   timezone of peak/off-peak windows (UTC offset; omit for default 8)
+      peakWindows:                          #   peak windows, HH:MM, inclusive start, exclusive end; start &gt; end = crossing midnight
+        - start: &quot;09:00&quot;                    #     peak start
+          end: &quot;12:00&quot;                      #     peak end
+        - start: &quot;14:00&quot;                    #     second peak start
+          end: &quot;18:00&quot;                      #     second peak end
+      models:                               #   models under this API (required)
+        deepseek-v4-pro:                    #     model name
+          peak:                             #       form 1 (peak/off-peak split) · peak price
+            hit: 0.3                        #         cached input, per 1M tokens
+            miss: 9                         #         uncached input, per 1M tokens
+            output: 27                      #         output, per 1M tokens
+          offpeak:                          #       off-peak price
+            hit: 0.15                       #         cached input
+            miss: 4.5                       #         uncached input
+            output: 13.5                    #         output
 
-    &quot;https://api.openai.com/v1&quot;:            # 路由②：OpenAI（ChatGPT），美元 + 无峰谷
-      currency: &quot;__P_README_SECTION__quot;                         #   本 API 的计价货币单位
-      models:                               #   无 timezone/peakWindows → 直接走平坦价
-        &quot;gpt-5.5&quot;:                          #     模型名
-          hit: 2.5                          #       输入 · 命中缓存，每百万 tokens
-          miss: 10                          #       输入 · 未命中缓存，每百万 tokens
-          output: 30                        #       输出，每百万 tokens
+    &quot;https://api.openai.com/v1&quot;:            # route 2: OpenAI (ChatGPT), USD + no peak/off-peak
+      currency: &quot;__P_README_SECTION__quot;                         #   this API&#39;s currency symbol
+      models:                               #   no timezone/peakWindows → flat pricing
+        &quot;gpt-5.5&quot;:                          #     model name
+          hit: 2.5                          #       cached input, per 1M tokens
+          miss: 10                          #       uncached input, per 1M tokens
+          output: 30                        #       output, per 1M tokens
 </code></pre>
 <blockquote>
-<p>价格为<strong>每百万 tokens</strong> 的单价，按各 API 实际币种填写；<code>currency</code> 只控制显示符号、不换算汇率；无峰谷的 API 省略 <code>timezone</code> / <code>peakWindows</code> 即可。上表数字仅示意。</p>
+<p>Prices are per 1M tokens in each API&#39;s billing currency; <code>currency</code> only changes the displayed symbol, with no rate conversion. For APIs without peak/off-peak, just omit <code>timezone</code> / <code>peakWindows</code>. The numbers above are illustrative.</p>
 </blockquote>
 <ul>
-<li>外层键可用 provider 路由名（如 <code>deepseek-official</code>）或 baseURL（含 <code>:</code> 需加引号）。</li>
-<li>每个路由可带 <code>currency</code> / <code>timezone</code> / <code>peakWindows</code>（各自覆盖全局默认），<code>models</code> 为必填。</li>
-<li>模型价格条目二选一：<strong>平坦</strong> <code>{ hit, miss, output }</code>，或<strong>峰谷</strong> <code>{ peak, offpeak }</code>。</li>
-<li>支持 <code>*</code> 作为路由名或模型名的通配符。</li>
-<li>未匹配到的模型按内置默认（模型名含 <code>flash</code> 走 flash 档，否则 pro 档）。</li>
-<li>金额仅为估算，非账单。</li>
+<li>The outer key can be a provider route name (e.g. <code>deepseek-official</code>) or a baseURL (quote keys containing <code>:</code>).</li>
+<li>Each route can set <code>currency</code> / <code>timezone</code> / <code>peakWindows</code> (each overrides the global default); <code>models</code> is required.</li>
+<li>A model price entry is either <strong>flat</strong> <code>{ hit, miss, output }</code>, or <strong>peak/off-peak</strong> <code>{ peak, offpeak }</code>.</li>
+<li><code>*</code> is supported as a wildcard for the route name or model name.</li>
+<li>Unmatched models use the built-in default (model names containing <code>flash</code> use the flash tier, otherwise pro).</li>
+<li>The amount is an estimate, not a bill.</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/GooodWei/context-vista/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/GooodWei/context-vista/blob/master/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

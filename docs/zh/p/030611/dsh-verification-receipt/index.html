@@ -192,45 +192,45 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/030611/dsh-verification-receipt/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://github.com/030611/dsh-verification-receipt/blob/main/README.md">English</a></p>
 <p><a href="https://github.com/030611/dsh-verification-receipt/actions/workflows/ci.yml"><img src="https://github.com/030611/dsh-verification-receipt/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://www.npmjs.com/package/dsh-verification-receipt"><img src="https://img.shields.io/npm/v/dsh-verification-receipt" alt="npm"></a>
 <a href="https://github.com/030611/dsh-verification-receipt/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
 <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
 <a href="https://whyihaveyou.github.io/dsh-suite/"><img src="https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe" alt="featured on dsh-suite"></a></p>
-<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/social-preview.jpg" alt="DSH Verification Receipt social preview"></p>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/social-preview.jpg" alt="DSH Verification Receipt 社交预览图"></p>
 <blockquote>
-<p>Ask a smaller, checkable question: what verification-shaped execution signals did DSH record this turn?</p>
+<p>回答一个范围更小、可以检查的问题：这一轮中，DSH 记录了哪些形似验证操作的执行信号？</p>
 </blockquote>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-verification-receipt
 </code></pre>
-<p>The receipt summarizes recorded tool counts and lexical verification-shaped signals. It does <strong>not</strong> prove that tests ran or that code is correct.</p>
+<p>Receipt 汇总已记录的工具计数与词法层面的形似验证信号；它<strong>不能</strong>证明测试确实运行，也不能证明代码正确。</p>
 <blockquote>
-<p>Community-maintained and not an official DeepSeek project. Related trust-layer plugins: <a href="https://github.com/030611/dsh-telemetry-redactor">Telemetry Redactor</a>, <a href="https://github.com/030611/qiushi-dsh-evidence-audit">Evidence Audit</a>, and <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>.</p>
+<p>由社区维护，并非 DeepSeek 官方项目。相关 trust-layer 插件：<a href="https://github.com/030611/dsh-telemetry-redactor">Telemetry Redactor</a>、<a href="https://github.com/030611/qiushi-dsh-evidence-audit">Evidence Audit</a> 与 <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>。</p>
 </blockquote>
-<p>DSH Verification Receipt is a small, passive Profile Bundle for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. After each durable <code>turn/end</code>, it appends one privacy-minimal, heuristic execution summary to a local JSONL file.</p>
-<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/verification-flow.svg" alt="Verification Receipt data flow"></p>
-<p>It records execution traces, not semantic correctness. A receipt shows only that DSH logged tool calls and that a lexical heuristic found a possible verification signal. It never proves that a test ran. It cannot show that the right command executed, that assertions were sufficient, that output was truthful, or that the assistant&#39;s conclusion was correct.</p>
-<p>This is intentionally not an evidence-audit ledger: rows stay independent and there is no hash chain, artifact capture, claim-evidence linkage, or protocol attestation.</p>
-<h3>Compatibility evidence</h3>
-<p>The package is audited against DeepSeek Harness commit <code>47f943859bef60e4160492346772ded9b24f765a</code>, whose manifests declare <code>@deepseek-ai/dsh-session</code> <code>0.1.0-rc.5</code>, Cordis <code>4.0.1</code>, and Schemastery <code>3.18.1</code>. Peer ranges start at those versions and stop before <code>dsh-session</code> stable <code>0.1.0</code> or the next Cordis/Schemastery semver major. The release checks also exercise the available <code>dsh-session</code> <code>0.1.0-rc.6</code> package. Versions admitted by the range but not named here are compatibility expectations, not tested evidence. Cordis and Session are optional host peers because DSH supplies their runtime services; Schemastery is included as an exact runtime dependency and also declared as a compatibility peer.</p>
-<h3>Install</h3>
-<p>Add the published package to every profile that should emit receipts:</p>
+<p>DSH Verification Receipt 是一个面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的小型、被动式 Profile Bundle。每次耐久的 <code>turn/end</code> 到达后，它会向本地 JSONL 文件追加一条隐私最小化、启发式执行摘要。</p>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/verification-flow.svg" alt="Verification Receipt 数据流"></p>
+<p>它记录执行痕迹，不证明语义正确。凭证只能说明 DSH 记录了工具调用，并且词法启发式发现了可能的验证信号；它永远不能证明“测试已运行”，也不能说明正确命令得到执行、断言充分、输出真实或助手结论正确。</p>
+<p>它有意不做 evidence-audit 账本：各行保持独立，不引入哈希链、产物捕获、claim-evidence 关联或协议证明。</p>
+<h3>兼容性证据</h3>
+<p>本包以 DeepSeek Harness 提交 <code>47f943859bef60e4160492346772ded9b24f765a</code> 为审计基线；该提交的 manifest 声明 <code>@deepseek-ai/dsh-session</code> <code>0.1.0-rc.5</code>、Cordis <code>4.0.1</code> 和 Schemastery <code>3.18.1</code>。peer 范围从这些版本开始，在 <code>dsh-session</code> 稳定版 <code>0.1.0</code> 或 Cordis/Schemastery 下一个 semver 主版本之前结束。发布检查也覆盖当前可安装的 <code>dsh-session</code> <code>0.1.0-rc.6</code>。范围内但未在此点名的版本只是兼容预期，不是实测证据。Cordis 和 Session 由 DSH 宿主提供，因此标为 optional peer；Schemastery 既以精确版本作为运行时依赖，也声明为兼容性 peer。</p>
+<h3>安装</h3>
+<p>把已发布的包加入需要生成凭证的每个 profile：</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-verification-receipt
 dsh --profile web --dump-config
 </code></pre>
-<p>Repeat the first command with another profile name (for example, <code>headless</code>) when that profile also needs receipts. For local development, clone this repository, run <code>pnpm install --frozen-lockfile &amp;&amp; pnpm run check</code>, and pass the checkout path to <code>dsh plugin ... add</code> instead of the package name.</p>
-<p><code>package.json</code> declares <code>dsh.bundle.patch</code>; <code>cordis.patch.yml</code> inserts one ordinary observer plugin. It works on any DSH surface that provides the core Session service.</p>
-<h3>Output</h3>
-<p>The default file is:</p>
+<p>如果其他 profile（例如 <code>headless</code>）也需要凭证，请换用对应 profile 名重复第一条命令。本地开发时，克隆本仓库并运行 <code>pnpm install --frozen-lockfile &amp;&amp; pnpm run check</code>，再把 checkout 路径而不是包名传给 <code>dsh plugin ... add</code>。</p>
+<p><code>package.json</code> 声明 <code>dsh.bundle.patch</code>；<code>cordis.patch.yml</code> 插入一个普通观察插件。任何提供核心 Session 服务的 DSH 输出面都可以使用它。</p>
+<h3>输出</h3>
+<p>默认文件为：</p>
 <pre><code class="language-text">$DSH_HOME/verification-receipts/v1/receipts.jsonl
 </code></pre>
-<p>When <code>DSH_HOME</code> is unset, it resolves below <code>~/.dsh</code>. Override it with an absolute path in the profile&#39;s <code>cordis.patch.yml</code>:</p>
+<p><code>DSH_HOME</code> 未设置时，路径解析到 <code>~/.dsh</code> 下。可以在 profile 的 <code>cordis.patch.yml</code> 中用绝对路径覆盖：</p>
 <pre><code class="language-yaml">- id: verification-receipt
   config:
     outputPath: /absolute/private/path/receipts.jsonl
 </code></pre>
-<p>Each line has this form:</p>
+<p>每行格式如下：</p>
 <pre><code class="language-json">{
   &quot;schemaVersion&quot;: 1,
   &quot;kind&quot;: &quot;dsh-verification-receipt&quot;,
@@ -258,105 +258,105 @@ dsh --profile web --dump-config
   &quot;receiptHash&quot;: &quot;sha256:…&quot;
 }
 </code></pre>
-<h4>Integrity warning</h4>
-<p>Both hashes are unkeyed and recomputable. <code>receiptHash</code> is SHA-256 over the exact preceding receipt fields in their emitted order. Anyone who can edit a row can recompute it. Independent rows do not reveal deletion, insertion, reordering, truncation, rollback, or replacement. The hash is neither a signature nor a trusted timestamp, hash chain, commitment, or tamper-evident log.</p>
-<h3>Privacy and agent behavior</h3>
-<p>The persisted receipt does not contain:</p>
+<h4>完整性警告</h4>
+<p>两个 hash 都没有密钥，均可重算。<code>receiptHash</code> 是对其前面全部凭证字段按输出顺序计算的 SHA-256；能编辑一行的人也能重新计算它。独立行无法暴露删除、插入、重排、截断、回滚或替换。它不是签名、可信时间戳、哈希链、承诺或防篡改日志。</p>
+<h3>隐私与 Agent 行为</h3>
+<p>落盘凭证不包含：</p>
 <ul>
-<li>tool arguments or call ids;</li>
-<li>tool result content or error messages;</li>
-<li>assistant or user message text;</li>
-<li>raw session ids, working directories, provider names, or model names.</li>
+<li>工具参数或 call id；</li>
+<li>工具结果正文或错误消息；</li>
+<li>助手或用户消息正文；</li>
+<li>原始 session id、工作目录、provider 名称或模型名称。</li>
 </ul>
-<p>The plugin temporarily reads tool names, raw arguments, and result status from existing durable events to compute the summary. It does not persist those inputs, append a Session event, register a tool, add a prompt section, inject context, make a model call, or change model history.</p>
-<p><code>sessionIdHash</code> is deterministic, unkeyed, and domain-separated so receipts from one Session can be grouped without storing its raw id. It is linkable across files. If a Session id is predictable or low entropy, an observer can guess candidates offline and recompute the hash; this is pseudonymization, not anonymization.</p>
-<h3>Verification-signal heuristic</h3>
-<p>A heuristic signal is emitted when either:</p>
+<p>插件会暂时读取已有耐久事件里的工具名称、原始参数和结果状态来计算汇总，但不会持久化这些输入。它不追加 Session 事件、不注册工具、不添加 prompt 段、不注入上下文、不发起模型调用，也不改变模型历史。</p>
+<p><code>sessionIdHash</code> 是确定性、无密钥且带域分隔的 SHA-256，用于在不保存原始 id 的前提下将同一 Session 的凭证分组。它可跨文件关联。如果 Session id 可预测或熵低，观察者可以离线猜测候选值并重算 hash；这是化名化，不是匿名化。</p>
+<h3>验证信号启发式</h3>
+<p>以下情况会产生启发式信号：</p>
 <ul>
-<li>a tool name resembles test, typecheck, lint, build, check, verify, or validate work; or</li>
-<li>a shell-like tool&#39;s in-memory <code>command</code> or <code>cmd</code> argument resembles such work.</li>
+<li>工具名称类似 test、typecheck、lint、build、check、verify 或 validate 工作；或者</li>
+<li>类 shell 工具在内存中的 <code>command</code> 或 <code>cmd</code> 参数类似上述工作。</li>
 </ul>
-<p>The stored signal keeps only <code>source</code>, coarse <code>category</code>, and observed <code>status</code>. Native DSH tool errors and recognized non-zero shell exit markers count as failure. Background commands remain <code>unresolved</code> because their later job result may occur outside this turn. Even <code>status: succeeded</code> means only that the observed call completed without a recognized failure marker; it does not mean tests passed or even ran.</p>
-<p>Classification is lexical; it does not parse shell syntax, expand aliases, or execute commands:</p>
+<p>落盘信号只保留 <code>source</code>、粗粒度 <code>category</code> 和观察到的 <code>status</code>。DSH 原生工具错误以及可识别的非零 shell 退出标记计为失败。后台命令保持 <code>unresolved</code>，因为后续 job 结果可能发生在本轮之外。即使是 <code>status: succeeded</code>，也只表示观察到的调用没有已识别失败标记；它不表示测试通过，甚至不表示测试确实运行。</p>
+<p>分类只做词法匹配，不解析 shell 语义、不展开别名，也不执行命令：</p>
 <table>
 <thead>
 <tr>
-<th>Input shape</th>
-<th>Support</th>
-<th>Boundary</th>
+<th>输入形态</th>
+<th>支持情况</th>
+<th>边界</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>JSON-string or object arguments with string <code>command</code>/<code>cmd</code></td>
-<td>Supported</td>
-<td>Only recognized shell-like tool names are inspected.</td>
+<td>JSON 字符串或对象参数中的字符串 <code>command</code>/<code>cmd</code></td>
+<td>支持</td>
+<td>只检查已识别的类 shell 工具名。</td>
 </tr>
 <tr>
-<td>Upper/lower case, quotes, or visible wrappers such as <code>bash -lc</code>/<code>pwsh -Command</code></td>
-<td>Supported lexically</td>
-<td>A category keyword must remain visible in the string.</td>
+<td>大小写、引号，或可见的 <code>bash -lc</code>/<code>pwsh -Command</code> wrapper</td>
+<td>词法支持</td>
+<td>分类关键词必须仍在字符串中可见。</td>
 </tr>
 <tr>
-<td>Array commands, <code>argv</code>, nested command objects, custom shell tool names</td>
-<td>Unsupported</td>
-<td>No signal is emitted.</td>
+<td>数组命令、<code>argv</code>、嵌套命令对象、自定义 shell 工具名</td>
+<td>不支持</td>
+<td>不产生信号。</td>
 </tr>
 <tr>
-<td>Aliases or wrappers with no visible category keyword</td>
-<td>Unsupported</td>
-<td>False negatives are expected.</td>
+<td>不含可见分类关键词的别名或 wrapper</td>
+<td>不支持</td>
+<td>预期存在漏判。</td>
 </tr>
 <tr>
-<td>Quoted prose such as <code>echo &quot;do not run tests&quot;</code></td>
-<td>Lexically matched</td>
-<td>False positives are expected because intent and execution are not parsed.</td>
+<td><code>echo &quot;do not run tests&quot;</code> 一类引用文本</td>
+<td>会被词法匹配</td>
+<td>因为不解析意图与执行，预期存在误判。</td>
 </tr>
 </tbody></table>
-<p>Treat every match as a discovery hint named “heuristic signal,” never as “tests ran,” an attestation, or a quality gate.</p>
-<h3>Model experience</h3>
+<p>每个匹配都只能称为“启发式信号”，绝不能称为“测试已运行”，也不能作为证明或质量门禁。</p>
+<h3>模型体验</h3>
 <table>
 <thead>
 <tr>
-<th>Aspect</th>
-<th>Effect</th>
+<th>方面</th>
+<th>影响</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Token cost</td>
-<td>None.</td>
+<td>Token 成本</td>
+<td>无。</td>
 </tr>
 <tr>
-<td>Tool calls</td>
-<td>None; the model gets no new tool.</td>
+<td>工具调用</td>
+<td>无；模型不会获得新工具。</td>
 </tr>
 <tr>
-<td>Session log</td>
-<td>Unchanged; the plugin reads existing events and adds no events.</td>
+<td>Session 日志</td>
+<td>不变；插件只读已有事件，不添加事件。</td>
 </tr>
 <tr>
-<td>Prompt and context</td>
-<td>Unchanged.</td>
+<td>Prompt 与上下文</td>
+<td>不变。</td>
 </tr>
 <tr>
-<td>Turn latency</td>
-<td>The listener scans the completed turn synchronously and queues local file I/O; it does not await disk on the turn path.</td>
+<td>Turn 延迟</td>
+<td>监听器同步扫描已结束的 turn，并排队本地文件 I/O；turn 路径不等待磁盘。</td>
 </tr>
 </tbody></table>
-<h3>Known limitations</h3>
+<h3>已知限制</h3>
 <ul>
-<li>Receipts cover events observed by the running plugin. Constructor seed history and turns completed while it was unloaded are not backfilled.</li>
-<li>A process crash can lose a queued receipt because <code>turn/end</code> does not synchronously wait for this optional local sink. Normal plugin/application disposal drains accepted writes.</li>
-<li>Disposal first closes the enqueue gate, then unregisters listeners, then drains accepted writes. Abrupt process termination cannot run that lifecycle.</li>
-<li>Receipt rows are independent; deletion, reordering, truncation, and rollback are not detectable.</li>
-<li>Receipt status repeats DSH&#39;s recorded tool outcome and recognized shell markers. It does not independently execute or validate anything.</li>
-<li>Projection cost grows with the number and size of events in a turn; unusually large tool arguments can add end-of-turn CPU time while they are classified in memory.</li>
-<li>The in-process write queue is ordered but unbounded. A slow or stuck filesystem can grow memory usage until writes recover or the process ends.</li>
-<li>There is no cross-process lock. Two DSH processes targeting one file have no guaranteed row order or row-boundary integrity; use one file per process. A crash can leave an incomplete final line, which readers must reject or quarantine.</li>
-<li>Creation modes request <code>0700</code>/<code>0600</code> on supporting POSIX filesystems only. Existing permissions are not tightened, Windows may ignore POSIX modes, and pre-existing symbolic links are followed. Configure a trusted, private, non-symlink path.</li>
-<li>The file has no built-in rotation, retention, encryption, signing, or recovery.</li>
+<li>凭证只覆盖插件运行期间观察到的事件；不会回填构造 seed 历史或插件卸载期间结束的 turn。</li>
+<li>进程崩溃可能丢失尚在队列中的凭证，因为 <code>turn/end</code> 不会同步等待这个可选本地 sink；正常卸载插件或应用时会排空已接收写入。</li>
+<li>卸载时先关闭 enqueue 闸门，再移除 listener，最后排空已接收写入；进程被突然终止时无法运行该生命周期。</li>
+<li>各行彼此独立，无法检测删除、重排、截断或回滚。</li>
+<li>凭证状态复述 DSH 记录的工具结果和可识别的 shell 标记，不会独立执行或验证任何内容。</li>
+<li>投影成本随单轮事件的数量和大小增长；异常大的工具参数在内存分类时可能增加 turn 结束阶段的 CPU 时间。</li>
+<li>进程内写入队列有序但无界；缓慢或卡死的文件系统会持续增加内存占用，直至写入恢复或进程结束。</li>
+<li>没有跨进程锁。两个 DSH 进程同写一个文件时，行顺序和行边界完整性均无保证；应每进程使用独立文件。崩溃可能留下不完整尾行，读取方必须拒绝或隔离它。</li>
+<li>创建模式只在支持的 POSIX 文件系统上请求 <code>0700</code>/<code>0600</code>；不会收紧已有权限，Windows 可能忽略 POSIX mode，并且会跟随预先存在的符号链接。请配置可信、私有且非符号链接的路径。</li>
+<li>文件没有内建轮转、保留策略、加密、签名或恢复机制。</li>
 </ul>
-<p>See <a href="https://github.com/030611/dsh-verification-receipt/blob/main/SECURITY.md">SECURITY.md</a> for the trust and disclosure model.</p>
-<h3>Development</h3>
+<p>信任与漏洞披露模型见 <a href="https://github.com/030611/dsh-verification-receipt/blob/main/SECURITY.md">SECURITY.md</a>。</p>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm run typecheck
 pnpm run test
 pnpm run build
@@ -364,12 +364,12 @@ pnpm run check
 pnpm run release:smoke
 pnpm run performance:smoke
 </code></pre>
-<p>Tests cover privacy exclusions, deterministic hashing, top-level and Code Mode final states, the supported/unsupported classification matrix, listener disposal, disk draining, and a real DSH <code>Context + SessionStore</code> composition. <code>release:smoke</code> enforces the exact tarball file list, installs the real <code>.tgz</code> into a temporary project, and imports it by package name.</p>
-<h3>License</h3>
+<p>测试覆盖隐私排除、确定性 hash、顶层与 Code Mode 最终状态、分类支持/不支持矩阵、监听器释放、磁盘排空，以及真实 DSH <code>Context + SessionStore</code> 组合。<code>release:smoke</code> 会锁定 tarball 精确文件清单，把真实 <code>.tgz</code> 安装进临时项目，并按包名导入。</p>
+<h3>许可证</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/030611/dsh-verification-receipt/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/030611/dsh-verification-receipt/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

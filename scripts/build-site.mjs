@@ -308,7 +308,9 @@ for (const loc of LOCALES) {
       ],
     }])
 
-    const rm = readmes[e.url]
+    // pick the README matching the page locale; fall back to whatever exists
+    const entry = readmes[e.url]
+    const rm = entry ? (entry[loc.code] ?? entry.en ?? entry.zh ?? (entry.md ? entry : null)) : null
     const readmeHtml = rm ? renderReadme(rm) : null
     const readmeSection = readmeHtml ? `<section class="panel readme">
     <h2>README</h2>

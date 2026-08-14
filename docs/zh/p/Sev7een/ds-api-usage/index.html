@@ -189,92 +189,88 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>English</strong> | <a href="https://github.com/Sev7een/ds-api-usage/blob/main/README.zh-CN.md">简体中文</a></p>
-<p>After installation, open <strong>Settings → API Usage</strong> in <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a> to view your DeepSeek API usage. The page shows your account balance, estimated spend, token counts, and API request count over the last 24 hours, rendered as a timeline bar chart similar to the official DeepSeek platform usage page.</p>
-<h3>Features</h3>
+<p><a href="https://github.com/Sev7een/ds-api-usage/blob/main/README.md">English</a> | <strong>简体中文</strong></p>
+<p>安装后，打开 <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a> 的<strong>设置 → API用量</strong>页面，即可查看 DeepSeek API 用量。页面展示账户余额、最近 24 小时的估算消费金额、Token 数量与 API 请求次数，并以类似 DeepSeek 官方平台用量页的时间线柱状图呈现。</p>
+<h3>功能特性</h3>
 <ul>
-<li>💰 <strong>Balance card</strong> — total balance with granted / topped-up split, plus an availability badge, fetched from the official <a href="https://api-docs.deepseek.com/api/get-user-balance/"><code>GET /user/balance</code></a> endpoint.</li>
-<li>📊 <strong>Metric cards</strong> — 24h estimated spend (CNY), token counts (input / output split), and API request count.</li>
-<li>📈 <strong>Timeline chart</strong> — hourly bars of estimated spend over the last 24 hours (hover for exact values).</li>
-<li>🔄 <strong>Live refresh</strong> — balance refreshes every 60 s on the host; the page polls every 30 s and has a manual refresh button.</li>
-<li>🔑 <strong>No extra key setup</strong> — reuses the deployment&#39;s existing <code>DEEPSEEK_API_KEY</code> credential through the harness <code>credentials</code> service.</li>
+<li>💰 <strong>余额卡片</strong> — 总余额（赠送 / 充值分项）+ 可用状态徽标，数据来自官方 <a href="https://api-docs.deepseek.com/api/get-user-balance/"><code>GET /user/balance</code></a> 接口。</li>
+<li>📊 <strong>指标卡片</strong> — 24h 估算消费（人民币 CNY）、Token 数量（输入 / 输出分项）、API 请求次数。</li>
+<li>📈 <strong>时间线图表</strong> — 最近 24 小时按小时聚合的消费金额柱状图（悬停查看精确数值）。</li>
+<li>🔄 <strong>实时刷新</strong> — Host 端每 60 秒刷新余额；页面每 30 秒轮询，并提供手动刷新按钮。</li>
+<li>🔑 <strong>无需额外配置密钥</strong> — 复用部署中已有的 <code>DEEPSEEK_API_KEY</code> 凭证（通过 harness 的 <code>credentials</code> 服务）。</li>
 </ul>
-<h3>Architecture</h3>
-<pre><code>┌─────────────────────────────── Host (Node.js) ───────────────────────────────┐
+<h3>架构</h3>
+<pre><code>┌─────────────────────────────── Host（Node.js）───────────────────────────────┐
 │ src/index.js                                                                 │
-│  • ctx.on(&#39;llm/stream&#39;, ...)  ← waterfall: folds every real model call&#39;s     │
-│      provider-reported TokenUsage (input/output/cache-hit/cache-miss,        │
-│      already disjoint, matching DeepSeek billing vocabulary)                 │
-│      into in-memory hourly + daily buckets                                   │
+│  • ctx.on(&#39;llm/stream&#39;, ...)  ← waterfall：将每次真实模型调用的               │
+│      provider 上报的 TokenUsage（输入/输出/缓存命中/缓存未命中，              │
+│      已是互斥分项，与 DeepSeek 计费口径一致）                                 │
+│      折叠进内存中的按小时 + 按天桶                                           │
 │  • fetchBalance()             ← credentials.resolve(&#39;DEEPSEEK_API_KEY&#39;)      │
 │      → subprocess curl → https://api.deepseek.com/user/balance               │
-│      (web.fetch cannot send an Authorization header, hence curl)             │
-│  • webServer.register(&#39;/ds-api-usage/snapshot&#39;)  ← JSON endpoint for client  │
+│      （web.fetch 无法携带 Authorization 头，故用 curl）                       │
+│  • webServer.register(&#39;/ds-api-usage/snapshot&#39;)  ← 供 Client 读取的 JSON 端点 │
 └──────────────────────────────────────────────────────────────────────────────┘
                               │ fetch(&#39;/ds-api-usage/snapshot&#39;)
                               ▼
-┌────────────────────────────── Client (browser) ─────────────────────────────┐
-│ client/bundle.js (web bundle; client/index.js = dynamic-plugin source)      │
-│  • slots.inject(&#39;settings.section&#39;)  → new settings page &quot;API用量&quot;             │
-│  • balance card + 3 metric cards + 24h timeline bar chart                   │
-│  • auto-refresh every 30 s via ctx.interval                                 │
+┌────────────────────────────── Client（浏览器）───────────────────────────────┐
+│ client/bundle.js（web bundle；client/index.js 为动态插件源码）               │
+│  • slots.inject(&#39;settings.section&#39;)  → 新增设置页「API用量」                   │
+│  • 余额卡片 + 3 张指标卡 + 24h 时间线柱状图                                  │
+│  • 每 30 秒通过 ctx.interval 自动刷新                                        │
 └──────────────────────────────────────────────────────────────────────────────┘
 </code></pre>
-<h4>Data notes</h4>
+<h4>数据说明</h4>
 <ul>
-<li><strong>Token counts are real</strong> — they come from the <code>usage</code> chunk of every streaming model call (<code>StreamChunk</code> with <code>type: &#39;usage&#39;</code>, <code>TokenUsage</code>), the same provider-reported numbers the harness itself uses for session stats.</li>
-<li><strong>Cost is an estimate</strong> — CNY is computed from DeepSeek&#39;s public list prices (Chinese docs, <a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/">模型 &amp; 价格</a>) in <code>PRICING</code> (<code>src/index.js</code>), applied per model:<ul>
-<li>cache hit input → <code>hit</code> price</li>
-<li>cache miss input → <code>miss</code> price</li>
-<li>output → <code>output</code> price</li>
-<li>cache write is not billed separately by DeepSeek and is excluded.</li>
+<li><strong>Token 数量是真实的</strong> — 来自每次流式模型调用的 <code>usage</code> chunk（<code>StreamChunk</code> 的 <code>type: &#39;usage&#39;</code>、<code>TokenUsage</code>），与 harness 自身用于会话统计的 provider 上报数据完全一致。</li>
+<li><strong>消费金额为估算</strong> — 人民币（CNY）按 DeepSeek 官方公开价（中文文档，<a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/">模型 &amp; 价格</a>）在 <code>PRICING</code>（<code>src/index.js</code>）中按模型计算：<ul>
+<li>缓存命中输入 → <code>hit</code> 单价</li>
+<li>缓存未命中输入 → <code>miss</code> 单价</li>
+<li>输出 → <code>output</code> 单价</li>
+<li>DeepSeek 不单独对缓存写入计费，故未计入。</li>
 </ul>
 </li>
-<li><strong>In-memory only</strong> — hourly buckets keep 48 h, daily keep 14 d; all data resets when the plugin (re)starts. No persistence is added on purpose: the harness has its own durable token-usage projection for sessions; this plugin is a live dashboard.</li>
+<li><strong>仅内存存储</strong> — 按小时桶保留 48 小时，按天桶保留 14 天；插件（重新）启动时数据清零。有意不做持久化：harness 本身对会话已有持久化的 token 用量投影；本插件定位为实时仪表盘。</li>
 </ul>
-<h3>Installation</h3>
-<h4>Via <code>dsh plugin add</code> (recommended, from GitHub or npm)</h4>
-<p>Install directly from this GitHub repository:</p>
+<h3>安装</h3>
+<h4>通过 <code>dsh plugin add</code> 安装（推荐，GitHub 或 npm）</h4>
+<p>直接从本 GitHub 仓库安装：</p>
 <pre><code class="language-bash">dsh plugin --profile web add github:Sev7een/ds-api-usage
 </code></pre>
-<p>or, once published to npm:</p>
+<p>或发布到 npm 后：</p>
 <pre><code class="language-bash">dsh plugin --profile web add dsh-plugin-ds-api-usage
 </code></pre>
-<p><code>dsh plugin</code> forwards to pnpm in the profile directory and reconciles the
-package into the profile&#39;s bundle list (<code>dsh.profile.bundles</code>). The package&#39;s
-<code>cordis.patch.yml</code> (declared via <code>dsh.bundle.patch</code> in <code>package.json</code>) then
-inserts the plugin row into the host composition, and the <code>dsh.client</code>
-declaration makes the web shell load <code>client/bundle.js</code> as the settings page.</p>
-<h4>As a dynamic plugin (dev / session-scoped)</h4>
-<p>The original is a dynamic Cordis plugin, created per session with <code>cordis_define</code> / <code>cordis_run</code> (see the <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness docs</a>). The <code>code.host</code> body is <code>src/index.js</code> minus the <code>module.exports</code> wrapper; the <code>code.client</code> body is <code>client/index.js</code> minus the wrapper.</p>
+<p><code>dsh plugin</code> 会在 profile 目录中转发给 pnpm，并将包调和进 profile 的 bundle 列表（<code>dsh.profile.bundles</code>）。包内 <code>cordis.patch.yml</code>（经 <code>package.json</code> 的 <code>dsh.bundle.patch</code> 声明）随后把插件行插入宿主组合；<code>dsh.client</code> 声明则让 web 外壳加载 <code>client/bundle.js</code> 作为设置页。</p>
+<h4>作为动态插件（开发 / 会话级）</h4>
+<p>原版是会话级动态 Cordis 插件，通过 <code>cordis_define</code> / <code>cordis_run</code> 创建（参见 <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness 文档</a>）。<code>code.host</code> 的函数体即 <code>src/index.js</code> 去掉 <code>module.exports</code> 包装；<code>code.client</code> 的函数体即 <code>client/index.js</code> 去掉包装。</p>
 <blockquote>
-<p>Note: the dynamic form uses the sandbox-private <code>harness.handle</code> / <code>host.call</code> channel (<code>client/index.js</code>), while the static bundle form (<code>client/bundle.js</code>) talks to the host over the HTTP route <code>/ds-api-usage/snapshot</code>. Keep both in sync when changing the protocol.</p>
+<p>注意：动态形态使用沙箱私有的 <code>harness.handle</code> / <code>host.call</code> 通道（<code>client/index.js</code>），而静态 bundle 形态（<code>client/bundle.js</code>）通过 HTTP 路由 <code>/ds-api-usage/snapshot</code> 与 Host 通信。修改协议时请保持两者同步。</p>
 </blockquote>
-<h4>As a composition plugin (persistent, manual)</h4>
-<p>Add a row to the host composition (<code>cordis.patch.yml</code> of your profile):</p>
+<h4>作为组合插件（持久化，手动）</h4>
+<p>在你的 profile 的宿主组合（<code>cordis.patch.yml</code>）中添加：</p>
 <pre><code class="language-yaml">- insert:
     - id: ds-api-usage
       name: &#39;dsh-plugin-ds-api-usage&#39;
 </code></pre>
-<p>or, without installing the package, by a relative path to this repository. The plugin is <em>host-plane</em>: it reads the host <code>credentials</code>, <code>subprocess</code>, <code>timer</code>, and <code>webServer</code> services and registers the client settings page in the root-scoped <code>settings.section</code> slot, so it should live in the <strong>host composition</strong>, not inside an agent preset.</p>
-<h4>Requirements</h4>
+<p>或不安装包、以相对路径指向本仓库。本插件属于 <strong>Host 平面</strong>：它读取 Host 的 <code>credentials</code>、<code>subprocess</code>、<code>timer</code>、<code>webServer</code> 服务，并将客户端设置页注册到根作用域的 <code>settings.section</code> 插槽，因此应放在<strong>宿主组合</strong>中，而不是某个 agent preset 内。</p>
+<h4>依赖要求</h4>
 <ul>
-<li>DeepSeek Harness with the DeepSeek LLM adapter configured (<code>DEEPSEEK_API_KEY</code> credential resolvable via the <code>credentials</code> service)</li>
-<li><code>curl</code> available on the host for the balance endpoint</li>
-<li>A browser client with the settings sidebar (for the UI)</li>
+<li>已配置 DeepSeek LLM 适配器的 DeepSeek Harness（<code>DEEPSEEK_API_KEY</code> 凭证可通过 <code>credentials</code> 服务解析）</li>
+<li>Host 上可用 <code>curl</code>（用于余额接口）</li>
+<li>带设置侧边栏的浏览器客户端（用于 UI）</li>
 </ul>
-<h3>Development</h3>
-<pre><code class="language-bash">npm run check   # syntax-check both halves
+<h3>开发</h3>
+<pre><code class="language-bash">npm run check   # 语法检查两个半端
 </code></pre>
 <ul>
-<li>Prices may drift: update <code>PRICING</code> in <code>src/index.js</code> when DeepSeek changes list prices (the constant is annotated with its snapshot date).</li>
-<li>The client currently hard-codes English labels; localize via the <code>locale</code> service if contributed back.</li>
+<li>价格可能变动：DeepSeek 调整公开价时请更新 <code>src/index.js</code> 中的 <code>PRICING</code>（常量已注明快照日期）。</li>
+<li>Client 目前硬编码中文标签；若回馈上游，可通过 <code>locale</code> 服务做国际化。</li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/Sev7een/ds-api-usage/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/Sev7een/ds-api-usage/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Sev7een/ds-api-usage/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

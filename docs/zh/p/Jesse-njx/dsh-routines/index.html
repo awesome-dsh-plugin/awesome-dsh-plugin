@@ -189,215 +189,213 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Scheduled agents for DSH — run a prompt on a cron, get the digest where you already are.</p>
-<p><code>dsh-routines</code> is a plugin bundle for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. A <strong>routine</strong> is a named prompt + schedule + delivery stored as a plain YAML file — human-diffable, git-committable. The scheduler launches each due run through the headless runner as its <strong>own one-shot session</strong> (full session log = full audit, replay-able later by dsh-replay), then delivers a digest: the last assistant message when it is short, otherwise a one-shot summarizer call over the session log.</p>
-<pre><code>┌──────────────────────┐   every night 02:00   ┌──────────────────────────────┐
-│  dsh --profile ops   │ ─────────────────────▶ │ dsh --profile headless        │
-│  scheduler tick      │   (own session, cwd   │  &quot;run the test suite, ...&quot;     │
-│  reads .dsh/routines │    = routine cwd,     │  approval policy: never        │
-│  /*.yaml             │    approval: never)   └──────────────┬───────────────┘
-└──────────────────────┘                                      │ run record: status,
-       │ digest + run record                                  │ digest, session id,
-       ▼                                                      │ denied approvals
-  .dsh/routines/runs/&lt;runId&gt;.json  (+ .md)  ──►  file delivery (always on)
-  ctx.chatnode (optional)          ──►  chatnode delivery (soft dependency)
+<p>DSH 的定时 Agent —— 按 cron 跑一个 prompt，把摘要送到你已经在的地方。</p>
+<p><code>dsh-routines</code> 是 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的插件 bundle。<strong>routine（例程）</strong> 是一个「命名 prompt + 调度 + 投递」，以纯 YAML 文件存放 —— 可人工 diff、可 git 提交。调度器把每个到期例程通过 headless runner 作为<strong>独立的一次性会话</strong>启动（完整会话日志 = 免费审计，之后可用 dsh-replay 回放），然后投递摘要：最后一条 assistant 消息较短时直接用它，否则对会话日志做一次性摘要调用。</p>
+<pre><code>┌──────────────────────┐   每日 02:00   ┌──────────────────────────────┐
+│  dsh --profile ops   │ ─────────────▶ │ dsh --profile headless        │
+│  调度器 tick          │   独立会话，cwd  │  &quot;跑测试套件，……&quot;             │
+│  读取 .dsh/routines  │   = 例程 cwd，   │  审批策略: never              │
+│  /*.yaml             │   审批: never)   └──────────────┬───────────────┘
+└──────────────────────┘                                │ 运行记录: 状态、
+       │ 摘要 + 运行记录                                  │ 摘要、会话 id、
+       ▼                                                │ 被拒绝的权限
+  .dsh/routines/runs/&lt;runId&gt;.json  (+ .md)  ──►  file 投递（始终开启）
+  ctx.chatnode（可选）              ──►  chatnode 投递（软依赖）
 </code></pre>
-<h3>Flagship demo — nightly test triage</h3>
-<p>A routine that runs your test suite at 2am, diagnoses the top failure, and leaves a digest in the project — then, with a conversation node installed, that digest lands in WeChat and you reply to approve follow-ups (v0.2; v0.1 delivers to file and chatnode when a node is installed).</p>
+<h3>旗舰示例 —— 夜间测试分诊</h3>
+<p>凌晨 2 点跑测试套件、诊断最高优先级失败、在项目里留下摘要的例程；装了会话节点后，摘要还会发到微信，你回复即可批准后续操作（v0.2；v0.1 投递到文件，装了节点也可投递 chatnode）。</p>
 <pre><code class="language-yaml"># ~/work/projectx/.dsh/routines/nightly-tests.yaml
 name: nightly-tests
-schedule: &quot;0 2 * * *&quot;        # 5-field cron; also accept &quot;@daily&quot;, &quot;every 4h&quot;
-timezone: Asia/Shanghai       # explicit, no silent host-tz default
+schedule: &quot;0 2 * * *&quot;        # 5 段 cron；也支持 &quot;@daily&quot;、&quot;every 4h&quot;
+timezone: Asia/Shanghai       # 显式指定，不静默使用宿主机时区
 prompt: |
   Run the test suite. If anything fails, diagnose the top failure
   and draft a fix on a branch. Summarize in &lt;10 lines.
 cwd: ~/work/projectx
-profile: headless              # which DSH profile/plugin set the run uses
+profile: headless              # 本次运行使用的 DSH profile / 插件集
 overlap: skip                  # skip | queue | cancel-previous
 timeoutMin: 45
 deliver:
-  - type: file                 # always on: digest written under .dsh/routines/runs/
-  - type: chatnode             # optional: any installed conversation node (wechat…)
+  - type: file                 # 始终开启：摘要写入 .dsh/routines/runs/
+  - type: chatnode             # 可选：任意已安装的会话节点（wechat…）
 </code></pre>
 <pre><code class="language-console">$ dsh --profile ops routines list
 nightly-tests          active   0 2 * * *           tz=Asia/Shanghai next=2026-08-15T02:00:00.000Z
 </code></pre>
-<p>Next morning, the digest is waiting:</p>
+<p>第二天早上，摘要已在等待：</p>
 <pre><code class="language-console">$ dsh --profile ops routines logs nightly-tests --limit 3
 [completed] 2026-08-14T18:00:01.000Z 41213 ms session=session-2f7d…
   tests: 3 failed of 412; top failure: flaky wait in auth.spec.ts — drafted fix on branch fix/auth-wait
 </code></pre>
-<h3>Install</h3>
-<pre><code class="language-console"># 1. Create the profile that hosts the scheduler + CLI (installs this bundle).
-#    From the npm registry once published, or straight from this repository:
-dsh plugin --profile ops add @dsh-routines/bundle          # npm (when published)
-dsh plugin --profile ops add github:Jesse-njx/dsh-routines  # or: straight from GitHub
+<h3>安装</h3>
+<pre><code class="language-console"># 1. 创建承载调度器 + CLI 的 profile（安装本 bundle）。
+#    发布到 npm 后用 npm 形式；也可以直接从本仓库安装：
+dsh plugin --profile ops add @dsh-routines/bundle          # npm（发布后）
+dsh plugin --profile ops add github:Jesse-njx/dsh-routines  # 或：直接从 GitHub
 
-# 2. Keep it alive so schedules fire (daemon mode; Ctrl-C to stop).
+# 2. 保持进程存活，调度才会触发（守护模式；Ctrl-C 停止）。
 dsh --profile ops
 </code></pre>
-<p>Routine runs boot the <code>headless</code> profile by default, which ships with DSH — <strong>no extra setup needed</strong>. A routine that needs another profile&#39;s plugin set sets <code>profile: &lt;name&gt;</code>; that profile must be one-shot-capable (include the headless bundle, or install this bundle into it as well — the run overlay disables the nested scheduler either way).</p>
-<h4>Scheduler host</h4>
-<p>The scheduler ticks inside whatever profile the bundle is installed into, so you can also add the bundle to your main <code>web</code> profile and routines fire while the web app runs:</p>
+<p>例程运行默认启动 <code>headless</code> profile（DSH 自带）——<strong>无需额外配置</strong>。需要其他插件集的例程设置 <code>profile: &lt;name&gt;</code>；该 profile 必须支持一次性运行（包含 headless bundle，或同样安装本 bundle —— 运行 overlay 无论如何都会禁用嵌套的调度器）。</p>
+<h4>调度宿主</h4>
+<p>调度器在安装了本 bundle 的 profile 内 tick，所以也可以把 bundle 加进你的 <code>web</code> profile，web 应用运行期间例程就会触发：</p>
 <pre><code class="language-console">dsh plugin --profile web add @dsh-routines/bundle
 </code></pre>
-<p>Keep the process alive for schedules to fire; <code>dsh --profile ops</code> with no inner arguments is the intended daemon form (the CLI stays silent and the scheduler owns process lifetime).</p>
-<h3>Routine files</h3>
-<p>Routines live in two watched directories (hot-reload on change; invalid files are reported, never crash the store):</p>
+<p>保持进程存活即可触发调度；<code>dsh --profile ops</code>（无内参）即守护模式（CLI 保持安静，调度器掌管进程生命周期）。</p>
+<h3>例程文件</h3>
+<p>例程位于两个被监听的目录（改动热重载；非法文件会被报告，不会让 store 崩溃）：</p>
 <table>
 <thead>
 <tr>
-<th>Directory</th>
-<th>Scope</th>
+<th>目录</th>
+<th>作用域</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>&lt;cwd&gt;/.dsh/routines/*.yaml</code></td>
-<td>Project routines (override global on name)</td>
+<td>项目例程（同名覆盖全局）</td>
 </tr>
 <tr>
 <td><code>~/.dsh/routines/*.yaml</code></td>
-<td>Global routines</td>
+<td>全局例程</td>
 </tr>
 </tbody></table>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>name</code></td>
-<td>— (required)</td>
-<td><code>[a-z0-9][a-z0-9-]*</code>, ≤ 64 chars</td>
+<td>—（必填）</td>
+<td><code>[a-z0-9][a-z0-9-]*</code>，≤ 64 字符</td>
 </tr>
 <tr>
 <td><code>schedule</code></td>
-<td>— (required)</td>
-<td><code>0 2 * * *</code>, <code>@daily</code>, <code>@hourly</code>, <code>@weekly</code>, <code>@monthly</code>, <code>@yearly</code>, <code>every 4h</code>, <code>every 30m</code></td>
+<td>—（必填）</td>
+<td><code>0 2 * * *</code>、<code>@daily</code>、<code>@hourly</code>、<code>@weekly</code>、<code>@monthly</code>、<code>@yearly</code>、<code>every 4h</code>、<code>every 30m</code></td>
 </tr>
 <tr>
 <td><code>timezone</code></td>
 <td><code>UTC</code></td>
-<td>IANA zone for schedule math (never the host zone)</td>
+<td>调度计算的 IANA 时区（绝不使用宿主机时区）</td>
 </tr>
 <tr>
 <td><code>prompt</code></td>
-<td>— (required)</td>
-<td>The task the headless run executes</td>
+<td>—（必填）</td>
+<td>headless 运行要执行的任务</td>
 </tr>
 <tr>
 <td><code>cwd</code></td>
-<td>operator cwd</td>
-<td>Working directory of the run; also where its digest lands</td>
+<td>操作者 cwd</td>
+<td>运行的 working directory；摘要也落在其下</td>
 </tr>
 <tr>
 <td><code>profile</code></td>
 <td><code>headless</code></td>
-<td>DSH profile the run boots</td>
+<td>运行启动的 DSH profile</td>
 </tr>
 <tr>
 <td><code>overlap</code></td>
 <td><code>skip</code></td>
-<td><code>skip</code> (never stack two agents on one repo), <code>queue</code> (run after the current one), <code>cancel-previous</code></td>
+<td><code>skip</code>（绝不在同一仓库叠加两个 agent）、<code>queue</code>（当前结束后运行）、<code>cancel-previous</code></td>
 </tr>
 <tr>
 <td><code>timeoutMin</code></td>
 <td><code>45</code></td>
-<td>Hard stop; a wedged 2am agent must not still hold the repo at 9am</td>
+<td>硬超时；卡死的凌晨 2 点 agent 不能占用仓库到早上 9 点</td>
 </tr>
 <tr>
 <td><code>deliver</code></td>
 <td><code>[{type: file}]</code></td>
-<td>Digest delivery channels</td>
+<td>摘要投递渠道</td>
 </tr>
 </tbody></table>
-<p>Cron fields support <code>*</code>, step suffixes (<code>*/15</code>), ranges (<code>9-17</code>), lists (<code>0,30</code>), <code>?</code>, and month/day names. When both day-of-month and day-of-week are restricted, a day matches if either matches (Vixie cron semantics).</p>
-<p>Scheduler bookkeeping (paused set, last-run anchors) lives in <code>&lt;cwd&gt;/.dsh/routines/state.json</code>.</p>
+<p>cron 字段支持 <code>*</code>、步进后缀（<code>*/15</code>）、区间（<code>9-17</code>）、列表（<code>0,30</code>）、<code>?</code>、月份/星期名称。当月内日期与星期同时受限时，任一天匹配即命中（Vixie cron 语义）。</p>
+<p>调度器记账（暂停集合、上次运行锚点）存放在 <code>&lt;cwd&gt;/.dsh/routines/state.json</code>。</p>
 <h3>CLI</h3>
 <p><code>dsh --profile ops routines &lt;command&gt;</code></p>
 <table>
 <thead>
 <tr>
-<th>Command</th>
-<th>Description</th>
+<th>命令</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>list</code></td>
-<td>routines with schedule, pause state, next run</td>
+<td>例程列表：调度、暂停状态、下次运行</td>
 </tr>
 <tr>
 <td><code>run &lt;name&gt;</code></td>
-<td>manual trigger (runs now; prints the digest and exits)</td>
+<td>手动触发（立即运行；打印摘要后退出）</td>
 </tr>
 <tr>
 <td><code>pause &lt;name&gt;</code> / <code>resume &lt;name&gt;</code></td>
-<td>stop / restart scheduled runs</td>
+<td>停止 / 恢复定时运行</td>
 </tr>
 <tr>
 <td><code>logs &lt;name&gt; [--limit n]</code></td>
-<td>recent run records: status, duration, digest, session id</td>
+<td>最近运行记录：状态、耗时、摘要、会话 id</td>
 </tr>
 </tbody></table>
-<p>Run records are JSON files under <code>&lt;routine.cwd&gt;/.dsh/routines/runs/&lt;runId&gt;.json</code>, with a human-readable <code>&lt;runId&gt;.md</code> digest next to them. <code>run</code> is also the manual trigger for testing a routine before you trust its schedule.</p>
-<h3>Safety defaults</h3>
-<p>Scheduled agents run unattended, so each run subprocess is patched to:</p>
+<p>运行记录是 <code>&lt;routine.cwd&gt;/.dsh/routines/runs/&lt;runId&gt;.json</code>，旁边还有人类可读的 <code>&lt;runId&gt;.md</code> 摘要。<code>run</code> 也是在信任调度前测试例程的手动触发方式。</p>
+<h3>安全默认值</h3>
+<p>定时 agent 无人值守运行，因此每个运行子进程都会被 patch 为：</p>
 <ul>
-<li><strong>Auto-deny anything that would prompt</strong> — the run overlay forces the approval policy to <code>never</code> (sandbox mode stays whatever the profile inherits, normally <code>workspace-write</code>). Denied requests are collected into the run record (<code>denied</code>) and surface in the digest.</li>
-<li><strong>Never schedule nested runs</strong> — the run overlay disables the scheduler row inside the run profile.</li>
-<li><strong>Never crash the scheduler</strong> — delivery failures, summarizer failures, and spawn failures are recorded on the run record, not thrown.</li>
+<li><strong>一切需要提示的都自动拒绝</strong> —— 运行 overlay 把审批策略强制为 <code>never</code>（sandbox 模式保持 profile 继承值，通常为 <code>workspace-write</code>）。被拒绝的请求会被收集进运行记录（<code>denied</code>）并体现在摘要里。</li>
+<li><strong>绝不调度嵌套运行</strong> —— 运行 overlay 会在运行 profile 内禁用调度器行。</li>
+<li><strong>绝不让调度器崩溃</strong> —— 投递失败、摘要失败、spawn 失败都记录在运行记录上，不抛出。</li>
 </ul>
-<p>Missed runs (laptop asleep): at most one catch-up run fires on wake, never a backlog replay.</p>
-<h3>Delivery</h3>
+<p>错过的运行（笔记本休眠）：唤醒后最多补跑一次，绝不重放积压。</p>
+<h3>投递</h3>
 <ul>
-<li><strong>file</strong> (always on): the run record + digest markdown under <code>.dsh/routines/runs/</code>.</li>
-<li><strong>chatnode</strong> (optional): digests are sent through a <code>ctx.chatnode</code> service (<code>{ send(input: { text, title? }): Promise&lt;void&gt; }</code>) when one is installed; otherwise the delivery is recorded as <code>not-installed</code> and the run still completes. A future <code>@dsh-cowork/chatnode-wechat</code> exposing that service lights this up automatically.</li>
+<li><strong>file</strong>（始终开启）：<code>&lt;routine.cwd&gt;/.dsh/routines/runs/</code> 下的运行记录 + 摘要 markdown。</li>
+<li><strong>chatnode</strong>（可选）：装了 <code>ctx.chatnode</code> 服务（<code>{ send(input: { text, title? }): Promise&lt;void&gt; }</code>）时把摘要发过去；没有则记录为 <code>not-installed</code>，运行照常完成。未来的 <code>@dsh-cowork/chatnode-wechat</code> 暴露该服务后会自动点亮。</li>
 </ul>
-<h3>Architecture</h3>
-<p>One bundle, three plugins (+ a run driver), all installable as subpaths:</p>
+<h3>架构</h3>
+<p>一个 bundle，三个插件（+ 一个运行驱动），均可作为子路径安装：</p>
 <table>
 <thead>
 <tr>
-<th>Module</th>
-<th>Role</th>
+<th>模块</th>
+<th>职责</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>@dsh-routines/bundle/store</code></td>
-<td>watches <code>.dsh/routines/*.yaml</code> (project + global), validates, hot-reloads, owns durable state</td>
+<td>监听 <code>.dsh/routines/*.yaml</code>（项目 + 全局）、校验、热重载、管理持久化状态</td>
 </tr>
 <tr>
 <td><code>@dsh-routines/bundle/scheduler</code></td>
-<td>registers due routines on <code>ctx.jobs</code> (kind <code>routine</code>); owns overlap, missed-run, and timeout semantics</td>
+<td>在 <code>ctx.jobs</code> 上注册到期例程（kind <code>routine</code>）；负责 overlap、错过运行、超时语义</td>
 </tr>
 <tr>
 <td><code>@dsh-routines/bundle/cli</code></td>
-<td>the <code>dsh routines ...</code> command line</td>
+<td><code>dsh routines ...</code> 命令行</td>
 </tr>
 <tr>
 <td><code>@dsh-routines/bundle/run</code></td>
-<td>child-side driver injected into each one-shot run via a generated <code>--patch</code> overlay; writes the run record and digest</td>
+<td>子进程侧驱动，通过生成的 <code>--patch</code> overlay 注入每次一次性运行；写运行记录与摘要</td>
 </tr>
 </tbody></table>
-<p>Runs boot <code>dsh --profile &lt;routine.profile&gt; --patch &lt;generated overlay&gt; -- &quot;&lt;prompt&gt;&quot;</code> with the routine&#39;s cwd as the workspace. The overlay disables the stock headless runner, mounts the <code>run</code> driver on the same task service, and forces the unattended approval policy — so the run keeps the full headless experience (fresh persisted session, provider selection) while writing the audit record only dsh-routines knows how to read.</p>
-<h3>Development</h3>
+<p>运行启动 <code>dsh --profile &lt;routine.profile&gt; --patch &lt;生成的 overlay&gt; -- &quot;&lt;prompt&gt;&quot;</code>，工作目录为例程 cwd。overlay 禁用内置 headless runner、在同一 task 服务上挂载 <code>run</code> 驱动、并强制无人值守审批策略 —— 既保留完整的 headless 体验（全新持久化会话、provider 选择），又写出只有 dsh-routines 知道怎么读的审计记录。</p>
+<h3>开发</h3>
 <pre><code class="language-console">pnpm install
 pnpm build      # tsc -&gt; lib/
-pnpm test       # node --test (46 tests: cron, scheduler matrix, store, run, cli, e2e)
+pnpm test       # node --test（46 个测试：cron、调度矩阵、store、run、cli、e2e）
 </code></pre>
-<p>The e2e test boots a real <code>dsh</code> subprocess against a scripted mock LLM adapter (no network, no credentials) in a throwaway <code>DSH_HOME</code>, so the whole pipeline — store → scheduler → jobs → subprocess → run driver → digest → record — is exercised in CI.</p>
-<h3>Promo</h3>
-<p><code>promo/</code> holds a self-contained 60-second promo deck for screen recording: <code>slideshow.html</code> (keyboard-advanceable, 1280×720, no external assets) and <code>narration.txt</code> (a timed read-aloud script). Open <code>slideshow.html</code> and press <code>→</code>/<code>space</code> to advance.</p>
-<h3>Non-goals</h3>
-<p>Cloud execution (local machine only; the missed-run policy handles an asleep laptop honestly), routine marketplaces, sub-minute schedules.</p>
+<p>e2e 测试会在临时 <code>DSH_HOME</code> 里用脚本化 mock LLM adapter（离线、无需凭证）启动真实的 <code>dsh</code> 子进程，完整走通 store → 调度器 → jobs → 子进程 → 运行驱动 → 摘要 → 记录。</p>
+<h3>非目标</h3>
+<p>云端执行（仅本机；错过运行策略如实处理休眠笔记本）、例程市场、亚分钟级调度。</p>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Jesse-njx/dsh-routines/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-routines/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

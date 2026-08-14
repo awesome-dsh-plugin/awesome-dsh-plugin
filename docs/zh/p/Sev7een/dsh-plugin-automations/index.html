@@ -193,81 +193,80 @@ footer p+p{margin-top:.5rem}
 <h2>dsh-plugin-automations</h2>
 <blockquote>
 <p>为 DeepSeek Harness Web Profile 提供定时任务：支持准点执行、只在 DeepSeek 谷时段执行的“空闲执行”，以及每天重复执行。</p>
-<p>Scheduled tasks for the DeepSeek Harness Web Profile: run on time, run only during DeepSeek off-peak (valley) hours, or repeat daily.</p>
 </blockquote>
-<h3>Features</h3>
+<h3>功能特性</h3>
 <ul>
-<li>Settings-page form and task list with 5-second polling.</li>
-<li>Two execution modes: <strong>on time</strong> and <strong>when idle (valley hours)</strong>.</li>
-<li>Two repeat modes: <strong>once</strong> and <strong>daily</strong>.</li>
-<li><code>when_idle</code> runs outside Beijing peak hours (<code>09:00-12:00</code> and <code>14:00-18:00</code>) and automatically defers to the next valley window.</li>
-<li>Daily tasks keep the same local wall-clock time across month and daylight-saving transitions.</li>
-<li>Durable task state through <code>ctx.storageDomain</code>.</li>
-<li>One serialized scheduler pump persists <code>running</code> before launching the runner.</li>
-<li>Each run uses an isolated Session with the default Agent preset, model, and Host workspace root.</li>
-<li>Fixed 30-minute execution timeout and explicit <code>host_interrupted</code> recovery.</li>
-<li>Strict JSON API validation, request-size limits, same-origin checks, and a custom mutation header.</li>
-<li>Automated messages use <code>{ kind: &#39;plugin&#39;, plugin: &#39;dsh-plugin-automations&#39; }</code> and never impersonate direct human input.</li>
+<li>设置页“定时任务”表单与任务列表，每 5 秒轮询一次。</li>
+<li>两种执行方式：<strong>准点执行</strong>和<strong>空闲执行（谷时段）</strong>。</li>
+<li>两种重复方式：<strong>仅一次</strong>和<strong>每天执行</strong>。</li>
+<li><code>when_idle</code> 仅在北京时间高峰 <code>09:00-12:00</code>、<code>14:00-18:00</code> 之外执行；高峰期内自动顺延至下一个谷时段。</li>
+<li>每天执行保持相同的本地墙钟时间，正确处理跨月和夏令时变化。</li>
+<li>使用 <code>ctx.storageDomain</code> 持久化任务状态。</li>
+<li>单一串行 Scheduler pump，先持久化 <code>running</code> 再启动 Runner。</li>
+<li>每次执行使用独立 Session，并继承默认 Agent preset、模型和 Host workspace root。</li>
+<li>固定 30 分钟执行超时，并在启动时明确恢复 <code>host_interrupted</code> 任务。</li>
+<li>严格校验 JSON、请求大小、同源 Origin 和自定义 mutation header。</li>
+<li>自动化消息标记为 <code>{ kind: &#39;plugin&#39;, plugin: &#39;dsh-plugin-automations&#39; }</code>，不伪装成直接人类输入。</li>
 </ul>
-<p>The full behavioral contract is documented in <a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/SDD.zh-CN.md">SDD.zh-CN.md</a>.</p>
-<h3>Installation</h3>
-<h4><code>dsh plugin add</code> (recommended)</h4>
-<p>Install into the Web profile and restart DSH after installation.</p>
-<h5>From GitHub</h5>
+<p>完整行为契约见 <a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/SDD.zh-CN.md">SDD.zh-CN.md</a>。</p>
+<h3>安装</h3>
+<h4><code>dsh plugin add</code>（推荐）</h4>
+<p>将插件安装到 Web profile，安装后重启 DSH。</p>
+<h5>从 GitHub 安装</h5>
 <pre><code class="language-bash">dsh plugin --profile web add github:Sev7een/dsh-plugin-automations
 </code></pre>
-<h5>From npm</h5>
-<p>Once the package is published to npm:</p>
+<h5>从 npm 安装</h5>
+<p>软件包发布到 npm 后使用：</p>
 <pre><code class="language-bash">dsh plugin --profile web add dsh-plugin-automations
 </code></pre>
-<p>If you run DSH through <code>npx</code>, use the equivalent command:</p>
+<p>如果通过 <code>npx</code> 运行 DSH，请使用：</p>
 <pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add github:Sev7een/dsh-plugin-automations
 </code></pre>
-<p>Verify the composed profile and restart the Web app:</p>
+<p>检查组合配置并重新启动 Web 应用：</p>
 <pre><code class="language-bash">dsh --profile web --dump-config
 dsh web
 </code></pre>
-<p>Then open <strong>Settings → 定时任务 (Scheduled Tasks)</strong>.</p>
-<h4>Local checkout (development)</h4>
+<p>启动后进入 <strong>设置 → 定时任务</strong>。</p>
+<h4>从本地源码安装（开发）</h4>
 <pre><code class="language-bash">git clone https://github.com/Sev7een/dsh-plugin-automations.git
 dsh plugin --profile web add ./dsh-plugin-automations
 </code></pre>
-<h4>Remove</h4>
+<h4>卸载</h4>
 <pre><code class="language-bash">dsh plugin --profile web remove dsh-plugin-automations
 </code></pre>
-<h3>Usage</h3>
-<h4>Execution modes</h4>
+<h3>使用说明</h3>
+<h4>执行方式</h4>
 <table>
 <thead>
 <tr>
-<th>Mode</th>
-<th>Behavior</th>
+<th>模式</th>
+<th>行为</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>on_time</code></td>
-<td>Creates an isolated DSH Session and starts as soon as the task is due.</td>
+<td><code>on_time</code> 准点执行</td>
+<td>到期后创建独立 DSH Session 并立即执行。</td>
 </tr>
 <tr>
-<td><code>when_idle</code></td>
-<td>Runs only outside Beijing peak hours; a task due during peak hours waits for the next valley window.</td>
+<td><code>when_idle</code> 空闲执行</td>
+<td>仅在北京时间谷时段执行；高峰期到期的任务等待到下一个谷时段。</td>
 </tr>
 </tbody></table>
-<h4>Repeat modes</h4>
+<h4>重复方式</h4>
 <table>
 <thead>
 <tr>
-<th>Repeat</th>
-<th>Behavior</th>
+<th>重复方式</th>
+<th>行为</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>once</code></td>
-<td>Reaches a terminal state and does not run again.</td>
+<td><code>once</code> 仅一次</td>
+<td>进入终态后不再执行。</td>
 </tr>
 <tr>
-<td><code>daily</code></td>
-<td>Rolls to the same local wall-clock time on the next calendar day.</td>
+<td><code>daily</code> 每天执行</td>
+<td>下一自然日相同的本地墙钟时间再次执行。</td>
 </tr>
 </tbody></table>
 <h3>HTTP API</h3>
@@ -275,7 +274,7 @@ dsh plugin --profile web add ./dsh-plugin-automations
 <li><code>POST /dsh-scheduled-tasks/api/v1/tasks</code><ul>
 <li><code>Content-Type: application/json</code></li>
 <li><code>X-DSH-Scheduled-Tasks: 1</code></li>
-<li>Body: <code>{ prompt, scheduledAt, timeZone, mode, repeat }</code></li>
+<li>Body：<code>{ prompt, scheduledAt, timeZone, mode, repeat }</code></li>
 </ul>
 </li>
 <li><code>GET /dsh-scheduled-tasks/api/v1/tasks</code></li>
@@ -291,20 +290,20 @@ dsh plugin --profile web add ./dsh-plugin-automations
     &quot;repeat&quot;: &quot;daily&quot;
   }&#39;
 </code></pre>
-<p>The MVP has no edit, delete, pause, cancel, retry, or pagination endpoints.</p>
-<h3>Development</h3>
+<p>MVP 不提供编辑、删除、暂停、取消、重试或分页接口。</p>
+<h3>开发</h3>
 <pre><code class="language-bash">npm install --legacy-peer-deps
 npm run check
 npm test
 npm run build
 npm pack --dry-run
 </code></pre>
-<p><code>--legacy-peer-deps</code> is currently needed for local development because the published <code>@deepseek-ai/dsh-storage-domain</code> package still carries an older peer range than the current DSH Web bundle.</p>
-<h3>License</h3>
+<p>当前本地开发需要 <code>--legacy-peer-deps</code>，因为公开的 <code>@deepseek-ai/dsh-storage-domain</code> 仍携带旧版 peer range，而当前 DSH Web bundle 使用更新版本。</p>
+<h3>许可</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Sev7een/dsh-plugin-automations/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

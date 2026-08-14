@@ -189,63 +189,63 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>Read-only runtime management panel for the official DeepSeek Harness MCP client — see every MCP server&#39;s status, tools, errors, and reconnect counts, without touching your config.</strong></p>
+<p><strong>DeepSeek Harness 官方 MCP 客户端的只读运行时管理面板——一眼看清每个 MCP 服务器的状态、工具、错误与重连计数，绝不改动你的配置。</strong></p>
 <p><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.md">English</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.zh.md">简体中文</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.es.md">Español</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.pt.md">Português</a> · <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.hi.md">हिन्दी</a></p>
 <p><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"></a>
 <a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/ecosystem-dsh--plugin-8b5cf6" alt="dsh-plugin"></a>
 <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/runtime-deepseek--harness-4f46e5" alt="deepseek-harness"></a></p>
 <blockquote>
-<p>🔭 <strong>Observability-first.</strong> <a href="https://github.com/deepseek-ai/deepseek-harness/tree/master/packages/mcp/mcp-client"><code>@deepseek-ai/dsh-mcp-client</code></a> keeps its connection state private — logs only. This plugin shows everything it <em>can</em> observe (config, tool registry, loader state) and says <strong>&quot;unknown&quot;</strong> for what it cannot, instead of guessing. It also proposes the minimal upstream seam that would make status real: see the <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">upstream proposal</a>.</p>
+<p>🔭 <strong>可观测优先。</strong> <a href="https://github.com/deepseek-ai/deepseek-harness/tree/master/packages/mcp/mcp-client"><code>@deepseek-ai/dsh-mcp-client</code></a> 的连接状态是私有的——只有日志。本插件展示一切<strong>能</strong>观测到的事实（配置、工具注册表、Loader 状态），对观测不到的字段如实显示 <strong>&quot;unknown&quot;</strong>，绝不猜测；同时给出让状态可观测的最小上游 seam 提案（见 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">upstream proposal</a>）。</p>
 </blockquote>
-<h3>Compatibility</h3>
+<h3>兼容性</h3>
 <ul>
-<li><strong>Runtime</strong>: DeepSeek Harness ≥ <code>0.1.0-rc.5</code> (peer dependencies pin the <code>0.1.0-rc.6</code> package line).</li>
-<li><strong>Last verified</strong>: 2026-08-14 against a source checkout of deepseek-harness (workspace packages at <code>0.1.0-rc.5</code>, mainline <code>7b9644f</code>) — headless <code>/mcp</code> end-to-end plus a live web profile; evidence in <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/research-notes.zh.md">docs/research-notes.zh.md</a>. Re-verified the same day against mainline <code>47f9438</code> with the <code>mcp/status</code> seam branch (<code>feat/mcp-client-status-observability-seam</code>): a real <code>server-everything</code> row renders <code>status: connected (source: upstream-event)</code> through the packed plugin, plus the launcher-faithful compat flow; record in <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/optimization-plan-v2.zh.md">docs/optimization-plan-v2.zh.md</a>.</li>
+<li><strong>运行时</strong>：DeepSeek Harness ≥ <code>0.1.0-rc.5</code>（peerDependencies 固定 <code>0.1.0-rc.6</code> 包线）。</li>
+<li><strong>最后验证</strong>：2026-08-14，针对 deepseek-harness 源码 checkout（workspace 包 <code>0.1.0-rc.5</code>，mainline <code>7b9644f</code>）——headless <code>/mcp</code> 端到端 + 实时 web profile；证据见 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/research-notes.zh.md">docs/research-notes.zh.md</a>。同日对 mainline <code>47f9438</code> + <code>mcp/status</code> seam 分支（<code>feat/mcp-client-status-observability-seam</code>）复验：真实 <code>server-everything</code> 行经打包插件渲染 <code>status: connected (source: upstream-event)</code>，并跑通与启动器一致的全流程；记录见 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/optimization-plan-v2.zh.md">docs/optimization-plan-v2.zh.md</a>。</li>
 </ul>
-<h3>What you get</h3>
+<h3>你能得到什么</h3>
 <table>
 <thead>
 <tr>
-<th>Surface</th>
-<th>What it shows</th>
+<th>界面</th>
+<th>展示内容</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong><code>/mcp</code> command</strong></td>
-<td>transport, target, tool count, connection status, last error, reconnect count — model-readable, session-log reconstructable, bilingual (<code>outputLanguage: en|zh</code>)</td>
+<td><strong><code>/mcp</code> 命令</strong></td>
+<td>transport、目标、工具数、连接状态、最近错误、重连计数——模型可读、可日志重建，支持双语（<code>outputLanguage: en|zh</code>）</td>
 </tr>
 <tr>
-<td><strong>Settings → Plugins → MCP tab</strong></td>
-<td>the same snapshot read-only, with status badges, expandable tool lists, sanitized errors, probe results</td>
+<td><strong>设置 → 插件 → MCP 页签</strong></td>
+<td>同一快照的只读视图：状态徽标、可展开工具清单、脱敏错误、探测结果</td>
 </tr>
 <tr>
-<td><strong>Panel probe button</strong></td>
-<td>one-click connectivity probe of one streamable-http server from the tab; results stay panel-only</td>
+<td><strong>面板探测按钮</strong></td>
+<td>从页签对单个 streamable-http 服务器一键发起连通性探测；结果仍仅面板可见</td>
 </tr>
 <tr>
-<td><strong>Passive probes</strong></td>
-<td>optional background reachability badges per server, kept separate from connection status</td>
+<td><strong>被动探测</strong></td>
+<td>可选的每服务器后台可达性徽标，与连接状态严格分离展示</td>
 </tr>
 <tr>
-<td><strong>Auto refresh</strong></td>
-<td>the host suggests a refresh interval (<code>refreshIntervalMs</code>); the tab polls and pauses while hidden</td>
+<td><strong>自动刷新</strong></td>
+<td>宿主建议刷新间隔（<code>refreshIntervalMs</code>）；页签轮询并在后台隐藏时暂停</td>
 </tr>
 <tr>
 <td><strong><code>/mcp &lt;server&gt; disable|enable</code></strong></td>
-<td>the exact <code>cordis.patch.yml</code> line to apply — a <em>suggestion</em>, never a write</td>
+<td>应应用的 <code>cordis.patch.yml</code> 确切行——只是<strong>建议</strong>，绝不写文件</td>
 </tr>
 <tr>
-<td><strong><code>mcp_probe</code> tool</strong></td>
-<td>one-shot Streamable HTTP connectivity probe as a background job; results are <strong>panel-only</strong></td>
+<td><strong><code>mcp_probe</code> 工具</strong></td>
+<td>对 Streamable HTTP 端点的一次性连通性探测（后台 job），结果<strong>仅面板可见</strong></td>
 </tr>
 </tbody></table>
-<h3>Quick start</h3>
-<pre><code class="language-sh"># git channel (builds via the package&#39;s prepare script)
+<h3>快速上手</h3>
+<pre><code class="language-sh"># git 通道（经包的 prepare 脚本构建）
 dsh plugin --profile web add github:PerryLink/dsh-mcp-panel#v0.2.0
-# npm channel (published tarball, no build approval needed)
+# npm 通道（已发布产物，免构建放行）
 dsh plugin --profile web add dsh-mcp-panel@0.2.0
 </code></pre>
-<p>Then restart (or let the web surface hot-reload its <code>cordis.patch.yml</code>) and:</p>
+<p>重启（或让 web 面板热重载 <code>cordis.patch.yml</code>），然后：</p>
 <pre><code class="language-text">/mcp
 /mcp everything tools
 /mcp everything disable
@@ -254,8 +254,8 @@ dsh plugin --profile web add dsh-mcp-panel@0.2.0
 - everything [mcp-everything] stdio node …/server-everything/dist/index.js
   | 13 tools | enabled | status: unknown (source: derived) | reconnects: — | last error: —
 </code></pre>
-<p>Manual install: put <code>dsh-mcp-panel</code> into the profile&#39;s <code>node_modules</code> (or the shared
-<code>$DSH_HOME/profiles/node_modules</code> fallback) and add the row to <code>cordis.patch.yml</code>:</p>
+<p>手动安装：把 <code>dsh-mcp-panel</code> 放进 profile 的 <code>node_modules</code>（或共享的
+<code>$DSH_HOME/profiles/node_modules</code> 回退目录），并在 <code>cordis.patch.yml</code> 添加：</p>
 <pre><code class="language-yaml">- insert:
     - id: mcp-panel
       name: dsh-mcp-panel
@@ -263,103 +263,103 @@ dsh plugin --profile web add dsh-mcp-panel@0.2.0
         probeEnabled: true
         probeTimeoutMs: 10000
 </code></pre>
-<h4>Uninstall</h4>
+<h4>卸载</h4>
 <ol>
-<li>Remove the <code>mcp-panel</code> row from <code>cordis.patch.yml</code> (the web surface hot-reloads it; other surfaces restart).</li>
-<li>Delete the package from the profile&#39;s <code>node_modules</code> (or the shared <code>profiles/node_modules</code> fallback).</li>
-<li>Verify with <code>dsh web --dump-config</code> that no <code>mcp-panel</code> row remains.</li>
+<li>从 <code>cordis.patch.yml</code> 移除 <code>mcp-panel</code> 行（web 面板会热重载；其他面板重启）。</li>
+<li>从 profile 的 <code>node_modules</code>（或共享的 <code>profiles/node_modules</code> 回退目录）删除该包。</li>
+<li>用 <code>dsh web --dump-config</code> 确认没有残留的 <code>mcp-panel</code> 行。</li>
 </ol>
-<h3>Honest by contract</h3>
+<h3>诚实契约</h3>
 <ul>
-<li><strong>Read-only.</strong> No configuration file is ever written. <code>disable</code>/<code>enable</code> prints a suggestion you apply yourself.</li>
-<li><strong>No fake status.</strong> Connection fields without upstream data read <code>unknown</code> / <code>—</code>, with <code>statusSource: derived</code>.</li>
-<li><strong>Sanitized display.</strong> URL query credentials, userinfo passwords, header values, bearer tokens, and JWTs are redacted before rendering; configured <code>headers</code> never enter any snapshot.</li>
-<li><strong>Panel-only results.</strong> Probe details live in the settings tab, never in model context; <code>/mcp</code> output is the model-readable surface and is fully reconstructable from the session log.</li>
-<li><strong>No mcp-client changes.</strong> Transport, OAuth, and protocol stay untouched — the observability gap is covered by the <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">upstream proposal</a>, which this plugin already consumes (typed <code>mcp/status</code> event + <code>mcpStatus</code> query service, feature-detected at runtime).</li>
+<li><strong>只读。</strong> 绝不写任何配置文件；<code>disable</code>/<code>enable</code> 只是打印建议，由你自行应用。</li>
+<li><strong>不伪造状态。</strong> 无上游数据的连接字段显示 <code>unknown</code> / <code>—</code>，并标注 <code>statusSource: derived</code>。</li>
+<li><strong>展示脱敏。</strong> URL 查询串凭据、userinfo 密码、header 值、Bearer token、JWT 在渲染前全部清洗；配置中的 <code>headers</code> 从不进入任何快照。</li>
+<li><strong>panel-only 结果。</strong> 探测细节只进设置页签，不进模型上下文；<code>/mcp</code> 输出是模型可读面，且完全可从会话日志重建。</li>
+<li><strong>零 mcp-client 改动。</strong> 传输 / OAuth / 协议不动——可观测缺口由<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">上游提案</a>覆盖，本插件已实现其消费侧（类型化的 <code>mcp/status</code> 事件 + <code>mcpStatus</code> 查询服务，运行时特性探测）。</li>
 </ul>
-<h3>Configuration</h3>
+<h3>配置</h3>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Description</th>
+<th>字段</th>
+<th>默认</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>probeEnabled</code></td>
 <td><code>true</code></td>
-<td>Register the <code>mcp_probe</code> tool (needs <code>ctx.jobs</code> in the composition)</td>
+<td>是否注册 <code>mcp_probe</code> 工具（需要组合里有 <code>ctx.jobs</code>）</td>
 </tr>
 <tr>
 <td><code>probeTimeoutMs</code></td>
 <td><code>10000</code></td>
-<td>Per-probe timeout</td>
+<td>单次探测超时</td>
 </tr>
 <tr>
 <td><code>maxProbes</code></td>
 <td><code>10</code></td>
-<td>Cap on probe records shown in the panel</td>
+<td>面板展示的探测记录上限</td>
 </tr>
 <tr>
 <td><code>refreshIntervalMs</code></td>
 <td><code>0</code></td>
-<td>Suggested panel refresh interval in ms (<code>0</code> = on demand only)</td>
+<td>建议的面板刷新间隔（毫秒；<code>0</code> = 仅手动刷新）</td>
 </tr>
 <tr>
 <td><code>outputLanguage</code></td>
 <td><code>en</code></td>
-<td>Output language of the <code>/mcp</code> command (<code>en</code> | <code>zh</code> | <code>es</code> | <code>pt</code> | <code>hi</code>)</td>
+<td><code>/mcp</code> 命令输出语言（<code>en</code> | <code>zh</code> | <code>es</code> | <code>pt</code> | <code>hi</code>）</td>
 </tr>
 <tr>
 <td><code>passiveProbeEnabled</code></td>
 <td><code>false</code></td>
-<td>Periodically probe streamable-http servers in the background</td>
+<td>是否周期性后台探测 streamable-http 服务器</td>
 </tr>
 <tr>
 <td><code>passiveProbeIntervalMs</code></td>
 <td><code>60000</code></td>
-<td>Passive probe interval in milliseconds</td>
+<td>被动探测间隔（毫秒）</td>
 </tr>
 </tbody></table>
-<h3>Permissions &amp; data</h3>
+<h3>权限与数据</h3>
 <ul>
-<li><strong>Reads</strong>: loader entries, the tool registry (<code>mcp__&lt;server&gt;__</code> names), and — when upstream ships it — <code>mcp/status</code> events.</li>
-<li><strong>Writes</strong>: none. No configuration file is ever modified.</li>
-<li><strong>Network</strong>: only the one-shot <code>mcp_probe</code> (and the optional passive probe) POSTs one MCP <code>initialize</code> request to endpoints you configured; configured headers are used for the request and are never displayed or logged.</li>
-<li>No telemetry, no external services, no background work beyond the optional probe timers.</li>
+<li><strong>读取</strong>：Loader 条目、工具注册表（<code>mcp__&lt;server&gt;__</code> 名字）以及上游落地后的 <code>mcp/status</code> 事件。</li>
+<li><strong>写入</strong>：无。绝不修改任何配置文件。</li>
+<li><strong>网络</strong>：仅一次性 <code>mcp_probe</code>（及可选被动探测）向你<strong>已配置</strong>的端点 POST 一次 MCP <code>initialize</code> 请求；已配置 headers 仅用于该请求，从不展示或记录。</li>
+<li>无遥测、无外部服务，除可选探测定时器外无后台任务。</li>
 </ul>
-<h3>Troubleshooting</h3>
+<h3>故障排查</h3>
 <ul>
-<li>Row not visible? Run <code>dsh web --dump-config</code> and check that the <code>mcp-panel</code> insert landed with a unique id.</li>
-<li>Panel shows <code>status: unknown (source: derived)</code> — expected until the upstream seam lands; see <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">docs/upstream-proposal.md</a>.</li>
-<li>Panel looks stale? Set <code>refreshIntervalMs</code> to a positive value (e.g. <code>5000</code>) in the <code>mcp-panel</code> config row to poll automatically.</li>
-<li>Boot log shows a FAILED <code>mcp-panel</code> fiber — the package must resolve from the profile (bare <code>name: dsh-mcp-panel</code> resolves via the profile&#39;s <code>node_modules</code> or the shared fallback).</li>
-<li>Rollback: remove the row (see Uninstall).</li>
+<li>行不见了？运行 <code>dsh web --dump-config</code>，检查 <code>mcp-panel</code> insert 是否生效且 id 唯一。</li>
+<li>面板显示 <code>status: unknown (source: derived)</code>——在上游 seam 落地前属预期；见 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/docs/upstream-proposal.md">docs/upstream-proposal.md</a>。</li>
+<li>面板数据不更新？把 <code>mcp-panel</code> 配置行的 <code>refreshIntervalMs</code> 设为正值（如 <code>5000</code>）自动轮询。</li>
+<li>启动日志出现 FAILED 的 <code>mcp-panel</code> fiber——确认包能从 profile 解析（裸 <code>name: dsh-mcp-panel</code> 经 profile 的 <code>node_modules</code> 或共享回退目录解析）。</li>
+<li>回滚：移除该行（见「卸载」）。</li>
 </ul>
-<h3>Security</h3>
-<p>Found a security issue? Open a GitHub issue <strong>without</strong> pasting secrets, keys, or tokens — redact everything first. This plugin holds the credentials of your configured MCP servers only in memory for probe requests; they never reach logs or snapshots.</p>
-<h3>How it works</h3>
+<h3>安全</h3>
+<p>发现安全问题？请在 GitHub 提 issue，但<strong>不要</strong>粘贴密钥、key 或 token——先脱敏。本插件仅在内存中持有你所配置 MCP 服务器的凭据用于探测请求；它们从不进入日志或快照。</p>
+<h3>工作原理</h3>
 <ul>
-<li><strong>Host half</strong> — a <code>mcpPanel</code> Typert Remote service assembles the snapshot from three read-only sources: loader rows (<code>@deepseek-ai/dsh-mcp-client</code> entries), <code>ctx.tools.schemas()</code> grouped by the <code>mcp__&lt;server&gt;__</code> namespace, and upstream <code>mcp/status</code> observations. The hand-written <code>./typert</code> manifest registers <code>mcpPanel/status</code> with the gateway; <code>zod</code> is bundled, so the host bundle is self-contained.</li>
-<li><strong>Browser half</strong> — a <code>dsh.client</code> bundle (served at <code>/plugins/dsh-mcp-panel/client.js</code>) mounts the same descriptor via <code>ctx.remote.$mount</code> and registers a read-only <code>settings.plugins.tab</code> entry (<code>id: mcp</code>). The presenter is a pure function; styles are scoped and token-driven.</li>
-<li><strong>The <code>/mcp</code> command</strong> goes through the standard command registry — every line lands in <code>command/run</code> + <code>command/done</code> session events.</li>
+<li><strong>Host 半部</strong>——<code>mcpPanel</code> Typert Remote 服务从三个只读来源组装快照：Loader 行（<code>@deepseek-ai/dsh-mcp-client</code> 条目）、按 <code>mcp__&lt;server&gt;__</code> 名字空间分组的 <code>ctx.tools.schemas()</code>、以及上游 <code>mcp/status</code> 观测。手写的 <code>./typert</code> 清单把 <code>mcpPanel/status</code> 注册进网关；<code>zod</code> 被打包进产物，host bundle 自包含。</li>
+<li><strong>浏览器半部</strong>——<code>dsh.client</code> bundle（由 <code>/plugins/dsh-mcp-panel/client.js</code> 提供）通过 <code>ctx.remote.$mount</code> 挂载同一描述符，并注册只读的 <code>settings.plugins.tab</code> 条目（<code>id: mcp</code>）。presenter 是纯函数；样式带作用域且使用主题 token。</li>
+<li><strong><code>/mcp</code> 命令</strong>走标准命令注册表——每一行都落入 <code>command/run</code> + <code>command/done</code> 会话事件。</li>
 </ul>
-<h3>Development</h3>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run typecheck
-pnpm test          # 96 tests: sanitizer extremes, grouping, aggregation tolerance, command output (5 languages), probe gating, client wiring, presenter
-pnpm run build     # tsc declarations → lib/types; tsdown → lib/index.js + lib/typert.host.js + lib/client.js
+pnpm test          # 96 个测试：脱敏极端用例、分组、聚合容错、命令输出（五语言）、探测门控、客户端接线、presenter
+pnpm run build     # tsc 声明 → lib/types；tsdown → lib/index.js + lib/typert.host.js + lib/client.js
 pnpm run verify:self-contained
 pnpm pack
 </code></pre>
-<p>Verification against a real harness checkout:
-<code>node --import tsx/esm scripts/verify-headless.mjs</code> boots the full web profile in process (ephemeral port) and prints the exact <code>/mcp</code>, <code>/mcp &lt;server&gt; tools</code>, and <code>/mcp &lt;server&gt; disable</code> output.</p>
+<p>对真实 harness checkout 的验证：
+<code>node --import tsx/esm scripts/verify-headless.mjs</code> 在进程内启动完整 web profile（临时端口），打印真实的 <code>/mcp</code>、<code>/mcp &lt;server&gt; tools</code>、<code>/mcp &lt;server&gt; disable</code> 输出。</p>
 <h3>License</h3>
 <p><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/LICENSE">Apache License 2.0</a> © 2026 dsh-mcp-panel contributors</p>
 
     </div>
-    <p class="note"><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

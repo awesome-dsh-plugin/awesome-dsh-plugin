@@ -189,104 +189,83 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>A <a href="https://www.deepseek.com">DSH</a> web plugin that lets you select part of a
-conversation and ask about it in a <strong>side chat</strong> — a dedicated chat opened in a
-right-side panel, scoped to the conversation it was started from. Side-chat AI
-replies can also be <strong>brought back to the main conversation</strong> (directly or as a
-summary, into the composer draft or as a collapsed context row).</p>
+<p>一个 <a href="https://www.deepseek.com">DSH</a> 网页插件：在对话中选中部分内容后，即可在
+<strong>侧边聊天</strong>里提问 —— 侧边聊天是位于右侧面板、按发起它的主会话隔离的独立聊天；
+侧边聊天的 AI 回复也能<strong>带回主会话</strong>（直接带回或摘要后带回，写入草稿或注入为折叠提示行）。</p>
 <blockquote>
-<p>中文文档见 <a href="https://github.com/heartmove/dsh-side-chat/blob/main/README.zh.md">README.zh.md</a>.</p>
+<p>English docs: <a href="https://github.com/heartmove/dsh-side-chat/blob/main/README.md">README.md</a>.</p>
 </blockquote>
-<h3>What it does</h3>
+<h3>功能</h3>
 <ul>
-<li><strong>Select text → ask in a side chat.</strong> Select any part of a message and a
-floating button <em>&quot;Ask in side chat&quot;</em> appears. The selected text is carried
-into the side chat automatically.</li>
-<li><strong>Per-conversation isolation.</strong> Each side chat is a hidden ordinary DSH
-session (<code>meta.parentSession</code> links it to the conversation that started it,
-and the session is archived so it never appears in the main session list).
-Every conversation gets its own side chat.</li>
-<li><strong>Inherits main-conversation context.</strong> The side chat is aware of the
-conversation it was started from and its working directory, and inherits the
-main conversation&#39;s model, thinking effort, and permission preset by default.</li>
-<li><strong>Model / effort / permission are adjustable.</strong> A two-level model menu
-(provider → model → effort) and a permission menu are copied from the main
-conversation, so each side chat can be tuned independently.</li>
-<li><strong>&quot;Look up workspace / parent when needed&quot; switch</strong> (default off). When on,
-the side chat may read files from the workspace and the parent conversation
-when it needs more information.</li>
-<li><strong>Normal conversation capabilities.</strong> Markdown replies, thinking/reasoning
-display, image attachments (paste / drag-and-drop), send/stop controls, and
-thinking-duration display — all reuse the same UI primitives as the main
-conversation.</li>
-<li><strong>Bring AI replies back to the main conversation.</strong> Every assistant reply in
-the side chat can be brought into the current main conversation: select part
-of it with the mouse, or insert the whole reply in one click. Either way you
-can choose <strong>&quot;Insert directly&quot;</strong> (verbatim) or <strong>&quot;Summarize &amp; insert&quot;</strong> (the
-side chat&#39;s inherited model summarizes it first). Where it lands is
-configurable: <strong>into the composer draft</strong>, or <strong>as a collapsed context row</strong>
-(injected as context — not into the composer, never sent).</li>
-<li><strong>Ask about the current question dialog.</strong> When the main conversation shows a
-question dialog (the agent asking you something), the side panel automatically
-lists the question and each option (no manual text selection needed). Each
-question has &quot;Bring all&quot; and each option has &quot;Bring&quot;, both offering to
-<strong>continue an existing side chat</strong> or <strong>start a new one</strong>. The list can be
-<strong>collapsed / expanded</strong>, and items can be <strong>deleted individually or all at
-once</strong> (deleted items stay gone).</li>
-<li><strong>Deletable side chats.</strong> Each entry in the side-chat list can be deleted
-individually, or all of them at once via &quot;Delete all&quot;.</li>
-<li><strong>Resizable, collapsible panel.</strong> Drag to resize (280–720 px), collapse and
-expand; no close button.</li>
-<li><strong>Language-aware.</strong> The plugin follows DSH&#39;s language setting (Chinese /
-English).</li>
+<li><strong>选中内容 → 侧边聊天提问。</strong> 选中任意消息文本后，会浮出「在侧边聊天中提问」按钮，
+选中的内容会自动带入侧边聊天。</li>
+<li><strong>按主会话隔离。</strong> 每个侧边聊天都是一个隐藏的普通 DSH 会话（通过
+<code>meta.parentSession</code> 关联发起它的主会话，并被归档，因此不会出现在主会话列表中）。
+每个主会话各自拥有自己的侧边聊天。</li>
+<li><strong>继承主会话上下文。</strong> 侧边聊天能感知它的发起会话与所在工作目录，并默认继承主会话的
+模型、思考难度与权限预设。</li>
+<li><strong>模型 / 思考难度 / 权限可调。</strong> 复刻主会话的二级模型菜单（服务商 → 模型 → 思考难度）
+与权限菜单，每个侧边聊天可独立调整。</li>
+<li><strong>「需要时从工作区 / 主会话查信息」开关</strong>（默认关闭）。开启后，侧边聊天在需要更多信息
+时，可读取工作区文件与主会话内容。</li>
+<li><strong>与正常对话一致的能力。</strong> Markdown 回复、思考（推理）过程展示、图片附件（粘贴 /
+拖拽）、发送/停止按钮、思考时长显示 —— 均复用主会话同款 UI 组件。</li>
+<li><strong>AI 回复带回主会话。</strong> 侧边聊天里的每条 AI 回复都能带回当前主会话：可鼠标选中
+部分内容后带回，或一键带回整段；两种方式都可选择 <strong>「直接带回」</strong>（原文）或
+<strong>「摘要后带回」</strong>（先用侧边聊天继承的模型生成摘要再带回）。带回的落地方式可在设置里
+选择：<strong>写入输入框草稿</strong>，或<strong>注入为折叠提示行</strong>（作为上下文，不写草稿、不发送）。</li>
+<li><strong>针对问题弹框答疑。</strong> 当主会话弹出「问题弹框」（智能体向用户提问）时，侧边面板会自动
+逐项列出问题和各个选项（无需手动选中文字）。每个问题可「带入全部」、每个选项可「带入」，
+且都支持 <strong>继续已有侧边聊天</strong> 或 <strong>新建侧边聊天</strong> 两种方式，让 AI 帮你理解。列表支持
+<strong>折叠 / 展开</strong>，以及 <strong>删除单个 / 删除全部</strong>（删除后不再出现）。</li>
+<li><strong>侧边聊天可删除。</strong> 侧边聊天列表里的每个会话可单独删除，也可一次性「删除全部」。</li>
+<li><strong>可拖拽、可收起的面板。</strong> 拖拽左边缘调整宽度（280–720 px），可收起/展开；没有关闭按钮。</li>
+<li><strong>跟随语言设置。</strong> 插件会跟随 DSH 的语言设置切换中文 / 英文界面。</li>
 </ul>
-<h3>Requirements</h3>
+<h3>环境要求</h3>
 <ul>
 <li><a href="https://nodejs.org">Node.js</a> ≥ 20</li>
 <li><a href="https://pnpm.io">pnpm</a></li>
-<li>DSH ≥ <code>0.1.0-rc.6</code> (the harness <code>engines.dsh</code> constraint)</li>
+<li>DSH ≥ <code>0.1.0-rc.6</code>（即 <code>engines.dsh</code> 声明的约束）</li>
 </ul>
-<h3>Build</h3>
+<h3>构建</h3>
 <pre><code class="language-bash">pnpm install
 pnpm build
 </code></pre>
-<p><code>pnpm build</code> clears <code>lib/</code>, runs <code>tsc -p tsconfig.build.json</code> for type
-declarations, then bundles the host (<code>lib/index.js</code>) and client
-(<code>lib/client.js</code> + <code>lib/client-registry.js</code>) with tsdown.</p>
-<h3>Deploy</h3>
-<p>DSH web loads external plugins from the active profile. This package is a
-<strong>bundle</strong>: its <code>package.json</code> declares <code>dsh.bundle.patch</code> →
-<a href="https://github.com/heartmove/dsh-side-chat/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a>, whose <code>insert</code> row mounts the plugin.
-That declaration is what lets <code>dsh plugin add</code> install the package <em>and</em>
-activate it in one step.</p>
-<h4>Install from GitHub</h4>
+<p><code>pnpm build</code> 会先清空 <code>lib/</code>，再执行 <code>tsc -p tsconfig.build.json</code> 生成类型声明，
+最后用 tsdown 打包出 host 端（<code>lib/index.js</code>）与 client 端
+（<code>lib/client.js</code> + <code>lib/client-registry.js</code>）。</p>
+<h3>部署</h3>
+<p>DSH web 从当前 profile 加载外部插件。本包是一个 <strong>bundle</strong>：它的
+<code>package.json</code> 声明了 <code>dsh.bundle.patch</code> → <a href="https://github.com/heartmove/dsh-side-chat/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a>，
+其中的 <code>insert</code> 条目用于挂载插件。正是这个声明让 <code>dsh plugin add</code> 能一步完成
+「安装 + 激活」。</p>
+<h4>从 GitHub 安装</h4>
 <pre><code class="language-bash">npx -p @deepseek-ai/dsh dsh plugin --profile web add github:heartmove/dsh-side-chat
 </code></pre>
-<p><code>dsh plugin</code> forwards to pnpm inside <code>~/.dsh/profiles/web/</code>, then reconciles the
-bundle into the profile&#39;s <code>dsh.profile.bundles</code> layer list. A git install
-fetches sources, so pnpm runs the package&#39;s <code>prepare</code> script (<code>tsdown</code>) to build
-<code>lib/</code> from <code>src/</code> after checkout.</p>
-<p>pnpm ≥ 10 refuses to run a git dependency&#39;s <code>prepare</code> script until it is
-allowlisted, so the first <code>add</code> fails with an &quot;Ignored build scripts&quot; hint. Copy
-the exact package key pnpm printed into the profile&#39;s <code>pnpm-workspace.yaml</code>
-(<code>~/.dsh/profiles/web/pnpm-workspace.yaml</code>):</p>
+<p><code>dsh plugin</code> 会把命令转发到 <code>~/.dsh/profiles/web/</code> 下的 pnpm，然后把 bundle
+对账进该 profile 的 <code>dsh.profile.bundles</code> 层列表。git 安装拉取的是源码，因此
+pnpm 会在 checkout 之后运行包的 <code>prepare</code> 脚本（<code>tsdown</code>），从 <code>src/</code> 构建出
+<code>lib/</code>。</p>
+<p>pnpm ≥ 10 在把 git 依赖加入白名单之前，会拒绝运行它的 <code>prepare</code> 脚本，因此首次
+<code>add</code> 会失败并给出「Ignored build scripts」提示。把 pnpm 打印的确切包名键复制到
+该 profile 的 <code>pnpm-workspace.yaml</code>（<code>~/.dsh/profiles/web/pnpm-workspace.yaml</code>）：</p>
 <pre><code class="language-yaml">allowBuilds:
   dsh-side-chat: true
 </code></pre>
-<p>then re-run the <code>add</code>. That allowance means &quot;run this package&#39;s code on my
-machine at install time&quot; — only allow packages whose source you trust, and pin a
-commit (<code>github:heartmove/dsh-side-chat#&lt;sha&gt;</code>) so a later push cannot silently
-change what runs.</p>
-<p>Restart <code>dsh web</code>, then hard-refresh the page (Ctrl/Cmd+Shift+R).</p>
-<h4>Install from a local checkout</h4>
-<p>From the directory that contains this checkout:</p>
+<p>然后重新执行 <code>add</code>。这个白名单意味着「允许该包的代码在安装时于本机运行」——
+只放行你信任其源码的包，并固定到某个 commit
+（<code>github:heartmove/dsh-side-chat#&lt;sha&gt;</code>），这样之后的推送无法悄悄改变实际运行的代码。</p>
+<p>重启 <code>dsh web</code>，然后在浏览器中强制刷新页面（Ctrl/Cmd+Shift+R）。</p>
+<h4>从本地 checkout 安装</h4>
+<p>在包含本项目 checkout 的目录下执行：</p>
 <pre><code class="language-bash">npx -p @deepseek-ai/dsh dsh plugin --profile web add ./dsh-side-chat
 </code></pre>
-<p>pnpm links the checkout and <code>dsh</code> activates the bundle the same way.</p>
-<h4>Manual link</h4>
-<p>To manage the profile by hand, link the package and list it as a bundle in
-<code>~/.dsh/profiles/web/package.json</code> (the bundle&#39;s own <code>cordis.patch.yml</code> supplies
-the loader row, so no <code>insert</code> entry is needed):</p>
+<p>pnpm 会链接该 checkout，<code>dsh</code> 以同样方式激活这个 bundle。</p>
+<h4>手动链接</h4>
+<p>如果你想手动管理 profile，可在 <code>~/.dsh/profiles/web/package.json</code> 里链接该包并
+把它列为 bundle（bundle 自带的 <code>cordis.patch.yml</code> 已提供加载器条目，因此无需再
+写 <code>insert</code>）：</p>
 <pre><code class="language-json">{
   &quot;dependencies&quot;: {
     &quot;dsh-side-chat&quot;: &quot;link:D:\\path\\to\\dsh-side-chat&quot;
@@ -298,112 +277,101 @@ the loader row, so no <code>insert</code> entry is needed):</p>
   }
 }
 </code></pre>
-<p>(On POSIX systems use <code>link:/path/to/dsh-side-chat</code>.) Then run <code>pnpm install</code>
-in the profile directory and restart <code>dsh web</code>.</p>
-<h3>Usage</h3>
+<p>（在 POSIX 系统上使用 <code>link:/path/to/dsh-side-chat</code>。）然后在 profile 目录执行
+<code>pnpm install</code> 并重启 <code>dsh web</code>。</p>
+<h3>使用</h3>
 <ol>
-<li>Select part of any message in the main conversation.</li>
-<li>A floating <strong>&quot;Ask in side chat&quot;</strong> button appears — click it.<ul>
-<li>If a side chat already exists for this conversation, you&#39;ll also see
-<strong>&quot;Continue active side chat&quot;</strong>.</li>
+<li>在主对话中选中某条消息的部分文本。</li>
+<li>点击浮出的 <strong>「在侧边聊天中提问」</strong> 按钮。<ul>
+<li>若当前会话已有侧边聊天，还会出现 <strong>「继续在激活的侧边聊天中提问」</strong>。</li>
 </ul>
 </li>
-<li>The right-side panel opens (or expands) with the selected text staged in the
-composer.</li>
-<li>Adjust <strong>model / effort</strong> and <strong>permission</strong>, and toggle <strong>&quot;Look up workspace
-/ parent when needed&quot;</strong> as desired.</li>
-<li>Send. The reply streams back with markdown rendering and, where applicable,
-a &quot;Think&quot; row for the model&#39;s reasoning.</li>
-<li>Drag the panel&#39;s left edge to resize, or use the collapse/expand control.</li>
+<li>右侧面板会打开（或展开），选中的文本已带入输入框。</li>
+<li>按需调整 <strong>模型 / 思考难度</strong>、<strong>权限</strong>，以及 <strong>「需要时从工作区 / 主会话查信息」</strong>
+开关。</li>
+<li>发送。回复会以流式返回，带 Markdown 渲染，并在需要时显示「思考」折叠行展示模型推理过程。</li>
+<li>拖动面板左边缘可调整宽度，或使用收起/展开控件。</li>
 </ol>
-<h4>Sending behavior</h4>
-<p>By default (<code>sendImmediately</code> on), selecting text <strong>sends it immediately</strong> and
-appends your configured <strong>default prompt</strong>. Turn <code>sendImmediately</code> off in
-settings to stage the selection as an attachment instead, so you can review and
-edit before sending.</p>
-<h4>Bring replies back to the main conversation</h4>
-<p>Assistant replies in the side chat can be brought into the current main
-conversation (<strong>never sent</strong>):</p>
+<h4>发送行为</h4>
+<p>默认（<code>sendImmediately</code> 开启）时，选中内容会<strong>立即发送</strong>，并自动附加你配置的
+<strong>默认提示词</strong>。在设置里关闭 <code>sendImmediately</code> 后，选中的内容会先作为附件放入输入框，
+由你确认、编辑后再发送。</p>
+<h4>带回主会话</h4>
+<p>侧边聊天里的 AI 回复可以带回当前主会话（<strong>不会立即发送</strong>）：</p>
 <ol>
-<li><strong>Bring a selection.</strong> Select part of an assistant reply in the side chat,
-then choose <strong>&quot;Insert directly&quot;</strong> (verbatim) or <strong>&quot;Summarize &amp; insert&quot;</strong> (the
-side chat&#39;s inherited model summarizes it first) from the floating menu.</li>
-<li><strong>Bring the whole reply.</strong> Each assistant reply has <strong>&quot;Insert directly&quot;</strong> and
-<strong>&quot;Summarize &amp; insert&quot;</strong> buttons under its text, for inserting the full reply
-(or its summary) in one click.</li>
-<li>Per the <strong>bring-back target</strong> setting, the content is either <strong>appended to
-the main composer draft</strong> (edit before sending) or <strong>injected as a collapsed
-context row</strong> (source-tagged, not into the composer; the model sees it next
-turn).</li>
+<li><strong>带回选中片段。</strong> 在侧边聊天里用鼠标选中 AI 回复的一部分文本，浮出的菜单里选择
+<strong>「直接带回」</strong>（原文）或 <strong>「摘要后带回」</strong>（先用侧边聊天继承的模型生成摘要）。</li>
+<li><strong>带回整段。</strong> 每条 AI 回复正文下方有 <strong>「直接带回」</strong> 与 <strong>「摘要后带回」</strong> 两个按钮，
+一键把该条回复的完整正文（或其摘要）带回。</li>
+<li>根据设置里的 <strong>带回内容的方式</strong>，带回的内容要么<strong>追加进主会话输入框草稿</strong>（可编辑后再
+发送），要么<strong>注入为主会话里一条折叠的提示行</strong>（带来源标记，作为上下文、不写草稿，
+下次对话时模型可见）。</li>
 </ol>
-<h4>Ask about the current question dialog</h4>
-<p>When the main conversation shows a question dialog, the side panel automatically
-lists the question and its options:</p>
+<h4>针对问题弹框</h4>
+<p>当主会话弹出「问题弹框」时，侧边面板会自动列出问题和选项：</p>
 <ol>
-<li>While the panel is closed, a <strong>floating entry</strong> appears beside the dialog&#39;s
-header — click it to open the panel.</li>
-<li>Each question has &quot;Bring all&quot; and each option has &quot;Bring&quot;, both offering to
-<strong>continue an existing side chat</strong> or <strong>start a new one</strong>.</li>
-<li>The list can be <strong>collapsed / expanded</strong>, and items can be <strong>deleted
-individually or all at once</strong> (deleted items stay gone).</li>
+<li>面板关闭时，会先在弹框标题旁出现一个<strong>浮动入口按钮</strong>，点击即可打开面板查看。</li>
+<li>每个问题可「带入全部」、每个选项可「带入」，且都支持 <strong>继续已有侧边聊天</strong> 或
+<strong>新建侧边聊天</strong> 两种方式。</li>
+<li>列表左上角可 <strong>折叠 / 展开</strong>；每个问题项可 <strong>删除</strong>，也可 <strong>删除全部</strong>（删除后不再出现）。</li>
 </ol>
-<h4>Delete side chats</h4>
-<p>Each entry in the side-chat list has a &quot;×&quot; delete button; &quot;Delete all&quot; at the
-top-right removes every side chat of the current conversation.</p>
-<h3>Settings</h3>
-<p>Open DSH <strong>Settings → 侧边聊天 (Side chat)</strong> to configure:</p>
+<h4>删除侧边聊天</h4>
+<p>侧边聊天列表里每个条目有「×」删除按钮；右上角「删除全部」可一次性删除当前主会话的所有
+侧边聊天。</p>
+<h3>设置</h3>
+<p>打开 DSH <strong>设置 → 侧边聊天（Side chat）</strong>，可配置：</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Default</th>
-<th>Description</th>
+<th>设置项</th>
+<th>默认值</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>lookupDefault</code></td>
-<td>off</td>
-<td>Whether the &quot;look up workspace / parent&quot; switch is on by default for new side chats.</td>
+<td>关</td>
+<td>新建侧边聊天时，「需要时从工作区 / 主会话查信息」开关是否默认开启。</td>
 </tr>
 <tr>
 <td><code>sendImmediately</code></td>
-<td>on</td>
-<td>Whether selecting text sends it immediately, or stages it as an attachment.</td>
+<td>开</td>
+<td>选中内容后立即发送，还是先作为附件放入输入框。</td>
 </tr>
 <tr>
 <td><code>defaultPrompt</code></td>
-<td><em>(empty)</em></td>
-<td>Extra prompt appended when the selection is sent immediately.</td>
+<td><em>（空）</em></td>
+<td>「立即发送」开启时，附加在选中内容后的额外提示词。</td>
 </tr>
 <tr>
 <td><code>bringMode</code></td>
 <td><code>draft</code></td>
-<td>Where brought-back content lands: <code>draft</code> into the composer, or <code>context</code> as a collapsed context row.</td>
+<td>带回内容的落地方式：<code>draft</code> 写入输入框草稿，<code>context</code> 注入为折叠提示行。</td>
 </tr>
 </tbody></table>
-<p>Preferences are stored in the DSH settings namespace <code>dsh-side-chat</code>.</p>
-<h3>Project layout</h3>
+<p>偏好设置保存在 DSH 设置命名空间 <code>dsh-side-chat</code> 下。</p>
+<h3>项目结构</h3>
 <pre><code>src/
-  index.ts            host plugin (routes, session/agent lifecycle, transcript folding)
-  wire.ts             request/response helpers
-  trust-fence.ts      loopback / trusted-API request guard
-  settings-shared.ts  preference vocabulary shared by host and client
-  context-types.ts    Cordis Context type augmentation
+  index.ts            host 插件（路由、会话/Agent 生命周期、转录折叠）
+  wire.ts             请求/响应辅助
+  trust-fence.ts      环回 / 可信 API 请求守卫
+  settings-shared.ts  host 与 client 共用的偏好设置词汇
+  context-types.ts    Cordis Context 类型扩展
   client/
-    index.tsx         client plugin (panel, composer, settings section, floating buttons)
-    api.ts            client↔host API types
-    locales.ts        zh/en dictionaries
-    client.module.css panel/composer/settings styles
-    layout.css        #root margin-right driven by panel width
-cordis.patch.yml      bundle patch layer (inserts the loader row; dsh.bundle.patch)
-dsh.plugin.json       external plugin manifest
-tsdown.config.ts      bundle config (client externals + CSS inlining)
+    index.tsx         client 插件（面板、输入框、设置分区、悬浮按钮）
+    api.ts            client↔host API 类型
+    locales.ts        中英文词典
+    client.module.css 面板/输入框/设置样式
+    layout.css        由面板宽度驱动的 #root margin-right
+cordis.patch.yml      bundle patch 层（插入加载器条目；dsh.bundle.patch 指向它）
+dsh.plugin.json       外部插件清单
+tsdown.config.ts      打包配置（client 外部依赖 + CSS 内联）
 </code></pre>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/heartmove/dsh-side-chat/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/heartmove/dsh-side-chat/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/heartmove/dsh-side-chat/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

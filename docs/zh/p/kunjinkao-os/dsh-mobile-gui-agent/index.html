@@ -193,175 +193,152 @@ footer p+p{margin-top:.5rem}
 <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
 <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek%20Harness-0.1.0--rc.6-4B32C3" alt="DeepSeek Harness"></a>
 <a href="https://developer.android.com/tools/adb"><img src="https://img.shields.io/badge/Android-ADB-3DDC84?logo=android&logoColor=white" alt="Android"></a>
-<a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></p>
-<p>English | <a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/README.zh.md">中文</a></p>
-<p><code>dsh-mobile-gui-agent</code> is an installable DeepSeek Harness plugin for controlling Android devices through ADB. It adds a Mobile tab to the Harness Web UI and drives every task through an observe → decide → act → verify loop.</p>
-<p>The repository is a single publishable npm package. The bundle patch inserts one Cordis plugin row; that plugin composes the ADB Provider, the Phone Agent Consumer, the Phone tools, the Typert Remote adapter, and the browser client under one lifecycle.</p>
-<h3>Quick start</h3>
-<p>Connect and authorize an Android device, then install the pinned release into the Harness Web profile:</p>
+<a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/../LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></p>
+<p><a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/../README.md">English</a> | 中文</p>
+<p><code>dsh-mobile-gui-agent</code> 是一个可安装的 DeepSeek Harness Android 移动端 GUI Agent 插件。它通过 ADB 控制真机或模拟器，在 Harness Web UI 中增加 Mobile 标签页，并让每个任务严格执行“观察 → 决策 → 动作 → 验证”的循环。</p>
+<p>本仓库是单个可发布 npm 包。bundle patch 只插入一个 Cordis 插件行；该插件在同一生命周期下组合 ADB Provider、Phone Agent Consumer、Phone 工具、Typert Remote 适配器和浏览器客户端。</p>
+<h3>快速开始</h3>
+<p>连接并授权 Android 设备，然后把固定版本安装到 Harness Web profile：</p>
 <pre><code class="language-bash">adb devices -l
 dsh plugin --profile web add github:kunjinkao-os/dsh-mobile-gui-agent#v0.1.1
 dsh --profile web --dump-config
 dsh --profile web
 </code></pre>
-<p>The device row must report <code>device</code>. The configuration dump must contain a <code># == dsh-mobile-gui-agent</code> layer and one <code>dsh-mobile-gui-agent</code> row. Open a nonblank conversation in the Web UI and select <strong>Mobile</strong>. See <a href="#requirements">Requirements</a> and <a href="#use">Use</a> before operating an account or a device containing personal data.</p>
-<h3>Compatibility</h3>
+<p>设备行必须显示 <code>device</code>。配置输出中必须出现 <code># == dsh-mobile-gui-agent</code> 层和一个 <code>dsh-mobile-gui-agent</code> 插件行。打开 Web UI 中的非空会话，选择 <strong>移动端</strong>。操作包含账号或个人数据的设备前，请先阅读<a href="#%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6">前置条件</a>和<a href="#%E4%BD%BF%E7%94%A8">使用</a>。</p>
+<h3>兼容性</h3>
 <ul>
-<li>DeepSeek Harness: <code>^0.1.0-rc.5</code></li>
-<li>Verified against upstream commit <code>47f943859bef60e4160492346772ded9b24f765a</code></li>
-<li>Also built and tested against the published <code>0.1.0-rc.6</code> Harness packages</li>
-<li>Node.js: <code>^22.19.0 || &gt;=24.0.0</code></li>
-<li>Android: a physical device or emulator visible to <code>adb devices</code></li>
+<li>DeepSeek Harness：<code>^0.1.0-rc.5</code></li>
+<li>已对上游提交 <code>47f943859bef60e4160492346772ded9b24f765a</code> 验证</li>
+<li>同时使用 npm 已发布的 <code>0.1.0-rc.6</code> Harness 包完成构建和测试</li>
+<li>Node.js：<code>^22.19.0 || &gt;=24.0.0</code></li>
+<li>Android：能被 <code>adb devices</code> 发现的真机或模拟器</li>
 </ul>
-<p>The package follows the upstream <code>dsh.bundle.patch</code> and <code>dsh.client</code> manifests. It does not patch the Harness Agent loop or require unpublished Phone packages.</p>
-<h3>What it provides</h3>
+<p>插件遵循上游的 <code>dsh.bundle.patch</code> 与 <code>dsh.client</code> manifest，不修改 Harness Agent loop，也不依赖未发布的 Phone 包。</p>
+<h3>能力</h3>
 <ul>
-<li>ADB discovery, wireless connection, screenshots, UIAutomator hierarchy capture, tap, long press, swipe, text input, keys, back, home, and package launch</li>
-<li>Screenshot and pruned semantic UI observations with observation-local element IDs</li>
-<li>Strict <code>phone_observe</code> and <code>phone_act</code> Harness tools</li>
-<li>One meaningful action per model turn followed by a fresh observation and deterministic verification</li>
-<li>stale-element protection, adaptive screen stabilization, stuck detection, step and time limits, and recoverable ADB errors</li>
-<li>Harness approval for semantic controls that can send, publish, delete, purchase, pay, transfer, call, install, or change account security</li>
-<li>A Web Mobile tab with device selection, wireless connection, screenshot refresh, task controls, action overlays, and verified steps</li>
-<li>A fake device and scripted state transitions for keyless Agent-loop tests</li>
+<li>ADB 设备发现、无线连接、截图、UIAutomator hierarchy、点击、长按、滑动、文本输入、按键、返回、主页和启动应用</li>
+<li>截图与裁剪压缩后的语义 UI 共同构成观察，每轮元素使用短 ID</li>
+<li>严格的 <code>phone_observe</code> 与 <code>phone_act</code> Harness 工具</li>
+<li>每个模型回合只执行一个有意义动作，随后重新观察并确定性验证</li>
+<li>过期元素保护、自适应稳定等待、卡住检测、步骤与时间限制、可恢复 ADB 错误</li>
+<li>对发送、发布、删除、购买、支付、转账、拨号、安装和账号安全修改等语义控件复用 Harness 审批</li>
+<li>Web Mobile 标签页：设备选择、无线连接、截图刷新、开始/暂停/继续/停止、动作覆盖框和验证步骤</li>
+<li>用于无密钥 CI 的 FakePhoneDevice 与脚本化页面状态</li>
 </ul>
-<p>This plugin does not install an Android accessibility service. It combines ADB screenshots with the hierarchy produced by Android UIAutomator. Custom Canvas, WebView, game, and image-only controls may be visible in the screenshot even when they are absent from the hierarchy; the Agent can use vision-capable model input or an optional <code>PhoneVisionProvider</code> for those screens.</p>
-<h3>Requirements</h3>
+<p>本插件不安装 Android 无障碍服务。它组合 ADB 截图与 Android UIAutomator hierarchy。Canvas、WebView、游戏和纯图片控件可能能在截图中看到，却不存在于 hierarchy；此时 Agent 可使用支持视觉输入的模型，或由其他插件提供可选的 <code>PhoneVisionProvider</code>。</p>
+<h3>前置条件</h3>
 <ol>
-<li><p>Install Android Platform Tools and confirm <code>adb version</code> works.</p>
+<li><p>安装 Android Platform Tools，确认 <code>adb version</code> 可执行。</p>
 </li>
-<li><p>Enable Developer options and USB debugging on the Android device.</p>
+<li><p>在 Android 中开启开发者选项和 USB 调试。</p>
 </li>
-<li><p>Authorize the computer when Android shows the RSA debugging prompt.</p>
+<li><p>手机弹出 RSA 调试授权时允许此电脑。</p>
 </li>
-<li><p>Confirm the device is usable:</p>
+<li><p>执行：</p>
 <pre><code class="language-bash">adb devices -l
 </code></pre>
-<p>The selected row must report <code>device</code>, not <code>offline</code> or <code>unauthorized</code>.</p>
+<p>目标行必须是 <code>device</code>，不能是 <code>offline</code> 或 <code>unauthorized</code>。</p>
 </li>
-<li><p>Use a DeepSeek Harness Web profile. The Mobile tab is a browser client contribution and therefore is not shown by a headless-only profile.</p>
+<li><p>使用 DeepSeek Harness Web profile。Phone 是浏览器客户端贡献，纯 headless profile 不会显示该标签页。</p>
 </li>
 </ol>
-<p>Root access and an APK installed on the phone are not required.</p>
-<h3>Installation options</h3>
-<p>To install a local checkout into the standard Web profile:</p>
+<p>不需要 root，也不需要向手机安装 APK。</p>
+<h3>安装方式</h3>
+<p>把本地 checkout 安装到标准 Web profile：</p>
 <pre><code class="language-bash">dsh plugin --profile web add ./dsh-mobile-gui-agent
 dsh --profile web --dump-config
 dsh --profile web
 </code></pre>
-<p>When running Harness from its source checkout, use <code>pnpm dsh</code> in place of <code>dsh</code>:</p>
+<p>如果从 Harness 源码仓库运行，请把 <code>dsh</code> 替换为 <code>pnpm dsh</code>：</p>
 <pre><code class="language-bash">pnpm dsh plugin --profile web add ../dsh-mobile-gui-agent
 pnpm dsh --profile web --dump-config
 pnpm dsh --profile web
 </code></pre>
-<p>The dump must contain a <code># == dsh-mobile-gui-agent</code> layer and one row named <code>dsh-mobile-gui-agent</code>. Open the Web UI, select a nonblank conversation, then select the <strong>Mobile</strong> conversation view. Harness hides conversation-view tabs while a new conversation still shows its empty hero, so send an ordinary prompt first when testing from a new conversation.</p>
-<p>Built <code>lib/</code> artifacts are tracked so a pinned Git checkout can be installed without allowing a dependency build script:</p>
+<p>配置输出中应出现 <code># == dsh-mobile-gui-agent</code> 层和一个名为 <code>dsh-mobile-gui-agent</code> 的插件行。打开 Web UI，进入一个非空会话，再选择 <strong>移动端</strong> 会话视图。Harness 在新会话仍显示空白 Hero 时会隐藏会话视图标签，因此从新会话测试时应先发送一条普通提示词。</p>
+<p>仓库提交了预构建 <code>lib/</code>，因此固定 Git 提交安装时无需允许依赖构建脚本：</p>
 <pre><code class="language-bash">dsh plugin --profile web add github:kunjinkao-os/dsh-mobile-gui-agent#v0.1.1
 </code></pre>
-<p>For an immutable review target, replace the release tag with its commit SHA. A release tarball can also be installed without a Git build step:</p>
+<p>如需不可变的审查目标，可把发布标签替换为对应提交 SHA。也可以直接安装 Release tarball，不需要 Git 构建步骤：</p>
 <pre><code class="language-bash">dsh plugin --profile web add ./dsh-mobile-gui-agent-0.1.1.tgz
 </code></pre>
-<p>Pin a reviewed tag or commit when installing a plugin that can control a real device.</p>
-<h3>Wireless ADB</h3>
-<p>Pair the phone with the Android Platform Tools when the Android version requires pairing, then either connect before starting Harness:</p>
+<p>安装能控制真实设备的插件时，应固定到经过审查的标签或提交。</p>
+<h3>无线 ADB</h3>
+<p>如果 Android 版本要求配对，先使用 Platform Tools 完成配对。可以在启动 Harness 前连接：</p>
 <pre><code class="language-bash">adb connect DEVICE_IP:PORT
 adb devices -l
 </code></pre>
-<p>or enter <code>DEVICE_IP:PORT</code> in the Mobile tab and select <strong>Connect</strong>. The computer and Android device must be able to reach each other, and the wireless debugging port may change after Android restarts wireless debugging.</p>
-<h3>Use</h3>
+<p>也可以在 Mobile 标签页输入 <code>DEVICE_IP:PORT</code> 后点击 <strong>Connect</strong>。电脑和 Android 设备必须网络互通；Android 重启无线调试后端口可能变化。</p>
+<h3>使用</h3>
 <ol>
-<li><p>Open a nonblank Harness conversation. If it is new, send one ordinary prompt first so Harness reveals conversation-view tabs.</p>
+<li><p>打开一个非空 Harness 会话；新会话应先发送一条普通提示词，让 Harness 显示会话视图标签。</p>
 </li>
-<li><p>Select the <strong>Mobile</strong> view.</p>
+<li><p>选择 <strong>移动端</strong> 视图。</p>
 </li>
-<li><p>Select a connected device and refresh the screenshot.</p>
+<li><p>选择已连接设备并刷新截图。</p>
 </li>
-<li><p>Enter a task, for example:</p>
-<pre><code class="language-text">Open Settings and go to the Wi-Fi page
+<li><p>输入任务，例如：</p>
+<pre><code class="language-text">打开设置并进入 Wi-Fi 页面
 </code></pre>
 </li>
-<li><p>Select <strong>Start</strong>. Use <strong>Pause</strong>, <strong>Resume</strong>, or <strong>Stop</strong> when needed.</p>
+<li><p>点击 <strong>Start</strong>；需要时使用 <strong>Pause</strong>、<strong>Resume</strong> 或 <strong>Stop</strong>。</p>
 </li>
-<li><p>Answer approval prompts in the standard Harness approval UI. The Agent stops before the consequential action until approval is granted once.</p>
+<li><p>在 Harness 原生审批 UI 中处理确认。需要审批的动作在获得一次性许可前不会执行。</p>
 </li>
 </ol>
-<p>Other example tasks:</p>
-<pre><code class="language-text">Open Android Settings
-Open the browser and focus the address bar
-Type hello world in the focused text field
-Open WeChat, find File Transfer, and prepare to send “test123”
+<p>更多任务示例：</p>
+<pre><code class="language-text">打开 Android 设置
+打开浏览器并点击地址栏
+在当前文本框输入 hello world
+打开微信，找到文件传输助手，准备发送“测试123”
 </code></pre>
-<p>The last example requires approval before the semantic Send control is activated.</p>
-<h3>Configuration</h3>
-<p>The bundle supplies safe defaults in <a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a>. Override the complete plugin row in the profile&#39;s <code>cordis.patch.yml</code> because Harness patch rows replace, rather than deep-merge, their <code>config</code> value.</p>
-<pre><code class="language-yaml">- id: mobile-gui-agent
-  name: dsh-mobile-gui-agent
-  config:
-    adb:
-      adbPath: adb
-      commandTimeoutMs: 10000
-      processGraceMs: 1000
-      screenshotMaxBytes: 16777216
-      hierarchyMaxBytes: 4194304
-      diagnosticMaxBytes: 65536
-      hierarchyMaxElements: 400
-      hierarchyMaxSerializedBytes: 65536
-      hierarchyAttempts: 3
-      hierarchyRetryDelayMs: 300
-      stablePollMs: 300
-      stableSamples: 3
-      stableTimeoutMs: 5000
-      stableDifferenceThreshold: 0.01
-    agent:
-      maxSteps: 50
-      taskTimeoutMs: 600000
-      actionTimeoutMs: 30000
-      maxConsecutiveFailures: 5
-      stablePollMs: 300
-      stableSamples: 3
-      stableTimeoutMs: 5000
-      stableDifferenceThreshold: 0.01
-      approvalEnabled: true
-      traceScreenshots: true
-      maxTraceSteps: 100
-</code></pre>
-<p><code>commandTimeoutMs</code> bounds one ADB subprocess. <code>actionTimeoutMs</code> bounds an entire action, including stabilization and the post-action observation. Keep <code>actionTimeoutMs</code> greater than <code>commandTimeoutMs</code>; slower wireless devices may need 30–60 seconds.</p>
-<p><code>maxTraceSteps</code> bounds the live and terminal GUI step list. <code>maxSteps</code> and <code>taskTimeoutMs</code> bound a run. Screenshot and hierarchy byte limits prevent unbounded ADB output. Model-visible screenshots use the Harness attachment store when the selected model accepts images.</p>
-<h3>Architecture</h3>
+<p>最后一个示例在点击语义明确的“发送”控件前会请求审批。</p>
+<h3>配置</h3>
+<p><a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/../cordis.patch.yml"><code>cordis.patch.yml</code></a> 提供默认值。Harness patch 会整体替换插件行的 <code>config</code>，不会深度合并；因此在 profile 的 <code>cordis.patch.yml</code> 覆盖时应写出完整配置。完整示例见<a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/../README.md#configuration">英文 README 的配置章节</a>。</p>
+<p>关键配置：</p>
+<ul>
+<li><code>adb.commandTimeoutMs</code>：单个 ADB 子进程的超时。</li>
+<li><code>agent.actionTimeoutMs</code>：动作、页面稳定等待和动作后观察的总超时，应大于 ADB 命令超时；较慢的无线设备可设为 30–60 秒。</li>
+<li><code>agent.maxSteps</code>、<code>agent.taskTimeoutMs</code>：限制完整任务。</li>
+<li><code>agent.maxConsecutiveFailures</code>：连续验证失败上限。</li>
+<li><code>agent.traceScreenshots</code>：视觉模型可用时，把截图存入 Harness attachment store。</li>
+<li><code>agent.maxTraceSteps</code>：GUI 当前及终态步骤的保留上限。</li>
+</ul>
+<p>截图、hierarchy 和诊断输出都有字节上限，避免 ADB 输出或执行轨迹无限增长。</p>
+<h3>架构</h3>
 <pre><code class="language-text">dsh.bundle patch
-└── dsh-mobile-gui-agent (one Cordis Loader row)
-    ├── AdbPhoneDeviceRegistry       provides ctx.phone
-    ├── PhoneAgentService            provides ctx.phoneRuns
-    │   └── Agent-scoped tools       phone_observe + phone_act
+└── dsh-mobile-gui-agent（一个 Cordis Loader 行）
+    ├── AdbPhoneDeviceRegistry       提供 ctx.phone
+    ├── PhoneAgentService            提供 ctx.phoneRuns
+    │   └── Agent 范围工具           phone_observe + phone_act
     └── PhoneAgentRemote             Typert Host namespace
 
-dsh.client browser contribution
-├── mounts generated phoneAgent Typert Remote descriptors
-└── registers the Mobile conversation view
+dsh.client 浏览器贡献
+├── 挂载生成的 phoneAgent Typert Remote 描述
+└── 注册 Phone 会话视图
 </code></pre>
-<p>The existing Harness Agent owns planning and turn execution. Starting a Phone run installs only Agent-scoped Phone tools and the dedicated Phone system prompt. Each <code>phone_act</code> performs a fresh pre-action capture, validates the strict action, resolves semantic element bounds, requests approval if needed, executes through <code>PhoneDevice</code>, waits for a stable screen, captures again, verifies the result, and returns the new observation to the same Agent loop.</p>
-<p>The compact hierarchy removes invisible and meaningless containers, prioritizes text and interactive nodes, assigns short IDs, and enforces element and serialized-byte limits. A <code>tap_element</code> action also carries the observation ID, so a screen change invalidates stale semantic coordinates.</p>
-<h3>Model experience</h3>
-<p>Starting a run adds the dedicated Phone prompt and two Agent-scoped tools to the existing Harness Agent. <code>phone_observe</code> returns the foreground app, activity, compact hierarchy, screenshot attachment when supported, recent verified steps, and failure context. <code>phone_act</code> accepts one strict action and always returns a fresh post-action observation. The model never receives raw UIAutomator XML or arbitrary ADB shell access.</p>
-<p>The prompt prefix is stable for a run, while each compact observation changes with the phone screen. Element and serialized-byte limits cap hierarchy growth; screenshot attachments are used only when the selected model accepts image input. Text-only models can still operate hierarchy-backed controls but cannot reliably reason about image-only UI without a <code>PhoneVisionProvider</code>.</p>
-<h3>Security model</h3>
+<p>规划与回合执行仍由 Harness 现有 Agent 负责。启动 Phone run 后，插件只在该 Agent 范围安装 Phone 工具和专用 system prompt。每次 <code>phone_act</code> 会重新获取动作前状态、验证严格 action、解析元素边界、按需审批、通过 <code>PhoneDevice</code> 执行、等待画面稳定、再次获取状态、验证结果，再把新观察交回同一 Agent loop。</p>
+<p>压缩 hierarchy 会过滤不可见和无意义容器，优先保留文本与交互节点，为元素分配短 ID，并限制元素数和序列化字节数。<code>tap_element</code> 同时携带 observation ID；屏幕改变后，旧的语义坐标会被拒绝。</p>
+<h3>模型体验</h3>
+<p>启动 run 后，插件会向 Harness 现有 Agent 增加专用 Phone prompt 和两个 Agent 范围工具。<code>phone_observe</code> 返回前台应用、Activity、压缩 hierarchy、模型支持时的截图附件、最近验证步骤和失败上下文。<code>phone_act</code> 只接受一个严格 action，并始终返回新的动作后观察。模型不会看到原始 UIAutomator XML，也不能执行任意 ADB shell。</p>
+<p>一次 run 内的 prompt 前缀保持稳定，每轮压缩观察随手机画面变化。元素数和序列化字节上限约束 hierarchy 体积；只有选定模型接受图片输入时才使用截图附件。纯文本模型仍可操作 hierarchy 中的控件，但没有 <code>PhoneVisionProvider</code> 时无法可靠理解纯图片 UI。</p>
+<h3>安全模型</h3>
 <ul>
-<li>The model cannot issue arbitrary ADB shell text. Provider-owned diagnostic commands use a closed <code>PhoneShellRequest</code> classification.</li>
-<li>Consequential semantic controls require the existing Harness approval service when <code>approvalEnabled</code> is true.</li>
-<li>Approval is one-shot. A denied, unavailable, or cancelled approval becomes a structured action failure.</li>
-<li>Raw coordinate actions cannot always reveal their semantic effect. Review the visible target and use restrictive Harness permissions when operating accounts, payment apps, or sensitive data.</li>
-<li>Device actions are real. Use a test device and a non-production account during evaluation.</li>
+<li>模型不能提交任意 ADB shell 文本；底层诊断命令使用封闭的 <code>PhoneShellRequest</code> 分类。</li>
+<li><code>approvalEnabled</code> 开启时，具有真实副作用的语义控件复用 Harness 审批服务。</li>
+<li>审批只允许一次；拒绝、缺少审批 Provider 或取消会成为结构化动作失败。</li>
+<li>原始坐标动作不一定能识别语义副作用。涉及账号、支付或敏感数据时，应人工核对目标并配置严格的 Harness 权限。</li>
+<li>所有设备动作都是真实动作。评估时使用测试设备和非生产账号。</li>
 </ul>
-<p>Report security issues according to <a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/SECURITY.md">SECURITY.md</a>.</p>
-<h3>Known limitations</h3>
+<p>安全问题请查看 <a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/../SECURITY.md">SECURITY.md</a>。</p>
+<h3>已知限制</h3>
 <ul>
-<li>UIAutomator can omit Canvas, game, image-only, and some WebView controls.</li>
-<li>ADB text input for non-ASCII text depends on the Android build and active keyboard.</li>
-<li>Wireless ADB latency and reliability depend on the network and the current Android debugging port.</li>
-<li>Raw-coordinate actions cannot always be classified by semantic impact; use semantic elements and review approval prompts.</li>
-<li>The MVP refreshes screenshots after observations and actions; it does not stream scrcpy video.</li>
+<li>UIAutomator 可能遗漏 Canvas、游戏、纯图片和部分 WebView 控件。</li>
+<li>ADB 非 ASCII 文本输入行为取决于 Android 构建和当前输入法。</li>
+<li>无线 ADB 的延迟与可靠性取决于网络和当前 Android 调试端口。</li>
+<li>原始坐标动作不一定能按语义判断影响；应优先使用语义元素并核对审批提示。</li>
+<li>MVP 在观察和动作后刷新截图，不提供 scrcpy 视频流。</li>
 </ul>
-<h3>Development</h3>
+<h3>开发与测试</h3>
 <pre><code class="language-bash">pnpm install
 pnpm run typecheck
 pnpm run build
@@ -369,30 +346,30 @@ pnpm run test
 pnpm run verify:package
 pnpm pack
 </code></pre>
-<p>The regular suite uses <code>FakePhoneDevice</code>. The real ADB integration suite automatically skips unless a device serial is supplied. Run its read-only screenshot and hierarchy check with:</p>
+<p>普通测试使用 <code>FakePhoneDevice</code>。真实 ADB 集成测试会在未提供设备序列号时自动跳过。只读截图与 hierarchy 检查：</p>
 <pre><code class="language-bash">DSH_PHONE_ADB_INTEGRATION_DEVICE=emulator-5554 pnpm run test:adb
 </code></pre>
-<p>Mutation checks are separately opt-in:</p>
+<p>会改变设备状态的检查需要另行显式开启：</p>
 <pre><code class="language-bash">DSH_PHONE_ADB_INTEGRATION_DEVICE=emulator-5554 DSH_PHONE_ADB_MUTATION_TESTS=1 pnpm run test:adb
 </code></pre>
-<p>The mutation check can press Home, Back, tap, swipe, and enter text on the selected device. Use it only on a device where those actions are safe.</p>
-<h3>Troubleshooting</h3>
-<h4>The Mobile tab is missing</h4>
-<p>Confirm the plugin was added to the same Web profile you started, inspect <code>--dump-config</code>, and hard-refresh the browser after installation. A headless profile has no browser conversation views. On the empty new-conversation hero, send one ordinary prompt first; upstream Harness shows conversation-view tabs only after that session becomes nonblank.</p>
+<p>变更检查可能执行 Home、Back、tap、swipe 和输入文字，只能对允许这些动作的测试设备运行。</p>
+<h3>故障排查</h3>
+<h4>看不到 Mobile 标签页</h4>
+<p>确认插件安装到了当前启动的 Web profile，检查 <code>--dump-config</code>，安装后强制刷新浏览器。headless profile 没有浏览器会话视图。新会话空白 Hero 中看不到标签时，先发送一条普通提示词；上游 Harness 只在会话变为非空后显示会话视图标签。</p>
 <h4><code>device unauthorized</code></h4>
-<p>Unlock the phone, accept the RSA prompt, then run <code>adb kill-server</code>, <code>adb start-server</code>, and <code>adb devices -l</code>. Revoke USB debugging authorizations on Android if the prompt no longer appears.</p>
-<h4><code>exec-out screencap -p</code> timed out</h4>
-<p>Wireless ADB may be slow or disconnected. Run <code>adb -s DEVICE exec-out screencap -p &gt; /tmp/phone.png</code> manually, reconnect the endpoint, keep the screen unlocked, and raise both <code>adb.commandTimeoutMs</code> and <code>agent.actionTimeoutMs</code>. The plugin reports the timeout as a recoverable action result instead of assuming the click succeeded.</p>
-<h4>The hierarchy is empty or incomplete</h4>
-<p>UIAutomator does not expose every Canvas, WebView, game, or custom-rendered control. Use a vision-capable model, refresh the screenshot, scroll, close overlays, or provide a <code>PhoneVisionProvider</code> plugin.</p>
-<h4>Text input is incorrect</h4>
-<p>ADB text input is most reliable with a focused ordinary text field. Non-ASCII input behavior depends on the device keyboard and Android build. Focus the field first and verify the resulting text before continuing.</p>
-<h3>License</h3>
-<p><a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/LICENSE">MIT</a></p>
-<p>The repository uses the <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> topic so DSH community catalogs can discover it.</p>
+<p>解锁手机并接受 RSA 授权，再执行 <code>adb kill-server</code>、<code>adb start-server</code> 和 <code>adb devices -l</code>。如果不再弹出授权，可在 Android 中撤销 USB 调试授权后重试。</p>
+<h4><code>exec-out screencap -p</code> 超时</h4>
+<p>无线 ADB 可能变慢或已断开。先手工运行 <code>adb -s DEVICE exec-out screencap -p &gt; /tmp/phone.png</code>，重新连接设备、保持屏幕解锁，并同时调高 <code>adb.commandTimeoutMs</code> 与 <code>agent.actionTimeoutMs</code>。插件会把超时作为可恢复动作结果返回，不会假定点击成功。</p>
+<h4>hierarchy 为空或不完整</h4>
+<p>UIAutomator 不会暴露所有 Canvas、WebView、游戏或自定义渲染控件。使用支持视觉输入的模型，刷新截图，尝试滚动或关闭遮罩，也可以提供 <code>PhoneVisionProvider</code> 插件。</p>
+<h4>文本输入不正确</h4>
+<p>ADB 文本输入对已聚焦的普通文本框最可靠。非 ASCII 输入取决于设备键盘和 Android 构建。先聚焦文本框，并在继续前验证输入结果。</p>
+<h3>许可证</h3>
+<p><a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/../LICENSE">MIT</a></p>
+<p>仓库使用 <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> topic，供 DSH 社区目录发现。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/kunjinkao-os/dsh-mobile-gui-agent/blob/main/docs/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

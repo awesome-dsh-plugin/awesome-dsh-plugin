@@ -191,94 +191,94 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-4f46e5" alt="DeepSeek Harness"></a></p>
-<p>English | <a href="https://github.com/l541402398/dsh-file-uploads/blob/main/README.zh.md">简体中文</a></p>
-<p>Upload arbitrary local files from the DeepSeek Harness Web composer, attach their container paths to prompts, and manage stored uploads from Settings.</p>
-<h3>Features</h3>
+<p><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/README.md">English</a> | 简体中文</p>
+<p>为 DeepSeek Harness Web 输入框增加任意文件上传功能：文件以待发送卡片显示，提交时把容器内路径提供给模型，并可在设置中统一下载和删除。</p>
+<h3>功能</h3>
 <ul>
-<li>Adds a <strong>Files</strong> button beside the existing composer controls.</li>
-<li>Accepts multiple arbitrary local files, not only images.</li>
-<li>Shows pending files as image-like cards above the composer.</li>
-<li>Keeps the text editor clean: no visible path or generated description is inserted into the draft.</li>
-<li>Serializes each hidden file reference into a model-readable absolute path only when the message is submitted.</li>
-<li>Clears pending cards after submission and restores them when submission fails.</li>
-<li>Stores every upload in one fixed directory, <code>$DSH_HOME/uploads</code> by default.</li>
-<li>Lists uploaded files in <strong>Settings → Uploaded files</strong>, with download and delete actions.</li>
-<li>Prevents overwrites by publishing duplicates as <code>name (1).ext</code>, <code>name (2).ext</code>, and so on.</li>
-<li>Enforces per-file and total-directory quotas.</li>
+<li>在现有输入框控制区旁增加 <strong>文件</strong> 按钮。</li>
+<li>支持一次选择多个任意类型的本地文件，不限于图片。</li>
+<li>待发送文件以类似图片附件的卡片悬浮显示在输入框上方。</li>
+<li>保持编辑框干净：上传后不会向草稿写入可见路径或自动描述。</li>
+<li>发送消息时，才通过 Harness 内置引用序列化管线把文件绝对路径加入模型内容。</li>
+<li>提交后清空待发送卡片；提交失败时恢复卡片。</li>
+<li>所有文件统一保存到固定目录，默认是 <code>$DSH_HOME/uploads</code>。</li>
+<li>在 <strong>设置 → 上传文件</strong> 中查看文件，并支持下载和删除。</li>
+<li>同名文件不会覆盖，自动保存为 <code>name (1).ext</code>、<code>name (2).ext</code> 等名称。</li>
+<li>支持单文件上限和上传目录总容量限制。</li>
 </ul>
-<h3>Compatibility</h3>
+<h3>兼容性</h3>
 <ul>
 <li>DeepSeek Harness <code>0.1.0-rc.6</code></li>
-<li>Web profile</li>
-<li>Node.js 22 or newer</li>
+<li>Web Profile</li>
+<li>Node.js 22 或更高版本</li>
 </ul>
-<p>Harness currently transports native attachments as raster images only. This plugin intentionally uses the arbitrary-file path supported by the agent environment: it stores the file inside the Harness host/container and adds that path to the submitted text through the built-in input-reference serializer.</p>
-<h3>Install</h3>
-<p>Install the tagged GitHub release into the Web profile:</p>
+<p>Harness 当前的原生附件传输只支持栅格图片。本插件针对任意文件采用 Agent 环境可用的路径方案：先把文件存入 Harness Host/容器，再通过内置输入引用序列化器把路径加入提交内容。</p>
+<h3>安装</h3>
+<p>把带版本标签的 GitHub Release 安装到 Web Profile：</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;github:l541402398/dsh-file-uploads#v1.0.0&quot;
 </code></pre>
-<p>Restart the running Web profile after installation, then refresh the browser page.</p>
-<p>To install the latest development branch instead:</p>
+<p>安装后重启正在运行的 Web Profile，并刷新浏览器页面。</p>
+<p>如需安装最新开发分支：</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;github:l541402398/dsh-file-uploads#main&quot;
 </code></pre>
-<p>To remove it:</p>
+<p>卸载：</p>
 <pre><code class="language-sh">dsh plugin --profile web remove dsh-file-uploads
 </code></pre>
-<h3>Use</h3>
+<h3>使用方法</h3>
 <ol>
-<li><p>Open a conversation in the Harness Web GUI.</p>
+<li><p>在 Harness Web GUI 中打开一个会话。</p>
 </li>
-<li><p>Select <strong>Files</strong> in the composer toolbar.</p>
+<li><p>点击输入工具栏中的 <strong>文件</strong>。</p>
 </li>
-<li><p>Choose one or more local files.</p>
+<li><p>选择一个或多个本地文件。</p>
 </li>
-<li><p>Review or remove the pending cards above the composer.</p>
+<li><p>在输入框上方检查待发送卡片，也可以点击 × 移除。</p>
 </li>
-<li><p>Add any normal prompt text you want, or leave the editor empty.</p>
+<li><p>输入普通提示词，或者让编辑框保持为空。</p>
 </li>
-<li><p>Submit the message. The model receives a line such as:</p>
+<li><p>发送消息。模型实际收到的内容中会包含类似：</p>
 <pre><code class="language-text">上传文件：`/path/to/.dsh/uploads/report.pdf`
 </code></pre>
 </li>
 </ol>
-<p>The generated line is never shown in the editor before submission. The stored path refers to the filesystem visible to the Harness host; in a Docker deployment, this is the path inside the container.</p>
-<h3>Settings</h3>
-<p>The plugin adds an <strong>Uploaded files</strong> section to Settings. It displays:</p>
+<p>这行生成内容在提交前不会显示在编辑框中。文件路径是 Harness Host 所见的路径；在 Docker 部署中，它指容器内部路径。</p>
+<h3>设置页</h3>
+<p>插件会新增 <strong>上传文件</strong> 设置区，显示：</p>
 <ul>
-<li>the fixed storage directory;</li>
-<li>per-file and total-directory limits;</li>
-<li>current storage usage;</li>
-<li>file name, size, modification time, and absolute path;</li>
-<li>download and delete actions.</li>
+<li>固定存储目录；</li>
+<li>单文件和目录总容量限制；</li>
+<li>当前空间占用；</li>
+<li>文件名、大小、修改时间和绝对路径；</li>
+<li>下载与删除操作。</li>
 </ul>
-<p>Files persist until they are deleted manually.</p>
-<h3>Configuration</h3>
-<p>The plugin works without configuration. These environment variables override its defaults:</p>
+<p>文件会持续保存，直到手动删除。</p>
+<h3>配置</h3>
+<p>插件默认无需配置，可以使用以下环境变量覆盖默认值：</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th align="right">Default</th>
-<th>Purpose</th>
+<th>环境变量</th>
+<th align="right">默认值</th>
+<th>用途</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>DSH_UPLOAD_DIR</code></td>
 <td align="right"><code>$DSH_HOME/uploads</code></td>
-<td>Absolute upload directory.</td>
+<td>上传目录的绝对路径。</td>
 </tr>
 <tr>
 <td><code>DSH_UPLOAD_MAX_BYTES</code></td>
 <td align="right"><code>104857600</code></td>
-<td>Maximum bytes per file (100 MiB).</td>
+<td>单个文件最大字节数（100 MiB）。</td>
 </tr>
 <tr>
 <td><code>DSH_UPLOAD_TOTAL_MAX_BYTES</code></td>
 <td align="right"><code>1073741824</code></td>
-<td>Maximum total bytes in the directory (1 GiB).</td>
+<td>上传目录最大总字节数（1 GiB）。</td>
 </tr>
 </tbody></table>
-<p>Example Docker Compose fragment:</p>
+<p>Docker Compose 示例：</p>
 <pre><code class="language-yaml">services:
   dsh:
     environment:
@@ -288,35 +288,35 @@ footer p+p{margin-top:.5rem}
     volumes:
       - ./dsh-data:/data/dsh
 </code></pre>
-<h3>Security model</h3>
+<h3>安全模型</h3>
 <ul>
-<li>List, upload, download, and delete routes use the same loopback/trusted-host and Origin checks as the built-in Harness Web API.</li>
-<li>Cross-site browser requests are rejected.</li>
-<li>File names are normalized and stripped of path components and control characters.</li>
-<li>Downloads and deletions accept only regular files in the configured directory and do not follow symbolic links.</li>
-<li>Uploads are written to private temporary files, synced, and atomically published without overwriting existing files.</li>
-<li>Interrupted <code>.upload-*</code> temporary files are removed when the plugin starts.</li>
-<li>Unexpected server errors are logged without returning internal paths to the browser.</li>
+<li>文件列表、上传、下载和删除接口使用与 Harness 内置 Web API 相同的回环地址/可信 Host 和 Origin 检查。</li>
+<li>拒绝浏览器跨站请求。</li>
+<li>文件名会被规范化，并移除路径片段和控制字符。</li>
+<li>下载和删除只接受配置目录中的普通文件，不跟随符号链接。</li>
+<li>上传内容先写入私有临时文件，完成同步后原子发布，不覆盖同名文件。</li>
+<li>插件启动时自动清理异常中断留下的 <code>.upload-*</code> 临时文件。</li>
+<li>意外服务端错误只写日志，不把内部路径返回给浏览器。</li>
 </ul>
-<p>This trust fence is not a user-account authentication system. If the Harness Web GUI is exposed to other users or the public Internet, protect the whole deployment with an authenticated reverse proxy and configure Harness trusted hosts correctly.</p>
-<h3>Development</h3>
-<p>Run the checks:</p>
+<p>这套可信边界不是用户账号认证系统。如果 Harness Web GUI 会暴露给其他用户或公网，请使用带身份验证的反向代理保护整个部署，并正确配置 Harness 的 trusted hosts。</p>
+<h3>开发</h3>
+<p>运行检查：</p>
 <pre><code class="language-sh">npm test
 npm run check
 </code></pre>
-<p>The package is a persistent dual-face Cordis bundle:</p>
+<p>这是一个持久化的 Host + Client 双端 Cordis Bundle：</p>
 <ul>
-<li><code>index.js</code> — Host HTTP routes, storage, quotas, and trust checks.</li>
-<li><code>client.js</code> — composer button, pending-file rail, hidden reference codec, and Settings UI.</li>
-<li><code>cordis.patch.yml</code> — installable <code>dsh.bundle</code> composition row.</li>
-<li><code>test/upload-manager.test.js</code> — Host storage and security regression tests.</li>
+<li><code>index.js</code>：Host HTTP 路由、存储、容量和可信请求检查。</li>
+<li><code>client.js</code>：上传按钮、待发送文件卡片、隐藏引用序列化和设置页 UI。</li>
+<li><code>cordis.patch.yml</code>：可由 <code>dsh plugin add</code> 安装的 <code>dsh.bundle</code> Composition。</li>
+<li><code>test/upload-manager.test.js</code>：Host 存储与安全回归测试。</li>
 </ul>
-<p>See <a href="https://github.com/l541402398/dsh-file-uploads/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for local-link development instructions.</p>
-<h3>License</h3>
+<p>本地链接开发方式见 <a href="https://github.com/l541402398/dsh-file-uploads/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>。</p>
+<h3>许可证</h3>
 <p><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/l541402398/dsh-file-uploads/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

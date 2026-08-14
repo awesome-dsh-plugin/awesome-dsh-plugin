@@ -190,76 +190,76 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p>Give your agent a <strong>time memory</strong>: record what <em>happened</em> and what <em>changed</em>, then analyze <strong>trends, anomalies, and causality</strong> — not just what was said.</p>
+<p>给 agent 装上<strong>时间记忆</strong>：记录<strong>发生了什么、什么变了</strong>，做<strong>趋势、异常、因果</strong>分析——而不只是「说过什么」。</p>
 </blockquote>
-<p><strong>Language:</strong> English | <a href="https://github.com/Xplore-LAB/dsh-plugin-asmemory/blob/main/README.zh.md">简体中文</a></p>
+<p><strong>语言:</strong> <a href="https://github.com/Xplore-LAB/dsh-plugin-asmemory/blob/main/README.md">English</a> | 简体中文</p>
 <p><a href="https://github.com/Xplore-LAB/dsh-plugin-asmemory/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
 <a href="#"><img src="https://img.shields.io/badge/DeepSeek_Harness-plugin-blueviolet.svg" alt="DSH Plugin"></a>
 <a href="#"><img src="https://img.shields.io/badge/dependencies-zero-green.svg" alt="Zero dependencies"></a>
 <a href="#verified"><img src="https://img.shields.io/badge/verified-DSH_headless-00b894.svg" alt="Verified on DSH"></a></p>
 <blockquote>
-<p>⭐ If this helps you, a <strong>star</strong> is the best way to say thanks — it keeps the project visible to others.</p>
+<p>⭐ 如果它对你有用，<strong>点个 star</strong> 是最好的感谢——让更多人看到它。</p>
 </blockquote>
 <hr>
-<h3>What it does</h3>
-<p>asmemory stores two kinds of <strong>typed events</strong>, not raw text:</p>
+<h3>它做什么</h3>
+<p>asmemory 存两类 <strong>typed 事件</strong>，而非裸文本：</p>
 <ul>
-<li><strong>State</strong> — a value of some entity/metric at a point in time (<code>gpu.temperature = 78°C</code>)</li>
-<li><strong>Action</strong> — something that happened (<code>agent ran training</code>, <code>operator adjusted a valve</code>)</li>
+<li><strong>状态 State</strong> — 某实体某指标在某个时刻的值（<code>gpu.temperature = 78°C</code>）</li>
+<li><strong>动作 Action</strong> — 某时刻发生的某事（<code>agent 启动训练</code>、<code>操作工调了阀门</code>）</li>
 </ul>
-<p>On top of this memory it provides four analyses:</p>
+<p>在此之上提供四类分析：</p>
 <table>
 <thead>
 <tr>
-<th>Analysis</th>
-<th>Question it answers</th>
+<th>分析</th>
+<th>回答的问题</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Trend</strong></td>
-<td>Is my metric going up or down? (slope + direction)</td>
+<td><strong>趋势 Trend</strong></td>
+<td>这个指标在升还是降？（斜率 + 方向）</td>
 </tr>
 <tr>
-<td><strong>Anomaly</strong></td>
-<td>Which readings are outliers? (z-score)</td>
+<td><strong>异常 Anomaly</strong></td>
+<td>哪些读数是离群点？（z-score）</td>
 </tr>
 <tr>
-<td><strong>Causal</strong></td>
-<td>Did action X move metric Y? (before/after delta)</td>
+<td><strong>因果 Causal</strong></td>
+<td>动作 X 是否推动了指标 Y？（前后差值）</td>
 </tr>
 <tr>
-<td><strong>Summary</strong></td>
-<td>What&#39;s in my memory? (counts + entities)</td>
+<td><strong>统计 Summary</strong></td>
+<td>记忆库里有什么？（计数 + 实体）</td>
 </tr>
 </tbody></table>
-<h3>Why asmemory</h3>
-<p>Most memory plugins store conversations or documents, so they answer <em>&quot;what did you say&quot;</em>. asmemory stores <em>actions and states</em>, so it answers <em>&quot;what happened, and why&quot;</em>:</p>
+<h3>为什么是 asmemory</h3>
+<p>多数记忆插件存对话或文档，只能回答「你说过什么」。asmemory 存<strong>动作与状态</strong>，能回答「<strong>发生了什么、为什么</strong>」：</p>
 <blockquote>
-<p>&quot;Did GPU temperature rise after training started?&quot; → <strong>causal</strong>
-&quot;Is my sleep trending down this week?&quot; → <strong>trend</strong>
-&quot;Which readings are outliers?&quot; → <strong>anomaly</strong></p>
+<p>「训练启动后 GPU 温度升了吗？」→ <strong>因果</strong>
+「这周睡眠在下降吗？」→ <strong>趋势</strong>
+「哪些读数是离群点？」→ <strong>异常</strong></p>
 </blockquote>
-<p>It is the memory layer for the <em>physical and operational</em> world — agents observing themselves, industrial processes, and personal metrics.</p>
-<h3>Example: agent self-tracking</h3>
-<p>Record your agent&#39;s own actions and resource states, then ask <em>why</em> the GPU got hot:</p>
+<p>它是<strong>物理与运营世界</strong>的记忆层——agent 观测自己、工业过程、个人指标。</p>
+<h3>范例：agent 自我观测</h3>
+<p>记录 agent 自己的动作与资源状态，然后追问「GPU 为什么变热」：</p>
 <pre><code class="language-python">from asmemory import StateEvent, ActionEvent, MemoryStore, analysis
 
 store = MemoryStore(&quot;memory.db&quot;)
 store.add_state(StateEvent(&quot;gpu&quot;, &quot;temperature&quot;, 78.5, &quot;celsius&quot;))
 store.add_action(ActionEvent(&quot;agent&quot;, &quot;run_training&quot;, &quot;qwen3.6&quot;, ts=1723500000))
 
-# Did training actually heat the GPU?
+# 训练真的让 GPU 变热了吗？
 causal = analysis.causal_effect(store, &quot;run_training&quot;, &quot;gpu&quot;, &quot;temperature&quot;)
 print(causal[&quot;before_mean&quot;], &quot;-&gt;&quot;, causal[&quot;after_mean&quot;], f&quot;(Δ={causal[&#39;delta&#39;]})&quot;)
 </code></pre>
-<p><strong>Real output</strong> (24h simulated agent, 72 states + 20 actions):</p>
-<pre><code>【因果】run_training → gpu.temperature:  45.3 → 78.7  (Δ=33.4, up)   ← significant
-【因果对照】git_commit → gpu.temperature: 53.7 → 56.4  (Δ=2.7, up)    ← no effect
-【异常】ram.usage: 1 outlier (z=-2.4)
+<p><strong>真实输出</strong>（24h 模拟 agent，72 条状态 + 20 条动作）：</p>
+<pre><code>【因果】run_training → gpu.temperature:  45.3 → 78.7  (Δ=33.4, up)   ← 显著
+【因果对照】git_commit → gpu.temperature: 53.7 → 56.4  (Δ=2.7, up)    ← 无效应
+【异常】ram.usage: 1 个离群点 (z=-2.4)
 </code></pre>
-<p>The engine cleanly separates <em>real causality</em> (training) from <em>coincidence</em> (git commits) — no LLM guessing involved, just time-series math.</p>
-<h3>Example: industrial monitoring → DataLens</h3>
-<p>Air-separation plant: oxygen purity (monitored metric) vs. valve opening (control action). asmemory remembers the causality, then exports to <a href="https://github.com/Xplore-LAB/DataLens">DataLens</a> for over-control optimization:</p>
+<p>引擎干净地分开<strong>真因果</strong>（训练）与<strong>巧合</strong>（git 提交）——不靠 LLM 猜，纯时序数学。</p>
+<h3>范例：工业监控 → DataLens</h3>
+<p>空分装置：氧纯度（监控指标）vs 导叶开度（控制动作）。asmemory 记因果，导出给 <a href="https://github.com/Xplore-LAB/DataLens">DataLens</a> 找「过量控制」优化空间：</p>
 <pre><code class="language-python">from asmemory.export import export_datalens
 
 export_datalens(store, entity=&quot;oxygen&quot;, metric=&quot;purity&quot;,
@@ -268,85 +268,85 @@ export_datalens(store, entity=&quot;oxygen&quot;, metric=&quot;purity&quot;,
                 regulatory_limit=99.5)
 # → data_datalens.csv + data_datalens.config.json
 </code></pre>
-<p><strong>Real output</strong> (240 min, 240 states + 240 actions):</p>
+<p><strong>真实输出</strong>（240 分钟，240 条状态 + 240 条动作）：</p>
 <pre><code>【因果】valve_adjust → oxygen.purity: Δ=0.0009 (up)
 ✅ CSV → data_datalens.csv          (时间,指标值,控制量,整点标记)
 ✅ config → data_datalens.config.json (pollutant/regulator/limit)
 </code></pre>
-<p>Open <code>data_datalens.csv</code> in DataLens to visualize the &quot;still over-controlling in the safe zone&quot; savings space.</p>
-<h3>Tools</h3>
-<p>Seven MCP tools, exposed to the model as <code>mcp__asmemory__&lt;tool&gt;</code>:</p>
+<p>把 <code>data_datalens.csv</code> 导入 DataLens，即可可视化「安全区还在过量控制」的节能空间。</p>
+<h3>工具</h3>
+<p>7 个 MCP 工具，对模型暴露为 <code>mcp__asmemory__&lt;tool&gt;</code>：</p>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>What it does</th>
+<th>工具</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>memory_store_state</code></td>
-<td>Record a state event (entity / metric / value / unit / tags)</td>
+<td>存状态事件（实体/指标/值/单位/标签）</td>
 </tr>
 <tr>
 <td><code>memory_store_action</code></td>
-<td>Record an action event (actor / verb / object / amount)</td>
+<td>存动作事件（主体/动作/对象/控制量）</td>
 </tr>
 <tr>
 <td><code>memory_trend</code></td>
-<td>Trend direction + slope of a metric</td>
+<td>指标趋势方向 + 斜率</td>
 </tr>
 <tr>
 <td><code>memory_anomaly</code></td>
-<td>z-score outlier detection</td>
+<td>z-score 离群点检测</td>
 </tr>
 <tr>
 <td><code>memory_causal</code></td>
-<td>Mean change of a metric before/after an action</td>
+<td>动作前后指标均值变化</td>
 </tr>
 <tr>
 <td><code>memory_summary</code></td>
-<td>Library statistics</td>
+<td>记忆库统计</td>
 </tr>
 <tr>
 <td><code>memory_export_datalens</code></td>
-<td>Export CSV + config for DataLens visualization</td>
+<td>导出 CSV + config 供 DataLens 可视化</td>
 </tr>
 </tbody></table>
-<h3>Installation</h3>
-<p>The server runs from the <code>asmemory-mcp</code> command (or an absolute path via <code>ASMEMORY_MCP_PATH</code>). Install the command first, then register the MCP bridge with DSH.</p>
+<h3>安装</h3>
+<p>server 通过 <code>asmemory-mcp</code> 命令运行（也可用 <code>ASMEMORY_MCP_PATH</code> 指向脚本绝对路径）。先安装命令，再把 MCP 桥接注册到 DSH。</p>
 <ol>
-<li><p>Install the <code>asmemory-mcp</code> command:</p>
+<li><p>安装 <code>asmemory-mcp</code> 命令：</p>
 <pre><code class="language-sh">pip install .
 </code></pre>
-<p>(Or skip the install and set <code>ASMEMORY_MCP_PATH=/path/to/bin/asmemory-mcp</code> instead.)</p>
+<p>（或者跳过安装，直接设 <code>ASMEMORY_MCP_PATH=/path/to/bin/asmemory-mcp</code>。）</p>
 </li>
-<li><p>Launch DSH with the plugin patch:</p>
+<li><p>带插件 patch 启动 DSH：</p>
 <pre><code class="language-sh">dsh web --patch &quot;$PWD/cordis.yml&quot;
 </code></pre>
-<p>(Once published, you can also run <code>dsh plugin add dsh-plugin-asmemory</code>.)</p>
+<p>（包发布后，也可用 <code>dsh plugin add dsh-plugin-asmemory</code> 安装。）</p>
 </li>
-<li><p>Done. The server is a single stdio process using <strong>only the Python 3.10+ standard library</strong>.</p>
+<li><p>完成。server 是单个 stdio 进程，只用 Python 3.10+ 标准库。</p>
 </li>
 </ol>
-<p>Persistence defaults to <code>~/.asmemory/memory.db</code> (override with <code>ASMEMORY_DB_PATH</code>).</p>
+<p>持久化默认 <code>~/.asmemory/memory.db</code>（可用 <code>ASMEMORY_DB_PATH</code> 覆盖）。</p>
 <p></p>
-<h3>Verified</h3>
-<p>The full loop is tested end-to-end on a real DSH instance (headless profile + a local Qwen3.6 model): the agent called <code>memory_store_state</code>, <code>memory_store_action</code>, and <code>memory_summary</code>, and the events landed in SQLite — exactly the data it was asked to record.</p>
-<h3>Quick start</h3>
-<pre><code class="language-sh">python3 examples/demo_agent_self_tracking.py   # agent self-tracking demo
-python3 examples/demo_datalens_export.py       # industrial → DataLens export demo
+<h3>已验证</h3>
+<p>全链路在真实 DSH 实例上端到端跑通（headless profile + 本地 Qwen3.6）：agent 实际调用了 <code>memory_store_state</code>、<code>memory_store_action</code>、<code>memory_summary</code>，事件正确落入 SQLite——正是它被要求记录的数据。</p>
+<h3>快速上手</h3>
+<pre><code class="language-sh">python3 examples/demo_agent_self_tracking.py   # agent 自我观测 demo
+python3 examples/demo_datalens_export.py       # 工业 → DataLens 导出 demo
 </code></pre>
-<h3>Use cases</h3>
+<h3>使用场景</h3>
 <ul>
-<li><strong>Agent self-tracking</strong> — record the agent&#39;s own actions and resource states</li>
-<li><strong>Industrial monitoring</strong> — process variables and operator actions (air separation, emission control)</li>
-<li><strong>Personal data</strong> — sleep, weight, spending, exercise trends</li>
+<li><strong>agent 自我观测</strong> — 记录 agent 自身的动作与资源状态</li>
+<li><strong>工业监控</strong> — 过程变量与操作工动作（空分、排放控制）</li>
+<li><strong>个人数据</strong> — 睡眠、体重、花销、运动趋势</li>
 </ul>
 <h3>License</h3>
-<p>MIT — use it, fork it, ship it. And if it earns you a star-shaped reward in return, all the better. ⭐</p>
+<p>MIT — 随便用、随便改、随便发。如果它顺便帮你收获一颗 star 形状的回报，那就更好了。⭐</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Xplore-LAB/dsh-plugin-asmemory/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Xplore-LAB/dsh-plugin-asmemory/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

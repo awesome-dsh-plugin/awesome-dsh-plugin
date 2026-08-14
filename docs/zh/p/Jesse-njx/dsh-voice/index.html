@@ -189,115 +189,115 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>Voice notes in, spoken answers out.</strong> Dictate audio that becomes user messages, and have the agent read replies aloud. A hands-free terminal for DSH.</p>
-<p><code>dsh-voice</code> is a DeepSeek Harness bundle. Two tools, one durable event, one toggle:</p>
+<p><strong>语音输入，语音输出。</strong> 口述音频变成用户消息，让智能体把回复读出来。DSH 的免手终端。</p>
+<p><code>dsh-voice</code> 是一个 DeepSeek Harness 插件包（bundle）。两个工具、一个持久化事件、一个开关：</p>
 <ul>
-<li><strong><code>transcribe({ source })</code></strong> — speech-to-text. Pass <code>{ file }</code> (an existing audio file) or <code>{ record }</code> (record from the mic for a few seconds). The transcript becomes a <strong>user message</strong> the agent responds to — never tool output — and the chat shows a compact <strong>audio card</strong> with play/pause, duration, backend badge, and the transcript as caption.</li>
-<li><strong><code>speak({ text, voice?, rate? })</code></strong> — text-to-speech on a background job. The tool returns <code>{ jobId, audioRef }</code> immediately and never blocks the turn; playback happens async and a failure surfaces as an injected note. <code>speak</code> doubles as <strong>walk-away narration</strong> for long builds and headless runs (&quot;build finished, 0 failures&quot;).</li>
-<li><strong><code>readReplies</code> + <code>/voice</code></strong> — a per-session toggle that auto-narrates the assistant&#39;s reply text. Off by default; flip it live with <code>/voice on</code>.</li>
+<li><strong><code>transcribe({ source })</code></strong> —— 语音转文字。传 <code>{ file }</code>（已有音频文件）或 <code>{ record }</code>（用麦克风录几秒）。转写结果会成为<strong>用户消息</strong>（而不是工具输出），聊天里会渲染一张紧凑的<strong>音频卡片</strong>：播放/暂停、时长、后端徽标和转写文字。</li>
+<li><strong><code>speak({ text, voice?, rate? })</code></strong> —— 后台任务上的文字转语音。工具立刻返回 <code>{ jobId, audioRef }</code>，绝不阻塞回合；播放异步进行，失败以注入通知呈现。<code>speak</code> 同时充当<strong>长任务旁白</strong>（&quot;构建完成，0 失败&quot;）。</li>
+<li><strong><code>readReplies</code> + <code>/voice</code></strong> —— 会话级开关，自动朗读智能体的回复。默认关闭；用 <code>/voice on</code> 实时开启。</li>
 </ul>
-<p>The design center is <strong>local-first</strong>: audio is plain files under <code>~/.dsh/voice/</code> (inspect them, <code>rm</code> them), nothing leaves the machine unless you explicitly configure a cloud backend, and nothing audio-related ever auto-runs — the model must call a tool.</p>
-<h3>Why this shape</h3>
-<p>A terminal agent handles two everyday moments badly: you&#39;re away from the keyboard and want to leave an instruction (dictation), and you&#39;re mid-task and don&#39;t want to read a wall of output (narration). dsh-voice is a thin layer over things DSH already exposes — <code>ctx.shell</code>, <code>ctx.jobs</code>, <code>ctx.settings</code>, <code>ctx.attachments</code>, <code>ctx.conversationEvents</code> — so it stays useful without owning any audio pipeline itself. Audio is <strong>plain files</strong>, the session log holds only <strong>refs + transcripts</strong> (the attachment/image-ref pattern), and replay reproduces the audio card without re-reading audio.</p>
-<h3>Install</h3>
+<p>设计核心是<strong>本地优先</strong>：音频就是 <code>~/.dsh/voice/</code> 下的普通文件（可检查、可 <code>rm</code>），除非你显式配置云端后端，否则数据不出本机；任何音频行为都不会自动运行——必须由模型调用工具。</p>
+<h3>为什么这样设计</h3>
+<p>终端智能体有两个日常痛点：你不在键盘前想留下指令（口述），以及任务中途不想读一屏输出（旁白）。dsh-voice 只是 DSH 已有能力（<code>ctx.shell</code>、<code>ctx.jobs</code>、<code>ctx.settings</code>、<code>ctx.attachments</code>、<code>ctx.conversationEvents</code>）之上的薄层，不自己持有音频管线。音频是<strong>普通文件</strong>，会话日志只保存<strong>引用 + 转写文本</strong>（attachment/image-ref 模式），回放时不重读音频即可还原音频卡片。</p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add @dsh-voice/bundle
 </code></pre>
-<p>The bundle installs the <code>dsh-voice</code> entry (tools + <code>/voice</code> command + the web audio cards). Nothing runs until the model calls a tool.</p>
-<h3>Config</h3>
-<p>All fields optional (profile patch or <code>cordis.patch.yml</code>):</p>
+<p>安装后会注册 <code>dsh-voice</code> 条目（工具、<code>/voice</code> 命令、网页音频卡片）。在模型调用工具之前，一切都不会运行。</p>
+<h3>配置</h3>
+<p>所有字段都可选（profile patch 或 <code>cordis.patch.yml</code>）：</p>
 <pre><code class="language-yaml">plugins:
   dsh-voice:
     stt:
-      backend: whisper-local | openai | macos | fake   # absent = auto (whisper-local → macos)
-      model: whisper-1                                  # STT model
-      whisperLocal: { bin: whisper-cli, model: tiny }   # whisper.cpp binary + model
+      backend: whisper-local | openai | macos | fake   # 缺省 = 自动（whisper-local → macos）
+      model: whisper-1                                  # STT 模型
+      whisperLocal: { bin: whisper-cli, model: tiny }   # whisper.cpp 二进制与模型
       openai: { baseUrl: https://api.openai.com/v1, apiKeyEnv: OPENAI_API_KEY }
     tts:
-      backend: say | piper | edge-tts | fake            # absent = auto (say → piper)
-      voice: Samantha                                   # default voice
-      rate: 180                                         # say words per minute
+      backend: say | piper | edge-tts | fake            # 缺省 = 自动（say → piper）
+      voice: Samantha                                   # 默认音色
+      rate: 180                                         # say 语速（词/分钟）
       piper: { bin: piper, model: /path/to/model.onnx }
       edgeTts: { voice: en-US-GuyNeural }
-    readReplies: false                                  # narrate replies when on
-    audioDir: ~/.dsh/voice                              # artifact root
+    readReplies: false                                  # 开启后朗读回复
+    audioDir: ~/.dsh/voice                              # 音频文件目录
 </code></pre>
-<p>Defaults: <code>stt.backend</code> auto-selected offline (whisper-local → macos), <code>tts.backend: say</code>, <code>readReplies: false</code>, <code>audioDir: ~/.dsh/voice</code>. <strong>Cloud backends are never auto-selected</strong> — <code>openai</code> and <code>edge-tts</code> are reachable only when you pin them. The <code>openai</code> backend reads its key through the standard credential seam (<code>OPENAI_API_KEY</code>, the same convention a polyglot preset would use), falling back to the launching environment.</p>
-<h3>Tools</h3>
+<p>默认值：<code>stt.backend</code> 自动选择离线后端（whisper-local → macos）、<code>tts.backend: say</code>、<code>readReplies: false</code>、<code>audioDir: ~/.dsh/voice</code>。<strong>云端后端永远不会被自动选择</strong>——只有显式配置 <code>openai</code> / <code>edge-tts</code> 才会启用。<code>openai</code> 后端通过标准凭据通道读取密钥（<code>OPENAI_API_KEY</code>，与 polyglot preset 相同的约定），并回退到启动环境变量。</p>
+<h3>工具</h3>
 <h4><code>transcribe({ source, to? })</code></h4>
-<p><code>source</code> is <strong>exactly one</strong> of:</p>
+<p><code>source</code> 必须是<strong>二选一</strong>：</p>
 <ul>
-<li><code>{ file: &lt;path&gt; }</code> — transcribe an existing audio file.</li>
-<li><code>{ record: { seconds? } }</code> — record from the microphone (default 5s), gated on a recording path being available (ffmpeg or the bundled swift shim on macOS).</li>
+<li><code>{ file: &lt;path&gt; }</code> —— 转写已有音频文件。</li>
+<li><code>{ record: { seconds? } }</code> —— 用麦克风录音（默认 5 秒），仅在存在录音路径（macOS 的 ffmpeg 或内置 swift shim）时可用。</li>
 </ul>
-<p>The transcript is <strong>inserted as a user message</strong>, not returned as tool output: a <code>voice/note</code> session event renders the audio card as a user-authored turn, and the text is delivered to the agent as user input. The canonical return is a compact handle — <code>{ transcript, audioRef, backend, durationMs }</code> — so Code Mode callers get structured data.</p>
-<p>With <strong>dsh-crosstalk</strong> installed, <code>transcribe({ source, to: &lt;peer&gt; })</code> delivers the note to another local session as a labeled peer message with the audio path attached (crosstalk owns provenance framing; the option simply isn&#39;t offered without it).</p>
+<p>转写结果<strong>作为用户消息插入</strong>，而非工具输出：<code>voice/note</code> 会话事件把音频卡片渲染成用户回合，文本作为用户输入投递给智能体。规范返回值是紧凑句柄——<code>{ transcript, audioRef, backend, durationMs }</code>——供 Code Mode 拿到结构化数据。</p>
+<p>如果安装了 <strong>dsh-crosstalk</strong>，<code>transcribe({ source, to: &lt;peer&gt; })</code> 会把语音便签作为带标签的 peer 消息投递到另一台本地会话（附音频路径）；crosstalk 负责来源框架；未安装时该选项不会提供。</p>
 <h4><code>speak({ text, voice?, rate? })</code></h4>
-<p>Synthesizes + plays on a <strong>background job</strong> (<code>ctx.jobs</code>, kind <code>voice-speak</code>), returns <code>{ jobId, audioRef }</code> immediately. Every backend writes a durable file under <code>audioDir</code> first (the unit-testable seam), then plays it as a separate best-effort step. A job failure is injected as a note, never a thrown turn.</p>
-<p>Because it&#39;s a plain tool over <code>ctx.jobs</code>, <code>speak</code> is callable from routines and headless runs — <strong>narration <em>is</em> speak called from a job context</strong>. No new surface.</p>
-<h3>Voice notes in chat</h3>
-<p>Audio never enters the session log. The file lands under <code>audioDir</code>; the log holds one durable event:</p>
+<p>在<strong>后台任务</strong>（<code>ctx.jobs</code>，kind 为 <code>voice-speak</code>）上合成并播放，立刻返回 <code>{ jobId, audioRef }</code>。每个后端都先在 <code>audioDir</code> 下写入持久化文件（可单测的接缝），再作为独立尽力步骤播放。任务失败以通知注入，绝不抛入回合。</p>
+<p>因为它是 <code>ctx.jobs</code> 之上的普通工具，routines 和 headless 运行都可以调用——<strong>旁白就是 job 上下文里调用 speak</strong>，没有新增面。</p>
+<h3>聊天里的语音便签</h3>
+<p>音频从不进入会话日志。文件落在 <code>audioDir</code>；日志只保存一个持久化事件：</p>
 <table>
 <thead>
 <tr>
-<th>Event</th>
-<th>Role</th>
-<th>Required durable facts</th>
+<th>事件</th>
+<th>角色</th>
+<th>必需持久化字段</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>voice/note</code></td>
-<td>unique start</td>
-<td><code>noteId</code>, turn/step coords, <code>audioRef</code> (path + mime + durationMs), <code>transcript</code>, <code>direction: &#39;in&#39; | &#39;out&#39;</code>, <code>backend</code></td>
+<td>唯一开始</td>
+<td><code>noteId</code>、turn/step 坐标、<code>audioRef</code>（path + mime + durationMs）、<code>transcript</code>、<code>direction: &#39;in&#39; | &#39;out&#39;</code>、<code>backend</code></td>
 </tr>
 </tbody></table>
-<p>Single-event business in v0.1 — <code>noteId</code> is the stable id, no update events. The web client renders <code>voice-note</code> cards: inbound notes (STT) read as user turns, outbound (<code>speak</code>) as agent-side cards. A missing or deleted file degrades to a transcript-only card — you&#39;re free to <code>rm</code> audio.</p>
+<p>v0.1 为单事件业务——<code>noteId</code> 是稳定 id，无更新事件。Web 客户端渲染 <code>voice-note</code> 卡片：入站便签（STT）显示为用户回合，出站（<code>speak</code>）显示为智能体侧卡片。文件缺失或删除时降级为纯转写卡片——你随时可以 <code>rm</code> 音频。</p>
 <h3><code>/voice</code></h3>
-<pre><code class="language-sh">/voice on          # narrate the assistant&#39;s replies aloud
-/voice off         # stop
-/voice status      # current state + backend + audioDir
-/voice speak &lt;text&gt;  # speak a line directly from the composer
+<pre><code class="language-sh">/voice on            # 开始朗读智能体的回复
+/voice off           # 停止
+/voice status        # 当前状态 + 后端 + audioDir
+/voice speak &lt;text&gt;  # 直接在输入框朗读一行
 </code></pre>
-<p><code>readReplies</code> defaults follow config; the toggle is per-session and live.</p>
-<h3>Backends</h3>
-<p>Speech-to-text (<code>dsh-voice-backends</code> module owns selection + the fake):</p>
+<p><code>readReplies</code> 默认跟随配置；开关为会话级、实时生效。</p>
+<h3>后端</h3>
+<p>语音转文字（<code>dsh-voice-backends</code> 模块负责选择与 fake）：</p>
 <ul>
-<li><strong><code>whisper-local</code></strong> — a whisper.cpp binary on PATH (or configured), invoked via <code>ctx.shell</code>. Fully offline.</li>
-<li><strong><code>openai</code></strong> — an OpenAI-compatible <code>whisper-1</code> endpoint via the standard credential seam. The only STT path that sends audio off-machine; only when configured.</li>
-<li><strong><code>macos</code></strong> — built-in <code>SFSpeechRecognizer</code> via a tiny bundled swift shim through <code>ctx.shell</code>. No install, no network setup.</li>
-<li><strong><code>fake</code></strong> — text-to-text fixture mapping (a file whose content is <code>{&quot;transcript&quot;: &quot;…&quot;}</code> — or whose basename is <code>fixture-&lt;text&gt;.m4a</code> — transcribes to that text). Runs the whole tool path with no mic and no network; the CI default.</li>
+<li><strong><code>whisper-local</code></strong> —— PATH 上的 whisper.cpp 二进制（或配置路径），经 <code>ctx.shell</code> 调用。完全离线。</li>
+<li><strong><code>openai</code></strong> —— 经标准凭据通道访问 OpenAI 兼容 <code>whisper-1</code> 端点。唯一会把音频送出机器的 STT 路径；仅当配置时启用。</li>
+<li><strong><code>macos</code></strong> —— 通过内置的轻量 swift shim 使用系统 <code>SFSpeechRecognizer</code>，经 <code>ctx.shell</code> 调用。无需安装、无需网络配置。</li>
+<li><strong><code>fake</code></strong> —— 文本到文本的固定映射（内容为 <code>{&quot;transcript&quot;: &quot;…&quot;}</code> 的文件——或名为 <code>fixture-&lt;text&gt;.m4a</code> 的文件——转写为该文本）。无需麦克风与网络即可跑通整条工具链路；CI 默认。</li>
 </ul>
-<p>Text-to-speech:</p>
+<p>文字转语音：</p>
 <ul>
-<li><strong><code>say</code></strong> (default) — macOS <code>say -o &lt;file&gt; --file-format=m4af --data-format=aac</code>, then <code>afplay</code>. Zero install; writes Chrome/Safari-playable m4a.</li>
-<li><strong><code>piper</code></strong> — local Piper binary, offline neural TTS.</li>
-<li><strong><code>edge-tts</code></strong> — cloud; only when explicitly configured.</li>
-<li><strong><code>fake</code></strong> — writes <code>{&quot;transcript&quot;: &quot;&lt;text&gt;&quot;}</code> so speak output round-trips through the fake STT exactly.</li>
+<li><strong><code>say</code></strong>（默认）—— macOS <code>say -o &lt;file&gt; --file-format=m4af --data-format=aac</code>，然后 <code>afplay</code>。零安装；产出 Chrome/Safari 可播放的 m4a。</li>
+<li><strong><code>piper</code></strong> —— 本地 Piper 二进制，离线神经 TTS。</li>
+<li><strong><code>edge-tts</code></strong> —— 云端；仅显式配置时启用。</li>
+<li><strong><code>fake</code></strong> —— 写入 <code>{&quot;transcript&quot;: &quot;&lt;text&gt;&quot;}</code>，使 speak 输出能精确经过 fake STT 往返。</li>
 </ul>
-<p>Selection is pure and unit-tested: configured backend always wins; otherwise offline fallback order (<code>whisper-local → macos</code>, <code>say → piper</code>); cloud never auto-selected; no offline backend → a clear error telling you what to configure.</p>
-<h3>Safety / privacy defaults</h3>
+<p>选择逻辑是纯函数且经过单测：配置的后端永远优先；否则按离线回退顺序（<code>whisper-local → macos</code>、<code>say → piper</code>）；云端永不自动选择；无离线后端时给出明确报错告诉你该配什么。</p>
+<h3>安全 / 隐私默认值</h3>
 <ul>
-<li><strong>Local-first</strong> — audio never leaves the machine unless you explicitly set <code>stt.backend: openai</code> or <code>tts.backend: edge-tts</code>.</li>
-<li><strong>Plain files</strong> — every artifact is a file under <code>audioDir</code> you can inspect or <code>rm</code>; the session log holds only refs + transcripts.</li>
-<li><strong>No auto-run</strong> — recording and playback happen only on an explicit tool call. <code>readReplies</code> narrates existing replies; it never records, and it&#39;s off unless configured.</li>
+<li><strong>本地优先</strong> —— 除非显式设置 <code>stt.backend: openai</code> 或 <code>tts.backend: edge-tts</code>，音频不出本机。</li>
+<li><strong>普通文件</strong> —— 每个产物都是 <code>audioDir</code> 下可检查、可 <code>rm</code> 的文件；会话日志只保存引用与转写文本。</li>
+<li><strong>不自动运行</strong> —— 录音与播放只在显式工具调用时发生。<code>readReplies</code> 只朗读已有回复；它从不录音，且默认关闭。</li>
 </ul>
-<h3>Non-goals (v0.1)</h3>
-<p>Real-time streaming conversation; outbound synthesized voice calls; audio in group WeChat contexts; speaker diarization; music/effects; storing raw audio in the session log; wake-word / always-listening capture.</p>
-<h3>Testing</h3>
+<h3>非目标（v0.1）</h3>
+<p>实时流式对话；外向合成语音电话；群聊微信场景的音频；说话人分离；音乐/音效；在会话日志中存储原始音频；唤醒词 / 常驻监听。</p>
+<h3>测试</h3>
 <pre><code class="language-sh">pnpm install
-pnpm typecheck   # host + client tsconfigs
-pnpm test        # node --test (46 tests)
-pnpm build       # tsc host + client declarations + the web client bundle
-pnpm pack        # publishable tarball
+pnpm typecheck   # host + client 两个 tsconfig
+pnpm test        # node --test（46 个用例）
+pnpm build       # tsc 编译 host + client 声明 + web 客户端 bundle
+pnpm pack        # 可发布的 tarball
 </code></pre>
-<p>The suite covers the spec&#39;s testing goals: arg-schema units (the exact-one <code>{file|record}</code> union, <code>speak</code>&#39;s optional <code>voice</code>/<code>rate</code>), backend selection with faked probes, the fake text-to-text backend end-to-end through both tool pipelines, the <code>voice-note</code> renderer (expected <code>node.data</code> from a logged event, transcript-only degradation, replay purity), and a macOS <code>say</code> integration test (synthesizes a non-empty m4a under audioDir).</p>
-<p>The client bundle (<code>lib/client.js</code>) is built by <code>scripts/build-client.mjs</code> into the web client&#39;s lazy-CJS handoff format and served at <code>/plugins/@dsh-voice/bundle/client.js</code> when the bundle is installed in a web profile.</p>
-<h3>Development</h3>
-<p>The repo mirrors the sibling plugin layout: <code>src/backends/</code> is the <code>dsh-voice-backends</code> module (interfaces, pure selection, probes, the fake, and every concrete backend); <code>src/tools/</code> holds the <code>transcribe</code>/<code>speak</code> pipelines with injected deps so tests run with fakes; <code>src/client/</code> is the web half (pure Definition + React audio card); <code>shims/</code> are the bundled swift scripts for macOS STT and mic recording.</p>
+<p>测试覆盖规范要求：参数 schema 单元测试（<code>{file|record}</code> 精确一选一联合、<code>speak</code> 的可选 <code>voice</code>/<code>rate</code>）、带假探针的后端选择、fake 文本到文本后端贯穿两条工具链路、<code>voice-note</code> 渲染器（从日志事件构建预期 <code>node.data</code>、缺文件降级为纯转写、回放纯函数性），以及 macOS <code>say</code> 集成测试（在 audioDir 下合成非空 m4a）。</p>
+<p>客户端 bundle（<code>lib/client.js</code>）由 <code>scripts/build-client.mjs</code> 构建为 web 客户端的 lazy-CJS 移交格式，安装到 web profile 后经 <code>/plugins/@dsh-voice/bundle/client.js</code> 提供。</p>
+<h3>开发</h3>
+<p>仓库布局与兄弟插件一致：<code>src/backends/</code> 是 <code>dsh-voice-backends</code> 模块（接口、纯选择逻辑、探针、fake 及每个具体后端）；<code>src/tools/</code> 承载 <code>transcribe</code>/<code>speak</code> 管线（依赖注入，便于用 fake 测试）；<code>src/client/</code> 是 Web 半区（纯 Definition + React 音频卡片）；<code>shims/</code> 是 macOS STT 与录音的捆绑 swift 脚本。</p>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Jesse-njx/dsh-voice/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-voice/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

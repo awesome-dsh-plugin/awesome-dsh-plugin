@@ -189,106 +189,108 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<h3>Why this exists</h3>
-<p>Most DSH vision plugins bridge images to DeepSeek as <em>text descriptions</em> — lossy, one-shot, and blind to pixels. This plugin keeps the <strong>original pixels on the vision model&#39;s side</strong> and DeepSeek on the reasoning side, and makes looking at an image an <strong>ordinary tool call</strong>:</p>
+<h3>为什么做这个</h3>
+<p>大多数 DSH 视觉插件把图片“翻译”成一段文字描述再喂给 DeepSeek——有损、一次性、看不见像素。本插件把<strong>原图像素留在视觉模型侧</strong>、把推理留在 DeepSeek 侧，并把“看图”变成一次<strong>普通的工具调用</strong>：</p>
 <ul>
-<li><strong>One command install.</strong> The package ships its own composition patch (<code>dsh.bundle.patch</code>): <code>dsh plugin add</code> wires the row, the admission wrapper, the stealth takeover and the attachment limits automatically — zero manual file edits.</li>
-<li><strong>Free by default.</strong> The vision chain starts with a built-in OVHcloud anonymous endpoint (<code>Qwen2.5-VL-72B-Instruct</code>, no account, no key, 2 req/min per IP). Paid chains (OpenRouter, Pi-AI providers, direct OpenAI-compatible endpoints) are optional upgrades.</li>
-<li><strong>No Python.</strong> The whole pipeline — downscale, grounding, crop, pixel diff, palette, OCR, SVG trace, cutout, HTML screenshot — runs on sharp / potrace / tesseract / system Chrome.</li>
-<li><strong>Continuous multi-step image work.</strong> An image turn is a text turn that calls tools: <code>vision_ground</code> → <code>vision_crop</code> → <code>vision_describe</code> → <code>vision_pixel_diff</code> → fix → screenshot again. The agent keeps iterating until the work is done.</li>
-<li><strong>DeepSeek stays the brain.</strong> Text turns are untouched in model, cost and context. The vision model is only the eyes, called on demand; answers are cached by image content.</li>
-<li><strong>Transparent to the user.</strong> Uploaded images keep rendering as images in the conversation UI; the rewrite that points the model at the vision tools happens only inside the model call, never in the session log.</li>
+<li><strong>一条命令安装。</strong> 包自带组合补丁（<code>dsh.bundle.patch</code>）：<code>dsh plugin add</code> 自动完成插件行挂载、准入包装、隐身接管与附件限制放宽——不用手改任何文件。</li>
+<li><strong>默认免费。</strong> 视觉链内置 OVHcloud 匿名端点（<code>Qwen2.5-VL-72B-Instruct</code>，免注册、免 Key，每 IP 2 次/分钟）。付费链路（OpenRouter、Pi-AI 供应商、任意 OpenAI 兼容直连端点）是可选升级。</li>
+<li><strong>无 Python。</strong> 整条管线——缩放、定位、裁剪、像素对比、取色、OCR、SVG 矢量化、抠图、HTML 截图——全部基于 sharp / potrace / tesseract / 系统 Chrome。</li>
+<li><strong>可连续多步看图。</strong> 图片轮 = 调用工具的文本轮：<code>vision_ground</code> → <code>vision_crop</code> → <code>vision_describe</code> → <code>vision_pixel_diff</code> → 修复 → 再截图，Agent 可以一直迭代到任务完成。</li>
+<li><strong>DeepSeek 始终是大脑。</strong> 文字轮在模型、成本、上下文上完全不动；视觉模型只当“眼睛”、按需调用，答案按图片内容缓存。</li>
+<li><strong>界面无感。</strong> 上传的图片在会话界面里照常显示为图片；指向视觉工具的改写只发生在模型输入层，从不写入会话日志。</li>
 </ul>
-<h3>Quick start</h3>
+<h3>快速开始</h3>
 <pre><code class="language-sh">dsh plugin --profile web add github:ysr666/dsh-vision-router
 </code></pre>
-<p>Restart <code>dsh web</code> — done. Zero configuration:</p>
+<p>重启 <code>dsh web</code>——完成，零配置：</p>
 <ul>
-<li>the plugin&#39;s bundle patch mounts the row, takes over the official DeepSeek route (stealth mode — the model picker looks exactly like stock), and relaxes attachment limits to 20 MB / 100 MP;</li>
-<li>the default vision chain is the built-in free endpoint;</li>
-<li>every setting is editable live in <strong>Settings → Plugins → Plugin config → 视觉路由（自动识图）</strong>.</li>
+<li>插件的 bundle 补丁自动挂载插件行、接管官方 DeepSeek 路由（隐身模式——模型选择器看起来和原版一模一样）、放宽附件限制到 20MB / 1 亿像素；</li>
+<li>默认视觉链就是内置免费端点；</li>
+<li>全部配置可在 <strong>设置 → 插件 → 插件配置 → 视觉路由（自动识图）</strong> 实时修改。</li>
 </ul>
-<p>Then just paste an image into a conversation. The agent mounts the vision tools automatically and looks at it through <code>vision_describe</code> (and friends) — multi-step if needed.</p>
-<h4>See it in action</h4>
-<p><em>Left: an image turn — the user sends a picture, the agent calls <code>vision_describe</code> through the free chain and answers. Right: the finished structured answer.</em></p>
-<h3>Highlights</h3>
+<p>然后直接往对话里贴一张图。Agent 自动挂载视觉工具，通过 <code>vision_describe</code>（以及其余 8 个工具）看图，需要时连续多步。</p>
+<h4>实际效果</h4>
+<p><em>左：一次图片轮——用户发图，Agent 通过免费链路调用 <code>vision_describe</code> 并作答。右：最终的结构化解读。</em></p>
+<h3>亮点</h3>
 <ul>
-<li><strong>Original pixels, real answers.</strong> The vision chain reads the image at original resolution (auto-downscaled only to protect latency/quota); the agent&#39;s question travels with the image, so answers are about <em>your</em> question, not a generic description.</li>
-<li><strong>Automatic failover with classified errors.</strong> Region blocks, ToS filtering, 402 quota, 429 rate limits (with Retry-After backoff), context overflow, network failures — the chain walks providers one by one and only reports after all of them failed, with actionable advice.</li>
-<li><strong>Image memory.</strong> Vision answers are cached by attachment content hash; later text turns substitute the recorded description (marked as untrusted evidence), so DeepSeek genuinely remembers earlier images without re-spending vision calls.</li>
-<li><strong>A verifiable pixel loop.</strong> Reference → <code>vision_html_screenshot</code> → <code>vision_pixel_diff</code> (ratio + red heatmap + worst-region ranking) → fix → repeat until the diff reaches zero. UI restoration becomes measurable instead of eyeballed.</li>
-<li><strong>Progressive schema exposure.</strong> Only a zero-arg <code>vision_activate</code> bootstrap is always visible; image turns auto-mount all ten deep tools with a one-time usage note, and a <code>vision-tools</code> skill is registered for text-only turns.</li>
-<li><strong>Selective proxy.</strong> Only the configured vision provider hosts go through your local proxy; DeepSeek stays direct.</li>
+<li><strong>原图像素，真实答案。</strong> 视觉链按原始分辨率读图（仅为保护延迟/额度自动缩放）；你的问题随图一起发送，答案围绕<em>你的问题</em>，而不是一段泛泛的描述。</li>
+<li><strong>自动降级 + 分类报错。</strong> 地区限制、ToS 风控、402 额度、429 限流（尊重 Retry-After 退避重试）、上下文超长、网络故障——链路逐供应商尝试，全部失败才报错并给出可操作的建议。</li>
+<li><strong>图片记忆。</strong> 视觉答案按附件内容哈希缓存；后续文字轮用记录的描述替换历史图片（标注为不可信证据），DeepSeek 真正“记得”之前发过的图，且不重复消耗视觉调用。</li>
+<li><strong>可验证的像素闭环。</strong> 参照图 → <code>vision_html_screenshot</code> → <code>vision_pixel_diff</code>（差异率 + 红色热力图 + 最差区域排行）→ 修复 → 再对比，直到差异收敛。UI 还原从“目测”变成“实测”。</li>
+<li><strong>渐进式 schema 暴露。</strong> 平时只有一个零参引导工具 <code>vision_activate</code>；图片轮自动挂载全部 10 个深看工具（附一次性使用提示），并为纯文字轮注册 <code>vision-tools</code> 技能。</li>
+<li><strong>选择性代理。</strong> 只有配置的视觉供应商域名走本地代理；DeepSeek 保持直连。</li>
 </ul>
-<h3>How it works</h3>
-<p>The vision model is <strong>only the eyes</strong>; DeepSeek is <strong>always the brain</strong>. An image turn is never hijacked by a one-shot vision answer — the agent drives the tools itself and can keep operating on the image across as many steps as the task needs.</p>
-<h3>Tools</h3>
-<p>All ten deep tools mount automatically on image turns (<code>autoActivateOnImage</code>); text turns can mount them via <code>vision_activate</code> or the <code>/vision-tools</code> skill. Built on sharp / potrace / tesseract / system Chrome — no Python:</p>
+<h4>像素闭环实测</h4>
+<p>Agent 仅根据参考图复刻 UI，再用 <code>vision_pixel_diff</code> 验证最终结果：<strong>最终差异 2.54%</strong>（32,939 / 1,296,000 个差异像素，threshold 16/channel）。</p>
+<h3>工作原理</h3>
+<p>视觉模型<strong>只当眼睛</strong>，DeepSeek <strong>始终是大脑</strong>。图片轮永远不会被一次性视觉答案“劫持”——Agent 自己驱动工具，可以跨多个步骤持续对同一张图操作。</p>
+<h3>工具</h3>
+<p>10 个深看工具在图片轮自动挂载（<code>autoActivateOnImage</code>）；文字轮可通过 <code>vision_activate</code> 或 <code>/vision-tools</code> 技能挂载。全部基于 sharp / potrace / tesseract / 系统 Chrome——无 Python：</p>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>What it does</th>
-<th>Artifact</th>
+<th>工具</th>
+<th>作用</th>
+<th>产物</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>vision_describe</code></td>
-<td>Image Q&amp;A / multi-image compare / structured-evidence JSON mode (summary + layout regions + entity inventory + verbatim transcription)</td>
+<td>看图问答 / 多图对比 / 结构化证据 JSON 模式（摘要 + 布局区域 + 实体清单 + 原文转写）</td>
 <td>—</td>
 </tr>
 <tr>
 <td><code>vision_ground</code></td>
-<td>Locate a target → <strong>original-pixel box x1/y1/x2/y2</strong></td>
-<td>annotated PNG (optional)</td>
+<td>定位目标 → <strong>原图像素框 x1/y1/x2/y2</strong></td>
+<td>标注 PNG（可选）</td>
 </tr>
 <tr>
 <td><code>vision_detect</code></td>
-<td>Numbered inventory of every element of a kind (buttons/inputs/links…) with original-pixel boxes</td>
-<td>annotated PNG with numbered boxes</td>
+<td>盘点某类元素（按钮/输入框/链接…）→ 编号清单 + 原图像素框</td>
+<td>编号标注 PNG</td>
 </tr>
 <tr>
 <td><code>vision_crop</code></td>
-<td>Crop and zoom into a pixel box</td>
+<td>按像素框裁剪放大</td>
 <td>PNG</td>
 </tr>
 <tr>
 <td><code>vision_pixel_diff</code></td>
-<td>Per-pixel comparison: diff ratio + worst 8×8-grid regions</td>
-<td>red heatmap PNG + JSON report</td>
+<td>逐像素对比：差异率 + 最差 8×8 网格区域</td>
+<td>红色热力图 PNG + JSON 报告</td>
 </tr>
 <tr>
 <td><code>vision_colors</code></td>
-<td>Dominant colors (hex + share)</td>
+<td>主色提取（十六进制 + 占比）</td>
 <td>—</td>
 </tr>
 <tr>
 <td><code>vision_ocr</code></td>
-<td>Text transcription: local tesseract (chi_sim+eng) first, vision model fallback</td>
+<td>文字转写：本地 tesseract（中英）优先，视觉模型兜底</td>
 <td>—</td>
 </tr>
 <tr>
 <td><code>vision_trace</code></td>
-<td>SVG vectorization (potrace posterization; icons/logos)</td>
+<td>SVG 矢量化（potrace 分色；图标/logo）</td>
 <td>SVG</td>
 </tr>
 <tr>
 <td><code>vision_extract_foreground</code></td>
-<td>Cutout via border flood fill (uniform backgrounds)</td>
-<td>transparent PNG</td>
+<td>边界洪泛抠图（纯色背景）</td>
+<td>透明 PNG</td>
 </tr>
 <tr>
 <td><code>vision_html_screenshot</code></td>
-<td>Screenshot a local HTML file (headless system Chrome)</td>
+<td>给本地 HTML 文件截图（无头系统 Chrome）</td>
 <td>PNG</td>
 </tr>
 </tbody></table>
-<p>Formats are sniffed from magic bytes, so extensionless content-addressed attachment files work everywhere (no <code>.png</code> renaming needed).</p>
-<p><strong>Common workflows</strong></p>
-<pre><code class="language-text">vision_ground image=&quot;ref.png&quot; target=&quot;the send button&quot;
-vision_detect image=&quot;page.png&quot; target=&quot;input fields&quot;
+<p>图片格式按<strong>魔数识别</strong>，无扩展名的内容寻址附件文件也能直接用（不用再复制成 <code>.png</code>）。</p>
+<p><strong>常用流程</strong></p>
+<pre><code class="language-text">vision_ground image=&quot;ref.png&quot; target=&quot;发送按钮&quot;
+vision_detect image=&quot;page.png&quot; target=&quot;输入框&quot;
 vision_crop   image=&quot;ref.png&quot; region=&quot;1067,841,1108,881&quot;
-vision_describe paths=[&quot;ref.png&quot;,&quot;impl.png&quot;] question=&quot;list the differences&quot; json=true
+vision_describe paths=[&quot;ref.png&quot;,&quot;impl.png&quot;] question=&quot;列出两图的差异&quot; json=true
 vision_pixel_diff original=&quot;ref.png&quot; rebuilt=&quot;screenshot.png&quot;
 vision_ocr image=&quot;screenshot.png&quot;
 vision_colors image=&quot;ref.png&quot; top=8
@@ -296,167 +298,167 @@ vision_trace image=&quot;icon.png&quot; steps=4
 vision_extract_foreground image=&quot;logo.png&quot;
 vision_html_screenshot source=&quot;page.html&quot; width=1200 height=720
 </code></pre>
-<h3>Provider fallback chain</h3>
-<p>The vision chain walks providers in order and only surfaces an error after every one failed:</p>
+<h3>供应商降级链</h3>
+<p>视觉链按顺序逐个尝试，全部失败才报错：</p>
 <ol>
-<li>the <strong>built-in free endpoint</strong> (<code>vision-http</code> → <code>ovh/Qwen2.5-VL-72B-Instruct</code>) — no key, best-effort, 2 req/min per IP;</li>
-<li>configured <code>httpProviders</code> (direct OpenAI-compatible endpoints with optional <code>apiKeyEnv</code>);</li>
-<li>configured <code>providers</code> / <code>provider</code> + <code>fallbacks</code> (any adapter-backed provider, e.g. a Pi-AI profile like OpenRouter or Zhipu).</li>
+<li><strong>内置免费端点</strong>（<code>vision-http</code> → <code>ovh/Qwen2.5-VL-72B-Instruct</code>）——免 Key、尽力而为、每 IP 2 次/分钟；</li>
+<li>配置的 <code>httpProviders</code>（OpenAI 兼容直连端点，可选 <code>apiKeyEnv</code>）；</li>
+<li>配置的 <code>providers</code> / <code>provider</code> + <code>fallbacks</code>（任何有适配器的供应商，例如 Pi-AI 配置的 OpenRouter 或智谱）。</li>
 </ol>
 <blockquote>
-<p>In the legacy <code>routing: true</code> mode, the whole-turn chain walks only <code>provider + fallbacks</code> — <code>httpProviders</code> (including the free fallback) do not participate there. The default <code>routing: false</code> (tools-first) tries everything.</p>
+<p>在旧版 <code>routing: true</code> 模式下，整轮链只走 <code>provider + fallbacks</code>——<code>httpProviders</code>（含免费兜底）不参与。默认的 <code>routing: false</code>（工具优先）会尝试全部。</p>
 </blockquote>
-<p>Failures are classified (region / tos / quota / rate-limit / context / network) and the final error carries advice; <code>429</code> responses honor <code>Retry-After</code> once with a capped backoff. Oversized uploads are downscaled before the call (default budget 4 MP) to keep tool calls fast.</p>
-<h3>Stealth mode</h3>
-<p>A default install takes over the official <code>deepseek-official</code> route: the model picker looks exactly like stock (same DeepSeek group, same model names), but each entry is the auto-vision wrapper that declares image input and delegates text turns to a rebuilt native DeepSeek adapter (same <code>llm-deepseek</code> settings section and credentials). Old sessions keep working through the hidden <code>deepseek-vision</code> alias.</p>
-<p>To keep the stock row instead, override it in your profile patch layer (<code>~/.dsh/profiles/&lt;profile&gt;/cordis.patch.yml</code>):</p>
+<p>失败会分类（地区 / 风控 / 额度 / 限流 / 上下文 / 网络），最终报错附带建议；<code>429</code> 会尊重 <code>Retry-After</code> 做一次有上限的退避重试。超大上传图在调用前自动压缩（默认预算 400 万像素），保证工具调用不卡。</p>
+<h3>隐身模式</h3>
+<p>默认安装即接管官方 <code>deepseek-official</code> 路由：模型选择器看起来和原版完全一样（同一个 DeepSeek 组、同样的模型名），但每个条目背后都是声明了图片输入的自动识图包装；文字轮交给插件重建的原生 DeepSeek 适配器（读取同一个 <code>llm-deepseek</code> 设置段与凭据）。老会话通过隐藏的 <code>deepseek-vision</code> 别名继续工作。</p>
+<p>想保留官方行，在你的 profile 补丁层（<code>~/.dsh/profiles/&lt;profile&gt;/cordis.patch.yml</code>）覆写即可：</p>
 <pre><code class="language-yaml">- id: llm-deepseek
   name: &#39;@deepseek-ai/dsh-llm-deepseek&#39;
 </code></pre>
-<p>With the stock row present, the plugin falls back to the visible &quot;DeepSeek + 自动识图&quot; wrapper entry — pick it in the model picker for image turns. Recovery from a broken install is the same one-line override.</p>
-<h3>Web settings</h3>
-<p>The Web profile registers a <strong>视觉路由（自动识图）</strong> card under <strong>Settings → Plugins → Plugin config</strong>, styled like the built-in cards. It live-edits:</p>
+<p>官方行在场时，插件回退为选择器里可见的「DeepSeek + 自动识图」包装入口——发图前选它即可。安装出问题时同样用这一行恢复。</p>
+<h3>Web 设置</h3>
+<p>Web 配置页在 <strong>设置 → 插件 → 插件配置</strong> 下注册「视觉路由（自动识图）」卡片，样式与内置卡片一致，可实时修改：</p>
 <ul>
-<li>switches: whole-turn legacy routing, vision tools, image-block rewriting, stealth;</li>
-<li>vision request timeout, wrapper/chain route names;</li>
-<li>the <strong>vision chain</strong> (one <code>provider/model</code> per line, top-down fallback) and the text model;</li>
-<li>every field shows an &quot;overridden&quot; badge with a one-click reset to the composition default, plus discard/save.</li>
+<li>开关：整轮自动路由（旧模式）、识图工具、图片块改写、隐身模式；</li>
+<li>视觉请求超时、包装/链路由名；</li>
+<li><strong>视觉模型链</strong>（每行一个 <code>provider/model</code>，自上而下降级）与文本模型；</li>
+<li>每个字段都有「已覆盖」徽标与一键恢复组合默认，以及放弃/保存。</li>
 </ul>
 <blockquote>
-<p>PR <a href="https://github.com/ysr666/dsh-vision-router/pull/8">#8</a> upgrades the panel with catalog-driven model dropdowns, add/remove fallback rows, and proxy settings.</p>
+<p>PR <a href="https://github.com/ysr666/dsh-vision-router/pull/8">#8</a> 会把面板升级为目录驱动的模型下拉框、可增删的备用模型行与代理设置。</p>
 </blockquote>
-<h3>Configuration</h3>
-<p>Everything is optional; defaults work out of the box. Edit via the Web card or a profile patch:</p>
+<h3>配置项</h3>
+<p>全部可选，默认即可用。通过 Web 卡片或 profile 补丁修改：</p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认值</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>provider</code> / <code>model</code></td>
 <td><code>vision-http</code> / <code>ovh/Qwen2.5-VL-72B-Instruct</code></td>
-<td>shorthand chain (adapter-backed provider + model)</td>
+<td>简写链路（有适配器的供应商 + 模型）</td>
 </tr>
 <tr>
 <td><code>fallbacks</code></td>
 <td><code>[]</code></td>
-<td>backup models for the shorthand provider</td>
+<td>简写供应商的备用模型</td>
 </tr>
 <tr>
 <td><code>providers</code></td>
 <td><code>[]</code></td>
-<td>multi-provider chain <code>{ provider, model, fallbacks[] }</code>, tried in order; wins over the shorthand</td>
+<td>多供应商链路 <code>{ provider, model, fallbacks[] }</code>，按序尝试；优先于简写形式</td>
 </tr>
 <tr>
 <td><code>httpProviders</code></td>
-<td>built-in OVH entry</td>
-<td>direct OpenAI-compatible endpoints <code>{ name, baseURL, model, apiKeyEnv, maxTokens }</code></td>
+<td>内置 OVH 条目</td>
+<td>OpenAI 兼容直连端点 <code>{ name, baseURL, model, apiKeyEnv, maxTokens }</code></td>
 </tr>
 <tr>
 <td><code>routing</code></td>
 <td><code>false</code></td>
-<td>legacy whole-turn chain routing (one-shot answer). <code>false</code> = tools-first flow (recommended)</td>
+<td>旧版整轮链路由（一次性整轮回答）。<code>false</code> = 工具优先流程（推荐）</td>
 </tr>
 <tr>
 <td><code>reverseRouting</code></td>
 <td><code>true</code></td>
-<td>with <code>routing: true</code>, route text turns back to <code>textProvider</code></td>
+<td>开启 <code>routing</code> 时，文字轮路由回 <code>textProvider</code></td>
 </tr>
 <tr>
 <td><code>wrapperRoute</code> / <code>chainRoute</code></td>
 <td><code>deepseek-vision</code> / <code>vision-chain</code></td>
-<td>admission wrapper route name / fallback chain route name (empty disables)</td>
+<td>准入包装路由名 / 降级链路由名（置空关闭）</td>
 </tr>
 <tr>
 <td><code>stealth</code></td>
 <td><code>true</code></td>
-<td>take over the official <code>deepseek-official</code> route</td>
+<td>接管官方 <code>deepseek-official</code> 路由</td>
 </tr>
 <tr>
 <td><code>textProvider</code></td>
 <td><code>deepseek-official</code> / <code>deepseek-v4-pro</code></td>
-<td>the model that reasons (your daily model)</td>
+<td>负责思考的模型（你的日常模型）</td>
 </tr>
 <tr>
 <td><code>tool</code> / <code>progressiveTools</code> / <code>autoActivateOnImage</code></td>
 <td><code>true</code> ×3</td>
-<td>vision tools on / progressive mounting / auto-mount on image turns</td>
+<td>视觉工具开关 / 渐进式挂载 / 图片轮自动挂载</td>
 </tr>
 <tr>
 <td><code>rewriteImages</code></td>
 <td><code>true</code></td>
-<td>rewrite image blocks in the model input (cached description or tool-hint marker); the UI log keeps images</td>
+<td>模型输入层改写图片块（缓存描述或工具提示标记）；界面日志保留图片</td>
 </tr>
 <tr>
 <td><code>downscale</code> / <code>downscaleMaxPixels</code></td>
 <td><code>true</code> / <code>4000000</code></td>
-<td>pre-call downscale and its pixel budget (latency guard)</td>
+<td>调用前压缩及其像素预算（延迟保护）</td>
 </tr>
 <tr>
 <td><code>cache</code> / <code>cacheTtlSeconds</code> / <code>cacheMaxEntries</code></td>
 <td><code>true</code> / <code>3600</code> / <code>200</code></td>
-<td>vision answer cache</td>
+<td>视觉答案缓存</td>
 </tr>
 <tr>
 <td><code>timeoutMs</code></td>
 <td><code>120000</code></td>
-<td>per vision call deadline</td>
+<td>单次视觉调用超时</td>
 </tr>
 <tr>
 <td><code>artifactsDir</code></td>
 <td><code>.dsh-vision-router/artifacts</code></td>
-<td>artifact directory (relative to the session workspace)</td>
+<td>产物目录（相对会话工作区）</td>
 </tr>
 <tr>
 <td><code>proxy</code> / <code>proxyHosts</code></td>
-<td><code>&#39;&#39;</code> / openrouter hosts</td>
-<td>optional proxy for vision provider hosts only</td>
+<td><code>&#39;&#39;</code> / openrouter 域名</td>
+<td>仅视觉供应商域名可选的本地代理</td>
 </tr>
 </tbody></table>
-<h3>Requirements</h3>
+<h3>环境要求</h3>
 <ul>
-<li>DeepSeek Harness with a Web profile and <code>pnpm</code> available to <code>dsh plugin</code>.</li>
-<li>Node ≥ 22 (host side).</li>
-<li>No API key for the default free chain; a credential reference (<code>apiKeyEnv</code>) only for paid <code>httpProviders</code>.</li>
-<li>Chrome / Chromium / Edge only for <code>vision_html_screenshot</code>; every other tool works without a browser.</li>
-<li>Tesseract is optional: <code>vision_ocr</code> falls back to the vision model when the local engine is absent.</li>
+<li>DeepSeek Harness 的 Web profile，且 <code>dsh plugin</code> 可用 <code>pnpm</code>。</li>
+<li>Node ≥ 22（宿主侧）。</li>
+<li>默认免费链路无需 API Key；付费 <code>httpProviders</code> 只需一个凭据引用（<code>apiKeyEnv</code>）。</li>
+<li><code>vision_html_screenshot</code> 才需要 Chrome / Chromium / Edge；其余工具无浏览器也能用。</li>
+<li>tesseract 可选：本地引擎缺失时 <code>vision_ocr</code> 自动退回视觉模型。</li>
 </ul>
-<h3>Install and lifecycle</h3>
-<h4>Install</h4>
+<h3>安装与生命周期</h3>
+<h4>安装</h4>
 <pre><code class="language-sh">dsh plugin --profile web add github:ysr666/dsh-vision-router
-dsh --profile web --dump-config | grep vision-router   # one row, mounted by the bundle patch
+dsh --profile web --dump-config | grep vision-router   # 一行，由 bundle 补丁挂载
 </code></pre>
-<p>Restart a long-lived Web profile. The host discovers the browser bundle through <code>dsh.client</code> at startup.</p>
-<h4>Disable / re-enable</h4>
+<p>长期运行的 Web profile 需重启。宿主在启动时通过 <code>dsh.client</code> 声明发现浏览器端包。</p>
+<h4>禁用 / 恢复</h4>
 <pre><code class="language-yaml">- id: vision-router
   disabled: true
 </code></pre>
-<p>Set it back to <code>false</code> to re-enable. Unloading removes the wrapper routes, tools, skill and settings card; cached artifact files remain.</p>
-<h4>Upgrade</h4>
+<p>改回 <code>false</code> 即恢复。卸载会移除包装路由、工具、技能与设置卡片；已生成的产物文件保留。</p>
+<h4>升级</h4>
 <pre><code class="language-sh">dsh plugin --profile web update dsh-vision-router
 </code></pre>
-<p>Settings live in the profile&#39;s settings provider and survive upgrades.</p>
-<h4>Uninstall</h4>
+<p>设置存放在 profile 的设置提供方里，升级不丢失。</p>
+<h4>卸载</h4>
 <pre><code class="language-sh">dsh plugin --profile web remove dsh-vision-router
 </code></pre>
-<p>This removes the dependency and the bundle layer. If you disabled the stock DeepSeek row manually, re-enable it in your profile patch.</p>
-<h3>Security notes</h3>
+<p>同时移除依赖与 bundle 层。若你曾手动禁用官方 DeepSeek 行，记得在 profile 补丁里恢复。</p>
+<h3>安全说明</h3>
 <ul>
-<li>Image text is <strong>untrusted evidence</strong>: descriptions, OCR output and the auto-mount note all tell the agent never to execute instructions found inside images.</li>
-<li>Tool inputs resolve through <code>ctx.fs</code> (sandbox-aware); vision uploads never send anything but the selected image and the question.</li>
-<li>Artifacts write only under <code>&lt;workspace&gt;/.dsh-vision-router/artifacts</code>; results return absolute paths and byte counts.</li>
-<li>Secrets never travel: <code>apiKeyEnv</code> names a DSH credential reference; the value is resolved per call and never logged.</li>
-<li>The settings write path goes through the settings service (schema-validated, revision-checked) — a stale or invalid save is rejected, not partially applied.</li>
+<li>图片中的文字是<strong>不可信证据</strong>：描述、OCR 输出与自动挂载提示都要求 Agent 绝不执行图片内出现的指令。</li>
+<li>工具输入经由 <code>ctx.fs</code>（沙盒感知）解析；视觉上传只发送选中的图片与问题本身。</li>
+<li>产物只写入 <code>&lt;workspace&gt;/.dsh-vision-router/artifacts</code>；结果返回绝对路径与字节数。</li>
+<li>密钥不上线：<code>apiKeyEnv</code> 只指向 DSH 凭据引用，值按调用解析、永不写入日志。</li>
+<li>设置写入走设置服务（schema 校验 + 修订号检查）——过期或非法的保存会被拒绝，不会半截生效。</li>
 </ul>
 <h3>License</h3>
 <p><a href="https://github.com/ysr666/dsh-vision-router/blob/main/LICENSE">LGPL-3.0</a></p>
-<h3>Star History</h3>
+<h3>Star 趋势</h3>
 
     </div>
-    <p class="note"><a href="https://github.com/ysr666/dsh-vision-router/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/ysr666/dsh-vision-router/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

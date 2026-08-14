@@ -189,99 +189,99 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>English</strong> | <a href="https://github.com/Lum1104/dsh-browser/blob/main/README.zh.md">中文</a></p>
-<p>Connect <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> to the Chrome tab you are already using. The model can read page content, click controls, fill forms, scroll, and navigate while preserving your login state, session, and cookies. A side panel provides the conversation UI.</p>
-<p><code>dsh</code> is DeepSeek AI&#39;s open-source, plugin-based agent harness. This repository provides a companion browser bridge plugin and Chrome MV3 extension as one standalone pnpm workspace.</p>
-<p>The integration is text-only: pages become structured text with a numbered inventory of interactive elements, and the model addresses those elements by number. Screenshots never enter the model-facing pipeline.</p>
-<p>The workspace uses a pinned, publicly available <code>@deepseek-ai/dsh</code> release for reproducible installation. It requires neither a DeepSeek Harness source checkout, dependencies from a parent directory, nor npm credentials. DeepSeek Harness is currently a developer preview, so upgrades may require coordinated dependency and API updates.</p>
-<h3>Core capabilities</h3>
+<p><a href="https://github.com/Lum1104/dsh-browser/blob/main/README.md">English</a> | <strong>中文</strong></p>
+<p>把 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 连接到你正在使用的 Chrome 标签页。模型可以读取页面内容、点击控件、填写表单、滚动与导航，同时保留登录态、会话和 Cookie。侧边栏提供对话界面。</p>
+<p><code>dsh</code> 是由 DeepSeek AI 开发的开源、插件化 agent harness（智能体框架）。本仓库将配套的浏览器桥插件与 Chrome MV3 扩展组成一个独立的 pnpm workspace。</p>
+<p>整个集成采用纯文本设计：页面会转换为结构化文本和带编号的交互元素清单，模型通过编号定位元素。面向模型的流水线不会传入截图。</p>
+<p>workspace 固定使用经过验证、已公开发布的 <code>@deepseek-ai/dsh</code> 版本，保证安装结果可复现。用户无需检出 DeepSeek Harness 源码、无需从父目录读取依赖，也无需配置 npm 凭据。DeepSeek Harness 目前处于开发者预览阶段，升级时可能需要同步调整依赖与 API。</p>
+<h3>核心能力</h3>
 <table>
 <thead>
 <tr>
-<th>Capability</th>
-<th>Tool</th>
-<th>Notes</th>
+<th>能力</th>
+<th>工具</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Read page</td>
+<td>读取页面</td>
 <td><code>browser_snapshot</code></td>
-<td>Structured text snapshot: title, URL, main text, numbered controls, and masked form fields; <code>delta: true</code> returns only changes</td>
+<td>结构化文本快照：标题/URL/正文/编号交互清单/表单字段（敏感值掩码）；<code>delta: true</code> 只返回变化</td>
 </tr>
 <tr>
-<td>Click element</td>
+<td>点击元素</td>
 <td><code>browser_click</code></td>
-<td>Click links, buttons, checkboxes, and other controls by inventory number</td>
+<td>按编号点击链接/按钮/复选框等</td>
 </tr>
 <tr>
-<td>Fill forms</td>
+<td>填写表单</td>
 <td><code>browser_type</code></td>
-<td>React/Vue-compatible input; <code>replace</code> clears the field first</td>
+<td>输入文本（React/Vue 受控组件兼容），<code>replace</code> 清空重填</td>
 </tr>
 <tr>
-<td>Press keys</td>
+<td>按键</td>
 <td><code>browser_press</code></td>
-<td>Keyboard events such as Enter, Tab, Escape, and arrow keys</td>
+<td>键盘事件（Enter/Tab/Escape/方向键…）</td>
 </tr>
 <tr>
-<td>Scroll</td>
+<td>滚动</td>
 <td><code>browser_scroll</code></td>
-<td>Viewport scrolling: up, down, top, and bottom</td>
+<td>视口滚动（up/down/top/bottom）</td>
 </tr>
 <tr>
-<td>Navigate</td>
+<td>页面导航</td>
 <td><code>browser_navigate</code> / <code>browser_back</code> / <code>browser_forward</code> / <code>browser_reload</code></td>
-<td>In-tab navigation with login state preserved</td>
+<td>当前标签页内导航，保留登录态</td>
 </tr>
 <tr>
-<td>Read region</td>
+<td>读取区域</td>
 <td><code>browser_get_text</code></td>
-<td>Lazy-loaded or partial page text</td>
+<td>懒加载内容 / 局部文本</td>
 </tr>
 <tr>
-<td>Wait for stability</td>
+<td>等待稳定</td>
 <td><code>browser_wait</code></td>
-<td>Page-load and render-settle detection</td>
+<td>页面加载与渲染稳定检测</td>
 </tr>
 </tbody></table>
-<h3>Repository layout</h3>
+<h3>组成</h3>
 <pre><code>packages/browser/bridge-browser/
   cordis.patch.yml
 extensions/dsh-browser/
 scripts/install.sh
 </code></pre>
-<h3>Why this design</h3>
+<h3>为什么这样设计</h3>
 <ul>
-<li><strong>Your real browser, not a headless copy</strong>: the model works in the page you already have open, retaining logins, sessions, and cookies.</li>
-<li><strong>A text-first model interface</strong>: numbered controls, stable IDs across snapshots, delta updates, and masked sensitive values make pages operable without vision.</li>
-<li><strong>A narrow privacy boundary</strong>: passwords and payment-card values are always rendered as <code>••••</code> and never leave the page.</li>
-<li><strong>A guarded bridge</strong>: authenticated handshakes protect remote connections, privileged gateway methods reject non-loopback callers, and the extension only operates the active tab.</li>
+<li><strong>使用你的真实浏览器，而不是无头副本</strong>：模型操作你已经打开的页面，登录态、会话和 Cookie 均会保留。</li>
+<li><strong>纯文本模型接口</strong>：编号控件、跨快照稳定 ID、delta 更新和敏感值掩码，使模型无需视觉也能操作页面。</li>
+<li><strong>收窄隐私边界</strong>：密码和支付卡字段始终显示为 <code>••••</code>，字段值不会离开页面。</li>
+<li><strong>受保护的桥连接</strong>：远程连接使用认证握手，特权网关方法拒绝非回环调用方，扩展只操作活动标签页。</li>
 </ul>
-<h3>Zero-configuration install and use</h3>
-<p>Prerequisites: Node.js <code>^22.19</code> or <code>&gt;=24</code>, Corepack/pnpm, and Google Chrome. All required <code>@deepseek-ai</code> packages are available from the public npm registry; installation does not require an npm token.</p>
-<p><strong>Step 1 — install the bridge and extension</strong>. The recommended command does not require Git or a local clone:</p>
+<h3>安装与使用（零配置）</h3>
+<p>前提：Node.js <code>^22.19</code> 或 <code>&gt;=24</code>、Corepack/pnpm 和 Google Chrome。所需的 <code>@deepseek-ai</code> 包均已发布到公共 npm 注册表，安装不需要 npm token。</p>
+<p><strong>第一步：安装桥插件与扩展</strong>。推荐命令无需安装 Git，也无需提前 clone：</p>
 <pre><code class="language-sh">curl -fsSL https://raw.githubusercontent.com/Lum1104/dsh-browser/refs/heads/main/scripts/install.sh | bash
 </code></pre>
-<p>The remote installer downloads <code>main</code> into the installer-managed directory <code>~/.dsh/dsh-browser</code>, then installs the pinned public npm dependencies from the lockfile, builds the bridge plugin, registers its official bundle in dsh&#39;s local <code>web</code> profile, builds the extension, copies it to <code>~/.dsh/browser-extension</code>, and opens <code>chrome://extensions</code>. Enable Developer mode and load the extension directory when prompted. Running the same command again updates the managed installation; keep source edits in a clone instead.</p>
-<p>Developers can clone the repository and run the same installer from any checkout. This mode uses the current branch without downloading or overwriting source files:</p>
+<p>远程安装器会把 <code>main</code> 下载到脚本托管目录 <code>~/.dsh/dsh-browser</code>，然后按锁文件安装固定版本的公共 npm 依赖、构建桥插件、把它的官方 bundle 注册到 dsh 本机的 <code>web</code> profile、构建扩展、复制到 <code>~/.dsh/browser-extension</code>，并打开 <code>chrome://extensions</code>。按提示开启开发者模式并加载扩展目录即可。再次运行同一条命令会更新托管安装；如需修改源码，请使用 clone。</p>
+<p>开发者也可以 clone 仓库，并在任意 checkout 中运行同一个安装器。该模式直接使用当前分支，不会下载或覆盖源码：</p>
 <pre><code class="language-sh">git clone https://github.com/Lum1104/dsh-browser.git
 cd dsh-browser
 ./scripts/install.sh
 </code></pre>
-<p><strong>Step 2 — start dsh</strong>. For a managed installation, use its pinned version:</p>
+<p><strong>第二步：启动 dsh</strong>。托管安装可使用其中固定的版本：</p>
 <pre><code class="language-sh">cd ~/.dsh/dsh-browser &amp;&amp; pnpm start
 </code></pre>
-<p>From a clone, run <code>pnpm start</code> in the repository root instead.</p>
-<p>Or run the latest public release directly from npm:</p>
+<p>如果使用 clone，请改为在仓库根目录运行 <code>pnpm start</code>。</p>
+<p>或者直接运行 npm 上的最新公开版本：</p>
 <pre><code class="language-sh">npx @deepseek-ai/dsh web
 </code></pre>
-<p>Both commands load the same browser bundle from the local <code>web</code> profile. Port 3080 is used by default; if it is occupied, run <code>pnpm start -- --port &lt;port&gt;</code> or <code>npx @deepseek-ai/dsh web --port &lt;port&gt;</code>. When the DeepSeek whale icon appears in the toolbar, click it to open the side panel.</p>
-<p><strong>For subsequent use</strong>, the extension does not need to be installed again. Run either startup command above.</p>
-<p><strong>No configuration is required for local use</strong>: the extension discovers dsh through <code>/ext/bridge-config</code>, and loopback connections do not require a bridge token. This runtime security token is unrelated to npm authentication; an address and bridge token are only needed for remote deployment with <code>--host 0.0.0.0</code>.</p>
-<p><strong>Step 3 — use it</strong>: open any normal <code>http://</code> or <code>https://</code> page and click the DeepSeek whale icon. When the side panel reports &quot;Connected&quot;, chat normally or click &quot;Read page&quot; first. A page that was already open before the extension was installed or reloaded is instrumented automatically on the first action; no page refresh is needed. Browser-internal and protected pages such as <code>chrome://</code> and the Chrome Web Store cannot be read or operated.</p>
-<p>To update a managed installation, run the same <code>curl | bash</code> command again. To update a clone, pull or switch to the desired revision and run <code>./scripts/install.sh</code>. Then click Reload for &quot;dsh Browser Assistant&quot; in <code>chrome://extensions</code> and reopen the side panel. Chrome should load <code>~/.dsh/browser-extension</code>; do not load the source directory <code>extensions/dsh-browser/</code>.</p>
-<h3>Development</h3>
-<p>The bridge plugin and Chrome extension are both members of this repository&#39;s workspace. Run all commands from the repository root. For the first development installation, run <code>pnpm install</code>.</p>
+<p>两种命令都会从本机 <code>web</code> profile 加载同一个浏览器 bundle。默认端口为 3080；被占用时执行 <code>pnpm start -- --port &lt;port&gt;</code> 或 <code>npx @deepseek-ai/dsh web --port &lt;port&gt;</code>。工具栏出现 DeepSeek 鲸鱼图标后，点击即可打开侧边栏。</p>
+<p><strong>后续日常使用</strong>无需重新安装扩展，执行上述任一启动命令即可。</p>
+<p><strong>本机使用无需任何配置</strong>：扩展通过 <code>/ext/bridge-config</code> 自动发现 dsh，回环连接无需桥接 token。这个运行时安全 token 与 npm 认证无关；只有使用 <code>--host 0.0.0.0</code> 远程部署时才需要配置地址和桥接 token。</p>
+<p><strong>第三步：开始使用</strong>：打开任意普通的 <code>http://</code> 或 <code>https://</code> 页面，点击工具栏的 DeepSeek 鲸鱼图标打开侧边栏；状态显示「已连接」后，可以直接对话，也可以先点「读取页面」。页面即使早于扩展安装或重载就已经打开，也会在第一次操作时自动补加载内容脚本，无需刷新页面。<code>chrome://</code>、Chrome Web Store 等浏览器内置或受保护页面不能注入扩展脚本，因此不支持读取和操作。</p>
+<p>更新托管安装时，再次运行同一条 <code>curl | bash</code> 命令。更新 clone 时，拉取或切换到所需版本，再运行 <code>./scripts/install.sh</code>。然后到 <code>chrome://extensions</code> 对「dsh 浏览器助手」点一次重新加载并重新打开侧边栏。Chrome 应加载脚本提示的稳定目录 <code>~/.dsh/browser-extension</code>；不要加载仓库中的源码目录 <code>extensions/dsh-browser/</code>。</p>
+<h3>开发</h3>
+<p>桥接插件和 Chrome 扩展都属于本仓库 workspace；所有命令均在本仓库根目录执行。首次开发安装运行 <code>pnpm install</code>。</p>
 <pre><code class="language-sh">pnpm run build
 pnpm run typecheck
 pnpm run test
@@ -293,21 +293,21 @@ pnpm --filter @deepseek-ai/dsh-bridge-browser run test
 pnpm --filter dsh-browser-extension run build
 pnpm --filter dsh-browser-extension run test
 </code></pre>
-<p>Notes:</p>
+<p>注意：</p>
 <ul>
-<li>The bridge plugin must have a built <code>lib/</code> before startup because the loader consumes it; both <code>scripts/install.sh</code> and the root <code>pnpm run build</code> build the plugin before the extension.</li>
-<li>The dependencies of <code>@deepseek-ai/dsh</code> and the bridge plugin are pinned to the same tested public release line. An upgrade must update the manifests and lockfile together and rerun the root checks.</li>
+<li>启动前桥接插件必须已有 <code>lib/</code> 供 Loader 加载；<code>scripts/install.sh</code> 和根目录 <code>pnpm run build</code> 都会先构建插件再构建扩展。</li>
+<li><code>@deepseek-ai/dsh</code> 与桥接插件的依赖固定在同一条经过验证的公开发布线上；升级时必须同时更新 manifest、锁文件并重跑根目录检查。</li>
 </ul>
-<h3>Security</h3>
+<h3>安全</h3>
 <ul>
-<li>The bridge path sits outside the <code>/api</code> trust boundary and performs its own bearer-token authentication.</li>
-<li>Privileged gateway methods such as <code>settings.*</code>, <code>credentials.*</code>, and <code>host.open*</code> reject non-loopback sources.</li>
-<li>The model-facing pipeline is text-only; passwords and payment-card values never leave the page.</li>
-<li>Only the active tab is operated; the extension never switches tabs silently.</li>
+<li>桥路径在 <code>/api</code> 信任栅栏之外，自带 bearer token 认证。</li>
+<li>特权网关方法（<code>settings.*</code>/<code>credentials.*</code>/<code>host.open*</code>）对非回环来源一律拒绝。</li>
+<li>单活动连接；纯文本管线（无截图）；密码和卡号值永不回传。</li>
+<li>只操作活动标签页，绝不静默切页。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/Lum1104/dsh-browser/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Lum1104/dsh-browser/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

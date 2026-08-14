@@ -190,40 +190,40 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/ci.yml"><img src="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-<a href="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/dsh-compatibility.yml"><img src="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/dsh-compatibility.yml/badge.svg" alt="Latest DSH compatibility"></a>
+<a href="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/dsh-compatibility.yml"><img src="https://github.com/lonelymoon87/dsh-guardian/actions/workflows/dsh-compatibility.yml/badge.svg" alt="最新 DSH 兼容性"></a>
 <a href="https://github.com/lonelymoon87/dsh-guardian/releases/latest"><img src="https://img.shields.io/github/v/release/lonelymoon87/dsh-guardian" alt="Release"></a>
 <a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/LICENSE"><img src="https://img.shields.io/github/license/lonelymoon87/dsh-guardian" alt="License"></a></p>
-<p>Runtime dangerous-operation policy, canonical output redaction, and security-review workflow for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
-<p>The installable v0.1.2 release targets DSH 0.1.0-rc.6. This project currently distributes prebuilt packages through GitHub Releases and is not published on npm.</p>
-<p><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/README.zh-CN.md">简体中文</a></p>
+<p>面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的运行时危险操作策略、规范结果脱敏和安全审查工作流。</p>
+<p>可安装的 v0.1.2 面向 DSH 0.1.0-rc.6。本项目当前通过 GitHub Release 分发预构建包，尚未发布 npm 包。</p>
+<p><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/README.md">English</a></p>
 <h3>MVP</h3>
 <ul>
-<li>A <code>tools/pre-execute</code> waterfall classifies dangerous shell, SQL, and structured file-write arguments as <code>deny</code>, <code>ask</code>, or unchanged.</li>
-<li><code>standard</code>, <code>strict</code>, and <code>permissive</code> profiles provide different approval levels while retaining non-negotiable deny rules.</li>
-<li>Custom regular-expression rules add deployment-specific <code>deny</code> or <code>ask</code> decisions.</li>
-<li>A <code>tools/post-execute</code> waterfall redacts common credentials from canonical JSON results, failures, rendered text, and block feedback.</li>
-<li>Consecutive text blocks are scanned as one stream so splitting a credential across blocks does not bypass redaction.</li>
-<li><code>/security-review</code> loads a bundled, read-only security-review skill.</li>
+<li>在 <code>tools/pre-execute</code> waterfall 中检查 shell、SQL 和结构化文件写入参数，返回 <code>deny</code>、<code>ask</code> 或保持原决策；</li>
+<li>提供 <code>standard</code>、<code>strict</code> 和 <code>permissive</code> 三档策略，同时保留不可关闭的拒绝规则；</li>
+<li>允许用正则表达式添加部署环境专属的 <code>deny</code> 或 <code>ask</code> 规则；</li>
+<li>在 <code>tools/post-execute</code> waterfall 中对规范 JSON 结果、失败输出、渲染文本和拦截反馈做统一脱敏；</li>
+<li>把连续文本块作为一段内容扫描，避免通过跨块拆分密钥绕过检测；</li>
+<li><code>/security-review</code> 加载内置的只读安全审查技能。</li>
 </ul>
-<p>The MVP is not a process sandbox, authorization system, data-loss-prevention service, or substitute for the provider policies mounted below it.</p>
-<h3>Policy behavior</h3>
-<p>The built-in rules deny recursive forced deletion of root or home paths, network-response pipes into shells, raw writes to <code>/dev</code>, and writes to <code>/etc</code>. Force pushes, destructive SQL, and other recursive forced deletions ask for approval. Strict mode additionally asks for <code>sudo</code>; permissive mode retains only deny rules.</p>
-<p>Guardian always delegates through <code>next()</code>. When another policy listener returns a decision, the most restrictive result wins: <code>deny</code> outranks <code>ask</code>, which outranks <code>allow</code>.</p>
-<h3>Redaction behavior</h3>
-<p>Built-in patterns cover AWS access-key IDs, GitHub tokens, <code>sk-</code> API keys, PEM private-key blocks, and common credential assignments. Redaction is applied to the canonical JSON value when one exists, preserving arrays, objects, numbers, booleans, and null values. This prevents Code Mode and downstream renderers from retaining an unredacted value behind safe-looking display text.</p>
-<p>Logs contain only the tool name, match count, and redaction labels. The plugin does not append custom session events because the current external plugin API does not expose an ignorable event envelope; emitting a required unknown event would make old sessions unreadable after uninstall.</p>
-<h3>Install</h3>
-<p>The package currently targets DSH <code>0.1.0-rc.6</code> plugin APIs and Node.js <code>^22.19 || &gt;=24</code>.</p>
+<p>本插件不是进程沙箱、授权系统或完整的数据防泄漏服务，也不会取代下游 provider 已有的安全策略。</p>
+<h3>策略行为</h3>
+<p>内置规则会拒绝对根目录或用户目录执行递归强制删除、把网络响应直接管道传给 shell、向 <code>/dev</code> 写入原始数据以及写入 <code>/etc</code>。强制推送、破坏性 SQL 和其他递归强制删除会要求审批。严格模式还会要求审批 <code>sudo</code>，宽松模式只保留拒绝规则。</p>
+<p>Guardian 始终调用 <code>next()</code>。当其他策略监听器也返回决策时，插件保留更严格的结果，优先级依次为 <code>deny</code>、<code>ask</code>、<code>allow</code>。</p>
+<h3>脱敏行为</h3>
+<p>内置模式覆盖 AWS access key ID、GitHub token、<code>sk-</code> API key、PEM 私钥块和常见凭据赋值。存在规范 JSON 值时，插件优先脱敏该值，并保留数组、对象、数字、布尔值和 null 的结构。这样可以避免 Code Mode 或后续渲染器在安全显示文本背后继续持有未脱敏结果。</p>
+<p>日志只记录工具名、匹配数量和脱敏标签，不记录秘密内容。插件不会追加自定义会话事件，因为当前外部插件 API 无法声明 ignorable 事件信封。写入必须识别的未知事件会导致用户卸载插件后无法读取旧会话。</p>
+<h3>安装</h3>
+<p>当前代码面向 DSH <code>0.1.0-rc.6</code> 插件 API，要求 Node.js <code>^22.19 || &gt;=24</code>。</p>
 <pre><code class="language-sh">dsh plugin --profile web add https://github.com/lonelymoon87/dsh-guardian/releases/download/v0.1.2/dsh-guardian-0.1.2.tgz
 </code></pre>
-<p>The release tarball is prebuilt and needs no build allowance. A pinned source install is also supported:</p>
+<p>Release tarball 已预构建，不需要构建权限。也可以固定版本从源码安装。</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:lonelymoon87/dsh-guardian#v0.1.2
 </code></pre>
-<p>The source install runs this package&#39;s <code>prepare</code> build. pnpm 10 and later reject it until the profile allowlists the exact package key printed by the failed command; apply that instruction and rerun the same <code>dsh plugin add</code> command. Replace <code>web</code> with <code>headless</code> to install into the one-shot agent profile.</p>
-<p>To upgrade, rerun <code>dsh plugin add</code> with the newer release URL. To uninstall:</p>
+<p>源码安装会运行本包的 <code>prepare</code> 构建。pnpm 10 及以上版本默认拒绝执行，第一次安装失败时请按 DSH 输出的提示，将准确的包键加入 profile 的构建白名单，然后重新执行同一条命令。需要装进一次性 Agent profile 时，把命令中的 <code>web</code> 换成 <code>headless</code>。</p>
+<p>升级时用新版本的 Release URL 再执行一次 <code>dsh plugin add</code>。卸载时执行</p>
 <pre><code class="language-sh">dsh plugin --profile web remove dsh-guardian
 </code></pre>
-<h3>Configuration</h3>
+<h3>配置</h3>
 <pre><code class="language-yaml">- id: guardian
   name: dsh-guardian
   config:
@@ -239,20 +239,20 @@ footer p+p{margin-top:.5rem}
         - label: internal-token
           pattern: INT_[A-Z0-9]{12}
 </code></pre>
-<p>Regular-expression flags may contain only <code>i</code>, <code>m</code>, <code>s</code>, and <code>u</code>. Invalid expressions and labels fail during plugin loading.</p>
-<h3>Verification</h3>
-<p>The tests cover positive and negative cases for every built-in rule, structured paths, profile behavior, downstream policy composition, nested canonical values, custom credentials, block feedback, split text blocks, disabled redaction, command dispatch, and invalid configuration.</p>
+<p>正则 flags 只允许 <code>i</code>、<code>m</code>、<code>s</code> 和 <code>u</code>。表达式或标签无效时，插件会在加载阶段明确失败。</p>
+<h3>发布验证</h3>
+<p>测试覆盖全部内置规则的正反例、结构化路径、策略组合、嵌套规范值、自定义凭据、跨块秘密、禁用脱敏、命令分派和非法配置。</p>
 <ul>
-<li>The v0.1.2 tarball installs directly from its HTTPS release URL into a clean DSH profile.</li>
-<li>The packed bundle and pinned GitHub source install both appear in <code>dsh --dump-config</code>.</li>
-<li>CI covers Node 22.19 and Node 24; a scheduled workflow repeats the real install against <code>@deepseek-ai/dsh@latest</code>.</li>
-<li>Bugs and compatibility reports are tracked in <a href="https://github.com/lonelymoon87/dsh-guardian/issues">GitHub Issues</a>.</li>
+<li>v0.1.2 tarball 已从 HTTPS Release URL 直接安装进全新 DSH profile；</li>
+<li>pack 产物与固定版本 GitHub 源码安装均通过 <code>dsh --dump-config</code> 检查；</li>
+<li>CI 覆盖 Node 22.19 与 Node 24，定时任务会用 <code>@deepseek-ai/dsh@latest</code> 重跑真实安装；</li>
+<li>bug 与兼容性问题统一进入 <a href="https://github.com/lonelymoon87/dsh-guardian/issues">GitHub Issues</a>。</li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/lonelymoon87/dsh-guardian/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

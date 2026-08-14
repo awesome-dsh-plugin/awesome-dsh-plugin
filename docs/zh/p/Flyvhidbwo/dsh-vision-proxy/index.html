@@ -193,261 +193,261 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/Flyvhidbwo/dsh-vision-proxy/blob/main/README.md">English</a> | <a href="https://github.com/Flyvhidbwo/dsh-vision-proxy/blob/main/README.zh-CN.md">简体中文</a></p>
-<p><strong>Keep DeepSeek as the brain — paste images anyway.</strong> GUI image attachments auto-transcribed for text-only DeepSeek on <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
-<h3>Why this exists</h3>
-<p>DeepSeek Harness natively gates image attachments on the selected model&#39;s declared <code>inputModalities</code>. DeepSeek&#39;s chat-completions line is text-only, so attaching an image with DeepSeek selected is rejected by design. Tool-based vision plugins exist, but <strong>GUI image attachments still fail</strong> with a text-only model.</p>
-<p>This plugin closes that gap: it registers a new provider route (<code>deepseek-vision</code>) that wraps the real DeepSeek adapter, claims image input (so the preflight admits attachments), and <strong>transcribes every attached image to text in the request stream</strong> before delegating to DeepSeek. The conversation is still answered by DeepSeek; vision is an add-on.</p>
-<pre><code>user attaches image ──▶ deepseek-vision route ──▶ transcribe via VLM (OCR + layout + details)
-                          │                          │
-                          ▼                          ▼
-                   DeepSeek answers ◀── text-only conversation (images replaced by [图片转译] text)
+<p><strong>保持 DeepSeek 作为对话大脑，图片照样直接发。</strong> 为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 打造：GUI 附加图片自动转译，纯文本 DeepSeek 也能识图。</p>
+<h3>为什么需要它</h3>
+<p>DeepSeek Harness 原生按模型声明的 <code>inputModalities</code> 决定是否放行图片附件。DeepSeek 的 chat-completions 线路是纯文本的，所以选中 DeepSeek 时附加图片会被原生拒绝。已有的视觉插件提供 <code>view_image</code> 等<em>工具</em>（适用于文件路径），但 <strong>GUI 图片附件对纯文本模型依然失败</strong>。</p>
+<p>本插件补上这个缺口：注册一条新提供商路由（<code>deepseek-vision</code>），包装真正的 DeepSeek 适配器——对外声明支持图片输入（附件预检放行），并在请求流里<strong>把每张附加图片转译成文字</strong>后再委托给 DeepSeek。对话仍然由 DeepSeek 作答，识图只是附加能力。</p>
+<pre><code>用户附加图片 ──▶ deepseek-vision 路由 ──▶ 经 VLM 转译（OCR+版式+细节）
+                   │                        │
+                   ▼                        ▼
+            DeepSeek 作答 ◀── 纯文本对话（图片已替换为 [图片转译] 文字）
 </code></pre>
-<h3>Features</h3>
+<h3>特性</h3>
 <ul>
-<li><strong>No hangs, ever.</strong> Anonymous endpoints are hard-capped at 20 s (a hanging free tier can no longer stall a turn for minutes); HTTP 429 on anonymous endpoints fails immediately instead of sleeping on a useless <code>Retry-After</code>; endpoints that just failed (429/timeout) are cooled down for 60 s and skipped.</li>
-<li><strong>Multi-model, multi-provider.</strong> Any OpenAI-compatible VLM endpoint works — DashScope/Qwen, QwenCloud (international), Zhipu, OpenRouter, local Ollama, or your own. Each <code>fallbackModels</code> entry can carry its <strong>own</strong> <code>baseURL</code>/<code>model</code>, so one install can chain providers.</li>
-<li><strong>Zero-config local path.</strong> With <code>autoLocalOllama</code> (default on), a running Ollama at <code>http://localhost:11434</code> is detected at startup and prepended to the fallback chain — images never leave your machine. No key, no account.</li>
-<li><strong>Fast, clear failures.</strong> With no key and no local Ollama, transcription fails in seconds with actionable guidance (configure <code>VISION_API_KEY</code> / <code>DASHSCOPE_API_KEY</code> or install Ollama) — never a silent stall.</li>
-<li><strong>Automatic upgrade when you have a key.</strong> Export <code>VISION_API_KEY</code> / <code>DASHSCOPE_API_KEY</code> and your configured paid endpoint is used automatically (default: DashScope <code>qwen3.7-flash</code> — fast, cheap, no rate limit; DashScope, QwenCloud, Zhipu, OpenRouter, or any OpenAI-compatible endpoint all work); keyless entries are skipped, not failed.</li>
-<li><strong>Install-time consent prompt.</strong> <code>postinstall</code> asks whether you have a VLM API key. Non-interactive environments skip the prompt; the install never hangs. A PRIVACY NOTICE is printed at startup naming the active endpoint.</li>
-<li><strong>Fallback chain with classified errors.</strong> <code>rate_limit</code> / <code>quota</code> / <code>auth</code> / <code>region</code> / <code>model_not_found</code> / <code>context_too_large</code> / <code>http</code> are classified with actionable hints.</li>
-<li><strong>Content-hash cache.</strong> Transcriptions are cached by the SHA-256 of the image bytes (in-process, capped at 200) — the same image is transcribed at most once per process, even re-attached or in another conversation.</li>
-<li><strong>Auto-downscale (optional).</strong> With <code>sharp</code> installed, images above <code>maxImagePixels</code> are downscaled before transcription — fewer image tokens, much faster on big screenshots. Degrades gracefully without sharp.</li>
-<li><strong><code>read_image</code> compatible.</strong> The native <code>read_image</code> tool also works on this route (its capability gate reads the same model info).</li>
+<li><strong>绝不卡死</strong>。匿名端点强制 20 秒超时上限（免费档挂起也拖不住整轮对话）；匿名端点遇到 HTTP 429 <strong>立即失败</strong>（不做无意义的 Retry-After 等待）；刚失败（429/超时）的端点进入 60 秒冷却并被跳过。</li>
+<li><strong>多模型、多厂商</strong>。任何 OpenAI 兼容 VLM 端点都行——百炼/Qwen、QwenCloud 国际站、智谱、OpenRouter、本地 Ollama、或你自己的端点。每条 <code>fallbackModels</code> 都可以带<strong>各自独立的</strong> <code>baseURL</code>/<code>model</code>，一个安装即可串联多家。</li>
+<li><strong>零配置本地路径</strong>。<code>autoLocalOllama</code>（默认开）启动时探测 <code>http://localhost:11434</code>，检测到 Ollama 就自动加入降级链——图片不出本机，免 key 免注册。</li>
+<li><strong>快速且明确的失败</strong>。没有 key 也没有本地 Ollama 时，转译在几秒内失败并给出可操作指引（配置 <code>VISION_API_KEY</code> / <code>DASHSCOPE_API_KEY</code> 或安装 Ollama）——绝不静默卡住。</li>
+<li><strong>有 key 自动提速</strong>。导出 <code>VISION_API_KEY</code> / <code>DASHSCOPE_API_KEY</code> 后自动走你配置的付费端点（默认百炼 <code>qwen3.7-flash</code>——快、便宜、不限速；百炼/QwenCloud/智谱/OpenRouter 或任意 OpenAI 兼容端点均可）；没有 key 的条目会被<strong>跳过</strong>而不是失败。</li>
+<li><strong>安装时一问式确认</strong>。<code>postinstall</code> 询问你是否有 VLM API key。非交互环境自动跳过，安装永不卡死。启动时打印 PRIVACY NOTICE 标明当前使用的端点。</li>
+<li><strong>降级链 + 错误分类</strong>。<code>rate_limit</code> / <code>quota</code> / <code>auth</code> / <code>region</code> / <code>model_not_found</code> / <code>context_too_large</code> / <code>http</code> 分类给出可操作提示。</li>
+<li><strong>内容哈希缓存</strong>。转译结果按图片字节的 SHA-256 缓存（进程内，上限 200）——同一张图每个进程最多转译一次，重新附加或换对话也命中。</li>
+<li><strong>自动降采样（可选）</strong>。装有 <code>sharp</code> 时，超过 <code>maxImagePixels</code> 的图片转译前自动缩小——大截图更快；没有 sharp 则优雅降级原图直发。</li>
+<li><strong>兼容 <code>read_image</code></strong>。原生 <code>read_image</code> 工具在该路由下同样可用（它的能力门禁读取同一份模型信息）。</li>
 </ul>
-<h3>Supported models &amp; providers</h3>
-<p>One config (<code>baseURL</code> + <code>model</code>, optionally <code>apiKey</code>) covers every backend:</p>
+<h3>支持的模型与厂商</h3>
+<p>一套配置（<code>baseURL</code> + <code>model</code>，可选 <code>apiKey</code>）覆盖所有后端：</p>
 <table>
 <thead>
 <tr>
-<th>Scenario</th>
+<th>场景</th>
 <th>baseURL</th>
 <th>model</th>
-<th>Notes</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>DashScope (China)</strong> — default main</td>
+<td><strong>百炼（国内）</strong>——默认主模型</td>
 <td><code>https://dashscope.aliyuncs.com/compatible-mode/v1</code></td>
 <td><code>qwen3.7-flash</code> / <code>qwen3-vl-flash</code></td>
-<td>Cheap, fast, no rate limit. Keys: <code>sk-ws-…</code> from <a href="https://platform.qianwenai.com">platform.qianwenai.com</a> or <code>sk-…</code> from <a href="https://bailian.console.aliyun.com">bailian.console.aliyun.com</a></td>
+<td>便宜、快、不限速。密钥：千问平台 <code>sk-ws-…</code> 或百炼 <code>sk-…</code></td>
 </tr>
 <tr>
-<td><strong>Local Ollama (auto-detected)</strong></td>
+<td><strong>本地 Ollama（自动探测）</strong></td>
 <td><code>http://localhost:11434/v1</code></td>
-<td>first vision-capable model</td>
-<td>Zero config when installed; images never leave the machine</td>
+<td>第一个视觉模型</td>
+<td>装了就零配置可用；图片不出本机</td>
 </tr>
 <tr>
-<td><strong>QwenCloud (intl.)</strong></td>
+<td><strong>QwenCloud（国际）</strong></td>
 <td><code>https://dashscope-intl.aliyuncs.com/compatible-mode/v1</code></td>
-<td><code>qwen3-vl-plus</code> etc.</td>
-<td>International variant</td>
+<td><code>qwen3-vl-plus</code> 等</td>
+<td>国际版</td>
 </tr>
 <tr>
-<td><strong>Zhipu (free tier)</strong></td>
+<td><strong>智谱（免费档）</strong></td>
 <td><code>https://open.bigmodel.cn/api/paas/v4</code></td>
 <td><code>glm-4.6v-flash</code></td>
-<td>Free tier, still needs a (free) Zhipu API key</td>
+<td>免费档仍需注册智谱（免费）key</td>
 </tr>
 <tr>
-<td><strong>Anything OpenAI-compatible</strong></td>
-<td>your endpoint</td>
-<td>your model</td>
-<td>OpenRouter, Ark, vLLM, gateways… the plugin only speaks <code>/chat/completions</code></td>
+<td><strong>任意 OpenAI 兼容端点</strong></td>
+<td>你的端点</td>
+<td>你的模型</td>
+<td>OpenRouter、火山 Ark、vLLM、各类网关……插件只讲 <code>/chat/completions</code></td>
 </tr>
 </tbody></table>
 <blockquote>
-<p>⚠️ <strong>Anonymous third-party free tiers are NOT bundled as a default fallback.</strong> In field testing, anonymous free endpoints (e.g. OVHcloud AI Endpoints) were strictly rate-limited AND occasionally hung without a response — as a default they just reproduce a broken experience. If you still want to point at one, add it yourself via <code>fallbackModels</code> with <code>anonymous: true</code> (the 20 s cap still applies).</p>
+<p>⚠️ <strong>不再内置任何第三方匿名免费端点作为默认兜底</strong>。实测中匿名免费端点（如 OVHcloud AI Endpoints）限速极严且会无响应挂起——作为默认只会复现&quot;卡死&quot;体验。如果你仍想用某个匿名端点，请通过 <code>fallbackModels</code> 自行添加并设 <code>anonymous: true</code>（20 秒超时上限依然生效）。</p>
 </blockquote>
-<p><strong>Key resolution order</strong>: config <code>apiKey</code> → <code>$VISION_API_KEY</code> → <code>$DASHSCOPE_API_KEY</code>. Anonymous endpoints (<code>anonymous: true</code>) and local hosts need no key; keyless non-anonymous entries are skipped automatically.</p>
-<h3>Quick start</h3>
+<p><strong>key 读取顺序</strong>：配置 <code>apiKey</code> → <code>$VISION_API_KEY</code> → <code>$DASHSCOPE_API_KEY</code>。匿名端点（<code>anonymous: true</code>）和本地主机无需 key；无 key 的非匿名条目自动跳过。</p>
+<h3>快速开始</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-vision-proxy
 </code></pre>
-<p>During install you are asked one question — <em>do you have a VLM API key?</em> Answer <code>y</code> for the paid fast path, or <code>N</code> (default) for the local/zero-config path. Restart <code>dsh web</code>, pick <strong>DeepSeek + 自动识图</strong> in the model selector, then paste an image into any conversation.</p>
-<p><strong>pnpm ≥ 10 blocks dependency build scripts by default</strong> — the first install exits non-zero with <code>Ignored build scripts: dsh-vision-proxy, sharp</code>. Approve both (the plugin&#39;s consent prompt and <code>sharp</code>&#39;s optional binary), then re-run the install to finish bundle registration:</p>
-<pre><code class="language-yaml"># in the profile&#39;s pnpm-workspace.yaml
+<p>安装时会问你一个问题——<em>你有 VLM API key 吗？</em> 回答 <code>y</code> 走付费快速通道，回答 <code>N</code>（默认）走本地/零配置路径。重启 <code>dsh web</code>，在模型选择器里选 <strong>DeepSeek + 自动识图</strong>，然后把图片粘贴进任意对话——完事。</p>
+<p><strong>pnpm ≥ 10 默认拦截依赖构建脚本</strong>——首次安装会以非零码退出并提示 <code>Ignored build scripts: dsh-vision-proxy, sharp</code>。请批准两者（插件的安装确认提示 + <code>sharp</code> 的可选二进制），然后<strong>重跑一次安装</strong>完成 bundle 注册：</p>
+<pre><code class="language-yaml"># 写在 profile 的 pnpm-workspace.yaml 里
 allowBuilds:
   dsh-vision-proxy: true
   sharp: true
 </code></pre>
-<pre><code class="language-sh">dsh plugin --profile web add dsh-vision-proxy   # re-run after approving
+<pre><code class="language-sh">dsh plugin --profile web add dsh-vision-proxy   # 批准后重跑
 </code></pre>
 <blockquote>
-<p><strong>Slow npm registry in China?</strong> <code>dsh plugin --profile web add dsh-vision-proxy --registry=https://registry.npmmirror.com</code> (the flag is forwarded to pnpm).</p>
+<p><strong>npm 官方源太慢？</strong> <code>dsh plugin --profile web add dsh-vision-proxy --registry=https://registry.npmmirror.com</code>（参数会转发给 pnpm）。</p>
 </blockquote>
-<h3>Live demo: a real GUI image turn</h3>
-<p>A real conversation on the <code>deepseek-vision</code> route (DeepSeek-V4-Flash as the brain): the user pasted a meme and asked <strong>&quot;你看到了什么&quot;</strong> (what do you see?); the image was auto-transcribed by the VLM and DeepSeek answered from the text — one step, ~7.6 s.</p>
-<p><em>Left: the model picker showing the <code>deepseek-vision</code> route (<strong>DeepSeek + 自动识图</strong>) selected — that is what admits image attachments. Right: DeepSeek&#39;s full answer derived from the transcribed image text.</em></p>
-<pre><code>user pastes a meme image + &quot;你看到了什么&quot;
-  → image block auto-transcribed via the VLM (OCR + layout):
-      &quot;我是吃白饭的 / 蓝色大肥鱼！ (理直气壮.jpg) — Q-version blue-haired maid girl
-       with a whale tail, holding a bowl of rice and chopsticks, excited expression&quot;
-  → DeepSeek answers with a full visual analysis of the meme
+<h3>现场演示：真实对话中的识图</h3>
+<p>一段 <code>deepseek-vision</code> 路由上的真实对话（DeepSeek-V4-Flash 作为大脑）：用户粘贴了一张表情包并问 <strong>&quot;你看到了什么&quot;</strong>，图片被 VLM 自动转译，DeepSeek 基于文字完整作答——单步，约 7.6 秒。</p>
+<p><em>左图：模型选择器显示 <code>deepseek-vision</code> 路由（<strong>DeepSeek + 自动识图</strong>）已选中——这正是图片附件得以放行的原因。右图：DeepSeek 基于转译文字给出的完整回答。</em></p>
+<pre><code>用户粘贴表情包 + &quot;你看到了什么&quot;
+  → 图片块经 VLM 自动转译（OCR + 版式）：
+      &quot;我是吃白饭的 / 蓝色大肥鱼！ (理直气壮.jpg) — Q版蓝发女仆装少女，
+       身后蓝鲸尾巴，端碗举筷，表情兴奋&quot;
+  → DeepSeek 基于文字对表情包做完整视觉分析
 </code></pre>
-<p>Two autonomous paths are covered: the <code>view_image</code> tool (any route, file paths &amp; URLs) and image-block auto-transcription (on the <code>deepseek-vision</code> route — images you attach mid-conversation).</p>
-<h3>Configuration</h3>
-<p>The bundle already ships sensible defaults (see the strategy above) — you normally don&#39;t need to configure anything. To override them in your profile, use an <strong>id-targeted override</strong>, NOT an <code>insert</code> (see the warning below):</p>
-<pre><code class="language-yaml"># $DSH_HOME/profiles/web/cordis.patch.yml — user-layer override example
+<p>两条自主路径都覆盖：<code>view_image</code> 工具（任意路由，支持文件路径与 URL）和图片块自动转译（<code>deepseek-vision</code> 路由——对话中途附加的图片）。</p>
+<h3>配置</h3>
+<p>bundle 已自带合理的默认配置（见上方策略说明），一般无需改动。要覆盖时，请在 profile 中写 <strong>id 定向覆盖</strong>，不要用 <code>insert</code>（见下方警告）：</p>
+<pre><code class="language-yaml"># $DSH_HOME/profiles/web/cordis.patch.yml —— 用户层覆盖示例
 - id: dsh-vision-proxy
   name: &#39;dsh-vision-proxy&#39;
   config:
     baseURL: https://dashscope.aliyuncs.com/compatible-mode/v1
-    apiKey: &#39;sk-…&#39;          # or leave &#39;&#39; to read env vars (writing it here is the reliable way on Windows)
+    apiKey: &#39;sk-…&#39;          # 或留空读环境变量（Windows 下直写这里最可靠）
     model: qwen3.7-flash
     maxTokens: 4096
-    timeoutMs: 120000       # anonymous endpoints are hard-capped at 20 s anyway
+    timeoutMs: 120000       # 匿名端点无论如何都会被强制 20s 上限
     maxImagePixels: 4000000
     marker: &#39;[图片转译]&#39;
     autoLocalOllama: true
-    fallbackModels: []      # add your own {model, baseURL, apiKey?, anonymous?, timeoutMs?}
+    fallbackModels: []      # 可自行添加 {model, baseURL, apiKey?, anonymous?, timeoutMs?}
 </code></pre>
 <blockquote>
-<p>⚠️ <strong>Do NOT write this as <code>- insert: [{id: dsh-vision-proxy, …}]</code>.</strong> In dsh&#39;s patch semantics an <code>insert</code> <strong>appends</strong> entries to the list — the bundle&#39;s own entry and yours (same id) would both be instantiated, registering the <code>deepseek-vision</code> adapter <strong>twice</strong> (undefined behavior). A top-level <code>- id:</code> entry targets the existing row and <strong>replaces its whole <code>config</code></strong>; keys you omit fall back to the plugin schema&#39;s <code>.default()</code> values (e.g. <code>maxTokens=4096</code>, <code>timeoutMs=120000</code>, <code>autoLocalOllama=true</code>), so writing only <code>apiKey</code>/<code>model</code> also works.</p>
+<p>⚠️ <strong>不要写成 <code>- insert: [{id: dsh-vision-proxy, …}]</code>。</strong> dsh 的 patch 语义里 <code>insert</code> 是往条目列表<strong>追加</strong>——bundle 自带的条目和你写的同 id 条目会同时存在并被实例化，<code>deepseek-vision</code> adapter 会被<strong>注册两次</strong>（行为未定义）。顶层 <code>- id:</code> 条目才会命中既有行并<strong>整体替换其 <code>config</code></strong>；未列出的键回落到插件 zod schema 的 <code>.default()</code> 值（如 <code>maxTokens=4096</code>、<code>timeoutMs=120000</code>、<code>autoLocalOllama=true</code>），所以只写 <code>apiKey</code>/<code>model</code> 也能工作。</p>
 </blockquote>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>键</th>
+<th>默认值</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>providerId</code></td>
 <td><code>deepseek-vision</code></td>
-<td>Route id shown in the model picker</td>
+<td>模型选择器中显示的路由 id</td>
 </tr>
 <tr>
 <td><code>innerProvider</code></td>
 <td><code>deepseek-official</code></td>
-<td>Existing adapter route to wrap</td>
+<td>被包装的现有适配器路由</td>
 </tr>
 <tr>
 <td><code>baseURL</code></td>
-<td>DashScope compatible-mode</td>
-<td>OpenAI-compatible VLM endpoint (any vendor, Ollama included)</td>
+<td>DashScope 兼容模式</td>
+<td>OpenAI 兼容 VLM 端点（任意厂商，含 Ollama）</td>
 </tr>
 <tr>
 <td><code>apiKey</code></td>
 <td><code>&#39;&#39;</code></td>
-<td>VLM key; falls back to <code>$VISION_API_KEY</code>, then <code>$DASHSCOPE_API_KEY</code>. On Windows, environment changes may not reach a running dsh — writing <code>apiKey</code> here is the reliable way</td>
+<td>VLM 密钥；回退读取 <code>$VISION_API_KEY</code>，再回退 <code>$DASHSCOPE_API_KEY</code>。<strong>Windows 下环境变量变更可能不生效，直写这里最可靠</strong></td>
 </tr>
 <tr>
 <td><code>anonymous</code></td>
 <td><code>false</code></td>
-<td>Skip the Authorization header (for registration-free endpoints; 20 s timeout cap applies)</td>
+<td>跳过 Authorization 头（用于免注册端点；受 20s 超时上限约束）</td>
 </tr>
 <tr>
 <td><code>model</code></td>
 <td><code>qwen3.7-flash</code></td>
-<td>Vision model id (e.g. <code>Qwen2.5-VL-72B-Instruct</code>, <code>qwen3-vl-flash</code>, <code>glm-4.6v-flash</code>, <code>qwen3-vl:4b</code>)</td>
+<td>视觉模型 id（如 <code>Qwen2.5-VL-72B-Instruct</code>、<code>qwen3-vl-flash</code>、<code>glm-4.6v-flash</code>、<code>qwen3-vl:4b</code>）</td>
 </tr>
 <tr>
 <td><code>maxTokens</code></td>
 <td><code>4096</code></td>
-<td>VLM output cap (thinking models spend tokens on reasoning first)</td>
+<td>VLM 输出上限（思考型模型先耗推理 token，预算给足）</td>
 </tr>
 <tr>
 <td><code>timeoutMs</code></td>
 <td><code>120000</code></td>
-<td>VLM request timeout (anonymous endpoints are capped at 20 s regardless)</td>
+<td>VLM 请求超时（匿名端点无论如何都被强制 20s 上限）</td>
 </tr>
 <tr>
 <td><code>maxImagePixels</code></td>
 <td><code>4000000</code></td>
-<td>Images above this are downscaled before transcription when <code>sharp</code> is installed (0 disables)</td>
+<td>超过该像素数的图片转译前自动降采样（装有 <code>sharp</code> 时；0 关闭）</td>
 </tr>
 <tr>
 <td><code>marker</code></td>
 <td><code>[图片转译]</code></td>
-<td>Marker prepended to each transcription</td>
+<td>每条转译文本前加的前缀标记</td>
 </tr>
 <tr>
 <td><code>autoLocalOllama</code></td>
 <td><code>true</code></td>
-<td>Probe <code>http://localhost:11434</code> at startup; when found, prepend it to the fallback chain</td>
+<td>启动时探测 <code>http://localhost:11434</code>；检测到则前置进降级链</td>
 </tr>
 <tr>
 <td><code>localOllamaModel</code></td>
 <td><code>&#39;&#39;</code></td>
-<td>Ollama model id; empty picks the first vision-capable model the local Ollama reports</td>
+<td>指定 Ollama 模型 id；留空自动选本地 Ollama 报告的第一个视觉模型</td>
 </tr>
 <tr>
 <td><code>fallbackModels</code></td>
 <td><code>[]</code></td>
-<td>Ordered fallback list <code>{model, baseURL?, apiKey?, anonymous?, timeoutMs?}</code> — each entry may point at a <strong>different provider</strong>; keyless non-anonymous entries are skipped</td>
+<td>降级链：<code>{model, baseURL?, apiKey?, anonymous?, timeoutMs?}</code>，每条可指向<strong>不同厂商</strong>；无 key 的非匿名条目自动跳过</td>
 </tr>
 </tbody></table>
 <blockquote>
-<p><strong>About API keys on Windows</strong>: <code>dsh --profile &lt;name&gt; --dump-config</code> prints the composed config as-is (so a key in <code>cordis.patch.yml</code> shows in plaintext dumps), but environment variables set after a process started (explorer.exe caches them) may never reach a running dsh. If you see <code>skipped — no API key</code> despite having exported the key, <strong>write <code>apiKey</code> directly into the plugin config</strong> — it is the only reliable path on Windows. (Note: dsh rc.6 does NOT load <code>.env</code> files, so that is not an alternative.)</p>
+<p><strong>Windows 上关于 API key 的说明</strong>：<code>dsh --profile &lt;name&gt; --dump-config</code> 会原样打印组合后的配置（写在 <code>cordis.patch.yml</code> 里的 key 会出现在明文输出中），但另一方面，进程启动后设置的环境变量（explorer.exe 会缓存旧环境）可能永远到不了正在运行的 dsh。如果你明明导出了 key 却看到 <code>skipped — no API key</code>，<strong>请把 <code>apiKey</code> 直接写进插件配置</strong>——这是 Windows 上唯一可靠的方式。（注意：dsh rc.6 <strong>不加载 <code>.env</code> 文件</strong>，那不是替代方案。）</p>
 </blockquote>
-<h3>Verify the install</h3>
-<pre><code class="language-sh">dsh --profile web --dump-config | grep -A3 dsh-vision-proxy   # exactly ONE entry (note: dumps config in plaintext, key included)
+<h3>安装后验证</h3>
+<pre><code class="language-sh">dsh --profile web --dump-config | grep -A3 dsh-vision-proxy   # 应恰好一个条目（注意：会明文打印配置，含 key）
 </code></pre>
 <ol>
-<li>Restart <code>dsh web</code> → the model picker shows <strong>DeepSeek + 自动识图</strong>.</li>
-<li>Paste an image into a conversation → you should see the <code>[图片转译]</code> marker followed by DeepSeek&#39;s answer.</li>
-<li>With no key and no local Ollama, the turn should fail <strong>fast</strong> (seconds) with the guidance message — that is the intended no-hang behavior.</li>
+<li>重启 <code>dsh web</code> → 模型选择器出现 <strong>DeepSeek + 自动识图</strong>。</li>
+<li>向对话粘贴图片 → 应看到 <code>[图片转译]</code> 标记后 DeepSeek 作答。</li>
+<li>没有 key 也没有本地 Ollama 时，回合应在<strong>数秒内快速失败</strong>并给出指引消息——这就是预期的防卡死行为。</li>
 </ol>
-<h3>Behavior notes</h3>
+<h3>行为说明</h3>
 <ul>
-<li>Only messages containing image blocks are touched; plain-text conversations hit DeepSeek with zero overhead.</li>
-<li>Anonymous endpoints: 20 s hard timeout cap, HTTP 429 fails immediately (no retry), failures arm a 60 s endpoint cooldown — consecutive images don&#39;t re-hit a broken endpoint.</li>
-<li>The request only fails after every chain entry failed, with one error listing each attempt plus actionable guidance.</li>
-<li>Transcription results are cached in-process by image content hash (never persisted).</li>
-<li>On startup the plugin logs a one-line summary — route id, wrapped provider, VLM model, endpoint, timeout, maxTokens, apiKey source and fallback list (the key itself is never logged), plus a PRIVACY NOTICE and a local-Ollama detection line.</li>
-<li>Tested: 14 unit tests on Node 22 and 24 via GitHub Actions (incl. no-hang fast-fail, cooldown skip, and Ollama detection).</li>
-<li>Transcription quality: dense UI screenshots may lose small text details — that is the vision model&#39;s capability ceiling, not a plugin bug. For OCR-heavy work, use a stronger model (e.g. <code>qwen3-vl-plus</code>) or raise <code>maxTokens</code>.</li>
+<li>只有含图片块的消息才会被处理；纯文本对话零开销直达 DeepSeek。</li>
+<li>匿名端点：20 秒硬超时上限、HTTP 429 立即失败（不重试）、失败后触发 60 秒端点冷却——连发图片不会反复踩坏端点。</li>
+<li>全部链路条目都失败才报错，错误会列出每一次尝试并附可操作指引。</li>
+<li>转译结果按图片内容哈希进程内缓存（永不落盘）。</li>
+<li>启动时打印一行摘要——路由 id、被包装的提供商、VLM 模型、端点、超时、maxTokens、key 来源与降级列表（key 本身从不打印），外加 PRIVACY NOTICE 和 Ollama 探测结果。</li>
+<li>测试：14 个单测，GitHub Actions 在 Node 22/24 上运行（含防卡死快速失败、冷却跳过、Ollama 探测用例）。</li>
+<li>转译质量：密集 UI 截图可能丢失小字细节——这是视觉模型的能力上限，不是插件 bug。OCR 重度场景建议换更强模型（如 <code>qwen3-vl-plus</code>）或调大 <code>maxTokens</code>。</li>
 </ul>
-<h3>Troubleshooting</h3>
+<h3>排障</h3>
 <table>
 <thead>
 <tr>
-<th>Symptom</th>
-<th>Cause &amp; fix</th>
+<th>现象</th>
+<th>原因与解决</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>skipped — no API key</code> despite exporting <code>VISION_API_KEY</code></td>
-<td>Windows caches environment variables in explorer.exe; the running dsh never saw them. Write <code>apiKey</code> directly into the plugin config, then restart dsh</td>
+<td>明明导出了 <code>VISION_API_KEY</code> 仍报 <code>skipped — no API key</code></td>
+<td>Windows 在 explorer.exe 里缓存环境变量，运行中的 dsh 读不到新值。把 <code>apiKey</code> 直写进插件配置，重启 dsh</td>
 </tr>
 <tr>
-<td><code>Ignored build scripts: dsh-vision-proxy, sharp</code> on install</td>
-<td>pnpm ≥ 10 blocks dependency build scripts. Add <code>allowBuilds: {dsh-vision-proxy: true, sharp: true}</code> to the profile&#39;s <code>pnpm-workspace.yaml</code>, then re-run the install</td>
+<td>安装时报 <code>Ignored build scripts: dsh-vision-proxy, sharp</code></td>
+<td>pnpm ≥ 10 默认拦截依赖构建脚本。在 profile 的 <code>pnpm-workspace.yaml</code> 加 <code>allowBuilds: {dsh-vision-proxy: true, sharp: true}</code>，然后重跑安装</td>
 </tr>
 <tr>
-<td><code>ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION</code> on a fresh release day</td>
-<td>pnpm 11 defaults <code>minimumReleaseAge</code> to 1 day (supply-chain policy). Add <code>minimumReleaseAge: 0</code> to the profile&#39;s <code>pnpm-workspace.yaml</code>, or pass <code>--config.minimum-release-age=0</code> to <code>dsh plugin add</code>, then re-run</td>
+<td>发布当天安装报 <code>ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION</code></td>
+<td>pnpm 11 默认 <code>minimumReleaseAge</code> 为 1 天（供应链策略）。在 profile 的 <code>pnpm-workspace.yaml</code> 加 <code>minimumReleaseAge: 0</code>，或给 <code>dsh plugin add</code> 加 <code>--config.minimum-release-age=0</code>，然后重跑</td>
 </tr>
 <tr>
-<td><code>all N vision model(s) failed … rate_limit</code> on an anonymous endpoint</td>
-<td>Anonymous free tiers are strictly rate-limited and may hang. Configure a key or use local Ollama</td>
+<td>匿名端点报 <code>all N vision model(s) failed … rate_limit</code></td>
+<td>匿名免费档限速极严且可能挂起。配置 key 或改用本地 Ollama</td>
 </tr>
 <tr>
-<td>Turn stalls ~20 s then fails on a fresh install with no key</td>
-<td>No key and no local Ollama — that is the intended fast-fail path. Install Ollama or add a key</td>
+<td>新装无 key 时约 20 秒后失败</td>
+<td>没有 key 也没有本地 Ollama——这是预期的快速失败路径。安装 Ollama 或配置 key</td>
 </tr>
 <tr>
-<td>Slow downloads from registry.npmjs.org</td>
-<td>Use <code>--registry=https://registry.npmmirror.com</code> (forwarded to pnpm)</td>
+<td>npm 官方源下载慢</td>
+<td>使用 <code>--registry=https://registry.npmmirror.com</code>（参数转发给 pnpm）</td>
 </tr>
 </tbody></table>
-<h3>Privacy</h3>
-<p>Transcription sends image bytes (base64, over HTTPS) to the configured VLM endpoint — <strong>the image data leaves your machine</strong> unless <code>baseURL</code> points at a local service (e.g. Ollama). Nothing is stored beyond the harness&#39;s own attachment store. For sensitive images, use your own endpoint or a local model — or don&#39;t install.</p>
-<h3>How it works (for plugin developers)</h3>
-<p>The plugin uses only public harness seams, stable on rc.6:</p>
+<h3>隐私</h3>
+<p>转译会把图片字节（base64，HTTPS）发送到配置的 VLM 端点——<strong>图片数据会离开你的机器</strong>，除非 <code>baseURL</code> 指向本地服务（如 Ollama）。除 harness 自身的附件存储外不持久化任何东西。敏感图片请使用自己的端点或本地模型——或者不安装本插件。</p>
+<h3>实现原理（给插件开发者）</h3>
+<p>本插件只使用 rc.6 上稳定的公共接口：</p>
 <ul>
-<li><code>ctx.llm.registration(innerProvider).adapter</code> — reach the wrapped adapter;</li>
-<li><code>ctx.llm.registerAdapter([providerId], proxyAdapter)</code> — register a NEW route (no <code>DUPLICATE_ADAPTER</code> conflict);</li>
-<li>proxy <code>resolveModel</code> overrides <code>inputModalities</code> to <code>[&#39;text&#39;, &#39;image&#39;]</code> — satisfies the attachment preflight (<code>api-proxy</code>) and the <code>read_image</code> gate (<code>dsh-tool-fs</code>);</li>
-<li>proxy <code>stream</code> transcribes image blocks (shape <code>{ type: &#39;image&#39;, attachment }</code>, bytes via <code>ctx.get(&#39;attachments&#39;).readImage(ref)</code>) and <code>yield*</code>s the inner adapter&#39;s stream unchanged.</li>
+<li><code>ctx.llm.registration(innerProvider).adapter</code> —— 拿到被包装的适配器；</li>
+<li><code>ctx.llm.registerAdapter([providerId], proxyAdapter)</code> —— 注册新路由（无 <code>DUPLICATE_ADAPTER</code> 冲突）；</li>
+<li>代理 <code>resolveModel</code> 把 <code>inputModalities</code> 覆盖为 <code>[&#39;text&#39;, &#39;image&#39;]</code> —— 满足附件预检（<code>api-proxy</code>）与 <code>read_image</code> 门禁（<code>dsh-tool-fs</code>）；</li>
+<li>代理 <code>stream</code> 转译图片块（结构 <code>{ type: &#39;image&#39;, attachment }</code>，字节经 <code>ctx.get(&#39;attachments&#39;).readImage(ref)</code> 获取），再 <code>yield*</code> 原样转发内部适配器的流。</li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Flyvhidbwo/dsh-vision-proxy/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Flyvhidbwo/dsh-vision-proxy/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

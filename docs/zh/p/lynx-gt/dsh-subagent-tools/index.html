@@ -189,129 +189,108 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Enhanced subagent delegation tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh):
-<strong>per-call model / provider / persona / toolFilter overrides</strong>, <strong><code>@preset:</code> persona references</strong>, and
-<strong><code>provider/model</code> composite model ids</strong> — shipped as a standard <strong>bundle</strong> that patches <strong>no official
-package file</strong>.</p>
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（dsh）提供增强版子代理委派工具：
+<strong>按次指定 model / provider / persona / toolFilter</strong>、<strong><code>@preset:</code> persona 引用</strong>、<strong><code>provider/model</code> 复合模型 id</strong>——
+以标准 <strong>bundle</strong> 形式交付，<strong>不修改任何官方包文件</strong>。</p>
 <p>| <a href="https://github.com/lynx-gt/dsh-subagent-tools/blob/master/README.md">English</a> | <a href="https://github.com/lynx-gt/dsh-subagent-tools/blob/master/README.zh.md">中文</a> |</p>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
-<h3>What it adds</h3>
-<p>The stock <code>subagent</code> / <code>subagent_fork</code> tools only accept <code>description</code>, <code>prompt</code>, and <code>run_in_background</code>.
-This plugin replaces them with the same surface plus per-call overrides:</p>
+<h3>新增能力</h3>
+<p>官方 <code>subagent</code> / <code>subagent_fork</code> 工具只接受 <code>description</code> / <code>prompt</code> / <code>run_in_background</code>。本插件在不改变工具表面的前提下增加按次覆盖参数：</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Effect</th>
+<th>参数</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>model</code></td>
-<td>Override the child&#39;s LLM model for this call. Accepts a bare id (<code>k3</code>) or a composite (<code>kimi-code/k3</code>) that also switches the provider.</td>
+<td>本次调用覆盖子代理的 LLM 模型。支持裸 id（<code>k3</code>）或复合 id（<code>kimi-code/k3</code>，同时切换 provider）。</td>
 </tr>
 <tr>
 <td><code>provider</code></td>
-<td>Override the delegation provider for this call (<code>spawn</code> / <code>fork</code> / ...).</td>
+<td>本次调用覆盖委派 provider（<code>spawn</code> / <code>fork</code> / ...）。</td>
 </tr>
 <tr>
 <td><code>persona</code></td>
-<td>Override the child&#39;s persona for this call — raw text, or <code>@preset:&lt;id&gt;</code> to load a saved agent preset&#39;s persona (by display name or directory id).</td>
+<td>本次调用覆盖子代理 persona——原文文本，或 <code>@preset:&lt;id&gt;</code> 引用已保存的 agent preset persona（按显示名或目录 id）。</td>
 </tr>
 <tr>
 <td><code>toolFilter</code></td>
-<td>Override the child&#39;s tool allow/deny filter for this call.</td>
+<td>本次调用覆盖子代理的工具 allow/deny 过滤。</td>
 </tr>
 </tbody></table>
-<p>All overrides default to the instance configuration, so a bare install behaves exactly like the stock tools.</p>
-<h3>Installation</h3>
+<p>所有覆盖项默认回落到实例配置，裸安装行为与官方工具完全一致。</p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-subagent-tools          # npm
-# or: dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools#main
-# or: dsh plugin --profile web add ./dsh-subagent-tools  # local checkout
+# 或：dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools#main
+# 或：dsh plugin --profile web add ./dsh-subagent-tools  # 本地目录
 </code></pre>
-<p>Restart <code>dsh --profile web</code>.</p>
-<h4>Web sessions: also run the preset adapter (important)</h4>
-<p>In the <strong>web</strong> profile, agent tools are provided by the mounted agent <strong>preset</strong>
-(the default <code>standard</code> preset composes <code>subagent</code> / <code>subagent_fork</code> pointing at
-<code>@deepseek-ai/dsh-tool-subagent</code>), <strong>not</strong> by the host plane. A bundle patch that
-disables the stock rows and inserts its own is invisible to Web sessions — the
-stock tools keep loading and this package&#39;s per-call overrides never appear
-(headless works without this step).</p>
-<p>Run the preset adapter to make Web sessions use this package:</p>
+<p>安装后重启 <code>dsh --profile web</code>。</p>
+<h4>Web 会话：还要跑 preset 适配脚本（重要）</h4>
+<p>在 <strong>web</strong> profile 中，agent 工具由挂载的 agent <strong>preset</strong> 提供（默认 <code>standard</code>
+preset 组合了 <code>subagent</code> / <code>subagent_fork</code>，指向 <code>@deepseek-ai/dsh-tool-subagent</code>），
+<strong>不是</strong>由 host 平面提供。只靠 bundle patch 禁用官方行并插入自己的行，在 Web
+会话里是<strong>不可见</strong>的——官方工具照常加载，本插件的按次覆盖参数根本不会出现
+（headless 不需要这步，因为它的 agent 直接用 host 平面）。</p>
+<p>运行 preset 适配脚本让 Web 会话使用本插件：</p>
 <pre><code class="language-sh">powershell -ExecutionPolicy Bypass -File install-preset.ps1   # Windows
-# or: ./install-preset.sh                                     # POSIX
+# 或：./install-preset.sh                                     # POSIX
 </code></pre>
-<p>It copies the <code>standard</code> preset into <code>$DSH_HOME/.agent-presets/standard-plus</code>,
-rewrites its <code>tool-subagent</code> / <code>tool-subagent-fork</code> rows to point at this
-package, and switches the default preset. Then <strong>restart <code>dsh web</code> and start a
-NEW session</strong> (presets are read at session creation and cannot be switched in a
-live session). To revert: pick <code>standard</code> again in the UI (General &gt; Agent
-preset) and delete the <code>standard-plus</code> directory.</p>
+<p>它会复制 <code>standard</code> preset 到 <code>$DSH_HOME/.agent-presets/standard-plus</code>，把其中的
+<code>tool-subagent</code> / <code>tool-subagent-fork</code> 行改写为指向本包，并切换默认 preset。
+然后<strong>重启 <code>dsh web</code> 并新建会话</strong>（preset 在会话创建时读取，运行中的会话无法切换）。
+还原：在 UI（General &gt; Agent preset）选回 <code>standard</code>，删除 <code>standard-plus</code> 目录即可。</p>
 <blockquote>
-<p><code>headless</code> and other non-web profiles do not need this step.</p>
+<p><code>headless</code> 及其他非 web profile 不需要这步。</p>
 </blockquote>
-<h4>Telling the model which presets exist (<code>presetHints</code>)</h4>
-<p>The <code>persona</code> parameter accepts <code>@preset:&lt;id&gt;</code> references, but the tool schema
-does not list which presets exist on your deployment. Set <code>presetHints</code> on the
-tool rows (see <code>cordis.patch.yml</code>) to surface them in the schema — the model
-then sees &quot;Available presets on this deployment: @preset:翻译员, ...&quot; and can
-pick one itself. Omit the key to stay generic (presets differ per machine).</p>
-<h4>Compatibility</h4>
-<p>Declares <code>peerDependencies</code> on the public dsh packages (<code>^0.1.0-rc.6</code>). If your dsh version moves out of
-the compatible range, pnpm reports a peer conflict and the plugin refuses to load — bump this package
-instead of running on a silently broken API.</p>
-<h3>Verified</h3>
-<p>Tested against a stock dsh <code>0.1.0-rc.6</code> install (no local patches) on Windows via
-headless and web profiles:</p>
-<ul>
-<li>per-call <code>model=&quot;kimi-code/k3&quot;</code> composite routing ✅</li>
-<li>per-call <code>provider=&quot;fork&quot;</code> and raw-text <code>persona</code> ✅</li>
-<li><code>@preset:</code> by display name (<code>@preset:审校员</code>) and directory id (<code>@preset:translation-reviewer</code>) ✅</li>
-<li><code>presetHints</code> schema injection ✅</li>
-<li>Web profile: the preset adapter (<code>install-preset.ps1</code>) makes Web sessions use
-this bundle&#39;s tools (verified with the 5 presets above in a live web session)</li>
-</ul>
-<h3>Example</h3>
-<pre><code>Delegate a task to a subagent using model kimi-code/k3 with the reviewer persona:
-  subagent(description=&quot;Review the translation&quot;, prompt=&quot;...&quot;, model=&quot;kimi-code/k3&quot;, persona=&quot;@preset:审校员&quot;)
+<h4>让模型知道有哪些预设（<code>presetHints</code>）</h4>
+<p><code>persona</code> 参数支持 <code>@preset:&lt;id&gt;</code> 引用，但工具 schema 不会列出你的机器上有哪些预设。
+在工具行配置 <code>presetHints</code>（见 <code>cordis.patch.yml</code>）即可把它们注入 schema——模型会看到
+&quot;Available presets on this deployment: @preset:翻译员, ...&quot; 并自行选用。不配则保持通用
+（预设每台机器不同，写死会误导其他用户）。</p>
+<h4>兼容性</h4>
+<p>通过 <code>peerDependencies</code> 声明对公开 dsh 包（<code>^0.1.0-rc.6</code>）的依赖。若你的 dsh 版本超出兼容范围，pnpm
+会报 peer 冲突并拒绝加载——升级本插件版本即可，而不是在静默损坏的 API 上运行。</p>
+<h3>示例</h3>
+<pre><code>让子代理用 kimi-code/k3 模型 + 审校员 persona 干活：
+  subagent(description=&quot;审校译文&quot;, prompt=&quot;...&quot;, model=&quot;kimi-code/k3&quot;, persona=&quot;@preset:审校员&quot;)
 </code></pre>
-<h3>Design</h3>
+<h3>设计要点</h3>
 <ul>
-<li><strong>A bundle, not a patched install.</strong> This package is a standard dsh <strong>bundle</strong>
-(<code>dsh.bundle</code> manifest + <code>cordis.patch.yml</code>): it disables the shipped
-<code>tool-subagent</code> / <code>tool-subagent-fork</code> rows and inserts its own. <strong>No official
-package file is patched</strong> — nothing in the dsh installation is modified.</li>
-<li><strong>Independent implementation.</strong> The tool is written against the public dsh API
-(<code>defineTool</code>, <code>ctx.subagents.start</code> / <code>startContinuable</code>, <code>settleRun</code>), not a fork of the official source.</li>
-<li><strong>Upgrades.</strong> The bundle lives in the profile&#39;s own <code>node_modules</code> (pnpm
-symlink), so a dsh upgrade does not remove it. But dsh is in developer preview
-(rc.6): if an upgrade changes the public API, <code>peerDependencies</code> makes the
-plugin refuse to load instead of failing silently — bump this package then.</li>
-<li><strong>No <code>cwd</code> parameter here.</strong> Per-call working-directory control needs two
-small patches in the dsh installation&#39;s in-process subagent providers
-(foreground + continuable child creation). That lives in the companion
-package <strong><code>dsh-subagent-tools-cwd</code></strong>, which bundles this plugin&#39;s
-functionality <strong>plus</strong> the <code>cwd</code> parameter <strong>plus</strong> the required patches.
-Install one or the other — not both.</li>
+<li><strong>标准 bundle，非补丁安装。</strong> 本包是标准 dsh <strong>bundle</strong>（<code>dsh.bundle</code> manifest + <code>cordis.patch.yml</code>）：
+禁用官方 <code>tool-subagent</code> / <code>tool-subagent-fork</code> 行并插入自己的行——<strong>不修改任何官方包文件</strong>。</li>
+<li><strong>独立实现。</strong> 工具基于公开 dsh API 编写（<code>defineTool</code>、<code>ctx.subagents.start</code> / <code>startContinuable</code>、<code>settleRun</code>），非官方源码 fork。</li>
+<li><strong>升级。</strong> bundle 装在 profile 自己的 <code>node_modules</code>（pnpm symlink），dsh 升级不会移除它。但 dsh 处于
+developer preview（rc.6）：若升级改变公开 API，<code>peerDependencies</code> 会让插件显式拒绝加载（而非静默损坏）——
+此时升级本插件版本即可。</li>
+<li><strong>此处不含 <code>cwd</code> 参数。</strong> 按次工作目录控制需要两处 dsh 安装内的进程内 subagent provider 补丁
+（前台 + 可继续子代理创建）。该能力在配套包 <strong><code>dsh-subagent-tools-cwd</code></strong> 中——它包含本插件的全部功能
+<strong>加</strong> <code>cwd</code> 参数 <strong>加</strong> 所需补丁。二选一安装，不要同时装。</li>
 </ul>
-<h3>Limitations</h3>
+<h3>已验证</h3>
+<p>在干净（无本地补丁）的 dsh <code>0.1.0-rc.6</code> Windows 环境实测（headless + web）：</p>
 <ul>
-<li><strong><code>@preset:</code> depends on the local preset layout.</strong> <code>$DSH_HOME/.agent-presets</code>
-is where dsh stores user-authored presets; the path is not a hard public
-contract, so a future dsh release could change discovery. Presets also differ
-per machine — an <code>@preset:翻译员</code> reference only works where that preset exists.</li>
-<li><strong>Web sessions need the preset adapter.</strong> The <code>standard</code> preset that ships
-with dsh still points its delegation rows at the official package; until you
-run <code>install-preset.ps1</code> / <code>install-preset.sh</code>, Web sessions keep the stock
-tools (headless and other non-web profiles use this bundle directly).</li>
-<li><strong><code>provider</code> means the subagent backend</strong>, not an LLM provider. To route a
-child to a different LLM provider use the composite <code>model</code> id
-(<code>kimi-code/k3</code>) or the instance <code>agentOptions</code>.</li>
+<li>按次 <code>model=&quot;kimi-code/k3&quot;</code> 复合 id 路由 ✅</li>
+<li>按次 <code>provider=&quot;fork&quot;</code> 与原文 <code>persona</code> ✅</li>
+<li><code>@preset:</code> 显示名（<code>@preset:审校员</code>）与目录 id（<code>@preset:translation-reviewer</code>）✅</li>
+<li><code>presetHints</code> schema 注入 ✅</li>
+<li>Web profile：preset 适配脚本（<code>install-preset.ps1</code>）让 Web 会话使用本包工具 ✅（用上述 5 个预设实测）</li>
+</ul>
+<h3>限制</h3>
+<ul>
+<li><strong><code>@preset:</code> 依赖本地预设布局。</strong> <code>$DSH_HOME/.agent-presets</code> 是 dsh 存放用户预设的位置，路径不是硬性
+公开契约，未来 dsh 版本可能改变发现方式；预设也因机器而异——<code>@preset:翻译员</code> 只在存在该预设的机器上可用。</li>
+<li><strong>Web 会话需要 preset 适配脚本。</strong> dsh 自带的 <code>standard</code> preset 的委派行仍指向官方包；在跑
+<code>install-preset.ps1</code> / <code>install-preset.sh</code> 之前，Web 会话用的仍是官方工具（headless 等非 web profile 直接使用本包）。</li>
+<li><strong><code>provider</code> 指子代理后端</strong>，不是 LLM provider。要让子代理切换 LLM provider，用复合 <code>model</code> id
+（<code>kimi-code/k3</code>）或实例 <code>agentOptions</code>。</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/lynx-gt/dsh-subagent-tools/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/lynx-gt/dsh-subagent-tools/blob/master/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

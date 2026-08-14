@@ -190,34 +190,34 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><img src="https://raw.githubusercontent.com/BrambleXu/dsh-annotate/main/assets/hero.png" alt="dsh-annotate hero"></p>
-<p>Visual browser feedback for DeepSeek Harness. <code>/annotate</code> asks the companion Chrome extension to enter selection mode; each selected element contributes a selector, DOM facts, computed style highlights, accessibility data, a comment, and an optional viewport screenshot to the agent&#39;s next turn.</p>
-<h3>Why this exists 💡</h3>
-<p>Browser UI problems are difficult to describe precisely through plain text. <code>dsh-annotate</code> lets you point at the relevant element and send the Agent the surrounding browser facts, so visual feedback stays attached to the page element instead of becoming a vague description or a copied screenshot.</p>
-<h3>Features ✨</h3>
+<p>为 DeepSeek Harness 提供浏览器视觉反馈。<code>/annotate</code> 会让配套的 Chrome 扩展进入选择模式；每个被选中的元素都会为 Agent 的下一轮对话提供选择器、DOM 信息、计算样式高亮、可访问性数据、评论，以及可选的视口截图。</p>
+<h3>为什么存在 💡</h3>
+<p>浏览器界面问题很难通过纯文本准确描述。<code>dsh-annotate</code> 让你直接指向相关元素，并将周围的浏览器信息发送给 Agent，使视觉反馈与页面元素保持关联，而不是变成模糊的描述或一张脱离上下文的截图。</p>
+<h3>功能 ✨</h3>
 <ul>
-<li>Select elements directly in Chrome or Chromium through <code>/annotate</code>.</li>
-<li>Capture selectors, DOM facts, computed-style highlights, accessibility data, comments, and optional viewport screenshots.</li>
-<li>Send structured annotations to the Agent through a local loopback WebSocket bridge.</li>
-<li>Restrict browser connections by loopback host, extension origin, and optional extension ID.</li>
+<li>通过 <code>/annotate</code> 在 Chrome 或 Chromium 中直接选择元素。</li>
+<li>捕获选择器、DOM 信息、计算样式高亮、可访问性数据、评论和可选的视口截图。</li>
+<li>通过本地 loopback WebSocket bridge 将结构化批注发送给 Agent。</li>
+<li>支持按 loopback 主机、扩展来源和可选扩展 ID 限制浏览器连接。</li>
 </ul>
-<h3>Install 📦</h3>
-<p>Add the plugin project to a Harness profile:</p>
+<h3>安装 📦</h3>
+<p>将插件项目添加到 Harness profile：</p>
 <pre><code class="language-sh">dsh plugin --profile demo add ./dsh-annotate
 </code></pre>
-<p>Then install the companion extension:</p>
+<p>然后安装配套扩展：</p>
 <ol>
-<li>Open <code>chrome://extensions</code> in Chrome or Chromium.</li>
-<li>Enable <strong>Developer mode</strong>.</li>
-<li>Choose <strong>Load unpacked</strong> and select this project&#39;s <code>browser-extension</code> directory.</li>
-<li>Open the extension popup and keep the default bridge endpoint.</li>
+<li>在 Chrome 或 Chromium 中打开 <code>chrome://extensions</code>。</li>
+<li>启用<strong>开发者模式</strong>。</li>
+<li>选择<strong>加载已解压的扩展程序</strong>，并选中本项目的 <code>browser-extension</code> 目录。</li>
+<li>打开扩展弹窗，并保留默认的 bridge endpoint。</li>
 </ol>
-<p>For tighter local authorization, copy the extension ID shown in the popup into <code>allowedExtensionId</code> in a later Harness patch layer.</p>
-<h3>Use 🚀</h3>
+<p>如需更严格的本地授权，可以将弹窗中显示的扩展 ID 复制到后续 Harness patch layer 的 <code>allowedExtensionId</code> 配置中。</p>
+<h3>使用 🚀</h3>
 <pre><code class="language-text">/annotate
 /annotate http://localhost:3000
 </code></pre>
-<p>Click an element, enter its comment, and repeat as needed. <strong>Submit</strong> sends all captured facts and the visible-tab screenshot to the agent. <strong>Escape</strong> cancels.</p>
-<h3>Configure ⚙️</h3>
+<p>点击元素，输入评论，按需重复操作。点击<strong>提交</strong>会将所有已捕获的信息和当前可见标签页的截图发送给 Agent。按 <strong>Escape</strong> 取消。</p>
+<h3>配置 ⚙️</h3>
 <pre><code class="language-yaml">- id: dsh-annotate
   name: dsh-annotate
   config:
@@ -228,21 +228,21 @@ footer p+p{margin-top:.5rem}
     maxPayloadBytes: 16777216
     includeScreenshot: true
 </code></pre>
-<p>The server refuses non-loopback hosts and browser connections whose origin is not <code>chrome-extension://</code>. An empty <code>allowedExtensionId</code> accepts any locally installed Chrome extension; set the exact ID for stricter isolation.</p>
-<h3>Develop 🧑‍💻</h3>
+<p>服务器会拒绝非 loopback 主机，以及来源不是 <code>chrome-extension://</code> 的浏览器连接。<code>allowedExtensionId</code> 为空时，接受任意本地安装的 Chrome 扩展；如需更严格的隔离，请设置准确的扩展 ID。</p>
+<h3>开发 🧑‍💻</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run check
 </code></pre>
-<p>Reload the unpacked browser extension after editing its files.</p>
-<h3>Scope 🎯</h3>
-<p>Version 0.1 targets one local Chrome/Chromium browser, one active tab, and visible-viewport screenshots. Remote browsers, full-page capture, edit recording, and inline draggable note cards are deferred.</p>
-<h3>License 📄</h3>
+<p>修改扩展文件后，请重新加载已解压的浏览器扩展。</p>
+<h3>范围 🎯</h3>
+<p>0.1 版本面向一台本地 Chrome/Chromium 浏览器、一个活动标签页和可见视口截图。远程浏览器、整页截图、编辑记录和可拖拽的行内批注卡片暂不支持。</p>
+<h3>许可证 📄</h3>
 <p>MIT</p>
-<h3>Credits 🙏</h3>
-<p>The interaction is inspired by <a href="https://github.com/nicobailon/pi-annotate"><code>pi-annotate</code></a>. This implementation is built around Harness&#39;s human-command, attachment, and Agent APIs and uses a small loopback WebSocket bridge instead of a native-messaging host.</p>
+<h3>致谢 🙏</h3>
+<p>交互方式受到 <a href="https://github.com/nicobailon/pi-annotate"><code>pi-annotate</code></a> 的启发。本实现围绕 Harness 的 human-command、attachment 和 Agent API 构建，并使用小型 loopback WebSocket bridge 代替 native-messaging host。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/BrambleXu/dsh-annotate/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/BrambleXu/dsh-annotate/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

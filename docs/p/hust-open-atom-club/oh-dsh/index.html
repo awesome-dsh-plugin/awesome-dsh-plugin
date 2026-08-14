@@ -189,70 +189,73 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Oh-DSH 把 DeepSeek Harness、Node.js 和本地能力打包成可安装的 Desktop、
-Web 与 TUI 发行版。模型仍运行在云端；Oh-DSH 负责 Workspace、终端、
-Git Review、浏览器、窗口集成和插件生命周期。</p>
-<h3>🎉 官方收录</h3>
-<p>Oh-DSH 已进入 DeepSeek Harness 官方社区展示。终端端基于同样获得社区认可的
-<a href="https://github.com/ccch1mneyyy/dsh-TUI">dsh-TUI</a> 上游插件，并保留完整署名。</p>
-<h3>下载与安装</h3>
-<p>从 <a href="https://github.com/hust-open-atom-club/oh-dsh/releases/latest">GitHub Releases</a>
-选择需要的发行形态：</p>
+<p>Oh-DSH packages DeepSeek Harness, Node.js, and local capabilities as
+installable Desktop, Web, and TUI distributions. Models still run in the
+cloud; Oh-DSH owns workspaces, terminals, Git review, browser and window
+integration, and the plugin lifecycle.</p>
+<h3>🎉 Official showcase</h3>
+<p>Oh-DSH has been included in the official DeepSeek Harness community showcase.
+Its terminal surface builds on the similarly recognized
+<a href="https://github.com/ccch1mneyyy/dsh-TUI">dsh-TUI</a> upstream plugin with full
+attribution preserved.</p>
+<h3>Download and install</h3>
+<p>Choose a distribution from the
+<a href="https://github.com/hust-open-atom-club/oh-dsh/releases/latest">latest GitHub Release</a>:</p>
 <table>
 <thead>
 <tr>
-<th>发行形态</th>
-<th>包含内容</th>
-<th>适合场景</th>
+<th>Distribution</th>
+<th>Includes</th>
+<th>Best for</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>完整版</td>
-<td><strong>Oh-DSH Desktop</strong>、Web、TUI、Node runtime 和内置插件</td>
-<td>本地开发工作台</td>
+<td>Full</td>
+<td><strong>Oh-DSH Desktop</strong>, Web, TUI, Node runtime, and bundled plugins</td>
+<td>Local development workbench</td>
 </tr>
 <tr>
 <td>Web-only</td>
-<td><strong>Oh-DSH Web</strong>、Node runtime 和内置 Web 插件，不含 Electron</td>
-<td>轻量安装、浏览器或远程使用</td>
+<td><strong>Oh-DSH Web</strong>, Node runtime, and bundled Web plugins; no Electron</td>
+<td>Small installs, browser, or remote access</td>
 </tr>
 <tr>
 <td>TUI-only</td>
-<td><strong>Oh-DSH TUI</strong>、Node runtime 和终端插件，不含 Electron</td>
-<td>纯终端环境</td>
+<td><strong>Oh-DSH TUI</strong>, Node runtime, and terminal plugins; no Electron</td>
+<td>Terminal-only environments</td>
 </tr>
 </tbody></table>
-<p>完整版按平台提供 DMG/ZIP、AppImage/deb 和 Windows 包。macOS 打开 DMG 后，
-将 <strong>Oh-DSH Desktop</strong> 拖入 Applications；Linux 可直接运行 AppImage，或用
-<code>apt</code> 安装 deb。</p>
-<p>Web-only 包解压后即可启动：</p>
+<p>The full distribution is available as DMG/ZIP, AppImage/deb, and a Windows
+package. On macOS, open the DMG and drag <strong>Oh-DSH Desktop</strong> into Applications.
+On Linux, run the AppImage or install the deb with <code>apt</code>.</p>
+<p>Extract and start the Web-only package directly:</p>
 <pre><code class="language-sh">tar -xzf oh-dsh-web-*.tar.gz
 cd oh-dsh-web-*/
 ./bin/ohdsh web
 </code></pre>
-<p>默认地址是 <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>。Windows 使用：</p>
+<p>The default URL is <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>. On Windows, run:</p>
 <pre><code class="language-bat">bin\ohdsh.cmd web
 </code></pre>
-<p>TUI-only 包同样解压即用：</p>
+<p>The TUI-only package is also ready after extraction:</p>
 <pre><code class="language-sh">tar -xzf oh-dsh-tui-*.tar.gz
 cd oh-dsh-tui-*/
 ./bin/ohdsh tui
 </code></pre>
-<h4>安装统一命令</h4>
-<p>macOS 完整版可将应用内的启动器加入 <code>PATH</code>：</p>
+<h4>Install the unified command</h4>
+<p>The macOS full distribution contains a CLI that can be added to <code>PATH</code>:</p>
 <pre><code class="language-sh">sudo ln -sf \
   &quot;/Applications/Oh-DSH Desktop.app/Contents/Resources/bin/ohdsh&quot; \
   /usr/local/bin/ohdsh
 </code></pre>
-<p>Web-only 与 TUI-only 包可直接运行 <code>./bin/ohdsh</code>，也可以把它加入 <code>PATH</code>。</p>
-<h3>启动方式</h3>
-<pre><code class="language-sh">ohdsh desktop   # 启动 Oh-DSH Desktop
-ohdsh web       # 启动 Oh-DSH Web
-ohdsh tui       # 启动 Oh-DSH TUI
+<p>Use <code>./bin/ohdsh</code> from a Web-only or TUI-only package, or add it to <code>PATH</code>.</p>
+<h3>Start a surface</h3>
+<pre><code class="language-sh">ohdsh desktop   # Start Oh-DSH Desktop
+ohdsh web       # Start Oh-DSH Web
+ohdsh tui       # Start Oh-DSH TUI
 </code></pre>
-<p>使用 <code>ohdsh web --help</code> 或 <code>ohdsh tui --help</code> 查看对应选项。</p>
-<h3>从源码运行</h3>
-<p>需要 Node.js、pnpm 和平台构建工具：</p>
+<p>Run <code>ohdsh web --help</code> or <code>ohdsh tui --help</code> for surface-specific options.</p>
+<h3>Run from source</h3>
+<p>Node.js, pnpm, and the platform build tools are required:</p>
 <pre><code class="language-sh">git submodule update --init --recursive
 pnpm install
 pnpm run build:dsh
@@ -264,46 +267,48 @@ ohdsh desktop
 ohdsh web
 ohdsh tui
 </code></pre>
-<p>打包完整版使用对应平台的 <code>dist:mac</code>、<code>dist:linux</code> 或 <code>dist:win</code>；只打包
-Web 使用 <code>pnpm run dist:web</code>；只打包 TUI 使用 <code>pnpm run dist:tui</code>。</p>
-<h4>插件市场</h4>
-<p><img src="https://raw.githubusercontent.com/hust-open-atom-club/oh-dsh/main/assets/oh-dsh-plugin-marketplace.png" alt="Oh-DSH 插件市场"></p>
-<h4>Oh-DSH 皮肤</h4>
-<p><img src="https://raw.githubusercontent.com/hust-open-atom-club/oh-dsh/main/assets/oh-dsh-desktop-skins.png" alt="Oh-DSH 跨界面皮肤"></p>
-<h3>文档</h3>
+<p>Build the full distribution with the platform-specific <code>dist:mac</code>,
+<code>dist:linux</code>, or <code>dist:win</code> script. Build only Web with <code>pnpm run dist:web</code>,
+or only TUI with <code>pnpm run dist:tui</code>.</p>
+<h4>Plugin marketplace</h4>
+<p><img src="https://raw.githubusercontent.com/hust-open-atom-club/oh-dsh/main/assets/oh-dsh-plugin-marketplace.png" alt="Oh-DSH plugin marketplace"></p>
+<h4>Oh-DSH skins</h4>
+<p><img src="https://raw.githubusercontent.com/hust-open-atom-club/oh-dsh/main/assets/oh-dsh-desktop-skins.png" alt="Oh-DSH cross-surface skins"></p>
+<h3>Documentation</h3>
 <ul>
-<li><a href="https://github.com/hust-open-atom-club/oh-dsh/blob/main/docs/design.md">设计与插件边界</a></li>
-<li><a href="https://github.com/hust-open-atom-club/oh-dsh/blob/main/docs/usage.md">安装、操作与排错</a></li>
+<li><a href="https://github.com/hust-open-atom-club/oh-dsh/blob/main/docs/design.en.md">Design and plugin boundaries</a></li>
+<li><a href="https://github.com/hust-open-atom-club/oh-dsh/blob/main/docs/usage.en.md">Installation, operations, and troubleshooting</a></li>
 </ul>
-<h3>上游依赖</h3>
+<h3>Upstream dependencies</h3>
 <table>
 <thead>
 <tr>
-<th>上游仓库</th>
-<th>Oh-DSH 中的用途</th>
+<th>Upstream repository</th>
+<th>Role in Oh-DSH</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><a href="https://github.com/deepseek-harness/deepseek-harness">DeepSeek Harness</a></td>
-<td>DSH runtime、会话与插件加载器</td>
+<td>DSH runtime, sessions, and plugin loader</td>
 </tr>
 <tr>
 <td><a href="https://github.com/ccch1mneyyy/dsh-TUI">dsh-TUI</a></td>
-<td><strong>Oh-DSH TUI 的直接上游插件</strong>，提供终端渲染、交互和命令体系</td>
+<td><strong>Direct upstream plugin for Oh-DSH TUI</strong>, providing terminal rendering, interaction, and commands</td>
 </tr>
 <tr>
 <td><a href="https://github.com/omdsh-dev/DSH-better-sidebar">DSH-better-sidebar</a></td>
-<td>Git Review、文件与 PTY Host 能力</td>
+<td>Git review, files, and PTY host capabilities</td>
 </tr>
 </tbody></table>
-<p><code>dsh-TUI</code> 以固定提交的 Git submodule 存放在 <code>upstream/dsh-TUI</code>。
-Oh-DSH 保留其上游实现与署名，并负责 <code>ohdsh tui</code> 启动器、<code>~/.ohdsh</code>
-数据隔离、统一标题、跨端皮肤及发行打包。详细边界见设计文档。</p>
+<p><code>dsh-TUI</code> is pinned as a Git submodule at <code>upstream/dsh-TUI</code>. Oh-DSH keeps
+the upstream implementation and attribution, while owning the <code>ohdsh tui</code>
+launcher, isolated <code>~/.ohdsh</code> data, unified title, cross-surface skins, and
+distribution packaging. See the design guide for the exact boundary.</p>
 <h3>License</h3>
 <p><a href="https://github.com/hust-open-atom-club/oh-dsh/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/hust-open-atom-club/oh-dsh/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/hust-open-atom-club/oh-dsh/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

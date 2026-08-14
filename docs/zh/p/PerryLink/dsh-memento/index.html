@@ -189,7 +189,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>Bounded, layered, approval-gated, auditable cross-session memory for DeepSeek Harness.</strong></p>
+<p><strong>给 DeepSeek Harness 补上有界、分层、带审批门、可审计的跨会话记忆。</strong></p>
 <p><a href="https://github.com/PerryLink/dsh-memento/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-3a7d44" alt="license"></a>
 <a href="https://www.npmjs.com/package/@deepseek-ai/dsh"><img src="https://img.shields.io/badge/dsh-0.1.0--rc.6-4e51e8" alt="dsh"></a>
 <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933" alt="node"></a>
@@ -197,196 +197,196 @@ footer p+p{margin-top:.5rem}
 <a href=""><img src="https://img.shields.io/badge/build-none%20%28pure%20ESM%29-8a6d3b" alt="no build step"></a></p>
 <p><a href="https://github.com/PerryLink/dsh-memento/blob/main/README.md">English</a> · <a href="https://github.com/PerryLink/dsh-memento/blob/main/README.zh.md">中文</a> · <a href="https://github.com/PerryLink/dsh-memento/blob/main/README.es.md">Español</a> · <a href="https://github.com/PerryLink/dsh-memento/blob/main/README.pt.md">Português</a> · <a href="https://github.com/PerryLink/dsh-memento/blob/main/README.hi.md">हिन्दी</a></p>
 <blockquote>
-<p>Other memory plugins sell a <strong>warehouse</strong>. dsh-memento sells the <strong>seam</strong>: a typed <code>ctx.memory</code> service, a write approval gate no model path can bypass, and audit trails you can rebuild from the session log. Native-first memory for DeepSeek Harness — protocol + trust gate + audit, with zero network and zero credentials.</p>
+<p>别的记忆插件卖<strong>仓库</strong>，dsh-memento 卖<strong>接缝</strong>：类型安全的 <code>ctx.memory</code> 服务、模型绕不过去的写入审批门、能从会话日志重建的审计链。DeepSeek Harness 的原生第一方记忆——记忆协议 + 信任门 + 审计，零网络、零凭据。</p>
 </blockquote>
-<h3>✨ Why dsh-memento?</h3>
+<h3>✨ 为什么是 dsh-memento？</h3>
 <ul>
-<li><strong>It&#39;s a capability seam, not another store.</strong> Service Definition (<code>ctx.memory</code>), local SQLite Provider (<code>node:sqlite</code>, WAL, <code>0600</code>), and Consumers (<code>memory</code> tool + frozen snapshot injection). Any future plugin — a <code>dsh-claude-move</code> seed integration, a bridge, a panel — feeds and reads the <strong>same store through the same gate</strong>.</li>
-<li><strong>The gate cannot be bypassed.</strong> Every write path (<code>add</code>/<code>replace</code>/<code>remove</code>/<code>seed</code>) is forced through the approval waterfall <strong>inside the service</strong>, not in the tool layer. <code>writePolicy: ask | auto | off</code> is configuration the model can neither see nor change; a session-level <code>never</code> stance still pre-empts everything.</li>
-<li><strong>Model-visible ⟺ logged.</strong> The injected snapshot lands verbatim in <code>request/header.system</code>; every write is reconstructable from <code>approval/asked</code> (full payload) + <code>approval/decided</code> (outcome) + the plugin&#39;s own audit table.</li>
-<li><strong>Bounded and honest.</strong> Hard per-track/per-layer character budgets (default user 2000 / agent 4000). A full store <strong>fails with a structured error</strong> (usage + limit) — the model consolidates and retries. Never truncated, never auto-compacted.</li>
+<li><strong>它是能力接缝，不是又一个 store。</strong> Service Definition（<code>ctx.memory</code>）+ 本地 SQLite Provider（<code>node:sqlite</code>，WAL，<code>0600</code>）+ Consumer（<code>memory</code> 工具 + 冻结快照注入）。任何未来的插件——dsh-claude-move 的 seed 集成、桥接、面板——都通过<strong>同一个门</strong>读写<strong>同一份</strong> store。</li>
+<li><strong>审批门不可绕过。</strong> 每条写路径（<code>add</code>/<code>replace</code>/<code>remove</code>/<code>seed</code>）都被强制经过审批 waterfall，且强制点在<strong>服务内部</strong>而非工具层。<code>writePolicy: ask | auto | off</code> 是模型看不见、改不了的配置；会话级 <code>never</code> 姿态依旧先于一切。</li>
+<li><strong>模型可见 ⟺ 落盘。</strong> 注入的快照逐字进入 <code>request/header.system</code>；每次写都能从 <code>approval/asked</code>（完整载荷）+ <code>approval/decided</code>（结果）+ 插件自有审计表重建。</li>
+<li><strong>有界且诚实。</strong> 每轨每层硬字符预算（默认 user 2000 / agent 4000）。写满<strong>返回结构化错误</strong>（用量 + 上限）——模型整合后重试。绝不截断、绝不自动压缩。</li>
 </ul>
-<h3>⚡ Quick start</h3>
-<pre><code class="language-sh"># requires Node ^22.19 || &gt;=24 and DSH 0.1.0-rc.6
-dsh plugin --profile web add dsh-memento      # or ./dsh-memento / a tarball / a GitHub URL
-dsh --profile web --dump-config               # expect a &quot;# == dsh-memento&quot; layer, no FAILED at startup
+<h3>⚡ 30 秒上手</h3>
+<pre><code class="language-sh"># 要求 Node ^22.19 || &gt;=24、DSH 0.1.0-rc.6
+dsh plugin --profile web add dsh-memento      # 或 ./dsh-memento / tarball / GitHub 地址
+dsh --profile web --dump-config               # 应看到 &quot;# == dsh-memento&quot; 层，启动无 FAILED
 </code></pre>
-<p>Then, in the Web UI: ask the model to remember something → approve the write → start a <strong>new session</strong> and ask what it remembers. That&#39;s the whole demo.</p>
-<pre><code class="language-yaml"># optional override in the profile&#39;s cordis.patch.yml
+<p>然后在 Web UI 里：让模型记住一件事 → 批准这次写入 → 开一个<strong>新会话</strong>问它记得什么。演示到此结束。</p>
+<pre><code class="language-yaml"># 可选覆盖（写在 profile 的 cordis.patch.yml）
 - id: memento
   config:
-    writePolicy: ask        # ask (default) | auto | off — model-invisible
+    writePolicy: ask        # ask（默认）| auto | off —— 模型不可见
     budgets:
-      user: { userGlobal: 4000, workspace: 2000 }   # Chinese-heavy memory: raise + note why
+      user: { userGlobal: 4000, workspace: 2000 }   # 中文记忆多：调大并在 PR 说明理由
       agent: { userGlobal: 4000, workspace: 4000 }
 </code></pre>
-<h3>🧠 What it does</h3>
+<h3>🧠 它提供什么</h3>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Component</th>
-<th>What you get</th>
+<th>组件</th>
+<th>你得到什么</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>🧩 Service Definition</td>
-<td><code>ctx.memory</code> — <code>add</code> / <code>replace</code> / <code>remove</code> / <code>query</code> / <code>seed</code> / <code>budgets()</code></td>
-<td>Typed, merge-declared service; write methods enforce the gate internally</td>
+<td><code>ctx.memory</code> —— <code>add</code> / <code>replace</code> / <code>remove</code> / <code>query</code> / <code>seed</code> / <code>budgets()</code></td>
+<td>类型化、声明合并的服务；写方法内部强制过门</td>
 </tr>
 <tr>
 <td>💾 Provider</td>
-<td><code>lib/store.mjs</code> — <code>node:sqlite</code> single file (<code>$DSH_HOME/dsh-memento/memory.db</code>, WAL)</td>
-<td>Zero dependencies, zero network; entry + audit tables; unique-substring match</td>
+<td><code>lib/store.mjs</code> —— <code>node:sqlite</code> 单文件（<code>$DSH_HOME/dsh-memento/memory.db</code>，WAL）</td>
+<td>零依赖、零网络；条目表 + 审计表；唯一子串匹配</td>
 </tr>
 <tr>
 <td>🛠 Consumers</td>
-<td><code>memory</code> tool · frozen snapshot injection (system-prompt section, order <code>-50</code>) · <code>memory_recall</code> tool · <code>/memory</code> command · read-only Web panel</td>
-<td>Model-facing writes/reads, budget-headed frozen snapshot, two-part recall, user-side command, browser drawer</td>
+<td><code>memory</code> 工具 · 冻结快照注入（systemPrompt 段，顺序 <code>-50</code>）· <code>memory_recall</code> 工具 · <code>/memory</code> 命令 · 只读 Web 面板</td>
+<td>模型读写、带用量头的冻结快照、两段式召回、用户侧命令、浏览器抽屉</td>
 </tr>
 </tbody></table>
-<p><strong>Two tracks × two layers.</strong> <code>user</code> track = facts about the user (preferences, communication style, landmines); <code>agent</code> track = environment facts, project conventions, lessons learned. Each track has <code>user-global</code> (cross-workspace) and <code>workspace</code> (per-session cwd) layers — Codex-style merged layering, not Hermes-style global-only.</p>
-<p><strong>Frozen snapshots.</strong> The snapshot is rendered once per session at first prompt assembly (synchronous SQLite read + per-session cache) and never changes mid-session — prefix-cache stable by construction. Session-internal changes persist to disk + audit only.</p>
-<pre><code>Consumer: memory tool          Consumer: frozen snapshot (systemPrompt section, order -50)
-   add/replace/remove/query       per-session freeze, budget-headed
-        │ writes (agent+callId)   │ reads (sync, session cwd)
-        ▼                          ▼
-Service Definition: ctx.memory — budgets/add/replace/remove/query/seed
-   every write: budget precheck → ctx.approval.request (approval waterfall) → budget recheck → persist → audit
+<p><strong>双轨 × 双层。</strong> <code>user</code> 轨 = 用户画像（偏好、沟通风格、雷区）；<code>agent</code> 轨 = 环境事实、项目约定、教训。每轨分 <code>user-global</code>（跨工作区）与 <code>workspace</code>（按会话 cwd）两层——学 Codex 的合并分层，不学 Hermes 的纯全局。</p>
+<p><strong>冻结快照。</strong> 快照在会话首个 prompt 组装时渲染一次（SQLite 同步读 + 按会话缓存），会话内不再变化——前缀缓存天然稳定。会话内变更只落盘 + 落审计。</p>
+<pre><code>Consumer: memory 工具           Consumer: 冻结快照（systemPrompt 段，顺序 -50）
+   add/replace/remove/query        按会话冻结，带用量头
+        │ 写（agent+callId）         │ 读（同步，session cwd）
+        ▼                           ▼
+Service Definition: ctx.memory —— budgets/add/replace/remove/query/seed
+   每次写：预算预检 → ctx.approval.request（审批 waterfall）→ 预算复审 → 落盘 → 审计
         │
         ▼
-Provider: lib/store.mjs — node:sqlite (WAL, 0600), entries + audit tables, unique-substring match
+Provider: lib/store.mjs —— node:sqlite（WAL，0600），条目表+审计表，唯一子串匹配
 </code></pre>
-<h3>🧰 Install &amp; uninstall</h3>
-<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add ./dsh-memento        # local checkout (no build step)
-dsh plugin --profile &lt;name&gt; add dsh-memento          # npm, once published
-dsh plugin --profile &lt;name&gt; remove dsh-memento       # uninstall: DB + session logs are kept
+<h3>🧰 安装与卸载</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add ./dsh-memento        # 本地 checkout（无构建步骤）
+dsh plugin --profile &lt;name&gt; add dsh-memento          # 发布到 npm 后
+dsh plugin --profile &lt;name&gt; remove dsh-memento       # 卸载：库与会话日志保留
 </code></pre>
-<p>After uninstall the memory database and the session logs that recorded memory activity remain; old sessions stay loadable.</p>
-<h3>⚙️ Configuration</h3>
-<p>Every field is a validated Schemastery <code>Config</code>; invalid values fail loudly at load. Override in cordis.yml under the <code>memento</code> row.</p>
+<p>卸载后记忆库与记录过记忆活动的会话日志保留，旧会话仍可正常加载。</p>
+<h3>⚙️ 配置</h3>
+<p>所有字段都是经过校验的 Schemastery <code>Config</code>；非法值加载期响亮失败。在 cordis.yml 的 <code>memento</code> 行覆盖。</p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>enabled</code></td>
 <td><code>true</code></td>
-<td><code>false</code> removes the service, tools, snapshot, command, panel, and answerer entirely (no half-state)</td>
+<td><code>false</code> 时服务/工具/快照/命令/面板/answerer 整体消失（不留半残状态）</td>
 </tr>
 <tr>
 <td><code>dbPath</code></td>
 <td><code>&#39;&#39;</code> → <code>$DSH_HOME/dsh-memento/memory.db</code></td>
-<td>absolute, or relative to <code>$DSH_HOME</code></td>
+<td>绝对路径，或相对 <code>$DSH_HOME</code></td>
 </tr>
 <tr>
 <td><code>budgets.user.userGlobal</code> / <code>budgets.user.workspace</code></td>
 <td><code>2000</code> / <code>2000</code></td>
-<td>hard char budget per layer of the user track</td>
+<td>user 轨每层硬字符预算</td>
 </tr>
 <tr>
 <td><code>budgets.agent.userGlobal</code> / <code>budgets.agent.workspace</code></td>
 <td><code>4000</code> / <code>4000</code></td>
-<td>hard char budget per layer of the agent track</td>
+<td>agent 轨每层硬字符预算</td>
 </tr>
 <tr>
 <td><code>writePolicy</code></td>
 <td><code>&#39;ask&#39;</code></td>
-<td><code>&#39;ask&#39;</code> = user approval; <code>&#39;auto&#39;</code> = allow through (approval source recorded); <code>&#39;off&#39;</code> = reject. Model-invisible</td>
+<td><code>&#39;ask&#39;</code>=用户审批；<code>&#39;auto&#39;</code>=放行但记录审批来源；<code>&#39;off&#39;</code>=拒绝。模型不可见</td>
 </tr>
 <tr>
 <td><code>snapshotOrder</code></td>
 <td><code>-50</code></td>
-<td>snapshot section order: after harness identity (<code>-100</code>), before persona (<code>0</code>)</td>
+<td>快照段注入顺序：harness identity(<code>-100</code>) 之后、persona(<code>0</code>) 之前</td>
 </tr>
 <tr>
 <td><code>maxEntriesPerQuery</code></td>
 <td><code>20</code></td>
-<td>per-query result cap</td>
+<td>query 单次返回上限</td>
 </tr>
 </tbody></table>
-<h3>🛠 Tools &amp; surfaces</h3>
+<h3>🛠 工具与观察面</h3>
 <ul>
-<li><strong><code>memory</code></strong> — add/replace/remove/query with Save/Skip guidance embedded in the description (save user preferences, corrections, environment facts, conventions, lessons; skip trivia, re-derivable facts, dumps, one-off paths). Writes ride the approval gate; reads are free; replace/remove target a <strong>unique substring</strong> (ambiguous matches fail with the candidate list).</li>
-<li><strong><code>memory_recall</code></strong> — two-part recall: bounded memory matches <strong>plus</strong> recent session-history matches via <code>ctx.sessionQuery</code> (degrades gracefully to memory-only where the service is absent).</li>
-<li><strong><code>/memory</code></strong> — user-triggered command (not a model turn): <code>list</code> · <code>query &lt;word&gt;</code> · <code>add [--track=user|agent] [--scope=user-global|workspace] &lt;text&gt;</code> · <code>remove [flags] &lt;substring&gt;</code> · <code>budgets</code> · <code>audit</code>. Command writes ride the same waterfall + policy; audit lands in the plugin audit table + <code>command/done</code>.</li>
-<li><strong>Web panel</strong> — zero-build <code>dsh.client</code> drawer: browse entries by track/layer, search, budget bars, audit tail. Read-only by design: writes and approval happen through the <code>memory</code> tool and the built-in approval UI.</li>
+<li><strong><code>memory</code></strong> —— add/replace/remove/query，工具描述内嵌 Save/Skip 行为指引（存用户偏好、纠正、环境事实、项目约定、教训；跳过琐碎事实、可再查的百科知识、大数据转储、一次性路径）。写走审批门，读免费；replace/remove 用<strong>唯一子串</strong>定位（歧义时报候选清单）。</li>
+<li><strong><code>memory_recall</code></strong> —— 两段式召回：有界记忆匹配 <strong>+</strong> 经 <code>ctx.sessionQuery</code> 的近期会话历史匹配（服务缺失时优雅降级为纯记忆结果）。</li>
+<li><strong><code>/memory</code></strong> —— 用户触发命令（非模型回合）：<code>list</code> · <code>query &lt;词&gt;</code> · <code>add [--track=user|agent] [--scope=user-global|workspace] &lt;文本&gt;</code> · <code>remove [选项] &lt;子串&gt;</code> · <code>budgets</code> · <code>audit</code>。命令写走同一 waterfall 与策略；审计落插件审计表 + <code>command/done</code>。</li>
+<li><strong>Web 面板</strong> —— 零构建 <code>dsh.client</code> 抽屉：按轨/层浏览条目、搜索、预算用量条、审计尾。设计上只读：写与审批走 <code>memory</code> 工具与内置审批 UI。</li>
 </ul>
-<h3>🆚 How it&#39;s different</h3>
+<h3>🆚 与其它记忆插件的差异</h3>
 <table>
 <thead>
 <tr>
-<th>Plugin</th>
-<th>What it is</th>
-<th>dsh-memento&#39;s difference</th>
+<th>插件</th>
+<th>是什么</th>
+<th>dsh-memento 的差异</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>dsh-memory-evolve</td>
-<td>memory warehouse / evolution loops</td>
-<td>a typed service seam, approval gate, and session-log audit; no warehouse ambition</td>
+<td>记忆仓库 / 演化循环</td>
+<td>类型化服务接缝、审批门、会话日志审计；不碰仓库野心</td>
 </tr>
 <tr>
 <td>dsh-mnemon</td>
-<td>memory store helper</td>
-<td>protocol + gate + audit, not another store</td>
+<td>记忆存储助手</td>
+<td>协议 + 门 + 审计，不是又一个 store</td>
 </tr>
 <tr>
 <td>dsh-kb-sieve</td>
-<td>knowledge-base sieving</td>
-<td>no retrieval engineering: small-corpus substring search, cross-session recall via <code>session_search</code>/<code>sessionQuery</code></td>
+<td>知识库筛选</td>
+<td>不重造检索：小语料子串检索，跨会话回忆用 <code>session_search</code>/<code>sessionQuery</code></td>
 </tr>
 <tr>
 <td>dsh-tdai-memory</td>
-<td>task-driven memory tooling</td>
-<td>budgets are per track×layer and enforced in the service, not best-effort</td>
+<td>任务驱动记忆工具</td>
+<td>预算是每轨×每层硬约束且在服务层执行，不是尽力而为</td>
 </tr>
 <tr>
 <td>claude-bridge</td>
-<td>Claude Code bridging</td>
-<td>DSH-native; a future <code>seed(source:&#39;claude&#39;)</code> path lets a bridge feed the same store</td>
+<td>Claude Code 桥接</td>
+<td>DSH 原生；未来的 <code>seed(source:&#39;claude&#39;)</code> 让桥接插件喂同一个 store</td>
 </tr>
 <tr>
 <td>dsh-external/Recall</td>
-<td>external agent memory</td>
-<td>local-first, zero-network, rides DSH&#39;s own approval seam</td>
+<td>外部 agent 记忆</td>
+<td>本地优先、零网络，走 DSH 自己的审批 seam</td>
 </tr>
 <tr>
-<td>Official MCP memory examples</td>
-<td>DSH&#39;s stated &quot;memory = external MCP&quot; position</td>
-<td>the <strong>native first-party</strong> complement: same goal, no external server; both coexist</td>
+<td>官方 MCP 记忆示例</td>
+<td>官方&quot;记忆 = 外接 MCP&quot;立场</td>
+<td><strong>原生第一方</strong>补充：目标一致、无需外部服务，两者可共存</td>
 </tr>
 </tbody></table>
-<p>The name is <strong><code>dsh-memento</code></strong> (free on npm and GitHub). Not <code>dsh-recall</code> (confusable with dsh-external/Recall), not the deleted legacy name <code>dsh-memory</code>.</p>
-<h3>🔒 Security boundaries</h3>
+<p>命名已定 <strong><code>dsh-memento</code></strong>（npm 与 GitHub 均空闲）。不用 <code>dsh-recall</code>（与 dsh-external/Recall 混淆），不用已删除的旧名 <code>dsh-memory</code>。</p>
+<h3>🔒 安全边界</h3>
 <ul>
-<li><strong>Public services only</strong> (<code>tools</code>, <code>systemPrompt</code>, the approval seam). No engine / agent-loop / apiproxy / official-UI changes.</li>
-<li><strong>Zero network, zero credentials.</strong> Local database; POSIX file mode <code>0600</code>.</li>
-<li><strong>Fail loud.</strong> Corrupt DB or newer schema fails at load; full budgets and ambiguous substring matches fail with structured errors. Nothing silently swallowed or truncated.</li>
-<li><strong>One process, one store.</strong> Multiple sessions in one process share the SQLite store (serialized writes, per-session audit). Two <strong>processes</strong> sharing one <code>$DSH_HOME</code> write the same file: last-writer-wins under SQLite locking — don&#39;t run two harness instances on one <code>$DSH_HOME</code> if you need cross-process consistency (same caveat the Hermes project documents).</li>
+<li><strong>只消费公开服务</strong>（<code>tools</code>、<code>systemPrompt</code>、审批 seam）。不修改引擎 / agent-loop / apiproxy / 官方 UI 包。</li>
+<li><strong>零网络、零凭据。</strong> 库在本地，POSIX 文件权限 <code>0600</code>。</li>
+<li><strong>失败大声。</strong> 库损坏/版本过新加载期报错；写满与子串歧义报结构化错误。绝不静默吞、绝不静默截断。</li>
+<li><strong>单进程共库。</strong> 单进程多会话共享 SQLite（串行写、每会话审计独立）。两个<strong>进程</strong>共用一个 <code>$DSH_HOME</code> 会写同一个库文件：SQLite 锁下&quot;谁后写谁赢&quot;——不要对同一 <code>$DSH_HOME</code> 跑两个 harness 实例（与 Hermes 项目文档的官方警告一致）。</li>
 </ul>
-<h3>⚠️ Known limitations</h3>
+<h3>⚠️ 已知局限</h3>
 <ul>
-<li><strong>Session events vocabulary is declared, not yet emitted (rc.6).</strong> <code>memory/added|updated|removed|recalled|snapshot</code> are merge-declared in <code>types.d.ts</code>, but rc.6 has no registration surface for out-of-repo event types (unregistered appends would make persisted sessions unloadable). Audit completeness comes from the approval pair + the audit table; emission turns on automatically once a harness build registers the types. See <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a> decision 4.</li>
-<li><strong><code>ask</code> policy needs an answerer.</strong> With no UI/ACP answerer composed, writes fail closed (<code>unavailable</code>) — by design, the approval seam&#39;s fail-closed stance.</li>
-<li><strong>No per-agent scope yet.</strong> V1 layers are <code>user-global</code> and <code>workspace</code> only.</li>
+<li><strong>会话事件词汇已声明、rc.6 上暂不派发。</strong> <code>memory/added|updated|removed|recalled|snapshot</code> 已在 <code>types.d.ts</code> 声明合并，但 rc.6 没有仓外插件事件类型的注册面（append 未注册类型会让持久化会话无法加载）。审计完整性由审批审计对 + 审计表承担；harness 收录这些类型后自动开启派发。见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a> 决策 4。</li>
+<li><strong><code>ask</code> 策略需要 answerer。</strong> 没有 UI/ACP answerer 组合时写失败封闭（<code>unavailable</code>）——这是审批 seam 的失败封闭姿态，属设计行为。</li>
+<li><strong>暂无 per-agent 作用域。</strong> V1 只有 <code>user-global</code> 与 <code>workspace</code> 两层。</li>
 </ul>
-<h3>🧪 Development</h3>
+<h3>🧪 开发</h3>
 <pre><code class="language-sh">npm install
-npm test    # node --test: 66 tests — budget, unique-substring, gate policy, store, snapshot, mock-ctx integration (S2/S3 invariants), V2 command/recall/panel
+npm test    # node --test：66 个测试——预算、唯一子串、审批策略、store、快照、mock ctx 集成（S2/S3 不变量）、V2 命令/召回/面板
 </code></pre>
-<p><code>lib/</code> is zero-DSH-dependency (node: builtins only); DSH imports exist only in <code>index.mjs</code>. Full discipline in <a href="https://github.com/PerryLink/dsh-memento/blob/main/AGENTS.md">AGENTS.md</a>; design decisions in <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a>.</p>
-<h3>🏷 Topics</h3>
-<p>Suggested GitHub topics: <code>dsh</code> · <code>dsh-plugin</code> · <code>deepseek-harness</code> · <code>memory</code> · <code>agent-memory</code> · <code>approval</code> · <code>audit</code> · <code>sqlite</code> · <code>cordis</code> · <code>llm</code></p>
-<h3>📄 License</h3>
-<p>Apache License 2.0 — see <a href="https://github.com/PerryLink/dsh-memento/blob/main/LICENSE">LICENSE</a>. No third-party code is redistributed; see <a href="https://github.com/PerryLink/dsh-memento/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>.</p>
+<p><code>lib/</code> 零 DSH 依赖（仅 node: 内置模块）；DSH 依赖只出现在 <code>index.mjs</code>。完整纪律见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/AGENTS.md">AGENTS.md</a>；设计决策见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/ARCHITECTURE.md">ARCHITECTURE.md</a>。</p>
+<h3>🏷 话题</h3>
+<p>建议的 GitHub topics：<code>dsh</code> · <code>dsh-plugin</code> · <code>deepseek-harness</code> · <code>memory</code> · <code>agent-memory</code> · <code>approval</code> · <code>audit</code> · <code>sqlite</code> · <code>cordis</code> · <code>llm</code></p>
+<h3>📄 许可证</h3>
+<p>Apache License 2.0——见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/LICENSE">LICENSE</a>。不分发任何第三方代码；见 <a href="https://github.com/PerryLink/dsh-memento/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/PerryLink/dsh-memento/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/PerryLink/dsh-memento/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

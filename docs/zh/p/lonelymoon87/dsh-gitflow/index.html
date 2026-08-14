@@ -190,42 +190,42 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/ci.yml"><img src="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-<a href="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/dsh-compatibility.yml"><img src="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/dsh-compatibility.yml/badge.svg" alt="Latest DSH compatibility"></a>
+<a href="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/dsh-compatibility.yml"><img src="https://github.com/lonelymoon87/dsh-gitflow/actions/workflows/dsh-compatibility.yml/badge.svg" alt="最新 DSH 兼容性"></a>
 <a href="https://github.com/lonelymoon87/dsh-gitflow/releases/latest"><img src="https://img.shields.io/github/v/release/lonelymoon87/dsh-gitflow" alt="Release"></a>
 <a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/LICENSE"><img src="https://img.shields.io/github/license/lonelymoon87/dsh-gitflow" alt="License"></a></p>
-<p>Git status, diff, log, commit, branch, and optional restore-point tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
-<p>The installable v0.1.2 release targets DSH 0.1.0-rc.6. This project currently distributes prebuilt packages through GitHub Releases and is not published on npm.</p>
-<p><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/README.zh-CN.md">简体中文</a></p>
+<p>面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的 Git 状态、diff、日志、提交、分支和可选恢复点工具集。</p>
+<p>可安装的 v0.1.2 面向 DSH 0.1.0-rc.6。本项目当前通过 GitHub Release 分发预构建包，尚未发布 npm 包。</p>
+<p><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/README.md">English</a></p>
 <h3>MVP</h3>
 <ul>
-<li><code>git_status</code> reads branch and working-tree counts.</li>
-<li><code>git_diff</code> reads unstaged or staged unified diffs without touching the index.</li>
-<li><code>git_log</code> returns bounded structured commit history and handles unborn repositories.</li>
-<li><code>git_commit</code> commits only existing staged changes and requires DSH approval.</li>
-<li><code>git_branch</code> lists local branches; create and switch require approval.</li>
-<li><code>/commit</code> loads a staged-change review skill before calling <code>git_commit</code>.</li>
-<li><code>checkpoint_list</code> and two-phase <code>checkpoint_restore</code> delegate to an optional Change Ledger service.</li>
-<li>Optional <code>autoCheckpoint</code> captures a Change Ledger restore point at <code>tools/pre-execute</code> for configured mutation tools.</li>
+<li><code>git_status</code> 读取当前分支和工作树状态计数；</li>
+<li><code>git_diff</code> 读取未暂存或已暂存 diff，不改动 index；</li>
+<li><code>git_log</code> 返回有上限的结构化提交记录，并处理空仓库；</li>
+<li><code>git_commit</code> 只提交已经暂存的改动，并经过 DSH 审批；</li>
+<li><code>git_branch</code> 列出本地分支，创建和切换需要审批；</li>
+<li><code>/commit</code> 先加载暂存改动审查技能，再调用 <code>git_commit</code>；</li>
+<li><code>checkpoint_list</code> 和两阶段 <code>checkpoint_restore</code> 委托给可选的 Change Ledger 服务；</li>
+<li>可选的 <code>autoCheckpoint</code> 在配置的写工具执行前创建 Change Ledger 恢复点。</li>
 </ul>
-<p>Pull-request creation, push, worktree management, and branch deletion are deliberately outside the MVP.</p>
-<h3>Safety model</h3>
-<p>GitFlow never stages files implicitly. It does not run <code>git add</code>, <code>git reset</code>, <code>git stash</code>, <code>git push</code>, hook-bypass flags, or destructive branch commands. Git arguments are shell-quoted and commit messages are passed through stdin. Every Git process uses the mounted DSH shell service, preserving its timeout, sandbox, cancellation, and execution-world behavior.</p>
-<p>Mutating tool calls pass through the DSH approval seam. Direct command handlers do not bypass it: <code>/commit</code> queues a user-invoked skill, and the eventual <code>git_commit</code> tool call asks for approval.</p>
-<h3>Change Ledger integration</h3>
-<p><a href="https://github.com/Anionex/dsh-turn-rewind">dsh-turn-rewind</a> owns workspace snapshots, restore planning, rescue points, stale-plan checks, and post-restore verification. GitFlow does not implement a competing stash or commit-tree restore engine.</p>
-<p>When no compatible <code>ctx.changeLedger</code> service is mounted, ordinary Git tools continue to work and checkpoint tools fail with a configuration message. Because the restore point is already the durable source of truth, GitFlow does not duplicate it into required custom session events.</p>
-<h3>Install</h3>
-<p>The package currently targets DSH <code>0.1.0-rc.6</code> plugin APIs and Node.js <code>^22.19 || &gt;=24</code>.</p>
+<p>PR 创建、push、worktree 管理和分支删除不在 MVP 范围内。</p>
+<h3>安全约束</h3>
+<p>GitFlow 不会隐式暂存文件，也不会执行 <code>git add</code>、<code>git reset</code>、<code>git stash</code>、<code>git push</code>、跳过 hook 的参数或破坏性分支命令。Git 参数经过 shell 引用，提交信息通过 stdin 传给 Git。所有 Git 进程都经过 DSH shell service，因此沿用其超时、沙箱、取消和执行环境。</p>
+<p>会修改状态的工具调用经过 DSH 审批。<code>/commit</code> 只负责排入用户显式调用的技能，最终的 <code>git_commit</code> 工具调用仍会触发审批。</p>
+<h3>与 Change Ledger 的关系</h3>
+<p><a href="https://github.com/Anionex/dsh-turn-rewind">dsh-turn-rewind</a> 负责工作区快照、恢复计划、救援点、过期计划检查和恢复后验证。GitFlow 不另外实现 stash 或 commit-tree 恢复引擎。</p>
+<p>没有挂载兼容的 <code>ctx.changeLedger</code> 服务时，普通 Git 工具照常工作，检查点工具会明确提示配置缺失。恢复点本身已经是持久事实源，因此插件不另用必需的自定义会话事件复制状态。</p>
+<h3>安装</h3>
+<p>当前代码面向 DSH <code>0.1.0-rc.6</code> 插件 API，要求 Node.js <code>^22.19 || &gt;=24</code>。</p>
 <pre><code class="language-sh">dsh plugin --profile web add https://github.com/lonelymoon87/dsh-gitflow/releases/download/v0.1.2/dsh-gitflow-0.1.2.tgz
 </code></pre>
-<p>The release tarball is prebuilt and needs no build allowance. A pinned source install is also supported:</p>
+<p>Release tarball 已预构建，不需要构建权限。也可以固定版本从源码安装。</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:lonelymoon87/dsh-gitflow#v0.1.2
 </code></pre>
-<p>The source install runs this package&#39;s <code>prepare</code> build. pnpm 10 and later reject it until the profile allowlists the exact package key printed by the failed command; apply that instruction and rerun the same <code>dsh plugin add</code> command. Replace <code>web</code> with <code>headless</code> to install into the one-shot agent profile.</p>
-<p>To upgrade, rerun <code>dsh plugin add</code> with the newer release URL. To uninstall:</p>
+<p>源码安装会运行本包的 <code>prepare</code> 构建。pnpm 10 及以上版本默认拒绝执行，第一次安装失败时请按 DSH 输出的提示，将准确的包键加入 profile 的构建白名单，然后重新执行同一条命令。需要装进一次性 Agent profile 时，把命令中的 <code>web</code> 换成 <code>headless</code>。</p>
+<p>升级时用新版本的 Release URL 再执行一次 <code>dsh plugin add</code>。卸载时执行</p>
 <pre><code class="language-sh">dsh plugin --profile web remove dsh-gitflow
 </code></pre>
-<h3>Configuration</h3>
+<h3>配置</h3>
 <pre><code class="language-yaml">- id: gitflow
   name: dsh-gitflow
   config:
@@ -241,20 +241,20 @@ footer p+p{margin-top:.5rem}
       - git_commit
       - git_branch
 </code></pre>
-<p><code>autoCheckpoint</code> is disabled by default. Enabling it without a Change Ledger service does not pretend recovery exists; it leaves calls unchanged.</p>
-<h3>Verification</h3>
-<p>The test suite uses real temporary Git repositories. It covers dirty status, staged and unstaged diffs, commits, branch creation, unborn history, approval decisions, automatic checkpoint delegation, and two-phase restore delegation.</p>
+<p><code>autoCheckpoint</code> 默认关闭。即使开启但没有 Change Ledger，工具调用也会照常执行，插件不会假装已经具备恢复能力。</p>
+<h3>发布验证</h3>
+<p>测试使用真实临时 Git 仓库，覆盖状态、暂存与未暂存 diff、提交、分支、空仓库、审批、自动检查点和两阶段恢复委托。</p>
 <ul>
-<li>The v0.1.2 tarball installs directly from its HTTPS release URL into a clean DSH profile.</li>
-<li>The packed bundle and pinned GitHub source install both appear in <code>dsh --dump-config</code>.</li>
-<li>CI covers Node 22.19 and Node 24; a scheduled workflow repeats the real install against <code>@deepseek-ai/dsh@latest</code>.</li>
-<li>Bugs and compatibility reports are tracked in <a href="https://github.com/lonelymoon87/dsh-gitflow/issues">GitHub Issues</a>.</li>
+<li>v0.1.2 tarball 已从 HTTPS Release URL 直接安装进全新 DSH profile；</li>
+<li>pack 产物与固定版本 GitHub 源码安装均通过 <code>dsh --dump-config</code> 检查；</li>
+<li>CI 覆盖 Node 22.19 与 Node 24，定时任务会用 <code>@deepseek-ai/dsh@latest</code> 重跑真实安装；</li>
+<li>bug 与兼容性问题统一进入 <a href="https://github.com/lonelymoon87/dsh-gitflow/issues">GitHub Issues</a>。</li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/lonelymoon87/dsh-gitflow/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

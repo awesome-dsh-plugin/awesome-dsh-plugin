@@ -189,76 +189,74 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/ICCuse/dsh-knowledge/blob/main/README.zh.md">中文</a> | English</p>
-<p>Bridge the agent into the user&#39;s <strong>global knowledge base</strong> at <code>D:\knowledge</code> — the same Markdown + YAML frontmatter library the Codex <code>kb.cmd</code> CLI writes. Knowledge accumulated by either tool is visible to both: one library, two agents.</p>
-<h3>Tools</h3>
+<p><a href="https://github.com/ICCuse/dsh-knowledge/blob/main/README.md">English</a> | 中文</p>
+<p>把 agent 接进你的<strong>全局知识库</strong> <code>D:\knowledge</code>——与 Codex <code>kb.cmd</code> CLI 写的是同一份 Markdown + YAML frontmatter 库。任一侧沉淀的知识另一侧立即可见：一份库，两个 agent。</p>
+<h3>工具</h3>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Behavior</th>
+<th>工具</th>
+<th>行为</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>kb_add</code></td>
-<td>Write one typed note (lesson/pattern/preference/project/reference/concept/moc/decision/note), byte-compatible with the Python CLI: slugified unique filename, typed directory, YAML frontmatter (<code>title/type/tags/aliases/status/created/updated</code> + project/domain).</td>
+<td>写一条类型化笔记（lesson/pattern/preference/project/reference/concept/moc/decision/note），与 Python CLI 逐字节兼容：slug 化唯一文件名、按类型进目录、YAML frontmatter（<code>title/type/tags/aliases/status/created/updated</code> + project/domain）。</td>
 </tr>
 <tr>
 <td><code>kb_search</code></td>
-<td>Keyword scan over notes (title &gt; tags &gt; content), returns path/title/type + snippet.</td>
+<td>关键词扫描（标题 &gt; 标签 &gt; 正文），返回 路径/标题/类型 + 片段。</td>
 </tr>
 <tr>
 <td><code>kb_show</code></td>
-<td>Locate a note by title/path/tag and return its full text.</td>
+<td>按标题/路径/标签定位并返回全文。</td>
 </tr>
 <tr>
 <td><code>kb_timeline</code></td>
-<td>Append a timestamped line to <code>notes/99_时间线.md</code> — mandatory after every writeback (&quot;失联等于白写&quot;).</td>
+<td>追加带时间戳的一行到 <code>notes/99_时间线.md</code>——每次写回后必须调用（&quot;失联等于白写&quot;）。</td>
 </tr>
 </tbody></table>
-<p>The heavy read side (ask/reflect/map/ingest) stays on the Python CLI; this package owns the deterministic write + quick-read surface so no shell encoding ever touches your Chinese content.</p>
-<h3>Config</h3>
+<p>重读侧（ask/reflect/map/ingest）仍走 Python CLI；本包负责确定性写入 + 快速读取，中文内容全程不经 shell 编码。</p>
+<h3>配置</h3>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>kbRoot</code></td>
 <td><code>D:\knowledge</code></td>
-<td>Knowledge base root.</td>
+<td>知识库根目录。</td>
 </tr>
 <tr>
 <td><code>maxSearchResults</code></td>
 <td><code>8</code></td>
-<td>Search result cap.</td>
+<td>检索结果上限。</td>
 </tr>
 </tbody></table>
-<p>Companion discipline: the <code>knowledge-writeback</code> skill (writeback three questions + retrieval protocol + causal-paradigm worldview).</p>
-<h3>Notes on compatibility</h3>
+<p>配套纪律：<code>knowledge-writeback</code> skill（写回三问 + 检索协议 + 因果范式世界观）。</p>
+<h3>兼容性说明</h3>
 <ul>
-<li><code>slugify</code> replicates <code>kb/ingest.py</code>: NFKC normalize, collapse chars outside <code>[\w\u4e00-\u9fff]</code>, 60-char cap, <code>untitled</code> fallback.</li>
-<li><code>unique_path</code> replicates <code>stem.md</code> → <code>stem-2.md</code> dedup.</li>
-<li>Frontmatter is emitted as quoted-YAML scalars and flow arrays, readable by python-frontmatter. If <code>kb/frontmatter.py</code> changes, update this package to match.</li>
+<li><code>slugify</code> 复刻 <code>kb/ingest.py</code>：NFKC 规范化、<code>[\w\u4e00-\u9fff]</code> 外字符折叠、60 字符截断、<code>untitled</code> 兜底。</li>
+<li><code>unique_path</code> 复刻 <code>stem.md</code> → <code>stem-2.md</code> 去重。</li>
+<li>frontmatter 以引号标量与流式数组输出，python-frontmatter 可读。若 <code>kb/frontmatter.py</code> 变动，需同步本包。</li>
 </ul>
-<h3>Install</h3>
-<p>Not on npm yet - install from this repository:</p>
+<h3>安装</h3>
+<p>尚未发布到 npm —— 直接从此仓库安装：</p>
 <pre><code class="language-sh">npm install github:ICCuse/dsh-knowledge
-# or: pnpm add github:ICCuse/dsh-knowledge
+# 或：pnpm add github:ICCuse/dsh-knowledge
 </code></pre>
-<p>Then mount the bundle (declared in package.json &#39;dsh.bundle&#39;) and point it at your knowledge base:</p>
-<pre><code class="language-yaml">- id: knowledge
+<p>然后在 profile 组装中挂载（package.json 已声明 <code>dsh.bundle</code>）：</p>
+<pre><code class="language-yaml">- id: dsh-knowledge
   name: &#39;dsh-knowledge&#39;
-  config:
-    kbRoot: &#39;D:\knowledge&#39;
 </code></pre>
-<p>Companion discipline: the &#39;knowledge-writeback&#39; skill (writeback three questions + retrieval protocol).</p>
+<p>发布后亦可 <code>dsh plugin --profile web add dsh-knowledge</code>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/ICCuse/dsh-knowledge/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/ICCuse/dsh-knowledge/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

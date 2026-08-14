@@ -198,82 +198,82 @@ footer p+p{margin-top:.5rem}
 <a href="https://www.npmjs.com/package/dsh-prompt-stash"><img src="https://img.shields.io/npm/v/dsh-prompt-stash.svg" alt="npm version"></a>
 <a href="https://www.npmjs.com/package/dsh-prompt-stash"><img src="https://img.shields.io/npm/dm/dsh-prompt-stash.svg" alt="npm downloads"></a></p>
 <p><a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/README.md">简体中文</a> | <a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/README.en.md">English</a></p>
-<p>DeepSeek Harness Web 的本地输入暂存插件。把尚未发送的纯文本压入当前会话的 LIFO 暂存栈，先处理临时问题，之后再安全恢复原输入。</p>
+<p>A local prompt-stash plugin for DeepSeek Harness Web. Push unsent plain-text input onto a per-session LIFO stack, handle a quick detour, and safely restore the original prompt afterward.</p>
 <blockquote>
-<p>输入暂存不是草稿同步。DSH 已负责保存当前输入框草稿；本插件提供的是一组可明确存入、恢复和删除的临时输入副本。</p>
+<p>Prompt Stash is not draft synchronization. DSH already persists the current composer draft; this plugin provides explicit temporary copies that you can stash, restore, and delete.</p>
 </blockquote>
-<h3>功能</h3>
+<h3>Features</h3>
 <ul>
-<li>每个 DSH 会话独立保存，最新内容优先，最多保留 10 条。</li>
-<li>暂存后立即在输入框上方显示折叠栏，可展开预览、恢复、删除或清空。</li>
-<li>当前输入非空时不会直接覆盖；恢复前必须确认先暂存当前内容。</li>
-<li>使用 DSH 官方 <code>inputActions.setDraft()</code> 清空和恢复，不操作 <code>textarea</code> 或内部 Store。</li>
-<li>纯客户端实现，不联网；内容只保存在当前浏览器的 <code>localStorage</code>。</li>
-<li>支持中英文、深浅主题、键盘操作和 DSH 原生队列组合布局。</li>
-<li>可在“设置 → 插件 → 插件配置”中录入单键或组合键快捷键，默认使用 <code>Ctrl+S</code>。</li>
+<li>Keeps an independent stack for each DSH session, newest first, with up to 10 entries.</li>
+<li>Shows a collapsed stash bar above the composer immediately after stashing; expand it to preview, restore, delete, or clear entries.</li>
+<li>Never silently overwrites non-empty input; restoring requires confirmation to stash the current input first.</li>
+<li>Clears and restores input through the official DSH <code>inputActions.setDraft()</code> API without manipulating the <code>textarea</code> or internal stores.</li>
+<li>Runs entirely in the browser with no network requests; content stays in the current browser&#39;s <code>localStorage</code>.</li>
+<li>Supports Chinese and English, light and dark themes, keyboard navigation, and a layout that integrates with DSH&#39;s native queued-message panel.</li>
+<li>Records a single-key or key-combination shortcut under <strong>Settings → Plugins → Plugin configuration</strong>; the default is <code>Ctrl+S</code>.</li>
 </ul>
-<p>当前版本仅支持纯文本。带图片、附件或文件引用的输入不会被暂存。</p>
-<h3>效果</h3>
-<p><img src="https://raw.githubusercontent.com/Wine-Red/dsh-prompt-stash/main/docs/assets/dsh-prompt-stash-demo.png" alt="暂存消息与 DSH 原生排队消息组合显示"></p>
-<p>暂存内容默认折叠；展开后可查看创建时间与两行文本预览，并执行恢复、删除或清空操作。</p>
-<h3>要求</h3>
+<p>The current version supports plain text only. Input containing images, attachments, or file references cannot be stashed.</p>
+<h3>Preview</h3>
+<p><img src="https://raw.githubusercontent.com/Wine-Red/dsh-prompt-stash/main/docs/assets/dsh-prompt-stash-demo.png" alt="Stashed prompts displayed together with the native DSH queued-message panel"></p>
+<p>Stashed prompts are collapsed by default. Expand the panel to see the creation time and a two-line text preview, then restore or delete an entry, or clear the current session&#39;s stack.</p>
+<h3>Requirements</h3>
 <ul>
 <li>DeepSeek Harness <code>0.1.0-rc.6</code></li>
-<li>Web profile</li>
-<li>Node.js 20 或更高版本（仅源码开发需要）</li>
+<li>A Web profile</li>
+<li>Node.js 20 or later (source development only)</li>
 </ul>
-<h3>安装</h3>
-<h4>npm registry（推荐）</h4>
-<p>直接安装到 DSH Web profile：</p>
+<h3>Installation</h3>
+<h4>npm registry (recommended)</h4>
+<p>Install directly into the DSH Web profile:</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-prompt-stash
 </code></pre>
-<p>npm 包已包含构建产物，不需要允许安装期构建脚本。安装后重启 DSH Web。</p>
-<p>更新到最新版本：</p>
+<p>The npm package contains prebuilt artifacts, so installation-time build scripts are not required. Restart DSH Web after installation.</p>
+<p>Update to the latest version:</p>
 <pre><code class="language-sh">dsh plugin --profile web update dsh-prompt-stash
 </code></pre>
-<h4>GitHub Release tarball（备用）</h4>
-<p>从 <a href="https://github.com/Wine-Red/dsh-prompt-stash/releases/latest">Releases</a> 下载 <code>dsh-prompt-stash-0.2.2.tgz</code>，然后安装到 Web profile：</p>
+<h4>GitHub Release tarball (fallback)</h4>
+<p>Download <code>dsh-prompt-stash-0.2.2.tgz</code> from <a href="https://github.com/Wine-Red/dsh-prompt-stash/releases/latest">Releases</a>, then install it into the Web profile:</p>
 <pre><code class="language-sh">dsh plugin --profile web add ./dsh-prompt-stash-0.2.2.tgz
 </code></pre>
-<p>tarball 同样包含预构建产物。安装后重启 DSH Web。</p>
-<h4>本地源码 checkout</h4>
+<p>The tarball also contains prebuilt artifacts. Restart DSH Web after installation.</p>
+<h4>Local source checkout</h4>
 <pre><code class="language-sh">git clone https://github.com/Wine-Red/dsh-prompt-stash.git
 cd dsh-prompt-stash
 pnpm install --frozen-lockfile
 pnpm build
 dsh plugin --profile web add .
 </code></pre>
-<p><code>dsh plugin</code> 会把组合包加入目标 profile 的 <code>dsh.profile.bundles</code>。可在启动前检查最终配置：</p>
+<p><code>dsh plugin</code> adds the bundle to <code>dsh.profile.bundles</code> in the target profile. You can inspect the resolved configuration before startup:</p>
 <pre><code class="language-sh">dsh --profile web --dump-config
 </code></pre>
-<p>输出中应包含 <code>dsh-prompt-stash</code> 组合层与 <code>prompt-stash</code> 插件行。</p>
-<h4>卸载</h4>
+<p>The output should contain the <code>dsh-prompt-stash</code> bundle layer and the <code>prompt-stash</code> plugin entry.</p>
+<h4>Uninstall</h4>
 <pre><code class="language-sh">dsh plugin --profile web remove dsh-prompt-stash
 </code></pre>
-<p>卸载插件不会主动删除浏览器中已有的 <code>dsh.promptStash.v1</code> 数据。如需清除，可在浏览器站点数据中删除对应 <code>localStorage</code> 项。</p>
-<h3>使用</h3>
+<p>Uninstalling the plugin does not remove existing <code>dsh.promptStash.v1</code> data from the browser. To remove it, delete the corresponding <code>localStorage</code> entry from the site&#39;s browser data.</p>
+<h3>Usage</h3>
 <ol>
-<li>在输入框中编写一段纯文本。</li>
-<li>点击工具栏中的“暂存”，或在消息输入框内按下暂存快捷键。输入框会被清空，上方立即出现折叠的暂存消息栏。</li>
-<li>输入并发送临时问题。</li>
-<li>展开暂存消息，点击目标内容恢复。</li>
-<li>如果输入框已有内容，选择“暂存当前内容并恢复此条”，或取消操作。</li>
+<li>Write a plain-text prompt in the composer.</li>
+<li>Select <strong>Stash</strong> in the composer toolbar, or press the stash shortcut while the message composer is focused. The input is cleared and a collapsed stash bar appears immediately above it.</li>
+<li>Enter and send the temporary question.</li>
+<li>Expand the stash bar and select the prompt you want to restore.</li>
+<li>If the composer already contains text, choose <strong>Stash current input and restore this item</strong>, or cancel.</li>
 </ol>
-<p>添加或删除成功时不会弹出通知；只有存储或输入更新失败时才会显示错误提示。</p>
-<p>消息输入框为空时按下快捷键，会恢复并弹出最新一条暂存。要恢复下一条，请先发送或清空当前输入；非空输入按下快捷键会作为新条目暂存。快捷键不会覆盖空白字符、图片或文件引用等当前输入。</p>
-<h4>配置快捷键</h4>
-<p>打开“设置 → 插件 → 插件配置 → 输入暂存”，点击快捷键输入框后直接按下一个按键或组合键，再保存即可立即生效。默认快捷键为 <code>Ctrl+S</code>，也可以配置为 <code>F8</code> 等单键。输入非空时快捷键执行暂存，输入为空时恢复最新一条。快捷键只在消息输入框内生效；使用单个可打印字符会占用该字符原本的输入行为。</p>
-<h3>数据与安全边界</h3>
+<p>Successful add and delete operations do not show toast notifications. Error notifications appear only when storage or composer updates fail.</p>
+<p>Press the shortcut while the message composer is empty to restore and pop the latest stash. To restore the next item, send or clear the current input first; pressing the shortcut with non-empty input pushes it as a new stash. The shortcut never restores over whitespace, images, or file references already in the composer.</p>
+<h4>Configure the shortcut</h4>
+<p>Open <strong>Settings → Plugins → Plugin configuration → Prompt stash</strong>, focus the shortcut field, press one key or a key combination, and save. Changes take effect immediately. The default is <code>Ctrl+S</code>; a single key such as <code>F8</code> is also supported. The shortcut stashes non-empty input and restores the latest stash when the composer is empty. It only runs in the message composer. A printable single-key shortcut consumes that character&#39;s normal typing behavior.</p>
+<h3>Data and security boundaries</h3>
 <ul>
-<li>存储键：<code>dsh.promptStash.v1</code></li>
-<li>设置键：<code>dsh.promptStash.settings.v1</code></li>
-<li>范围：当前浏览器、按 <code>sessionId</code> 隔离</li>
-<li>内容：文本、ID、创建与更新时间、结构版本</li>
-<li>不存储：图片二进制、附件正文、文件内容、凭据或环境信息</li>
-<li>不发送网络请求，不收集遥测</li>
+<li>Storage key: <code>dsh.promptStash.v1</code></li>
+<li>Settings key: <code>dsh.promptStash.settings.v1</code></li>
+<li>Scope: the current browser, isolated by <code>sessionId</code></li>
+<li>Stored data: text, ID, creation and update timestamps, and schema version</li>
+<li>Not stored: image data, attachment contents, file contents, credentials, or environment information</li>
+<li>No network requests and no telemetry</li>
 </ul>
-<p>浏览器站点数据被清理时，暂存内容也会被删除。</p>
-<h3>开发与打包</h3>
+<p>Clearing the site&#39;s browser data also removes all stashed prompts.</p>
+<h3>Development and packaging</h3>
 <pre><code class="language-sh">pnpm install --frozen-lockfile
 pnpm format
 pnpm typecheck
@@ -281,19 +281,19 @@ pnpm test
 pnpm build
 pnpm pack
 </code></pre>
-<p>项目按照 DSH 官方组合包格式提供：</p>
+<p>The project follows the official DSH bundle package layout:</p>
 <ul>
-<li><code>package.json</code> 中的 <code>dsh.bundle.patch</code> 声明配置层。</li>
-<li><code>cordis.patch.yml</code> 通过包名挂载插件。</li>
-<li><code>lib/</code> 是预构建运行入口，并被收录进 tarball。</li>
-<li>客户端注册 <code>conversation.input.left</code>、<code>conversation.input.dock</code> 和 <code>settings.plugin.item</code> 插槽。</li>
+<li><code>dsh.bundle.patch</code> in <code>package.json</code> declares the configuration layer.</li>
+<li><code>cordis.patch.yml</code> mounts the plugin by package name.</li>
+<li><code>lib/</code> contains the prebuilt runtime entry points and is included in the tarball.</li>
+<li>The client registers the <code>conversation.input.left</code>, <code>conversation.input.dock</code>, and <code>settings.plugin.item</code> slots.</li>
 </ul>
-<p>打包与安装机制参见 <a href="https://deepseek-harness.github.io/deepseek-harness/develop/basic/publish">DeepSeek Harness 官方文档</a>。</p>
-<h3>许可证</h3>
+<p>See the <a href="https://deepseek-harness.github.io/deepseek-harness/develop/basic/publish">official DeepSeek Harness documentation</a> for packaging and installation details.</p>
+<h3>License</h3>
 <p><a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

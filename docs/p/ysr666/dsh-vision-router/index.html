@@ -216,10 +216,12 @@ footer p+p{margin-top:.5rem}
 <li><strong>Original pixels, real answers.</strong> The vision chain reads the image at original resolution (auto-downscaled only to protect latency/quota); the agent&#39;s question travels with the image, so answers are about <em>your</em> question, not a generic description.</li>
 <li><strong>Automatic failover with classified errors.</strong> Region blocks, ToS filtering, 402 quota, 429 rate limits (with Retry-After backoff), context overflow, network failures — the chain walks providers one by one and only reports after all of them failed, with actionable advice.</li>
 <li><strong>Image memory.</strong> Vision answers are cached by attachment content hash; later text turns substitute the recorded description (marked as untrusted evidence), so DeepSeek genuinely remembers earlier images without re-spending vision calls.</li>
-<li><strong>A verifiable pixel loop.</strong> Reference → <code>vision_html_screenshot</code> → <code>vision_pixel_diff</code> (ratio + red heatmap + worst-region ranking) → fix → repeat until the diff reaches zero. UI restoration becomes measurable instead of eyeballed.</li>
+<li><strong>A verifiable pixel loop.</strong> Reference → <code>vision_html_screenshot</code> → <code>vision_pixel_diff</code> (ratio + red heatmap + worst-region ranking) → fix → repeat until the mismatch converges. UI restoration becomes measurable instead of eyeballed.</li>
 <li><strong>Progressive schema exposure.</strong> Only a zero-arg <code>vision_activate</code> bootstrap is always visible; image turns auto-mount all ten deep tools with a one-time usage note, and a <code>vision-tools</code> skill is registered for text-only turns.</li>
 <li><strong>Selective proxy.</strong> Only the configured vision provider hosts go through your local proxy; DeepSeek stays direct.</li>
 </ul>
+<h4>Pixel loop in practice</h4>
+<p>The agent rebuilt the UI from the reference image, then verified the final result with <code>vision_pixel_diff</code>: <strong>2.54% final diff</strong> (32,939 / 1,296,000 differing pixels, threshold 16/channel).</p>
 <h3>How it works</h3>
 <p>The vision model is <strong>only the eyes</strong>; DeepSeek is <strong>always the brain</strong>. An image turn is never hijacked by a one-shot vision answer — the agent drives the tools itself and can keep operating on the image across as many steps as the task needs.</p>
 <h3>Tools</h3>

@@ -189,140 +189,140 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<h3>Preview</h3>
+<h3>动画预览</h3>
 <blockquote>
-<p>The preview uses every second frame to keep the repository page lightweight. The plugin ships the full <strong>618-frame</strong> lossless animation.</p>
+<p>为减小仓库页面负担，预览图每隔一帧采样一次；插件实际携带完整的 <strong>618 帧</strong>无损动画。</p>
 </blockquote>
-<h3>Screenshots</h3>
-<p>Each screenshot is rendered from the committed <code>assets/whale-dive.webp</code>, so the gallery represents the frames users actually receive—not separate concept art.</p>
-<h3>Highlights</h3>
+<h3>截图</h3>
+<p>所有截图均直接从仓库中的 <code>assets/whale-dive.webp</code> 渲染，因此展示的是用户实际安装后收到的动画帧，而不是单独绘制的概念图。</p>
+<h3>特性</h3>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Feature</th>
-<th>What it means</th>
+<th>特性</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>🌊</td>
-<td><strong>Seamless closed loop</strong></td>
-<td>A forward/return trajectory avoids the visible final-frame-to-first-frame snap.</td>
+<td><strong>无缝闭环</strong></td>
+<td>往返闭环轨迹避免末帧切回首帧时出现明显跳变。</td>
 </tr>
 <tr>
 <td>🐋</td>
-<td><strong>Recognizable black whale</strong></td>
-<td>A monochrome whale silhouette stays legible beside the compact turn-status label.</td>
+<td><strong>清晰的黑色鲸鱼</strong></td>
+<td>单色鲸鱼轮廓在紧凑的状态文字旁仍保持清晰可辨。</td>
 </tr>
 <tr>
 <td>📦</td>
-<td><strong>Self-contained bundle</strong></td>
-<td>Animated WebP and PNG fallback are embedded in the built client; no runtime URL or source-frame directory is required.</td>
+<td><strong>自包含 Bundle</strong></td>
+<td>动态 WebP 与静态 PNG 已嵌入客户端，无需运行时 URL 或原始帧目录。</td>
 </tr>
 <tr>
 <td>♿</td>
-<td><strong>Reduced-motion aware</strong></td>
-<td><code>prefers-reduced-motion</code> switches the animation to the included static PNG.</td>
+<td><strong>支持减少动态效果</strong></td>
+<td>检测到 <code>prefers-reduced-motion</code> 时自动切换为静态 PNG。</td>
 </tr>
 <tr>
 <td>🔌</td>
-<td><strong>Persistent DSH plugin</strong></td>
-<td>The <code>dsh.bundle</code> manifest and <code>cordis.patch.yml</code> mount the client automatically in the Web profile.</td>
+<td><strong>持久化 DSH 插件</strong></td>
+<td><code>dsh.bundle</code> manifest 与 <code>cordis.patch.yml</code> 会在 Web profile 中自动挂载客户端。</td>
 </tr>
 </tbody></table>
-<h3>Install</h3>
-<p>Install directly from GitHub into the DSH Web profile:</p>
+<h3>安装</h3>
+<p>从 GitHub 直接安装到 DSH Web profile：</p>
 <pre><code class="language-powershell">dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation
 </code></pre>
-<p>Then hard-refresh the DSH Web page. Restart DSH if the running profile has already cached its client bundle.</p>
-<h4>Uninstall</h4>
+<p>安装后请硬刷新 DSH Web 页面。如果当前 profile 已缓存客户端 Bundle，请重启 DSH。</p>
+<h4>卸载</h4>
 <pre><code class="language-powershell">dsh plugin --profile web remove dsh-whale-animation
 </code></pre>
-<h3>Animation profile</h3>
+<h3>动画规格</h3>
 <table>
 <thead>
 <tr>
-<th>Property</th>
-<th align="right">Value</th>
+<th>属性</th>
+<th align="right">数值</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Canvas</td>
+<td>画布</td>
 <td align="right">184 × 184 px</td>
 </tr>
 <tr>
-<td>Source frames</td>
+<td>原始帧数</td>
 <td align="right">618</td>
 </tr>
 <tr>
-<td>Frame duration</td>
+<td>单帧时长</td>
 <td align="right">17 ms</td>
 </tr>
 <tr>
-<td>Loop duration</td>
-<td align="right">10.506 s</td>
+<td>循环时长</td>
+<td align="right">10.506 秒</td>
 </tr>
 <tr>
-<td>Encoding</td>
-<td align="right">Lossless animated WebP with alpha</td>
+<td>编码</td>
+<td align="right">带 Alpha 的无损动画 WebP</td>
 </tr>
 <tr>
-<td>Reduced-motion asset</td>
-<td align="right">Transparent PNG</td>
+<td>减少动态效果资源</td>
+<td align="right">透明 PNG</td>
 </tr>
 <tr>
-<td>Runtime asset requests</td>
-<td align="right">None</td>
+<td>运行时资源请求</td>
+<td align="right">无</td>
 </tr>
 </tbody></table>
-<p>The final encoded WebP is decoded during validation—not merely checked at the source-frame level. The current closed-loop seam has an alpha-difference score of <code>0.01858</code>, and its 17 ms cadence produces no skipped source frames under the project’s 60 Hz sampling check.</p>
-<h3>How it works</h3>
+<p>项目会对最终编码后的 WebP 进行实际解码验证，而不只是检查源帧。当前闭环接缝的 Alpha 差异为 <code>0.01858</code>；在项目的 60 Hz 采样检查中，17 ms 帧节奏不会跳过源帧。</p>
+<h3>工作原理</h3>
 <pre><code class="language-mermaid">flowchart LR
-  A[Animated WebP + static PNG] --&gt; B[scripts/build-client.mjs]
-  B --&gt; C[Embedded data URLs]
-  C --&gt; D[DSH client bundle]
-  D --&gt; E[Turn-status ::after element]
+  A[动画 WebP + 静态 PNG] --&gt; B[scripts/build-client.mjs]
+  B --&gt; C[嵌入式 data URL]
+  C --&gt; D[DSH 客户端 Bundle]
+  D --&gt; E[状态文字 ::after 元素]
   F[prefers-reduced-motion] --&gt; D
 </code></pre>
-<p>The client adds a package-owned stylesheet to the DSH turn-status element. Both assets are embedded as data URLs in <code>lib/client.js</code>, so activation does not depend on the repository checkout after installation.</p>
-<h3>Development</h3>
-<p>Requirements: <strong>Node.js 20+</strong>. Python and Pillow are needed only when rebuilding the README artwork.</p>
+<p>客户端向 DSH 状态文字元素添加一个归属于插件生命周期的样式表。两个资源都以内嵌 data URL 形式写入 <code>lib/client.js</code>，因此安装后运行时不依赖仓库检出目录。</p>
+<h3>开发</h3>
+<p>要求：<strong>Node.js 20+</strong>。只有重新生成 README 配图时才需要 Python 与 Pillow。</p>
 <pre><code class="language-powershell">node scripts/build-client.mjs
 node scripts/check.mjs
 python scripts/build-readme-assets.py
 python scripts/check-readme-assets.py
 </code></pre>
-<h4>Repository layout</h4>
+<h4>仓库结构</h4>
 <pre><code class="language-text">assets/
-  whale-dive.webp        Full lossless animation
-  whale-static.png       Reduced-motion fallback
+  whale-dive.webp        完整无损动画
+  whale-static.png       减少动态效果静态回退
 docs/
-  hero.png               README hero artwork
-  preview.webp           Lightweight animated README preview
-  screenshots/           Breach, apex, and deep-dive frame gallery
+  hero.png               README 头图
+  preview.webp           README 轻量动画预览
+  screenshots/           破水、顶点与深潜动作截图
 lib/
-  client.js              Prebuilt DSH browser client
+  client.js              预构建 DSH 浏览器客户端
 scripts/
-  build-client.mjs       Embeds source assets into the client
-  build-readme-assets.py Rebuilds repository artwork from the real animation
-  check-readme-assets.py Validates artwork timing, size, and README links
-  check.mjs              Validates registration, lifecycle, and embedded assets
-cordis.patch.yml         Persistent DSH bundle composition patch
+  build-client.mjs       将源资源嵌入客户端
+  build-readme-assets.py 使用真实动画重新生成仓库配图
+  check-readme-assets.py 验证配图时序、尺寸与 README 链接
+  check.mjs              验证注册、生命周期与嵌入资源
+cordis.patch.yml         持久化 DSH Bundle 组合补丁
 </code></pre>
-<p><code>lib/client.js</code> is committed intentionally: GitHub installs work without a package build or external asset fetch.</p>
-<h3>Compatibility</h3>
+<p><code>lib/client.js</code> 会有意提交到仓库，确保 GitHub 安装无需执行构建或下载外部资源。</p>
+<h3>兼容性</h3>
 <ul>
-<li>Targets the <strong>DeepSeek Harness Web UI</strong>.</li>
-<li>Requires a DSH version compatible with <code>@deepseek-ai/dsh-client-runtime ^0.1.0-rc.6</code>.</li>
-<li>Relies on the current turn-status CSS class pattern; a future DSH shell redesign may require a selector update.</li>
+<li>目标平台为 <strong>DeepSeek Harness Web UI</strong>。</li>
+<li>需要兼容 <code>@deepseek-ai/dsh-client-runtime ^0.1.0-rc.6</code> 的 DSH 版本。</li>
+<li>当前依赖 DSH 状态文字的 CSS 类名模式；未来 DSH Shell 若重新设计，可能需要更新选择器。</li>
 </ul>
-<h3>Attribution</h3>
-<p>This project is independent and is not affiliated with or endorsed by DeepSeek. The animation is an original UI illustration designed to harmonize with DeepSeek Harness&#39; whale-themed status experience. See <a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/NOTICE.md">NOTICE.md</a> for visual-design and trademark details.</p>
-<h3>License</h3>
-<p>Released under the <a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/LICENSE">MIT License</a>.</p>
+<h3>声明</h3>
+<p>本项目为独立项目，与 DeepSeek 无关联，也未获得其背书。动画是为呼应 DeepSeek Harness 鲸鱼主题状态体验而制作的原创 UI 插图。视觉设计与商标说明请参阅 <a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/NOTICE.md">NOTICE.md</a>。</p>
+<h3>许可证</h3>
+<p>以 <a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/LICENSE">MIT License</a> 发布。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/LeemanCheung/dsh-whale-animation/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

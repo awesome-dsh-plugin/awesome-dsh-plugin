@@ -189,9 +189,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<h2><a href="https://github.com/btspoony/mstar-harness">Morning Star</a></h2>
+<h2><a href="https://github.com/btspoony/mstar-harness">Morning Star (启明星)</a></h2>
 <p>Harness Workflow Engine · Agent Plugin</p>
-<p>English / <a href="https://github.com/btspoony/mstar-harness/blob/main/README_CN.md">中文</a></p>
+<p><a href="https://github.com/btspoony/mstar-harness/blob/main/README.md">English</a> / 中文</p>
 <p>GitHub · Issues</p>
 <p><a href="https://github.com/btspoony/mstar-harness/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/btspoony/mstar-harness/ci.yml?branch=main&style=flat-square&label=CI&labelColor=black" alt="CI"></a>
 <a href="https://github.com/btspoony/mstar-harness/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square" alt="License"></a>
@@ -199,61 +199,61 @@ footer p+p{margin-top:.5rem}
 <a href="https://github.com/btspoony/mstar-harness/commits/main"><img src="https://img.shields.io/github/last-commit/btspoony/mstar-harness?color=c4f042&labelColor=black&style=flat-square" alt="Last commit"></a>
 <a href="https://www.npmjs.com/package/@mstar-harness/cli"><img src="https://img.shields.io/npm/v/@mstar-harness/cli?style=flat-square&label=cli&labelColor=black&color=c4f042" alt="npm cli"></a>
 <a href="https://dshfind.com/zh/plugins"><img src="https://img.shields.io/badge/DSHFIND-plugins-c4f042?style=flat-square&labelColor=black" alt="DSHFIND"></a></p>
-<p><strong>Morning Star</strong> is an Agent Plugin for harness engineering workflows: a TypeScript <strong>Harness Workflow Engine</strong> (<code>@mstar-harness/engine</code>) enforces deterministic workflow gates, while <code>mstar-*</code> judgment skills drive multi-agent code delivery.</p>
+<p><strong>Morning Star / 启明星</strong> 是面向 harness 工程工作流的 Agent Plugin：TypeScript <strong>Harness Workflow Engine</strong>（<code>@mstar-harness/engine</code>）强制执行确定性工作流门禁，<code>mstar-*</code> 判断型 skills 驱动多智能体代码交付。</p>
 <ul>
-<li><strong>Deterministic gates, enforced by a TS engine</strong> — path/status/lease/dispatch/sdd/iteration/lint gates run in <code>@mstar-harness/engine</code>, not as prompt suggestions</li>
-<li><strong>Judgment stays in <code>mstar-*</code> skills</strong> — skills remain the single source of truth (SSOT) for roles, gates, and workflow judgment</li>
-<li><strong>One engine across hosts</strong> — the same engine + skills power dsh (DeepSeek Harness), omp, OpenCode, Cursor, Kimi Code, ZCode, and Codex</li>
-<li><strong>Agent Plugin packaging</strong> — one-command install; portable across any Agent Plugins v1.0.0 client</li>
-<li><strong>Recommended host</strong> (best → usable): <strong>dsh = omp ≥ OpenCode ≥ Cursor &gt; Kimi = ZCode &gt; Codex</strong></li>
+<li><strong>确定性门禁，由 TS 引擎强制执行</strong> —— path/status/lease/dispatch/sdd/iteration/lint 门禁运行在 <code>@mstar-harness/engine</code> 中，而非仅靠 prompt 建议</li>
+<li><strong>判断留在 <code>mstar-*</code> skills</strong> —— skills 仍是角色、门禁与工作流判断的唯一事实来源（SSOT）</li>
+<li><strong>一个引擎跨宿主</strong> —— 同一引擎 + skills 驱动 dsh（DeepSeek Harness）、omp、OpenCode、Cursor、Kimi Code、ZCode、Codex</li>
+<li><strong>Agent Plugin 打包</strong> —— 一条命令安装；可移植到任意 Agent Plugins v1.0.0 客户端</li>
+<li><strong>推荐宿主</strong>（最佳 → 可用）：<strong>dsh = omp ≥ OpenCode ≥ Cursor &gt; Kimi = ZCode &gt; Codex</strong></li>
 </ul>
-<p><strong>What ships</strong></p>
+<p><strong>交付内容</strong></p>
 <table>
 <thead>
 <tr>
-<th>Component</th>
-<th>What it is</th>
+<th>组件</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>Harness Workflow Engine</td>
-<td><code>@mstar-harness/engine</code> — TS enforcement of deterministic workflow gates</td>
+<td><code>@mstar-harness/engine</code> —— 确定性工作流门禁的 TS 强制执行层</td>
 </tr>
 <tr>
 <td>mstar CLI</td>
-<td><code>@mstar-harness/cli</code> — installer bootstrap + <code>mstar</code> workflow verbs</td>
+<td><code>@mstar-harness/cli</code> —— 安装引导 + <code>mstar</code> 工作流动词</td>
 </tr>
 <tr>
 <td><code>mstar-*</code> skills</td>
-<td>Role, gate, and workflow judgment (single source of truth)</td>
+<td>角色、门禁与工作流判断（唯一事实来源）</td>
 </tr>
 <tr>
-<td>Host adapters</td>
-<td>dsh, omp, OpenCode, Cursor, Kimi Code, ZCode, Codex</td>
+<td>宿主适配</td>
+<td>dsh、omp、OpenCode、Cursor、Kimi Code、ZCode、Codex</td>
 </tr>
 </tbody></table>
-<p>Release notes: <a href="https://github.com/btspoony/mstar-harness/blob/main/CHANGELOG.md">CHANGELOG.md</a> / <a href="https://github.com/btspoony/mstar-harness/blob/main/CHANGELOG_CN.md">CHANGELOG_CN.md</a>.</p>
-<h3>Install</h3>
+<p>更新说明：<a href="https://github.com/btspoony/mstar-harness/blob/main/CHANGELOG.md">CHANGELOG.md</a> / <a href="https://github.com/btspoony/mstar-harness/blob/main/CHANGELOG_CN.md">CHANGELOG_CN.md</a>。</p>
+<h3>安装</h3>
 <blockquote>
-<p><strong>dsh installs through its own plugin manager — not the CLI.</strong> <code>npx @mstar-harness/cli init</code> has <strong>no dsh target</strong> (it covers omp / OpenCode / Cursor / Kimi / ZCode / Codex only). On dsh (DeepSeek Harness), install the profile bundle with the host&#39;s own command: <code>dsh plugin --profile web add @mstar-harness/dsh</code>.</p>
+<p><strong>dsh 经自带插件管理器安装，不走 CLI。</strong> <code>npx @mstar-harness/cli init</code> <strong>没有 dsh target</strong>（仅覆盖 omp / OpenCode / Cursor / Kimi / ZCode / Codex）。在 dsh（DeepSeek Harness）上，用宿主自带命令安装 profile bundle：<code>dsh plugin --profile web add @mstar-harness/dsh</code>。</p>
 </blockquote>
 <pre><code class="language-bash">npx @mstar-harness/cli init
-# or: bunx @mstar-harness/cli init
+# 或：bunx @mstar-harness/cli init
 </code></pre>
 <table>
 <thead>
 <tr>
-<th>Host</th>
-<th>Command</th>
+<th>宿主</th>
+<th>命令</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>dsh (DeepSeek Harness)</td>
+<td>dsh（DeepSeek Harness）</td>
 <td><code>dsh plugin --profile web add @mstar-harness/dsh</code></td>
 </tr>
 <tr>
 <td>omp</td>
-<td><code>npx @mstar-harness/cli init --target omp</code> (links <code>~/.mstar/harness</code>) or <code>omp plugin install github:btspoony/mstar-harness</code></td>
+<td><code>npx @mstar-harness/cli init --target omp</code>（链接 <code>~/.mstar/harness</code>）或 <code>omp plugin install github:btspoony/mstar-harness</code></td>
 </tr>
 <tr>
 <td>OpenCode</td>
@@ -265,47 +265,47 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td>Kimi</td>
-<td>Kimi TUI: <code>/plugins install https://github.com/btspoony/mstar-harness</code> → <code>/plugins reload</code></td>
+<td>Kimi TUI：<code>/plugins install https://github.com/btspoony/mstar-harness</code> → <code>/plugins reload</code></td>
 </tr>
 <tr>
 <td>ZCode</td>
-<td><code>npx @mstar-harness/cli init --target zcode</code> then install <strong>morning-star-harness</strong> in ZCode → Settings → Plugin Management</td>
+<td><code>npx @mstar-harness/cli init --target zcode</code>，然后在 ZCode → 设置 → 插件管理安装 <strong>morning-star-harness</strong></td>
 </tr>
 <tr>
 <td>Codex</td>
-<td><code>npx @mstar-harness/cli init --target codex</code> then <code>codex plugin add morning-star-harness --marketplace personal</code></td>
+<td><code>npx @mstar-harness/cli init --target codex</code>，然后 <code>codex plugin add morning-star-harness --marketplace personal</code></td>
 </tr>
 <tr>
-<td>Generic (Agent Plugins v1)</td>
-<td>point any Agent Plugins v1.0.0 conformant client at this repo root (<code>plugin.json</code> + <code>skills/</code> are the portable package)</td>
+<td>Generic（Agent Plugins v1）</td>
+<td>任意 Agent Plugins v1.0.0 兼容客户端直接指向本仓库根（<code>plugin.json</code> + <code>skills/</code> 即便携包）</td>
 </tr>
 </tbody></table>
-<p>The repo ships a portable <strong>Agent Plugins v1.0.0</strong> manifest (<code>plugin.json</code>) at its root; <code>skills/</code> is the Agent Skills component. Verify with <code>npx @mstar-harness/cli plugin validate</code>.</p>
-<p>Verify: <code>npx @mstar-harness/cli doctor --target &lt;opencode\|cursor\|codex\|zcode\|omp&gt;</code>.</p>
-<p>Manual install / path layout: <a href="https://github.com/btspoony/mstar-harness/blob/main/INSTALL.md"><code>INSTALL.md</code></a>. CLI flags: <a href="https://github.com/btspoony/mstar-harness/blob/main/docs/cli.md"><code>docs/cli.md</code></a>.</p>
-<p>Reload the host after install (OpenCode restart / Cursor <strong>Developer: Reload Window</strong> / reopen Codex / Kimi <code>/plugins reload</code> or <code>/new</code> / ZCode reload plugin / omp new session or <code>/reload-plugins</code> if available).</p>
-<h3>Use</h3>
-<p>Three entry shapes: <strong>without iteration</strong> (single plan / hotfix), <strong>with iteration</strong> (multi-plan Phase 1–5), or <strong>codebase audit</strong> (discover what to do).</p>
-<h4>General (without iteration)</h4>
-<p>Enter PM, then run the per-plan cycle: <code>Prepare → Execute → QC → QA gate → Done</code>.</p>
+<p>仓库根提供便携式 <strong>Agent Plugins v1.0.0</strong> manifest（<code>plugin.json</code>），<code>skills/</code> 为 Agent Skills 组件。可用 <code>npx @mstar-harness/cli plugin validate</code> 校验。</p>
+<p>校验：<code>npx @mstar-harness/cli doctor --target &lt;opencode\|cursor\|codex\|zcode\|omp&gt;</code>。</p>
+<p>手动安装 / 路径布局：<a href="https://github.com/btspoony/mstar-harness/blob/main/INSTALL.md"><code>INSTALL.md</code></a>。CLI 参数：<a href="https://github.com/btspoony/mstar-harness/blob/main/docs/cli.md"><code>docs/cli.md</code></a>。</p>
+<p>安装后重载宿主（重启 OpenCode / Cursor <strong>Developer: Reload Window</strong> / 重开 Codex / Kimi <code>/plugins reload</code> 或 <code>/new</code> / ZCode 重载插件 / omp 新会话或 <code>/reload-plugins</code>）。</p>
+<h3>使用</h3>
+<p>三种入口：<strong>不跑迭代</strong>（单 plan / hotfix）、<strong>跑迭代</strong>（多 plan Phase 1–5）、或 <strong>代码库审计</strong>（发现该做什么）。</p>
+<h4>通用（不跑迭代）</h4>
+<p>进入 PM，然后走 per-plan 循环：<code>Prepare → Execute → QC → QA gate → Done</code>。</p>
 <table>
 <thead>
 <tr>
-<th>Host</th>
-<th>Enter PM</th>
+<th>宿主</th>
+<th>进入 PM</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>dsh (DeepSeek Harness)</td>
-<td><code>pm</code> skill (via the mstar skill provider; no auto-load)</td>
+<td>dsh（DeepSeek Harness）</td>
+<td><code>pm</code> skill（经 mstar skill 提供者；无自动加载）</td>
 </tr>
 <tr>
 <td>omp</td>
-<td><code>/skill:pm</code> each session (no auto-load)</td>
+<td>每会话 <code>/skill:pm</code>（无自动加载）</td>
 </tr>
 <tr>
 <td>OpenCode</td>
-<td><code>agent.project-manager</code> (<code>agents/project-manager.md</code>)</td>
+<td><code>agent.project-manager</code>（<code>agents/project-manager.md</code>）</td>
 </tr>
 <tr>
 <td>Cursor</td>
@@ -313,267 +313,267 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td>Kimi</td>
-<td>session auto-loads <code>pm</code>; or <code>/skill:pm</code></td>
+<td>新会话自动加载 <code>pm</code>；或 <code>/skill:pm</code></td>
 </tr>
 <tr>
 <td>ZCode</td>
-<td><code>/morning-star-harness:pm</code> each session (no auto-load)</td>
+<td>每会话 <code>/morning-star-harness:pm</code>（无自动加载）</td>
 </tr>
 <tr>
 <td>Codex</td>
 <td><code>/pm</code></td>
 </tr>
 </tbody></table>
-<h4>Iteration</h4>
+<h4>迭代</h4>
 <table>
 <thead>
 <tr>
-<th>Path</th>
-<th>When</th>
+<th>路径</th>
+<th>何时</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>/iteration-start</code></td>
-<td>Phase 1 (interactive grill-me) then auto-continues Phase 2→5; <code>pause</code> to stop after Phase 1</td>
+<td>Phase 1（交互式 grill-me）后自动推进 Phase 2→5；<code>pause</code> 可止于 Phase 1</td>
 </tr>
 <tr>
 <td><code>/iteration-drive</code></td>
-<td>Resume Phase 2→5 on an already-locked iteration</td>
+<td>在已锁定的迭代上恢复 / 继续推进 Phase 2→5</td>
 </tr>
 <tr>
 <td><code>/iteration-loop</code></td>
-<td>Full Phase 1→5 autonomous (no grill-me; optional <code>direction</code>, <code>scale</code> S|M|L|XL)</td>
+<td>Phase 1→5 全自动（无 grill-me；可选 <code>direction</code>、<code>scale</code> S|M|L|XL）</td>
 </tr>
 </tbody></table>
-<h4>Codebase audit</h4>
+<h4>代码库审计</h4>
 <table>
 <thead>
 <tr>
-<th>Path</th>
-<th>When</th>
+<th>路径</th>
+<th>何时</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>/codebase-audit</code></td>
-<td>Survey a repo read-only → prioritized, self-contained improvement plans in <code>{PLAN_DIR}/audit-&lt;date&gt;/</code></td>
+<td>只读扫描代码库 → 向 <code>{PLAN_DIR}/audit-&lt;date&gt;/</code> 写入优先级排序、自包含的改进计划</td>
 </tr>
 </tbody></table>
-<p>Read-only advisory — never edits source. Output feeds iteration-start Research or normal Prepare → Execute. Effort levels: <code>quick</code> / <code>standard</code> (default) / <code>deep</code>; category focus (<code>security</code>, <code>perf</code>, <code>tests</code>, …) or <code>branch</code> / <code>next</code> variants. SSOT → <code>mstar-audit</code>.</p>
-<h4>Command loading</h4>
+<p>只读顾问——<strong>不</strong>改源码。产出可喂给 iteration-start Research 或常规 Prepare → Execute。深度级别：<code>quick</code> / <code>standard</code>（默认） / <code>deep</code>；可按类别聚焦（<code>security</code>、<code>perf</code>、<code>tests</code>、…）或用 <code>branch</code> / <code>next</code> 变体。SSOT → <code>mstar-audit</code>。</p>
+<h4>命令加载</h4>
 <table>
 <thead>
 <tr>
-<th>Host</th>
-<th>How commands load</th>
+<th>宿主</th>
+<th>命令加载</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>dsh (DeepSeek Harness)</td>
-<td><code>/iteration-start</code> · <code>/iteration-drive</code> · <code>/iteration-loop</code> · <code>/codebase-audit</code> (bundled <code>harness-commands/</code> via <code>ctx.commands</code>)</td>
+<td>dsh（DeepSeek Harness）</td>
+<td><code>/iteration-start</code> · <code>/iteration-drive</code> · <code>/iteration-loop</code> · <code>/codebase-audit</code>（打包的 <code>harness-commands/</code>，经 <code>ctx.commands</code>）</td>
 </tr>
 <tr>
 <td>omp</td>
-<td><code>/iteration-start</code> · <code>/iteration-drive</code> · <code>/iteration-loop</code> · <code>/codebase-audit</code> (filename commands from plugin <code>commands/</code>)</td>
+<td><code>/iteration-start</code> · <code>/iteration-drive</code> · <code>/iteration-loop</code> · <code>/codebase-audit</code>（插件 <code>commands/</code> 文件名命令）</td>
 </tr>
 <tr>
 <td>OpenCode / Cursor</td>
-<td>Bundled from <code>commands/</code> (OpenCode: plugin <code>harness-commands/</code>)</td>
+<td>从 <code>commands/</code> 打包（OpenCode：插件 <code>harness-commands/</code>）</td>
 </tr>
 <tr>
 <td>Kimi / ZCode</td>
-<td><code>/morning-star-harness:iteration-start</code> · <code>:codebase-audit</code> (etc.) via plugin manifest</td>
+<td>插件 manifest：<code>/morning-star-harness:iteration-start</code> · <code>:codebase-audit</code> 等</td>
 </tr>
 <tr>
 <td>Codex project</td>
-<td><code>.agents/skills/&lt;name&gt;/SKILL.md</code> (CLI symlinks from <code>commands/</code>)</td>
+<td><code>.agents/skills/&lt;name&gt;/SKILL.md</code>（CLI 从 <code>commands/</code> 软链）</td>
 </tr>
 <tr>
 <td>Codex global</td>
-<td>Project-scoped commands <strong>not</strong> installed — use <code>--scope project</code></td>
+<td><strong>不</strong>装 project 命令 — 用 <code>--scope project</code></td>
 </tr>
 </tbody></table>
-<p>Phase 2 defaults: per-plan worktree + lease, <code>Findings cleanup: zero-residual</code>. Override only with explicit <code>Worktree mode: waived</code> / <code>Findings cleanup: allow-residual</code>. SSOT → <code>mstar-iteration</code>, <code>mstar-branch-worktree</code>, <code>mstar-plan-artifacts</code>.</p>
-<p>Project knowledge bootstrap: <code>mstar-compound-refresh</code> → <code>references/project-knowledge-bootstrap.md</code>.</p>
-<h3>Harness Workflow</h3>
+<p>Phase 2 默认：每 plan worktree + lease，<code>Findings cleanup: zero-residual</code>。仅显式 <code>Worktree mode: waived</code> / <code>Findings cleanup: allow-residual</code> 可覆写。SSOT → <code>mstar-iteration</code>、<code>mstar-branch-worktree</code>、<code>mstar-plan-artifacts</code>。</p>
+<p>项目知识脚手架：<code>mstar-compound-refresh</code> → <code>references/project-knowledge-bootstrap.md</code>。</p>
+<h3>Harness Workflow（统一流程）</h3>
 <pre><code class="language-mermaid">flowchart TD
-    A[&quot;PM: entry and intent clarification&quot;] --&gt; B{&quot;PM: spec and context ready&quot;}
-    B --&gt;|No| C[&quot;PM: clarify and refine requirements&quot;]
+    A[&quot;PM: 入口与意图澄清&quot;] --&gt; B{&quot;PM: 规格与上下文是否就绪&quot;}
+    B --&gt;|否| C[&quot;PM: 继续澄清并补齐需求约束&quot;]
     C --&gt; B
-    B --&gt;|Yes| D[&quot;PM: initialize/load HARNESS_DIR and PLAN_DIR&quot;]
-    D --&gt; E{&quot;Iteration scope needed&quot;}
-    E --&gt;|Deep / first iteration| F[&quot;iteration-start: grill-me → compass → review → lock&quot;]
-    E --&gt;|Fast autonomous loop| F2[&quot;iteration-loop: Phase 1→5 continuous&quot;]
-    F --&gt; G[&quot;PM: lock compass and create integration branch&quot;]
+    B --&gt;|是| D[&quot;PM: 初始化或加载 HARNESS_DIR 与 PLAN_DIR&quot;]
+    D --&gt; E{&quot;是否需要 iteration scope&quot;}
+    E --&gt;|深度 / 首次 iteration| F[&quot;iteration-start: grill-me → compass → review → lock&quot;]
+    E --&gt;|快速自动化闭环| F2[&quot;iteration-loop: Phase 1→5 连续&quot;]
+    F --&gt; G[&quot;PM: 锁定 compass 并创建 integration branch&quot;]
     F2 --&gt; G
     G --&gt; H[&quot;Phase 2→5: execute → close → PR → merge-ready&quot;]
-    E --&gt;|No| I[&quot;PM: select active plan from status.json&quot;]
+    E --&gt;|否| I[&quot;PM: 从 status.json 选择 active plan&quot;]
     H --&gt; I
-    I --&gt; J{&quot;Any plan not Done&quot;}
-    J --&gt;|Yes| K[&quot;PM: dispatch one plan on a feature branch&quot;]
-    K --&gt; L[&quot;Dev roles: implement and report&quot;]
-    L --&gt; M[&quot;PM: update plan and status.json&quot;]
-    M --&gt; N[&quot;QC trio: review gate&quot;]
-    N --&gt; O{&quot;QC decision&quot;}
+    I --&gt; J{&quot;是否仍有 plan 未 Done&quot;}
+    J --&gt;|是| K[&quot;PM: 在 feature branch 分派一个 plan&quot;]
+    K --&gt; L[&quot;开发角色: 实现并回报&quot;]
+    L --&gt; M[&quot;PM: 更新 plan 与 status.json&quot;]
+    M --&gt; N[&quot;QC 三审: review gate&quot;]
+    N --&gt; O{&quot;QC 结论&quot;}
     O --&gt;|Request Changes| K
     O --&gt;|Approve| P{&quot;QA gate&quot;}
-    P --&gt;|mandatory| P1[&quot;qa-engineer: acceptance verification&quot;]
-    P --&gt;|pm-acceptance| P2[&quot;PM: acceptance checklist&quot;]
-    P1 --&gt; Q{&quot;Residual findings remain&quot;}
+    P --&gt;|mandatory| P1[&quot;qa-engineer: 验收验证&quot;]
+    P --&gt;|pm-acceptance| P2[&quot;PM: acceptance 清单&quot;]
+    P1 --&gt; Q{&quot;是否仍有 residual findings&quot;}
     P2 --&gt; Q
-    Q --&gt;|Yes| R[&quot;PM/QA: register or accept residuals in status.json&quot;]
-    R --&gt; S[&quot;PM: mark plan Done and merge to integration branch&quot;]
-    Q --&gt;|No| S
-    S --&gt; T[&quot;PM: sync compass plan status&quot;]
+    Q --&gt;|是| R[&quot;PM/QA: 在 status.json 登记或接受 residuals&quot;]
+    R --&gt; S[&quot;PM: 标记 plan Done 并合并到 integration branch&quot;]
+    Q --&gt;|否| S
+    S --&gt; T[&quot;PM: 同步 compass plan 状态&quot;]
     T --&gt; J
-    J --&gt;|No| U[&quot;iteration-close: close entry checklist&quot;]
-    U --&gt; V[&quot;PM: compound round and knowledge index&quot;]
-    V --&gt; W[&quot;PM: update roadmap and compass completed frontmatter&quot;]
-    W --&gt; X[&quot;PM: close exit checklist and commit&quot;]
-    X --&gt; Y[&quot;Phase 4: create PR&quot;]
-    Y --&gt; Z[&quot;Phase 5: merge-ready loop until CI green and reviews resolved&quot;]
+    J --&gt;|否| U[&quot;iteration-close: close entry checklist&quot;]
+    U --&gt; V[&quot;PM: compound round 与 knowledge index&quot;]
+    V --&gt; W[&quot;PM: 更新 roadmap 与 compass completed frontmatter&quot;]
+    W --&gt; X[&quot;PM: close exit checklist 与 commit&quot;]
+    X --&gt; Y[&quot;Phase 4: 开 PR&quot;]
+    Y --&gt; Z[&quot;Phase 5: merge-ready loop 直至 CI 全绿且 reviews resolved&quot;]
 </code></pre>
-<p>Without iteration: same per-plan gates, no <code>iteration-start</code> / <code>iteration-close</code> wrapper.</p>
-<h3>Roles and skills</h3>
+<p>不跑迭代：同一套 per-plan gate，无 <code>iteration-start</code> / <code>iteration-close</code> 外层。</p>
+<h3>角色与技能</h3>
 <table>
 <thead>
 <tr>
 <th>Agent ID</th>
-<th>Responsibility</th>
+<th>职责</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>project-manager</code></td>
-<td>Routing, assignment, phase progression</td>
+<td>路由、分派、阶段推进</td>
 </tr>
 <tr>
 <td><code>product-manager</code></td>
-<td>Requirements, product planning, research</td>
+<td>需求、产品规划、研究</td>
 </tr>
 <tr>
 <td><code>architect</code></td>
-<td>Architecture and technical contracts</td>
+<td>架构与技术契约</td>
 </tr>
 <tr>
 <td><code>fullstack-dev</code> / <code>fullstack-dev-2</code></td>
-<td>Backend-led implement / second parallel track</td>
+<td>后端主导实现 / 第二并行轨</td>
 </tr>
 <tr>
 <td><code>frontend-dev</code></td>
-<td>UI, interaction, frontend performance</td>
+<td>UI、交互、前端性能</td>
 </tr>
 <tr>
 <td><code>qa-engineer</code></td>
-<td>Acceptance when <code>QA gate: mandatory</code></td>
+<td><code>QA gate: mandatory</code> 时验收</td>
 </tr>
 <tr>
 <td><code>code-reviewer</code></td>
-<td>SDD per-task review; codebase audit (<code>audit</code> category)</td>
+<td>SDD per-task 快速验证；codebase audit（<code>audit</code> 类）</td>
 </tr>
 <tr>
 <td><code>qc-specialist</code> / <code>-2</code> / <code>-3</code></td>
-<td>QC trio</td>
+<td>QC 三审</td>
 </tr>
 <tr>
 <td><code>ops-engineer</code></td>
-<td>Deploy, monitoring, infrastructure</td>
+<td>部署、监控、基础设施</td>
 </tr>
 <tr>
 <td><code>writing-specialist</code></td>
-<td>Docs, fiction, copy, scripts</td>
+<td>文档、小说、文案、脚本</td>
 </tr>
 <tr>
 <td><code>prompt-engineer</code></td>
-<td>Prompt / skill / rule work</td>
+<td>prompt / skill / rule</td>
 </tr>
 </tbody></table>
-<p>Load <strong><code>mstar-harness-core</code> first</strong>, then topic skills on demand (<code>mstar-roles</code>).</p>
+<p>先读 <strong><code>mstar-harness-core</code></strong>，再按需加载专题 skill（见 <code>mstar-roles</code>）。</p>
 <table>
 <thead>
 <tr>
 <th>Skill</th>
-<th>Purpose</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>mstar-harness-core</code></td>
-<td>Entry, state machine, Task category, skill index</td>
+<td>入口、状态机、Task category、skill 索引</td>
 </tr>
 <tr>
 <td><code>mstar-phase-gates</code></td>
-<td>Prepare/Execute, clarify, hotfix</td>
+<td>Prepare/Execute、clarify、hotfix</td>
 </tr>
 <tr>
 <td><code>mstar-iteration</code></td>
-<td>Phase 1–5 iteration lifecycle</td>
+<td>Phase 1–5 迭代生命周期</td>
 </tr>
 <tr>
 <td><code>mstar-dispatch-gates</code></td>
-<td>Dispatch, Delegation, anti-recursion</td>
+<td>派发、Delegation、反递归</td>
 </tr>
 <tr>
 <td><code>mstar-sdd</code></td>
-<td>Subagent-driven development</td>
+<td>子代理驱动开发</td>
 </tr>
 <tr>
 <td><code>mstar-branch-worktree</code></td>
-<td>Branches, worktrees, QC/QA checkout</td>
+<td>分支、worktree、QC/QA 检出</td>
 </tr>
 <tr>
 <td><code>mstar-plan-conventions</code></td>
-<td><code>{HARNESS_DIR}</code> discovery / init</td>
+<td><code>{HARNESS_DIR}</code> 发现 / 初始化</td>
 </tr>
 <tr>
 <td><code>mstar-plan-artifacts</code></td>
-<td>Plans, <code>status.json</code>, residuals, Findings cleanup</td>
+<td>plan、<code>status.json</code>、residual、Findings cleanup</td>
 </tr>
 <tr>
 <td><code>mstar-design-md</code></td>
-<td>DESIGN.md gate for UI plans</td>
+<td>UI plan 的 DESIGN.md 门禁</td>
 </tr>
 <tr>
 <td><code>mstar-review-qc</code></td>
-<td>PM QC tri orchestration</td>
+<td>PM QC tri 编排</td>
 </tr>
 <tr>
 <td><code>mstar-coding-behavior</code></td>
-<td>RCA, test-first, review feedback, evidence</td>
+<td>RCA、测试优先、审查反馈、证据</td>
 </tr>
 <tr>
 <td><code>mstar-compound</code> / <code>mstar-compound-refresh</code></td>
-<td>Knowledge crystallize / maintain</td>
+<td>知识结晶 / 维护</td>
 </tr>
 <tr>
 <td><code>mstar-strategy</code></td>
-<td><code>STRATEGY.md</code> alignment</td>
+<td><code>STRATEGY.md</code> 对齐</td>
 </tr>
 <tr>
 <td><code>mstar-skill-authoring</code></td>
-<td>General skill authoring (SkillsBench gate)</td>
+<td>通用 skill 撰写契约（SkillsBench 门控）</td>
 </tr>
 <tr>
 <td><code>mstar-audit</code></td>
-<td>Read-only codebase audit → prioritized improvement plans</td>
+<td>只读代码库审计 → 优先级改进计划</td>
 </tr>
 <tr>
 <td><code>mstar-roles</code></td>
-<td>Role prompts + load lists</td>
+<td>角色提示词 + 加载清单</td>
 </tr>
 <tr>
 <td><code>mstar-host</code></td>
-<td>Host adapters (dsh / omp / OpenCode / Cursor / Kimi / ZCode / Codex)</td>
+<td>宿主适配（dsh / omp / OpenCode / Cursor / Kimi / ZCode / Codex）</td>
 </tr>
 <tr>
 <td><code>pm</code></td>
-<td><code>/pm</code> / <code>/skill:pm</code> / host PM entry</td>
+<td><code>/pm</code> / <code>/skill:pm</code> / 宿主 PM 入口</td>
 </tr>
 </tbody></table>
-<p>Consumer plans default to <strong><code>.mstar/</code></strong>. Process artifacts (<code>plans/</code>, <code>iterations/</code>, <code>status.json</code>, <code>sdd/</code>, …) are gitignored; tracked results: <code>{HARNESS_DIR}/AGENTS.md</code>, <code>knowledge/</code>, <code>specs/</code>. Specs resolve <code>.mstar/specs/</code> → <code>docs/specs/</code> → repo-root <code>specs/</code>. Details → <code>mstar-plan-conventions</code>.</p>
-<p>Maintainers: <a href="https://github.com/btspoony/mstar-harness/blob/main/AGENTS.md"><code>AGENTS.md</code></a>.</p>
-<h3>License</h3>
-<p>MIT. See <a href="https://github.com/btspoony/mstar-harness/blob/main/LICENSE">LICENSE</a>.</p>
+<p>消费方 plan 默认 <strong><code>.mstar/</code></strong>。进程产物（<code>plans/</code>、<code>iterations/</code>、<code>status.json</code>、<code>sdd/</code> 等）gitignored；跟踪结果：<code>{HARNESS_DIR}/AGENTS.md</code>、<code>knowledge/</code>、<code>specs/</code>。Specs 解析：<code>.mstar/specs/</code> → <code>docs/specs/</code> → 仓库根 <code>specs/</code>。细则 → <code>mstar-plan-conventions</code>。</p>
+<p>维护者：<a href="https://github.com/btspoony/mstar-harness/blob/main/AGENTS.md"><code>AGENTS.md</code></a>。</p>
+<h3>许可</h3>
+<p>MIT，见 <a href="https://github.com/btspoony/mstar-harness/blob/main/LICENSE">LICENSE</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/btspoony/mstar-harness/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/btspoony/mstar-harness/blob/main/README_CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

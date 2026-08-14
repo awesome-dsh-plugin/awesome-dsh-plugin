@@ -189,61 +189,61 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/LeslieWylie/dsh-fleet-audit/blob/main/README.en.md">English</a></p>
-<p><strong>DSH agent 舰队卫生审计插件</strong>：只读、零依赖、确定性。检查三件事，输出全程脱敏：</p>
+<p><a href="https://github.com/LeslieWylie/dsh-fleet-audit/blob/main/README.md">中文</a></p>
+<p><strong>Read-only agent-fleet hygiene audit plugin for DSH.</strong> Zero-dependency, deterministic, fully masked output. Checks three things:</p>
 <ol>
-<li><strong>凭据文件权限</strong> —— 常用凭据文件（<code>~/.gitconfig</code>、<code>~/.netrc</code>、<code>~/.npmrc</code>、<code>~/.env</code>、<code>~/.ssh/</code>）应收紧为 <code>600</code>/《700<code>，组/其他可读一律标记为 </code>tooOpen`</li>
-<li><strong>git remote 内嵌凭据</strong> —— 扫描 <code>~/.gitconfig</code> 与给定目录下的 <code>.git/config</code>，识别 <code>https://user:pass@host</code>、<code>https://oauth2:TOKEN@host</code>、token 型用户名等；输出 URL 中凭据以 <code>***</code> 掩码，<strong>逐字节保证不泄露原文</strong></li>
-<li><strong>provider token 前缀字面量</strong>（可关）—— github / github-fine-grained / gitlab / gitlab-ci / slack / aws / openai / jwt 常见前缀，只报「类型 × 出现次数」</li>
+<li><strong>Credential-file permissions</strong> — well-known credential files (<code>~/.gitconfig</code>, <code>~/.netrc</code>, <code>~/.npmrc</code>, <code>~/.env</code>, <code>~/.ssh/</code>) should be <code>600</code>/<code>700</code>; group/other-readable entries are flagged <code>tooOpen</code></li>
+<li><strong>Embedded credentials in git remotes</strong> — scans <code>~/.gitconfig</code> and <code>.git/config</code> under the given roots for <code>https://user:pass@host</code>, <code>https://oauth2:TOKEN@host</code>, or token-like usernames; values are masked as <code>***</code> in the output — <strong>byte-for-byte guarantee that the raw secret never appears</strong></li>
+<li><strong>Provider token-prefix literals</strong> (optional) — github / github-fine-grained / gitlab / gitlab-ci / slack / aws / openai / jwt prefixes, reported as provider × count only</li>
 </ol>
-<h3>为什么</h3>
-<p>多 agent 时代的机器上，凭据散落在 <code>~/.gitconfig</code>、agent 配置、<code>.git/config</code> 与各种 <code>.env</code> 里。git 的 <code>url.*.insteadof</code> 或 <code>pushurl</code> 一旦嵌了 token（例如 <code>https://oauth2:&lt;token&gt;@gitlab.example.com/...</code>），任何 <code>git remote -v</code> 都会把密钥打印进日志/对话/CI。一键只读审计 + 脱敏输出，是安全基线体检的第一道。</p>
-<h3>安装</h3>
-<pre><code class="language-sh"># 本地验证
+<h3>Why</h3>
+<p>On a multi-agent machine, credentials scatter across <code>~/.gitconfig</code>, agent configs, <code>.git/config</code> files and various <code>.env</code>. A git <code>url.*.insteadof</code> or <code>pushurl</code> with an embedded token (e.g. <code>https://oauth2:&lt;token&gt;@gitlab.example.com/...</code>) means <code>git remote -v</code> prints the secret into every log, chat, and CI build. A one-shot read-only audit with masked output is the first line of a security baseline.</p>
+<h3>Install</h3>
+<pre><code class="language-sh"># local validation
 dsh plugin --profile web add /path/to/dsh-fleet-audit
 
-# 发布后（npm / GitHub）
+# after publishing
 dsh plugin --profile web add dsh-fleet-audit
-# 或
+# or
 dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit
 </code></pre>
-<p>安装后重启 <code>dsh web</code>，直接说「审计一下本机凭据卫生 / run fleet_audit」。</p>
-<h3>用法（工具参数）</h3>
+<p>Restart <code>dsh web</code> after installing, then just ask: &quot;audit credential hygiene on this machine&quot; → the agent calls <code>fleet_audit</code>.</p>
+<h3>Tool parameters</h3>
 <table>
 <thead>
 <tr>
-<th>参数</th>
-<th>类型</th>
-<th>说明</th>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>roots</code></td>
 <td>string[]</td>
-<td>递归扫描 <code>.git/config</code> 的目录（可选；默认只查 <code>~/.gitconfig</code>）</td>
+<td>directories to recursively scan for <code>.git/config</code> (optional; default: only <code>~/.gitconfig</code>)</td>
 </tr>
 <tr>
 <td><code>files</code></td>
 <td>string[]</td>
-<td>额外要查权限的凭据文件绝对路径</td>
+<td>extra absolute credential-file paths for permission checks</td>
 </tr>
 <tr>
 <td><code>scanSecrets</code></td>
 <td>boolean</td>
-<td>是否扫描 token 前缀字面量（默认 <code>true</code>）</td>
+<td>scan configs for token-prefix literals (default <code>true</code>)</td>
 </tr>
 <tr>
 <td><code>maxGitConfigs</code></td>
 <td>number</td>
-<td>git config 扫描上限（默认 200，上限 2000）</td>
+<td>cap on scanned git configs (default 200, max 2000)</td>
 </tr>
 <tr>
 <td><code>maxDepth</code></td>
 <td>number</td>
-<td>目录递归深度（默认 5，上限 20）</td>
+<td>recursion depth for <code>.git</code> discovery (default 5, max 20)</td>
 </tr>
 </tbody></table>
-<h3>输出示例（脱敏）</h3>
+<h3>Sample output (masked)</h3>
 <pre><code class="language-jsonc">{
   &quot;ok&quot;: true,
   &quot;summary&quot;: { &quot;files&quot;: 5, &quot;tooOpen&quot;: 1, &quot;gitLeaks&quot;: 2, &quot;secretFiles&quot;: 1, &quot;issues&quot;: 4, &quot;scannedGitConfigs&quot;: 12 },
@@ -257,39 +257,37 @@ dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit
     &quot;secrets&quot;: [
       { &quot;file&quot;: &quot;/Users/alice/.gitconfig&quot;, &quot;providers&quot;: [ { &quot;provider&quot;: &quot;github&quot;, &quot;count&quot;: 1 } ] }
     ]
-  },
-  &quot;note&quot;: &quot;Read-only audit; secret-like values are masked in the output. Fix permissions with chmod 600 and rotate any exposed credentials.&quot;
+  }
 }
 </code></pre>
-<h3>安全边界</h3>
+<h3>Safety boundary</h3>
 <ul>
-<li>只读：不写文件、不启进程、不访问网络、不保存状态</li>
-<li>脱敏：所有疑似凭据一律掩码；测试同时断言「输出 JSON 不含原始密钥」</li>
-<li>有界：git config 数量与递归深度均设上限，可防扫描失控</li>
+<li>Read-only: no writes, no process spawn, no network, no state</li>
+<li>Masked: every secret-like value is masked; tests assert the raw secret never appears in the output JSON</li>
+<li>Bounded: git-config count and recursion depth are capped</li>
 </ul>
-<h3>开发</h3>
+<h3>Dev</h3>
 <pre><code class="language-sh">npm install
 npm run check   # typecheck + vitest + build
 </code></pre>
-<h3>已知局限</h3>
+<h3>Known limitations</h3>
 <ul>
-<li>仅扫描文本类配置文件（不会解析加密存储、系统钥匙串、二进制文件）</li>
-<li>token 前缀识别为启发式规则：可能漏报（非常规前缀）或误报（需人工复核）</li>
-<li>默认只检查固定凭据列表；任意路径凭据请通过 <code>roots</code> / <code>files</code> 显式指定</li>
-<li>不主动修改任何文件；发现泄漏后请自行 <code>chmod 600</code> 并轮换密钥</li>
+<li>Textual config files only (no encrypted stores, keychains, or binaries)</li>
+<li>Token-prefix matching is heuristic: false negatives (unusual prefixes) and positives (manual review needed) are possible</li>
+<li>Default checks cover a fixed credential list; pass <code>roots</code> / <code>files</code> to cover arbitrary paths</li>
+<li>The plugin never modifies anything; after a finding, run <code>chmod 600</code> and rotate the credential yourself</li>
 </ul>
-<h3>回滚</h3>
-<pre><code class="language-sh">dsh plugin --profile &lt;p&gt; remove dsh-fleet-audit   # 或从 dsh.profile.bundles 删除该行
+<h3>Rollback</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;p&gt; remove dsh-fleet-audit   # or drop the row from dsh.profile.bundles
 </code></pre>
-<p>插件只读、无状态，卸载不影响任何用户数据。</p>
-<h3>独立社区插件</h3>
-<p>本项目为独立社区插件，与 DeepSeek 官方或其 DSH 仓库无隶属关系；&quot;official&quot;
-身份仅通过官方渠道授予。发布时会给仓库添加 <code>dsh-plugin</code> topic 以便发现。</p>
-<h3>许可</h3>
+<p>The plugin is read-only and stateless; uninstalling it never touches user data.</p>
+<h3>Independent community plugin</h3>
+<p>This project is an independent community plugin with no affiliation to DeepSeek or its official DSH repo; &quot;official&quot; status is only granted through official channels. The <code>dsh-plugin</code> topic will be added for discoverability at release time.</p>
+<h3>License</h3>
 <p>MIT © LeslieWylie</p>
 
     </div>
-    <p class="note"><a href="https://github.com/LeslieWylie/dsh-fleet-audit/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/LeslieWylie/dsh-fleet-audit/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

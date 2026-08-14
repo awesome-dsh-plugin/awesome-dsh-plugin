@@ -189,133 +189,133 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>English</strong> · <a href="https://github.com/omdsh-dev/dsh-annotation/blob/main/README.zh-CN.md">简体中文</a></p>
-<p>Select any text in an assistant reply to annotate it (the annotation body may be left empty = just mark the passage). Annotations accumulate across messages and turns. An <strong>Annotations ×N</strong> chip appears next to the input box — hover to view all annotations, remove them one by one. Press Enter and the annotation block goes to the model together with whatever question is in the input box. <strong>The annotation block never shows up as text in your own message bubble</strong> — only the question plus the chip (content visible on hover; hidden before paint, zero flicker). The model replies with <code>Annotation 1: …</code> … <code>Annotation N: …</code>, one per annotation, and every Annotation label in the reply is a hoverable chip showing the annotated passage and your note.</p>
-<p>Form: official <strong>bundle plugin</strong> (<code>dsh.bundle</code> + a <code>dsh.client</code> declaration in package.json, injected into the browser via client-modules; the Node half is an empty implementation). <strong>Zero core changes</strong> — no DSH files are touched; <code>cordis.patch.yml</code> only inserts its own id once, and the profile patch stays <code>[]</code>.</p>
-<h3>Features</h3>
+<p><a href="https://github.com/omdsh-dev/dsh-annotation/blob/main/README.md">English</a> · <strong>简体中文</strong></p>
+<p>选中助手回复里的任意文字即可批注（批注内容可留空 = 仅标记原文），跨消息、跨回合连续收集；底部输入框旁出现「批注 ×N」标签（悬浮可见全部内容、可删单条）；直接回车，批注块随输入框里的问题一起发给模型。<strong>你的消息气泡里不会出现批注块文本</strong>——只显示问题和「批注 ×N」标签（hover 看内容，绘制前隐藏、零闪烁）；模型回复按「Annotation 1：…」逐条回应，回复里的每个 Annotation 标签都可悬浮查看对应批注的原文与内容。</p>
+<p>形态：官方 <strong>bundle 插件</strong>（<code>dsh.bundle</code> + package.json <code>dsh.client</code> 声明，经 client-modules 注入浏览器端，Node half 为空实现）。<strong>零核心改动</strong>——不改 DSH 本体任何文件，<code>cordis.patch.yml</code> 仅一次 <code>insert</code> 自身 id，profile patch 保持 <code>[]</code>。</p>
+<h3>能力</h3>
 <table>
 <thead>
 <tr>
-<th>Feature</th>
-<th>Description</th>
+<th>功能</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Select-to-annotate</td>
-<td>Select assistant text → toolbar &quot;Annotate&quot; → write your note (may be empty); dismiss by clicking elsewhere or pressing Esc</td>
+<td>选中即批注</td>
+<td>选中助手文字 → 工具条「批注」→ 直接写批注（可留空），点选外处或 Esc 收起</td>
 </tr>
 <tr>
-<td>Numbered marker + highlight</td>
-<td>A blue numbered marker + highlight anchored to the passage, viewport-anchored with collision avoidance, never lost when scrolled out of view</td>
+<td>编号脚标 + 高亮</td>
+<td>原文位置亮蓝编号 + 高亮，视口内锚定、碰撞避让，滚出屏幕不丢失</td>
 </tr>
 <tr>
-<td>Cross-turn collection</td>
-<td>Any number of annotations accumulate across messages/turns, numbered from 1</td>
+<td>跨回合收集</td>
+<td>任意多条批注跨消息/回合累积，编号从 1 开始</td>
 </tr>
 <tr>
-<td>&quot;Annotations ×N&quot; chip</td>
-<td>Small chip beside the input box; hover shows every annotation, deletable individually</td>
+<td>「批注 ×N」标签</td>
+<td>输入框旁小标签，悬浮显示全部批注内容，可逐条删除</td>
 </tr>
 <tr>
-<td>Enter sends with your message</td>
-<td>Annotation block + the question in the input box are sent to the model together (the model receives the full content)</td>
+<td>回车随消息发送</td>
+<td>批注块 + 输入框问题一起发给模型（模型收到完整内容）</td>
 </tr>
 <tr>
-<td>Hidden in your bubble</td>
-<td>The annotation block is removed from your bubble&#39;s DOM the moment you send (before the browser paints), leaving only the question + the chip (hover to view); historical messages self-heal after a refresh</td>
+<td>气泡隐藏批注块</td>
+<td>发送瞬间（浏览器绘制前）批注块从气泡 DOM 隐藏，只留问题 + 「批注 ×N」标签，hover 可见内容；刷新后历史消息自动修复</td>
 </tr>
 <tr>
-<td>Numbered reply correspondence</td>
-<td>A format instruction is injected into the message so the model replies <code>Annotation 1: …</code> … <code>Annotation N: …</code> one by one</td>
+<td>回复逐条对照</td>
+<td>消息内注入格式指令，模型按「Annotation 1：…」…「Annotation N：…」逐条回应</td>
 </tr>
 <tr>
-<td>Reply annotation chips</td>
-<td><code>Annotation N:</code> in the reply renders as hoverable chips showing the passage + your note</td>
+<td>回复批注芯片</td>
+<td>回复里的「Annotation N：」渲染为可悬浮芯片，hover 显示该批注的原文 + 批注内容</td>
 </tr>
 </tbody></table>
-<h3>Interaction flow</h3>
-<pre><code>Select assistant text ──▶ Toolbar &quot;Annotate&quot; ──▶ Write note / save empty ──▶ Blue numbered marker + highlight
-        ▲                                                        │
-        └────────────── any number, accumulate across turns ◀────┘
-                                │
-                                ▼
-              &quot;Annotations ×N&quot; chip beside the input (hover to view / delete)
-                                │
-                            Press Enter
-                                ▼
-    Model receives: annotation block (number + passage + note) + your question
-    Your bubble: question only + &quot;Annotations ×N&quot; chip (zero flicker)
-    Model reply: Annotation 1: … Annotation 2: … (hoverable chips)
+<h3>交互流</h3>
+<pre><code>选中助手文字 ──▶ 工具条「批注」──▶ 写批注/留空保存 ──▶ 原文亮蓝编号+高亮
+        ▲                                                    │
+        └────────────── 任意多条、跨回合累积 ◀────────────────┘
+                        │
+                        ▼
+              输入框旁「批注 ×N」标签（hover 看内容/删除）
+                        │
+                    回车发送
+                        ▼
+   模型收到：批注块（编号+原文+批注）+ 你的问题
+   你的气泡：只显示问题 +「批注 ×N」标签（零闪烁）
+   模型回复：Annotation 1：… Annotation 2：…（可悬浮芯片）
 </code></pre>
-<h3>Install (official bundle path · the only one)</h3>
-<pre><code class="language-sh"># Public GitHub install (works without an npm account)
+<h3>安装（官方 bundle 路径 · 唯一）</h3>
+<pre><code class="language-sh"># GitHub 公开仓库安装（无需 npm 账号）
 dsh plugin --profile web add git+https://github.com/omdsh-dev/dsh-annotation.git
-# local path install (development / debugging)
+# 本地路径安装（开发调试）
 cd /path/to/dsh-annotation
 dsh plugin --profile web add .
-# restart the web service
+# 重启 web
 launchctl kickstart -k &quot;gui/$(id -u)/com.dsh.web&quot;
 </code></pre>
 <table>
 <thead>
 <tr>
-<th>Do</th>
-<th>Don&#39;t</th>
+<th>做</th>
+<th>不做</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Only <code>dsh plugin add</code> / only write <code>bundles</code></td>
-<td><strong>Never</strong> insert the same id again in the profile/home <code>cordis.patch.yml</code></td>
+<td>只 <code>dsh plugin add</code> / 只写 <code>bundles</code></td>
+<td><strong>不要</strong>再在 profile/home <code>cordis.patch.yml</code> insert 同 id</td>
 </tr>
 </tbody></table>
-<p>Self-check:</p>
-<pre><code class="language-sh">dsh --profile web --dump-config | rg &quot;id: dsh-annotation&quot;   # must be exactly 1 line
+<p>自检：</p>
+<pre><code class="language-sh">dsh --profile web --dump-config | rg &quot;id: dsh-annotation&quot;   # 必须恰好 1 行
 curl -s -o /dev/null -w &#39;%{http_code}\n&#39; &quot;http://127.0.0.1:3080/plugins/@omdsh-dev/dsh-annotation/client.js&quot;   # 200
 </code></pre>
-<h3>Architecture notes</h3>
+<h3>架构要点</h3>
 <ul>
-<li><p><strong>Pure browser-side</strong>: everything lives in <code>client.js</code> (a hand-written CJS bundle, no build step, served no-cache per request)</p>
+<li><p><strong>纯浏览器端</strong>：全部能力在 <code>client.js</code>（hand-written CJS bundle，无构建步骤，按请求读取 no-cache）</p>
 </li>
-<li><p><strong>Message format</strong> (the literal protocol block sent to the model):</p>
+<li><p><strong>消息格式</strong>：</p>
 <pre><code>我批注了以下 N 处内容…\n\n1. 原文\n   批注：…\n\n请用「Annotation 1：…」…\n\n提问：
 </code></pre>
-<p>The delimiter is 「提问：」(ask:) rather than 「问题：」(question:) — the heading line &quot;回答我的问题：&quot; also contains the latter, and the bubble-hiding surgery would misfire on it.</p>
+<p>（分隔标记用「提问：」而非「问题：」——标题行「回答我的问题：」里也含它，气泡隐藏手术会误命中）</p>
 </li>
-<li><p><strong>Bubble hiding</strong>: user bubbles are plain-text rendered (a single MessageText node, not markdown); a MutationObserver in the microtask phase (before paint) splits at the last <code>\n提问：</code>, cuts the annotation block, and attaches the chip; a 1 s polling fallback plus historical-message repair after refresh</p>
+<li><p><strong>气泡隐藏</strong>：用户气泡是纯文本渲染（MessageText 单节点，非 markdown）；MutationObserver 微任务阶段（绘制前）按最后一个 <code>\n提问：</code> 切掉批注块、贴「批注 ×N」标签；1s 轮询兜底 + 刷新后历史消息自动修复</p>
 </li>
-<li><p><strong>Reply chips</strong>: after streaming settles (<code>data-streaming</code> removed), each <code>Annotation N:</code> is replaced with a hoverable chip; item data is stored on the most recent user message carrying the annotation tag (<code>tag.__annotationItems</code>) and rebuilt after refresh; <strong>snapshot the text nodes collected by the TreeWalker before touching the DOM, then replace one by one</strong> — replacing a child mid-walk invalidates the walker pointer and only the first node gets processed</p>
+<li><p><strong>回复芯片</strong>：回复流式结束后（<code>data-streaming</code> 移除），把「Annotation N：」替换为可悬浮芯片；条目数据存于最近一条带批注标签的用户消息上（<code>tag.__annotationItems</code>），刷新后自动重建；<strong>改 DOM 前先快照 TreeWalker 收集的文本节点再逐个替换</strong>（遍历中途 replaceChild 会让 walker 指针失效，只处理到第一个节点）</p>
 </li>
-<li><p><strong>IME-safe</strong>: the Enter interception carries <code>isComposing</code> / keyCode 229 guards; never hard-edits the composer textarea&#39;s DOM; <code>setDraft</code> only assembles the annotation block at the last moment before submit and never clobbers the user&#39;s draft</p>
+<li><p><strong>IME 安全</strong>：Enter 拦截带 <code>isComposing</code>/keyCode 229 守卫；不 DOM 硬改 composer textarea；<code>setDraft</code> 仅在提交前一刻拼批注块，不覆盖用户草稿</p>
 </li>
-<li><p><strong>No reliance on send-completion event chains</strong>: bubble decoration uses MutationObserver + polling (<code>watchInputDraft</code> can be ineffective before the session is loaded at init; it is only a staging entry)</p>
+<li><p><strong>不依赖发送完成事件链</strong>：气泡装饰走 MutationObserver + 轮询（<code>watchInputDraft</code> 在初始化时会话未加载时会失效，仅作暂存入口）</p>
 </li>
 </ul>
-<h3>Version history</h3>
+<h3>版本历史</h3>
 <table>
 <thead>
 <tr>
-<th>Version</th>
-<th>Highlights</th>
+<th>版本</th>
+<th>内容</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>v1.3.x</td>
-<td>Numbered reply correspondence: format-instruction injection + hoverable <code>Annotation N:</code> chips (TreeWalker snapshot fix)</td>
+<td>回复逐条对照：格式指令注入 + 「Annotation N：」可悬浮芯片（TreeWalker 快照修复）</td>
 </tr>
 <tr>
 <td>v1.2.x</td>
-<td>Hidden annotation block in bubble: MutationObserver microtask zero-flicker + polling fallback + historical-message repair</td>
+<td>气泡隐藏批注块：MutationObserver 微任务零闪烁 + 轮询兜底 + 历史消息修复</td>
 </tr>
 <tr>
 <td>v1.x</td>
-<td>Self-contained annotation flow (replaces the v0.9 chip design): capture-Enter assembles the block and sends it with the message</td>
+<td>自包含批注流（取代 v0.9 chip 设计）：capture Enter 拼稿随消息发送</td>
 </tr>
 <tr>
 <td>v0.9.x</td>
-<td>Early chip design (insertReference + slash codec), superseded by v1.x</td>
+<td>早期 chip 设计（insertReference + slash codec），已被 v1.x 取代</td>
 </tr>
 </tbody></table>
-<h3>Friendly links</h3>
+<h3>友情链接</h3>
 <ul>
 <li><a href="https://linux.do">Linux.do</a></li>
 </ul>
@@ -323,7 +323,7 @@ curl -s -o /dev/null -w &#39;%{http_code}\n&#39; &quot;http://127.0.0.1:3080/plu
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-annotation/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-annotation/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -189,71 +189,71 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-tool-schema/blob/main/README.en.md">English</a></p>
-<p>DSH JSON Schema 验证工具插件 —— 验证数据、列出失败路径、解释 schema 约束、安全应用 default。零网络、零动态代码执行。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-tool-schema/blob/main/README.md">中文</a></p>
+<p>DSH JSON Schema validation tool plugin — validate data, list failing paths, explain schema constraints, and safely apply defaults. Zero network, zero dynamic code execution.</p>
 <p><a href="https://github.com/omdsh-dev/dsh-tool-schema/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<h3>动机</h3>
-<p>Agent 需要验证任意 JSON 数据是否符合 schema（API 响应结构、插件 manifest、配置文件、会话事件），并定位失败路径。现有路径没有这个能力：</p>
+<h3>Motivation</h3>
+<p>Agents need to validate arbitrary JSON data against a schema (API response structures, plugin manifests, config files, session events) and locate failing paths. Existing paths lack this capability:</p>
 <ol>
-<li><strong><code>defineTool</code> 参数 DSL 是作者 DSL</strong>——面向插件作者声明工具参数，不是面向任意用户 schema 的通用验证服务</li>
-<li><strong><code>dsh-tool-json</code> 只提供查询</strong>——能取路径、能筛选，但不验证结构、不给 RFC 6901 失败定位</li>
-<li><strong>模型&quot;目测&quot;验证不可靠</strong>——复杂嵌套 schema（allOf/oneOf/<code>$ref</code>/pattern）组合下，手算通过/失败极易出错，且无法展示可验证的过程</li>
+<li><strong>The <code>defineTool</code> parameter DSL is an author DSL</strong> — it targets plugin authors declaring tool parameters, not a general-purpose validation service for arbitrary user schemas</li>
+<li><strong><code>dsh-tool-json</code> only offers querying</strong> — it can fetch paths and filter, but it does not validate structure or provide RFC 6901 failure location</li>
+<li><strong>Model &quot;eyeball&quot; validation is unreliable</strong> — with complex nested schemas (allOf/oneOf/<code>$ref</code>/pattern) combined, hand-computing pass/fail is highly error-prone and cannot show a verifiable process</li>
 </ol>
-<p>本插件提供独立的纯函数 JSON Schema 验证内核：一次函数调用返回 verdict、路径化错误与 schema 问题。不执行任何代码、不访问网络，<strong>绝不静默忽略不支持的 schema 关键字</strong>。</p>
-<h3>安全模型</h3>
+<p>This plugin provides an independent pure-function JSON Schema validation kernel: one function call returns the verdict, path-based errors, and schema issues. It executes no code, accesses no network, and <strong>never silently ignores unsupported schema keywords</strong>.</p>
+<h3>Security Model</h3>
 <ul>
-<li><strong>零动态执行</strong>：验证内核是纯数据遍历，不构造 <code>RegExp</code>（pattern 在独立 worker 内执行）、不 <code>eval</code>、不访问网络、不读文件</li>
-<li><strong>不支持关键字绝不静默忽略</strong>：报告 <code>unsupported-keyword</code> schema issue；<code>strictSchema=true</code>（默认）直接失败（<code>valid:false</code> / <code>complete:false</code>），<code>strictSchema=false</code> 验证已支持子集（<code>valid:null</code> / <code>complete:false</code> / <code>supportedSubsetValid</code>）</li>
-<li><strong>ReDoS 防线</strong>：所有 <code>pattern</code> 校验在<strong>可终止的 worker 线程</strong>内共享 1,000ms 硬预算，超时 <code>terminate()</code> 并报错——灾难性回溯不能阻塞宿主进程；pattern ≤ 16 KiB、每 schema ≤ 100 个</li>
-<li><strong>原型污染防护</strong>：所有对象访问用 <code>Object.hasOwn</code>，<code>__proto__</code> / <code>constructor</code> / <code>prototype</code> 只作为普通 JSON 键处理</li>
-<li><strong><code>$ref</code> 安全性</strong>：仅支持本地引用（<code>#</code> 与 <code>#/$defs/&lt;token&gt;</code>，RFC 6901 转义）；目标必须存在；环检测（schema-check 静态报告 <code>ref-cycle</code> + 验证期 <code>(schemaNode, instance)</code> 栈动态兜底）</li>
-<li><strong>预算</strong>：<ul>
-<li>data / schema 各 ≤ 256 KiB（超限直接报错）</li>
-<li>嵌套深度 ≤ 64、schema 节点 ≤ 10,000、遍历节点 ≤ 100,000</li>
-<li>错误 100（默认）/ 1,000（上限）；<code>$ref</code> 链 ≤ 64</li>
-<li>canonical 输出 ≤ 1 MiB（超限截断 errors/schemaIssues 等并置 <code>truncated</code>）</li>
+<li><strong>Zero dynamic execution</strong>: the validation kernel is a pure data traversal — it does not construct <code>RegExp</code> (patterns run inside a separate worker), no <code>eval</code>, no network access, no file reads</li>
+<li><strong>Unsupported keywords are never silently ignored</strong>: reports an <code>unsupported-keyword</code> schema issue; with <code>strictSchema=true</code> (default) it fails outright (<code>valid:false</code> / <code>complete:false</code>), with <code>strictSchema=false</code> it validates the supported subset (<code>valid:null</code> / <code>complete:false</code> / <code>supportedSubsetValid</code>)</li>
+<li><strong>ReDoS defense</strong>: all <code>pattern</code> checks share a 1,000 ms hard budget inside a <strong>terminable worker thread</strong>; on timeout it calls <code>terminate()</code> and reports an error — catastrophic backtracking cannot block the host process; patterns ≤ 16 KiB, ≤ 100 per schema</li>
+<li><strong>Prototype pollution protection</strong>: all object access uses <code>Object.hasOwn</code>; <code>__proto__</code> / <code>constructor</code> / <code>prototype</code> are treated only as ordinary JSON keys</li>
+<li><strong><code>$ref</code> safety</strong>: only local references are supported (<code>#</code> and <code>#/$defs/&lt;token&gt;</code>, RFC 6901 escaping); the target must exist; cycle detection (schema-check statically reports <code>ref-cycle</code> + a dynamic <code>(schemaNode, instance)</code> stack fallback at validation time)</li>
+<li><strong>Budgets</strong>:<ul>
+<li>data / schema each ≤ 256 KiB (over the limit reports an error directly)</li>
+<li>nesting depth ≤ 64, schema nodes ≤ 10,000, traversal nodes ≤ 100,000</li>
+<li>errors 100 (default) / 1,000 (max); <code>$ref</code> chains ≤ 64</li>
+<li>canonical output ≤ 1 MiB (on overflow, errors/schemaIssues etc. are truncated and <code>truncated</code> is set)</li>
 </ul>
 </li>
-<li>工具参数会记入会话日志，不要传入敏感数据</li>
+<li>Tool parameters are recorded in the session log — do not pass sensitive data</li>
 </ul>
-<h3>工具声明</h3>
-<p>注册 <code>schema</code> 工具（<code>@deepseek-ai/dsh-tool-schema</code>，row id <code>tool-schema</code>），统一输出 JSON 文本字符串。</p>
+<h3>Tool Declaration</h3>
+<p>Registers the <code>schema</code> tool (<code>@deepseek-ai/dsh-tool-schema</code>, row id <code>tool-schema</code>), uniformly emitting JSON text strings.</p>
 <table>
 <thead>
 <tr>
 <th>action</th>
-<th>作用</th>
-<th>输出</th>
+<th>Purpose</th>
+<th>Output</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>validate</code></td>
-<td>验证 instance 是否符合 schema</td>
-<td>verdict + RFC 6901 <code>instancePath</code>/<code>schemaPath</code> 错误（稳定排序）+ <code>schemaIssues</code> + <code>checkedNodes</code> + <code>truncated</code></td>
+<td>Validate whether the instance conforms to the schema</td>
+<td>verdict + RFC 6901 <code>instancePath</code>/<code>schemaPath</code> errors (stable ordering) + <code>schemaIssues</code> + <code>checkedNodes</code> + <code>truncated</code></td>
 </tr>
 <tr>
 <td><code>paths</code></td>
-<td>只返回失败路径</td>
-<td><code>paths</code>（path + 关键字摘要）+ <code>errorCount</code> + <code>truncated</code></td>
+<td>Return only failing paths</td>
+<td><code>paths</code> (path + keyword summary) + <code>errorCount</code> + <code>truncated</code></td>
 </tr>
 <tr>
 <td><code>explain</code></td>
-<td>静态解释 schema 约束</td>
-<td>约束树节点序列（<code>nodes</code>，有限列表非自然语言长文）+ <code>schemaIssues</code> + <code>truncated</code></td>
+<td>Statically explain schema constraints</td>
+<td>a sequence of constraint-tree nodes (<code>nodes</code>, a finite list rather than long-form natural language) + <code>schemaIssues</code> + <code>truncated</code></td>
 </tr>
 <tr>
 <td><code>normalize</code></td>
-<td>深拷贝 + 应用显式 <code>default</code> 后验证</td>
-<td><code>appliedDefaults</code>（path + value）+ <code>warnings</code>（<code>default-invalid</code> / <code>normalize-skip-branch</code>）+ 完整 validate 结果</td>
+<td>Deep copy + apply explicit <code>default</code>s, then validate</td>
+<td><code>appliedDefaults</code> (path + value) + <code>warnings</code> (<code>default-invalid</code> / <code>normalize-skip-branch</code>) + the full validate result</td>
 </tr>
 </tbody></table>
 <table>
 <thead>
 <tr>
-<th>参数</th>
-<th>类型</th>
-<th>必填</th>
-<th>说明</th>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -266,29 +266,29 @@ footer p+p{margin-top:.5rem}
 <td><code>data</code></td>
 <td>json</td>
 <td></td>
-<td>待验证实例（validate/paths/normalize 必需；<code>null</code> 是合法数据）</td>
+<td>The instance to validate (required for validate/paths/normalize; <code>null</code> is valid data)</td>
 </tr>
 <tr>
 <td><code>schema</code></td>
 <td>json</td>
 <td>✅</td>
-<td>JSON Schema（boolean 或 object；draft 2020-12 子集）</td>
+<td>JSON Schema (boolean or object; draft 2020-12 subset)</td>
 </tr>
 <tr>
 <td><code>strictSchema</code></td>
 <td>boolean</td>
 <td></td>
-<td>不支持关键字时失败。默认 <code>true</code></td>
+<td>Fail on unsupported keywords. Default <code>true</code></td>
 </tr>
 <tr>
 <td><code>maxErrors</code></td>
 <td>integer</td>
 <td></td>
-<td>最大错误报告数。默认 100，范围 1..1,000</td>
+<td>Maximum number of errors to report. Default 100, range 1..1,000</td>
 </tr>
 </tbody></table>
-<p>支持的关键字：<code>type</code>/<code>enum</code>/<code>const</code>、对象（required/properties/additionalProperties/minProperties/maxProperties）、数组（items/minItems/maxItems/uniqueItems）、字符串（minLength/maxLength/pattern）、数值（minimum/maximum/exclusive*/multipleOf）、组合（allOf/anyOf/oneOf/not）、本地 <code>$ref</code>。</p>
-<h3>输出示例</h3>
+<p>Supported keywords: <code>type</code>/<code>enum</code>/<code>const</code>, objects (required/properties/additionalProperties/minProperties/maxProperties), arrays (items/minItems/maxItems/uniqueItems), strings (minLength/maxLength/pattern), numbers (minimum/maximum/exclusive*/multipleOf), combinators (allOf/anyOf/oneOf/not), local <code>$ref</code>.</p>
+<h3>Example Output</h3>
 <pre><code class="language-json">{&quot;action&quot;:&quot;validate&quot;,&quot;complete&quot;:true,&quot;valid&quot;:true,&quot;supportedSubsetValid&quot;:true,
  &quot;errors&quot;:[],&quot;schemaIssues&quot;:[],&quot;checkedNodes&quot;:3,&quot;truncated&quot;:false}
 </code></pre>
@@ -298,63 +298,63 @@ footer p+p{margin-top:.5rem}
 <pre><code class="language-json">{&quot;action&quot;:&quot;normalize&quot;,&quot;valid&quot;:true,
  &quot;appliedDefaults&quot;:[{&quot;path&quot;:&quot;/b&quot;,&quot;value&quot;:5}],&quot;warnings&quot;:[]}
 </code></pre>
-<h3>设计要点</h3>
+<h3>Design Points</h3>
 <ul>
-<li><strong>错误格式</strong>：<code>instancePath</code> / <code>schemaPath</code>（RFC 6901 JSON Pointer）、<code>keyword</code>、稳定 <code>code</code>、<code>message</code>（+ <code>expected</code>/<code>actual</code>）；排序稳定：instancePath → schemaPath → keyword 字典序</li>
-<li><strong>组合关键字</strong>：anyOf/oneOf 全部失败时返回顶层错误 + <code>branches</code> 有限摘要（每支 ≤ 3 条）；oneOf 0 支/多支分别报告 <code>one-of</code> / <code>one-of-multiple</code>；not 子 schema 通过即失败</li>
-<li><strong>数字语义</strong>：JSON number 必须有限；integer 用 <code>Number.isInteger</code>；<code>multipleOf</code> 用缩放/容差策略（相对容差 <code>1e-9</code>），不用 <code>% === 0</code>，不承诺任意精度</li>
-<li><strong>字符串长度</strong>：按 Unicode code point 计；pattern 在可终止 worker 内共享 1,000ms 总预算执行</li>
-<li><strong><code>$ref</code> 语义</strong>：纯 <code>$ref</code> 环在 schema-check 静态报告；带 sibling 关键字的 <code>$ref</code> 按 draft 2020-12 一并生效（不做 2019-09 的 <code>$ref</code> 兄弟忽略）</li>
-<li><strong>normalize 不越权</strong>：从不修改输入（新对象均 <code>Object.create(null)</code>）；只应用 <code>properties</code> 中缺失字段的<strong>显式</strong> <code>default</code>；default 必须 JSON-compatible 且通过对应子 schema（否则 <code>default-invalid</code> warning 并跳过）；不强制类型、不删除 additional properties；oneOf/anyOf 仅当恰好一个分支在不应用 default 时已匹配才进入（否则 <code>normalize-skip-branch</code> warning）</li>
-<li><strong>explain 不静默</strong>：输出附带 <code>schemaIssues</code>，不支持关键字在 explain 下同样被报告</li>
-<li><strong>可复现输出</strong>：错误与 issues 排序稳定；超限截断后置 <code>truncated</code>；canonical 输出 ≤ 1 MiB（契约断言）</li>
+<li><strong>Error format</strong>: <code>instancePath</code> / <code>schemaPath</code> (RFC 6901 JSON Pointer), <code>keyword</code>, stable <code>code</code>, <code>message</code> (+ <code>expected</code>/<code>actual</code>); stable ordering: instancePath → schemaPath → keyword lexicographic</li>
+<li><strong>Combinator keywords</strong>: when all anyOf/oneOf branches fail, the top-level error plus a bounded <code>branches</code> summary (≤ 3 per branch) is returned; oneOf with 0 / multiple matching branches reports <code>one-of</code> / <code>one-of-multiple</code> respectively; <code>not</code> fails when its sub-schema validates</li>
+<li><strong>Number semantics</strong>: JSON numbers must be finite; integers use <code>Number.isInteger</code>; <code>multipleOf</code> uses a scaling/tolerance strategy (relative tolerance <code>1e-9</code>) rather than <code>% === 0</code>, with no arbitrary-precision promise</li>
+<li><strong>String length</strong>: counted by Unicode code points; patterns run in a terminable worker sharing a 1,000 ms total budget</li>
+<li><strong><code>$ref</code> semantics</strong>: pure <code>$ref</code> cycles are statically reported by schema-check; <code>$ref</code> with sibling keywords takes effect together per draft 2020-12 (no 2019-09 sibling-ignoring behavior for <code>$ref</code>)</li>
+<li><strong>normalize does not overstep</strong>: it never mutates input (all new objects use <code>Object.create(null)</code>); it only applies <strong>explicit</strong> <code>default</code>s for fields missing under <code>properties</code>; the default must be JSON-compatible and pass the corresponding sub-schema (otherwise a <code>default-invalid</code> warning and skip); no type coercion, no deletion of additional properties; oneOf/anyOf is entered only when exactly one branch already matches without applying defaults (otherwise a <code>normalize-skip-branch</code> warning)</li>
+<li><strong>explain is not silent</strong>: the output carries <code>schemaIssues</code>; unsupported keywords are reported under explain as well</li>
+<li><strong>Reproducible output</strong>: errors and issues are stably ordered; overflow truncation sets <code>truncated</code>; canonical output ≤ 1 MiB (contract assertion)</li>
 </ul>
-<h3>构建与测试</h3>
+<h3>Build &amp; Test</h3>
 <pre><code class="language-bash"># 构建（零依赖，仅需 monorepo 的 tsc）
 node &lt;monorepo&gt;/node_modules/typescript/bin/tsc -p tsconfig.json
 
 # 测试（vitest，125 个用例：scalar/object/array/combinators/ref/pattern/normalize/limits/register）
 node &lt;monorepo&gt;/node_modules/vitest/vitest.mjs run tests
 </code></pre>
-<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
-<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 的隔离 consumer 中完成全链路验证：</p>
+<h3>npm 0.1.0-rc.6 Compatibility (Verified)</h3>
+<p>This plugin has been migrated to the npm 0.1.0-rc.6 dependency line and fully validated end-to-end in an isolated consumer of <code>@deepseek-ai/dsh@0.1.0-rc.6</code>:</p>
 <ul>
-<li><strong>类型/运行时</strong>：<code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code>（peer）；不再依赖 unscoped <code>cordis</code></li>
-<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
-<li><strong>消费验证</strong>：tarball 装入 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
-<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+<li><strong>Type/runtime</strong>: <code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code> (peer); no longer depends on unscoped <code>cordis</code></li>
+<li><strong>Standalone build</strong>: <code>npm install</code> (devDependencies self-contained: typescript/vitest/@types/node) → <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>Consumption validation</strong>: the tarball is installed into a 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> shows this plugin&#39;s row → the tool actually registers and executes successfully</li>
+<li><strong>Launch method</strong>: <code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code> (lib production mode; do not <code>install -g</code> globally)</li>
 </ul>
-<h3>安装</h3>
-<h4>Profile Bundle（推荐）</h4>
-<p>仓库位于 <a href="https://github.com/omdsh-dev/dsh-tool-schema">omdsh-dev/dsh-tool-schema</a>（public）。将本插件作为独立 bundle 安装到 profile（DSH 0.1.0-rc.6（npm））：</p>
+<h3>Installation</h3>
+<h4>Profile Bundle (Recommended)</h4>
+<p>The repository lives at <a href="https://github.com/omdsh-dev/dsh-tool-schema">omdsh-dev/dsh-tool-schema</a> (public). Install this plugin as a standalone bundle into a profile (DSH 0.1.0-rc.6 (npm)):</p>
 <pre><code class="language-sh"># 交互式（web）profile
 dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema
 # 一次性任务（headless）profile —— dsh run 默认使用 headless
 dsh plugin --profile headless add github:omdsh-dev/dsh-tool-schema
 </code></pre>
-<p>包内 <code>dsh.bundle.patch</code> 会在安装后自动把插件加入 profile 的 layer stack（row id：<code>tool-schema</code>）。插件缺失的 peer 依赖（<code>cordis</code>、<code>@deepseek-ai/dsh-tools</code>）由 profile 的 healed <code>profiles/node_modules</code> 回退安装提供。</p>
+<p>The <code>dsh.bundle.patch</code> inside the package automatically adds the plugin to the profile&#39;s layer stack after installation (row id: <code>tool-schema</code>). Missing peer dependencies of the plugin (<code>cordis</code>, <code>@deepseek-ai/dsh-tools</code>) are provided by the profile&#39;s healed <code>profiles/node_modules</code> fallback install.</p>
 <blockquote>
-<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。Windows 路径使用正斜杠（<code>C:/...</code>）。</p>
+<p>⚠️ web and headless are <strong>different profiles</strong>: installing to web does not automatically cover headless; <code>dsh run</code> uses the headless profile by default. Windows paths use forward slashes (<code>C:/...</code>).</p>
 </blockquote>
-<h4>npm pack tarball 安装</h4>
-<p>本地构建后用 tarball 路径安装（不依赖 GitHub）：</p>
-<pre><code class="language-sh"># tarball 方式（web 为例；headless 同）
+<h4>Installing from an npm pack Tarball</h4>
+<p>Build locally and install from the tarball path (no GitHub dependency):</p>
+<pre><code class="language-sh"># tarball method (web shown; headless same)
 npm pack
-dsh plugin --profile web add &lt;npm pack 产物 tarball 路径&gt;
+dsh plugin --profile web add &lt;path to the npm pack tarball&gt;
 </code></pre>
-<h4>验证安装</h4>
+<h4>Verify Installation</h4>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep tool-schema
 </code></pre>
-<h4>运行验证</h4>
+<h4>Runtime Verification</h4>
 <pre><code class="language-sh">dsh run &quot;用 schema 工具验证 {name: &#39;x&#39;, age: 3} 是否符合给定 JSON Schema&quot;
 </code></pre>
-<h4>手动安装与旧版本兼容</h4>
-<p>旧场景（monorepo 集成、不支持 Profile Bundle 的旧快照或插件开发调试环境——本地 junction/symlink、手动编辑 profile 层）。</p>
-<h3>许可</h3>
+<h4>Manual Installation &amp; Legacy Compatibility</h4>
+<p>Legacy scenarios: monorepo integration, legacy snapshots that do not support Profile Bundle, or plugin development/debugging environments (local junction/symlink, manually editing profile layers).</p>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-schema/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-schema/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

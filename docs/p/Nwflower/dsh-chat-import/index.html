@@ -351,6 +351,12 @@ sync_to_claude({ sessionId: &quot;…&quot;, target: &quot;copy&quot;, dryRun: t
 </blockquote>
 <h4><code>/import</code> slash command</h4>
 <p>The plugin also registers a <strong><code>/import &lt;source&gt; &lt;path&gt;</code></strong> slash command (available where the dsh <code>commands</code> service is mounted): type it directly in a session to import without a model round-trip — the same pipeline and the same idempotent / incremental / <code>force</code> / context-budget semantics as the <code>import_*</code> tools. <code>&lt;source&gt;</code> accepts the short name (<code>claude</code>, <code>codex</code>, …), the client source id (<code>claude-code</code>), or the full tool name (<code>import_claude</code>); <code>&lt;path&gt;</code> is a transcript file or a session directory / data root (single-file import vs. directory batch as usual).</p>
+<h4>Session-start context enhancements</h4>
+<p>Two optional hooks run when a DSH session starts (the host <code>agent/session-start</code> event), both agent-scoped and never touching your transcripts:</p>
+<ul>
+<li><strong>Migration hint (default on)</strong> — when the session&#39;s workspace has discoverable external history (already-imported or importable), a one-line <code>PromptContext</code> is injected telling the model how to continue (<code>/import &lt;source&gt; &lt;path&gt;</code> or the sidebar panel). Per-project memory shows the hint only once per workspace; set <code>DSH_IMPORT_SESSION_HINT=0</code> to disable.</li>
+<li><strong>Claude context bridge (default off)</strong> — set <code>DSH_IMPORT_CONTEXT_BRIDGE=1</code> to bridge Claude Code context assets into the session: <code>~/.claude/memory/*.md</code> (grouped <code>feedback</code> &gt; <code>project</code> &gt; <code>reference</code> &gt; <code>user</code>, 8 KiB cap, re-read via mtime cache), the project-root <code>CLAUDE.md</code>, and <code>~/.claude/skills/*/SKILL.md</code> (registered as <code>claude-&lt;name&gt;</code> skills on this agent only).</li>
+</ul>
 <h3>🔑 Key behaviors</h3>
 <ul>
 <li><strong>Read-only import</strong> — source transcripts and databases are never rewritten; imported DSH history is append-only (existing events are never modified).</li>

@@ -190,39 +190,38 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/ecosystem-dsh--plugin-8b5cf6" alt="dsh-plugin"></a></p>
-<p>One-command backup for DeepSeek Harness user data — sessions, settings,
-credentials, skills, and plugin config under <code>~/.dsh</code>, excluding reinstallable
-<code>node_modules</code> — with sha256 checksums, automatic rotation, and scheduled
-auto-backup.</p>
-<h3>Features</h3>
+<p>一键备份 DeepSeek Harness 用户数据——<code>~/.dsh</code> 下的会话、设置、凭据、技能与
+插件配置（排除可重装的 node_modules），自动生成 sha256 校验和、自动轮换，
+并支持定时自动备份。</p>
+<h3>功能</h3>
 <ul>
-<li><strong><code>/backup</code></strong> — immediately back up <code>~/.dsh</code> to <code>~/Desktop/dsh-backups/dsh-&lt;timestamp&gt;.tar.gz</code></li>
-<li><strong><code>/backup list</code></strong> — list existing backups and auto-backup status</li>
-<li><strong><code>/backup auto &lt;N&gt;</code></strong> — auto-backup every N hours (1–720; keeps 3 copies below 24h, 7 otherwise)</li>
-<li><strong><code>/backup auto</code> / <code>/backup auto off</code></strong> — query status / disable</li>
-<li><strong><code>/backup --keep N</code></strong> — override the rotation count (default 7)</li>
-<li><strong><code>backup_dsh</code> tool</strong> — same capability for the model (<code>mode=backup|list|auto</code>)</li>
+<li><strong><code>/backup</code></strong> —— 立即备份 <code>~/.dsh</code> 到 <code>~/Desktop/dsh-backups/dsh-&lt;时间戳&gt;.tar.gz</code></li>
+<li><strong><code>/backup list</code></strong> —— 列出已有备份与自动备份状态</li>
+<li><strong><code>/backup auto &lt;N&gt;</code></strong> —— 每 N 小时自动备份（1~720；&lt;24h 保留 3 份，否则 7 份）</li>
+<li><strong><code>/backup auto</code> / <code>/backup auto off</code></strong> —— 查询状态 / 关闭</li>
+<li><strong><code>/backup --keep N</code></strong> —— 覆盖轮换保留份数（默认 7）</li>
+<li><strong><code>backup_dsh</code> 工具</strong> —— 模型可调用同一能力（<code>mode=backup|list|auto</code>）</li>
 </ul>
-<p>Every backup writes a sidecar <code>*.sha256</code> checksum file. Rotation deletes the
-oldest archives beyond the keep count.</p>
-<h3>Security note</h3>
-<p>Backups contain plaintext credentials (<code>.credentials.yaml</code>, <code>qq-bridge/config.json</code>).
-Archives are chmod 600 (owner read/write only), but do <strong>not</strong> sync the backup
-directory to untrusted locations, and treat archives as sensitive as your API keys.</p>
-<h3>Install</h3>
+<p>每次备份都会生成同名 <code>.sha256</code> 校验和文件；轮换会自动删除超出保留份数的
+旧备份。</p>
+<h3>安全说明</h3>
+<p>备份包含明文凭据（<code>.credentials.yaml</code>、<code>qq-bridge/config.json</code>）。备份文件
+已设为 <code>chmod 600</code>（仅本人可读写），但请<strong>不要</strong>把备份目录同步到不受信的
+位置，并像对待 API key 一样对待备份文件。</p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-backup
 </code></pre>
-<p>Then restart <code>dsh web</code> and run <code>/backup</code>.</p>
-<h3>Requirements</h3>
+<p>然后重启 <code>dsh web</code>，输入 <code>/backup</code> 即可。</p>
+<h3>依赖</h3>
 <ul>
-<li>macOS or Linux with <code>tar</code> in PATH (checksum prefers <code>sha256sum</code>, falls back to <code>shasum</code> on macOS)</li>
-<li>DSH <code>0.1.0-rc.6</code> or compatible</li>
+<li>macOS 或 Linux，PATH 中有 <code>tar</code>（校验和优先 <code>sha256sum</code>，macOS 回退 <code>shasum</code>）</li>
+<li>DSH <code>0.1.0-rc.6</code> 或兼容版本</li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/xiaoyuyu6420/dsh-backup/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/xiaoyuyu6420/dsh-backup/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -190,69 +190,69 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://www.npmjs.com/package/@dingyi222666/dsh-focus-chat"><img src="https://img.shields.io/npm/v/@dingyi222666/dsh-focus-chat.svg" alt="npm version"></a></p>
-<p>English | <a href="https://github.com/dingyi222666/dsh-focus-chat/blob/main/README.zh.md">中文</a></p>
-<p>A plugin for the dsh web GUI that adds a <strong>focus chat</strong> tab — a condensed, Claude Code–style way to read a conversation.</p>
-<h3>Screenshots</h3>
+<p><a href="https://github.com/dingyi222666/dsh-focus-chat/blob/main/README.md">English</a> | 中文</p>
+<p>一个给 dsh Web GUI 的插件，加了一个 <strong>聚焦对话</strong> 标签页——用 Claude Code 的方式精简地读对话。</p>
+<h3>截图</h3>
 <table>
 <thead>
 <tr>
-<th>Off — the normal chat view</th>
-<th>On — the focus chat view</th>
+<th>关闭——普通聊天视图</th>
+<th>开启——聚焦对话视图</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/dingyi222666/dsh-focus-chat/main/screenshots/before.png" alt="Off: the normal chat view"></td>
-<td><img src="https://raw.githubusercontent.com/dingyi222666/dsh-focus-chat/main/screenshots/after.png" alt="On: the focus chat view"></td>
+<td><img src="https://raw.githubusercontent.com/dingyi222666/dsh-focus-chat/main/screenshots/before.png" alt="关闭：普通聊天视图"></td>
+<td><img src="https://raw.githubusercontent.com/dingyi222666/dsh-focus-chat/main/screenshots/after.png" alt="开启：聚焦对话视图"></td>
 </tr>
 </tbody></table>
-<p>Instead of watching every step live, one assistant turn collapses into a single summary line:</p>
+<p>不再一步步盯着过程，一个助手回合会收成一条摘要行：</p>
 <blockquote>
-<p>Thought for 36s, loaded 3 context items, ran 2 shell commands, edited 8 files, read 17 files, listed 18 directories</p>
+<p>思考了 36 秒，载入了 3 项上下文，运行了 2 个命令，编辑了 8 次，读取了 17 个文件，列出了 18 个目录</p>
 </blockquote>
-<p>…and the whole turn can fold into one <code>Worked for Xm Ys</code> line. Click any line to expand the full detail — tool cards, thinking, context injections, produced files, copy/fork actions — all drawn the same way as the normal chat rows. Your mid-turn interjections split the fold into per-stretch lines, each carrying its own duration, and a stopped turn reads <code>Stopped after X</code> instead of &quot;worked&quot;. When a context injection records its own one-line account — a tool-tasks background-task settlement like <code>bash pnpm install [status: completed]</code> — that account rides the summary line too (<code>injected …</code>), not just the <code>loaded N context items</code> count.</p>
-<p>Switch to it whenever you want the &quot;what happened?&quot; view, and flip back for the full transcript.</p>
-<h3>Install</h3>
-<pre><code class="language-sh"># Install from npm (requires dsh &gt;= 0.1.0-rc.6)
+<p>整回合还能再收成一条 <code>工作了 X 分 Y 秒</code> 行。点任何一行都能展开成完整细节——工具卡片、思考、上下文注入、产物、复制/fork 操作——全部和普通聊天行同款画法。中途插话会把折叠按段切开，每段带自己的时长；被停止的回合显示 <code>用户 X 后停止</code> 而不是&quot;工作了&quot;。当一条上下文注入自带一句话摘要——比如 tool-tasks 后台任务完成后的 <code>bash pnpm install [status: completed]</code>——这条摘要也会写进摘要行（<code>注入了 …</code>），而不只是 <code>载入了 N 项上下文</code> 的数量。</p>
+<p>想看&quot;刚才到底发生了什么&quot;就切过来，想看完整过程就切回聊天视图。</p>
+<h3>安装</h3>
+<pre><code class="language-sh"># 从 npm 安装（需要 dsh &gt;= 0.1.0-rc.6）
 dsh plugin --profile web add @dingyi222666/dsh-focus-chat
-# Restart dsh web; the tab mounts automatically
+# 重启 dsh web，标签页自动挂载
 dsh web
 </code></pre>
-<p>Then open the Focus chat tab in any conversation.</p>
-<p>Notes:</p>
+<p>然后打开任意对话里的 聚焦对话 标签页。</p>
+<p>说明：</p>
 <ul>
-<li><code>dsh plugin</code> behaves like adding a dependency to your web profile. A bundle plugin is loaded once its full package name appears in the profile&#39;s <code>dsh.profile.bundles</code> list (adds automatically on recent dsh builds; add it manually if your build does not); the bundle patch applies on the next boot.</li>
-<li>With the repo source-launched CLI, run the args through the bin directly (<code>node --import tsx/esm apps/cli/src/bin.ts ...</code>).</li>
+<li><code>dsh plugin</code> 相当于给 web profile 加一个依赖。bundle 型插件需要在 profile 的 <code>dsh.profile.bundles</code> 里出现它的完整包名才会被加载（新版本 dsh 会自动加；如果你的版本没加，请手动补上）；bundle patch 在下次启动时生效。</li>
+<li>用仓库源码启动的 CLI 时，请直接调用 bin（<code>node --import tsx/esm apps/cli/src/bin.ts ...</code>）。</li>
 </ul>
-<h3>Why a separate tab, and not a patch into the chat view?</h3>
-<p>Short answer: the chat view&#39;s internals aren&#39;t open to third-party plugins — by design — and this plugin deliberately never touches dsh&#39;s own source. Concretely:</p>
+<h3>为什么要单独一个标签页？为什么不直接改聊天视图？</h3>
+<p>一句话：聊天视图的内部对第三方插件是封闭的——这是设计如此——而且这个插件刻意不碰 dsh 自己的源码。具体来说：</p>
 <ul>
-<li><strong>Keyed slots are owned, not shared.</strong> The chat&#39;s rows render through slots like <code>conversation.chat.node</code>, <code>tool.call.toolview</code>, and <code>conversation.chat.turnTail</code>. Those slots are declared by the chat entries themselves, and the slot system rejects a second declaration at load time — the conflict <em>is</em> the design speaking. A plugin cannot insert its own rows into the chat transcript, and cannot even <em>declare</em> the chat&#39;s own slots.</li>
-<li><strong>Plugins can&#39;t reuse the chat&#39;s renderer code.</strong> Importing values from another plugin package across the bundle boundary is forbidden (the bundle purity gate), so there&#39;s no way to borrow the chat&#39;s components — every row has to be drawn from the shared primitives and the public snapshot.</li>
-<li><strong>The only legal insertion point is the <code>conversation.view</code> list slot</strong> — the whole message surface. That&#39;s why the plugin ships its own complete view instead of changing how the chat view displays.</li>
+<li>**键控槽位是独占的，不是共享的。**聊天的行通过 <code>conversation.chat.node</code>、<code>tool.call.toolview</code>、<code>conversation.chat.turnTail</code> 这类槽位渲染。这些槽位由聊天入口自己声明，槽位系统在加载期拒绝重复声明——冲突本身就是设计在说话。插件既不能往聊天对话流里插自己的行，甚至连声明聊天自己的槽位都不行。</li>
+<li>**插件不能复用聊天的渲染代码。**跨 bundle 边界导入另一个插件包的值是被禁止的（bundle purity 门禁），所以没有任何办法借用聊天的组件——每一行都只能用共享原语和公开快照自己画。</li>
+<li><strong>唯一合法的插入点是 <code>conversation.view</code> 列表槽</strong>——整个消息界面。这就是为什么插件自带一整个视图，而不是去改聊天视图的显示方式。</li>
 </ul>
-<p>If you want the chat view itself to behave differently, that&#39;s an in-repo change to the chat package — exactly what this plugin avoids.</p>
-<h3>What&#39;s missing</h3>
-<p>Focus chat is a faithful reading surface, not a second chat view:</p>
+<p>想让聊天视图本身换个行为，那是聊天包仓库内的改动——正是这个插件要避免的。</p>
+<h3>缺什么</h3>
+<p>聚焦对话是忠实的阅读界面，不是第二个聊天视图：</p>
 <ul>
-<li><strong>No Inspect / details-panel deep links.</strong> The chat&#39;s Inspect affordance needs internals plugins can&#39;t touch. The tool cards render the same content, just without the jump-to-details button.</li>
-<li><strong>Third-party tool-card extensions don&#39;t render here.</strong> Cards that other plugins add to the chat view won&#39;t appear in the focus view; the built-in card renderers are used instead.</li>
-<li><strong>Folding is per consecutive tool-run.</strong> Any visible content between two runs (a reply, a command, your interjection) keeps them separate.</li>
-<li><strong>Inline file links need the optional file-mentions service</strong> — the same off switch the chat view uses.</li>
+<li>**没有 Inspect / 详情面板深链。**聊天的 Inspect 入口依赖插件够不到的内部机制；工具卡片内容一样，只是没有&quot;跳去详情&quot;的按钮。</li>
+<li>**别的插件给聊天加的工具卡片扩展在这里不渲染。**聚焦视图用内置的卡片渲染。</li>
+<li>**折叠按连续工具轮次。**两段之间有任何可见内容（回复、命令、你的插话）就保持分开。</li>
+<li><strong>行内文件链接依赖可选的文件提及服务</strong>——和聊天视图同一个开关。</li>
 </ul>
-<h3>Development</h3>
+<h3>开发</h3>
 <ul>
-<li><code>yarn run build</code> — builds the browser bundle and the Node half.</li>
-<li><code>src/client/focus-model.ts</code> — the pure logic (folding, merging, row models); <code>src/client/FocusView.tsx</code> — the view.</li>
-<li><code>yarn test</code> — behavior tests; <code>yarn run typecheck</code> — type gate.</li>
-<li>A <code>--dev</code> <code>dsh web</code> server hot-reloads rebuilt bundles — <code>yarn run build</code> alone is usually enough to see changes.</li>
+<li><code>yarn run build</code> — 产出浏览器 bundle 和 Node 半边。</li>
+<li><code>src/client/focus-model.ts</code> — 纯逻辑（折叠、合并、行模型）；<code>src/client/FocusView.tsx</code> — 视图。</li>
+<li><code>yarn test</code> — 行为测试；<code>yarn run typecheck</code> — 类型门禁。</li>
+<li><code>--dev</code> 的 <code>dsh web</code> 会自动热加载重建的 bundle——改完 <code>yarn run build</code> 一般就能看到效果。</li>
 </ul>
-<h3>Model Experience</h3>
-<p>None. The view is a pure client derivation over the already-logged conversation snapshot; nothing here reaches a model request.</p>
-<h5>KV Cache effect</h5>
-<p>None; this package neither assembles nor sends provider requests.</p>
+<h3>模型体验</h3>
+<p>无。该视图是对已记录对话快照的纯客户端派生，这里没有任何内容进入模型请求。</p>
+<h5>KV Cache 影响</h5>
+<p>无；该包既不组装也不发送提供方请求。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/dingyi222666/dsh-focus-chat/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/dingyi222666/dsh-focus-chat/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

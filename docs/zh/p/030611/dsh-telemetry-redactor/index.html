@@ -197,38 +197,38 @@ footer p+p{margin-top:.5rem}
 <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/LICENSE"><img src="https://img.shields.io/github/license/030611/dsh-telemetry-redactor" alt="License"></a>
 <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
 <a href="https://whyihaveyou.github.io/dsh-suite/"><img src="https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe" alt="featured on dsh-suite"></a></p>
-<p>English | <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/README.zh.md">中文</a></p>
-<p><img src="https://raw.githubusercontent.com/030611/dsh-telemetry-redactor/main/docs/social-preview.jpg" alt="DSH Telemetry Redactor social preview"></p>
-<p><strong>Redact supported credential patterns from outbound telemetry copies before configured backends receive them—without rewriting canonical session logs.</strong></p>
+<p><a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/README.md">English</a> | 中文</p>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-telemetry-redactor/main/docs/social-preview.jpg" alt="DSH Telemetry Redactor 社交预览图"></p>
+<p><strong>在已配置的遥测后端收到导出副本前，对受支持的凭证模式脱敏，同时不改写规范会话日志。</strong></p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-telemetry-redactor
 </code></pre>
 <blockquote>
-<p>Community-maintained and not an official DeepSeek project. Related trust-layer plugins: <a href="https://github.com/030611/dsh-verification-receipt">Verification Receipt</a>, <a href="https://github.com/030611/qiushi-dsh-evidence-audit">Evidence Audit</a>, and <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>.</p>
+<p>由社区维护，并非 DeepSeek 官方项目。相关 trust-layer 插件：<a href="https://github.com/030611/dsh-verification-receipt">Verification Receipt</a>、<a href="https://github.com/030611/qiushi-dsh-evidence-audit">Evidence Audit</a> 与 <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>。</p>
 </blockquote>
-<p><code>dsh-telemetry-redactor</code> is a minimal DeepSeek Harness Profile Bundle that redacts sensitive values from session telemetry before a backend receives them. It mounts on the official <code>session-telemetry/record</code> waterfall, calls <code>next()</code> so other deployment rules still compose, and returns a new recursively redacted record.</p>
-<p>The official telemetry coordinator deep-copies canonical session events before this waterfall and contains thrown rules per record. Therefore this plugin changes only the outbound copy: it never rewrites the canonical session log. In this document, <strong>fail-closed means only that this coordinator withholds one failing export copy</strong> and continues the agent loop. It is not a claim that every telemetry path or listener order is impossible to bypass.</p>
-<h3>What it redacts</h3>
+<p><code>dsh-telemetry-redactor</code> 是一个最小 DeepSeek Harness Profile Bundle，在遥测后端收到记录之前脱敏敏感值。它挂载官方 <code>session-telemetry/record</code> waterfall，调用 <code>next()</code> 以保持其他部署规则可组合，并返回一份新的递归脱敏记录。</p>
+<p>官方 telemetry coordinator 会在进入该 waterfall 之前深拷贝 canonical session event，并逐条隔离规则异常。因此本插件只改变外发副本，绝不改写权威 session log。本文中的 <strong>fail-closed 仅表示该 coordinator 丢弃一条失败的导出副本</strong>，同时 agent loop 继续运行；它不表示所有 telemetry 路径或 listener 顺序都不可绕过。</p>
+<h3>脱敏范围</h3>
 <ul>
-<li>Values under high-risk key names such as <code>authorization</code>, <code>cookie</code>, <code>credential</code>, <code>password</code>, <code>secret</code>, <code>token</code>, <code>apiKey</code>, <code>access_token</code>, <code>clientSecret</code>, and <code>privateKey</code>; recognized credential patterns in key names are replaced too.</li>
-<li>Bearer and Basic authorization values embedded in strings.</li>
-<li>Common credential forms including <code>sk-...</code>, GitHub tokens, Slack tokens, JWT-like triples, and <code>token=...</code> / <code>api_key: ...</code> assignments.</li>
+<li>高风险键名下的完整值，例如 <code>authorization</code>、<code>cookie</code>、<code>credential</code>、<code>password</code>、<code>secret</code>、<code>token</code>、<code>apiKey</code>、<code>access_token</code>、<code>clientSecret</code> 与 <code>privateKey</code>；键名本身包含已识别凭据模式时也会改写键名。</li>
+<li>字符串中的 Bearer 与 Basic Authorization 值。</li>
+<li>常见凭据形式，包括 <code>sk-...</code>、GitHub token、Slack token、JWT 三段式字符串，以及 <code>token=...</code> / <code>api_key: ...</code> 赋值。</li>
 </ul>
-<p>Keys are tokenized before matching, so telemetry counters such as <code>inputTokens</code>, <code>output_tokens</code>, <code>tokenUsage</code>, <code>tokenCount</code>, and <code>contextTokenCount</code>, and ordinary fields such as <code>tokenizer</code>, remain intact. Redaction is a safety filter, not a proof that an arbitrary unknown secret format is absent. The exact supported and unsupported cases are in <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/SECRET-MATRIX.md">SECRET-MATRIX.md</a>; see <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/SECURITY.md">SECURITY.md</a> for the trust boundary.</p>
-<p>The listener is prepended so it normally wraps deployment rules mounted before or after it and redacts their final output. A deliberately prepended outer listener can still add content after this plugin; review the complete waterfall listener set in security-sensitive deployments.</p>
-<h3>Install</h3>
-<p>Install the public package into the selected DSH profile, then inspect the resolved configuration:</p>
+<p>插件先对键名分词再匹配，因此 <code>inputTokens</code>、<code>output_tokens</code>、<code>tokenUsage</code>、<code>tokenCount</code>、<code>contextTokenCount</code> 等遥测计数和 <code>tokenizer</code> 等普通字段会保留。脱敏是安全过滤器，不是对所有未知秘密格式均不泄漏的证明。精确支持与不支持边界见 <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/SECRET-MATRIX.zh.md">SECRET-MATRIX.zh.md</a>，信任边界见 <a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/SECURITY.md">SECURITY.md</a>。</p>
+<p>监听器以 prepend 方式注册，因此通常会包裹其前后挂载的部署规则，并脱敏这些规则的最终输出。若另一个插件刻意注册更外层的 prepended listener，仍可能在本插件之后加入内容；安全敏感部署必须审查完整 waterfall listener 集合。</p>
+<h3>安装</h3>
+<p>把公开包安装到选定的 DSH profile，然后检查最终配置：</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-telemetry-redactor
 dsh --profile web --dump-config
 </code></pre>
-<p>The dump must contain the inserted <code>telemetry-redactor</code> row. The bundle does not add, replace, or enable a telemetry backend; it only protects records handled by whatever backend the deployment already selected.</p>
-<h3>Configuration</h3>
-<p>The only option is <code>replacement</code>, which defaults to <code>[REDACTED]</code>. It must contain 1 to 128 characters and must not itself match a supported credential pattern; invalid values fail loudly when the Cordis plugin fiber is awaited.</p>
+<p>配置 dump 必须出现新增的 <code>telemetry-redactor</code> 行。本 bundle 不会添加、替换或启用 telemetry backend；它只保护部署已经选择的后端会处理的记录。</p>
+<h3>配置</h3>
+<p>唯一选项为 <code>replacement</code>，默认值是 <code>[REDACTED]</code>。长度必须为 1 至 128 个字符，且自身不能命中已支持的凭据模式；非法值在 Cordis plugin fiber 被 await 时响亮失败。</p>
 <pre><code class="language-yaml">- id: telemetry-redactor
   config:
     replacement: &#39;[TELEMETRY-REDACTED]&#39;
 </code></pre>
-<p>The key and pattern rules are fixed security behavior and cannot be disabled through configuration.</p>
-<h3>Verification</h3>
+<p>键名与模式规则属于固定安全行为，不能通过配置关闭。</p>
+<h3>验证</h3>
 <pre><code class="language-sh">pnpm run typecheck
 pnpm test
 pnpm run build
@@ -238,25 +238,25 @@ pnpm run test:official-head
 pnpm run test:official-patch
 pnpm run test:packed:clean-env
 </code></pre>
-<p>The tests include a real Cordis Loader composition with the <code>SessionTelemetryCoordinator</code>: the backend receives the replacement while the authoritative session event retains the fixture secret, and an over-deep record is withheld without escaping the capture handler. Release smokes use the packaged frozen fixture for official commit <code>47f943859bef60e4160492346772ded9b24f765a</code>: it pins the reviewed source hashes, exact published runtime versions and runtime-file hashes, then verifies the required Cordis/session/LLM/coordinator API surface before composing it with the built or tarball-installed plugin. <code>test:official-patch</code> similarly pins the reviewed Include source hash before applying <code>cordis.patch.yml</code>. No environment variable or installed official checkout is required.</p>
-<h3>Model Experience</h3>
-<p>None. The plugin observes an outbound telemetry copy after session logging and contributes no prompt text, tool schema, message, or provider request.</p>
-<h5>KV Cache effect</h5>
-<p>None; no model request changes.</p>
-<h3>Known limitations</h3>
+<p>测试包含真实 Cordis Loader 与 <code>SessionTelemetryCoordinator</code> 组合：后端只能收到替换值，权威 session event 仍保留 fixture secret，超深记录会被阻断且异常不会逃出捕获 handler。release smoke 使用随包携带、对应官方 commit <code>47f943859bef60e4160492346772ded9b24f765a</code> 的冻结 fixture：它固定已审阅的源码哈希、精确的已发布 runtime 版本与 runtime 文件哈希，随后校验 Cordis/session/LLM/coordinator 所需 API surface，再与构建产物或 tarball 安装产物组合。<code>test:official-patch</code> 同样固定已审阅的 Include 源码哈希后应用 <code>cordis.patch.yml</code>。不需要环境变量或已安装的官方 checkout。测试不调用模型、不需要 API key、不连接网络 exporter，也不修改 canonical log。</p>
+<h3>模型体验</h3>
+<p>无。本插件只观察 session log 之后的外发 telemetry 副本，不贡献 prompt、工具 schema、消息或模型请求。</p>
+<h5>KV Cache 影响</h5>
+<p>无；不会改变任何模型请求。</p>
+<h3>已知限制</h3>
 <ul>
-<li>Unknown secret formats that have neither a sensitive key nor a recognized string pattern may pass through. Add deterministic coverage before extending the fixed patterns.</li>
-<li>Accessor properties and non-plain objects are rejected rather than read or silently converted. Enumerable JSON data in arrays, ordinary objects, and null-prototype objects is supported; non-enumerable fields are outside the telemetry contract.</li>
-<li>A key-name match redacts the complete value. This favors safety over retaining structure beneath fields named as credentials.</li>
-<li>Redaction occurs synchronously on the telemetry capture path. The implementation is recursive and bounded to 64 nested containers; very large but shallow records still cost linear CPU time.</li>
-<li>A Proxy can run or throw from reflection traps before the plugin can inspect its contents. The official coordinator&#39;s own <code>structuredClone</code> normally rejects a Proxy before this waterfall; direct third-party dispatch is not a supported hostile-object sandbox.</li>
-<li><code>dsh.plugin.json</code> is supplemental community metadata. DSH installation is controlled by <code>package.json</code>&#39;s <code>dsh.bundle</code> field and <code>cordis.patch.yml</code>.</li>
+<li>若未知秘密格式既不位于敏感键下，也不符合已识别字符串模式，可能继续透传。扩展固定规则前应先加入确定性覆盖。</li>
+<li>getter/setter 与非普通对象会被拒绝，而不是被读取或静默改变语义。支持数组、普通对象和 null-prototype 对象中的可枚举 JSON 数据；不可枚举字段不属于 telemetry contract。</li>
+<li>键名命中后会替换完整值。这一选择优先保障安全，不保留凭据字段下的结构。</li>
+<li>脱敏在 telemetry 捕获路径同步执行。实现递归且最多处理 64 层容器；很大但较浅的记录仍产生线性 CPU 开销。</li>
+<li>Proxy 的反射 trap 可能在插件检查内容前执行或抛错。官方 coordinator 的 <code>structuredClone</code> 通常会先拒绝 Proxy；恶意第三方直接分发不属于支持的隔离边界。</li>
+<li><code>dsh.plugin.json</code> 是补充社区元数据。DSH 安装以 <code>package.json</code> 的 <code>dsh.bundle</code> 字段和 <code>cordis.patch.yml</code> 为准。</li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/030611/dsh-telemetry-redactor/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

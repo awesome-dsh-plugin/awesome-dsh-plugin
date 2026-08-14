@@ -193,196 +193,212 @@ footer p+p{margin-top:.5rem}
 <p><a href="https://www.npmjs.com/package/@openma/deepseek-harness-tui"><img src="https://img.shields.io/npm/v/%40openma%2Fdeepseek-harness-tui" alt="npm"></a>
 <a href="https://github.com/openma-ai/deepseek-harness-tui/actions/workflows/package-npm.yml"><img src="https://github.com/openma-ai/deepseek-harness-tui/actions/workflows/package-npm.yml/badge.svg" alt="Package and publish npm"></a>
 <a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a></p>
-<p>DeepSeek Harness 的终端原生 agent UI：在一个 Rust/ratatui 界面里查看流式推理、
-工具调用、subagent、token 用量和持久化会话。既可以作为官方 <code>dsh</code> profile
-插件运行，也可以直接连接 SDK JSON-RPC runtime。</p>
+<p>A terminal-native agent UI for DeepSeek Harness. Follow streamed reasoning,
+tool calls, subagents, token usage, and durable sessions in one Rust/ratatui
+interface. Run it as an official <code>dsh</code> profile plugin or connect it directly to
+the SDK JSON-RPC runtime.</p>
 <blockquote>
-<p><strong>v0.1.1</strong> · 官方包覆盖 macOS Apple Silicon、macOS Intel、Linux x64 和
-Windows x64。当前集成以 <code>dsh 0.1.0-rc.6</code> 为基线。</p>
+<p><strong>v0.1.1</strong> · The official package supports macOS on Apple Silicon and Intel,
+Linux x64, and Windows x64. The current integration baseline is
+<code>dsh 0.1.0-rc.6</code>.</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/banner.jpg" alt="dsh-tui 的 DeepSeek Harness 会话界面"></p>
-<h3>快速开始</h3>
-<h4>推荐：作为 dsh profile 插件运行</h4>
-<p>需要已安装并配置好的 <code>dsh</code>、Node.js 18+ 和 pnpm 10+。</p>
+<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/banner.jpg" alt="A DeepSeek Harness session in dsh-tui"></p>
+<h3>Quick start</h3>
+<h4>Recommended: run as a dsh profile plugin</h4>
+<p>Requires a configured <code>dsh</code> installation, Node.js 18+, and pnpm 10+.</p>
 <pre><code class="language-sh">dsh plugin --profile tui add @openma/deepseek-harness-tui
 dsh --profile tui
 </code></pre>
-<p>安装命令不需要 <code>-w</code>。可用下面的命令确认 bundle 已挂载为 <code>tui-runner</code>：</p>
+<p>The install command does not need <code>-w</code>. Confirm that the bundle is mounted as
+<code>tui-runner</code> with:</p>
 <pre><code class="language-sh">dsh --profile tui --dump-config
 </code></pre>
-<h4>先看 Demo</h4>
-<p>Demo 不需要 runtime 或 API key：</p>
+<h4>Try the demo first</h4>
+<p>The demo needs neither a runtime nor an API key:</p>
 <pre><code class="language-sh">npm install --global @openma/deepseek-harness-tui
 dsh-tui --demo
 </code></pre>
-<p><code>dsh-tui</code> 是主命令；<code>dsb</code> 保留为兼容别名。</p>
-<h3>核心能力</h3>
+<p><code>dsh-tui</code> is the primary command; <code>dsb</code> remains as a compatibility alias.</p>
+<h3>Highlights</h3>
 <ul>
-<li>实时呈现推理、回复、工具参数与结果、plugin 上下文和 subagent 生命周期。</li>
-<li>回合进行中排队 follow-up；standalone 模式还支持立即打断并发送下一条。</li>
-<li>持久化 JSONL 会话，可通过 <code>/new</code>、<code>/resume</code> 和 <code>--session-id</code> 管理。</li>
-<li>从 dsh 宿主读取模型、agent preset、权限 preset、provider 和凭据。</li>
-<li>深浅两套 DeepSeek Web UI 风格主题，支持窄终端与鼠标交互。</li>
-<li>本机、tmux 和 SSH 下通过原生剪贴板、tmux buffer 或 OSC 52 复制文本。</li>
+<li>Streams reasoning, assistant text, tool arguments and results, plugin context,
+and subagent lifecycles.</li>
+<li>Queues follow-ups during a turn; standalone mode can also interrupt and send
+the next message immediately.</li>
+<li>Keeps durable JSONL sessions managed through <code>/new</code>, <code>/resume</code>, and
+<code>--session-id</code>.</li>
+<li>Uses the host dsh model catalog, agent presets, permission presets, providers,
+and credentials.</li>
+<li>Includes dark and light DeepSeek Web UI-inspired themes, narrow-terminal
+layouts, and mouse interaction.</li>
+<li>Copies through native clipboard tools, the tmux buffer, or OSC 52 for local,
+tmux, and SSH sessions.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/plugin-turn.jpg" alt="plugin 模式中的上下文、工具调用和排队 follow-up"></p>
-<h3>两种运行模式</h3>
+<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/plugin-turn.jpg" alt="Plugin context, tool calls, and a queued follow-up"></p>
+<h3>Two runtime modes</h3>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>dsh plugin（推荐）</th>
+<th>dsh plugin (recommended)</th>
 <th>Standalone</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Agent、工具与 provider</td>
-<td>来自 dsh profile</td>
-<td>来自独立 SDK runtime</td>
+<td>Agent, tools, providers</td>
+<td>Supplied by the dsh profile</td>
+<td>Supplied by a separate SDK runtime</td>
 </tr>
 <tr>
-<td>模型与 agent preset</td>
-<td>使用宿主真实目录，可在 TUI 中切换</td>
-<td>使用启动参数或 runtime 配置</td>
+<td>Models and agent presets</td>
+<td>Uses the live host catalog and switches from the TUI</td>
+<td>Uses launch flags or runtime configuration</td>
 </tr>
 <tr>
-<td>会话存储</td>
+<td>Session storage</td>
 <td><code>~/.dsh/sessions</code></td>
-<td><code>~/.dsh-tui/sessions</code>，可用 <code>--session-root</code> 修改</td>
+<td><code>~/.dsh-tui/sessions</code>, configurable with <code>--session-root</code></td>
 </tr>
 <tr>
-<td>回合中断</td>
-<td>宿主持有回合，不做硬中断</td>
-<td><code>esc</code> 停止 runtime；会话日志保留</td>
+<td>Mid-turn interrupt</td>
+<td>The host owns the turn; no hard interrupt</td>
+<td><code>esc</code> stops the runtime while preserving the session log</td>
 </tr>
 <tr>
-<td>Runtime 安装</td>
-<td>bundle 自带兼容层</td>
-<td>需要 <code>dsh-jsonrpc-agent</code></td>
+<td>Runtime installation</td>
+<td>The bundle includes its compatibility layer</td>
+<td>Requires <code>dsh-jsonrpc-agent</code></td>
 </tr>
 </tbody></table>
-<p>Plugin runner 在宿主 TTY 上启动原生二进制，并通过 fd 3/4 提供一套与官方 SDK
-server 兼容的 JSON-RPC 接口。它不是对
-<code>@deepseek-ai/dsh-sdk-jsonrpc-server</code> 的直接挂载；agent、工具、provider 和持久化
-仍由外围 dsh profile 提供。</p>
+<p>The plugin runner launches the native binary on the host TTY and serves an SDK
+server-compatible JSON-RPC interface over fds 3/4. It does not mount
+<code>@deepseek-ai/dsh-sdk-jsonrpc-server</code> directly; the surrounding dsh profile
+still supplies agents, tools, providers, and persistence.</p>
 <h4>Standalone runtime</h4>
-<p>全局安装只提供 TUI 二进制。Standalone 模式还需要在工作区附近的 <code>.venv</code> 中
-安装 DeepSeek Harness SDK，或显式指定 runtime：</p>
+<p>The global npm install provides the TUI binary. Standalone mode also needs the
+DeepSeek Harness SDK in a nearby <code>.venv</code>, or an explicitly configured runtime:</p>
 <pre><code class="language-sh">python -m venv .venv
 .venv/bin/pip install deepseek-harness-sdk
 dsh-tui --workspace .
 </code></pre>
-<p>也可以设置 <code>DSH_RUNTIME_BIN</code>，或传入 <code>--runtime-bin &lt;path&gt;</code>。凭据优先使用
-<code>--api-key</code>、<code>DEEPSEEK_API_KEY</code>，随后尝试读取本机 <code>~/.dsh</code> 配置。</p>
-<h3>常用交互</h3>
+<p>Alternatively, set <code>DSH_RUNTIME_BIN</code> or pass <code>--runtime-bin &lt;path&gt;</code>. Credentials
+come from <code>--api-key</code>, <code>DEEPSEEK_API_KEY</code>, or the local <code>~/.dsh</code> configuration,
+in that order.</p>
+<h3>Essential interactions</h3>
 <table>
 <thead>
 <tr>
-<th>按键 / 命令</th>
-<th>行为</th>
+<th>Key / command</th>
+<th>Behavior</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>enter</code></td>
-<td>发送；回合运行时排队 follow-up</td>
+<td>Send; queue a follow-up while a turn is running</td>
 </tr>
 <tr>
 <td><code>alt+enter</code></td>
-<td>Standalone：打断当前回合并优先发送；plugin：排队</td>
+<td>Standalone: interrupt and send next; plugin: queue</td>
 </tr>
 <tr>
 <td><code>esc</code></td>
-<td>Standalone：打断且保留草稿；空闲时连按两次清草稿</td>
+<td>Standalone: interrupt and preserve the draft; press twice while idle to clear</td>
 </tr>
 <tr>
 <td><code>ctrl+c</code></td>
-<td>先清草稿，再中断；连按两次退出</td>
+<td>Clear the draft, then interrupt; press twice to quit</td>
 </tr>
 <tr>
 <td><code>/</code></td>
-<td>打开命令菜单并按前缀过滤</td>
+<td>Open the command menu and filter by prefix</td>
 </tr>
 <tr>
 <td><code>/model</code> · <code>/mode</code></td>
-<td>选择模型和 agent preset；完整目录需要 plugin 模式</td>
+<td>Pick a model or agent preset; the full host catalog needs plugin mode</td>
 </tr>
 <tr>
 <td><code>/permission</code> · <code>shift+tab</code></td>
-<td>选择或轮换权限 preset；需要 plugin 模式</td>
+<td>Pick or cycle permission presets; plugin mode only</td>
 </tr>
 <tr>
 <td><code>/effort</code> · <code>/plan</code></td>
-<td>设置推理力度或把 plan 模式传给宿主</td>
+<td>Set reasoning effort or pass plan mode to the host</td>
 </tr>
 <tr>
 <td><code>ctrl+e</code> · <code>ctrl+t</code></td>
-<td>展开输出 · 切换主题</td>
+<td>Expand output · toggle the theme</td>
 </tr>
 <tr>
 <td><code>pgup/pgdn</code> · <code>ctrl+u/d</code></td>
-<td>滚动；<code>end</code> 回到实时尾部</td>
+<td>Scroll; <code>end</code> follows the live tail</td>
 </tr>
 <tr>
-<td>鼠标拖选</td>
-<td>松手复制；双击复制单词；<code>shift+拖选</code> 使用终端原生选择</td>
+<td>Mouse drag</td>
+<td>Copy on release; double-click a word; <code>shift+drag</code> uses native selection</td>
 </tr>
 <tr>
 <td><code>!cmd</code></td>
-<td>在客户端本地执行 shell 命令，不经过 agent</td>
+<td>Run a local shell command on the client, outside the agent</td>
 </tr>
 </tbody></table>
-<p>界面内使用 <code>/help</code> 查看命令，使用 <code>/keys</code> 查看完整快捷键。</p>
-<p><code>/liang</code> 会在输入框右侧显示小难梁：空闲时安静思考，回合运行时敲小终端。
-Ghostty、Kitty 和 WezTerm 等支持 kitty graphics protocol 的终端会显示 RGBA
-像素精灵；其他终端退回半块字符鲸鱼。宽度低于 60 列时自动隐藏。</p>
-<p>可用 <code>/liang on</code>、<code>/liang off</code> 显式控制。</p>
-<h3>从源码构建</h3>
-<p>需要 Rust stable 和 Node.js 18+：</p>
+<p>Use <code>/help</code> for commands and <code>/keys</code> for the complete shortcut list.</p>
+<p><code>/liang</code> places a small pixel-art companion beside the composer: quiet while
+idle, typing at a tiny terminal during a turn. Terminals with kitty graphics
+protocol support, including Ghostty, Kitty, and WezTerm, get RGBA sprites;
+others fall back to a half-block whale. The pet hides below 60 columns.</p>
+<p>Use <code>/liang on</code> or <code>/liang off</code> to control it explicitly.</p>
+<h3>Build from source</h3>
+<p>Requires Rust stable and Node.js 18+:</p>
 <pre><code class="language-sh">cargo test --locked
 node --test scripts/package-native.test.mjs
 bash scripts/build-npm.sh
 </code></pre>
-<p>本地脚本只编译当前平台，并将 tarball 写入 <code>dist/</code>。GitHub Actions 工作流
-<code>Package and publish npm</code> 会分别构建以下目录，再汇总为一个 npm 包：</p>
+<p>The local script builds only the current platform and writes a tarball to
+<code>dist/</code>. The <code>Package and publish npm</code> GitHub Actions workflow builds and then
+assembles these paths into one npm package:</p>
 <pre><code class="language-text">npm/vendor/darwin-arm64/dsh-tui
 npm/vendor/darwin-x64/dsh-tui
 npm/vendor/linux-x64/dsh-tui
 npm/vendor/win32-x64/dsh-tui.exe
 </code></pre>
-<p>推送与 <code>npm/package.json</code> 和 <code>Cargo.toml</code> 版本一致的 tag（例如 <code>v0.1.0</code>）
-会通过 npm Trusted Publishing（OIDC）发布到 <code>latest</code>，随后创建带 tarball
-的 GitHub Release。版本不一致时 CI 会在发布前失败。</p>
-<h3>故障排查</h3>
+<p>Pushing a tag that matches both <code>npm/package.json</code> and <code>Cargo.toml</code> (for example,
+<code>v0.1.0</code>) publishes to <code>latest</code> through npm Trusted Publishing (OIDC), then
+creates a GitHub Release with the tarball. A version mismatch fails before
+publishing.</p>
+<h3>Troubleshooting</h3>
 <ul>
-<li><strong><code>no native binary for ...</code></strong>：当前安装包不包含你的平台。确认安装的是
-最新版本，并查看上方支持矩阵。</li>
-<li><strong><code>cannot find ... dsh-jsonrpc-agent</code></strong>：这是 standalone runtime 缺失；安装
-SDK、设置 <code>DSH_RUNTIME_BIN</code>，或改用 dsh plugin 模式。</li>
-<li><strong>pnpm workspace root 错误</strong>：升级到 pnpm 10+，然后重新运行不带 <code>-w</code> 的
-安装命令。</li>
-<li><strong><code>ERR_REQUIRE_ESM_RACE_CONDITION</code></strong>：0.1.0 及更早的 runner 是 CJS，会和
-dsh 并行加载的 ESM 插件抢同一份模块。升级到 <code>0.1.1</code> 以上，或从本仓库安装
-<code>npm/</code> 目录。</li>
-<li><strong>像素宠物不显示</strong>：终端可能不支持 kitty graphics protocol；主界面功能
-不受影响。</li>
+<li><strong><code>no native binary for ...</code></strong>: the installed package does not contain your
+platform. Confirm that you installed the latest version and check the support
+matrix.</li>
+<li><strong><code>cannot find ... dsh-jsonrpc-agent</code></strong>: the standalone runtime is missing.
+Install the SDK, set <code>DSH_RUNTIME_BIN</code>, or use dsh plugin mode.</li>
+<li><strong>pnpm workspace root error</strong>: upgrade to pnpm 10+ and rerun the install
+command without <code>-w</code>.</li>
+<li><strong><code>ERR_REQUIRE_ESM_RACE_CONDITION</code></strong>: 0.1.0 and earlier shipped a CommonJS
+runner that raced Cordis&#39;s parallel ESM <code>import()</code>. Upgrade to <code>0.1.1</code> or
+install this repo&#39;s <code>npm/</code> directory.</li>
+<li><strong>No pixel pet</strong>: the terminal may not support kitty graphics protocol; the
+rest of the UI is unaffected.</li>
 </ul>
-<h3>项目结构</h3>
+<h3>Repository map</h3>
 <ul>
-<li><code>src/</code>：TUI 状态机、绘制、协议、runtime 生命周期和会话目录。</li>
-<li><code>npm/</code>：dsh bundle runner、CLI shim、manifest 与原生二进制。</li>
-<li><code>scripts/</code>：本地构建、跨平台打包校验、协议集成测试与资源生成。</li>
-<li><code>assets/</code>：截图、主题资源和可选宠物精灵。</li>
+<li><code>src/</code>: TUI state, rendering, protocol, runtime lifecycle, and session catalog.</li>
+<li><code>npm/</code>: dsh bundle runner, CLI shim, manifest, and native binaries.</li>
+<li><code>scripts/</code>: local builds, cross-platform package checks, protocol integration
+tests, and asset generation.</li>
+<li><code>assets/</code>: screenshots, visual assets, and optional pet sprites.</li>
 </ul>
-<p>协议是 stdio 上的 NDJSON JSON-RPC 2.0。实现细节可从
-<a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/src/proto.rs"><code>src/proto.rs</code></a>、<a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/src/controller.rs"><code>src/controller.rs</code></a> 和
-<a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/npm/lib/index.js"><code>npm/lib/index.js</code></a> 开始阅读。</p>
+<p>The wire protocol is NDJSON JSON-RPC 2.0 over stdio. Start with
+<a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/src/proto.rs"><code>src/proto.rs</code></a>, <a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/src/controller.rs"><code>src/controller.rs</code></a>, and
+<a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/npm/lib/index.js"><code>npm/lib/index.js</code></a> for implementation details.</p>
 <h3>License</h3>
-<p><a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/LICENSE">MIT</a>。本项目与 DeepSeek、xAI 无关联；
-<a href="https://github.com/xai-org/grok-build">grok-build</a> 是交互设计参考，
-<a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 是运行底座。</p>
+<p><a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/LICENSE">MIT</a>. Not affiliated with DeepSeek or xAI;
+<a href="https://github.com/xai-org/grok-build">grok-build</a> is an interaction design
+reference, and <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>
+is the runtime substrate.</p>
 
     </div>
-    <p class="note"><a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

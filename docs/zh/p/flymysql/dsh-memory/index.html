@@ -189,54 +189,54 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Cross-session memory vault for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH).</p>
-<p>Every DSH session starts from zero. <code>dsh-memory</code> gives your agents a persistent second brain: facts, preferences, decisions, and project notes survive across sessions and are recalled automatically.</p>
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（DSH）打造的跨会话记忆库插件。</p>
+<p>每个 DSH 会话都从零开始。<code>dsh-memory</code> 给 Agent 一个持久化的&quot;第二大脑&quot;：事实、偏好、决策与项目笔记可以跨会话存活，并自动被回忆。</p>
 <ul>
-<li><strong>3 model tools</strong> — <code>memory_remember</code> / <code>memory_recall</code> / <code>memory_forget</code></li>
-<li><strong>Per-turn prompt injection</strong> — the most recent entries are injected into every system-prompt assembly, so the agent starts each turn already aware of stored context</li>
-<li><strong>Durable storage</strong> — records live in a <a href="https://github.com/deepseek-ai/deepseek-harness">storage domain</a> (<code>dsh_memory</code> unit, json backend by default; unit names are snake_case per <code>UNIT_NAME_RE</code>)</li>
-<li><strong>Browser management page</strong> — a &quot;记忆库 / Memory&quot; page in Settings to browse, add, and delete entries</li>
+<li><strong>3 个模型工具</strong> — <code>memory_remember</code> / <code>memory_recall</code> / <code>memory_forget</code></li>
+<li><strong>每轮提示注入</strong> — 最近的记忆条目会自动注入每次系统提示，Agent 开局就带着上下文</li>
+<li><strong>持久化存储</strong> — 记录存放在 <a href="https://github.com/deepseek-ai/deepseek-harness">storage domain</a>（<code>dsh_memory</code> 单元，默认 json 后端；单元名按 <code>UNIT_NAME_RE</code> 用 snake_case）</li>
+<li><strong>浏览器管理页</strong> — 设置里的&quot;记忆库&quot;页面，可浏览、新增、删除条目</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-bash">dsh plugin --profile web add dsh-memory-vault
 </code></pre>
-<p>The <code>dsh.bundle</code> manifest wires the <code>dsh-memory</code> row into the profile automatically. To install by hand instead:</p>
+<p><code>dsh.bundle</code> manifest 会自动把 <code>dsh-memory</code> 行挂进 profile。也可以手动安装：</p>
 <pre><code class="language-bash">npm install dsh-memory-vault
 </code></pre>
-<p>then add a row to your profile <code>cordis.yml</code> (or <code>cordis.patch.yml</code>):</p>
+<p>然后在你的 profile <code>cordis.yml</code>（或 <code>cordis.patch.yml</code>）里加一行：</p>
 <pre><code class="language-yaml">- id: dsh-memory
   name: dsh-memory-vault
 </code></pre>
-<h3>Usage</h3>
-<p>Tell your agent to remember things, or do it yourself:</p>
+<h3>用法</h3>
+<p>直接告诉 Agent 要记住的事，或让它自己记：</p>
 <blockquote>
 <p>&quot;记住：这个项目的部署目标是 Windows，测试命令是 <code>pnpm test</code>。&quot;</p>
 </blockquote>
-<p>The agent calls <code>memory_remember</code> with optional tags:</p>
+<p>Agent 会调用 <code>memory_remember</code>，可带标签：</p>
 <pre><code>memory_remember(content=&quot;User prefers Windows deployment; test command is `pnpm test`&quot;, tags=[&quot;project:demo&quot;, &quot;user&quot;])
 </code></pre>
-<p>When context from an earlier session matters, the agent calls <code>memory_recall(query=&quot;Windows deploy&quot;)</code> — entries are scored by tag matches (×2) and content matches, newest first. Wrong or obsolete facts are removed with <code>memory_forget(id=&quot;m-...&quot;)</code> or <code>memory_forget(tag=&quot;project:demo&quot;)</code>.</p>
-<h4>Configuration</h4>
+<p>当需要跨会话上下文时，Agent 调用 <code>memory_recall(query=&quot;Windows deploy&quot;)</code>——按标签匹配（×2）与内容匹配打分，新的优先。记错或过时的条目用 <code>memory_forget(id=&quot;m-...&quot;)</code> 或 <code>memory_forget(tag=&quot;project:demo&quot;)</code> 删除。</p>
+<h4>配置</h4>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Type</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>键</th>
+<th>类型</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>injectLimit</code></td>
 <td>int</td>
 <td>8</td>
-<td>Max entries injected per system-prompt assembly</td>
+<td>每次系统提示最多注入的条目数</td>
 </tr>
 <tr>
 <td><code>recallLimit</code></td>
 <td>int</td>
 <td>10</td>
-<td>Max entries returned by <code>memory_recall</code></td>
+<td><code>memory_recall</code> 最多返回的条目数</td>
 </tr>
 </tbody></table>
 <pre><code class="language-yaml">- id: dsh-memory
@@ -245,20 +245,20 @@ footer p+p{margin-top:.5rem}
     injectLimit: 12
     recallLimit: 20
 </code></pre>
-<h3>Browser page</h3>
-<p>Settings → 记忆库 (Memory). Lists all entries newest-first with tags and timestamps; quick-add and delete buttons.</p>
-<p>The page talks to the host half through the harness <code>webServer</code> service — same-origin JSON endpoints (<code>GET/POST /dsh-memory/entries</code>). The dynamic-plugin prototype used the sandbox-only <code>harness.handle</code>/<code>host.call</code> package RPC; the published package uses the public route so it works in any deployment.</p>
-<h3>Development</h3>
-<p>The plugin is one cordis package:</p>
+<h3>浏览器页面</h3>
+<p>设置 → 记忆库。按时间倒序列出全部条目（含标签与时间戳），支持快速新增与删除。</p>
+<p>页面通过 Harness 官方 <code>webServer</code> 服务与 Host 端通信——同源 JSON 端点（<code>GET/POST /dsh-memory/entries</code>）。动态插件原型用的是沙箱专用的 <code>harness.handle</code>/<code>host.call</code> 包内 RPC；发布版走公共路由，任何部署环境都能工作。</p>
+<h3>开发</h3>
+<p>插件是一个 cordis 包：</p>
 <ul>
-<li><code>lib/index.js</code> — host half: domain, tools, prompt injection, RPC handlers</li>
-<li><code>lib/client.js</code> — web half: settings page</li>
+<li><code>lib/index.js</code> — Host 半：domain、工具、提示注入、RPC 处理</li>
+<li><code>lib/client.js</code> — Web 半：设置页</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/flymysql/dsh-memory/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/flymysql/dsh-memory/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

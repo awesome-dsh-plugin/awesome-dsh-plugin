@@ -189,89 +189,89 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-auto-chess/blob/main/README.en.md">English</a> · <strong>中文</strong></p>
+<p>English · <a href="https://github.com/omdsh-dev/dsh-auto-chess/blob/main/README.md">中文</a></p>
 <p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-auto-chess/main/assets/prep.png" alt="dsh-auto-chess"></p>
-<p>在 DSH 的会话标签栏里，藏着一张自走棋棋桌：你可以亲自执蓝方，跟 AI 来一场人机对弈；也可以退到观众席，看两个 AI 各自挑好模型，在棋盘上互相对攻。这里的每一步都不是白想的：每个回合的决策，都是一次真实的模型请求。把思考档位拉到 High 或 Max，再点开思考记录，就能围观 AI 盘算「买谁、卖谁、凑什么羁绊、金币花在升级还是刷新」，把算盘一步步打给你看。胜负落在棋盘上，思路留在记录里。</p>
-<p>棋局状态保存在浏览器端的模块级 store 中，切标签页、切会话都不会重置对局或打断正在进行的 AI 思考。</p>
-<h3>主要功能</h3>
+<p>Tucked into the DSH tab bar is a tiny auto-chess table: take the blue side yourself and play a match against the AI, or lean back in the audience seat and watch two AIs, each on a model of its own choosing, slug it out on the board. No move here is free: every round&#39;s decision is a real model request. Crank the thinking level up to High or Max, open the reasoning log, and watch the AI work through who to buy, who to sell, which traits to chase, and whether that gold belongs in a level-up or a reroll. The result lands on the board; the reasoning stays in the log.</p>
+<p>Game state lives in a module-level store in the browser: switching tabs or sessions never resets the match or interrupts an in-flight AI decision.</p>
+<h3>Key features</h3>
 <ul>
-<li><strong>人机与双 AI 对局</strong>：支持人机对战（你执蓝方）、双 AI 对战（旁观）两种模式。</li>
-<li><strong>模型可分别选择</strong>：蓝方、红方各自从模型目录（项目自带适配器 + 用户已配置的 provider/model）中选择 AI；每侧独立设置，蓝方的 AI 设置与思考记录在界面左侧，红方的在右侧。</li>
-<li><strong>思考档位可调</strong>：Off / High / Max 三档，蓝方、红方分别设置，控制各侧 AI 决策前的思考强度；模型不支持所选档位时自动回落其默认档位。</li>
-<li><strong>超时与 token 上限固定</strong>：单次 AI 决策的最长等待时间（默认 300000ms）与输出 token 上限（默认 32000）由部署配置决定，界面不再提供修改入口，客户端随每次请求发送固定值。</li>
-<li><strong>提示词可分别编辑</strong>：默认系统提示词包含完整规则、严格返回格式与一个正确案例；蓝方、红方可在各自设置区分别编辑本侧提示词，也可一键恢复默认。</li>
-<li><strong>思考过程展示</strong>：每次 AI 决策后可在界面左右两侧的「思考记录」面板中查看该次决策的完整推理文本（蓝方在左、红方在右）；每条记录默认缩略，点击展开详情。</li>
-<li><strong>失败可重试</strong>：AI 连续多次给出非法操作时会提示原因并显示「重试」按钮；瞬时流式传输故障在尝试预算内自动重试，不会直接让整局失败。</li>
-<li><strong>切换页面不中断对局</strong>：棋局与战斗动画由页面内的模块级 store 驱动，切换会话、关闭会话标签都不中断 AI 思考与战斗进程；但状态只存在于页面内存中，刷新或关闭浏览器页面会重置对局。</li>
+<li><strong>Human vs AI, or AI vs AI</strong>: play against the AI yourself (you take blue), or spectate two AIs dueling each other.</li>
+<li><strong>Independent model selection</strong>: blue and red each pick their AI from the model catalog (built-in adapters plus your configured providers/models); each side is configured separately, with blue&#39;s AI settings and reasoning log on the left of the UI and red&#39;s on the right.</li>
+<li><strong>Adjustable thinking levels</strong>: Off / High / Max, set per side, controlling how much each AI thinks before a decision; a level the model does not support falls back to its default automatically.</li>
+<li><strong>Fixed timeout and token cap</strong>: the per-decision deadline (default 300000 ms) and the output-token cap (default 32000) are deployment policy; the UI no longer exposes them, and the client sends the fixed values with every request.</li>
+<li><strong>Per-side editable prompts</strong>: the default system prompt ships with the full rules, a strict return format and one correct example; blue and red can edit their own prompt in their settings area and restore the default in one click.</li>
+<li><strong>Reasoning display</strong>: after every AI decision, the full reasoning text is available in the side&#39;s reasoning log (blue left, red right); entries start collapsed and expand on click.</li>
+<li><strong>Retry on failure</strong>: an illegal action batch is rejected with the reason and a retry button; transient streaming failures retry automatically within the attempt budget, so one hiccup never sinks the whole game.</li>
+<li><strong>Tab switches don&#39;t pause the match</strong>: the game and its battle animation are driven by the in-page module-level store; switching sessions or closing the tab won&#39;t interrupt AI thinking or the battle. The state lives only in page memory though: refreshing or closing the browser page resets the match.</li>
 </ul>
-<h3>游戏规则（最小可行自走棋）</h3>
+<h3>Game rules (Minimal Auto Chess)</h3>
 <ul>
-<li><strong>棋盘</strong>：双方各有一个 4×7 布阵区域，坐标 <code>[row, col]</code>（row 0-3，col 0-6），战斗时镜像拼接为 4×14 战场。</li>
-<li><strong>棋子池</strong>：公共卡池 24 个棋子，分 1/2/3 费，各有生命、攻击力、攻速、攻击距离、种族、职业与技能。</li>
-<li><strong>费用与星级</strong>：3 个同名同星棋子自动合成高星（1★→2★→3★；2★≈1.8× 属性，3★≈3.24×）。合成后的棋子保留最后被消耗那颗的 id，方便 AI 连续操作。</li>
-<li><strong>羁绊</strong>：11 个种族/职业，按上场数量达到阈值触发（如 2/4 冰裔、2/3 星灵、2/4 法师），只计算已上场棋子。</li>
-<li><strong>回合结构</strong>：准备阶段（买棋、升星、布阵、升级、刷新）→ 自动战斗（0.5s/跳的低精度模拟）→ 结算（扣血、收入、连胜/连败）。</li>
-<li><strong>经济</strong>：基础收入 5 + 利息 min(金币÷10, 5) + 连胜/连败奖励（2 连胜 +1，4 连胜 +2，6 连胜 +3）+ 胜利 +1；升级花 4 金得 4 经验（所需经验 = 等级 + 2，上限 8 级）。</li>
-<li><strong>胜负</strong>：双方初始 100 血，失败方按对方存活棋子数 ×2 扣血，归零即输。</li>
-<li><strong>简化方向</strong>：无装备系统；战斗为低精度模拟，保证 LLM 能理解且计算量可控。</li>
+<li><strong>Board</strong>: each side has a 4×7 deployment grid, coordinates <code>[row, col]</code> (row 0-3, col 0-6), mirrored into a 4×14 battlefield for combat.</li>
+<li><strong>Unit pool</strong>: a shared pool of 24 units across 1/2/3 cost, each with HP, attack, attack speed, attack range, race, class and a skill.</li>
+<li><strong>Cost &amp; star levels</strong>: three copies of the same unit at the same star level merge into the next star (1★→2★→3★; 2★≈1.8× stats, 3★≈3.24×). The merged unit keeps the id of the last unit consumed, so the AI can chain actions on it.</li>
+<li><strong>Traits</strong>: 11 races/classes, each triggering a bonus when a fielded-count threshold is met (e.g., 2/4 冰裔, 2/3 星灵, 2/4 法师); only deployed units count.</li>
+<li><strong>Round structure</strong>: prep phase (buy, merge, deploy, level up, reroll) → auto battle (a low-fidelity simulation at 0.5 s per tick) → settlement (damage, income, win/loss streaks).</li>
+<li><strong>Economy</strong>: base income 5 + interest min(gold÷10, 5) + streak bonus (2-win streak +1, 4-win +2, 6-win +3) + win +1; leveling costs 4 gold for 4 exp (exp needed = level + 2, level cap 8).</li>
+<li><strong>Winning &amp; losing</strong>: both sides start at 100 HP; the loser takes damage equal to the enemy&#39;s surviving units ×2, and hitting zero loses the game.</li>
+<li><strong>Simplifications</strong>: no item system; combat is a low-fidelity simulation so LLMs can follow it and computation stays bounded.</li>
 </ul>
-<h3>快速安装</h3>
-<p>DSH 的标准插件安装机制是「组合包 → profile」：插件包在 <code>package.json</code> 中声明 <code>dsh.bundle</code> 并附带 patch 文件（<code>cordis.patch.yml</code>），用 <code>dsh plugin</code> 把它安装进任意 profile：</p>
-<pre><code class="language-sh"># 从本地 checkout 安装（在插件目录内执行；先构建出 lib/）
+<h3>Quick install</h3>
+<p>DSH&#39;s standard plugin mechanism is bundle → profile: the package declares <code>dsh.bundle</code> in <code>package.json</code> and ships a patch file (<code>cordis.patch.yml</code>); use <code>dsh plugin</code> to install it into any profile:</p>
+<pre><code class="language-sh"># Install from a local checkout (run inside the plugin directory; build lib/ first)
 pnpm run build
 dsh plugin --profile web add /Users/yejiming/Desktop/OpenSource/dsh-auto-chess
 </code></pre>
-<p>安装后验证配置层，再启动（或重启）Web 界面：</p>
-<pre><code class="language-sh">dsh --profile web --dump-config   # 输出中应出现 auto-chess 层
-dsh web                            # 重启后会话标签栏出现「自走棋」标签
+<p>After installing, verify the config layer, then start (or restart) the Web UI:</p>
+<pre><code class="language-sh">dsh --profile web --dump-config   # the output should contain the auto-chess layer
+dsh web                            # the 自走棋 tab appears in the session tab bar after the restart
 </code></pre>
 <blockquote>
-<p>插件已安装到本机的 <code>web</code> profile（<code>~/.dsh/profiles/web</code>，<code>@deepseek-ai/dsh-auto-chess</code> 以 link 依赖加入 bundle 列表）。Web 进程需重启才会扫描到新的 dshClient 包并注入客户端标签。</p>
+<p>The plugin is installed into the local <code>web</code> profile (<code>~/.dsh/profiles/web</code>, with <code>@deepseek-ai/dsh-auto-chess</code> in the bundle list as a link dependency). The Web process must restart to scan new client bundles and inject the client tab.</p>
 </blockquote>
-<p>移除：<code>dsh plugin --profile web remove @deepseek-ai/dsh-auto-chess</code> 会同时移除依赖与对应层。</p>
-<h3>架构</h3>
-<p>棋局本身（状态、经济、羁绊、战斗模拟）在浏览器界面中；服务端只仲裁 AI 的准备阶段决策，因此非法回复在服务端被拒绝，不会破坏浏览器端的棋局。游戏引擎（<code>src/game/engine.ts</code>）是纯 TypeScript、无依赖、按状态确定性的共享代码：服务端把每次 AI 请求里的完整局面克隆一份，用与浏览器完全相同的引擎逐条校验并应用模型返回的操作数组，返回「整批合法」的操作列表与推理文本；浏览器再用同一引擎把接受的操作用在自己的权威状态上——两边永远不会漂移。</p>
-<h3>模型调用</h3>
-<h4>自走棋决策请求（Auxiliary auto-chess action request）</h4>
+<p>Remove: <code>dsh plugin --profile web remove @deepseek-ai/dsh-auto-chess</code> removes both the dependency and its layer.</p>
+<h3>Architecture</h3>
+<p>The game itself (state, economy, traits, battle simulation) lives in the browser UI; the server only arbitrates the AI&#39;s prep-phase decisions, so illegal replies are rejected server-side and can never corrupt the browser&#39;s game. The game engine (<code>src/game/engine.ts</code>) is pure TypeScript, dependency-free and deterministically shared: the server clones the full board state from each AI request, validates and applies the model&#39;s action batch with the exact same engine the browser uses, and returns the all-valid action list plus the reasoning text; the browser then applies the accepted actions to its own authoritative state with the same engine. The two sides can never drift.</p>
+<h3>Model calls</h3>
+<h4>Auto-chess decision request (auxiliary)</h4>
 <h5>What the model sees</h5>
-<p>每次 AI 决策都是发往所选 provider/model 路由的一次独立辅助请求。系统提示词要么是用户编辑后的文本，要么是包默认文本（完整规则、严格 JSON 数组返回格式、正确案例、错误示范、基本策略）；唯一的用户消息包含该侧棋手的完整局面（生命、金币、经验/等级、上场名额、备战区棋子 JSON、棋盘布阵 JSON、当前羁绊、商店 JSON、上一轮战斗结果、对手已知阵容——上场数量、星级构成、种族/职业计数与预估战力），以及（重试时）上一次非法回复与拒绝原因。决策请求还可携带思考档位（<code>off</code>/<code>high</code>/<code>max</code>）：仅当所选模型声明支持该档位时，服务端才会把它作为请求的 reasoning effort 转发；不支持的档位回落到模型自身默认值。可选的按请求 <code>actionTimeoutMs</code> 与 <code>maxActionOutputTokens</code> 覆盖值只对本次请求替换配置默认值。回复中的推理块会随操作结果以 <code>reasoning</code> 字段返回给浏览器。</p>
-<p>模型返回一个 JSON 数组（最多 4 个操作）：<code>{&quot;action&quot;:&quot;buy&quot;,&quot;name&quot;:&quot;...&quot;}</code>、<code>{&quot;action&quot;:&quot;sell&quot;,&quot;chess_id&quot;:N}</code>、<code>{&quot;action&quot;:&quot;move&quot;,&quot;chess_id&quot;:N,&quot;pos&quot;:[r,c]}</code>、<code>{&quot;action&quot;:&quot;upgrade&quot;}</code>、<code>{&quot;action&quot;:&quot;refresh&quot;}</code>、<code>{&quot;action&quot;:&quot;end_prep&quot;}</code>。服务端对整批操作做合法性校验（金币、备战区上限、上场上限、坐标越界、格子占用、id 存在性等），任何一条不合法都会拒绝整批并带纠正反馈重试（默认最多 3 次）；最后一次失败会返回 <code>error</code> 与 <code>lastText</code>/<code>lastReason</code>，浏览器据此显示错误与「重试」按钮。</p>
+<p>Every AI decision is a standalone auxiliary request to the selected provider/model route. The system prompt is either the user-edited text or the package default (full rules, a strict JSON-array return format, a correct example, common mistakes, and basic strategy); the single user message carries the side&#39;s complete board state (HP, gold, exp/level, board cap, bench JSON, board layout JSON, active traits, shop JSON, last round&#39;s battle result, and the known enemy composition: fielded count, star distribution, race/class counts and rough power), plus, on retry, the previous illegal reply and its rejection reason. A decision request can also carry a thinking level (<code>off</code>/<code>high</code>/<code>max</code>): the server forwards it as the request&#39;s reasoning effort only when the selected model advertises support; unsupported levels fall back to the model&#39;s own default. Optional per-request <code>actionTimeoutMs</code> and <code>maxActionOutputTokens</code> overrides replace the config defaults for that request only. The reply&#39;s reasoning block is returned to the browser as the <code>reasoning</code> field alongside the action results.</p>
+<p>The model returns a JSON array (at most 4 actions): <code>{&quot;action&quot;:&quot;buy&quot;,&quot;name&quot;:&quot;...&quot;}</code>, <code>{&quot;action&quot;:&quot;sell&quot;,&quot;chess_id&quot;:N}</code>, <code>{&quot;action&quot;:&quot;move&quot;,&quot;chess_id&quot;:N,&quot;pos&quot;:[r,c]}</code>, <code>{&quot;action&quot;:&quot;upgrade&quot;}</code>, <code>{&quot;action&quot;:&quot;refresh&quot;}</code>, <code>{&quot;action&quot;:&quot;end_prep&quot;}</code>. The server validates the whole batch (gold, bench cap, board cap, coordinates in range, occupied cells, id existence, etc.); any illegal action rejects the entire batch and retries with corrective feedback (default max 3 attempts); the final failure returns <code>error</code> with <code>lastText</code>/<code>lastReason</code>, and the browser shows the error plus a retry button.</p>
 <h5>Token effect</h5>
-<p>辅助请求按局面构造成本消耗 token（约 1-2 KB 的局面文本 + 系统提示词 + <code>maxActionOutputTokens</code>，默认 32000）。高于 <code>off</code> 的思考档位会增加模型的思考 token，计入同一个输出预算——推理模型可能把大部分预算花在思考上，因此回复被截断时只要 JSON 数组完整仍会被解析，只有 JSON 丢失才触发重试。该请求与任何 agent 对话相互独立，绝不写入会话日志。</p>
-<h5>KV Cache effect</h5>
-<p>辅助请求是独立的模型请求；其提示词随每个棋局位置变化，因此与 agent 流量之间没有稳定的共享前缀。用户编辑系统提示词会整体替换文本，使 provider 侧的跨局前缀复用失效；默认提示词只在未编辑时保持稳定。</p>
-<h3>配置</h3>
-<p>所有字段都有 loader 默认值；无库级默认值。</p>
+<p>The auxiliary request spends tokens on constructing the state (roughly 1-2 KB of board text + system prompt + <code>maxActionOutputTokens</code>, default 32000). Thinking levels above <code>off</code> add reasoning tokens that count against the same output budget: reasoning models may spend most of the budget thinking, so a truncated reply still parses as long as the JSON array is complete; only lost JSON triggers a retry. The request is fully independent of any agent conversation and is never written to the session log.</p>
+<h5>KV cache effect</h5>
+<p>Auxiliary requests are standalone model requests; their prompts change with every board position, so there is no stable shared prefix with agent traffic. Editing the system prompt replaces the text wholesale, defeating provider-side cross-game prefix reuse; the default prompt stays stable only while unedited.</p>
+<h3>Configuration</h3>
+<p>All fields have loader defaults; there are no library-level defaults.</p>
 <table>
 <thead>
 <tr>
-<th>键</th>
-<th>说明</th>
+<th>Key</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>actionTimeoutMs</code></td>
-<td>单次 AI 决策尝试的端到端截止时间（默认 300000 毫秒，即 5 分钟）；界面不再提供修改入口。</td>
+<td>End-to-end deadline for one AI decision attempt (default 300000 ms, i.e. 5 minutes); the UI no longer offers an edit entry.</td>
 </tr>
 <tr>
 <td><code>maxActionOutputTokens</code></td>
-<td>单次 AI 决策回复的输出 token 上限。默认 32000（较宽松，因为推理模型会把思考计入输出预算）；截断的回复只要 JSON 完整仍会被解析，只有 JSON 丢失才触发重试。界面不再提供修改入口。</td>
+<td>Output-token cap for one AI decision reply. Default 32000 (generous, because reasoning models count thinking against the output budget); truncated replies still parse while the JSON is complete, and only lost JSON triggers a retry. No longer editable in the UI.</td>
 </tr>
 <tr>
 <td><code>maxActionAttempts</code></td>
-<td>每次决策请求的 AI 尝试总次数；最后一次尝试附带纠正反馈（默认 3）。</td>
+<td>Total AI attempts per decision request; the last attempt carries corrective feedback (default 3).</td>
 </tr>
 </tbody></table>
-<h3>开发</h3>
-<pre><code class="language-sh">pnpm run build          # tsdown 构建 node 半部 + 浏览器 bundle，并输出类型声明
+<h3>Development</h3>
+<pre><code class="language-sh">pnpm run build          # tsdown builds the node half + the browser bundle and emits type declarations
 pnpm run typecheck      # tsc --noEmit
-pnpm test               # vitest：引擎（经济/合成/战斗/结算）、回复解析、请求校验、提示词组装
-node tests/e2e/gui-round.spec.mjs   # 端到端：另起一个 dsh web 测试实例（--port 3095，需安装本插件并配置可用模型）后跑完整一回合
+pnpm test               # vitest: engine (economy/merge/battle/settlement), reply parsing, request validation, prompt assembly
+node tests/e2e/gui-round.spec.mjs   # end-to-end: run one full round against a separate dsh web test instance (--port 3095; the plugin must be installed with a working model configured)
 </code></pre>
-<p>本地依赖通过符号链接指向 Harness SDK checkout（<code>~/.dsh/source/current</code> 下的 <code>packages/*</code> 与 <code>vendor/*</code>），与 <code>dsh-gomoku</code> 的做法一致。</p>
+<p>Local dependencies point at the Harness SDK checkout through symlinks (<code>packages/*</code> and <code>vendor/*</code> under <code>~/.dsh/source/current</code>), the same approach as <code>dsh-gomoku</code>.</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-auto-chess/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-auto-chess/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

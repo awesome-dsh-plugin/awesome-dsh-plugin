@@ -189,28 +189,28 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/omdsh-dev/sandbox-nono/blob/main/README.zh.md">中文</a></p>
-<p>The nono (Landlock/Seatbelt) backend as an installable DSH profile bundle. This standalone package contains the sandbox provider, its invariant companion, the bundle patch, and the vendored <code>@dsh-external/nono-ts</code> native executor carrier.</p>
-<h3>Repository shape</h3>
-<pre><code class="language-text">package.json              # standalone package and dsh.bundle manifest
-cordis.patch.yml          # explicit sandbox-nono provider row
-docs/                     # detailed bilingual Nono documentation
-src/                      # provider and invariant companion
-tests/                    # unit and real-wrapper integration tests
-vendor-nono-ts/           # pinned native binding and executor wrapper
-lib/                      # generated install artifacts
+<p><a href="https://github.com/omdsh-dev/sandbox-nono/blob/main/README.md">English</a> | 中文</p>
+<p>nono（Landlock/Seatbelt）后端的可安装 DSH profile 组合包。这个 standalone package 包含沙箱 provider、不变式 companion、bundle patch，以及 vendored <code>@dsh-external/nono-ts</code> 原生执行器载体。</p>
+<h3>仓库结构</h3>
+<pre><code class="language-text">package.json              # standalone package 与 dsh.bundle 清单
+cordis.patch.yml          # 显式 sandbox-nono provider 行
+docs/                     # 双语 Nono 详细文档
+src/                      # provider 与 invariant companion
+tests/                    # 单元测试和真实 wrapper 集成测试
+vendor-nono-ts/           # 固定版本的原生绑定与执行器 wrapper
+lib/                      # 生成的安装产物
 </code></pre>
-<p>The bundle adds a distinct <code>sandbox-nono</code> row disabled by default. Enable it from a profile overlay when the deployment wants the Nono backend; the existing DSH <code>sandbox</code> row is not silently renamed or replaced.</p>
+<p>组合包会加入一个默认禁用的 <code>sandbox-nono</code> 行。部署需要 Nono 后端时，可以通过 profile overlay 启用它；已有 DSH <code>sandbox</code> 行不会被静默重命名或替换。</p>
 <pre><code class="language-yaml">- id: sandbox-nono
   name: &#39;@deepseek-ai/dsh-sandbox-nono&#39;
   disabled: false
   config:
     probeTimeoutMs: 5000
 </code></pre>
-<p>The provider fails closed with <code>SANDBOX_UNAVAILABLE</code> when the host has no vendored binding, the platform has no backend, or the functional channel probe does not prove enforcement. The SDK owns binding resolution, launch argv composition, wrapper failure classification, and channel qualification.</p>
-<p>Detailed behavior and limitations: <a href="https://github.com/omdsh-dev/sandbox-nono/blob/main/docs/nono.md"><code>docs/nono.md</code></a>.</p>
-<h3>Development</h3>
-<p>A full typecheck expects the DSH checkout beside this repository:</p>
+<p>当宿主没有 vendored 绑定、平台没有对应后端，或功能性通道探测无法证明隔离有效时，provider 会以 <code>SANDBOX_UNAVAILABLE</code> fail-closed。绑定解析、启动 argv 拼装、wrapper 失败分类和通道验收由 SDK 负责。</p>
+<p>详细行为与限制见 <a href="https://github.com/omdsh-dev/sandbox-nono/blob/main/docs/nono.md"><code>docs/nono.md</code></a>。</p>
+<h3>开发</h3>
+<p>完整 typecheck 需要把 DSH checkout 放在本仓库旁边：</p>
 <pre><code class="language-text">../../deepseek-harness
 </code></pre>
 <pre><code class="language-sh">pnpm install
@@ -219,18 +219,18 @@ pnpm test
 pnpm run build
 pnpm run test:e2e
 </code></pre>
-<p>The <code>prepare</code> script builds directly from <code>src/</code>, so a package installation does not depend on the sibling checkout at runtime. The vendored carrier currently contains only the Linux x64 GNU binding; unsupported hosts intentionally fail closed.</p>
+<p><code>prepare</code> 直接从 <code>src/</code> 构建，因此安装后的 package 运行时不依赖 sibling checkout。目前 vendored carrier 只包含 Linux x64 GNU 绑定；不支持的宿主会明确 fail-closed。</p>
 <h3>Model Experience</h3>
-<p>Indirectly, through <code>@deepseek-ai/dsh-bash-sandbox</code> and <code>@deepseek-ai/dsh-tool-bash</code>, which render enforcement and denial facts. The <code>@deepseek-ai/dsh-sandbox</code> seam owns the <code>SANDBOX_UNAVAILABLE</code> text.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<p>间接地，经由 <code>@deepseek-ai/dsh-bash-sandbox</code> 与 <code>@deepseek-ai/dsh-tool-bash</code> 呈现 enforcement 和 denial 事实。<code>@deepseek-ai/dsh-sandbox</code> seam 拥有 <code>SANDBOX_UNAVAILABLE</code> 文案。</p>
+<h3>已知限制与延后工作</h3>
 <ul>
-<li>Only the <code>linux-x64-gnu</code> native binding is committed; other platforms need a matching carrier under <code>vendor-nono-ts/native/</code>.</li>
-<li>Windows has no Nono backend and fails closed.</li>
-<li>The functional probe verdict is cached for the provider lifetime; repairing a binding requires reloading the plugin.</li>
+<li>目前只提交了 <code>linux-x64-gnu</code> 原生绑定；其他平台需要在 <code>vendor-nono-ts/native/</code> 下加入匹配的 carrier。</li>
+<li>Windows 没有 Nono 后端，会 fail-closed。</li>
+<li>功能性探测结论会在 provider 生命周期内缓存；修复绑定后需要重新加载插件。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/sandbox-nono/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/sandbox-nono/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

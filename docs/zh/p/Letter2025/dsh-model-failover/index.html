@@ -192,137 +192,137 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.md">English</a> | <a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.zh.md">中文</a> | <a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.md">English</a></p>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
-<p>Two-level model circuit breaker with failover for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. When a model (or a whole provider) starts failing repeatedly, the plugin opens a circuit and routes the next model request to a configured fallback — no core changes, installable with <code>dsh plugin</code>.</p>
-<h3>What it does</h3>
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 打造的两级模型熔断与回退插件。当某个模型（或整个平台）持续失败时，插件打开熔断并把下一个模型请求路由到配置好的备用模型——零核心改动，<code>dsh plugin</code> 即可安装。</p>
+<h3>功能</h3>
 <ul>
-<li><strong>Model circuit</strong> — a <code>provider/model</code> route opens after <code>modelCircuitThreshold</code> failures inside <code>burstWindowMs</code>.</li>
-<li><strong>Platform circuit</strong> — a provider opens when <code>platformCircuitThreshold</code> distinct models under it are open at once (a platform outage usually takes down every model on it).</li>
-<li><strong>Failover</strong> — the next request goes to the first healthy fallback in <code>fallbacks</code>; the switch is recorded by the loop itself (<code>request/header</code> change) and optionally announced as a user-visible message.</li>
-<li><strong>Recovery probes</strong> — an open model circuit is probed after <code>modelCooldownMs</code> with a tiny real call; a successful probe closes the circuit, a failed one extends the cooldown.</li>
-<li><strong>Composes with <code>llm-retry</code></strong> — per-request backoff retries stay owned by the bundled <code>llm-retry</code> policy; the breaker observes the failures that escape it, so transient blips that recover after a retry never trip a circuit.</li>
+<li><strong>模型级熔断</strong> — 某个 <code>provider/model</code> 在 <code>burstWindowMs</code> 内失败达到 <code>modelCircuitThreshold</code> 次即打开。</li>
+<li><strong>平台级熔断</strong> — 同一 provider 下有 <code>platformCircuitThreshold</code> 个不同模型同时打开时，整个平台熔断（平台故障通常连带所有模型）。</li>
+<li><strong>自动回退</strong> — 下一个请求路由到 <code>fallbacks</code> 里第一个健康的备用路由；切换由 loop 自身落库（<code>request/header</code> 变更），可选追加用户可见提示。</li>
+<li><strong>恢复探测</strong> — 打开的模型熔断在 <code>modelCooldownMs</code> 后用一次极小的真实调用探测；探测成功关闭熔断，失败则顺延冷却。</li>
+<li><strong>与 <code>llm-retry</code> 协作</strong> — 单次请求的重试仍归官方 <code>llm-retry</code> 策略负责，熔断器只观察逃逸出重试的失败；重试后恢复的瞬时抖动不会误触发熔断。</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-model-failover
 </code></pre>
-<p>Then configure <code>fallbacks</code> (the only field you must set) and, if needed, the thresholds in your profile <code>cordis.patch.yml</code> — see the <a href="https://github.com/Letter2025/dsh-model-failover/blob/main/cordis.patch.yml">plugin row in cordis.patch.yml</a> for the full default config.</p>
-<p>A companion skill, <code>configure-model-failover</code>, walks the agent through setting the fallback models (AI probes the current model config, writes the fallback override, then asks you to confirm). It is <strong>installed automatically with the plugin</strong>: the package ships <code>skills/configure-model-failover/SKILL.md</code> and the plugin registers it as a bundled skill whenever the <code>skills</code> service is present — no copy step needed. For a standalone install (profile without the plugin), copy it into <code>~/.dsh/skills/configure-model-failover/</code> (user-level skills are picked up live).</p>
-<h3>How it works</h3>
-<p>The plugin decorates two agent-loop waterfalls (both official extension points, no core changes):</p>
+<p>然后按需在 profile 的 <code>cordis.patch.yml</code> 里配置 <code>fallbacks</code>（唯一必配项）和阈值——完整默认配置见 <a href="https://github.com/Letter2025/dsh-model-failover/blob/main/cordis.patch.yml">cordis.patch.yml</a> 中的插件行。</p>
+<p>配套引导技能 <code>configure-model-failover</code>：由 AI 探测当前模型配置、写入 fallback 覆盖配置、再请你确认。<strong>安装插件即自动注册</strong>：包内自带 <code>skills/configure-model-failover/SKILL.md</code>，只要 <code>skills</code> 服务存在，插件就会把它注册为捆绑技能，无需手动复制。独立安装（未装插件的 profile）时才需要复制到 <code>~/.dsh/skills/configure-model-failover/</code>（用户级技能实时生效）。</p>
+<h3>工作原理</h3>
+<p>插件装饰两个 agent-loop 官方瀑布（均为官方扩展点，无核心改动）：</p>
 <table>
 <thead>
 <tr>
-<th>Waterfall</th>
-<th>Role</th>
+<th>瀑布</th>
+<th>职责</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>agent/request-error</code></td>
-<td>Records failures whose <code>code</code> is in <code>tripCodes</code> into the circuit breaker, then delegates through <code>next()</code> so <code>llm-retry</code> still owns retries.</td>
+<td>把 <code>tripCodes</code> 内的失败记录进熔断器，然后 <code>next()</code> 委托，重试仍归 <code>llm-retry</code>。</td>
 </tr>
 <tr>
 <td><code>agent/request</code></td>
-<td><code>await next()</code> for the resolved config, then returns the healthy primary route, or the first healthy fallback when the primary&#39;s circuit is open.</td>
+<td><code>await next()</code> 拿到解析后的配置，返回健康的主路由；主路由熔断时返回第一个健康的备用路由。</td>
 </tr>
 </tbody></table>
-<pre><code class="language-text">request ──&gt; agent/request ──&gt; primary (mock/m1) ──&gt; fail ×2 ──&gt; circuit open
-                                                                │
-next request ──&gt; agent/request ──&gt; primary open ──&gt; fallback (mock2/m2) ✔
-                                                                │
-                                     probe after cooldown ──&gt; success ──&gt; circuit closed
+<pre><code class="language-text">请求 ──&gt; agent/request ──&gt; 主路由 (mock/m1) ──&gt; 失败×2 ──&gt; 熔断打开
+                                                            │
+下一个请求 ──&gt; agent/request ──&gt; 主路由熔断 ──&gt; 备用 (mock2/m2) ✔
+                                                            │
+                        冷却后探测 ──&gt; 成功 ──&gt; 熔断关闭
 </code></pre>
-<h3>Configuration</h3>
+<h3>配置项</h3>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>enabled</code></td>
 <td><code>true</code></td>
-<td>Master switch.</td>
+<td>总开关。</td>
 </tr>
 <tr>
 <td><code>fallbacks</code></td>
 <td><code>[]</code></td>
-<td>Ordered fallback routes <code>{provider, model}</code>; must point at providers with a registered adapter.</td>
+<td>有序备用路由 <code>{provider, model}</code>；必须指向已注册 adapter 的 provider。</td>
 </tr>
 <tr>
 <td><code>tripCodes</code></td>
 <td><code>RATE_LIMIT, SERVER, TIMEOUT, TRANSPORT, QUOTA, EMPTY_RESPONSE</code></td>
-<td>Failure codes that count toward a circuit; e.g. <code>AUTH</code>/<code>INVALID_CREDENTIAL</code> stay terminal.</td>
+<td>计入熔断的失败码；如 <code>AUTH</code>/<code>INVALID_CREDENTIAL</code> 保持终态不计入。</td>
 </tr>
 <tr>
 <td><code>modelCircuitThreshold</code></td>
 <td><code>2</code></td>
-<td>Failures inside the burst window that open a model circuit.</td>
+<td>突发窗口内打开模型熔断的失败次数。</td>
 </tr>
 <tr>
 <td><code>modelCooldownMs</code></td>
 <td><code>60000</code></td>
-<td>Cooldown before an open model circuit is probed.</td>
+<td>模型熔断打开后的探测冷却时长。</td>
 </tr>
 <tr>
 <td><code>platformCircuitThreshold</code></td>
 <td><code>2</code></td>
-<td>Distinct open models that open the whole provider.</td>
+<td>打开平台熔断所需的不同打开模型数。</td>
 </tr>
 <tr>
 <td><code>platformCooldownMs</code></td>
 <td><code>120000</code></td>
-<td>Provider-wide cooldown.</td>
+<td>平台级冷却时长。</td>
 </tr>
 <tr>
 <td><code>burstWindowMs</code></td>
 <td><code>300000</code></td>
-<td>Failures older than this start a fresh burst.</td>
+<td>超过此时间的失败视为新一轮突发。</td>
 </tr>
 <tr>
 <td><code>enableProbe</code></td>
 <td><code>true</code></td>
-<td>Probe open models after cooldown to recover circuits.</td>
+<td>冷却后探测打开的模型以恢复熔断。</td>
 </tr>
 <tr>
 <td><code>probeMaxTokens</code></td>
 <td><code>8</code></td>
-<td>Output cap for probe calls.</td>
+<td>探测调用的输出上限。</td>
 </tr>
 <tr>
 <td><code>stripReasoningEffort</code></td>
 <td><code>true</code></td>
-<td>Drop the primary&#39;s reasoning effort when failing over (fallbacks may not support it).</td>
+<td>回退时丢弃主路由的 reasoning effort（备用模型可能不支持）。</td>
 </tr>
 <tr>
 <td><code>notifyUser</code></td>
 <td><code>true</code></td>
-<td>Append a user-visible message when a route switches.</td>
+<td>路由切换时追加用户可见消息。</td>
 </tr>
 </tbody></table>
-<h3>Events</h3>
-<p>Plugin-defined (emit) events, typed via the <code>@deepseek-ai/cordis</code> augmentation in <code>src/types.ts</code>:</p>
+<h3>事件</h3>
+<p>插件自定义（emit）事件，类型通过 <code>src/types.ts</code> 中的 <code>@deepseek-ai/cordis</code> 增强声明：</p>
 <ul>
 <li><code>model-failover/circuit-opened</code> — <code>{provider, model, level: &#39;model&#39; | &#39;platform&#39;}</code></li>
 <li><code>model-failover/circuit-closed</code> — <code>{provider, model, level: &#39;model&#39;}</code></li>
 <li><code>model-failover/failover</code> — <code>{from, to, agentId}</code></li>
 <li><code>model-failover/probe</code> — <code>{provider, model, ok, message?}</code></li>
 </ul>
-<h3>Known Limitations and Deferred Work</h3>
+<h3>已知限制与后续</h3>
 <ul>
-<li><strong>Process-local state</strong> — circuit state lives in memory and resets on plugin reload (like every harness registry). Cross-instance sharing is deferred.</li>
-<li><strong>Agent-loop calls only</strong> — <code>agent/request</code> covers the main conversation loop. Auxiliary calls (<code>session-title</code>, <code>compaction</code>, hand-built <code>ctx.llm.stream</code>) are not routed.</li>
-<li><strong><code>retryPolicy.mode: &#39;always&#39;</code></strong> — the bundled <code>llm-retry</code> never delegates a failure to this breaker in that mode, so failover stays idle by design (the operator chose unbounded retries).</li>
-<li><strong>No context-window adaptation</strong> — a fallback with a smaller context window may hit <code>CONTEXT_WINDOW_EXCEEDED</code>; set <code>stripReasoningEffort</code> and pick compatible fallbacks.</li>
-<li><strong>No platform probe</strong> — the platform circuit recovers by cooldown expiry; only model circuits are probed.</li>
+<li><strong>进程内状态</strong> — 熔断状态存内存，插件重载即重置（与所有 harness 注册表一致）。跨实例共享暂缓。</li>
+<li><strong>仅覆盖 agent-loop 主链路</strong> — <code>agent/request</code> 只管主对话循环；辅助调用（<code>session-title</code>、<code>compaction</code>、手写 <code>ctx.llm.stream</code>）不做路由。</li>
+<li><strong><code>retryPolicy.mode: &#39;always&#39;</code></strong> — 该模式下官方 <code>llm-retry</code> 永不把失败委托给本熔断器，回退按设计保持空闲（运维已选择无限重试）。</li>
+<li><strong>无上下文窗口适配</strong> — 备用模型窗口较小可能触发 <code>CONTEXT_WINDOW_EXCEEDED</code>；请设置 <code>stripReasoningEffort</code> 并选择兼容的备用模型。</li>
+<li><strong>无平台级探测</strong> — 平台熔断靠冷却到期恢复，仅模型级熔断有探测。</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Letter2025/dsh-model-failover/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

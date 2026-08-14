@@ -189,65 +189,65 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>English</strong> | <a href="https://github.com/yuezengwu/dsh-explain/blob/main/README.zh-CN.md">简体中文</a></p>
-<h2>dsh-explain — Learning mode for DSH</h2>
+<p><a href="https://github.com/yuezengwu/dsh-explain/blob/main/README.md">English</a> | <strong>简体中文</strong></p>
+<h2>dsh-explain — DSH 学习模式插件</h2>
 <blockquote>
-<p>✅ <strong>Status: M6 is implemented entirely in Explain and passes its DSH <code>0.1.0-rc.6</code> acceptance gates. No other plugin requires a patch or runtime dependency.</strong>
-See the <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/PRD.md">product requirements</a> and <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/ARCHITECTURE.md">technical architecture</a> for the full design. The detailed design documents are currently written in Chinese.</p>
+<p>✅ <strong>状态：M6 已完全在 Explain 内实现并通过 DSH <code>0.1.0-rc.6</code> 验收；无需修改或依赖其他插件。</strong>
+产品需求见 <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/PRD.md">docs/PRD.md</a>；技术方案见 <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a>。</p>
 </blockquote>
-<p><code>dsh-explain</code> turns useful material from multiple <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> work sessions into one private, local-first learning thread. It keeps at most one active explanation per source session and continuously adapts explanations to the user&#39;s knowledge, preferences, and learning progress.</p>
-<h3>Core behavior</h3>
+<p><strong>一句话定位</strong>：把多个 DSH 工作会话中值得学习的内容汇入用户唯一的全局学习线程，为每个来源会话保留至多一个活跃讲解，并用全局学习上下文持续适配用户的知识水平和讲解偏好。</p>
+<h3>核心形态</h3>
 <ul>
-<li>A <code>$DSH_HOME</code> contains exactly one local learning thread. Work sessions, resumes, and forks do not copy its state.</li>
-<li>Each top-level source session may have one explanation awaiting feedback, or none. While one remains open, that source cannot generate another; other sources may continue independently.</li>
-<li>Enter <code>/explain &lt;learning request&gt;</code> in the composer of an established or empty session to request an explanation. <code>/explain on</code>, <code>/explain off</code>, and <code>/explain status</code> manage the feature.</li>
-<li>Select visible text and use Explain&#39;s composer-row shortcut, or use the Explain action on any finalized assistant answer. Both create an editable command draft and never submit it automatically.</li>
-<li>Manual explanations, autonomous explanations, rephrases, and compaction share one global scheduler. At most one auxiliary model request runs at a time.</li>
-<li>Autonomous evaluation defaults to 50 requests per rolling 24-hour window. Usage survives restarts; failures and retries count, while manual explanations, rephrases, and compaction do not.</li>
-<li>A private global <code>ExplainContext</code> summarizes conversation preferences, knowledge level, and learning progress. It is sent only to the auxiliary model and is never injected into the primary agent.</li>
-<li>Auxiliary history is compacted after new structured observations or closed explanations remain untouched for 30 minutes, or before a request would exceed 50% of the selected model&#39;s context window. User-visible history is never deleted.</li>
-<li>The primary model does not know that Explain exists. Explain does not write to the primary session log, modify the primary model context, or block the primary turn.</li>
-<li>Learning history, active-source state, compaction checkpoints, and <code>ExplainContext</code> are stored in <code>$DSH_HOME/dsh-explain/v1/thread.sqlite</code>. Enablement and model settings use <code>$DSH_HOME/settings.yaml</code>.</li>
-<li>The first entry of an explanation stores a restricted source summary of up to 2,000 characters for later rephrasing. Rephrasing still works after the source session is deleted, and the summary is not exposed through the learning-view API.</li>
-<li>The learning thread appears in the first-party <code>conversation.view</code> slot as a <strong>Learning</strong> tab. Configuration and diagnostics use the first-party <code>settings.section</code>; no external UI host is required.</li>
-<li>The Learning tab is session-scoped, but every tab reads the same global client store and typed Remote. All work sessions therefore display the same learning thread.</li>
-<li>The settings page controls the auxiliary model, enablement, and rolling autonomous-request budget, and reports routing, budget recovery, context pressure, and the latest compaction.</li>
-<li>If a source still exists in the current session inventory, its explanation can open it directly. Deleted sources remain readable and are marked unavailable.</li>
-<li>P0 never switches views automatically. Empty Hero sessions do not display view tabs, and the work-session composer remains available while the Learning view is open.</li>
-<li>P0 has no external UI dependency and does not bundle or require <code>better-sidebar</code>.</li>
+<li>一个 <code>$DSH_HOME</code> 只有一条本地学习线程；工作会话、恢复和 fork 不复制学习状态。</li>
+<li>每个顶层来源会话可以有一个等待反馈的讲解，也可以没有；同一来源未反馈时不再生成第二条，其他来源仍可继续。</li>
+<li>用户可在任意已建立或空白工作 Session 的 composer 输入 <code>/explain &lt;学习请求&gt;</code>，主动要求 explain agent 生成一条讲解；管理命令 <code>/explain on|off|status</code> 保持不变。</li>
+<li>用户可选中可见文字后使用 composer 工具行中的 Explain 快捷入口，也可在任意已完成 assistant 回答上选择「学习这个回答」；两者只创建可编辑草稿，绝不自动提交。</li>
+<li>主动讲解、自主讲解、重讲和压缩共享全局调度器，任何时刻最多一个辅助模型请求；主动请求优先于后台工作，但不打断已在途的主动请求或重讲。</li>
+<li>自主判断默认最多发送 50 次/滚动 24 小时；占额跨重启保留，失败和重试计数，用户触发的主动讲解、重讲与压缩豁免。</li>
+<li>explain 维护私有的全局 <code>ExplainContext</code>，汇总对话偏好、知识概况和学习进展；它只进入辅助模型，不注入主 Agent。</li>
+<li>有新的结构化观察或已关闭讲解且用户连续 30 分钟未操作 explain，或预计辅助请求占所选模型上下文 50% 以上时，自动压缩辅助模型历史；用户可见原始记录不删除。</li>
+<li>主模型不知道 explain 存在；explain 不写主 Session 日志、不注入主模型上下文、不阻塞主 turn。</li>
+<li>学习历史、来源活跃状态、压缩检查点和 <code>ExplainContext</code> 持久化到 <code>$DSH_HOME/dsh-explain/v1/thread.sqlite</code>；开关与模型设置走 <code>$DSH_HOME/settings.yaml</code>。</li>
+<li>首个讲解 entry 保存最多 2,000 字符的受限来源摘要供后续重讲；来源 Session 删除不影响重讲，摘要不向学习视图返回。</li>
+<li>学习线程使用 DSH 第一方 <code>conversation.view</code> 槽位中的「学习」Tab；普通配置与运行诊断使用第一方 <code>settings.section</code>，不引入外部 UI 宿主。</li>
+<li>「学习」是 Session-scoped 视图入口，但业务数据来自同一个全局 client store 和 typed Remote；不同工作 Session 看到同一条学习线程。</li>
+<li>设置页和学习视图复用同一个 browser store；用户可在设置中选择辅助模型、启用学习模式、调整滚动 24 小时自主额度，并查看路由、额度恢复、上下文压力和最近压缩。</li>
+<li>讲解来源仍在当前 Session inventory 时可直接打开；来源被删除后历史保持可读并显示不可用。</li>
+<li>P0 不自动切换视图。空白 Session 的 Hero 阶段不显示视图 Tab；进入学习视图后，当前工作 Session 的 composer 仍然保留。</li>
+<li>P0 没有外部 UI 依赖，不携带或要求安装 better-sidebar。</li>
 </ul>
-<h3>Why</h3>
+<h3>动机</h3>
 <ul>
-<li>DSH can complete complex work, but a result alone may not teach the concepts, tradeoffs, or common pitfalls involved.</li>
-<li>Explain turns ordinary work sessions into learning material without requiring users to know what to ask in advance.</li>
-<li>Learning state needs to remain coherent across work sessions, so all material enters one global thread while source-specific active explanations preserve local continuity.</li>
+<li>DSH 能完成复杂工作，但用户通常只看到结果，不一定理解过程中用到的概念、取舍和常见误区。</li>
+<li>学习模式把工作会话变成学习素材来源，不要求用户先知道应该问什么。</li>
+<li>用户的学习事实和进度需要跨工作会话保持一致，因此所有内容进入一条全局线程；按来源保留的活跃讲解让用户回到相关工作时继续反馈。</li>
 </ul>
-<h3>Progress</h3>
+<h3>当前进展</h3>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> Product overlap review: no direct duplicate was found; related plugins provide implementation references only.</li>
-<li><input checked="" disabled="" type="checkbox"> P0 PRD: one global thread, per-source active explanations, an autonomous-call budget, two compaction triggers, global <code>ExplainContext</code>, and automatable acceptance criteria.</li>
-<li><input checked="" disabled="" type="checkbox"> Architecture v11: Explain owns both shortcut adapters on first-party DSH slots; optional plugins remain unmodified and unobserved.</li>
-<li><input checked="" disabled="" type="checkbox"> UI path: first-party <code>conversation.view</code> registration following the <code>ui-trajectory</code> view-ring pattern, with no external UI dependency.</li>
-<li><input checked="" disabled="" type="checkbox"> M1 infrastructure: standalone plugin build, local SQLite schema, entity-level CAS, pagination, long polling, and generated typed Remotes.</li>
-<li><input checked="" disabled="" type="checkbox"> M2 implementation: source observation, single-flight auxiliary scheduling, durable budgets, rephrasing, dual-trigger compaction, <code>ExplainContext</code>, and the Learning view.</li>
-<li><input checked="" disabled="" type="checkbox"> M2 real DSH Web/model flow and GIF acceptance evidence.</li>
-<li><input checked="" disabled="" type="checkbox"> M3 release gates: P0 acceptance matrix, keyless assembled-Web snapshot, and installation/composition smoke tests.</li>
-<li><input checked="" disabled="" type="checkbox"> M4 configuration and diagnostics: settings UI without YAML editing, concurrent-setting convergence, source navigation and missing-source fallback, shared diagnostics store, and expanded assembled-Web snapshot.</li>
-<li><input checked="" disabled="" type="checkbox"> M5 manual learning command: <code>/explain &lt;learning request&gt;</code>, explicit-request scheduling, source labels, durable rephrase summaries, and stable failure results.</li>
-<li><input checked="" disabled="" type="checkbox"> M6.1 Explain Host protocol: <code>--selection</code> and <code>--answer &lt;turn&gt;</code> source resolution, origin persistence, rephrase propagation, legacy <code>--suggested</code> input compatibility, and stable failures.</li>
-<li><input checked="" disabled="" type="checkbox"> M6 P1 implementation: selected text, exact assistant answers, and explicitly selected visible Advisor suggestions enter the same learning loop through Explain-owned editable drafts.</li>
+<li><input checked="" disabled="" type="checkbox"> 需求查重：产品目标无直接重复，相关插件可提供局部实现参考。</li>
+<li><input checked="" disabled="" type="checkbox"> PRD P0 定稿：单一学习线程、按来源活跃讲解、自主调用预算、双触发压缩、全局 ExplainContext 和可自动验证的验收标准。</li>
+<li><input checked="" disabled="" type="checkbox"> 技术架构 v11：两个快捷适配器都由 Explain 通过 DSH 第一方槽位拥有；可选插件保持不变且不被观察。</li>
+<li><input checked="" disabled="" type="checkbox"> UI 路径核验：沿用第一方 <code>ui-trajectory</code> 的 <code>ctx.slots.inject(&#39;conversation.view&#39;, ...)</code> 注册方式，无外部 UI 依赖。</li>
+<li><input checked="" disabled="" type="checkbox"> M1 基础设施：独立插件构建、本地 SQLite schema、实体级 CAS、分页/长轮询和自动生成的 typed Remote。</li>
+<li><input checked="" disabled="" type="checkbox"> M2 主实现：来源观察、辅助模型单飞调度、持久预算、重讲、双触发压缩、ExplainContext 与 <code>conversation.view</code> 学习界面。</li>
+<li><input checked="" disabled="" type="checkbox"> M2 真实 DSH Web/模型流程验收与 GIF。</li>
+<li><input checked="" disabled="" type="checkbox"> M3 发布门禁：P0 验收矩阵、无密钥 assembled Web snapshot、安装与组合 smoke。</li>
+<li><input checked="" disabled="" type="checkbox"> M4 内测可控性：无 YAML 设置页、并发设置收敛、来源跳转/缺失降级、共享诊断 store 和扩展 assembled Web snapshot。</li>
+<li><input checked="" disabled="" type="checkbox"> M5 主动学习命令：composer 中的 <code>/explain &lt;学习请求&gt;</code>、显式请求调度、来源标识、持久重讲摘要和稳定失败结果。</li>
+<li><input checked="" disabled="" type="checkbox"> M6.1 Explain Host 协议：<code>--selection</code> / <code>--answer &lt;turn&gt;</code> 来源定位、origin 持久化、重讲传播、旧 <code>--suggested</code> 输入兼容和稳定失败。</li>
+<li><input checked="" disabled="" type="checkbox"> M6 P1 实现：选中文字、精确 assistant 回答和用户显式选中的 Advisor 可见建议，经 Explain 自有可编辑草稿进入同一学习闭环。</li>
 </ul>
-<p>M1 established persistence and Host/Client RPC. M2 completed the learning loop. M3 added release gates. M4 made configuration, diagnostics, and source navigation available in the UI. M5 added user-initiated learning from the composer. M6 adds Explain-owned shortcuts without modifying optional plugins. See the <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/ACCEPTANCE.md">acceptance matrix</a> for automated evidence.</p>
-<h3>Current iteration</h3>
-<p>M6 registers an Explain selection action in <code>conversation.input.left</code> and an exact-answer action in <code>conversation.chat.assistant-actions</code>. Both use the public per-session input facade, recheck the live composer at click time, write only an editable draft, and remain independent of <code>dsh-selection-chat</code>, <code>dsh-suggested-replies</code>, and <code>dsh-advisor</code>. The scope and evidence are recorded in <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/NEXT.md">docs/NEXT.md</a>.</p>
-<h3>Install</h3>
-<p>Explain currently targets DSH <code>0.1.0-rc.6</code>. DSH is a developer preview, so older private-preview package lines are not supported.</p>
+<p>M1 建立持久层和 Host/Client RPC 基础；M2 完成学习闭环；M3 建立 P0 发布门禁；M4 让内测用户无需编辑 YAML 即可配置和诊断，并能从讲解返回仍存在的来源会话；M5 允许用户从工作 composer 主动发起一次学习；M6 增加 Explain 自有快捷入口，不修改可选插件。自动化证据见 <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/ACCEPTANCE.md">验收矩阵</a>。</p>
+<h3>当前迭代</h3>
+<p>M6 由 Explain 在 <code>conversation.input.left</code> 注册选区动作，并在 <code>conversation.chat.assistant-actions</code> 注册精确回答动作。两者只使用公开的 Session input facade，点击时重新校验 composer，只写可编辑草稿；<code>dsh-selection-chat</code>、<code>dsh-suggested-replies</code> 与 <code>dsh-advisor</code> 均无需修改、安装或暴露私有状态。完整范围与证据见 <a href="https://github.com/yuezengwu/dsh-explain/blob/main/docs/NEXT.md">迭代记录</a>。</p>
+<h3>安装</h3>
+<p>Explain 当前适配 DSH <code>0.1.0-rc.6</code>。DSH 仍处于开发者预览阶段，本插件不支持更早的私有预览包版本线。</p>
 <pre><code class="language-sh">npx @deepseek-ai/dsh@0.1.0-rc.6 plugin --profile web add github:yuezengwu/dsh-explain
 npx @deepseek-ai/dsh@0.1.0-rc.6 web
 </code></pre>
-<p>Git-hosted plugins build during installation. If pnpm asks for build approval, add the printed <code>dsh-explain</code> entry to the profile&#39;s <code>pnpm-workspace.yaml</code> and repeat the install command.</p>
-<h3>Local development</h3>
-<p>The default build uses the public DSH <code>0.1.0-rc.6</code> API packages. A built DSH source checkout is required for assembled-Web acceptance; link it explicitly after installing dependencies:</p>
+<p>Git 仓库插件会在安装时构建。如果 pnpm 要求批准构建，请按错误信息把 <code>dsh-explain</code> 加入该 profile 的 <code>pnpm-workspace.yaml</code>，然后重新运行安装命令。</p>
+<h3>本地开发</h3>
+<p>默认构建使用公开的 DSH <code>0.1.0-rc.6</code> API 包。assembled Web 验收仍需要已构建的 DSH 源码 checkout；安装依赖后显式建立本地链接：</p>
 <pre><code class="language-sh">pnpm install
 DSH_SOURCE_DIR=/absolute/path/to/dsh pnpm run dsh:link
 DSH_SOURCE_DIR=/absolute/path/to/dsh pnpm run dsh:link:check
@@ -257,80 +257,80 @@ DSH_SOURCE_DIR=/absolute/path/to/dsh pnpm run test:m6
 pnpm run typecheck
 pnpm run build
 </code></pre>
-<p>The source checkout must match the <code>0.1.0-rc.6</code> public API surface. Compatibility layers for earlier private-preview package lines are not retained.</p>
-<p><code>test:web</code> starts a real keyless DSH Web composition with a fresh temporary <code>$DSH_HOME</code>, a durable session fixture, and a pre-seeded Explain database. It compares the Learning and Settings ARIA output against golden snapshots and verifies native settings revisions, source navigation, and the missing-source fallback. To intentionally update the UI output, run <code>DSH_SOURCE_DIR=/absolute/path/to/dsh pnpm run test:web:refresh</code> and review the snapshot diff.</p>
-<p><code>test:m6</code> installs only Explain into a fresh profile. It verifies that no consumer plugin is present, both shortcuts produce exact editable drafts without submitting, and removing then reinstalling Explain restores the complete layer once.</p>
-<p>Install the development checkout directly rather than through npm:</p>
+<p>源码 checkout 必须匹配 <code>0.1.0-rc.6</code> 的公开 API；插件不保留更早私有预览版本线的兼容层。</p>
+<p><code>test:web</code> 使用全新临时 <code>$DSH_HOME</code>、持久 Session fixture 和预置 Explain SQLite 运行无密钥的真实 DSH Web 组合，并比对学习视图与设置页 ARIA golden；它还验证 native settings revision 写入、可用来源跳转和缺失来源降级。更新有意的界面输出时运行 <code>DSH_SOURCE_DIR=/absolute/path/to/dsh pnpm run test:web:refresh</code> 并审查 snapshot diff。</p>
+<p><code>test:m6</code> 只把 Explain 安装到全新 profile，验证消费方插件均不存在、两个快捷入口都只生成精确可编辑草稿，以及卸载并重新安装后完整层只恢复一次。</p>
+<p>开发验收使用本地目录安装，不经过 npm：</p>
 <pre><code class="language-sh">dsh plugin --profile web add /absolute/path/to/dsh-explain
 dsh --profile web --dump-config
 dsh --profile web
 </code></pre>
-<h3>Related design survey</h3>
-<p>The product goal has no direct duplicate. The following projects informed individual implementation choices but do not define this project&#39;s data model.</p>
+<h3>查重结论（2026-08-12）</h3>
+<p><strong>产品目标无直接重复；以下项目只作为局部先例，不作为本项目的数据模型。</strong></p>
 <table>
 <thead>
 <tr>
-<th>Project</th>
-<th>Reused idea</th>
-<th>Deliberately not reused</th>
+<th>仓库</th>
+<th>可复用部分</th>
+<th>明确不复用的部分</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>dsh-auto-blame</code></td>
-<td>Background model calls after a turn and client feedback patterns</td>
-<td>External custom session events and projections are not used for Explain persistence</td>
+<td><a href="https://github.com/dsh-external/dsh-auto-blame">dsh-auto-blame</a></td>
+<td>回合结束后的后台模型调用、客户端反馈形态</td>
+<td>外部自定义 Session 事件与 projection 不能作为本项目持久化方案</td>
 </tr>
 <tr>
-<td><code>dsh-advisor</code></td>
-<td>Transcript deltas, isolated model calls, emission guards, and configuration gateways</td>
-<td>Advisor injects suggestions into the primary agent; Explain never injects the primary model</td>
+<td><a href="https://github.com/omdsh-dev/dsh-advisor">dsh-advisor</a></td>
+<td>转录增量、模型调用隔离、发射保护和配置 gateway</td>
+<td>advisor 向主 agent 注入建议；explain 永不注入主模型</td>
 </tr>
 <tr>
-<td><code>dsh-memory</code></td>
-<td>Repository naming covers the long-term-memory direction</td>
-<td>The placeholder contains no reusable service or protocol</td>
+<td><a href="https://github.com/dsh-external/dsh-memory">dsh-memory</a></td>
+<td>仓库命名覆盖长期记忆方向</td>
+<td>当前只有占位 README，没有可复用服务或协议</td>
 </tr>
 <tr>
-<td><code>dsh-memory-evolve</code></td>
-<td>Cross-session layered memory, low-frequency snapshots, and user-visible management</td>
-<td>Its snapshots enter the primary agent; Explain neither depends on nor reads its private files</td>
+<td><a href="https://github.com/dsh-external/dsh-memory-evolve">dsh-memory-evolve</a></td>
+<td>跨会话分层记忆、低频快照与用户可见管理经验</td>
+<td>未公开 Cordis memory service，且快照进入主 Agent；explain 不依赖或读取其私有文件</td>
 </tr>
 <tr>
-<td>DSH <code>compact-basic</code>, <code>token-meter</code>, and LLM model info</td>
-<td>Capacity thresholds, deterministic token estimates, and routed <code>contextWindow</code> values</td>
-<td>Native compaction modifies one session surface; Explain needs its own global SQLite compactor</td>
+<td>DSH <code>compact-basic</code> / <code>token-meter</code> / LLM model info</td>
+<td>容量阈值策略、固定 token 估算和精确路由 <code>contextWindow</code></td>
+<td>原生 compact 只修改单个 Session surface；explain 需要自有全局 SQLite compactor</td>
 </tr>
 <tr>
-<td>DSH third-party memory MCP example</td>
-<td>Optional interoperability reference for cross-session persistence</td>
-<td>Model-initiated tool calls and an external provider do not fit automatic P0 <code>ExplainContext</code> updates</td>
+<td>DSH 第三方 memory MCP 示例</td>
+<td>跨会话持久记忆的可选互操作参考</td>
+<td>模型主动工具调用和外部 provider 不适合作为 P0 自动 ExplainContext</td>
 </tr>
 <tr>
 <td>DSH <code>ui-trajectory</code></td>
-<td><code>conversation.view</code> registration, session-header tabs, and active-only rendering</td>
-<td>Trajectory uses a session-event view model; learning facts remain in Explain SQLite and Remotes</td>
+<td><code>conversation.view</code> 视图注册、Session 头部 Tab 和 active-only 渲染先例</td>
+<td>trajectory 的 Session 事件视图模型；学习事实仍使用插件自有 SQLite 与 Remote</td>
 </tr>
 <tr>
-<td><code>DSH-better-sidebar</code></td>
-<td>Side-workbench interaction reference</td>
-<td>P0 does not require simultaneous work and learning views, so it adds no sidebar service or dependency tree</td>
+<td><a href="https://github.com/dsh-external/DSH-better-sidebar">DSH-better-sidebar</a></td>
+<td>侧边工作台交互参考</td>
+<td>P0 不需要边工作边查看，因此不引入其服务、源码副本或依赖树</td>
 </tr>
 <tr>
-<td><code>official-plugins-port</code> <code>claude/learning-output-style</code> and <code>claude/explanatory-output-style</code></td>
-<td>Learning and explanation prompt references</td>
-<td>A system prompt alone cannot provide isolated scheduling, durable history, or a feedback loop</td>
+<td><a href="https://github.com/dsh-external/official-plugins-port">official-plugins-port</a> 的 <code>claude/learning-output-style</code> 与 <code>claude/explanatory-output-style</code></td>
+<td>学习与解释类提示词参考</td>
+<td>纯 system prompt 无法提供独立调度、持久历史和反馈闭环</td>
 </tr>
 <tr>
-<td><code>dsh-edu</code></td>
-<td>Possible future knowledge-artifact formats</td>
-<td>P0 does not implement courses, quizzes, cards, or spaced review</td>
+<td><a href="https://github.com/dsh-external/dsh-edu">dsh-edu</a></td>
+<td>后续知识沉淀格式</td>
+<td>P0 不做课程、测验、卡片或复习系统</td>
 </tr>
 </tbody></table>
-<h3>License</h3>
-<p><a href="https://github.com/yuezengwu/dsh-explain/blob/main/LICENSE">MIT</a></p>
+<h3>许可证</h3>
+<p>本项目使用 <a href="https://github.com/yuezengwu/dsh-explain/blob/main/LICENSE">MIT License</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/yuezengwu/dsh-explain/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/yuezengwu/dsh-explain/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

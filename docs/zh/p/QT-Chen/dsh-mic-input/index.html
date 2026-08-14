@@ -189,51 +189,49 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>Microphone voice input for the DeepSeek Harness (DSH) Web UI — in the browser, no server, no keys.</strong></p>
-<blockquote>
-<p>中文说明见 <a href="https://github.com/QT-Chen/dsh-mic-input/blob/main/README.zh.md">README.zh.md</a></p>
-</blockquote>
-<p>A pure client plugin that adds a <strong>microphone button</strong> to the composer tool row of the DSH Web GUI. Click to start dictating; recognized speech is transcribed live into the input box. Everything runs in your browser through the built-in <strong>Web Speech API</strong>:</p>
+<p><strong>DeepSeek Harness (DSH) Web GUI 的麦克风语音输入插件 —— 纯浏览器实现，零服务端、零密钥。</strong></p>
+<p>English version: <a href="https://github.com/QT-Chen/dsh-mic-input/blob/main/README.md">README.md</a></p>
+<p>纯 Client 插件，在 DSH Web GUI 输入框工具行右侧添加一个<strong>麦克风按钮</strong>：点击开始/停止录音，语音实时转写进输入框。全部通过浏览器内置的 <strong>Web Speech API</strong> 完成：</p>
 <ul>
-<li><strong>Microsoft Edge</strong> → Microsoft Azure speech service</li>
-<li><strong>Google Chrome</strong> → Google/Chrome speech service</li>
+<li><strong>Microsoft Edge</strong> → 微软 Azure 语音服务</li>
+<li><strong>Google Chrome</strong> → 谷歌/Chrome 语音服务</li>
 </ul>
-<p>Zero server components, zero API keys, zero model downloads. Audio never leaves the browser (except to the browser&#39;s own speech service).</p>
-<h3>Features</h3>
+<p>零服务端、零 API Key、零模型下载。音频只交给浏览器自带的语音服务，插件本身不落盘、不上传。</p>
+<h3>功能</h3>
 <ul>
-<li><strong>Mic button</strong> in the composer tool row (right side, next to send) — click to start/stop; red pulsing ring while listening</li>
-<li><strong>Live transcription</strong> — interim results fill the input while you speak</li>
-<li><strong>No duplicated text</strong> — the draft is always rebuilt from the text that was in the input when recording started, and interim echo prefixes are deduplicated (fixes the classic &quot;重复文字&quot; bug of Web Speech plugins)</li>
-<li><strong>Auto-continue on silence</strong> — if the browser stops listening after a pause, the plugin silently reconnects and keeps the session (up to 6 silent ends), so long sentences are not cut off</li>
-<li><strong>Smart punctuation</strong> (default) — auto-completes sentence-ending punctuation: <code>？</code> after 吗/呢 questions, <code>！</code> after 吧/啊/呀/哦/嘛/啦/哇/哈, <code>。</code> otherwise (English: <code>.</code>); modes: 自动补全 / 保留原样 / 去除</li>
-<li><strong>Language selection</strong> — 跟随系统 (auto, follows browser language) / 中文 (zh-CN) / English (en-US); wrong language matching is the #1 cause of garbled recognition</li>
-<li><strong>Auto-send</strong> — optional: submit the message automatically when dictation ends</li>
-<li><strong>Settings row</strong> under 设置 → 通用 → 语音输入</li>
-<li><strong>Clear errors</strong> — permission-denied / network errors show bilingual hints on the button tooltip</li>
+<li><strong>输入框工具行麦克风按钮</strong>（发送按钮左侧）：点击开始/停止；录音时红色脉动光圈</li>
+<li><strong>实时转写</strong>：边说边把中间结果填进输入框</li>
+<li><strong>文字不重复</strong>：草稿永远基于录音开始时的输入框内容重建，并自动去重 interim 回显前缀（修复 Web Speech 插件常见的&quot;重复文字&quot;问题）</li>
+<li><strong>静默自动续听</strong>：浏览器停顿约 1.5 秒断连后自动重连续听（最多 6 次），长句不会被切断</li>
+<li><strong>智能标点</strong>（默认开启）：句末自动补全——<code>吗/呢</code> 结尾补 <code>？</code>，<code>吧/啊/呀/哦/嘛/啦/哇/哈</code> 结尾补 <code>！</code>，其余补 <code>。</code>（英文补 <code>.</code>）；可选：自动补全 / 保留原样 / 去除</li>
+<li><strong>语言选择</strong>：跟随系统 / 中文（zh-CN）/ English（en-US）——语言匹配错误是识别跑偏的头号原因</li>
+<li><strong>识别后自动发送</strong>（可选）：说完自动提交</li>
+<li><strong>设置入口</strong>：设置 → 通用 → 语音输入</li>
+<li><strong>错误可见</strong>：权限被拒、网络错误等以中/英文提示显示在按钮悬停处</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add github:QT-Chen/dsh-mic-input
 </code></pre>
-<p>or from npm (prebuilt, no build approval needed):</p>
+<p>或从 npm 安装（预构建产物，无需构建授权）：</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-mic-input
 </code></pre>
-<p>Restart <code>dsh web</code> (or refresh the page), then click the <strong>mic button</strong> to the right of the input box. The first time you use it, the browser asks for microphone permission — allow it (127.0.0.1 / localhost is a secure context, so it works).</p>
+<p>重启 <code>dsh web</code>（或刷新页面），点输入框右侧的<strong>麦克风按钮</strong>即可。首次使用浏览器会请求麦克风权限，允许即可（127.0.0.1 / localhost 属安全上下文，可用）。</p>
 <blockquote>
-<p>Note: if you installed from the GitHub source, pnpm ≥ 10 may ask you to allow the build once (<code>allowBuilds</code>). The npm install has no such step.</p>
+<p>提示：从 GitHub 源码安装时，pnpm ≥ 10 可能要求一次 <code>allowBuilds</code> 构建授权；npm 安装则无需此步骤。</p>
 </blockquote>
-<h3>Usage tips</h3>
+<h3>使用建议</h3>
 <ul>
-<li>Recording starts a session; <strong>click the button again to stop and keep the transcript</strong> in the input (auto-send only if enabled)</li>
-<li>If recognition produces gibberish, check the language setting — it must match what you speak (system language ≠ spoken language is the usual cause)</li>
-<li>Recognition quality is bounded by the browser&#39;s built-in engine; Edge (Azure) and Chrome (Google) may differ noticeably</li>
+<li>录音即开始一个会话；<strong>再点一次按钮停止</strong>，转写文字保留在输入框中（勾选&quot;自动发送&quot;才会自动提交）</li>
+<li>识别乱码时先检查语言设置——说的语言和设置的语言不一致是常见原因</li>
+<li>识别质量取决于浏览器自带引擎（Edge 走微软、Chrome 走谷歌，两者可能有明显差异）</li>
 </ul>
-<h3>Privacy</h3>
-<p>No server, no storage: audio is processed by the browser&#39;s speech service (Microsoft/Google), and only the resulting text ever enters DSH. Nothing is written to disk by this plugin.</p>
+<h3>隐私</h3>
+<p>无服务端、无存储：音频由浏览器语音服务（微软/谷歌）处理，只有最终文字进入 DSH。插件本身不写盘。</p>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/QT-Chen/dsh-mic-input/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/QT-Chen/dsh-mic-input/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

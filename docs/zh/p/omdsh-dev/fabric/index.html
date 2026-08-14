@@ -189,53 +189,53 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/omdsh-dev/fabric/blob/main/README.zh.md">中文</a></p>
-<p>The Fabric/Mixin extension layer for DSH as a self-contained workspace of three packages plus an installable profile bundle carrier. The workspace mirrors the upstream fabric split: a pure-Cordis pair (<code>cordis-fabric</code>, <code>cordis-fabric-api</code>) and the DSH integration package (<code>cordis-fabric-dsh</code>) that supplies the Host and browser facades, the package invariant, and the profile bootstrap.</p>
-<h3>Packages</h3>
+<p><a href="https://github.com/omdsh-dev/fabric/blob/main/README.md">English</a> | 中文</p>
+<p>Fabric/Mixin 扩展层的自包含 workspace:三个完整包 + 一个可安装的 profile bundle 载体。结构对齐上游 fabric 拆分:纯 Cordis 对(<code>cordis-fabric</code>、<code>cordis-fabric-api</code>)与 DSH 集成包(<code>cordis-fabric-dsh</code>,提供 Host/浏览器 facade、包 invariant 与 profile bootstrap)。</p>
+<h3>包</h3>
 <table>
 <thead>
 <tr>
-<th>Package</th>
-<th>Kind</th>
-<th>Contents</th>
+<th>包</th>
+<th>类型</th>
+<th>内容</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>cordis-fabric</code></td>
-<td>pure Cordis</td>
-<td>Trusted load-time transformation service (<code>FabricService</code>, <code>bootstrapFabric</code>), Orchestrion transform, node-loader hooks, bridge, browser transform, testkit. No DSH imports.</td>
+<td>纯 Cordis</td>
+<td>可信加载期变换服务(<code>FabricService</code>、<code>bootstrapFabric</code>)、Orchestrion 变换、node-loader hooks、bridge、browser transform、testkit。无任何 DSH 导入。</td>
 </tr>
 <tr>
 <td><code>cordis-fabric-api</code></td>
-<td>pure Cordis</td>
-<td>Cooperative compat facade over the fabric registry: <code>FabricCompatService</code> + <code>buildCompatInstrumentations</code>. Peers only Cordis and <code>cordis-fabric</code>.</td>
+<td>纯 Cordis</td>
+<td>基于 fabric registry 的合作式 compat facade:<code>FabricCompatService</code> + <code>buildCompatInstrumentations</code>。peer 只依赖 Cordis 与 <code>cordis-fabric</code>。</td>
 </tr>
 <tr>
 <td><code>cordis-fabric-dsh</code></td>
-<td>DSH-facing</td>
-<td>Mod-facing facades (<code>ctx.fabricAgent</code>, <code>ctx.fabricTools</code>, <code>ctx.fabricPrompt</code>, <code>ctx.fabricCommands</code>), browser facade (<code>ctx.fabricClient</code>), the package invariant, and the profile bootstrap (<code>installFabricBootstrap</code>).</td>
+<td>DSH 面</td>
+<td>Mod-facing facade(<code>ctx.fabricAgent</code>、<code>ctx.fabricTools</code>、<code>ctx.fabricPrompt</code>、<code>ctx.fabricCommands</code>)、浏览器 facade(<code>ctx.fabricClient</code>)、包 invariant 与 profile bootstrap(<code>installFabricBootstrap</code>)。</td>
 </tr>
 </tbody></table>
-<p>Only these three packages exist as code in this repository. Anything outside them — for example the official <code>@deepseek-ai/dsh-tool-cordis</code> toolset or a corrected upstream dependency — is never added as a fourth package; it is applied as a pnpm dependency patch stored in <code>patches/</code> (see <code>patches/README.md</code>).</p>
-<h3>Repository shape</h3>
-<pre><code class="language-text">package.json              # workspace root and dsh.bundle bundle carrier
+<p>本仓库只存在这三个完整包。三包之外的任何代码——包括官方的 <code>@deepseek-ai/dsh-tool-cordis</code> 工具集或需要修正的上游依赖——一律不作为第四个包加入,而是以 pnpm 依赖补丁的形式存放在 <code>patches/</code> 中(见 <code>patches/README.md</code>)。</p>
+<h3>仓库结构</h3>
+<pre><code class="language-text">package.json              # workspace 根与 dsh.bundle bundle 载体
 pnpm-workspace.yaml       # packages/* workspace
-cordis.patch.yml          # explicit Fabric profile rows (opt-in, disabled)
-AGENTS.md                 # repository-local contributor rules
-docs/                     # detailed Fabric, API, and contract references
-patches/README.md         # pnpm dependency-patch contract
-scripts/                  # self-contained prepare and boundary verification
+cordis.patch.yml          # 显式 Fabric profile rows(opt-in,默认禁用)
+AGENTS.md                 # 仓库内贡献规则
+docs/                     # Fabric、API 与契约详细说明
+patches/README.md         # pnpm 依赖补丁契约
+scripts/                  # 自包含 prepare 与边界验证
 packages/
-  cordis-fabric/          # pure transformation service + browser client entry
-  cordis-fabric-api/      # pure compat facade (peer-only library)
-  cordis-fabric-dsh/      # DSH facades, invariant, profile bootstrap
-lib/                      # build outputs (ignored; each package prepares its own on install)
+  cordis-fabric/          # 纯变换服务 + 浏览器 client entry
+  cordis-fabric-api/      # 纯 compat facade(peer-only 库)
+  cordis-fabric-dsh/      # DSH facades、invariant、profile bootstrap
+lib/                      # 构建产物(已忽略;每个包在安装时自行 prepare)
 </code></pre>
-<h3>Repository boundary</h3>
-<p>This repository is fully self-contained: every source file, compiler setting, test fixture, contributor instruction, and build helper lives below this repository root, and every development input resolves from this repository&#39;s own manifests and lockfile. The DSH host packages (<code>@deepseek-ai/dsh-agent</code>, <code>@deepseek-ai/dsh-invariants</code>, and the other <code>@deepseek-ai/dsh-*</code> services the facades delegate to) are installable from the npm registry; the facades import their real types directly (declared as peer + dev dependencies), and a composed DSH profile supplies the real services at runtime.</p>
-<p>Run <code>pnpm run verify:self-contained</code> to enforce the boundary: it rejects local-path dependency specs, compiler or code paths that leave the repository, external or broken Markdown links, absolute workstation paths, and the removal of any repository-layout contract.</p>
-<h3>Bundle behavior</h3>
-<p>The bundle carrier adds both profile rows as disabled opt-ins:</p>
+<h3>仓库边界</h3>
+<p>本仓库完全自包含:所有源码、编译器配置、测试夹具、贡献说明和构建辅助都位于仓库根目录内,所有开发输入都从本仓库自身的 manifest 和 lockfile 解析。DSH 宿主包(<code>@deepseek-ai/dsh-agent</code>、<code>@deepseek-ai/dsh-invariants</code> 以及 facade 委托的其他 <code>@deepseek-ai/dsh-*</code> 服务)可从 npm registry 安装;facade 直接导入它们的真实类型(声明为 peer + dev 依赖),运行时由组合后的 DSH profile 提供真实服务。</p>
+<p>运行 <code>pnpm run verify:self-contained</code> 强制执行该边界:它拒绝本地路径依赖规格、离开仓库的编译器或代码路径、外部或损坏的 Markdown 链接、绝对工作站路径,以及任何仓库布局契约文件的缺失。</p>
+<h3>组合包行为</h3>
+<p>bundle 载体加入两个默认禁用的 profile 行:</p>
 <pre><code class="language-yaml">- id: cordis-fabric
   name: &#39;cordis-fabric&#39;
   disabled: true
@@ -244,49 +244,49 @@ lib/                      # build outputs (ignored; each package prepares its ow
   name: &#39;cordis-fabric-dsh&#39;
   disabled: true
 </code></pre>
-<p>Fabric patch handlers are trusted code registered through <code>ctx.fabric.register()</code>. Patch descriptors are configuration metadata, but executable handlers are never deserialized from YAML or model input. The service supports Node ESM/CommonJS load-time transformation, browser build-time transformation, priority composition, HMR-safe disposal, static target validation, generator delegation, and watched browser transforms.</p>
-<p>The bundle patch only composes these package rows. The launcher/bootstrap and browser build seams the trio needs to RUN are host-side code outside the three packages and are carried as <code>patches/fabric-host-integration.patch</code> (apply it to a deepseek-harness checkout at snapshot <code>9f9e2782a4</code> (0813); see <code>patches/README.md</code>). A host already at the split commit needs nothing.</p>
-<h3>Installation</h3>
-<p>The bundle installs through DSH&#39;s official bundle-plugin channel; the trio resolves from this same GitHub repository through git subdirectory specs, so nothing is published:</p>
+<p>Patch handler 是通过 <code>ctx.fabric.register()</code> 注册的可信代码;YAML 或模型输入永远不会反序列化可执行 handler。服务支持 Node ESM/CommonJS 加载期变换、browser 构建期变换、优先级组合、HMR 安全销毁、静态目标校验、generator 委托和 watched browser transforms。</p>
+<p>新的 bundle 层只负责组合 package rows。三包要真正运行所需的 launcher/bootstrap 与 browser build 接缝是宿主侧代码,不属于三包,以 <code>patches/fabric-host-integration.patch</code> 携带(对快照 <code>9f9e2782a4</code>(0813)的 deepseek-harness checkout 执行 <code>git apply</code>;见 <code>patches/README.md</code>)。已到拆分提交的宿主无需任何补丁。</p>
+<h3>安装</h3>
+<p>bundle 通过 DSH 官方 bundle 插件通道安装;三包通过 git 子目录 spec 从本 GitHub 仓库解析,无需发布:</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:dsh-external/fabric
 </code></pre>
-<p>Restart the web app afterwards. The profile rows are disabled opt-ins; enable <code>cordis-fabric</code> / <code>cordis-fabric-dsh</code> in the profile composition to activate the Fabric layer.</p>
-<p>The repository carries no build artifacts: the trio&#39;s <code>prepare</code> scripts build <code>lib/</code> during a Git install (pnpm installs the package&#39;s devDependencies and runs <code>prepare</code> on the consumer machine). Installations track <code>main</code>.</p>
-<p>For the Fabric layer to actually engage, the host launcher must call the trio&#39;s bootstrap before any target module import. Official DSH master does not do this yet. Two host situations:</p>
-<p><strong>Source host (fully usable now)</strong> — a deepseek-harness checkout plus the host patch (<code>patches/fabric-host-integration.patch</code>, see <code>patches/README.md</code>). The patch wires the launcher, the browser build seam, and the tool-cordis catalog, and the CLI&#39;s trio dependencies are git specs, so a plain official checkout resolves and builds the trio on <code>pnpm install</code>:</p>
+<p>装完重启 web。profile 行为默认禁用的 opt-in;在 profile 组合中启用 <code>cordis-fabric</code> / <code>cordis-fabric-dsh</code> 即激活 Fabric 层。</p>
+<p>仓库不带任何构建产物:三包的 <code>prepare</code> 脚本在 Git 安装时构建 <code>lib/</code>(pnpm 会安装该包的 devDependencies 并在消费者机器上运行 <code>prepare</code>)。安装跟随 <code>main</code>。</p>
+<p>Fabric 层要真正生效,宿主 launcher 必须在任何目标模块导入前调用三包的 bootstrap。官方 DSH master 目前没有这一步。两种宿主情形:</p>
+<p><strong>源码宿主(现在就能完整可用)</strong> — deepseek-harness checkout + 宿主补丁(<code>patches/fabric-host-integration.patch</code>,见 <code>patches/README.md</code>)。补丁接好 launcher、browser build 接缝和 tool-cordis catalog;CLI 的三包依赖是 git spec,纯官方 checkout 在 <code>pnpm install</code> 时就能拉取并现造三包:</p>
 <pre><code class="language-sh">git clone &lt;deepseek-harness&gt; &amp;&amp; cd deepseek-harness
-pnpm run patch:host -- .          # from this bundle repo; or git apply the patch
-pnpm install --no-frozen-lockfile # first install: lockfile gains the two git deps,
-                                  # pulls the trio from GitHub, prepare builds it
+pnpm run patch:host -- .          # 在本 bundle 仓库里执行;或 git apply 补丁
+pnpm install --no-frozen-lockfile # 首次安装:lockfile 新增两个 git 依赖,
+                                  # 从 GitHub 拉三包,prepare 现造 lib
 pnpm run build
-pnpm dsh web            # the web-app bundle layer already composes the fabric rows
+pnpm dsh web            # web-app bundle 层已组合 fabric 两行
 </code></pre>
-<p>Or in one step from this bundle repo: <code>pnpm run install:host -- &lt;deepseek-harness-checkout&gt;</code> (apply patch, install, build).</p>
-<p><strong>npm-installed official <code>dsh</code></strong> — cannot take the source patch (the CLI ships prebuilt); it works once the official repository merges the wiring (the fork at <code>65bcaf9902</code> contains it).</p>
-<p>Two prerequisites:</p>
+<p>或者一步完成(在本 bundle 仓库里执行):<code>pnpm run install:host -- &lt;deepseek-harness-checkout&gt;</code>(打补丁 + 安装 + 构建)。</p>
+<p><strong>npm 安装的官方 <code>dsh</code></strong> — 无法打源码补丁(CLI 是预构建产物);等官方仓库合入接线后即可(拆分提交 <code>65bcaf9902</code> 已包含)。</p>
+<p>两个前提:</p>
 <ul>
-<li>pnpm resolves GitHub dependencies over SSH, so the installing machine needs GitHub SSH access for <code>dsh-external/fabric</code>.</li>
-<li>The load-time transformation hooks must be installed by the host launcher before any target module import; see the host situations above.</li>
+<li>pnpm 通过 SSH 解析 GitHub 依赖,安装机器需要对 <code>dsh-external/fabric</code> 有 GitHub SSH 访问权;</li>
+<li>load-time 变换钩子必须在任何目标模块导入前由宿主 launcher 安装;见上面的宿主情形。</li>
 </ul>
-<h3>Development</h3>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run verify:self-contained
 pnpm run typecheck
 pnpm test
 pnpm run build
 </code></pre>
-<p><code>lib/</code> is a build output, never committed: it is recreated by the trio&#39;s <code>prepare</code> scripts (the root <code>build</code> script runs them locally). In this workspace, the root manifest&#39;s git subdirectory specs for the trio are redirected to the local packages through <code>pnpm-workspace.yaml</code> overrides, so <code>pnpm install</code> never re-clones the repository.</p>
-<h3>Model Experience</h3>
-<p>The low-level transformer contributes no model-visible content. The cooperative facades delegate prompt, tools, commands, agent events, and browser command/slot registrations to their authoritative DSH services; those owners retain logging, permissions, approval, cancellation, and rendering semantics.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<p><code>lib/</code> 是构建产物,永不提交:由三包的 <code>prepare</code> 脚本重建(根 <code>build</code> 脚本在本地执行它们)。本 workspace 中,root manifest 对三包的 git 子目录 spec 通过 <code>pnpm-workspace.yaml</code> 的 overrides 指回本地包,<code>pnpm install</code> 不会重复克隆仓库。</p>
+<h3>模型体验</h3>
+<p>低层 transformer 不产生任何模型可见内容。合作式 facade 把 prompt、tools、commands、agent events 和浏览器 command/slot 注册全部委托给权威 DSH 服务;日志、权限、审批、取消和渲染语义由这些属主保留。</p>
+<h3>已知限制</h3>
 <ul>
-<li>Node load-time transformation requires precompiled JavaScript; browser transforms strip TypeScript before applying handlers.</li>
-<li>The browser faces are split across the two dual-face packages (<code>cordis-fabric/client</code> for the bridge and service, <code>cordis-fabric-dsh/client</code> for the Mod-facing facade); consumers that need the complete typed SlotMap should use the authoritative DSH slot service instead of widening the facade.</li>
-<li>On an npm-installed official <code>dsh</code>, the load-time and browser build seams do not engage (the CLI ships prebuilt and cannot take the source patch); those hosts work once the official repository merges the wiring. Source hosts use <code>patches/fabric-host-integration.patch</code> to add the seams (see <code>patches/README.md</code>).</li>
+<li>Node 加载期变换要求预编译 JavaScript;browser transform 会在应用 handler 前剥离 TypeScript。</li>
+<li>浏览器面分布在两个双面包中(<code>cordis-fabric/client</code> 提供 bridge 与 service,<code>cordis-fabric-dsh/client</code> 提供 Mod-facing facade);需要完整 SlotMap 类型的 consumer 应直接使用 DSH authoritative slot service。</li>
+<li>npm 安装的官方 <code>dsh</code> 上,load-time 与 browser build 接缝不生效(CLI 预构建,打不了源码补丁);这类宿主要等官方合入接线。源码宿主用 <code>patches/fabric-host-integration.patch</code> 补齐接缝(见 <code>patches/README.md</code>)。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/fabric/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/fabric/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -192,7 +192,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>English</strong> | <a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/README.zh.md">简体中文</a></p>
+<p><a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/README.md">English</a> | <strong>简体中文</strong></p>
 <p><a href="https://www.npmjs.com/package/@tonydua/dsh-web-search-exa"><img src="https://img.shields.io/npm/v/@tonydua/dsh-web-search-exa" alt="npm version"></a>
 <a href="https://www.npmjs.com/package/@tonydua/dsh-web-search-exa"><img src="https://img.shields.io/npm/dm/@tonydua/dsh-web-search-exa" alt="npm downloads"></a>
 <a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@tonydua/dsh-web-search-exa" alt="License"></a>
@@ -200,131 +200,106 @@ footer p+p{margin-top:.5rem}
 <a href="https://github.com/TonyDua/dsh-web-search-exa"><img src="https://img.shields.io/github/issues/TonyDua/dsh-web-search-exa" alt="GitHub issues"></a>
 <a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/package.json"><img src="https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white" alt="Node"></a></p>
 <blockquote>
-<p>Zero-config <a href="https://exa.ai">Exa</a> web search for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh):
-<strong>no API key required</strong> — a <code>WebSearchProvider</code> for the <code>ctx.web</code> seam with an
-anonymous MCP fallback plus a keyed REST path.</p>
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（dsh）提供<strong>零配置</strong>的 <a href="https://exa.ai">Exa</a> 网页搜索：
+<strong>无需 API key</strong> —— 一个 <code>ctx.web</code> seam 的 <code>WebSearchProvider</code>，内置匿名 MCP 兜底 + 带 key 的 REST 路径。</p>
 </blockquote>
-<p>Built with <a href="https://api-docs.deepseek.com">deepseek-v4-flash</a> inside DeepSeek Harness (dsh).</p>
-<h3>Features</h3>
+<p>使用 <a href="https://api-docs.deepseek.com">deepseek-v4-flash</a> 在 DeepSeek Harness（dsh）内开发。</p>
+<h3>特性</h3>
 <ul>
-<li>🆓 <strong>Zero-config, keyless by default</strong> — searches route through Exa&#39;s hosted MCP
-server (<code>mcp.exa.ai/mcp</code>) with <strong>no credentials at all</strong> (Exa&#39;s documented
-unauthenticated public MCP, rate-limited).</li>
-<li>🔑 <strong>Keyed REST upgrade</strong> — set <code>EXA_API_KEY</code> and it automatically switches to
-Exa&#39;s <code>POST /search</code> REST API (higher limits, no behavior change).</li>
-<li>🔌 <strong>Drop-in provider</strong> — registers into the dsh <code>ctx.web</code> seam; the existing
-model-facing <code>web_search</code> / <code>web_fetch</code> tools, prompt sections, and result
-cards work unchanged.</li>
-<li>🎛️ <strong><code>providerId</code> switch</strong> — can coexist with the official
-<code>@deepseek-ai/dsh-web-search-exa</code> package in one profile (no duplicate-id
-collisions, no silent overrides).</li>
-<li>📦 <strong>npm-publishable</strong> — MIT, ESM, bundled types, <code>files</code> limited to <code>lib/</code>.</li>
+<li>🆓 <strong>零配置、默认免 key</strong> —— 搜索经由 Exa 官方托管的 MCP 服务器（<code>mcp.exa.ai/mcp</code>），<strong>完全不携带凭据</strong>（Exa 官方提供的免认证公共 MCP，有限流）。</li>
+<li>🔑 <strong>配 key 自动升级 REST</strong> —— 设置 <code>EXA_API_KEY</code> 后自动切换到 Exa <code>POST /search</code> REST API（额度更高，行为不变）。</li>
+<li>🔌 <strong>即插即用</strong> —— 注册进 dsh <code>ctx.web</code> seam；模型侧的 <code>web_search</code> / <code>web_fetch</code> 工具、提示词区段与结果卡片无需任何改动。</li>
+<li>🎛️ <strong><code>providerId</code> 开关</strong> —— 可与官方 <code>@deepseek-ai/dsh-web-search-exa</code> 在同一 profile 共存（不撞 id、无黑箱覆盖）。</li>
+<li>📦 <strong>可直接发布</strong> —— MIT、ESM、内置类型声明、<code>files</code> 仅含 <code>lib/</code>。</li>
 </ul>
-<h3>Why this package exists (vs. the official one)</h3>
-<p>The DeepSeek Harness ships an official Exa provider,
-<a href="https://www.npmjs.com/package/@deepseek-ai/dsh-web-search-exa"><code>@deepseek-ai/dsh-web-search-exa</code></a>.
-This package is its <strong>zero-config variant</strong>: it adds the anonymous MCP fallback
-the official one does not have, and keeps the same keyed REST behavior.</p>
+<h3>为什么有这个包（与官方包的差异）</h3>
+<p>DeepSeek Harness 自带官方 Exa 提供方 <a href="https://www.npmjs.com/package/@deepseek-ai/dsh-web-search-exa"><code>@deepseek-ai/dsh-web-search-exa</code></a>。本包是它的<strong>零配置变体</strong>：补上了官方没有的匿名 MCP 兜底，同时保留配置 key 后的相同 REST 行为。</p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Official <code>@deepseek-ai/dsh-web-search-exa</code></th>
-<th>This package <code>@tonydua/dsh-web-search-exa</code></th>
+<th>官方 <code>@deepseek-ai/dsh-web-search-exa</code></th>
+<th>本包 <code>@tonydua/dsh-web-search-exa</code></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>REST path (<code>POST /search</code>)</td>
-<td>✅ only path</td>
-<td>✅ used when a key is configured</td>
+<td>REST 路径（<code>POST /search</code>）</td>
+<td>✅ 唯一路径</td>
+<td>✅ 配置 key 时使用</td>
 </tr>
 <tr>
-<td>Requires an API key</td>
-<td>✅ <strong>yes — empty key makes it unavailable</strong></td>
-<td>❌ no — keyless anonymous MCP fallback</td>
+<td>必须有 API key</td>
+<td>✅ <strong>是——key 为空则不可用</strong></td>
+<td>❌ 不需要——无 key 走匿名 MCP 兜底</td>
 </tr>
 <tr>
-<td>Anonymous MCP (<code>mcp.exa.ai/mcp</code>)</td>
-<td>❌ not implemented</td>
-<td>✅ default when no key</td>
+<td>匿名 MCP（<code>mcp.exa.ai/mcp</code>）</td>
+<td>❌ 未实现</td>
+<td>✅ 无 key 时默认路径</td>
 </tr>
 <tr>
-<td>Zero-config install</td>
+<td>零配置安装</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
 <tr>
 <td>Provider id</td>
-<td><code>exa</code> (fixed)</td>
-<td><code>exa</code> by default, <strong>configurable via <code>providerId</code></strong></td>
+<td><code>exa</code>（固定）</td>
+<td>默认 <code>exa</code>，<strong>可用 <code>providerId</code> 配置</strong></td>
 </tr>
 <tr>
-<td>Cordis plugin name</td>
+<td>Cordis 插件名</td>
 <td><code>web-search-exa</code></td>
 <td><code>web-search-exa</code></td>
 </tr>
 <tr>
-<td>Config keys</td>
-<td><code>apiKey</code>, <code>baseURL</code>, <code>searchType</code>, <code>numResults</code>, <code>highlightsPerResult</code></td>
-<td><code>apiKey</code>, <code>apiKeyEnv</code>, <code>apiURL</code>, <code>mcpURL</code>, <code>searchType</code>, <code>numResults</code>, <code>highlightsPerResult</code>, <code>providerId</code></td>
+<td>配置键</td>
+<td><code>apiKey</code>、<code>baseURL</code>、<code>searchType</code>、<code>numResults</code>、<code>highlightsPerResult</code></td>
+<td><code>apiKey</code>、<code>apiKeyEnv</code>、<code>apiURL</code>、<code>mcpURL</code>、<code>searchType</code>、<code>numResults</code>、<code>highlightsPerResult</code>、<code>providerId</code></td>
 </tr>
 </tbody></table>
-<h3>Which one should I use?</h3>
+<h3>我该用哪个？</h3>
 <ul>
-<li><strong>You have an <code>EXA_API_KEY</code> and want the officially maintained package</strong> →
-use <code>@deepseek-ai/dsh-web-search-exa</code>. It is the canonical implementation.</li>
-<li><strong>You want to try Exa search with zero setup, no key, no cost commitment</strong> →
-use this package. It degrades gracefully: anonymous MCP by default, REST
-automatically when a key appears.</li>
-<li><strong>You want both</strong> → install both and use the <code>providerId</code> switch (see
-<a href="#coexistence-with-the-official-package">Coexistence</a>).</li>
+<li><strong>你有 <code>EXA_API_KEY</code>，且想要官方维护的包</strong> → 用 <code>@deepseek-ai/dsh-web-search-exa</code>，它是官方标准实现。</li>
+<li><strong>想零配置、免 key、无成本负担地试用 Exa 搜索</strong> → 用本包。优雅降级：默认匿名 MCP，出现 key 自动走 REST。</li>
+<li><strong>两个都想要</strong> → 一起装，用 <code>providerId</code> 开关（见<a href="#%E4%B8%8E%E5%AE%98%E6%96%B9%E5%8C%85%E5%85%B1%E5%AD%98">与官方包共存</a>）。</li>
 </ul>
-<h3>How it works</h3>
+<h3>工作原理</h3>
 <table>
 <thead>
 <tr>
-<th>Condition</th>
-<th>Path</th>
-<th>Endpoint</th>
+<th>条件</th>
+<th>路径</th>
+<th>端点</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>apiKey</code> / <code>EXA_API_KEY</code> set</td>
-<td>REST <code>POST /search</code> with <code>Authorization: Bearer</code></td>
-<td><code>https://api.exa.ai/search</code> (configurable)</td>
+<td>配置了 <code>apiKey</code> / <code>EXA_API_KEY</code></td>
+<td>REST <code>POST /search</code>，<code>Authorization: Bearer</code></td>
+<td><code>https://api.exa.ai/search</code>（可配置）</td>
 </tr>
 <tr>
-<td>No key configured</td>
-<td>Anonymous MCP <code>tools/call web_search_exa</code> (JSON-RPC 2.0, no credentials)</td>
-<td><code>https://mcp.exa.ai/mcp</code> (configurable)</td>
+<td>未配置任何 key</td>
+<td>匿名 MCP <code>tools/call web_search_exa</code>（JSON-RPC 2.0，无凭据）</td>
+<td><code>https://mcp.exa.ai/mcp</code>（可配置）</td>
 </tr>
 </tbody></table>
-<p>The anonymous MCP path sends no credentials; attribution rides the
-<code>x-exa-source: dsh-anything</code> header. Results are normalized to the seam&#39;s
-<code>WebSearchSource</code> shape (<code>url</code>, <code>title</code>, <code>snippet</code>, <code>publishedAt</code>) and the seam
-enforces <code>maxResults</code> on the way back. Anonymous usage is rate-limited by Exa:
-an HTTP 429 surfaces as a <code>WEB_PROVIDER_ERROR</code> with a hint to configure an API
-key (which also switches to the REST path automatically).</p>
-<h3>Installation (into a dsh profile)</h3>
-<p><strong>One command from npm</strong> (v0.1.3+ ships the <code>dsh.bundle</code> manifest — the bundle
-patch inserts the provider row, so no manual patch editing is needed):</p>
+<p>匿名 MCP 路径不发送任何凭据，来源标识通过 <code>x-exa-source: dsh-anything</code> 头携带。结果按 seam 的 <code>WebSearchSource</code> 形状规范化（<code>url</code>、<code>title</code>、<code>snippet</code>、<code>publishedAt</code>），<code>maxResults</code> 由 seam 在返回路径上强制执行。匿名使用受 Exa 限流：HTTP 429 会以 <code>WEB_PROVIDER_ERROR</code> 呈现，并提示配置 API key（配置后自动切换到 REST 路径）。</p>
+<h3>安装（装入 dsh profile）</h3>
+<p><strong>一条命令从 npm 安装</strong>（v0.1.3+ 自带 <code>dsh.bundle</code> manifest——bundle patch 会自动插入 provider 行，无需手动改 patch）：</p>
 <pre><code class="language-powershell">dsh plugin --profile web add @tonydua/dsh-web-search-exa
 </code></pre>
-<p>Restart <code>dsh web</code>. <strong>Without an API key</strong> the official DeepSeek search
-provider is unavailable, so the seam auto-selects this provider — fully
-zero-config. <strong>With a key configured</strong>, select Exa explicitly in your own
-<code>$DSH_HOME/profiles/web/cordis.patch.yml</code> (applied after bundle patches):</p>
+<p>重启 <code>dsh web</code> 生效。<strong>无 API key 时</strong>官方 DeepSeek 搜索提供方不可用，seam 会自动选中本插件——完全零配置。<strong>配了 key 时</strong>，需在你的 <code>$DSH_HOME/profiles/web/cordis.patch.yml</code>（在 bundle patch 之后应用）里显式选中 Exa：</p>
 <pre><code class="language-yaml">- id: web
   name: &#39;@deepseek-ai/dsh-web&#39;
   config:
     searchProvider: exa
 </code></pre>
-<p>…or at runtime with the environment variable <code>$DSH_WEB_SEARCH_PROVIDER=exa</code>.</p>
-<p><strong>Local development checkout:</strong></p>
+<p>…或用环境变量 <code>$DSH_WEB_SEARCH_PROVIDER=exa</code> 在运行时选中。</p>
+<p><strong>本地开发目录：</strong></p>
 <pre><code class="language-powershell">dsh plugin --profile web add ../plugins/dsh-web-search-exa
 </code></pre>
-<p>Then enable the provider and select it. Either merge into
-<code>$DSH_HOME/profiles/web/cordis.patch.yml</code> (persistent):</p>
+<p>然后启用并选中该提供方。合并进 <code>$DSH_HOME/profiles/web/cordis.patch.yml</code>（持久生效）：</p>
 <pre><code class="language-yaml">- id: web-search-exa
   name: &#39;@tonydua/dsh-web-search-exa&#39;
   config:
@@ -334,84 +309,67 @@ zero-config. <strong>With a key configured</strong>, select Exa explicitly in yo
   config:
     searchProvider: exa
 </code></pre>
-<p>Alternatively, select the provider at runtime with the environment variable
-<code>$DSH_WEB_SEARCH_PROVIDER=exa</code> (no config edit needed).</p>
-<p>Restart <code>dsh web</code> for changes to take effect. The existing model-facing
-<code>web_search</code> tool then routes through this provider — no tool config changes.</p>
-<h4>Runtime singleton compatibility</h4>
-<p><code>@deepseek-ai/dsh-tools</code> is a dsh runtime singleton and must resolve to one
-physical package instance in a profile. This provider does not depend on it;
-the requirement belongs to the host profile. If another third-party plugin
-installs <code>@deepseek-ai/dsh-tools</code> as a nested regular dependency instead of a
-peer dependency, fix that plugin&#39;s dependency declaration or make the profile
-package manager resolve the shared instance before debugging search errors.
-Otherwise dsh&#39;s agent loop can fail before the provider is called with an
-error such as <code>Cannot read properties of undefined (reading &#39;prepare&#39;)</code>.</p>
-<h3>Configuration</h3>
+<p>也可以不修改配置，直接用环境变量 <code>$DSH_WEB_SEARCH_PROVIDER=exa</code> 在运行时选中该提供方。</p>
+<p>重启 <code>dsh web</code> 生效。模型侧的 <code>web_search</code> 工具随即走该提供方，无需改任何工具配置。</p>
+<h4>运行时单例兼容性</h4>
+<p><code>@deepseek-ai/dsh-tools</code> 是 dsh 的运行时单例包，一个 profile 中必须解析到同一份物理包实例。本插件本身不依赖它；这是宿主 profile 的依赖约束。如果 profile 中的其他第三方插件把 <code>@deepseek-ai/dsh-tools</code> 错误声明成普通嵌套依赖，而不是 peer dependency，应先修正该插件的依赖声明，或让 profile 的包管理器统一解析到共享实例，再排查搜索错误。否则 dsh agent loop 可能在 provider 被调用前就因 <code>Cannot read properties of undefined (reading &#39;prepare&#39;)</code> 失败。</p>
+<h3>配置</h3>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>配置键</th>
+<th>默认值</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>providerId</code></td>
 <td><code>exa</code></td>
-<td>Provider id registered into <code>ctx.web</code>. Only change it when both this and the official package are installed (see next section).</td>
+<td>注册进 <code>ctx.web</code> 的提供方 id。仅当本包与官方包同时安装时才需要改（见下一节）。</td>
 </tr>
 <tr>
 <td><code>apiKey</code></td>
-<td>unset</td>
-<td>Literal Exa API key. Empty/missing enables the anonymous MCP path.</td>
+<td>未设置</td>
+<td>Exa API 密钥字面值。为空/缺失时启用匿名 MCP 路径。</td>
 </tr>
 <tr>
 <td><code>apiKeyEnv</code></td>
 <td><code>EXA_API_KEY</code></td>
-<td>Environment variable consulted when no literal <code>apiKey</code> is set.</td>
+<td>未设置字面 <code>apiKey</code> 时读取的环境变量名。</td>
 </tr>
 <tr>
 <td><code>apiURL</code></td>
 <td><code>https://api.exa.ai/search</code></td>
-<td>REST search endpoint (keyed path only).</td>
+<td>REST 搜索端点（仅带 key 的路径使用）。</td>
 </tr>
 <tr>
 <td><code>mcpURL</code></td>
 <td><code>https://mcp.exa.ai/mcp</code></td>
-<td>Exa hosted MCP endpoint (anonymous path).</td>
+<td>Exa 托管 MCP 端点（匿名路径使用）。</td>
 </tr>
 <tr>
 <td><code>searchType</code></td>
 <td><code>auto</code></td>
-<td>REST retrieval mode: <code>auto</code> / <code>keyword</code> / <code>neural</code>.</td>
+<td>REST 检索模式：<code>auto</code> / <code>keyword</code> / <code>neural</code>。</td>
 </tr>
 <tr>
 <td><code>numResults</code></td>
-<td>unset</td>
-<td>Default result count when the request carries no <code>maxResults</code>.</td>
+<td>未设置</td>
+<td>请求未携带 <code>maxResults</code> 时的默认结果数。</td>
 </tr>
 <tr>
 <td><code>highlightsPerResult</code></td>
 <td><code>1</code></td>
-<td>Highlight sentences requested per result on the REST path.</td>
+<td>REST 路径每个结果请求的 highlight 句子数。</td>
 </tr>
 </tbody></table>
-<h3>Coexistence with the official package</h3>
-<p>Both packages register their provider under the <strong>same default provider id
-(<code>exa</code>)</strong> and the same cordis plugin name (<code>web-search-exa</code>). The seam rejects
-duplicate ids with <code>WEB_DUPLICATE_PROVIDER</code>, so <strong>installing both into one
-profile without changes breaks at startup</strong>.</p>
-<p>There is <strong>no silent override</strong> — coexistence is explicit, via the <code>providerId</code>
-switch:</p>
+<h3>与官方包共存</h3>
+<p>两个包默认在 <code>ctx.web</code> 下注册<strong>相同的 provider id（<code>exa</code>）</strong>，cordis 插件名也都是 <code>web-search-exa</code>。seam 会拒绝重复 id（<code>WEB_DUPLICATE_PROVIDER</code>），所以<strong>不改配置就把两个包装进同一个 profile 会在启动时报错</strong>。</p>
+<p><strong>没有黑箱覆盖</strong>——共存必须显式配置，通过 <code>providerId</code> 开关完成：</p>
 <ol>
-<li>Keep the official package on <code>exa</code> (its id is fixed).</li>
-<li>Give this package a distinct id — set <code>providerId: exa-anon</code> (any unique
-string) in this plugin&#39;s <code>config</code>.</li>
-<li>Select the anonymous variant explicitly with
-<code>searchProvider: exa-anon</code> on the <code>web</code> seam (or
-<code>$DSH_WEB_SEARCH_PROVIDER=exa-anon</code>), and keep
-<code>searchProvider: exa</code> → the official one if you want it selectable too.</li>
+<li>官方包保持 <code>exa</code>（它的 id 固定）。</li>
+<li>给本包一个不同 id——在本插件 <code>config</code> 里设 <code>providerId: exa-anon</code>（任意唯一字符串）。</li>
+<li>在 <code>web</code> seam 上显式选中匿名变体：<code>searchProvider: exa-anon</code>（或用环境变量 <code>$DSH_WEB_SEARCH_PROVIDER=exa-anon</code>）；若还想用官方包，再配 <code>searchProvider: exa</code> 切换。</li>
 </ol>
 <pre><code class="language-yaml">- insert:
     - id: web-search-exa
@@ -423,71 +381,35 @@ string) in this plugin&#39;s <code>config</code>.</li>
   config:
     searchProvider: exa-anon
 </code></pre>
-<p>Simplest alternative: install only one of the two packages per profile — the
-defaults then work as-is.</p>
-<h3>In the Web panel</h3>
-<p><strong>Status: configuration is done in the profile patch layer, not the Web UI —
-this version ships no editable UI entry.</strong> The Settings UI only renders cards
-that are hand-registered by client plugins for fixed namespaces (<code>shell</code>,
-<code>agent-loop</code>, <code>web-search-deepseek</code>); it has no generic form for arbitrary
-plugin namespaces. What is true today:</p>
+<p>最简单的替代方案：每个 profile 只装其中一个包，默认配置即可直接使用。</p>
+<h3>在 Web 面板中的呈现</h3>
+<p><strong>状态：本版本的配置入口在 profile 补丁层，不在 Web UI —— 没有可编辑的界面入口。</strong> Settings UI 只渲染客户端插件为固定命名空间（<code>shell</code>、<code>agent-loop</code>、<code>web-search-deepseek</code>）手工注册的卡片，对任意插件命名空间没有通用表单。当前实际情况：</p>
 <ul>
-<li><strong>Plugin inventory</strong> (Settings → Plugins): the entry appears automatically
-as <code>web-search-exa</code> (<code>@tonydua/dsh-web-search-exa</code>) once enabled — the
-inventory reads the live Cordis loader, no extra code needed.</li>
-<li><strong>Settings namespace</strong> (server-side): the plugin registers the
-<code>web-search-exa</code> section via <code>installSettingsSection</code>, so the data layer is
-writable — but <strong>no client card binds to it</strong>, so nothing shows in the UI.
-The built-in &quot;Web search&quot; card edits the official
-<code>web-search-deepseek</code> namespace, not this plugin.</li>
-<li><strong>Changing configuration today</strong>: edit the plugin&#39;s <code>config</code> in
-<code>$DSH_HOME/profiles/web/cordis.patch.yml</code> (fields and defaults in the table
-above) and restart <code>dsh web</code>; or set <code>EXA_API_KEY</code> / <code>$DSH_WEB_SEARCH_PROVIDER</code>
-as environment variables. The <code>apiKey</code> field is <code>role(&#39;secret&#39;)</code>: it never
-appears in <code>describe()</code> responses.</li>
-<li><strong>Search result cards</strong>: <code>web_search</code> calls render the usual <code>web</code> cards
-(sources, snippets, dates) through <code>dsh-tool-web</code>, independent of the
-provider — anonymous Exa results display exactly like DeepSeek ones.</li>
+<li><strong>插件清单</strong>（Settings → Plugins）：启用后自动出现 <code>web-search-exa</code>（<code>@tonydua/dsh-web-search-exa</code>）条目 —— 清单直接读取 Cordis loader 的实时条目，无需额外代码。</li>
+<li><strong>设置命名空间</strong>（服务端）：插件通过 <code>installSettingsSection</code> 注册了 <code>web-search-exa</code> 段，数据层可写——但<strong>没有任何客户端卡片绑定它</strong>，所以界面上不显示。内置的 &quot;Web search&quot; 卡片编辑的是官方 <code>web-search-deepseek</code> 命名空间，与本插件无关。</li>
+<li><strong>现在怎么改配置</strong>：编辑 <code>$DSH_HOME/profiles/web/cordis.patch.yml</code> 里本插件的 <code>config</code>（字段与默认值见上方配置表），重启 <code>dsh web</code>；或用环境变量 <code>EXA_API_KEY</code> / <code>$DSH_WEB_SEARCH_PROVIDER</code>。<code>apiKey</code> 标记了 <code>role(&#39;secret&#39;)</code>，任何 <code>describe()</code> 响应都不会暴露其值。</li>
+<li><strong>搜索结果卡片</strong>：<code>web_search</code> 调用经 <code>dsh-tool-web</code> 照常渲染 <code>web</code> 结果卡片（来源、摘要、日期），与提供方无关 —— 匿名 Exa 的结果与 DeepSeek 搜索显示完全一致。</li>
 </ul>
-<p><strong>Roadmap (next version)</strong>: a client-side card registered into the
-<code>settings.plugin.item</code> slot bound to the <code>web-search-exa</code> namespace, so all
-fields above become editable live in Settings → Plugins (mirroring how the
-official cards work).</p>
-<h3>FAQ</h3>
-<p><strong>Q: Do I need an Exa API key?</strong>
-No. Without a key the provider uses Exa&#39;s free anonymous hosted MCP. With a key
-it uses the REST API for higher limits.</p>
-<p><strong>Q: I got HTTP 429 / rate limited.</strong>
-That&#39;s Exa&#39;s anonymous-MCP rate limit. Configure <code>EXA_API_KEY</code> (or the
-<code>apiKey</code> field) and the provider switches to the REST path automatically.</p>
-<p><strong>Q: Can I run this alongside the official Exa provider?</strong>
-Yes — give this package a distinct <code>providerId</code> and select it explicitly
-(see <a href="#coexistence-with-the-official-package">Coexistence</a>).</p>
-<p><strong>Q: Why don&#39;t I see a settings entry in the Web UI?</strong>
-This version registers the <code>web-search-exa</code> settings namespace server-side
-only; a UI card is planned for the next version. Configure through
-<code>cordis.patch.yml</code> or environment variables for now (see
-<a href="#in-the-web-panel">In the Web panel</a>).</p>
-<h3>Acknowledgements</h3>
-<p>The anonymous MCP integration follows the <code>web_search</code> implementation in
-<a href="https://github.com/can1357/oh-my-pi">can1357/oh-my-pi</a> (<code>packages/coding-agent/src/web/search/providers/exa.ts</code>
-and <code>src/exa/mcp-client.ts</code>) and the
-<a href="https://www.npmjs.com/package/@oh-my-pi/exa"><code>@oh-my-pi/exa</code></a> plugin: same
-&quot;REST when a key exists, credential-free <code>mcp.exa.ai/mcp</code> otherwise&quot; strategy,
-same <code>x-exa-source</code> attribution header, same <code>Title:</code>-section response parsing.
-Thanks to the oh-my-pi (omp) project for pioneering the zero-config Exa
-integration.</p>
-<p>Thanks also to <strong><a href="https://exa.ai">Exa</a></strong> for providing and operating the
-<strong>free, unauthenticated hosted MCP server</strong> (<code>mcp.exa.ai/mcp</code>) that makes this
-package&#39;s zero-config default possible. Exa&#39;s hosted MCP is an official Exa
-product; anonymous usage is rate-limited (see FAQ).</p>
-<h3>Changelog</h3>
-<p>See <a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/CHANGELOG.md">CHANGELOG.md</a> for all notable changes.</p>
-<h3>License</h3>
-<p>MIT — see <a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/LICENSE">LICENSE</a>.</p>
+<p><strong>路线图（下一版本）</strong>：新增注册到 <code>settings.plugin.item</code> slot 的客户端卡片，绑定 <code>web-search-exa</code> 命名空间，让上表所有字段可以在 Settings → Plugins 里实时编辑（与官方卡片同机制）。</p>
+<h3>常见问题（FAQ）</h3>
+<p><strong>Q: 需要 Exa API key 吗？</strong>
+不需要。无 key 时走 Exa 免费匿名托管 MCP；配 key 后走 REST API 获得更高额度。</p>
+<p><strong>Q: 遇到 HTTP 429 / 限流怎么办？</strong>
+这是 Exa 匿名 MCP 的限流。配置 <code>EXA_API_KEY</code>（或 <code>apiKey</code> 字段），提供方会自动切到 REST 路径。</p>
+<p><strong>Q: 能和官方 Exa 提供方一起装吗？</strong>
+可以——给本包一个不同的 <code>providerId</code> 并显式选中即可（见<a href="#%E4%B8%8E%E5%AE%98%E6%96%B9%E5%8C%85%E5%85%B1%E5%AD%98">与官方包共存</a>）。</p>
+<p><strong>Q: 为什么 Web UI 里没有设置入口？</strong>
+本版本只在服务端注册了 <code>web-search-exa</code> 设置命名空间；UI 卡片计划在下一版本提供。现阶段通过 <code>cordis.patch.yml</code> 或环境变量配置（见<a href="#%E5%9C%A8-web-%E9%9D%A2%E6%9D%BF%E4%B8%AD%E7%9A%84%E5%91%88%E7%8E%B0">在 Web 面板中的呈现</a>）。</p>
+<h3>致谢（Acknowledgements）</h3>
+<p>匿名 MCP 接入方式参考了 <a href="https://github.com/can1357/oh-my-pi">can1357/oh-my-pi</a> 的 <code>web_search</code> 实现（<code>packages/coding-agent/src/web/search/providers/exa.ts</code> 与 <code>src/exa/mcp-client.ts</code>）以及 <a href="https://www.npmjs.com/package/@oh-my-pi/exa"><code>@oh-my-pi/exa</code></a> 插件：同样的&quot;有 key 走 REST、无 key 走免凭据 <code>mcp.exa.ai/mcp</code>&quot;策略、同样的 <code>x-exa-source</code> 来源头、同样的 <code>Title:</code> 分节响应解析。感谢 oh-my-pi（omp）项目率先打通了零配置的 Exa 接入。</p>
+<p>同时感谢 <strong><a href="https://exa.ai">Exa</a></strong> 提供并运营这个<strong>免费、免认证的托管 MCP 服务器</strong>（<code>mcp.exa.ai/mcp</code>）——正是它让本包的零配置默认路径成为可能。Exa 托管 MCP 是 Exa 的官方产品；匿名使用有限流（见 FAQ）。</p>
+<h3>更新日志（Changelog）</h3>
+<p>所有变更见 <a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/CHANGELOG.md">CHANGELOG.md</a>。</p>
+<h3>许可证</h3>
+<p>MIT —— 见 <a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/LICENSE">LICENSE</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/TonyDua/dsh-web-search-exa/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

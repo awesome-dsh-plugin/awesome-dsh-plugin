@@ -193,227 +193,224 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <hr>
-<h3>What It Does</h3>
-<p>For <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (<code>dsh web</code>): whenever a request in the web GUI gets interrupted by a <strong>non-human cause</strong>, the plugin simulates the user typing <strong>「继续」</strong> and sends it, so the agent keeps working without manual intervention. The message enters the session log exactly like a manual prompt — the model sees it, and the interrupted work resumes.</p>
-<p><img src="https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/main/docs/demo.svg" alt="demo"></p>
-<p><strong>Smart recovery</strong> (all configurable):</p>
+<h3>它做什么</h3>
+<p>适用于 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>(<code>dsh web</code>): 当 webui 里的请求因为<strong>非人为因素</strong>中断时, 插件模拟用户输入 <strong>「继续」</strong> 并自动发送, 让 Agent 继续干活, 无需手动干预。消息与手动输入完全等价——进入会话日志、对模型可见, 中断的任务随即恢复。</p>
+<p><img src="https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/main/docs/demo-zh.svg" alt="demo"></p>
+<p><strong>智能恢复</strong>(全部可配置):</p>
 <ul>
-<li><strong>Error classification</strong> — transient failures (network / timeout / 5xx / 429…) are auto-resumed; permanent ones are <strong>skipped</strong> and notified, because retrying them never helps. A failure counts as permanent when its HTTP status is 401/403 or its code/message matches auth, credential/API-key, balance/quota, unknown-model, or context-length/overflow keywords. Turn classification off to resume everything</li>
-<li><strong>Adaptive backoff</strong> — consecutive failures wait longer each time (cooldown × factor: 20s → 40s → 80s…), capped at the max backoff, instead of hammering a broken upstream</li>
-<li><strong>Templated continue text</strong> — <code>continueText</code> supports <code>{code}</code> <code>{message}</code> <code>{status}</code> <code>{tool}</code> <code>{turn}</code> placeholders, so the resume message can carry the failure context (&quot;继续 (git push failed: UPSTREAM)&quot;)</li>
-<li><strong>Browser notifications</strong> — optional alerts when auto-continue fires, gives up, or hits a permanent error; the browser asks for permission on first use, and nothing is shown again after a denial</li>
+<li><strong>错误分类</strong> — 临时性错误(网络 / 超时 / 5xx / 429 等)自动续跑; 永久性错误跳过并通知, 因为重试也没用。判定为永久性的条件: HTTP 状态码 401/403, 或 code/message 命中认证、凭据/API Key、余额/配额、模型不存在、上下文长度/超限等关键词。关闭分类后则全部自动继续</li>
+<li><strong>自适应退避</strong> — 连续失败时等待时间递增(冷却 × 系数: 20s → 40s → 80s…), 有上限, 不再对故障上游狂轰滥炸</li>
+<li><strong>模板化继续文本</strong> — <code>continueText</code> 支持 <code>{code}</code> <code>{message}</code> <code>{status}</code> <code>{tool}</code> <code>{turn}</code> 占位符, 续跑消息可携带失败上下文(如「继续 (git push 失败: UPSTREAM)」)</li>
+<li><strong>浏览器通知</strong> — 可选: 自动继续成功 / 放弃 / 遇到永久性错误时弹出提醒; 首次使用时请求权限, 被拒绝后不再打扰</li>
 </ul>
-<p>It watches the live event streams and reacts to:</p>
+<p>插件监听实时事件流, 对以下情况作出反应:</p>
 <table>
 <thead>
 <tr>
-<th>Event</th>
-<th>Meaning</th>
+<th>事件</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>turn/end</code> → <code>error</code></td>
-<td>Turn failed (model / network / timeout, …)</td>
+<td>回合失败(模型 / 网络 / 超时等)</td>
 </tr>
 <tr>
 <td><code>turn/end</code> → <code>interrupted</code></td>
-<td>Crash-orphaned turn left behind by a host restart</td>
+<td>宿主崩溃重启后遗留的中断回合</td>
 </tr>
 <tr>
 <td><code>turn/end</code> → <code>max-tokens</code></td>
-<td>Output token ceiling reached</td>
+<td>达到输出 token 上限</td>
 </tr>
 <tr>
 <td><code>host/agent-error</code></td>
-<td>Agent failure with no turn position</td>
+<td>无回合位置的 Agent 失败</td>
 </tr>
 </tbody></table>
-<p><strong>Never auto-continues:</strong> user-aborted turns (<code>aborted</code>) or policy rejections (<code>blocked</code>); sessions the host already resumed itself; running sessions or sessions with queued messages; subagent sessions; anything inside the cooldown / consecutive-cap windows (configurable in the settings card, below).</p>
+<p><strong>绝不自动继续:</strong> 用户主动停止(<code>aborted</code>)或策略拒绝(<code>blocked</code>); 宿主已自行恢复的会话; 正在运行或已有排队消息的会话; 子代理会话; 处于冷却期 / 连续次数上限内的会话(可在设置卡片中调整, 见下)。</p>
 <hr>
-<h3>How It Works</h3>
-<p>The plugin opens two extra SSE streams in the browser — <code>events.mux</code> (session events) and <code>events.host</code> (host events). The host supports multiple consumers, so this never interferes with the built-in runtime. On an interruption it waits a <strong>grace period</strong> (default 3 s) — if the host starts a new turn by itself (<code>turn/start</code>), the auto-continue is cancelled — then calls <code>sessions.prompt</code> in <code>queue</code> mode with the configured text.</p>
-<p>On page load / reconnect it also scans the most recently updated sessions: a session whose last turn ended with a non-human reason <strong>within the scan window</strong> (default 15 minutes), with no later <code>turn/start</code> or user message, gets resumed automatically too (e.g. the host crashed while the browser was closed).</p>
-<p>With the page open in several tabs, a localStorage mutex plus a shared per-session cooldown stamp guarantee exactly one tab sends — no duplicated 「继续」.</p>
-<p>All knobs live in the plugin&#39;s settings card — see <a href="#configuration">Configuration</a>.</p>
+<h3>工作原理</h3>
+<p>插件在浏览器里额外打开两条 SSE 流——<code>events.mux</code>(会话事件)与 <code>events.host</code>(宿主事件)。宿主支持多消费者, 与内置运行时互不干扰。检测到中断后先等待一个<strong>宽限期</strong>(默认 3 秒)——若宿主自行开启了新回合(<code>turn/start</code>), 自动继续即取消——然后以 <code>queue</code> 模式调用 <code>sessions.prompt</code> 发送配置的文本。</p>
+<p>页面启动 / 重连时, 插件还会扫描最近更新的会话: 若某个会话的最后一个回合在<strong>扫描时间窗</strong>(默认 15 分钟)内以非人为原因结束, 且之后没有新的 <code>turn/start</code> 或用户消息, 也会被自动续跑(例如浏览器关闭期间宿主崩溃的情况)。</p>
+<p>多个标签页同时打开时, 通过 localStorage 互斥锁 + 共享的每会话冷却记录保证<strong>只有一个标签页发送</strong>——不会重复出现两条「继续」。</p>
+<p>所有参数都在插件的设置卡片中调整——见 <a href="#%E9%85%8D%E7%BD%AE">配置</a>。</p>
 <hr>
-<h3>Quick Start</h3>
-<p>DSH plugins install into a <strong>profile</strong> (<code>dsh web</code> → <code>web</code> profile). Install, restart <code>dsh web</code>, done.</p>
-<h4>From npm (recommended)</h4>
-<p>Published as <a href="https://www.npmjs.com/package/dsh-client-auto-continue"><code>dsh-client-auto-continue</code></a>:</p>
+<h3>快速开始</h3>
+<p>DSH 插件安装进 <strong>profile</strong>(<code>dsh web</code> 对应 <code>web</code> profile)。安装后重启 <code>dsh web</code> 即可。</p>
+<h4>从 npm 安装(推荐)</h4>
+<p>已发布为 <a href="https://www.npmjs.com/package/dsh-client-auto-continue"><code>dsh-client-auto-continue</code></a>:</p>
 <pre><code class="language-bash">dsh plugin --profile web add dsh-client-auto-continue
 dsh web
 </code></pre>
-<h4>Directly from GitHub (no clone needed)</h4>
-<p>Installs straight from the repository&#39;s default branch — built artifacts are committed, so no local clone or build step:</p>
+<h4>直接从 GitHub 安装(无需克隆)</h4>
+<p>直接从仓库默认分支安装——构建产物已提交入库, 无需本地克隆或构建:</p>
 <pre><code class="language-bash">dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue
 dsh web
 </code></pre>
 <blockquote>
-<p>This tracks the <code>main</code> branch rather than released tags — great for trying the latest changes, while the npm method above is the stable choice. Switching between install sources is just re-running <code>dsh plugin --profile web add &lt;other-spec&gt;</code>; the profile dependency is replaced in place.</p>
+<p>该方式跟踪 <code>main</code> 分支而不是发布 tag——适合尝鲜最新改动, 稳定性首选上面的 npm 方式。切换安装来源只需重新执行 <code>dsh plugin --profile web add &lt;其他来源&gt;</code>, profile 依赖会被就地替换。</p>
 </blockquote>
-<h4>From this repository</h4>
-<p>Requires Node.js ≥ 18.</p>
+<h4>从本仓库安装</h4>
+<p>需要 Node.js ≥ 18。</p>
 <pre><code class="language-bash">git clone https://github.com/HsiangNianian/dsh-auto-continue.git
 cd dsh-auto-continue
 npm install
 npm run build
 
-# the package carries its own cordis.patch.yml (dsh.bundle.patch),
-# so the plugin row registers itself
+# 包自带 cordis.patch.yml(通过 dsh.bundle.patch 声明),
+# 插件行会自动注册
 dsh plugin --profile web add link:$(pwd)
 
 dsh web
 </code></pre>
-<h4>Manual (no pnpm / dsh plugin needed)</h4>
+<h4>手动安装(无需 pnpm / dsh plugin)</h4>
 <pre><code class="language-bash">ln -sfn &quot;$(pwd)&quot; ~/.dsh/profiles/node_modules/dsh-client-auto-continue
-# then append to ~/.dsh/profiles/web/cordis.patch.yml:
+# 然后在 ~/.dsh/profiles/web/cordis.patch.yml 追加:
 #   - insert:
 #       - id: auto-continue
 #         name: &#39;dsh-client-auto-continue&#39;
 dsh web
 </code></pre>
 <blockquote>
-<p>Switching from a manual install to <code>dsh plugin add</code>? Remove the manual <code>insert</code> entry first — the bundle patch registers the row and a duplicate would conflict.</p>
+<p>从手动安装切换到 <code>dsh plugin add</code> 时, 请先删掉手动加的 <code>insert</code> 条目——包自带的 bundle patch 会注册插件行, 重复注册会冲突。</p>
 </blockquote>
 <blockquote>
-<p><strong>Known DSH limitation (0.1.0-rc.6):</strong> the web plugin-configuration section only
-exposes settings namespaces on a hardcoded allowlist in the installed
-<code>@deepseek-ai/dsh-host-apiproxy</code> bundle. Until upstream moves exposure into
-<code>settings.register()</code>, one idempotent vendor patch is required for the
-settings card to appear (re-run it after reinstalling dsh):</p>
+<p><strong>已知 DSH 限制(0.1.0-rc.6):</strong> webui 的插件配置区只暴露已安装
+<code>@deepseek-ai/dsh-host-apiproxy</code> 包中硬编码白名单里的设置命名空间。在官方把暴露
+逻辑移入 <code>settings.register()</code> 之前, 要让设置卡片显示出来, 需要执行一次幂等的
+供应商补丁(重新安装 dsh 后重跑一次即可):</p>
 <pre><code class="language-sh">node node_modules/dsh-client-auto-continue/scripts/patch-expose.mjs
 dsh web
 </code></pre>
-<p>The patch script ships inside the npm package (no repo clone needed) and
-covers every reachable dsh installation: the profile-linked copy, a global
-<code>npm i -g @deepseek-ai/dsh</code> install, and the invoking directory&#39;s own. The
-auto-continue engine itself works without this patch — it only gates the
-GUI settings card.</p>
+<p>补丁脚本随 npm 包一起发布(无需克隆仓库), 并覆盖所有可达的 dsh 安装: profile
+链接副本、全局 <code>npm i -g @deepseek-ai/dsh</code> 安装、以及当前目录的安装。自动续跑
+引擎本身不依赖这个补丁——它只影响 GUI 设置卡片是否可见。</p>
 </blockquote>
-<h4>Verify &amp; uninstall</h4>
-<pre><code class="language-bash">dsh --profile web --dump-config | grep auto-continue   # config layer mounted
+<h4>验证与卸载</h4>
+<pre><code class="language-bash">dsh --profile web --dump-config | grep auto-continue   # 确认配置层已挂载
 </code></pre>
-<p>In the browser console (Ctrl/Cmd+Shift+I): <code>[auto-continue] 已启动(文本=&quot;继续&quot;, …)</code> — every detection and auto-send is logged.</p>
-<pre><code class="language-bash">dsh plugin --profile web remove dsh-client-auto-continue   # npm / repo install
-# or remove the symlink + the insert entry                  # manual install
+<p>浏览器控制台(Ctrl/Cmd+Shift+I)中应看到 <code>[auto-continue] 已启动(文本=&quot;继续&quot;, …)</code>; 每次检测到中断和自动发送都会打日志。</p>
+<pre><code class="language-bash">dsh plugin --profile web remove dsh-client-auto-continue   # npm / 仓库安装
+# 或删除软链 + insert 条目                                  # 手动安装
 dsh web
 </code></pre>
 <hr>
-<h3>Configuration</h3>
-<p>Everything is configurable from the GUI — no file or console edits needed. Open <strong>Settings → Plugin configuration</strong> and find the <strong>Auto continue</strong> card.</p>
-<p><strong>How the card works:</strong></p>
+<h3>配置</h3>
+<p>所有参数都可以在 GUI 里配置——无需改文件或控制台。打开 <strong>设置 → 插件配置</strong>, 找到 <strong>自动继续</strong> 卡片。</p>
+<p><strong>卡片操作说明:</strong></p>
 <ul>
-<li>Edits are <strong>staged</strong> — nothing reaches the disk until you hit <strong>Save</strong>; an unsaved badge marks the card while drafts are pending, and <strong>Discard</strong> drops them</li>
-<li>A field you changed shows an <strong>Overridden</strong> badge with a per-field <strong>Reset to default</strong> button that restores the built-in value</li>
-<li>Boolean fields are <strong>tri-state</strong>: <em>Inherit</em> (use the default) / <em>On</em> / <em>Off</em></li>
-<li>Invalid drafts (non-numbers, values below the minimum) block the save with a hint</li>
-<li>In a read-only deployment the card shows the stored values but disables every control</li>
-<li>Changes apply immediately after Save and persist in <code>~/.dsh/settings.yaml</code> (uninstalling the plugin leaves the section behind — harmless, delete it by hand if you like)</li>
+<li>修改是<strong>暂存式</strong>的——点「保存」之前不会写入磁盘; 有待保存草稿时卡片显示「未保存」徽章, 「放弃」可丢弃草稿</li>
+<li>改动过的字段会带「已覆盖」徽章, 并有逐字段的「恢复默认」按钮(回到内置默认值)</li>
+<li>布尔字段是三态:<strong>继承</strong>(用默认)/ 开 / 关</li>
+<li>非法输入(非数字、小于最小值)会阻止保存并给出提示</li>
+<li>只读部署中卡片只显示已存值, 所有控件禁用</li>
+<li>保存后立即生效, 持久化在 <code>~/.dsh/settings.yaml</code>(卸载插件会留下该段落, 无害, 想清理可手动删除)</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Description</th>
+<th>字段</th>
+<th>默认</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Continue text</td>
+<td>继续文本</td>
 <td><code>继续</code></td>
-<td>Text automatically sent after an interruption</td>
+<td>中断后自动发送的消息内容</td>
 </tr>
 <tr>
-<td>Grace period (ms)</td>
+<td>宽限期 (ms)</td>
 <td><code>3000</code></td>
-<td>Wait after an interruption; cancelled if the host recovers on its own</td>
+<td>中断后等待的时长; 期间宿主自行恢复则取消</td>
 </tr>
 <tr>
-<td>Cooldown (ms)</td>
+<td>冷却时间 (ms)</td>
 <td><code>20000</code></td>
-<td>Min interval between auto-continues per session (failed attempts count too)</td>
+<td>同一会话两次自动「继续」的最小间隔(失败尝试也计入)</td>
 </tr>
 <tr>
-<td>Max consecutive</td>
+<td>最大连续次数</td>
 <td><code>3</code></td>
-<td>Max consecutive auto-continues; stops until a user intervenes or a turn completes</td>
+<td>同一会话连续自动「继续」上限; 超过后停止, 直到用户介入或成功回合</td>
 </tr>
 <tr>
-<td>Scan on load / reconnect</td>
-<td><code>on</code></td>
-<td>Scan recently interrupted sessions on load / reconnect</td>
+<td>启动/重连扫描</td>
+<td>开</td>
+<td>页面启动 / 重连时扫描最近中断的会话</td>
 </tr>
 <tr>
-<td>Scan limit</td>
+<td>扫描会话数</td>
 <td><code>8</code></td>
-<td>Max sessions scanned (running / subagent sessions excluded)</td>
+<td>扫描最多检查的会话数(不含运行中 / 子代理会话)</td>
 </tr>
 <tr>
-<td>Scan window (ms)</td>
+<td>扫描时间窗 (ms)</td>
 <td><code>900000</code></td>
-<td>Scan only considers interruptions inside this window</td>
+<td>扫描只处理该时间窗内的中断</td>
 </tr>
 <tr>
-<td>Reconnect scan delay (ms)</td>
+<td>重连扫描延迟 (ms)</td>
 <td><code>5000</code></td>
-<td>Delay before scanning after a reconnect</td>
+<td>重连后等待宿主恢复再扫描</td>
 </tr>
 <tr>
-<td>Reconnect backoff (ms)</td>
+<td>重连退避 (ms)</td>
 <td><code>3000</code></td>
-<td>SSE reconnect backoff</td>
+<td>SSE 流断开后的重连间隔</td>
 </tr>
 <tr>
-<td>Verbose logs</td>
-<td><code>on</code></td>
-<td><code>[auto-continue]</code> console logs</td>
+<td>详细日志</td>
+<td>开</td>
+<td>控制台输出 <code>[auto-continue]</code> 日志</td>
 </tr>
 <tr>
-<td>Classify errors</td>
-<td><code>on</code></td>
-<td>Auto-resume transient failures only; auth / balance / model errors are skipped and notified</td>
+<td>错误分类</td>
+<td>开</td>
+<td>仅自动恢复临时性错误; 认证 / 余额 / 模型等永久性错误跳过并通知</td>
 </tr>
 <tr>
-<td>Backoff factor</td>
+<td>退避系数</td>
 <td><code>2</code></td>
-<td>Cooldown multiplier per consecutive failure (2 = 20s → 40s → 80s…)</td>
+<td>连续失败时冷却间隔的倍率(2 = 20s → 40s → 80s…)</td>
 </tr>
 <tr>
-<td>Max backoff (ms)</td>
+<td>最大退避间隔 (ms)</td>
 <td><code>300000</code></td>
-<td>Cap on the adaptive backoff interval</td>
+<td>自适应退避的上限</td>
 </tr>
 <tr>
-<td>Browser notifications</td>
-<td><code>off</code></td>
-<td>Notify when auto-continue fires, gives up, or hits a permanent error</td>
+<td>浏览器通知</td>
+<td>关</td>
+<td>自动继续成功 / 放弃 / 遇到永久性错误时弹通知</td>
 </tr>
 </tbody></table>
-<p><code>continueText</code> accepts the placeholders <code>{code}</code>, <code>{message}</code>, <code>{status}</code>, <code>{tool}</code> (last tool call before the failure) and <code>{turn}</code> — e.g. <code>继续 ({tool}: {code})</code> becomes <code>继续 (git push: UPSTREAM)</code>.</p>
+<p><code>continueText</code> 支持占位符 <code>{code}</code>、<code>{message}</code>、<code>{status}</code>、<code>{tool}</code>(失败前最后一次工具调用)和 <code>{turn}</code>——例如 <code>继续 ({tool}: {code})</code> 会变成 <code>继续 (git push: UPSTREAM)</code>。</p>
 <hr>
-<h3>Privacy &amp; permissions</h3>
-<p>The plugin is browser-only and touches <strong>no files, credentials, or network beyond the dsh host</strong>:</p>
+<h3>隐私与权限</h3>
+<p>插件是纯浏览器端, <strong>不触碰任何文件、凭据, 也不访问 dsh 宿主以外的网络</strong>:</p>
 <ul>
-<li>It opens the same two read-only event streams the web UI already uses (no extra server, no third-party endpoints)</li>
-<li>The only write it ever performs is <code>sessions.prompt</code> — the same call the Send button makes — with the text you configured</li>
-<li>Browser storage is limited to small <code>localStorage</code> keys for cross-tab coordination</li>
-<li>Browser notifications are opt-in (<code>notify</code> setting) and permission is requested on first use only</li>
+<li>只复用 webui 本身就在用的两条只读事件流(无额外服务、无第三方端点)</li>
+<li>唯一会执行的写入是 <code>sessions.prompt</code>——与点「发送」按钮完全相同的调用, 内容为你配置的文本</li>
+<li>浏览器存储仅限于少量 <code>localStorage</code> 键(跨标签页协调用)</li>
+<li>浏览器通知是可选开启的(<code>notify</code> 设置), 仅在首次使用时请求一次权限</li>
 </ul>
 <hr>
-<h3>Development</h3>
+<h3>开发</h3>
 <pre><code class="language-bash">npm run typecheck   # tsc --noEmit
 npm run build       # lib/client.js + lib/index.js + lib/types
-npm run watch       # rebuild on change; host HMR hot-reloads without a page refresh
-npm run test        # node tests/simulate.mjs — 12 behavioral scenarios
+npm run watch       # 监听变更自动重建; 宿主 HMR 免刷新热重载
+npm run test        # node tests/simulate.mjs — 12 个行为场景
 </code></pre>
-<p>While <code>npm run watch</code> runs, the profile&#39;s client-hmr row polls <code>lib/client.js</code> every 500 ms and hot-reloads the plugin in the browser — no server restart needed for code changes.</p>
+<p><code>npm run watch</code> 运行时, profile 的 client-hmr 行每 500ms 轮询 <code>lib/client.js</code> 并在浏览器中热重载插件——改代码无需重启服务。</p>
 <hr>
-<h3>Activity</h3>
+<h3>活跃度</h3>
 <p><a href="https://gitstock.org/HsiangNianian/dsh-auto-continue"><img src="https://gitstock.org/HsiangNianian/dsh-auto-continue/stock.svg" alt="HsiangNianian/dsh-auto-continue GitStock K-Line Chart"></a></p>
 <hr>
-<h3>Links</h3>
+<h3>链接</h3>
 <ul>
-<li><strong>Repository</strong>: <a href="https://github.com/HsiangNianian/dsh-auto-continue">github.com/HsiangNianian/dsh-auto-continue</a></li>
+<li><strong>仓库</strong>: <a href="https://github.com/HsiangNianian/dsh-auto-continue">github.com/HsiangNianian/dsh-auto-continue</a></li>
 <li><strong>DeepSeek Harness</strong>: <a href="https://github.com/deepseek-ai/deepseek-harness">github.com/deepseek-ai/deepseek-harness</a></li>
 </ul>
 <hr>
@@ -422,7 +419,7 @@ npm run test        # node tests/simulate.mjs — 12 behavioral scenarios
 <p>MIT © Hsiang Nianian</p>
 
     </div>
-    <p class="note"><a href="https://github.com/HsiangNianian/dsh-auto-continue/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/HsiangNianian/dsh-auto-continue/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

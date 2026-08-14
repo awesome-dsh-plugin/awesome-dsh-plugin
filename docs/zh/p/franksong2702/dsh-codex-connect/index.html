@@ -193,40 +193,40 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://www.npmjs.com/package/dsh-codex-connect"><img src="https://img.shields.io/npm/v/dsh-codex-connect?label=npm&color=cb3837" alt="npm version"></a></p>
-<p>English | <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/README.zh.md">中文</a></p>
-<p>Connect your ChatGPT subscription to DeepSeek Harness with OAuth, user-controlled defaults, Harness-native approvals, diagnostics, and reliable session recovery.</p>
-<p><code>dsh-codex-connect</code> adds the <code>openai-codex</code> model catalog and a separate ChatGPT OAuth login. Models run through Harness&#39;s normal LLM service, so streaming, tool calls, reasoning replay, compaction, filesystem controls, permission gates, and approval prompts remain Harness-owned. It does not turn a ChatGPT subscription into an OpenAI Platform API credential.</p>
-<p>Installation is additive. The bundle does not replace the current default model or search route, and its standalone search provider and <code>view_image</code> tool are disabled until explicitly enabled.</p>
-<h3>See it in Harness</h3>
-<p>Sign in and manage the plugin from <strong>Settings → Plugins → Plugin configuration → Codex Connect</strong>.</p>
-<p>Optional Codex search and <code>view_image</code> capabilities remain explicit, profile-scoped choices:</p>
-<p>Codex models then appear in Harness&#39;s normal model picker alongside the existing providers:</p>
-<h3>Install</h3>
+<p><a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/../README.md">English</a> | 中文</p>
+<p>通过 OAuth 将你的 ChatGPT 订阅连接到 DeepSeek Harness，同时保留用户自主默认项、Harness 原生审批、非敏感诊断和可靠的会话恢复。</p>
+<p><code>dsh-codex-connect</code> 提供 <code>openai-codex</code> 模型目录和独立的 ChatGPT OAuth 登录。模型仍走 Harness 标准 LLM 服务，因此流式输出、工具调用、reasoning replay、压缩、文件系统控制、权限门禁和审批提示仍由 Harness 负责。ChatGPT 订阅不会因此变成 OpenAI Platform API 凭据。</p>
+<p>安装是增量的：bundle 不会替换当前主模型或搜索路由；独立搜索提供方和 <code>view_image</code> 工具也默认关闭，必须显式开启。</p>
+<h3>在 Harness 中的样子</h3>
+<p>在 <strong>设置 → 插件 → 插件配置 → Codex Connect</strong> 中登录并管理插件。</p>
+<p>Codex 搜索与 <code>view_image</code> 都是显式、按 profile 控制的可选能力：</p>
+<p>Codex 模型会和现有提供方一起出现在 Harness 原生模型选择器中：</p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-codex-connect@alpha
 dsh web
 </code></pre>
-<p>To pin this release exactly, use <code>dsh plugin --profile web add dsh-codex-connect@0.1.0-alpha.4.5</code>. If npm is unavailable, use the GitHub tag fallback: <code>dsh plugin --profile web add &#39;github:franksong2702/dsh-codex-connect#v0.1.0-alpha.4.5&#39;</code>. From a DeepSeek Harness source checkout, prefix commands with <code>pnpm</code>. For a local checkout, install <code>link:/absolute/path/to/dsh-codex-connect</code>.</p>
-<p>Sign in from <strong>Settings → Plugins → Plugin configuration → Codex Connect → Sign in with ChatGPT</strong>, or use the CLI:</p>
+<p>如需精确固定此版本，使用 <code>dsh plugin --profile web add dsh-codex-connect@0.1.0-alpha.4.5</code>。若 npm 不可用，可使用 GitHub tag 兜底：<code>dsh plugin --profile web add &#39;github:franksong2702/dsh-codex-connect#v0.1.0-alpha.4.5&#39;</code>。在 DeepSeek Harness 源码 checkout 中运行时，在命令前加 <code>pnpm</code>。本地开发可安装 <code>link:/absolute/path/to/dsh-codex-connect</code>。</p>
+<p>可在 <strong>设置 → 插件 → 插件配置 → Codex Connect → 使用 ChatGPT 登录</strong>，也可使用 CLI：</p>
 <pre><code class="language-sh">dsh plugin --profile web exec dsh-codex-connect login
 dsh plugin --profile web exec dsh-codex-connect status
 dsh plugin --profile web exec dsh-codex-connect doctor
 </code></pre>
-<p>The doctor command reads process and filesystem metadata only. It never opens the OAuth document or prints a token, authorization URL, authorization code, account id, or auth-file content.</p>
-<h3>Explicit configuration</h3>
-<p>Open <strong>Settings → Plugins → Plugin configuration → Codex Connect</strong> to manage the ChatGPT account and optional capabilities in one card. Changes use Harness&#39;s revision-fenced settings store and apply live. <strong>Save changes</strong> affects only this plugin&#39;s capability section; it never selects a default model or global search route.</p>
-<p>The installed bundle row remains the composition base and is intentionally inert beyond model-provider registration:</p>
+<p><code>doctor</code> 只读取进程与文件系统元数据，不打开 OAuth 文件，也不会输出 token、授权 URL、授权码、账户 ID 或认证文件内容。</p>
+<h3>显式配置</h3>
+<p>打开 <strong>设置 → 插件 → 插件配置 → Codex Connect</strong>，可以在同一张卡片中管理 ChatGPT 账户和可选能力。更改通过 Harness 带 revision 防护的设置存储保存，并即时生效；<strong>保存更改</strong>只影响本插件的能力配置，绝不会选择默认模型或全局搜索路由。</p>
+<p>安装后的 bundle 行仍是 composition base，只注册模型提供方，不改变路由：</p>
 <pre><code class="language-yaml">- id: llm-openai-codex
   config:
     enableSearch: false
     enableImageTool: false
 </code></pre>
-<p>To make a Codex model the default for new agents, add or update the separate Harness row yourself:</p>
+<p>如需把 Codex 模型设为新 agent 的默认模型，需要自行添加或修改 Harness 的独立配置项：</p>
 <pre><code class="language-yaml">- id: agent-default-model
   config:
     provider: openai-codex
     model: gpt-5.6-sol
 </code></pre>
-<p>The card can enable Codex standalone search. Selecting it as the profile&#39;s global search provider remains a separate explicit choice:</p>
+<p>卡片可以启用 Codex 独立搜索；如需把它选为 profile 的全局搜索提供方，仍需单独显式配置：</p>
 <pre><code class="language-yaml">- id: llm-openai-codex
   config:
     enableSearch: true
@@ -237,76 +237,32 @@ dsh plugin --profile web exec dsh-codex-connect doctor
   config:
     searchProvider: openai-codex
 </code></pre>
-<p>To add the image-loading tool, set <code>enableImageTool: true</code> on <code>llm-openai-codex</code>. Browser paste/drop remains a Harness attachment feature and does not depend on this tool.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th align="right">Default</th>
-<th>Values</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>enableSearch</code></td>
-<td align="right"><code>false</code></td>
-<td>boolean</td>
-</tr>
-<tr>
-<td><code>enableImageTool</code></td>
-<td align="right"><code>false</code></td>
-<td>boolean</td>
-</tr>
-<tr>
-<td><code>searchModel</code></td>
-<td align="right"><code>gpt-5.6-sol</code></td>
-<td>Codex model id</td>
-</tr>
-<tr>
-<td><code>searchMode</code></td>
-<td align="right"><code>cached</code></td>
-<td><code>cached</code>, <code>indexed</code>, <code>live</code></td>
-</tr>
-<tr>
-<td><code>searchContextSize</code></td>
-<td align="right"><code>medium</code></td>
-<td><code>low</code>, <code>medium</code>, <code>high</code></td>
-</tr>
-<tr>
-<td><code>searchMaxOutputTokens</code></td>
-<td align="right"><code>10000</code></td>
-<td>positive integer</td>
-</tr>
-</tbody></table>
-<h3>Credentials, diagnostics, and conflicts</h3>
+<p>如需图片加载工具，在 <code>llm-openai-codex</code> 上设置 <code>enableImageTool: true</code>。浏览器粘贴/拖放属于 Harness 附件能力，不依赖该工具。</p>
+<h3>凭据、诊断与冲突</h3>
 <ul>
-<li>OAuth is stored separately at <code>$DSH_HOME/.openai-codex-auth.json</code> (<code>~/.dsh</code> by default); <code>~/.codex/auth.json</code> is never copied or modified.</li>
-<li>The parent directory and file are created with owner-only permissions where supported. Writes are atomic, and refresh writes use a cross-process file lock.</li>
-<li>Status and diagnostics return only non-sensitive state. OAuth flow output is confined to an explicit <code>login</code> operation.</li>
-<li>Browser OAuth routes accept only loopback clients and loopback Host/Origin values; sign-in fails closed when no valid HTTPS authorization URL arrives within 30 seconds.</li>
-<li>A second adapter cannot own <code>openai-codex</code>. Startup fails with a focused hint when the legacy <code>dsh-codex</code> bundle or a manual provider row conflicts.</li>
-<li>Removing the package does not delete OAuth state. Run <code>logout</code> only when credential removal is intended.</li>
+<li>OAuth 单独存储于 <code>$DSH_HOME/.openai-codex-auth.json</code>（默认 <code>~/.dsh</code>），不会复制或修改 <code>~/.codex/auth.json</code>。</li>
+<li>支持的平台上，父目录与文件使用仅所有者可访问权限；写入采用原子替换，刷新写入使用跨进程文件锁。</li>
+<li>状态和诊断只返回非敏感信息；OAuth 交互只会由显式 <code>login</code> 操作触发。</li>
+<li>浏览器 OAuth 路由只接受 loopback 客户端和 loopback Host/Origin；30 秒内没有得到有效的 HTTPS 授权地址时会安全失败，不会一直挂起。</li>
+<li>两个 adapter 不能同时占用 <code>openai-codex</code>。旧 <code>dsh-codex</code> bundle 或手动 provider 配置冲突时，启动会给出明确迁移提示。</li>
+<li>移除包不会删除 OAuth 状态；只有确实需要删除凭据时才运行 <code>logout</code>。</li>
 </ul>
-<h3>Compatibility and security boundary</h3>
+<h3>兼容性与安全边界</h3>
 <ul>
-<li>Alpha compatibility targets the current Harness <code>0.1.0-rc.5</code> main-line composition and compatible <code>0.1.0-rc.6</code> plugin APIs, Node.js <code>^22.19.0 || &gt;=24.0.0</code>, and the pinned <code>@earendil-works/pi-ai</code> Codex provider.</li>
-<li>ChatGPT plan eligibility, model access, quotas, and backend behavior are controlled by OpenAI and may change.</li>
-<li>The Codex endpoint does not enforce the ordinary Responses <code>max_output_tokens</code> field. Harness compaction still works, but that summary cap cannot be imposed server-side on this route.</li>
-<li>Shell, filesystem, skills, MCP, subagents, approvals, permissions, attachments, session persistence, compaction, and recovery continue to come from the active Harness profile.</li>
-<li>Remote <code>view_image</code> URLs are limited to public HTTP(S) destinations. Every DNS result and redirect is checked, and the connection is pinned to the validated address so localhost, private networks, link-local services, and cloud metadata endpoints remain unreachable.</li>
-<li>No real OAuth operation is required for installation, build, tests, doctor, or package validation.</li>
+<li>Alpha 面向当前 Harness <code>0.1.0-rc.5</code> 主线组合与兼容的 <code>0.1.0-rc.6</code> 插件 API、Node.js <code>^22.19.0 || &gt;=24.0.0</code> 和固定版本的 <code>@earendil-works/pi-ai</code> Codex provider。</li>
+<li>ChatGPT 套餐资格、模型权限、额度和后端行为由 OpenAI 控制，可能变化。</li>
+<li>shell、文件系统、skills、MCP、subagents、审批、权限、附件、会话持久化、压缩与恢复继续由当前 Harness profile 提供。</li>
+<li>远程 <code>view_image</code> 只允许公共 HTTP(S) 目标；每一次 DNS 结果与重定向都会重新检查，并将连接固定到已验证地址，从而阻止 localhost、私网、link-local 服务和云元数据地址。</li>
+<li>安装、构建、测试、doctor 和包内容验证均不需要真实 OAuth。</li>
 </ul>
-<p>See <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/INSTALL.md">INSTALL.md</a> for the idempotent agent runbook, <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/RELEASING.md">RELEASING.md</a> for the Alpha release checklist, <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/MIGRATION.md">MIGRATION.md</a> for migration from <code>dsh-codex</code>, and <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/design.md">docs/design.md</a> for architecture details.</p>
-<h3>Development</h3>
-<pre><code class="language-sh">pnpm install --frozen-lockfile
-pnpm run check
-</code></pre>
-<h3>Legal / Acknowledgements</h3>
-<p>Copyright 2026 Frank Song for the modifications and additional work in Codex Connect. This project includes software derived from <a href="https://github.com/Yan-Zero/dsh-codex">Yan-Zero/dsh-codex</a>; Copyright 2026 Yan-Zero is retained for the upstream material. Both are distributed under Apache-2.0, with details in <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/NOTICE">NOTICE</a>. This project is not affiliated with or endorsed by OpenAI, ChatGPT, Codex, DeepSeek, or DeepSeek Harness.</p>
-<h3>License</h3>
+<p>详见 <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/../INSTALL.md">安装运行手册</a>、<a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/../RELEASING.md">Alpha 发布清单</a>、<a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/../MIGRATION.md">MIGRATION.md</a> 与 <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/design.zh.md">架构说明</a>。</p>
+<h3>法律与致谢</h3>
+<p>Codex Connect 的修改与新增工作 Copyright 2026 Frank Song。本项目包含派生自 <a href="https://github.com/Yan-Zero/dsh-codex">Yan-Zero/dsh-codex</a> 的软件；上游内容继续保留 Copyright 2026 Yan-Zero。两部分均按 Apache-2.0 发布，详情见 <a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/../NOTICE">NOTICE</a>。本项目与 OpenAI、ChatGPT、Codex、DeepSeek 或 DeepSeek Harness 不存在隶属关系，也未获得其背书。</p>
+<h3>许可证</h3>
 <p>Apache-2.0</p>
 
     </div>
-    <p class="note"><a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/franksong2702/dsh-codex-connect/blob/main/docs/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

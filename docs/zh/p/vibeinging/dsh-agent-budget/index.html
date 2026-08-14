@@ -189,46 +189,46 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/README.zh.md">中文</a></p>
-<p><code>dsh-agent-budget</code> gives one live agent session, or its complete local descendant tree, a durable Token limit and absolute deadline. It reserves capacity before every attributed <code>llm/stream</code> provider attempt and replaces that estimate with provider-reported usage after the stream settles, so concurrent child agents cannot all spend the same remaining balance.</p>
-<p>The plugin is an out-of-tree DSH bundle for one Host process. A hard budget refuses new provider attempts before dispatch; it is not an exact billing system and does not forcibly cancel work already in flight.</p>
-<p>Decision record: <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/design/2026-08-09-agent-budget-admission.md">durable agent-tree token admission</a>.</p>
-<h3>What it provides</h3>
+<p><a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/README.md">English</a> | 中文</p>
+<p><code>dsh-agent-budget</code> 为一个活跃 agent（智能体）会话或其完整的本地后代树提供持久 Token 上限和绝对截止时间。它在每次可归属的 <code>llm/stream</code> 提供方调用尝试前预留额度，并在流结算后用提供方报告的用量替换估算值，因此并发子 agent 无法全部花费同一笔剩余额度。</p>
+<p>该插件是在一个 Host 进程内运行的外置 DSH 组合包。硬预算会在 dispatch 前拒绝新的提供方调用尝试；它不是精确计费系统，也不会强制取消正在进行的工作。</p>
+<p>决策记录：<a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/design/2026-08-09-agent-budget-admission.md">持久的 agent 树 token 准入</a>。</p>
+<h3>提供内容</h3>
 <ul>
-<li>Durable <code>session</code> and local descendant-tree scopes, restored through the DSH Storage Domain.</li>
-<li>Soft accounting or hard admission with concurrency-safe local reservations.</li>
-<li>Absolute deadlines that survive restart, plus fail-closed recovery when dispatched usage is unknown.</li>
-<li>Direct human control through <code>/budget</code>; optional model-facing tools are available for intentional manual compositions.</li>
-<li>Output convergence that reduces <code>maxTokens</code> as a bounded account approaches exhaustion.</li>
+<li>由 DSH Storage Domain 恢复的持久 <code>session</code> 范围和本地后代树范围。</li>
+<li>采用并发安全本地预留的软核算或硬准入。</li>
+<li>可跨重启保留的绝对截止时间，以及已 dispatch 用量未知时的 fail-closed 恢复。</li>
+<li>通过 <code>/budget</code> 直接由人类控制；有意采用手动组合时可以启用可选的面向模型工具。</li>
+<li>在有上限账户接近耗尽时降低 <code>maxTokens</code> 的输出收敛机制。</li>
 </ul>
-<h3>Install</h3>
-<p>The shipped <code>web</code> and <code>headless</code> profiles provide the Storage, Storage Domain, Token Meter, and command services this bundle requires. A custom profile must provide those services itself.</p>
-<h4>From a pinned GitHub commit</h4>
-<p>The repository is private and the package is not published to an npm registry. Git and pnpm <code>11.7.0</code> must already have GitHub credentials. Pin a reviewed commit instead of installing a moving branch; <code>-w</code> is required because a DSH profile is a pnpm workspace root:</p>
+<h3>安装</h3>
+<p>随附的 <code>web</code> 和 <code>headless</code> profile 提供本组合包所需的 Storage、Storage Domain、Token Meter 和命令服务。自定义 profile 必须自行提供这些服务。</p>
+<h4>从固定的 GitHub commit 安装</h4>
+<p>该仓库是私有的，且该包未发布到 npm registry。Git 和 pnpm <code>11.7.0</code> 必须已经配置 GitHub 凭据。请固定到一个已经评审的 commit，不要安装内容会变化的分支；DSH Profile 是 pnpm workspace 根目录，因此必须使用 <code>-w</code>：</p>
 <pre><code class="language-sh">dsh plugin --profile web add -w github:dsh-external/dsh-agent-budget#&lt;reviewed-commit&gt;
 </code></pre>
-<p>The repository commits its <code>lib/</code> runtime entries, so installation does not need permission to execute a dependency build script. Inspect the composed entries, then boot the profile:</p>
+<p>仓库会提交其 <code>lib/</code> 运行时入口，因此安装无需获得执行依赖构建脚本的权限。请检查组合后的配置项，然后启动 profile：</p>
 <pre><code class="language-sh">dsh --profile web --dump-config
 dsh --profile web
 </code></pre>
-<h4>From a local checkout</h4>
-<p>From this repository root, link the checkout into a profile. The committed <code>lib/</code> directory must match <code>src/</code>:</p>
+<h4>从本地 checkout 安装</h4>
+<p>在本仓库根目录中，将该 checkout 链接到 profile。已提交的 <code>lib/</code> 目录必须与 <code>src/</code> 一致：</p>
 <pre><code class="language-sh">dsh plugin --profile web add -w .
 dsh --profile web --dump-config
 dsh --profile web
 </code></pre>
-<p>Create and inspect the first tree-wide hard budget from the authenticated human command path:</p>
+<p>通过经过认证的人类命令路径，创建并查看第一个覆盖整棵树的硬预算：</p>
 <pre><code class="language-text">/budget set 3 tree hard 2h
 /budget
 </code></pre>
-<p>Token amounts use millions, so <code>3</code> means 3,000,000 Tokens. See the complete <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/command.md"><code>/budget</code> command reference</a> for additions and deadline extensions.</p>
-<p>Remove the bundle and its profile dependency with:</p>
+<p>Token 数量以百万为单位，因此 <code>3</code> 表示 3,000,000 Token。额度追加和截止时间延长方法见完整的 <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/command.md"><code>/budget</code> 命令参考</a>。</p>
+<p>使用以下命令移除该组合包及其 profile 依赖：</p>
 <pre><code class="language-sh">dsh plugin --profile web remove -w @deepseek-ai/dsh-agent-budget
 </code></pre>
-<h3>Bundle contents</h3>
-<p><a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a> loads the budget service and <code>/budget</code> command. The bundle disables model-facing budget tools and gives direct human control to <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/command.md"><code>@deepseek-ai/dsh-agent-budget/command</code></a>. It deliberately does not create a second shared invariant registry; manual compositions can mount the package&#39;s invariant companions against an existing registry. Its host profile must provide a Storage backend, <code>ctx.storageDomain</code>, <code>ctx.tokenMeter</code>, and the shared command service.</p>
-<h3>Manual composition</h3>
-<p>Use manual composition only when the bundle defaults are not appropriate. Load a Storage backend and <code>ctx.storageDomain</code> before the budget plugin. The JSON backend below is one local choice; another Storage Domain backend can replace it without changing this package. Add <code>@deepseek-ai/dsh-invariants</code> only when the host does not already provide <code>ctx.invariants</code>.</p>
+<h3>组合包内容</h3>
+<p><a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a> 会加载预算服务和 <code>/budget</code> 命令。该组合包会禁用面向模型的预算工具，并将直接人类控制交给 <a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/docs/command.md"><code>@deepseek-ai/dsh-agent-budget/command</code></a>。它不会创建第二个共享 invariant 注册服务；手动组合可以把本包的 invariant 配套入口挂到已有注册服务上。其宿主 profile 必须提供 Storage 后端、<code>ctx.storageDomain</code>、<code>ctx.tokenMeter</code> 和共享命令服务。</p>
+<h3>手动组合</h3>
+<p>只有当组合包默认值不合适时，才使用手动组合。请先于预算插件加载 Storage 后端和 <code>ctx.storageDomain</code>。下方 JSON 后端是一种本地选择；其他 Storage Domain 后端可以替换它，而无需修改本包。只有在宿主尚未提供 <code>ctx.invariants</code> 时，才添加 <code>@deepseek-ai/dsh-invariants</code>。</p>
 <pre><code class="language-yaml">- name: &#39;@deepseek-ai/dsh-storage&#39;
 - name: &#39;@deepseek-ai/dsh-storage-json&#39;
   config:
@@ -245,57 +245,57 @@ dsh --profile web
     modelTools: true
 - name: &#39;@deepseek-ai/dsh-agent-budget/invariant&#39;
 </code></pre>
-<p><code>fallbackMaxOutputTokens</code> is required and must be a positive safe integer. For a loop-built budgeted request with no <code>maxTokens</code>, the plugin writes this ceiling into <code>agent/request</code>, making the amount reserved at <code>llm/stream</code> explicit and reconstructable in <code>request/header</code>. An attributed direct <code>llm/stream</code> call receives the same ceiling before provider resolution. The plugin does not guess a provider default or treat an unknown ceiling as zero.</p>
-<p><code>warnRatio</code> and <code>warnMaxOutputTokens</code> form one optional output-convergence tier; <code>criticalRatio</code> and <code>criticalMaxOutputTokens</code> form a stricter optional tier. A tier activates when remaining Tokens divided by the total Token limit falls strictly below its ratio. The active tier replaces <code>maxTokens</code> with the smaller of the request&#39;s current ceiling and the configured tier ceiling, so it never raises a caller&#39;s limit. Each tier is all-or-nothing, and when both exist the warning ratio and ceiling must both exceed the critical values. Deadline-only accounts are not clamped.</p>
-<p><code>guardedToolNames</code> lists model-facing tools that start resource-owning work. After a hard account becomes exhausted, expired, or uncertain, <code>tools/pre-execute</code> rejects those names before their bodies run. This protects the standard tool route; a trusted plugin calling a Workflow or Subagent service directly does not pass through the tool policy.</p>
-<p><code>modelTools</code> controls whether <code>set_agent_budget</code> and <code>get_agent_budget</code> are present in the model tool registry. It defaults to <code>true</code> for manual compositions that intentionally let a top-level agent handle a user&#39;s direct request to create a budget. Set it to <code>false</code> when a human command owns budget control. This package&#39;s bundle does so, which keeps balances and budget tool schemas out of model requests and their reusable prefix cache.</p>
-<p><code>managementCommandName</code> is optional and has no default. Set it only when the composition provides that exact lowercase human command; hard Token and deadline refusals then include command-specific recovery guidance. Without it, the service returns a truthful generic failure instead of naming a command that may not exist.</p>
-<h3>Budget semantics</h3>
+<p><code>fallbackMaxOutputTokens</code> 是必填项，并且必须是正安全整数。当由 loop 构建且已设置预算的请求没有 <code>maxTokens</code> 时，插件会通过 <code>agent/request</code> 写入该上限，使 <code>llm/stream</code> 预留的数额明确记录在 <code>request/header</code> 中并可重建。带有归属会话的直接 <code>llm/stream</code> 调用也会在解析提供方之前获得同一上限。插件不会猜测提供方默认值，也不会把未知上限视为零。</p>
+<p><code>warnRatio</code> 和 <code>warnMaxOutputTokens</code> 构成一个可选的输出收敛层级；<code>criticalRatio</code> 和 <code>criticalMaxOutputTokens</code> 构成一个更严格的可选层级。剩余 Token 数除以 Token 总上限后，所得比例严格低于对应层级的比例时，该层级生效。生效层级会把 <code>maxTokens</code> 替换为请求当前上限与配置层级上限中的较小值，因此绝不会提高调用方的上限。每个层级的两个字段必须成对设置；同时配置两个层级时，警告层级的比例和上限都必须高于临界层级对应的值。仅设置截止时间的账户不会收紧输出上限。</p>
+<p><code>guardedToolNames</code> 列出会启动资源持有型工作的模型工具。硬预算账户耗尽、过期或处于不确定状态后，<code>tools/pre-execute</code> 会在这些工具的主体运行前拒绝对应名称。该策略保护标准工具路径；受信任插件直接调用工作流或 subagent 服务时，不会经过此工具策略。</p>
+<p><code>modelTools</code> 控制模型工具注册表中是否包含 <code>set_agent_budget</code> 和 <code>get_agent_budget</code>。对于有意让顶层 agent 处理用户直接提出的预算创建请求的手动组合，默认值为 <code>true</code>。如果预算由人类命令控制，请设为 <code>false</code>。本包组合会如此设置，因此余额和预算工具 schema 不会进入模型请求，也不会影响可复用的前缀缓存。</p>
+<p><code>managementCommandName</code> 是可选项且没有默认值。只有当组合提供名称完全一致的全小写人类命令时，才应设置此项；因 Token 硬限制或截止时间而拒绝请求时，错误信息会包含该命令专用的恢复指引。未设置时，服务会如实返回通用失败信息，而不是引用可能不存在的命令。</p>
+<h3>预算语义</h3>
 <table>
 <thead>
 <tr>
-<th>Item</th>
-<th>Rule</th>
+<th>项目</th>
+<th>规则</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Scope</td>
-<td><code>session</code> charges only the bound root; <code>tree</code> also binds descendants announced later with <code>session.header.parentSession</code></td>
+<td>范围</td>
+<td><code>session</code> 只向已绑定的根会话计费；<code>tree</code> 还会绑定之后通过 <code>session.header.parentSession</code> 通知的后代</td>
 </tr>
 <tr>
-<td>Token total</td>
-<td><code>inputTokens + outputTokens + cacheReadTokens + cacheWriteTokens</code>; <code>reasoningTokens</code> is already included in output and is not added again</td>
+<td>Token 总量</td>
+<td><code>inputTokens + outputTokens + cacheReadTokens + cacheWriteTokens</code>；<code>reasoningTokens</code> 已包含在输出中，不再重复相加</td>
 </tr>
 <tr>
-<td>Deadline</td>
-<td><code>wallTimeMs</code> is converted once to an absolute <code>deadlineAt</code>; restart and reload do not extend it</td>
+<td>截止时间</td>
+<td><code>wallTimeMs</code> 只转换一次，得到绝对 <code>deadlineAt</code>；重启和重新加载不会延长它</td>
 </tr>
 <tr>
-<td>Soft</td>
-<td>Records reservations and usage but does not refuse work</td>
+<td>软模式</td>
+<td>记录预留与用量，但不拒绝工作</td>
 </tr>
 <tr>
-<td>Hard</td>
-<td>Refuses a provider attempt when <code>spent + reserved + estimated input + max output</code> exceeds the limit, the deadline passed, or earlier dispatched usage is uncertain</td>
+<td>硬模式</td>
+<td>当 <code>spent + reserved + estimated input + max output</code> 超过上限、截止时间已过，或之前已 dispatch 的用量不确定时，拒绝提供方调用尝试</td>
 </tr>
 <tr>
-<td>Missing usage</td>
-<td>Retains the reservation as <code>uncertain</code>; it is never settled as zero</td>
+<td>缺失用量</td>
+<td>将预留保留为 <code>uncertain</code>，绝不会按零结算</td>
 </tr>
 <tr>
-<td>Crash recovery</td>
-<td>Any leftover <code>reserved</code> or <code>dispatched</code> attempt becomes <code>uncertain</code> when the domain reopens</td>
+<td>崩溃恢复</td>
+<td>domain 重新打开时，任何遗留的 <code>reserved</code> 或 <code>dispatched</code> 调用尝试都会变为 <code>uncertain</code></td>
 </tr>
 <tr>
-<td>Creation recovery</td>
-<td>A failed root-binding write rolls back its new account; if both writes fail or the process stops between them, startup removes only the pristine unreferenced account residue</td>
+<td>创建恢复</td>
+<td>根绑定写入失败时回滚新账户；如果两次写入均失败，或进程在两次写入之间停止，启动时只会移除未发生任何变更且从未被引用的账户残留</td>
 </tr>
 </tbody></table>
-<p>“Hard” means hard request admission, not an exact billing guarantee. Input is the provider-neutral estimate from <code>ctx.tokenMeter</code>; a provider can tokenize differently, and a dispatched request may incur usage that never reaches DSH. The plugin therefore reports <code>accuracy: reported | estimated | uncertain</code> instead of presenting a false exact percentage.</p>
-<p>Every account mutation uses one Storage Domain table record&#39;s serialized <code>update()</code> path. Concurrent local requests reevaluate the latest <code>spent + reserved</code> value, so only requests that fit can reserve. A separate durable <code>SessionId -&gt; BudgetId</code> table retains tree ownership across process restarts.</p>
-<p>Account creation reports both the binding failure and a failed account rollback. Startup deletes an unbound account only when it has never been referenced, reserved, settled, or otherwise revised; any non-pristine account without its root binding fails plugin initialization as corruption.</p>
-<h3>Service API</h3>
-<p><code>ctx.agentBudget</code> exposes the policy service. Ordinary integrations create and inspect accounts; integrations that own provider attempts use the explicit lifecycle methods.</p>
+<p>「硬」表示硬请求准入，不是精确账单保证。输入使用 <code>ctx.tokenMeter</code> 给出的提供方无关估算值；提供方的分词方式可能不同，已 dispatch 的请求也可能产生从未返回 DSH 的用量。因此，插件报告 <code>accuracy: reported | estimated | uncertain</code>，而不是给出虚假的精确百分比。</p>
+<p>每次账户变更都使用一条 Storage Domain 表记录的串行 <code>update()</code> 路径。本地并发请求会重新计算最新的 <code>spent + reserved</code>，因此只有未超过额度的请求才能完成预留。另一个持久的 <code>SessionId -&gt; BudgetId</code> 表在进程重启后继续保留树归属。</p>
+<p>创建账户时，如果绑定失败且账户回滚也失败，系统会同时报告这两项失败。启动时，系统只有在未绑定账户从未被引用、预留、结算或以其他方式修改的情况下才会删除它；任何已经发生变更却缺少根绑定的账户都会被视为损坏，导致插件初始化失败。</p>
+<h3>服务 API</h3>
+<p><code>ctx.agentBudget</code> 提供策略服务。普通集成使用它创建和查看账户；拥有提供方调用尝试的集成使用显式生命周期方法。</p>
 <pre><code class="language-ts">const view = await ctx.agentBudget.create(agent, {
   scope: &#39;tree&#39;,
   enforcement: &#39;hard&#39;,
@@ -319,46 +319,46 @@ await ctx.agentBudget.increase(agent, {
   additionalWallTimeMs: 15 * 60_000,
 })
 </code></pre>
-<p>An account cannot be replaced or reset. Only its exact root Agent can increase its Token limit or extend its deadline. Additional capacity can restore exhausted or expired admission, but it never clears uncertain usage. <code>markDispatched()</code>, <code>settle()</code>, <code>release()</code>, and <code>markUncertain()</code> are idempotent for an attempt that is no longer present, allowing cleanup paths to converge without double charging.</p>
-<h3>Development and verification</h3>
-<p><code>lib/</code> is the checked-in Git installation artifact. The project <code>.npmrc</code> selects the private <code>@deepseek-ai/*</code> scope; pnpm 11 reads its <code>${NPM_TOKEN}</code> authentication mapping from the trusted user-level <code>~/.npmrc</code>. Set <code>NPM_TOKEN</code>, run <code>pnpm install --ignore-scripts</code>, then run <code>pnpm run check</code>. The SDK packages are pinned to the reviewed <code>0.0.1-rc.2</code> set. Do not link a DSH source checkout into this repository. After changing <code>src/</code>, review the generated <code>lib/</code> diff and keep the runtime entries and declarations aligned.</p>
-<p>Run the deterministic Token policy eval without an API key:</p>
+<p>账户不能替换或重置。只有账户的根 agent 精确实例才能增加 Token 上限或延长截止时间。追加额度可以恢复因耗尽或过期而停止的准入，但不会清除不确定用量。对于已不存在的调用尝试，<code>markDispatched()</code>、<code>settle()</code>、<code>release()</code> 和 <code>markUncertain()</code> 都是幂等的，使清理路径可以收敛，而不会重复计费。</p>
+<h3>开发与验证</h3>
+<p><code>lib/</code> 是提交到仓库的 Git 安装产物。项目 <code>.npmrc</code> 只选择私有 <code>@deepseek-ai/*</code> scope；pnpm 11 会读取 <code>${NPM_TOKEN}</code> 认证映射，该映射来自受信任的用户级 <code>~/.npmrc</code>。设置 <code>NPM_TOKEN</code>，运行 <code>pnpm install --ignore-scripts</code>，然后运行 <code>pnpm run check</code>。SDK 包固定使用经过评审的 <code>0.0.1-rc.2</code> 集合。不要把 DSH 源码 checkout 链接到本仓库。修改 <code>src/</code> 后，请检查生成的 <code>lib/</code> 差异，并保持运行时入口和声明一致。</p>
+<p>无需 API key 即可运行确定性 Token 策略 eval：</p>
 <pre><code class="language-sh">pnpm run test:eval
 </code></pre>
-<p>The eval drives the public service against durable JSON storage. Its seven scenarios cover exact-limit admission, a one-Token overrun, concurrent reservations, one shared descendant-tree account, soft-limit continuation, fail-closed missing usage, and a root-only additive grant that reopens exhausted admission. <code>npm test</code> adds service, command, invariant, recovery, lifecycle, clamp, and Loader-composition coverage.</p>
-<h3>Model Experience</h3>
+<p>该 eval 使用持久 JSON 存储驱动公开服务。7 个场景覆盖精确上限准入、超出 1 Token、并发预留、共享后代树账户、超出软上限后继续运行、用量缺失时 fail-closed，以及只允许根 agent 追加额度并重新开放已耗尽准入。<code>npm test</code> 还覆盖服务、命令、invariant、恢复、生命周期、上限收紧和 loader 组合。</p>
+<h3>模型体验</h3>
 <h4><code>set_agent_budget</code></h4>
-<h5>What the model sees</h5>
-<p>The tool creates the first budget for the calling top-level agent. It succeeds only inside that exact live agent&#39;s active driver and only when the current open turn contains a host-attested <code>{ kind: &#39;user&#39; }</code> message. Plugin-generated context, a child agent, a direct registry call, or a later model decision cannot grant itself more capacity. Existing accounts cannot be increased, replaced, or reset through the tool. The model supplies <code>scope</code>, <code>enforcement</code>, and at least one of <code>token_limit</code> or <code>wall_time_ms</code>; the result contains status, totals, remaining tokens when bounded, deadline when present, and accuracy.</p>
-<h6>Successful creation result</h6>
+<h5>模型看到的内容</h5>
+<p>该工具为发起调用的顶层 agent 创建第一个预算。它仅能在该实时 agent 精确实例的活跃驱动器内成功，并且当前打开的轮次必须包含一条由宿主确认的 <code>{ kind: &#39;user&#39; }</code> 消息。插件生成的上下文、子 agent、直接注册表调用或之后的模型决策都不能自行获得更多额度。现有账户不能通过该工具增加、替换或重置。模型需要提供 <code>scope</code>、<code>enforcement</code>，以及 <code>token_limit</code> 或 <code>wall_time_ms</code> 中的至少一项；结果包含状态、总量、有上限时的剩余 token、存在时的截止时间和准确性。</p>
+<h6>创建成功结果</h6>
 <pre><code class="language-markdown">{&quot;active&quot;:true,&quot;budget_id&quot;:&quot;budget-…&quot;,&quot;root_session_id&quot;:&quot;main&quot;,&quot;scope&quot;:&quot;tree&quot;,&quot;enforcement&quot;:&quot;hard&quot;,&quot;token_limit&quot;:200000,&quot;spent_tokens&quot;:0,&quot;reserved_tokens&quot;:0,&quot;remaining_tokens&quot;:200000,&quot;status&quot;:&quot;active&quot;,&quot;accuracy&quot;:&quot;reported&quot;}
 </code></pre>
-<h5>Token effect</h5>
-<p>When <code>modelTools</code> is enabled, the stable schema is present on every request. Each call retains its small fixed-shape arguments and result in Session history. When it is disabled, this tool contributes no schema or call history.</p>
-<h5>KV Cache effect</h5>
-<p>Append-only tool calls and results follow the reusable request prefix. Balance changes do not rewrite earlier prompt content.</p>
+<h5>Token 影响</h5>
+<p>启用 <code>modelTools</code> 时，每次请求都会携带稳定的 schema。每次调用的小型固定形状参数和结果都会保留在 Session 历史中。禁用后，该工具不会产生 schema 或调用历史。</p>
+<h5>KV Cache 影响</h5>
+<p>仅追加的工具调用和结果位于可复用请求前缀之后。余额变化不会重写之前的提示词内容。</p>
 <h4><code>get_agent_budget</code></h4>
-<h5>What the model sees</h5>
-<p>The tool returns the budget bound to the exact calling agent, or <code>{ &quot;active&quot;: false }</code> when none exists. It is read-only and requires the same live-driver identity check so one agent cannot query another session by guessing an ID.</p>
-<h6>No-budget result</h6>
+<h5>模型看到的内容</h5>
+<p>该工具返回绑定到发起调用的 agent 精确实例的预算；没有预算时返回 <code>{ &quot;active&quot;: false }</code>。它是只读工具，并要求相同的实时驱动器身份检查，因此一个 agent 不能靠猜测 ID 查询另一个会话。</p>
+<h6>无预算结果</h6>
 <pre><code class="language-markdown">{&quot;active&quot;:false}
 </code></pre>
-<h5>Token effect</h5>
-<p>When <code>modelTools</code> is enabled, the stable schema is present on every request. Each query retains one compact status object in Session history. When it is disabled, this tool contributes no schema or call history.</p>
-<h5>KV Cache effect</h5>
-<p>Append-only tool calls and results follow the reusable request prefix. The plugin does not rewrite the system prompt on settlement; admission failures instead become terminal logged stream errors.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<h5>Token 影响</h5>
+<p>启用 <code>modelTools</code> 时，每次请求都会携带稳定的 schema。每次查询会在 Session 历史中保留一个紧凑的状态对象。禁用后，该工具不会产生 schema 或调用历史。</p>
+<h5>KV Cache 影响</h5>
+<p>仅追加的工具调用和结果位于可复用请求前缀之后。插件不会在结算时重写系统提示词；准入失败则成为已记录的终止流错误。</p>
+<h3>已知限制与暂缓事项</h3>
 <ul>
-<li>Accounting is atomic only inside one Harness process. Two processes must not write the same account until Storage Domain has a transactional or compare-and-set backend suitable for cross-process counters.</li>
-<li>Calls without <code>sessionId</code>, sessions that predate the plugin without a binding, and external child agents with no local Session are not attributed.</li>
-<li>Input tokens are estimated before dispatch. Exact provider count-token APIs and versioned price tables are deferred; monetary, organization-wide, periodic, and paid-tool budgets are not implemented.</li>
-<li>Standard Workflow/Subagent model tools are guarded, but trusted direct service calls can bypass that route. Strict tree admission needs provider-attempt IDs plus Subagent and Workflow pre-start seams.</li>
-<li>A deadline stops new work; it does not forcibly kill an already-dispatched provider call or an uncooperative tool.</li>
-<li>Existing accounts can only be increased or extended by their exact root Agent. Lower, replace, pause, reset, close, and uncertain-usage reconciliation are not implemented. Missing usage remains fail-closed for hard budgets.</li>
+<li>核算只在一个 Harness 进程内保证原子性。在 Storage Domain 提供适合跨进程计数器的事务后端或比较并交换后端之前，两个进程不得写入同一账户。</li>
+<li>没有 <code>sessionId</code> 的调用、插件加载前已经存在但没有绑定的会话，以及没有本地 Session 的外部子 agent 都无法归属。</li>
+<li>输入 token 在 dispatch 前估算。精确的提供方 token 计数 API 和带版本的价格表暂缓实现；金额预算、组织级预算、周期预算和收费工具预算均未实现。</li>
+<li>标准工作流/subagent 模型工具受到保护，但受信任的直接服务调用可以绕过该路径。严格的树准入需要提供方调用尝试 ID，以及 subagent 和工作流的 pre-start seam。</li>
+<li>截止时间会阻止新工作，但不会强行终止已 dispatch 的提供方调用或不配合的工具。</li>
+<li>现有账户只能由根 agent 精确实例增加额度或延长时间。尚未实现降低额度、替换、暂停、重置、关闭或对账不确定用量。用量缺失会使硬预算继续 fail-closed。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/vibeinging/dsh-agent-budget/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

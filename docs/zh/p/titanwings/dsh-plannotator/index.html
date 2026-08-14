@@ -190,211 +190,191 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <h2>📝 dsh-plannotator</h2>
-<h4><em>Review the plan before your coding agent writes the code.</em></h4>
+<h4><em>让 Coding Agent 动手写代码前，先把计划审清楚。</em></h4>
 <p><a href="https://github.com/deepseek-ai"><img src="https://img.shields.io/badge/DeepSeek_Harness-Web-4D6BFE" alt="DeepSeek Harness"></a>
-<a href="#features"><img src="https://img.shields.io/badge/workflow-Plan_Review-4D6BFE" alt="Plan Review"></a>
+<a href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD"><img src="https://img.shields.io/badge/workflow-Plan_Review-4D6BFE" alt="Plan Review"></a>
 <a href="https://github.com/titanwings/dsh-plannotator/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-4D6BFE" alt="MIT License"></a></p>
-<h4>✨ Turn a binary plan gate into a precise, multi-comment review.</h4>
-<p>Select exact plan text, collect precise comments, and return one structured review—without leaving DeepSeek Harness.</p>
-<p><a href="#why-dsh-plannotator">Why it exists</a> · <a href="#features">Features</a> · <a href="#install">Install</a> · <a href="#how-it-works">How it works</a></p>
-<p><strong>English</strong> · <a href="https://github.com/titanwings/dsh-plannotator/blob/main/README.zh-CN.md">简体中文</a></p>
-<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/social-preview.png" alt="DSH Plannotator social preview with Liang Xiaojing reviewing an annotated plan"></p>
+<h4>✨ 把二选一的计划审批，变成精准的多意见审阅。</h4>
+<p>直接选中计划原文、逐条精准批注，再把一份结构化审阅送回 Agent——整个过程都在 DeepSeek Harness 里完成。</p>
+<p><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81-dsh-plannotator">为什么需要它</a> · <a href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD">核心功能</a> · <a href="#%E5%AE%89%E8%A3%85">安装</a> · <a href="#%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B">使用流程</a></p>
+<p><a href="https://github.com/titanwings/dsh-plannotator/blob/main/README.md">English</a> · <strong>简体中文</strong></p>
+<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/social-preview.png" alt="梁小鲸正在审阅精准批注计划的 DSH Plannotator 横幅"></p>
 <hr>
-<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/01-sidebar-open-en.png" alt="A real plan review docked beside the DeepSeek Harness conversation"></p>
+<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/01-sidebar-open-zh.png" alt="与 DeepSeek Harness 对话区并排的计划审阅栏"></p>
 <blockquote>
-<p>“Change the third step” is vague. A comment attached to the exact sentence
-preserves the context the agent needs to revise the plan correctly.</p>
+<p>“第三步改一下”很模糊。把意见直接挂在准确原句上，Agent 才能保留上下文，
+正确修改计划。</p>
 </blockquote>
-<p><strong>Select exact text → comment on several risks → send one review → approve when ready.</strong></p>
+<p><strong>选中原文 → 批注多个风险 → 一次发送审阅 → 满意后再批准。</strong></p>
 <hr>
 <p></p>
-<h3>🎯 Why dsh-plannotator</h3>
-<p>Coding agents are good at producing plans, but a binary <strong>Approve / Reject</strong>
-decision is too coarse for serious work. Architecture migrations, API changes,
-security fixes, and rollout plans often need several independent corrections
-before implementation begins.</p>
-<p><code>dsh-plannotator</code> turns DSH&#39;s native Plan Review into a compact gate plus a
-responsive companion panel. On a wide screen, the conversation and review
-occupy separate columns, so opening the panel never covers chat text. Collapse
-it to a slim edge rail and reopen it without settling the request. Your comments
-still travel through DSH&#39;s existing response flow as structured Markdown, so the
-agent can revise the proposal in plan mode and ask for review again.</p>
-<p>This is an unofficial integration inspired by
-<a href="https://github.com/backnotprop/plannotator">Plannotator</a>.</p>
+<h3>🎯 为什么需要 dsh-plannotator</h3>
+<p>Coding Agent 很会写计划，但严肃的软件工程任务很少能靠一个简单的
+<strong>批准 / 拒绝</strong>决定完成审阅。架构迁移、API 变更、安全修复和灰度发布，
+往往需要在实现前同时修正多个相互独立的问题。</p>
+<p><code>dsh-plannotator</code> 把 DSH 原生 Plan Review 变成一条紧凑入口和一个响应式
+审阅面板。宽屏上，对话区和审阅区分别占据独立列，打开审阅不会遮住聊天文字。
+审阅栏可以缩成右缘蓝色入口，随时再打开而不提交当前请求。所有意见仍通过
+DSH 已有响应流程，以结构化 Markdown 送回 Agent；Agent 留在 Plan mode 修改
+方案，然后再次请你审阅。</p>
+<p>这是一个受 <a href="https://github.com/backnotprop/plannotator">Plannotator</a> 启发的
+非官方集成。</p>
 <hr>
 <p></p>
-<h3>🧰 Features</h3>
-<h4>Comment on the exact claim—not “somewhere in the plan”</h4>
-<p>Drag over text for a precise annotation, or double-click a paragraph, list
-item, heading, bold phrase, or code fragment. The review keeps the quote and
-comment together within the current plan revision.</p>
-<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/02-precise-annotation-en.png" alt="Writing a precise annotation in the docked review panel"></p>
-<h4>Review the whole plan in one pass</h4>
-<p>Collect multiple comments across compatibility, security, rollback, and tests;
-add overall feedback; click an annotation in the review panel to return to its
-source; then send one coherent review. This keeps the review compact and less
-ambiguous than a sequence of detached chat messages.</p>
-<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/03-multi-comment-sidebar-en.png" alt="Three anchored comments and overall feedback in one review"></p>
-<h4>Collapse the review without losing your place</h4>
-<p>The review panel can shrink to a blue edge rail while the compact composer gate
-remains visible. Reopen either control to continue with the same comments and
-overall feedback.</p>
-<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/04-collapsed-rail-en.png" alt="The review collapsed to an edge rail while the conversation remains usable"></p>
-<h4>Return actionable feedback to the agent</h4>
-<p><strong>Send feedback</strong> answers the real <code>exit_plan_mode</code> interaction. DSH records the
-quoted plan text, each requested change, and the overall feedback in the tool
-result and Session Log. The agent remains in plan mode and can immediately
-produce a revised proposal.</p>
-<h4>Protect unfinished reviews</h4>
-<p>Unsent comments are saved locally in the browser, isolated by Session, pending
-request, and plan revision. If you try to approve while feedback is still
-pending, the plugin requires an explicit second confirmation instead of
-silently discarding your work.</p>
-<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/05-safe-approval-en.png" alt="Approval requires confirmation when comments have not been sent"></p>
+<h3>🧰 核心功能</h3>
+<h4>评论准确的论点，而不是“计划里的某个地方”</h4>
+<p>拖选文字即可精准批注；也可以双击段落、列表项、标题、加粗短语或代码片段，
+快速选中整个内容块。在当前计划版本内，引用原文与修改意见始终成对保留。</p>
+<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/02-precise-annotation-zh.png" alt="在并排审阅栏中为安全要求添加精准批注"></p>
+<h4>一轮审完整份计划</h4>
+<p>可以同时收集兼容性、安全、回滚和测试等多处意见，再补充整体反馈；
+在右侧审阅栏点击批注即可回到对应原文，最后一次发送完整审阅。这会让审阅
+更集中，也比几条彼此脱节的聊天消息更不容丢失上下文。</p>
+<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/03-multi-comment-sidebar-zh.png" alt="一次审阅中的三条原文批注与整体意见"></p>
+<h4>收起审阅栏，也不会丢掉当前进度</h4>
+<p>完整审阅栏可以缩成右缘蓝色入口，同时输入区保留一条紧凑提示。点击任意入口
+即可继续刚才的批注和整体意见。</p>
+<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/04-collapsed-rail-zh.png" alt="审阅栏收起后，右缘入口与输入区提示仍然可用"></p>
+<h4>把可执行的反馈真正送回 Agent</h4>
+<p>点击 <strong>发送反馈</strong> 会回答真实的 <code>exit_plan_mode</code> 交互。DSH 会把引用的计划原文、
+每一条修改要求和整体意见记录在 tool result 与 Session Log 中。Agent 会继续留在
+Plan mode，并可以立刻给出修订版方案。</p>
+<h4>保护尚未完成的审阅</h4>
+<p>未发送的意见会保存在当前浏览器本地，并按 Session、待处理请求和计划版本隔离。
+如果还有意见没有发送就点击批准，插件会要求第二次明确确认，不会悄悄丢掉你的工作。</p>
+<p><img src="https://raw.githubusercontent.com/titanwings/dsh-plannotator/main/docs/05-safe-approval-zh.png" alt="存在未发送批注时，批准计划需要二次确认"></p>
 <table>
 <thead>
 <tr>
-<th>Capability</th>
-<th>What you get</th>
+<th>能力</th>
+<th>你得到什么</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Precise annotations</td>
-<td>Text selection plus a reliable double-click block fallback</td>
+<td>精准批注</td>
+<td>文字拖选，以及稳定的“双击内容块”后备方式</td>
 </tr>
 <tr>
-<td>Multi-comment review</td>
-<td>Anchored comments, source navigation, deletion, and overall feedback</td>
+<td>多意见审阅</td>
+<td>原文锚点、来源跳转、删除与整体意见</td>
 </tr>
 <tr>
-<td>Responsive review column</td>
-<td>Side-by-side on wide screens, an on-demand drawer on narrower desktops, and a bottom sheet on phones</td>
+<td>响应式审阅栏</td>
+<td>宽屏并排、中等宽度按需抽屉、手机端底部面板</td>
 </tr>
 <tr>
-<td>DSH response loop</td>
-<td>Approve, request changes, or return to chat through the existing pending interaction</td>
+<td>DSH 响应闭环</td>
+<td>通过现有 pending interaction 批准、要求修改或回到聊天</td>
 </tr>
 <tr>
-<td>Draft recovery</td>
-<td>Best-effort local recovery without a plugin server or third-party service</td>
+<td>草稿恢复</td>
+<td>无插件服务器、无第三方服务的本地尽力恢复</td>
 </tr>
 <tr>
-<td>Review safeguards</td>
-<td>Stale-plan draft rejection and explicit confirmation before discarding feedback</td>
+<td>审阅保护</td>
+<td>拒绝过期计划草稿；丢弃未发送意见前必须明确确认</td>
 </tr>
 <tr>
-<td>UI fit</td>
-<td>English and Chinese copy, keyboard shortcuts, responsive layout, and DSH theme tokens</td>
+<td>界面适配</td>
+<td>中英文文案、键盘快捷键、响应式布局与 DSH 主题变量</td>
 </tr>
 </tbody></table>
 <hr>
 <p></p>
-<h3>📦 Install</h3>
-<p>Install the GitHub bundle into the DSH Web profile, then restart <code>dsh web</code>:</p>
+<h3>📦 安装</h3>
+<p>把 GitHub bundle 安装到 DSH Web profile，然后重启 <code>dsh web</code>：</p>
 <pre><code class="language-bash">dsh plugin --profile web add github:titanwings/dsh-plannotator#v0.1.3
 </code></pre>
-<p>The repository ships its built Host and Web bundles, so installation runs no
-package build script and needs no <code>allowBuilds</code> entry. Pin a reviewed commit SHA
-instead of the release tag when you need an exact source revision.</p>
-<p>Use Node.js 22.19+:</p>
+<p>仓库已随附构建完成的 Host 与 Web bundle，因此安装时不会运行包构建脚本，
+也不需要添加 <code>allowBuilds</code>。如果需要锁定到准确源码版本，可以用已经审阅的
+commit SHA 替换 release tag。</p>
+<p>需要 Node.js 22.19+：</p>
 <pre><code class="language-bash">pnpm install
 pnpm check
 
 cd /path/to/deepseek-harness
 pnpm dsh plugin --profile web add /path/to/dsh-plannotator
 </code></pre>
-<p>Restart <code>dsh web</code> after changing the installed Client plugin set.</p>
+<p>修改已安装的 Client 插件集合后，请重启 <code>dsh web</code>。</p>
 <hr>
 <p></p>
-<h3>🔄 How it works</h3>
+<h3>🔄 使用流程</h3>
 <ol>
-<li>Ask the coding agent to create a plan in DSH Plan mode.</li>
-<li>When <code>exit_plan_mode</code> reaches Plan Review, DSH shows a compact gate. On wide
-screens the review opens beside the conversation; narrower screens keep it
-closed until you choose <strong>Open review</strong>.</li>
-<li>Select the exact text that needs work. Collapse and reopen the panel at any
-time without settling the review.</li>
-<li>Add as many targeted comments as necessary, plus optional overall feedback.</li>
-<li>Choose <strong>Send feedback</strong>. The agent receives one structured review and stays
-in plan mode.</li>
-<li>Review the revision and choose <strong>Approve</strong> when it is ready to implement.</li>
+<li>在 DSH Plan mode 中让 Coding Agent 生成一份计划。</li>
+<li><code>exit_plan_mode</code> 进入 Plan Review 后，DSH 会显示紧凑入口。宽屏会在对话区
+右侧并排打开审阅栏；较窄屏幕默认保持收起，点击 <strong>打开审阅栏</strong> 后再显示。</li>
+<li>选中需要修改的准确原文；随时可以收起和重新打开审阅栏，不会提交审阅。</li>
+<li>添加多条针对性意见，并按需填写整体反馈。</li>
+<li>点击 <strong>发送反馈</strong>。Agent 会收到一份结构化审阅，并留在 Plan mode。</li>
+<li>审阅修订版，确认可以实施后再点击 <strong>批准计划</strong>。</li>
 </ol>
-<p><strong>Chat about it</strong> dismisses the gate and returns to the ordinary composer.
-Removing the plugin restores DSH&#39;s built-in Plan Review automatically.</p>
-<h4>Built for real coding plans</h4>
-<p>The screenshots above use a production-style authentication migration example,
-not placeholder copy. The same workflow is useful whenever several plan details
-must be correct before the first edit:</p>
+<p><strong>继续讨论</strong>会关闭当前 gate，回到普通输入框。卸载插件后，DSH 原生 Plan Review
+会自动恢复。</p>
+<h4>适合真实的 Coding 计划</h4>
+<p>上面的截图使用一个贴近生产场景的认证迁移示例，不是占位文案。只要一个计划在首次
+修改代码前需要同时确认多个细节，这套工作流就很有用：</p>
 <table>
 <thead>
 <tr>
-<th>Plan</th>
-<th>Useful review comments</th>
+<th>计划类型</th>
+<th>很适合批注的内容</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Database or auth migration</td>
-<td>Compatibility window, idempotent migration, rollback threshold, zero-downtime sequencing</td>
+<td>数据库或认证迁移</td>
+<td>兼容窗口、幂等迁移、回滚阈值、零停机顺序</td>
 </tr>
 <tr>
-<td>Public API refactor</td>
-<td>Contract preservation, deprecation path, versioning, mobile or SDK compatibility</td>
+<td>公共 API 重构</td>
+<td>契约保持、废弃路径、版本策略、移动端或 SDK 兼容</td>
 </tr>
 <tr>
-<td>Security change</td>
-<td>Trust boundaries, CSRF and secret handling, audit evidence, failure behavior</td>
+<td>安全变更</td>
+<td>信任边界、CSRF 与 secret 处理、审计证据、失败语义</td>
 </tr>
 <tr>
-<td>Deployment rollout</td>
-<td>Feature-flag phases, observable stop conditions, owners, rollback rehearsal</td>
+<td>部署与灰度</td>
+<td>Feature flag 阶段、可观测停止条件、负责人、回滚演练</td>
 </tr>
 <tr>
-<td>Test strategy</td>
-<td>Missing failure cases, concurrency, restart recovery, regression and acceptance criteria</td>
+<td>测试策略</td>
+<td>遗漏的失败场景、并发、重启恢复、回归与验收标准</td>
 </tr>
 </tbody></table>
 <hr>
-<h3>🧩 Compatibility and boundaries</h3>
+<h3>🧩 兼容性与边界</h3>
 <ul>
-<li>Designed for the DeepSeek Harness <strong>Web</strong> client and Node.js 22.19+.</li>
-<li>Claims only a valid, single-question DSH <code>plan-review</code> interaction. Other
-questions fall through to the built-in renderer.</li>
-<li>Reviews Markdown plans; it is not a general document editor, Git diff viewer,
-PR publisher, file tree, or the full standalone Plannotator SPA.</li>
-<li>Drafts live in the current browser&#39;s local storage. They are not cloud-synced
-and are intentionally rejected when the plan revision changes.</li>
-<li>At 1480px and above, the plugin reserves a 440–560px companion column beside
-DSH, so the panel and conversation never overlap. Narrower desktops use an
-on-demand drawer; phones use a compact bottom sheet.</li>
-<li>The companion panel is plugin-owned, not DSH&#39;s core <code>details</code> panel. It uses
-the stable Web <code>#root</code> mount boundary to reserve space and lets AppFrame
-reflow normally; it does not register in or rewrite the core details grid.</li>
-<li>No custom Host route, third-party service, or telemetry is used. Feedback
-travels through DSH&#39;s existing response channel.</li>
+<li>面向 DeepSeek Harness <strong>Web</strong> 客户端，需要 Node.js 22.19+。</li>
+<li>只接管合法、单问题的 DSH <code>plan-review</code> 交互；其他问题会自动交还内置渲染器。</li>
+<li>它审阅 Markdown 计划，不是通用文档编辑器、Git diff viewer、PR 发布器、
+文件树，也不是完整的 Plannotator 独立 SPA。</li>
+<li>草稿保存在当前浏览器 local storage，不会云同步；计划版本变化时会主动拒绝旧草稿。</li>
+<li>1480px 及以上会在 DSH 右侧预留 440–560px 的 companion column，审阅栏和
+对话区不会重叠；较窄桌面使用按需抽屉，手机端使用紧凑底部面板。</li>
+<li>该面板由插件自身提供，不是 DSH core 的 <code>details</code> 面板。插件只在稳定的 Web
+<code>#root</code> 挂载边界旁预留空间，让 AppFrame 正常重排，不向 core details grid
+注册内容，也不改写它的列定义。</li>
+<li>不使用自定义 Host route、第三方服务或遥测；反馈走 DSH 现有响应通道。</li>
 </ul>
-<p>The bundle inserts one Cordis Loader row. Its Host entry is deliberately a
-no-op; <code>package.json#dsh.client</code> exposes the Web bundle. The Client registers
-its locale namespace and a <code>conversation.composer</code> chain entry at priority
-<code>-10</code>, ahead of the default question renderer, and selects only Plan Review
-requests. That contribution renders the compact gate and mounts the
-plugin-owned panel through a React portal. Wide layouts reserve matching space
-at the stable Web root; narrower layouts reuse the panel as an on-demand drawer
-or bottom sheet.</p>
-<p>There is no DSH core patch, parallel agent loop, duplicate persistence layer,
-or custom scheduler. Unloading the Cordis row removes the slot contribution and
-reveals the built-in UI again.</p>
+<p>这个 bundle 只插入一条 Cordis Loader row。Host 入口有意保持 no-op；
+<code>package.json#dsh.client</code> 暴露 Web bundle。Client 注册自己的 locale namespace，
+并在优先级 <code>-10</code> 注册一条 <code>conversation.composer</code> chain entry，只选择 Plan
+Review 请求，排在默认问题渲染器之前。这个 contribution 负责渲染紧凑入口，
+并通过 React portal 挂载插件自有的审阅面板。宽屏会在稳定的 Web root 旁预留
+同等宽度，较窄布局则复用同一个面板作为按需抽屉或底部面板。</p>
+<p>它没有 DSH core patch、平行 Agent loop、重复的持久化层或自建 scheduler。
+卸载 Cordis row 后，slot contribution 会被移除，内置界面自然重新出现。</p>
 <hr>
-<h3>🛠️ Development</h3>
+<h3>🛠️ 开发</h3>
 <pre><code class="language-bash">pnpm typecheck
 pnpm test
 pnpm build
 </code></pre>
-<p>The browser bundle follows DSH&#39;s <code>window.__ModuleLoader__</code> contract and treats
-React, ReactDOM, and DSH UI primitives as platform modules, preserving one React
-runtime.</p>
+<p>浏览器 bundle 遵循 DSH 的 <code>window.__ModuleLoader__</code> contract，并把 React、
+ReactDOM 与 DSH UI primitives 当作平台模块，确保页面里只有一份 React runtime。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/titanwings/dsh-plannotator/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/titanwings/dsh-plannotator/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -193,145 +193,134 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
-<p>English | <a href="https://github.com/suntianc/dsh-codex-auth/blob/main/README.zh.md">中文</a></p>
-<p>A self-contained <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>
-plugin that reuses the ChatGPT login maintained by the official <strong>Codex CLI</strong>
-(<code>~/.codex/auth.json</code>, or <code>$CODEX_HOME/auth.json</code>). It registers the
-<code>openai-codex</code> LLM route and adds a native <strong>GPT Auth</strong> section to the Harness
-Settings UI.</p>
+<p><a href="https://github.com/suntianc/dsh-codex-auth/blob/main/README.md">English</a> | 中文</p>
+<p>这是一个自包含的 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>
+插件：复用官方 <strong>Codex CLI</strong> 维护的 ChatGPT 登录态（<code>~/.codex/auth.json</code>，或
+<code>$CODEX_HOME/auth.json</code>），注册 <code>openai-codex</code> LLM 路由，并在 Harness 设置中增加
+原生风格的独立 <strong>GPT Auth</strong> 分区。</p>
 <blockquote>
-<p><strong>⚠️ Unofficial channel — personal development only.</strong> The pi-ai Codex
-provider talks to the unofficial <code>chatgpt.com/backend-api</code> surface. It may be
-rate-limited, revoked, or changed at any time and must not be relied on for
-production use.</p>
+<p><strong>⚠️ 非官方通道——仅限个人开发。</strong> pi-ai 的 Codex provider 使用非官方
+<code>chatgpt.com/backend-api</code>，可能随时被限流、撤销或变更，不得用于生产。</p>
 </blockquote>
-<h3>Features</h3>
+<h3>功能</h3>
 <ul>
-<li>Registers the <code>openai-codex</code> route using the installed pi-ai provider.</li>
-<li>Reads the current Codex access token only when needed and refreshes it through
-the official OAuth token endpoint before expiry.</li>
-<li>Starts the official <code>codex login</code> browser or device-code flow.</li>
-<li>Adds an independently navigable <code>GPT Auth</code> Settings section using native DSH
-buttons, status indicators, tokens, and the stock gear icon.</li>
-<li>Uses a plugin-owned, loopback-only <code>/codex-auth</code> Connection RPC channel.</li>
-<li>Never sends token values to the browser, Harness settings, or logs.</li>
-<li>Installs without modifying the Harness Web shell, apiproxy, or source tree.</li>
+<li>使用已安装的 pi-ai provider 注册 <code>openai-codex</code> 路由。</li>
+<li>仅在需要时读取 Codex access token，并在到期前通过官方 OAuth token 端点刷新。</li>
+<li>启动官方 <code>codex login</code> 浏览器登录或设备码登录流程。</li>
+<li>使用 DSH 原生按钮、状态点和语义 token，提供独立 <code>GPT Auth</code> 设置分区；菜单使用
+DSH 默认齿轮图标。</li>
+<li>使用插件自有、仅允许 loopback 的 <code>/codex-auth</code> Connection RPC。</li>
+<li>token 值不会发送到浏览器、Harness 设置或日志。</li>
+<li>不修改 Harness Web shell、apiproxy 或源码。</li>
 </ul>
-<h3>Requirements</h3>
+<h3>环境要求</h3>
 <ul>
-<li>DeepSeek Harness <code>0.1.0-rc.6</code> or newer compatible <code>0.1.x</code> release.</li>
-<li>Node.js <code>^22.19.0</code> or <code>&gt;=24.0.0</code>.</li>
-<li>The <code>codex</code> CLI available on <code>PATH</code>.</li>
-<li>Run <code>codex login</code> before use, or start login from the GPT Auth card.</li>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code> 或兼容的后续 <code>0.1.x</code> 版本。</li>
+<li>Node.js <code>^22.19.0</code> 或 <code>&gt;=24.0.0</code>。</li>
+<li><code>codex</code> CLI 已加入 <code>PATH</code>。</li>
+<li>可提前执行 <code>codex login</code>，也可在 GPT Auth 卡片中启动登录。</li>
 </ul>
-<h3>Install from npm (recommended)</h3>
-<p>The npm package includes prebuilt Host and browser bundles, so no install-time
-build permission is required:</p>
+<h3>从 npm 安装（推荐）</h3>
+<p>npm 包已包含预构建的 Host 与浏览器 bundle，不需要安装期构建权限：</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-codex-auth
 </code></pre>
-<p>Restart <code>dsh web</code>, open Settings, and select <strong>GPT Auth</strong>.</p>
-<h3>Install a prebuilt release</h3>
-<p>The release tarball already contains both bundles and needs no install-time
-build permission:</p>
+<p>重启 <code>dsh web</code>，打开设置并选择 <strong>GPT Auth</strong>。</p>
+<h3>安装预构建 Release</h3>
+<p>Release tarball 已包含 Host 与浏览器构建产物，不需要安装期构建权限：</p>
 <pre><code class="language-sh">dsh plugin --profile web add https://github.com/suntianc/dsh-codex-auth/releases/download/v0.1.0/dsh-codex-auth-0.1.0.tgz
 </code></pre>
-<p>Restart <code>dsh web</code>, open Settings, and select <strong>GPT Auth</strong>.</p>
-<h3>Install from GitHub source</h3>
-<p>Install the repository into the profile you run:</p>
+<p>重启 <code>dsh web</code>，打开设置并选择 <strong>GPT Auth</strong>。</p>
+<h3>从 GitHub 源码安装</h3>
+<p>安装到实际运行的 profile：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:suntianc/dsh-codex-auth
 </code></pre>
-<p>Git dependencies are built from source by the package&#39;s <code>prepare</code> script.
-pnpm 10+ blocks that script until explicitly allowed, so the first command may
-print an <code>allowBuilds</code> key and stop. Copy the <strong>exact key printed by dsh</strong> under
-<code>allowBuilds</code> in <code>~/.dsh/profiles/web/pnpm-workspace.yaml</code>, then run the command
-again. Only grant this permission after reviewing the source.</p>
-<p>For a reproducible install, pin a release tag or commit:</p>
+<p>Git 依赖会通过包内 <code>prepare</code> 脚本从源码构建。pnpm 10+ 默认阻止该脚本，因此第一次
+安装可能打印 <code>allowBuilds</code> 键并停止。把 <strong>dsh 输出的完整键</strong> 加到
+<code>~/.dsh/profiles/web/pnpm-workspace.yaml</code> 的 <code>allowBuilds</code> 下，再重新执行安装。只应在
+审查并信任源码后授权。</p>
+<p>需要可复现安装时，固定 release tag 或 commit：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:suntianc/dsh-codex-auth#v0.1.0
 </code></pre>
-<p>Restart <code>dsh web</code>, open Settings, and select <strong>GPT Auth</strong>.</p>
-<h3>Install a tarball</h3>
-<p>A tarball contains prebuilt Host and browser bundles and requires no install-time
-build permission:</p>
+<p>重启 <code>dsh web</code>，打开设置并选择 <strong>GPT Auth</strong>。</p>
+<h3>从 tarball 安装</h3>
+<p>Tarball 已包含 Host 与浏览器构建产物，不需要安装期构建权限：</p>
 <pre><code class="language-sh">git clone https://github.com/suntianc/dsh-codex-auth.git
 cd dsh-codex-auth
 pnpm install
 pnpm pack
 dsh plugin --profile web add ./dsh-codex-auth-0.1.0.tgz
 </code></pre>
-<h3>Configuration</h3>
-<p>All plugin-row fields are optional:</p>
+<h3>配置</h3>
+<p>插件行字段全部可选：</p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认值</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>authJsonPath</code></td>
 <td><code>&#39;&#39;</code> → <code>$CODEX_HOME</code>/<code>~/.codex/auth.json</code></td>
-<td>Codex auth file</td>
+<td>Codex 登录文件</td>
 </tr>
 <tr>
 <td><code>credentialRef</code></td>
 <td><code>CODEX_CHATGPT_TOKEN</code></td>
-<td>Value-free reference shown by the card</td>
+<td>状态卡展示的非敏感引用</td>
 </tr>
 <tr>
 <td><code>refreshLeadMs</code></td>
 <td><code>300000</code></td>
-<td>Refresh lead time in milliseconds</td>
+<td>token 到期前的刷新提前量（毫秒）</td>
 </tr>
 <tr>
 <td><code>codexCommand</code></td>
 <td><code>codex</code></td>
-<td>CLI command used for login and version probing</td>
+<td>登录和版本探测使用的 CLI 命令</td>
 </tr>
 <tr>
 <td><code>displayName</code></td>
 <td><code>OpenAI Codex (chatgpt)</code></td>
-<td>Provider label in model selectors</td>
+<td>模型选择器中的 provider 名称</td>
 </tr>
 </tbody></table>
-<p>The package includes its own <code>dsh.bundle</code> patch, so <code>dsh plugin</code> installs and
-activates it. Do not also add an <code>openai-codex</code> entry under
-<code>llm-pi-ai.providers</code>; duplicate route registrations conflict.</p>
-<h3>Security and limitations</h3>
+<p>本包自带 <code>dsh.bundle</code> patch，<code>dsh plugin</code> 会同时安装并启用。不要再在
+<code>llm-pi-ai.providers</code> 下添加 <code>openai-codex</code>，重复注册会冲突。</p>
+<h3>安全与限制</h3>
 <ul>
-<li>Token contents never cross the dedicated RPC channel. Status contains only
-availability, auth mode, expiry, refresh time, and a non-secret reference.</li>
-<li>Refresh writes preserve unknown fields and atomically replace the auth file
-with owner-only (<code>0600</code>) permissions.</li>
-<li>The RPC channel is restricted to loopback authorities.</li>
-<li>When Codex stores credentials only in the OS keyring, <code>auth.json</code> may contain
-no usable token. Set <code>cli_auth_credentials_store = &quot;file&quot;</code> in
-<code>~/.codex/config.toml</code>, then run <code>codex login</code> again.</li>
-<li>A missing login or failed refresh produces a <code>MISSING_CREDENTIAL</code> diagnostic;
-a missing Codex CLI disables the login actions.</li>
+<li>token 内容不会跨越专用 RPC；状态仅含可用性、登录方式、到期时间、刷新时间和
+非敏感引用。</li>
+<li>刷新写回会保留未知字段，并以仅属主可读写（<code>0600</code>）权限原子替换登录文件。</li>
+<li>RPC 通道只接受 loopback authority。</li>
+<li>若 Codex 只把凭证放在系统钥匙串，<code>auth.json</code> 可能没有可用 token。可在
+<code>~/.codex/config.toml</code> 设置 <code>cli_auth_credentials_store = &quot;file&quot;</code>，再执行
+<code>codex login</code>。</li>
+<li>登录缺失或刷新失败会产生 <code>MISSING_CREDENTIAL</code> 诊断；Codex CLI 缺失时登录按钮
+会被禁用。</li>
 </ul>
-<h3>Development</h3>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run check
 </code></pre>
-<p><code>pnpm run build</code> emits:</p>
+<p><code>pnpm run build</code> 生成：</p>
 <ul>
-<li><code>lib/index.js</code> — Host plugin</li>
-<li><code>lib/invariant.js</code> — invariant companion</li>
-<li><code>lib/client.js</code> — loader-compatible browser plugin with inline CSS Modules</li>
-<li><code>lib/types/**</code> — declaration files</li>
+<li><code>lib/index.js</code>：Host 插件</li>
+<li><code>lib/invariant.js</code>：invariant companion</li>
+<li><code>lib/client.js</code>：兼容 DSH Loader、内联 CSS Modules 的浏览器插件</li>
+<li><code>lib/types/**</code>：类型声明</li>
 </ul>
-<p>The standalone build preset in <code>build/client-bundle.ts</code> deliberately carries the
-small Web-loader and CSS contract needed by this dual-face plugin; it does not
-import files from a DeepSeek Harness checkout.</p>
-<p>See <a href="https://github.com/suntianc/dsh-codex-auth/blob/main/docs/design.md"><code>docs/design.md</code></a> for the design record and glossary.</p>
-<h3>Friendship links</h3>
+<p><code>build/client-bundle.ts</code> 内置本双面插件所需的最小 Web Loader 与 CSS 构建契约，
+不依赖旁边存在 DeepSeek Harness 源码 checkout。</p>
+<p>设计记录与术语见 <a href="https://github.com/suntianc/dsh-codex-auth/blob/main/docs/design.md"><code>docs/design.md</code></a>。</p>
+<h3>友情链接</h3>
 <ul>
 <li><a href="https://linux.do/">L 站</a></li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/suntianc/dsh-codex-auth/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/suntianc/dsh-codex-auth/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

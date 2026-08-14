@@ -189,107 +189,98 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>READ + WRITE for office documents and Jupyter notebooks inside
-<a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> — and
-anywhere else your agent runs.</strong></p>
-<p>DSH Cowork adds first-class document handling to coding agents:</p>
+<p><strong>在 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 中读写 Office 文档与 Jupyter Notebook——以及其他任何你的 Agent 运行的地方。</strong></p>
+<p>DSH Cowork 为编码 Agent 提供了一流的文档处理能力：</p>
 <table>
 <thead>
 <tr>
-<th>Format</th>
-<th>Read</th>
-<th>Write (v1)</th>
+<th>格式</th>
+<th>读取（Read）</th>
+<th>写入（Write, v1）</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>xlsx</strong> spreadsheets</td>
-<td>✅ bounded, cell-addressed windows</td>
-<td>✅ create + edit by cell ref</td>
+<td><strong>xlsx</strong> 电子表格</td>
+<td>✅ 有界、按单元格寻址的窗口</td>
+<td>✅ 按单元格引用新建 / 编辑</td>
 </tr>
 <tr>
-<td><strong>ipynb</strong> notebooks</td>
-<td>✅ cells + inline outputs</td>
-<td>✅ create + edit by cell index</td>
+<td><strong>ipynb</strong> 笔记本</td>
+<td>✅ 单元格 + 内联输出</td>
+<td>✅ 按单元格下标新建 / 编辑</td>
 </tr>
 <tr>
 <td><strong>pdf</strong></td>
-<td>✅ text windows (<code>pages</code>)</td>
-<td>— (v2: form-fill)</td>
+<td>✅ 文本窗口（<code>pages</code>）</td>
+<td>—（v2：表单填写）</td>
 </tr>
 <tr>
 <td><strong>docx</strong></td>
-<td>✅ paragraphs + word count</td>
-<td>— (v2: generation)</td>
+<td>✅ 段落 + 字数统计</td>
+<td>—（v2：生成）</td>
 </tr>
 <tr>
 <td><strong>pptx</strong></td>
-<td>✅ slides + shape ids</td>
-<td>— (v2: generation)</td>
+<td>✅ 幻灯片 + 形状 id</td>
+<td>—（v2：生成）</td>
 </tr>
 </tbody></table>
-<p><strong>中文版见 <a href="https://github.com/Jesse-njx/dsh-cowork/blob/main/README.zh.md">README.zh.md</a>.</strong></p>
-<h3>Why</h3>
-<p>DeepSeek Harness&#39;s built-in <code>read</code> is UTF-8 text only — it cannot open a
-spreadsheet, a PDF, a slide deck, or a notebook. Claude Code reads PDFs and
-notebooks natively; Codex has nothing. DSH Cowork closes that gap as an
-out-of-tree plugin (no fork, no PR needed — the ecosystem path
-CONTRIBUTING.md recommends).</p>
-<p>Two ideas make &quot;Cowork = READ + WRITE&quot; coherent instead of two separate
-tools:</p>
+<p>English version: <a href="https://github.com/Jesse-njx/dsh-cowork/blob/main/README.md">README.md</a>.</p>
+<h3>为什么做这个</h3>
+<p>DeepSeek Harness 内置的 <code>read</code> 只支持 UTF-8 文本——它打不开电子表格、PDF、
+幻灯片或笔记本。Claude Code 原生支持 PDF 和笔记本；Codex 则什么都没有。
+DSH Cowork 以<strong>仓库外插件</strong>的方式补齐了这个缺口（无需 fork、无需 PR——
+这正是 CONTRIBUTING.md 推荐的生态路径）。</p>
+<p>&quot;Cowork = READ + WRITE&quot; 之所以是一个整体而非两个孤立工具，靠两个设计：</p>
 <ol>
-<li><strong>Stable addresses.</strong> <code>doc_read</code> returns <em>cell refs</em> for xlsx (<code>A1</code>, <code>C12</code>)
-and <em>shape ids</em> for pptx — <code>doc_write</code> consumes them. Line numbers cannot
-address binary formats; addresses can.</li>
-<li><strong>Bounded windows, explicit truncation.</strong> Every read is capped
-(pages / rows / slides / cells / bytes). Silent truncation is the cardinal
-sin: a <code>&gt; Truncated:</code> notice always tells you the window was cut short.</li>
+<li><strong>稳定地址（stable addresses）。</strong> <code>doc_read</code> 返回 xlsx 的<strong>单元格引用</strong>
+（<code>A1</code>、<code>C12</code>）和 pptx 的<strong>形状 id</strong>，<code>doc_write</code> 直接消费这些地址。
+行号无法寻址二进制格式，地址可以。</li>
+<li><strong>有界窗口 + 显式截断。</strong> 每次读取都有上限（页 / 行 / 幻灯片 / 单元格 /
+字节）。静默截断是最大的罪过：窗口被截断时一定会出现 <code>&gt; Truncated:</code> 提示。</li>
 </ol>
-<h3>Packages</h3>
+<h3>包结构</h3>
 <table>
 <thead>
 <tr>
-<th>Package</th>
-<th>What it is</th>
+<th>包</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>packages/core</code></td>
-<td>Pure TS, zero DSH deps: sniff → extract → build, windowing, safety caps</td>
+<td>纯 TS、零 DSH 依赖：嗅探 → 抽取 → 构建、窗口化、安全上限</td>
 </tr>
 <tr>
 <td><code>packages/dsh</code></td>
-<td><strong>DSH bundle</strong>: <code>doc_read</code> / <code>doc_write</code> tools (install with <code>dsh plugin add</code>)</td>
+<td><strong>DSH 插件包</strong>：<code>doc_read</code> / <code>doc_write</code> 工具（<code>dsh plugin add</code> 安装）</td>
 </tr>
 <tr>
 <td><code>packages/mcp</code></td>
-<td><strong>MCP server</strong> over stdio — for Codex, Claude Code, any MCP client</td>
+<td><strong>MCP 服务器</strong>（stdio）——供 Codex、Claude Code 及任意 MCP 客户端使用</td>
 </tr>
 <tr>
 <td><code>packages/cli</code></td>
-<td><code>doc-read</code> / <code>doc-write</code> binaries + <code>SKILL.md</code> (the <code>pi</code> harness adapter)</td>
-</tr>
-<tr>
-<td><code>packages/chatnode-wechat</code></td>
-<td><strong>DSH bundle</strong>: chat with / monitor / approve your DSH agents from WeChat (iLink gateway + conversation node)</td>
+<td><code>doc-read</code> / <code>doc-write</code> 命令行 + <code>SKILL.md</code>（<code>pi</code> harness 适配）</td>
 </tr>
 </tbody></table>
-<h3>Install into DeepSeek Harness</h3>
-<pre><code class="language-sh"># GitHub delivery (not published to npm)
+<h3>安装到 DeepSeek Harness</h3>
+<pre><code class="language-sh"># 从仓库克隆后安装（当前分发方式：GitHub，不发布到 npm）
 git clone https://github.com/Jesse-njx/dsh-cowork.git
 cd dsh-cowork
 pnpm install          # installs deps and builds all packages (prepare)
-dsh plugin --profile &lt;your-profile&gt; add ./packages/dsh
+dsh plugin --profile &lt;你的profile&gt; add ./packages/dsh
 </code></pre>
-<p>Then <code>doc_read</code> / <code>doc_write</code> are available to the model. (A live agent
-session also verifies: ask the model to <code>doc_read</code> an <code>.xlsx</code>.)</p>
-<p>Configure (all optional, sensible defaults):</p>
-<pre><code class="language-yaml"># in your profile&#39;s cordis.patch.yml, override the cowork-docs row
+<p>之后模型即可使用 <code>doc_read</code> / <code>doc_write</code>（可用一个真实会话验证：让模型
+<code>doc_read</code> 一个 <code>.xlsx</code> 文件）。</p>
+<p>可选配置（均有合理默认值）：</p>
+<pre><code class="language-yaml"># 在 profile 的 cordis.patch.yml 中覆盖 cowork-docs 行
 - id: cowork-docs
   name: &#39;@dsh-cowork/plugin&#39;
   config:
-    maxInputBytes: 67108864      # 64 MiB
-    maxOutputBytes: 262144       # 256 KiB model-facing window
-    maxDecompressedBytes: 536870912  # zip-bomb guard (512 MiB)
+    maxInputBytes: 67108864
+    maxOutputBytes: 262144
+    maxDecompressedBytes: 536870912   # zip 炸弹防护
     maxZipEntries: 4096
     maxPages: 20
     maxSheetRows: 200
@@ -297,34 +288,32 @@ session also verifies: ask the model to <code>doc_read</code> an <code>.xlsx</co
     maxSlides: 20
     maxCells: 200
 </code></pre>
-<h3>Use from any agent (MCP)</h3>
-<pre><code class="language-sh"># Codex / Claude Code MCP config
-# { &quot;mcpServers&quot;: { &quot;cowork&quot;: { &quot;command&quot;: &quot;node&quot;, &quot;args&quot;: [&quot;&lt;repo&gt;/packages/mcp/lib/index.js&quot;], &quot;cwd&quot;: &quot;&lt;your working dir&gt;&quot; } } }
+<h3>供任意 Agent 使用（MCP / CLI）</h3>
+<pre><code class="language-sh"># Codex / Claude Code 的 MCP 配置示例
+# { &quot;mcpServers&quot;: { &quot;cowork&quot;: { &quot;command&quot;: &quot;node&quot;, &quot;args&quot;: [&quot;&lt;repo&gt;/packages/mcp/lib/index.js&quot;], &quot;cwd&quot;: &quot;&lt;工作目录&gt;&quot; } } }
 </code></pre>
-<pre><code class="language-sh"># or the plain CLI
-doc-read report.xlsx --sheets Data --rows 50
+<pre><code class="language-sh">doc-read report.xlsx --sheets Data --rows 50
 doc-write edit report.xlsx --spec edit-spec.json
 </code></pre>
-<h3>Safety model</h3>
+<h3>安全模型</h3>
 <ul>
-<li><strong>Zip bombs</strong>: entry-count + decompressed-size caps on every OOXML archive,
-checked before any codec expands bytes.</li>
-<li><strong>Macros</strong>: <code>.xlsm</code> / <code>.docm</code> / <code>.pptm</code> (anything with <code>vbaProject.bin</code>) are
-rejected outright — Cowork never reads or writes macro formats.</li>
-<li><strong>Read-only mode</strong>: in <code>read-only</code> sandbox mode, <code>doc_write</code> is hard-blocked
-while <code>doc_read</code> stays available.</li>
-<li><strong>Edit guards</strong>: <code>doc_write</code> edit refuses unless the file was read this
-session (<code>expected_version</code>), and optionally fails on content change
-(<code>expected_sha256</code>) — a hash-check on every edit.</li>
-<li><strong>No silent overwrite</strong>: creating over an existing file requires having read
-it (DSH) or <code>force</code> (CLI/MCP).</li>
-<li><strong>Atomic writes</strong>: temp file + rename, never a partial target.</li>
-<li><strong>Stale formulas</strong>: edited xlsx sheets get cached formula results cleared so
-Excel / LibreOffice recalculate on open (exceljs never recalculates).</li>
-<li><strong>Untrusted input</strong>: formulas, hidden sheets, and speaker notes are treated
-as data, surfaced with the extraction, never executed.</li>
+<li><strong>Zip 炸弹</strong>：所有 OOXML 归档在解压前先检查条目数与解压后大小上限。</li>
+<li><strong>宏文件</strong>：<code>.xlsm</code> / <code>.docm</code> / <code>.pptm</code>（含 <code>vbaProject.bin</code> 者）一律拒绝
+——Cowork 从不读写宏格式。</li>
+<li><strong>只读模式</strong>：沙箱处于 <code>read-only</code> 时，<code>doc_write</code> 被硬性禁止，
+<code>doc_read</code> 照常可用。</li>
+<li><strong>编辑防护</strong>：<code>doc_write</code> 编辑前必须已在本会话读取过该文件
+（<code>expected_version</code>），并可选用内容哈希校验（<code>expected_sha256</code>）——每次
+编辑都是一次哈希检查。</li>
+<li><strong>禁止静默覆盖</strong>：覆盖已存在文件需要先读取过（DSH）或显式 <code>force</code>
+（CLI / MCP）。</li>
+<li><strong>原子写入</strong>：临时文件 + 重命名，绝不留下半成品目标文件。</li>
+<li><strong>过期公式</strong>：被编辑的 xlsx 工作表会清除缓存的公式结果，让
+Excel / LibreOffice 打开时重新计算（exceljs 本身不重算）。</li>
+<li><strong>不可信输入</strong>：公式、隐藏工作表、演讲者备注一律视为数据，随抽取结果
+呈现，绝不执行。</li>
 </ul>
-<h3>Architecture</h3>
+<h3>架构</h3>
 <pre><code>                   ┌──────────────────────────────────────────────┐
                    │                @dsh-cowork/core              │
                    │  sniff → readDocument / writeDocument → caps │
@@ -332,37 +321,37 @@ as data, surfaced with the extraction, never executed.</li>
                            │              │              │
                 ┌──────────▼───┐  ┌───────▼──────┐  ┌────▼───────┐
                 │  packages/dsh│  │ packages/mcp │  │ packages/cli│
-                │ DSH bundle   │  │ MCP stdio    │  │ + SKILL.md │
+                │ DSH 插件包   │  │ MCP stdio    │  │ + SKILL.md │
                 └──────────────┘  └──────────────┘  └────────────┘
 </code></pre>
-<p>The DSH bundle routes reads through <code>ctx.fs</code> (bounded <code>readBytes</code>,
-sandbox-aware resolution, <code>fs/observed</code> events) and performs atomic byte
-writes itself because the fs service is text-only — re-observing the real
-post-write version so the built-in policy machinery stays coherent.</p>
-<h3>Development</h3>
+<p>DSH 插件包的读取走 <code>ctx.fs</code>（有界 <code>readBytes</code>、沙箱感知的路径解析、
+<code>fs/observed</code> 事件）；由于 fs 服务只支持文本写入，字节写入由插件自行完成
+（临时文件 + 原子重命名），并在写入后重新观察真实版本号，使内置策略机制
+保持一致。</p>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm -r build
-pnpm -r test      # core 35 + plugin 15 + cli 6 + mcp 7 tests
+pnpm -r test      # core 35 + plugin 15 + cli 6 + mcp 7
 </code></pre>
 <ul>
-<li>Fixtures: <code>node packages/core/scripts/make-fixtures.mjs</code> (needs macOS
-<code>cupsfilter</code> for the PDF; skip otherwise).</li>
-<li>Node 20+; tests run on Node&#39;s native TS type-stripping.</li>
+<li>测试夹具：<code>node packages/core/scripts/make-fixtures.mjs</code>（PDF 需要 macOS
+<code>cupsfilter</code>，否则跳过）。</li>
+<li>Node 20+；测试使用 Node 原生 TS type-stripping。</li>
 </ul>
-<h3>Roadmap</h3>
+<h3>路线图</h3>
 <ul>
-<li><strong>v1 (this repo)</strong>: read all five formats; write xlsx + ipynb.</li>
-<li><strong>v2</strong>: ipynb write polish, docx/pptx <em>generation</em>, PDF form-fill
-(pdf-lib), PDF page-render-to-image for vision models, docx raw-OOXML edit.</li>
-<li><strong>Ship</strong>: <code>dsh-plugin</code> GitHub topic, awesome-list entry, Discussions post.</li>
+<li><strong>v1（本仓库）</strong>：读取全部五种格式；写入 xlsx + ipynb。</li>
+<li><strong>v2</strong>：ipynb 写入打磨、docx/pptx <em>生成</em>、PDF 表单填写（pdf-lib）、
+面向视觉模型的 PDF 页面渲染为图片、docx 原生 OOXML 编辑。</li>
+<li><strong>发布</strong>：<code>dsh-plugin</code> GitHub 主题、awesome-list 条目、Discussions 帖子。</li>
 </ul>
-<h3>Contributing</h3>
-<p>This is a <code>dsh-plugin</code>-topic project. Issues, PRs, and Discussions welcome —
-and per <a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/CONTRIBUTING.md">deepseek-harness CONTRIBUTING.md</a>,
-associate your own plugins with the <code>dsh-plugin</code> topic too.</p>
+<h3>贡献</h3>
+<p>本项目使用 <code>dsh-plugin</code> 主题。欢迎提交 Issue、PR 与 Discussion——同时，
+按照 <a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/CONTRIBUTING.md">deepseek-harness CONTRIBUTING.md</a>，
+你自己的插件也请打上 <code>dsh-plugin</code> 主题。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Jesse-njx/dsh-cowork/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-cowork/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

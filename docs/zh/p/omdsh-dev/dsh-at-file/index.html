@@ -189,66 +189,72 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Workspace path references for the DeepSeek Harness web interface. Type <code>@</code> in the composer to search the current workspace and insert a file or directory path.</p>
-<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-at-file/main/assets/screenshots/show-case.png" alt="@ path picker"></p>
-<h3>Usage</h3>
-<p>Choose a result from the <code>@</code> menu. The selected path remains visible in the draft and can be opened or removed from the reference bar.</p>
-<pre><code class="language-text">Review @docs/spec.pdf
+<p>DeepSeek Harness Web 界面的工作区路径引用插件。在输入框输入 <code>@</code>，可以搜索当前工作区并插入文件或目录路径。</p>
+<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-at-file/main/assets/screenshots/show-case.png" alt="@ 路径选择器"></p>
+<h3>使用方式</h3>
+<p>从 <code>@</code> 菜单选择结果后，路径会保留在输入内容中。输入框上方的引用栏可以打开路径或移除引用。</p>
+<pre><code class="language-text">请检查 @docs/spec.pdf
 </code></pre>
-<p>Before the agent starts a step, the plugin confirms that the path exists inside the active workspace. It then adds a short reference message:</p>
+<p>每次 agent 开始处理前，插件会确认该路径位于当前工作区且仍然存在。确认成功后，插件会补充一条简短的引用消息：</p>
 <pre><code class="language-xml">&lt;workspace-reference path=&quot;docs/spec.pdf&quot; kind=&quot;file&quot; /&gt;
 </code></pre>
-<p>The reference contains the workspace-relative path and its kind. The plugin does not open the referenced file or list the contents of a referenced directory. The agent can inspect the path with the tools available in the current session when the task requires it.</p>
-<p>File format and file size do not change this behavior. A PDF follows the same path-reference flow as any other workspace file.</p>
-<p>This mechanism applies to version <code>0.3.0</code> and later. Earlier releases read file content during submission and enforced file-size limits.</p>
-<h3>Path Picker</h3>
-<p>Plain queries match filenames. Exact names, prefixes, and compact matches rank ahead of looser results, without matching letters scattered across a long directory path.</p>
-<p>A query containing <code>/</code> matches path segments in order. For example, <code>src/view</code> can find <code>src/client/view.ts</code>. A trailing slash such as <code>src/</code> searches within that path.</p>
-<p>When a directory is highlighted, press <code>ArrowRight</code> to enter it. The draft advances to <code>@path/</code> without a trailing space, and the candidate menu stays open for the next selection. <code>Enter</code> and pointer selection keep the existing behavior and finish the directory reference.</p>
-<p>Each result shows the filename first and its parent directory underneath. Duplicate filenames include the parent directory in the main label. Built-in SVG icons distinguish folders, source files, text, PDFs, images, data and configuration files, archives, and other files.</p>
-<p>The default index skips common version-control directories, IDE metadata, dependency trees, caches, and build output. The list covers VS Code, Visual Studio, JetBrains IDEs, Fleet, Eclipse, Android and Gradle, Xcode, CMake, Flutter, .NET, Unity, Unreal, and common JavaScript and Python output directories. OS metadata files named <code>desktop.ini</code>, <code>Thumbs.db</code>, and <code>.DS_Store</code> are excluded by default.</p>
-<h3>Install or Update</h3>
-<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.0.tar.gz
+<p>引用消息仅包含工作区相对路径和路径类型。插件不会打开引用文件，也不会列出引用目录中的内容。任务需要读取时，由 agent 使用当前会话中可用的工具处理该路径。</p>
+<p>文件格式和文件大小不会改变处理流程。PDF 与其他工作区文件使用相同的路径引用机制。</p>
+<p>以上机制适用于 <code>0.3.0</code> 及后续版本。早期版本会在提交时读取文件内容，并受文件大小限制。</p>
+<h3>路径选择器</h3>
+<p>普通关键词只匹配文件名。完整名称、前缀和紧凑匹配会排在前面，长目录路径中分散的字符不会产生无关结果。</p>
+<p>关键词中包含 <code>/</code> 时，选择器会依次匹配路径片段。例如，<code>src/view</code> 可以找到 <code>src/client/view.ts</code>。输入 <code>src/</code> 也可以搜索该路径下的条目。</p>
+<p>高亮目录候选后，按右方向键可以进入该目录。输入内容会推进到 <code>@路径/</code>，末尾不添加空格，候选菜单会继续显示。按回车或使用鼠标选择目录时，仍会完成该目录引用。</p>
+<p>候选项优先显示文件名，下方显示父目录。遇到重名文件时，父目录也会写入主标题。内置 SVG 图标可区分目录、源代码、文本、PDF、图片、数据与配置、压缩包以及其他文件。</p>
+<p>默认索引会跳过常见的版本控制目录、IDE 元数据、依赖目录、缓存和构建产物。目前涵盖 VS Code、Visual Studio、JetBrains IDE、Fleet、Eclipse、Android 与 Gradle、Xcode、CMake、Flutter、.NET、Unity、Unreal，以及常见的 JavaScript 和 Python 输出目录。<code>desktop.ini</code>、<code>Thumbs.db</code> 和 <code>.DS_Store</code> 这类系统元数据文件也会默认排除。</p>
+<h3>安装或更新</h3>
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.1.tar.gz
 </code></pre>
-<p>Use the same command to update an existing installation. Restart <code>dsh web</code> after installation so the Host and browser client load version <code>0.5.0</code>.</p>
-<p>File filters are managed under <strong>Settings -&gt; File mentions</strong>. The <strong>Global</strong> tab applies its rules to every workspace. The <strong>Workspace</strong> tab adds rules for one selected workspace while retaining the global rules. Each rule is a complete basename and matching is case-insensitive.</p>
-<p>Rules are added and removed individually. The global list can be restored to the built-in defaults, and a workspace list can be cleared without changing other workspaces. Every change invalidates cached indexes, so the next <code>@</code> search uses the updated filters immediately.</p>
-<h3>Configuration</h3>
-<p>The available options apply to the path picker index:</p>
+<p>已有安装也使用这条命令更新。安装完成后重启 <code>dsh web</code>，确保 Host 和浏览器客户端加载 <code>0.5.1</code>。</p>
+<h3>文件过滤</h3>
+<p>在 <strong>设置 -&gt; 文件提及</strong> 中管理文件名过滤规则。</p>
 <ul>
-<li><code>maxIndexedFiles</code> sets the maximum number of indexed workspace entries.</li>
-<li><code>ignoreDirs</code> replaces the built-in list of directory names excluded from the picker. Set it to <code>[]</code> to index every directory.</li>
+<li><strong>全局</strong> 保存所有工作区共用的规则。</li>
+<li><strong>工作区</strong> 保存当前所选工作区路径的附加规则。每个工作区都有独立列表，面板中会同时显示该工作区继承的全局规则。</li>
 </ul>
-<p>Add the complete configuration to the selected profile&#39;s <code>cordis.patch.yml</code>. The usual path is <code>~/.dsh/profiles/web/cordis.patch.yml</code>.</p>
+<p>每条规则匹配一个完整文件名，匹配时不区分大小写。规则可以逐项添加和删除。<strong>恢复默认值</strong> 会重置全局列表，<strong>清空工作区规则</strong> 只会移除当前工作区的附加项。</p>
+<p>设置通过插件自己的 Host 接口保存到 DSH web profile。升级后，<code>0.4.1</code> 中已有的 <code>ignoreFiles</code> 会继续作为全局列表使用。修改规则时会清除相关索引缓存，下一次输入 <code>@</code> 即可使用新规则。</p>
+<h3>配置</h3>
+<p>当前配置只影响路径选择器的索引：</p>
+<ul>
+<li><code>maxIndexedFiles</code> 设置工作区索引条目的数量上限。</li>
+<li><code>ignoreDirs</code> 替换内置的忽略目录列表。设置为 <code>[]</code> 时会索引所有目录。</li>
+</ul>
+<p>请把完整配置写入所选 profile 的 <code>cordis.patch.yml</code>。常用路径为 <code>~/.dsh/profiles/web/cordis.patch.yml</code>。</p>
 <pre><code class="language-yaml">- id: dsh-at-file
   config:
     maxIndexedFiles: 10000
 </code></pre>
-<p>Omitting <code>ignoreDirs</code> keeps the built-in list. When you provide it, include every directory name you want excluded.</p>
-<h3>Path Handling</h3>
+<p>省略 <code>ignoreDirs</code> 会继续使用内置列表。填写该字段时，请列出所有需要排除的目录名。</p>
+<h3>路径处理</h3>
 <ul>
-<li>The picker indexes regular files and directories in the active workspace. Configured directory names and symbolic links are skipped.</li>
-<li>Global and workspace file-name filters are combined during the Host index walk, before entries count toward <code>maxIndexedFiles</code> or reach the browser.</li>
-<li>The Host accepts workspace-relative paths. Absolute paths and paths that escape the workspace are ignored.</li>
-<li>Reference markers are created only from user-authored text.</li>
-<li>Clicking a referenced path uses the Harness <code>host.openPath</code> endpoint.</li>
-<li>The picker index is cached per session for 30 seconds.</li>
-<li>An <code>@path</code> token cannot contain whitespace or another <code>@</code> character.</li>
-<li><code>maxIndexedFiles</code> limits picker results. A manually entered path can still be referenced when it exists inside the workspace.</li>
+<li>选择器索引当前工作区中的常规文件和目录，并跳过已配置的目录名与符号链接。</li>
+<li>Host 遍历工作区时会合并全局和当前工作区的文件名规则。被过滤的条目不会占用 <code>maxIndexedFiles</code>，也不会发送到浏览器。</li>
+<li>Host 接受工作区相对路径。绝对路径以及越出工作区的路径会被忽略。</li>
+<li>只有用户输入的文本可以生成引用消息。</li>
+<li>点击引用路径时会调用 Harness 的 <code>host.openPath</code> 端点。</li>
+<li>每个会话的路径索引缓存 30 秒。</li>
+<li><code>@路径</code> 不能包含空白字符或另一个 <code>@</code> 字符。</li>
+<li><code>maxIndexedFiles</code> 限制选择器显示的结果。手动输入的路径只要位于工作区且确实存在，仍然可以引用。</li>
 </ul>
-<p>The active agent may lack a tool for a particular file format. DSH provides <code>read</code> for UTF-8 text and <code>read_image</code> for supported images. PDF support depends on the tools available in the session.</p>
-<h3>Development</h3>
+<p>当前 agent 可能没有处理某种文件格式的工具。DSH 的 <code>read</code> 用于 UTF-8 文本，<code>read_image</code> 用于支持的图片格式。PDF 的处理能力取决于当前会话提供的工具。</p>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run check
 pnpm run test
 pnpm run build
 </code></pre>
-<p>The development setup expects the Harness checkout at <code>../dsh</code>. Built files under <code>lib/</code> are committed so profile installation does not require package build scripts.</p>
+<p>开发环境默认 Harness 仓库位于 <code>../dsh</code>。<code>lib/</code> 中的构建产物会提交到仓库，因此 profile 安装过程无需运行包构建脚本。</p>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-at-file/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-at-file/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

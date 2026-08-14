@@ -189,22 +189,22 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Enhanced subagent delegation tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (dsh)
-<strong>with per-call working-directory control</strong>.</p>
-<p>Everything in <a href="https://github.com/lynx-gt/dsh-subagent-tools">dsh-subagent-tools</a> (per-call model / provider /
-persona / toolFilter overrides, <code>@preset:</code> references, <code>provider/model</code> composite ids) <strong>plus</strong> a per-call
-<code>cwd</code> parameter — shipped with the two small provider patches that make <code>cwd</code> actually work.</p>
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（dsh）提供增强版子代理委派工具，
+<strong>支持按次指定工作目录（cwd）</strong>。</p>
+<p>包含 <a href="https://github.com/lynx-gt/dsh-subagent-tools">dsh-subagent-tools</a> 的全部能力（按次 model / provider /
+persona / toolFilter 覆盖、<code>@preset:</code> 引用、<code>provider/model</code> 复合 id）<strong>再加</strong>按次 <code>cwd</code> 参数——并附带
+让 <code>cwd</code> 真正生效所需的两处进程内 provider 补丁。</p>
 <p>| <a href="https://github.com/lynx-gt/dsh-subagent-cwd/blob/master/README.md">English</a> | <a href="https://github.com/lynx-gt/dsh-subagent-cwd/blob/master/README.zh.md">中文</a> |</p>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
-<h3>Choose one of the two packages — not both</h3>
+<h3>两个包二选一，不要同时装</h3>
 <table>
 <thead>
 <tr>
-<th>Package</th>
-<th>Per-call model/provider/persona/toolFilter</th>
+<th>包</th>
+<th>按次 model/provider/persona/toolFilter</th>
 <th><code>@preset:</code></th>
 <th><code>cwd</code></th>
-<th>Patches</th>
+<th>补丁</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -212,133 +212,97 @@ persona / toolFilter overrides, <code>@preset:</code> references, <code>provider
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
-<td><strong>none (bundle only)</strong></td>
+<td><strong>无（纯 bundle）</strong></td>
 </tr>
 <tr>
-<td><strong>dsh-subagent-cwd</strong> (this)</td>
+<td><strong>dsh-subagent-cwd</strong>（本包）</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>2 provider patches</td>
+<td>2 处 provider 补丁</td>
 </tr>
 </tbody></table>
-<p>Install <strong>either</strong> one. Both expose the same tool surface (<code>subagent</code> / <code>subagent_fork</code>) and colliding
-installations would fight over the tool names.</p>
-<h3>Why cwd needs patches (and the other features don&#39;t)</h3>
-<p><code>SubagentStartRequest</code> has <strong>no cwd field</strong>, and the in-process drive layer builds child session meta purely
-from <code>childSessionMeta(parent, ...)</code> — a per-call cwd is never forwarded. Two code paths create in-process
-children, and <strong>both</strong> must be patched or you hit the classic trap where the foreground path honors <code>cwd</code>
-while the background path silently ignores it:</p>
+<p>二选一安装。两者暴露相同的工具面（<code>subagent</code> / <code>subagent_fork</code>），同时装会因工具名冲突互相打架。</p>
+<h3>为什么 cwd 需要补丁（而其他功能不需要）</h3>
+<p><code>SubagentStartRequest</code> <strong>没有 cwd 字段</strong>，进程内驱动层构建子代理会话 meta 时只用
+<code>childSessionMeta(parent, ...)</code>——按次 cwd 根本不会透传。进程内子代理有<strong>两条</strong>创建路径，<strong>两条都必须</strong>
+打补丁，否则就会踩到经典陷阱：前台路径认 cwd、后台路径静默忽略：</p>
 <table>
 <thead>
 <tr>
-<th>Path</th>
-<th>Package to patch</th>
-<th>File</th>
+<th>路径</th>
+<th>要改的包</th>
+<th>文件</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Foreground (one-shot)</td>
+<td>前台（one-shot）</td>
 <td><code>@deepseek-ai/dsh-subagent-in-process-driver</code></td>
 <td><code>lib/index.js</code></td>
 </tr>
 <tr>
-<td>Background (continuable)</td>
+<td>后台（continuable）</td>
 <td><code>@deepseek-ai/dsh-subagent</code></td>
-<td><strong><code>lib/index.js</code> (the BUNDLE — not <code>lib/types/continuation.js</code>!)</strong></td>
+<td><strong><code>lib/index.js</code>（bundle！不是 <code>lib/types/continuation.js</code>）</strong></td>
 </tr>
 </tbody></table>
-<p>The second one is a bundle trap: <code>package.json</code> main/exports point at <code>lib/index.js</code>, which contains an
-inline copy of the continuation manager. Patching the source-shaped <code>lib/types/continuation.js</code> has <strong>no
-effect</strong> — always patch and verify the bundle.</p>
-<h3>Installation</h3>
-<pre><code class="language-sh"># 1. install the plugin (npm / git / local)
+<p>第二处是 bundle 陷阱：该包 <code>package.json</code> 的 main/exports 指向 <code>lib/index.js</code>（内含 continuation
+manager 的内联副本）。改长得像源码的 <code>lib/types/continuation.js</code> <strong>不生效</strong>——必须改并验证 bundle。</p>
+<h3>安装</h3>
+<pre><code class="language-sh"># 1. 安装插件（npm / git / 本地目录）
 dsh plugin --profile web add dsh-subagent-cwd
 
-# 2. apply the two provider patches (required for `cwd`)
+# 2. 应用两处驱动层补丁（cwd 生效必需）
 powershell -ExecutionPolicy Bypass -File patches\install.ps1    # Windows
-# or: ./patches/install.sh                                       # POSIX
-
-# 3. Web sessions: also run the preset adapter (see below)
-powershell -ExecutionPolicy Bypass -File install-preset.ps1     # Windows
-# or: ./install-preset.sh                                       # POSIX
+# 或：./patches/install.sh                                       # POSIX
 </code></pre>
-<p>Restart <code>dsh --profile web</code> and start a NEW session.</p>
-<h4>Web sessions need the preset adapter</h4>
-<p>In the <strong>web</strong> profile, agent tools are provided by the mounted agent <strong>preset</strong>
-(the default <code>standard</code> preset composes <code>subagent</code> / <code>subagent_fork</code> pointing at
-<code>@deepseek-ai/dsh-tool-subagent</code>), <strong>not</strong> by the host plane — a bundle patch is
-invisible to Web sessions. <code>install-preset.ps1</code> / <code>install-preset.sh</code> copies
-<code>standard</code> to <code>$DSH_HOME/.agent-presets/standard-plus</code>, rewrites its delegation
-rows to point at this package, and switches the default preset. Presets are read
-at session creation, so you must start a NEW session (live sessions cannot
-switch). Revert: pick <code>standard</code> in the UI (General &gt; Agent preset) and delete
-<code>standard-plus</code>.</p>
-<blockquote>
-<p><code>headless</code> and other non-web profiles do not need the preset adapter.</p>
-</blockquote>
-<h4>Upgrading dsh</h4>
-<p>A dsh upgrade rewrites <code>node_modules</code> and <strong>wipes both patches</strong>. After every upgrade:</p>
-<pre><code class="language-sh"># re-run the installer (it is idempotent; it also detects version-mismatched anchors)
+<p>安装后重启 <code>dsh --profile web</code>。</p>
+<h4>升级 dsh 之后</h4>
+<p>dsh 升级会重写 <code>node_modules</code>，<strong>两处补丁都会丢失</strong>。每次升级后：</p>
+<pre><code class="language-sh"># 重跑安装脚本（幂等；anchor 不匹配会自动报错）
 powershell -ExecutionPolicy Bypass -File patches\install.ps1
 </code></pre>
-<p>If the installer reports &quot;anchor not found&quot;, the target packages changed shape — check for a new
-dsh-subagent-cwd release or file an issue.</p>
-<h4>Uninstall</h4>
+<p>若安装脚本报 &quot;anchor not found&quot;，说明目标包结构变了——检查是否有新版本，或提 issue。</p>
+<h4>卸载</h4>
 <pre><code class="language-sh">powershell -ExecutionPolicy Bypass -File patches\uninstall.ps1   # Windows
-# or: ./patches/uninstall.sh                                     # POSIX
+# 或：./patches/uninstall.sh                                     # POSIX
 dsh plugin --profile web remove dsh-subagent-cwd
 </code></pre>
-<h3>Example</h3>
-<pre><code>Let a subagent work in a directory without the repo&#39;s AGENTS.md injected:
-  subagent(description=&quot;Summarize this file&quot;, prompt=&quot;...&quot;, cwd=&quot;D:\\projects\\scratch\\notes&quot;)
+<h3>示例</h3>
+<pre><code>让子代理在不注入项目 AGENTS.md 的目录里干活：
+  subagent(description=&quot;总结这个文件&quot;, prompt=&quot;...&quot;, cwd=&quot;D:\\projects\\scratch\\notes&quot;)
 </code></pre>
-<h3>Design</h3>
+<h3>设计要点</h3>
 <ul>
-<li><strong>The tool surface is a bundle.</strong> The shipped <code>tool-subagent</code> /
-<code>tool-subagent-fork</code> rows are disabled and replaced by this package&#39;s rows;
-no official package file is modified for the tool surface itself.</li>
-<li><strong><code>cwd</code> is the one capability that cannot stay a bundle-only feature.</strong>
-<code>SubagentStartRequest</code> has no cwd field, so a per-call cwd must be forwarded
-by the in-process subagent providers. That needs the two small patches (one
-hunk each) in <code>patches/</code> — idempotent, backed up on first run, and
-<code>node --check</code>-verified. This is the entire reason this package exists
-separately from <code>dsh-subagent-tools</code>.</li>
-<li><strong>Version contract:</strong> <code>peerDependencies</code> pin the public dsh packages
-(<code>^0.1.0-rc.6</code>). The patches target the same version; a dsh upgrade rewrites
-the dsh installation&#39;s <code>node_modules</code> and <strong>wipes both patches</strong> — re-run
-<code>patches/install.ps1</code> / <code>install.sh</code> after every upgrade (see <em>Upgrading dsh</em>).
-The bundle itself lives in the profile&#39;s own <code>node_modules</code> and survives an
-upgrade, but a changed public API will make <code>peerDependencies</code> refuse to load.</li>
+<li><strong>工具面是 bundle</strong>——官方 <code>tool-subagent</code> / <code>tool-subagent-fork</code> 行被禁用并替换，工具面本身不改任何官方文件。</li>
+<li><strong><code>cwd</code> 是唯一无法保持 bundle-only 的能力。</strong> <code>SubagentStartRequest</code> 没有 cwd 字段，按次 cwd 必须由进程内
+subagent provider 透传——所以需要 <code>patches/</code> 里的两处小补丁（各一个 hunk），幂等、首次运行自动备份、
+<code>node --check</code> 校验。这就是本包与 <code>dsh-subagent-tools</code> 分开存在的原因。</li>
+<li><strong>版本契约：</strong> <code>peerDependencies</code> 锁定公开 dsh 包（<code>^0.1.0-rc.6</code>）；补丁针对同一版本。dsh 升级会重写
+dsh 安装的 <code>node_modules</code> 并<strong>清掉两处补丁</strong>——每次升级后重跑 <code>patches/install.ps1</code> / <code>install.sh</code>
+（见&quot;升级 dsh 之后&quot;）。bundle 本身装在 profile 自己的 <code>node_modules</code>，升级后仍在，但官方 API 一旦变化，
+<code>peerDependencies</code> 会显式拒绝加载。</li>
 </ul>
-<h3>Verified</h3>
-<p>Tested against a stock dsh <code>0.1.0-rc.6</code> install on Windows (headless + web):</p>
+<h3>已验证</h3>
+<p>在干净（无本地补丁）的 dsh <code>0.1.0-rc.6</code> Windows 环境实测（headless + web）：</p>
 <ul>
-<li>Everything <code>dsh-subagent-tools</code> verifies (per-call model/provider/persona/
-toolFilter, <code>@preset:</code>, <code>presetHints</code>) ✅</li>
-<li><strong><code>cwd</code> on the foreground path</strong> ✅ — the child&#39;s <code>pwd</code> and its sandbox
-workspace both switch to the requested directory</li>
-<li><strong><code>cwd</code> on the continuable (background) path</strong> ✅ — background children honor
-the same directory (the classic &quot;foreground works, background silently
-ignores cwd&quot; trap does not occur)</li>
-<li><code>toolFilter</code> scoping ✅</li>
-<li><code>patches/install.ps1</code> and <code>patches/uninstall.ps1</code> round-trip ✅ (backup,
-apply, <code>node --check</code>, restore, re-verify)</li>
+<li><code>dsh-subagent-tools</code> 的全部验证项（按次 model/provider/persona/toolFilter、<code>@preset:</code>、presetHints）✅</li>
+<li><strong><code>cwd</code> 前台路径</strong> ✅ —— 子代理的 <code>pwd</code> 和沙箱工作区都切到指定目录</li>
+<li><strong><code>cwd</code> 后台（continuable）路径</strong> ✅ —— 后台子代理同样生效（&quot;前台认、后台静默忽略&quot;的经典陷阱未复现）</li>
+<li><code>toolFilter</code> 作用域 ✅</li>
+<li><code>patches/install.ps1</code> 与 <code>patches/uninstall.ps1</code> 往返 ✅（备份→打补丁→node --check→还原→复验）</li>
 </ul>
-<h3>Limitations</h3>
+<h3>限制</h3>
 <ul>
-<li><strong>Patches target rc.6 only.</strong> The two patches match exact anchors in the
-rc.6 bundle; a dsh upgrade invalidates them until re-run (or a new release).</li>
-<li><strong><code>@preset:</code> depends on the local preset layout</strong> — same caveat as
-<code>dsh-subagent-tools</code>.</li>
-<li><strong>Web sessions need the preset adapter</strong> (<code>install-preset.ps1</code>) for the same
-reason as <code>dsh-subagent-tools</code>.</li>
+<li><strong>补丁只针对 rc.6。</strong> 两处补丁匹配 rc.6 bundle 的精确锚点；dsh 升级后失效，需重跑（或等新版本）。</li>
+<li><strong><code>@preset:</code> 依赖本地预设布局</strong> —— 与 <code>dsh-subagent-tools</code> 相同。</li>
+<li><strong>Web 会话需要 preset 适配脚本</strong>（<code>install-preset.ps1</code>）——原因同 <code>dsh-subagent-tools</code>。</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/lynx-gt/dsh-subagent-cwd/blob/master/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/lynx-gt/dsh-subagent-cwd/blob/master/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

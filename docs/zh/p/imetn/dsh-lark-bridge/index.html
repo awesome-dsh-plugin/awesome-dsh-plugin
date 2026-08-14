@@ -189,194 +189,194 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/imetn/dsh-lark-bridge/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://github.com/imetn/dsh-lark-bridge/blob/main/README.md">English</a> | 中文</p>
 <p><a href="https://github.com/imetn/dsh-lark-bridge/actions/workflows/ci.yml"><img src="https://github.com/imetn/dsh-lark-bridge/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://github.com/imetn/dsh-lark-bridge/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
 <a href="https://github.com/imetn/dsh-lark-bridge/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%3E%3D22-339933.svg" alt="Node.js"></a></p>
-<p>A secure, bidirectional Feishu/Lark controller for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
-<p>Send a task from a DM, group, or topic. The Bridge runs it in the right Harness Project and Session, updates one native card as work progresses, and routes approvals, questions, files, images, and controls back to the same conversation.</p>
-<p>Tested with DeepSeek Harness <code>0.1.0-rc.6</code>. Harness is still in developer preview.</p>
-<h3>What works</h3>
+<p>一个面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的安全、双向飞书/Lark 控制器。</p>
+<p>你可以从私聊、群聊或话题发任务。Bridge 会把任务交给正确的 Harness Project 和 Session，用一张飞书原生卡片持续更新进度，并把审批、提问、文件、图片和控制操作送回同一段会话。</p>
+<p>当前版本已针对 DeepSeek Harness <code>0.1.0-rc.6</code> 验证。Harness 仍处于开发者预览阶段。</p>
+<h3>已支持</h3>
 <ul>
-<li>Start, continue, steer, stop, resume, and inspect Harness Sessions from Lark.</li>
-<li>Map each group to a Project, working directory, model route, access policy, and card preset.</li>
-<li>Map each topic or thread to an isolated Session by default.</li>
-<li>Update one card from running to completed, blocked, cancelled, or failed.</li>
-<li>Approve one tool call or answer structured Agent questions from card buttons.</li>
-<li>Receive text, images, and files. The Agent can send safe workspace files back with <code>lark_deliver</code>.</li>
-<li>Choose compact, standard, or developer card detail per Project or Session.</li>
-<li>Use WebSocket long connections, with no public webhook server.</li>
+<li>从飞书创建、继续、纠偏、停止、恢复和检查 Harness Session。</li>
+<li>每个群可绑定独立的 Project、工作目录、模型路线、权限和卡片视图。</li>
+<li>默认一个话题或线程对应一个隔离的 Session。</li>
+<li>同一张卡片从运行中原位更新为完成、阻塞、取消或失败。</li>
+<li>通过卡片允许一次工具调用，或回答 Agent 的结构化问题。</li>
+<li>接收文字、图片和文件；Agent 可通过 <code>lark_deliver</code> 安全发送工作区文件。</li>
+<li>每个 Project 或 Session 可选择精简、标准、开发者视图。</li>
+<li>使用 WebSocket 长连接，无需部署公网 Webhook。</li>
 </ul>
-<p>Cards show bounded tool summaries, never hidden model reasoning.</p>
-<h3>Quick start</h3>
-<p>Requirements: Node.js 22+, <code>pnpm</code>, a working DeepSeek Harness model configuration, and either an installed <code>dsh</code> CLI or an official Harness source checkout nearby.</p>
-<p>Run this from the Project you want the bot to control:</p>
+<p>卡片只展示受长度限制、已脱敏的工具摘要，不会展示模型隐藏思维链。</p>
+<h3>快速开始</h3>
+<p>需要 Node.js 22+、<code>pnpm</code>、可用的 DeepSeek Harness 模型配置，以及已安装的 <code>dsh</code> CLI，或附近一份官方 Harness 源码。</p>
+<p>进入希望机器人控制的 Project，运行：</p>
 <pre><code class="language-bash">pnpm dlx github:imetn/dsh-lark-bridge setup --project &quot;$PWD&quot;
 </code></pre>
-<p>The setup command:</p>
+<p>向导会自动完成：</p>
 <ol>
-<li>Opens the official Feishu/Lark authorization page for a new bot app.</li>
-<li>Requests only the messaging, attachment, reaction, event, and card callback capabilities used by the Bridge.</li>
-<li>Stores the returned App Secret in Harness&#39;s owner-only credential file, never in the Profile.</li>
-<li>Installs the plugin, writes an idempotent <code>lark</code> Profile, binds the authorizing user, and starts the Bridge.</li>
-<li>Opens the bot. A welcome card arrives automatically when the platform returns the user&#39;s Open ID.</li>
+<li>打开飞书/Lark 官方页面，创建一个新的机器人应用。</li>
+<li>只申请 Bridge 用到的消息、附件、表情、事件和卡片回调能力。</li>
+<li>把 App Secret 写入 Harness 的本机私密凭据文件，不写进 Profile。</li>
+<li>安装插件，幂等写入 <code>lark</code> Profile，绑定授权用户并启动 Bridge。</li>
+<li>打开机器人；平台返回用户 Open ID 时，机器人会主动发送欢迎卡片。</li>
 </ol>
-<p>For a ByteDance <code>larkoffice.com</code> tenant, add <code>--brand larkoffice</code>. For international Lark, add <code>--brand lark</code>.</p>
+<p>字节租户请添加 <code>--brand larkoffice</code>，国际版 Lark 请添加 <code>--brand lark</code>：</p>
 <pre><code class="language-bash">pnpm dlx github:imetn/dsh-lark-bridge setup --project &quot;$PWD&quot; --brand larkoffice
 </code></pre>
-<p>The automatic flow always passes <code>createOnly: true</code>. It cannot select or change an existing app.</p>
-<h4>Use an existing app</h4>
-<p>Existing apps stay untouched. The command only validates the credentials and writes local Harness files:</p>
+<p>自动流程固定使用 <code>createOnly: true</code>，不会选择或修改已有应用。</p>
+<h4>使用已有应用</h4>
+<p>已有应用不会被修改。命令只验证凭据并写入本机 Harness 配置：</p>
 <pre><code class="language-bash">printf &#39;%s&#39; &quot;$LARK_APP_SECRET&quot; | pnpm dlx github:imetn/dsh-lark-bridge setup \
   --project &quot;$PWD&quot; \
   --app-id cli_xxxxxxxxxxxxxxxx \
   --app-secret-stdin
 </code></pre>
-<p>If your enterprise blocks one-click creation, add <code>--manual</code>. The wizard opens the developer console and asks for the App ID and hidden App Secret.</p>
-<p>For manual apps, enable the bot capability, select long connections, publish a version, and add:</p>
+<p>如果企业策略不允许一键创建，添加 <code>--manual</code>。向导会打开开发者后台，并提示输入 App ID 和隐藏的 App Secret。</p>
+<p>手动创建应用时，请启用机器人能力，选择长连接，发布一个版本，并添加：</p>
 <table>
 <thead>
 <tr>
-<th>Type</th>
-<th>Required values</th>
+<th>类型</th>
+<th>必需配置</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Permissions</td>
-<td><code>im:message.p2p_msg:readonly</code>, <code>im:message.group_at_msg:readonly</code>, <code>im:message:send_as_bot</code>, <code>im:resource</code></td>
+<td>权限</td>
+<td><code>im:message.p2p_msg:readonly</code>、<code>im:message.group_at_msg:readonly</code>、<code>im:message:send_as_bot</code>、<code>im:resource</code></td>
 </tr>
 <tr>
-<td>Inbound attachments</td>
+<td>接收入站附件</td>
 <td><code>im:message:readonly</code></td>
 </tr>
 <tr>
-<td>Message event</td>
+<td>消息事件</td>
 <td><code>im.message.receive_v1</code></td>
 </tr>
 <tr>
-<td>Card callback</td>
+<td>卡片回调</td>
 <td><code>card.action.trigger</code></td>
 </tr>
 <tr>
-<td>Stop reactions, optional</td>
-<td><code>im:message.reactions:read</code>, <code>im.message.reaction.created_v1</code></td>
+<td>用表情停止任务，可选</td>
+<td><code>im:message.reactions:read</code>、<code>im.message.reaction.created_v1</code></td>
 </tr>
 </tbody></table>
-<p>Keep the group mention permission instead of requesting every group message.</p>
-<h4>Verify</h4>
-<p>In the bot DM, send:</p>
+<p>群聊只申请 <code>@机器人</code> 消息，不需要读取群内全部消息。</p>
+<h4>验收</h4>
+<p>在机器人私聊中发送：</p>
 <pre><code class="language-text">/status
 </code></pre>
-<p>Then send a small task. The reply card should show the Project, result, elapsed time, and the detail selected by its view preset. The original task stays in Lark&#39;s quoted reply and is not duplicated inside the card.</p>
-<p>Check the local setup at any time:</p>
+<p>再发送一个小任务。回复卡片应展示 Project、结果、耗时，以及当前视图对应的信息。原始任务已经出现在飞书引用回复中，卡片内部不会重复展示。</p>
+<p>随时可以检查本机接入状态：</p>
 <pre><code class="language-bash">pnpm dlx github:imetn/dsh-lark-bridge doctor
 </code></pre>
-<p>The welcome card&#39;s callback test is optional. Text tasks work before you click it.</p>
-<p><code>dsh --profile lark</code> starts the Bridge only. It does not expose an HTTP page. <code>http://127.0.0.1:3080</code> belongs to the separate <code>dsh web</code> command.</p>
-<h3>Projects, groups, and Sessions</h3>
-<p>Use this mapping for most teams:</p>
+<p>欢迎卡片中的按钮测试是可选项，不点击也能直接发送文字任务。</p>
+<p><code>dsh --profile lark</code> 只启动 Bridge，不会提供 HTTP 页面。<code>http://127.0.0.1:3080</code> 属于单独的 <code>dsh web</code> 命令。</p>
+<h3>Project、群聊与 Session</h3>
+<p>大多数团队可以直接采用这套映射：</p>
 <table>
 <thead>
 <tr>
-<th>Lark</th>
-<th>Harness</th>
-<th>Use</th>
+<th>飞书实体</th>
+<th>Harness 实体</th>
+<th>用法</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Bot DM</td>
-<td>Personal control surface</td>
-<td>Switch Projects and handle private tasks</td>
+<td>机器人私聊</td>
+<td>个人控制面</td>
+<td>切换 Project，处理私密任务</td>
 </tr>
 <tr>
-<td>One group</td>
-<td>One Project</td>
-<td>Keep a codebase or durable workstream in one place</td>
+<td>一个群</td>
+<td>一个 Project</td>
+<td>承载一个代码库或长期工作流</td>
 </tr>
 <tr>
-<td>One topic or thread</td>
-<td>One Session</td>
-<td>Keep one task and its follow-ups together</td>
+<td>一个话题或线程</td>
+<td>一个 Session</td>
+<td>把一个任务和它的后续交流放在一起</td>
 </tr>
 </tbody></table>
-<p>With the default <code>groupSessionScope: thread</code>, replies in one topic share context and a new topic starts a separate Session. A normal group&#39;s top-level message gets its own thread-scoped Session.</p>
-<p>If the Profile contains one accessible Project, the first owner message that mentions the bot automatically binds that group. With multiple Projects, send <code>@bot /bind &lt;project-id&gt;</code> once.</p>
-<p><code>sender</code> scope keeps one Session per group member. <code>chat</code> shares one Session across the group and should only be used when shared context is intentional.</p>
-<h3>Card detail</h3>
-<p>The card is already a reply to the original task, so it does not repeat the prompt.</p>
+<p>默认 <code>groupSessionScope: thread</code> 时，同一话题内的回复共享上下文，新话题会创建独立 Session。普通群的每条顶层消息也会获得自己的线程 Session。</p>
+<p>Profile 只有一个可用 Project 时，Owner 第一次在群里 @机器人就会自动完成绑定。存在多个 Project 时，只需发送一次 <code>@机器人 /bind &lt;project-id&gt;</code>。</p>
+<p><code>sender</code> 会为每位群成员保留独立 Session；<code>chat</code> 让全群共享一个 Session，只有明确需要共享上下文时才使用。</p>
+<h3>卡片信息密度</h3>
+<p>卡片本身已经回复了原始任务，因此不会再重复任务正文。</p>
 <table>
 <thead>
 <tr>
-<th>Preset</th>
-<th>Shows</th>
+<th>视图</th>
+<th>展示内容</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>compact</code></td>
-<td>Result, elapsed time, essential actions</td>
+<td>结果、耗时、关键操作</td>
 </tr>
 <tr>
 <td><code>standard</code></td>
-<td>Compact view plus Project, model, recent tool names, total tool calls and tokens</td>
+<td>精简视图 + Project、模型、近期工具名、工具次数和总 token</td>
 </tr>
 <tr>
 <td><code>developer</code></td>
-<td>Standard view plus cwd, Session ID, redacted tool summaries and durations, input/output/cache tokens</td>
+<td>标准视图 + cwd、Session ID、已脱敏工具摘要与耗时、输入/输出/缓存 token</td>
 </tr>
 </tbody></table>
-<p>Set <code>cardPreset</code> globally or per Project. Use <code>/view compact|standard|developer</code> or the terminal card button for the current Session.</p>
-<h3>Controls</h3>
+<p>通过 <code>cardPreset</code> 设置全局或 Project 默认值。当前 Session 可发送 <code>/view compact|standard|developer</code>，或点击完成卡片按钮切换。</p>
+<h3>控制命令</h3>
 <table>
 <thead>
 <tr>
-<th>Input</th>
-<th>Action</th>
+<th>输入</th>
+<th>行为</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Plain text or attachments</td>
-<td>Continue the current Agent</td>
+<td>文字或附件</td>
+<td>继续当前 Agent</td>
 </tr>
 <tr>
-<td><code>/steer &lt;text&gt;</code></td>
-<td>Correct or add context to the running step</td>
+<td><code>/steer &lt;内容&gt;</code></td>
+<td>在运行中补充或纠正最近一步</td>
 </tr>
 <tr>
 <td><code>/status</code></td>
-<td>Show connection, Project, model, directory, Session, and pending interactions</td>
+<td>查看连接、Project、模型、目录、Session 和待处理交互</td>
 </tr>
 <tr>
 <td><code>/stop</code></td>
-<td>Cancel the running task</td>
+<td>取消当前任务</td>
 </tr>
 <tr>
-<td><code>/approve</code>, <code>/reject</code></td>
-<td>Text fallback for a pending one-shot approval</td>
+<td><code>/approve</code>、<code>/reject</code></td>
+<td>处理当前一次工具审批的文字兜底</td>
 </tr>
 <tr>
 <td><code>/new</code></td>
-<td>Start a new Session</td>
+<td>创建新 Session</td>
 </tr>
 <tr>
-<td><code>/sessions</code>, <code>/resume &lt;id&gt;</code></td>
-<td>List or resume Sessions owned by this Lark origin</td>
+<td><code>/sessions</code>、<code>/resume &lt;id&gt;</code></td>
+<td>列出或恢复属于当前飞书来源的 Session</td>
 </tr>
 <tr>
-<td><code>/projects</code>, <code>/project &lt;id&gt;</code></td>
-<td>List or select Projects in a DM</td>
+<td><code>/projects</code>、<code>/project &lt;id&gt;</code></td>
+<td>在私聊中列出或选择 Project</td>
 </tr>
 <tr>
-<td><code>/bind [project-id]</code>, <code>/unbind</code></td>
-<td>Manage a group&#39;s Project binding</td>
+<td><code>/bind [project-id]</code>、<code>/unbind</code></td>
+<td>管理群聊的 Project 绑定</td>
 </tr>
 <tr>
-<td><code>/commands</code>, <code>/help</code></td>
-<td>Show native Harness commands or Bridge help</td>
+<td><code>/commands</code>、<code>/help</code></td>
+<td>查看 Harness 原生命令或 Bridge 帮助</td>
 </tr>
 </tbody></table>
-<p>Card buttons also handle stop, new Session, status, approval, view changes, and structured questions.</p>
-<h3>Multiple Projects</h3>
-<p>Setup writes <code>~/.dsh/profiles/lark/cordis.patch.yml</code>. Add Projects there when needed:</p>
+<p>卡片按钮也支持停止、新会话、状态、审批、视图切换和结构化提问。</p>
+<h3>多 Project 配置</h3>
+<p>向导会写入 <code>~/.dsh/profiles/lark/cordis.patch.yml</code>。需要更多 Project 时，在这个文件中追加：</p>
 <pre><code class="language-yaml">- id: dsh-lark-bridge
   config:
     appId: cli_xxxxxxxxxxxxxxxx
@@ -396,38 +396,38 @@ footer p+p{margin-top:.5rem}
         workspaceRoot: /absolute/path/to/ios-app
         cardPreset: compact
 </code></pre>
-<p>Each Project may also set <code>chatIds</code>, <code>allowedOpenIds</code>, <code>provider</code>, <code>model</code>, and <code>inboundDir</code>. Group bindings created from Lark are stored in the owner-only Bridge state file. Static <code>chatIds</code> take precedence.</p>
-<h3>Security and files</h3>
+<p>每个 Project 还可以设置 <code>chatIds</code>、<code>allowedOpenIds</code>、<code>provider</code>、<code>model</code> 和 <code>inboundDir</code>。从飞书完成的群绑定保存在仅 Owner 可读的 Bridge 状态文件中；静态 <code>chatIds</code> 优先。</p>
+<h3>安全与文件</h3>
 <ul>
-<li>Owners pair through the official authorization identity or a hashed, ten-minute, one-use <code>/claim</code> code.</li>
-<li>Users, chats, Project access, and card operators are checked before an Agent action.</li>
-<li>Secrets are redacted from cards, errors, tool summaries, and spill files.</li>
-<li>Inbound files use <code>0700</code> directories and <code>0600</code> files with sanitized random names.</li>
-<li>Outbound files must resolve to regular files inside the Project&#39;s <code>workspaceRoot</code>; symlink escapes are rejected.</li>
-<li>Incoming events are deduplicated, stale events are rejected, and each chat is serialized.</li>
-<li>One approval button grants one operation only.</li>
+<li>Owner 通过官方授权身份绑定，或使用经过哈希保存、十分钟有效、只能使用一次的 <code>/claim</code> 配对码。</li>
+<li>用户、群聊、Project 权限和卡片操作者都会在执行 Agent 操作前重新检查。</li>
+<li>卡片、错误、工具摘要和溢出文件会统一脱敏。</li>
+<li>入站附件使用 <code>0700</code> 目录和 <code>0600</code> 文件，文件名会被净化并添加随机后缀。</li>
+<li>出站文件必须是 Project <code>workspaceRoot</code> 内的普通文件，符号链接逃逸会被拒绝。</li>
+<li>入站事件会去重、拒绝过期消息，并按聊天串行处理。</li>
+<li>审批按钮只授权当前一次操作。</li>
 </ul>
-<p>See <a href="https://github.com/imetn/dsh-lark-bridge/blob/main/SECURITY.md">SECURITY.md</a> for the full trust model.</p>
-<h3>Development and discovery</h3>
+<p>完整信任模型见 <a href="https://github.com/imetn/dsh-lark-bridge/blob/main/SECURITY.md">SECURITY.md</a>。</p>
+<h3>开发与发现</h3>
 <pre><code class="language-bash">git clone https://github.com/imetn/dsh-lark-bridge.git
 cd dsh-lark-bridge
 pnpm install --frozen-lockfile
 pnpm run check
 </code></pre>
-<p>The repository commits built <code>lib/</code> artifacts and bundles the official Lark SDK, so Git installation needs no install-time build. <code>package.json</code> declares <code>dsh.bundle.patch</code> for automatic Harness activation and the <code>dsh-plugin</code> keyword for plugin discovery.</p>
-<p>Common fixes:</p>
+<p>仓库提交了已构建的 <code>lib/</code>，并打包飞书官方 SDK，所以从 Git 安装不需要现场构建。<code>package.json</code> 通过 <code>dsh.bundle.patch</code> 支持 Harness 自动激活，也包含官方发现关键词 <code>dsh-plugin</code>。</p>
+<p>常见问题：</p>
 <ul>
-<li>No inbound messages: publish the app, select long connections, and check the message event and permissions.</li>
-<li>No group response: add the bot and mention it. One accessible Project binds automatically; multiple Projects require <code>/bind &lt;id&gt;</code>.</li>
-<li>Card buttons do nothing: add <code>card.action.trigger</code>. Text tasks, <code>/approve</code>, <code>/reject</code>, and plain-text answers still work.</li>
-<li>Attachments fail: add <code>im:message:readonly</code> and check file size limits.</li>
-<li><code>127.0.0.1:3080</code> is empty: run <code>dsh web</code>; the Lark Profile is a Bridge process, not the Web UI.</li>
+<li>收不到消息：发布应用版本，选择长连接，检查消息事件和权限。</li>
+<li>群聊无响应：把机器人加入群并 @它。只有一个 Project 时会自动绑定；多个 Project 需要 <code>/bind &lt;id&gt;</code>。</li>
+<li>卡片按钮无响应：添加 <code>card.action.trigger</code>。文字任务、<code>/approve</code>、<code>/reject</code> 和直接文字回答仍可使用。</li>
+<li>附件失败：添加 <code>im:message:readonly</code>，并检查文件大小限制。</li>
+<li><code>127.0.0.1:3080</code> 空白：运行 <code>dsh web</code>；Lark Profile 是 Bridge 进程，不是 Web UI。</li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/imetn/dsh-lark-bridge/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/imetn/dsh-lark-bridge/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/imetn/dsh-lark-bridge/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

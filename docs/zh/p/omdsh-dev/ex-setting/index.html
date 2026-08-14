@@ -189,41 +189,41 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/omdsh-dev/ex-setting/blob/main/README.zh.md">中文</a></p>
-<p>The automatic DSH Web settings bundle. It combines the host-side configuration crawler with its browser settings navigation in one external package: the host enumerates registered settings namespaces and schema-bearing composition rows, while the client projects them into first-level settings sections and editors.</p>
-<h3>Repository shape</h3>
-<pre><code class="language-text">package.json              # host/client package and dsh.bundle/dshClient manifests
-cordis.patch.yml          # profile layer that mounts the crawler
-src/index.ts              # host crawler plugin (service provide + Fabric handler binding)
-src/routes.ts             # crawler-owned webserver composition route
-src/nav-scroll.ts         # browser bundle rewrite contract (serveBrowserTransform)
+<p><a href="https://github.com/omdsh-dev/ex-setting/blob/main/README.md">English</a> | 中文</p>
+<p>自动 DSH Web 设置组合包。它把宿主侧配置 crawler 和浏览器设置导航放在同一个外部包中：host 枚举已注册的 settings namespace 和带 schema 的 composition row，client 把它们投影为一级设置区段和编辑器。</p>
+<h3>仓库结构</h3>
+<pre><code class="language-text">package.json              # host/client 包以及 dsh.bundle/dshClient 清单
+cordis.patch.yml          # 挂载 crawler 的 profile 层
+src/index.ts              # host crawler 插件(服务提供 + Fabric handler 绑定)
+src/routes.ts             # crawler 自有的 webserver composition 路由
+src/nav-scroll.ts         # 浏览器 bundle 重写契约(serveBrowserTransform)
 src/invariant.ts          # crawler invariant companion
-src/client/               # browser settings page (store, section, crawler wire)
-lib/                      # generated host/client artifacts
-docs/                     # detailed host and client protocol references
-tests/host/               # crawler, route, invariant, loader, and Fabric composition tests
-tests/client/             # browser store and section tests
-patches/                  # host patch contract (empty: zero out-of-package changes)
-scripts/                  # verify:self-contained, host patch extraction/applier
-.agents/skills/           # dsh-plugin-* contributor workflow
+src/client/               # 浏览器设置页(store、section、crawler wire)
+lib/                      # 生成的 host/client 产物
+docs/                     # host 和 client 协议详细说明
+tests/host/               # crawler、route、invariant、loader 与 Fabric composition 测试
+tests/client/             # browser store 和 section 测试
+patches/                  # host patch 契约(为空:包外零改动)
+scripts/                  # verify:self-contained、host patch 提取/应用
+.agents/skills/           # dsh-plugin-* 贡献工作流
 </code></pre>
-<p>The two runtime faces share one package identity so Git/profile installation has one root artifact. The browser face is exported as <code>@deepseek-ai/dsh-ex-setting/client</code> and is selected by the package&#39;s <code>dshClient</code> manifest.</p>
-<h3>Bundle behavior</h3>
-<p>Installing the bundle adds the <code>web-config-crawler</code> row. That is the deployment-level decision to expose all registered settings namespaces and schema-carrying composition rows through the Web configuration plane. A profile can disable it:</p>
+<p>两个 runtime face 共享一个 package identity，因此 Git/profile 安装只有一个 root 产物。浏览器 face 通过 <code>@deepseek-ai/dsh-ex-setting/client</code> 导出，并由 <code>dshClient</code> 清单选择。</p>
+<h3>组合行为</h3>
+<p>安装组合包后加入 <code>web-config-crawler</code> 行，表示部署决定通过 Web 配置面暴露所有已注册 settings namespace 和带 schema 的 composition row。profile 可以关闭：</p>
 <pre><code class="language-yaml">- id: web-config-crawler
   disabled: true
 </code></pre>
-<p>The crawler redacts secrets, applies path-addressed edits with schema resolution, persists complete rows into the personal overlay, and removes rows to restore lower bundle layers. The browser page keeps settings namespaces and composition rows source-distinct and renders schema fields, secret controls, reset, revision conflicts, restart notices, and live invalidation refreshes.</p>
-<h3>External zero-change design</h3>
-<p>This bundle ships with <strong>zero out-of-package host changes</strong>. Three mechanisms make that possible:</p>
+<p>Crawler 会脱敏 secret，按路径应用并通过 schema resolve 编辑，持久化完整 row 到个人 overlay，并通过删除 row 恢复下层组合。浏览器页面保持 settings namespace 与 composition row 的来源区分，并提供 schema 字段、secret、reset、revision conflict、restart notice 和失效刷新。</p>
+<h3>外部零改动设计</h3>
+<p>本组合包<strong>零包外宿主改动</strong>，靠三个机制实现：</p>
 <ul>
-<li><strong>Fabric exposure widening</strong> — the crawler&#39;s <code>cordis.patch.yml</code> overrides the web roster&#39;s <code>cordis-fabric</code> row by id, carrying the static <code>web-config-crawler/exposed-namespaces</code> stub. The Fabric layer rewrites the gateway&#39;s private <code>exposedNamespaces()</code> decision at load time, and the crawler binds the matching <code>after</code> handler when it mounts (see <code>docs/web-config-crawler.md</code>).</li>
-<li><strong>Crawler-owned composition route</strong> — the browser half reads and edits composition rows through the crawler&#39;s own webserver route (<code>/dsh-config/crawler/composition</code>, <code>src/routes.ts</code>) instead of a gateway RPC domain, so the write path adds nothing to <code>apiproxy</code> or <code>connection</code>.</li>
-<li><strong>Served browser rewrite</strong> — the crawler serves the <code>ui-settings-general</code> client bundle through <code>serveBrowserTransform</code>, rewriting <code>SettingsRoot</code> to publish <code>web-config-crawler/nav-scroll</code>; the browser half registers the matching <code>before</code> handler that injects the dialog navigation scroll styles (see <code>docs/ui-settings-plugins.md</code>).</li>
+<li><strong>Fabric 暴露加宽</strong> — crawler 的 <code>cordis.patch.yml</code> 按 id 覆盖 web roster 的 <code>cordis-fabric</code> 行，携带静态 <code>web-config-crawler/exposed-namespaces</code> stub。Fabric 层在加载时改写 gateway 私有的 <code>exposedNamespaces()</code> 决策，crawler 挂载时绑定对应的 <code>after</code> handler(见 <code>docs/web-config-crawler.md</code>)。</li>
+<li><strong>crawler 自有的 composition 路由</strong> — 浏览器侧通过 crawler 自己的 webserver 路由(<code>/dsh-config/crawler/composition</code>，<code>src/routes.ts</code>)读写 composition row，而不是 gateway RPC 域，因此写路径不向 <code>apiproxy</code> 或 <code>connection</code> 添加任何东西。</li>
+<li><strong>served 浏览器重写</strong> — crawler 通过 <code>serveBrowserTransform</code> 提供 <code>ui-settings-general</code> client bundle，把 <code>SettingsRoot</code> 重写为发布 <code>web-config-crawler/nav-scroll</code>；浏览器侧注册对应的 <code>before</code> handler 注入对话框导航滚动样式(见 <code>docs/ui-settings-plugins.md</code>)。</li>
 </ul>
-<p>The settings/composition wire protocol, API proxy handlers, slot host, and browser shell are supplied by the DSH version selected by the profile.</p>
-<h3>Development</h3>
-<p>A full typecheck expects sibling checkouts (host-provided <code>@deepseek-ai/*</code> packages are private and not installable from the registry):</p>
+<p>Settings/composition wire 协议、API proxy handler、slot host 和 browser shell 由 profile 使用的 DSH 版本提供。</p>
+<h3>开发</h3>
+<p>完整 typecheck 需要 sibling checkout(宿主提供的 <code>@deepseek-ai/*</code> 包是私有的，无法从 registry 安装)：</p>
 <pre><code class="language-text">~/git/deepseek-harness
 ~/git/ex-setting
 </code></pre>
@@ -233,17 +233,17 @@ pnpm test
 pnpm run build
 pnpm run verify:self-contained
 </code></pre>
-<p>The <code>prepare</code> script builds both host and browser entries directly from <code>src/</code>, so Git installation does not require sibling project references. pnpm 10 may require the profile to allow the package&#39;s prepare script; only approve a pinned, trusted checkout.</p>
-<h3>Model Experience</h3>
-<p>This bundle adds no model-visible prompt text or tools. It exposes configuration only through the loopback Web settings surface; the owning DSH settings, composition, session, and permission services retain logging, redaction, and authorization semantics.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<p><code>prepare</code> 直接从 <code>src/</code> 构建 host 和 browser entry，因此 Git 安装不需要 sibling project references。pnpm 10 可能要求 profile 允许 prepare 脚本；只应批准固定且可信的 checkout。</p>
+<h3>模型体验</h3>
+<p>本组合包不添加模型可见的提示文本或工具。它只通过 loopback Web 设置面暴露配置；DSH settings、composition、session 与 permission 服务保留日志、脱敏和授权语义。</p>
+<h3>已知限制</h3>
 <ul>
-<li>Native Zod composition Config schemas remain file-configurable but are not rendered by the generic editor, which requires schemastery <code>toJSON()</code>.</li>
-<li>The crawler is intentionally broad; deployments that do not want automatic composition editing should disable the row and keep the gateway allowlist posture.</li>
+<li>原生 Zod composition Config 可以通过文件配置，但通用编辑器不会渲染；编辑器要求 schemastery <code>toJSON()</code>。</li>
+<li>Crawler 的范围有意较宽；不希望自动编辑 composition 的部署应禁用该行并保留 gateway allowlist 行为。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/ex-setting/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/ex-setting/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

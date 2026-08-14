@@ -189,25 +189,25 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-tool-calculator/blob/main/README.en.md">English</a></p>
-<p>DSH 计算器工具插件 —— 安全的数学表达式求值器。零依赖、零进程、纯函数。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-tool-calculator/blob/main/README.md">中文</a></p>
+<p>DSH Calculator tool plugin — a safe mathematical expression evaluator. Zero dependencies, zero processes, pure functions.</p>
 <p><a href="https://github.com/omdsh-dev/dsh-tool-calculator/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<h3>动机</h3>
-<p>Agent 做算术不稳定是 LLM 的通病。DSH 内置的 <code>bash</code> 工具可以调用 <code>echo $((15 + 27 * 3))</code> 完成计算，但有两个问题：</p>
+<h3>Motivation</h3>
+<p>Agents being unreliable at arithmetic is a common weakness of LLMs. DSH&#39;s built-in <code>bash</code> tool can call <code>echo $((15 + 27 * 3))</code> to do calculations, but it has two problems:</p>
 <ol>
-<li><strong>每次算术都起一个 bash 进程</strong>——Windows 上尤其昂贵（创建进程、加载 shell、执行、收集输出），高频调用时累积延迟显著</li>
-<li><strong>bash 算术语法有限</strong>——不支持 <code>sqrt</code>、<code>sin</code>、<code>cos</code>、<code>log</code>、<code>pow</code> 等数学函数，agent 在这些场景下只能猜答案或写脚本</li>
+<li><strong>Every arithmetic operation spawns a bash process</strong> — especially expensive on Windows (process creation, shell loading, execution, output collection), with noticeable cumulative latency under high-frequency calls</li>
+<li><strong>bash arithmetic syntax is limited</strong> — it doesn&#39;t support math functions such as <code>sqrt</code>, <code>sin</code>, <code>cos</code>, <code>log</code>, <code>pow</code>; in these scenarios the agent can only guess the answer or write a script</li>
 </ol>
-<p>本插件提供零依赖、零进程、纯函数的计算器——一次函数调用，毫秒级得出结果，覆盖常用初等数学函数。</p>
-<h3>安全模型</h3>
-<p><strong>无 <code>eval</code>、无 <code>new Function</code>。</strong> 使用手写递归下降解析器（词法层 + 语法层），只求值白名单节点：</p>
+<p>This plugin provides a zero-dependency, zero-process, pure-function calculator — a single function call returns the result in milliseconds, covering common elementary math functions.</p>
+<h3>Security Model</h3>
+<p><strong>No <code>eval</code>, no <code>new Function</code>.</strong> It uses a hand-written recursive descent parser (lexer layer + parser layer), evaluating only whitelisted nodes:</p>
 <ul>
-<li>词法层只识别数字字面量、白名单标识符、运算符；引号、分号、反引号、<code>{}</code> <code>[]</code> 直接报错</li>
-<li>标识符按名查白名单表（15 个函数 + 2 个常量），查不到即抛 <code>Unknown identifier</code></li>
-<li>求值结果必须是有限数字，<code>NaN</code>/<code>Infinity</code>（除零、负数开方等）统一拒绝</li>
+<li>The lexer layer only recognizes numeric literals, whitelisted identifiers, and operators; quotes, semicolons, backticks, <code>{}</code> <code>[]</code> fail directly with an error</li>
+<li>Identifiers are looked up by name in the whitelist table (15 functions + 2 constants); anything not found throws <code>Unknown identifier</code></li>
+<li>Evaluation results must be finite numbers; <code>NaN</code>/<code>Infinity</code> (division by zero, square root of a negative number, etc.) are uniformly rejected</li>
 </ul>
-<p><code>new Function</code> + 正则白名单是<strong>不安全的</strong>——<code>constructor.constructor(...)</code> 可直达 <code>Function</code> 构造器执行任意代码，<code>process.exit(0)</code> 可直接杀死宿主进程（均已实测复现）。本实现不使用任何代码求值捷径。</p>
-<h3>架构</h3>
+<p><code>new Function</code> + regex whitelisting is <strong>unsafe</strong> — <code>constructor.constructor(...)</code> can reach the <code>Function</code> constructor directly and execute arbitrary code, and <code>process.exit(0)</code> can kill the host process outright (both reproduced in actual testing). This implementation uses no code-evaluation shortcuts.</p>
+<h3>Architecture</h3>
 <pre><code>┌──────────────────────────────┐
 │         DSH Agent             │
 │  tool call: calculator { ... }│
@@ -225,10 +225,10 @@ footer p+p{margin-top:.5rem}
 └──────────────────────────────┘
 </code></pre>
 <ul>
-<li><code>src/index.ts</code>：Cordis 插件入口（<code>name</code>/<code>inject</code>/<code>apply</code>），注册 <code>calculator</code> 工具</li>
-<li><code>src/evaluate.ts</code>：<code>evaluate(expression: unknown): number</code>——入口独立校验类型（非字符串抛 <code>calculator: expression must be a string</code>），返回有限数字，非法输入全部抛错</li>
+<li><code>src/index.ts</code>: Cordis plugin entry (<code>name</code>/<code>inject</code>/<code>apply</code>), registers the <code>calculator</code> tool</li>
+<li><code>src/evaluate.ts</code>: <code>evaluate(expression: unknown): number</code> — the entry point independently validates the type (throws <code>calculator: expression must be a string</code> for non-strings), returns finite numbers, and throws on all invalid input</li>
 </ul>
-<h3>工具声明</h3>
+<h3>Tool Declaration</h3>
 <pre><code class="language-ts">import type { Context } from &#39;@deepseek-ai/cordis&#39;
 import { defineTool } from &#39;@deepseek-ai/dsh-tools&#39;
 import { evaluate } from &#39;./evaluate.ts&#39;
@@ -259,115 +259,115 @@ export function apply(ctx: Context): void {
   }))
 }
 </code></pre>
-<h3>支持的操作</h3>
+<h3>Supported Operations</h3>
 <table>
 <thead>
 <tr>
-<th>类别</th>
-<th>项目</th>
+<th>Category</th>
+<th>Items</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>算术</td>
-<td><code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code> <code>**</code>（幂，右结合：<code>2 ** 3 ** 2</code> = 512）</td>
+<td>Arithmetic</td>
+<td><code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code> <code>**</code> (power, right-associative: <code>2 ** 3 ** 2</code> = 512)</td>
 </tr>
 <tr>
-<td>函数（单参）</td>
+<td>Functions (single arg)</td>
 <td><code>abs</code> <code>ceil</code> <code>floor</code> <code>round</code> <code>sqrt</code> <code>log</code> <code>log2</code> <code>log10</code> <code>exp</code> <code>sin</code> <code>cos</code> <code>tan</code></td>
 </tr>
 <tr>
-<td>函数（多参）</td>
+<td>Functions (multiple args)</td>
 <td><code>pow(x, y)</code> <code>max(a, b, ...)</code> <code>min(a, b, ...)</code></td>
 </tr>
 <tr>
-<td>常量</td>
+<td>Constants</td>
 <td><code>PI</code> <code>E</code></td>
 </tr>
 <tr>
-<td>分组</td>
-<td><code>(</code> <code>)</code>，一元正负 <code>+5</code> <code>-5</code></td>
+<td>Grouping</td>
+<td><code>(</code> <code>)</code>, unary plus/minus <code>+5</code> <code>-5</code></td>
 </tr>
 </tbody></table>
-<p>优先级：<code>**</code>（右结合）&gt; 一元 <code>±</code> &gt; <code>* / %</code> &gt; <code>+ -</code>。</p>
-<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
-<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 的隔离 consumer 中完成全链路验证：</p>
+<p>Precedence: <code>**</code> (right-associative) &gt; unary <code>±</code> &gt; <code>* / %</code> &gt; <code>+ -</code>.</p>
+<h3>npm 0.1.0-rc.6 Compatibility (Verified)</h3>
+<p>This plugin has been migrated to the npm 0.1.0-rc.6 dependency line and fully verified end-to-end in an isolated consumer of <code>@deepseek-ai/dsh@0.1.0-rc.6</code>:</p>
 <ul>
-<li><strong>类型/运行时</strong>：<code>@deepseek-ai/cordis: ^4.0.1</code> + <code>@deepseek-ai/dsh-tools: &gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants: &gt;=0.0.1-rc.1 &lt;0.2.0</code>（peer）；不再依赖 unscoped <code>cordis</code></li>
-<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
-<li><strong>消费验证</strong>：tarball 装入 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
-<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+<li><strong>Types/runtime</strong>: <code>@deepseek-ai/cordis: ^4.0.1</code> + <code>@deepseek-ai/dsh-tools: &gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants: &gt;=0.0.1-rc.1 &lt;0.2.0</code> (peer); no longer depends on unscoped <code>cordis</code></li>
+<li><strong>Standalone build</strong>: <code>npm install</code> (devDependencies self-contained: typescript/vitest/@types/node) → <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>Consumption verification</strong>: tarball loaded into a 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> shows this plugin&#39;s row → the tool genuinely registers and executes</li>
+<li><strong>Launch method</strong>: <code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code> (lib production mode; don&#39;t <code>install -g</code> globally)</li>
 </ul>
-<h3>版本适配</h3>
+<h3>Version Adaptation</h3>
 <ul>
-<li><strong>适配 DSH</strong>: DSH 0.1.0-rc.6（npm）（迁移：profile/bundle 插件系统）</li>
-<li><strong>bundle 声明</strong>: <code>package.json</code> 的 <code>dsh.bundle</code>（patch 指向 <code>cordis.patch.yml</code>）+ <code>exports</code> 导出</li>
-<li><strong>patch 格式</strong>: <code>cordis.patch.yml</code> 使用 <code>- insert:</code> 列表（DSH 0.1.0-rc.6（npm）的 patch 是 id-targeted 语义，裸 <code>- id:</code> 条目会报 <code>entry not found</code>）</li>
-<li><strong>files</strong>: 发布 tarball 含 <code>lib/</code>、<code>src/</code>、<code>cordis.patch.yml</code></li>
+<li><strong>DSH adapted</strong>: DSH 0.1.0-rc.6 (npm) (migration: profile/bundle plugin system)</li>
+<li><strong>bundle declaration</strong>: <code>dsh.bundle</code> in <code>package.json</code> (patch points to <code>cordis.patch.yml</code>) + <code>exports</code> export</li>
+<li><strong>patch format</strong>: <code>cordis.patch.yml</code> uses the <code>- insert:</code> list (the DSH 0.1.0-rc.6 (npm) patch is id-targeted semantics; a bare <code>- id:</code> entry reports <code>entry not found</code>)</li>
+<li><strong>files</strong>: the published tarball contains <code>lib/</code>, <code>src/</code>, <code>cordis.patch.yml</code></li>
 </ul>
-<h3>安装</h3>
-<h4>Profile Bundle（推荐）</h4>
-<p>DSH 0.1.0-rc.6（npm）起，本插件可作为独立 bundle 一键安装到任意 profile（仓库位于 <a href="https://github.com/omdsh-dev%EF%BC%8Cpublic%EF%BC%89%EF%BC%9A">https://github.com/omdsh-dev，public）：</a></p>
+<h3>Installation</h3>
+<h4>Profile Bundle (Recommended)</h4>
+<p>As of DSH 0.1.0-rc.6 (npm), this plugin can be installed into any profile as a standalone bundle in one step (repositories live at <a href="https://github.com/omdsh-dev">https://github.com/omdsh-dev</a>, public):</p>
 <pre><code class="language-sh"># 交互式（web）profile
 dsh plugin --profile web add github:omdsh-dev/dsh-tool-calculator
 # 一次性任务（headless）profile —— dsh run 默认使用 headless
 dsh plugin --profile headless add github:omdsh-dev/dsh-tool-calculator
 </code></pre>
-<p>也可以先用 <code>npm pack</code> 打出 tarball 再安装：</p>
+<p>You can also pack a tarball with <code>npm pack</code> first and install that:</p>
 <pre><code class="language-sh">git clone https://github.com/omdsh-dev/dsh-tool-calculator
 cd dsh-tool-calculator
 npm install &amp;&amp; npm pack
 dsh plugin --profile web add ./deepseek-ai-dsh-tool-calculator-*.tgz
 dsh plugin --profile headless add ./deepseek-ai-dsh-tool-calculator-*.tgz
 </code></pre>
-<p>包内 <code>dsh.bundle.patch</code>（指向 <code>cordis.patch.yml</code>）会在安装后自动把插件加入 profile 的 layer stack；插件的 <code>cordis.patch.yml</code> 以 <code>- insert:</code> 插入 <code>tool-calculator</code> 条目。插件缺失的 peer 依赖（<code>@deepseek-ai/cordis</code>、<code>@deepseek-ai/dsh-tools</code>、<code>@deepseek-ai/dsh-invariants</code>）由 profile 的 healed <code>profiles/node_modules</code> 回退安装提供。</p>
+<p>The in-package <code>dsh.bundle.patch</code> (pointing to <code>cordis.patch.yml</code>) automatically adds the plugin to the profile&#39;s layer stack after installation; the plugin&#39;s <code>cordis.patch.yml</code> inserts the <code>tool-calculator</code> entry via <code>- insert:</code>. The plugin&#39;s missing peer dependencies (<code>@deepseek-ai/cordis</code>, <code>@deepseek-ai/dsh-tools</code>, <code>@deepseek-ai/dsh-invariants</code>) are provided by the profile&#39;s healed <code>profiles/node_modules</code> fallback installation.</p>
 <blockquote>
-<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。Windows 路径使用正斜杠（<code>C:/...</code>）。</p>
+<p>⚠️ web and headless are <strong>different profiles</strong>: installing for web doesn&#39;t automatically cover headless; <code>dsh run</code> uses the headless profile by default. Use forward slashes for Windows paths (<code>C:/...</code>).</p>
 </blockquote>
-<h4>验证安装</h4>
+<h4>Verify Installation</h4>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep tool-calculator
 </code></pre>
-<h4>运行验证</h4>
+<h4>Runtime Verification</h4>
 <pre><code class="language-sh">dsh run &quot;使用 calculator 工具计算 1+2*3&quot;
 </code></pre>
-<h4>手动安装（源码贡献 / 旧 snapshot 场景）</h4>
-<p>适用于源码贡献（在 monorepo 中开发调试本插件）或仍在使用旧 snapshot 的场景：</p>
+<h4>Manual Installation (Source Contribution / Legacy Snapshot Scenarios)</h4>
+<p>For source contribution (developing/debugging this plugin in the monorepo) or for scenarios still using old snapshots:</p>
 <ol>
-<li>放入 monorepo：<code>cp -r calculator ~/.dsh/source/master/packages/tools/calculator</code>（开发调试）</li>
-<li><code>apps/cli/package.json</code> 加 <code>&quot;@deepseek-ai/dsh-tool-calculator&quot;: &quot;workspace:^&quot;</code>；<code>tsconfig.host.json</code> references 加 <code>{ &quot;path&quot;: &quot;./packages/tools/calculator&quot; }</code></li>
+<li>Place it in the monorepo: <code>cp -r calculator ~/.dsh/source/master/packages/tools/calculator</code> (dev debugging)</li>
+<li>Add <code>&quot;@deepseek-ai/dsh-tool-calculator&quot;: &quot;workspace:^&quot;</code> to <code>apps/cli/package.json</code>; add <code>{ &quot;path&quot;: &quot;./packages/tools/calculator&quot; }</code> to the <code>tsconfig.host.json</code> references</li>
 <li><code>pnpm install &amp;&amp; pnpm run build</code></li>
-<li>在 profile 用户层 patch 插入插件（<code>~/.dsh/profiles/&lt;name&gt;/cordis.patch.yml</code>）：</li>
+<li>Insert the plugin in the profile user-layer patch (<code>~/.dsh/profiles/&lt;name&gt;/cordis.patch.yml</code>):</li>
 </ol>
 <pre><code class="language-yaml">- insert:
     - id: tool-calculator
       name: &#39;@deepseek-ai/dsh-tool-calculator&#39;
 </code></pre>
 <ol start="5">
-<li>验证：<code>dsh --profile &lt;name&gt; --dump-config | grep tool-calculator</code></li>
+<li>Verify: <code>dsh --profile &lt;name&gt; --dump-config | grep tool-calculator</code></li>
 </ol>
 <blockquote>
-<p>DSH 0.1.0-rc.6（npm）注意：patch 是 id-targeted 语义——裸 <code>- id:</code> 条目会报 <code>entry &quot;xxx&quot; not found</code>，必须用 <code>- insert:</code> 列表包裹。</p>
+<p>DSH 0.1.0-rc.6 (npm) note: the patch is id-targeted semantics — a bare <code>- id:</code> entry reports <code>entry &quot;xxx&quot; not found</code>; it must be wrapped in a <code>- insert:</code> list.</p>
 </blockquote>
-<h3>用法</h3>
-<p>安装后，agent 自动获得 <code>calculator</code> 工具：</p>
+<h3>Usage</h3>
+<p>After installation, the agent automatically gets the <code>calculator</code> tool:</p>
 <pre><code>calculator { expression: &quot;15 + 27 * sqrt(9)&quot; }  →  96
 </code></pre>
-<p>工具名满足 DeepSeek 函数名约束（≤64 字符，<code>[A-Za-z0-9_-]</code>）。注册后自动进入 Code Mode SDK（<code>await tools.calculator(...)</code>），canonical 返回值为数字。</p>
-<h3>已知限制</h3>
+<p>The tool name satisfies DeepSeek&#39;s function-name constraints (≤64 characters, <code>[A-Za-z0-9_-]</code>). After registration it automatically enters the Code Mode SDK (<code>await tools.calculator(...)</code>), and the canonical return value is a number.</p>
+<h3>Known Limitations</h3>
 <ol>
-<li><strong>分发链路</strong>：<code>@deepseek-ai/dsh-tools</code> 已随 DSH 0.1.0-rc.6（npm）发布为私有 npm 包；插件经 <code>dsh plugin add github:omdsh-dev/...</code> 或 tarball 直接安装，无需放入 monorepo 走 workspace 解析</li>
-<li><strong>三角函数使用弧度</strong>：与 <code>Math.sin</code>/<code>Math.cos</code> 一致；需要角度时写 <code>sin(30 * PI / 180)</code></li>
-<li><strong>不支持大整数</strong>：JS <code>number</code> 是 IEEE 754 double，安全整数范围 ±9e15，超出有精度损失</li>
-<li><strong>不支持科学计数法</strong>：<code>1e5</code> 会被词法层拒绝</li>
+<li><strong>Distribution chain</strong>: <code>@deepseek-ai/dsh-tools</code> is now published as a private npm package with DSH 0.1.0-rc.6 (npm); the plugin installs directly via <code>dsh plugin add github:omdsh-dev/...</code> or the tarball, with no need to place it in the monorepo for workspace resolution</li>
+<li><strong>Trigonometric functions use radians</strong>: consistent with <code>Math.sin</code>/<code>Math.cos</code>; write <code>sin(30 * PI / 180)</code> when you need degrees</li>
+<li><strong>No big integers</strong>: JS <code>number</code> is an IEEE 754 double; the safe integer range is ±9e15, beyond which precision is lost</li>
+<li><strong>No scientific notation</strong>: <code>1e5</code> is rejected by the lexer layer</li>
 </ol>
-<h3>测试</h3>
+<h3>Testing</h3>
 <pre><code class="language-bash">pnpm test
 </code></pre>
-<p>包含功能用例与攻击载荷用例（<code>constructor.constructor</code> 链、<code>process.exit(0)</code>、<code>globalThis</code>、引号注入、分号语句等）。完整用例清单见本地维护的设计文档。</p>
-<h3>许可</h3>
+<p>Includes functional test cases and attack-payload cases (<code>constructor.constructor</code> chain, <code>process.exit(0)</code>, <code>globalThis</code>, quote injection, semicolon statements, etc.). The complete case list is in the locally maintained design document.</p>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-calculator/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-calculator/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

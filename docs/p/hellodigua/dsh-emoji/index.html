@@ -189,39 +189,33 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/hellodigua/dsh-emoji/blob/main/README.en.md">English</a> | 简体中文</p>
-<p>为 DeepSeek Harness 的回复加入可切换、自定义的行内表情。</p>
-<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/banner.png" alt="dsh-emoji 蓝鲸表情包"></p>
-<h3>效果预览</h3>
-<p>默认的大肥鱼表情：</p>
-<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/chat-preview.png" alt="蓝鲸表情在 DSH 对话中的行内显示效果"></p>
-<p>切换到贴吧表情包后，也能使用同一套语义协议展示贴吧表情：</p>
-<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/chat-preview.tieba.png" alt="贴吧表情在 DSH 对话中的行内显示效果"></p>
-<p>上传并切换到 B 站表情包后，也能保留熟悉的社区表达风格：</p>
-<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/chat-preview.bilibili.png" alt="B 站表情在 DSH 对话中的行内显示效果"></p>
-<p>同一套语义协议也可用于小红书、抖音、微博等自定义表情包。</p>
-<h3>安装</h3>
-<p>使用 DSH CLI 把插件加入 Web Profile，然后重启 Web Host：</p>
+<p>English | <a href="https://github.com/hellodigua/dsh-emoji/blob/main/README.md">简体中文</a></p>
+<p>Add switchable, customizable inline emoji to DeepSeek Harness responses.</p>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/banner.en.png" alt="dsh-emoji whale emoji pack"></p>
+<h3>Preview</h3>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-emoji/main/assets/readme/chat-preview.en.png" alt="Inline whale emoji in a DSH conversation"></p>
+<h3>Installation</h3>
+<p>Add the plugin to the Web Profile with the DSH CLI, then restart the Web Host:</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-emoji
 </code></pre>
-<p>如需固定当前版本，使用 <code>dsh-emoji@0.2.0</code>。普通 <code>npm install dsh-emoji</code> 只会把包加入当前 Node.js 项目，不会启用 DSH 插件。</p>
-<h3>工作方式</h3>
+<p>Use <code>dsh-emoji@0.2.0</code> to pin this release. A plain <code>npm install dsh-emoji</code> only adds the package to the current Node.js project; it does not enable the DSH plugin.</p>
+<h3>How it works</h3>
 <ul>
-<li>AI 想加入情绪或装饰性表情时，内置协议要求它输出 <code>::happy::</code> 这类语义标记；插件会在 Host 端将其转换为当前表情包的行内图片，无需额外模型调用。</li>
-<li>内置和用户上传的表情包共用 40 个稳定语义 key，可随时切换，并支持小、正常、偏大、大四档尺寸。</li>
-<li>转写只作用于插件 marker 和插件图片，不影响普通正文中的 Unicode emoji、代码、链接、未知标记或其他 Markdown 图片。多张插件表情必须由有效正文分隔，相同表情可以在不同位置重复使用。</li>
+<li>When the AI wants an emotional or decorative reaction, the built-in protocol tells it to emit a semantic marker such as <code>::happy::</code>. The Host converts that marker into an inline image from the active emoji pack without another model call.</li>
+<li>Built-in and uploaded packs share 40 stable semantic keys, can be switched at any time, and support four display sizes.</li>
+<li>Rewriting applies only to plugin markers and plugin images. Unicode emoji in ordinary text, code, links, unknown markers, and other Markdown images are left unchanged. Reply text must separate multiple plugin emoji, while a key may repeat later.</li>
 </ul>
-<h3>调整 AI 的表情频率</h3>
-<p>安装并重启 Web Host 后，打开「设置 → 插件 → 表情（Whale Emoji）」：</p>
+<h3>Adjusting emoji frequency</h3>
+<p>After installation and a Web Host restart, open <strong>Settings → Plugins → Whale Emoji</strong>:</p>
 <ul>
-<li><code>关闭</code>：不使用表情。</li>
-<li><code>智能</code>：仅在表情确实有助于表达时自然使用，每回合最多 3 张，默认选项。</li>
-<li><code>高频</code>：更积极地考虑使用，但不强制每次出现，也不追求多张；每回合最多 4 张。</li>
+<li><strong>Off</strong>: do not use emoji.</li>
+<li><strong>Smart</strong>: use emoji only when it meaningfully helps express emotion, up to 3 per turn. This is the default.</li>
+<li><strong>Frequent</strong>: consider emoji more readily without forcing one or seeking multiple emoji, up to 4 per turn.</li>
 </ul>
-<p>还可以选择表情包、调整显示尺寸，或填写“附加提示词”控制表情的选择、语气和使用场景。保存后从下一次回复生效，无需重启；是否实际使用表情仍由模型决定。</p>
-<h3>上传自己的表情包</h3>
-<p>在同一张设置卡片中点击“上传 ZIP”。上传成功后选择新表情包并保存，下一次模型调用立即使用，无需重启。自定义包复用内置的 40 个稳定语义 key，因此 AI 仍输出 <code>::happy::</code> 等 marker，只替换最终图片，不需要重新猜测每套素材的含义。</p>
-<p>ZIP 可以直接包含下列文件，也可以再包一层同名目录：</p>
+<p>You can also choose an emoji pack, adjust its display size, or use <strong>Additional prompt</strong> to control emoji selection, tone, and usage. Changes apply to the next reply without a restart. The model still decides whether to use an emoji.</p>
+<h3>Uploading your own emoji pack</h3>
+<p>Click <strong>Upload ZIP</strong> in the same settings card. After upload, select the pack and save; the next model call uses it without a Host restart. A custom pack implements the same 40 stable semantic keys as the built-in pack, so the AI keeps emitting markers such as <code>::happy::</code> while only the final image changes.</p>
+<p>The ZIP may contain these files directly or inside one top-level directory:</p>
 <pre><code class="language-text">my-whale.zip
 ├── pack.json
 └── images/
@@ -229,31 +223,31 @@ footer p+p{margin-top:.5rem}
     ├── sad.png
     ├── thinking.png
     ├── celebrate.png
-    └── ...其余标准 key
+    └── ...the remaining canonical keys
 </code></pre>
-<p><code>pack.json</code> 格式：</p>
+<p><code>pack.json</code>:</p>
 <pre><code class="language-json">{
   &quot;schemaVersion&quot;: 1,
   &quot;keySet&quot;: &quot;dsh-emoji-core@1&quot;,
   &quot;id&quot;: &quot;my-whale&quot;,
-  &quot;name&quot;: &quot;我的鲸鱼表情&quot;,
+  &quot;name&quot;: &quot;My Whale Emoji&quot;,
   &quot;version&quot;: &quot;1.0.0&quot;
 }
 </code></pre>
-<p><code>schemaVersion</code> 表示 ZIP 技术格式，<code>keySet</code> 表示图片实现的语义集合。当前上传包必须声明 <code>dsh-emoji-core@1</code>；每个 key 的准确含义、相近语义边界和绘制建议见 <a href="https://github.com/hellodigua/dsh-emoji/blob/main/EMOJI_KEYS.md">核心语义契约</a>。</p>
-<p>40 个文件名 key 是：</p>
+<p><code>schemaVersion</code> identifies the technical ZIP format, while <code>keySet</code> identifies the semantic set implemented by the images. Uploaded packs must currently declare <code>dsh-emoji-core@1</code>. See the <a href="https://github.com/hellodigua/dsh-emoji/blob/main/EMOJI_KEYS.md">core semantic contract</a> for the normative meaning, visual guidance, and boundaries of every key.</p>
+<p>The 40 filename keys are:</p>
 <pre><code class="language-text">happy, sad, confused, watching, angry, speechless, doge, overloaded,
 neutral, laughing, crying, sweating, thinking, okay, nodding, sleeping,
 hurt, peeking, approve, heart, shy, star-eyes, laugh-cry, touched,
 scared, facepalm, eye-roll, sigh, frustrated, playful, snickering,
 sarcastic, cool, celebrate, cheer, thanks, sorry, hug, please, applause
 </code></pre>
-<p>每个 key 必须且只能提供一个同名 <code>.png</code>。<code>id</code> 使用小写字母、数字和连字符，<code>version</code> 使用 SemVer；同一个 <code>id@version</code> 的内容不可覆盖，更新素材时必须提升版本。ZIP 上限 20 MiB，解压后上限 80 MiB，单文件上限 2 MiB，图片宽高均不得超过 512 像素；路径逃逸、额外文件、缺失 key、未知 <code>keySet</code>、伪造格式和同版本冲突都会被拒绝。</p>
-<p>用户包保存在 <code>$DSH_HOME/emoji-packs/</code>（默认 <code>~/.dsh/emoji-packs/</code>），Settings 只保存当前 <code>id@version</code>。从选择列表“移除”不会物理删除素材字节，因此历史消息里的版本化 URL 仍能回放；重新上传完全相同的 ZIP 可以恢复该版本。</p>
-<h3>兼容性</h3>
-<p>当前版本面向 npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code>，DSH peers 声明为 <code>^0.1.0-rc.6</code>。本地开发固定精确 rc.6 类型链，部署时由 Web Profile 提供共享运行时。</p>
-<h3>本地开发</h3>
-<p>需要 Node.js <code>^22.19.0 || &gt;=24</code> 和 pnpm 11。</p>
+<p>Each key must have exactly one matching <code>.png</code>. IDs use lowercase letters, digits, and hyphens; versions use SemVer. Content at one <code>id@version</code> is immutable, so changed assets require a new version. Limits are 20 MiB per ZIP, 80 MiB expanded, 2 MiB per file, and 512 pixels per image dimension. Path traversal, extra files, missing keys, unknown <code>keySet</code> values, spoofed formats, and conflicting content are rejected.</p>
+<p>User packs live under <code>$DSH_HOME/emoji-packs/</code> (default <code>~/.dsh/emoji-packs/</code>), while Settings stores only the active <code>id@version</code>. <strong>Remove</strong> hides a pack from the selector but intentionally retains its immutable bytes for historical messages. Uploading the exact same ZIP restores that version.</p>
+<h3>Compatibility</h3>
+<p>This version targets npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code> and declares DSH peers as <code>^0.1.0-rc.6</code>. Local development pins the exact rc.6 type graph, while the Web Profile provides the shared runtime at deployment.</p>
+<h3>Local development</h3>
+<p>Requires Node.js <code>^22.19.0 || &gt;=24</code> and pnpm 11.</p>
 <pre><code class="language-sh">corepack pnpm install
 corepack pnpm typecheck
 corepack pnpm test
@@ -262,7 +256,7 @@ corepack pnpm pack --dry-run
 </code></pre>
 
     </div>
-    <p class="note"><a href="https://github.com/hellodigua/dsh-emoji/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/hellodigua/dsh-emoji/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

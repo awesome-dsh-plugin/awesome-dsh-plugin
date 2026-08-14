@@ -193,46 +193,40 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/README.md">English</a> | <a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/README.zh-CN.md">简体中文</a></p>
-<p>Attention reminders for the DeepSeek Harness Web UI. Whenever a session needs
-you, three surfaces light up at once: a <code>(1)</code>-style badge in the top-left of
-the frame, a <code>(N)</code> count in the browser tab title, and a recolored whale
-favicon.</p>
+<p>DeepSeek Harness Web 的关注提醒。当有会话需要你时，三处同时亮起：页面左上角
+<code>(1)</code> 式角标、浏览器标签页标题里的 <code>(N)</code> 计数、以及按状态换色的鲸鱼 favicon。</p>
 <ul>
-<li><strong>Amber</strong> — sessions waiting for your input (<code>ask_user</code> question, approval
-prompt, plan-mode review).</li>
-<li><strong>Green</strong> — sessions that finished while you were away and have not been
-opened yet.</li>
+<li><strong>琥珀色</strong>——有会话在等待你的输入（<code>ask_user</code> 提问、审批弹窗、计划确认）。</li>
+<li><strong>绿色</strong>——有会话在你离开时运行完成、尚未打开。</li>
 </ul>
-<p>All three share the same counts from the built-in sessions store — no host
-code, no extra transports. The badge is click-through and never blocks the
-sidebar.</p>
-<h3>Install</h3>
+<p>三处提醒共享内置会话存储的同一组计数——无 host 代码、无额外通道。角标点击
+穿透，不挡侧边栏。</p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-web-attention-badge
 </code></pre>
-<p>Or install straight from GitHub:</p>
+<p>或直接从 GitHub 安装：</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;github:Luaphes/dsh-web-attention-badge#v0.3.1&quot;
 </code></pre>
-<p>Upgrade / uninstall:</p>
+<p>升级 / 卸载：</p>
 <pre><code class="language-sh">dsh plugin --profile web update dsh-web-attention-badge
 dsh plugin --profile web remove dsh-web-attention-badge
 </code></pre>
-<p><code>dsh plugin</code> registers the bundle automatically — no manual config.</p>
-<h3>Tuning</h3>
-<p>Constants at the top of <code>lib/client.js</code>:</p>
+<p><code>dsh plugin</code> 会自动完成 bundle 登记，无需手动改配置。</p>
+<h3>调参</h3>
+<p><code>lib/client.js</code> 顶部常量：</p>
 <ul>
-<li><code>TAB_TITLE_ENABLED</code> — the <code>(N)</code> browser tab title prefix.</li>
-<li><code>FAVICON_ENABLED</code> — the whale-favicon recolor.</li>
-<li>Pill colors/position — the <code>style</code> maps in <code>AttentionBadge</code> / <code>Pill</code>.</li>
+<li><code>TAB_TITLE_ENABLED</code> — 标签页标题 <code>(N)</code> 前缀。</li>
+<li><code>FAVICON_ENABLED</code> — 鲸鱼 favicon 换色。</li>
+<li>角标颜色/位置 — <code>AttentionBadge</code> / <code>Pill</code> 中的 <code>style</code>。</li>
 </ul>
-<p>Bundle edits apply on a page refresh; manifest edits need a <code>dsh web</code>
-restart.</p>
-<h3>License</h3>
+<p>改 bundle 刷新页面即生效；改 manifest 需重启 <code>dsh web</code>。</p>
+<h3>许可</h3>
 <p><a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/LICENSE">MIT</a></p>
-<h3>Development</h3>
-<p>See <a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for layout, release and publishing.</p>
+<h3>参与开发</h3>
+<p>布局、发布与发版流程见 <a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Luaphes/dsh-web-attention-badge/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

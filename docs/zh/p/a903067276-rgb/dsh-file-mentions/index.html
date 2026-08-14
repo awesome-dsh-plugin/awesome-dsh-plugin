@@ -191,104 +191,99 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/README.md">English</a> | <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/README.zh-CN.md">简体中文</a></p>
 <p><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></p>
-<p><strong>Clickable file paths in DSH replies</strong> — a DeepSeek Harness (DSH) web plugin with a Codex-style experience.</p>
-<p>Inline paths wrapped in backticks (<code>`~/...`</code>, absolute, relative, or Chinese paths) become
-<strong>click-to-open</strong>; each clickable path carries a small 📂 button that reveals the file in your
-file manager; a &quot;📎 mentioned files&quot; chip list at the turn tail covers the rest. URLs are
-already auto-linked by the official renderer, so this plugin leaves them alone.</p>
-<h3>Features</h3>
+<p><strong>回复里提到的文件/路径，点一下就打开</strong> —— DeepSeek Harness（DSH）web 插件，Codex 式体验。</p>
+<p>回复正文里反引号包着的路径（<code>~/...</code>、绝对路径、相对路径、中文路径）<strong>直接点击就能打开</strong>；
+每个可点路径后面自动带一个 📂 小按钮，进文件管理器定位；回复尾部还有&quot;📎 提到的文件&quot;
+小圆钮兜底。URL 链接由官方渲染器自动可点，无需本插件处理。</p>
+<h3>功能一览</h3>
 <table>
 <thead>
 <tr>
-<th>Where</th>
-<th>What</th>
-<th>Effect</th>
+<th>位置</th>
+<th>操作</th>
+<th>效果</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Inline path text</td>
-<td>click</td>
-<td>Open with default app / open directory</td>
+<td>正文路径文字</td>
+<td>点击</td>
+<td>文件用系统默认应用打开 / 目录打开窗口</td>
 </tr>
 <tr>
-<td>📂 after inline path</td>
-<td>click</td>
-<td>Reveal in file manager (macOS Finder)</td>
+<td>正文路径后的 📂</td>
+<td>点击</td>
+<td>文件管理器定位选中（macOS Finder）</td>
 </tr>
 <tr>
-<td>&quot;📎 mentioned files&quot; chip</td>
-<td>click name</td>
-<td>Preview content inside DSH</td>
+<td>回复尾部&quot;📎 提到的文件&quot;</td>
+<td>点文件名</td>
+<td>DSH 内预览文件内容</td>
 </tr>
 <tr>
-<td>📂 in the chip list</td>
-<td>click</td>
-<td>Reveal in file manager</td>
+<td>回复尾部 📂</td>
+<td>点击</td>
+<td>文件管理器定位选中</td>
 </tr>
 <tr>
-<td>Inline URL</td>
-<td>click</td>
-<td>Browser opens it (official autolink)</td>
+<td>正文 URL</td>
+<td>点击</td>
+<td>浏览器打开（官方 autolink）</td>
 </tr>
 </tbody></table>
-<p>Supports <code>~/</code> expansion, relative paths (resolved against the session cwd), and absolute
-paths in macOS / Linux / Windows forms. Non-existent paths silently do nothing.</p>
-<h3>Install</h3>
-<h4>Official bundle install (recommended)</h4>
+<p>支持 <code>~/</code> 展开、相对路径（按会话目录解析）、macOS/Linux/Windows 三种绝对路径形态；
+不存在的路径点击后静默无反应（不报错、不弹窗）。</p>
+<h3>安装</h3>
+<h4>官方 bundle 一行安装（推荐）</h4>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;github:a903067276-rgb/dsh-file-mentions#main&quot;
 </code></pre>
-<p>Restart <code>dsh web</code>. Requires pnpm on PATH (<code>dsh plugin</code> forwards to pnpm).</p>
-<h4>Manual mount (fallback)</h4>
-<p>See <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/docs/install.md">docs/install.md</a>: symlink into
-<code>~/.dsh/profiles/web/node_modules/</code> plus a <strong>single entry</strong> in <code>~/.dsh/cordis.patch.yml</code>
-(a double entry makes the plugin apply twice and crash on duplicate route registration),
-then restart.</p>
-<h3>Usage</h3>
-<p>Have the agent wrap paths in backticks (e.g. <code>`~/docs/plan.md`</code>) to make them clickable
-inline. The tail chip list appears automatically — no configuration.</p>
-<h3>Platform support</h3>
+<p>重启 <code>dsh web</code> 生效。需要 pnpm（<code>dsh plugin</code> 是 pnpm 转发器）。</p>
+<h4>手动挂载（兜底）</h4>
+<p>详见 <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/docs/install.md">docs/install.md</a>：软链到
+<code>~/.dsh/profiles/web/node_modules/</code> + <code>~/.dsh/cordis.patch.yml</code> 单 entry
+（本插件单 entry 即可，双 entry 会重复注册路由崩溃），重启生效。</p>
+<h3>使用</h3>
+<p>agent 回复里用反引号包路径（如 <code>`~/docs/计划.md`</code>）即可触发正文点击。
+尾部列表自动出现，无需配置。</p>
+<h3>平台支持</h3>
 <table>
 <thead>
 <tr>
-<th>Platform</th>
-<th>Status</th>
+<th>平台</th>
+<th>状态</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>macOS</td>
-<td>✅ fully tested (incl. Chinese paths)</td>
+<td>✅ 全功能实测（含中文路径）</td>
 </tr>
 <tr>
 <td>Linux / Windows</td>
-<td>⚠️ not tested; expected to work (command branching and path parsing implemented)</td>
+<td>⚠️ 未实测，架构上预期可用（命令分流与路径解析已实现）</td>
 </tr>
 </tbody></table>
-<h3>How it works</h3>
+<h3>工作原理</h3>
 <ul>
-<li><strong>Host</strong> (<code>lib/index.js</code>): two routes — <code>/api/file-mentions/check</code> (existence check) and
-<code>/api/file-mentions/open</code> (system open, <code>mode: open/reveal</code>, per-platform command). Pure
-Node stdlib; <code>execFile</code> avoids shell injection.</li>
-<li><strong>Client</strong> (<code>lib/client.js</code>): a conversationEvents collector extracts paths from each
-reply → publishes them to turn data → the tail list filters non-existent paths before
-rendering; inline clicks use a <strong>document-level click delegation</strong> (the official render
-entry is occupied by the official &quot;deliverables&quot; plugin, so DOM delegation is the only
-viable path); inline 📂 buttons are inserted by a MutationObserver and restored
-automatically after React re-renders.</li>
+<li><strong>Host</strong>（<code>lib/index.js</code>）：两条路由 —— <code>/api/file-mentions/check</code>（存在性验证）、
+<code>/api/file-mentions/open</code>（系统打开，<code>mode: open/reveal</code>，平台命令分流）；
+全部 Node 标准库，<code>execFile</code> 不经 shell 防注入。</li>
+<li><strong>Client</strong>（<code>lib/client.js</code>）：conversationEvents 收集器提取每轮回复里的路径 →
+发布到回合数据 → 尾部列表渲染前先过滤不存在的路径；正文可点用 <strong>document 点击委托</strong>
+（官方渲染入口被官方&quot;产物&quot;插件占用，无法扩展，这是唯一可行路径）；正文 📂 用
+MutationObserver 动态补插，React 重渲染自动恢复。</li>
 </ul>
-<p>See <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/docs/architecture.md">docs/architecture.md</a>.</p>
-<h3>Compatibility notes</h3>
+<p>详见 <a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/docs/architecture.md">docs/architecture.md</a>。</p>
+<h3>兼容性说明</h3>
 <ul>
-<li>Inline clicks rely on backtick-wrapped paths (the agent-output convention, same as
-Codex); bare paths in prose are intentionally not clickable.</li>
-<li>The official &quot;produced files&quot; list and this plugin coexist: official wins when it has
-output, otherwise this plugin shows.</li>
-<li>Windows / Linux validation via issue or PR is welcome.</li>
+<li>正文可点依赖&quot;反引号包裹的路径&quot;（与 Codex 一致的 agent 输出惯例）；裸路径正文
+不支持（防误点普通文字）。</li>
+<li>官方&quot;产物&quot;列表与本插件互不打架：官方有产出时优先，无产出时本插件显示。</li>
+<li>Windows / Linux 欢迎实测后提交 issue/PR 补充验证。</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/a903067276-rgb/dsh-file-mentions/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

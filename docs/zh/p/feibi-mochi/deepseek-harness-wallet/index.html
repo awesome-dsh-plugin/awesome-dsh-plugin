@@ -190,94 +190,94 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <h4>余额监控和充值插件</h4>
-<p><code>dsh-wallet</code> is a focused wallet chip built specifically for the official <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web interface. It keeps the numbers that matter beside the composer: official DeepSeek balance, estimated spend for the open session, official and third-party token totals, a configurable low-balance warning, and a guarded shortcut to the official recharge page.</p>
-<h3>Why this exists</h3>
-<p>Long agent sessions can consume millions of tokens while the account balance remains hidden on another website. <code>dsh-wallet</code> puts the answer directly in the Harness workflow without adding a model tool, changing the system prompt or spending another token.</p>
+<p><code>dsh-wallet</code> 是专门为官方 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web 界面制作的钱包标签。它把真正需要的数字放到输入框旁：官方 DeepSeek 余额、当前会话预估花费、官方与第三方 token 合计、可配置的低余额提醒，以及带首次确认的官方充值入口。</p>
+<h3>为什么做这个插件</h3>
+<p>长时间的 Agent 任务可能消耗数百万 token，但账户余额仍藏在另一个网页里。<code>dsh-wallet</code> 直接在 Harness 工作流里给出答案，同时不注册模型工具、不修改系统提示词，也不会多消耗一个 token。</p>
 <pre><code class="language-text">余额 5.89 · 本场 0.72 · 官 18.8M | 三方 800K · ↗充
 </code></pre>
-<h3>Core features</h3>
+<h3>核心功能</h3>
 <ul>
-<li><strong>Live DeepSeek balance</strong> — reads the official account-balance endpoint, refreshes every 60 seconds and provides a manual refresh button.</li>
-<li><strong>Per-session spend monitor</strong> — estimates the open conversation&#39;s DeepSeek cost from cache-hit input, cache-miss input and output usage. The displayed balance remains the authoritative account value.</li>
-<li><strong>Provider-aware token tracking</strong> — keeps official DeepSeek usage separate from third-party providers, so another provider&#39;s tokens never inflate the DeepSeek bill.</li>
-<li><strong>Official recharge shortcut</strong> — opens <code>https://platform.deepseek.com/top_up</code>. The destination is hardcoded and shown for confirmation before the first jump.</li>
-<li><strong>Low-balance alert</strong> — choose any threshold with two-decimal precision. Below it, the chip turns red and sends one desktop notification; the alert resets after the balance recovers.</li>
-<li><strong>Conversation isolation</strong> — each session has its own counters. “Clear current session” removes only the open conversation&#39;s wallet data.</li>
-<li><strong>Theme-native panel</strong> — follows Harness light and dark themes, closes on outside click and flips direction near the viewport edge.</li>
-<li><strong>No model overhead</strong> — no tools, no prompt injection and no extra model tokens.</li>
+<li><strong>实时 DeepSeek 余额</strong>——读取官方账户余额接口，每 60 秒自动刷新，也可手动刷新。</li>
+<li><strong>单会话花费监控</strong>——按缓存命中输入、缓存未命中输入和输出 token 估算当前会话的 DeepSeek 花费；账户余额仍以 DeepSeek 返回值为准。</li>
+<li><strong>按供应商分桶统计</strong>——官方 DeepSeek 与第三方供应商分别累计，其他模型的 token 不会被算进 DeepSeek 账单。</li>
+<li><strong>官方充值跳转</strong>——只打开 <code>https://platform.deepseek.com/top_up</code>，地址不可自定义；首次跳转前会显示域名确认。</li>
+<li><strong>低余额提醒</strong>——阈值可自由设置到两位小数。低于阈值时标签变红并发送一次桌面通知，余额恢复后自动复位。</li>
+<li><strong>会话隔离</strong>——每个会话独立计数；“清除本会话数据”只影响当前对话。</li>
+<li><strong>跟随 Harness 主题</strong>——自动适配浅色与深色主题，点击外部关闭面板，靠近屏幕边缘时自动调整展开方向。</li>
+<li><strong>零模型负担</strong>——不注册工具、不注入提示词、不增加模型 token。</li>
 </ul>
-<h3>Screenshots</h3>
+<h3>截图</h3>
 <table>
 <thead>
 <tr>
-<th>Below threshold: red alert</th>
-<th>Above threshold: normal state</th>
+<th>低于阈值：红色提醒</th>
+<th>高于阈值：正常状态</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/assets/below-threshold.png" alt="Below-threshold wallet chip"></td>
-<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/assets/above-threshold.png" alt="Normal wallet chip"></td>
+<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/i18n/../assets/below-threshold.png" alt="低于阈值的钱包标签"></td>
+<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/i18n/../assets/above-threshold.png" alt="正常的钱包标签"></td>
 </tr>
 </tbody></table>
-<h3>Install from GitHub</h3>
-<p>Requirements:</p>
+<h3>从 GitHub 安装</h3>
+<p>要求：</p>
 <ul>
-<li>The official DeepSeek Harness Web profile</li>
-<li>Node.js <code>^22.19.0</code> or <code>&gt;=24</code></li>
-<li>A configured <code>DEEPSEEK_API_KEY</code> for official balance lookup</li>
+<li>官方 DeepSeek Harness Web profile</li>
+<li>Node.js <code>^22.19.0</code> 或 <code>&gt;=24</code></li>
+<li>已配置 <code>DEEPSEEK_API_KEY</code>，用于查询官方余额</li>
 </ul>
 <pre><code class="language-shell">dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet
 dsh --profile web
 </code></pre>
-<p>Then hard-refresh the Harness page. The wallet chip appears beside the composer.</p>
-<h4>Update</h4>
+<p>随后强制刷新 Harness 页面，钱包标签会出现在输入框旁。</p>
+<h4>更新</h4>
 <pre><code class="language-shell">dsh plugin --profile web update dsh-wallet
 </code></pre>
-<h4>Remove</h4>
+<h4>卸载</h4>
 <pre><code class="language-shell">dsh plugin --profile web remove dsh-wallet
 </code></pre>
 <blockquote>
 <p>[!NOTE]
-Token tracking works per provider. Official balance lookup requires a valid DeepSeek API key with access to the official balance endpoint. The recharge action opens DeepSeek&#39;s website; login and payment always happen there.</p>
+Token 会按供应商正常统计；官方余额查询需要有效的 DeepSeek API Key。充值按钮只负责打开 DeepSeek 官方网站，登录和支付始终在官方页面完成。</p>
 </blockquote>
-<h3>Data, privacy and trust</h3>
+<h3>数据、隐私与信任</h3>
 <table>
 <thead>
 <tr>
-<th>Item</th>
-<th>Behavior</th>
+<th>项目</th>
+<th>行为</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>API key</td>
-<td>Read through the Harness credentials service. It is sent only as the authorization header for <code>https://api.deepseek.com/user/balance</code>; the plugin never displays or stores the key.</td>
+<td>API Key</td>
+<td>通过 Harness 凭证服务读取，只作为授权头发送到 <code>https://api.deepseek.com/user/balance</code>；插件不会显示或保存 Key。</td>
 </tr>
 <tr>
-<td>Wallet data</td>
-<td>Stored locally at <code>$DSH_HOME/storages/wallet.json</code>.</td>
+<td>钱包数据</td>
+<td>仅保存在本机 <code>$DSH_HOME/storages/wallet.json</code>。</td>
 </tr>
 <tr>
-<td>Token accounting</td>
-<td>Listens to Harness <code>llm/stream</code> usage data and buckets it by session and provider.</td>
+<td>Token 统计</td>
+<td>监听 Harness <code>llm/stream</code> 用量数据，按会话与供应商分别累计。</td>
 </tr>
 <tr>
-<td>Model surface</td>
-<td>Registers no model tool and injects no prompt content.</td>
+<td>模型侧</td>
+<td>不注册模型工具，不注入任何提示词。</td>
 </tr>
 <tr>
-<td>Recharge</td>
-<td>Opens only the hardcoded official URL <code>https://platform.deepseek.com/top_up</code>.</td>
+<td>充值</td>
+<td>只打开硬编码的官方地址 <code>https://platform.deepseek.com/top_up</code>。</td>
 </tr>
 </tbody></table>
-<h3>Pricing used for estimates</h3>
-<p>The current V4 table uses CNY per one million tokens from the official <a href="https://api-docs.deepseek.com/quick_start/pricing/">DeepSeek Models &amp; Pricing</a> page:</p>
+<h3>花费估算价格</h3>
+<p>当前 V4 价格表使用 DeepSeek 官方<a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing">模型与价格</a>页面公布的人民币/百万 token 单价：</p>
 <table>
 <thead>
 <tr>
-<th>Model</th>
-<th align="right">Cache-hit input</th>
-<th align="right">Cache-miss input</th>
-<th align="right">Output</th>
+<th>模型</th>
+<th align="right">缓存命中输入</th>
+<th align="right">缓存未命中输入</th>
+<th align="right">输出</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -293,31 +293,31 @@ Token tracking works per provider. Official balance lookup requires a valid Deep
 <td align="right">¥6</td>
 </tr>
 </tbody></table>
-<p>Prices can change. Treat the session amount as an estimate and the balance returned by DeepSeek as authoritative. Please open an Issue when the official pricing table changes.</p>
-<h3>Project layout</h3>
+<p>官方价格可能调整。当前会话花费应视为估算，DeepSeek 返回的账户余额才是权威值。官方价格变化后，欢迎提交 Issue。</p>
+<h3>项目结构</h3>
 <pre><code class="language-text">dsh-wallet/
-├─ index.js                 Host plugin: balance, usage accounting and HTTP routes
-├─ lib/client.js            Harness Web wallet chip and control panel
-├─ cordis.patch.yml         Installable Harness profile bundle patch
-├─ docs/assets/             Public screenshots
+├─ index.js                 宿主插件：余额、用量统计与 HTTP 路由
+├─ lib/client.js            Harness Web 钱包标签和控制面板
+├─ cordis.patch.yml         可安装的 Harness profile bundle 补丁
+├─ docs/assets/             公开展示截图
 └─ docs/i18n/README.zh-CN.md
 </code></pre>
-<h3>Roadmap</h3>
+<h3>计划</h3>
 <ul>
-<li><input disabled="" type="checkbox"> Balance history chart</li>
-<li><input disabled="" type="checkbox"> Optional pricing tables for third-party providers</li>
-<li><input disabled="" type="checkbox"> Balance adapters for additional providers</li>
-<li><input disabled="" type="checkbox"> More automated compatibility checks against Harness releases</li>
+<li><input disabled="" type="checkbox"> 余额历史曲线</li>
+<li><input disabled="" type="checkbox"> 可选的第三方供应商价格表</li>
+<li><input disabled="" type="checkbox"> 更多供应商余额接口适配</li>
+<li><input disabled="" type="checkbox"> 针对 Harness 新版本的自动兼容性检查</li>
 </ul>
-<h3>Contributing</h3>
-<p>Bug reports and pull requests are welcome in English or Chinese. Never include API keys, wallet files, session logs or account information in an Issue.</p>
-<h3>Disclaimer</h3>
-<p>This is an independent community plugin and is not affiliated with or endorsed by DeepSeek. DeepSeek and DeepSeek Harness are trademarks or projects of their respective owners.</p>
-<h3>License</h3>
-<p><a href="https://github.com/feibi-mochi/deepseek-harness-wallet/blob/main/LICENSE">MIT</a></p>
+<h3>参与贡献</h3>
+<p>欢迎使用英文或中文提交 Bug 与 PR。请勿在 Issue 中上传 API Key、钱包文件、会话日志或账户信息。</p>
+<h3>声明</h3>
+<p>这是独立的社区插件，与 DeepSeek 官方没有隶属或背书关系。DeepSeek 与 DeepSeek Harness 的相关权利归其各自所有者。</p>
+<h3>许可证</h3>
+<p><a href="https://github.com/feibi-mochi/deepseek-harness-wallet/blob/main/docs/i18n/../../LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/feibi-mochi/deepseek-harness-wallet/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/feibi-mochi/deepseek-harness-wallet/blob/main/docs/i18n/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

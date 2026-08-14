@@ -192,54 +192,54 @@ footer p+p{margin-top:.5rem}
 <h2>Arcana</h2>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
 <blockquote>
-<p>把 DeepSeek Harness 的全部斜杠命令做成一块可拖动、可折叠、按使用次数排序的悬浮「命令甲板」。</p>
+<p>Every slash command in DeepSeek Harness, as a draggable, collapsible, usage-sorted floating command deck.</p>
 </blockquote>
-<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 提供右侧悬浮「命令甲板」，把当前 Harness 支持的所有 <code>/</code> 命令（内置的 + 各插件提供的）都列成按钮：悬停看介绍、点击即执行，按使用次数排序，多命令自动分页（每页 10 条）。</p>
-<h3>✨ 特性</h3>
+<p>A floating command deck for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>, pinned to the right side of the Web UI: it lists every <code>/</code> command the Harness serves — built-in and plugin-provided — as buttons. Hover for details, click to run, sorted by usage, with pagination at 10 commands per page.</p>
+<h3>✨ Features</h3>
 <ul>
-<li>🔍 <strong>全量命令发现</strong> —— 直接读取 Harness 的命令目录（<code>remote.commands</code> RPC），与你在输入框敲 <code>/</code> 时看到的候选<strong>完全同源</strong>，内置命令和第三方插件命令一网打尽。</li>
-<li>🧭 <strong>悬停即见介绍</strong> —— 鼠标停在按钮上，显示该命令的 <code>description</code>（与聊天栏提示一致）；带参数的命令还额外显示用法提示。</li>
-<li>⚡ <strong>点击即执行</strong> —— 无参数命令一键运行；有参数的命令点击后弹出内联输入框，回车运行。</li>
-<li>🪟 <strong>可拖动、可折叠</strong> —— 拖拽标题栏上下移动（位置记忆）；标题栏右侧「▸/◂」折叠/展开，收起后只留标题栏（同 context-vista）。</li>
-<li>📊 <strong>按使用次数排序</strong> —— 每个命令的使用次数存本地（localStorage），高频命令自动浮到前面，跨刷新、跨重启保留使用习惯。</li>
-<li>📄 <strong>每页 10 条分页</strong> —— 命令较多时自动分页翻页，列表区可滚动。</li>
-<li>🌐 <strong>中英双语</strong> —— 跟随 Harness 语言自动切换。</li>
-<li>🎨 <strong>纯客户端、零构建</strong> —— 无 host 逻辑、无打包步骤，随主题 <code>--dsw-*</code> token 自适应明暗色。</li>
+<li>🔍 <strong>Full command discovery</strong> — reads the Harness command directory (<code>remote.commands</code> RPC), the exact same catalog the composer&#39;s <code>/</code> palette uses, so built-in and third-party plugin commands all appear.</li>
+<li>🧭 <strong>Hover for details</strong> — hovering a button shows the command <code>description</code> (identical to the chat-bar hint); argument-taking commands also show their usage hint.</li>
+<li>⚡ <strong>Click to run</strong> — argument-free commands run instantly; commands that need input reveal an inline field, Enter to run.</li>
+<li>🪟 <strong>Draggable &amp; collapsible</strong> — drag the header to move vertically (position remembered); the &quot;▸/◂&quot; toggle collapses to just the header (like context-vista).</li>
+<li>📊 <strong>Usage-sorted</strong> — per-command usage counts are persisted in localStorage, so frequently used commands float to the top across reloads and restarts.</li>
+<li>📄 <strong>10 per page</strong> — paginated with prev/next when commands overflow; the list scrolls.</li>
+<li>🌐 <strong>Bilingual</strong> — follows the Harness locale.</li>
+<li>🎨 <strong>Client-only, zero build</strong> — no host logic, no bundler; themed through the shell&#39;s <code>--dsw-*</code> tokens (light/dark aware).</li>
 </ul>
-<h3>🚀 安装</h3>
+<h3>🚀 Install</h3>
 <pre><code class="language-sh">npx @deepseek-ai/dsh plugin --profile web add github:GooodWei/arcana
 npx @deepseek-ai/dsh web
 </code></pre>
 <blockquote>
-<p>需先安装 pnpm（<code>dsh plugin add</code> 内部会调用它）。已全局安装 dsh 时，<code>npx @deepseek-ai/dsh</code> 可简写为 <code>dsh</code>。</p>
+<p>Install pnpm first (<code>dsh plugin add</code> invokes it internally). If dsh is installed globally, <code>npx @deepseek-ai/dsh</code> can be shortened to <code>dsh</code>.</p>
 </blockquote>
-<p>安装后<strong>重启 DSH</strong>（<code>dsh --profile web</code>），右上角即出现命令甲板。</p>
-<h3>🧭 使用</h3>
+<p>Restart DSH (<code>dsh --profile web</code>) and the deck appears on the right side.</p>
+<h3>🧭 Usage</h3>
 <ul>
-<li><strong>运行命令</strong>：点击某个命令按钮，无参数命令立即执行；带参数的命令（如 <code>/resume-claude</code>）会弹出输入框，填完回车运行。</li>
-<li><strong>查看介绍</strong>：悬停在按钮上，看完整描述与用法。</li>
-<li><strong>翻页</strong>：底部 <code>‹ 1/3 ›</code> 前后翻页，每页 10 条。</li>
-<li><strong>拖动</strong>：按住标题栏上下拖动，位置自动记忆。</li>
-<li><strong>折叠/展开</strong>：点标题栏右侧「▸/◂」折叠或展开；收起后只留标题栏。</li>
-<li><strong>排序</strong>：命令按使用次数降序排列（同次数按名称），使用次数越多越靠前。</li>
+<li><strong>Run</strong>: click a command — argument-free commands run immediately; commands with arguments (e.g. <code>/resume-claude</code>) show an inline input.</li>
+<li><strong>Inspect</strong>: hover a button for its full description and usage.</li>
+<li><strong>Paginate</strong>: use <code>‹ 1/3 ›</code> at the bottom, 10 per page.</li>
+<li><strong>Drag</strong>: grab the header to move; position is remembered.</li>
+<li><strong>Collapse/expand</strong>: use the &quot;▸/◂&quot; toggle to collapse to just the header.</li>
+<li><strong>Sort</strong>: commands are ordered by usage count (descending, then by name); the more you use one, the higher it ranks.</li>
 </ul>
-<h3>🗂 项目结构</h3>
-<pre><code>package.json          npm 元数据 + dsh.client 声明
-cordis.patch.yml      bundle 声明（插入 host 行）
-lib/index.js          空 host 半（纯客户端插件）
-lib/client.js         客户端半：命令枚举 + 悬浮甲板 + 分页
-README.md / README.en.md  中英双语说明
+<h3>🗂 Layout</h3>
+<pre><code>package.json          npm metadata + dsh.client manifest
+cordis.patch.yml      bundle patch (inserts the host row)
+lib/index.js          empty host half (client-only plugin)
+lib/client.js         client half: command discovery + floating deck + pagination
+README.md / README.en.md   bilingual docs
 </code></pre>
-<h3>🛠 兼容性</h3>
+<h3>🛠 Compatibility</h3>
 <ul>
-<li>面向 <code>dsh 0.1.0-rc.6</code>（web profile）。</li>
-<li>纯客户端实现，不修改 DSH 引擎；只消费公开的 <code>remote.commands</code>、<code>sessions</code>、<code>slots</code>、<code>locale</code> 服务。</li>
+<li>Targets <code>dsh 0.1.0-rc.6</code> (web profile).</li>
+<li>Client-only; never touches the DSH engine. Consumes only the public <code>remote.commands</code>, <code>sessions</code>, <code>slots</code>, and <code>locale</code> services.</li>
 </ul>
 <h3>📄 License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/GooodWei/arcana/blob/master/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/GooodWei/arcana/blob/master/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

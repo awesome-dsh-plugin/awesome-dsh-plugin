@@ -189,31 +189,31 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/screenshot.webp" alt="中文模式实机：两侧广告栏、对话内插件推荐、贪玩蓝鲸和 DSH 消息中心"></p>
-<p><code>dsh-ads</code> 会在侧栏、对话、推理中途和右下角塞入一整套虚构广告。它看起来会暂停 inference，实际上模型一直在后台工作，只是后续回答和工具调用要等广告结束才显示。</p>
-<p>插件不会只拿自己开涮。GitHub 上带 <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> topic、且最近两周更新过的公开插件会进入推荐位，点击广告就能打开真实仓库。仓库换到个人账号或其他组织后仍能被发现。</p>
-<h3>两套互联网垃圾美学</h3>
-<p>切换 DSH 的「设置 → 语言」，当前页面会立即更换整套素材、文案和交互，不用刷新。中文模式主打页游、财神和「这次一定」，两张贪玩蓝鲸海报每 20 秒自动切换；English mode 则是 fake antivirus、weird tricks 和 actual gameplay*。</p>
-<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/reward-gate.png" alt="流式回答中插入的 V4 Pro 正式版抽奖广告：财神鲸、每轮一抽的转盘与四道解锁进度条"></p>
-<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/english-mode.png" alt="English 模式实机：Imagegen 虎鲸插件广告、假杀毒广告、假游戏和消息中心"></p>
-<h3>安装</h3>
-<p>推荐直接从 GitHub 安装到 DSH 的 <code>web</code> profile：</p>
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/english-mode.png" alt="English mode with Imagegen whale plugin ads, fake antivirus warnings, a fake game, and the DSH message center"></p>
+<p><code>dsh-ads</code> fills the gutters, conversation, inference, and bottom corner with fictional advertising. A rewarded ad can appear to pause inference while the model keeps working. The rest of the answer and any tool calls become visible when the ad ends.</p>
+<p>The sponsored slots promote more than this repository. Public GitHub projects tagged <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> and updated within the last two weeks enter the rotation. Each ad opens the real repository, and transferring that repository to another account does not remove it from discovery.</p>
+<h3>Two kinds of internet trash</h3>
+<p>Change Settings → Language and the current page immediately swaps the artwork, copy, and interactions without a reload. Chinese mode has browser games, a God of Wealth whale, and endless near-wins. Its two Blue Whale game posters rotate every 20 seconds. English mode has fake antivirus, weird tricks, and actual gameplay*.</p>
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/reward-gate.png" alt="The Chinese V4 Pro prize wheel with the God of Wealth whale and four unlock progress bars"></p>
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/screenshot.webp" alt="Chinese mode with gutter ads, a sponsored plugin, the fake game, and DSH message center"></p>
+<h3>Install</h3>
+<p>Install the plugin from GitHub into DSH&#39;s <code>web</code> profile:</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:Nagi-ovo/dsh-ads
-# 如果 dsh web 正在运行，重启后刷新页面
+# If dsh web is running, restart it and refresh the page.
 </code></pre>
-<p>可以运行 <code>dsh --profile web --dump-config</code> 确认插件已经进入最终配置。需要修改源码时，克隆仓库并在仓库目录运行 <code>dsh plugin --profile web add .</code>；构建产物已经提交，不需要额外构建。使用社区 <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> 的用户也可以从「设置 → 插件」安装。</p>
-<p>每个广告位都能在「设置 → 广告（非官方）」里单独关闭，选择会保留到下次启动。</p>
-<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/settings.webp" alt="DSH 设置面板里的广告开关"></p>
-<h3>免费广告位</h3>
-<p>带 <code>dsh-plugin</code> topic 的公开插件会自动参与轮播。想指定自己的文案或图片，可以查看<a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/contrib/README.md">投稿说明</a>并发 PR。曝光记录只保存在本机浏览器里。</p>
-<p>同一个作者的 <a href="https://github.com/Nagi-ovo/dsh-visualize">dsh-visualize</a> 可以让模型直接在对话里画出交互界面。这条是整个 README 唯一正经的广告。</p>
-<p><a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/assets/visualize-demo.mp4"><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/visualize-demo.webp" alt="dsh-visualize 对话内生成交互式可视化演示"></a></p>
-<h3>免责声明</h3>
-<p>本插件纯属娱乐，与 DeepSeek 以及任何真实公司、产品或服务均无关联。广告里的品牌、人物、域名、价格、病毒和承诺均为虚构。插件不会扫描、读取或修改机器上的文件。</p>
-<p>「验证修复」只会在用户主动点击后查询一次 GitHub Star 状态，优先使用本机 <code>gh</code> 或 token，否则调用匿名公开 API。结果只保存在本机浏览器中。</p>
+<p>Run <code>dsh --profile web --dump-config</code> to confirm that the plugin is present in the final configuration. For local development, clone the repository and run <code>dsh plugin --profile web add .</code> from its root; committed build output means no separate build step is required. Users of the community <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> can also install it from Settings → Plugins.</p>
+<p>Every placement has its own switch under Settings → Ads (Unofficial). Choices persist across restarts.</p>
+<p><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/settings.webp" alt="Per-placement ad controls in DSH Settings"></p>
+<h3>Free ad inventory</h3>
+<p>Any public repository tagged <code>dsh-plugin</code> can enter the rotation. To provide custom copy or artwork, read the <a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/contrib/README.md">contribution guide</a> and send a PR. Impression history stays in the local browser.</p>
+<p>From the same author, <a href="https://github.com/Nagi-ovo/dsh-visualize">dsh-visualize</a> lets the model render interactive UI directly inside a conversation. This is the only serious advertisement in this README.</p>
+<p><a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/assets/visualize-demo.mp4"><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/visualize-demo.webp" alt="dsh-visualize rendering an interactive visualization inside a conversation"></a></p>
+<h3>Disclaimer</h3>
+<p>This plugin is entertainment and is not affiliated with DeepSeek or any real company, product, or service. Every brand, person, domain, price, virus, and promise shown in its ads is fictional. The plugin does not scan, read, or modify files on the computer.</p>
+<p>“Verify fix” checks GitHub Star status only after the user clicks it. It prefers the local <code>gh</code> session or token and otherwise uses the anonymous public API. The result stays in the local browser.</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/Nagi-ovo/dsh-ads/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

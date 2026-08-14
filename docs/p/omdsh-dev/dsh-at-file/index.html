@@ -208,11 +208,17 @@ footer p+p{margin-top:.5rem}
 <p>Each result shows the filename first and its parent directory underneath. Duplicate filenames include the parent directory in the main label. Built-in SVG icons distinguish folders, source files, text, PDFs, images, data and configuration files, archives, and other files.</p>
 <p>The default index skips common version-control directories, IDE metadata, dependency trees, caches, and build output. The list covers VS Code, Visual Studio, JetBrains IDEs, Fleet, Eclipse, Android and Gradle, Xcode, CMake, Flutter, .NET, Unity, Unreal, and common JavaScript and Python output directories. OS metadata files named <code>desktop.ini</code>, <code>Thumbs.db</code>, and <code>.DS_Store</code> are excluded by default.</p>
 <h3>Install or Update</h3>
-<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.0.tar.gz
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.1.tar.gz
 </code></pre>
-<p>Use the same command to update an existing installation. Restart <code>dsh web</code> after installation so the Host and browser client load version <code>0.5.0</code>.</p>
-<p>File filters are managed under <strong>Settings -&gt; File mentions</strong>. The <strong>Global</strong> tab applies its rules to every workspace. The <strong>Workspace</strong> tab adds rules for one selected workspace while retaining the global rules. Each rule is a complete basename and matching is case-insensitive.</p>
-<p>Rules are added and removed individually. The global list can be restored to the built-in defaults, and a workspace list can be cleared without changing other workspaces. Every change invalidates cached indexes, so the next <code>@</code> search uses the updated filters immediately.</p>
+<p>Use the same command to update an existing installation. Restart <code>dsh web</code> after installation so the Host and browser client load version <code>0.5.1</code>.</p>
+<h3>File Filters</h3>
+<p>Open <strong>Settings -&gt; File mentions</strong> to manage file-name filters.</p>
+<ul>
+<li><strong>Global</strong> contains rules shared by every workspace.</li>
+<li><strong>Workspace</strong> contains additional rules for the selected workspace path. Each workspace keeps its own list, and the panel shows the global rules it inherits.</li>
+</ul>
+<p>Each rule matches one complete basename, without case sensitivity. Add and remove rules individually. <strong>Restore defaults</strong> resets the global list to the built-in file names. <strong>Clear workspace rules</strong> removes only the selected workspace&#39;s additions.</p>
+<p>Settings are saved in the DSH web profile through the plugin&#39;s own Host connection. Existing <code>ignoreFiles</code> values from <code>0.4.1</code> remain in the global list after updating. A change clears the affected index cache, so the next <code>@</code> search uses the saved rules.</p>
 <h3>Configuration</h3>
 <p>The available options apply to the path picker index:</p>
 <ul>

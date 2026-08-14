@@ -190,25 +190,25 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p>Automated unit-test generation for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>: a <code>/testgen</code> command and a <code>generate_tests</code> tool that scaffold tests, run your project&#39;s test runner, and <strong>fix failures until they pass</strong> — bounded, observable, and honest about what it changed.</p>
+<p>面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的自动化单元测试生成插件：<code>/testgen</code> 命令 + <code>generate_tests</code> 工具，自动生成测试、运行项目测试框架，并<strong>持续修复失败直到通过</strong>——有界、可观测、对改动诚实。</p>
 </blockquote>
 <p><a href="https://github.com/bujue600-arch/dsh-testgen/releases"><img src="https://img.shields.io/github/v/release/bujue600-arch/dsh-testgen?color=4D6BFE" alt="release"></a>
 <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/LICENSE"><img src="https://img.shields.io/github/license/bujue600-arch/dsh-testgen" alt="license"></a>
 <a href="https://github.com/bujue600-arch/dsh-testgen/actions/workflows/ci.yml"><img src="https://github.com/bujue600-arch/dsh-testgen/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a>
 <a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/dsh-plugin-4D6BFE?logo=deepseek&logoColor=white" alt="dsh-plugin"></a></p>
-<p>English | <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/README.md">English</a> | 中文</p>
 <hr>
-<h3>Why this plugin</h3>
-<p>DeepSeek Harness agents write code constantly — and leave it untested. <code>dsh-testgen</code> closes that loop <strong>inside the harness</strong>:</p>
+<h3>为什么需要这个插件</h3>
+<p>DeepSeek Harness 的 Agent 不断写代码——却常常不写测试。<code>dsh-testgen</code> 在框架内部补上这个闭环：</p>
 <ul>
-<li><strong>One command for humans</strong> — <code>/testgen src/utils/math.ts</code> generates, runs, and fixes in a single step.</li>
-<li><strong>One tool for agents</strong> — the agent itself can call <code>generate_tests</code> after writing code, keeping the loop in the session.</li>
-<li><strong>Two generators, no dead ends</strong> — behavioral tests through your composed LLM when available; deterministic structural smoke tests (zero LLM, works offline) otherwise.</li>
-<li><strong>A real fix loop</strong> — failures are parsed from vitest / jest / mocha / node:test output and fed back to the LLM, up to a bounded number of iterations, only ever rewriting the test files it generated.</li>
+<li><strong>给人一条命令</strong> —— <code>/testgen src/utils/math.ts</code>，生成、运行、修复一步到位。</li>
+<li><strong>给 Agent 一个工具</strong> —— Agent 写完代码后可直接调用 <code>generate_tests</code>，闭环留在会话里。</li>
+<li><strong>双生成器，永不卡死</strong> —— 配置了 LLM 时生成行为测试；没有 LLM 时退化为确定性结构冒烟测试（零依赖、离线可用）。</li>
+<li><strong>真正的修复循环</strong> —— 从 vitest / jest / mocha / node:test 输出中解析失败并回喂给 LLM，迭代次数有上界，且只会重写它自己生成的测试文件。</li>
 </ul>
-<p>No duplicated wheels: the ecosystem has git tools and eval harnesses, but no plugin that <em>generates, runs, and fixes</em> unit tests as a first-class harness surface.</p>
-<h3>Features</h3>
+<p>不做重复轮子：生态里有 Git 工具和评测框架，但没有把「生成 → 运行 → 修复」单元测试作为一等框架能力的插件。</p>
+<h3>特性</h3>
 <table>
 <thead>
 <tr>
@@ -217,89 +217,89 @@ footer p+p{margin-top:.5rem}
 </tr>
 </thead>
 <tbody><tr>
-<td>⚡ <code>/testgen</code> slash command</td>
-<td><code>[options] &lt;file-or-glob&gt;</code>, <code>--json</code>, <code>--help</code>; rendered directly in the Web UI</td>
+<td>⚡ <code>/testgen</code> 斜杠命令</td>
+<td><code>[options] &lt;file-or-glob&gt;</code>、<code>--json</code>、<code>--help</code>；结果直接渲染在 Web UI</td>
 </tr>
 <tr>
-<td>🛠️ <code>generate_tests</code> model tool</td>
-<td>structured JSON input/output, cooperative cancellation, never runs in parallel</td>
+<td>🛠️ <code>generate_tests</code> 模型工具</td>
+<td>结构化 JSON 输入/输出、协作式取消、从不并行执行</td>
 </tr>
 <tr>
-<td>🧠 LLM generator</td>
-<td>streams through <code>ctx.llm</code>, honors your provider/model, bounded source truncation</td>
+<td>🧠 LLM 生成器</td>
+<td>经由 <code>ctx.llm</code> 流式生成，遵循你的 provider/model，源文件截断有界</td>
 </tr>
 <tr>
-<td>🧩 Template generator</td>
-<td>zero-dependency smoke tests scaffolded from exported symbols — no API key needed</td>
+<td>🧩 模板生成器</td>
+<td>零依赖，从导出符号搭建冒烟测试——不需要 API Key</td>
 </tr>
 <tr>
-<td>🔁 Generate → run → fix loop</td>
-<td>per-framework failure parsing, bounded by <code>maxIterations</code></td>
+<td>🔁 生成 → 运行 → 修复</td>
+<td>按框架解析失败，<code>maxIterations</code> 限定循环</td>
 </tr>
 <tr>
-<td>🧪 Runner autodetect</td>
-<td>vitest / jest / mocha detected from the project; <code>node --test</code> as the universal fallback</td>
+<td>🧪 运行器自动探测</td>
+<td>按项目依赖识别 vitest / jest / mocha；兜底 <code>node --test</code></td>
 </tr>
 <tr>
-<td>🔥 Hot-reloaded config</td>
-<td><code>testgen:</code> section in <code>settings.yaml</code>; edits apply on the next invocation, no restart</td>
+<td>🔥 配置热加载</td>
+<td><code>settings.yaml</code> 的 <code>testgen:</code> 段，修改后下次调用即生效，无需重启</td>
 </tr>
 <tr>
-<td>🧰 Lifecycle-clean</td>
-<td>registrations and in-flight runs unwind with the plugin fiber; refuses to overwrite user tests</td>
+<td>🧰 生命周期干净</td>
+<td>注册与在途任务随插件 fiber 卸载；绝不覆盖用户已有的测试</td>
 </tr>
 <tr>
-<td>📐 Typed end to end</td>
-<td>TypeScript, schemastery config, stable error codes, 78 unit tests including a real end-to-end run</td>
+<td>📐 全链路类型化</td>
+<td>TypeScript、schemastery 配置、稳定错误码、78 个单元测试（含真实端到端）</td>
 </tr>
 </tbody></table>
-<h3>Demo</h3>
-<p>Terminal-style demo (deterministic template generator + real <code>node --test</code> run):</p>
+<h3>演示</h3>
+<p>终端风格演示（确定性模板生成器 + 真实 <code>node --test</code> 运行）：</p>
 <p><img src="https://raw.githubusercontent.com/bujue600-arch/dsh-testgen/main/assets/demo-cli.png" alt="dsh-testgen CLI demo"></p>
-<p>In the Web UI, the plugin shows up in <strong>Settings → Plugins → Plugin list</strong> with an active status (real <code>dsh web</code> boot, 134 plugins loaded):</p>
-<p><img src="https://raw.githubusercontent.com/bujue600-arch/dsh-testgen/main/assets/demo-web.png" alt="dsh-testgen in the Web UI"></p>
-<h3>Installation</h3>
-<p>Requires Node ≥ 22 and <code>dsh</code> (DeepSeek Harness CLI).</p>
-<pre><code class="language-sh"># Install straight from GitHub
+<p>在 Web UI 中，插件出现在 <strong>Settings → Plugins → Plugin list</strong>，状态为已启用（真实 <code>dsh web</code> 启动，共加载 134 个插件）：</p>
+<p><img src="https://raw.githubusercontent.com/bujue600-arch/dsh-testgen/main/assets/demo-web.png" alt="dsh-testgen Web UI"></p>
+<h3>安装</h3>
+<p>需要 Node ≥ 22 与 <code>dsh</code>（DeepSeek Harness CLI）。</p>
+<pre><code class="language-sh"># 直接从 GitHub 安装
 dsh plugin --profile web add github:bujue600-arch/dsh-testgen
 </code></pre>
-<p><code>dsh plugin add</code> installs the package into the profile and reconciles the bundle layer stack — the plugin declares a <code>dsh.bundle</code> manifest (<code>&quot;dsh&quot;: { &quot;bundle&quot;: { &quot;patch&quot;: &quot;./cordis.patch.yml&quot; } }</code>), so no hand-editing is required. It works for any profile: <code>web</code>, <code>headless</code>, or your own. (An npm package will be published with the first stable dsh release it targets; pinning to a release tag is recommended once available.)</p>
+<p><code>dsh plugin add</code> 会把包安装进 profile 并自动对账 bundle 层叠——插件声明了 <code>dsh.bundle</code> 清单（<code>&quot;dsh&quot;: { &quot;bundle&quot;: { &quot;patch&quot;: &quot;./cordis.patch.yml&quot; } }</code>），无需手工编辑。任何 profile 都适用：<code>web</code>、<code>headless</code> 或自定义。（npm 包将随目标 dsh 稳定版发布；届时建议固定到 release 标签。）</p>
 <blockquote>
-<p>Note for git/file installs: pnpm exits non-zero on missing peers for linked dependencies; that is expected — the harness resolves the peer packages (<code>@deepseek-ai/dsh-*</code>, cordis) from the profile&#39;s own module fallback at boot. The plugin loads normally.</p>
+<p>git/file 安装说明：pnpm 对链接依赖会以非零退出码提示缺失 peers——这是预期行为：启动时 harness 会从 profile 自身的模块回退中解析这些 peer 包（<code>@deepseek-ai/dsh-*</code>、cordis）。插件照常加载。</p>
 </blockquote>
-<p>Verify it loaded (Web): <strong>Settings → Plugins → Plugin list</strong> shows the <code>testgen</code> entry with an active status dot.</p>
-<h3>Usage</h3>
-<h4>Slash command</h4>
-<pre><code>/testgen [options] &lt;file-or-glob&gt; [more targets…]
+<p>验证加载成功（Web）：<strong>Settings → Plugins → Plugin list</strong> 中可见 <code>testgen</code> 条目，且状态点为绿色。</p>
+<h3>使用</h3>
+<h4>斜杠命令</h4>
+<pre><code>/testgen [options] &lt;file-or-glob&gt; [更多目标…]
 
-Options:
-  --runner &lt;vitest|jest|node-test|mocha|auto&gt;  framework (default: auto)
-  --generator &lt;llm|template|auto&gt;              generator (default: auto)
-  --iterations &lt;n&gt;                             fix-loop bound (default: 3)
-  --model &lt;provider/model&gt;                     generation model override
-  --no-run                                     generate only, do not run
-  --json                                       machine-readable report
-  -h, --help                                   show this help
+选项：
+  --runner &lt;vitest|jest|node-test|mocha|auto&gt;  测试框架（默认 auto）
+  --generator &lt;llm|template|auto&gt;              生成器（默认 auto）
+  --iterations &lt;n&gt;                             修复循环上界（默认 3）
+  --model &lt;provider/model&gt;                     生成模型覆盖
+  --no-run                                     只生成，不运行
+  --json                                       输出机器可读报告
+  -h, --help                                   显示帮助
 </code></pre>
 <pre><code class="language-sh">/testgen src/utils/math.ts
 /testgen --runner vitest &quot;src/**/*.ts&quot;
 /testgen --generator template --no-run src/app.ts
 /testgen --model deepseek-official/deepseek-chat src/parser.ts
 </code></pre>
-<h4>Model tool</h4>
-<p>The agent can call it directly — same pipeline, structured result:</p>
+<h4>模型工具</h4>
+<p>Agent 可以直接调用——同一管线、结构化结果：</p>
 <pre><code>generate_tests({ target: &quot;src/utils/math.ts&quot;, runner: &quot;vitest&quot;, maxIterations: 3 })
 </code></pre>
-<h4>What gets written</h4>
-<p>For <code>src/utils/math.ts</code>, tests land in <code>src/utils/__tests__/math.test.ts</code> (framework-dependent; <code>node:test</code> uses <code>.test.mts</code>). Existing test files are <strong>never overwritten</strong> — a target that already has a test file is skipped with a warning.</p>
-<h3>Configuration</h3>
-<p>All settings live under the <code>testgen:</code> key of your harness settings document (<code>$DSH_HOME/settings.yaml</code>) and are <strong>hot-reloaded</strong> — edit, save, done. Layering: schema defaults → composition entry (<code>cordis.patch.yml</code>) → your settings section.</p>
+<h4>产物位置</h4>
+<p>对 <code>src/utils/math.ts</code>，测试写入 <code>src/utils/__tests__/math.test.ts</code>（扩展名随框架变化，<code>node:test</code> 用 <code>.test.mts</code>）。已存在的测试文件<strong>绝不会被覆盖</strong>——已有测试的目标会被跳过并给出警告。</p>
+<h3>配置</h3>
+<p>所有设置位于 harness 设置文档（<code>$DSH_HOME/settings.yaml</code>）的 <code>testgen:</code> 段，并支持<strong>热加载</strong>——改完即生效。分层：schema 默认值 → 组合入口（<code>cordis.patch.yml</code>）→ 你的设置段。</p>
 <pre><code class="language-yaml">testgen:
   runner: auto            # auto | vitest | jest | node-test | mocha
   generator: auto         # auto | llm | template
-  maxIterations: 3        # generate → run → fix loop bound (0 disables fixing)
-  timeoutSec: 120         # per-run wall-clock timeout
-  autoRun: true           # run the suite after generation
+  maxIterations: 3        # 生成 → 运行 → 修复循环上界（0 禁用修复）
+  timeoutSec: 120         # 单次运行的墙钟超时
+  autoRun: true           # 生成后运行测试
   includeGlobs:
     - &#39;**/*.{ts,tsx,js,jsx}&#39;
   excludeGlobs:
@@ -308,74 +308,74 @@ Options:
     - &#39;**/*.test.*&#39;
     - &#39;**/*.spec.*&#39;
     - &#39;**/__tests__/**&#39;
-  testDir: __tests__      # generated tests land here, next to the target
-  model:                  # optional provider/model override
+  testDir: __tests__      # 生成的测试放在目标旁的该目录
+  model:                  # 可选的 provider/model 覆盖
     provider: deepseek-official
     model: deepseek-chat
-  maxSourceChars: 60000   # source characters fed to the LLM per target
+  maxSourceChars: 60000   # 每个目标喂给 LLM 的源码字符上限
 </code></pre>
-<p>You can also override any of these per profile by patching the <code>testgen</code> row in the profile&#39;s <code>cordis.patch.yml</code> (a patch replaces the row&#39;s whole config). See <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/docs/config.md"><code>docs/config.md</code></a> for the full reference.</p>
-<h3>Input / output specification</h3>
-<p>Every surface — command, tool, engine — speaks the same contract. The tool&#39;s canonical output schema is the JSON projection of <code>TestgenReport</code>; <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/docs/io-spec.md"><code>docs/io-spec.md</code></a> documents it in full.</p>
+<p>也可以在 profile 的 <code>cordis.patch.yml</code> 里按行 id（<code>testgen</code>）覆盖以上任意字段（patch 会整体替换该行配置）。完整参考见 <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/docs/config.md"><code>docs/config.md</code></a>。</p>
+<h3>输入 / 输出规范</h3>
+<p>命令、工具、引擎共用同一份契约。工具的规范输出 schema 即 <code>TestgenReport</code> 的 JSON 投影；完整文档见 <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/docs/io-spec.md"><code>docs/io-spec.md</code></a>。</p>
 <pre><code class="language-ts">interface TestgenReport {
   status: &#39;passed&#39; | &#39;fixed&#39; | &#39;generated&#39; | &#39;failed&#39; | &#39;skipped&#39;
   targets: { path: string; language: string }[]
-  generated: GeneratedTest[]        // path, framework, generator, testCount
-  runs: TestRun[]                   // per-iteration exit code, summary, failures
+  generated: GeneratedTest[]        // path、framework、generator、testCount
+  runs: TestRun[]                   // 每次迭代的退出码、统计、失败明细
   warnings: string[]
   stats: { generatedFiles: number; passed: number; failed: number; iterations: number }
   elapsedMs: number
 }
 </code></pre>
-<h3>Architecture</h3>
-<p>Everything is a plugin, and this plugin stays inside its box:</p>
+<h3>架构</h3>
+<p>一切皆插件，本插件严守边界：</p>
 <pre><code>dsh-testgen
 ├── src/
-│   ├── index.ts            # cordis entry: name / inject / Config / apply
-│   ├── schema.ts           # schemastery config + settings namespace schema
-│   ├── settings.ts         # hot-reload aware effective-config resolution
-│   ├── command.ts          # /testgen grammar + handler
-│   ├── tool.ts             # generate_tests definition (input/output schemas)
-│   ├── report.ts           # plain / markdown / JSON rendering
-│   ├── errors.ts           # stable TESTGEN_* error codes (HarnessError)
-│   └── engine/             # pure, framework-free core (fully unit-tested)
-│       ├── resolve.ts      # path/glob → SourceTarget[], language detection
-│       ├── template.ts     # deterministic smoke-test generator
-│       ├── generate-llm.ts # ctx.llm streaming, prompt assembly, extraction
-│       ├── runner.ts       # framework detect, spawn, output parsing
-│       └── pipeline.ts     # generate → run → fix orchestration
-├── cordis.patch.yml        # bundle patch: one `testgen` insert row
-├── docs/                   # io-spec, config reference
-├── examples/fixture/       # demo project
-└── test/                   # 78 unit tests (vitest)
+│   ├── index.ts            # cordis 入口：name / inject / Config / apply
+│   ├── schema.ts           # schemastery 配置 + settings 命名空间 schema
+│   ├── settings.ts         # 热加载感知的有效配置解析
+│   ├── command.ts          # /testgen 语法与处理器
+│   ├── tool.ts             # generate_tests 定义（输入/输出 schema）
+│   ├── report.ts           # plain / markdown / JSON 渲染
+│   ├── errors.ts           # 稳定的 TESTGEN_* 错误码（HarnessError）
+│   └── engine/             # 纯逻辑内核，与框架解耦（完整单测）
+│       ├── resolve.ts      # 路径/glob → SourceTarget[]、语言识别
+│       ├── template.ts     # 确定性冒烟测试生成器
+│       ├── generate-llm.ts # ctx.llm 流式生成、提示词组装、提取
+│       ├── runner.ts       # 框架探测、进程执行、输出解析
+│       └── pipeline.ts     # 生成 → 运行 → 修复编排
+├── cordis.patch.yml        # bundle 补丁：一行 `testgen` insert
+├── docs/                   # io-spec、配置参考
+├── examples/fixture/       # 演示项目
+└── test/                   # 78 个单元测试（vitest）
 </code></pre>
 <ul>
-<li><strong>Non-invasive</strong>: one insert row in the composition; no core patches, no monkey-patching. Removable with <code>dsh plugin --profile web remove dsh-testgen</code>.</li>
-<li><strong>Composable</strong>: hard-injects only <code>commands</code> and <code>tools</code> (present in every shipped profile); <code>settings</code>, <code>llm</code>, and the agent session are consumed opportunistically, so a profile without a settings provider or LLM adapter still works.</li>
-<li><strong>Honest side effects</strong>: writes test files only, refuses to overwrite existing ones, and fixes only files it generated. Test processes run with your project&#39;s runner, from the workspace root, with a tree-killing timeout and abort wiring.</li>
+<li><strong>不侵入</strong>：组合树中仅一行 insert；无核心补丁、无猴子补丁。<code>dsh plugin --profile web remove dsh-testgen</code> 即可干净卸载。</li>
+<li><strong>可组合</strong>：仅硬注入 <code>commands</code> 与 <code>tools</code>（所有出厂 profile 均具备）；<code>settings</code>、<code>llm</code> 与 agent 会话按需消费——没有 settings provider 或 LLM 适配器的 profile 同样可用。</li>
+<li><strong>诚实的副作用</strong>：只写测试文件、拒绝覆盖已有文件、只修复自己生成的文件；测试进程使用项目自身的运行器，从工作区根启动，超时会杀死整个进程树，并接入了取消信号。</li>
 </ul>
-<h3>Development</h3>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run typecheck     # tsc --noEmit
 pnpm run lint          # eslint
-pnpm test              # vitest (78 tests)
+pnpm test              # vitest（78 个用例）
 pnpm run build         # tsdown → lib/
-pnpm run verify:manifest  # dsh.bundle / exports / files contract
-pnpm run demo          # end-to-end demo against examples/fixture
+pnpm run verify:manifest  # dsh.bundle / exports / files 契约
+pnpm run demo          # 对 examples/fixture 的端到端演示
 </code></pre>
-<p>Contributions welcome — see <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>. Report bugs or propose features through the issue templates.</p>
-<h3>FAQ</h3>
-<p><strong>Does it need an API key?</strong> No. Without an LLM adapter, <code>generator: auto</code> uses the deterministic template generator — structural smoke tests that prove imports resolve and exports exist. With an LLM composed, <code>auto</code> prefers behavioral tests.</p>
-<p><strong>Which projects work with <code>node --test</code>?</strong> TypeScript targets need an ESM project (<code>&quot;type&quot;: &quot;module&quot;</code> in package.json — the normal case) because Node strips types only from ESM files; JSX targets need vitest or jest (pin <code>runner</code>).</p>
-<p><strong>Will it modify my source code?</strong> Never. It writes test files only, and skips targets that already have a test file.</p>
-<p><strong>What if the fix loop can&#39;t make it green?</strong> It stops at <code>maxIterations</code> and reports <code>failed</code> with the last failures and warnings — no infinite retries.</p>
-<h3>Changelog &amp; versioning</h3>
-<p><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CHANGELOG.md"><code>CHANGELOG.md</code></a> — versions follow <a href="https://semver.org">SemVer</a>.</p>
-<h3>License</h3>
-<p><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/LICENSE">MIT</a> © bujue600-arch and dsh-testgen contributors. This is a community project, not affiliated with DeepSeek.</p>
+<p>欢迎贡献——见 <a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> 与<a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CODE_OF_CONDUCT.md">行为准则</a>。Bug 与特性请求请使用 Issue 模板。</p>
+<h3>常见问题</h3>
+<p><strong>需要 API Key 吗？</strong> 不需要。没有 LLM 适配器时，<code>generator: auto</code> 使用确定性模板生成器——生成可证明导入与导出存续的结构冒烟测试。配置了 LLM 后，<code>auto</code> 优先生成行为测试。</p>
+<p><strong>哪些项目可以用 <code>node --test</code>？</strong> TypeScript 目标需要 ESM 项目（package.json 中 <code>&quot;type&quot;: &quot;module&quot;</code>——常见情形），因为 Node 只对 ESM 文件剥离类型；JSX 目标请使用 vitest 或 jest（用 <code>runner</code> 指定）。</p>
+<p><strong>会改我的源码吗？</strong> 不会。只写测试文件，且跳过已有测试文件的目标。</p>
+<p><strong>修复循环无法转绿怎么办？</strong> 到达 <code>maxIterations</code> 即停止，报告 <code>failed</code> 并附上最后一次失败明细与警告——不会无限重试。</p>
+<h3>更新日志与版本</h3>
+<p><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/CHANGELOG.md"><code>CHANGELOG.md</code></a> —— 版本遵循 <a href="https://semver.org">SemVer</a>。</p>
+<h3>许可</h3>
+<p><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/LICENSE">MIT</a> © bujue600-arch 与 dsh-testgen 贡献者。本项目为社区项目，与 DeepSeek 无关。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/bujue600-arch/dsh-testgen/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

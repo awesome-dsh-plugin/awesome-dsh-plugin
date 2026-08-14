@@ -193,179 +193,179 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p><strong><a href="https://github.com/mnemon-dev/mnemon">Mnemon</a> 与 DSH 的深度集成，为 DSH 提供完备的记忆系统能力。</strong></p>
+<p><strong>A deep integration of <a href="https://github.com/mnemon-dev/mnemon">Mnemon</a> and DSH that gives DSH comprehensive memory capabilities.</strong></p>
 </blockquote>
-<p><code>dsh-mnemon</code> 是 DeepSeek Harness（DSH）的本地 Mnemon 记忆插件。它把每轮可见的运行时热记忆、可直接阅读的项目档案（Documents）和按需召回的长期记忆体（Memory Spaces）组织成一个受监督、可检索、可维护的三层体系。</p>
-<p>插件把 Mnemon 的长期记忆体能力接入 DSH，并补充 Runtime Memory、Documents、生命周期、受限子 Agent、WebUI、命令和权限边界。当前用户指令和仓库事实始终高于历史记忆。</p>
+<p><code>dsh-mnemon</code> is a local Mnemon memory plugin for DeepSeek Harness (DSH). It organizes always-available runtime memory, readable project Documents, and on-demand long-term Memory Spaces into a supervised, searchable, maintainable three-tier system.</p>
+<p>The plugin brings Mnemon&#39;s durable Memory Space capabilities into DSH and adds Runtime Memory, Documents, lifecycle integration, bounded subagents, the WebUI, commands, and permission boundaries. Current user instructions and repository facts always take precedence over historical memory.</p>
 <blockquote>
-<p><strong>What&#39;s more?</strong> 更多 DSH Native 能力支持正在路上。<strong>Memory to View.</strong></p>
+<p><strong>What&#39;s more?</strong> More DSH-native capabilities are on the way. <strong>Memory to View.</strong></p>
 </blockquote>
-<h3>实机演示</h3>
-<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/assets/dsh-mnemon-memory-system-demo.gif" alt="dsh-mnemon 记忆系统实机演示：状态、运行时记忆、多记忆体图谱、档案、检索、实体与监督写回"></p>
-<h3>三层记忆</h3>
+<h3>Live demo</h3>
+<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/assets/dsh-mnemon-memory-system-demo.gif" alt="dsh-mnemon memory system walkthrough covering status, Runtime Memory, the multi-space graph, Documents, recall, entities, and supervised writeback"></p>
+<h3>Three memory tiers</h3>
 <table>
 <thead>
 <tr>
-<th>层级</th>
-<th>适合保存</th>
-<th>如何记住</th>
-<th>如何进入上下文</th>
+<th>Tier</th>
+<th>What belongs here</th>
+<th>How it is retained</th>
+<th>How it reaches context</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>运行时热记忆</td>
-<td>用户偏好、稳定约定、环境事实、常用经验</td>
-<td>显式操作或合格的后台审查更新 <code>memories.json</code>，再生成 <code>USER.md</code> / <code>MEMORY.md</code> 投影</td>
-<td>每轮直接注入</td>
+<td>Runtime Memory</td>
+<td>User preferences, stable conventions, environment facts, frequently used lessons</td>
+<td>Explicit operations or an eligible background review update <code>memories.json</code>, then generate <code>USER.md</code> / <code>MEMORY.md</code> projections</td>
+<td>Injected directly every turn</td>
 </tr>
 <tr>
-<td>项目档案</td>
-<td>设计、调查、流程、架构理由、交接材料</td>
-<td>创建或更新受管 Markdown 与 <code>index.json</code>；整理容量时先建立 Mnemon 冷引用，再迁移原文</td>
-<td>先检索 active Documents，再按需读取全文</td>
+<td>Project Documents</td>
+<td>Designs, investigations, procedures, rationale, and handoffs</td>
+<td>Create or update managed Markdown and <code>index.json</code>; capacity maintenance creates a Mnemon cold reference before moving the original</td>
+<td>Search active Documents first, then read full text on demand</td>
 </tr>
 <tr>
-<td>记忆体</td>
-<td>跨会话的长期事实、决策、实体与关系</td>
-<td>受限 <code>spawn</code> worker 选择最窄空间并查重，通过 Mnemon <code>remember</code> / <code>link</code> 写入四图</td>
-<td>只从已激活 Memory Spaces 按需召回</td>
+<td>Memory Spaces</td>
+<td>Cross-session facts, decisions, entities, and relationships</td>
+<td>A bounded <code>spawn</code> worker selects the narrowest space, checks duplicates, and writes four-graph memory through Mnemon <code>remember</code> / <code>link</code></td>
+<td>Recalled on demand from active Memory Spaces only</td>
 </tr>
 </tbody></table>
-<pre><code class="language-text">当前任务产生的可复用信息
+<pre><code class="language-text">Reusable knowledge produced by current work
           |
-          +-- 短小、稳定、每轮常用
-          |      主 Agent / 合格的 fork 审查
+          +-- Compact, stable, useful every turn
+          |      root Agent / eligible fork review
           |                 |
           |      add | replace | remove
           |                 v
-          |      memories.json（权威源）
+          |      memories.json (source of truth)
           |                 |
-          |      USER.md + MEMORY.md ----------&gt; 每轮 prompt
+          |      USER.md + MEMORY.md ----------&gt; every prompt
           |
-          +-- 完整设计、调查、流程与交接
-          |      主 Agent / 合格的 fork 审查
+          +-- Complete designs, research, procedures, handoffs
+          |      root Agent / eligible fork review
           |                 |
           |          create | update
           |                 v
-          |      index.json + active/*.md ------&gt; 检索后按需全文
+          |      index.json + active/*.md ------&gt; full text after search
           |                 |
-          |      Mnemon 冷引用 -&gt; archived/*.md（容量整理）
+          |      Mnemon cold reference -&gt; archived/*.md (maintenance)
           |
-          `-- 跨会话事实、决策、实体与关系
-                    主 Agent
+          `-- Cross-session facts, decisions, entities, relations
+                    root Agent
                        |
-              spawn：选空间 / 查重 / 写入
+              spawn: route / deduplicate / write
                        v
               Mnemon CLI -&gt; &lt;space&gt;/mnemon.db
                        |
-              spawn：仅召回 active 空间 -------&gt; 有界证据
+              spawn: recall active spaces only -&gt; bounded evidence
 </code></pre>
-<h3>核心能力</h3>
+<h3>Highlights</h3>
 <ul>
-<li>主动记忆路由：内置 Prompt、生命周期提示与工具说明会启发 LLM 按需调用全部读写能力；用户明确要求回顾、记住、修改、忘记或建档时，会自动选择对应层级和操作。</li>
-<li>统一的 <code>global</code>、<code>workspace</code> 或 <code>custom</code> 存储范围，覆盖三层数据。</li>
-<li>多记忆体目录：每个记忆体拥有稳定 ID、名称、路由说明、激活状态和独立 <code>mnemon.db</code>。</li>
-<li>受限子 Agent：长期召回与语义写入使用隔离的 <code>spawn</code> worker；后台审查使用继承已完成 checkpoint 的 <code>fork</code> worker。</li>
-<li>可靠容量维护：USER 热记忆在本地保守合并，MEMORY 热记忆先归档再压缩，Documents 先建立冷索引再迁移；revision 冲突时保留原数据。</li>
-<li>DSH 原生体验：模型工具、<code>/mnemon</code> 命令、双语 Web 工作台、全局明暗主题和诊断状态页。</li>
-<li>本地优先：CLI 以参数数组启动且禁用 shell；数据库和文档不需要远程记忆服务。</li>
+<li>Proactive memory routing: built-in prompts, lifecycle cues, and tool descriptions encourage the LLM to use every read/write surface when useful; explicit requests to revisit, retain, correct, forget, or document are routed to the matching tier and operation.</li>
+<li>One <code>global</code>, <code>workspace</code>, or <code>custom</code> storage scope for all three tiers.</li>
+<li>A Memory Space directory in which each space has a stable ID, name, routing description, activation state, and its own <code>mnemon.db</code>.</li>
+<li>Bounded subagents: isolated <code>spawn</code> workers handle durable recall and semantic writes; a <code>fork</code> worker inherits a completed checkpoint for background review.</li>
+<li>Safe capacity maintenance: USER memory is compacted locally, MEMORY entries are archived before compaction, and Documents are cold-indexed before migration; revision conflicts preserve the original data.</li>
+<li>Native DSH integration through model tools, <code>/mnemon</code> commands, a bilingual Web workspace, global light/dark themes, and diagnostics.</li>
+<li>Local-first execution: the CLI is started with argument arrays and no shell, and no remote memory service is required.</li>
 </ul>
-<h3>前置条件</h3>
+<h3>Prerequisites</h3>
 <ul>
-<li>可用的 DSH Web profile。</li>
-<li>本地 <code>mnemon</code> CLI。</li>
-<li>支持 <code>outputSchema</code>、<code>toolFilter</code>、<code>persona</code> 和 <code>depthLimit</code> 的子 Agent provider。常规语义操作优先使用 <code>spawn</code>；默认后台审查还需要名为 <code>fork</code>、可继承父上下文的 provider。</li>
+<li>A working DSH Web profile.</li>
+<li>A local <code>mnemon</code> CLI.</li>
+<li>A subagent provider supporting <code>outputSchema</code>, <code>toolFilter</code>, <code>persona</code>, and <code>depthLimit</code>. Regular semantic work prefers <code>spawn</code>; the default background review also requires a provider named <code>fork</code> that inherits parent context.</li>
 </ul>
-<p><strong>兼容基线</strong>：<code>dsh-mnemon</code> 0.1.0 已在 <code>@deepseek-ai/dsh</code> 0.1.0-rc.6（2026-08-13 快照）的 live web profile 上实测通过，最后验证日期 2026-08-14。插件不声明固定的最低版本矩阵；DSH 迭代快，升级前先在隔离 profile 或已备份的数据目录中复跑<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/getting-started.md">快速开始</a>的验证步骤。</p>
-<h3>快速开始</h3>
-<p>安装 Mnemon：</p>
+<p><strong>Compatibility baseline</strong>: <code>dsh-mnemon</code> 0.1.0 has been verified end-to-end on a live web profile running <code>@deepseek-ai/dsh</code> 0.1.0-rc.6 (2026-08-13 snapshot); last verified 2026-08-14. The plugin declares no fixed minimum-version matrix. DSH moves fast: before upgrading, re-run the <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/getting-started.md">Getting Started</a> verification steps in an isolated profile or a backed-up data directory.</p>
+<h3>Quick start</h3>
+<p>Install Mnemon:</p>
 <pre><code class="language-sh"># macOS
 brew install --cask mnemon-dev/tap/mnemon
 
-# macOS / Linux，也可通过 Go 安装
+# macOS / Linux via Go
 go install github.com/mnemon-dev/mnemon@latest
 
 mnemon --version
 </code></pre>
-<p>安装插件并重启 DSH Web profile：</p>
+<p>Install the plugin and restart the DSH Web profile:</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-mnemon
 dsh --profile web
 </code></pre>
-<p>未发布到 npm 的预发布版本可从 git 安装：</p>
+<p>Pre-release builds not yet published to npm can be installed from git:</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;github:omdsh-dev/dsh-mnemon&quot;
 </code></pre>
-<p>本地开发检出使用绝对路径：</p>
+<p>For a local checkout, use an absolute path:</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;link:/absolute/path/to/dsh-mnemon&quot;
 </code></pre>
-<p>打开 DSH 的“设置 -&gt; 插件配置 -&gt; Mnemon”选择存储范围，再进入会话的“记忆系统”Tab 创建或激活记忆体。配置重启后生效；切换范围不会自动迁移、合并或删除旧数据。</p>
-<p>升级与卸载（<code>dsh plugin</code> 转发给 profile 目录下的 pnpm）：</p>
-<pre><code class="language-sh"># 升级
+<p>Open “Settings -&gt; Plugin Configuration -&gt; Mnemon” to select a storage scope, then create or activate a Memory Space in the conversation&#39;s “Memory System” tab. Configuration applies after restart. Changing the scope never migrates, merges, or deletes old data automatically.</p>
+<p>Upgrade and uninstall (<code>dsh plugin</code> forwards to pnpm inside the profile directory):</p>
+<pre><code class="language-sh"># Upgrade
 dsh plugin --profile web update dsh-mnemon
 
-# 卸载（同时从 profile 移除其 bundle 注册）
+# Uninstall (also removes its bundle registration from the profile)
 dsh plugin --profile web remove dsh-mnemon
 </code></pre>
-<p>卸载不会删除记忆数据：<code>global</code> 范围数据留在 <code>~/.mnemon</code>，<code>workspace</code> / <code>custom</code> 范围数据留在对应目录，重新安装后即可继续使用。若只想临时停用自动读写而不卸载，可在插件配置里关闭 <code>writebackMode</code> / <code>recallMode</code> / <code>lifecycleEnabled</code>（详见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a>的“开关交互”与 <code>tabEnabled</code> 的当前限制）。</p>
-<h3>最小配置</h3>
-<p>配置位于 <code>$DSH_HOME/settings.yaml</code>（默认通常为 <code>~/.dsh/settings.yaml</code>）：</p>
+<p>Uninstalling never deletes memory data: <code>global</code> data stays in <code>~/.mnemon</code>, and <code>workspace</code> / <code>custom</code> data stays in their directories, so reinstalling picks up where you left off. To pause automatic reads/writes without uninstalling, turn off <code>writebackMode</code> / <code>recallMode</code> / <code>lifecycleEnabled</code> in the plugin configuration (see the <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/configuration.md">configuration reference</a> for toggle interactions and the current <code>tabEnabled</code> limitation).</p>
+<h3>Minimal configuration</h3>
+<p>Configuration lives in <code>$DSH_HOME/settings.yaml</code> (commonly <code>~/.dsh/settings.yaml</code> by default):</p>
 <pre><code class="language-yaml">mnemon:
   storageScope: global # global | workspace | custom
 </code></pre>
 <ul>
-<li><code>global</code>：<code>MNEMON_DATA_DIR</code>，未设置时为 <code>~/.mnemon</code>。</li>
-<li><code>workspace</code>：启动 DSH Host 时工作目录下的 <code>.mnemon</code>。</li>
-<li><code>custom</code>：<code>dataDir</code> 指定的绝对路径或 <code>~/...</code> 路径。</li>
+<li><code>global</code>: <code>MNEMON_DATA_DIR</code>, or <code>~/.mnemon</code> when unset.</li>
+<li><code>workspace</code>: <code>.mnemon</code> under the DSH Host launch directory.</li>
+<li><code>custom</code>: an absolute or <code>~/...</code> path supplied through <code>dataDir</code>.</li>
 </ul>
-<p>完整配置、覆盖优先级和只读模式见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a>。</p>
-<h3>使用入口</h3>
-<p>Web 工作台提供状态、运行时、记忆体、档案、沉淀、检索、实体、内容八个页面，分为三组：「状态」独立成第一组；「运行时、记忆体、档案」对应三层存储；「沉淀、检索、实体、内容」为读写工具。主要界面随 DSH 全局语言在中文与英文间切换。</p>
-<p>记忆也会在对话流中直接体现（对话内交互，<strong>默认关闭</strong>，可在「设置 → 插件配置 → Mnemon → 对话内交互」中逐项开启，保存即实时生效）：</p>
+<p>See the <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/configuration.md">configuration reference</a> for every option, precedence rules, and read-only mode.</p>
+<h3>Entry points</h3>
+<p>The Web workspace contains Status, Runtime, Memory Spaces, Documents, Distill, Recall, Entities, and Content pages in three divider-separated groups: “Status” stands alone; “Runtime, Memory Spaces, Documents” cover the three storage tiers; “Distill, Recall, Entities, Content” are the read/write tools. Its main interface follows DSH&#39;s global Chinese/English locale.</p>
+<p>Memory also surfaces inside the conversation flow (in-conversation interaction, <strong>off by default</strong>; enable each surface under Settings → Plugin settings → Mnemon → In-conversation interaction — changes apply live on save):</p>
 <ul>
-<li><strong>记忆工具卡</strong>：每个 <code>mnemon_*</code> 工具调用都以记忆风格的卡片呈现——召回显示查询与命中数、写入显示对象摘要，可展开查看参数与结构化结果，并可一键跳到记忆视图对应页面；</li>
-<li><strong>回合记忆条</strong>：完成的回合若触及记忆，回合尾会出现「本回合记忆 · 召回 N · 沉淀 M · 档案检索 K」摘要，展开可见具体工具名；</li>
-<li><strong>存入记忆</strong>：每条已定稿的助手回复旁有「存入记忆」按钮，候选内容可编辑，提交后由隔离的记忆子 Agent 判断、查重并沉淀，不占用主对话上下文。</li>
+<li><strong>Memory tool cards</strong>: every <code>mnemon_*</code> tool call renders as a memory-flavoured card — recalls show the query and hit count, writes show the subject summary — expandable to the raw arguments and structured result, with a one-click jump to the matching Memory view page;</li>
+<li><strong>Turn memory bar</strong>: a completed turn that touched memory gets a “Turn memory · recalled N · wrote M · document search K” summary under its tail, expandable to the exact tool names;</li>
+<li><strong>Save to memory</strong>: every finalized assistant reply carries a “Save to memory” action; the candidate is editable, and submission routes through the isolated memory subagent (judgment, dedupe, distillation) without filling the main conversation context.</li>
 </ul>
-<p>常用命令：</p>
+<p>Common commands:</p>
 <pre><code class="language-text">/mnemon status
-/mnemon recall &lt;查询&gt;
-/mnemon related &lt;完整记忆 ID&gt;
-/mnemon remember &lt;稳定、自包含的长期洞察&gt;
-/mnemon forget &lt;完整记忆 ID&gt;
+/mnemon recall &lt;query&gt;
+/mnemon related &lt;full memory ID&gt;
+/mnemon remember &lt;stable, self-contained durable insight&gt;
+/mnemon forget &lt;full memory ID&gt;
 </code></pre>
-<p>推荐的查询顺序是：热记忆 -&gt; active Documents -&gt; 已激活记忆体 -&gt; 命中记录指向的归档原文。不要把临时进度、原始日志、秘密或可直接从仓库重新获得的普通事实写入长期记忆。</p>
-<h3>权限与数据</h3>
+<p>The recommended lookup order is: hot memory -&gt; active Documents -&gt; active Memory Spaces -&gt; the archived original referenced by a hit. Do not persist temporary progress, raw logs, secrets, or ordinary facts that can be recovered directly from the repository.</p>
+<h3>Permissions &amp; data</h3>
 <ul>
-<li><strong>文件</strong>：通过本地 <code>mnemon</code> CLI 读写数据目录——<code>global</code> 范围是 <code>~/.mnemon</code>，<code>workspace</code> / <code>custom</code> 范围是用户指定的目录；插件不直接写这些目录，WebUI 也不直接读 SQLite。<code>sourcePaths</code> 不能逃出发起会话的工作区，也不能指向受管 Documents 目录。</li>
-<li><strong>进程</strong>：<code>mnemon</code> 以参数数组启动且禁用 shell，输出有上限，超时先 <code>SIGTERM</code> 再 <code>SIGKILL</code>。</li>
-<li><strong>网络</strong>：插件与 Mnemon 均本地运行，不发起远程调用；子 Agent 的模型推理走 DSH 已有的 provider 连接。</li>
-<li><strong>凭据</strong>：插件不存储、不读取任何凭据或 API key，模型凭据完全由 DSH 与 provider 管理。</li>
-<li><strong>用户数据</strong>：记忆内容（用户画像、项目档案、长期记忆）全部落在本地 SQLite / JSON，不会上传。</li>
-<li><strong>诚实披露</strong>：当前没有确定性的凭据/秘密检测器，请勿向热记忆、Documents 或 Memory Spaces 写入密钥、token 或私钥。完整边界（进程/文件/Web/模型）与备份恢复见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/operations.md">运维、安全与故障排查</a>。</li>
+<li><strong>Files</strong>: reads/writes data directories through the local <code>mnemon</code> CLI — <code>~/.mnemon</code> for the <code>global</code> scope, a user-chosen directory for <code>workspace</code> / <code>custom</code>. The plugin never writes those directories directly, and the WebUI never reads SQLite directly. <code>sourcePaths</code> cannot escape the originating session workspace or point into the managed Documents directory.</li>
+<li><strong>Processes</strong>: <code>mnemon</code> is started as an argument array with shell disabled, bounded output, and <code>SIGTERM</code> then <code>SIGKILL</code> on timeout.</li>
+<li><strong>Network</strong>: the plugin and Mnemon both run locally and make no remote calls; subagent model inference uses DSH&#39;s existing provider connection.</li>
+<li><strong>Credentials</strong>: the plugin stores and reads no credentials or API keys; model credentials are fully managed by DSH and your provider.</li>
+<li><strong>User data</strong>: all memory content (user profile, project Documents, long-term memory) stays in local SQLite / JSON and is never uploaded.</li>
+<li><strong>Honest disclosure</strong>: there is no deterministic credential/secret scanner yet — do not write keys, tokens, or private keys into hot memory, Documents, or Memory Spaces. For the full boundaries (process/file/Web/model) and backup/restore, see <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/operations.md">Operations, security, and troubleshooting</a>.</li>
 </ul>
-<h3>文档</h3>
+<h3>Documentation</h3>
 <ul>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/README.md">文档中心</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/project-overview.md">项目介绍</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/getting-started.md">快速开始</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/architecture.md">架构设计</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/storage-model.md">存储与三层记忆模型</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/workflows.md">生命周期与核心流程</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/interfaces.md">WebUI、工具、命令与 RPC</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/operations.md">运维、安全与故障排查</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/development.md">开发与验证</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/roadmap.md">Roadmap</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/README.md">Documentation hub</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/project-overview.md">Project overview</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/getting-started.md">Getting started</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/architecture.md">Architecture</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/storage-model.md">Storage and three-tier memory model</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/workflows.md">Lifecycle and workflows</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/configuration.md">Configuration reference</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/interfaces.md">WebUI, tools, commands, and RPC</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/operations.md">Operations, security, and troubleshooting</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/development.md">Development and verification</a></li>
+<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/roadmap.md">Roadmap</a></li>
 </ul>
-<h3>开发</h3>
+<h3>Development</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run verify
 </code></pre>
-<p><code>verify</code> 依次运行 TypeScript 检查、Vitest 测试和生产构建。构建产物写入并提交到 <code>lib/</code>；详细发布与真实 WebUI 验证流程见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/development.md">开发文档</a>。</p>
+<p><code>verify</code> runs TypeScript checks, Vitest, and the production build. Generated artifacts are written to and committed under <code>lib/</code>. See the <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/development.md">development guide</a> for release and real-WebUI validation procedures.</p>
 <h3>License</h3>
-<p>MIT。发现安全问题请通过 <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/SECURITY.md">SECURITY.md</a> 中的渠道私下报告，不要直接开公开 issue。</p>
+<p>MIT. For security issues, please report privately through the channels in <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/SECURITY.md">SECURITY.md</a> instead of opening a public issue.</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

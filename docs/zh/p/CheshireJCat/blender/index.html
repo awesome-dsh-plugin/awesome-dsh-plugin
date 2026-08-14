@@ -192,48 +192,106 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/CheshireJCat/blender/blob/main/README.zh-CN.md">简体中文</a></p>
-<p>An installable <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> plugin that gives dsh a complete Blender-backed 3D production workflow. It registers one orchestrator plus 29 directly loadable domain skills, all 26 upstream analysis/validation helpers, and 13 workspace-scoped Blender tools.</p>
-<h3>Tools</h3>
+<p><a href="https://github.com/CheshireJCat/blender/blob/main/README.md">English</a></p>
+<p>一个可安装到 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的完整 Blender 3D 生产插件。它以 <code>create-3d-model-skill</code> 为蓝本，注册 1 个总编排 Skill、29 个可直接加载的领域 Skill、26 个受控分析/验证 Helper，以及 13 个可实际执行的 Blender 工具。</p>
+<h3>提供的能力</h3>
 <ul>
-<li><code>blender_status</code> checks Blender, analysis Python, skills, helpers, and the active workspace.</li>
-<li><code>blender_scene_info</code> and <code>blender_object_info</code> inspect scenes and object-level geometry, materials, UVs, constraints, shape keys, and animation.</li>
-<li><code>blender_import</code> converts supported portable assets into versioned <code>.blend</code> sources.</li>
-<li><code>blender_python</code> runs a small reviewed <code>bpy</code>/<code>bmesh</code> chunk and saves a versioned <code>.blend</code>.</li>
-<li><code>blender_preview</code>, <code>blender_render</code>, and <code>blender_render_frames</code> create blockout, look-dev, and animation evidence for <code>read_image</code> QA.</li>
-<li><code>blender_export</code> exports GLB/glTF, FBX, OBJ, STL, USD, or PLY.</li>
-<li><code>blender_validate_scene</code> and <code>blender_validate_export</code> perform target-aware audits and clean-process re-import checks.</li>
-<li><code>blender_helper_catalog</code> and <code>blender_helper_run</code> expose all 26 deterministic reference, wireframe, contour, multiview, UV, texture, look, repair, and animation-QA helpers.</li>
-<li>The bundled 30-skill stack coordinates blockout, refinement, materials, lighting, cameras, animation, reconstruction, validation, and artifact handoff.</li>
+<li><code>blender_status</code>：检查 Blender、图像分析 Python、30 个 Skill、Helper 和当前 workspace。</li>
+<li><code>blender_scene_info</code> / <code>blender_object_info</code>：只读检查场景及对象级世界包围盒、求值后拓扑、UV、材质、约束、形态键和动画。</li>
+<li><code>blender_import</code>：把 GLB/glTF、FBX、OBJ、STL、USD、PLY 或 DAE 导入干净场景并保存版本化 <code>.blend</code>。</li>
+<li><code>blender_python</code>：执行小段 <code>bpy</code>/<code>bmesh</code> 建模代码并保存版本化 <code>.blend</code>。</li>
+<li><code>blender_preview</code>：不依赖已有相机，以等距/前后左右/顶底视角生成临时灯光预览，不修改源文件。</li>
+<li><code>blender_render</code> / <code>blender_render_frames</code>：生成单帧或动画代表帧的 PNG/JPEG 视觉证据。</li>
+<li><code>blender_export</code>：导出 GLB/glTF、FBX、OBJ、STL、USD 或 PLY。</li>
+<li><code>blender_validate_scene</code> / <code>blender_validate_export</code>：按通用、Web、3D 打印或动画目标审计场景，并通过干净进程回读导出物。</li>
+<li><code>blender_helper_catalog</code> / <code>blender_helper_run</code>：发现并执行全部 26 个参考图、线框、轮廓、多视图、UV、贴图、外观、修复与动画 QA Helper。</li>
+<li>30 个 Skill：<code>create-3d-model</code> 负责总编排，其余模块（例如 <code>blender-modeling</code>、<code>reference-to-3d</code>、<code>wireframe-to-3d</code>、<code>blender-animation</code>）可由 DSH 直接加载。</li>
 </ul>
-<p>No Blender add-on or control port is required: each operation launches a local Blender background process.</p>
-<h3>Requirements</h3>
+<p>插件直接启动 Blender 后台进程，不要求安装 BlenderMCP 插件，也不会开放控制端口。</p>
+<h3>环境要求</h3>
 <ul>
 <li>DeepSeek Harness <code>0.1.0-rc.6</code></li>
 <li>Node.js 20+</li>
-<li>Blender 4.3+ available as <code>blender</code> on <code>PATH</code>, or configured with an absolute path</li>
-<li>Python 3.10+ for the optional reference-analysis helpers</li>
+<li>Blender 4.3+；当前实现已面向 Blender 5.x API 适配</li>
+<li><code>blender</code> 在 <code>PATH</code> 中，或在 <code>cordis.patch.yml</code> 中配置绝对路径</li>
 </ul>
-<h3>Install from npm</h3>
+<p>参考图、线框和视觉度量 Helper 还需要 Python 3.10+。本仓库提供一次性安装命令：</p>
+<pre><code class="language-bash">pnpm setup:analysis
+</code></pre>
+<p>它只会在插件目录创建被 Git 忽略的 <code>.venv</code>，并安装 OpenCV、NumPy、Pillow 和 SciPy。也可以把 <code>analysisPythonExecutable</code> 指向已有环境。</p>
+<h3>从 npm 安装</h3>
 <pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add dsh-blender
 npx @deepseek-ai/dsh plugin --profile web exec dsh-blender-setup
 npx @deepseek-ai/dsh --profile web --dump-config
 npx @deepseek-ai/dsh web
 </code></pre>
-<p>The setup command creates a private <code>.venv</code> inside the installed package and installs OpenCV, NumPy, Pillow, and SciPy. Skip it only if you do not need reference, wireframe, multiview, texture, or animation-analysis helpers.</p>
-<p>To install a pinned GitHub release instead:</p>
+<p><code>dsh-blender-setup</code> 会在已安装的插件目录创建私有 <code>.venv</code>，并安装 OpenCV、NumPy、Pillow 和 SciPy。只有在完全不需要参考图、线框、多视图、贴图或动画分析 Helper 时才建议跳过。</p>
+<p>也可以固定安装 GitHub Release：</p>
 <pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add github:CheshireJCat/blender#v0.2.1
 </code></pre>
-<h3>Develop from source</h3>
+<h3>从源码开发</h3>
+<p>在本仓库根目录执行：</p>
+<pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add .
+npx @deepseek-ai/dsh --profile web --dump-config
+</code></pre>
+<p>然后重启 Web UI：</p>
+<pre><code class="language-bash">npx @deepseek-ai/dsh web
+</code></pre>
+<p>打开 <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>。新建以本仓库或你的建模目录为 workspace 的会话，然后输入：</p>
+<pre><code class="language-text">使用 create-3d-model 创建一个低多边形台灯。
+先调用 blender_status，粗模和最终版本分别保存并渲染验收，
+最后导出 GLB，同时保留版本化 .blend 源文件。
+</code></pre>
+<h3>一次性 headless 验证</h3>
+<pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile headless add .
+npx @deepseek-ai/dsh --profile headless \
+  &quot;使用 create-3d-model 在 artifacts 下创建一个低多边形蓝色立方体，渲染预览并导出 GLB。&quot;
+</code></pre>
+<h3>配置</h3>
+<p>组合包的默认配置位于 <code>cordis.patch.yml</code>：</p>
+<pre><code class="language-yaml">config:
+  blenderExecutable: blender
+  analysisPythonExecutable: &#39;&#39;
+  timeoutMs: 180000
+  helperTimeoutMs: 120000
+  maxOutputChars: 20000
+  restrictToWorkspace: true
+  enablePython: true
+  enableHelpers: true
+  enableMaintenanceHelpers: false
+  registerSkill: true
+  registerModuleSkills: true
+</code></pre>
+<ul>
+<li><code>restrictToWorkspace: true</code>：默认要求所有输入和输出都位于当前 dsh 会话 workspace 内，并检查已有符号链接的真实目标。</li>
+<li><code>enablePython: false</code>：可以关闭能力最强、风险也最高的 <code>blender_python</code>，保留检查、渲染和导出工具。</li>
+<li><code>enableHelpers: false</code>：关闭 Helper 目录和执行工具；基础 Blender 生产工具不受影响。</li>
+<li><code>enableMaintenanceHelpers: false</code>：默认禁止 Skill 发布/清理类维护脚本；建模和验收 Helper 仍然可用。</li>
+<li><code>registerModuleSkills: false</code>：只注册总编排 Skill，不注册 29 个领域 Skill。</li>
+<li><code>registerSkill: false</code>：只注册工具，不向 DSH Skill 目录贡献任何 Blender Skill。</li>
+</ul>
+<h3>安全边界</h3>
+<p><code>blender_python</code> 与在 Blender 内运行本地 Python 具有相同权限。它仅应处理可信的建模代码；不要用它下载资源、访问凭据、安装包、启动无关进程或修改 Blender 全局偏好。插件默认：</p>
+<ul>
+<li>禁用 <code>.blend</code> 内嵌脚本自动执行；</li>
+<li>限制模型文件、渲染和导出路径到会话 workspace；</li>
+<li>默认拒绝覆盖已有文件；</li>
+<li>每次调用使用独立 Blender 后台进程；</li>
+<li>完成后清理内部临时脚本和 JSON 文件。</li>
+</ul>
+<h3>开发验证</h3>
 <pre><code class="language-bash">pnpm install
 pnpm setup:analysis
-npx @deepseek-ai/dsh plugin --profile web add .
+pnpm validate
+pnpm test
+pnpm test:blender
 </code></pre>
-<p>Open <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>, create a session whose workspace is the modeling directory, and ask dsh to use <code>create-3d-model</code>.</p>
-<p>See <a href="https://github.com/CheshireJCat/blender/blob/main/README.zh-CN.md">README.zh-CN.md</a> for configuration, security boundaries, headless use, and validation commands.</p>
+<p><code>test:blender</code> 会真实启动 Blender，创建与导入 <code>.blend</code>、执行对象检查和场景审计、生成相机预览与正式渲染、导出 GLB，并在干净 Blender 进程中回读验证。</p>
+<h3>来源与许可</h3>
+<p>插件使用 MIT License。建模 Skill 来源、二次适配说明和上游许可保留在 <code>NOTICE</code>、<code>skills/create-3d-model/LICENSE</code>、<code>skills/create-3d-model/UPSTREAM_LICENSE</code> 与 <code>skills/create-3d-model/references/upstream.md</code>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/CheshireJCat/blender/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/CheshireJCat/blender/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

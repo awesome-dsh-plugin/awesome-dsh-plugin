@@ -189,159 +189,159 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Typed, guarded container control for DSH — structured Docker access that is hard to destroy by accident.</p>
-<p><code>dsh-docker</code> is a plugin bundle for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. It wraps the <code>docker</code> CLI through DSH&#39;s <code>ctx.shell</code> seam and gives your agent a <strong>typed, project-aware, guarded</strong> surface for containers and compose stacks — every tool returns structured JSON (<code>await tools.docker_ps(...)</code> gets real objects, never scraped prose), destructive operations require <strong>human sign-off through the approval gate</strong>, and <code>stop dev-api</code> means <em>your</em> local compose service, not a coincidentally-named container on the machine.</p>
+<p>DSH 的类型化、带防护的容器控制 —— 结构化 Docker 访问，很难被误操作毁掉。</p>
+<p><code>dsh-docker</code> 是 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的插件 bundle。它通过 DSH 的 <code>ctx.shell</code> 接缝包装 <code>docker</code> CLI，给 Agent 一个<strong>类型化、项目感知、带防护</strong>的容器与 compose 栈操作面 —— 每个工具都返回结构化 JSON（<code>await tools.docker_ps(...)</code> 拿到的是真实对象，而不是抓取的散文），破坏性操作必须经过<strong>人工审批门</strong>，而 <code>stop dev-api</code> 指的是<em>你本地</em>的 compose 服务，而不是机器上恰好同名的容器。</p>
 <pre><code>┌──────────────┐   docker ps --format json    ┌──────────────┐
-│  agent tool  │ ───────────────────────────▶ │  ctx.shell   │ ──▶ docker CLI
-│  call        │                              │  (sandbox/   │
-└──────┬───────┘                              │   remote)    │
-       │ classify()                           └──────────────┘
+│  agent 工具   │ ───────────────────────────▶ │  ctx.shell   │ ──▶ docker CLI
+│  调用         │                             │  (沙箱/远程)  │
+└──────┬───────┘                             └──────────────┘
+       │ classify()                           
        ▼
-┌──────────────┐   destructive?  ┌──────────────────────┐
-│ pre-execute  │ ──────────────▶ │ approval gate         │  allowed-once → run
-│ policy       │  (guarded)      │ (ctx.approval,        │  rejected/unavailable
-└──────┬───────┘                 │  fails closed)        │  → refused
-       │ safe / token recorded   └──────────────────────┘
+┌──────────────┐   破坏性？    ┌──────────────────────┐
+│ pre-execute  │ ───────────▶ │ 审批门                │ allowed-once → 执行
+│ 策略          │  (guarded)   │ (ctx.approval,        │ rejected/unavailable
+└──────┬───────┘              │  默认关闭 = 拒绝)      │ → 拒绝
+       │ safe / 记录 token    └──────────────────────┘
        ▼
-┌──────────────┐   hard-destructive without a token? → refused (monotonic)
+┌──────────────┐   高破坏性且无 token？→ 拒绝（单调）
 │ ctx.tools    │
-│ .guard()     │   backstop: no later listener can undo a denial
+│ .guard()     │   兜底：后来的监听器无法撤销拒绝
 └──────────────┘
 </code></pre>
-<h3>Flagship demo — debug a failing integration test</h3>
-<p>Your agent runs a failing test against <code>docker-compose.yml</code>:</p>
+<h3>旗舰示例 —— 调试失败的集成测试</h3>
+<p>Agent 调试一个跑不过 <code>docker-compose.yml</code> 的测试：</p>
 <pre><code>$ docker_ps            → { containers: [{ name: &quot;app-api-1&quot;, state: &quot;running&quot;, ... }] }
 $ docker_logs { container: &quot;app-api-1&quot;, tail: 200 }
-  → { lines: [...], truncated: true }        # capped pull never reads as complete
+  → { lines: [...], truncated: true }        # 有上限的拉取永远不会被当成完整
 $ docker_compose_ps   → { project: &quot;app&quot;, services: [{ name: &quot;db&quot;, state: &quot;running&quot; }] }
 </code></pre>
-<p>The agent <em>reads</em> freely. The moment it tries something destructive — <code>docker_rm -f</code> on the running API container, <code>docker_rmi</code> on an image a container still uses, <code>docker system prune -a</code>, or <code>docker compose down -v</code> — the call is paused and routed to the human approval gate:</p>
+<p>Agent 可以<strong>自由读取</strong>。一旦它想做破坏性操作 —— 对运行中的 API 容器 <code>docker_rm -f</code>、删除仍有容器引用的镜像、<code>docker system prune -a</code>、或 <code>docker compose down -v</code> —— 调用会被暂停并转给人工审批门：</p>
 <pre><code>⏸ docker_rmi &quot;app-api:latest&quot; — image in use by container app-api-1
    [approve]  [reject]
 </code></pre>
-<p>No approval channel, or a denied request? The operation is <strong>refused</strong>. <code>execReadOnly</code> is on by default, so <code>docker_exec</code> without <code>write</code>/<code>interactive</code> never prompts, and a writeful exec is treated as destructive. And even if some other plugin&#39;s policy said &quot;allow&quot;, the monotonic guard still refuses the hard-destructive set unless this call carries the dsh-docker approval token.</p>
-<h3>Install</h3>
-<pre><code class="language-console"># From the npm registry once published, or straight from this repository:
-dsh plugin --profile web add @dsh-docker/bundle          # npm (when published)
-dsh plugin --profile web add github:Jesse-njx/dsh-docker  # or: straight from GitHub
+<p>没有审批通道，或请求被拒绝？操作被<strong>拒绝</strong>。<code>execReadOnly</code> 默认开启，因此不带 <code>write</code>/<code>interactive</code> 的 <code>docker_exec</code> 从不弹审批，而带写标记的 exec 视同破坏性。即使别的插件的策略说了「allow」，单调兜底 guard 仍然会拒绝高破坏性集合，除非本次调用带有 dsh-docker 的审批 token。</p>
+<h3>安装</h3>
+<pre><code class="language-console"># 发布到 npm 之后，或直接从本仓库安装：
+dsh plugin --profile web add @dsh-docker/bundle          # npm（发布后）
+dsh plugin --profile web add github:Jesse-njx/dsh-docker  # 或：直接 GitHub
 </code></pre>
-<p>Install into whatever profile your agents run under (<code>web</code> for the desktop UI, <code>headless</code> for CLI sessions). The bundle mounts the tools, the policy, the opt-in health context, and the web status renderer.</p>
-<h3>Tools</h3>
-<p>Every tool is a <code>defineTool</code> with typed parameters and a structured output schema — Code Mode sees <code>await tools.&lt;name&gt;(...)</code> returning the canonical JSON value, never rendered prose.</p>
-<h4>Containers</h4>
+<p>装到你的 Agent 运行所在的 profile 即可（桌面 UI 用 <code>web</code>，CLI 会话用 <code>headless</code>）。bundle 会挂载工具、策略、可选的健康上下文和 Web 状态渲染器。</p>
+<h3>工具</h3>
+<p>每个工具都是带类型参数与结构化输出 schema 的 <code>defineTool</code> —— Code Mode 里 <code>await tools.&lt;name&gt;(...)</code> 返回规范 JSON 值，而不是渲染后的散文。</p>
+<h4>容器</h4>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Output</th>
-<th>Notes</th>
+<th>工具</th>
+<th>输出</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>docker_ps</code></td>
 <td><code>{ containers: [{ id, name, image, state, status, ports[], project?, service? }] }</code></td>
-<td><code>--all</code> flag; scoped to the detected compose project by default</td>
+<td><code>--all</code> 标志；默认按检测到的 compose 项目过滤</td>
 </tr>
 <tr>
 <td><code>docker_logs</code></td>
 <td><code>{ lines: string[], truncated }</code></td>
-<td>bounded pull (<code>tail</code>, default 200, cap 5000); pulls <code>tail+1</code> so <code>truncated</code> is honest</td>
+<td>有上限的拉取（<code>tail</code>，默认 200，上限 5000）；拉 <code>tail+1</code> 行让 <code>truncated</code> 诚实</td>
 </tr>
 <tr>
 <td><code>docker_inspect</code></td>
-<td>raw engine JSON (open object)</td>
-<td>the adapter — engine-native structure, validated</td>
+<td>引擎原始 JSON（开放对象）</td>
+<td>适配器 —— 引擎原生结构，经过校验</td>
 </tr>
 <tr>
 <td><code>docker_exec</code></td>
 <td><code>{ exitCode, stdout, stderr }</code></td>
-<td>read-only by default (no TTY); <code>write</code>/<code>interactive</code> reclassifies into the approval bucket</td>
+<td>默认只读（无 TTY）；<code>write</code>/<code>interactive</code> 进入审批桶</td>
 </tr>
 <tr>
 <td><code>docker_start</code> / <code>docker_stop</code> / <code>docker_restart</code></td>
 <td><code>{ affected: string[] }</code></td>
-<td>one ref, or the whole detected project with no ref</td>
+<td>一个引用，或不给引用时作用于整个检测到的项目</td>
 </tr>
 <tr>
 <td><code>docker_rm</code></td>
 <td><code>{ affected: string[] }</code></td>
-<td><strong>guarded</strong> when the target is running or <code>force</code> is set</td>
+<td>目标<strong>运行中</strong>或设置 <code>force</code> 时<strong>受保护</strong></td>
 </tr>
 </tbody></table>
-<h4>Images</h4>
+<h4>镜像</h4>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Output</th>
-<th>Notes</th>
+<th>工具</th>
+<th>输出</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>docker_images</code></td>
 <td><code>{ images: [{ id, repository, tag, size, inUse }] }</code></td>
-<td><code>inUse</code> from a <code>docker ps -a</code> cross-reference</td>
+<td><code>inUse</code> 来自 <code>docker ps -a</code> 交叉引用</td>
 </tr>
 <tr>
 <td><code>docker_rmi</code></td>
 <td><code>{ removed: string[] }</code></td>
-<td><strong>guarded</strong> when the image is in use</td>
+<td>镜像<strong>使用中</strong>时<strong>受保护</strong></td>
 </tr>
 <tr>
 <td><code>docker_prune</code></td>
 <td><code>{ scope, all, volumes, ok }</code></td>
-<td><strong>guarded</strong> for <code>--all</code>, <code>--volumes</code>, or system scope</td>
+<td><code>--all</code>、<code>--volumes</code> 或 system 范围<strong>受保护</strong></td>
 </tr>
 </tbody></table>
 <h4>Compose</h4>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Output</th>
-<th>Notes</th>
+<th>工具</th>
+<th>输出</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>docker_compose_up</code></td>
 <td><code>{ project, services, detached }</code></td>
-<td>detached by default; optional <code>services[]</code></td>
+<td>默认 detached；可选 <code>services[]</code></td>
 </tr>
 <tr>
 <td><code>docker_compose_down</code></td>
 <td><code>{ project, affected, volumes }</code></td>
-<td><strong>guarded</strong> when <code>volumes: true</code> (the <code>-v</code> flag)</td>
+<td><code>volumes: true</code>（<code>-v</code> 标志）时<strong>受保护</strong></td>
 </tr>
 <tr>
 <td><code>docker_compose_ps</code></td>
 <td><code>{ project, services: [{ name, id, state, status, ports }] }</code></td>
-<td>one read builds the health context</td>
+<td>一次读取即可构建健康上下文</td>
 </tr>
 </tbody></table>
-<h3>Project-aware targeting</h3>
-<p>Every tool resolves the compose project once per call (a pure, unit-tested <code>ProjectResolver</code>):</p>
+<h3>项目感知定位</h3>
+<p>每个工具每次调用解析一次 compose 项目（纯函数、可单测的 <code>ProjectResolver</code>）：</p>
 <ol>
-<li>Walk up from the tool&#39;s working directory for the first <code>composeFiles</code> match (<code>docker-compose.yml</code>, <code>compose.yaml</code>, config-ordered).</li>
-<li>Derive the project name (directory basename, lowercased) and pass <code>-p &lt;project&gt; -f &lt;file&gt;</code> to every compose call; <code>docker_ps</code>/<code>start</code>/<code>stop</code> default filters scope to <code>--filter label=com.docker.compose.project=&lt;project&gt;</code>.</li>
-<li>Every tool accepts an explicit <code>project: string</code> override; with no compose file and no override, container-scoped tools operate globally but the project-aware behaviors are off.</li>
+<li>从工具工作目录向上找第一个 <code>composeFiles</code> 匹配项（<code>docker-compose.yml</code>、<code>compose.yaml</code>，按配置顺序）。</li>
+<li>推导项目名（目录基名小写），每个 compose 调用都带 <code>-p &lt;project&gt; -f &lt;file&gt;</code>；<code>docker_ps</code>/<code>start</code>/<code>stop</code> 默认过滤到 <code>--filter label=com.docker.compose.project=&lt;project&gt;</code>。</li>
+<li>每个工具接受显式 <code>project: string</code> 覆盖；既没有 compose 文件也没有覆盖时，容器级工具全局生效，但项目感知行为关闭。</li>
 </ol>
-<p>A bare container name resolves within the project first, falling back to a global match only when unambiguous. Ambiguous refs return an error listing candidates instead of guessing.</p>
-<h3>Guardrails</h3>
-<p>Two layers, both in the tools pipeline:</p>
+<p>裸容器名先按项目内解析，只有无歧义时才回退到全局匹配。歧义引用返回列出候选的错误，而不是猜。</p>
+<h3>防护</h3>
+<p>两层，都在工具管线里：</p>
 <ul>
-<li><strong><code>tools/pre-execute</code> policy</strong> — <code>classify(toolName, args, resolved)</code> (a pure function, unit-tested without a daemon) judges each call&#39;s intended effect. Guarded ops route a one-shot approval request through <code>ctx.approval</code> (<code>approval/request</code> waterfall); approval absent fails <strong>closed</strong> to <code>unavailable</code> ⇒ refused. A guarded op not covered by the configured <code>approval</code> globs is refused outright.</li>
-<li><strong><code>ctx.tools.guard()</code> backstop</strong> — a monotonic deny that a later listener cannot undo. Even if another plugin&#39;s pre-execute said &quot;allow&quot;, the guard refuses the hard-destructive set unless this call carries the dsh-docker approval token.</li>
+<li><strong><code>tools/pre-execute</code> 策略</strong> —— <code>classify(toolName, args, resolved)</code>（纯函数，无守护进程即可单测）判断每次调用的预期效果。受保护操作通过 <code>ctx.approval</code>（<code>approval/request</code> waterfall）发起一次性审批请求；没有审批则<strong>默认关闭</strong>为 <code>unavailable</code> ⇒ 拒绝。不在配置 <code>approval</code> globs 覆盖范围内的受保护操作直接拒绝。</li>
+<li><strong><code>ctx.tools.guard()</code> 兜底</strong> —— 单调拒绝，后来的监听器无法撤销。即使别的插件的 pre-execute 说了「allow」，guard 仍会拒绝高破坏性集合，除非本次调用带有 dsh-docker 审批 token。</li>
 </ul>
-<p>Read-only <code>docker_exec</code> is free by default; <code>execReadOnly: false</code> flips that for operators who accept the risk.</p>
-<h3>Service-health context (opt-in)</h3>
+<p>只读 <code>docker_exec</code> 默认免费；<code>execReadOnly: false</code> 为愿意承担风险的运维人员翻转该默认。</p>
+<h3>服务健康上下文（可选）</h3>
 <pre><code class="language-yaml">plugins:
   dsh-docker:
     healthContext: { enabled: true, maxServices: 12 }
 </code></pre>
-<p>When enabled, each pre-step injects one compact line per detected compose service — <code>dev-api ▲up  dev-db ▲up  worker ▼exited(1)</code> — as durable appended context the <strong>next</strong> model request sees (not a wake-up). Built from a single <code>docker_compose_ps</code> read, TTL-cached, capped at <code>maxServices</code>, and skipped entirely when no compose project is detected.</p>
-<h3>Status renderer (web client)</h3>
-<p>The client half registers a replayable conversation node for <code>docker_ps</code> / <code>docker_compose_ps</code> / <code>docker_logs</code> output: one stable node per tool call (keyed by <code>callId</code>), a <strong>table collapsed by default</strong> and expandable on click, with a log pane whose <code>truncated</code> flag is surfaced so a capped pull never reads as complete. Replay-safe: the renderer consumes only the durable <code>tool/result</code> presentation metadata, never the execution-local value.</p>
-<h3>Config</h3>
+<p>开启后，每个 pre-step 会为检测到的每个 compose 服务注入一行紧凑状态 —— <code>dev-api ▲up  dev-db ▲up  worker ▼exited(1)</code> —— 作为<strong>下一次</strong>模型请求看到的持久追加上下文（不是唤醒）。由单次 <code>docker_compose_ps</code> 读取构建，带 TTL 缓存，上限 <code>maxServices</code>，检测不到 compose 项目时完全跳过。</p>
+<h3>状态渲染器（Web 客户端）</h3>
+<p>客户端半区为 <code>docker_ps</code> / <code>docker_compose_ps</code> / <code>docker_logs</code> 的输出注册一个可回放会话节点：每个工具调用一个稳定节点（按 <code>callId</code> 键控），<strong>默认折叠</strong>、点击展开的表格，日志面板会显示 <code>truncated</code> 标志，让有上限的拉取永远不会被当成完整。回放安全：渲染器只消费持久化的 <code>tool/result</code> 展示元数据，绝不读取执行期局部值。</p>
+<h3>配置</h3>
 <pre><code class="language-yaml">plugins:
   dsh-docker:
     enabled: true
@@ -354,55 +354,55 @@ dsh plugin --profile web add github:Jesse-njx/dsh-docker  # or: straight from Gi
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>enabled</code></td>
 <td><code>true</code></td>
-<td>master switch</td>
+<td>总开关</td>
 </tr>
 <tr>
 <td><code>composeFiles</code></td>
 <td><code>[docker-compose.yml, compose.yaml]</code></td>
-<td>config-ordered discovery list</td>
+<td>按配置顺序的发现列表</td>
 </tr>
 <tr>
 <td><code>approval</code></td>
 <td><code>[&quot;rmi:*&quot;, &quot;rm:*&quot;, &quot;prune:*&quot;, &quot;compose down -v&quot;, &quot;exec:*&quot;]</code></td>
-<td>ops routed to the approval gate (<code>*</code> matches any args; <code>compose down -v</code> matches only volume-removing downs)</td>
+<td>转给审批门的操作（<code>*</code> 匹配任意参数；<code>compose down -v</code> 只匹配删卷的 down）</td>
 </tr>
 <tr>
 <td><code>execReadOnly</code></td>
 <td><code>true</code></td>
-<td><code>false</code> runs <code>docker_exec</code> ungated</td>
+<td><code>false</code> 时 <code>docker_exec</code> 不设闸</td>
 </tr>
 <tr>
 <td><code>timeoutMs</code></td>
 <td><code>30000</code></td>
-<td>per docker invocation timeout</td>
+<td>单次 docker 调用超时</td>
 </tr>
 <tr>
 <td><code>healthContext.enabled</code></td>
 <td><code>false</code></td>
-<td>inject per-service health lines before each step</td>
+<td>每步注入每服务健康行</td>
 </tr>
 <tr>
 <td><code>healthContext.maxServices</code></td>
 <td><code>12</code></td>
-<td>cap on health lines (+ <code>N more</code> tail)</td>
+<td>健康行上限（超出显示 <code>+ N more</code>）</td>
 </tr>
 </tbody></table>
-<p>The same schema registers as the <code>dsh-docker</code> user-settings section, so a live edit reaches the very next tool call.</p>
-<h3>Non-goals (v0.1)</h3>
-<p>Docker contexts / remote-host management UI; building images from a Dockerfile with any DSL (raw <code>docker build</code> passthrough is fine — no wrapping); swarm / k8s; container runtime introspection beyond <code>docker inspect</code>; log streaming / follow; registry auth flows. Each is a v0.2+ question, not a config flag away.</p>
-<h3>Testing</h3>
+<p>同一 schema 会注册为 <code>dsh-docker</code> 用户设置区，实时编辑即刻生效于下一次工具调用。</p>
+<h3>v0.1 非目标</h3>
+<p>Docker context / 远程主机管理 UI；用任何 DSL 从 Dockerfile 构建镜像（原生 <code>docker build</code> 透传可以 —— 不做包装）；swarm / k8s；超出 <code>docker inspect</code> 的容器运行时内省；日志流式 / follow；registry 认证流程。这些都是 v0.2+ 的问题，不是一个配置开关能解决的。</p>
+<h3>测试</h3>
 <ul>
-<li><strong>Unit (no daemon):</strong> arg-schema acceptance/rejection per tool; <code>ProjectResolver</code> fixtures (compose-file discovery, project-name derivation, ambiguous-ref handling); the <code>classify()</code> policy matrix — every destructive op asserts <code>guarded</code>, every safe op asserts <code>safe</code>, the <code>execReadOnly</code> toggle flips <code>docker_exec</code>; the approval-glob matcher.</li>
-<li><strong>Guard (no daemon):</strong> a mock approval gate that always denies — <code>rmi</code> in-use, <code>rm</code> running, <code>prune --all</code>, <code>compose down -v</code>, and writeful <code>exec</code> are <strong>refused</strong>; an approving mock — they proceed <strong>exactly once</strong>; a preempting &quot;allow&quot; from another listener is refused by the backstop.</li>
-<li><strong>Integration (feature-detected):</strong> probes for a live daemon (<code>docker version</code>) and, when present, <code>compose up</code>/<code>ps</code>/<code>down</code> a tiny alpine <code>sleep</code> stack with a mock approval gate — typed rows match reality and <code>down -v</code> requires approval. <strong>Skips cleanly</strong> (marked skipped, not failed) when no daemon is available.</li>
+<li><strong>单元（无守护进程）：</strong> 每个工具的参数 schema 接受/拒绝；<code>ProjectResolver</code> fixtures（compose 文件发现、项目名推导、歧义引用处理）；<code>classify()</code> 策略矩阵 —— 每个破坏性操作断言 <code>guarded</code>、每个安全操作断言 <code>safe</code>、<code>execReadOnly</code> 开关翻转 <code>docker_exec</code>；审批 glob 匹配器。</li>
+<li><strong>Guard（无守护进程）：</strong> 始终拒绝的 mock 审批门 —— <code>rmi</code> 使用中、<code>rm</code> 运行中、<code>prune --all</code>、<code>compose down -v</code>、写标记 <code>exec</code> 均被<strong>拒绝</strong>；始终批准的 mock —— 它们<strong>恰好执行一次</strong>；其他监听器的抢先「allow」会被兜底拒绝。</li>
+<li><strong>集成（特性检测）：</strong> 探测活守护进程（<code>docker version</code>），存在时用 mock 审批门对极简 alpine <code>sleep</code> 栈执行 <code>compose up</code>/<code>ps</code>/<code>down</code> —— 类型化行与真实情况一致，且 <code>down -v</code> 需要审批。没有守护进程时<strong>干净跳过</strong>（标记为 skipped 而非 failed）。</li>
 </ul>
 <pre><code class="language-sh">pnpm install
 pnpm typecheck &amp;&amp; pnpm build &amp;&amp; pnpm test
@@ -410,23 +410,23 @@ pnpm typecheck &amp;&amp; pnpm build &amp;&amp; pnpm test
 <h3>Model Experience</h3>
 <h4>Request context and condition</h4>
 <h5>What the model sees</h5>
-<p>The 14 tool schemas (names, descriptions, parameters) flow into system-prompt assembly through the tool registry, exactly like every other registered tool; there is no additional fixed prompt prose owned by this package. When <code>healthContext.enabled</code> is on and a compose project is detected in the agent&#39;s working directory, each pre-step injects a <code>source: { kind: &#39;plugin&#39;, plugin: &#39;dsh-docker&#39; }</code> user message:</p>
+<p>14 个工具 schema（名称、描述、参数）经工具注册表流入系统提示组装，与其它已注册工具完全一致；本包不拥有额外的固定提示散文。当 <code>healthContext.enabled</code> 开启且 Agent 工作目录检测到 compose 项目时，每个 pre-step 会注入一条 <code>source: { kind: &#39;plugin&#39;, plugin: &#39;dsh-docker&#39; }</code> 用户消息：</p>
 <pre><code class="language-markdown">[dsh-docker] &lt;project&gt; services: dev-api ▲up  dev-db ▲up  worker ▼exited(1)
 </code></pre>
 <h5>Token effect</h5>
-<p>The tool schemas are fixed prompt tokens owned by the registry. The health line is conditional: bounded to <code>maxServices</code> lines plus a <code>+N more</code> tail, present only while the feature is enabled and a compose project is detected.</p>
+<p>工具 schema 是注册表拥有的固定提示 token。健康行是有条件的：上限为 <code>maxServices</code> 行加 <code>+N more</code> 尾部，仅在功能开启且检测到 compose 项目时出现。</p>
 <h5>KV Cache effect</h5>
-<p>Append-only in the sense that each step appends a fresh health message that the next request consumes and discards; the message text is data-dependent (service states change), so a stable prefix is preserved but the tail invalidates reuse whenever a service state changes. Package-owned changes that can invalidate reuse: none at runtime — a reinstall/upgrade of the bundle changes the schemas, which is a normal dependency-change invalidation.</p>
+<p>追加式：每步追加一条新健康消息，下一步请求消费后即丢弃；消息文本依赖数据（服务状态会变），因此保留稳定前缀，但服务状态一变尾部就会失效复用。包内会导致复用的失效变更：运行时没有 —— 重新安装/升级 bundle 会改变 schema，属于正常的依赖变更失效。</p>
 <h3>Known Limitations and Deferred Work</h3>
 <ul>
-<li><strong><code>docker_ps</code>/<code>docker_compose_ps</code> need the docker CLI to support <code>--format json</code></strong> (Docker ≥ 25 for <code>ps</code>, compose v2 for compose <code>ps</code>). Older CLIs surface a clear error rather than scraped text; the <code>docker inspect</code> batch is the adapter where the ps <code>Labels</code> field is absent.</li>
-<li><strong>Failed tool calls render no status table</strong> — <code>presentationMeta</code> is computed from successful canonical values only, so a failed <code>docker_ps</code> shows the standard error card, not a table. The durable log carries no canonical value by design.</li>
-<li><strong><code>docker_prune</code> cannot report what the engine reclaimed</strong> without scraping human prose; the canonical output carries the request and success, and the engine&#39;s reclaimed-space line lives in the rendered text only.</li>
-<li><strong><code>docker_exec --interactive</code> output may carry TTY framing</strong> (CRLF/ANSI); the canonical value returns it verbatim rather than laundering it.</li>
+<li><strong><code>docker_ps</code>/<code>docker_compose_ps</code> 需要 docker CLI 支持 <code>--format json</code></strong>（<code>ps</code> 需要 Docker ≥ 25，compose <code>ps</code> 需要 compose v2）。更老的 CLI 会给出清晰错误而不是抓取文本；ps <code>Labels</code> 字段缺失时，<code>docker inspect</code> 批量查询是适配器。</li>
+<li><strong>失败的工具调用不渲染状态表</strong> —— <code>presentationMeta</code> 只从成功的规范值计算，因此失败的 <code>docker_ps</code> 显示标准错误卡片而非表格。持久日志按设计不携带规范值。</li>
+<li><strong><code>docker_prune</code> 无法在不抓取散文的情况下报告引擎回收了多少</strong>；规范输出携带请求与成功，引擎的「reclaimed space」行只出现在渲染文本里。</li>
+<li><strong><code>docker_exec --interactive</code> 输出可能带 TTY 修饰</strong>（CRLF/ANSI）；规范值原样返回，不做清洗。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/Jesse-njx/dsh-docker/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-docker/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

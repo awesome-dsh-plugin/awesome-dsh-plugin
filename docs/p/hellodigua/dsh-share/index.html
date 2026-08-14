@@ -189,26 +189,27 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>简体中文 | <a href="https://github.com/hellodigua/dsh-share/blob/main/README.en.md">English</a></p>
-<p>把 DSH 中的一轮问答生成 PNG 图片，可直接复制到剪贴板或下载。</p>
-<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-share/main/assets/readme/share-dialog.webp" alt="dsh-share 分享图片预览"></p>
-<h3>功能</h3>
+<p><a href="https://github.com/hellodigua/dsh-share/blob/main/README.md">简体中文</a> | English</p>
+<p>Turn a question-and-answer exchange in DSH into a PNG image. Copy it to the clipboard or download it.</p>
+<p><img src="https://raw.githubusercontent.com/hellodigua/dsh-share/main/assets/readme/share-dialog.webp" alt="dsh-share dialog preview"></p>
+<h3>Features</h3>
 <ul>
-<li>在每轮回答末尾增加分享按钮，可复制或下载 PNG</li>
-<li>保留 Markdown、代码块、表格、图片和工具调用摘要</li>
-<li>可调整图片宽度和字号，长图支持滚动预览</li>
-<li>可勾选“不展示过程”，只保留提问和最终回答</li>
+<li>Adds a share button to the end of each assistant response</li>
+<li>Copies or downloads the conversation as a PNG image</li>
+<li>Preserves Markdown, code blocks, tables, images, and tool call summaries</li>
+<li>Supports adjustable image widths and font sizes, with a scrollable preview for long images</li>
+<li>Can hide reasoning and tool calls, leaving only the question and final answer</li>
 </ul>
-<p>默认使用“平板 + 标准字号”，设置会自动保存在浏览器中。</p>
-<h3>安装</h3>
-<h4>从 GitHub tag 安装</h4>
-<p>建议固定版本，避免仓库后续更新改变已经安装的代码：</p>
+<p>The default is Tablet width with Standard font size. Your preferences are saved in the browser.</p>
+<h3>Installation</h3>
+<h4>From a GitHub tag</h4>
+<p>Pinning a version is recommended so future repository updates do not change the installed code:</p>
 <pre><code class="language-sh">dsh plugin --profile web add \
   --ignore-scripts --config.auto-install-peers=false \
   &#39;github:hellodigua/dsh-share#v0.1.0&#39;
 </code></pre>
-<p>安装完成后重启 <code>dsh web</code>。</p>
-<h4>从本地 checkout 安装</h4>
+<p>Restart <code>dsh web</code> after installation.</p>
+<h4>From a local checkout</h4>
 <pre><code class="language-sh">git clone https://github.com/hellodigua/dsh-share.git
 cd dsh-share
 
@@ -216,51 +217,51 @@ dsh plugin --profile web add \
   --ignore-scripts --config.auto-install-peers=false \
   .
 </code></pre>
-<p>修改源码后先运行 <code>corepack pnpm build</code>，再强制刷新 profile 中的本地包：</p>
+<p>After changing the source code, build it and force-refresh the local package in the profile:</p>
 <pre><code class="language-sh">corepack pnpm build
 
 dsh plugin --profile web add --force \
   --ignore-scripts --config.auto-install-peers=false \
   .
 </code></pre>
-<h4>从 <code>local-plugins</code> tarball 安装</h4>
-<p>仓库提交了预构建的 <code>lib/</code>，也可以打包成和 DSH <code>local-plugins</code> 目录中其他插件相同的 tarball：</p>
+<h4>From a <code>local-plugins</code> tarball</h4>
+<p>The repository includes a prebuilt <code>lib/</code> directory. You can also package it like the other plugins in DSH&#39;s <code>local-plugins</code> directory:</p>
 <pre><code class="language-sh">corepack pnpm install --frozen-lockfile
 corepack pnpm verify
 mkdir -p ../local-plugins
 corepack pnpm pack --pack-destination ../local-plugins
 </code></pre>
-<p>然后安装生成的文件：</p>
+<p>Then install the generated file:</p>
 <pre><code class="language-sh">dsh plugin --profile web add \
   --ignore-scripts --config.auto-install-peers=false \
   /absolute/path/to/local-plugins/dsh-external-dsh-share-0.1.0.tgz
 </code></pre>
-<p>tarball 已包含浏览器构建产物，安装时不需要执行第三方构建脚本。</p>
-<h3>兼容性</h3>
-<p>当前版本面向 npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code>，DSH peers 声明为 <code>^0.1.0-rc.6</code>。本地开发使用精确 rc.6 类型包，部署时仍由 Web Profile 提供共享运行时。</p>
-<p>分享按钮通过官方 <code>conversation.chat.assistant-actions</code> 插槽挂载，并直接使用官方 Client 类型，不扫描或修改按钮栏 DOM。生成图片时会读取当前轮已经渲染的 <code>data-*</code> 节点，因此 DSH 调整对话内容结构后可能需要同步适配。</p>
-<h3>开发</h3>
-<p>项目不依赖本机 DSH checkout 即可安装依赖、运行测试和构建：</p>
+<p>The tarball includes the browser bundle, so installation does not need to run third-party build scripts.</p>
+<h3>Compatibility</h3>
+<p>This version targets npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code> and declares DSH peers as <code>^0.1.0-rc.6</code>. Local development pins the exact rc.6 type packages, while the Web Profile still provides the shared runtime at deployment.</p>
+<p>The share button is mounted through the official <code>conversation.chat.assistant-actions</code> slot and is checked against the official Client types. It does not scan or modify the action bar DOM. Image generation reads the rendered <code>data-*</code> nodes for the current turn, so changes to DSH&#39;s conversation content structure may require an update to this plugin.</p>
+<h3>Development</h3>
+<p>You can install dependencies, run tests, and build the project without a local DSH checkout:</p>
 <pre><code class="language-sh">corepack pnpm install --frozen-lockfile
 corepack pnpm typecheck
 corepack pnpm test
 corepack pnpm build
 </code></pre>
-<p>也可以用一条命令执行完整检查：</p>
+<p>Run the full check with one command:</p>
 <pre><code class="language-sh">corepack pnpm verify
 </code></pre>
-<p><code>lib/</code> 是 DSH 直接加载的交付物，需要和源码一起提交。修改 <code>src/</code> 后，请重新构建并确认 <code>lib/</code> 已同步更新。</p>
-<h3>已知限制</h3>
+<p>DSH loads the files in <code>lib/</code> directly, so they must be committed with the source. After changing <code>src/</code>, rebuild and make sure <code>lib/</code> is up to date.</p>
+<h3>Known limitations</h3>
 <ul>
-<li>复制图片依赖浏览器 Clipboard API；权限不足时仍可下载 PNG。</li>
-<li>图片中的远程资源必须允许浏览器读取；无法读取的单个资源会用透明占位跳过，不影响整张 PNG 生成。</li>
-<li>超长图片在其他聊天软件中仍可能被整体缩放；插件弹窗只负责提供可滚动的清晰预览。</li>
+<li>Copying an image requires the browser Clipboard API. You can still download the PNG if clipboard permission is unavailable.</li>
+<li>Remote resources in the image must allow browser access. An unreadable resource is replaced with a transparent placeholder without stopping the rest of the image from rendering.</li>
+<li>Other chat apps may scale down very tall images. The plugin dialog only provides a clear, scrollable preview.</li>
 </ul>
 <h3>License</h3>
-<p>项目使用 <a href="https://github.com/hellodigua/dsh-share/blob/main/LICENSE">MIT</a> 许可证。浏览器 bundle 内联依赖的许可证见 <a href="https://github.com/hellodigua/dsh-share/blob/main/THIRD_PARTY_LICENSES.md">THIRD_PARTY_LICENSES.md</a>。</p>
+<p>Licensed under the <a href="https://github.com/hellodigua/dsh-share/blob/main/LICENSE">MIT License</a>. Licenses for dependencies bundled into the browser build are listed in <a href="https://github.com/hellodigua/dsh-share/blob/main/THIRD_PARTY_LICENSES.md">THIRD_PARTY_LICENSES.md</a>.</p>
 
     </div>
-    <p class="note"><a href="https://github.com/hellodigua/dsh-share/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/hellodigua/dsh-share/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -189,25 +189,25 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>DSH does not have to answer with text alone. When the model calls <code>visualize</code>, the Web UI renders an interactive card inside the conversation for simulators, charts, comparison panels, and UI mockups.</p>
-<p><a href="https://github.com/Nagi-ovo/dsh-visualize/blob/main/assets/demo.mp4"><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-visualize/main/assets/demo.webp" alt="Interactive visualization rendered inside a DSH conversation"></a></p>
-<h3>Install</h3>
-<p>Install the plugin from GitHub into DSH&#39;s <code>web</code> profile:</p>
+<p>让 DSH 不只回答一段文字。模型调用 <code>visualize</code> 后，Web UI 会在对话里直接出现一张可交互卡片，用来做模拟器、图表、对比面板或 UI mockup。</p>
+<p><a href="https://github.com/Nagi-ovo/dsh-visualize/blob/main/assets/demo.mp4"><img src="https://raw.githubusercontent.com/Nagi-ovo/dsh-visualize/main/assets/demo.webp" alt="DSH 对话内生成交互式可视化演示"></a></p>
+<h3>安装</h3>
+<p>推荐直接从 GitHub 安装到 DSH 的 <code>web</code> profile：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:Nagi-ovo/dsh-visualize
-# If dsh web is running, restart it and refresh the page.
+# 如果 dsh web 正在运行，重启后刷新页面
 </code></pre>
-<p>Run <code>dsh --profile web --dump-config</code> to confirm that the plugin is present in the final configuration. For local development, clone the repository and run <code>dsh plugin --profile web add .</code> from its root; committed build output means no separate build step is required. Users of the community <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> can also install it from Settings → Plugins.</p>
-<h3>Use it</h3>
-<p>Tell the model what you want to explore, for example, “make an adjustable visualization of a sorting algorithm.” The model writes an HTML fragment, then calls <code>visualize(path, title?, mode?)</code> to place it in the conversation. Side-by-side comparisons can use <code>mode: &quot;wide&quot;</code>.</p>
-<p>Cards follow the DSH light or dark theme and whale-blue palette. Session replay restores them from the persistent tool result, so the original fragment file does not need to remain on disk.</p>
-<h3>Security</h3>
-<p>Each card runs in a sandboxed iframe with an opaque origin and cannot access the host page. Its CSP blocks network requests, nested pages, and form submissions, while allowing static assets from a fixed set of CDNs. Fragments are limited to <code>1000000</code> bytes by default; change <code>maxFragmentBytes</code> to use a different limit.</p>
-<h3>Limitations</h3>
-<p>Interactive cards currently render only in the Web UI. TUI and headless clients show the standard tool result instead. Buttons inside a card cannot yet send follow-up messages to the conversation.</p>
-<p>Inspired by <code>/visualize</code> in the Codex desktop app. The layered skill references and Chart.js-first approach draw from <a href="https://github.com/himself65/finance-skills/tree/main/plugins/ui-tools/skills/generative-ui">himself65/finance-skills</a>.</p>
+<p>可以运行 <code>dsh --profile web --dump-config</code> 确认插件已经进入最终配置。需要修改源码时，克隆仓库并在仓库目录运行 <code>dsh plugin --profile web add .</code>；构建产物已经提交，不需要额外构建。使用社区 <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> 的用户也可以从「设置 → 插件」安装。</p>
+<h3>怎么用</h3>
+<p>直接告诉模型你想看什么，例如「做一个能调参数的排序算法可视化」。模型会写出一份 HTML fragment，再调用 <code>visualize(path, title?, mode?)</code> 把它放进对话。适合并排比较的内容可以使用 <code>mode: &quot;wide&quot;</code>。</p>
+<p>卡片会跟随 DSH 的明暗主题和鲸鱼蓝配色。会话重放时，页面从持久化的工具结果恢复，不依赖原始 fragment 文件仍然存在。</p>
+<h3>安全</h3>
+<p>卡片运行在不透明来源的 sandboxed iframe 中，不能接触宿主页面。CSP 会阻止网络请求、嵌套页面和表单提交，只允许从固定 CDN 加载静态资源。单个 fragment 默认上限为 <code>1000000</code> 字节，可以通过 <code>maxFragmentBytes</code> 调整。</p>
+<h3>限制</h3>
+<p>目前只在 Web UI 中渲染交互卡片，TUI 和 headless 客户端会显示普通工具结果。卡片内的按钮暂时不能向主对话发送 follow-up 消息。</p>
+<p>灵感来自 Codex 桌面端的 <code>/visualize</code>；skill 的分层 reference 和 Chart.js 优先路线借鉴了 <a href="https://github.com/himself65/finance-skills/tree/main/plugins/ui-tools/skills/generative-ui">himself65/finance-skills</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Nagi-ovo/dsh-visualize/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Nagi-ovo/dsh-visualize/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

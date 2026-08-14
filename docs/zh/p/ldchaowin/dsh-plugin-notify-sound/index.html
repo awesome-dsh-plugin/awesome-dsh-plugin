@@ -192,114 +192,106 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/README.zh.md">中文</a></p>
-<p>A DeepSeek Harness (DSH) plugin for the <strong>Web UI</strong>: play a customizable ringtone when a task
-finishes — <strong>per workspace</strong> — and an attention sound whenever something needs a human.</p>
-<h3>Features</h3>
-<h4>Completion sounds (per workspace)</h4>
+<p><a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/README.md">English</a> | 中文</p>
+<p>DeepSeek Harness（DSH）Web 端插件：<strong>任务完成后按工作区播放可定制的通知铃声</strong>，
+并在<strong>需要人介入时</strong>（审批、提问、计划评审、目标受阻、任务失败）播放注意提示音。</p>
+<h3>功能</h3>
+<h4>完成铃声（按工作区）</h4>
 <ul>
-<li>Plays when a session turn finishes (<code>running: true → false</code>) or a background job completes.</li>
-<li>The sound is resolved per workspace: a workspace-specific override wins, otherwise the default.</li>
-<li>Three sound sources:<ul>
-<li><strong>Built-in synthesized sounds</strong> — 6 options (Ding / Chime / Bell / Complete / Success / Mute),
-generated live with Web Audio, no audio files required.</li>
-<li><strong>Voice announcement (TTS)</strong> — the browser speaks a custom phrase (e.g. “我做完啦！”, “All done!”)
-using a system Chinese voice; voice and rate are configurable.</li>
-<li><strong>Custom audio</strong> — upload any MP3/WAV/etc. file.</li>
+<li>会话「一次回答结束」（回合完成，<code>running: true → false</code>）或后台任务完成时播放。</li>
+<li>铃声按工作区解析：先查该工作区的单独配置，未配置则使用默认铃声。</li>
+<li>声音来源三选：<ul>
+<li><strong>内置合成音</strong> — 6 种（叮咚 / 风铃 / 铃铛 / 完成 / 成功 / 静音），Web Audio 实时合成，无需音频文件；</li>
+<li><strong>语音播报（TTS）</strong> — 浏览器用系统中文语音朗读自定义文案（如「我做完啦！」），可选声音与语速；</li>
+<li><strong>自定义音频</strong> — 上传任意 MP3/WAV 等文件。</li>
 </ul>
 </li>
 </ul>
-<h4>Attention sounds (when a human is needed)</h4>
-<p>The following events <strong>always</strong> ring (they are not affected by the “quiet current session” option):</p>
+<h4>注意铃声（需要人介入时）</h4>
+<p>以下事件<strong>始终响铃</strong>（不受「当前会话不响铃」限制）：</p>
 <table>
 <thead>
 <tr>
-<th>Event</th>
-<th>Detection</th>
-<th>Default sound</th>
+<th>事件</th>
+<th>检测来源</th>
+<th>默认声音</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Approval request</td>
-<td>session <code>pendingInteraction: approval</code></td>
-<td>generic attention sound</td>
+<td>审批请求</td>
+<td>会话 <code>pendingInteraction: approval</code></td>
+<td>通用注意音</td>
 </tr>
 <tr>
-<td>User question</td>
+<td>用户提问</td>
 <td><code>pendingInteraction: question</code></td>
-<td>generic attention sound</td>
+<td>通用注意音</td>
 </tr>
 <tr>
-<td>Plan review</td>
+<td>计划评审</td>
 <td><code>pendingInteraction: plan-review</code></td>
-<td>generic attention sound</td>
+<td>通用注意音</td>
 </tr>
 <tr>
-<td>Goal blocked</td>
-<td>goal projection enters <code>blocked</code></td>
-<td>generic attention sound</td>
+<td>目标受阻</td>
+<td>goal 投影进入 <code>blocked</code></td>
+<td>通用注意音</td>
 </tr>
 <tr>
-<td>Background task failure</td>
-<td>job status <code>failed</code></td>
-<td>Bell (dedicated failure sound)</td>
+<td>后台任务失败</td>
+<td>任务状态 <code>failed</code></td>
+<td>铃铛（独立失败音）</td>
 </tr>
 </tbody></table>
-<p>Each kind can override the generic attention sound, or use a shared TTS phrase
-(e.g. “需要你的确认” / “Your confirmation is needed”).</p>
-<h4>Settings panel (Settings → 通知铃声 / Notification Sounds)</h4>
-<p>Master switch, “quiet when viewing the current session”, default completion sound,
-per-workspace completion sounds, generic + per-kind attention sounds, voice settings
-(voice / rate / preview / refresh), per-row preview and custom-audio upload.</p>
-<h3>Install</h3>
-<p>Requires a DSH version with bundle-plugin support (<code>dsh.profile.bundles</code> + <code>dsh.bundle.patch</code>)
-and <code>pnpm</code> on PATH (<code>corepack enable</code> or <code>npm i -g pnpm</code>).</p>
-<pre><code class="language-sh"># One command: pnpm installs the package and adds it to the profile&#39;s bundle layer
+<p>每类事件可单独覆盖声音（或跟随通用注意音），也可统一使用一句播报文案
+（如「需要你的确认」）。</p>
+<h4>设置面板（设置 → 通知铃声）</h4>
+<p>总开关、「当前会话完成时不响铃」、默认完成铃声、每工作区完成铃声、
+通用注意音 + 五类注意事件、语音设置（声音/语速/试听/刷新列表）、逐项试听与上传。</p>
+<h3>安装</h3>
+<p>需要支持 bundle 插件的 DSH 版本（<code>dsh.profile.bundles</code> + <code>dsh.bundle.patch</code>），
+且 PATH 中有 <code>pnpm</code>（<code>corepack enable</code> 或 <code>npm i -g pnpm</code>）。</p>
+<pre><code class="language-sh"># 一键安装：pnpm 安装依赖并把本包加入 profile 的 bundles 层
 dsh plugin --profile web add dsh-plugin-notify-sound
 
-# Restart the server (or refresh the page), then open Settings → 通知铃声
+# 重启服务（或刷新页面），打开 设置 → 通知铃声 即可配置
 </code></pre>
-<p>Other profiles work the same way: <code>dsh plugin --profile &lt;name&gt; add dsh-plugin-notify-sound</code>.</p>
-<h4>Manual install (without pnpm)</h4>
+<p>其他 profile 同理：<code>dsh plugin --profile &lt;name&gt; add dsh-plugin-notify-sound</code>。</p>
+<h4>手动安装（无 pnpm 时）</h4>
 <ol>
-<li>Copy this package and its runtime deps (<code>@deepseek-ai/schemastery</code>,
-<code>@deepseek-ai/cosmokit</code>, <code>@standard-schema/spec</code>) into
-<code>$DSH_HOME/profiles/web/node_modules/</code>.</li>
-<li>Append <code>&quot;dsh-plugin-notify-sound&quot;</code> to <code>dsh.profile.bundles</code> in
-<code>$DSH_HOME/profiles/web/package.json</code>.</li>
-<li>Restart <code>dsh web</code>.</li>
+<li>把本包及依赖（<code>@deepseek-ai/schemastery</code>、<code>@deepseek-ai/cosmokit</code>、<code>@standard-schema/spec</code>）
+复制到 <code>$DSH_HOME/profiles/web/node_modules/</code>；</li>
+<li>在 <code>$DSH_HOME/profiles/web/package.json</code> 的 <code>dsh.profile.bundles</code> 中追加 <code>&quot;dsh-plugin-notify-sound&quot;</code>；</li>
+<li>重启 <code>dsh web</code>。</li>
 </ol>
-<h3>Configuration storage</h3>
+<h3>配置持久化</h3>
 <ul>
-<li>The browser half persists its configuration in <strong>localStorage</strong> (key
-<code>dsh-notify-sound:config</code>), sanitizing every read and filling defaults.</li>
-<li>The host half also registers the <code>dsh-plugin-notify-sound</code> settings namespace: on rc.6 the
-settings API allowlist (<code>WEB_SETTINGS_NAMESPACES</code> in <code>dsh-host-apiproxy</code>) does not expose
-third-party namespaces to browsers, so the client does not depend on <code>settingsScope</code> today;
-the registration keeps the migration path open for future releases.</li>
+<li>客户端配置保存在浏览器 <strong>localStorage</strong>（键 <code>dsh-notify-sound:config</code>），读取时做字段校验与默认值兜底。</li>
+<li>宿主端同时注册 <code>dsh-plugin-notify-sound</code> 设置命名空间：rc.6 的 settings API 白名单
+（<code>dsh-host-apiproxy</code> 的 <code>WEB_SETTINGS_NAMESPACES</code>）不会把第三方命名空间暴露给浏览器，
+该注册为平台开放暴露机制后的无缝迁移预留（客户端存储接口外形与 settingsScope 一致）。</li>
 </ul>
-<h3>Development</h3>
-<pre><code class="language-sh">npm test      # 50+ assertions across host and client halves (Node only, no browser needed)
-npm run check # syntax check
+<h3>开发</h3>
+<pre><code class="language-sh">npm test      # 宿主端 + 客户端 50 余项自动化断言（Node 即可，无需浏览器）
+npm run check # 语法检查
 </code></pre>
-<p>Layout:</p>
+<p>结构：</p>
 <ul>
-<li><code>lib/index.js</code> — host half: registers the settings namespace (schema + defaults)</li>
-<li><code>lib/client.js</code> — browser bundle: completion/attention event detection, sound engine
-(Web Audio / TTS / Audio), settings panel</li>
-<li><code>lib/types/index.d.ts</code> — host-side type declarations</li>
-<li><code>cordis.patch.yml</code> — bundle patch layer (inserts the <code>notify-sound</code> row)</li>
-<li><code>tools/</code> — tests and verification scripts (not shipped in the npm package)</li>
+<li><code>lib/index.js</code> — 宿主端：注册 settings 命名空间（schemas 校验 + 默认值）</li>
+<li><code>lib/client.js</code> — 浏览器端 bundle：完成/注意事件监听、声音引擎（Web Audio / TTS / Audio）、设置面板</li>
+<li><code>lib/types/index.d.ts</code> — 宿主端类型声明</li>
+<li><code>cordis.patch.yml</code> — bundle 补丁层（插入 <code>notify-sound</code> 行）</li>
+<li><code>tools/</code> — 测试与验收脚本（不随 npm 包发布）</li>
 </ul>
-<h3>Publish</h3>
-<pre><code class="language-sh">npm login                       # npm account (2FA recommended)
+<h3>发布</h3>
+<pre><code class="language-sh">npm login                       # 登录 npm（建议开启 2FA）
 npm publish --access public
 </code></pre>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/ldchaowin/dsh-plugin-notify-sound/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

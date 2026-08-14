@@ -190,58 +190,58 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p>ADB device &amp; bench operations for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a></p>
+<p>ADB 设备·台架运维工具集 for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a></p>
 </blockquote>
-<p>Give DSH agents direct control over Android devices and automotive bench rigs: device discovery, structured logcat, APK install, file pull/push, and performance snapshots. Built for on-vehicle and bench debugging workflows — generic within the domain (no Unity, no vendor protocol lock-in).</p>
-<p><strong>English</strong> | <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/README.zh-CN.md">简体中文</a></p>
-<h3>Install</h3>
+<p><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/README.md">English</a> | 简体中文</p>
+<p>让 DSH agent 直接操作 Android 设备 / 车机台架：设备发现、结构化 logcat、apk 安装、文件 pull/push、性能快照。面向实车与台架联调场景，业务内通用（不限 Unity、不限具体车机协议）。</p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-adb
 </code></pre>
-<p>Or install directly from GitHub: <code>dsh plugin --profile web add github:SamXiaBing/dsh-adb</code></p>
-<h3>Ecosystem</h3>
+<p>或从 GitHub 直装：<code>dsh plugin --profile web add github:SamXiaBing/dsh-adb</code></p>
+<h3>生态收录</h3>
 <ul>
-<li>✅ <a href="https://www.npmjs.com/package/dsh-adb">npm</a> — <code>dsh-adb</code> published (latest: 0.1.5)</li>
-<li>✅ <a href="https://github.com/0xsline/awesome-deepseek-harness/pull/87">awesome-deepseek-harness#87</a> — <strong>merged</strong></li>
-<li>✅ <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/85">awesome-dsh-plugin#85</a> — <strong>merged</strong></li>
-<li>⏳ <a href="https://github.com/Alex-Yanggg/awesome-DSH-plugin/pull/29">awesome-DSH-plugin#29</a> — pending</li>
+<li>✅ <a href="https://www.npmjs.com/package/dsh-adb">npm</a> — <code>dsh-adb</code> 已发布（latest: 0.1.5）</li>
+<li>✅ <a href="https://github.com/0xsline/awesome-deepseek-harness/pull/87">awesome-deepseek-harness#87</a> — <strong>已合并</strong></li>
+<li>✅ <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/85">awesome-dsh-plugin#85</a> — <strong>已合并</strong></li>
+<li>⏳ <a href="https://github.com/Alex-Yanggg/awesome-DSH-plugin/pull/29">awesome-DSH-plugin#29</a> — 待合并</li>
 </ul>
-<p>Topics: <code>dsh-plugin</code> <code>dsh</code> <code>adb</code> <code>android</code> <code>automotive</code> <code>bench</code></p>
-<h3>Tools</h3>
+<p>Topics：<code>dsh-plugin</code> <code>dsh</code> <code>adb</code> <code>android</code> <code>automotive</code> <code>bench</code></p>
+<h3>工具</h3>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Description</th>
+<th>工具</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>adb_devices</code></td>
-<td>List devices (serial/state/product/model); run first to discover serials</td>
+<td>列出设备（serial/state/product/model），先发现再操作</td>
 </tr>
 <tr>
 <td><code>adb_connect</code> / <code>adb_disconnect</code></td>
-<td>Wireless bench connection (host:port, default 5555)</td>
+<td>无线台架连接（host:port，默认 5555）</td>
 </tr>
 <tr>
 <td><code>adb_logcat</code></td>
-<td>Filtered read (tag/level/keyword/time-window/tail); <code>run_in_background</code> streams continuously as a job — read deltas with <code>job_output</code>, stop with <code>job_kill</code></td>
+<td>过滤读取（tag/级别/关键字/时间窗/tail）；<code>run_in_background</code> 后台连续采集，job_output 读增量、job_kill 停止</td>
 </tr>
 <tr>
 <td><code>adb_install</code></td>
-<td>Install APKs (<code>-r</code>/<code>-d</code>/<code>-g</code> options); validates the local file exists</td>
+<td>安装 apk（-r/-d/-g 选项），校验本地文件存在</td>
 </tr>
 <tr>
 <td><code>adb_file</code></td>
-<td>pull / push / ls / rm, per-device isolation</td>
+<td>pull / push / ls / rm，设备隔离</td>
 </tr>
 <tr>
 <td><code>adb_perf_snapshot</code></td>
-<td>Structured <code>dumpsys meminfo / gfxinfo / battery</code> snapshots (PSS, frame percentiles, jank rate, battery)</td>
+<td><code>dumpsys meminfo / gfxinfo / battery</code> 结构化快照（PSS/帧率百分位/卡顿率/电量）</td>
 </tr>
 </tbody></table>
-<p>Errors are structured <code>AdbError</code> with stable codes: <code>ADB_NOT_FOUND</code>, <code>ADB_UNAVAILABLE</code>, <code>DEVICE_NOT_FOUND</code>, <code>NO_DEVICES</code>, <code>CONNECT_FAILED</code>, <code>INSTALL_FAILED</code>, <code>ADB_EXIT_&lt;code&gt;</code>, etc.</p>
-<h3>Configuration</h3>
-<p>Set the <code>config</code> block in <code>cordis.patch.yml</code> (or a profile patch):</p>
+<p>错误码：<code>ADB_NOT_FOUND</code>、<code>ADB_UNAVAILABLE</code>、<code>DEVICE_NOT_FOUND</code>、<code>NO_DEVICES</code>、<code>CONNECT_FAILED</code>、<code>INSTALL_FAILED</code>、<code>ADB_EXIT_&lt;code&gt;</code> 等，均为结构化 <code>AdbError</code>。</p>
+<h3>配置</h3>
+<p><code>cordis.patch.yml</code> 的 <code>config</code> 块（或 profile patch）：</p>
 <pre><code class="language-yaml">- id: dsh-adb
   name: dsh-adb
   config:
@@ -252,52 +252,53 @@ footer p+p{margin-top:.5rem}
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Description</th>
-<th>Default</th>
+<th>键</th>
+<th>说明</th>
+<th>默认</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>adbPath</code></td>
-<td>Absolute path to the adb executable</td>
-<td>Auto-detect PATH / ANDROID_HOME / ANDROID_SDK_ROOT/platform-tools</td>
+<td>adb 可执行文件绝对路径</td>
+<td>自动探测 PATH / ANDROID_HOME / ANDROID_SDK_ROOT/platform-tools</td>
 </tr>
 <tr>
 <td><code>defaultSerial</code></td>
-<td>Default target device serial</td>
-<td>none</td>
+<td>默认设备 serial</td>
+<td>无</td>
 </tr>
 <tr>
 <td><code>timeoutMs</code></td>
-<td>Per-command timeout</td>
+<td>命令超时</td>
 <td>30000</td>
 </tr>
 </tbody></table>
-<h3>Development</h3>
-<pre><code class="language-sh">npm install            # add --include=dev when NODE_ENV=production
+<h3>开发</h3>
+<pre><code class="language-sh">npm install            # 本机 NODE_ENV=production 时加 --include=dev
 npm run build          # tsc → lib/
-npm test               # parser/classification unit tests (node --test)
-npm pack --dry-run     # verify publish contents (lib/ + cordis.patch.yml)
+npm test               # 解析器/错误分类单测（node --test）
+npm pack --dry-run     # 校验发布包内容（lib/ + cordis.patch.yml）
 </code></pre>
-<h3>Testing &amp; Verification</h3>
+<p>注意：本机若设了 <code>NODE_ENV=production</code>，npm 会跳过 devDependencies，安装时用 <code>npm install --include=dev</code>。</p>
+<h3>测试与验证</h3>
 <ul>
-<li>Principle: <strong>ship only what is tested</strong> — every committed feature has unit and/or end-to-end coverage.</li>
-<li>Verified on: Android 13 automotive bench + Android 13 phone.</li>
-<li>Per-version changes and verification: <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/CHANGELOG.md">CHANGELOG.md</a>; test methodology and coverage: <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.md">docs/TESTING.md</a> (Chinese).</li>
+<li>原则：<strong>提交即测</strong> —— 全部已提交功能均有实测覆盖（单元 + headless 端到端 + 车机台架/真机）。</li>
+<li>验证设备：Android 13 车机台架 + Android 13 真机。</li>
+<li>版本化变更与每版验证记录见 <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/CHANGELOG.md">CHANGELOG.md</a>；测试方法与覆盖现状见 <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.md">docs/TESTING.md</a>。</li>
 </ul>
-<h3>Project Docs (bilingual; for AI agents &amp; contributors)</h3>
+<h3>项目文档（双语，供 AI 对话/协作者参考）</h3>
 <ul>
-<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/AGENTS.md">docs/AGENTS.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/AGENTS.en.md">docs/AGENTS.en.md</a> — read first: purpose, rules, commands, environment facts, doc map</li>
-<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/REQUIREMENTS.md">docs/REQUIREMENTS.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/REQUIREMENTS.en.md">docs/REQUIREMENTS.en.md</a> — purpose / scope / non-goals / acceptance criteria</li>
-<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.md">docs/TESTING.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.en.md">docs/TESTING.en.md</a> — testing philosophy, three test layers, E2E steps, regression checklist</li>
-<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/DEVELOPMENT-LOG.md">docs/DEVELOPMENT-LOG.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/DEVELOPMENT-LOG.en.md">docs/DEVELOPMENT-LOG.en.md</a> — timeline, fixed-bug lessons, environment &amp; ecosystem notes</li>
-<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/PLAN.md">PLAN.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/PLAN.en.md">PLAN.en.md</a> — milestones &amp; backlog</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/AGENTS.md">docs/AGENTS.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/AGENTS.en.md">docs/AGENTS.en.md</a> — 进项目先读：定位、铁律、命令、环境事实、文档地图</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/REQUIREMENTS.md">docs/REQUIREMENTS.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/REQUIREMENTS.en.md">docs/REQUIREMENTS.en.md</a> — 目的/范围/非目标/验收标准</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.md">docs/TESTING.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/TESTING.en.md">docs/TESTING.en.md</a> — 测试哲学（提交即测）、三层测试方法、E2E 步骤、回归清单</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/DEVELOPMENT-LOG.md">docs/DEVELOPMENT-LOG.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/docs/DEVELOPMENT-LOG.en.md">docs/DEVELOPMENT-LOG.en.md</a> — 进度时间线、4 个已修复 bug 教训、环境/生态经验</li>
+<li><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/PLAN.md">PLAN.md</a> / <a href="https://github.com/SamXiaBing/dsh-adb/blob/main/PLAN.en.md">PLAN.en.md</a> — 里程碑与待办</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/SamXiaBing/dsh-adb/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

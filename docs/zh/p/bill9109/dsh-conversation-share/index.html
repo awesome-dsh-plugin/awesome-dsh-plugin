@@ -193,136 +193,136 @@ footer p+p{margin-top:.5rem}
 <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-0B7285?style=flat-square" alt="License: BSD-3-Clause"></a>
 <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%5E20%20%7C%20%3E%3D22-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a>
 <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/cordis.patch.yml"><img src="https://img.shields.io/badge/DSH-Web-5B4CF0?style=flat-square" alt="DSH profiles"></a></p>
-<p><strong>Install:</strong> <code>dsh plugin --profile web add github:bill9109/dsh-conversation-share</code></p>
-<p><strong>Render a selected range of a DeepSeek Harness conversation into a PNG long image with a branded footer, ready to share.</strong></p>
-<p><a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.md">English</a> | <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.zh.md">中文</a></p>
-<h3>Why this exists</h3>
-<p>Conversation history lives inside the DSH Web UI, and sharing a meaningful part of it usually means screenshots spliced by hand — cropped, misaligned, with no brand or context. This plugin lets you pick an exact range of a conversation with two draggable, magnetically snapping markers and render it into a single polished PNG long image with a DeepSeek Harness branded footer.</p>
-<h3>Screenshots</h3>
-<h3>Features</h3>
+<p><strong>安装：</strong> <code>dsh plugin --profile web add github:bill9109/dsh-conversation-share</code></p>
+<p><strong>把 DeepSeek Harness 对话流中选中的一段，渲染成带品牌尾部的 PNG 长图分享出去。</strong></p>
+<p><a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.md">English</a> | 中文</p>
+<h3>为什么需要它</h3>
+<p>对话历史活在 DSH Web UI 里，分享其中有意义的一段通常靠手动拼截图——裁剪、错位、没有品牌和上下文。这个插件让你用两个可拖动、带磁性吸附的范围标记，精确选中一段对话，渲染成一张带 DeepSeek Harness 品牌尾部的精致 PNG 长图。</p>
+<h3>截图</h3>
+<h3>功能</h3>
 <ul>
-<li><strong>Share capsule</strong> to the left of the Session log button in the top-right corner (same style as log; clicking activates a blue highlight, with <code>[Cancel][Confirm]</code> expanding to its left)</li>
-<li><strong>Two draggable range markers</strong> (horizontal labels: &quot;Start here&quot; / &quot;End here&quot;) with magnetic snapping<ul>
-<li>Snap points = semantic message rows + markdown blocks (p/pre/ul/li/table/headings) + visual boxes (code blocks/cards) + content-level buttons (artifact file chips) + every text line inside paragraphs</li>
-<li>The start handle snaps to an element&#39;s <strong>top edge</strong>, the end handle to its <strong>bottom edge</strong>; the two handles cannot cross</li>
-<li>Snap hint = light blue translucent rounded-rect fill (flat style)</li>
+<li>右上角 Session log 按钮左侧的<strong>分享胶囊</strong>（与 log 同款样式，点击后激活为蓝色高亮，<code>[取消][确认]</code> 在分享左侧展开）</li>
+<li><strong>两个可拖动的范围标记把手</strong>（横向标签：「从这里开始」/「到这里结束」），支持磁性吸附<ul>
+<li>吸附点 = 语义消息行 + markdown 块（p/pre/ul/li/table/标题）+ 视觉盒子（代码块/卡片）+ 内容级按钮（产物文件 chip）+ 段落内部每一行文本</li>
+<li>开始端吸元素<strong>顶边</strong>，结束端吸元素<strong>底边</strong>；两个把手不可交叉</li>
+<li>吸附提示 = 淡蓝半透明圆角矩形填充（扁平风格）</li>
 </ul>
 </li>
-<li><strong>Scrolling model</strong>: handles follow the pointer 1:1 within the viewport without scrolling; only when the pointer enters the top/bottom edge zones (64px) does the page scroll (clamped penetration depth, frame-rate independent), stopping when it leaves; clicking does not scroll (a real drag of ≥8px is required)</li>
-<li><strong>Capture</strong>: 40pt theme-background padding (symmetric on all sides) + a DeepSeek Harness brand icon at the bottom (with the BETA badge text); extra-long content is rendered in chunks and stitched together to bypass the canvas height limit</li>
-<li><strong>Preview modal</strong>: image width adapts, vertical scroll to review, download PNG, copy image</li>
+<li><strong>滚动模型</strong>：视口内把手 1:1 跟手不滚屏；指针进入顶部/底部边缘区（64px）才带动页面滚动（穿透深度钳制、帧率无关），离开即停；点按不滚（需真实拖动 ≥8px）</li>
+<li><strong>截图</strong>：40pt 主题底色留白（四周对称）+ 底部 DeepSeek Harness 品牌图标（含 BETA 徽标文字）；超长内容分块渲染拼接，绕过 canvas 高度上限</li>
+<li><strong>预览弹窗</strong>：图片宽度自适应、纵向滚动查看、下载 PNG、复制图片</li>
 </ul>
-<h3>Usage</h3>
+<h3>使用</h3>
 <ol>
-<li>Click the share capsule next to the Session log button in the top-right corner; it activates (blue highlight) and the <code>[Cancel][Confirm]</code> controls appear</li>
-<li>Drag the two range markers to select the conversation range — they snap to message rows, markdown blocks, and line-level text; the start handle snaps to a top edge, the end handle to a bottom edge</li>
-<li>Click <strong>Confirm</strong> to render the selection into a PNG long image (extra-long content is chunked and stitched automatically)</li>
-<li>Review the result in the preview modal: download the PNG or copy the image to the clipboard</li>
+<li>点击右上角 Session log 按钮左侧的分享胶囊，激活（蓝色高亮），<code>[取消][确认]</code> 出现在左侧</li>
+<li>拖动两个范围标记选中对话区间——它们会吸附到消息行、markdown 块和行级文本；开始端吸顶边、结束端吸底边</li>
+<li>点<strong>确认</strong>渲染选区为 PNG 长图（超长内容自动分块拼接）</li>
+<li>在预览弹窗里查看结果：下载 PNG 或复制图片到剪贴板</li>
 </ol>
-<h3>Install</h3>
-<p>Install into the <code>web</code> profile with the standard <code>dsh plugin</code> mechanism (no source changes, no manual package.json edits):</p>
+<h3>安装</h3>
+<p>用标准的 <code>dsh plugin</code> 命令安装到 web profile（无需改源码、无需手动编辑 package.json）：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:bill9109/dsh-conversation-share
 
-# Or pin a branch/commit
+# 或指定分支/提交
 dsh plugin --profile web add github:bill9109/dsh-conversation-share#main
 
-# Or install from a local checkout (development — rebuild and it takes effect)
+# 或从本地 checkout 安装（开发调试，改完重新构建即生效）
 dsh plugin --profile web add /path/to/your/dsh-conversation-share
 </code></pre>
-<p>Internally the command runs <code>pnpm add &lt;spec&gt;</code> in the profile directory and automatically appends packages that declare <code>dsh.bundle</code> to <code>dsh.profile.bundles</code>. The repository ships its build output (<code>lib/</code>), so no consumer-side build is needed.</p>
-<p>After installing, <strong>restart web</strong> and <strong>hard-refresh</strong> the browser (Cmd+Shift+R) — old tabs do not load the new bundle.</p>
-<h4>Upgrade</h4>
+<p>命令内部 = 在 profile 目录执行 <code>pnpm add &lt;spec&gt;</code> + 自动把声明了 <code>dsh.bundle</code> 的包追加进 <code>dsh.profile.bundles</code>。仓库里带了构建产物（<code>lib/</code>），消费方安装无需构建。</p>
+<p>安装后<strong>重启 web</strong>，浏览器<strong>硬刷新</strong>（Cmd+Shift+R）——旧 tab 不会加载新 bundle。</p>
+<h4>升级</h4>
 <pre><code class="language-sh">dsh plugin --profile web update github:bill9109/dsh-conversation-share
 </code></pre>
-<p>For a local-path installation, run <code>add</code> again against the replacement checkout, then restart web and hard-refresh.</p>
-<h4>Uninstall</h4>
+<p>本地路径安装则对替换后的 checkout 重新执行 <code>add</code>，然后重启 web 并硬刷新。</p>
+<h4>卸载</h4>
 <pre><code class="language-sh">dsh plugin --profile web remove @bill9109/dsh-conversation-share
 </code></pre>
-<p>The command runs <code>pnpm remove &lt;pkg&gt;</code> in the profile directory and removes it from <code>dsh.profile.bundles</code>. After uninstalling, <strong>restart web</strong> and <strong>hard-refresh</strong> the browser.</p>
-<h3>Troubleshooting</h3>
+<p>命令内部 = 在 profile 目录执行 <code>pnpm remove &lt;pkg&gt;</code> + 自动把它从 <code>dsh.profile.bundles</code> 移除。卸载后<strong>重启 web</strong> 并<strong>硬刷新</strong>浏览器。</p>
+<h3>故障排查</h3>
 <table>
 <thead>
 <tr>
-<th>Symptom</th>
-<th>Resolution</th>
+<th>症状</th>
+<th>解决</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Share capsule does not appear</td>
-<td>The plugin only loads after restarting web and hard-refreshing the browser; verify the bundle row exists in the profile (`dsh --profile web --dump-config</td>
+<td>分享胶囊没出现</td>
+<td>插件要重启 web + 硬刷新后才加载；用 `dsh --profile web --dump-config</td>
 </tr>
 <tr>
-<td>Handles cannot cross or snap oddly</td>
-<td>That is by design — the start handle snaps to top edges, the end handle to bottom edges, and they cannot cross; drag past an element to flip which edge binds</td>
+<td>把手不能交叉或吸附异常</td>
+<td>这是设计使然——开始端吸顶边、结束端吸底边、不可交叉；拖过元素可切换吸附的是哪条边</td>
 </tr>
 <tr>
-<td>The page scrolls while dragging</td>
-<td>Scrolling only happens in the 64px top/bottom edge zones; drag within the viewport to move the handle 1:1 without scrolling</td>
+<td>拖动时页面滚动</td>
+<td>只有指针进入上下 64px 边缘区才滚动；在视口内拖动是 1:1 跟手不滚屏</td>
 </tr>
 <tr>
-<td>Confirm does nothing / blank image</td>
-<td>Ensure the selection covers at least one message; the capture pipeline chunks and stitches extra-long content, so very long ranges may take a moment</td>
+<td>确认没反应 / 图片空白</td>
+<td>确认选区至少覆盖一条消息；超长内容分块拼接需要一点时间</td>
 </tr>
 <tr>
-<td>Copied image is missing from the clipboard</td>
-<td>The browser may have blocked clipboard image writes; use <strong>Download PNG</strong> instead</td>
+<td>复制图片剪贴板里没有</td>
+<td>浏览器可能禁止了剪贴板图片写入；改用<strong>下载 PNG</strong></td>
 </tr>
 </tbody></table>
-<h3>Directory structure</h3>
+<h3>目录结构</h3>
 <pre><code>dsh-conversation-share/
 ├── src/
-│   ├── index.ts              # host half of the plugin (no-op)
-│   ├── client/               # browser half (client bundle entry src/client/index.ts)
-│   │   ├── index.ts          # apply(ctx): mounts the share flow
-│   │   ├── controller.ts     # share button / cancel-confirm / mode switching / capture orchestration
-│   │   ├── markers.ts        # range marker handles (snapping, scrolling, state machine)
-│   │   ├── snap-targets.ts   # snap-target collection (rows/blocks/line-level text/content buttons + position dedup)
-│   │   ├── capture.ts        # capture pipeline (chunking, cropping, stitching, branded footer)
-│   │   ├── brand.ts          # brand SVG clone (var() baking + clip-path neutralization)
-│   │   ├── modal.ts          # preview modal + download/copy
+│   ├── index.ts              # 插件 host 半部（no-op）
+│   ├── client/               # 浏览器半部（client bundle 入口 src/client/index.ts）
+│   │   ├── index.ts          # apply(ctx)：挂载分享流程
+│   │   ├── controller.ts     # 分享按钮/取消确认/模式切换/截图编排
+│   │   ├── markers.ts        # 范围标记把手（吸附、滚动、状态机）
+│   │   ├── snap-targets.ts   # 吸附目标收集（行/块/行级文本/内容按钮 + 位置去重）
+│   │   ├── capture.ts        # 截图管线（分块、裁剪、拼接、品牌尾部）
+│   │   ├── brand.ts          # 品牌 SVG 克隆（var() 烘焙 + clip-path 中和）
+│   │   ├── modal.ts          # 预览弹窗 + 下载/复制
 │   │   └── dom.ts / theme.ts / icons.ts / toast.ts
-│   └── vendor/html-to-image/ # vendored html-to-image 1.11.13 (MIT, see its LICENSE)
-├── scripts/build.mjs         # build script (links DSH checkout deps → tsc → tsdown)
-├── lib/                      # build output (client.js is the browser bundle, committed)
-├── package.json              # dsh.bundle + dsh.client declarations
-├── cordis.patch.yml          # bundle patch (inserts the conversation-share plugin)
+│   └── vendor/html-to-image/ # 内嵌的 html-to-image 1.11.13（MIT，见其 LICENSE）
+├── scripts/build.mjs         # 构建脚本（链接 DSH checkout 依赖 → tsc → tsdown）
+├── lib/                      # 构建产物（client.js 为浏览器 bundle，随仓库提交）
+├── package.json              # dsh.bundle + dsh.client 声明
+├── cordis.patch.yml          # bundle patch（插入 conversation-share 插件）
 └── tsconfig.json / tsdown.config.mjs
 </code></pre>
-<h3>Build</h3>
-<p>Requires a DSH checkout (the official repository or a snapshot directory both work):</p>
+<h3>构建</h3>
+<p>需要一份 DSH checkout（官方仓库或快照目录均可）：</p>
 <pre><code class="language-sh">DSH_CHECKOUT=/path/to/dsh-checkout node scripts/build.mjs
-# or via pnpm:
+# 或通过 pnpm：
 DSH_CHECKOUT=/path/to/dsh-checkout pnpm run build
 </code></pre>
-<p>The script temporarily symlinks the DSH checkout&#39;s <code>node_modules</code> into this directory (cleaned up automatically when the build ends) and runs <code>tsc</code> (type check) then <code>tsdown</code> (producing <code>lib/index.js</code> + <code>lib/client.js</code>).</p>
-<h3>Development and verification</h3>
+<p>脚本会临时把 DSH checkout 的 <code>node_modules</code> 软链到本目录（构建结束自动清理），依次执行 <code>tsc</code>（类型检查）和 <code>tsdown</code>（产出 <code>lib/index.js</code> + <code>lib/client.js</code>）。</p>
+<h3>开发与验证</h3>
 <pre><code class="language-sh">pnpm run check     # tsc --noEmit
-DSH_CHECKOUT=/path/to/dsh-checkout pnpm run build   # -&gt; lib/ (committed)
+DSH_CHECKOUT=/path/to/dsh-checkout pnpm run build   # -&gt; lib/（已提交）
 </code></pre>
-<p><code>lib/</code> is committed so consumers install without building. Changes to the share flow (markers, snapping, capture, preview) should be exercised against a live web profile and the built bundle committed in the same change.</p>
-<h3>Release</h3>
+<p><code>lib/</code> 已提交，消费方安装无需构建。改动分享流程（把手、吸附、截图、预览）时应在真实 web profile 里验证，并把构建产物随同一改动提交。</p>
+<h3>发布</h3>
 <ol>
-<li><p>Make sure the build output is up to date:</p>
+<li><p>确保构建产物是最新的：</p>
 <pre><code class="language-sh">DSH_CHECKOUT=/path/to/dsh-checkout node scripts/build.mjs
 </code></pre>
 </li>
-<li><p>Bump the version, update <code>CHANGELOG.md</code>, commit and push to <code>main</code>, and tag the release:</p>
+<li><p>升版本号、更新 <code>CHANGELOG.md</code>、提交推送 <code>main</code> 并打 tag：</p>
 <pre><code class="language-sh">git add . &amp;&amp; git commit -m &quot;release v0.1.x&quot; &amp;&amp; git push origin main
 git tag v0.1.x &amp;&amp; git push origin v0.1.x
 </code></pre>
 </li>
 </ol>
-<h3>Community and About</h3>
+<h3>社区与关于</h3>
 <ul>
-<li>Use <a href="https://github.com/bill9109/dsh-conversation-share/issues">GitHub Issues</a> for reproducible bugs, focused feature requests, and usage questions.</li>
-<li>Read <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> before proposing changes; report vulnerabilities privately via <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/SECURITY.md">SECURITY.md</a>.</li>
-<li>Follow releases and compatibility notes in <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</li>
+<li>可复现的 bug、聚焦的功能请求和使用问题，走 <a href="https://github.com/bill9109/dsh-conversation-share/issues">GitHub Issues</a>。</li>
+<li>提变更前先读 <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>；安全问题通过 <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/SECURITY.md">SECURITY.md</a> 私有上报。</li>
+<li>版本与兼容性说明见 <a href="https://github.com/bill9109/dsh-conversation-share/blob/main/CHANGELOG.md">CHANGELOG.md</a>。</li>
 </ul>
 <h3>License</h3>
-<p>BSD-3-Clause (the vendored html-to-image is MIT, see <code>src/vendor/html-to-image/LICENSE</code>).</p>
+<p>BSD-3-Clause（vendored html-to-image 为 MIT，见 <code>src/vendor/html-to-image/LICENSE</code>）。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/bill9109/dsh-conversation-share/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

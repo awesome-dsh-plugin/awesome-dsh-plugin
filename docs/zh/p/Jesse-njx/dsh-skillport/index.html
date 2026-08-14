@@ -189,82 +189,82 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>Every skill you already have — Claude Code, Codex, Cursor, Gemini CLI — works in DSH.</strong></p>
-<p><code>dsh-skillport</code> is a <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> plugin bundle that makes DSH the next implementer of the open <strong>Agent Skills</strong> standard (<code>SKILL.md</code>). Anthropic released the spec in Dec 2025 and 30+ harnesses read it (Codex CLI, Cursor, Gemini CLI, Copilot/VS Code, Goose, Windsurf); DSH did not. Skillport imports the whole existing ecosystem with <strong>zero migration</strong>: your <code>.claude/skills/</code> library, your Cursor rules, your Claude Code slash commands all become DSH skills the moment the plugin loads.</p>
-<h3>What you get</h3>
+<p><strong>你在 Claude Code、Codex、Cursor、Gemini CLI 里已有的每一个 skill，都能在 DSH 里直接用。</strong></p>
+<p><code>dsh-skillport</code> 是 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的插件 bundle，让 DSH 成为开放 <strong>Agent Skills</strong> 标准（<code>SKILL.md</code>）的下一个实现者。Anthropic 在 2025 年 12 月发布该规范后，30+ 个 harness（Codex CLI、Cursor、Gemini CLI、Copilot/VS Code、Goose、Windsurf）都在读取它；DSH 之前不支持。Skillport 让你<strong>零迁移</strong>导入整个既有生态：你的 <code>.claude/skills/</code> 技能库、Cursor 规则、Claude Code 斜杠命令，在插件加载的瞬间全部变成 DSH skill。</p>
+<h3>你得到什么</h3>
 <table>
 <thead>
 <tr>
-<th>Format</th>
-<th>Source</th>
-<th>How it lands in DSH</th>
+<th>格式</th>
+<th>来源</th>
+<th>在 DSH 中的形态</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>Agent Skills <code>SKILL.md</code></td>
-<td><code>.claude/skills/</code>, <code>~/.claude/skills/</code> (Claude Code)</td>
-<td>model-invocable skills</td>
+<td><code>.claude/skills/</code>、<code>~/.claude/skills/</code>（Claude Code）</td>
+<td>模型可调用的 skill</td>
 </tr>
 <tr>
 <td>Agent Skills <code>SKILL.md</code></td>
-<td><code>~/.gemini/antigravity/skills/</code> (Gemini CLI)</td>
-<td>model-invocable skills</td>
+<td><code>~/.gemini/antigravity/skills/</code>（Gemini CLI）</td>
+<td>模型可调用的 skill</td>
 </tr>
 <tr>
 <td>Agent Skills <code>SKILL.md</code></td>
-<td><code>extraPaths</code> (config)</td>
-<td>model-invocable skills</td>
+<td><code>extraPaths</code>（配置）</td>
+<td>模型可调用的 skill</td>
 </tr>
 <tr>
 <td>Agent Skills <code>SKILL.md</code></td>
-<td><code>.dsh/skills/</code>, <code>.agents/skills/</code> (+ user roots)</td>
-<td>scanned natively by DSH — skillport never double-scans</td>
+<td><code>.dsh/skills/</code>、<code>.agents/skills/</code>（含用户级目录）</td>
+<td>DSH 原生扫描 —— skillport 绝不重复扫描</td>
 </tr>
 <tr>
-<td>Cursor rules</td>
+<td>Cursor 规则</td>
 <td><code>.cursor/rules/*.mdc</code></td>
-<td>converted to model-invocable skills (source <code>cursor</code>)</td>
+<td>转换为模型可调用的 skill（来源 <code>cursor</code>）</td>
 </tr>
 <tr>
-<td>Claude Code commands</td>
+<td>Claude Code 命令</td>
 <td><code>.claude/commands/*.md</code></td>
-<td>converted to <strong>user-invokable</strong> skills (<code>/name</code>)</td>
+<td>转换为<strong>用户可调用</strong>的 skill（<code>/name</code>）</td>
 </tr>
 <tr>
-<td>Context files</td>
-<td><code>AGENTS.md</code>, <code>CLAUDE.md</code></td>
-<td>injected as project context <strong>only if</strong> DSH does not already (native <code>dsh-agent-instructions</code> wins — no double-injection)</td>
+<td>上下文文件</td>
+<td><code>AGENTS.md</code>、<code>CLAUDE.md</code></td>
+<td>仅当 DSH 未原生处理时注入为项目上下文（原生 <code>dsh-agent-instructions</code> 优先 —— 不双重注入）</td>
 </tr>
 </tbody></table>
-<p>Skills flow into the native skill registry (<code>ctx.skills</code>), so the platform&#39;s own catalog injection, progressive-disclosure index, and the <code>skill</code> loader tool surface them automatically. <strong>Registrations are Cordis effects: <code>dsh plugin remove @dsh-skillport/bundle</code> unloads every imported skill cleanly</strong> — a live demo of the platform&#39;s teardown model.</p>
-<h3>Why this shape</h3>
-<p>DSH already ships a full skill stack: a provider registry with rank-based dedup, catalog injection (names + descriptions in the system prompt), and a <code>skill</code> tool that loads bodies and resolves bundled file paths. Skillport&#39;s job is narrower and honest: <strong>discover the locations DSH does not cover, convert the adjacent formats, and make the result debuggable.</strong> That is exactly the spec&#39;s &quot;check first — don&#39;t double-inject&quot; instruction applied to the whole surface:</p>
+<p>技能汇入原生 skill 注册表（<code>ctx.skills</code>），平台自带的目录注入、渐进式披露索引和 <code>skill</code> 加载工具会自动承载它们。<strong>所有注册都是 Cordis effect：<code>dsh plugin remove @dsh-skillport/bundle</code> 会干净地卸载每一个导入的 skill</strong> —— 这是平台卸载模型的现场演示。</p>
+<h3>为什么是这个形态</h3>
+<p>DSH 自带完整的 skill 技术栈：带 rank 去重的 provider 注册表、目录注入（系统提示里的名字 + 描述）、以及加载正文并解析捆绑文件路径的 <code>skill</code> 工具。Skillport 的职责更窄、更诚实：<strong>发现 DSH 未覆盖的位置、转换相邻格式、让结果可调试</strong>。这正是规范里「先检查 —— 不要双重注入」原则在整个面上的落实：</p>
 <ul>
-<li><code>.dsh/skills</code> + <code>.agents/skills</code> are scanned by DSH&#39;s native <code>dsh-skill-filesystem</code>; skillport detects that provider and skips those sets (falling back to scanning them itself only when the native provider is absent, so the full table holds in any composition).</li>
-<li>The spec&#39;s &quot;injection&quot; (names + descriptions) and &quot;use_skill&quot; (load body + resolve resources) are the native <code>dsh-tool-skill</code> catalog and <code>skill</code> tool — skillport feeds them, it does not duplicate them.</li>
-<li><code>AGENTS.md</code>/<code>CLAUDE.md</code> are injected natively by <code>dsh-agent-instructions</code>; skillport takes over only when that plugin is absent.</li>
+<li><code>.dsh/skills</code> + <code>.agents/skills</code> 由 DSH 原生的 <code>dsh-skill-filesystem</code> 扫描；skillport 检测到该 provider 就跳过这两组（仅当原生 provider 缺失时才自行扫描兜底，保证任何组合下完整覆盖）。</li>
+<li>规范里的「注入」（名字 + 描述）和「use_skill」（加载正文 + 解析资源）就是原生 <code>dsh-tool-skill</code> 的目录与 <code>skill</code> 工具 —— skillport 为它们供料，而不是重复造轮子。</li>
+<li><code>AGENTS.md</code>/<code>CLAUDE.md</code> 由 <code>dsh-agent-instructions</code> 原生注入；只有在该插件缺失时 skillport 才接管。</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add @dsh-skillport/bundle
 </code></pre>
-<p>Then in a session: ask the model to load a skill you used to own in Claude Code — the catalog lists it and the <code>skill</code> tool loads it, bundled resources included.</p>
-<h3>Config</h3>
-<p>All fields optional (profile patch or <code>cordis.patch.yml</code>):</p>
+<p>然后在会话里：让模型加载一个你以前在 Claude Code 里用过的 skill —— 目录会列出它，<code>skill</code> 工具会加载它，捆绑资源一并可用。</p>
+<h3>配置</h3>
+<p>所有字段均可选（profile patch 或 <code>cordis.patch.yml</code>）：</p>
 <pre><code class="language-yaml">plugins:
   dsh-skillport:
-    sources: [dsh, claude, agents, gemini]   # which discovery sets to scan
-    extraPaths: []                            # extra SKILL.md dirs (e.g. ~/skills, a shared drive)
+    sources: [dsh, claude, agents, gemini]   # 扫描哪些发现组
+    extraPaths: []                            # 额外的 SKILL.md 目录
     convert:
-      cursorRules: true                       # .cursor/rules/*.mdc → skills
-      contextFiles: true                      # AGENTS.md / CLAUDE.md (skipped when DSH handles natively)
-      claudeCommands: true                    # .claude/commands/*.md → user-invokable skills
-    maxIndexEntries: 100                      # prompt-bloat cap: beyond this, skillport&#39;s model-invocable
-                                              # candidates become user-invocable only (find_skill surfaces them)
-    providerName: skillport                   # provider name in the skill registry
+      cursorRules: true                       # .cursor/rules/*.mdc → skill
+      contextFiles: true                      # AGENTS.md / CLAUDE.md（DSH 原生处理时跳过）
+      claudeCommands: true                    # .claude/commands/*.md → 用户可调用 skill
+    maxIndexEntries: 100                      # 提示词膨胀上限：超过后模型可调用候选降为用户可调用，
+                                              # 由 find_skill 承载
+    providerName: skillport                   # 注册表中的 provider 名
 </code></pre>
 <h3>Skills doctor</h3>
-<p>Trigger-quality is the fuzzy failure mode: skills tuned for Claude&#39;s triggering habits may fire differently on DeepSeek models. Skillport turns that into a debuggable surface.</p>
-<p>In-session (<code>/skills doctor [&lt;description&gt;]</code>):</p>
+<p>触发质量是最大的模糊失败模式：为 Claude 触发习惯调优的 skill，在 DeepSeek 模型上可能触发方式不同。Skillport 把它变成可调试的表面。</p>
+<p>会话内（<code>/skills doctor [&lt;描述&gt;]</code>）：</p>
 <pre><code>/skills doctor
 ## project-claude (1)
 - commit-helper — Craft conventional-commit messages from staged changes.
@@ -276,31 +276,31 @@ Test-fire: &quot;deploy the app to production&quot;
 - deploy [skillport/project-dsh] score=0.83
     &quot;Deploy the application to staging or production with rollback.&quot;
 </code></pre>
-<p>Terminal (no DSH session needed):</p>
+<p>终端（无需 DSH 会话）：</p>
 <pre><code class="language-sh">skills-doctor --cwd ~/work/projectx list
 skills-doctor --cwd ~/work/projectx test-fire &quot;deploy the app to production&quot;
 </code></pre>
-<h3>Pinned spec revision</h3>
-<p>The Agent Skills format is young and versioned. Skillport pins the revision it implements — see <a href="https://github.com/Jesse-njx/dsh-skillport/blob/main/docs/spec-revision.md">docs/spec-revision.md</a> — and ships a conformance fixture suite (missing fields, unicode names, nested resources) so spec drift fails loudly in CI.</p>
-<h3>Non-goals (deliberately)</h3>
+<h3>固定规范修订版</h3>
+<p>Agent Skills 格式还很年轻且有版本。Skillport 固定它实现的修订版 —— 见 <a href="https://github.com/Jesse-njx/dsh-skillport/blob/main/docs/spec-revision.md">docs/spec-revision.md</a> —— 并附带一致性 fixture 套件（缺字段、unicode 名、嵌套资源），让规范漂移在 CI 中响亮失败。</p>
+<h3>非目标（有意为之）</h3>
 <ul>
-<li><strong>Claude Code plugins / hooks / subagents</strong> — executable host-specific semantics; porting prose-and-scripts is honest, pretending to port hook systems is a bug factory.</li>
-<li><strong>MCP config translation</strong> — out of scope.</li>
-<li><strong>Codex / Cursor extension binaries</strong> — out of scope.</li>
-<li>Skillport never gets its own execution path: skills that carry scripts run through DSH&#39;s normal shell tool inside its sandbox, so the sandbox policy stays the single enforcement point.</li>
+<li><strong>Claude Code 插件 / hooks / subagents</strong> —— 可执行的主机特定语义；移植文字与脚本是诚实的，假装移植 hook 系统是 bug 工厂。</li>
+<li><strong>MCP 配置转换</strong> —— 不在范围内。</li>
+<li><strong>Codex / Cursor 扩展二进制</strong> —— 不在范围内。</li>
+<li>Skillport 永远没有自己的执行路径：带脚本的 skill 通过 DSH 常规 shell 工具在其沙箱内运行，沙箱策略始终是唯一执行点。</li>
 </ul>
-<h3>Development</h3>
+<h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm build
-pnpm test        # 60 tests: spec conformance, discovery, dedup, converters,
-                 # doctor, find_skill, plugin integration, CLI, goldens
+pnpm test        # 60 个测试：规范一致性、发现、去重、转换、doctor、
+                 # find_skill、插件集成、CLI、goldens
 </code></pre>
-<p>Fixtures: <code>test/fixtures/</code> holds one skill per source format, conformance edge cases, and the checked-in goldens for the injected index + doctor report.</p>
-<h3>License</h3>
+<p>Fixture：<code>test/fixtures/</code> 里每种来源格式一个 skill、一致性边界用例，以及注入索引与 doctor 报告的已入库 golden。</p>
+<h3>许可证</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Jesse-njx/dsh-skillport/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Jesse-njx/dsh-skillport/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

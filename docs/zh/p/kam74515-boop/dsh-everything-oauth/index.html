@@ -189,69 +189,30 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Import local coding-platform logins into <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> without signing in again.</p>
-<p>Scans the same places <a href="https://github.com/farion1231/cc-switch">CC Switch</a> cares about:</p>
-<table>
-<thead>
-<tr>
-<th>Source</th>
-<th>What is imported</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>~/.cc-switch/cc-switch.db</code></td>
-<td>Claude / Codex / Gemini / OpenCode providers (DeepSeek, Kimi, official, …)</td>
-</tr>
-<tr>
-<td><code>~/.claude/settings.json</code></td>
-<td><code>ANTHROPIC_API_KEY</code> / <code>ANTHROPIC_AUTH_TOKEN</code></td>
-</tr>
-<tr>
-<td>macOS Keychain <code>Claude Code-credentials</code></td>
-<td>Claude subscription OAuth</td>
-</tr>
-<tr>
-<td><code>~/.codex/auth.json</code></td>
-<td>ChatGPT / Codex OAuth or <code>OPENAI_API_KEY</code></td>
-</tr>
-<tr>
-<td><code>~/.grok/auth.json</code> + <code>config.toml</code></td>
-<td>SuperGrok OAuth and custom model keys</td>
-</tr>
-<tr>
-<td><code>~/.config/opencode/opencode.json</code></td>
-<td>OpenCode providers</td>
-</tr>
-<tr>
-<td><code>~/.gemini/.env</code></td>
-<td><code>GEMINI_API_KEY</code></td>
-</tr>
-<tr>
-<td>process env</td>
-<td><code>ANTHROPIC_*</code>, <code>OPENAI_API_KEY</code>, <code>XAI_API_KEY</code>, <code>GEMINI_API_KEY</code></td>
-</tr>
-</tbody></table>
-<p>Official routes: <code>claude-oauth</code>, <code>codex-oauth</code>, <code>grok-oauth</code>, <code>gemini-oauth</code>, <code>copilot-oauth</code>. CC Switch gateways become <code>everything-*</code> custom routes (Anthropic-compatible or OpenAI-compatible).</p>
-<h3>Install</h3>
+<p>把本机 coding 平台的登录态和配置 key 导入 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>，不用再登一遍。</p>
+<p>扫描路径对齐 <a href="https://github.com/farion1231/cc-switch">CC Switch</a>：</p>
+<ul>
+<li><code>~/.cc-switch/cc-switch.db</code>（Claude / Codex / Gemini / OpenCode 供应商，含 DeepSeek、Kimi）</li>
+<li><code>~/.claude/settings.json</code> 与 macOS 钥匙串 <code>Claude Code-credentials</code></li>
+<li><code>~/.codex/auth.json</code></li>
+<li><code>~/.grok/auth.json</code>、<code>~/.grok/config.toml</code></li>
+<li><code>~/.config/opencode/opencode.json</code></li>
+<li><code>~/.gemini/.env</code></li>
+<li>进程环境变量</li>
+</ul>
+<p>安装：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:kam74515-boop/dsh-everything-oauth
 dsh web
 </code></pre>
-<p>Then <strong>Settings → Everything OAuth</strong>:</p>
+<p>打开 <strong>设置 → Everything OAuth</strong>：</p>
 <ol>
-<li><strong>Sources</strong> — select local logins / keys</li>
-<li><strong>Imported</strong> — enable only the models you want in the picker</li>
+<li><strong>来源列表</strong> — 勾选要导入的本机登录态 / key</li>
+<li><strong>导入配置</strong> — 只启用你要用的模型</li>
 </ol>
-<p>CLI:</p>
-<pre><code class="language-sh">dsh plugin --profile web exec dsh-everything-oauth status
-dsh plugin --profile web exec dsh-everything-oauth import live:codex-auth live:grok-auth
-</code></pre>
-<p>Source files are read-only. OAuth refresh later may rotate tokens and sign the original CLI out.</p>
-<p>Discoverable via the GitHub <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> topic.</p>
-<h3>License</h3>
-<p>Apache-2.0</p>
+<p>没导入、没启用的模型不会出现在对话的模型选择器。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/kam74515-boop/dsh-everything-oauth/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/kam74515-boop/dsh-everything-oauth/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -189,80 +189,80 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-security-audit/blob/main/README.en.md">English</a></p>
-<p>DSH 本机安全审计插件 —— 防御性、只读的安全审计：配置、凭据存储元数据、已安装插件来源、关键路径权限、会话文件结构与网络暴露面。输出脱敏、可复现、可定位的风险报告。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-security-audit/blob/main/README.md">中文</a></p>
+<p>DSH local security audit plugin — defensive, read-only security auditing: configuration, credential storage metadata, installed plugin provenance, key path permissions, session file structure, and network exposure surface. Outputs redacted, reproducible, and locatable risk reports.</p>
 <p><a href="https://github.com/omdsh-dev/dsh-security-audit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<p>仓库：<a href="https://github.com/omdsh-dev/dsh-security-audit">https://github.com/omdsh-dev/dsh-security-audit</a>（public）</p>
-<h3>动机</h3>
-<p>DSH 本地环境承载 API Key、token、会话内容和插件加载边界，误配置（服务监听公网、凭据文件权限过宽、插件来源不可信、会话文件结构异常）会造成真实风险。现有工具没有这个视角：</p>
+<p>Repository: <a href="https://github.com/omdsh-dev/dsh-security-audit">https://github.com/omdsh-dev/dsh-security-audit</a> (public)</p>
+<h3>Motivation</h3>
+<p>The local DSH environment holds API keys, tokens, session content, and the plugin loading boundary; misconfigurations (services listening on the public network, overly permissive credential file permissions, untrusted plugin sources, abnormal session file structures) create real risk. Existing tools do not have this perspective:</p>
 <ol>
-<li><strong><code>plugin-check</code> 只做结构/合规检查</strong>——不评估凭据暴露面、危险能力和路径逃逸</li>
-<li><strong><code>session-health</code> 只做健康诊断</strong>——不涉及来源可信度与安全风险裁定</li>
-<li><strong>手工排查不可复现</strong>——凭据位置、权限、监听端口、插件来源分散在多处，逐项人工检查极易遗漏且无法留档</li>
+<li><strong><code>plugin-check</code> only performs structural/compliance checks</strong> — it does not assess the credential exposure surface, dangerous capabilities, or path escape</li>
+<li><strong><code>session-health</code> only performs health diagnostics</strong> — it does not cover source trustworthiness or security risk adjudication</li>
+<li><strong>Manual inspection is not reproducible</strong> — credential locations, permissions, listening ports, and plugin sources are scattered across many places; item-by-item manual checks are easily missed and cannot be archived</li>
 </ol>
-<p>本插件以只读方式审计本机 DSH 环境并输出风险报告：<strong>不自动修复、不连接远程、不执行被审计插件、不把&quot;没读到&quot;当作&quot;安全&quot;</strong>。</p>
-<h3>安全模型（审计器自身的边界）</h3>
+<p>This plugin audits the local DSH environment read-only and outputs risk reports: <strong>does not auto-fix, does not connect to remote endpoints, does not execute audited plugins, and does not treat &quot;not read&quot; as &quot;safe&quot;</strong>.</p>
+<h3>Security Model (Boundaries of the Auditor Itself)</h3>
 <ul>
-<li><strong>只读</strong>：绝不修改/删除任何文件，绝不执行被审计插件的代码，绝不主动连接远程目标</li>
-<li><strong>秘密脱敏</strong>：疑似秘密只返回类型 / 长度 / 进程内随机 HMAC fingerprint / 路径 / 行号，<strong>完整值永不出现在 canonical 输出</strong>（设计级保证，非截断）</li>
-<li><strong>路径围栏</strong>：所有路径经 lstat → realpath → containment 检查；<code>root</code> 固定为进程启动时解析的 <code>$DSH_HOME</code>（或管理员声明的 allowedRoot），模型参数不能扩大读取范围</li>
-<li><strong>诚实判定</strong>：finding / pass / <code>skipped</code> / <code>error</code> 四态；<code>skipped</code> 与 <code>error</code> 不计为 pass（coverage 降为 <code>incomplete</code>）；<code>capability finding</code> 只提示人工确认、不裁定恶意</li>
-<li><strong>预算</strong>：<ul>
-<li>文件 ≤ 200、插件 ≤ 200、会话 ≤ 1,000、findings ≤ 1,000</li>
-<li>源码单文件 ≤ 1 MiB（累计 ≤ 64 MiB）；canonical 输出 ≤ 2 MiB</li>
-<li>单 action 10s / report 30s（deadline + AbortSignal 全程检查）</li>
+<li><strong>Read-only</strong>: never modifies/deletes any file, never executes the code of audited plugins, never proactively connects to remote targets</li>
+<li><strong>Secret redaction</strong>: suspected secrets only return type / length / in-process random HMAC fingerprint / path / line number; <strong>full values never appear in canonical output</strong> (a design-level guarantee, not truncation)</li>
+<li><strong>Path fencing</strong>: all paths pass lstat → realpath → containment checks; <code>root</code> is fixed to the <code>$DSH_HOME</code> resolved at process startup (or an admin-declared allowedRoot); model parameters cannot expand the read scope</li>
+<li><strong>Honest determination</strong>: four states — finding / pass / <code>skipped</code> / <code>error</code>; <code>skipped</code> and <code>error</code> do not count as pass (coverage drops to <code>incomplete</code>); <code>capability findings</code> only prompt for human confirmation, never adjudicate malice</li>
+<li><strong>Budgets</strong>:<ul>
+<li>files ≤ 200, plugins ≤ 200, sessions ≤ 1,000, findings ≤ 1,000</li>
+<li>source single file ≤ 1 MiB (cumulative ≤ 64 MiB); canonical output ≤ 2 MiB</li>
+<li>10s per action / 30s per report (deadline + AbortSignal checked throughout)</li>
 </ul>
 </li>
-<li>工具参数会记入会话日志，不要传入敏感数据</li>
+<li>Tool arguments are recorded in session logs; do not pass sensitive data</li>
 </ul>
-<h3>工具声明</h3>
-<p>注册 <code>security_audit</code> 工具（<code>@deepseek-ai/dsh-security-audit</code>，row id <code>security-audit</code>），统一输出 JSON 文本字符串：所有 action 输出 <code>{ tool, version, root, platform, ... }</code> 信封，扫描类 action 带 <code>verdict</code>/<code>riskVerdict</code>/<code>coverageVerdict</code> 与 <code>summary</code>。</p>
+<h3>Tool Declaration</h3>
+<p>Registers the <code>security_audit</code> tool (<code>@deepseek-ai/dsh-security-audit</code>, row id <code>security-audit</code>), uniformly outputting a JSON text string: every action outputs a <code>{ tool, version, root, platform, ... }</code> envelope; scan-type actions also carry <code>verdict</code>/<code>riskVerdict</code>/<code>coverageVerdict</code> and <code>summary</code>.</p>
 <table>
 <thead>
 <tr>
 <th>action</th>
-<th>作用</th>
-<th>输出</th>
+<th>Purpose</th>
+<th>Output</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>scan_config</code></td>
-<td>DSH 配置、profile、env/credentials 元数据（秘密存在性、权限、外部端点）</td>
-<td>findings 含 <code>secretKind</code>/<code>secretLength</code>/<code>fingerprint</code>，无明文</td>
+<td>DSH configuration, profiles, env/credentials metadata (secret presence, permissions, external endpoints)</td>
+<td>findings include <code>secretKind</code>/<code>secretLength</code>/<code>fingerprint</code>, no plaintext</td>
 </tr>
 <tr>
 <td><code>scan_plugins</code></td>
-<td>已安装插件来源、路径、patch、危险静态能力、install script、秘密文件</td>
-<td><code>capability</code> finding 标注人工确认</td>
+<td>Installed plugin provenance, paths, patches, dangerous static capabilities, install scripts, secret files</td>
+<td><code>capability</code> findings flagged for human confirmation</td>
 </tr>
 <tr>
 <td><code>scan_sessions</code></td>
-<td>会话目录权限、symlink 逃逸、zstd 帧结构（解压炸弹预算内）</td>
-<td>帧级问题定位到文件</td>
+<td>Session directory permissions, symlink escape, zstd frame structure (within decompression-bomb budgets)</td>
+<td>frame-level issues located to specific files</td>
 </tr>
 <tr>
 <td><code>scan_network</code></td>
-<td>监听配置、URL 分类、明文 HTTP、代理路由（不主动联网）</td>
-<td>状态为配置级推断（<code>unknown-listener-state</code> 明确标注）</td>
+<td>Listening configuration, URL classification, plaintext HTTP, proxy routing (no proactive networking)</td>
+<td>status is configuration-level inference (<code>unknown-listener-state</code> explicitly flagged)</td>
 </tr>
 <tr>
 <td><code>report</code></td>
-<td>汇总四类扫描</td>
-<td><code>riskVerdict</code> + <code>coverageVerdict</code> 双维度 + findings 汇总</td>
+<td>Summarizes the four scan categories</td>
+<td><code>riskVerdict</code> + <code>coverageVerdict</code> dual dimensions + findings summary</td>
 </tr>
 <tr>
 <td><code>rules</code></td>
-<td>规则目录与适用平台</td>
-<td>规则 code / severity / critical / platforms</td>
+<td>Rule catalog and applicable platforms</td>
+<td>rule code / severity / critical / platforms</td>
 </tr>
 </tbody></table>
 <table>
 <thead>
 <tr>
-<th>参数</th>
-<th>类型</th>
-<th>必填</th>
-<th>说明</th>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -275,34 +275,34 @@ footer p+p{margin-top:.5rem}
 <td><code>root</code></td>
 <td>string</td>
 <td></td>
-<td>root 覆盖；必须等于 <code>$DSH_HOME</code> 或管理员声明的 allowedRoot</td>
+<td>root override; must equal <code>$DSH_HOME</code> or an admin-declared allowedRoot</td>
 </tr>
 <tr>
 <td><code>profile</code></td>
 <td>string</td>
 <td></td>
-<td>限定单个 profile（<code>^[A-Za-z0-9._-]{1,64}$</code>，不接受路径）</td>
+<td>Restrict to a single profile (<code>^[A-Za-z0-9._-]{1,64}$</code>, paths not accepted)</td>
 </tr>
 <tr>
 <td><code>strict</code></td>
 <td>boolean</td>
 <td></td>
-<td>strict 模式：medium finding 也判 fail。默认 <code>false</code></td>
+<td>strict mode: medium findings also fail. Default <code>false</code></td>
 </tr>
 <tr>
 <td><code>detail</code></td>
 <td>boolean</td>
 <td></td>
-<td>详细输出。默认 <code>true</code>；敏感证据始终脱敏</td>
+<td>Detailed output. Default <code>true</code>; sensitive evidence is always redacted</td>
 </tr>
 <tr>
 <td><code>includeSourceScan</code></td>
 <td>boolean</td>
 <td></td>
-<td>启用插件静态源码能力扫描（更慢、更多误报）。默认 <code>false</code></td>
+<td>Enable static source-code capability scanning of plugins (slower, more false positives). Default <code>false</code></td>
 </tr>
 </tbody></table>
-<h3>输出示例</h3>
+<h3>Example Output</h3>
 <pre><code class="language-json">{&quot;tool&quot;:&quot;security_audit&quot;,&quot;version&quot;:1,&quot;root&quot;:&quot;$DSH_HOME&quot;,&quot;platform&quot;:&quot;win32&quot;,&quot;strict&quot;:false,
  &quot;verdict&quot;:&quot;fail&quot;,&quot;riskVerdict&quot;:&quot;fail&quot;,&quot;coverageVerdict&quot;:&quot;complete&quot;,
  &quot;summary&quot;:{&quot;critical&quot;:0,&quot;high&quot;:1,&quot;medium&quot;:0,&quot;low&quot;:0},
@@ -311,61 +311,61 @@ footer p+p{margin-top:.5rem}
                &quot;fingerprint&quot;:&quot;b99e1887d861d7be&quot;,&quot;redacted&quot;:true}}],
  &quot;truncated&quot;:false}
 </code></pre>
-<h3>设计要点</h3>
+<h3>Design Highlights</h3>
 <ul>
-<li><strong>脱敏协议</strong>：疑似秘密（token/key/private key/密码）在读取后立即以进程内随机密钥做 HMAC fingerprint，原始值只用于指纹计算，不进 canonical 输出；<code>redacted:true</code> 是协议字段而非截断提示</li>
-<li><strong>路径围栏</strong>：所有路径 lstat（拒绝 symlink）→ realpath → containment 三重校验；<code>root</code> 参数不能扩大读取范围（与启动时解析的 <code>$DSH_HOME</code> 或 allowedRoot 严格相等）</li>
-<li><strong>诚实判定</strong>：<code>skipped</code>（平台不支持/无权限）与 <code>error</code> 不计为 pass，coverage 降为 <code>incomplete</code>；<code>capability finding</code>（源码静态检测到 eval/网络/进程能力）只提示人工确认，不裁定恶意</li>
-<li><strong>解压炸弹防护</strong>：会话 zstd 扫描按帧预算（单帧大小、累计展开比）截断，不整包解压</li>
-<li><strong>只读保证</strong>：无写文件路径、无子进程执行（源码能力扫描只做静态正则，不运行被审计插件）、无网络连接（scan_network 只解析配置与分类 URL，从不探测）</li>
-<li><strong>可复现输出</strong>：无时间戳、无随机路径顺序（稳定排序）；超限截断后置 <code>truncated</code>；canonical 输出 ≤ 2 MiB（契约断言）</li>
+<li><strong>Redaction protocol</strong>: suspected secrets (token/key/private key/password) are immediately HMAC-fingerprinted with an in-process random key after reading; the raw value is used only for fingerprint computation and never enters canonical output; <code>redacted:true</code> is a protocol field, not a truncation hint</li>
+<li><strong>Path fencing</strong>: all paths go through a three-step check — lstat (rejects symlinks) → realpath → containment; the <code>root</code> parameter cannot expand the read scope (strictly equal to the <code>$DSH_HOME</code> or allowedRoot resolved at startup)</li>
+<li><strong>Honest determination</strong>: <code>skipped</code> (unsupported platform/no permission) and <code>error</code> do not count as pass, coverage drops to <code>incomplete</code>; <code>capability findings</code> (static detection of eval/network/process capabilities in source) only prompt human confirmation, never adjudicate malice</li>
+<li><strong>Decompression-bomb protection</strong>: session zstd scanning truncates by frame budgets (single-frame size, cumulative expansion ratio); never decompresses whole packages</li>
+<li><strong>Read-only guarantee</strong>: no file-writing paths, no subprocess execution (source capability scanning is static regex only, never runs audited plugins), no network connections (<code>scan_network</code> only parses configuration and classifies URLs, never probes)</li>
+<li><strong>Reproducible output</strong>: no timestamps, no random path ordering (stable sorting); <code>truncated</code> is set when limits are exceeded; canonical output ≤ 2 MiB (contract assertion)</li>
 </ul>
-<h3>构建与测试</h3>
+<h3>Build and Test</h3>
 <pre><code class="language-bash"># 构建（仅需 monorepo 的 tsc）
 node &lt;monorepo&gt;/node_modules/typescript/bin/tsc -p tsconfig.json
 
 # 测试（vitest，112 个用例：redact/paths/config/plugins/sessions/network/permissions/report/register）
 node &lt;monorepo&gt;/node_modules/vitest/vitest.mjs run tests
 </code></pre>
-<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
-<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 的隔离 consumer 中完成全链路验证：</p>
+<h3>npm 0.1.0-rc.6 Compatibility (verified)</h3>
+<p>This plugin has been migrated to the npm 0.1.0-rc.6 dependency line, and full end-to-end verification was completed in an isolated consumer of <code>@deepseek-ai/dsh@0.1.0-rc.6</code>:</p>
 <ul>
-<li><strong>类型/运行时</strong>：<code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code>（peer）；不再依赖 unscoped <code>cordis</code></li>
-<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
-<li><strong>消费验证</strong>：tarball 装入 rc.6 consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
-<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+<li><strong>Types/runtime</strong>: <code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code> (peer); no longer depends on unscoped <code>cordis</code></li>
+<li><strong>Standalone build</strong>: <code>npm install</code> (devDependencies self-contain typescript/vitest/@types/node) → <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>Consumption verification</strong>: tarball loaded into an rc.6 consumer → the plugin&#39;s row appears in <code>dsh --profile compat --dump-config</code> → real tool registration and execution passed</li>
+<li><strong>Startup method</strong>: <code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code> (lib production mode; do not <code>install -g</code> globally)</li>
 </ul>
-<h3>安装</h3>
-<p>DSH 0.1.0-rc.6（npm）下，插件通过 <code>dsh plugin --profile &lt;profile&gt; add &lt;source&gt;</code> 安装，source 支持 GitHub 仓库或 npm pack tarball。</p>
-<h4>从 GitHub 安装（推荐）</h4>
+<h3>Installation</h3>
+<p>Under DSH 0.1.0-rc.6 (npm), plugins are installed via <code>dsh plugin --profile &lt;profile&gt; add &lt;source&gt;</code>; source is a GitHub repository or an npm pack tarball.</p>
+<h4>Install from GitHub (Recommended)</h4>
 <pre><code class="language-sh"># 交互式（web）profile
 dsh plugin --profile web add github:omdsh-dev/dsh-security-audit
 # 一次性任务（headless）profile —— dsh run 默认使用 headless
 dsh plugin --profile headless add github:omdsh-dev/dsh-security-audit
 </code></pre>
-<h4>从 npm pack tarball 安装</h4>
-<p><code>npm pack</code> 产物可直接作为 source 安装：</p>
+<h4>Install from npm pack tarball</h4>
+<p>The <code>npm pack</code> artifact can be installed directly as source:</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-security-audit-*.tgz
 </code></pre>
-<p>包内 <code>dsh.bundle.patch</code> 会在安装后自动把插件加入 profile 的 layer stack（row id：<code>security-audit</code>）。插件缺失的 peer 依赖（<code>@deepseek-ai/cordis</code>、<code>@deepseek-ai/dsh-tools</code>、<code>@deepseek-ai/dsh-invariants</code>）由 profile 的 healed <code>profiles/node_modules</code> 回退安装提供。</p>
+<p>The bundled <code>dsh.bundle.patch</code> automatically adds the plugin to the profile&#39;s layer stack after installation (row id: <code>security-audit</code>). The plugin&#39;s missing peer dependencies (<code>@deepseek-ai/cordis</code>, <code>@deepseek-ai/dsh-tools</code>, <code>@deepseek-ai/dsh-invariants</code>) are provided by the profile&#39;s healed <code>profiles/node_modules</code> fallback installation.</p>
 <blockquote>
-<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。Windows 路径使用正斜杠（<code>C:/...</code>）。</p>
+<p>⚠️ web and headless are <strong>different profiles</strong>: installing into web does not automatically cover headless; <code>dsh run</code> uses the headless profile by default. Use forward slashes for Windows paths (<code>C:/...</code>).</p>
 </blockquote>
-<h4>验证安装</h4>
+<h4>Verifying the Installation</h4>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep security-audit
 </code></pre>
-<h4>运行验证</h4>
+<h4>Runtime Verification</h4>
 <pre><code class="language-sh">dsh run &quot;运行 security_audit 的 report 动作，检查本机 DSH 环境安全风险&quot;
 </code></pre>
-<h4>旧场景：monorepo / 本地路径安装</h4>
-<p>monorepo 方式已标注为旧场景（本地 junction/symlink、手动编辑 profile 层、不支持 GitHub/tarball source 的旧快照）：</p>
+<h4>Legacy Scenario: monorepo / Local-Path Installation</h4>
+<p>The monorepo approach is now a legacy scenario (local junction/symlink, manually editing the profile layer, legacy snapshots without GitHub/tarball source support):</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;C:/path/to/dsh-security-audit&quot;
 </code></pre>
-<h3>许可</h3>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-security-audit/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-security-audit/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

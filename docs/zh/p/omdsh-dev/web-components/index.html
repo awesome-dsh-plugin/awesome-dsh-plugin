@@ -189,29 +189,28 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/omdsh-dev/web-components/blob/main/README.zh.md">中文</a></p>
-<p>The DSH Web Component adapter as an installable profile bundle. It exposes a browser-side <code>webComponent</code> service that mounts registered slot trees as native Custom Elements, while keeping slot ownership, typed descriptors, property/event bindings, DOM outlets, and incarnation lifetimes behind the adapter boundary.</p>
-<h3>Repository shape</h3>
-<pre><code class="language-text">package.json              # plugin package and dsh.bundle/dshClient manifests
-cordis.patch.yml          # browser opt-in profile layer
+<p><a href="https://github.com/omdsh-dev/web-components/blob/main/README.md">English</a> | 中文</p>
+<p>DSH Web Component adapter 的可安装 profile 组合包。它提供浏览器侧 <code>webComponent</code> service，把已注册的 slot tree 挂载为原生 Custom Elements；slot 所有权、typed descriptor、属性/事件绑定、DOM outlet 和 incarnation 生命周期都由 adapter 边界负责。</p>
+<h3>仓库结构</h3>
+<pre><code class="language-text">package.json              # 插件包以及 dsh.bundle/dshClient 清单
+cordis.patch.yml          # 浏览器 opt-in profile 层
 src/index.ts              # host loader entry
-src/client/               # browser implementation
+src/client/               # 浏览器实现
 src/invariant.ts          # package invariant companion
-lib/                      # generated host/client artifacts
-legacy/                   # source-compatible host integration patch for older DSH snapshots
-docs/                     # detailed protocol reference
-tests/                    # unit, composition, and terminal-free browser tests
+lib/                      # 生成的 host/client 产物
+legacy/                   # 旧 DSH 快照的宿主接线补丁，仅作迁移资料
+docs/                     # 详细协议文档
+tests/                    # 单元、组合和无浏览器进程测试
 </code></pre>
-<h3>Bundle behavior</h3>
-<p>Installing the bundle adds a disabled <code>web-component</code> row. A Web profile enables it explicitly after the slot host and browser runtime are present:</p>
+<p>组合包安装后加入一个默认禁用的 <code>web-component</code> 行。Web profile 在 slot host 和 browser runtime 都存在时显式启用：</p>
 <pre><code class="language-yaml">- id: web-component
   disabled: false
   name: &#39;@deepseek-ai/dsh-client-web-component&#39;
 </code></pre>
-<p>The bundle layer only composes the plugin row. Slot host APIs, descriptor types, browser runtime, and the React renderer seam must come from the DSH version selected by the profile. The previous host-source integration patch is retained under <code>legacy/</code> for migration of older DSH snapshots and is not part of the bundle package contract.</p>
-<p>The client module never exposes a live React tree or raw DOM context to feature plugins. It accepts plain descriptors, resolves declared values from the incarnation context, assigns JavaScript properties rather than serialized attributes, and reports CustomEvent details through declared handlers.</p>
-<h3>Development</h3>
-<p>A full typecheck expects a sibling DSH checkout:</p>
+<p>新的 bundle 层只负责组合插件行。Slot host API、descriptor 类型、browser runtime 和 React renderer seam 必须由 profile 所用的 DSH 版本提供；旧宿主源码补丁保留在 <code>legacy/</code>，不属于 bundle 契约。</p>
+<p>客户端不会向 feature plugin 暴露 live React tree 或原始 DOM context。它使用 plain descriptor，在 incarnation context 中解析声明值，通过 JavaScript property 而不是序列化 attribute 写入元素，并通过声明的 handler 返回 CustomEvent detail。</p>
+<h3>开发</h3>
+<p>完整 typecheck 需要 sibling DSH checkout：</p>
 <pre><code class="language-text">~/git/deepseek-harness
 ~/git/web-components
 </code></pre>
@@ -220,18 +219,16 @@ pnpm run typecheck
 pnpm test
 pnpm run build
 </code></pre>
-<p>The <code>prepare</code> script builds the host and browser entries directly from <code>src/</code>, so a Git install does not require sibling project references. pnpm 10 may ask the profile to allow the package&#39;s prepare script; only approve a pinned, trusted checkout.</p>
-<h3>Model Experience</h3>
-<p>This package contributes no model-visible text, tools, or prompt sections. It only projects browser slot state and Custom Element events; model-visible behavior remains owned by the DSH services rendered through the slots.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<p><code>prepare</code> 直接从 <code>src/</code> 构建 host 和 browser entry，因此 Git 安装不需要 sibling project references。pnpm 10 可能要求 profile 允许 prepare 脚本；只应批准固定且可信的 checkout。</p>
+<h3>已知限制</h3>
 <ul>
-<li><code>CustomElementRegistry</code> definitions are page-lifetime resources and cannot be unregistered; the adapter rejects constructor replacement.</li>
-<li>The bundle does not provide a DOM or React renderer; the profile must already mount the DSH slot host and browser runtime.</li>
-<li>Older DSH snapshots require the compatibility patch in <code>legacy/</code> because a bundle cannot add missing host source APIs; the current <code>master</code> also predates the Slots election/incarnation APIs, so full typecheck requires the compatible Slots change (for example <code>d97d6a1e</code>).</li>
+<li><code>CustomElementRegistry</code> 定义是页面生命周期资源，无法注销；adapter 会拒绝替换 constructor。</li>
+<li>组合包不提供 DOM 或 React renderer，profile 必须先挂载 DSH slot host 和 browser runtime。</li>
+<li>旧 DSH 快照需要使用 <code>legacy/</code> 中的兼容补丁，因为 bundle 不能新增缺失的宿主源码 API；当前 <code>master</code> 也还没有 Slots election/incarnation API，完整 typecheck 需要兼容的 Slots 改动（例如 <code>d97d6a1e</code>）。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/web-components/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/web-components/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

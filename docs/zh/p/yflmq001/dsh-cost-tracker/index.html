@@ -190,88 +190,75 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <blockquote>
-<p>🇨🇳 <a href="https://github.com/yflmq001/dsh-cost-tracker/blob/main/README.zh.md">中文说明</a></p>
+<p>🇬🇧 <a href="https://github.com/yflmq001/dsh-cost-tracker/blob/main/README.md">English</a></p>
 </blockquote>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
-<p>Token cost tracking for DeepSeek Harness, with per-model configurable pricing and
-peak/off-peak rates.</p>
-<p><img src="https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshot.jpg" alt="dsh-cost-tracker: per-session cost bar and the /cost command"></p>
-<h3>What it does</h3>
+<p>DeepSeek Harness 的 Token 成本追踪插件：按模型配置价格，支持缓存命中/未命中分桶计费，以及高峰/低谷时段价格。</p>
+<p><img src="https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshot.jpg" alt="dsh-cost-tracker：会话成本条与 /cost 命令"></p>
+<h3>功能</h3>
 <ul>
-<li>Prices every finalized LLM call (<code>assistant/message</code> usage) against a
-per-model pricing table you configure — cache-hit / cache-miss input, output,
-and optional peak-window rates.</li>
-<li>Publishes a per-session <code>cost</code> projection (total / peak / off-peak / per-model),
-consumed by the Web UI to show a live session cost readout.</li>
-<li>Flags calls that land in a configured peak window.</li>
-<li>Models without a pricing entry are surfaced as &quot;unconfigured&quot; with a
-placeholder, so you know to add them.</li>
+<li>对每一次 LLM 调用（<code>assistant/message</code> usage）按你配置的模型价格表计费 —— 区分缓存命中/未命中输入、输出，以及可选的高峰时段价格。</li>
+<li>发布 per-session 的 <code>cost</code> 投影（总额 / 高峰 / 低谷 / 按模型），Web UI 据此显示实时会话成本条。</li>
+<li>标记落在高峰时段的调用。</li>
+<li>未配置价格的模型会显示「未配置」占位提示，提醒你补价。</li>
 </ul>
-<h3>Installation</h3>
-<p>Install into a dsh profile straight from GitHub — the plugin ships a
-<code>dsh.bundle</code> layer, so <code>dsh plugin add</code> enables it automatically:</p>
+<h3>安装</h3>
+<p>从 GitHub 直接安装到 dsh profile —— 插件自带 <code>dsh.bundle</code> 层，<code>dsh plugin add</code> 装完即自动启用：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:yflmq001/dsh-cost-tracker
 </code></pre>
-<p>Pricing starts empty (<code>models: {}</code>); fill in your models under the plugin&#39;s
-<code>config</code> (see below). To override defaults, add a <code>cost-tracker</code> row to the
-profile&#39;s own <code>cordis.patch.yml</code> — later layers win by row id.</p>
-<p>The cross-session bill persists through dsh&#39;s storage domain; a profile
-without a storage backend keeps the bill in memory only.</p>
-<h3>Configuration</h3>
-<p>Pricing lives under the plugin&#39;s config (Schemastery-validated). All prices are
-currency units per <strong>million tokens</strong>; you fill them in manually (no scraping).</p>
+<p>价格初始为空（<code>models: {}</code>），在插件的 <code>config</code> 里填模型价格（见下文）。要覆盖默认值，在 profile 自己的 <code>cordis.patch.yml</code> 里加一行 <code>cost-tracker</code>——后应用的层按行 id 胜出。</p>
+<p>跨会话账单通过 dsh 的 storage domain 持久化；没有配置 storage 后端的 profile 只会在内存中记账。</p>
+<h3>配置</h3>
+<p>价格在插件的 <code>config</code> 里配置（Schemastery 校验）。所有价格单位是<strong>元 / 百万 token</strong>，手动填写（不自动抓取）。</p>
 <pre><code class="language-yaml">- name: &#39;dsh-cost-tracker&#39;
   config:
     models:
       deepseek-v4-flash:
-        inputMiss: 1.0        # cache-miss input
-        inputHit: 0.02        # cache-hit input (omit if no cache tier)
-        output: 2.0
-        peak:                 # peak tier: hours + toggle + prices
-          hours: [&quot;09:00-12:00&quot;, &quot;14:00-18:00&quot;]   # Beijing time
-          enabled: true       # false = peak off (base rates always); omit = on
+        inputMiss: 1.0        # 输入·未命中缓存
+        inputHit: 0.02        # 输入·命中缓存（无缓存档可省略）
+        output: 2.0           # 输出
+        peak:                 # 高峰档：时段 + 开关 + 价格
+          hours: [&quot;09:00-12:00&quot;, &quot;14:00-18:00&quot;]   # 北京时间
+          enabled: true       # false = 关闭高峰价（一直按基础价）；省略 = 开启
           inputMiss: 3.0
           inputHit: 0.10
           output: 9.0
-      gpt-4o:                 # any model the harness can reach
+      gpt-4o:                 # 任何 harness 能访问的模型
         inputMiss: 2.5
         output: 10.0
 </code></pre>
-<h3>Session projection</h3>
-<p>The plugin registers the <code>cost</code> projection:</p>
+<p>字段说明：</p>
+<ul>
+<li><code>inputMiss</code> 输入未命中缓存价、<code>inputHit</code> 输入命中缓存价、<code>output</code> 输出价，单位「元 / 每百万 token」</li>
+<li><code>peak</code> 块可整块删掉（不配高峰价就一直按基础价）</li>
+<li><code>peak.hours</code> 高峰时段（北京时间 <code>HH:MM-HH:MM</code>）</li>
+<li><code>peak.enabled</code> 开关：<code>false</code> 关闭高峰价，<code>true</code> 或省略则开启</li>
+<li>要加新模型，直接在 <code>models:</code> 下加一个 key，key 必须和实际调用的模型名完全一致</li>
+</ul>
+<h3>会话投影</h3>
+<p>插件注册 <code>cost</code> 投影：</p>
 <pre><code class="language-ts">{
   totalCost, peakCost, offpeakCost,
   callCount, unconfiguredCalls, unconfiguredModels,
   byModel: { [model]: { inputHit, inputMiss, output, total } },
 }
 </code></pre>
-<p>Cache writes are priced at the miss rate (providers bill the write at the miss
-tier; the written tokens become cache hits on a later call).</p>
-<h3>Billing correctness</h3>
-<p>Two choices keep the numbers honest:</p>
+<p>缓存写入按未命中价计费（提供方按未命中档计写入；写入的 token 在后续调用中变成缓存命中）。</p>
+<h3>计费正确性</h3>
+<p>两处设计保证数字不掺水：</p>
 <ul>
-<li><strong>Cache writes are billed at the miss rate, not the hit rate.</strong> Providers
-charge cache writes at the cache-miss input tier (e.g. DeepSeek $0.14/M vs
-$0.0028/M hit) — pricing a write as a hit undercounts by ~50x whenever a
-session writes fresh context. Some cost plugins fold cache writes into the
-hit bucket; this plugin does not.</li>
-<li><strong>Unknown models are never silently priced.</strong> A model with no pricing entry
-is surfaced as &quot;unconfigured&quot; with a placeholder in the projection and UI,
-so a guessed default can&#39;t hide in your bill. You add the price, or you see
-the gap.</li>
+<li><strong>缓存写入按未命中价计，不按命中价计。</strong> 提供方按「缓存未命中输入档」收取写入费用（如 DeepSeek 未命中 $0.14/M，命中仅 $0.0028/M）——把写入算作命中会在写入新上下文时低估约 50 倍。部分成本插件把缓存写入并入命中桶，本插件不这么做。</li>
+<li><strong>未知模型绝不静默计价。</strong> 没有价格条目的模型会以「未配置」占位符出现在投影与 UI 中，而不是悄悄套用默认价——账单里藏不进猜测价。要么补价，要么看见缺口。</li>
 </ul>
-<h3>Known Limitations and Deferred Work</h3>
+<h3>已知限制与待办</h3>
 <ul>
-<li>Per-session cost is a projection over the durable log (replayed); the
-cross-session global bill and <code>/cost</code> command are available.</li>
-<li>Non-DeepSeek models need their pricing filled in manually; there is no
-automatic price lookup.</li>
-<li>Developer preview: <code>assistant/message.usage</code> is absent when the adapter
-reports no accounting, and the session format has no compatibility promise.</li>
+<li>每会话成本是对持久化日志（重放）的投影；跨会话全局账单和 <code>/cost</code> 命令已可用。</li>
+<li>非 DeepSeek 模型需要手动填价，没有自动价格查询。</li>
+<li>开发预览：当 adapter 不报账时 <code>assistant/message.usage</code> 缺失，且会话格式不保证兼容。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/yflmq001/dsh-cost-tracker/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/yflmq001/dsh-cost-tracker/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

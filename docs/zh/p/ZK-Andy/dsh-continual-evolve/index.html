@@ -189,265 +189,232 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/README.zh.md">中文</a> | English</p>
+<p><a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/README.md">English</a> | 中文</p>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/actions/workflows/ci.yml"><img src="https://github.com/ZK-Andy/dsh-continual-evolve/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/package.json"><img src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933" alt="Node"></a>
 <a href=""><img src="https://img.shields.io/badge/tests-112%20passing-brightgreen" alt="Tests"></a>
 <a href=""><img src="https://img.shields.io/badge/status-all%20phases%20complete-ff69b4" alt="Status"></a></p>
-<p>Continual self-evolution for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>: a versioned, auditable, rollback-safe layer of harness state — prompt notes, memories, skills, and subagent specs — refined from session trajectories.</p>
+<p><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（<code>dsh</code>）的持续自进化插件：一套<strong>版本化、可审计、可回滚</strong>的 harness 状态层——提示词补充、记忆、技能、子代理规格——从会话轨迹中沉淀而来。</p>
 <blockquote>
-<p><strong>Status: all phases complete.</strong> Phase 2 adds a real system-prompt section:
-<code>prompt</code> entries are injected as additive prompt notes and <code>subagent</code>
-entries as reusable delegation specs — both capped (6/kind, 180 chars),
-inherited by subagents through the parent-session chain, and dropped
-entirely when the store is empty (zero token cost). On top of that,
-Phase 3&#39;s evaluation matrix runner (host-plane <code>subagents</code>, frozen
-runtime, structured-output cells) feeds a code-owned scoreboard; the
-non-regressive acceptance rule decides accept/reject with no model-written
-aggregates.</p>
+<p><strong>状态：全部阶段完成。</strong> Phase 2 补齐了真实系统提示词段：<code>prompt</code> 条目注入为 additive 提示词补充、<code>subagent</code> 条目注入为可复用委派规格——均封顶（每类 6 条、180 字符）、沿父会话链被子代理继承、store 为空时整段丢弃（零 token 成本）。之上，Phase 3 的评估矩阵执行器（host 平面 <code>subagents</code>、冻结运行时、结构化输出单元）驱动代码所有的计分板；非退化接受规则决定接受/拒绝，模型从不直接写聚合值。</p>
 </blockquote>
-<h3>Background</h3>
-<p>This project started as a research question: <em>can a harness improve itself,
-and what would a production-grade version look like?</em> Three lines of evidence
-shaped the answer:</p>
+<h3>背景</h3>
+<p>这个项目始于一个研究问题：<em>harness 能自我改进吗？生产级版本长什么样？</em> 三条证据线塑造了答案：</p>
 <ul>
-<li><strong>penguin-harness</strong> demonstrated the concept (benchmark → evaluate →
-optimize → accept/rollback) but with <strong>zero code-level enforcement</strong> — every
-guarantee was a prompt contract. Its report (<code>docs/research/</code>) became the
-hardening checklist this project implements.</li>
-<li><strong>prime-agent <code>/refine</code></strong> proved the engineering shape: versioned harness
-entries, atomic persistence, optimistic concurrency, inverse-op rollback.
-This package is an original implementation of that shape on the DSH plugin
-surface.</li>
-<li>Academic work (Self-Harness, AHE, HarnessOpt-Bench) supplied the discipline:
-frozen evaluation runtime, code-owned aggregation, non-regressive
-acceptance.</li>
+<li><strong>penguin-harness</strong> 证明了概念（benchmark → 评估 → 优化 → 接受/回滚），但<strong>代码层零强制</strong>——所有保证都是提示词契约。它的研究报告（<code>docs/research/</code>）成了本项目的硬化清单。</li>
+<li><strong>prime-agent <code>/refine</code></strong> 证明了工程形态：版本化 harness 条目、原子持久化、乐观并发、逆操作回滚。本包是在 DSH 插件表面上对该形态的原创实现。</li>
+<li>学术工作（Self-Harness、AHE、HarnessOpt-Bench）提供了纪律：冻结评估运行时、代码所有聚合、非退化接受。</li>
 </ul>
-<p>The result: <strong>the model proposes, the code guarantees.</strong> Every mechanical
-safety property (schema validation, snapshots, versioning, audit trail,
-acceptance decisions) is enforced in code — never by asking the model to
-behave.</p>
-<h3>Why</h3>
-<p>Agents accumulate reusable experience in every session — repeated failures, durable facts, reusable procedures — and then forget it at the next turn or session. This plugin makes that experience first-class persistent state:</p>
+<p>结果：<strong>模型提议，代码保证。</strong> 每一项机械化安全属性（schema 校验、快照、版本、审计、接受决策）都由代码强制——从不要求模型自觉守规矩。</p>
+<h3>为什么</h3>
+<p>Agent 在每个会话里积累可复用经验——重复失败、持久事实、可复用流程——然后在下个回合或下个会话忘掉。本插件把这些经验变成一等公民的持久状态：</p>
 <ul>
-<li><strong>Versioned entries</strong> keyed by kind (<code>prompt</code> / <code>memory</code> / <code>skill</code> / <code>subagent</code>), each with a recorded provenance and version</li>
-<li><strong>Evidence trail</strong>: every refinement appends an event carrying <code>trigger / changes / evidence / outcome</code></li>
-<li><strong>Deterministic rollback</strong>: inverse edits are generated from applied results — no LLM re-guessing</li>
-<li><strong>Code-enforced safety</strong>, not prompt discipline: schema validation, atomic writes, corrupt-file degrade, optimistic concurrency, immutable base system prompt</li>
-<li><strong>Local (session) and global (cross-session) scopes</strong> with merge semantics</li>
+<li><strong>版本化条目</strong>：按 <code>prompt</code> / <code>memory</code> / <code>skill</code> / <code>subagent</code> 分键，每条带来源与版本</li>
+<li><strong>证据链</strong>：每次进化追加一条携带 <code>trigger / changes / evidence / outcome</code> 的事件</li>
+<li><strong>确定性回滚</strong>：逆操作由已应用的结果生成——不需要 LLM 再猜</li>
+<li><strong>代码强制安全</strong>，而非提示词纪律：schema 校验、原子写、损坏降级、乐观并发、基础系统提示词不可变</li>
+<li><strong>局部（会话内）与全局（跨会话）双作用域</strong>，带合并语义</li>
 </ul>
-<h3>Design provenance</h3>
-<p>Inspired by three bodies of work (see <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/design.md"><code>docs/design.md</code></a>):</p>
+<h3>设计来源</h3>
+<p>受三方面工作启发（见 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/design.md"><code>docs/design.md</code></a>）：</p>
 <ul>
-<li><strong>prime-agent <code>/refine</code></strong> (MIT): the state model, atomic persistence, optimistic concurrency, per-edit validation, and inverse-op rollback this package implements — annotated reference source in <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/research/prime-agent-refinement.ts"><code>docs/research/prime-agent-refinement.ts</code></a>. The code here is an original implementation, written for the DSH plugin surface.</li>
-<li><strong>penguin-harness</strong> (Apache-2.0): the benchmark-driven evolution loop — research report in <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/research/penguin-harness-self-evolution.md"><code>docs/research/penguin-harness-self-evolution.md</code></a>; its prompt-only contracts are the anti-pattern this package hardens.</li>
-<li>Academic: Self-Harness (arXiv 2606.09498), AHE (arXiv 2604.25850), HarnessOpt-Bench (arXiv 2608.06301).</li>
+<li><strong>prime-agent <code>/refine</code></strong>（MIT）：本包实现的状态模型、原子持久化、乐观并发、逐条校验与逆操作回滚——参考源码在 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/research/prime-agent-refinement.ts"><code>docs/research/prime-agent-refinement.ts</code></a>。代码为原创实现，面向 DSH 插件表面编写。</li>
+<li><strong>penguin-harness</strong>（Apache-2.0）：benchmark 驱动的进化循环——研究报告在 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/research/penguin-harness-self-evolution.md"><code>docs/research/penguin-harness-self-evolution.md</code></a>；其&quot;纯提示词契约&quot;正是本包要硬化的反面教材。</li>
+<li>学术：Self-Harness（arXiv 2606.09498）、AHE（arXiv 2604.25850）、HarnessOpt-Bench（arXiv 2608.06301）。</li>
 </ul>
-<h3>Tech stack</h3>
+<h3>技术栈</h3>
 <table>
 <thead>
 <tr>
-<th>Layer</th>
-<th>Choice</th>
+<th>层</th>
+<th>选择</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Language</td>
-<td>TypeScript (strict, ES2024, ESM)</td>
+<td>语言</td>
+<td>TypeScript（strict、ES2024、ESM）</td>
 </tr>
 <tr>
-<td>Runtime</td>
-<td>Node <code>^22.19.0 || &gt;=24.0.0</code> (matches DSH)</td>
+<td>运行时</td>
+<td>Node <code>^22.19.0 || &gt;=24.0.0</code>（与 DSH 一致）</td>
 </tr>
 <tr>
-<td>Plugin seam</td>
-<td><code>@deepseek-ai/cordis</code> (<code>name</code> / <code>apply</code> / <code>inject</code> entry)</td>
+<td>插件接缝</td>
+<td><code>@deepseek-ai/cordis</code>（<code>name</code> / <code>apply</code> / <code>inject</code> 入口）</td>
 </tr>
 <tr>
-<td>Package manager</td>
-<td>pnpm (DSH ecosystem standard)</td>
+<td>包管理</td>
+<td>pnpm（DSH 生态标准）</td>
 </tr>
 <tr>
-<td>Build</td>
-<td><code>tsc</code> → <code>lib/</code> (main <code>lib/index.js</code>, types <code>lib/index.d.ts</code>)</td>
+<td>构建</td>
+<td><code>tsc</code> → <code>lib/</code>（main <code>lib/index.js</code>，types <code>lib/index.d.ts</code>）</td>
 </tr>
 <tr>
-<td>Tests</td>
+<td>测试</td>
 <td>Vitest</td>
 </tr>
 <tr>
 <td>Lint</td>
-<td>oxlint (DSH official repo convention)</td>
+<td>oxlint（DSH 官方仓库惯例）</td>
 </tr>
 <tr>
 <td>License</td>
 <td>MIT</td>
 </tr>
 </tbody></table>
-<h3>Project layout</h3>
+<h3>项目结构</h3>
 <pre><code>dsh-continual-evolve/
 ├── package.json          # exports / files / engines / scripts + dsh.bundle manifest
-├── cordis.patch.yml      # bundle patch (dsh plugin add activates on install)
+├── cordis.patch.yml      # bundle patch（dsh plugin add 安装即激活）
 ├── tsconfig.json / .oxlintrc.json / .editorconfig / .gitignore
 ├── LICENSE / README.md / README.zh.md
 ├── docs/
-│   ├── design.md               # full design doc (incl. hardening matrix)
-│   └── research/               # penguin-harness report + prime-agent reference source
+│   ├── design.md               # 完整设计文档（含硬化对照表）
+│   └── research/               # penguin 研究报告 + prime-agent 参考源码
 ├── src/
-│   ├── index.ts          # cordis plugin entry (service mount + wiring)
-│   ├── types.ts          # HarnessState / entry / edit / result types
-│   ├── state.ts          # atomic persistence, corrupt degrade, merge, concurrency
-│   ├── validate.ts       # code-enforced edit validation
-│   ├── apply.ts          # per-edit apply pass with optimistic locking
-│   ├── rollback.ts       # deterministic inverse-op rollback
-│   ├── plan.ts           # proposal JSON parsing (truncation-aware)
-│   ├── tool.ts           # evolve_* model-facing tools (5)
-│   ├── command.ts        # /evolve command (incl. benchmark subcommands)
-│   ├── planner.ts        # ctx.llm planner
-│   ├── render.ts         # bounded prompt rendering
-│   ├── inject.ts         # dynamic system-prompt section (prompt notes + delegation specs)
-│   ├── auto.ts           # auto-review gate (turn/compaction triggers + audit)
-│   ├── goal.ts           # goal-driven evolution rounds (/evolve goal)
-│   ├── review.ts         # gate LLM judgment
-│   ├── approval.ts       # human approval for global edits
-│   ├── skill.ts          # skill materialization ($DSH_HOME/skills/)
-│   ├── mount.ts          # hot-mounted skill plugins (loader.create + boot restore)
-│   ├── benchmark.ts      # benchmark store
-│   ├── rubric.ts         # rubric ACL (AES-256-GCM envelopes)
-│   ├── score.ts          # code-owned aggregation + acceptance rule
-│   ├── evaluate.ts       # evaluation matrix runner (structured-output subagents)
-│   ├── store.ts          # store layout + snapshots + result history
-│   └── service.ts        # evolution engine (onApplied hook)
-└── test/                 # 16 files, 112 tests
+│   ├── index.ts          # cordis 插件入口（服务挂载 + 接线）
+│   ├── types.ts          # HarnessState / 条目 / 编辑 / 结果类型
+│   ├── state.ts          # 原子持久化、损坏降级、合并、乐观并发
+│   ├── validate.ts       # 代码强制编辑校验（基础提示词不可改、skill 契约）
+│   ├── apply.ts          # 逐条应用 + 乐观锁
+│   ├── rollback.ts       # 确定性逆操作回滚
+│   ├── plan.ts           # 提案 JSON 解析（截断诊断）
+│   ├── tool.ts           # evolve_* 模型工具（5 个）
+│   ├── command.ts        # /evolve 命令（含 benchmark 子命令）
+│   ├── planner.ts        # ctx.llm 规划器
+│   ├── render.ts         # 有界提示词渲染
+│   ├── inject.ts         # 动态系统提示词段（prompt 补充 + 委派规格）
+│   ├── auto.ts           # 自动 review 门禁（回合/压缩触发 + 审计）
+│   ├── goal.ts           # goal 驱动的进化轮次（/evolve goal）
+│   ├── review.ts         # 门禁 LLM 判断
+│   ├── approval.ts       # 全局写入人工审批
+│   ├── skill.ts          # 技能物化（$DSH_HOME/skills/）
+│   ├── mount.ts          # 技能热挂载插件（loader.create + 启动恢复）
+│   ├── benchmark.ts      # benchmark 存储
+│   ├── rubric.ts         # rubric ACL（AES-256-GCM 密文信封）
+│   ├── score.ts          # 代码所有聚合 + 接受规则
+│   ├── evaluate.ts       # 评估矩阵执行器（结构化输出子代理）
+│   ├── store.ts          # store 布局 + 快照 + 结果历史
+│   └── service.ts        # 进化引擎（onApplied 钩子）
+└── test/                 # 16 个文件，112 个测试
 </code></pre>
-<h3>In-session usage (after restart)</h3>
-<pre><code>/evolve                  help + current local store
-/evolve list [global]    list entries
-/evolve history          applied refinements (ids for rollback)
-/evolve rollback &lt;id&gt;    deterministically revert a refinement
-/evolve plan [msg]       LLM planner against the current store
-/evolve export &lt;path&gt;    backup the local store to JSON
-/evolve import &lt;path&gt;    restore a store from an export file
-/evolve mount &lt;skillId&gt;  hot-mount a skill entry as a live cordis plugin (tool: skill_&lt;name&gt;)
-/evolve mount list       list hot-mounted plugins (restored on boot)
-/evolve unmount &lt;id&gt;     remove a hot-mounted plugin
-/evolve goal             show the evolution goal (round-driven auto-review)
-/evolve goal &lt;objective&gt; create/update the evolution goal — while active, the review gate runs EVERY round
-/evolve goal done        complete the evolution goal
+<h3>会话内用法（安装后）</h3>
+<pre><code>/evolve                       帮助 + 当前局部 store
+/evolve list [global]         列出条目
+/evolve history               已应用的 refinement（回滚用 id）
+/evolve rollback &lt;id&gt;         确定性回滚某个 refinement
+/evolve export &lt;path&gt;         备份局部 store 为 JSON
+/evolve import &lt;path&gt;         从导出文件恢复 store
+/evolve plan [msg]            LLM 规划器
+/evolve mount &lt;skillId&gt;       热挂载 skill 条目为实时 cordis 插件（工具：skill_&lt;name&gt;）
+/evolve mount list            列出热挂载插件（重启自动恢复）
+/evolve unmount &lt;id&gt;          移除热挂载插件
+/evolve goal                  查看进化 goal（轮次驱动自动 review）
+/evolve goal &lt;objective&gt;      创建/更新进化 goal——active 时 review 门禁每轮触发
+/evolve goal done             完成进化 goal
 </code></pre>
-<p>Model-facing tools: <code>evolve_list</code>, <code>evolve_add</code>, <code>evolve_update</code>, <code>evolve_delete</code>, <code>evolve_rollback</code>.</p>
-<h3>Benchmark-driven validation (Phase 3)</h3>
-<pre><code>/evolve benchmark new &lt;title&gt; [runs]                   create a benchmark (runs = repeats per case, default 1)
+<p>模型工具：<code>evolve_list</code>、<code>evolve_add</code>、<code>evolve_update</code>、<code>evolve_delete</code>、<code>evolve_rollback</code>。</p>
+<h3>benchmark 驱动验证（Phase 3）</h3>
+<pre><code>/evolve benchmark new &lt;title&gt;                         创建 benchmark
 /evolve benchmark add-case &lt;bid&gt; &lt;title&gt; &lt;statement&gt; &lt;rubric&gt;
-/evolve benchmark list                                 list benchmarks
-/evolve benchmark reset &lt;bid&gt;                          clear the scoreboard (re-run reference)
-/evolve benchmark status &lt;bid&gt;                         scoreboard + decisions
-/evolve benchmark run &lt;bid&gt;                            evaluate current state → reference
-/evolve benchmark run &lt;bid&gt; candidate &lt;refinementId&gt;   evaluate post-refinement state → decide
+/evolve benchmark list                                列出 benchmark
+/evolve benchmark status &lt;bid&gt;                        查看计分板 + 决策
+/evolve benchmark reset &lt;bid&gt;                         清空计分板（重跑参考线）
+/evolve benchmark run &lt;bid&gt;                           评估当前状态 → 参考线
+/evolve benchmark run &lt;bid&gt; candidate &lt;refinementId&gt;  评估进化后状态 → 决策
 </code></pre>
-<p>The loop: freeze a reference score → evolve a candidate (<code>/evolve plan</code>) →
-run the same case × run matrix against the post-refinement state → the
-<strong>code-owned</strong> acceptance rule keeps the candidate only if the overall mean
-strictly improves with no case regressing (Self-Harness style). The model
-produces raw per-cell scores only; aggregation and decisions live in
-<code>src/score.ts</code>. Rubric isolation is by construction (the planner never sees
-rubric files); rejection is recorded and suggested for rollback (human in
-the loop, no auto-rollback).</p>
-<h4>Real recorded run (ACCEPT)</h4>
-<p>A live <code>dsh web</code> session, one case, one candidate — the first genuine
-acceptance:</p>
+<p>闭环：冻结参考分 → 进化候选（<code>/evolve plan</code>）→ 用同一 case × run 矩阵复测进化后状态 → <strong>代码所有</strong>的接受规则只在总体均值严格提高且无 case 退化时保留候选（Self-Harness 风格）。模型只产出原始细胞级分数；聚合与决策都在 <code>src/score.ts</code>。rubric 隔离靠构造（规划器的提示词永远不含 rubric 文件）；拒绝会记录并提示回滚（人工在环，不自动回滚）。</p>
+<h4>真实运行记录（ACCEPT）</h4>
+<p>一次真实的 <code>dsh web</code> 会话，一个 case、一个候选——第一次真正的接受：</p>
 <table>
 <thead>
 <tr>
-<th>Step</th>
-<th>Command</th>
-<th>Outcome</th>
+<th>步骤</th>
+<th>命令</th>
+<th>结果</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>reference</td>
+<td>参考线</td>
 <td><code>/evolve benchmark run lint_convention</code></td>
-<td><strong>90</strong> — the evaluator agent actually grepped the harness store and reported <em>&quot;lint/ruff/eslint/mypy appear in zero entries&quot;</em></td>
+<td><strong>90</strong>——评估子代理真的 grep 了 harness store，报告&quot;lint/ruff/eslint/mypy 在所有条目中零出现&quot;</td>
 </tr>
 <tr>
-<td>candidate</td>
+<td>进化候选</td>
 <td><code>/evolve plan 记住：写代码前必须先运行适用的 lint 检查</code></td>
-<td>creates <code>memory:convention_lint_before_code</code></td>
+<td>创建 <code>memory:convention_lint_before_code</code></td>
 </tr>
 <tr>
-<td>re-evaluate</td>
+<td>复测</td>
 <td><code>/evolve benchmark run lint_convention candidate &lt;id&gt;</code></td>
-<td><strong>100</strong> — evaluator ran <code>evolve_list</code>, hit the memory, quoted it verbatim</td>
+<td><strong>100</strong>——评估器跑 <code>evolve_list</code> 命中记忆并逐字引用</td>
 </tr>
 <tr>
-<td>decision</td>
+<td>决策</td>
 <td>—</td>
 <td><code>overall: 90 → 100</code> · <code>lint_knowledge: 90 → 100</code> · <strong>DECISION: ACCEPTED</strong></td>
 </tr>
 </tbody></table>
-<p>The evaluator does not grade model common sense — it inspects the actual
-harness state under test (grep, <code>evolve_list</code>) and scores against it, so a
-harness change measurably moves the score. Earlier runs in the same session
-produced honest <code>REJECTED</code> decisions (0 → 0 placeholder cases, and 100 → 100
-where the baseline was already perfect).</p>
-<h3>Configuration</h3>
+<p>评估器评的不是模型常识，而是<strong>被测 harness 状态本身</strong>（grep、<code>evolve_list</code> 检查）——所以 harness 的改动会真实地反映在分数上。同一会话早些时候还产生过诚实的 <code>REJECTED</code> 决策（0→0 占位符 case、100→100 满分基线无法超越）。</p>
+<h3>配置</h3>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>键</th>
+<th>默认值</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>baseDir</code></td>
-<td>resolved DSH home</td>
-<td>root for the <code>evolve/</code> stores</td>
+<td>解析后的 DSH home</td>
+<td><code>evolve/</code> store 的根</td>
 </tr>
 <tr>
 <td><code>sectionOrder</code></td>
 <td>118</td>
-<td>system-prompt section order</td>
+<td>系统提示词段落顺序</td>
 </tr>
 <tr>
 <td><code>autoReview</code></td>
 <td><code>false</code></td>
-<td>enable the automatic review gate (costs a cheap model call per interval)</td>
+<td>启用自动 review 门禁（每间隔一次廉价模型调用）</td>
 </tr>
 <tr>
 <td><code>reviewIntervalTurns</code></td>
 <td>6</td>
-<td>gate runs when this many turns passed since the last review</td>
+<td>距上次 review 满这么多回合时触发门禁</td>
 </tr>
 <tr>
 <td><code>maxReviewInputChars</code></td>
 <td>40000</td>
-<td>trajectory slice handed to the gate</td>
+<td>交给门禁的轨迹切片</td>
 </tr>
 <tr>
 <td><code>reviewBudgetTokens</code></td>
 <td>4096</td>
-<td>output budget for the gate call</td>
+<td>门禁调用的输出预算</td>
 </tr>
 <tr>
 <td><code>requireGlobalApproval</code></td>
 <td><code>true</code></td>
-<td>cross-session (global) edits ask the user for &quot;批准&quot; before applying</td>
+<td>跨会话（全局）编辑需用户批准&quot;批准&quot;后才应用</td>
 </tr>
 <tr>
 <td><code>skillsDir</code></td>
 <td><code>&lt;dshHome&gt;/skills</code></td>
-<td>root where skill entries materialize as SKILL.md bundles</td>
+<td>技能条目物化为 SKILL.md 包的根目录</td>
 </tr>
 <tr>
 <td><code>rubricKey</code></td>
-<td><code>DSH_EVOLVE_RUBRIC_KEY</code> → dev key</td>
-<td>passphrase for AES-256-GCM rubric encryption (benchmark rubrics never touch the disk in plaintext)</td>
+<td><code>DSH_EVOLVE_RUBRIC_KEY</code> → dev 键</td>
+<td>rubric 加密（AES-256-GCM）口令：benchmark rubric 明文永不着盘</td>
 </tr>
 </tbody></table>
-<p>Example (profile <code>cordis.patch.yml</code>):</p>
+<p>示例（profile <code>cordis.patch.yml</code>）：</p>
 <pre><code class="language-yaml">- insert:
     - id: continual-evolve
       name: &#39;dsh-continual-evolve&#39;
@@ -455,25 +422,33 @@ where the baseline was already perfect).</p>
         autoReview: true
         reviewIntervalTurns: 6
 </code></pre>
-<h3>Development</h3>
-<pre><code class="language-bash">pnpm install        # install dev deps
+<h3>安装</h3>
+<pre><code class="language-bash"># 从 npm 安装（安装即激活，自带 bundle patch）
+dsh plugin --profile web add dsh-continual-evolve
+
+# 或从源码安装
+dsh plugin --profile web add /path/to/dsh-continual-evolve
+</code></pre>
+<h3>开发</h3>
+<pre><code class="language-bash">pnpm install        # 安装开发依赖
+pnpm dev            # tsc --watch
 pnpm build          # tsc -&gt; lib/
 pnpm test           # vitest run
 pnpm lint           # oxlint src test
 </code></pre>
-<p>Hit a wall? See <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/FAQ.md"><code>docs/FAQ.md</code></a> — real failure/fix records (service planes, schema DSL, structured output, gate counting, verifying prompt injection).</p>
-<h3>Roadmap</h3>
+<p>遇到问题先看 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/FAQ.md"><code>docs/FAQ.md</code></a>（真实踩坑记录：服务平面、schema DSL、结构化输出、门禁计数、注入验证等）。</p>
+<h3>路线图</h3>
 <ul>
-<li><strong>Phase 1 (done)</strong>: pure-core engine — state model, validation, apply, rollback, proposal parsing; tested.</li>
-<li><strong>Phase 1b (done)</strong>: <code>evolve_*</code> tools, <code>/evolve</code> command, and the <code>ctx.llm</code> planner; installed into the web profile.</li>
-<li><strong>Phase 2 (done)</strong>: ✅ auto-refine review gate (turn-interval checkpoints); ✅ compaction checkpoint (<code>compaction/start</code>); ✅ global-scope approval gate (userQuestions); ✅ executable skills (materialize to <code>$DSH_HOME/skills/</code>); ✅ prompt entries injected as a real system-prompt section (additive, capped 6/kind, inherited by subagents through the parent chain); ✅ subagent entries rendered as reusable delegation specs at the delegation seam.</li>
-<li><strong>Phase 3 (done)</strong>: ✅ benchmark-driven validation loop — evaluation matrix via the workflow engine, code-owned scoreboard aggregation, non-regressive acceptance rule, rubric isolation by construction; ✅ rubric ACL (rubric plaintext never on disk — AES-256-GCM envelopes, decrypted only by the evaluation runner); ✅ hot-mounted skill plugins (<code>/evolve mount &lt;skillId&gt;</code>, live loader entry, restored on boot); ✅ goal-driven evolution rounds (<code>/evolve goal</code> — an active goal drives the review gate every round). (Future: automated rollback on rejection.)</li>
+<li><strong>Phase 1（完成）</strong>：纯核心引擎——状态模型、校验、应用、回滚、提案解析；已测试。</li>
+<li><strong>Phase 1b（完成）</strong>：<code>evolve_*</code> 工具、<code>/evolve</code> 命令、<code>ctx.llm</code> 规划器；已装入 web profile。</li>
+<li><strong>Phase 2（完成）</strong>：✅ 自动 review 门禁（回合间隔）；✅ 压缩检查点（<code>compaction/start</code>）；✅ 全局人工审批门禁（userQuestions）；✅ 可执行技能（物化到 <code>$DSH_HOME/skills/</code>）；✅ prompt 条目注入为真实系统提示词段（additive、每类封顶 6 条、沿父链被子代理继承）；✅ subagent 条目渲染为委派接缝上的可复用委派规格。</li>
+<li><strong>Phase 3（完成）</strong>：✅ benchmark 驱动验证闭环——评估矩阵、代码所有计分板聚合、非退化接受规则、rubric 构造性隔离；✅ rubric ACL（明文永不着盘——AES-256-GCM 信封，仅评估执行器解密）；✅ 技能热挂载插件（<code>/evolve mount &lt;skillId&gt;</code>，实时 loader 条目，重启自动恢复）；✅ goal 驱动的进化轮次（<code>/evolve goal</code>——active goal 让 review 门禁每轮触发）。（未来：拒绝自动回滚。）</li>
 </ul>
 <h3>License</h3>
-<p>MIT. Independent project — not affiliated with DeepSeek.</p>
+<p>MIT。独立项目——与 DeepSeek 无关联。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

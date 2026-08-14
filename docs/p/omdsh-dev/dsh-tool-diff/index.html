@@ -189,74 +189,74 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-tool-diff/blob/main/README.en.md">English</a></p>
-<p>DSH Diff 文本差异工具插件 —— 文本 / JSON / CSV / Markdown 结构化比较与 unified diff 生成。零依赖、纯函数、只读。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-tool-diff/blob/main/README.md">中文</a></p>
+<p>DSH Diff text-difference tool plugin — structured comparison of text / JSON / CSV / Markdown and unified diff generation. Zero dependencies, pure functions, read-only.</p>
 <p><a href="https://github.com/omdsh-dev/dsh-tool-diff/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<h3>动机</h3>
-<p>Agent 需要对比两份内容（配置片段、API 响应、表格、文档修订）时，现有路径是起 <code>bash</code> 进程调用系统 diff 或手写比较逻辑：</p>
+<h3>Motivation</h3>
+<p>When an agent needs to compare two pieces of content (config snippets, API responses, tables, document revisions), the existing path is to spawn a <code>bash</code> process to call the system diff or hand-write comparison logic:</p>
 <ol>
-<li><strong>每次调用都起进程</strong>——Windows 上尤其昂贵</li>
-<li><strong>系统 diff 不懂结构</strong>——JSON 只能给整段文本差异，看不出 <code>$.user.name</code> 这样的路径级变更</li>
-<li><strong>手写比较代码不可验证</strong>——边界（引号内逗号、嵌套数组、标题重命名）极易出错</li>
+<li><strong>Every call spawns a process</strong> — especially expensive on Windows</li>
+<li><strong>The system diff doesn&#39;t understand structure</strong> — for JSON it can only give whole-text differences, and can&#39;t reveal path-level changes like <code>$.user.name</code></li>
+<li><strong>Hand-written comparison code isn&#39;t verifiable</strong> — edge cases (commas inside quotes, nested arrays, heading renames) are highly error-prone</li>
 </ol>
-<p>本插件提供确定性、零依赖、纯函数的差异比较：一次函数调用，毫秒级返回结构化 JSON 报告或标准 unified diff。</p>
-<h3>安全模型</h3>
+<p>This plugin provides deterministic, zero-dependency, pure-function diffing: a single function call returns a structured JSON report or a standard unified diff in milliseconds.</p>
+<h3>Security Model</h3>
 <ul>
-<li><strong>零依赖</strong>：Myers 行级 diff、RFC 4180 解析器、JSON 递归比较全部手写</li>
-<li><strong>只读</strong>：不读文件、不写文件、不联网、不调 git；<code>patch</code> action 只在内存中生成并校验补丁，绝不落盘</li>
-<li><strong>预算</strong>：<ul>
-<li>输入单侧 ≤ 256 KiB（超限直接报错）</li>
-<li>输出 ≤ 64 KiB（超限按 <code>maxChanges</code> 与字节预算截断并置 <code>truncated</code>）</li>
-<li>Myers diagonal 预算 2000 + 蛇步总预算 2000 万 + 公共前后缀修剪 + hash 快速拒绝 + 规模上限 4000 行 → 恶意重复/全异文本有界完成</li>
-<li>行数 ≤ 50K、JSON 嵌套 ≤ 64 层、CSV ≤ 50K 行 / 512 列</li>
+<li><strong>Zero dependencies</strong>: the Myers line-level diff, RFC 4180 parser, and JSON recursive comparison are all hand-written</li>
+<li><strong>Read-only</strong>: no file reads, no file writes, no network, no git invocation; the <code>patch</code> action only generates and validates the patch in memory, never writes to disk</li>
+<li><strong>Budgets</strong>:<ul>
+<li>Input per side ≤ 256 KiB (errors directly beyond the limit)</li>
+<li>Output ≤ 64 KiB (truncated by <code>maxChanges</code> and the byte budget beyond the limit, with <code>truncated</code> set)</li>
+<li>Myers diagonal budget 2000 + total snake-step budget 20 million + common prefix/suffix trimming + hash-based quick rejection + a 4000-line size cap → malicious duplicate/fully-different texts complete within bounds</li>
+<li>Lines ≤ 50K, JSON nesting ≤ 64 levels, CSV ≤ 50K rows / 512 columns</li>
 <li><code>timeoutMs: 2000</code></li>
 </ul>
 </li>
-<li>工具参数会记入会话日志，不要传入敏感数据</li>
+<li>Tool arguments are recorded in the session log; don&#39;t pass sensitive data</li>
 </ul>
-<h3>工具声明</h3>
-<p>注册 <code>diff</code> 工具（<code>@deepseek-ai/dsh-tool-diff</code>，row id <code>tool-diff</code>），统一输出 JSON 文本字符串信封：所有 action 都带通用摘要 <code>{ equal, truncated, beforeBytes, afterBytes, changes }</code>。</p>
+<h3>Tool Declaration</h3>
+<p>Registers the <code>diff</code> tool (<code>@deepseek-ai/dsh-tool-diff</code>, row id <code>tool-diff</code>), uniformly outputting a JSON text-string envelope: every action carries a common summary <code>{ equal, truncated, beforeBytes, afterBytes, changes }</code>.</p>
 <table>
 <thead>
 <tr>
 <th>action</th>
-<th>作用</th>
-<th>输出</th>
+<th>Purpose</th>
+<th>Output</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>text</code></td>
-<td>行级 Myers diff</td>
-<td>unified diff（<code>--- before</code> / <code>+++ after</code> / <code>@@</code> hunks，无时间戳）+ 统计；<code>format=structured</code> 输出带行号的操作列表</td>
+<td>Line-level Myers diff</td>
+<td>unified diff (<code>--- before</code> / <code>+++ after</code> / <code>@@</code> hunks, no timestamps) + statistics; <code>format=structured</code> outputs an operation list with line numbers</td>
 </tr>
 <tr>
 <td><code>json</code></td>
-<td>递归比较两个 JSON 值</td>
-<td><code>$</code> 路径化变更（<code>$.user.name</code>、<code>$.items[0]</code>、<code>$[&#39;a.b&#39;]</code>）+ add/remove/replace 汇总</td>
+<td>Recursively compare two JSON values</td>
+<td><code>$</code>-path changes (<code>$.user.name</code>, <code>$.items[0]</code>, <code>$[&#39;a.b&#39;]</code>) + add/remove/replace summary</td>
 </tr>
 <tr>
 <td><code>csv</code></td>
-<td>RFC 4180 解析后按主键或位置比较</td>
-<td><code>addedRows</code> / <code>removedRows</code> / <code>changedRows</code>（列级）/ <code>duplicateKeys</code> / 列集合变化</td>
+<td>Parse with RFC 4180, then compare by primary key or position</td>
+<td><code>addedRows</code> / <code>removedRows</code> / <code>changedRows</code> (column-level) / <code>duplicateKeys</code> / column-set changes</td>
 </tr>
 <tr>
 <td><code>markdown</code></td>
-<td>轻量块级 tokenizer（标题/代码块/列表/引用/表格）</td>
-<td><code>headingChanges</code>（rename 识别）/ <code>blockChanges</code>（<code>h2[1]/p[0]</code> 路径）/ <code>codeBlockChanges</code> + 全文 diff</td>
+<td>Lightweight block-level tokenizer (headings/code blocks/lists/blockquotes/tables)</td>
+<td><code>headingChanges</code> (rename detection) / <code>blockChanges</code> (<code>h2[1]/p[0]</code> paths) / <code>codeBlockChanges</code> + full-text diff</td>
 </tr>
 <tr>
 <td><code>patch</code></td>
-<td>生成 unified diff 并在内存中校验</td>
-<td>patch 文本 + <code>valid</code> / <code>hunks</code> / <code>targetMatchesAfter</code> / hunk 级错误</td>
+<td>Generate a unified diff and validate it in memory</td>
+<td>patch text + <code>valid</code> / <code>hunks</code> / <code>targetMatchesAfter</code> / hunk-level errors</td>
 </tr>
 </tbody></table>
 <table>
 <thead>
 <tr>
-<th>参数</th>
-<th>类型</th>
-<th>必填</th>
-<th>说明</th>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -269,127 +269,127 @@ footer p+p{margin-top:.5rem}
 <td><code>before</code></td>
 <td>string</td>
 <td>✅</td>
-<td>原内容（任意 action 的输入侧）</td>
+<td>Original content (input side for any action)</td>
 </tr>
 <tr>
 <td><code>after</code></td>
 <td>string</td>
 <td>✅</td>
-<td>新内容</td>
+<td>New content</td>
 </tr>
 <tr>
 <td><code>format</code></td>
 <td>string</td>
 <td></td>
-<td><code>unified</code>（默认 text/patch）/ <code>structured</code>（默认 json/csv/markdown）/ <code>both</code></td>
+<td><code>unified</code> (default for text/patch) / <code>structured</code> (default for json/csv/markdown) / <code>both</code></td>
 </tr>
 <tr>
 <td><code>context</code></td>
 <td>integer</td>
 <td></td>
-<td>unified 上下文行数，默认 3，范围 0..20</td>
+<td>Number of unified context lines, default 3, range 0..20</td>
 </tr>
 <tr>
 <td><code>key</code></td>
 <td>string</td>
 <td></td>
-<td>CSV 主键列名或 1-based 索引；缺省 → 位置比较</td>
+<td>CSV primary key column name or 1-based index; absent → positional comparison</td>
 </tr>
 <tr>
 <td><code>delimiter</code></td>
 <td>string</td>
 <td></td>
-<td>CSV 分隔符，默认 <code>,</code>，单字符或 <code>tab</code></td>
+<td>CSV delimiter, default <code>,</code>, a single character or <code>tab</code></td>
 </tr>
 <tr>
 <td><code>ignoreWhitespace</code></td>
 <td>boolean</td>
 <td></td>
-<td>比较时忽略空白差异（text/csv/markdown）；<strong>patch action 拒绝</strong>（精确文本协议）</td>
+<td>Ignore whitespace differences when comparing (text/csv/markdown); <strong>rejected by the patch action</strong> (exact-text protocol)</td>
 </tr>
 <tr>
 <td><code>ignoreCase</code></td>
 <td>boolean</td>
 <td></td>
-<td>比较时忽略大小写（text/json/csv/markdown）；<strong>patch action 拒绝</strong></td>
+<td>Ignore case when comparing (text/json/csv/markdown); <strong>rejected by the patch action</strong></td>
 </tr>
 <tr>
 <td><code>sortKeys</code></td>
 <td>boolean</td>
 <td></td>
-<td>JSON 键排序，默认 true</td>
+<td>Sort JSON keys, default true</td>
 </tr>
 <tr>
 <td><code>maxChanges</code></td>
 <td>integer</td>
 <td></td>
-<td>最大报告变更数，默认 1000，硬顶 10000</td>
+<td>Max number of reported changes, default 1000, hard cap 10000</td>
 </tr>
 </tbody></table>
-<h3>输出示例</h3>
+<h3>Example Output</h3>
 <pre><code class="language-json">{&quot;kind&quot;:&quot;json&quot;,&quot;equal&quot;:false,&quot;beforeBytes&quot;:42,&quot;afterBytes&quot;:58,&quot;changes&quot;:[
   {&quot;op&quot;:&quot;replace&quot;,&quot;path&quot;:&quot;$.tags[1]&quot;,&quot;before&quot;:&quot;b&quot;,&quot;after&quot;:&quot;c&quot;},
   {&quot;op&quot;:&quot;add&quot;,&quot;path&quot;:&quot;$.user.email&quot;,&quot;after&quot;:&quot;b@x.com&quot;},
   {&quot;op&quot;:&quot;replace&quot;,&quot;path&quot;:&quot;$.user.name&quot;,&quot;before&quot;:&quot;Alice&quot;,&quot;after&quot;:&quot;Bob&quot;}],
  &quot;summary&quot;:{&quot;added&quot;:1,&quot;removed&quot;:0,&quot;replaced&quot;:2,&quot;moved&quot;:0}}
 </code></pre>
-<h3>设计要点</h3>
+<h3>Design Highlights</h3>
 <ul>
-<li><strong>行级 Myers</strong>：O(ND) 迭代实现（非递归），trace 回溯；公共前后缀修剪后在小规模上运行，保证内存与时间有界；快速拒绝使用与 <code>lineEqual</code> 相同的归一化键（ignore 选项下不漏判公共行）</li>
-<li><strong>CSV 双模式</strong>：提供 <code>key</code> 且表头存在 → keyed（行顺序无关）；否则 positional（按数据行号）。<strong>before/after 两侧</strong>重复 key 都进 <code>duplicateKeys</code> 且 <code>equal=false</code>，重复 key 的行不参与匹配（结果确定）；空字符串 key 与缺失 key（<code>&lt;missing-key&gt;</code>）不混淆</li>
-<li><strong>Markdown 块对齐</strong>：按块类型 token 做 Myers，同型块内容变化 → <code>replace</code>，结构增删 → <code>add/remove</code>；标题按父路径+级别匹配，同路径同级别文本变化 → <code>rename</code>；代码块语言/行数/内容任一变化都进 <code>codeBlockChanges</code>（内容变化带 <code>changed:true</code>）</li>
-<li><strong>JSON 深度防线</strong>：<code>JSON.parse</code> 之前先做 O(n) 非递归括号扫描（跳过字符串字面量），超 64 层直接报错；<strong>重复键</strong>由状态机扫描并随输出报告（<code>duplicateKeys.before/after</code>），不静默丢信息</li>
-<li><strong>patch 语义</strong>：<code>equal</code> = 两侧在精确行 + 末尾换行语义下相等（与 <code>valid</code> 无关）；<code>valid</code> 只表示&quot;生成的 patch 可从 before 应用到 after&quot;；hunk 坐标（old/new、顺序、重叠、间隙）严格校验；patch 被截断时 <code>valid:false</code> + <code>patchComplete:false</code></li>
-<li><strong>Unicode</strong>：孤立 surrogate 在入口被拒绝（<code>invalid Unicode</code>）</li>
-<li><strong>可复现输出</strong>：unified diff 无时间戳；<code>sortKeys</code> 默认 true 使变更列表稳定；所有 action 最终 JSON 信封 ≤ 64KiB（契约断言）</li>
+<li><strong>Line-level Myers</strong>: iterative O(ND) implementation (non-recursive) with trace backtracking; runs at small scale after common prefix/suffix trimming, keeping memory and time bounded; quick rejection uses the same normalization keys as <code>lineEqual</code> (common lines aren&#39;t missed under the ignore options)</li>
+<li><strong>CSV dual mode</strong>: <code>key</code> provided and a header present → keyed (row order irrelevant); otherwise positional (by data row number). Duplicate keys on <strong>either the before or after side</strong> go into <code>duplicateKeys</code> with <code>equal=false</code>, and rows with duplicate keys don&#39;t participate in matching (deterministic results); empty-string keys and missing keys (<code>&lt;missing-key&gt;</code>) are never confused</li>
+<li><strong>Markdown block alignment</strong>: Myers over block-type tokens; content changes within same-type blocks → <code>replace</code>, structural additions/removals → <code>add/remove</code>; headings are matched by parent path + level, and same-path same-level text changes → <code>rename</code>; any change in code block language/line count/content goes into <code>codeBlockChanges</code> (content changes carry <code>changed:true</code>)</li>
+<li><strong>JSON depth defense</strong>: an O(n) non-recursive bracket scan (skipping string literals) before <code>JSON.parse</code>; depth over 64 errors directly; <strong>duplicate keys</strong> are scanned by a state machine and reported with the output (<code>duplicateKeys.before/after</code>), never silently dropped</li>
+<li><strong>patch semantics</strong>: <code>equal</code> = both sides equal under exact-line and trailing-newline semantics (unrelated to <code>valid</code>); <code>valid</code> only means &quot;the generated patch applies from before to after&quot;; hunk coordinates (old/new, order, overlap, gaps) are strictly validated; when the patch is truncated → <code>valid:false</code> + <code>patchComplete:false</code></li>
+<li><strong>Unicode</strong>: lone surrogates are rejected at the entry (<code>invalid Unicode</code>)</li>
+<li><strong>Reproducible output</strong>: unified diff has no timestamps; <code>sortKeys</code> defaults to true for a stable change list; all action JSON envelopes ≤ 64KiB (contract assertion)</li>
 </ul>
-<h3>构建与测试</h3>
+<h3>Build and Test</h3>
 <pre><code class="language-bash"># 构建（零依赖，仅需 monorepo 的 tsc）
 node &lt;monorepo&gt;/node_modules/typescript/bin/tsc -p tsconfig.json
 
 # 测试（vitest，124 个用例）
 node &lt;monorepo&gt;/node_modules/vitest/vitest.mjs run tests
 </code></pre>
-<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
-<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 的隔离 consumer 中完成全链路验证：</p>
+<h3>npm 0.1.0-rc.6 Compatibility (Verified)</h3>
+<p>This plugin has been migrated to the npm 0.1.0-rc.6 dependency line and fully verified end-to-end in an isolated consumer of <code>@deepseek-ai/dsh@0.1.0-rc.6</code>:</p>
 <ul>
-<li><strong>类型/运行时</strong>：<code>@deepseek-ai/cordis: ^4.0.1</code> + <code>@deepseek-ai/dsh-tools: &gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants: &gt;=0.0.1-rc.1 &lt;0.2.0</code>（peer）；不再依赖 unscoped <code>cordis</code></li>
-<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
-<li><strong>消费验证</strong>：tarball 装入 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
-<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+<li><strong>Types/runtime</strong>: <code>@deepseek-ai/cordis: ^4.0.1</code> + <code>@deepseek-ai/dsh-tools: &gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants: &gt;=0.0.1-rc.1 &lt;0.2.0</code> (peer); no longer depends on unscoped <code>cordis</code></li>
+<li><strong>Standalone build</strong>: <code>npm install</code> (devDependencies self-contained: typescript/vitest/@types/node) → <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>Consumption verification</strong>: tarball loaded into a 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> shows this plugin&#39;s row → the tool genuinely registers and executes</li>
+<li><strong>Launch method</strong>: <code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code> (lib production mode; don&#39;t <code>install -g</code> globally)</li>
 </ul>
-<h3>安装</h3>
-<h4>Profile Bundle（推荐）</h4>
-<p>DSH 0.1.0-rc.6（npm）起，本插件可作为独立 bundle 一键安装到任意 profile（仓库位于 <a href="https://github.com/omdsh-dev%EF%BC%8Cpublic%EF%BC%89%EF%BC%9A">https://github.com/omdsh-dev，public）：</a></p>
+<h3>Installation</h3>
+<h4>Profile Bundle (Recommended)</h4>
+<p>As of DSH 0.1.0-rc.6 (npm), this plugin can be installed into any profile as a standalone bundle in one step (repositories live at <a href="https://github.com/omdsh-dev">https://github.com/omdsh-dev</a>, public):</p>
 <pre><code class="language-sh"># 交互式（web）profile
 dsh plugin --profile web add github:omdsh-dev/dsh-tool-diff
 # 一次性任务（headless）profile —— dsh run 默认使用 headless
 dsh plugin --profile headless add github:omdsh-dev/dsh-tool-diff
 </code></pre>
-<p>也可以先用 <code>npm pack</code> 打出 tarball 再安装：</p>
+<p>You can also pack a tarball with <code>npm pack</code> first and install that:</p>
 <pre><code class="language-sh">git clone https://github.com/omdsh-dev/dsh-tool-diff
 cd dsh-tool-diff
 npm install &amp;&amp; npm pack
 dsh plugin --profile web add ./deepseek-ai-dsh-tool-diff-*.tgz
 dsh plugin --profile headless add ./deepseek-ai-dsh-tool-diff-*.tgz
 </code></pre>
-<p>包内 <code>dsh.bundle.patch</code> 会在安装后自动把插件加入 profile 的 layer stack（row id：<code>tool-diff</code>）。插件缺失的 peer 依赖（<code>@deepseek-ai/cordis</code>、<code>@deepseek-ai/dsh-tools</code>、<code>@deepseek-ai/dsh-invariants</code>）由 profile 的 healed <code>profiles/node_modules</code> 回退安装提供。</p>
+<p>The in-package <code>dsh.bundle.patch</code> automatically adds the plugin to the profile&#39;s layer stack after installation (row id: <code>tool-diff</code>). The plugin&#39;s missing peer dependencies (<code>@deepseek-ai/cordis</code>, <code>@deepseek-ai/dsh-tools</code>, <code>@deepseek-ai/dsh-invariants</code>) are provided by the profile&#39;s healed <code>profiles/node_modules</code> fallback installation.</p>
 <blockquote>
-<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。Windows 路径使用正斜杠（<code>C:/...</code>）。</p>
+<p>⚠️ web and headless are <strong>different profiles</strong>: installing for web doesn&#39;t automatically cover headless; <code>dsh run</code> uses the headless profile by default. Use forward slashes for Windows paths (<code>C:/...</code>).</p>
 </blockquote>
-<h4>验证安装</h4>
+<h4>Verify Installation</h4>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep tool-diff
 </code></pre>
-<h4>运行验证</h4>
+<h4>Runtime Verification</h4>
 <pre><code class="language-sh">dsh run &quot;使用 diff 工具对比两段文本&quot;
 </code></pre>
-<h4>手动安装（源码贡献 / 旧 snapshot 场景）</h4>
-<p>仅适用于源码贡献（在 monorepo 中开发调试本插件）或仍在使用旧 snapshot 的场景（本地 junction/symlink、手动编辑 profile 层）。</p>
-<h3>许可</h3>
+<h4>Manual Installation (Source Contribution / Legacy Snapshot Scenarios)</h4>
+<p>Only for source contribution (developing/debugging this plugin in the monorepo) or scenarios still using old snapshots (local junction/symlink, manual profile-layer editing).</p>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-diff/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-diff/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

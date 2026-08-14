@@ -190,172 +190,172 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/README.md">English</a> · <a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/README.zh.md">简体中文</a></p>
-<p><strong>Xcode AI integration mode for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (<code>dsh</code>)</strong> — an agent preset + installer that gives your DSH sessions the full Xcode AI stack:</p>
+<p><strong>DeepSeek Harness（<code>dsh</code>）的 Xcode AI 集成模式</strong> —— 一个 agent preset（模式）+ 安装脚本，让 DSH 会话获得完整的 Xcode AI 能力栈：</p>
 <ul>
-<li><strong>26 Xcode MCP tools</strong> (<code>mcp__xcode__*</code>) via Apple&#39;s official <code>mcpbridge</code></li>
-<li><strong>Xcode Intelligence–style persona</strong> (Swift-first, tool-assisted, explain-vs-change classification) adapted from the <code>IDEIntelligenceChat</code> prompt templates</li>
-<li><strong>10 Apple platform skills</strong> (SwiftUI, App Intents, security hardening, bounds safety, …) generated locally from your own Xcode</li>
+<li><strong>26 个 Xcode MCP 工具</strong>（<code>mcp__xcode__*</code>），通过 Apple 官方 <code>mcpbridge</code> 桥接</li>
+<li><strong>Xcode Intelligence 风格的 persona</strong>（Swift 优先、工具辅助、解释/改动分流），改编自 <code>IDEIntelligenceChat</code> 提示词模板</li>
+<li><strong>10 个 Apple 平台技能</strong>（SwiftUI、App Intents、安全加固、bounds safety 等），安装时从你自己的 Xcode 本地生成</li>
 </ul>
 <blockquote>
-<p>📌 <code>dsh-plugin</code> topic repo. DeepSeek Harness is in developer preview — pin an exact <code>dsh</code> version for your automation.</p>
+<p>📌 <code>dsh-plugin</code> 话题仓库。DeepSeek Harness 处于开发者预览阶段，自动化场景请锁定具体版本。</p>
 </blockquote>
-<h3>Why a preset (mode) instead of a global MCP wiring?</h3>
-<p>The three capabilities map onto three different DSH mechanisms:</p>
+<h3>为什么用&quot;模式（preset）&quot;而不是全局接入 MCP？</h3>
+<p>三样能力在 DSH 里对应三个不同机制：</p>
 <table>
 <thead>
 <tr>
-<th>Layer</th>
-<th>Capability</th>
-<th>DSH mechanism</th>
+<th>层</th>
+<th>能力</th>
+<th>DSH 机制</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Execute</td>
-<td>26 <code>mcp__xcode__*</code> tools</td>
-<td><code>dsh-mcp-client</code> (mounted inside the preset)</td>
+<td>执行</td>
+<td>26 个 <code>mcp__xcode__*</code> 工具</td>
+<td><code>dsh-mcp-client</code>（挂在 preset 内）</td>
 </tr>
 <tr>
-<td>Knowledge</td>
-<td>10 Apple skills</td>
-<td><code>dsh-skill-filesystem</code> (global, lazy-loaded)</td>
+<td>知识</td>
+<td>10 个 Apple 技能</td>
+<td><code>dsh-skill-filesystem</code>（全局、懒加载）</td>
 </tr>
 <tr>
-<td>Behavior</td>
+<td>行为</td>
 <td>Xcode Intelligence persona</td>
-<td>agent preset (this repo)</td>
+<td>agent preset（本仓库）</td>
 </tr>
 </tbody></table>
-<p>Wiring the MCP server <strong>globally</strong> would put ~26 large tool schemas (~6k+ tokens/request) into <em>every</em> session. Mounting it inside a <strong>preset</strong> keeps the cost only in sessions that opt in — pick <strong>Apple Mode</strong> when creating a session, and you get the whole stack; other sessions stay lean.</p>
-<h3>Requirements</h3>
+<p>若把 MCP <strong>全局</strong>接入，26 个大工具 schema（约 6k+ tokens/请求）会常驻每一个会话。挂在 <strong>preset</strong> 内则只有选择该模式的会话背负成本——建会话时选 <strong>Apple Mode</strong>即获得全套能力，其他会话保持轻量。</p>
+<h3>环境要求</h3>
 <ul>
 <li>macOS</li>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>: <code>npx @deepseek-ai/dsh web</code></li>
-<li>Xcode 26+ (contains <code>mcpbridge</code> and <code>xcrun agent skills export</code>). To use the MCP tools, Xcode must be <strong>running with the target project open</strong>, and you must click <strong>Allow</strong> on the MCP access dialog Xcode shows (see <a href="#usage">Usage</a>).</li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>：<code>npx @deepseek-ai/dsh web</code></li>
+<li>Xcode 26+（含 <code>mcpbridge</code> 与 <code>xcrun agent skills export</code>）。使用 MCP 工具时，需要保证 <strong>Xcode 已启动并打开了相应的项目</strong>，并且在 Xcode 弹出的 MCP 接入对话框中点击<strong>允许</strong>（见<a href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</a>）。</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">git clone https://github.com/jihongboo/dsh-apple-mode.git
 cd dsh-apple-mode
 ./install.sh
 </code></pre>
-<p><code>install.sh</code> does three things:</p>
+<p><code>install.sh</code> 做三件事：</p>
 <ol>
-<li><strong>Detects your Xcode installs and lets you choose which one provides <code>mcpbridge</code></strong> (see below).</li>
-<li>Installs the <code>apple</code> agent preset → <code>~/.dsh/.agent-presets/apple/</code> (existing copy is backed up).</li>
-<li>Generates the 10 Xcode AI skills <strong>on your machine</strong> via <code>xcrun agent skills export</code> and merges them into <code>~/.agents/skills/</code> (the DSH skill root, hot-reloaded by the filesystem watcher).</li>
+<li><strong>检测你机器上的 Xcode，并让你选择由哪个提供 <code>mcpbridge</code></strong>（见下文）。</li>
+<li>安装 <code>apple</code> agent preset → <code>~/.dsh/.agent-presets/apple/</code>（已有副本自动备份）。</li>
+<li>通过 <code>xcrun agent skills export</code> <strong>在你机器上本地生成</strong> 10 个 Xcode 技能并合并进 <code>~/.agents/skills/</code>（DSH 技能根目录，watcher 热加载即时生效）。</li>
 </ol>
 <blockquote>
-<p><strong>Why no vendored skills?</strong> The skills are Apple-authored guidance. Generating them from your own Xcode at install time avoids redistributing Apple content — the repo ships only our own code, config, and docs.</p>
+<p><strong>为什么不直接打包技能？</strong> 技能是 Apple 官方内容。安装时从你自己的 Xcode 生成可以避免重新分发 Apple 内容——仓库只包含我们自己的代码、配置和文档。</p>
 </blockquote>
-<h4>Choosing an Xcode (multiple installs)</h4>
-<p>If you have several Xcode versions (e.g. <code>Xcode.app</code>, <code>Xcode-beta.app</code>, <code>Xcode-26.2.app</code>), <code>mcpbridge</code> lives in each one&#39;s <code>Contents/Developer/usr/bin</code> — and only in Xcode 26+. <code>install.sh</code> scans <code>/Applications</code> for every install that provides it and prompts you to pick:</p>
+<h4>选择 Xcode（多版本共存）</h4>
+<p>如果装了多个 Xcode（如 <code>Xcode.app</code>、<code>Xcode-beta.app</code>、<code>Xcode-26.2.app</code>），<code>mcpbridge</code> 位于各自的 <code>Contents/Developer/usr/bin</code>——且只有 Xcode 26+ 才有。<code>install.sh</code> 会扫描 <code>/Applications</code> 下所有包含 mcpbridge 的安装并提示你选择：</p>
 <pre><code class="language-text">Found Xcode installs providing mcpbridge:
   1) /Applications/Xcode-beta.app/Contents/Developer  (xcode-select default)
   2) /Applications/Xcode.app/Contents/Developer
 Choose (1-2, default 1):
 </code></pre>
 <ul>
-<li><strong>Default</strong> = the Xcode selected by <code>xcode-select</code> → the preset uses <code>command: xcrun mcpbridge</code> (portable; follows future <code>xcode-select</code> changes).</li>
-<li><strong>Pick another</strong> → the chosen <code>…/Contents/Developer/usr/bin/mcpbridge</code> is baked into the installed preset as an absolute path.</li>
-<li><strong>Non-interactive</strong>: <code>./install.sh --xcode /Applications/Xcode.app</code> (or <code>--xcode …/Contents/Developer</code>); <code>./install.sh --list-xcodes</code> prints the candidates.</li>
-<li><strong>Switch at runtime without reinstalling</strong>: <code>./install.sh --runtime-selectable</code> installs <code>bin/mcpbridge</code> as the command; set <code>DSH_XCODE_DEVELOPER_DIR=/Applications/…/Contents/Developer</code> when launching <code>dsh</code> to switch. (Resolution: <code>DSH_XCODE_DEVELOPER_DIR</code> → <code>xcrun</code> → newest <code>/Applications/Xcode*.app</code>.)</li>
-<li><strong>Drive a specific running Xcode instance</strong>: add <code>env: { MCP_XCODE_PID: &#39;&lt;pid&gt;&#39; }</code> to the <code>mcp-xcode</code> row of the installed preset.</li>
+<li><strong>默认</strong> = <code>xcode-select</code> 选中的 Xcode → preset 使用 <code>command: xcrun mcpbridge</code>（可移植，跟随 <code>xcode-select</code> 变化）。</li>
+<li><strong>选择其他</strong> → 所选 <code>…/Contents/Developer/usr/bin/mcpbridge</code> 以绝对路径写进安装后的 preset。</li>
+<li><strong>非交互</strong>：<code>./install.sh --xcode /Applications/Xcode.app</code>（或 <code>--xcode …/Contents/Developer</code>）；<code>./install.sh --list-xcodes</code> 列出候选。</li>
+<li><strong>运行时切换、无需重装</strong>：<code>./install.sh --runtime-selectable</code> 安装 <code>bin/mcpbridge</code> 作为命令；启动 <code>dsh</code> 时设置 <code>DSH_XCODE_DEVELOPER_DIR=/Applications/…/Contents/Developer</code> 即可切换。（解析顺序：<code>DSH_XCODE_DEVELOPER_DIR</code> → <code>xcrun</code> → 最新的 <code>/Applications/Xcode*.app</code>。）</li>
+<li><strong>指定某个正在运行的 Xcode 实例</strong>：在安装后的 preset 的 <code>mcp-xcode</code> 行加 <code>env: { MCP_XCODE_PID: &#39;&lt;pid&gt;&#39; }</code>。</li>
 </ul>
-<p>To change the choice later: re-run <code>./install.sh</code>, edit the <code>mcp-xcode</code> row in <code>~/.dsh/.agent-presets/apple/agent.cordis.yml</code>, or use the runtime env var above.</p>
-<h4>Alternative: global bundle (MCP in every session)</h4>
+<p>之后想改：重跑 <code>./install.sh</code>、编辑 <code>~/.dsh/.agent-presets/apple/agent.cordis.yml</code> 的 <code>mcp-xcode</code> 行，或用上面的运行时环境变量。</p>
+<h4>备选：全局 bundle（所有会话接入 MCP）</h4>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;github:jihongboo/dsh-apple-mode&quot;
 </code></pre>
-<p>Installs the <code>cordis.patch.yml</code> bundle, which wires the Xcode MCP server into <strong>every</strong> session of the profile — no preset selection needed, at the cost of the tool-schema tokens in all sessions. <strong>Use one install path, not both</strong>: each registers <code>serverName: xcode</code>, and a duplicate server name fails the later instance at load. See <a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/docs/global-mcp.md">docs/global-mcp.md</a>.</p>
-<h3>Usage</h3>
+<p>安装 <code>cordis.patch.yml</code> bundle，将 Xcode MCP 接入 profile 的<strong>所有</strong>会话——无需选择模式，代价是所有会话都背负工具 schema 的 token 成本。<strong>两种安装方式二选一</strong>：二者都注册 <code>serverName: xcode</code>，重复的 server 名会导致后加载的实例失败。详见 <a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/docs/global-mcp.md">docs/global-mcp.md</a>。</p>
+<h3>使用方法</h3>
 <ol>
-<li>Restart <code>dsh</code> (or just open a <strong>new session</strong> — the preset can only be selected on a blank session).</li>
-<li>Pick <strong>Apple Mode</strong> as the agent preset when creating the session.</li>
-<li>The session now has:<ul>
-<li><code>mcp__xcode__*</code> tools — operate the open Xcode workspace: <code>XcodeRead/Write/Update/MV/RM</code>, <code>XcodeGlob/Grep/LS</code>, <code>UpdateTargetBuildSetting</code>/<code>UpdateFileCompilerFlags</code>, <code>XcodeListNavigatorIssues</code>, scheme/run-destination/test-plan switching, <code>XcodeNewTarget</code>, <code>StringCatalogRead/Edit</code>, …</li>
-<li>All Apple platform skills (lazy-loaded on demand).</li>
-<li>An Apple-first, tool-assisted working style.</li>
+<li>重启 <code>dsh</code>（或直接<strong>新建会话</strong>——preset 只能在空白会话选择）。</li>
+<li>建会话时选择 <strong>Apple Mode</strong>。</li>
+<li>该会话即可使用：<ul>
+<li><code>mcp__xcode__*</code> 工具——直接操作打开的 Xcode 工作区：<code>XcodeRead/Write/Update/MV/RM</code>、<code>XcodeGlob/Grep/LS</code>、<code>UpdateTargetBuildSetting</code>/<code>UpdateFileCompilerFlags</code>、<code>XcodeListNavigatorIssues</code>、scheme/运行目标/测试计划切换、<code>XcodeNewTarget</code>、<code>StringCatalogRead/Edit</code> 等</li>
+<li>全部 Apple 平台技能（按需懒加载）</li>
+<li>Apple 优先、工具辅助的工作方式</li>
 </ul>
 </li>
 </ol>
 <blockquote>
-<p><strong>Before using the <code>mcp__xcode__*</code> tools:</strong></p>
+<p><strong>使用 <code>mcp__xcode__*</code> 工具之前：</strong></p>
 <ol>
-<li>Xcode must be <strong>running</strong> with the project/workspace you want to work on <strong>opened</strong> in it.</li>
-<li>On first connection, Xcode shows an <strong>MCP access dialog</strong> — click <strong>Allow</strong> (允许). Until you do, tool calls will be rejected.</li>
+<li>需要保证 <strong>Xcode 已启动</strong>，并且在其中<strong>打开了要操作的项目/工作区</strong>。</li>
+<li>首次建立连接时，Xcode 会弹出 <strong>MCP 接入对话框</strong>——请点击<strong>允许</strong>。在点击允许之前，工具调用会被拒绝。</li>
 </ol>
 </blockquote>
-<p>Build/run/test still happen from the terminal (<code>xcodebuild</code>, pipe through <a href="https://github.com/..."><code>xcsift</code></a> for structured output); the MCP toolset covers project surgery, build settings, diagnostics, destinations, and localization.</p>
-<h3>What you get</h3>
-<h4>MCP tools (26, namespaced <code>mcp__xcode__*</code>)</h4>
+<p>构建/运行/测试仍在终端进行（<code>xcodebuild</code>，建议管道到 <code>xcsift</code> 获得结构化输出）；MCP 工具集负责工程手术、构建设置、诊断、运行目标与本地化。</p>
+<h3>内容清单</h3>
+<h4>MCP 工具（26 个，命名空间 <code>mcp__xcode__*</code>）</h4>
 <table>
 <thead>
 <tr>
-<th>Group</th>
-<th>Tools</th>
+<th>分组</th>
+<th>工具</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Project I/O</td>
+<td>工程读写</td>
 <td><code>XcodeRead</code> <code>XcodeWrite</code> <code>XcodeUpdate</code> <code>XcodeMV</code> <code>XcodeRM</code> <code>XcodeMakeDir</code></td>
 </tr>
 <tr>
-<td>Search</td>
+<td>检索</td>
 <td><code>XcodeGlob</code> <code>XcodeGrep</code> <code>XcodeLS</code></td>
 </tr>
 <tr>
-<td>Targets &amp; settings</td>
+<td>目标与设置</td>
 <td><code>XcodeNewTarget</code> <code>XcodeListTemplates</code> <code>XcodeListTargets</code> <code>UpdateTargetBuildSetting</code> <code>UpdateFileCompilerFlags</code></td>
 </tr>
 <tr>
-<td>Scheme / destination / tests</td>
+<td>Scheme/运行/测试</td>
 <td><code>XcodeListSchemes</code> <code>XcodeSwitchScheme</code> <code>XcodeListRunDestinations</code> <code>XcodeSwitchRunDestination</code> <code>XcodeListTestPlans</code> <code>XcodeSwitchTestPlan</code></td>
 </tr>
 <tr>
-<td>Diagnostics</td>
+<td>诊断</td>
 <td><code>XcodeListNavigatorIssues</code> <code>XcodeRefreshCodeIssuesInFile</code></td>
 </tr>
 <tr>
-<td>Localization</td>
+<td>本地化</td>
 <td><code>StringCatalogRead</code> <code>StringCatalogEdit</code></td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>窗口</td>
 <td><code>XcodeListWindows</code> <code>XcodeGetCurrentFile</code></td>
 </tr>
 </tbody></table>
-<h4>Skills (10, generated at install time)</h4>
+<h4>技能（10 个，安装时生成）</h4>
 <p><code>swiftui-specialist</code> · <code>swiftui-whats-new-27</code> · <code>app-intents-specialist</code> · <code>app-intents-whats-new-27</code> · <code>audit-xcode-security-settings</code> · <code>adopt-c-bounds-safety</code> · <code>uikit-app-modernization</code> · <code>modernize-tests</code> · <code>device-interaction</code> · <code>building-document-based-swiftui-applications</code></p>
-<h3>Repository layout</h3>
+<h3>仓库结构</h3>
 <pre><code class="language-text">.
-├── presets/apple/            # The agent preset: agent.cordis.yml + preset.yml
-├── bin/mcpbridge             # Runtime-selectable mcpbridge launcher (--runtime-selectable)
-├── cordis.patch.yml          # Global-MCP bundle patch (dsh plugin add)
-├── package.json              # Bundle manifest (dsh.bundle.patch)
+├── presets/apple/            # agent preset：agent.cordis.yml + preset.yml
+├── bin/mcpbridge             # 运行时切换用的 mcpbridge 启动器（--runtime-selectable）
+├── cordis.patch.yml          # 全局 MCP bundle 补丁（dsh plugin add）
+├── package.json              # bundle manifest（dsh.bundle.patch）
 ├── docs/
-│   ├── XCODE_AI_INTEGRATION.md  # Full integration notes (Chinese)
-│   └── global-mcp.md            # Alternative: wire the MCP server into every session
-├── install.sh               # Xcode picker + preset install + local skills generation
+│   ├── XCODE_AI_INTEGRATION.md  # 完整接入说明（中文）
+│   └── global-mcp.md            # 全局 bundle 与 preset 的取舍
+├── install.sh               # 安装 preset + 本地生成技能
 ├── uninstall.sh
 └── LICENSE                  # MIT
 </code></pre>
-<h3>Customization</h3>
+<h3>自定义</h3>
 <ul>
-<li><strong>Different Xcode:</strong> re-run <code>./install.sh</code> (picker), <code>./install.sh --xcode &lt;path&gt;</code> (non-interactive), <code>--runtime-selectable</code> + <code>DSH_XCODE_DEVELOPER_DIR</code>, or add <code>env: { MCP_XCODE_PID: &#39;&lt;pid&gt;&#39; }</code> to the <code>mcp-xcode</code> row to drive a specific running instance. See <a href="#choosing-an-xcode-multiple-installs">Choosing an Xcode</a>.</li>
-<li><strong>Persona:</strong> edit the <code>persona</code> row text in the same file.</li>
-<li><strong>Sync skills after Xcode updates:</strong> re-run <code>./install.sh</code> (skills are replaced, preset is backed up).</li>
-<li><strong>Keep in sync with upstream <code>standard</code> preset:</strong> <code>diff</code> against <code>node_modules/@deepseek-ai/dsh/config/agent-presets/standard/agent.cordis.yml</code>.</li>
+<li><strong>更换 Xcode</strong>：重跑 <code>./install.sh</code>（选择器）、<code>./install.sh --xcode &lt;路径&gt;</code>（非交互）、<code>--runtime-selectable</code> + <code>DSH_XCODE_DEVELOPER_DIR</code>，或在 <code>mcp-xcode</code> 行加 <code>env: { MCP_XCODE_PID: &#39;&lt;pid&gt;&#39; }</code> 指定某个正在运行的实例。详见<a href="#%E9%80%89%E6%8B%A9-xcode%E5%A4%9A%E7%89%88%E6%9C%AC%E5%85%B1%E5%AD%98">选择 Xcode（多版本共存）</a>。</li>
+<li><strong>persona</strong>：编辑同文件的 <code>persona</code> 行文本。</li>
+<li><strong>Xcode 升级后同步技能</strong>：重跑 <code>./install.sh</code>（技能整体替换，preset 自动备份）。</li>
+<li><strong>对齐上游 standard preset</strong>：与 <code>node_modules/@deepseek-ai/dsh/config/agent-presets/standard/agent.cordis.yml</code> 做 <code>diff</code>。</li>
 </ul>
-<h3>Security notes</h3>
+<h3>安全说明</h3>
 <ul>
-<li>MCP tool calls do <strong>not</strong> go through the DSH file sandbox — they go through the tool-approval flow. <code>XcodeUpdate</code>/<code>XcodeWrite</code> modify real Xcode project files (including <code>project.pbxproj</code>).</li>
-<li>The preset only activates when you select it; no global config is touched by <code>install.sh</code>.</li>
+<li>MCP 工具调用<strong>不经过 DSH 文件沙箱</strong>，走工具级审批流程。<code>XcodeUpdate</code>/<code>XcodeWrite</code> 会直接修改真实 Xcode 工程文件（含 <code>project.pbxproj</code>）。</li>
+<li>preset 仅在你主动选择时激活；<code>install.sh</code> 不触碰任何全局配置。</li>
 </ul>
-<h3>Contributing</h3>
-<p>PRs welcome. Open an issue for feature requests. If you publish your own DSH extension, add the <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> topic for discoverability and consider submitting it to <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a>.</p>
-<h3>License</h3>
-<p><a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/LICENSE">MIT</a>. The Xcode AI skills are generated on your machine from your own Xcode installation and remain subject to Apple&#39;s license; the persona prompt style is adapted from Xcode Intelligence templates (behavioral guidance, not Apple source text).</p>
+<h3>参与贡献</h3>
+<p>欢迎 PR 与 issue。如果你发布自己的 DSH 扩展，请打上 <a href="https://github.com/topics/dsh-plugin"><code>dsh-plugin</code></a> 话题，并考虑提交到 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a>。</p>
+<h3>许可证</h3>
+<p><a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/LICENSE">MIT</a>。Xcode AI 技能由安装脚本在你的机器上从你自己的 Xcode 生成，仍受 Apple 许可约束；persona 提示词风格改编自 Xcode Intelligence 模板（行为指导，非 Apple 源码文本）。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/jihongboo/dsh-apple-mode/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -199,335 +199,312 @@ footer p+p{margin-top:.5rem}
 <a href="https://github.com/Nwflower/dsh-file-claim/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
 <a href="https://github.com/Nwflower/dsh-file-claim/blob/main/package.json"><img src="https://img.shields.io/badge/node-%3E%3D18-green.svg" alt="node"></a></p>
 <blockquote>
-<p><strong>Write in parallel. Never overwrite.</strong>
-File claim / protection for concurrent DeepSeek Harness (DSH) sessions working the same workspace.</p>
+<p><strong>并行写作，永不覆盖。</strong>
+同一工作区并行 DeepSeek Harness (DSH) 会话的文件认领/保护插件。</p>
 </blockquote>
-<p>When several DSH sessions run in parallel against one workspace, they have no awareness of each
-other: two sessions can overwrite the same file, a crashed session leaves stale state behind, and a
-session that wants to edit a file another session owns can only wait or guess. <code>dsh-file-claim</code>
-turns a proven coordination protocol into native DSH tools, lifecycle events, and a write guard —
-so parallel agents cooperate instead of clobbering each other.</p>
-<pre><code class="language-text">claim_files({ paths: [&quot;README.md&quot;] })   # &quot;I&#39;m editing this&quot;
-write / edit ...                          # writes to files claimed by others are denied
-release_files({ paths: [&quot;README.md&quot;] })  # &quot;done — pending edits auto-merge now&quot;
+<p>多个 DSH 会话并行操作同一工作区时，彼此毫无感知：两个会话可能覆盖同一文件、崩溃会话留下
+陈旧状态、想改他人已占文件的会话只能干等或赌。<code>dsh-file-claim</code> 把一套久经验证的协调协议做成
+原生 DSH 工具、生命周期事件与写入守卫——让并行 Agent 协作而非互相踩踏。</p>
+<pre><code class="language-text">claim_files({ paths: [&quot;README.md&quot;] })   # 「我来改这个文件」
+write / edit ...                          # 写他人认领的文件会被拒绝
+release_files({ paths: [&quot;README.md&quot;] })  # 「改完了」——等待中的 pending 编辑现在自动合并
 </code></pre>
-<h3>Table of Contents</h3>
+<h3>目录</h3>
 <ul>
-<li><a href="#features">Features</a></li>
-<li><a href="#why">Why</a></li>
-<li><a href="#install">Install</a></li>
-<li><a href="#quick-start">Quick Start</a></li>
-<li><a href="#usage-examples">Usage Examples</a></li>
-<li><a href="#tools">Tools</a></li>
-<li><a href="#commands">Commands</a></li>
-<li><a href="#write-guard">Write Guard</a></li>
-<li><a href="#configuration">Configuration</a></li>
-<li><a href="#audit-log">Audit Log</a></li>
-<li><a href="#pending-merge-area">Pending Merge Area</a></li>
-<li><a href="#enforcement-boundary">Enforcement Boundary</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#development">Development</a></li>
-<li><a href="#related-projects">Related Projects</a></li>
-<li><a href="#license">License</a></li>
+<li><a href="#%E7%89%B9%E6%80%A7">特性</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AE%83">为什么需要它</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85">安装</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B">使用示例</a></li>
+<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
+<li><a href="#%E5%91%BD%E4%BB%A4">命令</a></li>
+<li><a href="#%E5%86%99%E5%85%A5%E5%AE%88%E5%8D%AB">写入守卫</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
+<li><a href="#%E5%AE%A1%E8%AE%A1%E6%97%A5%E5%BF%97">审计日志</a></li>
+<li><a href="#pending-%E5%90%88%E5%B9%B6%E5%8C%BA">Pending 合并区</a></li>
+<li><a href="#%E6%8B%A6%E6%88%AA%E8%BE%B9%E7%95%8C">拦截边界</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</a></li>
+<li><a href="#%E5%BC%80%E5%8F%91">开发</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E9%A1%B9%E7%9B%AE">相关项目</a></li>
+<li><a href="#%E8%AE%B8%E5%8F%AF%E8%AF%81">许可证</a></li>
 </ul>
-<h3>Features</h3>
+<h3>特性</h3>
 <ul>
-<li>🔒 <strong>claim / release</strong> — a session declares exclusive ownership of file paths before editing
-them; duplicates merge idempotently, directory claims cover descendants, and <code>&#39;.&#39;</code> claims the
-whole workspace.</li>
-<li>❤️ <strong>heartbeat + stale takeover</strong> — heartbeats refresh automatically via agent lifecycle events;
-a crashed session&#39;s claims expire (default 2h) and can be taken over with <code>--force</code>.</li>
-<li>🧩 <strong>async pending merge area</strong> — instead of blocking, a session writes its edited content plus
-the git HEAD base into a pending area; when the owner releases, the entry is <strong>auto-merged</strong> via
-a <strong>git 3-way merge</strong> (<code>current × base × pending</code>) when conflict-free, or applied manually with
-<code>pending apply</code> when it conflicts.</li>
-<li>🛡️ <strong>write guard</strong> — a <code>tools/pre-execute</code> guard refuses writes to files actively claimed by
-another session, with a hint (wait / takeover when stale / pend) and an opt-in commit guard.</li>
-<li>⚡ <strong>zero automation burden</strong> — <code>agent/created</code> / <code>agent/status</code> refresh the heartbeat, and
-<code>agent/disposed</code> auto-releases every claim of a departed session.</li>
-<li>📦 <strong>pure Host plugin, zero dependencies</strong> — no Browser side, no build step, <code>node:</code> builtins
-only; Windows-friendly.</li>
-<li>🧾 <strong>audit trail</strong> — every claim / release / takeover / pending mutation is appended as one JSON
-line, for traceability and post-crash reconciliation.</li>
+<li>🔒 <strong>claim / release</strong> —— 会话在编辑前声明对文件路径的独占认领；重复认领幂等合并，目录
+认领覆盖其下所有路径，<code>&#39;.&#39;</code> 认领整个工作区。</li>
+<li>❤️ <strong>心跳 + stale 接管</strong> —— 心跳经 agent 生命周期事件自动刷新；崩溃会话的认领过期（默认
+2h）后可用 <code>--force</code> 接管。</li>
+<li>🧩 <strong>异步 pending 合并区</strong> —— 不阻塞：会话把「改好的新内容 + git HEAD base」写入待合并区；
+持有者 release 后<strong>自动尝试</strong> <strong>git 三路合并</strong>（current × base × pending），无冲突即落盘；
+冲突时 <code>pending apply</code> 手动处理。</li>
+<li>🛡️ <strong>写入守卫</strong> —— <code>tools/pre-execute</code> 拒绝写他人活跃认领文件的工具调用，附建议
+（等待 / stale 后接管 / 写入 pending），并有可选的 commit 级守卫。</li>
+<li>⚡ <strong>零自动化负担</strong> —— <code>agent/created</code> / <code>agent/status</code> 自动刷新心跳，<code>agent/disposed</code>
+自动释放离开会话的全部认领。</li>
+<li>📦 <strong>纯 Host 插件、零依赖</strong> —— 无 Browser 侧、无构建步骤，只用 <code>node:</code> 内置模块；
+Windows 友好。</li>
+<li>🧾 <strong>审计日志</strong> —— 每次 claim / release / 接管 / pending 变更追加一行 JSON，供追溯与
+崩溃后核对。</li>
 </ul>
-<h3>Why</h3>
-<p>The DSH host has no built-in cross-session file protection, and a full scan of 505
-<code>dsh-plugin</code> topic repositories found <strong>zero</strong> file-claim/coordination plugins. The pending merge
-area — write your edit now, merge it cleanly once the owner releases — is unique in the agent
-file-lock category. This is a gap-filler, not a duplicate.</p>
-<h4>Compared with the category</h4>
-<p>Checked against 11 Claude Code / Codex file-lock and coordination tools (claude-code-file-locks,
-parallel-sessions, guardex, agent-orchestrator, blackboard-mcp, mclaude, ruah-orch, knot, …):</p>
+<h3>为什么需要它</h3>
+<p>DSH 宿主无内建跨会话文件保护；505 个 <code>dsh-plugin</code> topic 仓库全量扫描<strong>零命中</strong>
+文件认领/协调类插件。pending 合并区——现在写下改动、持有者释放后干净合并——在 agent
+文件锁品类内独有。这是<strong>填补空白而非重复造轮子</strong>。</p>
+<h4>与同类方案对比</h4>
+<p>对照 11 个 Claude Code / Codex 文件锁与协调工具（claude-code-file-locks、parallel-sessions、
+guardex、agent-orchestrator、blackboard-mcp、mclaude、ruah-orch、knot 等）：</p>
 <table>
 <thead>
 <tr>
-<th>Differentiator</th>
+<th>差异化</th>
 <th>dsh-file-claim</th>
-<th>Typical alternatives</th>
+<th>同类方案</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Conflict handling</td>
-<td><strong>async pending area + git 3-way merge</strong> — write now, merge cleanly once the owner releases</td>
-<td>wait / deny only (&quot;lock → write → release&quot;)</td>
+<td>冲突处理</td>
+<td><strong>pending 异步区 + git 三路合并</strong>——先写入、对方释放后干净合并</td>
+<td>只能等待/拒绝（「锁→写→释放」）</td>
 </tr>
 <tr>
-<td>Target platform</td>
-<td><strong>DSH-native</strong> — identity, tools, events, guard and slash commands all integrated</td>
-<td>Claude Code / Codex hooks; none target DSH</td>
+<td>目标平台</td>
+<td><strong>DSH 原生</strong>——身份、工具、事件、守卫、命令全集成</td>
+<td>Claude Code / Codex hooks；无一面向 DSH</td>
 </tr>
 <tr>
-<td>Platform support</td>
-<td>zero-dependency Node, <strong>Windows-friendly</strong></td>
-<td>Bash/jq/flock solutions lean macOS/Linux; guardex has no native Windows</td>
+<td>平台支持</td>
+<td>零依赖 Node，<strong>Windows 友好</strong></td>
+<td>Bash/jq/flock 方案偏 macOS/Linux；guardex 无原生 Windows</td>
 </tr>
 <tr>
-<td>Enforcement</td>
-<td>cooperative tool-layer guardrail (fail-open, matching the category&#39;s de-facto standard)</td>
-<td>hook interception / declarative locks; top tools fall back to worktree isolation</td>
+<td>强制层</td>
+<td>工具层协作式护栏（fail-open，与品类事实标准一致）</td>
+<td>hook 拦截/声明式锁；头部工具退化为 worktree 硬隔离</td>
 </tr>
 </tbody></table>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin add dsh-file-claim
 </code></pre>
-<p>For development / manual verification against a local checkout:</p>
-<pre><code class="language-sh">dsh plugin --profile web add -w link:&lt;repo-path&gt;
+<p>开发/手工验证（本地 checkout）：</p>
+<pre><code class="language-sh">dsh plugin --profile web add -w link:&lt;仓库路径&gt;
 </code></pre>
-<p>Requires DSH with <code>node &gt;= 18</code> and <code>git</code> on <code>PATH</code> (used only by the 3-way merge).</p>
-<h3>Quick Start</h3>
+<p>要求 DSH 环境 <code>node &gt;= 18</code>，且 <code>git</code> 在 <code>PATH</code> 中（仅三路合并时使用）。</p>
+<h3>快速开始</h3>
 <ol>
-<li><strong>Claim before you write.</strong> Editing files? Call <code>claim_files</code> first — it declares exclusive
-ownership so other sessions leave them alone.</li>
-<li><strong>Write freely.</strong> Your own claims never block you; writes to files actively claimed by
-<em>another</em> session are denied with a hint (wait / takeover when stale / pend).</li>
-<li><strong>Busy file? Don&#39;t wait — pend.</strong> Use <code>pending_write</code> to drop your edited content into the
-pending area (with the git HEAD base). Once the owner calls <code>release_files</code>, the entry is
-auto-merged when conflict-free — or run <code>pending_apply</code> manually for a clean 3-way merge.</li>
-<li><strong>Release when done.</strong> <code>release_files</code> clears your claims, auto-merges waiting pending entries,
-and surfaces the ones that need manual attention.</li>
+<li><strong>先认领，再落笔。</strong> 要改文件？先调用 <code>claim_files</code> 声明独占认领，其他会话就不会碰它。</li>
+<li><strong>放心写。</strong> 自己的认领永不阻塞自己；写入被<em>其他</em>活跃会话认领的文件会被拒绝，并附带提示
+（等待 / 对方 stale 后接管 / 写入 pending）。</li>
+<li><strong>文件被占？别干等——写入 pending。</strong> 用 <code>pending_write</code> 把改好的内容（含 git HEAD base）
+放进待合并区。持有者 <code>release_files</code> 后自动三路合并（无冲突即落盘）；冲突时 <code>pending_apply</code>
+手动处理。</li>
+<li><strong>写完释放。</strong> <code>release_files</code> 清空认领、自动合并等待中的 pending 条目，并浮出需要手动
+处理的条目。</li>
 </ol>
 <pre><code class="language-text">claim_files({ paths: [&quot;README.md&quot;, &quot;src/&quot;] })
 write / edit ...
 release_files({ paths: [&quot;README.md&quot;] })
 </code></pre>
-<h3>Usage Examples</h3>
-<p><strong>Two sessions, one workspace.</strong> Session A owns <code>README.md</code>; session B wants to edit it too:</p>
-<pre><code class="language-text">// Session A
-claim_files({ paths: [&quot;README.md&quot;], note: &quot;rewriting the docs&quot; })
-write  ...  README.md          // allowed: own claim
+<h3>使用示例</h3>
+<p><strong>两个会话，一个工作区。</strong> 会话 A 持有 <code>README.md</code>；会话 B 也想改它：</p>
+<pre><code class="language-text">// 会话 A
+claim_files({ paths: [&quot;README.md&quot;], note: &quot;重写文档&quot; })
+write  ...  README.md          // 允许：自己的认领
 release_files({ paths: [&quot;README.md&quot;] })
 
-// Session B — meanwhile
-who_claims({ paths: [&quot;README.md&quot;] })          // → claimed by A
-write ... README.md                           // → DENIED with a hint
-pending_write({ path: &quot;README.md&quot;, content: &quot;...&quot; })  // async, no blocking
-// When A releases, the entry is auto 3-way merged (or surfaced for manual pending_apply)
+// 会话 B —— 同时进行
+who_claims({ paths: [&quot;README.md&quot;] })          // → 被 A 认领
+write ... README.md                           // → 拒绝并附提示
+pending_write({ path: &quot;README.md&quot;, content: &quot;...&quot; })  // 异步，不阻塞
+// A release 后条目自动三路合并（或浮出供手动 pending_apply）
 </code></pre>
-<p><strong>Recover from a crashed session.</strong> Session A dies mid-work; its claims expire after <code>staleMs</code>
-(2h default), then:</p>
-<pre><code class="language-text">claim_status()                      # → A shows [stale]
-claim_files({ paths: [&quot;README.md&quot;], force: true })   # take over
+<p><strong>从崩溃会话恢复。</strong> 会话 A 中途崩溃；其认领在 <code>staleMs</code>（默认 2h）后过期：</p>
+<pre><code class="language-text">claim_status()                      # → A 显示 [stale]
+claim_files({ paths: [&quot;README.md&quot;], force: true })   # 接管
 </code></pre>
-<h3>Tools</h3>
-<p>Eight model-facing tools (identity is the calling session — no <code>--as</code> needed):</p>
+<h3>工具</h3>
+<p>8 个模型可见工具（身份即调用会话，无需 <code>--as</code>）：</p>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Purpose</th>
+<th>工具</th>
+<th>用途</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>claim_files</code></td>
-<td>Claim file/dir paths exclusively before editing (<code>paths</code>, optional <code>note</code>, <code>force</code> for stale takeover)</td>
+<td>编辑前独占认领文件/目录（<code>paths</code>、可选 <code>note</code>、stale 接管用 <code>force</code>）</td>
 </tr>
 <tr>
 <td><code>release_files</code></td>
-<td>Release paths (<code>paths</code>) or everything (<code>all</code>)</td>
+<td>释放指定路径（<code>paths</code>）或全部（<code>all</code>）</td>
 </tr>
 <tr>
 <td><code>who_claims</code></td>
-<td>Read-only: who claims given paths</td>
+<td>只读：查询路径被谁认领</td>
 </tr>
 <tr>
 <td><code>claim_status</code></td>
-<td>Read-only: session registry, claims, pending area overview, recent audit</td>
+<td>只读：会话登记、认领、待合并区总览与最近审计</td>
 </tr>
 <tr>
 <td><code>pending_write</code></td>
-<td>Async write: put edited content (+ git HEAD base) into the pending area for a file actively claimed by another session</td>
+<td>异步写：目标被其他活跃会话占用时，把改好的内容（+ git HEAD base）写入待合并区</td>
 </tr>
 <tr>
 <td><code>pending_apply</code></td>
-<td>3-way merge <code>current × base × pending</code> onto disk; conflict-free auto-clears, conflicts leave markers</td>
+<td>三路合并 <code>current × base × pending</code> 落盘；无冲突自动清除，冲突写标记</td>
 </tr>
 <tr>
 <td><code>pending_show</code></td>
-<td>Read-only: view one pending entry&#39;s meta and content</td>
+<td>只读：查看某待合并条目的元信息与内容</td>
 </tr>
 <tr>
 <td><code>pending_drop</code></td>
-<td>Discard one pending entry (no merge)</td>
+<td>丢弃某待合并条目（不合并）</td>
 </tr>
 </tbody></table>
-<h3>Commands</h3>
-<p>Human-usable slash commands (same semantics as the tools above — useful when the model is
-unavailable, or for shell-bound users). The line after the command name is split quote-aware, so
-paths and notes containing spaces work (<code>--note &quot;multi word note&quot;</code>). Command runs are recorded in
-the session log only, never fed to the model.</p>
+<h3>命令</h3>
+<p>人工可用的斜杠命令（与上述工具同语义——模型不可用或习惯命令行时使用）。命令名后的行按
+引号感知分词，含空格的路径与备注可用（<code>--note &quot;多 行 备注&quot;</code>）。命令执行只记入会话日志，
+绝不进模型历史。</p>
 <table>
 <thead>
 <tr>
-<th>Command</th>
-<th>Purpose</th>
+<th>命令</th>
+<th>用途</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>/claim &lt;path&gt;... [--note &lt;text&gt;] [--force]</code></td>
-<td>Claim file/dir paths exclusively; <code>--force</code> takes over a stale holder</td>
+<td><code>/claim &lt;path&gt;... [--note &lt;备注&gt;] [--force]</code></td>
+<td>独占认领文件/目录；<code>--force</code> 接管 stale 持有者</td>
 </tr>
 <tr>
 <td><code>/release [&lt;path&gt;... | --all]</code></td>
-<td>Release paths or everything</td>
+<td>释放指定路径或全部</td>
 </tr>
 <tr>
 <td><code>/claim-status</code></td>
-<td>Read-only: session registry, claims, pending area overview</td>
+<td>只读：会话登记、认领与待合并区总览</td>
 </tr>
 </tbody></table>
-<p>The standalone core also ships a CLI: <code>node claim.mjs status | audit [n] | claim ...</code> — same
-semantics, no DSH required.</p>
-<h3>Write Guard</h3>
-<p><code>tools/pre-execute</code> denies <code>write</code> / <code>edit</code> / <code>bash</code> / <code>pwsh</code> calls whose target path is actively
-claimed by <strong>another</strong> session. The denial message names the holder and suggests: wait for
-<code>release_files</code>, take over with <code>claim_files(force: true)</code> once stale, or use <code>pending_write</code>.
-<code>read</code> is <strong>not</strong> intercepted — reading is observation, not modification, and the claim contract
-only protects the write surface. Shell-path parsing (<code>bash</code>/<code>pwsh</code>) is best-effort: only
-<strong>redirection targets</strong> and the target arguments of <strong>explicit write commands</strong> are extracted
-(pwsh <code>Set-Content</code> / <code>Add-Content</code> / <code>Out-File</code> / <code>New-Item</code> / <code>Copy-Item</code> / <code>Move-Item</code> /
-<code>Remove-Item</code> / <code>Rename-Item</code>; bash <code>tee</code> / <code>dd of=</code> / <code>cp</code> / <code>mv</code> / <code>rm</code>). Quoted literals are
-<strong>never</strong> treated as write targets — they are data, URLs or patterns, not files being written —
-and commands that yield no parseable target pass through (fail-open).</p>
-<p>With <code>guardCommit: true</code>, a <code>git commit</code> that explicitly stages paths actively claimed by another
-session (<code>git commit -- &lt;path&gt;</code> or legacy <code>git commit &lt;path&gt;</code>) is also denied; commit messages are
-never inspected, and a bare <code>git commit</code> (no paths) passes through — its scope cannot be known.</p>
-<h3>Configuration</h3>
-<p>Passed as plugin config in the bundle (<code>cordis.patch.yml</code>):</p>
+<p>纯逻辑核心同时提供 CLI：<code>node claim.mjs status | audit [n] | claim ...</code>——语义相同，
+无需 DSH 环境。</p>
+<h3>写入守卫</h3>
+<p><code>tools/pre-execute</code> 拒绝 <code>write</code> / <code>edit</code> / <code>bash</code> / <code>pwsh</code> 调用中目标路径被<strong>其他</strong>活跃会话
+认领的情况。拒绝信息带持有者与建议：等 <code>release_files</code>、对方 stale 后 <code>claim_files(force: true)</code>
+接管、或 <code>pending_write</code> 异步写入。<code>read</code> <strong>不拦截</strong>——读取是观察不是修改，认领契约只保护写面。
+shell 路径解析（<code>bash</code>/<code>pwsh</code>）为尽力而为：只提取<strong>重定向目标</strong>与<strong>显式写命令的目标参数</strong>
+（pwsh <code>Set-Content</code> / <code>Add-Content</code> / <code>Out-File</code> / <code>New-Item</code> / <code>Copy-Item</code> / <code>Move-Item</code> /
+<code>Remove-Item</code> / <code>Rename-Item</code>；bash <code>tee</code> / <code>dd of=</code> / <code>cp</code> / <code>mv</code> / <code>rm</code>）。<strong>引号字面量绝不
+视为写目标</strong>——它们是数据/URL/模式，不是要写的文件；解析不出目标即放行（fail-open）。</p>
+<p>开启 <code>guardCommit: true</code> 后，<code>git commit</code> <strong>显式</strong>提交其他会话活跃认领路径（<code>git commit -- &lt;path&gt;</code>
+或老语法 <code>git commit &lt;path&gt;</code>）也会被拒绝；提交信息（message）绝不检查，裸 <code>git commit</code>（无路径）
+放行——其改动范围无法获知。</p>
+<h3>配置</h3>
+<p>在 bundle（<code>cordis.patch.yml</code>）中作为插件 config 传入：</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>键</th>
+<th>默认</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>staleMs</code></td>
-<td><code>7200000</code> (2h)</td>
-<td>Heartbeat expiry before a session is considered stale</td>
+<td><code>7200000</code>（2h）</td>
+<td>心跳过期多久视为 stale</td>
 </tr>
 <tr>
 <td><code>stateDirName</code></td>
 <td><code>.dsh-file-claim</code></td>
-<td>Registry + pending area directory under the workspace root</td>
+<td>工作区根下的注册表 + 待合并区目录名</td>
 </tr>
 <tr>
 <td><code>guard</code></td>
 <td><code>true</code></td>
-<td>Set <code>false</code> to disable the pre-execute write guard</td>
+<td>设 <code>false</code> 关闭 pre-execute 写入守卫</td>
 </tr>
 <tr>
 <td><code>guardCommit</code></td>
 <td><code>false</code></td>
-<td>Opt-in: also deny <code>git commit</code> that explicitly stages paths actively claimed by another session</td>
+<td>可选：额外拦截 <code>git commit</code> 显式提交其他会话活跃认领的路径</td>
 </tr>
 <tr>
 <td><code>heartbeatMs</code></td>
-<td><code>600000</code> (10min)</td>
-<td>Fallback heartbeat interval</td>
+<td><code>600000</code>（10min）</td>
+<td>兜底心跳间隔</td>
 </tr>
 </tbody></table>
 <pre><code class="language-yaml">- insert:
     - id: dsh-file-claim
       name: dsh-file-claim
       config:
-        staleMs: 3600000        # 1h
-        guardCommit: true       # also guard explicit git commits
+        staleMs: 3600000        # 1 小时
+        guardCommit: true       # 同时守卫显式 git commit
 </code></pre>
-<p>The claim registry and pending area live in <code>&lt;workspaceRoot&gt;/&lt;stateDirName&gt;/</code> — recommend adding it
-to <code>.gitignore</code>. State survives restarts; nothing ever touches <code>.git/</code>.</p>
-<h3>Audit Log</h3>
-<p>Every business mutation — claim, takeover, release, pending write / apply / drop, prune, drop — is
-appended as one JSON line to <code>&lt;stateDir&gt;/audit.jsonl</code> (<code>{ at, tag, type, paths/path, detail }</code>),
-for traceability and post-crash reconciliation. Heartbeats are intentionally <strong>not</strong> logged (noise).
-<code>node claim.mjs audit [n]</code> prints the latest <code>n</code> entries (default 10); <code>claim_status</code> always shows
-the three most recent. Audit writes are append-only and never block or alter claim semantics; a
-failed audit append surfaces a warning line without failing the operation. The file self-rotates
-at 1 MB (keeping the most recent half plus the new entry), so it never grows without bound.</p>
-<h3>Pending Merge Area</h3>
-<p>Storage layout (under <code>&lt;workspaceRoot&gt;/&lt;stateDirName&gt;/pending/</code>):</p>
-<pre><code class="language-text">pending/&lt;relpath&gt;/content     new file content to merge
-pending/&lt;relpath&gt;/base        git HEAD version at write time (merge base)
+<p>认领注册表与待合并区位于 <code>&lt;工作区根&gt;/&lt;stateDirName&gt;/</code>——建议加入 <code>.gitignore</code>。状态跨重启
+保留；绝不触碰 <code>.git/</code>。</p>
+<h3>审计日志</h3>
+<p>每个业务变更——claim、接管、release、pending 写/apply/drop、prune、drop——都以一行 JSON
+追加到 <code>&lt;stateDir&gt;/audit.jsonl</code>（<code>{ at, tag, type, paths/path, detail }</code>），供追溯与崩溃后核对。
+心跳<strong>刻意不记</strong>（避免噪音）。<code>node claim.mjs audit [n]</code> 打印最近 <code>n</code> 条（默认 10）；
+<code>claim_status</code> 恒显示最近 3 条。审计只追加、不参与也不改变认领语义；审计写入失败只会提示
+警告行，不阻断操作。文件超过 1MB 自动轮转（保留最近一半 + 新条目），不会无限增长。</p>
+<h3>Pending 合并区</h3>
+<p>存储布局（<code>&lt;工作区根&gt;/&lt;stateDirName&gt;/pending/</code> 下）：</p>
+<pre><code class="language-text">pending/&lt;relpath&gt;/content     待合并的新文件内容
+pending/&lt;relpath&gt;/base        写入时 git HEAD 版本（合并 base）
 pending/&lt;relpath&gt;/meta.json   { pender, claimedBy, at, baseSha }
 </code></pre>
-<p>Write conditions: <code>pending_write</code> requires the target to be actively claimed by another session —
-otherwise write the file directly after <code>claim_files</code>. <code>base</code> is only recorded when <code>git HEAD</code>
-contains the path; a missing base is a deliberate non-mergeable entry.</p>
-<p>Apply semantics (<code>pending_apply</code>): runs <code>git merge-file</code> over <code>current × base × pending</code> (three
-real file snapshots staged in a temp dir). No conflicts → merged content lands on disk and the
-entry is cleared. Conflicts → the merged output (with conflict markers) lands on disk and the
-entry is <strong>kept</strong> for manual resolution. Missing base → refused, never a blind merge. Active claim
-by any session → refused until released.</p>
-<p><code>release_files</code> runs an unlock check: pending entries aimed at the released paths (or at the
-releasing session) are <strong>auto-merged</strong> when the 3-way merge is conflict-free (content lands on
-disk, entry cleared); entries that cannot merge — still occupied, missing base, conflicts, or
-missing file — stay pending and are surfaced with manual <code>pending_apply</code> / <code>pending_show</code> /
-<code>pending_drop</code> hints.</p>
-<h3>Enforcement Boundary</h3>
-<p>The guard is <strong>advisory / cooperative</strong>, not a mandatory lock: arbitrary shell commands
-(<code>echo &gt; file</code>, <code>git checkout</code>, scripts), external editors, and IDE/git operations bypass the tool
-stack entirely. It upgrades &quot;self-discipline via AGENTS.md&quot; to &quot;tool-layer guardrail + model-visible
-state&quot;, matching the fail-open posture of the whole category.</p>
-<h3>FAQ</h3>
-<p><strong>Can bash/pwsh writes be fully intercepted?</strong> No. Only redirection targets and the target
-arguments of explicit write commands are parsed; arbitrary shell, scripts, external editors and
-IDE/git operations bypass the tool stack. That is the documented cooperative boundary, not a bug —
-see <a href="#enforcement-boundary">Enforcement Boundary</a>.</p>
-<p><strong>How long until a crashed session&#39;s claims expire?</strong> <code>staleMs</code>, default 2h. Departing sessions
-release automatically via <code>agent/disposed</code>, so stale takeover is only a last-resort fallback.</p>
-<p><strong>Does this work across multiple repos?</strong> Yes. The claim root is the workspace resolved from the
-session&#39;s cwd (<code>workspaceRegistry</code>), falling back to cwd — parallel repos are isolated by design.</p>
-<p><strong>Where is state stored?</strong> <code>&lt;workspaceRoot&gt;/.dsh-file-claim/</code> (registry, pending area, audit).
-Add it to <code>.gitignore</code>; it survives restarts and never touches <code>.git/</code>.</p>
-<p><strong>Why can&#39;t the model see the claim tools?</strong> Model-visible tools depend on the deployment&#39;s tool
-presentation/restrictions (like every plugin tool). The plugin registers globally via
-<code>ctx.tools.register</code>, the same path as official tool packages.</p>
-<p><strong>What if a pending entry can&#39;t merge?</strong> It stays pending with the reason surfaced (still occupied,
-missing base, conflicts, missing file). Use <code>pending_show</code> to inspect and <code>pending_apply</code> /
-<code>pending_drop</code> to resolve — nothing is ever blindly merged.</p>
-<p><strong>Do the registry and audit files grow forever?</strong> No. Stale sessions are pruned automatically on
-the heartbeat interval (so departed sessions&#39; records don&#39;t accumulate), and <code>audit.jsonl</code>
-self-rotates at 1 MB. Both stay bounded in normal use.</p>
-<h3>Development</h3>
-<pre><code class="language-sh">npm test        # node --test: claim.mjs unit tests (17) + index.mjs mock-ctx integration (11)
+<p>写入条件：<code>pending_write</code> 要求目标被其他会话<strong>活跃</strong>认领——否则应 <code>claim_files</code> 后直接写。
+<code>base</code> 仅在 git HEAD 含该路径时记录；无 base 是刻意标注的不可自动合并条目。</p>
+<p>apply 语义（<code>pending_apply</code>）：用 <code>git merge-file</code> 对 <code>current × base × pending</code> 三路合并
+（三个真实文件快照暂存临时目录）。无冲突 → 合并内容落盘并清除条目；有冲突 → 带冲突标记的
+合并结果落盘且条目<strong>保留</strong>供手动解决；缺 base → 拒绝，绝不盲合；任一会话仍活跃占用 →
+拒绝直至释放。</p>
+<p><code>release_files</code> 带解锁检查：指向被释放路径（或释放会话）的待合并条目会<strong>自动尝试三路合并</strong>
+——无冲突即落盘并清除条目；无法自动合并（仍被占用 / 缺 base / 冲突 / 文件缺失）的条目保留，
+并附 <code>pending_apply</code> / <code>pending_show</code> / <code>pending_drop</code> 手动处理提示。</p>
+<h3>拦截边界</h3>
+<p>守卫是<strong>协作式护栏</strong>，不是强制锁：任意 shell 命令（<code>echo &gt; file</code>、<code>git checkout</code>、脚本）、
+外部编辑器、IDE/git 操作完全绕过工具栈。它把「靠 AGENTS.md 自律」升级为「工具层护栏 +
+模型可见状态」，与整个品类的 fail-open 定位一致。</p>
+<h3>常见问题</h3>
+<p><strong>bash/pwsh 写入能完全拦截吗？</strong> 不能。只解析重定向目标与显式写命令的目标参数；任意 shell、
+脚本、外部编辑器与 IDE/git 操作都绕过工具栈。这是文档化的协作边界，不是缺陷——见
+<a href="#%E6%8B%A6%E6%88%AA%E8%BE%B9%E7%95%8C">拦截边界</a>。</p>
+<p><strong>崩溃会话的认领多久过期？</strong> <code>staleMs</code>，默认 2h。离开的会话经 <code>agent/disposed</code> 自动释放，
+stale 接管只是最后的兜底。</p>
+<p><strong>支持多仓库并行吗？</strong> 支持。认领根 = 会话 cwd 解析出的工作区（<code>workspaceRegistry</code>），
+无工作区时回退 cwd——多仓库天然隔离。</p>
+<p><strong>状态存在哪？</strong> <code>&lt;工作区根&gt;/.dsh-file-claim/</code>（注册表、待合并区、审计）。建议加入
+<code>.gitignore</code>；跨重启保留，绝不触碰 <code>.git/</code>。</p>
+<p><strong>为什么模型看不到 claim 工具？</strong> 模型可见工具取决于部署的工具展示/限制（与所有插件工具
+相同）。插件经 <code>ctx.tools.register</code> 全局注册，与官方工具包同一路径。</p>
+<p><strong>pending 条目无法合并怎么办？</strong> 条目保留并附原因（仍被占用 / 缺 base / 冲突 / 文件缺失）。
+用 <code>pending_show</code> 查看、<code>pending_apply</code> / <code>pending_drop</code> 处理——绝不盲合。</p>
+<p><strong>registry 与审计文件会无限增长吗？</strong> 不会。stale 会话在心跳间隔被<strong>自动清理</strong>（离开会话的
+记录不会累积）；<code>audit.jsonl</code> 超 1MB 自动轮转。两者在正常使用下都保持有界。</p>
+<h3>开发</h3>
+<pre><code class="language-sh">npm test        # node --test：claim.mjs 单测（17）+ index.mjs mock ctx 集成（11）
 npm pack --dry-run
 </code></pre>
-<p>Layout: <code>claim.mjs</code> is the zero-dependency pure-logic core (portable, CLI entry retained);
-<code>index.mjs</code> is the only host-facing file; <code>test/</code> covers both. CI runs tests, a bilingual-README
-structure sync check, and a pack dry-run.</p>
-<h3>Related Projects</h3>
+<p>结构：<code>claim.mjs</code> 是零依赖纯逻辑核心（可移植，保留 CLI 入口）；<code>index.mjs</code> 是唯一宿主面文件；
+<code>test/</code> 覆盖两者。CI 跑测试、双语 README 结构同步检查与 pack dry-run。</p>
+<h3>相关项目</h3>
 <ul>
-<li><a href="https://github.com/Nwflower/dsh-chat-import">dsh-chat-import</a> — the sibling DSH plugin whose
-<code>session.mjs</code> coordination protocol this plugin was ported and enhanced from.</li>
-<li><a href="https://github.com/bruc3van/awesome-dsh-plugin">awesome-dsh-plugin</a> — the DSH plugin ecosystem
-index (505 repos scanned during this project&#39;s research).</li>
-<li><a href="https://www.npmjs.com/package/@deepseek-ai/dsh">@deepseek-ai/dsh</a> — the DeepSeek Harness host.</li>
+<li><a href="https://github.com/Nwflower/dsh-chat-import">dsh-chat-import</a> —— 姊妹 DSH 插件，本插件的
+<code>session.mjs</code> 协调协议移植并增强自该项目。</li>
+<li><a href="https://github.com/bruc3van/awesome-dsh-plugin">awesome-dsh-plugin</a> —— DSH 插件生态索引
+（本项目调研时扫描过 505 个仓库）。</li>
+<li><a href="https://www.npmjs.com/package/@deepseek-ai/dsh">@deepseek-ai/dsh</a> —— DeepSeek Harness 宿主。</li>
 </ul>
-<h3>License</h3>
-<p>MIT — see <a href="https://github.com/Nwflower/dsh-file-claim/blob/main/LICENSE">LICENSE</a>.</p>
+<h3>许可证</h3>
+<p>MIT —— 见 <a href="https://github.com/Nwflower/dsh-file-claim/blob/main/LICENSE">LICENSE</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Nwflower/dsh-file-claim/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Nwflower/dsh-file-claim/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

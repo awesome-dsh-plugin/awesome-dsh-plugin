@@ -192,45 +192,42 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/awesome-dsh-plugin/dsh-find-plugin/blob/main/README.zh.md">中文</a></p>
-<p><strong>A plugin that finds plugins</strong> — think <a href="https://skills.sh"><code>/find-skills</code></a> from skills.sh, for DSH.</p>
-<p>Tell your agent what you want (&quot;notify me on WeChat when a task finishes&quot;),
-and it searches the DSH plugin ecosystem on GitHub for you — top results by
-stars, each with a one-line description and an install command.</p>
-<h3>Install</h3>
-<pre><code class="language-sh"># from npm (prebuilt, recommended)
+<p><a href="https://github.com/awesome-dsh-plugin/dsh-find-plugin/blob/main/README.md">English</a> | 中文</p>
+<p><strong>一个用来找插件的插件</strong>——就像 skills.sh 的 <a href="https://skills.sh"><code>/find-skills</code></a>，DSH 版。</p>
+<p>想要什么能力，直接跟 agent 说（比如&quot;任务完成时给我发微信通知&quot;），它就去
+GitHub 上的 DSH 插件生态里帮你搜——按 star 排序，每条带一句话说明和安装
+命令。</p>
+<h3>安装</h3>
+<pre><code class="language-sh"># npm 包（预构建，推荐）
 dsh plugin --profile web add dsh-find-plugin
 
-# or from GitHub
+# 或从 GitHub 安装
 dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin
 </code></pre>
-<h3>Usage</h3>
-<p>Restart <code>dsh web</code> after installing, then just talk to the agent — it calls
-<code>find_dsh_plugin</code> on its own whenever plugin discovery helps:</p>
+<h3>使用</h3>
+<p>安装后重启 <code>dsh web</code>，然后直接跟 agent 对话即可——需要找插件时它会自己调用
+<code>find_dsh_plugin</code>：</p>
 <ul>
-<li>&quot;What terminal TUI plugins are there?&quot;</li>
-<li>&quot;I want to get a WeChat notification when a task finishes — any plugin for that?&quot;</li>
-<li>&quot;Find me something for reviewing git diffs inside DSH.&quot;</li>
+<li>&quot;有什么终端 TUI 插件？&quot;</li>
+<li>&quot;我想任务完成时收到微信通知，有插件吗？&quot;</li>
+<li>&quot;找个能在 DSH 里做 git diff 审查的东西。&quot;</li>
 </ul>
-<p>Each result comes back with stars, a description, the repo link, and a
-ready-to-run <code>dsh plugin add</code> command — ask the agent to install one and
-it can run the command for you.</p>
-<h3>How it works</h3>
+<p>每条结果都带 star 数、功能描述、仓库链接和可直接执行的 <code>dsh plugin add</code>
+安装命令——让 agent 帮你装，它可以直接替你执行。</p>
+<h3>工作方式</h3>
 <ul>
-<li>Live GitHub repository search scoped to the official <code>dsh-plugin</code> topic,
-re-ranked by stars (5-minute per-query cache, anonymous API).</li>
-<li>When a result is also listed on
-<a href="https://awesome-dsh-plugin.com">awesome-dsh-plugin</a>, its hand-written
-bilingual description from <code>plugins.json</code> replaces the GitHub one (the
-<code>lang</code> parameter picks the language) — ranking is untouched.</li>
-<li>Every result comes with a ready-to-run <code>dsh plugin add</code> command. Plugins
-are third-party code — review the source and pin a commit.</li>
+<li>实时搜索打了官方 <code>dsh-plugin</code> topic 的 GitHub 仓库，按 star 数降序
+（每查询 5 分钟缓存，匿名 API）。</li>
+<li>命中 <a href="https://awesome-dsh-plugin.com">awesome-dsh-plugin</a> 精选列表的仓库，
+会换用列表中人工撰写的双语描述（<code>lang</code> 参数选择语言），排序不受影响。</li>
+<li>每条结果附可直接执行的 <code>dsh plugin add</code> 安装命令；插件均为第三方代码，
+请自行审阅源码并锁定 commit。</li>
 </ul>
-<h3>License</h3>
+<h3>许可</h3>
 <p>MIT © awesome-dsh-plugin</p>
 
     </div>
-    <p class="note"><a href="https://github.com/awesome-dsh-plugin/dsh-find-plugin/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/awesome-dsh-plugin/dsh-find-plugin/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

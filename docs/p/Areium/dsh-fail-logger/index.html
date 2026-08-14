@@ -253,10 +253,10 @@ footer p+p{margin-top:.5rem}
 dsh plugin --profile web add dsh-fail-logger
 
 # or pin to an exact version
-dsh plugin --profile web add dsh-fail-logger@0.4.2
+dsh plugin --profile web add dsh-fail-logger@0.4.3
 
 # or GitHub release tag (no npm registry dependency; auditability &amp; rollback)
-dsh plugin --profile web add &quot;github:Areium/dsh-fail-logger#v0.4.2&quot;
+dsh plugin --profile web add &quot;github:Areium/dsh-fail-logger#v0.4.3&quot;
 
 # or manually: merge cordis.patch.yml&#39;s insert entry into ~/.dsh/profiles/web/cordis.patch.yml
 </code></pre>
@@ -328,7 +328,7 @@ tail -20 ~/.dsh/skills/fail-log-guide/SKILL.md
 <pre><code class="language-powershell"># Windows PowerShell variant of step 2
 Get-Content &quot;$env:USERPROFILE\.dsh\skills\fail-log-guide\SKILL.md&quot; -Tail 20
 </code></pre>
-<p>Expected: a <code>FAIL-LOG</code> section with a <code>[read] ENOENT…</code> cause. If missing, check in order: ① startup log <code>[dsh-fail-logger] v0.4.2 active</code>; ② logDir writability warning; ③ whether that profile was restarted after install.</p>
+<p>Expected: a <code>FAIL-LOG</code> section with a <code>[read] ENOENT…</code> cause. If missing, check in order: ① startup log <code>[dsh-fail-logger] v0.4.x active</code>; ② logDir writability warning; ③ whether that profile was restarted after install.</p>
 <h3>License</h3>
 <p>MIT, &#39;deliberate|noise&#39;])</p>
 <pre><code>

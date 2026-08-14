@@ -192,144 +192,142 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Models like DeepSeek-V4-Flash have no web access, or a weak one. ModSearch is a plug-in that greatly strengthens the model&#39;s web search, X search, and single-page fetch.</p>
-<h3>Talk to us</h3>
-<p>Something broken, or something missing? <a href="https://github.com/liustack/modsearch/issues/new/choose">Open an issue</a>. For everything else, come find me on X: <strong><a href="https://x.com/liustack">@liustack</a></strong>. What you built with it, which harness you are on, what should come next. New releases land there first, and a proper community space is on the way.</p>
-<h3>Features</h3>
+<p>DeepSeek-V4-Flash 等模型没有联网能力或联网能力羸弱。ModSearch 通过外挂方式大幅增强模型网页搜索、X 搜索、单页抓取能力。</p>
+<h3>交流</h3>
+<p>用出问题了就<a href="https://github.com/liustack/modsearch/issues/new/choose">提个 issue</a>。其他的都欢迎来 X 上聊：<strong><a href="https://x.com/liustack">@liustack</a></strong>，你用它做了什么、在哪个 harness 上跑、接下来该做什么，新版本也是那边先发。社群正在筹备中。</p>
+<h3>特性</h3>
 <ul>
-<li><strong>🌐 The web plugin for DeepSeek Harness (dsh):</strong> one command, <code>npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modsearch@latest</code>, and dsh&#39;s built-in <code>web_search</code> runs on the modsearch engine chain with no API key, keeping its native citation cards. Two tools dsh does not have land beside it: <code>x_search</code> for X (Twitter) and <code>read_page</code> for focused single-page reading. Details in <a href="https://github.com/liustack/modsearch/blob/main/docs/harness-setup.md#deepseek-harness-dsh">harness setup</a>.</li>
-<li><strong>Completely free.</strong> The default channel is Antigravity CLI, no API key needed. All three fallback channels (Tavily, Exa, Firecrawl) offer monthly free tiers with no card required.</li>
-<li><strong>Automatic failover.</strong> When a channel fails or exhausts its quota, the next one takes over.</li>
-<li><strong>Searches X (Twitter).</strong> With Grok Build installed, ModSearch queries the corpus that web indexes cannot reach.</li>
-<li><strong>Install once, use everywhere.</strong> Works in Claude Code, Codex, Pi, and OpenCode.</li>
+<li><strong>🌐 DeepSeek Harness (dsh) 的 web 插件：</strong> 一条命令 <code>npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modsearch@latest</code>，dsh 内置的 <code>web_search</code> 就跑在 modsearch 引擎链上，无需 API key，原生引用卡片全部保留。旁边再落两个 dsh 没有的工具：搜 X（推特）的 <code>x_search</code> 和带焦点读单页的 <code>read_page</code>。细节见<a href="https://github.com/liustack/modsearch/blob/main/docs/harness-setup.zh-CN.md#deepseek-harness-dsh">接入指南</a>。</li>
+<li><strong>完全免费。</strong> 默认走 Antigravity CLI 通道，无需 API key。三个备用通道（Tavily、Exa、Firecrawl）均有月度免费额度，注册均不要求绑卡。</li>
+<li><strong>自动故障转移。</strong> 一个通道失败或额度耗尽时自动切换下一个。</li>
+<li><strong>可搜索 X（推特）。</strong> 安装 Grok Build 后，可检索网页索引覆盖不到的 X 内容。</li>
+<li><strong>一次安装，多端可用。</strong> 支持 Claude Code、Codex、Pi、OpenCode。</li>
 </ul>
-<h3>Supported engines</h3>
-<p>Any one of these makes search work. Configure with one command each, keys are stored in <code>~/.modsearch/config.json</code> (0600, masked when shown):</p>
+<h3>支持的引擎</h3>
+<p>下面任何一个都能让搜索跑起来。各一条命令配置，key 存在 <code>~/.modsearch/config.json</code>（0600 权限，展示时打码）：</p>
 <table>
 <thead>
 <tr>
-<th align="left">Engine</th>
-<th align="left">Does</th>
-<th align="left">Free tier</th>
-<th align="left">Turn it on</th>
+<th align="left">引擎</th>
+<th align="left">能做什么</th>
+<th align="left">免费额度</th>
+<th align="left">怎么开</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="left">Antigravity CLI</td>
-<td align="left">web search + page fetch</td>
-<td align="left">free, browser sign-in</td>
-<td align="left">install <code>agy</code> and sign in</td>
+<td align="left">网页搜索 + 单页抓取</td>
+<td align="left">免费，浏览器登录</td>
+<td align="left">安装 <code>agy</code> 并登录</td>
 </tr>
 <tr>
 <td align="left">Tavily</td>
-<td align="left">web search</td>
-<td align="left">1,000 credits/month, no card</td>
+<td align="left">网页搜索</td>
+<td align="left">每月 1,000 credits，不绑卡</td>
 <td align="left"><code>modsearch config set tavily.apiKey &lt;key&gt;</code></td>
 </tr>
 <tr>
 <td align="left">Exa</td>
-<td align="left">web search</td>
-<td align="left">$10/month recurring credit (~1,400 searches), no card</td>
+<td align="left">网页搜索</td>
+<td align="left">每月 $10 循环额度（约 1,400 次），不绑卡</td>
 <td align="left"><code>modsearch config set exa.apiKey &lt;key&gt;</code></td>
 </tr>
 <tr>
 <td align="left">Firecrawl</td>
-<td align="left">web search + page fetch</td>
-<td align="left">1,000 credits/month, search even works keyless</td>
+<td align="left">网页搜索 + 单页抓取</td>
+<td align="left">每月 1,000 credits，搜索甚至无 key 可用</td>
 <td align="left"><code>modsearch config set firecrawl.apiKey &lt;key&gt;</code></td>
 </tr>
 <tr>
 <td align="left">Grok Build</td>
-<td align="left">X (Twitter) search</td>
-<td align="left">rides SuperGrok or X Premium</td>
-<td align="left">install <code>grok</code> and sign in</td>
+<td align="left">X（推特）搜索</td>
+<td align="left">随 SuperGrok 或 X Premium 订阅</td>
+<td align="left">安装 <code>grok</code> 并登录</td>
 </tr>
 <tr>
 <td align="left">local</td>
-<td align="left">page fetch</td>
-<td align="left">built in, nothing to install</td>
-<td align="left">nothing</td>
+<td align="left">单页抓取</td>
+<td align="left">内置，零安装</td>
+<td align="left">无需任何操作</td>
 </tr>
 </tbody></table>
-<p>Keys can also come from the environment (<code>TAVILY_API_KEY</code>, <code>EXA_API_KEY</code>, <code>FIRECRAWL_API_KEY</code>). Multiple engines configured means automatic failover, best first. Using a Tavily-, Exa-, or Firecrawl-compatible third-party or self-hosted endpoint? Point the engine at it: <code>modsearch config set tavily.baseURL &lt;url&gt;</code>. Every knob, engine by engine, is in the <a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/configure.md">configuration guide</a>.</p>
-<h3>Installation</h3>
-<p><strong>Step 1, set up a search engine (the only part that needs your hands).</strong> The default engine, Antigravity CLI, requires a browser sign-in that only you can complete:</p>
+<p>key 也可以走环境变量（<code>TAVILY_API_KEY</code>、<code>EXA_API_KEY</code>、<code>FIRECRAWL_API_KEY</code>）。配了多个引擎就自动故障转移，好的优先。想用 Tavily、Exa、Firecrawl 兼容的第三方或自建端点？把引擎指过去即可：<code>modsearch config set tavily.baseURL &lt;url&gt;</code>。每个引擎的全部配置项见<a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/configure.zh-CN.md">配置指南</a>。</p>
+<h3>安装</h3>
+<p><strong>第一步，准备搜索引擎（唯一需要你亲手做的）。</strong> 默认引擎 Antigravity CLI 需要本人在浏览器完成登录：</p>
 <pre><code class="language-bash">curl -fsSL https://antigravity.google/cli/install.sh | bash
-agy                                                           # sign in, then exit
+agy                                                           # 浏览器完成登录后退出
 </code></pre>
-<p>Prefer not to install it? Register a free key with Tavily, Exa, or Firecrawl instead (Tavily 1,000 credits a month, Exa about 1,400 searches a month, Firecrawl 1,000 credits a month, no card required by any of them).</p>
-<p><strong>Step 2, hand the rest to your AI.</strong> Send it this line, along with the key if you chose one:</p>
+<p>不想装它就注册一个免费 key，Tavily、Exa、Firecrawl 任选一家（Tavily 每月 1,000 次，Exa 每月约 1,400 次，Firecrawl 每月 1,000 点，注册均无需绑卡）。</p>
+<p><strong>第二步，剩下的交给你的 AI。</strong> 把这句话发给它，选了 key 的话把 key 一起发：</p>
 <blockquote>
-<p>Install and configure the modsearch skill following <a href="https://github.com/liustack/modsearch/blob/main/INSTALL.md">https://github.com/liustack/modsearch/blob/main/INSTALL.md</a>, then run the health check and tell me the result.</p>
+<p>按 <a href="https://github.com/liustack/modsearch">https://github.com/liustack/modsearch</a> 的 INSTALL.md 安装并配置 modsearch skill，完成后运行体检并把结果告诉我。</p>
 </blockquote>
-<h3>Usage</h3>
-<p>Once installed, just chat. Ask anything that needs checking, or paste a URL, and the skill triggers on its own: it picks an engine, runs the search or fetch, and the answer comes back with sources.</p>
-<h3>See it work</h3>
-<p>Both screenshots are unedited runs from the Codex desktop app, driving a DeepSeek-V4-Flash that has no web access of its own.</p>
-<p>Give it a blog link and ask what the post says. Twenty-five seconds later: a structured summary of the whole post, with no browser involved.</p>
-<p><img src="https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-fetch.png" alt="Text-only DeepSeek summarising a blog link through ModSearch"></p>
-<p>Give it no target at all, just &quot;anything interesting in AI today?&quot;. Thirty-six seconds later: six sourced stories, with a closing note on which details came from aggregation and deserve a second look. The note comes from the <code>uncertainty</code> field.</p>
-<p><img src="https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-search.png" alt="An open-ended question comes back as six sourced stories with a stated confidence caveat"></p>
-<h3>Documentation</h3>
+<h3>用法</h3>
+<p>装好之后不需要记任何命令。正常聊天，提出需要查证的问题或给出一个链接，skill 自动触发：选引擎、跑搜索或抓取，答案带着来源回来。</p>
+<h3>实测</h3>
+<p>两张截图均为 Codex 桌面 App 中的原样记录，驱动的是自身不能联网的 DeepSeek-V4-Flash。</p>
+<p>给出一个博客链接，询问文章内容。25 秒后返回全文的结构化摘要，全程未打开浏览器。</p>
+<p><img src="https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-fetch.png" alt="不能联网的 DeepSeek 通过 ModSearch 总结博客链接"></p>
+<p>不指定目标，只问「今天有什么有趣的 AI 新闻」。36 秒后返回六条带来源的结果，并在结尾说明哪些信息来自检索聚合、细节可能有出入。该提醒来自 <code>uncertainty</code> 字段。</p>
+<p><img src="https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-search.png" alt="开放问题返回六条带来源的结果，并附可信度说明"></p>
+<h3>文档</h3>
 <table>
 <thead>
 <tr>
-<th align="left">Doc</th>
-<th align="left">Read it when</th>
+<th align="left">文档</th>
+<th align="left">适用场景</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="left"><a href="https://github.com/liustack/modsearch/blob/main/INSTALL.md">INSTALL.md</a></td>
-<td align="left">Installing the skill step by step (written for an agent)</td>
+<td align="left">一步步安装 skill（为 agent 编写）</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/cli.md">CLI manual</a></td>
-<td align="left">The CLI the skill drives: flags, config, doctor</td>
+<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/cli.zh-CN.md">CLI 手册</a></td>
+<td align="left">skill 所驱动的 CLI：参数、配置与体检</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/docs/troubleshooting.md">Troubleshooting</a></td>
-<td align="left">A command failed and the message needs decoding</td>
+<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/docs/troubleshooting.zh-CN.md">故障排查</a></td>
+<td align="left">命令报错，查成因和解法</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/configure.md">Configuration</a></td>
-<td align="left">Setting a key, switching engines, fixing config</td>
+<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/configure.zh-CN.md">配置手册</a></td>
+<td align="left">配置 key、切换引擎、排查配置</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/output-schema.md">Output contract</a></td>
-<td align="left">Parsing the JSON or building on it</td>
+<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/skills/modsearch/references/output-schema.zh-CN.md">输出契约</a></td>
+<td align="left">解析 JSON 或构建下游工具</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/docs/harness-setup.md">Harness setup</a></td>
-<td align="left">Wiring it into Codex, Claude Code, OpenCode, or Pi</td>
+<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/docs/harness-setup.zh-CN.md">宿主接入</a></td>
+<td align="left">在 Codex、Claude Code、OpenCode、Pi 中配置</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/docs/security.md">Security</a></td>
-<td align="left">SSRF guards, DNS-rebinding protection, untrusted input</td>
+<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/docs/security.zh-CN.md">安全说明</a></td>
+<td align="left">SSRF 防护、DNS 重绑定防护、不可信输入的处理</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/CHANGELOG.md">CHANGELOG</a></td>
-<td align="left">Finding what changed in a version</td>
+<td align="left"><a href="https://github.com/liustack/modsearch/blob/main/CHANGELOG.md">更新日志</a></td>
+<td align="left">查询版本变更</td>
 </tr>
 </tbody></table>
-<h3>Contributing</h3>
-<p>ModSearch does not accept pull requests. The project is maintained by a single author who reviews every line, which is a deliberate choice for reliability. Two effective ways to contribute:</p>
+<h3>参与方式</h3>
+<p>本仓库不接受 PR。项目由作者独立维护，所有代码经作者本人审阅，这是它可靠性的前提。两种有效的参与方式：</p>
 <ul>
-<li><strong><a href="https://github.com/liustack/modsearch/issues">Open an issue</a>.</strong> Bugs, suggestions, confusing errors, unclear docs. Issues are read and shape what gets built next.</li>
-<li><strong>Fork it.</strong> Under MIT your copy is fully yours to modify and publish.</li>
+<li><strong><a href="https://github.com/liustack/modsearch/issues">提交 issue</a>。</strong> bug、建议、难以理解的报错或文档都欢迎。issue 会被认真阅读，并影响后续开发方向。</li>
+<li><strong>Fork。</strong> MIT 协议下你的副本完全归你，修改和发布不受限制。</li>
 </ul>
-<h3>Shameless plug</h3>
-<p>This project runs on LIUSTACK Skills: <code>shaping</code> before you build, <code>coding</code> while you build, <code>dig</code> when it breaks, <code>snapshot</code> when you hand off. Lighter than Superpowers, and stronger.</p>
-<pre><code class="language-bash">npx -y skills add liustack/liustack -g
-</code></pre>
-<p>⭐ If it helps, star <a href="https://github.com/liustack/modsearch">ModSearch</a> and <a href="https://github.com/liustack/liustack">liustack</a>. Stars are how the next developer finds them.</p>
+<h3>插入硬广一条</h3>
+<p>关注微信公众号「liustack」：AI 工具、实践与想法，第一时间推送。微信扫码，或搜一搜「liustack」：</p>
+<p>⭐ 如果它对你有用，请给 <a href="https://github.com/liustack/modsearch">ModSearch</a> 一个 star，这是其他开发者找到它的方式。</p>
 <h3>Star History</h3>
-<h3>Disclaimer</h3>
-<p>ModSearch is MIT-licensed, so use is not restricted. The author gives no warranty and no endorsement for any particular use, commercial or otherwise. The upstream engines it drives (Antigravity CLI, Tavily, Exa, Firecrawl, Grok Build) each carry their own terms and quotas, and complying with them is the user&#39;s responsibility.</p>
+<h3>免责声明</h3>
+<p>ModSearch 以 MIT 许可发布，使用不受限制。作者不对任何用途（含商业使用）提供保证与背书。上游引擎（Antigravity CLI、Tavily、Exa、Firecrawl、Grok Build）各有自己的条款与额度，遵守这些约束由使用者负责。</p>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/liustack/modsearch/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/liustack/modsearch/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -189,29 +189,29 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-tool-json/blob/main/README.en.md">English</a></p>
-<p>DSH JSON 查询工具插件 —— JMESPath-inspired 路径查询（自定义子集），零依赖递归下降解析器。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-tool-json/blob/main/README.md">中文</a></p>
+<p>DSH JSON query tool plugin — JMESPath-inspired path queries (custom subset) with a zero-dependency recursive-descent parser.</p>
 <p><a href="https://github.com/omdsh-dev/dsh-tool-json/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<h3>为什么需要</h3>
-<p>Agent 处理 JSON 是高频操作——API 返回值、配置文件、工具输出到处都是 JSON。当前做法是起 bash 进程跑 <code>node -e</code> 或 <code>jq</code>，每次都有进程开销和字符串序列化成本。</p>
-<p>DSH 内置 <code>grep</code> 可以做正则匹配，但无法理解 JSON 结构。对于 <code>{&quot;items&quot;:[{&quot;id&quot;:1}]}</code>：</p>
+<h3>Why</h3>
+<p>Handling JSON is a high-frequency operation for agents — API return values, config files, and tool outputs are JSON everywhere. The current approach spawns a bash subprocess to run <code>node -e</code> or <code>jq</code>, incurring subprocess overhead and string serialization costs every time.</p>
+<p>DSH&#39;s built-in <code>grep</code> can do regex matching but cannot understand JSON structure. For <code>{&quot;items&quot;:[{&quot;id&quot;:1}]}</code>:</p>
 <ul>
-<li><code>grep</code> 只能做字符串级搜索，容易误匹配值、key、或嵌套子对象中的同名 key</li>
-<li><code>json</code> 走结构化路径，只匹配指定路径，不混淆 key 和 value</li>
+<li><code>grep</code> only does string-level search, easily false-matching values, keys, or same-named keys in nested sub-objects</li>
+<li><code>json</code> follows structured paths, matching only the specified path without confusing keys and values</li>
 </ul>
-<h3>安全模型</h3>
-<p>手写递归下降解析器，无 <code>eval</code>/<code>new Function</code>；<code>Object.hasOwn</code> 防原型链污染（<code>constructor</code>/<code>__proto__</code> 读取不触发原型链）。资源上限（<strong>对象与字符串两条输入路径统一执行</strong>）：</p>
+<h3>Security model</h3>
+<p>Hand-written recursive-descent parser, no <code>eval</code>/<code>new Function</code>; <code>Object.hasOwn</code> prevents prototype-chain pollution (reading <code>constructor</code>/<code>__proto__</code> does not trigger the prototype chain). Resource limits (<strong>uniformly enforced across both the object and string input paths</strong>):</p>
 <ul>
-<li>查询表达式长度 ≤ 200 字符、解析深度 ≤ 20 层、数组索引必须是安全整数</li>
-<li>字符串输入 ≤ 1,000,000 bytes（UTF-8）；输入嵌套深度 ≤ 100</li>
-<li>单次 wildcard 投影 ≤ 100,000 元素</li>
-<li>只接受 JSON-compatible 值（null/boolean/有限 number/string/array/plain object；拒绝 undefined/BigInt/函数/Date/非有限数）</li>
+<li>Query expression length ≤ 200 characters, parse depth ≤ 20 levels, array indices must be safe integers</li>
+<li>String input ≤ 1,000,000 bytes (UTF-8); input nesting depth ≤ 100</li>
+<li>Single wildcard projection ≤ 100,000 elements</li>
+<li>Only accepts JSON-compatible values (null/boolean/finite number/string/array/plain object; rejects undefined/BigInt/functions/Date/non-finite numbers)</li>
 </ul>
-<p>错误分类（<code>JsonQueryError</code>）：<code>MISSING_PROPERTY</code>（投影内跳过）、<code>TYPE_MISMATCH</code>/<code>INDEX_OUT_OF_BOUNDS</code>/<code>INVALID_QUERY</code>（如实抛错），统一 <code>json:</code> 前缀。</p>
+<p>Error classification (<code>JsonQueryError</code>): <code>MISSING_PROPERTY</code> (skipped inside projections), <code>TYPE_MISMATCH</code>/<code>INDEX_OUT_OF_BOUNDS</code>/<code>INVALID_QUERY</code> (thrown as-is), all with a unified <code>json:</code> prefix.</p>
 <blockquote>
-<p>成本模型（AUDIT-JSON-03）：输入在每次查询前执行<strong>全量校验</strong>（类型/深度/字节/循环/枚举性）——这是有意的安全成本，查询小字段也会完整扫描输入；<code>timeoutMs</code> 无法中断同步校验。</p>
+<p>Cost model (AUDIT-JSON-03): input undergoes <strong>full validation</strong> (type/depth/bytes/cycles/enumerability) before every query — this is an intentional security cost; even querying a small field fully scans the input; <code>timeoutMs</code> cannot interrupt the synchronous validation.</p>
 </blockquote>
-<h3>架构</h3>
+<h3>Architecture</h3>
 <pre><code>DSH Agent
     │ ctx.tools.register()
     ▼
@@ -223,7 +223,7 @@ src/query.ts
     ├── executeQuery() — 执行器（错误分类 + 投影上限）
     └── normalizeInput() — 双形态输入 + assertJsonCompatible 校验
 </code></pre>
-<h3>工具声明</h3>
+<h3>Tool declaration</h3>
 <pre><code class="language-ts">ctx.tools.register(defineTool({
   name: &#39;json&#39;,
   parameters: {
@@ -235,127 +235,127 @@ src/query.ts
   timeoutMs: 1000,
 }))
 </code></pre>
-<p><code>input</code> 双形态：对象直传（模型直接生成参数，零转义）或字符串（bash/read 原文透传），<code>normalizeInput</code> 统一归一化与校验。</p>
-<h3>查询语法（JMESPath-inspired 子集）</h3>
+<p><code>input</code> has two forms: an object passed directly (the model generates the argument directly, zero escaping) or a string (raw passthrough from bash/read); <code>normalizeInput</code> unifies normalization and validation.</p>
+<h3>Query syntax (JMESPath-inspired subset)</h3>
 <table>
 <thead>
 <tr>
-<th>表达式</th>
-<th>示例</th>
-<th>说明</th>
+<th>expression</th>
+<th>example</th>
+<th>description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>点号访问</td>
+<td>Dot access</td>
 <td><code>foo.bar</code></td>
-<td>嵌套对象属性（标识符字符集 <code>[A-Za-z0-9_$</code> + BMP 非 ASCII]）</td>
+<td>Nested object property (identifier charset <code>[A-Za-z0-9_$</code> + BMP non-ASCII)</td>
 </tr>
 <tr>
-<td>方括号索引</td>
+<td>Bracket index</td>
 <td><code>items[0]</code></td>
-<td>数组索引（安全整数）</td>
+<td>Array index (safe integer)</td>
 </tr>
 <tr>
-<td>方括号属性</td>
+<td>Bracket property</td>
 <td><code>items[&#39;key&#39;]</code> / <code>items[&quot;key&quot;]</code></td>
-<td>含特殊字符的属性名</td>
+<td>Property names containing special characters</td>
 </tr>
 <tr>
-<td>通配符投影</td>
+<td>Wildcard projection</td>
 <td><code>items[*].name</code></td>
-<td><strong>仅数组</strong>；提取元素属性</td>
+<td><strong>Arrays only</strong>; extracts element properties</td>
 </tr>
 <tr>
-<td>组合嵌套</td>
+<td>Composition</td>
 <td><code>a.b[0].c.d</code></td>
-<td>以上全部自由组合</td>
+<td>Any combination of the above</td>
 </tr>
 </tbody></table>
-<p><strong>语义边界</strong>（有意不兼容标准 JMESPath，已锁定）：</p>
+<p><strong>Semantic boundaries</strong> (intentionally incompatible with standard JMESPath, locked):</p>
 <ul>
-<li>多级通配符 <code>items[*].tags[*]</code> 返回<strong>嵌套数组</strong>（<code>[[&#39;a&#39;,&#39;b&#39;],[&#39;c&#39;]]</code>），不做标准投影扁平化</li>
-<li>通配符仅作用于数组，不支持对象字段枚举；非对象元素按投影语义跳过；合法 <code>null</code> 结果<strong>保留</strong></li>
-<li>引号属性支持 <code>\\</code> <code>\&#39;</code> <code>\&quot;</code> 三种转义（任意引号包围形式下均可用）；非法转义报错</li>
-<li>投影内只跳过 <code>MISSING_PROPERTY</code>；类型/索引/内部错误如实抛出</li>
+<li>Multi-level wildcards like <code>items[*].tags[*]</code> return <strong>nested arrays</strong> (<code>[[&#39;a&#39;,&#39;b&#39;],[&#39;c&#39;]]</code>) without standard projection flattening</li>
+<li>Wildcards apply to arrays only; object field enumeration is not supported; non-object elements are skipped per projection semantics; legal <code>null</code> results are <strong>preserved</strong></li>
+<li>Quoted properties support three escapes <code>\\</code> <code>\&#39;</code> <code>\&quot;</code> (usable under any quoting form); illegal escapes error</li>
+<li>Only <code>MISSING_PROPERTY</code> is skipped inside projections; type/index/internal errors are thrown as-is</li>
 </ul>
-<p><strong>不支持</strong>（低频场景，bash + node 兜底）：过滤器 <code>[?downloads &gt; 1000]</code>、管道 <code>|</code>、函数调用。</p>
-<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
-<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code> 的隔离 consumer 中完成全链路验证：</p>
+<p><strong>Not supported</strong> (low-frequency scenarios; fall back to bash + node): filters <code>[?downloads &gt; 1000]</code>, pipes <code>|</code>, function calls.</p>
+<h3>npm 0.1.0-rc.6 compatibility (verified)</h3>
+<p>This plugin has been migrated to the npm 0.1.0-rc.6 dependency line and fully verified in an isolated consumer of <code>@deepseek-ai/dsh@0.1.0-rc.6</code>:</p>
 <ul>
-<li><strong>类型/运行时</strong>：<code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code>（peer）；不再依赖 unscoped <code>cordis</code></li>
-<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
-<li><strong>消费验证</strong>：tarball 装入 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
-<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+<li><strong>Types/runtime</strong>: <code>@deepseek-ai/cordis@^4.0.1</code> + <code>@deepseek-ai/dsh-tools@&gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants@&gt;=0.0.1-rc.1 &lt;0.2.0</code> (peer); no longer depends on unscoped <code>cordis</code></li>
+<li><strong>Standalone build</strong>: <code>npm install</code> (devDependencies are self-contained: typescript/vitest/@types/node) → <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>Consumption verification</strong>: tarball installed into the 0.1.0-rc.6 consumer → <code>dsh --profile compat --dump-config</code> shows this plugin&#39;s row → the tool actually registers and executes</li>
+<li><strong>Startup</strong>: <code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code> (lib production mode; do not <code>install -g</code> globally)</li>
 </ul>
-<h3>版本适配</h3>
+<h3>Version adaptation</h3>
 <ul>
-<li><strong>适配 DSH 版本</strong>: DSH 0.1.0-rc.6（npm）</li>
-<li><strong>bundle 声明</strong>: <code>package.json</code> 的 <code>dsh.bundle</code>（patch 指向 <code>cordis.patch.yml</code>）+ <code>exports</code> 导出</li>
-<li><strong>patch 格式</strong>: <code>cordis.patch.yml</code> 使用 <code>- insert:</code> 列表（patch 是 id-targeted 语义，裸 <code>- id:</code> 条目会报 <code>entry not found</code>）</li>
-<li><strong>files</strong>: 发布 tarball 含 <code>lib/</code>、<code>src/</code>、<code>cordis.patch.yml</code></li>
+<li><strong>DSH version adapted</strong>: DSH 0.1.0-rc.6 (npm)</li>
+<li><strong>Bundle declaration</strong>: <code>dsh.bundle</code> in <code>package.json</code> (patch points to <code>cordis.patch.yml</code>) + <code>exports</code> fields</li>
+<li><strong>Patch format</strong>: <code>cordis.patch.yml</code> uses the <code>- insert:</code> list (patches are id-targeted; a bare <code>- id:</code> entry reports <code>entry not found</code>)</li>
+<li><strong>files</strong>: the published tarball contains <code>lib/</code>, <code>src/</code>, <code>cordis.patch.yml</code></li>
 </ul>
-<h3>安装</h3>
-<p>插件源码仓库：<code>https://github.com/omdsh-dev/dsh-tool-json</code>（public）。</p>
-<h4>Profile Bundle（推荐）</h4>
-<p>将本插件作为独立 bundle 安装到 profile（DSH 0.1.0-rc.6，npm）：</p>
+<h3>Installation</h3>
+<p>Plugin source repository: <code>https://github.com/omdsh-dev/dsh-tool-json</code> (public).</p>
+<h4>Profile Bundle (recommended)</h4>
+<p>Install this plugin as a standalone bundle into a profile (DSH 0.1.0-rc.6, npm):</p>
 <pre><code class="language-sh"># 交互式（web）profile
 dsh plugin --profile web add github:omdsh-dev/dsh-tool-json
 # 一次性任务（headless）profile —— dsh run 默认使用 headless
 dsh plugin --profile headless add github:omdsh-dev/dsh-tool-json
 </code></pre>
-<p>包内 <code>dsh.bundle.patch</code>（指向 <code>cordis.patch.yml</code>）会在安装后自动把插件加入 profile 的 layer stack；插件的 <code>cordis.patch.yml</code> 以 <code>- insert:</code> 插入 <code>tool-json</code> 条目。</p>
+<p>The <code>dsh.bundle.patch</code> inside the package (pointing to <code>cordis.patch.yml</code>) automatically adds the plugin to the profile&#39;s layer stack after installation; the plugin&#39;s <code>cordis.patch.yml</code> inserts the <code>tool-json</code> entry via <code>- insert:</code>.</p>
 <blockquote>
-<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。</p>
+<p>⚠️ web and headless are <strong>different profiles</strong>: installing into web does not automatically cover headless; <code>dsh run</code> uses the headless profile by default.</p>
 </blockquote>
-<h4>npm pack tarball 安装</h4>
-<pre><code class="language-sh">npm pack    # 生成 dsh-tool-json-*.tgz
+<h4>Install via npm pack tarball</h4>
+<pre><code class="language-sh">npm pack    # generates dsh-tool-json-*.tgz
 dsh plugin --profile web add ./dsh-tool-json-*.tgz
 dsh plugin --profile headless add ./dsh-tool-json-*.tgz
 </code></pre>
-<h4>验证安装</h4>
+<h4>Verify installation</h4>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep tool-json
 </code></pre>
-<h4>运行验证</h4>
+<h4>Run verification</h4>
 <pre><code class="language-sh">dsh run &quot;使用 json 工具查询 {&quot;a&quot;:{&quot;b&quot;:1}} 的 a.b&quot;
 </code></pre>
-<h4>手动安装与旧版本兼容</h4>
-<p>仅适用于不支持 Profile Bundle 的旧快照或插件开发调试环境：</p>
+<h4>Manual installation and legacy compatibility</h4>
+<p>Only for legacy snapshots that do not support Profile Bundle, or plugin development/debugging environments:</p>
 <ol>
-<li>放入 monorepo：<code>cp -r json ~/.dsh/source/master/packages/tools/json</code>（开发调试）</li>
-<li><code>apps/cli/package.json</code> 加 <code>&quot;@deepseek-ai/dsh-tool-json&quot;: &quot;workspace:^&quot;</code>；<code>tsconfig.host.json</code> references 加 <code>{ &quot;path&quot;: &quot;./packages/tools/json&quot; }</code></li>
+<li>Place into the monorepo: <code>cp -r json ~/.dsh/source/master/packages/tools/json</code> (development/debugging)</li>
+<li>Add <code>&quot;@deepseek-ai/dsh-tool-json&quot;: &quot;workspace:^&quot;</code> to <code>apps/cli/package.json</code>; add <code>{ &quot;path&quot;: &quot;./packages/tools/json&quot; }</code> to the <code>references</code> of <code>tsconfig.host.json</code></li>
 <li><code>pnpm install &amp;&amp; pnpm run build</code></li>
-<li>在 profile 用户层 patch 插入插件（<code>~/.dsh/profiles/&lt;name&gt;/cordis.patch.yml</code>）：</li>
+<li>Insert the plugin in the profile&#39;s user-layer patch (<code>~/.dsh/profiles/&lt;name&gt;/cordis.patch.yml</code>):</li>
 </ol>
 <pre><code class="language-yaml">- insert:
     - id: tool-json
       name: &#39;@deepseek-ai/dsh-tool-json&#39;
 </code></pre>
 <ol start="5">
-<li>验证：<code>dsh --profile &lt;name&gt; --dump-config | grep tool-json</code></li>
+<li>Verify: <code>dsh --profile &lt;name&gt; --dump-config | grep tool-json</code></li>
 </ol>
 <blockquote>
-<p>注意：patch 是 id-targeted 语义——裸 <code>- id:</code> 条目会报 <code>entry &quot;xxx&quot; not found</code>，必须用 <code>- insert:</code> 列表包裹。</p>
+<p>Note: patches are id-targeted — a bare <code>- id:</code> entry reports <code>entry &quot;xxx&quot; not found</code>; it must be wrapped in an <code>- insert:</code> list.</p>
 </blockquote>
-<h3>用法</h3>
+<h3>Usage</h3>
 <pre><code>json { input: &lt;JSON&gt;, query: &quot;items[0].name&quot; }        → &quot;hello&quot;
 json { input: &lt;JSON&gt;, query: &quot;items[*].name&quot; }         → [&quot;a&quot;, &quot;b&quot;]（合法 null 保留）
 json { input: &lt;JSON&gt;, query: &quot;items[&#39;complex-key&#39;]&quot; }  → &quot;ok&quot;
 </code></pre>
-<h3>已知限制</h3>
+<h3>Known limitations</h3>
 <ol>
-<li>只读：不能修改 JSON 字段（原地修改用 <code>str_replace_editor</code>/<code>write</code>；v2 可考虑 <code>set</code> 模式）</li>
-<li>无过滤器表达式、无标准 JMESPath 投影扁平化（见语义边界）</li>
-<li>对象形态 input 依赖 DSH 参数管线保证 lossless JSON</li>
+<li>Read-only: cannot modify JSON fields (use <code>str_replace_editor</code>/<code>write</code> for in-place edits; a <code>set</code> mode may be considered for v2)</li>
+<li>No filter expressions, no standard JMESPath projection flattening (see semantic boundaries)</li>
+<li>Object-form input relies on the DSH parameter pipeline to guarantee lossless JSON</li>
 </ol>
-<h3>测试</h3>
+<h3>Testing</h3>
 <pre><code class="language-bash">pnpm test
 </code></pre>
-<p>54 个用例（功能、错误、攻击载荷、对象/字符串双形态输入、资源上限与转义边界）。完整清单见本地维护的设计文档。</p>
-<h3>许可</h3>
+<p>54 test cases (functionality, errors, attack payloads, object/string dual-form inputs, resource limits, and escaping boundaries). See the locally maintained design document for the full list.</p>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-json/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-json/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

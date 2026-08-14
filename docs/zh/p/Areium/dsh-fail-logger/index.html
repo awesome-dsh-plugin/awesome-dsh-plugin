@@ -189,53 +189,53 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/Areium/dsh-fail-logger/blob/main/README.zh-CN.md">中文</a> | English</p>
+<p><a href="https://github.com/Areium/dsh-fail-logger/blob/main/README.md">English</a> | 中文</p>
 <h2>dsh-fail-logger</h2>
-<p><a href="https://github.com/Areium/dsh-fail-logger/actions/workflows/ci.yml"><img src="https://github.com/Areium/dsh-fail-logger/actions/workflows/ci.yml/badge.svg" alt="CI"></a> <a href="https://awesome-dsh-plugin.com/"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a> <a href="https://www.npmjs.com/package/dsh-fail-logger"><img src="https://img.shields.io/npm/v/dsh-fail-logger" alt="npm"></a></p>
-<p>An all-mode tool failure recorder for DeepSeek Harness: whether the agent runs in <strong>native mode</strong> or <strong>PTC (Code Mode)</strong>, any tool failure is automatically written into the machine-maintained section of a skill — normalized-dedup, counted, deterministically ranked, TTL-pruned, and redacted — so the next session&#39;s model sees the most common failure causes when it loads the skill. <strong>Fail less over time.</strong></p>
-<h3>Coverage matrix &amp; trigger conditions</h3>
+<p><a href="https://github.com/Areium/dsh-fail-logger/actions/workflows/ci.yml"><img src="https://github.com/Areium/dsh-fail-logger/actions/workflows/ci.yml/badge.svg" alt="CI"></a> <a href="https://awesome-dsh-plugin.com/zh/"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a> <a href="https://www.npmjs.com/package/dsh-fail-logger"><img src="https://img.shields.io/npm/v/dsh-fail-logger" alt="npm"></a></p>
+<p>全模式工具失败自动实录器：无论 DeepSeek Harness 跑在<strong>原生模式</strong>还是 <strong>PTC（Code Mode）</strong>，工具一旦失败，插件就把错因自动写进 skill 的机器维护区段（归一化去重、计数、确定性排序、TTL 裁剪、敏感信息脱敏），下次会话模型加载 skill 时直接看到高频错因——<strong>错误越记越少</strong>。</p>
+<h3>覆盖矩阵与触发条件</h3>
 <table>
 <thead>
 <tr>
-<th>Execution mode</th>
-<th>Failure source</th>
-<th>Recorded as (kind / message)</th>
+<th>执行模式</th>
+<th>失败来源</th>
+<th>记录格式（kind / message）</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Native tools (read/grep/write and third-party plugin tools…)</td>
-<td><code>tool/call</code> + <code>tool/result</code> (tool-result block isError=true)</td>
+<td>原生工具（read/grep/write 及第三方插件工具…）</td>
+<td><code>tool/call</code> + <code>tool/result</code>（tool-result 块 isError=true）</td>
 <td><code>tool</code> / <code>[read] ENOENT: no such file …</code></td>
 </tr>
 <tr>
-<td>PTC <code>run_code</code> failures</td>
-<td><code>tool/result</code> (isError=true)</td>
-<td>official kind (<code>exception</code>/<code>timeout</code>/<code>abort</code>/…) / raw message</td>
+<td>PTC <code>run_code</code> 整体失败</td>
+<td><code>tool/result</code>（isError=true）</td>
+<td>官方 kind（<code>exception</code>/<code>timeout</code>/<code>abort</code>/…）/ 原始错误消息</td>
 </tr>
 <tr>
-<td>Nested tool calls inside a code program (<code>tools.*</code> throwing)</td>
-<td><code>tool/code-dispatch</code> (isError=true)</td>
+<td>PTC 程序内嵌工具失败（<code>tools.*</code> 调用抛错）</td>
+<td><code>tool/code-dispatch</code>（isError=true）</td>
 <td><code>tool</code> / <code>[bash] exit code: 1</code></td>
 </tr>
 </tbody></table>
 <blockquote>
-<p><strong>Trigger condition</strong>: a failure is recorded only when the tool result is marked <code>isError: true</code>. <strong>A non-zero shell exit code does NOT trigger recording</strong> (e.g. <code>exit 1</code> is presented as plain text <code>[exit code: 1]</code>, not an error) — only genuinely thrown tool calls (read on a missing file, grep failure, run_code crash, …) enter the log.</p>
+<p><strong>触发条件</strong>：仅当工具结果以 <code>isError: true</code> 返回时记录。<strong>shell 命令的非零退出码不会触发记录</strong>（如 <code>exit 1</code> 的结果以普通文本 <code>[exit code: 1]</code> 呈现、不标错误）——只有真正抛错的工具调用（read 不存在文件、grep 失败、run_code 崩溃等）才会进入实录。</p>
 </blockquote>
-<p>The observation point is the <strong>session log</strong> (<code>session/event</code>) — the exact same hook the official telemetry plugin uses. Pure observer: no service injection, no runtime wrapping, can never affect execution.</p>
+<p>观测点是<strong>会话日志</strong>（<code>session/event</code>）——与官方遥测插件完全相同的挂点，纯观察者：不注入任何服务、不包装任何运行时、绝不影响模型执行。</p>
 <table>
 <thead>
 <tr>
-<th align="center">Session failures (captured automatically)</th>
-<th align="center">Skill auto-log section</th>
+<th align="center">会话中的失败（自动捕获）</th>
+<th align="center">skill 的自动实录区段</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center"><img src="https://raw.githubusercontent.com/Areium/dsh-fail-logger/main/assets/demo-session.png" alt="Session failure example"></td>
-<td align="center"><img src="https://raw.githubusercontent.com/Areium/dsh-fail-logger/main/assets/demo-skill.png" alt="Skill auto-log section"></td>
+<td align="center"><img src="https://raw.githubusercontent.com/Areium/dsh-fail-logger/main/assets/demo-session.png" alt="会话失败示例"></td>
+<td align="center"><img src="https://raw.githubusercontent.com/Areium/dsh-fail-logger/main/assets/demo-skill.png" alt="skill 实录区段"></td>
 </tr>
 </tbody></table>
-<p><em>Legend — left: tool failures in a session are captured automatically; right: the causes accumulate in the skill&#39;s auto-log section (deduplicated, counted, ranked by frequency).</em></p>
-<h3>Section preview</h3>
+<p><em>图例——左图：会话中的工具失败被自动捕获；右图：错因沉淀进 skill 的「自动实录」区段（去重 + 计数，按出现频次排序）。</em></p>
+<h3>实录区段效果</h3>
 <pre><code>&lt;!-- FAIL-LOG:BEGIN --&gt;
 ## 自动实录（机器维护，勿手改；由 dsh-fail-logger v0.4.0 维护）
 
@@ -248,135 +248,135 @@ footer p+p{margin-top:.5rem}
 - [tool] [read] ENOENT: no such file or directory — ×2（最近 2026-08-14 10:19）｜💡 先确认路径存在再操作
 &lt;!-- FAIL-LOG:END --&gt;
 </code></pre>
-<h3>Install</h3>
-<pre><code class="language-sh"># npm (recommended)
+<h3>安装</h3>
+<pre><code class="language-sh"># npm（推荐）
 dsh plugin --profile web add dsh-fail-logger
 
-# or pin to an exact version
-dsh plugin --profile web add dsh-fail-logger@0.4.2
+# 或固定到具体版本
+dsh plugin --profile web add dsh-fail-logger@0.4.3
 
-# or GitHub release tag (no npm registry dependency; auditability &amp; rollback)
-dsh plugin --profile web add &quot;github:Areium/dsh-fail-logger#v0.4.2&quot;
+# 或 GitHub release tag（不依赖 npm registry，便于审计与回滚）
+dsh plugin --profile web add &quot;github:Areium/dsh-fail-logger#v0.4.3&quot;
 
-# or manually: merge cordis.patch.yml&#39;s insert entry into ~/.dsh/profiles/web/cordis.patch.yml
+# 或手动挂载：把 cordis.patch.yml 的 insert 条目加进 ~/.dsh/profiles/web/cordis.patch.yml
 </code></pre>
-<p>Restart <code>dsh --profile web</code>. Zero configuration, works out of the box. Same for headless: <code>dsh plugin --profile headless add …</code>.</p>
-<h3>Config (patch entry <code>config:</code>, all optional)</h3>
+<p>重启 <code>dsh --profile web</code> 生效（零配置开箱即用）。headless 同理：<code>dsh plugin --profile headless add …</code>。</p>
+<h3>配置（patch 条目 <code>config:</code>，全部可选）</h3>
 <pre><code class="language-yaml">- insert:
     - id: dsh-fail-logger
       name: &#39;dsh-fail-logger&#39;
       config:
-        logDir: ~/.dsh/skills/fail-log-guide   # target skill directory
-        maxEntries: 10     # max rows per category
-        maxMsg: 200        # chars kept per message
-        marker: FAIL-LOG   # section marker id ([A-Za-z0-9-])
-        flushMs: 300       # burst-coalescing debounce window
-        ttlDays: 30        # drop entries with no new occurrence for N days (0 = keep forever)
-        redact: []         # extra redaction regexes (string array)
-        ignore: []         # ignore list (tool-name/message regexes, e.g. [&#39;^read
+        logDir: ~/.dsh/skills/fail-log-guide   # 记录目标 skill 目录
+        maxEntries: 10     # 每个分类最多行数
+        maxMsg: 200        # 每条消息保留字符数
+        marker: FAIL-LOG   # 区段标记 id（[A-Za-z0-9-]）
+        flushMs: 300       # 失败风暴合并写防抖窗口
+        ttlDays: 30        # N 天无新发生的条目自动删除（0 = 永久保留）
+        redact: []         # 额外脱敏正则（字符串数组）
+        ignore: []         # 忽略名单（工具名/消息正则，如 [&#39;^read
 </code></pre>
-<h3>How it works</h3>
+<h3>工作原理</h3>
 <ul>
-<li>Listens to <code>session/event</code>, consuming three event kinds: <code>tool/call</code> (callId→{tool name, args} map), <code>tool/result</code> (parses the real rc.6 shape: <code>message.content[].type === &#39;tool-result&#39;</code> block&#39;s <code>isError</code>/<code>toolCallId</code>; legacy shape still supported), <code>tool/code-dispatch</code> (recorded only when isError). A one-time visible warning fires on unexpected shapes.</li>
-<li><strong>Normalized dedup</strong>: paths (quoted / drive-letter / absolute → <code>&lt;path&gt;</code>) and long numbers (→ <code>&lt;n&gt;</code>) are normalized before the SHA1 key — the same EPERM on <code>/Users/a/x</code> and <code>/Users/b/y</code> merges into one entry; <code>data.error.code</code> (e.g. <code>SEARCH_FAILED</code>) joins the key when present.</li>
-<li><strong>Redaction &amp; sanitization</strong>: defaults cover <code>sk-…</code> keys, <code>Bearer</code>/<code>Basic</code> auth, <code>-u user:pass</code> and inline URL credentials, <code>api_key/token/secret/password=</code> assignments, credential file paths, and private IPs; extend via <code>config.redact</code>. Control chars stripped, markdown pipes/backticks escaped (anti inline injection).</li>
-<li><strong>Cross-process lock-merge</strong>: flush takes an exclusive lock (<code>wx</code>, stale &gt;5s recycled) and re-reads + merges the on-disk state before writing — web/headless concurrency no longer loses increments; failed writes keep dirty and retry after 2s.</li>
-<li><strong>Trend &amp; TTL</strong>: per-day counters render a &quot;last 7 days&quot; trend line; entries with no new occurrence for <code>ttlDays</code> are archived.</li>
-<li><strong>Categorized rendering</strong>: grouped under filesystem / permissions &amp; sandbox / timeout &amp; budget / network &amp; remote / other, with rule-based 💡 suggestions; deterministic total-order ranking (count↓ → last↓ → first↓ → hash↑); state pruned beyond <code>maxEntries×5</code>.</li>
-<li>All writes are atomic (tmp + rename); corrupt state is backed up as <code>.bak-&lt;timestamp&gt;</code> before reset; a visible startup line logs activation and probes logDir writability.</li>
+<li>监听 <code>session/event</code>，消费三类事件：<code>tool/call</code>（建立 callId→{工具名,参数} 映射）、<code>tool/result</code>（解析真实 rc.6 结构：<code>message.content[].type === &#39;tool-result&#39;</code> 块上的 <code>isError</code>/<code>toolCallId</code>，兼容旧结构）、<code>tool/code-dispatch</code>（isError 才记录）；结构不匹配时打一次可见警告；</li>
+<li><strong>归一化去重</strong>：路径（引号内/盘符/绝对路径 → <code>&lt;path&gt;</code>）与长数字（→ <code>&lt;n&gt;</code>）先归一化再参与 SHA1 键——<code>/Users/a/x</code> 与 <code>/Users/b/y</code> 的同类 EPERM 合并为一条；<code>data.error.code</code>（如 <code>SEARCH_FAILED</code>）存在时并入键；</li>
+<li><strong>脱敏与消毒</strong>：默认规则覆盖 <code>sk-…</code> key、<code>Bearer</code>/<code>Basic</code> 认证、<code>-u user:pass</code> 与 URL 内嵌凭据、<code>api_key/token/secret/password=</code> 赋值、凭证文件路径、私网 IP，可经 <code>config.redact</code> 追加；控制字符剥离、Markdown 竖线/反引号转义（防内联注入）；</li>
+<li><strong>跨进程锁合并</strong>：flush 时以独占锁（<code>wx</code>，陈旧 5s 自动回收）持锁重读磁盘状态并<strong>合并计数</strong>，web/headless 双开不再互相覆盖增量；写失败保持 dirty 并 2s 后重试；</li>
+<li><strong>趋势与 TTL</strong>：状态按天计数，区段顶部渲染「近 7 天失败」趋势线；条目超 <code>ttlDays</code> 无新发生自动归档；</li>
+<li><strong>分类渲染</strong>：按「文件系统/权限与沙盒/超时与预算/网络与远端/其他」分组 + 规则模板建议（💡）；排序为确定性全序（count↓ → last↓ → first↓ → hash↑）；状态超 <code>maxEntries×5</code> 自动裁剪；</li>
+<li>所有落盘为原子写（tmp + rename），状态损坏先备份 <code>.bak-&lt;时间戳&gt;</code> 再重置；启动时打印一行可见日志并探测 logDir 可写性。</li>
 </ul>
-<h3>Known limitations</h3>
+<h3>已知限制</h3>
 <ul>
-<li><strong>Only failures that reach the session log</strong>: catastrophic process death during tool execution is out of scope.</li>
-<li><strong>Corrupt state is backed up</strong>: an unparseable <code>.failures.json</code> is renamed to <code>.failures.json.bak-&lt;timestamp&gt;</code> before reset.</li>
-<li><strong>Non-zero exit codes are not recorded</strong>: see the trigger conditions (DSH semantics, not a plugin bug).</li>
-<li><strong>Dedup is heuristic</strong>: keyed on the normalized first 1-3 lines of text; the same root cause with different wording may split, and different causes with identical wording may merge — acceptable, but be aware.</li>
-<li><strong>Display keeps the original text</strong>: path/username normalization affects the dedup key only; messages display the original (except redaction rules). For stricter privacy, configure <code>config.redact</code> per workspace.</li>
+<li><strong>只记录到达会话日志的失败</strong>：工具执行过程中进程崩溃等无法产生 <code>tool/result</code> 的极端失败不在覆盖范围。</li>
+<li><strong>状态损坏自动备份</strong>：<code>.failures.json</code> 解析失败时重命名为 <code>.failures.json.bak-&lt;时间戳&gt;</code> 后重置。</li>
+<li><strong>非零退出码不记录</strong>：见上文触发条件（这是 DSH 的语义，非插件缺陷）。</li>
+<li><strong>去重是启发式</strong>：按归一化后的前 1-3 行文本哈希；同根因不同文案可能分裂、不同根因同文案可能合并——可接受，请知悉。</li>
+<li><strong>展示层保留原文</strong>：路径/用户名的归一化只作用于去重键；消息展示保留原文（脱敏规则除外），若需更强隐私请按工作区自配 <code>config.redact</code>。</li>
 </ul>
-<h3>Community</h3>
+<h3>社区</h3>
 <ul>
-<li><strong>npm</strong>: <a href="https://www.npmjs.com/package/dsh-fail-logger">dsh-fail-logger</a> (<code>dsh plugin --profile web add dsh-fail-logger</code>)</li>
-<li><strong>GitHub topic</strong>: <a href="https://github.com/topics/dsh-plugin">dsh-plugin</a> (<code>deepseek-harness</code> / <code>dsh</code> / <code>skill</code> / <code>fail-logger</code>)</li>
-<li><strong>Curated list</strong>: <a href="https://awesome-dsh-plugin.com/">awesome-dsh-plugin</a></li>
+<li><strong>npm</strong>：<a href="https://www.npmjs.com/package/dsh-fail-logger">dsh-fail-logger</a>（<code>dsh plugin --profile web add dsh-fail-logger</code>）</li>
+<li><strong>GitHub topic</strong>：<a href="https://github.com/topics/dsh-plugin">dsh-plugin</a>（<code>deepseek-harness</code> / <code>dsh</code> / <code>skill</code> / <code>fail-logger</code>）</li>
+<li><strong>收录清单</strong>：<a href="https://awesome-dsh-plugin.com/zh/">awesome-dsh-plugin</a> 精选列表</li>
 </ul>
-<h3>How it differs from similar community plugins</h3>
+<h3>与社区同类插件的区别</h3>
 <ul>
-<li><code>distill</code> (conversation distillation) and <code>dsh-skillport</code> (skill library import): <em>proactive</em> skill generation/import; this plugin <em>passively</em> records run facts. Complementary.</li>
-<li><code>dsh-trace</code> / <code>dsh-telemetry-redactor</code> (telemetry export to external platforms): external observability; this plugin targets <em>local skill self-healing</em> with no external channel.</li>
-<li><code>dsh-notify</code> (error notifications): alerts only; this plugin accumulates a searchable long-term memory.</li>
+<li><code>distill</code>（对话蒸馏成技能）、<code>dsh-skillport</code>（技能库导入）：<strong>主动</strong>生成/导入技能；本插件是<strong>被动</strong>记录运行事实，互补。</li>
+<li><code>dsh-trace</code> / <code>dsh-telemetry-redactor</code>（遥测导出到外部平台）：面向外部可观测性；本插件面向<strong>本地技能自愈</strong>，不开任何外部通道。</li>
+<li><code>dsh-notify</code>（错误通知）：只提醒；本插件沉淀为可检索的长期记忆。</li>
 </ul>
-<h3>Design boundaries (explicit non-goals)</h3>
+<h3>设计取舍（明确不做）</h3>
 <ul>
-<li><strong>No LLM summarization</strong>: calling a model per failure adds cost, network and external dependencies, breaking the pure-observer positioning; rule-based suggestions suffice.</li>
-<li><strong>No external export</strong>: keeps a distinct niche from dsh-trace/telemetry.</li>
-<li><strong>No proactive fixes</strong>: record only, never auto-change behavior — avoids amplifying risk.</li>
-<li>Roadmap: per-workspace failure memory isolation (<code>logDir</code> template / <code>@workspace</code> tags on entries).</li>
+<li><strong>不做 LLM 摘要</strong>：每次失败调模型会引入成本、网络与外部依赖，违背&quot;纯观察者&quot;定位；规则模板建议足够。</li>
+<li><strong>不做外部导出</strong>：与 dsh-trace/telemetry 生态位区分。</li>
+<li><strong>不做主动修复</strong>：只记录、不自动改变模型行为，避免放大风险。</li>
+<li>Roadmap：按工作区隔离失败记忆（<code>logDir</code> 模板 / 条目 <code>@workspace</code> 标签）。</li>
 </ul>
-<h3>Development &amp; tests</h3>
+<h3>开发与测试</h3>
 <pre><code class="language-sh">npm run check   # node --check lib/index.js
-npm test        # 14 suites: real event-shape parsing/legacy compat/normalized dedup/redaction/pruning/TTL/corruption recovery/marker healing/debounce/dispose/lock contention/ignore list/log replay
+npm test        # 14 组单测：真实事件结构解析/旧结构兼容/归一化去重/脱敏/裁剪/TTL/损坏恢复/标记归位/防抖/dispose/锁竞争/忽略名单/日志回放
 </code></pre>
-<p><strong>Real-log replay</strong> (against fake-green tests): <code>FAIL_LOG_REPLAY=&lt;session.jsonl&gt; npm test</code> feeds real session events into the same handler. Session logs live at <code>~/.dsh/sessions/**/session.jsonl</code> (run <code>zstd -d</code> first if compressed). <code>tests/fixtures/session.jsonl</code> is a real-shape fixture run by CI on every push.</p>
-<p><strong>Post-install smoke test (2 commands)</strong>:</p>
-<p>Prerequisites: the target profile has the plugin installed and has been restarted (web or headless; headless shown below).</p>
-<pre><code class="language-sh"># 1) trigger a guaranteed failure (read on a missing file → isError=true)
-dsh --profile headless &quot;use the read tool on a file that does not exist&quot;
+<p><strong>真实日志回放</strong>（对抗&quot;假绿&quot;）：<code>FAIL_LOG_REPLAY=&lt;session.jsonl&gt; npm test</code> 或直接把真实会话日志喂给插件回放入口。会话日志位置 <code>~/.dsh/sessions/**/session.jsonl</code>（若为 zstd 压缩先 <code>zstd -d</code> 解压）。仓库内 <code>tests/fixtures/session.jsonl</code> 即一份真实结构夹具，CI 每次运行。</p>
+<p><strong>装好后手动冒烟（2 条命令）</strong>：</p>
+<p>前提：目标 profile 已安装本插件并重启过（web / headless 均可，以下以 headless 为例）。</p>
+<pre><code class="language-sh"># 1) 触发一次必然失败（read 不存在的文件 → isError=true）
+dsh --profile headless &quot;用 read 工具读取一个不存在的文件&quot;
 
-# 2) verify the record landed
+# 2) 验证实录已落盘
 tail -20 ~/.dsh/skills/fail-log-guide/SKILL.md
 </code></pre>
-<pre><code class="language-powershell"># Windows PowerShell variant of step 2
+<pre><code class="language-powershell"># Windows PowerShell 版第 2 步
 Get-Content &quot;$env:USERPROFILE\.dsh\skills\fail-log-guide\SKILL.md&quot; -Tail 20
 </code></pre>
-<p>Expected: a <code>FAIL-LOG</code> section with a <code>[read] ENOENT…</code> cause. If missing, check in order: ① startup log <code>[dsh-fail-logger] v0.4.2 active</code>; ② logDir writability warning; ③ whether that profile was restarted after install.</p>
+<p>预期：出现 <code>FAIL-LOG</code> 区段与 <code>[read] ENOENT…</code> 错因。未出现时按顺序排查：① 启动日志是否有 <code>[dsh-fail-logger] v0.4.x active</code>；② logDir 可写性警告；③ 该 profile 是否在安装后重启过。</p>
 <h3>License</h3>
-<p>MIT, &#39;deliberate|noise&#39;])</p>
+<p>MIT, &#39;故意|noise&#39;]）</p>
 <pre><code>
-## How it works
+## 工作原理
 
-- Listens to `session/event`, consuming three event kinds: `tool/call` (callId→{tool name, args} map), `tool/result` (parses the real rc.6 shape: `message.content[].type === &#39;tool-result&#39;` block&#39;s `isError`/`toolCallId`; legacy shape still supported), `tool/code-dispatch` (recorded only when isError). A one-time visible warning fires on unexpected shapes.
-- **Normalized dedup**: paths (quoted / drive-letter / absolute → `&lt;path&gt;`) and long numbers (→ `&lt;n&gt;`) are normalized before the SHA1 key — the same EPERM on `/Users/a/x` and `/Users/b/y` merges into one entry; `data.error.code` (e.g. `SEARCH_FAILED`) joins the key when present.
-- **Redaction &amp; sanitization**: defaults cover `sk-…` keys, `Bearer` tokens, `api_key/token/secret/password=` assignments, and credential file paths; extend via `config.redact`. Control chars stripped, markdown table pipes escaped (anti prompt-injection).
-- **Cross-process lock-merge**: flush takes an exclusive lock (`wx`, stale &gt;5s recycled) and re-reads + merges the on-disk state before writing — web/headless concurrency no longer loses increments; failed writes keep dirty and retry after 2s.
-- **Trend &amp; TTL**: per-day counters render a &quot;last 7 days&quot; trend line; entries with no new occurrence for `ttlDays` are archived.
-- **Categorized rendering**: grouped under filesystem / permissions &amp; sandbox / timeout &amp; budget / network &amp; remote / other, with rule-based 💡 suggestions; deterministic total-order ranking (count↓ → last↓ → first↓ → hash↑); state pruned beyond `maxEntries×5`.
-- All writes are atomic (tmp + rename); corrupt state is backed up as `.bak-&lt;timestamp&gt;` before reset; a visible startup line logs activation and probes logDir writability.
+- 监听 `session/event`，消费三类事件：`tool/call`（建立 callId→{工具名,参数} 映射）、`tool/result`（解析真实 rc.6 结构：`message.content[].type === &#39;tool-result&#39;` 块上的 `isError`/`toolCallId`，兼容旧结构）、`tool/code-dispatch`（isError 才记录）；结构不匹配时打一次可见警告；
+- **归一化去重**：路径（引号内/盘符/绝对路径 → `&lt;path&gt;`）与长数字（→ `&lt;n&gt;`）先归一化再参与 SHA1 键——`/Users/a/x` 与 `/Users/b/y` 的同类 EPERM 合并为一条；`data.error.code`（如 `SEARCH_FAILED`）存在时并入键；
+- **脱敏与消毒**：默认规则覆盖 `sk-…` key、`Bearer` 令牌、`api_key/token/secret/password=` 赋值、凭证文件路径，可经 `config.redact` 追加；控制字符剥离、Markdown 表格竖线转义、防技能投毒；
+- **跨进程锁合并**：flush 时以独占锁（`wx`，陈旧 5s 自动回收）持锁重读磁盘状态并**合并计数**，web/headless 双开不再互相覆盖增量；写失败保持 dirty 并 2s 后重试；
+- **趋势与 TTL**：状态按天计数，区段顶部渲染「近 7 天失败」趋势线；条目超 `ttlDays` 无新发生自动归档；
+- **分类渲染**：按「文件系统/权限与沙盒/超时与预算/网络与远端/其他」分组 + 规则模板建议（💡）；排序为确定性全序（count↓ → last↓ → first↓ → hash↑）；状态超 `maxEntries×5` 自动裁剪；
+- 所有落盘为原子写（tmp + rename），状态损坏先备份 `.bak-&lt;时间戳&gt;` 再重置；启动时打印一行可见日志并探测 logDir 可写性。
 
-## Known limitations
+## 已知限制
 
-- **Only failures that reach the session log**: catastrophic process death during tool execution is out of scope.
-- **Corrupt state is backed up**: an unparseable `.failures.json` is renamed to `.failures.json.bak-&lt;timestamp&gt;` before reset.
-- **Non-zero exit codes are not recorded**: see the trigger conditions (DSH semantics, not a plugin bug).
+- **只记录到达会话日志的失败**：工具执行过程中进程崩溃等无法产生 `tool/result` 的极端失败不在覆盖范围。
+- **状态损坏自动备份**：`.failures.json` 解析失败时重命名为 `.failures.json.bak-&lt;时间戳&gt;` 后重置。
+- **非零退出码不记录**：见上文触发条件（这是 DSH 的语义，非插件缺陷）。
 
-## How it differs from similar community plugins
+## 与社区同类插件的区别
 
-- `distill` (conversation distillation) and `dsh-skillport` (skill library import): *proactive* skill generation/import; this plugin *passively* records run facts. Complementary.
-- `dsh-trace` / `dsh-telemetry-redactor` (telemetry export to external platforms): external observability; this plugin targets *local skill self-healing* with no external channel.
-- `dsh-notify` (error notifications): alerts only; this plugin accumulates a searchable long-term memory.
+- `distill`（对话蒸馏成技能）、`dsh-skillport`（技能库导入）：**主动**生成/导入技能；本插件是**被动**记录运行事实，互补。
+- `dsh-trace` / `dsh-telemetry-redactor`（遥测导出到外部平台）：面向外部可观测性；本插件面向**本地技能自愈**，不开任何外部通道。
+- `dsh-notify`（错误通知）：只提醒；本插件沉淀为可检索的长期记忆。
 
-## Design boundaries (explicit non-goals)
+## 设计取舍（明确不做）
 
-- **No LLM summarization**: calling a model per failure adds cost, network and external dependencies, breaking the pure-observer positioning; rule-based suggestions suffice.
-- **No external export**: keeps a distinct niche from dsh-trace/telemetry.
-- **No proactive fixes**: record only, never auto-change behavior — avoids amplifying risk.
-- Roadmap: per-workspace failure memory isolation (`logDir` template / `@workspace` tags on entries).
+- **不做 LLM 摘要**：每次失败调模型会引入成本、网络与外部依赖，违背&quot;纯观察者&quot;定位；规则模板建议足够。
+- **不做外部导出**：与 dsh-trace/telemetry 生态位区分。
+- **不做主动修复**：只记录、不自动改变模型行为，避免放大风险。
+- Roadmap：按工作区隔离失败记忆（`logDir` 模板 / 条目 `@workspace` 标签）。
 
-## Development &amp; tests
+## 开发与测试
 
 ```sh
 npm run check   # node --check lib/index.js
-npm test        # 12 suites: real event-shape parsing/legacy compat/normalized dedup/redaction/pruning/TTL/corruption recovery/marker healing/debounce/dispose/lock retry/log replay
+npm test        # 12 组单测：真实事件结构解析/旧结构兼容/归一化去重/脱敏/裁剪/TTL/损坏恢复/标记归位/防抖/dispose/锁重试/日志回放
 </code></pre>
-<p><strong>Real-log replay</strong> (against fake-green tests): <code>FAIL_LOG_REPLAY=&lt;session.jsonl&gt; npm test</code> feeds real session events into the same handler. Session logs live at <code>~/.dsh/sessions/**/session.jsonl</code> (run <code>zstd -d</code> first if compressed). <code>tests/fixtures/session.jsonl</code> is a real-shape fixture run by CI on every push.</p>
-<p><strong>Post-install smoke test</strong>:</p>
-<pre><code class="language-sh">dsh --profile headless &quot;use the read tool on a file that does not exist&quot;   # trigger a guaranteed failure
-tail -20 ~/.dsh/skills/fail-log-guide/SKILL.md                              # FAIL-LOG section with the cause should appear
+<p><strong>真实日志回放</strong>（对抗&quot;假绿&quot;）：<code>FAIL_LOG_REPLAY=&lt;session.jsonl&gt; npm test</code> 或直接把真实会话日志喂给插件回放入口。会话日志位置 <code>~/.dsh/sessions/**/session.jsonl</code>（若为 zstd 压缩先 <code>zstd -d</code> 解压）。仓库内 <code>tests/fixtures/session.jsonl</code> 即一份真实结构夹具，CI 每次运行。</p>
+<p><strong>装好后手动冒烟</strong>：</p>
+<pre><code class="language-sh">dsh --profile headless &quot;用 read 工具读取一个不存在的文件&quot;   # 触发一次必然失败
+cat ~/.dsh/skills/fail-log-guide/SKILL.md | tail -20        # 应出现 FAIL-LOG 区段与错因
 </code></pre>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Areium/dsh-fail-logger/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Areium/dsh-fail-logger/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

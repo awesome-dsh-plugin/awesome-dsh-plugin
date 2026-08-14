@@ -189,35 +189,35 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/omdsh-dev/sandbox-micro/blob/main/README.zh.md">中文</a></p>
-<p>A DSH profile bundle for the fail-closed microsandbox microVM capability. The root package contains the <code>ctx.microsandbox</code> provider and exports the model-facing tools as <code>@deepseek-ai/dsh-sandbox-microsandbox/tool</code>.</p>
-<h3>Repository shape</h3>
-<pre><code class="language-text">package.json              # provider/tool package and dsh.bundle manifest
-cordis.patch.yml          # dormant provider and tool rows
-src/                      # provider, runtime, resolver, and tool subpath
-lib/                      # generated install artifacts
-legacy/                   # source-compatible host integration patch for older DSH snapshots
-docs/                     # detailed provider/tool references
-tests/provider/            # provider, resolver, SDK, and host tests
-tests/tool/                # model-tool and renderer tests
+<p><a href="https://github.com/omdsh-dev/sandbox-micro/blob/main/README.md">English</a> | 中文</p>
+<p>失败关闭的 microsandbox microVM 能力 DSH profile 组合包。root package 提供 <code>ctx.microsandbox</code> provider，并以 <code>@deepseek-ai/dsh-sandbox-microsandbox/tool</code> 导出模型可见工具。</p>
+<h3>仓库结构</h3>
+<pre><code class="language-text">package.json              # provider/tool 包和 dsh.bundle 清单
+cordis.patch.yml          # dormant provider/tool 行
+src/                      # provider、runtime、resolver 和 tool subpath
+lib/                      # 生成的安装产物
+legacy/                   # 旧 DSH 快照的宿主接线补丁，仅作迁移资料
+docs/                     # provider/tool 详细说明
+tests/provider/            # provider、resolver、SDK 和 host 测试
+tests/tool/                # model tool 和 renderer 测试
 </code></pre>
-<p>The single root artifact keeps Git/profile installation self-contained while preserving two Cordis entry points:</p>
+<p>单一 root 产物保持 Git/profile 安装自包含，同时保留两个 Cordis entry：</p>
 <pre><code class="language-yaml">- id: microsandbox
   name: &#39;@deepseek-ai/dsh-sandbox-microsandbox&#39;
 
 - id: tool-microsandbox
   name: &#39;@deepseek-ai/dsh-sandbox-microsandbox/tool&#39;
 </code></pre>
-<p>Both rows are disabled by the bundle. To enable the capability, a profile must explicitly enable the provider with <code>config.enabled: true</code> and enable the tool row separately. This prevents installation from starting a microVM capability or exposing model-facing tools implicitly.</p>
-<h3>Capability boundary</h3>
-<p><code>ctx.microsandbox</code> is an environment-coherent microVM service, not a <code>dsh-sandbox</code> same-world provider. It uses the pinned <code>microsandbox@0.6.7</code> SDK, package-owned <code>msb</code> resolution, bounded functional qualification, and fail-closed platform checks. It never degrades to unconfined host execution.</p>
-<p>The tool entry exposes:</p>
-<pre><code class="language-text">microsandbox_exec  exact argv execution with captured output
-microsandbox_fs    guest file read, write, and directory listing
+<p>两个行都默认禁用。启用时 profile 必须显式打开 provider 的 <code>config.enabled: true</code>，并单独打开 tool 行，避免安装组合包就启动 microVM 能力或向模型暴露工具。</p>
+<h3>能力边界</h3>
+<p><code>ctx.microsandbox</code> 是环境连贯的 microVM service，不是 <code>dsh-sandbox</code> 的同世界 provider。它使用固定版本 <code>microsandbox@0.6.7</code> SDK、包自有 <code>msb</code> 解析、有界功能限定和失败关闭的平台检查，绝不会退化为无约束宿主执行。</p>
+<p>工具 entry 提供：</p>
+<pre><code class="language-text">microsandbox_exec  精确 argv 执行和 captured output
+microsandbox_fs    guest 文件读、写和目录列表
 </code></pre>
-<p>The old host integration patch remains under <code>legacy/</code> for DSH snapshots that do not yet provide the provider/tool catalog and composition seams. A new bundle layer does not modify DSH host source.</p>
-<h3>Development</h3>
-<p>A full typecheck expects sibling checkouts:</p>
+<p>旧宿主接线补丁保留在 <code>legacy/</code> 中，供尚未提供 provider/tool catalog 和 composition 接缝的 DSH 快照使用；新的 bundle 层不修改 DSH 宿主源码。</p>
+<h3>开发</h3>
+<p>完整 typecheck 需要 sibling checkout：</p>
 <pre><code class="language-text">~/git/deepseek-harness
 ~/git/sandbox-micro
 </code></pre>
@@ -226,19 +226,17 @@ pnpm run typecheck
 pnpm test
 pnpm run build
 </code></pre>
-<p>The <code>prepare</code> script builds provider, invariant, and tool entries directly from <code>src/</code>, so a Git install does not require sibling project references. pnpm 10 may require the profile to allow the package&#39;s prepare script; only approve a pinned, trusted checkout.</p>
-<h3>Model Experience</h3>
-<p>The provider adds no prompt text. The tool subpath adds <code>microsandbox_exec</code> and <code>microsandbox_fs</code> to the authoritative tools service; their output preserves guest exit codes, captured streams, runner failures, timeout/abort classification, and guest file content.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<p><code>prepare</code> 直接从 <code>src/</code> 构建 provider、invariant 和 tool entry，因此 Git 安装不需要 sibling project references。pnpm 10 可能要求 profile 允许 prepare 脚本；只应批准固定且可信的 checkout。</p>
+<h3>已知限制</h3>
 <ul>
-<li>Linux requires <code>/dev/kvm</code>; unsupported or unqualified hosts remain unavailable.</li>
-<li>macOS Apple Silicon real-host acceptance is not included in the first release posture.</li>
-<li>Secrets, network policy, snapshots, and image/volume lifecycle tools remain provider-only or fail closed.</li>
-<li>The external SDK and platform binaries are pinned to <code>0.6.7</code> and require their corresponding registry packages.</li>
+<li>Linux 需要可用 <code>/dev/kvm</code>；不支持或未通过限定的 host 保持 unavailable。</li>
+<li>第一版不纳入 macOS Apple Silicon real-host acceptance。</li>
+<li>Secrets、network policy、snapshots 和 image/volume lifecycle tools 仍是 provider-only 或请求时失败关闭。</li>
+<li>外部 SDK 和平台二进制固定为 <code>0.6.7</code>，需要对应的 registry package。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/sandbox-micro/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/sandbox-micro/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

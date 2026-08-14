@@ -193,122 +193,122 @@ footer p+p{margin-top:.5rem}
 <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-0B7285?style=flat-square" alt="License: BSD-3-Clause"></a>
 <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%5E20%20%7C%20%3E%3D22-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a>
 <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/cordis.patch.yml"><img src="https://img.shields.io/badge/DSH-Web-5B4CF0?style=flat-square" alt="DSH profiles"></a></p>
-<p><strong>Install:</strong> <code>dsh plugin --profile web add github:bill9109/dsh-web-ui-notify</code></p>
-<p><strong>A DeepSeek Harness Web UI client plugin: when a tool needs approval, DSH asks you a question, or a turn finishes while you are looking at another tab, it pops a system desktop notification — so neither DSH nor you end up waiting.</strong></p>
-<p><a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.md">English</a> | <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.zh.md">中文</a></p>
-<h3>Why this exists</h3>
-<p>While you browse other pages, DSH needs human confirmation (tool approvals, questions) or finishes a round of work, and the Web UI in the foreground tab is the only place it asks. If you are looking anywhere else, the request waits silently. This plugin moves those moments onto your desktop: a native system notification appears, names the session, and clicks back into the conversation.</p>
-<h3>Features</h3>
+<p><strong>安装：</strong> <code>dsh plugin --profile web add github:bill9109/dsh-web-ui-notify</code></p>
+<p><strong>DeepSeek Harness Web UI 客户端插件：当工具需要审批、DSH 向你提问、或一轮干完了，而你正在浏览其他标签页时，弹出系统桌面通知——DSH 不等你，你也不用等。</strong></p>
+<p><a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.md">English</a> | 中文</p>
+<h3>为什么需要它</h3>
+<p>当你在浏览其他网页时，DSH 需要人工确认（工具审批、提问）或干完了一轮活，而前台标签页的 Web UI 是它唯一提问的地方。只要你在看别处，请求就默默等着。这个插件把这些时刻搬到桌面：原生系统通知出现、标明会话名、点击直接回到对应会话。</p>
+<h3>实现能力</h3>
 <ul>
-<li><strong>Notify on interaction with the current session</strong>: tool approvals and DSH questions carry context in the body (approvals show the over-permission reason, questions show the question text)</li>
-<li><strong>Notify on background sessions too</strong>: sessions you are not looking at also notify when they need approval or a question (same contextual body as the current session); a finished background session notifies as well — click it to jump straight to that session</li>
-<li><strong>Notify on turn completion</strong>: every finished turn of the current session notifies, with the first 80 characters of the final answer; tool-only turns without a final answer show the turn number. Completion, interruption, and error turns all notify</li>
-<li><strong>Session name in the title</strong>: every notification title names its session, e.g. &quot;Refactor database · needs approval&quot;</li>
-<li><strong>Click to jump to the session</strong>: clicking a notification not only returns to the DSH page but also opens that session</li>
-<li>Notifies only while you are away from the tab; when the page is in the foreground DSH already shows its own prompts, so it does not double-notify</li>
-<li>Each event notifies once — reconnects do not repeat it, and opening a session with history does not replay old turns</li>
-<li>Notifications do not auto-dismiss after a few seconds; they wait for you</li>
-<li>A toggle lives in Settings → General, following the DSH language (zh/en)</li>
+<li><strong>当前会话介入时通知</strong>：工具审批和 DSH 提问，通知正文带上下文（审批显示越权原因，提问显示问题原文）</li>
+<li><strong>后台会话也通知</strong>：没在看的会话需要审批/提问时同样弹通知（正文带上下文，和当前会话一致），整个会话干完也会通知；点一下直接跳到那个会话</li>
+<li><strong>干完一轮也通知</strong>：当前会话每轮干完都通知，正文是这一轮最终回答的开头（80 字以内），纯工具轮没有最终回答时显示轮次号。不管这轮是正常结束、被中断还是出错，都会通知</li>
+<li><strong>标题带会话名</strong>：所有通知标题都标明来自哪个会话，如「重构数据库 · 需要审批」</li>
+<li><strong>点击跳转到对应会话</strong>：点通知不只是跳回 DSH 页面，还会自动打开通知里的那个会话</li>
+<li>只在你不看这个标签页时通知；页面在前台时 DSH 本来就有提示，不重复打扰</li>
+<li>同一件事只通知一次，断线重连不会重复响；打开一个有历史记录的会话也不会把旧轮次全刷一遍</li>
+<li>通知不会几秒后自动消失，等你处理</li>
+<li>设置 → 通用 里有开关，中英文跟随 DSH 语言</li>
 </ul>
-<h3>Install</h3>
-<p>The plugin is a DSH <strong>bundle</strong> (<code>package.json</code> declares <code>dsh.bundle</code> + <code>dsh.client</code>). Install it into the <code>web</code> profile with the standard <code>dsh plugin</code> mechanism — <strong>no DSH source changes and no hand-written patch</strong>:</p>
+<h3>安装</h3>
+<p>插件是 DSH <strong>bundle</strong>（<code>package.json</code> 声明 <code>dsh.bundle</code> + <code>dsh.client</code>），通过标准的 <code>dsh plugin</code> 机制安装到 web profile，<strong>无需修改 DSH 源码、无需手写 patch</strong>：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:bill9109/dsh-web-ui-notify
 </code></pre>
-<p>Internally the command runs <code>pnpm add &lt;spec&gt;</code> in the profile directory and automatically appends packages that declare <code>dsh.bundle</code> to <code>dsh.profile.bundles</code>. You can also clone it and install from a local path (for development — rebuild and it takes effect):</p>
+<p>命令内部 = 在 profile 目录执行 <code>pnpm add &lt;spec&gt;</code> + 自动把声明了 <code>dsh.bundle</code> 的包追加进 <code>dsh.profile.bundles</code>。也可以先 clone 再用本地路径安装（开发调试，改完重新构建即生效）：</p>
 <pre><code class="language-sh">dsh plugin --profile web add /path/to/dsh-web-ui-notify
 </code></pre>
-<p>The repository ships its build output (<code>lib/</code>), so the plugin works right after installing — no build step needed. It has zero runtime dependencies: the browser-side <code>require</code>s (react, react/jsx-runtime, ui-slots) resolve through DSH&#39;s own frontend module table, not npm.</p>
+<p>仓库里带了构建产物（<code>lib/</code>），装完直接可用，不需要另外构建。插件零运行时依赖——浏览器侧那几个 <code>require</code>（react、react/jsx-runtime、ui-slots）走 DSH 前端自己的模块表，不经过 npm。</p>
 <blockquote>
-<p>Older DSH (before the profile system) installed via <code>pnpm --filter @deepseek-ai/dsh add</code> + <code>config.yaml</code>; since the 20260806 snapshot the profile flow above is the way. If your DSH is still old, use the historical README (visible in git history).</p>
+<p>旧版 DSH（profile 体系之前）用 <code>pnpm --filter @deepseek-ai/dsh add</code> + <code>config.yaml</code> 安装；20260806 快照起改为上面的 profile 方式。若你的 DSH 还是旧版，用 README 的历史版本（git 历史里可见）。</p>
 </blockquote>
-<p>After installing, <strong>restart the Web UI</strong> (the way you normally start DSH) and refresh the browser page — the plugin takes effect.</p>
-<h4>Upgrade</h4>
+<p>安装后<strong>重启 Web UI</strong>（按你当前启动 DSH Web UI 的方式）并刷新浏览器页面，插件即生效。</p>
+<h4>升级</h4>
 <pre><code class="language-sh">dsh plugin --profile web update github:bill9109/dsh-web-ui-notify
 </code></pre>
-<p>For a local-path installation, run <code>add</code> again against the replacement checkout. User settings (the Settings → General toggle) live in the profile&#39;s Settings provider and survive upgrades.</p>
-<h4>Uninstall</h4>
+<p>本地路径安装则对替换后的 checkout 重新执行 <code>add</code>。用户设置（设置 → 通用 的开关）存在 profile 的 Settings provider 里，升级不丢。</p>
+<h4>卸载</h4>
 <pre><code class="language-sh">dsh plugin --profile web remove @bill9109/dsh-web-ui-notify
 </code></pre>
-<p>The command runs <code>pnpm remove &lt;pkg&gt;</code> in the profile directory and removes it from <code>dsh.profile.bundles</code>. After uninstalling, restart web and hard-refresh the browser.</p>
-<h3>Usage</h3>
-<p>After installation you must also grant browser notification permission, otherwise the plugin stays silent — without permission the browser simply blocks notifications.</p>
+<p>命令内部 = 在 profile 目录执行 <code>pnpm remove &lt;pkg&gt;</code> + 自动把它从 <code>dsh.profile.bundles</code> 移除。卸载后重启 web 并硬刷新浏览器。</p>
+<h3>使用</h3>
+<p>装好之后还要授权浏览器通知权限，否则插件是静默的——没授权时浏览器直接禁止弹通知。</p>
 <ol>
-<li>Open <strong>Settings → General → Desktop notifications</strong> and click <strong>Enable</strong></li>
-<li>When the browser asks, choose Allow; the status becomes &quot;Enabled&quot;</li>
-<li>On macOS, also allow your browser under <strong>System Settings → Notifications</strong></li>
+<li>打开 <strong>设置 → 通用 → 桌面通知</strong>，点<strong>开启桌面通知</strong></li>
+<li>浏览器弹出询问，选允许，状态变成「已开启」</li>
+<li>macOS 还要在<strong>系统设置 → 通知</strong>里允许你的浏览器</li>
 </ol>
-<p>Then switch to another tab — approvals, questions, or finished turns produce system notifications, and clicking one brings you back to handle it.</p>
-<p>The settings row has four states:</p>
+<p>之后切到别的标签页，遇到审批、提问、或者一轮干完了，就会收到系统通知，点它跳回来处理。</p>
+<p>设置行的四种状态：</p>
 <table>
 <thead>
 <tr>
-<th>Status</th>
-<th>Meaning</th>
+<th>状态</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Enabled</td>
-<td>Working normally</td>
+<td>已开启</td>
+<td>正常工作</td>
 </tr>
 <tr>
-<td>Not granted</td>
-<td>Click the button to grant</td>
+<td>未授权</td>
+<td>点按钮授权</td>
 </tr>
 <tr>
-<td>Blocked by browser</td>
-<td>Previously denied — change the site setting back to Allow; the button alone will not help</td>
+<td>已被浏览器阻止</td>
+<td>之前拒绝过，要去浏览器的站点设置里改回允许，点按钮没用</td>
 </tr>
 <tr>
-<td>Unsupported</td>
-<td>The environment has no Notification API</td>
+<td>浏览器不支持</td>
+<td>当前环境没有通知 API</td>
 </tr>
 </tbody></table>
-<h3>Troubleshooting</h3>
+<h3>故障排查</h3>
 <table>
 <thead>
 <tr>
-<th>Symptom</th>
-<th>Resolution</th>
+<th>症状</th>
+<th>解决</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>No notifications appear</td>
-<td>Confirm the toggle in Settings → General is Enabled, the browser permission for the DSH site is Allow, and on macOS the browser is allowed under System Settings → Notifications; then switch to another tab — the plugin only notifies while you are away</td>
+<td>没有通知出现</td>
+<td>确认设置 → 通用 的开关是「已开启」、浏览器对 DSH 站点的权限是「允许」、macOS 系统设置 → 通知 里允许了浏览器；然后切到别的标签页——插件只在你不看页面时通知</td>
 </tr>
 <tr>
-<td>Notifications worked, then stopped after a restart</td>
-<td>The browser may have reset site permissions; re-grant, or re-enable the toggle if the settings row shows a different state</td>
+<td>重启后通知失效</td>
+<td>浏览器可能重置了站点权限；重新授权，或如果设置行显示其他状态就重新开启开关</td>
 </tr>
 <tr>
-<td>&quot;Blocked by browser&quot;</td>
-<td>The site permission was previously denied — change it back to Allow in the browser&#39;s site settings; clicking Enable alone will not help</td>
+<td>「已被浏览器阻止」</td>
+<td>之前拒绝过——去浏览器站点设置改回「允许」，点开启按钮没用</td>
 </tr>
 <tr>
-<td>&quot;Unsupported&quot;</td>
-<td>The environment has no Notification API (e.g. an old or unusual browser); desktop notifications cannot work there</td>
+<td>「浏览器不支持」</td>
+<td>当前环境没有 Notification API（旧版或特殊浏览器），桌面通知无法工作</td>
 </tr>
 <tr>
-<td>Plugin not in Settings → General after install</td>
-<td>The plugin only appears after the Web UI is restarted and the page hard-refreshed; verify the bundle row is in the profile (`dsh --profile web --dump-config</td>
+<td>安装后设置里没有该插件</td>
+<td>插件要重启 Web UI + 硬刷新页面后才出现；用 `dsh --profile web --dump-config</td>
 </tr>
 </tbody></table>
-<h3>Development and verification</h3>
+<h3>开发与验证</h3>
 <pre><code class="language-sh">pnpm install
-pnpm run build     # tsc + tsdown -&gt; lib/ (committed)
-pnpm test          # vitest: browser-plugin + settings-row suites
+pnpm run build     # tsc + tsdown -&gt; lib/（已提交）
+pnpm test          # vitest：browser-plugin + settings-row 套件
 </code></pre>
-<p><code>pnpm run build</code> emits the host + client bundles into <code>lib/</code>, which is committed so consumers install without building. The test suite covers plugin wiring on a real cordis context and the settings row in jsdom. Changes that alter the plugin&#39;s visible surface (which events notify, the settings row, locales) should add or update coverage in <code>tests/</code>.</p>
-<h3>Community and About</h3>
+<p><code>pnpm run build</code> 把 host + client bundle 生成到 <code>lib/</code>，lib 已提交，消费方安装无需构建。测试套件覆盖真实 cordis 上下文上的插件接线（browser-plugin）和 jsdom 里的设置行（settings-row）。改动影响插件可见表面（哪些事件通知、设置行、语言包）时，应在 <code>tests/</code> 里同步更新覆盖。</p>
+<h3>社区与关于</h3>
 <ul>
-<li>Use <a href="https://github.com/bill9109/dsh-web-ui-notify/issues">GitHub Issues</a> for reproducible bugs, focused feature requests, and usage questions.</li>
-<li>Read <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> before proposing changes; report vulnerabilities privately via <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/SECURITY.md">SECURITY.md</a>.</li>
-<li>Follow releases and compatibility notes in <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</li>
+<li>可复现的 bug、聚焦的功能请求和使用问题，走 <a href="https://github.com/bill9109/dsh-web-ui-notify/issues">GitHub Issues</a>。</li>
+<li>提变更前先读 <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>；安全问题通过 <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/SECURITY.md">SECURITY.md</a> 私有上报。</li>
+<li>版本与兼容性说明见 <a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/CHANGELOG.md">CHANGELOG.md</a>。</li>
 </ul>
 <h3>License</h3>
 <p>BSD-3-Clause</p>
 
     </div>
-    <p class="note"><a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/bill9109/dsh-web-ui-notify/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

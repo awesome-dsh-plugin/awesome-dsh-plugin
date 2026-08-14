@@ -194,69 +194,69 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/Letter2025/dsh-tool-search/blob/main/README.md">English</a> | <a href="https://github.com/Letter2025/dsh-tool-search/blob/main/README.zh.md">中文</a></p>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
-<p>Tool search &amp; slimming for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH): Hermes-style progressive disclosure. When your tool catalog gets large (many MCP servers or plugin tools), every tool&#39;s JSON schema is injected into the model context on every turn — wasting tokens on tools the task never uses. This plugin collapses the long tail behind three bridge tools and lets the model discover and load them on demand through a configured <strong>rerank model</strong>.</p>
+<p><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（DSH）的工具搜索与瘦身插件：Hermes 风格渐进式披露。当工具目录变大（挂了多个 MCP 服务或插件工具）时，每个工具的 JSON schema 都会在每一轮注入模型上下文——大量 token 花在本次任务根本用不到的工具上。本插件把长尾工具折叠到三个桥接工具后面，让模型通过配置的 <strong>rerank 模型</strong>按需搜索、加载和调用。</p>
 <ul>
-<li><strong>Core tools stay eager</strong> — file/shell/essential tools are always directly visible.</li>
-<li><strong>Bridge tools</strong> — <code>tool_search</code>, <code>tool_describe</code>, <code>tool_call</code> replace the deferred schemas.</li>
-<li><strong>Tiered disclosure</strong> — the visible listing shrinks automatically as the catalog grows.</li>
-<li><strong>Conversational setup</strong> — the bundled <code>tool-slimmer-setup</code> skill groups your tools by talking to you, and guides configuring the rerank model.</li>
-<li><strong>User or project config</strong> — groups/matcher live in <code>~/.dsh/dsh-tool-search.json</code> (global) or <code>&lt;workspace&gt;/.dsh/dsh-tool-search.json</code> (per project), your choice.</li>
+<li><strong>核心工具永远直通</strong>——文件/终端/必备工具始终直接可见。</li>
+<li><strong>桥接工具</strong>——<code>tool_search</code> / <code>tool_describe</code> / <code>tool_call</code> 替代被折叠的 schema。</li>
+<li><strong>分级披露</strong>——目录越大，模型可见清单自动越精简。</li>
+<li><strong>对话式配置</strong>——随包技能 <code>tool-slimmer-setup</code> 通过对话帮你分组，并引导配置 rerank 模型。</li>
+<li><strong>全局或按项目</strong>——分组/匹配器存在 <code>~/.dsh/dsh-tool-search.json</code>（全局）或 <code>&lt;workspace&gt;/.dsh/dsh-tool-search.json</code>（按项目），由你选择。</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-tool-search
 </code></pre>
-<h3>How it works</h3>
-<p>Inspired by <a href="https://hermes-agent.nousresearch.com/docs/user-guide/features/tool-search">Hermes Agent&#39;s Tool Search</a>. On every turn, the plugin&#39;s <code>system-prompt/assemble</code> listener computes the tier and replaces the model-visible tools:</p>
+<h3>工作原理</h3>
+<p>灵感来自 <a href="https://hermes-agent.nousresearch.com/docs/zh-Hans/user-guide/features/tool-search">Hermes Agent 的 Tool Search</a>。每一轮，插件的 <code>system-prompt/assemble</code> 监听器计算档位并替换模型可见工具：</p>
 <table>
 <thead>
 <tr>
-<th>Tier</th>
-<th>Condition</th>
-<th>Model sees</th>
+<th>档位</th>
+<th>条件</th>
+<th>模型看到</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>0</td>
-<td>Small catalog / nothing deferrable</td>
-<td>Every tool, bridge absent</td>
+<td>目录很小 / 无可折叠工具</td>
+<td>全量直通，桥不出现</td>
 </tr>
 <tr>
 <td>1</td>
-<td>Grouped manifest fits the budget</td>
-<td>Bridge + <code>## group</code> name/description listing</td>
+<td>分组清单塞得进预算</td>
+<td>桥 + <code>## 组</code> 名称/描述清单</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Only names fit</td>
-<td>Bridge + names-only listing</td>
+<td>只有纯名称塞得进</td>
+<td>桥 + 纯名称清单</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Even names overflow</td>
-<td>Bridge + one line per group (name: count)</td>
+<td>纯名称也超预算</td>
+<td>桥 + 每组一行摘要（组名: 数量）</td>
 </tr>
 </tbody></table>
-<p>Budget = <code>min(thresholdPct% × contextWindow, listingMaxTokens)</code>, recomputed every turn. The manifest rides a runtime context, so it survives complete-prompt composition.</p>
-<p><strong>Dynamic injection</strong>: searching, describing, or calling a deferred tool warms it into the session&#39;s visible set (LRU-bounded by <code>maxWarmTools</code>), so its full schema is injected into the context for later turns — the model pulls tools into context on demand instead of keeping everything.</p>
-<p>When <code>tool_call</code> runs, the plugin executes the <strong>real tool by name</strong> through <code>ctx.tools.execute</code>, so approvals, guards, and session events all reference the underlying tool — never the bridge. <code>tool_search</code> ranks with the configured rerank matcher and falls back to keyword matching (exact name &gt; name tokens &gt; description tokens) when no matcher is configured or the rerank call fails.</p>
-<h3>Setup (conversational)</h3>
-<p>Ask your agent:</p>
+<p>预算 = <code>min(thresholdPct% × 上下文窗口, listingMaxTokens)</code>，每轮重算。清单挂在 runtime context 上，不会被 complete prompt 组合丢弃。</p>
+<p><strong>动态注入</strong>：搜索、查看或调用某个延迟工具后，该工具会进入会话的可见集（LRU 上限 <code>maxWarmTools</code>），完整 schema 注入后续轮次的上下文——模型按需把工具拉进上下文，而不是永远堆着全部工具。</p>
+<p><code>tool_call</code> 执行时，插件以<strong>真实工具名</strong>走 <code>ctx.tools.execute</code>——审批、守卫、会话事件全部对着底层工具，永远不是桥本身。<code>tool_search</code> 用配置的 rerank 模型排序；未配置 matcher 或 rerank 失败时降级为<strong>关键词匹配</strong>（精确名 &gt; 名字词 &gt; 描述词），永不报错。</p>
+<h3>对话式配置</h3>
+<p>对你的 agent 说：</p>
 <blockquote>
 <p>帮我配置 dsh-tool-search 的工具分组</p>
 </blockquote>
-<p>The <code>tool-slimmer-setup</code> skill will read the catalog, propose groups, confirm with you, ask whether the config should be <strong>global or per-project</strong>, and guide you through configuring the rerank matcher (required for <code>tool_search</code> and preload).</p>
-<h3>Configuration</h3>
-<p>Static tuning lives in your profile <code>cordis.patch.yml</code> (restart to change):</p>
+<p><code>tool-slimmer-setup</code> 技能会读取目录、提出分组方案、与你确认、询问配置<strong>全局还是按项目</strong>，并引导你配置 rerank 匹配器（<code>tool_search</code> 和预加载的前置条件）。</p>
+<h3>配置</h3>
+<p>静态调优放在 profile 的 <code>cordis.patch.yml</code>（改后需重启）：</p>
 <pre><code class="language-yaml">- id: tool-search
   config:
     enabled: auto        # auto | on | off
-    thresholdPct: 5      # listing budget as % of context window
+    thresholdPct: 5      # 清单预算占上下文窗口的百分比
     listingMaxTokens: 4000
-    configScope: auto    # user | project | auto (project file wins when present)
-    core: [todo_write]   # extra always-eager tools
-    maxWarmTools: 8      # LRU cap for dynamically injected tools
+    configScope: auto    # user | project | auto（存在项目文件时优先）
+    core: [todo_write]   # 额外永远直通的工具
+    maxWarmTools: 8      # 动态注入工具的 LRU 上限
 </code></pre>
-<p>Tool groups, the matcher, and preload live in the runtime file (<code>~/.dsh/dsh-tool-search.json</code> for user scope):</p>
+<p>工具分组、匹配器和预加载放在运行时文件（用户级为 <code>~/.dsh/dsh-tool-search.json</code>）：</p>
 <pre><code class="language-json">{
   &quot;version&quot;: 1,
   &quot;scope&quot;: &quot;user&quot;,
@@ -275,50 +275,50 @@ footer p+p{margin-top:.5rem}
 }
 </code></pre>
 <ul>
-<li><code>groups</code>: exact tool names and/or name prefixes; a tool belongs to the first matching group.</li>
-<li><code>matcher</code>: an OpenAI-compatible <code>/v1/rerank</code> endpoint — the only matcher type. <code>tool_search</code> returns setup guidance until one is configured.</li>
-<li><code>preload</code>: optional; when enabled (with a matcher), the session&#39;s first turn semantically preloads the top-K matching tools into the eager set.</li>
-<li>The file is watched by mtime and hot-reloads; changes take effect on the next turn.</li>
+<li><code>groups</code>：精确工具名和/或名称前缀；工具归入第一个命中的组。</li>
+<li><code>matcher</code>：OpenAI 兼容的 <code>/v1/rerank</code> 端点——唯一的匹配器类型。未配置时 <code>tool_search</code> 返回引导提示。</li>
+<li><code>preload</code>：可选；启用（需配 matcher）后，会话首轮会用任务描述语义预加载 top-K 命中工具进 eager 集。</li>
+<li>文件按 mtime 热重载，下一轮生效。</li>
 </ul>
-<h3>Bridge tools</h3>
+<h3>桥接工具</h3>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Purpose</th>
+<th>工具</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>tool_search(query, limit?)</code></td>
-<td>Search the deferred catalog (rerank, keyword fallback) and return ranked <code>{name, description, group}</code> matches; matches are injected into the visible context</td>
+<td>搜索延迟目录（rerank，关键词兜底），返回排序后的 <code>{name, description, group}</code> 匹配；命中工具注入可见上下文</td>
 </tr>
 <tr>
 <td><code>tool_describe(name)</code></td>
-<td>Load the full schema of one deferred tool; the tool is injected into the visible context</td>
+<td>加载单个延迟工具的完整 schema；该工具注入可见上下文</td>
 </tr>
 <tr>
 <td><code>tool_call(name, arguments)</code></td>
-<td>Invoke a deferred tool by real name; approvals/guards/events use the real tool; the tool is injected into the visible context</td>
+<td>以真实工具名调用延迟工具；审批/守卫/事件都走真实工具；该工具注入可见上下文</td>
 </tr>
 </tbody></table>
-<h3>Design notes &amp; pitfalls</h3>
+<h3>设计要点与坑</h3>
 <ul>
-<li>Slimming only rewrites the <strong>model-visible surface</strong> (<code>system-prompt/assemble</code>); the registry stays complete, so deferred tools remain executable.</li>
-<li>The bridge, the two setup tools, and <code>skill</code> are always eager and never defer themselves.</li>
-<li>Keyword matching is only a <strong>fallback</strong>: rerank is the primary ranking; without a matcher or on rerank failure, search degrades to keyword matching (exact name &gt; name tokens &gt; description tokens) and never errors.</li>
-<li>See <a href="https://github.com/Letter2025/dsh-tool-search/blob/main/DESIGN.md">DESIGN.md</a> for the full architecture.</li>
+<li>瘦身只改写<strong>模型可见表面</strong>（<code>system-prompt/assemble</code>），注册表保持完整，延迟工具仍可执行。</li>
+<li>桥、两个配置工具和 <code>skill</code> 永远 eager，不会被自己延迟。</li>
+<li>关键词匹配只作为<strong>兜底</strong>：rerank 是首选排序，未配置 matcher 或 rerank 失败时降级（精确名 &gt; 名字词 &gt; 描述词），搜索永不报错。</li>
+<li>完整架构见 <a href="https://github.com/Letter2025/dsh-tool-search/blob/main/DESIGN.md">DESIGN.md</a>。</li>
 </ul>
-<h3>Links</h3>
+<h3>链接</h3>
 <ul>
 <li><a href="https://github.com/Letter2025/dsh-tool-search">GitHub</a></li>
 <li><a href="https://www.npmjs.com/package/dsh-tool-search">npm</a></li>
-<li><a href="https://github.com/Letter2025/dsh-tool-search/blob/main/DESIGN.md">Design doc</a></li>
+<li><a href="https://github.com/Letter2025/dsh-tool-search/blob/main/DESIGN.md">设计文档</a></li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Letter2025/dsh-tool-search/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Letter2025/dsh-tool-search/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

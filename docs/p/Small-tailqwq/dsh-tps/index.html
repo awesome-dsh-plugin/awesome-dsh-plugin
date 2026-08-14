@@ -189,59 +189,59 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>DSH Web 实时 TPS 徽标：在 &quot;Deep diving…&quot; 状态行内显示实时 tokens-per-second，跟随运行行自然显隐。</p>
-<p>English: <a href="https://github.com/Small-tailqwq/dsh-tps/blob/main/README.en.md">README.en.md</a></p>
-<p><img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-tps/main/assets/dshtpsdemo.gif" alt="演示"></p>
-<h3>特性</h3>
+<p>Live TPS badge for DSH Web: real-time tokens-per-second rendered inside the &quot;Deep diving…&quot; running-turn status row, sharing that row&#39;s natural visibility lifecycle.</p>
+<p>中文: <a href="https://github.com/Small-tailqwq/dsh-tps/blob/main/README.md">README.md</a></p>
+<p><img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-tps/main/assets/dshtpsdemo.gif" alt="Demo"></p>
+<h3>Features</h3>
 <ul>
-<li><strong>实时瞬时 TPS</strong>：滚动 5 秒窗口采样流式输出（UTF-8 字节 / 5 估算），流暂停 1.5 秒自动显示 <code>--</code>，新步骤自动重置窗口；徽标在首个数值到达时才出现（一次性淡入），新一轮不会显示光秃秃的 <code>TPS --</code>，中途暂停的 <code>--</code> 保留</li>
-<li><strong>跟随显隐，零适配</strong>：徽标渲染在 &quot;Deep diving… 7分25秒&quot; 行内，turn 结束、提问/审批面板接管时随行一起消失——无需为待办条、队列条或提问面板编写任何隐藏逻辑</li>
-<li><strong>不重复原生功能</strong>：窗口级平均值（AVG/TTFT/token 总数）是内置 StatsLine 的职责，本插件刻意只做瞬时速率</li>
-<li><strong>悬停淡出</strong>：停留 2 秒淡出并变为可穿透（<code>pointer-events: none</code>）；隐藏期间光标在徽标上或其附近（外扩 8px）则保持隐藏，移开后经 3 秒宽限期才恢复（期间回到附近则取消恢复），光标停驻不会循环触发</li>
-<li><strong>纯前端</strong>：所有读数派生自会话快照，无 store、无事件监听、无网络调用</li>
+<li><strong>Instantaneous TPS only</strong>: a rolling 5s window samples streamed output (UTF-8 bytes / 5 estimate); the reading shows <code>--</code> after 1.5s without new tokens and resets on step boundaries; the badge mounts only once the first value arrives (one-shot fade-in), so a fresh turn never shows a bare <code>TPS --</code>, while mid-turn pauses keep the dash</li>
+<li><strong>Visibility follows the host row, zero adaptation</strong>: the badge lives inside the &quot;Deep diving… 7分25秒&quot; row, so it disappears with the row when the turn ends or a takeover panel (question/approval) hides the composer flow — no hide logic for todo strips, queue rows, or question panels</li>
+<li><strong>No duplication of built-in stats</strong>: window averages (AVG/TTFT/token totals) are the built-in StatsLine&#39;s job; this plugin deliberately owns only the instantaneous rate</li>
+<li><strong>Hover fade</strong>: a 2s hover dwell fades the badge out and makes it click-through (<code>pointer-events: none</code>); while hidden it stays hidden for as long as the cursor is on or near the badge (8px margin), and once the cursor moves away a 3s grace period elapses before it restores (a return to the badge area cancels the pending restore) — a parked cursor never loops the cycle</li>
+<li><strong>Pure front-end</strong>: all readings derive from the conversation snapshot — no store, no event listeners, no network calls</li>
 </ul>
-<h3>安装教程</h3>
-<h4>第 0 步：前置条件</h4>
+<h3>Installation guide</h3>
+<h4>Step 0: Prerequisites</h4>
 <ol>
-<li><p><strong>harness checkout 包含 <code>conversation.chat.turnStatus</code> 槽位</strong>。检查方式：</p>
+<li><p><strong>A harness checkout containing the <code>conversation.chat.turnStatus</code> slot</strong>. Verify:</p>
 <pre><code class="language-sh">grep -n &quot;conversation.chat.turnStatus&quot; &lt;harness&gt;/packages/client/ui-conversation/src/client/apply.ts
 </code></pre>
-<p><strong>grep 有输出</strong>：槽位已存在（例如已应用过本补丁、或 checkout 来自作者修改过的版本），可直接进入安装。</p>
-<p><strong>grep 无输出是默认状态</strong>：该槽位是作者对 ui-conversation 的<strong>手动补丁改动</strong>（4 个文件：slots.ts / apply.ts / ChatView.tsx / ChatView.module.css），<strong>从未合入任何共享/原始快照</strong>——所有内测人员的原始快照都不含它。请应用本仓库附带的补丁（<code>git checkout</code> 可还原）：</p>
+<p><strong>Output means the slot is present</strong> (e.g. the patch was applied before, or the checkout comes from the author&#39;s modified tree) — proceed to installation.</p>
+<p><strong>No output is the default state</strong>: the slot is a <strong>manual ui-conversation patch</strong> by the author (four files: slots.ts / apply.ts / ChatView.tsx / ChatView.module.css) and has <strong>never been part of any shared/original snapshot</strong> — every internal tester&#39;s pristine snapshot lacks it. Apply the patch shipped with this repo (reversible with <code>git checkout</code>):</p>
 <pre><code class="language-sh">cd &lt;harness&gt;
 git apply &lt;dsh-tps&gt;/patches/turnstatus-slot.patch
 </code></pre>
-<p>说明：槽位改动只存在于作者修改过的 checkout 中（个人快照仓库 <code>dsh2026/test-Small-tailqwq</code> 的推送也不会自动进入其他成员的快照，每日快照是独立更新流程）。因此目前<strong>所有内测人员的原始快照都需按本步骤打补丁</strong>（或使用下方 AI 安装技能自动完成）；待槽位合入共享的快照更新流程后，方可免去此步骤。</p>
+<p>Note: the slot change exists only in the author&#39;s modified checkout (pushes to the personal snapshot repo <code>dsh2026/test-Small-tailqwq</code> do not automatically reach other members&#39; snapshots either — daily snapshots are a separate update flow). So for now <strong>every internal tester&#39;s pristine snapshot needs this patch</strong> (or let the AI install skill below do it); the step becomes optional only once the slot lands in the shared snapshot-update flow.</p>
 </li>
-<li><p><strong>私有仓库访问</strong>：本仓库为 dsh-external 内测私有仓库，需要已登录的 <code>gh</code>（或 PAT）：</p>
+<li><p><strong>Private repo access</strong>: this is a private dsh-external repository; use an authenticated <code>gh</code> (or a PAT):</p>
 <pre><code class="language-sh">gh auth status
 git clone https://github.com/dsh-external/dsh-tps.git
 </code></pre>
 </li>
 </ol>
-<h4>方式一：AI 自动安装（零手动改码，推荐）</h4>
-<p>本仓库附 <code>SKILL.md</code>（dsh-tps-install）。clone 后告诉你的 AI「按 dsh-tps 仓库的 <code>SKILL.md</code> 安装 dsh-tps」，AI 会自动完成：检测槽位 → 缺失时应用补丁 → 验证 → 重建 ui-conversation bundle → 挂载插件 → 验收。也可把 <code>SKILL.md</code> 放进本地 skills 目录供 AI 直接发现。</p>
-<h4>方式二：<code>dsh plugin</code> 命令安装（推荐手动方式）</h4>
+<h4>Route 1: AI-assisted install (zero manual code edits, recommended)</h4>
+<p>This repo ships <code>SKILL.md</code> (<code>dsh-tps-install</code>). After cloning, tell your AI &quot;install dsh-tps following <code>SKILL.md</code> in the dsh-tps repo&quot;; the AI detects the slot, applies the patch when missing, verifies, rebuilds the ui-conversation bundle, mounts the plugin, and runs acceptance. Alternatively drop <code>SKILL.md</code> into a local skills directory for the AI to discover.</p>
+<h4>Route 2: <code>dsh plugin</code> command (recommended manual route)</h4>
 <pre><code class="language-sh">cd &lt;harness&gt;
-dsh plugin --profile web add &lt;dsh-tps 本地路径&gt;
-# 或通过 GitHub 依赖
+dsh plugin --profile web add &lt;path-to-dsh-tps&gt;
+# or via a GitHub dependency
 dsh plugin --profile web add github:dsh-external/dsh-tps
 </code></pre>
-<p>本包声明了 <code>dsh.bundle</code>（patch 指向仓库内 <code>cordis.yml</code>），<code>dsh plugin</code> 会<strong>自动</strong>把它追加进 profile 的 <code>dsh.profile.bundles</code>（见下文「dsh 端点」），无需手写任何 insert。从 git 安装时若 pnpm 拦截构建，按提示把包加入 profile 的 <code>pnpm-workspace.yaml</code> <code>allowBuilds</code> 后重试。</p>
-<h4>方式三：手动安装（无 <code>dsh plugin</code> 命令时）</h4>
-<p><strong>步骤 1：添加依赖</strong>。编辑 <code>~/.dsh/profiles/web/package.json</code> 的 <code>dependencies</code>：</p>
+<p>This package declares <code>dsh.bundle</code> (patch → <code>cordis.yml</code> in this repo), so <code>dsh plugin</code> <strong>automatically</strong> appends it to the profile&#39;s <code>dsh.profile.bundles</code> (see &quot;dsh endpoints&quot; below) — no hand-written inserts. Git installs run the <code>prepare</code> build script; if pnpm blocks the build, add the package to the profile&#39;s <code>pnpm-workspace.yaml</code> <code>allowBuilds</code> as prompted and retry.</p>
+<h4>Route 3: Manual install (when <code>dsh plugin</code> is unavailable)</h4>
+<p><strong>Step 1 — add the dependency.</strong> Edit <code>dependencies</code> in <code>~/.dsh/profiles/web/package.json</code>:</p>
 <pre><code class="language-json">&quot;dependencies&quot;: {
   &quot;@dsh-external/dsh-tps&quot;: &quot;github:dsh-external/dsh-tps&quot;
 }
 </code></pre>
-<p>（本地路径可用 <code>&quot;@dsh-external/dsh-tps&quot;: &quot;file:../dsh-tps&quot;</code>，然后 <code>cd ~/.dsh/profiles/web &amp;&amp; pnpm install</code>。）</p>
-<p><strong>步骤 2：添加 dsh 端点</strong>（见下节）。<strong>步骤 3：验证</strong> <code>dsh --profile web --dump-config | grep -A1 tps</code>。</p>
+<p>(For a local checkout use <code>&quot;@dsh-external/dsh-tps&quot;: &quot;file:../dsh-tps&quot;</code>, then <code>cd ~/.dsh/profiles/web &amp;&amp; pnpm install</code>.)</p>
+<p><strong>Step 2 — add the dsh endpoint</strong> (next section). <strong>Step 3 — verify</strong>: <code>dsh --profile web --dump-config | grep -A1 tps</code>.</p>
 <blockquote>
-<p>备选挂载：也可直接在 profile 的 <code>cordis.patch.yml</code> 追加 insert 行，或用 <code>dsh web --patch ./cordis.yml</code> 作为启动 overlay（本仓库已附 <code>cordis.yml</code>）——这两种方式同样要求依赖图包含本包。</p>
+<p>Alternative mount: append the insert row to the profile&#39;s <code>cordis.patch.yml</code> directly, or launch with <code>dsh web --patch ./cordis.yml</code> (shipped in this repo) — both still require the package in the dependency graph.</p>
 </blockquote>
-<h4>dsh 端点（<code>dsh.profile.bundles</code>）创建教程</h4>
-<p><strong>什么是 dsh 端点</strong>：profile 的 <code>dsh.profile.bundles</code> 数组是 profile 的<strong>组合端点列表</strong>——启动时按数组顺序叠加每个 bundle 的 patch 层（<code>dsh.bundle.patch</code> 指向的 <code>cordis.patch.yml</code>/<code>cordis.yml</code>），插件的插件行只有在该数组里才会进入组合配置。可以理解为&quot;profile 挂载了哪些 bundle 层&quot;的清单。</p>
-<p><strong>创建步骤</strong>（继续方式三）：编辑 <code>~/.dsh/profiles/web/package.json</code>：</p>
+<h4>dsh endpoints (<code>dsh.profile.bundles</code>) tutorial</h4>
+<p><strong>What an endpoint is</strong>: the profile&#39;s <code>dsh.profile.bundles</code> array is the profile&#39;s <strong>composition endpoint list</strong> — at boot the harness stacks each bundle&#39;s patch layer (<code>dsh.bundle.patch</code> → <code>cordis.patch.yml</code>/<code>cordis.yml</code>) in array order, and a plugin row only enters the composed config if its bundle is in this array. Think of it as &quot;which bundle layers this profile mounts&quot;.</p>
+<p><strong>How to create one</strong> (continuing Route 3): edit <code>~/.dsh/profiles/web/package.json</code>:</p>
 <pre><code class="language-json">{
   &quot;dsh&quot;: {
     &quot;profile&quot;: {
@@ -254,58 +254,58 @@ dsh plugin --profile web add github:dsh-external/dsh-tps
   }
 }
 </code></pre>
-<p>然后 <code>cd ~/.dsh/profiles/web &amp;&amp; pnpm install</code>，并验证：</p>
+<p>Then <code>cd ~/.dsh/profiles/web &amp;&amp; pnpm install</code> and verify:</p>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep -A1 tps
 # → - id: tps
 #     name: &#39;@dsh-external/dsh-tps&#39;
 </code></pre>
-<p><strong>为何需要手动添加端点</strong>：</p>
+<p><strong>Why a manual endpoint is needed</strong>:</p>
 <ul>
-<li><code>dsh plugin --profile web add</code> 会在安装后<strong>自动 reconcile</strong>：检测到包声明了 <code>dsh.bundle</code>，就把包名追加进 <code>dsh.profile.bundles</code>。</li>
-<li>但<strong>直接编辑 <code>package.json</code> 或 <code>pnpm add</code> 安装依赖时，<code>dsh.profile.bundles</code> 数组不会自动更新</strong>——patch 层只从该数组加载。</li>
-<li><strong>不添加端点的后果</strong>：包被安装了，但它的 patch 层不进入组合 → 组合配置里没有 <code>tps</code> 行 → <strong>插件静默不加载</strong>（无报错）。手动添加端点 = 把 <code>dsh plugin add</code> 的 reconcile 那一步自己做掉。</li>
+<li><code>dsh plugin --profile web add</code> <strong>auto-reconciles</strong> after install: it detects the <code>dsh.bundle</code> declaration and appends the package name to <code>dsh.profile.bundles</code>.</li>
+<li>But when you install the dependency by <strong>editing <code>package.json</code> directly or via <code>pnpm add</code>, the <code>dsh.profile.bundles</code> array is not updated automatically</strong> — patch layers load only from that array.</li>
+<li><strong>Consequence of skipping the endpoint</strong>: the package is installed, but its patch layer never joins the composition → no <code>tps</code> row in the composed config → <strong>the plugin silently does not load</strong> (no error). Adding the endpoint manually is doing the reconcile step of <code>dsh plugin add</code> yourself.</li>
 </ul>
-<h4>布局与依赖（开发本仓库时）</h4>
-<p>与 harness checkout 平级（sibling）是约定布局——<code>tsconfig.json</code> extends <code>../deepseek-harness/tsconfig.base.json</code>，类型解析（<code>tsc -b</code>、vitest 经 <code>vite-tsconfig-paths</code>）都经由它的 <code>paths</code> 直接指向 harness 源码，无需复制任何构建产物：</p>
-<pre><code>deepseek-harness/   ← harness 源码 checkout（含 turnStatus 槽位）
-dsh-tps/            ← 本仓库
+<h4>Layout and dependencies (when developing this repo)</h4>
+<p>The default layout is sibling checkouts — <code>tsconfig.json</code> extends <code>../deepseek-harness/tsconfig.base.json</code>, and type resolution (<code>tsc -b</code>, vitest via <code>vite-tsconfig-paths</code>) goes through that base&#39;s <code>paths</code> straight to the harness sources; nothing is copied:</p>
+<pre><code>deepseek-harness/   ← harness source checkout (with the turnStatus slot)
+dsh-tps/            ← this repository
 </code></pre>
-<p>类型检查、构建与测试都需要该 sibling checkout；<strong>消费者安装不需要</strong>——<code>prepare</code> 脚本用 <code>tsdown --config tsdown.prepare.config.ts</code> 做无类型检查的 src→lib 转译（<code>tsconfig.prepare.json</code> 自包含），没有 sibling 的机器也能安装构建（pnpm ≥ 10 需 <code>pnpm-workspace.yaml</code> 的 <code>allowBuilds</code> 键）。</p>
-<h4>构建与生效</h4>
+<p>Typecheck, build, and tests need that sibling checkout; <strong>consumer installs never do</strong> — the <code>prepare</code> script runs <code>tsdown --config tsdown.prepare.config.ts</code>, a type-unchecked src→lib transpile (self-contained <code>tsconfig.prepare.json</code>), so a machine without the sibling can still install and build (pnpm ≥ 10 needs the <code>allowBuilds</code> key in <code>pnpm-workspace.yaml</code>).</p>
+<h4>Build and activate</h4>
 <pre><code class="language-sh">cd dsh-tps
-pnpm run typecheck    # tsc -b（需 sibling harness）
-pnpm test             # vitest（27 例：形态门禁 + 指标 + 组件/生命周期）
-pnpm run build        # tsc -b + tsdown：产出 lib/index.js 与 lib/client.js
-pnpm run prepare      # 消费者构建：仅 tsdown，无类型检查（src → lib）
+pnpm run typecheck    # tsc -b (needs the sibling harness)
+pnpm test             # vitest (27 tests: shape gate + metrics + component/lifecycle)
+pnpm run build        # tsc -b + tsdown: emits lib/index.js and lib/client.js
+pnpm run prepare      # consumer build: tsdown only, no type checking (src → lib)
 </code></pre>
 <ul>
-<li><strong>开发模式</strong>（<code>dsh web --dev</code> + <code>pnpm run dev:web</code> watcher）：构建后客户端插件自动热更新。</li>
-<li><strong>生产模式</strong>：构建后<strong>重启 <code>dsh web</code></strong>（client bundle 的 rev 在启动时计算，仅刷新浏览器可能命中旧缓存）。</li>
+<li><strong>Development mode</strong> (<code>dsh web --dev</code> + <code>pnpm run dev:web</code> watcher): client-plugin bundles hot-reload after building.</li>
+<li><strong>Production mode</strong>: <strong>restart <code>dsh web</code></strong> after building (client bundle revs are computed at boot; a browser refresh alone may hit stale caches).</li>
 </ul>
-<h4>验证</h4>
-<p>任务执行时（turn 运行中）应看到：</p>
+<h4>Verify</h4>
+<p>While a turn runs you should see:</p>
 <pre><code>Deep diving… 7分25秒 | TPS 12.3
 </code></pre>
-<p>turn 结束或提问时整行消失。</p>
-<h3>使用说明</h3>
+<p>The row (and the badge) disappear when the turn ends or a takeover panel appears.</p>
+<h3>Usage notes</h3>
 <ul>
-<li>徽标字号 14px/500（<code>--dsw-font-s-strong-14</code>），与 13px 时钟并排时视觉高度接近（拉丁字符 ≈0.7em，中文方块字 ≈1em）</li>
-<li>悬停 2 秒 → 淡出 → 鼠标穿透；光标在徽标上或其附近（外扩 8px）期间保持隐藏，移开后 3 秒恢复（期间回到附近则取消）；重新移回并停留会再次淡出</li>
-<li>时长均为编译期常量（<code>src/client/TpsOverlay.tsx</code>），暂无客户端配置通道</li>
+<li>Badge type is 14px/500 (<code>--dsw-font-s-strong-14</code>) so Latin capitals and digits (~0.7em visual height) read comparably against the 13px full-square CJK clock glyphs</li>
+<li>Hover 2s → fade → click-through; stays hidden while the cursor is on or near the badge (8px margin), restores 3s after the cursor leaves (a return cancels the restore); re-hovering starts the dwell again</li>
+<li>All timings are compile-time constants in <code>src/client/TpsOverlay.tsx</code>; there is no client-plugin config channel yet</li>
 </ul>
-<h3>与官方包的关系</h3>
-<p>本仓库是独立分发版；上游源码镜像自 DeepSeek Harness monorepo 的 <code>packages/client/ui-tps</code>（官方包名 <code>@deepseek-ai/dsh-client-ui-tps</code>），包装差异仅为独立仓库构建与 <code>@dsh-external/tps</code> 命名。</p>
+<h3>Relationship to the official package</h3>
+<p>This repository is the standalone distribution; the upstream source mirrors <code>packages/client/ui-tps</code> in the DeepSeek Harness monorepo (official package name <code>@deepseek-ai/dsh-client-ui-tps</code>), differing only in the standalone build wrapper and the <code>@dsh-external/tps</code> naming.</p>
 <h3>Known Limitations and Deferred Work</h3>
 <ul>
-<li><strong>实时 token 为估算值</strong>：流式 partial 不携带实时 token 计数，速率按 UTF-8 字节估算（bytes/5）；精确计数由持久化 token-usage 投影与内置 StatsLine 提供</li>
-<li><strong>悬停时长固定</strong>：停留/淡出时长与隐藏判定范围是编译期常量，暂无客户端插件配置通道可调</li>
-<li><strong>依赖内测槽位</strong>：需要含 <code>conversation.chat.turnStatus</code> 槽位的 harness（见第 0 步）</li>
+<li><strong>Estimated live tokens</strong>: the streaming partial carries no live token counts, so the rate estimates tokens from UTF-8 bytes (bytes/5); exact accounting stays with the durable token-usage projection and the built-in StatsLine</li>
+<li><strong>Fixed hover timings</strong>: the dwell/fade durations and the hide-area margin are compile-time constants; no client-plugin config channel to tune them per deployment</li>
+<li><strong>Internal slot dependency</strong>: requires a harness with the <code>conversation.chat.turnStatus</code> slot (see Step 0)</li>
 </ul>
-<h3>许可</h3>
+<h3>License</h3>
 <p>BSD-3-Clause</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Small-tailqwq/dsh-tps/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/Small-tailqwq/dsh-tps/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

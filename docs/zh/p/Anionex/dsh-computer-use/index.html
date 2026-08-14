@@ -190,36 +190,36 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://x.com/anion_ex"><img src="https://img.shields.io/badge/-@anion__ex-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a>
-<a href="https://github.com/Anionex/dsh-computer-use/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f855a.svg" alt="License: MIT"></a>
+<a href="https://github.com/Anionex/dsh-computer-use/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f855a.svg" alt="MIT License"></a>
 <img src="https://img.shields.io/badge/macOS-14%2B-111827.svg" alt="macOS">
 <img src="https://img.shields.io/badge/native-arm64%20%2B%20x86__64-2563eb.svg" alt="Universal binary">
 <img src="https://img.shields.io/badge/DeepSeek%20Harness-Bundle-5b50ed.svg" alt="DeepSeek Harness"></p>
-<p><strong>Native macOS control for DeepSeek Harness that keeps your real cursor and foreground application alone by default; the Bundle may bring the target app forward before keyboard input for reliable typing.</strong></p>
-<p>DSH Computer Use gives an Agent fresh Accessibility observations, exact process/window targeting, stale-state rejection, scoped application access, and verified post-action state. Semantic Accessibility comes first; mouse, drag, wheel, and keyboard fallback are routed to the selected process instead of the global desktop.</p>
-<p>English | <a href="https://github.com/Anionex/dsh-computer-use/blob/main/README.zh.md">中文</a></p>
-<h3>Why it is different</h3>
-<p>Accessibility permission lets a process inspect and operate macOS UI elements, but the permission itself does not prevent focus stealing or cursor movement. Those behaviors depend on the input route.</p>
-<p>The default DSH Computer Use route is deliberately non-interfering:</p>
+<p><strong>为 DeepSeek Harness 提供原生 macOS 控制能力，默认不碰你的真实光标，也不因指针动作抢占前台；Bundle 可以在键盘输入前把目标应用带到前台，保证输入可靠。</strong></p>
+<p>DSH Computer Use 为 Agent 提供新鲜的 Accessibility observation、准确进程/窗口定向、stale state 拒绝、按应用限制的访问，以及动作后的可验证状态。语义化 Accessibility 始终优先；鼠标、拖拽、滚轮与键盘 fallback 会投递给选定进程，而不是全局桌面。</p>
+<p><a href="https://github.com/Anionex/dsh-computer-use/blob/main/README.md">English</a> | 中文</p>
+<h3>为什么它不同</h3>
+<p>Accessibility 权限允许进程读取和操作 macOS UI 元素，但这个权限本身并不会自动防止抢焦点或移动光标。是否干扰用户，取决于输入事件走哪条路由。</p>
+<p>DSH Computer Use 的默认路由有意避免干扰：</p>
 <ul>
-<li><strong>No system-cursor movement:</strong> the helper contains no cursor-warp path.</li>
-<li><strong>No global pointer injection:</strong> click, scroll, and drag fallback use a pid/window-targeted SkyLight route, not the global HID event stream.</li>
-<li><strong>No pointer-triggered activation:</strong> semantic Accessibility, process-targeted pointer input, and <code>keyboardPolicy: preserve</code> run without activation; <code>keyboardPolicy: activate</code> (Bundle default) brings the target app forward before keyboard fallback, matching Codex Computer Use.</li>
-<li><strong>A separate Agent cursor:</strong> click, scroll, and drag actions animate a click-through, nonactivating software cursor while the macOS system cursor remains untouched. It is visible by default and stays at the action position until the bound window changes or a hide command; <code>cursorAutoHideMs</code> can opt into timed auto-hide.</li>
-<li><strong>No blind replay:</strong> every action is tied to an exact, unexpired observation and returns fresh state.</li>
+<li><strong>不移动系统光标：</strong> helper 中没有 cursor warp 路径。</li>
+<li><strong>不做全局指针注入：</strong> click、scroll 与 drag fallback 使用 pid/window 定向的 SkyLight 路由，不进入全局 HID 事件流。</li>
+<li><strong>指针动作不激活应用：</strong> 语义化 Accessibility、目标进程指针输入与 <code>keyboardPolicy: preserve</code> 都不激活；<code>keyboardPolicy: activate</code>（Bundle 默认）在键盘 fallback 前把目标应用带到前台，与 Codex Computer Use 对齐。</li>
+<li><strong>独立 Agent 光标：</strong> click、scroll 与 drag 动作会移动一个点击穿透、不会激活应用的软件光标，同时保持系统真实光标不变。默认显示，并停留在动作落点，直到绑定窗口变化或收到 hide 命令；<code>cursorAutoHideMs</code> 可开启定时自动隐藏。</li>
+<li><strong>不盲目重放：</strong> 每个动作都绑定准确、未过期的 observation，并返回新鲜状态。</li>
 </ul>
-<p>The result is a native action layer that can operate many background applications while the user continues working in the current foreground application.</p>
-<h3>What it adds</h3>
+<p>因此，这个原生动作层可以在用户继续使用当前前台应用时，操作许多后台应用。</p>
+<h3>它补充了什么</h3>
 <ul>
-<li><strong>Observe before acting.</strong> Return a bounded Accessibility tree, indexed elements, exact app/process/window metadata, permission state, and an optional screenshot Artifact.</li>
-<li><strong>Bind actions to state.</strong> Every element exposes an observation-local index and opaque <code>targetHandle</code>; exact lookup remains compatible, while explicitly allowed rebinding accepts only a unique native or semantic identity inside the same process and window.</li>
-<li><strong>Prefer semantic input.</strong> Use <code>AXPress</code>, editable values, selected-text assignment, and advertised Accessibility actions before pointer fallback.</li>
-<li><strong>Route fallback to the target.</strong> Keyboard input goes to the selected pid; pointer input goes to the selected pid and <code>CGWindowID</code> with window-local coordinates, resolving the app window under the point so arbitrary screen coordinates work.</li>
-<li><strong>Return fresh evidence.</strong> Every successful action settles for a bounded interval and returns a new full or diff observation.</li>
-<li><strong>Scope application access.</strong> Read and control leases are separated by Agent, Session, turn, and exact bundle id; high-impact actions require one-use confirmation.</li>
-<li><strong>Keep the model surface focused.</strong> Execution Tools appear only after the current Agent loads the Computer Use Skill.</li>
+<li><strong>先观察再动作。</strong> 返回有界 Accessibility tree、带 index 的元素、准确 app/process/window metadata、权限状态和可选截图 Artifact。</li>
+<li><strong>把动作绑定到状态。</strong> 每个元素都带有 observation-local index 与 opaque <code>targetHandle</code>；准确 locator 继续兼容，而显式允许的重绑定只接受同一进程和窗口内唯一的 native 或 semantic 身份。</li>
+<li><strong>优先语义输入。</strong> 先使用 <code>AXPress</code>、可编辑 value、selected-text 赋值和元素声明的 Accessibility action，再考虑指针 fallback。</li>
+<li><strong>把 fallback 投递给目标。</strong> 键盘输入发给选定 pid；指针输入携带窗口本地坐标，发给选定 pid 和 <code>CGWindowID</code>，并通过点解析应用窗口，任意屏幕坐标都可以点击。</li>
+<li><strong>返回新鲜证据。</strong> 每个成功动作都会经过有界 settle，并返回新的完整或差分 observation。</li>
+<li><strong>按应用限制访问。</strong> read/control lease 按 Agent、Session、turn 与准确 bundle id 分离；高影响动作另需一次性确认。</li>
+<li><strong>保持模型表面聚焦。</strong> 只有当前 Agent 加载 Computer Use Skill 后才暴露执行 Tool。</li>
 </ul>
-<h3>Proof: a never-active background fixture</h3>
-<p>The repository includes a deterministic AppKit fixture and a universal native helper. Release tests start the fixture with <code>open -g</code> in background mode, then use the same protocol exposed to the Agent.</p>
+<h3>证据：从未激活的后台 fixture</h3>
+<p>仓库包含确定性 AppKit fixture 和 universal native helper。发布测试会通过 <code>open -g</code> 以后台模式启动 fixture，再通过 Agent 使用的同一协议完成操作。</p>
 <pre><code class="language-text">observe exact bundle id + pid
 -&gt; element: &quot;Targeted pointer probe&quot;, no AXPress action
 -&gt; computer_click with observationId + element index + allowCoordinateFallback
@@ -227,42 +227,42 @@ footer p+p{margin-top:.5rem}
 -&gt; activation &quot;not-requested&quot;; pointerRouting &quot;target-process&quot;
 -&gt; status &quot;Status: pointer click&quot;
 </code></pre>
-<p>The fixture records every <code>applicationDidBecomeActive</code> callback. An independent native monitor also samples the system cursor and frontmost pid every millisecond throughout click, scroll, and drag. The default release path must not increase <code>activationCount</code>; it also requires unchanged cursor coordinates, an unchanged frontmost pid, exact click/scroll counts, and one complete down/up drag gesture.</p>
-<p>See <a href="https://github.com/Anionex/dsh-computer-use/blob/main/docs/interaction-policy.md">Foreground-safe input policy</a> for the requirements, architecture, decisions, evidence, and compatibility limits.</p>
-<h3>Scope</h3>
-<p><code>dsh-computer-use</code> is the native <strong>action layer</strong>. It does not replace narrower interfaces:</p>
+<p>Fixture 会记录每次 <code>applicationDidBecomeActive</code> 回调。独立 native monitor 还会在 click、scroll 与 drag 整个动作期间每毫秒采样系统光标和前台 pid。默认发布路径不得增加 <code>activationCount</code>，并要求光标坐标不变、前台 pid 不变、click/scroll 精确计数，并且 drag 只有一组完整 down/up gesture。</p>
+<p>需求、架构、关键决策、验证证据和兼容性边界见<a href="https://github.com/Anionex/dsh-computer-use/blob/main/docs/interaction-policy.md">前台安全输入策略</a>。</p>
+<h3>范围</h3>
+<p><code>dsh-computer-use</code> 是原生<strong>动作层</strong>，不会取代更窄的接口：</p>
 <ul>
-<li>browser tasks should use browser automation and DOM/CDP state;</li>
-<li>APIs, CLIs, and purpose-built application plugins remain preferable when available;</li>
-<li>OCR, visual grounding, and pixel interpretation should use the separately installed <code>dsh-vision-toolkit</code>: load the <code>vision-tools</code> Skill and pass the exact screenshot Artifact path to <code>vision_glance</code>, <code>vision_ground</code>, <code>vision_detect</code>, <code>vision_crop</code>, or <code>vision_long_screenshot_ocr</code>; do not replace those tools with shell-driven <code>tesseract</code>, <code>screencapture</code>, or ad hoc Swift/Python OCR;</li>
-<li>domain bundles such as <code>dsh-design</code> can compose Computer Use when a workflow crosses into a native application.</li>
+<li>浏览器任务应继续使用 browser automation 和 DOM/CDP 状态；</li>
+<li>有 API、CLI 或专用应用插件时仍应优先使用；</li>
+<li>OCR、视觉 grounding 与像素理解应交给独立安装的 <code>dsh-vision-toolkit</code>：加载 <code>vision-tools</code> Skill，把准确的截图 Artifact 路径传给 <code>vision_glance</code>、<code>vision_ground</code>、<code>vision_detect</code>、<code>vision_crop</code> 或 <code>vision_long_screenshot_ocr</code>；不要用 shell 驱动的 <code>tesseract</code>、<code>screencapture</code> 或临时 Swift/Python OCR 取代这些工具；</li>
+<li><code>dsh-design</code> 等领域 Bundle 可以在工作流跨入原生应用时组合 Computer Use。</li>
 </ul>
-<h3>Quick start</h3>
-<h4>Prerequisites</h4>
+<h3>快速开始</h3>
+<h4>前置条件</h4>
 <ul>
-<li>macOS 14 or newer.</li>
-<li>DeepSeek Harness with a Web or Headless Profile and the Skill Tool mounted.</li>
-<li>macOS Accessibility permission for observation and native actions.</li>
-<li>macOS Screen Recording permission only when a screenshot is requested.</li>
-<li>Node.js <code>^22.19.0</code> or <code>&gt;=24.0.0</code> when building this repository.</li>
+<li>macOS 14 或更新版本。</li>
+<li>已安装 Web 或 Headless Profile、并挂载 Skill Tool 的 DeepSeek Harness。</li>
+<li>用于观察和原生动作的 macOS Accessibility 权限。</li>
+<li>只有请求截图时才需要 macOS Screen Recording 权限。</li>
+<li>构建本仓库时需要 Node.js <code>^22.19.0</code> 或 <code>&gt;=24.0.0</code>。</li>
 </ul>
-<p>Install the Web and Headless bundles directly from npm:</p>
+<p>直接从 npm 一键安装 Web 与 Headless Bundle：</p>
 <pre><code class="language-sh">dsh plugin --profile web add @anionex/dsh-computer-use
 dsh plugin --profile headless add @anionex/dsh-computer-use
 
 dsh --profile web --dump-config | grep computer-use
 dsh --profile headless --dump-config | grep computer-use
 </code></pre>
-<p>For local development, replace the package name with an absolute checkout path.</p>
-<p>Restart a running <code>dsh web</code> host after changing the installed plugin, then start a new Session so the host reloads the Bundle and Skill catalog.</p>
-<p>Load the Skill in that Session:</p>
+<p>本地开发时，把包名替换为 checkout 的绝对路径即可。</p>
+<p>修改已安装插件后，需要重启正在运行的 <code>dsh web</code> host，再创建一个新 Session，让 host 重新载入 Bundle 与 Skill catalog。</p>
+<p>在新 Session 中加载 Skill：</p>
 <pre><code class="language-text">/computer-use
 </code></pre>
-<p>Then try:</p>
+<p>然后可以尝试：</p>
 <blockquote>
-<p>Use Computer Use to inspect the running DSH Computer Use Fixture, enable its deterministic option, and report the fresh status. Prefer Accessibility elements and do not reuse an old observation.</p>
+<p>使用 Computer Use 检查正在运行的 DSH Computer Use Fixture，启用 deterministic option，并根据动作后返回的新状态报告结果。优先使用 Accessibility 元素，不要复用旧 observation。</p>
 </blockquote>
-<h3>How it works</h3>
+<h3>工作原理</h3>
 <pre><code class="language-mermaid">flowchart LR
     A[&quot;Select exact bundle id and pid&quot;] --&gt; B[&quot;Acquire scoped read access&quot;]
     B --&gt; C[&quot;Observe AX tree and optional screenshot&quot;]
@@ -278,9 +278,9 @@ dsh --profile headless --dump-config | grep computer-use
     J --&gt; K
     K --&gt; L[&quot;Return fresh full or diff observation&quot;]
 </code></pre>
-<p>Every observed element has an observation-local compatibility index and an opaque <code>targetHandle</code>. Index-only actions retain exact locator behavior. A low-risk element action may pass <code>targetHandle</code> with <code>allowRebind: true</code>; immediately before input, the provider-independent resolver obtains fresh Accessibility state and checks, in order, the original locator, a unique provider-native identifier such as macOS <code>AXIdentifier</code>, then one unique semantic match over role, accessible name, advertised actions, and stable ancestor fingerprint. The resolver keeps the exact bundle id, pid, and selected-window identity, and fails closed with <code>COMPUTER_TARGET_AMBIGUOUS</code> or <code>COMPUTER_TARGET_LOW_CONFIDENCE</code> instead of guessing. Coordinate actions still require the complete referenced window state to remain current.</p>
-<p>Successful element actions report <code>resolution.mode</code>, <code>confidence</code>, <code>candidateCount</code>, and <code>targetChanged</code>. A sensitive target that needs rebinding invalidates the prior one-use confirmation and returns <code>COMPUTER_TARGET_REBIND_REQUIRES_CONFIRMATION</code>; the caller must observe the current UI and confirm the newly selected handle. Visual coordinates are not target handles and never authorize sensitive rebinding. Provider-native visual hit-testing is not part of this foundation release and remains follow-up work.</p>
-<p>The default interaction policy is:</p>
+<p>每个已观察元素都有 observation-local 兼容 index 和 opaque <code>targetHandle</code>。仅传 index 的动作保留准确 locator 行为。低风险元素动作可以传入 <code>targetHandle</code> 与 <code>allowRebind: true</code>；输入前，provider-independent resolver 会获取新鲜 Accessibility 状态，并依次检查原 locator、唯一 provider-native identifier（例如 macOS <code>AXIdentifier</code>），以及基于 role、accessible name、已声明 action 和稳定 ancestor fingerprint 的唯一 semantic match。Resolver 始终保留准确 bundle id、pid 与选定窗口身份；遇到歧义或低置信度时返回 <code>COMPUTER_TARGET_AMBIGUOUS</code> 或 <code>COMPUTER_TARGET_LOW_CONFIDENCE</code>，不会猜测。坐标动作仍要求引用窗口的完整状态保持当前。</p>
+<p>成功的元素动作会报告 <code>resolution.mode</code>、<code>confidence</code>、<code>candidateCount</code> 与 <code>targetChanged</code>。敏感目标一旦需要 rebind，旧的一次性 confirmation 会失效，并返回 <code>COMPUTER_TARGET_REBIND_REQUIRES_CONFIRMATION</code>；调用方必须观察当前 UI，并对新选择的 handle 再次确认。视觉坐标不是 target handle，不能授权敏感 rebind。本基础版本不包含 provider-native visual hit-test，该能力留待后续实现。</p>
+<p>默认 interaction policy 为：</p>
 <pre><code class="language-yaml">interaction:
   focusPolicy: preserve
   keyboardPolicy: activate
@@ -289,10 +289,10 @@ dsh --profile headless --dump-config | grep computer-use
   cursorMotionMs: 180
   cursorAutoHideMs: 0
 </code></pre>
-<p><code>cursorVisualization: visible</code> displays the Agent&#39;s own non-interactive cursor for click, scroll, and drag. It never replaces or moves the macOS system cursor. Set it to <code>hidden</code> when visual feedback is unwanted. <code>pointerInputPolicy: deny</code> disables coordinate click/fallback, scroll, and drag. <code>keyboardPolicy: activate</code> (Bundle default) makes <code>type-text</code> keyboard fallback and <code>press-key</code> reliable by activating the target app first; <code>focusPolicy: activate</code> is the broader compatibility mode that also activates before pointer input. After activation, the helper re-observes and revalidates the exact target before input.</p>
-<p>The cursor is a 28x28 transparent whole-image cursor (Cursor arrow plus DeepSeek whale, <code>assets/cursor.png</code>) with the hotspot at the image&#39;s top-left corner. It is a separate process, click-through, nonactivating, and bound to the exact observed pid, window, and frame so it disappears if the target window closes, moves, resizes, or is minimized.</p>
-<p>The helper executable is an internal DSH transport rather than a public authorization API. It requires an isolated process group plus parent-owned standard transports, so ordinary shell redirection fails closed before command parsing. This is defense in depth, not authentication against arbitrary code running as the same macOS user: a deliberately constructed detached parent can reproduce that transport topology. Use the registered Tools so application leases, sensitive-action confirmation, and host policy checks remain in force; <code>danger-full-access</code> must not be treated as protection against direct native invocation.</p>
-<p>Successful action results include:</p>
+<p><code>cursorVisualization: visible</code> 会在 click、scroll 与 drag 时显示 Agent 自己的非交互光标；它不会替代或移动 macOS 系统光标。不需要视觉反馈时可设为 <code>hidden</code>。<code>pointerInputPolicy: deny</code> 会禁用坐标点击/fallback、滚动与拖拽。<code>keyboardPolicy: activate</code>（Bundle 默认）会先激活目标应用，让 <code>type-text</code> 键盘 fallback 与 <code>press-key</code> 可靠工作；<code>focusPolicy: activate</code> 是更宽的兼容模式，还会在指针输入前激活。激活后 helper 会重新观察并校验准确目标，之后才发出输入。</p>
+<p>Agent 光标是 28x28 的透明整图光标（Cursor 箭头加 DeepSeek 鲸鱼，<code>assets/cursor.png</code>），热点位于图片左上角。它由独立进程运行，点击穿透、不激活应用，并绑定准确已观察的 pid、窗口与 frame；目标窗口关闭、移动、缩放或最小化时会自动隐藏。</p>
+<p>Helper executable 是 DSH 内部传输实现，不是公共授权 API。它要求独立进程组和父进程持有的标准传输，因此普通 shell 重定向会在解析命令前 fail closed。这个检查只属于纵深防御，不会认证同一 macOS 用户下运行的任意代码：专门构造的 detached 父进程仍能复现这类传输拓扑。应通过已注册 Tool 使用该能力，以保留应用 lease、敏感动作 confirmation 与宿主策略检查；不能把 <code>danger-full-access</code> 当作阻止直接 native 调用的保护。</p>
+<p>成功动作结果包括：</p>
 <pre><code class="language-ts">activation: &#39;not-requested&#39; | &#39;already-frontmost&#39; | &#39;activated&#39;
 pointerInput: boolean
 pointerRouting: &#39;none&#39; | &#39;target-process&#39;
@@ -303,180 +303,180 @@ resolution?: {
   targetChanged: boolean
 }
 </code></pre>
-<p>The model cannot override these host policies through Tool arguments.</p>
-<h3>Model Tools</h3>
-<p>The Bundle initially contributes only <code>computer_use_activate</code>. Loading the Skill exposes the focused execution vocabulary for that Agent.</p>
+<p>模型不能通过 Tool 参数覆盖这些宿主策略。</p>
+<h3>模型 Tool</h3>
+<p>Bundle 初始只贡献 <code>computer_use_activate</code>。加载 Skill 后，才为当前 Agent 暴露聚焦的执行 vocabulary。</p>
 <table>
 <thead>
 <tr>
 <th>Tool</th>
-<th>Purpose</th>
+<th>用途</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>computer_list_apps</code></td>
-<td>List bounded user-facing applications with bundle id, pid, frontmost state, and permission diagnostics</td>
+<td>列出有界用户应用及 bundle id、pid、前台状态和权限诊断</td>
 </tr>
 <tr>
 <td><code>computer_observe</code></td>
-<td>Return a fresh full/diff Accessibility observation and optional screenshot Artifact</td>
+<td>返回新鲜的 full/diff Accessibility observation 与可选截图 Artifact</td>
 </tr>
 <tr>
 <td><code>computer_click</code></td>
-<td>Prefer <code>AXPress</code>; accept an exact index or opaque target handle, with optional safe rebinding, before target-process coordinate fallback</td>
+<td>优先使用 <code>AXPress</code>；接受准确 index 或 opaque target handle，并可在目标进程坐标 fallback 前执行安全 rebind</td>
 </tr>
 <tr>
 <td><code>computer_set_value</code></td>
-<td>Set or clear an editable Accessibility value through an exact index or opaque target handle without using the clipboard</td>
+<td>通过准确 index 或 opaque target handle 设置或清空可编辑 Accessibility value，不使用剪贴板</td>
 </tr>
 <tr>
 <td><code>computer_type_text</code></td>
-<td>Insert Unicode through Accessibility when supported, with a process-targeted keyboard fallback</td>
+<td>支持时通过 Accessibility 插入 Unicode，否则使用进程定向键盘 fallback</td>
 </tr>
 <tr>
 <td><code>computer_press_key</code></td>
-<td>Send one key from a finite vocabulary to the selected process, with optional modifiers</td>
+<td>向选定进程发送有限词表中的按键，并支持可选 modifier</td>
 </tr>
 <tr>
 <td><code>computer_scroll</code></td>
-<td>Send bounded directional scrolling to the selected process and window at a resolved element or window/screen coordinate</td>
+<td>在已解析元素或窗口/屏幕坐标处向选定进程与窗口发送有界方向滚动</td>
 </tr>
 <tr>
 <td><code>computer_drag</code></td>
-<td>Drag between two window/screen points in the referenced observation</td>
+<td>在引用 observation 的窗口/屏幕两点之间拖拽</td>
 </tr>
 <tr>
 <td><code>computer_perform_action</code></td>
-<td>Execute one Accessibility action advertised by an exact or safely rebound selected element</td>
+<td>执行准确或安全 rebind 后的选定元素所声明的 Accessibility action</td>
 </tr>
 <tr>
 <td><code>computer_wait</code></td>
-<td>Poll one bounded text/role/title condition and return fresh state without modifying the app</td>
+<td>轮询一个有界 text/role/title 条件，不修改应用并返回新鲜状态</td>
 </tr>
 <tr>
 <td><code>computer_confirm</code></td>
-<td>Obtain a one-use token bound to one exact sensitive action</td>
+<td>获取绑定准确敏感动作的一次性 token</td>
 </tr>
 </tbody></table>
-<p>No Tool accepts AppleScript, JXA, shell, Swift, Objective-C, native selectors, arbitrary Accessibility constants, or source code.</p>
-<h3>Observation, permissions, and sensitive actions</h3>
-<p>An observation contains an opaque id and expiry, exact app identity, frontmost/window metadata, bounded tree text, current elements with opaque target handles, optional screenshot metadata, and permission state. Target handles expose no provider object reference or native identifier. Secure text values are emitted as <code>[secure]</code>; they do not enter target descriptors, tree text, Tool results, screenshot metadata, or native errors. A screenshot can still contain other visible application data and should be treated as sensitive.</p>
-<p>The technical access model has two exact-bundle-id leases:</p>
+<p>任何 Tool 都不接受 AppleScript、JXA、shell、Swift、Objective-C、native selector、任意 Accessibility constant 或源码。</p>
+<h3>Observation、权限与敏感动作</h3>
+<p>Observation 包含 opaque id 与过期时间、准确 app 身份、frontmost/window metadata、有界 tree text、带 opaque target handle 的当前元素、可选截图 metadata 和权限状态。Target handle 不暴露 provider object reference 或 native identifier。Secure text value 以 <code>[secure]</code> 输出，不会进入 target descriptor、tree text、Tool result、截图 metadata 或 native error。截图仍可能包含应用中其他可见数据，应按敏感数据处理。</p>
+<p>技术访问模型包含两类准确 bundle-id lease：</p>
 <ul>
-<li><code>read</code>: inspect Accessibility state and a requested screenshot;</li>
-<li><code>control</code>: send UI input to the selected application.</li>
+<li><code>read</code>：读取 Accessibility 状态和请求的截图；</li>
+<li><code>control</code>：向选定应用发送 UI 输入。</li>
 </ul>
-<p>Without a configured grant, DSH asks for approval. Read approval lasts for the Session; control approval lasts for the current turn. A user rejection is final for that app and scope for the rest of the Session.</p>
-<p>The Bundle keeps Session-wide read grants and rejected app/scope decisions in its own <code>computer_use_state</code> storage-domain sidecar, fenced by the Session header&#39;s <code>createdAt</code> and <code>cwd</code>. It does not add Computer Use events to the official Session log or modify DSH Core. The Web Profile already composes <code>@deepseek-ai/dsh-storage-domain</code>; a custom Profile must compose it before this Bundle if interactive read grants or durable rejections are needed. Exact grants configured in Settings remain available without storage-domain, and an allowed control decision remains process-local for the current turn. When a durable interactive decision cannot be stored, the operation fails clearly instead of silently weakening its lifetime.</p>
-<p>The DSH <code>danger-full-access</code> preset uses <code>approval/policy: never</code>, so an ungranted app is policy-blocked before any prompt. The plugin reports an actionable <code>COMPUTER_PERMISSION_REQUIRED</code> error and does not record that outcome as a user rejection. Add the exact bundle id in Computer Use Settings or use a preset whose approval policy is <code>ask</code>.</p>
-<p>High-impact communication, sensitive-data transmission, irreversible deletion, account/security/privacy changes, unrequested installation, legal acceptance, and financial completion beyond explicit authorization require <code>computer_confirm</code> immediately before execution. The token is short-lived, one-use, and bound to the exact app, process, observation, target handle, and action. Grants do not bypass it. If resolution moves beyond the exact locator, the token is invalidated and a fresh observation plus confirmation is required.</p>
-<h3>macOS permissions and native integrity</h3>
-<p>The Web Settings section reports helper integrity, Accessibility and Screen Recording status, active generation, interaction policy, limits, and exact application grants. Its buttons can open the relevant macOS privacy pane after a user click; the plugin cannot grant TCC permission itself.</p>
-<p>Accessibility and Screen Recording are UI permissions, not filesystem permissions. Normal use stays under DSH <code>workspace-write</code>: screenshots remain in the Session workspace, transient files use Session-private temporary storage, and the Bundle does not require <code>danger-full-access</code>.</p>
-<p>The committed helper is an ad-hoc-signed universal <code>arm64</code> + <code>x86_64</code> binary targeting macOS 14 or newer. <a href="https://github.com/Anionex/dsh-computer-use/blob/main/native/macos/manifest.json"><code>native/macos/manifest.json</code></a> pins its SHA-256, source digest, architectures, and deployment target. <code>pnpm run check:native</code> also checks the target-process-only pointer route and rejects system-cursor warp or global pointer-post symbols.</p>
-<h3>Configuration</h3>
+<p>没有配置 grant 时，DSH 会请求 approval。Read approval 在 Session 内有效，control approval 只在当前 turn 有效。用户拒绝后，该 app/scope 在当前 Session 内保持最终结果。</p>
+<p>Bundle 把 Session 级 read grant 和被拒绝的 app/scope 决定保存在自己拥有的 <code>computer_use_state</code> storage-domain sidecar 中，并用 Session header 的 <code>createdAt</code> 与 <code>cwd</code> 绑定准确生命周期；它不会向官方 Session 日志新增 Computer Use event，也不会修改 DSH Core。Web Profile 已经组合 <code>@deepseek-ai/dsh-storage-domain</code>；自定义 Profile 如果需要交互式 read grant 或持久拒绝状态，必须在本 Bundle 之前组合它。Settings 中配置的准确 grant 在没有 storage-domain 时仍可使用；获准的 control 决定只保存在当前进程的当前 turn。需要持久化的交互决定如果无法保存，操作会明确失败，不会静默缩短或削弱授权生命周期。</p>
+<p>DSH <code>danger-full-access</code> preset 使用 <code>approval/policy: never</code>，因此未授权应用会在弹窗前被策略阻断。插件返回可操作的 <code>COMPUTER_PERMISSION_REQUIRED</code> 错误，并且不会把它记录成用户拒绝。请在 Computer Use Settings 中添加准确 bundle id，或改用 approval policy 为 <code>ask</code> 的 preset。</p>
+<p>高影响外部通信、敏感数据传输、不可逆删除、账户/安全/隐私变更、未经请求的安装、法律条款接受，以及超出明确授权的财务完成动作，都需要在执行前立即调用 <code>computer_confirm</code>。Token 有短 TTL、只能使用一次，并绑定准确 app、process、observation、target handle 与 action；grant 不能绕过它。只要 resolution 不再使用原 locator，该 token 就会失效，必须重新观察并再次确认。</p>
+<h3>macOS 权限与 native 完整性</h3>
+<p>Web Settings 分区展示 helper 完整性、Accessibility 与 Screen Recording 状态、当前 generation、interaction policy、限制和准确应用 grant。只有用户点击后，按钮才会打开相关 macOS 隐私页面；插件不能自行授予 TCC 权限。</p>
+<p>Accessibility 与 Screen Recording 是 UI 权限，不是文件系统权限。正常使用保持在 DSH <code>workspace-write</code> 下：截图留在 Session workspace，临时文件使用 Session 私有临时目录，Bundle 不要求 <code>danger-full-access</code>。</p>
+<p>仓库提交的 helper 是最低支持 macOS 14、ad-hoc 签名的 <code>arm64</code> + <code>x86_64</code> universal binary。<a href="https://github.com/Anionex/dsh-computer-use/blob/main/native/macos/manifest.json"><code>native/macos/manifest.json</code></a> 固定其 SHA-256、源码 digest、架构与 deployment target。<code>pnpm run check:native</code> 还会检查只有目标进程指针路由，并拒绝系统光标 warp 或全局指针 post symbol。</p>
+<h3>配置</h3>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Purpose</th>
+<th>字段</th>
+<th>用途</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>observationTtlMs</code></td>
-<td>Lifetime of an observation before reuse is rejected; default <code>0</code> disables expiry, or set any value up to <code>86400000</code> ms (24 hours)</td>
+<td>observation 允许复用的生命周期；默认 <code>0</code> 关闭过期，也可设为最大 <code>86400000</code> ms（24 小时）内的任意值</td>
 </tr>
 <tr>
 <td><code>confirmationTtlMs</code></td>
-<td>Lifetime of a one-use sensitive-action confirmation</td>
+<td>一次性敏感动作 confirmation 的生命周期</td>
 </tr>
 <tr>
 <td><code>actionTimeoutMs</code></td>
-<td>Hard native action timeout from <code>1000</code> to <code>120000</code> ms</td>
+<td><code>1000</code> 到 <code>120000</code> ms 的 native action 硬超时</td>
 </tr>
 <tr>
 <td><code>settleMs</code></td>
-<td>Interval between post-action state checks from <code>0</code> to <code>10000</code> ms</td>
+<td><code>0</code> 到 <code>10000</code> ms 的动作后状态检查间隔</td>
 </tr>
 <tr>
 <td><code>maxSettleMs</code></td>
-<td>Maximum post-action settlement budget from <code>100</code> to <code>60000</code> ms</td>
+<td><code>100</code> 到 <code>60000</code> ms 的动作后 settle 最大预算</td>
 </tr>
 <tr>
 <td><code>maxNodes</code> / <code>maxDepth</code> / <code>maxTextBytes</code></td>
-<td>Accessibility traversal and model-visible text bounds</td>
+<td>Accessibility 遍历与模型可见文本上限</td>
 </tr>
 <tr>
 <td><code>maxScreenshotBytes</code></td>
-<td>Maximum PNG Artifact size</td>
+<td>PNG Artifact 最大字节数</td>
 </tr>
 <tr>
 <td><code>artifactRoot</code></td>
-<td>Workspace-relative screenshot directory</td>
+<td>workspace 内的相对截图目录</td>
 </tr>
 <tr>
 <td><code>helper.path</code></td>
-<td>Optional explicit external helper executable</td>
+<td>可选的显式外部 helper executable</td>
 </tr>
 <tr>
 <td><code>helper.allowSourceBuild</code></td>
-<td>Permit an explicit managed-source rebuild when the committed helper is absent; default <code>false</code></td>
+<td>提交 helper 缺失时允许显式托管源码重建；默认 <code>false</code></td>
 </tr>
 <tr>
 <td><code>interaction.focusPolicy</code></td>
-<td><code>preserve</code> (default) avoids target-app activation; <code>activate</code> explicitly permits it and requires re-observation/revalidation</td>
+<td><code>preserve</code>（默认）避免激活目标应用；<code>activate</code> 显式允许激活，并要求重新观察/校验</td>
 </tr>
 <tr>
 <td><code>interaction.keyboardPolicy</code></td>
-<td><code>preserve</code> keeps keyboard events routed without activation; <code>activate</code> (Bundle default) activates the target app before keyboard fallback</td>
+<td><code>preserve</code> 不激活地把键盘事件定向投递；<code>activate</code>（Bundle 默认）在键盘 fallback 前激活目标应用</td>
 </tr>
 <tr>
 <td><code>interaction.pointerInputPolicy</code></td>
-<td><code>targeted</code> (default) permits pid/window-targeted pointer input; <code>deny</code> disables click fallback, scroll, and drag</td>
+<td><code>targeted</code>（默认）允许 pid/window 定向指针输入；<code>deny</code> 禁用 click fallback、scroll 和 drag</td>
 </tr>
 <tr>
 <td><code>interaction.cursorVisualization</code></td>
-<td><code>visible</code> (default) shows the separate Agent cursor; <code>hidden</code> disables only the overlay</td>
+<td><code>visible</code>（默认）显示独立 Agent 光标；<code>hidden</code> 只关闭 overlay，不影响输入</td>
 </tr>
 <tr>
 <td><code>interaction.cursorMotionMs</code></td>
-<td>Animated Agent-cursor travel duration, default <code>180</code> ms</td>
+<td>Agent 光标移动动画时长，默认 <code>180</code> 毫秒</td>
 </tr>
 <tr>
 <td><code>interaction.cursorAutoHideMs</code></td>
-<td>Idle time before the Agent cursor hides; default <code>0</code> keeps it visible until the bound window changes or a hide command, or set a finite value up to <code>30000</code> ms</td>
+<td>Agent 光标空闲后隐藏时间；默认 <code>0</code> 表示保持显示，直到绑定窗口变化或收到 hide 命令，也可设为最大 <code>30000</code> ms 内的有限值</td>
 </tr>
 <tr>
 <td><code>allowAllApps</code></td>
-<td>Grant <code>read</code> and <code>control</code> to every running app; default <code>false</code>. When enabled, exact <code>grants</code> are ignored</td>
+<td>向所有运行中的应用授予 <code>read</code> 与 <code>control</code>；默认 <code>false</code>。开启后忽略精确 <code>grants</code></td>
 </tr>
 <tr>
 <td><code>grants</code></td>
-<td>Exact non-wildcard bundle-id read/control policy; <code>control: true</code> implies read</td>
+<td>准确、无通配符的 bundle-id read/control policy；<code>control: true</code> 隐含 read</td>
 </tr>
 </tbody></table>
-<p>Settings updates replace the active provider generation only after validation and health checks pass. Replacement invalidates existing observations and pending confirmations.</p>
-<h3>Status and limitations</h3>
+<p>Settings 更新只有在校验与健康检查通过后才替换当前 provider generation；替换会使已有 observation 与待用 confirmation 失效。</p>
+<h3>状态与限制</h3>
 <ul>
-<li>Status: early <code>0.1.0</code>; model-facing and provider behavior may change before a stable release.</li>
-<li>The current provider is macOS-only. Windows UI Automation and Linux providers are not implemented.</li>
-<li>Target-process pointer delivery uses dynamically resolved SkyLight SPI. If it is unavailable, pointer fallback fails closed rather than switching to global input.</li>
-<li>The clicked point must fall inside an on-screen window of the selected app; the helper resolves the topmost matching window so ambiguous frame/title matches no longer block coordinate actions. Minimized, hidden, or windowless targets fail closed.</li>
-<li>Custom canvases, games, hardened input surfaces, and future macOS releases may reject target-process pointer or keyboard events. Prefer semantic Accessibility whenever possible.</li>
-<li><code>focusPolicy: activate</code> and <code>keyboardPolicy: activate</code> are intentionally disruptive and exist as operator-selected compatibility modes.</li>
-<li>A target application may change its own activation or focus as a side effect of an accepted action.</li>
-<li>The package captures requested discrete observations, not a live desktop feed.</li>
-<li>Browser work should continue to use browser automation because DOM/CDP state is narrower and more precise.</li>
-<li>The public npm package installs into both Web and Headless profiles as <code>@anionex/dsh-computer-use</code>.</li>
+<li>状态：早期 <code>0.1.0</code>；稳定版本发布前，模型可见和 provider 行为仍可能变化。</li>
+<li>当前 provider 只支持 macOS；Windows UI Automation 和 Linux provider 尚未实现。</li>
+<li>目标进程指针投递使用动态解析的 SkyLight SPI。该路由不可用时，pointer fallback 会 fail closed，不会切换到全局输入。</li>
+<li>点击点必须落在选定应用的某个屏幕内窗口中；helper 会解析该点下最上层的匹配窗口，frame/title 匹配有歧义不再阻塞坐标动作。最小化、隐藏或无窗口目标会 fail closed。</li>
+<li>自定义 canvas、游戏、强化输入 surface 与未来 macOS 版本可能拒绝目标进程指针或键盘事件。应尽量优先使用语义化 Accessibility。</li>
+<li><code>focusPolicy: activate</code> 与 <code>keyboardPolicy: activate</code> 会有意打断前台工作，只作为操作方显式选择的兼容模式。</li>
+<li>目标应用可能因接受动作而自行改变 activation 或 focus。</li>
+<li>软件包按请求捕获离散 observation，不提供实时桌面流。</li>
+<li>浏览器工作应继续使用 browser automation，因为 DOM/CDP 状态更窄、更精确。</li>
+<li>公共 npm 包以 <code>@anionex/dsh-computer-use</code> 安装，可同时挂载到 Web 与 Headless Profile。</li>
 </ul>
-<h3>Development and release verification</h3>
-<p>Place this repository beside a DeepSeek Harness checkout so TypeScript and Vitest resolve the exact DSH peer declarations and runtime modules:</p>
+<h3>开发与发布验收</h3>
+<p>请把仓库放在 DeepSeek Harness checkout 旁边，让 TypeScript 与 Vitest 解析准确的 DSH peer declaration 和 runtime module：</p>
 <pre><code class="language-text">workspace/
 ├── packages/
 ├── vendor/
 └── dsh-computer-use/
 </code></pre>
-<p>Then run:</p>
+<p>随后运行：</p>
 <pre><code class="language-sh">pnpm install --frozen-lockfile
 pnpm run build
 DSH_COMPUTER_USE_REQUIRE_TCC=1 pnpm test
@@ -484,32 +484,32 @@ pnpm run check:native
 pnpm pack --dry-run
 pnpm run validate
 </code></pre>
-<p><code>pnpm run validate</code> runs the keyless local and clean Web/Headless Profile lanes. The real-model release lane needs <code>DEEPSEEK_API_KEY</code> and accepts an optional <code>DEEPSEEK_BASE_URL</code>:</p>
+<p><code>pnpm run validate</code> 会运行 keyless local lane 和干净 Web/Headless Profile lane。真实模型发布 lane 需要 <code>DEEPSEEK_API_KEY</code>，并支持可选的 <code>DEEPSEEK_BASE_URL</code>：</p>
 <pre><code class="language-sh">pnpm run validate:model
 # or keyless validation followed by the real-model lane
 pnpm run validate:release
 </code></pre>
-<h3>Removal</h3>
+<h3>移除</h3>
 <pre><code class="language-sh">dsh plugin --profile web remove @anionex/dsh-computer-use
 dsh plugin --profile headless remove @anionex/dsh-computer-use
 </code></pre>
-<p>Removing or disabling the Bundle unregisters the Skill and Tools, cancels helper work, releases process-local Agent observations, turn control grants, and confirmations, closes its storage-domain handle, and removes Web contributions. Existing screenshot files and the plugin-owned <code>computer_use_state</code> sidecar remain for explicit user cleanup.</p>
-<h3>Security, community, and support</h3>
+<p>移除或禁用 Bundle 会注销 Skill 与 Tool、取消 helper 工作、释放进程内 Agent observation、turn control grant 与 confirmation、关闭 storage-domain handle，并移除 Web contribution。已经生成的截图文件和插件自有的 <code>computer_use_state</code> sidecar 会保留，供用户显式清理。</p>
+<h3>安全、社区与支持</h3>
 <ul>
-<li>Report suspected vulnerabilities privately through <a href="https://github.com/Anionex/dsh-computer-use/blob/main/SECURITY.md">SECURITY.md</a>.</li>
-<li>Read <a href="https://github.com/Anionex/dsh-computer-use/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> before changing code or documentation.</li>
-<li>Use <a href="https://github.com/Anionex/dsh-computer-use/blob/main/SUPPORT.md">SUPPORT.md</a> for installation, permission, configuration, and workflow questions.</li>
-<li>Follow the <a href="https://github.com/Anionex/dsh-computer-use/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> in project spaces.</li>
-<li>See <a href="https://github.com/Anionex/dsh-computer-use/blob/main/CHANGELOG.md">CHANGELOG.md</a> for release history.</li>
-<li>See <a href="https://github.com/Anionex/dsh-computer-use/blob/main/FUNDING.md">FUNDING.md</a> to support maintenance without purchasing roadmap control or private support.</li>
+<li>潜在漏洞按 <a href="https://github.com/Anionex/dsh-computer-use/blob/main/SECURITY.md">SECURITY.md</a> 私下报告。</li>
+<li>修改代码或文档前请阅读 <a href="https://github.com/Anionex/dsh-computer-use/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>。</li>
+<li>安装、权限、配置和工作流问题见 <a href="https://github.com/Anionex/dsh-computer-use/blob/main/SUPPORT.md">SUPPORT.md</a>。</li>
+<li>在项目空间中遵守 <a href="https://github.com/Anionex/dsh-computer-use/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>。</li>
+<li>版本记录见 <a href="https://github.com/Anionex/dsh-computer-use/blob/main/CHANGELOG.md">CHANGELOG.md</a>。</li>
+<li>维护支持方式见 <a href="https://github.com/Anionex/dsh-computer-use/blob/main/FUNDING.md">FUNDING.md</a>，赞助不购买 roadmap 控制权或私有支持。</li>
 </ul>
-<h3>About</h3>
-<p>DSH Computer Use is maintained by <a href="https://anionex.me/">anionex</a>. If you would like to follow my future work, <a href="https://x.com/anion_ex">follow me on X</a> or <a href="https://github.com/Anionex">GitHub</a>.</p>
-<h3>License</h3>
-<p><a href="https://github.com/Anionex/dsh-computer-use/blob/main/LICENSE">MIT</a> © 2026 anionex.</p>
+<h3>关于</h3>
+<p>DSH Computer Use 由 <a href="https://anionex.me/">anionex</a> 维护。如果你想了解我后续的更多工作，欢迎在 <a href="https://x.com/anion_ex">X</a> 或 <a href="https://github.com/Anionex">GitHub</a> 关注我。</p>
+<h3>许可证</h3>
+<p><a href="https://github.com/Anionex/dsh-computer-use/blob/main/LICENSE">MIT</a> © 2026 anionex。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Anionex/dsh-computer-use/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Anionex/dsh-computer-use/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

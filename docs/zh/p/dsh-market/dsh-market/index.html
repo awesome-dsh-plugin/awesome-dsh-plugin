@@ -193,41 +193,41 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <h2>dsh-market</h2>
-<p>English | <a href="https://github.com/dsh-market/dsh-market/blob/main/README.zh.md">中文</a></p>
+<p><a href="https://github.com/dsh-market/dsh-market/blob/main/README.md">English</a> | 中文</p>
 <p><a href="https://www.npmjs.com/package/dshmarket"><img src="https://img.shields.io/npm/v/dshmarket" alt="npm"></a>
 <a href="https://github.com/dsh-market/dsh-market"><img src="https://img.shields.io/github/stars/dsh-market/dsh-market?style=flat" alt="stars"></a></p>
-<p>The plugin market inside DeepSeek Harness. Open Settings → <strong>Plugin Market</strong> → browse, search, one-click install.</p>
-<p><img src="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-en.png" alt="dsh-market"></p>
-<h3>Install</h3>
+<p>装在 DeepSeek Harness 里的插件市场。打开设置 → <strong>插件市场</strong> → 逛一逛，点一下，装好。</p>
+<p><img src="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-zh.png" alt="dsh-market"></p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dshmarket
 </code></pre>
-<p>Restart <code>dsh web</code>, then open <strong>Settings → Plugin Market</strong>.</p>
-<h3>What you get</h3>
+<p>重启 <code>dsh web</code>，打开 <strong>设置 → 插件市场</strong>。</p>
+<h3>你会得到</h3>
 <ul>
-<li><strong>Browse &amp; search</strong> the full community catalog (230+ plugins, growing daily) — category filters, star counts, top/new sorting, bilingual descriptions that follow your UI language</li>
-<li><strong>One-click install</strong> — confirm the source, watch live progress; most plugins go live after a page refresh, no restart</li>
-<li><strong>Updates</strong> — per-plugin update checks (npm version or pinned commit vs HEAD), one-click update; the market updates itself the same way</li>
-<li><strong>Uninstall</strong> — two-step confirm; plugins installed this session are removed live</li>
-<li><strong>Zero jargon</strong> — if a component is missing (pnpm), the market detects it and offers a one-click automatic setup</li>
-<li><strong>Log export</strong> — one click produces a sanitized plain-text log for bug reports (home paths and credential shapes are masked; nothing is ever sent anywhere)</li>
+<li><strong>逛与搜</strong>——完整社区目录（230+ 插件，每天在涨），分类筛选、star 数、最热/最新排序，中英描述跟随界面语言</li>
+<li><strong>一键安装</strong>——确认来源，实时进度；多数插件刷新页面即可用，无需重启</li>
+<li><strong>更新</strong>——逐插件检测（npm 版本或锁定 commit 对比 HEAD），一键更新；市场自己也走同一通道升级</li>
+<li><strong>卸载</strong>——两步确认防误触；本次会话装的插件即点即卸</li>
+<li><strong>零术语</strong>——缺组件（pnpm）时市场自己发现、一键自动装好，全程不见命令行</li>
+<li><strong>导出日志</strong>——一键生成脱敏纯文本日志方便反馈（home 路径与密钥形状已打码；任何数据都不会被上传）</li>
 </ul>
-<h3>Speed</h3>
-<p>Installs prefer npm tarballs over full-repo GitHub downloads whenever a plugin publishes to npm (registry-verified against the repo to prevent name squatting). Registry installs are typically seconds; GitHub-only plugins depend on your connection to GitHub.</p>
-<h3>Security</h3>
+<h3>速度</h3>
+<p>只要插件发布了 npm 包（registry 会校验其 repository 指回同一仓库,防冒名）,安装即走 npm tarball 而非整仓 GitHub 下载——通常秒级;仅 GitHub 分发的插件取决于你到 GitHub 的网络。</p>
+<h3>安全</h3>
 <ul>
-<li>Installs are restricted to sources listed in the curated <a href="https://awesome-dsh-plugin.com">awesome-dsh-plugin</a> registry — anything else is rejected</li>
-<li>Build scripts stay blocked by default (pnpm ≥10); allowing one is your explicit per-package choice</li>
-<li>Terminal/CLI-surface plugins are flagged before you install them into the web profile</li>
-<li>The install endpoint accepts same-origin POST only; the market never phones home</li>
-<li>Listing ≠ endorsement: plugins are third-party code, install sources you trust</li>
+<li>只允许安装 <a href="https://awesome-dsh-plugin.com">awesome-dsh-plugin</a> 精选列表内的来源,其它一律拒绝</li>
+<li>构建脚本默认禁止执行（pnpm ≥10）,放行与否由你按包显式决定</li>
+<li>终端/命令行类插件装进网页版前会被明确提醒</li>
+<li>安装接口只接受同源 POST;市场不会向任何地方上报数据</li>
+<li>收录 ≠ 背书:插件是第三方代码,请只安装你信任的来源</li>
 </ul>
-<h3>Data source</h3>
-<p>Live from <a href="https://awesome-dsh-plugin.com/plugins.json">awesome-dsh-plugin.com/plugins.json</a> — curated entries, npm mapping, and star counts refreshed daily by CI — with a bundled snapshot as offline fallback.</p>
-<h3>License</h3>
+<h3>数据源</h3>
+<p>实时来自 <a href="https://awesome-dsh-plugin.com/plugins.json">awesome-dsh-plugin.com/plugins.json</a>——精选条目、npm 映射、star 数由 CI 每日刷新——内置快照做离线兜底。</p>
+<h3>许可</h3>
 <p>MIT · <a href="https://dshmarket.com">dshmarket.com</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/dsh-market/dsh-market/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/dsh-market/dsh-market/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

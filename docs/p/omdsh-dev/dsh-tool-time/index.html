@@ -189,20 +189,20 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/omdsh-dev/dsh-tool-time/blob/main/README.en.md">English</a></p>
-<p>DSH 时间工具插件 —— 严格 ISO 解析、IANA 时区转换、UTC 日历运算、固定时长差。零依赖、零进程、纯函数。</p>
+<p><a href="https://github.com/omdsh-dev/dsh-tool-time/blob/main/README.md">中文</a></p>
+<p>DSH time tool plugin — strict ISO parsing, IANA timezone conversion, UTC calendar arithmetic, fixed-duration diffs. Zero dependencies, zero processes, pure functions.</p>
 <p><a href="https://github.com/omdsh-dev/dsh-tool-time/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
-<h3>动机</h3>
-<p>Agent 处理时间信息是最高频需求之一——&quot;现在几点&quot;、&quot;3 天后是几号&quot;、&quot;把 UTC 转成北京时间&quot;。当前做法 <code>bash date</code> 的问题：每次起进程、跨平台语法不一致（macOS 与 GNU <code>date -d</code> 完全不同）、时区转换靠 <code>TZ=...</code> 手动拼。模型心算时区偏移和闰年/DST 边界是错误高发区。</p>
-<h3>安全模型</h3>
-<p>无 <code>eval</code>、无 <code>new Function</code>。输入只经过严格校验：</p>
+<h3>Motivation</h3>
+<p>Handling time information is one of the most frequent Agent needs — &quot;what time is it now&quot;, &quot;what date is 3 days from now&quot;, &quot;convert UTC to Beijing time&quot;. Problems with the current <code>bash date</code> approach: a process is spawned every time, cross-platform syntax is inconsistent (macOS and GNU <code>date -d</code> are completely different), and timezone conversion relies on hand-stitching <code>TZ=...</code>. Mentally computing timezone offsets and leap-year/DST boundaries is a high-error area for models.</p>
+<h3>Security Model</h3>
+<p>No <code>eval</code>, no <code>new Function</code>. Input only passes through strict validation:</p>
 <ul>
-<li><strong>严格 ISO 8601 子集</strong>：仅接受 <code>YYYY-MM-DD</code>（UTC 零点）、<code>YYYY-MM-DDTHH:mm:ssZ</code>、<code>YYYY-MM-DDTHH:mm:ss±HH:MM</code>（±14:00 内，可选 <code>.SSS</code> 毫秒）；不带时区的日期时间、RFC 2822、自然语言日期一律拒绝；<code>2026-02-30</code> 等日历溢出由查表校验拒绝（不依赖 Date 的静默归一化）</li>
-<li><strong>时区名</strong>：IANA 名交给 <code>Intl.DateTimeFormat</code> 校验，非法即抛 <code>time: unknown timezone</code></li>
-<li><strong>数值</strong>：<code>amount</code> 必须是安全整数；<code>unit</code> 枚举白名单；所有字符串 ≤200 字符</li>
-<li><strong>Intl 环境固定</strong>：<code>&#39;en-CA&#39;</code> + <code>hourCycle: &#39;h23&#39;</code>（避免午夜 <code>24:00</code> 与本地化数字）</li>
+<li><strong>Strict ISO 8601 subset</strong>: only accepts <code>YYYY-MM-DD</code> (UTC midnight), <code>YYYY-MM-DDTHH:mm:ssZ</code>, <code>YYYY-MM-DDTHH:mm:ss±HH:MM</code> (within ±14:00, optional <code>.SSS</code> milliseconds); datetimes without a timezone, RFC 2822, and natural-language dates are all rejected; calendar overflow such as <code>2026-02-30</code> is rejected by table-lookup validation (not relying on Date&#39;s silent normalization)</li>
+<li><strong>Timezone names</strong>: IANA names are validated via <code>Intl.DateTimeFormat</code>; invalid ones throw <code>time: unknown timezone</code></li>
+<li><strong>Numbers</strong>: <code>amount</code> must be a safe integer; <code>unit</code> is an enumerated whitelist; all strings ≤ 200 characters</li>
+<li><strong>Fixed Intl environment</strong>: <code>&#39;en-CA&#39;</code> + <code>hourCycle: &#39;h23&#39;</code> (avoids midnight <code>24:00</code> and localized numerals)</li>
 </ul>
-<h3>架构</h3>
+<h3>Architecture</h3>
 <pre><code>DSH Agent
     │ ctx.tools.register()
     ▼
@@ -215,7 +215,7 @@ src/time.ts
     ├── addMonthsClamped() — 先置 1 日 → 目标年月 → 天数钳制
     └── diffBetween() — 固定时长（sign + absolute 分解）
 </code></pre>
-<h3>工具声明</h3>
+<h3>Tool Declaration</h3>
 <pre><code class="language-ts">ctx.tools.register(defineTool({
   name: &#39;time&#39;,
   parameters: {
@@ -232,37 +232,37 @@ src/time.ts
   timeoutMs: 1000,
 }))
 </code></pre>
-<h3>支持的操作</h3>
+<h3>Supported Operations</h3>
 <table>
 <thead>
 <tr>
 <th>action</th>
-<th>参数</th>
-<th>返回</th>
+<th>Parameters</th>
+<th>Returns</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>now</code></td>
-<td><code>timezone?</code>（默认 UTC）</td>
-<td>当前时间结构化表示</td>
+<td><code>timezone?</code> (default UTC)</td>
+<td>Structured representation of the current time</td>
 </tr>
 <tr>
 <td><code>convert</code></td>
-<td><code>value</code> + <code>timezone</code>（必填）</td>
-<td>转换后的结构化时间</td>
+<td><code>value</code> + <code>timezone</code> (required)</td>
+<td>Converted structured time</td>
 </tr>
 <tr>
 <td><code>add</code></td>
-<td><code>value</code> + <code>amount</code> + <code>unit</code>（<code>timezone?</code> 仅展示）</td>
-<td>加减后的结构化时间</td>
+<td><code>value</code> + <code>amount</code> + <code>unit</code> (<code>timezone?</code> display only)</td>
+<td>Structured time after addition/subtraction</td>
 </tr>
 <tr>
 <td><code>diff</code></td>
 <td><code>from</code> + <code>to</code></td>
-<td>固定时长差（无月份/年份）</td>
+<td>Fixed-duration diff (no months/years)</td>
 </tr>
 </tbody></table>
-<p>返回结构（canonical value）：</p>
+<p>Return structure (canonical value):</p>
 <pre><code class="language-json">{
   &quot;iso&quot;: &quot;2026-08-05T06:00:00.000Z&quot;,
   &quot;unix&quot;: 1785909600000,
@@ -272,96 +272,96 @@ src/time.ts
   &quot;formatted&quot;: &quot;2026-08-05 14:00:00 (Asia/Shanghai)&quot;
 }
 </code></pre>
-<p>语义契约：</p>
+<p>Semantic contract:</p>
 <ul>
-<li><strong><code>add</code> 始终基于 UTC 运算</strong>（日历日语义，跨 DST 保持&quot;日历日&quot;直觉）；<code>timezone</code> 仅决定 <code>local</code>/<code>formatted</code> 展示</li>
-<li><strong>月份/年份钳制</strong>：<code>2026-01-31 + 1 month = 2026-02-28</code>；<code>2028-02-29 + 1 year = 2029-02-28</code>（先置 1 日 → 定位目标年月 → 按目标月最大天数钳制）</li>
-<li><strong><code>diff</code> 仅固定时长</strong>：<code>sign</code> + 带符号总量 + <code>absolute</code> 余数分解（月/年无法从毫秒唯一推导，不提供）。字段语义（AUDIT-TIME-03）：<ul>
-<li><code>milliseconds</code> 是<strong>精确带符号</strong>总时长</li>
-<li><code>seconds</code>/<code>minutes</code>/<code>hours</code>/<code>days</code>/<code>weeks</code> 是 <code>sign * floor(abs / unit)</code>（对绝对值截断后带符号）</li>
-<li><code>absolute</code> 是 <code>abs</code> 的<strong>非负余数分解</strong>（如 -1500ms → <code>milliseconds: -1500, seconds: -1, absolute: {seconds: 1, milliseconds: 500}</code>）</li>
-<li>差值超过安全整数范围抛 <code>time: diff duration out of range</code></li>
+<li><strong><code>add</code> always operates in UTC</strong> (calendar-day semantics; keeps the &quot;calendar day&quot; intuition across DST); <code>timezone</code> only determines the <code>local</code>/<code>formatted</code> display</li>
+<li><strong>Month/year clamping</strong>: <code>2026-01-31 + 1 month = 2026-02-28</code>; <code>2028-02-29 + 1 year = 2029-02-28</code> (set to day 1 → locate the target year/month → clamp to the target month&#39;s max days)</li>
+<li><strong><code>diff</code> is fixed-duration only</strong>: <code>sign</code> + signed total + <code>absolute</code> remainder decomposition (months/years cannot be uniquely derived from milliseconds, so they are not provided). Field semantics (AUDIT-TIME-03):<ul>
+<li><code>milliseconds</code> is the <strong>exact signed</strong> total duration</li>
+<li><code>seconds</code>/<code>minutes</code>/<code>hours</code>/<code>days</code>/<code>weeks</code> are <code>sign * floor(abs / unit)</code> (truncated on the absolute value, then signed)</li>
+<li><code>absolute</code> is a <strong>non-negative remainder decomposition</strong> of <code>abs</code> (e.g. -1500ms → <code>milliseconds: -1500, seconds: -1, absolute: {seconds: 1, milliseconds: 500}</code>)</li>
+<li>A diff exceeding the safe integer range throws <code>time: diff duration out of range</code></li>
 </ul>
 </li>
-<li><strong>默认 UTC</strong>：省略 <code>timezone</code> 时结果与运行环境无关（<code>timezoneSource: &quot;default-utc&quot;</code>）</li>
+<li><strong>Default UTC</strong>: when <code>timezone</code> is omitted, the result is independent of the runtime environment (<code>timezoneSource: &quot;default-utc&quot;</code>)</li>
 </ul>
-<h3>npm 0.1.0-rc.6 兼容（已验证）</h3>
-<p>本插件已迁移到 npm 0.1.0-rc.6 依赖线，并在 <code>@deepseek-ai/dsh@0.1.0-rc.6</code>（npm 私有包）的隔离 consumer 中完成全链路验证：</p>
+<h3>npm 0.1.0-rc.6 Compatibility (Verified)</h3>
+<p>This plugin has been migrated to the npm 0.1.0-rc.6 dependency line and fully verified end-to-end in an isolated consumer of <code>@deepseek-ai/dsh@0.1.0-rc.6</code> (npm private package):</p>
 <ul>
-<li><strong>类型/运行时</strong>：peer 为 <code>@deepseek-ai/cordis: ^4.0.1</code> + <code>@deepseek-ai/dsh-tools: &gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants: &gt;=0.0.1-rc.1 &lt;0.2.0</code>；不再依赖 unscoped <code>cordis</code></li>
-<li><strong>独立构建</strong>：<code>npm install</code>（devDependencies 自包含 typescript/vitest/@types/node）→ <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
-<li><strong>消费验证</strong>：tarball 装入 DSH 0.1.0-rc.6（npm）consumer → <code>dsh --profile compat --dump-config</code> 出现本插件 row → 工具真实注册与执行通过</li>
-<li><strong>启动方式</strong>：<code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code>（lib 生产模式；勿 <code>install -g</code> 全局安装）</li>
+<li><strong>Types/runtime</strong>: peers are <code>@deepseek-ai/cordis: ^4.0.1</code> + <code>@deepseek-ai/dsh-tools: &gt;=0.0.1-rc.1 &lt;0.2.0</code> + <code>@deepseek-ai/dsh-invariants: &gt;=0.0.1-rc.1 &lt;0.2.0</code>; no longer depends on the unscoped <code>cordis</code></li>
+<li><strong>Standalone build</strong>: <code>npm install</code> (devDependencies are self-contained: typescript/vitest/@types/node) → <code>npm run typecheck</code> → <code>npm test</code> → <code>npm run build</code> → <code>npm pack</code></li>
+<li><strong>Consumption verification</strong>: tarball installed into a DSH 0.1.0-rc.6 (npm) consumer → <code>dsh --profile compat --dump-config</code> shows this plugin&#39;s row → tool registration and execution actually pass</li>
+<li><strong>Launch method</strong>: <code>npx -p @deepseek-ai/dsh@0.1.0-rc.6 dsh web</code> (lib production mode; do not <code>install -g</code> globally)</li>
 </ul>
-<h3>版本适配</h3>
+<h3>Version Adaptation</h3>
 <ul>
-<li><strong>适配 DSH</strong>: DSH 0.1.0-rc.6（npm）（profile/bundle 插件系统）</li>
-<li><strong>bundle 声明</strong>: <code>package.json</code> 的 <code>dsh.bundle</code>（patch 指向 <code>cordis.patch.yml</code>）+ <code>exports</code> 导出</li>
-<li><strong>patch 格式</strong>: <code>cordis.patch.yml</code> 使用 <code>- insert:</code> 列表（patch 是 id-targeted 语义，裸 <code>- id:</code> 条目会报 <code>entry not found</code>）</li>
-<li><strong>files</strong>: 发布 tarball 含 <code>lib/</code>、<code>src/</code>、<code>cordis.patch.yml</code></li>
+<li><strong>Adapted DSH</strong>: DSH 0.1.0-rc.6 (npm) (profile/bundle plugin system)</li>
+<li><strong>bundle declaration</strong>: <code>dsh.bundle</code> in <code>package.json</code> (patch points to <code>cordis.patch.yml</code>) + <code>exports</code> exports</li>
+<li><strong>patch format</strong>: <code>cordis.patch.yml</code> uses a <code>- insert:</code> list (the patch is id-targeted; bare <code>- id:</code> entries report <code>entry not found</code>)</li>
+<li><strong>files</strong>: the published tarball includes <code>lib/</code>, <code>src/</code>, <code>cordis.patch.yml</code></li>
 </ul>
-<h3>安装</h3>
-<h4>Profile Bundle（推荐）</h4>
-<p>将本插件作为独立 bundle 安装到 profile（DSH 0.1.0-rc.6（npm））。本仓库位于 <a href="https://github.com/omdsh-dev">omdsh-dev</a> 组织，公开可访问：</p>
-<pre><code class="language-sh"># 交互式（web）profile —— 从 GitHub 仓库安装
+<h3>Installation</h3>
+<h4>Profile Bundle (Recommended)</h4>
+<p>Install this plugin into a profile as a standalone bundle (DSH 0.1.0-rc.6 (npm)). This repository lives under the <a href="https://github.com/omdsh-dev">omdsh-dev</a> organization and is publicly accessible:</p>
+<pre><code class="language-sh"># Interactive (web) profile —— install from the GitHub repository
 dsh plugin --profile web add github:omdsh-dev/dsh-tool-time
-# 一次性任务（headless）profile —— dsh run 默认使用 headless
+# One-off task (headless) profile —— dsh run uses headless by default
 dsh plugin --profile headless add github:omdsh-dev/dsh-tool-time
 </code></pre>
-<p>或使用 <code>npm pack</code> 生成的 tarball 安装：</p>
-<pre><code class="language-sh">npm pack     # 生成 dsh-tool-time-&lt;version&gt;.tgz
-# 交互式（web）profile
+<p>Or install from the tarball produced by <code>npm pack</code>:</p>
+<pre><code class="language-sh">npm pack     # produces dsh-tool-time-&lt;version&gt;.tgz
+# Interactive (web) profile
 dsh plugin --profile web add ./dsh-tool-time-&lt;version&gt;.tgz
-# 一次性任务（headless）profile
+# One-off task (headless) profile
 dsh plugin --profile headless add ./dsh-tool-time-&lt;version&gt;.tgz
 </code></pre>
-<p>包内 <code>dsh.bundle.patch</code>（指向 <code>cordis.patch.yml</code>）会在安装后自动把插件加入 profile 的 layer stack；插件的 <code>cordis.patch.yml</code> 以 <code>- insert:</code> 插入 <code>tool-time</code> 条目。插件缺失的 peer 依赖（<code>@deepseek-ai/cordis</code>、<code>@deepseek-ai/dsh-tools</code>）由 profile 的 healed <code>profiles/node_modules</code> 回退安装提供。</p>
+<p>The bundled <code>dsh.bundle.patch</code> (pointing to <code>cordis.patch.yml</code>) automatically adds the plugin to the profile&#39;s layer stack after installation; the plugin&#39;s <code>cordis.patch.yml</code> inserts the <code>tool-time</code> entry via <code>- insert:</code>. The plugin&#39;s missing peer dependencies (<code>@deepseek-ai/cordis</code>, <code>@deepseek-ai/dsh-tools</code>) are provided by the profile&#39;s healed <code>profiles/node_modules</code> fallback installation.</p>
 <blockquote>
-<p>⚠️ web 与 headless 是<strong>不同 profile</strong>：web 安装不会自动覆盖 headless；<code>dsh run</code> 默认使用 headless profile。Windows 路径使用正斜杠（<code>C:/...</code>）。</p>
+<p>⚠️ web and headless are <strong>different profiles</strong>: installing into web does not automatically cover headless; <code>dsh run</code> uses the headless profile by default. Use forward slashes for Windows paths (<code>C:/...</code>).</p>
 </blockquote>
-<h4>验证安装</h4>
+<h4>Verify Installation</h4>
 <pre><code class="language-sh">dsh --profile web --dump-config | grep tool-time
 </code></pre>
-<h4>运行验证</h4>
+<h4>Runtime Verification</h4>
 <pre><code class="language-sh">dsh run &quot;使用 time 工具获取当前 UTC 时间&quot;
 </code></pre>
-<h4>手动安装与旧版本兼容（monorepo 旧场景）</h4>
-<p>monorepo 方式仅适用于旧场景：不支持 Profile Bundle 的旧快照或插件开发调试环境：</p>
+<h4>Manual Installation and Legacy Compatibility (legacy monorepo scenario)</h4>
+<p>The monorepo way is only for legacy scenarios: old snapshots that do not support Profile Bundle, or plugin development/debugging environments:</p>
 <ol>
-<li>放入 monorepo：<code>cp -r time ~/.dsh/source/master/packages/tools/time</code>（开发调试）</li>
-<li><code>apps/cli/package.json</code> 加 <code>&quot;@deepseek-ai/dsh-tool-time&quot;: &quot;workspace:^&quot;</code>；<code>tsconfig.host.json</code> references 加 <code>{ &quot;path&quot;: &quot;./packages/tools/time&quot; }</code></li>
+<li>Place into the monorepo: <code>cp -r time ~/.dsh/source/master/packages/tools/time</code> (development debugging)</li>
+<li>Add <code>&quot;@deepseek-ai/dsh-tool-time&quot;: &quot;workspace:^&quot;</code> to <code>apps/cli/package.json</code>; add <code>{ &quot;path&quot;: &quot;./packages/tools/time&quot; }</code> to the <code>tsconfig.host.json</code> references</li>
 <li><code>pnpm install &amp;&amp; pnpm run build</code></li>
-<li>在 profile 用户层 patch 插入插件（<code>~/.dsh/profiles/&lt;name&gt;/cordis.patch.yml</code>）：</li>
+<li>Insert the plugin in the profile&#39;s user-layer patch (<code>~/.dsh/profiles/&lt;name&gt;/cordis.patch.yml</code>):</li>
 </ol>
 <pre><code class="language-yaml">- insert:
     - id: tool-time
       name: &#39;@deepseek-ai/dsh-tool-time&#39;
 </code></pre>
 <ol start="5">
-<li>验证：<code>dsh --profile &lt;name&gt; --dump-config | grep tool-time</code></li>
+<li>Verify: <code>dsh --profile &lt;name&gt; --dump-config | grep tool-time</code></li>
 </ol>
 <blockquote>
-<p>注意：patch 是 id-targeted 语义（DSH 0.1.0-rc.6（npm））——裸 <code>- id:</code> 条目会报 <code>entry &quot;xxx&quot; not found</code>，必须用 <code>- insert:</code> 列表包裹。</p>
+<p>Note: the patch is id-targeted (DSH 0.1.0-rc.6 (npm)) — a bare <code>- id:</code> entry reports <code>entry &quot;xxx&quot; not found</code>; you must wrap it in a <code>- insert:</code> list.</p>
 </blockquote>
-<h3>已知限制</h3>
+<h3>Known Limitations</h3>
 <ol>
-<li>分发链路：peer 依赖（如 <code>@deepseek-ai/dsh-tools</code>）为 npm 私有包，独立安装不依赖 monorepo workspace（monorepo 仅旧场景）</li>
-<li><code>add</code> 是 UTC 日历运算，非当地墙钟语义（当地墙钟需 v2）</li>
-<li>不支持自然语言日期（&quot;next week&quot;）与日历月/年差（v2）</li>
-<li>时区数据来自 Node 内置 ICU：&quot;跨平台一致&quot; = &quot;相同 Node/ICU 数据下一致&quot;</li>
-<li><strong>输入年份范围为 1000–9999</strong>（<code>0000</code>–<code>0999</code> 拒绝：JavaScript <code>Date.UTC</code> 对这些年份有 1900+ 映射的历史行为）</li>
-<li><strong>精度契约</strong>：<code>iso</code>/<code>unix</code> 保留毫秒；<code>local</code>/<code>formatted</code> 为秒精度展示字段</li>
-<li><strong>offset 精度到分钟</strong>：v1 只支持现代时区；历史时区（&lt;1900）的秒级 offset 会被截断</li>
+<li>Distribution chain: peer dependencies (e.g. <code>@deepseek-ai/dsh-tools</code>) are npm private packages; standalone installation does not depend on the monorepo workspace (monorepo is legacy only)</li>
+<li><code>add</code> is UTC calendar arithmetic, not local wall-clock semantics (local wall-clock requires v2)</li>
+<li>Natural-language dates (&quot;next week&quot;) and calendar month/year diffs are not supported (v2)</li>
+<li>Timezone data comes from Node&#39;s built-in ICU: &quot;cross-platform consistency&quot; means &quot;consistency under the same Node/ICU data&quot;</li>
+<li><strong>Input year range is 1000–9999</strong> (<code>0000</code>–<code>0999</code> rejected: JavaScript <code>Date.UTC</code> has a historical 1900+ mapping behavior for those years)</li>
+<li><strong>Precision contract</strong>: <code>iso</code>/<code>unix</code> preserve milliseconds; <code>local</code>/<code>formatted</code> are second-precision display fields</li>
+<li><strong>Offset precision down to minutes</strong>: v1 only supports modern timezones; second-level offsets of historical timezones (&lt;1900) are truncated</li>
 </ol>
-<h3>测试</h3>
+<h3>Tests</h3>
 <pre><code class="language-bash">pnpm test
 </code></pre>
-<p>功能/错误/攻击载荷共 63 个用例（fake clock、时区已知向量、月末钳制、严格 ISO 边界、年份范围、offset 跨年、极端 amount、原型链时区名等）。完整清单见本地维护的设计文档。</p>
-<h3>许可</h3>
+<p>63 cases covering functionality/errors/attack payloads (fake clock, known timezone vectors, end-of-month clamping, strict ISO boundaries, year ranges, offsets crossing year boundaries, extreme amounts, prototype-chain timezone names, etc.). See the locally maintained design doc for the full list.</p>
+<h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-time/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-tool-time/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

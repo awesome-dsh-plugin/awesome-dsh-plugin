@@ -191,39 +191,38 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <h2>DSH Chat Import</h2>
 <blockquote>
-<p><strong>13 agent sources, one plugin</strong> — full-fidelity import into DeepSeek Harness, seamless resume, and export / sync back to Claude Code.</p>
+<p><strong>一个插件，13 种来源</strong> —— 全保真导入 DeepSeek Harness，无缝续聊，并可导出 / 同步回 Claude Code。</p>
 </blockquote>
-<p><code>dsh-chat-import</code> imports conversation histories from <strong>Claude Code, Codex, ChatGPT, Cursor, Gemini, Reasonix, opencode, ZCode, Grok Build, OpenClaw, Pi Coding Agent, Hermes and Kimi CLI</strong> — tool calls, reasoning and all — as <strong>full-fidelity, resumable DeepSeek Harness sessions</strong>. Source files are read <strong>read-only</strong> (never rewritten), the DSH engine is never touched, and every import becomes a fresh session grouped into the workspace of its source <code>cwd</code>.</p>
-<p>The reverse direction is covered too: <code>export_claude</code> serializes a DSH session back into a Claude Code JSONL transcript that Claude Code can load with <code>--resume</code> (read-only — your DSH log is never modified), and <code>sync_to_claude</code> incrementally appends a session&#39;s new turns back to a Claude Code file — guarded, never silently overwriting.</p>
-<h3>✨ Features</h3>
-<p><strong>📥 Import</strong></p>
+<p>反向方向同样覆盖：<code>export_claude</code> 把 DSH 会话序列化回 Claude Code JSONL（只读——绝不修改你的 DSH 日志），Claude Code 可用 <code>--resume</code> 加载续聊；<code>sync_to_claude</code> 再把会话新增轮次增量写回 Claude Code 文件——带守卫、绝不静默覆盖。</p>
+<h3>✨ 功能特性</h3>
+<p><strong>📥 导入</strong></p>
 <ul>
-<li><strong>13 sources, one plugin</strong> — one tool per source, from Claude Code JSONL and Codex rollouts to SQLite databases and session directories.</li>
-<li><strong>🔍 Full fidelity</strong> — tool calls &amp; results, thinking blocks, titles, models and timestamps carry over wherever the source records them.</li>
-<li><strong>📦 Batch import</strong> — point at a directory (or a whole database) and every file / conversation becomes its own session, with a per-file summary.</li>
+<li><strong>13 种来源，一个插件</strong> — 每种来源一条命令，从 Claude Code JSONL、Codex rollout 到 SQLite 数据库与会话目录。</li>
+<li><strong>🔍 全保真</strong> — 工具调用与结果、思考块、标题、模型与时间戳，源有记录就原样保留。</li>
+<li><strong>📦 批量导入</strong> — 指向一个目录（或整个数据库），每个文件 / 每段对话都成为独立会话，并返回逐文件汇总。</li>
 </ul>
-<p><strong>▶️ Resume</strong></p>
+<p><strong>▶️ 续聊</strong></p>
 <ul>
-<li><strong>Seamlessly resumable</strong> — open an imported session and keep chatting exactly where the source left off.</li>
-<li><strong>🗂 Auto workspace grouping</strong> — sessions land in the workspace of their source <code>cwd</code> (falling back to the source file&#39;s directory when that path does not exist locally) — no more &quot;ungrouped&quot;.</li>
+<li><strong>可无缝续聊</strong> — 打开导入的会话，从源记录停下的地方继续对话。</li>
+<li><strong>🗂 自动归组工作区</strong> — 会话按源 <code>cwd</code> 挂进对应工作区（本机无此路径时回退到源文件所在目录）——不再「未分组」。</li>
 </ul>
-<p><strong>🔄 Reverse</strong></p>
+<p><strong>🔄 反向</strong></p>
 <ul>
-<li><strong>📤 Export to Claude Code</strong> — <code>export_claude</code> writes any DSH session (imported or native) to <code>&lt;outputDir&gt;/&lt;slug&gt;/&lt;uuid&gt;.jsonl</code>, ready for <code>--resume</code>.</li>
-<li><strong>🔄 Sync back</strong> — <code>sync_to_claude</code> appends a session&#39;s new complete turns to its Claude Code file — guarded, never overwriting.</li>
+<li><strong>📤 导出回 Claude Code</strong> — <code>export_claude</code> 把任意 DSH 会话（导入的或原生的）写到 <code>&lt;outputDir&gt;/&lt;slug&gt;/&lt;uuid&gt;.jsonl</code>，可直接 <code>--resume</code>。</li>
+<li><strong>🔄 反向同步</strong> — <code>sync_to_claude</code> 把会话新增完整轮次追加回 Claude Code 文件——带守卫、绝不覆盖。</li>
 </ul>
-<p><strong>🛡️ Protection</strong></p>
+<p><strong>🛡️ 保护</strong></p>
 <ul>
-<li><strong>🔁 Idempotent + incremental</strong> — re-importing an unchanged source skips it; a grown source appends only its new turns.</li>
-<li><strong>🧮 Context budget protection</strong> — oversized sessions are trimmed to fit a safe context budget, and the trim is reported.</li>
+<li><strong>🔁 幂等 + 增量</strong> — 重复导入未变化的源直接跳过；增长的源只追加新增轮次。</li>
+<li><strong>🧮 上下文预算保护</strong> — 超长会话按安全上下文预算裁剪，裁剪结果显式上报。</li>
 </ul>
-<h3>🗂 Supported sources</h3>
+<h3>🗂 支持的来源</h3>
 <table>
 <thead>
 <tr>
-<th>Source</th>
-<th>Storage location</th>
-<th>Import tool</th>
+<th>来源</th>
+<th>存储位置</th>
+<th>导入工具</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -237,8 +236,8 @@ footer p+p{margin-top:.5rem}
 <td><code>import_codex</code></td>
 </tr>
 <tr>
-<td><strong>ChatGPT</strong> (web export)</td>
-<td>anywhere you saved the export — <code>conversations.json</code></td>
+<td><strong>ChatGPT</strong>（网页导出）</td>
+<td>导出压缩包（任意路径）——<code>conversations.json</code></td>
 <td><code>import_chatgpt</code></td>
 </tr>
 <tr>
@@ -262,7 +261,7 @@ footer p+p{margin-top:.5rem}
 <td><code>import_opencode</code></td>
 </tr>
 <tr>
-<td><strong>ZCode</strong> (z.ai CLI)</td>
+<td><strong>ZCode</strong>（z.ai CLI）</td>
 <td><code>~/.zcode/cli/db/db.sqlite</code></td>
 <td><code>import_zcode</code></td>
 </tr>
@@ -283,7 +282,7 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td><strong>Hermes</strong></td>
-<td><code>~/.hermes/</code> (Windows <code>%LOCALAPPDATA%\hermes</code>)</td>
+<td><code>~/.hermes/</code>（Windows <code>%LOCALAPPDATA%\hermes</code>）</td>
 <td><code>import_hermes</code></td>
 </tr>
 <tr>
@@ -292,86 +291,92 @@ footer p+p{margin-top:.5rem}
 <td><code>import_kimi</code></td>
 </tr>
 </tbody></table>
-<p>Each import preserves what the source actually records — session id, <code>cwd</code>, title, model, timestamps, tool calls &amp; results, reasoning. Sources that record less import what exists; anything a format cannot preserve is explicitly flagged in the import report (e.g. Kimi sub-agent conversations mirrored into the parent wire as <code>SubagentEvent</code> are skipped — the parent&#39;s <code>Agent</code> tool call &amp; result are kept, and a sub-agent&#39;s own <code>subagents/&lt;agentId&gt;/wire.jsonl</code> can be imported directly).</p>
-<h3>🚀 Quick start</h3>
-<p><strong>1. Install</strong> — add the plugin to a profile:</p>
-<pre><code class="language-bash">dsh plugin --profile web add dsh-chat-import                    # npm package
-dsh plugin --profile web add -w link:/path/to/dsh-chat-import   # local checkout (symlink)
+<p>每次导入都会保留源实际记录的内容——sessionId、<code>cwd</code>、标题、模型、时间戳、工具调用与结果、思考过程。数据较少的源导入其已有的内容；源格式无法保留的部分，会在导入报告里显式标注（如 Kimi 镜像进父 wire 的 <code>SubagentEvent</code> 子代理对话会跳过——父 <code>Agent</code> 工具调用与结果保留，子代理自己的 <code>subagents/&lt;agentId&gt;/wire.jsonl</code> 可直接导入）。</p>
+<h3>🚀 快速开始</h3>
+<p><strong>1. 安装</strong> — 把插件加进 profile：</p>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-chat-import                    # npm 包
+dsh plugin --profile web add -w link:/path/to/dsh-chat-import   # 本地源码（符号链接）
 </code></pre>
-<p><strong>2. Import</strong> — in any DSH session, import a single file or a whole directory (the same call shape works for all 13 import tools — see the table above):</p>
+<p><strong>2. 导入</strong> — 在任意 DSH 会话里导入单个文件或整个目录（13 个导入工具调用方式一致——见上方来源表）：</p>
 <pre><code>import_claude({ path: &quot;~/.claude/projects&quot; })
 </code></pre>
-<p><strong>3. Resume</strong> — refresh the session list once, open the imported session, and continue chatting — it resumes exactly where the source left off.</p>
-<h3>🛠 Usage</h3>
+<p><strong>3. 续聊</strong> — 刷新一次会话列表，打开导入的会话，继续对话——它会从源记录停下的地方无缝接上。</p>
+<h3>🛠 使用</h3>
 <blockquote>
-<p><strong>Note:</strong> imports persist to disk immediately, but the DSH session list does not auto-refresh — refresh the page (or the session list) after importing to see the new sessions.</p>
+<p><strong>注意</strong>：导入会即时落盘，但 DSH 的会话列表不会自动刷新——导入后请刷新页面（或会话列表）才能看到新会话。</p>
 </blockquote>
-<p><strong>Import — a single file or a directory.</strong> Every <code>import_*</code> tool takes a <code>path</code>; directories are scanned recursively and each file / conversation becomes its own session:</p>
+<p><strong>导入——单个文件或目录。</strong> 每个 <code>import_*</code> 工具都接受 <code>path</code>；目录递归扫描，每个文件 / 每段对话成为独立会话：</p>
 <pre><code>import_claude({ path: &quot;C:\Users\&lt;you&gt;\.claude\projects\&lt;slug&gt;\&lt;sessionId&gt;.jsonl&quot; })
 import_codex({ path: &quot;C:\Users\&lt;you&gt;\.codex\sessions\2026\05\18\rollout-2026-05-18T21-14-16-xxxx.jsonl&quot; })
 import_chatgpt({ path: &quot;C:\Users\&lt;you&gt;\Downloads\chatgpt-export\conversations.json&quot; })
 import_opencode({ path: &quot;C:\Users\&lt;you&gt;\.local\share\opencode\opencode.db&quot; })
 </code></pre>
-<p><code>import_chatgpt</code> / <code>import_opencode</code> / <code>import_zcode</code> / <code>import_hermes</code> always return a batch result — one file / database holds all conversations, so each conversation becomes its own session in a single call.</p>
+<p><code>import_chatgpt</code> / <code>import_opencode</code> / <code>import_zcode</code> / <code>import_hermes</code> 恒返回批量结果——一个文件 / 数据库包含全部会话，一次调用即可让每段对话成为独立会话。</p>
 <ul>
-<li><code>preview: true</code> (alias <code>dryRun: true</code>) — run the import <strong>read-only</strong>: resolve, read and convert exactly like a real import, but persist nothing (zero side effects). Drop the flag and call again to actually import.</li>
-<li><code>force: true</code> — create a <strong>fresh full copy</strong> under a new id (<code>import-&lt;sessionId&gt;-&lt;n&gt;</code>) even when the source was already imported; the old session is never modified.</li>
-<li><code>sessionId</code> (optional) — override the target DSH session id (default <code>import-&lt;source sessionId&gt;</code>).</li>
-<li><strong>Incremental re-import</strong> — re-importing the same source never rewrites imported history. Unchanged files are skipped (<code>already-imported</code>) without re-reading; grown files append only their <strong>new turns</strong> to the same session (<code>appended</code>); truncated files are detected and reported (<code>sourceShrunk</code>) — use <code>force: true</code> for a complete fresh copy:</li>
+<li><code>preview: true</code>（别名 <code>dryRun: true</code>）— <strong>只读</strong>运行：照常解析 / 读取 / 转换，但<strong>零副作用</strong>、不落盘。去掉该参数再调一次即正式导入。</li>
+<li><code>force: true</code> — 即使已导入，也以新 id（<code>import-&lt;sessionId&gt;-&lt;n&gt;</code>）另存一份<strong>完整副本</strong>；旧会话绝不修改。</li>
+<li><code>sessionId</code>（可选）— 覆盖目标 DSH 会话 id（默认 <code>import-&lt;源sessionId&gt;</code>）。</li>
+<li><strong>增量续写（重导）</strong> — 重导同一源路径绝不改写已导入历史：未变文件跳过（<code>already-imported</code>，不重读）；增长文件只把<strong>新增轮次</strong> append 进同一会话（<code>appended</code>）；截断文件检测并上报（<code>sourceShrunk</code>）——需要完整新副本时用 <code>force: true</code>：</li>
 </ul>
 <pre><code>import_claude({ path: &quot;C:\Users\&lt;you&gt;\.claude\projects\&lt;slug&gt;\&lt;sessionId&gt;.jsonl&quot; })
-// unchanged → &quot;already-imported&quot; · grew → &quot;appended&quot; (new turns only)
+// 未变化 → &quot;already-imported&quot; · 增长 → &quot;appended&quot;（只追加新轮次）
 </code></pre>
-<p>Every import result reports its <code>status</code> and any anomalies — malformed lines, suspected secrets, per-source drops — nothing is silently swallowed.</p>
-<h4>scan_discover — read-only session discovery</h4>
-<p><code>scan_discover</code> scans the known data roots of all 13 formats and returns a structured session index (title, project, path, import status) so you can preview before a batch import. Zero side effects:</p>
+<p>每次导入结果都会上报 <code>status</code> 与任何异常——畸形行、疑似敏感信息、逐源丢弃——绝不静默吞掉。</p>
+<h4>scan_discover — 只读会话发现</h4>
+<p><code>scan_discover</code> 扫描全部 13 种格式的已知数据根，返回结构化会话索引（标题、项目、路径、导入状态），供批导入前预览。零副作用：</p>
 <pre><code>scan_discover()
 scan_discover({ path: &quot;~/.codex/sessions&quot;, format: &quot;codex&quot;, query: &quot;import&quot; })
 </code></pre>
-<h4>list_imported_sessions &amp; retract_import — identify &amp; retract</h4>
-<p><code>list_imported_sessions()</code> enumerates every DSH session this plugin has imported; <code>retract_import({ sessionId })</code> (or <code>sourcePath</code>) removes its registry record and returns manual-deletion guidance. <strong>Identification and guided manual deletion only — nothing is ever deleted</strong>:</p>
+<h4>list_imported_sessions &amp; retract_import — 识别与撤回</h4>
+<p><code>list_imported_sessions()</code> 枚举本插件已导入的全部 DSH 会话；<code>retract_import({ sessionId })</code>（或 <code>sourcePath</code>）移除其 registry 记录并返回手动删除引导。<strong>只识别 + 引导手动删，绝不执行任何删除</strong>：</p>
 <pre><code>list_imported_sessions()
 retract_import({ sessionId: &quot;import-019f5f27-…&quot; })
 </code></pre>
 <h4>export_claude — DSH → Claude Code JSONL</h4>
-<p><code>export_claude({ sessionId })</code> serializes an existing DSH session (imported or native) into a Claude Code JSONL transcript, ready for <code>--resume</code>. It is written to <code>&lt;outputDir&gt;/&lt;slug&gt;/&lt;uuid&gt;.jsonl</code> (default <code>~/.claude/projects</code>), with a fresh UUID v4 file name — an existing file is never overwritten:</p>
+<p><code>export_claude({ sessionId })</code> 把现有 DSH 会话（导入的或原生的）序列化为 Claude Code JSONL transcript，可直接 <code>--resume</code>。文件写到 <code>&lt;outputDir&gt;/&lt;slug&gt;/&lt;uuid&gt;.jsonl</code>（默认 <code>~/.claude/projects</code>），文件名是全新 UUID v4——绝不覆盖已有文件：</p>
 <pre><code>export_claude({ sessionId: &quot;import-019f5f27-…&quot; })
 export_claude({ sessionId: &quot;…&quot;, outputDir: &quot;D:\backup\claude-projects&quot;, dryRun: true })
 </code></pre>
-<h4>sync_to_claude — incremental write-back</h4>
-<p><code>sync_to_claude({ sessionId })</code> appends a session&#39;s <strong>new complete turns</strong> back to its Claude Code file — <code>target: &quot;source&quot;</code> by default (the import source) or <code>&quot;copy&quot;</code> (the last <code>export_claude</code> copy). Guards report an externally modified or shrunken file instead of overwriting it; <code>force: true</code> re-anchors past external edits (the overridden guard is still reported):</p>
+<h4>sync_to_claude — 增量写回</h4>
+<p><code>sync_to_claude({ sessionId })</code> 把会话的<strong>新增完整轮次</strong>追加回其 Claude Code 文件——<code>target: &quot;source&quot;</code>（默认，写回导入源文件）或 <code>&quot;copy&quot;</code>（最近一次 <code>export_claude</code> 副本）。文件被外部修改或缩小时一律上报、绝不覆盖；<code>force: true</code> 越过外部修改重锚定（被覆盖的守卫仍会上报）：</p>
 <pre><code>sync_to_claude({ sessionId: &quot;import-019f5f27-…&quot; })
 sync_to_claude({ sessionId: &quot;…&quot;, target: &quot;copy&quot;, dryRun: true })
 </code></pre>
-<h4>Browser panel — discover &amp; import from the sidebar</h4>
-<p>The dsh web sidebar shows an <strong>导入会话</strong> button in its footer, styled to match the sidebar&#39;s <strong>设置</strong> entry and carrying the plugin logo as its icon (a <code>sidebar.footer.action</code> slot entry: while the official Cordis plugin badge occupies the whole footer row the button renders as a fixed overlay just above the footer so it can never be squeezed out; when the badge is hidden or absent it sits in the footer row itself, right above 设置). It opens a panel listing discovered sessions <strong>grouped by workspace folder</strong> (each source&#39;s <code>cwd</code>/project when available, otherwise an &quot;(未分组)&quot; bucket), with a source filter — &quot;全部来源&quot; scans every format&#39;s default data root, a single source restricts the view — and a per-session import-status badge (已导入 / 部分 / 未导入). A search box filters by title / workspace / path, and the list is <strong>paginated</strong> (50 per page) with selections kept across pages for bulk operations. The panel closes on <code>Escape</code>.</p>
-<p>Each row supports <strong>single import</strong>, and the checkboxes enable <strong>multi-select import</strong> (&quot;导入所选 (N)&quot;): the panel calls the same host import pipeline as the <code>import_*</code> tools, so idempotent skip / incremental append / <code>force</code> / context-budget semantics are identical, and the list refreshes with the new statuses after importing. A multi-session source (e.g. <code>conversations.json</code>, an opencode/zcode/hermes DB) is imported whole — opencode/zcode restrict to the selected <code>sessionId</code>s.</p>
+<h4>浏览器面板 — 侧边栏发现与导入</h4>
+<p>dsh web 侧边栏底部上方有一个「导入会话」浮动胶囊（<code>sidebar.footer.action</code> 槽条目以 fixed 浮层渲染，同槽其它条目——如官方 Cordis 徽标占满整个 footer 行——不会把它挤出或挡住）。打开的面板<strong>按工作区文件夹分组</strong>列出发现的会话（各来源记录里的 <code>cwd</code>/项目名，缺省归入「(未分组)」），支持来源过滤——「全部来源」扫描全部格式的默认数据根，单选来源则只看该格式——并带逐会话导入状态徽标（已导入 / 部分 / 未导入）。搜索框按标题 / 工作区 / 路径过滤，列表<strong>分页</strong>展示（每页 50 条），跨页选择保留便于批量操作。面板支持 <code>Esc</code> 关闭。</p>
+<p>每行支持<strong>单选导入</strong>，复选框支持<strong>多选导入</strong>（「导入所选 (N)」）：面板调用与 <code>import_*</code> 工具完全相同的 host 导入管线，幂等跳过 / 增量续写 / force / 上下文预算语义完全一致；导入后自动刷新列表展示最新状态。多会话源（如 <code>conversations.json</code>、opencode/zcode/hermes 库）整源导入——opencode/zcode 只导所选 <code>sessionId</code>。</p>
 <blockquote>
-<p>The data comes from the same read-only discovery as <code>scan_discover</code> (30s TTL cache + persistent mtime bookmarks); the panel itself never writes anything except the imports you trigger.</p>
+<p>数据来自与 <code>scan_discover</code> 同一套只读发现（30s TTL 缓存 + 持久化 mtime 书签）；面板除你主动触发的导入外零写入。</p>
 </blockquote>
-<h4><code>/import</code> slash command</h4>
-<p>The plugin also registers a <strong><code>/import &lt;source&gt; &lt;path&gt;</code></strong> slash command (available where the dsh <code>commands</code> service is mounted): type it directly in a session to import without a model round-trip — the same pipeline and the same idempotent / incremental / <code>force</code> / context-budget semantics as the <code>import_*</code> tools. <code>&lt;source&gt;</code> accepts the short name (<code>claude</code>, <code>codex</code>, …), the client source id (<code>claude-code</code>), or the full tool name (<code>import_claude</code>); <code>&lt;path&gt;</code> is a transcript file or a session directory / data root (single-file import vs. directory batch as usual).</p>
-<h3>🔑 Key behaviors</h3>
+<h4><code>/import</code> 斜杠命令</h4>
+<p>插件还注册了一个 <strong><code>/import &lt;source&gt; &lt;path&gt;</code></strong> 斜杠命令（在挂载了 dsh <code>commands</code> 服务的环境下可用）：直接在会话里输入即可导入，不占模型轮次——与 <code>import_*</code> 工具同一管线、同一幂等 / 增量 / force / 上下文预算语义。<code>&lt;source&gt;</code> 接受短名（<code>claude</code>、<code>codex</code>…）、客户端来源 id（<code>claude-code</code>）或工具全名（<code>import_claude</code>）；<code>&lt;path&gt;</code> 为 transcript 文件或会话目录 / 数据根（单文件导入 / 目录批量照常判定）。</p>
+<h4>会话启动上下文增强</h4>
+<p>两个可选钩子在 DSH 会话启动时运行（host <code>agent/session-start</code> 事件），均为 agent 级作用域、绝不触碰你的 transcript：</p>
 <ul>
-<li><strong>Read-only import</strong> — source transcripts and databases are never rewritten; imported DSH history is append-only (existing events are never modified).</li>
-<li><strong>Idempotent + incremental</strong> — unchanged sources are skipped without re-reading; growth appends only the new turns; truncation is detected and reported.</li>
-<li><strong>Auto workspace grouping</strong> — sessions are grouped into the workspace of their source <code>cwd</code>; when the <code>cwd</code> does not exist on this machine (common when migrating transcripts from another machine), the session falls back to the workspace of the <strong>source file&#39;s directory</strong> so it never disappears into &quot;未分组&quot;.</li>
-<li><strong>Context budget protection</strong> — imported sessions carry no provider configuration, so dsh never auto-compacts them; oversized sessions are trimmed to fit a context budget (per-message caps, then a compressed middle keeping the earliest prompts, a summary and the tail). The budget can be set per call or via the <code>DSH_IMPORT_CONTEXT_BUDGET</code> env var; the trim is always reported in the result.</li>
-<li><strong>Fail loudly, never silently</strong> — malformed lines and suspected secrets are counted and reported by position (line numbers / kind — content is never output); anything a source format cannot preserve is explicitly flagged in the import report.</li>
-<li><strong>Sandbox</strong> — reading source files or writing exports outside the workspace requires the session sandbox to allow the path.</li>
+<li><strong>迁移提示（默认开）</strong>——当会话工作区存在可发现的（已导入或可导入）外部聊天历史时，注入一行 <code>PromptContext</code>，告诉模型如何继续（<code>/import &lt;source&gt; &lt;path&gt;</code> 命令或侧边栏面板）。per-project 记忆保证同一工作区只提示一次；设 <code>DSH_IMPORT_SESSION_HINT=0</code> 关闭。</li>
+<li><strong>Claude 上下文桥接（默认关）</strong>——设 <code>DSH_IMPORT_CONTEXT_BRIDGE=1</code> 把 Claude Code 的上下文资产桥进会话：<code>~/.claude/memory/*.md</code>（按 <code>feedback</code> &gt; <code>project</code> &gt; <code>reference</code> &gt; <code>user</code> 分组、8 KiB 上限、mtime 缓存重读）、项目根 <code>CLAUDE.md</code>、以及 <code>~/.claude/skills/*/SKILL.md</code>（注册为该 agent 独有的 <code>claude-&lt;name&gt;</code> 技能）。</li>
 </ul>
-<h3>⚙️ Compatibility</h3>
-<p>Targets the <code>dsh 0.1.x</code> line (<code>dsh-tools ^0.1.0-rc.6</code>, tested on <code>dsh 0.1.0-rc.6</code>) and requires <strong>Node.js &gt;= 22.13</strong> (the first release where <code>node:sqlite</code> is available without a flag). <code>npm test</code> — 367 cases.</p>
-<h3>📦 Install &amp; uninstall</h3>
-<pre><code class="language-bash">dsh plugin --profile web add dsh-chat-import        # npm package
-dsh plugin --profile web add -w link:/path/to/dsh-chat-import   # local checkout (symlink)
+<h3>🔑 关键行为</h3>
+<ul>
+<li><strong>只读导入</strong> — 源转录与数据库绝不改写；导入的 DSH 历史 append-only（既有事件绝不修改）。</li>
+<li><strong>幂等 + 增量</strong> — 未变源不重读直接跳过；增长只追加新增轮次；截断检测并上报。</li>
+<li><strong>自动归组工作区</strong> — 会话按源 <code>cwd</code> 归入对应工作区；<code>cwd</code> 在本机不存在时（跨机器迁移 transcript 的常见情况）回退归到<strong>源文件所在目录</strong>的工作区，不会消失在「未分组」里。</li>
+<li><strong>上下文预算保护</strong> — 导入会话没有 provider 配置，dsh 不会自动压缩它们；超长会话按上下文预算裁剪（单条内容上限，中间段压缩，保留最早提问、一条摘要与尾部）。预算可在调用时指定，或通过环境变量 <code>DSH_IMPORT_CONTEXT_BUDGET</code> 设置；裁剪结果总是上报。</li>
+<li><strong>失败要大声，绝不静默</strong> — 畸形行与疑似敏感信息按位置计数上报（行号 / kind——绝不输出内容）；源格式无法保留的部分在导入报告里显式标注。</li>
+<li><strong>沙箱</strong> — 读取工作区之外的源文件或写工作区之外的导出目标，需要会话沙箱放行该路径。</li>
+</ul>
+<h3>⚙️ 兼容性</h3>
+<p>面向 <code>dsh 0.1.x</code> 线（<code>dsh-tools ^0.1.0-rc.6</code>，实测 <code>dsh 0.1.0-rc.6</code>），需要 <strong>Node.js &gt;= 22.13</strong>（<code>node:sqlite</code> 免 flag 的首个版本）。<code>npm test</code> — 367 个用例。</p>
+<h3>📦 安装与卸载</h3>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-chat-import        # npm 包
+dsh plugin --profile web add -w link:/path/to/dsh-chat-import   # 本地源码（符号链接）
 </code></pre>
-<p><code>dsh plugin</code> folds the plugin&#39;s bundle declaration into the profile; the plugin becomes active after restarting dsh. To uninstall, remove the <code>import-claude</code> insert line from the profile&#39;s bundles and restart dsh. Already-imported sessions stay in the DSH data directory and are unaffected.</p>
-<h3>📄 License</h3>
-<p>MIT — see <a href="https://github.com/Nwflower/dsh-chat-import/blob/main/LICENSE">LICENSE</a>.</p>
+<p><code>dsh plugin</code> 把插件的 bundle 声明收编进 profile；重启 dsh 后插件生效。卸载：从 profile 的 bundles 移除 <code>import-claude</code> insert 行并重启 dsh。已导入的会话保留在 DSH 数据目录，不受影响。</p>
+<h3>📄 许可证</h3>
+<p>MIT — 见 <a href="https://github.com/Nwflower/dsh-chat-import/blob/main/LICENSE">LICENSE</a>。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Nwflower/dsh-chat-import/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Nwflower/dsh-chat-import/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

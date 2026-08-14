@@ -189,119 +189,119 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><img src="https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/task-dag-preview.svg" alt="dsh-task-dag visual overview"></p>
-<h3>At a glance</h3>
-<p><code>dsh-task-dag</code> turns DSH&#39;s existing Client projections into a top-to-bottom dependency graph. It keeps no parallel workflow database and sends no polling requests: when Session state changes, the graph changes with it.</p>
+<p><img src="https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/task-dag-preview.svg" alt="dsh-task-dag 视觉概览"></p>
+<h3>一览</h3>
+<p><code>dsh-task-dag</code> 将 DSH 已有的 Client 投影转换为自顶向下的任务依赖图。插件不维护另一套工作流数据库，也不发送轮询请求；Session 状态变化时，图会随投影实时变化。</p>
 <table>
 <thead>
 <tr>
-<th>Capability</th>
-<th>Behavior</th>
+<th>能力</th>
+<th>行为</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Live topology</td>
-<td>Reacts to Session and subagent catalog snapshots without Host polling.</td>
+<td>实时拓扑</td>
+<td>响应 Session 与子代理目录快照，无需 Host 轮询。</td>
 </tr>
 <tr>
-<td>Durable workflows</td>
-<td>Reconstructs workflow phases and members from <code>workflow-run</code> Conversation Nodes after restart.</td>
+<td>持久工作流</td>
+<td>DSH 重启后从 <code>workflow-run</code> Conversation Node 恢复阶段和成员。</td>
 </tr>
 <tr>
-<td>Clear ownership</td>
-<td>Groups workflow members under workflow nodes instead of drawing duplicate root-to-child edges.</td>
+<td>清晰归属</td>
+<td>将工作流成员归入工作流节点，避免根会话到成员的重复直连边。</td>
 </tr>
 <tr>
-<td>Direct navigation</td>
-<td>Opens healthy, list-visible subagent Sessions from their graph nodes.</td>
+<td>直接导航</td>
+<td>点击健康且在 Session 列表中的子代理节点即可打开对应会话。</td>
 </tr>
 <tr>
-<td>Native presentation</td>
-<td>Uses DSH theme semantics, restrained status colors, and custom SVG icons in light and dark modes.</td>
+<td>原生呈现</td>
+<td>使用 DSH 主题语义、克制的状态色与自绘 SVG 图标，适配浅色和深色模式。</td>
 </tr>
 <tr>
-<td>Lifecycle safe</td>
-<td>Registers UI and styles through Cordis lifecycle ownership and removes them on unload.</td>
+<td>生命周期安全</td>
+<td>UI 与样式均由 Cordis 生命周期托管，卸载时完整移除。</td>
 </tr>
 </tbody></table>
-<h3>Live screenshot</h3>
-<p>Captured from a running DSH Web Session with task labels anonymized. The panel, layout, edges, controls, and status presentation are the actual plugin UI.</p>
-<p><img src="https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/screenshot.png" alt="dsh-task-dag running in DSH Web"></p>
-<h3>Install</h3>
+<h3>实际运行截图</h3>
+<p>截图来自正在运行的 DSH Web Session，任务名称已经匿名化；面板、布局、连线、控件与状态呈现均为插件真实界面。</p>
+<p><img src="https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/screenshot.png" alt="dsh-task-dag 在 DSH Web 中运行"></p>
+<h3>安装</h3>
 <pre><code class="language-powershell">dsh plugin --profile web add github:LeemanCheung/dsh-task-dag
 </code></pre>
-<p>Restart the current DSH Web process once after the first installation, then refresh the page. The <strong>Task DAG</strong> action appears in the Session header.</p>
-<p>For a version-pinned installation:</p>
+<p>首次安装后重启一次当前 DSH Web 进程并刷新页面，随后可在会话标题栏看到“任务 DAG”入口。</p>
+<p>固定安装指定版本：</p>
 <pre><code class="language-powershell">dsh plugin --profile web add github:LeemanCheung/dsh-task-dag#v1.1.0
 </code></pre>
-<h3>Using the graph</h3>
+<h3>使用任务图</h3>
 <table>
 <thead>
 <tr>
-<th>Action</th>
-<th>Result</th>
+<th>操作</th>
+<th>结果</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Select <strong>Task DAG</strong></td>
-<td>Opens the Session-scoped graph panel.</td>
+<td>点击“任务 DAG”</td>
+<td>打开当前 Session 范围内的任务图面板。</td>
 </tr>
 <tr>
-<td>Select a subagent node</td>
-<td>Opens that Session when it is available in the Session list.</td>
+<td>点击子代理节点</td>
+<td>当节点存在于 Session 列表时，打开对应会话。</td>
 </tr>
 <tr>
-<td>Toggle fit mode</td>
-<td>Switches between a whole-graph overview and the original scrollable canvas.</td>
+<td>切换适应模式</td>
+<td>在全图概览和原始尺寸可滚动画布之间切换。</td>
 </tr>
 <tr>
-<td>Refresh</td>
-<td>Refreshes observed subagent catalogs; workflow nodes remain projection-driven.</td>
+<td>手动刷新</td>
+<td>刷新正在观察的子代理目录；工作流节点仍由投影驱动。</td>
 </tr>
 <tr>
-<td>Drag the title bar</td>
-<td>Repositions the panel without capturing toolbar controls.</td>
+<td>拖动标题栏</td>
+<td>移动面板，同时不会捕获工具栏按钮事件。</td>
 </tr>
 <tr>
-<td>Press <code>Escape</code> or select close</td>
-<td>Closes the panel and restores focus to the trigger.</td>
+<td>按 <code>Escape</code> 或关闭按钮</td>
+<td>关闭面板，并将焦点还给入口按钮。</td>
 </tr>
 </tbody></table>
-<p>Status colors are deliberately limited to business blue, success green, error red, and warning amber. All other hierarchy is expressed through spacing, typography, borders, and line styles.</p>
-<h3>Architecture</h3>
-<p><img src="https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/architecture.svg" alt="dsh-task-dag projection architecture"></p>
-<p>The browser plugin combines three durable Client-facing sources:</p>
+<p>状态颜色仅用于业务蓝、成功绿、错误红和警告琥珀色；其余层级通过间距、排版、边框与线型表达。</p>
+<h3>架构</h3>
+<p><img src="https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/architecture.svg" alt="dsh-task-dag 投影架构"></p>
+<p>浏览器插件组合三类持久 Client 数据源：</p>
 <ul>
-<li><code>SessionListState.byId</code> and <code>parentId</code> provide subagent lineage.</li>
-<li><code>SessionListState.subagentsByParent</code> provides labels, modes, activity, and catalog health.</li>
-<li><code>workflow-run</code> Conversation Nodes provide workflow phases, members, and outcomes.</li>
+<li><code>SessionListState.byId</code> 与 <code>parentId</code> 提供子代理血缘。</li>
+<li><code>SessionListState.subagentsByParent</code> 提供标签、模式、活动状态与目录健康信息。</li>
+<li><code>workflow-run</code> Conversation Node 提供工作流阶段、成员与结果。</li>
 </ul>
-<p>The owned graph model then normalizes lineage, inserts workflow grouping nodes, derives navigation capability, lays out stable vertical layers, and renders into <code>conversation.session.header.actions</code>.</p>
-<p>There is no process-local workflow cache, model prompt contribution, model tool, Host RPC endpoint, or polling loop.</p>
-<h3>Security and permissions</h3>
-<p>This is a browser-only, read-only visualization plugin. It does not read workspace files, execute commands, open network connections, register model tools, or persist Session content and credentials.</p>
-<p>See <a href="https://github.com/LeemanCheung/dsh-task-dag/blob/main/SECURITY.md">SECURITY.md</a> for the reporting policy and complete trust boundaries. Private vulnerability reporting is enabled for the repository.</p>
-<h3>Development</h3>
-<p>Requirements: Node.js 20 or newer.</p>
+<p>插件拥有的图模型会统一血缘、插入工作流分组节点、派生导航能力、排布稳定的垂直层级，最后渲染到 <code>conversation.session.header.actions</code>。</p>
+<p>整个过程不存在进程内工作流缓存、模型 Prompt 注入、模型 Tool、Host RPC 端点或轮询循环。</p>
+<h3>安全与权限</h3>
+<p>这是一个仅运行在浏览器中的只读可视化插件。它不读取工作区文件、不执行命令、不发起网络连接、不注册模型工具，也不持久化 Session 内容或凭据。</p>
+<p>安全报告方式与完整信任边界见 <a href="https://github.com/LeemanCheung/dsh-task-dag/blob/main/SECURITY.md">SECURITY.md</a>。仓库已启用私密漏洞报告。</p>
+<h3>开发</h3>
+<p>要求 Node.js 20 或更高版本。</p>
 <pre><code class="language-bash">npm install
 npm run check
 </code></pre>
-<p>The check pipeline:</p>
+<p>检查流程会：</p>
 <ol>
-<li>validates source syntax;</li>
-<li>rebuilds the precompiled browser module;</li>
-<li>validates the generated bundle syntax;</li>
-<li>runs jsdom interaction smoke tests for workflow grouping, fit mode, close controls, and node navigation;</li>
-<li>verifies in CI that committed <code>lib/client.js</code> is reproducible from source.</li>
+<li>校验源码语法；</li>
+<li>重建预编译浏览器模块；</li>
+<li>校验生成 bundle 的语法；</li>
+<li>运行 jsdom 交互冒烟测试，覆盖工作流分组、适应模式、关闭控件和节点导航；</li>
+<li>在 CI 中确认提交的 <code>lib/client.js</code> 可以由源码稳定重现。</li>
 </ol>
-<h3>Remove</h3>
+<h3>卸载</h3>
 <pre><code class="language-powershell">dsh plugin --profile web remove dsh-task-dag
 </code></pre>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/LeemanCheung/dsh-task-dag/blob/main/LICENSE">MIT</a> © LeemanCheung</p>
 
     </div>
-    <p class="note"><a href="https://github.com/LeemanCheung/dsh-task-dag/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/LeemanCheung/dsh-task-dag/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

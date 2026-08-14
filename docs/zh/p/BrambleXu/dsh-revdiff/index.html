@@ -190,44 +190,44 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><img src="https://raw.githubusercontent.com/BrambleXu/dsh-revdiff/main/assets/hero.png" alt="dsh-revdiff hero"></p>
-<p>Native interactive diff review for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>. The plugin reads a Git unified diff, parses it into files, hunks, and line locations, presents its own terminal review interface, and queues submitted annotations as the Agent&#39;s next durable follow-up turn.</p>
-<h3>Why this exists 💡</h3>
-<p>Reviewing a diff in a separate tool breaks the connection between the change, the review context, and the Agent that will act on the feedback. <code>dsh-revdiff</code> keeps review inside Harness, so annotations are created against the actual Git diff and returned to the same durable session.</p>
-<h3>Features ✨</h3>
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 提供原生交互式 diff 审查。插件读取 Git unified diff，将其解析为文件、hunk 和行位置，在自己的终端审查界面中展示，并将提交的批注排队为 Agent 下一轮持久 follow-up。</p>
+<h3>为什么存在 💡</h3>
+<p>在独立工具中审查 diff，会割裂变更、审查上下文以及后续负责处理反馈的 Agent。<code>dsh-revdiff</code> 将审查保留在 Harness 内部，让批注直接针对实际 Git diff 创建，并返回同一个持久会话。</p>
+<h3>功能 ✨</h3>
 <ul>
-<li>Review tracked working-tree, staged, unstaged, or base-revision changes with optional path filters.</li>
-<li>Navigate between files, hunks, and diff lines from an interactive terminal.</li>
-<li>Add, edit, and delete issue, suggestion, question, or praise annotations.</li>
-<li>Submit structured annotations to the current Agent through <code>agent.followup()</code> with message provenance.</li>
-<li>Configure Git execution, diff context, size and time limits, terminal grace period, and comment length.</li>
+<li>审查工作区、暂存区、未暂存或相对于 base revision 的已跟踪变更，并支持可选的路径过滤器。</li>
+<li>在交互式终端中切换文件、hunk 和 diff 行。</li>
+<li>添加、编辑和删除 issue、suggestion、question 或 praise 批注。</li>
+<li>通过带有消息来源信息的 <code>agent.followup()</code> 将结构化批注提交给当前 Agent。</li>
+<li>配置 Git 执行、diff 上下文、大小和时间限制、终端宽限期以及评论长度。</li>
 </ul>
-<h3>Install 📦</h3>
-<p>Add this checkout to a Harness profile:</p>
+<h3>安装 📦</h3>
+<p>将此 checkout 添加到 Harness profile：</p>
 <pre><code class="language-sh">dsh plugin --profile demo add ./dsh-revdiff
 </code></pre>
-<p>The only external runtime requirement is Git in the same execution world as Harness.</p>
-<h3>Use 🚀</h3>
+<p>唯一的外部运行时要求是：Git 必须与 Harness 位于同一个执行环境中。</p>
+<h3>使用 🚀</h3>
 <pre><code class="language-text">/revdiff
 /revdiff --staged
 /revdiff --unstaged
 /revdiff main
 /revdiff --base main -- src/index.ts README.md
 </code></pre>
-<p>The default reviews all tracked working-tree changes against <code>HEAD</code>, including staged and unstaged changes. <code>--staged</code> reviews the index, <code>--unstaged</code> reviews only worktree changes relative to the index, and a base revision reviews the working tree against that revision. Put path filters after <code>--</code>.</p>
-<p>The Harness process must own an interactive terminal. The review interface supports:</p>
+<p>默认情况下，审查相对于 <code>HEAD</code> 的所有已跟踪工作区变更，包括已暂存和未暂存的变更。<code>--staged</code> 审查暂存区，<code>--unstaged</code> 只审查相对于暂存区的工作区变更；指定 base revision 时，审查工作区相对于该 revision 的变更。路径过滤器请放在 <code>--</code> 之后。</p>
+<p>Harness 进程必须拥有交互式终端。审查界面支持：</p>
 <ul>
-<li><code>↑</code>/<code>↓</code> or <code>k</code>/<code>j</code>: move between diff lines</li>
-<li><code>n</code>/<code>p</code>: move between hunks</li>
-<li><code>]</code>/<code>[</code> or <code>→</code>/<code>←</code>: move between files</li>
-<li><code>a</code>: add an issue, suggestion, question, or praise annotation</li>
-<li><code>e</code>: edit the selected line&#39;s annotation</li>
-<li><code>d</code>: delete the selected line&#39;s annotation</li>
-<li><code>s</code>: submit annotations to the current Agent</li>
-<li><code>q</code>, Escape, or Ctrl-C: cancel without sending a message</li>
+<li><code>↑</code>/<code>↓</code> 或 <code>k</code>/<code>j</code>：在 diff 行之间移动</li>
+<li><code>n</code>/<code>p</code>：在 hunk 之间移动</li>
+<li><code>]</code>/<code>[</code> 或 <code>→</code>/<code>←</code>：在文件之间移动</li>
+<li><code>a</code>：添加 issue、suggestion、question 或 praise 批注</li>
+<li><code>e</code>：编辑选中行的批注</li>
+<li><code>d</code>：删除选中行的批注</li>
+<li><code>s</code>：向当前 Agent 提交批注</li>
+<li><code>q</code>、Escape 或 Ctrl-C：取消，不发送消息</li>
 </ul>
-<p>Annotations retain the file, old/new side, line number, selected code, kind, and comment. They are sent through <code>agent.followup()</code> with <code>dsh-revdiff</code> message provenance, so the review enters the same Harness session rather than an external side channel.</p>
-<h3>Configure ⚙️</h3>
-<p>Override the inserted row in a later Harness patch layer:</p>
+<p>批注会保留文件、旧/新侧、行号、选中的代码、类型和评论。它们通过 <code>agent.followup()</code> 发送，并带有 <code>dsh-revdiff</code> 的消息来源信息，因此审查会进入同一个 Harness session，而不是通过外部通道发送。</p>
+<h3>配置 ⚙️</h3>
+<p>在后续 Harness patch layer 中覆盖已插入的配置项：</p>
 <pre><code class="language-yaml">- id: dsh-revdiff
   name: dsh-revdiff
   config:
@@ -238,19 +238,19 @@ footer p+p{margin-top:.5rem}
     graceMs: 2000
     maxCommentLength: 4000
 </code></pre>
-<h3>Develop 🧑‍💻</h3>
+<h3>开发 🧑‍💻</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run check
 </code></pre>
-<h3>Scope 🎯</h3>
-<p>Version 0.1 reviews textual changes already represented by <code>git diff</code>. Untracked files, binary patches, side-by-side rendering, mouse input, and a browser-hosted review surface are not included yet. The review engine and annotation model are owned by this project so those capabilities can evolve for Harness without following another review tool&#39;s interface.</p>
-<h3>License 📄</h3>
+<h3>范围 🎯</h3>
+<p>0.1 版本审查已经由 <code>git diff</code> 表示的文本变更。未跟踪文件、二进制补丁、并排渲染、鼠标输入和浏览器托管的审查界面暂不支持。审查引擎和批注模型由本项目负责，因此可以针对 Harness 演进，而不必跟随其他审查工具的界面。</p>
+<h3>许可证 📄</h3>
 <p>MIT</p>
-<h3>Credits 🙏</h3>
-<p>The product idea is informed by <a href="https://github.com/badlogic/pi-diff-review"><code>pi-diff-review</code></a> and <a href="https://github.com/umputun/revdiff"><code>revdiff</code></a>, but this is an independent implementation built specifically around Harness commands, managed subprocesses, Agent lifecycle, and message provenance. It does not install, execute, wrap, or parse output from <code>revdiff</code>.</p>
+<h3>致谢 🙏</h3>
+<p>产品思路受到 <a href="https://github.com/badlogic/pi-diff-review"><code>pi-diff-review</code></a> 和 <a href="https://github.com/umputun/revdiff"><code>revdiff</code></a> 的启发，但本项目是围绕 Harness command、受管控的 subprocess、Agent 生命周期和消息来源信息构建的独立实现。它不会安装、执行、包装或解析 <code>revdiff</code> 的输出。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/BrambleXu/dsh-revdiff/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/BrambleXu/dsh-revdiff/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

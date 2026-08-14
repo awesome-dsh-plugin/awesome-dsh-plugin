@@ -189,63 +189,53 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/0xsline/dsh-spotlight/blob/main/README.zh.md">简体中文</a> | English</p>
-<p>A keyboard-first command palette for DeepSeek Harness Web. Open one palette to
-find native slash commands, recent sessions, visible UI actions, and installed
-plugin settings—without leaving the keyboard.</p>
-<h3>Features</h3>
+<p>简体中文 | <a href="https://github.com/0xsline/dsh-spotlight/blob/main/README.md">English</a></p>
+<p>DeepSeek Harness Web 的键盘优先全局命令面板。无需离开键盘，即可在一个面板中搜索原生
+Slash Command、最近会话、当前界面操作和已安装插件的设置入口。</p>
+<h3>功能</h3>
 <ul>
-<li><strong>One shortcut:</strong> <code>⌘K</code> on macOS, <code>Ctrl+K</code> on other platforms.</li>
-<li><strong>Customizable:</strong> click the shortcut control in the footer, then press a new
-key combination. The setting is stored in the current browser.</li>
-<li><strong>Native actions:</strong> discovers and triggers the actions already provided by
-DSH Web, and contributes one <code>/spotlight</code> command to the native slash menu
-instead of maintaining a second command registry.</li>
-<li><strong>Fast search:</strong> deterministic fuzzy matching across slash commands, recent
-sessions, UI actions, and plugin settings.</li>
-<li><strong>Keyboard navigation:</strong> Arrow Up/Down to select, Enter to run, Escape to
-close.</li>
-<li><strong>Clean lifecycle:</strong> removes its event listeners, styles, and DOM nodes when
-unloaded.</li>
+<li><strong>一个快捷键：</strong> macOS 默认 <code>⌘K</code>，其他平台默认 <code>Ctrl+K</code>。</li>
+<li><strong>自由设置：</strong> 点击面板底部的快捷键按钮，再按下新的组合键；设置保存在当前浏览器。</li>
+<li><strong>复用原生操作：</strong> 自动发现并触发 DSH Web 已有操作，只向原生斜杠菜单贡献一条
+<code>/spotlight</code> 命令，不维护第二套命令注册表。</li>
+<li><strong>快速搜索：</strong> 对 Slash Command、最近会话、界面操作和插件设置进行稳定的模糊匹配。</li>
+<li><strong>全键盘操作：</strong> 上下方向键选择、Enter 执行、Escape 关闭。</li>
+<li><strong>干净卸载：</strong> 插件卸载时移除事件监听、样式和 DOM 节点。</li>
 </ul>
-<h3>Install</h3>
-<p>Install the bundle into your DSH Web profile. From npm:</p>
+<h3>安装</h3>
+<p>将 Bundle 安装到 DSH Web Profile。通过 npm：</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;@0xsline/dsh-spotlight&quot;
 </code></pre>
-<p>Or from the Git source:</p>
+<p>或通过 Git 源码：</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;github:0xsline/dsh-spotlight#main&quot;
 </code></pre>
-<p>Then start DSH Web and press <code>⌘K</code> or <code>Ctrl+K</code>:</p>
+<p>然后启动 DSH Web，按 <code>⌘K</code> 或 <code>Ctrl+K</code> 即可使用：</p>
 <pre><code class="language-sh">dsh --profile web
 </code></pre>
-<h3>Usage</h3>
+<h3>使用</h3>
 <ol>
-<li>Open Spotlight with the global shortcut, or type <code>/spotlight</code> in the DSH
-Web composer and pick the entry from the slash menu.</li>
-<li>Type to filter commands and actions.</li>
-<li>Use Arrow Up/Down and Enter, or click a result.</li>
-<li>Click <strong>Shortcut</strong> in the footer to record a different key combination.</li>
-<li>Click <strong>Reset</strong> to restore the platform default.</li>
+<li>使用全局快捷键打开 Spotlight，或在 DSH Web 输入框输入 <code>/spotlight</code> 从斜杠菜单打开。</li>
+<li>输入关键词筛选命令和操作。</li>
+<li>使用上下方向键与 Enter，或直接点击结果。</li>
+<li>点击底部的「快捷键」并按下新组合键，即可修改快捷键。</li>
+<li>点击「恢复默认」可还原平台默认值。</li>
 </ol>
-<p>Shortcut preferences are local to the current browser origin and profile.</p>
-<h3>How it works</h3>
-<p>DSH Spotlight is a standalone Cordis bundle with a small Web client. The
-client mounts once the host&#39;s sessions, command-plane, plugin-inventory, and
-command-UI services exist — all standard in every stock DSH Web deployment —
-then reads recent sessions, slash commands, and the plugin inventory directly
-from those services. It also discovers actionable elements in the current page
-and delegates execution back to those native elements. A catalog RPC failure
-degrades only its own category. The plugin adds no server data channel and
-stores no durable server-side state.</p>
-<pre><code class="language-text">src/index.ts             Loader metadata
-src/client/index.ts      Web client activation and disposal
-src/spotlight/           Host + DOM discovery, search, keyboard handling, and UI
-cordis.patch.yml         DSH Web profile composition
+<p>快捷键配置按当前浏览器的 Origin 和 Profile 独立保存。</p>
+<h3>工作原理</h3>
+<p>DSH Spotlight 是一个独立的 Cordis Bundle，附带轻量 Web Client。客户端在宿主的会话、
+命令平面、插件清单和命令 UI 服务就绪后挂载（这些服务是每个标准 DSH Web 部署的固定组成），
+然后直接从这些服务读取最近会话、Slash Command 和插件清单；同时从当前页面发现可执行元素，
+并把执行交还给原生界面。单个目录 RPC 失败只降级对应类别。插件不新增服务端数据通道，
+也不保存持久化的服务端状态。</p>
+<pre><code class="language-text">src/index.ts             Loader 元数据
+src/client/index.ts      Web Client 激活与卸载
+src/spotlight/           Host + DOM 发现、搜索、键盘处理和界面
+cordis.patch.yml         DSH Web Profile 组合配置
 </code></pre>
-<p>Because part of the discovery follows the current DSH Web DOM, host UI
-changes may require updating the selectors in <code>src/spotlight/discovery.ts</code>.</p>
-<h3>Development</h3>
-<p>Requirements: Node.js <code>^22.19.0 || &gt;=24.0.0</code> and pnpm <code>11.7.0</code>.</p>
+<p>部分动作发现依赖当前 DSH Web 的 DOM；宿主界面结构变化时，可能需要同步更新
+<code>src/spotlight/discovery.ts</code> 中的选择器。</p>
+<h3>开发</h3>
+<p>环境要求：Node.js <code>^22.19.0 || &gt;=24.0.0</code>、pnpm <code>11.7.0</code>。</p>
 <pre><code class="language-sh">git clone https://github.com/0xsline/dsh-spotlight.git
 cd dsh-spotlight
 pnpm install
@@ -255,19 +245,19 @@ pnpm run typecheck
 pnpm test
 pnpm run build
 </code></pre>
-<p>Test a local checkout in DSH Web:</p>
+<p>在 DSH Web 中测试本地代码：</p>
 <pre><code class="language-sh">pnpm run prepare
 dsh plugin --profile web add &quot;link:$(pwd)&quot;
 dsh --profile web
 </code></pre>
-<p>Inspect the package contents before publishing:</p>
+<p>发布前检查包内容：</p>
 <pre><code class="language-sh">pnpm pack --dry-run --json
 </code></pre>
-<h3>License</h3>
+<h3>许可</h3>
 <p><a href="https://github.com/0xsline/dsh-spotlight/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/0xsline/dsh-spotlight/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/0xsline/dsh-spotlight/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

@@ -190,172 +190,174 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86">https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86</a></p>
-<h3>🆕 最近更新</h3>
+<h3>🆕 Recent Updates</h3>
 <ul>
-<li><strong>终端自定义字体</strong>：设置页终端卡片新增字体族 + 9–32px 字号设置，实时生效</li>
-<li><strong>侧边卡片设置页重构</strong>：分组容器卡片、计数徽标、自定义开关、加宽设置弹窗</li>
-<li><strong>修复</strong>：WKWebView 下底部面板展开后终端空白（xterm 零尺寸容器初始化崩溃，<a href="https://github.com/omdsh-dev/DSH-better-sidebar/issues/25">#25</a>）</li>
+<li><strong>Custom terminal fonts</strong>: font-family + 9–32px size settings on the terminal card, applied live</li>
+<li><strong>Side card settings redesign</strong>: grouped container cards, count badges, custom toggles, wider settings dialog</li>
+<li><strong>Fix</strong>: blank terminal after expanding the bottom panel on WKWebView (xterm initialized in a zero-size container, <a href="https://github.com/omdsh-dev/DSH-better-sidebar/issues/25">#25</a>)</li>
+<li><strong>Docs</strong>: client changes take effect on a hard refresh — no DSH restart needed</li>
 </ul>
-<h3>✨ 功能一览</h3>
+<h3>✨ Features</h3>
 <ul>
-<li><strong>🗂️ 资源管理器</strong>：懒加载目录树（根 = 会话 cwd），点击打开、<code>@文件</code> 引用、右键复制路径</li>
-<li><strong>📝 编辑与预览</strong>：CodeMirror 6 编辑（Ctrl/Cmd+S 原子保存，切 Tab 不丢草稿）；图片 / Markdown / HTML / PDF / Word / Excel / PPT 内联预览（HTML 走沙箱 iframe）</li>
-<li><strong>⚡ 客户端懒加载</strong>：启动只拉 ~325KB 核心，Office / 终端 / 编辑器等重依赖用到才按需拉取（详见 <code>docs/plans/2026-08-12-lazy-chunks-design.md</code>）</li>
-<li><strong>🌐 浏览器</strong>：多开内嵌网页 tab，后退/前进/刷新；内容运行在沙箱 iframe（无法访问界面数据与本地文件，拒绝本机地址），可临时解锁（红色警示）；被站点拒绝嵌入时显示原因；外链默认在侧边栏打开</li>
-<li><strong>💻 终端</strong>：xterm.js + node-pty 真实 shell、断线重连回放；可选为模型注入 <code>terminal_*</code> 工具；支持自定义字体（字体族 + 9–32px 字号，实时生效）</li>
-<li><strong>🌿 Git 面板</strong>：真 diff + VSCode 式 diff tab、历史、右键暂存/提交/还原等</li>
-<li><strong>🧩 后台任务页</strong>：主会话 agent 拓扑、点击直达执行记录；同页显示后台任务（类型徽标 + 退出码、实时输出 peek、可强制终止）</li>
-<li><strong>🪟 底部面板</strong>：第二个独立工作台，只挤占中间输出区；首次展开自动开终端（可关）</li>
-<li><strong>📱 移动端</strong>：窄屏（&lt;768px）自动合并为全宽抽屉，底部面板标签页并入右侧栏；点文件/外链自动展开</li>
-<li><strong>🔧 分栏工作台</strong>：拖 Tab 拆分/合并（可跨面板）、分隔线调比例；右上角按钮一键折叠/展开面板</li>
-<li><strong>🔁 会话隔离</strong>：布局 / Tab / 面板状态按会话持久化，陈旧状态自动净化；「产出文件」在侧边栏打开</li>
-<li><strong>⚙️ 声明式设置</strong>：设置页「侧边卡片」按注册表渲染开关网格，逐项独立开/关；二级设置（自动展开、终端工具、沙箱等）经齿轮弹窗编辑</li>
-<li><strong>🔌 服务化（基座）</strong>：暴露 <code>ctx.betterSidebar</code>，其他插件可注册 tab 与文件预览器（内置 7 tab + 9 viewer 同走一服务）；v0.12.0 起支持角标/生命周期回调/状态订阅/定向打开/插件自有设置（见 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md">AGENTS.md</a> 与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>）</li>
-<li><strong>🌏 多语言</strong>：界面文案跟随 DSH 语言（zh/en）实时切换，无需刷新</li>
+<li><strong>🗂️ File Explorer</strong>: lazy-loading directory tree (root = session cwd), click to open, <code>@file</code> reference, right-click to copy path</li>
+<li><strong>📝 Edit &amp; Preview</strong>: CodeMirror 6 editing (Ctrl/Cmd+S atomic save, drafts survive tab switches); inline preview for images / Markdown / HTML / PDF / Word / Excel / PPT (HTML in a sandboxed iframe)</li>
+<li><strong>⚡ Client-side Lazy Loading</strong>: only ~325KB core at startup; heavy deps (terminal / editor) load on demand (see <code>docs/plans/2026-08-12-lazy-chunks-design.md</code>)</li>
+<li><strong>🌐 Browser</strong>: multiple embedded web tabs, back/forward/refresh; pages run in a sandboxed iframe (no access to UI data or local files, rejects local addresses), temporarily unlockable (red warning); sites refusing embedding show a reason panel; external links open in the sidebar by default</li>
+<li><strong>💻 Terminal</strong>: xterm.js + node-pty real shell, reconnect with transcript replay; optionally injects <code>terminal_*</code> tools for the model; custom font (family + 9–32px size, applied live)</li>
+<li><strong>🌿 Git Panel</strong>: real diff + VSCode-style diff tabs, history, right-click to stage/commit/revert etc.</li>
+<li><strong>🧩 Background Tasks</strong>: main-session agent topology with click-through to execution records; background tasks on the same page (type badges + exit codes, live-output peek, force-kill)</li>
+<li><strong>🪟 Bottom Panel</strong>: an independent second workbench that only squeezes the center output area; auto-opens a terminal on first expand (toggleable)</li>
+<li><strong>📱 Mobile</strong>: narrow viewports (&lt;768px) merge into a full-width drawer with the bottom panel&#39;s tabs folded into the sidebar; files/links auto-expand the panel</li>
+<li><strong>🔧 Split-pane Workbench</strong>: drag tabs to split/merge panes (cross-panel supported), divider to adjust ratios; one-click collapse/expand both panels from the top-right buttons</li>
+<li><strong>🔁 Session Isolation</strong>: layout / tabs / panel states persisted per session, stale state auto-purged; &quot;produced files&quot; open in the sidebar</li>
+<li><strong>⚙️ Declarative Settings</strong>: the &quot;Side Cards&quot; settings section renders a registry-driven toggle grid, each item independently switchable; secondary settings (auto-expand, terminal tools, sandbox, etc.) edited in a native dialog via the gear button</li>
+<li><strong>🔌 Service API</strong>: exposes <code>ctx.betterSidebar</code> — other plugins can register tabs and file viewers (the 7 built-in tabs + 9 viewers share the same service, see <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md">AGENTS.md</a> and the <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">external plugin guide</a>)</li>
+<li><strong>➕ Add Plugins</strong>: dashed cards at the end of both settings grids (&quot;Sidebar content&quot; / &quot;File viewers&quot;) open tab / previewer plugin modals: the extension point declaration, a &quot;Browse more plugins on GitHub&quot; BUTTON, and the recommended plugin catalog (&quot;Open&quot; jumps to the repo, &quot;Copy&quot; puts the install command on the clipboard); no terminal is opened, nothing can fail — never blocking startup or the sidebar</li>
+<li><strong>🌏 i18n</strong>: UI text follows DSH&#39;s language setting (zh/en) with live switching, no refresh needed</li>
 </ul>
-<h3>🚀 安装</h3>
-<p><strong>前置</strong>：已装好 DSH（<code>dsh web</code> 能正常运行），Node.js ≥ 20、pnpm ≥ 10。</p>
-<p><strong>macOS / Linux</strong>（Windows 装了 Git Bash 或 WSL 也可）：</p>
+<h3>🚀 Installation</h3>
+<p><strong>Prerequisites</strong>: DSH installed (<code>dsh web</code> boots), Node.js ≥ 20, pnpm ≥ 10.</p>
+<p><strong>macOS / Linux</strong> (also works in Git Bash / WSL on Windows):</p>
 <pre><code class="language-sh">curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash
 </code></pre>
-<p><strong>Windows（PowerShell 5.1+ / pwsh）</strong>：</p>
+<p><strong>Windows (PowerShell 5.1+ / pwsh)</strong>:</p>
 <pre><code class="language-powershell">irm https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1 | iex
 </code></pre>
-<p>装完<strong>硬刷新浏览器</strong>（Cmd/Ctrl+Shift+R）即可看到侧边栏（DSH 对 client 改动热加载，无需重启；仅 host 半更新时需要重启）。</p>
+<p>Then <strong>hard-refresh the browser</strong> (Cmd/Ctrl+Shift+R) to see the sidebar (DSH hot-reloads client changes; only host-half updates need a restart).</p>
 <pre><code class="language-sh"># macOS / Linux
 curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash -s 0.11.0 --restart
 
 # Windows PowerShell
 &amp; ([scriptblock]::Create((irm &#39;https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1&#39;))) -Version 0.11.0 -Restart
 </code></pre>
-<p>不确定的话，可先加 <code>--dry-run</code>（PowerShell 用 <code>-DryRun</code>）预览步骤再执行。</p>
-<p>与一键脚本等价。<strong>第 ③ 步可重复执行；①② 只需做一次。</strong></p>
-<p><strong>macOS / Linux（bash）</strong>：</p>
+<p>Not sure? Add <code>--dry-run</code> (<code>-DryRun</code> in PowerShell) to preview before running.</p>
+<p>Equivalent to the one-click script. <strong>Step ③ is repeatable; ①② only need to run once.</strong></p>
+<p><strong>macOS / Linux (bash)</strong>:</p>
 <pre><code class="language-sh">cd ~/.dsh/profiles/web
 
-# ① 放行 node-pty / protobufjs 的构建脚本（pnpm 11 默认拦截；pnpm 10 可跳过）
+# ① Allow node-pty / protobufjs build scripts (pnpm 11 blocks them by default; skip on pnpm 10)
 pnpm approve-builds --all
 
-# ② 放行「发布不足 24h」的新版本（装老版本可跳过；若已有该键，把下面那行并入其下即可）
+# ② Allow versions published less than 24h ago (skip for older releases; if the key already exists, merge the line under it instead)
 cat &gt;&gt; pnpm-workspace.yaml &lt;&lt;&#39;EOF&#39;
 minimumReleaseAgeExclude:
   - dsh-better-sidebar
 EOF
 
-# ③ 安装并自动挂载（不带 @版本 = npm 的 latest；固定版本写 dsh-better-sidebar@0.11.0）
+# ③ Install and auto-mount (no @version = npm&#39;s latest; pin with dsh-better-sidebar@0.11.0)
 npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
-<p><strong>Windows（PowerShell）</strong>：</p>
+<p><strong>Windows (PowerShell)</strong>:</p>
 <pre><code class="language-powershell">cd ~\.dsh\profiles\web
 
-# ① 放行构建脚本
+# ① Allow build scripts
 pnpm approve-builds --all
 
-# ② 放行新版本（一次性；若已有该键，把 - dsh-better-sidebar 并入其下即可）
+# ② Allow fresh releases (once; if the key already exists, merge - dsh-better-sidebar under it instead)
 Add-Content -Path pnpm-workspace.yaml -Value &quot;`nminimumReleaseAgeExclude:`n  - dsh-better-sidebar&quot;
 
-# ③ 安装并自动挂载
+# ③ Install and auto-mount
 npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
-<p>一键脚本自动完成 4 件事（全部幂等，可安全重复执行）：</p>
+<p>The one-click script does four things, all idempotent (safe to re-run):</p>
 <ol>
-<li>预写 <code>allowBuilds</code>（node-pty / protobufjs），规避 pnpm 11 的构建脚本拦截；</li>
-<li>预写 <code>minimumReleaseAgeExclude</code>，放行「发布不足 24 小时」的新版本；</li>
-<li>执行 <code>dsh plugin --profile web add dsh-better-sidebar</code>：登记依赖 → 识别包内 <code>dsh.bundle.patch</code> → 自动注册进 <code>dsh.profile.bundles</code> 挂载；</li>
-<li>清理旧版残留的手动挂载行，避免「双挂载」（页面出现两个侧边栏）。</li>
+<li>Pre-writes <code>allowBuilds</code> (node-pty / protobufjs) to dodge pnpm 11&#39;s build-script block;</li>
+<li>Pre-writes <code>minimumReleaseAgeExclude</code> to allow versions younger than 24 hours;</li>
+<li>Runs <code>dsh plugin --profile web add dsh-better-sidebar</code>: registers the dependency → detects <code>dsh.bundle.patch</code> → auto-appends the plugin to <code>dsh.profile.bundles</code>;</li>
+<li>Removes any leftover hand-written mount line to avoid double-mounting (two sidebars on the page).</li>
 </ol>
-<p><code>curl | bash</code> / <code>irm | iex</code> 会执行远程代码——脚本已随仓库开源（<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>），可先下载审阅。插件以 npm 包 <code>dsh-better-sidebar@0.11.0</code> 发布，通过 <code>dsh.bundle.patch</code>（随包的 <code>cordis.patch.yml</code>）由官方 CLI 自动挂载，<strong>不修改 DSH 源码</strong>。</p>
+<p><code>curl | bash</code> / <code>irm | iex</code> executes remote code — the scripts are open source in the repo (<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>); download and review them first if you prefer. The plugin ships as npm package <code>dsh-better-sidebar@0.11.0</code> and mounts via <code>dsh.bundle.patch</code> (the shipped <code>cordis.patch.yml</code>), so the DSH source is never modified.</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
-<p>或重跑一次一键脚本；也可把 <code>~/.dsh/profiles/web/package.json</code> 里的版本号改高后 <code>pnpm install</code>。改完<strong>硬刷新浏览器</strong>（Cmd/Ctrl+Shift+R）即可（client 改动无需重启 DSH）。</p>
+<p>or re-run the one-click script; or bump the version in <code>~/.dsh/profiles/web/package.json</code> (e.g. <code>&quot;^0.11.0&quot;</code>) and run <code>pnpm install</code>. Then hard-refresh the browser (Cmd/Ctrl+Shift+R) — client changes do not need a DSH restart.</p>
 <table>
 <thead>
 <tr>
-<th>现象</th>
-<th>原因与解决</th>
+<th>Symptom</th>
+<th>Cause &amp; fix</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>报 <code>Ignored build scripts</code></td>
-<td>pnpm 11 拦截构建脚本。跑 <code>pnpm approve-builds --all</code>（一键脚本已自动处理）。</td>
+<td><code>Ignored build scripts</code></td>
+<td>pnpm 11 blocked build scripts. Run <code>pnpm approve-builds --all</code> (the one-click script handles it).</td>
 </tr>
 <tr>
-<td>报 <code>minimum release age</code> / 版本不足 24h</td>
-<td>装的版本发布不足 24 小时。等 24h 或重跑一次（pnpm 会自动补 <code>minimumReleaseAgeExclude</code>）；一键脚本已自动处理。</td>
+<td><code>minimum release age</code> / version <code>&lt; 24h</code></td>
+<td>The release is younger than 24 hours. Wait, or re-run once (pnpm auto-adds <code>minimumReleaseAgeExclude</code>); the one-click script handles it.</td>
 </tr>
 <tr>
-<td>报「找不到 profile 目录」</td>
-<td>先跑一次 <code>dsh web</code>，让它初始化 <code>~/.dsh/profiles/web</code>。</td>
+<td>&quot;profile directory not found&quot;</td>
+<td>Run <code>dsh web</code> once so it initializes <code>~/.dsh/profiles/web</code>.</td>
 </tr>
 <tr>
-<td>页面出现<strong>两个侧边栏</strong></td>
-<td>双挂载：<code>~/.dsh/profiles/web/cordis.patch.yml</code> 还留着旧的手动挂载行，删掉那段 <code>- insert: ... better-sidebar ...</code>（一键脚本会自动清）。</td>
+<td>Two sidebars on the page</td>
+<td>Double-mount: <code>~/.dsh/profiles/web/cordis.patch.yml</code> still has the old hand-written <code>- insert: ... better-sidebar ...</code> line — delete it (the one-click script cleans it).</td>
 </tr>
 <tr>
-<td>Windows 下终端无法使用</td>
-<td><code>node-pty</code> 依赖预编译二进制；若当前 Node 版本没有对应产物，需装编译工具链（VS Build Tools）。主流 Node 版本一般已有预编译。</td>
+<td>Terminal fails on Windows</td>
+<td><code>node-pty</code> relies on prebuilt binaries; if none match your Node version, install a build toolchain (VS Build Tools). Mainstream Node versions are usually covered.</td>
 </tr>
 <tr>
-<td>Windows 没有 bash / curl</td>
-<td>直接用 PowerShell 一键命令；或安装 Git Bash / WSL 再跑 bash 命令。</td>
+<td>No bash / curl on Windows</td>
+<td>Use the PowerShell one-click command, or install Git Bash / WSL and run the bash commands.</td>
 </tr>
 </tbody></table>
-<p>调试本地改动或跟随开发分支时，把依赖指向本地克隆并自行构建：</p>
+<p>To debug local changes or track the dev branch, point the dependency at a local clone and build it yourself:</p>
 <pre><code class="language-text">1. git clone https://github.com/omdsh-dev/DSH-better-sidebar.git ~/Code/DSH-better-sidebar
    cd ~/Code/DSH-better-sidebar &amp;&amp; pnpm install &amp;&amp; pnpm build
-2. ~/.dsh/profiles/web/package.json 的 dependencies 写 &quot;dsh-better-sidebar&quot;: &quot;link:&lt;克隆目录绝对路径&gt;&quot;
-3. ~/.dsh/profiles/web/cordis.patch.yml 追加挂载行：
+2. In ~/.dsh/profiles/web/package.json dependencies write &quot;dsh-better-sidebar&quot;: &quot;link:&lt;absolute path of the clone&gt;&quot;
+3. Append this mount line to ~/.dsh/profiles/web/cordis.patch.yml:
    - insert:
        - id: better-sidebar
          name: &#39;dsh-better-sidebar&#39;
-4. 在 ~/.dsh/profiles/web 执行 pnpm install
-5. 硬刷新浏览器（Cmd/Ctrl+Shift+R）即可看到效果（client 改动无需重启 DSH；host 半改动才需重启）
+4. Run pnpm install in ~/.dsh/profiles/web
+5. Restart DSH and hard-refresh
 </code></pre>
-<p>更新：<code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → 硬刷新浏览器即可（client 改动热加载生效，无需重启 DSH；host 半改动才需重启）。切回 npm 通道时，把依赖改回 <code>&quot;dsh-better-sidebar&quot;: &quot;^0.11.0&quot;</code> 再 <code>pnpm install</code>。</p>
-<p>前置：DSH 已集成 <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a>（<code>dsh registry</code> 可用）。<strong>同时启用两个通道会双挂载</strong>（Node 半挂两次、页面两个侧边栏）。</p>
+<p>Update: <code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → just hard-refresh the browser (client changes hot-reload; only host-half changes need a DSH restart). To switch back to the npm channel, restore <code>&quot;dsh-better-sidebar&quot;: &quot;^0.11.0&quot;</code> and re-run <code>pnpm install</code>.</p>
+<p>Prerequisite: DSH with <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> integrated (<code>dsh registry</code> available). <strong>Enabling both channels double-mounts</strong> (the Node half loads twice, the page gets two sidebars).</p>
 <pre><code class="language-sh">git clone https://github.com/omdsh-dev/DSH-better-sidebar.git &amp;&amp; cd DSH-better-sidebar
 pnpm install &amp;&amp; pnpm build
-node scripts/package-registry.mjs   # 组装 registry/ 暂存（含清单 + 产物 + README，不入库）
-dsh registry install ./registry     # 安装（默认禁用）
+node scripts/package-registry.mjs   # assemble the registry/ staging (manifest + artifacts + README, not committed)
+dsh registry install ./registry     # install (disabled by default)
 dsh registry enable dsh-external/dsh-better-sidebar
 </code></pre>
-<p>更新：<code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → <code>node scripts/package-registry.mjs</code> → <code>dsh registry uninstall/install/enable</code>。切换通道前先移除另一通道的挂载。</p>
-<h3>⌨️ 快捷键</h3>
+<p>Update: <code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → <code>node scripts/package-registry.mjs</code> → <code>dsh registry uninstall/install/enable</code>. Remove the other channel&#39;s mount before switching.</p>
+<h3>⌨️ Keyboard Shortcuts</h3>
 <table>
 <thead>
 <tr>
-<th>操作</th>
-<th>按键</th>
+<th>Action</th>
+<th>Keys</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>保存编辑</td>
+<td>Save edits</td>
 <td><code>Ctrl/Cmd + S</code></td>
 </tr>
 <tr>
-<td>Git 提交</td>
+<td>Git commit</td>
 <td><code>Ctrl + Enter</code></td>
 </tr>
 <tr>
-<td>关闭 Tab</td>
-<td>鼠标中键</td>
+<td>Close tab</td>
+<td>Middle mouse button</td>
 </tr>
 <tr>
-<td>拆分/合并分栏</td>
-<td>拖 Tab 到分栏边缘 / 中间</td>
+<td>Split / merge panes</td>
+<td>Drag tab to pane edge / middle</td>
 </tr>
 <tr>
-<td>引用文件到输入框</td>
-<td>悬浮行尾 <code>@文件</code> 按钮</td>
+<td>Reference file to input</td>
+<td>Hover the <code>@file</code> button at end of line</td>
 </tr>
 <tr>
-<td>复制文件路径</td>
-<td>右键行 → 复制相对/绝对地址</td>
+<td>Copy file path</td>
+<td>Right-click row → copy relative/absolute path</td>
 </tr>
 </tbody></table>
-<h3>🔌 服务化：注册 tab 与文件预览器</h3>
-<p>从 v0.4.0 起暴露 <code>ctx.betterSidebar</code> 服务，其他插件可注册侧边栏页面与文件预览器（内置 7 tab + 9 viewer 也走同一服务，吃自己的狗粮）：</p>
-<pre><code class="language-ts">import type {} from &#39;dsh-better-sidebar&#39;  // 触发 ctx.betterSidebar 类型合并
+<h3>🔌 Service: register tabs &amp; file viewers</h3>
+<p>Since v0.4.0 the plugin exposes the <code>ctx.betterSidebar</code> service — other plugins can register sidebar pages and file viewers (the 7 built-in tabs + 9 viewers go through the same service, eating our own dog food):</p>
+<pre><code class="language-ts">import type {} from &#39;dsh-better-sidebar&#39;  // triggers the ctx.betterSidebar type merge
 export const inject = [&#39;betterSidebar&#39;]
 export function apply(ctx: Context) {
   ctx.effect(() =&gt; ctx.betterSidebar.registerTab({
@@ -363,46 +365,53 @@ export function apply(ctx: Context) {
   }))
 }
 </code></pre>
-<p>v0.12.0 起补齐基座能力：类型导出完整（消费者可直接命名 <code>SidebarTab</code>/<code>SidebarState</code> 等，client 声明图零 Node 依赖）、<code>version</code>/<code>features</code> 能力探测、<code>getSnapshot</code>/<code>subscribeState</code> 状态订阅、tab 角标 <code>badge</code>、<code>onOpen</code>/<code>onActivate</code>/<code>onClose</code> 生命周期回调、<code>updateTab</code>/<code>activateTab</code>/<code>openFile</code>、定向 <code>openTab(seed, scope)</code>、<code>SidebarTab.meta</code> 跨刷新持久化、设置 seam 开放（<code>settings.pluginToggles</code> / <code>settings.render</code>，值存 <code>pluginSettings[id]</code>）。</p>
-<p>完整接入文档：</p>
+<p>v0.12.0+ base capabilities: complete type exports (consumers can name <code>SidebarTab</code>/<code>SidebarState</code> etc.; the client declaration graph is Node-free), <code>version</code>/<code>features</code> capability detection, <code>getSnapshot</code>/<code>subscribeState</code> state subscription, tab <code>badge</code>, <code>onOpen</code>/<code>onActivate</code>/<code>onClose</code> lifecycle callbacks, <code>updateTab</code>/<code>activateTab</code>/<code>openFile</code>, targeted <code>openTab(seed, scope)</code>, <code>SidebarTab.meta</code> persisted across reloads, and an opened settings seam (<code>settings.pluginToggles</code> / <code>settings.render</code>, stored in <code>pluginSettings[id]</code>).</p>
+<p>Full integration docs:</p>
 <ul>
-<li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md"><code>AGENTS.md</code></a></strong>——仓库内维护的接入文档（全字段、匹配算法、HMR 陷阱、声明式设置、版本探测）；</li>
-<li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md"><code>docs/external-plugin-guide.md</code></a></strong>——面向外部插件开发者的接入指南（含完整最小示例）。</li>
+<li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md"><code>AGENTS.md</code></a></strong> — the in-repo integration doc (full fields, matching algorithm, HMR pitfalls, declarative settings, version detection);</li>
+<li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md"><code>docs/external-plugin-guide.md</code></a></strong> — the external-plugin guide (with a complete minimal example).</li>
 </ul>
-<h3>🛠️ 开发与构建</h3>
-<pre><code class="language-sh">pnpm install      # @deepseek-ai/* 已发布到 npm（^0.1.0-rc.6），直接解析、无需令牌
+<h4>➕ Add Plugins (recommended plugin catalog)</h4>
+<p>The dashed card at the end of the &quot;Sidebar content&quot; grid in the &quot;Side Cards&quot; settings section opens the <strong>Add tab plugins</strong> modal; the one at the end of the &quot;File viewers&quot; grid opens the <strong>Add preview plugins</strong> modal. Each declares that its extension point is open to plugins (via the <code>ctx.betterSidebar</code> service), offers a &quot;<strong>Browse more plugins on GitHub</strong>&quot; button (opens the <a href="https://github.com/topics/dsh-better-sidebar">GitHub topic <code>dsh-better-sidebar</code></a> in a new tab), and lists the recommended catalog of its kind (name / repo URL / description / install script). Each entry has two buttons:</p>
+<ul>
+<li><strong>Open</strong>: jumps to the plugin repo in a new browser tab;</li>
+<li><strong>Copy</strong>: writes the install command (<code>cd ~/.dsh &amp;&amp; dsh plugin --profile web add &lt;package&gt;</code>) to the clipboard with a transient &quot;Copied&quot; feedback — paste and run it in a terminal where your DSH profile lives. The modal stays open; nothing is opened, nothing can fail.</li>
+</ul>
+<p><strong>Curating a new plugin</strong>: append a <code>PluginEntry</code> to <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-tabs.ts"><code>src/client/plugins-tabs.ts</code></a> (tab registrations) or <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-viewers.ts"><code>src/client/plugins-viewers.ts</code></a> (file-previewer registrations) — <code>id</code> = npm package name, <code>name</code>, <code>url</code>, <code>description</code> (i18n-friendly; add a <code>pluginXxxDesc</code> key in <code>src/client/locales.ts</code> if needed), <code>install</code> = the full install command — and tag your repo with the <code>dsh-better-sidebar</code> topic; data integrity is guarded by <code>tests/plugin-list.spec.ts</code>.</p>
+<h3>🛠️ Development &amp; Build</h3>
+<pre><code class="language-sh">pnpm install      # @deepseek-ai/* resolved from npm (^0.1.0-rc.6, published) — no token needed
 pnpm typecheck    # tsc --noEmit
 pnpm build        # → lib/index.js + lib/invariant.js + lib/client.js + lib/client-registry.js + lib/types
-pnpm test         # vitest（含 manifest 一致性守卫，需先 build）
+pnpm test         # vitest (includes manifest consistency guard; build first)
 pnpm watch        # tsdown --watch
 </code></pre>
-<p><strong>架构</strong>：单 npm 包、host/client 双半结构——host（<code>src/index.ts</code>）：<code>/sidebar/api/*</code> JSON API、<code>/sidebar/file</code> 媒体路由、<code>/sidebar/html</code> 预览路由、<code>/sidebar/ws/terminal</code> WebSocket（fs / git / pty / 预览，全部会话级 + 信任围栏）；client（<code>src/client/index.tsx</code>）：portal 侧边栏 + 各视图 + 拦截；状态按会话持久化 localStorage。插件按 DSH 官方规范组织（无 default 导出、双 client bundle），运行期不依赖 npm / checkout（<code>@deepseek-ai/*</code> 由 web profile 提供）。</p>
-<h3>🔐 安全</h3>
+<p><strong>Architecture</strong>: a single npm package with host/client halves — host (<code>src/index.ts</code>): <code>/sidebar/api/*</code> JSON API, <code>/sidebar/file</code> media route, <code>/sidebar/html</code> preview route, <code>/sidebar/ws/terminal</code> WebSocket (fs / git / pty / preview, all session-scoped with a trust fence); client (<code>src/client/index.tsx</code>): portal sidebar + views + interception; state persisted per session in localStorage. Organized per DSH official conventions (no default export, dual client bundles); no dependency on npm / checkout at runtime (<code>@deepseek-ai/*</code> provided by the web profile).</p>
+<h3>🔐 Security</h3>
 <ul>
-<li>路由受 Host 头信任围栏保护（与 <code>/api</code> 一致）；<code>fs.write</code> 原子写入；媒体/预览路由仅限会话 cwd 内文件；git 只调 CLI、绝不设置身份</li>
-<li>HTML 预览与浏览器 tab 的内容在<strong>不透明源沙箱 iframe</strong> 中渲染（无 <code>allow-same-origin</code>/<code>allow-top-navigation</code>、<code>no-referrer</code>、权限策略全禁）；<code>/sidebar/html</code> 路由带 CSP <code>sandbox</code> + 大小/路径边界；地址栏拒绝 <code>javascript:</code>/<code>data:</code>/<code>file:</code> 与 localhost 等本机地址</li>
-<li>界面实时显示沙箱状态（关闭时红色警示），可临时解锁当前页面；设置页可按功能关闭沙箱（默认关闭该设置，带警告文案）——关闭后内容与界面同源，仅建议对完全可信内容使用</li>
+<li>Routes protected by a Host-header trust fence (same as <code>/api</code>); <code>fs.write</code> is atomic; media/preview routes only serve files inside the session cwd; git only shells out to the CLI and never sets identity</li>
+<li>HTML preview and browser tab content render in <strong>opaque-origin sandboxed iframes</strong> (no <code>allow-same-origin</code>/<code>allow-top-navigation</code>, <code>no-referrer</code>, all permission policies disabled); the <code>/sidebar/html</code> route carries a CSP <code>sandbox</code> + size/path bounds; the address bar rejects <code>javascript:</code>/<code>data:</code>/<code>file:</code> and local addresses like localhost</li>
+<li>The UI shows the sandbox status live (red warning when off) and can temporarily unlock the current page; the settings page can disable the sandbox per feature (disabled by default, with a warning) — when off, content shares the origin with the UI; only recommended for fully trusted content</li>
 </ul>
-<h3>⚠️ 已知限制</h3>
+<h3>⚠️ Known Limitations</h3>
 <ul>
-<li>Git 无 push/pull/fetch；无文件 watcher（手动刷新）；工具行内文件打开按钮不可拦截</li>
-<li>终端 Tab 拖到另一分栏会重挂载（shell 重开）</li>
-<li><code>.xlsx</code> 预览不保留单元格样式（SheetJS 社区版限制）；Office/PPTX 预览内联进 client bundle（约 23MB），首次加载较慢</li>
-<li>浏览器沙箱无登录态/第三方 Cookie 受限，部分站点登录需走弹窗；被 <code>X-Frame-Options</code>/<code>frame-ancestors</code> 拒绝嵌入的站点（如 arxiv.org）显示原因面板（含「在浏览器中打开」）；iframe 内部跳转不进后退栈</li>
-<li>HTML 预览渲染的是已保存文件（不反映未保存草稿）</li>
-<li>移动端（&lt;768px）无底部面板：进入窄屏时其标签页一次性并入右侧栏（迁移后回桌面仍保留在右侧栏），桌面端的底部面板只在宽视口下可用；移动端底部首展自动开终端不触发</li>
+<li>Git has no push/pull/fetch; no file watcher (manual refresh); tool inline file-open buttons cannot be intercepted</li>
+<li>Dragging a terminal tab to another pane remounts it (shell restarts)</li>
+<li>Office-suite preview (.docx/.xlsx/.pptx) moved to the recommended office plugin (see the &quot;Add plugins&quot; modals in settings); without it these files fall through to the code/download fallbacks</li>
+<li>Browser sandbox has no login state / third-party cookies are restricted; some sites need popup login; sites that refuse embedding via <code>X-Frame-Options</code>/<code>frame-ancestors</code> (e.g. arxiv.org) show a reason panel (with &quot;Open in browser&quot;); in-iframe navigation does not enter the back stack</li>
+<li>HTML preview renders the saved file (not unsaved drafts)</li>
+<li>No bottom panel on mobile (&lt;768px): on narrow screens its tabs merge into the right sidebar once (after migrating back to desktop they stay in the right sidebar); the desktop bottom panel is only available on wide viewports; auto-open terminal on first bottom-panel expand does not trigger on mobile</li>
 </ul>
-<h3>🖥️ 平台支持</h3>
-<p>Windows / Linux / macOS 三平台适配（macOS 日常验证；其余经单元测试覆盖）；<code>node-pty</code> 优先预编译二进制，失败需编译工具链（Windows VS Build Tools / Linux make+g+++python3 / macOS Xcode CLT）。</p>
-<h3>🔗 友情链接</h3>
+<h3>🖥️ Platform Support</h3>
+<p>Windows / Linux / macOS (macOS validated daily; the rest covered by unit tests); <code>node-pty</code> prefers prebuilt binaries, otherwise a build toolchain is required (Windows VS Build Tools / Linux make+g+++python3 / macOS Xcode CLT).</p>
+<h3>🔗 Friends</h3>
 <ul>
-<li><a href="https://github.com/huiliyi37/dsh-tianshu-tui">dsh-tianshu-tui</a>：DeepSeek Harness 交互式终端 UI 插件（渲染核心由自研 harness agent Tianshu-Tui 演进而来），在官方基础上增加 TDD 与证据门等工作流</li>
-<li><a href="https://github.com/ccch1mneyyy/dsh-TUI">dsh-TUI</a>：Claude Code 风格全屏交互终端插件——像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表，npm 一键安装</li>
-<li><a href="https://dshfind.com/zh/plugins">dshfind 插件超市</a>：三方插件市场——GitHub topic <code>dsh-plugin</code> 下的公开仓库清单，每日同步 star、贡献者与增长数据</li>
+<li><a href="https://github.com/huiliyi37/dsh-tianshu-tui">dsh-tianshu-tui</a>: an interactive terminal UI plugin for DeepSeek Harness (its rendering core evolved from the self-developed harness agent Tianshu-Tui), adding TDD and evidence-gate workflows on top of the official harness</li>
+<li><a href="https://github.com/ccch1mneyyy/dsh-TUI">dsh-TUI</a>: a Claude Code-style fullscreen interactive TUI plugin — pixel-whale top bar, live working-status row, streaming thought expansion, double-Esc rollback, context progress bar + TPS meter; one-command npm install</li>
+<li><a href="https://dshfind.com/zh/plugins">dshfind Plugin Market</a>: a third-party plugin marketplace — a listing of public repos under the GitHub topic <code>dsh-plugin</code>, with stars, contributors and growth data synced daily</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/README_EN.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">

@@ -192,64 +192,64 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/README.zh-CN.md">简体中文</a></p>
+<p><a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/README.md">English</a> | 简体中文</p>
 <p><a href="https://www.npmjs.com/package/qiushi-dsh-evidence-audit"><img src="https://img.shields.io/npm/v/qiushi-dsh-evidence-audit.svg" alt="npm version"></a>
 <a href="https://github.com/030611/qiushi-dsh-evidence-audit/actions/workflows/ci.yml"><img src="https://github.com/030611/qiushi-dsh-evidence-audit/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/qiushi-dsh-evidence-audit.svg" alt="license"></a>
 <a href="https://whyihaveyou.github.io/dsh-suite/"><img src="https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe" alt="featured on dsh-suite"></a></p>
-<p><img src="https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/social-preview.jpg" alt="Qiushi DSH Evidence Audit social preview"></p>
-<p><strong>Leave a locally checkable execution trail without storing prompts, tool arguments, tool results, or session IDs in plaintext.</strong></p>
+<p><img src="https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/social-preview.jpg" alt="Qiushi DSH Evidence Audit 社交预览图"></p>
+<p><strong>在不明文保存提示词、工具参数、工具结果或会话 ID 的前提下，留下可在本地检查的执行轨迹。</strong></p>
 <pre><code class="language-sh">dsh plugin --profile web add qiushi-dsh-evidence-audit
 </code></pre>
 <blockquote>
-<p>Community-maintained and not an official DeepSeek project. Related trust-layer plugins: <a href="https://github.com/030611/dsh-telemetry-redactor">Telemetry Redactor</a>, <a href="https://github.com/030611/dsh-verification-receipt">Verification Receipt</a>, and <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>.</p>
+<p>由社区维护，并非 DeepSeek 官方项目。相关 trust-layer 插件：<a href="https://github.com/030611/dsh-telemetry-redactor">Telemetry Redactor</a>、<a href="https://github.com/030611/dsh-verification-receipt">Verification Receipt</a> 与 <a href="https://github.com/030611/dsh-context-provenance">Context Provenance</a>。</p>
 </blockquote>
-<p>Qiushi DSH Evidence Audit is an observe-only DeepSeek Harness Profile Bundle. It listens to the official <code>tools/result</code> and <code>session/event</code> extension points and appends deterministic, hash-chained JSONL evidence receipts. It never registers a model-facing tool, changes a prompt, transforms a tool result, or appends to a session.</p>
-<p><img src="https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg" alt="Evidence Audit data flow: DSH observations are canonicalized and hashed into a private JSONL chain, while observed plaintext is omitted"></p>
-<h3>Install from npm</h3>
-<p>Prerequisites are Node.js <code>^22.19.0 || &gt;=24.0.0</code> and a DSH installation built from the <a href="#compatibility">tested commit</a>.</p>
+<p>Qiushi DSH Evidence Audit 是一个只观察（observe-only）的 DeepSeek Harness Profile Bundle。它监听官方 <code>tools/result</code> 与 <code>session/event</code> 扩展点，向 JSONL 文件追加确定性的哈希链 evidence receipt。它不会注册模型可见工具，不会修改提示词，不会转换工具结果，也不会向会话追加事件。</p>
+<p><img src="https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg" alt="Evidence Audit 数据流：DSH 观察值被规范化并哈希后写入私有 JSONL 链，同时不保存被观察原文"></p>
+<h3>从 npm 安装</h3>
+<p>前置条件为 Node.js <code>^22.19.0 || &gt;=24.0.0</code>，以及从<a href="#%E5%85%BC%E5%AE%B9%E6%80%A7">已测试 commit</a> 构建的 DSH。</p>
 <pre><code class="language-powershell">dsh plugin --profile &lt;profile&gt; add qiushi-dsh-evidence-audit
 dsh --profile &lt;profile&gt; --dump-config
 </code></pre>
-<p>The config dump should contain a row with id <code>qiushi-evidence-audit</code> and name <code>qiushi-dsh-evidence-audit</code>. Receipts then default to <code>$DSH_HOME/evidence-audit/evidence-receipts.jsonl</code>, or <code>~/.dsh/evidence-audit/evidence-receipts.jsonl</code> when <code>DSH_HOME</code> is unset. If running DSH from its source checkout, replace <code>dsh</code> with that checkout&#39;s documented <code>pnpm dsh</code> launcher.</p>
-<p>To remove the bundle:</p>
+<p>配置输出应包含 id 为 <code>qiushi-evidence-audit</code>、name 为 <code>qiushi-dsh-evidence-audit</code> 的条目。receipt 默认写入 <code>$DSH_HOME/evidence-audit/evidence-receipts.jsonl</code>；<code>DSH_HOME</code> 未设置时使用 <code>~/.dsh/evidence-audit/evidence-receipts.jsonl</code>。若从 DSH 源码目录运行，请按照官方文档把 <code>dsh</code> 换成该源码目录的 <code>pnpm dsh</code> 启动方式。</p>
+<p>移除组合包：</p>
 <pre><code class="language-powershell">dsh plugin --profile &lt;profile&gt; remove qiushi-dsh-evidence-audit
 </code></pre>
-<h3>What it can and cannot establish</h3>
+<h3>它能证明什么，不能证明什么</h3>
 <ul>
-<li>It can make edits to retained records, untouched-prefix removal, broken links, and partial final lines detectable when the existing file is verified.</li>
-<li>It can show that this observer saw specific event categories and hashes in a particular local sequence.</li>
-<li>It <strong>cannot</strong> prove that a command ran correctly, that a result was truthful, who produced the file, or that a valid suffix was not deleted.</li>
-<li>Its hashes are <strong>not</strong> redaction, encryption, digital signatures, or an external trust anchor. Protect the receipt file as sensitive pseudonymous data.</li>
+<li>验证已有文件时，它能检测保留记录被修改、未改写前缀被删除、链路断裂和尾部半行。</li>
+<li>它能说明该观察器在某个本地顺序中看到了哪些事件类别和哈希。</li>
+<li>它<strong>不能</strong>证明命令执行正确、结果真实、文件由谁生成，也不能发现有效后缀被完整删除。</li>
+<li>其中的哈希<strong>不是</strong>脱敏、加密、数字签名或外部信任锚点。receipt 文件仍是敏感的假名化数据，必须妥善保护。</li>
 </ul>
-<h3>Compatibility</h3>
-<p>This release has one deliberately narrow compatibility claim: it was implemented and tested against <code>deepseek-ai/deepseek-harness</code> commit <code>47f943859bef60e4160492346772ded9b24f765a</code> on 2026-08-13. That checkout identifies its packages as <code>0.1.0-rc.5</code>, but that version was not available from npm during verification. This is therefore a commit-pinned claim, not a promise for npm release <code>0.0.1-rc.1</code>, future DSH commits, or a semver range.</p>
-<p>The official installer reads <code>package.json#dsh.bundle.patch</code>. <a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/dsh.plugin.json"><code>dsh.plugin.json</code></a> is additional project metadata with a local schema; the pinned DSH commit does not read that file and this project does not claim otherwise.</p>
-<h3>Receipt data</h3>
-<p>The default file is <code>$DSH_HOME/evidence-audit/evidence-receipts.jsonl</code>, or <code>~/.dsh/evidence-audit/evidence-receipts.jsonl</code> when <code>DSH_HOME</code> is unset or blank. The plugin creates the default directory with owner-only mode <code>0700</code> and the file with owner-only mode <code>0600</code> where the operating system honors POSIX modes. It never defaults to the current working directory.</p>
-<p>Every line contains <code>schemaVersion</code>, <code>sequence</code>, <code>collectedAt</code>, <code>previousRecordHash</code>, and <code>recordHash</code>. <code>recordHash</code> is SHA-256 over canonical JSON for every field except <code>recordHash</code> itself. The next line commits to it through <code>previousRecordHash</code>; the first line uses <code>null</code>. Startup verifies the complete existing file and refuses to append if a line, sequence, record hash, or previous-hash link is invalid.</p>
-<p>A <code>session-event</code> receipt stores the hashed session ID, event type, event sequence and time, a hash of event data, and the optional <code>ignorable</code> marker. A <code>tool-result</code> receipt stores the tool name, hashed call/root-call/session IDs, argument hash, final outcome hash, error flag, parent-presence flag, and optional error code.</p>
+<h3>兼容性</h3>
+<p>本版本只作一项刻意收窄的兼容声明：2026-08-13 基于 <code>deepseek-ai/deepseek-harness</code> commit <code>47f943859bef60e4160492346772ded9b24f765a</code> 实现并测试。该源码把包版本标为 <code>0.1.0-rc.5</code>，但验证时 npm 尚未提供此版本。因此这是固定 commit 的声明，不代表支持 npm <code>0.0.1-rc.1</code>、未来 DSH commit 或某个 semver 范围。</p>
+<p>官方安装器读取 <code>package.json#dsh.bundle.patch</code>。<a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/dsh.plugin.json"><code>dsh.plugin.json</code></a> 是带本地 schema 的补充项目元数据；固定 DSH commit 不读取该文件，本项目不会虚构这一兼容能力。</p>
+<h3>Receipt 数据</h3>
+<p>默认文件为 <code>$DSH_HOME/evidence-audit/evidence-receipts.jsonl</code>；<code>DSH_HOME</code> 未设置或为空时使用 <code>~/.dsh/evidence-audit/evidence-receipts.jsonl</code>。插件以 owner-only <code>0700</code> 模式创建默认目录，以 owner-only <code>0600</code> 模式创建文件（操作系统支持 POSIX mode 时生效），且绝不默认写入当前工作目录。</p>
+<p>每行都含 <code>schemaVersion</code>、<code>sequence</code>、<code>collectedAt</code>、<code>previousRecordHash</code> 与 <code>recordHash</code>。<code>recordHash</code> 是对除自身以外全部字段的 canonical JSON 计算 SHA-256；下一行通过 <code>previousRecordHash</code> 提交该哈希，首行为 <code>null</code>。启动时会验证整个已有文件；任何行、序号、记录哈希或前序哈希链路无效时，都拒绝继续追加。</p>
+<p><code>session-event</code> receipt 保存会话 ID 哈希、事件类型、事件序号与时间、事件数据哈希，以及可选的 <code>ignorable</code> 标记。<code>tool-result</code> receipt 保存工具名、调用/根调用/会话 ID 哈希、参数哈希、最终 outcome 哈希、错误标志、父调用存在标志，以及可选错误码。</p>
 <blockquote>
 <p>[!WARNING]
-<strong><code>eventDataHash</code>, <code>argumentsHash</code>, and <code>outcomeHash</code> are not redaction, encryption, or digital signatures.</strong> The JSONL excludes the observed plaintext, but an attacker who can guess a low-entropy value can hash candidates and confirm a match offline. Treat the receipt file as sensitive pseudonymous data and protect it accordingly.</p>
+<strong><code>eventDataHash</code>、<code>argumentsHash</code>、<code>outcomeHash</code> 不是脱敏、不是加密、也不是数字签名。</strong> JSONL 不保存被观察值的原文，但攻击者可以对低熵候选值逐一计算哈希并离线确认匹配。receipt 文件仍是敏感的假名化数据，必须按敏感数据保护。</p>
 </blockquote>
-<p>Event types and tool names remain readable because they are the stable audit categories. The two feeds are not deduplicated: DSH may publish one logical tool outcome first on <code>tools/result</code> and then durably as a <code>tool/result</code> <code>session/event</code>. In that case this plugin intentionally writes two receipts describing two observations. Do not sum those receipts as independent tool executions.</p>
-<h4>Canonical JSON boundary</h4>
-<p><code>hashObservedValue</code> accepts only lossless JSON values: <code>null</code>, booleans, finite numbers, strings, dense arrays, and plain objects with string keys. Object keys are sorted recursively using JavaScript&#39;s default UTF-16 code-unit order. Strings use <code>JSON.stringify</code> escaping, SHA-256 consumes the resulting UTF-8 bytes, and Unicode normalization is not performed; canonically equivalent NFC and NFD strings therefore hash differently.</p>
-<p><code>undefined</code> (including an object property), <code>BigInt</code>, non-finite numbers, functions, symbols, sparse array holes, extra array properties, accessors, non-enumerable or symbol keys, circular references, proxies, array subclasses, and non-plain objects such as <code>Date</code>, <code>Map</code>, or class instances are rejected. Accessor getters are not invoked. Direct callers receive a path-bearing <code>TypeError</code>; observer callbacks catch the failure, log a warning, omit only that receipt, and leave the DSH publication unchanged. Existing-file verification still fails plugin startup loudly.</p>
-<h3>Observe-only behavior</h3>
-<p>Both listeners are ordinary contained observers. They do not return a waterfall decision and do not mutate either callback argument. A receipt serialization or append error is logged and contained so the tool outcome and session publication continue unchanged. A startup error, including an invalid output path or damaged existing chain, fails plugin loading loudly instead of silently discarding audit records.</p>
-<p>One cleanup effect explicitly unregisters both listeners before closing the writer; Cordis&#39;s automatic listener disposers are idempotent with that cleanup. Appends and close are synchronous (<code>writeSync</code>/<code>closeSync</code>), with no promise-backed write queue left pending at unload. A real Cordis test awaits disposal and verifies that a later emission does not change the file.</p>
-<p>Model experience: no prompt text, tool schema, token, model request, result, or KV-cache behavior changes. The only runtime costs are canonical serialization, SHA-256, synchronous append I/O per observed record, and complete chain verification at plugin startup.</p>
-<h3>Optional output override</h3>
-<p>The override must be absolute. A later profile patch replaces the complete row config, so keep the row name and provide the full config:</p>
+<p>事件类型与工具名保持可读，因为它们是稳定的审计类别。两个 feed 不做去重：DSH 可能先通过 <code>tools/result</code> 发布一个逻辑工具结果，随后又把它作为持久化的 <code>tool/result</code> <code>session/event</code> 发布；此时插件会有意生成两张 receipt，表示两次观察。不得把两张 receipt 相加后解释为两次独立工具执行。</p>
+<h4>Canonical JSON 边界</h4>
+<p><code>hashObservedValue</code> 只接受无损 JSON 值：<code>null</code>、布尔值、有限数值、字符串、无空洞数组，以及仅含字符串键的普通对象。对象键递归使用 JavaScript 默认的 UTF-16 code-unit 顺序排序；字符串采用 <code>JSON.stringify</code> 转义，SHA-256 对所得 UTF-8 字节计算。插件不做 Unicode normalization，因此规范等价的 NFC 与 NFD 字符串会得到不同哈希。</p>
+<p><code>undefined</code>（包括对象属性）、<code>BigInt</code>、非有限数值、函数、symbol、稀疏数组空洞、额外数组属性、访问器、不可枚举或 symbol 键、循环引用、Proxy、数组子类，以及 <code>Date</code>、<code>Map</code>、类实例等非普通对象都会被拒绝；访问器 getter 不会被执行。直接调用者会收到带路径的 <code>TypeError</code>；观察器会捕获错误、记录警告、只跳过该张 receipt，并保持 DSH 发布不变。已有文件验证失败仍会让插件启动明确失败。</p>
+<h3>只观察行为</h3>
+<p>两个监听器都是普通的 contained observer。它们不返回 waterfall decision，也不修改任何回调参数。receipt 序列化或追加失败只会记录警告并被隔离，工具 outcome 与会话发布会继续保持原样。启动错误（包括输出路径无效或已有哈希链损坏）会明确导致插件加载失败，避免静默丢失审计记录。</p>
+<p>一个 cleanup effect 会显式先注销两个 listeners，再关闭 writer；Cordis 自动管理的 listener disposers 与该清理操作幂等。追加与关闭均为同步操作（<code>writeSync</code>/<code>closeSync</code>），不存在卸载时仍未完成的 promise 写队列。真实 Cordis 测试会等待卸载完成，并确认随后再次发射事件不会改变文件。</p>
+<p>模型体验：提示文本、工具 schema、token、模型请求、结果和 KV-cache 行为均无变化。运行时成本只有 canonical 序列化、SHA-256、每条记录的同步追加 I/O，以及插件启动时的整链验证。</p>
+<h3>可选输出路径</h3>
+<p>覆盖值必须是绝对路径。后续 profile patch 会替换整个条目的 config，因此需要保留 name 并提供完整 config：</p>
 <pre><code class="language-yaml">- id: qiushi-evidence-audit
   name: qiushi-dsh-evidence-audit
   config:
     outputPath: &#39;D:\private-audit\evidence-receipts.jsonl&#39;
 </code></pre>
-<p>The configured destination is operator-owned; its parent-directory permissions and link safety are not changed by the plugin. Prefer a private directory that other users cannot write.</p>
-<h3>Verify and build</h3>
+<p>自定义目标由操作者负责；插件不会修改其父目录权限或链接安全策略。请优先使用其他用户不可写的私有目录。</p>
+<h3>验证与构建</h3>
 <pre><code class="language-powershell">pnpm run typecheck
 pnpm run test
 pnpm run build
@@ -260,74 +260,74 @@ pnpm run test:tarball
 $env:DSH_UPSTREAM_CHECKOUT=&#39;D:\path\to\pinned\deepseek-harness&#39;
 pnpm run test:upstream
 </code></pre>
-<p>Tests cover canonical JSON acceptance/rejection and Unicode behavior, a fixed SHA-256 vector, deterministic chain creation, exact mutation/truncation boundaries, a real two-process append race, plaintext exclusion, duplicate feed observations, fail containment, safe default resolution, real Cordis mount/event/disposal, built-artifact loading, publint, an exact pack list, install/import/mount from the tarball, and commit-pinned bundle composition with the byte-identical official <code>applyEntryPatches</code> implementation.</p>
-<h3>Integrity detection boundaries</h3>
-<p>This file is <strong>not generically tamper-evident</strong>. It has an unkeyed, self-contained hash chain with no external anchor. The tested boundaries are:</p>
+<p>测试覆盖 canonical JSON 接受/拒绝边界与 Unicode 行为、固定 SHA-256 向量、确定性链生成、明确的修改/截断边界、真实双进程追加竞争、原文排除、两个 feed 的重复观察、失败隔离、安全默认路径、真实 Cordis 挂载/事件/卸载、构建产物加载、publint、精确 pack 清单、从 tarball 安装/导入/挂载，以及固定 commit 且与上游逐字节相同的官方 <code>applyEntryPatches</code> 组合语义。</p>
+<h3>完整性检测边界</h3>
+<p>该文件<strong>不具备宽泛意义上的 tamper-evident 保证</strong>。它只是没有密钥、没有外部锚点的自包含哈希链。已测试边界如下：</p>
 <table>
 <thead>
 <tr>
-<th>Scenario</th>
-<th>Detected?</th>
-<th>Exact boundary</th>
+<th>场景</th>
+<th>能否检测</th>
+<th>精确边界</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Edit a retained line or link</td>
-<td>Yes, at verification/startup</td>
-<td>Unless an attacker recomputes that line and every following hash.</td>
+<td>修改保留行或链路</td>
+<td>能，在验证/启动时</td>
+<td>若攻击者重算该行及其后所有哈希，则可绕过。</td>
 </tr>
 <tr>
-<td>Remove an untouched prefix</td>
-<td>Yes, at verification/startup</td>
-<td>The first remaining sequence/link no longer starts at <code>0</code>/<code>null</code>; rewritten and re-chained files can evade this.</td>
+<td>删除未改写的文件前缀</td>
+<td>能，在验证/启动时</td>
+<td>剩余首行不再以序号 <code>0</code>/前序 <code>null</code> 开始；若改写并重建链则可绕过。</td>
 </tr>
 <tr>
-<td>Leave a partial final line</td>
-<td>Yes, at verification/startup</td>
-<td>A non-empty file must end with a newline after a complete JSON record.</td>
+<td>尾部留下半行</td>
+<td>能，在验证/启动时</td>
+<td>非空文件必须以完整 JSON 记录后的换行结尾。</td>
 </tr>
 <tr>
-<td>Delete the whole file</td>
-<td><strong>No</strong></td>
-<td>Re-creation is indistinguishable from first use without an external anchor.</td>
+<td>删除整份文件</td>
+<td><strong>不能</strong></td>
+<td>没有外部锚点时，重建文件与首次使用无法区分。</td>
 </tr>
 <tr>
-<td>Remove a complete suffix</td>
-<td><strong>No</strong></td>
-<td>The shorter retained prefix remains a valid chain.</td>
+<td>删除完整后缀</td>
+<td><strong>不能</strong></td>
+<td>保留下来的较短前缀仍是有效链。</td>
 </tr>
 <tr>
-<td>Two processes append one file</td>
-<td>Not prevented</td>
-<td>There is no cross-process lock. The adversarial test makes two processes open the same head; later verification rejects the resulting duplicate/stale sequence. Use a separate file per process.</td>
+<td>两个进程写同一文件</td>
+<td>不会阻止</td>
+<td>没有跨进程锁。对抗测试让两个进程从同一链头打开，事后验证会拒绝重复/陈旧序号；每个进程必须使用独立文件。</td>
 </tr>
 <tr>
-<td>Attacker rewrites and re-chains records</td>
-<td><strong>No</strong></td>
-<td>SHA-256 is unkeyed and the file carries no trusted signature/checkpoint.</td>
+<td>攻击者改写并重建整条链</td>
+<td><strong>不能</strong></td>
+<td>SHA-256 无密钥，文件内也没有可信签名或 checkpoint。</td>
 </tr>
 </tbody></table>
-<h3>Known limitations and remaining risks</h3>
+<h3>已知限制与剩余风险</h3>
 <ul>
-<li>Hashes do not prove author identity and provide neither a digital signature nor a checkpoint anchored outside the host.</li>
-<li>A completed <code>writeSync</code> is not an <code>fsync</code> durability guarantee. A power loss or kernel/storage failure can lose the last receipt.</li>
-<li>Multiple DSH processes must not write the same file concurrently. Detection occurs only on a later verification and is not recovery; use one output file per process/profile.</li>
-<li>Startup verification is linear in the existing file size, and synchronous append I/O adds latency to the event publisher.</li>
-<li>POSIX modes do not express full Windows ACL policy. Verify ACLs for sensitive deployments.</li>
-<li>The plugin observes live publications after it mounts. Constructor seed/replay events that DSH deliberately does not publish on <code>session/event</code> are not backfilled.</li>
-<li>The compatibility smoke did not perform a model-backed DSH turn: the pinned shallow checkout had no installed/built workspace dependencies or API credential. It did exercise the real Cordis runtime and the official bundle patch parser/application semantics.</li>
+<li>哈希不能证明作者身份，既不是数字签名，也没有锚定在主机外部的 checkpoint。</li>
+<li><code>writeSync</code> 成功不等于 <code>fsync</code> 持久化保证；断电或内核/存储故障可能丢失最后一条 receipt。</li>
+<li>多个 DSH 进程不得并发写入同一个文件。检测只发生在后续验证且不等于恢复；请为每个进程/profile 配置独立输出文件。</li>
+<li>启动验证成本与已有文件大小线性相关，同步追加 I/O 会给事件发布者增加延迟。</li>
+<li>POSIX mode 无法完整表达 Windows ACL 策略；敏感部署需要另行核对 ACL。</li>
+<li>插件只观察挂载后的实时发布。DSH 按设计不在 <code>session/event</code> 发布的构造 seed/replay 事件不会被回填。</li>
+<li>组合烟测未执行依赖模型的完整 DSH turn：固定浅克隆没有安装/构建工作区依赖，也没有 API 凭据。测试已覆盖真实 Cordis runtime 与官方 bundle patch 解析/应用语义。</li>
 </ul>
-<h3>Project links</h3>
+<h3>项目链接</h3>
 <ul>
-<li><a href="https://github.com/030611/qiushi-dsh-evidence-audit">GitHub repository</a></li>
-<li><a href="https://www.npmjs.com/package/qiushi-dsh-evidence-audit">npm package</a></li>
-<li><a href="https://github.com/030611/qiushi-dsh-evidence-audit/releases/tag/v0.1.0">v0.1.0 release notes</a></li>
+<li><a href="https://github.com/030611/qiushi-dsh-evidence-audit">GitHub 仓库</a></li>
+<li><a href="https://www.npmjs.com/package/qiushi-dsh-evidence-audit">npm 包</a></li>
+<li><a href="https://github.com/030611/qiushi-dsh-evidence-audit/releases/tag/v0.1.0">v0.1.0 发布说明</a></li>
 </ul>
-<h3>License</h3>
+<h3>许可证</h3>
 <p><a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/030611/qiushi-dsh-evidence-audit/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

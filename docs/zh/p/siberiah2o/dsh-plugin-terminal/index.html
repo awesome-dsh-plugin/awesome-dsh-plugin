@@ -192,42 +192,42 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>Bottom terminal panel for the DeepSeek Harness (DSH) Web GUI — an interactive multi-tab shell pinned to the bottom of the page (ConPTY on Windows, openpty on Linux/macOS).</p>
-<p><a href="https://github.com/siberiah2o/dsh-plugin-terminal/blob/main/README.zh.md">中文</a> · MIT</p>
-<h3>Install</h3>
+<p>DeepSeek Harness (DSH) Web GUI 的底部终端面板插件 —— 在页面底部挂一个真正可交互的多标签 shell（Windows 走 ConPTY，Linux/macOS 走 openpty）。</p>
+<p><a href="https://github.com/siberiah2o/dsh-plugin-terminal/blob/main/README.md">English</a> · MIT</p>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-plugin-terminal &amp;&amp; dsh web
 </code></pre>
 <blockquote>
-<p>Note: this is a DSH (DeepSeek Harness) plugin — do <strong>not</strong> use plain <code>npm i dsh-plugin-terminal</code>; it must be installed through <code>dsh plugin</code> to activate.</p>
+<p>注意：这是 DSH（DeepSeek Harness）插件——<strong>不要</strong>用普通 <code>npm i dsh-plugin-terminal</code>，必须通过 <code>dsh plugin</code> 安装才会被加载。</p>
 </blockquote>
-<h3>Screenshots</h3>
+<h3>截图</h3>
 <table>
 <thead>
 <tr>
-<th>Collapsed</th>
-<th>Expanded</th>
-<th>Multi-tab</th>
+<th>折叠</th>
+<th>展开</th>
+<th>多标签</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-collapsed.png" alt="collapsed"></td>
-<td><img src="https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-panel.png" alt="panel"></td>
-<td><img src="https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-multitab.png" alt="multitab"></td>
+<td><img src="https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-collapsed.png" alt="折叠"></td>
+<td><img src="https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-panel.png" alt="展开"></td>
+<td><img src="https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-multitab.png" alt="多标签"></td>
 </tr>
 </tbody></table>
-<h3>Features</h3>
+<h3>说明</h3>
 <ul>
-<li>Bottom panel pinned to the viewport, aligned with the conversation column; the input box always stays above the terminal</li>
-<li>`Ctrl+`` toggles; drag the top grip to resize (120px–78% viewport, remembered)</li>
-<li>Multi-tab: <code>+</code> new, ✕ close, ⟳ restart; processes keep running on tab switch; live sessions restore after refresh</li>
-<li>xterm.js 6: colors, blinking cursor, alternate screen, Unicode, 5000-line scrollback</li>
-<li>WebSocket duplex channel to the PTY; dark terminal surface in both light and dark themes</li>
+<li>底部终端面板：贴底固定，宽度对齐对话列；输入框始终在终端上方</li>
+<li>`Ctrl+`` 展开/收起；拖拽顶部 grip 调整高度（120px–78% 视口，自动记忆）</li>
+<li>多标签：<code>+</code> 新建、✕ 关闭、⟳ 重启；切 tab 不中断进程，刷新自动恢复会话</li>
+<li>xterm.js 6：颜色、闪烁光标、备用屏幕、Unicode、5000 行回滚</li>
+<li>WebSocket 直连 PTY，低延迟；深浅主题下终端颜色均可读</li>
 </ul>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/siberiah2o/dsh-plugin-terminal/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/siberiah2o/dsh-plugin-terminal/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

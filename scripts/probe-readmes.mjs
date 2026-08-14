@@ -44,6 +44,28 @@ async function gh(path) {
   return res.json()
 }
 
+// crude language sniff: CJK-heavy → zh
+const langOf = (md) => {
+  const cjk = (md.match(/[一-鿿]/g) || []).length
+  return cjk / Math.max(md.length, 1) > 0.03 ? 'zh' : 'en'
+}
+
+// counterpart filename candidates, tried in the same directory as the default README
+const ZH_NAMES = ['README.zh.md', 'README.zh-CN.md', 'README_zh.md', 'README_zh-CN.md', 'README-zh.md', 'README.cn.md', 'README_CN.md', 'docs/README.zh.md', 'docs/i18n/README.zh-CN.md']
+const EN_NAMES = ['README.en.md', 'README_EN.md', 'README-en.md', 'README.en-US.md', 'docs/README.en.md']
+
+function pack(data, repo) {
+  let md = Buffer.from(data.content, 'base64').toString('utf8')
+  if (md.length > MAX_BYTES) md = md.slice(0, MAX_BYTES) + '\n\n…'
+  // html_url: https://github.com/o/r/blob/<branch>/<path-to-readme>
+  const m = data.html_url.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/blob\/([^/]+)\/(.*)$/)
+  const branch = m ? m[2] : 'main'
+  const dir = m ? m[3].split('/').slice(0, -1).join('/') : ''
+  const base = `https://raw.githubusercontent.com/${repo}/${branch}/${dir ? dir + '/' : ''}`
+  const blobBase = `https://github.com/${repo}/blob/${branch}/${dir ? dir + '/' : ''}`
+  return { md, htmlUrl: data.html_url, base, blobBase, fetchedAt: today }
+}
+
 async function probe(url) {
   const repoPath = url.replace('https://github.com/', '').replace(/\/$/, '')
   const repo = repoPath.split('/').slice(0, 2).join('/')
@@ -56,15 +78,26 @@ async function probe(url) {
     } else {
       data = await gh(`/repos/${repo}/readme`)
     }
-    let md = Buffer.from(data.content, 'base64').toString('utf8')
-    if (md.length > MAX_BYTES) md = md.slice(0, MAX_BYTES) + '\n\n…'
-    // html_url: https://github.com/o/r/blob/<branch>/<path-to-readme>
-    const m = data.html_url.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/blob\/([^/]+)\/(.*)$/)
-    const branch = m ? m[2] : 'main'
-    const dir = m ? m[3].split('/').slice(0, -1).join('/') : ''
-    const base = `https://raw.githubusercontent.com/${repo}/${branch}/${dir ? dir + '/' : ''}`
-    const blobBase = `https://github.com/${repo}/blob/${branch}/${dir ? dir + '/' : ''}`
-    return { md, htmlUrl: data.html_url, base, blobBase, fetchedAt: today }
+    const main = pack(data, repo)
+    const mainLang = langOf(main.md)
+    const out = { [mainLang]: main, fetchedAt: today }
+
+    // look for the other language next to the default README
+    const dir = main.htmlUrl.replace(/^https:\/\/github\.com\/[^/]+\/[^/]+\/blob\/[^/]+\//, '').split('/').slice(0, -1).join('/')
+    const names = mainLang === 'en' ? ZH_NAMES : EN_NAMES
+    const otherLang = mainLang === 'en' ? 'zh' : 'en'
+    for (const name of names) {
+      const path = dir ? `${dir}/${name}` : name
+      try {
+        const alt = await gh(`/repos/${repo}/contents/${path}`)
+        if (alt.content) {
+          const packed = pack(alt, repo)
+          // trust the sniff over the filename — some "zh" files are English stubs
+          if (langOf(packed.md) === otherLang) { out[otherLang] = packed; break }
+        }
+      } catch { /* candidate absent */ }
+    }
+    return out
   } catch {
     return null // keep the previous entry
   }

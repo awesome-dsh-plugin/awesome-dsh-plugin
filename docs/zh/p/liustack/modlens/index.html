@@ -192,196 +192,200 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>The flagship DeepSeek and GLM chat models are text-only and cannot read images. ModLens is a plug-in vision engine that gives a text-only model sight. <strong>ModLens reads images pasted straight into the chat</strong>, no saving to a file and passing a path first.</p>
-<h3>Talk to us</h3>
-<p>Issues are welcome any time: <a href="https://github.com/liustack/modlens/issues/new/choose">open one</a>. And come find me on X: <strong><a href="https://x.com/liustack">@liustack</a></strong>. What you built with it, which harness you are on, what should come next. New releases land there first, and a proper community space is on the way.</p>
-<h3>Highlights</h3>
-<p><strong>🥇 The first vision plugin for DeepSeek Harness (dsh):</strong> one command, <code>npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modlens@latest</code>, and the text-only DeepSeek model behind dsh reads images through a native <code>read_image</code> tool. If dsh warns <code>declares no dsh.bundle</code>, pnpm&#39;s release-age gate installed an old version: see <a href="https://github.com/liustack/modlens/blob/main/docs/troubleshooting.md#dsh-says-declares-no-dshbundle--installed-as-a-plain-dependency">troubleshooting</a> for the one-line fix.</p>
-<p>Pasting an image works two ways. <strong>① Just paste.</strong> On a text-only model the pasted image lands as a private temp file and its path enters the composer — the same interaction OpenCode and Pi ship — and the <code>read_image</code> tool takes it from there. <strong>② Pick a <code>(modlens vision)</code> entry</strong> in the model selector (it remembers your choice, so once is enough), then paste: the thumbnail stays visible in your message, closer to the Codex app feel, and the image is converted to structured evidence at request time, answered by the same underlying route. The plugin auto-discovers every provider route carrying text-only DeepSeek or GLM models and adds a wrapped entry per route (a stock install gets <strong><code>DeepSeek-V4-Flash (modlens vision)</code></strong> and <strong><code>DeepSeek-V4-Pro (modlens vision)</code></strong>; extra routes like opencode-go or zai get their own); the two families&#39; own vision models are excluded automatically. Which paste route applies is the host&#39;s per-model call: only a model its metadata positively confirms text-only is taken over, anything unconfirmed is left alone, so vision models keep their native paste (<a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.md">details</a>).</p>
-<p><strong>Paste an image and it reads it.</strong> No saving to a file and passing a path first.</p>
+<p>DeepSeek 和 GLM 的主力对话模型是纯文本的，无法进行图片识别。ModLens 借助外挂视觉引擎，为纯文本模型补上视觉能力。<strong>ModLens 支持直接粘贴图片识别</strong>，无需先保存成文件再提供路径。</p>
+<h3>交流</h3>
+<p>欢迎随时提<a href="https://github.com/liustack/modlens/issues/new/choose">issue</a>。也欢迎来 X 上聊：<strong><a href="https://x.com/liustack">@liustack</a></strong>，你用它做了什么、在哪个 harness 上跑、接下来该做什么，新版本也是那边先发。社群正在筹备中。</p>
+<h3>亮点</h3>
+<p>**🥇 全网第一个支持 DeepSeek Harness（dsh）的外挂视觉识别插件：**一条命令 <code>npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modlens@latest</code>，dsh 背后的纯文本 DeepSeek 模型即可通过原生 <code>read_image</code> 工具读图。如果 dsh 提示 <code>declares no dsh.bundle</code>，是 pnpm 的发布冷静期装了旧版，一行命令可解，见<a href="https://github.com/liustack/modlens/blob/main/docs/troubleshooting.zh-CN.md#dsh-%E6%8F%90%E7%A4%BA-declares-no-dshbundle--installed-as-a-plain-dependency">故障排查</a>。</p>
+<p>DeepSeek Harness 粘贴识图有两种玩法。</p>
+<p><strong>① 直接粘贴</strong> 贴进来的图片自主转换成文件路径进输入框（与 OpenCode、Pi 同款交互），<code>read_image</code> 工具接手读图。</p>
+<p><strong>② 切到带 <code>(modlens vision)</code> 后缀的模型变体</strong>（选择器有记忆，选一次就行）再粘贴：缩略图直接可见、所见即所得，体验更接近 Codex App。变体由插件自动发现生成：每条承载纯文本 DeepSeek 或 GLM 模型的 provider 路由各得一组包装条目（默认安装下就是 <strong><code>DeepSeek-V4-Flash (modlens vision)</code></strong> 和 <strong><code>DeepSeek-V4-Pro (modlens vision)</code></strong>，装了 opencode-go、zai 等额外路由的机器会各自多出一组），两家自己的视觉型号自动排除。走哪条通路由 host 依据真实模型元数据逐个裁决：只有被元数据确认纯文本的模型才会被接管，确认不了的一律不动，视觉模型因此保留原生贴图（<a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.zh-CN.md">细节</a>）。</p>
+<p><strong>直接粘贴图片识别</strong> 无需先保存成文件再提供路径。</p>
 <ul>
-<li><strong>The lightest touch on the market.</strong> No hooks, no wrappers, no local proxy daemon, not a single line changed in any harness config: on the skill harnesses it is exactly one skill folder, on dsh exactly one plugin. Uninstalling is deleting a folder, and your agents are back to stock.</li>
-<li><strong>Zero-config start.</strong> Reuses what Claude Code, Codex, OpenCode, or Pi already have set up: the multimodal models on your machine go straight to work. Nothing at all? Antigravity CLI is a free no-key channel, and a free Gemini key brings a read down to 5-10 seconds.</li>
-<li><strong>Evidence, not imagination.</strong> Full transcription, reading-order layout regions, entity and relation lists. The model quotes specifics.</li>
-<li><strong>Install once, use everywhere.</strong> Verified on real machines in Claude Code, Codex, Pi, and OpenCode.</li>
+<li><strong>全网最轻量。</strong> 不用 hook，不套壳，不跑本地代理进程，不改任何 harness 配置的一行字：在 skill 类 harness 里它就是一个 skill 文件夹，在 dsh 里就是一个插件。卸载等于删个文件夹，你的 agent 立刻回到原样。</li>
+<li><strong>零配置起手。</strong> 复用 Claude Code、Codex、OpenCode、Pi 已配置，直接复用你本机的其他多模态模型。什么都没有？Antigravity CLI 是免 key 的免费通道，配一个免费 Gemini key 可将识别耗时降至 5 到 10 秒。</li>
+<li><strong>基于证据而非想象。</strong> 全文转录、按阅读顺序划分的版面区块、实体与关系列表，模型引用的是具体内容。</li>
+<li><strong>一次安装，多端可用。</strong> Claude Code、Codex、Pi、OpenCode 均经真机验证。</li>
 </ul>
-<h3>Installation</h3>
-<p><strong>Step 1, hand it to your AI.</strong> Send it this line:</p>
+<h3>安装</h3>
+<p><strong>第一步，交给你的 AI。</strong> 把这句话发给它：</p>
 <blockquote>
-<p>Install and configure the modlens skill following <a href="https://github.com/liustack/modlens/blob/main/INSTALL.md">https://github.com/liustack/modlens/blob/main/INSTALL.md</a>, then run the health check and tell me the result.</p>
+<p>按 <a href="https://github.com/liustack/modlens">https://github.com/liustack/modlens</a> 的 INSTALL.md 安装并配置 modlens skill，完成后运行体检并把结果告诉我。</p>
 </blockquote>
-<p>The install starts by checking what your machine already has. An existing login in Claude Code, Codex, OpenCode, or Pi can be enough: modlens asks before reusing any of them, and the health check tells you where things stand.</p>
-<p><strong>Step 2, only if the health check comes back empty, set up a free engine.</strong> The recommended choice is a free Gemini API key (about three minutes at <a href="https://aistudio.google.com">Google AI Studio</a>, no credit card), which also makes every read 5-10 seconds. A free OpenAI-compatible key from another platform works too. To avoid any sign-up, install Antigravity CLI instead, then sign in:</p>
+<p>安装会先盘点你机器上已有的东西。Claude Code、Codex、OpenCode 或 Pi 里任何一个已有的登录态都可能就够了：modlens 复用前一定先征得你同意，体检报告会说清现状。</p>
+<p><strong>第二步，只在体检两手空空时，才需要你配一个免费引擎。</strong> 推荐免费的 Gemini api key（到 <a href="https://aistudio.google.com">Google AI Studio</a> 领取，约三分钟，无需信用卡），配上后每次识别 5 到 10 秒。其他平台的免费 openai 兼容 key 也行。想完全免注册就装 Antigravity CLI，然后完成登录：</p>
 <pre><code class="language-bash">curl -fsSL https://antigravity.google/cli/install.sh | bash
-agy                                                           # sign in, then exit
+agy                                                           # 浏览器完成登录后退出
 </code></pre>
-<p>The install also inventories vision reachable through your other local harness CLIs (Codex, OpenCode, Pi) and asks, per harness, whether modlens may reuse it. Granted logins join the engine pool as equals, and every reused read is labeled with whose quota it spent.</p>
-<h3>Usage</h3>
-<p>Once installed, just chat. Paste an image or drop a path, ask anything, and the skill triggers on its own: the image goes to a vision engine and the answer comes back grounded in what it read.</p>
-<h3>Vision engines: five built-in providers, four reusable CLIs, one failover chain</h3>
-<p>ModLens does not depend on any single vision service. Nine sources of vision in total: five built-in providers, any one of which is enough, plus four local agent CLIs whose logins can be reused. The built-ins:</p>
+<p>安装还会盘点本机其他 harness CLI（Codex、OpenCode、Pi）里可触达的视觉能力，并逐个询问是否允许 modlens 复用。获准的登录态与你自己配的引擎平级入池，每次复用都会在结果里标明花的是谁的额度。</p>
+<p><strong>DeepSeek Harness（dsh）用户不走 skill 流程</strong>，本包就是原生 dsh 插件：</p>
+<pre><code class="language-sh">npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modlens@latest
+</code></pre>
+<p>装完即有 <code>read_image</code> 工具，选「(modlens vision)」模型变体即可直接粘贴识图。引擎配置同样在 <code>~/.modlens</code>，详见<a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.zh-CN.md">宿主接入</a>。</p>
+<h3>用法</h3>
+<p>装好之后不需要记任何命令。正常聊天，粘贴图片或给出图片路径，提问即可，skill 自动触发：图片交给视觉引擎，答案基于读到的内容返回。</p>
+<h3>视觉引擎：五个内置 provider，四家可复用 CLI，一条故障转移链</h3>
+<p>ModLens 不绑定任何单一视觉服务。视觉来源一共九个：五个内置 provider（配好任意一个就能用），加四家本机 agent CLI 的登录可以复用。先看内置的：</p>
 <table>
 <thead>
 <tr>
 <th align="left">Provider</th>
-<th align="left">What it needs</th>
-<th align="left">Speed per read</th>
-<th align="left">Good for</th>
+<th align="left">需要什么</th>
+<th align="left">单次识别耗时</th>
+<th align="left">适合谁</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="left"><code>gemini-api</code></td>
-<td align="left">a free Gemini API key (<a href="https://aistudio.google.com">3 minutes, no card</a>)</td>
-<td align="left">5-10s</td>
-<td align="left">the recommended default</td>
+<td align="left">免费 Gemini key（<a href="https://aistudio.google.com">三分钟领取，无需信用卡</a>）</td>
+<td align="left">5-10 秒</td>
+<td align="left">推荐默认</td>
 </tr>
 <tr>
 <td align="left"><code>openai</code></td>
-<td align="left">any OpenAI-compatible endpoint (key + baseUrl + model)</td>
-<td align="left">5-10s</td>
-<td align="left">qwen-vl, GLM, self-hosted gateways</td>
+<td align="left">任意 OpenAI 兼容端点（key + baseUrl + model）</td>
+<td align="left">5-10 秒</td>
+<td align="left">qwen-vl、GLM、自建网关</td>
 </tr>
 <tr>
 <td align="left"><code>anthropic</code></td>
-<td align="left">an Anthropic API key</td>
-<td align="left">5-10s</td>
-<td align="left">machines already holding one</td>
+<td align="left">Anthropic API key</td>
+<td align="left">5-10 秒</td>
+<td align="left">手上已有 key 的机器</td>
 </tr>
 <tr>
 <td align="left"><code>antigravity-cli</code></td>
-<td align="left">the free <code>agy</code> CLI, one browser sign-in, no key</td>
-<td align="left">15-45s</td>
-<td align="left">zero-signup starts</td>
+<td align="left">免费的 <code>agy</code> CLI，浏览器登录一次，无需 key</td>
+<td align="left">15-45 秒</td>
+<td align="left">完全免注册起步</td>
 </tr>
 <tr>
 <td align="left"><code>claude-cli</code></td>
-<td align="left">a signed-in Claude Code</td>
-<td align="left">20-45s</td>
-<td align="left">riding your existing Claude subscription</td>
+<td align="left">已登录的 Claude Code</td>
+<td align="left">20-45 秒</td>
+<td align="left">复用现有 Claude 订阅</td>
 </tr>
 </tbody></table>
-<p>Without a pinned provider, every configured engine forms one failover chain: the fast API providers try first, the agent CLIs back them up, the first good result wins, and <code>meta.attempts</code> records every attempt so a fallback is never silent.</p>
-<h4><code>openai</code> is a universal socket, not just OpenAI</h4>
-<p>Any endpoint speaking the OpenAI chat-completions protocol with image input plugs straight in — that covers most of the vision-model world:</p>
+<p>不钉死 provider 时，所有配好的引擎组成一条故障转移链：API 快车道先试，agent CLI 兜底，第一个可用结果胜出，<code>meta.attempts</code> 记录每次尝试，回退永远不是无声的。</p>
+<h4><code>openai</code> 是万能接口，不只是 OpenAI</h4>
+<p>任何讲 OpenAI chat-completions 协议、支持图片输入的端点都能直接插上，这基本覆盖了视觉模型的大半个世界：</p>
 <pre><code class="language-bash">modlens config set openai.baseUrl https://dashscope.aliyuncs.com/compatible-mode/v1   # qwen-vl
 modlens config set openai.apiKey  &lt;key&gt;
 modlens config set openai.model   qwen3-vl-plus
 </code></pre>
-<p>The same three keys work for GLM&#39;s open platform, SiliconFlow, OpenRouter, a self-hosted vLLM/Ollama, or any gateway of your own. If your favorite vision model has an OpenAI-compatible API, ModLens can drive it.</p>
-<h4>Reusing what your machine already has</h4>
-<p>Two more sources of vision need zero new keys, each behind one explicit consent recorded in config:</p>
+<p>同样三个键，换成 GLM 开放平台、SiliconFlow、OpenRouter、自建 vLLM/Ollama 或你自己的网关都一样。你常用的视觉模型只要有 OpenAI 兼容 API，ModLens 就能驱动它。</p>
+<h4>复用你机器上已有的东西</h4>
+<p>还有两处现成的视觉能力，一个新 key 都不用配，每家都在你明确同意后才启用：</p>
 <ul>
-<li><strong>The harness you are talking in right now.</strong> Running inside Claude Code with a subscription signed in? <code>claude-cli</code> reads images through it out of the box. The install flow asks the same question for whichever harness you install into.</li>
-<li><strong>Every other agent CLI on the machine.</strong> <code>modlens doctor</code> discovers them, you grant per harness, and they join the same failover chain with no priority over your own keys. Every reused read is labeled in <code>meta.warnings</code> with whose quota it spent, so nothing is ever silently billed:</li>
+<li>**你正在对话的这个 harness 本身。**在登录了订阅的 Claude Code 里用？<code>claude-cli</code> 开箱即可借它读图。装进哪个 harness，安装流程就会问哪个 harness 的授权。</li>
+<li><strong>机器上其他的 agent CLI。</strong><code>modlens doctor</code> 会逐个发现，你按家授权，它们与你自己的 key 平级入链，不插队。每次复用都在 <code>meta.warnings</code> 里标明花的是谁的额度，绝不无声扣费：</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th align="left">Reused CLI</th>
-<th align="left">What it needs</th>
-<th align="left">Grant with</th>
-<th align="left">Rides as</th>
+<th align="left">复用来源</th>
+<th align="left">需要什么</th>
+<th align="left">授权命令</th>
+<th align="left">走哪条道</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="left">Codex</td>
-<td align="left">a signed-in Codex CLI with a vision model</td>
+<td align="left">已登录且有视觉模型的 Codex CLI</td>
 <td align="left"><code>config set reuse.codex true</code></td>
-<td align="left">agent lane, 15-45s</td>
+<td align="left">agent 通道，15-45 秒</td>
 </tr>
 <tr>
 <td align="left">OpenCode</td>
-<td align="left">a vision model configured in OpenCode</td>
+<td align="left">OpenCode 里配好的视觉模型</td>
 <td align="left"><code>config set reuse.opencode true</code></td>
-<td align="left">agent lane, 15-45s</td>
+<td align="left">agent 通道，15-45 秒</td>
 </tr>
 <tr>
 <td align="left">Pi</td>
-<td align="left">model credentials held by Pi</td>
+<td align="left">Pi 持有的模型凭据</td>
 <td align="left"><code>config set reuse.pi true</code></td>
-<td align="left">an API key upgrades to the 5-10s inline lane, OAuth drives Pi itself</td>
+<td align="left">API key 直接升级到 5-10 秒的快车道，OAuth 驱动 Pi 本体</td>
 </tr>
 <tr>
 <td align="left">Grok</td>
-<td align="left">a signed-in Grok CLI (SuperGrok)</td>
+<td align="left">已登录的 Grok CLI（SuperGrok）</td>
 <td align="left"><code>config set reuse.grok true</code></td>
-<td align="left">agent lane, 15-45s</td>
+<td align="left">agent 通道，15-45 秒</td>
 </tr>
 </tbody></table>
-<h4>Picking and routing</h4>
-<p>Two knobs: <code>modlens config set provider &lt;name&gt;</code> states a preference (the chain still backs it up), <code>-p &lt;name&gt;</code> pins exactly one with no fallback. Machines behind a proxy set <code>HTTPS_PROXY</code> or <code>modlens config set proxy &lt;url&gt;</code> and the API providers route through it. Details: the <a href="https://github.com/liustack/modlens/blob/main/docs/cli.md">CLI manual</a> for defaults and flags, <a href="https://github.com/liustack/modlens/blob/main/skills/modlens/references/configure.md">Configuration</a> for every key, and <a href="https://github.com/liustack/modlens/blob/main/docs/security.md">Security</a> for who fetches what on remote URLs.</p>
-<h3>See it work</h3>
-<p>Unedited runs, all driving a text-only DeepSeek-V4-Flash.</p>
-<p>The newest one first: pasting a screenshot straight into DeepSeek Harness on the <code>DeepSeek-V4-Flash (modlens vision)</code> variant. The paste keeps its native thumbnail, the trajectory shows the image arriving &quot;already transcribed by the modlens vision bridge&quot;, and the answer walks the UI element by element.</p>
-<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-dsh-paste.jpg" alt="Pasting an image straight into DeepSeek Harness, read through the modlens vision plugin"></p>
-<p>A tweet screenshot in the Codex desktop app. It reads the author, the caption, the photo itself (down to what both people are wearing), the timestamp, and every engagement number: 5.4M views, 1.6K replies, 5.7K reposts, 116K likes.</p>
-<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-app.jpg" alt="Text-only DeepSeek reading a tweet screenshot in full detail via ModLens"></p>
-<p>Three images pasted at once. The model reads them one by one, spots that they belong to one visual family, and describes each illustration&#39;s content and style.</p>
-<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-batch.jpg" alt="Three images dropped together, read one by one"></p>
-<p>The stress test: a scatter plot comparing 128 AI models. It reads both axes, the log scale, the per-provider color coding, the highlighted region, and every DeepSeek model called out with dashed markers. Dense charts are where vision bridges most often fail.</p>
-<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-chart.jpg" alt="The 128-model scatter plot read in full: axes, log scale, and highlighted region"></p>
-<p>And the paste path, end to end, in a Claude Code terminal on DeepSeek. The pasted image arrives as a path rather than pixels, the skill triggers on its own, the guard confirms the model truly has no vision, and the slide&#39;s full content comes back: titles, layout, background, plus an honestly stated uncertainty about the truncated filename.</p>
-<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-claude-paste-recovery.jpg" alt="The skill triggering on its own in a DeepSeek Claude Code session and reading a pasted slide"></p>
-<h3>Documentation</h3>
+<h4>选择与路由</h4>
+<p>两个旋钮：<code>modlens config set provider &lt;name&gt;</code> 表达偏好（链继续兜底），<code>-p &lt;name&gt;</code> 钉死单个不回退。代理环境设 <code>HTTPS_PROXY</code> 或 <code>modlens config set proxy &lt;url&gt;</code>，API provider 自动走代理。细节见 <a href="https://github.com/liustack/modlens/blob/main/docs/cli.zh-CN.md">CLI 手册</a>（默认模型与参数）、<a href="https://github.com/liustack/modlens/blob/main/skills/modlens/references/configure.zh-CN.md">配置手册</a>（全部配置键）、<a href="https://github.com/liustack/modlens/blob/main/docs/security.zh-CN.md">安全说明</a>（远程 URL 由谁抓取）。</p>
+<h3>实测</h3>
+<p>以下均为原样记录，驱动的都是纯文本的 DeepSeek-V4-Flash。</p>
+<p>最新的一条放最前：在 DeepSeek Harness 里选 <code>DeepSeek-V4-Flash (modlens vision)</code> 变体直接粘贴截图。粘贴保留原生缩略图，轨迹里可见图片抵达时「已由 modlens 视觉桥转写」，回答逐个元素还原了界面。</p>
+<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-dsh-paste.jpg" alt="在 DeepSeek Harness 中直接粘贴图片，经 modlens 视觉插件读取"></p>
+<p>Codex 桌面 App 中识别一张推文截图。作者、配文、照片内容（连两人的穿着都在内）、发帖时间和全部互动数据（540 万浏览、1.6K 回复、5.7K 转发、11.6 万点赞）逐项读出。</p>
+<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-app.jpg" alt="纯文本 DeepSeek 通过 ModLens 读出推文截图的全部细节"></p>
+<p>一次粘贴三张图。模型逐张读取，认出三张同属一个视觉家族，并分别描述每张插画的内容和风格。</p>
+<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-batch.jpg" alt="一次粘贴三张图，逐张读取"></p>
+<p>压力测试：128 个模型的对比散点图。双轴定义、对数刻度、按厂商的配色、高亮区域，以及虚线标注的每一个 DeepSeek 型号全部识别。密集图表是视觉方案最容易出错的场景。</p>
+<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-chart.jpg" alt="128 个模型的散点图完整读出：双轴、对数刻度与高亮区域"></p>
+<p>粘贴链路的端到端记录：接入 DeepSeek 的 Claude Code 终端里，粘贴的图片以路径而非像素到达，skill 自动触发，guard 确认当前模型确实没有视觉后才开读，PPT 封面幻灯的标题、版式、背景逐项读出，连文件名被截断这个不确定点都如实说明。</p>
+<p><img src="https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-claude-paste-recovery.jpg" alt="接入 DeepSeek 的 Claude Code 会话中 skill 自动触发并读出粘贴的幻灯片"></p>
+<h3>文档</h3>
 <table>
 <thead>
 <tr>
-<th align="left">Doc</th>
-<th align="left">Read it when</th>
+<th align="left">文档</th>
+<th align="left">适用场景</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/INSTALL.md">Install guide</a></td>
-<td align="left">Installing the skill step by step (written for an agent)</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/INSTALL.md">安装手册</a></td>
+<td align="left">一步步安装 skill（为 agent 编写）</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/cli.md">CLI manual</a></td>
-<td align="left">The CLI the skill drives: flags, config, doctor</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/cli.zh-CN.md">CLI 手册</a></td>
+<td align="left">skill 所驱动的 CLI：参数、配置与体检</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/troubleshooting.md">Troubleshooting</a></td>
-<td align="left">A command failed and the message needs decoding</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/troubleshooting.zh-CN.md">故障排查</a></td>
+<td align="left">命令报错，查成因和解法</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/skills/modlens/references/configure.md">Configuration</a></td>
-<td align="left">Setting a key, switching providers, fixing config</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/skills/modlens/references/configure.zh-CN.md">配置手册</a></td>
+<td align="left">配置 key、切换 provider、排查配置</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/output-schema.md">Output contract</a></td>
-<td align="left">Parsing the JSON or building on it</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/output-schema.zh-CN.md">输出契约</a></td>
+<td align="left">解析 JSON 或构建下游工具</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.md">Harness setup</a></td>
-<td align="left">Wiring it into Codex, Claude Code, Pi, or OpenCode</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.zh-CN.md">宿主接入</a></td>
+<td align="left">在 Codex、Claude Code、Pi、OpenCode 中配置</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/security.md">Security</a></td>
-<td align="left">File permissions, image content as untrusted input</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/docs/security.zh-CN.md">安全说明</a></td>
+<td align="left">恢复文件的权限、图片内容作为不可信输入</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/liustack/modlens/blob/main/CHANGELOG.md">CHANGELOG</a></td>
-<td align="left">Finding what changed in a version</td>
+<td align="left"><a href="https://github.com/liustack/modlens/blob/main/CHANGELOG.md">更新日志</a></td>
+<td align="left">查询版本变更</td>
 </tr>
 </tbody></table>
-<h3>Contributing</h3>
-<p>ModLens does not accept pull requests. The project is maintained by a single author who reviews every line, which is a deliberate choice for reliability. Two effective ways to contribute:</p>
+<h3>参与方式</h3>
+<p>本仓库不接受 PR。项目由作者独立维护，所有代码经作者本人审阅，这是它可靠性的前提。两种有效的参与方式：</p>
 <ul>
-<li><strong><a href="https://github.com/liustack/modlens/issues">Open an issue</a>.</strong> Bugs, suggestions, confusing errors, unclear docs. Issues are read and shape what gets built next.</li>
-<li><strong>Fork it.</strong> Under MIT your copy is fully yours to modify and publish.</li>
+<li><strong><a href="https://github.com/liustack/modlens/issues">提交 issue</a>。</strong> bug、建议、难以理解的报错或文档都欢迎。issue 会被认真阅读，并影响后续开发方向。</li>
+<li><strong>Fork。</strong> MIT 协议下你的副本完全归你，修改和发布不受限制。</li>
 </ul>
-<h3>Shameless plug</h3>
-<p>This project runs on LIUSTACK Skills: <code>shaping</code> before you build, <code>coding</code> while you build, <code>dig</code> when it breaks, <code>snapshot</code> when you hand off. Lighter than Superpowers, and stronger.</p>
-<pre><code class="language-bash">npx -y skills add liustack/liustack -g
-</code></pre>
-<p>⭐ If it helps, star <a href="https://github.com/liustack/modlens">ModLens</a> and <a href="https://github.com/liustack/liustack">liustack</a>. Stars are how the next developer finds them.</p>
+<h3>插入一条硬广</h3>
+<p>关注微信公众号「liustack」：AI 创业机会、独立开发见解、AI 实战与工具，第一时间推送。微信扫码，或搜一搜「liustack」：</p>
+<p>⭐ 如果它对你有用，请给 <a href="https://github.com/liustack/modlens">ModLens</a> 一个 star，这是其他开发者找到它的方式。</p>
 <h3>Star History</h3>
-<h3>Disclaimer</h3>
-<p>Provided as-is under the MIT License below. The author makes no warranty and gives no endorsement for any particular use, commercial use included. Your use of upstream engines (Antigravity CLI, the Gemini, OpenAI, and Anthropic APIs, and any OpenAI-compatible endpoint) is governed by their own terms and quotas, which you are responsible for.</p>
+<h3>免责声明</h3>
+<p>本项目依下方 MIT 协议按现状提供。作者不对任何特定用途（含商业使用）提供保证或背书。上游引擎（Antigravity CLI，Gemini、OpenAI、Anthropic 的 API，以及任何 OpenAI 兼容端点）的使用受各自条款和额度约束，由使用者负责。</p>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/liustack/modlens/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/liustack/modlens/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

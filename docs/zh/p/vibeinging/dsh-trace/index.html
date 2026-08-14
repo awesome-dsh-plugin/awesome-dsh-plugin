@@ -189,56 +189,56 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>English | <a href="https://github.com/vibeinging/dsh-trace/blob/main/README.zh.md">中文</a></p>
-<p><code>dsh-trace</code> stores DeepSeek Harness session telemetry in a local embedded yiTrace database. It observes records after the host&#39;s <code>telemetry/record</code> waterfall, projects each DSH turn into one yiTrace trace, and writes SDK-native start, log, and end events through yiTrace&#39;s Node-API database. No HTTP server, port, or token is required. The plugin is opt-in, adds no model-visible context, and lives outside the DeepSeek Harness monorepo.</p>
-<h3>Features</h3>
+<p><a href="https://github.com/vibeinging/dsh-trace/blob/main/README.md">English</a> | 中文</p>
+<p><code>dsh-trace</code> 将 DeepSeek Harness 会话遥测存入本地嵌入式 yiTrace 数据库。它观察宿主 <code>telemetry/record</code> waterfall 处理后的记录，把每个 DSH 轮次投影为一条 yiTrace trace，并通过 yiTrace 的 Node-API 数据库写入 SDK 原生的开始、日志和结束事件。无需 HTTP 服务器、端口或 token。该插件需要主动启用，不会增加模型可见上下文，并独立于 DeepSeek Harness monorepo。</p>
+<h3>功能</h3>
 <ul>
-<li><strong>Embedded local storage</strong> — writes directly through <code>@yitrace/db</code>; no HTTP service, port, or access token.</li>
-<li><strong>Complete agent trace tree</strong> — records one root trace per DSH turn, model-step spans below it, and tool-call spans below each step.</li>
-<li><strong>Debugging context</strong> — keeps model identity, token usage, message and tool input/output, error state, and generic in-turn log events.</li>
-<li><strong>Lifecycle recovery</strong> — marks traces that begin mid-turn, closes unfinished spans as failed, flushes on natural boundaries, and recovers committed data when the database reopens.</li>
-<li><strong>Local queries</strong> — supports yiTrace trace, span, full-text search, and aggregate APIs against the configured directory.</li>
+<li><strong>嵌入式本地存储</strong>：直接通过 <code>@yitrace/db</code> 写入；无需 HTTP 服务、端口或访问 token。</li>
+<li><strong>agent（智能体）的完整 trace 树</strong>：每个 DSH 轮次记录一条根 trace，其下是模型步骤 span，每个步骤下再记录工具调用 span。</li>
+<li><strong>调试上下文</strong>：保留模型身份、token 用量、消息和工具输入／输出、错误状态，以及轮次内的通用日志事件。</li>
+<li><strong>生命周期恢复</strong>：标记从轮次中途开始的 trace，将未完成 span 标记为失败并关闭，在自然边界 flush，并在数据库重新打开时恢复已提交数据。</li>
+<li><strong>本地查询</strong>：针对所配置目录提供 yiTrace trace、span、全文搜索和聚合 API。</li>
 </ul>
-<p>The plugin does not provide a viewer or built-in redaction rules. Use yiTrace-compatible local tools or the <code>@yitrace/db</code> query API to inspect the configured data directory.</p>
-<h3>Use cases</h3>
+<p>本插件不提供查看器或内置脱敏规则。请使用兼容 yiTrace 的本地工具或 <code>@yitrace/db</code> 查询 API 检查所配置数据目录中的内容。</p>
+<h3>使用场景</h3>
 <ul>
-<li>Reconstruct an agent turn to see which model step or tool call caused a failure.</li>
-<li>Compare token use, model output, and tool behavior while developing prompts or workflows.</li>
-<li>Search historical local traces for repeated error messages, tool results, or session attributes.</li>
-<li>Keep observability data on the same machine when an HTTP telemetry service is unnecessary or not allowed.</li>
+<li>重建一个 agent 轮次，查看哪个模型步骤或工具调用导致失败。</li>
+<li>开发提示词或工作流时，对比 token 用量、模型输出和工具行为。</li>
+<li>搜索本地历史 trace，查找重复错误消息、工具结果或会话属性。</li>
+<li>不需要或不允许 HTTP 遥测服务时，将可观测性数据保留在同一台机器上。</li>
 </ul>
-<h3>Prerequisites</h3>
+<h3>前提</h3>
 <ul>
-<li>Node.js <code>^22.19.0 || &gt;=24.0.0</code> and pnpm <code>11.7.0</code>.</li>
-<li>A writable local directory for yiTrace data.</li>
-<li>Git credentials with read access to the private plugin repository.</li>
-<li>A compatible DSH <code>web</code> or <code>headless</code> profile that provides Session Telemetry and the invariant service.</li>
+<li>Node.js <code>^22.19.0 || &gt;=24.0.0</code> 和 pnpm <code>11.7.0</code>。</li>
+<li>一个可写的 yiTrace 本地数据目录。</li>
+<li>可读取私有插件仓库的 Git 凭据。</li>
+<li>提供 Session Telemetry 和 invariant service 的兼容 DSH <code>web</code> 或 <code>headless</code> profile。</li>
 </ul>
-<p>The package is private and is not published to an npm registry. Its checked-in <code>lib/</code> runtime allows a pinned private GitHub commit to install without executing a dependency build against private DSH SDK packages. The install command must include <code>-w</code> because a DSH profile is a pnpm workspace root.</p>
-<h3>Quick start</h3>
-<p>The bundle disables the shipped OTLP telemetry backend and replaces it with local embedded yiTrace. It can store user and assistant text, reasoning, tool arguments and results, session ids, and configured identities. Do not boot the profile until its local retention and redaction policy is acceptable.</p>
+<p>本包为私有包，不会发布到 npm registry。仓库中已提交的 <code>lib/</code> 运行时允许从私有 GitHub 仓库安装固定的 commit，不会针对未发布的 DSH 对等依赖执行依赖构建。DSH Profile 是 pnpm workspace 根目录，因此安装命令必须包含 <code>-w</code>。</p>
+<h3>快速上手</h3>
+<p>bundle 会禁用 DSH 自带的 OTLP 遥测后端，并用本地嵌入式 yiTrace 取代它。它可能存储用户和 assistant 文本、推理、工具参数与结果、会话 id 以及所配置的身份。请先确认本地保留和脱敏策略可接受，再启动该 profile。</p>
 <ol>
-<li>Choose an absolute local data directory:</li>
+<li>选择一个绝对本地数据目录：</li>
 </ol>
 <pre><code class="language-sh">export DSH_TRACE_DATA_DIR=/absolute/path/to/dsh-traces
 export DSH_TRACE_TENANT_ID=1
 mkdir -p &quot;$DSH_TRACE_DATA_DIR&quot;
 </code></pre>
 <ol start="2">
-<li>Install a reviewed commit directly from the private GitHub repository:</li>
+<li>直接从私有 GitHub 仓库安装已审查的 commit：</li>
 </ol>
 <pre><code class="language-sh">dsh plugin --profile web add -w github:dsh-external/dsh-trace#&lt;reviewed-commit&gt;
 </code></pre>
-<p>The package&#39;s <code>dsh.bundle.patch</code> disables <code>telemetry-otel</code>, loads <code>dsh-trace</code> from <code>DSH_TRACE_DATA_DIR</code>, and loads its invariant companion. Use the same command with <code>--profile headless</code> to enable that independent profile.</p>
+<p>本包的 <code>dsh.bundle.patch</code> 会禁用 <code>telemetry-otel</code>，加载 <code>dsh-trace</code>（数据目录来自 <code>DSH_TRACE_DATA_DIR</code>），并加载配套的 invariant 插件。使用同样的命令并指定 <code>--profile headless</code>，即可为该独立 profile 启用插件。</p>
 <ol start="3">
-<li>Inspect the composed profile before booting it, then start DSH:</li>
+<li>启动 profile 前检查组合后的配置，然后启动 DSH：</li>
 </ol>
 <pre><code class="language-sh">dsh --profile web --dump-config
 dsh --profile web
 </code></pre>
-<p>The dump must show <code>telemetry-otel</code> as disabled and include <code>dsh-trace</code> plus <code>dsh-trace-invariant</code>. Each completed turn is stored under <code>DSH_TRACE_DATA_DIR</code>; shutdown also closes unfinished spans and flushes the database. Remove the bundle with <code>dsh plugin --profile web remove -w @deepseek-ai/dsh-trace</code>.</p>
+<p>配置输出必须显示 <code>telemetry-otel</code> 已禁用，并包含 <code>dsh-trace</code> 和 <code>dsh-trace-invariant</code>。每个已完成轮次都会存入 <code>DSH_TRACE_DATA_DIR</code>；shutdown 还会关闭未完成的 span 并 flush 数据库。使用 <code>dsh plugin --profile web remove -w @deepseek-ai/dsh-trace</code> 移除 bundle。</p>
 <ol start="4">
-<li>After DSH releases the data directory, inspect traces with <code>@yitrace/db</code>:</li>
+<li>DSH 释放数据目录后，使用 <code>@yitrace/db</code> 检查 trace：</li>
 </ol>
 <pre><code class="language-js">import { YiTraceDB } from &#39;@yitrace/db&#39;
 
@@ -269,115 +269,115 @@ try {
   await database.close()
 }
 </code></pre>
-<p>Use the same <code>tenantId</code> for writing and reading. The example profile writes tenant <code>1</code>; set <code>DSH_TRACE_TENANT_ID=1</code> before running the query script.</p>
-<h3>Configuration reference</h3>
+<p>写入和读取必须使用相同的 <code>tenantId</code>。示例 profile 写入 tenant <code>1</code>；运行查询脚本前，请设置 <code>DSH_TRACE_TENANT_ID=1</code>。</p>
+<h3>配置参考</h3>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Required or default</th>
-<th>Purpose</th>
+<th>字段</th>
+<th>必填项或默认值</th>
+<th>用途</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>database.dataDir</code></td>
-<td>Required</td>
-<td>Local yiTrace directory. Relative paths resolve from the process working directory at plugin load; use an absolute path for service deployments.</td>
+<td>必填</td>
+<td>本地 yiTrace 目录。插件加载时，相对路径从进程工作目录解析；服务部署请使用绝对路径。</td>
 </tr>
 <tr>
 <td><code>database.tenantId</code></td>
-<td>Optional</td>
-<td>Unsigned 64-bit tenant scope attached to writes. Use the same value when querying.</td>
+<td>可选</td>
+<td>写入时附加的 64 位无符号 tenant 作用域。查询时使用相同值。</td>
 </tr>
 <tr>
 <td><code>database.maxBuffered</code></td>
 <td><code>batchSize × 16</code></td>
-<td>Maximum events retained in memory after embedded ingest failures; the oldest events are dropped after the limit.</td>
+<td>嵌入式 ingest 失败后保留在内存中的最大事件数；超过限制后丢弃最旧事件。</td>
 </tr>
 <tr>
 <td><code>batchSize</code></td>
 <td><code>256</code></td>
-<td>Events collected before one serialized embedded ingest.</td>
+<td>每次串行嵌入式 ingest 前收集的事件数。</td>
 </tr>
 <tr>
 <td><code>nodeId</code></td>
-<td>Derived by yiTrace</td>
-<td>Snowflake node id in <code>0..1023</code>. Parallel writers must not share an explicit value.</td>
+<td>由 yiTrace 派生</td>
+<td><code>0..1023</code> 范围内的 Snowflake 节点 id。并行写入方不得共用显式值。</td>
 </tr>
 <tr>
 <td><code>agentName</code></td>
-<td>Harness product identity</td>
-<td>Agent name attached to every span.</td>
+<td>Harness 产品身份</td>
+<td>附加到每个 span 的 agent 名称。</td>
 </tr>
 <tr>
 <td><code>shutdownTimeoutMillis</code></td>
 <td><code>3000</code></td>
-<td>Maximum time DSH awaits shutdown. The deadline cannot cancel a native database call already in progress.</td>
+<td>DSH 等待关闭的最长时间。截止时间无法取消正在执行的原生数据库调用。</td>
 </tr>
 </tbody></table>
-<p>An empty data directory, invalid unsigned 64-bit tenant id, invalid node id, or non-positive size/deadline fails at plugin load.</p>
-<p>The telemetry seam admits one backend per Cordis context. Loading this package together with <code>session-telemetry-otel</code> fails as a duplicate service instead of recording twice. A host-level privacy switch must disable every configured telemetry row; the plugin does not bypass that host policy.</p>
-<h3>Verification and CI</h3>
-<p>The project <code>.npmrc</code> selects the private <code>@deepseek-ai/*</code> scope; pnpm 11 reads its <code>${NPM_TOKEN}</code> authentication mapping from the trusted user-level <code>~/.npmrc</code>. Set <code>NPM_TOKEN</code> and run <code>pnpm install --ignore-scripts</code>. The SDK packages are pinned to the reviewed <code>0.0.1-rc.2</code> set. Do not link or check out DSH source into this repository. <code>pnpm run check</code> enforces the repository boundary, runs source linting and strict type checking, executes seven tests against a real embedded database and a real YAML Loader profile, builds the production entries, runs <code>publint</code> without creating a tarball, and imports the built entries with plain Node. CI maps the <code>NPM_TOKEN</code> secret into setup-node&#39;s trusted user configuration.</p>
-<h3>Trace mapping</h3>
+<p>数据目录为空、64 位无符号 tenant id 无效、节点 id 无效，或大小／截止时间不是正数，都会使插件在加载时失败。</p>
+<p>遥测 seam 在每个 Cordis 上下文中只允许一个后端。同时加载本包与 <code>session-telemetry-otel</code> 时，会因服务重复而失败，不会重复记录。宿主级隐私开关必须禁用每一条已配置的遥测项；该插件不会绕过这项宿主策略。</p>
+<h3>验证与 CI</h3>
+<p>项目 <code>.npmrc</code> 选择私有 <code>@deepseek-ai/*</code> scope；pnpm 11 使用 <code>${NPM_TOKEN}</code> 认证映射，该映射来自受信任的用户级 <code>~/.npmrc</code>。请设置 <code>NPM_TOKEN</code>，然后运行 <code>pnpm install --ignore-scripts</code>。SDK 包固定为经过评审的 <code>0.0.1-rc.2</code> 版本组。不要将 DSH 源码链接或 checkout 到本仓库。<code>pnpm run check</code> 会检查仓库边界、运行源码 lint 和严格类型检查、针对真实嵌入式数据库和真实 YAML Loader profile 执行 7 个测试、构建生产入口、运行 <code>publint</code> 且不创建 tarball，并用纯 Node 导入构建后的入口。CI 会将 <code>NPM_TOKEN</code> secret 映射到 setup-node 的受信任用户配置。</p>
+<h3>Trace 映射</h3>
 <table>
 <thead>
 <tr>
-<th>DSH source</th>
-<th>yiTrace projection</th>
-<th>Important fields</th>
+<th>DSH 来源</th>
+<th>yiTrace 投影</th>
+<th>重要字段</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>turn/start</code> … <code>turn/end</code></td>
-<td>One root <code>dsh.turn</code> span and one yiTrace trace</td>
-<td>DSH session id, turn number, end reason, status</td>
+<td>一个根 <code>dsh.turn</code> span 和一条 yiTrace trace</td>
+<td>DSH 会话 id、轮次编号、结束原因、状态</td>
 </tr>
 <tr>
 <td><code>step/start</code> … <code>step/end</code></td>
-<td>Child <code>dsh.step</code> span</td>
-<td>provider, model, token usage, latest system prompt, redacted message history observed by this backend instance, assistant output</td>
+<td>子 <code>dsh.step</code> span</td>
+<td>提供方、模型、token 用量、最新系统提示词、该后端实例观察到的已脱敏消息历史、assistant 输出</td>
 </tr>
 <tr>
 <td><code>tool/call</code> … <code>tool/result</code></td>
-<td>Child <code>tool.&lt;name&gt;</code> span</td>
-<td>call id, tool name, arguments, result, error status</td>
+<td>子 <code>tool.&lt;name&gt;</code> span</td>
+<td>调用 id、工具名称、参数、结果、错误状态</td>
 </tr>
 <tr>
-<td>Other ledger events inside an open turn</td>
-<td>yiTrace log event on the open step or turn</td>
-<td>event type, source seq, redacted body</td>
+<td>已打开轮次内的其他账本事件</td>
+<td>已打开步骤或轮次上的 yiTrace 日志事件</td>
+<td>事件类型、来源 seq、已脱敏 body</td>
 </tr>
 <tr>
 <td><code>agent-error</code></td>
-<td>Error log plus failed open step/turn</td>
-<td>normalized error name and body</td>
+<td>错误日志，并将已打开的步骤／轮次标记为失败</td>
+<td>规范化的错误名称和 body</td>
 </tr>
 <tr>
 <td><code>shutdown</code></td>
-<td>Close any still-open spans as failed, then flush and close the database</td>
-<td>no synthetic standalone span</td>
+<td>将仍处于打开状态的所有 span 标记为失败并关闭，再 flush 并关闭数据库</td>
+<td>不创建合成的独立 span</td>
 </tr>
 </tbody></table>
-<p>The adapter preserves source event timestamps and derives span duration from their millisecond times. <code>@yitrace/trace-sdk</code> owns deterministic event ids, batching, and wire encoding; <code>@yitrace/db</code> owns the embedded write-ahead log, recovery, durable read models, and queries. DSH string session ids are mapped to yiTrace&#39;s numeric <code>session_id</code> through deterministic FNV-1a 64-bit hashing; the original id remains in <code>dsh.session.id</code> span attributes.</p>
-<h3>Data and reliability boundary</h3>
-<p>Every record passes the seam&#39;s <code>telemetry/record</code> waterfall before this backend reads it. User and assistant text, reasoning, tool arguments/results, generic event bodies, the session id, and configured agent/tenant identity may be stored in <code>database.dataDir</code>. The seam ships no redaction rules, so a deployment that must not retain raw sensitive values mounts its own rule before enabling yiTrace. The data remains local to the configured directory; the plugin does not open a network connection.</p>
-<p><code>emit()</code> creates yiTrace SDK events and enqueues them in memory. Turn/session flush hints are serialized: each drains <code>BatchExporter</code>, retries the bounded embedded-write buffer, and flushes the database. Disposal closes unfinished spans, drains the same queue, flushes yiTrace&#39;s durable state, and closes the database within the configured deadline. An abrupt process crash can still lose events that had not reached the embedded database, while committed yiTrace data is recovered when the directory is reopened.</p>
-<h3>Model Experience</h3>
-<p>None, as the plugin observes post-log session records and never changes a model request, tool schema, or response.</p>
-<h5>KV Cache effect</h5>
-<p>None; this package neither assembles nor sends provider requests.</p>
-<h3>Known Limitations and Deferred Work</h3>
+<p>适配器保留来源事件的时间戳，并根据其毫秒时间计算 span 持续时长。确定性事件 id、批处理和协议编码由 <code>@yitrace/trace-sdk</code> 负责；嵌入式预写式日志、恢复、持久读取模型和查询由 <code>@yitrace/db</code> 负责。DSH 的字符串会话 id 通过确定性的 FNV-1a 64 位哈希映射为 yiTrace 的数值 <code>session_id</code>；原始 id 仍保留在 <code>dsh.session.id</code> span 属性中。</p>
+<h3>数据与可靠性边界</h3>
+<p>每条记录都先经过 seam 的 <code>telemetry/record</code> waterfall（瀑布式事件），随后该后端才会读取。用户与 assistant 文本、推理（reasoning）、工具参数／结果、通用事件 body、会话 id，以及配置的 agent（智能体）／tenant 身份都可能存入 <code>database.dataDir</code>。seam 不附带任何脱敏规则，因此不得保留原始敏感值的部署必须先挂载自己的规则，再启用 yiTrace。数据始终留在所配置的目录中；该插件不会打开网络连接。</p>
+<p><code>emit()</code> 会创建 yiTrace SDK 事件并将其加入内存队列。轮次／会话 flush 提示会串行执行：每次排空 <code>BatchExporter</code>，重试有界的嵌入式写入缓冲区，再 flush 数据库。资源释放会关闭尚未完成的 span，排空同一条队列，flush yiTrace 的持久状态，并在配置的截止时间内关闭数据库。进程突然崩溃仍可能丢失尚未到达嵌入式数据库的事件；已经提交的 yiTrace 数据会在重新打开该目录时恢复。</p>
+<h3>模型体验</h3>
+<p>无，因为该插件只观察日志写入后的会话记录，绝不更改模型请求、工具 schema 或响应。</p>
+<h5>KV Cache 影响</h5>
+<p>无；本包既不组装也不发送提供方请求。</p>
+<h3>已知限制与延期工作</h3>
 <ul>
-<li><strong>Private Git distribution</strong> — the package is not published to a registry. Installation requires authorized GitHub access, pnpm <code>11.7.0</code>, a reviewed commit, and a compatible DSH profile.</li>
-<li><strong>The database is a native dependency</strong> — <code>@yitrace/db</code> currently supplies prebuilt packages for macOS arm64/x64, glibc Linux arm64/x64, and Windows x64. Other operating systems, CPU targets, and musl Linux are not covered by this package&#39;s current lockfile.</li>
-<li><strong>One local storage mode</strong> — the plugin deliberately has no HTTP backend or cross-machine transport. Give concurrently running DSH processes separate writable data directories unless the yiTrace database documents a shared-writer setup for that deployment.</li>
-<li><strong>State is segmented across telemetry reloads</strong> — disposal closes open spans as failed and resets the adapter&#39;s message accumulator. A later positioned event (<code>turn</code>/<code>step</code>) opens a span marked <code>dsh.recovered_segment</code>; its input includes only redacted message events observed after that backend instance loaded. A lone <code>user/message</code> has no position in its payload and cannot reconstruct a missing step by itself.</li>
-<li><strong>Hashed session identity</strong> — yiTrace&#39;s TypeScript SDK accepts a numeric <code>session_id</code>, while DSH owns opaque string ids. FNV-1a makes the mapping stable but leaves a theoretical 64-bit collision risk; a future SDK string-id surface would remove this compromise.</li>
+<li><strong>私有 Git 分发</strong>：本包不会发布到 registry。安装需要经授权的 GitHub 访问权限、pnpm <code>11.7.0</code>、已审查的 commit 和兼容的 DSH profile。</li>
+<li><strong>数据库是原生依赖</strong>：<code>@yitrace/db</code> 目前为 macOS arm64／x64、glibc Linux arm64／x64 和 Windows x64 提供预构建包。本包当前的 lockfile 不覆盖其他操作系统、CPU 目标和 musl Linux。</li>
+<li><strong>只有一种本地存储模式</strong>：该插件刻意不提供 HTTP 后端或跨机器传输。并发运行的 DSH 进程应使用各自独立的可写数据目录，除非 yiTrace 数据库已为该部署明确记录共享写入方配置。</li>
+<li><strong>遥测重载会分隔状态</strong>：资源释放会将已打开的 span 标记为失败并关闭，同时重置适配器的消息累积器。后续带位置的事件（<code>turn</code>/<code>step</code>）会打开一个标记为 <code>dsh.recovered_segment</code> 的 span；其输入只包含该后端实例加载后观察到的已脱敏消息事件。单独一条 <code>user/message</code> 的 payload 中没有位置信息，无法自行重建缺失的步骤。</li>
+<li><strong>哈希后的会话身份</strong>：yiTrace 的 TypeScript SDK 接受数值 <code>session_id</code>，而 DSH 持有不透明字符串 id。FNV-1a 使映射保持稳定，但理论上仍存在 64 位碰撞风险；未来 SDK 若提供字符串 id 接口，就能消除这一折中。</li>
 </ul>
 
     </div>
-    <p class="note"><a href="https://github.com/vibeinging/dsh-trace/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/vibeinging/dsh-trace/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

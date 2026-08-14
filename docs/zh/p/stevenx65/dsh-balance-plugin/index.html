@@ -190,56 +190,66 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
-<p>A DeepSeek Harness (dsh) web plugin: shows <strong>DeepSeek API balance</strong> and <strong>token usage</strong> at the bottom of the web sidebar (port 3080), with a <strong>Today / All-time</strong> toggle, filtered by provider (only <code>deepseek-official</code>, ignoring other vendors).</p>
-<h3>Features</h3>
+<p>DeepSeek Harness(dsh)web 插件:在 3080 端口的侧边栏底部显示 <strong>DeepSeek API 余额</strong> 和 <strong>token 用量</strong>,支持 <strong>今日/累计</strong> 切换,并按 provider 过滤(只统计 <code>deepseek-official</code>,忽略其他厂商)。</p>
+<h3>功能</h3>
 <ul>
-<li>💰 Balance: calls DeepSeek&#39;s official <code>GET /user/balance</code>, reusing dsh&#39;s credentials (<code>~/.dsh/.credentials.yaml</code>) — no manual key entry</li>
-<li>📊 Token usage: reads dsh session logs (<code>session.jsonl.zstd</code>), aggregates by provider<ul>
-<li>Uncached input / cache read / output / model call count</li>
+<li>💰 余额:调 DeepSeek 官方 <code>GET /user/balance</code>,key 复用 dsh 的 credentials(<code>~/.dsh/.credentials.yaml</code>),无需手动填</li>
+<li>📊 token 用量:读取 dsh 原始 session 日志(<code>session.jsonl.zstd</code>),按 provider 过滤后聚合<ul>
+<li>未缓存输入 / 缓存读取 / 输出 / 模型调用次数</li>
 </ul>
 </li>
-<li>🔄 Today / All-time toggle: today (Beijing time) or full history</li>
-<li>🎨 Auto-adapts to light/dark theme + refresh button + close button</li>
+<li>🔄 今日/累计切换:今日(北京时间当天)或全部历史</li>
+<li>🎨 深色/浅色自动适配 + 刷新按钮 + 关闭按钮</li>
 </ul>
-<h3>Screenshot</h3>
+<h3>截图</h3>
 <p><img src="https://raw.githubusercontent.com/stevenx65/dsh-balance-plugin/main/docs/screenshot.png" alt="dsh-balance-plugin"></p>
-<h3>Install (from the plugin market)</h3>
+<h3>一键安装(从插件市场)</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-balance-plugin
 </code></pre>
-<p>Restart <code>dsh web</code>, then refresh the page — a balance button appears at the bottom of the sidebar.</p>
-<h3>Architecture</h3>
-<pre><code>Browser (3080 page)
+<p>重启 <code>dsh web</code> 后刷新页面,侧边栏底部出现余额按钮。</p>
+<h3>架构</h3>
+<pre><code>浏览器(3080 页面)
   client.js ──fetch──▶ /dsh-balance/data?scope=today|all
                               │
-node side (index.js, inside the dsh process)
-  ├── credentials.resolve(&quot;DEEPSEEK_API_KEY&quot;)  ← reuses dsh&#39;s key
+node 端(index.js,运行在 dsh 进程内)
+  ├── credentials.resolve(&quot;DEEPSEEK_API_KEY&quot;)  ← 复用 dsh 的 key
   ├── fetch(https://api.deepseek.com/user/balance)
-  └── decompress ~/.dsh/sessions/*/*/session.jsonl.zstd
-      filter assistant/message rows + provider=deepseek-official
+  └── 解压 ~/.dsh/sessions/*/*/session.jsonl.zstd
+      逐行过滤 assistant/message + provider=deepseek-official
 </code></pre>
 <ul>
-<li><code>index.js</code>: node-side cordis plugin, registers HTTP route <code>/dsh-balance/data</code></li>
-<li><code>client.js</code>: browser-side plugin, injects into <code>sidebar.footer.action</code> (sidebar bottom button + floating panel)</li>
-<li><code>package.json</code>: <code>dsh.bundle</code> + <code>dsh.client.platform: &quot;web&quot;</code> + <code>exports[&quot;./client&quot;]</code></li>
-<li><code>cordis.patch.yml</code>: bundle patch registering the node entry</li>
+<li><code>index.js</code>:node 端 cordis 插件,注册 HTTP 路由 <code>/dsh-balance/data</code></li>
+<li><code>client.js</code>:浏览器端插件,注入 <code>sidebar.footer.action</code>(侧边栏底部按钮 + 黑色浮层)</li>
+<li><code>package.json</code>:<code>dsh.client.platform: &quot;web&quot;</code> + <code>exports[&quot;./client&quot;]</code>,供 <code>dsh-client-modules</code> 扫描</li>
 </ul>
-<h3>Manual install</h3>
+<h3>安装</h3>
+<ol>
+<li>把 <code>dsh-balance-plugin</code> 目录放到 web profile 的 node_modules:</li>
+</ol>
 <pre><code class="language-sh">mkdir -p ~/.dsh/profiles/web/node_modules/dsh-balance-plugin
-cp index.js client.js cordis.patch.yml package.json ~/.dsh/profiles/web/node_modules/dsh-balance-plugin/
+cp index.js client.js package.json ~/.dsh/profiles/web/node_modules/dsh-balance-plugin/
 </code></pre>
-<p>Then add to <code>~/.dsh/profiles/web/cordis.patch.yml</code>:</p>
+<ol start="2">
+<li>编辑 <code>~/.dsh/profiles/web/cordis.patch.yml</code>,加入:</li>
+</ol>
 <pre><code class="language-yaml">- insert:
     - id: dsh-balance
-      name: dsh-balance-plugin
+      name: &#39;dsh-balance-plugin&#39;
 </code></pre>
-<p>Restart <code>dsh web</code> and refresh the browser.</p>
-<h3>Dependencies</h3>
+<ol start="3">
+<li><p>重启 dsh web(如 tmux 里:<code>tmux send-keys -t dsh C-c</code> 然后 <code>dsh web</code>)</p>
+</li>
+<li><p>刷新浏览器 3080 页面,侧边栏底部出现余额按钮</p>
+</li>
+</ol>
+<h3>依赖</h3>
 <ul>
-<li>node side: Node built-ins only (<code>node:fs</code>, <code>node:child_process</code>, <code>node:path</code>); requires the <code>zstd</code> CLI for decompressing session logs</li>
-<li>browser side: <code>@deepseek-ai/dsh-client-ui-primitives</code> (peer dep, ships with dsh 0.1.0-rc.6)</li>
+<li>node 端:仅 Node 内置模块(<code>node:fs</code>、<code>node:child_process</code>、<code>node:path</code> 等),需要系统有 <code>zstd</code> CLI 用于解压 session 日志</li>
+<li>浏览器端:依赖 dsh 自带的 <code>@deepseek-ai/dsh-client-ui-primitives</code>(图标组件),dsh 0.1.0-rc.6 自带,无需额外安装</li>
 </ul>
-<h3>Data source</h3>
-<p>Session logs at <code>~/.dsh/sessions/&lt;scope&gt;/&lt;session-id&gt;/session.jsonl.zstd</code>. Each <code>assistant/message</code> row:</p>
+<h3>数据来源</h3>
+<p>原始会话日志位置:<code>~/.dsh/sessions/&lt;scope&gt;/&lt;session-id&gt;/session.jsonl.zstd</code></p>
+<p>每条 <code>assistant/message</code> 行含:</p>
 <pre><code class="language-json">{
   &quot;type&quot;: &quot;assistant/message&quot;,
   &quot;time&quot;: 1786635270943,
@@ -249,14 +259,14 @@ cp index.js client.js cordis.patch.yml package.json ~/.dsh/profiles/web/node_mod
   }
 }
 </code></pre>
-<h3>Pack</h3>
-<pre><code class="language-sh">npm pack   # produces dsh-balance-plugin-0.1.0.tgz
+<h3>打包</h3>
+<pre><code class="language-sh">npm pack   # 生成 dsh-balance-plugin-0.1.0.tgz
 </code></pre>
 <h3>License</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/stevenx65/dsh-balance-plugin/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/stevenx65/dsh-balance-plugin/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

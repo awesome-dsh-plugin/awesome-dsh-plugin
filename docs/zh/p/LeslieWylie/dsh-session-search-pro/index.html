@@ -189,16 +189,16 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><strong>English</strong> | <a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/README.zh-CN.md">简体中文</a></p>
+<p><a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/README.md">English</a> | <strong>简体中文</strong></p>
 <blockquote>
-<p><strong>Search every DSH session you&#39;ve ever had — past and current — without leaving the one you&#39;re in.</strong></p>
+<p><strong>搜索你用过的每一个 DSH 会话——无论是过去的还是正在进行的——都不用离开当前会话。</strong></p>
 </blockquote>
 <p><a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
 <a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/dsh-plugin-8A2BE2" alt="dsh-plugin"></a></p>
-<p>Three agent tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>, built on the runtime&#39;s own indexed <strong><code>sessionQuery</code></strong> service instead of scanning session files by hand.</p>
+<p>面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的三个 agent 工具,构建在 harness 自带的 <strong><code>sessionQuery</code></strong> 服务之上,而不是手工扫描会话文件。</p>
 <hr>
-<h3>Install</h3>
-<p>Nothing here is on npm yet, so install straight from GitHub. Add it to your profile&#39;s <code>package.json</code>:</p>
+<h3>安装</h3>
+<p>目前还没有发布到 npm,所以直接从 GitHub 安装。把它加到你的 profile 的 <code>package.json</code> 里:</p>
 <pre><code class="language-jsonc">// ~/.dsh/profiles/&lt;profile&gt;/package.json
 {
   &quot;dependencies&quot;: {
@@ -211,302 +211,275 @@ footer p+p{margin-top:.5rem}
   }
 }
 </code></pre>
-<p>Then reinstall and restart the profile:</p>
+<p>然后重新安装依赖并重启 profile:</p>
 <pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt; &amp;&amp; pnpm install
 dsh --profile &lt;profile&gt;
 </code></pre>
-<p>Pin a tag instead of tracking the default branch with <code>github:LeslieWylie/dsh-session-search-pro#v0.1.0</code>.</p>
-<p>The package ships its own <code>cordis.patch.yml</code>, so once it&#39;s installed into the profile&#39;s <code>node_modules</code> you can mount it for a single run with the launcher&#39;s <code>--patch</code> flag instead of touching <code>dsh.profile.bundles</code>:</p>
+<p>想固定到某个版本而不是跟随默认分支,可以用 <code>github:LeslieWylie/dsh-session-search-pro#v0.1.0</code>。</p>
+<p>这个包自带 <code>cordis.patch.yml</code>,所以只要它已经装进了 profile 的 <code>node_modules</code>,就可以用启动器的 <code>--patch</code> 参数临时挂载一次,不用动 <code>dsh.profile.bundles</code>:</p>
 <pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt; &amp;&amp; pnpm add github:LeslieWylie/dsh-session-search-pro
 dsh --profile &lt;profile&gt; --patch ./node_modules/dsh-session-search-pro/cordis.patch.yml
 </code></pre>
-<h3>Why another session-search plugin?</h3>
-<p><a href="https://github.com/Tieboyh/dsh-session-search">dsh-session-search</a> by Tieboyh
-takes a different route: it reads session files directly, decompressing and
-scanning zstd frames itself, which lets it search <strong>other runtimes&#39; sessions
-too</strong> — Codex, Claude Code, PI, OpenCode. If you work across several agent CLIs,
-that is the one you want.</p>
-<p>This plugin goes through the harness&#39;s own <code>sessionQuery</code> service instead. That
-buys the live in-progress session, no file-format assumptions, and no external
-binaries — and it means the plugin inherits whatever indexing the deployment has
-configured, including none (see
-<a href="#search-on-a-stock-profile">Search on a stock profile</a>).</p>
+<h3>为什么又做一个会话搜索插件</h3>
+<p>Tieboyh 的 <a href="https://github.com/Tieboyh/dsh-session-search">dsh-session-search</a> 走的是另一条路:它直接读会话文件、自己解压扫描 zstd 帧,因此<strong>还能搜别的运行时的会话</strong>——Codex、Claude Code、PI、OpenCode。如果你同时在用好几个 agent CLI,那个更合适。</p>
+<p>这个插件则走 harness 自己的 <code>sessionQuery</code> 服务。好处是能搜到正在进行中的当前会话、不对文件格式做任何假设、不依赖外部二进制;代价是它只能继承部署方配置好的索引能力——包括「压根没开」这一种(见<a href="#%E5%9C%A8%E9%BB%98%E8%AE%A4-profile-%E4%B8%8A%E6%90%9C%E7%B4%A2">在默认 profile 上搜索</a>)。</p>
 <table>
 <thead>
 <tr>
-<th>Aspect</th>
+<th>对比项</th>
 <th>dsh-session-search (Tieboyh)</th>
 <th>dsh-session-search-pro</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Search method</td>
-<td>Reads and scans session files directly</td>
-<td>Harness <code>sessionQuery</code> — FTS5 index when enabled, bounded scan otherwise</td>
+<td>搜索方式</td>
+<td>直接读取并扫描会话文件</td>
+<td>harness <code>sessionQuery</code>——开启时用 FTS5 索引,否则有界扫描</td>
 </tr>
 <tr>
-<td>Current (in-progress) session</td>
-<td>❌ Not searchable</td>
-<td>✅ Searchable</td>
+<td>当前(进行中)会话</td>
+<td>❌ 不可搜索</td>
+<td>✅ 可搜索</td>
 </tr>
 <tr>
-<td>Session file format</td>
-<td>Parsed directly (zstd frame scan)</td>
-<td>Never touched — harness API only</td>
+<td>会话文件格式</td>
+<td>直接解析(zstd 帧扫描)</td>
+<td>完全不碰——只走 harness API</td>
 </tr>
 <tr>
-<td>External sources</td>
-<td>codex, claude, pi, opencode</td>
-<td>DSH only (single runtime)</td>
+<td>覆盖的外部来源</td>
+<td>codex、claude、pi、opencode</td>
+<td>仅 DSH(单一运行时)</td>
 </tr>
 <tr>
-<td>Tool count</td>
-<td>2 tools</td>
-<td>3 tools (search + list + read)</td>
+<td>工具数量</td>
+<td>2 个</td>
+<td>3 个(search + list + read)</td>
 </tr>
 <tr>
-<td>Long event text</td>
-<td>Capped at 4,000 chars</td>
-<td>Capped at 4,000 chars per event</td>
+<td>长文本截断</td>
+<td>单条消息上限 4,000 字符</td>
+<td>单个事件上限 4,000 字符</td>
 </tr>
 <tr>
-<td>Dependencies</td>
-<td>ripgrep, node:zlib</td>
-<td>None (zero runtime dependencies)</td>
+<td>依赖</td>
+<td>ripgrep、node:zlib</td>
+<td>无(零运行时依赖)</td>
 </tr>
 </tbody></table>
-<h4>Benefits</h4>
+<h4>优点</h4>
 <ul>
-<li>✅ <strong>Zero runtime dependencies</strong> — no ripgrep, no zstd parsing, no local database</li>
-<li>✅ <strong>Works on a stock profile</strong> — uses the FTS5 index when the deployment enables it, and falls back to a bounded scan when it does not, instead of returning a configuration error as the search result</li>
-<li>✅ <strong>Current session is searchable</strong> — not just sessions that have already ended</li>
-<li>✅ <strong>Fails closed, not half-open</strong> — if <code>sessionQuery</code> isn&#39;t available at all, the plugin logs a warning and registers no tools, rather than registering tools that would throw on first use</li>
-<li>✅ <strong>Read-only</strong> — never writes to a session; no database or cache of its own</li>
-<li>✅ <strong>MIT licensed</strong></li>
+<li>✅ <strong>零运行时依赖</strong>——没有 ripgrep,没有 zstd 解析,没有本地数据库</li>
+<li>✅ <strong>默认 profile 上就能用</strong>——部署方开了索引就用 FTS5 索引,没开就退回有界扫描,而不是把一条配置报错当成搜索结果返回</li>
+<li>✅ <strong>当前会话也能搜</strong>——不只是已经结束的会话</li>
+<li>✅ <strong>失败即关闭,而不是半开</strong>——如果 <code>sessionQuery</code> 服务压根不可用,插件会记一条警告日志然后不注册任何工具,而不是注册了一堆一调用就报错的工具</li>
+<li>✅ <strong>只读</strong>——从不写入会话数据,自己也不维护任何数据库或缓存</li>
+<li>✅ <strong>MIT 协议</strong></li>
 </ul>
-<h3>Usage</h3>
-<p>The agent has access to these tools automatically once the plugin is bundled. Ask things like:</p>
+<h3>使用方式</h3>
+<p>插件一旦被打包进 profile,agent 就会自动拿到这些工具。像这样问就行:</p>
 <blockquote>
-<p>&quot;Search my past sessions for anything about session search&quot;
-&quot;List my recent sessions in ~/Desktop&quot;
-&quot;Read session a4d75296-fc89-44b1 for me&quot;</p>
+<p>&quot;帮我搜一下之前关于 session search 的会话&quot;
+&quot;列出我在 ~/Desktop 下的最近会话&quot;
+&quot;读一下 a4d75296-fc89-44b1 这个会话&quot;</p>
 </blockquote>
-<p>and the model reaches for <code>agent_session_search</code>, <code>agent_session_list</code>, or <code>agent_session_read</code> on its own.</p>
-<h3>Tool reference</h3>
+<p>模型会自己去调 <code>agent_session_search</code>、<code>agent_session_list</code> 或 <code>agent_session_read</code>。</p>
+<h3>工具说明</h3>
 <h4><code>agent_session_search</code></h4>
-<p>Full-text search across all DSH sessions, each hit carrying its best-matching snippet.</p>
-<p>Two engines, picked automatically — see <a href="#search-on-a-stock-profile">Search on a stock profile</a>.</p>
+<p>对所有 DSH 会话做全文搜索,每条结果都带上匹配度最高的片段。</p>
+<p>两套引擎,自动选择——见<a href="#%E5%9C%A8%E9%BB%98%E8%AE%A4-profile-%E4%B8%8A%E6%90%9C%E7%B4%A2">在默认 profile 上搜索</a>。</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>是否必填</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>query</code></td>
 <td>string</td>
 <td>✅</td>
-<td>Text to find. Case-insensitive, whitespace-flexible, and matched <strong>literally</strong> — regex metacharacters have no special meaning.</td>
+<td>要找的文本。不区分大小写、空白宽松,并且是<strong>字面匹配</strong>——正则元字符没有特殊含义。</td>
 </tr>
 <tr>
 <td><code>limit</code></td>
 <td>number</td>
 <td>—</td>
-<td>Maximum sessions to return, 1–50. Defaults to the plugin&#39;s <code>maxResults</code> config (10 unless overridden).</td>
+<td>最多返回的会话数,1–50。默认取插件配置里的 <code>maxResults</code>(未覆盖时为 10)。</td>
 </tr>
 <tr>
 <td><code>maxScan</code></td>
 <td>number</td>
 <td>—</td>
-<td>Maximum sessions to open when falling back to a scan, 1–500. Defaults to the plugin&#39;s <code>maxScan</code> config (200). Ignored when the index is in use.</td>
+<td>退回扫描时最多打开多少个会话,1–500。默认取插件配置里的 <code>maxScan</code>(200)。走索引时忽略。</td>
 </tr>
 </tbody></table>
-<p>The result carries <code>engine: &quot;index&quot; | &quot;scan&quot;</code> so you can tell which path answered, plus <code>scanned</code> and <code>truncated</code> on the scan path.</p>
+<p>返回值里带 <code>engine: &quot;index&quot; | &quot;scan&quot;</code>,你可以据此判断是哪条路径给出的结果;扫描路径还会带 <code>scanned</code> 和 <code>truncated</code>。</p>
 <h4><code>agent_session_list</code></h4>
-<p>Lists sessions — past and current — with an optional working-directory filter, sorted newest- or oldest-first.</p>
+<p>列出会话——不论过去还是当前——可选按工作目录过滤,按最新或最旧排序。</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>是否必填</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>limit</code></td>
 <td>number</td>
 <td>—</td>
-<td>Maximum sessions to return, 1–100. Default 20.</td>
+<td>最多返回的会话数,1–100。默认 20。</td>
 </tr>
 <tr>
 <td><code>cwd</code></td>
 <td>string</td>
 <td>—</td>
-<td>Substring filter over the session&#39;s working directory.</td>
+<td>按会话工作目录做子串过滤。</td>
 </tr>
 <tr>
 <td><code>sort</code></td>
 <td><code>&quot;newest&quot;</code> | <code>&quot;oldest&quot;</code></td>
 <td>—</td>
-<td>Sort order. Default <code>newest</code>.</td>
+<td>排序方式,默认 <code>newest</code>。</td>
 </tr>
 </tbody></table>
 <h4><code>agent_session_read</code></h4>
-<p>Reads one session by id: title, metadata, and its events in order.</p>
+<p>按 id 读取单个会话:标题、元数据,以及按顺序排列的事件。</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>是否必填</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>sessionId</code></td>
 <td>string</td>
 <td>✅</td>
-<td>The session id to read, e.g. <code>&quot;a4d75296-fc89-44b1&quot;</code>.</td>
+<td>要读取的会话 id,例如 <code>&quot;a4d75296-fc89-44b1&quot;</code>。</td>
 </tr>
 <tr>
 <td><code>maxEvents</code></td>
 <td>number</td>
 <td>—</td>
-<td>Maximum events to return, most recent first, 1–200. Default 50.</td>
+<td>最多返回的事件数(取最近的若干条),1–200。默认 50。</td>
 </tr>
 </tbody></table>
-<h3>Plugin config</h3>
-<p>Set in the bundle row of <code>cordis.patch.yml</code> (or your own patch overlay):</p>
+<h3>插件配置</h3>
+<p>在 <code>cordis.patch.yml</code>(或你自己的 patch overlay)的 bundle 行里设置:</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Default</th>
-<th>Description</th>
+<th>键</th>
+<th>默认值</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>maxResults</code></td>
 <td><code>10</code></td>
-<td>Default <code>limit</code> for <code>agent_session_search</code> when the caller omits it.</td>
+<td>调用方不传 <code>limit</code> 时,<code>agent_session_search</code> 使用的默认值。</td>
 </tr>
 <tr>
 <td><code>maxScan</code></td>
 <td><code>200</code></td>
-<td>Default <code>maxScan</code> for <code>agent_session_search</code> — how many sessions the fallback scan may open.</td>
+<td><code>agent_session_search</code> 退回扫描时,最多打开多少个会话。</td>
 </tr>
 </tbody></table>
-<h3>Search on a stock profile</h3>
-<p><code>agent_session_search</code> has two engines and picks one at call time.</p>
-<p><strong>The index.</strong> <code>@deepseek-ai/dsh-session-query-sqlite</code> is the concrete <code>sessionQuery</code>
-backend in the stock <code>dsh-base</code> bundle, and it exposes a <code>searchSessions()</code> backed by
-SQLite FTS5. When it is available, this plugin uses it and returns <code>engine: &quot;index&quot;</code>.</p>
-<p><strong>But it is off by default.</strong> <code>dsh-base</code> wires that backend as:</p>
+<h3>在默认 profile 上搜索</h3>
+<p><code>agent_session_search</code> 有两套引擎,在调用时自动选择。</p>
+<p><strong>索引。</strong> <code>@deepseek-ai/dsh-session-query-sqlite</code> 是标准 <code>dsh-base</code> bundle 里
+<code>sessionQuery</code> 的具体后端,它提供了一个基于 SQLite FTS5 的 <code>searchSessions()</code>。
+可用时本插件就走它,返回 <code>engine: &quot;index&quot;</code>。</p>
+<p><strong>但它默认是关的。</strong> <code>dsh-base</code> 是这样接线的:</p>
 <pre><code class="language-yaml">- id: session-query-sqlite
   name: &#39;@deepseek-ai/dsh-session-query-sqlite&#39;
   config:
     path: &#39;:memory:&#39;
     openAt: never
 </code></pre>
-<p>and the engine&#39;s own guard throws <code>SESSION_QUERY_SEARCH_DISABLED</code> whenever
-<code>openAt</code> is <code>never</code>. Content search is opt-in: a deployment turns it on by
-overriding <code>openAt</code> to <code>first-search</code> or <code>startup</code> in a later patch layer,
-normally with a durable <code>path</code>.</p>
-<p>So on a stock profile the index call fails. This plugin catches exactly that
-error and falls back to scanning sessions newest-first through <code>listSessions()</code>
-and <code>filterEvents()</code> — primitives every <code>sessionQuery</code> backend has — and returns
-<code>engine: &quot;scan&quot;</code>. A failure that is <em>not</em> an unavailable index (a real backend
-fault) is reported as an error instead, because answering a broken store with a
-slower scan of the same broken store helps nobody.</p>
-<p>Measured against a real 24-session corpus on this machine:</p>
+<p>而该引擎自己的守卫在 <code>openAt</code> 为 <code>never</code> 时会抛 <code>SESSION_QUERY_SEARCH_DISABLED</code>。
+内容搜索是<strong>选择性开启</strong>的:部署方需要在后续 patch 层里把 <code>openAt</code> 覆盖为
+<code>first-search</code> 或 <code>startup</code>,通常还要配一个持久化的 <code>path</code>。</p>
+<p>所以在默认 profile 上,索引调用一定失败。本插件只捕获这一类错误,退回用
+<code>listSessions()</code> + <code>filterEvents()</code>(每个 <code>sessionQuery</code> 后端都有的原语)按最新优先
+扫描,并返回 <code>engine: &quot;scan&quot;</code>。如果失败<strong>不是</strong>「索引不可用」而是后端真的坏了,
+那就如实报错——用一次更慢的扫描去回答一个已经坏掉的存储,对谁都没有帮助。</p>
+<p>在本机一份真实的 24 会话语料上实测:</p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>index (<code>openAt: first-search</code>)</th>
-<th>scan (stock <code>openAt: never</code>)</th>
+<th>索引(<code>openAt: first-search</code>)</th>
+<th>扫描(默认 <code>openAt: never</code>)</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>term that matches</td>
-<td>3 hits</td>
-<td>3 hits</td>
+<td>能命中的词</td>
+<td>3 条结果</td>
+<td>3 条结果</td>
 </tr>
 <tr>
-<td>term that matches nothing</td>
-<td>17 ms</td>
-<td>3,042 ms</td>
+<td>命中不到的词</td>
+<td>17 毫秒</td>
+<td>3,042 毫秒</td>
 </tr>
 </tbody></table>
-<p>The index is worth having — that is why the fast path exists. It just cannot be
-the only path, and versions of this plugin up to and including 0.1.0 assumed it
-was. On every default install they returned
-<code>{&quot;error&quot;: &quot;session search is disabled…&quot;}</code> for every query. Nothing threw, so it
-looked like a working tool that simply never found anything.</p>
-<p>To turn the index on, override the bundle row in your profile&#39;s
-<code>cordis.patch.yml</code>:</p>
+<p>索引是值得有的——快路径就是为此存在。它只是不能是<strong>唯一</strong>的路径,而 0.1.0 及之前
+的版本正是这么假设的。在每一个默认安装上,它们对任何查询都返回
+<code>{&quot;error&quot;: &quot;session search is disabled…&quot;}</code>。没有任何东西抛异常,所以它看上去就像
+一个正常工作、只是从来搜不到东西的工具。</p>
+<p>要打开索引,在你 profile 的 <code>cordis.patch.yml</code> 里覆盖那一行 bundle:</p>
 <pre><code class="language-yaml">- update:
     id: session-query-sqlite
     config:
       path: &#39;~/.dsh/session-index.db&#39;
       openAt: first-search
 </code></pre>
-<h3>How it works</h3>
-<p>The plugin is a thin layer over the harness&#39;s <code>sessionQuery</code> service — no parsing, no indexing, no cache of its own:</p>
+<h3>工作原理</h3>
+<p>这个插件只是 harness <code>sessionQuery</code> 服务上几个方法的一层薄封装——没有自己的解析、索引或缓存:</p>
 <ul>
-<li><strong><code>searchSessions()</code></strong> — FTS5 full-text search; backs the <code>engine: &quot;index&quot;</code> path of <code>agent_session_search</code>. <strong>Optional</strong>: present only on the SQLite backend, and only usable when that backend has search enabled. Always called behind a capability check.</li>
-<li><strong><code>listSessions()</code></strong> — the full session list in deterministic newest-first order; backs <code>agent_session_list</code> and the <code>engine: &quot;scan&quot;</code> fallback.</li>
-<li><strong><code>filterEvents()</code></strong> — flat, pre-extracted per-event text; backs <code>agent_session_read</code>&#39;s event content and, with a <code>text</code> filter, the scan fallback&#39;s matching.</li>
-<li><strong><code>filterSessions()</code></strong> — a safe existence check by id (returns <code>[]</code> rather than throwing for an unknown id); used by <code>agent_session_read</code> before it tries to fetch content.</li>
-<li><strong><code>readTitle()</code></strong> / <strong><code>readTitleSnapshots()</code></strong> — single and batched title resolution. Session headers carry no title field of their own, so every tool that shows a title resolves it separately through one of these.</li>
+<li><strong><code>searchSessions()</code></strong> —— FTS5 全文搜索,支撑 <code>agent_session_search</code> 的 <code>engine: &quot;index&quot;</code> 路径。<strong>可选</strong>:只存在于 SQLite 后端,且只有该后端开启了搜索时才可用,因此调用前一律先做能力检查。</li>
+<li><strong><code>listSessions()</code></strong> —— 按最新优先的确定性顺序返回全部会话,支撑 <code>agent_session_list</code> 和 <code>engine: &quot;scan&quot;</code> 退路。</li>
+<li><strong><code>filterSessions()</code></strong> —— 按 id 做安全的存在性检查(遇到未知 id 返回 <code>[]</code> 而不是抛错),<code>agent_session_read</code> 在真正读取内容之前会先用它检查。</li>
+<li><strong><code>filterEvents()</code></strong> —— 拍平后的、已提取好文本的逐事件数据,支撑 <code>agent_session_read</code> 的事件内容;配合 <code>text</code> 过滤器时也支撑扫描退路的匹配。</li>
+<li><strong><code>readTitle()</code></strong> / <strong><code>readTitleSnapshots()</code></strong> —— 单个和批量的标题解析。会话头本身不带标题字段,所以任何要显示标题的工具都要单独通过这两个方法之一去解析。</li>
 </ul>
-<p>All access is read-only. The plugin creates no database, index, or persistent cache of its own — it reads whatever <code>sessionQuery</code> already maintains.</p>
-<h3>Limitations</h3>
+<p>所有访问都是只读的。插件不会创建自己的数据库、索引或持久缓存——它读的都是 <code>sessionQuery</code> 本来就维护的数据。</p>
+<h3>局限</h3>
 <ul>
-<li><strong>DSH only</strong> — does not search Codex, Claude Code, PI, or OpenCode sessions (unlike dsh-session-search).</li>
-<li><strong>Requires <code>sessionQuery</code></strong> — all three tools depend on it; there&#39;s no reduced-functionality mode. If the service isn&#39;t injected, the plugin registers nothing rather than registering tools that would fail.</li>
-<li><strong>The scan fallback opens sessions one at a time.</strong> <code>filterEvents()</code> works per-session and reads that session&#39;s whole log, so a search with no matches walks the corpus. <code>maxScan</code> bounds it, and <code>truncated: true</code> tells you when the bound was hit. Enable the index if your corpus is large.</li>
-<li><strong><code>agent_session_read</code>&#39;s event fetch has no cancellation support</strong> — <code>filterEvents()</code> doesn&#39;t accept an abort signal in the underlying service, so an aborted read still finishes fetching before its result is discarded.</li>
+<li><strong>仅支持 DSH</strong>——不搜索 Codex、Claude Code、PI 或 OpenCode 的会话(这点不如 dsh-session-search)。</li>
+<li><strong>依赖 <code>sessionQuery</code></strong>——三个工具都依赖它,没有降级模式。如果这个服务没有被注入,插件会直接不注册任何工具,而不是注册一批会失败的工具。</li>
+<li><strong>扫描退路是一个会话一个会话打开的。</strong> <code>filterEvents()</code> 按会话工作,而且要读完那个会话的整份日志,所以一次没有命中的搜索会走遍语料。<code>maxScan</code> 用来兜底,<code>truncated: true</code> 会告诉你是否触到了上限。语料很大就把索引打开。</li>
+<li><strong><code>agent_session_read</code> 的事件读取不支持取消</strong>——底层服务的 <code>filterEvents()</code> 不接受 abort signal,所以就算调用被中止,读取本身依然会跑完,只是结果被丢弃。</li>
 </ul>
-<h3>Development</h3>
-<p>Pure JavaScript, no build step. Source and release are the same file: <code>lib/index.js</code>.</p>
+<h3>开发</h3>
+<p>纯 JavaScript,没有构建步骤。源码和发布用的是同一个文件:<code>lib/index.js</code>。</p>
 <pre><code class="language-sh">git clone https://github.com/LeslieWylie/dsh-session-search-pro.git
 cd dsh-session-search-pro
 pnpm install
 npm test
 </code></pre>
-<p>Two suites, both of which execute the real <code>lib/index.js</code> — neither is a
-source-text or regex check:</p>
+<p>两套测试,都会真正执行 <code>lib/index.js</code>,都不是源码文本或正则检查:</p>
 <ul>
-<li><strong><code>tests/tools.test.mjs</code></strong> drives <code>apply()</code> against a stubbed <code>sessionQuery</code>,
-covering both engines, the fallback, and the argument-validation paths.</li>
-<li><strong><code>tests/boot.test.mjs</code></strong> boots a real cordis <code>Context</code>, loads the harness&#39;s
-own session services, loads this package the way a profile does, and executes
-the tools through the <strong>real</strong> tool registry.</li>
+<li><strong><code>tests/tools.test.mjs</code></strong> 针对一个打桩的 <code>sessionQuery</code> 驱动 <code>apply()</code>,覆盖两套引擎、退路,以及参数校验路径。</li>
+<li><strong><code>tests/boot.test.mjs</code></strong> 启动一个真实的 cordis <code>Context</code>,加载 harness 自己的会话服务,按 profile 的方式装载本包,再通过<strong>真实的</strong>工具注册表执行这些工具。</li>
 </ul>
-<p>The second one exists because of how 0.1.0 shipped broken. Its search tool called
-<code>sq.searchSessions(...)</code> unconditionally; the unit-test fixture defined its own
-<code>searchSessions</code> stub, so every test passed, while on a stock profile the call
-threw <code>SESSION_QUERY_SEARCH_DISABLED</code> and the tool returned that config error as
-its answer to every query. <strong>A stub you write yourself will confirm your own
-misconception.</strong> So <code>boot.test.mjs</code> checks every <code>sq.&lt;method&gt;()</code> call site in the
-source against the service the harness actually ships — requiring unguarded calls
-to exist, allowing guarded ones to be absent, and separately confirming that a
-guarded method is real on <em>some</em> shipped backend rather than an invention that
-would leave the fast path as dead code.</p>
-<p>It needs the harness packages, so it exits 0 (skipped) from a bare clone. To
-actually run it:</p>
+<p>第二套存在的理由,就是 0.1.0 是怎么坏掉的:它的搜索工具无条件调用 <code>sq.searchSessions(...)</code>,而单元测试的桩自己定义了一个 <code>searchSessions</code>,于是测试全绿;但在默认 profile 上这个调用会抛 <code>SESSION_QUERY_SEARCH_DISABLED</code>,工具就把这条配置报错当作每一次查询的答案返回。<strong>你自己写的桩,只会确认你自己的误解。</strong> 所以 <code>boot.test.mjs</code> 会把源码里每一处 <code>sq.&lt;method&gt;()</code> 调用点跟 harness 真正发布的服务对照:无保护的调用必须存在,有保护的可以缺席,并且另外确认「有保护的方法」在某个已发布后端上确实存在,而不是一个凭空发明、会让快路径变成死代码的名字。</p>
+<p>它需要 harness 的包,因此在纯 clone 下会以 exit 0 跳过。要真正跑起来:</p>
 <pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt;/node_modules/dsh-session-search-pro &amp;&amp; node tests/boot.test.mjs
 </code></pre>
-<h3>License</h3>
+<h3>协议</h3>
 <p>MIT © LeslieWylie</p>
 
     </div>
-    <p class="note"><a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/LeslieWylie/dsh-session-search-pro/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

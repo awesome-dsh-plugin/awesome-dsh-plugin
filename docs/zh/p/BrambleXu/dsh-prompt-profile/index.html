@@ -190,21 +190,21 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><img src="https://raw.githubusercontent.com/BrambleXu/dsh-prompt-profile/main/assets/hero.png" alt="dsh-prompt-profile hero"></p>
-<p>Reusable Markdown prompt profiles for DeepSeek Harness. A profile can select a provider, model, and reasoning effort for one turn, render command arguments into its body, and restore the previous selection afterward.</p>
-<h3>Why this exists 💡</h3>
-<p>Model choice and review instructions are often repeated across sessions. <code>dsh-prompt-profile</code> turns those combinations into small, reusable Markdown profiles that can be invoked for one turn and then leave the Agent&#39;s previous model selection intact.</p>
-<h3>Features ✨</h3>
+<p>为 DeepSeek Harness 提供可复用的 Markdown prompt profile。一个 profile 可以为单轮对话选择 provider、model 和 reasoning effort，将命令参数渲染到 prompt 正文中，并在对话结束后恢复之前的选择。</p>
+<h3>为什么存在 💡</h3>
+<p>不同会话中经常需要重复选择模型和输入审查指令。<code>dsh-prompt-profile</code> 将这些组合保存为小型、可复用的 Markdown profile，可以应用于单轮对话，并在结束后保留 Agent 之前的模型选择。</p>
+<h3>功能 ✨</h3>
 <ul>
-<li>Discover profiles from user and project directories, with project profiles taking precedence.</li>
-<li>Substitute positional arguments into profile bodies with shell-style placeholders.</li>
-<li>Select a provider, model, and reasoning effort for one turn.</li>
-<li>Restore the previous Agent selection automatically or opt out per profile.</li>
-<li>List available profiles and invoke nested profiles by slash-separated names.</li>
+<li>从用户目录和项目目录发现 profile，项目 profile 优先。</li>
+<li>使用 shell 风格占位符将位置参数替换到 profile 正文中。</li>
+<li>为单轮对话选择 provider、model 和 reasoning effort。</li>
+<li>默认自动恢复 Agent 之前的选择，也可以按 profile 关闭恢复。</li>
+<li>列出可用 profile，并通过斜杠分隔的名称调用嵌套 profile。</li>
 </ul>
-<h3>Install 📦</h3>
+<h3>安装 📦</h3>
 <pre><code class="language-sh">dsh plugin --profile demo add ./dsh-prompt-profile
 </code></pre>
-<p>Create a user profile under <code>~/.dsh/prompt-profiles/</code> or a project profile under <code>&lt;repo&gt;/.dsh/prompt-profiles/</code>:</p>
+<p>在 <code>~/.dsh/prompt-profiles/</code> 下创建用户 profile，或在 <code>&lt;repo&gt;/.dsh/prompt-profiles/</code> 下创建项目 profile：</p>
 <pre><code class="language-markdown">---
 description: Deep code review
 provider: deepseek
@@ -214,93 +214,93 @@ restore: true
 ---
 Review $1 for correctness, regressions, and missing tests. Extra context: ${@:2}
 </code></pre>
-<p>Project profiles override user profiles with the same relative name.</p>
-<h3>Use 🚀</h3>
+<p>项目 profile 会覆盖相同相对名称的用户 profile。</p>
+<h3>使用 🚀</h3>
 <pre><code class="language-text">/prompt-profile list
 /prompt-profile review src/index.ts &quot;focus on cancellation&quot;
 </code></pre>
-<p>Nested files use slash-separated names. For example, <code>.dsh/prompt-profiles/review/security.md</code> is <code>review/security</code>.</p>
-<p>Supported placeholders:</p>
+<p>嵌套文件使用斜杠分隔的名称。例如，<code>.dsh/prompt-profiles/review/security.md</code> 对应的名称是 <code>review/security</code>。</p>
+<p>支持的占位符：</p>
 <table>
 <thead>
 <tr>
-<th>Placeholder</th>
-<th>Value</th>
+<th>占位符</th>
+<th>值</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>$1</code>, <code>$2</code>, …</td>
-<td>One positional argument</td>
+<td><code>$1</code>、<code>$2</code>、…</td>
+<td>一个位置参数</td>
 </tr>
 <tr>
-<td><code>$@</code>, <code>@$</code>, <code>$ARGUMENTS</code></td>
-<td>All arguments</td>
+<td><code>$@</code>、<code>@$</code>、<code>$ARGUMENTS</code></td>
+<td>全部参数</td>
 </tr>
 <tr>
 <td><code>${@:N}</code></td>
-<td>Arguments from position N</td>
+<td>从第 N 个位置开始的参数</td>
 </tr>
 <tr>
 <td><code>${@:N:L}</code></td>
-<td>L arguments from position N</td>
+<td>从第 N 个位置开始的 L 个参数</td>
 </tr>
 </tbody></table>
 <h3>Frontmatter 🧾</h3>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Required</th>
-<th>Meaning</th>
+<th>字段</th>
+<th>要求</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>description</code></td>
-<td>No</td>
-<td>Text shown by <code>/prompt-profile list</code></td>
+<td>否</td>
+<td><code>/prompt-profile list</code> 中显示的文本</td>
 </tr>
 <tr>
 <td><code>provider</code></td>
-<td>With <code>model</code></td>
-<td>Harness provider route</td>
+<td>与 <code>model</code> 一起使用</td>
+<td>Harness provider 路由</td>
 </tr>
 <tr>
 <td><code>model</code></td>
-<td>With <code>provider</code></td>
-<td>Provider-owned model ID</td>
+<td>与 <code>provider</code> 一起使用</td>
+<td>provider 所属的 model ID</td>
 </tr>
 <tr>
 <td><code>reasoningEffort</code></td>
-<td>With <code>provider</code> and <code>model</code></td>
-<td>Adapter-owned reasoning effort ID</td>
+<td>与 <code>provider</code> 和 <code>model</code> 一起使用</td>
+<td>adapter 所属的 reasoning effort ID</td>
 </tr>
 <tr>
 <td><code>restore</code></td>
-<td>No</td>
-<td>Restore the prior selection after the turn; defaults to <code>true</code></td>
+<td>否</td>
+<td>本轮结束后恢复之前的选择；默认为 <code>true</code></td>
 </tr>
 </tbody></table>
-<p>Omit both <code>provider</code> and <code>model</code> to use the current agent selection.</p>
-<h3>Configure ⚙️</h3>
+<p>同时省略 <code>provider</code> 和 <code>model</code>，即可使用当前 Agent 的选择。</p>
+<h3>配置 ⚙️</h3>
 <pre><code class="language-yaml">- id: dsh-prompt-profile
   name: dsh-prompt-profile
   config:
     userDirectory: ~/.dsh/prompt-profiles
     projectDirectory: .dsh/prompt-profiles
 </code></pre>
-<h3>Develop 🧑‍💻</h3>
+<h3>开发 🧑‍💻</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run check
 </code></pre>
-<h3>Scope 🎯</h3>
-<p>Version 0.1 intentionally omits prompt chains, loops, skill injection, subagents, worktrees, and best-of-N orchestration. Those features should be added only when Harness extension points can preserve their lifecycle and durable-session semantics.</p>
-<h3>License 📄</h3>
+<h3>范围 🎯</h3>
+<p>0.1 版本有意不包含 prompt chain、循环、skill 注入、subagent、worktree 和 best-of-N 编排。只有当 Harness 扩展点能够保留其生命周期和持久会话语义时，才应添加这些功能。</p>
+<h3>许可证 📄</h3>
 <p>MIT</p>
-<h3>Credits 🙏</h3>
-<p>The core idea comes from <a href="https://github.com/nicobailon/pi-prompt-template-model"><code>pi-prompt-template-model</code></a>. This first Harness-native release focuses on the smallest useful unit: deterministic discovery, argument substitution, scoped model routing, and restoration.</p>
+<h3>致谢 🙏</h3>
+<p>核心思路来自 <a href="https://github.com/nicobailon/pi-prompt-template-model"><code>pi-prompt-template-model</code></a>。首个 Harness 原生版本专注于最小可用单元：确定性发现、参数替换、作用域内的模型路由和恢复。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/BrambleXu/dsh-prompt-profile/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/BrambleXu/dsh-prompt-profile/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
