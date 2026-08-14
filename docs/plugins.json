@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 268,
+ "count": 271,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1387,12 +1387,26 @@
    "url": "https://github.com/Flyvhidbwo/dsh-vision-proxy",
    "category": "tools",
    "description": {
-    "en": "DeepSeek brain + automatic image transcription: attach images in the GUI and each one is transcribed to text via any OpenAI-compatible VLM (qwen3.7-flash by default) before reaching the text-only DeepSeek.",
-    "zh": "DeepSeek 大脑 + 自动识图：GUI 附加的每张图片自动经 OpenAI 兼容 VLM（默认 qwen3.7-flash）转译成文字，再交给纯文本的 DeepSeek 作答。"
+    "en": "DeepSeek brain + automatic image transcription: attach images in the GUI and each one is transcribed to text via any OpenAI-compatible VLM before reaching the text-only DeepSeek — free anonymous endpoint by default, or a paid fast path (qwen3.7-flash) with your own key (DashScope/Zhipu/Ollama/OpenRouter).",
+    "zh": "DeepSeek 大脑 + 自动识图：GUI 附加的每张图片自动经 OpenAI 兼容 VLM 转译成文字，再交给纯文本的 DeepSeek 作答——默认走免费匿名端点（零配置），填自己的 key 可启用付费快速通道（qwen3.7-flash，支持 DashScope/智谱/Ollama/OpenRouter）。"
    },
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:Flyvhidbwo/dsh-vision-proxy",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-vision-bridge",
+   "owner": "ximengxiaolan",
+   "url": "https://github.com/ximengxiaolan/dsh-vision-bridge",
+   "category": "tools",
+   "description": {
+    "en": "Composer-attached images are transcribed to text by an OpenAI-compatible vision model before reaching text-only DeepSeek models.",
+    "zh": "输入框贴图自动识别：由 OpenAI 兼容视觉模型转成文字描述后，再交给纯文本 DeepSeek 模型处理。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:ximengxiaolan/dsh-vision-bridge",
    "added": "2026-08-14"
   },
   {
@@ -2348,6 +2362,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-md-preview",
+   "owner": "LeslieWylie",
+   "url": "https://github.com/LeslieWylie/dsh-md-preview",
+   "category": "tools",
+   "description": {
+    "en": "Render Markdown to a standalone, self-contained HTML page: an `md_html_render` tool that works in a headless profile, plus a web drawer to browse, preview, edit and export local `.md` files; both share one renderer, with no runtime dependencies.",
+    "zh": "把 Markdown 渲染为自包含的独立 HTML 页面：提供在 headless 配置下同样可用的 `md_html_render` 工具，以及在网页端浏览、预览、编辑并导出本地 `.md` 文件的抽屉；两个入口共用同一个渲染器，无运行时依赖。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:LeslieWylie/dsh-md-preview",
+   "added": "2026-08-14"
+  },
+  {
    "name": "skills",
    "owner": "creght-dev",
    "url": "https://github.com/creght-dev/skills",
@@ -2359,6 +2387,20 @@
    "npm": null,
    "stars": 7,
    "install": "dsh plugin --profile web add github:creght-dev/skills",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-skill-manager",
+   "owner": "YTxue",
+   "url": "https://github.com/YTxue/dsh-skill-manager",
+   "category": "skill",
+   "description": {
+    "en": "Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.",
+    "zh": "设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:YTxue/dsh-skill-manager",
    "added": "2026-08-14"
   },
   {
