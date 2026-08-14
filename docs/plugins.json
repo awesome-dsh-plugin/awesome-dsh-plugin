@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 154,
+ "count": 155,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1233,6 +1233,18 @@
     "zh": "独立只读验收层：顶层 turn 收尾前 spawn 只读 verifier，未通过时把缺口注回主 agent。"
    },
    "install": "dsh plugin --profile web add github:EvilIrving/dsh-proof",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-doublecheck",
+   "owner": "PerryLink",
+   "url": "https://github.com/PerryLink/dsh-doublecheck",
+   "category": "workflow",
+   "description": {
+    "en": "Engineering-discipline guard: grill the requirements before the first edit, enforce red/green test evidence gates, and audit the delivery with a forked adversary (grill-requirements skill + tool-policy gates).",
+    "zh": "工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审（grill-requirements 技能 + 工具策略门）。"
+   },
+   "install": "dsh plugin --profile web add github:PerryLink/dsh-doublecheck",
    "added": "2026-08-14"
   },
   {
