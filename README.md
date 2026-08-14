@@ -361,6 +361,7 @@ dsh plugin --profile web add dshmarket
 - [anweat/dsh-voice-webspeech](https://github.com/anweat/dsh-voice-webspeech) - Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).
 - [anweat/dsh-restart](https://github.com/anweat/dsh-restart) - Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.
 - [yyh-001/dsh-expression](https://github.com/yyh-001/dsh-expression) - Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.
+- [PC2005-cloud/dsh-pet#dsh-pet](https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet) - Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.
 
 
 ## Contributing
