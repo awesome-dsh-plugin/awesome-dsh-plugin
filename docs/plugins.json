@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 136,
+ "count": 138,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -430,6 +430,18 @@
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-mnemon",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-mneme",
+   "owner": "modusensus",
+   "url": "https://github.com/modusensus/dsh-mneme",
+   "category": "session",
+   "description": {
+    "en": "Cross-session memory with memory sovereignty: SQLite + human-editable Markdown mirror, autoDream background consolidation (dedup/merge/conflict resolution), 6 memory tools, 106 tests.",
+    "zh": "跨会话记忆，记忆主权归还于人：SQLite + 可人工编辑的 Markdown 镜像，autoDream 后台巩固（去重/合并/冲突裁决），6 个记忆工具，106 个测试护航。"
+   },
+   "install": "dsh plugin --profile web add github:modusensus/dsh-mneme",
+   "added": "2026-08-14"
   },
   {
    "name": "nowledge-mem-deepseek-harness",
@@ -1533,6 +1545,18 @@
     "zh": "掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-tmuxctl",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-updater-ui",
+   "owner": "xingyingyuzhui",
+   "url": "https://github.com/xingyingyuzhui/dsh-updater-ui",
+   "category": "dev",
+   "description": {
+    "en": "DSH self-updater in the settings page: one-click check/pull (git pull --ff-only), auto background checks, version diff and changelog preview with a red-dot reminder.",
+    "zh": "设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。"
+   },
+   "install": "dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui",
    "added": "2026-08-14"
   },
   {

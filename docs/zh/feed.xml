@@ -55,6 +55,13 @@
     <summary>跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。</summary>
   </entry>
   <entry>
+    <title>dsh-mneme</title>
+    <id>https://github.com/modusensus/dsh-mneme</id>
+    <link href="https://github.com/modusensus/dsh-mneme"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>跨会话记忆，记忆主权归还于人：SQLite + 可人工编辑的 Markdown 镜像，autoDream 后台巩固（去重/合并/冲突裁决），6 个记忆工具，106 个测试护航。</summary>
+  </entry>
+  <entry>
     <title>nowledge-mem-deepseek-harness</title>
     <id>https://github.com/nowledge-co/nowledge-mem-deepseek-harness</id>
     <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/BiBoyang/dsh-im-bridge"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。</summary>
-  </entry>
-  <entry>
-    <title>dsh-polyglot</title>
-    <id>https://github.com/Jesse-njx/dsh-polyglot</id>
-    <link href="https://github.com/Jesse-njx/dsh-polyglot"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。</summary>
   </entry>
 </feed>

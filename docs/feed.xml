@@ -55,6 +55,13 @@
     <summary>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</summary>
   </entry>
   <entry>
+    <title>dsh-mneme</title>
+    <id>https://github.com/modusensus/dsh-mneme</id>
+    <link href="https://github.com/modusensus/dsh-mneme"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Cross-session memory with memory sovereignty: SQLite + human-editable Markdown mirror, autoDream background consolidation (dedup/merge/conflict resolution), 6 memory tools, 106 tests.</summary>
+  </entry>
+  <entry>
     <title>nowledge-mem-deepseek-harness</title>
     <id>https://github.com/nowledge-co/nowledge-mem-deepseek-harness</id>
     <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/BiBoyang/dsh-im-bridge"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Two-way WeChat (iLink) bridge: turn-end and approval-request push, in-chat approve/reject and message injection, persistent dedup and convergent long-reply chunking; channel layer extensible to other IMs.</summary>
-  </entry>
-  <entry>
-    <title>dsh-polyglot</title>
-    <id>https://github.com/Jesse-njx/dsh-polyglot</id>
-    <link href="https://github.com/Jesse-njx/dsh-polyglot"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.</summary>
   </entry>
 </feed>
