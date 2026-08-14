@@ -39,6 +39,22 @@
   "npm": "@dsh-external/dsh-vision-toolkit",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/anweat/dsh-browser": {
+  "npm": "@anweat/dsh-browser",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/anweat/dsh-restart": {
+  "npm": "dsh-restart",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/anweat/dsh-voice-webspeech": {
+  "npm": "dsh-voice-webspeech",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/anweat/dsh-web-search-pro": {
+  "npm": "dsh-web-search-pro",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/Areium/dsh-fail-logger": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -320,6 +336,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/KinGao294/dsh-skin": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/kunjinkao-os/dsh-mobile-gui-agent": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -631,6 +651,10 @@
   "npm": "@sakikotgw/pack-agent",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/SamXiaBing/dsh-adb": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/Sanqi-normal/dsh-webui-market-plugin": {
   "npm": "@sanqi-normal/dsh-webui-market-plugin",
   "checkedAt": "2026-08-14"
@@ -640,6 +664,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Sev7een/dsh-plugin-automations": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/slywalker2006/dsh-passwords": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },

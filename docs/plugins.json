@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 204,
+ "count": 211,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -984,6 +984,19 @@
    "added": "2026-08-13"
   },
   {
+   "name": "dsh-mobile-gui-agent",
+   "owner": "kunjinkao-os",
+   "url": "https://github.com/kunjinkao-os/dsh-mobile-gui-agent",
+   "category": "tools",
+   "description": {
+    "en": "Android GUI Agent with ADB screenshots, compact UI hierarchy grounding, verified iterative actions, approvals, and a Mobile Web view.",
+    "zh": "Android GUI Agent：ADB 截图、压缩 UI hierarchy 定位、逐步动作验证、审批和 Mobile Web 视图。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:kunjinkao-os/dsh-mobile-gui-agent",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-data-agent",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-data-agent",
@@ -1605,6 +1618,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:huey1in/trio",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-adb",
+   "owner": "SamXiaBing",
+   "url": "https://github.com/SamXiaBing/dsh-adb",
+   "category": "tools",
+   "description": {
+    "en": "ADB device & bench operations for DSH: device discovery, structured logcat (background streaming), apk install, file pull/push, and dumpsys performance snapshots.",
+    "zh": "ADB 设备·台架运维工具集：设备发现、结构化 logcat（后台采集）、apk 安装、文件 pull/push、性能快照。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:SamXiaBing/dsh-adb",
    "added": "2026-08-14"
   },
   {
@@ -2544,6 +2570,19 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-passwords",
+   "owner": "slywalker2006",
+   "url": "https://github.com/slywalker2006/dsh-passwords",
+   "category": "dev",
+   "description": {
+    "en": "Login gateway for the DSH web UI: password door with first-run setup, bcrypt + at-rest encryption (AES-256-GCM/HMAC), brute-force lockout, audit log, TLS 1.2+ with 80→443 redirect, CSRF, anti-framing.",
+    "zh": "DSH Web UI 登录网关：首次配置、bcrypt + 静态加密（AES-256-GCM/HMAC）、防爆破、审计日志、TLS 1.2+ 与 80→443 跳转、CSRF 与防嵌框。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:slywalker2006/dsh-passwords",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-ads",
    "owner": "Nagi-ovo",
    "url": "https://github.com/Nagi-ovo/dsh-ads",
@@ -2697,6 +2736,58 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:minybear/DeepSeek-Harness-Pet",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-search-pro",
+   "owner": "anweat",
+   "url": "https://github.com/anweat/dsh-web-search-pro",
+   "category": "fun",
+   "description": {
+    "en": "Persistent enhanced web search: multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/Bilibili/YouTube/V2EX/Xiaohongshu/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, Playwright rendering.",
+    "zh": "增强型、可持久化的网页搜索：多引擎路由（DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS）、SQLite+LRU 缓存、userscript 风格抽取、Playwright 渲染。"
+   },
+   "npm": "dsh-web-search-pro",
+   "install": "dsh plugin --profile web add dsh-web-search-pro",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-browser",
+   "owner": "anweat",
+   "url": "https://github.com/anweat/dsh-browser",
+   "category": "fun",
+   "description": {
+    "en": "Self-contained browser runtime: Playwright (chromium) + OpenCLI as plugin-local dependencies (global reuse fallback), exposes a `browser` service and 9 interactive browser tools.",
+    "zh": "自包含浏览器运行时：Playwright（chromium）+ OpenCLI 作为插件本地依赖（全局复用回退），提供 `browser` 服务与 9 个交互式浏览器工具。"
+   },
+   "npm": "@anweat/dsh-browser",
+   "install": "dsh plugin --profile web add @anweat/dsh-browser",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-voice-webspeech",
+   "owner": "anweat",
+   "url": "https://github.com/anweat/dsh-voice-webspeech",
+   "category": "fun",
+   "description": {
+    "en": "Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).",
+    "zh": "浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。"
+   },
+   "npm": "dsh-voice-webspeech",
+   "install": "dsh plugin --profile web add dsh-voice-webspeech",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-restart",
+   "owner": "anweat",
+   "url": "https://github.com/anweat/dsh-restart",
+   "category": "fun",
+   "description": {
+    "en": "Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.",
+    "zh": "DSH 重启插件：可配置的重启方式（Node 原生/旧 PowerShell 适配）、重启后自动继续的提示词、可选看门狗自动拉起。"
+   },
+   "npm": "dsh-restart",
+   "install": "dsh plugin --profile web add dsh-restart",
    "added": "2026-08-14"
   }
  ]
