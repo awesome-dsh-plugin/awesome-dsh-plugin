@@ -51,6 +51,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [web-components](https://github.com/omdsh-dev/web-components) - Web Components support.
 - [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) - Turn navigation for the DSH Web UI.
 - [dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) - Right-side dot-timeline rail: jump between user messages.
+- [dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) - DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.
 
 ### Sessions & Messages
 
