@@ -217,6 +217,27 @@ ${recent.map((e) => `  <entry>
   fs.writeFileSync(loc.feedOut, feed)
 }
 
+// Public registry API: /plugins.json — deterministic; consumed by the find
+// plugin, the site, and any third-party storefront (Pages serves CORS *).
+const registry = {
+  name: 'awesome-dsh-plugin',
+  url: ORIGIN,
+  source: 'https://github.com/awesome-dsh-plugin/awesome-dsh-plugin',
+  updated: [...ordered].map((e) => e.added).sort().pop(),
+  count: N,
+  categories: Object.fromEntries(CAT_IDS.map((id) => [id, Object.fromEntries(LOCALES.map((l) => [l.code, l.categories[id]]))])),
+  plugins: ordered.map((e) => ({
+    name: e.name,
+    owner: e.owner,
+    url: e.url,
+    category: e.cat,
+    description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
+    install: `dsh plugin --profile web add github:${e.url.replace('https://github.com/', '')}`,
+    added: e.added,
+  })),
+}
+fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
+
 const today = new Date().toISOString().slice(0, 10)
 const alternates = [
   ...LOCALES.map((l) => `      <xhtml:link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}"/>`),
