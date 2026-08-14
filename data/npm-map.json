@@ -75,6 +75,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/asukasec/dsh-message-preview": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/awesome-dsh-plugin/dsh-find-plugin": {
   "npm": "dsh-find-plugin",
   "checkedAt": "2026-08-14"

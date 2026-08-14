@@ -13,6 +13,13 @@
     <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
   </entry>
   <entry>
+    <title>asukasec/dsh-message-preview</title>
+    <id>https://github.com/asukasec/dsh-message-preview</id>
+    <link href="https://github.com/asukasec/dsh-message-preview"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.</summary>
+  </entry>
+  <entry>
     <title>l541402398/dsh-file-uploads</title>
     <id>https://github.com/l541402398/dsh-file-uploads</id>
     <link href="https://github.com/l541402398/dsh-file-uploads"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/czm15053/dsh-peer-link"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).</summary>
-  </entry>
-  <entry>
-    <title>Nwflower/dsh-file-claim</title>
-    <id>https://github.com/Nwflower/dsh-file-claim</id>
-    <link href="https://github.com/Nwflower/dsh-file-claim"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</summary>
   </entry>
 </feed>

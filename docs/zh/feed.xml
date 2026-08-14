@@ -13,6 +13,13 @@
     <summary>Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。</summary>
   </entry>
   <entry>
+    <title>asukasec/dsh-message-preview</title>
+    <id>https://github.com/asukasec/dsh-message-preview</id>
+    <link href="https://github.com/asukasec/dsh-message-preview"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。</summary>
+  </entry>
+  <entry>
     <title>l541402398/dsh-file-uploads</title>
     <id>https://github.com/l541402398/dsh-file-uploads</id>
     <link href="https://github.com/l541402398/dsh-file-uploads"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/czm15053/dsh-peer-link"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。</summary>
-  </entry>
-  <entry>
-    <title>Nwflower/dsh-file-claim</title>
-    <id>https://github.com/Nwflower/dsh-file-claim</id>
-    <link href="https://github.com/Nwflower/dsh-file-claim"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。</summary>
   </entry>
 </feed>
