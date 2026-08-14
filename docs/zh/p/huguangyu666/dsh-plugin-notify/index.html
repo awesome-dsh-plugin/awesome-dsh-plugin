@@ -189,7 +189,175 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<p>DeepSeek Harness 插件：通知出口——让 agent 主动联系你。桌面通知 / 中文语音播报 / 提示音，Windows 本机零依赖。</p>
+<h3>功能</h3>
+<ul>
+<li><p><strong>系统提示词注入</strong>：自动往所有 agent 的系统提示词注入主动通知规则（长任务完成 / 出错 / 需要你注意时用 notify_user），不用每次教；<code>DSH_NOTIFY_INJECT_PROMPT=0</code> 可禁用</p>
+</li>
+<li><p><strong>自动通知兜底</strong>（不依赖模型自觉）：</p>
+<ul>
+<li>会话回合出错 → 自动语音 + 桌面通知</li>
+<li>回合结束 → 立即桌面通知，进入 60 秒确认窗口：期间你在 dsh 发了消息（=看到了）则取消；没发 → 中文语音呼叫你（<strong>无论你在不在电脑前</strong>——用电脑没发现任务完成更需要语音打断提醒）；<code>DSH_NOTIFY_ON_TURN_END=0</code> 关闭全部</li>
+</ul>
+</li>
+<li><p><strong>agent 工具 <code>notify_user</code></strong>：模型想说啥说啥——把想说的话写进 <code>message</code> 自由发挥（如搞定了，报告放桌面了）；不写则按 <code>scene</code> 用默认文案</p>
+</li>
+<li><p><strong>命令 <code>/notify</code></strong>：<code>/notify &lt;内容&gt; [--speak|--sound|--toast]</code> 手动发通知</p>
+</li>
+<li><p><strong>设置入口（dsh 原生设置界面）</strong>：dsh 左下角设置 → 「通知」分区——所有行为偏好直接嵌在 dsh 设置里（默认通知方式 / 确认窗口秒数 / 自动通知开关 / 语音呼叫开关 / 音量增强 / 文案模板），保存即生效；另有 <code>/notify</code> 页面可测试通知</p>
+</li>
+<li><p><strong>音量增强</strong>：可选——通知时自动把系统音量调到最大，播报完恢复原音量（适合怕错过呼叫的场景，不是每个人都喜欢所以默认关闭）</p>
+</li>
+<li><p><strong>炸裂音效</strong>：4 种合成音效（炸裂 / 胜利 / 警报 / 清脆，Python 标准库实时合成），通知时可配；默认「炸裂」</p>
+</li>
+<li><p><strong>音量增强默认开启</strong>：通知时自动把系统音量调到最大，播完恢复原音量</p>
+</li>
+<li><p><strong>三种通道</strong>（可组合）：</p>
+<ul>
+<li><code>toast</code> 桌面通知（NotifyIcon 气泡，无额外模块）</li>
+<li><code>speak</code> 中文语音播报（PowerShell SAPI 离线 TTS，优先中文语音）</li>
+<li><code>sound</code> 系统提示音</li>
+<li><code>both</code> 语音 + 桌面通知</li>
+</ul>
+</li>
+</ul>
+<h3>安装</h3>
+<p><strong>方式一：官方命令（推荐）</strong></p>
+<pre><code class="language-bash"># 装进 web profile（自动 reconcile dsh.profile.bundles）
+dsh plugin --profile web add dsh-plugin-notify
+dsh web   # 重启生效
+</code></pre>
+<p><strong>方式二：商店一键安装</strong></p>
+<p>装 <a href="https://github.com/huguangyu666/dsh-store">dsh-store</a>，打开「插件商店」搜索安装。</p>
+<p><strong>方式三：手动</strong></p>
+<pre><code class="language-bash">npm i dsh-plugin-notify
+</code></pre>
+<p>在 dsh 的 profile patch（<code>~/.dsh/profiles/&lt;profile&gt;/cordis.patch.yml</code>）中挂载：</p>
+<pre><code class="language-yaml">- insert:
+    - id: notify
+      name: &#39;dsh-plugin-notify&#39;
+</code></pre>
+<p>重启 dsh 即生效。要求 Windows + PowerShell 5.1+（系统自带）。</p>
+<h3>使用</h3>
+<p><strong>模型主动通知</strong>（核心场景）：直接跟 agent 说&quot;做完这个任务通知我&quot;&quot;出错时叫我&quot;，它会调用 <code>notify_user</code> 工具。语音播报会念出内容（自动截断 300 字），适合你离开电脑时的场景：</p>
+<blockquote>
+<p>&quot;查一下今天的项目状态，完成后用语音叫我&quot;</p>
+</blockquote>
+<p><strong>手动通知</strong>：</p>
+<pre><code>/notify 任务完成了
+/notify --speak 快回来看看结果
+/notify --sound 提醒
+</code></pre>
+<p><strong>测试页</strong>：浏览器打开 <code>/notify</code>，选模式点发送；&quot;演示：任务完成叫你&quot;一键体验完整场景。</p>
+<h4>环境变量</h4>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DSH_NOTIFY_DEFAULT_MODE</code></td>
+<td><code>toast</code></td>
+<td>默认通知方式（<code>toast</code> / <code>speak</code> / <code>sound</code> / <code>both</code>）</td>
+</tr>
+<tr>
+<td><code>DSH_NOTIFY_INJECT_PROMPT</code></td>
+<td><code>1</code></td>
+<td>是否向系统提示词注入&quot;主动通知&quot;规则（<code>0</code> 关闭）</td>
+</tr>
+<tr>
+<td><code>DSH_NOTIFY_ON_TURN_END</code></td>
+<td><code>1</code></td>
+<td>回合结束是否自动通知（<code>0</code> 关闭全部）</td>
+</tr>
+<tr>
+<td><code>DSH_NOTIFY_CALL_DELAY_SECONDS</code></td>
+<td><code>60</code></td>
+<td>toast 发出后等待用户响应的秒数，超时未互动则语音呼叫</td>
+</tr>
+<tr>
+<td><code>DSH_NOTIFY_TEMPLATE_DONE</code> 等</td>
+<td>默认模板</td>
+<td>文案模板（task_done / task_error / call_back），也可用设置面板或 <code>~/.dsh/notify/config.json</code> 覆盖</td>
+</tr>
+</tbody></table>
+<h3>文案模板</h3>
+<p>模型不写 <code>message</code> 时按场景用默认文案（写了 <code>message</code> 则完全自由发挥）。模板支持 <code>{{summary}}</code> / <code>{{session}}</code> 变量，默认不含：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>默认文案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>task_done</code></td>
+<td>任务已经完成了，快回来看看结果吧</td>
+</tr>
+<tr>
+<td><code>task_error</code></td>
+<td>任务出错了，需要你处理一下</td>
+</tr>
+<tr>
+<td><code>call_back</code></td>
+<td>我需要你过来看看</td>
+</tr>
+</tbody></table>
+<p>自定义（设置面板 / 配置文件 <code>~/.dsh/notify/config.json</code> &gt; 环境变量 &gt; 默认）：</p>
+<pre><code class="language-bash"># 方式一：配置文件 ~/.dsh/notify/templates.json
+# {&quot;task_done&quot;: &quot;搞定啦，任务完成了{{summary}}&quot;}
+# 方式二：环境变量
+# DSH_NOTIFY_TEMPLATE_DONE=&quot;搞定啦，任务完成了{{summary}}&quot;
+```## 设置面板
+
+浏览器打开 `/notify` 可配置所有行为偏好，保存到 `~/.dsh/notify/config.json` 立即生效：
+
+| 配置 | 说明 |
+|---|---|
+| 默认通知方式 | 模型/命令不指定时的默认模式 |
+| 确认窗口（秒） | toast 发出后等待用户回应的秒数，超时未互动则语音呼叫（默认 60） |
+| 回合结束自动通知 | 开关（默认开） |
+| 超时语音呼叫 | 开关（默认开） |
+| 音量增强 | 通知时把系统音量调到最大，播完恢复（默认开） |
+| 通知音效 | 炸裂（默认）/ 胜利 / 警报 / 清脆 / 系统提示音 |
+| 文案模板 | 三个场景的通知文案，支持 `{{summary}}` / `{{session}}` 变量 |
+
+## 音效
+
+插件内置音效合成器（`sound.py`，纯 Python 标准库，零依赖），首次使用自动生成到 `~/.dsh/notify/sounds/`：
+
+| 音效 | 构成 |
+|---|---|
+| 炸裂 | 低频冲击下滑 + 噪声爆裂 + 高频滑音 |
+| 胜利 | C-E-G-C 胜利琶音 |
+| 警报 | 880Hz 方波断续 |
+| 清脆 | E6 → A6 双音 |
+
+## 实现说明
+
+- 后端是单文件 `notify.ps1`（随包分发），通过环境变量 `DSH_NOTIFY_PAYLOAD` 接收 base64 编码的 JSON（避免命令行中文编码问题）
+- 语音用系统 SAPI：自动选择 `zh-CN` 语音（如 Microsoft Huihui Desktop），无中文语音时回退默认
+- 语音播报同步执行（念完才返回），工具调用串行，超时 120 秒
+
+## 开发
+
+```bash
+npm run build   # esbuild 构建 lib/
+# 单测后端：DSH_NOTIFY_PAYLOAD=$(node -e &quot;console.log(Buffer.from(JSON.stringify({mode:&#39;speak&#39;,title:&#39;测试&#39;,message:&#39;你好&#39;})).toString(&#39;base64&#39;))&quot;) powershell -File notify.ps1
+</code></pre>
+<h3>许可</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/huguangyu666/dsh-plugin-notify/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -203,7 +371,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-open-in-vscode/" translate="no">omdsh-dev/dsh-open-in-vscode</a><span class="stars" translate="no">★ 39</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-open-in-vscode/" tabindex="-1"><p>从 Web GUI 一键在 VS Code 中打开工作区目录。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-open-in-vscode/" translate="no">omdsh-dev/dsh-open-in-vscode</a><span class="stars" translate="no">★ 40</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-open-in-vscode/" tabindex="-1"><p>从 Web GUI 一键在 VS Code 中打开工作区目录。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-notification/" translate="no">omdsh-dev/dsh-notification</a><span class="stars" translate="no">★ 38</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-notification/" tabindex="-1"><p>回合完成桌面通知，按结果分控 + 关键词过滤。</p></a></li>
       <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" translate="no">whyihaveyou/dsh-suite#plugin-notify</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" tabindex="-1"><p>回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。</p></a></li>
       <li><h3><a href="/zh/p/bobleer/dsh-acp-for-bitfun/" translate="no">bobleer/dsh-acp-for-bitfun</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/bobleer/dsh-acp-for-bitfun/" tabindex="-1"><p>BitFun 与 DSH 的 ACP 交互对接。</p></a></li>

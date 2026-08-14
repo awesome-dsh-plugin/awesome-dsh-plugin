@@ -189,7 +189,360 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/Realyujie/dsh-us-stocks/blob/main/README.zh.md">中文</a></p>
+<p>US stock market data tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>, powered by <a href="https://github.com/gadicc/yahoo-finance2"><code>yahoo-finance2</code></a>.</p>
+<p>Gives the agent five first-class tools for quotes, price history, financial statements, analyst consensus and news — instead of leaving it to improvise against HTML pages.</p>
+<h3>Before and after</h3>
+<p>One agent turn, same question, same model, same machine — the only variable is whether the plugin is installed. The task: <em>price, three-month trend, recent quarterly financials, analyst rating and recent news for AAPL.</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Without this plugin</th>
+<th>With this plugin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Steps</td>
+<td>14</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Tool calls</td>
+<td>31</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Wall clock</td>
+<td>213.5s</td>
+<td>33.2s</td>
+</tr>
+<tr>
+<td>What it called</td>
+<td>16 × <code>web_search</code>, 15 × <code>bash</code></td>
+<td>one call to each of the five tools</td>
+</tr>
+</tbody></table>
+<p>With no market-data tool available, the agent falls back on web search and shell commands, fetching and parsing one page at a time.</p>
+<p>Most of the remaining 33 seconds is model inference, which no plugin controls. Data retrieval itself is 2.6s:</p>
+<pre><code>Acceptance benchmark — AAPL
+
+  ✅ get_quote           2092ms  305.26 USD (+0.9959%), mcap 4455.02B
+  ✅ get_history          437ms  63 bars 2026-05-14..2026-08-13
+  ✅ get_financials      2255ms  4 income / 4 balance / 4 cash-flow periods
+  ✅ get_analyst_view    2557ms  buy from 41 analysts, target 322.2844
+  ✅ get_news             974ms  8 headlines, latest &quot;Tim Cook’s Final Act: A $60 Billion Bet On Texa…&quot;
+
+  tool calls        5
+  wall clock        2.56s (concurrent)
+  payload           22.0 KiB across 5 results
+</code></pre>
+<p>Reproduce with <code>npm run benchmark</code>, optionally against another ticker: <code>npm run benchmark -- TTMI</code>.</p>
+<h3>Install</h3>
+<h4>The lazy way</h4>
+<p>Say it to your DeepSeek Harness:</p>
+<pre><code>Install this plugin: https://github.com/Realyujie/dsh-us-stocks
+</code></pre>
+<p>The agent reads this README and runs the command itself. It will ask for filesystem permission on the way, because the profile directory sits outside the session workspace.</p>
+<h4>By hand</h4>
+<p>If <code>dsh</code> is on your <code>PATH</code>:</p>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-us-stocks
+</code></pre>
+<p>If it is not — which is the case when Harness was started through <code>npx</code>, since the binary then only exists in the npx cache — call it through <code>npx</code> instead:</p>
+<pre><code class="language-bash">npx @deepseek-ai/dsh plugin --profile web add dsh-us-stocks
+</code></pre>
+<p>Every command below works the same way: prefix it with <code>npx @deepseek-ai/dsh</code> in place of <code>dsh</code>, or install the CLI globally once with <code>npm install -g @deepseek-ai/dsh</code> and use the short form throughout.</p>
+<p>To update later:</p>
+<pre><code class="language-bash">dsh plugin --profile web update dsh-us-stocks
+</code></pre>
+<p>Restart the profile afterwards — plugins are resolved when the tree is composed at boot.</p>
+<p>For local development, point the profile at a checkout instead. Changes take effect after <code>npm run build</code> and a restart:</p>
+<pre><code class="language-bash">dsh plugin --profile web add link:/absolute/path/to/dsh-us-stocks
+</code></pre>
+<p><code>dsh plugin</code> forwards to pnpm inside the profile directory and keeps the profile&#39;s <code>dsh.profile.bundles</code> list in step, so no manual registration is needed.</p>
+<p>The plugin registers server-side agent tools only. It ships no browser UI.</p>
+<h3>Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>get_quote</code></td>
+<td>Last price, change, day range, volume, market cap, P/E, EPS, book value, dividend yield, 52-week range, moving averages, last and next earnings dates</td>
+</tr>
+<tr>
+<td><code>get_history</code></td>
+<td>Daily/weekly/monthly OHLCV bars with adjusted close, plus dividends and splits in the window, as structured data points</td>
+</tr>
+<tr>
+<td><code>get_financials</code></td>
+<td>Income statement, balance sheet and cash flow line items, quarterly or annual, with the reporting currency and trailing-twelve-month ratios</td>
+</tr>
+<tr>
+<td><code>get_analyst_view</code></td>
+<td>Consensus rating, buy/hold/sell counts by month, price targets, forward EPS and revenue estimates, recent broker upgrades and downgrades, EPS beat/miss history</td>
+</tr>
+<tr>
+<td><code>get_news</code></td>
+<td>Recent headlines with publisher, timestamp and link</td>
+</tr>
+</tbody></table>
+<h4><code>get_quote</code></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ticker</code></td>
+<td>string, required</td>
+<td>e.g. <code>AAPL</code>, <code>BRK-B</code></td>
+</tr>
+</tbody></table>
+<p>Earnings dates are reported as <code>last_earnings_date</code> and <code>next_earnings_date</code> separately, because upstream conflates them in one field. <code>next_earnings_date_is_estimate</code> marks a date projected from the reporting cadence rather than confirmed by the company. Across a ten-ticker sample it was true half the time, so it is worth checking rather than assuming either way.</p>
+<p><code>currency</code> is what the stock trades in; <code>financial_currency</code> is what the company reports in. They differ for ADRs, and only the latter applies to the figures in <code>get_financials</code>.</p>
+<p>Analyst ratings are deliberately not part of this tool even though upstream returns one. Consensus ratings and price targets live in <code>get_analyst_view</code>, so a caller that only wants market data never has a recommendation put in front of it.</p>
+<h4><code>get_history</code></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ticker</code></td>
+<td>string, required</td>
+<td></td>
+</tr>
+<tr>
+<td><code>range</code></td>
+<td>enum</td>
+<td><code>5d</code> <code>1mo</code> <code>3mo</code> <code>6mo</code> <code>1y</code> <code>2y</code> <code>5y</code> <code>10y</code> <code>max</code>. Default <code>1y</code></td>
+</tr>
+<tr>
+<td><code>start_date</code> / <code>end_date</code></td>
+<td>string</td>
+<td><code>yyyy-MM-dd</code>; <code>start_date</code> overrides <code>range</code></td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td>enum</td>
+<td><code>1d</code> <code>1wk</code> <code>1mo</code>. Default <code>1d</code>. One call covers ~2 years at <code>1d</code>, ~8 at <code>1wk</code>, ~35 at <code>1mo</code></td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td>Keep the most recent N bars, 1–500. Defaults to every bar in the window</td>
+</tr>
+</tbody></table>
+<p>Bars are ordered oldest to newest. No chart is rendered — visualisation is the caller&#39;s job.</p>
+<p>Dividends and splits falling inside the returned window come back as <code>dividends</code> and <code>splits</code>; both keys are absent for symbols that have never paid or split.</p>
+<p><strong>The two price bases are not interchangeable.</strong> <code>open</code>/<code>high</code>/<code>low</code>/<code>close</code> are adjusted for splits only; <code>adj_close</code> is adjusted for splits <em>and</em> dividends. Over 2019–2026, 91 of 93 AAPL monthly bars have <code>close ≠ adj_close</code>, so mixing them in one calculation is quietly wrong. Every response states this in <code>price_adjustment</code>.</p>
+<p>Bars are trimmed to fit the output budget rather than to a fixed count, since a bar costs 117–127 characters depending on price magnitude and interval. In practice a request for <code>max</code> returns 266–489 bars. When trimming happens, the warning names the next coarser interval to use for the full span.</p>
+<h4><code>get_financials</code></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ticker</code></td>
+<td>string, required</td>
+<td></td>
+</tr>
+<tr>
+<td><code>period</code></td>
+<td>enum</td>
+<td><code>quarterly</code> (default) or <code>annual</code></td>
+</tr>
+<tr>
+<td><code>statements</code></td>
+<td>array</td>
+<td>Any of <code>income</code> <code>balance</code> <code>cash_flow</code>. Default all three</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td>Most recent N periods, 1–8. Default 4</td>
+</tr>
+<tr>
+<td><code>detail</code></td>
+<td>enum</td>
+<td><code>summary</code> (default, headline line items) or <code>full</code> (every reported field)</td>
+</tr>
+</tbody></table>
+<p>Upstream depth is fixed and cannot be widened by asking for an earlier start: about 5 periods of income statement and cash flow, 7 of balance sheet, quarterly or annual alike.</p>
+<p>Every response carries <code>reporting_currency</code>. <strong>This is not always USD.</strong> An ADR files in its home currency while trading in dollars — TSM in TWD, SAP in EUR, BABA in CNY, NVO in DKK — so raw revenue is off by ~32x for TSM against a USD filer. If the currency cannot be determined the statements are still returned, with a warning not to assume USD.</p>
+<p>A full trailing-twelve-month <em>statement</em> is not available: the upstream <code>trailing</code> period type returns <code>periodType: &quot;TTM&quot;</code>, which fails <code>yahoo-finance2</code>&#39;s schema validation, and reading it would mean disabling result validation wholesale. TTM <em>aggregates</em> — revenue, gross profit, EBITDA, free cash flow and the margin, return, growth and leverage ratios — do come back, in the <code>ratios</code> block.</p>
+<p>Margins, returns and growth rates in <code>ratios</code> are unitless fractions (<code>0.27</code> means 27%). <code>debt_to_equity_percent</code> is the exception: Yahoo scales it by 100, so AAPL&#39;s 0.784x arrives as <code>78.445</code>. It keeps the upstream value and carries the unit in its name rather than being silently rescaled.</p>
+<h4><code>get_analyst_view</code></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ticker</code></td>
+<td>string, required</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong><code>recommendation_mean</code> runs 1–5 where 1 is Strong Buy and 5 is Strong Sell</strong> — a lower number is more bullish, which reads backwards if taken as a score out of five. Each response repeats the scale in <code>recommendation_mean_scale</code> rather than relying on the reader to know it.</p>
+<p>Period codes count away from now in opposite directions: <code>recommendation_trend</code> uses <code>0m</code> for this month and <code>-1m</code> for last month, while <code>estimates</code> uses <code>0q</code>/<code>+1q</code> for the current and next quarter and <code>0y</code>/<code>+1y</code> for the current and next fiscal year. <code>earnings_surprises</code> uses <code>-1q</code> for the most recently reported quarter.</p>
+<p><code>rating_changes</code> keeps the ten most recent broker actions, newest first; upstream holds hundreds. <code>action</code> is <code>up</code>, <code>down</code>, <code>main</code> (reiterated) or <code>init</code> (coverage initiated).</p>
+<p>Prices here are in the trading currency (USD for US listings) even when the company reports in another — unlike the statement figures in <code>get_financials</code>.</p>
+<h4><code>get_news</code></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ticker</code></td>
+<td>string, required</td>
+<td></td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td>1–10. Default 10</td>
+</tr>
+</tbody></table>
+<p>Headline metadata only. Article bodies are not fetched. Upstream returns at most 10 headlines regardless of what is requested, so 10 is both the default and the ceiling.</p>
+<p><strong>Only headlines that actually reference the symbol are returned.</strong> The upstream news search matches text, so a ticker that is also an ordinary word pulls in unrelated stories — searching <code>ALL</code> returned a Finnish bank&#39;s tender offer and a mineral resource update, <code>KEY</code> returned UK property filings, none of which mention Allstate or KeyCorp. Results are filtered against each article&#39;s related-tickers list, and when the symbol pass comes up short the company name is searched as well. That recovered <code>ALL</code> from 0 of 6 relevant to 6 of 6, and <code>KEY</code> likewise. The number of discarded headlines is reported as a warning; if every match is noise the tool fails with <code>no_data</code> and says so, rather than returning plausible-looking articles about other companies.</p>
+<h3>Response shape</h3>
+<p>Every tool returns a JSON string with a consistent envelope.</p>
+<p>Success:</p>
+<pre><code class="language-json">{
+  &quot;ok&quot;: true,
+  &quot;market&quot;: &quot;us&quot;,
+  &quot;ticker&quot;: &quot;AAPL&quot;,
+  &quot;as_of&quot;: &quot;2026-08-14T09:28:31.204Z&quot;,
+  &quot;data&quot;: { &quot;…&quot;: &quot;…&quot; },
+  &quot;warnings&quot;: [&quot;Returned the most recent 455 of 11509 bars, the most that fits the tool output budget. …&quot;]
+}
+</code></pre>
+<p>Failure — never a bare exception:</p>
+<pre><code class="language-json">{
+  &quot;ok&quot;: false,
+  &quot;market&quot;: &quot;us&quot;,
+  &quot;ticker&quot;: &quot;ZZZZ&quot;,
+  &quot;error&quot;: {
+    &quot;kind&quot;: &quot;unknown_symbol&quot;,
+    &quot;retryable&quot;: false,
+    &quot;message&quot;: &quot;No quote data for symbol \&quot;ZZZZ\&quot;.&quot;
+  }
+}
+</code></pre>
+<p><code>retryable</code> is the field that matters to the model. It separates &quot;this ticker genuinely has no such data, stop asking&quot; from &quot;the upstream hiccuped, the same call may work shortly&quot;.</p>
+<table>
+<thead>
+<tr>
+<th><code>kind</code></th>
+<th><code>retryable</code></th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>unknown_symbol</code></td>
+<td>no</td>
+<td>Symbol does not resolve to any instrument</td>
+</tr>
+<tr>
+<td><code>no_data</code></td>
+<td>no</td>
+<td>Symbol is valid but this dataset is absent (ETFs file no income statement)</td>
+</tr>
+<tr>
+<td><code>invalid_argument</code></td>
+<td>no</td>
+<td>Argument the tool cannot honour</td>
+</tr>
+<tr>
+<td><code>upstream_unavailable</code></td>
+<td>yes</td>
+<td>Upstream refused or errored transiently</td>
+</tr>
+<tr>
+<td><code>rate_limited</code></td>
+<td>yes</td>
+<td>Upstream throttled the request</td>
+</tr>
+<tr>
+<td><code>timeout</code></td>
+<td>yes</td>
+<td>Deadline or caller cancellation fired</td>
+</tr>
+<tr>
+<td><code>response_too_large</code></td>
+<td>yes</td>
+<td>Payload exceeded the output budget even after the envelope was stripped</td>
+</tr>
+<tr>
+<td><code>internal</code></td>
+<td>no</td>
+<td>Unclassified</td>
+</tr>
+</tbody></table>
+<p>Results above 64,000 characters are truncated: <code>data</code> is dropped, the envelope is preserved, and <code>output_truncated</code> plus <code>original_characters</code> tell the model to retry with a narrower query. <code>get_history</code>, whose payload scales with the requested window, trims its own bars against the measured size first, so it reaches that fallback only in pathological cases.</p>
+<h3>Configuration</h3>
+<pre><code class="language-yaml">enabled: true          # register the tools
+market: us             # only &quot;us&quot; today
+quoteTtlMs: 10000      # live quote cache lifetime
+referenceTtlMs: 300000 # statements, bars, ratings and news cache lifetime
+</code></pre>
+<p>Caching is in-memory and per-process. Concurrent identical requests are collapsed onto a single upstream call, so an agent fanning five tools at one ticker does not make five redundant round trips. Failures are never cached.</p>
+<h3>Development</h3>
+<pre><code class="language-bash">npm install
+npm run typecheck
+npm test            # unit tests, no network
+npm run build
+npm run test:live   # live smoke test against Yahoo, needs network
+npm run benchmark   # AAPL acceptance benchmark
+</code></pre>
+<p>Requires Node &gt;= 22.19.0.</p>
+<h4>Layout</h4>
+<pre><code>src/
+├── index.ts                    apply(ctx, config) entry point
+├── config.ts                   schemastery config, incl. the market enum
+├── datasource/us/
+│   └── yahoo-client.ts         yahoo-finance2 wrapper: caching, cancellation, error typing
+├── tools/                      one file per tool, plus shared shaping helpers
+└── util/
+    ├── cache.ts                short-TTL cache with in-flight de-duplication
+    ├── errors.ts               failure taxonomy and envelopes
+    └── stringify.ts            output budget enforcement
+</code></pre>
+<p>Only US equities are supported. The <code>datasource/&lt;market&gt;/</code> split, the <code>market</code> config enum and the opaque handling of <code>ticker</code> exist so another venue can be added without reshaping the plugin — but nothing else is implemented today.</p>
+<h3>Notes on the data source</h3>
+<p>Financial statements come from Yahoo&#39;s <code>fundamentalsTimeSeries</code> endpoint rather than the <code>quoteSummary</code> statement modules. Since late 2024 those modules return only a handful of income-statement fields and lag by a reporting period; for AAPL they gave 9 populated fields ending 2026-03-31, against 35 ending 2026-06-30 from the endpoint used here.</p>
+<p>This is an unofficial, undocumented API. It can change without notice, and it is rate-limited. Data is provided as-is for research; it is not investment advice.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Realyujie/dsh-us-stocks/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -203,8 +556,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1259</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 322</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 323</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>

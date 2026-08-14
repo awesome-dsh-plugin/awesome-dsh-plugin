@@ -189,7 +189,88 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/README.md">简体中文</a> · English</p>
+<p><a href="https://github.com/SaiSenBox/dsh-boot-guard/actions/workflows/check.yml"><img src="https://github.com/SaiSenBox/dsh-boot-guard/actions/workflows/check.yml/badge.svg" alt="Check"></a>
+<a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License"></a></p>
+<blockquote>
+<p>What do you do when a plugin breaks the page you normally use to disable plugins?</p>
+</blockquote>
+<p><code>dsh-boot-guard</code> is a small safety net for the <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web UI. It stays out of the way during a healthy boot. If plugin loading fails and the page stops at <code>Failed to load plugins</code>, Boot Guard adds a recovery console that can identify the likely culprit, skip it temporarily, and get the workspace running again.</p>
+<p><img src="https://raw.githubusercontent.com/SaiSenBox/dsh-boot-guard/main/assets/boot-guard-preview.png" alt="Boot Guard recovery console"></p>
+<p><em>The screenshot shows read-only self-check mode. It demonstrates the UI without changing configuration.</em></p>
+<h3>Why this exists</h3>
+<p>This started with an awkward little failure: I was working on a DSH appearance plugin, refreshed the page, and the entire Web UI stopped loading.</p>
+<p>Normally I would disable the broken plugin from the plugin settings. Unfortunately, those settings live inside the UI that had just failed. It was the software equivalent of locking the keys in the car.</p>
+<p>Boot Guard breaks that loop. Its rescue client is injected directly by the host and does not depend on the normal browser plugin loader, so it can still show up when another plugin prevents the regular interface from starting.</p>
+<h3>What it does</h3>
+<ul>
+<li>Detects likely failed plugins from the loader error and selects them automatically</li>
+<li>Searches by package name or loader entry ID, with focused filters for user and skipped plugins</li>
+<li>Temporarily skips one or several plugins and reloads the page</li>
+<li>Restores a single plugin or all Boot Guard-managed skips with confirmation</li>
+<li>Keeps existing disabled configuration separate from Boot Guard&#39;s temporary changes</li>
+<li>Copies a small diagnostic report for bug reports</li>
+<li>Includes read-only dark, light, and narrow-screen self-check views</li>
+</ul>
+<p>Skipping does not uninstall a plugin or delete its data. Boot Guard only appends a marked <code>disabled: true</code> block to the active profile&#39;s <code>cordis.patch.yml</code>, and restoration removes only blocks carrying that marker.</p>
+<h3>Install</h3>
+<p>Install and run <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> first.</p>
+<h4>From GitHub</h4>
+<pre><code class="language-sh">dsh plugin --profile web add github:SaiSenBox/dsh-boot-guard
+</code></pre>
+<p>Restart <code>dsh web</code> after installation.</p>
+<h4>From npm</h4>
+<p>Once the package is published to npm:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-boot-guard
+</code></pre>
+<h4>Local development install on Windows</h4>
+<pre><code class="language-powershell">git clone https://github.com/SaiSenBox/dsh-boot-guard.git
+cd dsh-boot-guard
+powershell -ExecutionPolicy Bypass -File .\install.ps1
+</code></pre>
+<p>The local installer stages the dependency beside the DSH profile to avoid malformed cross-drive <code>file:</code> junctions on Windows.</p>
+<h3>Usage</h3>
+<ol>
+<li>When <code>Failed to load plugins</code> appears, the recovery console mounts below the loader error.</li>
+<li>Check the suggested plugin, or search for and select a different entry.</li>
+<li>Choose <strong>Skip selected and reload</strong>. The page retries immediately; the DSH process does not need to restart.</li>
+<li>After fixing the plugin, restore it from the <strong>Skipped by rescue</strong> filter.</li>
+</ol>
+<p>The bulk restore action requires a second click to prevent accidents. A single request is capped at 64 entries.</p>
+<h3>Self-check</h3>
+<p>With DSH Web running, open:</p>
+<ul>
+<li>Dark: <code>http://127.0.0.1:3080/boot-guard/preview</code></li>
+<li>Light: <code>http://127.0.0.1:3080/boot-guard/preview?theme=light</code></li>
+<li>Health: <code>http://127.0.0.1:3080/boot-guard/health</code></li>
+</ul>
+<p>The preview is read-only. Search, filters, selections, and action feedback work, but no configuration is written.</p>
+<h3>Safety boundaries</h3>
+<ul>
+<li>Mutation routes accept same-origin JSON <code>POST</code> requests only</li>
+<li>Body size, entry count, and IDs are validated</li>
+<li>Boot Guard refuses to disable itself</li>
+<li>Mutations are serialized and committed with a same-directory atomic rename</li>
+<li>Restore removes only Boot Guard-marked blocks</li>
+<li>No telemetry and no external transmission of loader errors</li>
+</ul>
+<h3>Compatibility</h3>
+<p>Version 1.1.0 has been verified with DSH <code>0.1.0-rc.6</code>, Node.js <code>24.5.0</code>, and Windows. The package follows DSH&#39;s Node.js requirement: <code>^22.19.0 || &gt;=24.0.0</code>.</p>
+<p>DSH is still a developer preview and plugin APIs may change. If a new release breaks the recovery path, please open an issue with the DSH version and the copied Boot Guard diagnostics.</p>
+<h3>Development</h3>
+<pre><code class="language-sh">npm run check
+npm run pack:check
+</code></pre>
+<p>The rescue client intentionally has no runtime dependencies. A recovery tool is most useful when it can still start after everything around it has not.</p>
+<h3>License</h3>
+<p><a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/LICENSE">MIT</a> © 2026 SaiSenBox</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>

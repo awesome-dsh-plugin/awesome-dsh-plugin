@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">starslittle/</span><wbr><span class="name">dsh-blue-whale</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 2</b></span>
         <span>Category <a href="/theme/">Themes & Appearance</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,61 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>The missing <strong>default</strong> DeepSeek skin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>DSH ships as a black whale: <code>--dsw-alias-brand-primary</code> is near-black in light mode and near-white in dark mode. This plugin puts the official Chat blue back on those brand roles, and leaves light / dark / follow-system to the built-in Appearance setting.</p>
+<blockquote>
+<p>Not <code>dsh-skin</code>&#39;s <strong>Ocean</strong>. Ocean is a dark-only deep-sea navy (<code>#0a101f</code> + <code>#4d86f8</code>). This skin keeps official DSH surfaces and uses public brand <code>#4D6BFE</code> in both schemes.</p>
+</blockquote>
+<h3>What it changes</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Official DSH</th>
+<th>This skin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Brand / primary button</td>
+<td>black (light) / white (dark)</td>
+<td><code>#4D6BFE</code></td>
+</tr>
+<tr>
+<td>Light canvas</td>
+<td>official white / bluish neutrals</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>Dark canvas</td>
+<td>official bluish-950</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>Light / dark switch</td>
+<td>built-in Appearance</td>
+<td>still built-in Appearance</td>
+</tr>
+</tbody></table>
+<p>Supporting tokens come from DSH&#39;s own <code>--dsw-static-deepseek-*</code> scale (<code>50</code>–<code>900</code>).</p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add -w github:starslittle/dsh-blue-whale
+</code></pre>
+<p>Restart <code>dsh web</code>. The skin is <strong>on by default</strong>. Settings → General → 蓝鲸 / Blue Whale turns it off.</p>
+<h3>Why not Ocean</h3>
+<ul>
+<li>Ocean is one card in a 7-skin switcher, dark only.</li>
+<li>This package is a default replacement: install and the black whale becomes the Chat blue whale.</li>
+<li>Dark mode here is official DSH dark + official blue, not a new navy theme.</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/starslittle/dsh-blue-whale/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>

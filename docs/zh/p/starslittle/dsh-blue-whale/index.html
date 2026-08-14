@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">starslittle/</span><wbr><span class="name">dsh-blue-whale</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 2</b></span>
         <span>分类 <a href="/zh/theme/">主题与外观</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,61 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>给 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的 <strong>蓝鲸默认皮</strong>。</p>
+<p>DSH 出厂是黑鲸：亮色主色近黑，深色主色近白。这个插件只把品牌位换回 DeepSeek Chat 的官方蓝 <code>#4D6BFE</code>，亮色 / 深色 / 跟随系统仍走自带的「外观」设置。</p>
+<blockquote>
+<p>不是 <code>dsh-skin</code> 里的 <strong>深海蓝（Ocean）</strong>。Ocean 是暗色专用的深海海军蓝（<code>#0a101f</code> + <code>#4d86f8</code>）。本皮肤底还是官方中性色，主色才是公开品牌蓝。</p>
+</blockquote>
+<h3>改了什么</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>官方 DSH</th>
+<th>本皮肤</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>品牌 / 主按钮</td>
+<td>亮色近黑 / 深色近白</td>
+<td><code>#4D6BFE</code></td>
+</tr>
+<tr>
+<td>亮色底</td>
+<td>官方白 / 蓝灰中性</td>
+<td>不动</td>
+</tr>
+<tr>
+<td>深色底</td>
+<td>官方 bluish-950</td>
+<td>不动</td>
+</tr>
+<tr>
+<td>亮暗切换</td>
+<td>自带外观</td>
+<td>仍走自带外观</td>
+</tr>
+</tbody></table>
+<p>辅助色来自 DSH 仓库里的 <code>--dsw-static-deepseek-*</code>（50–900）。</p>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add -w github:starslittle/dsh-blue-whale
+</code></pre>
+<p>重启 <code>dsh web</code>。默认开启。设置 → 通用 → 蓝鲸 可关掉。</p>
+<h3>和 Ocean 的差别</h3>
+<ul>
+<li>Ocean 是 7 套口味里的一张暗色卡。</li>
+<li>这个包是默认替代：装上，黑鲸变成 Chat 那只蓝鲸。</li>
+<li>深色是官方深色底 + 官方蓝，不是新的深海主题。</li>
+</ul>
+<h3>许可</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/starslittle/dsh-blue-whale/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>

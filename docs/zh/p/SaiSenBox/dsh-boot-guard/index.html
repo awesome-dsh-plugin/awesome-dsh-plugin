@@ -189,7 +189,89 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>简体中文 · <a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/README.en.md">English</a></p>
+<p><a href="https://github.com/SaiSenBox/dsh-boot-guard/actions/workflows/check.yml"><img src="https://github.com/SaiSenBox/dsh-boot-guard/actions/workflows/check.yml/badge.svg" alt="Check"></a>
+<a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License"></a></p>
+<blockquote>
+<p>插件把插件管理页面一起弄崩了，接下来怎么办？</p>
+</blockquote>
+<p><code>dsh-boot-guard</code> 是给 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web UI 准备的一道小保险。正常情况下它安安静静地待着；只有插件加载失败、页面只剩下 <code>Failed to load plugins</code> 时，它才会出现，帮你找出可疑插件、临时跳过，然后把工作区救回来。</p>
+<p><img src="https://raw.githubusercontent.com/SaiSenBox/dsh-boot-guard/main/assets/boot-guard-preview.png" alt="Boot Guard 启动恢复中心"></p>
+<p><em>上图是只读自检模式，只展示界面和诊断结果，不会真的改配置。</em></p>
+<h3>为什么写它</h3>
+<p>起因其实有点尴尬：我在给 DSH 调一个界面插件，刷新之后，整个 Web UI 直接起不来了。</p>
+<p>问题插件本来应该去插件管理页里关掉，可插件管理页也属于 Web UI。结果就像把车钥匙锁在车里——明明知道是哪儿出了问题，却没有入口修它。</p>
+<p>Boot Guard 就是为这个死循环写的。它不依赖正常的客户端插件加载链，而是由 host 直接把一段很小的救援脚本放进失败页面。其他插件没能加载时，它仍然有机会工作。</p>
+<h3>它能做什么</h3>
+<ul>
+<li>从加载错误里找出疑似故障插件，并自动选中</li>
+<li>默认只看用户插件，也可以搜索名称或 loader 条目 ID</li>
+<li>临时跳过一个或一批插件，刷新后立即重新尝试启动</li>
+<li>单独恢复某个插件，或二次确认后恢复全部救援跳过项</li>
+<li>明确区分“Boot Guard 临时跳过”和“配置原本就禁用”</li>
+<li>复制一份简短诊断，方便贴到 Issue 里一起排查</li>
+<li>提供暗色、亮色和窄屏适配的只读自检页</li>
+</ul>
+<p>它不会删除插件，也不会碰插件的数据。所谓“跳过”，只是向当前 DSH profile 的 <code>cordis.patch.yml</code> 追加一个带 Boot Guard 标记的 <code>disabled: true</code> 配置块；恢复时也只会删除自己写入的块。</p>
+<h3>安装</h3>
+<p>需要先安装并运行 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>。</p>
+<h4>从 GitHub 安装</h4>
+<pre><code class="language-sh">dsh plugin --profile web add github:SaiSenBox/dsh-boot-guard
+</code></pre>
+<p>安装完成后重启 <code>dsh web</code>。</p>
+<h4>从 npm 安装</h4>
+<p>如果这个包已经发布到 npm，可以直接用：</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-boot-guard
+</code></pre>
+<h4>本地开发安装（Windows）</h4>
+<pre><code class="language-powershell">git clone https://github.com/SaiSenBox/dsh-boot-guard.git
+cd dsh-boot-guard
+powershell -ExecutionPolicy Bypass -File .\install.ps1
+</code></pre>
+<p>本地安装器会把依赖放在 DSH profile 同盘目录，避开 Windows 上跨盘 <code>file:</code> 依赖可能产生的坏 junction。</p>
+<h3>怎么用</h3>
+<ol>
+<li>当页面出现 <code>Failed to load plugins</code>，恢复中心会自动挂在错误信息下方。</li>
+<li>先看“疑似故障”是否找对了；没找对就搜索并勾选其他插件。</li>
+<li>点击“跳过所选并刷新”。页面会重新加载，不需要重启整个 DSH 进程。</li>
+<li>修好插件后，在“救援已跳过”里逐个恢复，或者使用“恢复已跳过”。</li>
+</ol>
+<p>恢复全部需要点两次，主要是防手滑。单次最多处理 64 个条目，通常远远够用；真的遇到大面积故障时，可以分批操作。</p>
+<h3>先做一次自检</h3>
+<p>不必真的弄坏插件来测试它。启动 DSH Web 后打开：</p>
+<ul>
+<li>暗色：<code>http://127.0.0.1:3080/boot-guard/preview</code></li>
+<li>亮色：<code>http://127.0.0.1:3080/boot-guard/preview?theme=light</code></li>
+<li>健康检查：<code>http://127.0.0.1:3080/boot-guard/health</code></li>
+</ul>
+<p>自检页是只读的。搜索、筛选和勾选都能试，最终操作不会写入配置。</p>
+<h3>安全边界</h3>
+<p>这个插件会修改本地配置，所以边界写得比较死：</p>
+<ul>
+<li>写接口只接受同源 <code>POST</code> + JSON 请求</li>
+<li>校验请求体大小、条目数量和 ID 格式</li>
+<li>Boot Guard 不能把自己设为跳过</li>
+<li>配置修改串行执行，并通过同目录临时文件原子替换</li>
+<li>恢复只认 Boot Guard 自己的标记，不会顺手清理用户配置</li>
+<li>不做遥测，也不会把错误信息发到外部服务</li>
+</ul>
+<h3>兼容性</h3>
+<p>当前版本在 DSH <code>0.1.0-rc.6</code>、Node.js <code>24.5.0</code> 和 Windows 上完成验证。项目遵循 DSH 官方 Node.js 要求：<code>^22.19.0 || &gt;=24.0.0</code>。</p>
+<p>DSH 目前仍是 developer preview，插件接口可能继续变化。如果新版本把救援入口弄坏了，欢迎带上 DSH 版本和“复制诊断”的内容提 Issue。</p>
+<h3>开发</h3>
+<pre><code class="language-sh">npm run check
+npm run pack:check
+</code></pre>
+<p>这个项目故意不引入客户端运行时依赖。救援工具最重要的能力，是在其他东西都没有正常起来时，自己还能起来。</p>
+<h3>License</h3>
+<p><a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/LICENSE">MIT</a> © 2026 SaiSenBox</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/SaiSenBox/dsh-boot-guard/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>

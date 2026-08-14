@@ -238,6 +238,7 @@ dsh --profile headless --dump-config | grep dsh-eval-harness
 <pre><code class="language-yaml">name: 用例名                    # 唯一，gate 按 name 对比 baseline
 prompt: &quot;发给 agent 的内容&quot;      # 多行可用块标量 `|`
 require_plugins: [some-plugin]  # 可选，元信息
+tags: [fast]                    # 可选，标签；eval_run 的 tags 筛选按任一命中匹配
 assert:
   turn_end: completed           # turn/end 事件的 reason.kind
   tools_called: [tool_a]        # tool/call 名称序列须按序包含（保序子序列）
@@ -320,6 +321,27 @@ flow 序列、引号、数字/布尔/null、<code>|</code>/<code>&gt;</code> 块
 <td><code>$DSH_BIN</code> 或 <code>dsh</code></td>
 <td>dsh 可执行命令，按空白拆分；本机无全局 dsh 时用 <code>npx -y @deepseek-ai/dsh</code></td>
 </tr>
+<tr>
+<td><code>concurrency</code></td>
+<td>integer</td>
+<td>否</td>
+<td><code>1</code></td>
+<td>并行跑用例的并发数；每条用例独占 session 根与 workspace，并行互不干扰</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>string</td>
+<td>否</td>
+<td>-</td>
+<td>逗号分隔标签筛选：只跑 yaml <code>tags</code> 命中任一的用例</td>
+</tr>
+<tr>
+<td><code>only</code></td>
+<td>string</td>
+<td>否</td>
+<td>-</td>
+<td>逗号分隔用例名（精确匹配）；与 tags 同给时取交集；筛选后无命中会直接报错（防 CI 笔误空跑假绿）</td>
+</tr>
 </tbody></table>
 <p>输出：JSON 文本（summary + 报告路径 + 各用例状态）。错误一律 throw
 <code>eval_run:</code> 前缀消息（找不到 dsh 可执行文件、用例解析失败等）。</p>
@@ -362,6 +384,13 @@ flow 序列、引号、数字/布尔/null、<code>|</code>/<code>&gt;</code> 块
 <td><code>false</code></td>
 <td>true 时输出单条 JSON（供 CI 解析），否则 key=value 文本</td>
 </tr>
+<tr>
+<td><code>max_token_increase_pct</code></td>
+<td>integer</td>
+<td>否</td>
+<td><code>50</code></td>
+<td>token total（与 max_tokens 同口径）涨幅阈值百分比：状态不变的用例超阈值记 token 回归（WARN）；0 关闭</td>
+</tr>
 </tbody></table>
 <h3>gate 协议</h3>
 <p>判定规则（优先级从高到低）：</p>
@@ -380,6 +409,11 @@ flow 序列、引号、数字/布尔/null、<code>|</code>/<code>&gt;</code> 块
 </tr>
 <tr>
 <td>有用例 FAIL/error → PASS，或用例数量变化（新增通过/移除）</td>
+<td><code>WARN</code></td>
+<td>0（strict 为 2）</td>
+</tr>
+<tr>
+<td>状态不变但 token total 涨幅超阈值（默认 +50%，<code>max_token_increase_pct</code> 可调，0 关闭）</td>
 <td><code>WARN</code></td>
 <td>0（strict 为 2）</td>
 </tr>
@@ -403,6 +437,7 @@ NEW_FAILURES=0
 IMPROVEMENTS=0
 ADDED=0
 REMOVED=0
+TOKEN_REGRESSIONS=0
 REASON regression: echo-hello pass -&gt; fail
 REGRESSION echo-hello: pass -&gt; fail
 </code></pre>
@@ -417,10 +452,14 @@ REGRESSION echo-hello: pass -&gt; fail
 会把口径变化判成 WARN/FAIL。</p>
 <h3>session trace 说明</h3>
 <p>评测依赖 DSH 落盘的会话 trace（默认 <code>$DSH_HOME/sessions/&lt;cwd编码&gt;/&lt;session-id&gt;/session.jsonl[.zstd]</code>，
-每行一帧信封 <code>{ type, seq, time, data }</code>）。<code>eval_run</code> 不污染环境变量，而是生成一个
-<code>--patch</code> overlay（<code>&lt;output_dir&gt;/eval-overlay.patch.yml</code>），按 row id 整体替换 base bundle 的
-<code>session-persistence-jsonl</code> 配置：把 <code>root</code> 切到隔离目录（默认 <code>&lt;output_dir&gt;/.sessions</code>，可用
-<code>session_root</code> 覆盖）；每条用例再以独立 workspace 作 cwd（session 按 cwd 编码分目录）。
+每行一帧信封 <code>{ type, seq, time, data }</code>）。<code>eval_run</code> 不污染环境变量，而是为每条用例生成一个 <code>--patch</code> overlay
+（<code>&lt;output_dir&gt;/eval-overlay-&lt;序号&gt;-&lt;用例名&gt;.patch.yml</code>），按 row id 整体替换 base bundle 的
+<code>session-persistence-jsonl</code> 配置：把 <code>root</code> 切到该用例的隔离目录
+（<code>&lt;session_root&gt;/&lt;序号&gt;-&lt;用例名&gt;</code>，<code>session_root</code> 默认 <code>&lt;output_dir&gt;/.sessions</code>；序号是加载序，
+因为 slug 化不是唯一键，如 <code>read image</code> 与 <code>read-image</code> 同 slug）；每条用例再以
+独立 workspace 作 cwd。per-case session 根 + workspace 让用例可以并行跑（<code>concurrency</code>），
+互不干扰；subagent/workflow 的子会话也落在同一用例的根下。用例名重名会直接报错
+（gate 按 name 对比 baseline）。
 子进程命令形如 <code>dsh --profile headless --patch &lt;overlay&gt; &lt;prompt&gt;</code>（launcher flags 在前，
 prompt 是 app 位置参数放最后）。</p>
 <p>collector 按文件头魔数自动识别编码：默认的多帧 zstd（<code>session.jsonl.zstd</code>）走

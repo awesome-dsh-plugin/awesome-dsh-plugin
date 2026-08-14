@@ -231,7 +231,7 @@ footer p+p{margin-top:.5rem}
 <tr>
 <td><code>godot_ping</code></td>
 <td>—</td>
-<td>探测游戏是否在 9090 应答</td>
+<td>探测游戏是否在 9090 应答（并报告已装/最新插件版本）</td>
 </tr>
 <tr>
 <td><code>godot_headless_op</code></td>
@@ -347,6 +347,7 @@ cordis.patch.yml                  # bundle patch 层（插入工具行）
 install.md / install.zh-CN.md     # 详细安装与维护说明
 ARCHITECTURE.md / ARCHITECTURE.zh-CN.md  # 如何取代 godot-mcp + 协议细节
 COVERAGE.md / COVERAGE.zh-CN.md   # 与 godot-mcp 的逐工具对比
+CHANGELOG.md / CHANGELOG.zh-CN.md  # 版本发布记录
 </code></pre>
 <p><code>mcp_interaction_server.gd</code>、<code>godot_operations.gd</code> 与 <code>validate_script.gd</code> 取自 <a href="https://github.com/tugcantopaloglu/godot-mcp">godot-mcp</a>（MIT，随包内置）。插件通过模块相对路径定位这些脚本（<code>import.meta.url</code>）；传显式 <code>ops_script</code> / <code>validate_script</code> 参数可覆盖。</p>
 <h3>许可证</h3>
@@ -367,8 +368,8 @@ COVERAGE.md / COVERAGE.zh-CN.md   # 与 godot-mcp 的逐工具对比
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1259</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 322</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 323</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>

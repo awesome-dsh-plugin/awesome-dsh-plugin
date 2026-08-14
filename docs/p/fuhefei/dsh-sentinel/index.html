@@ -277,10 +277,13 @@ footer p+p{margin-top:.5rem}
 <li><code>GET /plugins/dsh-sentinel/state?sessionId=…</code> — read-only state for the dock and the sidebar branch (omit <code>sessionId</code> for every session).</li>
 <li><code>GET /plugins/dsh-sentinel/dashboard</code> — the server-global watch table.</li>
 <li><code>POST /plugins/dsh-sentinel/hook?id=watch-N&amp;s=&lt;sessionId&gt;</code> — webhook entry; put a <code>curl</code> into a CI job, git hook, or another machine&#39;s script to wake the agent. Watch ids are per session, so the <code>s</code> qualifier is what keeps two sessions&#39; <code>watch-1</code> hooks from colliding (the tool hands out the full URL). URLs without <code>s</code> still work and resolve to the first matching webhook watch.</li>
+<li><code>POST /plugins/dsh-sentinel/cancel?sessionId=…&amp;id=watch-N</code> — manual cancel. The dashboard table and every UI row carry a ✕ that calls this, so a watch can always be stopped by hand — including orphaned ones whose session (and agent) is long gone; the host has no session-deleted event, so this is the kill switch of last resort.</li>
+<li>All four routes enforce a browser-trust fence: browser-marked cross-site requests (a malicious page can form-POST to localhost) and DNS-rebinding attempts (Host/Origin naming a DNS host) get 403. Headerless clients such as <code>curl</code> and CI jobs are unaffected. The state route also reports <code>duty</code> (lease heartbeat age) and <code>droppedWakeups</code> per session (queued wakeups dropped by the <code>maxPendingWakeups</code> cap).</li>
 </ul>
+<p>First-probe semantics: a pattern-less watch absorbs its first observation as the baseline (no fire), while a pattern watch whose target already matches fires on the first probe — the condition already holds.</p>
 <h3>Install</h3>
 <p>One line through the official bundle channel (build artifacts are committed, so the git-source install runs no build):</p>
-<pre><code class="language-sh">dsh plugin --profile web add &quot;github:fuhefei/dsh-sentinel#v0.8.3&quot;
+<pre><code class="language-sh">dsh plugin --profile web add &quot;github:fuhefei/dsh-sentinel#v0.10.0&quot;
 </code></pre>
 <p>Alternatively, add the node half manually through a patch-list configuration over the shipped base:</p>
 <pre><code class="language-yaml"># cordis.patch.yml

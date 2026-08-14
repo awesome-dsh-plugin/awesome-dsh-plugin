@@ -211,7 +211,19 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td><strong>30 周热力图</strong></td>
-<td>GitHub commit graph 风格的 Token 活跃度图；颜色越深代表当天总用量越高，悬停可查看总量、输入、输出与缓存读写明细。</td>
+<td>GitHub commit graph 风格的 Token 活跃度图；颜色越深代表当天总用量越高，悬停查看明细，点击下钻到贡献会话。</td>
+</tr>
+<tr>
+<td><strong>周期、预算与导出</strong></td>
+<td>比较 7/30/90 日趋势，设置本地持久化的滚动 30 日预算，并导出聚合 JSON、每日 CSV 或模型 CSV。</td>
+</tr>
+<tr>
+<td><strong>轨迹智能分析</strong></td>
+<td>手动选择会话后，使用 DSH 当前配置模型审查调用链、委派、合规性、异常恢复、速率、性能、可靠性和 Token 效率。</td>
+</tr>
+<tr>
+<td><strong>确定性证据</strong></td>
+<td>模型报告同时获得事件/分钟、Token/分钟、回合、步骤、工具错误、重试、压缩、审批与子代理等本地计算指标，并要求引用事件序号。</td>
 </tr>
 <tr>
 <td><strong>紧凑布局</strong></td>
@@ -223,7 +235,7 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td><strong>隐私优先</strong></td>
-<td>仅保留统计 bucket、日期和模型路由，不复制提示词、回复内容或其他会话正文。</td>
+<td>持久层只保存统计数据；轨迹分析显式触发、长度受限、脱敏常见凭据，报告仅在当前页面内存中展示。</td>
 </tr>
 </tbody></table>
 <h3>🚀 安装</h3>
@@ -236,9 +248,12 @@ footer p+p{margin-top:.5rem}
 <h3>📊 仪表盘内容</h3>
 <ul>
 <li><strong>概览卡片</strong>：总 Token、输入 Token、输出 Token、缓存命中率和有用量会话数。</li>
-<li><strong>Token 活跃度</strong>：最近 30 周按天汇总的热力图；悬停方格可查看日期、总量、输入、输出以及缓存读写明细。</li>
+<li><strong>周期趋势</strong>：切换 7/30/90 日窗口，查看当前周期总量、环比、活跃天数与峰值日。</li>
+<li><strong>30 日预算</strong>：预算写入本机 DSH settings；显示滚动消耗比例与超额提示，填 0 或清空可关闭。</li>
+<li><strong>Token 活跃度</strong>：最近 30 周按天汇总的热力图；悬停方格查看缓存等明细，点击查看当天贡献会话。</li>
 <li><strong>模型用量</strong>：按 provider / model 汇总调用次数、总量、输入与输出；缓存读写作为输入的辅助明细展示。</li>
-<li><strong>会话记录</strong>：可搜索会话标题、会话 ID 或模型路由，并查看最近活动时间及用量分布。</li>
+<li><strong>聚合导出</strong>：导出不含会话标题和正文的版本化 JSON、每日 CSV 或模型 CSV；CSV 单元格防公式注入。</li>
+<li><strong>会话记录</strong>：搜索会话标题、会话 ID 或模型路由，并可从任一有用量会话启动轨迹智能分析。</li>
 </ul>
 <h4>统计口径</h4>
 <table>
@@ -266,18 +281,74 @@ footer p+p{margin-top:.5rem}
 </tr>
 </tbody></table>
 <p>同一请求步骤若先后出现流式 usage 与最终消息 usage，最终值会替换该步骤的临时值，避免重复记账；发生 <code>llm/retry</code> 后，每个重试尝试仍会被独立统计。</p>
+<h3>🧠 会话轨迹智能分析</h3>
+<p>在 <strong>会话记录</strong> 中点击 <strong>分析轨迹</strong>。Host 会读取 live 会话的当前完整事件日志，或通过 <code>sessionPersistence.inspect()</code> 读取冷会话，不依赖浏览器仅加载的分页窗口；随后通过 <code>agentDefaultModel.currentSelection()</code> 选取 DSH 当前配置模型，并以一次 registration-bound prepared LLM call 生成报告。</p>
+<p>报告覆盖以下方面：</p>
+<table>
+<thead>
+<tr>
+<th>分析面</th>
+<th>关注内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>调用链与委派</td>
+<td>Turn → Step → 模型 → Tool → Result、子代理/工作流委派关系及主要瓶颈。</td>
+</tr>
+<tr>
+<td>合规与安全</td>
+<td>审批结果、权限/沙箱变化、敏感信息暴露迹象、破坏性动作与用户意图的一致性。</td>
+</tr>
+<tr>
+<td>异常与恢复</td>
+<td>模型重试、重复调用、循环、工具错误、中断回合、压缩失败、停滞及后续恢复。</td>
+</tr>
+<tr>
+<td>速率与性能</td>
+<td>事件/分钟、Token/分钟、调用突发、阶段耗时、并发和可能的等待热点。</td>
+</tr>
+<tr>
+<td>Token 与上下文效率</td>
+<td>输入/输出/缓存分布、压缩压力、上下文增长、模型切换与潜在浪费。</td>
+</tr>
+<tr>
+<td>工具与子代理成效</td>
+<td>工具成功率、错误聚类、委派收益、重复工作与汇总质量。</td>
+</tr>
+<tr>
+<td>可靠性与生命周期</td>
+<td>Turn/Step 配对、Tool call/result 配对、完成原因和未闭合操作。</td>
+</tr>
+<tr>
+<td>优先级建议</td>
+<td>基于事件序号与确定性指标给出 P0/P1/P2 改进项及预期收益。</td>
+</tr>
+</tbody></table>
+<h4>输入、隐私与费用</h4>
+<ul>
+<li>分析由用户显式触发，报告不写入会话日志、projection cache 或导出文件；刷新页面后不会保留。</li>
+<li>原始 <code>assistant/chunk</code> 不进入分析请求，只计入省略数量；其他事件会递归限制深度、集合大小与单条长度。</li>
+<li>模型输入最多约 96,000 字符；超限时保留轨迹首尾并插入截断标记，UI 会提示模型未看到完整中段。</li>
+<li>发送前会尽力遮蔽 Bearer Token、<code>sk-*</code> 以及常见 API key、password、secret、credential 字段，但这不是完整 DLP。请按所配置模型提供方的数据政策评估敏感会话。</li>
+<li>模型最多生成 3,000 Token；本次辅助调用的 provider/model 和 Token 用量会显示在报告卡片中，但不会计入持久化用量 projection。</li>
+<li>该私有 RPC 只允许本机 loopback Web 页面调用；必须先在 DSH 中配置可用的默认模型。</li>
+</ul>
 <h3>🧭 数据流</h3>
 <pre><code class="language-mermaid">flowchart LR
   A[DSH session log] --&gt; B[Token usage projection]
   B --&gt; C[Session projection cache]
   C --&gt; D[Settings · Token 用量]
-  D --&gt; E[概览与模型统计]
-  D --&gt; F[30 周活跃度热力图]
+  D --&gt; E[概览、趋势、预算与导出]
+  D --&gt; F[30 周热力图与会话下钻]
+  D --&gt;|显式触发| G[有界、脱敏的轨迹 DTO]
+  G --&gt; H[DSH 当前配置模型]
+  H --&gt; I[临时审计报告]
 </code></pre>
 <ul>
 <li>Host 侧监听普通模型请求、重试和上下文压缩事件，构建会话级持久 projection。</li>
 <li>历史会话在后台按顺序预热；冷会话在恢复期间重新附着时，会重新写入最新 live checkpoint，避免回退缓存水位。</li>
 <li>Web 侧将所有会话 projection 聚合为仪表盘数据。较旧的内置 projection 会显示为“未归因用量”，以保持总量守恒。</li>
+<li>轨迹分析走独立的 loopback 私有 RPC：Host 读取权威事件日志、构造有界 DTO 并调用已配置模型，Web 只接收 JSON 指标和 Markdown 报告。</li>
 </ul>
 <h3>🔄 更新与热加载</h3>
 <table>
@@ -312,6 +383,9 @@ npm run build
 <li>历史预热依赖 DSH session projection cache。预热完成前，仅有内置 projection 的旧会话会被显示为“未归因用量”；刷新后可读取新的模型明细。</li>
 <li>单个损坏或不可读取的历史会话只会记录警告，不会阻止插件启动。</li>
 <li>热力图按持久事件的 UTC 日期统计；旧版内置 projection 缺少逐日数据时，会暂按会话最后活动日归档。</li>
+<li>轨迹报告是模型辅助审查，不是策略执行器或合规证明；确定性指标与事件序号优先于模型推断。</li>
+<li>常见凭据脱敏是尽力而为，不替代组织级 DLP；超长轨迹的中段会被明确截断。</li>
+<li>轨迹报告当前不持久化、不支持历史对比；分析调用的 Token 只显示在当次报告中，不计入持久化仪表盘。</li>
 </ul>
 <h3>📄 License</h3>
 <p><a href="https://github.com/LeemanCheung/dsh-token-usage/blob/main/LICENSE">MIT</a> © LeemanCheung</p>

@@ -186,7 +186,254 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h2>🧩 DSH 插件管理器</h2>
+<p><strong>dsh-plugin-manager</strong> — 在 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 设置面板里内嵌的图形化管理器,让你像操作普通 App 一样管理 <strong>MCP 服务 / Skills / 内置插件包</strong>,开关、删除实时热生效,<strong>无需重启 dsh web</strong>。</p>
+<p><img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+<img src="https://img.shields.io/badge/version-0.1.0-blue" alt="Version">
+<img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey" alt="Platform">
+<img src="https://img.shields.io/badge/DSH-web%20plugin-4f8cff" alt="DeepSeek Harness"></p>
+<hr>
+<h3>📑 目录</h3>
+<ul>
+<li><a href="#-%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7">✨ 功能特性</a></li>
+<li><a href="#-%E7%95%8C%E9%9D%A2%E9%A2%84%E8%A7%88">📸 界面预览</a></li>
+<li><a href="#-%E5%AE%89%E8%A3%85">🚀 安装</a></li>
+<li><a href="#%EF%B8%8F-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">🖥️ 使用说明</a></li>
+<li><a href="#%EF%B8%8F-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86">⚙️ 工作原理</a></li>
+<li><a href="#-api-%E5%8F%82%E8%80%83">📡 API 参考</a></li>
+<li><a href="#%EF%B8%8F-%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84">🗂️ 目录结构</a></li>
+<li><a href="#-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">❓ 常见问题</a></li>
+<li><a href="#%EF%B8%8F-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">⚠️ 注意事项</a></li>
+<li><a href="#-%E8%AE%B8%E5%8F%AF%E8%AF%81">📜 许可证</a></li>
+</ul>
+<hr>
+<h3>✨ 功能特性</h3>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>说明</th>
+<th>生效方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🎛️ <strong>MCP 开关</strong></td>
+<td>一键禁用/启用任意 MCP 服务(写入 <code>disabled: true</code> 或移除)</td>
+<td><strong>实时热生效</strong>,无需重启</td>
+</tr>
+<tr>
+<td>🗑️ <strong>MCP 删除</strong></td>
+<td>从 <code>cordis.patch.yml</code> 删除整个 MCP 条目(上方注释保留)</td>
+<td><strong>实时热生效</strong>,无需重启</td>
+</tr>
+<tr>
+<td>📚 <strong>Skills 管理</strong></td>
+<td>浏览全部 skill 及描述;删除 = 移入 <code>.trash-*</code> 目录,<strong>可恢复</strong></td>
+<td>立即生效</td>
+</tr>
+<tr>
+<td>📦 <strong>插件包浏览</strong></td>
+<td>只读查看 DSH 本体 160+ 内置插件包的名称/版本/说明</td>
+<td>只读</td>
+</tr>
+<tr>
+<td>🛡️ <strong>自动备份</strong></td>
+<td>每次写操作前自动备份配置为 <code>cordis.patch.yml.bak-&lt;时间戳&gt;</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>🔌 <strong>零额外进程</strong></td>
+<td>后端内嵌在 dsh web 宿主里,同源 API,不占端口、无 CORS 暴露</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>📸 界面预览</h3>
+<blockquote>
+<p>管理页位于 <strong>DSH 设置面板 → 「插件管理」</strong>,三个标签页:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>MCP 服务</th>
+<th>Skills</th>
+<th>内置插件包</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/liqichen/dsh-plugin-manager/main/docs/screenshots/manager.png" alt="MCP 服务页"></td>
+<td><img src="https://raw.githubusercontent.com/liqichen/dsh-plugin-manager/main/docs/screenshots/manager-skills.png" alt="Skills 页"></td>
+<td><img src="https://raw.githubusercontent.com/liqichen/dsh-plugin-manager/main/docs/screenshots/manager-plugins.png" alt="内置插件包页"></td>
+</tr>
+</tbody></table>
+<hr>
+<h3>🚀 安装</h3>
+<blockquote>
+<p><strong>前提</strong>:已安装 DeepSeek Harness(dsh web),并了解 <code>~/.dsh</code> 目录结构。</p>
+</blockquote>
+<h4>方式一:从本仓库安装(推荐)</h4>
+<pre><code class="language-bash"># 1. 克隆并放入用户插件目录
+git clone https://github.com/liqichen/dsh-plugin-manager.git
+mkdir -p ~/.dsh/plugins/dsh-plugin-manager
+cp -r dsh-plugin-manager/{index.js,client.js,package.json} ~/.dsh/plugins/dsh-plugin-manager/
+
+# 2. 通过 dsh CLI 注册插件
+dsh plugin --profile web add ~/.dsh/plugins/dsh-plugin-manager
+
+# 3. 声明依赖(让 Node 端可解析)
+#    编辑 ~/.dsh/profiles/web/package.json,dependencies 加入:
+#    &quot;dsh-plugin-manager&quot;: &quot;file:../../plugins/dsh-plugin-manager&quot;
+
+# 4. 在 ~/.dsh/profiles/web/cordis.patch.yml 的 plugins 列表加入:
+#    - id: plugin-manager-ui
+#      name: dsh-plugin-manager
+
+# 5. 重启 dsh web,打开「设置」→「插件管理」即可使用
+</code></pre>
+<h4>方式二:legacy 独立网页版(不依赖插件系统)</h4>
+<p>如果插件机制不适用,仓库提供了早期独立版 Python 服务:</p>
+<pre><code class="language-bash">python3 legacy/server.py --port 17891
+# 浏览器打开 http://127.0.0.1:17891/
+</code></pre>
+<hr>
+<h3>🖥️ 使用说明</h3>
+<p>打开 <strong>DSH 设置 → 插件管理</strong>,你会看到三个标签页:</p>
+<p><strong>🎛️ MCP 服务</strong></p>
+<ul>
+<li>每个 MCP 一张卡片,显示名称、传输方式(<code>stdio</code>/<code>http</code> 徽章)、运行状态、配置 id</li>
+<li>右侧<strong>开关</strong>:一键禁用/启用;<strong>删除</strong>按钮:移除该条目(有二次确认)</li>
+<li>顶部显示配置文件路径与总数量</li>
+</ul>
+<p><strong>📚 Skills</strong></p>
+<ul>
+<li>列出所有 skill 及 <code>SKILL.md</code> 中的描述、目录路径</li>
+<li>删除 = 移入 <code>~/.dsh/skills/.trash-*</code>,可手动恢复</li>
+</ul>
+<p><strong>📦 内置插件包</strong></p>
+<ul>
+<li>表格展示 DSH 本体全部插件包(只读),升级请使用 <code>npm update -g @deepseek-ai/dsh</code></li>
+</ul>
+<p>操作完成后,页面会提示「✅ 改动已实时热生效」;<strong>已打开的会话建议开新会话</strong>,以刷新工具列表。</p>
+<hr>
+<h3>⚙️ 工作原理</h3>
+<p>本插件是标准 <strong>DSH 双端插件</strong>,随 dsh web 一同启动,无需独立进程:</p>
+<pre><code>┌─────────────────────────── dsh web 宿主 ───────────────────────────┐
+│                                                                     │
+│  浏览器端 (client.js)                 Node 端 (index.js)            │
+│  ┌───────────────────────┐            ┌─────────────────────────┐  │
+│  │ 设置面板「插件管理」页 │   fetch    │ 注册 /plugin-manager/   │  │
+│  │ React UI · 同源 API   │ ─────────▶ │ api/* 路由(内嵌后端)     │  │
+│  └───────────────────────┘            │ 读 / 写:                │  │
+│                                       │  · ~/.dsh/profiles/web/ │  │
+│                                       │    cordis.patch.yml     │  │
+│                                       │  · ~/.dsh/skills/       │  │
+│                                       │  · ~/.dsh/profiles/     │  │
+│                                       │    node_modules/@deep-  │  │
+│                                       │    seek-ai/             │  │
+│                                       └─────────────────────────┘  │
+└────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<p><strong>涉及的文件路径:</strong></p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>~/.dsh/profiles/web/cordis.patch.yml</code></td>
+<td>MCP 服务配置(补丁层),修改后宿主 HMR 热生效</td>
+</tr>
+<tr>
+<td><code>~/.dsh/skills/</code></td>
+<td>Skill 目录,删除时重命名为 <code>.trash-&lt;时间戳&gt;-&lt;名称&gt;</code></td>
+</tr>
+<tr>
+<td><code>~/.dsh/profiles/node_modules/@deepseek-ai/</code></td>
+<td>DSH 本体插件包(只读)</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>📡 API 参考</h3>
+<p>后端内嵌在 dsh web 宿主,同源提供两个接口:</p>
+<h4><code>GET /plugin-manager/api/state</code></h4>
+<p>返回当前全部状态:</p>
+<pre><code class="language-json">{
+  &quot;mcp&quot;: [
+    { &quot;id&quot;: &quot;mcp-scrapling&quot;, &quot;serverName&quot;: &quot;scrapling&quot;, &quot;transport&quot;: &quot;stdio&quot;, &quot;command&quot;: &quot;scrapling&quot;, &quot;disabled&quot;: false }
+  ],
+  &quot;skills&quot;: [ { &quot;name&quot;: &quot;obsidian-cli&quot;, &quot;desc&quot;: &quot;…&quot;, &quot;path&quot;: &quot;/Users/me/.dsh/skills/obsidian-cli&quot; } ],
+  &quot;plugins&quot;: [ { &quot;name&quot;: &quot;dsh-client-web&quot;, &quot;version&quot;: &quot;1.2.3&quot;, &quot;desc&quot;: &quot;…&quot; } ],
+  &quot;patchFile&quot;: &quot;/Users/me/.dsh/profiles/web/cordis.patch.yml&quot;,
+  &quot;skillsDir&quot;: &quot;/Users/me/.dsh/skills&quot;
+}
+</code></pre>
+<h4><code>POST /plugin-manager/api/action</code></h4>
+<p>三种操作,<code>kind</code> 区分:</p>
+<pre><code class="language-json">{ &quot;kind&quot;: &quot;mcp-toggle&quot;,  &quot;id&quot;: &quot;mcp-scrapling&quot;, &quot;disable&quot;: true }
+{ &quot;kind&quot;: &quot;mcp-delete&quot;,  &quot;id&quot;: &quot;mcp-scrapling&quot; }
+{ &quot;kind&quot;: &quot;skill-delete&quot;, &quot;name&quot;: &quot;obsidian-cli&quot; }
+</code></pre>
+<p>响应统一为 <code>{ &quot;ok&quot;: true, &quot;message&quot;: &quot;已禁用 mcp-scrapling(热生效)&quot; }</code>。
+所有写操作<strong>先备份</strong> <code>cordis.patch.yml</code> 为 <code>.bak-&lt;时间戳&gt;</code>,再改文件。</p>
+<hr>
+<h3>🛠️ 用 DSH 开发(吃自己的狗粮)</h3>
+<p>本项目<strong>就是用 DeepSeek Harness 开发出来的</strong> —— 从想法到上线,整个开发过程由运行在 DSH 里的 AI 编码智能体完成:</p>
+<ul>
+<li>通过 DSH 的 MCP 工具(浏览器自动化、文件读写等)逆向研究官方双端插件的扫描与注入机制(<code>dsh-client-modules</code>、<code>dsh-cordis-host-runner</code>、<code>settings.section</code> slot 契约)</li>
+<li>直接读写 <code>cordis.patch.yml</code> / <code>~/.dsh/skills/</code> 反复实验,验证「配置改动 → 宿主 HMR 热生效」链路</li>
+<li>用 Playwright / Chrome DevTools 自动化截图、检查 UI 效果</li>
+<li>最终产物又作为标准 DSH 插件被安装回 DSH,用来管理 DSH 自己 —— <strong>DSH 管理 DSH 自己</strong></li>
+</ul>
+<p>这正是 DeepSeek Harness 的设计哲学:<strong>Everything is a Plugin</strong>。</p>
+<h3>🗂️ 目录结构</h3>
+<pre><code>dsh-plugin-manager/
+├── index.js          # Node 半:内嵌后端,注册 /plugin-manager/api/* 路由
+├── client.js         # 浏览器半:设置面板「插件管理」React UI
+├── package.json      # DSH 双端插件元数据(dsh.client.inject 声明宿主依赖)
+├── docs/
+│   └── screenshots/  # 界面截图
+├── legacy/
+│   └── server.py     # 早期独立 Python 网页服务版本(备用)
+├── README.md
+└── LICENSE           # MIT
+</code></pre>
+<hr>
+<h3>❓ 常见问题</h3>
+<p><strong>Q: 页面提示「插件后端未响应」?</strong>
+浏览器端连不上 <code>/plugin-manager/api</code>。检查安装步骤 3、4 是否都完成,以及 <code>~/.dsh/profiles/node_modules/dsh-plugin-manager</code> 是否正确指向插件目录,然后重启 dsh web。</p>
+<p><strong>Q: 开关/删除后工具列表没变?</strong>
+配置改动是热生效的,但<strong>当前已打开的会话</strong>仍持有旧的工具列表,请新开一个会话。</p>
+<p><strong>Q: 删掉的 MCP 怎么恢复?</strong>
+<code>mcp-delete</code> 只删除配置条目,不会卸载 npm 包。用最近的备份 <code>cordis.patch.yml.bak-*</code> 恢复,或手动把条目加回 <code>cordis.patch.yml</code> 即可。</p>
+<p><strong>Q: 删掉的 Skill 怎么恢复?</strong>
+把 <code>~/.dsh/skills/.trash-&lt;时间戳&gt;-&lt;名称&gt;</code> 重命名回 <code>~/.dsh/skills/&lt;名称&gt;</code> 即可。</p>
+<p><strong>Q: 想彻底删除 Skill?</strong>
+管理器只做「移入回收站」;彻底删除请手动 <code>rm -rf</code> 对应的 <code>.trash-*</code> 目录。</p>
+<p><strong>Q: 能从管理器升级 DSH 本体吗?</strong>
+不能。内置插件包页是只读的,DSH 本体升级请用 <code>npm update -g @deepseek-ai/dsh</code>。</p>
+<hr>
+<h3>⚠️ 注意事项</h3>
+<ol>
+<li><strong>操作的是真实配置</strong> —— 所有改动直接写 <code>cordis.patch.yml</code> 与 <code>~/.dsh/skills/</code>。每次写前自动备份,出问题可用最近的 <code>.bak-*</code> 恢复。</li>
+<li><strong>MCP 删除 ≠ 卸载包</strong> —— 只删配置条目,包体仍在,重新配置即可恢复。</li>
+<li><strong>Skill 删除可恢复</strong> —— 是「移入 <code>.trash-*</code>」而非真删。</li>
+<li><strong>热生效有边界</strong> —— 配置实时生效,但已开会话的工具列表不自动刷新,请开新会话。</li>
+<li><strong>只作用于当前 profile</strong> —— 默认管理 <code>~/.dsh/profiles/web/</code>,其他 profile 需相应调整路径。</li>
+</ol>
+<hr>
+<h3>📜 许可证</h3>
+<p><a href="https://github.com/liqichen/dsh-plugin-manager/blob/main/LICENSE">MIT</a> © <a href="https://github.com/liqichen">liqichen</a></p>
+<hr>
+<p><em>觉得好用的话点个 ⭐,有问题欢迎提 <a href="https://github.com/liqichen/dsh-plugin-manager/issues">Issue</a>。</em></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/liqichen/dsh-plugin-manager/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>

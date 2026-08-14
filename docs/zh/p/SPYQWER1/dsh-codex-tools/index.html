@@ -192,193 +192,177 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/README.zh-CN.md">中文</a></p>
-<p><strong>Image generation and image understanding for the DeepSeek Harness — powered by your ChatGPT subscription. No <code>OPENAI_API_KEY</code> needed.</strong></p>
-<p>A DeepSeek Harness plugin that registers three Codex-backed model tools:</p>
+<p><a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/README.md">English</a></p>
+<p><strong>DeepSeek Harness 的图像生成与图像理解——由你的 ChatGPT 订阅驱动，无需 <code>OPENAI_API_KEY</code>。</strong></p>
+<p>一个 DeepSeek Harness 插件，注册三个由 Codex 驱动的模型工具：</p>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>What it does</th>
+<th>工具</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>web_search</code></td>
-<td>Searches the public web and returns a concise summary with source URLs.</td>
+<td>搜索公开网页，返回简洁摘要和来源 URL。</td>
 </tr>
 <tr>
 <td><code>image_gen</code></td>
-<td>Generates a bitmap image (illustrations, icons, logos, photos, concept art, UI mockups) through the ChatGPT Codex backend.</td>
+<td>通过 ChatGPT Codex 后端生成位图（插画、图标、Logo、照片、概念图、UI 稿等）。</td>
 </tr>
 <tr>
 <td><code>image_vision</code></td>
-<td>Describes or answers questions about an image with a multimodal model — giving text-only harness models (e.g. <code>deepseek-v4-flash</code>) plug-in vision.</td>
+<td>用多模态模型描述图片或回答问题——让纯文本模型（如 <code>deepseek-v4-flash</code>）获得&quot;视觉&quot;。</td>
 </tr>
 </tbody></table>
-<p>All three tools reuse the <strong>ChatGPT login state</strong> (the same OAuth tokens the official Codex CLI uses) and the harness-owned transports in <a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/scripts"><code>scripts/</code></a> — zero npm dependencies, Node built-in <code>https</code> only.</p>
-<h3>How it works</h3>
-<pre><code>web_search / image_gen / image_vision (model tool)
-        │  harness.registerTool + credentials service
+<p>三个工具都复用 <strong>ChatGPT 登录态</strong>（与官方 Codex CLI 相同的 OAuth 凭据），传输层在 <a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/scripts"><code>scripts/</code></a> 中，零 npm 依赖，仅用 Node 内置 <code>https</code>。</p>
+<h3>工作原理</h3>
+<pre><code>web_search / image_gen / image_vision（模型工具）
+        │  harness.registerTool + 凭据服务
         ▼
-index.js (Cordis bundle entry)
-        │  shell service, env-only argument passing
+index.js（Cordis bundle 入口）
+        │  shell 服务，参数全部经环境变量传递
         ▼
-scripts/codex-common.mjs / codex-imagegen.mjs / codex-vision.mjs / codex-search.mjs   ← harness-owned transports
-        │  OAuth refresh (auth.openai.com) + POST chatgpt.com/backend-api/codex/responses
+scripts/codex-common.mjs / codex-imagegen.mjs / codex-vision.mjs / codex-search.mjs   ← 自研传输层
+        │  OAuth 刷新（auth.openai.com）+ POST chatgpt.com/backend-api/codex/responses
         ▼
-        gpt-5.5 (multimodal) → PNG file / text description
+        gpt-5.5（多模态）→ PNG 文件 / 文字描述
 </code></pre>
-<p>Auth precedence (all transports): <code>CODEX_ACCESS_TOKEN</code> / <code>CODEX_REFRESH_TOKEN</code> / <code>CODEX_ACCOUNT_ID</code> environment variables (resolved from the DSH credentials service, keys <code>OPENAI_CODEX_API_KEY</code> / <code>OPENAI_CODEX_REFRESH_TOKEN</code> / optional <code>OPENAI_CODEX_ACCOUNT_ID</code>) → <code>$CODEX_HOME/auth.json</code> → <code>~/.codex/auth.json</code> (<code>codex login</code>). On HTTP 401 the transport refreshes the access token once and persists it back to the selected auth file (atomic, 0600). This plugin consumes the login state; it does not provide Codex authentication or an LLM provider.</p>
-<h3>Requirements</h3>
+<p>认证优先级（三个传输脚本一致）：<code>CODEX_ACCESS_TOKEN</code> / <code>CODEX_REFRESH_TOKEN</code> / <code>CODEX_ACCOUNT_ID</code> 环境变量（由插件从 DSH 凭据服务解析，对应 <code>OPENAI_CODEX_API_KEY</code> / <code>OPENAI_CODEX_REFRESH_TOKEN</code> / 可选的 <code>OPENAI_CODEX_ACCOUNT_ID</code>）→ <code>$CODEX_HOME/auth.json</code> → <code>~/.codex/auth.json</code>（<code>codex login</code>）。遇到 HTTP 401 时传输脚本自动刷新 access token 一次，并原子写回选中的登录文件（0600）。本插件只消费 Codex 登录态，不提供 Codex 认证或 LLM provider。</p>
+<h3>依赖</h3>
 <ul>
-<li>DeepSeek Harness (the plugin is installed as a profile-wide Cordis bundle; tested against current builds)</li>
-<li>Node.js ≥ 22 (for the transports)</li>
-<li>A ChatGPT subscription login state:<ul>
-<li><code>~/.codex/auth.json</code> from <code>codex login</code> (recommended), <strong>or</strong></li>
-<li>the <code>OPENAI_CODEX_API_KEY</code> / <code>OPENAI_CODEX_REFRESH_TOKEN</code> credentials in DSH</li>
+<li>DeepSeek Harness（插件以 profile 级 Cordis bundle 形式运行）</li>
+<li>Node.js ≥ 22（传输脚本）</li>
+<li>ChatGPT 订阅登录态：<ul>
+<li><code>codex login</code> 生成的 <code>~/.codex/auth.json</code>（推荐），<strong>或</strong></li>
+<li>DSH 凭据 <code>OPENAI_CODEX_API_KEY</code> / <code>OPENAI_CODEX_REFRESH_TOKEN</code></li>
 </ul>
 </li>
 </ul>
-<h3>Install</h3>
-<p>The package ships as a <strong>bundle</strong>: installing it into a profile registers the tools in the host registry, so <strong>every session of that profile</strong> gets them.</p>
-<pre><code class="language-bash"># from a git host (no build step, so no pnpm allowBuilds permission needed)
+<h3>安装</h3>
+<p>仓库以 <strong>bundle</strong> 形态发布：装进 profile 后工具注册在 host 注册表，<strong>该 profile 的所有会话</strong>都能用。</p>
+<pre><code class="language-bash"># 从 git 安装（无构建步骤，无需 pnpm allowBuilds 授权）
 dsh plugin --profile web add github:SPYQWER1/dsh-codex-tools
 
-# or from a tarball (pnpm pack)
-dsh plugin --profile web add ./dsh-codex-tools-1.0.0.tgz
-
-# or from npm, once published
+# 或发布到 npm 后
 dsh plugin --profile web add dsh-codex-tools
 </code></pre>
-<p>Then restart the profile (<code>dsh web</code> / <code>dsh --profile web</code>) — the tools appear in every session. <code>dsh plugin --profile web remove dsh-codex-tools</code> uninstalls. Pin a commit for git installs (<code>github:SPYQWER1/dsh-codex-tools#&lt;sha&gt;</code>) so a later push cannot change what runs.</p>
-<p>Bundle install resolves the in-box <code>@deepseek-ai/dsh-tools</code> peer from the harness installation; no extra npm packages are fetched. The bundle entry is <code>index.js</code>, which registers all three tools into the host registry and shares the <code>scripts/</code> transports via <code>tools.js</code>.</p>
-<h4>As standalone CLI</h4>
-<p>The transports are plain Node scripts and work without the harness:</p>
-<pre><code class="language-bash"># generate an image (writes the PNG, prints JSON to stdout)
-CG_PROMPT=&quot;a cute whale icon, flat vector style&quot; CG_OUT=whale.png CG_SIZE=1024x1024 \
-  node scripts/codex-imagegen.mjs
-
-# describe an image
-VG_IMAGE=whale.png VG_QUESTION=&quot;what is this?&quot; node scripts/codex-vision.mjs
-
-# search the public web
-CS_QUERY=&quot;latest DeepSeek Harness release&quot; CS_FRESHNESS=live node scripts/codex-search.mjs
-</code></pre>
-<h3>Usage</h3>
-<p>Ask the harness in natural language — the model drives the tools itself:</p>
+<p>然后重启该 profile（<code>dsh web</code> / <code>dsh --profile web</code>），所有会话即可见这三个工具。卸载：<code>dsh plugin --profile web remove dsh-codex-tools</code>。git 安装建议固定 commit（<code>github:SPYQWER1/dsh-codex-tools#&lt;sha&gt;</code>），避免后续推送静默改变安装内容。</p>
+<p>bundle 安装时 <code>@deepseek-ai/dsh-tools</code> 等 in-box 包以 optional peer 形式从 harness 安装解析，不会拉取额外 npm 包。bundle 入口是 <code>index.js</code>，把三个工具注册进 host 注册表，并通过 <code>tools.js</code> 共享 <code>scripts/</code> 传输层。</p>
+<h3>使用</h3>
+<p>直接用自然语言让模型调用工具：</p>
 <ul>
-<li><em>&quot;Search for the latest DeepSeek Harness release&quot;</em> → <code>web_search</code></li>
+<li><em>&quot;搜索 DeepSeek Harness 最新版本&quot;</em> → <code>web_search</code></li>
 <li><em>&quot;生成一个鲸鱼图标&quot;</em> → <code>image_gen</code></li>
 <li><em>&quot;看看这个图片讲了什么：output/photo.png&quot;</em> → <code>image_vision</code></li>
 </ul>
-<h4><code>web_search</code> parameters</h4>
+<h4><code>web_search</code> 参数</h4>
 <table>
 <thead>
 <tr>
-<th>Param</th>
-<th>Type</th>
-<th>Notes</th>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>query</code></td>
-<td>string (required)</td>
-<td>Public-web research question.</td>
+<td>string（必填）</td>
+<td>公开网页研究问题。</td>
 </tr>
 <tr>
 <td><code>maxSources</code></td>
 <td>integer</td>
-<td>1–10, default <code>5</code>.</td>
+<td>1–10，默认 <code>5</code>。</td>
 </tr>
 <tr>
 <td><code>freshness</code></td>
 <td>string</td>
-<td><code>cached</code> (default) or <code>live</code> for time-sensitive queries.</td>
+<td><code>cached</code>（默认）或时效性问题使用 <code>live</code>。</td>
 </tr>
 <tr>
 <td><code>model</code></td>
 <td>string</td>
-<td>ChatGPT backend model, default <code>gpt-5.4-mini</code>.</td>
+<td>ChatGPT 后端模型，默认 <code>gpt-5.4-mini</code>。</td>
 </tr>
 </tbody></table>
-<p>The result contains <code>summary</code> and <code>sources</code>, where each source has a title, URL, and short snippet.</p>
-<h4><code>image_gen</code> parameters</h4>
+<p>结果包含 <code>summary</code> 和 <code>sources</code>；每个来源包含标题、URL 和简短片段。</p>
+<h4><code>image_gen</code> 参数</h4>
 <table>
 <thead>
 <tr>
-<th>Param</th>
-<th>Type</th>
-<th>Notes</th>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>prompt</code></td>
-<td>string (required)</td>
-<td>Detailed description (subject, style, composition, palette, constraints).</td>
+<td>string（必填）</td>
+<td>详细描述（主体、风格、构图、配色、约束）。</td>
 </tr>
 <tr>
 <td><code>out</code></td>
 <td>string</td>
-<td>Output path relative to the workspace. Default <code>output/imagegen/&lt;timestamp&gt;.png</code>.</td>
+<td>相对工作区的输出路径。默认 <code>output/imagegen/&lt;时间戳&gt;.png</code>。</td>
 </tr>
 <tr>
 <td><code>size</code></td>
 <td>string</td>
-<td><code>1024x1024</code>, <code>1536x1024</code>, <code>1024x1536</code>, <code>2048x2048</code>, <code>2048x1152</code>, or <code>auto</code> (default).</td>
+<td><code>1024x1024</code>、<code>1536x1024</code>、<code>1024x1536</code>、<code>2048x2048</code>、<code>2048x1152</code> 或 <code>auto</code>（默认）。</td>
 </tr>
 <tr>
 <td><code>format</code></td>
 <td>string</td>
-<td><code>png</code> (default), <code>jpeg</code>, <code>webp</code>.</td>
+<td><code>png</code>（默认）、<code>jpeg</code>、<code>webp</code>。</td>
 </tr>
 <tr>
 <td><code>model</code></td>
 <td>string</td>
-<td>ChatGPT backend model, default <code>gpt-5.5</code>.</td>
+<td>ChatGPT 后端模型，默认 <code>gpt-5.5</code>。</td>
 </tr>
 </tbody></table>
-<h4><code>image_vision</code> parameters</h4>
+<h4><code>image_vision</code> 参数</h4>
 <table>
 <thead>
 <tr>
-<th>Param</th>
-<th>Type</th>
-<th>Notes</th>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>image</code></td>
-<td>string (required)</td>
-<td>Path to the image (png/jpeg/webp/gif), workspace-relative or absolute.</td>
+<td>string（必填）</td>
+<td>图片路径（png/jpeg/webp/gif），相对工作区或绝对路径。</td>
 </tr>
 <tr>
 <td><code>question</code></td>
 <td>string</td>
-<td>Optional focus question; defaults to a full description.</td>
+<td>可选焦点问题；默认输出完整描述。</td>
 </tr>
 <tr>
 <td><code>model</code></td>
 <td>string</td>
-<td>Default <code>gpt-5.5</code>.</td>
+<td>默认 <code>gpt-5.5</code>。</td>
 </tr>
 </tbody></table>
-<h3>Gallery</h3>
-<p><code>image_gen</code> — generate an image from a natural-language request:</p>
-<p><img src="https://raw.githubusercontent.com/SPYQWER1/dsh-codex-tools/main/%E7%94%9F%E5%9B%BE.png" alt="image_gen demo"></p>
-<p><code>image_vision</code> — a text-only model reads an image:</p>
-<p><img src="https://raw.githubusercontent.com/SPYQWER1/dsh-codex-tools/main/%E8%AF%86%E5%9B%BE.png" alt="image_vision demo"></p>
-<h3>Caveats</h3>
+<h3>效果示例</h3>
+<p><code>image_gen</code> —— 根据自然语言请求生成图片：</p>
+<p><img src="https://raw.githubusercontent.com/SPYQWER1/dsh-codex-tools/main/%E7%94%9F%E5%9B%BE.png" alt="image_gen 演示"></p>
+<p><code>image_vision</code> —— 文本模型查看图片内容：</p>
+<p><img src="https://raw.githubusercontent.com/SPYQWER1/dsh-codex-tools/main/%E8%AF%86%E5%9B%BE.png" alt="image_vision 演示"></p>
+<h3>注意事项</h3>
 <ul>
-<li><code>chatgpt.com/backend-api/codex/responses</code> is the same internal endpoint the official Codex CLI uses. It is <strong>not</strong> a documented public API — OpenAI may change or restrict it at any time.</li>
-<li>Web search and image generation use the metered <strong>Codex-usage</strong> bucket of your ChatGPT plan.</li>
-<li>Per OpenAI Terms of Use, do not use your ChatGPT subscription to power a public-facing image generation service.</li>
-<li>Transparent-background output is not supported (use a chroma-key background + local removal instead).</li>
+<li><code>chatgpt.com/backend-api/codex/responses</code> 是官方 Codex CLI 使用的内部端点，<strong>不是</strong>文档化的公开 API——OpenAI 可能随时变更或限制。</li>
+<li>网页搜索和生图会消耗 ChatGPT 套餐的 <strong>Codex-usage</strong> 计量配额。</li>
+<li>按 OpenAI 服务条款，请勿用 ChatGPT 订阅搭建面向公众的图像生成服务。</li>
 </ul>
-<h3>License</h3>
-<p>MIT — see <a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/LICENSE">LICENSE</a>. The protocol shape follows the public behavior of the Codex CLI and the <a href="https://github.com/leeguooooo/chatgpt-imagegen">chatgpt-imagegen</a> project; the implementation here is original.</p>
+<h3>许可</h3>
+<p>MIT —— 见 <a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/LICENSE">LICENSE</a>。协议形态参考了 Codex CLI 的公开行为与 <a href="https://github.com/leeguooooo/chatgpt-imagegen">chatgpt-imagegen</a> 项目；本仓库实现为原创。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
@@ -393,8 +377,8 @@ CS_QUERY=&quot;latest DeepSeek Harness release&quot; CS_FRESHNESS=live node scri
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1259</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 322</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 323</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
