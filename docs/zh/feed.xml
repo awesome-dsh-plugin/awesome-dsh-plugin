@@ -125,6 +125,20 @@
     <summary>用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。</summary>
   </entry>
   <entry>
+    <title>dsh-subagent-tools</title>
+    <id>https://github.com/lynx-gt/dsh-subagent-tools</id>
+    <link href="https://github.com/lynx-gt/dsh-subagent-tools"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。</summary>
+  </entry>
+  <entry>
+    <title>dsh-subagent-cwd</title>
+    <id>https://github.com/lynx-gt/dsh-subagent-cwd</id>
+    <link href="https://github.com/lynx-gt/dsh-subagent-cwd"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -200,19 +214,5 @@
     <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。</summary>
-  </entry>
-  <entry>
-    <title>dsh-revdiff</title>
-    <id>https://github.com/BrambleXu/dsh-revdiff</id>
-    <link href="https://github.com/BrambleXu/dsh-revdiff"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。</summary>
-  </entry>
-  <entry>
-    <title>dsh-gitflow</title>
-    <id>https://github.com/lonelymoon87/dsh-gitflow</id>
-    <link href="https://github.com/lonelymoon87/dsh-gitflow"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。</summary>
   </entry>
 </feed>

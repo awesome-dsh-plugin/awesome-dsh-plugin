@@ -125,6 +125,20 @@
     <summary>Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.</summary>
   </entry>
   <entry>
+    <title>dsh-subagent-tools</title>
+    <id>https://github.com/lynx-gt/dsh-subagent-tools</id>
+    <link href="https://github.com/lynx-gt/dsh-subagent-tools"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Per-call model, provider, persona, and toolFilter overrides for subagent delegation, with @preset: references and provider/model composite ids.</summary>
+  </entry>
+  <entry>
+    <title>dsh-subagent-cwd</title>
+    <id>https://github.com/lynx-gt/dsh-subagent-cwd</id>
+    <link href="https://github.com/lynx-gt/dsh-subagent-cwd"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>dsh-subagent-tools plus a per-call cwd for subagents, shipped with the two in-process provider patches it requires.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -200,19 +214,5 @@
     <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.</summary>
-  </entry>
-  <entry>
-    <title>dsh-revdiff</title>
-    <id>https://github.com/BrambleXu/dsh-revdiff</id>
-    <link href="https://github.com/BrambleXu/dsh-revdiff"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.</summary>
-  </entry>
-  <entry>
-    <title>dsh-gitflow</title>
-    <id>https://github.com/lonelymoon87/dsh-gitflow</id>
-    <link href="https://github.com/lonelymoon87/dsh-gitflow"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Adds approval-gated Git status, diff, log, commit, branch, and optional checkpoint tools.</summary>
   </entry>
 </feed>

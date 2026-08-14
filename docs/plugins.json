@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 127,
+ "count": 129,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -849,6 +849,30 @@
     "zh": "用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。"
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-code-intel",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-subagent-tools",
+   "owner": "lynx-gt",
+   "url": "https://github.com/lynx-gt/dsh-subagent-tools",
+   "category": "tools",
+   "description": {
+    "en": "Per-call model, provider, persona, and toolFilter overrides for subagent delegation, with @preset: references and provider/model composite ids.",
+    "zh": "子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。"
+   },
+   "install": "dsh plugin --profile web add github:lynx-gt/dsh-subagent-tools",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-subagent-cwd",
+   "owner": "lynx-gt",
+   "url": "https://github.com/lynx-gt/dsh-subagent-cwd",
+   "category": "tools",
+   "description": {
+    "en": "dsh-subagent-tools plus a per-call cwd for subagents, shipped with the two in-process provider patches it requires.",
+    "zh": "在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。"
+   },
+   "install": "dsh plugin --profile web add github:lynx-gt/dsh-subagent-cwd",
    "added": "2026-08-14"
   },
   {
