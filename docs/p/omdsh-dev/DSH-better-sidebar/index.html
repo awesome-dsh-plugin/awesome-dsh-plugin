@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">omdsh-dev/</span><wbr><span class="name">DSH-better-sidebar</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 728</b></span>
+        <span>Stars <b>★ 731</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -189,7 +189,22 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86">https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86</a></p>
+<h3>✨ Features</h3>
+<ul>
+<li><strong>🗂️ File Workbench</strong>: file explorer (lazy-loading tree) + CodeMirror editor; inline preview for images / Markdown / HTML / PDF / Office</li>
+<li><strong>🌐 Embedded Browser</strong>: multiple web tabs with back / forward / refresh; content runs in a sandboxed iframe; external links open in the sidebar by default</li>
+<li><strong>💻 Real Terminal</strong>: xterm.js + node-pty real shell, reconnect with transcript replay; optionally injects <code>terminal_*</code> tools for the model</li>
+<li><strong>🌿 Git Panel</strong>: real diff + VSCode-style diff tabs, history, right-click to stage / commit / revert</li>
+<li><strong>🧩 Background Tasks</strong>: agent topology + background tasks (exit codes / live output / force-kill)</li>
+<li><strong>🪟 Dual Workbench</strong>: right sidebar + bottom panel; drag tabs to split / merge panes (cross-panel), mobile auto-merges into a full-width drawer</li>
+<li><strong>🔁 Session Isolation</strong>: layout / tabs / panels persisted per session, stale state auto-purged</li>
+<li><strong>⚙️ Declarative Settings</strong>: per-item toggles in the &quot;Side Cards&quot; settings section, secondary settings via the gear dialog</li>
+<li><strong>⚡ On-demand Loading</strong>: only ~325KB core at startup; heavy deps (terminal / editor) load on demand (<a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/plans/2026-08-12-lazy-chunks-design.md">design</a>)</li>
+<li><strong>🌏 i18n</strong>: UI text follows DSH&#39;s language (zh / en) with live switching</li>
+</ul>
+<blockquote>
+<p>🔌 <strong>Our stance</strong>: build a plugin like a service, and use it like a user. The 7 built-in tabs + 6 viewers hold no special privileges — they register through the same <code>ctx.betterSidebar</code> API as third-party plugins; whatever the ecosystem can do better, we hand off. See the &quot;🔌 Service&quot; section below and the <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">external plugin guide</a>.</p>
+</blockquote>
 <h3>🆕 Recent Updates</h3>
 <p>v0.12.1</p>
 <table>
@@ -221,24 +236,6 @@ footer p+p{margin-top:.5rem}
 <td></td>
 </tr>
 </tbody></table>
-<h3>✨ Features</h3>
-<ul>
-<li><strong>🗂️ File Explorer</strong>: lazy-loading directory tree (root = session cwd), click to open, <code>@file</code> reference, right-click to copy path</li>
-<li><strong>📝 Edit &amp; Preview</strong>: CodeMirror 6 editing (Ctrl/Cmd+S atomic save, drafts survive tab switches); inline preview for images / Markdown / HTML / PDF / Word / Excel / PPT (HTML in a sandboxed iframe)</li>
-<li><strong>⚡ Client-side Lazy Loading</strong>: only ~325KB core at startup; heavy deps (terminal / editor) load on demand (see <code>docs/plans/2026-08-12-lazy-chunks-design.md</code>)</li>
-<li><strong>🌐 Browser</strong>: multiple embedded web tabs, back/forward/refresh; pages run in a sandboxed iframe (no access to UI data or local files, rejects local addresses), temporarily unlockable (red warning); sites refusing embedding show a reason panel; external links open in the sidebar by default</li>
-<li><strong>💻 Terminal</strong>: xterm.js + node-pty real shell, reconnect with transcript replay; optionally injects <code>terminal_*</code> tools for the model; custom font (family + 9–32px size, applied live)</li>
-<li><strong>🌿 Git Panel</strong>: real diff + VSCode-style diff tabs, history, right-click to stage/commit/revert etc.</li>
-<li><strong>🧩 Background Tasks</strong>: main-session agent topology with click-through to execution records; background tasks on the same page (type badges + exit codes, live-output peek, force-kill)</li>
-<li><strong>🪟 Bottom Panel</strong>: an independent second workbench that only squeezes the center output area; auto-opens a terminal on first expand (toggleable)</li>
-<li><strong>📱 Mobile</strong>: narrow viewports (&lt;768px) merge into a full-width drawer with the bottom panel&#39;s tabs folded into the sidebar; files/links auto-expand the panel</li>
-<li><strong>🔧 Split-pane Workbench</strong>: drag tabs to split/merge panes (cross-panel supported), divider to adjust ratios; one-click collapse/expand both panels from the top-right buttons</li>
-<li><strong>🔁 Session Isolation</strong>: layout / tabs / panel states persisted per session, stale state auto-purged; &quot;produced files&quot; open in the sidebar</li>
-<li><strong>⚙️ Declarative Settings</strong>: the &quot;Side Cards&quot; settings section renders a registry-driven toggle grid, each item independently switchable; secondary settings (auto-expand, terminal tools, sandbox, etc.) edited in a native dialog via the gear button</li>
-<li><strong>🔌 Service API</strong>: exposes <code>ctx.betterSidebar</code> — other plugins can register tabs and file viewers (the 7 built-in tabs + 9 viewers share the same service, see <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md">AGENTS.md</a> and the <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">external plugin guide</a>)</li>
-<li><strong>➕ Add Plugins</strong>: dashed cards at the end of both settings grids (&quot;Sidebar content&quot; / &quot;File viewers&quot;) open tab / previewer plugin modals: the extension point declaration, a &quot;Browse more plugins on GitHub&quot; BUTTON, and the recommended plugin catalog (&quot;Open&quot; jumps to the repo, &quot;Copy&quot; puts the install command on the clipboard); no terminal is opened, nothing can fail — never blocking startup or the sidebar</li>
-<li><strong>🌏 i18n</strong>: UI text follows DSH&#39;s language setting (zh/en) with live switching, no refresh needed</li>
-</ul>
 <h3>🚀 Installation</h3>
 <p><strong>Prerequisites</strong>: DSH installed (<code>dsh web</code> boots), Node.js ≥ 20, pnpm ≥ 10.</p>
 <p><strong>macOS / Linux</strong> (also works in Git Bash / WSL on Windows):</p>
@@ -380,7 +377,7 @@ dsh registry enable dsh-external/dsh-better-sidebar
 </tr>
 </tbody></table>
 <h3>🔌 Service: register tabs &amp; file viewers</h3>
-<p>Since v0.4.0 the plugin exposes the <code>ctx.betterSidebar</code> service — other plugins can register sidebar pages and file viewers (the 7 built-in tabs + 9 viewers go through the same service, eating our own dog food):</p>
+<p>Since v0.4.0 the plugin exposes the <code>ctx.betterSidebar</code> service — other plugins can register sidebar pages and file viewers (the 7 built-in tabs + 6 viewers go through the same service, eating our own dog food):</p>
 <pre><code class="language-ts">import type {} from &#39;dsh-better-sidebar&#39;  // triggers the ctx.betterSidebar type merge
 export const inject = [&#39;betterSidebar&#39;]
 export function apply(ctx: Context) {
@@ -445,8 +442,8 @@ pnpm watch        # tsdown --watch
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1861</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 866</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1866</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 869</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
       <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>

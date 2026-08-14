@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">omdsh-dev/</span><wbr><span class="name">DSH-better-sidebar</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 728</b></span>
+        <span>Star 数 <b>★ 731</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -189,7 +189,22 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86">https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86</a></p>
+<h3>✨ 功能一览</h3>
+<ul>
+<li><strong>🗂️ 文件工作台</strong>：资源管理器（懒加载目录树）+ CodeMirror 编辑器；图片 / Markdown / HTML / PDF / Office 内联预览</li>
+<li><strong>🌐 内嵌浏览器</strong>：多开网页 tab，后退 / 前进 / 刷新；内容运行在沙箱 iframe，外链默认在侧边栏打开</li>
+<li><strong>💻 真实终端</strong>：xterm.js + node-pty 真实 shell，断线重连回放；可选为模型注入 <code>terminal_*</code> 工具</li>
+<li><strong>🌿 Git 面板</strong>：真 diff + VSCode 式 diff tab、历史、右键暂存 / 提交 / 还原</li>
+<li><strong>🧩 后台任务页</strong>：agent 拓扑 + 后台任务（退出码 / 实时输出 / 强制终止）</li>
+<li><strong>🪟 双工作台</strong>：右侧栏 + 底部面板；拖 Tab 拆分 / 合并分栏（可跨面板），移动端自动合并全宽抽屉</li>
+<li><strong>🔁 会话隔离</strong>：布局 / Tab / 面板按会话持久化，陈旧状态自动净化</li>
+<li><strong>⚙️ 声明式设置</strong>：设置页「侧边卡片」逐项独立开关，二级设置经齿轮弹窗</li>
+<li><strong>⚡ 按需加载</strong>：启动只拉 ~325KB 核心，终端 / 编辑器等重依赖用到才按需拉取（<a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/plans/2026-08-12-lazy-chunks-design.md">设计文档</a>）</li>
+<li><strong>🌏 多语言</strong>：界面文案跟随 DSH 语言（zh / en）实时切换</li>
+</ul>
+<blockquote>
+<p>🔌 <strong>我们的态度</strong>：把插件做成服务、把自己当用户——内置的 7 tab + 6 viewer 与外部插件走同一套 <code>ctx.betterSidebar</code> API，不自留特权；可被生态替代的就交给生态。详见下方「🔌 服务化」一节与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>。</p>
+</blockquote>
 <h3>🆕 最近更新</h3>
 <p>v0.12.1</p>
 <table>
@@ -221,24 +236,6 @@ footer p+p{margin-top:.5rem}
 <td></td>
 </tr>
 </tbody></table>
-<h3>✨ 功能一览</h3>
-<ul>
-<li><strong>🗂️ 资源管理器</strong>：懒加载目录树（根 = 会话 cwd），点击打开、<code>@文件</code> 引用、右键复制路径</li>
-<li><strong>📝 编辑与预览</strong>：CodeMirror 6 编辑（Ctrl/Cmd+S 原子保存，切 Tab 不丢草稿）；图片 / Markdown / HTML / PDF / Word / Excel / PPT 内联预览（HTML 走沙箱 iframe）</li>
-<li><strong>⚡ 客户端懒加载</strong>：启动只拉 ~325KB 核心，终端 / 编辑器等重依赖用到才按需拉取（详见 <code>docs/plans/2026-08-12-lazy-chunks-design.md</code>）</li>
-<li><strong>🌐 浏览器</strong>：多开内嵌网页 tab，后退/前进/刷新；内容运行在沙箱 iframe（无法访问界面数据与本地文件，拒绝本机地址），可临时解锁（红色警示）；被站点拒绝嵌入时显示原因；外链默认在侧边栏打开</li>
-<li><strong>💻 终端</strong>：xterm.js + node-pty 真实 shell、断线重连回放；可选为模型注入 <code>terminal_*</code> 工具；支持自定义字体（字体族 + 9–32px 字号，实时生效）</li>
-<li><strong>🌿 Git 面板</strong>：真 diff + VSCode 式 diff tab、历史、右键暂存/提交/还原等</li>
-<li><strong>🧩 后台任务页</strong>：主会话 agent 拓扑、点击直达执行记录；同页显示后台任务（类型徽标 + 退出码、实时输出 peek、可强制终止）</li>
-<li><strong>🪟 底部面板</strong>：第二个独立工作台，只挤占中间输出区；首次展开自动开终端（可关）</li>
-<li><strong>📱 移动端</strong>：窄屏（&lt;768px）自动合并为全宽抽屉，底部面板标签页并入右侧栏；点文件/外链自动展开</li>
-<li><strong>🔧 分栏工作台</strong>：拖 Tab 拆分/合并（可跨面板）、分隔线调比例；右上角按钮一键折叠/展开面板</li>
-<li><strong>🔁 会话隔离</strong>：布局 / Tab / 面板状态按会话持久化，陈旧状态自动净化；「产出文件」在侧边栏打开</li>
-<li><strong>⚙️ 声明式设置</strong>：设置页「侧边卡片」按注册表渲染开关网格，逐项独立开/关；二级设置（自动展开、终端工具、沙箱等）经齿轮弹窗编辑</li>
-<li><strong>🔌 服务化（基座）</strong>：暴露 <code>ctx.betterSidebar</code>，其他插件可注册 tab 与文件预览器（内置 7 tab + 9 viewer 同走一服务）；v0.12.1 起支持角标/生命周期回调/状态订阅/定向打开/插件自有设置（见 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md">AGENTS.md</a> 与 <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md">外部插件接入指南</a>）</li>
-<li><strong>➕ 添加插件</strong>：设置页「侧边卡片」两个网格（侧边栏内容 / 文件预览）末尾的虚线卡片分别打开 Tab / 预览插件弹窗：声明扩展点、「在 GitHub 上浏览更多插件」按钮、推荐插件目录（「跳转」直达仓库、「复制」安装命令到剪贴板）；弹窗不打开终端、无失败路径，不阻塞启动与侧边栏</li>
-<li><strong>🌏 多语言</strong>：界面文案跟随 DSH 语言（zh/en）实时切换，无需刷新</li>
-</ul>
 <h3>🚀 安装</h3>
 <p><strong>前置</strong>：已装好 DSH（<code>dsh web</code> 能正常运行），Node.js ≥ 20、pnpm ≥ 10。</p>
 <p><strong>macOS / Linux</strong>（Windows 装了 Git Bash 或 WSL 也可）：</p>
@@ -380,7 +377,7 @@ dsh registry enable dsh-external/dsh-better-sidebar
 </tr>
 </tbody></table>
 <h3>🔌 服务化：注册 tab 与文件预览器</h3>
-<p>从 v0.4.0 起暴露 <code>ctx.betterSidebar</code> 服务，其他插件可注册侧边栏页面与文件预览器（内置 7 tab + 9 viewer 也走同一服务，吃自己的狗粮）：</p>
+<p>从 v0.4.0 起暴露 <code>ctx.betterSidebar</code> 服务，其他插件可注册侧边栏页面与文件预览器（内置 7 tab + 6 viewer 也走同一服务，吃自己的狗粮）：</p>
 <pre><code class="language-ts">import type {} from &#39;dsh-better-sidebar&#39;  // 触发 ctx.betterSidebar 类型合并
 export const inject = [&#39;betterSidebar&#39;]
 export function apply(ctx: Context) {
@@ -445,8 +442,8 @@ pnpm watch        # tsdown --watch
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1861</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 866</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1866</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 869</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
       <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>

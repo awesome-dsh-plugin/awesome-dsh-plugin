@@ -707,7 +707,7 @@
     "zh": "会话与当日 API 费用统计、预算图框（已用%）、官方余额、历史看板，支持峰谷计价与官方价格一键同步。"
    },
    "npm": null,
-   "stars": 10,
+   "stars": 11,
    "install": "dsh plugin --profile web add github:Han-1413141/dsh-cost-meter",
    "added": "2026-08-14"
   },
@@ -782,7 +782,7 @@
     "zh": "Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。"
    },
    "npm": null,
-   "stars": 866,
+   "stars": 869,
    "install": "dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI",
    "added": "2026-08-14"
   },
@@ -797,7 +797,7 @@
     "zh": "侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。"
    },
    "npm": null,
-   "stars": 728,
+   "stars": 731,
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
    "added": "2026-08-14"
   },
@@ -887,7 +887,7 @@
     "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
    },
    "npm": null,
-   "stars": 1861,
+   "stars": 1866,
    "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
    "added": "2026-08-14"
   },
@@ -1307,7 +1307,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。"
    },
    "npm": null,
-   "stars": 565,
+   "stars": 568,
    "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale",
    "added": "2026-08-14"
   },
@@ -1592,7 +1592,7 @@
     "zh": "跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。"
    },
    "npm": null,
-   "stars": 24,
+   "stars": 25,
    "install": "dsh plugin --profile web add github:Chinesezjc/dsh-interconnect",
    "added": "2026-08-14"
   },
@@ -1637,7 +1637,7 @@
     "zh": "选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。"
    },
    "npm": null,
-   "stars": 3,
+   "stars": 4,
    "install": "dsh plugin --profile web add github:heartmove/dsh-side-chat",
    "added": "2026-08-14"
   },
@@ -2072,7 +2072,7 @@
     "zh": "为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。"
    },
    "npm": null,
-   "stars": 45,
+   "stars": 46,
    "install": "dsh plugin --profile web add github:ysr666/dsh-vision-router",
    "added": "2026-08-14"
   },
@@ -2147,7 +2147,7 @@
     "zh": "DSH 撤销/回退系统：配置变更自动存档，一键撤销/恢复/回退到任意版本，支持 WebUI 与离线 CLI/GUI 工具（DSH 启动失败也能救）。"
    },
    "npm": null,
-   "stars": 4,
+   "stars": 5,
    "install": "dsh plugin --profile web add github:lire1131/dsh-undo-plugin",
    "added": "2026-08-14"
   },
@@ -2192,7 +2192,7 @@
     "zh": "让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。"
    },
    "npm": "@dsh-external/dsh-vision-toolkit",
-   "stars": 316,
+   "stars": 317,
    "install": "dsh plugin --profile web add @dsh-external/dsh-vision-toolkit",
    "added": "2026-08-13"
   },
@@ -2537,7 +2537,7 @@
     "zh": "把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。"
    },
    "npm": null,
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-skillport",
    "added": "2026-08-14"
   },
@@ -2597,7 +2597,7 @@
     "zh": "学术助手插件。"
    },
    "npm": null,
-   "stars": 13,
+   "stars": 14,
    "install": "dsh plugin --profile web add github:lzszq/dsh-scholar",
    "added": "2026-08-13"
   },
@@ -2672,7 +2672,7 @@
     "zh": "为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。"
    },
    "npm": "@liustack/modlens",
-   "stars": 1250,
+   "stars": 1252,
    "install": "dsh plugin --profile web add @liustack/modlens",
    "added": "2026-08-14"
   },
@@ -2687,7 +2687,7 @@
     "zh": "装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。"
    },
    "npm": "dshmarket",
-   "stars": 34,
+   "stars": 36,
    "install": "dsh plugin --profile web add dshmarket",
    "added": "2026-08-14"
   },

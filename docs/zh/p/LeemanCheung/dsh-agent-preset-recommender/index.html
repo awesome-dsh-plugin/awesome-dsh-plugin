@@ -324,7 +324,7 @@ footer p+p{margin-top:.5rem}
 <li>私有状态目录存在时，同一来源/路径的密钥派生 ID 保持稳定；删除 <code>identity.key</code> 会主动生成一组新的 ID。</li>
 <li>推荐反映本地使用频率，不代表任务质量或组织策略。</li>
 <li>插件不会验证可选产品/能力是否已安装或已认证。</li>
-<li>超过字节上限的 JSONL 会在字节/记录边界内以前缀方式采样；其余后续数据、过大的 JSON 文件、过旧文件，以及超出每来源数量限制的较旧文件会主动忽略。0.1.5 不读取压缩的 Codex <code>.jsonl.zst</code> rollout；Claude workflow 脚本与动态 workflow sidecar 也会有意跳过。</li>
+<li>超过字节上限的 JSONL 会在字节/记录边界内以前缀方式采样；其余后续数据、过大的 JSON 文件、过旧文件，以及超出每来源数量限制的较旧文件会主动忽略。0.1.6 不读取压缩的 Codex <code>.jsonl.zst</code> rollout；Claude workflow 脚本与动态 workflow sidecar 也会有意跳过。</li>
 </ul>
 <h3>开发</h3>
 <pre><code class="language-sh">npm install
@@ -349,8 +349,8 @@ npm test
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 316</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1252</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 317</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>

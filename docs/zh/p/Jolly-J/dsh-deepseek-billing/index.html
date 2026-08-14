@@ -207,7 +207,7 @@ footer p+p{margin-top:.5rem}
 <p>卡片长这样:</p>
 <ul>
 <li><strong>一行摘要</strong>:绿点状态 · <code>余额:¥xx.xx元</code> · <code>会话:¥x.xxx</code> · 刷新按钮 · 箭头;</li>
-<li><strong>点一下展开</strong>:显示充值/赠送余额、输入/输出 token、缓存命中率、本会话费用;</li>
+<li><strong>点一下展开</strong>:显示充值/赠送余额、输入/输出 token、缓存命中率、本会话费用(标注“非账单”);</li>
 <li>点卡片外面自动收起;数字变化时是滚动动画;切换会话自动跟着变;</li>
 <li>侧边栏收起(窄栏)时自动隐藏,不挡东西;</li>
 <li>每 60 秒自动刷新一次。</li>
@@ -253,6 +253,14 @@ footer p+p{margin-top:.5rem}
 <li>仓库代码里没有任何密钥,只有环境变量的<strong>名字</strong> <code>DEEPSEEK_API_KEY</code>。</li>
 </ul>
 <p>已知的两个通用风险(不是本插件独有):同机器的同权限进程理论上能读到 curl 进程的环境变量;局域网里能访问你 DSH 网页端口的人可以看到你的<strong>余额数字</strong>(看不到密钥)。介意的话请在部署层给 <code>/billing/status</code> 加访问限制。</p>
+<h3>费用准确性说明(与余额对账必读)</h3>
+<p>卡片上的“会话费用”是<strong>估算值,不是账单</strong>:官方刊例价 × 会话内<strong>成功请求</strong>的用量。以下三样是会话日志看不见、但余额会扣的:</p>
+<ol>
+<li><strong>失败重试</strong>:模型请求失败重试时,每次尝试的输入 token 都会被计费,但只有最终成功的那次会写进会话日志;</li>
+<li><strong>后台模型调用</strong>:会话标题生成、联网搜索的查询等不在会话 usage 里;</li>
+<li><strong>余额异步入账</strong>:DeepSeek 结算有延迟,余额读数可能滞后或提前包含窗口外的消费。</li>
+</ol>
+<p><strong>作者实测对账案例</strong>(7 分钟窗口):余额 -¥1.36,会话估算 +¥1.035,差 ¥0.325——正是上述不可见计费。<strong>余额是唯一真值,卡片费用仅作归因参考。</strong></p>
 <h3>已知限制</h3>
 <ul>
 <li>费用只算<strong>当前会话</strong>,子代理会话暂未汇总;</li>
@@ -277,9 +285,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1861</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 866</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1866</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 869</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 731</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
       <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
