@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 155,
+ "count": 158,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -552,6 +552,18 @@
    "added": "2026-08-13"
   },
   {
+   "name": "dsh-file-claim",
+   "owner": "Nwflower",
+   "url": "https://github.com/Nwflower/dsh-file-claim",
+   "category": "session",
+   "description": {
+    "en": "File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).",
+    "zh": "同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。"
+   },
+   "install": "dsh plugin --profile web add github:Nwflower/dsh-file-claim",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-interconnect",
    "owner": "Chinesezjc",
    "url": "https://github.com/Chinesezjc/dsh-interconnect",
@@ -1068,6 +1080,18 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-memento",
+   "owner": "PerryLink",
+   "url": "https://github.com/PerryLink/dsh-memento",
+   "category": "tools",
+   "description": {
+    "en": "Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.",
+    "zh": "有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。"
+   },
+   "install": "dsh plugin --profile web add github:PerryLink/dsh-memento",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh_workflow",
    "owner": "icetomoyo",
    "url": "https://github.com/icetomoyo/dsh_workflow",
@@ -1402,6 +1426,18 @@
    },
    "install": "dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-pain-point-check",
+   "owner": "ICCuse",
+   "url": "https://github.com/ICCuse/dsh-pain-point-check",
+   "category": "dev",
+   "description": {
+    "en": "Enforced pain-point gate: after two non-converged experiments it injects the three questions, denies non-investigative tool calls until answered, and blocks same-direction retries.",
+    "zh": "强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。"
+   },
+   "install": "dsh plugin --profile web add github:ICCuse/dsh-pain-point-check",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-plugin-check",

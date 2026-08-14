@@ -90,6 +90,13 @@
     <summary>Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.</summary>
   </entry>
   <entry>
+    <title>dsh-file-claim</title>
+    <id>https://github.com/Nwflower/dsh-file-claim</id>
+    <link href="https://github.com/Nwflower/dsh-file-claim"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).</summary>
+  </entry>
+  <entry>
     <title>dsh-interconnect</title>
     <id>https://github.com/Chinesezjc/dsh-interconnect</id>
     <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/zhaoolee/notes"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</summary>
-  </entry>
-  <entry>
-    <title>dsh-figma-to-lottie</title>
-    <id>https://github.com/zimai233/dsh-figma-to-lottie</id>
-    <link href="https://github.com/zimai233/dsh-figma-to-lottie"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.</summary>
   </entry>
 </feed>
