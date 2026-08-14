@@ -22,6 +22,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
   - [Sessions & Messages](#sessions--messages)
   - [Memory](#memory)
   - [Tools & Capabilities](#tools--capabilities)
+  - [Skills](#skills)
   - [Workflow & Automation](#workflow--automation)
   - [Notifications & Integrations](#notifications--integrations)
   - [Models & Providers](#models--providers)
@@ -171,6 +172,8 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [huey1in/trio](https://github.com/huey1in/trio) - Browser automation (Playwright) with a live view, an MCP server exposing DSH agents to any MCP client, and GitHub issue/PR/webhook review tools.
 
 - [SamXiaBing/dsh-adb](https://github.com/SamXiaBing/dsh-adb) - ADB device & bench operations for DSH: device discovery, structured logcat (background streaming), apk install, file pull/push, and dumpsys performance snapshots.
+
+### Skills
 
 ### Workflow & Automation
 

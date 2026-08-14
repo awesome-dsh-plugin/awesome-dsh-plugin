@@ -25,6 +25,10 @@
    "en": "Tools & Capabilities",
    "zh": "工具与能力"
   },
+  "skill": {
+   "en": "Skills",
+   "zh": "技能包"
+  },
   "workflow": {
    "en": "Workflow & Automation",
    "zh": "工作流与自动化"
