@@ -45,6 +45,8 @@ dsh plugin --profile web add dshmarket
 
 - [Make0209/dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) - GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.
 
+- [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) - Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.
+
 - [wjy9902/dsh-web-default-session](https://github.com/wjy9902/dsh-web-default-session) - The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.
 
 - [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) - One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.
