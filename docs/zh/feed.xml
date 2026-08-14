@@ -55,6 +55,13 @@
     <summary>DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。</summary>
   </entry>
   <entry>
+    <title>dsh-continual-evolve</title>
+    <id>https://github.com/ZK-Andy/dsh-continual-evolve</id>
+    <link href="https://github.com/ZK-Andy/dsh-continual-evolve"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/omdsh-dev/web-components"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Web Components 支持。</summary>
-  </entry>
-  <entry>
-    <title>dsh-turn-navigator</title>
-    <id>https://github.com/vibeinging/dsh-turn-navigator</id>
-    <link href="https://github.com/vibeinging/dsh-turn-navigator"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>对话轮次导航。</summary>
   </entry>
 </feed>

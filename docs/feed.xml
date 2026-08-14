@@ -55,6 +55,13 @@
     <summary>Xcode AI integration for DSH: 26 Xcode MCP tools (mcpbridge) + Apple platform skills + Xcode Intelligence-style persona (agent preset or global bundle).</summary>
   </entry>
   <entry>
+    <title>dsh-continual-evolve</title>
+    <id>https://github.com/ZK-Andy/dsh-continual-evolve</id>
+    <link href="https://github.com/ZK-Andy/dsh-continual-evolve"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/omdsh-dev/web-components"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Web Components support.</summary>
-  </entry>
-  <entry>
-    <title>dsh-turn-navigator</title>
-    <id>https://github.com/vibeinging/dsh-turn-navigator</id>
-    <link href="https://github.com/vibeinging/dsh-turn-navigator"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Turn navigation for the DSH Web UI.</summary>
   </entry>
 </feed>
