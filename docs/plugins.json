@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 312,
+ "count": 316,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1777,6 +1777,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-memoria-extra",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-memoria-extra",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-memoria-extra/",
+   "category": "memory",
+   "description": {
+    "en": "Advanced memoria tools: session context injection (profile + recall), recent decisions, health report, namespace allowlist, memory relation graph, and entity search; companion to dsh-memoria.",
+    "zh": "memoria 进阶工具：会话上下文注入（画像+召回）、近期决策、健康报告、命名空间白名单、记忆关系图与实体搜索；dsh-memoria 的伴生插件。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-memoria-extra",
+   "added": "2026-08-14"
+  },
+  {
    "name": "blender",
    "owner": "CheshireJCat",
    "url": "https://github.com/CheshireJCat/blender",
@@ -2974,6 +2989,36 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:lsz-asd/dsh-plugin-device-info",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-codebase-memory",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-codebase-memory",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-codebase-memory/",
+   "category": "tools",
+   "description": {
+    "en": "Code knowledge graph bridge for codebase-memory-mcp: semantic symbol search (BM25), source snippets, architecture overview with Leiden communities, call/data-flow/cross-service traces, graph-augmented grep.",
+    "zh": "codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-codebase-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-nuphus-mcp",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-nuphus-mcp",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-nuphus-mcp/",
+   "category": "tools",
+   "description": {
+    "en": "Desktop and browser automation bridge (36 tools): window/screen/mouse/keyboard control with PaddleOCR element perception, Chrome CDP browsing with accessibility snapshots.",
+    "zh": "桌面 + 浏览器自动化桥（36 个工具）：窗口/屏幕/鼠标/键盘控制配 PaddleOCR 元素感知，Chrome CDP 浏览配无障碍快照。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-nuphus-mcp",
    "added": "2026-08-14"
   },
   {
@@ -4459,6 +4504,21 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:lsz-asd/dsh-chameleon#path:/bundle",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-ocr-review",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-ocr-review",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-ocr-review/",
+   "category": "dev",
+   "description": {
+    "en": "Local AI code-review gate: review a workspace/branch/commit diff via the managed ocr.js, returning structured findings with token stats; gate mode fails on findings.",
+    "zh": "本地 AI 代码评审门禁：对工作区/分支/commit diff 跑评审（托管 ocr.js），返回结构化 findings 与 token 统计；门禁模式发现问题即失败。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-ocr-review",
    "added": "2026-08-14"
   },
   {
