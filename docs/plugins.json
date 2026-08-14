@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 249,
+ "count": 252,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1718,6 +1718,34 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-plugin-suite#dsh-plugin-center",
+   "owner": "crTnT",
+   "url": "https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center",
+   "category": "tools",
+   "description": {
+    "en": "Plugin center: discover, install, and manage DSH plugins from Settings.",
+    "zh": "插件中心：在设置页发现、安装与管理 DSH 插件。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-suite#dsh-plugin-updater",
+   "owner": "crTnT",
+   "url": "https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater",
+   "category": "tools",
+   "description": {
+    "en": "Update manager for installed plugins: check for updates, back up, and roll back.",
+    "zh": "已装插件更新管理：检查更新、备份与回滚。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-find-plugin",
    "owner": "awesome-dsh-plugin",
    "url": "https://github.com/awesome-dsh-plugin/dsh-find-plugin",
@@ -2695,6 +2723,20 @@
    "npm": "dsh-codex-auth",
    "stars": 1,
    "install": "dsh plugin --profile web add dsh-codex-auth",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "deepseek-harness-wallet",
+   "owner": "feibi-mochi",
+   "url": "https://github.com/feibi-mochi/deepseek-harness-wallet",
+   "category": "model",
+   "description": {
+    "en": "Multi-provider wallet chip: official DeepSeek balance, per-session cost & tokens, third-party token totals, recharge shortcut, low-balance alerts.",
+    "zh": "多供应商钱包标签：官方 DeepSeek 余额、本会话花费与 token、第三方合计 token、一键充值、低余额提醒。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet",
    "added": "2026-08-14"
   },
   {
