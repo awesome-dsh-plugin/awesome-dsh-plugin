@@ -27,6 +27,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
   - [Models & Providers](#models--providers)
   - [Development & Runtime](#development--runtime)
   - [Just for Fun](#just-for-fun)
+  - [Skills](#skills)
 - [Badge](#badge)
 - [Disclaimer](#disclaimer)
 
@@ -276,6 +277,14 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [@anweat/dsh-browser](https://github.com/anweat/dsh-browser) - Self-contained browser runtime: Playwright (chromium) + OpenCLI as plugin-local dependencies (global reuse fallback), exposes a `browser` service and 9 interactive browser tools.
 - [dsh-voice-webspeech](https://github.com/anweat/dsh-voice-webspeech) - Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).
 - [dsh-restart](https://github.com/anweat/dsh-restart) - Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.
+
+
+### Skills
+
+- [conservative-code-edits](https://github.com/addxing/conservative-code-edits) — Conservative code-edit discipline: minimal changes, preserve architecture and style, avoid unrelated refactors and shared-code risks.
+- [function-extraction](https://github.com/addxing/function-extraction) — Extract a feature's full implementation chain into a technical document with data flow, exception handling, and Mermaid diagrams.
+- [function-testing](https://github.com/addxing/function-testing) — Generate functional test cases from PRDs, Git commits, or user stories, with an Excel-style report.
+- [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — Reproduce an Android feature in another project or platform, treating the source implementation as the source of truth.
 
 
 ## Contributing
