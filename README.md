@@ -132,6 +132,7 @@ dsh plugin --profile web add dshmarket
 - [heartmove/dsh-side-chat](https://github.com/heartmove/dsh-side-chat) - Select part of a conversation and ask about it in a right-side side chat; bring AI replies back to the main chat directly or as a summary.
 - [bwndlct/dsh-session-export](https://github.com/bwndlct/dsh-session-export) - Export the current session to portable, schema-versioned Markdown and JSON files via the `session_export` tool and slash commands, with cross-platform-safe filenames.
 - [LeemanCheung/dsh-token-usage](https://github.com/LeemanCheung/dsh-token-usage) - Persistent per-session Token usage records and a settings dashboard with provider/model breakdowns and a 52-week activity heatmap.
+- [whyihaveyou/dsh-suite#plugin-session-export](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export) - Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.
 
 ### Memory
 
@@ -224,6 +225,7 @@ dsh plugin --profile web add dshmarket
 - [bwndlct/dsh-session-audit](https://github.com/bwndlct/dsh-session-audit) - Session execution analytics: steps, tool calls, failures, repeated actions, token usage and verification signals, rendered as text/Markdown/JSON reports.
 - [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) - Connect multiple Overleaf projects to DSH through OverleafMCP for browsing, analysis, and Git-based file updates.
 - [LeslieWylie/dsh-fleet-audit](https://github.com/LeslieWylie/dsh-fleet-audit) - Read-only agent-fleet credential hygiene audit: credential-file permissions, embedded credentials in git remotes (masked in output), and provider token literal counts; zero-dependency and deterministic.
+- [whyihaveyou/dsh-suite#plugin-manager](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager) - In-app plugin store for the DSH Web UI: browse, search, one-click install, compat badges.
 
 ### Skills
 - [creght-dev/skills](https://github.com/creght-dev/skills) - Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.
@@ -250,6 +252,7 @@ dsh plugin --profile web add dshmarket
 - [btspoony/mstar-harness](https://github.com/btspoony/mstar-harness) - Skill-driven harness/loop engineering workflow agent plugin.
 - [Letter2025/dsh-approval-llm](https://github.com/Letter2025/dsh-approval-llm) - Model-based permission approval: an approval-request answerer backed by a separate reviewer model.
 - [Letter2025/dsh-model-failover](https://github.com/Letter2025/dsh-model-failover) - Two-level model circuit breaker with failover: trip a model or a whole provider after repeated request failures and route the next request to a configured fallback.
+- [whyihaveyou/dsh-suite#plugin-team-board](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board) - Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.
 
 
 ### Notifications & Integrations
@@ -270,6 +273,7 @@ dsh plugin --profile web add dshmarket
 
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) - Notifies you when a conversation finishes: plays a sound and shows a Windows notification when the agent goes idle (configurable sound file, volume, debounce/throttle).
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) - Per-workspace completion ringtones plus attention sounds for approval, question, plan-review, goal-blocked, and task-failure events, with built-in synth, voice (TTS), and custom audio.
+- [whyihaveyou/dsh-suite#plugin-notify](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify) - IM webhook and local notifications on turn completion, errors, or approval (Feishu/WeCom/DingTalk/Slack/Discord/custom).
 
 ### Models & Providers
 
