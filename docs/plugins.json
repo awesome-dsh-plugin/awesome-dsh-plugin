@@ -2687,7 +2687,7 @@
    "added": "2026-08-13"
   },
   {
-   "name": "dsh-pet",
+   "name": "@minybear/dsh-pet",
    "owner": "minybear",
    "url": "https://github.com/minybear/DeepSeek-Harness-Pet",
    "category": "fun",

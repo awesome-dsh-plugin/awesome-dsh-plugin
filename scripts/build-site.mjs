@@ -86,8 +86,12 @@ function buildRows(loc, only) {
     const items = group.map((e) => {
       idx++
       const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
-      const repo = e.url.replace('https://github.com/', '')
-      const cmd = `dsh plugin --profile web add github:${repo}`
+      const repoPath = e.url.replace('https://github.com/', '')
+      const repo = repoPath.split('/').slice(0, 2).join('/')
+      const sub = repoPath.includes('/tree/') ? repoPath.split('/tree/')[1].replace(/^[^/]+\//, '') : null
+      const cmd = sub
+        ? `dsh plugin --profile web add github:${repo}#path:/${sub}`
+        : `dsh plugin --profile web add github:${repo}`
       return `    <li class="item" data-cat="${e.cat}" style="animation-delay:${delay}s">
       <span class="no" aria-hidden="true">№ ${String(idx).padStart(2, '0')}</span>
       <div>
