@@ -197,10 +197,10 @@ footer p+p{margin-top:.5rem}
 工具调用、subagent、token 用量和持久化会话。既可以作为官方 <code>dsh</code> profile
 插件运行，也可以直接连接 SDK JSON-RPC runtime。</p>
 <blockquote>
-<p><strong>v0.1.1</strong> · 官方包覆盖 macOS Apple Silicon、macOS Intel、Linux x64 和
+<p><strong>v0.2.x</strong> · 官方包覆盖 macOS Apple Silicon、macOS Intel、Linux x64 和
 Windows x64。当前集成以 <code>dsh 0.1.0-rc.6</code> 为基线。</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/banner.jpg" alt="dsh-tui 的 DeepSeek Harness 会话界面"></p>
+<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/banner-v020.png" alt="dsh-tui 0.2 的 DeepSeek Harness 首页"></p>
 <h3>快速开始</h3>
 <h4>推荐：作为 dsh profile 插件运行</h4>
 <p>需要已安装并配置好的 <code>dsh</code>、Node.js 18+ 和 pnpm 10+。</p>
@@ -218,14 +218,23 @@ dsh-tui --demo
 <p><code>dsh-tui</code> 是主命令；<code>dsb</code> 保留为兼容别名。</p>
 <h3>核心能力</h3>
 <ul>
-<li>实时呈现推理、回复、工具参数与结果、plugin 上下文和 subagent 生命周期。</li>
-<li>回合进行中排队 follow-up；standalone 模式还支持立即打断并发送下一条。</li>
-<li>持久化 JSONL 会话，可通过 <code>/new</code>、<code>/resume</code> 和 <code>--session-id</code> 管理。</li>
-<li>从 dsh 宿主读取模型、agent preset、权限 preset、provider 和凭据。</li>
-<li>深浅两套 DeepSeek Web UI 风格主题，支持窄终端与鼠标交互。</li>
-<li>本机、tmux 和 SSH 下通过原生剪贴板、tmux buffer 或 OSC 52 复制文本。</li>
+<li><strong>完整的 agent 时间线</strong>：实时呈现推理、回复、工具参数与结果、plugin 上下文、
+subagent 生命周期和 token/cache 指标；最新消息下方持续显示阶段、耗时与队列深度。</li>
+<li><strong>宿主能力原生接入</strong>：在 plugin 模式读取 dsh 的模型、agent preset、权限、
+provider、凭据和可调用 skills；skills 与内置命令共享可搜索、可滚动的斜杠菜单。</li>
+<li><strong>多图 prompt</strong>：从文件、剪贴板或粘贴操作暂存最多 8 张图片，图片以可编辑的
+<code>[image n]</code> chip 内联在草稿中，并支持名称、尺寸、大小和类型预览。</li>
+<li><strong>终端友好的 Markdown</strong>：渲染标题、列表、引用、代码块、行内代码、强调、
+删除线、链接和图片标记，同时保留 CJK/Latin 混排与软换行样式。</li>
+<li><strong>高密度工具视图</strong>：工具调用清晰呈现进行中、成功和失败状态，结果可折叠，
+长输出拥有独立滚动视窗，不会挤占整段对话。</li>
+<li><strong>适合长对话的控制</strong>：回合中可排队 follow-up、打断并立即发送；持久化 JSONL
+会话通过 <code>/new</code>、<code>/resume</code> 和 <code>--session-id</code> 管理，workspace 模式信息也会缓存。</li>
+<li><strong>跨平台输入体验</strong>：readline 编辑、上下文快捷键，以及 macOS 的物理 ⌘/⌥
+修复和 Linux/Windows 的 ctrl 组合键，让常用移动与删除在不同终端保持一致。</li>
+<li><strong>终端原生界面</strong>：深浅主题、窄屏布局、鼠标选择/工具交互、原生/tmux/OSC 52
+剪贴板，以及支持 kitty graphics protocol 的图片预览和可选 <code>/liang</code> 像素宠物。</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/plugin-turn.jpg" alt="plugin 模式中的上下文、工具调用和排队 follow-up"></p>
 <h3>两种运行模式</h3>
 <table>
 <thead>
@@ -424,9 +433,9 @@ dsh 并行加载的 ESM 插件抢同一份模块。升级到 <code>0.1.1</code> 
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1804</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 841</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 714</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1815</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 847</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 716</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 118</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
       <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>

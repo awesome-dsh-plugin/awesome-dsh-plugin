@@ -592,6 +592,16 @@ autoScan:
 </code></pre>
 <p>如果不想授予构建权限，也可以从 npm 安装预构建产物：<code>dsh plugin add dsh-user-experience</code>。</p>
 </blockquote>
+<h4>与其他插件共存</h4>
+<p>Harness、Cordis 和 React 都是<strong>由宿主 profile 提供的 peer dependency</strong>。本包不会在 profile 中安装或打包私有的 <code>@deepseek-ai/dsh-tools</code>、<code>@deepseek-ai/cordis</code>、其他 DSH 服务包或 React 副本，因此不同插件会解析到 profile 共享的服务定义与 Symbol 身份。</p>
+<ul>
+<li>不设置 <code>overrides</code>、<code>packageExtensions</code>，不重写 profile 依赖</li>
+<li>不修改 Node.js 或 React 版本</li>
+<li>GitHub 安装时的 <code>prepare</code> 只构建本包，不执行 <code>pnpm/npm install</code>、<code>add</code>、<code>update</code> 或 <code>upgrade</code></li>
+<li>DSH 使用兼容 peer 范围，不会把本仓库的开发版本强行装入 profile</li>
+<li>CI 会把打包产物安装到临时 profile，逐项验证插件与 profile 解析到的 Harness、Cordis 和 React 真实路径完全相同</li>
+</ul>
+<p>这些约束可以防止<strong>本插件</strong>制造重复运行时。如果另一个插件仍把 DSH 包放在直接依赖中，它依然可能引入自己的冲突副本，也应采用相同的 peer dependency 约定。</p>
 <p>安装完成后，插件行（id <code>ux-experience</code>）进入配置层；重启 <code>dsh</code> 或重新加载 profile 生效。可用配置项（在 profile 的 <code>cordis.patch.yml</code> 或 <code>--patch</code> 层按 id 覆盖）：</p>
 <pre><code class="language-yaml">- id: ux-experience
   config:
@@ -625,9 +635,10 @@ autoScan:
 <pre><code class="language-sh">pnpm install
 pnpm run build     # tsdown（node half + client bundle）+ tsc（类型声明）
 pnpm test          # 冒烟测试（AST/CSS / 证据等级 / 语言适配 / persona / 模式 / 账本 / 全链路）
+pnpm run test:singleton  # 打包到临时 profile，验证共享运行时身份
 </code></pre>
 <ul>
-<li><strong>版本锁定</strong>：DSH 处于 developer preview，接口会变。本仓库依赖锁定在 <code>@deepseek-ai/dsh-*@0.1.0-rc.6</code>（<code>@deepseek-ai/cordis@4.0.1</code>）；升级框架前先在本地跑通。</li>
+<li><strong>兼容性基线</strong>：本地构建与测试使用 <code>@deepseek-ai/dsh-*@0.1.0-rc.6</code> 和 <code>@deepseek-ai/cordis@4.0.1</code>；运行时框架包由 profile 通过 peer 提供（DSH 范围为 <code>&gt;=0.1.0-rc.6 &lt;0.2.0</code>）。</li>
 <li>结构：<code>src/index.ts</code> 为 Host 插件（命令 + 提示词注入 + 四个模型工具 + 改动触发的自动走查）；<code>src/client/</code> 为 Web 客户端插件（报告卡片，经 <code>dsh.client</code> 声明被模块表发现）；一个 bundle 行（<code>cordis.patch.yml</code>）同时挂载两者。</li>
 <li>红线：不修改 agent-loop——所有能力挂在文档化扩展点（<code>ctx.commands</code> / <code>ctx.systemPrompt.section()</code> / <code>ctx.tools.register()</code> / <code>SessionEventMap</code> / <code>tools/result</code> / <code>agent/turn-stopping</code>）上。自动走查用的正是框架里 <code>/loop</code> 的原生形态：监听器在回合收尾时 <code>agent.steer()</code>，机器重读 inbox 再跑一步。</li>
 </ul>

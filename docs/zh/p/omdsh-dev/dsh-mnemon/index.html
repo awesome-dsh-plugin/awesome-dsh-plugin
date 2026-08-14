@@ -297,7 +297,7 @@ dsh --profile web
 <p>本地开发检出使用绝对路径：</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;link:/absolute/path/to/dsh-mnemon&quot;
 </code></pre>
-<p>打开 DSH 的“设置 -&gt; 插件配置 -&gt; Mnemon”选择存储范围，再进入会话的“记忆系统”Tab 创建或激活记忆体。配置重启后生效；切换范围不会自动迁移、合并或删除旧数据。</p>
+<p>打开 DSH 的“设置 -&gt; 记忆系统”独立配置页选择存储范围，再进入会话的“记忆系统”Tab 创建或激活记忆体。所有设置点击保存后实时生效；存储根会在新目录初始化成功后原子切换，切换范围不会自动迁移、合并或删除旧数据。</p>
 <p>升级与卸载（<code>dsh plugin</code> 转发给 profile 目录下的 pnpm）：</p>
 <pre><code class="language-sh"># 升级
 dsh plugin --profile web update dsh-mnemon
@@ -319,10 +319,10 @@ dsh plugin --profile web remove dsh-mnemon
 <p>完整配置、覆盖优先级和只读模式见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a>。</p>
 <h3>使用入口</h3>
 <p>Web 工作台提供状态、运行时、记忆体、档案、沉淀、检索、实体、内容八个页面，分为三组：「状态」独立成第一组；「运行时、记忆体、档案」对应三层存储；「沉淀、检索、实体、内容」为读写工具。主要界面随 DSH 全局语言在中文与英文间切换。</p>
-<p>记忆也会在对话流中直接体现（对话内交互，<strong>默认关闭</strong>，可在「设置 → 插件配置 → Mnemon → 对话内交互」中逐项开启，保存即实时生效）：</p>
+<p>记忆也会在对话流中直接体现（对话内交互，<strong>默认关闭</strong>，可在「设置 → 记忆系统 → 对话界面」中逐项开启，保存即实时生效）：</p>
 <ul>
 <li><strong>记忆工具卡</strong>：每个 <code>mnemon_*</code> 工具调用都以记忆风格的卡片呈现——召回显示查询与命中数、写入显示对象摘要，可展开查看参数与结构化结果，并可一键跳到记忆视图对应页面；</li>
-<li><strong>回合记忆条</strong>：完成的回合若触及记忆，回合尾会出现「本回合记忆 · 召回 N · 沉淀 M · 档案检索 K」摘要，展开可见具体工具名；</li>
+<li><strong>回合记忆条</strong>：完成的回合若触及记忆，回合尾会按成功结果区分召回、沉淀、档案检索和检查，并单独标出失败数；展开可见具体工具名；</li>
 <li><strong>存入记忆</strong>：每条已定稿的助手回复旁有「存入记忆」按钮，候选内容可编辑，提交后由隔离的记忆子 Agent 判断、查重并沉淀，不占用主对话上下文。</li>
 </ul>
 <p>常用命令：</p>

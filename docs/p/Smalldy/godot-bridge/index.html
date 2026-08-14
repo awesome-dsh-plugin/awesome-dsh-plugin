@@ -242,6 +242,41 @@ footer p+p{margin-top:.5rem}
 <td><code>validate_script</code></td>
 <td>Headless GDScript compile-check via <code>validate_script.gd</code> → <code>{valid, errors}</code></td>
 </tr>
+<tr>
+<td><code>godot_set_project_setting</code></td>
+<td><code>modify_project_settings</code>, <code>set_main_scene</code>, <code>manage_layers</code>, <code>manage_plugins</code>, <code>manage_translations</code></td>
+<td>Set a typed key in any project.godot section (<code>PackedStringArray(...)</code> / <code>Vector2i(...)</code> / bool / …)</td>
+</tr>
+<tr>
+<td><code>godot_manage_autoloads</code></td>
+<td><code>manage_autoloads</code></td>
+<td>List / add / remove autoload singletons (<code>Name=&quot;*res://…&quot;</code>)</td>
+</tr>
+<tr>
+<td><code>godot_manage_input_map</code></td>
+<td><code>manage_input_map</code></td>
+<td>List / add / remove input actions — <strong>correct Godot 4 keycodes</strong> (fixes godot-mcp&#39;s Godot 3 baseline bug)</td>
+</tr>
+<tr>
+<td><code>godot_manage_export_presets</code></td>
+<td><code>manage_export_presets</code></td>
+<td>List / add / remove export presets (<code>export_presets.cfg</code>)</td>
+</tr>
+<tr>
+<td><code>godot_create_script</code></td>
+<td><code>create_script</code></td>
+<td>GDScript template (extends / class_name / method stubs / source)</td>
+</tr>
+<tr>
+<td><code>godot_create_project</code></td>
+<td><code>create_project</code> / <code>create_csharp_script</code></td>
+<td>Project scaffold, optional Godot .NET <code>.csproj</code></td>
+</tr>
+<tr>
+<td><code>godot_export_project</code></td>
+<td><code>export_project</code></td>
+<td>Headless export (<code>--export-release</code> / <code>--export-debug &lt;preset&gt; &lt;output&gt;</code>)</td>
+</tr>
 </tbody></table>
 <p>The remaining godot-mcp tools were implemented in the MCP server&#39;s own Node process: pure file/editor operations are covered by DSH&#39;s native file tools, while a handful carry <strong>Godot-specific write logic</strong> (<code>manage_input_map</code>, <code>manage_export_presets</code>, <code>modify_project_settings</code>, project/script templates) that a generic edit replaces only with format knowledge — see <a href="https://github.com/Smalldy/godot-bridge/blob/main/COVERAGE.md">COVERAGE.md</a> for the full breakdown.</p>
 <h3>How it works</h3>
@@ -277,7 +312,7 @@ footer p+p{margin-top:.5rem}
   name: &#39;./plugins/godot-bridge.mjs&#39;
 </code></pre>
 </li>
-<li><p>Validate the mount (<code>agentPresets.standingKeyFor(&#39;&lt;your-preset&gt;&#39;)</code>), then start a session on that preset — the eight <code>godot_*</code> tools are available.</p>
+<li><p>Validate the mount (<code>agentPresets.standingKeyFor(&#39;&lt;your-preset&gt;&#39;)</code>), then start a session on that preset — the fifteen <code>godot_*</code> tools are available.</p>
 </li>
 </ol>
 <blockquote>
@@ -289,7 +324,7 @@ footer p+p{margin-top:.5rem}
 <p>Install straight from GitHub — pure ESM + assets, no npm account, no build step:</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:Smalldy/godot-bridge
 </code></pre>
-<p>The package ships a <code>dsh.bundle</code> manifest (<code>cordis.patch.yml</code>) that inserts the <code>tool-godot-bridge</code> row into your profile. After a restart, the eight <code>godot_*</code> tools are available in every session on that profile. A listing in the <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> community registry is pending review (<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/199">PR #199</a>).</p>
+<p>The package ships a <code>dsh.bundle</code> manifest (<code>cordis.patch.yml</code>) that inserts the <code>tool-godot-bridge</code> row into your profile. After a restart, the fifteen <code>godot_*</code> tools are available in every session on that profile. A listing in the <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> community registry is pending review (<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/199">PR #199</a>).</p>
 <h3>Usage</h3>
 <pre><code class="language-text">godot_run_project            # start the game (default: current workspace)
 godot_ping                   # confirm 9090 answers
@@ -340,11 +375,11 @@ COVERAGE.md / COVERAGE.zh-CN.md   # full tool-by-tool comparison vs godot-mcp
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1223</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1231</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
       <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 309</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>

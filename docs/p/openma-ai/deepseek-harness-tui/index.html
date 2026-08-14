@@ -198,11 +198,11 @@ tool calls, subagents, token usage, and durable sessions in one Rust/ratatui
 interface. Run it as an official <code>dsh</code> profile plugin or connect it directly to
 the SDK JSON-RPC runtime.</p>
 <blockquote>
-<p><strong>v0.1.1</strong> · The official package supports macOS on Apple Silicon and Intel,
+<p><strong>v0.2.x</strong> · The official package supports macOS on Apple Silicon and Intel,
 Linux x64, and Windows x64. The current integration baseline is
 <code>dsh 0.1.0-rc.6</code>.</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/banner.jpg" alt="A DeepSeek Harness session in dsh-tui"></p>
+<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/banner-v020.png" alt="The DeepSeek Harness home screen in dsh-tui 0.2"></p>
 <h3>Quick start</h3>
 <h4>Recommended: run as a dsh profile plugin</h4>
 <p>Requires a configured <code>dsh</code> installation, Node.js 18+, and pnpm 10+.</p>
@@ -221,20 +221,31 @@ dsh-tui --demo
 <p><code>dsh-tui</code> is the primary command; <code>dsb</code> remains as a compatibility alias.</p>
 <h3>Highlights</h3>
 <ul>
-<li>Streams reasoning, assistant text, tool arguments and results, plugin context,
-and subagent lifecycles.</li>
-<li>Queues follow-ups during a turn; standalone mode can also interrupt and send
-the next message immediately.</li>
-<li>Keeps durable JSONL sessions managed through <code>/new</code>, <code>/resume</code>, and
-<code>--session-id</code>.</li>
-<li>Uses the host dsh model catalog, agent presets, permission presets, providers,
-and credentials.</li>
-<li>Includes dark and light DeepSeek Web UI-inspired themes, narrow-terminal
-layouts, and mouse interaction.</li>
-<li>Copies through native clipboard tools, the tmux buffer, or OSC 52 for local,
-tmux, and SSH sessions.</li>
+<li><strong>A complete agent timeline:</strong> stream reasoning, replies, tool arguments and
+results, plugin context, subagent lifecycles, and token/cache metrics. A live
+status line keeps the current phase, elapsed time, and queue depth visible.</li>
+<li><strong>Native host capabilities:</strong> plugin mode reads dsh models, agent presets,
+permissions, providers, credentials, and invocable skills. Host skills join
+built-in commands in one searchable, scrolling slash menu.</li>
+<li><strong>Multi-image prompts:</strong> stage up to eight images from files, the clipboard,
+or paste. Editable <code>[image n]</code> chips live inline with the draft and expose a
+preview with name, dimensions, size, and media type.</li>
+<li><strong>Terminal-aware Markdown:</strong> render headings, lists, quotes, fenced and inline
+code, emphasis, strikethrough, links, and image markers while preserving
+styling across CJK/Latin text and soft wraps.</li>
+<li><strong>Dense tool views:</strong> tool calls expose running, success, and failure states;
+results collapse cleanly and long output gets its own scrollable viewport
+instead of taking over the conversation.</li>
+<li><strong>Long-turn control:</strong> queue follow-ups or interrupt and send immediately;
+manage durable JSONL sessions with <code>/new</code>, <code>/resume</code>, and <code>--session-id</code>, with
+workspace mode facts cached across launches.</li>
+<li><strong>Cross-platform editing:</strong> readline commands, contextual shortcuts, physical
+⌘/⌥ modifier rescue on macOS, and ctrl conventions on Linux and Windows keep
+movement and deletion consistent across terminals.</li>
+<li><strong>A terminal-native surface:</strong> dark/light themes, narrow layouts, mouse
+selection and tool interaction, native/tmux/OSC 52 clipboard routing, kitty
+image previews, and the optional <code>/liang</code> pixel companion.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/plugin-turn.jpg" alt="Plugin context, tool calls, and a queued follow-up"></p>
 <h3>Two runtime modes</h3>
 <table>
 <thead>
@@ -440,9 +451,9 @@ is the runtime substrate.</p>
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1804</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 841</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 714</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1815</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 847</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 716</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 118</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
       <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>

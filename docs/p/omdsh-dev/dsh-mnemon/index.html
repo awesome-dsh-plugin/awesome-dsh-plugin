@@ -297,7 +297,7 @@ dsh --profile web
 <p>For a local checkout, use an absolute path:</p>
 <pre><code class="language-sh">dsh plugin --profile web add &quot;link:/absolute/path/to/dsh-mnemon&quot;
 </code></pre>
-<p>Open “Settings -&gt; Plugin Configuration -&gt; Mnemon” to select a storage scope, then create or activate a Memory Space in the conversation&#39;s “Memory System” tab. Configuration applies after restart. Changing the scope never migrates, merges, or deletes old data automatically.</p>
+<p>Open the dedicated “Settings -&gt; Memory System” page to select a storage scope, then create or activate a Memory Space in the conversation&#39;s “Memory System” tab. All settings apply live after Save; the storage root switches atomically after the new directory initializes successfully. Changing the scope never migrates, merges, or deletes old data automatically.</p>
 <p>Upgrade and uninstall (<code>dsh plugin</code> forwards to pnpm inside the profile directory):</p>
 <pre><code class="language-sh"># Upgrade
 dsh plugin --profile web update dsh-mnemon
@@ -319,10 +319,10 @@ dsh plugin --profile web remove dsh-mnemon
 <p>See the <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/en/configuration.md">configuration reference</a> for every option, precedence rules, and read-only mode.</p>
 <h3>Entry points</h3>
 <p>The Web workspace contains Status, Runtime, Memory Spaces, Documents, Distill, Recall, Entities, and Content pages in three divider-separated groups: “Status” stands alone; “Runtime, Memory Spaces, Documents” cover the three storage tiers; “Distill, Recall, Entities, Content” are the read/write tools. Its main interface follows DSH&#39;s global Chinese/English locale.</p>
-<p>Memory also surfaces inside the conversation flow (in-conversation interaction, <strong>off by default</strong>; enable each surface under Settings → Plugin settings → Mnemon → In-conversation interaction — changes apply live on save):</p>
+<p>Memory also surfaces inside the conversation flow (conversation interface, <strong>off by default</strong>; enable each surface under Settings → Memory System → Conversation interface — changes apply live on save):</p>
 <ul>
 <li><strong>Memory tool cards</strong>: every <code>mnemon_*</code> tool call renders as a memory-flavoured card — recalls show the query and hit count, writes show the subject summary — expandable to the raw arguments and structured result, with a one-click jump to the matching Memory view page;</li>
-<li><strong>Turn memory bar</strong>: a completed turn that touched memory gets a “Turn memory · recalled N · wrote M · document search K” summary under its tail, expandable to the exact tool names;</li>
+<li><strong>Turn memory bar</strong>: completed calls are separated into successful recalls, writes, document searches, and inspections, with failures reported independently; expand it for the exact tool names;</li>
 <li><strong>Save to memory</strong>: every finalized assistant reply carries a “Save to memory” action; the candidate is editable, and submission routes through the isolated memory subagent (judgment, dedupe, distillation) without filling the main conversation context.</li>
 </ul>
 <p>Common commands:</p>

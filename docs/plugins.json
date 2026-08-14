@@ -92,7 +92,7 @@
     "zh": "插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。"
    },
    "npm": null,
-   "stars": 4,
+   "stars": 5,
    "install": "dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub",
    "added": "2026-08-14"
   },
@@ -347,7 +347,7 @@
     "zh": "对话节点导航条，右缘节点串快速跳转 user 消息。"
    },
    "npm": null,
-   "stars": 16,
+   "stars": 17,
    "install": "dsh plugin --profile web add github:vlln/dsh-navbar",
    "added": "2026-08-13"
   },
@@ -602,7 +602,7 @@
     "zh": "右侧圆点时间轴导航条，点击跳转到任意用户消息。"
    },
    "npm": null,
-   "stars": 9,
+   "stars": 10,
    "install": "dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone",
    "added": "2026-08-13"
   },
@@ -722,7 +722,7 @@
     "zh": "Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。"
    },
    "npm": null,
-   "stars": 841,
+   "stars": 847,
    "install": "dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI",
    "added": "2026-08-14"
   },
@@ -737,7 +737,7 @@
     "zh": "侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。"
    },
    "npm": null,
-   "stars": 714,
+   "stars": 716,
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
    "added": "2026-08-14"
   },
@@ -827,7 +827,7 @@
     "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
    },
    "npm": null,
-   "stars": 1804,
+   "stars": 1815,
    "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
    "added": "2026-08-14"
   },
@@ -1142,7 +1142,7 @@
     "zh": "DSH Web 侧边栏活动热力图：GitHub 风格网格展示每日提交、Token 用量与估算花费，今日统计行显示全会话 Token 总量、缓存命中率与按模型自动计价的花费。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add github:283Gawin/dsh-heatmap",
    "added": "2026-08-14"
   },
@@ -1157,7 +1157,7 @@
     "zh": "输入框下方的用量/成本/余额仪表盘：实时指标指示器 + 零依赖 SVG 用量图表，按轮次统计用量、估算成本并实时查询 DeepSeek 账户余额。"
    },
    "npm": "dsh-usage-chart",
-   "stars": null,
+   "stars": 2,
    "install": "dsh plugin --profile web add dsh-usage-chart",
    "added": "2026-08-14"
   },
@@ -1187,7 +1187,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。"
    },
    "npm": null,
-   "stars": 542,
+   "stars": 545,
    "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale",
    "added": "2026-08-14"
   },
@@ -1322,7 +1322,7 @@
     "zh": "基于分支的消息编辑、reroll、重试与版本时间线。"
    },
    "npm": null,
-   "stars": 17,
+   "stars": 18,
    "install": "dsh plugin --profile web add github:Moeblack/dsh-message-edit",
    "added": "2026-08-13"
   },
@@ -1487,7 +1487,7 @@
     "zh": "选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。"
    },
    "npm": null,
-   "stars": 2,
+   "stars": 3,
    "install": "dsh plugin --profile web add github:heartmove/dsh-side-chat",
    "added": "2026-08-14"
   },
@@ -1517,7 +1517,7 @@
     "zh": "持久化记录每个会话的 Token 用量，在设置页提供 provider/model 统计与最近 52 周活跃度热力图。"
    },
    "npm": null,
-   "stars": 1,
+   "stars": 2,
    "install": "dsh plugin --profile web add github:LeemanCheung/dsh-token-usage",
    "added": "2026-08-14"
   },
@@ -1877,7 +1877,7 @@
     "zh": "为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。"
    },
    "npm": null,
-   "stars": 40,
+   "stars": 42,
    "install": "dsh plugin --profile web add github:ysr666/dsh-vision-router",
    "added": "2026-08-14"
   },
@@ -2372,7 +2372,7 @@
     "zh": "学术助手插件。"
    },
    "npm": null,
-   "stars": 11,
+   "stars": 13,
    "install": "dsh plugin --profile web add github:lzszq/dsh-scholar",
    "added": "2026-08-13"
   },
@@ -2447,7 +2447,7 @@
     "zh": "为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。"
    },
    "npm": "@liustack/modlens",
-   "stars": 1223,
+   "stars": 1231,
    "install": "dsh plugin --profile web add @liustack/modlens",
    "added": "2026-08-14"
   },
@@ -2792,7 +2792,7 @@
     "zh": "Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。"
    },
    "npm": null,
-   "stars": 82,
+   "stars": 83,
    "install": "dsh plugin --profile web add github:Lum1104/dsh-browser",
    "added": "2026-08-14"
   },
@@ -3182,7 +3182,7 @@
     "zh": "AgentTeams 多智能体团队。"
    },
    "npm": null,
-   "stars": 231,
+   "stars": 234,
    "install": "dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams",
    "added": "2026-08-13"
   },
@@ -3332,7 +3332,7 @@
     "zh": "搭配一个副模型，每轮被动审查并注入见解。"
    },
    "npm": null,
-   "stars": 5,
+   "stars": 6,
    "install": "dsh plugin --profile web add github:btspoony/dsh-advisor",
    "added": "2026-08-13"
   },
@@ -3497,7 +3497,7 @@
     "zh": "科研 agent 套件：长程目标控制（可审计证据链）、定时任务、多智能体专家团队、自进化科研记忆（FTS5 + RRF 召回）、科研项目工作区与自定义工作台界面。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add github:Karbo123/DSH-EvoResearch#path:/packages/evoresearch-plugin",
    "added": "2026-08-14"
   },
@@ -3917,7 +3917,7 @@
     "zh": "多供应商钱包标签：官方 DeepSeek 余额、本会话花费与 token、第三方合计 token、一键充值、低余额提醒。"
    },
    "npm": null,
-   "stars": 1,
+   "stars": 3,
    "install": "dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet",
    "added": "2026-08-14"
   },

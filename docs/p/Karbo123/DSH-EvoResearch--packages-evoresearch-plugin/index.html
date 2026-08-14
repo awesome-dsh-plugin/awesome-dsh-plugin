@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Karbo123/</span><wbr><span class="name">DSH-EvoResearch#evoresearch-plugin</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/workflow/">Workflow & Automation</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,320 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<h2>🔬 EvoResearch</h2>
+<p><strong>面向科研的自主智能体 —— 基于 deepseek-harness（DSH）0.1.0-rc.6 构建</strong></p>
+<p>用 TypeScript / Node.js 实现的科研智能体能力套件：<strong>自进化科研记忆、项目工作区、
+多智能体团队、定时任务、多通道接入、自定义工作台界面与 Windows 桌面版</strong>。</p>
+<p><a href="https://github.com/Karbo123/DSH-EvoResearch/releases"><img src="https://img.shields.io/github/v/release/Karbo123/DSH-EvoResearch?color=2f6bff&label=Release" alt="Release"></a>
+<a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.8-blue" alt="TypeScript"></a>
+<a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-24%2B-green" alt="Node.js"></a>
+<a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/deepseek--harness-0.1.0--rc.6-1f3a93" alt="DSH"></a>
+<a href="https://tauri.app/"><img src="https://img.shields.io/badge/Desktop-Tauri%202-6a5acd" alt="Tauri"></a>
+<a href=""><img src="https://img.shields.io/badge/Platform-Windows-0078d6" alt="Windows"></a>
+<a href="https://github.com/Karbo123/DSH-EvoResearch/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"></a></p>
+<p><strong>安装包仅 ~45 MB</strong>（WebView2 复用系统组件）· 零 Python · 不依赖 deepagents</p>
+<p><img src="https://raw.githubusercontent.com/Karbo123/DSH-EvoResearch/main/docs/screenshots/chat-dark.png" alt="EvoResearch 聊天界面"></p>
+<hr>
+<h3>🖼️ 界面一览</h3>
+<p>EvoResearch 自带<strong>完全自有的工作台界面</strong>（自建浏览器表面，不加载官方 DSH 外壳）：
+暖色&quot;纸面&quot;设计、青色品牌色，浅/深双主题，三栏可拖拽布局 —— 对话、会话历史、右侧
+工作区检查器一屏尽览。</p>
+<table>
+<thead>
+<tr>
+<th>深色主题 · 三栏工作台</th>
+<th>浅色主题 · 欢迎页</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/Karbo123/DSH-EvoResearch/main/docs/screenshots/workspace-dark.png" alt="三栏工作台"></td>
+<td><img src="https://raw.githubusercontent.com/Karbo123/DSH-EvoResearch/main/docs/screenshots/hero-light.png" alt="浅色欢迎页"></td>
+</tr>
+</tbody></table>
+<h3>✨ 特性一览</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>特性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🧠</td>
+<td><strong>科研记忆</strong></td>
+<td>每轮对话自动进入 Turn Catalog，七类多标签分类（idea/method/experiment/related_work/reproduction/project/general），FTS5 + RRF 混合检索，每轮注入 ≤6000 token 记忆包</td>
+</tr>
+<tr>
+<td>🎯</td>
+<td><strong>Goal Contract 长程目标控制</strong></td>
+<td>长期任务自动生成目标合同，四轴保守判定（目标/范围/证据/完成），证据链可审计推进</td>
+</tr>
+<tr>
+<td>📂</td>
+<td><strong>科研项目工作区</strong></td>
+<td><code>projects/&lt;name&gt;/.evoresearch-data/</code> 数据随项目目录隔离，项目即 git 仓库，支持导入与 AI 自动命名创建</td>
+</tr>
+<tr>
+<td>🤖</td>
+<td><strong>多智能体团队</strong></td>
+<td>6 个科研角色预设（规划/调研/编码/调试/数据分析/写作），<code>/expert invite</code> 一键邀请</td>
+</tr>
+<tr>
+<td>🛠️</td>
+<td><strong>AutoSkills 技能蒸馏</strong></td>
+<td>从记忆观测自动聚类生成可复用技能提案，审核通过后写入技能目录</td>
+</tr>
+<tr>
+<td>⏰</td>
+<td><strong>定时任务</strong></td>
+<td>自研 cron 解析（Vixie 语义），结果直达结果线程，支持「Report to main chat」</td>
+</tr>
+<tr>
+<td>🌐</td>
+<td><strong>多通道接入</strong></td>
+<td>Telegram 可用；Slack / QQ / 微信 / 飞书 / Signal 适配器框架就绪</td>
+</tr>
+<tr>
+<td>👁️</td>
+<td><strong>视觉检查工具</strong></td>
+<td><code>vision_check</code> 工具 + 截图脚本，让模型能&quot;看见&quot;界面并自检（OpenAI 兼容视觉模型）</td>
+</tr>
+<tr>
+<td>💬</td>
+<td><strong>斜杠命令</strong></td>
+<td><code>/project</code> <code>/memory</code> <code>/schedule</code> <code>/channel</code> <code>/expert</code> <code>/autoskills</code></td>
+</tr>
+<tr>
+<td>🖥️</td>
+<td><strong>自定义工作台界面</strong></td>
+<td>自建浏览器表面（不加载官方 ui-* 外壳）：顶栏 + 会话历史 + 真实多轮对话 + 输入面板 + 右侧检查器，浅/深双主题，中英双语</td>
+</tr>
+<tr>
+<td>🪟</td>
+<td><strong>Windows 桌面版</strong></td>
+<td>Tauri 2 + Node sidecar，NSIS 安装包 <strong>~45 MB</strong>（实测），含全部后端</td>
+</tr>
+</tbody></table>
+<h3>🚀 快速开始</h3>
+<h4>环境要求</h4>
+<ul>
+<li><strong>Windows 10/11</strong>（当前仅支持 Windows）</li>
+<li><strong>Node.js ≥ 24</strong>（需要内置 <code>node:sqlite</code> 与 zstd；推荐 24 LTS 或 26）</li>
+<li><strong>npm ≥ 10</strong></li>
+</ul>
+<h4>方式一：Windows 桌面版（开箱即用）</h4>
+<p>从 <a href="https://github.com/Karbo123/DSH-EvoResearch/releases">GitHub Releases</a> 下载
+<code>EvoResearch_0.1.0_x64-setup.exe</code>（<strong>~45 MB</strong>），双击安装：
+窗口内是完整工作台界面，后端（Node sidecar）自动启动、随窗口退出自动清理，无需手动配置。</p>
+<h4>方式二：网页版（构建后运行）</h4>
+<pre><code class="language-bash"># 1. 克隆仓库
+git clone https://github.com/Karbo123/DSH-EvoResearch.git
+cd DSH-EvoResearch
+
+# 2. 构建（插件 + 自定义表面）
+npm install
+npm run build
+npm run verify        # 可选：70 个单元测试 + bundle/docs 校验
+
+# 3. 用示例 profile 启动（独立端口，避免与现有 DSH 冲突）
+npx @deepseek-ai/dsh --profile profiles/evoresearch --port 3081
+# 浏览器打开 http://127.0.0.1:3081
+</code></pre>
+<h4>方式三：作为 DSH profile bundle 挂载</h4>
+<p>在任意 DSH 部署中把本仓库 <code>profiles/evoresearch/</code> 作为 profile：</p>
+<pre><code class="language-jsonc">// &lt;你的 DSH profile 目录&gt;/package.json
+{
+  &quot;name&quot;: &quot;dsh-profile-evoresearch&quot;,
+  &quot;private&quot;: true,
+  &quot;dependencies&quot;: {
+    &quot;@deepseek-ai/dsh-base&quot;: &quot;^0.1.0-rc.6&quot;,
+    &quot;@evoresearch/dsh-app&quot;: &quot;file:path/to/DSH-EvoResearch/packages/evoresearch-app&quot;,
+    &quot;@evoresearch/dsh-plugin&quot;: &quot;file:path/to/DSH-EvoResearch/packages/evoresearch-plugin&quot;
+  },
+  &quot;dsh&quot;: {
+    &quot;profile&quot;: {
+      &quot;bundles&quot;: [
+        &quot;@deepseek-ai/dsh-base&quot;,
+        &quot;@evoresearch/dsh-app&quot;,
+        &quot;@evoresearch/dsh-plugin&quot;
+      ]
+    }
+  }
+}
+</code></pre>
+<blockquote>
+<p><code>@evoresearch/dsh-app</code> 是自定义浏览器表面 bundle：复用 DSH host 引擎与官方传输/运行时，
+但<strong>不加载</strong>官方 <code>ui-*</code> 外壳 —— 打开即是 EvoResearch 自己的工作台界面。</p>
+</blockquote>
+<pre><code class="language-bash">npm install            # 在 profile 目录安装依赖
+npx @deepseek-ai/dsh --profile &lt;profile名&gt;
+</code></pre>
+<p>启动后打印：</p>
+<pre><code>[evoresearch] host 插件激活（dataRoot: ...）
+evoresearch: http://127.0.0.1:3080
+</code></pre>
+<h3>🧪 建议：使用独立 DSH 环境测试（避免与现有环境冲突）</h3>
+<p>如果你目前通过 <code>npx @deepseek-ai/dsh web</code> 使用 DSH，<strong>强烈建议为 EvoResearch 建一个独立 profile</strong>：
+它与你正在用的环境完全隔离（独立端口、独立会话、独立数据目录），互不干扰。</p>
+<pre><code class="language-bash"># 1. 创建独立 profile 目录（DSH_HOME 默认为 ~/.dsh）
+mkdir -p ~/.dsh/profiles/evoresearch
+cd ~/.dsh/profiles/evoresearch
+
+# 2. 写入 profile 声明（内容见上方「方式三」），然后
+npm install
+
+# 3. 用独立端口启动（默认 3080，用 --port 指定其他端口）
+npx @deepseek-ai/dsh --profile evoresearch --port 3081
+# 浏览器打开 http://127.0.0.1:3081
+</code></pre>
+<blockquote>
+<p>仓库内置了可直接使用的示例 profile：<code>profiles/evoresearch/</code>（已声明三个 bundle）。</p>
+</blockquote>
+<h3>⚙️ 配置</h3>
+<p>在 DSH 的 <code>settings.yaml</code> 中加入 <code>evoresearch</code> 段（或设置环境变量）：</p>
+<pre><code class="language-yaml">evoresearch:
+  dataRoot: D:\evoresearch        # 部署根目录（projects/ 所在），默认 $EVORESEARCH_DATA_ROOT 或 cwd
+  memoryTokenBudget: 6000         # 每轮科研记忆包 token 预算
+  auxiliaryModel:                 # 分类/Goal 提取用辅助模型（缺省取当前默认模型）
+    provider: deepseek-official
+    model: deepseek-v4-flash
+  autoStartChannels: false        # 启动时自动启动已配置通道（如 Telegram）
+  memoryEnabled: true
+  visionEnabled: true             # 是否注册 vision_check 视觉检查工具（模型未配置时自动跳过）
+</code></pre>
+<h3>🧠 科研记忆怎么工作</h3>
+<pre><code>用户消息 ──▶ session/event
+              │
+              ▼
+  1. Turn Catalog 立即落库（pending）
+  2. 后台：LLM 七类分类（失败自动确定性回退）
+           → topic 归一化（复用已有主题）
+           → topic state 更新
+           → 长程检测 → Goal Contract（v3）
+           → 记忆包构建（≤6000 token，RRF 混合召回）
+              │
+              ▼
+  3. 每步模型调用前注入 &lt;research_memory_packet&gt;
+  4. turn/end：completed/interrupted + Raw Turn Archive 归档
+</code></pre>
+<ul>
+<li>记忆数据存放在每个项目的 <code>.evoresearch-data/memories/</code>：
+<code>research_memory.db</code>（SQLite + FTS5）+ <code>observations/*.md</code>（人类可读、git 可管理）；</li>
+<li>模型可通过 <code>search_research_history</code>、<code>read_research_turn</code>、<code>create_observation</code> 等工具按需读写；</li>
+<li>既有会话历史会在首次使用时<strong>后台自动回填</strong>索引（断点续做，可重建）。</li>
+</ul>
+<h3>🖥️ 桌面版（Tauri 2 + Node sidecar）</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>安装包</td>
+<td><code>EvoResearch_0.1.0_x64-setup.exe</code>，<strong>~45 MB</strong>（NSIS/LZMA）</td>
+</tr>
+<tr>
+<td>运行时</td>
+<td>复用系统 WebView2（Win10/11 内置）</td>
+</tr>
+<tr>
+<td>后端</td>
+<td>Node 24 LTS sidecar（独立 DSH_HOME，不污染用户环境）</td>
+</tr>
+<tr>
+<td>体积优化</td>
+<td>provider SDK 裁剪（deepseek profile 思路）、node-pty/sharp 仅 win32-x64</td>
+</tr>
+</tbody></table>
+<p>构建：</p>
+<pre><code class="language-bash">node desktop/scripts/build.mjs
+# 产物：desktop/src-tauri/target/release/bundle/nsis/EvoResearch_0.1.0_x64-setup.exe
+</code></pre>
+<h3>🛠️ 开发</h3>
+<pre><code class="language-bash">npm install          # 安装 workspace 依赖
+npm run build        # 插件（tsc + client bundle）+ 自定义表面（node half + client + frontend dist）
+npm run typecheck    # 严格类型检查
+npm test             # 70 个单元测试（node:test）
+npm run verify       # build + test + bundle 校验 + docs 校验
+</code></pre>
+<pre><code>packages/evoresearch-plugin/   # @evoresearch/dsh-plugin —— 科研能力插件（host 服务）
+  ├── src/host/                # Host 插件（workspace/memory/scheduler/channels/...）
+  └── cordis.patch.yml         # bundle patch（evoresearch-host 服务行）
+packages/evoresearch-app/      # @evoresearch/dsh-app —— 自定义浏览器表面 bundle
+  ├── src/runtime.ts           # app-runtime（serve 前端 dist / 表面提示 / URL 打印）
+  ├── src/client/              # 工作台 UI 插件（root slot + layout + 会话消息管线）
+  │   ├── index.ts             #   顶栏 + 三栏布局 + 会话订阅/发送
+  │   ├── conversation.ts      #   消息 Definition（官方语义裁剪）+ chat view
+  │   ├── chat.ts              #   消息气泡渲染 + 输入面板
+  │   ├── threadlist.ts        #   会话历史侧栏
+  │   ├── inspector.ts         #   右侧工作区检查器
+  │   └── styles.ts            #   设计系统（暖色纸面 + 青色品牌，浅/深主题）
+  ├── frontend/                # 前端外壳入口（AppWebEntry 内核）
+  └── vendor/                  # vendored 官方 client-modules 源码（构建时 alias）
+profiles/evoresearch/          # 示例 DSH profile（三个 bundle）
+desktop/                       # Tauri 2 桌面壳 + Node sidecar 打包脚本
+docs/                          # 中文文档（架构/功能映射/开发/桌面）
+</code></pre>
+<h3>📚 文档</h3>
+<table>
+<thead>
+<tr>
+<th>文档</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/Karbo123/DSH-EvoResearch/blob/main/docs/00-decisions.md">docs/00-decisions.md</a></td>
+<td>技术选型决策（存储、嵌入模型、桌面方案等）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Karbo123/DSH-EvoResearch/blob/main/docs/01-architecture.md">docs/01-architecture.md</a></td>
+<td>架构设计与数据流</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Karbo123/DSH-EvoResearch/blob/main/docs/02-feature-map.md">docs/02-feature-map.md</a></td>
+<td>功能地图（能力清单、设计与状态）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Karbo123/DSH-EvoResearch/blob/main/docs/03-development.md">docs/03-development.md</a></td>
+<td>开发指南（挂载、配置、扩展点）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Karbo123/DSH-EvoResearch/blob/main/docs/04-desktop.md">docs/04-desktop.md</a></td>
+<td>Windows 桌面版构建与体积优化</td>
+</tr>
+</tbody></table>
+<h3>❓ FAQ</h3>
+<p><strong>Q：为什么基于 deepseek-harness 而不是自己写框架？</strong>
+DSH（0.1.0-rc.6）提供会话、模型路由、子代理、审批、技能、MCP 等完整平台能力，
+EvoResearch 只做「科研化」扩展（记忆、项目、团队、调度、通道、界面），避免重复造轮子。</p>
+<p><strong>Q：界面是 DSH 自带的吗？</strong>
+不是。<code>@evoresearch/dsh-app</code> 是<strong>自定义浏览器表面</strong>：host 引擎与传输完全复用官方
+（会话、模型、工具、审批……），但浏览器端不加载官方 <code>ui-*</code> 外壳，界面是
+EvoResearch 自己的工作台（暖色纸面设计、浅/深双主题，含真实多轮对话与会话历史）。</p>
+<p><strong>Q：数据存在哪里？</strong>
+每个科研项目一个独立目录 <code>projects/&lt;name&gt;/</code>，内部 <code>.evoresearch-data/</code> 存放
+记忆库、观测文件与调度任务；项目本身是 git 仓库，可整体迁移、导入、备份。</p>
+<p><strong>Q：没有网络/API Key 时能用吗？</strong>
+分类与记忆包构建在 LLM 失败时自动退化（确定性分类 + 纯 FTS5 检索），不阻塞主回答。</p>
+<p><strong>Q：如何接入更多消息通道？</strong>
+实现 <code>ChannelAdapter</code> 接口（<code>src/host/channels/base.ts</code>）并在 <code>adapters.ts</code> 注册即可；
+Telegram 已提供完整实现（长轮询，仅需 <code>EVORESEARCH_TELEGRAM_TOKEN</code>）。</p>
+<h3>🤝 贡献</h3>
+<p>欢迎 PR 与 Issue：完善通道适配器、接入本地/远端 Embedding、增强业务面板（记忆/调度/团队）等。
+代码风格：TypeScript 严格模式、中文注释、<code>node:test</code> 单测覆盖。</p>
+<h3>📄 License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Karbo123/DSH-EvoResearch/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,7 +512,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 231</span></h3><a class="desc-link" href="/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams multi-agent teams.</p></a></li>
+      <li><h3><a href="/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 234</span></h3><a class="desc-link" href="/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams multi-agent teams.</p></a></li>
       <li><h3><a href="/p/icetomoyo/dsh_workflow/" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 54</span></h3><a class="desc-link" href="/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.</p></a></li>
       <li><h3><a href="/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 42</span></h3><a class="desc-link" href="/p/btspoony/mstar-harness/" tabindex="-1"><p>Skill-driven harness/loop engineering workflow agent plugin.</p></a></li>
       <li><h3><a href="/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 30</span></h3><a class="desc-link" href="/p/titanwings/dsh-automation/" tabindex="-1"><p>Scheduled coding runs in fresh agent sessions with auditable history.</p></a></li>

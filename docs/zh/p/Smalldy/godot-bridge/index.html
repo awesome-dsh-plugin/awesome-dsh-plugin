@@ -242,6 +242,41 @@ footer p+p{margin-top:.5rem}
 <td><code>validate_script</code></td>
 <td>headless GDScript 编译检查（<code>validate_script.gd</code>）→ <code>{valid, errors}</code></td>
 </tr>
+<tr>
+<td><code>godot_set_project_setting</code></td>
+<td><code>modify_project_settings</code>、<code>set_main_scene</code>、<code>manage_layers</code>、<code>manage_plugins</code>、<code>manage_translations</code></td>
+<td>在任意 project.godot 段设置类型化键值（<code>PackedStringArray(...)</code> / <code>Vector2i(...)</code> / bool 等）</td>
+</tr>
+<tr>
+<td><code>godot_manage_autoloads</code></td>
+<td><code>manage_autoloads</code></td>
+<td>列出/增删 autoload 单例（<code>Name=&quot;*res://…&quot;</code>）</td>
+</tr>
+<tr>
+<td><code>godot_manage_input_map</code></td>
+<td><code>manage_input_map</code></td>
+<td>列出/增删输入动作——<strong>正确的 Godot 4 键码</strong>（修复 godot-mcp 的 Godot 3 基线 bug）</td>
+</tr>
+<tr>
+<td><code>godot_manage_export_presets</code></td>
+<td><code>manage_export_presets</code></td>
+<td>列出/增删导出预设（<code>export_presets.cfg</code>）</td>
+</tr>
+<tr>
+<td><code>godot_create_script</code></td>
+<td><code>create_script</code></td>
+<td>GDScript 模板（extends / class_name / 方法桩 / 自定义源码）</td>
+</tr>
+<tr>
+<td><code>godot_create_project</code></td>
+<td><code>create_project</code> / <code>create_csharp_script</code></td>
+<td>项目脚手架，可选 Godot .NET <code>.csproj</code></td>
+</tr>
+<tr>
+<td><code>godot_export_project</code></td>
+<td><code>export_project</code></td>
+<td>headless 导出（<code>--export-release</code> / <code>--export-debug &lt;预设&gt; &lt;输出&gt;</code>）</td>
+</tr>
 </tbody></table>
 <p>其余 godot-mcp 工具是在 MCP 服务器自己的 Node 进程里实现的：纯文件/编辑器操作由 DSH 原生文件工具覆盖；少数几个带 <strong>Godot 特有写逻辑</strong>（<code>manage_input_map</code>、<code>manage_export_presets</code>、<code>modify_project_settings</code>、项目/脚本模板生成等），通用编辑只能配合格式知识替代——完整对照见 <a href="https://github.com/Smalldy/godot-bridge/blob/main/COVERAGE.zh-CN.md">COVERAGE.md</a>。</p>
 <h3>工作原理</h3>
@@ -277,7 +312,7 @@ footer p+p{margin-top:.5rem}
   name: &#39;./plugins/godot-bridge.mjs&#39;
 </code></pre>
 </li>
-<li><p>校验挂载（<code>agentPresets.standingKeyFor(&#39;&lt;你的预设&gt;&#39;)</code>），然后用该预设开新会话——8 个 <code>godot_*</code> 工具即可用。</p>
+<li><p>校验挂载（<code>agentPresets.standingKeyFor(&#39;&lt;你的预设&gt;&#39;)</code>），然后用该预设开新会话——15 个 <code>godot_*</code> 工具即可用。</p>
 </li>
 </ol>
 <blockquote>
@@ -289,7 +324,7 @@ footer p+p{margin-top:.5rem}
 <p>直接从 GitHub 安装——纯 ESM + 资产，无需 npm 账号、无需构建步骤：</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:Smalldy/godot-bridge
 </code></pre>
-<p>包内带 <code>dsh.bundle</code> manifest（<code>cordis.patch.yml</code>），会把 <code>tool-godot-bridge</code> 行插入你的 profile。重启后该 profile 的所有会话都有 8 个 <code>godot_*</code> 工具。已向 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> 社区清单提交收录（<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/199">PR #199</a>，待合并；topic：<code>dsh-plugin</code>）。</p>
+<p>包内带 <code>dsh.bundle</code> manifest（<code>cordis.patch.yml</code>），会把 <code>tool-godot-bridge</code> 行插入你的 profile。重启后该 profile 的所有会话都有 15 个 <code>godot_*</code> 工具。已向 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> 社区清单提交收录（<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/199">PR #199</a>，待合并；topic：<code>dsh-plugin</code>）。</p>
 <h3>用法</h3>
 <pre><code class="language-text">godot_run_project            # 启动游戏（默认当前 workspace）
 godot_ping                   # 确认 9090 应答
@@ -340,11 +375,11 @@ COVERAGE.md / COVERAGE.zh-CN.md   # 与 godot-mcp 的逐工具对比
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1223</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1231</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
       <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 309</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
-      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
+      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/tools/">查看整个分类 →</a>

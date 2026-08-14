@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">ysr666/</span><wbr><span class="name">dsh-vision-router</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 40</b></span>
+        <span>Star 数 <b>★ 42</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -252,7 +252,7 @@ footer p+p{margin-top:.5rem}
 </tbody></table>
 <p>两者都是 MIT 许可、一条命令安装。想要图片<strong>粘贴即用</strong>、零配置就选本插件；需要 Headless 部署或更丰富的案例库，可以看 @anionex/dsh-vision-toolkit。（功能对比以其 README 2026-08 状态为准。）</p>
 <h3>快速开始</h3>
-<pre><code class="language-sh">dsh plugin --profile web add github:ysr666/dsh-vision-router
+<pre><code class="language-sh">dsh plugin --profile web add dsh-vision-router
 </code></pre>
 <p>重启 <code>dsh web</code>——完成，零配置：</p>
 <ul>
@@ -480,7 +480,7 @@ vision_html_screenshot source=&quot;page.html&quot; width=1200 height=720
 </ul>
 <h3>安装与生命周期</h3>
 <h4>安装</h4>
-<pre><code class="language-sh">dsh plugin --profile web add github:ysr666/dsh-vision-router
+<pre><code class="language-sh">dsh plugin --profile web add dsh-vision-router
 dsh --profile web --dump-config | grep vision-router   # 一行，由 bundle 补丁挂载
 </code></pre>
 <p>长期运行的 Web profile 需重启。宿主在启动时通过 <code>dsh.client</code> 声明发现浏览器端包。</p>
@@ -524,11 +524,11 @@ dsh --profile web --dump-config | grep vision-router   # 一行，由 bundle 补
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1223</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1231</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
       <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 309</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
-      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
+      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/tools/">查看整个分类 →</a>

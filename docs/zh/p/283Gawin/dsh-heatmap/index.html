@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">283Gawin/</span><wbr><span class="name">dsh-heatmap</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,503 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>DSH Web GUI 左侧栏活动热力图插件：常驻显示近 90 天的活动热力图，可在
+「提交次数 / Token 用量 / 估算花费」三个维度间切换；热力图下方固定一行显示
+今日所有会话消耗的 Token 总数、缓存命中率，并按每次调用实际使用的模型
+自动计算花费（USD，可配汇率显示 CNY）。</p>
+<p><img src="https://img.shields.io/badge/dsh-plugin-%230a5cd8" alt="dsh-plugin"></p>
+<h3>效果图</h3>
+<p>左侧栏热力图面板（浅色 / 深色模式）：</p>
+<table>
+<thead>
+<tr>
+<th>浅色</th>
+<th>深色</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/283Gawin/dsh-heatmap/main/assets/panel-light.png" alt="面板（浅色）"></td>
+<td><img src="https://raw.githubusercontent.com/283Gawin/dsh-heatmap/main/assets/panel-dark.png" alt="面板（深色）"></td>
+</tr>
+</tbody></table>
+<p>设置页「插件」分区中的配置卡片（浅色 / 深色模式）：</p>
+<table>
+<thead>
+<tr>
+<th>浅色</th>
+<th>深色</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/283Gawin/dsh-heatmap/main/assets/settings-light.png" alt="设置卡片（浅色）"></td>
+<td><img src="https://raw.githubusercontent.com/283Gawin/dsh-heatmap/main/assets/settings-dark.png" alt="设置卡片（深色）"></td>
+</tr>
+</tbody></table>
+<h3>功能</h3>
+<ul>
+<li><strong>近 90 天热力图</strong>（固定窗口）：GitHub 贡献图式网格（周一至周日 × 按周
+分列），颜色深浅按所选维度分级（对数刻度）；鼠标悬停显示当日明细
+（提交数 / Token / 花费）。</li>
+<li>维度切换：提交（所有 DSH 工作区 git 仓库，不含 merge）、Token（billed
+总量）、花费（按模型定价）。选择记忆在浏览器 localStorage。</li>
+<li><strong>统计块</strong>（参考 Codex 个人资料页形态）：今日 Token 总量、今日缓存命中率
+（cacheRead / (cacheRead + cacheWrite + miss input)）、今日花费，以及
+近 90 天窗口的 Token / 提交 / 花费合计与今日按模型的花费细分。</li>
+<li>常驻侧栏：面板常驻左侧栏<strong>底部</strong>（工作区列表下方），自愈式挂载（React
+重渲染后自动复位），可点击标题折叠，折叠状态持久化。</li>
+<li>设置卡片：注册在设置页「插件」分区（settings.plugin.item），支持主题
+（蓝色 / 绿色）、enabled、includeMerges、USD→CNY 汇率配置；也支持插件行
+config。</li>
+<li>数据来源：host 进程经官方 SDK 读取——sessionPersistence 列出全部会话
+并重放其 durable 日志（assistant/message 携带的 provider usage、
+request/header 与 request/context 携带的模型名），subprocess 跑
+git log 统计各工作区每日提交。聚合结果 TTL 缓存 60s，
+经 GET /activity-heatmap/stats 提供。</li>
+</ul>
+<h3>安装</h3>
+<pre><code>git clone https://github.com/283Gawin/dsh-heatmap
+cd dsh-heatmap
+pnpm install &amp;&amp; pnpm build          # link 安装需要构建产物（lib/）
+dsh plugin --profile web add link:$PWD
+</code></pre>
+<p>或从 npm 发布版安装：</p>
+<pre><code>dsh plugin --profile web add @linxin666/dsh-client-ui-activity-heatmap
+</code></pre>
+<p>重启 dsh web 后，左侧栏即出现热力图面板。</p>
+<blockquote>
+<p><strong>设置页暴露</strong>：DSH 宿主对配置客户端可见的 settings namespace 有一个
+白名单（<code>dsh-host-apiproxy</code> 的 <code>WEB_SETTINGS_NAMESPACES</code>，官方包内
+hardcode）。新插件必须把它的 namespace 加进该白名单，否则设置页卡片显示
+&quot;Settings not available for this plugin.&quot;。本插件需要把
+<code>&quot;activity-heatmap&quot;</code> 追加到该数组；<strong>升级 dsh 后该修改会被覆盖，需重新
+打补丁</strong>。修改后重启 dsh web 生效。</p>
+</blockquote>
+<h3>配置</h3>
+<p>设置页「插件 → 活动热力图」卡片可配置以下字段（等价于插件行 config）：</p>
+<table>
+<thead>
+<tr>
+<th>键</th>
+<th>类型</th>
+<th>默认</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>theme</td>
+<td>string</td>
+<td>blue</td>
+<td>热力图主题色：blue / green</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>boolean</td>
+<td>true</td>
+<td>插件总开关</td>
+</tr>
+<tr>
+<td>includeMerges</td>
+<td>boolean</td>
+<td>false</td>
+<td>提交数是否计入 merge 提交</td>
+</tr>
+<tr>
+<td>usdCnyRate</td>
+<td>number</td>
+<td>0</td>
+<td>USD→CNY 汇率，0 表示不显示人民币</td>
+</tr>
+<tr>
+<td>priceOverrides</td>
+<td>文本行</td>
+<td>{}</td>
+<td>模型定价覆盖（见下）</td>
+</tr>
+</tbody></table>
+<p>插件行 config 示例：</p>
+<pre><code>- insert:
+    - id: ui-activity-heatmap
+      name: &#39;@linxin666/dsh-client-ui-activity-heatmap&#39;
+      config:
+        theme: green
+        usdCnyRate: 7.2
+        priceOverrides:
+          my-model:
+            inputPerM: 0.5
+            outputPerM: 2
+</code></pre>
+<p>修改后重启 dsh web 生效。</p>
+<h3>内置定价</h3>
+<p>内置表以厂商公开 API 定价为准（USD / 1M tokens），并按
+<a href="https://github.com/xiufengsun/TokenTracker">xiufengsun/TokenTracker</a> 的
+curated price overrides 校准（2026-06/07 对照官方页验证）。DeepSeek 系按
+官方页标注 cache_write = 输入价；Anthropic 系 cache_write 计费
+（0.25 × 输入）；其余厂商通常无 write 附加费。</p>
+<table>
+<thead>
+<tr>
+<th>系列</th>
+<th>模型</th>
+<th>输入</th>
+<th>缓存读</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DeepSeek</td>
+<td>deepseek-v4-flash / deepseek-chat / deepseek-reasoner</td>
+<td>0.14</td>
+<td>0.0028</td>
+<td>0.28</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>deepseek-v4-pro</td>
+<td>0.435</td>
+<td>0.003625</td>
+<td>0.87</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>deepseek-v3</td>
+<td>0.27</td>
+<td>0.07</td>
+<td>1.10</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>deepseek-v3.1</td>
+<td>0.56</td>
+<td>0.056</td>
+<td>1.68</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>deepseek-v3.2</td>
+<td>0.28</td>
+<td>0.028</td>
+<td>0.42</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>deepseek-r1</td>
+<td>0.55</td>
+<td>0.14</td>
+<td>2.19</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>claude-3-5-haiku</td>
+<td>0.80</td>
+<td>0.08</td>
+<td>4.00</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>claude-3-5-sonnet / claude-3-7-sonnet / claude-sonnet-4 / claude-sonnet-4-5 / claude-sonnet-5</td>
+<td>3.00</td>
+<td>0.30</td>
+<td>15.00</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>claude-haiku-4-5</td>
+<td>1.00</td>
+<td>0.10</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>claude-3-opus / claude-opus-4 / claude-opus-4-1</td>
+<td>15.00</td>
+<td>1.50</td>
+<td>75.00</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>claude-opus-4-8 / claude-opus-5</td>
+<td>5.00</td>
+<td>0.50</td>
+<td>25.00</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>claude-opus-5-fast / claude-fable-5</td>
+<td>10.00</td>
+<td>1.00</td>
+<td>50.00</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-4o / gpt-4o-mini</td>
+<td>2.50 / 0.15</td>
+<td>1.25 / 0.075</td>
+<td>10.00 / 0.60</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-4.1 / mini / nano</td>
+<td>2.00 / 0.40 / 0.10</td>
+<td>0.50 / 0.10 / 0.025</td>
+<td>8.00 / 1.60 / 0.40</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>o3 / o3-mini / o4-mini</td>
+<td>2.00 / 1.10 / 1.10</td>
+<td>0.50 / 0.275 / 0.275</td>
+<td>8.00 / 4.40 / 4.40</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-5 / gpt-5.1</td>
+<td>1.25</td>
+<td>0.125</td>
+<td>10.00</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-5-mini / gpt-5.1-mini</td>
+<td>0.25</td>
+<td>0.025</td>
+<td>2.00</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-5-nano / gpt-5.1-nano</td>
+<td>0.05</td>
+<td>0.005</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-5.6-sol</td>
+<td>5.00</td>
+<td>0.50</td>
+<td>30.00</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-5.6-terra</td>
+<td>2.00</td>
+<td>0.20</td>
+<td>12.00</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>gpt-5.6-luna</td>
+<td>0.20</td>
+<td>0.02</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>gemini-2.5-pro</td>
+<td>1.25</td>
+<td>0.3125</td>
+<td>10.00</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>gemini-2.5-flash / gemini-3-flash-preview</td>
+<td>0.30</td>
+<td>0.075</td>
+<td>2.50</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>gemini-3-pro-preview</td>
+<td>2.00</td>
+<td>0.50</td>
+<td>12.00</td>
+</tr>
+<tr>
+<td>xAI</td>
+<td>grok-3 / grok-4 / grok-4-latest / grok-code-reasoner</td>
+<td>3.00</td>
+<td>0.75</td>
+<td>15.00</td>
+</tr>
+<tr>
+<td>xAI</td>
+<td>grok-4-fast / grok-code-fast</td>
+<td>0.20</td>
+<td>0.05</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>xAI</td>
+<td>grok-4.5 / grok-4.5-build</td>
+<td>2.00</td>
+<td>0.50</td>
+<td>6.00</td>
+</tr>
+<tr>
+<td>xAI</td>
+<td>grok-4.5-fast</td>
+<td>4.00</td>
+<td>1.00</td>
+<td>18.00</td>
+</tr>
+<tr>
+<td>xAI</td>
+<td>grok-build</td>
+<td>1.25</td>
+<td>0.20</td>
+<td>2.50</td>
+</tr>
+<tr>
+<td>Kiro</td>
+<td>kiro-agent / kiro-cli-agent</td>
+<td>3.00</td>
+<td>0.30</td>
+<td>15.00</td>
+</tr>
+<tr>
+<td>阿里</td>
+<td>qwen3-max</td>
+<td>1.28</td>
+<td>0.16</td>
+<td>6.40</td>
+</tr>
+<tr>
+<td>阿里</td>
+<td>qwen3-coder</td>
+<td>0.22</td>
+<td>0.0275</td>
+<td>0.88</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>glm-4.5 / glm-4.6 / glm-4.7</td>
+<td>0.60</td>
+<td>0.11</td>
+<td>2.20</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>glm-4.5-air</td>
+<td>0.20</td>
+<td>0.03</td>
+<td>1.10</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>glm-4.5-x</td>
+<td>2.20</td>
+<td>0.45</td>
+<td>8.90</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>glm-5 / glm-5-turbo / glm-5.1 / glm-5.2</td>
+<td>1.00 / 1.20 / 1.40 / 1.40</td>
+<td>0.20 / 0.24 / 0.26 / 0.26</td>
+<td>3.20 / 4.00 / 4.40 / 4.40</td>
+</tr>
+<tr>
+<td>Moonshot</td>
+<td>kimi-k2 / k2-thinking / k2.5</td>
+<td>0.60</td>
+<td>0.15</td>
+<td>2.00</td>
+</tr>
+<tr>
+<td>Moonshot</td>
+<td>kimi-k2.6</td>
+<td>0.95</td>
+<td>0.16</td>
+<td>4.00</td>
+</tr>
+<tr>
+<td>Moonshot</td>
+<td>kimi-k2.7-code</td>
+<td>0.95</td>
+<td>0.19</td>
+<td>4.00</td>
+</tr>
+<tr>
+<td>Moonshot</td>
+<td>kimi-k3</td>
+<td>3.00</td>
+<td>0.30</td>
+<td>15.00</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>minimax-m1 / m2</td>
+<td>0.20 / 0.30</td>
+<td>0.025 / 0.0375</td>
+<td>1.10 / 1.20</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>minimax-m2.1</td>
+<td>0.50</td>
+<td>0.05</td>
+<td>3.00</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>minimax-m2.7 / minimax-m3</td>
+<td>0.30</td>
+<td>0.06</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td>腾讯</td>
+<td>hy3 / hy3-preview / hy3-preview-agent</td>
+<td>0.167</td>
+<td>0.056</td>
+<td>0.556</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>sakana/fugu-ultra</td>
+<td>5.00</td>
+<td>0.50</td>
+<td>30.00</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>longcat-2.0</td>
+<td>0.278</td>
+<td>0.00556</td>
+<td>1.111</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>step-3.5-flash / step-3.7-flash</td>
+<td>0.10 / 0.20</td>
+<td>0.02 / 0.04</td>
+<td>0.30 / 1.15</td>
+</tr>
+<tr>
+<td>免费档</td>
+<td>glm-4.5-flash / glm-4.7-flash / glm-4.7-free / kimi-k2.5-free / minimax-m2.1-free / mimo-v2-pro-free / nemotron-3-super-free / grok-build-free</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>模型 id 支持<strong>前缀匹配</strong>：带日期快照后缀的 id（如 claude-sonnet-4-5-20250929）
+自动落到基础行；覆盖（priceOverrides）同样支持前缀匹配。未收录的模型按
+默认档（0.27 / 0.07 / 1.10）计价，可用 priceOverrides 精确覆盖。</p>
+<h3>开发</h3>
+<pre><code>pnpm install
+pnpm typecheck
+pnpm test
+pnpm build
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/283Gawin/dsh-heatmap/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,9 +695,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1804</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 841</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 714</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1815</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 847</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 716</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 118</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
       <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
