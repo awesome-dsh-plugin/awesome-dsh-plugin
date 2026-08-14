@@ -83,6 +83,13 @@
     <summary>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</summary>
   </entry>
   <entry>
+    <title>dsh-builtin-toggles</title>
+    <id>https://github.com/Starfie1d1272/dsh-builtin-toggles</id>
+    <link href="https://github.com/Starfie1d1272/dsh-builtin-toggles"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>为 DSH Web 添加官方内置插件目录、搜索与状态说明，并提供经过审核的安全 UI 插件开关。</summary>
+  </entry>
+  <entry>
     <title>dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/zp-home/dsh-recommend"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。</summary>
-  </entry>
-  <entry>
-    <title>modlens</title>
-    <id>https://github.com/liustack/modlens</id>
-    <link href="https://github.com/liustack/modlens"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</summary>
   </entry>
 </feed>

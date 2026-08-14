@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 178,
+ "count": 179,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -429,6 +429,18 @@
     "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
    },
    "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-builtin-toggles",
+   "owner": "Starfie1d1272",
+   "url": "https://github.com/Starfie1d1272/dsh-builtin-toggles",
+   "category": "ui",
+   "description": {
+    "en": "Adds a built-in plugin catalog to DSH Web with search, status explanations, and safe toggles for audited UI plugins.",
+    "zh": "为 DSH Web 添加官方内置插件目录、搜索与状态说明，并提供经过审核的安全 UI 插件开关。"
+   },
+   "install": "dsh plugin --profile web add github:Starfie1d1272/dsh-builtin-toggles",
    "added": "2026-08-14"
   },
   {
