@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 130,
+ "count": 134,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -888,6 +888,30 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-voice",
+   "owner": "Jesse-njx",
+   "url": "https://github.com/Jesse-njx/dsh-voice",
+   "category": "tools",
+   "description": {
+    "en": "Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under ~/.dsh/voice.",
+    "zh": "语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。"
+   },
+   "install": "dsh plugin --profile web add github:Jesse-njx/dsh-voice",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-docker",
+   "owner": "Jesse-njx",
+   "url": "https://github.com/Jesse-njx/dsh-docker",
+   "category": "tools",
+   "description": {
+    "en": "Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.",
+    "zh": "类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。"
+   },
+   "install": "dsh plugin --profile web add github:Jesse-njx/dsh-docker",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh_workflow",
    "owner": "icetomoyo",
    "url": "https://github.com/icetomoyo/dsh_workflow",
@@ -1461,6 +1485,30 @@
     "zh": "增加危险操作策略检查、输出脱敏和安全审查工作流。"
    },
    "install": "dsh plugin --profile web add github:lonelymoon87/dsh-guardian",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-manager",
+   "owner": "Jesse-njx",
+   "url": "https://github.com/Jesse-njx/dsh-plugin-manager",
+   "category": "dev",
+   "description": {
+    "en": "The `dsh pm` plugin manager: multi-source search (awesome list + GitHub + npm), install/remove/update per profile, and a doctor audit of manifests, bundle patches, and version drift.",
+    "zh": "`dsh pm` 插件管理器：多源搜索（awesome 列表 + GitHub + npm）、按 profile 安装/移除/更新，以及 doctor 审计（清单、bundle patch、版本漂移）。"
+   },
+   "install": "dsh plugin --profile web add github:Jesse-njx/dsh-plugin-manager",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-tmuxctl",
+   "owner": "Jesse-njx",
+   "url": "https://github.com/Jesse-njx/dsh-tmuxctl",
+   "category": "dev",
+   "description": {
+    "en": "Take control of your tmux panes: list/send-keys/capture, run long jobs in a pane with watch mode, and approval-gated destructive commands.",
+    "zh": "掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。"
+   },
+   "install": "dsh plugin --profile web add github:Jesse-njx/dsh-tmuxctl",
    "added": "2026-08-14"
   },
   {

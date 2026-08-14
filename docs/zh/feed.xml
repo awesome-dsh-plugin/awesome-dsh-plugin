@@ -146,6 +146,20 @@
     <summary>在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。</summary>
   </entry>
   <entry>
+    <title>dsh-voice</title>
+    <id>https://github.com/Jesse-njx/dsh-voice</id>
+    <link href="https://github.com/Jesse-njx/dsh-voice"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。</summary>
+  </entry>
+  <entry>
+    <title>dsh-docker</title>
+    <id>https://github.com/Jesse-njx/dsh-docker</id>
+    <link href="https://github.com/Jesse-njx/dsh-docker"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -200,19 +214,5 @@
     <link href="https://github.com/BiBoyang/dsh-eval-harness"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。</summary>
-  </entry>
-  <entry>
-    <title>oh-dsh</title>
-    <id>https://github.com/hust-open-atom-club/oh-dsh</id>
-    <link href="https://github.com/hust-open-atom-club/oh-dsh"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</summary>
-  </entry>
-  <entry>
-    <title>dsh-annotate</title>
-    <id>https://github.com/BrambleXu/dsh-annotate</id>
-    <link href="https://github.com/BrambleXu/dsh-annotate"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。</summary>
   </entry>
 </feed>

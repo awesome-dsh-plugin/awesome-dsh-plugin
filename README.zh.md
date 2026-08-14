@@ -10,7 +10,7 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 
 本列表收录可通过 `dsh plugin add` 安装的社区插件（均声明了 `dsh.bundle` manifest）。
 
-**130** 个插件 · 欢迎 [PR](#贡献)
+**134** 个插件 · 欢迎 [PR](#贡献)
 
 ## 目录
 
