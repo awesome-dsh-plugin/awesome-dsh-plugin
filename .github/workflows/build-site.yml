@@ -6,8 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['README.md', 'README.zh.md', 'scripts/build-site.mjs', 'scripts/probe-npm.mjs']
-  workflow_dispatch:
+    paths: ['README.md', 'README.zh.md', 'scripts/*.mjs', 'site/*', '.github/workflows/build-site.yml']
 
 permissions:
   contents: write
