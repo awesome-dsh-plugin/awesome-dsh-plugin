@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 193,
+ "count": 194,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -2229,6 +2229,18 @@
     "zh": "帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。"
    },
    "install": "dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-cost-tracker",
+   "owner": "yflmq001",
+   "url": "https://github.com/yflmq001/dsh-cost-tracker",
+   "category": "dev",
+   "description": {
+    "en": "Per-model token cost tracking with configurable cache-hit/miss, output and peak-window pricing, a live session cost bar, and unconfigured-model flags.",
+    "zh": "按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。"
+   },
+   "install": "dsh plugin --profile web add github:yflmq001/dsh-cost-tracker",
    "added": "2026-08-14"
   },
   {
