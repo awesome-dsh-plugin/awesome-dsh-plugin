@@ -199,13 +199,14 @@ footer p+p{margin-top:.5rem}
 <li><strong>The MD drawer</strong> — press <strong>MD</strong> in the web session header, browse your working directory, click a <code>.md</code> file. It renders in place. No new tab, no second editor, no context switch.</li>
 </ul>
 <p>Both go through the same renderer, so a page the model generates and a page you export from the drawer are byte-for-byte identical. A test asserts that on every case in the corpus.</p>
+<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/drawer.png" alt="The MD drawer open over a session, rendering a README in place"></p>
 <hr>
 <h3>Install</h3>
 <p>Not on npm yet — install straight from GitHub. Add it to your profile&#39;s <code>package.json</code>:</p>
 <pre><code class="language-jsonc">// ~/.dsh/profiles/&lt;profile&gt;/package.json
 {
   &quot;dependencies&quot;: {
-    &quot;dsh-md-preview&quot;: &quot;github:LeslieWylie/dsh-md-preview#v0.2.1&quot;
+    &quot;dsh-md-preview&quot;: &quot;github:LeslieWylie/dsh-md-preview#v0.2.2&quot;
   },
   &quot;dsh&quot;: {
     &quot;profile&quot;: {
@@ -218,7 +219,7 @@ footer p+p{margin-top:.5rem}
 <pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt; &amp;&amp; pnpm install
 dsh --profile &lt;profile&gt;
 </code></pre>
-<p>Drop the <code>#v0.2.1</code> to track the default branch instead of pinning.</p>
+<p>Drop the <code>#v0.2.2</code> to track the default branch instead of pinning.</p>
 <pre><code class="language-sh">dsh --profile web --patch &lt;(printf -- &quot;- insert:\n    - id: md-preview\n      name: dsh-md-preview\n&quot;)
 </code></pre>
 <p>The package still has to resolve from the profile&#39;s <code>node_modules</code>, so run the <code>pnpm install</code> above first.</p>
@@ -255,6 +256,7 @@ dsh --profile &lt;profile&gt;
 <p>Render this migration plan to <code>~/Desktop/plan.html</code></p>
 </blockquote>
 <p>The output is <strong>standalone</strong>: styles are embedded, there is no stylesheet, font, script, or image loaded from anywhere. It opens from disk, from a USB stick, or on an airgapped machine and looks the same. It follows the reader&#39;s dark mode. Nothing phones home, because there is nothing to phone home to.</p>
+<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/export.png" alt="An exported page opened straight from disk — one file, no network"></p>
 <p>If <code>save_path</code> is refused by the sandbox, the tool still returns the HTML along with the error, so the work is never lost to a permissions problem.</p>
 <h3>The drawer</h3>
 <table>
@@ -327,16 +329,19 @@ dsh --profile &lt;profile&gt;
 <h3>Tests</h3>
 <pre><code class="language-sh">npm test
 </code></pre>
-<p>Three executing suites, no mocks of the thing under test:</p>
+<p>Four executing suites, no mocks of the thing under test:</p>
 <ul>
 <li><strong><code>tests/render.test.cjs</code></strong> extracts the client renderer from the browser bundle and runs it.</li>
 <li><strong><code>tests/host.test.mjs</code></strong> runs the host renderer on the same corpus, <strong>asserts the two agree exactly</strong> (a drift between them is what produced two competing Markdown plugins before they were merged), then drives <code>apply()</code> against a stub context to check the tool shape, the RPC endpoints, and the sandbox-refusal path.</li>
+<li><strong><code>tests/client.test.mjs</code></strong> covers the drawer&#39;s path rendering, including the bidi guard described below.</li>
 <li><strong><code>tests/boot.test.mjs</code></strong> boots a real harness <code>Context</code> with the harness&#39;s own filesystem service, loads this package the way a profile does, then asks the <strong>real</strong> tool registry for <code>md_html_render</code> and executes it against the real disk.</li>
 </ul>
-<p>That last one exists because a DSH plugin can import cleanly, pass every unit test, and still register nothing when a <code>Context</code> actually boots it — silently, with no error. Unit tests cannot see that. It needs the harness packages, so it skips with exit 0 from a bare clone; to actually exercise it:</p>
-<pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt;/node_modules/dsh-md-preview &amp;&amp; node tests/boot.test.mjs
-</code></pre>
+<p>That last one exists because a DSH plugin can import cleanly, pass every unit test, and still register nothing when a <code>Context</code> actually boots it — silently, with no error. Unit tests cannot see that.</p>
+<p>It needs the harness packages, so it is written to skip rather than fail when they are missing. That makes the skip path dangerous: a green tick proves nothing if the integration half never ran. The harness packages are therefore ordinary <strong><code>devDependencies</code></strong>, not optional peers — npm does not auto-install optional peers, so declaring them that way is exactly what leaves this suite permanently skipped in CI. A plain <code>npm install &amp;&amp; npm test</code> from a fresh clone runs it for real. If the log says <code>SKIPPED</code>, treat the run as unverified.</p>
 <p>The XSS checks assert a structural invariant — no emitted tag ever carries an unterminated attribute or an <code>on*=</code> handler — and the suite includes checks that the checker itself goes red on genuinely unsafe markup, so a security assertion cannot silently rot into one that always passes.</p>
+<h3>Notes</h3>
+<p><strong>The <code>~/</code> in the path bar.</strong> The breadcrumb is <code>direction: rtl</code> so that when a path outgrows the bar, <code>text-overflow: ellipsis</code> trims it from the <em>front</em> and keeps the deepest directory — the part you are actually looking at — visible. The side effect is that a leading run of bidi-neutral characters, which is precisely what <code>~/</code> is, gets reordered to the far end: <code>~/projects/app</code> displayed as <code>projects/app/~</code>. The fix is a single leading U+200E (LEFT-TO-RIGHT MARK), which anchors the run without disturbing the front-truncation. <code>unicode-bidi: plaintext</code> also fixes the order but flips the ellipsis back to the tail, losing the property the <code>rtl</code> was there for; a <em>trailing</em> mark does nothing at all. <code>tests/client.test.mjs</code> pins this.</p>
+<p><strong>The screenshots are generated, not staged.</strong> <code>node docs/screenshot.mjs --shoot</code> rebuilds both images from the real renderer, with the drawer CSS sliced out of <code>lib/client.js</code> rather than retyped, so they cannot drift from what the plugin actually draws.</p>
 <h3>License</h3>
 <p>MIT</p>
 
@@ -355,11 +360,11 @@ dsh --profile &lt;profile&gt;
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1208</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 308</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1223</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 309</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>

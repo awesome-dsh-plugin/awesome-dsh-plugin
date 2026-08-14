@@ -196,7 +196,9 @@ footer p+p{margin-top:.5rem}
 <h2>dsh-prompt-stash</h2>
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a>
 <a href="https://www.npmjs.com/package/dsh-prompt-stash"><img src="https://img.shields.io/npm/v/dsh-prompt-stash.svg" alt="npm version"></a>
-<a href="https://www.npmjs.com/package/dsh-prompt-stash"><img src="https://img.shields.io/npm/dm/dsh-prompt-stash.svg" alt="npm downloads"></a></p>
+<a href="https://github.com/Wine-Red/dsh-prompt-stash/actions/workflows/ci.yml"><img src="https://github.com/Wine-Red/dsh-prompt-stash/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://deepseek-harness.github.io/deepseek-harness/"><img src="https://img.shields.io/badge/DSH%20compatibility-0.1.0--rc.6-blue.svg" alt="DSH compatibility"></a>
+<a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a></p>
 <p><a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/README.md">简体中文</a> | <a href="https://github.com/Wine-Red/dsh-prompt-stash/blob/main/README.en.md">English</a></p>
 <p>A local prompt-stash plugin for DeepSeek Harness Web. Push unsent plain-text input onto a per-session LIFO stack, handle a quick detour, and safely restore the original prompt afterward.</p>
 <blockquote>
@@ -260,9 +262,9 @@ dsh plugin --profile web add .
 <li>If the composer already contains text, choose <strong>Stash current input and restore this item</strong>, or cancel.</li>
 </ol>
 <p>Successful add and delete operations do not show toast notifications. Error notifications appear only when storage or composer updates fail.</p>
-<p>Press the shortcut while the message composer is empty to restore and pop the latest stash. To restore the next item, send or clear the current input first; pressing the shortcut with non-empty input pushes it as a new stash. The shortcut never restores over whitespace, images, or file references already in the composer.</p>
+<p>Press the shortcut while the message composer is empty to restore and pop the latest stash. If the restored text remains unchanged, keep pressing the same shortcut to rotate through the remaining prompts from newest to oldest; the current prompt moves safely to the back and appears again after a full cycle. Editing or replacing the restored text exits rotation, so the next shortcut press adds the current content as a new stash and clears the composer. This keeps repeated multi-item stashing available. With only one item in the rotation, pressing again also uses the normal stash-and-clear behavior. The shortcut never restores over whitespace, images, or file references already in the composer.</p>
 <h4>Configure the shortcut</h4>
-<p>Open <strong>Settings → Plugins → Plugin configuration → Prompt stash</strong>, focus the shortcut field, press one key or a key combination, and save. Changes take effect immediately. The default is <code>Ctrl+S</code>; a single key such as <code>F8</code> is also supported. The shortcut stashes non-empty input and restores the latest stash when the composer is empty. It only runs in the message composer. A printable single-key shortcut consumes that character&#39;s normal typing behavior.</p>
+<p>Open <strong>Settings → Plugins → Plugin configuration → Prompt stash</strong>, focus the shortcut field, press one key or a key combination, and save. Changes take effect immediately. The default is <code>Ctrl+S</code>; a single key such as <code>F8</code> is also supported. The shortcut stashes non-empty input and restores the latest stash when the composer is empty; once restored, repeated presses rotate through the remaining stashes. It only runs in the message composer. A printable single-key shortcut consumes that character&#39;s normal typing behavior.</p>
 <h3>Data and security boundaries</h3>
 <ul>
 <li>Storage key: <code>dsh.promptStash.v1</code></li>
@@ -308,11 +310,11 @@ pnpm pack
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 36</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 37</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
       <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
       <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 22</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.</p></a></li>
+      <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a></li>
       <li><h3><a href="/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/hellodigua/dsh-share/" tabindex="-1"><p>Share your conversations with one click.</p></a></li>
-      <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a></li>
       <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p></a></li>
     </ul>
     <a class="morelink" href="/session/">View the whole category →</a>

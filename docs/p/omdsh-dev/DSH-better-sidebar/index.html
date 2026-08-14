@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">omdsh-dev/</span><wbr><span class="name">DSH-better-sidebar</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 709</b></span>
+        <span>Stars <b>★ 714</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -191,12 +191,36 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86">https://github.com/user-attachments/assets/23187822-047e-45cc-b480-fe997bd55b86</a></p>
 <h3>🆕 Recent Updates</h3>
-<ul>
-<li><strong>Custom terminal fonts</strong>: font-family + 9–32px size settings on the terminal card, applied live</li>
-<li><strong>Side card settings redesign</strong>: grouped container cards, count badges, custom toggles, wider settings dialog</li>
-<li><strong>Fix</strong>: blank terminal after expanding the bottom panel on WKWebView (xterm initialized in a zero-size container, <a href="https://github.com/omdsh-dev/DSH-better-sidebar/issues/25">#25</a>)</li>
-<li><strong>Docs</strong>: client changes take effect on a hard refresh — no DSH restart needed</li>
-</ul>
+<p>v0.12.0</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+<th>Screenshot</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🔌 Service API base</td>
+<td>Complete type exports + <code>version</code>/<code>features</code> capability detection, state subscription (<code>getSnapshot</code>/<code>subscribeState</code>), tab <code>badge</code>, <code>onOpen</code>/<code>onActivate</code>/<code>onClose</code> lifecycle callbacks, <code>updateTab</code>/<code>activateTab</code>/<code>openFile</code>, targeted open, <code>meta</code> persisted across reloads, plugin-owned settings (<code>pluginToggles</code>/<code>render</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>➕ Add Plugins</td>
+<td>Recommended plugin catalog in settings + one-click copy install command; built-in Office preview moved to the recommended plugin</td>
+<td></td>
+</tr>
+<tr>
+<td>🖱️ Tab-bar scroll</td>
+<td>Mouse-wheel horizontal scrolling on the tab bar</td>
+<td></td>
+</tr>
+<tr>
+<td>🐛 Fixes</td>
+<td>Remote access 403 (trust fence now uses <code>trustedHosts</code>), sidebar crash <a href="https://github.com/omdsh-dev/DSH-better-sidebar/issues/31">#31</a>, Windows HTML-preview drive-path</td>
+<td></td>
+</tr>
+</tbody></table>
 <h3>✨ Features</h3>
 <ul>
 <li><strong>🗂️ File Explorer</strong>: lazy-loading directory tree (root = session cwd), click to open, <code>@file</code> reference, right-click to copy path</li>
@@ -225,10 +249,10 @@ footer p+p{margin-top:.5rem}
 </code></pre>
 <p>Then <strong>hard-refresh the browser</strong> (Cmd/Ctrl+Shift+R) to see the sidebar (DSH hot-reloads client changes; only host-half updates need a restart).</p>
 <pre><code class="language-sh"># macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash -s 0.11.0 --restart
+curl -fsSL https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.sh | bash -s 0.12.0 --restart
 
 # Windows PowerShell
-&amp; ([scriptblock]::Create((irm &#39;https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1&#39;))) -Version 0.11.0 -Restart
+&amp; ([scriptblock]::Create((irm &#39;https://raw.githubusercontent.com/omdsh-dev/DSH-better-sidebar/main/scripts/install.ps1&#39;))) -Version 0.12.0 -Restart
 </code></pre>
 <p>Not sure? Add <code>--dry-run</code> (<code>-DryRun</code> in PowerShell) to preview before running.</p>
 <p>Equivalent to the one-click script. <strong>Step ③ is repeatable; ①② only need to run once.</strong></p>
@@ -244,7 +268,7 @@ minimumReleaseAgeExclude:
   - dsh-better-sidebar
 EOF
 
-# ③ Install and auto-mount (no @version = npm&#39;s latest; pin with dsh-better-sidebar@0.11.0)
+# ③ Install and auto-mount (no @version = npm&#39;s latest; pin with dsh-better-sidebar@0.12.0)
 npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
 <p><strong>Windows (PowerShell)</strong>:</p>
@@ -266,10 +290,10 @@ npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sideba
 <li>Runs <code>dsh plugin --profile web add dsh-better-sidebar</code>: registers the dependency → detects <code>dsh.bundle.patch</code> → auto-appends the plugin to <code>dsh.profile.bundles</code>;</li>
 <li>Removes any leftover hand-written mount line to avoid double-mounting (two sidebars on the page).</li>
 </ol>
-<p><code>curl | bash</code> / <code>irm | iex</code> executes remote code — the scripts are open source in the repo (<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>); download and review them first if you prefer. The plugin ships as npm package <code>dsh-better-sidebar@0.11.0</code> and mounts via <code>dsh.bundle.patch</code> (the shipped <code>cordis.patch.yml</code>), so the DSH source is never modified.</p>
+<p><code>curl | bash</code> / <code>irm | iex</code> executes remote code — the scripts are open source in the repo (<code>scripts/install.sh</code> / <code>scripts/install.ps1</code>); download and review them first if you prefer. The plugin ships as npm package <code>dsh-better-sidebar@0.12.0</code> and mounts via <code>dsh.bundle.patch</code> (the shipped <code>cordis.patch.yml</code>), so the DSH source is never modified.</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-better-sidebar
 </code></pre>
-<p>or re-run the one-click script; or bump the version in <code>~/.dsh/profiles/web/package.json</code> (e.g. <code>&quot;^0.11.0&quot;</code>) and run <code>pnpm install</code>. Then hard-refresh the browser (Cmd/Ctrl+Shift+R) — client changes do not need a DSH restart.</p>
+<p>or re-run the one-click script; or bump the version in <code>~/.dsh/profiles/web/package.json</code> (e.g. <code>&quot;^0.12.0&quot;</code>) and run <code>pnpm install</code>. Then hard-refresh the browser (Cmd/Ctrl+Shift+R) — client changes do not need a DSH restart.</p>
 <table>
 <thead>
 <tr>
@@ -313,7 +337,7 @@ npx -y --package @deepseek-ai/dsh dsh plugin --profile web add dsh-better-sideba
 4. Run pnpm install in ~/.dsh/profiles/web
 5. Restart DSH and hard-refresh
 </code></pre>
-<p>Update: <code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → just hard-refresh the browser (client changes hot-reload; only host-half changes need a DSH restart). To switch back to the npm channel, restore <code>&quot;dsh-better-sidebar&quot;: &quot;^0.11.0&quot;</code> and re-run <code>pnpm install</code>.</p>
+<p>Update: <code>git pull &amp;&amp; pnpm install &amp;&amp; pnpm build</code> → just hard-refresh the browser (client changes hot-reload; only host-half changes need a DSH restart). To switch back to the npm channel, restore <code>&quot;dsh-better-sidebar&quot;: &quot;^0.12.0&quot;</code> and re-run <code>pnpm install</code>.</p>
 <p>Prerequisite: DSH with <a href="https://github.com/dsh-external/plugin-registry">plugin-registry</a> integrated (<code>dsh registry</code> available). <strong>Enabling both channels double-mounts</strong> (the Node half loads twice, the page gets two sidebars).</p>
 <pre><code class="language-sh">git clone https://github.com/omdsh-dev/DSH-better-sidebar.git &amp;&amp; cd DSH-better-sidebar
 pnpm install &amp;&amp; pnpm build
@@ -365,19 +389,15 @@ export function apply(ctx: Context) {
   }))
 }
 </code></pre>
-<p>v0.12.0+ base capabilities: complete type exports (consumers can name <code>SidebarTab</code>/<code>SidebarState</code> etc.; the client declaration graph is Node-free), <code>version</code>/<code>features</code> capability detection, <code>getSnapshot</code>/<code>subscribeState</code> state subscription, tab <code>badge</code>, <code>onOpen</code>/<code>onActivate</code>/<code>onClose</code> lifecycle callbacks, <code>updateTab</code>/<code>activateTab</code>/<code>openFile</code>, targeted <code>openTab(seed, scope)</code>, <code>SidebarTab.meta</code> persisted across reloads, and an opened settings seam (<code>settings.pluginToggles</code> / <code>settings.render</code>, stored in <code>pluginSettings[id]</code>).</p>
+<p>v0.12.0+ base capabilities (complete type exports, capability detection, state subscription, tab badge, lifecycle callbacks, targeted open, plugin-owned settings, etc.) — see the integration docs below.</p>
 <p>Full integration docs:</p>
 <ul>
 <li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/AGENTS.md"><code>AGENTS.md</code></a></strong> — the in-repo integration doc (full fields, matching algorithm, HMR pitfalls, declarative settings, version detection);</li>
 <li><strong><a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/docs/external-plugin-guide.md"><code>docs/external-plugin-guide.md</code></a></strong> — the external-plugin guide (with a complete minimal example).</li>
 </ul>
 <h4>➕ Add Plugins (recommended plugin catalog)</h4>
-<p>The dashed card at the end of the &quot;Sidebar content&quot; grid in the &quot;Side Cards&quot; settings section opens the <strong>Add tab plugins</strong> modal; the one at the end of the &quot;File viewers&quot; grid opens the <strong>Add preview plugins</strong> modal. Each declares that its extension point is open to plugins (via the <code>ctx.betterSidebar</code> service), offers a &quot;<strong>Browse more plugins on GitHub</strong>&quot; button (opens the <a href="https://github.com/topics/dsh-better-sidebar">GitHub topic <code>dsh-better-sidebar</code></a> in a new tab), and lists the recommended catalog of its kind (name / repo URL / description / install script). Each entry has two buttons:</p>
-<ul>
-<li><strong>Open</strong>: jumps to the plugin repo in a new browser tab;</li>
-<li><strong>Copy</strong>: writes the install command (<code>cd ~/.dsh &amp;&amp; dsh plugin --profile web add &lt;package&gt;</code>) to the clipboard with a transient &quot;Copied&quot; feedback — paste and run it in a terminal where your DSH profile lives. The modal stays open; nothing is opened, nothing can fail.</li>
-</ul>
-<p><strong>Curating a new plugin</strong>: append a <code>PluginEntry</code> to <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-tabs.ts"><code>src/client/plugins-tabs.ts</code></a> (tab registrations) or <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-viewers.ts"><code>src/client/plugins-viewers.ts</code></a> (file-previewer registrations) — <code>id</code> = npm package name, <code>name</code>, <code>url</code>, <code>description</code> (i18n-friendly; add a <code>pluginXxxDesc</code> key in <code>src/client/locales.ts</code> if needed), <code>install</code> = the full install command — and tag your repo with the <code>dsh-better-sidebar</code> topic; data integrity is guarded by <code>tests/plugin-list.spec.ts</code>.</p>
+<p>The dashed cards at the end of the &quot;Sidebar content&quot; / &quot;File viewers&quot; grids in the &quot;Side Cards&quot; settings section open the <strong>Add tab plugins</strong> / <strong>Add preview plugins</strong> modals: each declares its open extension point, offers a &quot;<strong>Browse more plugins on GitHub</strong>&quot; button (the <a href="https://github.com/topics/dsh-better-sidebar">GitHub topic <code>dsh-better-sidebar</code></a>), and lists the recommended catalog (name / repo / description / install script) — &quot;<strong>Open</strong>&quot; jumps to the repo, &quot;<strong>Copy</strong>&quot; writes the install command to the clipboard.</p>
+<p><strong>Curating a new plugin</strong>: append a <code>PluginEntry</code> to <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-tabs.ts"><code>src/client/plugins-tabs.ts</code></a> (tab registrations) or <a href="https://github.com/omdsh-dev/DSH-better-sidebar/blob/main/src/client/plugins-viewers.ts"><code>src/client/plugins-viewers.ts</code></a> (file-previewer registrations) and tag your repo with the <code>dsh-better-sidebar</code> topic; data integrity is guarded by <code>tests/plugin-list.spec.ts</code>.</p>
 <h3>🛠️ Development &amp; Build</h3>
 <pre><code class="language-sh">pnpm install      # @deepseek-ai/* resolved from npm (^0.1.0-rc.6, published) — no token needed
 pnpm typecheck    # tsc --noEmit
@@ -425,11 +445,11 @@ pnpm watch        # tsdown --watch
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1804</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 841</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 118</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 72</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>

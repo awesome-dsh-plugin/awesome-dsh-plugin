@@ -199,13 +199,14 @@ footer p+p{margin-top:.5rem}
 <li><strong>MD 抽屉</strong> —— 在网页会话头部按 <strong>MD</strong>，浏览当前工作目录，点开任意 <code>.md</code> 文件即时渲染。不开新标签页，不换编辑器，不打断当前上下文。</li>
 </ul>
 <p>两者共用同一个渲染器，所以模型生成的页面和你从抽屉导出的页面<strong>逐字节一致</strong>——这一点由测试对整个用例集断言。</p>
+<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/drawer.png" alt="MD 抽屉在会话上层展开，就地渲染一份 README"></p>
 <hr>
 <h3>安装</h3>
 <p>尚未发布到 npm，直接从 GitHub 安装。写进你的 profile <code>package.json</code>：</p>
 <pre><code class="language-jsonc">// ~/.dsh/profiles/&lt;profile&gt;/package.json
 {
   &quot;dependencies&quot;: {
-    &quot;dsh-md-preview&quot;: &quot;github:LeslieWylie/dsh-md-preview#v0.2.1&quot;
+    &quot;dsh-md-preview&quot;: &quot;github:LeslieWylie/dsh-md-preview#v0.2.2&quot;
   },
   &quot;dsh&quot;: {
     &quot;profile&quot;: {
@@ -218,7 +219,7 @@ footer p+p{margin-top:.5rem}
 <pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt; &amp;&amp; pnpm install
 dsh --profile &lt;profile&gt;
 </code></pre>
-<p>去掉 <code>#v0.2.1</code> 即可跟随默认分支，不锁版本。</p>
+<p>去掉 <code>#v0.2.2</code> 即可跟随默认分支，不锁版本。</p>
 <pre><code class="language-sh">dsh --profile web --patch &lt;(printf -- &quot;- insert:\n    - id: md-preview\n      name: dsh-md-preview\n&quot;)
 </code></pre>
 <p>包本身仍需能从 profile 的 <code>node_modules</code> 解析到，所以还是要先执行上面的 <code>pnpm install</code>。</p>
@@ -255,6 +256,7 @@ dsh --profile &lt;profile&gt;
 <p>把这份迁移方案渲染到 <code>~/Desktop/plan.html</code></p>
 </blockquote>
 <p>产物是<strong>自包含</strong>的：样式内嵌，不加载任何外部样式表、字体、脚本或图片。从磁盘打开、从 U 盘打开、在完全断网的机器上打开，效果都一样，并且自动跟随阅读者的深色模式。它不会向外发起任何请求，因为根本没有可发起的目标。</p>
+<p><img src="https://raw.githubusercontent.com/LeslieWylie/dsh-md-preview/main/docs/export.png" alt="导出的页面直接从磁盘打开——单文件，不联网"></p>
 <p>如果 <code>save_path</code> 被沙箱拒绝，工具仍会连同错误信息一起返回 HTML 正文，不会因为一个权限问题就把成果丢掉。</p>
 <h3>抽屉</h3>
 <table>
@@ -327,16 +329,19 @@ dsh --profile &lt;profile&gt;
 <h3>测试</h3>
 <pre><code class="language-sh">npm test
 </code></pre>
-<p>三套真实执行的测试，不对被测对象打桩：</p>
+<p>四套真实执行的测试，不对被测对象打桩：</p>
 <ul>
 <li><strong><code>tests/render.test.cjs</code></strong> 从浏览器 bundle 中把客户端渲染器抽出来实际运行。</li>
 <li><strong><code>tests/host.test.mjs</code></strong> 用同一套用例集跑宿主端渲染器，<strong>断言两者输出完全一致</strong>（正是这种漂移，导致此前出现了两个互相竞争的 Markdown 插件，后来才合并），再用桩 context 驱动 <code>apply()</code>，检查工具形态、RPC 各端点，以及沙箱拒写时的兜底路径。</li>
+<li><strong><code>tests/client.test.mjs</code></strong> 覆盖抽屉的路径渲染，包括下文提到的 bidi 处理。</li>
 <li><strong><code>tests/boot.test.mjs</code></strong> 启动一个真实的 harness <code>Context</code>，加载 harness 自己的文件服务，按 profile 的方式装载本包，然后向<strong>真实的</strong>工具注册表索取 <code>md_html_render</code> 并对真实磁盘执行一次。</li>
 </ul>
-<p>最后这套的存在理由是：DSH 插件完全可能顺利 import、跑过全部单元测试，却在 <code>Context</code> 真正启动时什么都没注册——而且是静默的，不报错。单元测试看不见这件事。它需要 harness 依赖，因此在纯 clone 下会以 exit 0 跳过；要真正跑起来：</p>
-<pre><code class="language-sh">cd ~/.dsh/profiles/&lt;profile&gt;/node_modules/dsh-md-preview &amp;&amp; node tests/boot.test.mjs
-</code></pre>
+<p>最后这套的存在理由是：DSH 插件完全可能顺利 import、跑过全部单元测试，却在 <code>Context</code> 真正启动时什么都没注册——而且是静默的，不报错。单元测试看不见这件事。</p>
+<p>它需要 harness 依赖，所以缺依赖时是&quot;跳过&quot;而不是&quot;失败&quot;。这恰恰让跳过这条路径变得危险：集成那一半根本没跑的时候，绿勾什么也证明不了。因此 harness 依赖被放在普通的 <strong><code>devDependencies</code></strong> 里，而不是可选 peer——npm 不会自动安装可选 peer，用那种方式声明，正好会让这套测试在 CI 里被永久跳过。从全新 clone 执行 <code>npm install &amp;&amp; npm test</code> 就会真实跑到。<strong>如果日志里写的是 <code>SKIPPED</code>，这次运行就应当视为未经验证。</strong></p>
 <p>XSS 相关断言检查的是一条结构性不变式——任何生成的标签都不会出现未闭合的属性或 <code>on*=</code> 事件处理器——并且测试里还包含&quot;检查器本身遇到真正危险的标记时会变红&quot;的元断言，避免一条安全断言悄悄退化成永远通过的摆设。</p>
+<h3>附注</h3>
+<p><strong>路径栏开头的 <code>~/</code>。</strong> 面包屑用了 <code>direction: rtl</code>，这样当路径长过栏宽时，<code>text-overflow: ellipsis</code> 会从<strong>开头</strong>截断，保留最深的那一级目录——也就是你真正在看的那部分。副作用是：开头那串双向中性字符（<code>~/</code> 正是如此）会被重排到末尾，<code>~/projects/app</code> 显示成了 <code>projects/app/~</code>。解法是在开头加一个 U+200E（从左至右标记），它把这串字符锚定为 LTR，同时不影响从头截断的行为。<code>unicode-bidi: plaintext</code> 同样能修好顺序，但会把省略号翻回尾部，丢掉当初用 <code>rtl</code> 想要的那个特性；而把标记加在<strong>末尾</strong>则完全没有效果。这一行为由 <code>tests/client.test.mjs</code> 固定。</p>
+<p><strong>截图是生成的，不是摆拍的。</strong> <code>node docs/screenshot.mjs --shoot</code> 会用真实渲染器重建两张图，其中抽屉的 CSS 是从 <code>lib/client.js</code> 里切出来的而非重新誊写，因此不会和插件实际画出来的样子发生漂移。</p>
 <h3>许可</h3>
 <p>MIT</p>
 
@@ -355,11 +360,11 @@ dsh --profile &lt;profile&gt;
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1208</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 308</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1223</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 309</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
-      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
+      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/tools/">查看整个分类 →</a>

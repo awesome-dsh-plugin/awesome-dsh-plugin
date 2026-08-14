@@ -190,57 +190,42 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <h4>余额监控和充值插件</h4>
-<p><code>dsh-wallet</code> is a focused wallet chip built specifically for the official <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web interface. It keeps the numbers that matter beside the composer: official DeepSeek balance, estimated spend for the open session, official and third-party token totals, a configurable low-balance warning, and a guarded shortcut to the official recharge page.</p>
-<h3>Why this exists</h3>
-<p>Long agent sessions can consume millions of tokens while the account balance remains hidden on another website. <code>dsh-wallet</code> puts the answer directly in the Harness workflow without adding a model tool, changing the system prompt or spending another token.</p>
-<pre><code class="language-text">余额 5.89 · 本场 0.72 · 官 18.8M | 三方 800K · ↗充
+<p><strong>The multi-provider wallet chip for the DeepSeek Harness Web GUI.</strong></p>
+<p>A resident one-line chip beside the composer: official DeepSeek (balance, session cost, tokens, one-click recharge, low-balance alert) plus the third-party token total. Accounting is bucketed per provider — a GLM session never shows a DeepSeek balance, and DeepSeek costs are never computed from GLM tokens.</p>
+<h3>What it shows</h3>
+<pre><code>余额 5.89 · 本场 0.72 · 官 18.8M | 三方 800K · ↗充
 </code></pre>
-<h3>Core features</h3>
 <ul>
-<li><strong>Live DeepSeek balance</strong> — reads the official account-balance endpoint, refreshes every 60 seconds and provides a manual refresh button.</li>
-<li><strong>Per-session spend monitor</strong> — estimates the open conversation&#39;s DeepSeek cost from cache-hit input, cache-miss input and output usage. The displayed balance remains the authoritative account value.</li>
-<li><strong>Provider-aware token tracking</strong> — keeps official DeepSeek usage separate from third-party providers, so another provider&#39;s tokens never inflate the DeepSeek bill.</li>
-<li><strong>Official recharge shortcut</strong> — opens <code>https://platform.deepseek.com/top_up</code>. The destination is hardcoded and shown for confirmation before the first jump.</li>
-<li><strong>Low-balance alert</strong> — choose any threshold with two-decimal precision. Below it, the chip turns red and sends one desktop notification; the alert resets after the balance recovers.</li>
-<li><strong>Conversation isolation</strong> — each session has its own counters. “Clear current session” removes only the open conversation&#39;s wallet data.</li>
-<li><strong>Theme-native panel</strong> — follows Harness light and dark themes, closes on outside click and flips direction near the viewport edge.</li>
-<li><strong>No model overhead</strong> — no tools, no prompt injection and no extra model tokens.</li>
+<li><strong>Official DeepSeek</strong> — live balance (60s global refresh with fast boot retries), current-session cost (official pricing timeline, including the 2026-08-17 peak/off-peak rollout), and token breakdown.</li>
+<li><strong>Third-party total</strong> — current-session tokens (input / cache read / output). No balance guessing, no cost math, zero configuration.</li>
+<li><strong>Click the chip</strong> to open the detail panel: per-currency balance breakdown, cost and token splits, a freely editable low-balance threshold (two decimals, persisted globally), manual refresh, and a jump to the official recharge page (first click shows the domain for confirmation — anti-phishing).</li>
+<li><strong>Floating window mode</strong> — from the detail panel, detach the wallet into a floating window you can drag anywhere (position remembered across reloads), or minimize it to a small dot; the dot turns red below the threshold.</li>
+<li><strong>Low-balance alert</strong> — below the threshold the chip turns red with a breathing animation and fires one desktop notification; it resets automatically once the balance recovers.</li>
+<li><strong>Theme-native UI</strong> — built entirely on <code>--dsw-alias-*</code> theme variables, so light and dark themes both render correctly; the panel closes when you click outside and flips open-direction near screen edges.</li>
+<li><strong>Clear current session</strong> — one button clears only the open conversation&#39;s token/cost records; every other conversation is untouched.</li>
 </ul>
-<h3>Screenshots</h3>
+<h4>Screenshots</h4>
 <table>
 <thead>
 <tr>
-<th>Below threshold: red alert</th>
-<th>Above threshold: normal state</th>
+<th>Floating window (draggable)</th>
+<th>Minimized dot</th>
+<th>Below threshold (alert on)</th>
+<th>Above threshold (normal)</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/assets/below-threshold.png" alt="Below-threshold wallet chip"></td>
-<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/assets/above-threshold.png" alt="Normal wallet chip"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody></table>
-<h3>Install from GitHub</h3>
-<p>Requirements:</p>
-<ul>
-<li>The official DeepSeek Harness Web profile</li>
-<li>Node.js <code>^22.19.0</code> or <code>&gt;=24</code></li>
-<li>A configured <code>DEEPSEEK_API_KEY</code> for official balance lookup</li>
-</ul>
-<pre><code class="language-shell">dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet
-dsh --profile web
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet
 </code></pre>
-<p>Then hard-refresh the Harness page. The wallet chip appears beside the composer.</p>
-<h4>Update</h4>
-<pre><code class="language-shell">dsh plugin --profile web update dsh-wallet
-</code></pre>
-<h4>Remove</h4>
-<pre><code class="language-shell">dsh plugin --profile web remove dsh-wallet
-</code></pre>
-<blockquote>
-<p>[!NOTE]
-Token tracking works per provider. Official balance lookup requires a valid DeepSeek API key with access to the official balance endpoint. The recharge action opens DeepSeek&#39;s website; login and payment always happen there.</p>
-</blockquote>
-<h3>Data, privacy and trust</h3>
+<p>Restart <code>dsh web</code>, then hard-refresh the page.</p>
+<h3>Data &amp; trust</h3>
 <table>
 <thead>
 <tr>
@@ -249,70 +234,39 @@ Token tracking works per provider. Official balance lookup requires a valid Deep
 </tr>
 </thead>
 <tbody><tr>
-<td>API key</td>
-<td>Read through the Harness credentials service. It is sent only as the authorization header for <code>https://api.deepseek.com/user/balance</code>; the plugin never displays or stores the key.</td>
-</tr>
-<tr>
-<td>Wallet data</td>
-<td>Stored locally at <code>$DSH_HOME/storages/wallet.json</code>.</td>
-</tr>
-<tr>
 <td>Token accounting</td>
-<td>Listens to Harness <code>llm/stream</code> usage data and buckets it by session and provider.</td>
+<td>Listens to the <code>llm/stream</code> event and buckets per provider (<code>deepseek-official</code> vs. everything else) and per session; multiple sessions never mix accounts.</td>
+</tr>
+<tr>
+<td>Balance</td>
+<td>The <code>DEEPSEEK_API_KEY</code> from the credentials seam never leaves this machine except as the <code>Authorization</code> header of the official <code>/user/balance</code> request.</td>
+</tr>
+<tr>
+<td>Session log</td>
+<td>The plugin writes no events; its data lives in <code>$DSH_HOME/storages/wallet.json</code>.</td>
 </tr>
 <tr>
 <td>Model surface</td>
-<td>Registers no model tool and injects no prompt content.</td>
+<td>No tools registered, no prompt injection, zero token cost.</td>
 </tr>
 <tr>
 <td>Recharge</td>
-<td>Opens only the hardcoded official URL <code>https://platform.deepseek.com/top_up</code>.</td>
+<td>The URL is hardcoded to the official <code>https://platform.deepseek.com/top_up</code> and is not user-configurable (anti-phishing).</td>
 </tr>
 </tbody></table>
-<h3>Pricing used for estimates</h3>
-<p>The current V4 table uses CNY per one million tokens from the official <a href="https://api-docs.deepseek.com/quick_start/pricing/">DeepSeek Models &amp; Pricing</a> page:</p>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th align="right">Cache-hit input</th>
-<th align="right">Cache-miss input</th>
-<th align="right">Output</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>deepseek-v4-flash</code></td>
-<td align="right">¥0.02</td>
-<td align="right">¥1</td>
-<td align="right">¥2</td>
-</tr>
-<tr>
-<td><code>deepseek-v4-pro</code></td>
-<td align="right">¥0.025</td>
-<td align="right">¥3</td>
-<td align="right">¥6</td>
-</tr>
-</tbody></table>
-<p>Prices can change. Treat the session amount as an estimate and the balance returned by DeepSeek as authoritative. Please open an Issue when the official pricing table changes.</p>
-<h3>Project layout</h3>
-<pre><code class="language-text">dsh-wallet/
-├─ index.js                 Host plugin: balance, usage accounting and HTTP routes
-├─ lib/client.js            Harness Web wallet chip and control panel
-├─ cordis.patch.yml         Installable Harness profile bundle patch
-├─ docs/assets/             Public screenshots
-└─ docs/i18n/README.zh-CN.md
-</code></pre>
+<h3>Pricing timeline</h3>
+<p>CNY per 1M tokens, curated from official announcements (cache writes are not billed):</p>
+<ul>
+<li>Since 2025-02-09 — deepseek-chat 2/8 (cache read 0.5), deepseek-reasoner 4/16 (cache read 1)</li>
+<li>Since 2026-05-22 — v4-flash 1/2 (cache read 0.02), v4-pro 3/6 (cache read 0.025)</li>
+<li>Since 2026-08-17 — peak/off-peak (Beijing 09:00–12:00 / 14:00–18:00 peak)</li>
+</ul>
 <h3>Roadmap</h3>
 <ul>
+<li><input disabled="" type="checkbox"> Third-party price tables (cost per token)</li>
 <li><input disabled="" type="checkbox"> Balance history chart</li>
-<li><input disabled="" type="checkbox"> Optional pricing tables for third-party providers</li>
-<li><input disabled="" type="checkbox"> Balance adapters for additional providers</li>
-<li><input disabled="" type="checkbox"> More automated compatibility checks against Harness releases</li>
+<li><input disabled="" type="checkbox"> Balance-API adapters for other providers (e.g. Zhipu)</li>
 </ul>
-<h3>Contributing</h3>
-<p>Bug reports and pull requests are welcome in English or Chinese. Never include API keys, wallet files, session logs or account information in an Issue.</p>
-<h3>Disclaimer</h3>
-<p>This is an independent community plugin and is not affiliated with or endorsed by DeepSeek. DeepSeek and DeepSeek Harness are trademarks or projects of their respective owners.</p>
 <h3>License</h3>
 <p><a href="https://github.com/feibi-mochi/deepseek-harness-wallet/blob/main/LICENSE">MIT</a></p>
 

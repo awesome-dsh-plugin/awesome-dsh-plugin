@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">openma-ai/</span><wbr><span class="name">deepseek-harness-tui</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 15</b></span>
+        <span>Stars <b>★ 16</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -297,12 +297,12 @@ in that order.</p>
 <td>Send; queue a follow-up while a turn is running</td>
 </tr>
 <tr>
-<td><code>alt+enter</code></td>
-<td>Standalone: interrupt and send next; plugin: queue</td>
+<td><code>ctrl+x</code></td>
+<td>Interrupt the current turn and send next (plugin forwards to host; standalone kills runtime)</td>
 </tr>
 <tr>
 <td><code>esc</code></td>
-<td>Standalone: interrupt and preserve the draft; press twice while idle to clear</td>
+<td>Interrupt the current turn (draft survives); clears the draft when idle</td>
 </tr>
 <tr>
 <td><code>ctrl+c</code></td>
@@ -310,7 +310,7 @@ in that order.</p>
 </tr>
 <tr>
 <td><code>/</code></td>
-<td>Open the command menu and filter by prefix</td>
+<td>Open the command menu and filter by prefix; host skills join it in plugin mode (picking one lands <code>/name </code>, enter ships it as a prompt the host expands)</td>
 </tr>
 <tr>
 <td><code>/model</code> · <code>/mode</code></td>
@@ -325,12 +325,40 @@ in that order.</p>
 <td>Set reasoning effort or pass plan mode to the host</td>
 </tr>
 <tr>
-<td><code>ctrl+e</code> · <code>ctrl+t</code></td>
+<td><code>/image &lt;path&gt; [text]</code></td>
+<td>Send a local image (png/jpeg/webp/gif); plugin mode only</td>
+</tr>
+<tr>
+<td><code>/clip [text]</code> · <code>ctrl+v</code></td>
+<td>Stage the clipboard image (repeatable; up to 8 ride one prompt); macOS/Linux</td>
+</tr>
+<tr>
+<td>Image chips</td>
+<td>Live inline in the draft as <code>[image n]</code> tokens (no icon); backspace cuts the whole chip, hover (or park the cursor on) one for a preview popup — kitty thumbnail + dimensions/size/type</td>
+</tr>
+<tr>
+<td><code>ctrl+o</code> · <code>ctrl+t</code></td>
 <td>Expand output · toggle the theme</td>
 </tr>
 <tr>
-<td><code>pgup/pgdn</code> · <code>ctrl+u/d</code></td>
+<td><code>pgup/pgdn</code> · <code>ctrl+u/d</code> (empty prompt)</td>
 <td>Scroll; <code>end</code> follows the live tail</td>
+</tr>
+<tr>
+<td>Readline editing</td>
+<td><code>ctrl+a/e</code> line ends · <code>ctrl+k/u</code> kill to end/start · <code>ctrl+w</code> word back</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>⌘←/→</code> line ends · <code>⌥←/→</code> word hops · <code>⌘⌫</code> kill to start · <code>⌥⌫</code> word back (physical key state read natively — works in every terminal)</td>
+</tr>
+<tr>
+<td>Linux/Windows</td>
+<td><code>ctrl+←/→</code> word hops · <code>ctrl+⌫</code> word back</td>
+</tr>
+<tr>
+<td>Click tool · wheel over it</td>
+<td>Click a tool to expand/collapse it; wheel scrolls its inner window</td>
 </tr>
 <tr>
 <td>Mouse drag</td>
@@ -412,12 +440,12 @@ is the runtime substrate.</p>
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 709</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1804</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 841</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 714</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 118</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

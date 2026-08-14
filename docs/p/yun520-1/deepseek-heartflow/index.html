@@ -215,7 +215,7 @@ footer p+p{margin-top:.5rem}
 <li>npm 包 <code>@yun520-1/heartflow</code></li>
 <li>插件同级 <code>node_modules/@yun520-1/heartflow</code></li>
 </ol>
-<h4>29 个工具</h4>
+<h4>29 + 115 = 144 个工具</h4>
 <p><strong>判别工具群（10 个）</strong> — AGI 第 1 层门禁：</p>
 <table>
 <thead>
@@ -386,8 +386,29 @@ footer p+p{margin-top:.5rem}
 <blockquote>
 <p>💡 任何未列出的能力都可以用 <code>heartflow_route</code> 直接调用——131 个子系统全部可达。</p>
 </blockquote>
-<h4>双防线自动监督钩子</h4>
-<p>模型每次工具调用的参数都会被心虫自动判别（<code>tools/pre-execute</code> + <code>tools/post-execute</code>）：</p>
+<p><strong>子系统全覆盖（115 个）</strong> — 每个引擎子系统一个独立工具：</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>heartflow_sys_&lt;sub&gt;</code> ×115</td>
+<td>每个子系统一个工具，白名单限定在该子系统方法内调用。如 <code>heartflow_sys_psychology</code>（analyzePsychology/classify/checkCrisis/getPAD…）、<code>heartflow_sys_decision</code>（decide/getHistory…）、<code>heartflow_sys_memory</code>（learn/recall/search…）、<code>heartflow_sys_truth</code>、<code>heartflow_sys_dream</code>…</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>全部 131 子系统、1007 公开方法通过 <code>heartflow_route</code> 可达；常用 115 个子系统有独立工具。
+子系统工具在 fullEngine 模式自动生成，引擎升级后新增子系统自动继承。</p>
+</blockquote>
+<h4>三重防线自动监督钩子</h4>
+<p>模型每次工具调用的参数都会被心虫自动判别，用户输入在进入模型前也会被检查（三个标准注入点）：</p>
+<p><strong>第 0 防线 <code>agent/pre-step</code></strong> — <strong>用户输入</strong>进入模型前判别：</p>
+<ul>
+<li><strong><code>block</code> 级</strong>：返回 <code>{kind:&#39;reject&#39;}</code> <strong>拒绝输入</strong>（模型根本不处理仇恨/注入/操控消息）</li>
+</ul>
 <p><strong>前置防线 <code>tools/pre-execute</code></strong> — 工具<strong>执行前</strong>判别参数：</p>
 <ul>
 <li><strong><code>block</code> 级</strong>：返回 <code>{kind:&#39;deny&#39;}</code> <strong>直接拒绝执行</strong>（危险内容/命令在运行前拦下）</li>
@@ -521,11 +542,11 @@ node test/smoke.js # 冒烟测试（49 项）
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1208</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 308</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1223</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 309</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>

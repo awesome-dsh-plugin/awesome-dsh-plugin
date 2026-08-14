@@ -190,57 +190,42 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <h4>余额监控和充值插件</h4>
-<p><code>dsh-wallet</code> 是专门为官方 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web 界面制作的钱包标签。它把真正需要的数字放到输入框旁：官方 DeepSeek 余额、当前会话预估花费、官方与第三方 token 合计、可配置的低余额提醒，以及带首次确认的官方充值入口。</p>
-<h3>为什么做这个插件</h3>
-<p>长时间的 Agent 任务可能消耗数百万 token，但账户余额仍藏在另一个网页里。<code>dsh-wallet</code> 直接在 Harness 工作流里给出答案，同时不注册模型工具、不修改系统提示词，也不会多消耗一个 token。</p>
-<pre><code class="language-text">余额 5.89 · 本场 0.72 · 官 18.8M | 三方 800K · ↗充
+<p><strong>DeepSeek Harness Web 的多供应商钱包标签。</strong></p>
+<p>输入框旁一行常驻标签：官方 DeepSeek 的（余额、本会话花费、token、一键充值、低余额提醒）与第三方合计 token，按供应商分桶记账，永不错位——GLM 会话不会显示 DeepSeek 的余额，DeepSeek 的账单不会拿 GLM 的 token 来算。</p>
+<h3>显示什么</h3>
+<pre><code>余额 5.89 · 本场 0.72 · 官 18.8M | 三方 800K · ↗充
 </code></pre>
-<h3>核心功能</h3>
 <ul>
-<li><strong>实时 DeepSeek 余额</strong>——读取官方账户余额接口，每 60 秒自动刷新，也可手动刷新。</li>
-<li><strong>单会话花费监控</strong>——按缓存命中输入、缓存未命中输入和输出 token 估算当前会话的 DeepSeek 花费；账户余额仍以 DeepSeek 返回值为准。</li>
-<li><strong>按供应商分桶统计</strong>——官方 DeepSeek 与第三方供应商分别累计，其他模型的 token 不会被算进 DeepSeek 账单。</li>
-<li><strong>官方充值跳转</strong>——只打开 <code>https://platform.deepseek.com/top_up</code>，地址不可自定义；首次跳转前会显示域名确认。</li>
-<li><strong>低余额提醒</strong>——阈值可自由设置到两位小数。低于阈值时标签变红并发送一次桌面通知，余额恢复后自动复位。</li>
-<li><strong>会话隔离</strong>——每个会话独立计数；“清除本会话数据”只影响当前对话。</li>
-<li><strong>跟随 Harness 主题</strong>——自动适配浅色与深色主题，点击外部关闭面板，靠近屏幕边缘时自动调整展开方向。</li>
-<li><strong>零模型负担</strong>——不注册工具、不注入提示词、不增加模型 token。</li>
+<li><strong>官方 DeepSeek</strong>——余额（60 秒全局刷新 + 启动快速重试）、本会话花费（官方价格时间线计价，含 2026-08-17 峰谷价）、token 拆分。</li>
+<li><strong>第三方合计</strong>——本会话 token（输入 / 缓存读 / 输出）。不算钱、不猜余额、零配置。</li>
+<li><strong>点开面板</strong>——币种余额拆分、花费与 token 明细、可自由填写的低余额阈值（两位小数、全局持久化）、手动刷新、跳转官方充值页（首次点击显示域名确认，防钓鱼）。</li>
+<li><strong>悬浮窗口</strong>——从面板切出可自由拖动的悬浮钱包窗口（位置跨刷新记忆），或最小化为小圆点；低于阈值时圆点变红。</li>
+<li><strong>低余额提醒</strong>——低于阈值时标签变红呼吸 + 桌面通知一次，余额回升后自动复位。</li>
+<li><strong>跟随主题</strong>——全部使用 <code>--dsw-alias-*</code> 主题变量，浅色/深色主题自动适配；面板点外部自动关闭，靠边自动反向展开。</li>
+<li><strong>清除本会话</strong>——一键只清当前对话的 token/花费记录，其他对话不受影响。</li>
 </ul>
-<h3>截图</h3>
+<h4>截图</h4>
 <table>
 <thead>
 <tr>
-<th>低于阈值：红色提醒</th>
-<th>高于阈值：正常状态</th>
+<th>悬浮窗口（可拖动）</th>
+<th>最小化圆点</th>
+<th>低于阈值（提醒中）</th>
+<th>高于阈值（正常）</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/i18n/../assets/below-threshold.png" alt="低于阈值的钱包标签"></td>
-<td><img src="https://raw.githubusercontent.com/feibi-mochi/deepseek-harness-wallet/main/docs/i18n/../assets/above-threshold.png" alt="正常的钱包标签"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody></table>
-<h3>从 GitHub 安装</h3>
-<p>要求：</p>
-<ul>
-<li>官方 DeepSeek Harness Web profile</li>
-<li>Node.js <code>^22.19.0</code> 或 <code>&gt;=24</code></li>
-<li>已配置 <code>DEEPSEEK_API_KEY</code>，用于查询官方余额</li>
-</ul>
-<pre><code class="language-shell">dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet
-dsh --profile web
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet
 </code></pre>
-<p>随后强制刷新 Harness 页面，钱包标签会出现在输入框旁。</p>
-<h4>更新</h4>
-<pre><code class="language-shell">dsh plugin --profile web update dsh-wallet
-</code></pre>
-<h4>卸载</h4>
-<pre><code class="language-shell">dsh plugin --profile web remove dsh-wallet
-</code></pre>
-<blockquote>
-<p>[!NOTE]
-Token 会按供应商正常统计；官方余额查询需要有效的 DeepSeek API Key。充值按钮只负责打开 DeepSeek 官方网站，登录和支付始终在官方页面完成。</p>
-</blockquote>
-<h3>数据、隐私与信任</h3>
+<p>重启 <code>dsh web</code>，然后强制刷新页面。</p>
+<h3>数据与安全</h3>
 <table>
 <thead>
 <tr>
@@ -249,71 +234,40 @@ Token 会按供应商正常统计；官方余额查询需要有效的 DeepSeek A
 </tr>
 </thead>
 <tbody><tr>
-<td>API Key</td>
-<td>通过 Harness 凭证服务读取，只作为授权头发送到 <code>https://api.deepseek.com/user/balance</code>；插件不会显示或保存 Key。</td>
+<td>Token 计费</td>
+<td>监听 <code>llm/stream</code> 事件，按 provider 分桶（<code>deepseek-official</code> 之外全部归第三方）、按会话隔离，多开会话互不串账。</td>
 </tr>
 <tr>
-<td>钱包数据</td>
-<td>仅保存在本机 <code>$DSH_HOME/storages/wallet.json</code>。</td>
+<td>余额</td>
+<td>凭证库 <code>DEEPSEEK_API_KEY</code> 只在本机流转，仅作为 <code>Authorization</code> 头发往官方 <code>/user/balance</code> 接口。</td>
 </tr>
 <tr>
-<td>Token 统计</td>
-<td>监听 Harness <code>llm/stream</code> 用量数据，按会话与供应商分别累计。</td>
+<td>会话日志</td>
+<td>插件不写入任何事件；数据存于 <code>$DSH_HOME/storages/wallet.json</code>。</td>
 </tr>
 <tr>
-<td>模型侧</td>
-<td>不注册模型工具，不注入任何提示词。</td>
+<td>模型可见性</td>
+<td>不注册工具、不注入提示词、零 token 消耗。</td>
 </tr>
 <tr>
 <td>充值</td>
-<td>只打开硬编码的官方地址 <code>https://platform.deepseek.com/top_up</code>。</td>
+<td>地址硬编码为官方 <code>https://platform.deepseek.com/top_up</code>，不可配置（防钓鱼）。</td>
 </tr>
 </tbody></table>
-<h3>花费估算价格</h3>
-<p>当前 V4 价格表使用 DeepSeek 官方<a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing">模型与价格</a>页面公布的人民币/百万 token 单价：</p>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th align="right">缓存命中输入</th>
-<th align="right">缓存未命中输入</th>
-<th align="right">输出</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>deepseek-v4-flash</code></td>
-<td align="right">¥0.02</td>
-<td align="right">¥1</td>
-<td align="right">¥2</td>
-</tr>
-<tr>
-<td><code>deepseek-v4-pro</code></td>
-<td align="right">¥0.025</td>
-<td align="right">¥3</td>
-<td align="right">¥6</td>
-</tr>
-</tbody></table>
-<p>官方价格可能调整。当前会话花费应视为估算，DeepSeek 返回的账户余额才是权威值。官方价格变化后，欢迎提交 Issue。</p>
-<h3>项目结构</h3>
-<pre><code class="language-text">dsh-wallet/
-├─ index.js                 宿主插件：余额、用量统计与 HTTP 路由
-├─ lib/client.js            Harness Web 钱包标签和控制面板
-├─ cordis.patch.yml         可安装的 Harness profile bundle 补丁
-├─ docs/assets/             公开展示截图
-└─ docs/i18n/README.zh-CN.md
-</code></pre>
-<h3>计划</h3>
+<h3>价格时间线</h3>
+<p>CNY/百万 token，整理自官方公告（缓存写入不计费）：</p>
 <ul>
-<li><input disabled="" type="checkbox"> 余额历史曲线</li>
-<li><input disabled="" type="checkbox"> 可选的第三方供应商价格表</li>
-<li><input disabled="" type="checkbox"> 更多供应商余额接口适配</li>
-<li><input disabled="" type="checkbox"> 针对 Harness 新版本的自动兼容性检查</li>
+<li>2025-02-09 起——deepseek-chat 2/8（缓存读 0.5）、deepseek-reasoner 4/16（缓存读 1）</li>
+<li>2026-05-22 起——v4-flash 1/2（缓存读 0.02）、v4-pro 3/6（缓存读 0.025）</li>
+<li>2026-08-17 起——峰谷价（北京 9:00–12:00 / 14:00–18:00 为高峰）</li>
 </ul>
-<h3>参与贡献</h3>
-<p>欢迎使用英文或中文提交 Bug 与 PR。请勿在 Issue 中上传 API Key、钱包文件、会话日志或账户信息。</p>
-<h3>声明</h3>
-<p>这是独立的社区插件，与 DeepSeek 官方没有隶属或背书关系。DeepSeek 与 DeepSeek Harness 的相关权利归其各自所有者。</p>
-<h3>许可证</h3>
+<h3>Roadmap</h3>
+<ul>
+<li><input disabled="" type="checkbox"> 第三方价格表（按 token 折算花费）</li>
+<li><input disabled="" type="checkbox"> 余额历史曲线</li>
+<li><input disabled="" type="checkbox"> 更多供应商的余额接口适配（如智谱）</li>
+</ul>
+<h3>License</h3>
 <p><a href="https://github.com/feibi-mochi/deepseek-harness-wallet/blob/main/docs/i18n/../../LICENSE">MIT</a></p>
 
     </div>
