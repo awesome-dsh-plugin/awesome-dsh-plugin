@@ -13,6 +13,13 @@
     <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
   </entry>
   <entry>
+    <title>dsh-file-uploads</title>
+    <id>https://github.com/l541402398/dsh-file-uploads</id>
+    <link href="https://github.com/l541402398/dsh-file-uploads"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.</summary>
+  </entry>
+  <entry>
     <title>dsh-balance-meter</title>
     <id>https://github.com/Ghost011118/dsh-balance-meter</id>
     <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/awesome-dsh-plugin/dsh-find-plugin"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.</summary>
-  </entry>
-  <entry>
-    <title>dsh-code-intel</title>
-    <id>https://github.com/lonelymoon87/dsh-code-intel</id>
-    <link href="https://github.com/lonelymoon87/dsh-code-intel"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.</summary>
   </entry>
 </feed>

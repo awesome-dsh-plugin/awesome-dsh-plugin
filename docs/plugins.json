@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 175,
+ "count": 176,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -226,6 +226,18 @@
    },
    "install": "dsh plugin --profile web add github:bill9109/dsh-drag-and-drop",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-file-uploads",
+   "owner": "l541402398",
+   "url": "https://github.com/l541402398/dsh-file-uploads",
+   "category": "ui",
+   "description": {
+    "en": "Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.",
+    "zh": "从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。"
+   },
+   "install": "dsh plugin --profile web add github:l541402398/dsh-file-uploads",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-deeplink",

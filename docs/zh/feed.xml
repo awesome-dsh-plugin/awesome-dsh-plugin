@@ -13,6 +13,13 @@
     <summary>Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。</summary>
   </entry>
   <entry>
+    <title>dsh-file-uploads</title>
+    <id>https://github.com/l541402398/dsh-file-uploads</id>
+    <link href="https://github.com/l541402398/dsh-file-uploads"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。</summary>
+  </entry>
+  <entry>
     <title>dsh-balance-meter</title>
     <id>https://github.com/Ghost011118/dsh-balance-meter</id>
     <link href="https://github.com/Ghost011118/dsh-balance-meter"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/awesome-dsh-plugin/dsh-find-plugin"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。</summary>
-  </entry>
-  <entry>
-    <title>dsh-code-intel</title>
-    <id>https://github.com/lonelymoon87/dsh-code-intel</id>
-    <link href="https://github.com/lonelymoon87/dsh-code-intel"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。</summary>
   </entry>
 </feed>
