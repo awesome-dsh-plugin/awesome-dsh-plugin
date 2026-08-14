@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 144,
+ "count": 145,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -477,6 +477,18 @@
     "zh": "基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-asmemory",
+   "owner": "Xplore-LAB",
+   "url": "https://github.com/Xplore-LAB/dsh-plugin-asmemory",
+   "category": "session",
+   "description": {
+    "en": "Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.",
+    "zh": "动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。"
+   },
+   "install": "dsh plugin --profile web add github:Xplore-LAB/dsh-plugin-asmemory",
    "added": "2026-08-14"
   },
   {

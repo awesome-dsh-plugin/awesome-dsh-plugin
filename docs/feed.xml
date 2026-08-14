@@ -83,6 +83,13 @@
     <summary>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</summary>
   </entry>
   <entry>
+    <title>dsh-plugin-asmemory</title>
+    <id>https://github.com/Xplore-LAB/dsh-plugin-asmemory</id>
+    <link href="https://github.com/Xplore-LAB/dsh-plugin-asmemory"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.</summary>
+  </entry>
+  <entry>
     <title>dsh-interconnect</title>
     <id>https://github.com/Chinesezjc/dsh-interconnect</id>
     <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.</summary>
-  </entry>
-  <entry>
-    <title>dsh-specflow</title>
-    <id>https://github.com/lonelymoon87/dsh-specflow</id>
-    <link href="https://github.com/lonelymoon87/dsh-specflow"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.</summary>
   </entry>
 </feed>
