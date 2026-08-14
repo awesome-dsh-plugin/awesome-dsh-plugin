@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 197,
+ "count": 198,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1904,6 +1904,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:BiBoyang/dsh-im-bridge",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-lark-bridge",
+   "owner": "imetn",
+   "url": "https://github.com/imetn/dsh-lark-bridge",
+   "category": "notify",
+   "description": {
+    "en": "Bidirectional Lark/Feishu controller for DeepSeek Harness with project and session routing, interactive cards, approvals, attachments, and task controls.",
+    "zh": "DeepSeek Harness 的飞书/Lark 双向控制器，支持 Project 与 Session 路由、交互卡片、审批、附件和任务控制。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:imetn/dsh-lark-bridge",
    "added": "2026-08-14"
   },
   {
