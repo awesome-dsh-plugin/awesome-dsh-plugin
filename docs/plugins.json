@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 211,
+ "count": 212,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -2584,6 +2584,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:slywalker2006/dsh-passwords",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "Yuuz12/dsh-webui-auth",
+   "owner": "Yuuz12",
+   "url": "https://github.com/Yuuz12/dsh-webui-auth",
+   "category": "dev",
+   "description": {
+    "en": "WebUI authentication enforced at the HTTP/transport layer: four-layer login gate (resources, plugin bundles, /api, WebSocket), server-side sessions with HttpOnly cookies.",
+    "zh": "WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:Yuuz12/dsh-webui-auth",
    "added": "2026-08-14"
   },
   {
