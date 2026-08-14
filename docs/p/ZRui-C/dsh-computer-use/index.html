@@ -190,13 +190,19 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <h3>Install</h3>
+<h4>Homebrew</h4>
+<pre><code class="language-bash">brew tap zrui-c/tap
+brew trust zrui-c/tap
+brew install --cask dsh-computer-use
+open -a &quot;DSH Computer Use&quot;
+</code></pre>
+<h4>DMG</h4>
 <ol>
 <li>Download the latest <code>DSH-Computer-Use-*-universal.dmg</code> from <a href="https://github.com/ZRui-C/dsh-computer-use/releases/latest">Releases</a>.</li>
 <li>Drag <strong>DSH Computer Use</strong> into <strong>Applications</strong> and open it.</li>
-<li>Authorize <strong>Accessibility</strong> and <strong>Screen Recording</strong> when the setup center asks.</li>
-<li>Select <strong>Install</strong> under <strong>DSH Plugin</strong>, then restart the running DSH Host.</li>
 </ol>
-<p>The official DMG is Universal 2, Developer ID signed, Apple-notarized, and published with a SHA-256 checksum. Users do not need Xcode, Swift, or this source checkout. DSH and Google Chrome must already be installed.</p>
+<p>With either method, authorize <strong>Accessibility</strong> and <strong>Screen Recording</strong>, select <strong>Install</strong> under <strong>DSH Plugin</strong>, then restart the running DSH Host.</p>
+<p>The Homebrew Cask and official DMG install the same Universal 2, Developer ID signed, Apple-notarized app. Users do not need Xcode, Swift, or this source checkout. DSH and Google Chrome must already be installed.</p>
 <h3>What it does</h3>
 <table>
 <thead>
@@ -289,7 +295,7 @@ pnpm run build
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 316</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">jjxjjjjiik-bot/</span><wbr><span class="name">dsh-chat-timeline</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,73 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>English | <a href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline/blob/main/README.md"><strong>简体中文</strong></a></p>
+<p><a href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a></p>
+<p>A <strong>1:1 port of the official DeepSeek web app&#39;s right-side conversation
+navigation rail (ScrollNav)</strong> as a DeepSeek Harness (DSH) plugin — the exact
+ScrollNav UI/UX from <code>chat.deepseek.com</code>&#39;s shipped client, brought to your DSH
+Web chat.</p>
+<blockquote>
+<p>Not affiliated with, endorsed by, or sponsored by DeepSeek.</p>
+</blockquote>
+<h3>Preview</h3>
+<h3>Features</h3>
+<ul>
+<li><strong>Always-visible right rail</strong> — slim fixed vertical rail; every user-sent
+message appears as one indicator line, exactly like the official collapsed state</li>
+<li><strong>Hover to expand</strong> — panel reveals message previews; the item nearest your
+reading position is highlighted in brand blue, tracking scroll in real time</li>
+<li><strong>Click to jump</strong> — smooth-scrolls to the message, loading older history on demand</li>
+<li><strong>Auto-hidden</strong> — disappears when the session has fewer than 2 user messages</li>
+<li><strong>Accessible</strong> — ARIA labels + <code>prefers-reduced-motion</code> support</li>
+</ul>
+<h3>How it works</h3>
+<p>The host half registers the <code>dshChatTimeline</code> session projection that durably
+enumerates all user-sent messages; the client half renders the <code>TimelineRail</code>
+component (mounted in the <code>conversation.input.dock</code> slot, portal-rendered to
+body). Data sources, fastest first: projection → loaded chat nodes → background
+<code>loadOlder</code> loop.</p>
+<h3>Install</h3>
+<h4>One-click (Windows, recommended)</h4>
+<ol>
+<li>Download this repo (green Code button → Download ZIP, or <code>git clone</code>)</li>
+<li>Double-click <strong><code>install.bat</code></strong> — the script copies the plugin, registers
+the config, and runs <code>pnpm install</code> automatically</li>
+<li>Restart <code>dsh web</code> and refresh the browser</li>
+</ol>
+<blockquote>
+<p>The script is idempotent: re-running it won&#39;t re-install.</p>
+</blockquote>
+<h4>Manual (other platforms)</h4>
+<ol>
+<li>Copy the plugin to <code>$DSH_HOME/profiles/web/plugins/dsh-chat-timeline/</code>
+(<code>$DSH_HOME</code> is usually <code>~/.dsh</code>)</li>
+<li>Add <code>&quot;dsh-chat-timeline&quot;: &quot;file:plugins/dsh-chat-timeline&quot;</code> to
+<code>profiles/web/package.json</code>, then run <code>pnpm install</code></li>
+<li>Add to <code>profiles/web/cordis.patch.yml</code>:<pre><code class="language-yaml">- insert:
+    - id: chat-timeline
+      name: dsh-chat-timeline
+</code></pre>
+</li>
+<li>Restart <code>dsh web</code> and refresh the browser</li>
+</ol>
+<h3>Architecture reference</h3>
+<ul>
+<li>Layout/CSS: 1:1 port of the official ScrollNav (extracted from the shipped
+<code>main.css</code>), re-scoped under the <code>dsct_</code> prefix</li>
+<li>Plugin architecture: modeled on <a href="https://github.com/asukasec/dsh-message-preview">asukasec/dsh-message-preview</a> (MIT)</li>
+</ul>
+<h3>License</h3>
+<p>MIT — see <a href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline/blob/main/LICENSE">LICENSE</a>. &quot;DeepSeek&quot; is a trademark of its owner; this
+project is not affiliated with DeepSeek.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,8 +265,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1861</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 866</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>

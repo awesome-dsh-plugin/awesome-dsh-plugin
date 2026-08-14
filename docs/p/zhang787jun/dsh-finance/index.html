@@ -191,92 +191,110 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml"><img src="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome DSH plugin"></a>
-<a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></p>
-<p>Financial research and portfolio risk workflow tools for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
-<p>This plugin adapts the structure of Claude financial research plugins, especially the
-skill-heavy Bigdata.com Claude plugin pattern, into a native DSH bundle:</p>
-<ul>
-<li>a DSH <code>dsh.bundle.patch</code> entry in <code>package.json</code></li>
-<li>a <code>cordis.patch.yml</code> layer</li>
-<li>bundled finance skills</li>
-<li>DSH tools registered through <code>@deepseek-ai/dsh-tools</code></li>
-</ul>
-<p>It does not ship a market-data provider. The tools are designed to make the agent plan,
-cite, and bound financial work without inventing current prices, estimates, filings, or
-brokerage facts.</p>
+<a href="https://github.com/zhang787jun/dsh-finance/blob/main/THIRD_PARTY_NOTICES.md"><img src="https://img.shields.io/badge/license-MIT%20%2B%20Apache--2.0-blue.svg" alt="License: MIT + Apache-2.0"></a></p>
+<p>A finance and accounting plugin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>Version 0.2 is a capability-level DSH adaptation of Anthropic&#39;s official <a href="https://github.com/anthropics/knowledge-work-plugins/tree/main/finance"><code>finance</code> plugin</a>, not merely a finance-themed workflow. It ports the upstream plugin&#39;s eight skills for journal entries, reconciliation, financial statements, variance analysis, close management, SOX testing, and audit support, then adds deterministic DSH validation tools.</p>
+<p>The source baseline is Anthropic Finance <code>1.3.0</code> at commit <a href="https://github.com/anthropics/knowledge-work-plugins/commit/a006314fa00e3b7487f3b6ef7f6b4a216ae777df"><code>a006314</code></a>. This is an independent community adaptation and is not endorsed by Anthropic.</p>
 <p><a href="https://github.com/zhang787jun/dsh-finance/blob/main/README.zh-CN.md">简体中文</a></p>
-<h3>Tools</h3>
+<h3>Upstream parity</h3>
+<table>
+<thead>
+<tr>
+<th>Anthropic Finance skill</th>
+<th>DSH skill</th>
+<th>Coverage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>journal-entry</code></td>
+<td><code>dsh-finance-journal-entry</code></td>
+<td>Accruals, depreciation, prepaids, payroll, revenue entries, support, and review</td>
+</tr>
+<tr>
+<td><code>journal-entry-prep</code></td>
+<td><code>dsh-finance-journal-entry-prep</code></td>
+<td>Standard entry patterns, documentation, approval matrix, and error checks</td>
+</tr>
+<tr>
+<td><code>reconciliation</code></td>
+<td><code>dsh-finance-reconciliation</code></td>
+<td>GL-to-subledger, bank, intercompany, aging, categorization, and escalation</td>
+</tr>
+<tr>
+<td><code>financial-statements</code></td>
+<td><code>dsh-finance-financial-statements</code></td>
+<td>Income statement, balance sheet, cash flow, GAAP/IFRS presentation, and period-end adjustments</td>
+</tr>
+<tr>
+<td><code>variance-analysis</code></td>
+<td><code>dsh-finance-variance-analysis</code></td>
+<td>Price/volume, rate/mix, headcount, spend, materiality, narratives, and waterfalls</td>
+</tr>
+<tr>
+<td><code>close-management</code></td>
+<td><code>dsh-finance-close-management</code></td>
+<td>T+1 to T+5 close calendar, dependencies, critical path, status, and retrospectives</td>
+</tr>
+<tr>
+<td><code>audit-support</code></td>
+<td><code>dsh-finance-audit-support</code></td>
+<td>SOX scoping, assertions, sampling, evidence, workpapers, and deficiency classification</td>
+</tr>
+<tr>
+<td><code>sox-testing</code></td>
+<td><code>dsh-finance-sox-testing</code></td>
+<td>Control matrices, sample selection, test steps, conclusions, and remediation</td>
+</tr>
+</tbody></table>
+<p>All eight skills preserve the upstream workflows and detailed reference content. Claude-specific invocation and connector assumptions were changed for DSH, and every modified file carries an adaptation notice.</p>
+<h3>DSH tools</h3>
+<p>The plugin registers five tools:</p>
 <ul>
-<li><code>finance_research_workflow</code> creates a source-backed workflow for:<ul>
-<li>company briefs</li>
-<li>investment memos</li>
-<li>valuation snapshots</li>
-<li>risk assessments</li>
-<li>earnings quality checks</li>
-<li>catalyst monitors</li>
-<li>sector maps</li>
-<li>macro or country reviews</li>
+<li><code>finance_journal_entry_check</code> validates debit-credit balance, line structure, documentation gaps, and preparer/approver separation. It never authorizes posting.</li>
+<li><code>finance_reconciliation_snapshot</code> calculates adjusted balances, item aging, category totals, stale-item flags, and sign-off readiness. It never authorizes sign-off.</li>
+<li><code>finance_variance_bridge</code> proves that signed drivers bridge base to actual, exposes residuals, and evaluates materiality thresholds.</li>
+<li><code>finance_research_workflow</code> plans source-backed public-market research.</li>
+<li><code>portfolio_risk_snapshot</code> calculates exposure and concentration controls from supplied positions.</li>
 </ul>
-</li>
-<li><code>portfolio_risk_snapshot</code> computes exposure and control flags from user-supplied
-positions, NAV, cash, and optional sector data.</li>
-</ul>
-<h3>Bundled Skills</h3>
-<ul>
-<li><code>dsh-finance-research</code> routes finance requests into the right workflow and enforces
-current-source discipline.</li>
-<li><code>dsh-portfolio-risk</code> reviews user-provided portfolio data for gross/net exposure,
-concentration, cash, and control breaches.</li>
-</ul>
+<p>The last two are DSH extensions retained from version 0.1. They are not presented as part of Anthropic Finance parity.</p>
 <h3>Install</h3>
-<p>Install from GitHub into the DSH web profile:</p>
+<p>Install from GitHub into a DSH profile:</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:zhang787jun/dsh-finance
 </code></pre>
 <p>Restart DSH:</p>
 <pre><code class="language-sh">dsh web
 </code></pre>
-<p>For local development from this checkout:</p>
+<p>For local development:</p>
 <pre><code class="language-sh">pnpm install
 pnpm run check
 dsh plugin --profile web add .
 </code></pre>
-<h3>Example</h3>
-<p>Ask DSH:</p>
-<pre><code class="language-text">Build a valuation snapshot workflow for MSFT. Use current sources only.
+<h3>Example requests</h3>
+<pre><code class="language-text">Prepare the July AP accrual journal entry, show the support, and validate that debits equal credits.
+
+Reconcile the cash GL to the bank statement as of 2026-07-31 and age every open item.
+
+Build the monthly income statement, flag material variances, and reconcile the waterfall drivers.
+
+Create a SOX testing workpaper for the revenue-recognition control for 2026-Q2.
+
+Build a T+5 month-end close plan with owners, dependencies, blockers, and a critical path.
 </code></pre>
-<p>Or provide portfolio inputs:</p>
-<pre><code class="language-json">{
-  &quot;netLiquidation&quot;: 100000,
-  &quot;cash&quot;: 4000,
-  &quot;positions&quot;: [
-    { &quot;symbol&quot;: &quot;MSFT&quot;, &quot;marketValue&quot;: 30000, &quot;sector&quot;: &quot;Technology&quot; },
-    { &quot;symbol&quot;: &quot;GOOGL&quot;, &quot;marketValue&quot;: 25000, &quot;sector&quot;: &quot;Communication Services&quot; },
-    { &quot;symbol&quot;: &quot;SMH&quot;, &quot;marketValue&quot;: 20000, &quot;sector&quot;: &quot;Technology&quot; }
-  ]
-}
-</code></pre>
-<p>The plugin will calculate control flags, but the data itself must come from
-the user, a broker snapshot, or a cited source.</p>
-<h3>Safety Model</h3>
-<p>Financial and market data changes quickly. This plugin deliberately requires
-dated sources for market-sensitive claims and carries unavailable data as an
-explicit limitation.</p>
-<p>It is for research assistance only. It is not investment, legal, tax, or
-accounting advice and is not a recommendation to buy, sell, or hold any
-security.</p>
+<h3>Connectors</h3>
+<p>The skills use tool categories such as <code>~~erp</code>, <code>~~data warehouse</code>, and <code>~~office suite</code>. See <a href="https://github.com/zhang787jun/dsh-finance/blob/main/CONNECTORS.md">CONNECTORS.md</a> and <a href="https://github.com/zhang787jun/dsh-finance/blob/main/connectors.example.json">connectors.example.json</a>.</p>
+<p>Installation does not activate external servers or collect credentials. Without a connected source, DSH must request pasted data or local files and state the resulting evidence limitation.</p>
+<h3>Human approval boundary</h3>
+<p>This plugin prepares and validates analyst work product. It does not post journal entries, lock accounting periods, send reports, sign off reconciliations, approve controls, or make investment decisions. Those actions remain with authorized people in the relevant system.</p>
+<p>All outputs require review by qualified financial professionals before use in reporting, filings, audit documentation, tax work, or investment decisions.</p>
 <h3>Development</h3>
-<pre><code class="language-sh">pnpm install
-pnpm run typecheck
+<pre><code class="language-sh">pnpm run typecheck
 pnpm run test
 pnpm run build
 pnpm run check
 </code></pre>
-<p><code>pnpm run check</code> runs typecheck, tests, build, and <code>npm pack --dry-run</code>.</p>
-<h3>Community</h3>
-<p>This repo uses the <code>dsh-plugin</code> GitHub topic so it can be discovered by DSH
-plugin search tools and the broader DSH plugin community.</p>
-<h3>License</h3>
-<p><a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE">MIT</a></p>
+<p><code>pnpm run check</code> runs type checking, tests, build, and <code>npm pack --dry-run</code>.</p>
+<h3>License and attribution</h3>
+<p>Original code in this repository is MIT licensed. The eight adapted finance skills are derived from Apache-2.0-licensed Anthropic material. See <a href="https://github.com/zhang787jun/dsh-finance/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a> and <a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSES/Apache-2.0.txt">LICENSES/Apache-2.0.txt</a>.</p>
 
     </div>
     <p class="note"><a href="https://github.com/zhang787jun/dsh-finance/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
@@ -294,7 +312,7 @@ plugin search tools and the broader DSH plugin community.</p>
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 316</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">WhitePlusMS/</span><wbr><span class="name">dsh-input-plus</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,110 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/WhitePlusMS/dsh-input-plus/blob/main/README-ZH.md">中文说明</a></p>
+<p>An input composer enhancement plugin for the DSH Web UI. On the Host side, it builds an index of the active workspace. In the browser, it connects to DSH&#39;s official <code>@</code> input trigger so files and directories can be searched and inserted into the composer. Type <code>/h</code> to open a candidate menu of previous prompts from the current Session.</p>
+<p><img src="https://raw.githubusercontent.com/WhitePlusMS/dsh-input-plus/main/docs/image1.png" alt="File reference candidate menu"></p>
+<p><img src="https://raw.githubusercontent.com/WhitePlusMS/dsh-input-plus/main/docs/image2.png" alt="Input history menu"></p>
+<h3>Features</h3>
+<h4><code>@</code> file and directory path selection</h4>
+<p>Type <code>@</code> in the DSH composer, then continue with a file name, directory name, or path fragment. The candidate menu lists files and directories from the current Session workspace. After selection, the draft keeps a plain-text path reference, for example:</p>
+<pre><code class="language-text">@src/contract.ts
+</code></pre>
+<p>The reference contains only the path. Sending the message does not read the file, expand the directory, or generate a directory manifest. When the model needs the target, it can inspect the path with the native workspace tools provided by the current Session.</p>
+<p>After selecting a directory, you can continue with an instruction:</p>
+<pre><code class="language-text">@src Find the code responsible for candidate ranking
+</code></pre>
+<p>The official input-trigger pipeline owns the candidate menu, caret, and write-back behavior. This plugin does not replace the official textarea, send button, or candidate menu, and it does not take over native arrow-key behavior.</p>
+<h4><code>/h</code> input history</h4>
+<p>Type <code>/h</code> in the composer to open the history candidate menu through DSH&#39;s official <code>/</code> input trigger. You can continue typing a keyword to filter the results, for example:</p>
+<pre><code class="language-text">/h
+</code></pre>
+<p>The candidates contain only user prompts that were successfully submitted in the current Session, ordered from most recent to oldest.</p>
+<h3>Installation</h3>
+<p>Requires DSH <code>0.1.0-rc.6</code> or a compatible DSH Web profile. Install through the official DSH profile plugin flow:</p>
+<pre><code class="language-bash">dsh plugin --profile web add https://github.com/WhitePlusMS/dsh-input-plus/archive/refs/tags/v0.0.1.tar.gz
+</code></pre>
+<h3>Configuration</h3>
+<p>The plugin registers the <code>input-plus</code> settings namespace. The options used by workspace indexing and path resolution are:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th align="right">Default</th>
+<th align="right">Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>maxIndexDepth</code></td>
+<td align="right"><code>3</code></td>
+<td align="right"><code>0–10</code></td>
+<td>Maximum workspace indexing depth</td>
+</tr>
+<tr>
+<td><code>maxIndexEntries</code></td>
+<td align="right"><code>200</code></td>
+<td align="right"><code>1–2000</code></td>
+<td>Maximum number of entries retained per candidate index</td>
+</tr>
+<tr>
+<td><code>referenceRoot</code></td>
+<td align="right"><code>&#39;&#39;</code></td>
+<td align="right">Absolute path or empty</td>
+<td>Overrides the current Session workspace; empty uses the Session workspace</td>
+</tr>
+</tbody></table>
+<h3>Development</h3>
+<p>Requirements: Node.js 18+ and pnpm.</p>
+<pre><code class="language-bash">pnpm install
+
+# TypeScript type checking
+pnpm run typecheck
+
+# Run the in-process test suite
+pnpm test
+
+# Build the Host and browser bundles
+pnpm run build
+
+# Check that lib/client.js is synchronized with the source
+pnpm run check:client
+</code></pre>
+<p>The build has two parts:</p>
+<ul>
+<li><code>tsc -p tsconfig.build.json</code> generates the Host code and declaration files;</li>
+<li><code>scripts/build-client.mjs</code> uses the TypeScript Compiler API to generate <code>lib/client.js</code> in-process, avoiding an esbuild service subprocess in restricted environments.</li>
+</ul>
+<h3>Repository layout</h3>
+<pre><code class="language-text">src/
+  index.ts            Host plugin entry, settings, and HTTP routes
+  contract.ts         Minimal Host/Client wire contract
+  host/
+    files.ts          Workspace indexing, matching, and path safety
+    git.ts            Git modification state
+    settings.ts       Settings schema and defaults
+    workspace.ts      Session workspace resolution
+  client/
+    index.ts          Browser plugin entry
+    input-source.ts   @ candidate source and path write-back
+    history-source.ts /h and /history candidate source and two-line menu styles
+    history-recorder.ts Current Session prompt recording
+    find.ts           Client candidate matching and ranking
+    file-icons.ts     Candidate icons
+    input-status.ts   Composer status dock
+scripts/
+  build-client.mjs    Browser bundle builder
+  test-runner.ts      In-process test entry
+</code></pre>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/WhitePlusMS/dsh-input-plus/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,8 +302,8 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1854</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 863</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1861</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 866</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 728</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>

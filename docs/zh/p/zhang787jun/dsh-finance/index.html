@@ -191,30 +191,72 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><a href="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml"><img src="https://github.com/zhang787jun/dsh-finance/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome DSH plugin"></a>
-<a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></p>
-<p>面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的金融研究与组合风控工作流插件。</p>
-<p>这个插件参考 Claude 金融研究插件的组织方式，尤其是 Bigdata.com Claude 插件的
-<code>manifest + skills + MCP/tool</code> 分层，但实现为 DSH 原生 bundle：</p>
+<a href="https://github.com/zhang787jun/dsh-finance/blob/main/THIRD_PARTY_NOTICES.md"><img src="https://img.shields.io/badge/license-MIT%20%2B%20Apache--2.0-blue.svg" alt="License: MIT + Apache-2.0"></a></p>
+<p>面向 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的财务与会计插件。</p>
+<p><code>0.2</code> 版以 Anthropic 官方 <a href="https://github.com/anthropics/knowledge-work-plugins/tree/main/finance"><code>finance</code> 插件</a>为内容基准，不再只是一个泛金融工作流。它完整迁移上游 8 个技能，覆盖日记账、对账、三大报表、差异分析、月结管理、SOX 测试和审计支持，并增加 DSH 原生的确定性校验工具。</p>
+<p>基准版本为 Anthropic Finance <code>1.3.0</code>，固定到 commit <a href="https://github.com/anthropics/knowledge-work-plugins/commit/a006314fa00e3b7487f3b6ef7f6b4a216ae777df"><code>a006314</code></a>。本项目是独立社区适配，不代表 Anthropic 官方背书。</p>
+<p><a href="https://github.com/zhang787jun/dsh-finance/blob/main/README.md">English</a></p>
+<h3>上游能力对照</h3>
+<table>
+<thead>
+<tr>
+<th>Anthropic Finance 技能</th>
+<th>DSH 技能</th>
+<th>覆盖内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>journal-entry</code></td>
+<td><code>dsh-finance-journal-entry</code></td>
+<td>应计、折旧、预付、薪酬、收入分录、支持材料与复核</td>
+</tr>
+<tr>
+<td><code>journal-entry-prep</code></td>
+<td><code>dsh-finance-journal-entry-prep</code></td>
+<td>标准分录模式、文档要求、审批矩阵与常见错误</td>
+</tr>
+<tr>
+<td><code>reconciliation</code></td>
+<td><code>dsh-finance-reconciliation</code></td>
+<td>总账对子账、银行对账、内部往来、账龄、分类与升级</td>
+</tr>
+<tr>
+<td><code>financial-statements</code></td>
+<td><code>dsh-finance-financial-statements</code></td>
+<td>利润表、资产负债表、现金流量表、GAAP/IFRS 展示与期末调整</td>
+</tr>
+<tr>
+<td><code>variance-analysis</code></td>
+<td><code>dsh-finance-variance-analysis</code></td>
+<td>价量、费率/结构、人数、费用、重要性、叙述与瀑布桥接</td>
+</tr>
+<tr>
+<td><code>close-management</code></td>
+<td><code>dsh-finance-close-management</code></td>
+<td>T+1 到 T+5 关账日历、依赖、关键路径、状态与复盘</td>
+</tr>
+<tr>
+<td><code>audit-support</code></td>
+<td><code>dsh-finance-audit-support</code></td>
+<td>SOX 范围、认定、抽样、证据、底稿与缺陷分级</td>
+</tr>
+<tr>
+<td><code>sox-testing</code></td>
+<td><code>dsh-finance-sox-testing</code></td>
+<td>控制矩阵、样本选择、测试步骤、结论与整改</td>
+</tr>
+</tbody></table>
+<p>这 8 个技能保留了上游的完整工作流、模板、检查表和专业参考内容，只针对 DSH 修改了命名、调用方式、连接器边界和人审控制。</p>
+<h3>DSH 工具</h3>
+<p>插件注册 5 个工具：</p>
 <ul>
-<li><code>package.json</code> 声明 <code>dsh.bundle.patch</code></li>
-<li><code>cordis.patch.yml</code> 注入 DSH profile layer</li>
-<li>内置金融研究与组合风控 skills</li>
-<li>通过 <code>@deepseek-ai/dsh-tools</code> 注册 DSH tools</li>
+<li><code>finance_journal_entry_check</code>：检查借贷平衡、分录行结构、文档缺口和制单/审批职责分离，不授权过账。</li>
+<li><code>finance_reconciliation_snapshot</code>：计算调整后余额、账龄、分类汇总、陈旧项和签字准备状态，不授权签字。</li>
+<li><code>finance_variance_bridge</code>：验证驱动因素是否从基准值完整桥接到实际值，显式暴露残差并判断重要性。</li>
+<li><code>finance_research_workflow</code>：规划有来源约束的公开市场研究。</li>
+<li><code>portfolio_risk_snapshot</code>：基于用户提供的持仓计算敞口和集中度控制。</li>
 </ul>
-<p>它不自带实时行情、券商或财务数据库。插件的目标是让 agent 在做金融研究时先规划、
-引用、标注时间戳和边界，避免把过期或无来源的数据说成当前事实。</p>
-<h3>工具</h3>
-<ul>
-<li><code>finance_research_workflow</code>：生成有来源约束的研究工作流，覆盖公司简报、投资 memo、
-估值快照、风险评估、财报质量、催化剂跟踪、行业地图、宏观/国家分析。</li>
-<li><code>portfolio_risk_snapshot</code>：基于用户提供的持仓市值、NAV、现金和行业数据，计算总敞口、
-净敞口、现金比例、集中度和控制线触发项。</li>
-</ul>
-<h3>内置 Skills</h3>
-<ul>
-<li><code>dsh-finance-research</code>：把金融问题路由到合适研究工作流，并强制当前来源纪律。</li>
-<li><code>dsh-portfolio-risk</code>：审查用户提供的组合数据，输出敞口、集中度、现金和风险控制项。</li>
-</ul>
+<p>后两项是 <code>0.1</code> 版保留的 DSH 扩展，不计入 Anthropic Finance 的对等迁移。</p>
 <h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add github:zhang787jun/dsh-finance
 dsh web
@@ -224,15 +266,32 @@ dsh web
 pnpm run check
 dsh plugin --profile web add .
 </code></pre>
-<h3>安全边界</h3>
-<p>金融数据变化很快。凡是价格、市值、估值倍数、盈利预期、持仓、评级、宏观数据等
-市场敏感事实，都必须来自当前会话里的有日期来源。</p>
-<p>本插件仅用于研究辅助，不构成投资、法律、税务或会计建议，也不是买入、卖出或持有
-任何证券的推荐。</p>
-<h3>社区</h3>
-<p>仓库会添加 <code>dsh-plugin</code> GitHub topic，方便 DSH 插件搜索工具和社区索引发现。</p>
-<h3>License</h3>
-<p><a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSE">MIT</a></p>
+<h3>示例请求</h3>
+<pre><code class="language-text">准备 7 月 AP 应计分录，列出支持材料，并验证借贷相等。
+
+按 2026-07-31 将现金总账与银行对账单核对，并给所有未清项计算账龄。
+
+生成月度利润表，标记重大差异，并验证瀑布桥接驱动是否完全勾稽。
+
+为 2026-Q2 收入确认控制生成 SOX 测试底稿。
+
+建立 T+5 月结计划，包含负责人、依赖、阻塞项和关键路径。
+</code></pre>
+<h3>连接器</h3>
+<p>技能使用 <code>~~erp</code>、<code>~~data warehouse</code>、<code>~~office suite</code> 等工具类别。配置边界见 <a href="https://github.com/zhang787jun/dsh-finance/blob/main/CONNECTORS.md">CONNECTORS.md</a> 和 <a href="https://github.com/zhang787jun/dsh-finance/blob/main/connectors.example.json">connectors.example.json</a>。</p>
+<p>安装时不会自动启用外部服务器，也不会收集凭据。没有数据连接时，DSH 必须要求用户粘贴数据或提供本地文件，并明确证据缺口。</p>
+<h3>人工审批边界</h3>
+<p>插件负责准备和校验分析底稿，不负责日记账过账、锁定会计期间、发送报告、对账签字、控制审批或投资决策。这些动作仍由相应系统中的授权人员执行。</p>
+<p>所有输出在用于财报、监管申报、审计底稿、税务或投资决策前，都必须由合格专业人员复核。</p>
+<h3>开发与验证</h3>
+<pre><code class="language-sh">pnpm run typecheck
+pnpm run test
+pnpm run build
+pnpm run check
+</code></pre>
+<p><code>pnpm run check</code> 依次执行类型检查、测试、构建和 <code>npm pack --dry-run</code>。</p>
+<h3>许可与归属</h3>
+<p>仓库原创代码采用 MIT 许可；8 个迁移技能源自 Anthropic 的 Apache 2.0 许可内容。详见 <a href="https://github.com/zhang787jun/dsh-finance/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a> 与 <a href="https://github.com/zhang787jun/dsh-finance/blob/main/LICENSES/Apache-2.0.txt">LICENSES/Apache-2.0.txt</a>。</p>
 
     </div>
     <p class="note"><a href="https://github.com/zhang787jun/dsh-finance/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
@@ -250,7 +309,7 @@ dsh plugin --profile web add .
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 316</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>

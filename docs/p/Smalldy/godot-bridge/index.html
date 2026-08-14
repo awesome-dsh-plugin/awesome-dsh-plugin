@@ -310,6 +310,10 @@ footer p+p{margin-top:.5rem}
 <blockquote>
 <p>The plugin is a standard DSH bundle module: it imports <code>defineTool</code> from <code>@deepseek-ai/dsh-tools</code> and registers via <code>ctx.tools.register</code>. It must be installed through the bundle mechanism above — the harness heals the shared <code>@deepseek-ai/*</code> dependency layer inside the profile&#39;s <code>node_modules</code>, which is what makes the import resolve. Do not copy the file into a user agent preset (<code>~/.dsh/.agent-presets/...</code>); Node cannot resolve <code>@deepseek-ai/dsh-tools</code> from that location.</p>
 </blockquote>
+<h4>Uninstall</h4>
+<pre><code class="language-sh">dsh plugin --profile web remove godot-bridge
+</code></pre>
+<p>Removes the package and its <code>godot-bridge</code> bundle layer from the profile — after a restart the fifteen <code>godot_*</code> tools are gone from sessions on that profile. The standard <code>web</code> profile itself is untouched (this never creates or removes a profile). Stop any running game first with <code>godot_stop_project</code>; the plugin&#39;s unload cleanup also terminates a Godot child it started. Reinstall any time with the <code>add</code> command above.</p>
 <h3>Usage</h3>
 <pre><code class="language-text">godot_run_project            # start the game (default: current workspace)
 godot_ping                   # confirm 9090 answers
@@ -360,7 +364,7 @@ COVERAGE.md / COVERAGE.zh-CN.md   # full tool-by-tool comparison vs godot-mcp
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 316</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>

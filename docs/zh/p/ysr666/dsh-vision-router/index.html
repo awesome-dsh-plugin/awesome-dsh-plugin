@@ -192,7 +192,7 @@ footer p+p{margin-top:.5rem}
 <h3>为什么做这个</h3>
 <p>大多数 DSH 视觉插件把图片“翻译”成一段文字描述再喂给 DeepSeek——有损、一次性、看不见像素。本插件把<strong>原图像素留在视觉模型侧</strong>、把推理留在 DeepSeek 侧，并把“看图”变成一次<strong>普通的工具调用</strong>：</p>
 <ul>
-<li><strong>一条命令安装。</strong> 包自带组合补丁（<code>dsh.bundle.patch</code>）：<code>dsh plugin add</code> 自动完成插件行挂载、准入包装、隐身接管与附件限制放宽——不用手改任何文件。</li>
+<li><strong>一条命令安装，纯增量。</strong> 包自带组合补丁（<code>dsh.bundle.patch</code>）：<code>dsh plugin add</code> 只挂载插件行，不禁用、不覆写任何核心行（issue #34）。</li>
 <li><strong>默认免费。</strong> 视觉链内置 OVHcloud 匿名端点（<code>Qwen2.5-VL-72B-Instruct</code>，免注册、免 Key，每 IP 2 次/分钟）。付费链路（OpenRouter、Pi-AI 供应商、任意 OpenAI 兼容直连端点）是可选升级。</li>
 <li><strong>无 Python。</strong> 整条管线——缩放、定位、裁剪、像素对比、取色、OCR、SVG 矢量化、抠图、HTML 截图——全部基于 sharp / potrace / tesseract / 系统 Chrome。</li>
 <li><strong>可连续多步看图。</strong> 图片轮 = 调用工具的文本轮：<code>vision_ground</code> → <code>vision_crop</code> → <code>vision_describe</code> → <code>vision_pixel_diff</code> → 修复 → 再截图，Agent 可以一直迭代到任务完成。</li>
@@ -275,7 +275,7 @@ footer p+p{margin-top:.5rem}
 </code></pre>
 <p>重启 <code>dsh web</code>——完成，零配置：</p>
 <ul>
-<li>插件的 bundle 补丁自动挂载插件行、接管官方 DeepSeek 路由（隐身模式——模型选择器看起来和原版一模一样）、放宽附件限制到 20MB / 1 亿像素；</li>
+<li>插件的 bundle 补丁只挂载插件行：官方 DeepSeek 路由保持原样，图片入口使用选择器里的「自动识图」包装条目（或你在设置里配置的额外包装）；</li>
 <li>默认视觉链就是内置免费端点；</li>
 <li>全部配置可在 <strong>设置 → 插件 → 插件配置 → 视觉路由（自动识图）</strong> 实时修改。</li>
 </ul>
@@ -381,12 +381,12 @@ vision_html_screenshot source=&quot;page.html&quot; width=1200 height=720
 </blockquote>
 <p>失败会分类（地区 / 风控 / 额度 / 限流 / 上下文 / 网络），最终报错附带建议；<code>429</code> 会尊重 <code>Retry-After</code> 做一次有上限的退避重试。超大上传图在调用前自动压缩（默认预算 400 万像素），保证工具调用不卡。</p>
 <h3>隐身模式</h3>
-<p>默认安装即接管官方 <code>deepseek-official</code> 路由：模型选择器看起来和原版完全一样（同一个 DeepSeek 组、同样的模型名），但每个条目背后都是声明了图片输入的自动识图包装；文字轮交给插件重建的原生 DeepSeek 适配器（读取同一个 <code>llm-deepseek</code> 设置段与凭据）。老会话通过隐藏的 <code>deepseek-vision</code> 别名继续工作。</p>
-<p>想保留官方行，在你的 profile 补丁层（<code>~/.dsh/profiles/&lt;profile&gt;/cordis.patch.yml</code>）覆写即可：</p>
+<p><strong>隐身模式改为显式可选。</strong> 插件永远不会自己禁用官方 <code>llm-deepseek</code> 行（issue #34）。想接管官方 <code>deepseek-official</code> 路由——模型选择器看起来和原版完全一样，但每个条目背后都是声明了图片输入的自动识图包装，文字轮交给插件重建的原生 DeepSeek 适配器——在你自己的 profile 补丁层加上：</p>
 <pre><code class="language-yaml">- id: llm-deepseek
   name: &#39;@deepseek-ai/dsh-llm-deepseek&#39;
+  disabled: true
 </code></pre>
-<p>官方行在场时，插件回退为选择器里可见的「DeepSeek + 自动识图」包装入口——发图前选它即可。安装出问题时同样用这一行恢复。</p>
+<p>不接管时，插件注册选择器里可见的「DeepSeek + 自动识图」（<code>deepseek-vision</code>）包装入口——发图前选它即可；第三方文本路由则在设置卡片的「额外识图包装」里添加。安装出问题时删掉 <code>disabled</code> 行即可恢复。</p>
 <h3>Web 设置</h3>
 <p>Web 配置页在 <strong>设置 → 插件 → 插件配置</strong> 下注册「视觉路由（自动识图）」卡片，样式与内置卡片一致，可实时修改：</p>
 <ul>
@@ -544,7 +544,7 @@ dsh --profile web --dump-config | grep vision-router   # 一行，由 bundle 补
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 316</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
       <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>

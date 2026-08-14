@@ -324,7 +324,7 @@ footer p+p{margin-top:.5rem}
 <li>Keyed IDs are stable only while the private state directory remains available; deleting <code>identity.key</code> intentionally creates a new identifier set.</li>
 <li>A recommendation reflects observed local frequency, not task quality or organizational policy.</li>
 <li>The plugin does not verify that optional products or capabilities are installed or authenticated.</li>
-<li>JSONL data after the byte cap, oversized JSON files, old files, and older files beyond a source limit are intentionally omitted. Compressed Codex <code>.jsonl.zst</code> rollouts are not read in 0.1.4. Claude workflow scripts and dynamic workflow sidecars are deliberately not parsed.</li>
+<li>JSONL files above the byte cap are prefix-sampled within the byte/record bounds; their remaining data, oversized JSON files, old files, and older files beyond a source limit are intentionally omitted. Compressed Codex <code>.jsonl.zst</code> rollouts are not read in 0.1.5. Claude workflow scripts and dynamic workflow sidecars are deliberately not parsed.</li>
 </ul>
 <h3>Development</h3>
 <pre><code class="language-sh">npm install
@@ -350,7 +350,7 @@ npm test
     <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1250</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 313</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 316</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
       <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
