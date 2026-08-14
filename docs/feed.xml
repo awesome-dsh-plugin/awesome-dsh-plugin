@@ -20,6 +20,20 @@
     <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
   </entry>
   <entry>
+    <title>dsh-cc-tui</title>
+    <id>https://github.com/ccch1mneyyy/dsh-cc-tui</id>
+    <link href="https://github.com/ccch1mneyyy/dsh-cc-tui"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</summary>
+  </entry>
+  <entry>
+    <title>DSH-better-sidebar</title>
+    <id>https://github.com/omdsh-dev/DSH-better-sidebar</id>
+    <link href="https://github.com/omdsh-dev/DSH-better-sidebar"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -39,6 +53,13 @@
     <link href="https://github.com/Jesse-njx/dsh-memory"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</summary>
+  </entry>
+  <entry>
+    <title>dsh-interconnect</title>
+    <id>https://github.com/Chinesezjc/dsh-interconnect</id>
+    <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
   </entry>
   <entry>
     <title>dsh-cowork</title>
@@ -74,6 +95,13 @@
     <link href="https://github.com/zp-home/dsh-recommend"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.</summary>
+  </entry>
+  <entry>
+    <title>modlens</title>
+    <id>https://github.com/liustack/modlens</id>
+    <link href="https://github.com/liustack/modlens"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</summary>
   </entry>
   <entry>
     <title>dsh-routines</title>
@@ -116,6 +144,13 @@
     <link href="https://github.com/BiBoyang/dsh-eval-harness"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Evaluation harness for DSH plugins: YAML cases drive real headless agent runs, assert on tool calls, args, results and token usage, with a baseline gate for CI regression.</summary>
+  </entry>
+  <entry>
+    <title>oh-dsh</title>
+    <id>https://github.com/hust-open-atom-club/oh-dsh</id>
+    <link href="https://github.com/hust-open-atom-club/oh-dsh"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Community distribution: TUI, desktop, and Web UI as one bundle with layered installation.</summary>
   </entry>
   <entry>
     <title>dsh-tianshu-tui</title>
@@ -179,40 +214,5 @@
     <link href="https://github.com/omdsh-dev/dsh-annotation"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Select text → annotate → send with your message; replies map back to each annotation.</summary>
-  </entry>
-  <entry>
-    <title>dsh-navbar</title>
-    <id>https://github.com/vlln/dsh-navbar</id>
-    <link href="https://github.com/vlln/dsh-navbar"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Conversation node navigation bar for quick jumps between user messages.</summary>
-  </entry>
-  <entry>
-    <title>dsh-task-status</title>
-    <id>https://github.com/vlln/dsh-task-status</id>
-    <link href="https://github.com/vlln/dsh-task-status"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Background task status bar: progress plus live output tail on the chat page.</summary>
-  </entry>
-  <entry>
-    <title>dsh-web-archive</title>
-    <id>https://github.com/renat3u/dsh-web-archive</id>
-    <link href="https://github.com/renat3u/dsh-web-archive"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Collapse noisy messages (Think, Bash, etc.) in conversations.</summary>
-  </entry>
-  <entry>
-    <title>dsh-spotlight</title>
-    <id>https://github.com/0xsline/dsh-spotlight</id>
-    <link href="https://github.com/0xsline/dsh-spotlight"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Keyboard-first command palette for the DSH Web UI.</summary>
-  </entry>
-  <entry>
-    <title>dsh-101</title>
-    <id>https://github.com/bill9109/dsh-101</id>
-    <link href="https://github.com/bill9109/dsh-101"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Document reading mode for DSH.</summary>
   </entry>
 </feed>

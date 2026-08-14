@@ -18,9 +18,13 @@ Open a PR that adds **one line to each of** `README.md` (English) and `README.zh
 
 Requirements / 要求：
 
-- The repo declares a `dsh.bundle` manifest in `package.json` (this is what makes it installable via `dsh plugin add`). Monorepos qualify if a subpackage declares it. / 仓库的 `package.json` 需声明 `dsh.bundle` manifest（monorepo 子包声明亦可）。
+- The repo declares a `dsh.bundle` manifest in `package.json` (this is what makes it installable via `dsh plugin add`). Monorepos qualify if the root or a subpackage declares it. / 仓库的 `package.json` 需声明 `dsh.bundle` manifest（monorepo 根包或子包声明亦可）。
+- The repo contains real, working code — placeholder, name-squat, or README-only repos don't qualify. / 仓库需有真实可用的代码——占位仓库、纯 README 仓库不收。
+- The project is actively maintained. Entries that go dead may be removed in periodic cleanups. / 项目处于活跃维护状态；失效项目会在定期清理中移除。
 - Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your repo. / 为仓库添加 `dsh-plugin` topic。
 - Descriptions state what the plugin does — no superlatives or marketing. / 描述只说功能，不带营销词。
+
+Maintainers also add notable plugins directly — the list grows through both community PRs and editorial curation. / 维护者也会主动收录值得关注的插件——列表由社区 PR 与编辑精选共同生长。
 
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
 

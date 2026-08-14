@@ -20,6 +20,20 @@
     <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
   </entry>
   <entry>
+    <title>dsh-cc-tui</title>
+    <id>https://github.com/ccch1mneyyy/dsh-cc-tui</id>
+    <link href="https://github.com/ccch1mneyyy/dsh-cc-tui"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</summary>
+  </entry>
+  <entry>
+    <title>DSH-better-sidebar</title>
+    <id>https://github.com/omdsh-dev/DSH-better-sidebar</id>
+    <link href="https://github.com/omdsh-dev/DSH-better-sidebar"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -39,6 +53,13 @@
     <link href="https://github.com/Jesse-njx/dsh-memory"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</summary>
+  </entry>
+  <entry>
+    <title>dsh-interconnect</title>
+    <id>https://github.com/Chinesezjc/dsh-interconnect</id>
+    <link href="https://github.com/Chinesezjc/dsh-interconnect"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</summary>
   </entry>
   <entry>
     <title>dsh-cowork</title>
@@ -74,6 +95,13 @@
     <link href="https://github.com/zp-home/dsh-recommend"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。</summary>
+  </entry>
+  <entry>
+    <title>modlens</title>
+    <id>https://github.com/liustack/modlens</id>
+    <link href="https://github.com/liustack/modlens"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</summary>
   </entry>
   <entry>
     <title>dsh-routines</title>
@@ -116,6 +144,13 @@
     <link href="https://github.com/BiBoyang/dsh-eval-harness"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。</summary>
+  </entry>
+  <entry>
+    <title>oh-dsh</title>
+    <id>https://github.com/hust-open-atom-club/oh-dsh</id>
+    <link href="https://github.com/hust-open-atom-club/oh-dsh"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</summary>
   </entry>
   <entry>
     <title>dsh-tianshu-tui</title>
@@ -179,40 +214,5 @@
     <link href="https://github.com/omdsh-dev/dsh-annotation"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>选中文字→批注→随消息发送，回复按批注逐条对照。</summary>
-  </entry>
-  <entry>
-    <title>dsh-navbar</title>
-    <id>https://github.com/vlln/dsh-navbar</id>
-    <link href="https://github.com/vlln/dsh-navbar"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>对话节点导航条，右缘节点串快速跳转 user 消息。</summary>
-  </entry>
-  <entry>
-    <title>dsh-task-status</title>
-    <id>https://github.com/vlln/dsh-task-status</id>
-    <link href="https://github.com/vlln/dsh-task-status"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>后台任务状态条：对话页任务进度 + 实时输出 tail。</summary>
-  </entry>
-  <entry>
-    <title>dsh-web-archive</title>
-    <id>https://github.com/renat3u/dsh-web-archive</id>
-    <link href="https://github.com/renat3u/dsh-web-archive"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>折叠对话中的 Think、Bash 等「无用消息」。</summary>
-  </entry>
-  <entry>
-    <title>dsh-spotlight</title>
-    <id>https://github.com/0xsline/dsh-spotlight</id>
-    <link href="https://github.com/0xsline/dsh-spotlight"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>键盘优先的命令面板（command palette）。</summary>
-  </entry>
-  <entry>
-    <title>dsh-101</title>
-    <id>https://github.com/bill9109/dsh-101</id>
-    <link href="https://github.com/bill9109/dsh-101"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>DSH 文档阅读模式。</summary>
   </entry>
 </feed>
