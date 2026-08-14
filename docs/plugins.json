@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 181,
+ "count": 182,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1293,6 +1293,18 @@
     "zh": "dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。"
    },
    "install": "dsh plugin --profile web add github:Sanqi-normal/dsh-webui-market-plugin",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-trio",
+   "owner": "huey1in",
+   "url": "https://github.com/huey1in/trio",
+   "category": "tools",
+   "description": {
+    "en": "Browser automation (Playwright) with a live view, an MCP server exposing DSH agents to any MCP client, and GitHub issue/PR/webhook review tools.",
+    "zh": "浏览器自动化（Playwright，带实时画面）+ MCP Server（把 DSH agent 暴露给任何 MCP 客户端）+ GitHub issue/PR/webhook 评审工具。"
+   },
+   "install": "dsh plugin --profile web add github:huey1in/trio",
    "added": "2026-08-14"
   },
   {
