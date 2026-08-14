@@ -631,6 +631,18 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/lsz-asd/dsh-plugin-device-info": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/lsz-asd/dsh-plugin-session-delete": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/Luaphes/dsh-web-attention-badge": {
   "npm": "dsh-web-attention-badge",
   "checkedAt": "2026-08-14"

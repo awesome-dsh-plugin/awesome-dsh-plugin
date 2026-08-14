@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 更喜欢对话式？装 [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme)，想要什么插件直接问 agent（`dsh plugin --profile web add dsh-find-plugin`）。
 
-**309** 个插件 · 欢迎 [PR](#贡献)
+**312** 个插件 · 欢迎 [PR](#贡献)
 
 ## 目录
 

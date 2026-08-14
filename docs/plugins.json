@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 309,
+ "count": 312,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1507,6 +1507,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-plugin-session-delete",
+   "owner": "lsz-asd",
+   "url": "https://github.com/lsz-asd/dsh-plugin-session-delete",
+   "page": "https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-session-delete/",
+   "category": "session",
+   "description": {
+    "en": "Delete DSH sessions from the web UI and desktop client: header danger button and session-row menu item with a risk-consent dialog; host endpoint and agent tool remove the session log, projection cache, and workspace accounting.",
+    "zh": "在 Web UI 与桌面客户端中删除 DSH 会话：头部危险按钮 + 会话行菜单项，风险确认弹窗，宿主端点与 agent 工具同步清理会话日志、投影缓存与工作区记账。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:lsz-asd/dsh-plugin-session-delete",
+   "added": "2026-08-14"
+  },
+  {
    "name": "distill",
    "owner": "LoserFox",
    "url": "https://github.com/LoserFox/distill",
@@ -2944,6 +2959,21 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-tcm",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-device-info",
+   "owner": "lsz-asd",
+   "url": "https://github.com/lsz-asd/dsh-plugin-device-info",
+   "page": "https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-device-info/",
+   "category": "tools",
+   "description": {
+    "en": "Read-only Windows device information tools: one agent tool per Win32 device category (time, system, cpu, memory, disk, gpu, network, battery, processes, usb, audio, printers) via WMI/CIM and Node os collectors.",
+    "zh": "只读的 Windows 设备信息工具：每个 Win32 设备类别一个 agent 工具（时间、系统、CPU、内存、磁盘、GPU、网络、电池、进程、USB、音频、打印机），基于 WMI/CIM 与 Node os 采集。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:lsz-asd/dsh-plugin-device-info",
    "added": "2026-08-14"
   },
   {
@@ -4414,6 +4444,21 @@
    "npm": "dsh-lan-access",
    "stars": 2,
    "install": "dsh plugin --profile web add dsh-lan-access",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-chameleon#bundle",
+   "owner": "lsz-asd",
+   "url": "https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle",
+   "page": "https://awesome-dsh-plugin.com/p/lsz-asd/dsh-chameleon--bundle/",
+   "category": "dev",
+   "description": {
+    "en": "Self-editing desktop workbench for DeepSeek Harness: a full dsh web replica with an edit mode in which the agent modifies the workbench (patch layers, plugins, UI) with hot reload.",
+    "zh": "可自修改的 DeepSeek Harness 桌面工作台：完整 dsh web 副本 + 编辑模式，agent 在对话中实时修改工作台（补丁层、插件、UI）并热更新生效。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:lsz-asd/dsh-chameleon#path:/bundle",
    "added": "2026-08-14"
   },
   {
