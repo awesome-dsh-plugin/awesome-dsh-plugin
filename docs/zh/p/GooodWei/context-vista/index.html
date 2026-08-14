@@ -242,7 +242,7 @@ npx @deepseek-ai/dsh web
             output: 13.5                    #         输出
 
     &quot;https://api.openai.com/v1&quot;:            # 路由②：OpenAI（ChatGPT），美元 + 无峰谷
-      currency: &quot;__P_README_SECTION__quot;                         #   本 API 的计价货币单位
+      currency: &quot;$&quot;                         #   本 API 的计价货币单位
       models:                               #   无 timezone/peakWindows → 直接走平坦价
         &quot;gpt-5.5&quot;:                          #     模型名
           hit: 2.5                          #       输入 · 命中缓存，每百万 tokens

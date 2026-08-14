@@ -349,7 +349,7 @@ dsh plugin --profile &lt;name&gt; add ./dsh-doublecheck-0.5.0.tgz
     reportMutationTools: [&#39;edit&#39;, &#39;write&#39;]
     reportTestFilePatterns:
       - &#39;(^|[\\/])(tests?|__tests__|specs?)([\\/]|$)&#39;
-      - &#39;\\.(test|spec)\\.[A-Za-z0-9]+__P_README_SECTION__#39;
+      - &#39;\\.(test|spec)\\.[A-Za-z0-9]+$&#39;
 
 - id: doublecheck-guard
   config:
@@ -373,7 +373,7 @@ dsh plugin --profile &lt;name&gt; add ./dsh-doublecheck-0.5.0.tgz
       - &#39;(?:^|[;&amp;|]\s*)(?:node\s+--test(?:\s|$))&#39;
     testFilePatterns:
       - &#39;(^|[\\/])(tests?|__tests__|specs?)([\\/]|$)&#39;
-      - &#39;\\.(test|spec)\\.[A-Za-z0-9]+__P_README_SECTION__#39;
+      - &#39;\\.(test|spec)\\.[A-Za-z0-9]+$&#39;
 </code></pre>
 <h4><code>intensity</code></h4>
 <table>

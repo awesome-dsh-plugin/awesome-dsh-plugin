@@ -60,10 +60,11 @@ const N = ordered.length
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
-const today0 = new Date().toISOString().slice(0, 10)
-for (const e of ordered) if (!dates[e.url]) dates[e.url] = today0
+const nowIso = new Date().toISOString()
+for (const e of ordered) if (!dates[e.url]) dates[e.url] = nowIso
 fs.writeFileSync(DATES_FILE, JSON.stringify(Object.fromEntries(Object.entries(dates).sort()), null, 1))
-for (const e of ordered) e.added = dates[e.url]
+const isoTs = (s) => (s.includes('T') ? s : s + 'T00:00:00Z')
+for (const e of ordered) { e.addedAt = dates[e.url]; e.added = e.addedAt.slice(0, 10) }
 
 // derive repo/subdir install specs and the detail-page slug once
 for (const e of ordered) {
@@ -161,22 +162,22 @@ const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
   let page = master
-  page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${jsonld(ORIGIN + loc.urlPath)}</script>`)
-  page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, `$1\n\n${buildRows(loc)}\n\n  $2`)
-  page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, `$1\n${buildChips(loc)}\n    $2`)
+  page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${jsonld(ORIGIN + loc.urlPath)}</script>`)
+  page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc)}\n\n  ${b}`)
+  page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChips(loc)}\n    ${b}`)
   page = page
-    .replaceAll('__LANG__', loc.htmlLang)
-    .replaceAll('__TITLE__', loc.TITLE)
-    .replaceAll('__DESC__', loc.DESC.replace('{N}', N))
-    .replaceAll('__URL__', ORIGIN + loc.urlPath)
-    .replaceAll('__HREFLANGS__', hreflangs)
-    .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
-    .replaceAll('__LOCALE_LINKS__', localeLinks(loc))
-    .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
-    .replaceAll('__HOME__', loc.urlPath)
-    .replaceAll('__LANG_REDIRECT__', langRedirect(loc))
-    .replaceAll('__FEED__', loc.feed)
-  for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
+    .replaceAll('__LANG__', () => loc.htmlLang)
+    .replaceAll('__TITLE__', () => loc.TITLE)
+    .replaceAll('__DESC__', () => loc.DESC.replace('{N}', N))
+    .replaceAll('__URL__', () => ORIGIN + loc.urlPath)
+    .replaceAll('__HREFLANGS__', () => hreflangs)
+    .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
+    .replaceAll('__LOCALE_LINKS__', () => localeLinks(loc))
+    .replaceAll('__SEARCH_PH__', () => loc.SEARCH_PH)
+    .replaceAll('__HOME__', () => loc.urlPath)
+    .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
+    .replaceAll('__FEED__', () => loc.feed)
+  for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
 }
@@ -200,22 +201,22 @@ for (const loc of LOCALES) {
       `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/">`,
     ].join('\n')
     let page = master
-    page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${catJsonld(url, id)}</script>`)
-    page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, `$1\n\n${buildRows(loc, id)}\n\n  $2`)
-    page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, `$1\n${buildChipLinks(loc, id)}\n    $2`)
+    page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${catJsonld(url, id)}</script>`)
+    page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id)}\n\n  ${b}`)
+    page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChipLinks(loc, id)}\n    ${b}`)
     page = page
-      .replaceAll('__LANG__', loc.htmlLang)
-      .replaceAll('__TITLE__', loc.CAT_TITLE.replace('{CAT}', loc.categories[id]))
-      .replaceAll('__DESC__', loc.CAT_DESC.replace('{CAT}', loc.categories[id]).replace('{N}', n))
-      .replaceAll('__URL__', url)
-      .replaceAll('__HREFLANGS__', catHreflangs)
-      .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
-      .replaceAll('__LOCALE_LINKS__', LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}${id}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
-      .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
-    .replaceAll('__HOME__', loc.urlPath)
-      .replaceAll('__LANG_REDIRECT__', '')
-      .replaceAll('__FEED__', loc.feed)
-    for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
+      .replaceAll('__LANG__', () => loc.htmlLang)
+      .replaceAll('__TITLE__', () => loc.CAT_TITLE.replace('{CAT}', loc.categories[id]))
+      .replaceAll('__DESC__', () => loc.CAT_DESC.replace('{CAT}', loc.categories[id]).replace('{N}', n))
+      .replaceAll('__URL__', () => url)
+      .replaceAll('__HREFLANGS__', () => catHreflangs)
+      .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
+      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}${id}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
+      .replaceAll('__SEARCH_PH__', () => loc.SEARCH_PH)
+    .replaceAll('__HOME__', () => loc.urlPath)
+      .replaceAll('__LANG_REDIRECT__', () => '')
+      .replaceAll('__FEED__', () => loc.feed)
+    for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
@@ -322,27 +323,27 @@ ${readmeHtml}
 
     let page = detailMaster
     page = page
-      .replaceAll('__P_README_SECTION__', readmeSection)
-      .replaceAll('__LANG__', loc.htmlLang)
-      .replaceAll('__TITLE__', esc(loc.P_TITLE.replace('{NAME}', e.name).replace('{CAT}', loc.categories[e.cat])))
-      .replaceAll('__DESC__', esc(metaDesc))
-      .replaceAll('__URL__', url)
-      .replaceAll('__HREFLANGS__', dHreflangs)
-      .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
-      .replaceAll('__JSONLD__', jsonldDetail)
-      .replaceAll('__HOME__', loc.urlPath)
-      .replaceAll('__LOCALE_LINKS__', LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
-      .replaceAll('__CAT_URL__', catUrl)
-      .replaceAll('__CAT_NAME__', loc.categories[e.cat])
-      .replaceAll('__P_SHORT__', esc(short))
-      .replaceAll('__P_H1__', h1)
-      .replaceAll('__P_SPECS__', specs)
-      .replaceAll('__P_DESC__', esc(desc))
-      .replaceAll('__P_INSTALL__', install)
-      .replaceAll('__P_INSTALL_NOTE__', loc.strings.INSTALL_NOTE)
-      .replaceAll('__P_LINKS__', links)
-      .replaceAll('__P_RELATED__', related)
-    for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
+      .replaceAll('__P_README_SECTION__', () => readmeSection)
+      .replaceAll('__LANG__', () => loc.htmlLang)
+      .replaceAll('__TITLE__', () => esc(loc.P_TITLE.replace('{NAME}', e.name).replace('{CAT}', loc.categories[e.cat])))
+      .replaceAll('__DESC__', () => esc(metaDesc))
+      .replaceAll('__URL__', () => url)
+      .replaceAll('__HREFLANGS__', () => dHreflangs)
+      .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
+      .replaceAll('__JSONLD__', () => jsonldDetail)
+      .replaceAll('__HOME__', () => loc.urlPath)
+      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
+      .replaceAll('__CAT_URL__', () => catUrl)
+      .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
+      .replaceAll('__P_SHORT__', () => esc(short))
+      .replaceAll('__P_H1__', () => h1)
+      .replaceAll('__P_SPECS__', () => specs)
+      .replaceAll('__P_DESC__', () => esc(desc))
+      .replaceAll('__P_INSTALL__', () => install)
+      .replaceAll('__P_INSTALL_NOTE__', () => loc.strings.INSTALL_NOTE)
+      .replaceAll('__P_LINKS__', () => links)
+      .replaceAll('__P_RELATED__', () => related)
+    for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = `${loc.out.replace(/index\.html$/, '')}p/${e.slug}`
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
@@ -372,19 +373,19 @@ ${readmeHtml}
 
 // Atom feeds: newest 30 entries per locale
 for (const loc of LOCALES) {
-  const recent = [...ordered].sort((a, b2) => b2.added < a.added ? -1 : b2.added > a.added ? 1 : 0).slice(0, 30)
+  const recent = [...ordered].sort((a, b2) => b2.addedAt < a.addedAt ? -1 : b2.addedAt > a.addedAt ? 1 : 0).slice(0, 30)
   const feed = `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>${esc(loc.TITLE)}</title>
   <id>${ORIGIN}${loc.urlPath}</id>
   <link href="${ORIGIN}${loc.urlPath}"/>
   <link rel="self" href="${ORIGIN}${loc.feed}"/>
-  <updated>${[...ordered].map((e) => e.added).sort().pop()}T00:00:00Z</updated>
+  <updated>${isoTs([...ordered].map((e) => e.addedAt).sort().pop())}</updated>
 ${recent.map((e) => `  <entry>
     <title>${esc(e.name)}</title>
     <id>${e.url}</id>
     <link href="${e.url}"/>
-    <updated>${e.added}T00:00:00Z</updated>
+    <updated>${isoTs(e.addedAt)}</updated>
     <summary>${esc(e.descs[loc.code])}</summary>
   </entry>`).join('\n')}
 </feed>
