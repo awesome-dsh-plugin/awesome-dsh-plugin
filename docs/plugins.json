@@ -5342,7 +5342,7 @@
     "zh": "DSH Web UI 桌面宠物：25 个透明动画、屏幕漫游、点击反应与拖拽，附可复现的素材生成链。"
    },
    "npm": "dsh-pet",
-   "stars": 8,
+   "stars": 9,
    "install": "dsh plugin --profile web add dsh-pet",
    "added": "2026-08-14"
   },
