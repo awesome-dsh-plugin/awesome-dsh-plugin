@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 312,
+ "count": 316,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -62,7 +62,7 @@
     "zh": "Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。"
    },
    "npm": "dsh-web-mobile-fix",
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add dsh-web-mobile-fix",
    "added": "2026-08-14"
   },
@@ -77,7 +77,7 @@
     "zh": "Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。"
    },
    "npm": "dsh-web-lan-access",
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add dsh-web-lan-access",
    "added": "2026-08-14"
   },
@@ -122,7 +122,7 @@
     "zh": "上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。"
    },
    "npm": "dsh-context",
-   "stars": null,
+   "stars": 20,
    "install": "dsh plugin --profile web add dsh-context",
    "added": "2026-08-14"
   },
@@ -152,7 +152,7 @@
     "zh": "一键提示词增强：独立 LLM 调用把模糊草稿改写为更强的提示词，不满意可撤回。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer",
    "added": "2026-08-14"
   },
@@ -167,7 +167,7 @@
     "zh": "DeepSeek Harness 的终端 UI（TUI）。"
    },
    "npm": null,
-   "stars": 131,
+   "stars": 132,
    "install": "dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui",
    "added": "2026-08-13"
   },
@@ -257,7 +257,7 @@
     "zh": "OpenPencil 设计预览与编辑插件。"
    },
    "npm": "@zseven-w/dsh-openpencil",
-   "stars": 64,
+   "stars": 65,
    "install": "dsh plugin --profile web add @zseven-w/dsh-openpencil",
    "added": "2026-08-13"
   },
@@ -272,7 +272,7 @@
     "zh": "对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。"
    },
    "npm": null,
-   "stars": 79,
+   "stars": 80,
    "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-visualize",
    "added": "2026-08-13"
   },
@@ -347,7 +347,7 @@
     "zh": "对话节点导航条，右缘节点串快速跳转 user 消息。"
    },
    "npm": null,
-   "stars": 14,
+   "stars": 15,
    "install": "dsh plugin --profile web add github:vlln/dsh-navbar",
    "added": "2026-08-13"
   },
@@ -617,7 +617,7 @@
     "zh": "输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。"
    },
    "npm": null,
-   "stars": 11,
+   "stars": 12,
    "install": "dsh plugin --profile web add github:Ghost011118/dsh-balance-meter",
    "added": "2026-08-14"
   },
@@ -722,7 +722,7 @@
     "zh": "Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。"
    },
    "npm": null,
-   "stars": 829,
+   "stars": 835,
    "install": "dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI",
    "added": "2026-08-14"
   },
@@ -737,7 +737,7 @@
     "zh": "侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。"
    },
    "npm": null,
-   "stars": 705,
+   "stars": 709,
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
    "added": "2026-08-14"
   },
@@ -827,7 +827,7 @@
     "zh": "DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。"
    },
    "npm": null,
-   "stars": 1766,
+   "stars": 1782,
    "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web-ui",
    "added": "2026-08-14"
   },
@@ -1142,7 +1142,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。"
    },
    "npm": null,
-   "stars": 532,
+   "stars": 535,
    "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale",
    "added": "2026-08-14"
   },
@@ -1172,7 +1172,7 @@
     "zh": "Claude 风格皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude",
    "added": "2026-08-14"
   },
@@ -1202,7 +1202,7 @@
     "zh": "对话回退：基于持久 Change Ledger 回滚会话与工作区状态。"
    },
    "npm": null,
-   "stars": 35,
+   "stars": 36,
    "install": "dsh plugin --profile web add github:Anionex/dsh-turn-rewind",
    "added": "2026-08-13"
   },
@@ -1472,7 +1472,7 @@
     "zh": "持久化记录每个会话的 Token 用量，在设置页提供 provider/model 统计与最近 52 周活跃度热力图。"
    },
    "npm": null,
-   "stars": 0,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:LeemanCheung/dsh-token-usage",
    "added": "2026-08-14"
   },
@@ -1517,7 +1517,7 @@
     "zh": "在 Web UI 与桌面客户端中删除 DSH 会话：头部危险按钮 + 会话行菜单项，风险确认弹窗，宿主端点与 agent 工具同步清理会话日志、投影缓存与工作区记账。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 3,
    "install": "dsh plugin --profile web add github:lsz-asd/dsh-plugin-session-delete",
    "added": "2026-08-14"
   },
@@ -1777,6 +1777,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-memoria-extra",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-memoria-extra",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-memoria-extra/",
+   "category": "memory",
+   "description": {
+    "en": "Advanced memoria tools: session context injection (profile + recall), recent decisions, health report, namespace allowlist, memory relation graph, and entity search; companion to dsh-memoria.",
+    "zh": "memoria 进阶工具：会话上下文注入（画像+召回）、近期决策、健康报告、命名空间白名单、记忆关系图与实体搜索；dsh-memoria 的伴生插件。"
+   },
+   "npm": null,
+   "stars": 0,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-memoria-extra",
+   "added": "2026-08-14"
+  },
+  {
    "name": "blender",
    "owner": "CheshireJCat",
    "url": "https://github.com/CheshireJCat/blender",
@@ -1802,7 +1817,7 @@
     "zh": "为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。"
    },
    "npm": null,
-   "stars": 36,
+   "stars": 37,
    "install": "dsh plugin --profile web add github:ysr666/dsh-vision-router",
    "added": "2026-08-14"
   },
@@ -1952,7 +1967,7 @@
     "zh": "DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add github:ZRui-C/dsh-computer-use",
    "added": "2026-08-14"
   },
@@ -2357,7 +2372,7 @@
     "zh": "DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。"
    },
    "npm": "dsh-recommend",
-   "stars": 10,
+   "stars": 11,
    "install": "dsh plugin --profile web add dsh-recommend",
    "added": "2026-08-14"
   },
@@ -2372,7 +2387,7 @@
     "zh": "为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。"
    },
    "npm": "@liustack/modlens",
-   "stars": 1199,
+   "stars": 1208,
    "install": "dsh plugin --profile web add @liustack/modlens",
    "added": "2026-08-14"
   },
@@ -2387,7 +2402,7 @@
     "zh": "装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。"
    },
    "npm": "dshmarket",
-   "stars": 22,
+   "stars": 23,
    "install": "dsh plugin --profile web add dshmarket",
    "added": "2026-08-14"
   },
@@ -2432,7 +2447,7 @@
     "zh": "会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。"
    },
    "npm": "dsh-find-plugin",
-   "stars": 11,
+   "stars": 12,
    "install": "dsh plugin --profile web add dsh-find-plugin",
    "added": "2026-08-14"
   },
@@ -2672,7 +2687,7 @@
     "zh": "纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。"
    },
    "npm": "@liustack/modsearch",
-   "stars": 85,
+   "stars": 86,
    "install": "dsh plugin --profile web add @liustack/modsearch",
    "added": "2026-08-14"
   },
@@ -2717,7 +2732,7 @@
     "zh": "Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。"
    },
    "npm": null,
-   "stars": 80,
+   "stars": 81,
    "install": "dsh plugin --profile web add github:Lum1104/dsh-browser",
    "added": "2026-08-14"
   },
@@ -2732,7 +2747,7 @@
     "zh": "dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。"
    },
    "npm": "@sanqi-normal/dsh-webui-market-plugin",
-   "stars": 15,
+   "stars": 16,
    "install": "dsh plugin --profile web add @sanqi-normal/dsh-webui-market-plugin",
    "added": "2026-08-14"
   },
@@ -2972,8 +2987,38 @@
     "zh": "只读的 Windows 设备信息工具：每个 Win32 设备类别一个 agent 工具（时间、系统、CPU、内存、磁盘、GPU、网络、电池、进程、USB、音频、打印机），基于 WMI/CIM 与 Node os 采集。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add github:lsz-asd/dsh-plugin-device-info",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-codebase-memory",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-codebase-memory",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-codebase-memory/",
+   "category": "tools",
+   "description": {
+    "en": "Code knowledge graph bridge for codebase-memory-mcp: semantic symbol search (BM25), source snippets, architecture overview with Leiden communities, call/data-flow/cross-service traces, graph-augmented grep.",
+    "zh": "codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。"
+   },
+   "npm": null,
+   "stars": 0,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-codebase-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-nuphus-mcp",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-nuphus-mcp",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-nuphus-mcp/",
+   "category": "tools",
+   "description": {
+    "en": "Desktop and browser automation bridge (36 tools): window/screen/mouse/keyboard control with PaddleOCR element perception, Chrome CDP browsing with accessibility snapshots.",
+    "zh": "桌面 + 浏览器自动化桥（36 个工具）：窗口/屏幕/鼠标/键盘控制配 PaddleOCR 元素感知，Chrome CDP 浏览配无障碍快照。"
+   },
+   "npm": null,
+   "stars": 0,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-nuphus-mcp",
    "added": "2026-08-14"
   },
   {
@@ -3017,7 +3062,7 @@
     "zh": "设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:YTxue/dsh-skill-manager-ytxue",
    "added": "2026-08-14"
   },
@@ -3062,7 +3107,7 @@
     "zh": "AgentTeams 多智能体团队。"
    },
    "npm": null,
-   "stars": 230,
+   "stars": 231,
    "install": "dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams",
    "added": "2026-08-13"
   },
@@ -3377,7 +3422,7 @@
     "zh": "回合完成桌面通知，按结果分控 + 关键词过滤。"
    },
    "npm": null,
-   "stars": 37,
+   "stars": 38,
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-notification",
    "added": "2026-08-13"
   },
@@ -3542,7 +3587,7 @@
     "zh": "飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 4,
    "install": "dsh plugin --profile web add github:yeruizhi/dsh-lark-meeting-notifier",
    "added": "2026-08-14"
   },
@@ -3767,7 +3812,7 @@
     "zh": "DSH 关键词路由与隔离生图插件：确定性关键词路由、白名单模型切换与隔离的 image_gen 生图通道。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 0,
    "install": "dsh plugin --profile web add github:superboy911/dsh-model-router",
    "added": "2026-08-14"
   },
@@ -3962,7 +4007,7 @@
     "zh": "把每轮工具计数与粗粒度验证信号写入本地 JSONL，不保存提示词、工具参数或结果正文。"
    },
    "npm": "dsh-verification-receipt",
-   "stars": 2,
+   "stars": 3,
    "install": "dsh plugin --profile web add dsh-verification-receipt",
    "added": "2026-08-14"
   },
@@ -3977,7 +4022,7 @@
     "zh": "把工具结果与会话事件的 receipt 写入本地哈希链 JSONL，不保存提示词、工具参数、结果正文或原始会话 ID。"
    },
    "npm": "qiushi-dsh-evidence-audit",
-   "stars": 3,
+   "stars": 4,
    "install": "dsh plugin --profile web add qiushi-dsh-evidence-audit",
    "added": "2026-08-14"
   },
@@ -4172,7 +4217,7 @@
     "zh": "社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。"
    },
    "npm": null,
-   "stars": 161,
+   "stars": 162,
    "install": "dsh plugin --profile web add github:hust-open-atom-club/oh-dsh",
    "added": "2026-08-14"
   },
@@ -4352,7 +4397,7 @@
     "zh": "插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。"
    },
    "npm": null,
-   "stars": 33,
+   "stars": 34,
    "install": "dsh plugin --profile web add github:vlln/plugin-registry",
    "added": "2026-08-14"
   },
@@ -4367,7 +4412,7 @@
     "zh": "让 dsh 运行时跑在 Multica 上。"
    },
    "npm": null,
-   "stars": 28,
+   "stars": 29,
    "install": "dsh plugin --profile web add github:forrestchang/dsh-multica-runtime",
    "added": "2026-08-14"
   },
@@ -4457,8 +4502,23 @@
     "zh": "可自修改的 DeepSeek Harness 桌面工作台：完整 dsh web 副本 + 编辑模式，agent 在对话中实时修改工作台（补丁层、插件、UI）并热更新生效。"
    },
    "npm": null,
-   "stars": null,
+   "stars": 1,
    "install": "dsh plugin --profile web add github:lsz-asd/dsh-chameleon#path:/bundle",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-ocr-review",
+   "owner": "jiayan-xu",
+   "url": "https://github.com/jiayan-xu/dsh-ocr-review",
+   "page": "https://awesome-dsh-plugin.com/p/jiayan-xu/dsh-ocr-review/",
+   "category": "dev",
+   "description": {
+    "en": "Local AI code-review gate: review a workspace/branch/commit diff via the managed ocr.js, returning structured findings with token stats; gate mode fails on findings.",
+    "zh": "本地 AI 代码评审门禁：对工作区/分支/commit diff 跑评审（托管 ocr.js），返回结构化 findings 与 token 统计；门禁模式发现问题即失败。"
+   },
+   "npm": null,
+   "stars": 0,
+   "install": "dsh plugin --profile web add github:jiayan-xu/dsh-ocr-review",
    "added": "2026-08-14"
   },
   {
@@ -4472,7 +4532,7 @@
     "zh": "2005 年中文站点风格的整活广告插件：侧栏广告/信息流/角落弹窗 + 假关闭叉，素材全虚构。"
    },
    "npm": null,
-   "stars": 318,
+   "stars": 321,
    "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-ads",
    "added": "2026-08-13"
   },

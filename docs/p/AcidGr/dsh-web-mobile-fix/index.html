@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">AcidGr/</span><wbr><span class="name">dsh-web-mobile-fix</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-web-mobile-fix" rel="noopener" translate="no">dsh-web-mobile-fix</a></span>
@@ -188,7 +189,61 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Mobile layout fixes for the <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web UI.</p>
+<p>A pure client-side CSS overlay that repairs the worst mobile breakages on narrow (≤700px viewport) screens, without touching any product source:</p>
+<ul>
+<li>Settings panel becomes a full-screen column layout instead of a squeezed desktop layout</li>
+<li>Directory-picker footer (Cancel / Confirm) pinned to one bottom row</li>
+<li>Sidebar opens full-screen instead of squeezing the conversation</li>
+<li>Settings plugin navigation (4 buttons) fits on a single row</li>
+<li>Session-log button collapses to an icon</li>
+<li>Model name hidden in the composer (chevron only)</li>
+<li>Dropdowns / popups / menus render centered</li>
+</ul>
+<h3>How it works</h3>
+<p>The plugin ships a browser half (<code>exports[&quot;./client&quot;]</code>, declared via <code>dsh.client.platform: &quot;web&quot;</code>), discovered by the client-modules scanner and loaded from the boot manifest. It injects one <code>&lt;style&gt;</code> tag with <code>@media (max-width: 700px)</code> overrides targeting the product&#39;s stable <code>data-slot</code> attributes, and removes the tag on unload — fully reversible.</p>
+<h3>Requirements</h3>
+<ul>
+<li>DeepSeek Harness Web profile (<code>dsh --profile web</code>), any recent 0.1.x release</li>
+<li>Selectors target product slot contracts; they are stable within a version line but may need small updates after a major product revamp</li>
+</ul>
+<h3>Install</h3>
+<h4>Bundle install (recommended)</h4>
+<p>Installed from npm:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-web-mobile-fix
+</code></pre>
+<p>(No npm / local development — point pnpm at the repo instead:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:AcidGr/dsh-web-mobile-fix
+</code></pre>
+<p>)</p>
+<p>Restart <code>dsh web</code> (or wait for the profile hot-reload), then hard-refresh the browser.</p>
+<h4>Manual install (no pnpm / offline)</h4>
+<pre><code class="language-sh">PROFILE=&quot;$DSH_HOME/profiles/web&quot;                 # adjust DSH_HOME and profile name
+mkdir -p &quot;$PROFILE/plugins&quot; &quot;$PROFILE/node_modules/@dsh-profile&quot;
+cp -r dsh-web-mobile-fix &quot;$PROFILE/plugins/mobile-fix&quot;
+ln -sfn ../../plugins/mobile-fix &quot;$PROFILE/node_modules/@dsh-profile/mobile-fix&quot;
+# append to $PROFILE/cordis.patch.yml:
+#   - insert:
+#       - id: mobile-fix
+#         name: &#39;@dsh-profile/mobile-fix&#39;
+</code></pre>
+<h3>Verify</h3>
+<p>Open the Web UI on a phone-width window — the settings panel, sidebar, and popups should be mobile-adapted.</p>
+<h3>Rollback</h3>
+<ul>
+<li>Bundle install: <code>dsh plugin --profile web remove dsh-web-mobile-fix</code></li>
+<li>Manual install: delete the <code>mobile-fix</code> insert block from <code>cordis.patch.yml</code> (the plugin dir can stay or go)</li>
+</ul>
+<p>No product source is modified; upgrades do not overwrite it.</p>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/AcidGr/dsh-web-mobile-fix/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -202,12 +257,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1766</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 829</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 705</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 131</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 709</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 79</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

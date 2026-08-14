@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">AcidGr/</span><wbr><span class="name">dsh-web-lan-access</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-web-lan-access" rel="noopener" translate="no">dsh-web-lan-access</a></span>
@@ -188,7 +189,74 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>LAN / remote access support for the <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web UI.</p>
+<h3>The problem</h3>
+<p>The Web UI calls <code>crypto.randomUUID()</code> in boot-critical paths (RPC id minting, message ids, draft attachments). That Web API exists <strong>only in secure contexts</strong> (HTTPS, or <code>http://localhost</code> / <code>http://127.0.0.1</code>). When the UI is served over plain HTTP from a non-loopback address — a LAN IP, a Tailscale IP, or a hostname — <code>crypto.randomUUID</code> is <code>undefined</code>, every RPC throws, and <strong>sessions and models never render</strong>.</p>
+<h3>The fix</h3>
+<p>A host-side plugin that uses the webserver&#39;s official index-tap extension point (<code>webServer.tapIndex</code>) to inject a small polyfill (RFC 4122 v4 built on <code>crypto.getRandomValues</code>, which <strong>is</strong> available on insecure origins) as the first script in <code>&lt;head&gt;</code>, before the boot manifest and the shell entry. On secure origins the polyfill is a no-op.</p>
+<ul>
+<li>No product source modified; fully reversible</li>
+<li>Version-independent (it only transforms the served <code>index.html</code>)</li>
+<li>Platform-independent (Linux / macOS / Windows / Android)</li>
+</ul>
+<h3>Install</h3>
+<h4>Bundle install (recommended)</h4>
+<p>Installed from npm:</p>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-web-lan-access
+</code></pre>
+<p>(No npm / local development — point pnpm at the repo instead:</p>
+<pre><code class="language-sh">dsh plugin --profile web add github:AcidGr/dsh-web-lan-access
+</code></pre>
+<p>)</p>
+<p>Restart <code>dsh web</code>, then hard-refresh the browser.</p>
+<h4>Manual install (no pnpm / offline)</h4>
+<pre><code class="language-sh">PROFILE=&quot;$DSH_HOME/profiles/web&quot;                 # adjust DSH_HOME and profile name
+mkdir -p &quot;$PROFILE/plugins&quot; &quot;$PROFILE/node_modules/@dsh-profile&quot;
+cp -r dsh-web-lan-access &quot;$PROFILE/plugins/lan-access&quot;
+ln -sfn ../../plugins/lan-access &quot;$PROFILE/node_modules/@dsh-profile/lan-access&quot;
+# append to $PROFILE/cordis.patch.yml:
+#   - insert:
+#       - id: lan-access
+#         name: &#39;@dsh-profile/lan-access&#39;
+</code></pre>
+<h3>Usage</h3>
+<ol>
+<li><p><strong>Bind all interfaces</strong> so other devices can connect:</p>
+<pre><code class="language-sh">dsh --profile web --host 0.0.0.0 --port 3080
+</code></pre>
+<p>When bound to <code>0.0.0.0</code>, the harness automatically adds every local non-internal IPv4 to the <code>/api</code> trust fence (<code>resolveLanTrust</code>) — <strong>LAN IP access needs no extra config</strong>.</p>
+</li>
+<li><p><strong>Domains / remote (e.g. Tailscale)</strong> — add your own authorities to <code>trustedHosts</code>:</p>
+<pre><code class="language-yaml">- id: web-runtime
+  config:
+    trustedHosts:
+      - &lt;short-name&gt;            # e.g. myhost — MUST be listed separately!
+      - &lt;name&gt;.tailXXXX.ts.net  # full domain
+      - 100.x.x.x               # tailnet IP
+</code></pre>
+<p>⚠️ The fence compares the <code>Host</code> header <strong>literally</strong>: a MagicDNS short name (<code>http://myhost:3080</code>) is <em>not</em> the full domain — list the short name on its own line, or every <code>/api</code> call returns 403 (page shell loads, sessions/models absent).</p>
+</li>
+</ol>
+<h3>Verify</h3>
+<pre><code class="language-sh">curl http://127.0.0.1:3080/ | grep lan-access-polyfill   # must match
+</code></pre>
+<p>Then open <code>http://&lt;server-ip&gt;:3080</code> from another device — sessions and models must load.</p>
+<h3>Security warning</h3>
+<p>Binding <code>0.0.0.0</code> makes the agent reachable without authentication by <strong>anyone</strong> on the same network (<code>/api</code> is an origin fence, not a login). On a server with a public IP this means the whole internet. Use only on trusted networks, restrict with a firewall (e.g. <code>ufw allow from 192.168.0.0/16</code>), or expose through Tailscale / an authenticated reverse proxy instead. A TLS reverse proxy also removes the need for this polyfill entirely.</p>
+<h3>Rollback</h3>
+<ul>
+<li>Bundle install: <code>dsh plugin --profile web remove dsh-web-lan-access</code></li>
+<li>Manual install: delete the <code>lan-access</code> insert block from <code>cordis.patch.yml</code>; optionally start without <code>--host 0.0.0.0</code></li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/AcidGr/dsh-web-lan-access/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -202,12 +270,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1766</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 829</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 705</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 131</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1782</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 835</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 709</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 117</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 79</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 80</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

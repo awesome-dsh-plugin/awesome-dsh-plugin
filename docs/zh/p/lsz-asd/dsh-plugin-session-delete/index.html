@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">lsz-asd/</span><wbr><span class="name">dsh-plugin-session-delete</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 3</b></span>
         <span>分类 <a href="/zh/session/">会话与消息</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,64 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>你是否困扰于 web 端无法删除对话？是否觉得归档对话键只是隐藏对话，删除得不够彻底？是否在尝试编辑 harness 时遇到对话话历史无法同步，而损坏的对话又无法删除？这个插件可以帮你！</p>
+<p><strong>在 DeepSeek Harness 界面里安全地彻底删除会话。</strong> 在会话顶部添加垃圾桶按钮，侧栏会话行 &quot;...&quot; 菜单内添加&quot;删除会话&quot;项，点击后出现风险确认弹窗（需勾选）；确认后会删除会话日志、投影缓存与工作区记账；运行中的会话会有提示，若仍选择删除会停止运行并删除。可在web中使用，并且理论上兼容一切web套壳的客户端。
+<strong>添加agent工具让agent可以删除会话。</strong> 工具名<code>workbench_session_delete</code></p>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;profile&gt; add file:C:/path/to/dsh-plugin-session-delete
+</code></pre>
+<p>重启 profile 生效。</p>
+<h3>功能</h3>
+<ul>
+<li>会话头部垃圾桶按钮</li>
+<li>侧栏会话行 &quot;...&quot; 菜单注入&quot;删除会话&quot;项</li>
+<li><code>RiskConfirmation</code> 风险确认：勾选&quot;我已了解后果&quot;后确认可用</li>
+<li>删除链路：会话目录 + 投影缓存 + 工作区记账（经活动 storageDomain，内存/磁盘一致）</li>
+<li><code>workbench_session_delete</code> 工具：agent 可直接删除会话</li>
+</ul>
+<h3>后续开发计划</h3>
+<ul>
+<li>添加更多针对会话的操作工具和选项</li>
+<li>将已有的针对会话的选项做成工具提供给agent</li>
+<li></li>
+</ul>
+<h3>更新日志</h3>
+<ul>
+<li><strong>v0.3.0（2026-08-14）</strong>：新增英文适配（i18n）。删除对话框、头部垃圾桶按钮与侧栏「删除会话」菜单项的全部文案接入客户端 zh/en 字典，跟随界面语言（设置中的语言或浏览器语言）自动切换并即时生效；未加载 locale 服务的环境会按浏览器语言回退到内置中英文字典。</li>
+</ul>
+<hr>
+<h2>dsh-plugin-session-delete</h2>
+<p>Frustrated that sessions can&#39;t be deleted from the web client? Bothered by abandoned or mistyped conversations cluttering your sidebar? Ever tried editing your harness only to find the session history out of sync — with a corrupted session that just won&#39;t go away? This plugin has your back!</p>
+<p><strong>Safely delete sessions from the DeepSeek Harness UI.</strong> Adds a trash button at the top of the conversation and a &quot;Delete session&quot; item to the sidebar session-row &quot;...&quot; menu; clicking either opens a risk-consent dialog (checkbox required). On confirm, the session log, projection cache and workspace accounting are removed. Running sessions show a warning — if you still choose to delete, the session is stopped and then deleted. Works in the web, and is theoretically compatible with any web-shell-based client.
+<strong>Also adds an agent tool so agents can delete sessions.</strong> Tool name: <code>workbench_session_delete</code></p>
+<h3>Installation</h3>
+<pre><code class="language-sh">dsh plugin --profile &lt;profile&gt; add file:C:/path/to/dsh-plugin-session-delete
+</code></pre>
+<p>Restart the profile to apply.</p>
+<h3>Features</h3>
+<ul>
+<li>Trash button at the top of the conversation</li>
+<li>&quot;Delete session&quot; item injected into the sidebar session-row &quot;...&quot; menu</li>
+<li><code>RiskConfirmation</code> risk-consent dialog: confirm is only enabled after ticking &quot;I understand the consequences&quot;</li>
+<li>Delete chain: session log + projection cache + workspace accounting (through the active storageDomain, so in-memory state and on-disk units stay consistent)</li>
+<li><code>workbench_session_delete</code> tool: agents can delete sessions directly</li>
+</ul>
+<h3>Roadmap</h3>
+<ul>
+<li>Add more session-operation tools and options</li>
+<li>Expose the existing session options to agents as tools</li>
+</ul>
+<h3>Changelog</h3>
+<ul>
+<li><strong>v0.3.0 (2026-08-14)</strong>: Added English adaptation (i18n). All copy of the delete dialog, the header trash button and the sidebar &quot;Delete session&quot; menu item now lives in client zh/en dictionaries and follows the UI language (the language setting or the browser language), updating live on switch; environments without the locale service fall back to the built-in dictionaries by browser language.</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/lsz-asd/dsh-plugin-session-delete/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,7 +256,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 35</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 36</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p></a></li>
       <li><h3><a href="/zh/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/zh/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</p></a></li>
       <li><h3><a href="/zh/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 22</span></h3><a class="desc-link" href="/zh/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>把 13 家 coding agent（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode 等）的完整对话历史导入为可续聊的 DeepSeek Harness 会话，并支持反向导出回 Claude Code。</p></a></li>
       <li><h3><a href="/zh/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/hellodigua/dsh-share/" tabindex="-1"><p>一键分享你的对话。</p></a></li>

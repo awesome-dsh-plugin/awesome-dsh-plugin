@@ -190,11 +190,15 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p>简体中文 | <a href="https://github.com/hellodigua/dsh-share/blob/main/README.en.md">English</a></p>
-<p>把 DSH 中的一轮问答生成 PNG 图片，可直接复制到剪贴板或下载。</p>
+<p>把 DSH 中的一轮问答或选中的多组问答生成 PNG 图片，也可以下载为 Markdown。</p>
 <p><img src="https://raw.githubusercontent.com/hellodigua/dsh-share/main/assets/readme/share-dialog.webp" alt="dsh-share 分享图片预览"></p>
 <h3>功能</h3>
 <ul>
-<li>在每轮回答末尾增加分享按钮，可复制或下载 PNG</li>
+<li>从右上角进入问答选择模式，默认全选</li>
+<li>每轮的分享按钮也会进入选择模式，并只预选当前问答</li>
+<li>问题和回答两侧都有联动勾选框，也可直接点击内容整组选择，支持不连续选择</li>
+<li>勾选框会在长内容滚动时吸附在页面上，到当前问题或回答末尾再移出</li>
+<li>可复制图片、下载 PNG 或 Markdown</li>
 <li>保留 Markdown、代码块、表格、图片和工具调用摘要</li>
 <li>可调整图片宽度和字号，长图支持滚动预览</li>
 <li>可勾选“不展示过程”，只保留提问和最终回答</li>
@@ -238,7 +242,8 @@ corepack pnpm pack --pack-destination ../local-plugins
 <p>tarball 已包含浏览器构建产物，安装时不需要执行第三方构建脚本。</p>
 <h3>兼容性</h3>
 <p>当前版本面向 npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code>，DSH peers 声明为 <code>^0.1.0-rc.6</code>。本地开发使用精确 rc.6 类型包，部署时仍由 Web Profile 提供共享运行时。</p>
-<p>分享按钮通过官方 <code>conversation.chat.assistant-actions</code> 插槽挂载，并直接使用官方 Client 类型，不扫描或修改按钮栏 DOM。生成图片时会读取当前轮已经渲染的 <code>data-*</code> 节点，因此 DSH 调整对话内容结构后可能需要同步适配。</p>
+<p>单轮入口通过官方 <code>conversation.chat.assistant-actions</code> 插槽挂载，对话分享入口通过官方 <code>conversation.session.header.utilities</code> 插槽挂载，并直接使用官方 Client 类型，不扫描或修改按钮栏 DOM。</p>
+<p>DSH 暂未提供问答左侧装饰插槽。只有进入选择模式后，插件才会通过 <code>MutationObserver</code> 和官方页面稳定的 <code>data-conversation-scroll</code>、<code>data-chat-flow-kind</code>、<code>data-turn-tail</code> 属性，为已经渲染的问题和回答分别添加联动、可吸附的选择框；不依赖 CSS Module 生成的类名。选择模式中，内容里的链接、展开按钮等交互会暂时停用，点击问题或回答会切换整组选择，退出后恢复。DSH 调整这些页面数据属性或对话结构后，插件可能需要同步适配。</p>
 <h3>开发</h3>
 <p>项目不依赖本机 DSH checkout 即可安装依赖、运行测试和构建：</p>
 <pre><code class="language-sh">corepack pnpm install --frozen-lockfile
@@ -255,6 +260,7 @@ corepack pnpm build
 <li>复制图片依赖浏览器 Clipboard API；权限不足时仍可下载 PNG。</li>
 <li>图片中的远程资源必须允许浏览器读取；无法读取的单个资源会用透明占位跳过，不影响整张 PNG 生成。</li>
 <li>超长图片在其他聊天软件中仍可能被整体缩放；插件弹窗只负责提供可滚动的清晰预览。</li>
+<li>问答组选择以页面已经加载的完整轮次为准；需要更早内容时，先向上滚动加载历史消息。</li>
 </ul>
 <h3>License</h3>
 <p>项目使用 <a href="https://github.com/hellodigua/dsh-share/blob/main/LICENSE">MIT</a> 许可证。浏览器 bundle 内联依赖的许可证见 <a href="https://github.com/hellodigua/dsh-share/blob/main/THIRD_PARTY_LICENSES.md">THIRD_PARTY_LICENSES.md</a>。</p>
@@ -274,7 +280,7 @@ corepack pnpm build
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 35</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 36</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>对话回退：基于持久 Change Ledger 回滚会话与工作区状态。</p></a></li>
       <li><h3><a href="/zh/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/zh/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</p></a></li>
       <li><h3><a href="/zh/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 22</span></h3><a class="desc-link" href="/zh/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>把 13 家 coding agent（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode 等）的完整对话历史导入为可续聊的 DeepSeek Harness 会话，并支持反向导出回 Claude Code。</p></a></li>
       <li><h3><a href="/zh/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>基于分支的消息编辑、reroll、重试与版本时间线。</p></a></li>

@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">030611/</span><wbr><span class="name">dsh-verification-receipt</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 2</b></span>
+        <span>Star 数 <b>★ 3</b></span>
         <span>分类 <a href="/zh/dev/">开发与运行时</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-verification-receipt" rel="noopener" translate="no">dsh-verification-receipt</a></span>
@@ -222,6 +222,8 @@ dsh --profile web --dump-config
 <p>如果其他 profile（例如 <code>headless</code>）也需要凭证，请换用对应 profile 名重复第一条命令。本地开发时，克隆本仓库并运行 <code>pnpm install --frozen-lockfile &amp;&amp; pnpm run check</code>，再把 checkout 路径而不是包名传给 <code>dsh plugin ... add</code>。</p>
 <p><code>package.json</code> 声明 <code>dsh.bundle.patch</code>；<code>cordis.patch.yml</code> 插入一个普通观察插件。任何提供核心 Session 服务的 DSH 输出面都可以使用它。</p>
 <h3>输出</h3>
+<p>下图来自发布版插件处理合成、非用户 DSH 事件后生成的真实 receipt；右侧只展示部分落盘字段。它不是用户会话，也不证明测试运行或通过。</p>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/receipt-output.png" alt="合成夹具产生的真实 Verification Receipt 输出"></p>
 <p>默认文件为：</p>
 <pre><code class="language-text">$DSH_HOME/verification-receipts/v1/receipts.jsonl
 </code></pre>
@@ -261,6 +263,7 @@ dsh --profile web --dump-config
 <h4>完整性警告</h4>
 <p>两个 hash 都没有密钥，均可重算。<code>receiptHash</code> 是对其前面全部凭证字段按输出顺序计算的 SHA-256；能编辑一行的人也能重新计算它。独立行无法暴露删除、插入、重排、截断、回滚或替换。它不是签名、可信时间戳、哈希链、承诺或防篡改日志。</p>
 <h3>隐私与 Agent 行为</h3>
+<p><img src="https://raw.githubusercontent.com/030611/dsh-verification-receipt/main/docs/privacy-boundary.png" alt="Receipt 保留与排除字段边界"></p>
 <p>落盘凭证不包含：</p>
 <ul>
 <li>工具参数或 call id；</li>
@@ -384,10 +387,10 @@ pnpm run performance:smoke
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 161</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
+      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 162</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
       <li><h3><a href="/zh/p/Jayden-X-L/forkprobe/" translate="no">Jayden-X-L/forkprobe</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/zh/p/Jayden-X-L/forkprobe/" tabindex="-1"><p>同一任务并行试跑多个技能，对比结果选出最优。</p></a></li>
-      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 33</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
-      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 28</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
+      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 34</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
+      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 29</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
       <li><h3><a href="/zh/p/DietCokewithSugar/dsh-user-experience/" translate="no">DietCokewithSugar/dsh-user-experience</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/zh/p/DietCokewithSugar/dsh-user-experience/" tabindex="-1"><p>帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-plugin-check/" translate="no">omdsh-dev/dsh-plugin-check</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-plugin-check/" tabindex="-1"><p>插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。</p></a></li>
     </ul>

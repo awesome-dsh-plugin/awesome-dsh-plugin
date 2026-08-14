@@ -189,21 +189,27 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>给 DeepSeek Harness（dsh）的网页界面加一道<strong>密码门</strong>。</p>
-<p>dsh 自带的网页界面没有任何登录功能——只要别人知道你的服务器地址，打开就能用，还能烧你的 API key。这个项目在 dsh 前面挡一层登录页：没登录的人一律先看到登录页，输对账号密码才放进去。</p>
-<p>🏅 已收录于 <a href="https://github.com/0xsline/awesome-deepseek-harness">Awesome DeepSeek Harness</a> 生态索引（Infrastructure &amp; Development）与 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">Awesome DSH Plugin</a> 插件精选列表（Development &amp; Runtime）。</p>
+<p>给 DeepSeek Harness（dsh）加一道<strong>密码门</strong>：让 dsh 可以安全地<strong>远程访问</strong>，并支持<strong>多用户</strong>。</p>
+<p>dsh 自带的网页界面没有任何登录功能。放上服务器/云主机后，任何人拿到地址就能用，还能烧你的 API key。dsh-passwords 在 dsh 前面挡一层登录页：没登录的人一律先看到登录页，输对账号密码才放进去。</p>
 <blockquote>
-<p>名字的由来：这个项目最早叫 dsh-mcp-platform（当时带 MCP 功能），后来 MCP 删了，只剩一个登录网关，就改名 dsh-passwords——好记：dsh 的密码门。</p>
+<p><strong>一句话定位：dsh-passwords = dsh 的远程访问入口 + 多用户账号系统。</strong> 纯本地用 dsh 不需要它；但只要访问地址不是 localhost，先装它。</p>
 </blockquote>
-<h3>它做了什么</h3>
+<p>🏅 已收录于 <a href="https://github.com/0xsline/awesome-deepseek-harness">Awesome DeepSeek Harness</a> 生态索引（Infrastructure &amp; Development）与 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">Awesome DSH Plugin</a> 插件精选列表（Development &amp; Runtime）。</p>
+<h3>两大核心能力</h3>
+<h4>1️⃣ 远程连接</h4>
 <ul>
-<li>登录页 + 首次配置页（第一次访问先设管理员账号）</li>
+<li>登录页 + 首次配置页（第一次访问先设主账号，之后谁访问都先过登录页）</li>
 <li>登录一次管 12 小时（Cookie 会话，关浏览器也不丢）</li>
-<li>密码用 bcrypt 哈希存库，乱试密码 5 次锁 15 分钟</li>
-<li>每一步都有审计日志，一条命令就能看谁在什么时候登录/失败过</li>
-<li><strong>用户数据全部加密落盘</strong>：用户名、IP、审计记录都是密文，就算数据库文件被偷走也看不懂</li>
-<li>支持 HTTPS + 80 端口自动跳转（强烈建议公网开启）</li>
+<li>支持 HTTPS + 80 端口自动跳转（公网部署强烈建议）</li>
 <li>登录页自动跟着 dsh 的主题走（dsh 用深色它就深色）</li>
+<li>远程浏览器可正常使用 dsh 的全部设置功能（dsh 默认只允许本机浏览器编辑设置，dsh-passwords 自动处理这件事；dsh 升级后若设置页出现异常，设置页卡片里有&quot;重载补丁&quot;一键修复）</li>
+</ul>
+<h4>2️⃣ 多用户</h4>
+<ul>
+<li>一个<strong>主用户</strong>（首次配置创建）+ 任意多个<strong>子用户</strong>，各自独立账号密码登录</li>
+<li>所有账号管理都在 dsh 设置页的卡片里完成，不用 SSH：改密码、改用户名、创建/删除子用户</li>
+<li>主用户可管理所有子用户；子用户只能改自己</li>
+<li>改密后旧会话全部立即失效；每次登录/失败都有记录，一条命令就能查谁在什么时候登录过</li>
 </ul>
 <h3>界面截图</h3>
 <table>
@@ -230,18 +236,6 @@ footer p+p{margin-top:.5rem}
 <td></td>
 </tr>
 </tbody></table>
-<table>
-<thead>
-<tr>
-<th>安全测试实测输出</th>
-<th>核心源码（auth.ts）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
 <h3>本地先跑起来看看</h3>
 <p>需要 Node.js <strong>22.5 以上</strong>（<code>node -v</code> 看一眼）。</p>
 <pre><code class="language-bash">npm install           # 装依赖
@@ -251,7 +245,7 @@ npm start             # 启动，浏览器打开 http://localhost:8080
 </code></pre>
 <p>启动前记得改 <code>.env</code> 里的 <code>SETUP_KEY</code>（下面讲它是什么）。</p>
 <h3>SETUP_KEY 是什么？在哪？</h3>
-<p><code>SETUP_KEY</code> 是<strong>安装密钥</strong>。第一次打开网页时会进入&quot;首次配置&quot;页，要求输入它，输对了才能创建管理员账号。作用就是防止陌生人抢在你前面把平台初始化了。</p>
+<p><code>SETUP_KEY</code> 是<strong>安装密钥</strong>。第一次打开网页时会进入&quot;首次配置&quot;页，要求输入它，输对了才能创建主用户。作用就是防止陌生人抢在你前面把平台初始化了。</p>
 <p><strong>它在项目根目录的 <code>.env</code> 文件里</strong>，就是这一行：</p>
 <pre><code class="language-ini">SETUP_KEY=change-me-to-a-strong-random-key
 </code></pre>
@@ -305,6 +299,13 @@ cp .env.example .env
 </tbody></table>
 <pre><code class="language-bash">npm run build
 </code></pre>
+<h4>3.5 把 dsh-passwords 注册成 dsh 插件（设置页卡片）</h4>
+<p>dsh 的设置页插件列表由 profile 的依赖决定，把本项目加进去：</p>
+<pre><code class="language-bash">cd ~/.dsh/profiles/web
+pnpm add /opt/dsh-passwords
+</code></pre>
+<p>（dsh rc.6 用 pnpm 管理 profile 依赖；如果系统里没有 pnpm，先 <code>npm install -g pnpm@9</code>。）</p>
+<p>这样 dsh 启动时就会加载 dsh-passwords 的主机侧插件：设置页出现&quot;dsh-passwords · 密码门&quot;卡片，账号管理都在里面。</p>
 <h4>4. 用 systemd 托管两个进程（重启服务器自动拉起）</h4>
 <p>dsh 服务（<code>/etc/systemd/system/dsh-web.service</code>）：</p>
 <pre><code class="language-ini">[Unit]
@@ -314,6 +315,7 @@ After=network.target
 [Service]
 Type=simple
 Environment=DEEPSEEK_API_KEY=sk-你的key
+Environment=DSH_PASSWORDS_ENV_FILE=/opt/dsh-passwords/.env
 ExecStart=/usr/local/bin/dsh web --patch /opt/dsh-passwords/cordis.yml
 Restart=on-failure
 RestartSec=5
@@ -321,6 +323,9 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 </code></pre>
+<blockquote>
+<p><code>DSH_PASSWORDS_ENV_FILE</code> 让 dsh 里的密码门插件读到和网关同一份 <code>.env</code>（同一个数据库、同一把密钥），必须加上。</p>
+</blockquote>
 <p>网关服务（<code>/etc/systemd/system/dsh-gateway.service</code>）：</p>
 <pre><code class="language-ini">[Unit]
 Description=dsh-passwords login gateway
@@ -329,7 +334,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/opt/dsh-passwords
-ExecStart=/usr/local/bin/node dist/index.js serve-gateway
+ExecStart=/usr/local/bin/node dist/cli.js serve-gateway
 Restart=on-failure
 RestartSec=5
 
@@ -345,7 +350,7 @@ sudo systemctl status dsh-web dsh-gateway   # 两个都 active 就对了
 </code></pre>
 <p>⚠ 云服务器（阿里云/腾讯云等）还要去<strong>控制台的安全组</strong>里放行同一个端口，只配 ufw 是没用的。</p>
 <h4>6. 浏览器完成首次配置</h4>
-<p>访问 <code>http://你的服务器IP</code> → 输 <code>.env</code> 里的 <code>SETUP_KEY</code> → 创建管理员账号。之后所有人访问都先过登录页。</p>
+<p>访问 <code>http://你的服务器IP</code> → 输 <code>.env</code> 里的 <code>SETUP_KEY</code> → 创建主用户。之后所有人访问都先过登录页。</p>
 <h4>7. 强烈建议：开 HTTPS</h4>
 <p>明文 HTTP 下密码会被中间人抓包。开 HTTPS 三步：</p>
 <pre><code class="language-bash">cd /opt/dsh-passwords
@@ -379,6 +384,46 @@ sudo ufw allow 443/tcp   # 安全组同样要放行 443
 <p>不想每次敲参数：把 <code>cordis.yml</code> 的内容合并进 <code>~/.dsh/profiles/web/cordis.patch.yml</code>，之后直接 <code>dsh web</code> 就永久生效。</p>
 <blockquote>
 <p>上面第 4 步的 systemd 配置里已经带上了 <code>--patch</code>，跟着教程走就不用管这节。</p>
+</blockquote>
+<h3>设置页里的密码门卡片</h3>
+<p>登录 dsh 后，打开 <strong>设置 → 插件</strong>，能看到&quot;dsh-passwords · 密码门&quot;卡片。里面可以：</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>谁可用</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>远程设置 + 重载补丁</strong></td>
+<td>所有登录用户</td>
+<td>显示远程设置是否可用；dsh 升级后若设置页出现异常，点&quot;重载补丁&quot;一键修复（自动重启网页服务并刷新页面，不用 SSH）</td>
+</tr>
+<tr>
+<td><strong>修改密码</strong></td>
+<td>本人改自己；主用户可改任何人</td>
+<td>改密后旧会话全部立即失效，需重新登录</td>
+</tr>
+<tr>
+<td><strong>修改用户名</strong></td>
+<td>本人改自己；主用户可改任何人</td>
+<td>改名后需用新用户名重新登录</td>
+</tr>
+<tr>
+<td><strong>子用户管理</strong></td>
+<td>仅主用户</td>
+<td>创建/删除子用户（子用户可用登录页进入，但没有管理权限）</td>
+</tr>
+</tbody></table>
+<p>说明：</p>
+<ul>
+<li><strong>主用户</strong> = 首次配置时创建的那个账号；之后添加的都是<strong>子用户</strong>。</li>
+<li>卡片里的账号管理走网关自己的接口，与 dsh 的设置相互独立。</li>
+<li>密码要求与登录页一致：至少 12 位，且大写、小写、数字、符号各至少一位。</li>
+</ul>
+<blockquote>
+<p>dsh 默认只允许本机浏览器编辑设置。dsh-passwords 会自动处理，让经密码门登录的远程浏览器也能正常使用全部设置功能。dsh 升级后若设置页出现异常，点卡片里的&quot;重载补丁&quot;即可（网关每次启动也会自动处理，重启网关同样有效）。</p>
 </blockquote>
 <h3>配置速查表</h3>
 <table>
@@ -439,40 +484,47 @@ sudo ufw allow 443/tcp   # 安全组同样要放行 443
 <td>自动找 <code>~/.dsh/settings.yaml</code></td>
 <td>网关和 dsh 不在同一台机器时才要填</td>
 </tr>
+<tr>
+<td><code>DSH_PASSWORDS_ENV_FILE</code></td>
+<td>空</td>
+<td>dsh 进程里读网关 <code>.env</code> 的路径（systemd 里配 <code>/opt/dsh-passwords/.env</code>）</td>
+</tr>
+<tr>
+<td><code>MCP_DSH_ROOT</code></td>
+<td>自动探测</td>
+<td>dsh 安装目录（<code>@deepseek-ai/dsh</code> 所在处），探测不到时手动指定</td>
+</tr>
+<tr>
+<td><code>MCP_DSH_RESTART_SERVICE</code></td>
+<td><code>dsh-web</code></td>
+<td>重载补丁后自动重启的 dsh systemd 服务名；留空不自动重启</td>
+</tr>
+<tr>
+<td><code>MCP_INTERNAL_SECRET</code></td>
+<td>由 SETUP_KEY 派生</td>
+<td>网关内部接口密钥（dsh 插件→网关通知通道），一般不用改</td>
+</tr>
 </tbody></table>
 <h3>常用命令</h3>
 <pre><code class="language-bash">npm start                              # 启动网关
-node dist/index.js audit --limit 20    # 看最近 20 条审计日志（自动解密）
-node dist/index.js serve-gateway --port 9000   # 换个端口启动
+node dist/cli.js audit --limit 20    # 看最近 20 条审计日志（自动解密）
+node dist/cli.js serve-gateway --port 9000   # 换个端口启动
+node dist/cli.js patch status        # 看远程设置状态
+node dist/cli.js patch               # 重载补丁（重新应用 + 重启 dsh-web）
 </code></pre>
 <h3>常见问题</h3>
 <ul>
-<li><strong>登录页一直显示&quot;首次配置&quot;？</strong> 说明用户表是空的（新库或数据库被删过）。停服 → 删 <code>data/platform.db</code> → 重启 → 重新配置。</li>
-<li><strong>忘记管理员密码？</strong> 停服后跑 <code>node -e &quot;const {DatabaseSync}=require(&#39;node:sqlite&#39;);const db=new DatabaseSync(&#39;data/platform.db&#39;);db.exec(&#39;DELETE FROM users;&#39;)&quot;</code>，重启后重新配置。</li>
+<li><strong>登录页一直显示&quot;首次配置&quot;？</strong> 说明用户表是空的（新库或数据库被清过）。按页面提示输入 <code>SETUP_KEY</code> 重新创建主用户即可。</li>
+<li><strong>忘记主用户密码？</strong> 停服后跑 <code>node -e &quot;const {DatabaseSync}=require(&#39;node:sqlite&#39;);const db=new DatabaseSync(&#39;data/platform.db&#39;);db.exec(&#39;DELETE FROM users;&#39;)&quot;</code>，重启后重新走首次配置。</li>
 <li><strong>dsh 报 <code>crypto.randomUUID is not a function</code>？</strong> 旧版网关没有 HTML 注入兼容层，更新代码后<strong>强刷浏览器</strong>（Ctrl+Shift+R）。</li>
-<li><strong>数据库文件被偷了要紧吗？</strong> 不要紧。敏感字段全是 AES-256-GCM 密文或 HMAC 散列，没有 <code>MCP_DB_ENC_KEY</code> 解不开；密码本身只有 bcrypt 哈希，本来就没有明文。</li>
+<li><strong>数据库文件被偷了要紧吗？</strong> 不要紧。敏感字段全是密文或散列，没有 <code>.env</code> 里的密钥解不开；密码本身只有 bcrypt 哈希，本来就没有明文。</li>
 <li><strong>想换 <code>MCP_DB_ENC_KEY</code>？</strong> 不行。这个密钥一旦启用就不能换，换了一切历史数据都解不开。备份数据库时必须连 <code>.env</code> 一起备份。</li>
 <li><strong>访问有点慢？</strong> 网关本身每次请求只花约 1-2ms。先查 TLS 握手：<code>curl -sk -o /dev/null -w &quot;TCP:%{time_connect}s TLS:%{time_appconnect}s\n&quot; https://你的IP/gateway/login</code>——如果 TLS 那项要几百毫秒以上，多半是用了 RSA 证书（弱 CPU 服务器上 RSA 握手签名非常慢），换成 EC 证书即可（见第 7 步命令）。TCP 快、TLS 也快但还是慢的话，就是你的网络/代理到服务器的链路延迟，代码解决不了。</li>
 <li><strong>每次进去都卡在 &quot;Loading plugins…&quot;？</strong> 这是 dsh 在加载它的 ~30 个插件脚本，而 dsh 对插件/静态资源返回的是 <code>no-cache</code>，浏览器每次都要全部重新下载。v2.0.4 起网关对 <code>/assets/*</code> 和带 <code>rev=</code> 的 <code>/plugins/*</code> 强制一年期 immutable 缓存（文件名/rev 都是内容哈希，dsh 更新会自动换新地址）。升级后<strong>第一次访问仍会完整下载一次，之后刷新秒进</strong>；如果升级后还慢，强刷一次浏览器（Ctrl+Shift+R）让新响应头生效。</li>
 <li><strong>npm 装 dsh 报错（allow-scripts / node-pty）？</strong> 跑 <code>npm config set allow-scripts=... --location=user</code> 并装 <code>sudo apt install build-essential</code>（本项目自己没这个问题，是 dsh 的依赖要编译）。</li>
 </ul>
-<h3>安全清单（都做了）</h3>
-<ul>
-<li>密码 bcrypt 哈希；安装密钥一次性使用；会话 12 小时 HttpOnly Cookie</li>
-<li>暴力破解：5 次失败锁 15 分钟；SQL 注入三层防护</li>
-<li>HTTPS：TLS 1.2 起步、Cookie <code>Secure</code>、HSTS、80 只跳转</li>
-<li>登录页安全头：严格 CSP、防点击劫持、禁缓存、禁嗅探</li>
-<li>数据静态加密：用户名/IP/审计记录密文落盘，旧明文自动迁移并清残留</li>
-<li>源码里没有任何秘密（密钥全在 <code>.env</code> 和数据库里），源码公开不影响安全</li>
-<li>路径穿越防护：<code>/gateway/../api/xxx</code> 类请求先规范化再鉴权，未登录一律拦下</li>
-<li>用户名枚举防护：用户不存在时也空跑一次 bcrypt，响应时序抹平</li>
-<li>开放重定向防护：<code>next</code> 参数白名单校验（拒绝 <code>\</code>、<code>%2F%2F</code>、控制字符）</li>
-<li>Host 伪造防护：80 跳转目标固定用 <code>MCP_GATEWAY_PUBLIC_HOST</code>，不反射请求 Host</li>
-<li>Cookie 畸形编码容错：不会因一条坏 Cookie 让整个站点 500</li>
-<li>CSRF 防护：登录/配置表单 double-submit token（Cookie + 隐藏域恒定时间比对，无 token 403）</li>
-<li>真实状态码：凭据错误 401、锁定 429（不再统一 200 吞错）</li>
-<li>代理层防嵌框：dsh 应用响应补 <code>X-Frame-Options: SAMEORIGIN</code> + <code>frame-ancestors &#39;self&#39;</code></li>
-</ul>
+<h3>安全与隐私</h3>
+<p>账号密码只存 bcrypt 哈希；用户名、IP、审计记录加密落盘；连续输错密码 5 次锁 15 分钟。所有密钥都在你自己的 <code>.env</code> 和数据库里，源码公开不影响安全。</p>
 <h3>License</h3>
 <p><a href="https://github.com/slywalker2006/dsh-passwords/blob/main/LICENSE">BSD 3-Clause</a> © 2026 slywalker2006——自由使用、修改、分发，保留版权声明即可。</p>
 <p>本项目是 dsh 的独立扩展，与 DeepSeek 无隶属关系。dsh 本身按它自己的许可证（MIT）授权。</p>
@@ -492,10 +544,10 @@ node dist/index.js serve-gateway --port 9000   # 换个端口启动
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 161</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
+      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 162</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
       <li><h3><a href="/zh/p/Jayden-X-L/forkprobe/" translate="no">Jayden-X-L/forkprobe</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/zh/p/Jayden-X-L/forkprobe/" tabindex="-1"><p>同一任务并行试跑多个技能，对比结果选出最优。</p></a></li>
-      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 33</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
-      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 28</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
+      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 34</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
+      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 29</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
       <li><h3><a href="/zh/p/DietCokewithSugar/dsh-user-experience/" translate="no">DietCokewithSugar/dsh-user-experience</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/zh/p/DietCokewithSugar/dsh-user-experience/" tabindex="-1"><p>帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-plugin-check/" translate="no">omdsh-dev/dsh-plugin-check</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-plugin-check/" tabindex="-1"><p>插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。</p></a></li>
     </ul>

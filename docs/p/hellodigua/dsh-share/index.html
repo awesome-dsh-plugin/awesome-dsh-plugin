@@ -190,12 +190,15 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://github.com/hellodigua/dsh-share/blob/main/README.md">简体中文</a> | English</p>
-<p>Turn a question-and-answer exchange in DSH into a PNG image. Copy it to the clipboard or download it.</p>
+<p>Turn one DSH Q&amp;A or selected Q&amp;A groups into a PNG image, or download them as Markdown.</p>
 <p><img src="https://raw.githubusercontent.com/hellodigua/dsh-share/main/assets/readme/share-dialog.webp" alt="dsh-share dialog preview"></p>
 <h3>Features</h3>
 <ul>
-<li>Adds a share button to the end of each assistant response</li>
-<li>Copies or downloads the conversation as a PNG image</li>
+<li>Enters Q&amp;A selection from the top-right action, with all groups selected by default</li>
+<li>The share action below any turn opens the same selection mode with only that Q&amp;A preselected</li>
+<li>Shows linked checkboxes beside both the question and answer, lets you click content to select a group, and supports non-contiguous selection</li>
+<li>Keeps a checkbox visible while scrolling through long content, then lets it leave at that question or answer&#39;s boundary</li>
+<li>Supports image copy, PNG download, and Markdown download</li>
 <li>Preserves Markdown, code blocks, tables, images, and tool call summaries</li>
 <li>Supports adjustable image widths and font sizes, with a scrollable preview for long images</li>
 <li>Can hide reasoning and tool calls, leaving only the question and final answer</li>
@@ -239,7 +242,8 @@ corepack pnpm pack --pack-destination ../local-plugins
 <p>The tarball includes the browser bundle, so installation does not need to run third-party build scripts.</p>
 <h3>Compatibility</h3>
 <p>This version targets npm <code>@deepseek-ai/dsh@0.1.0-rc.6</code> and declares DSH peers as <code>^0.1.0-rc.6</code>. Local development pins the exact rc.6 type packages, while the Web Profile still provides the shared runtime at deployment.</p>
-<p>The share button is mounted through the official <code>conversation.chat.assistant-actions</code> slot and is checked against the official Client types. It does not scan or modify the action bar DOM. Image generation reads the rendered <code>data-*</code> nodes for the current turn, so changes to DSH&#39;s conversation content structure may require an update to this plugin.</p>
+<p>The single-turn entry is mounted through the official <code>conversation.chat.assistant-actions</code> slot, while the conversation entry uses <code>conversation.session.header.utilities</code>. Both are checked against the official Client types and do not scan or modify the action bar DOM.</p>
+<p>DSH does not currently expose an additive slot for decorating the left side of a Q&amp;A. Only while selection mode is active, the plugin uses a <code>MutationObserver</code> and the official page&#39;s stable <code>data-conversation-scroll</code>, <code>data-chat-flow-kind</code>, and <code>data-turn-tail</code> attributes to add linked, sticky checkboxes beside the rendered question and answer. It does not depend on CSS Module class names. Links, disclosure controls, and other content interactions are temporarily disabled in selection mode, so clicking a question or answer toggles its whole group; normal interaction returns after exiting. Changes to those data attributes or the conversation structure may require a plugin update.</p>
 <h3>Development</h3>
 <p>You can install dependencies, run tests, and build the project without a local DSH checkout:</p>
 <pre><code class="language-sh">corepack pnpm install --frozen-lockfile
@@ -256,6 +260,7 @@ corepack pnpm build
 <li>Copying an image requires the browser Clipboard API. You can still download the PNG if clipboard permission is unavailable.</li>
 <li>Remote resources in the image must allow browser access. An unreadable resource is replaced with a transparent placeholder without stopping the rest of the image from rendering.</li>
 <li>Other chat apps may scale down very tall images. The plugin dialog only provides a clear, scrollable preview.</li>
+<li>Q&amp;A group selection covers completed turns already loaded by the page. Scroll upward first when older history is needed.</li>
 </ul>
 <h3>License</h3>
 <p>Licensed under the <a href="https://github.com/hellodigua/dsh-share/blob/main/LICENSE">MIT License</a>. Licenses for dependencies bundled into the browser build are listed in <a href="https://github.com/hellodigua/dsh-share/blob/main/THIRD_PARTY_LICENSES.md">THIRD_PARTY_LICENSES.md</a>.</p>
@@ -275,7 +280,7 @@ corepack pnpm build
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 35</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 36</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
       <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
       <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 22</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.</p></a></li>
       <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a></li>

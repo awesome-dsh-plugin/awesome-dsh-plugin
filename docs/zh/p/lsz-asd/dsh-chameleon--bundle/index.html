@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">lsz-asd/</span><wbr><span class="name">dsh-chameleon#bundle</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/dev/">开发与运行时</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,121 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><strong>自修改桌面工作台</strong> —— DeepSeek Harness (DSH) 的独立桌面客户端：完整 dsh web 功能 + 编辑模式（agent 边对话边改工作台，免重启热更新）。</p>
+<blockquote>
+<p>⚠️ <strong>编辑模式为半成品</strong>（实验性）：当前可改补丁层/插件并热更新，但 HMR 链路、工具集覆盖面与组合层变更仍有已知缺口（详见 <code>docs/DEVELOPMENT.md</code>），请勿在生产会话中依赖。</p>
+</blockquote>
+<h3>功能介绍</h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🖥️ 独立客户端</td>
+<td>双击即启动（3998 端口）；独立 <code>DSH_HOME</code>（<code>~/.dsh-chameleon</code>），与 web 完全隔离、可同时运行</td>
+</tr>
+<tr>
+<td>🚀 长上下文流畅</td>
+<td>消息列表渐进渲染 + 后台不节流 + zstd 本地回放，40 万 token 会话流畅滚动</td>
+</tr>
+<tr>
+<td>🎨 UI 微调</td>
+<td>无边框窗口 + 原生控件；智能拖拽区（样式表规则，重渲染不丢）；会话日志按钮自动避让</td>
+</tr>
+<tr>
+<td>✏️ 编辑模式</td>
+<td><code>selfedit</code> 预设：改补丁层/插件/UI 实时生效，编辑历史与回滚、<code>workbench_*</code> 工具集（<strong>半成品</strong>）</td>
+</tr>
+<tr>
+<td>🗑️ 会话删除（可选插件）</td>
+<td>头部按钮 + 侧栏菜单项（不跳转），弹框显示会话名与序列号；运行中可删（先停再删）；删除后原地刷新不重载。一行安装：<code>dsh plugin add github:lsz-asd/dsh-plugin-session-delete</code></td>
+</tr>
+<tr>
+<td>🔌 插件生态</td>
+<td>完整继承官方 dsh web 插件面（工具 / 会话 / 审批 / UI 等 130+ 组合行）+ 自研 workbench 插件 ×3；设备信息（12 个 <code>win_*</code> 工具）、sleep、会话健康等常用插件一行 <code>dsh plugin add</code> 按需安装</td>
+</tr>
+</tbody></table>
+<h3>安装说明</h3>
+<p><strong>只需装两样东西：dsh 本体（运行时）+ 我们的客户端。</strong> 除此之外不需要任何大依赖——不需要 pnpm、不需要单独的 Harness 源码；客户端<strong>不内置</strong>（更不会重复安装）运行时，保持轻量。</p>
+<h4>1. 装 dsh 本体（运行时）</h4>
+<pre><code class="language-sh">npm install -g @deepseek-ai/dsh
+</code></pre>
+<p>需要 <strong>Node.js ≥ 20</strong>（建议 24）：<a href="https://nodejs.org">https://nodejs.org</a></p>
+<h4>2. 装客户端</h4>
+<pre><code class="language-sh"># 获取源码
+git clone https://github.com/lsz-asd/dsh-chameleon.git
+cd dsh-chameleon/apps/desktop
+
+# 安装客户端（Electron 壳 + 几 KB 客户端代码，npm 或 pnpm 皆可）
+npm install        # 或 pnpm install
+
+# 启动（Windows 双击快捷方式，或）
+npm start
+</code></pre>
+<p>首次启动自动创建独立 home（<code>~/.dsh-chameleon</code>）、写入 chameleon profile，并把客户端的 4 个小包复制进 Harness 的模块回退目录——<strong>没有任何包管理器安装</strong>，几秒完成；之后秒开。</p>
+<blockquote>
+<p>客户端<strong>复用你已装的 dsh 本体</strong>：优先用全局安装（<code>npm i -g</code> 的位置），其次 PATH，最后才是本地副本——不会重复下载数百 MB 的 Harness。</p>
+</blockquote>
+<h4>可选：打包为安装程序（Windows）</h4>
+<pre><code class="language-sh">cd apps/desktop
+npm run dist    # electron-builder 生成 NSIS 安装器（dist/ 目录）
+</code></pre>
+<h4>插件安装（可选，任意 profile）</h4>
+<pre><code class="language-sh">dsh plugin --profile &lt;profile&gt; add github:lsz-asd/dsh-plugin-session-delete   # 会话删除
+dsh plugin --profile &lt;profile&gt; add github:lsz-asd/dsh-plugin-device-info      # 设备信息（12 个 win_* 工具）
+</code></pre>
+<p>重启 profile 生效。</p>
+<blockquote>
+<p><strong>插件管理是唯一需要 pnpm 的路径</strong>（<code>dsh plugin</code> 内部转发 pnpm）：<code>npm install -g pnpm</code>。客户端基线完全不需要。</p>
+</blockquote>
+<h3>更新计划</h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>编辑模式完善</strong>：HMR 链路加固、工具集补全（组合层变更热生效）</li>
+<li><input disabled="" type="checkbox"> <strong>Windows 安装包</strong>：发布 NSIS 安装器（<code>npm run dist</code> 产物上架 Release；<strong>不内置 dsh 运行时</strong>，复用系统 dsh 本体，客户端保持轻量）</li>
+<li><input disabled="" type="checkbox"> <strong>会话删除增强</strong>：fork 级联删除、删除事件总线广播（替代 reload）</li>
+<li><input disabled="" type="checkbox"> <strong>插件市场页</strong>：客户端内浏览/安装发布插件（对接 <code>dsh plugin</code>）</li>
+<li><input disabled="" type="checkbox"> <strong>会话迁移工具</strong>：跨 home 导入/导出会话</li>
+</ul>
+<h3>结构</h3>
+<pre><code>apps/desktop/    Electron 壳（自举独立 home + Chrome 注入）
+packages/        workbench-core / workbench-ui / workbench-runtime
+bundle/          补丁装配层
+presets/selfedit 编辑模式预设
+scripts/         自举与验证脚本
+</code></pre>
+<h3>版本历史</h3>
+<h4>v0.3.0 · 2026-08-14</h4>
+<ul>
+<li><strong>轻量安装重构</strong>：客户端不再内置 <code>@deepseek-ai/dsh</code>（依赖树由 ~646MB 降至纯 Electron 壳），改为<strong>复用系统 dsh 本体</strong>（全局安装 → PATH → 本地副本）</li>
+<li><strong>基线零 pnpm</strong>：profile 自举不再跑 <code>pnpm install</code>——客户端把自己的 4 个小包（bundle + workbench ×3）同步进 Harness 的扁平模块回退目录，随装随走；pnpm 仅剩「可选插件管理」一条路径</li>
+<li><strong>bundle 瘦身</strong>：移除指向本机绝对路径的 <code>@huanlin/dsh-plugin-session-delete</code> 依赖与补丁行（已独立成仓，按需 <code>dsh plugin add</code> 安装）</li>
+<li><strong>升级迁移</strong>：旧 pnpm 流程装出的 profile 自动归一化（清掉 <code>file:</code> 依赖与陈旧 <code>@dsh-external</code> 副本）</li>
+<li>客户端首次自举即向独立 home 播种编辑模式预设</li>
+</ul>
+<h4>v0.2.0 · 2026-08-14</h4>
+<ul>
+<li>会话删除重构：侧栏 &quot;...&quot; 菜单项<strong>不跳转对话</strong>，直接弹出确认框</li>
+<li>弹框显示<strong>会话名称与序列号</strong>；运行中的会话显示警告（&quot;删除会立即停止其任务…&quot;）但仍可删除</li>
+<li><strong>当前会话可直接删除</strong>；删除运行中会话时 host 先停止 agent（cancel + 等待静止）再清理</li>
+<li>删除后<strong>原地刷新列表</strong>（不重载页面），并从内存 store 摘除会话（修复&quot;已删会话残留在未分组&quot;）</li>
+<li>侧栏菜单按客户端列表匹配会话（修复 fork 后缀等标题差异导致的&quot;点了没反应&quot;）</li>
+</ul>
+<h4>v0.1.0 · 2026-08-14</h4>
+<ul>
+<li>首个发布版：独立客户端（独立 home、双击启动、免重启热更新）</li>
+<li>会话删除插件（当时随 bundle 分发：头部按钮 + 侧栏菜单项 + 风险确认 + 端到端清理）</li>
+<li>编辑模式（selfedit 预设 + workbench 工具集 + 3 个编辑技能）</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/lsz-asd/dsh-chameleon/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -198,10 +313,10 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 161</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
+      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 162</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
       <li><h3><a href="/zh/p/Jayden-X-L/forkprobe/" translate="no">Jayden-X-L/forkprobe</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/zh/p/Jayden-X-L/forkprobe/" tabindex="-1"><p>同一任务并行试跑多个技能，对比结果选出最优。</p></a></li>
-      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 33</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
-      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 28</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
+      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 34</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
+      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 29</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
       <li><h3><a href="/zh/p/DietCokewithSugar/dsh-user-experience/" translate="no">DietCokewithSugar/dsh-user-experience</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/zh/p/DietCokewithSugar/dsh-user-experience/" tabindex="-1"><p>帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-plugin-check/" translate="no">omdsh-dev/dsh-plugin-check</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-plugin-check/" tabindex="-1"><p>插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。</p></a></li>
     </ul>
