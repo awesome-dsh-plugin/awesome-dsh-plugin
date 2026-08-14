@@ -153,6 +153,13 @@
     <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
   </entry>
   <entry>
+    <title>dsh-prompt-stash</title>
+    <id>https://github.com/Wine-Red/dsh-prompt-stash</id>
+    <link href="https://github.com/Wine-Red/dsh-prompt-stash"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.</summary>
+  </entry>
+  <entry>
     <title>dsh-mneme</title>
     <id>https://github.com/modusensus/dsh-mneme</id>
     <link href="https://github.com/modusensus/dsh-mneme"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/ICCuse/dsh-knowledge"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Bridge into a global Markdown knowledge base shared with the Codex kb.cmd CLI: kb_add/kb_search/kb_show/kb_timeline tools with byte-compatible frontmatter.</summary>
-  </entry>
-  <entry>
-    <title>dsh-premise-guard</title>
-    <id>https://github.com/ICCuse/dsh-premise-guard</id>
-    <link href="https://github.com/ICCuse/dsh-premise-guard"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Post-compaction premise-drift guard: injects a one-shot notice when a compaction summary drops a critical literal anchor.</summary>
   </entry>
 </feed>

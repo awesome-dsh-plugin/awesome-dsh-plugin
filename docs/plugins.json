@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 190,
+ "count": 191,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -645,6 +645,18 @@
     "zh": "跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。"
    },
    "install": "dsh plugin --profile web add github:Chinesezjc/dsh-interconnect",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-prompt-stash",
+   "owner": "Wine-Red",
+   "url": "https://github.com/Wine-Red/dsh-prompt-stash",
+   "category": "session",
+   "description": {
+    "en": "Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.",
+    "zh": "本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。"
+   },
+   "install": "dsh plugin --profile web add github:Wine-Red/dsh-prompt-stash",
    "added": "2026-08-14"
   },
   {
