@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 179,
+ "count": 181,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -357,6 +357,18 @@
     "zh": "在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。"
    },
    "install": "dsh plugin --profile web add github:Sev7een/ds-api-usage",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-spend",
+   "owner": "nonewind",
+   "url": "https://github.com/nonewind/dsh-spend",
+   "category": "ui",
+   "description": {
+    "en": "Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.",
+    "zh": "DSH Web 用量与费用统计插件：右下角悬浮窗，按模型/按天/按会话多维聚合与预计花费。"
+   },
+   "install": "dsh plugin --profile web add github:nonewind/dsh-spend",
    "added": "2026-08-14"
   },
   {
@@ -2061,6 +2073,18 @@
     "zh": "让 dsh 运行时跑在 Multica 上。"
    },
    "install": "dsh plugin --profile web add github:forrestchang/dsh-multica-runtime",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-user-experience",
+   "owner": "DietCokewithSugar",
+   "url": "https://github.com/DietCokewithSugar/dsh-user-experience",
+   "category": "dev",
+   "description": {
+    "en": "Persona-driven UX review of React/TypeScript source: nine static rules for microcopy, state coverage, and dark mode, with per-finding confirm/reject cards.",
+    "zh": "以目标用户画像为前置输入的 React/TypeScript 源码 UX 走查：微文案/状态覆盖/深色模式 9 条规则，逐条定位并可确认/否决。"
+   },
+   "install": "dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience",
    "added": "2026-08-14"
   },
   {

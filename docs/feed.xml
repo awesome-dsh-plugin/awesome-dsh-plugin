@@ -41,6 +41,13 @@
     <summary>DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.</summary>
   </entry>
   <entry>
+    <title>dsh-spend</title>
+    <id>https://github.com/nonewind/dsh-spend</id>
+    <link href="https://github.com/nonewind/dsh-spend"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.</summary>
+  </entry>
+  <entry>
     <title>dsh-TUI</title>
     <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
     <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/ZK-Andy/dsh-continual-evolve"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.</summary>
-  </entry>
-  <entry>
-    <title>dsh-recommend</title>
-    <id>https://github.com/zp-home/dsh-recommend</id>
-    <link href="https://github.com/zp-home/dsh-recommend"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.</summary>
   </entry>
 </feed>
