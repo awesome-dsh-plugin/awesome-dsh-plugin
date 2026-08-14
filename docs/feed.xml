@@ -41,6 +41,13 @@
     <summary>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</summary>
   </entry>
   <entry>
+    <title>dsh-sticky-disclosure</title>
+    <id>https://github.com/Han-1413141/dsh-sticky-disclosure</id>
+    <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Areium/dsh-fail-logger"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Auto-log failed tool calls across native tools, PTC run_code, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.</summary>
-  </entry>
-  <entry>
-    <title>dsh-eval-harness</title>
-    <id>https://github.com/BiBoyang/dsh-eval-harness</id>
-    <link href="https://github.com/BiBoyang/dsh-eval-harness"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Evaluation harness for DSH plugins: YAML cases drive real headless agent runs, assert on tool calls, args, results and token usage, with a baseline gate for CI regression.</summary>
   </entry>
 </feed>

@@ -41,6 +41,13 @@
     <summary>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</summary>
   </entry>
   <entry>
+    <title>dsh-sticky-disclosure</title>
+    <id>https://github.com/Han-1413141/dsh-sticky-disclosure</id>
+    <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Areium/dsh-fail-logger"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。</summary>
-  </entry>
-  <entry>
-    <title>dsh-eval-harness</title>
-    <id>https://github.com/BiBoyang/dsh-eval-harness</id>
-    <link href="https://github.com/BiBoyang/dsh-eval-harness"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。</summary>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 134,
+ "count": 135,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -345,6 +345,18 @@
     "zh": "侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。"
    },
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-sticky-disclosure",
+   "owner": "Han-1413141",
+   "url": "https://github.com/Han-1413141/dsh-sticky-disclosure",
+   "category": "ui",
+   "description": {
+    "en": "One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.",
+    "zh": "一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。"
+   },
+   "install": "dsh plugin --profile web add github:Han-1413141/dsh-sticky-disclosure",
    "added": "2026-08-14"
   },
   {
