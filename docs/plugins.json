@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 353,
+ "count": 354,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -5344,6 +5344,21 @@
    "npm": null,
    "stars": 8,
    "install": "dsh plugin --profile web add github:PC2005-cloud/dsh-pet#path:/dsh-pet",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-MusicPlayer",
+   "owner": "xiekai886",
+   "url": "https://github.com/xiekai886/dsh-MusicPlayer",
+   "page": "https://awesome-dsh-plugin.com/p/xiekai886/dsh-MusicPlayer/",
+   "category": "fun",
+   "description": {
+    "en": "A collapsible/expandable draggable floating music player with NetEase Cloud Music playlist import and song/artist search — chat and listen at the same time.",
+    "zh": "可折叠/展开、自由拖动的悬浮音乐播放器，接入网易云音乐，支持歌单导入和按歌名或歌手搜索单曲导入，边对话边听歌。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:xiekai886/dsh-MusicPlayer",
    "added": "2026-08-14"
   }
  ]
