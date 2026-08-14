@@ -167,6 +167,13 @@
     <summary>Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.</summary>
   </entry>
   <entry>
+    <title>dsh-excel-vera-plugin</title>
+    <id>https://github.com/hccccc01333/dsh-excel-vera-plugin</id>
+    <link href="https://github.com/hccccc01333/dsh-excel-vera-plugin"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-polyglot"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.</summary>
-  </entry>
-  <entry>
-    <title>dsh-fail-logger</title>
-    <id>https://github.com/Areium/dsh-fail-logger</id>
-    <link href="https://github.com/Areium/dsh-fail-logger"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Auto-log failed tool calls across native tools, PTC run_code, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.</summary>
   </entry>
 </feed>

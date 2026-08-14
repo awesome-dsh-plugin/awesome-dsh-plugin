@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 135,
+ "count": 136,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -921,6 +921,18 @@
     "zh": "类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-docker",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-excel-vera-plugin",
+   "owner": "hccccc01333",
+   "url": "https://github.com/hccccc01333/dsh-excel-vera-plugin",
+   "category": "tools",
+   "description": {
+    "en": "Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.",
+    "zh": "检测并修复 Excel 公式静默错误：列 pattern 校验、语义 Formula IR 编译、确定性 + LLM 修复、oracle 判分与图表校验。"
+   },
+   "install": "dsh plugin --profile web add github:hccccc01333/dsh-excel-vera-plugin",
    "added": "2026-08-14"
   },
   {
