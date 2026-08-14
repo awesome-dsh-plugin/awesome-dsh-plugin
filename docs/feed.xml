@@ -139,6 +139,13 @@
     <summary>Compact right-edge turn rail with hover summaries and click-to-jump navigation.</summary>
   </entry>
   <entry>
+    <title>Sttrevens/dsh-cost-meter</title>
+    <id>https://github.com/Sttrevens/dsh-cost-meter</id>
+    <link href="https://github.com/Sttrevens/dsh-cost-meter"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</summary>
-  </entry>
-  <entry>
-    <title>Jesse-njx/dsh-memory</title>
-    <id>https://github.com/Jesse-njx/dsh-memory</id>
-    <link href="https://github.com/Jesse-njx/dsh-memory"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</summary>
   </entry>
 </feed>

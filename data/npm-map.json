@@ -687,6 +687,10 @@
   "npm": "dsh-builtin-toggles",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Sttrevens/dsh-cost-meter": {
+  "npm": "@steven-wu/dsh-cost-meter",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/suntianc/dsh-codex-auth": {
   "npm": "dsh-codex-auth",
   "checkedAt": "2026-08-14"

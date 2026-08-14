@@ -139,6 +139,13 @@
     <summary>右侧紧凑回合刻度条，悬停显示回合摘要，点击跳转到对应用户回合。</summary>
   </entry>
   <entry>
+    <title>Sttrevens/dsh-cost-meter</title>
+    <id>https://github.com/Sttrevens/dsh-cost-meter</id>
+    <link href="https://github.com/Sttrevens/dsh-cost-meter"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/nowledge-co/nowledge-mem-deepseek-harness"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</summary>
-  </entry>
-  <entry>
-    <title>Jesse-njx/dsh-memory</title>
-    <id>https://github.com/Jesse-njx/dsh-memory</id>
-    <link href="https://github.com/Jesse-njx/dsh-memory"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</summary>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 212,
+ "count": 213,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -569,6 +569,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "Sttrevens/dsh-cost-meter",
+   "owner": "Sttrevens",
+   "url": "https://github.com/Sttrevens/dsh-cost-meter",
+   "category": "ui",
+   "description": {
+    "en": "Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.",
+    "zh": "Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。"
+   },
+   "npm": "@steven-wu/dsh-cost-meter",
+   "install": "dsh plugin --profile web add @steven-wu/dsh-cost-meter",
    "added": "2026-08-14"
   },
   {
