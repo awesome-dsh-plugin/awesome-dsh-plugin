@@ -20,6 +20,13 @@
     <summary>LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.</summary>
   </entry>
   <entry>
+    <title>Bernardxu123/dsh-mobile-gate</title>
+    <id>https://github.com/Bernardxu123/dsh-mobile-gate</id>
+    <link href="https://github.com/Bernardxu123/dsh-mobile-gate"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>LAN mobile gateway: isolated child-process reverse proxy with first-visit approval, per-device token binding, rate limiting, and mobile layout injection (compact composer pills, randomUUID polyfill).</summary>
+  </entry>
+  <entry>
     <title>Noob-stupid/dsh-plugin-hub</title>
     <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
     <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Meredith2328/dsh-sticky-note"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Quick sticky notes on the composer toolbar: jot ideas or TODOs, auto-saved as Markdown, one click to send into the chat.</summary>
-  </entry>
-  <entry>
-    <title>Luaphes/dsh-web-attention-badge</title>
-    <id>https://github.com/Luaphes/dsh-web-attention-badge</id>
-    <link href="https://github.com/Luaphes/dsh-web-attention-badge"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.</summary>
   </entry>
 </feed>
