@@ -4,6 +4,8 @@
 
 English | [中文](README.zh.md)
 
+> 📌 **Fork notice:** this is a personal mirror of the upstream [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) list, kept in sync for reference. It is not an independently curated list — please star and send PRs to the upstream (or to [AdamPlatin123/awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins)) rather than this fork.
+
 > A curated list of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
 DeepSeek Harness is DeepSeek's open-source agent harness — a runnable coding agent (Web and headless), built on a framework where everything is a plugin: models, tools, sandboxes, session storage, UI, even the agent loop itself. Plugins can extend the official coding agent, swap out its core parts, or assemble something entirely different.
@@ -18,7 +20,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
-**252** plugins · [PRs welcome](#contributing)
+**260** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -97,6 +99,7 @@ dsh plugin --profile web add dshmarket
 - [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) - Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.
 - [LaoYueHanNi/dsh-token-usage](https://github.com/LaoYueHanNi/dsh-token-usage) - Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.
 - [QT-Chen/dsh-mic-input](https://github.com/QT-Chen/dsh-mic-input) - Microphone voice input for the composer: browser Web Speech API live transcription, dedupe/auto-continue, smart punctuation, language and auto-send settings.
+- [LeslieWylie/dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) - Markdown preview drawer for the DSH web GUI: browse, render, edit, and export to standalone HTML without leaving the session. Zero runtime dependencies.
 
 
 ### Themes & Appearance
@@ -214,6 +217,9 @@ dsh plugin --profile web add dshmarket
 - [PicGo/dsh-plugin](https://github.com/PicGo/dsh-plugin) - Upload local images and files to your image host through PicGo's existing configuration (PicGo Cloud, GitHub, S3, COS, Qiniu, or any installed uploader plugin), via a `picgo_upload` tool and a `/picgo` command.
 - [mafeis/dsh-net-proxy](https://github.com/mafeis/dsh-net-proxy) - Route agent network requests through a local HTTP/CONNECT/SOCKS5 proxy.
 - [bwndlct/dsh-session-audit](https://github.com/bwndlct/dsh-session-audit) - Session execution analytics: steps, tool calls, failures, repeated actions, token usage and verification signals, rendered as text/Markdown/JSON reports.
+- [LeslieWylie/dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) - Evidence-driven memory, multi-agent orchestration, benchmark operations, and plugin-release workflow bundled as one reusable DSH toolkit: capability catalog, workflow planner, skill reader, memory search, repository audit, and release checklist tools.
+- [LeslieWylie/dsh-fleet-audit](https://github.com/LeslieWylie/dsh-fleet-audit) - Read-only agent-fleet hygiene audit: credential-file permissions, embedded git-remote credentials (masked), and provider token literals. Zero-dependency, deterministic.
+- [LeslieWylie/dsh-md-html-render](https://github.com/LeslieWylie/dsh-md-html-render) - Markdown→HTML rendering tool: renders Markdown into a standalone styled web page, returned inline or written to disk. Zero dependencies.
 
 ### Skills
 - [creght-dev/skills](https://github.com/creght-dev/skills) - Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.
@@ -240,6 +246,9 @@ dsh plugin --profile web add dshmarket
 - [btspoony/mstar-harness](https://github.com/btspoony/mstar-harness) - Skill-driven harness/loop engineering workflow agent plugin.
 - [Letter2025/dsh-approval-llm](https://github.com/Letter2025/dsh-approval-llm) - Model-based permission approval: an approval-request answerer backed by a separate reviewer model.
 - [Letter2025/dsh-model-failover](https://github.com/Letter2025/dsh-model-failover) - Two-level model circuit breaker with failover: trip a model or a whole provider after repeated request failures and route the next request to a configured fallback.
+- [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) - Cross-session task relay board: task push/list/claim/done plus handoff write/read, for coordinating agents and subagents across sessions.
+- [LeslieWylie/review-workflow](https://github.com/LeslieWylie/review-workflow) - Multi-panelist review workflow skill: independent panelist scoring, chair calibration, and a critic re-review pass, with a 6-step/6-checkpoint control flow.
+- [LeslieWylie/agent-loop-workflow](https://github.com/LeslieWylie/agent-loop-workflow) - Generic multi-agent collaboration workflow skeleton: loop guard, handoff format, three-tier risk triage, delivery ordering, and a review-to-close protocol.
 
 
 ### Notifications & Integrations
