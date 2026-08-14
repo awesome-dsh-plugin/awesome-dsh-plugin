@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 140,
+ "count": 143,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -960,6 +960,18 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-context-proxy",
+   "owner": "EvilIrving",
+   "url": "https://github.com/EvilIrving/dsh-context-proxy",
+   "category": "tools",
+   "description": {
+    "en": "Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.",
+    "zh": "按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。"
+   },
+   "install": "dsh plugin --profile web add github:EvilIrving/dsh-context-proxy",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh_workflow",
    "owner": "icetomoyo",
    "url": "https://github.com/icetomoyo/dsh_workflow",
@@ -1113,6 +1125,18 @@
     "zh": "面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。"
    },
    "install": "dsh plugin --profile web add github:biociao/dsh-science",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-proof",
+   "owner": "EvilIrving",
+   "url": "https://github.com/EvilIrving/dsh-proof",
+   "category": "workflow",
+   "description": {
+    "en": "Independent read-only acceptance layer: spawns a read-only verifier before each top-level turn closes and steers non-pass gaps back into the agent.",
+    "zh": "独立只读验收层：顶层 turn 收尾前 spawn 只读 verifier，未通过时把缺口注回主 agent。"
+   },
+   "install": "dsh plugin --profile web add github:EvilIrving/dsh-proof",
    "added": "2026-08-14"
   },
   {
@@ -1581,6 +1605,18 @@
     "zh": "设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。"
    },
    "install": "dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-repro",
+   "owner": "EvilIrving",
+   "url": "https://github.com/EvilIrving/dsh-repro",
+   "category": "dev",
+   "description": {
+    "en": "/repro exports a minimal, secret-scrubbed, replayable problem bundle: the session log, failed commands, and git diff.",
+    "zh": "/repro 导出最小可复现问题包：去 secret 的会话日志、失败命令与 git diff。"
+   },
+   "install": "dsh plugin --profile web add github:EvilIrving/dsh-repro",
    "added": "2026-08-14"
   },
   {

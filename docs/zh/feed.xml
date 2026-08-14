@@ -188,6 +188,13 @@
     <summary>检测并修复 Excel 公式静默错误：列 pattern 校验、语义 Formula IR 编译、确定性 + LLM 修复、oracle 判分与图表校验。</summary>
   </entry>
   <entry>
+    <title>dsh-context-proxy</title>
+    <id>https://github.com/EvilIrving/dsh-context-proxy</id>
+    <link href="https://github.com/EvilIrving/dsh-context-proxy"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/biociao/dsh-science"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。</summary>
-  </entry>
-  <entry>
-    <title>deepseek-harness-acp</title>
-    <id>https://github.com/openma-ai/deepseek-harness-acp</id>
-    <link href="https://github.com/openma-ai/deepseek-harness-acp"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。</summary>
   </entry>
 </feed>

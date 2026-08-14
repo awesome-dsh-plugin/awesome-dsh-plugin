@@ -188,6 +188,13 @@
     <summary>Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.</summary>
   </entry>
   <entry>
+    <title>dsh-context-proxy</title>
+    <id>https://github.com/EvilIrving/dsh-context-proxy</id>
+    <link href="https://github.com/EvilIrving/dsh-context-proxy"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/biociao/dsh-science"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.</summary>
-  </entry>
-  <entry>
-    <title>deepseek-harness-acp</title>
-    <id>https://github.com/openma-ai/deepseek-harness-acp</id>
-    <link href="https://github.com/openma-ai/deepseek-harness-acp"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>ACP profile plugin and standalone stdio server for using the full DSH agent from Zed and other ACP clients while sharing DSH credentials and sessions.</summary>
   </entry>
 </feed>
