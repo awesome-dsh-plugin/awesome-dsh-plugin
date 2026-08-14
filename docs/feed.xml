@@ -188,11 +188,11 @@
     <summary>Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.</summary>
   </entry>
   <entry>
-    <title>dsh-excel-vera-plugin</title>
-    <id>https://github.com/hccccc01333/dsh-excel-vera-plugin</id>
-    <link href="https://github.com/hccccc01333/dsh-excel-vera-plugin"/>
+    <title>dsh-excel-chat</title>
+    <id>https://github.com/hccccc01333/dsh-excel-chat</id>
+    <link href="https://github.com/hccccc01333/dsh-excel-chat"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.</summary>
+    <summary>Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.</summary>
   </entry>
   <entry>
     <title>dsh-context-proxy</title>

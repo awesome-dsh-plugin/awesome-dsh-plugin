@@ -960,15 +960,15 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dsh-excel-vera-plugin",
+   "name": "dsh-excel-chat",
    "owner": "hccccc01333",
-   "url": "https://github.com/hccccc01333/dsh-excel-vera-plugin",
+   "url": "https://github.com/hccccc01333/dsh-excel-chat",
    "category": "tools",
    "description": {
-    "en": "Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.",
-    "zh": "检测并修复 Excel 公式静默错误：列 pattern 校验、语义 Formula IR 编译、确定性 + LLM 修复、oracle 判分与图表校验。"
+    "en": "Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.",
+    "zh": "在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。"
    },
-   "install": "dsh plugin --profile web add github:hccccc01333/dsh-excel-vera-plugin",
+   "install": "dsh plugin --profile web add github:hccccc01333/dsh-excel-chat",
    "added": "2026-08-14"
   },
   {

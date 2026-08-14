@@ -188,11 +188,11 @@
     <summary>类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。</summary>
   </entry>
   <entry>
-    <title>dsh-excel-vera-plugin</title>
-    <id>https://github.com/hccccc01333/dsh-excel-vera-plugin</id>
-    <link href="https://github.com/hccccc01333/dsh-excel-vera-plugin"/>
+    <title>dsh-excel-chat</title>
+    <id>https://github.com/hccccc01333/dsh-excel-chat</id>
+    <link href="https://github.com/hccccc01333/dsh-excel-chat"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>检测并修复 Excel 公式静默错误：列 pattern 校验、语义 Formula IR 编译、确定性 + LLM 修复、oracle 判分与图表校验。</summary>
+    <summary>在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。</summary>
   </entry>
   <entry>
     <title>dsh-context-proxy</title>
