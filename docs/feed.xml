@@ -153,6 +153,13 @@
     <summary>Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.</summary>
   </entry>
   <entry>
+    <title>bobcat848/dsh-calculator</title>
+    <id>https://github.com/bobcat848/dsh-calculator</id>
+    <link href="https://github.com/bobcat848/dsh-calculator"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Wine-Red/dsh-prompt-stash"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.</summary>
-  </entry>
-  <entry>
-    <title>modusensus/dsh-mneme</title>
-    <id>https://github.com/modusensus/dsh-mneme</id>
-    <link href="https://github.com/modusensus/dsh-mneme"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</summary>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 216,
+ "count": 217,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -595,6 +595,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:a903067276-rgb/dsh-file-mentions",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "bobcat848/dsh-calculator",
+   "owner": "bobcat848",
+   "url": "https://github.com/bobcat848/dsh-calculator",
+   "category": "ui",
+   "description": {
+    "en": "DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.",
+    "zh": "右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:bobcat848/dsh-calculator",
    "added": "2026-08-14"
   },
   {

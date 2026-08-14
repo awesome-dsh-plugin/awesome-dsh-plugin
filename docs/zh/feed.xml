@@ -153,6 +153,13 @@
     <summary>DSH 回复中的文件路径可点击：Codex 风格行内打开、文件管理器定位、回合尾部文件 chip 列表。</summary>
   </entry>
   <entry>
+    <title>bobcat848/dsh-calculator</title>
+    <id>https://github.com/bobcat848/dsh-calculator</id>
+    <link href="https://github.com/bobcat848/dsh-calculator"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Wine-Red/dsh-prompt-stash"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。</summary>
-  </entry>
-  <entry>
-    <title>modusensus/dsh-mneme</title>
-    <id>https://github.com/modusensus/dsh-mneme</id>
-    <link href="https://github.com/modusensus/dsh-mneme"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</summary>
   </entry>
 </feed>
