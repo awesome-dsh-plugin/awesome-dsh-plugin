@@ -15,6 +15,7 @@ import LOCALES from '../site/locales.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
+const NPM_MAP_FILE = 'data/npm-map.json'
 const CAT_IDS = ['ui', 'theme', 'session', 'memory', 'tools', 'workflow', 'notify', 'model', 'dev', 'fun']
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -56,6 +57,7 @@ const N = ordered.length
 
 // added-date ledger: existing URLs keep their date, new URLs are stamped today
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
+const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const today0 = new Date().toISOString().slice(0, 10)
 for (const e of ordered) if (!dates[e.url]) dates[e.url] = today0
 fs.writeFileSync(DATES_FILE, JSON.stringify(Object.fromEntries(Object.entries(dates).sort()), null, 1))
@@ -226,15 +228,22 @@ const registry = {
   updated: [...ordered].map((e) => e.added).sort().pop(),
   count: N,
   categories: Object.fromEntries(CAT_IDS.map((id) => [id, Object.fromEntries(LOCALES.map((l) => [l.code, l.categories[id]]))])),
-  plugins: ordered.map((e) => ({
-    name: e.name,
-    owner: e.owner,
-    url: e.url,
-    category: e.cat,
-    description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
-    install: `dsh plugin --profile web add github:${e.url.replace('https://github.com/', '')}`,
-    added: e.added,
-  })),
+  plugins: ordered.map((e) => {
+    // Registry installs beat full-repo GitHub tarballs (smaller, prebuilt, CDN);
+    // the probe (scripts/probe-npm.mjs) only maps packages whose repository
+    // field points back at the listed repo.
+    const npm = npmMap[e.url]?.npm ?? null
+    return {
+      name: e.name,
+      owner: e.owner,
+      url: e.url,
+      category: e.cat,
+      description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
+      npm,
+      install: `dsh plugin --profile web add ${npm ?? `github:${e.url.replace('https://github.com/', '')}`}`,
+      added: e.added,
+    }
+  }),
 }
 fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 

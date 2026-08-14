@@ -3,7 +3,7 @@ name: Build site from README
 on:
   push:
     branches: [main]
-    paths: ['README.md', 'README.zh.md', 'scripts/build-site.mjs']
+    paths: ['README.md', 'README.zh.md', 'scripts/build-site.mjs', 'scripts/probe-npm.mjs']
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,9 @@ jobs:
         with:
           node-version: 22
       - name: Build site rows from READMEs
-        run: node scripts/build-site.mjs
+        run: |
+          node scripts/probe-npm.mjs
+          node scripts/build-site.mjs
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
