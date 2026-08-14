@@ -104,6 +104,13 @@
     <summary>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</summary>
   </entry>
   <entry>
+    <title>dsh-peer-link</title>
+    <id>https://github.com/czm15053/dsh-peer-link</id>
+    <link href="https://github.com/czm15053/dsh-peer-link"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).</summary>
+  </entry>
+  <entry>
     <title>dsh-file-claim</title>
     <id>https://github.com/Nwflower/dsh-file-claim</id>
     <link href="https://github.com/Nwflower/dsh-file-claim"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/liustack/modlens"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</summary>
-  </entry>
-  <entry>
-    <title>dsh-market</title>
-    <id>https://github.com/dsh-market/dsh-market</id>
-    <link href="https://github.com/dsh-market/dsh-market"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.</summary>
   </entry>
 </feed>

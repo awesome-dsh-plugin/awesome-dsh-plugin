@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 176,
+ "count": 178,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -550,6 +550,18 @@
    },
    "install": "dsh plugin --profile web add github:Moeblack/dsh-prompt-studio",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-peer-link",
+   "owner": "czm15053",
+   "url": "https://github.com/czm15053/dsh-peer-link",
+   "category": "session",
+   "description": {
+    "en": "Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).",
+    "zh": "让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。"
+   },
+   "install": "dsh plugin --profile web add github:czm15053/dsh-peer-link",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-chat-import",
@@ -1245,6 +1257,18 @@
     "zh": "Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。"
    },
    "install": "dsh plugin --profile web add github:Lum1104/dsh-browser",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-webui-market-plugin",
+   "owner": "Sanqi-normal",
+   "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
+   "category": "tools",
+   "description": {
+    "en": "In-harness plugin market for the dsh web GUI: browse the awesome-dsh-plugin.com catalog and install/uninstall plugins into a profile from Settings → Plugins → Plugin Market.",
+    "zh": "dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。"
+   },
+   "install": "dsh plugin --profile web add github:Sanqi-normal/dsh-webui-market-plugin",
    "added": "2026-08-14"
   },
   {
