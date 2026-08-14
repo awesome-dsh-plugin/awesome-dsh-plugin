@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 151,
+ "count": 152,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -545,8 +545,8 @@
    "url": "https://github.com/Nwflower/dsh-chat-import",
    "category": "session",
    "description": {
-    "en": "Import Claude Code / Codex / ChatGPT / Cursor chat histories as resumable DeepSeek Harness sessions.",
-    "zh": "把 Claude Code / Codex / ChatGPT / Cursor 的聊天记录全保真导入为可续聊的 DSH 会话。"
+    "en": "Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode chat histories as resumable DeepSeek Harness sessions.",
+    "zh": "把 Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode 的聊天记录全保真导入为可续聊的 DSH 会话。"
    },
    "install": "dsh plugin --profile web add github:Nwflower/dsh-chat-import",
    "added": "2026-08-13"
@@ -1521,6 +1521,18 @@
     "zh": "DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-polyglot",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-codex-connect",
+   "owner": "franksong2702",
+   "url": "https://github.com/franksong2702/dsh-codex-connect",
+   "category": "dev",
+   "description": {
+    "en": "Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.",
+    "zh": "通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。"
+   },
+   "install": "dsh plugin --profile web add github:franksong2702/dsh-codex-connect",
    "added": "2026-08-14"
   },
   {
