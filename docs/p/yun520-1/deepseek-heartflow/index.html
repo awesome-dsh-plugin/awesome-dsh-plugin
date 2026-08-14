@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"yun520-1/deepseek-heartflow","url":"https://awesome-dsh-plugin.com/p/yun520-1/deepseek-heartflow/","description":"HeartFlow (心虫) AGI layer-1 discriminator gate as a DSH plugin: 47-dimension rule-based text checking (heartflow_check tool) plus automatic output supervision at tools/post-execute, fail-closed when engine missing.","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/yun520-1/deepseek-heartflow"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All plugins","item":"https://awesome-dsh-plugin.com/"},{"@type":"ListItem","position":2,"name":"Tools & Capabilities","item":"https://awesome-dsh-plugin.com/tools/"},{"@type":"ListItem","position":3,"name":"yun520-1/deepseek-heartflow","item":"https://awesome-dsh-plugin.com/p/yun520-1/deepseek-heartflow/"}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"yun520-1/deepseek-heartflow","url":"https://awesome-dsh-plugin.com/p/yun520-1/deepseek-heartflow/","description":"HeartFlow (心虫) AGI layer-1 discriminator gate as a DSH plugin: 47-dimension rule-based text checking (heartflow_check tool) plus automatic output supervision at tools/post-execute, fail-closed when engine missing.","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/yun520-1/deepseek-heartflow","https://www.npmjs.com/package/@yun520-1/deepseek-heartflow"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All plugins","item":"https://awesome-dsh-plugin.com/"},{"@type":"ListItem","position":2,"name":"Tools & Capabilities","item":"https://awesome-dsh-plugin.com/tools/"},{"@type":"ListItem","position":3,"name":"yun520-1/deepseek-heartflow","item":"https://awesome-dsh-plugin.com/p/yun520-1/deepseek-heartflow/"}]}]</script>
 <style>
 :root{
   --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
@@ -171,6 +171,7 @@ footer p+p{margin-top:.5rem}
         <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
+        <span>npm <a href="https://www.npmjs.com/package/@yun520-1/deepseek-heartflow" rel="noopener" translate="no">@yun520-1/deepseek-heartflow</a></span>
       </div>
     </div>
   </div>
@@ -181,6 +182,8 @@ footer p+p{margin-top:.5rem}
 
   <section class="panel">
     <h2>Install</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># from npm (prebuilt)</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add @yun520-1/deepseek-heartflow</pre><button type="button" data-cmd="dsh plugin --profile web add @yun520-1/deepseek-heartflow" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:yun520-1/deepseek-heartflow</pre><button type="button" data-cmd="dsh plugin --profile web add github:yun520-1/deepseek-heartflow" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
@@ -194,11 +197,26 @@ footer p+p{margin-top:.5rem}
 它不生成、不推理、不记忆、不执行，只判别已有的东西对不对。
 大模型能产生无限内容，但需要谁来判别？心虫是那个判别者。</p>
 </blockquote>
-<p>本插件把心虫的 <strong>47 维纯规则判别引擎</strong>接入 DeepSeek Harness (dsh)，让模型的每一步输出在到达用户之前，先过一道辨别门禁。</p>
+<p>本插件把心虫<strong>完整引擎</strong>（47 维判别 + 131 子系统路由）接入 DeepSeek Harness (dsh)，让模型的每一步输出在到达用户之前，先过一道辨别门禁。</p>
 <p><strong>核心价值</strong>：减少大模型产生的疑问和幻觉——过度自信、自相矛盾、逻辑谬误、情绪操控、非人化、仇恨言论，在说出口之前拦下。</p>
 <hr>
 <h3>✨ 功能</h3>
-<h4>10 个工具</h4>
+<h4>完整继承原始心虫全部能力</h4>
+<p>本插件不是精简版——它加载心虫<strong>完整引擎</strong>（<code>HeartFlow</code> 类 + <code>gate.js</code> 判别层）：</p>
+<ul>
+<li>✅ <strong>7 个 gate 入口</strong>：<code>gate</code> / <code>check</code> / <code>pipeline</code> / <code>runPipeline</code> / <code>discriminate</code> / <code>checkInput</code> / <code>checkDraft</code> / <code>checkOutput</code></li>
+<li>✅ <strong>48 个单维判别函数</strong>（过度自信/伪因果/矛盾/谬误/非人化/操控…）</li>
+<li>✅ <strong>131 个引擎子系统 × 上千方法</strong>（心理/情绪/决策/记忆/真相/教训/梦境/自愈/反思…）</li>
+<li>✅ <strong>3 个辅助</strong>：<code>summarizeDiscrimination</code> / <code>crossAnalyze</code> / <code>entropyAnalysis</code></li>
+</ul>
+<p>引擎来源（按优先级）：</p>
+<ol>
+<li>环境变量 <code>HEARTFLOW_ENGINE_PATH</code>（判别层）<code>HEARTFLOW_FULL_PATH</code>（完整引擎）</li>
+<li>npm 包 <code>@yun520-1/heartflow</code></li>
+<li>插件同级 <code>node_modules/@yun520-1/heartflow</code></li>
+</ol>
+<h4>26 个工具</h4>
+<p><strong>判别工具群（10 个）</strong> — AGI 第 1 层门禁：</p>
 <table>
 <thead>
 <tr>
@@ -208,50 +226,150 @@ footer p+p{margin-top:.5rem}
 </thead>
 <tbody><tr>
 <td><code>heartflow_check</code></td>
-<td><strong>完整 47 维判别</strong>。返回 <code>gate.action</code>（block/rewrite/verify/pass）+ 全部 findings 修正指引</td>
+<td><strong>完整 47 维判别</strong>。<code>gate.action</code>（block/rewrite/verify/pass）+ 全部 findings 修正指引</td>
 </tr>
 <tr>
 <td><code>heartflow_analyze</code></td>
-<td><strong>深度分析</strong>。全维度打分（<code>discriminate</code>）+ 交叉分析（<code>crossAnalyze</code>）+ 摘要（<code>summarizeDiscrimination</code>）</td>
+<td><strong>深度分析</strong>。全维度打分 + 交叉分析 + 摘要</td>
 </tr>
 <tr>
 <td><code>heartflow_verdict</code></td>
-<td><strong>快速裁决</strong>。只返回 action + 一句话原因 + 顶部 3 个 findings，token 友好</td>
+<td><strong>快速裁决</strong>。action + 一句话原因 + top3 findings，token 友好</td>
 </tr>
 <tr>
 <td><code>heartflow_dimensions</code></td>
-<td><strong>维度清单</strong>。列出全部判别维度 + 引擎版本</td>
+<td><strong>维度清单</strong>。全部判别维度 + 引擎版本 + 子系统数</td>
 </tr>
 <tr>
 <td><code>heartflow_pipeline</code></td>
-<td><strong>管道模式</strong>。完整 gate 生命周期：input(输入) / draft(草稿) / output(输出) 三阶段，返回 action + checked_by</td>
+<td><strong>管道模式</strong>。input/draft/output 三阶段完整生命周期</td>
 </tr>
 <tr>
 <td><code>heartflow_check_input</code></td>
-<td><strong>输入检查</strong>。用户消息进入 agent 前拦截提示注入/恶意指令/仇恨言论</td>
+<td><strong>输入检查</strong>。用户消息进 agent 前拦截提示注入/恶意</td>
 </tr>
 <tr>
 <td><code>heartflow_check_draft</code></td>
-<td><strong>草稿检查</strong>。模型回复前拦截过度自信/矛盾/情绪操控/非人化</td>
+<td><strong>草稿检查</strong>。回复前拦截过度自信/矛盾/操控</td>
 </tr>
 <tr>
 <td><code>heartflow_check_output</code></td>
-<td><strong>输出检查</strong>。最终输出前拦截编造数据/无来源声明/过度声称</td>
+<td><strong>输出检查</strong>。最终输出拦编造数据/过度声称</td>
 </tr>
 <tr>
 <td><code>heartflow_discriminate</code></td>
-<td><strong>全维度原始打分</strong>。每个维度的命中/得分 + 门禁判定</td>
+<td><strong>全维度原始打分</strong>。逐维命中/得分</td>
 </tr>
 <tr>
 <td><code>heartflow_evidence</code></td>
-<td><strong>带证据检查</strong>。<code>gate(text, evidence)</code> 提供证据做事实一致性/伪证据判别</td>
+<td><strong>带证据检查</strong>。<code>gate(text, evidence)</code> 事实一致性</td>
 </tr>
 </tbody></table>
+<p><strong>引擎路由（2 个）</strong> — 完整能力面动态访问：</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>heartflow_routes</code></td>
+<td><strong>能力面</strong>。列出 131 子系统 × 方法数（动态，随引擎升级自动更新）</td>
+</tr>
+<tr>
+<td><code>heartflow_route</code></td>
+<td><strong>通用路由</strong>。调用任意 <code>subsystem.method</code>（如 <code>emotion.process</code> / <code>decision.decide</code>）</td>
+</tr>
+</tbody></table>
+<p><strong>常用能力专用工具（14 个）</strong> — 高频能力即开即用：</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>路由</th>
+<th>能力</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>heartflow_psychology</code></td>
+<td><code>psychology.analyzePsychology</code></td>
+<td>心理分析：意图/需求/防御/危机</td>
+</tr>
+<tr>
+<td><code>heartflow_emotion</code></td>
+<td><code>emotion.process</code></td>
+<td>情绪 PAD 三维识别</td>
+</tr>
+<tr>
+<td><code>heartflow_crisis</code></td>
+<td><code>psychology.checkCrisis</code></td>
+<td>危机检测（自杀/自伤/暴力）</td>
+</tr>
+<tr>
+<td><code>heartflow_decide</code></td>
+<td><code>decision.decide</code></td>
+<td>决策引擎（风险/收益/身份对齐）</td>
+</tr>
+<tr>
+<td><code>heartflow_verify</code></td>
+<td><code>verify.verify</code></td>
+<td>执行结果验证</td>
+</tr>
+<tr>
+<td><code>heartflow_confidence</code></td>
+<td><code>confidence.calibrate</code></td>
+<td>置信度校准</td>
+</tr>
+<tr>
+<td><code>heartflow_truth</code></td>
+<td><code>truth.checkStatement</code></td>
+<td>事实核查（证据支撑）</td>
+</tr>
+<tr>
+<td><code>heartflow_lesson</code></td>
+<td><code>lesson.getTopLessons</code></td>
+<td>教训库（最高价值教训）</td>
+</tr>
+<tr>
+<td><code>heartflow_introspect</code></td>
+<td><code>heartflow.introspect</code></td>
+<td>自我审视（状态/能力/待改进）</td>
+</tr>
+<tr>
+<td><code>heartflow_dream</code></td>
+<td><code>dream.dream</code></td>
+<td>梦境引擎（认知状态编织）</td>
+</tr>
+<tr>
+<td><code>heartflow_memory_search</code></td>
+<td><code>memory.search</code></td>
+<td>记忆检索</td>
+</tr>
+<tr>
+<td><code>heartflow_memory_stats</code></td>
+<td><code>memory.getStats</code></td>
+<td>记忆分层统计</td>
+</tr>
+<tr>
+<td><code>heartflow_restraint</code></td>
+<td><code>restraint.shouldIntervene</code></td>
+<td>克制判断（话多/应沉默检测）</td>
+</tr>
+<tr>
+<td><code>heartflow_admit</code></td>
+<td><code>confidence.admit</code></td>
+<td>诚实认错（不确定性识别）</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 任何未列出的能力都可以用 <code>heartflow_route</code> 直接调用——131 个子系统全部可达。</p>
+</blockquote>
 <h4>双防线自动监督钩子</h4>
-<p>模型每次工具调用的参数都会被心虫自动判别（<code>tools/pre-execute</code> + <code>tools/post-execute</code>，dsh guard 标准注入点）：</p>
+<p>模型每次工具调用的参数都会被心虫自动判别（<code>tools/pre-execute</code> + <code>tools/post-execute</code>）：</p>
 <p><strong>前置防线 <code>tools/pre-execute</code></strong> — 工具<strong>执行前</strong>判别参数：</p>
 <ul>
-<li><strong><code>block</code> 级</strong>：返回 <code>{kind:&#39;deny&#39;}</code> <strong>直接拒绝执行</strong>（危险内容/命令在运行前拦下，不浪费执行）</li>
+<li><strong><code>block</code> 级</strong>：返回 <code>{kind:&#39;deny&#39;}</code> <strong>直接拒绝执行</strong>（危险内容/命令在运行前拦下）</li>
 </ul>
 <p><strong>后置防线 <code>tools/post-execute</code></strong> — 执行后判别：</p>
 <ul>
@@ -259,19 +377,28 @@ footer p+p{margin-top:.5rem}
 <li><strong><code>rewrite</code>/<code>verify</code> 级</strong>：注入提醒（<code>additionalContexts</code>），不硬拦</li>
 </ul>
 <h4>47 维判别能力（AGI 第 1 层）</h4>
-<blockquote>
-<p>本插件<strong>完整继承</strong>原始心虫全部能力——7 个 gate 入口（<code>gate</code>/<code>check</code>/<code>pipeline</code>/<code>runPipeline</code>/<code>discriminate</code>/<code>checkInput</code>/<code>checkDraft</code>/<code>checkOutput</code>）+ 48 个单维判别函数 + 3 个辅助（<code>summarizeDiscrimination</code>/<code>crossAnalyze</code>/<code>entropyAnalysis</code>），全部暴露为 dsh 工具。</p>
-</blockquote>
 <p><strong>内容安全</strong>：仇恨言论 · 非人化 · 情绪操控 · 双重束缚 · 煤气灯效应 · 受害者有罪论 · 狗哨政治 · 刻板印象 · 道德绑架 · 隐私越界</p>
 <p><strong>逻辑谬误</strong>：伪因果 · 滑坡谬误 · 稻草人 · 错误类比 · 诉诸权威 · 以偏概全 · 转移话题 · 非黑即白 · 事实不一致</p>
 <p><strong>认知问题</strong>：过度自信 · 伪深邃 · 空话连篇 · 过早终止 · 能力夸大 · 伪善迎合 · 模糊话术 · 自相矛盾 · 伪证据</p>
 <p><strong>安全威胁</strong>：提示注入 · 危险代码 · 欺骗性对齐 · 目标错位 · 工具理性滥用 · 无兜底</p>
 <p><strong>恶意行为</strong>：诱饵标题 · 恶意提问 · 语气警察 · 阴谋论 · 伪紧急 · 信息剥夺</p>
+<h4>131 子系统能力面（引擎路由）</h4>
+<p>完整 HeartFlow 引擎加载后，<code>heartflow_route</code> 可调用全部 131 个子系统，包括：</p>
+<ul>
+<li><strong>认知</strong>：<code>cognitiveEngine</code> <code>thoughtChain</code> <code>logicReasoning</code> <code>mctsReasoning</code> <code>hierarchicalPlanner</code> <code>judgmentEngine</code> <code>metaJudgment</code> <code>cognitionGround</code></li>
+<li><strong>心理</strong>：<code>psychology</code> <code>emotion</code> <code>emotionDynamics</code> <code>agentPsychology</code> <code>personaCore</code> <code>desireCognition</code> <code>loveCognition</code> <code>empathyDeepening</code> <code>griefEngine</code> <code>hopeEngine</code> <code>sufferingResilience</code> <code>traumaInformed</code> <code>postTraumaticGrowth</code> <code>conflictResolution</code> <code>forgivenessEngine</code></li>
+<li><strong>决策</strong>：<code>decision</code> <code>decisionEngineV2</code> <code>decisionRouter</code> <code>decisionVerifier</code> <code>execution</code> <code>verify</code> <code>counterfactual</code> <code>counterfactualVerifier</code> <code>adaptivePlanner</code> <code>timeExtension</code></li>
+<li><strong>记忆</strong>：<code>memory</code> <code>memoryBank</code> <code>memoryConsolidation</code> <code>memoryCompressor</code> <code>memoryIntegrity</code> <code>memoryQuality</code> <code>memoryWriteController</code> <code>tieredMemoryFusion</code> <code>semanticClusterer</code> <code>reflectionMemory</code> <code>errorMemory</code> <code>kvCache</code></li>
+<li><strong>真相/知识</strong>：<code>truth</code> <code>lesson</code> <code>formula</code> <code>cognitiveIndex</code> <code>knowledge</code> <code>knowledgeSubsystem</code> <code>worldModel</code> <code>worldLandscape</code> <code>paperIndex</code> <code>skillEvolution</code></li>
+<li><strong>自省/进化</strong>：<code>heartflow</code> <code>self</code> <code>meta</code> <code>evolution</code> <code>selfHealing</code> <code>sustainedDriftDetector</code> <code>dualPerspectiveAuditor</code> <code>selfPlay</code> <code>reflexionEngine</code> <code>capabilityAbstraction</code></li>
+<li><strong>伦理/人格</strong>：<code>ethics</code> <code>virtueEthics</code> <code>humanNature</code> <code>meaningPurpose</code> <code>characterCultivation</code> <code>moralDevelopment</code> <code>wisdomEngine</code> <code>beingMode</code> <code>consciousnessBridge</code> <code>transmission</code></li>
+<li><strong>实用</strong>：<code>slots</code> <code>graph</code> <code>budget</code> <code>workflow</code> <code>observe</code> <code>restraint</code> <code>confidence</code> <code>stability</code> <code>snapshot</code> <code>persistence</code> <code>utils</code></li>
+</ul>
 <h4>安全设计</h4>
 <ul>
 <li><strong>fail-closed</strong>：引擎加载失败时，<code>heartflow_check</code> 返回 <code>block</code>（引擎不可用），绝不静默放行</li>
 <li><strong>零 LLM 依赖</strong>：纯规则引擎，无 API、无数据库、无网络——判别不花一分钱 token</li>
-<li><strong>不写死路径</strong>：引擎来源只认环境变量 <code>HEARTFLOW_ENGINE_PATH</code> 和 npm 包</li>
+<li><strong>不写死路径</strong>：引擎来源只认环境变量和 npm 包</li>
 </ul>
 <hr>
 <h3>📦 安装</h3>
@@ -285,15 +412,14 @@ npm install -g @yun520-1/deepseek-heartflow
 </code></pre>
 <h4>引擎依赖</h4>
 <p>插件需要心虫引擎（<code>@yun520-1/heartflow</code>，47 维判别核心）。加载顺序：</p>
-<ol>
-<li>环境变量 <code>HEARTFLOW_ENGINE_PATH</code> 指向的本地副本</li>
-<li>npm 包 <code>@yun520-1/heartflow</code></li>
-<li>插件同级 <code>node_modules/@yun520-1/heartflow</code></li>
-</ol>
 <pre><code class="language-bash">npm install -g @yun520-1/heartflow   # 最简方式
 # 或指定本地开发副本
 export HEARTFLOW_ENGINE_PATH=/path/to/heartflow/src/gate.js
+export HEARTFLOW_FULL_PATH=/path/to/heartflow/src/core/heartflow.js
 </code></pre>
+<blockquote>
+<p>完整模式（131 子系统）需要 <code>HEARTFLOW_FULL_PATH</code> 或 <code>@yun520-1/heartflow</code> 含完整引擎。</p>
+</blockquote>
 <hr>
 <h3>⚙️ 配置</h3>
 <p>在 dsh 配置中：</p>
@@ -303,7 +429,8 @@ export HEARTFLOW_ENGINE_PATH=/path/to/heartflow/src/gate.js
       &quot;verbose&quot;: true,          // 日志输出
       &quot;minAction&quot;: &quot;rewrite&quot;,   // 自动监督最低等级: block | rewrite | verify
       &quot;tolerateFailure&quot;: false, // 引擎缺失时是否 fail-closed（默认 true 拒绝放行）
-      &quot;maxTextChars&quot;: 4000      // 每次监督最大文本长度
+      &quot;maxTextChars&quot;: 4000,     // 每次监督最大文本长度
+      &quot;fullEngine&quot;: true        // 加载完整引擎（131 子系统）: true=完整 / false=仅判别
     }
   }
 }
@@ -311,7 +438,6 @@ export HEARTFLOW_ENGINE_PATH=/path/to/heartflow/src/gate.js
 <hr>
 <h3>🚀 使用示例</h3>
 <h4>模型主动自检</h4>
-<p>模型在输出重要结论前调用：</p>
 <pre><code class="language-text">heartflow_check(&quot;根据我们测试，这个方案是唯一正确的选择，所有其他方案都不行&quot;)
 </code></pre>
 <pre><code class="language-json">{
@@ -323,29 +449,35 @@ export HEARTFLOW_ENGINE_PATH=/path/to/heartflow/src/gate.js
   ]
 }
 </code></pre>
-<h4>深度审计</h4>
-<pre><code class="language-text">heartflow_analyze(&quot;这个产品一定会成功，因为市场分析显示需求巨大&quot;)
+<h4>心理分析</h4>
+<pre><code class="language-text">heartflow_psychology({&quot;text&quot;: &quot;我最近很焦虑，睡不好，总觉得要出事&quot;})
 </code></pre>
-<p>返回全维度打分 + 交叉分析 + 摘要。</p>
-<h4>快速裁决</h4>
-<pre><code class="language-text">heartflow_verdict(&quot;我没有证据，但我确定这是对的&quot;)
+<p>返回意图/需求/防御机制/危机检测（心虫心理学引擎）。</p>
+<h4>决策引擎</h4>
+<pre><code class="language-text">heartflow_decide({&quot;task&quot;: &quot;是否继续开发&quot;, &quot;options&quot;: [
+  {&quot;label&quot;: &quot;继续&quot;, &quot;feasibility&quot;: 0.9, &quot;consequence_value&quot;: 8, &quot;risk&quot;: 0.2, &quot;confidence&quot;: 0.8},
+  {&quot;label&quot;: &quot;暂停&quot;, &quot;feasibility&quot;: 0.9, &quot;consequence_value&quot;: 4, &quot;risk&quot;: 0.1, &quot;confidence&quot;: 0.7}
+]})
 </code></pre>
-<pre><code class="language-json">{ &quot;action&quot;: &quot;verify&quot;, &quot;reason&quot;: &quot;无证据支撑的确定性断言&quot;, &quot;score&quot;: 0.6, &quot;topFindings&quot;: [...] }
+<p>心虫按风险/收益/可行性/身份对齐评分，返回最优决策 + 完整推理。</p>
+<h4>完整引擎路由</h4>
+<pre><code class="language-text">heartflow_routes()          # 查能力面（131 子系统）
+heartflow_route({&quot;route&quot;: &quot;dream.dream&quot;, &quot;args&quot;: {&quot;seed&quot;: &quot;昨日&quot;}})  # 任意能力
 </code></pre>
 <h4>自动监督（无需显式调用）</h4>
-<p>配置 <code>minAction: &quot;verify&quot;</code> 后，模型每次工具调用入参都会被自动判别；<code>block</code> 级内容会被硬拦截并注入修正指令。</p>
+<p>配置 <code>minAction: &quot;verify&quot;</code> 后，模型每次工具调用参数都会被自动判别；<code>block</code> 级在<strong>执行前</strong>就被拒绝（pre-execute），<code>rewrite</code>/<code>verify</code> 级注入修正提醒（post-execute）。</p>
 <hr>
 <h3>🔧 开发</h3>
 <pre><code class="language-bash">npm install        # 安装依赖
 npm run build      # tsc 编译到 lib/
-node test/smoke.js # 冒烟测试（14 项）
+node test/smoke.js # 冒烟测试（49 项）
 </code></pre>
 <h3>📦 发布</h3>
 <pre><code class="language-bash">npm publish --access public
 </code></pre>
 <h3>🧭 相关项目</h3>
 <ul>
-<li><a href="https://github.com/yun520-1/mark-heartflow-skill">心虫 HeartFlow 主仓库</a> — 47 维辨别引擎本体</li>
+<li><a href="https://github.com/yun520-1/mark-heartflow-skill">心虫 HeartFlow 主仓库</a> — 47 维辨别引擎本体 + 131 子系统</li>
 <li><a href="https://www.npmjs.com/package/@yun520-1/heartflow">心虫 npm 包</a> — <code>gate(text)</code> 纯函数接口</li>
 <li><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> — Everything is a Plugin</li>
 </ul>
@@ -360,6 +492,7 @@ node test/smoke.js # 冒烟测试（14 项）
     <h2>Links</h2>
     <div class="links">
       <a href="https://github.com/yun520-1/deepseek-heartflow" rel="noopener">GitHub repository ↗</a>
+      <a href="https://www.npmjs.com/package/@yun520-1/deepseek-heartflow" rel="noopener">npm package ↗</a>
       <a href="https://github.com/dsh-market/dsh-market" rel="noopener">Install via dsh-market ↗</a>
     </div>
   </section>

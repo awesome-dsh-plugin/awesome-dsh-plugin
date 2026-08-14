@@ -211,6 +211,7 @@ footer p+p{margin-top:.5rem}
 <li><strong>Agent Preset 状态解释</strong>：<code>tool-*</code> / <code>plan-mode</code> 等由 Agent Preset 按会话组装的能力，统一显示“由 Agent 预设管理”，不会误导为“功能已关闭”。</li>
 <li><strong>9 个经过审核的安全 UI 开关</strong>：<code>ui-deliverables</code>、<code>ui-jobs</code>、<code>ui-goal</code>、<code>ui-message-feedback</code>、<code>ui-model-selection</code>、<code>ui-agent-preset</code>、<code>ui-skill</code>、<code>ui-subagent</code>、<code>ui-trajectory</code> —— 都是纯界面插件；这些开关作用于 DSH 的 <code>web</code> profile，因此会影响所有 Web 会话，不会修改 Agent 预设；开关立即生效于 Host 运行时并持久化到 profile patch，重启后保持。</li>
 <li><strong>其余插件 fail-closed 锁定</strong>：核心服务、Agent 能力与未知条目一律锁定，不提供开关。</li>
+<li><strong>只读能力检查 API</strong>：<code>GET /api/builtin-toggles/v1/inspection</code> 提供版本化、无本地化文案的 Loader 能力清单、审阅基线与兼容性结果；遇到新官方条目、缺失条目、包身份或可复核 <code>inject</code> 声明漂移时仍可检查，但本版本不会据此放宽任何开关权限。详见 <a href="https://github.com/Starfie1d1272/dsh-builtin-toggles/blob/main/docs/inspection-api.md">Inspection API v1</a>。</li>
 </ul>
 <h3>安全模型</h3>
 <p>可管理性完全来自 <code>src/policy.ts</code> 的精确显式 allowlist（<code>MANAGEABLE_IDS</code>），没有“名字看起来像 UI 所以允许”的启发式；服务端在每次开关请求时重新执行全部检查（allowlist、body 合法性、entry 存在、<code>@deepseek-ai/*</code> 包名、非插件自身），任何一条不满足都拒绝。UI 隐藏按钮不是安全边界。</p>
@@ -220,6 +221,7 @@ footer p+p{margin-top:.5rem}
 <li>Tested with DSH 0.1.0-rc.6（隔离 DSH_HOME + headless Chromium 真实浏览器验证）。</li>
 <li>开关的运行时效果是 Host 侧<strong>立即生效</strong>；已打开的浏览器页面需要<strong>刷新后</strong>才应用 client-side 改变（rc.6 行为），切换成功后面板会提示“刷新页面后生效”。</li>
 <li>持久化写入 profile 的 <code>cordis.patch.yml</code>，重启后保持。</li>
+<li>inspection foundation 的兼容性结果是审计信号，不是切换授权信号；除完整 rc.6 发布补丁结构外，<code>verified</code> 还需要 Host 公开运行时身份。当前 DSH 没有向插件公开该稳定身份，因此真实环境会诚实标为 <code>unverified</code>，不会仅凭版本号或相同 Loader 结构声称兼容。</li>
 </ul>
 <h3>卸载</h3>
 <pre><code class="language-sh">dsh plugin --profile web remove dsh-builtin-toggles

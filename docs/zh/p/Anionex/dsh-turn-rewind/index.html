@@ -262,13 +262,13 @@ create rescue point → restore → verify
 <pre><code class="language-sh">pnpm install --frozen-lockfile
 pnpm run check
 
-dsh plugin --profile web add /path/to/dsh-turn-rewind
-dsh plugin --profile headless add /path/to/dsh-turn-rewind
+dsh plugin --profile web add @anionex/dsh-turn-rewind
+dsh plugin --profile headless add @anionex/dsh-turn-rewind
 
 dsh --profile web --dump-config | grep turn-rewind
 </code></pre>
 <p>Restart a running profile after changing its bundle list.</p>
-<p>The package is a DSH Profile Bundle. <code>package.json</code> declares <code>dsh.bundle.patch</code>, and <code>cordis.patch.yml</code> mounts <code>@dsh-external/turn-rewind</code> without a DSH core patch.</p>
+<p>The package is a DSH Profile Bundle. <code>package.json</code> declares <code>dsh.bundle.patch</code>, and <code>cordis.patch.yml</code> mounts <code>@anionex/dsh-turn-rewind</code> without a DSH core patch.</p>
 <p>When the profile also provides the DSH Agent service, the plugin captures a hidden checkpoint in the first <code>agent/pre-step</code> waterfall before the Agent processes the opening user message. Capture failures are reported but do not reject the user&#39;s turn; the corresponding message simply has no usable rewind point. In Web profiles, the same-origin <code>/turn-rewind</code> endpoint resolves the selected <code>user/message</code> sequence, exposes a paged file preview, mints a short-lived session-bound restore plan, and delegates child creation to DSH&#39;s official Host create/fork lifecycle. It never restores files automatically.</p>
 <h3>User flow</h3>
 <p>In the Web profile, each direct user message gains a compact, icon-only <strong>Rewind</strong> action after its timestamp and native Copy control. The tooltip reads “Return to before sending this message.” Opening Rewind checks the saved file state, shows a concise preview with a “view all files” action, and offers two modes:</p>
@@ -324,7 +324,7 @@ export async function apply(ctx: Context) {
   // point.id is a durable restore-point id.
 }
 </code></pre>
-<p>The complete exported types are available from <code>@dsh-external/turn-rewind/format</code>; the engine is available from <code>@dsh-external/turn-rewind/core</code> for non-Cordis tests and trusted integrations.</p>
+<p>The complete exported types are available from <code>@anionex/dsh-turn-rewind/format</code>; the engine is available from <code>@anionex/dsh-turn-rewind/core</code> for non-Cordis tests and trusted integrations.</p>
 <h3>Development</h3>
 <pre><code class="language-sh">pnpm install --frozen-lockfile
 pnpm run check
