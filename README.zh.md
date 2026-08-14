@@ -139,6 +139,7 @@ dsh plugin --profile web add dshmarket
 - [ICCuse/dsh-premise-guard](https://github.com/ICCuse/dsh-premise-guard) — 压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。
 - [freehul/sgme](https://github.com/freehul/sgme) — 拾光记忆引擎（SGME）桥接：多智能体共享长期记忆（HTTP）—— L0/L1/L1.5/L2 分层提炼、按场景注入、统一检索、主动关怀信号（memory_search / wiki_search / signal_pull / signal_claim / signal_ack），npm 包名 `dsh-sgme`。
 - [Phant0Meow/dsh-memory-meow](https://github.com/Phant0Meow/dsh-memory-meow) — 项目级跨会话记忆：PROJECT.md 快照注入首条用户消息（缓存友好）+ memory_remember 工具 + ReAct 任务结束自动反思；各项目独立记忆文件，互不互通。
+- [LeslieWylie/dsh-tool-rlvr-memory](https://github.com/LeslieWylie/dsh-tool-rlvr-memory) — Git 证据记忆：可审计的 Git 回溯查询，返回行级引用、提交哈希、新鲜度与状态，支持 doctor/search/get/sync 四个工具。
 
 
 ### 🛠️ 工具与能力
