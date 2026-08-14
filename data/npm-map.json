@@ -1115,6 +1115,18 @@
   "npm": "@tonydua/dsh-web-search-exa",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/truelove-dreamer/dsh-plugin-git-workflow": {
+  "npm": "dsh-plugin-git-workflow",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/truelove-dreamer/dsh-plugin-hooks": {
+  "npm": "dsh-plugin-hooks",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/truelove-dreamer/dsh-plugin-recall": {
+  "npm": "dsh-plugin-recall",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/tsonglew/dsh-media-preview": {
   "npm": null,
   "checkedAt": "2026-08-14"
