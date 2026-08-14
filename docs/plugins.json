@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 145,
+ "count": 151,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -993,6 +993,78 @@
     "zh": "将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。"
    },
    "install": "dsh plugin --profile web add github:zhaoolee/notes",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-figma-to-lottie",
+   "owner": "zimai233",
+   "url": "https://github.com/zimai233/dsh-figma-to-lottie",
+   "category": "tools",
+   "description": {
+    "en": "Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.",
+    "zh": "将 SVG 路径与关键帧参数编译成自包含的 Lottie JSON 动画文件。"
+   },
+   "install": "dsh plugin --profile web add github:zimai233/dsh-figma-to-lottie",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-exam-countdown",
+   "owner": "zimai233",
+   "url": "https://github.com/zimai233/dsh-exam-countdown",
+   "category": "tools",
+   "description": {
+    "en": "Query 64 Chinese exams (高考/考研/四六级/CPA/法考…) with rule-aware date math (2nd-Saturday, 1st-Sunday) and countdowns.",
+    "zh": "查询 64 场中国考试（高考/考研/四六级/CPA/法考…）的规则日期（第二个周六、第一个周日）与倒计时。"
+   },
+   "install": "dsh plugin --profile web add github:zimai233/dsh-exam-countdown",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-wash-calendar",
+   "owner": "zimai233",
+   "url": "https://github.com/zimai233/dsh-wash-calendar",
+   "category": "tools",
+   "description": {
+    "en": "Recurring-habit scheduling from pure date math: next occurrence, range schedules, and overdue advice.",
+    "zh": "基于纯日期数学的周期习惯排程：下次发生日、区间排程与逾期提醒。"
+   },
+   "install": "dsh plugin --profile web add github:zimai233/dsh-wash-calendar",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-adhd-copilot",
+   "owner": "zimai233",
+   "url": "https://github.com/zimai233/dsh-adhd-copilot",
+   "category": "tools",
+   "description": {
+    "en": "ADHD behavioral coaching skill: task breakdown, overwhelm management, launch rituals, and failure recovery.",
+    "zh": "ADHD 行为辅导技能：任务拆解、事项过载管理、启动仪式与失败重启。"
+   },
+   "install": "dsh plugin --profile web add github:zimai233/dsh-adhd-copilot",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-image-search",
+   "owner": "zimai233",
+   "url": "https://github.com/zimai233/dsh-image-search",
+   "category": "tools",
+   "description": {
+    "en": "Multi-engine reverse image search aggregator: Google Lens, Baidu, Yandex, TinEye, SauceNAO, IQDB, Ascii2d.",
+    "zh": "多引擎反向识图聚合：Google Lens、百度、Yandex、TinEye、SauceNAO、IQDB、Ascii2d。"
+   },
+   "install": "dsh plugin --profile web add github:zimai233/dsh-image-search",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-video-downloader",
+   "owner": "zimai233",
+   "url": "https://github.com/zimai233/dsh-video-downloader",
+   "category": "tools",
+   "description": {
+    "en": "Detect and download media from Bilibili/YouTube/Douyin/Xiaohongshu with quality and format analysis.",
+    "zh": "检测并下载 B站/YouTube/抖音/小红书视频媒体，带清晰度与格式分析。"
+   },
+   "install": "dsh plugin --profile web add github:zimai233/dsh-video-downloader",
    "added": "2026-08-14"
   },
   {

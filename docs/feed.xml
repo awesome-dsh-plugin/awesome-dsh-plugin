@@ -209,10 +209,10 @@
     <summary>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</summary>
   </entry>
   <entry>
-    <title>dsh-routines</title>
-    <id>https://github.com/Jesse-njx/dsh-routines</id>
-    <link href="https://github.com/Jesse-njx/dsh-routines"/>
+    <title>dsh-figma-to-lottie</title>
+    <id>https://github.com/zimai233/dsh-figma-to-lottie</id>
+    <link href="https://github.com/zimai233/dsh-figma-to-lottie"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.</summary>
+    <summary>Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.</summary>
   </entry>
 </feed>
