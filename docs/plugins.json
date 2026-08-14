@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 226,
+ "count": 227,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -998,6 +998,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:freehul/sgme",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-memory-meow",
+   "owner": "Phant0Meow",
+   "url": "https://github.com/Phant0Meow/dsh-memory-meow",
+   "category": "memory",
+   "description": {
+    "en": "Project-scoped cross-session memory: PROJECT.md snapshot injected into the first user message, a memory_remember tool, and auto-reflection after ReAct tasks; each project keeps its own memory file.",
+    "zh": "项目级跨会话记忆：PROJECT.md 快照注入首条用户消息（缓存友好）+ memory_remember 工具 + ReAct 任务结束自动反思；各项目独立记忆文件，互不互通。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow",
    "added": "2026-08-14"
   },
   {
