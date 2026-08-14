@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 159,
+ "count": 160,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1809,6 +1809,18 @@
     "zh": "官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。"
    },
    "install": "dsh plugin --profile web add github:PerryLink/dsh-mcp-panel",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-codex-auth",
+   "owner": "suntianc",
+   "url": "https://github.com/suntianc/dsh-codex-auth",
+   "category": "dev",
+   "description": {
+    "en": "Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.",
+    "zh": "复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。"
+   },
+   "install": "dsh plugin --profile web add github:suntianc/dsh-codex-auth",
    "added": "2026-08-14"
   },
   {
