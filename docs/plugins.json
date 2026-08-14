@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 163,
+ "count": 164,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1629,6 +1629,18 @@
     "zh": "通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。"
    },
    "install": "dsh plugin --profile web add github:franksong2702/dsh-codex-connect",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-everything-oauth",
+   "owner": "kam74515-boop",
+   "url": "https://github.com/kam74515-boop/dsh-everything-oauth",
+   "category": "dev",
+   "description": {
+    "en": "Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.",
+    "zh": "把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。"
+   },
+   "install": "dsh plugin --profile web add github:kam74515-boop/dsh-everything-oauth",
    "added": "2026-08-14"
   },
   {
