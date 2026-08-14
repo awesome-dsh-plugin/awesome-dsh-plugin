@@ -195,6 +195,13 @@
     <summary>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</summary>
   </entry>
   <entry>
+    <title>dsh-market</title>
+    <id>https://github.com/dsh-market/dsh-market</id>
+    <link href="https://github.com/dsh-market/dsh-market"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。</summary>
+  </entry>
+  <entry>
     <title>dsh-find-plugin</title>
     <id>https://github.com/awesome-dsh-plugin/dsh-find-plugin</id>
     <link href="https://github.com/awesome-dsh-plugin/dsh-find-plugin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/lonelymoon87/dsh-code-intel"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。</summary>
-  </entry>
-  <entry>
-    <title>dsh-subagent-tools</title>
-    <id>https://github.com/lynx-gt/dsh-subagent-tools</id>
-    <link href="https://github.com/lynx-gt/dsh-subagent-tools"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。</summary>
   </entry>
 </feed>

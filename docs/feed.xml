@@ -195,6 +195,13 @@
     <summary>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</summary>
   </entry>
   <entry>
+    <title>dsh-market</title>
+    <id>https://github.com/dsh-market/dsh-market</id>
+    <link href="https://github.com/dsh-market/dsh-market"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.</summary>
+  </entry>
+  <entry>
     <title>dsh-find-plugin</title>
     <id>https://github.com/awesome-dsh-plugin/dsh-find-plugin</id>
     <link href="https://github.com/awesome-dsh-plugin/dsh-find-plugin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/lonelymoon87/dsh-code-intel"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.</summary>
-  </entry>
-  <entry>
-    <title>dsh-subagent-tools</title>
-    <id>https://github.com/lynx-gt/dsh-subagent-tools</id>
-    <link href="https://github.com/lynx-gt/dsh-subagent-tools"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Per-call model, provider, persona, and toolFilter overrides for subagent delegation, with @preset: references and provider/model composite ids.</summary>
   </entry>
 </feed>
