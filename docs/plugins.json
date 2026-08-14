@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 341,
+ "count": 345,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1279,6 +1279,36 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-font",
+   "owner": "tianyhjg-lab",
+   "url": "https://github.com/tianyhjg-lab/dsh-font",
+   "page": "https://awesome-dsh-plugin.com/p/tianyhjg-lab/dsh-font/",
+   "category": "theme",
+   "description": {
+    "en": "Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.",
+    "zh": "DSH Web GUI 字体切换器：99 个界面字体与 31 个代码字体，中西文自动搭配，即选即生效，localStorage 持久化。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:tianyhjg-lab/dsh-font",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-webchatlike",
+   "owner": "cindyguyuehu123",
+   "url": "https://github.com/cindyguyuehu123/dsh-webchatlike",
+   "page": "https://awesome-dsh-plugin.com/p/cindyguyuehu123/dsh-webchatlike/",
+   "category": "session",
+   "description": {
+    "en": "deepseek.com web/app chat experience for DSH: edit your prompt and regenerate answers in place, with a per-message <i/N> version pager (tree model, stable across conversations).",
+    "zh": "更贴近 deepseek 网页版/App 的聊天体验：原位编辑提问、重新生成回复、每条消息带 <i/N> 版本翻页器（树状版本模型，跨对话保持稳定）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:cindyguyuehu123/dsh-webchatlike",
    "added": "2026-08-14"
   },
   {
@@ -2722,6 +2752,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-finance",
+   "owner": "zhang787jun",
+   "url": "https://github.com/zhang787jun/dsh-finance",
+   "page": "https://awesome-dsh-plugin.com/p/zhang787jun/dsh-finance/",
+   "category": "tools",
+   "description": {
+    "en": "Financial research workflow and portfolio risk tools with source discipline for current market facts.",
+    "zh": "金融研究工作流与组合风控工具，对当前市场事实强制来源与时间戳边界。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:zhang787jun/dsh-finance",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-context-proxy",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-context-proxy",
@@ -3304,6 +3349,21 @@
    "npm": null,
    "stars": 7,
    "install": "dsh plugin --profile web add github:creght-dev/skills",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-design-skills",
+   "owner": "zhaiyateng",
+   "url": "https://github.com/zhaiyateng/dsh-design-skills",
+   "page": "https://awesome-dsh-plugin.com/p/zhaiyateng/dsh-design-skills/",
+   "category": "skill",
+   "description": {
+    "en": "Design-aesthetics skill pack (6 styles: dark SaaS, minimal white, neumorphism, brutalism, glassmorphism, Japanese minimal) with runnable landing-page demos: tokens, component rules, forbidden lists, and acceptance checklists per style.",
+    "zh": "设计美学技能包：6 种风格（深色 SaaS、极简白、新拟态、粗野主义、毛玻璃、日式极简），每种含 token、组件规则、禁用清单与验收清单，附可运行落地页 demo。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:zhaiyateng/dsh-design-skills",
    "added": "2026-08-14"
   },
   {
