@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 191,
+ "count": 193,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -477,6 +477,18 @@
     "zh": "Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。"
    },
    "install": "dsh plugin --profile web add github:jiangnanquan/dsh-ux",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-hud",
+   "owner": "a903067276-rgb",
+   "url": "https://github.com/a903067276-rgb/dsh-hud",
+   "category": "ui",
+   "description": {
+    "en": "HUD status panel: git status, MCP servers, skills, model and token usage in a floating side panel.",
+    "zh": "HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。"
+   },
+   "install": "dsh plugin --profile web add github:a903067276-rgb/dsh-hud",
    "added": "2026-08-14"
   },
   {
@@ -1365,6 +1377,18 @@
     "zh": "专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。"
    },
    "install": "dsh plugin --profile web add github:taxueseek/argo",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-search-exa",
+   "owner": "TonyDua",
+   "url": "https://github.com/TonyDua/dsh-web-search-exa",
+   "category": "tools",
+   "description": {
+    "en": "Zero-config Exa web search provider for the ctx.web seam: anonymous MCP fallback without an API key, plus keyed REST search.",
+    "zh": "ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。"
+   },
+   "install": "dsh plugin --profile web add github:TonyDua/dsh-web-search-exa",
    "added": "2026-08-14"
   },
   {

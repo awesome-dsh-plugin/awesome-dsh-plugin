@@ -111,6 +111,13 @@
     <summary>Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。</summary>
   </entry>
   <entry>
+    <title>dsh-hud</title>
+    <id>https://github.com/a903067276-rgb/dsh-hud</id>
+    <link href="https://github.com/a903067276-rgb/dsh-hud"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。</summary>
+  </entry>
+  <entry>
     <title>dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/ICCuse/dsh-file-memory"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。</summary>
-  </entry>
-  <entry>
-    <title>dsh-knowledge</title>
-    <id>https://github.com/ICCuse/dsh-knowledge</id>
-    <link href="https://github.com/ICCuse/dsh-knowledge"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\knowledge（格式逐字节兼容）。</summary>
   </entry>
 </feed>
