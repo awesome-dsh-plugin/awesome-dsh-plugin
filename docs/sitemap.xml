@@ -769,6 +769,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/siberiah2o/dsh-plugin-terminal/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/283Gawin/dsh-heatmap/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/KinGao294/dsh-skin/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -3335,6 +3343,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/siberiah2o/dsh-plugin-terminal/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/siberiah2o/dsh-plugin-terminal/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/siberiah2o/dsh-plugin-terminal/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/283Gawin/dsh-heatmap/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/283Gawin/dsh-heatmap/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/KinGao294/dsh-skin/</loc>

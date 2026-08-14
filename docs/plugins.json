@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 321,
+ "count": 322,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1129,6 +1129,21 @@
    "npm": "dsh-plugin-terminal",
    "stars": 1,
    "install": "dsh plugin --profile web add dsh-plugin-terminal",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-heatmap",
+   "owner": "283Gawin",
+   "url": "https://github.com/283Gawin/dsh-heatmap",
+   "page": "https://awesome-dsh-plugin.com/p/283Gawin/dsh-heatmap/",
+   "category": "ui",
+   "description": {
+    "en": "Activity heatmap in the DSH Web sidebar: GitHub-style grid of daily commits, token usage, and estimated spend, with a today stats line for all-session token totals, cache hit rate, and per-model auto-priced cost.",
+    "zh": "DSH Web 侧边栏活动热力图：GitHub 风格网格展示每日提交、Token 用量与估算花费，今日统计行显示全会话 Token 总量、缓存命中率与按模型自动计价的花费。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:283Gawin/dsh-heatmap",
    "added": "2026-08-14"
   },
   {
