@@ -423,6 +423,18 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/huguangyu666/dsh-plugin-notify": {
+  "npm": "dsh-plugin-notify",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/huguangyu666/dsh-plugin-session-import": {
+  "npm": "dsh-plugin-session-import",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/huguangyu666/dsh-store": {
+  "npm": "dsh-store",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/huiliyi37/dsh-tianshu-tui": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1021,6 +1033,10 @@
  },
  "https://github.com/PicGo/dsh-plugin": {
   "npm": "@picgo/dsh-plugin",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/PwnKY/dsh-session-link": {
+  "npm": "dsh-session-link",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/qjcnmd/dsh-reasoning-slider": {
