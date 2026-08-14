@@ -12,7 +12,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 
 > 💡 New here? Install [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) first — then just ask your agent to find plugins for you: `dsh plugin --profile web add dsh-find-plugin`
 
-**143** plugins · [PRs welcome](#contributing)
+**144** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -117,6 +117,7 @@ This list collects community plugins that are installable via `dsh plugin add` (
 - [dsh-docker](https://github.com/Jesse-njx/dsh-docker) - Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.
 - [dsh-excel-vera-plugin](https://github.com/hccccc01333/dsh-excel-vera-plugin) - Detect and repair silent Excel formula errors: pattern validation, semantic Formula IR compilation, deterministic and LLM repair, oracle scoring, and chart validation.
 - [dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) - Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.
+- [@zhaoolee/dsh-notes](https://github.com/zhaoolee/notes) - Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.
 
 
 ### Workflow & Automation
