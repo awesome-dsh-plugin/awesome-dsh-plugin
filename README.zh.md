@@ -435,6 +435,7 @@ dsh plugin --profile web add dshmarket
 - [huguangyu666/dsh-store](https://github.com/huguangyu666/dsh-store) — dsh 插件商店：npm 权威目录 + awesome 精选（550+ 插件、11 分类）、dsh 字段质量验证、官方 `dsh plugin add/remove` 一键安装，侧边栏与设置页入口。
 - [liqichen/dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) — 在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。
 
+- [jeremy9682/dsh-observability](https://github.com/jeremy9682/dsh-observability) — subagent 运行可观测性：会话根指纹 + 归因信封，以及委派官方 cursor-agent CLI 的 cursor_delegate 工具。
 
 ### 🎮 娱乐
 

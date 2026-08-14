@@ -437,6 +437,7 @@ dsh plugin --profile web add dshmarket
 - [huguangyu666/dsh-store](https://github.com/huguangyu666/dsh-store) - Plugin store: npm authoritative catalog + awesome curated list (550+ plugins, 11 categories), dsh-field quality verification, official `dsh plugin add/remove` one-click install, sidebar + settings entry.
 - [liqichen/dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) - GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.
 
+- [jeremy9682/dsh-observability](https://github.com/jeremy9682/dsh-observability) - Subagent-run observability: session-root fingerprinting with attribution envelopes, and a cursor_delegate tool for the official cursor-agent CLI.
 
 ### Just for Fun
 
