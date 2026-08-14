@@ -171,7 +171,7 @@
     <id>https://github.com/lynx-gt/dsh-subagent-cwd</id>
     <link href="https://github.com/lynx-gt/dsh-subagent-cwd"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>dsh-subagent-tools plus a per-call cwd for subagents, shipped with the two in-process provider patches it requires.</summary>
+    <summary>Extends dsh-subagent-tools with a per-call cwd for subagents, shipped with the two in-process provider patches it requires.</summary>
   </entry>
   <entry>
     <title>dsh-voice</title>
