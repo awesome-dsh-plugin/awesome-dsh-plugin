@@ -231,6 +231,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/CZX2244/dsh-bilibili": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/dhicoc/dsh-reverse-skill": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -548,6 +552,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/leechen298/Code2Skill": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/LeemanCheung/dsh-agent-preset-recommender": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -1043,6 +1051,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/SPYQWER1/dsh-codex-tools": {
+  "npm": "dsh-codex-tools",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/Starfie1d1272/dsh-builtin-toggles": {
   "npm": "dsh-builtin-toggles",
   "checkedAt": "2026-08-14"
@@ -1057,6 +1069,10 @@
  },
  "https://github.com/suntianc/dsh-codex-auth": {
   "npm": "dsh-codex-auth",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/superagents-lab/dsh-s1": {
+  "npm": "dsh-s1",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/superboy911/dsh-model-router": {
@@ -1093,6 +1109,10 @@
  },
  "https://github.com/tsonglew/dsh-workspace-search": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/urzeye/dsh-outline": {
+  "npm": "dsh-outline",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/v587d/dsh-opencode-go-usage": {

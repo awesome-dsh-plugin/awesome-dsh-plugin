@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
-**324** plugins · [PRs welcome](#contributing)
+**329** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
