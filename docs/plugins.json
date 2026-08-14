@@ -718,9 +718,9 @@
     "en": "Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.",
     "zh": "DSH Web 请求中断自动续跑：网络、超时或宿主崩溃等非人为失败后自动发送「继续」，支持错误分类、自适应退避、模板化继续文本与浏览器通知。"
    },
-   "npm": null,
+   "npm": "dsh-client-auto-continue",
    "stars": null,
-   "install": "dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue",
+   "install": "dsh plugin --profile web add dsh-client-auto-continue",
    "added": "2026-08-14"
   },
   {
@@ -732,9 +732,9 @@
     "en": "Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.",
     "zh": "对话栏左侧常驻大纲：按轮次列出提问与最后回复，支持关键词过滤与一键跳转。"
    },
-   "npm": null,
+   "npm": "dsh-chat-outline",
    "stars": null,
-   "install": "dsh plugin --profile web add github:liliuCourier/dsh-chat-outline",
+   "install": "dsh plugin --profile web add dsh-chat-outline",
    "added": "2026-08-14"
   },
   {
@@ -1642,9 +1642,9 @@
     "en": "The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.",
     "zh": "装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。"
    },
-   "npm": null,
+   "npm": "dshmarket",
    "stars": 4,
-   "install": "dsh plugin --profile web add github:dsh-market/dsh-market",
+   "install": "dsh plugin --profile web add dshmarket",
    "added": "2026-08-14"
   },
   {
@@ -1992,9 +1992,9 @@
     "en": "Hermes-style tool search & slimming: progressive disclosure, semantic search, describe, and call long-tail tools on demand while core tools stay eager.",
     "zh": "Hermes 风格工具搜索与瘦身：渐进式披露，语义搜索/查看/调用长尾工具，核心工具保持直通。"
    },
-   "npm": null,
+   "npm": "dsh-tool-search",
    "stars": null,
-   "install": "dsh plugin --profile web add github:Letter2025/dsh-tool-search",
+   "install": "dsh plugin --profile web add dsh-tool-search",
    "added": "2026-08-14"
   },
   {

@@ -188,7 +188,7 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/dsh-market/dsh-market": {
-  "npm": null,
+  "npm": "dshmarket",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/dylan121322/llm-adaptive": {
@@ -255,12 +255,20 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/heartmove/dsh-side-chat": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/hellodigua/dsh-emoji": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/hellodigua/dsh-share": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/HsiangNianian/dsh-auto-continue": {
+  "npm": "dsh-client-auto-continue",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/HuanLinOTO/dsh-plugin-d399": {
@@ -387,6 +395,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/LaoYueHanNi/dsh-token-usage": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/lehhair/dsh-diff-viewer": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -403,8 +415,16 @@
   "npm": "dsh-model-failover",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Letter2025/dsh-tool-search": {
+  "npm": "dsh-tool-search",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/lhh010/dsh-minigames": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/liliuCourier/dsh-chat-outline": {
+  "npm": "dsh-chat-outline",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/lire1131/dsh-undo-plugin": {
@@ -504,6 +524,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Nagi-ovo/dsh-visualize": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Nanki-nn/dsh-answer-pet": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -676,6 +700,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/openma-ai/deepseek-harness-tui": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/pc439527/dsh-notify-bark": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
