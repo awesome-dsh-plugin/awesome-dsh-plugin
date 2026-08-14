@@ -6,6 +6,13 @@
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
   <updated>2026-08-14T00:00:00Z</updated>
   <entry>
+    <title>deepseek-harness-tui</title>
+    <id>https://github.com/openma-ai/deepseek-harness-tui</id>
+    <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/vibeinging/dsh-turn-navigator"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>对话轮次导航。</summary>
-  </entry>
-  <entry>
-    <title>dsh-milestone</title>
-    <id>https://github.com/SnowCrescenter-tech/dsh-milestone</id>
-    <link href="https://github.com/SnowCrescenter-tech/dsh-milestone"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>右侧圆点时间轴导航条，点击跳转到任意用户消息。</summary>
   </entry>
 </feed>

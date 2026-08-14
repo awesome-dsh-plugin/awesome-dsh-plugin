@@ -6,6 +6,13 @@
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
   <updated>2026-08-14T00:00:00Z</updated>
   <entry>
+    <title>deepseek-harness-tui</title>
+    <id>https://github.com/openma-ai/deepseek-harness-tui</id>
+    <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
+  </entry>
+  <entry>
     <title>dsh-crosstalk</title>
     <id>https://github.com/Jesse-njx/dsh-crosstalk</id>
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/vibeinging/dsh-turn-navigator"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Turn navigation for the DSH Web UI.</summary>
-  </entry>
-  <entry>
-    <title>dsh-milestone</title>
-    <id>https://github.com/SnowCrescenter-tech/dsh-milestone</id>
-    <link href="https://github.com/SnowCrescenter-tech/dsh-milestone"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Right-side dot-timeline rail: jump between user messages.</summary>
   </entry>
 </feed>
