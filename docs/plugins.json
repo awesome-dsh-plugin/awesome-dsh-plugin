@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 188,
+ "count": 189,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1414,6 +1414,18 @@
    },
    "install": "dsh plugin --profile web add github:titanwings/dsh-automation",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-plugin-automations",
+   "owner": "Sev7een",
+   "url": "https://github.com/Sev7een/dsh-plugin-automations",
+   "category": "workflow",
+   "description": {
+    "en": "Settings-based scheduled tasks that run on time or during DeepSeek off-peak hours, with one-time and daily schedules backed by durable task state.",
+    "zh": "设置页定时任务：支持准点或 DeepSeek 谷时段执行、单次/每日重复，并持久化任务状态。"
+   },
+   "install": "dsh plugin --profile web add github:Sev7een/dsh-plugin-automations",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-routines",
