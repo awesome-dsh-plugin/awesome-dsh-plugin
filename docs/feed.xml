@@ -20,6 +20,13 @@
     <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
   </entry>
   <entry>
+    <title>LeemanCheung/dsh-whale-animation</title>
+    <id>https://github.com/LeemanCheung/dsh-whale-animation</id>
+    <link href="https://github.com/LeemanCheung/dsh-whale-animation"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Persistent black whale-dive animation beside the DSH Web turn status, with a reduced-motion fallback and a seamless closed loop.</summary>
+  </entry>
+  <entry>
     <title>asukasec/dsh-message-preview</title>
     <id>https://github.com/asukasec/dsh-message-preview</id>
     <link href="https://github.com/asukasec/dsh-message-preview"/>
@@ -32,6 +39,13 @@
     <link href="https://github.com/Nanki-nn/dsh-answer-pet"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.</summary>
+  </entry>
+  <entry>
+    <title>taxueseek/dsh-files</title>
+    <id>https://github.com/taxueseek/dsh-files</id>
+    <link href="https://github.com/taxueseek/dsh-files"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.</summary>
   </entry>
   <entry>
     <title>l541402398/dsh-file-uploads</title>
@@ -83,6 +97,13 @@
     <summary>Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.</summary>
   </entry>
   <entry>
+    <title>stevenx65/dsh-balance-plugin</title>
+    <id>https://github.com/stevenx65/dsh-balance-plugin</id>
+    <link href="https://github.com/stevenx65/dsh-balance-plugin"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.</summary>
+  </entry>
+  <entry>
     <title>ccch1mneyyy/dsh-TUI</title>
     <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
     <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
@@ -95,6 +116,13 @@
     <link href="https://github.com/omdsh-dev/DSH-better-sidebar"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</summary>
+  </entry>
+  <entry>
+    <title>tsonglew/dsh-workspace-search</title>
+    <id>https://github.com/tsonglew/dsh-workspace-search</id>
+    <link href="https://github.com/tsonglew/dsh-workspace-search"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.</summary>
   </entry>
   <entry>
     <title>Han-1413141/dsh-sticky-disclosure</title>
@@ -186,33 +214,5 @@
     <link href="https://github.com/Jolly-J/dsh-deepseek-billing"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>DeepSeek account balance and per-session cost card in the sidebar foot.</summary>
-  </entry>
-  <entry>
-    <title>AKIRACOD/dsh-drag-and-drop</title>
-    <id>https://github.com/AKIRACOD/dsh-drag-and-drop</id>
-    <link href="https://github.com/AKIRACOD/dsh-drag-and-drop"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>File-drag fork: drop documents as removable chips above the composer, send without typing.</summary>
-  </entry>
-  <entry>
-    <title>HsiangNianian/dsh-auto-continue</title>
-    <id>https://github.com/HsiangNianian/dsh-auto-continue</id>
-    <link href="https://github.com/HsiangNianian/dsh-auto-continue"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.</summary>
-  </entry>
-  <entry>
-    <title>liliuCourier/dsh-chat-outline</title>
-    <id>https://github.com/liliuCourier/dsh-chat-outline</id>
-    <link href="https://github.com/liliuCourier/dsh-chat-outline"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.</summary>
-  </entry>
-  <entry>
-    <title>LaoYueHanNi/dsh-token-usage</title>
-    <id>https://github.com/LaoYueHanNi/dsh-token-usage</id>
-    <link href="https://github.com/LaoYueHanNi/dsh-token-usage"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.</summary>
   </entry>
 </feed>

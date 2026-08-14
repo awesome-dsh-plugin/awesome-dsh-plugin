@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 252,
+ "count": 268,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -120,6 +120,20 @@
    "stars": 26,
    "install": "dsh plugin --profile web add github:alingalingling/ui-status-label",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-whale-animation",
+   "owner": "LeemanCheung",
+   "url": "https://github.com/LeemanCheung/dsh-whale-animation",
+   "category": "ui",
+   "description": {
+    "en": "Persistent black whale-dive animation beside the DSH Web turn status, with a reduced-motion fallback and a seamless closed loop.",
+    "zh": "DSH Web 状态文字旁的持久化黑色鲸鱼深潜动画，提供减少动态效果回退与无缝闭环。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-openpencil",
@@ -318,6 +332,20 @@
    "added": "2026-08-13"
   },
   {
+   "name": "dsh-files",
+   "owner": "taxueseek",
+   "url": "https://github.com/taxueseek/dsh-files",
+   "category": "ui",
+   "description": {
+    "en": "File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.",
+    "zh": "文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:taxueseek/dsh-files",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-file-uploads",
    "owner": "l541402398",
    "url": "https://github.com/l541402398/dsh-file-uploads",
@@ -500,6 +528,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-balance-plugin",
+   "owner": "stevenx65",
+   "url": "https://github.com/stevenx65/dsh-balance-plugin",
+   "category": "ui",
+   "description": {
+    "en": "DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.",
+    "zh": "dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:stevenx65/dsh-balance-plugin",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-TUI",
    "owner": "ccch1mneyyy",
    "url": "https://github.com/ccch1mneyyy/dsh-TUI",
@@ -525,6 +567,20 @@
    "npm": null,
    "stars": 591,
    "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-workspace-search",
+   "owner": "tsonglew",
+   "url": "https://github.com/tsonglew/dsh-workspace-search",
+   "category": "ui",
+   "description": {
+    "en": "VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.",
+    "zh": "VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:tsonglew/dsh-workspace-search",
    "added": "2026-08-14"
   },
   {
@@ -780,6 +836,34 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-task-dag",
+   "owner": "LeemanCheung",
+   "url": "https://github.com/LeemanCheung/dsh-task-dag",
+   "category": "ui",
+   "description": {
+    "en": "Displays a Session's subagents and durable workflow runs as a live DAG with status, navigation, and restart-safe history.",
+    "zh": "将会话子代理与持久工作流运行展示为实时 DAG，支持状态展示、节点导航与重启后历史恢复。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:LeemanCheung/dsh-task-dag",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "widget-dock",
+   "owner": "MorGogh",
+   "url": "https://github.com/MorGogh/widget-dock",
+   "category": "ui",
+   "description": {
+    "en": "Draggable workbench of mini-cards (API balance, token usage, session stats, goal, cost) on the blank areas beside the conversation, with size tiers and official DeepSeek pricing.",
+    "zh": "对话两侧空白区的可拖动卡片工作台：余额、Token 用量、会话统计、目标、成本估算等小组件，支持 S/M/L/XL 尺寸档位与官方定价成本估算。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:MorGogh/widget-dock",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
@@ -1004,6 +1088,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-inline-images",
+   "owner": "3403473060",
+   "url": "https://github.com/3403473060/dsh-inline-images",
+   "category": "session",
+   "description": {
+    "en": "Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).",
+    "zh": "对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:3403473060/dsh-inline-images",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-prompt-stash",
    "owner": "Wine-Red",
    "url": "https://github.com/Wine-Red/dsh-prompt-stash",
@@ -1043,6 +1141,34 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:bwndlct/dsh-session-export",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-token-usage",
+   "owner": "LeemanCheung",
+   "url": "https://github.com/LeemanCheung/dsh-token-usage",
+   "category": "session",
+   "description": {
+    "en": "Persistent per-session Token usage records and a settings dashboard with provider/model breakdowns and a 52-week activity heatmap.",
+    "zh": "持久化记录每个会话的 Token 用量，在设置页提供 provider/model 统计与最近 52 周活跃度热力图。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:LeemanCheung/dsh-token-usage",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-suite#plugin-session-export",
+   "owner": "whyihaveyou",
+   "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export",
+   "category": "session",
+   "description": {
+    "en": "Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.",
+    "zh": "把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export",
    "added": "2026-08-14"
   },
   {
@@ -1225,6 +1351,20 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "blender",
+   "owner": "CheshireJCat",
+   "url": "https://github.com/CheshireJCat/blender",
+   "category": "tools",
+   "description": {
+    "en": "Blender 3D production plugin with 30 modeling/reconstruction skills, 13 runtime tools, and 26 deterministic helpers for reference fitting, rendering, validation, animation, and portable export; installable as `dsh-blender`.",
+    "zh": "Blender 3D 生产插件：提供 30 个建模/重建 Skill、13 个运行时工具和 26 个确定性 Helper，覆盖参考图拟合、渲染、验证、动画与可移植格式导出；npm 包名 `dsh-blender`。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:CheshireJCat/blender",
    "added": "2026-08-14"
   },
   {
@@ -2152,6 +2292,62 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-overleaf",
+   "owner": "fly233338",
+   "url": "https://github.com/fly233338/dsh-overleaf",
+   "category": "tools",
+   "description": {
+    "en": "Connect multiple Overleaf projects to DSH through OverleafMCP for browsing, analysis, and Git-based file updates.",
+    "zh": "通过 OverleafMCP 将多个 Overleaf 项目接入 DSH，支持浏览、分析和通过 Git 写回 LaTeX 文件。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:fly233338/dsh-overleaf",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-fleet-audit",
+   "owner": "LeslieWylie",
+   "url": "https://github.com/LeslieWylie/dsh-fleet-audit",
+   "category": "tools",
+   "description": {
+    "en": "Read-only agent-fleet credential hygiene audit: credential-file permissions, embedded credentials in git remotes (masked in output), and provider token literal counts; zero-dependency and deterministic.",
+    "zh": "只读的 agent 机群凭据卫生审计：检查凭据文件权限、git remote 内嵌凭据（输出脱敏）与 provider token 字面量计数；零依赖、确定性。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:LeslieWylie/dsh-fleet-audit",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-suite#plugin-manager",
+   "owner": "whyihaveyou",
+   "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager",
+   "category": "tools",
+   "description": {
+    "en": "In-app plugin store for the DSH Web UI: browse, search, one-click install, compat badges.",
+    "zh": "DSH Web UI 内置插件商店：浏览、搜索、一键安装、兼容性徽章。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-workshop",
+   "owner": "loguhan",
+   "url": "https://github.com/loguhan/dsh-workshop",
+   "category": "tools",
+   "description": {
+    "en": "Steam Workshop-style plugin store for the DSH Web UI: browse, search, and one-click install community plugins with mirror acceleration, progress UI, security checks, and Chinese descriptions.",
+    "zh": "DSH Web UI 的 Steam 创意工坊式插件商店：浏览、搜索并一键安装社区插件，支持镜像加速、进度 UI、安全检测与中文描述。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:loguhan/dsh-workshop",
+   "added": "2026-08-14"
+  },
+  {
    "name": "skills",
    "owner": "creght-dev",
    "url": "https://github.com/creght-dev/skills",
@@ -2432,6 +2628,20 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-suite#plugin-team-board",
+   "owner": "whyihaveyou",
+   "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board",
+   "category": "workflow",
+   "description": {
+    "en": "Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.",
+    "zh": "多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-open-in-vscode",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-open-in-vscode",
@@ -2639,6 +2849,20 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:ldchaowin/dsh-plugin-notify-sound",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-suite#plugin-notify",
+   "owner": "whyihaveyou",
+   "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify",
+   "category": "notify",
+   "description": {
+    "en": "IM webhook and local notifications on turn completion, errors, or approval (Feishu/WeCom/DingTalk/Slack/Discord/custom).",
+    "zh": "回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify",
    "added": "2026-08-14"
   },
   {
