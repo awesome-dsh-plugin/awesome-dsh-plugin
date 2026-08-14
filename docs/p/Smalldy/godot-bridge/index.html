@@ -191,6 +191,7 @@ footer p+p{margin-top:.5rem}
     <div class="md" translate="no">
 <p><strong>English</strong> | <a href="https://github.com/Smalldy/godot-bridge/blob/main/README.zh-CN.md">中文</a></p>
 <h2>godot-bridge</h2>
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
 <p>Native <strong>DeepSeek Harness (DSH)</strong> plugin that launches and drives a running <strong>Godot 4.x</strong> game through its in-game TCP interaction server — replacing the <a href="https://github.com/tugcantopaloglu/godot-mcp"><code>godot-mcp</code></a> MCP server with first-class agent tools.</p>
 <p>No MCP protocol, no Python server, no editor addon. The game side is untouched: <code>McpInteractionServer</code> (the <code>mcp_interaction_server.gd</code> autoload) already listens on <code>127.0.0.1:9090</code> and speaks newline-delimited JSON — godot-bridge speaks the same protocol natively from inside the DSH host.</p>
 <h3>Tools</h3>
@@ -324,7 +325,7 @@ footer p+p{margin-top:.5rem}
 <p>Install straight from GitHub — pure ESM + assets, no npm account, no build step:</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:Smalldy/godot-bridge
 </code></pre>
-<p>The package ships a <code>dsh.bundle</code> manifest (<code>cordis.patch.yml</code>) that inserts the <code>tool-godot-bridge</code> row into your profile. After a restart, the fifteen <code>godot_*</code> tools are available in every session on that profile. A listing in the <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> community registry is pending review (<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/199">PR #199</a>).</p>
+<p>The package ships a <code>dsh.bundle</code> manifest (<code>cordis.patch.yml</code>) that inserts the <code>tool-godot-bridge</code> row into your profile. After a restart, the fifteen <code>godot_*</code> tools are available in every session on that profile. Listed in the <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> community registry (topic: <code>dsh-plugin</code>).</p>
 <h3>Usage</h3>
 <pre><code class="language-text">godot_run_project            # start the game (default: current workspace)
 godot_ping                   # confirm 9090 answers
@@ -375,10 +376,10 @@ COVERAGE.md / COVERAGE.zh-CN.md   # full tool-by-tool comparison vs godot-mcp
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
       <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>

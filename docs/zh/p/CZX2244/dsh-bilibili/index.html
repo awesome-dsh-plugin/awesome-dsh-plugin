@@ -186,7 +186,273 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/CZX2244/dsh-bilibili/blob/main/README.md"><strong>English</strong></a> | <strong>中文</strong></p>
+<p><a href="https://github.com/CZX2244/dsh-bilibili/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a></p>
+<p>DeepSeek Harness 工具插件：给 Agent 添加 <code>bilibili_extract</code> 工具。发一个 B 站链接，Agent 自动提取视频文字信息（文稿/评论/弹幕）并按需抓取关键帧，完成总结分析。</p>
+<blockquote>
+<p>本插件不打包任何第三方二进制或模型；所调用的开源项目与服务见 <a href="https://github.com/CZX2244/dsh-bilibili/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>。</p>
+</blockquote>
+<hr>
+<h3>✨ 特性</h3>
+<ul>
+<li><strong>文字信息全量提取</strong>：元数据、完整字幕文稿（带时间戳，长文稿截断保留全文时间索引）、热门评论（含楼中楼）、弹幕（高频 + <strong>密度峰时间线样本</strong>，片头弹幕不霸榜）；<strong>无字幕轨的视频默认用必剪 ASR 转写</strong>（B站播放器「实时AI字幕」同款能力，匿名可用，24h 缓存），也可切换到本地引擎——<strong>sherpa-onnx（中文推荐，SenseVoice）</strong> 或 <strong>whisper.cpp</strong>（通用），离线可用、适配不同配置；单个信息源失败不影响整体（各自降级为空并带 note）；</li>
+<li><strong>可选帧图视觉描述</strong>：无视觉能力的主模型也能「看到」画面——帧图可交给本地 <strong>Ollama / llama.cpp</strong>（Qwen3-VL 2B/4B/8B 三档）或任意 OpenAI 兼容视觉接口转成文字描述，报告按需引用配图；</li>
+<li><strong>自动选帧（纯画面信号）</strong>：场景切换检测（&gt;20 分钟自动切抽样式）+ 均匀间隔兜底，5 秒去重；<strong>不做关键词猜测</strong>——判断「文稿哪里不完整、必须看画面」是语义分析，交给主 Agent 的两段式提示词完成；</li>
+<li><strong>清晰帧优选</strong>：抓帧时在目标时间点 ±1.5s 内用 FFmpeg <code>blurdetect</code> 逐帧测模糊度，<strong>自动选最清晰的那一帧</strong>——动画入场、运动模糊、淡入淡出的糊帧会被跳过；</li>
+<li><strong>两段式工作流</strong>：模型先读文稿（秒级、零下载），再带 <code>timestamps</code> 定向抓帧——每帧自动配附近字幕，视频 24h 缓存复用，多轮迭代不重复下载；模型以「<code>[建议抓帧] mm:ss</code>」固定格式显式回报需要画面的时刻；</li>
+<li><strong>输出模板可替换</strong>：内置简洁总结模板（省时 + 可转发），<code>summaryTemplate</code> 配置可指向任意自定义模板文件；</li>
+<li><strong>下载优先抓帧</strong>：视频先下载到本地再从本地文件抓帧（≤30 分钟 / ≤800MB），失败或超限自动回退远程逐帧；</li>
+<li><strong>健壮</strong>：B 站 412 限流指数退避重试；无字幕自动识别「需登录」并提示配置 SESSDATA；ffmpeg 无管道调用，任何环境可跑。</li>
+</ul>
+<hr>
+<h3>🚀 安装</h3>
+<p>前置：Node 18+、<code>ffmpeg</code> 在 PATH 中、<code>pnpm</code>。</p>
+<pre><code class="language-sh"># 方式一：从 GitHub 安装（推荐）
+dsh plugin --profile web add git+https://github.com/CZX2244/dsh-bilibili
+
+# 方式二：本地目录（开发用，link 模式改代码即生效）
+dsh plugin --profile web add ./dsh-bilibili
+
+# 重启 web profile（dsh web），新会话中即可使用 bilibili_extract 工具
+</code></pre>
+<p>安装后工具自动进入 Agent 的工具链：用户在对话里发 B 站链接（<code>bilibili.com/video/BV...</code>、<code>b23.tv</code> 短链或裸 BV 号），模型即可调用它分析。</p>
+<hr>
+<h3>🎨 自定义输出模板</h3>
+<p>输出格式是插件的<strong>可替换零件</strong>：数据（文稿/帧/弹幕/评论）由工具提供，长什么样由模板决定。</p>
+<ul>
+<li><strong>内置默认</strong>：<code>templates/summary.md</code> —— 简洁的「省时间」总结（一句话总结 → 带时间戳要点 → 值得看的片段 → 可转发的分享语）；</li>
+<li><strong>内置备选</strong>：<code>templates/timeline.md</code> —— 通用时间轴式（主标题 → 开场钩子 → 时间轴分段小标题 + 内嵌时间戳要点 → 配图锚点 → 结尾结论），配图能配就配、配不了不强凑；</li>
+<li><strong>换模板</strong>：在配置里设 <code>summaryTemplate: &#39;C:/path/我的模板.md&#39;</code>，指向你自己的模板文件；</li>
+<li><strong>改默认</strong>：直接编辑插件目录里的 <code>templates/summary.md</code>；</li>
+<li><strong>无效路径自动回退</strong>内置模板，工具永不因模板问题失效。</li>
+</ul>
+<p>如需更丰富的输出格式（学习笔记/评测表/时间线/复习卡等），可安装配套技能 <code>bilibili-video-analyzer</code>（A-K 格式目录），Agent 会按用户需求选用。</p>
+<hr>
+<h3>🧠 推荐工作流（两段式，主路径：提示词驱动）</h3>
+<p><strong>抓帧不是靠关键词自动猜，而是由主 Agent 用系统提示里的一套分析提示词，读完文稿后自己判断</strong>哪些位置「离开画面就不完整」、必须看画面。系统提示内置的「内容完整性检查」教模型找五类信息缺失——<strong>指代悬空 / 结论先行 / 操作无口述 / 无声演示 / 视觉对比</strong>，并显式回报：</p>
+<pre><code>① bilibili_extract(url, extract_frames: false)      # 只拿文字，秒级、零下载
+② agent 逐段检查文稿的「信息缺失」位置，确定必须看画面的时间点
+③ agent 在回复末尾以 [建议抓帧] mm:ss 理由 列出清单，再带 timestamps 定向抓帧——插件先在该时间点 ±4s 内用 FFmpeg 场景检测**对齐到画面变化最明显的帧**，再在 ±1.5s 内用 blurdetect **选最清晰的帧**（语义定位 → 画面精修 → 清晰度把关）
+④ 依据帧的 description/citation_hint（或 read_image）判断报告里引用哪些图
+</code></pre>
+<blockquote>
+<p>兜底：<strong>单次调用</strong>（不传 <code>timestamps</code>）时，插件才用自动选帧——纯画面信号：场景切换（&gt;20 分钟抽样式）+ 均匀间隔。这是给「模型没走两段式」时的保险，不包含任何关键词猜测。</p>
+</blockquote>
+<hr>
+<h3>🔧 配置</h3>
+<p>默认值写在 <code>cordis.patch.yml</code>，可在 <code>$DSH_HOME/profiles/web/cordis.patch.yml</code> 覆盖（后写覆盖整行 config）：</p>
+<pre><code class="language-yaml">- override:
+    - id: bilibili
+      config:
+        sessdata: &#39;&#39;                 # 可选，B站 SESSDATA（解锁登录态字幕/更多评论）
+        commentLimit: 20             # 评论抓取数量上限
+        maxFrames: 6                 # 最大抓帧数
+        extractFrames: true          # 是否抓帧（false = 纯文字模式）
+        downloadVideo: true          # 抓帧前先下载视频到本地（推荐）
+        keepVideo: false             # true = 永久保留下载的视频文件
+        maxVideoMinutes: 30          # 超过此时长的视频不下载，远程逐帧
+        maxDownloadMb: 800           # 下载大小上限（MB）
+        quality: 32                  # 16=360p 32=480p 64=720p 80=1080p
+        detectScenes: true           # 场景切换检测（&gt;20 分钟自动切抽样式）
+        sceneThreshold: 0.4          # 场景切换阈值 0-1，越大越严格
+        sharpFrames: true            # 清晰帧优选：目标时间点 ±1.5s 内 blurdetect 选最清晰帧
+        asrProvider: &#39;bcut&#39;          # ASR 引擎：bcut(必剪,默认) | sherpa-onnx(中文推荐) | whisper-local | auto | none
+        sherpaBin: &#39;&#39;                # sherpa-onnx-offline 可执行文件路径
+        sherpaModel: &#39;&#39;              # sherpa 模型 onnx 路径（SenseVoice/Paraformer）
+        sherpaModelType: &#39;sense-voice&#39;  # sense-voice | paraformer | zipformer2-ctc
+        sherpaTokens: &#39;&#39;             # sherpa tokens.txt 路径
+        sherpaThreads: 0             # sherpa CPU 线程数（0=自动）
+        whisperBin: &#39;whisper-cli&#39;    # whisper.cpp 可执行文件（PATH 或绝对路径）
+        whisperModel: &#39;medium&#39;       # 模型三档：small(低) / medium(中) / large-v3(高)，或 ggml-*.bin 路径
+        whisperModelDir: &#39;&#39;          # 模型目录，留空 = &lt;whisperBin 同目录&gt;/models
+        whisperLanguage: &#39;zh&#39;        # 转写语言
+        whisperThreads: 0            # whisper CPU 线程数（0=自动）
+        visionProvider: &#39;none&#39;       # 帧图视觉描述：none(默认) | ollama | llama-cpp | openai-compatible
+        visionBaseUrl: &#39;&#39;            # 视觉服务地址，留空且 ollama = http://localhost:11434/v1
+        visionModel: &#39;medium&#39;        # 三档：low(2B) / medium(4B) / high(8B)，或显式模型名
+        visionApiKey: &#39;&#39;             # 云端视觉 API Key（本地留空）
+        visionPrompt: &#39;&#39;             # 识图提示词（留空 = 按模型自动选内置提示词）
+        visionPromptByModel: {}      # 分模型提示词覆盖（显式模型名 / low / medium）
+        visionMaxFrames: 6           # 最多描述几张帧（与 maxFrames 对齐）
+        framesDir: &#39;&#39;                # 帧图输出目录，留空 = 系统临时目录/dsh-bilibili/&lt;bvid&gt;
+        summaryTemplate: &#39;&#39;          # 输出模板路径，留空 = 内置 templates/summary.md
+        timeoutMs: 300000            # 工具整体超时（毫秒）
+</code></pre>
+<h4>本地 ASR 转写（可选，中文推荐 sherpa-onnx）</h4>
+<p>无字幕视频默认走必剪（零配置、匿名、国内直连）。想离线、或必剪不可用时，可切换到本地引擎。<strong>插件不打包模型，只提供接口，模型与二进制需自行下载</strong>（本地离线推理的物理前提，但不涉及任何 API key / 额度 / 付费）。</p>
+<h5>推荐：sherpa-onnx（中文，SenseVoice）</h5>
+<p>B 站以中文内容为主，SenseVoice 的中文识别率明显高于 Whisper，且速度更快、模型更小；模型官方托管在 ModelScope（国内直连、下载快）。</p>
+<table>
+<thead>
+<tr>
+<th>档位</th>
+<th>推荐模型</th>
+<th>体积（约）</th>
+<th>适用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>低</td>
+<td>SenseVoiceSmall（int8）</td>
+<td>~230 MB</td>
+<td>低配电脑</td>
+</tr>
+<tr>
+<td>中</td>
+<td>SenseVoiceSmall（fp32）</td>
+<td>~900 MB</td>
+<td>主流电脑（推荐）</td>
+</tr>
+<tr>
+<td>高</td>
+<td>Paraformer-large</td>
+<td>~2.5 GB</td>
+<td>高配电脑 / 极致精度</td>
+</tr>
+</tbody></table>
+<p>步骤：</p>
+<ol>
+<li>从 <a href="https://github.com/k2-fsa/sherpa-onnx">sherpa-onnx</a> 下载对应系统的 <code>sherpa-onnx-offline</code> 可执行文件；</li>
+<li>下载模型（<code>model.onnx</code> + <code>tokens.txt</code>），SenseVoice 模型可在 <a href="https://modelscope.cn">ModelScope</a> 或 sherpa-onnx 的模型列表获取；</li>
+<li>配置里设 <code>asrProvider: &#39;sherpa-onnx&#39;</code>，并填 <code>sherpaBin</code> / <code>sherpaModel</code> / <code>sherpaTokens</code>（<code>sherpaModelType</code> 默认 <code>sense-voice</code>）。</li>
+</ol>
+<h5>备选：whisper.cpp（通用 / 英文）</h5>
+<table>
+<thead>
+<tr>
+<th>档位</th>
+<th>whisperModel</th>
+<th>模型文件</th>
+<th>体积</th>
+<th>适用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>低</td>
+<td><code>small</code></td>
+<td><code>ggml-small.bin</code></td>
+<td>~466 MB</td>
+<td>低配电脑 / 快速出稿</td>
+</tr>
+<tr>
+<td>中</td>
+<td><code>medium</code></td>
+<td><code>ggml-medium.bin</code></td>
+<td>~1.5 GB</td>
+<td>主流电脑</td>
+</tr>
+<tr>
+<td>高</td>
+<td><code>large-v3</code></td>
+<td><code>ggml-large-v3.bin</code></td>
+<td>~3 GB</td>
+<td>高配电脑</td>
+</tr>
+</tbody></table>
+<ol>
+<li>从 <a href="https://github.com/ggml-org/whisper.cpp">whisper.cpp</a> 下载 <code>whisper-cli</code> 可执行文件；</li>
+<li>下载对应档位的 <code>ggml-*.bin</code> 模型，放到 <code>models/</code> 目录；</li>
+<li>配置里设 <code>asrProvider: &#39;whisper-local&#39;</code> 并填 <code>whisperBin</code> / <code>whisperModel</code>。</li>
+</ol>
+<blockquote>
+<p>提示：<code>asrProvider: &#39;auto&#39;</code> 会按「必剪 → sherpa-onnx → whisper-local」依次降级；中文内容建议至少 <code>medium</code>（whisper）或直接选 SenseVoice（sherpa）。sherpa-onnx 的 CLI 参数随版本略有差异，如遇报错请以你所用版本的 <code>--help</code> 为准调整。</p>
+</blockquote>
+<h4>🔍 帧图视觉描述（可选）</h4>
+<p>DeepSeek 主模型没有视觉能力时，可开启本功能：抓帧后把每帧交给<strong>视觉模型</strong>转成文字描述（随帧返回 <code>description</code> 字段），主模型据此判断报告里<strong>哪些画面值得引用</strong>——仅当内容需要视觉确认（图表/界面/演示细节）时才配图，纯口播画面不配图。默认关闭；视觉服务失败不影响主流程（帧路径照常返回）。</p>
+<p><strong>本地（推荐）</strong>：安装 <a href="https://ollama.com">Ollama</a> 后拉取模型即可，无 key、离线、不花钱：</p>
+<table>
+<thead>
+<tr>
+<th>档位</th>
+<th>visionModel</th>
+<th>Ollama 模型</th>
+<th>内存需求（约）</th>
+<th>适用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>低</td>
+<td><code>low</code></td>
+<td><code>qwen3-vl:2b</code></td>
+<td>~2 GB</td>
+<td>超低配电脑</td>
+</tr>
+<tr>
+<td>中</td>
+<td><code>medium</code>（默认）</td>
+<td><code>qwen3-vl:4b</code></td>
+<td>~4 GB</td>
+<td>低配-主流电脑（推荐）</td>
+</tr>
+<tr>
+<td>高</td>
+<td><code>high</code></td>
+<td><code>qwen3-vl:8b</code></td>
+<td>~6-8 GB</td>
+<td>主流电脑，质量最佳</td>
+</tr>
+</tbody></table>
+<p>想要更大模型直接填显式模型名（如 <code>qwen3-vl:32b</code>），插件原样透传——只是不再作为默认档位推荐。</p>
+<p>中档备选 <strong>MiniCPM-V 4.0</strong>（面壁，2026 年新作，官方称超越 GPT-4.1-mini、手机可跑，官方提供 GGUF/int4；其 Ollama tag 名称请以官方库为准）。<code>visionModel</code> 也接受显式模型名（Ollama tag 或云端模型 id）。</p>
+<p><strong>其他非千问模型（2026-08 已在 Ollama 官方库核实）</strong>：<code>minicpm-v:8b</code>（面壁 MiniCPM-V 2.6，中文 OCR 强）、<code>moondream</code>（1.9B，英文为主）、<code>gemma3n</code>（谷歌，英文为主）。<strong>Kimi-VL / InternVL / GLM-4V 暂不在 Ollama 官方库</strong>——可通过 llama.cpp 的社区 GGUF 或云端 OpenAI 兼容接口（如 Moonshot/智谱 API）使用；MiniCPM-V 4.0 官方 GGUF 走 llama-cpp 路线即可。</p>
+<blockquote>
+<p>选型依据：本任务是「<strong>理解画面内容 + 输出配图建议</strong>」而非 OCR 转录，权重放在<strong>中文场景理解与指令遵循</strong>上，因此默认三档用同族 Qwen3-VL（2B/4B/8B，行为一致、提示词可共用）；追求极致端侧省资源可选 MiniCPM-V 4.0。</p>
+</blockquote>
+<p><strong>llama.cpp（本地备选）</strong>：用 <code>llama-server</code> 启动视觉 GGUF（模型 + mmproj），它自带 OpenAI 兼容接口；<code>visionModel</code> 就是启动时 <code>--alias</code> 设置的名字——把别名设成档位关键词对应的名字，即可直接复用档位配置：</p>
+<pre><code class="language-sh">llama-server -m qwen3-vl-8b-q4_k_m.gguf --mmproj mmproj-qwen3-vl-8b.gguf --port 8080 --alias qwen3-vl:8b
+# 插件配置：visionProvider: &#39;llama-cpp&#39; + visionModel: &#39;medium&#39;
+</code></pre>
+<p>三档推荐以<strong>千问 Qwen3-VL 为主</strong>：低档 Qwen3-VL-2B、中档 Qwen3-VL-4B（默认）、高档 Qwen3-VL-8B。GGUF 已核实：官方 <code>Qwen/Qwen3-VL-4B/8B-Thinking-GGUF</code>（含 mmproj）、社区 <code>unsloth/Qwen3-VL-4B-Instruct-GGUF</code> 等；若所用 llama.cpp 版本暂不支持 Qwen3-VL 架构，可先改用 Qwen2.5-VL-7B-Instruct-GGUF（ModelScope 官方）。llama.cpp 还支持 MiniCPM-V（含 4.0）、InternVL、GLM-4V、LLaVA、gemma3n、moondream2 等架构。</p>
+<p><strong>云端</strong>：任何 OpenAI 兼容接口，例如 <code>visionProvider: &#39;openai-compatible&#39;</code> + <code>visionBaseUrl</code> + <code>visionModel</code> + <code>visionApiKey</code>。单帧描述任务不需要旗舰多模态，便宜档即可：GLM-4V-Flash（中文有免费额度）/ GPT-4o-mini / 硅基流动 Qwen-VL 系列。</p>
+<p><strong>分模型提示词</strong>：所有内置提示词的任务都是<strong>理解这一帧的内容</strong>（画面里发生了什么、展示了什么），文字只转述要点、不做逐字转录。插件会按模型自动选提示词：MiniCPM-V 家族有专属提示词、moondream2 用英文提示词、低档小模型用更短的提示词；你也可以用 <code>visionPrompt</code>（全局）或 <code>visionPromptByModel</code>（按显式模型名或档位 low/medium）覆盖。</p>
+<p><strong>配图质量把关</strong>：视觉描述末尾会要求模型输出「配图建议：适合/不适合」（适合=画面清晰、信息明确、能帮助读者理解；不适合=纯口播/模糊/无信息量）。帧数据带 <code>citation_hint</code> 字段，总结报告<strong>只引用「适合」的帧</strong>，每段至多 1-2 张。</p>
+<p><strong>2B 实测结论</strong>（2026-08，llama.cpp b10428 + Qwen3-VL-2B-Instruct-Q4_K_M，16 线程 CPU，7 张已知内容测试图）：配图建议输出 100% 稳定；图表数值（120/240/180/300 万元）与海报数字（32%/500 万/三轮融资）与原文完全一致；纯口播画面正确判「不适合」；单张 4-9 秒。低档 2B 的短提示词已按实测调优（含防幻觉与判定标准）。</p>
+<blockquote>
+<p>提示：本地 CPU 描述数张帧需要几十秒到几分钟（GPU 更快）；<code>visionMaxFrames</code> 控制描述帧数上限。</p>
+</blockquote>
+<hr>
+<h3>📁 项目结构</h3>
+<pre><code>dsh-bilibili/
+├── lib/
+│   ├── index.js        # Cordis 插件入口：注册工具 + 系统提示指引 + 配置 schema
+│   ├── extractor.js    # 提取层：B站 API + 下载模块 + 场景检测 + ffmpeg 抓帧
+│   ├── keyframes.js    # 纯函数：自动选帧（纯画面信号）、时间格式化
+│   └── format.js       # 纯函数：提取结果 → 模型可见文本摘要
+├── templates/summary.md  # 内置默认输出模板（可替换）
+├── test/                 # 单元测试（node --test）
+├── cordis.patch.yml      # bundle 补丁层（被插件系统识别）
+└── package.json          # dsh.bundle.patch 声明 + peer 依赖
+</code></pre>
+<hr>
+<h3>🔌 插件标准</h3>
+<p>本插件遵循 DeepSeek Harness 插件标准：npm 包声明 <code>dsh.bundle.patch</code> → <code>dsh plugin add</code> 安装后自动 reconcile 进 <code>dsh.profile.bundles</code> → 重启 profile 后由 Cordis loader 挂载。标准详见 <a href="https://github.com/deepseek-ai/deepseek-harness">deepseek-harness 仓库</a>。</p>
+<hr>
+<h3>🛠️ 本地开发（link 模式）</h3>
+<p><code>dsh plugin add</code> 对本地目录用 <code>link:</code> 安装（改代码即生效）。由于 ESM 按真实路径解析依赖，插件目录需要一条指向 profile node_modules 的 junction：</p>
+<pre><code class="language-powershell">New-Item -ItemType Junction -Path &quot;.\node_modules\@deepseek-ai&quot; `
+  -Target &quot;$env:USERPROFILE\.dsh\profiles\node_modules\@deepseek-ai&quot;
+</code></pre>
+<p>改动后重启 web profile 即生效。</p>
+<hr>
+<h3>⚠️ 限制</h3>
+<ul>
+<li>多分 P 视频当前只取第一 P；</li>
+<li>无字幕轨的视频默认用必剪 ASR 转写文稿，可切本地 sherpa-onnx / whisper.cpp；转写结果可能有识别错误，返回中会如实标注；</li>
+<li>必剪 ASR 是匿名接口，高频连续调用可能被限流（返回错误）；需要高频/稳定转写时建议 <code>asrProvider: &#39;auto&#39;</code>（自动降级）或直接切本地 sherpa-onnx；</li>
+<li>帧图落盘不自动清理（便于模型随时 read_image），代价是磁盘占用；</li>
+<li>Node fetch 不读系统代理环境变量，需要代理的网络环境待适配；</li>
+<li>场景检测对 &gt;20 分钟视频自动切抽样式（全片解码耗时）。</li>
+</ul>
+<hr>
+<h3>📄 License</h3>
+<p><a href="https://github.com/CZX2244/dsh-bilibili/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/CZX2244/dsh-bilibili/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -199,10 +465,10 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
       <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
-      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>

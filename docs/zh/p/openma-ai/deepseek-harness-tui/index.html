@@ -189,21 +189,15 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/README.md">中文</a> | <a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/README.en.md">English</a></p>
-<p><a href="https://www.npmjs.com/package/@openma/deepseek-harness-tui"><img src="https://img.shields.io/npm/v/%40openma%2Fdeepseek-harness-tui" alt="npm"></a>
-<a href="https://github.com/openma-ai/deepseek-harness-tui/actions/workflows/package-npm.yml"><img src="https://github.com/openma-ai/deepseek-harness-tui/actions/workflows/package-npm.yml/badge.svg" alt="Package and publish npm"></a>
-<a href="https://github.com/openma-ai/deepseek-harness-tui/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a></p>
-<p>DeepSeek Harness 的终端原生 agent UI：在一个 Rust/ratatui 界面里查看流式推理、
-工具调用、subagent、token 用量和持久化会话。既可以作为官方 <code>dsh</code> profile
-插件运行，也可以直接连接 SDK JSON-RPC runtime。</p>
-<blockquote>
-<p><strong>v0.2.x</strong> · 官方包覆盖 macOS Apple Silicon、macOS Intel、Linux x64 和
-Windows x64。当前集成以 <code>dsh 0.1.0-rc.6</code> 为基线。</p>
-</blockquote>
+<hr>
+<p><code>dsh-tui</code> 是 DeepSeek Harness 的终端原生 agent UI：在一个 Rust/ratatui
+界面里查看流式推理、工具调用、subagent、token 用量和持久化会话。它既可以
+作为官方 <code>dsh</code> profile 插件运行，也可以直接连接 SDK JSON-RPC runtime。</p>
 <p><img src="https://raw.githubusercontent.com/openma-ai/deepseek-harness-tui/main/assets/screenshots/banner-v020.png" alt="dsh-tui 0.2 的 DeepSeek Harness 首页"></p>
 <h3>快速开始</h3>
 <h4>推荐：作为 dsh profile 插件运行</h4>
-<p>需要已安装并配置好的 <code>dsh</code>、Node.js 18+ 和 pnpm 10+。</p>
+<p>需要已安装并配置好的 <code>dsh</code>（当前集成基线为 <code>0.1.0-rc.6</code>）、Node.js 18+ 和
+pnpm 10+。官方包覆盖 macOS Apple Silicon、macOS Intel、Linux x64 和 Windows x64。</p>
 <pre><code class="language-sh">dsh plugin --profile tui add @openma/deepseek-harness-tui
 dsh --profile tui
 </code></pre>
@@ -433,7 +427,7 @@ dsh 并行加载的 ESM 插件抢同一份模块。升级到 <code>0.1.1</code> 
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1826</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
       <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>

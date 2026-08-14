@@ -189,7 +189,197 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/README.zh-CN.md">中文</a></p>
+<p><strong>Image generation and image understanding for the DeepSeek Harness — powered by your ChatGPT subscription. No <code>OPENAI_API_KEY</code> needed.</strong></p>
+<p>A DeepSeek Harness plugin that registers three Codex-backed model tools:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>web_search</code></td>
+<td>Searches the public web and returns a concise summary with source URLs.</td>
+</tr>
+<tr>
+<td><code>image_gen</code></td>
+<td>Generates a bitmap image (illustrations, icons, logos, photos, concept art, UI mockups) through the ChatGPT Codex backend.</td>
+</tr>
+<tr>
+<td><code>image_vision</code></td>
+<td>Describes or answers questions about an image with a multimodal model — giving text-only harness models (e.g. <code>deepseek-v4-flash</code>) plug-in vision.</td>
+</tr>
+</tbody></table>
+<p>All three tools reuse the <strong>ChatGPT login state</strong> (the same OAuth tokens the official Codex CLI uses) and the harness-owned transports in <a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/scripts"><code>scripts/</code></a> — zero npm dependencies, Node built-in <code>https</code> only.</p>
+<h3>How it works</h3>
+<pre><code>web_search / image_gen / image_vision (model tool)
+        │  harness.registerTool + credentials service
+        ▼
+index.js (Cordis bundle entry)
+        │  shell service, env-only argument passing
+        ▼
+scripts/codex-common.mjs / codex-imagegen.mjs / codex-vision.mjs / codex-search.mjs   ← harness-owned transports
+        │  OAuth refresh (auth.openai.com) + POST chatgpt.com/backend-api/codex/responses
+        ▼
+        gpt-5.5 (multimodal) → PNG file / text description
+</code></pre>
+<p>Auth precedence (all transports): <code>CODEX_ACCESS_TOKEN</code> / <code>CODEX_REFRESH_TOKEN</code> / <code>CODEX_ACCOUNT_ID</code> environment variables (resolved from the DSH credentials service, keys <code>OPENAI_CODEX_API_KEY</code> / <code>OPENAI_CODEX_REFRESH_TOKEN</code> / optional <code>OPENAI_CODEX_ACCOUNT_ID</code>) → <code>$CODEX_HOME/auth.json</code> → <code>~/.codex/auth.json</code> (<code>codex login</code>). On HTTP 401 the transport refreshes the access token once and persists it back to the selected auth file (atomic, 0600). This plugin consumes the login state; it does not provide Codex authentication or an LLM provider.</p>
+<h3>Requirements</h3>
+<ul>
+<li>DeepSeek Harness (the plugin is installed as a profile-wide Cordis bundle; tested against current builds)</li>
+<li>Node.js ≥ 22 (for the transports)</li>
+<li>A ChatGPT subscription login state:<ul>
+<li><code>~/.codex/auth.json</code> from <code>codex login</code> (recommended), <strong>or</strong></li>
+<li>the <code>OPENAI_CODEX_API_KEY</code> / <code>OPENAI_CODEX_REFRESH_TOKEN</code> credentials in DSH</li>
+</ul>
+</li>
+</ul>
+<h3>Install</h3>
+<p>The package ships as a <strong>bundle</strong>: installing it into a profile registers the tools in the host registry, so <strong>every session of that profile</strong> gets them.</p>
+<pre><code class="language-bash"># from a git host (no build step, so no pnpm allowBuilds permission needed)
+dsh plugin --profile web add github:SPYQWER1/dsh-codex-tools
+
+# or from a tarball (pnpm pack)
+dsh plugin --profile web add ./dsh-codex-tools-1.0.0.tgz
+
+# or from npm, once published
+dsh plugin --profile web add dsh-codex-tools
+</code></pre>
+<p>Then restart the profile (<code>dsh web</code> / <code>dsh --profile web</code>) — the tools appear in every session. <code>dsh plugin --profile web remove dsh-codex-tools</code> uninstalls. Pin a commit for git installs (<code>github:SPYQWER1/dsh-codex-tools#&lt;sha&gt;</code>) so a later push cannot change what runs.</p>
+<p>Bundle install resolves the in-box <code>@deepseek-ai/dsh-tools</code> peer from the harness installation; no extra npm packages are fetched. The bundle entry is <code>index.js</code>, which registers all three tools into the host registry and shares the <code>scripts/</code> transports via <code>tools.js</code>.</p>
+<h4>As standalone CLI</h4>
+<p>The transports are plain Node scripts and work without the harness:</p>
+<pre><code class="language-bash"># generate an image (writes the PNG, prints JSON to stdout)
+CG_PROMPT=&quot;a cute whale icon, flat vector style&quot; CG_OUT=whale.png CG_SIZE=1024x1024 \
+  node scripts/codex-imagegen.mjs
+
+# describe an image
+VG_IMAGE=whale.png VG_QUESTION=&quot;what is this?&quot; node scripts/codex-vision.mjs
+
+# search the public web
+CS_QUERY=&quot;latest DeepSeek Harness release&quot; CS_FRESHNESS=live node scripts/codex-search.mjs
+</code></pre>
+<h3>Usage</h3>
+<p>Ask the harness in natural language — the model drives the tools itself:</p>
+<ul>
+<li><em>&quot;Search for the latest DeepSeek Harness release&quot;</em> → <code>web_search</code></li>
+<li><em>&quot;生成一个鲸鱼图标&quot;</em> → <code>image_gen</code></li>
+<li><em>&quot;看看这个图片讲了什么：output/photo.png&quot;</em> → <code>image_vision</code></li>
+</ul>
+<h4><code>web_search</code> parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>query</code></td>
+<td>string (required)</td>
+<td>Public-web research question.</td>
+</tr>
+<tr>
+<td><code>maxSources</code></td>
+<td>integer</td>
+<td>1–10, default <code>5</code>.</td>
+</tr>
+<tr>
+<td><code>freshness</code></td>
+<td>string</td>
+<td><code>cached</code> (default) or <code>live</code> for time-sensitive queries.</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td>ChatGPT backend model, default <code>gpt-5.4-mini</code>.</td>
+</tr>
+</tbody></table>
+<p>The result contains <code>summary</code> and <code>sources</code>, where each source has a title, URL, and short snippet.</p>
+<h4><code>image_gen</code> parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prompt</code></td>
+<td>string (required)</td>
+<td>Detailed description (subject, style, composition, palette, constraints).</td>
+</tr>
+<tr>
+<td><code>out</code></td>
+<td>string</td>
+<td>Output path relative to the workspace. Default <code>output/imagegen/&lt;timestamp&gt;.png</code>.</td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>string</td>
+<td><code>1024x1024</code>, <code>1536x1024</code>, <code>1024x1536</code>, <code>2048x2048</code>, <code>2048x1152</code>, or <code>auto</code> (default).</td>
+</tr>
+<tr>
+<td><code>format</code></td>
+<td>string</td>
+<td><code>png</code> (default), <code>jpeg</code>, <code>webp</code>.</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td>ChatGPT backend model, default <code>gpt-5.5</code>.</td>
+</tr>
+</tbody></table>
+<h4><code>image_vision</code> parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>image</code></td>
+<td>string (required)</td>
+<td>Path to the image (png/jpeg/webp/gif), workspace-relative or absolute.</td>
+</tr>
+<tr>
+<td><code>question</code></td>
+<td>string</td>
+<td>Optional focus question; defaults to a full description.</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td>Default <code>gpt-5.5</code>.</td>
+</tr>
+</tbody></table>
+<h3>Gallery</h3>
+<p><code>image_gen</code> — generate an image from a natural-language request:</p>
+<p><img src="https://raw.githubusercontent.com/SPYQWER1/dsh-codex-tools/main/%E7%94%9F%E5%9B%BE.png" alt="image_gen demo"></p>
+<p><code>image_vision</code> — a text-only model reads an image:</p>
+<p><img src="https://raw.githubusercontent.com/SPYQWER1/dsh-codex-tools/main/%E8%AF%86%E5%9B%BE.png" alt="image_vision demo"></p>
+<h3>Caveats</h3>
+<ul>
+<li><code>chatgpt.com/backend-api/codex/responses</code> is the same internal endpoint the official Codex CLI uses. It is <strong>not</strong> a documented public API — OpenAI may change or restrict it at any time.</li>
+<li>Web search and image generation use the metered <strong>Codex-usage</strong> bucket of your ChatGPT plan.</li>
+<li>Per OpenAI Terms of Use, do not use your ChatGPT subscription to power a public-facing image generation service.</li>
+<li>Transparent-background output is not supported (use a chroma-key background + local removal instead).</li>
+</ul>
+<h3>License</h3>
+<p>MIT — see <a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/LICENSE">LICENSE</a>. The protocol shape follows the public behavior of the Codex CLI and the <a href="https://github.com/leeguooooo/chatgpt-imagegen">chatgpt-imagegen</a> project; the implementation here is original.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/SPYQWER1/dsh-codex-tools/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -203,10 +393,10 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
       <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>

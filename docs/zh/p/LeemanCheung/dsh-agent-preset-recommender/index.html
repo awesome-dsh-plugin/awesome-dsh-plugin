@@ -186,7 +186,139 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a> <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a> <a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/actions/workflows/ci.yml"><img src="https://github.com/LeemanCheung/dsh-agent-preset-recommender/actions/workflows/ci.yml/badge.svg" alt="CI"></a></p>
+<p><a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/README.md">English</a> | 中文</p>
+<p>一个持久化、Host 侧的 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> bundle：以隐私安全方式汇总本地 Codex、Claude Code、WorkBuddy/CodeBuddy 活动，并推荐 DSH 内置 Agent preset。它只提供建议：不调用 LLM、不安装能力、不修改 preset、不发起网络请求。</p>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:LeemanCheung/dsh-agent-preset-recommender
+</code></pre>
+<p>安装后重启所选 DSH profile。软件包通过 <code>dsh.bundle.patch</code> 挂载一个 Host 插件。</p>
+<h3>推荐内容</h3>
+<p>聚合行为会映射到：</p>
+<ul>
+<li>内置 preset：<code>minimal</code>、<code>code</code>、<code>standard</code>；</li>
+<li>可选能力：Codex 委派、Claude Code 委派、workflows、web、MCP、LSP。</li>
+</ul>
+<p>每条建议都包含置信度与证据计数。规则完全确定且仅在本地运行，不会自动更改 DSH。</p>
+<h3>架构</h3>
+<pre><code class="language-text">cordis.patch.yml → src/index.js（Cordis 生命周期 + 原始模型工具）
+                    ├─ scanner.js（有界遍历与聚合）
+                    ├─ extractors.js（仅选取 JSON/JSONL 元数据字段）
+                    ├─ recommender.js（确定性规则）
+                    ├─ store.js（原子写入私有报告）
+                    └─ render.js（有界、可读的工具输出）
+</code></pre>
+<p>运行时代码为 Node.js 20+ 的纯 ESM JavaScript；除 Node 内置模块外，仅使用 <code>@deepseek-ai/schemastery</code> 验证配置。工具以原始 ToolDefinition 直接调用 <code>ctx.tools.register</code>，不依赖未发布的 DSH tools 运行时导入。</p>
+<h3>隐私</h3>
+<p>持久化内容仅包括：</p>
+<ul>
+<li>数据源与本机密钥派生的项目 ID；</li>
+<li>分类工具计数；</li>
+<li>session、workflow 与项目元数据数量；</li>
+<li>首次/最后观测时间；</li>
+<li>推荐、置信度与证据计数；</li>
+<li>明确、机器可读的隐私声明。</li>
+</ul>
+<p>插件<strong>绝不持久化</strong> prompt、response、命令、工具参数、原始事件、绝对路径、用户名、secret 或文件正文。项目 ID 使用随机、本机私有的 HMAC 密钥派生，因此缺少私钥时无法通过猜测路径匹配报告 ID。WorkBuddy/CodeBuddy 的 memory 元数据只根据文件存在与 mtime 计数；workflow/plan 文件同样绝不打开。不联网，也不执行扫描到的命令。</p>
+<p>自动跳过缓存、依赖、构建产物、输出、coverage、虚拟环境与 <code>.git</code> 目录，且不跟随符号链接。</p>
+<p>默认报告位置：</p>
+<pre><code class="language-text">$DSH_HOME/state/agent-preset-recommender/report.json
+</code></pre>
+<p>若未设置 <code>DSH_HOME</code>，则使用 <code>~/.dsh</code>。目录还会保存仅用于派生项目 ID 的私有随机 <code>identity.key</code>。报告通过同目录临时文件加原子 rename 写入；平台允许时采用限制性权限。</p>
+<h3>支持位置与格式</h3>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>默认位置</th>
+<th>读取方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Codex</td>
+<td><code>~/.codex/sessions</code>、<code>~/.codex/archived_sessions</code></td>
+<td>有界 <code>.jsonl</code>/<code>.json</code>；只读 session/project 与工具名称字段</td>
+</tr>
+<tr>
+<td>Claude Code</td>
+<td><code>~/.claude/projects</code></td>
+<td>有界 <code>.jsonl</code>/<code>.json</code>；只读 project 与 <code>tool_use</code> 名称字段</td>
+</tr>
+<tr>
+<td>Claude transcripts</td>
+<td>默认关闭</td>
+<td>仅显式配置 <code>claudeTranscriptRoots</code> 后扫描</td>
+</tr>
+<tr>
+<td>WorkBuddy/CodeBuddy sessions</td>
+<td><code>~/WorkBuddy</code>、<code>~/CodeBuddy</code>、<code>~/.codebuddy</code></td>
+<td>仅扫描项目 <code>.workbuddy/*</code> 或 <code>.codebuddy/*</code> session 目录下的有界 <code>.jsonl</code>/<code>.json</code></td>
+</tr>
+<tr>
+<td>WorkBuddy/CodeBuddy 项目元数据</td>
+<td>配置根下 <code>.workbuddy</code> 或 <code>.codebuddy</code> 的 <code>memory</code>、<code>workflows</code>、<code>plans</code></td>
+<td>仅计数与 mtime；不读正文；memory 不会成为 workflow 证据</td>
+</tr>
+</tbody></table>
+<p>不同产品版本的格式可能变化。未知字段会被忽略；畸形记录跳过，畸形文件计入错误但不会终止扫描。</p>
+<h3>配置</h3>
+<p>在 DSH patch 中配置 <code>agent-preset-recommender</code> 行：</p>
+<pre><code class="language-yaml">- id: agent-preset-recommender
+  config:
+    scanOnStart: true
+    intervalMinutes: 360      # 0 关闭定时扫描
+    maxFilesPerSource: 500
+    maxBytesPerFile: 1048576
+    recentDays: 90
+    stateDirectory: &#39;&#39;        # 空值 = $DSH_HOME/state/agent-preset-recommender
+    codexRoots:
+      - ~/.codex/sessions
+      - ~/.codex/archived_sessions
+    claudeRoots:
+      - ~/.claude/projects
+    claudeTranscriptRoots: [] # 必须显式选择加入
+    workbuddyRoots:
+      - ~/WorkBuddy
+      - ~/CodeBuddy
+      - ~/.codebuddy
+</code></pre>
+<p>文件数、单文件字节数、最近天数与间隔均受验证和限制。不存在或不可访问的根目录会跳过。启动、定时及工具触发扫描共用串行队列，并在插件卸载时取消。</p>
+<h3>模型工具</h3>
+<h4><code>scan_agent_projects</code></h4>
+<p>执行并持久化一次新扫描；可以只刷新指定来源：</p>
+<pre><code class="language-json">{ &quot;sources&quot;: [&quot;codex&quot;, &quot;claude&quot;] }
+</code></pre>
+<p>未选择来源会保留上一版聚合结果。</p>
+<h4><code>get_agent_preset_recommendations</code></h4>
+<p>不扫描，直接读取持久化报告：</p>
+<pre><code class="language-json">{}
+</code></pre>
+<p>也可按密钥派生的项目 ID 查询：</p>
+<pre><code class="language-json">{ &quot;project_id&quot;: &quot;codex-0123456789abcdef&quot; }
+</code></pre>
+<p>两个工具都返回有界的可读文本字符串。</p>
+<h3>限制</h3>
+<ul>
+<li>元数据 schema 有意保持保守；未知工具事件可能少计。</li>
+<li>私有状态目录存在时，同一来源/路径的密钥派生 ID 保持稳定；删除 <code>identity.key</code> 会主动生成一组新的 ID。</li>
+<li>推荐反映本地使用频率，不代表任务质量或组织策略。</li>
+<li>插件不会验证可选产品/能力是否已安装或已认证。</li>
+<li>JSONL 超出字节上限的后续数据、过大的 JSON 文件、过旧文件，以及超出每来源数量限制的较旧文件会主动忽略。</li>
+</ul>
+<h3>开发</h3>
+<pre><code class="language-sh">npm install
+npm test
+</code></pre>
+<p>测试使用 Node 内置 <code>node:test</code> 与临时合成 fixture，不读取本机产品数据。安全问题的私密报告方式见 <a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/SECURITY.md">SECURITY.md</a>。</p>
+<h3>许可证</h3>
+<p><a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -199,10 +331,10 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
       <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
-      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>

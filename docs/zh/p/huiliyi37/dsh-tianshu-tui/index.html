@@ -213,7 +213,7 @@ footer p+p{margin-top:.5rem}
 <h4>3. 启动</h4>
 <pre><code class="language-sh">npx -y @deepseek-ai/dsh --profile tui
 </code></pre>
-<p>看到欢迎页品牌 <strong>dsh-tianshu-tui</strong> 即成功。<code>Ctrl+Q</code> 退出。</p>
+<p>看到欢迎页品牌 <strong>dsh-tianshu-tui</strong> 即成功。<code>Ctrl+Q</code> 或 <code>/exit</code> 退出。</p>
 <p>已全局安装官方 CLI 且 <code>dsh --version</code> 为 <code>0.1.0-rc.6</code> 时，把上面的 <code>npx -y @deepseek-ai/dsh</code> 换成 <code>dsh</code> 即可。</p>
 <p>若 <code>npx</code> 仍报 <code>ERR_FS_EISDIR</code>，是 <code>~/.dsh/profiles/node_modules</code> 里旧的安装 fallback 与官方 CLI 冲突。换干净目录再启动：</p>
 <pre><code class="language-sh">DSH_HOME=/tmp/dsh-tianshu npx -y @deepseek-ai/dsh plugin --profile tui add @huiliyi37/dsh-tianshu-tui
@@ -222,7 +222,16 @@ DSH_HOME=/tmp/dsh-tianshu npx -y @deepseek-ai/dsh --profile tui
 <p>不要在 DeepSeek Harness 工作区根目录对本包跑 tsdown：会把未发布的 <code>@deepseek-ai/dsh-root</code> 写进 bundle，加载必失败。</p>
 <p>需要图片再询问能力时，再装配同仓伴生包 <code>vision-ask/</code>。</p>
 <h3>更新说明</h3>
-<p>当前 npm <code>latest</code>：<a href="https://www.npmjs.com/package/@huiliyi37/dsh-tianshu-tui"><code>@huiliyi37/dsh-tianshu-tui@0.1.1-rc.6</code></a>（<a href="https://github.com/huiliyi37/dsh-tianshu-tui/releases/tag/v0.1.1-rc.6">GitHub Release</a>）。</p>
+<p>当前 npm <code>latest</code>：<a href="https://www.npmjs.com/package/@huiliyi37/dsh-tianshu-tui"><code>@huiliyi37/dsh-tianshu-tui@0.1.2-rc.6</code></a>（<a href="https://github.com/huiliyi37/dsh-tianshu-tui/releases/tag/v0.1.2-rc.6">GitHub Release</a>）。</p>
+<h4>0.1.2-rc.6（2026-08-14）</h4>
+<p>退出时恢复终端光标并把 TTY 还给 shell；新增 <code>/exit</code>。</p>
+<ul>
+<li><code>Ctrl+Q</code> / <code>/exit</code> 退出后恢复硬件光标，经宿主退出把终端还给 shell（<a href="https://github.com/huiliyi37/dsh-tianshu-tui/issues/22">#22</a>）</li>
+<li>无 launcher 宿主服务时 TUI 不再静默卡死</li>
+<li>全屏 overlay 不再被流式输出盖住；Esc/Ctrl+C 关闭命令面板时不误提交</li>
+<li>空闲空输入需连按两次 Ctrl+C 才退出；等待回复提示不再在回合结束后误显示</li>
+</ul>
+<p>已装 <code>0.1.1-rc.6</code> 的用户下次启动会自动写入 profile。看到「插件已更新到 …，请重启 dsh 后生效」后重启即可。</p>
 <h4>0.1.1-rc.6（2026-08-14）</h4>
 <p>启动时对照 npm <code>latest</code>，把 profile 里的本包升到新版本，提示重启后生效。</p>
 <p><strong>从 <code>0.1.0-rc.6</code> 升级：</strong> 那一版还没有自更新，需要手动加一次才会带上新逻辑：</p>
@@ -448,7 +457,7 @@ npx -y @deepseek-ai/dsh --profile tui
 </tr>
 <tr>
 <td><code>Ctrl+Q</code></td>
-<td>退出</td>
+<td>退出（同 <code>/exit</code>）</td>
 </tr>
 <tr>
 <td><code>Ctrl+P</code></td>
@@ -550,7 +559,7 @@ npx -y @deepseek-ai/dsh --profile tui
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1826</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
       <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>

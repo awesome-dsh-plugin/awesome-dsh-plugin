@@ -316,16 +316,20 @@ ls $DSH_HOME/.agent-presets/data-agent/   # 应有 agent.cordis.yml + preset.yml
 <td>sqlcmd 捕获输出上限（stdout/stderr 各自，默认 20000 字符）</td>
 </tr>
 <tr>
+<td><code>readonly</code></td>
+<td>只读护栏（默认 false）：true 时 <code>sqlcmd</code> 与 <code>/query</code> 仅放行读语句（SELECT/SHOW/DESCRIBE/EXPLAIN/PRAGMA 等），写语句直接拒绝</td>
+</tr>
+<tr>
 <td><code>clients</code></td>
 <td>各数据库类型 CLI 客户端覆盖：<code>{ command?, args? }</code>，键为 <code>mysql</code> / <code>postgres</code> / <code>sqlite</code> / <code>oracle</code> / <code>hive</code> / <code>impala</code>（内置默认 mysql/psql/sqlite3/sqlplus/beeline/impala-shell）</td>
 </tr>
 <tr>
 <td><code>connections</code></td>
-<td>配置预置连接，键为 sessionId（<code>&#39;*&#39;</code> = 通配符默认，任何无自有连接的会话回落它；headless/keyless 运行与部署固定默认库场景）。<strong>不含 password 字段</strong>——密码只允许经 /connect 路由进入内存</td>
+<td>配置预置连接，键为 sessionId（<code>&#39;*&#39;</code> = 通配符默认，任何无自有连接的会话回落它；headless/keyless 运行与部署固定默认库场景）。<strong>不含 password 字段</strong>——密码只允许经 /connect 路由进入内存；可选 <code>readonly</code> 字段按连接锁定只读</td>
 </tr>
 </tbody></table>
-<p>工具行 <code>tool-sqlcmd</code>（data-agent 预设内）另有 <code>maxRows</code>（默认 100，注入工具描述的 LIMIT 引导），<code>queryTimeoutMs</code> / <code>maxResultChars</code> / <code>clients</code> 与宿主行同名可配。</p>
-<p>路由行 <code>data-agent-routes</code> 独立配置：<code>connectTimeoutMs</code> / <code>introspectMaxTables</code> / <code>maxResultChars</code> 与主行同名同默认；另有 <code>queryTimeoutMs</code>（/query 与元数据查询超时，默认 30000）与 <code>maxQueryChars</code>（/query 单条 SQL 长度上限，默认 65536）。</p>
+<p>工具行 <code>tool-sqlcmd</code>（data-agent 预设内）另有 <code>maxRows</code>（默认 100，注入工具描述的 LIMIT 引导）与 <code>readonly</code>，<code>queryTimeoutMs</code> / <code>maxResultChars</code> / <code>clients</code> 与宿主行同名可配。</p>
+<p>路由行 <code>data-agent-routes</code> 独立配置：<code>connectTimeoutMs</code> / <code>introspectMaxTables</code> / <code>maxResultChars</code> / <code>readonly</code> 与主行同名同默认；另有 <code>queryTimeoutMs</code>（/query 与元数据查询超时，默认 30000）与 <code>maxQueryChars</code>（/query 单条 SQL 长度上限，默认 65536）。</p>
 <pre><code class="language-yaml"># cordis.patch.yml 或 profile 层覆盖示例
 - id: data-agent
   name: &#39;@yejiming/dsh-data-agent&#39;
@@ -354,7 +358,7 @@ ls $DSH_HOME/.agent-presets/data-agent/   # 应有 agent.cordis.yml + preset.yml
 </thead>
 <tbody><tr>
 <td><code>POST /connect</code></td>
-<td>body <code>{ sessionId, type, host?, port?, user?, database, password? }</code>；校验 → 连通性验证（列出所有表）→ 成功才保存连接，返回 <code>{ ok, tables }</code>，失败返回 <code>{ ok: false, error }</code> 且不保存</td>
+<td>body <code>{ sessionId, type, host?, port?, user?, database, password?, readonly? }</code>；校验 → 连通性验证（列出所有表）→ 成功才保存连接，返回 <code>{ ok, tables }</code>，失败返回 <code>{ ok: false, error }</code> 且不保存</td>
 </tr>
 <tr>
 <td><code>POST /disconnect</code></td>
@@ -362,7 +366,7 @@ ls $DSH_HOME/.agent-presets/data-agent/   # 应有 agent.cordis.yml + preset.yml
 </tr>
 <tr>
 <td><code>GET /status?sessionId=</code></td>
-<td><code>{ connected, summary? }</code>；summary 为脱敏连接概要（无密码）+ 表清单</td>
+<td><code>{ connected, summary? }</code>；summary 为脱敏连接概要（无密码，含 <code>readonly</code> 当连接显式设定时）+ 表清单</td>
 </tr>
 <tr>
 <td><code>GET /schemas?sessionId=</code></td>
@@ -378,16 +382,16 @@ ls $DSH_HOME/.agent-presets/data-agent/   # 应有 agent.cordis.yml + preset.yml
 </tr>
 <tr>
 <td><code>POST /query</code></td>
-<td>body <code>{ sessionId, sql }</code>；运行任意 SQL（工作台命令框，非 agent 通道），返回 <code>{ ok, result: { exitCode, stdout, stderr, truncated } }</code>；<code>sql</code> 长度上限 <code>maxQueryChars</code></td>
+<td>body <code>{ sessionId, sql }</code>；运行任意 SQL（工作台命令框，非 agent 通道），返回 <code>{ ok, result: { exitCode, stdout, stderr, truncated } }</code>；<code>sql</code> 长度上限 <code>maxQueryChars</code>；readonly 开启时拒绝写语句</td>
 </tr>
 </tbody></table>
-<p>schema/table 标识符仅允许 <code>[A-Za-z0-9_$#.-]</code>（服务端白名单校验，拒绝注入形字符）。</p>
+<p>schema/table 标识符仅允许 <code>[A-Za-z0-9_$]</code>（服务端白名单校验并转义引用，拒绝注入形字符）。</p>
 <h3>安全说明</h3>
 <ul>
 <li><strong>密码</strong>：服务端仅存内存，传递通道按类型：mysql 经 <code>MYSQL_PWD</code>、postgres 经 <code>PGPASSWORD</code> 环境变量；oracle 经 sqlplus <code>connect user/pass@...</code> stdin 前缀、hive 经 beeline <code>!connect</code> stdin 前缀（均不进 argv）；impala 默认不传密码（LDAP/kerberos 由部署侧 <code>clients</code> 覆盖）。<code>/status</code> 与连接存储的公开读取面均剥离密码。</li>
-<li><strong>连接配置持久化</strong>：工作台在连接成功后把连接配置（<strong>含密码</strong>，明文）保存到浏览器 localStorage（键 <code>dsh-data-agent.connection.v1</code>，用户确认的本机单用户场景），用于切换页面/重启后回填表单并自动重连一次；断开不清除。如需清除：浏览器控制台执行 <code>localStorage.removeItem(&#39;dsh-data-agent.connection.v1&#39;)</code>。</li>
-<li><strong>无 shell 层</strong>：<code>ctx.subprocess.spawn</code> 参数数组化，SQL 与连接前缀经 stdin 传入，不存在 shell 拼接注入面；元数据路由的 schema/table 标识符过白名单校验。</li>
-<li><strong>SQL 执行权</strong>：审批策略为 never 时，sqlcmd 与 <code>/query</code> 的 DDL/DML 会直接执行——连接按 session 隔离，请自行评估数据面风险（只读模式 <code>readonly</code> 列为后续版本）。</li>
+<li><strong>连接配置持久化</strong>：工作台把连接配置（type/host/port/user/database）保存到浏览器 localStorage（键 <code>dsh-data-agent.connection.v1</code>），用于切换页面/重启后回填表单并自动重连一次。<strong>密码默认不落盘</strong>：仅当用户勾选「记住密码」时才持久化密码（明文 localStorage，本机单用户场景的显式 opt-in）。若需清除：浏览器控制台执行 <code>localStorage.removeItem(&#39;dsh-data-agent.connection.v1&#39;)</code>。</li>
+<li><strong>无 shell 层</strong>：<code>ctx.subprocess.spawn</code> 参数数组化，SQL 与连接前缀经 stdin 传入，不存在 shell 拼接注入面；元数据路由的 schema/table 标识符经收紧白名单 <code>[A-Za-z0-9_$]</code> 校验并按类型转义引用（反引号/双引号），拒绝 <code>#</code>、<code>--</code>、<code>;</code>、<code>&#39;</code> 等注入形字符。</li>
+<li><strong>SQL 执行权</strong>：审批策略为 never 时，sqlcmd 与 <code>/query</code> 的 DDL/DML 会直接执行——连接按 session 隔离，请自行评估数据面风险。可设 <code>readonly: true</code>（宿主/工具/路由三行同名，或 <code>/connect</code> 传 <code>readonly: true</code> 按连接锁定）强制只放行读语句（SELECT/SHOW/DESCRIBE/EXPLAIN/PRAGMA 等），作为误操作防护；对更强对手防护，仍建议配合数据库侧只读账号。</li>
 <li><strong>超时与上限</strong>：查询超时、输出截断、表清单上限、/query 单条 SQL 长度均为配置项，无硬编码 tunables。</li>
 </ul>
 <h3>卸载与回滚</h3>
@@ -430,10 +434,10 @@ dsh 同款约定（<code>nodeLinker: hoisted</code>）；pnpm 11 的供应链策
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
       <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
-      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>

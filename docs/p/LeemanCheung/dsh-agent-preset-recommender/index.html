@@ -186,7 +186,139 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a> <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a> <a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/actions/workflows/ci.yml"><img src="https://github.com/LeemanCheung/dsh-agent-preset-recommender/actions/workflows/ci.yml/badge.svg" alt="CI"></a></p>
+<p>English | <a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/README.zh.md">中文</a></p>
+<p>A persistent, host-side <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> bundle that privately summarizes local Codex, Claude Code, and WorkBuddy/CodeBuddy activity and recommends a built-in DSH agent preset. It is advisory only: there is no LLM call, installation, preset mutation, or network request.</p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add github:LeemanCheung/dsh-agent-preset-recommender
+</code></pre>
+<p>Restart the selected DSH profile after installation. The package declares <code>dsh.bundle.patch</code> and mounts one host plugin.</p>
+<h3>What it recommends</h3>
+<p>Observed aggregate behavior is mapped to:</p>
+<ul>
+<li>built-in presets: <code>minimal</code>, <code>code</code>, or <code>standard</code>;</li>
+<li>optional capabilities: Codex delegation, Claude Code delegation, workflows, web, MCP, and LSP.</li>
+</ul>
+<p>Every recommendation includes confidence and numerical evidence. Thresholds are deterministic and local; results never automatically change DSH.</p>
+<h3>Architecture</h3>
+<pre><code class="language-text">cordis.patch.yml → src/index.js (Cordis lifecycle + raw model tools)
+                    ├─ scanner.js (bounded traversal and aggregation)
+                    ├─ extractors.js (selected JSON/JSONL metadata fields)
+                    ├─ recommender.js (deterministic rules)
+                    ├─ store.js (atomic private report file)
+                    └─ render.js (bounded readable tool output)
+</code></pre>
+<p>Runtime code is plain ESM JavaScript for Node.js 20+. It uses Node built-ins plus <code>@deepseek-ai/schemastery</code> for plugin configuration validation. Tool definitions are registered directly through <code>ctx.tools.register</code> and do not import unpublished DSH tool runtime helpers.</p>
+<h3>Privacy</h3>
+<p>The scanner persists aggregate metadata only:</p>
+<ul>
+<li>source and installation-keyed project identifier;</li>
+<li>categorized tool counts;</li>
+<li>session, workflow, and project-metadata counts;</li>
+<li>first/last observation timestamps;</li>
+<li>recommendation, confidence, and evidence counts;</li>
+<li>an explicit machine-readable privacy declaration.</li>
+</ul>
+<p>It <strong>never persists</strong> prompts, responses, commands, tool arguments, raw events, absolute paths, usernames, secrets, or file contents. Project identifiers are derived with a random installation-local HMAC key, so report IDs cannot be dictionary-matched without the private key. WorkBuddy/CodeBuddy memory metadata is counted from file presence and modification time only; workflow/plan files are likewise never opened. The scanner makes no network requests and runs no discovered command.</p>
+<p>Cache, dependency, build, output, coverage, virtual-environment, and <code>.git</code> directories are skipped. Symbolic links are not followed.</p>
+<p>The default report is:</p>
+<pre><code class="language-text">$DSH_HOME/state/agent-preset-recommender/report.json
+</code></pre>
+<p>If <code>DSH_HOME</code> is unset, <code>~/.dsh</code> is used. The directory also holds a private random <code>identity.key</code> used only to derive project IDs. Report writes use a same-directory temporary file and atomic rename; restrictive permissions are requested where the platform supports them.</p>
+<h3>Supported locations and formats</h3>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Defaults</th>
+<th>Read behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Codex</td>
+<td><code>~/.codex/sessions</code>, <code>~/.codex/archived_sessions</code></td>
+<td>Bounded <code>.jsonl</code>/<code>.json</code>; selected session/project and tool-name fields</td>
+</tr>
+<tr>
+<td>Claude Code</td>
+<td><code>~/.claude/projects</code></td>
+<td>Bounded <code>.jsonl</code>/<code>.json</code>; selected project and <code>tool_use</code> name fields</td>
+</tr>
+<tr>
+<td>Claude transcripts</td>
+<td>Disabled</td>
+<td>Scanned only when <code>claudeTranscriptRoots</code> is explicitly configured</td>
+</tr>
+<tr>
+<td>WorkBuddy/CodeBuddy sessions</td>
+<td><code>~/WorkBuddy</code>, <code>~/CodeBuddy</code>, <code>~/.codebuddy</code></td>
+<td>Bounded <code>.jsonl</code>/<code>.json</code> only below project <code>.workbuddy/*</code> or <code>.codebuddy/*</code> session directories</td>
+</tr>
+<tr>
+<td>WorkBuddy/CodeBuddy project metadata</td>
+<td><code>.workbuddy</code> or <code>.codebuddy</code> <code>memory</code>, <code>workflows</code>, or <code>plans</code> beneath configured roots</td>
+<td>Count and mtime only; content is not read; memory never becomes workflow evidence</td>
+</tr>
+</tbody></table>
+<p>Formats vary between product releases. Unknown fields are ignored, malformed records are skipped, and malformed files are counted as errors without stopping the scan.</p>
+<h3>Configuration</h3>
+<p>Configure the inserted <code>agent-preset-recommender</code> row in a DSH patch:</p>
+<pre><code class="language-yaml">- id: agent-preset-recommender
+  config:
+    scanOnStart: true
+    intervalMinutes: 360      # 0 disables scheduled scans
+    maxFilesPerSource: 500
+    maxBytesPerFile: 1048576
+    recentDays: 90
+    stateDirectory: &#39;&#39;        # empty = $DSH_HOME/state/agent-preset-recommender
+    codexRoots:
+      - ~/.codex/sessions
+      - ~/.codex/archived_sessions
+    claudeRoots:
+      - ~/.claude/projects
+    claudeTranscriptRoots: [] # opt in explicitly
+    workbuddyRoots:
+      - ~/WorkBuddy
+      - ~/CodeBuddy
+      - ~/.codebuddy
+</code></pre>
+<p>Bounds are validated: file counts, file bytes, recency, and interval are finite. Missing/inaccessible roots are skipped. Startup, scheduled, and tool-triggered scans share one serialized queue and are aborted on plugin disposal.</p>
+<h3>Model tools</h3>
+<h4><code>scan_agent_projects</code></h4>
+<p>Runs and persists a fresh scan. Optionally refresh only selected sources:</p>
+<pre><code class="language-json">{ &quot;sources&quot;: [&quot;codex&quot;, &quot;claude&quot;] }
+</code></pre>
+<p>Unselected source aggregates from the previous report remain intact.</p>
+<h4><code>get_agent_preset_recommendations</code></h4>
+<p>Reads the persisted report without scanning:</p>
+<pre><code class="language-json">{}
+</code></pre>
+<p>Or retrieve one keyed project:</p>
+<pre><code class="language-json">{ &quot;project_id&quot;: &quot;codex-0123456789abcdef&quot; }
+</code></pre>
+<p>Both tools return bounded readable text strings.</p>
+<h3>Limitations</h3>
+<ul>
+<li>Metadata schemas are intentionally conservative; unrecognized tool events may be undercounted.</li>
+<li>Keyed IDs are stable only while the private state directory remains available; deleting <code>identity.key</code> intentionally creates a new identifier set.</li>
+<li>A recommendation reflects observed local frequency, not task quality or organizational policy.</li>
+<li>The plugin does not verify that optional products or capabilities are installed or authenticated.</li>
+<li>JSONL data after the byte cap, oversized JSON files, old files, and older files beyond a source limit are intentionally omitted.</li>
+</ul>
+<h3>Development</h3>
+<pre><code class="language-sh">npm install
+npm test
+</code></pre>
+<p>Tests use synthetic temporary fixtures and Node&#39;s built-in <code>node:test</code>; no local product data is read. See <a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/SECURITY.md">SECURITY.md</a> for private vulnerability reporting guidance.</p>
+<h3>License</h3>
+<p><a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/LeemanCheung/dsh-agent-preset-recommender/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -199,10 +331,10 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
       <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>

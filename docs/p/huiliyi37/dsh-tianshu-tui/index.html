@@ -213,7 +213,7 @@ footer p+p{margin-top:.5rem}
 <h4>3. Start</h4>
 <pre><code class="language-sh">npx -y @deepseek-ai/dsh --profile tui
 </code></pre>
-<p>Success looks like a welcome screen branded <strong>dsh-tianshu-tui</strong>. Quit with <code>Ctrl+Q</code>.</p>
+<p>Success looks like a welcome screen branded <strong>dsh-tianshu-tui</strong>. Quit with <code>Ctrl+Q</code> or <code>/exit</code>.</p>
 <p>If the official CLI is installed globally and <code>dsh --version</code> is <code>0.1.0-rc.6</code>, you can use <code>dsh</code> in place of <code>npx -y @deepseek-ai/dsh</code>.</p>
 <p>If <code>npx</code> still raises <code>ERR_FS_EISDIR</code>, stale install fallbacks under <code>~/.dsh/profiles/node_modules</code> are colliding with the official CLI. Use a clean home:</p>
 <pre><code class="language-sh">DSH_HOME=/tmp/dsh-tianshu npx -y @deepseek-ai/dsh plugin --profile tui add @huiliyi37/dsh-tianshu-tui
@@ -222,7 +222,16 @@ DSH_HOME=/tmp/dsh-tianshu npx -y @deepseek-ai/dsh --profile tui
 <p>Do not run tsdown for this package from the DeepSeek Harness workspace root: it rewrites imports to unpublished <code>@deepseek-ai/dsh-root</code>, and loading fails.</p>
 <p>The companion vision plugin lives in <code>vision-ask/</code> if you need image re-interrogation.</p>
 <h3>Release notes</h3>
-<p>Current npm <code>latest</code>: <a href="https://www.npmjs.com/package/@huiliyi37/dsh-tianshu-tui"><code>@huiliyi37/dsh-tianshu-tui@0.1.1-rc.6</code></a> (<a href="https://github.com/huiliyi37/dsh-tianshu-tui/releases/tag/v0.1.1-rc.6">GitHub Release</a>).</p>
+<p>Current npm <code>latest</code>: <a href="https://www.npmjs.com/package/@huiliyi37/dsh-tianshu-tui"><code>@huiliyi37/dsh-tianshu-tui@0.1.2-rc.6</code></a> (<a href="https://github.com/huiliyi37/dsh-tianshu-tui/releases/tag/v0.1.2-rc.6">GitHub Release</a>).</p>
+<h4>0.1.2-rc.6 (2026-08-14)</h4>
+<p>Quitting restores the terminal cursor and gives the TTY back to the shell. New <code>/exit</code> command.</p>
+<ul>
+<li><code>Ctrl+Q</code> / <code>/exit</code> show the hardware cursor again and exit the host so the shell can take the TTY (<a href="https://github.com/huiliyi37/dsh-tianshu-tui/issues/22">#22</a>)</li>
+<li>The TUI no longer hangs silently when launcher host services are missing</li>
+<li>Full-screen overlays are no longer overwritten by streamed output; Esc/Ctrl+C closes the command palette without committing</li>
+<li>Idle empty Ctrl+C requires a double-press to quit; the waiting hint no longer fires after a completed turn</li>
+</ul>
+<p>Users already on <code>0.1.1-rc.6</code> pick this up on the next launch. Restart after you see <code>插件已更新到 …，请重启 dsh 后生效</code>.</p>
 <h4>0.1.1-rc.6 (2026-08-14)</h4>
 <p>On launch the plugin checks npm <code>latest</code>, writes a newer version into the profile, and asks you to restart.</p>
 <p><strong>Upgrading from <code>0.1.0-rc.6</code>:</strong> that build has no self-update. Add the plugin once more to pick up the new logic:</p>
@@ -448,7 +457,7 @@ npx -y @deepseek-ai/dsh --profile tui
 </tr>
 <tr>
 <td><code>Ctrl+Q</code></td>
-<td>Quit</td>
+<td>Quit (same as <code>/exit</code>)</td>
 </tr>
 <tr>
 <td><code>Ctrl+P</code></td>
@@ -551,7 +560,7 @@ npx -y @deepseek-ai/dsh --profile tui
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1826</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
       <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>

@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">feibi-mochi/</span><wbr><span class="name">deepseek-harness-wallet</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 3</b></span>
+        <span>Star 数 <b>★ 4</b></span>
         <span>分类 <a href="/zh/model/">模型与账号接入</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -225,6 +225,15 @@ footer p+p{margin-top:.5rem}
 <pre><code class="language-sh">dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet
 </code></pre>
 <p>重启 <code>dsh web</code>，然后强制刷新页面。</p>
+<h4>更新</h4>
+<pre><code class="language-sh">dsh plugin --profile web update deepseek-harness-wallet
+</code></pre>
+<h4>卸载</h4>
+<pre><code class="language-sh">dsh plugin --profile web remove deepseek-harness-wallet
+</code></pre>
+<blockquote>
+<p>包名在 0.1.1 从 <code>dsh-wallet</code> 改为 <code>deepseek-harness-wallet</code>。如果之前装的是旧包名，请先执行 <code>dsh plugin --profile web remove dsh-wallet</code> 移除旧版，避免两份副本同时注册 UI。</p>
+</blockquote>
 <h3>数据与安全</h3>
 <table>
 <thead>

@@ -210,8 +210,8 @@ footer p+p{margin-top:.5rem}
 <td>以 provider / model、会话与 UTC 日期聚合普通对话、每次重试和上下文压缩用量。</td>
 </tr>
 <tr>
-<td><strong>52 周热力图</strong></td>
-<td>GitHub commit graph 风格的 Token 活跃度图；颜色越深代表当天总用量越高，悬停可查看精确数值。</td>
+<td><strong>30 周热力图</strong></td>
+<td>GitHub commit graph 风格的 Token 活跃度图；颜色越深代表当天总用量越高，悬停可查看总量、输入、输出与缓存读写明细。</td>
 </tr>
 <tr>
 <td><strong>紧凑布局</strong></td>
@@ -236,7 +236,7 @@ footer p+p{margin-top:.5rem}
 <h3>📊 仪表盘内容</h3>
 <ul>
 <li><strong>概览卡片</strong>：总 Token、输入 Token、输出 Token、缓存命中率和有用量会话数。</li>
-<li><strong>Token 活跃度</strong>：最近 52 周按天汇总的热力图；每个方格提供“日期 · 精确 Token 数”的悬停说明。</li>
+<li><strong>Token 活跃度</strong>：最近 30 周按天汇总的热力图；悬停方格可查看日期、总量、输入、输出以及缓存读写明细。</li>
 <li><strong>模型用量</strong>：按 provider / model 汇总调用次数、总量、输入与输出；缓存读写作为输入的辅助明细展示。</li>
 <li><strong>会话记录</strong>：可搜索会话标题、会话 ID 或模型路由，并查看最近活动时间及用量分布。</li>
 </ul>
@@ -272,7 +272,7 @@ footer p+p{margin-top:.5rem}
   B --&gt; C[Session projection cache]
   C --&gt; D[Settings · Token 用量]
   D --&gt; E[概览与模型统计]
-  D --&gt; F[52 周活跃度热力图]
+  D --&gt; F[30 周活跃度热力图]
 </code></pre>
 <ul>
 <li>Host 侧监听普通模型请求、重试和上下文压缩事件，构建会话级持久 projection。</li>

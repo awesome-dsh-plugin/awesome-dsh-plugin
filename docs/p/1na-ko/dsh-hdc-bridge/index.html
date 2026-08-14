@@ -277,7 +277,7 @@ A DSH-native HarmonyOS dev assistant: the hdc device loop (inspect → screensho
 </tr>
 <tr>
 <td><code>hms_knowledge</code></td>
-<td><strong>离线随包官方知识层（Tier-1）</strong>：OpenHarmony 官方文档（CC-BY-4.0）逐字节选 20 个高频 API 模块与应用模型/ArkTS 指南，无需 SDK/CLI/网络。catalog / read（先目录后按小节读）/ search</td>
+<td><strong>离线随包官方知识层（Tier-1）</strong>：OpenHarmony 官方文档（CC-BY-4.0）未改文字节选 <strong>23 个</strong>高频 API 模块与应用模型/ArkTS 指南（大文件按节选入，文件内附节选声明），无需 SDK/CLI/网络。catalog / read（先目录后按小节读）/ search</td>
 </tr>
 <tr>
 <td><code>hms_docs</code></td>
@@ -294,6 +294,10 @@ A DSH-native HarmonyOS dev assistant: the hdc device loop (inspect → screensho
 <tr>
 <td>运行时技能</td>
 <td><code>hdc-bridge</code>（设备闭环用法）、<code>deveco-cli</code>（官方 SKILL.md 改写，MIT 声明保留）、<code>harmonyos-knowledge</code>（知识层纪律：官方优先、版本化、许可合规），模型按需加载</td>
+</tr>
+<tr>
+<td>设备记忆</td>
+<td>工具默认使用<strong>本会话上次使用的设备</strong>（显式 target 或面板点选设备即切换默认；掉线自动回退首台连接设备）；<code>hdc_list_targets</code> 暴露 <code>preferred/preferredActive</code> 字段</td>
 </tr>
 <tr>
 <td>设备面板</td>
@@ -426,10 +430,10 @@ dsh --profile &lt;name&gt;
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
       <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
       <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>

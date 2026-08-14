@@ -190,7 +190,7 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p>DeepSeek Harness Web 界面的工作区路径引用插件。在输入框输入 <code>@</code>，可以搜索当前工作区并插入文件或目录路径。</p>
-<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-at-file/main/assets/screenshots/show-case.png" alt="@ 路径选择器"></p>
+<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-at-file/main/assets/screenshots/path-picker.png" alt="@ 路径选择器"></p>
 <h3>使用方式</h3>
 <p>从 <code>@</code> 菜单选择结果后，路径会保留在输入内容中。输入框上方的引用栏可以打开路径或移除引用。</p>
 <pre><code class="language-text">请检查 @docs/spec.pdf
@@ -208,17 +208,24 @@ footer p+p{margin-top:.5rem}
 <p>候选项优先显示文件名，下方显示父目录。遇到重名文件时，父目录也会写入主标题。内置 SVG 图标可区分目录、源代码、文本、PDF、图片、数据与配置、压缩包以及其他文件。</p>
 <p>默认索引会跳过常见的版本控制目录、IDE 元数据、依赖目录、缓存和构建产物。目前涵盖 VS Code、Visual Studio、JetBrains IDE、Fleet、Eclipse、Android 与 Gradle、Xcode、CMake、Flutter、.NET、Unity、Unreal，以及常见的 JavaScript 和 Python 输出目录。<code>desktop.ini</code>、<code>Thumbs.db</code> 和 <code>.DS_Store</code> 这类系统元数据文件也会默认排除。</p>
 <h3>安装或更新</h3>
-<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.5.1.tar.gz
+<pre><code class="language-sh">dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.6.0.tar.gz
 </code></pre>
-<p>已有安装也使用这条命令更新。安装完成后重启 <code>dsh web</code>，确保 Host 和浏览器客户端加载 <code>0.5.1</code>。</p>
+<p>已有安装也使用这条命令更新。安装完成后重启 <code>dsh web</code>，确保 Host 和浏览器客户端加载 <code>0.6.0</code>。</p>
 <h3>文件过滤</h3>
 <p>在 <strong>设置 -&gt; 文件提及</strong> 中管理文件名过滤规则。</p>
+<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-at-file/main/assets/screenshots/file-filter-settings.png" alt="包含 Exact 和 Regex 规则的文件过滤设置"></p>
 <ul>
 <li><strong>全局</strong> 保存所有工作区共用的规则。</li>
 <li><strong>工作区</strong> 保存当前所选工作区路径的附加规则。每个工作区都有独立列表，面板中会同时显示该工作区继承的全局规则。</li>
 </ul>
-<p>每条规则匹配一个完整文件名，匹配时不区分大小写。规则可以逐项添加和删除。<strong>恢复默认值</strong> 会重置全局列表，<strong>清空工作区规则</strong> 只会移除当前工作区的附加项。</p>
-<p>设置通过插件自己的 Host 接口保存到 DSH web profile。升级后，<code>0.4.1</code> 中已有的 <code>ignoreFiles</code> 会继续作为全局列表使用。修改规则时会清除相关索引缓存，下一次输入 <code>@</code> 即可使用新规则。</p>
+<p>每条规则可以单独选择匹配方式和大小写设置：</p>
+<ul>
+<li><strong>Exact</strong> 匹配一个完整文件名，不接受路径分隔符。</li>
+<li><strong>Regex</strong> 使用 JavaScript 正则表达式匹配完整文件名。匹配内容不包含父目录或工作区路径。</li>
+<li><strong>区分大小写</strong> 可以用于任何 Exact 或 Regex 规则，默认关闭。</li>
+</ul>
+<p>规则可以逐项添加和删除。无效正则会在保存前显示错误，Host 也会拒绝无效规则。<strong>恢复默认值</strong> 会重置全局列表，<strong>清空工作区规则</strong> 只会移除当前工作区的附加项。</p>
+<p>设置通过插件自己的 Host 接口保存到 DSH web profile。已有的字符串规则会继续作为不区分大小写的 Exact 规则使用，包括全局列表和工作区列表。修改规则时会清除相关索引缓存，下一次输入 <code>@</code> 即可使用新规则。</p>
 <h3>配置</h3>
 <p>当前配置只影响路径选择器的索引：</p>
 <ul>
@@ -268,7 +275,7 @@ pnpm run build
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1826</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
       <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>

@@ -189,7 +189,145 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="https://www.npmjs.com/package/dsh-outline"><img src="https://img.shields.io/npm/v/dsh-outline" alt="npm version"></a>
+<a href="https://github.com/urzeye/dsh-outline/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/dsh-outline" alt="license"></a>
+<a href="https://nodejs.org"><img src="https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&logoColor=white" alt="node"></a>
+<a href="https://github.com/urzeye/dsh-outline/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/urzeye/dsh-outline/ci.yml?branch=main&label=ci" alt="ci"></a>
+<a href="https://github.com/urzeye/dsh-outline/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/urzeye/dsh-outline/release.yml?label=release" alt="release"></a></p>
+<p><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（DSH）Web GUI 的<strong>实时大纲插件</strong>：在会话页提供一棵&quot;用户问题 + Markdown 标题（H1~H6）&quot;的大纲树，流式生成时实时更新，点击节点即可定位正文并高亮当前阅读位置。</p>
+<p><img src="https://raw.githubusercontent.com/urzeye/dsh-outline/main/docs/media/demo.gif" alt="demo"></p>
+<h3>特性</h3>
+<p><strong>实时大纲</strong></p>
+<ul>
+<li>大纲由会话事件流构建（用户问题为一级节点，助手回复中的 Markdown 标题挂在其下），不抓取 DOM</li>
+<li>流式生成时随 token 实时更新；刷新、重连、历史分页由 DSH runtime 自动重建，无需自行处理</li>
+<li>点击节点滚动定位正文，并高亮当前阅读位置</li>
+</ul>
+<p><strong>层级与视图</strong></p>
+<ul>
+<li>层级滑块控制展开深度（0~6 档），节点可单独展开/收起，支持一键展开/收起全部</li>
+<li>关键词搜索（带匹配计数）、按会话收藏、&quot;只看收藏&quot;模式</li>
+<li>一键复制大纲、回到顶部/底部</li>
+</ul>
+<p><strong>面板形态</strong></p>
+<ul>
+<li>面板为 <code>shell.overlay</code> 浮层：右缘触发条悬停预览、可固定常驻、可拖拽移动，不挤压聊天区</li>
+</ul>
+<p><strong>主题与国际化</strong></p>
+<ul>
+<li>跟随 DSH 主题变量与明暗模式；界面文案中英文随 DSH 语言切换</li>
+</ul>
+<h3>环境要求</h3>
+<ul>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>（DSH）Web GUI</li>
+<li>Node.js ≥ 20（仅本地开发与构建时需要）</li>
+</ul>
+<h3>安装</h3>
+<p>以下命令均通过 <code>dsh plugin</code> 转发给 profile 目录内的 pnpm。安装后需重启 <code>dsh web</code> 生效（插件的 host 部分在 DSH 启动时加载）。</p>
+<h4>从 npm 安装（推荐）</h4>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-outline
+</code></pre>
+<h4>从 tarball 安装</h4>
+<p>无需发布 npm，也不需要任何构建授权。可自行 <code>pnpm pack</code>，或从 <a href="https://github.com/urzeye/dsh-outline/releases">GitHub Releases</a> 下载：</p>
+<pre><code class="language-sh">pnpm pack                                          # 产出 dsh-outline-&lt;version&gt;.tgz
+dsh plugin --profile web add ./dsh-outline-0.1.2.tgz
+</code></pre>
+<h4>本地路径安装（开发调试）</h4>
+<pre><code class="language-sh">dsh plugin --profile web add /path/to/dsh-outline   # 或相对路径 ./dsh-outline
+</code></pre>
+<p>link 安装后 client 改动经 <code>pnpm watch</code> 重建即可 HMR 生效；host 半变更需重启 <code>dsh web</code>。</p>
+<h4>卸载</h4>
+<pre><code class="language-sh">dsh plugin --profile web remove dsh-outline
+</code></pre>
+<h3>使用</h3>
+<ol>
+<li>启动 <code>dsh web</code>，打开任意会话页。</li>
+<li>鼠标悬停会话页右缘的大纲触发条，即可预览大纲面板。</li>
+<li>点击触发条或面板右上角的固定按钮，将面板固定常驻；拖动标题栏移动面板位置（拖动即固定）。</li>
+<li>面板内：点击节点跳转正文；顶部滑块调整展开层级；节点行内提供展开/收起与收藏按钮；支持关键词搜索。</li>
+</ol>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install       # 安装依赖（prepare 会自动构建 lib/）
+pnpm build         # tsc 类型 + tsdown client bundle
+pnpm test          # vitest（core 纯逻辑 + DOM 锚点）
+pnpm typecheck
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pnpm install</code></td>
+<td>安装依赖（<code>prepare</code> 自动构建 <code>lib/</code>）</td>
+</tr>
+<tr>
+<td><code>pnpm build</code></td>
+<td>构建（tsc 类型 + tsdown client bundle）</td>
+</tr>
+<tr>
+<td><code>pnpm test</code></td>
+<td>运行 vitest 测试</td>
+</tr>
+<tr>
+<td><code>pnpm typecheck</code></td>
+<td>类型检查</td>
+</tr>
+<tr>
+<td><code>pnpm watch</code></td>
+<td>监听构建，配合本地 link 安装 HMR 调试</td>
+</tr>
+</tbody></table>
+<pre><code class="language-text">src/
+├── core/            # 纯逻辑：标题解析、大纲树、滚动计算（不依赖 DSH/DOM）
+├── client/          # 适配层：会话事件流订阅、面板组件、槽位注册
+│   └── panel/       # 大纲面板 React 组件
+└── index.ts         # host 侧入口
+tests/               # vitest 测试（core 纯逻辑 + DOM 锚点）
+docs/                # 可行性分析与技术方案
+</code></pre>
+<p>架构纪律见 <a href="https://github.com/urzeye/dsh-outline/blob/main/AGENTS.md">AGENTS.md</a>：<code>src/core/</code> 只放纯逻辑，DSH API 调用只出现在适配层与槽位注册代码里。</p>
+<h3>文档</h3>
+<table>
+<thead>
+<tr>
+<th>文档</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/urzeye/dsh-outline/blob/main/docs/feasibility.md">docs/feasibility.md</a></td>
+<td>可行性分析（证据、能力映射、边界）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/urzeye/dsh-outline/blob/main/docs/technical-plan.md">docs/technical-plan.md</a></td>
+<td>技术方案与分阶段实施计划</td>
+</tr>
+</tbody></table>
+<h3>贡献</h3>
+<p>欢迎通过 <a href="https://github.com/urzeye/dsh-outline/issues">Issue</a> 与 Pull Request 参与贡献。</p>
+<ul>
+<li>改动 <code>src/core/</code>：运行 <code>pnpm test</code></li>
+<li>改动适配层/面板：运行 <code>pnpm typecheck</code>，并在本地 DSH 实例冒烟验证</li>
+</ul>
+<h3>社区</h3>
+<p>使用问题请提交 <a href="https://github.com/urzeye/dsh-outline/issues">Issue</a>；社区讨论可前往 <a href="https://linux.do">LINUX DO</a>。</p>
+<h3>致谢</h3>
+<ul>
+<li>交互形态移植自 <a href="https://github.com/urzeye/ophel">Ophel</a>（浏览器扩展）</li>
+<li>插件形态遵循 DSH 官方<a href="https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/user/develop/basic/publish.zh.md">打包与安装约定</a>，参考 <a href="https://github.com/omdsh-dev/DSH-better-sidebar">DSH-better-sidebar</a></li>
+</ul>
+<h3>许可证</h3>
+<p><a href="https://github.com/urzeye/dsh-outline/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/urzeye/dsh-outline/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>
@@ -203,7 +341,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1826</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
       <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>

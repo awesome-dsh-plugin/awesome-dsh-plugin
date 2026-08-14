@@ -212,7 +212,7 @@ footer p+p{margin-top:.5rem}
 <thead>
 <tr>
 <th>设置:快捷键与快照参数</th>
-<th>局外程序窗口(DSH 撤销管理器)</th>
+<th>局外程序窗口 v2(保存/撤销/恢复/回退/删除/清理/导出/导入/设置)</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -224,10 +224,14 @@ footer p+p{margin-top:.5rem}
 <thead>
 <tr>
 <th>一键导出全部快照(可备份/迁移)</th>
+<th>局外窗口:双击快照行查看差异</th>
+<th>局外窗口:最小化到系统托盘</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><img src="https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/5.png" alt="5"></td>
+<td><img src="https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/6.png" alt="6"></td>
+<td><img src="https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/7.png" alt="7"></td>
 </tr>
 </tbody></table>
 <h3>功能一览</h3>
@@ -280,7 +284,7 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td><strong>局外工具</strong></td>
-<td>CLI(<code>snapshot/undo/redo/restore/remove/list/diff/prune/status</code>)+ <strong>程序窗口</strong>(桌面快捷方式)+ 安全装插件包装器</td>
+<td>CLI(<code>snapshot/undo/redo/restore/remove/list/diff/prune/export/import/status</code>)+ <strong>程序窗口 v2</strong>(启动异常自检横幅与一键回退、导出/导入、双击行差异预览、清理过期、设置面板、系统托盘常驻)+ 安全装插件包装器</td>
 </tr>
 </tbody></table>
 <h3>快照内容与存储</h3>
@@ -452,10 +456,10 @@ node tools\e2e-watch.mjs      :: 6 项真实时序回归(自动存档/撤销不�
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1236</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
       <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
-      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
       <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
     </ul>
