@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Plugin detail page template. Design tokens are copied from template.html — keep the :root blocks in sync when the theme changes. -->
+<!-- Plugin detail page template (design B). Tokens shared with template.html — keep the :root blocks in sync. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -10,130 +10,127 @@
 <link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-turn-scrubber/">
 <link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/wsxwj123/dsh-plugins--packages-turn-scrubber/">
 <link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-turn-scrubber/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
+<meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
 <meta property="og:title" content="wsxwj123/dsh-plugins#turn-scrubber — UI Enhancements · Awesome DSH Plugin">
 <meta property="og:description" content="Compact right-edge turn rail with hover summaries and click-to-jump navigation.">
 <meta property="og:url" content="https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-turn-scrubber/">
 <meta property="og:image" content="https://awesome-dsh-plugin.com/og-en.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"wsxwj123/dsh-plugins#turn-scrubber","url":"https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-turn-scrubber/","description":"Compact right-edge turn rail with hover summaries and click-to-jump navigation.","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All plugins","item":"https://awesome-dsh-plugin.com/"},{"@type":"ListItem","position":2,"name":"UI Enhancements","item":"https://awesome-dsh-plugin.com/ui/"},{"@type":"ListItem","position":3,"name":"wsxwj123/dsh-plugins#turn-scrubber","item":"https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-turn-scrubber/"}]}]</script>
 <style>
 :root{
-  --canvas-0: oklch(96.5% .008 85);
-  --canvas-1: oklch(94% .010 85);
-  --canvas-2: oklch(91% .012 85);
-  --line:     oklch(84% .010 85);
-  --grid:     oklch(90% .010 85);
-  --text:   oklch(23% .015 70);
-  --text-2: oklch(42% .015 70);
-  --text-3: oklch(50% .015 70);
-  --accent:        oklch(52% .190 30);
-  --accent-strong: oklch(44% .200 30);
-  --accent-tint:   color-mix(in oklch, oklch(52% .190 30) 22%, transparent);
-  --on-accent: oklch(96.5% .008 85);
-  --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
-  --body: "Archivo", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
+  --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
+  --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
+  --on-cinnabar:#ffffff;
+  --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --canvas-0: oklch(19% .012 70);
-    --canvas-1: oklch(22% .013 70);
-    --canvas-2: oklch(16% .012 70);
-    --line:     oklch(33% .012 70);
-    --grid:     oklch(23.5% .012 70);
-    --text:   oklch(92% .010 85);
-    --text-2: oklch(70% .012 80);
-    --text-3: oklch(62% .012 80);
-    --accent:        oklch(66% .160 33);
-    --accent-strong: oklch(74% .165 38);
-    --accent-tint:   color-mix(in oklch, oklch(66% .160 33) 26%, transparent);
-    --on-accent: oklch(15% .012 70);
+    --paper:#211d18; --paper-2:#282218; --card:#2a2620; --line:#3b352c; --line-2:#4c4436;
+    --ink:#ece7de; --ink-2:#b5ac9e; --ink-3:#8f8678;
+    --cinnabar:#e06a52; --cinnabar-deep:#ea8069; --cinnabar-soft:rgba(224,106,82,.13); --cinnabar-border:rgba(224,106,82,.35);
+    --on-cinnabar:#211d18;
   }
 }
 *{box-sizing:border-box;margin:0}
-::selection{background:var(--accent-tint);color:var(--text)}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-body{font-family:var(--body);color:var(--text);background:var(--canvas-0);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-decoration:none;touch-action:manipulation}
-a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--accent-strong)}
+::selection{background:var(--cinnabar-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
 button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
-.wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
+.wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
 
-header{
-  border-block-end:2px solid var(--text);
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size:26px 26px;
+nav.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:1.4rem;height:3.6rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.95rem}
+.logo svg g{fill:var(--ink)}
+.logo svg .plug-block{fill:var(--cinnabar)}
+.nav-links{display:flex;gap:1.2rem;margin-left:auto;font-size:.86rem;color:var(--ink-2);align-items:center}
+.nav-links a:hover{color:var(--cinnabar)}
+.lang-btn{font-size:.82rem;color:var(--ink-3);border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem}
+.lang-btn:hover{color:var(--ink);border-color:var(--line-2)}
+
+header.plate-wrap{
+  background-image:linear-gradient(var(--paper-2) 1px,transparent 1px),linear-gradient(90deg,var(--paper-2) 1px,transparent 1px);
+  background-size:28px 28px;border-bottom:1px solid var(--line);
 }
-.topline{display:flex;justify-content:space-between;align-items:center;gap:1rem;
-  padding-block:.7rem;border-block-end:1px solid var(--text)}
-.brand{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:var(--text-3)}
-.brand a{color:inherit}
-.nav{display:flex;gap:1.4rem;align-items:center;font-size:.85rem}
-.lang-btn{color:var(--text-2);font-family:var(--mono);text-decoration:none}
 .crumbs{display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:center;
-  font-family:var(--mono);font-size:.74rem;color:var(--text-3);padding-block:.85rem}
-.crumbs .sep{color:var(--line)}
+  font-family:var(--mono);font-size:.74rem;color:var(--ink-3);padding-block:.9rem 0}
+.crumbs a{color:var(--cinnabar)}
+.crumbs a:hover{color:var(--cinnabar-deep)}
+.crumbs .sep{color:var(--line-2)}
+.plate{padding-block:1.4rem clamp(1.8rem,5vh,2.6rem)}
+.plate .kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.plate h1{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.12;letter-spacing:-.02em;margin-top:.35rem;text-wrap:balance;overflow-wrap:anywhere}
+.plate h1 .owner{color:var(--ink-3);font-weight:600}
+.plate h1 .name{color:var(--cinnabar)}
+.specrow{display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-family:var(--mono);font-size:.76rem;color:var(--ink-3);margin-top:1rem}
+.specrow b{color:var(--ink-2);font-weight:500}
+.specrow a{color:var(--cinnabar)}
+.specrow a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
-.plate{padding-block:clamp(1.8rem,5vh,3rem)}
-.plate .kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
-.plate h1{font-weight:900;font-size:clamp(1.5rem,4vw,2.5rem);line-height:1.1;letter-spacing:-.02em;margin-top:.35rem;text-wrap:balance;overflow-wrap:anywhere}
-.plate h1 .owner{color:var(--text-3);font-weight:700}
-.plate h1 .name{color:var(--accent)}
-.specrow{display:flex;flex-wrap:wrap;gap:.5rem 2.2rem;font-family:var(--mono);font-size:.74rem;color:var(--text-3);
-  border-block-start:1px solid var(--text);padding-block:.65rem;margin-top:1.2rem}
-.specrow b{color:var(--text-2);font-weight:400}
-.specrow a{color:var(--accent)}
+main{padding-block:clamp(1.6rem,4vh,2.4rem)}
+.desc{font-size:clamp(.98rem,1.7vw,1.08rem);color:var(--ink-2);max-width:46rem;text-wrap:pretty}
 
-main{padding-block:clamp(1.8rem,5vh,3rem)}
-.desc{font-size:clamp(1rem,1.8vw,1.12rem);color:var(--text-2);max-width:46rem;text-wrap:pretty}
-
-.panel{margin-block:clamp(1.8rem,5vh,2.8rem) 0}
-.panel h2{font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:-.01em;
-  border:2px solid var(--text);padding:.45rem .8rem;margin-bottom:1rem;display:flex;align-items:center;gap:.7rem}
-.panel h2::before{content:attr(data-k);font-family:var(--mono);font-size:.9rem;font-weight:700;
-  color:var(--on-accent);background:var(--accent);width:1.6rem;height:1.6rem;display:grid;place-items:center;flex:none}
-.cmd{display:flex;align-items:stretch;gap:0;border:1px solid var(--text-3);background:var(--canvas-1)}
-.cmd pre{font-family:var(--mono);font-size:.85rem;line-height:1.9;color:var(--text);padding:.7rem 1.1rem;overflow-x:auto;flex:1;margin:0}
-.cmd button{font-family:var(--mono);font-size:.7rem;color:var(--text-3);background:none;border:none;border-left:1px solid var(--text-3);padding:0 1rem;cursor:pointer;white-space:nowrap}
-.cmd button:hover,.cmd button.done{color:var(--on-accent);background:var(--accent)}
-.panel .note{margin-top:.7rem;font-size:.82rem;color:var(--text-3);max-width:46rem;text-wrap:pretty}
+.panel{margin-block:clamp(1.6rem,4vh,2.4rem) 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem}
+.panel h2{font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.8rem}
+.cmd{display:flex;align-items:stretch;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:var(--paper)}
+.cmd pre{font-family:var(--mono);font-size:.82rem;line-height:1.9;color:var(--ink);padding:.55rem 1rem;overflow-x:auto;flex:1;margin:0}
+.cmd button{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);background:var(--card);border:none;border-left:1px solid var(--line-2);padding:0 1rem;cursor:pointer;white-space:nowrap;transition:all .15s ease}
+.cmd button:hover,.cmd button.done{color:var(--on-cinnabar);background:var(--cinnabar)}
+.panel .note{font-size:.78rem;color:var(--ink-3);max-width:46rem;text-wrap:pretty}
+.panel .note+.cmd{margin-top:.2rem}
 .links{display:flex;flex-wrap:wrap;gap:.6rem}
-.links a{font-family:var(--mono);font-size:.78rem;border:1px solid var(--text-3);padding:.45rem .9rem;color:var(--text-2)}
-.links a:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent);text-decoration:none}
+.links a{font-size:.82rem;font-weight:550;border:1px solid var(--line-2);border-radius:8px;padding:.45rem .95rem;color:var(--ink-2);transition:all .15s ease;background:var(--paper)}
+.links a:hover{color:var(--on-cinnabar);border-color:var(--cinnabar);background:var(--cinnabar)}
 
-ul.rel{list-style:none;padding:0}
-ul.rel li{border-bottom:1px solid var(--line);padding-block:.7rem}
-ul.rel h3{font-weight:700;font-size:.98rem}
-ul.rel h3 a{color:var(--text)}
-ul.rel h3 a:hover{color:var(--accent-strong);text-decoration:none}
-ul.rel h3 .stars{font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--text-3);margin-left:.55em}
-ul.rel p{color:var(--text-2);font-size:.85rem;max-width:46rem;margin-top:.1rem;
-  display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
-.morelink{display:inline-block;margin-top:.9rem;font-family:var(--mono);font-size:.78rem}
+ul.rel{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:.8rem}
+ul.rel li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;transition:border-color .15s ease}
+ul.rel li:hover{border-color:var(--line-2)}
+ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:.5rem}
+ul.rel h3 a{overflow-wrap:anywhere}
+ul.rel h3 a:hover{color:var(--cinnabar-deep)}
+ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
+.morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
-footer{padding-block:2rem 3rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3.5rem)}
-.legal{font-size:.75rem;color:var(--text-3);max-width:56rem;text-wrap:pretty}
-.legal a{color:var(--text-2)}
+footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--cinnabar)}
+footer p+p{margin-top:.5rem}
 @media (max-width:640px){
   .cmd{flex-direction:column}
-  .cmd button{border-left:none;border-top:1px solid var(--text-3);padding:.5rem}
+  .cmd button{border-left:none;border-top:1px solid var(--line-2);padding:.5rem}
 }
 </style>
 </head>
 <body>
 
-<header>
+<nav class="top"><div class="wrap nav-in">
+  <a class="logo" href="/" translate="no">
+    <svg width="20" height="20" viewBox="76 42 400 400" aria-hidden="true"><g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g><rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" transform="rotate(9 390 122)"/></svg>
+    awesome-dsh-plugin
+  </a>
+  <div class="nav-links">
+    <a class="lang-btn" href="/zh/p/wsxwj123/dsh-plugins--packages-turn-scrubber/" hreflang="zh" rel="alternate">中文</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+  </div>
+</div></nav>
+
+<header class="plate-wrap">
   <div class="wrap">
-    <div class="topline">
-      <span class="brand" translate="no"><a href="/">awesome-dsh-plugin.com</a></span>
-      <nav class="nav" aria-label="site">
-        <a class="lang-btn" href="/zh/p/wsxwj123/dsh-plugins--packages-turn-scrubber/" hreflang="zh" rel="alternate">中文</a>
-        <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
-      </nav>
-    </div>
     <nav class="crumbs" aria-label="breadcrumb">
       <a href="/">All plugins</a>
       <span class="sep">/</span>
@@ -157,14 +154,14 @@ footer{padding-block:2rem 3rem;border-top:1px solid var(--line);margin-top:clamp
   <p class="desc">Compact right-edge turn rail with hover summaries and click-to-jump navigation.</p>
 
   <section class="panel">
-    <h2 data-k="A">Install</h2>
+    <h2>Install</h2>
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber</pre><button type="button" data-cmd="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber" aria-label="Copy install command">copy install</button></div>
-    <p class="note">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+    <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
   <section class="panel">
-    <h2 data-k="B">Links</h2>
+    <h2>Links</h2>
     <div class="links">
       <a href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber" rel="noopener">GitHub repository ↗</a>
       <a href="https://github.com/dsh-market/dsh-market" rel="noopener">Install via dsh-market ↗</a>
@@ -172,7 +169,7 @@ footer{padding-block:2rem 3rem;border-top:1px solid var(--line);margin-top:clamp
   </section>
 
   <section class="panel">
-    <h2 data-k="C">More in this category</h2>
+    <h2>More in this category</h2>
     <ul class="rel">
       <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1732</span></h3><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></li>
       <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 810</span></h3><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></li>
@@ -186,8 +183,8 @@ footer{padding-block:2rem 3rem;border-top:1px solid var(--line);margin-top:clamp
 </main>
 
 <footer class="wrap">
-  <p class="legal">Plugins are developed by their respective authors; listing is not an endorsement. Installing runs third-party code — review the source and proceed at your own risk.</p>
-  <p class="legal" style="margin-top:.6rem">© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · Not affiliated with DeepSeek</p>
+  <p>Plugins are developed by their respective authors; listing is not an endorsement. Installing runs third-party code — review the source and proceed at your own risk.</p>
+  <p>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · Not affiliated with DeepSeek</p>
 </footer>
 
 <script>

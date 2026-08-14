@@ -20,7 +20,7 @@
 <meta name="twitter:image" content="https://awesome-dsh-plugin.com/og-zh.png">
 <meta property="og:type" content="website">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#221e19">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,332 +28,225 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Awesome DSH Plugin","url":"https://awesome-dsh-plugin.com/zh/skill/","numberOfItems":3,"itemListElement":[{"@type":"ListItem","position":1,"name":"dhicoc/dsh-reverse-skill","url":"https://github.com/dhicoc/dsh-reverse-skill"},{"@type":"ListItem","position":2,"name":"creght-dev/skills","url":"https://github.com/creght-dev/skills"},{"@type":"ListItem","position":3,"name":"YTxue/dsh-skill-manager","url":"https://github.com/YTxue/dsh-skill-manager"}]}</script>
 <style>
+/* ── 纸墨朱砂 · warm paper + modern cards (design B, 2026-08) ── */
 :root{
-  /* canvas — engineering paper */
-  --canvas-0: oklch(96.5% .008 85);
-  --canvas-1: oklch(94% .010 85);
-  --canvas-2: oklch(91% .012 85);
-  --line:     oklch(84% .010 85);
-  --grid:     oklch(90% .010 85);
-  /* text — ink */
-  --text:   oklch(23% .015 70);
-  --text-2: oklch(42% .015 70);
-  --text-3: oklch(50% .015 70);
-  /* the single accent — vermilion: the part being plugged in */
-  --accent:        oklch(52% .190 30);
-  --accent-strong: oklch(44% .200 30);
-  --accent-tint:   color-mix(in oklch, oklch(52% .190 30) 22%, transparent);
-  --on-accent: oklch(96.5% .008 85);
-  --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
-  --body: "Archivo", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
+  --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
+  --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
+  --on-cinnabar:#ffffff;
+  --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --canvas-0: oklch(19% .012 70);
-    --canvas-1: oklch(22% .013 70);
-    --canvas-2: oklch(16% .012 70);
-    --line:     oklch(33% .012 70);
-    --grid:     oklch(23.5% .012 70);
-    --text:   oklch(92% .010 85);
-    --text-2: oklch(70% .012 80);
-    --text-3: oklch(62% .012 80);
-    --accent:        oklch(66% .160 33);
-    --accent-strong: oklch(74% .165 38);
-    --accent-tint:   color-mix(in oklch, oklch(66% .160 33) 26%, transparent);
-    --on-accent: oklch(15% .012 70);
+    --paper:#211d18; --paper-2:#282218; --card:#2a2620; --line:#3b352c; --line-2:#4c4436;
+    --ink:#ece7de; --ink-2:#b5ac9e; --ink-3:#8f8678;
+    --cinnabar:#e06a52; --cinnabar-deep:#ea8069; --cinnabar-soft:rgba(224,106,82,.13); --cinnabar-border:rgba(224,106,82,.35);
+    --on-cinnabar:#211d18;
   }
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-::selection{background:var(--accent-tint);color:var(--text)}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-html{scrollbar-color:var(--line) transparent}
-::-webkit-scrollbar{width:10px}
-::-webkit-scrollbar-thumb{background:var(--line)}
-::-webkit-scrollbar-track{background:transparent}
-body{
-  font-family:var(--body);
-  color:var(--text);
-  background:var(--canvas-0);
-  min-height:100vh;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-a{color:var(--accent);text-decoration:none;touch-action:manipulation}
-a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--accent-strong)}
-button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+::selection{background:var(--cinnabar-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
+html{scrollbar-color:var(--line-2) transparent}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)}
-.skip{position:absolute;left:-9999px;top:0;background:var(--canvas-0);color:var(--accent-strong);padding:.6rem 1rem;z-index:99}
+.skip{position:absolute;left:-9999px;top:0;background:var(--card);color:var(--cinnabar-deep);padding:.6rem 1rem;z-index:99}
 .skip:focus{left:0}
 
-/* ── masthead: catalog cover on graph paper ── */
-header{
-  border-block-end:2px solid var(--text);
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size:26px 26px;
+/* ── nav ── */
+nav.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:1.4rem;height:3.6rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.95rem;letter-spacing:-.01em}
+.logo svg{flex:none}
+.logo svg g{fill:var(--ink)}
+.logo svg .plug-block{fill:var(--cinnabar)}
+.nav-links{display:flex;gap:1.2rem;margin-left:auto;font-size:.86rem;color:var(--ink-2);align-items:center;flex-wrap:wrap}
+.nav-links a{transition:color .15s ease}
+.nav-links a:hover{color:var(--cinnabar)}
+.lang-btn{font-size:.82rem;color:var(--ink-3);border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem;transition:all .15s ease}
+.lang-btn:hover{color:var(--ink);border-color:var(--line-2)}
+
+/* ── hero on grid paper ── */
+header.hero{
+  background-image:linear-gradient(var(--paper-2) 1px,transparent 1px),linear-gradient(90deg,var(--paper-2) 1px,transparent 1px);
+  background-size:28px 28px;border-bottom:1px solid var(--line);
 }
-.topline{display:flex;justify-content:space-between;align-items:center;gap:1rem;
-  padding-block:.7rem;border-block-end:1px solid var(--text)}
-.brand{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:var(--text-3)}
-.nav{display:flex;gap:1.4rem;align-items:center;font-size:.85rem}
-.lang-btn{color:var(--text-2);font-family:var(--mono);text-decoration:none}
-.masthead{padding-block:clamp(2.4rem,7vh,4.6rem);display:flex;gap:clamp(1.4rem,4vw,2.6rem);align-items:center;flex-wrap:wrap}
-.mark{flex:none;width:clamp(84px,12vw,128px);height:auto}
-.mark .plug-block{transform-box:fill-box;transform-origin:center;transform:rotate(9deg);
+.hero-in{padding-block:clamp(2.4rem,6vh,4.2rem) 0;display:flex;align-items:center;gap:clamp(1.4rem,4vw,3rem);flex-wrap:wrap}
+.mark{flex:none;width:clamp(72px,9vw,104px);height:auto}
+.mark g{fill:var(--ink)}
+.mark .plug-block{fill:var(--cinnabar);transform-box:fill-box;transform-origin:center;transform:rotate(9deg);
   animation:snap-in .9s cubic-bezier(.22,1,.36,1) .3s both}
-@keyframes snap-in{
-  from{transform:translate(46px,-46px) rotate(0deg);opacity:0}
-  60%{opacity:1}
-  to{transform:translate(0,0) rotate(9deg)}
-}
+@keyframes snap-in{from{transform:translate(46px,-46px) rotate(0deg);opacity:0}60%{opacity:1}to{transform:translate(0,0) rotate(9deg)}}
 @media (prefers-reduced-motion:reduce){.mark .plug-block{animation:none}}
-h1{
-  font-weight:900;
-  font-size:clamp(1.9rem,5vw,3.4rem);
-  line-height:.98;
-  letter-spacing:-.02em;
-  text-transform:uppercase;
-  text-wrap:balance;
-}
-h1 em{display:block;font-style:normal;color:var(--accent)}
-h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
-.tagline{margin-top:1rem;max-width:40rem;color:var(--text-2);font-size:clamp(.95rem,1.6vw,1.05rem);text-wrap:pretty}
-.tagline b{color:var(--text);font-weight:700}
-.issue-line{
-  display:flex;flex-wrap:wrap;gap:.5rem 2.2rem;
-  font-family:var(--mono);font-size:.74rem;color:var(--text-3);
-  border-block-start:1px solid var(--text);padding-block:.65rem;
-}
-.issue-line a{color:var(--accent)}
+h1{font-family:var(--display);font-size:clamp(1.7rem,3.9vw,2.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.12;text-wrap:balance}
+h1 em{font-style:normal;color:var(--cinnabar)}
+.tagline{margin-top:.6rem;color:var(--ink-2);max-width:40rem;text-wrap:pretty}
+.tagline b{color:var(--ink)}
+.count-line{font-family:var(--mono);font-size:.8rem;color:var(--ink-3);margin-top:.5rem}
+.count-line a{color:var(--cinnabar)}
+.count-line a:hover{color:var(--cinnabar-deep)}
 
-.mark g{fill:var(--text)}
-.mark .plug-block{fill:var(--accent)}
+.searchband{padding-block:1.6rem 2rem;display:flex;flex-direction:column;gap:1.1rem}
+.searchbar{display:flex;align-items:center;gap:.7rem;max-width:38rem;
+  background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:.78rem 1.05rem;
+  box-shadow:3px 3px 0 var(--line-2);transition:box-shadow .15s ease}
+.searchbar:focus-within{box-shadow:3px 3px 0 var(--cinnabar)}
+.searchbar svg{color:var(--ink-3);flex:none}
+.searchbar input{flex:1;border:none;outline:none;font:inherit;background:none;color:var(--ink);min-width:0;caret-color:var(--cinnabar)}
+.searchbar input::placeholder{color:var(--ink-3)}
+.searchbar .count{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums}
 
-/* ── market strip ── */
-.market{border-block-end:1px solid var(--text);background:var(--accent-tint)}
-.market .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:center;padding-block:.7rem}
-.market .lead{font-size:.9rem;color:var(--text-2)}
-.market .lead b{color:var(--accent-strong)}
-.market .cart{flex:none;color:var(--accent-strong)}
-.market .mcmd{display:inline-flex;align-items:stretch;border:1px solid var(--text-3)}
-.market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
-  padding:.3rem .6rem;white-space:nowrap;display:flex;align-items:center}
-.market .copy{margin:0;border:none;border-left:1px solid var(--text-3);display:flex;align-items:center;
-  align-self:stretch;padding-block:0}
-.market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
-@media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
+.market{max-width:38rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;
+  background:var(--cinnabar-soft);border:1px solid var(--cinnabar-border);border-radius:12px;padding:.7rem 1rem;font-size:.88rem;color:var(--ink-2)}
+.market svg{color:var(--cinnabar);flex:none}
+.market .lead b{color:var(--cinnabar-deep)}
+.market .lead a:hover{text-decoration:underline;text-underline-offset:3px}
+.market .go{margin-left:auto;flex:none;font-weight:600;font-size:.82rem;color:var(--on-cinnabar);background:var(--cinnabar);
+  border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap}
+.market .go:hover{background:var(--cinnabar-deep)}
 
-/* ── sticky finder ── */
-.finder{position:sticky;top:0;z-index:5;background:color-mix(in oklch, var(--canvas-0) 92%, transparent);
-  backdrop-filter:blur(8px);border-block-end:1px solid var(--text)}
-.finder .row1{display:flex;gap:.9rem;align-items:center;padding-block:.8rem}
-.finder svg{color:var(--text-3);flex:none}
-.finder input{flex:1;background:none;border:none;outline:none;color:var(--text);font:inherit;font-size:1rem;caret-color:var(--accent);min-width:0}
-.finder input::placeholder{color:var(--text-3)}
-.finder .count{font-family:var(--mono);font-size:.74rem;color:var(--text-3);white-space:nowrap;font-variant-numeric:tabular-nums}
-.filters{display:flex;flex-wrap:wrap;gap:.45rem;padding-block:0 .75rem}
-.chip{font-family:var(--mono);font-size:.72rem;color:var(--text-2);background:none;white-space:nowrap;
-  border:1px solid var(--text-3);border-radius:4px;padding:.28rem .7rem;cursor:pointer;
-  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
-.chip small{color:var(--text-3);font-size:.66rem}
-.chip:hover{border-color:var(--text)}
-.chip.active{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
-.chip.active small{color:var(--on-accent)}
+/* ── chips ── */
+.filters-band{padding-block:1.5rem 0}
+.filters{display:flex;flex-wrap:wrap;gap:.45rem}
+.chip{font-size:.83rem;color:var(--ink-2);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.34rem .9rem;transition:all .15s ease;white-space:nowrap}
+.chip small{color:var(--ink-3);font-size:.72rem;margin-left:.15rem}
+.chip:hover{border-color:var(--ink-3);color:var(--ink)}
+.chip.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip.active small{color:color-mix(in srgb,var(--paper) 60%,transparent)}
 
-/* ── the parts catalog ── */
-ol.dex{list-style:none;padding:0;counter-reset:sec}
-ol.dex li.sec{counter-increment:sec;padding-block:2.8rem .5rem}
-ol.dex li.sec h2 a{color:inherit;text-decoration:none}
-ol.dex li.sec h2 a:hover{color:var(--accent-strong)}
-ol.dex li.sec h2{
-  font-weight:800;font-size:1.3rem;letter-spacing:-.01em;text-transform:uppercase;
-  display:flex;align-items:center;gap:.7rem;
-  border:2px solid var(--text);padding:.5rem .8rem;
-  scroll-margin-top:7.5rem;
-}
-ol.dex li.sec h2::before{
-  content:counter(sec, upper-alpha);
-  font-family:var(--mono);font-size:.95rem;font-weight:700;
-  color:var(--on-accent);background:var(--accent);
-  width:1.7rem;height:1.7rem;display:grid;place-items:center;flex:none;
-}
-ol.dex li.sec small{font-family:var(--mono);font-size:.72rem;color:var(--text-3);font-weight:400;margin-left:auto}
-ol.dex li.item{
-  display:grid;
-  grid-template-columns:4rem 1fr auto;
-  gap:0 1.2rem;
-  padding-block:1.15rem;
-  border-bottom:1px solid var(--line);
-  animation:settle .45s cubic-bezier(.22,1,.36,1) both;
-  position:relative;
-}
-/* the settle animation leaves each row as its own stacking context, so a
-   later sibling would paint over an open menu — lift the open row above */
-ol.dex li.item:has(.inst[open]){z-index:30}
-@keyframes settle{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){ol.dex li.item{animation:none}}
-.no{font-family:var(--mono);font-size:.7rem;color:var(--accent);padding-top:.45rem;font-variant-numeric:tabular-nums;
-  transition:transform .18s cubic-bezier(.22,1,.36,1)}
-li.item:hover .no{transform:translateX(5px)}
-.dex h3{font-weight:700;font-size:1.12rem;letter-spacing:-.005em;line-height:1.35;text-wrap:balance}
-.dex h3 a{color:var(--text)}
-.dex h3 a:hover{color:var(--accent-strong);text-decoration:none}
-.dex h3 .stars{font-family:var(--mono);font-weight:400;font-size:.74rem;color:var(--text-2);margin-left:.55em;vertical-align:.1em}
-.dex h3 .stars::first-letter{color:var(--accent)}
-.dex h3 .ext{font-size:.78rem;color:var(--text-3);margin-left:.45em;vertical-align:.05em}
-.dex h3 .ext:hover{color:var(--accent-strong)}
-.by{font-family:var(--mono);font-size:.7rem;color:var(--text-3);margin-left:.5rem;font-weight:400}
-.dex p{margin-top:.25rem;color:var(--text-2);font-size:.92rem;max-width:46rem;overflow-wrap:break-word}
-.copy{align-self:start;margin-top:.3rem;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
-  background:none;border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap;
-  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
-.copy:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
-.copy.done{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
+/* ── card grid ── */
+ol.dex{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1.05rem;padding-block:1.7rem 2.5rem}
+li.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.25rem;
+  display:flex;flex-direction:column;gap:.5rem;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;position:relative}
+li.card:hover{border-color:var(--line-2);box-shadow:0 3px 5px rgb(43 38 32 / .05),0 14px 34px rgb(43 38 32 / .08);transform:translateY(-2px)}
+li.card:has(.inst[open]){z-index:30}
+li.card .top{display:flex;align-items:baseline;gap:.5rem;min-width:0}
+li.card h3{font-size:.98rem;font-weight:680;letter-spacing:-.01em;overflow-wrap:anywhere;line-height:1.35}
+li.card h3 a{transition:color .15s ease}
+li.card h3 a:hover{color:var(--cinnabar-deep)}
+li.card h3 .owner{color:var(--ink-3);font-weight:450}
+li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
+li.card .stars::before{content:"★ ";color:var(--cinnabar)}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
+li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
+li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
+li.hidden{display:none}
+.noresult{padding-block:3rem;color:var(--ink-3);text-align:center;display:none}
+.noresult button{background:none;border:none;color:var(--cinnabar);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 
-/* ── per-row install dropdown ── */
-.inst{position:relative;align-self:start;margin-top:.3rem}
-.inst summary{list-style:none;font-family:var(--mono);font-size:.67rem;color:var(--text-3);
-  border:1px solid var(--line);padding:.26rem .6rem;cursor:pointer;white-space:nowrap;user-select:none;
-  transition:color .16s ease,border-color .16s ease,background-color .16s ease}
+/* ── install dropdown ── */
+.inst{position:relative;margin-left:auto}
+.inst summary{list-style:none;font-size:.8rem;font-weight:600;color:var(--cinnabar);
+  border:1.5px solid var(--cinnabar);border-radius:8px;padding:.3rem .8rem;cursor:pointer;user-select:none;white-space:nowrap;
+  transition:all .15s ease}
 .inst summary::-webkit-details-marker{display:none}
-.inst summary:hover{color:var(--text);border-color:var(--text-3)}
-.inst[open] summary{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
-.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:22rem;max-width:min(26rem,88vw);
-  background:var(--canvas-0);border:1px solid var(--text-3);box-shadow:0 6px 24px rgb(0 0 0 / .12);
+.inst summary:hover,.inst[open] summary{background:var(--cinnabar);color:var(--on-cinnabar)}
+.inst .menu{position:absolute;right:0;top:calc(100% + 6px);z-index:20;min-width:21rem;max-width:min(24rem,86vw);
+  background:var(--card);border:1px solid var(--line-2);border-radius:12px;box-shadow:0 6px 24px rgb(43 38 32 / .14);
   overscroll-behavior:contain;overflow:hidden}
 .inst .menu>button{display:block;width:100%;text-align:left;background:none;border:none;
-  padding:.55rem .8rem;border-bottom:1px solid var(--line);
-  transition:background-color .16s ease}
-.inst .menu>button:hover{background:var(--accent-tint)}
-.inst .menu b{display:block;font-family:var(--mono);font-size:.7rem;font-weight:700;color:var(--text)}
-.inst .menu small{display:block;font-size:.66rem;color:var(--text-3);margin-top:.1rem}
-.inst .menu button.done b{color:var(--accent-strong)}
-.mi-cli{padding:.55rem .8rem}
-.cli{display:flex;align-items:stretch;margin-top:.4rem;border:1px solid var(--text-3);width:100%}
-.cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--text);
-  background:var(--canvas-1);border:none;outline:none;padding:.4rem .55rem}
-.cli .copy{margin:0;border:none;border-left:1px solid var(--text-3);align-self:stretch;display:flex;align-items:center;
-  background:var(--canvas-0);flex:none}
-.cli .copy:hover,.cli .copy.done{background:var(--accent)}
+  padding:.6rem .85rem;border-bottom:1px solid var(--line);transition:background-color .16s ease}
+.inst .menu>button:hover{background:var(--cinnabar-soft)}
+.inst .menu b{display:block;font-size:.8rem;font-weight:650;color:var(--ink)}
+.inst .menu small{display:block;font-size:.7rem;color:var(--ink-3);margin-top:.1rem}
+.inst .menu button.done b{color:var(--cinnabar-deep)}
+.mi-cli{padding:.6rem .85rem}
+.mi-cli b{display:block;font-size:.8rem;font-weight:650;color:var(--ink)}
+.cli{display:flex;align-items:stretch;margin-top:.45rem;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;width:100%}
+.cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--ink);
+  background:var(--paper);border:none;outline:none;padding:.42rem .6rem}
+.cli .copy{margin:0;border:none;border-left:1px solid var(--line-2);flex:none;display:flex;align-items:center;
+  font-family:var(--mono);font-size:.68rem;color:var(--ink-3);background:var(--card);padding:0 .8rem;white-space:nowrap;
+  transition:all .15s ease}
+.cli .copy:hover,.cli .copy.done{color:var(--on-cinnabar);background:var(--cinnabar)}
 
-/* ── back to top ── */
+/* ── info panels ── */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:1.05rem;padding-block:0 2.5rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem}
+.panel h2{font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.6rem}
+.panel pre{font-family:var(--mono);font-size:.78rem;line-height:1.9;color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto;margin-block:.5rem}
+.panel pre .c{color:var(--ink-3)}
+.panel p{font-size:.85rem;color:var(--ink-2);text-wrap:pretty}
+.panel .note{margin-top:.5rem;font-size:.78rem;color:var(--ink-3)}
+.panel a{color:var(--cinnabar)}
+.panel a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.panel code{font-family:var(--mono);font-size:.9em}
+@media (max-width:760px){.panels{grid-template-columns:1fr}}
+
+/* ── footer / back-to-top ── */
+footer{border-top:1px solid var(--line);padding-block:1.8rem 2.8rem;color:var(--ink-3);font-size:.8rem}
+footer .frow{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1.5rem}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--cinnabar)}
+footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 #toTop{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:30;
-  width:2.75rem;height:2.75rem;display:grid;place-items:center;
-  font-family:var(--mono);font-size:1rem;color:var(--text-2);
-  background:var(--canvas-0);border:1px solid var(--text-3);
+  width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:10px;
+  font-family:var(--mono);font-size:1rem;color:var(--ink-2);
+  background:var(--card);border:1px solid var(--line-2);box-shadow:0 2px 8px rgb(43 38 32 / .1);
   opacity:0;pointer-events:none;transition:opacity .2s ease,color .16s ease,border-color .16s ease,background-color .16s ease}
 #toTop.show{opacity:1;pointer-events:auto}
-#toTop:hover{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
-li.hidden{display:none}
-.noresult{padding-block:3rem;color:var(--text-3);text-align:center;display:none}
-.noresult button{background:none;border:none;color:var(--accent);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+#toTop:hover{color:var(--on-cinnabar);border-color:var(--cinnabar);background:var(--cinnabar)}
 
-/* ── install spec sheet ── */
-.install{margin-block:clamp(2.6rem,7vh,4.5rem)}
-.install h2, .contribute h2{font-weight:800;font-size:1.3rem;text-transform:uppercase;letter-spacing:-.01em;
-  border:2px solid var(--text);padding:.5rem .8rem;margin-bottom:1rem;display:flex;align-items:center;gap:.7rem}
-.install h2::before{content:"H";font-family:var(--mono);font-size:.95rem;font-weight:700;color:var(--canvas-0);background:var(--text);width:1.7rem;height:1.7rem;display:grid;place-items:center;flex:none}
-.contribute h2::before{content:"I";font-family:var(--mono);font-size:.95rem;font-weight:700;color:var(--canvas-0);background:var(--text);width:1.7rem;height:1.7rem;display:grid;place-items:center;flex:none}
-.install pre{
-  font-family:var(--mono);font-size:.85rem;line-height:1.9;
-  color:var(--text);background:var(--canvas-1);
-  border:1px solid var(--text-3);padding:1rem 1.25rem;overflow-x:auto;
-}
-.install pre .c{color:var(--text-3)}
-.install .note{margin-top:.7rem;font-size:.82rem;color:var(--text-3);max-width:46rem;text-wrap:pretty}
-
-/* ── contribute / title block ── */
-.contribute{padding-block:0 clamp(2rem,5vh,3rem)}
-.contribute p{color:var(--text-2);max-width:46rem;text-wrap:pretty}
-footer{padding-block:0 3rem}
-.legal{font-size:.75rem;color:var(--text-3);max-width:56rem;margin-bottom:.8rem;text-wrap:pretty}
-.titleblock{
-  display:grid;grid-template-columns:1fr 1fr 1fr;
-  border:2px solid var(--text);
-  font-family:var(--mono);font-size:.72rem;color:var(--text-2);
-}
-.titleblock>div{padding:.55rem .8rem;border-right:1px solid var(--text)}
-.titleblock>div:last-child{border-right:none}
-.titleblock .lbl{display:block;font-size:.6rem;letter-spacing:.12em;color:var(--text-3);text-transform:uppercase;margin-bottom:.15rem}
-.titleblock a{color:var(--text-2)}
-.titleblock .slogan{color:var(--accent)}
 @media (max-width:640px){
-  ol.dex li.item{grid-template-columns:1fr;gap:.15rem}
-  .no{padding-top:0}
-  .copy{margin-top:.5rem;justify-self:start}
-  .titleblock{grid-template-columns:1fr}
-  .titleblock>div{border-right:none;border-bottom:1px solid var(--text)}
-  .titleblock>div:last-child{border-bottom:none}
-  .masthead{gap:1.2rem}
+  .nav-links{gap:.9rem;font-size:.82rem}
+  .market .go{margin-left:0}
 }
 </style>
 </head>
 <body>
 <a class="skip" href="#dex">跳到插件列表</a>
 
-<header>
-  <div class="wrap">
-    <div class="topline">
-      <span class="brand" translate="no">awesome-dsh-plugin.com</span>
-      <nav class="nav" aria-label="site">
-        <a class="lang-btn" href="/skill/" hreflang="en" rel="alternate">EN</a>
-        <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
-        <a href="/zh/feed.xml" class="lang-btn" title="Atom/RSS">RSS</a>
-      </nav>
-    </div>
-    <div class="masthead">
-      <svg class="mark" viewBox="76 42 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g fill="#2b2620">
-          <rect x="112" y="112" width="88" height="88" rx="14"/>
-          <rect x="212" y="112" width="88" height="88" rx="14"/>
-          <rect x="112" y="212" width="88" height="88" rx="14"/>
-          <rect x="212" y="212" width="88" height="88" rx="14"/>
-          <rect x="112" y="312" width="88" height="88" rx="14"/>
-          <rect x="212" y="312" width="88" height="88" rx="14"/>
-          <rect x="312" y="212" width="88" height="88" rx="14"/>
-          <rect x="312" y="312" width="88" height="88" rx="14"/>
-        </g>
-        <rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" fill="#c0392b"/>
-      </svg>
-      <div>
-        <h1 translate="no"><span class="h1-sm">Awesome</span><em>DeepSeek Harness</em><span class="h1-sm">(DSH) Plugin</span></h1>
-        <p class="tagline">
-          <b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表。
-        </p>
-      </div>
+<nav class="top"><div class="wrap nav-in">
+  <a class="logo" href="/zh/" translate="no">
+    <svg width="20" height="20" viewBox="76 42 400 400" aria-hidden="true"><g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g><rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" transform="rotate(9 390 122)"/></svg>
+    awesome-dsh-plugin
+  </a>
+  <div class="nav-links">
+    <a href="https://github.com/dsh-market/dsh-market" rel="noopener" translate="no">dsh-market</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md" rel="noopener">提交收录 ↗</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+    <a href="/zh/feed.xml" title="Atom/RSS">RSS</a>
+    <a class="lang-btn" href="/skill/" hreflang="en" rel="alternate">EN</a>
+  </div>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <svg class="mark" viewBox="76 42 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g>
+      <rect class="plug-block" x="346" y="78" width="88" height="88" rx="14"/>
+    </svg>
+    <div>
+      <h1 translate="no">Awesome <em>DeepSeek Harness</em> Plugin</h1>
+      <p class="tagline"><b>DeepSeek Harness</b>（<code translate="no">dsh</code>）插件精选列表。</p>
+      <p class="count-line">收录 <span id="total">0</span> 个插件 · <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">什么是 DeepSeek Harness？↗</a></p>
     </div>
   </div>
-  <div class="wrap">
-    <div class="issue-line">
-      <span>收录 <span id="total">0</span> 个插件</span>
-      <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">完整列表（GitHub）↗</a>
-      <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">什么是 DeepSeek Harness？↗</a>
+  <div class="wrap searchband">
+    <div class="searchbar">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" name="plugin-search" placeholder="搜索插件…" aria-label="搜索插件…">
+      <span class="count" id="count" aria-live="polite">0 / 0</span>
+    </div>
+    <div class="market">
+      <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+      <span class="lead"><b>dsh-market</b> —— 在 DeepSeek Harness 里直接逛并安装本列表全部插件</span>
+      <button class="go" type="button" data-cmd="dsh plugin --profile web add dshmarket">获取</button>
     </div>
   </div>
 </header>
 
-<div class="market">
-  <div class="wrap">
-    <svg class="cart" aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>
-    <span class="lead"><b>dsh-market</b> —— 在 DeepSeek Harness 里直接逛并安装本列表全部插件</span>
-    <span class="mcmd" translate="no"><code>dsh plugin --profile web add dshmarket</code><button class="copy" type="button" data-cmd="dsh plugin --profile web add dshmarket" aria-label="复制安装命令">复制安装命令</button></span>
-    <a class="about" href="https://github.com/dsh-market/dsh-market" rel="noopener">了解 dsh-market ↗</a>
-  </div>
-</div>
-
-<div class="finder">
-  <div class="wrap">
-    <div class="row1">
-      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
-      <input id="q" type="search" autocomplete="off" spellcheck="false" name="plugin-search"
-        placeholder="搜索插件…" aria-label="搜索插件…">
-      <span class="count" id="count" aria-live="polite">0 / 0</span>
-    </div>
-    <div class="filters" id="filters">
+<div class="filters-band"><div class="wrap">
+  <div class="filters" id="filters">
       <a class="chip" href="/zh/">全部 <small>301</small></a>
       <a class="chip" href="/zh/ui/">UI 增强 <small>67</small></a>
       <a class="chip" href="/zh/theme/">主题与外观 <small>3</small></a>
@@ -367,108 +260,111 @@ footer{padding-block:0 3rem}
       <a class="chip" href="/zh/dev/">开发与运行时 <small>45</small></a>
       <a class="chip" href="/zh/fun/">娱乐 <small>18</small></a>
     </div><!--/filters-->
-  </div>
-</div>
+</div></div>
 
 <main class="wrap">
   <ol class="dex" id="dex">
 
-    <li class="sec" data-sec="skill"><h2 id="skill"><a href="/zh/skill/">技能包</a> <small>3</small></h2></li>
-
-    <li class="item" data-cat="skill" style="animation-delay:0.02s">
-      <span class="no" aria-hidden="true">№ 01</span>
-      <div>
-        <h3><a href="/zh/p/dhicoc/dsh-reverse-skill/" translate="no">dhicoc/dsh-reverse-skill</a><span class="stars" translate="no">★ 1</span><a class="ext" href="https://github.com/dhicoc/dsh-reverse-skill" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
-        <p>完整 reverse-skill（85 个 SKILL.md）的 DeepSeek Harness 插件：逆向工程、授权渗透测试与安全研究的技能路由包。</p>
+    <li class="card" data-cat="skill">
+      <div class="top">
+        <h3><a href="/zh/p/creght-dev/skills/" translate="no"><span class="owner">creght-dev/</span>skills</a></h3>
+        <span class="stars" translate="no">7</span>
       </div>
-      <details class="inst">
-        <summary aria-haspopup="menu">安装 ▾</summary>
-        <div class="menu" role="menu">
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <div class="mi-cli">
-            <b>通过命令行</b>
-            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:dhicoc/dsh-reverse-skill" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:dhicoc/dsh-reverse-skill" aria-label="复制安装命令">复制安装命令</button></span>
+      <p>Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。</p>
+      <div class="foot">
+        <a class="tag" href="/zh/skill/">技能包</a>
+        <details class="inst">
+          <summary aria-haspopup="menu">安装 ▾</summary>
+          <div class="menu" role="menu">
+            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+            <div class="mi-cli">
+              <b>通过命令行</b>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:creght-dev/skills" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:creght-dev/skills" aria-label="复制安装命令">复制安装命令</button></span>
+            </div>
           </div>
-        </div>
-      </details>
+        </details>
+      </div>
     </li>
 
-    <li class="item" data-cat="skill" style="animation-delay:0.04s">
-      <span class="no" aria-hidden="true">№ 02</span>
-      <div>
-        <h3><a href="/zh/p/creght-dev/skills/" translate="no">creght-dev/skills</a><span class="stars" translate="no">★ 7</span><a class="ext" href="https://github.com/creght-dev/skills" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
-        <p>Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。</p>
+    <li class="card" data-cat="skill">
+      <div class="top">
+        <h3><a href="/zh/p/dhicoc/dsh-reverse-skill/" translate="no"><span class="owner">dhicoc/</span>dsh-reverse-skill</a></h3>
+        <span class="stars" translate="no">1</span>
       </div>
-      <details class="inst">
-        <summary aria-haspopup="menu">安装 ▾</summary>
-        <div class="menu" role="menu">
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <div class="mi-cli">
-            <b>通过命令行</b>
-            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:creght-dev/skills" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:creght-dev/skills" aria-label="复制安装命令">复制安装命令</button></span>
+      <p>完整 reverse-skill（85 个 SKILL.md）的 DeepSeek Harness 插件：逆向工程、授权渗透测试与安全研究的技能路由包。</p>
+      <div class="foot">
+        <a class="tag" href="/zh/skill/">技能包</a>
+        <details class="inst">
+          <summary aria-haspopup="menu">安装 ▾</summary>
+          <div class="menu" role="menu">
+            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+            <div class="mi-cli">
+              <b>通过命令行</b>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:dhicoc/dsh-reverse-skill" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:dhicoc/dsh-reverse-skill" aria-label="复制安装命令">复制安装命令</button></span>
+            </div>
           </div>
-        </div>
-      </details>
+        </details>
+      </div>
     </li>
 
-    <li class="item" data-cat="skill" style="animation-delay:0.06s">
-      <span class="no" aria-hidden="true">№ 03</span>
-      <div>
-        <h3><a href="/zh/p/YTxue/dsh-skill-manager/" translate="no">YTxue/dsh-skill-manager</a><span class="stars" translate="no">★ 0</span><a class="ext" href="https://github.com/YTxue/dsh-skill-manager" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
-        <p>设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。</p>
+    <li class="card" data-cat="skill">
+      <div class="top">
+        <h3><a href="/zh/p/YTxue/dsh-skill-manager/" translate="no"><span class="owner">YTxue/</span>dsh-skill-manager</a></h3>
+        <span class="stars" translate="no">0</span>
       </div>
-      <details class="inst">
-        <summary aria-haspopup="menu">安装 ▾</summary>
-        <div class="menu" role="menu">
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <div class="mi-cli">
-            <b>通过命令行</b>
-            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:YTxue/dsh-skill-manager" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:YTxue/dsh-skill-manager" aria-label="复制安装命令">复制安装命令</button></span>
+      <p>设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。</p>
+      <div class="foot">
+        <a class="tag" href="/zh/skill/">技能包</a>
+        <details class="inst">
+          <summary aria-haspopup="menu">安装 ▾</summary>
+          <div class="menu" role="menu">
+            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
+            <div class="mi-cli">
+              <b>通过命令行</b>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:YTxue/dsh-skill-manager" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:YTxue/dsh-skill-manager" aria-label="复制安装命令">复制安装命令</button></span>
+            </div>
           </div>
-        </div>
-      </details>
+        </details>
+      </div>
     </li>
 
   </ol>
-  <p class="noresult" id="noresult">
+
+  <div class="noresult" id="noresult">
     没有匹配的插件。
     <button type="button" id="clearFilter">清除筛选</button>
-  </p>
+  </div>
 
-  <section class="install">
-    <h2>安装</h2>
-    <pre translate="no"><span class="c"># npm 包（预构建）</span>
+  <div class="panels">
+    <section class="panel">
+      <h2>安装</h2>
+      <pre translate="no"><span class="c"># npm 包（预构建）</span>
 dsh plugin --profile web add &lt;npm-package&gt;
 
 <span class="c"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</span>
-dsh plugin --profile web add github:&lt;owner&gt;/&lt;repo&gt;</pre>
-    <p class="note">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
-  </section>
-
-  <section class="contribute">
-    <h2>收录你的插件</h2>
-    <p>给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在每个 <code translate="no">README</code> 语言文件中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。</p>
-  </section>
+dsh plugin --profile web add github:owner/repo</pre>
+      <p class="note">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+    </section>
+    <section class="panel">
+      <h2>收录你的插件</h2>
+      <p>给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在每个 <code translate="no">README</code> 语言文件中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。</p>
+    </section>
+  </div>
 </main>
 
 <button id="toTop" type="button" aria-label="返回顶部">↑</button>
 <span id="live" class="sr" aria-live="polite"></span>
 
-<footer class="wrap">
-  <p class="legal">插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。</p>
-  <div class="titleblock">
-    <div><span class="lbl">Project</span><span translate="no">awesome-dsh-plugin · <a href="https://awesome-dsh-plugin.com">awesome-dsh-plugin.com</a></span></div>
-    <div><span class="lbl">Motto</span><span class="slogan">探索未至之境</span></div>
-    <div><span class="lbl">Issued</span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · 与 DeepSeek 无隶属关系</div>
-  </div>
-</footer>
+<footer><div class="wrap frow">
+  <span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · 与 DeepSeek 无隶属关系 · <span class="motto" translate="no">探索未至之境</span></span>
+  <span>插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。</span>
+</div></footer>
 
 <script>
 const urlParams = new URLSearchParams(location.search);
 
 // filter = category chip × search text; URL reflects state (?cat=&q=)
-const items = [...document.querySelectorAll('#dex li.item')];
-const secs = [...document.querySelectorAll('#dex li.sec')];
+const items = [...document.querySelectorAll('#dex li.card')];
 const count = document.getElementById('count');
 const noresult = document.getElementById('noresult');
 const total = document.getElementById('total');
@@ -484,14 +380,12 @@ function syncUrl() {
 }
 function applyFilter() {
   let shown = 0;
-  const perSec = {};
   for (const li of items) {
     const hit = (activeCat === 'all' || li.dataset.cat === activeCat)
       && (!query || li.textContent.toLowerCase().includes(query));
     li.classList.toggle('hidden', !hit);
-    if (hit) { shown++; perSec[li.dataset.cat] = (perSec[li.dataset.cat] || 0) + 1; }
+    if (hit) shown++;
   }
-  for (const s of secs) s.classList.toggle('hidden', !perSec[s.dataset.sec]);
   count.textContent = `${shown} / ${items.length}`;
   noresult.style.display = shown ? 'none' : 'block';
   syncUrl();
@@ -503,10 +397,10 @@ q.addEventListener('input', (e) => {
   applyFilter();
 });
 document.getElementById('filters').addEventListener('click', (e) => {
-  const chip = e.target.closest('.chip');
+  const chip = e.target.closest('button.chip');
   if (!chip) return;
   activeCat = chip.dataset.cat;
-  for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c === chip);
+  for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
   applyFilter();
 });
 document.getElementById('clearFilter').addEventListener('click', () => {
@@ -514,6 +408,7 @@ document.getElementById('clearFilter').addEventListener('click', () => {
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
   applyFilter();
 });
+
 const live = document.getElementById('live');
 async function copyCmd(btn) {
   try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
@@ -531,32 +426,35 @@ document.addEventListener('click', async (e) => {
     setTimeout(() => { b.textContent = old; mi.classList.remove('done'); mi.closest('details').open = false; }, 900);
     return;
   }
-  const btn = e.target.closest('.copy');
+  const btn = e.target.closest('.cli .copy, .market .go');
   if (btn) {
     await copyCmd(btn);
     btn.classList.add('done');
-    const old = btn.innerHTML;
-    btn.textContent = '✓';
-    setTimeout(() => { btn.classList.remove('done'); btn.innerHTML = old; }, 1200);
+    const old = btn.textContent;
+    btn.textContent = '✓ 已复制';
+    setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
     return;
   }
   // close any open install menu on outside click
   if (!e.target.closest('details.inst')) for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
 });
-// one menu open at a time; Esc closes
+// one menu open at a time; Esc closes; "/" focuses search
 document.addEventListener('toggle', (e) => {
   if (e.target.matches?.('details.inst') && e.target.open)
     for (const d of document.querySelectorAll('details.inst[open]')) if (d !== e.target) d.open = false;
 }, true);
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
+  if (e.key === '/' && document.activeElement !== q && !e.target.closest?.('input,textarea')) { e.preventDefault(); q.focus(); }
 });
 // CLI input: focus selects the whole command
 document.addEventListener('focusin', (e) => { if (e.target.matches('.cli input')) e.target.select(); });
+
 // back to top
 const toTop = document.getElementById('toTop');
 addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
 toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+
 // restore state from URL on load
 for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
 applyFilter();

@@ -91,36 +91,36 @@ const jsonld = (url) => JSON.stringify({
   itemListElement: ordered.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 
+// star-ranked card grid; `only` limits to one category (category pages)
 function buildRows(loc, only) {
-  let idx = 0
-  return CAT_IDS.filter((id) => !only || id === only).map((id) => {
-    const group = ordered.filter((e) => e.cat === id)
-    if (!group.length) return ''
-    const sec = `    <li class="sec" data-sec="${id}"><h2 id="${id}"><a href="${loc.urlPath}${id}/">${loc.categories[id]}</a> <small>${group.length}</small></h2></li>`
-    const items = group.map((e) => {
-      idx++
-      const delay = Math.min(idx * 0.02, 0.4).toFixed(2)
-      const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
-      return `    <li class="item" data-cat="${e.cat}" style="animation-delay:${delay}s">
-      <span class="no" aria-hidden="true">№ ${String(idx).padStart(2, '0')}</span>
-      <div>
-        <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no">${esc(e.name)}</a>${e.stars != null ? `<span class="stars" translate="no">★ ${e.stars}</span>` : ''}<a class="ext" href="${e.url}" rel="noopener" translate="no" aria-label="GitHub">↗</a></h3>
-        <p>${esc(e.descs[loc.code])}</p>
+  const group = ordered
+    .filter((e) => !only || e.cat === only)
+    .slice()
+    .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+  return group.map((e) => {
+    const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+    const short = e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name
+    return `    <li class="card" data-cat="${e.cat}">
+      <div class="top">
+        <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
+        ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
       </div>
-      <details class="inst">
-        <summary aria-haspopup="menu">${loc.strings.INSTALL_BTN} ▾</summary>
-        <div class="menu" role="menu">
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>${loc.strings.MENU_MARKET}</b><small>${loc.strings.MENU_MARKET_HINT}</small></button>
-          <div class="mi-cli">
-            <b>${loc.strings.MENU_CLI}</b>
-            <span class="cli" translate="no"><input readonly value="${esc(cmd)}" aria-label="${loc.COPY_LABEL}" spellcheck="false"><button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button></span>
+      <p>${esc(e.descs[loc.code])}</p>
+      <div class="foot">
+        <a class="tag" href="${loc.urlPath}${e.cat}/">${loc.categories[e.cat]}</a>
+        <details class="inst">
+          <summary aria-haspopup="menu">${loc.strings.INSTALL_BTN} ▾</summary>
+          <div class="menu" role="menu">
+            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>${loc.strings.MENU_MARKET}</b><small>${loc.strings.MENU_MARKET_HINT}</small></button>
+            <div class="mi-cli">
+              <b>${loc.strings.MENU_CLI}</b>
+              <span class="cli" translate="no"><input readonly value="${esc(cmd)}" aria-label="${loc.COPY_LABEL}" spellcheck="false"><button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button></span>
+            </div>
           </div>
-        </div>
-      </details>
+        </details>
+      </div>
     </li>`
-    }).join('\n\n')
-    return sec + '\n\n' + items
-  }).filter(Boolean).join('\n\n')
+  }).join('\n\n')
 }
 
 function buildChips(loc) {
@@ -172,8 +172,7 @@ for (const loc of LOCALES) {
     .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
     .replaceAll('__LOCALE_LINKS__', localeLinks(loc))
     .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
-    .replaceAll('__T_COPY_LABEL2__', loc.COPY_LABEL)
-    .replaceAll('__T_COPY_TEXT2__', loc.COPY_TEXT)
+    .replaceAll('__HOME__', loc.urlPath)
     .replaceAll('__LANG_REDIRECT__', langRedirect(loc))
     .replaceAll('__FEED__', loc.feed)
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
@@ -212,8 +211,7 @@ for (const loc of LOCALES) {
       .replaceAll('__OG_IMAGE__', ORIGIN + loc.og)
       .replaceAll('__LOCALE_LINKS__', LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}${id}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__SEARCH_PH__', loc.SEARCH_PH)
-    .replaceAll('__T_COPY_LABEL2__', loc.COPY_LABEL)
-    .replaceAll('__T_COPY_TEXT2__', loc.COPY_TEXT)
+    .replaceAll('__HOME__', loc.urlPath)
       .replaceAll('__LANG_REDIRECT__', '')
       .replaceAll('__FEED__', loc.feed)
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, v)
