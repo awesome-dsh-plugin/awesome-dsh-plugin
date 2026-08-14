@@ -349,6 +349,27 @@ ${readmeHtml}
   }
 }
 
+// Prune detail pages for entries no longer listed — otherwise a removed or
+// renamed plugin leaves a live orphan page behind.
+{
+  const liveSlugs = new Set(ordered.map((e) => e.slug))
+  for (const loc of LOCALES) {
+    const pRoot = `${loc.out.replace(/index\.html$/, '')}p`
+    if (!fs.existsSync(pRoot)) continue
+    for (const owner of fs.readdirSync(pRoot)) {
+      const ownerDir = `${pRoot}/${owner}`
+      if (!fs.statSync(ownerDir).isDirectory()) continue
+      for (const name of fs.readdirSync(ownerDir)) {
+        if (!liveSlugs.has(`${owner}/${name}`)) {
+          fs.rmSync(`${ownerDir}/${name}`, { recursive: true, force: true })
+          console.log(`pruned stale detail page ${ownerDir}/${name}`)
+        }
+      }
+      if (fs.readdirSync(ownerDir).length === 0) fs.rmdirSync(ownerDir)
+    }
+  }
+}
+
 // Atom feeds: newest 30 entries per locale
 for (const loc of LOCALES) {
   const recent = [...ordered].sort((a, b2) => b2.added < a.added ? -1 : b2.added > a.added ? 1 : 0).slice(0, 30)
