@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 158,
+ "count": 159,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -477,6 +477,18 @@
     "zh": "基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。"
    },
    "install": "dsh plugin --profile web add github:Jesse-njx/dsh-memory",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-memory-vault",
+   "owner": "flymysql",
+   "url": "https://github.com/flymysql/dsh-memory",
+   "category": "session",
+   "description": {
+    "en": "Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.",
+    "zh": "跨会话记忆库：remember / recall / forget 工具、每轮提示注入与设置页条目浏览。"
+   },
+   "install": "dsh plugin --profile web add github:flymysql/dsh-memory",
    "added": "2026-08-14"
   },
   {

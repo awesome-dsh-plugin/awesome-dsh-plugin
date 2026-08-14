@@ -83,6 +83,13 @@
     <summary>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</summary>
   </entry>
   <entry>
+    <title>dsh-memory-vault</title>
+    <id>https://github.com/flymysql/dsh-memory</id>
+    <link href="https://github.com/flymysql/dsh-memory"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.</summary>
+  </entry>
+  <entry>
     <title>dsh-plugin-asmemory</title>
     <id>https://github.com/Xplore-LAB/dsh-plugin-asmemory</id>
     <link href="https://github.com/Xplore-LAB/dsh-plugin-asmemory"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/EvilIrving/dsh-context-proxy"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.</summary>
-  </entry>
-  <entry>
-    <title>@zhaoolee/dsh-notes</title>
-    <id>https://github.com/zhaoolee/notes</id>
-    <link href="https://github.com/zhaoolee/notes"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</summary>
   </entry>
 </feed>
