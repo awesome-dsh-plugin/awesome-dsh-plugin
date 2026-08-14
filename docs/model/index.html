@@ -141,8 +141,8 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .market .cart{flex:none;color:var(--accent-strong)}
 .market .mcmd{display:inline-flex;align-items:stretch;border:1px solid var(--text-3)}
 .market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
-  padding:.3rem .6rem;white-space:nowrap}
-.market .copy{margin:0;border:none;border-left:1px solid var(--text-3)}
+  padding:.3rem .6rem;white-space:nowrap;display:flex;align-items:center}
+.market .copy{margin:0;border:none;border-left:1px solid var(--text-3);display:flex;align-items:center}
 .market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
 @media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
 
@@ -188,7 +188,11 @@ ol.dex li.item{
   padding-block:1.15rem;
   border-bottom:1px solid var(--line);
   animation:settle .45s cubic-bezier(.22,1,.36,1) both;
+  position:relative;
 }
+/* the settle animation leaves each row as its own stacking context, so a
+   later sibling would paint over an open menu — lift the open row above */
+ol.dex li.item:has(.inst[open]){z-index:30}
 @keyframes settle{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){ol.dex li.item{animation:none}}
 .no{font-family:var(--mono);font-size:.7rem;color:var(--accent);padding-top:.45rem;font-variant-numeric:tabular-nums;
@@ -217,17 +221,23 @@ li.item:hover .no{transform:translateX(5px)}
 .inst summary::-webkit-details-marker{display:none}
 .inst summary:hover{color:var(--text);border-color:var(--text-3)}
 .inst[open] summary{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
-.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:15rem;
+.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:22rem;max-width:min(26rem,88vw);
   background:var(--canvas-0);border:1px solid var(--text-3);box-shadow:0 6px 24px rgb(0 0 0 / .12);
-  overscroll-behavior:contain}
-.inst .menu button{display:block;width:100%;text-align:left;background:none;border:none;
+  overscroll-behavior:contain;overflow:hidden}
+.inst .menu>button{display:block;width:100%;text-align:left;background:none;border:none;
   padding:.55rem .8rem;border-bottom:1px solid var(--line);
   transition:background-color .16s ease}
-.inst .menu button:last-child{border-bottom:none}
-.inst .menu button:hover{background:var(--accent-tint)}
+.inst .menu>button:hover{background:var(--accent-tint)}
 .inst .menu b{display:block;font-family:var(--mono);font-size:.7rem;font-weight:700;color:var(--text)}
 .inst .menu small{display:block;font-size:.66rem;color:var(--text-3);margin-top:.1rem}
 .inst .menu button.done b{color:var(--accent-strong)}
+.mi-cli{padding:.55rem .8rem}
+.cli{display:flex;align-items:stretch;margin-top:.4rem;border:1px solid var(--text-3);width:100%}
+.cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--text);
+  background:var(--canvas-1);border:none;outline:none;padding:.4rem .55rem}
+.cli .copy{margin:0;border:none;border-left:1px solid var(--text-3);align-self:stretch;display:flex;align-items:center;
+  background:var(--canvas-0);flex:none}
+.cli .copy:hover,.cli .copy.done{background:var(--accent)}
 
 /* ── back to top ── */
 #toTop{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:30;
@@ -374,7 +384,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:dylan121322/llm-adaptive"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:dylan121322/llm-adaptive" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:dylan121322/llm-adaptive" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -389,7 +402,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -404,7 +420,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-codex-connect"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-codex-connect" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-codex-connect" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -419,7 +438,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:kam74515-boop/dsh-everything-oauth"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:kam74515-boop/dsh-everything-oauth" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:kam74515-boop/dsh-everything-oauth" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -434,7 +456,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/Qwen-MM-Plugins" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -449,7 +474,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-codex-auth"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-codex-auth" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-codex-auth" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -464,7 +492,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -561,7 +592,7 @@ async function copyCmd(btn) {
   setTimeout(() => { live.textContent = ''; }, 1500);
 }
 document.addEventListener('click', async (e) => {
-  const mi = e.target.closest('.inst .menu button');
+  const mi = e.target.closest('.inst .menu > button');
   if (mi) {
     await copyCmd(mi);
     mi.classList.add('done');
@@ -591,6 +622,8 @@ document.addEventListener('toggle', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
 });
+// CLI input: focus selects the whole command
+document.addEventListener('focusin', (e) => { if (e.target.matches('.cli input')) e.target.select(); });
 // back to top
 const toTop = document.getElementById('toTop');
 addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });

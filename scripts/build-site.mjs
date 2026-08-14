@@ -111,7 +111,10 @@ function buildRows(loc, only) {
         <summary aria-haspopup="menu">${loc.strings.INSTALL_BTN} ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>${loc.strings.MENU_MARKET}</b><small>${loc.strings.MENU_MARKET_HINT}</small></button>
-          <button type="button" role="menuitem" data-cmd="${esc(cmd)}"><b>${loc.strings.MENU_CLI}</b><small>${loc.strings.MENU_CLI_HINT}</small></button>
+          <div class="mi-cli">
+            <b>${loc.strings.MENU_CLI}</b>
+            <span class="cli" translate="no"><input readonly value="${esc(cmd)}" aria-label="${loc.COPY_LABEL}" spellcheck="false"><button class="copy" type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button></span>
+          </div>
         </div>
       </details>
     </li>`

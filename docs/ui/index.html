@@ -141,8 +141,8 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .market .cart{flex:none;color:var(--accent-strong)}
 .market .mcmd{display:inline-flex;align-items:stretch;border:1px solid var(--text-3)}
 .market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
-  padding:.3rem .6rem;white-space:nowrap}
-.market .copy{margin:0;border:none;border-left:1px solid var(--text-3)}
+  padding:.3rem .6rem;white-space:nowrap;display:flex;align-items:center}
+.market .copy{margin:0;border:none;border-left:1px solid var(--text-3);display:flex;align-items:center}
 .market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
 @media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
 
@@ -188,7 +188,11 @@ ol.dex li.item{
   padding-block:1.15rem;
   border-bottom:1px solid var(--line);
   animation:settle .45s cubic-bezier(.22,1,.36,1) both;
+  position:relative;
 }
+/* the settle animation leaves each row as its own stacking context, so a
+   later sibling would paint over an open menu — lift the open row above */
+ol.dex li.item:has(.inst[open]){z-index:30}
 @keyframes settle{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){ol.dex li.item{animation:none}}
 .no{font-family:var(--mono);font-size:.7rem;color:var(--accent);padding-top:.45rem;font-variant-numeric:tabular-nums;
@@ -217,17 +221,23 @@ li.item:hover .no{transform:translateX(5px)}
 .inst summary::-webkit-details-marker{display:none}
 .inst summary:hover{color:var(--text);border-color:var(--text-3)}
 .inst[open] summary{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
-.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:15rem;
+.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:22rem;max-width:min(26rem,88vw);
   background:var(--canvas-0);border:1px solid var(--text-3);box-shadow:0 6px 24px rgb(0 0 0 / .12);
-  overscroll-behavior:contain}
-.inst .menu button{display:block;width:100%;text-align:left;background:none;border:none;
+  overscroll-behavior:contain;overflow:hidden}
+.inst .menu>button{display:block;width:100%;text-align:left;background:none;border:none;
   padding:.55rem .8rem;border-bottom:1px solid var(--line);
   transition:background-color .16s ease}
-.inst .menu button:last-child{border-bottom:none}
-.inst .menu button:hover{background:var(--accent-tint)}
+.inst .menu>button:hover{background:var(--accent-tint)}
 .inst .menu b{display:block;font-family:var(--mono);font-size:.7rem;font-weight:700;color:var(--text)}
 .inst .menu small{display:block;font-size:.66rem;color:var(--text-3);margin-top:.1rem}
 .inst .menu button.done b{color:var(--accent-strong)}
+.mi-cli{padding:.55rem .8rem}
+.cli{display:flex;align-items:stretch;margin-top:.4rem;border:1px solid var(--text-3);width:100%}
+.cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--text);
+  background:var(--canvas-1);border:none;outline:none;padding:.4rem .55rem}
+.cli .copy{margin:0;border:none;border-left:1px solid var(--text-3);align-self:stretch;display:flex;align-items:center;
+  background:var(--canvas-0);flex:none}
+.cli .copy:hover,.cli .copy.done{background:var(--accent)}
 
 /* ── back to top ── */
 #toTop{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:30;
@@ -374,7 +384,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Noob-stupid/dsh-plugin-hub" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -389,7 +402,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:wjy9902/dsh-web-default-session"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:wjy9902/dsh-web-default-session" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:wjy9902/dsh-web-default-session" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -404,7 +420,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:huiliyi37/dsh-tianshu-tui" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -419,7 +438,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:openma-ai/deepseek-harness-tui"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:openma-ai/deepseek-harness-tui" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:openma-ai/deepseek-harness-tui" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -434,7 +456,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-at-file"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/dsh-at-file" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-at-file" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -449,7 +474,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:alingalingling/ui-status-label"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:alingalingling/ui-status-label" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:alingalingling/ui-status-label" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -464,7 +492,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -479,7 +510,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @zseven-w/dsh-openpencil"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add @zseven-w/dsh-openpencil" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add @zseven-w/dsh-openpencil" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -494,7 +528,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Nagi-ovo/dsh-visualize"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Nagi-ovo/dsh-visualize" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Nagi-ovo/dsh-visualize" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -509,7 +546,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ccq1/dsh-side-panel"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:ccq1/dsh-side-panel" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ccq1/dsh-side-panel" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -524,7 +564,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:dingyi222666/dsh-focus-chat"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:dingyi222666/dsh-focus-chat" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:dingyi222666/dsh-focus-chat" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -539,7 +582,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-genui"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/dsh-genui" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-genui" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -554,7 +600,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-annotation"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/dsh-annotation" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-annotation" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -569,7 +618,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:vlln/dsh-navbar"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:vlln/dsh-navbar" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vlln/dsh-navbar" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -584,7 +636,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:asukasec/dsh-message-preview"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:asukasec/dsh-message-preview" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:asukasec/dsh-message-preview" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -599,7 +654,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:vlln/dsh-task-status"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:vlln/dsh-task-status" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vlln/dsh-task-status" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -614,7 +672,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Nanki-nn/dsh-answer-pet"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Nanki-nn/dsh-answer-pet" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Nanki-nn/dsh-answer-pet" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -629,7 +690,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:renat3u/dsh-web-archive"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:renat3u/dsh-web-archive" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:renat3u/dsh-web-archive" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -644,7 +708,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:0xsline/dsh-spotlight"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:0xsline/dsh-spotlight" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:0xsline/dsh-spotlight" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -659,7 +726,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:bill9109/dsh-101"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:bill9109/dsh-101" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:bill9109/dsh-101" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -674,7 +744,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:bill9109/dsh-drag-and-drop"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:bill9109/dsh-drag-and-drop" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:bill9109/dsh-drag-and-drop" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -689,7 +762,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:taxueseek/dsh-files"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:taxueseek/dsh-files" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:taxueseek/dsh-files" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -704,7 +780,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:l541402398/dsh-file-uploads"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:l541402398/dsh-file-uploads" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:l541402398/dsh-file-uploads" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -719,7 +798,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:qyw233/dsh-deeplink"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:qyw233/dsh-deeplink" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:qyw233/dsh-deeplink" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -734,7 +816,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lehhair/dsh-diff-viewer"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:lehhair/dsh-diff-viewer" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lehhair/dsh-diff-viewer" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -749,7 +834,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/ex-setting"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/ex-setting" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/ex-setting" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -764,7 +852,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/web-components"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/web-components" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/web-components" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -779,7 +870,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-turn-navigator"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:vibeinging/dsh-turn-navigator" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-turn-navigator" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -794,7 +888,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:SnowCrescenter-tech/dsh-milestone" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -809,7 +906,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Ghost011118/dsh-balance-meter"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Ghost011118/dsh-balance-meter" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Ghost011118/dsh-balance-meter" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -824,7 +924,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:v587d/dsh-opencode-go-usage"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:v587d/dsh-opencode-go-usage" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:v587d/dsh-opencode-go-usage" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -839,7 +942,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Han-1413141/dsh-cost-meter"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Han-1413141/dsh-cost-meter" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Han-1413141/dsh-cost-meter" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -854,7 +960,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:fishxcode/dsh-plugin-deepseek-balance"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:fishxcode/dsh-plugin-deepseek-balance" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:fishxcode/dsh-plugin-deepseek-balance" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -869,7 +978,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Sev7een/ds-api-usage"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Sev7een/ds-api-usage" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Sev7een/ds-api-usage" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -884,7 +996,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-spend"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-spend" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-spend" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -899,7 +1014,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:stevenx65/dsh-balance-plugin"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:stevenx65/dsh-balance-plugin" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:stevenx65/dsh-balance-plugin" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -914,7 +1032,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ccch1mneyyy/dsh-TUI" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -929,7 +1050,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -944,7 +1068,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:tsonglew/dsh-workspace-search"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:tsonglew/dsh-workspace-search" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:tsonglew/dsh-workspace-search" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -959,7 +1086,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:tsonglew/dsh-media-preview"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:tsonglew/dsh-media-preview" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:tsonglew/dsh-media-preview" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -974,7 +1104,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Han-1413141/dsh-sticky-disclosure"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Han-1413141/dsh-sticky-disclosure" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Han-1413141/dsh-sticky-disclosure" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -989,7 +1122,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Meredith2328/dsh-sticky-note"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Meredith2328/dsh-sticky-note" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Meredith2328/dsh-sticky-note" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1004,7 +1140,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-web-attention-badge"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-web-attention-badge" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-web-attention-badge" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1019,7 +1158,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zhu1090093659/dsh-web-ui"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:zhu1090093659/dsh-web-ui" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zhu1090093659/dsh-web-ui" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1034,7 +1176,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:zealot00/dsh-pet"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:zealot00/dsh-pet" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:zealot00/dsh-pet" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1049,7 +1194,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-builtin-toggles"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-builtin-toggles" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-builtin-toggles" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1064,7 +1212,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:jiangnanquan/dsh-ux"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:jiangnanquan/dsh-ux" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:jiangnanquan/dsh-ux" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1079,7 +1230,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:a903067276-rgb/dsh-hud"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:a903067276-rgb/dsh-hud" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:a903067276-rgb/dsh-hud" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1094,7 +1248,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:wsxwj123/dsh-plugins#path:/packages/turn-scrubber" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1109,7 +1266,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add @steven-wu/dsh-cost-meter"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add @steven-wu/dsh-cost-meter" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add @steven-wu/dsh-cost-meter" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1124,7 +1284,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:a903067276-rgb/dsh-file-mentions"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:a903067276-rgb/dsh-file-mentions" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:a903067276-rgb/dsh-file-mentions" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1139,7 +1302,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:bobcat848/dsh-calculator"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:bobcat848/dsh-calculator" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:bobcat848/dsh-calculator" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1154,7 +1320,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jolly-J/dsh-deepseek-billing"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Jolly-J/dsh-deepseek-billing" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jolly-J/dsh-deepseek-billing" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1169,7 +1338,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:AKIRACOD/dsh-drag-and-drop"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:AKIRACOD/dsh-drag-and-drop" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:AKIRACOD/dsh-drag-and-drop" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1184,7 +1356,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-client-auto-continue"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-client-auto-continue" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-client-auto-continue" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1199,7 +1374,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-chat-outline"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-chat-outline" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-chat-outline" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1214,7 +1392,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1229,7 +1410,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:QT-Chen/dsh-mic-input"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:QT-Chen/dsh-mic-input" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:QT-Chen/dsh-mic-input" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1244,7 +1428,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:LeemanCheung/dsh-task-dag"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:LeemanCheung/dsh-task-dag" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:LeemanCheung/dsh-task-dag" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1259,7 +1446,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:MorGogh/widget-dock"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:MorGogh/widget-dock" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:MorGogh/widget-dock" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1274,7 +1464,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">install ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider"><b>via CLI</b><small>copy this plugin’s install command</small></button>
+          <div class="mi-cli">
+            <b>via CLI</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:qjcnmd/dsh-reasoning-slider" aria-label="Copy install command">copy install</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1371,7 +1564,7 @@ async function copyCmd(btn) {
   setTimeout(() => { live.textContent = ''; }, 1500);
 }
 document.addEventListener('click', async (e) => {
-  const mi = e.target.closest('.inst .menu button');
+  const mi = e.target.closest('.inst .menu > button');
   if (mi) {
     await copyCmd(mi);
     mi.classList.add('done');
@@ -1401,6 +1594,8 @@ document.addEventListener('toggle', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
 });
+// CLI input: focus selects the whole command
+document.addEventListener('focusin', (e) => { if (e.target.matches('.cli input')) e.target.select(); });
 // back to top
 const toTop = document.getElementById('toTop');
 addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });

@@ -141,8 +141,8 @@ h1 .h1-sm{display:block;font-size:.44em;letter-spacing:.05em}
 .market .cart{flex:none;color:var(--accent-strong)}
 .market .mcmd{display:inline-flex;align-items:stretch;border:1px solid var(--text-3)}
 .market code{font-family:var(--mono);font-size:.78rem;color:var(--text);background:var(--canvas-0);
-  padding:.3rem .6rem;white-space:nowrap}
-.market .copy{margin:0;border:none;border-left:1px solid var(--text-3)}
+  padding:.3rem .6rem;white-space:nowrap;display:flex;align-items:center}
+.market .copy{margin:0;border:none;border-left:1px solid var(--text-3);display:flex;align-items:center}
 .market .about{font-family:var(--mono);font-size:.74rem;white-space:nowrap}
 @media (max-width:640px){.market code{white-space:normal;overflow-wrap:anywhere}}
 
@@ -188,7 +188,11 @@ ol.dex li.item{
   padding-block:1.15rem;
   border-bottom:1px solid var(--line);
   animation:settle .45s cubic-bezier(.22,1,.36,1) both;
+  position:relative;
 }
+/* the settle animation leaves each row as its own stacking context, so a
+   later sibling would paint over an open menu — lift the open row above */
+ol.dex li.item:has(.inst[open]){z-index:30}
 @keyframes settle{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){ol.dex li.item{animation:none}}
 .no{font-family:var(--mono);font-size:.7rem;color:var(--accent);padding-top:.45rem;font-variant-numeric:tabular-nums;
@@ -217,17 +221,23 @@ li.item:hover .no{transform:translateX(5px)}
 .inst summary::-webkit-details-marker{display:none}
 .inst summary:hover{color:var(--text);border-color:var(--text-3)}
 .inst[open] summary{color:var(--on-accent);border-color:var(--accent);background:var(--accent)}
-.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:15rem;
+.inst .menu{position:absolute;right:0;top:calc(100% + 4px);z-index:20;min-width:22rem;max-width:min(26rem,88vw);
   background:var(--canvas-0);border:1px solid var(--text-3);box-shadow:0 6px 24px rgb(0 0 0 / .12);
-  overscroll-behavior:contain}
-.inst .menu button{display:block;width:100%;text-align:left;background:none;border:none;
+  overscroll-behavior:contain;overflow:hidden}
+.inst .menu>button{display:block;width:100%;text-align:left;background:none;border:none;
   padding:.55rem .8rem;border-bottom:1px solid var(--line);
   transition:background-color .16s ease}
-.inst .menu button:last-child{border-bottom:none}
-.inst .menu button:hover{background:var(--accent-tint)}
+.inst .menu>button:hover{background:var(--accent-tint)}
 .inst .menu b{display:block;font-family:var(--mono);font-size:.7rem;font-weight:700;color:var(--text)}
 .inst .menu small{display:block;font-size:.66rem;color:var(--text-3);margin-top:.1rem}
 .inst .menu button.done b{color:var(--accent-strong)}
+.mi-cli{padding:.55rem .8rem}
+.cli{display:flex;align-items:stretch;margin-top:.4rem;border:1px solid var(--text-3);width:100%}
+.cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--text);
+  background:var(--canvas-1);border:none;outline:none;padding:.4rem .55rem}
+.cli .copy{margin:0;border:none;border-left:1px solid var(--text-3);align-self:stretch;display:flex;align-items:center;
+  background:var(--canvas-0);flex:none}
+.cli .copy:hover,.cli .copy.done{background:var(--accent)}
 
 /* ── back to top ── */
 #toTop{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:30;
@@ -374,7 +384,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:bujue600-arch/dsh-testgen"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:bujue600-arch/dsh-testgen" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:bujue600-arch/dsh-testgen" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -389,7 +402,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/fabric"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/fabric" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/fabric" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -404,7 +420,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:LoserFox/dsh-git-identity"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:LoserFox/dsh-git-identity" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:LoserFox/dsh-git-identity" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -419,7 +438,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -434,7 +456,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ICCuse/dsh-pain-point-check"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:ICCuse/dsh-pain-point-check" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ICCuse/dsh-pain-point-check" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -449,7 +474,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-plugin-check"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/dsh-plugin-check" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-plugin-check" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -464,7 +492,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-security-audit"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/dsh-security-audit" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-security-audit" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -479,7 +510,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-session-health"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/dsh-session-health" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/dsh-session-health" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -494,7 +528,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:william-jin-cmu/dsh-evolve"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:william-jin-cmu/dsh-evolve" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:william-jin-cmu/dsh-evolve" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -509,7 +546,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-trace"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:vibeinging/dsh-trace" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-trace" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -524,7 +564,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-telemetry-redactor"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-telemetry-redactor" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-telemetry-redactor" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -539,7 +582,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-verification-receipt"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-verification-receipt" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-verification-receipt" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -554,7 +600,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:030611/qiushi-dsh-evidence-audit"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:030611/qiushi-dsh-evidence-audit" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:030611/qiushi-dsh-evidence-audit" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -569,7 +618,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/sandbox-micro"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/sandbox-micro" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/sandbox-micro" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -584,7 +636,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/sandbox-mxc"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/sandbox-mxc" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/sandbox-mxc" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -599,7 +654,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/sandbox-nono"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/sandbox-nono" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/sandbox-nono" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -614,7 +672,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-agent-budget"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:vibeinging/dsh-agent-budget" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vibeinging/dsh-agent-budget" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -629,7 +690,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-polyglot"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Jesse-njx/dsh-polyglot" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-polyglot" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -644,7 +708,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:ilharp/dsh-tool-approval"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:ilharp/dsh-tool-approval" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:ilharp/dsh-tool-approval" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -659,7 +726,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:arrow949/dsh-turn-approval"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:arrow949/dsh-turn-approval" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:arrow949/dsh-turn-approval" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -674,7 +744,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:omdsh-dev/plugin-template"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:omdsh-dev/plugin-template" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:omdsh-dev/plugin-template" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -689,7 +762,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Small-tailqwq/dsh-tps"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Small-tailqwq/dsh-tps" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Small-tailqwq/dsh-tps" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -704,7 +780,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:disyli/dsh-tool-call-stats"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:disyli/dsh-tool-call-stats" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:disyli/dsh-tool-call-stats" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -719,7 +798,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Areium/dsh-fail-logger"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Areium/dsh-fail-logger" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Areium/dsh-fail-logger" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -734,7 +816,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:BiBoyang/dsh-eval-harness"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:BiBoyang/dsh-eval-harness" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:BiBoyang/dsh-eval-harness" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -749,7 +834,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:hust-open-atom-club/oh-dsh"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:hust-open-atom-club/oh-dsh" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:hust-open-atom-club/oh-dsh" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -764,7 +852,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-annotate"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:BrambleXu/dsh-annotate" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-annotate" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -779,7 +870,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-prompt-profile"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:BrambleXu/dsh-prompt-profile" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-prompt-profile" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -794,7 +888,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-revdiff"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:BrambleXu/dsh-revdiff" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:BrambleXu/dsh-revdiff" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -809,7 +906,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-gitflow"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:lonelymoon87/dsh-gitflow" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-gitflow" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -824,7 +924,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-guardian"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:lonelymoon87/dsh-guardian" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:lonelymoon87/dsh-guardian" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -839,7 +942,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-plugin-manager"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Jesse-njx/dsh-plugin-manager" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-plugin-manager" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -854,7 +960,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-tmuxctl"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Jesse-njx/dsh-tmuxctl" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jesse-njx/dsh-tmuxctl" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -869,7 +978,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -884,7 +996,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:EvilIrving/dsh-repro"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:EvilIrving/dsh-repro" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:EvilIrving/dsh-repro" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -899,7 +1014,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:PerryLink/dsh-mcp-panel"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:PerryLink/dsh-mcp-panel" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:PerryLink/dsh-mcp-panel" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -914,7 +1032,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Jayden-X-L/forkprobe"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Jayden-X-L/forkprobe" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Jayden-X-L/forkprobe" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -929,7 +1050,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:vlln/plugin-registry"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:vlln/plugin-registry" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:vlln/plugin-registry" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -944,7 +1068,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:forrestchang/dsh-multica-runtime"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:forrestchang/dsh-multica-runtime" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:forrestchang/dsh-multica-runtime" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -959,7 +1086,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:DietCokewithSugar/dsh-user-experience" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -974,7 +1104,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:yflmq001/dsh-cost-tracker"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:yflmq001/dsh-cost-tracker" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:yflmq001/dsh-cost-tracker" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -989,7 +1122,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:slywalker2006/dsh-passwords"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:slywalker2006/dsh-passwords" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:slywalker2006/dsh-passwords" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1004,7 +1140,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add github:Yuuz12/dsh-webui-auth"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Yuuz12/dsh-webui-auth" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Yuuz12/dsh-webui-auth" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1019,7 +1158,10 @@ footer{padding-block:0 3rem}
         <summary aria-haspopup="menu">安装 ▾</summary>
         <div class="menu" role="menu">
           <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>通过 dsh-market · 推荐</b><small>复制市场安装命令</small></button>
-          <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dsh-lan-access"><b>通过命令行</b><small>复制本插件的安装命令</small></button>
+          <div class="mi-cli">
+            <b>通过命令行</b>
+            <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-lan-access" aria-label="复制安装命令" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-lan-access" aria-label="复制安装命令">复制安装命令</button></span>
+          </div>
         </div>
       </details>
     </li>
@@ -1116,7 +1258,7 @@ async function copyCmd(btn) {
   setTimeout(() => { live.textContent = ''; }, 1500);
 }
 document.addEventListener('click', async (e) => {
-  const mi = e.target.closest('.inst .menu button');
+  const mi = e.target.closest('.inst .menu > button');
   if (mi) {
     await copyCmd(mi);
     mi.classList.add('done');
@@ -1146,6 +1288,8 @@ document.addEventListener('toggle', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
 });
+// CLI input: focus selects the whole command
+document.addEventListener('focusin', (e) => { if (e.target.matches('.cli input')) e.target.select(); });
 // back to top
 const toTop = document.getElementById('toTop');
 addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
