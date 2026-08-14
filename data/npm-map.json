@@ -35,6 +35,14 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/AcidGr/dsh-web-lan-access": {
+  "npm": "dsh-web-lan-access",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/AcidGr/dsh-web-mobile-fix": {
+  "npm": "dsh-web-mobile-fix",
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/AKIRACOD/dsh-drag-and-drop": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -133,6 +141,10 @@
  },
  "https://github.com/bobleer/dsh-acp-for-bitfun": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/bowenliang123/dsh-context": {
+  "npm": "dsh-context",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/BrambleXu/dsh-annotate": {
@@ -272,6 +284,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/feibi-mochi/deepseek-harness-wallet": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Fishsb/dsh-prompt-enhancer": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -871,6 +887,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -977,6 +997,10 @@
  },
  "https://github.com/suntianc/dsh-codex-auth": {
   "npm": "dsh-codex-auth",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/superboy911/dsh-model-router": {
+  "npm": null,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/taxueseek/argo": {
@@ -1115,6 +1139,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/yeruizhi/dsh-lark-meeting-notifier": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/yflmq001/dsh-cost-tracker": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1128,6 +1156,10 @@
   "checkedAt": "2026-08-14"
  },
  "https://github.com/YTxue/dsh-skill-manager": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/YTxue/dsh-skill-manager-ytxue": {
   "npm": null,
   "checkedAt": "2026-08-14"
  },
@@ -1193,6 +1225,10 @@
  },
  "https://github.com/zp-home/dsh-recommend": {
   "npm": "dsh-recommend",
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/ZRui-C/dsh-computer-use": {
+  "npm": null,
   "checkedAt": "2026-08-14"
  },
  "https://github.com/ZSeven-W/dsh-openpencil": {

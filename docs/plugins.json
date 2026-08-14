@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 301,
+ "count": 309,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -52,6 +52,36 @@
  },
  "plugins": [
   {
+   "name": "dsh-web-mobile-fix",
+   "owner": "AcidGr",
+   "url": "https://github.com/AcidGr/dsh-web-mobile-fix",
+   "page": "https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-mobile-fix/",
+   "category": "ui",
+   "description": {
+    "en": "Mobile layout fixes for the Web UI on narrow screens: full-screen settings panel, one-row plugin nav, full-screen sidebar, centered popups, icon-only session-log button.",
+    "zh": "Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。"
+   },
+   "npm": "dsh-web-mobile-fix",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-web-mobile-fix",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-lan-access",
+   "owner": "AcidGr",
+   "url": "https://github.com/AcidGr/dsh-web-lan-access",
+   "page": "https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-lan-access/",
+   "category": "ui",
+   "description": {
+    "en": "LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.",
+    "zh": "Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。"
+   },
+   "npm": "dsh-web-lan-access",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-web-lan-access",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-plugin-hub",
    "owner": "Noob-stupid",
    "url": "https://github.com/Noob-stupid/dsh-plugin-hub",
@@ -82,6 +112,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-context",
+   "owner": "bowenliang123",
+   "url": "https://github.com/bowenliang123/dsh-context",
+   "page": "https://awesome-dsh-plugin.com/p/bowenliang123/dsh-context/",
+   "category": "ui",
+   "description": {
+    "en": "Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.",
+    "zh": "上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。"
+   },
+   "npm": "dsh-context",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-context",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-web-default-session",
    "owner": "wjy9902",
    "url": "https://github.com/wjy9902/dsh-web-default-session",
@@ -94,6 +139,21 @@
    "npm": null,
    "stars": 0,
    "install": "dsh plugin --profile web add github:wjy9902/dsh-web-default-session",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-prompt-enhancer",
+   "owner": "Fishsb",
+   "url": "https://github.com/Fishsb/dsh-prompt-enhancer",
+   "page": "https://awesome-dsh-plugin.com/p/Fishsb/dsh-prompt-enhancer/",
+   "category": "ui",
+   "description": {
+    "en": "One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.",
+    "zh": "一键提示词增强：独立 LLM 调用把模糊草稿改写为更强的提示词，不满意可撤回。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer",
    "added": "2026-08-14"
   },
   {
@@ -1102,6 +1162,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-client-ui-skin-claude",
+   "owner": "PAKIKNOWLEDGE",
+   "url": "https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude",
+   "page": "https://awesome-dsh-plugin.com/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/",
+   "category": "theme",
+   "description": {
+    "en": "Claude-style skin with a warm-black canvas, clay accent, and serif UI that follows the native light and dark themes.",
+    "zh": "Claude 风格皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-bookmarks",
    "owner": "penguin-oo",
    "url": "https://github.com/penguin-oo/dsh-bookmarks",
@@ -1850,6 +1925,21 @@
    "stars": 22,
    "install": "dsh plugin --profile web add github:omdsh-dev/dsh-custom-tool",
    "added": "2026-08-13"
+  },
+  {
+   "name": "dsh-computer-use",
+   "owner": "ZRui-C",
+   "url": "https://github.com/ZRui-C/dsh-computer-use",
+   "page": "https://awesome-dsh-plugin.com/p/ZRui-C/dsh-computer-use/",
+   "category": "tools",
+   "description": {
+    "en": "Text-first computer use for DSH: background Chromium control via Playwright/CDP plus accessibility-first macOS control; actions stay pinned to the right process and window without taking the user's pointer, ships a Developer ID signed, notarized Universal 2 DMG.",
+    "zh": "DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:ZRui-C/dsh-computer-use",
+   "added": "2026-08-14"
   },
   {
    "name": "dsh-computer-use",
@@ -2887,18 +2977,18 @@
    "added": "2026-08-14"
   },
   {
-   "name": "dsh-skill-manager",
+   "name": "dsh-skill-manager-ytxue",
    "owner": "YTxue",
-   "url": "https://github.com/YTxue/dsh-skill-manager",
-   "page": "https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager/",
+   "url": "https://github.com/YTxue/dsh-skill-manager-ytxue",
+   "page": "https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager-ytxue/",
    "category": "skill",
    "description": {
     "en": "Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.",
     "zh": "设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。"
    },
    "npm": null,
-   "stars": 1,
-   "install": "dsh plugin --profile web add github:YTxue/dsh-skill-manager",
+   "stars": null,
+   "install": "dsh plugin --profile web add github:YTxue/dsh-skill-manager-ytxue",
    "added": "2026-08-14"
   },
   {
@@ -3412,6 +3502,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-lark-meeting-notifier",
+   "owner": "yeruizhi",
+   "url": "https://github.com/yeruizhi/dsh-lark-meeting-notifier",
+   "page": "https://awesome-dsh-plugin.com/p/yeruizhi/dsh-lark-meeting-notifier/",
+   "category": "notify",
+   "description": {
+    "en": "Feishu meeting reminder: a dsh-plugin which has only side effect: reminding you, mid-flow with AI, that you \"have to go meet carbon-based lifeforms\".",
+    "zh": "飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:yeruizhi/dsh-lark-meeting-notifier",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-notify-bark",
    "owner": "pc439527",
    "url": "https://github.com/pc439527/dsh-notify-bark",
@@ -3619,6 +3724,21 @@
    "npm": null,
    "stars": 1,
    "install": "dsh plugin --profile web add github:feibi-mochi/deepseek-harness-wallet",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-model-router",
+   "owner": "superboy911",
+   "url": "https://github.com/superboy911/dsh-model-router",
+   "page": "https://awesome-dsh-plugin.com/p/superboy911/dsh-model-router/",
+   "category": "model",
+   "description": {
+    "en": "Deterministic keyword routing, allowlisted model switching, and an isolated image_gen channel for DeepSeek Harness.",
+    "zh": "DSH 关键词路由与隔离生图插件：确定性关键词路由、白名单模型切换与隔离的 image_gen 生图通道。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:superboy911/dsh-model-router",
    "added": "2026-08-14"
   },
   {

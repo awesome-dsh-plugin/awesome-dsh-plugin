@@ -6,6 +6,20 @@
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
   <updated>2026-08-14T00:00:00Z</updated>
   <entry>
+    <title>AcidGr/dsh-web-mobile-fix</title>
+    <id>https://github.com/AcidGr/dsh-web-mobile-fix</id>
+    <link href="https://github.com/AcidGr/dsh-web-mobile-fix"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Mobile layout fixes for the Web UI on narrow screens: full-screen settings panel, one-row plugin nav, full-screen sidebar, centered popups, icon-only session-log button.</summary>
+  </entry>
+  <entry>
+    <title>AcidGr/dsh-web-lan-access</title>
+    <id>https://github.com/AcidGr/dsh-web-lan-access</id>
+    <link href="https://github.com/AcidGr/dsh-web-lan-access"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.</summary>
+  </entry>
+  <entry>
     <title>Noob-stupid/dsh-plugin-hub</title>
     <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
     <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
@@ -20,11 +34,25 @@
     <summary>GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.</summary>
   </entry>
   <entry>
+    <title>bowenliang123/dsh-context</title>
+    <id>https://github.com/bowenliang123/dsh-context</id>
+    <link href="https://github.com/bowenliang123/dsh-context"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.</summary>
+  </entry>
+  <entry>
     <title>wjy9902/dsh-web-default-session</title>
     <id>https://github.com/wjy9902/dsh-web-default-session</id>
     <link href="https://github.com/wjy9902/dsh-web-default-session"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.</summary>
+  </entry>
+  <entry>
+    <title>Fishsb/dsh-prompt-enhancer</title>
+    <id>https://github.com/Fishsb/dsh-prompt-enhancer</id>
+    <link href="https://github.com/Fishsb/dsh-prompt-enhancer"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.</summary>
   </entry>
   <entry>
     <title>openma-ai/deepseek-harness-tui</title>
@@ -186,33 +214,5 @@
     <link href="https://github.com/Luaphes/dsh-web-attention-badge"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.</summary>
-  </entry>
-  <entry>
-    <title>zhu1090093659/dsh-web-ui</title>
-    <id>https://github.com/zhu1090093659/dsh-web-ui</id>
-    <link href="https://github.com/zhu1090093659/dsh-web-ui"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</summary>
-  </entry>
-  <entry>
-    <title>zealot00/dsh-pet</title>
-    <id>https://github.com/zealot00/dsh-pet</id>
-    <link href="https://github.com/zealot00/dsh-pet"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Desktop pet for the DSH Web UI: sprite-sheet animation, agent state linkage, drag, alarm (daily/one-shot) and pomodoro widgets, skin picker with preview.</summary>
-  </entry>
-  <entry>
-    <title>Starfie1d1272/dsh-builtin-toggles</title>
-    <id>https://github.com/Starfie1d1272/dsh-builtin-toggles</id>
-    <link href="https://github.com/Starfie1d1272/dsh-builtin-toggles"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Adds a built-in plugin catalog to DSH Web with search, status explanations, and safe toggles for audited UI plugins.</summary>
-  </entry>
-  <entry>
-    <title>jiangnanquan/dsh-ux</title>
-    <id>https://github.com/jiangnanquan/dsh-ux</id>
-    <link href="https://github.com/jiangnanquan/dsh-ux"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Solarized light theme, compact layout, think/tool-chain collapse capsules, and balance, session cost, and usage dashboards for the DSH web UI.</summary>
   </entry>
 </feed>
