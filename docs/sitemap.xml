@@ -193,6 +193,22 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/fun/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-mobile-fix/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-mobile-fix/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-mobile-fix/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-mobile-fix/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-lan-access/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-lan-access/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-lan-access/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-lan-access/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/Noob-stupid/dsh-plugin-hub/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,12 +225,28 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Make0209/dsh-usage-stats/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/bowenliang123/dsh-context/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/bowenliang123/dsh-context/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/bowenliang123/dsh-context/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/bowenliang123/dsh-context/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/wjy9902/dsh-web-default-session/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/wjy9902/dsh-web-default-session/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/wjy9902/dsh-web-default-session/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/wjy9902/dsh-web-default-session/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/p/Fishsb/dsh-prompt-enhancer/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Fishsb/dsh-prompt-enhancer/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Fishsb/dsh-prompt-enhancer/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Fishsb/dsh-prompt-enhancer/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/p/huiliyi37/dsh-tianshu-tui/</loc>
@@ -753,6 +785,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-theme-gallery/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/penguin-oo/dsh-bookmarks/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -927,6 +967,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/LeslieWylie/dsh-session-search-pro/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/LeslieWylie/dsh-session-search-pro/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/LeslieWylie/dsh-session-search-pro/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-session-delete/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-session-delete/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-plugin-session-delete/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-session-delete/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/p/LoserFox/distill/</loc>
@@ -1151,6 +1199,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-custom-tool/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-custom-tool/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-custom-tool/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/p/ZRui-C/dsh-computer-use/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/ZRui-C/dsh-computer-use/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/ZRui-C/dsh-computer-use/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/ZRui-C/dsh-computer-use/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/p/Anionex/dsh-computer-use/</loc>
@@ -1689,6 +1745,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-tcm/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-device-info/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-device-info/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-plugin-device-info/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-device-info/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/dhicoc/dsh-reverse-skill/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -1705,12 +1769,12 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/creght-dev/skills/"/>
   </url>
   <url>
-    <loc>https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager/</loc>
+    <loc>https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager-ytxue/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
-      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager/"/>
-      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/YTxue/dsh-skill-manager/"/>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager-ytxue/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/YTxue/dsh-skill-manager-ytxue/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager-ytxue/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/p/ztl34245881-commits/dsh-task-planner/</loc>
@@ -1985,6 +2049,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/imetn/dsh-lark-bridge/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/yeruizhi/dsh-lark-meeting-notifier/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/yeruizhi/dsh-lark-meeting-notifier/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/yeruizhi/dsh-lark-meeting-notifier/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/yeruizhi/dsh-lark-meeting-notifier/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/pc439527/dsh-notify-bark/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -2095,6 +2167,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/feibi-mochi/deepseek-harness-wallet/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/feibi-mochi/deepseek-harness-wallet/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/feibi-mochi/deepseek-harness-wallet/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/p/superboy911/dsh-model-router/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/superboy911/dsh-model-router/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/superboy911/dsh-model-router/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/superboy911/dsh-model-router/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/p/leechen298/Code2Skill/</loc>
@@ -2457,6 +2537,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Leon0555/dsh-lan-access/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/lsz-asd/dsh-chameleon--bundle/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-chameleon--bundle/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-chameleon--bundle/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-chameleon--bundle/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/Nagi-ovo/dsh-ads/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -2601,6 +2689,22 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/PC2005-cloud/dsh-pet--dsh-pet/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-mobile-fix/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-mobile-fix/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-mobile-fix/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-mobile-fix/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-lan-access/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-lan-access/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-lan-access/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/AcidGr/dsh-web-lan-access/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/Noob-stupid/dsh-plugin-hub/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -2617,12 +2721,28 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Make0209/dsh-usage-stats/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/bowenliang123/dsh-context/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/bowenliang123/dsh-context/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/bowenliang123/dsh-context/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/bowenliang123/dsh-context/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/wjy9902/dsh-web-default-session/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/wjy9902/dsh-web-default-session/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/wjy9902/dsh-web-default-session/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/wjy9902/dsh-web-default-session/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/Fishsb/dsh-prompt-enhancer/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Fishsb/dsh-prompt-enhancer/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Fishsb/dsh-prompt-enhancer/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Fishsb/dsh-prompt-enhancer/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/huiliyi37/dsh-tianshu-tui/</loc>
@@ -3161,6 +3281,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/wsxwj123/dsh-plugins--packages-theme-gallery/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/penguin-oo/dsh-bookmarks/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -3335,6 +3463,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/LeslieWylie/dsh-session-search-pro/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/LeslieWylie/dsh-session-search-pro/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/LeslieWylie/dsh-session-search-pro/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-plugin-session-delete/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-session-delete/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-plugin-session-delete/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-session-delete/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/LoserFox/distill/</loc>
@@ -3559,6 +3695,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-custom-tool/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-custom-tool/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-custom-tool/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/ZRui-C/dsh-computer-use/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/ZRui-C/dsh-computer-use/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/ZRui-C/dsh-computer-use/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/ZRui-C/dsh-computer-use/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/Anionex/dsh-computer-use/</loc>
@@ -4097,6 +4241,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-tcm/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-plugin-device-info/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-device-info/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-plugin-device-info/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-plugin-device-info/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/dhicoc/dsh-reverse-skill/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -4113,12 +4265,12 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/creght-dev/skills/"/>
   </url>
   <url>
-    <loc>https://awesome-dsh-plugin.com/zh/p/YTxue/dsh-skill-manager/</loc>
+    <loc>https://awesome-dsh-plugin.com/zh/p/YTxue/dsh-skill-manager-ytxue/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
-      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager/"/>
-      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/YTxue/dsh-skill-manager/"/>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager/"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager-ytxue/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/YTxue/dsh-skill-manager-ytxue/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/YTxue/dsh-skill-manager-ytxue/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/ztl34245881-commits/dsh-task-planner/</loc>
@@ -4393,6 +4545,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/imetn/dsh-lark-bridge/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/yeruizhi/dsh-lark-meeting-notifier/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/yeruizhi/dsh-lark-meeting-notifier/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/yeruizhi/dsh-lark-meeting-notifier/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/yeruizhi/dsh-lark-meeting-notifier/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/pc439527/dsh-notify-bark/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -4503,6 +4663,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/feibi-mochi/deepseek-harness-wallet/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/feibi-mochi/deepseek-harness-wallet/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/feibi-mochi/deepseek-harness-wallet/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/superboy911/dsh-model-router/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/superboy911/dsh-model-router/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/superboy911/dsh-model-router/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/superboy911/dsh-model-router/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/leechen298/Code2Skill/</loc>
@@ -4863,6 +5031,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Leon0555/dsh-lan-access/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Leon0555/dsh-lan-access/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Leon0555/dsh-lan-access/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-chameleon--bundle/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-chameleon--bundle/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/lsz-asd/dsh-chameleon--bundle/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/lsz-asd/dsh-chameleon--bundle/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/Nagi-ovo/dsh-ads/</loc>
