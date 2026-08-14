@@ -130,6 +130,7 @@ dsh plugin --profile web add dshmarket
 - [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) - Activity heatmap in the DSH Web sidebar: GitHub-style grid of daily commits, token usage, and estimated spend, with a today stats line for all-session token totals, cache hit rate, and per-model auto-priced cost.
 - [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) - Token, cost, and balance dashboard under the composer: live indicator plus zero-dependency SVG charts for per-turn usage, estimated cost, and DeepSeek account balance.
 - [RAFOLIE/dsh-desktop-windowos#plugin](https://github.com/RAFOLIE/dsh-desktop-windowos/tree/main/plugin) - Windows tray desktop shell for DSH: auto-installs the exe from GitHub Releases, creates a desktop shortcut, and adds a desktop_launch tool to start it from chat.
+- [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) - Steam Workshop-style in-app plugin browser: search, hot/newest/trending (7/30/90-day) sorting, Chinese keyword mapping, bilingual descriptions and README translation, plugin-signature filtering, and one-click install/update.
 ### Themes & Appearance
 
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) - Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.
