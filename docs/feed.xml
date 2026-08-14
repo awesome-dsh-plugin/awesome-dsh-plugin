@@ -59,7 +59,7 @@
     <id>https://github.com/modusensus/dsh-mneme</id>
     <link href="https://github.com/modusensus/dsh-mneme"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Cross-session memory with memory sovereignty: SQLite + human-editable Markdown mirror, autoDream background consolidation (dedup/merge/conflict resolution), 6 memory tools, 106 tests.</summary>
+    <summary>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</summary>
   </entry>
   <entry>
     <title>nowledge-mem-deepseek-harness</title>

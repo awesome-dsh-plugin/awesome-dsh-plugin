@@ -59,7 +59,7 @@
     <id>https://github.com/modusensus/dsh-mneme</id>
     <link href="https://github.com/modusensus/dsh-mneme"/>
     <updated>2026-08-14T00:00:00Z</updated>
-    <summary>跨会话记忆，记忆主权归还于人：SQLite + 可人工编辑的 Markdown 镜像，autoDream 后台巩固（去重/合并/冲突裁决），6 个记忆工具，106 个测试护航。</summary>
+    <summary>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</summary>
   </entry>
   <entry>
     <title>nowledge-mem-deepseek-harness</title>
