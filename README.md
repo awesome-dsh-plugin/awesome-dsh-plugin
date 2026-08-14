@@ -123,6 +123,8 @@ dsh plugin --profile web add dshmarket
 
 
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) - Bottom multi-tab terminal panel (node-pty + xterm.js) pinned to the viewport bottom, always below the input box.
+
+- [urzeye/dsh-outline](https://github.com/urzeye/dsh-outline) - Real-time outline panel for the DSH Web session page: user questions plus a Markdown heading tree (H1–H6) that updates live during streaming, with click-to-locate highlighting, expand-depth control, search, and per-session favorites.
 ### Themes & Appearance
 
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) - Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.
