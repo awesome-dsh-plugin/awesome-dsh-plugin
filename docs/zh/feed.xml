@@ -20,6 +20,13 @@
     <summary>输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。</summary>
   </entry>
   <entry>
+    <title>DHS API Usage</title>
+    <id>https://github.com/Sev7een/ds-api-usage</id>
+    <link href="https://github.com/Sev7een/ds-api-usage"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。</summary>
+  </entry>
+  <entry>
     <title>dsh-TUI</title>
     <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
     <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/BrambleXu/dsh-annotate"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。</summary>
-  </entry>
-  <entry>
-    <title>dsh-prompt-profile</title>
-    <id>https://github.com/BrambleXu/dsh-prompt-profile</id>
-    <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。</summary>
   </entry>
 </feed>

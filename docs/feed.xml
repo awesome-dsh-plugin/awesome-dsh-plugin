@@ -20,6 +20,13 @@
     <summary>DeepSeek account balance and session cost in the composer dock, with auto-fetched official pricing and peak/off-peak support.</summary>
   </entry>
   <entry>
+    <title>DHS API Usage</title>
+    <id>https://github.com/Sev7een/ds-api-usage</id>
+    <link href="https://github.com/Sev7een/ds-api-usage"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.</summary>
+  </entry>
+  <entry>
     <title>dsh-TUI</title>
     <id>https://github.com/ccch1mneyyy/dsh-TUI</id>
     <link href="https://github.com/ccch1mneyyy/dsh-TUI"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/BrambleXu/dsh-annotate"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Select browser elements directly during Vibe Coding and send structured visual feedback to the DeepSeek Harness Agent.</summary>
-  </entry>
-  <entry>
-    <title>dsh-prompt-profile</title>
-    <id>https://github.com/BrambleXu/dsh-prompt-profile</id>
-    <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.</summary>
   </entry>
 </feed>
