@@ -195,6 +195,13 @@
     <summary>Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.</summary>
   </entry>
   <entry>
+    <title>@zhaoolee/dsh-notes</title>
+    <id>https://github.com/zhaoolee/notes</id>
+    <link href="https://github.com/zhaoolee/notes"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</summary>
+  </entry>
+  <entry>
     <title>dsh-routines</title>
     <id>https://github.com/Jesse-njx/dsh-routines</id>
     <link href="https://github.com/Jesse-njx/dsh-routines"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/lonelymoon87/dsh-specflow"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.</summary>
-  </entry>
-  <entry>
-    <title>dsh-science</title>
-    <id>https://github.com/biociao/dsh-science</id>
-    <link href="https://github.com/biociao/dsh-science"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.</summary>
   </entry>
 </feed>
