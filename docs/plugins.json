@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 224,
+ "count": 225,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -2753,6 +2753,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:Yuuz12/dsh-webui-auth",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-lan-access",
+   "owner": "Leon0555",
+   "url": "https://github.com/Leon0555/dsh-lan-access",
+   "category": "dev",
+   "description": {
+    "en": "LAN access for the Web GUI: 0.0.0.0 bind plus a crypto.randomUUID polyfill for non-secure (LAN HTTP) contexts.",
+    "zh": "局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。"
+   },
+   "npm": "dsh-lan-access",
+   "install": "dsh plugin --profile web add dsh-lan-access",
    "added": "2026-08-14"
   },
   {
