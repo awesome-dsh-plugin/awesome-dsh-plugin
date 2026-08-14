@@ -307,6 +307,7 @@ dsh plugin --profile web add dshmarket
 - [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) - Adds an Auto Approve permission preset to the Web UI, using a fresh restricted Reviewer Agent to allow or deny each approval request.
 - [Letter2025/dsh-model-failover](https://github.com/Letter2025/dsh-model-failover) - Two-level model circuit breaker with failover: trip a model or a whole provider after repeated request failures and route the next request to a configured fallback.
 - [whyihaveyou/dsh-suite#plugin-team-board](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board) - Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.
+- [Karbo123/DSH-EvoResearch#evoresearch-plugin](https://github.com/Karbo123/DSH-EvoResearch/tree/main/packages/evoresearch-plugin) - Research agent suite: long-horizon goal control with auditable evidence chains, cron scheduling, multi-agent expert teams, self-evolving research memory (FTS5 + RRF recall), project workspaces, and a custom workspace UI.
 
 
 ### Notifications & Integrations
