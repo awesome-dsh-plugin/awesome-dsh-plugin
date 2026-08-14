@@ -76,6 +76,13 @@
     <summary>Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。</summary>
   </entry>
   <entry>
+    <title>WhitePlusMS/dsh-input-plus</title>
+    <id>https://github.com/WhitePlusMS/dsh-input-plus</id>
+    <link href="https://github.com/WhitePlusMS/dsh-input-plus"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。</summary>
+  </entry>
+  <entry>
     <title>LeemanCheung/dsh-whale-animation</title>
     <id>https://github.com/LeemanCheung/dsh-whale-animation</id>
     <link href="https://github.com/LeemanCheung/dsh-whale-animation"/>
@@ -95,6 +102,13 @@
     <link href="https://github.com/asukasec/dsh-message-preview"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。</summary>
+  </entry>
+  <entry>
+    <title>jjxjjjjiik-bot/dsh-chat-timeline</title>
+    <id>https://github.com/jjxjjjjiik-bot/dsh-chat-timeline</id>
+    <link href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>1:1 复刻 DeepSeek 官网右侧对话导航栏（ScrollNav）：悬停展开面板、阅读位置高亮、点击跳转。</summary>
   </entry>
   <entry>
     <title>Nanki-nn/dsh-answer-pet</title>
@@ -200,19 +214,5 @@
     <link href="https://github.com/tsonglew/dsh-workspace-search"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。</summary>
-  </entry>
-  <entry>
-    <title>tsonglew/dsh-media-preview</title>
-    <id>https://github.com/tsonglew/dsh-media-preview</id>
-    <link href="https://github.com/tsonglew/dsh-media-preview"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。</summary>
-  </entry>
-  <entry>
-    <title>Han-1413141/dsh-sticky-disclosure</title>
-    <id>https://github.com/Han-1413141/dsh-sticky-disclosure</id>
-    <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。</summary>
   </entry>
 </feed>

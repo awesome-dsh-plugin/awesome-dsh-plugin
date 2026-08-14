@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 351,
+ "count": 353,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -217,6 +217,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-input-plus",
+   "owner": "WhitePlusMS",
+   "url": "https://github.com/WhitePlusMS/dsh-input-plus",
+   "page": "https://awesome-dsh-plugin.com/p/WhitePlusMS/dsh-input-plus/",
+   "category": "ui",
+   "description": {
+    "en": "Search and insert workspace file and directory paths with `@`, plus a `/h` menu for reusing prompts from the current session.",
+    "zh": "在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:WhitePlusMS/dsh-input-plus",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-at-file",
    "owner": "omdsh-dev",
    "url": "https://github.com/omdsh-dev/dsh-at-file",
@@ -394,6 +409,21 @@
    "npm": null,
    "stars": 1,
    "install": "dsh plugin --profile web add github:asukasec/dsh-message-preview",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-chat-timeline",
+   "owner": "jjxjjjjiik-bot",
+   "url": "https://github.com/jjxjjjjiik-bot/dsh-chat-timeline",
+   "page": "https://awesome-dsh-plugin.com/p/jjxjjjjiik-bot/dsh-chat-timeline/",
+   "category": "ui",
+   "description": {
+    "en": "1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav): hover-expandable rail, reading-position highlight, click-to-jump.",
+    "zh": "1:1 复刻 DeepSeek 官网右侧对话导航栏（ScrollNav）：悬停展开面板、阅读位置高亮、点击跳转。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:jjxjjjjiik-bot/dsh-chat-timeline",
    "added": "2026-08-14"
   },
   {

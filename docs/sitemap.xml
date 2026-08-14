@@ -281,6 +281,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/openma-ai/deepseek-harness-tui/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/WhitePlusMS/dsh-input-plus/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/WhitePlusMS/dsh-input-plus/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/WhitePlusMS/dsh-input-plus/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/WhitePlusMS/dsh-input-plus/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/omdsh-dev/dsh-at-file/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -375,6 +383,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/asukasec/dsh-message-preview/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/asukasec/dsh-message-preview/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/asukasec/dsh-message-preview/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/p/jjxjjjjiik-bot/dsh-chat-timeline/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/jjxjjjjiik-bot/dsh-chat-timeline/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/jjxjjjjiik-bot/dsh-chat-timeline/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/jjxjjjjiik-bot/dsh-chat-timeline/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/p/vlln/dsh-task-status/</loc>
@@ -3089,6 +3105,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/openma-ai/deepseek-harness-tui/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/WhitePlusMS/dsh-input-plus/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/WhitePlusMS/dsh-input-plus/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/WhitePlusMS/dsh-input-plus/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/WhitePlusMS/dsh-input-plus/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/omdsh-dev/dsh-at-file/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -3183,6 +3207,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/asukasec/dsh-message-preview/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/asukasec/dsh-message-preview/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/asukasec/dsh-message-preview/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/jjxjjjjiik-bot/dsh-chat-timeline/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/jjxjjjjiik-bot/dsh-chat-timeline/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/jjxjjjjiik-bot/dsh-chat-timeline/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/jjxjjjjiik-bot/dsh-chat-timeline/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/vlln/dsh-task-status/</loc>

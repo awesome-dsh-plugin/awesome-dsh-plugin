@@ -76,6 +76,13 @@
     <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
   </entry>
   <entry>
+    <title>WhitePlusMS/dsh-input-plus</title>
+    <id>https://github.com/WhitePlusMS/dsh-input-plus</id>
+    <link href="https://github.com/WhitePlusMS/dsh-input-plus"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Search and insert workspace file and directory paths with `@`, plus a `/h` menu for reusing prompts from the current session.</summary>
+  </entry>
+  <entry>
     <title>LeemanCheung/dsh-whale-animation</title>
     <id>https://github.com/LeemanCheung/dsh-whale-animation</id>
     <link href="https://github.com/LeemanCheung/dsh-whale-animation"/>
@@ -95,6 +102,13 @@
     <link href="https://github.com/asukasec/dsh-message-preview"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.</summary>
+  </entry>
+  <entry>
+    <title>jjxjjjjiik-bot/dsh-chat-timeline</title>
+    <id>https://github.com/jjxjjjjiik-bot/dsh-chat-timeline</id>
+    <link href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav): hover-expandable rail, reading-position highlight, click-to-jump.</summary>
   </entry>
   <entry>
     <title>Nanki-nn/dsh-answer-pet</title>
@@ -200,19 +214,5 @@
     <link href="https://github.com/tsonglew/dsh-workspace-search"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.</summary>
-  </entry>
-  <entry>
-    <title>tsonglew/dsh-media-preview</title>
-    <id>https://github.com/tsonglew/dsh-media-preview</id>
-    <link href="https://github.com/tsonglew/dsh-media-preview"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Audio/video FileViewer for dsh-better-sidebar: native inline playback for mp4/webm/mkv/mov and mp3/flac/wav, served by a Range-capable streaming media route.</summary>
-  </entry>
-  <entry>
-    <title>Han-1413141/dsh-sticky-disclosure</title>
-    <id>https://github.com/Han-1413141/dsh-sticky-disclosure</id>
-    <link href="https://github.com/Han-1413141/dsh-sticky-disclosure"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>One-click collapse of every expanded section (Think rows, tool cards) with a live-count pill and a customizable hotkey.</summary>
   </entry>
 </feed>
