@@ -62,6 +62,13 @@
     <summary>跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。</summary>
   </entry>
   <entry>
+    <title>dsh-bash-terminal</title>
+    <id>https://github.com/MAXeaglet/dsh-bash-terminal</id>
+    <link href="https://github.com/MAXeaglet/dsh-bash-terminal"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。</summary>
+  </entry>
+  <entry>
     <title>dsh-cowork</title>
     <id>https://github.com/Jesse-njx/dsh-cowork</id>
     <link href="https://github.com/Jesse-njx/dsh-cowork"/>
@@ -153,6 +160,27 @@
     <summary>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</summary>
   </entry>
   <entry>
+    <title>BrambleXu/dsh-annotate</title>
+    <id>https://github.com/BrambleXu/dsh-annotate</id>
+    <link href="https://github.com/BrambleXu/dsh-annotate"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。</summary>
+  </entry>
+  <entry>
+    <title>BrambleXu/dsh-prompt-profile</title>
+    <id>https://github.com/BrambleXu/dsh-prompt-profile</id>
+    <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。</summary>
+  </entry>
+  <entry>
+    <title>BrambleXu/dsh-revdiff</title>
+    <id>https://github.com/BrambleXu/dsh-revdiff</id>
+    <link href="https://github.com/BrambleXu/dsh-revdiff"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。</summary>
+  </entry>
+  <entry>
     <title>dsh-tianshu-tui</title>
     <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
     <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
@@ -186,33 +214,5 @@
     <link href="https://github.com/Nagi-ovo/dsh-visualize"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</summary>
-  </entry>
-  <entry>
-    <title>dsh-side-panel</title>
-    <id>https://github.com/ccq1/dsh-side-panel</id>
-    <link href="https://github.com/ccq1/dsh-side-panel"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>侧边栏集成文件浏览器、终端和 Git 审查，方便预览文件。</summary>
-  </entry>
-  <entry>
-    <title>dsh-focus-chat</title>
-    <id>https://github.com/dingyi222666/dsh-focus-chat</id>
-    <link href="https://github.com/dingyi222666/dsh-focus-chat"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>「聚焦会话」精简视图，只关注最终产出结果。</summary>
-  </entry>
-  <entry>
-    <title>dsh-genui</title>
-    <id>https://github.com/omdsh-dev/dsh-genui</id>
-    <link href="https://github.com/omdsh-dev/dsh-genui"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。</summary>
-  </entry>
-  <entry>
-    <title>dsh-annotation</title>
-    <id>https://github.com/omdsh-dev/dsh-annotation</id>
-    <link href="https://github.com/omdsh-dev/dsh-annotation"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>选中文字→批注→随消息发送，回复按批注逐条对照。</summary>
   </entry>
 </feed>

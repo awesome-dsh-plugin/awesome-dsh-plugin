@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 117,
+ "count": 121,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -501,6 +501,18 @@
     "zh": "跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。"
    },
    "install": "dsh plugin --profile web add github:Chinesezjc/dsh-interconnect",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-bash-terminal",
+   "owner": "MAXeaglet",
+   "url": "https://github.com/MAXeaglet/dsh-bash-terminal",
+   "category": "tools",
+   "description": {
+    "en": "One shell tool for PowerShell / Git Bash / WSL on Windows plus an interactive PTY terminal; the default terminal is chosen by the user in DSH settings.",
+    "zh": "一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。"
+   },
+   "install": "dsh plugin --profile web add github:MAXeaglet/dsh-bash-terminal",
    "added": "2026-08-14"
   },
   {
@@ -1305,6 +1317,42 @@
     "zh": "社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。"
    },
    "install": "dsh plugin --profile web add github:hust-open-atom-club/oh-dsh",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "BrambleXu/dsh-annotate",
+   "owner": "BrambleXu",
+   "url": "https://github.com/BrambleXu/dsh-annotate",
+   "category": "dev",
+   "description": {
+    "en": "Select browser elements directly during Vibe Coding and send structured visual feedback to the DeepSeek Harness Agent.",
+    "zh": "面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。"
+   },
+   "install": "dsh plugin --profile web add github:BrambleXu/dsh-annotate",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "BrambleXu/dsh-prompt-profile",
+   "owner": "BrambleXu",
+   "url": "https://github.com/BrambleXu/dsh-prompt-profile",
+   "category": "dev",
+   "description": {
+    "en": "Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.",
+    "zh": "DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。"
+   },
+   "install": "dsh plugin --profile web add github:BrambleXu/dsh-prompt-profile",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "BrambleXu/dsh-revdiff",
+   "owner": "BrambleXu",
+   "url": "https://github.com/BrambleXu/dsh-revdiff",
+   "category": "dev",
+   "description": {
+    "en": "Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.",
+    "zh": "DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。"
+   },
+   "install": "dsh plugin --profile web add github:BrambleXu/dsh-revdiff",
    "added": "2026-08-14"
   },
   {

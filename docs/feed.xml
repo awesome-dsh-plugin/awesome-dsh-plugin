@@ -62,6 +62,13 @@
     <summary>Cross-instance message and event handoff between DSH instances via an interconnect server.</summary>
   </entry>
   <entry>
+    <title>dsh-bash-terminal</title>
+    <id>https://github.com/MAXeaglet/dsh-bash-terminal</id>
+    <link href="https://github.com/MAXeaglet/dsh-bash-terminal"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>One shell tool for PowerShell / Git Bash / WSL on Windows plus an interactive PTY terminal; the default terminal is chosen by the user in DSH settings.</summary>
+  </entry>
+  <entry>
     <title>dsh-cowork</title>
     <id>https://github.com/Jesse-njx/dsh-cowork</id>
     <link href="https://github.com/Jesse-njx/dsh-cowork"/>
@@ -153,6 +160,27 @@
     <summary>Community distribution: TUI, desktop, and Web UI as one bundle with layered installation.</summary>
   </entry>
   <entry>
+    <title>BrambleXu/dsh-annotate</title>
+    <id>https://github.com/BrambleXu/dsh-annotate</id>
+    <link href="https://github.com/BrambleXu/dsh-annotate"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Select browser elements directly during Vibe Coding and send structured visual feedback to the DeepSeek Harness Agent.</summary>
+  </entry>
+  <entry>
+    <title>BrambleXu/dsh-prompt-profile</title>
+    <id>https://github.com/BrambleXu/dsh-prompt-profile</id>
+    <link href="https://github.com/BrambleXu/dsh-prompt-profile"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.</summary>
+  </entry>
+  <entry>
+    <title>BrambleXu/dsh-revdiff</title>
+    <id>https://github.com/BrambleXu/dsh-revdiff</id>
+    <link href="https://github.com/BrambleXu/dsh-revdiff"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.</summary>
+  </entry>
+  <entry>
     <title>dsh-tianshu-tui</title>
     <id>https://github.com/huiliyi37/dsh-tianshu-tui</id>
     <link href="https://github.com/huiliyi37/dsh-tianshu-tui"/>
@@ -186,33 +214,5 @@
     <link href="https://github.com/Nagi-ovo/dsh-visualize"/>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</summary>
-  </entry>
-  <entry>
-    <title>dsh-side-panel</title>
-    <id>https://github.com/ccq1/dsh-side-panel</id>
-    <link href="https://github.com/ccq1/dsh-side-panel"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Side panel with file browser, terminal, and Git review for quick file previews.</summary>
-  </entry>
-  <entry>
-    <title>dsh-focus-chat</title>
-    <id>https://github.com/dingyi222666/dsh-focus-chat</id>
-    <link href="https://github.com/dingyi222666/dsh-focus-chat"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>A &quot;focus chat&quot; minimal view that shows only final outputs.</summary>
-  </entry>
-  <entry>
-    <title>dsh-genui</title>
-    <id>https://github.com/omdsh-dev/dsh-genui</id>
-    <link href="https://github.com/omdsh-dev/dsh-genui"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</summary>
-  </entry>
-  <entry>
-    <title>dsh-annotation</title>
-    <id>https://github.com/omdsh-dev/dsh-annotation</id>
-    <link href="https://github.com/omdsh-dev/dsh-annotation"/>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Select text → annotate → send with your message; replies map back to each annotation.</summary>
   </entry>
 </feed>
