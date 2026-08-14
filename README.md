@@ -98,6 +98,7 @@ dsh plugin --profile web add dshmarket
 - [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) - Persistent left-hand conversation outline: questions and final replies per turn, keyword filter, one-click jump.
 - [LaoYueHanNi/dsh-token-usage](https://github.com/LaoYueHanNi/dsh-token-usage) - Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.
 - [QT-Chen/dsh-mic-input](https://github.com/QT-Chen/dsh-mic-input) - Microphone voice input for the composer: browser Web Speech API live transcription, dedupe/auto-continue, smart punctuation, language and auto-send settings.
+- [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) - Displays a Session's subagents and durable workflow runs as a live DAG with status, navigation, and restart-safe history.
 
 
 ### Themes & Appearance
