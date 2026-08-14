@@ -147,6 +147,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/dylan121322/llm-adaptive": {
+  "npm": null,
+  "checkedAt": "2026-08-14"
+ },
  "https://github.com/EvilIrving/dsh-context-proxy": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -617,6 +621,10 @@
  },
  "https://github.com/renat3u/dsh-web-archive": {
   "npm": null,
+  "checkedAt": "2026-08-14"
+ },
+ "https://github.com/sakikoTGW/pack-agent": {
+  "npm": "@sakikotgw/pack-agent",
   "checkedAt": "2026-08-14"
  },
  "https://github.com/Sanqi-normal/dsh-webui-market-plugin": {

@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 199,
+ "count": 201,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1166,6 +1166,19 @@
    "added": "2026-08-14"
   },
   {
+   "name": "pack-agent-dsh",
+   "owner": "sakikoTGW",
+   "url": "https://github.com/sakikoTGW/pack-agent",
+   "category": "tools",
+   "description": {
+    "en": "Project .pack.json/.pack.zip into .agent-pack/modpacks/ and expose skills via a workspace allow-list.",
+    "zh": "把 .pack.json/.pack.zip 投影到 .agent-pack/modpacks/，按工作区白名单暴露 skill。"
+   },
+   "npm": "@sakikotgw/pack-agent",
+   "install": "dsh plugin --profile web add @sakikotgw/pack-agent",
+   "added": "2026-08-14"
+  },
+  {
    "name": "dsh-tool-search",
    "owner": "vibeinging",
    "url": "https://github.com/vibeinging/dsh-tool-search",
@@ -1930,6 +1943,19 @@
    },
    "npm": null,
    "install": "dsh plugin --profile web add github:imetn/dsh-lark-bridge",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "llm-adaptive",
+   "owner": "dylan121322",
+   "url": "https://github.com/dylan121322/llm-adaptive",
+   "category": "model",
+   "description": {
+    "en": "Adaptive model routing: per-request complexity classification with automatic provider routing.",
+    "zh": "自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。"
+   },
+   "npm": null,
+   "install": "dsh plugin --profile web add github:dylan121322/llm-adaptive",
    "added": "2026-08-14"
   },
   {
