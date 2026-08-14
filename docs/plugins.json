@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-14",
- "count": 189,
+ "count": 190,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -777,6 +777,18 @@
     "zh": "压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。"
    },
    "install": "dsh plugin --profile web add github:ICCuse/dsh-premise-guard",
+   "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-undo-plugin",
+   "owner": "lire1131",
+   "url": "https://github.com/lire1131/dsh-undo-plugin",
+   "category": "tools",
+   "description": {
+    "en": "Undo/redo & rollback system for DSH: every config change is auto-snapshotted; undo/redo/restore to any version from the WebUI or the offline CLI/GUI tools (works even when DSH fails to boot).",
+    "zh": "DSH 撤销/回退系统:配置变更自动存档,一键撤销/恢复/回退到任意版本,支持 WebUI 与离线 CLI/GUI 工具(DSH 启动失败也能救)。"
+   },
+   "install": "dsh plugin --profile web add github:lire1131/dsh-undo-plugin",
    "added": "2026-08-14"
   },
   {
