@@ -125,6 +125,7 @@ dsh plugin --profile web add dshmarket
 
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) - Bottom multi-tab terminal panel (node-pty + xterm.js) pinned to the viewport bottom, always below the input box.
 - [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) - Activity heatmap in the DSH Web sidebar: GitHub-style grid of daily commits, token usage, and estimated spend, with a today stats line for all-session token totals, cache hit rate, and per-model auto-priced cost.
+- [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) - Token, cost, and balance dashboard under the composer: live indicator plus zero-dependency SVG charts for per-turn usage, estimated cost, and DeepSeek account balance.
 ### Themes & Appearance
 
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) - Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.
