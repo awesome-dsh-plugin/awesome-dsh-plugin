@@ -197,23 +197,52 @@ footer p+p{margin-top:.5rem}
 <h3>Features</h3>
 <ul>
 <li><strong>Live hook</strong>: every successful model request is appended to per-day JSONL files (request id, model, input / output / cache-read / cache-write tokens, time, session id).</li>
-<li><strong>Web stats page</strong>: filters (date range + model + <code>1d</code>/<code>7d</code>/<code>30d</code> shortcuts), summary cards, daily trend chart, per-model table.</li>
-<li><strong>Cost figures &amp; model pricing</strong>: per-request cost is computed live from per-model rates (¥ per million tokens) — a highlighted total-cost card, a cost column plus the per-model rates under each model name in the per-model table, and a warning strip for unpriced models (their cost counts as ¥0). The rate table is maintained by you in <code>pricing.json</code> inside the data directory; <code>/token-usage-pricing</code> prints the active table anytime.</li>
+<li><strong>Web stats page</strong>: filters (date range + model + <code>1d</code>/<code>7d</code>/<code>30d</code> shortcuts), summary cards, daily trend chart (hover a day for its total), per-model table.</li>
+<li><strong>Cost figures &amp; model pricing</strong>: per-request cost is computed live from per-model rates (¥ per million tokens) — a highlighted total-cost card, a cost column in the per-model table, and a warning strip for unpriced models (their cost counts as ¥0). Every priced model&#39;s name carries a small <strong>rates button</strong> that opens a dialog with that model&#39;s full price table: <strong>each row is one billing condition</strong> (default rates, context tiers like <code>≥ 512K</code>, peak windows like <code>09:00-12:00</code>, grouped under time rules&#39; date windows), with the in/out/cache/write rates as aligned columns — mirroring exactly what the per-record resolver bills. Rates merge from two files: <code>/token-usage-pricing-sync</code> mirrors the cloud model-price-table feed (the same source cc-switch-analyzer pulls), <code>pricing.json</code> holds manual overrides, and <code>/token-usage-pricing</code> prints the merged table.</li>
 <li><strong>History backfill</strong>: the first startup syncs requests that happened before installation; the <code>/token-usage-sync</code> command re-runs the same idempotent backfill anytime.</li>
 </ul>
 <h3>Model pricing</h3>
-<p>Cost = each token bucket × its rate ÷ 1,000,000. Rates live in <code>pricing.json</code> in the data directory (no pricing configured means every model is unpriced):</p>
+<p><strong>Every record is priced individually</strong>: each one resolves through the analyzer&#39;s rule chain at its own timestamp — the covering time rule first (its context tiers, its peak slots), else the model root&#39;s tiers → peak slots → base rates. Tier matching approximates the context size by the request&#39;s input-side tokens (input + cacheRead + cacheWrite). A price update re-prices the whole history instantly, with no data rebuild. Rates come from two files merged on read — <code>pricing.json</code> entries always win (a manual entry replaces that model&#39;s cloud rules wholesale):</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pricing.ccsa.json</code></td>
+<td>startup auto-fetch + the <code>/token-usage-pricing-sync</code> command</td>
+<td>Verbatim mirror of the cloud model-price-table feed (the analyzer&#39;s source); refreshed on every dsh restart, falling back to the previous mirror on failure</td>
+</tr>
+<tr>
+<td><code>pricing.json</code></td>
+<td>hand-edited</td>
+<td>Overrides synced rates or adds missing models; manual tweaks survive re-syncs</td>
+</tr>
+</tbody></table>
+<pre><code class="language-sh"># Inspect / manually refresh the merged, active table (startup also auto-fetches the cloud mirror once)
+/token-usage-pricing-sync
+/token-usage-pricing
+</code></pre>
+<p>Cloud feed shape (<code>currency</code> must be <code>RMB</code>; both <code>modelId</code> and every alias become matchable keys; <code>timeRules</code> / <code>contextTiers</code> / <code>dailySlots</code> all take part in billing):</p>
 <pre><code class="language-json">{
-  &quot;deepseek-chat&quot;: { &quot;inputPerMillion&quot;: 2, &quot;outputPerMillion&quot;: 8, &quot;cacheReadPerMillion&quot;: 0.5 },
-  &quot;deepseek-reasoner&quot;: { &quot;inputPerMillion&quot;: 4, &quot;outputPerMillion&quot;: 16, &quot;cacheReadPerMillion&quot;: 1 }
+  &quot;version&quot;: 4,
+  &quot;updatedAt&quot;: 0,
+  &quot;currency&quot;: &quot;RMB&quot;,
+  &quot;models&quot;: [
+    { &quot;modelId&quot;: &quot;deepseek-chat&quot;, &quot;inputCostPerMillion&quot;: 2, &quot;outputCostPerMillion&quot;: 8,
+      &quot;cacheReadCostPerMillion&quot;: 0.5, &quot;cacheCreationCostPerMillion&quot;: 1, &quot;aliases&quot;: [&quot;deepseek-v3&quot;] }
+  ]
 }
 </code></pre>
-<ul>
-<li>Keys are model ids (must match the recorded <code>model</code> exactly); values are ¥ per million tokens.</li>
-<li><code>inputPerMillion</code> and <code>outputPerMillion</code> are required; <code>cacheReadPerMillion</code> (cache hit) and <code>cacheWritePerMillion</code> (cache write) are optional and fall back to the input rate when absent.</li>
-<li>A broken file or invalid entries leave the affected models unpriced without breaking the stats page; save and refresh (or re-run the command) to apply changes.</li>
-<li>Default location: <code>~/.dsh/token-usage/pricing.json</code> (wherever <code>path</code> points when configured).</li>
-</ul>
+<p>Flat <code>pricing.json</code> shape (keys are model ids matching the recorded <code>model</code> exactly; <code>inputPerMillion</code> and <code>outputPerMillion</code> required, <code>cacheReadPerMillion</code> / <code>cacheWritePerMillion</code> optional and falling back to the input rate):</p>
+<pre><code class="language-json">{
+  &quot;deepseek-chat&quot;: { &quot;inputPerMillion&quot;: 2, &quot;outputPerMillion&quot;: 8, &quot;cacheReadPerMillion&quot;: 0.5 }
+}
+</code></pre>
+<p>A broken file or invalid entries leave the affected models unpriced without breaking the stats page; save and refresh (or re-run the command) to apply changes. Default location: <code>~/.dsh/token-usage/</code> (wherever <code>path</code> points when configured).</p>
 <h3>Install</h3>
 <h4>From GitHub (recommended)</h4>
 <pre><code class="language-sh">dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage
@@ -263,9 +292,9 @@ git add lib/
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
       <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>

@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Bernardxu123/</span><wbr><span class="name">dsh-mobile-gate</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 0</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -185,7 +186,226 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>Let phones and tablets on your LAN <strong>safely access</strong> your local <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH) Web UI, with <strong>mobile-friendly layout</strong> injected automatically.</p>
+<p>中文文档: <a href="https://github.com/Bernardxu123/dsh-mobile-gate/blob/master/README.md">README.md</a> · LLM index: <a href="https://github.com/Bernardxu123/dsh-mobile-gate/blob/master/llms.txt">llms.txt</a> · Agent guide: <a href="https://github.com/Bernardxu123/dsh-mobile-gate/blob/master/AGENTS.md">AGENTS.md</a></p>
+</blockquote>
+<p><img src="https://img.shields.io/badge/dsh--plugin-ready-4c8dff" alt="dsh-plugin"> <img src="https://img.shields.io/badge/DeepSeek%20Harness-%E2%9C%93-0f1115" alt="DeepSeek Harness"> <img src="https://img.shields.io/badge/license-MIT-green" alt="license"> <img src="https://img.shields.io/badge/dsh%20plugin%20add-%E2%9C%93-22c55e" alt="install"></p>
+<p><strong>Keywords</strong>: <code>dsh-plugin</code> · <code>deepseek-harness-plugin</code> · LAN · 局域网 · mobile · phone · reverse-proxy · remote-access · approval · gateway</p>
+<hr>
+<h3>📑 Table of Contents</h3>
+<ul>
+<li><a href="#-features">✨ Features</a></li>
+<li><a href="#%EF%B8%8F-how-it-works">🏗️ How it works</a></li>
+<li><a href="#-quick-start">🚀 Quick start</a></li>
+<li><a href="#%EF%B8%8F-configuration">⚙️ Configuration</a></li>
+<li><a href="#-admin-api-local-only">🧑💻 Admin API</a></li>
+<li><a href="#-mobile-layout-tweaks-built-in">🧱 Mobile layout tweaks</a></li>
+<li><a href="#-faq">❓ FAQ</a></li>
+<li><a href="#%EF%B8%8F-security-notes">⚠️ Security notes</a></li>
+<li><a href="#-project-structure">📦 Project structure</a></li>
+<li><a href="#-credits">🙏 Credits</a></li>
+</ul>
+<hr>
+<h3>✨ Features</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>📱 <strong>Mobile adaptation</strong></td>
+<td>Injects <code>data-lan-device</code> marker + compact layout CSS + <code>crypto.randomUUID</code> polyfill (required for non-secure HTTP contexts) into proxied HTML. Permission &amp; model selectors in the composer footer become compact pill buttons — no more overlap</td>
+</tr>
+<tr>
+<td>🔒 <strong>First-visit approval</strong></td>
+<td>A phone&#39;s first visit shows &quot;Waiting for approval&quot;; you must allow it from the PC. Unauthorized devices can never reach DSH</td>
+</tr>
+<tr>
+<td>🎟️ <strong>Per-device token + cookie binding</strong></td>
+<td>One-time token issued after approval, bound to exactly one browser</td>
+</tr>
+<tr>
+<td>🛡️ <strong>Per-IP rate limiting</strong></td>
+<td>Default 120 req/min per IP, 429 beyond that</td>
+</tr>
+<tr>
+<td>🏠 <strong>Loopback bypass</strong></td>
+<td>Loopback and the machine&#39;s own LAN IPs pass through directly — desktop experience unchanged</td>
+</tr>
+<tr>
+<td>🚀 <strong>Zero intrusion into the host</strong></td>
+<td>Isolated child-process gateway. DSH&#39;s own webserver stays on 127.0.0.1 and the <code>/api</code> trust fence is untouched; a gateway crash cannot take DSH down</td>
+</tr>
+<tr>
+<td>🧹 <strong>Plug &amp; play / removable</strong></td>
+<td>Install via <code>dsh plugin add</code>, mount via <code>cordis.patch.yml</code>, or run as a dynamic plugin; unmounting/stopping terminates the gateway</td>
+</tr>
+</tbody></table>
+<h3>🏗️ How it works</h3>
+<pre><code>Phone http://192.168.31.108:3088
+  └─ Gateway (standalone Node process, 0.0.0.0:3088)
+       ├─ Not approved  → &quot;Waiting for approval&quot; page (shows device IP, auto-polls)
+       ├─ Approved + cookie token → reverse-proxy to DSH Web UI (127.0.0.1:3080)
+       │      └─ HTML injection: data-lan-device=&quot;phone&quot; + compact CSS + randomUUID polyfill
+       └─ Rate-limited  → 429 page
+
+PC http://127.0.0.1:3088/lan-gate/admin → admin page (approve / deny / revoke / set kind)
+</code></pre>
+<ul>
+<li>The gateway is a <strong>separate child process</strong>, isolated from the DSH main process.</li>
+<li>DSH&#39;s webserver still binds only <code>127.0.0.1</code> (the official CLI intentionally rejects <code>--host 0.0.0.0</code> because <code>/api</code> has no auth layer). <strong>Only approved, token-holding devices reach DSH.</strong></li>
+</ul>
+<h3>🚀 Quick start</h3>
+<h4>Option 0: <code>dsh plugin add</code> (standard install, official plugin ecosystem)</h4>
+<pre><code class="language-bash"># Install from a local checkout (run in the directory containing this repo)
+dsh plugin --profile web add ./dsh-mobile-gate
+</code></pre>
+<blockquote>
+<p>This repo declares a <code>dsh.bundle</code> manifest, so the config layer activates automatically after install — no manual patch needed.</p>
+</blockquote>
+<h4>Option A: static mount (recommended, persists across restarts)</h4>
+<ol>
+<li>Clone or download this repo:<pre><code class="language-bash">git clone https://github.com/Bernardxu123/dsh-mobile-gate.git
+</code></pre>
+</li>
+<li>Edit <code>~/.dsh/profiles/web/cordis.patch.yml</code> (create it if missing; if it contains only <code>[]</code>, replace it), following <a href="https://github.com/Bernardxu123/dsh-mobile-gate/blob/master/cordis.patch.yml.example"><code>cordis.patch.yml.example</code></a>:<pre><code class="language-yaml">- insert:
+    - id: dsh-mobile-gate
+      name: &#39;file:///D:/path/to/dsh-mobile-gate/lan-gate.mjs&#39;
+</code></pre>
+</li>
+<li>Restart DSH. The gateway listens on <code>0.0.0.0:3088</code>.</li>
+</ol>
+<h4>Option B: dynamic plugin (no restart, immediate)</h4>
+<p>Register the <code>apply</code> logic of <code>lan-gate.mjs</code> as a dynamic Host Cordis plugin in a DSH session; it spawns the gateway via the <code>subprocess</code> service. Stopping/uninstalling the plugin terminates the gateway.</p>
+<h4>Usage flow</h4>
+<ol>
+<li>Open the admin page on your PC: <a href="http://127.0.0.1:3088/lan-gate/admin">http://127.0.0.1:3088/lan-gate/admin</a></li>
+<li>Connect your phone to the <strong>same Wi-Fi</strong>, visit the address listed on the admin page, e.g. <code>http://192.168.31.108:3088</code></li>
+<li>The phone shows &quot;Waiting for approval&quot;. Back on the PC admin page, pick an access mode for the device:<ul>
+<li><strong>手机 / phone</strong> = compact layout (recommended)</li>
+<li><strong>电脑 / desktop</strong> = desktop layout</li>
+<li><strong>自动 / auto</strong> = adaptive</li>
+</ul>
+</li>
+<li>Click <strong>允许 / Allow</strong>. The phone refreshes, claims its token, and lands in the DSH Web UI.</li>
+</ol>
+<h3>⚙️ Configuration</h3>
+<p>Environment variables (edit defaults at the top of <code>lib/lan-gate-server.cjs</code>, or set before launch):</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>LAN_GATE_PORT</code></td>
+<td><code>3088</code></td>
+<td>Gateway listen port</td>
+</tr>
+<tr>
+<td><code>LAN_GATE_HOST</code></td>
+<td><code>0.0.0.0</code></td>
+<td>Listen address (tighten to <code>127.0.0.1</code> for local-only)</td>
+</tr>
+<tr>
+<td><code>LAN_GATE_TARGET_PORT</code></td>
+<td><code>3080</code></td>
+<td>DSH Web UI port</td>
+</tr>
+<tr>
+<td><code>LAN_GATE_RATE_LIMIT</code></td>
+<td><code>120</code></td>
+<td>Per-IP requests per minute</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Port auto-increments on conflict (up to +20).</li>
+<li>Approvals persist in <code>~/.dsh/lan-gate-state.json</code> (survive restarts; the pending list is in-memory and re-triggered by a fresh visit).</li>
+</ul>
+<h3>🧑‍💻 Admin API (local only)</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>GET</code></td>
+<td><code>/lan-gate/status</code></td>
+<td>Status JSON: URLs, pending / approved / denied devices</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/lan-gate/action</code></td>
+<td><code>{action: approve|deny|revoke|revoke-all|set-kind, ip, kind}</code></td>
+</tr>
+</tbody></table>
+<pre><code class="language-bash">curl http://127.0.0.1:3088/lan-gate/status
+curl -X POST http://127.0.0.1:3088/lan-gate/action \
+  -H &#39;Content-Type: application/json&#39; \
+  -d &#39;{&quot;action&quot;:&quot;approve&quot;,&quot;ip&quot;:&quot;192.168.31.125&quot;,&quot;kind&quot;:&quot;phone&quot;}&#39;
+</code></pre>
+<h3>🧱 Mobile layout tweaks (built-in)</h3>
+<p>Injected into proxied HTML, scoped to <code>html[data-lan-device=&quot;phone&quot;]</code> only — <strong>desktop is never affected</strong>:</p>
+<ul>
+<li>Compressed chat font sizes / line heights; Markdown tuned for narrow screens</li>
+<li>Composer footer: <strong>permission &amp; model selectors become 24px pill buttons</strong>, 11px text, model effort suffix hidden, ellipsis overflow — fixes the overlap on phones</li>
+<li>Dialogs/menus go fullscreen; touch targets enlarged (<code>min-height:32px</code>, <code>touch-action:manipulation</code>)</li>
+<li><code>crypto.randomUUID</code> polyfill (otherwise the SPA can white-screen over plain HTTP)</li>
+</ul>
+<h3>❓ FAQ</h3>
+<p><strong>Q: Phone shows &quot;connection refused&quot;?</strong>
+A: Make sure both devices are on the same LAN; on Windows, allow Node.js inbound when the firewall prompt appears, or add a rule:</p>
+<pre><code class="language-powershell">New-NetFirewallRule -DisplayName &#39;DSH Mobile Gate 3088&#39; -Direction Inbound -LocalPort 3088 -Protocol TCP -Action Allow -Profile Any
+</code></pre>
+<p><strong>Q: Admin page stuck on &quot;Loading…&quot;?</strong>
+A: Hard-refresh the page. (An earlier build had a quoting bug in the admin inline JS; fixed in v1.0.0. Clear cache if it persists.)</p>
+<p><strong>Q: Blank page after approval?</strong>
+A: Usually missing <code>crypto.randomUUID</code> on non-secure HTTP; the gateway injects a polyfill. If it still fails, report your browser model/version.</p>
+<p><strong>Q: How to remove completely?</strong>
+A: Static mount: delete the insert entry and restart. Dynamic plugin: stop/undefine the plugin — the gateway child exits with it.</p>
+<h3>⚠️ Security notes</h3>
+<ul>
+<li>No independent auth layer; use only on <strong>trusted LANs</strong>. Verify a device&#39;s identity before approving.</li>
+<li>DSH Web UI runs over plain HTTP and the token travels via cookie — do not use across untrusted networks.</li>
+<li>Consider &quot;Revoke all&quot; periodically and re-approve devices.</li>
+</ul>
+<h3>📦 Project structure</h3>
+<pre><code>dsh-mobile-gate/
+├── lan-gate.mjs              # Cordis plugin entry (spawns the gateway via subprocess)
+├── lib/
+│   └── lan-gate-server.cjs   # Standalone gateway server (zero-dependency, single file ~30KB)
+├── cordis.patch.yml          # dsh.bundle config layer (for `dsh plugin add`)
+├── cordis.patch.yml.example  # Static mount example
+├── AGENTS.md                 # AI agent repository guide
+├── llms.txt / llms-full.txt  # LLM doc index / full text
+├── package.json              # npm metadata + dsh.bundle manifest
+├── README.md / README.en.md  # Bilingual docs
+└── LICENSE
+</code></pre>
+<h3>🙏 Credits</h3>
+<p>Inspired by excellent community projects:</p>
+<ul>
+<li><a href="https://github.com/hchao3335-maker/dsh-lan-gate">hchao3335-maker/dsh-lan-gate</a> — approval gate, device tokens, rate limiting, mobile adaptation</li>
+<li><a href="https://github.com/Leon0555/dsh-lan-access">Leon0555/dsh-lan-access</a> — direct 0.0.0.0 binding idea</li>
+</ul>
+<p>Key differences: the gateway runs as an <strong>isolated child process</strong> (no modification of DSH host config, no touching the trust fence), and mobile CSS targets stable <code>aria-haspopup</code>/slot selectors (more resilient to frontend upgrades).</p>
+<h3>📄 License</h3>
+<p><a href="https://github.com/Bernardxu123/dsh-mobile-gate/blob/master/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/Bernardxu123/dsh-mobile-gate/blob/master/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>
@@ -198,9 +418,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
       <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>

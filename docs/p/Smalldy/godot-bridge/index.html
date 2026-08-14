@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Smalldy/</span><wbr><span class="name">godot-bridge</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 1</b></span>
+        <span>Stars <b>★ 2</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -302,30 +302,20 @@ footer p+p{margin-top:.5rem}
 <li>Godot executable (use the <strong>real exe path</strong>, not the gdvm shim — see Pitfalls)</li>
 </ul>
 <h3>Install</h3>
-<h4>A. Deployment-level agent preset (recommended, survives restarts)</h4>
-<ol>
-<li><p>Copy <code>plugin/godot-bridge.mjs</code> into your user preset:</p>
-<pre><code>${DSH_HOME:-~/.dsh}/.agent-presets/&lt;your-preset&gt;/plugins/godot-bridge.mjs
-</code></pre>
-</li>
-<li><p>Add one row to that preset&#39;s <code>agent.cordis.yml</code> (a plain consumer row — it registers tools, publishes no service, so no <code>isolate</code> realm needed):</p>
-<pre><code class="language-yaml">- id: tool-godot-bridge
-  name: &#39;./plugins/godot-bridge.mjs&#39;
-</code></pre>
-</li>
-<li><p>Validate the mount (<code>agentPresets.standingKeyFor(&#39;&lt;your-preset&gt;&#39;)</code>), then start a session on that preset — the fifteen <code>godot_*</code> tools are available.</p>
-</li>
-</ol>
-<blockquote>
-<p>The module is deliberately <strong>zero-import</strong>: user presets live under <code>~/.dsh</code>, where Node cannot resolve the harness&#39;s <code>node_modules</code>. It builds tool definitions with hand-written JSON Schema and registers them via <code>ctx.tools.register</code> (which validates <code>output.render</code> / <code>output.schema</code> / <code>timeoutMs</code>, no <code>defineTool</code> import needed).</p>
-</blockquote>
-<h4>B. In-session dynamic plugin (quick test)</h4>
-<p>Tell your agent to define a dynamic Host plugin from <code>plugin/godot-bridge.js</code> (<code>cordis_define</code>, idPrefix <code>gbrg</code>, <code>code.host</code> = file content) and run it. This form uses the dynamic-sandbox <code>harness.defineTool</code> / <code>harness.registerTool</code> API; logic is identical to A.</p>
-<h4>C. Community bundle (<code>dsh plugin add</code>)</h4>
-<p>Install straight from GitHub — pure ESM + assets, no npm account, no build step:</p>
+<p><strong>Recommended — one command</strong> (requires the <code>dsh</code> CLI):</p>
 <pre><code class="language-sh">dsh plugin --profile web add github:Smalldy/godot-bridge
 </code></pre>
 <p>The package ships a <code>dsh.bundle</code> manifest (<code>cordis.patch.yml</code>) that inserts the <code>tool-godot-bridge</code> row into your profile. After a restart, the fifteen <code>godot_*</code> tools are available in every session on that profile. Listed in the <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> community registry (topic: <code>dsh-plugin</code>).</p>
+<p><strong>No dsh CLI? Manual install</strong> — copy <code>plugin/godot-bridge.mjs</code> to your user preset and add one row to its <code>agent.cordis.yml</code>:</p>
+<pre><code>${DSH_HOME:-~/.dsh}/.agent-presets/&lt;your-preset&gt;/plugins/godot-bridge.mjs
+</code></pre>
+<pre><code class="language-yaml">- id: tool-godot-bridge
+  name: &#39;./plugins/godot-bridge.mjs&#39;
+</code></pre>
+<p>Then start a session on that preset — the fifteen <code>godot_*</code> tools are available. (Validate the mount with <code>agentPresets.standingKeyFor(&#39;&lt;your-preset&gt;&#39;)</code> if you want to check before launching.)</p>
+<blockquote>
+<p>The module is deliberately <strong>zero-import</strong>: user presets live under <code>~/.dsh</code>, where Node cannot resolve the harness&#39;s <code>node_modules</code>. It builds tool definitions with hand-written JSON Schema and registers them via <code>ctx.tools.register</code> (which validates <code>output.render</code> / <code>output.schema</code> / <code>timeoutMs</code>, no <code>defineTool</code> import needed).</p>
+</blockquote>
 <h3>Usage</h3>
 <pre><code class="language-text">godot_run_project            # start the game (default: current workspace)
 godot_ping                   # confirm 9090 answers
@@ -346,8 +336,7 @@ godot_stop_project           # done
 <li><strong>Real exe, not the gdvm shim</strong>: the gdvm shim exits immediately and orphans the real Godot; process management misjudges it as dead.</li>
 </ul>
 <h3>Project layout</h3>
-<pre><code>plugin/godot-bridge.js            # dynamic-plugin form (code.host body)
-plugin/godot-bridge.mjs           # deployment form (zero-import ESM module, named exports)
+<pre><code>plugin/godot-bridge.mjs           # the plugin (zero-import ESM module, named exports)
 plugin/mcp_interaction_server.gd  # vendored from godot-mcp (MIT) — in-game TCP server autoload
 plugin/godot_operations.gd        # vendored from godot-mcp (MIT) — headless ops script
 plugin/validate_script.gd         # vendored from godot-mcp (MIT) — GDScript compile-check
@@ -357,7 +346,7 @@ install.md / install.zh-CN.md     # detailed install &amp; maintenance
 ARCHITECTURE.md / ARCHITECTURE.zh-CN.md  # how it replaces godot-mcp + protocol details
 COVERAGE.md / COVERAGE.zh-CN.md   # full tool-by-tool comparison vs godot-mcp
 </code></pre>
-<p><code>mcp_interaction_server.gd</code>, <code>godot_operations.gd</code> and <code>validate_script.gd</code> are vendored from <a href="https://github.com/tugcantopaloglu/godot-mcp">godot-mcp</a> (MIT). The deployment form locates the headless scripts relative to the module (<code>import.meta.url</code>); the dynamic form falls back to <code>&lt;workspace&gt;/tools/godot-bridge/</code> or the <code>godot-mcp</code> checkout, or an explicit <code>ops_script</code>/<code>validate_script</code> argument.</p>
+<p><code>mcp_interaction_server.gd</code>, <code>godot_operations.gd</code> and <code>validate_script.gd</code> are vendored from <a href="https://github.com/tugcantopaloglu/godot-mcp">godot-mcp</a> (MIT). The plugin locates the headless scripts relative to the module (<code>import.meta.url</code>); pass an explicit <code>ops_script</code> / <code>validate_script</code> argument to override.</p>
 <h3>License</h3>
 <p>MIT</p>
 
@@ -376,11 +365,11 @@ COVERAGE.md / COVERAGE.zh-CN.md   # full tool-by-tool comparison vs godot-mcp
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>

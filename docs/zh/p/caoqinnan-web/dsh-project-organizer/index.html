@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">caoqinnan-web/</span><wbr><span class="name">dsh-project-organizer</span></h1>
       <div class="specrow">
+        <span>Star 数 <b>★ 1</b></span>
         <span>分类 <a href="/zh/skill/">技能包</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-project-organizer" rel="noopener" translate="no">dsh-project-organizer</a></span>
@@ -188,7 +189,95 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>把混乱的项目对话、文件、决策与任务，整理成清晰、可继续执行的项目工作空间。</p>
+<p><strong>面向 AI Agent 的 Project Context Engineering（项目上下文工程）。</strong></p>
+<p><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/README.md">English</a></p>
+<h3>为什么做这个项目</h3>
+<p>普通项目整理工具主要整理文件。本项目重建的是项目的“可运行状态”：哪些是已核实事实、做过什么决定、还有什么未确认、当前卡在哪里、接下来该做什么。整理后，新的协作者或 AI Agent 不必重读全部历史就能继续工作。</p>
+<h3>核心工作流</h3>
+<pre><code class="language-text">Inspect → Understand → Distill → Structure → Archive → Handoff
+检查      理解          提炼        组织         归档       交接
+</code></pre>
+<ul>
+<li>修改前先检查对话、文件、笔记、计划、任务和仓库上下文。</li>
+<li>区分事实、决策、任务、假设、待确认问题和风险，不把推断写成事实。</li>
+<li>遵循最小文档原则：简单项目优先只维护一个 <code>PROJECT.md</code>。</li>
+<li>保留来源、用户纠正和被否决方案中仍影响后续工作的部分。</li>
+<li>归档保持可恢复；未经明确授权不做不可逆删除。</li>
+<li>交接结果直接呈现当前状态和下一步行动。</li>
+</ul>
+<h3>安装</h3>
+<h4>从 npm 安装（发布后推荐）</h4>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-project-organizer
+</code></pre>
+<h4>从 GitHub 安装</h4>
+<p>仓库会提交构建后的 <code>lib/</code>，从 GitHub 安装不需要执行安装期构建脚本：</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:caoqinnan-web/dsh-project-organizer
+</code></pre>
+<p>生产或长期使用建议固定到已审查的 commit：</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:caoqinnan-web/dsh-project-organizer#&lt;commit-sha&gt;
+</code></pre>
+<p>安装后重启对应的 DSH 运行界面。插件会把 <code>project-organizer</code> 注册到 <code>ctx.skills</code>，供模型发现或用户主动调用。</p>
+<p>不启动完整运行时也可以检查 bundle 是否进入配置：</p>
+<pre><code class="language-bash">dsh --profile web --dump-config
+</code></pre>
+<p>输出中应出现 <code>dsh-project-organizer</code> bundle 和 <code>project-organizer</code> 插件行。</p>
+<h3>使用示例</h3>
+<p>可以要求 DSH：</p>
+<ul>
+<li>“整理这个项目，让另一个 Agent 可以直接接手。”</li>
+<li>“根据这些对话和文件，重建项目当前状态。”</li>
+<li>“生成包含决策、风险和下一步的项目交接。”</li>
+<li>“把这些文档压缩成最小但够用的项目上下文。”</li>
+</ul>
+<p>简单项目默认采用：</p>
+<pre><code class="language-markdown"># 项目名称
+
+## 目标
+## 当前状态
+## 关键上下文
+## 已定决策
+## 待确认问题
+## 下一步行动
+## 资源
+</code></pre>
+<p>只有一个文件已经明显难以维护时，才拆出 <code>DECISIONS.md</code>、<code>TASKS.md</code>、<code>STATUS.md</code> 或 <code>CONTEXT.md</code>。</p>
+<h3>项目结构</h3>
+<ul>
+<li><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/skills/project-organizer/SKILL.md"><code>skills/project-organizer/SKILL.md</code></a>：Agent 工作协议。</li>
+<li><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/src/index.ts"><code>src/index.ts</code></a>：读取 Skill 并注册到 DSH Skill registry。</li>
+<li><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a>：把运行时插件挂载进 DSH profile。</li>
+<li><code>package.json</code>：声明 <code>dsh.bundle.patch</code>，使项目可通过 <code>dsh plugin add</code> 安装。</li>
+</ul>
+<p>官方 DSH 包使用 <code>peerDependencies</code>，避免插件额外安装一套可能冲突的运行时服务。</p>
+<h3>本地开发与验证</h3>
+<p>需要 Node.js 22 或更高版本。</p>
+<pre><code class="language-bash">npm install
+npm run check
+npm pack --dry-run
+</code></pre>
+<p>还可以用 Agent Skills validator 单独检查 Skill：</p>
+<pre><code class="language-bash">python3 /path/to/skill-creator/scripts/quick_validate.py skills/project-organizer
+</code></pre>
+<h3>发布检查清单</h3>
+<ul>
+<li>在 GitHub 创建公开仓库。</li>
+<li>添加 topics：<code>dsh-plugin</code>、<code>deepseek-harness</code>、<code>agent-skills</code>、<code>ai-agents</code>、<code>context-engineering</code>、<code>project-management</code>。</li>
+<li>确保发布包包含 <code>dsh.bundle.patch</code>、<code>cordis.patch.yml</code>、构建后的 <code>lib/</code> 和 Skill。</li>
+<li>发布预构建 npm 包，提供最顺滑的安装体验。</li>
+<li>仓库真实可用并保持维护后，向 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"><code>awesome-dsh-plugin/awesome-dsh-plugin</code></a> 对应分类分别增加一条中英文中性描述。</li>
+</ul>
+<h3>安全边界</h3>
+<p>Skill 属于可信指令，Plugin 属于第三方代码。安装前应检查源码；从 GitHub 安装时优先固定 commit；执行归档前核对范围，未经明确授权不做不可逆删除。</p>
+<h3>许可证</h3>
+<p><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>链接</h2>

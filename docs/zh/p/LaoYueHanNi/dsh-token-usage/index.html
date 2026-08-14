@@ -197,23 +197,52 @@ footer p+p{margin-top:.5rem}
 <h3>功能</h3>
 <ul>
 <li><strong>实时记录</strong>：每次成功的模型请求追加一行到按天分片的 JSONL 文件（请求 id、模型、输入 / 输出 / 缓存读 / 缓存写 token、时间、会话 id）。</li>
-<li><strong>Web 统计页</strong>：过滤条（日期区间 + 模型下拉 + <code>1d</code>/<code>7d</code>/<code>30d</code> 快捷区间）、汇总卡片、按日趋势图、按模型明细表。</li>
-<li><strong>费用统计与模型定价</strong>：按模型单价（¥/百万 token）实时计算费用 —— 汇总卡醒目展示总费用，按模型表每行带费用列与单价小字，未定价模型高亮提示（费用按 ¥0 计）。定价表由你维护在数据目录的 <code>pricing.json</code>，<code>/token-usage-pricing</code> 命令可随时查看当前生效的定价。</li>
+<li><strong>Web 统计页</strong>：过滤条（日期区间 + 模型下拉 + <code>1d</code>/<code>7d</code>/<code>30d</code> 快捷区间）、汇总卡片、按日趋势图（悬停查看当日总量）、按模型明细表。</li>
+<li><strong>费用统计与模型定价</strong>：按模型单价（¥/百万 token）实时计算费用 —— 汇总卡醒目展示总费用，按模型表每行带费用列，未定价模型高亮提示（费用按 ¥0 计）。定价模型的名字旁有**「定价」小按钮**，点击弹窗展示该模型的完整价格表：<strong>每行一个计费条件</strong>（默认价、上下文档位 <code>≥ 512K</code>、峰谷时段 <code>09:00-12:00</code>、限时规则的日期窗口分组），条件对应的入/出/缓/写四价各自成列，与逐条计费的解析规则一一对应。定价由云端镜像与手工文件合并而来：<code>/token-usage-pricing-sync</code> 从 model-price-table（cc-switch-analyzer 同源）拉取镜像，<code>pricing.json</code> 手工覆盖/补充，<code>/token-usage-pricing</code> 查看合并结果。</li>
 <li><strong>历史补齐</strong>：首次启动自动同步安装前已发生的请求；<code>/token-usage-sync</code> 命令可随时手动补写（幂等）。</li>
 </ul>
 <h3>模型定价</h3>
-<p>费用 = 各 token 桶 × 对应单价 ÷ 100 万。单价在数据目录的 <code>pricing.json</code> 中维护（默认无定价，全部按未定价处理），格式如下：</p>
+<p><strong>逐条请求精确计费</strong>：每条记录按自身时间戳走 cc-switch-analyzer 同款规则链——时间区间规则（<code>timeRules</code>）优先，命中后用规则内上下文档位（<code>contextTiers</code>）与峰谷价（<code>dailySlots</code>）；未命中走模型根的档位 → 峰谷 → 基础价。档位匹配以上下文 token 量近似（本请求 input + cacheRead + cacheWrite）。定价表更新价格后，全部历史按新价即时重算，无需重建数据。定价来自两个文件，读取时合并，<code>pricing.json</code> 的条目永远优先（整模型覆盖，含禁用其云端规则）：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>来源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pricing.ccsa.json</code></td>
+<td>启动自动拉取 + <code>/token-usage-pricing-sync</code> 命令</td>
+<td>云端 model-price-table（cc-switch-analyzer 同源）的本地镜像，每次重启 dsh 自动刷新，失败时沿用旧镜像</td>
+</tr>
+<tr>
+<td><code>pricing.json</code></td>
+<td>手工编辑</td>
+<td>覆盖同步价或补充缺失模型，手动微调不会被同步冲掉</td>
+</tr>
+</tbody></table>
+<pre><code class="language-sh"># 查看 / 手动刷新当前生效的合并定价表（启动时也会自动拉取一次云端镜像）
+/token-usage-pricing-sync
+/token-usage-pricing
+</code></pre>
+<p>云端 feed 格式（<code>currency</code> 须为 <code>RMB</code>；<code>modelId</code> 与 <code>aliases</code> 都会展开为可匹配的键；<code>timeRules</code> / <code>contextTiers</code> / <code>dailySlots</code> 全部参与计费）：</p>
 <pre><code class="language-json">{
-  &quot;deepseek-chat&quot;: { &quot;inputPerMillion&quot;: 2, &quot;outputPerMillion&quot;: 8, &quot;cacheReadPerMillion&quot;: 0.5 },
-  &quot;deepseek-reasoner&quot;: { &quot;inputPerMillion&quot;: 4, &quot;outputPerMillion&quot;: 16, &quot;cacheReadPerMillion&quot;: 1 }
+  &quot;version&quot;: 4,
+  &quot;updatedAt&quot;: 0,
+  &quot;currency&quot;: &quot;RMB&quot;,
+  &quot;models&quot;: [
+    { &quot;modelId&quot;: &quot;deepseek-chat&quot;, &quot;inputCostPerMillion&quot;: 2, &quot;outputCostPerMillion&quot;: 8,
+      &quot;cacheReadCostPerMillion&quot;: 0.5, &quot;cacheCreationCostPerMillion&quot;: 1, &quot;aliases&quot;: [&quot;deepseek-v3&quot;] }
+  ]
 }
 </code></pre>
-<ul>
-<li>键为模型 id（与记录中的 <code>model</code> 完全一致），值为每百万 token 单价（¥）。</li>
-<li><code>inputPerMillion</code>、<code>outputPerMillion</code> 必填；<code>cacheReadPerMillion</code>（缓存命中）、<code>cacheWritePerMillion</code>（缓存写入）可选，缺省时按输入单价计费。</li>
-<li>文件损坏或条目非法时对应模型按未定价处理，不影响统计页；保存后刷新页面或重跑命令即可生效。</li>
-<li>默认数据目录：<code>~/.dsh/token-usage/pricing.json</code>（配置了 <code>path</code> 时以该目录为准）。</li>
-</ul>
+<p><code>pricing.json</code> 的扁平格式（键为模型 id、与记录中的 <code>model</code> 完全一致；<code>inputPerMillion</code>、<code>outputPerMillion</code> 必填，<code>cacheReadPerMillion</code> / <code>cacheWritePerMillion</code> 可选、缺省按输入价计费）：</p>
+<pre><code class="language-json">{
+  &quot;deepseek-chat&quot;: { &quot;inputPerMillion&quot;: 2, &quot;outputPerMillion&quot;: 8, &quot;cacheReadPerMillion&quot;: 0.5 }
+}
+</code></pre>
+<p>文件损坏或条目非法时对应模型按未定价处理，不影响统计页；保存后刷新页面或重跑命令即可生效。默认数据目录：<code>~/.dsh/token-usage/</code>（配置了 <code>path</code> 时以该目录为准）。</p>
 <h3>安装</h3>
 <h4>从 GitHub 安装（推荐）</h4>
 <pre><code class="language-sh">dsh plugin --profile web add github:LaoYueHanNi/dsh-token-usage
@@ -263,9 +292,9 @@ git add lib/
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
       <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
       <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>

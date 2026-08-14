@@ -168,6 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">caoqinnan-web/</span><wbr><span class="name">dsh-project-organizer</span></h1>
       <div class="specrow">
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/skill/">Skills</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-project-organizer" rel="noopener" translate="no">dsh-project-organizer</a></span>
@@ -188,7 +189,94 @@ footer p+p{margin-top:.5rem}
     <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
-  
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>Turn messy project conversations, files, decisions, and tasks into a clear, actionable project workspace.</p>
+<p><strong>Project Context Engineering for AI agents.</strong></p>
+<p><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/README.zh-CN.md">中文说明</a></p>
+<h3>Why this exists</h3>
+<p>Most project organizers sort files. Project Organizer reconstructs the project&#39;s operational state: what is true, what was decided, what remains unresolved, and what should happen next. The result is compact enough for another human or AI agent to continue the work without rereading the full history.</p>
+<h3>What the skill does</h3>
+<pre><code class="language-text">Inspect → Understand → Distill → Structure → Archive → Handoff
+</code></pre>
+<ul>
+<li>Inspects conversations, files, notes, plans, tasks, and repository context before editing.</li>
+<li>Separates verified facts, decisions, tasks, assumptions, open questions, and risks.</li>
+<li>Uses the minimum-documentation principle: a simple project should usually have one <code>PROJECT.md</code>.</li>
+<li>Preserves provenance and user corrections instead of flattening everything into a summary.</li>
+<li>Keeps archive operations reversible and requires explicit approval for destructive deletion.</li>
+<li>Produces a handoff that makes current state and next actions immediately visible.</li>
+</ul>
+<h3>Install</h3>
+<h4>From npm (recommended after publication)</h4>
+<pre><code class="language-bash">dsh plugin --profile web add dsh-project-organizer
+</code></pre>
+<h4>From GitHub</h4>
+<p>This repository commits its built <code>lib/</code> output, so GitHub installation does not require an install-time build script:</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:caoqinnan-web/dsh-project-organizer
+</code></pre>
+<p>For reproducible installs, pin a reviewed commit:</p>
+<pre><code class="language-bash">dsh plugin --profile web add github:caoqinnan-web/dsh-project-organizer#&lt;commit-sha&gt;
+</code></pre>
+<p>Restart the selected DSH surface after installation. The runtime registers <code>project-organizer</code> with <code>ctx.skills</code>, where it can be discovered by the model or invoked by the user.</p>
+<p>Verify the bundle layer without booting the profile:</p>
+<pre><code class="language-bash">dsh --profile web --dump-config
+</code></pre>
+<p>The output should include the <code>dsh-project-organizer</code> bundle and a <code>project-organizer</code> plugin row.</p>
+<h3>Use</h3>
+<p>Ask DSH to:</p>
+<ul>
+<li>“Organize this project so another agent can continue it.”</li>
+<li>“Reconstruct the current state from these conversations and files.”</li>
+<li>“Prepare a clean project handoff with decisions, risks, and next actions.”</li>
+<li>“Reduce this documentation to the minimum useful project context.”</li>
+</ul>
+<p>The skill prefers this shape for a simple project:</p>
+<pre><code class="language-markdown"># Project name
+
+## Goal
+## Current status
+## Key context
+## Decisions
+## Open questions
+## Next actions
+## Resources
+</code></pre>
+<p>It splits information into <code>DECISIONS.md</code>, <code>TASKS.md</code>, <code>STATUS.md</code>, or <code>CONTEXT.md</code> only when one file has become genuinely hard to use.</p>
+<h3>Architecture</h3>
+<ul>
+<li><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/skills/project-organizer/SKILL.md"><code>skills/project-organizer/SKILL.md</code></a> contains the agent workflow.</li>
+<li><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/src/index.ts"><code>src/index.ts</code></a> loads that file and registers it with the DSH Skill registry.</li>
+<li><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/cordis.patch.yml"><code>cordis.patch.yml</code></a> mounts the runtime plugin into a DSH profile.</li>
+<li><code>package.json</code> declares <code>dsh.bundle.patch</code>, making the package installable with <code>dsh plugin add</code>.</li>
+</ul>
+<p>Official DSH packages are peer dependencies so the plugin uses the host&#39;s runtime services instead of installing a competing copy.</p>
+<h3>Development</h3>
+<p>Requires Node.js 22 or newer.</p>
+<pre><code class="language-bash">npm install
+npm run check
+npm pack --dry-run
+</code></pre>
+<p>Validate the standalone Skill with the Agent Skills validator:</p>
+<pre><code class="language-bash">python3 /path/to/skill-creator/scripts/quick_validate.py skills/project-organizer
+</code></pre>
+<h3>Publishing checklist</h3>
+<ul>
+<li>Publish the repository publicly on GitHub.</li>
+<li>Add topics: <code>dsh-plugin</code>, <code>deepseek-harness</code>, <code>agent-skills</code>, <code>ai-agents</code>, <code>context-engineering</code>, <code>project-management</code>.</li>
+<li>Keep <code>dsh.bundle.patch</code>, <code>cordis.patch.yml</code>, built <code>lib/</code>, and the Skill in the published package.</li>
+<li>Publish the prebuilt package to npm for the smoothest install experience.</li>
+<li>After the repository is working and maintained, add one neutral English line and one neutral Chinese line to the matching category in <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"><code>awesome-dsh-plugin/awesome-dsh-plugin</code></a>.</li>
+</ul>
+<h3>Security</h3>
+<p>Skills are trusted instructions and plugins are third-party code. Review the source before installing, prefer a pinned commit for GitHub installs, and do not authorize destructive archival actions without checking the proposed scope.</p>
+<h3>License</h3>
+<p><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/LICENSE">MIT</a></p>
+
+    </div>
+    <p class="note"><a href="https://github.com/caoqinnan-web/dsh-project-organizer/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
 
   <section class="panel">
     <h2>Links</h2>

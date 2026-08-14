@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
-**331** plugins · [PRs welcome](#contributing)
+**332** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -432,7 +432,7 @@ dsh plugin --profile web add dshmarket
 
 PRs welcome — add one line under the matching category in both `README.md` and `README.zh.md`: `- [name](link) — one-line description`.
 
-Themes & skins: entries under **Themes & Appearance** power the Themes tab in [dsh-market](https://github.com/dsh-market/dsh-market) — one-click install/switch for users. See [contributing](contributing.md) for details.
+Themes & skins: entries under **Themes & Appearance** power the Themes tab in `dsh-market` — one-click install/switch for users. See [contributing](contributing.md) for details.
 
 Please also add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your repo so others can discover it.
 

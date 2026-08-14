@@ -209,9 +209,9 @@ footer p+p{margin-top:.5rem}
 <li><strong>中文官方内置插件目录</strong>：为当前 Web Loader 中的官方内置插件提供中文名称、一句话说明和分类；展开卡片可查看“关闭后 / 建议”（可管理项）或“为什么锁定 / 状态说明”（锁定项）。</li>
 <li><strong>本地搜索</strong>：按名称、功能、ID 或包名过滤全部条目，不请求网络。</li>
 <li><strong>Agent Preset 状态解释</strong>：<code>tool-*</code> / <code>plan-mode</code> 等由 Agent Preset 按会话组装的能力，统一显示“由 Agent 预设管理”，不会误导为“功能已关闭”。</li>
-<li><strong>9 个经过审核的安全 UI 开关</strong>：<code>ui-deliverables</code>、<code>ui-jobs</code>、<code>ui-goal</code>、<code>ui-message-feedback</code>、<code>ui-model-selection</code>、<code>ui-agent-preset</code>、<code>ui-skill</code>、<code>ui-subagent</code>、<code>ui-trajectory</code> —— 都是纯界面插件；这些开关作用于 DSH 的 <code>web</code> profile，因此会影响所有 Web 会话，不会修改 Agent 预设；开关立即生效于 Host 运行时并持久化到 profile patch，重启后保持。</li>
+<li><strong>9 个经过审核的安全 UI 开关</strong>：<code>ui-deliverables</code>、<code>ui-jobs</code>、<code>ui-goal</code>、<code>ui-message-feedback</code>、<code>ui-model-selection</code>、<code>ui-agent-preset</code>、<code>ui-skill</code>、<code>ui-subagent</code>、<code>ui-trajectory</code> —— 都是纯界面插件；这些开关作用于 DSH 的 <code>web</code> profile，因此会影响所有 Web 会话，不会修改 Agent 预设；强制开关会更新 Host 并持久化，恢复继承则由 DSH profile/HMR 重组重新暴露下层值。</li>
 <li><strong>其余插件 fail-closed 锁定</strong>：核心服务、Agent 能力与未知条目一律锁定，不提供开关。</li>
-<li><strong>只读能力检查 API</strong>：<code>GET /api/builtin-toggles/v1/inspection</code> 提供版本化、无本地化文案的 Loader 能力清单、审阅基线与兼容性结果；遇到新官方条目、缺失条目、包身份或可复核 <code>inject</code> 声明漂移时仍可检查，但本版本不会据此放宽任何开关权限。详见 <a href="https://github.com/Starfie1d1272/dsh-builtin-toggles/blob/main/docs/inspection-api.md">Inspection API v1</a>。</li>
+<li><strong>能力检查与保守授权 API</strong>：<code>GET /api/builtin-toggles/v1/inspection</code> 提供版本化、无本地化文案的 Loader 清单、审阅基线、配置三态、独立的 profile 可持久化预检、兼容性与服务端计算的逐条 mutation eligibility。Host 未公开运行时发布身份时，inspection 会诚实标为 <code>unverified</code>；这不会单独关闭已审核 leaf，但可观测的新增官方条目、包/<code>inject</code>/重复 id 等结构变化会因无法建立 consumer 图而保守拒绝写入。它不宣称能发现不可观测的未来内部 consumer 变化。详见 <a href="https://github.com/Starfie1d1272/dsh-builtin-toggles/blob/main/docs/inspection-api.md">Inspection API v1</a>。</li>
 </ul>
 <h3>安全模型</h3>
 <p>可管理性完全来自 <code>src/policy.ts</code> 的精确显式 allowlist（<code>MANAGEABLE_IDS</code>），没有“名字看起来像 UI 所以允许”的启发式；服务端在每次开关请求时重新执行全部检查（allowlist、body 合法性、entry 存在、<code>@deepseek-ai/*</code> 包名、非插件自身），任何一条不满足都拒绝。UI 隐藏按钮不是安全边界。</p>
@@ -221,7 +221,7 @@ footer p+p{margin-top:.5rem}
 <li>Tested with DSH 0.1.0-rc.6（隔离 DSH_HOME + headless Chromium 真实浏览器验证）。</li>
 <li>开关的运行时效果是 Host 侧<strong>立即生效</strong>；已打开的浏览器页面需要<strong>刷新后</strong>才应用 client-side 改变（rc.6 行为），切换成功后面板会提示“刷新页面后生效”。</li>
 <li>持久化写入 profile 的 <code>cordis.patch.yml</code>，重启后保持。</li>
-<li>inspection foundation 的兼容性结果是审计信号，不是切换授权信号；除完整 rc.6 发布补丁结构外，<code>verified</code> 还需要 Host 公开运行时身份。当前 DSH 没有向插件公开该稳定身份，因此真实环境会诚实标为 <code>unverified</code>，不会仅凭版本号或相同 Loader 结构声称兼容。</li>
+<li>inspection compatibility 与 mutation eligibility 是不同概念；除完整 rc.6 发布补丁结构外，<code>verified</code> 仍需要 Host 公开运行时身份。当前 DSH 没有向插件公开该稳定身份，因此真实环境会诚实标为 <code>unverified</code>，不会仅凭版本号或相同 Loader 结构声称兼容；但逐条 mutation 仍必须通过独立的 reviewed-leaf、结构漂移与 writer 安全检查。</li>
 </ul>
 <h3>卸载</h3>
 <pre><code class="language-sh">dsh plugin --profile web remove dsh-builtin-toggles
@@ -254,9 +254,9 @@ pnpm build     # tsdown → lib/index.js (node ESM) + lib/client.js (browser bun
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1827</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 852</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 720</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui/" translate="no">zhu1090093659/dsh-web-ui</a><span class="stars" translate="no">★ 1835</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 856</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 724</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
       <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
       <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 122</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
       <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 81</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>

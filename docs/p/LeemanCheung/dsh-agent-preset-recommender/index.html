@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">LeemanCheung/</span><wbr><span class="name">dsh-agent-preset-recommender</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 0</b></span>
+        <span>Stars <b>★ 1</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -218,7 +218,7 @@ footer p+p{margin-top:.5rem}
 <li>source and installation-keyed project identifier;</li>
 <li>categorized tool counts;</li>
 <li>session, workflow, and project-metadata counts;</li>
-<li>first/last observation timestamps;</li>
+<li>first/last observation dates (day-level);</li>
 <li>recommendation, confidence, and evidence counts;</li>
 <li>an explicit machine-readable privacy declaration.</li>
 </ul>
@@ -239,13 +239,18 @@ footer p+p{margin-top:.5rem}
 </thead>
 <tbody><tr>
 <td>Codex</td>
-<td><code>~/.codex/sessions</code>, <code>~/.codex/archived_sessions</code></td>
+<td><code>$CODEX_HOME/sessions</code>, <code>$CODEX_HOME/archived_sessions</code> or <code>~/.codex/*</code></td>
 <td>Bounded <code>.jsonl</code>/<code>.json</code>; selected session/project and tool-name fields</td>
 </tr>
 <tr>
 <td>Claude Code</td>
-<td><code>~/.claude/projects</code></td>
-<td>Bounded <code>.jsonl</code>/<code>.json</code>; selected project and <code>tool_use</code> name fields</td>
+<td><code>$CLAUDE_CONFIG_DIR/projects</code> or <code>~/.claude/projects</code></td>
+<td>Bounded <code>.jsonl</code>/<code>.json</code>; selected project and <code>tool_use</code> name fields; workflow sidecars, journals, task/session/plan stores, and global history are excluded</td>
+</tr>
+<tr>
+<td>Claude personal workflows</td>
+<td><code>$CLAUDE_CONFIG_DIR/workflows</code> or <code>~/.claude/workflows</code></td>
+<td><code>.js</code> file presence and day only; scripts are never opened. Add project-local <code>&lt;repo&gt;/.claude/workflows</code> explicitly to <code>claudeWorkflowRoots</code> if desired</td>
 </tr>
 <tr>
 <td>Claude transcripts</td>
@@ -253,14 +258,19 @@ footer p+p{margin-top:.5rem}
 <td>Scanned only when <code>claudeTranscriptRoots</code> is explicitly configured</td>
 </tr>
 <tr>
-<td>WorkBuddy/CodeBuddy sessions</td>
-<td><code>~/WorkBuddy</code>, <code>~/CodeBuddy</code>, <code>~/.codebuddy</code></td>
-<td>Bounded <code>.jsonl</code>/<code>.json</code> only below project <code>.workbuddy/*</code> or <code>.codebuddy/*</code> session directories</td>
+<td>CodeBuddy CLI</td>
+<td><code>$CODEBUDDY_CONFIG_DIR/projects</code> or <code>~/.codebuddy/projects</code></td>
+<td>Bounded canonical project <code>.jsonl</code> records; ignores stale global process maps and tool-result/blob directories</td>
 </tr>
 <tr>
-<td>WorkBuddy/CodeBuddy project metadata</td>
-<td><code>.workbuddy</code> or <code>.codebuddy</code> <code>memory</code>, <code>workflows</code>, or <code>plans</code> beneath configured roots</td>
-<td>Count and mtime only; content is not read; memory never becomes workflow evidence</td>
+<td>WorkBuddy</td>
+<td><code>$WORKBUDDY_CONFIG_DIR/projects</code> or <code>~/.workbuddy/projects</code>, <code>~/.workbuddy-ai/projects</code></td>
+<td>Bounded project <code>.jsonl</code> records; project-local <code>.workbuddy</code> metadata is inventory-only</td>
+</tr>
+<tr>
+<td>Project-local CodeBuddy/WorkBuddy metadata</td>
+<td><code>&lt;project&gt;/.codebuddy</code> or <code>&lt;project&gt;/.workbuddy</code> <code>memory</code>, <code>workflows</code>, <code>plans</code>, or <code>automations</code></td>
+<td>Count and day only; content is not read; memory never becomes workflow evidence</td>
 </tr>
 </tbody></table>
 <p>Formats vary between product releases. Unknown fields are ignored, malformed records are skipped, and malformed files are counted as errors without stopping the scan.</p>
@@ -280,11 +290,16 @@ footer p+p{margin-top:.5rem}
     claudeRoots:
       - ~/.claude/projects
     claudeTranscriptRoots: [] # opt in explicitly
+    claudeWorkflowRoots:
+      - ~/.claude/workflows   # inventory only; script content is never read
     workbuddyRoots:
+      - ~/.codebuddy
+      - ~/.workbuddy
+      - ~/.workbuddy-ai
       - ~/WorkBuddy
       - ~/CodeBuddy
-      - ~/.codebuddy
 </code></pre>
+<p>Defaults honor <code>CODEX_HOME</code>, <code>CLAUDE_CONFIG_DIR</code>, <code>CODEBUDDY_CONFIG_DIR</code>, and <code>WORKBUDDY_CONFIG_DIR</code> when DSH starts. Supplying an explicit root list in the plugin configuration takes precedence over those defaults.</p>
 <p>Bounds are validated: file counts, file bytes, recency, and interval are finite. Missing/inaccessible roots are skipped. Startup, scheduled, and tool-triggered scans share one serialized queue and are aborted on plugin disposal.</p>
 <h3>Model tools</h3>
 <h4><code>scan_agent_projects</code></h4>
@@ -306,7 +321,7 @@ footer p+p{margin-top:.5rem}
 <li>Keyed IDs are stable only while the private state directory remains available; deleting <code>identity.key</code> intentionally creates a new identifier set.</li>
 <li>A recommendation reflects observed local frequency, not task quality or organizational policy.</li>
 <li>The plugin does not verify that optional products or capabilities are installed or authenticated.</li>
-<li>JSONL data after the byte cap, oversized JSON files, old files, and older files beyond a source limit are intentionally omitted.</li>
+<li>JSONL data after the byte cap, oversized JSON files, old files, and older files beyond a source limit are intentionally omitted. Compressed Codex <code>.jsonl.zst</code> rollouts are not read in 0.1.2. Claude workflow scripts and dynamic workflow sidecars are deliberately not parsed.</li>
 </ul>
 <h3>Development</h3>
 <pre><code class="language-sh">npm install
@@ -331,11 +346,11 @@ npm test
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1237</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1244</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
       <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
       <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>

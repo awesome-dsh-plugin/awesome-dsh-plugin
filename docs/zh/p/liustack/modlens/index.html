@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">liustack/</span><wbr><span class="name">modlens</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 1237</b></span>
+        <span>Star 数 <b>★ 1244</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/@liustack/modlens" rel="noopener" translate="no">@liustack/modlens</a></span>
@@ -196,9 +196,9 @@ footer p+p{margin-top:.5rem}
 <h3>交流</h3>
 <p>欢迎随时提<a href="https://github.com/liustack/modlens/issues/new/choose">issue</a>。也欢迎来 X 上聊：<strong><a href="https://x.com/liustack">@liustack</a></strong>，你用它做了什么、在哪个 harness 上跑、接下来该做什么，新版本也是那边先发。社群正在筹备中。</p>
 <h3>亮点</h3>
-<p>**🥇 全网第一个支持 DeepSeek Harness（dsh）的外挂视觉识别插件：**一条命令 <code>npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modlens@latest</code>，dsh 背后的纯文本 DeepSeek 模型即可通过原生 <code>read_image</code> 工具读图。如果 dsh 提示 <code>declares no dsh.bundle</code>，是 pnpm 的发布冷静期装了旧版，一行命令可解，见<a href="https://github.com/liustack/modlens/blob/main/docs/troubleshooting.zh-CN.md#dsh-%E6%8F%90%E7%A4%BA-declares-no-dshbundle--installed-as-a-plain-dependency">故障排查</a>。</p>
+<p>**🥇 全网第一个支持 DeepSeek Harness（dsh）的外挂视觉识别插件：**一条命令 <code>npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modlens@latest</code>，dsh 背后的纯文本 DeepSeek 模型即可通过原生 <code>modlens_read_image</code> 工具读图。如果 dsh 提示 <code>declares no dsh.bundle</code>，是 pnpm 的发布冷静期装了旧版，一行命令可解，见<a href="https://github.com/liustack/modlens/blob/main/docs/troubleshooting.zh-CN.md#dsh-%E6%8F%90%E7%A4%BA-declares-no-dshbundle--installed-as-a-plain-dependency">故障排查</a>。</p>
 <p>DeepSeek Harness 粘贴识图有两种玩法。</p>
-<p><strong>① 直接粘贴</strong> 贴进来的图片自主转换成文件路径进输入框（与 OpenCode、Pi 同款交互），<code>read_image</code> 工具接手读图。</p>
+<p><strong>① 直接粘贴</strong> 贴进来的图片自主转换成文件路径进输入框（与 OpenCode、Pi 同款交互），<code>modlens_read_image</code> 工具接手读图。</p>
 <p><strong>② 切到带 <code>(modlens vision)</code> 后缀的模型变体</strong>（选择器有记忆，选一次就行）再粘贴：缩略图直接可见、所见即所得，体验更接近 Codex App。变体由插件自动发现生成：每条承载纯文本 DeepSeek 或 GLM 模型的 provider 路由各得一组包装条目（默认安装下就是 <strong><code>DeepSeek-V4-Flash (modlens vision)</code></strong> 和 <strong><code>DeepSeek-V4-Pro (modlens vision)</code></strong>，装了 opencode-go、zai 等额外路由的机器会各自多出一组），两家自己的视觉型号自动排除。走哪条通路由 host 依据真实模型元数据逐个裁决：只有被元数据确认纯文本的模型才会被接管，确认不了的一律不动，视觉模型因此保留原生贴图（<a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.zh-CN.md">细节</a>）。</p>
 <p><strong>直接粘贴图片识别</strong> 无需先保存成文件再提供路径。</p>
 <ul>
@@ -221,7 +221,7 @@ agy                                                           # 浏览器完成�
 <p><strong>DeepSeek Harness（dsh）用户不走 skill 流程</strong>，本包就是原生 dsh 插件：</p>
 <pre><code class="language-sh">npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modlens@latest
 </code></pre>
-<p>装完即有 <code>read_image</code> 工具，选「(modlens vision)」模型变体即可直接粘贴识图。引擎配置同样在 <code>~/.modlens</code>，详见<a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.zh-CN.md">宿主接入</a>。</p>
+<p>装完即有 <code>modlens_read_image</code> 工具，选「(modlens vision)」模型变体即可直接粘贴识图。引擎配置同样在 <code>~/.modlens</code>，详见<a href="https://github.com/liustack/modlens/blob/main/docs/harness-setup.zh-CN.md">宿主接入</a>。</p>
 <h3>用法</h3>
 <p>装好之后不需要记任何命令。正常聊天，粘贴图片或给出图片路径，提问即可，skill 自动触发：图片交给视觉引擎，答案基于读到的内容返回。</p>
 <h3>视觉引擎：五个内置 provider，四家可复用 CLI，一条故障转移链</h3>
@@ -400,12 +400,12 @@ modlens config set openai.model   qwen3-vl-plus
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 310</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
+      <li><h3><a href="/zh/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 312</span></h3><a class="desc-link" href="/zh/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。</p></a></li>
       <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
-      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
-      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 86</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
+      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 87</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
       <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
-      <li><h3><a href="/zh/p/ysr666/dsh-vision-router/" translate="no">ysr666/dsh-vision-router</a><span class="stars" translate="no">★ 44</span></h3><a class="desc-link" href="/zh/p/ysr666/dsh-vision-router/" tabindex="-1"><p>为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。</p></a></li>
+      <li><h3><a href="/zh/p/ysr666/dsh-vision-router/" translate="no">ysr666/dsh-vision-router</a><span class="stars" translate="no">★ 45</span></h3><a class="desc-link" href="/zh/p/ysr666/dsh-vision-router/" tabindex="-1"><p>为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/tools/">查看整个分类 →</a>
   </section>
