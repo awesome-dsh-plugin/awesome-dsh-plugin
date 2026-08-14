@@ -13,6 +13,13 @@
     <summary>插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。</summary>
   </entry>
   <entry>
+    <title>Make0209/dsh-usage-stats</title>
+    <id>https://github.com/Make0209/dsh-usage-stats</id>
+    <link href="https://github.com/Make0209/dsh-usage-stats"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>GitHub 风格用量热力图看板：按工作区统计使用次数与 Token 花费（含缓存命中率）、DeepSeek 账户余额查询、工作区别名管理。</summary>
+  </entry>
+  <entry>
     <title>wjy9902/dsh-web-default-session</title>
     <id>https://github.com/wjy9902/dsh-web-default-session</id>
     <link href="https://github.com/wjy9902/dsh-web-default-session"/>
@@ -34,6 +41,13 @@
     <summary>DSH Web 状态文字旁的持久化黑色鲸鱼深潜动画，提供减少动态效果回退与无缝闭环。</summary>
   </entry>
   <entry>
+    <title>01Virex/dsh-status-rotator</title>
+    <id>https://github.com/01Virex/dsh-status-rotator</id>
+    <link href="https://github.com/01Virex/dsh-status-rotator"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>把回合状态那句 &quot;Deep diving...&quot; 替换成更有梗的自定义文案，按阶段轮换，支持打字机与流动渐变。</summary>
+  </entry>
+  <entry>
     <title>asukasec/dsh-message-preview</title>
     <id>https://github.com/asukasec/dsh-message-preview</id>
     <link href="https://github.com/asukasec/dsh-message-preview"/>
@@ -46,6 +60,20 @@
     <link href="https://github.com/Nanki-nn/dsh-answer-pet"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>蓝鲸桌面宠物：按会话实时展示回答进度、模型动作与工具调用轨迹、token、输出速率与耗时，并支持多会话状态卡片展开和收起。</summary>
+  </entry>
+  <entry>
+    <title>GooodWei/arcana</title>
+    <id>https://github.com/GooodWei/arcana</id>
+    <link href="https://github.com/GooodWei/arcana"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>DeepSeek Harness 的悬浮命令甲板：把所有斜杠命令列成可执行按钮，悬停看介绍，按使用次数排序。</summary>
+  </entry>
+  <entry>
+    <title>GooodWei/context-vista</title>
+    <id>https://github.com/GooodWei/context-vista</id>
+    <link href="https://github.com/GooodWei/context-vista"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>为 DeepSeek Harness 提供右侧悬浮栏以及 /context 命令，用环形图实时展示当前上下文 token 用量与分配及消费估算。</summary>
   </entry>
   <entry>
     <title>taxueseek/dsh-files</title>
@@ -186,33 +214,5 @@
     <link href="https://github.com/jiangnanquan/dsh-ux"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。</summary>
-  </entry>
-  <entry>
-    <title>a903067276-rgb/dsh-hud</title>
-    <id>https://github.com/a903067276-rgb/dsh-hud</id>
-    <link href="https://github.com/a903067276-rgb/dsh-hud"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。</summary>
-  </entry>
-  <entry>
-    <title>wsxwj123/dsh-plugins#turn-scrubber</title>
-    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber</id>
-    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>右侧紧凑回合刻度条，悬停显示回合摘要，点击跳转到对应用户回合。</summary>
-  </entry>
-  <entry>
-    <title>Sttrevens/dsh-cost-meter</title>
-    <id>https://github.com/Sttrevens/dsh-cost-meter</id>
-    <link href="https://github.com/Sttrevens/dsh-cost-meter"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。</summary>
-  </entry>
-  <entry>
-    <title>a903067276-rgb/dsh-file-mentions</title>
-    <id>https://github.com/a903067276-rgb/dsh-file-mentions</id>
-    <link href="https://github.com/a903067276-rgb/dsh-file-mentions"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>DSH 回复中的文件路径可点击：Codex 风格行内打开、文件管理器定位、回合尾部文件 chip 列表。</summary>
   </entry>
 </feed>

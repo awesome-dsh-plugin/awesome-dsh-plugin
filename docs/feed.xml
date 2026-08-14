@@ -13,6 +13,13 @@
     <summary>A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.</summary>
   </entry>
   <entry>
+    <title>Make0209/dsh-usage-stats</title>
+    <id>https://github.com/Make0209/dsh-usage-stats</id>
+    <link href="https://github.com/Make0209/dsh-usage-stats"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.</summary>
+  </entry>
+  <entry>
     <title>wjy9902/dsh-web-default-session</title>
     <id>https://github.com/wjy9902/dsh-web-default-session</id>
     <link href="https://github.com/wjy9902/dsh-web-default-session"/>
@@ -34,6 +41,13 @@
     <summary>Persistent black whale-dive animation beside the DSH Web turn status, with a reduced-motion fallback and a seamless closed loop.</summary>
   </entry>
   <entry>
+    <title>01Virex/dsh-status-rotator</title>
+    <id>https://github.com/01Virex/dsh-status-rotator</id>
+    <link href="https://github.com/01Virex/dsh-status-rotator"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Replaces the &quot;Deep diving...&quot; turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.</summary>
+  </entry>
+  <entry>
     <title>asukasec/dsh-message-preview</title>
     <id>https://github.com/asukasec/dsh-message-preview</id>
     <link href="https://github.com/asukasec/dsh-message-preview"/>
@@ -46,6 +60,20 @@
     <link href="https://github.com/Nanki-nn/dsh-answer-pet"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.</summary>
+  </entry>
+  <entry>
+    <title>GooodWei/arcana</title>
+    <id>https://github.com/GooodWei/arcana</id>
+    <link href="https://github.com/GooodWei/arcana"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.</summary>
+  </entry>
+  <entry>
+    <title>GooodWei/context-vista</title>
+    <id>https://github.com/GooodWei/context-vista</id>
+    <link href="https://github.com/GooodWei/context-vista"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>A right-side floating panel and /context command for DeepSeek Harness — a live donut chart of context token usage, allocation, and estimated cost.</summary>
   </entry>
   <entry>
     <title>taxueseek/dsh-files</title>
@@ -186,33 +214,5 @@
     <link href="https://github.com/jiangnanquan/dsh-ux"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Solarized light theme, compact layout, think/tool-chain collapse capsules, and balance, session cost, and usage dashboards for the DSH web UI.</summary>
-  </entry>
-  <entry>
-    <title>a903067276-rgb/dsh-hud</title>
-    <id>https://github.com/a903067276-rgb/dsh-hud</id>
-    <link href="https://github.com/a903067276-rgb/dsh-hud"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>HUD status panel: Git status, MCP servers, skills, model and token usage in a floating side panel.</summary>
-  </entry>
-  <entry>
-    <title>wsxwj123/dsh-plugins#turn-scrubber</title>
-    <id>https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber</id>
-    <link href="https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Compact right-edge turn rail with hover summaries and click-to-jump navigation.</summary>
-  </entry>
-  <entry>
-    <title>Sttrevens/dsh-cost-meter</title>
-    <id>https://github.com/Sttrevens/dsh-cost-meter</id>
-    <link href="https://github.com/Sttrevens/dsh-cost-meter"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.</summary>
-  </entry>
-  <entry>
-    <title>a903067276-rgb/dsh-file-mentions</title>
-    <id>https://github.com/a903067276-rgb/dsh-file-mentions</id>
-    <link href="https://github.com/a903067276-rgb/dsh-file-mentions"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.</summary>
   </entry>
 </feed>

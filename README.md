@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
-**282** plugins · [PRs welcome](#contributing)
+**301** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -125,7 +125,7 @@ dsh plugin --profile web add dshmarket
 
 ### Sessions & Messages
 
-- [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) — Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.
+- [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) - Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.
 
 
 
