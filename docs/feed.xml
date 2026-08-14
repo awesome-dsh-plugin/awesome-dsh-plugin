@@ -181,6 +181,13 @@
     <summary>File-drag fork: drop documents as removable chips above the composer, send without typing.</summary>
   </entry>
   <entry>
+    <title>HsiangNianian/dsh-auto-continue</title>
+    <id>https://github.com/HsiangNianian/dsh-auto-continue</id>
+    <link href="https://github.com/HsiangNianian/dsh-auto-continue"/>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.</summary>
+  </entry>
+  <entry>
     <title>KinGao294/dsh-skin</title>
     <id>https://github.com/KinGao294/dsh-skin</id>
     <link href="https://github.com/KinGao294/dsh-skin"/>
@@ -207,12 +214,5 @@
     <link href="https://github.com/Jesse-njx/dsh-crosstalk"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.</summary>
-  </entry>
-  <entry>
-    <title>czm15053/dsh-peer-link</title>
-    <id>https://github.com/czm15053/dsh-peer-link</id>
-    <link href="https://github.com/czm15053/dsh-peer-link"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).</summary>
   </entry>
 </feed>
