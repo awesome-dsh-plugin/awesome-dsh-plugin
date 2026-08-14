@@ -291,6 +291,7 @@ dsh plugin --profile web add dshmarket
 - [truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) - First-class Git tools for the model: status / diff / log / commit / branch with validated messages and paths - no bare-shell git calls.
 - [wly8691-jpg/knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) - Dual knowledge-graph RAG for Markdown notes: prerequisite + similarity graphs (P/S-Agent traversal), paragraph chunking, n-gram/embedding hybrid search, and an explicit weight feedback loop — via MCP.
 - [ChenLaoshiYF/dsh-mcpguard](https://github.com/ChenLaoshiYF/dsh-mcpguard) - Scans skills and MCP configs for prompt injection, homoglyphs, hidden Unicode, dangerous shell, and credential leaks.
+- [6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) - Add a WSL workspace from the web GUI without needing to install dsh or related tools again inside WSL. Bash commands and file read/write operations run within the local WSL distribution on the host machine, while Windows files remain accessible.
 ### Skills
 - [caoqinnan-web/dsh-project-organizer](https://github.com/caoqinnan-web/dsh-project-organizer) - Project context engineering skill that distills scattered conversations, files, decisions, and tasks into a minimal actionable workspace and handoff.
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
