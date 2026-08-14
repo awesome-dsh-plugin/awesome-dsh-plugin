@@ -1307,7 +1307,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。"
    },
    "npm": null,
-   "stars": 569,
+   "stars": 570,
    "install": "dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale",
    "added": "2026-08-14"
   },
@@ -2192,7 +2192,7 @@
     "zh": "让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。"
    },
    "npm": "@dsh-external/dsh-vision-toolkit",
-   "stars": 318,
+   "stars": 319,
    "install": "dsh plugin --profile web add @dsh-external/dsh-vision-toolkit",
    "added": "2026-08-13"
   },
@@ -3542,7 +3542,7 @@
     "zh": "AgentTeams 多智能体团队。"
    },
    "npm": null,
-   "stars": 242,
+   "stars": 243,
    "install": "dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams",
    "added": "2026-08-13"
   },
@@ -5177,7 +5177,7 @@
     "zh": "桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。"
    },
    "npm": null,
-   "stars": 124,
+   "stars": 125,
    "install": "dsh plugin --profile web add github:vlln/whale-girl",
    "added": "2026-08-13"
   },

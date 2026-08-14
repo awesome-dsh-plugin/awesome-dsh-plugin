@@ -189,136 +189,147 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>这是 DeepSeek Harness Web GUI 的主题画廊插件。安装后，可以在设置中直接选择一套视觉风格完整的主题。</p>
-<h3>当前主题</h3>
-<p>共 15 个主题家族，每个家族都有完整的浅色和深色配色：</p>
+<p>A fast, curated Client Cordis theme gallery for the DeepSeek Harness Web GUI.</p>
+<h3>Preview</h3>
+<p><img src="https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/packages/theme-gallery/../../assets/screenshots/theme-gallery-real.png" alt="Theme gallery real preview"></p>
+<h3>Themes</h3>
+<p>The public package contains 15 original, source-neutral theme families. Every family includes a complete light and dark palette:</p>
 <table>
 <thead>
 <tr>
 <th>中文名</th>
 <th>English name</th>
-<th>视觉方向</th>
+<th>Visual direction</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>翠玉</td>
 <td>Jade</td>
-<td>中性灰与翡翠绿</td>
+<td>Neutral gray with emerald green</td>
 </tr>
 <tr>
 <td>陶土</td>
 <td>Terracotta</td>
-<td>暖米色与陶土橙</td>
+<td>Warm parchment with terracotta orange</td>
 </tr>
 <tr>
 <td>余烬</td>
 <td>Ember</td>
-<td>高对比黑色与桃橙</td>
+<td>High-contrast black with peach orange</td>
 </tr>
 <tr>
 <td>星夜</td>
 <td>Starlight</td>
-<td>深蓝与亮蓝</td>
+<td>Deep blue with luminous blue</td>
 </tr>
 <tr>
 <td>蔷薇雾</td>
 <td>Rose Mist</td>
-<td>柔和紫灰与青色</td>
+<td>Muted violet with cyan</td>
 </tr>
 <tr>
 <td>紫晶</td>
 <td>Amethyst</td>
-<td>深紫与紫晶色</td>
+<td>Dark violet with purple</td>
 </tr>
 <tr>
 <td>琥珀旧梦</td>
 <td>Amber Retro</td>
-<td>复古米黄、深棕与橙色</td>
+<td>Retro cream and brown with orange</td>
 </tr>
 <tr>
 <td>墨川</td>
 <td>Ink River</td>
-<td>暖灰与靛蓝</td>
+<td>Warm gray with indigo</td>
 </tr>
 <tr>
 <td>苔境</td>
 <td>Mossland</td>
-<td>自然绿色</td>
+<td>Natural green</td>
 </tr>
 <tr>
 <td>日蚀</td>
 <td>Eclipse</td>
-<td>米黄、蓝黑与冷蓝色</td>
+<td>Cream and blue-black with cool blue</td>
 </tr>
 <tr>
 <td>天际</td>
 <td>Horizon</td>
-<td>浅蓝灰与金色</td>
+<td>Airy blue-gray with gold</td>
 </tr>
 <tr>
 <td>晴蓝</td>
 <td>Azure</td>
-<td>清爽现代蓝</td>
+<td>Clean contemporary blue</td>
 </tr>
 <tr>
 <td>黑白界</td>
 <td>Monochrome</td>
-<td>高对比黑白</td>
+<td>Accessibility-focused high contrast</td>
 </tr>
 <tr>
 <td>粉霞</td>
 <td>Blush Dawn</td>
-<td>白色主体与柔和玫瑰粉</td>
+<td>White surfaces with soft rose accents</td>
 </tr>
 <tr>
 <td>紫雾</td>
 <td>Lilac Mist</td>
-<td>白色主体与柔和淡紫色</td>
+<td>White surfaces with gentle lilac accents</td>
 </tr>
 </tbody></table>
-<h3>主题模式如何工作</h3>
-<p>这个插件只负责选择<strong>主题家族</strong>，不负责切换浅色或深色。</p>
-<p>DSH 自带的“外观”设置继续负责：</p>
+<h3>Design approach</h3>
+<p>Editor themes often differ mainly in syntax-token colors. DSH is a conversational interface, so many editor palettes become visually indistinguishable after adaptation. This package keeps one polished representative per visual cluster instead of exposing dozens of near-identical dark-blue or white-and-blue themes.</p>
+<h3>Features</h3>
 <ul>
-<li>浅色；</li>
-<li>深色；</li>
-<li>跟随系统。</li>
+<li>One unified gallery with no upstream-product categories.</li>
+<li>Search across 15 curated families.</li>
+<li>Uses DSH&#39;s native <strong>Light / Dark / Follow system</strong> appearance preference without disabling or replacing it.</li>
+<li>Applies the selected family through one <code>overrideTokens()</code> layer with complete <code>{ light, dark }</code> token pairs.</li>
+<li>Maps each family to DSH surfaces, text, borders, semantic states, sidebars, and button aliases.</li>
+<li>Stores only the selected family locally; DSH owns the appearance mode.</li>
+<li>Removes themes, UI, listeners, and styles when the plugin stops.</li>
+<li>Ships all runtime data and build output; no external theme applications or absolute paths are required.</li>
 </ul>
-<p>例如选择“粉霞 / Blush Dawn”后：</p>
-<ul>
-<li>DSH 外观选择浅色，使用粉霞浅色；</li>
-<li>DSH 外观选择深色，使用粉霞深色；</li>
-<li>DSH 外观选择跟随系统，会根据系统设置自动使用粉霞浅色或深色。</li>
-</ul>
-<p>插件不会把 DSH 的外观设置改成自定义主题 ID，也不会让原生“浅色 / 深色 / 跟随系统”失效。</p>
-<h3>使用方式</h3>
+<h3>Install</h3>
+<p>Clone the repository and install the package into a DSH Web profile:</p>
+<pre><code class="language-bash">git clone &lt;repository-url&gt;
+cd dsh-plugins
+dsh plugin --profile web add &quot;link:$PWD/packages/theme-gallery&quot;
+</code></pre>
+<p>After installation, restart the existing <code>dsh web</code> process and refresh its current URL. Do not start a second replacement server.</p>
+<blockquote>
+<p>After any profile install, verify that <code>~/.dsh/profiles/web/node_modules/@deepseek-ai</code> was not created as a physical directory. DSH core packages must resolve through the profile fallback symlinks to preserve Cordis/Tool Symbol identity.</p>
+</blockquote>
+<h3>Usage</h3>
 <ol>
-<li>打开 DSH 设置；</li>
-<li>进入“通用”；</li>
-<li>在“精选外观”下看到两条轨道：<ul>
-<li><strong>主题</strong> — 上面 15 个主题家族；</li>
-<li><strong>皮肤</strong> — 9 款完整的 dsh-web-ui 皮肤复刻（见下节）；</li>
+<li>Open <strong>Settings</strong>.</li>
+<li>Open <strong>General</strong>.</li>
+<li>Two tracks are shown side by side under <strong>精选外观 / Curated appearance</strong>:<ul>
+<li><strong>主题 / Themes</strong> — the 15 curated source-neutral token families described above.</li>
+<li><strong>皮肤 / Skins</strong> — 9 complete dsh-web-ui skin replicas (see below).</li>
 </ul>
 </li>
-<li>搜索或点击一个卡片；</li>
-<li>在 DSH 原生“外观”设置中选择浅色、深色或跟随系统。</li>
+<li>Use DSH&#39;s built-in <strong>Appearance</strong> control to choose Light, Dark, or Follow system.</li>
 </ol>
-<p>主题轨道与皮肤轨道互斥：激活其中一条会自动清退另一条。皮肤是<strong>会话级尝试（try-on）</strong>，
-刷新页面回到默认外观；若要永久皮肤请继续使用官方皮肤中心（<code>dsh-skin use</code>）。本插件不会
-改写官方 <code>skin-center</code> 的配置。</p>
-<h3>皮肤轨道</h3>
-<p>9 款皮肤 bundle 在构建期完整内嵌、运行期按需执行（不依赖任何外部/动态 URL）。每款皮肤都是
-上游 <code>apply()</code> 的忠实复刻（body 属性 + 注入 CSS + chrome DOM），由一层轻量引擎保证
-加载 → 应用 → 互斥切换 → 插件停止时全量回收。每款皮肤附带一份<strong>可访问性修正层</strong>
-（<code>skins/&lt;id&gt;/a11y.css</code>），只修对比度（WCAG AA）：主按钮白字在浅色/悬停填充、半透明代码块
-底色实体化。修正层绝不删除上游皮肤素材。</p>
+<p>The theme and skin tracks are mutually exclusive: activating one clears the other. Skins are
+<strong>session-level try-on</strong> (a refresh returns to the default look); for a persistent skin keep using
+the official skin center (<code>dsh-skin use</code>). No official <code>skin-center</code> configuration is modified.</p>
+<h3>Skins</h3>
+<p>Nine complete client bundles from <a href="https://github.com/zhu1090093659/dsh-web-ui"><code>@linxin666/dsh-skins</code></a>
+are embedded at build time and executed lazily on demand (no external/dynamic URL). Each skin is a
+full replica of the upstream <code>apply()</code> — body attribute, injected CSS and chrome DOM — wrapped by a
+thin engine that guarantees load → apply → mutual exclusion → full teardown on switch or plugin stop.
+A per-skin <strong>accessibility layer</strong> (<code>skins/&lt;id&gt;/a11y.css</code>) applies only contrast fixes (WCAG AA) on
+top of the skin styles: primary-button text on light/hover fills, and semi-transparent code blocks
+entity-ized for stable text contrast. The accessibility layer never deletes upstream skin material.</p>
 <table>
 <thead>
 <tr>
 <th>id</th>
 <th>中文名</th>
-<th>作者（skin.json）</th>
-<th>主色</th>
+<th>author (skin.json)</th>
+<th>accent</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -376,51 +387,21 @@ footer p+p{margin-top:.5rem}
 <td>#2e9bff</td>
 </tr>
 </tbody></table>
-<h3>安装</h3>
-<pre><code class="language-bash">git clone &lt;repository-url&gt;
-cd dsh-plugins
-dsh plugin --profile web add &quot;link:$PWD/packages/theme-gallery&quot;
-</code></pre>
-<p>安装后重启当前 <code>dsh web</code> 进程，并刷新原有页面地址。不要启动第二个 Web 服务。</p>
-<blockquote>
-<p>安装后检查 <code>~/.dsh/profiles/web/node_modules/@deepseek-ai</code> 是否变成真实目录。若是，需要按 DSH 本机规则移动备份，避免插件运行时出现符号不一致问题。</p>
-</blockquote>
-<h3>设计原则</h3>
-<h4>1. 主题数量少而清晰</h4>
-<p>很多编辑器主题主要差异来自代码语法颜色。移植到聊天界面后，最终往往都变成相近的深色背景加蓝色强调色。因此这个插件不把大量相近主题全部堆给用户，而是保留视觉差异明确的一组主题。</p>
-<h4>2. 白色主题不把整页染彩色</h4>
-<p>粉霞和紫雾以白色为主体，只在按钮、选中区域和边框上使用粉色或紫色，避免整页出现大面积彩色。</p>
-<h4>3. 不伪造缺失模式</h4>
-<p>每个公开主题家族都必须同时具备浅色和深色。缺少其中一套的主题不会进入公开画廊，确保“跟随系统”始终可靠。</p>
-<h4>4. 不依赖外部应用</h4>
-<p>主题数据和构建产物已经包含在插件目录中。普通用户安装后直接使用，不需要安装任何其他主题源应用，也不需要本机路径。</p>
-<h3>技术实现</h3>
-<p>插件使用 DSH 的 <code>overrideTokens()</code> 接口，为每个 token 同时提供：</p>
-<pre><code class="language-js">{
-  light: &#39;浅色值&#39;,
-  dark: &#39;深色值&#39;
-}
-</code></pre>
-<p>DSH 会根据原生外观设置自动选择当前应使用的值。插件只保存用户选择的主题家族，不保存、也不覆盖 DSH 的外观模式。</p>
-<h3>卸载行为</h3>
-<p>插件停止时会自动清理：</p>
-<ul>
-<li>主题 token 覆盖；</li>
-<li>皮肤轨道的全部副作用（body 属性、皮肤内置样式、a11y 样式、chrome DOM、模块表注册）；</li>
-<li>设置页面中的主题画廊；</li>
-<li>插入的样式；</li>
-<li>事件监听器。</li>
-</ul>
-<h3>致谢与许可证</h3>
-<p>本插件自身胶水代码（主题引擎、皮肤引擎、可访问性修正层、UI、构建）为 <strong>MIT</strong>。</p>
-<p>内置的 9 款皮肤资产来自上游仓库 <code>github.com/zhu1090093659/dsh-web-ui</code>（聚合包
-<code>@linxin666/dsh-skins</code>），为 <strong>BSD 3-Clause</strong> 作品，版权归 zhu1090093659（Copyright (c) 2026）。
-逐皮肤作者以各 <code>skin.json</code> 的 <code>author</code> 字段为准：<code>dsh-web-ui</code>（聚合包）、<code>powerdog996</code>
-（blue-fantasy，DreamSkin 社区）、<code>涂山苏苏</code>（miku）。完整 BSD-3 全文见 <code>skins/NOTICE.md</code>，
-每款皮肤对应 <code>skins/&lt;id&gt;/LICENSE</code>。</p>
+<h3>Attribution</h3>
+<p>The 15 source-neutral theme families described at the top are MIT-licensed original palette
+adaptations with no upstream syntax definitions to credit.</p>
+<p>The 9 skin assets are third-party BSD-3-Clause works from the upstream repository
+<code>github.com/zhu1090093659/dsh-web-ui</code> (aggregate <code>@linxin666/dsh-skins</code>), Copyright (c) 2026,
+zhu1090093659. Per-skin authorship follows each <code>skin.json</code> <code>author</code> field:
+<code>dsh-web-ui</code> (the aggregate), <code>powerdog996</code> (blue-fantasy, DreamSkin community) and <code>涂山苏苏</code>
+(miku). Full per-skin license text lives in <code>skins/&lt;id&gt;/LICENSE</code> and the consolidated listing in
+<code>skins/NOTICE.md</code>.</p>
+<h3>License</h3>
+<p>The package glue (theme engine, skin engine, accessibility layer, UI, build) is <strong>MIT</strong>. The bundled
+skin assets are <strong>BSD 3-Clause</strong> — see <code>skins/NOTICE.md</code> and each <code>skins/&lt;id&gt;/LICENSE</code>.</p>
 
     </div>
-    <p class="note"><a href="https://github.com/wsxwj123/dsh-plugins/blob/main/packages/theme-gallery/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/wsxwj123/dsh-plugins/blob/main/packages/theme-gallery/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
@@ -434,7 +415,7 @@ dsh plugin --profile web add &quot;link:$PWD/packages/theme-gallery&quot;
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 569</span></h3><a class="desc-link" href="/zh/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</p></a></li>
+      <li><h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 570</span></h3><a class="desc-link" href="/zh/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</p></a></li>
       <li><h3><a href="/zh/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</p></a></li>
       <li><h3><a href="/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" translate="no">PAKIKNOWLEDGE/dsh-client-ui-skin-claude</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" tabindex="-1"><p>Claude 风格皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。</p></a></li>
       <li><h3><a href="/zh/p/tianyhjg-lab/dsh-font/" translate="no">tianyhjg-lab/dsh-font</a><span class="stars" translate="no">★ 0</span></h3><a class="desc-link" href="/zh/p/tianyhjg-lab/dsh-font/" tabindex="-1"><p>DSH Web GUI 字体切换器：99 个界面字体与 31 个代码字体，中西文自动搭配，即选即生效，localStorage 持久化。</p></a></li>

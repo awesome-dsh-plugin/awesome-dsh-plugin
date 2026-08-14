@@ -190,74 +190,75 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://x.com/anion_ex"><img src="https://img.shields.io/badge/-@anion__ex-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a></p>
-<p><a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/README.md">English</a></p>
-<p>为 DeepSeek Harness 提供 Turn 级项目文件恢复，并可选择从恢复后的这一轮继续新对话。</p>
-<p><strong>Turn Rewind</strong> 是用户看到的功能名、仓库名和 Profile Bundle 名。<strong>Change Ledger</strong> 是底层持久恢复引擎；<code>ctx.changeLedger</code> 服务、磁盘格式和存储路径继续保留这个名字，因为它们描述的是可复用的快照与恢复层，而不只是 Web 上的回退按钮。</p>
-<p>它给 DSH Session 增加一条明确的安全边界：</p>
-<pre><code class="language-text">创建恢复点
-    ↓
-Agent / 用户 / 外部程序修改工作树
-    ↓
-预览逐路径变化
-    ↓
-审阅全部或部分恢复计划
-    ↓
-在回退弹窗中按下最终恢复按钮
-    ↓
-先建救援点 → 恢复 → 哈希验证
+<p><a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/README.zh.md">中文说明</a></p>
+<p>Message-anchored project-file recovery for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>, with an option to restart from the restored request.</p>
+<p><strong>Turn Rewind</strong> is the user-facing feature, repository, and Profile Bundle name. <strong>Change Ledger</strong> is the durable restore engine underneath it: the <code>ctx.changeLedger</code> service, on-disk format, and storage path keep that name because they describe the reusable snapshot and recovery layer rather than the Web action alone.</p>
+<p>Change Ledger gives a DSH session an explicit safety boundary around workspace mutations:</p>
+<pre><code class="language-text">create restore point
+        ↓
+agent / user / external tools modify the worktree
+        ↓
+preview exact path-level drift
+        ↓
+review a full or selective restore plan
+        ↓
+press the final restore button in the rewind dialog
+        ↓
+create rescue point → restore → verify
 </code></pre>
-<p>插件<strong>不会</strong>自动 commit、stash、reset、切分支、修改 Git index，也不会替用户判断某项改动“应该回滚”。</p>
-<h3>效果预览</h3>
-<p>每条用户消息下方依次显示时间、DSH 原生“复制”和第三个纯图标“回退”：</p>
-<p><img src="https://raw.githubusercontent.com/Anionex/dsh-turn-rewind/main/docs/assets/turn-rewind-action.png" alt="用户消息下方的 Turn Rewind 图标"></p>
-<p>打开后会先展示受影响文件，可选择“恢复文件并从这里继续”或“只恢复文件”：</p>
-<p><img src="https://raw.githubusercontent.com/Anionex/dsh-turn-rewind/main/docs/assets/turn-rewind-dialog.png" alt="Turn Rewind 审阅弹窗"></p>
-<h3>为什么底层需要 Change Ledger</h3>
-<p>普通 Git 面板可以展示当前 diff，但不拥有完整、持久的恢复生命周期。Change Ledger 独立负责：</p>
+<p>It never commits, stashes, resets, switches branches, edits the Git index, or decides automatically that a change should be reverted.</p>
+<h3>Preview</h3>
+<p>Rewind appears as an icon-only third action under each user message, after its timestamp and native Copy action:</p>
+<p><img src="https://raw.githubusercontent.com/Anionex/dsh-turn-rewind/main/docs/assets/turn-rewind-action.png" alt="Turn Rewind action under a user message"></p>
+<p>Opening it shows the affected files and offers two choices: restore the files and restart from before that message, or restore only the files:</p>
+<p><img src="https://raw.githubusercontent.com/Anionex/dsh-turn-rewind/main/docs/assets/turn-rewind-dialog.png" alt="Turn Rewind review dialog"></p>
+<h3>Why it has a Change Ledger engine</h3>
+<p>A diff button can show current changes, but it does not own a durable restore lifecycle. Change Ledger owns:</p>
 <ul>
-<li>内容寻址的恢复点 manifest；</li>
-<li>Git worktree、HEAD、分支和进行中 Git 操作的状态围栏；</li>
-<li>从审阅到执行之间的 stale plan 检测；</li>
-<li>短期确认码与 DSH 人工批准双门槛；</li>
-<li>每次恢复前自动建立救援点；</li>
-<li>恢复后的内容哈希验证；</li>
-<li>恢复失败后的自动回滚；</li>
-<li>DSH 重启时对未完成操作日志进行对账；</li>
-<li>可供其他插件依赖的 <code>ctx.changeLedger</code> 公共服务。</li>
+<li>content-addressed restore-point manifests;</li>
+<li>Git worktree, HEAD, branch, and in-progress-operation fences;</li>
+<li>stale-plan detection between review and mutation;</li>
+<li>exact two-step confirmation plus DSH human approval;</li>
+<li>automatic pre-restore rescue points;</li>
+<li>post-restore hash verification;</li>
+<li>rollback after a failed restore;</li>
+<li>startup reconciliation of interrupted restore journals;</li>
+<li>a public <code>ctx.changeLedger</code> service that other plugins can consume.</li>
 </ul>
-<p>持久格式见 <a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/docs/FORMAT.md">docs/FORMAT.md</a>，安全与故障模型见 <a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/SECURITY.md">SECURITY.md</a>。</p>
-<h3>安全契约</h3>
+<p>The durable format is documented in <a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/docs/FORMAT.md">docs/FORMAT.md</a>. The security and failure model is documented in <a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/SECURITY.md">SECURITY.md</a>.</p>
+<h3>Safety contract</h3>
 <ul>
-<li>**只做显式操作：**任何恢复都不会自动发生——每一次恢复都从用户在 Web 弹窗中按下最终按钮开始，或来自对服务 API 的显式调用。</li>
-<li>**先读后写：**弹窗预览基于当前工作树生成短期、会话绑定的计划，不修改任何文件。</li>
-<li>**人工门禁：**弹窗中审阅受影响文件并按下最终恢复按钮就是人的决定；没有实时会话绑定计划对的直接修改请求一律 fail closed。</li>
-<li>**先救援再修改：**恢复任何文件前，先持久化当前 eligible tree 的救援点。</li>
-<li>**不静默漏文件：**遇到 submodule、sparse checkout、超限文件、总量超限或特殊文件类型时，创建恢复点直接失败。</li>
-<li>**不允许路径逃逸：**所有持久路径必须是规范的工作树相对路径；恢复拒绝穿过 symlink 父目录，也拒绝覆盖非空目录。</li>
-<li>**不覆盖审阅后的新变化：**执行时重新检查所选路径，以及审阅过的 HEAD、分支和 Git 操作状态；任何相关变化都会使计划失效。</li>
-<li>**不碰 Git 控制面：**index、分支、HEAD、stash 和 commit 均保持原样。</li>
+<li><strong>Explicit only:</strong> nothing is restored automatically — every restore starts from the user pressing the final button in the Web dialog, or from an explicit call through the service API.</li>
+<li><strong>Read before write:</strong> the dialog preview generates an expiring, session-bound plan from the current tree and changes no files.</li>
+<li><strong>Human gate:</strong> the dialog&#39;s reviewed impact plus the final restore button is the human decision; direct mutation requests without a live session-bound plan pair fail closed.</li>
+<li><strong>Rescue before mutation:</strong> every restore captures the current eligible tree as a durable rescue point before changing a path.</li>
+<li><strong>No silent omission:</strong> unsupported submodules, sparse checkouts, oversized files, aggregate limits, and unsupported file types fail point creation.</li>
+<li><strong>No path escape:</strong> every durable path is canonical and workspace-relative; restore refuses symlink parents and non-empty directory replacement.</li>
+<li><strong>No stale overwrite:</strong> selected paths and the reviewed HEAD/branch/operation fence are checked again at apply time. Any relevant post-review change invalidates the plan.</li>
+<li><strong>No Git control-plane mutation:</strong> the index, branch, HEAD, stash, and commits remain untouched.</li>
 </ul>
-<h3>支持范围</h3>
-<p><code>0.1</code> 只支持普通 Git worktree：</p>
+<h3>Scope</h3>
+<p>Version <code>0.1</code> intentionally supports normal Git worktrees only:</p>
 <ul>
-<li>tracked 文件，包括恢复点创建时已经缺失的 tracked 路径；</li>
-<li>未被 <code>.gitignore</code> 或 Git 标准 excludes 忽略的 untracked 文件；</li>
-<li>文本和二进制普通文件；</li>
-<li>符号链接；</li>
-<li>可执行位等可移植权限位。</li>
+<li>tracked files, including currently missing tracked paths;</li>
+<li>untracked files not excluded by <code>.gitignore</code> or other standard Git excludes;</li>
+<li>regular files, binary or text;</li>
+<li>symbolic links;</li>
+<li>executable and other portable permission bits.</li>
 </ul>
-<p>下列对象会被拒绝或明确排除：</p>
+<p>The following are rejected or deliberately outside the snapshot:</p>
 <ul>
-<li>sparse checkout；</li>
-<li>submodule gitlink（应分别进入每个 submodule 建恢复点）；</li>
-<li>ignored 文件；</li>
-<li>socket、设备、FIFO 等特殊文件；</li>
-<li>扩展属性、ACL、所有者、时间戳和 hard-link 拓扑；</li>
-<li>Git index 和仓库元数据；</li>
-<li>非 Git 目录。</li>
+<li>sparse checkouts;</li>
+<li>submodule gitlinks (create a restore point inside each submodule instead);</li>
+<li>ignored files;</li>
+<li>special files, sockets, devices, and named pipes;</li>
+<li>extended attributes, ACLs, ownership, timestamps, and hard-link topology;</li>
+<li>the Git index and repository metadata;</li>
+<li>non-Git directories.</li>
 </ul>
-<p>如果 ignored 或其他未受管理的文件占据了待恢复路径，插件会拒绝恢复，不会递归删除它。</p>
-<h3>安装</h3>
+<p>If an ignored or otherwise unmanaged file occupies a path that restoration would replace, the restore fails rather than deleting it.</p>
+<h3>Install</h3>
+<p>Build the checked-out plugin, then add it to each DSH profile that should expose the service:</p>
 <pre><code class="language-sh">pnpm install --frozen-lockfile
 pnpm run check
 
@@ -266,35 +267,35 @@ dsh plugin --profile headless add @anionex/dsh-turn-rewind
 
 dsh --profile web --dump-config | grep turn-rewind
 </code></pre>
-<p>修改 Profile Bundle 后需要重启对应 DSH 进程。</p>
-<p>本仓库是标准 DSH Profile Bundle：<code>package.json</code> 声明 <code>dsh.bundle.patch</code>，<code>cordis.patch.yml</code> 直接挂载 <code>@anionex/dsh-turn-rewind</code>，不修改 DSH 主仓库。</p>
-<p>当 Profile 同时提供 DSH Agent 服务时，插件会在每轮第一次 <code>agent/pre-step</code>、Agent 开始处理用户消息之前保存隐藏文件状态。保存失败只会让该消息无法回退，不会拦住用户这一轮。Web Profile 还会提供同源 <code>/turn-rewind</code> 接口：根据所选 <code>user/message</code> 序号找到对应状态，分页返回文件预览，生成短期、会话绑定的恢复授权，并把新对话创建交给 DSH 官方 Host create/fork 生命周期。插件绝不会自动恢复文件。</p>
-<h3>使用流程</h3>
-<p>在 Web Profile 中，每条用户消息下方都会在时间和原生“复制”之后显示一个紧凑、无文字的<strong>回退</strong>图标，提示是“恢复到发送这条消息之前”。图标使用明确的向后/撤销箭头，而不是“重试”圆形箭头。打开后会检查保存的文件状态，先显示简洁预览，需要时可“查看全部文件”，并提供两种模式：</p>
+<p>Restart a running profile after changing its bundle list.</p>
+<p>The package is a DSH Profile Bundle. <code>package.json</code> declares <code>dsh.bundle.patch</code>, and <code>cordis.patch.yml</code> mounts <code>@anionex/dsh-turn-rewind</code> without a DSH core patch.</p>
+<p>When the profile also provides the DSH Agent service, the plugin captures a hidden checkpoint in the first <code>agent/pre-step</code> waterfall before the Agent processes the opening user message. Capture failures are reported but do not reject the user&#39;s turn; the corresponding message simply has no usable rewind point. In Web profiles, the same-origin <code>/turn-rewind</code> endpoint resolves the selected <code>user/message</code> sequence, exposes a paged file preview, mints a short-lived session-bound restore plan, and delegates child creation to DSH&#39;s official Host create/fork lifecycle. It never restores files automatically.</p>
+<h3>User flow</h3>
+<p>In the Web profile, each direct user message gains a compact, icon-only <strong>Rewind</strong> action after its timestamp and native Copy control. The tooltip reads “Return to before sending this message.” Opening Rewind checks the saved file state, shows a concise preview with a “view all files” action, and offers two modes:</p>
 <table>
 <thead>
 <tr>
-<th>模式</th>
-<th>代码</th>
-<th>对话</th>
+<th>Mode</th>
+<th>Code</th>
+<th>Conversation</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>恢复文件并从这里继续</strong>（默认）</td>
-<td>自动备份当前状态后恢复项目文件。</td>
-<td>创建一个从这里开始的新会话（当前对话会保留）。</td>
+<td><strong>Restore files and restart</strong> (default)</td>
+<td>Restores the project files after automatically backing up their current state.</td>
+<td>Creates and opens a Session ending before the selected message, then puts that message&#39;s text back in the composer.</td>
 </tr>
 <tr>
-<td><strong>只恢复文件</strong></td>
-<td>自动备份当前状态后恢复项目文件。</td>
-<td>当前 Session 保持原位且内容不变。</td>
+<td><strong>Restore files only</strong></td>
+<td>Restores the project files after automatically backing up their current state.</td>
+<td>Leaves the current Session open and unchanged.</td>
 </tr>
 </tbody></table>
-<p>弹窗和最终主按钮就是确认流程，不再要求重复勾选。文件会按实际结果显示为“恢复之前的版本”“找回文件”“移除后来新增的文件”“恢复文件权限”或“恢复之前的文件类型”。如果项目文件已经是发送所选消息之前的状态，Turn Rewind 不会退化为“分支新对话”，而是提示无需恢复并引导用户使用原生的<strong>分支新对话</strong>按钮。</p>
-<p>真正修改前，Turn Rewind 会再次检查所选文件和项目版本状态，并先创建自动备份。预览后出现的新变化会让本次恢复失效。同一工作树只要还有正在运行的 Agent（包括当前来源 Session），恢复就会被阻止；仅处于空闲状态的 Session 不会阻止恢复。已经审阅过的 HEAD 或分支变化不会阻止恢复：commit、分支、HEAD 和 index 都保持不变，恢复后的内容可能表现为当前 HEAD 上的未提交修改。Git 正在合并、变基等操作时仍会阻止。如果“恢复文件并从这里继续”在创建新对话时失败，Change Ledger 会自动从备份恢复操作前的文件。</p>
-<p>DSH Session 日志只追加不改写，因此“恢复文件并从这里继续”会创建新 Session，而不是截断原对话。选中第一条消息时，Host 会在同一目录创建空 Session；选中后续消息时，会在上一轮 <code>turn/end</code> 处分叉。只有所选 <code>user/message</code> 和对应的精确 <code>turn/start</code> 都低于每一层持久 <code>seedLength</code> 时，子 Session 才能复用祖先保存的状态；子 Session 自己的状态优先，兄弟分支绝不混用。<strong>分支新对话</strong>只创建对话分支且保持项目文件不变；<strong>Turn Rewind</strong>一定恢复项目文件，再由用户决定是否创建新对话并把原消息文字填入新对话的输入框。原 Session 始终保留。</p>
-<h3>配置</h3>
-<p>在 Profile 的 patch 层覆盖：</p>
+<p>The dialog itself is the confirmation: there is no duplicate checkbox. It describes each file as restoring an earlier version, finding a deleted file, removing a later-added file, or restoring permissions/type. If the project files already match the state before the selected message, Turn Rewind performs no action and directs the user to the native <strong>Branch</strong> button for conversation-only branching.</p>
+<p>Before mutation, Turn Rewind rechecks the selected files and repository state, then creates an automatic backup. Changes made after preview invalidate the operation. Any running Agent using the same worktree, including the source Session, blocks restoration; idle Sessions do not block. A reviewed HEAD or branch difference does not block restoration: commits, refs, branch, and index remain unchanged, so restored content may appear as ordinary uncommitted changes against the current HEAD. An in-progress Git operation still blocks. If child creation fails after “restore and restart,” Change Ledger automatically restores the pre-operation files from the backup.</p>
+<p>DSH Session logs are append-only, so “restart” creates a new Session instead of truncating the original. For the first message, the Host creates a blank Session in the same working directory; for later messages, it forks at the previous completed <code>turn/end</code>. A child may reuse an ancestor&#39;s prompt checkpoint only while both the selected <code>user/message</code> and its exact <code>turn/start</code> remain inside every durable <code>seedLength</code> fence. Direct child checkpoints take priority and sibling checkpoints never mix. <strong>Branch</strong> creates only a conversation branch and keeps project files unchanged; <strong>Turn Rewind</strong> always restores project files, optionally followed by a new conversation with the selected prompt restored to the composer. The original Session is always retained.</p>
+<h3>Configuration</h3>
+<p>Override configuration in the profile patch layer:</p>
 <pre><code class="language-yaml">- id: turn-rewind
   config:
     storageDir: ~/.dsh/change-ledger/v1
@@ -306,12 +307,12 @@ dsh --profile web --dump-config | grep turn-rewind
     planTtlMs: 900000
     staleLockMs: 30000
 </code></pre>
-<p>所有容量与用户恢复点数量限制都采用 fail loud。自动 Turn 检查点使用独立的每会话保留窗口，并且只清理自己最旧的检查点；用户和救援恢复点永远不会被静默删除。未配置时，<code>storageDir</code> 使用 <code>$DSH_HOME/change-ledger/v1</code>，未设置 <code>DSH_HOME</code> 时回退到 <code>~/.dsh/change-ledger/v1</code>；它不得与被管理 worktree 重叠。</p>
-<h3>故障恢复</h3>
-<p>任何路径写入前，插件都会先创建救援点和持久 operation journal。如果 DSH 在非终态操作期间退出，下次启动会把该操作标记为 <code>interrupted</code>；如果另一个仍存活的 DSH 进程持有工作树锁，则不会误判其操作。</p>
-<p>恢复通过公开的 <code>ctx.changeLedger</code> 服务 API 进行：用 <code>listRecovery</code> 找到操作的 <code>rescuePointId</code>，用 <code>inspect</code> 审阅该救援点，再对相关路径走 <code>planRestore</code>/<code>applyRestore</code>。救援点在被显式删除前始终是普通、可检查的恢复点。</p>
-<h3>公共服务</h3>
-<p>其他 Cordis 插件可以注入 <code>changeLedger</code>，直接调用结构化 API：</p>
+<p>All size and user-point retention limits fail loudly. Automatic turn checkpoints have a separate per-session retention window and prune only their own oldest checkpoints; user and rescue restore points are never silently pruned. When omitted, <code>storageDir</code> resolves to <code>$DSH_HOME/change-ledger/v1</code> and falls back to <code>~/.dsh/change-ledger/v1</code>; it must not overlap the managed worktree.</p>
+<h3>Recovery</h3>
+<p>Before writing any path, a restore creates a rescue point and a durable operation journal. If DSH stops with a non-terminal journal, the next plugin startup marks it <code>interrupted</code> unless another live DSH process still owns that workspace lock.</p>
+<p>Recovery uses the public <code>ctx.changeLedger</code> service API: <code>listRecovery</code> finds the operation&#39;s <code>rescuePointId</code>, <code>inspect</code> reviews that rescue point, then <code>planRestore</code>/<code>applyRestore</code> handle the affected paths. Rescue points remain ordinary, inspectable restore points until explicitly deleted.</p>
+<h3>Public service</h3>
+<p>Other Cordis plugins can inject <code>changeLedger</code> and call the same lifecycle through the structured service API:</p>
 <pre><code class="language-ts">export const inject = [&#39;changeLedger&#39;]
 
 export async function apply(ctx: Context) {
@@ -320,22 +321,22 @@ export async function apply(ctx: Context) {
     sessionId: &#39;session-id&#39;,
     label: &#39;before refactor&#39;,
   })
-  // point.id 是持久恢复点 ID。
+  // point.id is a durable restore-point id.
 }
 </code></pre>
-<p>完整格式类型从 <code>@anionex/dsh-turn-rewind/format</code> 导出；可信集成和测试可以从 <code>@anionex/dsh-turn-rewind/core</code> 使用独立 Engine。</p>
-<h3>开发</h3>
+<p>The complete exported types are available from <code>@anionex/dsh-turn-rewind/format</code>; the engine is available from <code>@anionex/dsh-turn-rewind/core</code> for non-Cordis tests and trusted integrations.</p>
+<h3>Development</h3>
 <pre><code class="language-sh">pnpm install --frozen-lockfile
 pnpm run check
 </code></pre>
-<p>测试会创建真实的临时 Git 仓库，覆盖全部/部分恢复、stale plan、ignored 路径冲突拒绝、HEAD 变化、救援回滚、崩溃对账、活动锁保护、持久状态完整性、symlink、容量限制、sparse checkout、submodule、删除和 blob GC。</p>
-<h3>关于</h3>
-<p>DSH Turn Rewind 由 <a href="https://anionex.me/">anionex</a> 维护。如果你想了解我后续的更多工作，欢迎在 <a href="https://x.com/anion_ex">X</a> 或 <a href="https://github.com/Anionex">GitHub</a> 关注我。</p>
-<h3>许可证</h3>
-<p>BSD-3-Clause，见 <a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/LICENSE">LICENSE</a>。</p>
+<p>The test suite creates real temporary Git repositories and covers full/selective restore, stale plans, ignored-path collision refusal, HEAD drift, rescue rollback, crash reconciliation, active-lock preservation, durable-state integrity, symlinks, size limits, sparse checkouts, submodules, deletion, and blob garbage collection.</p>
+<h3>About</h3>
+<p>DSH Turn Rewind is maintained by <a href="https://anionex.me/">anionex</a>. If you would like to follow my future work, <a href="https://x.com/anion_ex">follow me on X</a> or <a href="https://github.com/Anionex">GitHub</a>.</p>
+<h3>License</h3>
+<p>BSD-3-Clause. See <a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/LICENSE">LICENSE</a>.</p>
 
     </div>
-    <p class="note"><a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/README.zh.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/Anionex/dsh-turn-rewind/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

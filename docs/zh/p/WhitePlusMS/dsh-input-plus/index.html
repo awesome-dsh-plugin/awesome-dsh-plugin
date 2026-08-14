@@ -190,106 +190,107 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
-<p><a href="https://github.com/WhitePlusMS/dsh-input-plus/blob/main/README-ZH.md">中文说明</a></p>
-<p>An input composer enhancement plugin for the DSH Web UI. On the Host side, it builds an index of the active workspace. In the browser, it connects to DSH&#39;s official <code>@</code> input trigger so files and directories can be searched and inserted into the composer. Type <code>/h</code> to open a candidate menu of previous prompts from the current Session.</p>
-<p><img src="https://raw.githubusercontent.com/WhitePlusMS/dsh-input-plus/main/docs/image1.png" alt="File reference candidate menu"></p>
-<p><img src="https://raw.githubusercontent.com/WhitePlusMS/dsh-input-plus/main/docs/image2.png" alt="Input history menu"></p>
-<h3>Features</h3>
-<h4><code>@</code> file and directory path selection</h4>
-<p>Type <code>@</code> in the DSH composer, then continue with a file name, directory name, or path fragment. The candidate menu lists files and directories from the current Session workspace. After selection, the draft keeps a plain-text path reference, for example:</p>
+<p><a href="https://github.com/WhitePlusMS/dsh-input-plus/blob/main/README.md">English README</a></p>
+<p>DSH Web UI 的输入框增强插件。它在 Host 侧建立当前工作区的文件索引，在浏览器侧接入 DSH 官方的 <code>@</code> 输入触发器，让你可以在组合框中搜索并插入文件或目录路径。输入 <code>/h</code> 可以打开当前 Session 的历史问题候选菜单，方便复用以前的提问。</p>
+<p><img src="https://raw.githubusercontent.com/WhitePlusMS/dsh-input-plus/main/docs/image1.png" alt="文件引用候选菜单"></p>
+<p><img src="https://raw.githubusercontent.com/WhitePlusMS/dsh-input-plus/main/docs/image2.png" alt="输入历史候选菜单"></p>
+<h3>当前功能</h3>
+<h4><code>@</code> 文件和目录路径选择</h4>
+<p>在 DSH 组合框中输入 <code>@</code>，继续输入文件名、目录名或路径片段，候选菜单会列出当前 Session 工作区内的文件和目录。选中后，输入框中保留普通文本引用，例如：</p>
 <pre><code class="language-text">@src/contract.ts
 </code></pre>
-<p>The reference contains only the path. Sending the message does not read the file, expand the directory, or generate a directory manifest. When the model needs the target, it can inspect the path with the native workspace tools provided by the current Session.</p>
-<p>After selecting a directory, you can continue with an instruction:</p>
-<pre><code class="language-text">@src Find the code responsible for candidate ranking
+<p>引用只保留路径，不会在发送时读取文件正文、展开目录或生成目录清单。模型需要查看目标时，使用当前 Session 原生提供的工作区工具按需读取。</p>
+<p>选中目录后可以继续输入操作：</p>
+<pre><code class="language-text">@src 查找负责候选排序的代码
 </code></pre>
-<p>The official input-trigger pipeline owns the candidate menu, caret, and write-back behavior. This plugin does not replace the official textarea, send button, or candidate menu, and it does not take over native arrow-key behavior.</p>
-<h4><code>/h</code> input history</h4>
-<p>Type <code>/h</code> in the composer to open the history candidate menu through DSH&#39;s official <code>/</code> input trigger. You can continue typing a keyword to filter the results, for example:</p>
+<p>官方输入触发器负责候选菜单、光标和写回行为；本插件不会替换官方 textarea、发送按钮或候选菜单，也不会接管原生方向键行为。</p>
+<h4><code>/h</code> 输入历史</h4>
+<p>在组合框中输入 <code>/h</code>，会通过 DSH 官方的 <code>/</code> 输入触发器打开历史候选菜单。可以继续输入关键词筛选，例如：</p>
 <pre><code class="language-text">/h
 </code></pre>
-<p>The candidates contain only user prompts that were successfully submitted in the current Session, ordered from most recent to oldest.</p>
-<h3>Installation</h3>
-<p>Requires DSH <code>0.1.0-rc.6</code> or a compatible DSH Web profile. Install through the official DSH profile plugin flow:</p>
+<p>候选项只显示当前 Session 中已经成功提交过的用户问题，按最近使用顺序排列。</p>
+<h3>安装</h3>
+<p>需要 DSH <code>0.1.0-rc.6</code> 或兼容的 DSH Web profile。通过 DSH 官方 profile 插件流程安装：</p>
 <pre><code class="language-bash">dsh plugin --profile web add https://github.com/WhitePlusMS/dsh-input-plus/archive/refs/tags/v0.0.1.tar.gz
 </code></pre>
-<h3>Configuration</h3>
-<p>The plugin registers the <code>input-plus</code> settings namespace. The options used by workspace indexing and path resolution are:</p>
+<h3>配置</h3>
+<p>插件注册的设置命名空间为 <code>input-plus</code>。当前实际参与工作区索引和路径解析的配置如下：</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th align="right">Default</th>
-<th align="right">Range</th>
-<th>Description</th>
+<th>配置项</th>
+<th align="right">默认值</th>
+<th align="right">范围</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>maxIndexDepth</code></td>
 <td align="right"><code>3</code></td>
 <td align="right"><code>0–10</code></td>
-<td>Maximum workspace indexing depth</td>
+<td>工作区索引的最大目录深度</td>
 </tr>
 <tr>
 <td><code>maxIndexEntries</code></td>
 <td align="right"><code>200</code></td>
 <td align="right"><code>1–2000</code></td>
-<td>Maximum number of entries retained per candidate index</td>
+<td>每次候选索引最多保留的条目数</td>
 </tr>
 <tr>
 <td><code>referenceRoot</code></td>
 <td align="right"><code>&#39;&#39;</code></td>
-<td align="right">Absolute path or empty</td>
-<td>Overrides the current Session workspace; empty uses the Session workspace</td>
+<td align="right">绝对路径或空字符串</td>
+<td>覆盖当前 Session 工作区；为空时使用 Session workspace</td>
 </tr>
 </tbody></table>
-<h3>Development</h3>
-<p>Requirements: Node.js 18+ and pnpm.</p>
+<h3>开发</h3>
+<p>环境要求：Node.js 18+、pnpm。</p>
 <pre><code class="language-bash">pnpm install
 
-# TypeScript type checking
+# TypeScript 类型检查
 pnpm run typecheck
 
-# Run the in-process test suite
+# 运行进程内测试
 pnpm test
 
-# Build the Host and browser bundles
+# 构建 Host 和浏览器 bundle
 pnpm run build
 
-# Check that lib/client.js is synchronized with the source
+# 检查 lib/client.js 是否与源码同步
 pnpm run check:client
 </code></pre>
-<p>The build has two parts:</p>
+<p>构建包括两部分：</p>
 <ul>
-<li><code>tsc -p tsconfig.build.json</code> generates the Host code and declaration files;</li>
-<li><code>scripts/build-client.mjs</code> uses the TypeScript Compiler API to generate <code>lib/client.js</code> in-process, avoiding an esbuild service subprocess in restricted environments.</li>
+<li><code>tsc -p tsconfig.build.json</code> 生成 Host 代码和声明文件；</li>
+<li><code>scripts/build-client.mjs</code> 使用 TypeScript Compiler API 在进程内生成
+<code>lib/client.js</code>，避免 esbuild 原生服务进程在受限环境中启动失败。</li>
 </ul>
-<h3>Repository layout</h3>
+<h3>目录结构</h3>
 <pre><code class="language-text">src/
-  index.ts            Host plugin entry, settings, and HTTP routes
-  contract.ts         Minimal Host/Client wire contract
+  index.ts            Host 插件入口、设置和 HTTP 路由
+  contract.ts         Host/Client 共享的最小通信契约
   host/
-    files.ts          Workspace indexing, matching, and path safety
-    git.ts            Git modification state
-    settings.ts       Settings schema and defaults
-    workspace.ts      Session workspace resolution
+    files.ts          工作区索引、匹配和路径安全
+    git.ts            Git 修改状态读取
+    settings.ts       设置 schema 和默认值
+    workspace.ts      Session 工作区解析
   client/
-    index.ts          Browser plugin entry
-    input-source.ts   @ candidate source and path write-back
-    history-source.ts /h and /history candidate source and two-line menu styles
-    history-recorder.ts Current Session prompt recording
-    find.ts           Client candidate matching and ranking
-    file-icons.ts     Candidate icons
-    input-status.ts   Composer status dock
+    index.ts          浏览器插件入口
+    input-source.ts   @ 候选源和路径写回
+    history-source.ts /h、/history 候选源和两行菜单样式
+    history-recorder.ts 当前 Session 提交记录
+    find.ts           Client 候选匹配和排序
+    file-icons.ts     候选图标
+    input-status.ts   composer status dock
 scripts/
-  build-client.mjs    Browser bundle builder
-  test-runner.ts      In-process test entry
+  build-client.mjs    浏览器 bundle 构建器
+  test-runner.ts      进程内测试入口
 </code></pre>
-<h3>License</h3>
+<h3>许可证</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/WhitePlusMS/dsh-input-plus/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/WhitePlusMS/dsh-input-plus/blob/main/README-ZH.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">

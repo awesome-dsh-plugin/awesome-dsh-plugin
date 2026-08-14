@@ -189,39 +189,39 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a></p>
-<p>A Claude-style skin for the DSH Web GUI: warm-black canvas, clay accent, serif UI, follows the native light/dark theme.</p>
-<p><img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/dark.png" alt="Dark"> · <img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/light.png" alt="Light"></p>
-<h3>Features</h3>
+<p><a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a> <a href="https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/blob/main/README.en.md">English</a> | 中文</p>
+<p>Claude 风格的 DSH Web 界面皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。</p>
+<p><img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/dark.png" alt="暗色"> · <img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/main/docs/light.png" alt="亮色"></p>
+<h3>特性</h3>
 <ul>
-<li>Warm-black (#141413) canvas with an Anthropic clay (#d97757) accent</li>
-<li>Serif UI type (Georgia), monospace stack for code</li>
-<li>Slim scrollbars, clay selection/focus, pill badges</li>
-<li>Light and dark variants that follow the system theme</li>
+<li>暖黑（#141413）画布 + Anthropic 陶橙（#d97757）点缀</li>
+<li>衬线界面字体（Georgia），代码用等宽栈</li>
+<li>细滚动条、陶橙选中 / 焦点、胶囊徽章</li>
+<li>亮 / 暗双主题，跟随系统切换</li>
 </ul>
-<h3>Install</h3>
+<h3>安装</h3>
 <pre><code class="language-sh">dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
 </code></pre>
-<p>Restart <code>dsh web</code>, then refresh the page.</p>
-<h3>Switching</h3>
-<p>Only one skin is active at a time. Edit <code>~/.dsh/cordis.patch.yml</code>:</p>
-<pre><code class="language-yaml"># outside the dsh-skin managed section
+<p>装完重启 <code>dsh web</code>，刷新页面。</p>
+<h3>切换</h3>
+<p>同一时刻只启用一个皮肤。编辑 <code>~/.dsh/cordis.patch.yml</code>：</p>
+<pre><code class="language-yaml"># dsh-skin managed 段之外
 - insert:
     - id: ui-skin-claude
       name: &#39;@dsh-external/dsh-client-ui-skin-claude&#39;
 </code></pre>
-<p>(and add <code>disabled: true</code> to the currently active skin&#39;s row). The config watcher hot-reloads within seconds; refresh the page.</p>
-<h3>Uninstall</h3>
+<p>（并把当前启用皮肤的 <code>disabled: true</code> 加上。）配置 watcher 几秒内热加载，刷新页面生效。</p>
+<h3>卸载</h3>
 <ol>
-<li>Remove the <code>ui-skin-claude</code> insert row from <code>~/.dsh/cordis.patch.yml</code>.</li>
+<li>删除 <code>~/.dsh/cordis.patch.yml</code> 里的 <code>ui-skin-claude</code> insert 行</li>
 <li><code>dsh plugin --profile web remove @dsh-external/dsh-client-ui-skin-claude</code></li>
-<li>Restart <code>dsh web</code>.</li>
+<li>重启 <code>dsh web</code></li>
 </ol>
-<h3>License</h3>
+<h3>许可</h3>
 <p>MIT</p>
 
     </div>
-    <p class="note"><a href="https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/blob/main/README.en.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+    <p class="note"><a href="https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
   </section>
 
   <section class="panel">
@@ -235,7 +235,7 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 569</span></h3><a class="desc-link" href="/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p></a></li>
+      <li><h3><a href="/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 570</span></h3><a class="desc-link" href="/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p></a></li>
       <li><h3><a href="/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</p></a></li>
       <li><h3><a href="/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/wsxwj123/dsh-plugins--packages-theme-gallery/" tabindex="-1"><p>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</p></a></li>
       <li><h3><a href="/p/tianyhjg-lab/dsh-font/" translate="no">tianyhjg-lab/dsh-font</a><span class="stars" translate="no">★ 0</span></h3><a class="desc-link" href="/p/tianyhjg-lab/dsh-font/" tabindex="-1"><p>Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.</p></a></li>
