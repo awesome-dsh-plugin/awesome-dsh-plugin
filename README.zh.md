@@ -56,7 +56,7 @@ dsh plugin --profile web add dshmarket
 
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) - DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
 
-- [sereinmono/dsh-desktop-pet](https://github.com/sereinmono/dsh-desktop-pet) - DeepSeek Harness 桌面宠物：完全支持 Codex 桌宠格式，您可以使用 hatch-pet Skill 创建宠物或者利用 Petdex 来导入宠物。
+- [sereinmono/dsh-desktop-pet](https://github.com/sereinmono/dsh-desktop-pet) - DeepSeek Harness 桌面宠物：完全支持 Codex 桌宠格式，可使用 hatch-pet Skill 创建宠物，或通过 Petdex 导入宠物。
 
 - [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — DeepSeek Harness 的终端 UI（TUI）。
 - [openma-ai/deepseek-harness-tui](https://github.com/openma-ai/deepseek-harness-tui) — Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。
