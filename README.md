@@ -605,7 +605,7 @@ dsh plugin --profile web add dshmarket
 - [Jungod1121/dsh-anchored-standard](https://github.com/Jungod1121/dsh-anchored-standard) - Two-phase agent preset for DeepSeek V4 Pro: the first request sees only bash+read (Minimal-aligned bootstrap), then the full Standard tool catalog after the first tool call or reply; ships as an installer bundle plus a manual preset directory.
 - [cloader/dsh-taskboard](https://github.com/cloader/dsh-taskboard) - Task board for DSH: create tasks with project and model assignment, run them manually or on cron schedules; new sessions in a project automatically pick up its todo tasks and move them to in-review when done.
 - [PerryLink/dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) - Second-model auto-review on the approval answerer chain: a read-only reviewer subagent returns structured allow/deny verdicts with reasons, fail-closed by default.
-- [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) - aflare workflow tools: generate, validate and run local-first deterministic YAML workflow DAGs (WAL crash recovery, Saga compensation) through the local aflare binary, with 300+ templates built in.
+- [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) - Workflow tools for the local aflare binary: generate, validate and run local-first deterministic YAML workflow DAGs (WAL crash recovery, Saga compensation) through the local aflare binary, with 300+ templates built in.
 
 ### Notifications & Integrations
 
