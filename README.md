@@ -151,6 +151,7 @@ dsh plugin --profile web add dshmarket
 - [tianyhjg-lab/dsh-font](https://github.com/tianyhjg-lab/dsh-font) - Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.
 - [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) - DeepSeek-Chat-style blue-whale skin: brand #4D6BFE on light and dark, following the built-in appearance.
 - [chinaRXQ/dsh-wallpaper](https://github.com/chinaRXQ/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: image background with opacity, mask and blur controls.
+- [SamizuHM/dsh-client-ui-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp) - Windows XP Luna desktop for the DSH Web UI: a floating window manager with taskbar and desktop icons, plus the era-accurate Luna skin.
 
 
 ### Sessions & Messages
