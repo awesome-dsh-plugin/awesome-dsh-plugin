@@ -197,6 +197,7 @@ dsh plugin --profile web add dshmarket
 - [AKS1st/dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle) - Particle-network background overlay for the DSH Web shell: full-screen, click-through, zero runtime dependencies.
 
 ### Models & Providers
+- [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) - Unofficial Command Code LLM provider: registers a `commandcode` route with a live model catalog and reasoning-effort support.
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) - Visual GitHub login without a terminal: in-window device flow, token synced into the gh CLI, and host status/launch endpoints.
 
 - [dylan121322/llm-adaptive](https://github.com/dylan121322/llm-adaptive) - Adaptive model routing: per-request complexity classification with automatic provider routing.
