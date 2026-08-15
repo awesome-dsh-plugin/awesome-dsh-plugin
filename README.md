@@ -255,6 +255,7 @@ dsh plugin --profile web add dshmarket
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) - Stock queue plus edit, remove, steer, reorder, clear-all, and 10-second undo.
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) - Visual branch brainstorming that creates an isolated Session for each direction, automates parent, sibling, checkpoint, and return Handoffs, and provides a full tree tab with an optional Better Sidebar view.
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) - Persistent native rooms connecting independent DSH Sessions and provider-backed members, with direct and broadcast delivery and no built-in roles, scenarios, task board, or standalone dashboard.
+- [ishuowang/dsh-rolehub-bridge](https://github.com/ishuowang/dsh-rolehub-bridge) - Discovers and verifies RoleHub roles, starts each one in an independent role-scoped Session, and optionally exposes a native Room picker for inviting them.
 - [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) - Bring the deepseek.com web/app chat experience to DSH: edit your prompt and regenerate answers in place, with a per-message <i/N> version pager (tree model, stable across conversations).
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) - Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.
 
