@@ -216,6 +216,7 @@ dsh plugin --profile web add dshmarket
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) - Archived conversations list in the sidebar footer with read-only previews of the most recent messages, for sessions the product deliberately keeps hidden and unreopenable.
 - [cindyguyuehu123/dsh-mobile](https://github.com/cindyguyuehu123/dsh-mobile) - Use DSH from iPhone/iPad: an explicit-opt-in LAN reverse proxy (Host/Origin rewrite through the loopback trust fence, WebSocket upgrades included), iOS PWA chrome (home-screen icon, standalone meta, viewport-fit), and touch/mobile CSS (safe areas, keyboard lifting, composer row fit).
 - [yokesky/dsh-usage-lens](https://github.com/yokesky/dsh-usage-lens) - Usage statistics dashboard for the DSH Web UI: info cards, a 280-day GitHub-style activity heatmap, daily token trend, and model-usage donut chart.
+- [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) - Codex-style auto-hiding right-edge turn rail: edge-peek show/hide, per-turn tooltip, in-rail search, and a scrolling 30-turn window for long sessions.
 ### Themes & Appearance
 
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
