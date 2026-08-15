@@ -232,6 +232,8 @@ dsh plugin --profile web add dshmarket
 - [truelove-dreamer/dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) - Cross-session memory for the model: full-text search all past sessions (SQLite FTS5 via ctx.sessionQuery) and bring the strongest matching excerpts back into the current context.
 - [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) - One shared Obsidian vault for every agent: dependency-free Python core (search/promote/adjudicate/forget), vault template, dsh plugin (memory_search/show/submit/status).
 - [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) - Self-maintaining handoff memory per working directory and git branch: records turns, folds them into concise Markdown, and injects the result into future sessions from ~/.agent/agent-handoff, byte-compatible with pi-handoff.
+- [yangyongzhen/dsh-memory](https://github.com/yangyongzhen/dsh-memory) - Long-term memory injected at session start: preferences/facts/summaries/knowledge in global and per-project scopes, budgeted recall via `agent/pre-step`, durable JSON store.
+
 ### Tools & Capabilities
 - [x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) - A web-novel writing engine for DeepSeek Harness: parallel drafting, outlining and brainstorming with a separate DeepSeek key, lore and foreshadowing management, semantic vector retrieval, a corpus library, usage ledger, mechanical proofreading, and a local serialization plan.
 - [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) - Host-side Typert remote for dsh-tool-writing: serves project volumes, chapter status, corpus library, full-text search, evolution entries, and thread-graph data to the client writing panel.
@@ -340,6 +342,7 @@ dsh plugin --profile web add dshmarket
 - [dfycaly98931680/dsh-trajectory-governance](https://github.com/dfycaly98931680/dsh-trajectory-governance) - Agent trajectory governance and anomaly diagnosis: rebuilds flat session logs into multi-branch trajectory trees, detects loop deadlock, invalid retry, and goal drift, alerts with cost attribution, one-click interrupt and breakpoint fork via official APIs, independent GUI tab.
 - [Q1hangL/dsh-ask-guard](https://github.com/Q1hangL/dsh-ask-guard) - Cooperative timeout guard for ask_user_question: lost or unanswered questions resolve as a structured ASK_TIMEOUT instead of hanging the turn forever.
 - [Huang-zhishi/dsh-plugin-call-trace](https://github.com/Huang-zhishi/dsh-plugin-call-trace) - Persistent model tool-call trace recorder: every tool call is durably written to a JSONL file that survives restarts, queryable via a structured call_trace tool and a callTraceHistory service, with size rotation and an optional floating canvas UI add-on.
+
 ### Skills
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
 - [creght-dev/skills](https://github.com/creght-dev/skills) - Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.
@@ -385,6 +388,9 @@ dsh plugin --profile web add dshmarket
 - [severin-ye/uagent-sync#packages/dsh](https://github.com/severin-ye/uagent-sync/tree/master/packages/dsh) - Cross-device workspace backup, restore, and ecosystem update via the uagent-sync CLI.
 - [Noelune/dsh-agent-relay](https://github.com/Noelune/dsh-agent-relay) - Loopback-first multi-agent message relay: HMAC-authenticated broker plus dsh plugin (relay_send/recv/peers/history), zero-dependency CLI and Python clients, wire protocol v1.0.
 - [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) - Per-project scheduled prompts run as fresh headless agent sessions, with one-time, interval, and cron schedules plus durable run history.
+- [yangyongzhen/dsh-scheduler](https://github.com/yangyongzhen/dsh-scheduler) - Cron/one-shot scheduled tasks: run shell commands or fire webhooks on a schedule, with optional ServerChan/DingTalk/Feishu/webhook delivery of results.
+- [yangyongzhen/dsh-git-workflow](https://github.com/yangyongzhen/dsh-git-workflow) - Conventional-commit enforcement, changelog generation, PR summaries and branch pushes through the plain git CLI.
+
 ### Notifications & Integrations
 
 - [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) - Rings your phone over CallKit: `call_me` and `text_me` tools, plus optional turn-end and approval calls whose spoken answer is transcribed back into the session.
