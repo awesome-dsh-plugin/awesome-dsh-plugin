@@ -897,6 +897,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/x2802490130-prog/dsh-balance-float/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/Semidia/dsh-session-manager/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Semidia/dsh-session-manager/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Semidia/dsh-session-manager/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Semidia/dsh-session-manager/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/KinGao294/dsh-skin/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -4031,6 +4039,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/x2802490130-prog/dsh-balance-float/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/x2802490130-prog/dsh-balance-float/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/x2802490130-prog/dsh-balance-float/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/Semidia/dsh-session-manager/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Semidia/dsh-session-manager/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Semidia/dsh-session-manager/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Semidia/dsh-session-manager/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/KinGao294/dsh-skin/</loc>

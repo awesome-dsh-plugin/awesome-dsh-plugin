@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-15T01:06:37.661Z</updated>
+  <updated>2026-08-15T01:07:11.296Z</updated>
+  <entry>
+    <title>Semidia/dsh-session-manager</title>
+    <id>https://github.com/Semidia/dsh-session-manager</id>
+    <link href="https://github.com/Semidia/dsh-session-manager"/>
+    <updated>2026-08-15T01:07:11.296Z</updated>
+    <summary>Right-click session menu and sidebar session manager: pin, rename, archive, fork, export, copy cwd/id/deep link, and open in explorer or a new window.</summary>
+  </entry>
   <entry>
     <title>mexiaosqwq/dsh-web-mobile</title>
     <id>https://github.com/mexiaosqwq/dsh-web-mobile</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/liqichen/dsh-plugin-manager"/>
     <updated>2026-08-14T17:54:16.456Z</updated>
     <summary>GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.</summary>
-  </entry>
-  <entry>
-    <title>starslittle/dsh-blue-whale</title>
-    <id>https://github.com/starslittle/dsh-blue-whale</id>
-    <link href="https://github.com/starslittle/dsh-blue-whale"/>
-    <updated>2026-08-14T17:52:18.112Z</updated>
-    <summary>DeepSeek-Chat-style blue-whale skin: brand #4D6BFE on light and dark, following the built-in appearance.</summary>
   </entry>
 </feed>

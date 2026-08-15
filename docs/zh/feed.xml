@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-15T01:06:37.661Z</updated>
+  <updated>2026-08-15T01:07:11.296Z</updated>
+  <entry>
+    <title>Semidia/dsh-session-manager</title>
+    <id>https://github.com/Semidia/dsh-session-manager</id>
+    <link href="https://github.com/Semidia/dsh-session-manager"/>
+    <updated>2026-08-15T01:07:11.296Z</updated>
+    <summary>会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。</summary>
+  </entry>
   <entry>
     <title>mexiaosqwq/dsh-web-mobile</title>
     <id>https://github.com/mexiaosqwq/dsh-web-mobile</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/liqichen/dsh-plugin-manager"/>
     <updated>2026-08-14T17:54:16.456Z</updated>
     <summary>在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。</summary>
-  </entry>
-  <entry>
-    <title>starslittle/dsh-blue-whale</title>
-    <id>https://github.com/starslittle/dsh-blue-whale</id>
-    <link href="https://github.com/starslittle/dsh-blue-whale"/>
-    <updated>2026-08-14T17:52:18.112Z</updated>
-    <summary>复刻 DeepSeek Chat 蓝鲸配色的皮肤：主色 #4D6BFE，亮色/深色跟随系统外观。</summary>
   </entry>
 </feed>

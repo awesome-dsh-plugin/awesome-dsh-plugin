@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-15",
- "count": 392,
+ "count": 393,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1369,6 +1369,21 @@
    "npm": "dsh-balance-float",
    "stars": null,
    "install": "dsh plugin --profile web add dsh-balance-float",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-session-manager",
+   "owner": "Semidia",
+   "url": "https://github.com/Semidia/dsh-session-manager",
+   "page": "https://awesome-dsh-plugin.com/p/Semidia/dsh-session-manager/",
+   "category": "ui",
+   "description": {
+    "en": "Right-click session menu and sidebar session manager: pin, rename, archive, fork, export, copy cwd/id/deep link, and open in explorer or a new window.",
+    "zh": "会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Semidia/dsh-session-manager",
    "added": "2026-08-15"
   },
   {
