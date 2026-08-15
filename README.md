@@ -222,6 +222,7 @@ dsh plugin --profile web add dshmarket
 - [garrisonz/dsh-sidebar-width](https://github.com/garrisonz/dsh-sidebar-width) - Control the Web UI left sidebar width: lower the 264px drag minimum and optionally tune the drag maximum and the expanded default width, applied by a startup patch of the ui-layout bundle.
 - [loadingvx/deepseek-harness-workbench-plugin](https://github.com/loadingvx/deepseek-harness-workbench-plugin) - Fills in the Web UI's missing IDE workbench: resizable chat / editor / files-and-Git columns in Conversation, multi-tab file editing with save and new-file, workspace Terminal, a file tree with name filter and open-in-external-editor, SCM (stage/commit/push/pull, branch switch, Git graph, inline diffs), a status bar, and git_* model tools.
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) - Session change-review plugin for DeepSeek Harness: tracks write/edit tool calls per session and renders line-level diffs with customizable colors, with session isolation, subagent aggregation, and SSE live updates.
+- [baisama-cloud/dsh-custom-brand](https://github.com/baisama-cloud/dsh-custom-brand) - Customizable brand area for the Web UI: replace the whale logo and DeepSeek wordmark with local images, and edit the HARNESS badge text (double-click to change, right-click to reset).
 ### Themes & Appearance
 
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
