@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">BiBoyang/</span><wbr><span class="name">dsh-eval-harness</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 3</b></span>
+        <span>Star 数 <b>★ 4</b></span>
         <span>分类 <a href="/zh/dev/">开发与运行时</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -198,7 +198,11 @@ footer p+p{margin-top:.5rem}
 <li><code>eval_gate</code> 把本次报告与 baseline 报告对比，输出 <code>OVERALL=PASS|WARN|FAIL|N/A</code> 与退出码，供 CI 拦截回归。</li>
 </ol>
 <h3>安装</h3>
-<pre><code class="language-sh">dsh plugin --profile headless add github:boyang/dsh-eval-harness
+<p>已发布到 npm（<a href="https://www.npmjs.com/package/dsh-eval-harness"><code>dsh-eval-harness</code></a>）：</p>
+<pre><code class="language-sh">dsh plugin --profile headless add dsh-eval-harness
+# 或从 GitHub 源码安装：
+# dsh plugin --profile headless add github:boyang/dsh-eval-harness
+
 # 验证挂载
 dsh --profile headless --dump-config | grep dsh-eval-harness
 </code></pre>
@@ -239,6 +243,7 @@ dsh --profile headless --dump-config | grep dsh-eval-harness
 prompt: &quot;发给 agent 的内容&quot;      # 多行可用块标量 `|`
 require_plugins: [some-plugin]  # 可选，元信息
 tags: [fast]                    # 可选，标签；eval_run 的 tags 筛选按任一命中匹配
+retries: 1                      # 可选，失败重跑次数（非负整数，缺省用 eval_run 的全局 retries）
 assert:
   turn_end: completed           # turn/end 事件的 reason.kind
   tools_called: [tool_a]        # tool/call 名称序列须按序包含（保序子序列）
@@ -256,7 +261,18 @@ assert:
   tool_result_contains:         # 可选，指定工具至少一次结果的文本包含子串
     - name: tool_a
       contains: total
+  output_judge:                 # 可选，LLM 语义评审（结构断言全过后才调，判 FAIL 记 fail）
+    rubric: &quot;回答应解释原因而非只给结论&quot;
 </code></pre>
+<p><strong>LLM-as-judge（<code>output_judge</code>）</strong>：表达「解释原因而非只给结论」这类写不出正则的语义
+期望。定位是<strong>结构断言优先、judge 兜语义</strong>——一个 attempt 只有结构性断言全过后才会调
+judge（结构已失败不白烧 judge token）；judge 判 FAIL 时理由进该用例 <code>failures</code>
+（形如 <code>output_judge: &lt;理由&gt;</code>），判 PASS 不留任何痕迹。judge 走 OpenAI 兼容 chat
+completions 接口（零依赖，Node 内置 fetch），配置全靠环境变量：<code>EVAL_JUDGE_API_KEY</code>
+（缺省回落 <code>DEEPSEEK_API_KEY</code>，两者都无时报错）、<code>EVAL_JUDGE_BASE_URL</code>（默认
+<code>https://api.deepseek.com</code>）、<code>EVAL_JUDGE_MODEL</code>（默认 <code>deepseek-chat</code>）。judge 调用
+本身失败（HTTP 错误/超时/回复解析失败/无 key）按 <code>error</code> 处理而非 <code>fail</code>——infra 抖动
+不是断言失败，可被 <code>retries</code> 覆盖。</p>
 <p>报告里的 token 是分字段聚合：<code>total (in X+out Y+reas Z; cacheR A+cacheW B)</code>——prompt cache
 命中时 <code>inputTokens</code> 只剩零头、真实输入在 <code>cacheReadTokens</code>，分字段展示让 cache
 命中情况一眼可见。<code>max_tokens</code> 对 <code>total</code>（input+output+reasoning）生效：cacheRead 是
@@ -327,6 +343,13 @@ flow 序列、引号、数字/布尔/null、<code>|</code>/<code>&gt;</code> 块
 <td>否</td>
 <td><code>1</code></td>
 <td>并行跑用例的并发数；每条用例独占 session 根与 workspace，并行互不干扰</td>
+</tr>
+<tr>
+<td><code>retries</code></td>
+<td>integer</td>
+<td>否</td>
+<td><code>0</code></td>
+<td>失败重跑的全局默认次数；单条用例最多跑 retries+1 次，任一 attempt 全过即停（fail 和 error 含超时都触发重跑）；用例 yaml 的 <code>retries</code> 优先于此值</td>
 </tr>
 <tr>
 <td><code>tags</code></td>
@@ -446,7 +469,11 @@ REGRESSION echo-hello: pass -&gt; fail
 <p>真实 workflow 见 <a href="https://github.com/BiBoyang/dsh-eval-harness/blob/main/.github/workflows/eval.yml">.github/workflows/eval.yml</a>：<code>pnpm build &amp;&amp; pnpm test</code>
 后直调 <code>lib/runner.js</code> 的 <code>runEval</code> 跑 <code>cases/real/</code> 全量（真实 LLM，需仓库 secret
 <code>DEEPSEEK_API_KEY</code>），再用 <code>lib/gate.js</code> 的 <code>computeGate</code> 对比 <code>baseline/report.json</code>，
-按 <code>EXIT_CODE</code> 拦截；report 作为 artifact 留存。用例或 harness 代码变更会触发重跑。</p>
+按 <code>EXIT_CODE</code> 拦截；report 作为 artifact 留存。用例或 harness 代码变更会触发重跑，
+另有每日定时跑（近 24h 无新 commit 则跳过）。</p>
+<p>baseline 更新走 <a href="https://github.com/BiBoyang/dsh-eval-harness/blob/main/.github/workflows/update-baseline.yml">.github/workflows/update-baseline.yml</a>：
+Actions 页手动触发 → 全量重跑 → 覆盖 <code>baseline/report.json</code> 并开 PR（附报告摘要），
+人工复核后合并，不自动合入。</p>
 <p><code>baseline/report.json</code> 已入库（首轮全量评测人工复核：<code>read-image</code> 在无视觉能力模型上
 预期 fail，见上）。用例/断言口径变更时须重跑全量、人工复核后更新 baseline，否则 gate
 会把口径变化判成 WARN/FAIL。</p>
@@ -498,10 +525,10 @@ pnpm lint      # biome check（仅 lint，format 未启用）
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 165</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
+      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 168</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
       <li><h3><a href="/zh/p/Jayden-X-L/forkprobe/" translate="no">Jayden-X-L/forkprobe</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/zh/p/Jayden-X-L/forkprobe/" tabindex="-1"><p>同一任务并行试跑多个技能，对比结果选出最优。</p></a></li>
-      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 35</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
-      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 30</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
+      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 36</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
+      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
       <li><h3><a href="/zh/p/DietCokewithSugar/dsh-user-experience/" translate="no">DietCokewithSugar/dsh-user-experience</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/zh/p/DietCokewithSugar/dsh-user-experience/" tabindex="-1"><p>帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-plugin-check/" translate="no">omdsh-dev/dsh-plugin-check</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-plugin-check/" tabindex="-1"><p>插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。</p></a></li>
     </ul>

@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">ZK-Andy/</span><wbr><span class="name">dsh-continual-evolve</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 0</b></span>
+        <span>Stars <b>★ 3</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -194,19 +194,21 @@ footer p+p{margin-top:.5rem}
 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/actions/workflows/ci.yml"><img src="https://github.com/ZK-Andy/dsh-continual-evolve/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
 <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/package.json"><img src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933" alt="Node"></a>
-<a href=""><img src="https://img.shields.io/badge/tests-112%20passing-brightgreen" alt="Tests"></a>
-<a href=""><img src="https://img.shields.io/badge/status-all%20phases%20complete-ff69b4" alt="Status"></a></p>
+<a href=""><img src="https://img.shields.io/badge/tests-184%20passing-brightgreen" alt="Tests"></a>
+<a href=""><img src="https://img.shields.io/badge/status-all%20phases%20complete%20%C2%B7%20maintenance-ff69b4" alt="Status"></a></p>
 <p>Continual self-evolution for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>: a versioned, auditable, rollback-safe layer of harness state — prompt notes, memories, skills, and subagent specs — refined from session trajectories.</p>
 <blockquote>
-<p><strong>Status: all phases complete.</strong> Phase 2 adds a real system-prompt section:
-<code>prompt</code> entries are injected as additive prompt notes and <code>subagent</code>
-entries as reusable delegation specs — both capped (6/kind, 180 chars),
-inherited by subagents through the parent-session chain, and dropped
-entirely when the store is empty (zero token cost). On top of that,
-Phase 3&#39;s evaluation matrix runner (host-plane <code>subagents</code>, frozen
-runtime, structured-output cells) feeds a code-owned scoreboard; the
-non-regressive acceptance rule decides accept/reject with no model-written
-aggregates.</p>
+<p><strong>Status: all phases complete; in long-term maintenance.</strong> Phases 1–3
+shipped the full evolution loop: the pure-core engine, model tools and
+the <code>/evolve</code> command, the automatic review gate (turn-interval +
+compaction checkpoints, human approval for global edits), real
+system-prompt injection (prompt notes + delegation specs, zero token
+cost when empty), and the benchmark-driven validation loop (code-owned
+scoring, non-regressive acceptance, rubric ACL). Since then the plugin
+keeps growing with usage-driven enhancements — the memory layer (ranked
+injection, trajectory citations, archive), per-installation rubric keys,
+and plugin-owned file logging. See the Roadmap for the full shipped and
+candidate lists.</p>
 </blockquote>
 <h3>Background</h3>
 <p>This project started as a research question: <em>can a harness improve itself,
@@ -307,20 +309,24 @@ behave.</p>
 │   ├── command.ts        # /evolve command (incl. benchmark subcommands)
 │   ├── planner.ts        # ctx.llm planner
 │   ├── render.ts         # bounded prompt rendering
-│   ├── inject.ts         # dynamic system-prompt section (prompt notes + delegation specs)
-│   ├── auto.ts           # auto-review gate (turn/compaction triggers + audit)
+│   ├── inject.ts         # dynamic system-prompt section (prompt notes + delegation specs, ranked injection)
+│   ├── source.ts         # trajectory citations (sessionId + event seqs of distilled entries)
+│   ├── auto.ts           # auto-review gate (turn/compaction triggers + audit, global-aware view)
+│   ├── notify.ts         # gate visibility — follow-up notice after an approved auto-refine
 │   ├── goal.ts           # goal-driven evolution rounds (/evolve goal)
-│   ├── review.ts         # gate LLM judgment
+│   ├── review.ts         # gate LLM judgment (declines local duplicates of globally covered topics)
 │   ├── approval.ts       # human approval for global edits
 │   ├── skill.ts          # skill materialization ($DSH_HOME/skills/)
 │   ├── mount.ts          # hot-mounted skill plugins (loader.create + boot restore)
 │   ├── benchmark.ts      # benchmark store
-│   ├── rubric.ts         # rubric ACL (AES-256-GCM envelopes)
+│   ├── rubric.ts         # rubric ACL (AES-256-GCM envelopes, auto-generated local key)
+│   ├── logfile.ts        # plugin-owned file logging (JSONL exporter + rotation)
 │   ├── score.ts          # code-owned aggregation + acceptance rule
 │   ├── evaluate.ts       # evaluation matrix runner (structured-output subagents)
+│   ├── pool.ts           # bounded-concurrency worker pool for evaluation runs
 │   ├── store.ts          # store layout + snapshots + result history
 │   └── service.ts        # evolution engine (onApplied hook)
-└── test/                 # 16 files, 112 tests
+└── test/                 # 20 files, 184 tests
 </code></pre>
 <h3>In-session usage (after restart)</h3>
 <pre><code>/evolve                  help + current local store
@@ -328,6 +334,9 @@ behave.</p>
 /evolve history          applied refinements (ids for rollback)
 /evolve rollback &lt;id&gt;    deterministically revert a refinement
 /evolve plan [msg]       LLM planner against the current store
+/evolve archive &lt;id&gt;     hide an entry from injection (data kept, restorable)
+/evolve unarchive &lt;id&gt;   restore an archived entry
+/evolve log [tail N] [session &lt;id&gt;]  show the recent plugin log (default 50 lines; optional per-session filter)
 /evolve export &lt;path&gt;    backup the local store to JSON
 /evolve import &lt;path&gt;    restore a store from an export file
 /evolve mount &lt;skillId&gt;  hot-mount a skill entry as a live cordis plugin (tool: skill_&lt;name&gt;)
@@ -338,6 +347,45 @@ behave.</p>
 /evolve goal done        complete the evolution goal
 </code></pre>
 <p>Model-facing tools: <code>evolve_list</code>, <code>evolve_add</code>, <code>evolve_update</code>, <code>evolve_delete</code>, <code>evolve_rollback</code>.</p>
+<h3>Memory layer</h3>
+<p>Beyond the persisted store itself, three features keep injected memory
+&quot;understanding you&quot; as entries grow (gap analysis vs. Mem0 / Letta / Zep /
+LangMem; no external services — everything is pure functions):</p>
+<ul>
+<li><strong>Ranked injection</strong> — when a kind holds more than the 6-entry cap, the
+injected block no longer shows the fixed first six: entries are scored by
+relevance to the agent&#39;s most recent direct user messages (keyword/BM25
+level: title hits weigh 2×) and then by recency (<code>updated_at</code>, 30-day
+half-life), so the freshest <em>and most relevant</em> entries fill the cap. The
+empty-store zero-token behavior is unchanged.</li>
+<li><strong>Trajectory citations</strong> — every newly created entry records
+<code>metadata.sourceSession</code> + <code>metadata.sourceSeqs</code> pointing at the direct
+user messages it was distilled from (DSH sessions are event-sourced with
+contiguous seqs, so the citation expands back into the durable session
+log). Listings show <code>src=&lt;sessionId&gt;:&lt;seqs&gt;</code>; old entries are not migrated
+and never error.</li>
+<li><strong>Archive</strong> — <code>/evolve archive &lt;id&gt;</code> hides an entry from injection
+(<code>metadata.archivedAt</code>, data kept, rollback-compatible) and
+<code>/evolve unarchive &lt;id&gt;</code> restores it. Archived entries are marked
+<code>[archived]</code> in <code>evolve_list</code> and skipped by injection; the overflow count
+excludes them.</li>
+<li><strong>Global-aware gate</strong> — the auto-review gate and planner judge the merged
+global + local state with every entry&#39;s real scope labeled, so a topic
+already covered by a global entry is declined instead of being re-sedimented
+as a local duplicate.</li>
+</ul>
+<h3>Logging</h3>
+<p>Plugin-owned file logging: every cordis log message (from this plugin or any
+other) is appended to <code>&lt;dshHome&gt;/evolve/plugin.log</code> as JSONL (0600, rotated to
+<code>plugin.log.1</code> past <code>logMaxBytes</code>). It works no matter how <code>dsh web</code> is
+launched — no extra component to install, no startup-script dependency.
+View the tail with <code>/evolve log [tail N]</code>, or read the file directly:</p>
+<pre><code class="language-bash">tail -f ~/.dsh/evolve/plugin.log          # live
+/evolve log 100                            # last 100 lines in the chat
+</code></pre>
+<p>For live output in a foreground terminal, the official
+<code>@deepseek-ai/cordis-plugin-logger-console</code> plugin can be added to the
+profile (optional; the file log remains the baseline that always exists).</p>
 <h3>Benchmark-driven validation (Phase 3)</h3>
 <pre><code>/evolve benchmark new &lt;title&gt; [runs]                   create a benchmark (runs = repeats per case, default 1)
 /evolve benchmark add-case &lt;bid&gt; &lt;title&gt; &lt;statement&gt; &lt;rubric&gt;
@@ -353,8 +401,8 @@ run the same case × run matrix against the post-refinement state → the
 strictly improves with no case regressing (Self-Harness style). The model
 produces raw per-cell scores only; aggregation and decisions live in
 <code>src/score.ts</code>. Rubric isolation is by construction (the planner never sees
-rubric files); rejection is recorded and suggested for rollback (human in
-the loop, no auto-rollback).</p>
+rubric files); a rejection is recorded in the scoreboard and the refinement
+is rolled back automatically (<code>autoRollbackOnReject</code>, on by default).</p>
 <h4>Real recorded run (ACCEPT)</h4>
 <p>A live <code>dsh web</code> session, one case, one candidate — the first genuine
 acceptance:</p>
@@ -432,6 +480,11 @@ where the baseline was already perfect).</p>
 <td>output budget for the gate call</td>
 </tr>
 <tr>
+<td><code>notifyOnAutoReview</code></td>
+<td><code>true</code></td>
+<td>after an approved gate run that applied edits, queue a visible follow-up notice in the session (persisted entries + rollback command)</td>
+</tr>
+<tr>
 <td><code>requireGlobalApproval</code></td>
 <td><code>true</code></td>
 <td>cross-session (global) edits ask the user for &quot;批准&quot; before applying</td>
@@ -443,8 +496,28 @@ where the baseline was already perfect).</p>
 </tr>
 <tr>
 <td><code>rubricKey</code></td>
-<td><code>DSH_EVOLVE_RUBRIC_KEY</code> → dev key</td>
-<td>passphrase for AES-256-GCM rubric encryption (benchmark rubrics never touch the disk in plaintext)</td>
+<td>auto-generated local key file (<code>&lt;dshHome&gt;/evolve/rubric.key</code>, 0600) → dev fallback</td>
+<td>passphrase for AES-256-GCM rubric encryption (benchmark rubrics never touch the disk in plaintext). When unset, the plugin generates a random per-installation key file on first use — every install gets its own key, no setup needed; <code>DSH_EVOLVE_RUBRIC_KEY</code> is the environment-variable override</td>
+</tr>
+<tr>
+<td><code>logToFile</code></td>
+<td><code>true</code></td>
+<td>write all cordis log messages to <code>&lt;dshHome&gt;/evolve/plugin.log</code> (JSONL, 0600) — plugin-owned logging works with any launch method, no extra component to install</td>
+</tr>
+<tr>
+<td><code>logLevel</code></td>
+<td><code>1</code></td>
+<td>file log level: 0=error, 1=info, 2=warn, 3=debug</td>
+</tr>
+<tr>
+<td><code>logMaxBytes</code></td>
+<td>5 MiB</td>
+<td>rotate the log to <code>plugin.log.1</code> when it exceeds this size</td>
+</tr>
+<tr>
+<td><code>autoRollbackOnReject</code></td>
+<td><code>true</code></td>
+<td>after a benchmark decision rejects a candidate, roll the refinement back automatically (same engine path as <code>/evolve rollback</code> — deterministic, snapshotted, audited)</td>
 </tr>
 </tbody></table>
 <p>Example (profile <code>cordis.patch.yml</code>):</p>
@@ -463,12 +536,21 @@ pnpm lint           # oxlint src test
 </code></pre>
 <p>Hit a wall? See <a href="https://github.com/ZK-Andy/dsh-continual-evolve/blob/main/docs/FAQ.md"><code>docs/FAQ.md</code></a> — real failure/fix records (service planes, schema DSL, structured output, gate counting, verifying prompt injection).</p>
 <h3>Roadmap</h3>
+<p><strong>Shipped</strong></p>
 <ul>
-<li><strong>Phase 1 (done)</strong>: pure-core engine — state model, validation, apply, rollback, proposal parsing; tested.</li>
-<li><strong>Phase 1b (done)</strong>: <code>evolve_*</code> tools, <code>/evolve</code> command, and the <code>ctx.llm</code> planner; installed into the web profile.</li>
-<li><strong>Phase 2 (done)</strong>: ✅ auto-refine review gate (turn-interval checkpoints); ✅ compaction checkpoint (<code>compaction/start</code>); ✅ global-scope approval gate (userQuestions); ✅ executable skills (materialize to <code>$DSH_HOME/skills/</code>); ✅ prompt entries injected as a real system-prompt section (additive, capped 6/kind, inherited by subagents through the parent chain); ✅ subagent entries rendered as reusable delegation specs at the delegation seam.</li>
-<li><strong>Phase 3 (done)</strong>: ✅ benchmark-driven validation loop — evaluation matrix via the workflow engine, code-owned scoreboard aggregation, non-regressive acceptance rule, rubric isolation by construction; ✅ rubric ACL (rubric plaintext never on disk — AES-256-GCM envelopes, decrypted only by the evaluation runner); ✅ hot-mounted skill plugins (<code>/evolve mount &lt;skillId&gt;</code>, live loader entry, restored on boot); ✅ goal-driven evolution rounds (<code>/evolve goal</code> — an active goal drives the review gate every round). (Future: automated rollback on rejection.)</li>
+<li><strong>Phases 1–3 (done)</strong>: pure-core engine (state model, validation, apply, rollback, proposal parsing) → <code>evolve_*</code> tools + <code>/evolve</code> command + <code>ctx.llm</code> planner → auto-refine review gate (turn-interval + compaction checkpoints, visible follow-up notices), global-scope human approval, executable skills, real system-prompt injection (prompt notes + delegation specs, inherited by subagents), benchmark-driven validation loop (code-owned scoreboard, non-regressive acceptance, rubric isolation by construction), hot-mounted skill plugins, goal-driven evolution rounds.</li>
+<li><strong>2026-08 maintenance wave (done)</strong>:<ul>
+<li><strong>memory layer</strong> — ranked injection (relevance + recency scoring fills the per-kind cap), trajectory citations (<code>metadata.sourceSession</code> + <code>sourceSeqs</code>, shown as <code>src=session:seqs</code>), archive/unarchive (<code>/evolve archive &lt;id&gt;</code>, injection skips archived entries), global-aware gate (declines local duplicates of globally covered topics)</li>
+<li><strong>per-installation rubric key</strong> — auto-generated local key file (<code>&lt;dshHome&gt;/evolve/rubric.key</code>, 0600); no more publicly known dev key</li>
+<li><strong>plugin-owned file logging</strong> — every cordis log message lands in <code>&lt;dshHome&gt;/evolve/plugin.log</code> (JSONL, 0600, rotated), viewable via <code>/evolve log</code>; works with any launch method, no extra component to install</li>
+<li><strong>trajectory-grounded planning</strong> — <code>/evolve plan</code> (and every planner call, including the gate&#39;s refine step) now reads the session trajectory: the caller&#39;s recent direct user messages are extracted from the session log and fed to the planner as a <code>&lt;session_trajectory&gt;</code> block, so proposals are grounded in what the user actually said (explicit <code>trajectory</code> overrides; empty trajectory is omitted at zero cost)</li>
+<li><strong>gate-proposed archiving</strong> — stale entries are a first-class refine target: the planner can emit <code>action: &quot;archive&quot;</code> (kind + id only), which stamps <code>metadata.archivedAt</code> through the normal apply path — snapshot, version bump, audit event, and a deterministic rollback inverse that restores the pre-archive state. Archive hides from injection but never deletes; re-archiving an archived entry is rejected, and the base system prompt stays immutable</li>
+<li><strong>automatic rollback on benchmark rejection</strong> — the acceptance loop is closed: when the code-owned decision rejects a candidate, the refinement is reverted automatically through the same engine path as <code>/evolve rollback</code> (deterministic inverse edits, snapshotted and audited; configurable via <code>autoRollbackOnReject</code>, on by default). Failures report the manual fallback instead of throwing</li>
+<li><strong>per-session log filtering</strong> — <code>/evolve log [tail N] [session &lt;id&gt;]</code> keeps only the lines mentioning a given session id (exact token match, drawn from the rendered message and raw args); gate records now carry the session id in their log line</li>
 </ul>
+</li>
+</ul>
+<p>The planned/candidates list is empty for now — future work is driven by real usage.</p>
 <h3>License</h3>
 <p>MIT. Independent project — not affiliated with DeepSeek.</p>
 
@@ -487,12 +569,12 @@ pnpm lint           # oxlint src test
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 323</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
-      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1308</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 333</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 140</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 96</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 93</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 70</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>
   </section>

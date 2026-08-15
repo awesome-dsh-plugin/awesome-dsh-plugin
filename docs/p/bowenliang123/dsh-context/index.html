@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">bowenliang123/</span><wbr><span class="name">dsh-context</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 26</b></span>
+        <span>Stars <b>★ 27</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-context" rel="noopener" translate="no">dsh-context</a></span>
@@ -192,94 +192,38 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>A <strong>Context insight panel</strong> for <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a> (dsh): a plugin that adds a <strong>Context</strong> tab to the web UI — right beside <strong>Chat</strong> and <strong>Trajectory</strong> — so you can see what the model&#39;s context window is actually made of, and how it evolves across the conversation.</p>
-<p><img src="https://raw.githubusercontent.com/bowenliang123/dsh-context/main/docs/screenshot.png" alt="dsh-context screenshot"></p>
-<h3>Quick install</h3>
-<p>One command, from any <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a> installation (the <code>web</code> profile is the one <code>dsh web</code> boots; it is created automatically on first use):</p>
+<p><img src="https://raw.githubusercontent.com/bowenliang123/dsh-context/main/docs/social-preview.png" alt="Social preview"></p>
+<h2>dsh-context</h2>
+<p><a href="https://www.npmjs.com/package/dsh-context"><img src="https://img.shields.io/npm/v/dsh-context" alt="npm version"></a>
+<a href="https://github.com/bowenliang123/dsh-context"><img src="https://img.shields.io/github/stars/bowenliang123/dsh-context?style=social" alt="GitHub stars"></a></p>
+<p><strong>See what your DeepSeek Harness agent&#39;s context window is actually made of and how it evolves.</strong></p>
+<p><code>dsh-context</code> is a <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a> plugin that adds a <strong>Context Insight</strong> panel to the web UI: a live, visual answer to <em>&quot;what is the model carrying right now, and how did it get there?&quot;</em> — context composition, per-request history, compactions, and injections, all in one place.</p>
+<p><img src="https://raw.githubusercontent.com/bowenliang123/dsh-context/main/docs/context-overview.png" alt="Context panel overview"></p>
+<h3>Install</h3>
+<p>One command, from any DeepSeek Harness installation:</p>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-context
 </code></pre>
-<p>then start the web UI and open any session — the <strong>上下文 / Context</strong> tab appears right beside <strong>Chat</strong> and <strong>Trajectory</strong>:</p>
-<pre><code class="language-sh">dsh web
-</code></pre>
-<blockquote>
-<p>Running dsh from a source checkout instead of the installed CLI? Prefix the commands with <code>pnpm</code> (<code>pnpm dsh plugin --profile web add dsh-context</code>).</p>
-</blockquote>
-<h3>Why</h3>
-<p>Every model request packs the same window from six sources: the system prompt, tool schemas, your messages, injected context (skills, AGENTS.md, runtime snapshots), assistant replies, and tool results. When a conversation degrades or gets compacted, <em>which part ate the budget</em> is usually invisible. dsh-context makes it observable:</p>
-<ul>
-<li><strong>Current composition</strong> — a stacked bar of the six categories, scaled against the model&#39;s context window (the gray track is your remaining headroom), plus the top-5 most expensive tool schemas.</li>
-<li><strong>History</strong> — one stacked bar per model request (finer than per-turn), with Y-axis ticks and gridlines. Click any bar for its full breakdown, including the <strong>provider-reported</strong> prompt/output tokens next to the estimate. ✂ marks where compaction/pruning happened — watch the bars drop.</li>
-<li><strong>Context events</strong> — compactions, tool-output prunes, skill injections (<code>Skill injected (code-review)</code>), plugin context injections, model switches — each with its token delta and timestamp.</li>
-<li><strong>Messages</strong> — the currently model-visible surface, message by message, with per-message token costs.</li>
-</ul>
-<p>The UI is bilingual (中文/English) and follows the dsh locale automatically.</p>
-<h3>Install</h3>
-<p>dsh-context ships as a <strong>dsh bundle</strong>: an npm package with a <code>dsh.bundle</code> manifest (a <code>cordis.patch.yml</code> layer that inserts the plugin row) and a <code>dsh.client</code> manifest (the web UI half). No build step, no restart — the one-liner above installs it into the <code>web</code> profile (or any other profile you boot with <code>dsh --profile &lt;name&gt;</code>). The <code>dsh-context</code> loader row activates the host half, and the web app picks up the package&#39;s <code>./client</code> bundle and adds the <strong>上下文 / Context</strong> tab to every session view.</p>
-<p>To install from this checkout instead (for development), from the repo root:</p>
-<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add .
-</code></pre>
-<p>If dsh is run from a source checkout, prefix the commands with <code>pnpm</code> (<code>pnpm dsh plugin ...</code>).</p>
-<h3>Usage</h3>
-<p>Open any session and click <strong>上下文 / Context</strong> (to the right of Chat and Trajectory). Data refreshes every 2 seconds while the tab is open; switching sessions switches the view to that session&#39;s log — including historical, persisted sessions.</p>
-<ul>
-<li><strong>Hover</strong> a history bar for a quick tooltip; <strong>click</strong> it to pin the breakdown below the chart.</li>
-<li>The overview bar is scaled to the model&#39;s context window, so ~13% full means ~13% of the window is spoken for.</li>
-<li>Numbers are estimates using the <em>same fixed-density heuristic as dsh&#39;s built-in tokenMeter</em> (~4 chars ≈ 1 token), so they match the harness&#39;s own stats. Wherever the provider reported real usage, it&#39;s shown alongside as &quot;actual&quot;.</li>
-</ul>
-<h3>How it works</h3>
-<ul>
-<li><strong>Data source</strong>: the session&#39;s durable event log. Live sessions are folded straight from the in-memory log (<code>sessions.get(id).events</code> — no clone, no disk parse); persisted sessions fall back to <code>sessionQuery.readSession</code>.</li>
-<li><strong>Transport</strong>: host ↔ browser over a generic <strong>Connection RPC channel</strong> (<code>/dsh-context</code>, <code>ctx.connection.rpc</code> — the same channel mechanism the api gateway uses). The host half registers a <code>snapshot</code> endpoint; the client half calls it via <code>ctx.connection.rpc.call</code>.</li>
-<li><strong>Incremental fold</strong>: per-session fold state lives in the Host half, so each poll only processes newly appended events — reopening the tab is instant.</li>
-<li><strong>Events decoded</strong>: <code>request/header</code> (system prompt + tool schemas), surface events with <code>surfaceOp</code> (append/replace — compaction rewrites history in place), <code>compaction/summary|prune</code>, <code>assistant/message.usage</code> (real provider tokens), and message <code>source</code> metadata (<code>plugin</code> forms, <code>skill-invocation</code>) for injection events.</li>
-<li><strong>Architecture</strong>: <code>src/host.ts</code> is a plain ESM Cordis plugin (zero runtime dependencies) loaded by the <code>dsh-context</code> loader row; <code>src/client.cts</code> is the browser half, transpiled and wrapped at build time into the web boot&#39;s closure-factory bundle (<code>window.__ModuleLoader__.load</code>). The client renders with bare <code>React.createElement</code> — theme-native via dsh CSS variables, bilingual via the client <code>locale</code> service. Both halves are TypeScript with strict mode and local (drift-free) service contracts.</li>
-</ul>
-<h3>Development</h3>
-<p>The project is a pnpm workspace root (<code>pnpm-workspace.yaml</code>), so <code>pnpm install</code> never walks up into a parent workspace.</p>
-<pre><code class="language-sh">pnpm install            # devDependencies only — the plugin itself stays dependency-free
-pnpm run typecheck      # tsc --noEmit (strict)
-pnpm run build          # esbuild: lib/index.js (host) + lib/client.js (client bundle)
-pnpm test               # typecheck + functional tests for both halves
-</code></pre>
-<p><code>build.mjs</code> also smoke-checks the outputs (both halves must parse; the host half must import with the <code>name</code>/<code>inject</code>/<code>apply</code> plugin shape).</p>
-<p>Commits are guarded by a <a href="https://typicode.github.io/husky/">husky</a> pre-commit hook that runs <code>pnpm run typecheck</code> (<code>tsc --noEmit</code>, strict).</p>
-<h3>Files</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Role</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>src/host.ts</code></td>
-<td>Host half (strict TS): incremental log fold, category accounting, <code>/dsh-context</code> snapshot RPC</td>
-</tr>
-<tr>
-<td><code>src/client.cts</code></td>
-<td>Client half (strict TS, CJS-flavored for the browser bundle): tab registration, bilingual chart UI</td>
-</tr>
-<tr>
-<td><code>tsconfig.json</code></td>
-<td>Strict typecheck config (noEmit; esbuild does the transpiling)</td>
-</tr>
-<tr>
-<td><code>package.json</code></td>
-<td><code>dsh.bundle</code> (patch layer) + <code>dsh.client</code> (web UI) manifests</td>
-</tr>
-<tr>
-<td><code>cordis.patch.yml</code></td>
-<td>The bundle&#39;s patch layer: inserts the <code>dsh-context</code> row</td>
-</tr>
-<tr>
-<td><code>scripts/build.mjs</code></td>
-<td>esbuild-based build of <code>lib/index.js</code> + <code>lib/client.js</code></td>
-</tr>
-<tr>
-<td><code>docs/screenshot.png</code></td>
-<td>The UI in action</td>
-</tr>
-</tbody></table>
+<p>Then start the web UI with <code>dsh web</code>, open any session, and click the <strong>上下文 / Context</strong> tab. No build step, no restart.</p>
+<h3>What you&#39;ll see</h3>
+<h4>📊 Context stats — the session at a glance</h4>
+<p>Turns, steps, how much context has been recycled by compactions and prunes, how many injections happened, model switches, and the estimated total tokens sent — next to the provider-reported actuals, so you can see how the estimate holds up.</p>
+<h4>🧱 Current composition — what&#39;s in the window right now</h4>
+<p>A six-color stacked bar scaled against the model&#39;s full context window (the gray track is your remaining headroom): system prompt, tool schemas, your messages, injected context, assistant replies, and tool results — plus the top-5 most expensive tool schemas. When a conversation starts degrading, this is where you find out <em>which part ate the budget</em>.</p>
+<h4>📈 History — watch the window grow (and get compacted)</h4>
+<p>One stacked bar per model request, finer than per-message. Toggle between <strong>Turn</strong> and <strong>Step</strong> granularity, scroll sideways through the session, hover any bar for a quick tooltip, and click to pin the full breakdown — including provider-reported actual prompt/output tokens next to the estimate. <strong>✂ marks where compaction or pruning happened</strong> — watch the bars drop:</p>
+<p><img src="https://raw.githubusercontent.com/bowenliang123/dsh-context/main/docs/history-detail.png" alt="History chart with a pinned request"></p>
+<p>Above: a real session that grew to ~563k tokens across 48 turns, then compaction (✂) recycled −535.5k in one step, and the conversation continued from a fresh, small window.</p>
+<p>In <strong>Step</strong> granularity, hovering any bar shows that single step&#39;s context info instantly — its turn/step, timestamp, and estimated vs. provider-reported token counts:</p>
+<p><img src="https://raw.githubusercontent.com/bowenliang123/dsh-context/main/docs/history-step-hover.png" alt="History chart with a step hover tooltip"></p>
+<h4>⚡ Context events — when and why the window changed</h4>
+<p>Every compaction, tool-output prune, skill or plugin context injection, and model switch — each with its token delta, turn/step attribution, and timestamp:</p>
+<p><img src="https://raw.githubusercontent.com/bowenliang123/dsh-context/main/docs/context-events.png" alt="Context events and messages"></p>
+<h4>💬 Messages — the currently model-visible surface</h4>
+<p>The exact message list the model sees right now, newest first, with a per-message token cost.</p>
+<h3>Releasing</h3>
+<p>Releases are cut by tagging: <code>git tag vX.Y.Z &amp;&amp; gh release create vX.Y.Z</code>. A <a href="https://github.com/bowenliang123/dsh-context/blob/main/.github/workflows/release.yml">GitHub Actions workflow</a> then builds, tests, and publishes the package to npm automatically via <a href="https://docs.npmjs.com/trusted-publishers">npm Trusted Publishing (OIDC)</a> — no long-lived token needed, provenance included.</p>
+<h3>Like it?</h3>
+<p>If <code>dsh-context</code> helped you understand what your agent is carrying around, a ⭐ on <a href="https://github.com/bowenliang123/dsh-context">GitHub</a> is much appreciated — and issues/PRs are welcome!</p>
 <h3>License</h3>
 <p><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a></p>
 
@@ -299,12 +243,12 @@ pnpm test               # typecheck + functional tests for both halves
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">Anionex/</span><wbr><span class="name">dsh-vision-toolkit</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 323</b></span>
+        <span>Star 数 <b>★ 333</b></span>
         <span>分类 <a href="/zh/tools/">工具与能力</a></span>
         <span>收录于 <b>2026-08-13</b></span>
         <span>npm <a href="https://www.npmjs.com/package/@dsh-external/dsh-vision-toolkit" rel="noopener" translate="no">@dsh-external/dsh-vision-toolkit</a></span>
@@ -195,8 +195,8 @@ footer p+p{margin-top:.5rem}
 <p><img src="https://raw.githubusercontent.com/Anionex/dsh-vision-toolkit/main/assets/hero.png" alt="DSH Vision Toolkit——面向纯文本 DeepSeek Harness Agent 的原生视觉工程能力"></p>
 <h2>DSH Vision Toolkit</h2>
 <p><a href="https://x.com/anion_ex"><img src="https://img.shields.io/badge/-@anion__ex-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a>
-<a href="https://github.com/Anionex/dsh-vision-toolkit/releases/tag/v0.1.6"><img src="https://img.shields.io/badge/release-v0.1.6-5B4CF0?style=flat-square" alt="Release v0.1.6"></a>
-<a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/tests"><img src="https://img.shields.io/badge/verified-162%20tests-2EA44F?style=flat-square" alt="Verified: 162 tests"></a>
+<a href="https://github.com/Anionex/dsh-vision-toolkit/releases/tag/v0.1.7"><img src="https://img.shields.io/badge/release-v0.1.7-5B4CF0?style=flat-square" alt="Release v0.1.7"></a>
+<a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/tests"><img src="https://img.shields.io/badge/verified-168%20tests-2EA44F?style=flat-square" alt="Verified: 168 tests"></a>
 <a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0B7285?style=flat-square" alt="License: MIT"></a>
 <a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%5E22.19%20%7C%20%3E%3D24-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a>
 <a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/runtime/requirements.lock"><img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
@@ -385,7 +385,7 @@ dsh --profile headless --dump-config | grep vision-toolkit
 <pre><code class="language-sh">dsh plugin --profile web remove @dsh-external/dsh-vision-toolkit
 dsh plugin --profile web add @anionex/dsh-vision-toolkit
 </code></pre>
-<p>重启后，Settings → 视觉工具 应显示插件版本 <strong>0.1.6</strong>。</p>
+<p>重启后，Settings → 视觉工具 应显示插件版本 <strong>0.1.7</strong>。</p>
 <p>通过注册表安装时，使用 Profile 的包管理命令更新依赖：</p>
 <pre><code class="language-sh">dsh plugin --profile web update @anionex/dsh-vision-toolkit
 dsh plugin --profile headless update @anionex/dsh-vision-toolkit
@@ -502,10 +502,8 @@ dsh plugin --profile headless remove @anionex/dsh-vision-toolkit
 </tr>
 </tbody></table>
 <h4>Credential</h4>
-<p>通过 DSH Credentials 创建或替换引用指向的密钥：</p>
-<pre><code class="language-sh">dsh credentials set VISION_API_KEY
-</code></pre>
-<p>Settings 只保存引用，不保存值。每次远程操作都会重新解析引用，并只把值注入对应子进程环境。插件排除用户 <code>.env</code>、checkout <code>.env</code>、<code>PYTHONPATH</code>、<code>PYTHONHOME</code>、<code>VIRTUAL_ENV</code> 和用户 site-packages，避免环境中的 Python 或上游配置覆盖选定的 DSH 提供方。日志、错误、工具结果、产物元数据和 Settings 响应都不包含密钥。</p>
+<p>Web 设置页的只写 <strong>API 密钥</strong> 输入框直接接收真实密钥。留空表示保留现有密钥；填写后保存，会把密钥写入高级设置中的 <strong>凭据名称</strong>，默认名称是 <code>VISION_API_KEY</code>。Headless 部署可以在 <code>$DSH_HOME/.credentials.yaml</code> 中预置同名引用。</p>
+<p>Settings 只保存引用，不保存值。浏览器不会读取已保存的密钥，保存成功后输入框也会立即清空而不是回显。每次远程操作都会重新解析引用，并只把值注入对应子进程环境。插件排除用户 <code>.env</code>、checkout <code>.env</code>、<code>PYTHONPATH</code>、<code>PYTHONHOME</code>、<code>VIRTUAL_ENV</code> 和用户 site-packages，避免环境中的 Python 或上游配置覆盖选定的 DSH 提供方。日志、错误、工具结果、产物元数据和 Settings 响应都不包含密钥。</p>
 <h4>Managed 与 external 运行时</h4>
 <p>Managed 模式会验证 <code>vendor/agent-vision-toolkit/UPSTREAM_MANIFEST.json</code>，优先使用 <code>uv</code>，回退到 <code>venv</code> 加 pip，按 <code>runtime/requirements.lock</code> 安装精确版本，通过 heartbeat 锁协调并发准备，并只在全部探针通过后发布 staging 环境。</p>
 <p>External 模式用于开发或受控部署：</p>
@@ -571,7 +569,7 @@ npm run example:ui-restoration:write
 </tr>
 <tr>
 <td>Credential 显示缺失</td>
-<td>执行 <code>dsh credentials set &lt;REF&gt;</code>，确认 <code>provider.credential</code> 指向该引用，再重新运行健康检查。本地工具不需要它。</td>
+<td>在 Web 设置页的 <strong>API 密钥</strong> 中粘贴密钥，确认高级设置中的 <strong>凭据名称</strong> 与 <code>provider.credential</code> 一致，保存后重新运行健康检查。Headless 部署可以在 <code>$DSH_HOME/.credentials.yaml</code> 中预置同名引用。本地工具不需要它。</td>
 </tr>
 <tr>
 <td>运行时准备失败</td>
@@ -658,12 +656,12 @@ pnpm pack --dry-run
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
-      <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
-      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
-      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
-      <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
-      <li><h3><a href="/zh/p/ysr666/dsh-vision-router/" translate="no">ysr666/dsh-vision-router</a><span class="stars" translate="no">★ 48</span></h3><a class="desc-link" href="/zh/p/ysr666/dsh-vision-router/" tabindex="-1"><p>为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1308</span></h3><a class="desc-link" href="/zh/p/liustack/modlens/" tabindex="-1"><p>为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。</p></a></li>
+      <li><h3><a href="/zh/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 140</span></h3><a class="desc-link" href="/zh/p/zhaoolee/notes/" tabindex="-1"><p>将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。</p></a></li>
+      <li><h3><a href="/zh/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 96</span></h3><a class="desc-link" href="/zh/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。</p></a></li>
+      <li><h3><a href="/zh/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 93</span></h3><a class="desc-link" href="/zh/p/liustack/modsearch/" tabindex="-1"><p>纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。</p></a></li>
+      <li><h3><a href="/zh/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 70</span></h3><a class="desc-link" href="/zh/p/taxueseek/argo/" tabindex="-1"><p>专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。</p></a></li>
+      <li><h3><a href="/zh/p/dsh-market/dsh-market/" translate="no">dsh-market/dsh-market</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/zh/p/dsh-market/dsh-market/" tabindex="-1"><p>装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/tools/">查看整个分类 →</a>
   </section>

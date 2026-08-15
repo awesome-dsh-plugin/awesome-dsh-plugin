@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">Fishsb/</span><wbr><span class="name">dsh-prompt-enhancer</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 1</b></span>
+        <span>Star 数 <b>★ 2</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -190,39 +190,50 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p>DeepSeek Harness (DSH) 提示词增强插件：输入模糊提示词 → 一键增强（独立 LLM 调用）→ 直接替换输入框 → 不满意可撤回。</p>
+<p><a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases"><img src="https://img.shields.io/github/v/release/Fishsb/dsh-prompt-enhancer" alt="Release"></a>
+<a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases"><img src="https://img.shields.io/github/release-date/Fishsb/dsh-prompt-enhancer" alt="Release date"></a>
+<a href="https://github.com/Fishsb/dsh-prompt-enhancer/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Fishsb/dsh-prompt-enhancer" alt="License"></a>
+<a href="https://github.com/Fishsb/dsh-prompt-enhancer"><img src="https://img.shields.io/github/stars/Fishsb/dsh-prompt-enhancer" alt="Stars"></a></p>
 <h3>功能</h3>
 <ul>
-<li>✨ <strong>一键增强</strong>：输入框工具行 ✨ 按钮，独立 LLM 调用，完成后直接替换草稿</li>
-<li>↩️ <strong>随时撤回</strong>：不满意一键恢复原文；手动编辑草稿自动退出撤回（撤回同时清除上一轮记忆）</li>
-<li>⏹️ <strong>真取消</strong>：增强进行中点击即取消并恢复原文（AbortSignal 透传终止）</li>
-<li>🛡️ <strong>守卫逻辑</strong>：空输入 / 斜杠命令 / 提交中状态自动禁用；命令正文可优化（保留 <code>/cmd</code> 前缀）</li>
-<li>🌐 <strong>语言跟随</strong>：按钮与提示文案跟随 DSH 界面语言设置（中文 / English）</li>
-<li>🎛️ <strong>4 模式（v2.2.0）</strong>：基础（直发，最快最省）/ 轻量（本地规则分析）/ 标准（规则 + 工作区/会话检索注入）/ 智能（LLM 任务进度分析 + 全量检索）</li>
-<li>🧠 <strong>记忆功能独立开关（v2.2.0）</strong>：所有模式可开/关；开启后上一轮优化结果作为记忆注入下一轮（首次自动走轻量兜底）；关闭后完全不读取/写入记忆；开启期间写入记忆、撤回清除</li>
-<li>🔀 <strong>组合叠加</strong>：模式上下文块 + 记忆块可同时注入（记忆优先占用预算 ≤1200 字符，模式块用剩余预算）</li>
-<li>🔄 <strong>配置自动迁移</strong>：v2.1 的 <code>mode:&#39;memory&#39;</code>/<code>autoMemory</code> 自动迁移为 <code>mode:&#39;lite&#39;</code> + <code>memory:true</code>；显式 <code>memory</code> 字段最高优先（含 false 关闭）</li>
-<li>🧪 <strong>单测保障</strong>：host 纯函数单测（node:test，38/38 通过），PURE 区段切片求值保证测试即发布代码</li>
-<li>📊 <strong>步骤进度（v2.3.0）</strong>：增强进行中按钮实时显示当前阶段（准备中… / 读取会话… / 分析任务… / 检索文件… / 检索会话… / 组装上下文… / LLM 优化中…），避免长时间等待误判卡死；鼠标悬停切换为红色「取消」提醒</li>
-<li>🏷️ <strong>模式短标签（v2.3.0）</strong>：输入框 ✨ 按钮显示当前模式（基础/轻量/标准/智能），切换即时同步</li>
-<li>🧠 <strong>记忆状态 → 图标饱和度（v2.3.2）</strong>：优化按钮 ✨ 图标饱和度表达记忆开/关——开=正常彩色、关=低饱和（去色偏灰）；<strong>仅影响图标，文字饱和度不变</strong>；记忆开关位于设置面板「优化参数」页，<strong>空输入时点击 ✨ 按钮也可直接切换记忆</strong>（v2.3.3）</li>
-<li>📏 <strong>字体对齐 + hover 零抖动（v2.3.3）</strong>：按钮/短标签 font-weight:500 对齐 DSH 模型选择器；优化中 hover「取消」切换只变透明度，按钮宽度恒定无闪烁</li>
-<li>🚀 <strong>版本检测与一键更新（v2.4.0）</strong>：设置 →「模型与插件」→「插件管理」顶部新增版本检测卡片——检测任意公开 GitHub 仓库（默认本仓库）的版本状态（远端以 tags 取最大为准），发现新版本时一键拉取 6 个发布文件到本地目录（默认工作区下 <code>dsh-prompt-enhancer-&lt;tag&gt;/</code>，可配置并持久化）；拉取后按页面指引应用（bundle <code>dsh plugin update</code> / 动态重定义 / 脚本分发覆盖副本）——运行中的插件不可自替换，拉取 ≠ 应用</li>
-<li>🔤 <strong>按钮字体对齐（v2.4.0）</strong>：输入框 ✨ 按钮三态（空闲/执行中/撤回）文字显式 13px/500/20px 字体锚点，与模型选择器一致；分发副本已同步升级（此前副本为 v2.1.0 旧版）</li>
+<li>✨ <strong>一键增强</strong>：输入框工具行 ✨ 按钮触发独立 LLM 调用，完成后直接替换草稿</li>
+<li>↩️ <strong>随时撤回</strong>：不满意一键恢复原文（同时清除上一轮记忆）；手动编辑草稿自动退出撤回</li>
+<li>⏹️ <strong>真取消</strong>：增强进行中点击即取消并恢复原文</li>
+<li>🛡️ <strong>守卫逻辑</strong>：空输入 / 斜杠命令 / 提交中状态自动禁用；<code>/命令 正文</code> 只优化正文、保留前缀</li>
+<li>🌐 <strong>语言跟随</strong>：按钮与文案跟随 DSH 界面语言（中文 / English）</li>
+<li>🎛️ <strong>4 种优化模式</strong>：基础（直发，最快）/ 轻量（本地规则）/ 标准（规则 + 工作区/会话检索）/ 智能（LLM 任务进度分析 + 全量检索）</li>
+<li>🧠 <strong>记忆独立开关</strong>：开启后上一轮优化结果作为记忆注入下一轮；关闭后完全不读取/写入；撤回即清除</li>
+<li>📊 <strong>实时进度</strong>：优化中按钮显示当前阶段（准备中… → LLM 优化中…），悬停切换红色「取消」，宽度恒定无闪烁</li>
+<li>📏 <strong>视觉对齐</strong>：按钮字体（等线）/字重/胶囊/灰字/悬停深色椭圆背景与 DSH 模型选择器一致</li>
+<li>🚀 <strong>版本检测与一键更新</strong>：内置更新器检测新版本并一键拉取发布文件（<a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases">Releases</a>）</li>
+<li>🧪 <strong>单测保障</strong>：host 纯函数单测（node:test）切片 PURE 区段，测试即发布代码</li>
 </ul>
+<h3>截图</h3>
+<p><img src="https://raw.githubusercontent.com/Fishsb/dsh-prompt-enhancer/main/docs/screenshots/settings-v2.4.3.png" alt="设置面板"></p>
 <h3>安装</h3>
-<h4>方式一：bundle 一键安装（推荐）</h4>
-<pre><code class="language-sh">dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer
+<h4>方式一：一条命令（推荐）</h4>
+<pre><code class="language-sh">dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer#v2.4.6
 </code></pre>
-<p>安装后重启 DSH（<code>dsh web</code>），输入框工具行出现 <strong>✨</strong> 按钮即安装成功。更新用 <code>dsh plugin --profile web update dsh-prompt-enhancer</code>，卸载用 <code>dsh plugin --profile web remove dsh-prompt-enhancer</code>。</p>
-<h4>方式二：动态 Cordis 安装</h4>
-<p>动态 Cordis 插件（host + client 双半部），在 DSH 会话内通过 cordis 工具链安装：</p>
-<ol>
-<li>在 DSH 会话中让 agent 读取本仓库的 <code>plugin-host.js</code>（host 半部）与 <code>plugin-client.js</code>（client 半部）</li>
-<li>用 <code>cordis_define</code> 定义插件：<code>code.host</code> 填 plugin-host.js 全文，<code>code.client</code> 填 plugin-client.js 全文（新插件 <code>plugin.kind: &#39;new&#39;</code>），返回 <code>pluginId</code> / <code>packageId</code></li>
-<li>用 <code>cordis_run</code> 运行（mode: <code>run</code>）</li>
-<li>首次运行 client 半部需在浏览器批准授权</li>
-<li>授权后输入框工具行出现 ✨ 按钮即安装成功</li>
-</ol>
+<p>安装后重启 DSH（<code>dsh web</code>），输入框工具行出现 ✨ 按钮即安装成功。</p>
+<blockquote>
+<p>前提：本机已安装 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>，且 <code>pnpm</code> 在 PATH 中（<code>npm i -g pnpm</code> 或 <code>corepack enable</code>）。
+<code>#v2.4.6</code> 为版本锁定（可换成任意 <a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases">Release tag</a>），避免装到未发布的主分支。
+若 pnpm 提示需要授权构建（<code>allowBuilds</code>），把提示的包 key 加进 <code>~/.dsh/profiles/web/pnpm-workspace.yaml</code> 的 <code>allowBuilds</code> 后重跑即可。</p>
+</blockquote>
+<p>更新 / 卸载：</p>
+<pre><code class="language-sh">dsh plugin --profile web update dsh-prompt-enhancer
+dsh plugin --profile web remove dsh-prompt-enhancer
+</code></pre>
+<h4>方式二：下载安装包离线安装</h4>
+<p>从 <a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases">Releases 页面</a> 下载 <code>dsh-prompt-enhancer-&lt;版本&gt;.tgz</code>（如 <code>dsh-prompt-enhancer-2.4.6.tgz</code>），然后安装：</p>
+<pre><code class="language-sh">dsh plugin --profile web add ./dsh-prompt-enhancer-2.4.6.tgz
+</code></pre>
+<blockquote>
+<p>安装包为 pnpm 打包的完整产物（含预构建 <code>lib/</code>），无需联网、无需构建授权；装完同样重启 <code>dsh web</code> 生效。
+注：GitHub 自动生成的 <code>Source code (zip)</code> 源码包也可解压后以目录方式安装（<code>add &lt;解压目录&gt;</code>），但目录安装为 link 形式，删除解压目录会导致插件失效——正式使用请用 tgz 安装包。</p>
+</blockquote>
+<h4>方式三：动态 Cordis 安装</h4>
+<p>在 DSH 会话中让 agent 读取本仓库 <code>plugin-host.js</code>（host 半部）与 <code>plugin-client.js</code>（client 半部），用 <code>cordis_define</code> 定义（<code>plugin.kind: &#39;new&#39;</code>）后 <code>cordis_run</code>（mode: <code>run</code>），首次运行 client 半部需浏览器授权。</p>
 <blockquote>
 <p>提示：动态插件 client 半部附着于激活时的页面连接，页面刷新后会卸载，重新 <code>cordis_run</code> 即可恢复。</p>
 </blockquote>
@@ -233,13 +244,10 @@ footer p+p{margin-top:.5rem}
 3. cordis_run 运行返回的 pluginId/packageId（mode: run）
 4. 等待我在浏览器授权后完成
 </code></pre>
-<blockquote>
-<p>bundle 分发（<code>dsh plugin add</code> 一键安装）已支持，见上方「方式一」。</p>
-</blockquote>
 <h3>使用</h3>
 <ol>
-<li>输入任意非空、非斜杠命令的文本</li>
-<li>点击 <strong>✨</strong> 按钮（或聚焦后按 Enter）</li>
+<li>输入任意非空文本（斜杠命令将保留前缀、只优化正文）</li>
+<li>点击 <strong>✨</strong> 按钮</li>
 <li>等待独立 LLM 调用完成，草稿被直接替换为增强版本</li>
 <li>不满意点击 <strong>✓ 已优化，可撤回</strong> 恢复原文</li>
 </ol>
@@ -262,7 +270,7 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td>上下文预算</td>
-<td>0 / 2000 / 4000 / 8000 字符；0 = 不注入上下文（等价基础优化），记忆块同样受预算约束</td>
+<td>0 / 2000 / 4000 / 8000 字符；0 = 不注入上下文（记忆块同样受预算约束）</td>
 </tr>
 <tr>
 <td>超时时间 / Token 上限 / 输出上限</td>
@@ -274,16 +282,20 @@ footer p+p{margin-top:.5rem}
 </tr>
 </tbody></table>
 <p>模型链在「模型配置」tab 配置：按序尝试、可增删改序、逐条思考开关与等级、行内连通性测试、恢复默认。</p>
+<h3>更新日志</h3>
+<p>各版本变更说明见 <a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases">GitHub Releases</a>，完整历史见 <a href="https://github.com/Fishsb/dsh-prompt-enhancer/blob/main/CHANGELOG.md">CHANGELOG.md</a>。</p>
 <h3>隐私</h3>
 <ul>
 <li><strong>模式上下文</strong>：按需注入「会话近期消息 + 工作区相关文件摘要 + 相关会话片段」，受预算上限约束；敏感文件（.env / 密钥 / 凭据 / 日志等）硬过滤，绝不注入</li>
-<li><strong>记忆</strong>：仅存于浏览器 localStorage（<code>dsh.enhance.seen.*</code> 布尔标记，无内容），记忆对仅存在于当前页面内存；关闭开关后不再读取/写入</li>
+<li><strong>记忆</strong>：仅存于浏览器 localStorage 布尔标记（无内容），记忆对仅存在于当前页面内存；关闭开关后不再读取/写入</li>
 <li>插件本身不记录、不上报任何数据；诊断日志仅含模式、耗时等元信息</li>
 <li>增强结果来自外部 LLM，发送前请自行核对；取消后底层请求可能在 provider 侧短暂运行</li>
 </ul>
 <h3>兼容性</h3>
 <ul>
 <li>依赖 DSH 运行时注入 API（<code>llm</code> / <code>slots</code> / <code>harness</code> / <code>inputActions</code> / <code>sessionQuery</code> / <code>fs</code>），随 DSH 版本升级可能调整</li>
+<li><strong>版本检测与一键更新</strong>：由浏览器直连 <code>api.github.com</code>（CORS 可用，host 无需出网）；网络受限环境请确保浏览器可访问 GitHub（代理等）</li>
+<li><strong>内置兜底模型链</strong>：指向 DeepSeek 官方（<code>deepseek-official</code>），使用该链需配置 DeepSeek API key；未配置时请在「模型与插件」中配置模型链——首次安装会自动继承当前使用模型，通常无需手动配置</li>
 <li>建议使用最新版 DeepSeek Harness</li>
 </ul>
 <h3>License</h3>
@@ -304,12 +316,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

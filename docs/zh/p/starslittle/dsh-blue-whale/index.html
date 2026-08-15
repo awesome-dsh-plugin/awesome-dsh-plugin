@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">starslittle/</span><wbr><span class="name">dsh-blue-whale</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 2</b></span>
+        <span>Star 数 <b>★ 3</b></span>
         <span>分类 <a href="/zh/theme/">主题与外观</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -189,11 +189,17 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
+<p><a href="https://github.com/starslittle/dsh-blue-whale/blob/main/README.md">English</a> · 中文</p>
 <p>给 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> 的 <strong>蓝鲸默认皮</strong>。</p>
-<p>DSH 出厂是黑鲸：亮色主色近黑，深色主色近白。这个插件只把品牌位换回 DeepSeek Chat 的官方蓝 <code>#4D6BFE</code>，亮色 / 深色 / 跟随系统仍走自带的「外观」设置。</p>
-<blockquote>
-<p>不是 <code>dsh-skin</code> 里的 <strong>深海蓝（Ocean）</strong>。Ocean 是暗色专用的深海海军蓝（<code>#0a101f</code> + <code>#4d86f8</code>）。本皮肤底还是官方中性色，主色才是公开品牌蓝。</p>
-</blockquote>
+<p>DSH 出厂是黑鲸，chat.deepseek.com 是蓝鲸。这个插件把官方蓝 <code>#4D6BFE</code> 还回去：侧栏字标、欢迎页鲸、浏览器标签页图标、主按钮和强调色。亮色 / 深色 / 跟随系统仍走自带的「外观」。</p>
+<p><img src="https://raw.githubusercontent.com/starslittle/dsh-blue-whale/main/docs/compare-home.png" alt="首页对比"></p>
+<p><img src="https://raw.githubusercontent.com/starslittle/dsh-blue-whale/main/docs/compare-brand.png" alt="品牌对比"></p>
+<p>标签页上的小鲸也会换成蓝色，对比图上方有注明。</p>
+<h3>安装</h3>
+<pre><code class="language-sh">dsh plugin --profile web add -w github:starslittle/dsh-blue-whale
+</code></pre>
+<p>重启 <code>dsh web</code>。默认开启。</p>
+<p>打开 <strong>设置 → 通用 → 蓝鲸</strong>。标题旁绿点表示已开启。<strong>关闭</strong> 和官方「排队发送」同一颗胶囊；<strong>打开</strong> 是蓝底白字。</p>
 <h3>改了什么</h3>
 <table>
 <thead>
@@ -204,18 +210,28 @@ footer p+p{margin-top:.5rem}
 </tr>
 </thead>
 <tbody><tr>
-<td>品牌 / 主按钮</td>
-<td>亮色近黑 / 深色近白</td>
+<td>侧栏鲸 + <code>deepseek</code> 字</td>
+<td>近黑 / 近白</td>
 <td><code>#4D6BFE</code></td>
 </tr>
 <tr>
-<td>亮色底</td>
-<td>官方白 / 蓝灰中性</td>
-<td>不动</td>
+<td>欢迎页鲸</td>
+<td>同上</td>
+<td><code>#4D6BFE</code></td>
 </tr>
 <tr>
-<td>深色底</td>
-<td>官方 bluish-950</td>
+<td>浏览器标签页图标</td>
+<td>黑（系统深色下为白）</td>
+<td><code>#4D6BFE</code></td>
+</tr>
+<tr>
+<td>品牌色 / 发送键 / 强调</td>
+<td>黑或白</td>
+<td><code>#4D6BFE</code></td>
+</tr>
+<tr>
+<td>页面底色</td>
+<td>官方浅色 / 深色</td>
 <td>不动</td>
 </tr>
 <tr>
@@ -224,17 +240,10 @@ footer p+p{margin-top:.5rem}
 <td>仍走自带外观</td>
 </tr>
 </tbody></table>
-<p>辅助色来自 DSH 仓库里的 <code>--dsw-static-deepseek-*</code>（50–900）。</p>
-<h3>安装</h3>
-<pre><code class="language-sh">dsh plugin --profile web add -w github:starslittle/dsh-blue-whale
-</code></pre>
-<p>重启 <code>dsh web</code>。默认开启。设置 → 通用 → 蓝鲸 可关掉。</p>
-<h3>和 Ocean 的差别</h3>
-<ul>
-<li>Ocean 是 7 套口味里的一张暗色卡。</li>
-<li>这个包是默认替代：装上，黑鲸变成 Chat 那只蓝鲸。</li>
-<li>深色是官方深色底 + 官方蓝，不是新的深海主题。</li>
-</ul>
+<p>辅助色来自 DSH 仓库里的 <code>--dsw-static-deepseek-*</code>。</p>
+<h3>桌面版</h3>
+<p>官方 <code>dsh web</code> 可用。套了同一套 Web UI 的桌面壳（同一个 <code>web</code> profile）一般也能用。</p>
+<p>不会改桌面应用自己的窗口图标或托盘图标。headless / TUI 没有界面，不必装。</p>
 <h3>许可</h3>
 <p>MIT</p>
 
@@ -253,11 +262,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 574</span></h3><a class="desc-link" href="/zh/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</p></a></li>
-      <li><h3><a href="/zh/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</p></a></li>
+      <li><h3><a href="/zh/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 602</span></h3><a class="desc-link" href="/zh/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。</p></a></li>
+      <li><h3><a href="/zh/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 10</span></h3><a class="desc-link" href="/zh/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。</p></a></li>
+      <li><h3><a href="/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" translate="no">PAKIKNOWLEDGE/dsh-client-ui-skin-claude</a><span class="stars" translate="no">★ 3</span></h3><a class="desc-link" href="/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" tabindex="-1"><p>Claude 风格皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。</p></a></li>
+      <li><h3><a href="/zh/p/tianyhjg-lab/dsh-font/" translate="no">tianyhjg-lab/dsh-font</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/tianyhjg-lab/dsh-font/" tabindex="-1"><p>DSH Web GUI 字体切换器：99 个界面字体与 31 个代码字体，中西文自动搭配，即选即生效，localStorage 持久化。</p></a></li>
       <li><h3><a href="/zh/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/wsxwj123/dsh-plugins--packages-theme-gallery/" tabindex="-1"><p>15 个精选主题家族，浅深配色完整，跟随 DSH 原生浅色/深色/跟随系统模式。</p></a></li>
-      <li><h3><a href="/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" translate="no">PAKIKNOWLEDGE/dsh-client-ui-skin-claude</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" tabindex="-1"><p>Claude 风格皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。</p></a></li>
-      <li><h3><a href="/zh/p/tianyhjg-lab/dsh-font/" translate="no">tianyhjg-lab/dsh-font</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/tianyhjg-lab/dsh-font/" tabindex="-1"><p>DSH Web GUI 字体切换器：99 个界面字体与 31 个代码字体，中西文自动搭配，即选即生效，localStorage 持久化。</p></a></li>
+      <li><h3><a href="/zh/p/chinaRXQ/dsh-wallpaper/" translate="no">chinaRXQ/dsh-wallpaper</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/zh/p/chinaRXQ/dsh-wallpaper/" tabindex="-1"><p>DSH Web 壁纸皮肤：图片背景，可调透明度、压暗遮罩与模糊。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/theme/">查看整个分类 →</a>
   </section>

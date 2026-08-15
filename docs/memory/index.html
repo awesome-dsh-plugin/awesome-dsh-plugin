@@ -249,23 +249,44 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 
 <div class="filters-band"><div class="wrap">
   <div class="filters" id="filters">
-      <a class="chip" href="/">All <small>365</small></a>
-      <a class="chip" href="/ui/">UI Enhancements <small>84</small></a>
-      <a class="chip" href="/theme/">Themes & Appearance <small>6</small></a>
-      <a class="chip" href="/session/">Sessions & Messages <small>26</small></a>
+      <a class="chip" href="/">All <small>377</small></a>
+      <a class="chip" href="/ui/">UI Enhancements <small>86</small></a>
+      <a class="chip" href="/theme/">Themes & Appearance <small>7</small></a>
+      <a class="chip" href="/session/">Sessions & Messages <small>27</small></a>
       <a class="chip active" href="/memory/">Memory <small>20</small></a>
-      <a class="chip" href="/tools/">Tools & Capabilities <small>94</small></a>
-      <a class="chip" href="/skill/">Skills <small>6</small></a>
+      <a class="chip" href="/tools/">Tools & Capabilities <small>95</small></a>
+      <a class="chip" href="/skill/">Skills <small>7</small></a>
       <a class="chip" href="/workflow/">Workflow & Automation <small>27</small></a>
-      <a class="chip" href="/notify/">Notifications & Integrations <small>24</small></a>
-      <a class="chip" href="/model/">Models & Providers <small>8</small></a>
-      <a class="chip" href="/dev/">Development & Runtime <small>50</small></a>
+      <a class="chip" href="/notify/">Notifications & Integrations <small>26</small></a>
+      <a class="chip" href="/model/">Models & Providers <small>9</small></a>
+      <a class="chip" href="/dev/">Development & Runtime <small>53</small></a>
       <a class="chip" href="/fun/">Just for Fun <small>20</small></a>
     </div><!--/filters-->
 </div></div>
 
 <main class="wrap">
   <ol class="dex" id="dex">
+
+    <li class="card" data-cat="memory">
+      <div class="top">
+        <h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no"><span class="owner">omdsh-dev/</span>dsh-mnemon</a></h3>
+        <span class="stars" translate="no">16</span>
+      </div>
+      <a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a>
+      <div class="foot">
+        <a class="tag" href="/memory/">Memory</a>
+        <details class="inst">
+          <summary aria-haspopup="menu">Install ▾</summary>
+          <div class="menu" role="menu">
+            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
+            <div class="mi-cli">
+              <b>via CLI</b>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-mnemon" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-mnemon" aria-label="Copy install command">copy install</button></span>
+            </div>
+          </div>
+        </details>
+      </div>
+    </li>
 
     <li class="card" data-cat="memory">
       <div class="top">
@@ -290,29 +311,8 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 
     <li class="card" data-cat="memory">
       <div class="top">
-        <h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no"><span class="owner">omdsh-dev/</span>dsh-mnemon</a></h3>
-        <span class="stars" translate="no">14</span>
-      </div>
-      <a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a>
-      <div class="foot">
-        <a class="tag" href="/memory/">Memory</a>
-        <details class="inst">
-          <summary aria-haspopup="menu">Install ▾</summary>
-          <div class="menu" role="menu">
-            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-            <div class="mi-cli">
-              <b>via CLI</b>
-              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-mnemon" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-mnemon" aria-label="Copy install command">copy install</button></span>
-            </div>
-          </div>
-        </details>
-      </div>
-    </li>
-
-    <li class="card" data-cat="memory">
-      <div class="top">
         <h3><a href="/p/modusensus/dsh-mneme/" translate="no"><span class="owner">modusensus/</span>dsh-mneme</a></h3>
-        <span class="stars" translate="no">8</span>
+        <span class="stars" translate="no">9</span>
       </div>
       <a class="desc-link" href="/p/modusensus/dsh-mneme/" tabindex="-1"><p>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</p></a>
       <div class="foot">
@@ -353,6 +353,27 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 
     <li class="card" data-cat="memory">
       <div class="top">
+        <h3><a href="/p/PerryLink/dsh-memento/" translate="no"><span class="owner">PerryLink/</span>dsh-memento</a></h3>
+        <span class="stars" translate="no">3</span>
+      </div>
+      <a class="desc-link" href="/p/PerryLink/dsh-memento/" tabindex="-1"><p>Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.</p></a>
+      <div class="foot">
+        <a class="tag" href="/memory/">Memory</a>
+        <details class="inst">
+          <summary aria-haspopup="menu">Install ▾</summary>
+          <div class="menu" role="menu">
+            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
+            <div class="mi-cli">
+              <b>via CLI</b>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:PerryLink/dsh-memento" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:PerryLink/dsh-memento" aria-label="Copy install command">copy install</button></span>
+            </div>
+          </div>
+        </details>
+      </div>
+    </li>
+
+    <li class="card" data-cat="memory">
+      <div class="top">
         <h3><a href="/p/Jesse-njx/dsh-memory/" translate="no"><span class="owner">Jesse-njx/</span>dsh-memory</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
@@ -374,10 +395,10 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 
     <li class="card" data-cat="memory">
       <div class="top">
-        <h3><a href="/p/PerryLink/dsh-memento/" translate="no"><span class="owner">PerryLink/</span>dsh-memento</a></h3>
+        <h3><a href="/p/GIT121995/dsh-memory-gate/" translate="no"><span class="owner">GIT121995/</span>dsh-memory-gate</a></h3>
         <span class="stars" translate="no">2</span>
       </div>
-      <a class="desc-link" href="/p/PerryLink/dsh-memento/" tabindex="-1"><p>Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.</p></a>
+      <a class="desc-link" href="/p/GIT121995/dsh-memory-gate/" tabindex="-1"><p>Bounded local memory with CBDC authority gating: SQLite + FTS5 claims, scoped recall with explainable use/verify/ignore decisions and a full audit trail, /memory commands, ≤3-claim/1200-char injection per call, no extra model call.</p></a>
       <div class="foot">
         <a class="tag" href="/memory/">Memory</a>
         <details class="inst">
@@ -386,7 +407,28 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
             <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
             <div class="mi-cli">
               <b>via CLI</b>
-              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:PerryLink/dsh-memento" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:PerryLink/dsh-memento" aria-label="Copy install command">copy install</button></span>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-memory-gate" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-memory-gate" aria-label="Copy install command">copy install</button></span>
+            </div>
+          </div>
+        </details>
+      </div>
+    </li>
+
+    <li class="card" data-cat="memory">
+      <div class="top">
+        <h3><a href="/p/Phant0Meow/dsh-memory-meow/" translate="no"><span class="owner">Phant0Meow/</span>dsh-memory-meow</a></h3>
+        <span class="stars" translate="no">2</span>
+      </div>
+      <a class="desc-link" href="/p/Phant0Meow/dsh-memory-meow/" tabindex="-1"><p>Project-scoped cross-session memory: PROJECT.md snapshot injected into the first user message, a memory_remember tool, and auto-reflection after ReAct tasks; each project keeps its own memory file.</p></a>
+      <div class="foot">
+        <a class="tag" href="/memory/">Memory</a>
+        <details class="inst">
+          <summary aria-haspopup="menu">Install ▾</summary>
+          <div class="menu" role="menu">
+            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
+            <div class="mi-cli">
+              <b>via CLI</b>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow" aria-label="Copy install command">copy install</button></span>
             </div>
           </div>
         </details>
@@ -416,27 +458,6 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 
     <li class="card" data-cat="memory">
       <div class="top">
-        <h3><a href="/p/GIT121995/dsh-memory-gate/" translate="no"><span class="owner">GIT121995/</span>dsh-memory-gate</a></h3>
-        <span class="stars" translate="no">1</span>
-      </div>
-      <a class="desc-link" href="/p/GIT121995/dsh-memory-gate/" tabindex="-1"><p>Bounded local memory with CBDC authority gating: SQLite + FTS5 claims, scoped recall with explainable use/verify/ignore decisions and a full audit trail, /memory commands, ≤3-claim/1200-char injection per call, no extra model call.</p></a>
-      <div class="foot">
-        <a class="tag" href="/memory/">Memory</a>
-        <details class="inst">
-          <summary aria-haspopup="menu">Install ▾</summary>
-          <div class="menu" role="menu">
-            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-            <div class="mi-cli">
-              <b>via CLI</b>
-              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add dsh-memory-gate" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add dsh-memory-gate" aria-label="Copy install command">copy install</button></span>
-            </div>
-          </div>
-        </details>
-      </div>
-    </li>
-
-    <li class="card" data-cat="memory">
-      <div class="top">
         <h3><a href="/p/freehul/sgme/" translate="no"><span class="owner">freehul/</span>sgme</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
@@ -458,10 +479,10 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 
     <li class="card" data-cat="memory">
       <div class="top">
-        <h3><a href="/p/Phant0Meow/dsh-memory-meow/" translate="no"><span class="owner">Phant0Meow/</span>dsh-memory-meow</a></h3>
+        <h3><a href="/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-memory/" translate="no"><span class="owner">jinguanghai/</span>deepseek-harness-forge-plugins#forge-memory</a></h3>
         <span class="stars" translate="no">1</span>
       </div>
-      <a class="desc-link" href="/p/Phant0Meow/dsh-memory-meow/" tabindex="-1"><p>Project-scoped cross-session memory: PROJECT.md snapshot injected into the first user message, a memory_remember tool, and auto-reflection after ReAct tasks; each project keeps its own memory file.</p></a>
+      <a class="desc-link" href="/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-memory/" tabindex="-1"><p>BM25 keyword-based memory recall.</p></a>
       <div class="foot">
         <a class="tag" href="/memory/">Memory</a>
         <details class="inst">
@@ -470,7 +491,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
             <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
             <div class="mi-cli">
               <b>via CLI</b>
-              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:Phant0Meow/dsh-memory-meow" aria-label="Copy install command">copy install</button></span>
+              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-memory" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-memory" aria-label="Copy install command">copy install</button></span>
             </div>
           </div>
         </details>
@@ -618,27 +639,6 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
             <div class="mi-cli">
               <b>via CLI</b>
               <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:jiayan-xu/dsh-memoria" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:jiayan-xu/dsh-memoria" aria-label="Copy install command">copy install</button></span>
-            </div>
-          </div>
-        </details>
-      </div>
-    </li>
-
-    <li class="card" data-cat="memory">
-      <div class="top">
-        <h3><a href="/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-memory/" translate="no"><span class="owner">jinguanghai/</span>deepseek-harness-forge-plugins#forge-memory</a></h3>
-        <span class="stars" translate="no">0</span>
-      </div>
-      <a class="desc-link" href="/p/jinguanghai/deepseek-harness-forge-plugins--plugins-forge-memory/" tabindex="-1"><p>BM25 keyword-based memory recall.</p></a>
-      <div class="foot">
-        <a class="tag" href="/memory/">Memory</a>
-        <details class="inst">
-          <summary aria-haspopup="menu">Install ▾</summary>
-          <div class="menu" role="menu">
-            <button type="button" role="menuitem" data-cmd="dsh plugin --profile web add dshmarket"><b>via dsh-market · recommended</b><small>copy the market install command</small></button>
-            <div class="mi-cli">
-              <b>via CLI</b>
-              <span class="cli" translate="no"><input readonly value="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-memory" aria-label="Copy install command" spellcheck="false"><button class="copy" type="button" data-cmd="dsh plugin --profile web add github:jinguanghai/deepseek-harness-forge-plugins#path:/plugins/forge-memory" aria-label="Copy install command">copy install</button></span>
             </div>
           </div>
         </details>

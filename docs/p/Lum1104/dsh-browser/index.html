@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Lum1104/</span><wbr><span class="name">dsh-browser</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 89</b></span>
+        <span>Stars <b>★ 96</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -263,6 +263,7 @@ scripts/install.sh
 <pre><code class="language-sh">curl -fsSL https://raw.githubusercontent.com/Lum1104/dsh-browser/refs/heads/main/scripts/install.sh | bash
 </code></pre>
 <p>The remote installer downloads <code>main</code> into the installer-managed directory <code>~/.dsh/dsh-browser</code>, then installs the pinned public npm dependencies from the lockfile, builds the bridge plugin, registers its official bundle in dsh&#39;s local <code>web</code> profile, builds the extension, copies it to <code>~/.dsh/browser-extension</code>, and opens <code>chrome://extensions</code>. Enable Developer mode and load the extension directory when prompted. Running the same command again updates the managed installation; keep source edits in a clone instead.</p>
+<p><strong>Already running dsh? Restart it after installing.</strong> The installer registers the bridge bundle in dsh&#39;s local <code>web</code> profile, and dsh loads its profile only at startup. An instance started before the install keeps running without the bridge, so the side panel reports &quot;Not connected&quot; even though the extension loaded correctly. Stop that instance and start it again (Step 2); the extension then discovers the bridge automatically and needs no reconfiguration.</p>
 <p>Developers can clone the repository and run the same installer from any checkout. This mode uses the current branch without downloading or overwriting source files:</p>
 <pre><code class="language-sh">git clone https://github.com/Lum1104/dsh-browser.git
 cd dsh-browser
@@ -279,7 +280,14 @@ cd dsh-browser
 <p><strong>For subsequent use</strong>, the extension does not need to be installed again. Run either startup command above.</p>
 <p><strong>No configuration is required for local use</strong>: the extension discovers dsh through <code>/ext/bridge-config</code>, and loopback connections do not require a bridge token. This runtime security token is unrelated to npm authentication; an address and bridge token are only needed for remote deployment with <code>--host 0.0.0.0</code>.</p>
 <p><strong>Step 3 — use it</strong>: open any normal <code>http://</code> or <code>https://</code> page and click the DeepSeek whale icon. When the side panel reports &quot;Connected&quot;, chat normally or click &quot;Read page&quot; first. A page that was already open before the extension was installed or reloaded is instrumented automatically on the first action; no page refresh is needed. Browser-internal and protected pages such as <code>chrome://</code> and the Chrome Web Store cannot be read or operated.</p>
-<p>To update a managed installation, run the same <code>curl | bash</code> command again. To update a clone, pull or switch to the desired revision and run <code>./scripts/install.sh</code>. Then click Reload for &quot;dsh Browser Assistant&quot; in <code>chrome://extensions</code> and reopen the side panel. Chrome should load <code>~/.dsh/browser-extension</code>; do not load the source directory <code>extensions/dsh-browser/</code>.</p>
+<p>To update a managed installation, run the same <code>curl | bash</code> command again. To update a clone, pull or switch to the desired revision and run <code>./scripts/install.sh</code>. Then click Reload for &quot;dsh Browser Assistant&quot; in <code>chrome://extensions</code> and reopen the side panel. Chrome should load <code>~/.dsh/browser-extension</code>; do not load the source directory <code>extensions/dsh-browser/</code>. If dsh web is already running, restart it too so it reloads the updated <code>web</code> profile (see Troubleshooting).</p>
+<h3>Troubleshooting</h3>
+<p><strong>Side panel stays &quot;Not connected&quot;</strong></p>
+<ul>
+<li>Make sure dsh web is running locally (default <code>http://127.0.0.1:3080</code>).</li>
+<li>Verify the bridge is loaded: open <code>http://127.0.0.1:3080/ext/bridge-config</code>. It should return JSON such as <code>{&quot;wsUrl&quot;:&quot;ws://127.0.0.1:3080/ext/bridge&quot;}</code>. If it returns a web page instead of JSON, the running dsh predates the bridge registration — restart dsh and refresh the page; the extension reconnects on its own.</li>
+<li>The extension probes ports 3080, 3081, and 3090 automatically. If dsh runs on another port — or you use a remote <code>--host 0.0.0.0</code> deployment — set the address (and bridge token) in the side panel settings.</li>
+</ul>
 <h3>Development</h3>
 <p>The bridge plugin and Chrome extension are both members of this repository&#39;s workspace. Run all commands from the repository root. For the first development installation, run <code>pnpm install</code>.</p>
 <pre><code class="language-sh">pnpm run build
@@ -321,12 +329,12 @@ pnpm --filter dsh-browser-extension run test
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 323</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
-      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
-      <li><h3><a href="/p/ysr666/dsh-vision-router/" translate="no">ysr666/dsh-vision-router</a><span class="stars" translate="no">★ 48</span></h3><a class="desc-link" href="/p/ysr666/dsh-vision-router/" tabindex="-1"><p>Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&amp;A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image to use it.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1308</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 333</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 140</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 93</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 70</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
+      <li><h3><a href="/p/dsh-market/dsh-market/" translate="no">dsh-market/dsh-market</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/p/dsh-market/dsh-market/" tabindex="-1"><p>The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>
   </section>

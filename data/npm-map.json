@@ -211,6 +211,10 @@
   "npm": "dsh-pomodoro",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Cavan-Ou/dsh-observation-journal": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/Cavan-Ou/hermes-dsh-collab": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -230,6 +234,10 @@
  "https://github.com/CheshireJCat/blender": {
   "npm": "dsh-blender",
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/chinaRXQ/dsh-wallpaper": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/Chinesezjc/dsh-interconnect": {
   "npm": null,
@@ -299,6 +307,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Edge-Echo/dsh-mcp-bridge": {
+  "npm": "dsh-mcp-bridge",
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/Einskyle/dsh-llm-vision-bridge": {
   "npm": "dsh-llm-vision-bridge",
   "checkedAt": "2026-08-14"
@@ -322,6 +334,10 @@
  "https://github.com/feibi-mochi/deepseek-harness-wallet": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/FengHuoLinShan/dsh-plugin-llm-balance": {
+  "npm": "dsh-plugin-llm-balance",
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/Fishsb/dsh-prompt-enhancer": {
   "npm": null,
@@ -374,6 +390,10 @@
  "https://github.com/GIT121995/dsh-memory-gate": {
   "npm": "dsh-memory-gate",
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/GLFzr/dsh-drop-file-to-path": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/GLFzr/dsh-opencode-go-quota": {
   "npm": null,
@@ -474,6 +494,10 @@
  "https://github.com/imetn/dsh-lark-bridge": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/ishuowang/dsh-agent-team-room": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/itr-del/dsh-feishu": {
   "npm": null,
@@ -595,6 +619,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/labmimors/dsh-mcp-lens": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/LaoYueHanNi/dsh-token-usage": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -674,6 +702,10 @@
  "https://github.com/linenxi-ctrl/dsh-vision": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/linxichen/dsh-rigorquant": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/liqichen/dsh-plugin-manager": {
   "npm": null,
@@ -838,6 +870,10 @@
  "https://github.com/nonewind/dsh-spend": {
   "npm": "dsh-spend",
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Noob-stupid/dsh-github-login": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/Noob-stupid/dsh-plugin-hub": {
   "npm": null,
@@ -1179,6 +1215,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/tianyaZTY/dsh-hot-plugin-host": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/tianyhjg-lab/dsh-font": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1334,6 +1374,14 @@
  "https://github.com/xmanrui/dsh-feishu": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/xmanrui/dsh-im": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
+ "https://github.com/xmanrui/dsh-weixin": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/Xplore-LAB/dsh-plugin-asmemory": {
   "npm": null,

@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">huguangyu666/</span><wbr><span class="name">dsh-store</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 1</b></span>
+        <span>Star 数 <b>★ 2</b></span>
         <span>分类 <a href="/zh/dev/">开发与运行时</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-store" rel="noopener" translate="no">dsh-store</a></span>
@@ -192,6 +192,10 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<blockquote>
+<p>已收录于 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> 精选列表（Development &amp; Runtime）</p>
+</blockquote>
 <p>DeepSeek Harness 插件商店：<strong>上游基础设施</strong>。聚合 npm registry + awesome 精选 + GitHub 星标的 dsh 插件目录，质量验证 + 分类 + 星标排序，在 dsh 内一键安装 / 卸载（走官方 <code>dsh plugin add/remove</code>），装完重启即生效。</p>
 <h3>与社区其他商店的差异</h3>
 <table>
@@ -304,11 +308,15 @@ footer p+p{margin-top:.5rem}
 <td><code>api.github.com/search/repositories?q=topic:dsh-plugin</code></td>
 <td>星标 / 仓库 / 更新信息合并</td>
 </tr>
+<tr>
+<td><code>AdamPlatin123/awesome-dsh-plugins</code> 雷达</td>
+<td>运行级验证状态（✅ 运行级可用等，194+ 条目）</td>
+</tr>
 </tbody></table>
 <p><strong>质量验证</strong>：安装前后台逐个 GET 每个包的 <code>/latest</code> 检查 <code>dsh</code> 字段（缓存 7 天），无该字段的剔除——npm 关键词搜索会混入蹭关键词的包，这个过滤保证目录里都是真插件。</p>
 <h3>架构</h3>
 <pre><code>┌─ dsh-store ─────────────────────────────────────────────┐
-│ host：catalog 引擎（npm + awesome + GitHub → 合并 → 验证 → 缓存）│
+│ host：catalog 引擎（npm + awesome + 雷达 + GitHub → 合并 → 验证 → 缓存）│
 │       安装引擎（官方 dsh plugin add/remove → 回退 pnpm + patch）│
 │       API：/plugin-store/api/{catalog,refresh,install,uninstall,restart} │
 │ client：侧边栏「插件商店」按钮 + 设置页分区（--dsw-* 变量） │
@@ -317,7 +325,7 @@ footer p+p{margin-top:.5rem}
 <p>无外部运行时依赖（curl 为 Windows 自带；pnpm 走 PowerShell shim 解析；官方 dsh plugin 路径自动注入代理）。</p>
 <h3>开发</h3>
 <pre><code class="language-bash">npm run build      # esbuild 构建 lib/index.js + lib/client.js
-node test-mock.mjs # mock + 集成测试（隔离 profile，真实 pnpm 安装/卸载，21 项）
+node test-mock.mjs # mock + 集成测试（隔离 profile，真实 pnpm 安装/卸载，22 项）
 </code></pre>
 <h3>许可</h3>
 <p>MIT</p>
@@ -338,10 +346,10 @@ node test-mock.mjs # mock + 集成测试（隔离 profile，真实 pnpm 安装/�
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 165</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
+      <li><h3><a href="/zh/p/hust-open-atom-club/oh-dsh/" translate="no">hust-open-atom-club/oh-dsh</a><span class="stars" translate="no">★ 168</span></h3><a class="desc-link" href="/zh/p/hust-open-atom-club/oh-dsh/" tabindex="-1"><p>社区发行版：TUI、桌面端与 Web UI 统一体验，分层安装、一步到位。</p></a></li>
       <li><h3><a href="/zh/p/Jayden-X-L/forkprobe/" translate="no">Jayden-X-L/forkprobe</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/zh/p/Jayden-X-L/forkprobe/" tabindex="-1"><p>同一任务并行试跑多个技能，对比结果选出最优。</p></a></li>
-      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 35</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
-      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 30</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
+      <li><h3><a href="/zh/p/vlln/plugin-registry/" translate="no">vlln/plugin-registry</a><span class="stars" translate="no">★ 36</span></h3><a class="desc-link" href="/zh/p/vlln/plugin-registry/" tabindex="-1"><p>插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。</p></a></li>
+      <li><h3><a href="/zh/p/forrestchang/dsh-multica-runtime/" translate="no">forrestchang/dsh-multica-runtime</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/zh/p/forrestchang/dsh-multica-runtime/" tabindex="-1"><p>让 dsh 运行时跑在 Multica 上。</p></a></li>
       <li><h3><a href="/zh/p/DietCokewithSugar/dsh-user-experience/" translate="no">DietCokewithSugar/dsh-user-experience</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/zh/p/DietCokewithSugar/dsh-user-experience/" tabindex="-1"><p>帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。</p></a></li>
       <li><h3><a href="/zh/p/omdsh-dev/dsh-plugin-check/" translate="no">omdsh-dev/dsh-plugin-check</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-plugin-check/" tabindex="-1"><p>插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。</p></a></li>
     </ul>

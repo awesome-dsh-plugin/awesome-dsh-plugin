@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">GLFzr/</span><wbr><span class="name">dsh-opencode-go-quota</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 1</b></span>
+        <span>Star 数 <b>★ 3</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -194,14 +194,52 @@ footer p+p{margin-top:.5rem}
 <ul>
 <li>中央字母 <strong>5 / W / M</strong>，点击循环切换 5小时 / 每周 / 每月 用量窗口</li>
 <li>悬停显示「5小时 已用 X% · 重置倒计时」</li>
-<li>颜色按紧急程度：绿 &lt;30% / 蓝 30<del>60% / 橙 60</del>80% / 红 ≥80%</li>
+<li>颜色按紧急程度：绿 &lt;30% / 蓝 30-60% / 橙 60-80% / 红 ≥80%</li>
 <li>每 5 分钟自动刷新，点击切换时若数据超过 1 分钟则强制刷新</li>
+<li><strong>额度告急（≥80%）时圆环红色脉冲闪烁</strong>，悬停提示「⚠ 5小时额度即将用尽，建议暂停等重置」</li>
 </ul>
+<h3>对话内额度提醒（Codex CLI 式）</h3>
+<p>每次 agent 请求时，插件会把<strong>当前额度状态动态注入 system prompt</strong>：</p>
+<p>agent 请求时插件会把额度状态动态注入 system prompt，<strong>只在进入新档位时注入一次</strong>（同档内后续请求不重复，prompt 前缀稳定、省 token、利于缓存命中）：</p>
+<table>
+<thead>
+<tr>
+<th>5小时用量</th>
+<th>行为</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&lt;60%（warnAt）</td>
+<td><strong>不注入</strong>（零 prompt 成本）</td>
+</tr>
+<tr>
+<td>60%-79%</td>
+<td>注入一次：注意档——建议在合适节点提醒用户、暂停待恢复</td>
+</tr>
+<tr>
+<td>80%-89%</td>
+<td>注入一次：告急档——主动提醒、任务边界暂停</td>
+</tr>
+<tr>
+<td>90% 起</td>
+<td><strong>每增长 2% 递进一档</strong>（90/92/94/...），措辞紧急程度递增：严重 → 濒临耗尽 → 即将耗尽 → 几乎耗尽 → 近极限 → 已用尽（100%），每档只提醒一次</td>
+</tr>
+</tbody></table>
+<p>窗口重置回 60% 以下后，升档记忆自动清除，下次爬升会重新按档提醒。</p>
+<p>阈值可通过 cordis.yml 配置（<code>warnAt</code> / <code>criticalAt</code> / <code>escalateFrom</code> / <code>escalateStep</code>，默认 60 / 80 / 90 / 2）：</p>
+<pre><code class="language-yaml">- id: dsh-opencode-go-quota
+  config:
+    warnAt: 60
+    criticalAt: 80
+    escalateFrom: 90
+    escalateStep: 2
+</code></pre>
+<p>数据不可用（无 key / 接口失败）时注入为空，不产生 prompt 噪声。</p>
 <h3>数据来源</h3>
 <ul>
 <li>Host 端通过 <code>node -</code>（stdin 脚本）读取 <code>~/.local/share/opencode/auth.json</code> 的 <code>opencode-go.key</code></li>
 <li>调用官方接口 <code>GET https://opencode.ai/zen/go/v1/usage</code>（Bearer 鉴权）</li>
-<li>结果经 <code>/ocg-quota/usage</code> 路由（60 秒节流缓存）提供给浏览器端</li>
+<li>结果经 <code>/ocg-quota/usage</code> 路由（60 秒节流缓存，响应含 <code>thresholds</code>）提供给浏览器端与 prompt 注入</li>
 </ul>
 <h3>安装</h3>
 <pre><code class="language-bash"># 本地路径安装
@@ -233,12 +271,12 @@ dsh plugin --profile web add github:GLFzr/dsh-opencode-go-quota
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

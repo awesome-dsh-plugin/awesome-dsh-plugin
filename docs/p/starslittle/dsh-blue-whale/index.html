@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">starslittle/</span><wbr><span class="name">dsh-blue-whale</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 2</b></span>
+        <span>Stars <b>★ 3</b></span>
         <span>Category <a href="/theme/">Themes & Appearance</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -189,11 +189,17 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p>The missing <strong>default</strong> DeepSeek skin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
-<p>DSH ships as a black whale: <code>--dsw-alias-brand-primary</code> is near-black in light mode and near-white in dark mode. This plugin puts the official Chat blue back on those brand roles, and leaves light / dark / follow-system to the built-in Appearance setting.</p>
-<blockquote>
-<p>Not <code>dsh-skin</code>&#39;s <strong>Ocean</strong>. Ocean is a dark-only deep-sea navy (<code>#0a101f</code> + <code>#4d86f8</code>). This skin keeps official DSH surfaces and uses public brand <code>#4D6BFE</code> in both schemes.</p>
-</blockquote>
+<p>English · <a href="https://github.com/starslittle/dsh-blue-whale/blob/main/README.zh.md">中文</a></p>
+<p>The default <strong>blue whale</strong> skin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>.</p>
+<p>DSH ships as a black whale. Chat.deepseek.com is a blue one. This plugin puts official DeepSeek blue <code>#4D6BFE</code> back on the brand — wordmark, hero fish, tab favicon, and primary actions — and leaves light / dark / follow-system to the built-in Appearance setting.</p>
+<p><img src="https://raw.githubusercontent.com/starslittle/dsh-blue-whale/main/docs/compare-home.png" alt="Home before / after"></p>
+<p><img src="https://raw.githubusercontent.com/starslittle/dsh-blue-whale/main/docs/compare-brand.png" alt="Brand mark before / after"></p>
+<p>The browser tab icon is recolored too (see the note on the images).</p>
+<h3>Install</h3>
+<pre><code class="language-sh">dsh plugin --profile web add -w github:starslittle/dsh-blue-whale
+</code></pre>
+<p>Restart <code>dsh web</code>. The skin is <strong>on by default</strong>.</p>
+<p>Open <strong>Settings → General → Blue Whale</strong>. A green dot means it is on. <strong>Close</strong> matches the official capsule control; <strong>Open</strong> is the blue fill.</p>
 <h3>What it changes</h3>
 <table>
 <thead>
@@ -204,37 +210,40 @@ footer p+p{margin-top:.5rem}
 </tr>
 </thead>
 <tbody><tr>
-<td>Brand / primary button</td>
-<td>black (light) / white (dark)</td>
+<td>Sidebar whale + <code>deepseek</code></td>
+<td>near-black / near-white</td>
 <td><code>#4D6BFE</code></td>
 </tr>
 <tr>
-<td>Light canvas</td>
-<td>official white / bluish neutrals</td>
-<td>unchanged</td>
+<td>Hero whale</td>
+<td>same</td>
+<td><code>#4D6BFE</code></td>
 </tr>
 <tr>
-<td>Dark canvas</td>
-<td>official bluish-950</td>
+<td>Browser tab icon</td>
+<td>black (white in OS dark)</td>
+<td><code>#4D6BFE</code></td>
+</tr>
+<tr>
+<td>Brand / send / accents</td>
+<td>black or white</td>
+<td><code>#4D6BFE</code></td>
+</tr>
+<tr>
+<td>Page background</td>
+<td>official light / dark</td>
 <td>unchanged</td>
 </tr>
 <tr>
 <td>Light / dark switch</td>
 <td>built-in Appearance</td>
-<td>still built-in Appearance</td>
+<td>still built-in</td>
 </tr>
 </tbody></table>
-<p>Supporting tokens come from DSH&#39;s own <code>--dsw-static-deepseek-*</code> scale (<code>50</code>–<code>900</code>).</p>
-<h3>Install</h3>
-<pre><code class="language-sh">dsh plugin --profile web add -w github:starslittle/dsh-blue-whale
-</code></pre>
-<p>Restart <code>dsh web</code>. The skin is <strong>on by default</strong>. Settings → General → 蓝鲸 / Blue Whale turns it off.</p>
-<h3>Why not Ocean</h3>
-<ul>
-<li>Ocean is one card in a 7-skin switcher, dark only.</li>
-<li>This package is a default replacement: install and the black whale becomes the Chat blue whale.</li>
-<li>Dark mode here is official DSH dark + official blue, not a new navy theme.</li>
-</ul>
+<p>Supporting colors come from DSH&#39;s own <code>--dsw-static-deepseek-*</code> scale.</p>
+<h3>Desktop</h3>
+<p>Works on official <code>dsh web</code>, and on desktop shells that embed that same Web UI (same <code>web</code> profile).</p>
+<p>It does <strong>not</strong> change the desktop app&#39;s window or tray icon. Headless and TUI profiles have nothing to paint.</p>
 <h3>License</h3>
 <p>MIT</p>
 
@@ -253,11 +262,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 574</span></h3><a class="desc-link" href="/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p></a></li>
-      <li><h3><a href="/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</p></a></li>
+      <li><h3><a href="/p/Small-tailqwq/dsh-deep-whale/" translate="no">Small-tailqwq/dsh-deep-whale</a><span class="stars" translate="no">★ 602</span></h3><a class="desc-link" href="/p/Small-tailqwq/dsh-deep-whale/" tabindex="-1"><p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p></a></li>
+      <li><h3><a href="/p/KinGao294/dsh-skin/" translate="no">KinGao294/dsh-skin</a><span class="stars" translate="no">★ 10</span></h3><a class="desc-link" href="/p/KinGao294/dsh-skin/" tabindex="-1"><p>Codex-style skin switcher plus a custom wallpaper layer with opacity and blur controls.</p></a></li>
+      <li><h3><a href="/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" translate="no">PAKIKNOWLEDGE/dsh-client-ui-skin-claude</a><span class="stars" translate="no">★ 3</span></h3><a class="desc-link" href="/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" tabindex="-1"><p>Claude-style skin with a warm-black canvas, clay accent, and serif UI that follows the native light and dark themes.</p></a></li>
+      <li><h3><a href="/p/tianyhjg-lab/dsh-font/" translate="no">tianyhjg-lab/dsh-font</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/tianyhjg-lab/dsh-font/" tabindex="-1"><p>Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.</p></a></li>
       <li><h3><a href="/p/wsxwj123/dsh-plugins--packages-theme-gallery/" translate="no">wsxwj123/dsh-plugins#theme-gallery</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/wsxwj123/dsh-plugins--packages-theme-gallery/" tabindex="-1"><p>Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.</p></a></li>
-      <li><h3><a href="/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" translate="no">PAKIKNOWLEDGE/dsh-client-ui-skin-claude</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/" tabindex="-1"><p>Claude-style skin with a warm-black canvas, clay accent, and serif UI that follows the native light and dark themes.</p></a></li>
-      <li><h3><a href="/p/tianyhjg-lab/dsh-font/" translate="no">tianyhjg-lab/dsh-font</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/tianyhjg-lab/dsh-font/" tabindex="-1"><p>Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.</p></a></li>
+      <li><h3><a href="/p/chinaRXQ/dsh-wallpaper/" translate="no">chinaRXQ/dsh-wallpaper</a><span class="stars" translate="no">★ 1</span></h3><a class="desc-link" href="/p/chinaRXQ/dsh-wallpaper/" tabindex="-1"><p>Wallpaper skin for the DSH Web UI: image background with opacity, mask and blur controls.</p></a></li>
     </ul>
     <a class="morelink" href="/theme/">View the whole category →</a>
   </section>

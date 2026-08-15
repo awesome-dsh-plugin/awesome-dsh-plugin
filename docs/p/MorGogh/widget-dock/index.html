@@ -311,7 +311,11 @@ ln -sfn &quot;$(pwd)&quot; ~/.dsh/profiles/web/node_modules/widget-dock
 # 3. 重启 dsh web
 dsh web
 </code></pre>
-<p>重启后：对话两侧出现工作台。点击右侧工作台右上角 <code>＋</code> 打开侧栏添加面板；按住卡片头部即可拖动排序/换侧。</p>
+<p>重启后：对话两侧出现工作台。点击右侧工作台右上角 <code>＋</code> 打开侧栏添加面板；按住卡片头部即可拖动排序/换侧，点击卡片标题可收起/展开内容。</p>
+<h4>开发者：发布安全闸门</h4>
+<p>仓库内置了防密钥泄露三重拦截（<code>scripts/check-secret.mjs</code> + <code>.githooks/pre-push</code> + <code>prepack</code>/<code>prepublishOnly</code>）：只要 <code>lib/client.js</code> 里的 <code>EMBEDDED_KEY</code> 非空，<code>git push</code> / <code>npm publish</code> 都会被拒绝。clone 后启用一次：</p>
+<pre><code class="language-bash">git config core.hooksPath .githooks
+</code></pre>
 <blockquote>
 <p>安装遇到问题？可在 <a href="https://github.com/MorGogh/widget-dock/issues">Issues</a> 提问，或查看下方 FAQ。</p>
 </blockquote>
@@ -363,12 +367,12 @@ A：当前为 Web 客户端插件（<code>dsh.client</code>，platform: web）�
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

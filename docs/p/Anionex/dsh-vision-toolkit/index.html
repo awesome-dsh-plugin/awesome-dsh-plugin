@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Anionex/</span><wbr><span class="name">dsh-vision-toolkit</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 323</b></span>
+        <span>Stars <b>★ 333</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-13</b></span>
         <span>npm <a href="https://www.npmjs.com/package/@dsh-external/dsh-vision-toolkit" rel="noopener" translate="no">@dsh-external/dsh-vision-toolkit</a></span>
@@ -195,8 +195,8 @@ footer p+p{margin-top:.5rem}
 <p><img src="https://raw.githubusercontent.com/Anionex/dsh-vision-toolkit/main/assets/hero.png" alt="DSH Vision Toolkit — native visual engineering for text-only DeepSeek Harness agents"></p>
 <h2>DSH Vision Toolkit</h2>
 <p><a href="https://x.com/anion_ex"><img src="https://img.shields.io/badge/-@anion__ex-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a>
-<a href="https://github.com/Anionex/dsh-vision-toolkit/releases/tag/v0.1.6"><img src="https://img.shields.io/badge/release-v0.1.6-5B4CF0?style=flat-square" alt="Release v0.1.6"></a>
-<a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/tests"><img src="https://img.shields.io/badge/verified-162%20tests-2EA44F?style=flat-square" alt="Verified: 162 tests"></a>
+<a href="https://github.com/Anionex/dsh-vision-toolkit/releases/tag/v0.1.7"><img src="https://img.shields.io/badge/release-v0.1.7-5B4CF0?style=flat-square" alt="Release v0.1.7"></a>
+<a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/tests"><img src="https://img.shields.io/badge/verified-168%20tests-2EA44F?style=flat-square" alt="Verified: 168 tests"></a>
 <a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0B7285?style=flat-square" alt="License: MIT"></a>
 <a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/package.json"><img src="https://img.shields.io/badge/Node.js-%5E22.19%20%7C%20%3E%3D24-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a>
 <a href="https://github.com/Anionex/dsh-vision-toolkit/blob/main/runtime/requirements.lock"><img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
@@ -385,7 +385,7 @@ dsh --profile headless --dump-config | grep vision-toolkit
 <pre><code class="language-sh">dsh plugin --profile web remove @dsh-external/dsh-vision-toolkit
 dsh plugin --profile web add @anionex/dsh-vision-toolkit
 </code></pre>
-<p>After restarting, Settings → Vision should report plugin version <strong>0.1.6</strong>.</p>
+<p>After restarting, Settings → Vision should report plugin version <strong>0.1.7</strong>.</p>
 <p>For a registry installation, update the dependency through the profile package manager:</p>
 <pre><code class="language-sh">dsh plugin --profile web update @anionex/dsh-vision-toolkit
 dsh plugin --profile headless update @anionex/dsh-vision-toolkit
@@ -502,10 +502,8 @@ dsh plugin --profile headless remove @anionex/dsh-vision-toolkit
 </tr>
 </tbody></table>
 <h4>Credentials</h4>
-<p>Create or replace the referenced secret through DSH Credentials:</p>
-<pre><code class="language-sh">dsh credentials set VISION_API_KEY
-</code></pre>
-<p>The reference is stored in Settings; the value is not. Remote operations resolve it once per call and inject it only into that subprocess environment. The plugin excludes user <code>.env</code> files, checkout <code>.env</code> files, <code>PYTHONPATH</code>, <code>PYTHONHOME</code>, <code>VIRTUAL_ENV</code>, and user site-packages so ambient Python or upstream configuration cannot override the selected DSH provider. Logs, errors, tool results, Artifact metadata, and Settings responses never contain the secret.</p>
+<p>The Web Settings page accepts the actual value in its write-only <strong>API key</strong> field. Leave that field blank to retain an existing key; saving a non-empty value writes it under the advanced <strong>Credential name</strong> reference, which defaults to <code>VISION_API_KEY</code>. Headless deployments can pre-provision the same reference in <code>$DSH_HOME/.credentials.yaml</code>.</p>
+<p>Settings store only the reference, never the value. The browser does not receive a stored value, and a successful save clears the field instead of echoing it. Remote operations resolve the reference once per call and inject the value only into that subprocess environment. The plugin excludes user <code>.env</code> files, checkout <code>.env</code> files, <code>PYTHONPATH</code>, <code>PYTHONHOME</code>, <code>VIRTUAL_ENV</code>, and user site-packages so ambient Python or upstream configuration cannot override the selected DSH provider. Logs, errors, tool results, Artifact metadata, and Settings responses never contain the secret.</p>
 <h4>Managed and external runtimes</h4>
 <p>Managed mode verifies <code>vendor/agent-vision-toolkit/UPSTREAM_MANIFEST.json</code>, prefers <code>uv</code>, falls back to <code>venv</code> plus pip, installs exact versions from <code>runtime/requirements.lock</code>, coordinates concurrent preparation with a heartbeat lock, and publishes a staged environment only after all probes pass.</p>
 <p>External mode is intended for development or controlled deployments:</p>
@@ -571,7 +569,7 @@ npm run example:ui-restoration:write
 </tr>
 <tr>
 <td>Credential reported missing</td>
-<td>Run <code>dsh credentials set &lt;REF&gt;</code>, ensure <code>provider.credential</code> names that reference, then rerun health. Local-only tools do not need it.</td>
+<td>Paste the key into Web Settings <strong>API key</strong>, keep the advanced <strong>Credential name</strong> aligned with <code>provider.credential</code>, save, then rerun health. Headless deployments can provision the same reference in <code>$DSH_HOME/.credentials.yaml</code>. Local-only tools do not need it.</td>
 </tr>
 <tr>
 <td>Runtime preparation fails</td>
@@ -658,12 +656,12 @@ pnpm pack --dry-run
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
-      <li><h3><a href="/p/ysr666/dsh-vision-router/" translate="no">ysr666/dsh-vision-router</a><span class="stars" translate="no">★ 48</span></h3><a class="desc-link" href="/p/ysr666/dsh-vision-router/" tabindex="-1"><p>Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&amp;A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image to use it.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1308</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 140</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 96</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 93</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 70</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
+      <li><h3><a href="/p/dsh-market/dsh-market/" translate="no">dsh-market/dsh-market</a><span class="stars" translate="no">★ 65</span></h3><a class="desc-link" href="/p/dsh-market/dsh-market/" tabindex="-1"><p>The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>
   </section>

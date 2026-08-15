@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">609476965/</span><wbr><span class="name">dsh-LorebookMD</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 2</b></span>
+        <span>Stars <b>★ 3</b></span>
         <span>Category <a href="/fun/">Just for Fun</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -241,27 +241,33 @@ footer p+p{margin-top:.5rem}
 </tr>
 </tbody></table>
 <p>想&quot;写小说&quot;用「进入创作」，想&quot;扮演/对话&quot;用「世界书模式」；两者可随时切换，停用后回到正常会话。</p>
-<h3>安装（两步）</h3>
-<h4></h4>
-<p>跟dsh说</p>
-<pre><code>帮我安装这个插件https://github.com/609476965/dsh-LorebookMD
+<h3>安装</h3>
+<h4>跟 DSH 说</h4>
+<pre><code class="language-text">帮我安装这个插件https://github.com/609476965/dsh-LorebookMD
 </code></pre>
+<h4>从 npm 安装（推荐）</h4>
+<pre><code class="language-powershell">dsh plugin --profile web add dsh-lorebookmd
+</code></pre>
+<p>发布包已内置构建产物（<code>lib/</code>）；<code>dsh plugin</code> 会自动把本包加入 <code>dsh.profile.bundles</code> 并应用 <code>cordis.patch.yml</code>，之后用 <code>start-dsh.cmd</code> 正常启动即可，无需 <code>--patch</code>。</p>
+<blockquote>
+<p>本地试装（未发布时）：<code>npm pack</code> 生成 <code>dsh-lorebookmd-1.0.0.tgz</code>，然后 <code>dsh plugin --profile web add ./dsh-lorebookmd-1.0.0.tgz</code>。</p>
+</blockquote>
 <h4>手动安装</h4>
 <ol>
 <li><p><strong>一键安装</strong>：双击 <code>install.cmd</code>（或 <code>powershell -ExecutionPolicy Bypass -File install.ps1</code>）。脚本把插件复制到 DSH profile 的 <code>node_modules</code>（发布包已内置构建产物，无需本地构建环境）。</p>
 </li>
 <li><p><strong>挂载</strong>（二选一）：</p>
 <ul>
-<li><strong>自动挂载（推荐）</strong>：把 <code>dsh-LorebookMD</code> 追加到 <code>~\.dsh\profiles\web\package.json</code> 的 <code>dsh.profile.bundles</code> 数组，之后用 <code>start-dsh.cmd</code> 正常启动即可（DSH 会自动应用插件的 <code>cordis.patch.yml</code>，无需 <code>--patch</code>）</li>
+<li><strong>自动挂载（推荐）</strong>：把 <code>dsh-lorebookmd</code> 追加到 <code>~\.dsh\profiles\web\package.json</code> 的 <code>dsh.profile.bundles</code> 数组，之后用 <code>start-dsh.cmd</code> 正常启动即可（DSH 会自动应用插件的 <code>cordis.patch.yml</code>，无需 <code>--patch</code>）</li>
 <li><strong>临时挂载</strong>：双击 <code>start-dsh-plugin.cmd</code>（以 <code>--patch</code> 加载 <code>cordis.yml</code>）</li>
 </ul>
 </li>
 </ol>
 <blockquote>
-<p>两种挂载方式勿同时使用（会重复挂载）。打开 <code>http://127.0.0.1:3080</code>：设置 →「世界书创作」即可使用；终端应打印 <code>[prompt-manager] ready: …</code>。</p>
+<p>以上挂载方式任选其一，勿同时使用（会重复挂载）。打开 <code>http://127.0.0.1:3080</code>：设置 →「世界书创作」即可使用；终端应打印 <code>[prompt-manager] ready: …</code>。</p>
 </blockquote>
 <blockquote>
-<p>安装原理：正常安装 = 把插件包放进 DSH profile 的 <code>node_modules</code>。插件源码的 <code>@deepseek-ai/*</code> 依赖由 profile 运行时直接解析（DSH 自带完整运行时包），无需额外依赖链。更新插件：覆盖安装新版本后重启 DSH 即可。</p>
+<p>安装原理：正常安装 = 把插件包放进 DSH profile 的 <code>node_modules</code>。插件源码的 <code>@deepseek-ai/*</code> 依赖由 profile 运行时直接解析（DSH 自带完整运行时包），无需额外依赖链。更新插件：升级安装新版本后重启 DSH 即可。</p>
 </blockquote>
 <h3>数据位置</h3>
 <table>
@@ -306,12 +312,12 @@ npm run typecheck # tsc --noEmit 严格检查
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Nagi-ovo/dsh-ads/" translate="no">Nagi-ovo/dsh-ads</a><span class="stars" translate="no">★ 328</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-ads/" tabindex="-1"><p>Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.</p></a></li>
-      <li><h3><a href="/p/vlln/whale-girl/" translate="no">vlln/whale-girl</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/vlln/whale-girl/" tabindex="-1"><p>Desktop pet (QQ-pet style): floats in the corner, draggable, feedable, playable.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-ads/" translate="no">Nagi-ovo/dsh-ads</a><span class="stars" translate="no">★ 338</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-ads/" tabindex="-1"><p>Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.</p></a></li>
+      <li><h3><a href="/p/vlln/whale-girl/" translate="no">vlln/whale-girl</a><span class="stars" translate="no">★ 130</span></h3><a class="desc-link" href="/p/vlln/whale-girl/" tabindex="-1"><p>Desktop pet (QQ-pet style): floats in the corner, draggable, feedable, playable.</p></a></li>
+      <li><h3><a href="/p/PC2005-cloud/dsh-pet--dsh-pet/" translate="no">PC2005-cloud/dsh-pet#dsh-pet</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/p/PC2005-cloud/dsh-pet--dsh-pet/" tabindex="-1"><p>Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-gomoku/" translate="no">omdsh-dev/dsh-gomoku</a><span class="stars" translate="no">★ 13</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-gomoku/" tabindex="-1"><p>Play Gomoku against the AI, or let two AIs battle it out.</p></a></li>
       <li><h3><a href="/p/lhh010/dsh-minigames/" translate="no">lhh010/dsh-minigames</a><span class="stars" translate="no">★ 13</span></h3><a class="desc-link" href="/p/lhh010/dsh-minigames/" tabindex="-1"><p>Side-panel arcade: 18 offline mini-games to play while the model thinks.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-gomoku/" translate="no">omdsh-dev/dsh-gomoku</a><span class="stars" translate="no">★ 12</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-gomoku/" tabindex="-1"><p>Play Gomoku against the AI, or let two AIs battle it out.</p></a></li>
-      <li><h3><a href="/p/AnacondaKC/dsh-stock-market/" translate="no">AnacondaKC/dsh-stock-market</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/p/AnacondaKC/dsh-stock-market/" tabindex="-1"><p>Fixes the bug where your account can't lose money while you code.</p></a></li>
-      <li><h3><a href="/p/hellodigua/dsh-emoji/" translate="no">hellodigua/dsh-emoji</a><span class="stars" translate="no">★ 11</span></h3><a class="desc-link" href="/p/hellodigua/dsh-emoji/" tabindex="-1"><p>Automatically add emojis to AI replies.</p></a></li>
+      <li><h3><a href="/p/hellodigua/dsh-emoji/" translate="no">hellodigua/dsh-emoji</a><span class="stars" translate="no">★ 12</span></h3><a class="desc-link" href="/p/hellodigua/dsh-emoji/" tabindex="-1"><p>Automatically add emojis to AI replies.</p></a></li>
     </ul>
     <a class="morelink" href="/fun/">View the whole category →</a>
   </section>

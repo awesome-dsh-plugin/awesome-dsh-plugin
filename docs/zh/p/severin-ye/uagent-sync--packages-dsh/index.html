@@ -295,22 +295,31 @@ footer p+p{margin-top:.5rem}
 <blockquote>
 <p>DeepSeek Harness 目前是 Developer Preview，以下命令以当前版本为准。</p>
 </blockquote>
-<p><strong>方式一：从 GitHub 安装（本仓库 monorepo 子包）</strong></p>
+<p><strong>方式一：从 npm 安装（推荐）</strong></p>
+<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add uagent-sync-dsh
+</code></pre>
+<blockquote>
+<p>需要 uagent-sync-dsh ≥ 2.0.2（已发布到 npm registry）。</p>
+</blockquote>
+<p><strong>方式二：从 GitHub 安装（本仓库 monorepo 子包）</strong></p>
 <pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add &quot;github:severin-ye/uagent-sync#main&amp;path:packages/dsh&quot;
 </code></pre>
 <blockquote>
 <p>本包是纯 JavaScript，无需 <code>prepare</code> 构建授权（pnpm ≥10 的 allowBuilds 步骤不会出现）。</p>
 </blockquote>
-<p><strong>方式二：本地 checkout 安装</strong></p>
+<p><strong>方式三：本地 checkout 安装</strong></p>
 <pre><code class="language-sh"># 在 uagent-sync 仓库内先构建 CLI：
 npm install &amp;&amp; npm run build
 
 dsh plugin --profile &lt;name&gt; add ./packages/dsh
 </code></pre>
 <p>本地安装时插件自动通过相对路径发现 <code>dist/cli.js</code>，无需配置。</p>
-<p><strong>方式三：npm 发布后</strong></p>
-<pre><code class="language-sh">dsh plugin --profile &lt;name&gt; add uagent-sync-dsh
-</code></pre>
+<h3>测试与契约守卫</h3>
+<ul>
+<li><strong>桥接层测试</strong>：<code>test/dsh-plugin.test.ts</code> 覆盖 CLI 定位/参数映射/spawn/渲染（<code>packages/dsh/lib/cli.js</code>，纯 JS 零依赖）。</li>
+<li><strong>schema 契约守卫</strong>：<code>test/dsh-plugin-schema.test.ts</code> 直接加载 <code>index.js</code> 执行 <code>apply()</code>，对根 devDependencies 锁定的 <code>@deepseek-ai/dsh-tools@0.1.0-rc.6</code> 注册全部 16 工具——dsh-tools 的 author-schema 校验（如 <code>required must be true when present</code>）破坏会在 CI 直接红。</li>
+<li><strong>版本解析约定</strong>：<code>packages/dsh/node_modules</code> 不应存在（gitignored 陈旧副本会遮蔽根 devDeps 的 dsh-tools 版本）。全新机器在仓库根 <code>npm install</code> 即可满足插件解析。</li>
+</ul>
 <h3>CLI 定位与配置</h3>
 <p>工具执行前按以下顺序定位 <code>dist/cli.js</code>：</p>
 <ol>
@@ -379,12 +388,12 @@ dsh plugin --profile &lt;name&gt; add ./packages/dsh
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 244</span></h3><a class="desc-link" href="/zh/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams 多智能体团队。</p></a></li>
+      <li><h3><a href="/zh/p/NanmiCoder/dsh-agent-teams/" translate="no">NanmiCoder/dsh-agent-teams</a><span class="stars" translate="no">★ 252</span></h3><a class="desc-link" href="/zh/p/NanmiCoder/dsh-agent-teams/" tabindex="-1"><p>AgentTeams 多智能体团队。</p></a></li>
       <li><h3><a href="/zh/p/icetomoyo/dsh_workflow/" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 54</span></h3><a class="desc-link" href="/zh/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。</p></a></li>
       <li><h3><a href="/zh/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 43</span></h3><a class="desc-link" href="/zh/p/btspoony/mstar-harness/" tabindex="-1"><p>技能驱动的 harness/loop 工程化工作流插件。</p></a></li>
-      <li><h3><a href="/zh/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/zh/p/titanwings/dsh-automation/" tabindex="-1"><p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p></a></li>
-      <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>自适应深度研究编排器（基于官方 workflow 引擎）。</p></a></li>
+      <li><h3><a href="/zh/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 33</span></h3><a class="desc-link" href="/zh/p/titanwings/dsh-automation/" tabindex="-1"><p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p></a></li>
+      <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 10</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>自适应深度研究编排器（基于官方 workflow 引擎）。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/workflow/">查看整个分类 →</a>
   </section>

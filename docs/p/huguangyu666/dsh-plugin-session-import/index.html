@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">huguangyu666/</span><wbr><span class="name">dsh-plugin-session-import</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 1</b></span>
+        <span>Stars <b>★ 4</b></span>
         <span>Category <a href="/session/">Sessions & Messages</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-plugin-session-import" rel="noopener" translate="no">dsh-plugin-session-import</a></span>
@@ -192,6 +192,10 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
+<p><a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="Awesome DSH Plugin"></a></p>
+<blockquote>
+<p>已收录于 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a> 精选列表（Sessions &amp; Messages）· <a href="https://github.com/AdamPlatin123/awesome-dsh-plugins">AdamPlatin123 自动雷达</a>（✅ 运行级验证通过）</p>
+</blockquote>
 <p>DeepSeek Harness（dsh）插件：把 <strong>claude-code / codex / reasonix / zcode</strong> 的历史聊天记录导入为 dsh 会话（含工作区绑定与工具能力），导入后可直接续聊。</p>
 <h3>功能</h3>
 <ul>
@@ -302,6 +306,10 @@ dsh web
 </ul>
 <h3>开发</h3>
 <pre><code class="language-bash">npm run build      # esbuild 构建 lib/index.js + lib/client.js
+node test-events.mjs   # toSessionEvents 单元测试 21 项（工具配对/孤儿丢弃等）
+node test-codex.mjs    # codex 解析器 7 项（exec_command 参数转 JSON）
+node test-reasonix.mjs # reasonix 解析器 5 项
+node test-slug.mjs     # slug 路径解码 4 项
 npm pack           # 打包验证
 </code></pre>
 <h3>License</h3>
@@ -323,12 +331,12 @@ npm pack           # 打包验证
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 39</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
-      <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 25</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
-      <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 41</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
+      <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 27</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.</p></a></li>
+      <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 26</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
       <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a></li>
       <li><h3><a href="/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/p/hellodigua/dsh-share/" tabindex="-1"><p>Share your conversations with one click.</p></a></li>
-      <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p></a></li>
+      <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p></a></li>
     </ul>
     <a class="morelink" href="/session/">View the whole category →</a>
   </section>

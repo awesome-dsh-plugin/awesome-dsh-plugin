@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">Max-Samson/</span><wbr><span class="name">dsh-usage-chart</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 3</b></span>
+        <span>Star 数 <b>★ 4</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-usage-chart" rel="noopener" translate="no">dsh-usage-chart</a></span>
@@ -198,7 +198,7 @@ footer p+p{margin-top:.5rem}
 <p><a href="https://www.npmjs.com/package/dsh-usage-chart"><img src="https://img.shields.io/npm/v/dsh-usage-chart" alt="npm version"></a>
 <a href="https://github.com/Max-Samson/dsh-usage-chart/actions"><img src="https://img.shields.io/github/actions/workflow/status/Max-Samson/dsh-usage-chart/ci.yml?branch=main" alt="CI"></a>
 <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Max-Samson/dsh-usage-chart" alt="License"></a></p>
-<p><a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/README_EN.md">English</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/issues">问题反馈</a></p>
+<p><a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/README_EN.md">English</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/issues">问题反馈</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/CHANGELOG_ZH.md">更新日志（中文）</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/CHANGELOG.md">Changelog (EN)</a></p>
 <p>界面预览：左侧为浅色英文界面，右侧为深色简体中文界面。两者均会跟随 DSH 的主题与语言设置。</p>
 <blockquote>
 <p>图片仅使用虚构演示数据：不含真实会话内容、Token、成本、余额或 API Key。</p>
@@ -209,8 +209,10 @@ footer p+p{margin-top:.5rem}
 <p>点击 ▸ 展开面板：</p>
 <ul>
 <li><strong>会话用量汇总</strong> — 输入（未命中/命中）、输出、缓存命中率、上下文占用（均来自官方 adapter 上报的 <code>tokenUsage</code> / <code>contextPressure</code> 投影）</li>
-<li><strong>成本估算</strong> — 按官方刊例价（USD/1M tokens）估算，标注「估算，非账单」</li>
-<li><strong>轮次用量</strong> — 支持“总量 / 构成”视图与悬浮详情；从宿主会话日志折叠完整历史，不可用时回退到本页观测增量</li>
+<li><strong>成本估算</strong> — 按官方刊例价（USD/1M tokens）估算并标注来源与核验日期；支持用户覆盖 <code>pricing.json</code>；未定价模型显式标记「未定价模型」</li>
+<li><strong>轮次用量</strong> — 支持“总量 / 构成 / <strong>成本</strong>”三视角；柱顶叠加<strong>总耗时点线</strong>；成本突增轮次加<strong>异常标记</strong>（归因 chip：输出增长 / 上下文膨胀 / 缓存命中下降）；柱底缓存命中迷你刻度；悬浮<strong>解释卡</strong>（token 分桶 + 成本 + 模型 + 耗时/TTFT/TPS + 结束原因）；从宿主会话日志折叠完整历史，不可用时回退到本页观测增量</li>
+<li><strong>成本徽章</strong> — 每条助手消息尾部显示可关闭的「本轮 ≈ $0.00xx」徽章</li>
+<li><strong>上下文压力条</strong> — 指示器行内的细压力条（<code>contextPressure / contextWindow</code>），随占用升高由绿转红</li>
 <li><strong>账户余额</strong> — 官方 <code>GET /user/balance</code> 接口实时查询（经宿主侧代理，密钥不暴露给浏览器）</li>
 <li><strong>中英双语</strong> — 自动跟随 DSH 应用内语言设置，支持运行时切换 <code>zh</code> / <code>en</code></li>
 </ul>
@@ -230,8 +232,13 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td>成本</td>
-<td>官方刊例价 × adapter 上报用量</td>
-<td>⚠️ 估算值，非官方账单</td>
+<td>官方刊例价（内置表 + 可选用户覆盖 <code>pricing.json</code>）× adapter 上报用量</td>
+<td>⚠️ 估算值，非官方账单；价格经宿主 <code>/pricing</code> 单点解析</td>
+</tr>
+<tr>
+<td>轮次明细</td>
+<td>宿主会话日志折叠（<code>/usage</code>）：耗时 / TTFT / TPS / 模型归因 / 结束原因 / 每轮成本</td>
+<td>✅ 官方事件流折叠</td>
 </tr>
 <tr>
 <td>余额</td>
@@ -240,7 +247,7 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td>模型名</td>
-<td>adapter 上报的请求 provenance</td>
+<td>adapter 上报的请求 provenance / <code>request/context</code></td>
 <td>✅ 官方真实数据</td>
 </tr>
 </tbody></table>
@@ -265,16 +272,21 @@ dsh web --profile web                          # 启动 DSH Web（已在运行�
 <p>更新（升级到新版本）：pnpm 对已安装的依赖重新 <code>add</code> 可能显示 <code>Already up to date</code>
 而不升级，请用<strong>显式版本</strong>（推荐）或<strong>先卸载再安装</strong>：</p>
 <pre><code class="language-sh"># 方式①：显式指定目标版本
-dsh plugin --profile web add dsh-usage-chart@0.1.1
+dsh plugin --profile web add dsh-usage-chart@0.2.0
 # 方式②：先移除再重装（回到最新版）
 dsh plugin --profile web remove dsh-usage-chart
 dsh plugin --profile web add dsh-usage-chart
 </code></pre>
 <p>完成后重启 DSH Web。</p>
 <blockquote>
+<p>⚠️ <strong>升级到 v0.2.0 必须重启 <code>dsh web</code> 进程</strong>：宿主在启动时缓存插件代码（无热重载），
+新的 <code>/pricing</code> 路由与 <code>/usage</code> 的 <code>rounds</code> 响应只有重启后才生效；重启前指示器会
+隐藏成本位、面板提示「价格快照不可用」。详见 <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/CHANGELOG_ZH.md">更新日志</a>。</p>
+</blockquote>
+<blockquote>
 <p>⚠️ <strong>未全局安装 dsh（报 <code>dsh: command not found</code> / PowerShell <code>无法将“dsh”项识别为…</code>）？
 把上面每条 <code>dsh</code> 都写成 <code>npx --yes @deepseek-ai/dsh</code></strong>，例如
-<code>npx --yes @deepseek-ai/dsh plugin --profile web add dsh-usage-chart@0.1.1</code>
+<code>npx --yes @deepseek-ai/dsh plugin --profile web add dsh-usage-chart@0.2.0</code>
 （原因与解法见 <a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98faq">FAQ</a> 第一条）。</p>
 </blockquote>
 <h4>方式二：从 GitHub 安装（源码构建）</h4>
@@ -321,11 +333,23 @@ DeepSeek API Key。插件经 DSH 凭据服务读取同一密钥（<code>.credent
       config:
         apiKey: &#39;sk-...&#39;        # 留空则回退到网页端/环境变量
         baseUrl: &#39;https://api.deepseek.com&#39;
+        # pricingFile: &#39;/path/to/pricing.json&#39;   # 可选：价格覆盖文件（默认 $DSH_HOME/data/dsh-usage-chart/pricing.json）
 </code></pre>
 <blockquote>
 <p>插件版本 &lt; 0.1.1 时不读取网页端密钥：请用环境变量或上面的 <code>config.apiKey</code> 配置。</p>
 </blockquote>
 <p>未配置 Key 时，指示器显示 <code>余额 –</code>，点击可重试；面板内会提示如何配置。</p>
+<h4>价格覆盖（可选，v0.2+）</h4>
+<p>成本按「用户覆盖 &gt; 内置刊例价 &gt; 回退估算」解析（价格只在宿主解析，client 经
+<code>/dsh-usage-chart/pricing</code> 快照消费，单一价格真相）。默认覆盖文件
+<code>$DSH_HOME/data/dsh-usage-chart/pricing.json</code>（无 <code>DSH_HOME</code> 时 <code>~/.dsh/...</code>），
+支持两种形状，文件变更即时生效：</p>
+<pre><code class="language-json">{
+  &quot;deepseek-v4-flash&quot;: { &quot;cacheMissInput&quot;: 0.14, &quot;cacheHitInput&quot;: 0.0028, &quot;output&quot;: 0.28, &quot;verifiedAt&quot;: 1755100800000 }
+}
+</code></pre>
+<p>或 <code>{ &quot;models&quot;: { &quot;&lt;model&gt;&quot;: { … } } }</code>。<code>verifiedAt</code>（epoch 毫秒）可选，用于面板展示
+核验日期；未收录的模型会在 UI 中显式标记「未定价模型」，不会静默按 0 计。</p>
 <h4>卸载</h4>
 <blockquote>
 <p>⚠️ <strong>未全局安装 dsh（报 <code>dsh: command not found</code> / PowerShell <code>无法将“dsh”项识别为…</code>）？
@@ -415,16 +439,26 @@ node scripts/verify-render.mjs # 完整渲染验证（含明暗主题、中英�
 <h3>插件结构</h3>
 <pre><code>dsh-usage-chart/
 ├── package.json          # dsh.bundle（安装层）+ dsh.client（浏览器半区）+ exports[&quot;./client&quot;]
-├── cordis.patch.yml      # 插件行插入（config.apiKey / baseUrl）
-├── build.mjs             # esbuild 双产物 + tsc 类型声明（lib/types）构建
+├── cordis.patch.yml      # 插件行插入（config.apiKey / baseUrl / pricingFile）
+├── build.mjs             # esbuild 双产物（+ client 纯模块测试束）+ tsc 类型声明（lib/types）
 ├── src/
-│   ├── index.ts          # host 半区：/dsh-usage-chart/balance 余额代理路由
-│   ├── pricing.ts        # 官方刊例价表 + 成本计算（host/client 共享）
+│   ├── index.ts          # host 半区：/balance 余额代理 + /usage 轮次折叠 + /pricing 价格快照
+│   ├── pricing/
+│   │   ├── calc.ts       # 纯共享计算（成本分拆/格式化；两个半区 bundle 同一份）
+│   │   ├── source.ts     # PricingSource 接缝：builtin 刊例价 + pricing.json 文件适配器
+│   │   └── resolve.ts    # PricingResolver：覆盖 &gt; 内置 &gt; 回退，未知模型显式标记
+│   ├── usage/
+│   │   └── rounds.ts     # RoundFold：耗时/TTFT/TPS/模型归因/结束原因/每轮成本（纯函数）
 │   └── client/
-│       ├── index.ts      # client 入口：注册 &#39;conversation.composer.dock&#39; 槽位
-│       ├── UsageIndicator.tsx  # 输入框下方一行指示器
-│       ├── UsagePanel.tsx      # 可视化面板（汇总 / 成本 / 每轮柱状图 / 余额）
-│       ├── charts.tsx          # 零依赖 SVG 柱状图
+│       ├── index.ts      # client 入口：注册 composer.dock + assistant-actions 槽位
+│       ├── UsageIndicator.tsx  # 输入框下方一行指示器（含上下文压力条）
+│       ├── UsagePanel.tsx      # 可视化面板（汇总 / 成本 / 每轮图表 / 余额）编排根
+│       ├── charts.tsx          # 零依赖 SVG/HTML 原语（堆叠条/图例）
+│       ├── chart/RoundBars.tsx # 深模块柱状图（三视角 + 耗时叠加 + 异常标记 + 解释卡）
+│       ├── rounds/             # observed.ts（本页观测）/ history.ts（宿主历史）/ types.ts
+│       ├── diagnose/anomaly.ts # 成本突增判定（图表与徽章共享的纯模块）
+│       ├── badge/CostBadge.tsx # assistant 消息尾部可关闭成本徽章
+│       ├── pricing-api.ts      # usePricing：/pricing 快照消费（client 唯一价格输入）
 │       ├── balance.ts          # 余额读取 hook（经宿主代理）
 │       └── styles.ts           # 注入样式（&lt;style data-plugin&gt;）
 └── types/                # vendored 最小类型声明（DSH client 包未发布稳定版）
@@ -432,7 +466,7 @@ node scripts/verify-render.mjs # 完整渲染验证（含明暗主题、中英�
 <h3>数据与安全边界</h3>
 <ul>
 <li>token 与上下文数据来自当前 DSH 会话投影；每轮图表优先读取会话日志，读取失败时会明确标注并回退到本页观测。</li>
-<li>成本为官方刊例价估算；官方价格调整后需升级本插件。</li>
+<li>成本为官方刊例价估算（支持用户覆盖 <code>pricing.json</code>）；价格只在宿主解析，client 经 <code>/pricing</code> 快照消费，官方价格调整后可通过覆盖文件即时修正。</li>
 <li>余额经宿主同源路由代理（浏览器直连官方 API 有 CORS 与密钥暴露问题）。</li>
 <li>Host 路由只接受同源 GET 请求，并为 JSON 响应设置 <code>no-store</code>；插件不会把 API Key 发送到浏览器。</li>
 <li>自定义 API 地址必须使用 HTTPS；仅回环地址允许 HTTP，便于连接本地代理。</li>
@@ -455,7 +489,7 @@ node scripts/verify-render.mjs # 完整渲染验证（含明暗主题、中英�
 </tr>
 <tr>
 <td>Web UI</td>
-<td>React 18 / <code>conversation.composer.dock</code></td>
+<td>React 18 / <code>conversation.composer.dock</code> + <code>conversation.chat.assistant-actions</code></td>
 </tr>
 <tr>
 <td>系统</td>
@@ -489,12 +523,12 @@ node scripts/verify-render.mjs # 完整渲染验证（含明暗主题、中英�
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

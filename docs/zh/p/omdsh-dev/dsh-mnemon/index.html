@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">omdsh-dev/</span><wbr><span class="name">dsh-mnemon</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 14</b></span>
+        <span>Star 数 <b>★ 16</b></span>
         <span>分类 <a href="/zh/memory/">记忆</a></span>
         <span>收录于 <b>2026-08-13</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-mnemon" rel="noopener" translate="no">dsh-mnemon</a></span>
@@ -192,180 +192,218 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<blockquote>
-<p><strong><a href="https://github.com/mnemon-dev/mnemon">Mnemon</a> 与 DSH 的深度集成，为 DSH 提供完备的记忆系统能力。</strong></p>
-</blockquote>
-<p><code>dsh-mnemon</code> 是 DeepSeek Harness（DSH）的本地 Mnemon 记忆插件。它把每轮可见的运行时热记忆、可直接阅读的项目档案（Documents）和按需召回的长期记忆体（Memory Spaces）组织成一个受监督、可检索、可维护的三层体系。</p>
-<p>插件把 Mnemon 的长期记忆体能力接入 DSH，并补充 Runtime Memory、Documents、生命周期、受限子 Agent、WebUI、命令和权限边界。当前用户指令和仓库事实始终高于历史记忆。</p>
-<blockquote>
-<p><strong>What&#39;s more?</strong> 更多 DSH Native 能力支持正在路上。<strong>Memory to View.</strong></p>
-</blockquote>
+<p><code>dsh-mnemon</code> 将 <a href="https://github.com/mnemon-dev/mnemon">Mnemon</a> 接入 DeepSeek Harness（DSH），并把每轮需要的热记忆、需要完整阅读的项目档案和按需召回的长期记忆体组织在同一个工作台中。其他 Agent 只要同样接入 Mnemon，并使用同一套可访问的本地 Mnemon 存储，就可以与 DSH 共享长期记忆。</p>
+<ul>
+<li><strong>本地优先</strong>：记忆保存在本机 SQLite、JSON 与 Markdown 中，不依赖远程记忆服务。</li>
+<li><strong>跨 Agent 共享</strong>：DSH 的 Mnemon 记忆体可以被其他支持 Mnemon 的 Agent 读取和复用。</li>
+<li><strong>三层协作</strong>：运行时记忆、项目档案、记忆体各自保存适合自己的信息粒度。</li>
+<li><strong>受监督写入</strong>：语义判断交给隔离的记忆子 Agent，路径、权限、容量、锁与 revision 由 Host 控制。</li>
+<li><strong>DSH 原生体验</strong>：默认 Sidebar 工作台、对话内回合记忆、存入记忆弹窗、双语界面与明暗主题。</li>
+</ul>
+<p>当前用户指令、仓库文件与实时工具结果始终高于历史记忆。</p>
 <h3>实机演示</h3>
-<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/assets/dsh-mnemon-memory-system-demo.gif" alt="dsh-mnemon 记忆系统实机演示：状态、运行时记忆、多记忆体图谱、档案、检索、实体与监督写回"></p>
-<h3>三层记忆</h3>
+<p><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/assets/media/dsh-mnemon-memory-system-demo.gif" alt="dsh-mnemon Sidebar 记忆系统与对话内交互演示"></p>
+<p>完整逐页说明见 <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/ui-guide.md">Sidebar 与对话交互指南</a>。</p>
+<h3>5 分钟开始使用</h3>
+<h4>1. 安装 Mnemon</h4>
+<pre><code class="language-sh"># macOS
+brew install --cask mnemon-dev/tap/mnemon
+
+# macOS / Linux，也可以通过 Go 安装
+go install github.com/mnemon-dev/mnemon@latest
+
+mnemon --version
+</code></pre>
+<h4>2. 安装插件</h4>
+<pre><code class="language-sh">dsh plugin --profile web add dsh-mnemon
+dsh --profile web
+</code></pre>
+<p>本地开发检出使用绝对路径：</p>
+<pre><code class="language-sh">dsh plugin --profile web add &quot;link:/absolute/path/to/dsh-mnemon&quot;
+</code></pre>
+<h4>3. 打开记忆系统</h4>
+<p>安装后默认使用 <code>sidebar</code>：点击 DSH 左侧栏的“记忆系统”即可进入。第一次使用建议按以下顺序：</p>
+<ol>
+<li>在“状态”确认 Mnemon CLI、运行时、记忆体与档案均正常；</li>
+<li>在“记忆体 → 概览”创建一个边界明确的记忆体；</li>
+<li>用“沉淀记忆”提交一条稳定、未来仍有用的信息；</li>
+<li>在“检索”用一个聚焦问题验证召回；</li>
+<li>回到对话，展开回复下方的“本回合记忆”查看工具轨迹。</li>
+</ol>
+<p>更完整的安装、Provider 要求与验证步骤见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/getting-started.md">快速开始</a>。</p>
+<h3>一个工作台，三层记忆</h3>
 <table>
 <thead>
 <tr>
 <th>层级</th>
 <th>适合保存</th>
-<th>如何记住</th>
 <th>如何进入上下文</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>运行时热记忆</td>
-<td>用户偏好、稳定约定、环境事实、常用经验</td>
-<td>显式操作或合格的后台审查更新 <code>memories.json</code>，再生成 <code>USER.md</code> / <code>MEMORY.md</code> 投影</td>
-<td>每轮直接注入</td>
+<td><strong>运行时</strong></td>
+<td>用户偏好、协作要求、项目约定、环境事实</td>
+<td><code>USER.md</code> / <code>MEMORY.md</code> 每轮紧凑注入</td>
 </tr>
 <tr>
-<td>项目档案</td>
-<td>设计、调查、流程、架构理由、交接材料</td>
-<td>创建或更新受管 Markdown 与 <code>index.json</code>；整理容量时先建立 Mnemon 冷引用，再迁移原文</td>
-<td>先检索 active Documents，再按需读取全文</td>
+<td><strong>档案</strong></td>
+<td>设计、调查、流程、复盘、交接材料</td>
+<td>先确定性检索 active Documents，再按需阅读全文</td>
 </tr>
 <tr>
-<td>记忆体</td>
-<td>跨会话的长期事实、决策、实体与关系</td>
-<td>受限 <code>spawn</code> worker 选择最窄空间并查重，通过 Mnemon <code>remember</code> / <code>link</code> 写入四图</td>
-<td>只从已激活 Memory Spaces 按需召回</td>
+<td><strong>记忆体</strong></td>
+<td>跨会话事实、决策、实体与关系</td>
+<td>只从已激活 Memory Spaces 按需召回有界证据</td>
 </tr>
 </tbody></table>
-<pre><code class="language-text">当前任务产生的可复用信息
-          |
-          +-- 短小、稳定、每轮常用
-          |      主 Agent / 合格的 fork 审查
-          |                 |
-          |      add | replace | remove
-          |                 v
-          |      memories.json（权威源）
-          |                 |
-          |      USER.md + MEMORY.md ----------&gt; 每轮 prompt
-          |
-          +-- 完整设计、调查、流程与交接
-          |      主 Agent / 合格的 fork 审查
-          |                 |
-          |          create | update
-          |                 v
-          |      index.json + active/*.md ------&gt; 检索后按需全文
-          |                 |
-          |      Mnemon 冷引用 -&gt; archived/*.md（容量整理）
-          |
-          `-- 跨会话事实、决策、实体与关系
-                    主 Agent
-                       |
-              spawn：选空间 / 查重 / 写入
-                       v
-              Mnemon CLI -&gt; &lt;space&gt;/mnemon.db
-                       |
-              spawn：仅召回 active 空间 -------&gt; 有界证据
-</code></pre>
-<h3>核心能力</h3>
+<p>三层不是同一内容的简单复制：信息会按使用频率、叙事长度和召回方式进入最合适的层级。完整规则见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/storage-model.md">存储与三层记忆模型</a>。</p>
+<h4>与其他 Agent 共享长期记忆</h4>
+<p>跨 Agent 共享发生在 Mnemon 提供的<strong>记忆体</strong>层。其他支持 Mnemon 的 Agent 指向相同的 <code>storageRoot</code> 和 Store 后，可以召回或继续沉淀同一批长期事实、实体与关系。DSH 专有的运行时记忆和项目档案不会因此自动暴露给其他 Agent。</p>
+<p>默认 <code>global</code> 模式使用 <code>~/.mnemon</code>，最适合作为本机 Agent 之间的共享记忆根；<code>custom</code> 和 <code>workspace</code> 也可以共享，但所有参与方必须显式对齐目录。共享同一目录意味着共享同一份数据，请先确认信任边界，并避免并发执行不兼容的离线迁移或目录操作。</p>
+<h3>Sidebar 工作台</h3>
+<table>
+<thead>
+<tr>
+<th>页面</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>状态</strong></td>
+<td>检查连接、存储根、三层数据摘要，以及 Mnemon / dsh-mnemon 版本</td>
+</tr>
+<tr>
+<td><strong>运行时</strong></td>
+<td>查看 USER / MEMORY 容量，筛选、添加、编辑或移除热记忆</td>
+</tr>
+<tr>
+<td><strong>记忆体</strong></td>
+<td>管理激活边界；在概览、检索、内容、实体之间切换；打开“沉淀记忆”</td>
+</tr>
+<tr>
+<td><strong>档案</strong></td>
+<td>搜索、阅读、新建、编辑与归档受管 Markdown 文档</td>
+</tr>
+</tbody></table>
+<p>添加与编辑使用统一弹窗；危险操作需要二次确认；长列表采用筛选、计数与“加载更多”，档案正文使用独立阅读区域。</p>
+<h4>对话内记忆</h4>
+<table>
+<thead>
+<tr>
+<th>本回合记忆</th>
+<th>存入记忆</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/assets/screenshots/conversation-turn-memory.png"><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/assets/screenshots/conversation-turn-memory.png" alt="展开本回合记忆并查看工具入口"></a></td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/assets/screenshots/conversation-save-dialog.png"><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/assets/screenshots/conversation-save-dialog.png" alt="确认存入记忆弹窗"></a></td>
+</tr>
+</tbody></table>
 <ul>
-<li>主动记忆路由：内置 Prompt、生命周期提示与工具说明会启发 LLM 按需调用全部读写能力；用户明确要求回顾、记住、修改、忘记或建档时，会自动选择对应层级和操作。</li>
-<li>统一的 <code>global</code>、<code>workspace</code> 或 <code>custom</code> 存储范围，覆盖三层数据。</li>
-<li>多记忆体目录：每个记忆体拥有稳定 ID、名称、路由说明、激活状态和独立 <code>mnemon.db</code>。</li>
-<li>受限子 Agent：长期召回与语义写入使用隔离的 <code>spawn</code> worker；后台审查使用继承已完成 checkpoint 的 <code>fork</code> worker。</li>
-<li>可靠容量维护：USER 热记忆在本地保守合并，MEMORY 热记忆先归档再压缩，Documents 先建立冷索引再迁移；revision 冲突时保留原数据。</li>
-<li>DSH 原生体验：模型工具、<code>/mnemon</code> 命令、双语 Web 工作台、全局明暗主题和诊断状态页。</li>
-<li>本地优先：CLI 以参数数组启动且禁用 shell；数据库和文档不需要远程记忆服务。</li>
+<li><strong>本回合记忆</strong>汇总本轮的召回、沉淀与档案检索；展开后可以跳到对应页面。</li>
+<li><strong>存入记忆</strong>先加载可编辑候选，只有确认后才交给记忆子 Agent 判断、查重、提炼并写入。</li>
 </ul>
-<h3>前置条件</h3>
-<ul>
-<li>可用的 DSH Web profile。</li>
-<li>本地 <code>mnemon</code> CLI。</li>
-<li>支持 <code>outputSchema</code>、<code>toolFilter</code>、<code>persona</code> 和 <code>depthLimit</code> 的子 Agent provider。常规语义操作优先使用 <code>spawn</code>；默认后台审查还需要名为 <code>fork</code>、可继承父上下文的 provider。</li>
-</ul>
-<p><strong>兼容基线</strong>：<code>dsh-mnemon</code> 0.1.0 已在 <code>@deepseek-ai/dsh</code> 0.1.0-rc.6（2026-08-13 快照）的 live web profile 上实测通过，最后验证日期 2026-08-14。插件不声明固定的最低版本矩阵；DSH 迭代快，升级前先在隔离 profile 或已备份的数据目录中复跑<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/getting-started.md">快速开始</a>的验证步骤。</p>
-<h3>快速开始</h3>
-<p>安装 Mnemon：</p>
-<pre><code class="language-sh"># macOS
-brew install --cask mnemon-dev/tap/mnemon
-
-# macOS / Linux，也可通过 Go 安装
-go install github.com/mnemon-dev/mnemon@latest
-
-mnemon --version
-</code></pre>
-<p>安装插件并重启 DSH Web profile：</p>
-<pre><code class="language-sh">dsh plugin --profile web add dsh-mnemon
-dsh --profile web
-</code></pre>
-<p>未发布到 npm 的预发布版本可从 git 安装：</p>
-<pre><code class="language-sh">dsh plugin --profile web add &quot;github:omdsh-dev/dsh-mnemon&quot;
-</code></pre>
-<p>本地开发检出使用绝对路径：</p>
-<pre><code class="language-sh">dsh plugin --profile web add &quot;link:/absolute/path/to/dsh-mnemon&quot;
-</code></pre>
-<p>打开 DSH 的“设置 -&gt; 记忆系统”独立配置页选择存储范围，再进入会话的“记忆系统”Tab 创建或激活记忆体。所有设置点击保存后实时生效；存储根会在新目录初始化成功后原子切换，切换范围不会自动迁移、合并或删除旧数据。</p>
-<p>升级与卸载（<code>dsh plugin</code> 转发给 profile 目录下的 pnpm）：</p>
-<pre><code class="language-sh"># 升级
-dsh plugin --profile web update dsh-mnemon
-
-# 卸载（同时从 profile 移除其 bundle 注册）
-dsh plugin --profile web remove dsh-mnemon
-</code></pre>
-<p>卸载不会删除记忆数据：<code>global</code> 范围数据留在 <code>~/.mnemon</code>，<code>workspace</code> / <code>custom</code> 范围数据留在对应目录，重新安装后即可继续使用。若只想临时停用自动读写而不卸载，可在插件配置里关闭 <code>writebackMode</code> / <code>recallMode</code> / <code>lifecycleEnabled</code>（详见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a>的“开关交互”与 <code>tabEnabled</code> 的当前限制）。</p>
-<h3>最小配置</h3>
-<p>配置位于 <code>$DSH_HOME/settings.yaml</code>（默认通常为 <code>~/.dsh/settings.yaml</code>）：</p>
+<p>这两个入口默认开启，可在“设置 → 记忆系统 → 对话界面”中分别关闭，保存后实时生效。</p>
+<h3>展示与存储</h3>
+<p>配置位于 <code>$DSH_HOME/settings.yaml</code>（通常为 <code>~/.dsh/settings.yaml</code>）：</p>
 <pre><code class="language-yaml">mnemon:
+  displayMode: sidebar # sidebar | buildin；默认 sidebar
   storageScope: global # global | workspace | custom
 </code></pre>
-<ul>
-<li><code>global</code>：<code>MNEMON_DATA_DIR</code>，未设置时为 <code>~/.mnemon</code>。</li>
-<li><code>workspace</code>：启动 DSH Host 时工作目录下的 <code>.mnemon</code>。</li>
-<li><code>custom</code>：<code>dataDir</code> 指定的绝对路径或 <code>~/...</code> 路径。</li>
-</ul>
-<p>完整配置、覆盖优先级和只读模式见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a>。</p>
-<h3>使用入口</h3>
-<p>Web 工作台提供状态、运行时、记忆体、档案、沉淀、检索、实体、内容八个页面，分为三组：「状态」独立成第一组；「运行时、记忆体、档案」对应三层存储；「沉淀、检索、实体、内容」为读写工具。主要界面随 DSH 全局语言在中文与英文间切换。</p>
-<p>记忆也会在对话流中直接体现（对话内交互，<strong>默认关闭</strong>，可在「设置 → 记忆系统 → 对话界面」中逐项开启，保存即实时生效）：</p>
-<ul>
-<li><strong>记忆工具卡</strong>：每个 <code>mnemon_*</code> 工具调用都以记忆风格的卡片呈现——召回显示查询与命中数、写入显示对象摘要，可展开查看参数与结构化结果，并可一键跳到记忆视图对应页面；</li>
-<li><strong>回合记忆条</strong>：完成的回合若触及记忆，回合尾会按成功结果区分召回、沉淀、档案检索和检查，并单独标出失败数；展开可见具体工具名；</li>
-<li><strong>存入记忆</strong>：每条已定稿的助手回复旁有「存入记忆」按钮，候选内容可编辑，提交后由隔离的记忆子 Agent 判断、查重并沉淀，不占用主对话上下文。</li>
-</ul>
-<p>常用命令：</p>
+<table>
+<thead>
+<tr>
+<th>选择</th>
+<th>行为</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>sidebar</code></td>
+<td>默认；左侧栏独立工作台，采用与 DSH 官方面板一致的极简外观</td>
+</tr>
+<tr>
+<td><code>buildin</code></td>
+<td>保留原有对话区内嵌形态及其既有视觉</td>
+</tr>
+<tr>
+<td><code>global</code></td>
+<td>多个工作区共享 <code>~/.mnemon</code>（或 <code>MNEMON_DATA_DIR</code>）</td>
+</tr>
+<tr>
+<td><code>workspace</code></td>
+<td>每个工作区使用自己的 <code>&lt;workspace&gt;/.mnemon</code>；工作台可查看其他工作区，Agent 仍跟随当前会话</td>
+</tr>
+<tr>
+<td><code>custom</code></td>
+<td>使用 <code>dataDir</code> 指定的绝对路径或 <code>~/...</code></td>
+</tr>
+</tbody></table>
+<p>设置保存后实时生效，无需手动刷新。切换存储范围不会自动迁移、合并或删除旧数据；工作区查看目标与会话实际目录不一致时，顶部会提示并提供一键对齐。</p>
+<h3>常用命令</h3>
 <pre><code class="language-text">/mnemon status
 /mnemon recall &lt;查询&gt;
 /mnemon related &lt;完整记忆 ID&gt;
 /mnemon remember &lt;稳定、自包含的长期洞察&gt;
 /mnemon forget &lt;完整记忆 ID&gt;
 </code></pre>
-<p>推荐的查询顺序是：热记忆 -&gt; active Documents -&gt; 已激活记忆体 -&gt; 命中记录指向的归档原文。不要把临时进度、原始日志、秘密或可直接从仓库重新获得的普通事实写入长期记忆。</p>
-<h3>权限与数据</h3>
+<p>推荐查询顺序：运行时热记忆 → active Documents → 已激活记忆体 → 命中记录指向的归档原文。</p>
+<h3>数据与安全边界</h3>
 <ul>
-<li><strong>文件</strong>：通过本地 <code>mnemon</code> CLI 读写数据目录——<code>global</code> 范围是 <code>~/.mnemon</code>，<code>workspace</code> / <code>custom</code> 范围是用户指定的目录；插件不直接写这些目录，WebUI 也不直接读 SQLite。<code>sourcePaths</code> 不能逃出发起会话的工作区，也不能指向受管 Documents 目录。</li>
-<li><strong>进程</strong>：<code>mnemon</code> 以参数数组启动且禁用 shell，输出有上限，超时先 <code>SIGTERM</code> 再 <code>SIGKILL</code>。</li>
-<li><strong>网络</strong>：插件与 Mnemon 均本地运行，不发起远程调用；子 Agent 的模型推理走 DSH 已有的 provider 连接。</li>
-<li><strong>凭据</strong>：插件不存储、不读取任何凭据或 API key，模型凭据完全由 DSH 与 provider 管理。</li>
-<li><strong>用户数据</strong>：记忆内容（用户画像、项目档案、长期记忆）全部落在本地 SQLite / JSON，不会上传。</li>
-<li><strong>诚实披露</strong>：当前没有确定性的凭据/秘密检测器，请勿向热记忆、Documents 或 Memory Spaces 写入密钥、token 或私钥。完整边界（进程/文件/Web/模型）与备份恢复见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/operations.md">运维、安全与故障排查</a>。</li>
+<li>插件通过本地 <code>mnemon</code> CLI 访问长期记忆；WebUI 不直接读取 SQLite，也不直接启动进程。</li>
+<li>CLI 使用参数数组且禁用 shell；输出、超时和取消均有边界。</li>
+<li>插件不保存 API key；子 Agent 推理复用 DSH 已配置的 Provider。</li>
+<li>当前没有确定性的秘密扫描器。不要把密钥、token、私钥或原始敏感日志写入任何记忆层。</li>
+<li>卸载插件不会删除 <code>~/.mnemon</code>、工作区 <code>.mnemon</code> 或自定义目录中的数据。</li>
 </ul>
+<p>完整边界、备份恢复与故障排查见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/operations.md">运维指南</a>。</p>
 <h3>文档</h3>
-<ul>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/README.md">文档中心</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/project-overview.md">项目介绍</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/getting-started.md">快速开始</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/architecture.md">架构设计</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/storage-model.md">存储与三层记忆模型</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/workflows.md">生命周期与核心流程</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/interfaces.md">WebUI、工具、命令与 RPC</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/operations.md">运维、安全与故障排查</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/development.md">开发与验证</a></li>
-<li><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/roadmap.md">Roadmap</a></li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>我想要……</th>
+<th>从这里开始</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>安装并完成第一次验证</td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/getting-started.md">快速开始</a></td>
+</tr>
+<tr>
+<td>认识每个页面与对话内入口</td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/ui-guide.md">Sidebar 与对话交互指南</a></td>
+</tr>
+<tr>
+<td>理解三层模型和完整流转</td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/project-overview.md">项目介绍</a> · <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/workflows.md">生命周期与核心流程</a></td>
+</tr>
+<tr>
+<td>选择存储范围或高级开关</td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/configuration.md">配置参考</a></td>
+</tr>
+<tr>
+<td>备份、更新或排查问题</td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/operations.md">运维、安全与故障排查</a></td>
+</tr>
+<tr>
+<td>集成工具、命令或 RPC</td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/interfaces.md">接口参考</a></td>
+</tr>
+<tr>
+<td>开发、测试或发布</td>
+<td><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/development.md">开发与验证</a></td>
+</tr>
+</tbody></table>
+<p>完整目录见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/README.md">文档中心</a>。</p>
 <h3>开发</h3>
 <pre><code class="language-sh">pnpm install
 pnpm run verify
 </code></pre>
-<p><code>verify</code> 依次运行 TypeScript 检查、Vitest 测试和生产构建。构建产物写入并提交到 <code>lib/</code>；详细发布与真实 WebUI 验证流程见<a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/zh-CN/development.md">开发文档</a>。</p>
+<p><code>verify</code> 依次运行 TypeScript 检查、Vitest 和生产构建。构建产物提交在 <code>lib/</code> 中。</p>
 <h3>License</h3>
-<p>MIT。发现安全问题请通过 <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/SECURITY.md">SECURITY.md</a> 中的渠道私下报告，不要直接开公开 issue。</p>
+<p>MIT。安全问题请按 <a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/SECURITY.md">SECURITY.md</a> 私下报告，不要直接创建公开 issue。</p>
 
     </div>
-    <p class="note"><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/omdsh-dev/dsh-mnemon/blob/main/README.zh-CN.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
@@ -381,11 +419,11 @@ pnpm run verify
     <h2>同类插件</h2>
     <ul class="rel">
       <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/LoserFox/distill/" tabindex="-1"><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></a></li>
-      <li><h3><a href="/zh/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/zh/p/modusensus/dsh-mneme/" tabindex="-1"><p>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</p></a></li>
+      <li><h3><a href="/zh/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/modusensus/dsh-mneme/" tabindex="-1"><p>跨会话记忆：SQLite + 可人工编辑的 Markdown 镜像，后台自动巩固（去重/合并/冲突裁决），提供 6 个记忆工具。</p></a></li>
       <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></a></li>
+      <li><h3><a href="/zh/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 3</span></h3><a class="desc-link" href="/zh/p/PerryLink/dsh-memento/" tabindex="-1"><p>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</p></a></li>
       <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></a></li>
-      <li><h3><a href="/zh/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/PerryLink/dsh-memento/" tabindex="-1"><p>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</p></a></li>
-      <li><h3><a href="/zh/p/Noelune/unified-agent-memory/" translate="no">Noelune/unified-agent-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Noelune/unified-agent-memory/" tabindex="-1"><p>多 Agent 共享一个 Obsidian vault：零依赖 Python core（检索/晋升/裁决/遗忘）+ vault 模板 + dsh 插件（memory_search/show/submit/status）。</p></a></li>
+      <li><h3><a href="/zh/p/GIT121995/dsh-memory-gate/" translate="no">GIT121995/dsh-memory-gate</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/GIT121995/dsh-memory-gate/" tabindex="-1"><p>有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/memory/">查看整个分类 →</a>
   </section>

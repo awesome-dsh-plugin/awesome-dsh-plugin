@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Max-Samson/</span><wbr><span class="name">dsh-usage-chart</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 3</b></span>
+        <span>Stars <b>★ 4</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
         <span>npm <a href="https://www.npmjs.com/package/dsh-usage-chart" rel="noopener" translate="no">dsh-usage-chart</a></span>
@@ -195,14 +195,14 @@ footer p+p{margin-top:.5rem}
 <blockquote>
 <p>A usage, cost, and account-balance dashboard for DeepSeek Harness Web.</p>
 </blockquote>
-<p><a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/README.md">中文</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/issues">Report an issue</a></p>
+<p><a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/README.md">中文</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/issues">Report an issue</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/CHANGELOG.md">Changelog (EN)</a> · <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/CHANGELOG_ZH.md">更新日志（中文）</a></p>
 <p>Interface preview: light English on the left and dark Simplified Chinese on the right.
 Both variants follow the DSH theme and in-app language setting.</p>
 <blockquote>
 <p>Both screenshots use fictional demo data only. They contain no real session content,
 token counts, costs, balances, or API keys.</p>
 </blockquote>
-<p>The plugin adds a compact indicator below the conversation composer. It shows input/output tokens, cache-hit ratio, estimated cost, active model, and DeepSeek account balance. Click it to open a zero-dependency SVG dashboard with per-turn usage history.</p>
+<p>The plugin adds a compact indicator below the conversation composer. It shows input/output tokens, cache-hit ratio, estimated cost, active model, a slim context-pressure bar, and DeepSeek account balance. Click it to open a zero-dependency SVG dashboard with per-turn usage history — including a cost view, a duration overlay, anomaly markers, an explainer tooltip (tokens + cost + model + duration/TTFT/TPS + end reason), and a dismissible <code>≈ $0.00xx</code> badge on each assistant message.</p>
 <p>The interface supports Chinese and English and follows the DSH in-app language setting. Browser language seeds the initial display only when the Host has not exposed a setting yet. Language changes are applied without reloading the plugin.</p>
 <h3>Install</h3>
 <p>Prerequisites: <strong><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> ≥ 0.1.0-rc.6</strong> ·
@@ -220,17 +220,24 @@ dsh web --profile web                          # starts DSH Web (stop it first i
 upgrade when the dependency is already installed — use an <strong>explicit version</strong> (recommended)
 or <strong>remove then re-add</strong>:</p>
 <pre><code class="language-sh"># Option ①: pin the target version explicitly
-dsh plugin --profile web add dsh-usage-chart@0.1.1
+dsh plugin --profile web add dsh-usage-chart@0.2.0
 # Option ②: remove, then re-add (back to latest)
 dsh plugin --profile web remove dsh-usage-chart
 dsh plugin --profile web add dsh-usage-chart
 </code></pre>
 <p>Then restart DSH Web.</p>
 <blockquote>
+<p>⚠️ <strong>Upgrading to v0.2.0 requires restarting the <code>dsh web</code> process.</strong> The Host caches
+plugin code in memory (no hot reload): the new <code>/pricing</code> route and the <code>rounds</code>-shaped
+<code>/usage</code> response are only served after a restart; until then the indicator omits the
+cost segment and the panel shows &quot;Price snapshot unavailable&quot;. See the
+<a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/CHANGELOG.md">Changelog</a>.</p>
+</blockquote>
+<blockquote>
 <p>⚠️ <strong>No global <code>dsh</code> installed (<code>dsh: command not found</code> / PowerShell
 <code>The term &#39;dsh&#39; is not recognized…</code>)?</strong> Prefix every <code>dsh</code> above with
 <code>npx --yes @deepseek-ai/dsh</code>, e.g.
-<code>npx --yes @deepseek-ai/dsh plugin --profile web add dsh-usage-chart@0.1.1</code>
+<code>npx --yes @deepseek-ai/dsh plugin --profile web add dsh-usage-chart@0.2.0</code>
 (see FAQ item 1).</p>
 </blockquote>
 <h4>Option 2: install from GitHub (source build)</h4>
@@ -281,6 +288,21 @@ text on disk — only recommended for a protected local profile).</li>
 <pre><code class="language-sh">export DEEPSEEK_API_KEY=sk-...
 dsh web --profile web
 </code></pre>
+<h4>Price overrides (optional, v0.2+)</h4>
+<p>Costs are resolved with priority <strong>user override file &gt; builtin list price &gt; fallback
+estimate</strong> (prices are resolved only on the Host; the client consumes the
+<code>/dsh-usage-chart/pricing</code> snapshot — a single source of truth, ADR 2). The default
+override file is <code>$DSH_HOME/data/dsh-usage-chart/pricing.json</code> (or <code>~/.dsh/...</code> without
+<code>DSH_HOME</code>); both flat and <code>{ &quot;models&quot;: { … } }</code> shapes are accepted and changes are
+picked up live:</p>
+<pre><code class="language-json">{
+  &quot;deepseek-v4-flash&quot;: { &quot;cacheMissInput&quot;: 0.14, &quot;cacheHitInput&quot;: 0.0028, &quot;output&quot;: 0.28, &quot;verifiedAt&quot;: 1755100800000 }
+}
+</code></pre>
+<p><code>verifiedAt</code> (epoch ms) is optional and shown as the verification date in the panel.
+Models not covered anywhere are explicitly marked &quot;Unpriced model&quot; in the UI — never
+silently billed as zero. To point at another file, set <code>config.pricingFile</code> in
+<code>cordis.patch.yml</code>.</p>
 <h4>Uninstall</h4>
 <blockquote>
 <p>⚠️ <strong>No global <code>dsh</code> installed (<code>dsh: command not found</code> / PowerShell
@@ -333,14 +355,14 @@ for the maintainer to publish.</p>
 <td>Session-scoped, updated by the adapter</td>
 </tr>
 <tr>
-<td>Per-turn history</td>
-<td>DSH Host session event log</td>
-<td>Falls back to page-observed deltas when unavailable</td>
+<td>Per-round history</td>
+<td>DSH Host session event log (<code>/usage</code> fold)</td>
+<td>Duration / TTFT / TPS / model / end reason / per-round cost; falls back to page-observed deltas when unavailable</td>
 </tr>
 <tr>
 <td>Cost</td>
-<td>Published DeepSeek price × reported usage</td>
-<td>Estimate, not an invoice</td>
+<td>Published DeepSeek price (builtin + optional <code>pricing.json</code> override) × reported usage</td>
+<td>Estimate, not an invoice; resolved once on the Host, consumed via the <code>/pricing</code> snapshot</td>
 </tr>
 <tr>
 <td>Balance</td>
@@ -355,7 +377,7 @@ npm ci
 npm run verify
 npm pack --dry-run
 </code></pre>
-<p>The package contains two DSH halves: <code>lib/index.js</code> for the Node Host and <code>lib/client.js</code> for the Web client module loader. Type declarations are emitted to <code>lib/types</code>.</p>
+<p>The package contains two DSH halves: <code>lib/index.js</code> for the Node Host and <code>lib/client.js</code> for the Web client module loader. Type declarations are emitted to <code>lib/types</code>. <code>lib/client-test.js</code> is a small ESM bundle of client-side pure modules (e.g. the anomaly detector) consumed only by <code>tests/*.test.mjs</code>.</p>
 <p>See <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> before opening a pull request. Please report vulnerabilities privately as described in <a href="https://github.com/Max-Samson/dsh-usage-chart/blob/main/SECURITY.md">SECURITY.md</a>.</p>
 <h3>Maintainer releases</h3>
 <p>For the first release, complete npm account verification and run <code>npm publish --access public</code> locally. Once the package exists on npm, configure Trusted Publishing for this repository. Subsequent GitHub Releases publish new versions through the workflow. The workflow skips versions that already exist, so creating the initial <code>v0.1.0</code> Release will not publish it twice.</p>
@@ -377,7 +399,7 @@ npm pack --dry-run
 </tr>
 <tr>
 <td>Web UI</td>
-<td>React 18 and <code>conversation.composer.dock</code></td>
+<td>React 18, <code>conversation.composer.dock</code> and <code>conversation.chat.assistant-actions</code></td>
 </tr>
 <tr>
 <td>OS</td>
@@ -411,12 +433,12 @@ npm pack --dry-run
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

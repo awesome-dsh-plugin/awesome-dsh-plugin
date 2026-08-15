@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">ccch1mneyyy/</span><wbr><span class="name">dsh-TUI</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 876</b></span>
+        <span>Star 数 <b>★ 903</b></span>
         <span>分类 <a href="/zh/ui/">UI 增强</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -216,20 +216,22 @@ inline/alternate-screen 两种渲染模式，以及 <code>/lang</code> 中英界
 <h3>快速开始</h3>
 <p>前置条件：可用的终端 TTY、官方 <code>dsh</code> CLI，以及 <code>pnpm</code> 10+。运行模型还需要
 <code>DEEPSEEK_API_KEY</code>。</p>
-<pre><code class="language-sh"># 1. 安装 DeepSeek Harness CLI（已装可跳过）
-npm install -g @deepseek-ai/dsh
+<pre><code class="language-sh"># 1. 全局安装 CLI + 本插件（本插件自带 dsh-tui 直达命令）
+npm install -g @deepseek-ai/dsh @deepseek-harness-tui/dsh-tui
 
-# 2. 装入本插件（仓库根目录 install.sh 已封装这条命令，含 pnpm 预检）
-sh install.sh
-# 或手工执行：
-dsh plugin --profile cc-tui add dsh-cc-tui
-
-# 3. 启动
-dsh --profile cc-tui
+# 2. 启动（首次运行会自动初始化 dsh-tui profile，需 pnpm）
+dsh-tui
 </code></pre>
-<p>Windows 也可用仓库里的 <code>dsh-cc.cmd</code>（等价，且 <code>--resume</code> 恢复上次会话）。</p>
+<p>备选——手工安装 profile（仓库根目录 <code>install.sh</code> 已封装，含 pnpm 预检）：</p>
+<pre><code class="language-sh">sh install.sh
+# 或：dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui
+# 之后 dsh-tui 与 dsh --profile dsh-tui 等价
+</code></pre>
+<p><code>dsh-tui --resume</code> 恢复上次会话；Windows 也可用仓库里的 <code>dsh-tui.cmd</code>（等价）。</p>
 <p>TUI 启动后会在后台检查 npm 是否有新版本；发现更新时会提示，输入 <code>/update</code>
 即可自动更新并重启恢复当前会话。</p>
+<p>旧版 <code>dsh-cc-tui</code> / <code>cc-tui</code> profile 的迁移命令与兼容数据说明见
+<a href="https://github.com/ccch1mneyyy/dsh-TUI/blob/main/docs/getting-started.md#%E4%BB%8E%E6%97%A7%E5%8C%85%E8%BF%81%E7%A7%BB">安装与快速开始</a>。</p>
 <p>安装流程、profile 叠加机制、源码构建与常见问题见
 <a href="https://github.com/ccch1mneyyy/dsh-TUI/blob/main/docs/getting-started.md">安装与快速开始</a>。</p>
 <h3>快捷键</h3>
@@ -499,12 +501,12 @@ Windows 当前没有对应的沙箱后端，组合会退回到 <code>danger-full
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
-      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
-      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
-      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 73</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。</p></a></li>
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 76</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
   </section>

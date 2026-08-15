@@ -1,0 +1,313 @@
+<!doctype html>
+<!-- Plugin detail page template (design B). Tokens shared with template.html — keep the :root blocks in sync. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GLFzr/dsh-drop-file-to-path — UI Enhancements · Awesome DSH Plugin</title>
+<meta name="description" content="Codex-style drag-drop: drag any file into the DSH web GUI, it lands in ~/.dsh-dropbox, and the path is inserted into the composer as a whole blue chip.">
+<link rel="canonical" href="https://awesome-dsh-plugin.com/p/GLFzr/dsh-drop-file-to-path/">
+<link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/GLFzr/dsh-drop-file-to-path/">
+<link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/GLFzr/dsh-drop-file-to-path/">
+<link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/GLFzr/dsh-drop-file-to-path/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GLFzr/dsh-drop-file-to-path — UI Enhancements · Awesome DSH Plugin">
+<meta property="og:description" content="Codex-style drag-drop: drag any file into the DSH web GUI, it lands in ~/.dsh-dropbox, and the path is inserted into the composer as a whole blue chip.">
+<meta property="og:url" content="https://awesome-dsh-plugin.com/p/GLFzr/dsh-drop-file-to-path/">
+<meta property="og:image" content="https://awesome-dsh-plugin.com/og-en.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GLFzr/dsh-drop-file-to-path","url":"https://awesome-dsh-plugin.com/p/GLFzr/dsh-drop-file-to-path/","description":"Codex-style drag-drop: drag any file into the DSH web GUI, it lands in ~/.dsh-dropbox, and the path is inserted into the composer as a whole blue chip.","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/GLFzr/dsh-drop-file-to-path"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All plugins","item":"https://awesome-dsh-plugin.com/"},{"@type":"ListItem","position":2,"name":"UI Enhancements","item":"https://awesome-dsh-plugin.com/ui/"},{"@type":"ListItem","position":3,"name":"GLFzr/dsh-drop-file-to-path","item":"https://awesome-dsh-plugin.com/p/GLFzr/dsh-drop-file-to-path/"}]}]</script>
+<style>
+:root{
+  --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
+  --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
+  --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
+  --on-cinnabar:#ffffff;
+  --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#211d18; --paper-2:#282218; --card:#2a2620; --line:#3b352c; --line-2:#4c4436;
+    --ink:#ece7de; --ink-2:#b5ac9e; --ink-3:#8f8678;
+    --cinnabar:#e06a52; --cinnabar-deep:#ea8069; --cinnabar-soft:rgba(224,106,82,.13); --cinnabar-border:rgba(224,106,82,.35);
+    --on-cinnabar:#211d18;
+  }
+}
+*{box-sizing:border-box;margin:0}
+::selection{background:var(--cinnabar-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
+.wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+
+nav.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:1.4rem;height:3.6rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.95rem}
+.logo svg g{fill:var(--ink)}
+.logo svg .plug-block{fill:var(--cinnabar)}
+.nav-links{display:flex;gap:1.2rem;margin-left:auto;font-size:.86rem;color:var(--ink-2);align-items:center}
+.nav-links a:hover{color:var(--cinnabar)}
+.lang-btn{font-size:.82rem;color:var(--ink-3);border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem}
+.lang-btn:hover{color:var(--ink);border-color:var(--line-2)}
+
+header.plate-wrap{
+  background-image:linear-gradient(var(--paper-2) 1px,transparent 1px),linear-gradient(90deg,var(--paper-2) 1px,transparent 1px);
+  background-size:28px 28px;border-bottom:1px solid var(--line);
+}
+.crumbs{display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:center;
+  font-family:var(--mono);font-size:.74rem;color:var(--ink-3);padding-block:.9rem 0}
+.crumbs a{color:var(--cinnabar)}
+.crumbs a:hover{color:var(--cinnabar-deep)}
+.crumbs .sep{color:var(--line-2)}
+.plate{padding-block:1.4rem clamp(1.8rem,5vh,2.6rem)}
+.plate .kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.plate h1{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.12;letter-spacing:-.02em;margin-top:.35rem;text-wrap:balance;overflow-wrap:anywhere}
+.plate h1 .owner{color:var(--ink-3);font-weight:600}
+.plate h1 .name{color:var(--cinnabar)}
+.specrow{display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-family:var(--mono);font-size:.76rem;color:var(--ink-3);margin-top:1rem}
+.specrow b{color:var(--ink-2);font-weight:500}
+.specrow a{color:var(--cinnabar)}
+.specrow a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+
+main{padding-block:clamp(1.6rem,4vh,2.4rem)}
+.desc{font-size:clamp(.98rem,1.7vw,1.08rem);color:var(--ink-2);max-width:46rem;text-wrap:pretty}
+
+.panel{margin-block:clamp(1.6rem,4vh,2.4rem) 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem}
+.panel h2{font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.8rem}
+.cmd{display:flex;align-items:stretch;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:var(--paper)}
+.cmd pre{font-family:var(--mono);font-size:.82rem;line-height:1.9;color:var(--ink);padding:.55rem 1rem;overflow-x:auto;flex:1;margin:0}
+.cmd button{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);background:var(--card);border:none;border-left:1px solid var(--line-2);padding:0 1rem;cursor:pointer;white-space:nowrap;transition:all .15s ease}
+.cmd button:hover,.cmd button.done{color:var(--on-cinnabar);background:var(--cinnabar)}
+.panel .note{font-size:.78rem;color:var(--ink-3);max-width:46rem;text-wrap:pretty}
+.panel .note+.cmd{margin-top:.2rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.links a{font-size:.82rem;font-weight:550;border:1px solid var(--line-2);border-radius:8px;padding:.45rem .95rem;color:var(--ink-2);transition:all .15s ease;background:var(--paper)}
+.links a:hover{color:var(--on-cinnabar);border-color:var(--cinnabar);background:var(--cinnabar)}
+
+ul.rel{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:.8rem}
+ul.rel li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;transition:border-color .15s ease}
+ul.rel li:hover{border-color:var(--line-2)}
+ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:.5rem}
+ul.rel h3 a{overflow-wrap:anywhere}
+ul.rel h3 a:hover{color:var(--cinnabar-deep)}
+ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
+ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
+.morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
+.morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
+footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--cinnabar)}
+footer p+p{margin-top:.5rem}
+@media (max-width:640px){
+  .cmd{flex-direction:column}
+  .cmd button{border-left:none;border-top:1px solid var(--line-2);padding:.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap nav-in">
+  <a class="logo" href="/" translate="no">
+    <svg width="20" height="20" viewBox="76 42 400 400" aria-hidden="true"><g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g><rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" transform="rotate(9 390 122)"/></svg>
+    awesome-dsh-plugin
+  </a>
+  <div class="nav-links">
+    <a class="lang-btn" href="/zh/p/GLFzr/dsh-drop-file-to-path/" hreflang="zh" rel="alternate">中文</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+  </div>
+</div></nav>
+
+<header class="plate-wrap">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="breadcrumb">
+      <a href="/">All plugins</a>
+      <span class="sep">/</span>
+      <a href="/ui/">UI Enhancements</a>
+      <span class="sep">/</span>
+      <span translate="no">dsh-drop-file-to-path</span>
+    </nav>
+    <div class="plate">
+      <p class="kicker">DeepSeek Harness Plugin</p>
+      <h1 translate="no"><span class="owner">GLFzr/</span><wbr><span class="name">dsh-drop-file-to-path</span></h1>
+      <div class="specrow">
+        <span>Stars <b>★ 3</b></span>
+        <span>Category <a href="/ui/">UI Enhancements</a></span>
+        <span>Added <b>2026-08-15</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="desc">Codex-style drag-drop: drag any file into the DSH web GUI, it lands in ~/.dsh-dropbox, and the path is inserted into the composer as a whole blue chip.</p>
+
+  <section class="panel">
+    <h2>Install</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add github:GLFzr/dsh-drop-file-to-path</pre><button type="button" data-cmd="dsh plugin --profile web add github:GLFzr/dsh-drop-file-to-path" aria-label="Copy install command">copy install</button></div>
+    <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p>为 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> Web GUI 提供 <strong>Codex 式拖拽交互</strong>：拖入任意文件 → 分块上传到本机 <code>~/.dsh-dropbox</code> → 路径以<strong>蓝色整体 chip</strong> 插入输入框光标处（Hermes 风格）。</p>
+<p>本仓库是<strong>持久化 profile 插件</strong>（<code>dsh.bundle</code> + <code>dsh.client</code> 双声明）：按官方方式安装一次，<strong>DSH 重启后自动生效</strong>，不再依赖动态插件重建。</p>
+<h3>功能特性</h3>
+<ul>
+<li>🖱️ 页面任意位置拖入任意文件（含多文件、含图片）</li>
+<li>📍 <strong>本机文件直接引用原路径</strong>：Chromium（Edge/Chrome）拖拽会经 entry API 暴露源文件路径——直接插入原路径，<strong>不再复制文件、不再产生 <code>_1/_2</code> 重名副本</strong>；仅当浏览器拿不到路径（如 Firefox）时才回退到 dropbox 上传</li>
+<li>♻️ <strong>同名同大小自动复用</strong>：回退上传时宿主端检测到 dropbox 已有完全相同文件则直接返回旧路径，不再重复落盘（序号不再增长）</li>
+<li>🔵 路径以<strong>一个整体 chip</strong> 插入：整段蓝色文字（<strong>只显示文件名+格式</strong>）、不可被局部删改（Backspace/Delete 一次删除整个路径）</li>
+<li>📐 <strong>篮筐宽度随文件名自适应</strong>：插入时用 composer 真实字体实测文件名宽度，pill 精确贴合（误差 &lt;1 个字符），不再有固定宽度空槽</li>
+<li>🙈 <strong><code>.b64</code> 后缀与 <code>_1/_2</code> 重名序号显示隐藏</strong>：落盘时的插件痕迹永不显示——提交给 agent、复制、持久化的仍是带后缀的真实路径</li>
+<li>📌 光标处插入（已有会话）；新会话创建页拖入后创建会话时自动插入</li>
+<li>📄 智能落盘：文本类（.md/.csv/.a2l/.s19/.ini/.cnf/.prm/.txt/.yml/.json/.xml/.log/.cfg/.bat/.sh/.py/.js/.ts/.html/.css）<strong>解码写原文</strong>；二进制存 <code>.b64</code>（base64），agent 一行 Python 解码读取</li>
+<li>🚀 4MB 分块上传，上限 512MB；失败右下角红色提示 4 秒</li>
+<li>🧹 捕获阶段接管拖拽事件，官方&quot;仅支持图片&quot;附件通道完全静默</li>
+</ul>
+<h3><code>.b64</code> 是什么？</h3>
+<p>浏览器无法保证任意二进制文件的原始字节能无损地穿越 JSON/文本通道，所以<strong>回退上传</strong>的二进制文件（PDF、3MF、ZIP、图片等）落盘时以 <strong>base64 文本</strong>保存，文件名追加 <code>.b64</code> 作为标记——agent 看到 <code>.b64</code> 就知道要先解码再使用：</p>
+<pre><code class="language-python">import base64
+with open(&#39;xxx.pdf.b64&#39;) as f: raw = base64.b64decode(f.read())
+with open(&#39;xxx.pdf&#39;, &#39;wb&#39;) as f: f.write(raw)
+</code></pre>
+<p>文本类文件（.md/.txt/.json 等）直接写原文，<strong>不会</strong>带 <code>.b64</code>。<strong>本机文件走原路径引用时不经过 dropbox，天然没有 <code>.b64</code></strong>。输入框里的路径始终隐藏 <code>.b64</code>（如果存在），但实际提交/复制的路径包含它，agent 能正确读取文件。</p>
+<h3>为什么本机文件还要&quot;存一份&quot;？（旧行为）</h3>
+<p>浏览器拖进来的 <code>File</code> 对象是内存数据，<strong>不暴露磁盘路径</strong>（浏览器安全限制），而 agent 只能读磁盘路径——所以插件需要把文件物化到 dropbox，agent 才能访问。现在 Chromium 拖拽经 <code>DataTransferItem.webkitGetAsEntry()</code> 能拿到源路径（Windows 形如 <code>/C:/Users/...</code>），本机文件直接引用即可，不再复制；拿不到路径的场景（Firefox、非本机来源的拖拽）才走 dropbox 上传兜底。</p>
+<h3>安装（官方方式，一次永久）</h3>
+<pre><code class="language-sh"># 在 deepseek-harness 仓库根目录（源码版）：
+pnpm dsh plugin --profile web add ./plugins/drop-file-to-path
+
+# 或任意 dsh 安装（npx 版亦可）：
+dsh plugin --profile web add &lt;本仓库路径&gt;
+</code></pre>
+<p><code>dsh plugin</code> 会 pnpm link 本包到 <code>$DSH_HOME/profiles/web</code> 并追加 <code>dsh.profile.bundles</code>。之后<strong>无论用 npx 版还是源码版启动 DSH，插件都自动加载</strong>。</p>
+<p>验证：<code>dsh web --dump-config</code> 应出现 <code># == dsh-drop-file-to-path</code> 层。</p>
+<h3>工作原理</h3>
+<table>
+<thead>
+<tr>
+<th>部件</th>
+<th>位置</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host 半（<code>lib/index.js</code>）</td>
+<td>宿主进程，<code>inject: [&#39;webServer&#39;]</code></td>
+<td>HTTP 路由 `/api/drop-file-to-path/begin</td>
+</tr>
+<tr>
+<td>Client 半（<code>lib/client.js</code>）</td>
+<td>浏览器（<code>__ModuleLoader__</code> bundle，<code>dsh.client</code> 声明）</td>
+<td>全局拖拽监听（capture 接管）、fetch 分块上传、注册 trigger source、经 <code>conversation.input.insertReference</code> 插入参考 chip</td>
+</tr>
+</tbody></table>
+<p>路径 chip 走 composer 原生的参考引用机制（U+FFFC 占位符 + occurrence 表 + 提交时 codec 序列化）：占位符在草稿里只占一个字符，因此整条路径是一个不可分割的整体；提交时经插件注册的 <code>drop-file-to-path</code> source 的 codec 把占位符展开为真实路径（含 <code>.b64</code>）。</p>
+<p><strong>篮筐宽度自适应</strong>：插件在插入前用 composer 的真实字体实测 label 宽度，算出 NBSP 空格数 <code>pad</code>，随 chip 一起插入（占位符 + pad 个 NBSP）。chip 单元格宽度 = 基础 1em + pad×空格宽 ≈ 文件名宽——<strong>先有文件名，后有篮筐</strong>。为此本插件做了两处配套：</p>
+<ul>
+<li><strong>加宽字体</strong>：用 <code>tools/patch-chip-font.mjs</code> 把 <code>DshChipCell</code> 的 U+FFFC advance 从 composer 默认 4em 改为 <strong>1em</strong>（同名字体族、后声明者生效，textarea/镜像/背板三层共享同一 advance，对齐关系不变）；</li>
+<li><strong>核心 composer 扩展</strong>（<code>dsh-client-ui-conversation</code>）：occurrence 支持 <code>pad</code> 扩展占位区间——插入、序列化、复制/剪切投影、Backspace/Delete 整删、backdrop 渲染全部按 <code>[offset, offset+1+pad)</code> 整段处理（改动随该包 bundle 分发，无 pad 的旧 chip 行为不变）。</li>
+</ul>
+<p>依赖官方服务：<code>webServer</code>（HTTP 路由）、<code>slots</code>（shell.overlay + conversation.composer.dock）、<code>inputTriggers</code>（source 注册与序列化）、<code>conversation</code>/<code>sessions</code>（按 session 解析输入门面）。除上述核心 occurrence 扩展外不修改 dsh 源码。</p>
+<h3>文件说明</h3>
+<pre><code>├── lib/index.js            # Host 半：HTTP 上传路由 + node:fs 落盘
+├── lib/client.js           # Client 半：全局拖拽 + chip 插入（含加宽字体内嵌）
+├── tools/patch-chip-font.mjs  # 生成加宽 DshChipCell 字体的工具（改宽度后重跑）
+├── chip-cell-font.b64      # 加宽字体产物（client.js 内嵌同一份）
+├── cordis.patch.yml        # bundle 补丁层（insert 插件行）
+├── package.json            # dsh.bundle.patch + dsh.client 声明
+└── README.md
+</code></pre>
+<h3>落盘与读取约定</h3>
+<ul>
+<li>落盘目录：<code>C:\Users\&lt;用户&gt;\.dsh-dropbox\</code>（<code>os.homedir()</code> 解析）</li>
+<li><code>.b64</code> 解码（agent 侧）：见上文 <code>.b64</code> 说明</li>
+</ul>
+<h3>License</h3>
+<p>MIT</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/GLFzr/dsh-drop-file-to-path/blob/main/README.md" rel="noopener">Content from the project README on GitHub ↗</a></p>
+  </section>
+
+  <section class="panel">
+    <h2>Links</h2>
+    <div class="links">
+      <a href="https://github.com/GLFzr/dsh-drop-file-to-path" rel="noopener">GitHub repository ↗</a>
+      <a href="https://github.com/dsh-market/dsh-market" rel="noopener">Install via dsh-market ↗</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>More in this category</h2>
+    <ul class="rel">
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+    </ul>
+    <a class="morelink" href="/ui/">View the whole category →</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Plugins are developed by their respective authors; listing is not an endorsement. Installing runs third-party code — review the source and proceed at your own risk.</p>
+  <p>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · Not affiliated with DeepSeek</p>
+</footer>
+
+<script>
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('.cmd button');
+  if (!btn) return;
+  try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
+  btn.classList.add('done');
+  const old = btn.textContent;
+  btn.textContent = '✓';
+  setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
+});
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

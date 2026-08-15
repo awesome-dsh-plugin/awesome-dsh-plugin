@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">modusensus/</span><wbr><span class="name">dsh-mneme</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 8</b></span>
+        <span>Star 数 <b>★ 9</b></span>
         <span>分类 <a href="/zh/memory/">记忆</a></span>
         <span>收录于 <b>2026-08-14</b></span>
       </div>
@@ -189,6 +189,9 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
+<hr>
+<p></p>
+<h2>🇨🇳 dsh-mneme（中文）</h2>
 <blockquote>
 <p><strong>记忆主权，归还于你</strong> —— 记忆不再是黑盒，而是你读得懂、改得动的 Markdown。</p>
 </blockquote>
@@ -196,17 +199,29 @@ footer p+p{margin-top:.5rem}
 <p>不同于把记忆锁进数据库的插件，Mneme 把记忆<strong>写成你读得懂的 Markdown</strong>——你始终握着记忆的主权：看得见、改得动、删得掉，记忆这回事不该让 Agent 一个人说了算。</p>
 <h3>✨ 特性一览</h3>
 <ul>
-<li><strong>🧠 记忆主权</strong>：SQLite + <strong>可人工编辑的 Markdown 镜像</strong>，双向同步——记忆透明、可审查、归你所有</li>
+<li><strong>🧠 记忆主权</strong>：SQLite + 可人工编辑的 Markdown 镜像，双向同步——记忆透明、可审查、归你所有</li>
 <li><strong>autoDream 梦境巩固</strong>：后台自动去重 / 合并 / 归档 / 冲突裁决（fail-safe 校验），越用越精炼</li>
 <li><strong>6 个模型工具</strong>：<code>memory_save</code> / <code>memory_search</code> / <code>memory_list</code> / <code>memory_update</code> / <code>memory_delete</code> / <code>memory_forget</code></li>
 <li><strong>自动注入 + 会话摘要</strong>：新会话自动带入相关记忆，会话结束自动提炼偏好 / 决策 / 教训</li>
 <li><strong>Web 记忆面板</strong>：官方设置面板内嵌，按类型浏览、全文搜索 + 语义（向量）搜索</li>
-<li><strong>用户设置</strong>：用户画像 + 行为规则，每轮注入系统提示</li>
-<li><strong>自定义指令</strong>：注册斜杠命令（/名称），触发时交给 Agent</li>
-<li><strong>向量搜索</strong>：接入 OpenAI 兼容 embeddings API，语义匹配字面不同但意思相近的记忆</li>
+<li><strong>用户设置 + 自定义指令</strong>：用户画像、行为规则每轮注入；注册斜杠命令</li>
+<li><strong>向量搜索</strong>：OpenAI 兼容 embeddings API，语义匹配字面不同但意思相近的记忆</li>
 </ul>
+<h3>🔮 语义增强（完全离线，v0.2+）</h3>
+<p><strong>完全离线的语义记忆引擎</strong>——embedding、rerank、搜索全在本地，零 API 成本：</p>
+<ul>
+<li><strong>本地 Embedding</strong>：三后端可选——ONNX（<code>Xenova/bge-small-zh-v1.5</code>，离线）/ Ollama / OpenAI 兼容，失败自动逐级降级，最差回退关键词搜索</li>
+<li><strong>Rerank 精排</strong>：<code>Xenova/bge-reranker-base</code> 对召回候选交叉编码精排，提升 Top-K 准确率</li>
+<li><strong>autoDream 语义增强</strong>：对记忆向量聚类（<code>clusterMemories</code>），自动发现主题相近 / 疑似矛盾的记忆，巩固更精准</li>
+<li><strong>搜索流水线</strong>：混合召回（关键词 + 向量）→ Rerank → Top-K</li>
+</ul>
+<p>在 <code>cordis.patch.yml</code> 配置 <code>embedProvider</code>（默认 <code>openai</code> 保持 v0.1 行为，切到 <code>local</code> 即完全离线）。无需数据迁移。</p>
+<blockquote>
+<p>📖 详见 <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/SEMANTIC.md">语义架构</a> · <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/LOCAL_MODEL.md">本地模型部署</a> · <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/MIGRATION.md">v0.1 迁移</a></p>
+</blockquote>
 <h3>📦 安装（DSH）</h3>
-<pre><code class="language-bash">dsh plugin --profile web add @modusensus/dsh-mneme
+<pre><code class="language-bash"># 安装插件（自动注册 bundle 层）
+dsh plugin --profile web add @modusensus/dsh-mneme
 dsh web
 </code></pre>
 <blockquote>
@@ -219,7 +234,8 @@ docs/        设计文档与实施计划
 <h3>🧪 本地开发</h3>
 <pre><code class="language-bash">cd dsh-mneme
 npm install
-npm test          # 140 个测试
+npm test          # 198 个测试
+npm run stress    # 三轴线压测（长会话检索 / 冲突仲裁 / 多 Agent 并发）
 npm run sync      # src → lib 同步（发布时自动执行）
 </code></pre>
 <h3>📄 文档</h3>
@@ -235,6 +251,18 @@ npm run sync      # src → lib 同步（发布时自动执行）
 <td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/README.md">dsh-mneme/README.md</a></td>
 </tr>
 <tr>
+<td>语义架构</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/SEMANTIC.md">dsh-mneme/docs/SEMANTIC.md</a></td>
+</tr>
+<tr>
+<td>本地模型部署指南</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/LOCAL_MODEL.md">dsh-mneme/docs/LOCAL_MODEL.md</a></td>
+</tr>
+<tr>
+<td>v0.1 迁移说明</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/MIGRATION.md">dsh-mneme/docs/MIGRATION.md</a></td>
+</tr>
+<tr>
 <td>插件设计</td>
 <td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-mneme-design.md">docs/superpowers/specs/2026-08-13-dsh-mneme-design.md</a></td>
 </tr>
@@ -248,6 +276,98 @@ npm run sync      # src → lib 同步（发布时自动执行）
 </tr>
 <tr>
 <td>实施计划（autoDream）</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md">docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md</a></td>
+</tr>
+</tbody></table>
+<h3>📜 License</h3>
+<p>MIT</p>
+<hr>
+<p></p>
+<h2>🇬🇧 dsh-mneme (English)</h2>
+<blockquote>
+<p><strong>Memory sovereignty, returned to you</strong> — memory is no longer a black box, but Markdown you can read and edit.</p>
+</blockquote>
+<p><code>dsh-mneme</code> is a <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness (DSH)</a> plugin that gives agents persistent cross-session memory. <strong>Mneme</strong> (Μνήμη) — named after Mnemosyne, the Greek goddess of memory and dreams, mirroring how autoDream consolidates memories in the background.</p>
+<p>Unlike plugins that lock memory inside a database, Mneme writes memory as <strong>human-readable Markdown</strong> — memory sovereignty stays with you: see it, edit it, delete it. Memory shouldn&#39;t be decided by the agent alone.</p>
+<h3>✨ Features</h3>
+<ul>
+<li><strong>🧠 Memory sovereignty</strong>: SQLite + human-editable Markdown mirror, two-way sync — memory is transparent, auditable, and yours</li>
+<li><strong>autoDream consolidation</strong>: background dedup / merge / archive / conflict resolution (fail-safe validation), refined with use</li>
+<li><strong>6 model tools</strong>: <code>memory_save</code> / <code>memory_search</code> / <code>memory_list</code> / <code>memory_update</code> / <code>memory_delete</code> / <code>memory_forget</code></li>
+<li><strong>Auto-injection + session summary</strong>: relevant memories injected at session start, preferences / decisions / lessons distilled at session end</li>
+<li><strong>Web memory panel</strong>: embedded in the official settings panel — browse by type, full-text + semantic (vector) search</li>
+<li><strong>User settings + custom commands</strong>: user profile and behavior rules injected every turn; register slash commands</li>
+<li><strong>Vector search</strong>: OpenAI-compatible embeddings API for semantic matching of differently-worded but related memories</li>
+</ul>
+<h3>🔮 Semantic Enhancement (fully offline, v0.2+)</h3>
+<p>A fully-offline semantic memory engine — embedding, rerank and search all run locally, zero API cost:</p>
+<ul>
+<li><strong>Local embedding</strong>: three interchangeable backends — ONNX (<code>Xenova/bge-small-zh-v1.5</code>, offline) / Ollama / OpenAI-compatible — degrading automatically, falling back to keyword search at worst</li>
+<li><strong>Rerank</strong>: <code>Xenova/bge-reranker-base</code> cross-encoder re-ranking of recall candidates for sharper Top-K</li>
+<li><strong>autoDream semantic boost</strong>: vector clustering (<code>clusterMemories</code>) surfaces topically-close or potentially conflicting memories for more precise consolidation</li>
+<li><strong>Search pipeline</strong>: hybrid recall (keyword + vector) → rerank → Top-K</li>
+</ul>
+<p>Configure <code>embedProvider</code> in <code>cordis.patch.yml</code> (default <code>openai</code> keeps v0.1 behavior; switch to <code>local</code> for fully offline). No data migration needed.</p>
+<blockquote>
+<p>📖 See <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/SEMANTIC.md">Semantic architecture</a> · <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/LOCAL_MODEL.md">Local model guide</a> · <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/MIGRATION.md">v0.1 migration</a></p>
+</blockquote>
+<h3>📦 Install (DSH)</h3>
+<pre><code class="language-bash"># Install the plugin (auto-registers the bundle layer)
+dsh plugin --profile web add @modusensus/dsh-mneme
+dsh web
+</code></pre>
+<blockquote>
+<p>Requires Node 24+ (<code>node:sqlite</code>). Full install / config / architecture docs in the <a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/README.md">plugin README</a>.</p>
+</blockquote>
+<h3>📁 Repository Structure</h3>
+<pre><code>dsh-mneme/   plugin package (npm @modusensus/dsh-mneme)
+docs/        design docs &amp; implementation plans
+</code></pre>
+<h3>🧪 Local Development</h3>
+<pre><code class="language-bash">cd dsh-mneme
+npm install
+npm test          # 198 tests
+npm run stress    # three-axis stress test (long-session retrieval / conflict arbitration / concurrent agents)
+npm run sync      # src → lib sync (runs automatically on publish)
+</code></pre>
+<h3>📄 Docs</h3>
+<table>
+<thead>
+<tr>
+<th>Doc</th>
+<th>Path</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Full plugin docs (features / install / config / architecture)</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/README.md">dsh-mneme/README.md</a></td>
+</tr>
+<tr>
+<td>Semantic architecture</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/SEMANTIC.md">dsh-mneme/docs/SEMANTIC.md</a></td>
+</tr>
+<tr>
+<td>Local model guide</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/LOCAL_MODEL.md">dsh-mneme/docs/LOCAL_MODEL.md</a></td>
+</tr>
+<tr>
+<td>v0.1 migration</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/dsh-mneme/docs/MIGRATION.md">dsh-mneme/docs/MIGRATION.md</a></td>
+</tr>
+<tr>
+<td>Plugin design</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-mneme-design.md">docs/superpowers/specs/2026-08-13-dsh-mneme-design.md</a></td>
+</tr>
+<tr>
+<td>autoDream design</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/specs/2026-08-13-dsh-mneme-autodream-design.md">docs/superpowers/specs/2026-08-13-dsh-mneme-autodream-design.md</a></td>
+</tr>
+<tr>
+<td>Implementation plan (core)</td>
+<td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/plans/2026-08-13-dsh-memory.md">docs/superpowers/plans/2026-08-13-dsh-memory.md</a></td>
+</tr>
+<tr>
+<td>Implementation plan (autoDream)</td>
 <td><a href="https://github.com/modusensus/dsh-mneme/blob/main/docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md">docs/superpowers/plans/2026-08-13-dsh-memory-autodream.md</a></td>
 </tr>
 </tbody></table>
@@ -269,12 +389,12 @@ npm run sync      # src → lib 同步（发布时自动执行）
   <section class="panel">
     <h2>同类插件</h2>
     <ul class="rel">
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
       <li><h3><a href="/zh/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/LoserFox/distill/" tabindex="-1"><p>自动对话蒸馏：后台 subagent 反省 + 技能 create/update。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Mnemon 深度集成：本地三层记忆（Runtime Memory、可检索 Documents、受监督 Memory Spaces）。</p></a></li>
       <li><h3><a href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/zh/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。</p></a></li>
+      <li><h3><a href="/zh/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 3</span></h3><a class="desc-link" href="/zh/p/PerryLink/dsh-memento/" tabindex="-1"><p>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</p></a></li>
       <li><h3><a href="/zh/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。</p></a></li>
-      <li><h3><a href="/zh/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/PerryLink/dsh-memento/" tabindex="-1"><p>有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入；写入必过审批门，模型可见内容可自会话日志重建。</p></a></li>
-      <li><h3><a href="/zh/p/Noelune/unified-agent-memory/" translate="no">Noelune/unified-agent-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/Noelune/unified-agent-memory/" tabindex="-1"><p>多 Agent 共享一个 Obsidian vault：零依赖 Python core（检索/晋升/裁决/遗忘）+ vault 模板 + dsh 插件（memory_search/show/submit/status）。</p></a></li>
+      <li><h3><a href="/zh/p/GIT121995/dsh-memory-gate/" translate="no">GIT121995/dsh-memory-gate</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/zh/p/GIT121995/dsh-memory-gate/" tabindex="-1"><p>有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/memory/">查看整个分类 →</a>
   </section>

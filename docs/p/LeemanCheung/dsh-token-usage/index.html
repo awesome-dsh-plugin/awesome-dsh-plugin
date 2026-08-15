@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">LeemanCheung/</span><wbr><span class="name">dsh-token-usage</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 3</b></span>
+        <span>Stars <b>★ 4</b></span>
         <span>Category <a href="/session/">Sessions & Messages</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -214,16 +214,24 @@ footer p+p{margin-top:.5rem}
 <td>GitHub commit graph 风格的 Token 活跃度图；颜色越深代表当天总用量越高，悬停查看明细，点击下钻到贡献会话。</td>
 </tr>
 <tr>
-<td><strong>周期、预算与导出</strong></td>
-<td>比较 7/30/90 日趋势，设置本地持久化的滚动 30 日预算，并导出聚合 JSON、每日 CSV 或模型 CSV。</td>
+<td><strong>预算、预测、异常与导出</strong></td>
+<td>比较 7/30/90 日趋势，设置本地持久化的滚动 30 日预算，按最近 7 个完整 UTC 日预测 30 日运行率，并以稳健基线识别近期突增；导出聚合 JSON v2、每日 CSV 或模型 CSV。</td>
 </tr>
 <tr>
-<td><strong>轨迹智能分析</strong></td>
-<td>手动选择会话后，使用 DSH 当前配置模型审查调用链、委派、合规性、异常恢复、速率、性能、可靠性和 Token 效率。</td>
+<td><strong>Agent 效率与归因</strong></td>
+<td>量化每次模型尝试 Token、每百次尝试压缩次数、精确上下文压缩 Token 占比、缓存结构、Top 路由集中度与未归因比例。</td>
 </tr>
 <tr>
-<td><strong>确定性证据</strong></td>
-<td>模型报告同时获得事件/分钟、Token/分钟、回合、步骤、工具错误、重试、压缩、审批与子代理等本地计算指标，并要求引用事件序号。</td>
+<td><strong>AI 用量优化</strong></td>
+<td>手动选择任一已接入的 provider/model，对总量、压缩税、输入/输出/缓存、路由贡献、趋势和波动生成证据化分析与 P0/P1/P2 Token 优化建议。</td>
+</tr>
+<tr>
+<td><strong>轨迹 Token 分析</strong></td>
+<td>手动选择会话后，使用同一模型以白名单元数据分析调用链、重试、异常恢复、速率、压缩和 Token 效率；不发送会话正文或工具载荷。</td>
+</tr>
+<tr>
+<td><strong>用量节点与对账</strong></td>
+<td>按模型调用尝试和上下文压缩生成稳定用量节点，标注 actual/provisional/authoritative，识别最大节点、重试 Token，并对账 provider 事件总量。</td>
 </tr>
 <tr>
 <td><strong>紧凑布局</strong></td>
@@ -235,7 +243,7 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td><strong>隐私优先</strong></td>
-<td>持久层只保存统计数据；轨迹分析显式触发、长度受限、脱敏常见凭据，报告仅在当前页面内存中展示。</td>
+<td>持久层只保存统计数据；轨迹分析从结构上省略提示词、回复、工具名称/参数/结果、会话标题以及个人或组织字段，报告仅在当前页面内存中展示。</td>
 </tr>
 </tbody></table>
 <h3>🚀 安装</h3>
@@ -249,11 +257,15 @@ footer p+p{margin-top:.5rem}
 <ul>
 <li><strong>概览卡片</strong>：总 Token、输入 Token、输出 Token、缓存命中率和有用量会话数。</li>
 <li><strong>周期趋势</strong>：切换 7/30/90 日窗口，查看当前周期总量、环比、活跃天数与峰值日。</li>
-<li><strong>30 日预算</strong>：预算写入本机 DSH settings；显示滚动消耗比例与超额提示，填 0 或清空可关闭。</li>
+<li><strong>用量信号</strong>：仅在全部纳入统计的会话都有真实逐日 bucket 时，按最近 7 个完整 UTC 日计算日均和预计 30 日运行率；昨天的完整日会与此前 28 日至少 5 个活跃日的中位数/MAD 稳健基线比较，异常日可直接下钻会话。</li>
+<li><strong>30 日预算</strong>：预算写入本机 DSH settings；逐日覆盖完整时显示滚动消耗比例、当前运行率的 30 日预测和可能的预测超额，填 0 或清空可关闭。</li>
+<li><strong>Agent 效率与归因</strong>：显示模型尝试数、每次尝试 Token、每 100 次尝试压缩数、精确压缩 Token 占比、缓存读取占输入、Top 1/Top 3 路由集中度及未归因比例。</li>
+<li><strong>价格统计</strong>：显示已覆盖路由的估算 USD 成本、缓存读取避免费用、按 Token 计算的费率覆盖率，以及每条模型路由的估算成本；未覆盖路由明确显示 <code>—</code>。</li>
+<li><strong>AI Token 用量分析</strong>：从已接入模型中手动选择一个模型，按需生成总量、精确压缩税、输入/输出/缓存、路由集中度、趋势、峰值、波动和 Token 优化建议报告。</li>
 <li><strong>Token 活跃度</strong>：最近 30 周按天汇总的热力图；悬停方格查看缓存等明细，点击查看当天贡献会话。</li>
-<li><strong>模型用量</strong>：按 provider / model 汇总调用次数、总量、输入与输出；缓存读写作为输入的辅助明细展示。</li>
-<li><strong>聚合导出</strong>：导出不含会话标题和正文的版本化 JSON、每日 CSV 或模型 CSV；CSV 单元格防公式注入。</li>
-<li><strong>会话记录</strong>：搜索会话标题、会话 ID 或模型路由，并可从任一有用量会话启动轨迹智能分析。</li>
+<li><strong>模型用量</strong>：按 provider / model 汇总调用次数、总量、输入与输出；可按总 Token、已覆盖的估算费用、每次记录调用 Token 或缓存读取占输入排序。</li>
+<li><strong>聚合导出</strong>：导出不含会话标题和正文的 JSON v2（含压缩 bucket、公开费率覆盖和路由估算）、每日 CSV 或模型 CSV；模型 CSV 含已覆盖路由的费用/缓存避免费用，CSV 单元格防公式注入。</li>
+<li><strong>会话记录</strong>：搜索会话标题、会话 ID 或模型路由；初始最多显示 50 条，可渐进展开，并可直接打开会话或启动轨迹智能分析。</li>
 </ul>
 <h4>统计口径</h4>
 <table>
@@ -272,66 +284,131 @@ footer p+p{margin-top:.5rem}
 <td>输入 Token + <code>outputTokens</code></td>
 </tr>
 <tr>
-<td>缓存命中率</td>
-<td><code>cacheReadTokens / 输入 Token</code></td>
+<td>缓存读取占输入</td>
+<td><code>cacheReadTokens / 输入 Token</code>；这是 Token 结构比例，不是请求级缓存命中率</td>
 </tr>
 <tr>
 <td>输出 Token</td>
 <td>使用 provider 上报的 <code>outputTokens</code>；不另加 <code>reasoningTokens</code></td>
 </tr>
+<tr>
+<td>压缩 Token</td>
+<td>所有 <code>compaction/summary</code> provider usage 的四个 bucket 之和；与普通模型尝试分别计数</td>
+</tr>
+<tr>
+<td>每次模型尝试 Token</td>
+<td><code>(总 Token - 压缩 Token) / assistantRequests</code>；重试是独立尝试。若存在未归因旧用量，因缺少对应尝试次数而不显示该比率。</td>
+</tr>
 </tbody></table>
-<p>同一请求步骤若先后出现流式 usage 与最终消息 usage，最终值会替换该步骤的临时值，避免重复记账；发生 <code>llm/retry</code> 后，每个重试尝试仍会被独立统计。</p>
-<h3>🧠 会话轨迹智能分析</h3>
-<p>在 <strong>会话记录</strong> 中点击 <strong>分析轨迹</strong>。Host 会读取 live 会话的当前完整事件日志，或通过 <code>sessionPersistence.inspect()</code> 读取冷会话，不依赖浏览器仅加载的分页窗口；随后通过 <code>agentDefaultModel.currentSelection()</code> 选取 DSH 当前配置模型，并以一次 registration-bound prepared LLM call 生成报告。</p>
-<p>报告覆盖以下方面：</p>
+<p>同一请求步骤若先后出现流式 usage 与最终消息 usage，最终值会替换该步骤的临时值，避免重复记账；发生 <code>llm/retry</code> 后，每个重试尝试仍会被独立统计。每条 <code>compaction/summary</code> 都计为一次压缩；provider 未附 usage 时只增加次数，不虚构 Token。带 <code>surfaceOp: replace</code> 的消息只改写可见会话表面，不代表新的模型或工具执行，因此不会重复计数。</p>
+<h3>📈 运行率、异常与 Agent 效率</h3>
+<ul>
+<li><strong>运行率</strong>：仅在逐日覆盖完整时，使用真实逐日 bucket，并取最近 7 个完整 UTC 日（不包含尚未结束的今天）计算日均，再乘以 30 得到滚动 30 日预测；它是 Token 运行率，不是账单预测。</li>
+<li><strong>预算预测</strong>：仅在已开启 Token 预算时比较预测值和预算。当前已超额与“按当前运行率将超额”会分别提示，不会自动阻止模型调用。</li>
+<li><strong>异常检测</strong>：将昨天这个完整 UTC 日与此前 28 日内的活跃完整日比较。至少需要 5 个活跃基线日；使用活跃日中位数和 MAD，MAD 为 0 时采用 3×中位数阈值。异常提示会显示绝对超量和倍数，并可下钻现有的按日会话贡献。</li>
+<li><strong>效率/集中度</strong>：Top 1/Top 3 是全部 Token 的路由份额；未归因用量会单独披露。每次模型尝试 Token 从可归因总量扣除精确压缩 Token 后计算，重试属于独立尝试。</li>
+<li><strong>会话工作流</strong>：会话名称可直接打开当前仍在列表内的会话；若会话在点击前消失，保持设置页面并显示失败原因。初始列表只渲染 50 行，聚合统计仍覆盖全部会话。</li>
+</ul>
+<h3>💵 公开价格统计</h3>
+<p>成本是<strong>静态公开费率估算，不是 provider 账单</strong>。内置表以 USD / 1M Token 计价，当前按精确 <code>provider: &#39;openai&#39;</code> 与 model 标签匹配：<code>gpt-5</code>、<code>gpt-5-mini</code>、<code>gpt-5-nano</code>、<code>gpt-4.1</code>、<code>gpt-4.1-mini</code>、<code>gpt-4.1-nano</code>、<code>gpt-4o</code> 和 <code>gpt-4o-mini</code>（及列出的 API 版本别名）。费率依据 <a href="https://developers.openai.com/api/docs/pricing">OpenAI 官方 API Pricing</a>，表内最近基准日为 <strong>2025-08-07</strong>，不会联网实时刷新；标签匹配不能验证实际端点、转售关系、合同或账单。</p>
+<pre><code class="language-text">估算 USD = 未缓存输入 × inputRate
+         + 输出 × outputRate
+         + 缓存读取 × cacheReadRate
+         + 缓存写入 × cacheWriteRate
+         ÷ 1,000,000
+</code></pre>
+<ul>
+<li>仅当 provider 和 model 标签均精确匹配内置表时才计价，不借用相似模型价格；匹配结果仍可能对应代理或自定义端点，因此必须结合实际账单核验。</li>
+<li>费率覆盖率按已匹配路由的四类 Token / 全部四类 Token 计算；未覆盖 Token 不进入估算总额，页面会同时显示覆盖 Token 和有用量路由数，部分覆盖不会四舍五入为 100%。它不是实际消费金额覆盖率，不能据此外推未知价格。</li>
+<li>缓存读取避免费用仅对已匹配路由计算：<code>cacheReadTokens × max(inputRate - cacheReadRate, 0) / 1M</code>；它比较同一静态公开表中的未缓存输入价，不是账单返还。</li>
+<li>OpenAI 路由没有单独公开的 cache-write 费率时，cache-write 按普通输入费率估算；每条路由的悬停说明会显示所用四项费率与基准日。</li>
+<li>历史聚合会按当前内置静态表重估，不按事件发生日的历史价格还原；因此暂不提供 USD 预算。</li>
+<li>价格计算、页面展示和 JSON v2/模型 CSV 只在本地浏览器中使用已持久化的聚合 bucket；价格匹配、覆盖率、估算 USD 和缓存读取避免费用都不会作为外部分析模型的证据，也不会新增会话正文、提示词或响应数据的收集。</li>
+</ul>
+<h3>🤖 AI Token 用量分析</h3>
+<p>在仪表盘的 <strong>AI Token 用量分析</strong> 卡片中，从已注册且能列出模型的 provider/model 路由里手动选择一个模型，再点击 <strong>生成用量分析</strong>。选择会同时用于下面的会话轨迹分析，但每次分析仍需单独手动触发。</p>
+<p>报告固定覆盖：</p>
 <table>
 <thead>
 <tr>
 <th>分析面</th>
-<th>关注内容</th>
+<th>依据与输出</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>调用链与委派</td>
-<td>Turn → Step → 模型 → Tool → Result、子代理/工作流委派关系及主要瓶颈。</td>
+<td>总量与结构</td>
+<td>未缓存输入、输出、缓存读取和缓存写入的占比与变化，以及精确上下文压缩 Token 总量。</td>
 </tr>
 <tr>
-<td>合规与安全</td>
-<td>审批结果、权限/沙箱变化、敏感信息暴露迹象、破坏性动作与用户意图的一致性。</td>
+<td>路由贡献</td>
+<td>按报告内 <code>route-N</code> 别名的 Token、对话次数和压缩次数识别集中度与高消耗路由；不向模型暴露原始路由名。</td>
 </tr>
 <tr>
-<td>异常与恢复</td>
-<td>模型重试、重复调用、循环、工具错误、中断回合、压缩失败、停滞及后续恢复。</td>
+<td>时间趋势</td>
+<td>仅在逐日覆盖完整时，用真实逐日 bucket 分析 UTC 日粒度的活跃度、峰值与波动；长历史最多取最新 366 天进入模型证据。</td>
 </tr>
 <tr>
-<td>速率与性能</td>
-<td>事件/分钟、Token/分钟、调用突发、阶段耗时、并发和可能的等待热点。</td>
+<td>风险与不确定性</td>
+<td>明确数据覆盖边界，不虚构价格、延迟、质量或因果。</td>
 </tr>
 <tr>
-<td>Token 与上下文效率</td>
-<td>输入/输出/缓存分布、压缩压力、上下文增长、模型切换与潜在浪费。</td>
-</tr>
-<tr>
-<td>工具与子代理成效</td>
-<td>工具成功率、错误聚类、委派收益、重复工作与汇总质量。</td>
-</tr>
-<tr>
-<td>可靠性与生命周期</td>
-<td>Turn/Step 配对、Tool call/result 配对、完成原因和未闭合操作。</td>
-</tr>
-<tr>
-<td>优先级建议</td>
-<td>基于事件序号与确定性指标给出 P0/P1/P2 改进项及预期收益。</td>
+<td>优化建议</td>
+<td>3–7 条带 P0/P1/P2、证据、预期 Token 效率收益、置信度和实施工作量的建议。</td>
 </tr>
 </tbody></table>
+<h4>聚合数据、隐私与费用</h4>
+<ul>
+<li>用量分析只发送总 Token bucket、精确压缩 Token bucket、报告内 <code>route-N</code> 别名、对话/压缩次数和可靠的 UTC 每日 bucket；本地价格匹配、覆盖率、估算 USD、缓存读取避免费用和路由成本均不发送。原始 provider/model、会话 ID、标题、提示词、回复、工具参数或其他会话正文同样不会发送。</li>
+<li>模型证据最多保留 Token 最大的 48 条路由记录与最新 366 条日期记录；总量仍来自完整仪表盘聚合。</li>
+<li>报告和辅助调用用量仅驻留当前页面内存，刷新后消失，不进入会话日志、projection cache 或任何导出文件。</li>
+<li>用户选择的 provider/model 会实际产生一次辅助模型调用；报告卡会显示该调用的 provider/model 与 Token 用量。用量分析最多生成 2,600 Token。</li>
+<li>目录只显示已接入且当前可列出模型的路由。单个提供方的目录失败不会隐藏其他可用路由，页面会披露受影响的提供方但不暴露适配器错误细节；调用失败时不会悄悄改用默认模型。</li>
+<li>目录用于用户选择和展示；实际调用以 Host LLM adapter 的 <code>prepareCall</code> 为准，因此目录刷新与调用之间消失的路由会得到适配器的明确失败，而不是先被过期目录拒绝。</li>
+</ul>
+<h3>🧠 会话 Token 轨迹分析</h3>
+<p>在 <strong>会话记录</strong> 中点击 <strong>分析轨迹</strong>。Host 会读取 live 会话的完整事件日志，或通过 <code>sessionPersistence.inspect()</code> 读取冷会话；浏览器分页不会影响结果。分析器先做确定性、内容无关的 fold，再使用 AI Token 用量分析卡片中手动选择的已接入 provider/model 生成临时报告。</p>
+<h4>确定性证据</h4>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>模型调用节点</td>
+<td>ID 为 <code>model:&lt;turn&gt;:&lt;step&gt;:&lt;attempt&gt;</code>；usage chunk 是 provider 上报的 <code>actual/provisional</code>，最终消息在同一 attempt 内替换为 <code>actual/authoritative</code>。</td>
+</tr>
+<tr>
+<td>重试 Token</td>
+<td>收到 <code>llm/retry</code> 时封存当前 attempt；其 provider usage 单独汇总，后续 attempt 不覆盖前次消耗。</td>
+</tr>
+<tr>
+<td>压缩节点</td>
+<td>每个带 usage 的 <code>compaction/summary</code> 独立归因，ID 为 <code>compaction:&lt;seq&gt;</code>。</td>
+</tr>
+<tr>
+<td>最大用量节点</td>
+<td>在模型 attempt 与压缩节点中按四个 Token bucket 之和确定。</td>
+</tr>
+<tr>
+<td>Token 对账</td>
+<td>canonical 持久 projection 与独立节点归因账本按四个 bucket 分别比较；差异原样显示，不自动归零。</td>
+</tr>
+<tr>
+<td>速率和运行指标</td>
+<td>基于事件相对时间计算全程与活跃回合 Token/分钟，并统计未结束回合/步骤、工具调用/结果/错误、孤立工具、工具延迟、模型切换、重试、压缩与审批结果。</td>
+</tr>
+</tbody></table>
+<p>当前 provider 只提供未缓存输入、缓存读取、缓存写入和输出四类实际值。系统指令、用户输入、历史、检索、工具结果和子代理结果的细分归因标为不可用；插件不会读取正文进行估算，也不会把估算值伪装成实际值。</p>
 <h4>输入、隐私与费用</h4>
 <ul>
-<li>分析由用户显式触发，报告不写入会话日志、projection cache 或导出文件；刷新页面后不会保留。</li>
-<li>原始 <code>assistant/chunk</code> 不进入分析请求，只计入省略数量；其他事件会递归限制深度、集合大小与单条长度。</li>
-<li>模型输入最多约 96,000 字符；超限时保留轨迹首尾并插入截断标记，UI 会提示模型未看到完整中段。</li>
-<li>发送前会尽力遮蔽 Bearer Token、<code>sk-*</code> 以及常见 API key、password、secret、credential 字段，但这不是完整 DLP。请按所配置模型提供方的数据政策评估敏感会话。</li>
-<li>模型最多生成 3,000 Token；本次辅助调用的 provider/model 和 Token 用量会显示在报告卡片中，但不会计入持久化用量 projection。</li>
-<li>该私有 RPC 只允许本机 loopback Web 页面调用；必须先在 DSH 中配置可用的默认模型。</li>
+<li>分析由用户显式触发；会话列表在“分析轨迹”按钮之前显示模型证据范围。报告不写入会话日志、projection cache 或导出文件，刷新页面后不会保留。</li>
+<li>发送给模型的事件只允许：内置事件类别与序号、相对时间、turn/step、报告内 <code>route-N</code> 别名、重试序号/上限/等待、通用成功或错误状态、表面改写标记以及 Token bucket；未知扩展事件会省略。</li>
+<li>提示词、回复、system prompt、会话标题、原始 provider/model、工具名称/参数/结果/meta、故障代码与错误消息、路径、URL、邮箱、姓名、会话 ID、个人字段和组织字段不会进入模型证据；这是 allowlist 省略，不依赖正则脱敏。</li>
+<li>完整模型证据最多 96,000 字符；完整节点表留在本地，模型只接收最大节点、最多 16 个高消耗重试节点和有界首尾时间线，超限时插入截断标记。模型最多生成 3,000 Token。</li>
+<li>辅助调用的 provider/model 和 Token 用量显示在报告卡片中，但不会计入持久化用量 projection。</li>
+<li>私有 RPC 只允许本机 loopback Web 页面调用；必须先从已接入模型目录中手动选择 provider/model，不会隐藏地回退到默认模型。目录枚举与生成调用都绑定当前 LLM service 生命周期，服务移除或替换时会立即停止等待。Client 会在渲染前验证 provider 总量、节点归因、signed delta、状态和最大节点引用的一致性。</li>
 </ul>
 <h3>🧭 数据流</h3>
 <pre><code class="language-mermaid">flowchart LR
@@ -340,16 +417,22 @@ footer p+p{margin-top:.5rem}
   C --&gt; D[Settings · Token 用量]
   D --&gt; E[概览、趋势、预算与导出]
   D --&gt; F[30 周热力图与会话下钻]
-  D --&gt;|显式触发| G[有界、脱敏的轨迹 DTO]
-  G --&gt; H[DSH 当前配置模型]
-  H --&gt; I[临时审计报告]
+  D --&gt;|显式触发| G[确定性用量节点与对账]
+  G --&gt; H[白名单元数据 DTO]
+  D --&gt;|显式触发| J[聚合用量 DTO]
+  H --&gt; K[用户手动选择的已接入模型]
+  J --&gt; K
+  K --&gt; I[临时 AI 分析报告]
 </code></pre>
 <ul>
 <li>Host 侧监听普通模型请求、重试和上下文压缩事件，构建会话级持久 projection。</li>
 <li>历史会话在后台按顺序预热；冷会话在恢复期间重新附着时，会重新写入最新 live checkpoint，避免回退缓存水位。</li>
 <li>Web 侧将所有会话 projection 聚合为仪表盘数据。较旧的内置 projection 会显示为“未归因用量”，以保持总量守恒。</li>
-<li>轨迹分析走独立的 loopback 私有 RPC：Host 读取权威事件日志、构造有界 DTO 并调用已配置模型，Web 只接收 JSON 指标和 Markdown 报告。</li>
+<li>两类 AI 分析都走 loopback 私有 RPC，并只接受用户从已接入模型目录中选择的路由：用量分析只传聚合 DTO；轨迹分析由 Host 读取权威事件日志、构造内容无关的实际用量节点和有界白名单 DTO。Web 只接收 JSON 指标和 Markdown 报告。</li>
 </ul>
+<h3>🔎 设计参考与取舍</h3>
+<p>本插件吸收了主流 Agent 可观测性产品对 Token、成本、缓存和聚合趋势的做法，例如 <a href="https://docs.langchain.com/langsmith/cost-tracking">LangSmith cost tracking</a>、<a href="https://openai.github.io/openai-agents-python/usage/">OpenAI Agents SDK usage</a>、<a href="https://python-sdk-v2.docs-snapshot.langfuse.com/docs/observability/features/token-and-cost-tracking/">Langfuse token/cost tracking</a> 和 <a href="https://arize.com/docs/phoenix/tracing/llm-traces/metrics">Phoenix LLM metrics</a>。预算和异常部分参考 <a href="https://www.finops.org/framework/capabilities/budgeting/">FinOps Budgeting</a>、<a href="https://www.finops.org/framework/capabilities/anomaly-management/">Anomaly Management</a> 与 <a href="https://itl.nist.gov/div898//software/dataplot/refman2/auxillar/mad.htm">MAD 的稳健统计定义</a>。</p>
+<p>取舍是有意的：本地插件只持久化聚合 bucket、日期、匿名化 AI 分析证据和用户显式启动的会话轨迹元数据；不保存请求正文、逐请求日志、日期×模型交叉明细或人员/组织归因。现有投影没有日期×模型维度，因此异常日只支持会话贡献下钻，不声称模型级日归因。</p>
 <h3>🔄 更新与热加载</h3>
 <table>
 <thead>
@@ -383,9 +466,12 @@ npm run build
 <li>历史预热依赖 DSH session projection cache。预热完成前，仅有内置 projection 的旧会话会被显示为“未归因用量”；刷新后可读取新的模型明细。</li>
 <li>单个损坏或不可读取的历史会话只会记录警告，不会阻止插件启动。</li>
 <li>热力图按持久事件的 UTC 日期统计；旧版内置 projection 缺少逐日数据时，会暂按会话最后活动日归档。</li>
-<li>轨迹报告是模型辅助审查，不是策略执行器或合规证明；确定性指标与事件序号优先于模型推断。</li>
-<li>常见凭据脱敏是尽力而为，不替代组织级 DLP；超长轨迹的中段会被明确截断。</li>
-<li>轨迹报告当前不持久化、不支持历史对比；分析调用的 Token 只显示在当次报告中，不计入持久化仪表盘。</li>
+<li>运行率和异常检测会排除上述旧版合成日期，只使用真实逐日 bucket；覆盖缺失或仅部分可靠时都会显示不可用，而不是以不完整数据给出偏低结果。异常检测需要昨天有记录且此前 28 日至少 5 个活跃日，不足基线时不报告“正常”。预测和异常不会做模型级逐日归因。</li>
+<li>轨迹报告是模型辅助的资源效率解释，不是策略执行器或合规证明；确定性节点、provider bucket 和对账结果优先于模型推断。</li>
+<li>provider 当前不提供系统、用户、历史、检索、工具和子代理输入的独立 Token bucket，因此这些细分不会估算；超长元数据轨迹的中段会明确标为不可用。</li>
+<li>插件不建设人员、团队、部门、组织、成本中心或行为画像维度；AI 用量报告和轨迹报告当前不持久化、不支持历史对比。</li>
+<li>分析调用的 Token 只显示在当次报告中，不计入持久化仪表盘。</li>
+<li>AI 用量分析只可选择当前能由已接入 provider 列出的模型；每日趋势证据最多传递最新 366 天。内置 USD 费率表不是实时账单或汇率服务，仅按文档列出的 OpenAI 路由标签本地匹配；模型建议不接收价格证据，也不替代账单、延迟或质量观测。</li>
 </ul>
 <h3>📄 License</h3>
 <p><a href="https://github.com/LeemanCheung/dsh-token-usage/blob/main/LICENSE">MIT</a> © LeemanCheung</p>
@@ -405,12 +491,12 @@ npm run build
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 39</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
-      <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 25</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
-      <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 24</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-turn-rewind/" translate="no">Anionex/dsh-turn-rewind</a><span class="stars" translate="no">★ 41</span></h3><a class="desc-link" href="/p/Anionex/dsh-turn-rewind/" tabindex="-1"><p>Rewind conversation and workspace state, powered by a persistent Change Ledger.</p></a></li>
+      <li><h3><a href="/p/Nwflower/dsh-chat-import/" translate="no">Nwflower/dsh-chat-import</a><span class="stars" translate="no">★ 27</span></h3><a class="desc-link" href="/p/Nwflower/dsh-chat-import/" tabindex="-1"><p>Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.</p></a></li>
+      <li><h3><a href="/p/Chinesezjc/dsh-interconnect/" translate="no">Chinesezjc/dsh-interconnect</a><span class="stars" translate="no">★ 26</span></h3><a class="desc-link" href="/p/Chinesezjc/dsh-interconnect/" tabindex="-1"><p>Cross-instance message and event handoff between DSH instances via an interconnect server.</p></a></li>
       <li><h3><a href="/p/Moeblack/dsh-message-edit/" translate="no">Moeblack/dsh-message-edit</a><span class="stars" translate="no">★ 18</span></h3><a class="desc-link" href="/p/Moeblack/dsh-message-edit/" tabindex="-1"><p>Branch-based message editing, reroll, retry, and a version timeline.</p></a></li>
       <li><h3><a href="/p/hellodigua/dsh-share/" translate="no">hellodigua/dsh-share</a><span class="stars" translate="no">★ 17</span></h3><a class="desc-link" href="/p/hellodigua/dsh-share/" tabindex="-1"><p>Share your conversations with one click.</p></a></li>
-      <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p></a></li>
+      <li><h3><a href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" translate="no">whyihaveyou/dsh-suite#plugin-session-export</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/whyihaveyou/dsh-suite--packages-plugins-plugin-session-export/" tabindex="-1"><p>Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.</p></a></li>
     </ul>
     <a class="morelink" href="/session/">View the whole category →</a>
   </section>

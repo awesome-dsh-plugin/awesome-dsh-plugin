@@ -4,7 +4,91 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-14T17:58:35.167Z</updated>
+  <updated>2026-08-15T01:01:33.356Z</updated>
+  <entry>
+    <title>GLFzr/dsh-drop-file-to-path</title>
+    <id>https://github.com/GLFzr/dsh-drop-file-to-path</id>
+    <link href="https://github.com/GLFzr/dsh-drop-file-to-path"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Codex-style drag-drop: drag any file into the DSH web GUI, it lands in ~/.dsh-dropbox, and the path is inserted into the composer as a whole blue chip.</summary>
+  </entry>
+  <entry>
+    <title>FengHuoLinShan/dsh-plugin-llm-balance</title>
+    <id>https://github.com/FengHuoLinShan/dsh-plugin-llm-balance</id>
+    <link href="https://github.com/FengHuoLinShan/dsh-plugin-llm-balance"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Draggable floating card showing the balance/quota of your most recently used providers (DeepSeek/Moonshot/Kimi For Coding): auto-discovery, color-coded tiers, live refresh.</summary>
+  </entry>
+  <entry>
+    <title>chinaRXQ/dsh-wallpaper</title>
+    <id>https://github.com/chinaRXQ/dsh-wallpaper</id>
+    <link href="https://github.com/chinaRXQ/dsh-wallpaper"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Wallpaper skin for the DSH Web UI: image background with opacity, mask and blur controls.</summary>
+  </entry>
+  <entry>
+    <title>ishuowang/dsh-agent-team-room</title>
+    <id>https://github.com/ishuowang/dsh-agent-team-room</id>
+    <link href="https://github.com/ishuowang/dsh-agent-team-room"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Persistent rooms for independent DSH Agent sessions, with explicit membership, direct and broadcast messages, tracked tasks, and a shared Web timeline.</summary>
+  </entry>
+  <entry>
+    <title>Edge-Echo/dsh-mcp-bridge</title>
+    <id>https://github.com/Edge-Echo/dsh-mcp-bridge</id>
+    <link href="https://github.com/Edge-Echo/dsh-mcp-bridge"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Curated, verified MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.</summary>
+  </entry>
+  <entry>
+    <title>linxichen/dsh-rigorquant</title>
+    <id>https://github.com/linxichen/dsh-rigorquant</id>
+    <link href="https://github.com/linxichen/dsh-rigorquant"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>RigorQuant preset + skill pack: unattended walled multi-agent research for empirical and computational mathematics (economics, finance, portfolio), with a four-part pre-implementation check battery and a jacobian/Lean escalation lane.</summary>
+  </entry>
+  <entry>
+    <title>xmanrui/dsh-weixin</title>
+    <id>https://github.com/xmanrui/dsh-weixin</id>
+    <link href="https://github.com/xmanrui/dsh-weixin"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Connect a Weixin bot to DeepSeek Harness by scanning a QR code.</summary>
+  </entry>
+  <entry>
+    <title>xmanrui/dsh-im</title>
+    <id>https://github.com/xmanrui/dsh-im</id>
+    <link href="https://github.com/xmanrui/dsh-im"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).</summary>
+  </entry>
+  <entry>
+    <title>Noob-stupid/dsh-github-login</title>
+    <id>https://github.com/Noob-stupid/dsh-github-login</id>
+    <link href="https://github.com/Noob-stupid/dsh-github-login"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Visual GitHub login without a terminal: in-window device flow, token synced into the gh CLI, and host status/launch endpoints.</summary>
+  </entry>
+  <entry>
+    <title>labmimors/dsh-mcp-lens</title>
+    <id>https://github.com/labmimors/dsh-mcp-lens</id>
+    <link href="https://github.com/labmimors/dsh-mcp-lens"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Progressive-disclosure MCP gateway that searches large remote catalogs through `mcp_search`, then invokes exact schemas through `mcp_call` with lazy connections and bounded caches.</summary>
+  </entry>
+  <entry>
+    <title>Cavan-Ou/dsh-observation-journal</title>
+    <id>https://github.com/Cavan-Ou/dsh-observation-journal</id>
+    <link href="https://github.com/Cavan-Ou/dsh-observation-journal"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Zero-touch runtime telemetry for DSH: every session auto-writes task, model tier, tools, failures, duration, status into a human-readable journal with a stats section (pure observer — no tools, no LLM calls, no injection).</summary>
+  </entry>
+  <entry>
+    <title>tianyaZTY/dsh-hot-plugin-host</title>
+    <id>https://github.com/tianyaZTY/dsh-hot-plugin-host</id>
+    <link href="https://github.com/tianyaZTY/dsh-hot-plugin-host"/>
+    <updated>2026-08-15T01:01:33.356Z</updated>
+    <summary>Runtime plugin loading for the Web UI: a watched hot directory installs/updates client-plugin bundles live on every open page, no restart. Includes a right-column subagent dashboard example.</summary>
+  </entry>
   <entry>
     <title>609476965/dsh-LorebookMD</title>
     <id>https://github.com/609476965/dsh-LorebookMD</id>
@@ -130,89 +214,5 @@
     <link href="https://github.com/bowenliang123/dsh-context"/>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.</summary>
-  </entry>
-  <entry>
-    <title>wjy9902/dsh-web-default-session</title>
-    <id>https://github.com/wjy9902/dsh-web-default-session</id>
-    <link href="https://github.com/wjy9902/dsh-web-default-session"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.</summary>
-  </entry>
-  <entry>
-    <title>Fishsb/dsh-prompt-enhancer</title>
-    <id>https://github.com/Fishsb/dsh-prompt-enhancer</id>
-    <link href="https://github.com/Fishsb/dsh-prompt-enhancer"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.</summary>
-  </entry>
-  <entry>
-    <title>openma-ai/deepseek-harness-tui</title>
-    <id>https://github.com/openma-ai/deepseek-harness-tui</id>
-    <link href="https://github.com/openma-ai/deepseek-harness-tui"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.</summary>
-  </entry>
-  <entry>
-    <title>WhitePlusMS/dsh-input-plus</title>
-    <id>https://github.com/WhitePlusMS/dsh-input-plus</id>
-    <link href="https://github.com/WhitePlusMS/dsh-input-plus"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Search and insert workspace file and directory paths with `@`, plus a `/h` menu for reusing prompts from the current session.</summary>
-  </entry>
-  <entry>
-    <title>LeemanCheung/dsh-whale-animation</title>
-    <id>https://github.com/LeemanCheung/dsh-whale-animation</id>
-    <link href="https://github.com/LeemanCheung/dsh-whale-animation"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Persistent black whale-dive animation beside the DSH Web turn status, with a reduced-motion fallback and a seamless closed loop.</summary>
-  </entry>
-  <entry>
-    <title>01Virex/dsh-status-rotator</title>
-    <id>https://github.com/01Virex/dsh-status-rotator</id>
-    <link href="https://github.com/01Virex/dsh-status-rotator"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Replaces the &quot;Deep diving...&quot; turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.</summary>
-  </entry>
-  <entry>
-    <title>asukasec/dsh-message-preview</title>
-    <id>https://github.com/asukasec/dsh-message-preview</id>
-    <link href="https://github.com/asukasec/dsh-message-preview"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.</summary>
-  </entry>
-  <entry>
-    <title>jjxjjjjiik-bot/dsh-chat-timeline</title>
-    <id>https://github.com/jjxjjjjiik-bot/dsh-chat-timeline</id>
-    <link href="https://github.com/jjxjjjjiik-bot/dsh-chat-timeline"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav): hover-expandable rail, reading-position highlight, click-to-jump.</summary>
-  </entry>
-  <entry>
-    <title>Nanki-nn/dsh-answer-pet</title>
-    <id>https://github.com/Nanki-nn/dsh-answer-pet</id>
-    <link href="https://github.com/Nanki-nn/dsh-answer-pet"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.</summary>
-  </entry>
-  <entry>
-    <title>GooodWei/arcana</title>
-    <id>https://github.com/GooodWei/arcana</id>
-    <link href="https://github.com/GooodWei/arcana"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.</summary>
-  </entry>
-  <entry>
-    <title>GooodWei/context-vista</title>
-    <id>https://github.com/GooodWei/context-vista</id>
-    <link href="https://github.com/GooodWei/context-vista"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>A right-side floating panel and /context command for DeepSeek Harness — a live donut chart of context token usage, allocation, and estimated cost.</summary>
-  </entry>
-  <entry>
-    <title>taxueseek/dsh-files</title>
-    <id>https://github.com/taxueseek/dsh-files</id>
-    <link href="https://github.com/taxueseek/dsh-files"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.</summary>
   </entry>
 </feed>

@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">ysr666/</span><wbr><span class="name">dsh-vision-router</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 48</b></span>
+        <span>Stars <b>★ 57</b></span>
         <span>Category <a href="/tools/">Tools & Capabilities</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -189,10 +189,15 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
+<blockquote>
+<p>[!WARNING]
+📌 <strong>Announcement (v1.1.0)</strong></p>
+<p>Now supports <strong>Extra vision wrappers</strong>: any custom text route (e.g. opencode) sends images out of the box — plus long-screenshot OCR, a &quot;Test connection&quot; button and artifact preview cards in the settings panel. Stealth mode is off by default and the official DeepSeek row is no longer taken over implicitly.</p>
+</blockquote>
 <h3>Why this exists</h3>
 <p>Most DSH vision plugins bridge images to DeepSeek as <em>text descriptions</em> — lossy, one-shot, and blind to pixels. This plugin keeps the <strong>original pixels on the vision model&#39;s side</strong> and DeepSeek on the reasoning side, and makes looking at an image an <strong>ordinary tool call</strong>:</p>
 <ul>
-<li><strong>One command install, purely additive.</strong> The package ships its own composition patch (<code>dsh.bundle.patch</code>): <code>dsh plugin add</code> mounts the plugin row and nothing else — no core row is disabled or overridden (issue #34).</li>
+<li><strong>One command install.</strong> The package ships its own composition patch (<code>dsh.bundle.patch</code>): <code>dsh plugin add</code> wires the row, the admission wrapper and the attachment limits automatically — zero manual file edits. Taking over the official DeepSeek route is an optional setting (stealth mode, off by default).</li>
 <li><strong>Free by default.</strong> The vision chain starts with a built-in OVHcloud anonymous endpoint (<code>Qwen2.5-VL-72B-Instruct</code>, no account, no key, 2 req/min per IP). Paid chains (OpenRouter, Pi-AI providers, direct OpenAI-compatible endpoints) are optional upgrades.</li>
 <li><strong>No Python.</strong> The whole pipeline — downscale, grounding, crop, pixel diff, palette, OCR, SVG trace, cutout, HTML screenshot — runs on sharp / potrace / tesseract / system Chrome.</li>
 <li><strong>Continuous multi-step image work.</strong> An image turn is a text turn that calls tools: <code>vision_ground</code> → <code>vision_crop</code> → <code>vision_describe</code> → <code>vision_pixel_diff</code> → fix → screenshot again. The agent keeps iterating until the work is done.</li>
@@ -200,83 +205,65 @@ footer p+p{margin-top:.5rem}
 <li><strong>Transparent to the user.</strong> Uploaded images keep rendering as images in the conversation UI; the rewrite that points the model at the vision tools happens only inside the model call, never in the session log.</li>
 </ul>
 <h3>How it compares</h3>
-<p>Most DSH vision plugins feed DeepSeek a <em>text description</em> of the image. This plugin keeps the <strong>original pixels on the vision model&#39;s side</strong>, ships a <strong>built-in free chain</strong>, and treats looking at an image as an <strong>ordinary tool call</strong> — paste it and it just works, multi-step until done.</p>
+<p>The closest alternative is <a href="https://github.com/Anionex/dsh-vision-toolkit">@anionex/dsh-vision-toolkit</a> (Anionex), a native DSH bundle of the well-known <code>agent-vision-toolkit</code> lineage. Both packages ship a <code>vision-tools</code> skill and a family of pixel-level tools; they differ in philosophy — <strong>zero-config paste-and-go</strong> versus <strong>agent-driven visual engineering</strong>:</p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Manual model switching</th>
-<th>Description bridges (dsh-vision-sidecar · dsh-vision-proxy · dsh-vision · dsh-tool-vision)</th>
-<th>@anionex/dsh-vision-toolkit</th>
-<th>modlens</th>
 <th>dsh-vision-router</th>
+<th>@anionex/dsh-vision-toolkit</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Works out of the box, no key</td>
-<td>❌</td>
-<td>partial</td>
-<td>❌ remote tools need your own key</td>
-<td>❌ needs your own key</td>
-<td>✅ built-in keyless vision chain</td>
+<td>Image Q&amp;A out of the box</td>
+<td>✅ Built-in free chain (anonymous OVHcloud endpoint) — no account, no key</td>
+<td>Requires your own vision API key (local pixel tools work without one)</td>
 </tr>
 <tr>
-<td>Original-pixel fidelity</td>
-<td>✅ after manual switching</td>
-<td>❌ text description only</td>
-<td>✅</td>
-<td>✅ structured evidence</td>
-<td>✅ original pixels + pixel tools</td>
+<td>Runtime</td>
+<td>✅ Node only — no Python</td>
+<td>Python 3.11+ managed runtime</td>
 </tr>
 <tr>
-<td>No per-turn manual switching</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅ auto tool mounting + stealth routing</td>
+<td>Getting an image in</td>
+<td>✅ Paste it — the turn auto-routes to the vision chain and auto-mounts the tools</td>
+<td>Workspace path + <code>/vision-tools</code> command, then explicit tool calls</td>
 </tr>
 <tr>
-<td>Daily model untouched</td>
-<td>❌ session swapped</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅ DeepSeek stays the brain</td>
+<td>Turn routing</td>
+<td>✅ Image turns switch to vision, text turns switch back to DeepSeek — optional stealth takeover keeps the model picker looking stock</td>
+<td>Tool-driven; no whole-turn auto-routing</td>
 </tr>
 <tr>
-<td>Multi-provider fallback with classified errors</td>
-<td>❌</td>
-<td>❌</td>
-<td>partial</td>
-<td>—</td>
-<td>✅ chain + 429 backoff + downscale</td>
+<td>Profiles</td>
+<td>Web</td>
+<td>Web + Headless</td>
 </tr>
 <tr>
-<td>No Python runtime</td>
-<td>✅</td>
-<td>✅</td>
-<td>❌ Python 3.11+</td>
-<td>✅</td>
-<td>✅ Node only</td>
+<td>Playbooks</td>
+<td>The pixel loop: ground → crop → diff → fix → screenshot again</td>
+<td>Richer case library (long-screenshot OCR, UI restoration, GUI automation)</td>
 </tr>
 <tr>
-<td>One-command install</td>
-<td>—</td>
-<td>—</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅ bundle patch, zero file edits</td>
+<td>Tests</td>
+<td>86</td>
+<td>162</td>
+</tr>
+<tr>
+<td>Install</td>
+<td>One command</td>
+<td>One command (npm)</td>
 </tr>
 </tbody></table>
-<p>Want the pixel loop instead? All five routes converge on the same <code>vision_*</code> tool family — grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots — so you can mix and match as you like.</p>
+<p>Both are MIT-licensed and one command away. Pick this plugin when you want images to <em>just work</em> with zero setup; pick theirs when you need headless profiles or the extended playbook library. (Feature comparison reflects their README as of 2026-08.)</p>
 <h3>Quick start</h3>
 <pre><code class="language-sh">dsh plugin --profile web add dsh-vision-router
 </code></pre>
 <p>Restart <code>dsh web</code> — done. Zero configuration:</p>
 <ul>
-<li>the plugin&#39;s bundle patch mounts the row only: the official DeepSeek route stays untouched, and image turns use the &quot;自动识图&quot; wrapper entry in the picker (or the extra wrappers you configure);</li>
+<li>the plugin&#39;s bundle patch mounts the row, adds the admission wrapper and relaxes attachment limits to 20 MB / 100 MP — pure-additive, it never touches the core rows; whether the official DeepSeek route is taken over is decided by the optional stealth setting (off by default);</li>
 <li>the default vision chain is the built-in free endpoint;</li>
+<li>custom/third-party routes (e.g. opencode) gain image input through <strong>Extra vision wrappers</strong>;</li>
 <li>every setting is editable live in <strong>Settings → Plugins → Plugin config → 视觉路由（自动识图）</strong>.</li>
 </ul>
 <p>Then just paste an image into a conversation. The agent mounts the vision tools automatically and looks at it through <code>vision_describe</code> (and friends) — multi-step if needed.</p>
@@ -355,6 +342,11 @@ footer p+p{margin-top:.5rem}
 <td>Screenshot a local HTML file (headless system Chrome)</td>
 <td>PNG</td>
 </tr>
+<tr>
+<td><code>vision_long_screenshot_ocr</code></td>
+<td>Long-screenshot transcription: overlapping chunks, tesseract first / vision model fallback, stitched Markdown</td>
+<td>chunk PNGs + Markdown + manifest</td>
+</tr>
 </tbody></table>
 <p>Formats are sniffed from magic bytes, so extensionless content-addressed attachment files work everywhere (no <code>.png</code> renaming needed).</p>
 <p><strong>Common workflows</strong></p>
@@ -368,6 +360,7 @@ vision_colors image=&quot;ref.png&quot; top=8
 vision_trace image=&quot;icon.png&quot; steps=4
 vision_extract_foreground image=&quot;logo.png&quot;
 vision_html_screenshot source=&quot;page.html&quot; width=1200 height=720
+vision_long_screenshot_ocr image=&quot;chat-log.png&quot; chunkHeight=1200 overlap=120
 </code></pre>
 <h3>Provider fallback chain</h3>
 <p>The vision chain walks providers in order and only surfaces an error after every one failed:</p>
@@ -381,19 +374,28 @@ vision_html_screenshot source=&quot;page.html&quot; width=1200 height=720
 </blockquote>
 <p>Failures are classified (region / tos / quota / rate-limit / context / network) and the final error carries advice; <code>429</code> responses honor <code>Retry-After</code> once with a capped backoff. Oversized uploads are downscaled before the call (default budget 4 MP) to keep tool calls fast.</p>
 <h3>Stealth mode</h3>
-<p><strong>Stealth mode is opt-in.</strong> The plugin never disables the official <code>llm-deepseek</code> row by itself (issue #34). To take over the official <code>deepseek-official</code> route — the model picker looks exactly like stock, but each entry is the auto-vision wrapper that declares image input and delegates text turns to a rebuilt native DeepSeek adapter — add the disable to YOUR profile patch layer:</p>
+<p>Stealth mode is <strong>off by default</strong> (explicit opt-in since issue #34): with it off, the official <code>deepseek-official</code> route stays untouched and image turns go through the visible &quot;DeepSeek + 自动识图&quot; wrapper entry in the picker.</p>
+<p>With stealth on, the plugin takes over the official <code>deepseek-official</code> route: the model picker looks exactly like stock (same DeepSeek group, same model names), but each entry is the auto-vision wrapper that declares image input and delegates text turns to a rebuilt native DeepSeek adapter (same <code>llm-deepseek</code> settings section and credentials). Old sessions keep working through the hidden <code>deepseek-vision</code> alias. The takeover requires the stock row to be absent — disable it in your profile patch layer (<code>~/.dsh/profiles/&lt;profile&gt;/cordis.patch.yml</code>):</p>
 <pre><code class="language-yaml">- id: llm-deepseek
   name: &#39;@deepseek-ai/dsh-llm-deepseek&#39;
   disabled: true
 </code></pre>
-<p>Without the takeover, the plugin registers the visible &quot;DeepSeek + 自动识图&quot; (<code>deepseek-vision</code>) wrapper entry — pick it in the model picker for image turns; for third-party text routes, add them to the settings card&#39;s <strong>extra vision wrappers</strong>. Recovery from a broken install is the same one-line override (delete the <code>disabled</code> line).</p>
+<p>With the stock row present, the plugin falls back to the visible wrapper entry. Conversely, with stealth off but the stock row still disabled, the plugin performs a keep-alive takeover so the DeepSeek models don&#39;t vanish (the settings card explains this); to restore the fully official route, flip the <code>disabled</code> above back to <code>false</code> and restart.</p>
+<blockquote>
+<p>Stealth mode <strong>only affects the official DeepSeek route</strong>. Custom/third-party routes like opencode are unrelated — use <strong>Extra vision wrappers</strong> below to give them image input.</p>
+</blockquote>
+<h3>Extra vision wrappers</h3>
+<p><code>wrappedProviders</code> registers an auto-vision twin for any third-party/custom text route: pick the twin in the model selector and send images; text turns delegate to the original route unchanged. The typical use case is a custom interface such as opencode — it only declares text input, and one wrapper row makes it image-ready. In the settings card, configure it with two dropdowns (provider + model); leaving the model empty wraps every model of that route.</p>
 <h3>Web settings</h3>
 <p>The Web profile registers a <strong>视觉路由（自动识图）</strong> card under <strong>Settings → Plugins → Plugin config</strong>, styled like the built-in cards. It live-edits:</p>
 <ul>
-<li>switches: whole-turn legacy routing, vision tools, image-block rewriting, stealth;</li>
+<li>switches: whole-turn legacy routing, vision tools, image-block rewriting, stealth (official DeepSeek route only);</li>
+<li><strong>extra vision wrappers</strong>: provider + model dropdowns that register image-capable twin entries for custom routes such as opencode;</li>
 <li>vision request timeout, wrapper/chain route names;</li>
 <li>the <strong>vision chain</strong> (one <code>provider/model</code> per line, top-down fallback) and the text model;</li>
-<li>every field shows an &quot;overridden&quot; badge with a one-click reset to the composition default, plus discard/save.</li>
+<li>every field shows an &quot;overridden&quot; badge with a one-click reset to the composition default, plus discard/save;</li>
+<li>a <strong>Test connection</strong> button probes the first vision provider and reports latency inline;</li>
+<li>artifact-producing tools render dedicated call cards with result facts and open-file buttons.</li>
 </ul>
 <blockquote>
 <p>PR <a href="https://github.com/ysr666/dsh-vision-router/pull/8">#8</a> upgrades the panel with catalog-driven model dropdowns, add/remove fallback rows, and proxy settings.</p>
@@ -420,13 +422,18 @@ vision_html_screenshot source=&quot;page.html&quot; width=1200 height=720
 </tr>
 <tr>
 <td><code>providers</code></td>
-<td><code>[]</code></td>
-<td>multi-provider chain <code>{ provider, model, fallbacks[] }</code>, tried in order; wins over the shorthand</td>
+<td>built-in free <code>vision-http</code> pair</td>
+<td>multi-provider chain <code>{ provider, model, fallbacks[] }</code>, tried in order; wins over the shorthand. The first row ships as the built-in free model</td>
 </tr>
 <tr>
 <td><code>httpProviders</code></td>
 <td>built-in OVH entry</td>
 <td>direct OpenAI-compatible endpoints <code>{ name, baseURL, model, apiKeyEnv, maxTokens }</code></td>
+</tr>
+<tr>
+<td><code>wrappedProviders</code></td>
+<td><code>[{ provider: &#39;deepseek-official&#39;, models: [] }]</code></td>
+<td>extra text routes to wrap as image-capable twins: <code>{ provider, models[] }</code> — registers an auto-vision twin for any custom/third-party route (e.g. opencode); in the card, provider + model dropdowns, empty model = wrap all. The pre-filled deepseek-official row marks the built-in wrapper and is a no-op; changes apply live</td>
 </tr>
 <tr>
 <td><code>routing</code></td>
@@ -445,8 +452,8 @@ vision_html_screenshot source=&quot;page.html&quot; width=1200 height=720
 </tr>
 <tr>
 <td><code>stealth</code></td>
-<td><code>true</code></td>
-<td>take over the official <code>deepseek-official</code> route</td>
+<td><code>false</code></td>
+<td>take over the official <code>deepseek-official</code> route (official row only; custom routes use <code>wrappedProviders</code>)</td>
 </tr>
 <tr>
 <td><code>textProvider</code></td>
@@ -543,12 +550,12 @@ dsh --profile web --dump-config | grep vision-router   # one row, mounted by the
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1261</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
-      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 323</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
-      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 138</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
-      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 89</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
-      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 88</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
-      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 69</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
+      <li><h3><a href="/p/liustack/modlens/" translate="no">liustack/modlens</a><span class="stars" translate="no">★ 1308</span></h3><a class="desc-link" href="/p/liustack/modlens/" tabindex="-1"><p>Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).</p></a></li>
+      <li><h3><a href="/p/Anionex/dsh-vision-toolkit/" translate="no">Anionex/dsh-vision-toolkit</a><span class="stars" translate="no">★ 333</span></h3><a class="desc-link" href="/p/Anionex/dsh-vision-toolkit/" tabindex="-1"><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.</p></a></li>
+      <li><h3><a href="/p/zhaoolee/notes/" translate="no">zhaoolee/notes</a><span class="stars" translate="no">★ 140</span></h3><a class="desc-link" href="/p/zhaoolee/notes/" tabindex="-1"><p>Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.</p></a></li>
+      <li><h3><a href="/p/Lum1104/dsh-browser/" translate="no">Lum1104/dsh-browser</a><span class="stars" translate="no">★ 96</span></h3><a class="desc-link" href="/p/Lum1104/dsh-browser/" tabindex="-1"><p>Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.</p></a></li>
+      <li><h3><a href="/p/liustack/modsearch/" translate="no">liustack/modsearch</a><span class="stars" translate="no">★ 93</span></h3><a class="desc-link" href="/p/liustack/modsearch/" tabindex="-1"><p>Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).</p></a></li>
+      <li><h3><a href="/p/taxueseek/argo/" translate="no">taxueseek/argo</a><span class="stars" translate="no">★ 70</span></h3><a class="desc-link" href="/p/taxueseek/argo/" tabindex="-1"><p>Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.</p></a></li>
     </ul>
     <a class="morelink" href="/tools/">View the whole category →</a>
   </section>

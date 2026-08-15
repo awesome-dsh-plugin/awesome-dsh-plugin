@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">RAFOLIE/</span><wbr><span class="name">dsh-desktop-windowos#plugin</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 0</b></span>
+        <span>Stars <b>★ 2</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -192,6 +192,7 @@ footer p+p{margin-top:.5rem}
 <p>DSH 插件:安装并启动 <a href="https://github.com/RAFOLIE/dsh-desktop-windowos">dsh-desktop-windowos</a> 桌面壳(DeepSeek Harness 的 Windows 托盘应用)。</p>
 <ul>
 <li>插件激活时自动确保桌面应用就绪:缺失则从 GitHub Releases 下载 exe 到 <code>%LOCALAPPDATA%\Programs\dsh-desktop-windowos\</code>,并在桌面创建/刷新<strong>不带版本号</strong>的快捷方式「DeepSeek Harness」;已存在则跳过下载</li>
+<li>同时在桌面创建/刷新 <code>.url</code> 快捷方式「DeepSeek Harness Web」,用默认浏览器打开 DSH 前端(默认 <code>http://127.0.0.1:3080</code>);exe 已安装时复用其鲸鱼图标</li>
 <li>注册 <code>desktop_launch</code> 工具:对话里说&quot;打开桌面应用&quot;即可安装并拉起, agent 可直接调用</li>
 <li>安装/下载失败不影响 DSH 启动,错误只记录日志,下次激活或调用工具时重试</li>
 </ul>
@@ -216,7 +217,12 @@ footer p+p{margin-top:.5rem}
 <tr>
 <td>createShortcut</td>
 <td>true</td>
-<td>创建桌面快捷方式</td>
+<td>创建桌面应用快捷方式</td>
+</tr>
+<tr>
+<td>createWebShortcut</td>
+<td>true</td>
+<td>创建前端 Web 快捷方式(.url)</td>
 </tr>
 <tr>
 <td>installDir</td>
@@ -229,6 +235,16 @@ footer p+p{margin-top:.5rem}
 <td>快捷方式名称(无版本号)</td>
 </tr>
 <tr>
+<td>webShortcutName</td>
+<td>DeepSeek Harness Web</td>
+<td>Web 快捷方式名称(无扩展名)</td>
+</tr>
+<tr>
+<td>webUrl</td>
+<td><a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a></td>
+<td>Web 快捷方式打开的地址</td>
+</tr>
+<tr>
 <td>repoSlug</td>
 <td>RAFOLIE/dsh-desktop-windowos</td>
 <td>exe 的 GitHub Release 来源</td>
@@ -238,6 +254,7 @@ footer p+p{margin-top:.5rem}
 <p>DSH plugin that installs and launches <a href="https://github.com/RAFOLIE/dsh-desktop-windowos">dsh-desktop-windowos</a> — the Windows tray shell for DeepSeek Harness.</p>
 <ul>
 <li>On activation it ensures the desktop app is ready: downloads the exe from GitHub Releases into <code>%LOCALAPPDATA%\Programs\dsh-desktop-windowos</code> when missing and creates/refreshes a version-less desktop shortcut &quot;DeepSeek Harness&quot;; existing installs are left alone</li>
+<li>It also creates/refreshes a &quot;DeepSeek Harness Web&quot; <code>.url</code> desktop shortcut that opens the DSH web UI in the default browser (default <code>http://127.0.0.1:3080</code>), reusing the desktop exe&#39;s whale icon when installed</li>
 <li>Registers the <code>desktop_launch</code> tool — say &quot;open the desktop app&quot; in chat and the agent installs/launches it</li>
 <li>A failed install never blocks DSH startup; errors are logged and retried on next activation or tool call</li>
 </ul>
@@ -263,12 +280,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

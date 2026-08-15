@@ -243,6 +243,10 @@ footer p+p{margin-top:.5rem}
 <li><strong>Safe by default</strong>: credential-shaped lines are rejected at submission and redacted in output; search results are wrapped in  markers (data, not instructions); promotion is human-confirmed; a file lock + atomic writes make concurrent promoters safe.</li>
 <li><strong>dsh first-class</strong>: cordis plugin with memory_search / memory_show / memory_submit / memory_status model tools, graceful degradation when unconfigured.</li>
 <li><strong>Codex / Claude / Hermes integrations</strong>: ready-to-copy AGENTS.md / CLAUDE.md templates and hook examples.</li>
+<li><strong>Hermes-style automation</strong>: runnable <code>integrations/hermes/</code> scripts for
+pre-turn context injection, a daily promotion cron (with hygiene + weekly
+forgetting), and session archiving — plus an optional dependency-free remote
+index server for multi-device search.</li>
 </ul>
 <h3>Quick start (5 steps, no servers, no Hermes)</h3>
 <pre><code># 1. get the code and install the dependency-free core
@@ -252,10 +256,10 @@ pip install -e ./core
 # 2. initialize a vault (creates the full template + config)
 python setup/setup.py init --vault ~/Documents/AgentMemory
 
-# 3. connect your agents (pick any)
+# 3. connect your agents — agent-driven (the only supported way)
+#    install the dsh plugin; on first use, DSH itself wires every agent&#39;s
+#    global instruction file by following docs/AGENT-DEPLOY.md
 dsh plugin --profile web add dsh-unified-agent-memory   # + set vaultPath/UNIFIED_MEMORY_VAULT
-cp AGENTS.md ~/.codex/AGENTS.md                          # Codex
-cp CLAUDE.md ~/.claude/CLAUDE.md                         # Claude Code
 
 # 4. write and read a fact
 memory submit &quot;the staging server runs on 127.0.0.1:8080&quot; --agent alpha
@@ -266,6 +270,60 @@ python -m unified_memory.promoter --review
 python -m unified_memory.promoter --apply
 </code></pre>
 <p>Full guide: <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/DEPLOY.md">docs/DEPLOY.md</a> · Architecture: <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a> · Security: <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/SECURITY.md">docs/SECURITY.md</a></p>
+<h3>Deploy with DSH (agent-driven — the only supported way)</h3>
+<p>Wiring agents into the shared memory is <strong>not</strong> a copy-paste job: each agent&#39;s
+global instruction file has its own format and conventions, so deployment is
+done <strong>by an agent, not by a script</strong>. Because this project is a DeepSeek
+Harness plugin, the deployer is <strong>DSH itself</strong>:</p>
+<ol>
+<li><code>dsh plugin --profile web add dsh-unified-agent-memory</code></li>
+<li>In the next DSH session, call <code>memory_status</code> — on a fresh install it
+prints a deployment notice pointing to
+<a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/AGENT-DEPLOY.md">docs/AGENT-DEPLOY.md</a>.</li>
+<li>Have DSH read that task book and follow it end-to-end: it checks the vault,
+installs the core, then writes the shared memory rules into <strong>each</strong> agent&#39;s
+global instruction file (<code>~/.dsh/AGENTS.md</code>, <code>~/.codex/AGENTS.md</code>,
+<code>~/.claude/CLAUDE.md</code>, and a Hermes-style agent&#39;s behavior file) — tailored
+per agent, idempotent, backed up, verified with <code>selfcheck</code>.</li>
+</ol>
+<p>The task book is fully self-contained (rules, per-agent specs, write
+conventions, step-by-step flow, verification checklist, pitfalls) so DSH does
+not need to ask anything — it only confirms a few deployment decisions if they
+cannot be inferred from the environment:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Decision</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Who is the <strong>main agent</strong> (owns the daily promotion cron)?</td>
+<td>Hermes if present, else the deploying agent</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Index on <strong>local machine or remote server</strong>?</td>
+<td>local machine</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Promotion <strong>human-confirmed or fully automatic</strong>?</td>
+<td>human-confirmed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Which <strong>agents to connect</strong> (dsh / Codex / Claude / Hermes)?</td>
+<td>every detected agent</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Not using DSH? A generic AI coding agent can also deploy — copy the prompt
+from <a href="https://github.com/Noelune/unified-agent-memory/blob/main/docs/AGENT-DEPLOY-PROMPT.md">docs/AGENT-DEPLOY-PROMPT.md</a>, paste it
+with this repo URL into any agent, and answer the 4 questions it asks.</p>
+</blockquote>
 <h3>Repository layout</h3>
 <table>
 <thead>
@@ -333,12 +391,12 @@ python -m unified_memory.promoter --apply
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
+      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
       <li><h3><a href="/p/LoserFox/distill/" translate="no">LoserFox/distill</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/p/LoserFox/distill/" tabindex="-1"><p>Automatic conversation distillation: background subagent reflection + skill create/update.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-mnemon/" translate="no">omdsh-dev/dsh-mnemon</a><span class="stars" translate="no">★ 14</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-mnemon/" tabindex="-1"><p>Deep Mnemon integration: local three-tier memory (Runtime Memory, retrievable Documents, supervised Memory Spaces).</p></a></li>
-      <li><h3><a href="/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 8</span></h3><a class="desc-link" href="/p/modusensus/dsh-mneme/" tabindex="-1"><p>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</p></a></li>
+      <li><h3><a href="/p/modusensus/dsh-mneme/" translate="no">modusensus/dsh-mneme</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/p/modusensus/dsh-mneme/" tabindex="-1"><p>Cross-session memory: SQLite with a human-editable Markdown mirror, background consolidation (dedup, merge, conflict resolution), and six memory tools.</p></a></li>
       <li><h3><a href="/p/nowledge-co/nowledge-mem-deepseek-harness/" translate="no">nowledge-co/nowledge-mem-deepseek-harness</a><span class="stars" translate="no">★ 5</span></h3><a class="desc-link" href="/p/nowledge-co/nowledge-mem-deepseek-harness/" tabindex="-1"><p>One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.</p></a></li>
+      <li><h3><a href="/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 3</span></h3><a class="desc-link" href="/p/PerryLink/dsh-memento/" tabindex="-1"><p>Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.</p></a></li>
       <li><h3><a href="/p/Jesse-njx/dsh-memory/" translate="no">Jesse-njx/dsh-memory</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/Jesse-njx/dsh-memory/" tabindex="-1"><p>Cited memory over DSH's lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.</p></a></li>
-      <li><h3><a href="/p/PerryLink/dsh-memento/" translate="no">PerryLink/dsh-memento</a><span class="stars" translate="no">★ 2</span></h3><a class="desc-link" href="/p/PerryLink/dsh-memento/" tabindex="-1"><p>Bounded, layered, approval-gated, auditable cross-session memory: a typed `ctx.memory` seam with a zero-dependency SQLite provider, a `memory` tool, and frozen snapshot injection; every write passes the approval gate and stays reconstructable from the session log.</p></a></li>
     </ul>
     <a class="morelink" href="/memory/">View the whole category →</a>
   </section>

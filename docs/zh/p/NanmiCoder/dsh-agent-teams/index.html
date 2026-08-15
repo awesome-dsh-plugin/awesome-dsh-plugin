@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness 插件</p>
       <h1 translate="no"><span class="owner">NanmiCoder/</span><wbr><span class="name">dsh-agent-teams</span></h1>
       <div class="specrow">
-        <span>Star 数 <b>★ 244</b></span>
+        <span>Star 数 <b>★ 252</b></span>
         <span>分类 <a href="/zh/workflow/">工作流与自动化</a></span>
         <span>收录于 <b>2026-08-13</b></span>
       </div>
@@ -189,82 +189,125 @@ footer p+p{margin-top:.5rem}
   <section class="panel readme">
     <h2>README</h2>
     <div class="md" translate="no">
-<p><a href="https://www.npmjs.com/package/@nanmicoder/dsh-agent-teams"><img src="https://img.shields.io/npm/v/@nanmicoder/dsh-agent-teams.svg" alt="npm"></a>
-<a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@nanmicoder/dsh-agent-teams.svg" alt="license"></a></p>
-<p>DeepSeek Harness 的 AgentTeams 插件：安装后，任何会话只需一句自然语言（例如&quot;用 AgentTeams 调研一下 XX&quot;），即可驱动一个<strong>多智能体团队</strong>协作完成目标，并在 Web GUI 右上角实时看到团队活动面板。</p>
-<p>核心语义移植自 Claude Code 的 AgentTeams：<strong>创建团队</strong>（队长 = 当前会话 agent）→ <strong>拉成员</strong>（可续聊子代理）→ <strong>拆任务并声明依赖</strong> → <strong>成员间直接收发消息</strong>（邮箱直达 + 唤醒，无队长中转）。</p>
-<h3>界面预览</h3>
-<p><img src="https://raw.githubusercontent.com/NanmiCoder/dsh-agent-teams/main/assets/ui.png" alt="AgentTeams 活动面板"></p>
+<h3>一句话，拉起一支真正协作的团队</h3>
+<p><code>dsh-agent-teams</code> 让当前 DeepSeek Harness 会话成为队长：创建可续聊的子 Agent、把目标拆成有依赖的任务，并通过直达消息协调成员工作。</p>
+<p>你只需用自然语言提出目标。插件会提供团队协议、9 个协作工具、持久化状态和实时 Web UI，不需要额外的 Workflow 引擎。</p>
+<h3>为什么需要 AgentTeams？</h3>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>带来的变化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>队长式委派</strong></td>
+<td>当前会话负责建队、分配角色并汇总最终结果。</td>
+</tr>
+<tr>
+<td><strong>可续聊成员</strong></td>
+<td>成员是可持续唤醒的 DSH 子 Agent，可以继续执行聚焦的后续轮次。</td>
+</tr>
+<tr>
+<td><strong>带依赖的任务</strong></td>
+<td>任务有明确状态；依赖未完成时不能领取。</td>
+</tr>
+<tr>
+<td><strong>成员直达消息</strong></td>
+<td>成员通过持久化邮箱直接联系队友或队长，不需要队长中转。</td>
+</tr>
+<tr>
+<td><strong>实时活动面板</strong></td>
+<td>Web UI 展示角色、当前工作、未读消息、任务依赖和归档历史。</td>
+</tr>
+</tbody></table>
 <h3>安装</h3>
-<p><strong>前置要求</strong>：已安装 <a href="https://github.com/deepseek-ai/DeepSeek-Harness">DeepSeek Harness</a>（<code>dsh</code> 命令可用）；Node.js <code>^22.19</code> 或 <code>&gt;=24</code>；pnpm 11。</p>
-<p>插件已发布到 npm（<code>@nanmicoder</code> scope），一条命令装好：</p>
+<blockquote>
+<p>[!NOTE]
+使用前请确保已安装 <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a>。</p>
+</blockquote>
+<p>任选一种插件来源。</p>
+<h4>npm</h4>
 <pre><code class="language-sh">dsh plugin --profile web add @nanmicoder/dsh-agent-teams
 </code></pre>
-<p><code>dsh plugin</code> 会把插件加入 <code>web</code> profile，并根据包内的 <code>dsh.bundle</code> 声明自动启用它；工具、系统提示和 Web 客户端入口随该 profile 一起加载。</p>
+<h4>GitHub <code>main</code></h4>
+<pre><code class="language-sh">dsh plugin --profile web add &#39;git+https://github.com/NanmiCoder/dsh-agent-teams.git#main&#39;
+</code></pre>
+<p>检查组合配置、重启 DSH，然后刷新 Web UI：</p>
+<pre><code class="language-sh">dsh --profile web --dump-config
+dsh web
+</code></pre>
+<p>接着直接用自然语言拉团队：</p>
 <blockquote>
-<p><strong>重启生效</strong>：安装完成后，重启正在运行的 DeepSeek Harness Web 服务并刷新页面。</p>
+<p>使用 AgentTeams 审查 v0.5.3 之后的提交，分别从性能、安全和产品角度分工，最后输出一份汇总报告。</p>
 </blockquote>
-<p>装好后可以用 <code>dsh plugin --profile web list</code> 确认插件在列表里。升级用同一条 add 命令即可。</p>
-<h4>其他安装方式</h4>
-<p><strong>指定版本</strong>——<code>latest</code> 的解析可能受 registry 缓存影响（国内镜像源同步新版本通常有延迟），想钉死版本时：</p>
-<pre><code class="language-sh">dsh plugin --profile web add @nanmicoder/dsh-agent-teams@&lt;version&gt;
+<h3>工作方式</h3>
+<ol>
+<li>当前会话创建团队并成为队长。</li>
+<li>队长按角色添加由可续聊子 Agent 驱动的成员。</li>
+<li>目标被拆成有负责人和显式依赖的任务。</li>
+<li>任务领取后，通过持久化邮箱投递并唤醒对应成员。</li>
+<li>成员执行任务、更新状态，并直接向队长或其他成员汇报。</li>
+<li>队长汇总结果，随后归档完整团队记录。</li>
+</ol>
+<p>团队状态保存在 <code>&lt;workspace&gt;/.agent-teams/</code>；Web 面板读取这份磁盘真相，并与实时子 Agent 活动合并展示。</p>
+<h3>配置</h3>
+<p>默认配置可以直接使用。受信任的 Profile 可以覆盖成员行为：</p>
+<pre><code class="language-yaml">- id: agent-teams
+  config:
+    stateDir: .agent-teams
+    memberProvider: spawn
+    memberModel: deepseek-v4
+    memberMaxDepth: 1
+    maxMembers: 8
 </code></pre>
-<p>版本号见 <a href="https://www.npmjs.com/package/@nanmicoder/dsh-agent-teams?activeTab=versions">npm 发布页</a>。</p>
-<p><strong>还没装 DSH，或不想全局安装</strong>——用 <code>npx</code> 直接跑，无需预装：</p>
-<pre><code class="language-sh">npx -p @deepseek-ai/dsh dsh plugin --profile web add @nanmicoder/dsh-agent-teams
-</code></pre>
-<p><strong>从 GitHub 安装</strong>——想用尚未发布到 npm 的最新提交：</p>
-<pre><code class="language-sh">dsh plugin --profile web add github:NanmiCoder/dsh-agent-teams
-</code></pre>
-<p><strong>从源码安装</strong>——要改插件本身，或参与开发：</p>
-<pre><code class="language-sh">git clone https://github.com/NanmiCoder/dsh-agent-teams.git
-cd dsh-agent-teams
-pnpm install
-pnpm build
-dsh plugin --profile web add &quot;link:$(pwd)&quot;
-</code></pre>
-<p><code>link:</code> 安装后，改完代码跑 <code>pnpm build</code> 即时生效，不必重装插件（客户端改动需刷新页面，host 侧改动需重启 dsh 服务）。提交前跑 <code>pnpm verify</code> 做离线校验。</p>
-<h3>使用</h3>
-<p>安装并重启后，直接对助手说：</p>
-<blockquote>
-<p>用 AgentTeams 帮我调研一下开源 RAG 框架的选型，输出对比报告</p>
-</blockquote>
-<p>插件内置提示段会指导模型按协议执行：建团队 → 按角色拉成员 → 拆任务声明依赖 → 领取并唤醒成员 → 轮询收集产出 → 汇报后删除（归档保留）。</p>
-<h3>开发 Skill</h3>
-<p>仓库按开放 Agent Skills 规范提供 <a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/skills/dsh-plugin-development/SKILL.md"><code>dsh-plugin-development</code></a>，可直接安装：</p>
+<h3>使用边界</h3>
+<ul>
+<li>一个队长同一时间只能带一个活动团队。</li>
+<li>成员被唤醒后才行动；参与者空闲时，消息会持久保存在邮箱中。</li>
+<li>状态使用文件持久化，并在单个 DSH 进程内串行操作；多个进程同时修改同一团队不保证一致。</li>
+<li>活动面板如实展示持久化状态；模型偶尔可能完成工作却没有按协议更新任务状态。</li>
+</ul>
+<p>完整工具列表、状态模型、Web UI 行为、配置与已知限制见 <a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/usage.md">docs/usage.md</a>。</p>
+<h3>插件开发 Skill</h3>
+<p>仓库同时提供开放 Agent Skills 包 <a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/skills/dsh-plugin-development/SKILL.md"><code>dsh-plugin-development</code></a>：</p>
 <pre><code class="language-sh">npx skills add NanmiCoder/dsh-agent-teams --skill dsh-plugin-development
 </code></pre>
-<p><code>skills/dsh-plugin-development/</code> 是唯一权威源码；<code>.dsh/skills/</code> 保存供 DSH 在本仓库作为 cwd 时自动发现的跨平台镜像。修改 Skill 后运行 <code>pnpm sync:skill</code>，<code>pnpm verify</code> 会检查镜像没有漂移。</p>
 <h3>文档</h3>
 <table>
 <thead>
 <tr>
-<th>文档</th>
+<th>指南</th>
 <th>内容</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/usage.md">docs/usage.md</a></td>
-<td>工作原理、Web UI 行为、工具一览、配置、已知限制、验证</td>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/usage.md">使用指南</a></td>
+<td>架构、UI 行为、工具、配置、限制与验证</td>
 </tr>
 <tr>
-<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/verification-guide.md">docs/verification-guide.md</a></td>
-<td>四层验证方法（离线 / 组合 / 真实 e2e / ego-browser GUI）</td>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/verification-guide.md">验证指南</a></td>
+<td>离线、组合、真实 e2e 与 GUI 验证</td>
 </tr>
 <tr>
-<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/skills/dsh-plugin-development/SKILL.md">skills/dsh-plugin-development/SKILL.md</a></td>
-<td>可通过 <code>npx skills</code> 安装的 DSH 插件开发 Skill</td>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/developing-dsh-plugins.md">插件开发</a></td>
+<td>基于本插件整理的人类可读开发指南</td>
 </tr>
 <tr>
-<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/developing-dsh-plugins.md">docs/developing-dsh-plugins.md</a></td>
-<td>面向人类阅读的开发指南（本插件为样例）</td>
+<td><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/readme-writing-guide.md">README 写作</a></td>
+<td>仓库文档约定</td>
 </tr>
 </tbody></table>
-<h3>License</h3>
-<p>MIT</p>
+<h3>开发</h3>
+<pre><code class="language-sh">pnpm install
+pnpm build
+pnpm verify
+</code></pre>
+<h3>许可证</h3>
+<p><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/LICENSE">MIT</a></p>
 
     </div>
-    <p class="note"><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+    <p class="note"><a href="https://github.com/NanmiCoder/dsh-agent-teams/blob/main/README_ZH.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
   </section>
 
   <section class="panel">
@@ -280,9 +323,9 @@ dsh plugin --profile web add &quot;link:$(pwd)&quot;
     <ul class="rel">
       <li><h3><a href="/zh/p/icetomoyo/dsh_workflow/" translate="no">icetomoyo/dsh_workflow</a><span class="stars" translate="no">★ 54</span></h3><a class="desc-link" href="/zh/p/icetomoyo/dsh_workflow/" tabindex="-1"><p>把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。</p></a></li>
       <li><h3><a href="/zh/p/btspoony/mstar-harness/" translate="no">btspoony/mstar-harness</a><span class="stars" translate="no">★ 43</span></h3><a class="desc-link" href="/zh/p/btspoony/mstar-harness/" tabindex="-1"><p>技能驱动的 harness/loop 工程化工作流插件。</p></a></li>
-      <li><h3><a href="/zh/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 31</span></h3><a class="desc-link" href="/zh/p/titanwings/dsh-automation/" tabindex="-1"><p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p></a></li>
-      <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><span class="stars" translate="no">★ 15</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p></a></li>
-      <li><h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>自适应深度研究编排器（基于官方 workflow 引擎）。</p></a></li>
+      <li><h3><a href="/zh/p/titanwings/dsh-automation/" translate="no">titanwings/dsh-automation</a><span class="stars" translate="no">★ 33</span></h3><a class="desc-link" href="/zh/p/titanwings/dsh-automation/" tabindex="-1"><p>定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。</p></a></li>
+      <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" translate="no">whyihaveyou/dsh-suite#plugin-team-board</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-team-board/" tabindex="-1"><p>多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-deep-research/" translate="no">omdsh-dev/dsh-deep-research</a><span class="stars" translate="no">★ 10</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-deep-research/" tabindex="-1"><p>自适应深度研究编排器（基于官方 workflow 引擎）。</p></a></li>
       <li><h3><a href="/zh/p/biociao/dsh-science/" translate="no">biociao/dsh-science</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/biociao/dsh-science/" tabindex="-1"><p>面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。</p></a></li>
     </ul>
     <a class="morelink" href="/zh/workflow/">查看整个分类 →</a>

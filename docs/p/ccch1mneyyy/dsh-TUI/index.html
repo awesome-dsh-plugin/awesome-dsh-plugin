@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">ccch1mneyyy/</span><wbr><span class="name">dsh-TUI</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 876</b></span>
+        <span>Stars <b>★ 903</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -224,24 +224,25 @@ cost and memory from growing without limit.</li>
 <h3>Quick Start</h3>
 <p>Prerequisites: an interactive terminal TTY, the official <code>dsh</code> CLI, and
 <code>pnpm</code> 10+. Model requests also require <code>DEEPSEEK_API_KEY</code>.</p>
-<pre><code class="language-sh"># 1. Install the DeepSeek Harness CLI
-npm install -g @deepseek-ai/dsh
+<pre><code class="language-sh"># 1. Install the CLI and this plugin globally (ships the dsh-tui command)
+npm install -g @deepseek-ai/dsh @deepseek-harness-tui/dsh-tui
 
-# 2. Add the dsh-TUI profile plugin
-dsh plugin --profile cc-tui add dsh-cc-tui
-
-# 3. Start it
-dsh --profile cc-tui
+# 2. Start it (first run auto-initializes the dsh-tui profile; needs pnpm)
+dsh-tui
 </code></pre>
-<p>The repository&#39;s <code>sh install.sh</code> wraps step 2 and checks the required commands.
-Windows users can also launch with <code>dsh-cc.cmd</code>; passing <code>--resume</code> restores the
-most recently selected session.</p>
+<p>Manual alternative: <code>dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui</code>
+(the repository&#39;s <code>sh install.sh</code> wraps this step and checks the required
+commands), then <code>dsh-tui</code> and <code>dsh --profile dsh-tui</code> are equivalent.</p>
+<p><code>dsh-tui --resume</code> restores the most recently selected session; on Windows
+the repository&#39;s <code>dsh-tui.cmd</code> works the same way.</p>
 <p>See <a href="https://github.com/ccch1mneyyy/dsh-TUI/blob/main/docs/getting-started.en.md">Getting started</a> for profile composition,
 source builds, and troubleshooting.</p>
-<p>Inside the TUI, <code>/update</code> updates the installed <code>dsh-cc-tui</code> package and
-automatically restarts into the current session.</p>
+<p>Inside the TUI, <code>/update</code> updates the installed
+<code>@deepseek-harness-tui/dsh-tui</code> package and automatically restarts into the current session.</p>
 <p>The TUI also checks npm for updates in the background after startup. The check
 never blocks the first frame and silently ignores offline or registry errors.</p>
+<p>For migration from the former <code>dsh-cc-tui</code> package and <code>cc-tui</code> profile, see
+<a href="https://github.com/ccch1mneyyy/dsh-TUI/blob/main/docs/getting-started.en.md#migrate-from-the-former-package">Getting started</a>.</p>
 <h3>Documentation</h3>
 <table>
 <thead>
@@ -332,12 +333,12 @@ early user-built extensions. <a href="https://github.com/ccch1mneyyy/dsh-TUI/blo
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 73</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-genui/" translate="no">omdsh-dev/dsh-genui</a><span class="stars" translate="no">★ 76</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-genui/" tabindex="-1"><p>Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

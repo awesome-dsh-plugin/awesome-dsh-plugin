@@ -168,7 +168,7 @@ footer p+p{margin-top:.5rem}
       <p class="kicker">DeepSeek Harness Plugin</p>
       <h1 translate="no"><span class="owner">Fishsb/</span><wbr><span class="name">dsh-prompt-enhancer</span></h1>
       <div class="specrow">
-        <span>Stars <b>★ 1</b></span>
+        <span>Stars <b>★ 2</b></span>
         <span>Category <a href="/ui/">UI Enhancements</a></span>
         <span>Added <b>2026-08-14</b></span>
       </div>
@@ -190,35 +190,36 @@ footer p+p{margin-top:.5rem}
     <h2>README</h2>
     <div class="md" translate="no">
 <p>A prompt-enhancement plugin for <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> (DSH): type a rough prompt, click ✨, and an independent LLM call rewrites it into a stronger prompt — directly in the composer, fully undoable.</p>
+<p><a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases"><img src="https://img.shields.io/github/v/release/Fishsb/dsh-prompt-enhancer" alt="Release"></a>
+<a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases"><img src="https://img.shields.io/github/release-date/Fishsb/dsh-prompt-enhancer" alt="Release date"></a>
+<a href="https://github.com/Fishsb/dsh-prompt-enhancer/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Fishsb/dsh-prompt-enhancer" alt="License"></a>
+<a href="https://github.com/Fishsb/dsh-prompt-enhancer"><img src="https://img.shields.io/github/stars/Fishsb/dsh-prompt-enhancer" alt="Stars"></a></p>
 <h3>Features</h3>
 <ul>
-<li>✨ <strong>One-click enhance</strong> — independent LLM call replaces the draft in place</li>
+<li>✨ <strong>One-click enhance</strong> — an independent LLM call replaces the draft in place</li>
 <li>↩️ <strong>Undo anytime</strong> — restore the original with one click; manually editing the draft exits undo (undo also clears the previous memory pair)</li>
-<li>⏹️ <strong>True cancel</strong> — click during enhancement aborts and restores the draft (AbortSignal propagated)</li>
+<li>⏹️ <strong>True cancel</strong> — click during enhancement aborts and restores the draft</li>
 <li>🛡️ <strong>Guards</strong> — empty input / slash commands / submitting states are handled; <code>/cmd body</code> optimizes only the body, keeping the prefix</li>
 <li>🌐 <strong>i18n</strong> — follows the DSH interface language (中文 / English)</li>
-<li>🎛️ <strong>4 modes (v2.2.0)</strong> — Basic (direct, fastest) / Lite (local rule analysis) / Standard (rules + workspace &amp; session retrieval injection) / Smart (LLM task-progress analysis + full retrieval)</li>
-<li>🧠 <strong>Independent memory switch (v2.2.0)</strong> — available in every mode; when on, the previous optimization pair is injected into the next round (first run falls back to Lite automatically); when off, memory is never read or written; memory is written while on and cleared on undo</li>
-<li>🔀 <strong>Combined stacking</strong> — mode context block + memory block can inject together (memory takes budget first, ≤1200 chars; the mode block uses the remainder)</li>
-<li>🔄 <strong>Automatic config migration</strong> — v2.1 <code>mode:&#39;memory&#39;</code> / <code>autoMemory</code> migrate to <code>mode:&#39;lite&#39;</code> + <code>memory:true</code>; an explicit <code>memory</code> field takes precedence (including <code>false</code>)</li>
-<li>🧪 <strong>Unit-tested</strong> — host pure-function tests (node:test, 38/38 passing) slice the PURE section, so tests run the very code that is shipped</li>
-<li>🚀 <strong>Version check &amp; one-click update (v2.4.0)</strong> — a new card at the top of the plugin-management page checks any public GitHub repo (default: this one) against the local version (remote tags are the source of truth); when a newer version exists, pull the 6 release files into a target directory with one click (default <code>&lt;workspace&gt;/dsh-prompt-enhancer-&lt;tag&gt;/</code>, configurable &amp; persisted), then apply via the on-screen instructions (bundle <code>dsh plugin update</code> / dynamic re-define / script copy). A running plugin cannot replace itself — pull ≠ apply</li>
-<li>🔤 <strong>Composer font parity (v2.4.0)</strong> — the ✨ button&#39;s idle / busy / undo text is explicitly anchored at 13px/500/20px, matching the composer model selector; the distribution copy has been upgraded (it previously lagged at v2.1.0)</li>
+<li>🎛️ <strong>4 optimization modes</strong> — Basic (direct, fastest) / Lite (local rules) / Standard (rules + workspace &amp; session retrieval) / Smart (LLM task-progress analysis + full retrieval)</li>
+<li>🧠 <strong>Independent memory switch</strong> — when on, the previous optimization pair is injected into the next round; when off, nothing is read or written; cleared on undo</li>
+<li>📊 <strong>Live progress</strong> — the button shows the current stage while optimizing (Preparing… → Optimizing…), hover switches to a red &quot;Cancel&quot;, constant width with no flicker</li>
+<li>📏 <strong>Visual parity</strong> — button font (DengXian) / weight / pill shape / gray label / darker hover ellipse match the DSH model selector</li>
+<li>🚀 <strong>Version check &amp; one-click update</strong> — built-in updater detects new versions and pulls the release files (<a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases">Releases</a>)</li>
+<li>🧪 <strong>Unit-tested</strong> — host pure-function tests (node:test) slice the PURE section, so tests run the shipped code</li>
 </ul>
+<h3>Screenshots</h3>
+<p><img src="https://raw.githubusercontent.com/Fishsb/dsh-prompt-enhancer/main/docs/screenshots/settings-v2.4.3.png" alt="Settings panel"></p>
 <h3>Install</h3>
 <h4>Option 1: bundle one-click install (recommended)</h4>
 <pre><code class="language-sh">dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer
 </code></pre>
-<p>Restart DSH (<code>dsh web</code>) after installing — the ✨ button appears in the composer toolbar. Update with <code>dsh plugin --profile web update dsh-prompt-enhancer</code>, remove with <code>dsh plugin --profile web remove dsh-prompt-enhancer</code>.</p>
+<p>Restart DSH (<code>dsh web</code>) after installing — the ✨ button appears in the composer toolbar. Update / remove:</p>
+<pre><code class="language-sh">dsh plugin --profile web update dsh-prompt-enhancer
+dsh plugin --profile web remove dsh-prompt-enhancer
+</code></pre>
 <h4>Option 2: dynamic Cordis install</h4>
-<p>Dynamic Cordis plugin (host + client halves), installed inside a DSH session via the cordis toolchain:</p>
-<ol>
-<li>Ask the agent in a DSH session to read <code>plugin-host.js</code> (host half) and <code>plugin-client.js</code> (client half) from this repo</li>
-<li>Define the plugin with <code>cordis_define</code>: fill <code>code.host</code> with plugin-host.js and <code>code.client</code> with plugin-client.js (new plugin: <code>plugin.kind: &#39;new&#39;</code>); it returns <code>pluginId</code> / <code>packageId</code></li>
-<li>Run it with <code>cordis_run</code> (mode: <code>run</code>)</li>
-<li>The first client-half run requires browser approval</li>
-<li>After approval, the ✨ button appears in the composer toolbar</li>
-</ol>
+<p>In a DSH session, ask the agent to read <code>plugin-host.js</code> (host half) and <code>plugin-client.js</code> (client half) from this repo, define the plugin with <code>cordis_define</code> (<code>plugin.kind: &#39;new&#39;</code>), then <code>cordis_run</code> (mode: <code>run</code>). The first client-half run requires browser approval.</p>
 <blockquote>
 <p>Note: the dynamic client half is attached to the page connection active at activation time; a page refresh unloads it — just <code>cordis_run</code> again to restore.</p>
 </blockquote>
@@ -229,13 +230,10 @@ footer p+p{margin-top:.5rem}
 3. cordis_run the returned pluginId/packageId (mode: run)
 4. Wait for me to approve in the browser
 </code></pre>
-<blockquote>
-<p>Bundle distribution (<code>dsh plugin add</code> one-click install) is supported — see Option 1 above.</p>
-</blockquote>
 <h3>Usage</h3>
 <ol>
-<li>Type any non-empty, non-slash-command text</li>
-<li>Click the <strong>✨</strong> button (or press Enter while focused)</li>
+<li>Type any non-empty text (slash commands keep their prefix; only the body is optimized)</li>
+<li>Click the <strong>✨</strong> button</li>
 <li>Wait for the independent LLM call; the draft is replaced with the enhanced version</li>
 <li>Not satisfied? Click <strong>✓ Optimized · Undo</strong> to restore the original</li>
 </ol>
@@ -258,7 +256,7 @@ footer p+p{margin-top:.5rem}
 </tr>
 <tr>
 <td>Context budget</td>
-<td>0 / 2000 / 4000 / 8000 chars; 0 = no context injection (equivalent to Basic); the memory block is budget-constrained too</td>
+<td>0 / 2000 / 4000 / 8000 chars; 0 = no context injection (memory block is budget-constrained too)</td>
 </tr>
 <tr>
 <td>Timeout / Max tokens / Output limit</td>
@@ -270,16 +268,20 @@ footer p+p{margin-top:.5rem}
 </tr>
 </tbody></table>
 <p>The model chain lives in the &quot;Models&quot; tab: tried in order, reorderable, per-entry thinking toggle &amp; level, inline connectivity test, restore defaults.</p>
+<h3>Changelog</h3>
+<p>Per-version release notes live on <a href="https://github.com/Fishsb/dsh-prompt-enhancer/releases">GitHub Releases</a>; the full history is in <a href="https://github.com/Fishsb/dsh-prompt-enhancer/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</p>
 <h3>Privacy</h3>
 <ul>
 <li><strong>Mode context</strong>: on demand, injects &quot;recent session messages + relevant workspace file snippets + related session fragments&quot;, bounded by the budget; sensitive files (.env / keys / credentials / logs, etc.) are hard-filtered and never injected</li>
-<li><strong>Memory</strong>: only a boolean seen-marker lives in browser localStorage (<code>dsh.enhance.seen.*</code>, no content); the memory pair itself lives only in the current page&#39;s memory; turning the switch off stops all reads/writes</li>
+<li><strong>Memory</strong>: only a boolean seen-marker lives in browser localStorage (no content); the memory pair lives only in the current page&#39;s memory; turning the switch off stops all reads/writes</li>
 <li>The plugin itself records or reports nothing; diagnostics logs contain only metadata (mode, latency, etc.)</li>
 <li>Enhanced results come from an external LLM — verify before sending; after cancellation the underlying request may still run briefly on the provider side</li>
 </ul>
 <h3>Compatibility</h3>
 <ul>
 <li>Depends on DSH runtime-injected APIs (<code>llm</code> / <code>slots</code> / <code>harness</code> / <code>inputActions</code> / <code>sessionQuery</code> / <code>fs</code>), which may change across DSH releases</li>
+<li><strong>Version check &amp; one-click update</strong>: the browser talks to <code>api.github.com</code> directly (CORS-enabled; the host needs no outbound network). Restricted networks must let the browser reach GitHub (proxy etc.)</li>
+<li><strong>Built-in fallback model chain</strong>: points at the official DeepSeek provider (<code>deepseek-official</code>); using it requires a DeepSeek API key. Without one, configure a model chain under &quot;Models &amp; plugins&quot; — a fresh install inherits the current model automatically, so manual setup is usually unnecessary</li>
 <li>Use a recent DeepSeek Harness</li>
 </ul>
 <h3>License</h3>
@@ -300,12 +302,12 @@ footer p+p{margin-top:.5rem}
   <section class="panel">
     <h2>More in this category</h2>
     <ul class="rel">
-      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1880</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
-      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 876</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 740</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
-      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 132</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
-      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 126</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
-      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 82</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
+      <li><h3><a href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.</p></a></li>
+      <li><h3><a href="/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.</p></a></li>
+      <li><h3><a href="/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.</p></a></li>
+      <li><h3><a href="/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>A terminal UI (TUI) for DeepSeek Harness.</p></a></li>
+      <li><h3><a href="/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.</p></a></li>
     </ul>
     <a class="morelink" href="/ui/">View the whole category →</a>
   </section>

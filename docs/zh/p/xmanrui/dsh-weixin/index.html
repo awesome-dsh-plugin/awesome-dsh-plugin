@@ -1,0 +1,305 @@
+<!doctype html>
+<!-- Plugin detail page template (design B). Tokens shared with template.html — keep the :root blocks in sync. -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xmanrui/dsh-weixin — 通知与集成 · DeepSeek Harness 插件</title>
+<meta name="description" content="通过微信扫码把微信机器人接入 DeepSeek Harness。">
+<link rel="canonical" href="https://awesome-dsh-plugin.com/zh/p/xmanrui/dsh-weixin/">
+<link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/xmanrui/dsh-weixin/">
+<link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/xmanrui/dsh-weixin/">
+<link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/xmanrui/dsh-weixin/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xmanrui/dsh-weixin — 通知与集成 · DeepSeek Harness 插件">
+<meta property="og:description" content="通过微信扫码把微信机器人接入 DeepSeek Harness。">
+<meta property="og:url" content="https://awesome-dsh-plugin.com/zh/p/xmanrui/dsh-weixin/">
+<meta property="og:image" content="https://awesome-dsh-plugin.com/og-zh.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"xmanrui/dsh-weixin","url":"https://awesome-dsh-plugin.com/zh/p/xmanrui/dsh-weixin/","description":"通过微信扫码把微信机器人接入 DeepSeek Harness。","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/xmanrui/dsh-weixin"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"全部插件","item":"https://awesome-dsh-plugin.com/zh/"},{"@type":"ListItem","position":2,"name":"通知与集成","item":"https://awesome-dsh-plugin.com/zh/notify/"},{"@type":"ListItem","position":3,"name":"xmanrui/dsh-weixin","item":"https://awesome-dsh-plugin.com/zh/p/xmanrui/dsh-weixin/"}]}]</script>
+<style>
+:root{
+  --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
+  --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
+  --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
+  --on-cinnabar:#ffffff;
+  --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#211d18; --paper-2:#282218; --card:#2a2620; --line:#3b352c; --line-2:#4c4436;
+    --ink:#ece7de; --ink-2:#b5ac9e; --ink-3:#8f8678;
+    --cinnabar:#e06a52; --cinnabar-deep:#ea8069; --cinnabar-soft:rgba(224,106,82,.13); --cinnabar-border:rgba(224,106,82,.35);
+    --on-cinnabar:#211d18;
+  }
+}
+*{box-sizing:border-box;margin:0}
+::selection{background:var(--cinnabar-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
+.wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+
+nav.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:1.4rem;height:3.6rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.95rem}
+.logo svg g{fill:var(--ink)}
+.logo svg .plug-block{fill:var(--cinnabar)}
+.nav-links{display:flex;gap:1.2rem;margin-left:auto;font-size:.86rem;color:var(--ink-2);align-items:center}
+.nav-links a:hover{color:var(--cinnabar)}
+.lang-btn{font-size:.82rem;color:var(--ink-3);border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem}
+.lang-btn:hover{color:var(--ink);border-color:var(--line-2)}
+
+header.plate-wrap{
+  background-image:linear-gradient(var(--paper-2) 1px,transparent 1px),linear-gradient(90deg,var(--paper-2) 1px,transparent 1px);
+  background-size:28px 28px;border-bottom:1px solid var(--line);
+}
+.crumbs{display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:center;
+  font-family:var(--mono);font-size:.74rem;color:var(--ink-3);padding-block:.9rem 0}
+.crumbs a{color:var(--cinnabar)}
+.crumbs a:hover{color:var(--cinnabar-deep)}
+.crumbs .sep{color:var(--line-2)}
+.plate{padding-block:1.4rem clamp(1.8rem,5vh,2.6rem)}
+.plate .kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.plate h1{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.12;letter-spacing:-.02em;margin-top:.35rem;text-wrap:balance;overflow-wrap:anywhere}
+.plate h1 .owner{color:var(--ink-3);font-weight:600}
+.plate h1 .name{color:var(--cinnabar)}
+.specrow{display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-family:var(--mono);font-size:.76rem;color:var(--ink-3);margin-top:1rem}
+.specrow b{color:var(--ink-2);font-weight:500}
+.specrow a{color:var(--cinnabar)}
+.specrow a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+
+main{padding-block:clamp(1.6rem,4vh,2.4rem)}
+.desc{font-size:clamp(.98rem,1.7vw,1.08rem);color:var(--ink-2);max-width:46rem;text-wrap:pretty}
+
+.panel{margin-block:clamp(1.6rem,4vh,2.4rem) 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem}
+.panel h2{font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.8rem}
+.cmd{display:flex;align-items:stretch;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:var(--paper)}
+.cmd pre{font-family:var(--mono);font-size:.82rem;line-height:1.9;color:var(--ink);padding:.55rem 1rem;overflow-x:auto;flex:1;margin:0}
+.cmd button{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);background:var(--card);border:none;border-left:1px solid var(--line-2);padding:0 1rem;cursor:pointer;white-space:nowrap;transition:all .15s ease}
+.cmd button:hover,.cmd button.done{color:var(--on-cinnabar);background:var(--cinnabar)}
+.panel .note{font-size:.78rem;color:var(--ink-3);max-width:46rem;text-wrap:pretty}
+.panel .note+.cmd{margin-top:.2rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.links a{font-size:.82rem;font-weight:550;border:1px solid var(--line-2);border-radius:8px;padding:.45rem .95rem;color:var(--ink-2);transition:all .15s ease;background:var(--paper)}
+.links a:hover{color:var(--on-cinnabar);border-color:var(--cinnabar);background:var(--cinnabar)}
+
+ul.rel{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:.8rem}
+ul.rel li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;transition:border-color .15s ease}
+ul.rel li:hover{border-color:var(--line-2)}
+ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:.5rem}
+ul.rel h3 a{overflow-wrap:anywhere}
+ul.rel h3 a:hover{color:var(--cinnabar-deep)}
+ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
+ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
+.morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
+.morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
+footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--cinnabar)}
+footer p+p{margin-top:.5rem}
+@media (max-width:640px){
+  .cmd{flex-direction:column}
+  .cmd button{border-left:none;border-top:1px solid var(--line-2);padding:.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap nav-in">
+  <a class="logo" href="/zh/" translate="no">
+    <svg width="20" height="20" viewBox="76 42 400 400" aria-hidden="true"><g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g><rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" transform="rotate(9 390 122)"/></svg>
+    awesome-dsh-plugin
+  </a>
+  <div class="nav-links">
+    <a class="lang-btn" href="/p/xmanrui/dsh-weixin/" hreflang="en" rel="alternate">EN</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+  </div>
+</div></nav>
+
+<header class="plate-wrap">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="breadcrumb">
+      <a href="/zh/">全部插件</a>
+      <span class="sep">/</span>
+      <a href="/zh/notify/">通知与集成</a>
+      <span class="sep">/</span>
+      <span translate="no">dsh-weixin</span>
+    </nav>
+    <div class="plate">
+      <p class="kicker">DeepSeek Harness 插件</p>
+      <h1 translate="no"><span class="owner">xmanrui/</span><wbr><span class="name">dsh-weixin</span></h1>
+      <div class="specrow">
+        <span>Star 数 <b>★ 0</b></span>
+        <span>分类 <a href="/zh/notify/">通知与集成</a></span>
+        <span>收录于 <b>2026-08-15</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="desc">通过微信扫码把微信机器人接入 DeepSeek Harness。</p>
+
+  <section class="panel">
+    <h2>安装</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add github:xmanrui/dsh-weixin</pre><button type="button" data-cmd="dsh plugin --profile web add github:xmanrui/dsh-weixin" aria-label="复制安装命令">复制安装命令</button></div>
+    <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<p><a href="#%E4%B8%AD%E6%96%87">中文</a> · <a href="#english">English</a></p>
+<h3>中文</h3>
+<p>通过微信扫码，把腾讯微信机器人接入 DeepSeek Harness。插件运行在 <code>dsh web</code> 的 Host 进程内：设置页只负责显示一次性二维码和脱敏状态，扫码得到的 <code>bot_token</code> 直接写入 Harness 凭据服务，随后由 Host 通过腾讯 iLink Bot API 长轮询收消息并把回答发回微信。</p>
+<h4>前提条件</h4>
+<ul>
+<li>DeepSeek Harness <code>0.1.0-rc.6</code>，Node.js <code>&gt;=22.19</code>；</li>
+<li>手机微信账号已获得微信机器人功能。若微信里尚未出现相关入口，请先检查「我 → 设置 → 插件」；该功能由腾讯分批开放，插件代码无法绕过账号侧的开放范围；</li>
+<li>运行 Harness 的设备能够访问 <code>*.weixin.qq.com</code>。</li>
+</ul>
+<h4>安装与扫码绑定</h4>
+<pre><code class="language-bash">npx -y github:xmanrui/dsh-weixin install
+</code></pre>
+<p>安装后重启 <code>dsh web</code>，然后：</p>
+<ol>
+<li>打开「设置 → 插件 → 微信」；</li>
+<li>点击「扫码绑定微信」；</li>
+<li>使用手机微信扫描页面上的二维码，并在手机上确认；</li>
+<li>如果手机显示配对数字，在 Harness 页面输入该数字；</li>
+<li>页面显示“运行正常”后，在微信里向已绑定的机器人发送消息。</li>
+</ol>
+<p>扫码成功后必须同时满足以下条件，页面才会显示在线：</p>
+<ol>
+<li>腾讯 iLink 返回 <code>bot_token</code>、机器人账号 ID、扫码用户 ID 和消息 API 地址；</li>
+<li><code>bot_token</code> 已写入 Harness Host 凭据服务；</li>
+<li>非敏感账号配置已原子保存；</li>
+<li>微信 <code>notifystart</code> 验证通过并启动 <code>getupdates</code> 长轮询；</li>
+<li>插件能访问当前 Harness Host。</li>
+</ol>
+<p>可以重复扫码添加多个微信账号。每个账号拥有独立凭据引用、长轮询、同步游标、消息去重记录和 Harness 会话映射；一个账号重连或移除不会影响其他账号。</p>
+<h4>消息行为</h4>
+<ul>
+<li>只接受扫码确认用户发来的私聊消息，其他用户默认拒绝；</li>
+<li>支持文字，以及微信已经附带文字识别结果的语音；</li>
+<li>当前不把图片、文件、视频或无转写语音送入 Harness；</li>
+<li>每个微信用户映射到持久 Harness 会话，支持连续对话；</li>
+<li><code>/new</code> 清除当前会话映射，<code>/status</code> 检查连接，<code>/help</code> 显示帮助；</li>
+<li>Harness 回答较长时会拆成多条微信文本，每条都沿用入站消息的 <code>context_token</code>。</li>
+</ul>
+<h4>安全设计</h4>
+<ul>
+<li>浏览器永远不会收到或提交 <code>bot_token</code>、二维码内部令牌、扫码用户 ID 或凭据引用；</li>
+<li>Host RPC 仅允许 Harness loopback 页面调用；</li>
+<li><code>bot_token</code> 只保存在 <code>ctx.credentials</code>，非敏感配置位于 <code>$DSH_HOME/integrations/dsh-weixin/config.json</code>；</li>
+<li>微信消息 API 地址必须是 <code>https://weixin.qq.com</code> 或其子域，且只能使用默认 HTTPS 端口，防止授权令牌被发送到任意重定向主机；</li>
+<li>配对数字只保存在当前 Host 内存，绑定完成、取消或失败后立即清除；</li>
+<li>删除账号会停止它自己的长轮询，删除它自己的凭据、配置、同步游标和会话映射。</li>
+</ul>
+<h4>本地开发与验证</h4>
+<pre><code class="language-bash">git clone https://github.com/xmanrui/dsh-weixin.git
+cd dsh-weixin
+npm install
+npm run check
+node bin/dsh-weixin.mjs install --source .
+</code></pre>
+<p>只验证腾讯扫码端点是否仍兼容，而不打印或保存二维码内容：</p>
+<pre><code class="language-bash">npm run verify:protocol
+</code></pre>
+<p>完整人工验收需要在 Harness 设置页完成一次手机扫码，再从微信发送一条测试消息并确认 Harness 回答返回。自动测试覆盖请求头与协议字段、二维码/配对码状态机、凭据回滚、长轮询生命周期、消息上下文、用户授权、RPC 脱敏、多账号删除隔离和客户端输入校验。</p>
+<h4>协议来源与许可</h4>
+<p>微信 iLink 请求格式基于腾讯官方 MIT 项目 <a href="https://github.com/Tencent/openclaw-weixin"><code>Tencent/openclaw-weixin</code></a> 2.4.6 适配；本项目移除了 OpenClaw 运行时依赖，改用 DeepSeek Harness 的 Host RPC、凭据服务和会话 API。具体来源版本见 <a href="https://github.com/xmanrui/dsh-weixin/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>。本项目本身使用 MIT License。</p>
+<h3>English</h3>
+<p>Connect Tencent Weixin bots to DeepSeek Harness through QR-code authorization. The plugin runs inside the <code>dsh web</code> Host process. The browser receives only a one-time QR image and redacted status; the resulting <code>bot_token</code> is written directly to the Harness credential provider.</p>
+<h4>Install</h4>
+<pre><code class="language-bash">npx -y github:xmanrui/dsh-weixin install
+</code></pre>
+<p>Restart <code>dsh web</code>, open <strong>Settings → Plugins → Weixin</strong>, generate a QR code, scan it with Weixin, confirm on the phone, and enter the displayed pairing digits if requested. The account is ready when the page reports a healthy iLink long-poll connection.</p>
+<p>The Weixin bot feature must already be available to the phone account. Tencent rolls out that feature independently; this plugin cannot enable it for an ineligible account.</p>
+<p>The current release supports direct text messages and voice messages that already contain Weixin transcription. It isolates credentials, sync cursors, deduplication, and Harness sessions per account. See the Chinese section for the complete behavior, security model, and verification commands.</p>
+
+    </div>
+    <p class="note"><a href="https://github.com/xmanrui/dsh-weixin/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
+
+  <section class="panel">
+    <h2>链接</h2>
+    <div class="links">
+      <a href="https://github.com/xmanrui/dsh-weixin" rel="noopener">GitHub 仓库 ↗</a>
+      <a href="https://github.com/dsh-market/dsh-market" rel="noopener">通过 dsh-market 安装 ↗</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>同类插件</h2>
+    <ul class="rel">
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-open-in-vscode/" translate="no">omdsh-dev/dsh-open-in-vscode</a><span class="stars" translate="no">★ 40</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-open-in-vscode/" tabindex="-1"><p>从 Web GUI 一键在 VS Code 中打开工作区目录。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-notification/" translate="no">omdsh-dev/dsh-notification</a><span class="stars" translate="no">★ 40</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-notification/" tabindex="-1"><p>回合完成桌面通知，按结果分控 + 关键词过滤。</p></a></li>
+      <li><h3><a href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" translate="no">whyihaveyou/dsh-suite#plugin-notify</a><span class="stars" translate="no">★ 16</span></h3><a class="desc-link" href="/zh/p/whyihaveyou/dsh-suite--packages-plugins-plugin-notify/" tabindex="-1"><p>回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。</p></a></li>
+      <li><h3><a href="/zh/p/bill9109/dsh-web-ui-notify/" translate="no">bill9109/dsh-web-ui-notify</a><span class="stars" translate="no">★ 10</span></h3><a class="desc-link" href="/zh/p/bill9109/dsh-web-ui-notify/" tabindex="-1"><p>桌面通知提醒。</p></a></li>
+      <li><h3><a href="/zh/p/bobleer/dsh-acp-for-bitfun/" translate="no">bobleer/dsh-acp-for-bitfun</a><span class="stars" translate="no">★ 9</span></h3><a class="desc-link" href="/zh/p/bobleer/dsh-acp-for-bitfun/" tabindex="-1"><p>BitFun 与 DSH 的 ACP 交互对接。</p></a></li>
+      <li><h3><a href="/zh/p/openma-ai/deepseek-harness-acp/" translate="no">openma-ai/deepseek-harness-acp</a><span class="stars" translate="no">★ 7</span></h3><a class="desc-link" href="/zh/p/openma-ai/deepseek-harness-acp/" tabindex="-1"><p>ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。</p></a></li>
+    </ul>
+    <a class="morelink" href="/zh/notify/">查看整个分类 →</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。</p>
+  <p>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · 与 DeepSeek 无隶属关系</p>
+</footer>
+
+<script>
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('.cmd button');
+  if (!btn) return;
+  try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
+  btn.classList.add('done');
+  const old = btn.textContent;
+  btn.textContent = '✓';
+  setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
+});
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

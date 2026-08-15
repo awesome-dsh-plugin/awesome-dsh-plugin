@@ -1,0 +1,418 @@
+<!doctype html>
+<!-- Plugin detail page template (design B). Tokens shared with template.html — keep the :root blocks in sync. -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FengHuoLinShan/dsh-plugin-llm-balance — UI 增强 · DeepSeek Harness 插件</title>
+<meta name="description" content="可拖动的 API 余额/配额悬浮卡片：自动显示最近使用的 provider 余额/配额（DeepSeek/Moonshot/Kimi For Coding），按余额分档变色、实时刷新。">
+<link rel="canonical" href="https://awesome-dsh-plugin.com/zh/p/FengHuoLinShan/dsh-plugin-llm-balance/">
+<link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/FengHuoLinShan/dsh-plugin-llm-balance/">
+<link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/FengHuoLinShan/dsh-plugin-llm-balance/">
+<link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/FengHuoLinShan/dsh-plugin-llm-balance/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FengHuoLinShan/dsh-plugin-llm-balance — UI 增强 · DeepSeek Harness 插件">
+<meta property="og:description" content="可拖动的 API 余额/配额悬浮卡片：自动显示最近使用的 provider 余额/配额（DeepSeek/Moonshot/Kimi For Coding），按余额分档变色、实时刷新。">
+<meta property="og:url" content="https://awesome-dsh-plugin.com/zh/p/FengHuoLinShan/dsh-plugin-llm-balance/">
+<meta property="og:image" content="https://awesome-dsh-plugin.com/og-zh.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"FengHuoLinShan/dsh-plugin-llm-balance","url":"https://awesome-dsh-plugin.com/zh/p/FengHuoLinShan/dsh-plugin-llm-balance/","description":"可拖动的 API 余额/配额悬浮卡片：自动显示最近使用的 provider 余额/配额（DeepSeek/Moonshot/Kimi For Coding），按余额分档变色、实时刷新。","applicationCategory":"DeveloperApplication","operatingSystem":"DeepSeek Harness","sameAs":["https://github.com/FengHuoLinShan/dsh-plugin-llm-balance","https://www.npmjs.com/package/dsh-plugin-llm-balance"]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"全部插件","item":"https://awesome-dsh-plugin.com/zh/"},{"@type":"ListItem","position":2,"name":"UI 增强","item":"https://awesome-dsh-plugin.com/zh/ui/"},{"@type":"ListItem","position":3,"name":"FengHuoLinShan/dsh-plugin-llm-balance","item":"https://awesome-dsh-plugin.com/zh/p/FengHuoLinShan/dsh-plugin-llm-balance/"}]}]</script>
+<style>
+:root{
+  --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
+  --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
+  --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
+  --on-cinnabar:#ffffff;
+  --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#211d18; --paper-2:#282218; --card:#2a2620; --line:#3b352c; --line-2:#4c4436;
+    --ink:#ece7de; --ink-2:#b5ac9e; --ink-3:#8f8678;
+    --cinnabar:#e06a52; --cinnabar-deep:#ea8069; --cinnabar-soft:rgba(224,106,82,.13); --cinnabar-border:rgba(224,106,82,.35);
+    --on-cinnabar:#211d18;
+  }
+}
+*{box-sizing:border-box;margin:0}
+::selection{background:var(--cinnabar-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
+.wrap{max-width:62rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+
+nav.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:1.4rem;height:3.6rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.95rem}
+.logo svg g{fill:var(--ink)}
+.logo svg .plug-block{fill:var(--cinnabar)}
+.nav-links{display:flex;gap:1.2rem;margin-left:auto;font-size:.86rem;color:var(--ink-2);align-items:center}
+.nav-links a:hover{color:var(--cinnabar)}
+.lang-btn{font-size:.82rem;color:var(--ink-3);border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem}
+.lang-btn:hover{color:var(--ink);border-color:var(--line-2)}
+
+header.plate-wrap{
+  background-image:linear-gradient(var(--paper-2) 1px,transparent 1px),linear-gradient(90deg,var(--paper-2) 1px,transparent 1px);
+  background-size:28px 28px;border-bottom:1px solid var(--line);
+}
+.crumbs{display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:center;
+  font-family:var(--mono);font-size:.74rem;color:var(--ink-3);padding-block:.9rem 0}
+.crumbs a{color:var(--cinnabar)}
+.crumbs a:hover{color:var(--cinnabar-deep)}
+.crumbs .sep{color:var(--line-2)}
+.plate{padding-block:1.4rem clamp(1.8rem,5vh,2.6rem)}
+.plate .kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.plate h1{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4vw,2.4rem);line-height:1.12;letter-spacing:-.02em;margin-top:.35rem;text-wrap:balance;overflow-wrap:anywhere}
+.plate h1 .owner{color:var(--ink-3);font-weight:600}
+.plate h1 .name{color:var(--cinnabar)}
+.specrow{display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-family:var(--mono);font-size:.76rem;color:var(--ink-3);margin-top:1rem}
+.specrow b{color:var(--ink-2);font-weight:500}
+.specrow a{color:var(--cinnabar)}
+.specrow a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+
+main{padding-block:clamp(1.6rem,4vh,2.4rem)}
+.desc{font-size:clamp(.98rem,1.7vw,1.08rem);color:var(--ink-2);max-width:46rem;text-wrap:pretty}
+
+.panel{margin-block:clamp(1.6rem,4vh,2.4rem) 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem}
+.panel h2{font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.8rem}
+.cmd{display:flex;align-items:stretch;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:var(--paper)}
+.cmd pre{font-family:var(--mono);font-size:.82rem;line-height:1.9;color:var(--ink);padding:.55rem 1rem;overflow-x:auto;flex:1;margin:0}
+.cmd button{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);background:var(--card);border:none;border-left:1px solid var(--line-2);padding:0 1rem;cursor:pointer;white-space:nowrap;transition:all .15s ease}
+.cmd button:hover,.cmd button.done{color:var(--on-cinnabar);background:var(--cinnabar)}
+.panel .note{font-size:.78rem;color:var(--ink-3);max-width:46rem;text-wrap:pretty}
+.panel .note+.cmd{margin-top:.2rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.links a{font-size:.82rem;font-weight:550;border:1px solid var(--line-2);border-radius:8px;padding:.45rem .95rem;color:var(--ink-2);transition:all .15s ease;background:var(--paper)}
+.links a:hover{color:var(--on-cinnabar);border-color:var(--cinnabar);background:var(--cinnabar)}
+
+ul.rel{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:.8rem}
+ul.rel li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;transition:border-color .15s ease}
+ul.rel li:hover{border-color:var(--line-2)}
+ul.rel h3{font-weight:650;font-size:.9rem;display:flex;align-items:baseline;gap:.5rem}
+ul.rel h3 a{overflow-wrap:anywhere}
+ul.rel h3 a:hover{color:var(--cinnabar-deep)}
+ul.rel h3 .stars{margin-left:auto;flex:none;font-family:var(--mono);font-weight:400;font-size:.7rem;color:var(--ink-3)}
+ul.rel .desc-link{display:block}
+ul.rel p{color:var(--ink-2);font-size:.8rem;margin-top:.2rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .15s ease}
+ul.rel .desc-link:hover p{color:var(--ink)}
+.morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
+.morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+
+/* rendered README content */
+.md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
+.md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
+.md h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.md h3{font-size:1rem}
+.md h4,.md h5,.md h6{font-size:.92rem}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre{margin-block:.7em}
+.md ul,.md ol{padding-left:1.4em}
+.md li+li{margin-top:.25em}
+.md a{color:var(--cinnabar)}
+.md a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.md code{font-family:var(--mono);font-size:.85em;background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.1em .35em}
+.md pre{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto}
+.md pre code{background:none;border:none;padding:0;font-size:.8rem;line-height:1.7}
+.md img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.md blockquote{border-left:3px solid var(--line-2);padding-left:1em;color:var(--ink-3)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;font-size:.84rem}
+.md th,.md td{border:1px solid var(--line);padding:.35rem .7rem;text-align:left}
+.md th{background:var(--paper);color:var(--ink)}
+.md hr{border:none;border-top:1px solid var(--line);margin-block:1.2em}
+.panel.readme .note{margin-top:1rem;border-top:1px solid var(--line);padding-top:.8rem}
+.panel.readme .note a{color:var(--ink-3)}
+.panel.readme .note a:hover{color:var(--cinnabar)}
+
+footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--cinnabar)}
+footer p+p{margin-top:.5rem}
+@media (max-width:640px){
+  .cmd{flex-direction:column}
+  .cmd button{border-left:none;border-top:1px solid var(--line-2);padding:.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap nav-in">
+  <a class="logo" href="/zh/" translate="no">
+    <svg width="20" height="20" viewBox="76 42 400 400" aria-hidden="true"><g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g><rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" transform="rotate(9 390 122)"/></svg>
+    awesome-dsh-plugin
+  </a>
+  <div class="nav-links">
+    <a class="lang-btn" href="/p/FengHuoLinShan/dsh-plugin-llm-balance/" hreflang="en" rel="alternate">EN</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+  </div>
+</div></nav>
+
+<header class="plate-wrap">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="breadcrumb">
+      <a href="/zh/">全部插件</a>
+      <span class="sep">/</span>
+      <a href="/zh/ui/">UI 增强</a>
+      <span class="sep">/</span>
+      <span translate="no">dsh-plugin-llm-balance</span>
+    </nav>
+    <div class="plate">
+      <p class="kicker">DeepSeek Harness 插件</p>
+      <h1 translate="no"><span class="owner">FengHuoLinShan/</span><wbr><span class="name">dsh-plugin-llm-balance</span></h1>
+      <div class="specrow">
+        <span>Star 数 <b>★ 2</b></span>
+        <span>分类 <a href="/zh/ui/">UI 增强</a></span>
+        <span>收录于 <b>2026-08-15</b></span>
+        <span>npm <a href="https://www.npmjs.com/package/dsh-plugin-llm-balance" rel="noopener" translate="no">dsh-plugin-llm-balance</a></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="desc">可拖动的 API 余额/配额悬浮卡片：自动显示最近使用的 provider 余额/配额（DeepSeek/Moonshot/Kimi For Coding），按余额分档变色、实时刷新。</p>
+
+  <section class="panel">
+    <h2>安装</h2>
+    <p class="note" style="margin:.2rem 0 .45rem"># npm 包（预构建）</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add dsh-plugin-llm-balance</pre><button type="button" data-cmd="dsh plugin --profile web add dsh-plugin-llm-balance" aria-label="复制安装命令">复制安装命令</button></div>
+    <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
+    <div class="cmd"><pre translate="no">dsh plugin --profile web add github:FengHuoLinShan/dsh-plugin-llm-balance</pre><button type="button" data-cmd="dsh plugin --profile web add github:FengHuoLinShan/dsh-plugin-llm-balance" aria-label="复制安装命令">复制安装命令</button></div>
+    <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+  </section>
+
+  <section class="panel readme">
+    <h2>README</h2>
+    <div class="md" translate="no">
+<blockquote>
+<p>🏷️ <strong>DSH 官方插件生态</strong>收录项目（git tag: <code>dsh-official-plugin</code>；GitHub topics: <code>dsh-plugin</code> · <code>deepseek-harness</code>）。</p>
+<p><a href="https://github.com/FengHuoLinShan/dsh-plugin-llm-balance/blob/main/README.en.md">English</a> | 中文</p>
+</blockquote>
+<p>DSH（DeepSeek Harness）通用插件：在 Web GUI 页面右上角显示一个<strong>可拖动的极简圆角卡片</strong>（DeepSeek 网页端风格），<strong>常态化显示最近使用的 ≤3 个 provider</strong> 的余额/配额——最近用过的 deepseek 与 kimi-coding 会同时显示，不足 3 个不硬凑：</p>
+<ul>
+<li><p><strong>最近 3 个常态化显示</strong>：收集全部非空白会话使用到的 provider（增量缓存，稳态零额外 RPC），按「该 provider 名下会话的最近活跃时间」降序取前 3 个持续展示；新会话带来新 provider 时按活跃度自动上位，会话删除后对应行消失。</p>
+</li>
+<li><p><strong>余额型</strong>（DeepSeek / Moonshot 平台）按金额分档变色：</p>
+<table>
+<thead>
+<tr>
+<th>颜色</th>
+<th>余额</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🟢 绿</td>
+<td>&gt;= 100</td>
+<td>余额充足</td>
+</tr>
+<tr>
+<td>🟡 黄</td>
+<td>20 ~ 99</td>
+<td>余额一般</td>
+</tr>
+<tr>
+<td>🔴 红</td>
+<td>1 ~ 19</td>
+<td>余额偏低</td>
+</tr>
+<tr>
+<td>⚪ 灰</td>
+<td>&lt; 1</td>
+<td>余额不足；或查询失败 / 加载中</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>配额型</strong>（Kimi For Coding 套餐）按剩余比例分档：绿 &gt;= 50%，黄 20<del>50%，红 5</del>20%，灰 &lt; 5%；套餐用量按窗口细分，行内<strong>同时显示 5h 限额与周限额的百分比</strong>（如 <code>5h 68% · 周 74%</code>，各窗口按自身比例独立着色），行状态点取最低百分比窗口（保守）；tooltip 逐窗口显示「剩余 x/y（p%）· 重置日期」+ 套餐等级；旧响应无窗口明细时回退为单窗口周限额。</p>
+</li>
+<li><p><strong>自动发现</strong>：可查 provider = 内置接口表（deepseek / deepseek-official / moonshotai / moonshotai-cn / kimi-coding）∪ settings 命名空间 <code>llm-pi-ai.providers.*</code>（llm-pi-ai 已配 apiKeyEnv 的路由，如 <code>kimi-coding</code>）∪ 本插件 config 声明的 provider；无需逐个配置。</p>
+</li>
+<li><p><strong>拖动</strong>：按住卡片可拖到任意位置，位置记忆在浏览器 localStorage 中，刷新后保持。</p>
+</li>
+<li><p><strong>点击</strong>：立即刷新。</p>
+</li>
+<li><p><strong>轮询</strong>：默认每 60 秒刷新一次；标签页隐藏时暂停，回到前台立即刷新。</p>
+</li>
+</ul>
+<h3>原理</h3>
+<ul>
+<li><p><strong>host 半身</strong>（lib/index.js）：Cordis 插件，在 WebServer 注册 GET /plugins/llm-balance，自动发现 provider，每个 provider 经 ctx.credentials 解析各自的 API Key（env / ~/.dsh/.credentials.yaml / .env 同一 seam，与 llm-pi-ai 一致），由<strong>服务端</strong>代理查询余额/配额接口。同源（apiKeyEnv+baseURL）的 provider id 只请求一次。浏览器永不接触 API Key，失败只返回稳定错误码。接口字段按官方真实形状解析：DeepSeek <code>total_balance</code> 为字符串、Kimi <code>limits[].window</code> 为 <code>{duration, timeUnit}</code> 对象（300 分钟 → <code>5h</code>，7 天 → <code>weekly</code>），均归一化为统一口径。</p>
+</li>
+<li><p><strong>client 半身</strong>（lib/client.js）：浏览器 bundle，注册到 ui-layout 声明的 <code>shell.overlay</code> 槽位（kind:list / root 作用域弹层容器），挂载与卸载由 slot 生命周期管理（声明折叠 / 插件卸载自动 dispose）；从 <code>sessions.list</code> 收集全部非空白会话，经 <code>connection.api.sessions.models</code>（callUnary 的 <code>result.value</code> 契约）增量读取各会话的 provider 与最近活跃时间（仅新会话触发查询，稳态零 RPC），按最近活跃度降序取前 3 个 provider 逐行渲染卡片；kimi 行按窗口（5h/周）显示双百分比。样式按官方 <code>data-plugin-css</code> 模式幂等注入；react 由宿主模块表 seed 提供，零外部依赖、无需构建。</p>
+</li>
+<li><p><strong>支持的 provider 接口</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>provider id</th>
+<th>接口</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>deepseek / deepseek-official</td>
+<td><code>GET https://api.deepseek.com/user/balance</code></td>
+<td>余额（CNY；官方 <code>total_balance</code> 为字符串，数字同样兼容）</td>
+</tr>
+<tr>
+<td>moonshotai / moonshotai-cn</td>
+<td><code>GET https://api.moonshot.cn/v1/users/me/balance</code></td>
+<td>余额（CNY）</td>
+</tr>
+<tr>
+<td>kimi-coding</td>
+<td><code>GET https://api.kimi.com/coding/v1/usages</code></td>
+<td>套餐配额（顶层 usage=周限额 + limits 窗口明细（5h 限流等，window 对象归一化为 5h/周），含套餐等级）</td>
+</tr>
+</tbody></table>
+<p>llm-pi-ai 中声明的其他路由若无内置接口表，如实报告 <code>no_balance_api</code>，不误报配置错误。</p>
+</li>
+</ul>
+<h3>安装</h3>
+<p>本插件是<strong>官方 bundle 形态</strong>（<code>dsh.bundle.patch</code> 声明激活层 + <code>dsh.client</code> 声明浏览器半身，
+见<a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/publish.md">官方打包文档</a>），
+<code>dsh plugin add</code> 一条命令即可安装并激活（自动加入 profile 的 bundles 层，无需手改任何文件）：</p>
+<pre><code class="language-bash"># 方式 A（推荐）：从 npm 安装（发布后）
+dsh plugin --profile web add dsh-plugin-llm-balance
+
+# 方式 B：从 GitHub 安装（源码 checkout，无需构建）
+dsh plugin --profile web add &quot;github:FengHuoLinShan/dsh-plugin-llm-balance#main&quot;
+
+# 方式 C（本地开发）：从 checkout 安装
+dsh plugin --profile web add /path/to/dsh-plugin-llm-balance
+
+# 方式 D（备选，任意版本）：tarball 安装
+dsh plugin --profile web add ./dsh-plugin-llm-balance-0.2.0.tgz
+</code></pre>
+<p>装完<strong>重启 dsh 服务</strong>（插件集合变更需重启生效；之后改动 client bundle 走 HMR 自动热更），
+刷新页面即可看到右上角悬浮卡片。</p>
+<blockquote>
+<p>个性化配置（如轮询间隔）在 <code>~/.dsh/profiles/web/cordis.patch.yml</code> 中按行 id 覆盖：</p>
+<pre><code class="language-yaml">- update:
+    - id: llm-balance
+      config:
+        refreshMs: 30000
+</code></pre>
+<p>覆盖时需完整重述该行需要的全部 config 键（patch 按行整体替换 config，不做深合并）。</p>
+</blockquote>
+<h3>配置（cordis.patch.yml 中该行的 config）</h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>refreshMs</td>
+<td>60000</td>
+<td>前端轮询间隔（毫秒）</td>
+</tr>
+<tr>
+<td>timeoutMs</td>
+<td>15000</td>
+<td>服务端查询超时（毫秒）</td>
+</tr>
+<tr>
+<td>provider</td>
+<td>deepseek</td>
+<td>（兼容层）单 provider 模式；多 provider 模式无需设置，自动发现</td>
+</tr>
+<tr>
+<td>apiKeyEnv</td>
+<td>DEEPSEEK_API_KEY</td>
+<td>（兼容层）单 provider 模式的凭证引用名</td>
+</tr>
+<tr>
+<td>baseURL</td>
+<td>按 provider 默认</td>
+<td>（兼容层）单 provider 模式的可选 base URL 覆盖</td>
+</tr>
+</tbody></table>
+<p>多 provider 模式开箱即用：provider 清单自动来自内置表 + <code>llm-pi-ai</code> settings，key 从 DSH credentials 解析（<code>llm-pi-ai</code> 路由的 <code>apiKeyEnv</code>，或内置默认 <code>DEEPSEEK_API_KEY</code> / <code>MOONSHOT_API_KEY</code> / <code>KIMI_CODING_API_KEY</code>）。</p>
+<blockquote>
+<p>旧的单 provider 写法（<code>provider</code> + <code>apiKeyEnv</code>）完全兼容：顶层响应字段仍按 config.provider 条目返回。</p>
+</blockquote>
+<p>所有字段均为宽松校验：<code>refreshMs</code> / <code>timeoutMs</code> 非数字或非正数、<code>provider</code> / <code>apiKeyEnv</code> 非字符串或空串、<code>baseURL</code> 非字符串，一律回退默认值，不会导致插件启动失败（零依赖实现 <code>normalizeConfig</code>，语义等价于官方 Config schema 的非法值回退）。</p>
+<h3>自测</h3>
+<pre><code class="language-bash">node test/balance.test.mjs   # host 半身逻辑自测（桩 ctx + 桩 fetch）
+</code></pre>
+<h3>卸载</h3>
+<pre><code class="language-bash">dsh plugin --profile web remove dsh-plugin-llm-balance   # 移除依赖与 bundles 层
+</code></pre>
+<p>（旧的手动安装：删除 cordis.patch.yml 中对应行 + 删除软链，重启即可。）</p>
+<h3>发布与市场收录</h3>
+<ul>
+<li><strong>npm</strong>：<code>npm publish</code>（需先 <code>npm login</code>）。包已声明 <code>publishConfig.access: public</code>、
+<code>files</code> 白名单（lib/ + cordis.patch.yml + README/LICENSE）与完整开源元数据
+（repository / homepage / keywords / license）。</li>
+<li><strong>GitHub 收录标记</strong>：仓库 topics 已带 <code>dsh-plugin</code> · <code>deepseek-harness</code> · <code>dsh-official-plugin</code>，
+git tag <code>dsh-official-plugin</code> 标记「DSH 官方插件生态」收录状态。</li>
+<li><strong>社区市场</strong>：已收录于 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin">awesome-dsh-plugin</a>
+（dsh-market 插件市场的数据源）。其他可同步提交：
+<a href="https://github.com/0xsline/awesome-deepseek-harness">awesome-deepseek-harness</a>、
+<a href="https://github.com/hikariming/dshfind">dshfind</a>。</li>
+</ul>
+<h3>安全说明</h3>
+<ul>
+<li>API Key 只在服务端解析与使用，不出现在任何响应、日志或页面中。</li>
+<li>余额接口由服务端代理（同源），不受浏览器 CORS 限制，也不暴露 Key。</li>
+<li>余额/配额数据来自官方接口，可能略有延迟，仅供参考。</li>
+<li><strong>信任边界</strong>：<code>/plugins/llm-balance</code> 是 WebServer 上的裸 HTTP 路由——无认证、无配对 PIN，仅依赖 webserver 默认的 loopback 绑定。若以 <code>--host 0.0.0.0</code> 绑定到局域网，LAN 客户端可读取「哪些 provider 配了 Key、余额/配额数字」等配置事实（响应不含任何 Key 值）。建议保持默认 loopback 部署。之所以不采用 api-remotes 领域（<code>/api</code> 信任围栏内的标准数据通道）：该机制是 DSH 仓库内 build-time 生成（<code>/remote</code> 制品 + 组合挂载点），第三方独立插件无法扩展，故以自定义路由 + 本文档信任边界说明替代。</li>
+</ul>
+
+    </div>
+    <p class="note"><a href="https://github.com/FengHuoLinShan/dsh-plugin-llm-balance/blob/main/README.md" rel="noopener">内容来自项目 README（GitHub）↗</a></p>
+  </section>
+
+  <section class="panel">
+    <h2>链接</h2>
+    <div class="links">
+      <a href="https://github.com/FengHuoLinShan/dsh-plugin-llm-balance" rel="noopener">GitHub 仓库 ↗</a>
+      <a href="https://www.npmjs.com/package/dsh-plugin-llm-balance" rel="noopener">npm 包 ↗</a>
+      <a href="https://github.com/dsh-market/dsh-market" rel="noopener">通过 dsh-market 安装 ↗</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>同类插件</h2>
+    <ul class="rel">
+      <li><h3><a href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" translate="no">zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all</a><span class="stars" translate="no">★ 1950</span></h3><a class="desc-link" href="/zh/p/zhu1090093659/dsh-web-ui--packages-dsh-web-ui-all/" tabindex="-1"><p>DSH Web UI 插件与皮肤合集：任务看板、git 图、右侧面板、远程移动端 UI、桌宠、实时 token 统计与皮肤中心。</p></a></li>
+      <li><h3><a href="/zh/p/ccch1mneyyy/dsh-TUI/" translate="no">ccch1mneyyy/dsh-TUI</a><span class="stars" translate="no">★ 903</span></h3><a class="desc-link" href="/zh/p/ccch1mneyyy/dsh-TUI/" tabindex="-1"><p>Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/DSH-better-sidebar/" translate="no">omdsh-dev/DSH-better-sidebar</a><span class="stars" translate="no">★ 782</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/DSH-better-sidebar/" tabindex="-1"><p>侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。</p></a></li>
+      <li><h3><a href="/zh/p/omdsh-dev/dsh-at-file/" translate="no">omdsh-dev/dsh-at-file</a><span class="stars" translate="no">★ 136</span></h3><a class="desc-link" href="/zh/p/omdsh-dev/dsh-at-file/" tabindex="-1"><p>Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。</p></a></li>
+      <li><h3><a href="/zh/p/huiliyi37/dsh-tianshu-tui/" translate="no">huiliyi37/dsh-tianshu-tui</a><span class="stars" translate="no">★ 134</span></h3><a class="desc-link" href="/zh/p/huiliyi37/dsh-tianshu-tui/" tabindex="-1"><p>DeepSeek Harness 的终端 UI（TUI）。</p></a></li>
+      <li><h3><a href="/zh/p/Nagi-ovo/dsh-visualize/" translate="no">Nagi-ovo/dsh-visualize</a><span class="stars" translate="no">★ 83</span></h3><a class="desc-link" href="/zh/p/Nagi-ovo/dsh-visualize/" tabindex="-1"><p>对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。</p></a></li>
+    </ul>
+    <a class="morelink" href="/zh/ui/">查看整个分类 →</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。</p>
+  <p>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · 与 DeepSeek 无隶属关系</p>
+</footer>
+
+<script>
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('.cmd button');
+  if (!btn) return;
+  try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
+  btn.classList.add('done');
+  const old = btn.textContent;
+  btn.textContent = '✓';
+  setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
+});
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
