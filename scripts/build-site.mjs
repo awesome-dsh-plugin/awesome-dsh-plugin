@@ -11,6 +11,7 @@
  * Usage: node scripts/build-site.mjs
  */
 import fs from 'node:fs'
+import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 
@@ -70,13 +71,35 @@ console.log(`${entries.length} entries parsed across ${LOCALES.length} locales`)
 const ordered = CAT_IDS.flatMap((id) => entries.filter((e) => e.cat === id))
 const N = ordered.length
 
-// added-date ledger: existing URLs keep their date, new URLs are stamped today
+// Added dates. data/added-dates.json is a frozen, human-owned baseline: it
+// pins the dates published before 2026-08-15 and carries manual migrations
+// (an entry repointed to a new URL keeps its original date). Anything not in
+// it derives from git history — an entry's date is the commit date of the
+// commit that first added its line to the default-locale README. Nothing is
+// ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
-const nowIso = new Date().toISOString()
-for (const e of ordered) if (!dates[e.url]) dates[e.url] = nowIso
-fs.writeFileSync(DATES_FILE, JSON.stringify(Object.fromEntries(Object.entries(dates).sort()), null, 1))
+if (ordered.some((e) => !dates[e.url])) {
+  const log = execSync(`git log --reverse --date-order --format=%x01%cI -p -- ${LOCALES[0].readme}`,
+    { encoding: 'utf8', maxBuffer: 1 << 28 })
+  let cur = null
+  for (const line of log.split('\n')) {
+    if (line.startsWith('\x01')) cur = new Date(line.slice(1).trim()).toISOString()
+    else if (line.startsWith('+') && !line.startsWith('+++')) {
+      const m = line.match(/^\+- \[[^\]]+\]\((https:\/\/github\.com\/[^)]+)\)\s*[-—]\s/)
+      if (m && !dates[m[1]]) dates[m[1]] = cur
+    }
+  }
+  const undated = ordered.filter((e) => !dates[e.url])
+  if (undated.length) {
+    // reachable only from a shallow clone or an unstamped uncommitted entry —
+    // stamping "now" here would make the output flap between runs
+    console.error(`no added-date derivable for: ${undated.map((e) => e.url).join(', ')}`)
+    console.error('need full git history (fetch-depth: 0) and committed entries — refusing to build')
+    process.exit(1)
+  }
+}
 const isoTs = (s) => (s.includes('T') ? s : s + 'T00:00:00Z')
 for (const e of ordered) { e.addedAt = dates[e.url]; e.added = e.addedAt.slice(0, 10) }
 

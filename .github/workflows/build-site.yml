@@ -6,15 +6,15 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    # No paths filter, deliberately. A filtered-out push still advances main
-    # without cancelling an in-flight build, whose data/ push then fails
-    # non-ff with nothing to recover it. Any human push must either supersede
-    # the running build or start one; irrelevant pushes still deploy the same
-    # bytes, which Pages treats as a no-op. Bot pushes use GITHUB_TOKEN and
-    # never trigger workflows, so there is no loop.
+    # No paths filter, deliberately: every push must either supersede the
+    # in-flight build (concurrency cancel) or start the one that replaces it.
+    # Irrelevant pushes just redeploy the same bytes.
 
+# The build never writes to the repository. Added dates derive from git
+# history, probe results live in the Actions cache, docs/ ships as a Pages
+# artifact — so contents stays read-only and nothing can race a human push.
 permissions:
-  contents: write # data/ probe-cache writeback
+  contents: read
   pages: write
   id-token: write
 
@@ -32,32 +32,31 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # added-date derivation walks the README's history
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm ci
+      # Rolling probe cache: unique key so every run saves, restore-keys pulls
+      # the most recent. A miss just means a full re-probe (~700 API calls,
+      # within the GITHUB_TOKEN hourly budget) — degraded never, slower once.
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/npm-map.json
+            data/stars.json
+            data/readmes.json
+          key: probe-data-${{ github.run_id }}
+          restore-keys: probe-data-
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Build against what main actually is, not the SHA that triggered
-          # this run — those differ whenever the bot pushed in between.
-          git fetch -q origin main
-          git reset -q --hard origin/main
           node scripts/probe-npm.mjs
           node scripts/probe-stars.mjs
           node scripts/probe-readmes.mjs
           node scripts/build-site.mjs
-      - name: Commit probe data if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data
-          git diff --cached --quiet && echo "no data changes" && exit 0
-          git commit -m "chore: refresh probe data"
-          # Fast-forward or bust: losing the race means a newer push exists,
-          # and the run it triggered supersedes this one.
-          git push
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
