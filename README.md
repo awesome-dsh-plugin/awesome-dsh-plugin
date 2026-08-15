@@ -561,6 +561,7 @@ dsh plugin --profile web add dshmarket
 ### Development & Runtime
 
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) - Static pre-install security auditor for plugin bundles: lifecycle scripts, dynamic execution, credential-exfiltration combos, and patch-layer hazards, with zero dependencies and in-memory tar parsing.
+- [iiwish/dsh-testkit](https://github.com/iiwish/dsh-testkit) - Docker-isolated real-host lifecycle tests for DSH plugins across install, boot, tool registration, update, uninstall, reinstall, and recovery, with structured evidence.
 - [BotonJ/dsh-windtunnel](https://github.com/BotonJ/dsh-windtunnel) - Contract regression harness for plugin authors: a scripted LLM adapter drives the real pipeline in isolated child processes with session-event assertions (load/contract/behavior/fault layers); zero API key, CI-ready.
 - [BotonJ/dsh-remote-link](https://github.com/BotonJ/dsh-remote-link) - Secure remote access for the official Web UI: authenticated LAN/tunnel gateway with QR + HMAC one-time pairing, per-device sessions and revocation, mDNS discovery, and a fork_session tool.
 - [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) - Evidence-backed inspector for DSH Web built-in capabilities: runtime/config provenance, compatibility and drift diagnostics, plus fail-closed controls for nine reviewed UI leaves.
