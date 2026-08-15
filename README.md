@@ -323,6 +323,7 @@ dsh plugin --profile web add dshmarket
 - [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) - Move a session to another folder from the Web UI via drag & drop or a menu picker, permanently delete a session with a risk-consent dialog, and AI-rename a session by summarizing the whole conversation (typo-aware). Each action also ships as an agent tool.
 - [dylan121322/dsh-session-unarchive](https://github.com/dylan121322/dsh-session-unarchive) - Restore archived sessions to their original workspace from the Web GUI sidebar.
 - [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) - Recall any user message: rolls the conversation (official session fork) and workspace files (per-message shadow git snapshots) back to before it, with a diff-preview confirmation panel.
+- [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) - Free-interval session reports with AI-narrated daily/weekly digests over any date range, plus every-N-days scheduled reminders with system notifications (macOS / Linux).
 
 ### Memory
 
@@ -362,6 +363,7 @@ dsh plugin --profile web add dshmarket
 - [hellosky983/dsh-skillradar](https://github.com/hellosky983/dsh-skillradar) - Scans the skills visible to the current session and ranks them by relevance to the recent conversation.
 - [baaai123/dsh-memory-protocol](https://github.com/baaai123/dsh-memory-protocol) - Memory protocol enforcement plugin: bridges the opencode-memory MCP server, forces memory_weave before tool calls, auto-ingests turns, and injects memory context into agent steps.
 - [xiaozhe7772222/dsh-draw-router](https://github.com/xiaozhe7772222/dsh-draw-router) - Universal image generation for DeepSeek Harness: auto-discovers image models from any OpenAI-compatible endpoint (SenseNova, StepFun, Agnes, Qwen, Flux, SD, Imagen and more), with agent tools and REST API.
+- [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) - Write notes and memos to flomo (浮墨笔记) from any agent via the flomo_send tool, configured once with the flomo API URL or API Key.
 ### Tools & Capabilities
 - [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) - IMAP/SMTP email tools (list/read/search/send/folders/attachment) with QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud presets, multi-account support and a send-approval gate.
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) - CalDAV calendar tools (list/create/update/delete/search) for Google/iCloud/Nextcloud/custom endpoints, with RRULE expansion.
