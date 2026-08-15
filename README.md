@@ -283,6 +283,7 @@ dsh plugin --profile web add dshmarket
 - [feibi-mochi/deepseek-harness-wallet](https://github.com/feibi-mochi/deepseek-harness-wallet) - Multi-provider wallet chip: official DeepSeek balance, per-session cost & tokens, third-party token totals, recharge shortcut, low-balance alerts.
 - [superboy911/dsh-model-router](https://github.com/superboy911/dsh-model-router) - Deterministic keyword routing, allowlisted model switching, and an isolated image_gen channel for DeepSeek Harness.
 - [kaixinbaba/dsh-vision-recognizer](https://github.com/kaixinbaba/dsh-vision-recognizer) - Vision provider route that transcribes attached images to text through a configurable model (15+ OpenAI-compatible and Anthropic vendors) while DeepSeek keeps answering.
+- [haiziyao/dsh-codex-bridge](https://github.com/haiziyao/dsh-codex-bridge) - Fixed Mix route between configured text and vision models, with follow-up image analysis and optional session-scoped vision history.
 - [fieldnote-ops/keyringseam](https://github.com/fieldnote-ops/keyringseam) - macOS Keychain credential provider that replaces the local-file provider and uses a signed, notarized universal helper.
 
 - [YZz-S/dsh-billing-balance](https://github.com/YZz-S/dsh-billing-balance) - Shows DeepSeek API account balance and Volcengine Ark Coding/Agent Plan quota windows (5h/weekly/monthly with reset countdowns) in the settings panel, composer dock, and a draggable floating refresh button.
@@ -848,4 +849,3 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
-
