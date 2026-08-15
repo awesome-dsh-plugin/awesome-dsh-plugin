@@ -191,6 +191,7 @@ dsh plugin --profile web add dshmarket
 - [kongerly/dsline](https://github.com/kongerly/dsline) - LINE-style chat bubbles for the DSH web GUI: green outgoing bubbles, assistant bubbles with avatar and a collapsible thinking row, a typing indicator, and full markdown rendering.
 - [SongMiao-tech/dsh-prompt-optimizer](https://github.com/SongMiao-tech/dsh-prompt-optimizer) - Optimize Prompt button under the composer: one click rewrites your draft into a clearer, more executable prompt, with a before-and-after dialog and one-click replacement.
 - [wenzetan/dsh-quota-panel](https://github.com/wenzetan/dsh-quota-panel) - Bottom-right quota capsule that auto-discovers every configured provider (DeepSeek, OpenRouter, SiliconFlow, GLM, one-api/new-api, coding plans) and shows balance or rolling 5-hour and weekly usage, with per-provider visibility, alert thresholds and proxy support.
+- [JUANWANG-BUAA/dsh-full-remote](https://github.com/JUANWANG-BUAA/dsh-full-remote) - Remote DeepSeek Harness with full server-side API access (`settings.*` / `credentials.*` / `host.listDirectory`). Token-gated reverse proxy, per-device sessions, optional approval, WebSocket/SSE, sidebar panel.
 ### Themes & Appearance
 
 - [RizenHNT/dsh-skin-digital-arcade](https://github.com/RizenHNT/dsh-skin-digital-arcade) - Digital arcade HUD skin: neon cyan/violet/magenta palette, Ark Pixel fonts, animated sprites (city backdrop, data core, mascot), custom crosshair cursor; light and dark themes follow the system.
