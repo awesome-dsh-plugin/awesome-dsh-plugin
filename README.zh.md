@@ -548,6 +548,7 @@ dsh plugin --profile web add dshmarket
 - [609476965/dsh-LorebookMD](https://github.com/609476965/dsh-LorebookMD) — 导入酒馆（SillyTavern/TavernAI）角色卡与世界书，落地为本地 Markdown 设定文档，激活创作模式后根据用户输入、参考世界书创作小说。
 - [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) — A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。
 - [sjh9714/clippy-harness#plugin](https://github.com/sjh9714/clippy-harness/tree/master/plugin) — 回形针助手回来了，这次它真的会干活：会对真实 agent 状态做出反应的办公助手宠物，任务完成时跳起来庆祝，回合失败时弹出经典的 "illegal operation" 对话框。
+- [ovdoesw/dsh-xiangqi](https://github.com/ovdoesw/dsh-xiangqi) — 卡通小宠物邀请你在 AI 思考间隙下中国象棋：内置引擎、走子记谱导出、可选多模型局势点评。
 
 ## 贡献
 
