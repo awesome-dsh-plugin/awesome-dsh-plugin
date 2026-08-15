@@ -449,6 +449,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) - System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).
 - [ThreeBody6666/dsh-im-hub](https://github.com/ThreeBody6666/dsh-im-hub) - Multi-platform IM gateway for DSH: Feishu (Lark) WebSocket long connection (no public URL), WeCom AES-encrypted callbacks, and Telegram long polling — per-chat agent sessions, whitelist access, and a visual settings card in the web GUI.
 - [yangyongzhen/dsh-notify](https://github.com/yangyongzhen/dsh-notify) - Task-completion notifications via ServerChan / DingTalk / Feishu / generic webhooks.
+- [amlyczz/dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) - High-reliability Feishu/Lark bridge for DeepSeek Harness: QR one-click auth, card-based commands and intent-confirmation cards, at-least-once zero-loss outbox, media in/out, /doctor session-log ZIP, and a reusable DSH Web GUI that lands sessions in the right workspace.
 
 ### Models & Providers
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) - Visual GitHub login without a terminal: in-window device flow, token synced into the gh CLI, and host status/launch endpoints.
