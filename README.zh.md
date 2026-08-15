@@ -126,6 +126,7 @@ dsh plugin --profile web add dshmarket
 - [Ghost011118/dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) — 输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。
 - [v587d/dsh-opencode-go-usage](https://github.com/v587d/dsh-opencode-go-usage) — 在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。
 - [GLFzr/dsh-opencode-go-quota](https://github.com/GLFzr/dsh-opencode-go-quota) — 模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。
+- [iamfromchangsha/dsh-go-balance](https://github.com/iamfromchangsha/dsh-go-balance) — 输入框工具行右侧的 OpenCode Go 余额胶囊：滚动/每周/每月配额剩余百分比（数据直接来自 Zen 用量接口），悬停查看明细，低余额自动变黄/变红。
 - [Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — 会话与当日 API 费用统计、预算图框（已用%）、官方余额、历史看板，支持峰谷计价与官方价格一键同步。
 - [fishxcode/dsh-plugin-deepseek-balance](https://github.com/fishxcode/dsh-plugin-deepseek-balance) — 在 DSH Web 设置中展示 DeepSeek API 余额、余额趋势与每日用量图表。
 - [Sev7een/ds-api-usage](https://github.com/Sev7een/ds-api-usage) — 在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。
