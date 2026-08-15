@@ -231,11 +231,15 @@ dsh plugin --profile web add dshmarket
 - [truelove-dreamer/dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) - Cross-session memory for the model: full-text search all past sessions (SQLite FTS5 via ctx.sessionQuery) and bring the strongest matching excerpts back into the current context.
 - [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) - One shared Obsidian vault for every agent: dependency-free Python core (search/promote/adjudicate/forget), vault template, dsh plugin (memory_search/show/submit/status).
 - [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) - Self-maintaining handoff memory per working directory and git branch: records turns, folds them into concise Markdown, and injects the result into future sessions from ~/.agent/agent-handoff, byte-compatible with pi-handoff.
+- [ljsysfurryACE/dsh-memory-director](https://github.com/ljsysfurryACE/dsh-memory-director) - LLM-driven remember/forget memory: after each turn a model decides what to keep (MemoryDirector), injects relevant memories before each step, dedups, and persists cross-session.
+
 ### Tools & Capabilities
 - [x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) - A web-novel writing engine for DeepSeek Harness: parallel drafting, outlining and brainstorming with a separate DeepSeek key, lore and foreshadowing management, semantic vector retrieval, a corpus library, usage ledger, mechanical proofreading, and a local serialization plan.
 - [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) - Host-side Typert remote for dsh-tool-writing: serves project volumes, chapter status, corpus library, full-text search, evolution entries, and thread-graph data to the client writing panel.
 - [ConsoleSun/Gemini-Eyes](https://github.com/ConsoleSun/Gemini-Eyes) - MCP bridge to gemini.google.com: vision analysis of images and videos, Imagen image and Veo video generation, and conversation management using the logged-in browser session with no API key.
 - [Edge-Echo/dsh-mcp-bridge](https://github.com/Edge-Echo/dsh-mcp-bridge) - Curated MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.
+- [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) - Compaction backend replacing LLM summarization with a deterministic semantic extractor (keeps code/paths/commands, drops chatter) plus 28.4x KV-compression accounting.
+
 
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) - DSH↔Godot engine runtime bridge: launch and drive a running Godot 4.x game through its in-game TCP interaction server — 8 tools (scene/UI inspection, GDScript eval, input simulation, screenshots, headless static ops, script validation), replaces godot-mcp.
 - [LeemanCheung/dsh-agent-preset-recommender](https://github.com/LeemanCheung/dsh-agent-preset-recommender) - Privacy-safe local scanner for Codex, Claude Code, WorkBuddy, and CodeBuddy session/workflow metadata; persists aggregate evidence and recommends built-in DSH agent presets without retaining content, using a network, or changing presets.
@@ -416,6 +420,8 @@ dsh plugin --profile web add dshmarket
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) - Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).
 - [THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) - Unified notification push for DSH: one minimal notify() API with 8 channel adapters (Telegram / DingTalk / Feishu / WxPusher / PushPlus / ServerChan / Bark / webhook), auto session-event push on turn-end, approval and error, plus an agent-callable notify tool; zero runtime deps.
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) - System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).
+- [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) - Proactive scheduling: adaptive heartbeat + value network V = α·urgency + β·relevance − δ·interruption decides when the agent should speak unprompted (official schedule is model-driven only).
+
 
 ### Models & Providers
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) - Visual GitHub login without a terminal: in-window device flow, token synced into the gh CLI, and host status/launch endpoints.

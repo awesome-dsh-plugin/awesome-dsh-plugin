@@ -229,11 +229,13 @@ dsh plugin --profile web add dshmarket
 - [truelove-dreamer/dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) — 跨会话记忆：全文检索所有历史会话（复用 ctx.sessionQuery 的 SQLite FTS5 索引），把最强匹配片段带回当前上下文。
 - [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) — 多 Agent 共享一个 Obsidian vault：零依赖 Python core（检索/晋升/裁决/遗忘）+ vault 模板 + dsh 插件（memory_search/show/submit/status）。
 - [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) — 每个工作目录与 git 分支自动维护 handoff.md：记录回合、折叠为简洁 Markdown 并注入后续会话，存储于 ~/.agent/agent-handoff，与 pi-handoff 字节级兼容。
+- [ljsysfurryACE/dsh-memory-director](https://github.com/ljsysfurryACE/dsh-memory-director) — LLM 驱动的记忆记/忘插件：每轮对话后由模型决定记住什么/忘记什么（MemoryDirector），请求前注入相关记忆，自动去重，跨会话持久化。
 ### 🛠️ 工具与能力
 - [x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) — 写文引擎：用独立 DeepSeek key 分流并发生成草稿/细纲/点子，设定与伏笔管理、语义向量检索、书库（饲料区）、用量总账、机械校对与本地连载计划。
 - [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) — 写文引擎的 host 侧数据通道：把项目分卷、章节状态、书库、全文检索、演化条目与线索图谱以 Typert remote 暴露给客户端写作面板。
 - [ConsoleSun/Gemini-Eyes](https://github.com/ConsoleSun/Gemini-Eyes) — 接入 gemini.google.com 的 MCP 桥：图片/视频视觉识别、Imagen 生图、Veo 生视频与历史对话管理，复用浏览器登录态，无需 API Key。
 - [Edge-Echo/dsh-mcp-bridge](https://github.com/Edge-Echo/dsh-mcp-bridge) — 精选 MCP 服务器全家桶：一键接入演示、记忆、文件系统、GitHub、Playwright、远程 HTTP 等服务器，自带连通性验证工具与 CI 检查。
+- [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。
 
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) — DSH↔Godot 引擎运行时控制桥：通过游戏内置 TCP 交互服务器启动并操控运行中的 Godot 4.x——8 个工具（场景/UI 检查、GDScript eval、输入模拟、截图、headless 静态操作、脚本编译检查），替代 godot-mcp。
 - [LeemanCheung/dsh-agent-preset-recommender](https://github.com/LeemanCheung/dsh-agent-preset-recommender) — 隐私安全的本地扫描器：汇总 Codex、Claude Code、WorkBuddy、CodeBuddy 的会话/workflow 元数据，持久化聚合证据并推荐 DSH 内置 Agent preset；不保留正文、不联网、不修改 preset。
@@ -400,6 +402,7 @@ dsh plugin --profile web add dshmarket
 - [imetn/dsh-lark-bridge](https://github.com/imetn/dsh-lark-bridge) — DeepSeek Harness 的飞书/Lark 双向控制器，支持 Project 与 Session 路由、交互卡片、审批、附件和任务控制。
 - [yeruizhi/dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier) — 飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。
 - [pc439527/dsh-notify-bark](https://github.com/pc439527/dsh-notify-bark) — Bark 推送通知到 iPhone：回合完成、等待回答、等待授权等事件由 Host 端发送。
+- [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) — 主动调度：自适应心跳 + 价值网络 V = α·urgency + β·relevance − δ·interruption 决定 Agent 何时主动开口（官方 schedule 仅模型驱动）。
 
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) — 对话完成提醒：Agent 空闲（idle）时播放提示音并弹 Windows 原生通知，可配 ding.mp3、音量与防抖节流。
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
