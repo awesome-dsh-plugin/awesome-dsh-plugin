@@ -691,6 +691,8 @@ dsh plugin --profile web add dshmarket
 - [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) - Digimon-style raising game: hatch an egg that feeds on real work (turns, tool calls, errors) and evolves along four branching lines shaped by how you work; zero tokens, invisible to the model.
 - [marvin9551/dynamic-schulte-dsh](https://github.com/marvin9551/dynamic-schulte-dsh) - Dynamic Schulte grid waiting-time mini-game: click 1..N in order on a static grid or a spinning roulette wheel while the model thinks.
 
+- [yushi-xxh/dsh-homepage-skin](https://github.com/yushi-xxh/dsh-homepage-skin) - Adds the DeepSeek Harness homepage background to dsh web: WebGL fluid light, dot-line grid and a digital point-cloud whale, with dark and light palettes.
+
 ## Contributing
 
 PRs welcome — add one line under the matching category in both `README.md` and `README.zh.md`: `- [name](link) — one-line description`.
