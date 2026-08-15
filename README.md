@@ -674,6 +674,7 @@ dsh plugin --profile web add dshmarket
 - [sjh9714/clippy-harness#plugin](https://github.com/sjh9714/clippy-harness/tree/master/plugin) - Clippy is back and this time he can actually help. An office assistant pet that reacts to real agent state, jumps when the turn completes, and opens a classic "illegal operation" dialog when a turn fails.
 - [lucky8197/dsh-devquest](https://github.com/lucky8197/dsh-devquest) - Turns coding into an RPG: finished turns, tool calls and completed todos earn XP, with 27+ achievement badges, levels, titles and seasons. Event-driven scoring with a pure-function engine — the work itself is the game.
 - [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) - Import Codex-style sprite-sheet pets and render them as a floating shell.overlay with a pet library, interactions, and agent-state linkage.
+- [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) - Digimon-style raising game: hatch an egg that feeds on real work (turns, tool calls, errors) and evolves along four branching lines shaped by how you work; zero tokens, invisible to the model.
 
 ## Contributing
 
