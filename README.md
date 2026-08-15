@@ -587,6 +587,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) - System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.
 - [PeterBon/dsh-hooks](https://github.com/PeterBon/dsh-hooks) - Config-driven lifecycle hooks: event→command declarations in cordis.patch.yml, with Feishu card notifications and a QR scan-to-create bot setup.
 ### Development & Runtime
+- [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) - Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.
 
 - [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) - Collapsible right-docked web terminal (xterm.js) bridged to a host PTY over WebSocket: bash/zsh switching, resizable panel, and fold/unfold that keeps the session alive.
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) - Static pre-install security auditor for plugin bundles: lifecycle scripts, dynamic execution, credential-exfiltration combos, and patch-layer hazards, with zero dependencies and in-memory tar parsing.
