@@ -56,7 +56,6 @@ dsh plugin --profile web add dshmarket
 - [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) - LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.
 
 - [Bernardxu123/dsh-mobile-gate](https://github.com/Bernardxu123/dsh-mobile-gate) - LAN mobile gateway: isolated child-process reverse proxy with first-visit approval, per-device token binding, rate limiting, and mobile layout injection (compact composer pills, randomUUID polyfill).
-- [JUANWANG-BUAA/dsh-remote](https://github.com/JUANWANG-BUAA/dsh-remote) - Authenticated reverse-proxy bundle for remote & mobile access to the DeepSeek Harness Web UI: token gate, per-device sessions with kick, first-visit approval mode, rate limiting, WebSocket/SSE forwarding, and a sidebar panel with runtime listen-address switching.
 
 - [Make0209/dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) - GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.
 - [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) - Multi-provider usage dashboard with provider/model token breakdowns, calendar drill-downs, account balances, and OpenCode Go / Z.ai subscription quota tracking.
