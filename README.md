@@ -268,6 +268,7 @@ dsh plugin --profile web add dshmarket
 - [hccccc01333/dsh-excel-chat](https://github.com/hccccc01333/dsh-excel-chat) - Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.
 - [zhang787jun/dsh-finance](https://github.com/zhang787jun/dsh-finance) - Financial research workflow and portfolio risk tools with source discipline for current market facts.
 - [Realyujie/dsh-us-stocks](https://github.com/Realyujie/dsh-us-stocks) - US stock quotes, price history, financial statements, analyst consensus and news via yahoo-finance2.
+- [1624318455/dsh-plugin-tavily](https://github.com/1624318455/dsh-plugin-tavily) - Tavily-backed web search provider for the built-in web_search tool, with a settings card for the API key, result count, and recency window.
 - [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) - Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.
 - [zhaoolee/notes](https://github.com/zhaoolee/notes) - Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.
 - [zimai233/dsh-figma-to-lottie](https://github.com/zimai233/dsh-figma-to-lottie) - Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.
