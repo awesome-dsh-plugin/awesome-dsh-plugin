@@ -199,6 +199,7 @@ dsh plugin --profile web add dshmarket
 - [SongMiao-tech/dsh-prompt-optimizer](https://github.com/SongMiao-tech/dsh-prompt-optimizer) — 输入框下方「优化提示词」按钮：一键把草稿重写为更清晰、更可执行的提示词，弹出前后对比，支持一键替换回输入框。
 - [wenzetan/dsh-quota-panel](https://github.com/wenzetan/dsh-quota-panel) — 右下角额度胶囊：自动发现所有已配置 Key 的供应商（DeepSeek、OpenRouter、SiliconFlow、GLM、one-api/new-api、各类 Coding 套餐），显示余额或 5 小时/周滚动用量，支持按供应商设置可见性、告警阈值与代理。
 - [lisniuse/dsh-modal-enhancer](https://github.com/lisniuse/dsh-modal-enhancer) — 为所有 Web UI 弹窗添加窗口化操作：标题栏拖动、八向缩放、钉住防误触关闭、全屏最大化、移除背景模糊，以及按弹窗持久化的状态。
+- [xiaoshihou514/dsh-tui](https://github.com/xiaoshihou514/dsh-tui) — DeepSeek Harness 的交互式终端界面。
 ### 🎭 主题与外观
 
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) — DSH Web 壁纸皮肤：预设 / 图片 URL / 本地上传，透明度滑块让整面界面透出壁纸。
@@ -364,6 +365,7 @@ dsh plugin --profile web add dshmarket
 - [Fro2en12/dsh-download-progress](https://github.com/Fro2en12/dsh-download-progress) — 下载进度面板：URL 下载器、agent shell/SSH 传输追踪与工作区黑箱文件增长监控，汇聚到可拖拽浮窗实时显示字节、速度、百分比与预计剩余时间。
 - [CZX2244/dsh-bilibili](https://github.com/CZX2244/dsh-bilibili) — B站视频分析工具：提取元数据、字幕文稿（必剪/本地 ASR 兜底）、评论与弹幕，抓取清晰关键帧并可选本地视觉描述。
 - [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — 让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。
+- [xiaoshihou514/dsh-vision](https://github.com/xiaoshihou514/dsh-vision) — 使用智谱或本地 Qwen-VL 模型的视觉桥接。
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
 - [LeemanCheung/dsh-image-gen](https://github.com/LeemanCheung/dsh-image-gen) — 通过 `image_gen` 工具调用 GPT Image 2 生图，实时展示服务端渐进图与 Codex 风格显影卡片，并支持附件回放、预览和下载。
 - [yun520-1/deepseek-heartflow](https://github.com/yun520-1/deepseek-heartflow) — 心虫（AGI 第1层辨别门禁）作为 DSH 插件：47 维纯规则文本判别（heartflow_check 工具）+ 工具调用后自动输出监督（fail-closed，引擎缺失时拒绝放行）。
@@ -577,6 +579,7 @@ dsh plugin --profile web add dshmarket
 - [wz-heng/dsh-feishu-bridge](https://github.com/wz-heng/dsh-feishu-bridge) — Fail-closed 的飞书（Lark）channel 桥：和机器人聊天即驱动 dsh agent turn。仅经官方 Python SDK 集成（精确锁版）；白名单默认全拒、webhook 验签/时间窗/防重放、按 chat 粘性会话；中英双语文档。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) — 通过微信扫码把微信机器人接入 DeepSeek Harness。
+- [xiaoshihou514/dsh-weixin](https://github.com/xiaoshihou514/dsh-weixin) — 通过微信远程控制 DeepSeek Harness，支持扫码登录和文件传输。
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — 通过扫码把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉等）。
 - [THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) — 统一通知推送：一个 notify() API 打通 25+ 渠道（Telegram / 钉钉 / 飞书 / 企业微信 / QQ 机器人 / WxPusher / PushPlus / Server 酱 / Bark / Discord / Slack / ntfy / webhook），按 timeSensitive / active / passive 路由并分级重试；多通道反向审批——在 Telegram、飞书交互卡片、QQ、WxPusher、微信（iLink）上直接批准 agent 的请求。回合结束、待审批、报错时自动推送，agent 也能主动调用 notify 工具；零运行时依赖。
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) — 系统级桌面通知：回合完成 / 工作流完成横幅，需要审批时弹出模态提醒（macOS osascript / Linux notify-send）。
