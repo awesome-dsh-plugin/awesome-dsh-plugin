@@ -183,7 +183,7 @@ footer p+p{margin-top:.5rem}
     <h2>安装</h2>
     <p class="note" style="margin:.2rem 0 .45rem"># GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:zoumutou/dsh-web-preview</pre><button type="button" data-cmd="dsh plugin --profile web add github:zoumutou/dsh-web-preview" aria-label="复制安装命令">复制安装命令</button></div>
-    <p class="note" style="margin-top:.7rem">GitHub 来源的插件在安装时会在你的机器上执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
+    <p class="note" style="margin-top:.7rem">装任何插件都等于在你的机器上跑第三方代码，权限和你本人一样大——能读你的文件、用你的凭据、访问网络，工具审批管不到它。GitHub 来源的插件还会在安装时执行构建脚本。请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。</p>
   </section>
 
   <section class="panel readme">

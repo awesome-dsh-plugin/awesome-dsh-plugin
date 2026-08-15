@@ -186,7 +186,7 @@ footer p+p{margin-top:.5rem}
     <div class="cmd"><pre translate="no">dsh plugin --profile web add @picgo/dsh-plugin</pre><button type="button" data-cmd="dsh plugin --profile web add @picgo/dsh-plugin" aria-label="Copy install command">copy install</button></div>
     <p class="note" style="margin:.2rem 0 .45rem"># from GitHub (first run asks for allowBuilds approval — follow the hint, retry)</p>
     <div class="cmd"><pre translate="no">dsh plugin --profile web add github:PicGo/dsh-plugin</pre><button type="button" data-cmd="dsh plugin --profile web add github:PicGo/dsh-plugin" aria-label="Copy install command">copy install</button></div>
-    <p class="note" style="margin-top:.7rem">GitHub-sourced plugins run build scripts on your machine at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
+    <p class="note" style="margin-top:.7rem">Any plugin you install runs third-party code with your own permissions — it can read your files, use your credentials, and reach the network, and tool approvals don’t sandbox it. GitHub-sourced plugins also run build scripts at install time. Only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).</p>
   </section>
 
   <section class="panel readme">
