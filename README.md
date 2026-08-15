@@ -42,6 +42,7 @@ dsh plugin --profile web add dshmarket
 ## Plugins
 
 ### UI Enhancements
+- [xiaweiliang060035/dsh-opencode-go-usage](https://github.com/xiaweiliang060035/dsh-opencode-go-usage) - Floating widget showing real-time OpenCode Go subscription usage (rolling/weekly/monthly) for every API key, with rate-limit alerts and automatic key-pool discovery.
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) - Codex-style left-side message navigation rail for the Web UI: one tick per user message, hover previews, and click-to-jump across the whole history.
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) - Fully customizable keyboard shortcuts for the Web UI: 34 pre-registered features (sessions, views, clipboard, models, silent permission cycling, settings), one-click recording to bind your own, and a shortcut cheatsheet with built-in diagnostics.
 - [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) - Chinese UI enhancement for the DSH web client: completes the Chinese locale, keeps the session stats line fully visible on one row, and adds an Enhancements settings section with configurable chat width.
