@@ -219,6 +219,7 @@ dsh plugin --profile web add dshmarket
 - [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) - Codex-style auto-hiding right-edge turn rail: edge-peek show/hide, per-turn tooltip, in-rail search, and a scrolling 30-turn window for long sessions.
 - [Tlyer233/dsh-vscode-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review) - Journals every AI file write/edit into before/after snapshots for an inline VS Code review flow (accept/reject hunks, per-file undo, no git).
 - [Tlyer233/dsh-vscode-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review-changes) - Review Changes panel above the web composer with a VS Code sidebar bridge: send editor selections, drag files/folders as tags, and batch accept/reject every listed file.
+- [garrisonz/dsh-sidebar-width](https://github.com/garrisonz/dsh-sidebar-width) - Control the Web UI left sidebar width: lower the 264px drag minimum and optionally tune the drag maximum and the expanded default width, applied by a startup patch of the ui-layout bundle.
 ### Themes & Appearance
 
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
