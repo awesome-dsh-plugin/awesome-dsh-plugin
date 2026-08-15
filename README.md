@@ -195,6 +195,7 @@ dsh plugin --profile web add dshmarket
 - [lisniuse/dsh-modal-enhancer](https://github.com/lisniuse/dsh-modal-enhancer) - Window-like controls for every Web UI modal: drag by title bar, eight-way resize, pin against outside clicks, maximize to the full viewport, removable backdrop blur, and per-dialog persistent state.
 ### Themes & Appearance
 
+- [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
 - [RizenHNT/dsh-skin-digital-arcade](https://github.com/RizenHNT/dsh-skin-digital-arcade) - Digital arcade HUD skin: neon cyan/violet/magenta palette, Ark Pixel fonts, animated sprites (city backdrop, data core, mascot), custom crosshair cursor; light and dark themes follow the system.
 
 - [RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) - One-command skin plugin: 8 original themes, translucent wallpaper with opacity/blur, per-user accent, and shareable theme-pack import/export, favorites and surprise-me — purely native on DSH's token system.
