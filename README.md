@@ -43,6 +43,7 @@ dsh plugin --profile web add dshmarket
 
 ### UI Enhancements
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) - Fully customizable keyboard shortcuts for the Web UI: 34 pre-registered features (sessions, views, clipboard, models, silent permission cycling, settings), one-click recording to bind your own, and a shortcut cheatsheet with built-in diagnostics.
+- [AI-Galaxy-GPU/dsh-answer-sound](https://github.com/AI-Galaxy-GPU/dsh-answer-sound) - Agent answer sound effects for the Web UI: start/done/error tones following the answering lifecycle, per-kind volume, custom audio files, and a master switch in settings.
 - [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) - Chinese UI enhancement for the DSH web client: completes the Chinese locale, keeps the session stats line fully visible on one row, and adds an Enhancements settings section with configurable chat width.
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) - Voice input for the web UI: a mic button in the composer that transcribes speech into the draft via the Web Speech API, with an optional auto-send toggle.
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) - Composer expand/collapse toggle for the Web UI: a ⬆/⬇ button in the composer tool row grows the input to a tall 70vh writing view for long drafts.
