@@ -42,6 +42,7 @@ dsh plugin --profile web add dshmarket
 ## 插件
 
 ### 🎨 UI 增强
+- [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — DSH 网页中文增强：补全中文界面残留英文、统计行单行完整显示，并提供「增强设置」分区（中文补全 / 统计全显示 / 对话宽度）。
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) — Web UI 输入框展开/收起：composer 工具行新增 ⬆/⬇ 按钮，一键把输入框扩大到 70vh 高度，方便写长 prompt。
 - [littleboylittlegirl/dsh-community-hot](https://github.com/littleboylittlegirl/dsh-community-hot) — Web UI 的社区热门悬浮面板：24 小时热门话题与热门插件 TOP10，悬浮按钮可拖动置顶、点击居中展开。
 - [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) — 用免费 Edge TTS 朗读 AI 回复：消息朗读按钮、自动朗读开关与语音设置面板。
