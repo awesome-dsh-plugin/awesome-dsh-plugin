@@ -774,6 +774,7 @@ dsh plugin --profile web add dshmarket
 
 ### Just for Fun
 
+- [xczhanjun/lazeword](https://github.com/xczhanjun/lazeword) - A cozy offline vocabulary trainer for the whole family: 1094 curated words, spaced repetition, 6 quiz types, spelling games and a lazy large-screen mode; opens as a sidebar panel and also runs standalone as one HTML file.
 - [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) - Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.
 - [omdsh-dev/dsh-gomoku](https://github.com/omdsh-dev/dsh-gomoku) - Play Gomoku against the AI, or let two AIs battle it out.
 - [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) - Fixes the bug where your account can't lose money while you code.
