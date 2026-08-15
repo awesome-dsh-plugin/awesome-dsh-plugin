@@ -413,6 +413,7 @@ dsh plugin --profile web add dshmarket
 - [yangyongzhen/dsh-scheduler](https://github.com/yangyongzhen/dsh-scheduler) - Cron/one-shot scheduled tasks: run shell commands or fire webhooks on a schedule, with optional ServerChan/DingTalk/Feishu/webhook delivery of results.
 - [yangyongzhen/dsh-git-workflow](https://github.com/yangyongzhen/dsh-git-workflow) - Conventional-commit enforcement, changelog generation, PR summaries and branch pushes through the plain git CLI.
 - [yangyongzhen/dsh-article-publish](https://github.com/yangyongzhen/dsh-article-publish) - Publish articles to CSDN / Juejin / CNBlog directly from the session, no external server.
+- [lucas-ward/dsh-ci-context](https://github.com/lucas-ward/dsh-ci-context) - Injects allowlisted GitHub Actions and GitLab CI run metadata into agent context without reading logs, credentials, or provider APIs.
 
 ### Notifications & Integrations
 
