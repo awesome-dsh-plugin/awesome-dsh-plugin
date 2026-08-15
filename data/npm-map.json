@@ -843,6 +843,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/mayf3/dsh-session-doctor": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/Meredith2328/dsh-sticky-note": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1287,6 +1291,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Tommy00748/dsh-theme-cyberpunk2077": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/TonyDua/dsh-web-search-exa": {
   "npm": "@tonydua/dsh-web-search-exa",
   "checkedAt": "2026-08-14"
@@ -1417,6 +1425,10 @@
  },
  "https://github.com/x2802490130-prog/dsh-balance-float": {
   "npm": "dsh-balance-float",
+  "checkedAt": "2026-08-15"
+ },
+ "https://github.com/x2802490130-prog/dsh-lan-pass": {
+  "npm": "dsh-lan-pass",
   "checkedAt": "2026-08-15"
  },
  "https://github.com/xiaoyuyu6420/dsh-backup": {

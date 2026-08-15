@@ -4,7 +4,28 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-15T01:07:11.296Z</updated>
+  <updated>2026-08-15T01:08:19.847Z</updated>
+  <entry>
+    <title>x2802490130-prog/dsh-lan-pass</title>
+    <id>https://github.com/x2802490130-prog/dsh-lan-pass</id>
+    <link href="https://github.com/x2802490130-prog/dsh-lan-pass"/>
+    <updated>2026-08-15T01:08:19.847Z</updated>
+    <summary>A LAN password gate for the Web UI: phones and tablets on the same network log in with a shared key and see the same sessions in real time, with a built-in randomUUID polyfill for plain-HTTP origins.</summary>
+  </entry>
+  <entry>
+    <title>Tommy00748/dsh-theme-cyberpunk2077</title>
+    <id>https://github.com/Tommy00748/dsh-theme-cyberpunk2077</id>
+    <link href="https://github.com/Tommy00748/dsh-theme-cyberpunk2077"/>
+    <updated>2026-08-15T01:08:19.847Z</updated>
+    <summary>Cyberpunk 2077 / Night City theme: NC yellow and neon cyan identity, CRT scanlines, Kiroshi hover lock-on, combat-state HUD, synthesized typewriter and message SFX, and hidden easter eggs (relic / johnny).</summary>
+  </entry>
+  <entry>
+    <title>mayf3/dsh-session-doctor</title>
+    <id>https://github.com/mayf3/dsh-session-doctor</id>
+    <link href="https://github.com/mayf3/dsh-session-doctor"/>
+    <updated>2026-08-15T01:08:19.847Z</updated>
+    <summary>Diagnose, unstick, and read DSH sessions: list sessions with agent status, read conversations, diagnose stuck agents, recover them with cancel+keepInbox, and send messages to other sessions.</summary>
+  </entry>
   <entry>
     <title>Semidia/dsh-session-manager</title>
     <id>https://github.com/Semidia/dsh-session-manager</id>
@@ -193,26 +214,5 @@
     <link href="https://github.com/Cavan-Ou/dsh-observation-journal"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>Zero-touch runtime telemetry for DSH: every session auto-writes task, model tier, tools, failures, duration, status into a human-readable journal with a stats section (pure observer — no tools, no LLM calls, no injection).</summary>
-  </entry>
-  <entry>
-    <title>tianyaZTY/dsh-hot-plugin-host</title>
-    <id>https://github.com/tianyaZTY/dsh-hot-plugin-host</id>
-    <link href="https://github.com/tianyaZTY/dsh-hot-plugin-host"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Runtime plugin loading for the Web UI: a watched hot directory installs/updates client-plugin bundles live on every open page, no restart. Includes a right-column subagent dashboard example.</summary>
-  </entry>
-  <entry>
-    <title>609476965/dsh-LorebookMD</title>
-    <id>https://github.com/609476965/dsh-LorebookMD</id>
-    <link href="https://github.com/609476965/dsh-LorebookMD"/>
-    <updated>2026-08-14T17:58:35.167Z</updated>
-    <summary>Import SillyTavern/TavernAI character cards and world books, save them as local Markdown lore documents, and generate novel prose from your prompts with the world settings as reference.</summary>
-  </entry>
-  <entry>
-    <title>liqichen/dsh-plugin-manager</title>
-    <id>https://github.com/liqichen/dsh-plugin-manager</id>
-    <link href="https://github.com/liqichen/dsh-plugin-manager"/>
-    <updated>2026-08-14T17:54:16.456Z</updated>
-    <summary>GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.</summary>
   </entry>
 </feed>

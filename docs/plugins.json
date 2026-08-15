@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-15",
- "count": 393,
+ "count": 396,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -1387,6 +1387,21 @@
    "added": "2026-08-15"
   },
   {
+   "name": "dsh-lan-pass",
+   "owner": "x2802490130-prog",
+   "url": "https://github.com/x2802490130-prog/dsh-lan-pass",
+   "page": "https://awesome-dsh-plugin.com/p/x2802490130-prog/dsh-lan-pass/",
+   "category": "ui",
+   "description": {
+    "en": "A LAN password gate for the Web UI: phones and tablets on the same network log in with a shared key and see the same sessions in real time, with a built-in randomUUID polyfill for plain-HTTP origins.",
+    "zh": "Web UI 局域网密码门禁：同网手机/平板输共享密钥登录，会话与电脑实时同步，内置 randomUUID polyfill。"
+   },
+   "npm": "dsh-lan-pass",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-lan-pass",
+   "added": "2026-08-15"
+  },
+  {
    "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
@@ -1504,6 +1519,21 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:SamizuHM/dsh-client-ui-theme-xp",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-theme-cyberpunk2077",
+   "owner": "Tommy00748",
+   "url": "https://github.com/Tommy00748/dsh-theme-cyberpunk2077",
+   "page": "https://awesome-dsh-plugin.com/p/Tommy00748/dsh-theme-cyberpunk2077/",
+   "category": "theme",
+   "description": {
+    "en": "Cyberpunk 2077 / Night City theme: NC yellow and neon cyan identity, CRT scanlines, Kiroshi hover lock-on, combat-state HUD, synthesized typewriter and message SFX, and hidden easter eggs (relic / johnny).",
+    "zh": "Cyberpunk 2077 / 夜之城主题：NC 黄 × 霓虹青配色、CRT 扫描线、Kiroshi 悬停锁定、战斗状态 HUD、合成打字机与消息音效，以及隐藏彩蛋（relic / johnny）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Tommy00748/dsh-theme-cyberpunk2077",
    "added": "2026-08-15"
   },
   {
@@ -1939,6 +1969,21 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:ishuowang/dsh-sideband",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-session-doctor",
+   "owner": "mayf3",
+   "url": "https://github.com/mayf3/dsh-session-doctor",
+   "page": "https://awesome-dsh-plugin.com/p/mayf3/dsh-session-doctor/",
+   "category": "session",
+   "description": {
+    "en": "Diagnose, unstick, and read DSH sessions: list sessions with agent status, read conversations, diagnose stuck agents, recover them with cancel+keepInbox, and send messages to other sessions.",
+    "zh": "会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:mayf3/dsh-session-doctor",
    "added": "2026-08-15"
   },
   {

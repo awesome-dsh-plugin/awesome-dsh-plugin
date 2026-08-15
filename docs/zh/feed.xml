@@ -4,7 +4,28 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-15T01:07:11.296Z</updated>
+  <updated>2026-08-15T01:08:19.847Z</updated>
+  <entry>
+    <title>x2802490130-prog/dsh-lan-pass</title>
+    <id>https://github.com/x2802490130-prog/dsh-lan-pass</id>
+    <link href="https://github.com/x2802490130-prog/dsh-lan-pass"/>
+    <updated>2026-08-15T01:08:19.847Z</updated>
+    <summary>Web UI 局域网密码门禁：同网手机/平板输共享密钥登录，会话与电脑实时同步，内置 randomUUID polyfill。</summary>
+  </entry>
+  <entry>
+    <title>Tommy00748/dsh-theme-cyberpunk2077</title>
+    <id>https://github.com/Tommy00748/dsh-theme-cyberpunk2077</id>
+    <link href="https://github.com/Tommy00748/dsh-theme-cyberpunk2077"/>
+    <updated>2026-08-15T01:08:19.847Z</updated>
+    <summary>Cyberpunk 2077 / 夜之城主题：NC 黄 × 霓虹青配色、CRT 扫描线、Kiroshi 悬停锁定、战斗状态 HUD、合成打字机与消息音效，以及隐藏彩蛋（relic / johnny）。</summary>
+  </entry>
+  <entry>
+    <title>mayf3/dsh-session-doctor</title>
+    <id>https://github.com/mayf3/dsh-session-doctor</id>
+    <link href="https://github.com/mayf3/dsh-session-doctor"/>
+    <updated>2026-08-15T01:08:19.847Z</updated>
+    <summary>会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。</summary>
+  </entry>
   <entry>
     <title>Semidia/dsh-session-manager</title>
     <id>https://github.com/Semidia/dsh-session-manager</id>
@@ -193,26 +214,5 @@
     <link href="https://github.com/Cavan-Ou/dsh-observation-journal"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>DeepSeek Harness 零侵入运行事实遥测：每个会话自动把任务/模型档位/工具/失败/时长/状态写入人机共读观测卡并附统计区（纯观察者——零工具、零 LLM、零注入）。</summary>
-  </entry>
-  <entry>
-    <title>tianyaZTY/dsh-hot-plugin-host</title>
-    <id>https://github.com/tianyaZTY/dsh-hot-plugin-host</id>
-    <link href="https://github.com/tianyaZTY/dsh-hot-plugin-host"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Web UI 运行时插件加载：监视热目录，运行中安装/更新客户端插件 bundle，所有页面即时生效，免重启。附子智能体看板示例。</summary>
-  </entry>
-  <entry>
-    <title>609476965/dsh-LorebookMD</title>
-    <id>https://github.com/609476965/dsh-LorebookMD</id>
-    <link href="https://github.com/609476965/dsh-LorebookMD"/>
-    <updated>2026-08-14T17:58:35.167Z</updated>
-    <summary>导入酒馆（SillyTavern/TavernAI）角色卡与世界书，落地为本地 Markdown 设定文档，激活创作模式后根据用户输入、参考世界书创作小说。</summary>
-  </entry>
-  <entry>
-    <title>liqichen/dsh-plugin-manager</title>
-    <id>https://github.com/liqichen/dsh-plugin-manager</id>
-    <link href="https://github.com/liqichen/dsh-plugin-manager"/>
-    <updated>2026-08-14T17:54:16.456Z</updated>
-    <summary>在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。</summary>
   </entry>
 </feed>
