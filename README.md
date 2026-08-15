@@ -237,6 +237,7 @@ dsh plugin --profile web add dshmarket
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) - Runs open-mcp-apps inside DSH: every MCP app gets its own sidebar container with a separate workspace, session, and App mode, an agent status strip under the app, and inline app rendering in ordinary chats.
 - [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) - Shows the current conversation's working directory in a draggable directory panel with adjustable opacity.
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) - Live subagent run monitor for the Web UI: a sidebar footer trigger plus a fixed top-right card panel showing each subagent of the current session in real time (running/elapsed, terminal outcomes, tree indent), with one-click jump into the child conversation and a return button, refresh-surviving and mobile-hidden by default.
+- [YEYEYEYESHIFU/dsh-session-hotkeys](https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys) - Session hotkeys for the Web UI: Alt+1-9 positional switching, pin-slot tri-state, a sidebar highlight nav mode, new/rename/archive session shortcuts, and a rebindable panel with arrow-key navigation.
 ### Themes & Appearance
 
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
