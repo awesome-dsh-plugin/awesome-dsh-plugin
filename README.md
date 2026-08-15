@@ -610,6 +610,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) - Runtime-switchable model output styles with Claude Code outputStyles parity: a /style command, per-session persistence over the output_style domain, systemPrompt injection, six built-in styles, custom Markdown/JSON libraries, and a web picker.
 - [PerryLink/dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) - Claude Code-style declarative permission rules: ordered allow/deny/ask YAML rules matching tool names, arguments, workspace paths, and agent identity on the tools/pre-execute waterfall, with full session-log audit, dry-run mode, and hot reload.
 - [HuiHuitie-zhu/dsh-check-update](https://github.com/HuiHuitie-zhu/dsh-check-update) - Update checker (npm edition): a settings page comparing local and latest versions of @deepseek-ai/dsh and every installed plugin, with a red-dot nav reminder and ready-made update commands.
+- [izz-BLUE/dsh-devtools](https://github.com/izz-BLUE/dsh-devtools) - Metadata-first runtime profiler for DSH agents: turn/step traces, model and tool wall-time timelines, provider usage, retries, errors, and live or historical sessions.
 ### Plugin Markets & Managers
 
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) - (Recommended) The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.
