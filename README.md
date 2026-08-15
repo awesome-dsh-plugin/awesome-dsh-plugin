@@ -214,6 +214,7 @@ dsh plugin --profile web add dshmarket
 - [1123762794/dsh-web-restart](https://github.com/1123762794/dsh-web-restart) - One-click restart button for the DSH Web UI: a sidebar footer button that restarts the dsh web process with a single click and persists across the restart it triggers.
 - [SherUnlocked-4869/dsh-plugin-msg-nav](https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav) - Conversation node navigation rail for the DSH Web UI: one dash per user message on the right edge, reading-position tracking, hover preview card, click-to-jump with highlight line, sliding window, and auto-hide.
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) - Archived conversations list in the sidebar footer with read-only previews of the most recent messages, for sessions the product deliberately keeps hidden and unreopenable.
+- [cindyguyuehu123/dsh-mobile](https://github.com/cindyguyuehu123/dsh-mobile) - Use DSH from iPhone/iPad: an explicit-opt-in LAN reverse proxy (Host/Origin rewrite through the loopback trust fence, WebSocket upgrades included), iOS PWA chrome (home-screen icon, standalone meta, viewport-fit), and touch/mobile CSS (safe areas, keyboard lifting, composer row fit).
 ### Themes & Appearance
 
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
