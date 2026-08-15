@@ -22,5 +22,9 @@
   ],
   "devDependencies": {
     "marked": "^18.0.9"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "scripts": {
+    "preinstall": "node -e \"const a=process.env.npm_config_user_agent||'';if(!/pnpm/.test(a)){console.error('[preinstall] 本项目约定使用 pnpm 安装依赖，请先执行 npm i -g pnpm；已拦截 npm/yarn。');process.exit(1)}\""
   }
 }
