@@ -233,6 +233,7 @@ dsh plugin --profile web add dshmarket
 - [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) - Left-edge user-Turn navigation rail with reading-position highlighting, hover previews of per-turn metrics and model-answer excerpts, keyboard and click-to-jump controls, and local conversation search.
 - [guo-ziao/dsh-interrupt-button](https://github.com/guo-ziao/dsh-interrupt-button) - A green interrupt button beside the send box: silently stops a running agent, which then summarizes its progress and asks for your new requirements, with a customizable interrupt prompt.
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) - Runs open-mcp-apps inside DSH: every MCP app gets its own sidebar container with a separate workspace, session, and App mode, an agent status strip under the app, and inline app rendering in ordinary chats.
+- [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) - Shows the current conversation's working directory in a draggable directory panel with adjustable opacity.
 ### Themes & Appearance
 
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
