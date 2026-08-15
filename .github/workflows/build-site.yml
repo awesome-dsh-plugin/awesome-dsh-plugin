@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '23 2 * * *'
   workflow_dispatch:
+    inputs:
+      probe_all:
+        description: Re-probe every entry, ignoring cached verdicts
+        type: boolean
+        default: false
   push:
     branches: [main]
     # No paths filter, deliberately: every push must either supersede the
@@ -52,6 +57,11 @@ jobs:
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The nightly run is the authoritative refresh: it re-checks every
+          # entry regardless of cached verdicts, so a plugin that publishes to
+          # npm can never be stuck on a stale "not published" (see #487).
+          # Push-triggered runs stay incremental.
+          PROBE_ALL: ${{ (github.event_name == 'schedule' || inputs.probe_all) && '1' || '' }}
         run: |
           node scripts/probe-npm.mjs
           node scripts/probe-stars.mjs
