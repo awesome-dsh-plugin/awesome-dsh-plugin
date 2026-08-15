@@ -273,6 +273,7 @@ dsh plugin --profile web add dshmarket
 - [Boliban/dsh-enter-customizer](https://github.com/Boliban/dsh-enter-customizer) - Take over the system input shortcuts for the chat input box and configure behavior independently for each shortcut.
 - [wsxwj123/dsh-plugins#dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager) - Delete sessions with a 5-second undo and a recycle bin, plus an archive view to browse and unarchive, for the DSH Web GUI.
 - [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) - Move a session to another folder from the Web UI via drag & drop or a menu picker, permanently delete a session with a risk-consent dialog, and AI-rename a session by summarizing the whole conversation (typo-aware). Each action also ships as an agent tool.
+- [dylan121322/dsh-session-unarchive](https://github.com/dylan121322/dsh-session-unarchive) - Restore archived sessions to their original workspace from the Web GUI sidebar.
 
 ### Memory
 
