@@ -1,0 +1,29 @@
+name: PR check
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # added-date derivation walks the README's history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: awesome-lint
+        run: npx awesome-lint
+      - name: Build (locale parity, date derivation, templates)
+        # probes are skipped on purpose: the build tolerates missing probe
+        # data, and this keeps the check token-free and fork-safe
+        run: node scripts/build-site.mjs
