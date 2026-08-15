@@ -341,6 +341,7 @@ dsh plugin --profile web add dshmarket
 - [Huang-zhishi/dsh-plugin-call-trace](https://github.com/Huang-zhishi/dsh-plugin-call-trace) - Persistent model tool-call trace recorder: every tool call is durably written to a JSONL file that survives restarts, queryable via a structured call_trace tool and a callTraceHistory service, with size rotation and an optional floating canvas UI add-on.
 ### Skills
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
+- [dhicoc/dsh-wuyun-liuqi](https://github.com/dhicoc/dsh-wuyun-liuqi) - Complete wuyun-liuqi (five-evolutions-six-qi / 五运六气) Traditional Chinese Medicine skill pack as a DeepSeek Harness Cordis plugin: annual and guest-qi calculation, clinical pattern differentiation, and pathogenesis reasoning.
 - [creght-dev/skills](https://github.com/creght-dev/skills) - Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.
 - [zhaiyateng/dsh-design-skills](https://github.com/zhaiyateng/dsh-design-skills) - Design-aesthetics skill pack (10 styles: dark SaaS, minimal white, neumorphism, brutalism, glassmorphism, Japanese minimal, bento grid, cyberpunk, vaporwave, art deco) with runnable landing-page demos: tokens, component rules, forbidden lists, and acceptance checklists per style.
 
