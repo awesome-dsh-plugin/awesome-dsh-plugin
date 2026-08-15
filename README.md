@@ -360,6 +360,7 @@ dsh plugin --profile web add dshmarket
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) - Hook DeepSeek Harness into a Hermes pipeline: dispatch-spec template, model-tier routing, orchestrator-run quality gates, git single-writer rule, as a SKILL.md pack (bundle installable).
 - [linxichen/dsh-rigorquant](https://github.com/linxichen/dsh-rigorquant) - RigorQuant preset + skill pack: unattended walled multi-agent research for empirical and computational mathematics (economics, finance, portfolio), with a four-part pre-implementation check battery and a jacobian/Lean escalation lane.
 ### Workflow & Automation
+- [nyantused-cpun/folio](https://github.com/nyantused-cpun/folio) - Folio (兰亭): consulting document-generation engine as a native DSH plugin stack — 15 schema-validated tools, session-protocol events (auto session-start, auto-save), L0 guard, agent preset, swappable methodology packs; zero-key start under DSH (LLM_MODE=host).
 
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) - Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.
 - [icetomoyo/dsh_workflow](https://github.com/icetomoyo/dsh_workflow) - UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.
