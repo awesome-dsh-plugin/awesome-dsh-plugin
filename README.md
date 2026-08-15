@@ -186,6 +186,7 @@ dsh plugin --profile web add dshmarket
 - [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) - Delete DSH sessions from the web UI and desktop client: header danger button and session-row menu item with a risk-consent dialog; host endpoint and agent tool remove the session log, projection cache, and workspace accounting.
 - [huguangyu666/dsh-plugin-session-import](https://github.com/huguangyu666/dsh-plugin-session-import) - Import claude-code / codex / reasonix / zcode chat history into dsh sessions: workspace binding, tool calls preserved, oversized-session protection, zcode compaction restore.
 - [beijingwahw/dsh-companion](https://github.com/beijingwahw/dsh-companion) - Four-module session companion: smart conversation export (Markdown/PDF/JSON/PNG long-image with privacy redaction and batch ZIP), context handoff summaries with template save/import, API cost optimization (live official pricing, peak/off-peak scheduling, daily/monthly budgets, model routing), and global conversation search with in-chat find (Ctrl+F, CSS Custom Highlight API).
+- [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) - Asynchronous, LLM-summarized context relay between DSH Sessions and authorized Agent Team Rooms, with instant snapshots and scheduled digests.
 
 ### Memory
 
