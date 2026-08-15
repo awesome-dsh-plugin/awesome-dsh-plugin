@@ -476,7 +476,6 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) — DSH 插件开发知识库，作为按需加载的 agent 技能随 bundle 安装：官方约束、任务工作流、API 参考与社区踩坑，写插件时让 DSH 自己查。
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) — 玩机器（6657 直播间）烂梗技能包：22771 条真实弹幕蒸馏而成，涵盖玩机器式弹幕烂梗、CS×DOTA 双料梗、选手锐评与解说吐槽。
 - [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) — 提交前 PR 顾问：346+ 反模式规则覆盖 61 个仓库，Coach 模式迭代改进，Harvest 模式提取可复用经验，MCP 服务器支持 DSH 技能集成。
-- [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — AI 编程 Agent 的 Git 失败记忆库：零依赖，289+ 验证过的调试经验，0.02 秒按错误信息搜索，MCP 服务器支持。
 ### 🔁 工作流与自动化
 
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) — 带经验肌肉记忆的任务规划：条件反射检索历史方案 + LLM 能力匹配 + 经验自动沉淀。
