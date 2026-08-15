@@ -55,6 +55,13 @@ for (const [url, e] of base.entries) {
   for (const { loc, entries: map } of others) {
     const t = map.get(url)
     if (!t) { console.error(`${loc.readme} missing: ${url}`); ok = false; parityBroken = true; break }
+    // Categories must agree too. The site takes them from the base locale, so a
+    // translated file can drift under the wrong heading and stay invisible to
+    // both the build and a URL-only parity check — that is how #343 happened.
+    if (t.cat !== e.cat) {
+      console.error(`${loc.readme} files ${url} under "${loc.categories[t.cat]}" but ${base.loc.readme} has it under "${base.loc.categories[e.cat]}"`)
+      parityBroken = true
+    }
     descs[loc.code] = t.desc
   }
   if (ok) entries.push({ name: e.name, url: e.url, cat: e.cat, owner: url.split('/')[3], descs })
