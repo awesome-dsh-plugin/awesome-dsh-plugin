@@ -181,6 +181,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) - Terminal-style input history for the web composer: edge-first arrow-key recall with exact draft and caret restore, browser-local persisted history, Ctrl+R reverse search, and sliding-context awareness (compaction summaries join recall and search).
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) - Codex-style tool call folding, collapsing multiple tool calls into a single line.
 - [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) - Real-time DeepSeek API account balance in the composer dock with manual or custom-interval auto-refresh.
+- [XiLuovo/dsh-session-timeline](https://github.com/XiLuovo/dsh-session-timeline) - Session timeline down the left of the conversation: every user message at a glance, current-message tracking, hover preview of the message and its reply, click to jump, collapsible.
 ### Themes & Appearance
 
 - [RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) - One-command skin plugin: 8 original themes, translucent wallpaper with opacity/blur, per-user accent, and shareable theme-pack import/export, favorites and surprise-me — purely native on DSH's token system.
