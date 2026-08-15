@@ -310,6 +310,7 @@ dsh plugin --profile web add dshmarket
 - [wsxwj123/dsh-plugins#dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager) - Delete sessions with a 5-second undo and a recycle bin, plus an archive view to browse and unarchive, for the DSH Web GUI.
 - [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) - Move a session to another folder from the Web UI via drag & drop or a menu picker, permanently delete a session with a risk-consent dialog, and AI-rename a session by summarizing the whole conversation (typo-aware). Each action also ships as an agent tool.
 - [dylan121322/dsh-session-unarchive](https://github.com/dylan121322/dsh-session-unarchive) - Restore archived sessions to their original workspace from the Web GUI sidebar.
+- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) - Recall any user message: rolls the conversation (official session fork) and workspace files (per-message shadow git snapshots) back to before it, with a diff-preview confirmation panel.
 
 ### Memory
 
