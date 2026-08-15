@@ -558,6 +558,7 @@ dsh plugin --profile web add dshmarket
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) - Barrage-meme skill distilled from 22,771 real messages in the 6657 live room: wanjiqi-style banter, CS and DOTA cross-memes, player roasting and casting commentary.
 - [nyantused-cpun/folio#plugins/folio-tools](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-tools) - Folio (兰亭) @folio/dsh-tools: 15 schema-validated tools (memory + quality gates) of the consulting document-generation engine; pair with @folio/dsh-events for the full session protocol.
 - [nyantused-cpun/folio#plugins/folio-events](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events) - Folio (兰亭) @folio/dsh-events: session-protocol events — auto session-start reminder + auto-save on session close; pair with @folio/dsh-tools.
+- [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) - Four GitHub workflow skills for PR triage, review feedback, GitHub Actions diagnosis, and safe draft-PR publishing, reusing existing DSH capabilities with gh/git fallbacks.
 ### Workflow & Automation
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) - Installs two selectable Agent Presets: a shell-restricted general-purpose agent and a repository-focused coding agent.
 
