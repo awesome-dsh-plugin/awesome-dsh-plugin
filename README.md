@@ -215,6 +215,7 @@ dsh plugin --profile web add dshmarket
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) - Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.
 
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) - Rewind conversation and workspace state, powered by a persistent Change Ledger.
+- [GengDaPeng/dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) - Cross-session agent messaging for DeepSeek Harness with session discovery, offline delivery, delivery receipts, and sender-session navigation.
 - [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) - Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.
 - [dongsheng123132/task-passport](https://github.com/dongsheng123132/task-passport) - Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.
 - [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) - Cross-session task queue with handoff notes: sessions and subagents push, claim, complete and cancel tasks on a shared file-backed queue, and leave a handoff summary for whoever picks up next.
