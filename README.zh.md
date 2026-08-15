@@ -631,6 +631,7 @@ dsh plugin --profile web add dshmarket
 ### 🛒 插件市场与管理
 
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) — （推荐）装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。
+- [zoahdev/dsh-subscribe](https://github.com/zoahdev/dsh-subscribe/tree/main/plugin) ? Steam ??????536 ??????DSH ?????/??/?????? CLI ?????????
 - [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) — dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。
 - [whyihaveyou/dsh-suite#plugin-manager](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager) — DSH Web UI 内置插件商店：浏览、搜索、一键安装、兼容性徽章。
 - [loguhan/dsh-workshop](https://github.com/loguhan/dsh-workshop) — DSH Web UI 的 Steam 创意工坊式插件商店：浏览、搜索并一键安装社区插件，支持镜像加速、进度 UI、安全检测与中文描述。
