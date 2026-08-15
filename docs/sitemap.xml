@@ -1409,6 +1409,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Noelune/unified-agent-memory/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/FleetingEcho/dsh-handoff/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/FleetingEcho/dsh-handoff/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/FleetingEcho/dsh-handoff/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/FleetingEcho/dsh-handoff/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/p/Edge-Echo/dsh-mcp-bridge/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4607,6 +4615,14 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Noelune/unified-agent-memory/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Noelune/unified-agent-memory/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Noelune/unified-agent-memory/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/FleetingEcho/dsh-handoff/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/FleetingEcho/dsh-handoff/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/FleetingEcho/dsh-handoff/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/FleetingEcho/dsh-handoff/"/>
   </url>
   <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/Edge-Echo/dsh-mcp-bridge/</loc>

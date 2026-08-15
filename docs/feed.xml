@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-15T01:16:49.170Z</updated>
+  <updated>2026-08-15T01:22:41.608Z</updated>
+  <entry>
+    <title>FleetingEcho/dsh-handoff</title>
+    <id>https://github.com/FleetingEcho/dsh-handoff</id>
+    <link href="https://github.com/FleetingEcho/dsh-handoff"/>
+    <updated>2026-08-15T01:22:41.608Z</updated>
+    <summary>Self-maintaining handoff memory per working directory and git branch: records turns, folds them into concise Markdown, and injects the result into future sessions from ~/.agent/agent-handoff, byte-compatible with pi-handoff.</summary>
+  </entry>
   <entry>
     <title>sjh9714/clippy-harness#plugin</title>
     <id>https://github.com/sjh9714/clippy-harness/tree/master/plugin</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/linxichen/dsh-rigorquant"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>RigorQuant preset + skill pack: unattended walled multi-agent research for empirical and computational mathematics (economics, finance, portfolio), with a four-part pre-implementation check battery and a jacobian/Lean escalation lane.</summary>
-  </entry>
-  <entry>
-    <title>xmanrui/dsh-weixin</title>
-    <id>https://github.com/xmanrui/dsh-weixin</id>
-    <link href="https://github.com/xmanrui/dsh-weixin"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Connect a Weixin bot to DeepSeek Harness by scanning a QR code.</summary>
   </entry>
 </feed>

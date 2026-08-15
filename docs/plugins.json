@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-15",
- "count": 400,
+ "count": 401,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -2330,6 +2330,21 @@
    "stars": 2,
    "install": "dsh plugin --profile web add dsh-unified-agent-memory",
    "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-handoff",
+   "owner": "FleetingEcho",
+   "url": "https://github.com/FleetingEcho/dsh-handoff",
+   "page": "https://awesome-dsh-plugin.com/p/FleetingEcho/dsh-handoff/",
+   "category": "memory",
+   "description": {
+    "en": "Self-maintaining handoff memory per working directory and git branch: records turns, folds them into concise Markdown, and injects the result into future sessions from ~/.agent/agent-handoff, byte-compatible with pi-handoff.",
+    "zh": "每个工作目录与 git 分支自动维护 handoff.md：记录回合、折叠为简洁 Markdown 并注入后续会话，存储于 ~/.agent/agent-handoff，与 pi-handoff 字节级兼容。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:FleetingEcho/dsh-handoff",
+   "added": "2026-08-15"
   },
   {
    "name": "dsh-mcp-bridge",

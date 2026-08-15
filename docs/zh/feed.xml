@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-15T01:16:49.170Z</updated>
+  <updated>2026-08-15T01:22:41.608Z</updated>
+  <entry>
+    <title>FleetingEcho/dsh-handoff</title>
+    <id>https://github.com/FleetingEcho/dsh-handoff</id>
+    <link href="https://github.com/FleetingEcho/dsh-handoff"/>
+    <updated>2026-08-15T01:22:41.608Z</updated>
+    <summary>每个工作目录与 git 分支自动维护 handoff.md：记录回合、折叠为简洁 Markdown 并注入后续会话，存储于 ~/.agent/agent-handoff，与 pi-handoff 字节级兼容。</summary>
+  </entry>
   <entry>
     <title>sjh9714/clippy-harness#plugin</title>
     <id>https://github.com/sjh9714/clippy-harness/tree/master/plugin</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/linxichen/dsh-rigorquant"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>RigorQuant 预设与技能包：面向实证与计算数学（经济学、金融、组合）的无人值守隔离多智能体研究，内置四重实现前校验与 jacobian/Lean 升级通道。</summary>
-  </entry>
-  <entry>
-    <title>xmanrui/dsh-weixin</title>
-    <id>https://github.com/xmanrui/dsh-weixin</id>
-    <link href="https://github.com/xmanrui/dsh-weixin"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>通过微信扫码把微信机器人接入 DeepSeek Harness。</summary>
   </entry>
 </feed>
