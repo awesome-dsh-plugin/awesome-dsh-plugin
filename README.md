@@ -378,6 +378,8 @@ dsh plugin --profile web add dshmarket
 - [itr-del/dsh-feishu](https://github.com/itr-del/dsh-feishu) - Feishu (Lark) IM bridge for DeepSeek Harness via `dsh plugin add`; one DM user to one persistent dsh session, with full debugging docs.
 - [wz-heng/dsh-feishu-bridge](https://github.com/wz-heng/dsh-feishu-bridge) - Fail-closed Feishu (Lark) channel bridge: chat with a bot, get dsh agent turns back. Official-Python-SDK-only integration (exact-pinned); deny-by-default allowlist, webhook signature/timestamp/replay verification, per-chat sticky sessions; bilingual docs.
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) - Notification outbox: agent proactively notifies via toast / Chinese TTS voice / sound effects (explosion, victory, alarm), 60s confirmation window voice-calls you back, volume boost, settings panel.
+- [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) - Connect a Weixin bot to DeepSeek Harness by scanning a QR code.
+- [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) - Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).
 
 ### Models & Providers
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) - Visual GitHub login without a terminal: in-window device flow, token synced into the gh CLI, and host status/launch endpoints.
