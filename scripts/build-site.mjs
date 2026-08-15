@@ -23,7 +23,7 @@ const DATES_FILE = 'data/added-dates.json'
 fs.mkdirSync('docs', { recursive: true })
 for (const f of fs.readdirSync('site/assets')) fs.copyFileSync(`site/assets/${f}`, `docs/${f}`)
 const NPM_MAP_FILE = 'data/npm-map.json'
-const CAT_IDS = ['ui', 'theme', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'model', 'dev', 'fun']
+const CAT_IDS = ['market', 'ui', 'theme', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'model', 'dev', 'fun']
 
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -146,12 +146,20 @@ const jsonld = (url) => JSON.stringify({
   itemListElement: ordered.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 
+// Ranking: stars, except entries pinned to the head of their own category.
+// Scoped to a single category on purpose — the home grid stays a global star
+// ranking, while a category view always leads with its pinned entry.
+const PINNED = { 'https://github.com/dsh-market/dsh-market': 1 }
+const byRank = (a, b) =>
+  (a.cat === b.cat ? (PINNED[b.url] ?? 0) - (PINNED[a.url] ?? 0) : 0)
+  || (b.stars ?? -1) - (a.stars ?? -1)
+
 // star-ranked card grid; `only` limits to one category (category pages)
 function buildRows(loc, only) {
   const group = ordered
     .filter((e) => !only || e.cat === only)
     .slice()
-    .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+    .sort((a, b) => byRank(a, b))
   return group.map((e) => {
     const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
     const short = e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name
@@ -339,7 +347,7 @@ for (const loc of LOCALES) {
 
     const related = ordered
       .filter((r) => r.cat === e.cat && r.url !== e.url)
-      .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+      .sort((a, b) => byRank(a, b))
       .slice(0, 6)
       .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${r.slug}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
       .join('\n')

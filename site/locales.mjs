@@ -32,6 +32,7 @@ export default [
     COPY_LABEL: 'Copy install command',
     COPY_TEXT: 'copy install',
     categories: {
+      market: 'Plugin Markets & Managers',
       ui: 'UI Enhancements',
       theme: 'Themes & Appearance',
       session: 'Sessions & Messages',
@@ -109,6 +110,7 @@ export default [
     COPY_LABEL: '复制安装命令',
     COPY_TEXT: '复制安装命令',
     categories: {
+      market: '插件市场与管理',
       ui: 'UI 增强',
       theme: '主题与外观',
       session: '会话与消息',
