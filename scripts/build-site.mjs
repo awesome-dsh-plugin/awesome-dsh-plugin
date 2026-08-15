@@ -16,6 +16,11 @@ import LOCALES from '../site/locales.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
+
+// docs/ is fully generated: static assets live in site/assets/ and are copied
+// in here, so a from-scratch build (empty docs/) produces the complete site
+fs.mkdirSync('docs', { recursive: true })
+for (const f of fs.readdirSync('site/assets')) fs.copyFileSync(`site/assets/${f}`, `docs/${f}`)
 const NPM_MAP_FILE = 'data/npm-map.json'
 const CAT_IDS = ['ui', 'theme', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'model', 'dev', 'fun']
 

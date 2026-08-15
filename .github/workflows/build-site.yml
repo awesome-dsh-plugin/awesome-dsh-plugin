@@ -7,18 +7,19 @@ on:
   push:
     branches: [main]
     # No paths filter, deliberately. A filtered-out push still advances main
-    # without cancelling an in-flight build, whose push then fails non-ff with
-    # nothing to recover it. Any human push must either supersede the running
-    # build or start one; irrelevant pushes exit at "no changes". Bot pushes
-    # use GITHUB_TOKEN and never trigger workflows, so there is no loop.
+    # without cancelling an in-flight build, whose data/ push then fails
+    # non-ff with nothing to recover it. Any human push must either supersede
+    # the running build or start one; irrelevant pushes still deploy the same
+    # bytes, which Pages treats as a no-op. Bot pushes use GITHUB_TOKEN and
+    # never trigger workflows, so there is no loop.
 
 permissions:
-  contents: write
+  contents: write # data/ probe-cache writeback
+  pages: write
+  id-token: write
 
 # docs/ is a pure function of main's tip, so an older run can only produce
-# stale output — supersede it rather than queueing it. Queueing was the bug:
-# a run is pinned to its trigger SHA, so the queued one woke up behind main
-# and tried to reconcile two full regenerations of docs/.
+# stale output — supersede it rather than queueing it.
 concurrency:
   group: build-site
   cancel-in-progress: true
@@ -26,18 +27,19 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm ci
-      - name: Build and commit
+      - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           # Build against what main actually is, not the SHA that triggered
           # this run — those differ whenever the bot pushed in between.
           git fetch -q origin main
@@ -46,10 +48,18 @@ jobs:
           node scripts/probe-stars.mjs
           node scripts/probe-readmes.mjs
           node scripts/build-site.mjs
-          git add docs README.md README.zh.md data
-          git diff --cached --quiet && echo "no changes" && exit 0
-          git commit -m "chore: rebuild site from README"
-          # Fast-forward or bust. Losing the race means a newer push exists,
-          # and the run it triggered supersedes this one — never rebase
-          # generated output, it conflicts in every file.
+      - name: Commit probe data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && echo "no data changes" && exit 0
+          git commit -m "chore: refresh probe data"
+          # Fast-forward or bust: losing the race means a newer push exists,
+          # and the run it triggered supersedes this one.
           git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
