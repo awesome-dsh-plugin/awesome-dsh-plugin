@@ -43,7 +43,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🎨 UI 增强
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) — Web UI 可自定义键盘快捷键：34 个预置功能（会话、视图、剪贴板、模型、静默权限切换、设置），一键录制自定义组合键，内置快捷键速查表与诊断面板。
-- [AI-Galaxy-GPU/dsh-answer-sound](https://github.com/AI-Galaxy-GPU/dsh-answer-sound) — Web UI 回答音效：agent 开始/完成/出错时播放提示音，设置页内逐项调节音量、更换自定义音频、总开关一键静音。
+- [zl99103/dsh-answer-sound](https://github.com/zl99103/dsh-answer-sound) — Web UI 回答音效：agent 开始/完成/出错时播放提示音，设置页内逐项调节音量、更换自定义音频、总开关一键静音。
 - [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — DSH 网页中文增强：补全中文界面残留英文、统计行单行完整显示，并提供「增强设置」分区（中文补全 / 统计全显示 / 对话宽度）。
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) — Web UI 语音输入：输入框一键麦克风按钮，基于 Web Speech API 语音转文字填入草稿，可选识别后自动发送。
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) — Web UI 输入框展开/收起：composer 工具行新增 ⬆/⬇ 按钮，一键把输入框扩大到 70vh 高度，方便写长 prompt。
