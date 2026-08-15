@@ -182,6 +182,7 @@ dsh plugin --profile web add dshmarket
 - [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) — 通过 harness 自带的 `sessionQuery` 服务搜索、列出、读取历史与当前会话：部署启用了 SQLite FTS5 索引时走索引，未启用时回退到有上限的倒序扫描。
 - [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) — 在 Web UI 与桌面客户端中删除 DSH 会话：头部危险按钮 + 会话行菜单项，风险确认弹窗，宿主端点与 agent 工具同步清理会话日志、投影缓存与工作区记账。
 - [huguangyu666/dsh-plugin-session-import](https://github.com/huguangyu666/dsh-plugin-session-import) — 把 claude-code / codex / reasonix / zcode 的聊天历史导入为 dsh 会话：工作区绑定、工具调用保留、超长会话保护、zcode 压缩还原。
+- [beijingwahw/dsh-companion](https://github.com/beijingwahw/dsh-companion) — 四模块会话伴侣：对话智能导出（Markdown/PDF/JSON/PNG 长图、隐私脱敏、批量 ZIP）、上下文交接摘要（模板保存与导入继承）、API 成本优化（官方动态计价、峰谷调度、日/月双档预算、模型路由）、全局对话检索与对话内搜索（Ctrl+F、CSS Custom Highlight API）。
 
 ### 🧠 记忆
 

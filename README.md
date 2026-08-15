@@ -184,6 +184,7 @@ dsh plugin --profile web add dshmarket
 - [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) - Search, list and read past and current sessions through the harness's own `sessionQuery` service: uses the SQLite FTS5 index where a deployment enables it, and falls back to a bounded newest-first scan where it does not.
 - [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) - Delete DSH sessions from the web UI and desktop client: header danger button and session-row menu item with a risk-consent dialog; host endpoint and agent tool remove the session log, projection cache, and workspace accounting.
 - [huguangyu666/dsh-plugin-session-import](https://github.com/huguangyu666/dsh-plugin-session-import) - Import claude-code / codex / reasonix / zcode chat history into dsh sessions: workspace binding, tool calls preserved, oversized-session protection, zcode compaction restore.
+- [beijingwahw/dsh-companion](https://github.com/beijingwahw/dsh-companion) - Four-module session companion: smart conversation export (Markdown/PDF/JSON/PNG long-image with privacy redaction and batch ZIP), context handoff summaries with template save/import, API cost optimization (live official pricing, peak/off-peak scheduling, daily/monthly budgets, model routing), and global conversation search with in-chat find (Ctrl+F, CSS Custom Highlight API).
 
 ### Memory
 
