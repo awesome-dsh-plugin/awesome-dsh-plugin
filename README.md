@@ -315,6 +315,8 @@ dsh plugin --profile web add dshmarket
 - [Lum1104/dsh-browser](https://github.com/Lum1104/dsh-browser) - Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.
 - [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) - In-harness plugin market for the dsh web GUI: browse the awesome-dsh-plugin.com catalog and install/uninstall plugins into a profile from Settings → Plugins → Plugin Market.
 - [huey1in/trio](https://github.com/huey1in/trio) - Browser automation (Playwright) with a live view, an MCP server exposing DSH agents to any MCP client, and GitHub issue/PR/webhook review tools.
+- [zoahdev/dsh-github-release-radar](https://github.com/zoahdev/dsh-github-release-radar) - Track releases and stars of any public GitHub repository from inside dsh agents — no API key needed.
+- [zoahdev/dsh-github-intelligence](https://github.com/zoahdev/dsh-github-intelligence) - The most complete GitHub integration for dsh: repo overview, releases, issues, pull requests, contributors, search, and a deep repo report with TTL caching — no API key needed.
 
 - [SamXiaBing/dsh-adb](https://github.com/SamXiaBing/dsh-adb) - ADB device & bench operations for DSH: device discovery, structured logcat (background streaming), apk install, file pull/push, and dumpsys performance snapshots.
 - [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) - One-command backup & restore of DSH user data: /backup, verify, restore, restart-surviving scheduled auto-backup, sha256 checksums and rotation (macOS/Linux/Windows).

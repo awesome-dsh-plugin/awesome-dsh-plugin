@@ -313,6 +313,8 @@ dsh plugin --profile web add dshmarket
 - [Lum1104/dsh-browser](https://github.com/Lum1104/dsh-browser) — Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。
 - [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) — dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。
 - [huey1in/trio](https://github.com/huey1in/trio) — 浏览器自动化（Playwright，带实时画面）+ MCP Server（把 DSH agent 暴露给任何 MCP 客户端）+ GitHub issue/PR/webhook 评审工具。
+- [zoahdev/dsh-github-release-radar](https://github.com/zoahdev/dsh-github-release-radar) — 让 dsh agent 直接查询任意 GitHub 公开仓库的 Release 与星标变化，无需 API Key。
+- [zoahdev/dsh-github-intelligence](https://github.com/zoahdev/dsh-github-intelligence) — 目前最完整的 dsh GitHub 整合：仓库概览、Release、Issue、PR、贡献者、搜索与一键深度报告，内置 TTL 缓存，无需 API Key。
 
 - [SamXiaBing/dsh-adb](https://github.com/SamXiaBing/dsh-adb) — ADB 设备·台架运维工具集：设备发现、结构化 logcat（后台采集）、apk 安装、文件 pull/push、性能快照。
 - [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — 一键备份与恢复 DSH 用户数据：/backup 备份、完整性校验、恢复，定时自动备份（重启续跑），sha256 校验与自动轮换（macOS/Linux/Windows）。
