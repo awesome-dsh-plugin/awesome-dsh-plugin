@@ -357,6 +357,7 @@ dsh plugin --profile web add dshmarket
 - [FuzzySoul/dsh-free-vision](https://github.com/FuzzySoul/dsh-free-vision) - Free vision bridge for text-only models: image understanding, OCR, UI and debug analysis via free-tier providers (Qwen3-VL-Flash, Doubao, DeepSeek-OCR) with a settings GUI.
 - [hellosky983/dsh-qrcode](https://github.com/hellosky983/dsh-qrcode) - Offline QR code (SVG/PNG/ASCII) and barcode (Code128/EAN-13) generator for DeepSeek Harness, no network and no shell.
 - [hellosky983/dsh-skillradar](https://github.com/hellosky983/dsh-skillradar) - Scans the skills visible to the current session and ranks them by relevance to the recent conversation.
+- [baaai123/dsh-memory-protocol](https://github.com/baaai123/dsh-memory-protocol) - Memory protocol enforcement plugin: bridges the opencode-memory MCP server, forces memory_weave before tool calls, auto-ingests turns, and injects memory context into agent steps.
 ### Tools & Capabilities
 - [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) - IMAP/SMTP email tools (list/read/search/send/folders/attachment) with QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud presets, multi-account support and a send-approval gate.
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) - CalDAV calendar tools (list/create/update/delete/search) for Google/iCloud/Nextcloud/custom endpoints, with RRULE expansion.
