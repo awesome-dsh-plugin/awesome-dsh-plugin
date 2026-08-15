@@ -147,6 +147,7 @@ dsh plugin --profile web add dshmarket
 - [PAKIKNOWLEDGE/dsh-client-ui-skin-claude](https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude) - Claude-style skin with a warm-black canvas, clay accent, and serif UI that follows the native light and dark themes.
 - [tianyhjg-lab/dsh-font](https://github.com/tianyhjg-lab/dsh-font) - Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.
 - [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) - DeepSeek-Chat-style blue-whale skin: brand #4D6BFE on light and dark, following the built-in appearance.
+- [chinaRXQ/dsh-wallpaper](https://github.com/chinaRXQ/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: image background with opacity, mask and blur controls.
 
 
 ### Sessions & Messages
