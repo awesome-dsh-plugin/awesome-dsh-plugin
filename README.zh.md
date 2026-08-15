@@ -264,6 +264,7 @@ dsh plugin --profile web add dshmarket
 - [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。
 - [highland0971/dsh-native-memory](https://github.com/highland0971/dsh-native-memory) — 基于 DSH 原生接缝的按工作区记忆：事实与有界常驻档案落在 storage-domain 的 JSON 单元上，写入经人工审批并带 `(sessionId, seq)` 引证，确定性召回 + session-query 全文检索历史会话——无外部服务器、无自建 SQLite。
 
+- [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — DSH 自动记忆插件：三层记忆自动注入与检索、每轮对话自动沉淀、AI 时段问候与三级抽屉、智能检索、日历视图与设置页，支持继承其他 AI 工具的记忆。
 ### 🛠️ 工具与能力
 - [x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) — 写文引擎：用独立 DeepSeek key 分流并发生成草稿/细纲/点子，设定与伏笔管理、语义向量检索、书库（饲料区）、用量总账、机械校对与本地连载计划。
 - [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) — 写文引擎的 host 侧数据通道：把项目分卷、章节状态、书库、全文检索、演化条目与线索图谱以 Typert remote 暴露给客户端写作面板。
