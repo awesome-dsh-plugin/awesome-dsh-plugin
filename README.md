@@ -582,6 +582,7 @@ dsh plugin --profile web add dshmarket
 - [ljsysfurryACE/dsh-agentframe-suite](https://github.com/ljsysfurryACE/dsh-agentframe-suite) - One-command bundle of the three AgentFrame plugins: memory-director, compaction, and aura-scheduler together.
 - [lucky8197/dsh-code-smell](https://github.com/lucky8197/dsh-code-smell) - Code smell radar: statically scans TODO/FIXME debt, stub implementations, long lines, oversized files and duplicated blocks, with severity-sorted read-only fix suggestions.
 - [lucky8197/dsh-git-hygiene](https://github.com/lucky8197/dsh-git-hygiene) - Git hygiene checker: read-only scan of merged and stale branches, oversized tracked files, untracked files and uncommitted work, with cleanup suggestions (it never deletes anything).
+- [lucky8197/dsh-weekly-digest](https://github.com/lucky8197/dsh-weekly-digest) - Weekly digest generator: aggregates git commits, DSH session activity and daily memory entries into a Markdown weekly report, read-only.
 ### Plugin Markets & Managers
 
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) - (Recommended) The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.
