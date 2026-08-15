@@ -171,6 +171,9 @@ dsh plugin --profile web add dshmarket
 - [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) - A DeepSeek Harness appearance plugin that lets you fully customize the Web UI with a custom theme color, background wallpaper, and fine-grained opacity controls.
 - [BeiZi6/dsh-theme-plugin](https://github.com/BeiZi6/dsh-theme-plugin) - Theme studio for the DSH Web GUI: five built-in presets plus fully customizable light/dark palettes (accent, background, foreground, UI and code fonts, translucent sidebar, contrast), hot-swapped instantly and persisted in localStorage.
 
+- [zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme) - Catppuccin theme plugin: Latte, Frappé, Macchiato, and Mocha skins for the DSH Web theme runtime.
+- [zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme) - Solarized and Selenized theme plugin: four faithful palettes registered with the DSH Web theme runtime.
+
 ### Sessions & Messages
 
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) - Visual branch brainstorming that creates an isolated Session for each direction, automates parent, sibling, checkpoint, and return Handoffs, and provides a full tree tab with an optional Better Sidebar view.
