@@ -464,10 +464,10 @@ ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code
 </urlset>
 `)
 
-// keep the hand-written counts in every README in sync
-const enReadme = fs.readFileSync('README.md', 'utf8').replace(/\*\*\d+\*\* plugins/, `**${N}** plugins`)
-fs.writeFileSync('README.md', enReadme)
-const zhReadme = fs.readFileSync('README.zh.md', 'utf8').replace(/\*\*\d+\*\* 个插件/, `**${N}** 个插件`)
-fs.writeFileSync('README.zh.md', zhReadme)
+// shields.io endpoint badge — the READMEs embed this instead of a hand-written
+// count, so the build never has to touch source files
+fs.writeFileSync('docs/count.json', JSON.stringify({
+  schemaVersion: 1, label: 'plugins', message: String(N), color: 'c0392b', cacheSeconds: 3600,
+}) + '\n')
 
-console.log(`site built: ${N} rows × ${LOCALES.length} locales + sitemap, README counts synced`)
+console.log(`site built: ${N} rows × ${LOCALES.length} locales + sitemap + count badge`)
