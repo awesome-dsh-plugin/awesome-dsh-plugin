@@ -572,6 +572,7 @@ dsh plugin --profile web add dshmarket
 - [swaylq/dsh-genie](https://github.com/swaylq/dsh-genie) - Keeps what the agent builds at runtime: turns a `cordis_define` dynamic package into a real installed plugin that survives restart, writing the bundle and registering the profile layer with no pnpm, no network, and no build authorization.
 
 - [YZz-S/dsh-update-checker](https://github.com/YZz-S/dsh-update-checker) - Conversation header badge showing the DeepSeek Harness version, checking npm for the latest release and prompting upgrades.
+- [jorinyang/dsh-clawshell](https://github.com/jorinyang/dsh-clawshell) - Self-healing runtime layer: a resource control loop with strategy switching and repair escalation, error-storm and fiber-failure insight, cross-session knowledge carry-over, a self-healing dashboard and 7 tools.
 ### Plugin Markets & Managers
 
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) - (Recommended) The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.
