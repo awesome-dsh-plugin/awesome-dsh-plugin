@@ -188,6 +188,7 @@ dsh plugin --profile web add dshmarket
 - [huguangyu666/dsh-plugin-session-import](https://github.com/huguangyu666/dsh-plugin-session-import) — 把 claude-code / codex / reasonix / zcode 的聊天历史导入为 dsh 会话：工作区绑定、工具调用保留、超长会话保护、zcode 压缩还原。
 - [beijingwahw/dsh-companion](https://github.com/beijingwahw/dsh-companion) — 四模块会话伴侣：对话智能导出（Markdown/PDF/JSON/PNG 长图、隐私脱敏、批量 ZIP）、上下文交接摘要（模板保存与导入继承）、API 成本优化（官方动态计价、峰谷调度、日/月双档预算、模型路由）、全局对话检索与对话内搜索（Ctrl+F、CSS Custom Highlight API）。
 - [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) — 在 DSH Session 与已授权 Agent Team Room 之间异步传递 LLM 总结的上下文，支持即时快照与定时摘要。
+- [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) — 会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。
 
 ### 🧠 记忆
 
