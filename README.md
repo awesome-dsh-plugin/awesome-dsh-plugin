@@ -60,6 +60,8 @@ dsh plugin --profile web add dshmarket
 
 - [Bernardxu123/dsh-mobile-gate](https://github.com/Bernardxu123/dsh-mobile-gate) - LAN mobile gateway: isolated child-process reverse proxy with first-visit approval, per-device token binding, rate limiting, and mobile layout injection (compact composer pills, randomUUID polyfill).
 
+- [zylzyqzz/dsh-mobile-pwa](https://github.com/zylzyqzz/dsh-mobile-pwa) - Complete mobile PWA for DSH, built on dsh-mobile-gate: secure remote-access gateway plus install-to-homescreen (manifest + service worker), offline capability, touch gestures (pull-to-refresh, edge-swipe back, pinch-zoom font), agent-done push notifications, and touch-first layout — desktop unaffected.
+
 - [Make0209/dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) - GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.
 - [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) - Multi-provider usage dashboard with provider/model token breakdowns, calendar drill-downs, account balances, and OpenCode Go / Z.ai subscription quota tracking.
 - [V-dev-388/dsh-usage-meter](https://github.com/V-dev-388/dsh-usage-meter) - Settings-page usage dashboard: per-provider/model token summary across all sessions, with today/7-day/30-day CSS-bar trends and a cache-hit rate.
