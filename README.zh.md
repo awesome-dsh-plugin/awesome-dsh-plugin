@@ -781,6 +781,7 @@ dsh plugin --profile web add dshmarket
 - [nzl153/pet-whale](https://github.com/nzl153/pet-whale) — 官方鲸鱼轮廓的桌宠：纯 SVG 动画随 agent 状态切换（思考／工作／完成／报错），可戳可拖、双击翻滚，光标停留在身侧会自己避让，7 套色板并跟随亮暗主题，附网页预览可直接试玩。
 
 - [skiuniverse/dsh-running-liang](https://github.com/skiuniverse/dsh-running-liang) — 等待 Agent 回复时的恐龙快跑小游戏：常驻进度条从「梁子」冲向「梁圣」，折叠即暂停、任意键恢复。
+- [ovdoesw/dsh-xiangqi](https://github.com/ovdoesw/dsh-xiangqi) — 卡通小宠物邀请你在 AI 思考间隙下中国象棋：内置引擎、走子记谱导出、可选多模型局势点评。
 ## 贡献
 
 欢迎提 PR 收录你的插件：在 `README.md` 和 `README.zh.md` 的对应分类下各加一行，格式 `- [名称](链接) — 一句话描述`。
