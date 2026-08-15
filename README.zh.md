@@ -319,6 +319,7 @@ dsh plugin --profile web add dshmarket
 - [highland0971/dsh-native-memory](https://github.com/highland0971/dsh-native-memory) — 基于 DSH 原生接缝的按工作区记忆：事实与有界常驻档案落在 storage-domain 的 JSON 单元上，写入经人工审批并带 `(sessionId, seq)` 引证，确定性召回 + session-query 全文检索历史会话——无外部服务器、无自建 SQLite。
 
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — DSH 自动记忆插件：三层记忆自动注入与检索、每轮对话自动沉淀、AI 时段问候与三级抽屉、智能检索、日历视图与设置页，支持继承其他 AI 工具的记忆。
+- [tinqiao-oss/engramory](https://github.com/tinqiao-oss/engramory) — 基于文件的策展式记忆：一个带行数/字节上限的 `MEMORY.md` 索引，每条事实单独一个 markdown 文件，由 git 版本化，不借助工具即可阅读。`dsh-engramory` 插件通过 `ctx.tools.guard()` 强制该上限，并把协议注册为运行时 skill；同一份记忆库也被 Claude Code、Codex、Kiro 与 OpenClaw 读取。
 ### 🛠️ 工具与能力
 - [Johnny-xuan/dsh-paste-to-path](https://github.com/Johnny-xuan/dsh-paste-to-path) — 为图片、文档、压缩包、代码及其他文件提供路径附件 Dock，文件读取交由 Agent 的当前可用工具完成。
 - [moononnn/DeepSeek-Harness-biaoqingbao](https://github.com/moononnn/DeepSeek-Harness-biaoqingbao) — 表情包表达插件：让助手用表情包表达情绪，按情绪自动配图，含图库管理、AI 识图打标、方言口音、学我说话，还能点「和助手聊聊」直接调教标签。
