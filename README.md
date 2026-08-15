@@ -186,6 +186,7 @@ dsh plugin --profile web add dshmarket
 - [kelearns/dsh-navigation-bar](https://github.com/kelearns/dsh-navigation-bar) - Piano-key in-conversation navigation for the Web UI: one key per user message with hover ladder, message-preview tooltip, and active-message highlight; click to smooth-scroll.
 - [kelearns/dsh-token-usage](https://github.com/kelearns/dsh-token-usage) - Token usage heatmap for the Web UI: daily/weekly/cumulative views over a 12-month window with light/dark themes.
 - [izz-BLUE/dsh-deepseek-usage-dashboard](https://github.com/izz-BLUE/dsh-deepseek-usage-dashboard) - DeepSeek API usage dashboard for DSH Web: daily cache-hit/miss and output token statistics from session logs, per-model cost estimates, account balance, 7-day trends, and a composer usage summary.
+- [wsxwj123/dsh-plugins#dsh-composer-tools](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools) - Composer input toolkit: arrow-key session history (first/last-line gated, IME and command-menu safe) and related input conveniences.
 ### Themes & Appearance
 
 - [RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) - One-command skin plugin: 8 original themes, translucent wallpaper with opacity/blur, per-user accent, and shareable theme-pack import/export, favorites and surprise-me — purely native on DSH's token system.
