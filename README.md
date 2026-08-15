@@ -388,6 +388,7 @@ dsh plugin --profile web add dshmarket
 - [MicroHEROX/dsh-unsloth-hands](https://github.com/MicroHEROX/dsh-unsloth-hands) - Hands repetitive text and vision labor (OCR, image analysis, comparison) to a locally running Unsloth Desktop (Unsloth Studio) server through unsloth_run and unsloth_vision tools; pure HTTP client, never spawns or owns processes.
 - [pengxuding/dsh-plugin-judge](https://github.com/pengxuding/dsh-plugin-judge) - Plugin value auditor: pre-install review (source scan + LLM judge) and post-install audit of installed bundles, with model-switch re-audit reminders.
 - [gloryxpnv/dsh-tool-vision](https://github.com/gloryxpnv/dsh-tool-vision) - Local-first structured vision for text-only agents: images go to a local OpenAI-compatible VLM and come back as JSON evidence (summary, verbatim OCR, layout regions, entities/relations, colors, explicit uncertainty), with anti-hallucination fallback and an optional paste/upload bridge; zero cloud cost, images never leave the machine.
+- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) - Workspace-safe Office tools for agents: create/read Word, create/read/update Excel, and create/read PowerPoint decks with PNG/JPG/GIF image placement.
 
 ### Skills
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
