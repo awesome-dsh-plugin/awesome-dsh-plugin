@@ -781,6 +781,7 @@ dsh plugin --profile web add dshmarket
 - [nzl153/pet-whale](https://github.com/nzl153/pet-whale) - Desktop pet drawn from the official whale outline: pure-SVG animation follows agent state (thinking, working, celebrating, error), with poke and double-click flip interactions, cursor avoidance, 7 palettes, light/dark theme sync, and a playable web preview.
 
 - [skiuniverse/dsh-running-liang](https://github.com/skiuniverse/dsh-running-liang) - A Chrome-dino-style runner for the DeepSeek Harness Web UI: play while the agent replies, score from 梁子 to 梁圣 on a persistent progress strip.
+- [ovdoesw/dsh-xiangqi](https://github.com/ovdoesw/dsh-xiangqi) - A draggable mascot invites you to play Xiangqi (Chinese chess) while the AI thinks, with a built-in engine, move-record export, and optional multi-model commentary.
 ## Contributing
 
 PRs welcome — add one line under the matching category in both `README.md` and `README.zh.md`: `- [name](link) — one-line description`.
