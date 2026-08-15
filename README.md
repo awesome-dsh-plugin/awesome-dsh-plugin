@@ -362,6 +362,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) - Attach tags to sessions and search sessions by tag in the Web settings panel.
 
 - [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) - A floating button beside the chat that opens a searchable list of all questions in the session for quick jumps.
+- [Leeminjing/dsh-messages-sanitizer](https://github.com/Leeminjing/dsh-messages-sanitizer) - Auto-repairs the messages array after a tool-dispatch crash (orphaned tool_calls / tool messages), preventing 400 INVALID_REQUEST session lock-ups.
 
 
 ### Memory
