@@ -269,6 +269,9 @@ dsh plugin --profile web add dshmarket
 - [aerince/dsh-models-dev-reasoning](https://github.com/aerince/dsh-models-dev-reasoning) - Adds models.dev reasoning levels to unconfigured third-party DeepSeek Harness models.
 - [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) - IKUN fandom skin for the DSH Web UI: star-blue and black-gold palettes in the system theme list, full-screen photo wallpaper rotation, a music box, and a send-button voice line.
 
+- [tuogusa/dsh-whale-background](https://github.com/tuogusa/dsh-whale-background) - Whale-girl wallpaper background with a frosted semi-transparent app surface for the Web UI.
+
+
 ### Models & Providers
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) - Codex App Server model provider using a local Codex login, with session reuse, Harness tool bridging, native action traces, and durable generated-image projection.
 - [GodD6366/dsh-sub2api](https://github.com/GodD6366/dsh-sub2api) - Connect a sub2api gateway to DeepSeek Harness: OpenAI-compatible multi-provider routes (OpenAI / Claude / Grok / Gemini) behind one base URL, with per-key model discovery, usage lookup, and global vision/image tools.
@@ -349,6 +352,11 @@ dsh plugin --profile web add dshmarket
 - [dylan121322/dsh-session-unarchive](https://github.com/dylan121322/dsh-session-unarchive) - Restore archived sessions to their original workspace from the Web GUI sidebar.
 - [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) - Recall any user message: rolls the conversation (official session fork) and workspace files (per-message shadow git snapshots) back to before it, with a diff-preview confirmation panel.
 - [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) - Free-interval session reports with AI-narrated daily/weekly digests over any date range, plus every-N-days scheduled reminders with system notifications (macOS / Linux).
+
+- [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) - Attach tags to sessions and search sessions by tag in the Web settings panel.
+
+- [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) - A floating button beside the chat that opens a searchable list of all questions in the session for quick jumps.
+
 
 ### Memory
 
@@ -586,6 +594,10 @@ dsh plugin --profile web add dshmarket
 - [nyantused-cpun/folio#plugins/folio-tools](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-tools) - Folio (兰亭) @folio/dsh-tools: 15 schema-validated tools (memory + quality gates) of the consulting document-generation engine; pair with @folio/dsh-events for the full session protocol.
 - [nyantused-cpun/folio#plugins/folio-events](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events) - Folio (兰亭) @folio/dsh-events: session-protocol events — auto session-start reminder + auto-save on session close; pair with @folio/dsh-tools.
 - [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) - Failure-recovery memory: search and record failure-recovery lessons from real engineering sessions, with BM25 + semantic RAG retrieval and a lessons knowledge base.
+
+- [tuogusa/dsh-skill-manager](https://github.com/tuogusa/dsh-skill-manager) - Browse, search, and delete user skills from the Web settings panel.
+
+
 ### Workflow & Automation
 - [ZhenHuangLab/dsh-sync](https://github.com/ZhenHuangLab/dsh-sync) - Policy-driven Git sync for DSH settings and profile configuration, with secret-aware projections, conflict review, and per-line apply controls.
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) - Installs two selectable Agent Presets: a shell-restricted general-purpose agent and a repository-focused coding agent.
@@ -805,6 +817,9 @@ dsh plugin --profile web add dshmarket
 - [LKMeng2001/dsh-mcp-market](https://github.com/LKMeng2001/dsh-mcp-market) - MCP server marketplace for DSH: browse a curated, npm-verified catalog and install MCP servers into the current profile with one click, live without restart.
 - [klarkxy/dsh-plugin-autoevo](https://github.com/klarkxy/dsh-plugin-autoevo) - Resolves local tools and skills first, then searches, reviews and installs a community plugin after a one-time approval.
 - [stakeswky/awesome-dsh](https://github.com/stakeswky/awesome-dsh) - Turns a stated need into a plugin choice: an agent skill that queries a catalog of the whole `dsh-plugin` topic (2600+ repos, recrawled every 6 hours, Chinese descriptions from Workers AI) through a ranked search API, then hands back the matching `dsh plugin add` command.
+
+- [tuogusa/dsh-plugin-toggle](https://github.com/tuogusa/dsh-plugin-toggle) - Toggle or delete plugins from the Web settings panel, with runtime enable and disable persisted to the profile.
+
 
 ### Just for Fun
 
