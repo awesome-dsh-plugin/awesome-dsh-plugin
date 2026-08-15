@@ -217,6 +217,7 @@ dsh plugin --profile web add dshmarket
 - [NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin) - Catppuccin themes for the DSH Web GUI: Latte, Frappé, Macchiato and Mocha registered into the native theme runtime, one-click switching with a persisted choice.
 - [zhxqc/dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme) - Web theme and file workspace plugin with global typography controls, @file mentions, a project file tree, Markdown preview, and a resizable side panel.
 - [Sim-xia/dsh-vscode-theme](https://github.com/Sim-xia/dsh-vscode-theme) - Imports .vsix theme files made for Visual Studio Code and applies them to the DSH Web UI.
+- [MangMax/dsh-themes](https://github.com/MangMax/dsh-themes) - Look & theme plugin for the DSH Web UI: built-in palettes, light/dark/follow-system appearance modes, Open VSX theme search & install, and VS Code theme import with a persisted theme library.
 
 ### Models & Providers
 - [GodD6366/dsh-sub2api](https://github.com/GodD6366/dsh-sub2api) - Connect a sub2api gateway to DeepSeek Harness: OpenAI-compatible multi-provider routes (OpenAI / Claude / Grok / Gemini) behind one base URL, with per-key model discovery, usage lookup, and global vision/image tools.
