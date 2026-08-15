@@ -345,6 +345,7 @@ dsh plugin --profile web add dshmarket
 
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) - Auto-memory for DSH: three-layer memory (user / project notes / daily logs) with automatic injection, per-turn auto-consolidation, AI greetings, smart search, a calendar view and a settings page, plus inheritance of other AI tools' memories.
 - [Yiipu/dsh-agentmemory](https://github.com/Yiipu/dsh-agentmemory) - DSH ↔ agentmemory session-memory bridge: mirrors session lifecycle into a local agentmemory daemon (REST), exposes memory_recall / memory_remember tools, and injects a per-session memory context window via agent/pre-step.
+- [FuzzySoul/dsh-free-vision](https://github.com/FuzzySoul/dsh-free-vision) - Free vision bridge for text-only models: image understanding, OCR, UI and debug analysis via free-tier providers (Qwen3-VL-Flash, Doubao, DeepSeek-OCR) with a settings GUI.
 ### Tools & Capabilities
 - [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) - IMAP/SMTP email tools (list/read/search/send/folders/attachment) with QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud presets, multi-account support and a send-approval gate.
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) - CalDAV calendar tools (list/create/update/delete/search) for Google/iCloud/Nextcloud/custom endpoints, with RRULE expansion.
