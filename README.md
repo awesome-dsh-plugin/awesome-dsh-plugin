@@ -568,6 +568,7 @@ dsh plugin --profile web add dshmarket
 - [nyantused-cpun/folio#plugins/folio-events](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events) - Folio (兰亭) @folio/dsh-events: session-protocol events — auto session-start reminder + auto-save on session close; pair with @folio/dsh-tools.
 ### Workflow & Automation
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) - Installs two selectable Agent Presets: a shell-restricted general-purpose agent and a repository-focused coding agent.
+- [victorzhong0110/dsh-code-reference](https://github.com/victorzhong0110/dsh-code-reference) - Surveys local code and GitHub/npm for reusable implementations before development, evaluates reuse versus rewrite, and checks architecture coupling.
 
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) - Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.
 - [icetomoyo/dsh_workflow](https://github.com/icetomoyo/dsh_workflow) - UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.
