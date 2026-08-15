@@ -209,6 +209,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-billing-balance](https://github.com/YZz-S/dsh-billing-balance) - Shows DeepSeek API account balance and Volcengine Ark Coding/Agent Plan quota windows (5h/weekly/monthly with reset countdowns) in the settings panel, composer dock, and a draggable floating refresh button.
 ### Sessions & Messages
 
+- [HuiHuitie-zhu/dsh-incognito](https://github.com/HuiHuitie-zhu/dsh-incognito) - Incognito sessions: a standalone ephemeral sub-agent with its own preset (no parent context) and full toolset, draggable floating window, burned to zero traces on close.
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) - Stock queue plus edit, remove, steer, reorder, clear-all, and 10-second undo.
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) - Visual branch brainstorming that creates an isolated Session for each direction, automates parent, sibling, checkpoint, and return Handoffs, and provides a full tree tab with an optional Better Sidebar view.
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) - Persistent rooms for independent DSH Agent sessions, with explicit membership, direct and broadcast messages, tracked tasks, and a shared Web timeline.

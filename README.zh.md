@@ -210,6 +210,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-billing-balance](https://github.com/YZz-S/dsh-billing-balance) — 在设置页、输入框下方读数条与可拖动悬浮按钮三处显示 DeepSeek 官方 API 余额与火山方舟 Coding/Agent Plan 套餐额度（5小时/周/月窗口及重置倒计时）。
 ### 💬 会话与消息
 
+- [HuiHuitie-zhu/dsh-incognito](https://github.com/HuiHuitie-zhu/dsh-incognito) — 无痕会话：独立临时子 Agent（独立 preset 不继承父会话、全量工具集），浮窗可拖动，关闭即焚毁、磁盘零痕迹。
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) — 出厂排队消息的增强面板：编辑、删除、插话，再加上排序、清空和 10 秒撤销。
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) — 可视化分支头脑风暴：为每个方向创建独立 Session，自动处理父子继承、兄弟感知、进展与回传 Handoff，并提供完整树形 Tab 与可选 Better Sidebar 右栏。
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) — 面向独立 DSH Agent 会话的持久化协作房间，支持显式成员管理、定向与广播消息、任务跟踪和共享 Web 时间线。
