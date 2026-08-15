@@ -171,6 +171,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-workspace-files-explorer](https://github.com/YZz-S/dsh-workspace-files-explorer) — 悬浮工作区文件树浏览器：带行号的代码语法高亮与 Markdown 富文本预览。
 - [YZz-S/dsh-token-cost-meter](https://github.com/YZz-S/dsh-token-cost-meter) — 在输入框下方统计行实时显示当前会话累计 token 消耗与估算费用（人民币），价格从 DeepSeek 官方价格页动态获取。
 - [penguin-oo/dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink) — 在对话中 Ctrl+点击文件路径与链接：路径在文件管理器中定位所在文件夹，链接在新标签页打开。
+- [AKS1st/dsh-mermaid](https://github.com/AKS1st/dsh-mermaid) — 把 DSH Web 会话消息中的 Mermaid 代码围栏渲染为惰性加载的 SVG 图表，严格消毒并跟随明暗主题。
 - [Sanqi-normal/dsh-model-picker](https://github.com/Sanqi-normal/dsh-model-picker) — dsh web 输入栏模型选择面板：左侧提供商栏 + 右侧模型列表，两侧独立滚动，支持跨提供商搜索。
 ### 🎭 主题与外观
 
