@@ -281,7 +281,7 @@ dsh plugin --profile web add dshmarket
 
 - [YZz-S/dsh-billing-balance](https://github.com/YZz-S/dsh-billing-balance) — 在设置页、输入框下方读数条与可拖动悬浮按钮三处显示 DeepSeek 官方 API 余额与火山方舟 Coding/Agent Plan 套餐额度（5小时/周/月窗口及重置倒计时）。
 - [jyh20030112/dsh-visual-plugin](https://github.com/jyh20030112/dsh-visual-plugin) — 给纯文本模型装上眼睛：把用户图片转发给任意 OpenAI 兼容的视觉模型生成描述，并在 Web UI 右侧面板展示结果。
-- [jiay98528-dev/dsh-model-sync](https://github.com/jiay98528-dev/dsh-model-sync) — 把各提供方线上模型列表同步进 DSH 设置，并在输入框旁显示当前会话模型的 5 小时/7 天额度圆环。
+- [jiay98528-dev/dsh-model-sync](https://github.com/jiay98528-dev/dsh-model-sync) — 把各提供方线上模型列表写进 DSH 设置，输入框圆环显示当前会话模型的 5 小时/7 天窗口或按量剩余余额。
 - [wenzetan/dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) — NewAPI（OpenAI 兼容网关）模型接入：注册 `newapi` 路由，仅发现聊天类模型，自动从 models.dev 获取模型参数（上下文窗口、思考强度等）并填充，并在 Web 设置页配置 base URL 与 API Key。
 - [GPIOX/dsh-api-balance](https://github.com/GPIOX/dsh-api-balance) — DeepSeek Harness 悬浮 API 余额徽章：实时显示 DeepSeek / Moonshot / OpenAI / 自定义接口余额；可拖动缩放、亚克力质感、文字颜色随下方内容明暗自适应。
 - [NOirBRight/dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama) — Ollama Cloud 原生聊天适配器：直连 NDJSON 翻译 Ollama /api/chat 协议，模型发现带上下文窗口与能力信息，并注册 web 搜索/抓取 provider，附 Web 设置卡片。
