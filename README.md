@@ -318,6 +318,9 @@ dsh plugin --profile web add dshmarket
 - [highland0971/dsh-native-memory](https://github.com/highland0971/dsh-native-memory) - Native per-workspace memory on the harness's own seams: facts and a bounded always-on profile on the storage-domain JSON unit, approval-gated writes with `(sessionId, seq)` citations, deterministic recall plus session-query FTS over past sessions — no external server, no custom SQLite.
 
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) - Auto-memory for DSH: three-layer memory (user / project notes / daily logs) with automatic injection, per-turn auto-consolidation, AI greetings, smart search, a calendar view and a settings page, plus inheritance of other AI tools' memories.
+
+- [scd13150/dsh-cognition](https://github.com/scd13150/dsh-cognition) - Project memory for coding agents on DeepSeek Harness: similar past edits surface as precedents, out-of-scope edits are blocked, and cognition persists across sessions (47 upstream-verified fixes, gold-free 20-task run).
+
 ### Tools & Capabilities
 - [Johnny-xuan/dsh-paste-to-path](https://github.com/Johnny-xuan/dsh-paste-to-path) - Adds a path-backed attachment dock for images, documents, archives, code, and other files, leaving file reading to the Agent's available tools.
 - [moononnn/DeepSeek-Harness-biaoqingbao](https://github.com/moononnn/DeepSeek-Harness-biaoqingbao) - Sticker/emoji expression for assistants: emotion-driven auto-matching, library management, AI image tagging, dialects, style mimicry, and chat-based tag refinement.
