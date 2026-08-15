@@ -628,6 +628,7 @@ dsh plugin --profile web add dshmarket
 - [Bing-Bryan/dsh-unread-dot](https://github.com/Bing-Bryan/dsh-unread-dot) - macOS Dock badge and bubble chime: shows an unread badge on the Dock (dot while running, count when done) and plays a chime while the app is hidden; clears on return, built on the Badging API.
 - [shaobeichen/dsh-pocket](https://github.com/shaobeichen/dsh-pocket) - Remote phone access to the DSH Web UI: scan a QR code for LAN or public (cloudflared tunnel) access with real-time sync, a mobile-adaptive layout, and a settings tab.
 - [jiezeng2004-design/dsh-chatgpt-bridge](https://github.com/jiezeng2004-design/dsh-chatgpt-bridge) - MCP bridge that lets ChatGPT Web create, view, continue, and supervise DeepSeek Harness agent sessions and goals while preserving DSH's native approval, sandbox, and workspace security model.
+- [hanwuji1/dsh-web-launcher](https://github.com/hanwuji1/dsh-web-launcher) - One-click launcher for the Web UI: a double-click Start-DSH-Web.cmd on the Windows desktop that boots dsh web and auto-opens the browser (polling until ready), plus a web_launcher model tool (install / open / status).
 ### Development & Runtime
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) - Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.
 
