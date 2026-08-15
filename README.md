@@ -229,6 +229,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-billing-balance](https://github.com/YZz-S/dsh-billing-balance) - Shows DeepSeek API account balance and Volcengine Ark Coding/Agent Plan quota windows (5h/weekly/monthly with reset countdowns) in the settings panel, composer dock, and a draggable floating refresh button.
 - [jyh20030112/dsh-visual-plugin](https://github.com/jyh20030112/dsh-visual-plugin) - Gives text-only models vision: forwards user images to an OpenAI-compatible vision model and shows the descriptions in a Web UI right panel.
 - [jiay98528-dev/dsh-model-sync](https://github.com/jiay98528-dev/dsh-model-sync) - Syncs live provider model lists into DSH settings and shows 5h/7d quota rings for the current session model.
+- [wenzetan/dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) - NewAPI (OpenAI-compatible gateway) LLM provider: registers a `newapi` route with chat-only model discovery, auto-fills model parameters (context window, reasoning effort) from models.dev, and adds a Web settings section for the base URL and API key.
 ### Sessions & Messages
 
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
