@@ -567,6 +567,7 @@ dsh plugin --profile web add dshmarket
 - [amlyczz/dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) - High-reliability Feishu/Lark bridge for DeepSeek Harness: QR one-click auth, card-based commands and intent-confirmation cards, at-least-once zero-loss outbox, media in/out, /doctor session-log ZIP, and a reusable DSH Web GUI that lands sessions in the right workspace.
 
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) - System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.
+- [PeterBon/dsh-hooks](https://github.com/PeterBon/dsh-hooks) - Config-driven lifecycle hooks: event→command declarations in cordis.patch.yml, with Feishu card notifications and a QR scan-to-create bot setup.
 ### Development & Runtime
 
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) - Static pre-install security auditor for plugin bundles: lifecycle scripts, dynamic execution, credential-exfiltration combos, and patch-layer hazards, with zero dependencies and in-memory tar parsing.
