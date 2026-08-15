@@ -42,7 +42,6 @@ dsh plugin --profile web add dshmarket
 ## Plugins
 
 ### UI Enhancements
-- [YEYEYEYESHIFU/dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) - Results-only conversation toggle for the Web GUI: hides thinking and tool-call process rows, keeps one live status line while the agent works, restores working animations under prefers-reduced-motion, zh-CN/en localized.
 - [xiaweiliang060035/dsh-opencode-go-usage](https://github.com/xiaweiliang060035/dsh-opencode-go-usage) - Floating widget showing real-time OpenCode Go subscription usage (rolling/weekly/monthly) for every API key, with rate-limit alerts and automatic key-pool discovery.
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) - Codex-style left-side message navigation rail for the Web UI: one tick per user message, hover previews, and click-to-jump across the whole history.
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) - Fully customizable keyboard shortcuts for the Web UI: 34 pre-registered features (sessions, views, clipboard, models, silent permission cycling, settings), one-click recording to bind your own, and a shortcut cheatsheet with built-in diagnostics.
@@ -111,6 +110,7 @@ dsh plugin --profile web add dshmarket
 - [hellosz/dsh-pets](https://github.com/hellosz/dsh-pets) - Codex Pets-style floating pixel pet with 10 built-in Petdex-compatible pets, a 9-state agent-status engine (idle/running/waiting/review/failed plus client-side waving/jumping/directions), draggable overlay, pet picker/zoom settings, notification bubbles, and a `pet_say` tool for the agent to speak through the pet.
 - [renat3u/dsh-web-archive](https://github.com/renat3u/dsh-web-archive) - Collapse noisy messages (Think, Bash, etc.) in conversations.
 - [a179-sanae/dsh-auto-collapse](https://github.com/a179-sanae/dsh-auto-collapse) - Codex-style workflow auto-collapse: finished turns fold into a single "processed in Xs" row leaving only the final answer; tool calls and think blocks collapse into live-summary chips that follow streaming; expand level by level, fully reversible on uninstall.
+- [YEYEYEYESHIFU/dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) - Results-only conversation toggle for the Web GUI: hides thinking and tool-call process rows, keeps one live status line while the agent works, restores working animations under prefers-reduced-motion, zh-CN/en localized.
 - [a1073097082/dsh-model-search](https://github.com/a1073097082/dsh-model-search) - Adds searchable filtering to the model selector by provider, model name, and model ID; spaces act as wildcards.
 - [0xsline/dsh-spotlight](https://github.com/0xsline/dsh-spotlight) - Keyboard-first command palette for the DSH Web UI.
 - [GooodWei/arcana](https://github.com/GooodWei/arcana) - A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.
