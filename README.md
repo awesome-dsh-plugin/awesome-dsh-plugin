@@ -267,6 +267,7 @@ dsh plugin --profile web add dshmarket
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) - Anthropic Sans, Serif, and Mono fonts for the DSH Web UI, with Source Han fallback for CJK.
 - [xiaozhe7772222/dsh-api-key-pool](https://github.com/xiaozhe7772222/dsh-api-key-pool) - API key rotation pool for your LLM providers: auto-discovers providers from settings, per-provider multi-key round-robin, failover on 401/403/429, and cooldown recovery.
 - [aerince/dsh-models-dev-reasoning](https://github.com/aerince/dsh-models-dev-reasoning) - Adds models.dev reasoning levels to unconfigured third-party DeepSeek Harness models.
+- [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) - IKUN fandom skin for the DSH Web UI: star-blue and black-gold palettes in the system theme list, full-screen photo wallpaper rotation, a music box, and a send-button voice line.
 
 ### Models & Providers
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) - Codex App Server model provider using a local Codex login, with session reuse, Harness tool bridging, native action traces, and durable generated-image projection.
