@@ -477,6 +477,7 @@ dsh plugin --profile web add dshmarket
 
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) - A development safety kit: rolling config snapshots, automatic rollback on plugin failures, boot-failure rescue, and an in-settings management panel.
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) - A hands-off safety net: directories the agent deletes go to a trash folder first and symlinks are never followed, with zero approvals.
+- [awesome-dsh-plugin/canary-test](https://github.com/awesome-dsh-plugin/canary-test) - Canary entry that must never be merged: it exists to verify the PR check fails on a missing zh line.
 
 ### Just for Fun
 
