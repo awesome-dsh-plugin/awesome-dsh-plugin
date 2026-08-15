@@ -46,6 +46,7 @@ dsh plugin --profile web add dshmarket
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) - Fully customizable keyboard shortcuts for the Web UI: 34 pre-registered features (sessions, views, clipboard, models, silent permission cycling, settings), one-click recording to bind your own, and a shortcut cheatsheet with built-in diagnostics.
 - [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) - Chinese UI enhancement for the DSH web client: completes the Chinese locale, keeps the session stats line fully visible on one row, and adds an Enhancements settings section with configurable chat width.
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) - Voice input for the web UI: a mic button in the composer that transcribes speech into the draft via the Web Speech API, with an optional auto-send toggle.
+- [Nothree-code/voco-input-sh](https://github.com/Nothree-code/voco-input-sh) - Voice input for the Web UI: a mic button that drives local VocoType offline speech recognition and auto-inserts recognized text into the composer (auto-deploy, dedupe, continuous dictation).
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) - Composer expand/collapse toggle for the Web UI: a ⬆/⬇ button in the composer tool row grows the input to a tall 70vh writing view for long drafts.
 - [littleboylittlegirl/dsh-community-hot](https://github.com/littleboylittlegirl/dsh-community-hot) - Floating community panel for the Web UI: 24h hot topics and hot plugins TOP10 with a draggable, always-on-top button.
 - [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) - Reads assistant replies aloud via free Edge TTS: per-message read-aloud buttons, an auto-read toggle, and a voice settings panel.
@@ -83,6 +84,7 @@ dsh plugin --profile web add dshmarket
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) - OpenPencil design preview and editing plugin.
 - [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) - In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.
 - [hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) - Editable Excalidraw diagrams for DeepSeek Harness conversations.
+- [Nothree-code/folder-tree-sh](https://github.com/Nothree-code/folder-tree-sh) - Workspace file tree for the Web UI: multi-tab preview (text/DOCX/PDF/Markdown/CSV/images), inline Markdown editing, a Git changes panel, and file operations (rename/delete/copy/move/create) via context menu.
 - [ccq1/dsh-side-panel](https://github.com/ccq1/dsh-side-panel) - Side panel with file browser, terminal, and Git review for quick file previews.
 - [WhitePlusMS/dsh-git-graph](https://github.com/WhitePlusMS/dsh-git-graph) - Dedicated read-only Git Graph view beside Chat and Trajectory: commit topology, local/remote/tag refs, HEAD and working-tree status, search, filtering, first-parent mode, refresh, and load more.
 - [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) - File-browser web app for DSH: React frontend and REST API served by the host webserver, a /dsh-agfs command that opens at the current session workspace, and a browse_files model tool.
@@ -259,6 +261,7 @@ dsh plugin --profile web add dshmarket
 - [ishuowang/dsh-rolehub-bridge](https://github.com/ishuowang/dsh-rolehub-bridge) - Discovers and verifies RoleHub roles, starts each one in an independent role-scoped Session, and optionally exposes a native Room picker for inviting them.
 - [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) - Bring the deepseek.com web/app chat experience to DSH: edit your prompt and regenerate answers in place, with a per-message <i/N> version pager (tree model, stable across conversations).
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) - Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.
+- [Nothree-code/review-quote-sh](https://github.com/Nothree-code/review-quote-sh) - Message review and quote chips for conversations: multi-model cross review (code/reply) with severity grading and summaries, review history, and host-persisted preferences.
 
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) - Rewind conversation and workspace state, powered by a persistent Change Ledger.
 - [GengDaPeng/dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) - Cross-session agent messaging for DeepSeek Harness with session discovery, offline delivery, delivery receipts, and sender-session navigation.
