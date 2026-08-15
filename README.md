@@ -602,6 +602,8 @@ dsh plugin --profile web add dshmarket
 
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) - System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.
 - [PeterBon/dsh-hooks](https://github.com/PeterBon/dsh-hooks) - Config-driven lifecycle hooks: event→command declarations in cordis.patch.yml, with Feishu card notifications and a QR scan-to-create bot setup.
+- [pitetow/dsh-notify-on-complete](https://github.com/pitetow/dsh-notify-on-complete) - Desktop notifications for run completion, model questions, and approval requests with per-platform system sounds, zero runtime dependencies.
+
 ### Development & Runtime
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) - Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.
 
@@ -764,4 +766,3 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
-
