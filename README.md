@@ -497,6 +497,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/fabric](https://github.com/omdsh-dev/fabric) - An MC-Fabric-style hook processor.
 - [LoserFox/dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) - Pin Git commits to the environment's own author identity; env-var injection overrides all `git config` settings.
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) - Context injection audit: token costs of instruction chains / skill catalogs / tool schemas, duplicate and conflict detection.
+- [lucky8197/dsh-doc-guard](https://github.com/lucky8197/dsh-doc-guard) - Document-code consistency guard: audits version headers / changelog tables / directory trees / module & test counts / cross-doc references for drift, with severity-sorted, read-only fix suggestions.
 - [labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) - Progressive-disclosure MCP gateway that searches large remote catalogs through `mcp_search`, then invokes exact schemas through `mcp_call` with lazy connections and bounded caches.
 - [ICCuse/dsh-pain-point-check](https://github.com/ICCuse/dsh-pain-point-check) - Enforced pain-point gate: after two non-converged experiments it injects the three questions, denies non-investigative tool calls until answered, and blocks same-direction retries.
 - [omdsh-dev/dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) - Plugin health checks: manifest protocol / patch format / build traps, zero-dependency and read-only.
