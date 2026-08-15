@@ -240,6 +240,7 @@ dsh plugin --profile web add dshmarket
 - [jyh20030112/dsh-visual-plugin](https://github.com/jyh20030112/dsh-visual-plugin) - Gives text-only models vision: forwards user images to an OpenAI-compatible vision model and shows the descriptions in a Web UI right panel.
 - [jiay98528-dev/dsh-model-sync](https://github.com/jiay98528-dev/dsh-model-sync) - Syncs live provider model lists into DSH settings and shows 5h/7d quota rings for the current session model.
 - [wenzetan/dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) - NewAPI (OpenAI-compatible gateway) LLM provider: registers a `newapi` route with chat-only model discovery, auto-fills model parameters (context window, reasoning effort) from models.dev, and adds a Web settings section for the base URL and API key.
+- [GPIOX/dsh-api-balance](https://github.com/GPIOX/dsh-api-balance) - Floating API-balance badge for DeepSeek Harness: live balance for DeepSeek, Moonshot, OpenAI and custom endpoints; draggable, resizable, frosted-glass look, with text color adapting to the content beneath.
 ### Sessions & Messages
 
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
