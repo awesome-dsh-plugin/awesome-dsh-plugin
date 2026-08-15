@@ -4,7 +4,21 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-15T01:22:41.608Z</updated>
+  <updated>2026-08-15T01:25:39.701Z</updated>
+  <entry>
+    <title>x2802490130-prog/dsh-guard</title>
+    <id>https://github.com/x2802490130-prog/dsh-guard</id>
+    <link href="https://github.com/x2802490130-prog/dsh-guard"/>
+    <updated>2026-08-15T01:25:39.701Z</updated>
+    <summary>A development safety kit: rolling config snapshots, automatic rollback on plugin failures, boot-failure rescue, and an in-settings management panel.</summary>
+  </entry>
+  <entry>
+    <title>x2802490130-prog/dsh-shield</title>
+    <id>https://github.com/x2802490130-prog/dsh-shield</id>
+    <link href="https://github.com/x2802490130-prog/dsh-shield"/>
+    <updated>2026-08-15T01:25:39.701Z</updated>
+    <summary>A hands-off safety net: directories the agent deletes go to a trash folder first and symlinks are never followed, with zero approvals.</summary>
+  </entry>
   <entry>
     <title>FleetingEcho/dsh-handoff</title>
     <id>https://github.com/FleetingEcho/dsh-handoff</id>
@@ -200,19 +214,5 @@
     <link href="https://github.com/ishuowang/dsh-agent-team-room"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>Persistent rooms for independent DSH Agent sessions, with explicit membership, direct and broadcast messages, tracked tasks, and a shared Web timeline.</summary>
-  </entry>
-  <entry>
-    <title>Edge-Echo/dsh-mcp-bridge</title>
-    <id>https://github.com/Edge-Echo/dsh-mcp-bridge</id>
-    <link href="https://github.com/Edge-Echo/dsh-mcp-bridge"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Curated MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.</summary>
-  </entry>
-  <entry>
-    <title>linxichen/dsh-rigorquant</title>
-    <id>https://github.com/linxichen/dsh-rigorquant</id>
-    <link href="https://github.com/linxichen/dsh-rigorquant"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>RigorQuant preset + skill pack: unattended walled multi-agent research for empirical and computational mathematics (economics, finance, portfolio), with a four-part pre-implementation check battery and a jacobian/Lean escalation lane.</summary>
   </entry>
 </feed>

@@ -4,7 +4,21 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-15T01:22:41.608Z</updated>
+  <updated>2026-08-15T01:25:39.701Z</updated>
+  <entry>
+    <title>x2802490130-prog/dsh-guard</title>
+    <id>https://github.com/x2802490130-prog/dsh-guard</id>
+    <link href="https://github.com/x2802490130-prog/dsh-guard"/>
+    <updated>2026-08-15T01:25:39.701Z</updated>
+    <summary>开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。</summary>
+  </entry>
+  <entry>
+    <title>x2802490130-prog/dsh-shield</title>
+    <id>https://github.com/x2802490130-prog/dsh-shield</id>
+    <link href="https://github.com/x2802490130-prog/dsh-shield"/>
+    <updated>2026-08-15T01:25:39.701Z</updated>
+    <summary>脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。</summary>
+  </entry>
   <entry>
     <title>FleetingEcho/dsh-handoff</title>
     <id>https://github.com/FleetingEcho/dsh-handoff</id>
@@ -200,19 +214,5 @@
     <link href="https://github.com/ishuowang/dsh-agent-team-room"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>面向独立 DSH Agent 会话的持久化协作房间，支持显式成员管理、定向与广播消息、任务跟踪和共享 Web 时间线。</summary>
-  </entry>
-  <entry>
-    <title>Edge-Echo/dsh-mcp-bridge</title>
-    <id>https://github.com/Edge-Echo/dsh-mcp-bridge</id>
-    <link href="https://github.com/Edge-Echo/dsh-mcp-bridge"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>精选 MCP 服务器全家桶：一键接入演示、记忆、文件系统、GitHub、Playwright、远程 HTTP 等服务器，自带连通性验证工具与 CI 检查。</summary>
-  </entry>
-  <entry>
-    <title>linxichen/dsh-rigorquant</title>
-    <id>https://github.com/linxichen/dsh-rigorquant</id>
-    <link href="https://github.com/linxichen/dsh-rigorquant"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>RigorQuant 预设与技能包：面向实证与计算数学（经济学、金融、组合）的无人值守隔离多智能体研究，内置四重实现前校验与 jacobian/Lean 升级通道。</summary>
   </entry>
 </feed>

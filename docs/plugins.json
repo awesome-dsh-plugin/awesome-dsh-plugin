@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-15",
- "count": 401,
+ "count": 403,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -5734,6 +5734,36 @@
    "npm": "@moonquake2004/dsh-doctor",
    "stars": null,
    "install": "dsh plugin --profile web add @moonquake2004/dsh-doctor",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-guard",
+   "owner": "x2802490130-prog",
+   "url": "https://github.com/x2802490130-prog/dsh-guard",
+   "page": "https://awesome-dsh-plugin.com/p/x2802490130-prog/dsh-guard/",
+   "category": "dev",
+   "description": {
+    "en": "A development safety kit: rolling config snapshots, automatic rollback on plugin failures, boot-failure rescue, and an in-settings management panel.",
+    "zh": "开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:x2802490130-prog/dsh-guard",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-shield",
+   "owner": "x2802490130-prog",
+   "url": "https://github.com/x2802490130-prog/dsh-shield",
+   "page": "https://awesome-dsh-plugin.com/p/x2802490130-prog/dsh-shield/",
+   "category": "dev",
+   "description": {
+    "en": "A hands-off safety net: directories the agent deletes go to a trash folder first and symlinks are never followed, with zero approvals.",
+    "zh": "脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:x2802490130-prog/dsh-shield",
    "added": "2026-08-15"
   },
   {
