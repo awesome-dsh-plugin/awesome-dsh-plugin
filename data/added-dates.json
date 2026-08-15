@@ -124,7 +124,7 @@
  "https://github.com/PwnKY/dsh-session-link": "2026-08-14T17:51:11.163Z",
  "https://github.com/Q1hangL/dsh-ask-guard": "2026-08-15T01:06:37.661Z",
  "https://github.com/QT-Chen/dsh-mic-input": "2026-08-14",
- "https://github.com/RAFOLIE/dsh-desktop-windowos/tree/main/plugin": "2026-08-14",
+ "https://github.com/RAFOLIE/dsh-desktop-windowos": "2026-08-14",
  "https://github.com/Realyujie/dsh-us-stocks": "2026-08-14T17:49:55.495Z",
  "https://github.com/SPYQWER1/dsh-codex-tools": "2026-08-14",
  "https://github.com/SaiSenBox/dsh-boot-guard": "2026-08-14T17:49:55.495Z",
@@ -243,6 +243,8 @@
  "https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm": "2026-08-14",
  "https://github.com/jjxjjjjiik-bot/dsh-chat-timeline": "2026-08-14",
  "https://github.com/kam74515-boop/dsh-everything-oauth": "2026-08-14",
+ "https://github.com/kelearns/dsh-navigation-bar": "2026-08-15",
+ "https://github.com/kelearns/dsh-token-usage": "2026-08-15",
  "https://github.com/kunjinkao-os/dsh-mobile-gui-agent": "2026-08-14",
  "https://github.com/l541402398/dsh-file-uploads": "2026-08-14",
  "https://github.com/labmimors/dsh-mcp-lens": "2026-08-15T01:01:33.356Z",
@@ -408,7 +410,5 @@
  "https://github.com/zoumutou/dsh-cost-balance": "2026-08-14",
  "https://github.com/zoumutou/dsh-web-preview": "2026-08-14",
  "https://github.com/zp-home/dsh-recommend": "2026-08-14",
- "https://github.com/ztl34245881-commits/dsh-task-planner": "2026-08-14",
- "https://github.com/kelearns/dsh-navigation-bar": "2026-08-15",
- "https://github.com/kelearns/dsh-token-usage": "2026-08-15"
+ "https://github.com/ztl34245881-commits/dsh-task-planner": "2026-08-14"
 }
