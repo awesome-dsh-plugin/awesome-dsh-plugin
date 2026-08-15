@@ -667,6 +667,7 @@ dsh plugin --profile web add dshmarket
 - [BotonJ/dsh-windtunnel](https://github.com/BotonJ/dsh-windtunnel) — 插件作者的契约回归风洞：剧本适配器在隔离子进程中驱动真实管线，会话事件断言覆盖加载/契约/行为/故障四层；零 API key，可进 CI。
 - [BotonJ/dsh-remote-link](https://github.com/BotonJ/dsh-remote-link) — 官方 Web UI 的安全远程接入：带认证的局域网/隧道网关，QR + HMAC 一次性配对、按设备吊销，mDNS 发现，附 fork_session 会话分叉工具。
 - [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) — DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。
+- [guo6x/dsh-housekeeper](https://github.com/guo6x/dsh-housekeeper) — agent 的环境管家：工具链台账（node/pnpm/git/gh/ffmpeg/浏览器）、缓存与临时目录扫描 + 白名单安全一键清理、机器规则（AGENTS.md）编辑，全在 Web GUI 设置面板。
 - [SaiSenBox/dsh-boot-guard](https://github.com/SaiSenBox/dsh-boot-guard) — 独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。
 - [leechen298/Code2Skill](https://github.com/leechen298/Code2Skill) — 从用户授权的源码生成 Function、MCP 工具、工作流 Skill 与离线测试包。
 - [bujue600-arch/dsh-testgen](https://github.com/bujue600-arch/dsh-testgen) — 自动化单元测试生成：/testgen 命令与 generate_tests 工具，生成、运行并修复测试直至通过（LLM 与离线模板双生成器；支持 vitest/jest/mocha/node:test）。
