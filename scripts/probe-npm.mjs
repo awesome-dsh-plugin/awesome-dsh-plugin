@@ -12,7 +12,7 @@
  *      name squatting and unrelated packages)
  *
  * Results are cached in data/npm-map.json: { "<github url>": { npm, checkedAt } }.
- * Published verdicts are permanent; unpublished ones are re-probed monthly.
+ * Published verdicts are permanent; unpublished ones are re-probed daily.
  * Network failures leave the existing entry untouched.
  *
  * Usage: node scripts/probe-npm.mjs
@@ -21,7 +21,13 @@ import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
 
 const MAP_FILE = 'data/npm-map.json'
-const RECHECK_DAYS = 30
+// Unpublished verdicts expire after a day, not a month: authors publish to npm
+// hours after being listed, and a stale null keeps the site on the slower
+// github: install for that whole window (reported in #487). Cheap to redo —
+// these probes hit raw.githubusercontent and the npm registry, neither of
+// which spends GitHub API quota. Set PROBE_ALL=1 to force a full re-probe.
+const RECHECK_DAYS = Number(process.env.PROBE_RECHECK_DAYS ?? 1)
+const PROBE_ALL = process.env.PROBE_ALL === '1'
 const CONCURRENCY = 8
 
 const map = fs.existsSync(MAP_FILE) ? JSON.parse(fs.readFileSync(MAP_FILE, 'utf8')) : {}
@@ -31,7 +37,8 @@ const urls = [...readme.matchAll(/^- \[.+?\]\((https:\/\/github\.com\/[^)]+)\) [
 
 const today = new Date().toISOString().slice(0, 10)
 const stale = (entry) =>
-  entry === undefined
+  PROBE_ALL
+  || entry === undefined
   || (entry.npm === null
     && (Date.now() - new Date(entry.checkedAt).getTime()) / 86400000 > RECHECK_DAYS)
 
