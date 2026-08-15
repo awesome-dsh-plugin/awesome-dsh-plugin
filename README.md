@@ -691,6 +691,7 @@ dsh plugin --profile web add dshmarket
 - [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) - Digimon-style raising game: hatch an egg that feeds on real work (turns, tool calls, errors) and evolves along four branching lines shaped by how you work; zero tokens, invisible to the model.
 - [marvin9551/dynamic-schulte-dsh](https://github.com/marvin9551/dynamic-schulte-dsh) - Dynamic Schulte grid waiting-time mini-game: click 1..N in order on a static grid or a spinning roulette wheel while the model thinks.
 
+- [skiuniverse/dsh-running-liang](https://github.com/skiuniverse/dsh-running-liang) - A Chrome-dino-style runner for the DeepSeek Harness Web UI: play while the agent replies, score from 梁子 to 梁圣 on a persistent progress strip.
 ## Contributing
 
 PRs welcome — add one line under the matching category in both `README.md` and `README.zh.md`: `- [name](link) — one-line description`.
@@ -714,3 +715,4 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
+
