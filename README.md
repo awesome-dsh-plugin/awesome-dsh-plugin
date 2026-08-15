@@ -646,6 +646,8 @@ dsh plugin --profile web add dshmarket
 - [PAKIKNOWLEDGE/dsh-auto-classifier](https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier) - Autonomous permission classifier for the auto preset: tool-scoped allow/deny rules, an LLM semantic judge, and git checkpointing for unattended sessions.
 - [fuyue521/dsh-desktop-shortcut](https://github.com/fuyue521/dsh-desktop-shortcut) - Windows desktop shortcut for dsh web: launches the server, auto-opens the browser when ready, and stops the service when the Harness window closes.
 - [sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) - Makes Minimal mode work on Windows: supplies the missing win32 process inspector so the persistent Git Bash shell runs, plus a faithful minimal-windows preset and an install-trap doctor (koffi crashes, PS 5.1 fallback, localhost 403).
+- [hezhongtang/dsh-update-copilot](https://github.com/hezhongtang/dsh-update-copilot) - Update copilot for DeepSeek Harness: one scan covers the dsh core, official bundles, and every profile plugin; explains what changed and how risky each update is, then updates only what you confirm.
+
 ### Plugin Markets & Managers
 
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) - (Recommended) The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.
