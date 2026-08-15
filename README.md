@@ -167,7 +167,7 @@ dsh plugin --profile web add dshmarket
 - [wsxwj123/dsh-plugins#theme-gallery](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery) - Fifteen curated theme families with complete light and dark palettes that follow the native Light, Dark, and Follow system modes.
 - [PAKIKNOWLEDGE/dsh-client-ui-skin-claude](https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude) - Claude-style skin with a warm-black canvas, clay accent, and serif UI that follows the native light and dark themes.
 - [tianyhjg-lab/dsh-font](https://github.com/tianyhjg-lab/dsh-font) - Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.
-- [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) - Replicates DeepSeek Chat's own blue-whale palette (#4D6BFE); light and dark follow the built-in appearance.
+- [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) - A DeepSeek Chat-style blue-whale color skin. Light and dark follow the built-in appearance.
 - [chinaRXQ/dsh-wallpaper](https://github.com/chinaRXQ/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: image background with opacity, mask and blur controls.
 - [SamizuHM/dsh-client-ui-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp) - Windows XP Luna desktop for the DSH Web UI: a floating window manager with taskbar and desktop icons, plus the era-accurate Luna skin.
 - [Tommy00748/dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) - Cyberpunk 2077 / Night City theme: NC yellow and neon cyan identity, CRT scanlines, Kiroshi hover lock-on, combat-state HUD, synthesized typewriter and message SFX, and hidden easter eggs (relic / johnny).
@@ -179,7 +179,7 @@ dsh plugin --profile web add dshmarket
 
 ### Sessions & Messages
 
-- [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) - Unified Web prompt queue with edit, remove, steer, drag reorder, clear-all, and a 10-second undo.
+- [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) - Stock queue plus edit, remove, steer, reorder, clear-all, and 10-second undo.
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) - Visual branch brainstorming that creates an isolated Session for each direction, automates parent, sibling, checkpoint, and return Handoffs, and provides a full tree tab with an optional Better Sidebar view.
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) - Persistent rooms for independent DSH Agent sessions, with explicit membership, direct and broadcast messages, tracked tasks, and a shared Web timeline.
 - [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) - Bring the deepseek.com web/app chat experience to DSH: edit your prompt and regenerate answers in place, with a per-message <i/N> version pager (tree model, stable across conversations).
