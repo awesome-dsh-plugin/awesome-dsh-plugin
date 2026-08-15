@@ -475,6 +475,7 @@ dsh plugin --profile web add dshmarket
 
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
+- [awesome-dsh-plugin/canary-test](https://github.com/awesome-dsh-plugin/canary-test) — 金丝雀条目，永不合并：用于验证 PR 检查能拦住缺中文行的提交。
 
 ### 🎮 娱乐
 
