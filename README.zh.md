@@ -229,6 +229,7 @@ dsh plugin --profile web add dshmarket
 - [yangyongzhen/dsh-session-report](https://github.com/yangyongzhen/dsh-session-report) — 会话成本与耗时报表：tokens / 缓存命中 / 耗时。
 - [Boliban/dsh-enter-customizer](https://github.com/Boliban/dsh-enter-customizer) — 接管聊天输入框的回车等快捷键，每个快捷键的行为都能单独配置。
 - [wsxwj123/dsh-plugins#dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager) — 会话删除（5 秒可撤销 + 回收站）与归档视图（查看、取消归档）。
+- [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) — 在 Web 侧边栏把会话移动到别的文件夹（拖拽或菜单选择），带风险确认地永久删除会话，以及 AI 重命名会话（总结整个对话并自动纠正错别字）；每个操作都提供 agent 工具。
 
 ### 🧠 记忆
 
