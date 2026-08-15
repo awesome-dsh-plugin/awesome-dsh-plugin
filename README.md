@@ -580,6 +580,7 @@ dsh plugin --profile web add dshmarket
 - [jorinyang/dsh-clawshell](https://github.com/jorinyang/dsh-clawshell) - Self-healing runtime layer: a resource control loop with strategy switching and repair escalation, error-storm and fiber-failure insight, cross-session knowledge carry-over, a self-healing dashboard and 7 tools.
 - [jorinyang/dsh-doctor](https://github.com/jorinyang/dsh-doctor) - DSH environment diagnosis, graded repair with one-click rollback, and a runtime self-healing service.
 - [ljsysfurryACE/dsh-agentframe-suite](https://github.com/ljsysfurryACE/dsh-agentframe-suite) - One-command bundle of the three AgentFrame plugins: memory-director, compaction, and aura-scheduler together.
+- [lucky8197/dsh-code-smell](https://github.com/lucky8197/dsh-code-smell) - Code smell radar: statically scans TODO/FIXME debt, stub implementations, long lines, oversized files and duplicated blocks, with severity-sorted read-only fix suggestions.
 ### Plugin Markets & Managers
 
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) - (Recommended) The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.
