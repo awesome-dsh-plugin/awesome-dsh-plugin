@@ -1447,8 +1447,16 @@
   "npm": "dsh-balance-float",
   "checkedAt": "2026-08-15"
  },
+ "https://github.com/x2802490130-prog/dsh-guard": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/x2802490130-prog/dsh-lan-pass": {
   "npm": "dsh-lan-pass",
+  "checkedAt": "2026-08-15"
+ },
+ "https://github.com/x2802490130-prog/dsh-shield": {
+  "npm": null,
   "checkedAt": "2026-08-15"
  },
  "https://github.com/xiaoyuyu6420/dsh-backup": {
