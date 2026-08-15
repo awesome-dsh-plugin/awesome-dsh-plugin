@@ -537,6 +537,7 @@ dsh plugin --profile web add dshmarket
 - [moguiyu/dsh-tavily#packages/dsh-tool-tavily-search](https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search) - Tavily search with multiple API keys, key rotation and failover, a usage gauge, and a settings card.
 - [wade20250715/dsh-pubmed](https://github.com/wade20250715/dsh-pubmed) - PubMed deep-research toolset: literature search, author investigation, same-name disambiguation, institution statistics and mentor-student matching.
 ### Skills
+- [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) - Skill for packaging DeepSeek Harness into a Tauri 2 desktop app (macOS + Windows): dual-platform install playbook, China mirror bootstrap with a subagent timeout sentinel, admin-free Windows toolchain recipe (no VS Build Tools), and three-path acceptance checklists.
 - [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) - Official Remotion skill ported to DSH: programmatic video with React (animation/audio/captions/3D/charts/fonts, 38 rule files).
 - [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) - Five official HyperFrames by HeyGen skills: HTML video / CLI / registry / website-to-video / GSAP reference.
 - [YuanyuanMa03/cot-lint](https://github.com/YuanyuanMa03/cot-lint) - Chain-of-thought leakage linter: zero-dependency CLI that finds AI-session residue in docs and comments (dead design citations, PR vantage, change narration, review choreography), shipping the cot-trim fixing skill as the installable bundle.

@@ -538,6 +538,7 @@ dsh plugin --profile web add dshmarket
 - [moguiyu/dsh-tavily#packages/dsh-tool-tavily-search](https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search) — Tavily 多密钥搜索：支持密钥轮换/故障转移、用量仪表盘与设置卡片。
 - [wade20250715/dsh-pubmed](https://github.com/wade20250715/dsh-pubmed) — PubMed 深度科研工具集：文献检索、作者调查、同名消歧、机构统计与师承匹配。
 ### 🧩 技能包
+- [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) — 把 DeepSeek Harness 封装成 Tauri 2 桌面应用（macOS + Windows）的技能包：双平台安装、国内镜像加速（含 subagent 超时哨兵）、无管理员 Windows 工具链方案、三路径验收清单。
 - [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) — Remotion 官方移植技能：React 编程式视频（动画/音频/字幕/3D/图表/字体，38 规则文件），安装即用。
 - [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — HyperFrames by HeyGen 官方移植技能五件套：HTML 写视频 / CLI / 注册表 / 网址转视频 / GSAP 参考。
 - [YuanyuanMa03/cot-lint](https://github.com/YuanyuanMa03/cot-lint) — 思维链泄漏检测：零依赖 CLI 扫描 AI 留在文档与注释里的会话残留（死设计引用、PR 视角、变更叙述、评审编排），内置 cot-trim 语义修复技能包。
