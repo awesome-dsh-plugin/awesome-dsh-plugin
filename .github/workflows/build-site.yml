@@ -6,7 +6,11 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['README.md', 'README.zh.md', 'scripts/*.mjs', 'site/*', 'package.json', 'package-lock.json', '.github/workflows/build-site.yml']
+    # No paths filter, deliberately. A filtered-out push still advances main
+    # without cancelling an in-flight build, whose push then fails non-ff with
+    # nothing to recover it. Any human push must either supersede the running
+    # build or start one; irrelevant pushes exit at "no changes". Bot pushes
+    # use GITHUB_TOKEN and never trigger workflows, so there is no loop.
 
 permissions:
   contents: write
