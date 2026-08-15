@@ -19,6 +19,7 @@ export default [
     urlPath: '/',
     out: 'docs/index.html',
     readme: 'README.md',
+    sep: '-', // list-item separator awesome-lint expects in the English file
     og: '/og-en.png',
     feed: '/feed.xml',
     feedOut: 'docs/feed.xml',
@@ -95,6 +96,7 @@ export default [
     urlPath: '/zh/',
     out: 'docs/zh/index.html',
     readme: 'README.zh.md',
+    sep: '—', // em dash: the hyphen reads as punctuation between Chinese words
     og: '/og-zh.png',
     feed: '/zh/feed.xml',
     feedOut: 'docs/zh/feed.xml',

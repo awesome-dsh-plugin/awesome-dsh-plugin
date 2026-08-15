@@ -38,8 +38,8 @@ function parseReadme(loc) {
       cat = CAT_IDS.find((id) => h[1].includes(loc.categories[id])) ?? null
       continue
     }
-    const m = line.match(/^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) [—-] (.+)$/)
-    if (m && cat) out.set(m[2], { name: m[1], url: m[2], desc: m[3], cat })
+    const m = line.match(/^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) ([—-]) (.+)$/)
+    if (m && cat) out.set(m[2], { name: m[1], url: m[2], desc: m[4], cat, sep: m[3] })
   }
   return out
 }
@@ -49,6 +49,15 @@ const parsed = LOCALES.map((loc) => ({ loc, entries: parseReadme(loc) }))
 const [base, ...others] = parsed
 const entries = []
 let parityBroken = false
+// Each language declares its own list-item separator: awesome-lint wants a
+// hyphen in English, while a hyphen between Chinese words reads as punctuation.
+// Contributors mix them up constantly, so make it a build failure.
+for (const { loc, entries: map } of parsed)
+  for (const [url, e] of map)
+    if (e.sep !== loc.sep) {
+      console.error(`${loc.readme} separates ${url} with "${e.sep}" — this file uses "${loc.sep}"`)
+      parityBroken = true
+    }
 for (const [url, e] of base.entries) {
   const descs = { [base.loc.code]: e.desc }
   let ok = true
