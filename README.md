@@ -282,6 +282,7 @@ dsh plugin --profile web add dshmarket
 - [wenzetan/dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) - NewAPI (OpenAI-compatible gateway) LLM provider: registers a `newapi` route with chat-only model discovery, auto-fills model parameters (context window, reasoning effort) from models.dev, and adds a Web settings section for the base URL and API key.
 - [GPIOX/dsh-api-balance](https://github.com/GPIOX/dsh-api-balance) - Floating API-balance badge for DeepSeek Harness: live balance for DeepSeek, Moonshot, OpenAI and custom endpoints; draggable, resizable, frosted-glass look, with text color adapting to the content beneath.
 - [NOirBRight/dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama) - Ollama Cloud native chat adapter: direct NDJSON translation of the Ollama /api/chat wire format, model discovery with context windows and capabilities, and web search/fetch providers under the ollama-cloud id, plus a Web settings card.
+- [siegfly/dsh-deepseek-vision](https://github.com/siegfly/dsh-deepseek-vision) - A vision-language gateway provider route: pasted images are described by a configurable VL model (Qwen-VL by default) before the DeepSeek wire.
 ### Sessions & Messages
 
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
