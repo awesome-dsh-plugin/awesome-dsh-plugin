@@ -476,6 +476,7 @@ dsh plugin --profile web add dshmarket
 
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) - A development safety kit: rolling config snapshots, automatic rollback on plugin failures, boot-failure rescue, and an in-settings management panel.
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) - A hands-off safety net: directories the agent deletes go to a trash folder first and symlinks are never followed, with zero approvals.
+- [strukto-ai/mirage#dsh](https://github.com/strukto-ai/mirage/tree/main/typescript/packages/dsh) - Swaps the filesystem and bash providers for a mirage virtual workspace: file tools and shell commands run over mounted resources (RAM, S3, Redis, Slack, Gmail, Notion, Postgres) instead of the host disk, with per-mount read/write/exec modes, per-command sandbox routing (monty, pyodide, quickjs in process; docker, e2b, daytona remote), and installed CLIs (git, gh, slack, linear, ntn, gws, or one you register) as head words in the virtual terminal.
 
 ### Just for Fun
 
