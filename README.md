@@ -475,6 +475,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) - The DSH plugin-development knowledge base as an on-demand agent skill: official constraints, task workflows, API reference and community gotchas, installed with the bundle so the agent can look things up while building a plugin.
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) - Barrage-meme skill distilled from 22,771 real messages in the 6657 live room: wanjiqi-style banter, CS and DOTA cross-memes, player roasting and casting commentary.
 - [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) - Pre-submission PR advisor: AI-powered review with 346+ anti-pattern rules across 61 repos, coach mode for iterative improvement, harvest mode for lesson extraction, MCP server support for DSH skill integration.
+- [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) - Git-backed failure-memory for AI coding agents: zero-dependency lesson library with MCP server, 289+ verified debugging patterns, search-by-error in 0.02s.
 ### Workflow & Automation
 
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) - Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.
