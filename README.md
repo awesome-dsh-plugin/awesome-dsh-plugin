@@ -652,7 +652,7 @@ dsh plugin --profile web add dshmarket
 - [loongsuite/pilot-dsh](https://github.com/loongsuite/pilot-dsh) - Standalone OpenTelemetry GenAI observability for DeepSeek Harness that exports native session, agent, LLM, and tool traces and metrics over OTLP to any compatible backend.
 ### Development & Runtime
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) - Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.
-
+- [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) - Close and restart controls for DeepSeek Harness Desktop and Web on Windows, in Settings → General.
 - [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) - Collapsible right-docked web terminal (xterm.js) bridged to a host PTY over WebSocket: bash/zsh switching, resizable panel, and fold/unfold that keeps the session alive.
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) - Static pre-install security auditor for plugin bundles: lifecycle scripts, dynamic execution, credential-exfiltration combos, and patch-layer hazards, with zero dependencies and in-memory tar parsing.
 - [iiwish/dsh-testkit](https://github.com/iiwish/dsh-testkit) - Docker-isolated real-host lifecycle tests for DSH plugins across install, boot, tool registration, update, uninstall, reinstall, and recovery, with structured evidence.
