@@ -4,7 +4,28 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-15T01:08:19.847Z</updated>
+  <updated>2026-08-15T01:10:29.227Z</updated>
+  <entry>
+    <title>magicOF2/dsh-turn-marks</title>
+    <id>https://github.com/magicOF2/dsh-turn-marks</id>
+    <link href="https://github.com/magicOF2/dsh-turn-marks"/>
+    <updated>2026-08-15T01:10:29.227Z</updated>
+    <summary>Left-edge turn-marks strip in chat: one bar per user message, click to jump to that message, hover for a preview, active bar turns white.</summary>
+  </entry>
+  <entry>
+    <title>magicOF2/dsh-chat-width-customizer</title>
+    <id>https://github.com/magicOF2/dsh-chat-width-customizer</id>
+    <link href="https://github.com/magicOF2/dsh-chat-width-customizer"/>
+    <updated>2026-08-15T01:10:29.227Z</updated>
+    <summary>Session-header button that cycles the conversation width (748-1600px), widening the chat column, composer, and user bubbles together.</summary>
+  </entry>
+  <entry>
+    <title>Tkingxiao/dsh-any-background</title>
+    <id>https://github.com/Tkingxiao/dsh-any-background</id>
+    <link href="https://github.com/Tkingxiao/dsh-any-background"/>
+    <updated>2026-08-15T01:10:29.227Z</updated>
+    <summary>A DeepSeek Harness appearance plugin that lets you fully customize the Web UI with a custom theme color, background wallpaper, and fine-grained opacity controls.</summary>
+  </entry>
   <entry>
     <title>x2802490130-prog/dsh-lan-pass</title>
     <id>https://github.com/x2802490130-prog/dsh-lan-pass</id>
@@ -171,7 +192,7 @@
     <id>https://github.com/Edge-Echo/dsh-mcp-bridge</id>
     <link href="https://github.com/Edge-Echo/dsh-mcp-bridge"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Curated, verified MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.</summary>
+    <summary>Curated MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.</summary>
   </entry>
   <entry>
     <title>linxichen/dsh-rigorquant</title>
@@ -193,26 +214,5 @@
     <link href="https://github.com/xmanrui/dsh-im"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).</summary>
-  </entry>
-  <entry>
-    <title>Noob-stupid/dsh-github-login</title>
-    <id>https://github.com/Noob-stupid/dsh-github-login</id>
-    <link href="https://github.com/Noob-stupid/dsh-github-login"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Visual GitHub login without a terminal: in-window device flow, token synced into the gh CLI, and host status/launch endpoints.</summary>
-  </entry>
-  <entry>
-    <title>labmimors/dsh-mcp-lens</title>
-    <id>https://github.com/labmimors/dsh-mcp-lens</id>
-    <link href="https://github.com/labmimors/dsh-mcp-lens"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Progressive-disclosure MCP gateway that searches large remote catalogs through `mcp_search`, then invokes exact schemas through `mcp_call` with lazy connections and bounded caches.</summary>
-  </entry>
-  <entry>
-    <title>Cavan-Ou/dsh-observation-journal</title>
-    <id>https://github.com/Cavan-Ou/dsh-observation-journal</id>
-    <link href="https://github.com/Cavan-Ou/dsh-observation-journal"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Zero-touch runtime telemetry for DSH: every session auto-writes task, model tier, tools, failures, duration, status into a human-readable journal with a stats section (pure observer — no tools, no LLM calls, no injection).</summary>
   </entry>
 </feed>

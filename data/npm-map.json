@@ -831,6 +831,14 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/magicOF2/dsh-chat-width-customizer": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
+ "https://github.com/magicOF2/dsh-turn-marks": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/Make0209/dsh-usage-stats": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1290,6 +1298,10 @@
  "https://github.com/titanwings/dsh-plannotator": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/Tkingxiao/dsh-any-background": {
+  "npm": "dsh-any-background",
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/Tommy00748/dsh-theme-cyberpunk2077": {
   "npm": null,

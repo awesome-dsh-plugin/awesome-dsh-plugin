@@ -4,7 +4,28 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-15T01:08:19.847Z</updated>
+  <updated>2026-08-15T01:10:29.227Z</updated>
+  <entry>
+    <title>magicOF2/dsh-turn-marks</title>
+    <id>https://github.com/magicOF2/dsh-turn-marks</id>
+    <link href="https://github.com/magicOF2/dsh-turn-marks"/>
+    <updated>2026-08-15T01:10:29.227Z</updated>
+    <summary>会话左侧消息标记条：每发一条消息多一根条条，点击跳转到该消息、悬停预览内容，当前消息对应的条条变白。</summary>
+  </entry>
+  <entry>
+    <title>magicOF2/dsh-chat-width-customizer</title>
+    <id>https://github.com/magicOF2/dsh-chat-width-customizer</id>
+    <link href="https://github.com/magicOF2/dsh-chat-width-customizer"/>
+    <updated>2026-08-15T01:10:29.227Z</updated>
+    <summary>会话标题栏按钮循环切换对话宽度（748–1600px），消息区、输入框、用户气泡同步加宽。</summary>
+  </entry>
+  <entry>
+    <title>Tkingxiao/dsh-any-background</title>
+    <id>https://github.com/Tkingxiao/dsh-any-background</id>
+    <link href="https://github.com/Tkingxiao/dsh-any-background"/>
+    <updated>2026-08-15T01:10:29.227Z</updated>
+    <summary>自定义外观插件：换背景图（可调大小和位置）、用色轮自定义主题色，主界面和设置界面的透明度都能单独调。</summary>
+  </entry>
   <entry>
     <title>x2802490130-prog/dsh-lan-pass</title>
     <id>https://github.com/x2802490130-prog/dsh-lan-pass</id>
@@ -171,7 +192,7 @@
     <id>https://github.com/Edge-Echo/dsh-mcp-bridge</id>
     <link href="https://github.com/Edge-Echo/dsh-mcp-bridge"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>精选并验证过的 MCP 服务器全家桶：一键接入演示、记忆、文件系统、GitHub、Playwright、远程 HTTP 等服务器，自带连通性验证工具与 CI 检查。</summary>
+    <summary>精选 MCP 服务器全家桶：一键接入演示、记忆、文件系统、GitHub、Playwright、远程 HTTP 等服务器，自带连通性验证工具与 CI 检查。</summary>
   </entry>
   <entry>
     <title>linxichen/dsh-rigorquant</title>
@@ -193,26 +214,5 @@
     <link href="https://github.com/xmanrui/dsh-im"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>通过扫码把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉等）。</summary>
-  </entry>
-  <entry>
-    <title>Noob-stupid/dsh-github-login</title>
-    <id>https://github.com/Noob-stupid/dsh-github-login</id>
-    <link href="https://github.com/Noob-stupid/dsh-github-login"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。</summary>
-  </entry>
-  <entry>
-    <title>labmimors/dsh-mcp-lens</title>
-    <id>https://github.com/labmimors/dsh-mcp-lens</id>
-    <link href="https://github.com/labmimors/dsh-mcp-lens"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>渐进披露 MCP 网关：用 `mcp_search` 检索大型远程工具目录，再由 `mcp_call` 按精确 schema 调用，并采用惰性连接与有界缓存。</summary>
-  </entry>
-  <entry>
-    <title>Cavan-Ou/dsh-observation-journal</title>
-    <id>https://github.com/Cavan-Ou/dsh-observation-journal</id>
-    <link href="https://github.com/Cavan-Ou/dsh-observation-journal"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>DeepSeek Harness 零侵入运行事实遥测：每个会话自动把任务/模型档位/工具/失败/时长/状态写入人机共读观测卡并附统计区（纯观察者——零工具、零 LLM、零注入）。</summary>
   </entry>
 </feed>

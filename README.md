@@ -18,7 +18,7 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
-**396** plugins · [PRs welcome](#contributing)
+**399** plugins · [PRs welcome](#contributing)
 
 ## Contents
 
@@ -222,7 +222,7 @@ dsh plugin --profile web add dshmarket
 - [truelove-dreamer/dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) - Cross-session memory for the model: full-text search all past sessions (SQLite FTS5 via ctx.sessionQuery) and bring the strongest matching excerpts back into the current context.
 - [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) - One shared Obsidian vault for every agent: dependency-free Python core (search/promote/adjudicate/forget), vault template, dsh plugin (memory_search/show/submit/status).
 ### Tools & Capabilities
-- [Edge-Echo/dsh-mcp-bridge](https://github.com/Edge-Echo/dsh-mcp-bridge) - Curated, verified MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.
+- [Edge-Echo/dsh-mcp-bridge](https://github.com/Edge-Echo/dsh-mcp-bridge) - Curated MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.
 
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) - DSH↔Godot engine runtime bridge: launch and drive a running Godot 4.x game through its in-game TCP interaction server — 8 tools (scene/UI inspection, GDScript eval, input simulation, screenshots, headless static ops, script validation), replaces godot-mcp.
 - [LeemanCheung/dsh-agent-preset-recommender](https://github.com/LeemanCheung/dsh-agent-preset-recommender) - Privacy-safe local scanner for Codex, Claude Code, WorkBuddy, and CodeBuddy session/workflow metadata; persists aggregate evidence and recommends built-in DSH agent presets without retaining content, using a network, or changing presets.
