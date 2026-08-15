@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-15T01:10:29.227Z</updated>
+  <updated>2026-08-15T01:16:49.170Z</updated>
+  <entry>
+    <title>sjh9714/clippy-harness#plugin</title>
+    <id>https://github.com/sjh9714/clippy-harness/tree/master/plugin</id>
+    <link href="https://github.com/sjh9714/clippy-harness/tree/master/plugin"/>
+    <updated>2026-08-15T01:16:49.170Z</updated>
+    <summary>Clippy is back and this time he can actually help. An office assistant pet that reacts to real agent state, jumps when the turn completes, and opens a classic &quot;illegal operation&quot; dialog when a turn fails.</summary>
+  </entry>
   <entry>
     <title>magicOF2/dsh-turn-marks</title>
     <id>https://github.com/magicOF2/dsh-turn-marks</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/xmanrui/dsh-weixin"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>Connect a Weixin bot to DeepSeek Harness by scanning a QR code.</summary>
-  </entry>
-  <entry>
-    <title>xmanrui/dsh-im</title>
-    <id>https://github.com/xmanrui/dsh-im</id>
-    <link href="https://github.com/xmanrui/dsh-im"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).</summary>
   </entry>
 </feed>

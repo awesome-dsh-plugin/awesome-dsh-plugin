@@ -3385,6 +3385,14 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Awu12277/dsh-stock-watch/"/>
   </url>
   <url>
+    <loc>https://awesome-dsh-plugin.com/p/sjh9714/clippy-harness--plugin/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/sjh9714/clippy-harness--plugin/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/sjh9714/clippy-harness--plugin/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/sjh9714/clippy-harness--plugin/"/>
+  </url>
+  <url>
     <loc>https://awesome-dsh-plugin.com/zh/p/AcidGr/dsh-web-mobile-fix/</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -6575,5 +6583,13 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/Awu12277/dsh-stock-watch/"/>
       <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/Awu12277/dsh-stock-watch/"/>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/Awu12277/dsh-stock-watch/"/>
+  </url>
+  <url>
+    <loc>https://awesome-dsh-plugin.com/zh/p/sjh9714/clippy-harness--plugin/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+      <xhtml:link rel="alternate" hreflang="en" href="https://awesome-dsh-plugin.com/p/sjh9714/clippy-harness--plugin/"/>
+      <xhtml:link rel="alternate" hreflang="zh" href="https://awesome-dsh-plugin.com/zh/p/sjh9714/clippy-harness--plugin/"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://awesome-dsh-plugin.com/p/sjh9714/clippy-harness--plugin/"/>
   </url>
 </urlset>

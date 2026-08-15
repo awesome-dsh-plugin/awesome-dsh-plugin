@@ -1215,6 +1215,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/sjh9714/clippy-harness/tree/master/plugin": {
+  "npm": "dsh-clippy",
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/slywalker2006/dsh-passwords": {
   "npm": null,
   "checkedAt": "2026-08-14"

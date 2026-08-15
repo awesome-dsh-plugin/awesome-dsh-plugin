@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-15",
- "count": 399,
+ "count": 400,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -6034,6 +6034,21 @@
    "npm": null,
    "stars": null,
    "install": "dsh plugin --profile web add github:Awu12277/dsh-stock-watch",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "clippy-harness#plugin",
+   "owner": "sjh9714",
+   "url": "https://github.com/sjh9714/clippy-harness/tree/master/plugin",
+   "page": "https://awesome-dsh-plugin.com/p/sjh9714/clippy-harness--plugin/",
+   "category": "fun",
+   "description": {
+    "en": "Clippy is back and this time he can actually help. An office assistant pet that reacts to real agent state, jumps when the turn completes, and opens a classic \"illegal operation\" dialog when a turn fails.",
+    "zh": "回形针助手回来了，这次它真的会干活：会对真实 agent 状态做出反应的办公助手宠物，任务完成时跳起来庆祝，回合失败时弹出经典的 \"illegal operation\" 对话框。"
+   },
+   "npm": "dsh-clippy",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-clippy",
    "added": "2026-08-15"
   }
  ]

@@ -4,7 +4,14 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-15T01:10:29.227Z</updated>
+  <updated>2026-08-15T01:16:49.170Z</updated>
+  <entry>
+    <title>sjh9714/clippy-harness#plugin</title>
+    <id>https://github.com/sjh9714/clippy-harness/tree/master/plugin</id>
+    <link href="https://github.com/sjh9714/clippy-harness/tree/master/plugin"/>
+    <updated>2026-08-15T01:16:49.170Z</updated>
+    <summary>回形针助手回来了，这次它真的会干活：会对真实 agent 状态做出反应的办公助手宠物，任务完成时跳起来庆祝，回合失败时弹出经典的 &quot;illegal operation&quot; 对话框。</summary>
+  </entry>
   <entry>
     <title>magicOF2/dsh-turn-marks</title>
     <id>https://github.com/magicOF2/dsh-turn-marks</id>
@@ -207,12 +214,5 @@
     <link href="https://github.com/xmanrui/dsh-weixin"/>
     <updated>2026-08-15T01:01:33.356Z</updated>
     <summary>通过微信扫码把微信机器人接入 DeepSeek Harness。</summary>
-  </entry>
-  <entry>
-    <title>xmanrui/dsh-im</title>
-    <id>https://github.com/xmanrui/dsh-im</id>
-    <link href="https://github.com/xmanrui/dsh-im"/>
-    <updated>2026-08-15T01:01:33.356Z</updated>
-    <summary>通过扫码把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉等）。</summary>
   </entry>
 </feed>
