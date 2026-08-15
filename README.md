@@ -165,6 +165,7 @@ dsh plugin --profile web add dshmarket
 - [SpookySandwich/dsh-smooth-stream](https://github.com/SpookySandwich/dsh-smooth-stream) - Better streaming text animation for DeepSeek Harness.
 - [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) - Mobile adaptation for the DSH Web UI: compact typography, full-width composer with caret fix, drawer sidebar with overlay-close, two-page settings flow, responsive tables and stats, safe touch targets.
 - [Wongzexu/dsh-git-status](https://github.com/Wongzexu/dsh-git-status) - Specialized in Git branch and status handling: a Git status drawer on the right edge of the DSH web UI with a commit DAG lane graph, uncommitted changes and stash rows, inline diffs, right-click branch/tag actions, and one-click fetch from all remotes.
+- [YZz-S/dsh-workspace-files-explorer](https://github.com/YZz-S/dsh-workspace-files-explorer) - Floating workspace file-tree browser for the Web GUI with line-numbered syntax highlighting and Markdown preview.
 - [YZz-S/dsh-token-cost-meter](https://github.com/YZz-S/dsh-token-cost-meter) - Real-time session token usage and estimated cost in the composer stats row, with pricing fetched from DeepSeek official pricing page.
 - [penguin-oo/dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink) - Ctrl+click file paths and links in chat: paths open their folder in the OS file manager (with the file selected), links open in a new browser tab.
 ### Themes & Appearance
