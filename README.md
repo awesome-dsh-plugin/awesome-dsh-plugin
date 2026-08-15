@@ -58,6 +58,7 @@ dsh plugin --profile web add dshmarket
 - [TZHR-invest/dsh-plugins#dsh-mobile-ui](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui) - Mobile UI for the Web GUI on narrow screens: full-width responsive layout, overlay session drawer, 44px touch targets, safe-area support, and reading enhancements with zero desktop impact.
 
 - [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) - LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.
+- [DamonKoy/dsh-plugin-toggle](https://github.com/DamonKoy/dsh-plugin-toggle) - Settings -> Plugins switchboard: every loaded plugin card shows its package description and runtime phase, with fuzzy search and start/stop toggles that never rewrite config files.
 
 - [Bernardxu123/dsh-mobile-gate](https://github.com/Bernardxu123/dsh-mobile-gate) - LAN mobile gateway: isolated child-process reverse proxy with first-visit approval, per-device token binding, rate limiting, and mobile layout injection (compact composer pills, randomUUID polyfill).
 - [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) - Complete LAN/remote access for the Web UI: 0.0.0.0 binding, crypto.randomUUID polyfill, token gate (401 login page + WebSocket interception, loopback exempt), privileged-fence and settings-persistence exemptions, and an idempotent installer with upgrade recovery.
