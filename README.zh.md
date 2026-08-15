@@ -151,6 +151,7 @@ dsh plugin --profile web add dshmarket
 
 ### 💬 会话与消息
 
+- [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) — 面向独立 DSH Agent 会话的持久化协作房间，支持显式成员管理、定向与广播消息、任务跟踪和共享 Web 时间线。
 - [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) — 更贴近 deepseek 网页版/App 的聊天体验：原位编辑提问、重新生成回复、每条消息带 <i/N> 版本翻页器（树状版本模型，跨对话保持稳定）。
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) — 收藏 AI 回复（备注/标签），跨会话收藏中心（搜索/筛选/跳回会话），一键导出 Markdown。
 

@@ -150,6 +150,7 @@ dsh plugin --profile web add dshmarket
 
 ### Sessions & Messages
 
+- [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) - Persistent rooms for independent DSH Agent sessions, with explicit membership, direct and broadcast messages, tracked tasks, and a shared Web timeline.
 - [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) - Bring the deepseek.com web/app chat experience to DSH: edit your prompt and regenerate answers in place, with a per-message <i/N> version pager (tree model, stable across conversations).
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) - Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.
 
