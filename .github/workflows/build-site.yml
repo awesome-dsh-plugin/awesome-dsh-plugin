@@ -11,11 +11,13 @@ on:
 permissions:
   contents: write
 
-# serialize runs — the cron and a merge-triggered run overlapping caused
-# non-fast-forward push failures before
+# docs/ is a pure function of main's tip, so an older run can only produce
+# stale output — supersede it rather than queueing it. Queueing was the bug:
+# a run is pinned to its trigger SHA, so the queued one woke up behind main
+# and tried to reconcile two full regenerations of docs/.
 concurrency:
   group: build-site
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -32,20 +34,18 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # docs/ is fully generated, so a rebase onto someone else's rebuild
-          # conflicts in every file. Rebuild from the current tip instead and
-          # retry if main moved under us.
-          for attempt in 1 2 3; do
-            git fetch -q origin main
-            git reset -q --hard origin/main
-            node scripts/probe-npm.mjs
-            node scripts/probe-stars.mjs
-            node scripts/probe-readmes.mjs
-            node scripts/build-site.mjs
-            git add docs README.md README.zh.md data
-            if git diff --cached --quiet; then echo "no changes"; exit 0; fi
-            git commit -m "chore: rebuild site from README"
-            if git push; then echo "pushed on attempt $attempt"; exit 0; fi
-            echo "main moved during the build — rebuilding from the new tip"
-          done
-          echo "main kept moving after 3 attempts"; exit 1
+          # Build against what main actually is, not the SHA that triggered
+          # this run — those differ whenever the bot pushed in between.
+          git fetch -q origin main
+          git reset -q --hard origin/main
+          node scripts/probe-npm.mjs
+          node scripts/probe-stars.mjs
+          node scripts/probe-readmes.mjs
+          node scripts/build-site.mjs
+          git add docs README.md README.zh.md data
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "chore: rebuild site from README"
+          # Fast-forward or bust. Losing the race means a newer push exists,
+          # and the run it triggered supersedes this one — never rebase
+          # generated output, it conflicts in every file.
+          git push
