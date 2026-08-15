@@ -388,6 +388,7 @@ dsh plugin --profile web add dshmarket
 - [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) - Knowledge-base-driven agent preset: wiki long-term memory, a web KB UI, a management page and optional UI polish.
 - [vectorize-io/hindsight#coding-agents](https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents) - Hindsight, agent memory that learns: long-term project memory with auto recall and retain, knowledge pages, deep reflection, and per-repo memory banks.
 ### Tools & Capabilities
+- [Cheng-cheng9669/dsh-cache-precision](https://github.com/Cheng-cheng9669/dsh-cache-precision) - Renders the built-in cache-hit percentage with three decimals and widens the composer stats line to prevent truncation.
 - [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) - IMAP/SMTP email tools (list/read/search/send/folders/attachment) with QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud presets, multi-account support and a send-approval gate.
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) - CalDAV calendar tools (list/create/update/delete/search) for Google/iCloud/Nextcloud/custom endpoints, with RRULE expansion.
 - [STARDUSTLC666/dsh-rss](https://github.com/STARDUSTLC666/dsh-rss) - RSS/Atom subscription management and parsing (rss_list/add/remove/fetch/check), persisted to settings.
