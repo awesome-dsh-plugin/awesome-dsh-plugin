@@ -430,6 +430,7 @@ dsh plugin --profile web add dshmarket
 - [yangyongzhen/dsh-article-publish](https://github.com/yangyongzhen/dsh-article-publish) - Publish articles to CSDN / Juejin / CNBlog directly from the session, no external server.
 - [lucas-ward/dsh-ci-context](https://github.com/lucas-ward/dsh-ci-context) - Injects allowlisted GitHub Actions and GitLab CI run metadata into agent context without reading logs, credentials, or provider APIs.
 - [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) - Proactive scheduling: an adaptive heartbeat plus a value network (urgency, relevance, interruption cost) decides when the agent should speak unprompted.
+- [toolclub/dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) - Global persistent agent squads with per-agent model/tool policies: manage them in Settings, select and toggle one per conversation, then collaborate on normal sends in a fixed or model-planned order.
 
 ### Notifications & Integrations
 
@@ -461,7 +462,7 @@ dsh plugin --profile web add dshmarket
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) - Notification outbox: agent proactively notifies via toast / Chinese TTS voice / sound effects (explosion, victory, alarm), 60s confirmation window voice-calls you back, volume boost, settings panel.
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) - Connect a Weixin bot to DeepSeek Harness by scanning a QR code.
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) - Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).
-- [THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) - Unified notification push for DSH: one minimal notify() API with 8 channel adapters (Telegram / DingTalk / Feishu / WxPusher / PushPlus / ServerChan / Bark / webhook), auto session-event push on turn-end, approval and error, plus an agent-callable notify tool; zero runtime deps.
+- [THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) - Unified notification for DSH: one minimal notify() API across 25+ channels (Telegram / DingTalk / Feishu / WeCom / QQ bot / WxPusher / PushPlus / ServerChan / Bark / Discord / Slack / ntfy / webhook), a routing matrix (timeSensitive / active / passive) with tiered retry, and optional inbound approval — approve agent requests from Telegram with inline keyboards. Auto session-event push on turn-end, approval and error, plus an agent-callable notify tool; zero runtime deps.
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) - System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).
 - [ThreeBody6666/dsh-im-hub](https://github.com/ThreeBody6666/dsh-im-hub) - Multi-platform IM gateway for DSH: Feishu (Lark) WebSocket long connection (no public URL), WeCom AES-encrypted callbacks, and Telegram long polling — per-chat agent sessions, whitelist access, and a visual settings card in the web GUI.
 - [yangyongzhen/dsh-notify](https://github.com/yangyongzhen/dsh-notify) - Task-completion notifications via ServerChan / DingTalk / Feishu / generic webhooks.
