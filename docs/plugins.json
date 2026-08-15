@@ -3,7 +3,7 @@
  "url": "https://awesome-dsh-plugin.com",
  "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
  "updated": "2026-08-15",
- "count": 377,
+ "count": 392,
  "categories": {
   "ui": {
    "en": "UI Enhancements",
@@ -65,6 +65,21 @@
    "stars": 2,
    "install": "dsh plugin --profile web add dsh-web-mobile-fix",
    "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-web-mobile",
+   "owner": "mexiaosqwq",
+   "url": "https://github.com/mexiaosqwq/dsh-web-mobile",
+   "page": "https://awesome-dsh-plugin.com/p/mexiaosqwq/dsh-web-mobile/",
+   "category": "ui",
+   "description": {
+    "en": "Mobile-adaptive layout for the DSH Web UI: the sidebar becomes a content-hugging overlay drawer, the conversation gets the full width, and the settings panel becomes a near-full-width sheet.",
+    "zh": "DSH Web UI 移动端适配：窄屏下侧边栏变为贴合内容的 overlay 抽屉、会话独占全宽，设置面板改为近全宽 sheet。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:mexiaosqwq/dsh-web-mobile",
+   "added": "2026-08-15"
   },
   {
    "name": "dsh-web-lan-access",
@@ -1342,6 +1357,21 @@
    "added": "2026-08-15"
   },
   {
+   "name": "dsh-balance-float",
+   "owner": "x2802490130-prog",
+   "url": "https://github.com/x2802490130-prog/dsh-balance-float",
+   "page": "https://awesome-dsh-plugin.com/p/x2802490130-prog/dsh-balance-float/",
+   "category": "ui",
+   "description": {
+    "en": "A floating balance widget for the Web UI: live DeepSeek account balance with manual refresh and a Y/N-confirmed graceful exit.",
+    "zh": "Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。"
+   },
+   "npm": "dsh-balance-float",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-balance-float",
+   "added": "2026-08-15"
+  },
+  {
    "name": "dsh-skin",
    "owner": "KinGao294",
    "url": "https://github.com/KinGao294/dsh-skin",
@@ -1444,6 +1474,21 @@
    "npm": null,
    "stars": 1,
    "install": "dsh plugin --profile web add github:chinaRXQ/dsh-wallpaper",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-client-ui-theme-xp",
+   "owner": "SamizuHM",
+   "url": "https://github.com/SamizuHM/dsh-client-ui-theme-xp",
+   "page": "https://awesome-dsh-plugin.com/p/SamizuHM/dsh-client-ui-theme-xp/",
+   "category": "theme",
+   "description": {
+    "en": "Windows XP Luna desktop for the DSH Web UI: a floating window manager with taskbar and desktop icons, plus the era-accurate Luna skin.",
+    "zh": "Windows XP Luna 桌面化主题：浮动窗口管理器（任务栏、桌面图标）加上还原度很高的 Luna 皮肤。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:SamizuHM/dsh-client-ui-theme-xp",
    "added": "2026-08-15"
   },
   {
@@ -1850,6 +1895,36 @@
    "stars": 4,
    "install": "dsh plugin --profile web add dsh-plugin-session-import",
    "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-companion",
+   "owner": "beijingwahw",
+   "url": "https://github.com/beijingwahw/dsh-companion",
+   "page": "https://awesome-dsh-plugin.com/p/beijingwahw/dsh-companion/",
+   "category": "session",
+   "description": {
+    "en": "Four-module session companion: smart conversation export (Markdown/PDF/JSON/PNG long-image with privacy redaction and batch ZIP), context handoff summaries with template save/import, API cost optimization (live official pricing, peak/off-peak scheduling, daily/monthly budgets, model routing), and global conversation search with in-chat find (Ctrl+F, CSS Custom Highlight API).",
+    "zh": "四模块会话伴侣：对话智能导出（Markdown/PDF/JSON/PNG 长图、隐私脱敏、批量 ZIP）、上下文交接摘要（模板保存与导入继承）、API 成本优化（官方动态计价、峰谷调度、日/月双档预算、模型路由）、全局对话检索与对话内搜索（Ctrl+F、CSS Custom Highlight API）。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:beijingwahw/dsh-companion",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-sideband",
+   "owner": "ishuowang",
+   "url": "https://github.com/ishuowang/dsh-sideband",
+   "page": "https://awesome-dsh-plugin.com/p/ishuowang/dsh-sideband/",
+   "category": "session",
+   "description": {
+    "en": "Asynchronous, LLM-summarized context relay between DSH Sessions and authorized Agent Team Rooms, with instant snapshots and scheduled digests.",
+    "zh": "在 DSH Session 与已授权 Agent Team Room 之间异步传递 LLM 总结的上下文，支持即时快照与定时摘要。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:ishuowang/dsh-sideband",
+   "added": "2026-08-15"
   },
   {
    "name": "distill",
@@ -2315,6 +2390,21 @@
    "stars": 1,
    "install": "dsh plugin --profile web add github:MAXeaglet/dsh-bash-terminal",
    "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-download-progress",
+   "owner": "Fro2en12",
+   "url": "https://github.com/Fro2en12/dsh-download-progress",
+   "page": "https://awesome-dsh-plugin.com/p/Fro2en12/dsh-download-progress/",
+   "category": "tools",
+   "description": {
+    "en": "Download progress panel: URL downloader, agent shell/SSH transfer tracking and workspace black-box file-growth monitoring, shown in a draggable floating panel with live bytes, speed, percentage and ETA.",
+    "zh": "下载进度面板：URL 下载器、agent shell/SSH 传输追踪与工作区黑箱文件增长监控，汇聚到可拖拽浮窗实时显示字节、速度、百分比与预计剩余时间。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Fro2en12/dsh-download-progress",
+   "added": "2026-08-15"
   },
   {
    "name": "dsh-bilibili",
@@ -3007,6 +3097,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-plugin-tavily",
+   "owner": "1624318455",
+   "url": "https://github.com/1624318455/dsh-plugin-tavily",
+   "page": "https://awesome-dsh-plugin.com/p/1624318455/dsh-plugin-tavily/",
+   "category": "tools",
+   "description": {
+    "en": "Tavily-backed web search provider for the built-in web_search tool, with a settings card for the API key, result count, and recency window.",
+    "zh": "基于 Tavily 的网页搜索提供方：替换内置 web_search 的后端，并提供 API Key、结果数量与时间窗口的设置卡片。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:1624318455/dsh-plugin-tavily",
+   "added": "2026-08-15"
+  },
+  {
    "name": "dsh-context-proxy",
    "owner": "EvilIrving",
    "url": "https://github.com/EvilIrving/dsh-context-proxy",
@@ -3577,6 +3682,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-ask-guard",
+   "owner": "Q1hangL",
+   "url": "https://github.com/Q1hangL/dsh-ask-guard",
+   "page": "https://awesome-dsh-plugin.com/p/Q1hangL/dsh-ask-guard/",
+   "category": "tools",
+   "description": {
+    "en": "Cooperative timeout guard for ask_user_question: lost or unanswered questions resolve as a structured ASK_TIMEOUT instead of hanging the turn forever.",
+    "zh": "为 ask_user_question 提供协作式超时守卫：提问卡片丢失或用户未答复时以结构化 ASK_TIMEOUT 结束调用，避免回合无限挂起。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Q1hangL/dsh-ask-guard",
+   "added": "2026-08-15"
+  },
+  {
    "name": "dsh-reverse-skill",
    "owner": "dhicoc",
    "url": "https://github.com/dhicoc/dsh-reverse-skill",
@@ -3650,6 +3770,21 @@
    "stars": 2,
    "install": "dsh plugin --profile web add github:lunw/shopline-ai-toolkit-dsh",
    "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-skill-pack",
+   "owner": "jeremy9682",
+   "url": "https://github.com/jeremy9682/dsh-skill-pack",
+   "page": "https://awesome-dsh-plugin.com/p/jeremy9682/dsh-skill-pack/",
+   "category": "skill",
+   "description": {
+    "en": "11 shareable workflow skills (handoff, triage, to-spec, to-tickets, wayfinder, teach, wait-what, dsh-mode-routing, ask-matt, overnight-execution, full-throttle) as an installable skill pack.",
+    "zh": "11 个可分享的工作流 skills（handoff、triage、to-spec、to-tickets、wayfinder、teach、wait-what、dsh-mode-routing、ask-matt、overnight-execution、full-throttle），打包为可安装 bundle。"
+   },
+   "npm": "@jeremy9682/dsh-skill-pack",
+   "stars": null,
+   "install": "dsh plugin --profile web add @jeremy9682/dsh-skill-pack",
+   "added": "2026-08-15"
   },
   {
    "name": "hermes-dsh-collab",
@@ -4477,6 +4612,21 @@
    "added": "2026-08-15"
   },
   {
+   "name": "dsh-notifier",
+   "owner": "THEWOLFWALKER",
+   "url": "https://github.com/THEWOLFWALKER/dsh-notifier",
+   "page": "https://awesome-dsh-plugin.com/p/THEWOLFWALKER/dsh-notifier/",
+   "category": "notify",
+   "description": {
+    "en": "Unified notification push for DSH: one minimal notify() API with 8 channel adapters (Telegram / DingTalk / Feishu / WxPusher / PushPlus / ServerChan / Bark / webhook), auto session-event push on turn-end, approval and error, plus an agent-callable notify tool; zero runtime deps.",
+    "zh": "统一通知推送：一个 notify() API 接 8 个渠道（Telegram / 钉钉 / 飞书 / WxPusher / PushPlus / Server 酱 / Bark / webhook），回合结束、待审批、报错时自动推送，agent 也能主动调用 notify 工具；零运行时依赖。"
+   },
+   "npm": "dsh-notifier",
+   "stars": null,
+   "install": "dsh plugin --profile web add dsh-notifier",
+   "added": "2026-08-15"
+  },
+  {
    "name": "dsh-github-login",
    "owner": "Noob-stupid",
    "url": "https://github.com/Noob-stupid/dsh-github-login",
@@ -4610,6 +4760,21 @@
    "stars": 2,
    "install": "dsh plugin --profile web add github:superboy911/dsh-model-router",
    "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-plugin-scout",
+   "owner": "icefall7",
+   "url": "https://github.com/icefall7/dsh-plugin-scout",
+   "page": "https://awesome-dsh-plugin.com/p/icefall7/dsh-plugin-scout/",
+   "category": "dev",
+   "description": {
+    "en": "Scouts the deepseek-harness repo and every dsh-plugin-tagged repository to discover harnesses related to your goal, then judges each as worth trying, watching, or skipping.",
+    "zh": "侦察 deepseek-harness 官方仓库与所有 dsh-plugin topic 仓库，发现与目标相关的 harness，并判断每个值得试用、观望还是跳过。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:icefall7/dsh-plugin-scout",
+   "added": "2026-08-15"
   },
   {
    "name": "dsh-boot-guard",
@@ -5332,6 +5497,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-remote-access-web#remote-access-web",
+   "owner": "wikkd",
+   "url": "https://github.com/wikkd/dsh-remote-access-web/tree/main/packages/bundle/remote-access-web",
+   "page": "https://awesome-dsh-plugin.com/p/wikkd/dsh-remote-access-web--packages-bundle-remote-access-web/",
+   "category": "dev",
+   "description": {
+    "en": "Reverse tunnel for the DSH Web GUI: exposes a `dsh --profile web` deployment at a public frp URL and switches the directory picker to the in-app browser, so a phone or remote machine can open and manage the workspace.",
+    "zh": "DSH Web GUI 反向隧道：通过 frp 把 `dsh --profile web` 发布到公网地址，目录选择器改用应用内浏览器，手机或远程机器可直接打开并管理工作区。"
+   },
+   "npm": "@froststarinquire/dsh-remote-access-web",
+   "stars": null,
+   "install": "dsh plugin --profile web add @froststarinquire/dsh-remote-access-web",
+   "added": "2026-08-15"
+  },
+  {
    "name": "dsh-chameleon#bundle",
    "owner": "lsz-asd",
    "url": "https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle",
@@ -5392,6 +5572,21 @@
    "added": "2026-08-14"
   },
   {
+   "name": "dsh-pluginmanager",
+   "owner": "buhuikongpan",
+   "url": "https://github.com/buhuikongpan/dsh-pluginmanager",
+   "page": "https://awesome-dsh-plugin.com/p/buhuikongpan/dsh-pluginmanager/",
+   "category": "dev",
+   "description": {
+    "en": "Layered plugin manager for DSH web: native plugins grouped read-only by system/WebUI/tools, user extensions with enable/disable, register, uninstall and editable descriptions.",
+    "zh": "DSH 分层插件管理器：原生插件按系统/WebUI/工具三层只读展示，用户扩展支持停用/启用、补登记、卸载与可编辑描述。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:buhuikongpan/dsh-pluginmanager",
+   "added": "2026-08-15"
+  },
+  {
    "name": "dsh-hot-plugin-host",
    "owner": "tianyaZTY",
    "url": "https://github.com/tianyaZTY/dsh-hot-plugin-host",
@@ -5404,6 +5599,21 @@
    "npm": null,
    "stars": 1,
    "install": "dsh plugin --profile web add github:tianyaZTY/dsh-hot-plugin-host",
+   "added": "2026-08-15"
+  },
+  {
+   "name": "dsh-doctor#plugin",
+   "owner": "moonquake2004",
+   "url": "https://github.com/moonquake2004/dsh-doctor/tree/main/plugin",
+   "page": "https://awesome-dsh-plugin.com/p/moonquake2004/dsh-doctor--plugin/",
+   "category": "dev",
+   "description": {
+    "en": "Offline diagnostic for DSH: 19 checks across env, profile, and session state, with a settings \"Doctor\" panel and a read-only JSON API.",
+    "zh": "离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。"
+   },
+   "npm": "@moonquake2004/dsh-doctor",
+   "stars": null,
+   "install": "dsh plugin --profile web add @moonquake2004/dsh-doctor",
    "added": "2026-08-15"
   },
   {
@@ -5705,6 +5915,21 @@
    "stars": 3,
    "install": "dsh plugin --profile web add github:609476965/dsh-LorebookMD",
    "added": "2026-08-14"
+  },
+  {
+   "name": "dsh-stock-watch",
+   "owner": "Awu12277",
+   "url": "https://github.com/Awu12277/dsh-stock-watch",
+   "page": "https://awesome-dsh-plugin.com/p/Awu12277/dsh-stock-watch/",
+   "category": "fun",
+   "description": {
+    "en": "A-share watchlist real-time market monitoring plugin: a collapsible popup in the top-right corner of the DeepSeek Harness (DSH) web interface for real-time quote monitoring, group switching, intraday and candlestick (K-line) charts, and buy/sell target price settings.",
+    "zh": "A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。"
+   },
+   "npm": null,
+   "stars": null,
+   "install": "dsh plugin --profile web add github:Awu12277/dsh-stock-watch",
+   "added": "2026-08-15"
   }
  ]
 }

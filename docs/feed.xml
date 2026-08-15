@@ -4,7 +4,112 @@
   <id>https://awesome-dsh-plugin.com/</id>
   <link href="https://awesome-dsh-plugin.com/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/feed.xml"/>
-  <updated>2026-08-15T01:01:33.356Z</updated>
+  <updated>2026-08-15T01:06:37.661Z</updated>
+  <entry>
+    <title>mexiaosqwq/dsh-web-mobile</title>
+    <id>https://github.com/mexiaosqwq/dsh-web-mobile</id>
+    <link href="https://github.com/mexiaosqwq/dsh-web-mobile"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Mobile-adaptive layout for the DSH Web UI: the sidebar becomes a content-hugging overlay drawer, the conversation gets the full width, and the settings panel becomes a near-full-width sheet.</summary>
+  </entry>
+  <entry>
+    <title>x2802490130-prog/dsh-balance-float</title>
+    <id>https://github.com/x2802490130-prog/dsh-balance-float</id>
+    <link href="https://github.com/x2802490130-prog/dsh-balance-float"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>A floating balance widget for the Web UI: live DeepSeek account balance with manual refresh and a Y/N-confirmed graceful exit.</summary>
+  </entry>
+  <entry>
+    <title>SamizuHM/dsh-client-ui-theme-xp</title>
+    <id>https://github.com/SamizuHM/dsh-client-ui-theme-xp</id>
+    <link href="https://github.com/SamizuHM/dsh-client-ui-theme-xp"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Windows XP Luna desktop for the DSH Web UI: a floating window manager with taskbar and desktop icons, plus the era-accurate Luna skin.</summary>
+  </entry>
+  <entry>
+    <title>beijingwahw/dsh-companion</title>
+    <id>https://github.com/beijingwahw/dsh-companion</id>
+    <link href="https://github.com/beijingwahw/dsh-companion"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Four-module session companion: smart conversation export (Markdown/PDF/JSON/PNG long-image with privacy redaction and batch ZIP), context handoff summaries with template save/import, API cost optimization (live official pricing, peak/off-peak scheduling, daily/monthly budgets, model routing), and global conversation search with in-chat find (Ctrl+F, CSS Custom Highlight API).</summary>
+  </entry>
+  <entry>
+    <title>ishuowang/dsh-sideband</title>
+    <id>https://github.com/ishuowang/dsh-sideband</id>
+    <link href="https://github.com/ishuowang/dsh-sideband"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Asynchronous, LLM-summarized context relay between DSH Sessions and authorized Agent Team Rooms, with instant snapshots and scheduled digests.</summary>
+  </entry>
+  <entry>
+    <title>Fro2en12/dsh-download-progress</title>
+    <id>https://github.com/Fro2en12/dsh-download-progress</id>
+    <link href="https://github.com/Fro2en12/dsh-download-progress"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Download progress panel: URL downloader, agent shell/SSH transfer tracking and workspace black-box file-growth monitoring, shown in a draggable floating panel with live bytes, speed, percentage and ETA.</summary>
+  </entry>
+  <entry>
+    <title>1624318455/dsh-plugin-tavily</title>
+    <id>https://github.com/1624318455/dsh-plugin-tavily</id>
+    <link href="https://github.com/1624318455/dsh-plugin-tavily"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Tavily-backed web search provider for the built-in web_search tool, with a settings card for the API key, result count, and recency window.</summary>
+  </entry>
+  <entry>
+    <title>Q1hangL/dsh-ask-guard</title>
+    <id>https://github.com/Q1hangL/dsh-ask-guard</id>
+    <link href="https://github.com/Q1hangL/dsh-ask-guard"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Cooperative timeout guard for ask_user_question: lost or unanswered questions resolve as a structured ASK_TIMEOUT instead of hanging the turn forever.</summary>
+  </entry>
+  <entry>
+    <title>jeremy9682/dsh-skill-pack</title>
+    <id>https://github.com/jeremy9682/dsh-skill-pack</id>
+    <link href="https://github.com/jeremy9682/dsh-skill-pack"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>11 shareable workflow skills (handoff, triage, to-spec, to-tickets, wayfinder, teach, wait-what, dsh-mode-routing, ask-matt, overnight-execution, full-throttle) as an installable skill pack.</summary>
+  </entry>
+  <entry>
+    <title>THEWOLFWALKER/dsh-notifier</title>
+    <id>https://github.com/THEWOLFWALKER/dsh-notifier</id>
+    <link href="https://github.com/THEWOLFWALKER/dsh-notifier"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Unified notification push for DSH: one minimal notify() API with 8 channel adapters (Telegram / DingTalk / Feishu / WxPusher / PushPlus / ServerChan / Bark / webhook), auto session-event push on turn-end, approval and error, plus an agent-callable notify tool; zero runtime deps.</summary>
+  </entry>
+  <entry>
+    <title>icefall7/dsh-plugin-scout</title>
+    <id>https://github.com/icefall7/dsh-plugin-scout</id>
+    <link href="https://github.com/icefall7/dsh-plugin-scout"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Scouts the deepseek-harness repo and every dsh-plugin-tagged repository to discover harnesses related to your goal, then judges each as worth trying, watching, or skipping.</summary>
+  </entry>
+  <entry>
+    <title>wikkd/dsh-remote-access-web#remote-access-web</title>
+    <id>https://github.com/wikkd/dsh-remote-access-web/tree/main/packages/bundle/remote-access-web</id>
+    <link href="https://github.com/wikkd/dsh-remote-access-web/tree/main/packages/bundle/remote-access-web"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Reverse tunnel for the DSH Web GUI: exposes a `dsh --profile web` deployment at a public frp URL and switches the directory picker to the in-app browser, so a phone or remote machine can open and manage the workspace.</summary>
+  </entry>
+  <entry>
+    <title>buhuikongpan/dsh-pluginmanager</title>
+    <id>https://github.com/buhuikongpan/dsh-pluginmanager</id>
+    <link href="https://github.com/buhuikongpan/dsh-pluginmanager"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Layered plugin manager for DSH web: native plugins grouped read-only by system/WebUI/tools, user extensions with enable/disable, register, uninstall and editable descriptions.</summary>
+  </entry>
+  <entry>
+    <title>moonquake2004/dsh-doctor#plugin</title>
+    <id>https://github.com/moonquake2004/dsh-doctor/tree/main/plugin</id>
+    <link href="https://github.com/moonquake2004/dsh-doctor/tree/main/plugin"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Offline diagnostic for DSH: 19 checks across env, profile, and session state, with a settings &quot;Doctor&quot; panel and a read-only JSON API.</summary>
+  </entry>
+  <entry>
+    <title>Awu12277/dsh-stock-watch</title>
+    <id>https://github.com/Awu12277/dsh-stock-watch</id>
+    <link href="https://github.com/Awu12277/dsh-stock-watch"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>A-share watchlist real-time market monitoring plugin: a collapsible popup in the top-right corner of the DeepSeek Harness (DSH) web interface for real-time quote monitoring, group switching, intraday and candlestick (K-line) charts, and buy/sell target price settings.</summary>
+  </entry>
   <entry>
     <title>GLFzr/dsh-drop-file-to-path</title>
     <id>https://github.com/GLFzr/dsh-drop-file-to-path</id>
@@ -109,110 +214,5 @@
     <link href="https://github.com/starslittle/dsh-blue-whale"/>
     <updated>2026-08-14T17:52:18.112Z</updated>
     <summary>DeepSeek-Chat-style blue-whale skin: brand #4D6BFE on light and dark, following the built-in appearance.</summary>
-  </entry>
-  <entry>
-    <title>PwnKY/dsh-session-link</title>
-    <id>https://github.com/PwnKY/dsh-session-link</id>
-    <link href="https://github.com/PwnKY/dsh-session-link"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>Copy and open `dsh://` session deep links, or paste them into another conversation to inject a bounded, read-only snapshot of the referenced session.</summary>
-  </entry>
-  <entry>
-    <title>huguangyu666/dsh-plugin-session-import</title>
-    <id>https://github.com/huguangyu666/dsh-plugin-session-import</id>
-    <link href="https://github.com/huguangyu666/dsh-plugin-session-import"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>Import claude-code / codex / reasonix / zcode chat history into dsh sessions: workspace binding, tool calls preserved, oversized-session protection, zcode compaction restore.</summary>
-  </entry>
-  <entry>
-    <title>huguangyu666/dsh-plugin-notify</title>
-    <id>https://github.com/huguangyu666/dsh-plugin-notify</id>
-    <link href="https://github.com/huguangyu666/dsh-plugin-notify"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>Notification outbox: agent proactively notifies via toast / Chinese TTS voice / sound effects (explosion, victory, alarm), 60s confirmation window voice-calls you back, volume boost, settings panel.</summary>
-  </entry>
-  <entry>
-    <title>huguangyu666/dsh-store</title>
-    <id>https://github.com/huguangyu666/dsh-store</id>
-    <link href="https://github.com/huguangyu666/dsh-store"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>Plugin store: npm authoritative catalog + awesome curated list (550+ plugins, 11 categories), dsh-field quality verification, official `dsh plugin add/remove` one-click install, sidebar + settings entry.</summary>
-  </entry>
-  <entry>
-    <title>GLFzr/dsh-opencode-go-quota</title>
-    <id>https://github.com/GLFzr/dsh-opencode-go-quota</id>
-    <link href="https://github.com/GLFzr/dsh-opencode-go-quota"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>OpenCode Go quota ring: click-to-cycle progress ring (5h/weekly/monthly) left of the model selector, colored by urgency, with reset countdowns on hover.</summary>
-  </entry>
-  <entry>
-    <title>ZichengGurrr/dsh-window#plugin</title>
-    <id>https://github.com/ZichengGurrr/dsh-window/tree/main/plugin</id>
-    <link href="https://github.com/ZichengGurrr/dsh-window/tree/main/plugin"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>Native Windows desktop window (WebView2) for DSH: one-command install, auto-fetches the app zip from GitHub Releases, creates a desktop shortcut, and adds a desktop_launch tool to start it from chat.</summary>
-  </entry>
-  <entry>
-    <title>Realyujie/dsh-us-stocks</title>
-    <id>https://github.com/Realyujie/dsh-us-stocks</id>
-    <link href="https://github.com/Realyujie/dsh-us-stocks"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>US stock quotes, price history, financial statements, analyst consensus and news via yahoo-finance2.</summary>
-  </entry>
-  <entry>
-    <title>SaiSenBox/dsh-boot-guard</title>
-    <id>https://github.com/SaiSenBox/dsh-boot-guard</id>
-    <link href="https://github.com/SaiSenBox/dsh-boot-guard"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>Loader-independent startup recovery for DSH Web that detects likely broken plugins, temporarily skips them, and restores only Boot Guard-managed changes.</summary>
-  </entry>
-  <entry>
-    <title>AcidGr/dsh-web-mobile-fix</title>
-    <id>https://github.com/AcidGr/dsh-web-mobile-fix</id>
-    <link href="https://github.com/AcidGr/dsh-web-mobile-fix"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Mobile layout fixes for the Web UI on narrow screens: full-screen settings panel, one-row plugin nav, full-screen sidebar, centered popups, icon-only session-log button.</summary>
-  </entry>
-  <entry>
-    <title>AcidGr/dsh-web-lan-access</title>
-    <id>https://github.com/AcidGr/dsh-web-lan-access</id>
-    <link href="https://github.com/AcidGr/dsh-web-lan-access"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.</summary>
-  </entry>
-  <entry>
-    <title>Bernardxu123/dsh-mobile-gate</title>
-    <id>https://github.com/Bernardxu123/dsh-mobile-gate</id>
-    <link href="https://github.com/Bernardxu123/dsh-mobile-gate"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>LAN mobile gateway: isolated child-process reverse proxy with first-visit approval, per-device token binding, rate limiting, and mobile layout injection (compact composer pills, randomUUID polyfill).</summary>
-  </entry>
-  <entry>
-    <title>Noob-stupid/dsh-plugin-hub</title>
-    <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
-    <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.</summary>
-  </entry>
-  <entry>
-    <title>Make0209/dsh-usage-stats</title>
-    <id>https://github.com/Make0209/dsh-usage-stats</id>
-    <link href="https://github.com/Make0209/dsh-usage-stats"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.</summary>
-  </entry>
-  <entry>
-    <title>zoumutou/dsh-cost-balance</title>
-    <id>https://github.com/zoumutou/dsh-cost-balance</id>
-    <link href="https://github.com/zoumutou/dsh-cost-balance"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Collapsible iOS-style stats pill under the composer: session cost, DeepSeek account balance, cache-hit rate, and token usage in a frosted panel.</summary>
-  </entry>
-  <entry>
-    <title>bowenliang123/dsh-context</title>
-    <id>https://github.com/bowenliang123/dsh-context</id>
-    <link href="https://github.com/bowenliang123/dsh-context"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.</summary>
   </entry>
 </feed>

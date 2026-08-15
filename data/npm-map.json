@@ -19,6 +19,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/1624318455/dsh-plugin-tavily": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/1na-ko/dsh-hdc-bridge": {
   "npm": "dsh-hdc-bridge",
   "checkedAt": "2026-08-14"
@@ -115,6 +119,14 @@
   "npm": "dsh-find-plugin",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Awu12277/dsh-stock-watch": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
+ "https://github.com/beijingwahw/dsh-companion": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/Bernardxu123/dsh-mobile-gate": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -186,6 +198,10 @@
  "https://github.com/btspoony/mstar-harness": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/buhuikongpan/dsh-pluginmanager": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/bujue600-arch/dsh-testgen": {
   "npm": null,
@@ -375,6 +391,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Fro2en12/dsh-download-progress": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/fuhefei/dsh-sentinel": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -483,6 +503,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/icefall7/dsh-plugin-scout": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/icetomoyo/dsh_workflow": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -499,6 +523,10 @@
   "npm": null,
   "checkedAt": "2026-08-15"
  },
+ "https://github.com/ishuowang/dsh-sideband": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/itr-del/dsh-feishu": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -506,6 +534,10 @@
  "https://github.com/Jayden-X-L/forkprobe": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/jeremy9682/dsh-skill-pack": {
+  "npm": "@jeremy9682/dsh-skill-pack",
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/Jesse-njx/dsh-chatnode-wechat": {
   "npm": null,
@@ -815,6 +847,10 @@
   "npm": null,
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/mexiaosqwq/dsh-web-mobile": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/minybear/DeepSeek-Harness-Pet": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -834,6 +870,10 @@
  "https://github.com/Moeblack/dsh-prompt-studio": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/moonquake2004/dsh-doctor/tree/main/plugin": {
+  "npm": "@moonquake2004/dsh-doctor",
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/MorGogh/widget-dock": {
   "npm": null,
@@ -1083,6 +1123,10 @@
   "npm": "dsh-session-link",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/Q1hangL/dsh-ask-guard": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/qjcnmd/dsh-reasoning-slider": {
   "npm": "reasoning-slider",
   "checkedAt": "2026-08-14"
@@ -1118,6 +1162,10 @@
  "https://github.com/sakikoTGW/pack-agent": {
   "npm": "@sakikotgw/pack-agent",
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/SamizuHM/dsh-client-ui-theme-xp": {
+  "npm": null,
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/SamXiaBing/dsh-adb": {
   "npm": null,
@@ -1210,6 +1258,10 @@
  "https://github.com/taxueseek/dsh-files": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/THEWOLFWALKER/dsh-notifier": {
+  "npm": "dsh-notifier",
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/THU-MAIC/dsh-openmaic": {
   "npm": null,
@@ -1319,6 +1371,10 @@
   "npm": "@dsh-suite/plugin-team-board",
   "checkedAt": "2026-08-14"
  },
+ "https://github.com/wikkd/dsh-remote-access-web/tree/main/packages/bundle/remote-access-web": {
+  "npm": "@froststarinquire/dsh-remote-access-web",
+  "checkedAt": "2026-08-15"
+ },
  "https://github.com/william-jin-cmu/dsh-evolve": {
   "npm": null,
   "checkedAt": "2026-08-14"
@@ -1354,6 +1410,10 @@
  "https://github.com/wz-heng/dsh-feishu-bridge": {
   "npm": null,
   "checkedAt": "2026-08-14"
+ },
+ "https://github.com/x2802490130-prog/dsh-balance-float": {
+  "npm": "dsh-balance-float",
+  "checkedAt": "2026-08-15"
  },
  "https://github.com/xiaoyuyu6420/dsh-backup": {
   "npm": null,

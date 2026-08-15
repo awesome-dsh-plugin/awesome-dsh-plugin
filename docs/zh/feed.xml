@@ -4,7 +4,112 @@
   <id>https://awesome-dsh-plugin.com/zh/</id>
   <link href="https://awesome-dsh-plugin.com/zh/"/>
   <link rel="self" href="https://awesome-dsh-plugin.com/zh/feed.xml"/>
-  <updated>2026-08-15T01:01:33.356Z</updated>
+  <updated>2026-08-15T01:06:37.661Z</updated>
+  <entry>
+    <title>mexiaosqwq/dsh-web-mobile</title>
+    <id>https://github.com/mexiaosqwq/dsh-web-mobile</id>
+    <link href="https://github.com/mexiaosqwq/dsh-web-mobile"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>DSH Web UI 移动端适配：窄屏下侧边栏变为贴合内容的 overlay 抽屉、会话独占全宽，设置面板改为近全宽 sheet。</summary>
+  </entry>
+  <entry>
+    <title>x2802490130-prog/dsh-balance-float</title>
+    <id>https://github.com/x2802490130-prog/dsh-balance-float</id>
+    <link href="https://github.com/x2802490130-prog/dsh-balance-float"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。</summary>
+  </entry>
+  <entry>
+    <title>SamizuHM/dsh-client-ui-theme-xp</title>
+    <id>https://github.com/SamizuHM/dsh-client-ui-theme-xp</id>
+    <link href="https://github.com/SamizuHM/dsh-client-ui-theme-xp"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>Windows XP Luna 桌面化主题：浮动窗口管理器（任务栏、桌面图标）加上还原度很高的 Luna 皮肤。</summary>
+  </entry>
+  <entry>
+    <title>beijingwahw/dsh-companion</title>
+    <id>https://github.com/beijingwahw/dsh-companion</id>
+    <link href="https://github.com/beijingwahw/dsh-companion"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>四模块会话伴侣：对话智能导出（Markdown/PDF/JSON/PNG 长图、隐私脱敏、批量 ZIP）、上下文交接摘要（模板保存与导入继承）、API 成本优化（官方动态计价、峰谷调度、日/月双档预算、模型路由）、全局对话检索与对话内搜索（Ctrl+F、CSS Custom Highlight API）。</summary>
+  </entry>
+  <entry>
+    <title>ishuowang/dsh-sideband</title>
+    <id>https://github.com/ishuowang/dsh-sideband</id>
+    <link href="https://github.com/ishuowang/dsh-sideband"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>在 DSH Session 与已授权 Agent Team Room 之间异步传递 LLM 总结的上下文，支持即时快照与定时摘要。</summary>
+  </entry>
+  <entry>
+    <title>Fro2en12/dsh-download-progress</title>
+    <id>https://github.com/Fro2en12/dsh-download-progress</id>
+    <link href="https://github.com/Fro2en12/dsh-download-progress"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>下载进度面板：URL 下载器、agent shell/SSH 传输追踪与工作区黑箱文件增长监控，汇聚到可拖拽浮窗实时显示字节、速度、百分比与预计剩余时间。</summary>
+  </entry>
+  <entry>
+    <title>1624318455/dsh-plugin-tavily</title>
+    <id>https://github.com/1624318455/dsh-plugin-tavily</id>
+    <link href="https://github.com/1624318455/dsh-plugin-tavily"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>基于 Tavily 的网页搜索提供方：替换内置 web_search 的后端，并提供 API Key、结果数量与时间窗口的设置卡片。</summary>
+  </entry>
+  <entry>
+    <title>Q1hangL/dsh-ask-guard</title>
+    <id>https://github.com/Q1hangL/dsh-ask-guard</id>
+    <link href="https://github.com/Q1hangL/dsh-ask-guard"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>为 ask_user_question 提供协作式超时守卫：提问卡片丢失或用户未答复时以结构化 ASK_TIMEOUT 结束调用，避免回合无限挂起。</summary>
+  </entry>
+  <entry>
+    <title>jeremy9682/dsh-skill-pack</title>
+    <id>https://github.com/jeremy9682/dsh-skill-pack</id>
+    <link href="https://github.com/jeremy9682/dsh-skill-pack"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>11 个可分享的工作流 skills（handoff、triage、to-spec、to-tickets、wayfinder、teach、wait-what、dsh-mode-routing、ask-matt、overnight-execution、full-throttle），打包为可安装 bundle。</summary>
+  </entry>
+  <entry>
+    <title>THEWOLFWALKER/dsh-notifier</title>
+    <id>https://github.com/THEWOLFWALKER/dsh-notifier</id>
+    <link href="https://github.com/THEWOLFWALKER/dsh-notifier"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>统一通知推送：一个 notify() API 接 8 个渠道（Telegram / 钉钉 / 飞书 / WxPusher / PushPlus / Server 酱 / Bark / webhook），回合结束、待审批、报错时自动推送，agent 也能主动调用 notify 工具；零运行时依赖。</summary>
+  </entry>
+  <entry>
+    <title>icefall7/dsh-plugin-scout</title>
+    <id>https://github.com/icefall7/dsh-plugin-scout</id>
+    <link href="https://github.com/icefall7/dsh-plugin-scout"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>侦察 deepseek-harness 官方仓库与所有 dsh-plugin topic 仓库，发现与目标相关的 harness，并判断每个值得试用、观望还是跳过。</summary>
+  </entry>
+  <entry>
+    <title>wikkd/dsh-remote-access-web#remote-access-web</title>
+    <id>https://github.com/wikkd/dsh-remote-access-web/tree/main/packages/bundle/remote-access-web</id>
+    <link href="https://github.com/wikkd/dsh-remote-access-web/tree/main/packages/bundle/remote-access-web"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>DSH Web GUI 反向隧道：通过 frp 把 `dsh --profile web` 发布到公网地址，目录选择器改用应用内浏览器，手机或远程机器可直接打开并管理工作区。</summary>
+  </entry>
+  <entry>
+    <title>buhuikongpan/dsh-pluginmanager</title>
+    <id>https://github.com/buhuikongpan/dsh-pluginmanager</id>
+    <link href="https://github.com/buhuikongpan/dsh-pluginmanager"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>DSH 分层插件管理器：原生插件按系统/WebUI/工具三层只读展示，用户扩展支持停用/启用、补登记、卸载与可编辑描述。</summary>
+  </entry>
+  <entry>
+    <title>moonquake2004/dsh-doctor#plugin</title>
+    <id>https://github.com/moonquake2004/dsh-doctor/tree/main/plugin</id>
+    <link href="https://github.com/moonquake2004/dsh-doctor/tree/main/plugin"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。</summary>
+  </entry>
+  <entry>
+    <title>Awu12277/dsh-stock-watch</title>
+    <id>https://github.com/Awu12277/dsh-stock-watch</id>
+    <link href="https://github.com/Awu12277/dsh-stock-watch"/>
+    <updated>2026-08-15T01:06:37.661Z</updated>
+    <summary>A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。</summary>
+  </entry>
   <entry>
     <title>GLFzr/dsh-drop-file-to-path</title>
     <id>https://github.com/GLFzr/dsh-drop-file-to-path</id>
@@ -109,110 +214,5 @@
     <link href="https://github.com/starslittle/dsh-blue-whale"/>
     <updated>2026-08-14T17:52:18.112Z</updated>
     <summary>复刻 DeepSeek Chat 蓝鲸配色的皮肤：主色 #4D6BFE，亮色/深色跟随系统外观。</summary>
-  </entry>
-  <entry>
-    <title>PwnKY/dsh-session-link</title>
-    <id>https://github.com/PwnKY/dsh-session-link</id>
-    <link href="https://github.com/PwnKY/dsh-session-link"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。</summary>
-  </entry>
-  <entry>
-    <title>huguangyu666/dsh-plugin-session-import</title>
-    <id>https://github.com/huguangyu666/dsh-plugin-session-import</id>
-    <link href="https://github.com/huguangyu666/dsh-plugin-session-import"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>把 claude-code / codex / reasonix / zcode 的聊天历史导入为 dsh 会话：工作区绑定、工具调用保留、超长会话保护、zcode 压缩还原。</summary>
-  </entry>
-  <entry>
-    <title>huguangyu666/dsh-plugin-notify</title>
-    <id>https://github.com/huguangyu666/dsh-plugin-notify</id>
-    <link href="https://github.com/huguangyu666/dsh-plugin-notify"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。</summary>
-  </entry>
-  <entry>
-    <title>huguangyu666/dsh-store</title>
-    <id>https://github.com/huguangyu666/dsh-store</id>
-    <link href="https://github.com/huguangyu666/dsh-store"/>
-    <updated>2026-08-14T17:51:11.163Z</updated>
-    <summary>dsh 插件商店：npm 权威目录 + awesome 精选（550+ 插件、11 分类）、dsh 字段质量验证、官方 `dsh plugin add/remove` 一键安装，侧边栏与设置页入口。</summary>
-  </entry>
-  <entry>
-    <title>GLFzr/dsh-opencode-go-quota</title>
-    <id>https://github.com/GLFzr/dsh-opencode-go-quota</id>
-    <link href="https://github.com/GLFzr/dsh-opencode-go-quota"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。</summary>
-  </entry>
-  <entry>
-    <title>ZichengGurrr/dsh-window#plugin</title>
-    <id>https://github.com/ZichengGurrr/dsh-window/tree/main/plugin</id>
-    <link href="https://github.com/ZichengGurrr/dsh-window/tree/main/plugin"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。</summary>
-  </entry>
-  <entry>
-    <title>Realyujie/dsh-us-stocks</title>
-    <id>https://github.com/Realyujie/dsh-us-stocks</id>
-    <link href="https://github.com/Realyujie/dsh-us-stocks"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>美股行情、历史 K 线、财务报表、分析师共识与新闻，数据来自 yahoo-finance2。</summary>
-  </entry>
-  <entry>
-    <title>SaiSenBox/dsh-boot-guard</title>
-    <id>https://github.com/SaiSenBox/dsh-boot-guard</id>
-    <link href="https://github.com/SaiSenBox/dsh-boot-guard"/>
-    <updated>2026-08-14T17:49:55.495Z</updated>
-    <summary>独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。</summary>
-  </entry>
-  <entry>
-    <title>AcidGr/dsh-web-mobile-fix</title>
-    <id>https://github.com/AcidGr/dsh-web-mobile-fix</id>
-    <link href="https://github.com/AcidGr/dsh-web-mobile-fix"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。</summary>
-  </entry>
-  <entry>
-    <title>AcidGr/dsh-web-lan-access</title>
-    <id>https://github.com/AcidGr/dsh-web-lan-access</id>
-    <link href="https://github.com/AcidGr/dsh-web-lan-access"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。</summary>
-  </entry>
-  <entry>
-    <title>Bernardxu123/dsh-mobile-gate</title>
-    <id>https://github.com/Bernardxu123/dsh-mobile-gate</id>
-    <link href="https://github.com/Bernardxu123/dsh-mobile-gate"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>局域网手机访问网关：独立子进程反向代理 + 首次访问审批 + 设备令牌绑定 + 限流 + 手机端紧凑排版注入（输入区权限/模型小胶囊、randomUUID polyfill）。</summary>
-  </entry>
-  <entry>
-    <title>Noob-stupid/dsh-plugin-hub</title>
-    <id>https://github.com/Noob-stupid/dsh-plugin-hub</id>
-    <link href="https://github.com/Noob-stupid/dsh-plugin-hub"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。</summary>
-  </entry>
-  <entry>
-    <title>Make0209/dsh-usage-stats</title>
-    <id>https://github.com/Make0209/dsh-usage-stats</id>
-    <link href="https://github.com/Make0209/dsh-usage-stats"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>GitHub 风格用量热力图看板：按工作区统计使用次数与 Token 花费（含缓存命中率）、DeepSeek 账户余额查询、工作区别名管理。</summary>
-  </entry>
-  <entry>
-    <title>zoumutou/dsh-cost-balance</title>
-    <id>https://github.com/zoumutou/dsh-cost-balance</id>
-    <link href="https://github.com/zoumutou/dsh-cost-balance"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>输入框下方的 iOS 风格统计条：一键展开查看会话花费、DeepSeek 账户余额、缓存命中率与 Token 用量。</summary>
-  </entry>
-  <entry>
-    <title>bowenliang123/dsh-context</title>
-    <id>https://github.com/bowenliang123/dsh-context</id>
-    <link href="https://github.com/bowenliang123/dsh-context"/>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。</summary>
   </entry>
 </feed>
