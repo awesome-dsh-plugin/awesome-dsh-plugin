@@ -475,6 +475,9 @@ dsh plugin --profile web add dshmarket
 - [tianyaZTY/dsh-hot-plugin-host](https://github.com/tianyaZTY/dsh-hot-plugin-host) - Runtime plugin loading for the Web UI: a watched hot directory installs/updates client-plugin bundles live on every open page, no restart. Includes a right-column subagent dashboard example.
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) - Offline diagnostic for DSH: 19 checks across env, profile, and session state, with a settings "Doctor" panel and a read-only JSON API.
 
+- [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) - A development safety kit: rolling config snapshots, automatic rollback on plugin failures, boot-failure rescue, and an in-settings management panel.
+- [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) - A hands-off safety net: directories the agent deletes go to a trash folder first and symlinks are never followed, with zero approvals.
+
 ### Just for Fun
 
 - [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) - Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups, and a close button whose hit area is smaller than it looks. All fictional.
