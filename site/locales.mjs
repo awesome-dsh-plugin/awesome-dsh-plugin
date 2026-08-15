@@ -34,15 +34,14 @@ export default [
     categories: {
       ui: 'UI Enhancements',
       theme: 'Themes & Appearance',
-      model: 'Models & Providers',
       session: 'Sessions & Messages',
       memory: 'Memory',
       tools: 'Tools & Capabilities',
       skill: 'Skills',
       workflow: 'Workflow & Automation',
       notify: 'Notifications & Integrations',
+      model: 'Models & Providers',
       dev: 'Development & Runtime',
-      market: 'Plugin Markets & Managers',
       fun: 'Just for Fun',
     },
     strings: {
@@ -112,15 +111,14 @@ export default [
     categories: {
       ui: 'UI 增强',
       theme: '主题与外观',
-      model: '模型与账号接入',
       session: '会话与消息',
       memory: '记忆',
       tools: '工具与能力',
       skill: '技能包',
       workflow: '工作流与自动化',
       notify: '通知与集成',
+      model: '模型与账号接入',
       dev: '开发与运行时',
-      market: '插件市场与管理',
       fun: '娱乐',
     },
     strings: {

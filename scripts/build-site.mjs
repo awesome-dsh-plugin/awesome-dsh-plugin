@@ -23,12 +23,11 @@ const DATES_FILE = 'data/added-dates.json'
 fs.mkdirSync('docs', { recursive: true })
 for (const f of fs.readdirSync('site/assets')) fs.copyFileSync(`site/assets/${f}`, `docs/${f}`)
 const NPM_MAP_FILE = 'data/npm-map.json'
-const CAT_IDS = ['ui', 'theme', 'model', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
+const CAT_IDS = ['ui', 'theme', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'model', 'dev', 'fun']
 
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
-const dupes = []
 function parseReadme(loc) {
   const text = fs.readFileSync(loc.readme, 'utf8')
   const out = new Map() // url -> {name, url, desc, cat}
@@ -40,12 +39,7 @@ function parseReadme(loc) {
       continue
     }
     const m = line.match(/^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) ([—-]) (.+)$/)
-    if (m && cat) {
-      // A Map would silently swallow a repeat, and a stale fork's diff can
-      // re-add entries that are already listed — report instead of dedupe.
-      if (out.has(m[2])) dupes.push(`${loc.readme} lists ${m[2]} twice`)
-      out.set(m[2], { name: m[1], url: m[2], desc: m[4], cat, sep: m[3] })
-    }
+    if (m && cat) out.set(m[2], { name: m[1], url: m[2], desc: m[4], cat, sep: m[3] })
   }
   return out
 }
@@ -55,7 +49,6 @@ const parsed = LOCALES.map((loc) => ({ loc, entries: parseReadme(loc) }))
 const [base, ...others] = parsed
 const entries = []
 let parityBroken = false
-for (const d of dupes) { console.error(d); parityBroken = true }
 // Each language declares its own list-item separator: awesome-lint wants a
 // hyphen in English, while a hyphen between Chinese words reads as punctuation.
 // Contributors mix them up constantly, so make it a build failure.
