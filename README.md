@@ -171,6 +171,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-workspace-files-explorer](https://github.com/YZz-S/dsh-workspace-files-explorer) - Floating workspace file-tree browser for the Web GUI with line-numbered syntax highlighting and Markdown preview.
 - [YZz-S/dsh-token-cost-meter](https://github.com/YZz-S/dsh-token-cost-meter) - Real-time session token usage and estimated cost in the composer stats row, with pricing fetched from DeepSeek official pricing page.
 - [penguin-oo/dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink) - Ctrl+click file paths and links in chat: paths open their folder in the OS file manager (with the file selected), links open in a new browser tab.
+- [Sanqi-normal/dsh-model-picker](https://github.com/Sanqi-normal/dsh-model-picker) - Provider-tabbed model picker for the dsh web composer: left provider column and right model list, both independently scrollable, with cross-provider search.
 ### Themes & Appearance
 
 - [RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) - One-command skin plugin: 8 original themes, translucent wallpaper with opacity/blur, per-user accent, and shareable theme-pack import/export, favorites and surprise-me — purely native on DSH's token system.
