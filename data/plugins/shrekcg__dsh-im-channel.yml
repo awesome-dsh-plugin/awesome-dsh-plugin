@@ -1,0 +1,6 @@
+url: https://github.com/shrekcg/dsh-im-channel
+name: shrekcg/dsh-im-channel
+category: notify
+description:
+  en: 'Unified IM channel for DeepSeek Harness: Feishu, Telegram, DingTalk, Slack, Discord — persistent conversations, true streaming replies, 40 MCP Feishu tools, slash commands, and an IM-bot status tab in the plugin settings.'
+  zh: 'DeepSeek Harness 的统一 IM 渠道：飞书、Telegram、钉钉、Slack、Discord —— 持久会话、真流式回复、40 个飞书 MCP 工具、斜杠命令，以及插件设置页中的 IM 机器人状态页。'
