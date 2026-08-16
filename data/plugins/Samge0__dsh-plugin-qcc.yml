@@ -1,0 +1,6 @@
+url: https://github.com/Samge0/dsh-plugin-qcc
+name: Samge0/dsh-plugin-qcc
+category: tools
+description:
+  en: 'Qichacha (企查查) enterprise data source as a dynamic Cordis plugin: 5 agent tools (auth with QR login, company search, knowledge search, tool search, tool execute) covering 100+ data dimensions, plus a settings-page account manager.'
+  zh: 企查查企业数据源动态 Cordis 插件：5 个 agent 工具（扫码登录认证、企业快搜、知识库检索、工具发现、取数执行），覆盖 100+ 数据维度，附设置页账号管理。
