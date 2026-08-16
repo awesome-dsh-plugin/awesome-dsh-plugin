@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-flomo-report
+name: zhengjy01/dsh-flomo-report
+category: memory
+description:
+  en: 'Generate AI-narrated DSH session reports (daily/weekly/monthly, any date range) and sync them to flomo (浮墨笔记) with one configurable tag (default #write/dsh) and automatic # stripping, via a web settings panel with daily reminder.'
+  zh: 生成 AI 叙事的 DSH 会话报告（日报/周报/月报、任意区间）并同步到 flomo：单一可配置标签（默认 #write/dsh）、正文自动去 # 号，带 Web 设置面板与每日定时提醒。
