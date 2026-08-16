@@ -815,6 +815,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/fabric](https://github.com/omdsh-dev/fabric) - An MC-Fabric-style hook processor.
 - [CH4ACKO3/dsh-harmony](https://github.com/CH4ACKO3/dsh-harmony) - Modifies DSH plugin code at runtime, with ordered patches, inspection, and hot reload.
 - [LoserFox/dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) - Pin Git commits to the environment's own author identity; env-var injection overrides all `git config` settings.
+- [JFWaskin/dsh-git-nexus](https://github.com/JFWaskin/dsh-git-nexus) - Git and GitHub panel for the DSH web profile: stage/unstage/discard/diff, branches, commit, push/pull/sync, log, file browser, workflow board, and GitHub OAuth with PR creation.
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) - Context injection audit: token costs of instruction chains / skill catalogs / tool schemas, duplicate and conflict detection.
 - [lucky8197/dsh-doc-guard](https://github.com/lucky8197/dsh-doc-guard) - Document-code consistency guard: audits version headers / changelog tables / directory trees / module & test counts / cross-doc references for drift, with severity-sorted, read-only fix suggestions.
 - [labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) - Progressive-disclosure MCP gateway that searches large remote catalogs through `mcp_search`, then invokes exact schemas through `mcp_call` with lazy connections and bounded caches.
