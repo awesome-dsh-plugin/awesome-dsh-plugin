@@ -1,5 +1,5 @@
-url: https://github.com/seven282/deepseek-harness-prompt-optimizer
-name: seven282/deepseek-harness-prompt-optimizer
+url: https://github.com/seven282/oss-prompt-optimizer
+name: seven282/oss-prompt-optimizer
 category: tools
 description:
   en: Optimize a raw instruction into a professional four-section prompt (Role / Task / Context / Format) through the harness llm service, with a composer button, one-click undo, a prompt_optimize tool, and an auto-optimize hook.
