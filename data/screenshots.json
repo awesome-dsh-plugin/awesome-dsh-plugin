@@ -222,5 +222,15 @@
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-drawing.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-dark.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/main.png"
+ ],
+ "https://github.com/Blank-not-black/dsh-Remote": [
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-sessions.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-approvals.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-files.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-settings.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/gateway.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/settings-mobile.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/sessions.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/files.png"
  ]
 }
