@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/github-mcp
+name: JohnXu22786/github-mcp
+category: tools
+description:
+  en: 'GitHub workbench MCP server (dsh bundle): 23 MCP tools for repos, issues, PRs, code review, and search, with zero runtime dependencies and PAT/OAuth auth.'
+  zh: GitHub 开发者工作台 MCP server（dsh bundle）：23 个 MCP 工具覆盖仓库、issue、PR、代码审查与搜索，零运行时依赖，支持 PAT 与 OAuth 双认证。
