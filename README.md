@@ -331,6 +331,7 @@ dsh plugin --profile web add dshmarket
 - [NagasakiSoyo-ui/dsh-llm-deepseek-vision](https://github.com/NagasakiSoyo-ui/dsh-llm-deepseek-vision) - Vision-augmented DeepSeek adapter: a vision-capable model describes image input, then a text-only DeepSeek model reasons over the description.
 
 - [vinyumao/dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) - OpenCode Go plan usage display for the DSH web GUI: a persistent badge under the composer shows rolling/weekly/monthly usage percents with reset countdowns; click to expand a card; agents can query the balance via the `opencode_go_usage` tool.
+- [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) - Global Simplified-Chinese mode: a 中 switch in the input box that injects a Chinese-language requirement into every session's system prompt when enabled, skipping anchored presets' pre-promotion round.
 ### Sessions & Messages
 
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
