@@ -279,5 +279,11 @@
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/model-picker.png",
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/chat-demo.png",
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/plugin-list.png"
+ ],
+ "https://github.com/NoNameLeGo/dsh-catppuccin": [
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/latte.png",
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/frappe.png",
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/macchiato.png",
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/mocha.png"
  ]
 }
