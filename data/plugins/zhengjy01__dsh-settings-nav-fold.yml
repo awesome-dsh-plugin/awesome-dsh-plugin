@@ -1,6 +1,0 @@
-url: https://github.com/zhengjy01/dsh-settings-nav-fold
-name: dsh-settings-nav-fold
-category: ui
-description:
-  en: Fold plugin/extension settings entries in the DSH settings panel into one collapsible "Plugin entries" group row — one click to expand or collapse, auto-updating as plugins come and go.
-  zh: 设置面板导航折叠：把插件/扩展的设置入口折叠为一个可展开的「插件入口」分组行，点击展开/收起，随插件增删自动更新。
