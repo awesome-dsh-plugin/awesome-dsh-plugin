@@ -984,6 +984,7 @@ dsh plugin --profile web add dshmarket
 ### Just for Fun
 
 - [609476965/dsh-LorebookMD](https://github.com/609476965/dsh-LorebookMD) - Import SillyTavern/TavernAI character cards and world books, save them as local Markdown lore documents, and generate novel prose from your prompts with the world settings as reference.
+- [AmeKrance/anan-thermal-monitor](https://github.com/AmeKrance/anan-thermal-monitor) - Purple-white desktop pet that docks to the screen edge and shows real-time CPU, RAM, GPU and NVMe temperatures with hardware info.
 - [AnacondaKC/dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) - Short-video sidebar: native player, series navigation, precise history replay.
 - [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) - Fixes the bug where your account can't lose money while you code.
 - [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) - A-share watchlist real-time market monitoring plugin: a collapsible popup in the top-right corner of the DeepSeek Harness (DSH) web interface for real-time quote monitoring, group switching, intraday and candlestick (K-line) charts, and buy/sell target price settings.
