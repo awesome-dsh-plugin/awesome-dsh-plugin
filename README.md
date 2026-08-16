@@ -718,6 +718,7 @@ dsh plugin --profile web add dshmarket
 - [zjsthmjialin/commercial-ui-ux-codex-skill](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill) - Registers the commercial-ui-ux skill for DSH: task-aware commercial UI/UX/GUI design, review, repair, and implementation (SaaS, dashboards, admin panels, forms, tables, design systems) with a reference-doc system and quality gates.
 - [zjsthmjialin/inspiration-deck-workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop) - Registers the Inspiration Deck Workshop skill for DSH: local static HTML presentation decks (6 deck templates, 25+ layouts, 23 themes & motion showroom) with a validate + PNG/PDF export CLI and smoke tests, zero runtime dependencies.
 - [zjsthmjialin/pdf-background-gray-codex-skill](https://github.com/zjsthmjialin/pdf-background-gray-codex-skill) - Registers the remove-pdf-background-gray skill for DSH: whitens gray/off-white scan backgrounds in image-based PDFs while preserving resolution, page geometry, and anti-aliased text edges (lossless Flate write-back), via a single Python script (pypdf + Pillow + numpy).
+- [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) - PR evaluation and improvement consultant: assesses PR success probability based on historical anti-patterns and success patterns, with one-click scoring and actionable suggestions.
 
 ### Workflow & Automation
 
