@@ -680,6 +680,7 @@ dsh plugin --profile web add dshmarket
 - [nyantused-cpun/folio#plugins/folio-tools](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-tools) - Folio (兰亭) @folio/dsh-tools: 15 schema-validated tools (memory + quality gates) of the consulting document-generation engine; pair with @folio/dsh-events for the full session protocol.
 - [nyantused-cpun/folio#plugins/folio-events](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events) - Folio (兰亭) @folio/dsh-events: session-protocol events — auto session-start reminder + auto-save on session close; pair with @folio/dsh-tools.
 - [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) - Failure-recovery memory: search and record failure-recovery lessons from real engineering sessions, with BM25 + semantic RAG retrieval and a lessons knowledge base.
+- [JazzuLu/find-dsh-plugins](https://github.com/JazzuLu/find-dsh-plugins) - Conversational DSH plugin finder: four-source unified index, BM25 pre-filter plus LLM semantic ranking, candidates carry evidence grades and local static security audit, safe install flow with post-install verification.
 
 - [tuogusa/dsh-skill-manager](https://github.com/tuogusa/dsh-skill-manager) - Browse, search, and delete user skills from the Web settings panel.
 
