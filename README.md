@@ -204,6 +204,7 @@ dsh plugin --profile web add dshmarket
 - [vlln/dsh-task-status](https://github.com/vlln/dsh-task-status) - Background task status bar: progress plus live output tail on the chat page.
 - [vvvspec/better-reasoning-slider](https://github.com/vvvspec/better-reasoning-slider) - Official-style composer model trigger with a floating reasoning-effort slider popup.
 - [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) - Font engine for the Web GUI: system font enumeration, global and per-component font-size tuning with a Spy++-style picker, settings page.
+- [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) - Yellow one-line prompt-cache-miss notice under assistant replies that rebuilt the prompt cache.
 - [WhitePlusMS/dsh-git-graph](https://github.com/WhitePlusMS/dsh-git-graph) - Dedicated read-only Git Graph view beside Chat and Trajectory: commit topology, local/remote/tag refs, HEAD and working-tree status, search, filtering, first-parent mode, refresh, and load more.
 - [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) - Search and insert workspace file and directory paths with `@`, plus a `/h` menu for reusing prompts from the current session.
 - [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) - Left-edge user-Turn navigation rail with reading-position highlighting, hover previews of per-turn metrics and model-answer excerpts, keyboard and click-to-jump controls, and local conversation search.
