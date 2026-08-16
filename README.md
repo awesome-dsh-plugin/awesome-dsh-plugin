@@ -363,6 +363,7 @@ dsh plugin --profile web add dshmarket
 - [xianshu-virtuous/dsh-whale-companion](https://github.com/xianshu-virtuous/dsh-whale-companion) - Automatically starts a fresh Web session near the context limit with the last complete turn, and adds an editable additive whale-maid persona with on-demand reload.
 - [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) - Diagnose, unstick, and read DSH sessions: list sessions with agent status, read conversations, diagnose stuck agents, recover them with cancel+keepInbox, and send messages to other sessions.
 - [MuWinds/dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) - Archived-session management: browse archived sessions, unarchive them, or clear them out.
+- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) - Archived Chats settings page for DeepSeek Harness: browse, search, unarchive, and delete archived sessions in the Web UI, grouped by workspace.
 - [anweat/dsh-assistant-message-forge](https://github.com/anweat/dsh-assistant-message-forge) - Create/modify/inject test assistant messages and import/repair session.jsonl(.zstd) session logs into new sessions.
 - [yangyongzhen/dsh-session-export](https://github.com/yangyongzhen/dsh-session-export) - Export sessions to Markdown/JSON for review, replay, and per-session cost summaries.
 - [yangyongzhen/dsh-session-report](https://github.com/yangyongzhen/dsh-session-report) - Per-session cost & usage report cards: tokens, cache hits, duration.
