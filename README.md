@@ -708,6 +708,7 @@ dsh plugin --profile web add dshmarket
 - [PandaPolo/dsh-voice-call](https://github.com/PandaPolo/dsh-voice-call) - Agent-initiated voice calls: `offer_call` rings the human (接听/拒接/稍后再说); accepted calls synthesize and play locally via CrispASR + Qwen3-TTS (9 speakers, 2 Chinese dialects), rejected calls return the decision to the agent.
 - [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) - Two-way Slack messaging (notify/channels/inbox/reply) over Socket Mode, no public callback needed.
 - [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) - DingTalk group-robot notifications (webhook + HMAC signing, zero runtime dependencies).
+- [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) - DingTalk IM channel via Stream-mode WebSocket: each chat drives its own tooled agent; replies stream back as messages, no public callback URL needed.
 - [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) - Rings your phone over CallKit: `call_me` and `text_me` tools, plus optional turn-end and approval calls whose spoken answer is transcribed back into the session.
 - [omdsh-dev/dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) - Open DSH workspace directories in VS Code directly from the web GUI.
 - [ChuanTianML/dsh-open-with](https://github.com/ChuanTianML/dsh-open-with) - Open registered workspaces from the Web UI in a detected or configured local editor, terminal, or file manager, with a remembered per-browser preference.
