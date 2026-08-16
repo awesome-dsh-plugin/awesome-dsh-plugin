@@ -1,0 +1,6 @@
+url: https://github.com/0nt-one/dsh-voice-input
+name: 0nt-one/dsh-voice-input
+category: tools
+description:
+  en: 'Mic button in the composer tool row: Web Speech API speech-to-text (Chrome/Edge), language switching, and optional auto-send, zero dependencies.'
+  zh: 输入框麦克风语音输入：浏览器 Web Speech API 实时转写（Chrome/Edge），多语言切换与可选自动发送，零依赖零密钥。
