@@ -1,0 +1,6 @@
+url: https://github.com/PionAI/dsh-web-search-firecrawl
+name: PionAI/dsh-web-search-firecrawl
+category: tools
+description:
+  en: 'Firecrawl-backed web search provider for the built-in web_search tool: routes the DSH web seam''s searches through Firecrawl''s search API, with a settings card for the API key, result count, and a Use Firecrawl switch.'
+  zh: '基于 Firecrawl 的网页搜索提供方：让内置 web_search 走 Firecrawl 搜索 API，并提供 API Key、结果数量与「使用 Firecrawl」开关的设置卡片。'
