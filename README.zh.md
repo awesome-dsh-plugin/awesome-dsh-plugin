@@ -771,6 +771,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🔔 通知与集成
 
+- [117BS/dsh-perlica-ding](https://github.com/117BS/dsh-perlica-ding) — 明日方舟终末地佩丽卡主题分级提示音：计划出方案 / 任务完成 / 需要你回应 / 出错四档独立音效，普通问答保持安静；系统级播放（窗口在后台也响），跨平台（Windows/macOS/Linux），支持自定义 TTS 语音。
 - [AbcdefgXW/dsh-msg-hub](https://github.com/AbcdefgXW/dsh-msg-hub) — IM 渠道桥：微信（ilinkai）/ QQ / 飞书接入，支持主动推送——定时任务可唤醒渠道 bot 并把 AI 回复推送到手机。
 - [AI-Galaxy-GPU/dsh-sound](https://github.com/AI-Galaxy-GPU/dsh-sound) — 六类事件独立提示音：回合完成、审批、提问、计划评审、目标受阻、任务失败各有独立声音与音量，可在 Web 设置面板配置（内置合成音 / 静音 / 本地音频文件）。
 - [Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) — 语音播报 agent 最终回复：Windows SAPI5 自然语音 / macOS 系统语音，自动跳过思考与工具调用，npm 一行安装。
