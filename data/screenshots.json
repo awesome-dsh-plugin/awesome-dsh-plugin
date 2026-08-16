@@ -38,5 +38,10 @@
  ],
  "https://github.com/coolbreezecoin/dsh-wechat-mp": [
   "https://raw.githubusercontent.com/coolbreezecoin/dsh-wechat-mp/main/assets/demo.gif"
+ ],
+ "https://github.com/sjh9714/dsh-win32": [
+  "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/market-card.png",
+  "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-persistent-sandboxed.png",
+  "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-preset-picker.png"
  ]
 }
