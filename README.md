@@ -358,6 +358,7 @@ dsh plugin --profile web add dshmarket
 - [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) - Search, list and read past and current sessions through the harness's own `sessionQuery` service: uses the SQLite FTS5 index where a deployment enables it, and falls back to a bounded newest-first scan where it does not.
 - [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) - Cross-session task queue with handoff notes: sessions and subagents push, claim, complete and cancel tasks on a shared file-backed queue, and leave a handoff summary for whoever picks up next.
 - [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) - Recall any user message: rolls the conversation (official session fork) and workspace files (per-message shadow git snapshots) back to before it, with a diff-preview confirmation panel.
+- [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) - Adds a configurable humanized whale-girl maid persona with immersive roleplay, speaking modes, and a lightweight layered memory with query-triggered recall.
 - [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) - Delete DSH sessions from the web UI and desktop client: header danger button and session-row menu item with a risk-consent dialog; host endpoint and agent tool remove the session log, projection cache, and workspace accounting.
 - [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) - Diagnose, unstick, and read DSH sessions: list sessions with agent status, read conversations, diagnose stuck agents, recover them with cancel+keepInbox, and send messages to other sessions.
 - [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) - Branch-based message editing, reroll, retry, and a version timeline.
@@ -387,8 +388,7 @@ dsh plugin --profile web add dshmarket
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
 - [zoahdev/dsh-shelf](https://github.com/zoahdev/dsh-shelf) - Session lifecycle CLI: export (md/json/jsonl), archive/restore, trash, search, and stats. Read-only by default; nothing is ever deleted by the engine.
 - [ZRui-C/dsh-minimal-first-turn](https://github.com/ZRui-C/dsh-minimal-first-turn) - Minimal-compatible first turn for Web root sessions: starts with persistent bash and str_replace_editor, removes automatic workspace and skill context, then restores the selected preset after the first tool call or reply; includes a persistent composer toggle.
-- [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) - Adds a configurable humanized whale-girl maid persona with immersive roleplay, speaking modes, and a lightweight layered memory with query-triggered recall.
-- 
+
 ### Memory
 
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) - Model-authored context pruning for DeepSeek Harness through the official compaction API.
