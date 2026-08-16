@@ -192,5 +192,10 @@
   "https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/main/example_img/image-6.png",
   "https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/main/example_img/image-9.png",
   "https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/main/example_img/image-10.png"
+ ],
+ "https://github.com/truelove-dreamer/dsh-plugin-vetting": [
+  "https://raw.githubusercontent.com/truelove-dreamer/dsh-plugin-vetting/main/assets/shot-report.png",
+  "https://raw.githubusercontent.com/truelove-dreamer/dsh-plugin-vetting/main/assets/shot-detail.png",
+  "https://raw.githubusercontent.com/truelove-dreamer/dsh-plugin-vetting/main/assets/shot-gate.png"
  ]
 }
