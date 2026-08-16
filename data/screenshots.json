@@ -43,5 +43,9 @@
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/market-card.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-persistent-sandboxed.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-preset-picker.png"
+ ],
+ "https://github.com/dickpy/dsh-imagegen": [
+  "https://raw.githubusercontent.com/dickpy/dsh-imagegen/main/docs/images/image-generation-studio.png",
+  "https://raw.githubusercontent.com/dickpy/dsh-imagegen/main/docs/images/plugin-settings.png"
  ]
 }
