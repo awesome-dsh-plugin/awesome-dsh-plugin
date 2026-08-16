@@ -210,6 +210,7 @@ dsh plugin --profile web add dshmarket
 - [vvvspec/better-reasoning-slider](https://github.com/vvvspec/better-reasoning-slider) — 官方风格输入框 + 浮动推理能力滑块弹窗，节点与滑块对齐，弹窗跟随 Harness 主题自适应。
 - [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) — 网页界面字体引擎：系统字体枚举、准星点选的全局与逐组件字号微调、设置页。老花眼友好，自定义字体和页面部件字体和字体大小，支持SPY模式扫UI和其他插件。
 - [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) — 在重建了提示缓存的 assistant 回复下方显示一条黄色的缓存未命中提示。
+- [whiteguo233/dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) — OpenBiliClaw 的 DSH 消费侧插件：提供推荐、收藏列表、苏格拉底式对话、画像面板和 Agent Bridge 工具。
 - [WhitePlusMS/dsh-git-graph](https://github.com/WhitePlusMS/dsh-git-graph) — Chat 和 Trajectory 旁的独立 Git Graph 视图：提交拓扑、本地/远程/tag 引用、HEAD 与工作区状态、搜索、筛选、首父模式、刷新和加载更多。
 - [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) — 在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。
 - [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) — 左侧用户轮次导航轨道：随阅读位置高亮，悬停预览单轮指标与模型回答摘要，支持键盘和点击跳转及本地会话搜索。
