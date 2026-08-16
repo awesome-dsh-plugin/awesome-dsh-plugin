@@ -91,6 +91,8 @@ dsh plugin --profile web add dshmarket
 
 - [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) - One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.
 
+- [ChuanTianML/prompt-for-me](https://github.com/ChuanTianML/prompt-for-me) - Context-aware next-message suggestions in the DSH composer, with repeated Trigger cycling and explicit user review before sending.
+
 - [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) - A terminal UI (TUI) for DeepSeek Harness.
 - [openma-ai/deepseek-harness-tui](https://github.com/openma-ai/deepseek-harness-tui) - A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.
 - [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) - Search and insert workspace file and directory paths with `@`, plus a `/h` menu for reusing prompts from the current session.
