@@ -57,6 +57,7 @@ dsh plugin --profile web add dshmarket
 - [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) — 用免费 Edge TTS 或你自己的 RVC 音色朗读 AI 回复：消息朗读与自动朗读、长文自适应分块渐进播放（无缝衔接）、音色包仓库一键安装、便携 RVC 运行时。
 - [XanthanL/dsh-plugin-uisfx](https://github.com/XanthanL/dsh-plugin-uisfx) — 基于 uisfx 的语义化 UI 音效：任务开始/成功/失败、不同按钮情景 cue，设置页即时试听，12 种音色包，Host 持久化，并提供 `ctx.uisfx` 服务给其他插件。
 - [x2802490130-prog/dsh-client-ui-writing](https://github.com/x2802490130-prog/dsh-client-ui-writing) — Web 客户端「写作」面板：项目分卷与统计、书库与全文检索、设定演化版本链 diff、线索 SVG 图谱，仅在写作预设会话显示。
+- [linhx1999/dsh-writing-pad](https://github.com/linhx1999/dsh-writing-pad) — 停靠在对话旁的会话级 Markdown 写作板，支持编辑/预览、选区 AI 改写、Diff 审核、撤销与草稿恢复。
 - [badai147/dsh-global-rules](https://github.com/badai147/dsh-global-rules) — 在设置面板中编辑 ~/.dsh/AGENTS.md 全局规则，保存后实时生效。
 - [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) — Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。
 - [mexiaosqwq/dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) — DSH Web UI 移动端适配：窄屏下侧边栏变为贴合内容的 overlay 抽屉、会话独占全宽，设置面板改为近全宽 sheet。
