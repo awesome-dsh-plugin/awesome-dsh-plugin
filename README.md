@@ -754,6 +754,7 @@ dsh plugin --profile web add dshmarket
 - [lonelymoon87/dsh-specflow](https://github.com/lonelymoon87/dsh-specflow) - Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.
 - [lucas-ward/dsh-ci-context](https://github.com/lucas-ward/dsh-ci-context) - Injects allowlisted GitHub Actions and GitLab CI run metadata into agent context without reading logs, credentials, or provider APIs.
 - [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) - Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and let a dsh agent revise the sources with compile checks and git history.
+- [MoonCoder-HAPPY/SpecWorkflow](https://github.com/MoonCoder-HAPPY/SpecWorkflow) - Registers a SpecWorkflow skill pack for requirement clarification, implementation specs, execution, delivery review, repair planning, bug diagnosis, and source-backed research.
 - [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) - AgentTeams multi-agent teams.
 - [Noelune/dsh-agent-relay](https://github.com/Noelune/dsh-agent-relay) - Loopback-first multi-agent message relay: HMAC-authenticated broker plus dsh plugin (relay_send/recv/peers/history), zero-dependency CLI and Python clients, wire protocol v1.0.
 - [nyantused-cpun/folio#plugins/folio-events](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events) - Folio (兰亭) @nyantused/folio-dsh-events: session-protocol events — auto session-start reminder + auto-save on session close; pair with @nyantused/folio-dsh-tools.
