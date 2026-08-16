@@ -657,6 +657,8 @@ dsh plugin --profile web add dshmarket
 
 - [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) - Auto-supplement QMD semantic search when the model greps/globs a knowledge-base directory: zero-dependency DSH plugin, async injection via next-step, no manual invocation.
 - [mingzeng21/dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) - Connect dsh to a local Obsidian vault: search, read, write, move, and trash notes through `obsidian_*` tools.
+- [somnusovis/dsh-multi-workspace](https://github.com/somnusovis/dsh-multi-workspace) - Multi-workspace sandbox: grants file-write access to every registered workspace automatically — add a workspace, write to it immediately, no config or escalation needed.
+
 ### Skills
 
 - [mudden2380078550-creator/write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) - Chinese long-form screenwriting skill: two input blocks (background + character bible) feeding a causal-value engine, anti-AI-flavor review, and a continuity ledger; works on Codex / Claude Code / dsh / zcode.
