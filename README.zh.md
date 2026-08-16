@@ -497,7 +497,6 @@ dsh plugin --profile web add dshmarket
 - [buhuikongpan/dsh-win-gitbash](https://github.com/buhuikongpan/dsh-win-gitbash) — 面向 Windows 的 Git Bash 工具：通过 Git for Windows 自带的 bash 执行命令，支持超时、沙箱、输出截断与后台任务，替代卡顿的 pwsh 工具与仅限 WSL 的 bash 工具。
 - [bwndlct/dsh-session-audit](https://github.com/bwndlct/dsh-session-audit) — 会话执行分析：步骤、工具调用、失败、重复动作、token 用量与验证信号，输出 text/Markdown/JSON 报告。
 - [caoyiwei850/dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) — DSH SSH 运维终端：在主对话中直接指挥已连接的服务器（ssh_connect/ssh_exec/ssh_read/ssh_write/ssh_disconnect），右侧保留可交互的 xterm.js 终端。
-- [v587d/capital-generation](https://github.com/v587d/capital-generation) — 中国 A 股金融数据 MCP server：11 个 fin_data__* 工具（行情/K线/财务/日历/特色数据/公告/EDB/对账/基金/指数），同花顺免费官方 REST 主干 + AKShare 兜底 + Wind 独家域，降级全程可观测；上下文压缩（实测结果侧 -72.2%）；离线 10 年数据湖；BYOK 零平台密钥。
 - [cdxiaodong/dsh-guardian](https://github.com/cdxiaodong/dsh-guardian) — Agent 安全护栏：拦截并审计所有工具调用，命中敏感操作就要求人工确认。
 - [cdxiaodong/dsh-llm-inspector](https://github.com/cdxiaodong/dsh-llm-inspector) — 统一 LLM 请求/响应检查器：调 reasoning effort、外部思考(think)导出、流量与包分析。
 - [cerebrixos-org/dsh-asimovbox](https://github.com/cerebrixos-org/dsh-asimovbox) — 通过 API 密钥认证的工具将 DeepSeek Harness 连接到 AsimovBox，用于创建、更新、渲染和完成视频。
@@ -627,6 +626,7 @@ dsh plugin --profile web add dshmarket
 - [TonyDua/dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa) — ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。
 - [truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) — 一等公民的 Git 工具：status / diff / log / commit / branch，参数与路径校验、零 shell 调用，杜绝注入。
 - [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) — 秘塔AI搜索 providers for ctx.web：web_search 返回网页摘要，web_fetch 读取网页全文 markdown，多范围搜索（网页/文库/论文/图片/视频/播客）。
+- [v587d/capital-generation](https://github.com/v587d/capital-generation) — 中国 A 股金融数据 MCP server：11 个 fin_data__* 工具（行情/K线/财务/日历/特色数据/公告/EDB/对账/基金/指数），同花顺免费官方 REST 主干 + AKShare 兜底 + Wind 独家域，降级全程可观测；上下文压缩（实测结果侧 -72.2%）；离线 10 年数据湖；BYOK 零平台密钥。
 - [vibeinging/dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — 按 agent 的按需工具发现与渐进式 schema 披露。
 - [Vladimir-Human/ru-marketplace-mcp#dsh](https://github.com/Vladimir-Human/ru-marketplace-mcp/tree/main/dsh) — 面向俄罗斯十家电商平台的技能与可选 MCP 行：跨 Wildberries、Detsky Mir、Yandex Market 比价，以及各平台的搜索、商品卡与评论。安装后 13 个技能立即可用；两行 MCP 默认关闭，需将 RU_MARKETPLACE_MCP_DIR 指向本地克隆，该克隆需要 Python 3.12+ 与 uv。
 - [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — 让 Agent 搜索、阅读并引用本地 Zotero 文献库：找文献、查看笔记与批注、按问题取证、打开原文、生成引用。
