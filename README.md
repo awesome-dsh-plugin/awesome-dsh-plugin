@@ -684,6 +684,7 @@ dsh plugin --profile web add dshmarket
 - [zjsthmjialin/commercial-ui-ux-codex-skill](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill) - Registers the commercial-ui-ux skill for DSH: task-aware commercial UI/UX/GUI design, review, repair, and implementation (SaaS, dashboards, admin panels, forms, tables, design systems) with a reference-doc system and quality gates.
 
 ### Workflow & Automation
+- [dickpy/dsh-cloud-sync](https://github.com/dickpy/dsh-cloud-sync) - Synchronizes DSH profiles and local plugin source archives through WebDAV and S3-compatible storage, with encrypted snapshots, conflict-aware recovery, and explicit self-updates.
 
 - [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) - Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and let a dsh agent revise the sources with compile checks and git history.
 - [ZhenHuangLab/dsh-sync](https://github.com/ZhenHuangLab/dsh-sync) - Policy-driven Git sync for DSH settings and profile configuration, with secret-aware projections, conflict review, and per-line apply controls.
