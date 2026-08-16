@@ -661,6 +661,7 @@ dsh plugin --profile web add dshmarket
 - [somnusovis/dsh-multi-workspace](https://github.com/somnusovis/dsh-multi-workspace) - Multi-workspace sandbox: grants file-write access to every registered workspace automatically — add a workspace, write to it immediately, no config or escalation needed.
 
 - [zjl1989-li/dsh-harness-zh](https://github.com/zjl1989-li/dsh-harness-zh) - Chinese localization for DeepSeek Harness: translates all system prompts, tool descriptions, and runtime contexts into Chinese at runtime via the system-prompt/assemble waterfall (1788 entries, zero source modification, uninstall restores English).
+- [zjl1989-li/dsh-harness-zh-cn](https://github.com/zjl1989-li/dsh-harness-zh-cn) - Chinese localization for DeepSeek Harness: translates all system prompts, tool descriptions, and runtime contexts into Chinese at runtime via the system-prompt/assemble waterfall (1788 entries, zero source modification, uninstall restores English).
 ### Skills
 
 - [mudden2380078550-creator/write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) - Chinese long-form screenwriting skill: two input blocks (background + character bible) feeding a causal-value engine, anti-AI-flavor review, and a continuity ledger; works on Codex / Claude Code / dsh / zcode.
