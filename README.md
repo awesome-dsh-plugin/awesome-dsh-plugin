@@ -61,6 +61,7 @@ dsh plugin --profile web add dshmarket
 - [a903067276-rgb/dsh-hud](https://github.com/a903067276-rgb/dsh-hud) - HUD status panel: Git status, MCP servers, skills, model and token usage in a floating side panel.
 - [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) - LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.
 - [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) - Mobile layout fixes for the Web UI on narrow screens: full-screen settings panel, one-row plugin nav, full-screen sidebar, centered popups, icon-only session-log button.
+- [AikenFra/dsh-alive](https://github.com/AikenFra/dsh-alive) - Zero-token online status indicator for the DeepSeek Harness web UI: an always-visible online/offline dot in the conversation header, auto-refreshed every 15 seconds with no LLM calls.
 - [AKIRACOD/dsh-drag-and-drop](https://github.com/AKIRACOD/dsh-drag-and-drop) - File-drag fork: drop documents as removable chips above the composer, send without typing.
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) - Archived conversations list in the sidebar footer with read-only previews of the most recent messages, for sessions the product deliberately keeps hidden and unreopenable.
 - [AKS1st/dsh-mermaid](https://github.com/AKS1st/dsh-mermaid) - Render Mermaid code fences in DSH Web chat messages as lazy-loaded SVG diagrams with strict sanitization and light/dark theme follow.

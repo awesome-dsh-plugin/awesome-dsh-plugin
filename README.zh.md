@@ -61,6 +61,7 @@ dsh plugin --profile web add dshmarket
 - [a903067276-rgb/dsh-hud](https://github.com/a903067276-rgb/dsh-hud) — HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。
 - [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) — Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。
 - [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) — Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。
+- [AikenFra/dsh-alive](https://github.com/AikenFra/dsh-alive) — 零 token 在线状态指示器：会话头部常驻显示 ● 在线 / ● 离线 状态点，每 15 秒自动检测一次，不调用任何 LLM。
 - [AKIRACOD/dsh-drag-and-drop](https://github.com/AKIRACOD/dsh-drag-and-drop) — 拖放 fork：文档以可删除「文件芯片」挂在输入框上方，不打字也能发送。
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) — 侧边栏底部的已归档对话列表，可只读预览最近消息；针对产品刻意隐藏且无法重新打开的归档会话。
 - [AKS1st/dsh-mermaid](https://github.com/AKS1st/dsh-mermaid) — 把 DSH Web 会话消息中的 Mermaid 代码围栏渲染为惰性加载的 SVG 图表，严格消毒并跟随明暗主题。
