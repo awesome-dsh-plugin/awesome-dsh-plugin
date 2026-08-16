@@ -952,6 +952,7 @@ dsh plugin --profile web add dshmarket
 - [lucky8197/dsh-git-hygiene](https://github.com/lucky8197/dsh-git-hygiene) — Git 卫生巡检：只读扫描已合并/过期分支、大文件、未跟踪文件与未提交修改，输出体检报告与清理建议，不自动删除任何东西。
 - [lucky8197/dsh-weekly-digest](https://github.com/lucky8197/dsh-weekly-digest) — 周报生成器：聚合最近 N 天的 git 提交、会话活动与每日记忆，自动生成 Markdown 周报，全程只读。
 - [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) — 在 Windows 上为 DeepSeek Harness Desktop 与 Web 提供「关闭程序」和「重启程序」控制，位于「设置 → 通用设置」。
+- [mervyn-teo/dsh-plugin-qr-connect](https://github.com/mervyn-teo/dsh-plugin-qr-connect) — 「设置」按钮上方的一键二维码，让手机通过带鉴权的反向代理连接 Web 界面。
 - [mexiaosqwq/want-a-init](https://github.com/mexiaosqwq/want-a-init) — 模型驱动 /init 命令：让 agent 分析当前仓库并生成/更新高信号 AGENTS.md，并通过常驻 system prompt 提醒持续维护。
 - [MicroMilo/upstream-radar](https://github.com/MicroMilo/upstream-radar) — 面向 DSH 插件的常驻依赖安全监控：追踪实际安装路径、OSV 漏洞、npm 发布和破坏性更新信号，再把项目证据交给 DSH Agent。
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) — 离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。

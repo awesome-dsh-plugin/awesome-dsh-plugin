@@ -1,0 +1,6 @@
+url: https://github.com/mervyn-teo/dsh-plugin-qr-connect
+name: mervyn-teo/dsh-plugin-qr-connect
+category: dev
+description:
+  en: A QR-code button above Settings that lets phones connect to the web UI through an auth-gated reverse proxy.
+  zh: 「设置」按钮上方的一键二维码，让手机通过带鉴权的反向代理连接 Web 界面。
