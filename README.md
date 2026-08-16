@@ -446,6 +446,7 @@ dsh plugin --profile web add dshmarket
 
 ### Tools & Capabilities
 
+- [gongyijie85/dsh-repo-setup](https://github.com/gongyijie85/dsh-repo-setup) - Read-only repo bootstrap scanner (repo_setup_scan tool): detects stack/tests/docs/git/db hints and recommends skill plugins, MCP servers and hygiene files (claude-code-setup counterpart).
 - [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) - Metaso (秘塔AI搜索) search & reader providers for the web seam: web_search returns page summaries, web_fetch reads full-page markdown, multi-scope search (webpage/document/paper/image/video/podcast).
 - [niuniuaba/dsh-subagent-vision](https://github.com/niuniuaba/dsh-subagent-vision) - Lets a text-only DeepSeek agent read images in the same session by delegating to a vision-capable subagent, with send-time image-to-path conversion.
 - [cerebrixos-org/dsh-asimovbox](https://github.com/cerebrixos-org/dsh-asimovbox) - Connects DeepSeek Harness to AsimovBox for creating, updating, rendering, and finishing videos through API-key-authenticated tools.
@@ -637,6 +638,7 @@ dsh plugin --profile web add dshmarket
 - [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) - Auto-supplement QMD semantic search when the model greps/globs a knowledge-base directory: zero-dependency DSH plugin, async injection via next-step, no manual invocation.
 ### Skills
 
+- [gongyijie85/dsh-ponytail](https://github.com/gongyijie85/dsh-ponytail) - Ponytail, lazy senior dev mode, for DSH: 6 skills (ponytail, ponytail-audit, ponytail-debt, ponytail-gain, ponytail-help, ponytail-review) adapted from DietrichGebert/ponytail (MIT).
 - [mudden2380078550-creator/write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) - Chinese long-form screenwriting skill: two input blocks (background + character bible) feeding a causal-value engine, anti-AI-flavor review, and a continuity ledger; works on Codex / Claude Code / dsh / zcode.
 - [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) - Skill for packaging DeepSeek Harness into a Tauri 2 desktop app (macOS + Windows): dual-platform install playbook, China mirror bootstrap with a subagent timeout sentinel, admin-free Windows toolchain recipe (no VS Build Tools), and three-path acceptance checklists.
 - [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) - Official Remotion skill ported to DSH: programmatic video with React (animation/audio/captions/3D/charts/fonts, 38 rule files).
