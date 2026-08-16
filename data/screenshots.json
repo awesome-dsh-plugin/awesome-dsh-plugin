@@ -60,5 +60,12 @@
  "https://github.com/Mu-scorpio/token-usage-counter": [
   "https://raw.githubusercontent.com/Mu-scorpio/token-usage-counter/main/assets/usage-stats-overview.png",
   "https://raw.githubusercontent.com/Mu-scorpio/token-usage-counter/main/assets/usage-stats-hover.png"
+ ],
+ "https://github.com/haiziyao/dsh-vision-mix": [
+  "https://raw.githubusercontent.com/haiziyao/dsh-vision-mix/main/docs/settings-routing.png",
+  "https://raw.githubusercontent.com/haiziyao/dsh-vision-mix/main/docs/generation-routing.png",
+  "https://raw.githubusercontent.com/haiziyao/dsh-vision-mix/main/docs/vision-history.png",
+  "https://raw.githubusercontent.com/haiziyao/dsh-vision-mix/main/docs/generation-history.png",
+  "https://raw.githubusercontent.com/haiziyao/dsh-vision-mix/main/docs/benchmark-mix.png"
  ]
 }
