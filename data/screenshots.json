@@ -19,5 +19,15 @@
  ],
  "https://github.com/maple-pwn/paperlab": [
   "https://raw.githubusercontent.com/maple-pwn/paperlab/main/docs/assets/screenshot.png"
+ ],
+ "https://github.com/starslittle/dsh-blue-whale": [
+  "https://raw.githubusercontent.com/starslittle/dsh-blue-whale/main/docs/compare-home.png",
+  "https://raw.githubusercontent.com/starslittle/dsh-blue-whale/main/docs/compare-brand.png"
+ ],
+ "https://github.com/starslittle/dsh-queue-plus": [
+  "https://raw.githubusercontent.com/starslittle/dsh-queue-plus/main/assets/queue-default.png",
+  "https://raw.githubusercontent.com/starslittle/dsh-queue-plus/main/assets/queue-remove-all.png",
+  "https://raw.githubusercontent.com/starslittle/dsh-queue-plus/main/assets/queue-remove-complete.png",
+  "https://raw.githubusercontent.com/starslittle/dsh-queue-plus/main/assets/queue-sort.png"
  ]
 }
