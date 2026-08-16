@@ -1,0 +1,6 @@
+url: https://github.com/nzl153/dsh-preflight
+name: nzl153/dsh-preflight
+category: dev
+description:
+  en: 'Pre-install conflict rehearsal and post-failure log triage CLI: fetches a candidate plugin (npm / GitHub / local path) and collides it against your profile for entry-id, service, config, dependency and artifact conflicts before you install, then reads the DSH logs to reduce a screenful of cascading errors to one root cause. Read-only by design — it never installs, never executes candidate code, and never edits the profile; fixes are printed as commands for you to run.'
+  zh: 装前冲突预演 + 出事后日志定位的命令行工具：把候选插件（npm / GitHub / 本地目录）下载下来，跟当前 profile 对撞 entry id、service、config、依赖与产物冲突，装之前就告诉你会不会出事；真出事了再读 DSH 日志，把满屏连锁报错还原成一句根因。全程只读——不安装、不执行候选代码、不改 profile，修复一律只打印命令由你自己敲。
