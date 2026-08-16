@@ -51,7 +51,7 @@ dsh plugin --profile web add dshmarket
 
 <!-- BEGIN PLUGINS -->
 ### UI Enhancements
-- [zmm863-commits/dsh-paperclip](https://github.com/zmm863-commits/dsh-paperclip) - DSH Web GUI paperclip button: a 📎 button in the composer opens a file picker (drag & drop supported) and inserts file contents into the textarea.
+
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) - Replaces the "Deep diving..." turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.
 - [0xsline/dsh-spotlight](https://github.com/0xsline/dsh-spotlight) - Keyboard-first command palette for the DSH Web UI.
 - [1123762794/dsh-web-restart](https://github.com/1123762794/dsh-web-restart) - One-click restart button for the DSH Web UI: a sidebar footer button that restarts the dsh web process with a single click and persists across the restart it triggers.
