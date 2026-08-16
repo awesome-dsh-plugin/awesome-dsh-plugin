@@ -765,6 +765,7 @@ dsh plugin --profile web add dshmarket
 
 ### Workflow & Automation
 
+- [82c86b8z86-stack/dsh-engineering-workflow](https://github.com/82c86b8z86-stack/dsh-engineering-workflow) - Engineering workflow agent preset for dsh: five gated phases (requirements clarification, plan approval, TDD, parallel subagents, verified finishing) with six workflow skills adapted from obra/superpowers.
 - [940842546/dsh-permissions](https://github.com/940842546/dsh-permissions) - Claude Code-style permission rules engine: hard/deny/ask/allow tiers with a hard tier above full access, workspace-scoped rules, wildcard path protection, and a visual staged editor; rules persist in settings.yaml.
 - [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) - Workflow tools for the local aflare binary: generate, validate and run local-first deterministic YAML workflow DAGs (WAL crash recovery, Saga compensation) through the local aflare binary, with 300+ templates built in.
 - [apheli0os/deepseek-harness-orchestrate](https://github.com/apheli0os/deepseek-harness-orchestrate) - Declarative task-DAG orchestration for DSH: validates dependency graphs, runs topological task layers in parallel through workflow-backed subagents, and propagates failures deterministically.
