@@ -437,5 +437,12 @@
   "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/03-blue-whale-treasure.png",
   "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/04-coast-runner.png",
   "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/05-ocean-gomoku.png"
+ ],
+ "https://github.com/QT-Chen/dsh-mic-input": [
+  "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-1-composer.png",
+  "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-2-listening.png",
+  "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-4-punctuation.png",
+  "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-3-settings.png",
+  "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-5-error.png"
  ]
 }
