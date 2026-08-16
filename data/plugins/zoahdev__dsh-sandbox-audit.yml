@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-sandbox-audit
+name: zoahdev/dsh-sandbox-audit
+category: dev
+description:
+  en: 'Static sandbox-policy consistency audit: checks each tool''s sandbox wiring against the policy it claims (bare fs-local, unguarded reads, destructive ops), grounded in #2066/#951/#149.'
+  zh: '静态沙箱策略一致性审计：检查每个工具的沙箱接线是否符合其声明的策略（裸 fs-local、未约束读取、破坏性操作），依据 #2066/#951/#149。'

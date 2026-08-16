@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-replay
+name: zoahdev/dsh-replay
+category: dev
+description:
+  en: 'Time-travel debugger: decode session.jsonl.zstd and render/diff the full agent trajectory (reasoning, tool calls, results) as a self-contained HTML timeline.'
+  zh: 会话时光机调试器：解码 session.jsonl.zstd，把完整轨迹（推理、工具调用、结果）渲染为自包含 HTML 时间线并支持对比。

@@ -895,7 +895,9 @@ dsh plugin --profile web add dshmarket
 - [Yuuz12/dsh-webui-auth](https://github.com/Yuuz12/dsh-webui-auth) — WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。
 - [YZz-S/dsh-update-checker](https://github.com/YZz-S/dsh-update-checker) — 会话顶栏徽章：显示 DeepSeek Harness 当前版本，自动检查 npm 最新版本，有新版时提示升级。
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — 上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。
+- [zoahdev/dsh-replay](https://github.com/zoahdev/dsh-replay) — 会话时光机调试器：解码 session.jsonl.zstd，把完整轨迹（推理、工具调用、结果）渲染为自包含 HTML 时间线并支持对比。
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) — 验证驱动的自我进化循环：失败日志自动变成经过验证的 AGENTS.md 规则；会话内插件（evolve_learn/evolve_apply/evolve_touch/evolve_recall）、工具体检、规则生命周期、本地召回。
+- [zoahdev/dsh-sandbox-audit](https://github.com/zoahdev/dsh-sandbox-audit) — 静态沙箱策略一致性审计：检查每个工具的沙箱接线是否符合其声明的策略（裸 fs-local、未约束读取、破坏性操作），依据 #2066/#951/#149。
 
 ### 🛒 插件市场与管理
 
