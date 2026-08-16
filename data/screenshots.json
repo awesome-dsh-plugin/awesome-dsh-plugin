@@ -246,5 +246,14 @@
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/remote-compute.png",
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/plugin-inventory.png",
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/topology.png"
+ ],
+ "https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui": [
+  "https://raw.githubusercontent.com/TZHR-invest/dsh-plugins/main/packages/dsh-mobile-ui/assets/screenshot-1-home.png",
+  "https://raw.githubusercontent.com/TZHR-invest/dsh-plugins/main/packages/dsh-mobile-ui/assets/screenshot-2-composer.png",
+  "https://raw.githubusercontent.com/TZHR-invest/dsh-plugins/main/packages/dsh-mobile-ui/assets/screenshot-3-chat.png",
+  "https://raw.githubusercontent.com/TZHR-invest/dsh-plugins/main/packages/dsh-mobile-ui/assets/screenshot-4-sessions.png"
+ ],
+ "https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access": [
+  "https://raw.githubusercontent.com/TZHR-invest/dsh-plugins/main/packages/dsh-lan-access/assets/screenshot-1-token-gate.png"
  ]
 }
