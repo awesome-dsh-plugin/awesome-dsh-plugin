@@ -950,6 +950,7 @@ dsh plugin --profile web add dshmarket
 - [ovdoesw/dsh-xiangqi](https://github.com/ovdoesw/dsh-xiangqi) - A draggable mascot invites you to play Xiangqi (Chinese chess) while the AI thinks, with a built-in engine, move-record export, and optional multi-model commentary.
 - [KongChengZhi/dsh-pixel-studio#dsh-cli-anything-aseprite](https://github.com/KongChengZhi/dsh-pixel-studio/tree/main/dsh-cli-anything-aseprite) - Aseprite-style pixel art studio: the AI draws sprites stroke by stroke with selections, layers, animation frames, gradients, symmetry and reference layers, each step rendered live as ANSI terminal frames.
 - [yushi-xxh/dsh-homepage-skin](https://github.com/yushi-xxh/dsh-homepage-skin) - Adds the DeepSeek Harness homepage background to dsh web: WebGL fluid light, dot-line grid and a digital point-cloud whale, with dark and light palettes.
+- [luumod/dsh-achievements](https://github.com/luumod/dsh-achievements) - Achievement and gamification plugin: unlock badges for turns, tool calls, sessions, daily streaks and coding behavior (edits/reads/tests), with a badge wall, unlock toasts and a ctx.achievements SDK.
 
 ## Contributing
 
