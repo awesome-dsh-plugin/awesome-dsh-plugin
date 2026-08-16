@@ -752,6 +752,7 @@ dsh plugin --profile web add dshmarket
 - [pitetow/dsh-notify-on-complete](https://github.com/pitetow/dsh-notify-on-complete) - Desktop notifications for run completion, model questions, and approval requests with per-platform system sounds, zero runtime dependencies.
 - [Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) - Voice-announce the final reply on Windows (SAPI5 natural voices) and macOS (system voice); skips reasoning and tool calls, one-line npm install.
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) - Connect dsh to Notion via the official Notion MCP (OAuth + PKCE): search, read, and write pages, databases, and comments through `mcp__notion__*` tools.
+- [cdxiaodong/dsh-island](https://github.com/cdxiaodong/dsh-island) - Bridge DSH agent sessions, tool calls, and approvals to the CodeIsland macOS notch panel over a Unix socket, with in-panel allow/deny.
 
 ### Development & Runtime
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) - REST + SSE gateway exposing running Harness sessions to third-party clients: API-key auth, token streaming, workspace grouping, and adopting GUI sessions to keep chatting.
