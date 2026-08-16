@@ -86,6 +86,11 @@
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/feed.png",
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/onboarding.png"
  ],
+ "https://github.com/labmimors/dsh-mcp-lens": [
+  "https://raw.githubusercontent.com/labmimors/dsh-mcp-lens/main/assets/mcp-lens-hero.webp",
+  "https://raw.githubusercontent.com/labmimors/dsh-mcp-lens/main/assets/mcp-lens-comparison.svg",
+  "https://raw.githubusercontent.com/labmimors/dsh-mcp-lens/main/assets/mcp-lens-comparison.zh-CN.svg"
+ ],
  "https://github.com/literaf/ai4scholar-plugin-dsh": [
   "https://raw.githubusercontent.com/literaf/ai4scholar-plugin-dsh/main/docs/ai4scholar-home.jpg",
   "https://raw.githubusercontent.com/literaf/ai4scholar-plugin-dsh/main/docs/settings-card.png",
