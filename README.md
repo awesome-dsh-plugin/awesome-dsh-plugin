@@ -449,6 +449,7 @@ dsh plugin --profile web add dshmarket
 - [yangyongzhen/dsh-memory](https://github.com/yangyongzhen/dsh-memory) - Long-term memory injected at session start: preferences/facts/summaries/knowledge in global and per-project scopes, budgeted recall via `agent/pre-step`, durable JSON store.
 - [Yiipu/dsh-agentmemory](https://github.com/Yiipu/dsh-agentmemory) - DSH ↔ agentmemory session-memory bridge: mirrors session lifecycle into a local agentmemory daemon (REST), exposes memory_recall / memory_remember tools, and injects a per-session memory context window via agent/pre-step.
 - [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) - Write notes and memos to flomo (浮墨笔记) from any agent via the flomo_send tool, configured once with the flomo API URL or API Key.
+- [zhengjy01/dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) - Notion connector for DeepSeek Harness: search, read, query, create, update, and append Notion pages and databases via six agent tools, with a Web settings page — configured once with an Integration Token.
 
 ### Tools & Capabilities
 
