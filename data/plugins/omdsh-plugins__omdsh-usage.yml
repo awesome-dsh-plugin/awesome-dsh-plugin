@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-usage
+name: omdsh-plugins/omdsh-usage
+category: ui
+description:
+  en: "API spend at a glance for the DeepSeek Harness web GUI: this conversation, this project, and the account balance, beside the mode chip in Chat and Work and in the corner in Code."
+  zh: "在 DeepSeek Harness Web GUI 中一眼看到 API 花费：本次会话、当前项目与账户余额，显示在 Chat/Work 的模式徽标旁与 Code 的角落。"

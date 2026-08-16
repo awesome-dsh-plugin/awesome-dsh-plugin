@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-sidechat
+name: omdsh-plugins/omdsh-sidechat
+category: session
+description:
+  en: "Summon a conversation of its own anywhere in the DeepSeek Harness web GUI: a side panel anchored to whatever you were looking at, asking in its own session so the conversation you are running is untouched."
+  zh: "在 DeepSeek Harness Web GUI 任意位置召唤独立对话：侧栏锚定你正在看的内容，在它自己的会话里提问，不打扰正在运行的会话。"

@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-justchat
+name: omdsh-plugins/omdsh-justchat
+category: session
+description:
+  en: "Chat mode for the DeepSeek Harness web GUI: a Chat/Work switch above the conversation, a workspace-free session-intent surface, and the managed Chat workspace its conversations are kept in."
+  zh: "DeepSeek Harness Web GUI 的 Chat 模式：会话上方的 Chat/Work 切换器、无需工作区的会话意图界面，以及收纳其会话的托管 Chat 工作区。"

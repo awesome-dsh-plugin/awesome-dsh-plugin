@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-sidepanel
+name: omdsh-plugins/omdsh-sidepanel
+category: ui
+description:
+  en: "Work-mode side panels for the DeepSeek Harness web GUI: a right file explorer with previews and a bottom terminal, both absent in Chat mode."
+  zh: "DeepSeek Harness Web GUI 的 Work 模式侧栏：右侧带预览的文件浏览器和底部终端，Chat 模式下都不显示。"

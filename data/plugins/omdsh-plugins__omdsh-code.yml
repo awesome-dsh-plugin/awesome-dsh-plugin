@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-code
+name: omdsh-plugins/omdsh-code
+category: dev
+description:
+  en: "Code mode for the DeepSeek Harness web GUI: a third segment beside Chat and Work whose column is the harness's own terminal, running in the conversation's workspace."
+  zh: "DeepSeek Harness Web GUI 的 Code 模式：Chat 与 Work 之外的第三段，其列就是 harness 自带的终端，在会话工作区里运行。"

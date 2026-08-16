@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-remctrl
+name: omdsh-plugins/omdsh-remctrl
+category: dev
+description:
+  en: "Remote control for the DeepSeek Harness: a second front door on its own port, behind device pairing and a tiered method allowlist, so a phone on your tailnet can watch a session, approve what it asks for, and hand it new work."
+  zh: "DeepSeek Harness 的远程控制：独立端口上的第二扇门，带设备配对与分级方法白名单，让 tailnet 里的手机能查看会话、审批请求并派发新任务。"
