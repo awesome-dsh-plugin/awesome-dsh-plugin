@@ -1,0 +1,7 @@
+url: https://github.com/qimidandapigu/dsh-xiaotangyuan-game/tree/main/apps/harness-plugin
+name: qimidandapigu/dsh-xiaotangyuan-game#harness-plugin
+category: fun
+description:
+  en: 'XiaoTangYuan in-game AI companion for DeepSeek Harness: sees the game window, chats by text or push-to-talk, and speaks replies aloud; Stardew Valley is supported, with Don''t Starve Together and Oxygen Not Included integrations in progress.'
+  zh: DeepSeek Harness 的小汤圆游戏 AI 同伴：理解游戏画面，支持文字或按住说话交流并语音回复；现已支持《星露谷物语》，《饥荒联机版》和《缺氧》正在迁移接入。
+tarball: https://github.com/qimidandapigu/dsh-xiaotangyuan-game/releases/download/plugin-v0.5.1/qimidandapigu-dsh-xiaotangyuan-game-0.5.1.tgz
