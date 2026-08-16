@@ -240,7 +240,7 @@ dsh plugin --profile web add dshmarket
 - [xxvk/dsh-cost-crystal](https://github.com/xxvk/dsh-cost-crystal) — Web UI 成本水晶球:余额卡片、实时 tok/s 速率、波峰/低峰计费倒计时、近 24h 消耗,以及 🔮 下一条消息消耗预测,全部时区感知。
 - [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) — 多供应商用量看板：按供应商/模型统计 Token 与日期下钻，统一展示账户余额，并追踪 OpenCode Go / Z.ai 订阅额度。
 - [YEYEYEYESHIFU/dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) — Web 对话「只看结果」开关：隐藏思考与工具调用过程，运行中仅保留一条实时状态行，reduced-motion 环境下恢复活动光影，中英双语。
-- [YEYEYEYESHIFU/dsh-session-hotkeys](https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys) — Web UI 会话快捷键：Alt+1-9 顺序切换、固定槽位三态、侧边栏高亮导航模式、新建/重命名/归档会话快捷键，以及支持方向键导航的可改键面板。
+- [YEYEYEYESHIFU/dsh-session-hotkeys](https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys) — Web 会话热键插件：像切浏览器标签页一样用键盘管理会话——Alt+1-9 顺序切换、固定槽位、上/下一个、新建/归档/重命名、导航模式、聚焦搜索，键位可在面板录制重绑，Windows/macOS 双预设。
 - [yokesky/dsh-usage-lens](https://github.com/yokesky/dsh-usage-lens) — DSH Web UI 用量统计面板：信息卡、280 天活跃热力图、按天 Token 趋势与模型用量双环饼图。
 - [ysyyhhh/dsh-pet](https://github.com/ysyyhhh/dsh-pet) — 跟随 agent 状态的 DSH 原生桌宠，兼容 Codex 桌宠包，并可在插件内直接从 Petdex 导入已审核桌宠，无需 Petdex CLI。
 - [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) — Codex 风格自动隐藏右缘轮次导航：靠边浮现、单轮 tooltip、会话内搜索、长会话 30 轮滚动窗口。
