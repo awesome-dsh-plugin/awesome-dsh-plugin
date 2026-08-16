@@ -295,6 +295,7 @@ dsh plugin --profile web add dshmarket
 - [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) - IKUN fandom skin for the DSH Web UI: star-blue and black-gold palettes in the system theme list, full-screen photo wallpaper rotation, a music box, and a send-button voice line.
 
 - [tuogusa/dsh-whale-background](https://github.com/tuogusa/dsh-whale-background) - Whale-girl wallpaper background with a frosted semi-transparent app surface for the Web UI.
+- [Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) - Neumorphic DSH Web theme with light and dark palettes, ambient lighting, material shadows, grain texture, frosted-glass surfaces, and micro-interactions.
 
 ### Models & Providers
 
