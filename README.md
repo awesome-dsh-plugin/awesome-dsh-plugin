@@ -454,6 +454,7 @@ dsh plugin --profile web add dshmarket
 
 ### Tools & Capabilities
 
+- [asdf17128/dsh-doctor](https://github.com/asdf17128/dsh-doctor) - Registers a `config_doctor` tool that checks the harness's own configuration for problems that boot silently: fields a patch dropped by whole-config replacement, patches targeting missing entry ids, and tool-name collisions. Read-only.
 - [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) - Metaso (秘塔AI搜索) search & reader providers for the web seam: web_search returns page summaries, web_fetch reads full-page markdown, multi-scope search (webpage/document/paper/image/video/podcast).
 - [niuniuaba/dsh-subagent-vision](https://github.com/niuniuaba/dsh-subagent-vision) - Lets a text-only DeepSeek agent read images in the same session by delegating to a vision-capable subagent, with send-time image-to-path conversion.
 - [cerebrixos-org/dsh-asimovbox](https://github.com/cerebrixos-org/dsh-asimovbox) - Connects DeepSeek Harness to AsimovBox for creating, updating, rendering, and finishing videos through API-key-authenticated tools.
