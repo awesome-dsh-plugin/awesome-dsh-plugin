@@ -804,6 +804,7 @@ dsh plugin --profile web add dshmarket
 - [zjsthmjialin/inspiration-deck-workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop) - Registers the Inspiration Deck Workshop skill for DSH: local static HTML presentation decks (6 deck templates, 25+ layouts, 23 themes & motion showroom) with a validate + PNG/PDF export CLI and smoke tests, zero runtime dependencies.
 - [zjsthmjialin/pdf-background-gray-codex-skill](https://github.com/zjsthmjialin/pdf-background-gray-codex-skill) - Registers the remove-pdf-background-gray skill for DSH: whitens gray/off-white scan backgrounds in image-based PDFs while preserving resolution, page geometry, and anti-aliased text edges (lossless Flate write-back), via a single Python script (pypdf + Pillow + numpy).
 - [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) - PR evaluation and improvement consultant: assesses PR success probability based on historical anti-patterns and success patterns, with one-click scoring and actionable suggestions.
+- [literaf/dsh-research](https://github.com/literaf/dsh-research) - Research pack: four embedded skills (pre-submission peer review, introduction writing, formatting and re-submission, reference audit) plus workflow guidance that adapts to whether literature tools are installed, and workspace conventions for papers, citations and reading notes.
 
 ### Workflow & Automation
 
