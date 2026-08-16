@@ -1,0 +1,6 @@
+url: https://github.com/DDDMUC/dsh-free-search
+name: DDDMUC/dsh-free-search
+category: tools
+description:
+  en: 'Free, keyless web search for DSH: 7 engines (DuckDuckGo/Bing/SearXNG free + Exa/Perplexity/DeepSeek paid), auto-failover, settings-page UI with API key inputs and official links, web_fetch, and an engine test tool.'
+  zh: DSH 免费搜索插件：7 个引擎（DuckDuckGo/Bing/SearXNG 免费 + Exa/Perplexity/DeepSeek 付费）、自动回退、设置页 UI（API key 输入 + 官网链接）、web_fetch、引擎测试工具。
