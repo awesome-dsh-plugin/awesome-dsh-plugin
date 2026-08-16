@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/adversarial-review
+name: JohnXu22786/adversarial-review
+category: dev
+description:
+  en: 'Adversarial multi-lens code review: parallel correctness/security/maintainability lenses attack a diff, with deterministic severity grading, suppression rules and incremental review history.'
+  zh: '对抗式多视角代码审查：正确性/安全性/可维护性透镜并行攻击 diff，确定性严重度定级、抑制规则与增量审查历史。'
