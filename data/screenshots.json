@@ -288,5 +288,11 @@
  ],
  "https://github.com/LKMeng2001/dsh-mcp-market": [
   "https://raw.githubusercontent.com/LKMeng2001/dsh-mcp-market/main/assets/market-discover.png"
+ ],
+ "https://github.com/disyli/dsh-tool-call-stats": [
+  "https://raw.githubusercontent.com/disyli/dsh-tool-call-stats/main/assets/screenshots/01-session.png",
+  "https://raw.githubusercontent.com/disyli/dsh-tool-call-stats/main/assets/screenshots/02-tool-stats.png",
+  "https://raw.githubusercontent.com/disyli/dsh-tool-call-stats/main/assets/screenshots/03-install.png",
+  "https://raw.githubusercontent.com/disyli/dsh-tool-call-stats/main/assets/screenshots/04-config.png"
  ]
 }
