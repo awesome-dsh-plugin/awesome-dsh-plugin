@@ -807,6 +807,7 @@ dsh plugin --profile web add dshmarket
 
 ### Workflow & Automation
 
+- [1052326311/dsh-plan-lattice](https://github.com/1052326311/dsh-plan-lattice) - Adds persistent execution contracts, recursive work graphs, critical clarification, and evidence gates for long or underspecified Harness tasks.
 - [940842546/dsh-permissions](https://github.com/940842546/dsh-permissions) - Claude Code-style permission rules engine: hard/deny/ask/allow tiers with a hard tier above full access, workspace-scoped rules, wildcard path protection, and a visual staged editor; rules persist in settings.yaml.
 - [adithya-hmt/fullstack-expert](https://github.com/adithya-hmt/fullstack-expert) - Cordis-native, evidence-driven full-stack engineering workflow: inspect-first planning, explicit verification evidence, and approval-aware gating for sensitive operations.
 - [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) - Workflow tools for the local aflare binary: generate, validate and run local-first deterministic YAML workflow DAGs (WAL crash recovery, Saga compensation) through the local aflare binary, with 300+ templates built in.
