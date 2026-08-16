@@ -213,5 +213,8 @@
  "https://github.com/zer0zio-stack/dsh-opencode-go-quota": [
   "https://raw.githubusercontent.com/zer0zio-stack/dsh-opencode-go-quota/main/assets/screenshot-deepseek-balance.png",
   "https://raw.githubusercontent.com/zer0zio-stack/dsh-opencode-go-quota/main/assets/screenshot-opencode-go-limit.png"
+ ],
+ "https://github.com/030611/qiushi-dsh-evidence-audit": [
+  "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
  ]
 }
