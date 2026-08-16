@@ -2,5 +2,5 @@ url: https://github.com/PGZXB/dsh-feishu
 name: PGZXB/dsh-feishu
 category: notify
 description:
-  en: 'Feishu (Lark) UI for DeepSeek Harness: one chat maps to one dsh session, live streaming cards, in-card questions and approvals, and one-QR app setup.'
-  zh: DeepSeek Harness 的飞书 UI：一个聊天对应一个 dsh 会话，流式卡片实时更新，提问与审批在卡片内点选即答，扫码一次即可完成应用配置。
+  en: 'Feishu (Lark) UI for DeepSeek Harness — a panel-driven control console: every slash command is a button on the ⚙️ control-panel card, in-card approvals and questions, live streaming cards, and one-QR app setup.'
+  zh: DeepSeek Harness 的飞书 UI：面板驱动控制台——每个斜杠命令都是 ⚙️ 控制面板卡片上的按钮，卡内审批与提问，流式卡片，扫码一次完成配置。
