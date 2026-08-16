@@ -670,6 +670,7 @@ dsh plugin --profile web add dshmarket
 - [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) - Four GitHub workflow skills for PR triage, review feedback, GitHub Actions diagnosis, and safe draft-PR publishing, reusing existing DSH capabilities with gh/git fallbacks.
 - [xiongjiamu/dsh-atomgit](https://github.com/xiongjiamu/dsh-atomgit) - AtomGit plugin bundle for DeepSeek Harness: six built-in AtomGit skills (plan issues, implement issues, review PRs, merge PRs, publish CLI releases, mirror to GitHub) plus ag CLI integration and platform-hosted MCP tools for repos, branches, issues, PRs, and search.
 - [Vladimir-Human/humanizer-ru#dsh](https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh) - Cleans AI traces from Russian text: finds chatbot copy-paste artefacts (ChatGPT, Gemini, Grok, Perplexity, DeepSeek) and rewrites the text into natural prose on request; 39 regex markers with an evidence registry, offline, text-only bundle.
+- [zjsthmjialin/commercial-ui-ux-codex-skill](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill) - Registers the commercial-ui-ux skill for DSH: task-aware commercial UI/UX/GUI design, review, repair, and implementation (SaaS, dashboards, admin panels, forms, tables, design systems) with a reference-doc system and quality gates.
 
 ### Workflow & Automation
 
