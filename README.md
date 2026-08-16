@@ -250,6 +250,7 @@ dsh plugin --profile web add dshmarket
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) - Live subagent run monitor for the Web UI: a sidebar footer trigger plus a fixed top-right card panel showing each subagent of the current session in real time (running/elapsed, terminal outcomes, tree indent), with one-click jump into the child conversation and a return button, refresh-surviving and mobile-hidden by default.
 - [johnnycls/dsh-no-setup-mode](https://github.com/johnnycls/dsh-no-setup-mode) - No-setup mode for the DSH web UI: hides advanced surfaces, auto-applies best defaults (chat mode, full access, account balance), and one-click role-play personas (maid/butler).
 
+- [mtty-ai/mmx-quota-tool](https://github.com/mtty-ai/mmx-quota-tool) - MiniMax token-plan quota dock for the Web UI: a drop-shape 5h-usage % chip in the conversation input area, click for a detail panel listing every model's 5h & weekly usage and reset countdown, auto-hidden when the active default model is not a MiniMax model.
 ### Themes & Appearance
 
 - [Ultronen/dsh-liquid-glass](https://github.com/Ultronen/dsh-liquid-glass) - One toggle makes the whole DeepSeek Harness shell translucent, with an opacity slider and a custom full-page background.
