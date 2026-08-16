@@ -9,13 +9,15 @@
   "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/diff-detail.png",
   "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/color-settings.png",
   "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/plugin-market.png"
+ ],
+ "https://github.com/keyiadiannao/dsh-restart-button": [
+  "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/power-button.png",
+  "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/power-menu.png",
+  "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/shutdown-confirm.png",
+  "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/shutdown-progress.png",
+  "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/restart-done.png"
+ ],
+ "https://github.com/maple-pwn/paperlab": [
+  "https://raw.githubusercontent.com/maple-pwn/paperlab/main/docs/assets/screenshot.png"
  ]
- ,
-  "https://github.com/keyiadiannao/dsh-restart-button": [
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/power-button.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/power-menu.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/shutdown-confirm.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/shutdown-progress.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/restart-done.png"
-  ]
 }
