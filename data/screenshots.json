@@ -94,5 +94,10 @@
  "https://github.com/wuxiangru915/dsh-review-loop": [
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.en.png",
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.zh.png"
+ ],
+ "https://github.com/KLRSL/dsh-biomemory": [
+  "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-main.png",
+  "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-settings.png",
+  "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-memory-settings.png"
  ]
 }
