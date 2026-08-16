@@ -814,6 +814,8 @@ dsh plugin --profile web add dshmarket
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) - Connect dsh to Notion via the official Notion MCP (OAuth + PKCE): search, read, and write pages, databases, and comments through `mcp__notion__*` tools.
 - [cdxiaodong/dsh-island](https://github.com/cdxiaodong/dsh-island) - Bridge DSH agent sessions, tool calls, and approvals to the CodeIsland macOS notch panel over a Unix socket, with in-panel allow/deny.
 
+- [michaelcode-wang/dsh-wecom](https://github.com/michaelcode-wang/dsh-wecom) - WeCom (Enterprise WeChat) Smart Robot bridge: two-way chat over the aibot WebSocket gateway, no public endpoint needed.
+
 ### Development & Runtime
 
 - [bainianlaoyao/windows-bash](https://github.com/bainianlaoyao/windows-bash) - Makes Git Bash the only terminal tool for DeepSeek Harness on Windows: enables the bash executor and tool, disables PowerShell everywhere, and ships standard/code/cordis bash-only agent presets with the full-access sandbox defaults Git Bash's cygwin runtime needs.

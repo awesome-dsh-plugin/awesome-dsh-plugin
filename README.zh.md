@@ -815,6 +815,8 @@ dsh plugin --profile web add dshmarket
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
 - [cdxiaodong/dsh-island](https://github.com/cdxiaodong/dsh-island) — 通过 Unix socket 把 DSH agent 的会话、工具调用与审批实时桥接到 CodeIsland macOS 刘海面板，可直接在面板上批准/拒绝。
 
+- [michaelcode-wang/dsh-wecom](https://github.com/michaelcode-wang/dsh-wecom) — 企业微信智能机器人桥接：aibot WebSocket 双向对话（bot_id + secret），无需公网回调。
+
 ### 🧑‍💻 开发与运行时
 
 - [bainianlaoyao/windows-bash](https://github.com/bainianlaoyao/windows-bash) — 让 Windows 上 DeepSeek Harness 的终端工具只剩 Git Bash：启用 bash 执行器与工具、全局禁用 PowerShell，并附 standard/code/cordis 三个 bash-only agent 预设及配套的 full-access 沙箱默认值。
