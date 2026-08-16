@@ -913,6 +913,9 @@ dsh plugin --profile web add dshmarket
 - [hellosky983/dsh-fabric](https://github.com/hellosky983/dsh-fabric) - Unifies every DSH extensibility seam behind one declarative DSL: a runtime `fabric` service, `fabric_extend`/`fabric_inspect` tools, and a capability-graph settings page.
 - [hellosky983/dsh-foundry](https://github.com/hellosky983/dsh-foundry) - Plugin compiler with a blueprint registry (scaffold → validate → deploy) exposed as a runtime service, three model tools, and a blueprint-gallery settings page.
 - [bigclawd/dsh-security-guard](https://github.com/bigclawd/dsh-security-guard) - Static and runtime security guard for dsh: rule-based scans for malicious code, prompt injection and token waste, runtime interception of dangerous tool calls, /scan command, plugin_scan tool, web panel, and allowlist.
+- [tancheng33/dsh-code-runtime-container](https://github.com/tancheng33/dsh-code-runtime-container) - Container-isolated backend for the `ctx.codeRuntime` seam: each Code Mode program runs in a fresh container with no network, a read-only rootfs, dropped capabilities, and kernel-enforced memory, CPU and pid ceilings.
+- [tancheng33/dsh-credentials-vault](https://github.com/tancheng33/dsh-credentials-vault) - HashiCorp Vault backend for the credential seam: KV v2/v1, AppRole machine auth, per-operation reads so rotation needs no restart, and compare-and-swap writes.
+- [tancheng33/dsh-spill-s3](https://github.com/tancheng33/dsh-spill-s3) - S3-compatible backend for the spill seam: oversized tool output goes to object storage (S3, MinIO, R2) with hashed session prefixes and unguessable keys, instead of the agent's local disk.
 
 ### Plugin Markets & Managers
 
