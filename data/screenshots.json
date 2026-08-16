@@ -78,5 +78,10 @@
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/track.png",
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/feed.png",
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/onboarding.png"
+ ],
+ "https://github.com/literaf/ai4scholar-plugin-dsh": [
+  "https://raw.githubusercontent.com/literaf/ai4scholar-plugin-dsh/main/docs/ai4scholar-home.jpg",
+  "https://raw.githubusercontent.com/literaf/ai4scholar-plugin-dsh/main/docs/settings-card.png",
+  "https://raw.githubusercontent.com/literaf/ai4scholar-plugin-dsh/main/docs/balance-card.png"
  ]
 }
