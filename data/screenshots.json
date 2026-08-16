@@ -209,5 +209,9 @@
  "https://github.com/2nd1st/dsh-plugin-open-app": [
   "https://raw.githubusercontent.com/2nd1st/dsh-plugin-open-app/main/docs/screenshot-app-container.jpg",
   "https://raw.githubusercontent.com/2nd1st/dsh-plugin-open-app/main/docs/screenshot-inline.jpg"
+ ],
+ "https://github.com/zer0zio-stack/dsh-opencode-go-quota": [
+  "https://raw.githubusercontent.com/zer0zio-stack/dsh-opencode-go-quota/main/assets/screenshot-deepseek-balance.png",
+  "https://raw.githubusercontent.com/zer0zio-stack/dsh-opencode-go-quota/main/assets/screenshot-opencode-go-limit.png"
  ]
 }
