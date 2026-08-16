@@ -434,6 +434,7 @@ dsh plugin --profile web add dshmarket
 - [scd13150/dsh-cognition](https://github.com/scd13150/dsh-cognition) - Project memory for coding agents on DeepSeek Harness: similar past edits surface as precedents, out-of-scope edits are blocked, and cognition persists across sessions (47 upstream-verified fixes, gold-free 20-task run).
 
 ### Tools & Capabilities
+- [988hj7tczd-oss/dsh-computer-use](https://github.com/988hj7tczd-oss/dsh-computer-use) - Cross-platform Computer Use for DeepSeek Harness: virtual-mouse human-like operation (screen_observe + computer_click + type + key + scroll + drag, 11 tools), AX-tree zero-vision-cost mode with free GLM-4V-Flash vision fallback, safety guards (snapshot TTL / app whitelist / dangerous-action approval / password-box protection).
 - [Asher-2000/dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) - Expert-mode agent preset for DeepSeek Harness: a chief coordinator plus 11 domain-expert subagents (data analyst, copywriter, legal review, product manager, frontend, UI/UX, architect, social media ops, growth hacker, quant finance, finance) with automatic task delegation.
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) - Connects DSH to the local Beav desktop app for durable social-media content, knowledge, image, audio, and video tasks, with approval and artifact tracking.
 - [corrinehu/dsh-chat-imagine](https://github.com/corrinehu/dsh-chat-imagine) - Generates images in DeepSeek Harness through configured OpenAI-compatible image models or a local MiniMax CLI, and displays the result in chat.
@@ -612,6 +613,7 @@ dsh plugin --profile web add dshmarket
 - [Rianico/dsh-better-edit](https://github.com/Rianico/dsh-better-edit) - Hash-anchored read / edit / batch_edit / undo_last_edit tools: every line gets a unique 3-character content hash, edits target hashes instead of line numbers, and served-state verification rejects stale ranges with fresh anchors.
 - [tancheng33/dsh-egress-guard](https://github.com/tancheng33/dsh-egress-guard) - Runtime security gate on the tool pipeline: denies calls naming hosts outside an egress allowlist, redacts credentials from results at the canonical value rather than only the rendered content, and appends every decision to a JSONL audit log; ships in monitor-only mode.
 - [THEWOLFWALKER/dsh-coyote](https://github.com/THEWOLFWALKER/dsh-coyote) - Agent- and GUI-controlled DG-LAB Coyote e-stim plugin: eight `coyote_*` tools plus a DSH web panel behind one safety envelope (soft limits, asymmetric rate limiter, session cooldown, playback caps, disconnect fail-safe); optional auto-stim layer maps agent events (tool calls, errors, turn end) to bounded pulses; official V3 socket protocol with QR pairing, programmable waveforms. Adults only.
+- [kexuejin/dsh-zhihu-dashboard](https://github.com/kexuejin/dsh-zhihu-dashboard) - Zhihu (知乎) dashboard: hot list with trend arrows, follow feed (favorites/creations/followees), post tracking (question/keyword/person) with auto-briefs, and five agent tools (zhihu_search/hot/answer/global_search/followees).
 
 ### Skills
 
@@ -700,6 +702,7 @@ dsh plugin --profile web add dshmarket
 - [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) - Workflow tools for the local aflare binary: generate, validate and run local-first deterministic YAML workflow DAGs (WAL crash recovery, Saga compensation) through the local aflare binary, with 300+ templates built in.
 
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) - Kimi-Code-style swarm: batch-parallel subagent dispatch with adaptive scheduling, a /swarm command, and in-chat live progress rows.
+- [Dely0/dsh-workbench](https://github.com/Dely0/dsh-workbench) - Calendar and hierarchical task workbench: AI-assisted intake clarification, consultation, decomposition, execution with user acceptance, and review, plus reminders and per-task AI session workspaces.
 
 ### Notifications & Integrations
 
@@ -864,6 +867,8 @@ dsh plugin --profile web add dshmarket
 - [loongsuite/dsh-plugin](https://github.com/loongsuite/dsh-plugin) - Converts session, agent-loop, LLM, and tool lifecycle events into OpenTelemetry GenAI traces and metrics, exported over standard OTLP/HTTP to any compatible backend, with content capture off by default.
 - [hezhongtang/dsh-update-copilot](https://github.com/hezhongtang/dsh-update-copilot) - Update copilot for DeepSeek Harness: one scan covers the dsh core, official bundles, and every profile plugin; explains what changed and how risky each update is, then updates only what you confirm.
 - [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) - Close and restart controls for DeepSeek Harness Desktop and Web on Windows, in Settings → General.
+- [hellosky983/dsh-fabric](https://github.com/hellosky983/dsh-fabric) - Unifies every DSH extensibility seam behind one declarative DSL: a runtime `fabric` service, `fabric_extend`/`fabric_inspect` tools, and a capability-graph settings page.
+- [hellosky983/dsh-foundry](https://github.com/hellosky983/dsh-foundry) - Plugin compiler with a blueprint registry (scaffold → validate → deploy) exposed as a runtime service, three model tools, and a blueprint-gallery settings page.
 
 ### Plugin Markets & Managers
 
