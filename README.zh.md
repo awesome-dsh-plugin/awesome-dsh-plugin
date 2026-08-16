@@ -919,6 +919,7 @@ dsh plugin --profile web add dshmarket
 - [bujue600-arch/dsh-testgen](https://github.com/bujue600-arch/dsh-testgen) — 自动化单元测试生成：/testgen 命令与 generate_tests 工具，生成、运行并修复测试直至通过（LLM 与离线模板双生成器；支持 vitest/jest/mocha/node:test）。
 - [Cavan-Ou/dsh-observation-journal](https://github.com/Cavan-Ou/dsh-observation-journal) — DeepSeek Harness 零侵入运行事实遥测：每个会话自动把任务/模型档位/工具/失败/时长/状态写入人机共读观测卡并附统计区（纯观察者——零工具、零 LLM、零注入）。
 - [CH4ACKO3/dsh-harmony](https://github.com/CH4ACKO3/dsh-harmony) — 在运行时修改 DSH 插件代码，并提供 Patch 排序、检查和热重载。
+- [DeLightor/dsh-depguard](https://github.com/DeLightor/dsh-depguard) — 依赖拓扑安全：装前预测 + 装后检测 @deepseek-ai/dsh-* 多副本、版本漂移与插件私包，防 Symbol 键冲突崩溃（Cannot read properties of undefined (reading 'prepare')）。
 - [DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — 帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。
 - [disyli/dsh-tool-call-stats](https://github.com/disyli/dsh-tool-call-stats) — 进程内工具调用统计：提供 `tool_stats` 工具，按工具汇报调用次数、失败次数与平均耗时。
 - [Elohia/dsh-genome](https://github.com/Elohia/dsh-genome) — 能力转化与组装引擎（钱学森工程控制论/系统论框架）：静态常驻层管理 skill/MCP/插件三库、自动吸收技能与工具度量，驱动负反馈进化闭环（scan Sick/Weak → mutate → select 晋升/淘汰 → 30s 回滚）；含 Web UI 面板与 GitHub dsh-plugin 商店桥。
@@ -1015,6 +1016,7 @@ dsh plugin --profile web add dshmarket
 - [alex04130/dsh-forge](https://github.com/alex04130/dsh-forge) — DeepSeek Harness 扩展套件：跨会话邮箱与 wake 冷启动、代理团队（队长 + 成员 + 依赖任务板 + team_wait）、子代理派发策略（提权自动审批）、任务感知路由 preset、插件市场、技能管理器与运行时注入器。
 - [bradeGithub/DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace) — 面向 GitHub dsh-plugin 话题的插件与技能市场：设置页内逛自动收录的全量索引（CI 每 2 小时刷新），一键安装带类型识别、安装脚本与宿主依赖遮蔽安全检查、环境变量密钥管理，并附 STANDARD.md 识别层规范。
 - [buhuikongpan/dsh-pluginmanager](https://github.com/buhuikongpan/dsh-pluginmanager) — DSH 分层插件管理器：原生插件按系统/WebUI/工具三层只读展示，用户扩展支持停用/启用、补登记、卸载与可编辑描述。
+- [ChengxiuCDP/dsh-plugin-advisor](https://github.com/ChengxiuCDP/dsh-plugin-advisor) — 质量感知的会话内插件发现：find_dsh_plugins 工具基于每日更新的质量评分索引（可安装声明 / 精选收录 / 许可证 / 活跃度）对 dsh-plugin topic 全量排序，并叠加实时 gh 搜索——零 LLM API 成本，每条结果附风险徽章与精确安装命令。
 - [cynch18/plugin-switch](https://github.com/cynch18/plugin-switch) — 插件清单页滑块开关：在设置 → 插件 → 插件清单实时启用/停用任意插件，无需重启；支持分组/筛选、批量开关、撤销与自动备份。
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) — （推荐）装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。
 - [Dylan37670/dsh-plugin-panel](https://github.com/Dylan37670/dsh-plugin-panel) — DSH 内置插件市场面板：精选与全量目录、关键词与语义搜索、中文翻译、收藏、已安装状态，以及通过官方命令安装、更新和卸载。
