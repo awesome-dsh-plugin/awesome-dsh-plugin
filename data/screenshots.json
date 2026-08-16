@@ -420,5 +420,8 @@
   "https://raw.githubusercontent.com/Dely0/dsh-workbench/main/screenshot/%E7%9F%A5%E8%AF%86%E5%BA%93%E7%95%8C%E9%9D%A2.png",
   "https://raw.githubusercontent.com/Dely0/dsh-workbench/main/screenshot/%E7%82%B9%E5%AD%90%E7%95%8C%E9%9D%A2.png",
   "https://raw.githubusercontent.com/Dely0/dsh-workbench/main/screenshot/%E7%82%B9%E5%AD%90%E7%8E%8B.png"
+ ],
+ "https://github.com/Smalldy/godot-bridge": [
+  "https://raw.githubusercontent.com/Smalldy/godot-bridge/main/assets/godot-bridge-env-check.png"
  ]
 }
