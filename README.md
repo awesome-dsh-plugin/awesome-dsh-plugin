@@ -695,6 +695,7 @@ dsh plugin --profile web add dshmarket
 ### Notifications & Integrations
 
 - [cerebrixos-org/tuning-engines-cli#tuningengines-dsh-plugin](https://github.com/cerebrixos-org/tuning-engines-cli/tree/main/packages/tuningengines-dsh-plugin) - Exports metadata-only DSH turn, model, tool, approval, retry, and error events to Tuning Engines for governed traces, policy evaluation, cost analysis, and Work Session review, with a disk-backed retry queue.
+- [PandaPolo/dsh-voice-call](https://github.com/PandaPolo/dsh-voice-call) - Agent-initiated voice calls: `offer_call` rings the human (接听/拒接/稍后再说); accepted calls synthesize and play locally via CrispASR + Qwen3-TTS (9 speakers, 2 Chinese dialects), rejected calls return the decision to the agent.
 - [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) - Two-way Slack messaging (notify/channels/inbox/reply) over Socket Mode, no public callback needed.
 - [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) - DingTalk group-robot notifications (webhook + HMAC signing, zero runtime dependencies).
 - [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) - Rings your phone over CallKit: `call_me` and `text_me` tools, plus optional turn-end and approval calls whose spoken answer is transcribed back into the session.

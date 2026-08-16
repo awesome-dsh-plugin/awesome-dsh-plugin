@@ -694,6 +694,7 @@ dsh plugin --profile web add dshmarket
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) — Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。
 ### 🔔 通知与集成
 - [cerebrixos-org/tuning-engines-cli#tuningengines-dsh-plugin](https://github.com/cerebrixos-org/tuning-engines-cli/tree/main/packages/tuningengines-dsh-plugin) — 将不含原始内容的 DSH 回合、模型、工具、审批、重试和错误事件导出到 Tuning Engines，用于受治理的追踪、策略评估、成本分析和 Work Session 审阅，并提供磁盘持久化重试队列。
+- [PandaPolo/dsh-voice-call](https://github.com/PandaPolo/dsh-voice-call) — agent 主动打来的语音电话：`offer_call` 向人类振铃（接听/拒接/稍后再说），接听后由本地 CrispASR + Qwen3-TTS 合成并播放（9 个音色，含 2 个中文方言）；拒接则把决定返回给 agent。
 - [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) — Slack 双向通信（notify/channels/inbox/reply，Socket Mode 免公网回调）。
 - [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) — 钉钉群机器人通知（webhook + 加签，零运行时依赖）。
 - [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) — 通过 CallKit 打电话到你的手机：`call_me` 与 `text_me` 工具，并可在回合结束或等待审批时来电，语音回答转写后送回会话。
