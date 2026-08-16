@@ -63,7 +63,12 @@ async function probe(url) {
     const name = typeof pkg.name === 'string' ? pkg.name : null
     if (name === null) return { npm: null, checkedAt: today }
     const meta = await fetchJson(`https://registry.npmjs.org/${encodeURIComponent(name)}`)
-    const repoField = typeof meta.repository === 'string' ? meta.repository : meta.repository?.url ?? ''
+    // Registry documents can retain repository metadata from the first
+    // publication at the top level. Resolve the current `latest` manifest
+    // first so repository renames in later releases are recognized.
+    const latest = typeof meta['dist-tags']?.latest === 'string' ? meta['dist-tags'].latest : null
+    const repository = (latest === null ? null : meta.versions?.[latest]?.repository) ?? meta.repository
+    const repoField = typeof repository === 'string' ? repository : repository?.url ?? ''
     const linked = repoField.toLowerCase().includes(repo.toLowerCase())
     return { npm: linked ? name : null, checkedAt: today }
   } catch {
