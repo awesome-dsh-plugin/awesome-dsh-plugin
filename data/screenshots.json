@@ -351,5 +351,8 @@
   "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/kimi-k3-max.png",
   "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/qwen3-7-max-off.png",
   "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/qwen3-7-max-high.png"
+ ],
+ "https://github.com/superagents-lab/dsh-s1": [
+  "https://raw.githubusercontent.com/superagents-lab/dsh-s1/main/assets/dsh-s1.png"
  ]
 }
