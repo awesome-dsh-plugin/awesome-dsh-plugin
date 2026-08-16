@@ -1,0 +1,6 @@
+url: https://github.com/1e0zj/dsh-plugin-mall
+name: 1e0zj/dsh-plugin-mall
+category: market
+description:
+  en: 'Open plugin marketplace: live GitHub dsh-plugin topic search with per-repo package.json verification (dsh.bundle/dsh.client manifest badges and a verified-only filter), npm-first installs with same-source anti-squatting checks, update detection, and five agent tools for headless use.'
+  zh: 开放式插件市场：GitHub dsh-plugin 话题实时搜索，逐仓库 package.json 验证（dsh.bundle/dsh.client 声明徽章与只看已验证过滤），npm 优先安装带同源防抢注校验，更新检测，并附五个可在无界面环境使用的 agent 工具。
