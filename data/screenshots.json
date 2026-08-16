@@ -2,5 +2,12 @@
  "https://github.com/dsh-market/dsh-market": [
   "https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-en.png",
   "https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/themes-en.png"
+ ],
+ "https://github.com/cirelir/dsh-change-review": [
+  "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/review-tab.png",
+  "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/per-turn-card.png",
+  "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/diff-detail.png",
+  "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/color-settings.png",
+  "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/plugin-market.png"
  ]
 }
