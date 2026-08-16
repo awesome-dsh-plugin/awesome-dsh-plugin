@@ -479,5 +479,9 @@
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/fulltext-search.png",
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/dock-right.png",
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/folded-detail.png"
+ ],
+ "https://github.com/mingzeng21/dsh-notion": [
+  "https://raw.githubusercontent.com/mingzeng21/dsh-notion/master/docs/screenshots/dsh-notion-sc1.png",
+  "https://raw.githubusercontent.com/mingzeng21/dsh-notion/master/docs/screenshots/dsh-notion-sc2.png"
  ]
 }
