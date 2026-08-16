@@ -1,0 +1,6 @@
+url: https://github.com/111111AAA111111/dsh-premise-guard-cn
+name: 111111AAA111111/dsh-premise-guard-cn
+category: memory
+description:
+  en: 'Chinese-aware premise-drift guard for novel/long-form writing: alarms when a compaction summary drops key premise anchors (Chinese quotes, title marks, term chains, codes, paths), with a manual anchor list, `premise_anchor` tool and `/anchor` command. Fork of ICCuse/dsh-premise-guard (MIT).'
+  zh: 中文前提锚点守卫（前提守卫）：面向中文小说/长文创作，压缩摘要丢失关键前提（中文引号/书名号/术语链/编号/路径锚点）时报警，支持手动锚点清单、premise_anchor 工具与 /anchor 命令。fork of ICCuse/dsh-premise-guard (MIT)。

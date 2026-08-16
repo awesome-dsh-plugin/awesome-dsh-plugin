@@ -612,6 +612,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Memory
 
+- [111111AAA111111/dsh-premise-guard-cn](https://github.com/111111AAA111111/dsh-premise-guard-cn) - Chinese-aware premise-drift guard for novel/long-form writing: alarms when a compaction summary drops key premise anchors (Chinese quotes, title marks, term chains, codes, paths), with a manual anchor list, `premise_anchor` tool and `/anchor` command. Fork of ICCuse/dsh-premise-guard (MIT).
 - [863683348/dsh-plugin-focus](https://github.com/863683348/dsh-plugin-focus) - Focus board for DeepSeek Harness agents: durable, model-maintained notes in the session workspace that pin the objective, constraints, and decisions across compaction and sessions, with automatic context injection, archive on clear, and an optional web panel.
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) - Model-authored context pruning for DeepSeek Harness through the official compaction API.
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) - Cache-friendly three-layer memory for DSH: lean auto injection, per-turn AI consolidation, proactive calendar reminders and warm greetings, plus memory inheritance from other AI tools.
