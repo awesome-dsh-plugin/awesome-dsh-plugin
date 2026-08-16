@@ -1,0 +1,6 @@
+url: https://github.com/zaiwenJ/dsh-cdp-browser
+name: zaiwenJ/dsh-cdp-browser
+category: tools
+description:
+  en: 'CDP bridge to an already-running Chrome/Edge for DSH: screenshots, pixel assertions, DOM/CSS checks, and page JS evaluation over HTTP + WebSocket, with zero child processes, zero npm dependencies, and zero per-use approval.'
+  zh: 通过 CDP 连接已运行的 Chrome/Edge：为 DSH 提供截图、像素断言、DOM/CSS 检查与页面 JS 执行，全程 HTTP + WebSocket、零子进程、零 npm 依赖、无需逐次授权。
