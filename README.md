@@ -16,6 +16,10 @@ This list collects community plugins that are installable via `dsh plugin add` (
 dsh plugin --profile web add dshmarket
 ```
 
+<a href="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-en.png"><img src="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-en.png" width="320" alt="dsh-market plugin browser inside DeepSeek Harness Settings: searchable plugin cards with one-click Install, category filters and a Themes tab"></a>
+
+<sub><i>The plugin market inside Settings — click to enlarge.</i></sub>
+
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
 > [!WARNING]

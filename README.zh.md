@@ -16,6 +16,10 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness——既是可直接运行
 dsh plugin --profile web add dshmarket
 ```
 
+<a href="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-zh.png"><img src="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-zh.png" width="320" alt="dsh-market 插件市场界面：设置页内的插件卡片列表，支持搜索、分类筛选、一键安装，以及主题 Tab"></a>
+
+<sub><i>设置页里的插件市场——点击查看大图。</i></sub>
+
 > 💡 更喜欢对话式？装 [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme)，想要什么插件直接问 agent（`dsh plugin --profile web add dsh-find-plugin`）。
 
 > [!WARNING]
