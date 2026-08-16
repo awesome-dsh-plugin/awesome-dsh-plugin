@@ -1,5 +1,5 @@
-url: https://github.com/nzl153/pet-whale
-name: nzl153/pet-whale
+url: https://github.com/nzl153/dsh-pet-whale
+name: nzl153/dsh-pet-whale
 category: fun
 description:
   en: 'Desktop pet drawn from the official whale outline: pure-SVG animation follows agent state (thinking, working, celebrating, error), with poke and double-click flip interactions, cursor avoidance, 7 palettes, light/dark theme sync, and a playable web preview.'

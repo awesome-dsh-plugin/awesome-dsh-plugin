@@ -105,5 +105,13 @@
   "https://raw.githubusercontent.com/kinoward/dsh-plugin-subhub/main/assets/models-zh-light.png",
   "https://raw.githubusercontent.com/kinoward/dsh-plugin-subhub/main/assets/settings-loggedin-en-light.png",
   "https://raw.githubusercontent.com/kinoward/dsh-plugin-subhub/main/assets/settings-loggedin-zh-light.png"
+ ],
+ "https://github.com/nzl153/dsh-pet-whale": [
+  "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/01-idle.png",
+  "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/02-think.png",
+  "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/03-working.png",
+  "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/04-celebrate.png",
+  "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/05-error.png",
+  "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/06-feed.png"
  ]
 }
