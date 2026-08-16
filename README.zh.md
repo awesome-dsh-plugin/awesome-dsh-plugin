@@ -368,6 +368,7 @@ dsh plugin --profile web add dshmarket
 
 
 ### 🧠 记忆
+- [madage/dsh-self-improved](https://github.com/madage/dsh-self-improved) — DeepSeek Harness 长期记忆与自进化插件：L0 对话捕获 → L1 记忆提取 → L2 场景归纳 → L3 用户画像，自动召回注入 + 技能合成，纯本地（SQLite FTS5 + jieba，可选向量召回）。
 
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) — 面向 DeepSeek Harness 的模型驱动上下文裁剪插件，通过官方 compaction API 释放上下文空间。
 - [Tyan66666/billion-context-dsh](https://github.com/Tyan66666/billion-context-dsh) — 模型驱动的上下文压缩（Active Context Pruning）：由模型决定何时压缩、压缩什么。

@@ -367,6 +367,7 @@ dsh plugin --profile web add dshmarket
 
 
 ### Memory
+- [madage/dsh-self-improved](https://github.com/madage/dsh-self-improved) - Long-term memory & self-evolving plugin for DSH: L0 capture → L1 memory extraction → L2 scene grouping → L3 user persona, auto recall injection, skill synthesis, fully local (SQLite FTS5 + jieba, optional vector recall).
 
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) - Model-authored context pruning for DeepSeek Harness through the official compaction API.
 - [Tyan66666/billion-context-dsh](https://github.com/Tyan66666/billion-context-dsh) - Model-driven context compression (Active Context Pruning) for DeepSeek Harness: the model decides when and what to compress.
