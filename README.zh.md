@@ -47,7 +47,7 @@ dsh plugin --profile web add dshmarket
 
 <!-- BEGIN PLUGINS -->
 ### 🎨 UI 增强
-
+- [XQ-quadrant/dsh_ux_enhance](https://github.com/XQ-quadrant/dsh_ux_enhance) - DSH会话界面增强插件，提供侧边栏颜色、音效提示、PC 布局优化、手机端适配（重点）、工作区文件目录面板
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — 把回合状态那句 "Deep diving..." 替换成更有梗的自定义文案，按阶段轮换，支持打字机与流动渐变。
 - [0xsline/dsh-spotlight](https://github.com/0xsline/dsh-spotlight) — 键盘优先的命令面板（command palette）。
 - [1123762794/dsh-web-restart](https://github.com/1123762794/dsh-web-restart) — DSH Web 界面一键重启按钮：侧边栏底部按钮，单击即重启 dsh web 进程，且重启后按钮常驻。
