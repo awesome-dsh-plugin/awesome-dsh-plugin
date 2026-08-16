@@ -301,5 +301,9 @@
  "https://github.com/wx-yss/dsh-message-rail": [
   "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-hover-preview.png",
   "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-market-2.png"
+ ],
+ "https://github.com/yunxiiQwQ/dsh-maid-whale-webUI/tree/main/maid-whale-webui": [
+  "https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/main/maid-whale-webui/preview/light.webp",
+  "https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/main/maid-whale-webui/preview/dark.webp"
  ]
 }
