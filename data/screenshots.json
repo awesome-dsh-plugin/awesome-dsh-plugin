@@ -47,5 +47,9 @@
  "https://github.com/dickpy/dsh-imagegen": [
   "https://raw.githubusercontent.com/dickpy/dsh-imagegen/main/docs/images/image-generation-studio.png",
   "https://raw.githubusercontent.com/dickpy/dsh-imagegen/main/docs/images/plugin-settings.png"
+ ],
+ "https://github.com/chouyong/dsh-fork-graph": [
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-trigger.png",
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-panel.png"
  ]
 }
