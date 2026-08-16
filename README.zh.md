@@ -115,6 +115,7 @@ dsh plugin --profile web add dshmarket
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [kelearns/dsh-navigation-bar](https://github.com/kelearns/dsh-navigation-bar) — 钢琴键风格会话内导航条：一根键锚定一条用户消息，悬停显示消息预览气泡与阶梯展开，点击平滑跳转。
 - [l541402398/dsh-file-uploads](https://github.com/l541402398/dsh-file-uploads) — 从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。
+- [Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — 丝滑流式渲染：字跟着模型到达走、换行滑入、不闪，滚动归用户，尊重 prefers-reduced-motion。
 - [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) — 由投影驱动的会话子代理与持久工作流实时 DAG：状态与节点导航、深层链路确定性布局、适应/平移画布，以及当前会话内节点拖动重排。
 - [LeemanCheung/dsh-whale-animation](https://github.com/LeemanCheung/dsh-whale-animation) — DSH Web 回合状态旁的 60 帧随主题适配的单色鲸鱼深潜动画：传播式水面、无缝闭环、资源内嵌、减少动态效果 PNG 回退，且随生命周期完整清理。
 - [lehhair/dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer) — PiUI 风格 diff 查看器，替换 write/edit 工具调用的默认 DiffBlock。
