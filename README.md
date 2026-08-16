@@ -526,7 +526,7 @@ dsh plugin --profile web add dshmarket
 - [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) - Expose MineRU document parsing tools to the model.
 - [huey1in/trio](https://github.com/huey1in/trio) - Browser automation (Playwright) with a live view, an MCP server exposing DSH agents to any MCP client, and GitHub issue/PR/webhook review tools.
 - [Isanti2016/dsh-console](https://github.com/Isanti2016/dsh-console) - Slash-command console for dsh: /web start|stop|restart|status, /tunnel SSH forward management, one-shot /ask, and a console TUI launcher.
-- [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) - Connects DSH to the local Beav desktop app for durable social-media content, knowledge, image, audio, and video tasks, with approval and artifact tracking.
+- [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) - Connects DSH to local Beav for Xiaohongshu (RED/RedNote) and social-media AI operations: topic research, knowledge, copywriting, image, audio, and short-video workflows with approval and artifact tracking.
 - [jcaiagent7143-ui/sendpage-mcp](https://github.com/jcaiagent7143-ui/sendpage-mcp) - Publish an HTML document as a shareable link that opens in one tap and previews as a card in chat apps; publish, update, and export to PNG/PDF/Word.
 - [Jesse-njx/dsh-cowork](https://github.com/Jesse-njx/dsh-cowork) - Bounded, cell-addressed `doc_read`/`doc_write` for xlsx / pdf / docx / pptx / ipynb, plus an MCP server and CLI.
 - [Jesse-njx/dsh-docker](https://github.com/Jesse-njx/dsh-docker) - Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.

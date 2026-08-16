@@ -526,7 +526,7 @@ dsh plugin --profile web add dshmarket
 - [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 向模型暴露 MineRU 文档解析工具。
 - [huey1in/trio](https://github.com/huey1in/trio) — 浏览器自动化（Playwright，带实时画面）+ MCP Server（把 DSH agent 暴露给任何 MCP 客户端）+ GitHub issue/PR/webhook 评审工具。
 - [Isanti2016/dsh-console](https://github.com/Isanti2016/dsh-console) — dsh 控制台命令：/web 启动/停止/重启/状态、/tunnel SSH 隧道管理、/ask 一次性问答、/console 启动控制台 TUI。
-- [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav 桌面应用，用于可恢复的自媒体内容、知识、图片、音频和视频任务，并保留审批与产物追踪。
+- [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。
 - [jcaiagent7143-ui/sendpage-mcp](https://github.com/jcaiagent7143-ui/sendpage-mcp) — 把 HTML 文档变成一键打开、在聊天里显示预览卡的分享链接;支持发布、更新,以及导出 PNG/PDF/Word。
 - [Jesse-njx/dsh-cowork](https://github.com/Jesse-njx/dsh-cowork) — doc_read/doc_write：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。
 - [Jesse-njx/dsh-docker](https://github.com/Jesse-njx/dsh-docker) — 类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。
