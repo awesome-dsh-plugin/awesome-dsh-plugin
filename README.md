@@ -245,6 +245,7 @@ dsh plugin --profile web add dshmarket
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) - Runs open-mcp-apps inside DSH: every MCP app gets its own sidebar container with a separate workspace, session, and App mode, an agent status strip under the app, and inline app rendering in ordinary chats.
 - [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) - Shows the current conversation's working directory in a draggable directory panel with adjustable opacity.
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) - Live subagent run monitor for the Web UI: a sidebar footer trigger plus a fixed top-right card panel showing each subagent of the current session in real time (running/elapsed, terminal outcomes, tree indent), with one-click jump into the child conversation and a return button, refresh-surviving and mobile-hidden by default.
+- [johnnycls/dsh-no-setup-mode](https://github.com/johnnycls/dsh-no-setup-mode) - No-setup mode for the DSH web UI: hides advanced surfaces, auto-applies best defaults (chat mode, full access, account balance), and one-click role-play personas (maid/butler).
 ### Themes & Appearance
 
 - [Ultronen/dsh-liquid-glass](https://github.com/Ultronen/dsh-liquid-glass) - One toggle makes the whole DeepSeek Harness shell translucent, with an opacity slider and a custom full-page background.
