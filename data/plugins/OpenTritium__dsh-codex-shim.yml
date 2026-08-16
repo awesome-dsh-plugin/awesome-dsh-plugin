@@ -1,0 +1,6 @@
+url: https://github.com/OpenTritium/dsh-codex-shim
+name: OpenTritium/dsh-codex-shim
+category: tools
+description:
+  en: Simulates a Codex environment for selected model routes to improve GPT-family model tool-call success.
+  zh: 为选定的模型路由模拟 Codex 环境，以提升 GPT 系列模型的工具调用成功率。
