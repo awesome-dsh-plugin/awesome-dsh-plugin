@@ -1,0 +1,6 @@
+url: https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card
+name: SoDaZilla-zzz/dsh-liquid-glass-balance-card
+category: ui
+description:
+  en: 'Draggable 3D liquid-glass floating card for the DSH web GUI: DeepSeek API balance, cumulative spend/token stats (today/yesterday/7d/30d/all), adjustable glass/3D/color controls, and one-click top-up.'
+  zh: DSH 网页右上角可拖动 3D 液态玻璃余额卡片：显示 DeepSeek API 余额、累计消费与 Token 统计（今天/昨天/近7天/近30天/全部），玻璃参数/3D 厚度/颜色均可调，内置官方充值入口。
