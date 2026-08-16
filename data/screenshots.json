@@ -480,8 +480,10 @@
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/dock-right.png",
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/folded-detail.png"
  ],
- "https://github.com/mingzeng21/dsh-notion": [
-  "https://raw.githubusercontent.com/mingzeng21/dsh-notion/master/docs/screenshots/dsh-notion-sc1.png",
-  "https://raw.githubusercontent.com/mingzeng21/dsh-notion/master/docs/screenshots/dsh-notion-sc2.png"
+ "https://github.com/welsione/dsh-mmx-bridge": [
+  "https://raw.githubusercontent.com/welsione/dsh-mmx-bridge/main/docs/image-generation.png",
+  "https://raw.githubusercontent.com/welsione/dsh-mmx-bridge/main/docs/speech-tts.png",
+  "https://raw.githubusercontent.com/welsione/dsh-mmx-bridge/main/docs/vision-demo.png",
+  "https://raw.githubusercontent.com/welsione/dsh-mmx-bridge/main/docs/plugin-settings.png"
  ]
 }
