@@ -423,5 +423,12 @@
  ],
  "https://github.com/Smalldy/godot-bridge": [
   "https://raw.githubusercontent.com/Smalldy/godot-bridge/main/assets/godot-bridge-env-check.png"
+ ],
+ "https://github.com/pyf2818/dsh-bili-widget": [
+  "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/main.png",
+  "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/search.png",
+  "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/hot.png",
+  "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/help.png",
+  "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/mini.png"
  ]
 }
