@@ -129,5 +129,16 @@
  ],
  "https://github.com/iiwish/dsh-testkit": [
   "https://raw.githubusercontent.com/iiwish/dsh-testkit/main/docs/assets/dsh-testkit-showcase.png"
+ ],
+ "https://github.com/Ultronen/dsh-archived-chats": [
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/1-archived-chats.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/2-search.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/3-delete-confirm.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/4-group-menu.png"
+ ],
+ "https://github.com/Ultronen/dsh-liquid-glass": [
+  "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
  ]
 }
