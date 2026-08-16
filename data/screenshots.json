@@ -5,10 +5,10 @@
  ]
  ,
   "https://github.com/keyiadiannao/dsh-restart-button": [
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/power-button.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/power-menu.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/shutdown-confirm.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/shutdown-progress.png",
-   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/restart-done.png"
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/power-button.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/power-menu.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/shutdown-confirm.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/shutdown-progress.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/en/restart-done.png"
   ]
 }
