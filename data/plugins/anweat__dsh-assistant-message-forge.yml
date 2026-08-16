@@ -1,0 +1,6 @@
+url: https://github.com/anweat/dsh-assistant-message-forge
+name: anweat/dsh-assistant-message-forge
+category: session
+description:
+  en: Create/modify/inject test assistant messages and import/repair session.jsonl(.zstd) session logs into new sessions.
+  zh: 消息锻造台：创建/修改/注入测试用 assistant 消息，导入识别并安全修复 session.jsonl(.zstd) 会话日志为新会话。

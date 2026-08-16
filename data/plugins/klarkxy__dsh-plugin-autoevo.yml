@@ -1,0 +1,6 @@
+url: https://github.com/klarkxy/dsh-plugin-autoevo
+name: klarkxy/dsh-plugin-autoevo
+category: market
+description:
+  en: Resolves local tools and skills first, then searches, reviews and installs a community plugin after a one-time approval.
+  zh: 先检查本地工具与技能，不够用再搜索、审查社区插件，并在一次性批准后自动安装。

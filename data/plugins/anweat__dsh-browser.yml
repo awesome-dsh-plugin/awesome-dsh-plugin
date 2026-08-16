@@ -1,0 +1,6 @@
+url: https://github.com/anweat/dsh-browser
+name: anweat/dsh-browser
+category: tools
+description:
+  en: 'Self-contained browser runtime: Playwright (chromium) + OpenCLI as plugin-local dependencies (global reuse fallback), exposes a `browser` service and 9 interactive browser tools.'
+  zh: 自包含浏览器运行时：Playwright（chromium）+ OpenCLI 作为插件本地依赖（全局复用回退），提供 `browser` 服务与 9 个交互式浏览器工具。

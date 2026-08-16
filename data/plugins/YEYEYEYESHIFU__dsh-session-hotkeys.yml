@@ -1,0 +1,6 @@
+url: https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys
+name: YEYEYEYESHIFU/dsh-session-hotkeys
+category: ui
+description:
+  en: 'Session hotkeys for the Web UI: Alt+1-9 positional switching, pin-slot tri-state, a sidebar highlight nav mode, new/rename/archive session shortcuts, and a rebindable panel with arrow-key navigation.'
+  zh: Web UI 会话快捷键：Alt+1-9 顺序切换、固定槽位三态、侧边栏高亮导航模式、新建/重命名/归档会话快捷键，以及支持方向键导航的可改键面板。

@@ -1,0 +1,6 @@
+url: https://github.com/guo6x/dsh-housekeeper
+name: guo6x/dsh-housekeeper
+category: dev
+description:
+  en: 'Environment housekeeper for the agent: toolchain inventory (node/pnpm/git/gh/ffmpeg/browsers), scratch/cache scan with whitelist-guarded one-click cleanup, and the machine rules file (AGENTS.md) editor - all in the Web GUI settings.'
+  zh: agent 的环境管家：工具链台账（node/pnpm/git/gh/ffmpeg/浏览器）、缓存与临时目录扫描 + 白名单安全一键清理、机器规则（AGENTS.md）编辑，全在 Web GUI 设置面板。

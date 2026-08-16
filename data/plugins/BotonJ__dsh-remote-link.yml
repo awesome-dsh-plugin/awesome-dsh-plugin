@@ -1,0 +1,6 @@
+url: https://github.com/BotonJ/dsh-remote-link
+name: BotonJ/dsh-remote-link
+category: dev
+description:
+  en: 'Secure remote access for the official Web UI: authenticated LAN/tunnel gateway with QR + HMAC one-time pairing, per-device sessions and revocation, mDNS discovery, and a fork_session tool.'
+  zh: 官方 Web UI 的安全远程接入：带认证的局域网/隧道网关，QR + HMAC 一次性配对、按设备吊销，mDNS 发现，附 fork_session 会话分叉工具。

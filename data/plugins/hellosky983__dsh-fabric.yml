@@ -1,0 +1,6 @@
+url: https://github.com/hellosky983/dsh-fabric
+name: hellosky983/dsh-fabric
+category: dev
+description:
+  en: 'Unifies every DSH extensibility seam behind one declarative DSL: a runtime `fabric` service, `fabric_extend`/`fabric_inspect` tools, and a capability-graph settings page.'
+  zh: 用一套声明式 DSL 统一 DSH 的所有可扩展接缝：提供 `fabric` 运行时服务、`fabric_extend`/`fabric_inspect` 工具，以及能力图谱设置页。

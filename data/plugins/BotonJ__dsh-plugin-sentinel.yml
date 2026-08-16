@@ -1,0 +1,6 @@
+url: https://github.com/BotonJ/dsh-plugin-sentinel
+name: BotonJ/dsh-plugin-sentinel
+category: dev
+description:
+  en: 'Static pre-install security auditor for plugin bundles: lifecycle scripts, dynamic execution, credential-exfiltration combos, and patch-layer hazards, with zero dependencies and in-memory tar parsing.'
+  zh: 插件安装前静态安全审计：生命周期脚本、动态执行、凭据外传组合特征与 patch 层风险；零依赖，tar 包全程内存解析不落盘。

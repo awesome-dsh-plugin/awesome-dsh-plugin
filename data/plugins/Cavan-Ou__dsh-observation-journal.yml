@@ -1,0 +1,6 @@
+url: https://github.com/Cavan-Ou/dsh-observation-journal
+name: Cavan-Ou/dsh-observation-journal
+category: dev
+description:
+  en: 'Zero-touch runtime telemetry for DSH: every session auto-writes task, model tier, tools, failures, duration, status into a human-readable journal with a stats section (pure observer — no tools, no LLM calls, no injection).'
+  zh: DeepSeek Harness 零侵入运行事实遥测：每个会话自动把任务/模型档位/工具/失败/时长/状态写入人机共读观测卡并附统计区（纯观察者——零工具、零 LLM、零注入）。

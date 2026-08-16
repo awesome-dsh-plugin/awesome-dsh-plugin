@@ -1,0 +1,6 @@
+url: https://github.com/xxiaoxiong/dsh-issue-tracker
+name: xxiaoxiong/dsh-issue-tracker
+category: tools
+description:
+  en: Jira Cloud issue-tracker integration exposing eight model tools for issue search, project and transition lookup, creation, updates, comments, and transitions; writes are opt-in and support dry-run.
+  zh: Jira Cloud 工单集成，提供 8 个模型工具用于工单查询、项目与流转查询、创建、更新、评论和状态流转；写操作默认关闭并支持 dry-run。

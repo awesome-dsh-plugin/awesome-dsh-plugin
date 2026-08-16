@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-ffmpeg
+name: STARDUSTLC666/dsh-ffmpeg
+category: tools
+description:
+  en: 'Seven video tools (probe/cut/concat/encode/subtitle/extract/gif) on the official subprocess service: shell-free argv, zero runtime dependencies.'
+  zh: 视频处理七工具（探测/剪辑/拼接/转码/字幕烧录/抽帧/GIF），官方 subprocess 服务、argv 无 shell 注入、零运行时依赖。

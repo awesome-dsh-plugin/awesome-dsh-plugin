@@ -1,0 +1,6 @@
+url: https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater
+name: crTnT/dsh-plugin-suite#dsh-plugin-updater
+category: tools
+description:
+  en: 'Update manager for installed plugins: check for updates, back up, and roll back.'
+  zh: 已装插件更新管理：检查更新、备份与回滚。

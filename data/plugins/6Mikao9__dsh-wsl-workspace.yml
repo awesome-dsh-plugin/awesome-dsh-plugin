@@ -1,0 +1,6 @@
+url: https://github.com/6Mikao9/dsh-wsl-workspace
+name: 6Mikao9/dsh-wsl-workspace
+category: tools
+description:
+  en: Add a WSL workspace from the web GUI without needing to install dsh or related tools again inside WSL. Bash commands and file read/write operations run within the local WSL distribution on the host machine, while Windows files remain accessible.
+  zh: 从 Web GUI 添加 WSL 工作区，无需在 WSL 之中再次安装 dsh 以及相关工具，bash 命令与文件读写运行在本机 WSL 发行版内，Windows 文件仍可访问。

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-auto-review
+name: PerryLink/dsh-auto-review
+category: workflow
+description:
+  en: 'Second-model auto-review on the approval answerer chain: a read-only reviewer subagent returns structured allow/deny verdicts with reasons, fail-closed by default.'
+  zh: 审批链上的第二模型自动审查：只读审查子代理返回带理由的 allow/deny 结构化裁决，默认 fail-closed。

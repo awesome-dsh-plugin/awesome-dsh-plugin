@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-checkpoint-rewind
+name: PerryLink/dsh-checkpoint-rewind
+category: tools
+description:
+  en: 'Claude Code /rewind for DeepSeek Harness: git-first workspace snapshots before every mutating tool execution, turn-boundary session forks, and a one-shot /rewind command that restores files and forks the session back to a checkpoint.'
+  zh: DeepSeek Harness 的 Claude Code /rewind 等价能力：每次变更型工具执行前捕获 git 优先的工作区文件快照，轮次边界 fork 会话，一条 /rewind 命令恢复文件并把会话回退到检查点。

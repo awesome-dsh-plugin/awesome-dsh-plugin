@@ -1,0 +1,6 @@
+url: https://github.com/toolclub/agent_team_gui
+name: toolclub/agent_team_gui
+category: workflow
+description:
+  en: Reusable agent squads with per-agent provider/model routes and tool policies, serial/parallel dispatch, spawn/fork/chain context modes, and a Web management panel.
+  zh: 可复用 Agent 小队：每个成员独立配置 provider/model 路由与工具策略，支持串行/并行派单、spawn/fork/chain 上下文模式和 Web 管理面板。

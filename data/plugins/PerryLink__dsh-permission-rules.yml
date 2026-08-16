@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-permission-rules
+name: PerryLink/dsh-permission-rules
+category: dev
+description:
+  en: 'Claude Code-style declarative permission rules: ordered allow/deny/ask YAML rules matching tool names, arguments, workspace paths, and agent identity on the tools/pre-execute waterfall, with full session-log audit, dry-run mode, and hot reload.'
+  zh: Claude Code 风格的声明式权限规则：按序 allow/deny/ask 的 YAML 规则，在 tools/pre-execute 瀑布上匹配工具名、参数、工作区路径与 agent 身份，带完整会话日志审计、干跑模式与热重载。

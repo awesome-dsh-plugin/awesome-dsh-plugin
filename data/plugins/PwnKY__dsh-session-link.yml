@@ -1,0 +1,6 @@
+url: https://github.com/PwnKY/dsh-session-link
+name: PwnKY/dsh-session-link
+category: session
+description:
+  en: Copy and open `dsh://` session deep links, or paste them into another conversation to inject a bounded, read-only snapshot of the referenced session.
+  zh: 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。

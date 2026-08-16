@@ -1,0 +1,6 @@
+url: https://github.com/AI-Galaxy-GPU/dsh-sound
+name: AI-Galaxy-GPU/dsh-sound
+category: notify
+description:
+  en: 'Per-event sound notifications: turn completion, approval, question, plan-review, goal-blocked, and task-failure each get their own sound and volume, configurable in the Web UI (built-in synth, mute, or local audio file).'
+  zh: 六类事件独立提示音：回合完成、审批、提问、计划评审、目标受阻、任务失败各有独立声音与音量，可在 Web 设置面板配置（内置合成音 / 静音 / 本地音频文件）。

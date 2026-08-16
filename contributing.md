@@ -4,17 +4,32 @@ Thanks for helping grow the list! / 感谢参与！
 
 ## Adding a plugin / 收录插件
 
-Open a PR that adds **one line to each of** `README.md` (English) and `README.zh.md` (中文), under the matching category:
+> **The READMEs are generated — don't edit them by hand.** The list lives in `data/plugins/`, one YAML file per plugin. / **两个 README 由脚本生成，请勿手工编辑。** 列表数据在 `data/plugins/`，一个插件一个 YAML 文件。
 
-```markdown
-- [owner/repo](https://github.com/owner/repo) - One-line description ending with a period.
+Open a PR that adds **one file**, named after your repo — `data/plugins/<owner>__<repo>.yml`:
+
+```yaml
+url: https://github.com/owner/repo        # must match the repo exactly / 必须与仓库完全一致
+name: owner/repo                          # link text shown in the list / 列表中显示的链接文字
+category: ui                              # see the category list below / 见下方分类列表
+description:
+  en: One-line description ending with a period.
+  zh: 一句话描述，以句号结尾。
 ```
 
-在 `README.md` 与 `README.zh.md` 的对应分类下各加一行：
+Then regenerate both READMEs and commit them along with your YAML file / 然后重新生成两个 README，与 YAML 文件一起提交：
 
-```markdown
-- [owner/repo](https://github.com/owner/repo) — 一句话描述，以句号结尾。
+```sh
+npm ci
+node scripts/generate-readme.mjs
 ```
+
+**Why one file per plugin / 为什么一个插件一个文件：** everyone used to append to the same spot in the same README section, so merging one PR broke the next. Separate files never collide. / 以前所有人都往同一分类的同一位置追加，合并一个 PR 就会撞掉下一个。独立文件永不冲突。
+
+Valid `category` values / 可用的 `category` 取值：
+`ui` `theme` `model` `session` `memory` `tools` `skill` `workflow` `notify` `dev` `market` `fun`
+
+Monorepo subpackages / monorepo 子包: point `url` at the subdirectory and use `owner/repo#subname` as the `name`, e.g. `url: https://github.com/owner/repo/tree/main/packages/my-plugin`. The filename becomes `owner__repo--packages-my-plugin.yml`.
 
 Requirements / 要求：
 
@@ -39,7 +54,10 @@ Requirements / 要求：
         name: your-package-name
   ```
 - The repo contains real, working code — placeholder, name-squat, or README-only repos don't qualify. / 仓库需有真实可用的代码——占位仓库、纯 README 仓库不收。
-- The project is actively maintained. Entries that go dead may be removed in periodic cleanups. / 项目处于活跃维护状态；失效项目会在定期清理中移除。
+- The repo is at least **1 day old** and has **10 or more commits**. / 仓库**创建满 1 天**，且**提交数 ≥ 10**。
+
+  This is checked automatically. It isn't a judgement about your plugin — it filters out repos created minutes before the PR, which were the bulk of what had to be rejected by hand. If you're just under the bar, finish the work and resubmit; nothing is held against a resubmission. / 这一项由 CI 自动检查。它不是对插件质量的评价，只是为了过滤掉「PR 前几分钟才建好」的仓库——过去人工被迫拒掉的大多是这类。如果暂时没达标，把功能做完再提交即可，重新提交不会有任何影响。
+- The project is actively maintained. A periodic scan flags entries whose repo is gone, archived, or long dormant; they're collected in a tracking issue and removed after review. / 项目处于活跃维护状态。定期扫描会标记仓库消失、已归档或长期停更的条目，汇总到一个跟踪 issue，经确认后移除。
 - Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your repo. / 为仓库添加 `dsh-plugin` topic。
 - Descriptions state what the plugin does — no superlatives or marketing. / 描述只说功能，不带营销词。
 
@@ -51,6 +69,16 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
 - Declare official `@deepseek-ai/*` packages as `peerDependencies`, not `dependencies`. / 官方 `@deepseek-ai/*` 包请用 `peerDependencies` 声明。
 
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
+
+### What CI checks / CI 会检查什么
+
+Every PR runs, in order / 每个 PR 依次运行：
+
+1. **`dsh.bundle`** — fetched from your repo's `package.json` (root, or a `packages/` · `plugins/` · `apps/` subpackage). Declaring only `dsh.client` fails here. / 从你仓库的 `package.json` 读取（根包，或 `packages/` · `plugins/` · `apps/` 子包）；只声明 `dsh.client` 会在这里失败。
+2. **Repo age and commit count** — the 1 day / 10 commits bar above. / 上面的 1 天 / 10 提交门槛。
+3. **`awesome-lint`** and the site build — locale parity, separators, dates, screenshots. / `awesome-lint` 与站点构建：双语一致性、分隔符、日期、截图。
+
+If a check fails it says exactly what to change. Push a fix to the same branch — no need to open a new PR. / 检查失败时会明确指出要改什么。在同一分支上推送修复即可，无需重开 PR。
 
 ### Screenshots / 截图（optional, recommended / 可选，推荐）
 

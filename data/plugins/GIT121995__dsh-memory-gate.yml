@@ -1,0 +1,6 @@
+url: https://github.com/GIT121995/dsh-memory-gate
+name: GIT121995/dsh-memory-gate
+category: memory
+description:
+  en: 'Bounded local memory with CBDC authority gating: SQLite + FTS5 claims, scoped recall with explainable use/verify/ignore decisions and a full audit trail, /memory commands, ≤3-claim/1200-char injection per call, no extra model call.'
+  zh: 有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。

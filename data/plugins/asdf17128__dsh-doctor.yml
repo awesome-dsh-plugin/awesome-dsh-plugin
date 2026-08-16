@@ -1,0 +1,6 @@
+url: https://github.com/asdf17128/dsh-doctor
+name: asdf17128/dsh-doctor
+category: tools
+description:
+  en: 'Registers a `config_doctor` tool that checks the harness''s own configuration for problems that boot silently: fields a patch dropped by whole-config replacement, patches targeting missing entry ids, and tool-name collisions. Read-only.'
+  zh: 注册 `config_doctor` 工具，检查 harness 自身配置里那些会静默通过启动的问题：patch 整体替换 config 而丢失的字段、指向不存在 entry id 的 patch、工具重名冲突。只读。

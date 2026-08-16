@@ -1,0 +1,6 @@
+url: https://github.com/Letter2025/dsh-model-failover
+name: Letter2025/dsh-model-failover
+category: workflow
+description:
+  en: 'Two-level model circuit breaker with failover: trip a model or a whole provider after repeated request failures and route the next request to a configured fallback.'
+  zh: 两级模型熔断与回退：模型或平台连续失败后自动熔断，并把下一个请求路由到配置好的备用模型。

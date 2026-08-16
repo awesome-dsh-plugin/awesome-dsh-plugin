@@ -1,0 +1,6 @@
+url: https://github.com/garrisonz/dsh-sidebar-width
+name: garrisonz/dsh-sidebar-width
+category: ui
+description:
+  en: 'Control the Web UI left sidebar width: lower the 264px drag minimum and optionally tune the drag maximum and the expanded default width, applied by a startup patch of the ui-layout bundle.'
+  zh: 调整 Web UI 左侧会话列表栏宽度：调低 264px 拖动下限，可选调整拖动上限与展开默认宽度，启动时自动修补 ui-layout bundle。

@@ -1,0 +1,6 @@
+url: https://github.com/rogerdigital/dsh-searxng
+name: rogerdigital/dsh-searxng
+category: tools
+description:
+  en: 'SearXNG-backed web_search provider for the web seam: free, self-hosted, key-less metasearch through your own instance''s JSON API, with a bundled loopback-only docker-compose example.'
+  zh: 基于 SearXNG 的 web_search provider：通过自建实例的 JSON API 实现免费、免密钥的元搜索，附仅绑定回环地址的 docker-compose 示例。

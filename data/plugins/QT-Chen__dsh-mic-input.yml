@@ -1,0 +1,6 @@
+url: https://github.com/QT-Chen/dsh-mic-input
+name: QT-Chen/dsh-mic-input
+category: ui
+description:
+  en: 'Microphone voice input for the composer: browser Web Speech API live transcription, dedupe/auto-continue, smart punctuation, language and auto-send settings.'
+  zh: 输入框麦克风语音输入：浏览器 Web Speech API 实时转写，自动去重/续听、智能标点，支持语言与自动发送设置。

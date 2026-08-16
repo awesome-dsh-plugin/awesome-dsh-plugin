@@ -1,0 +1,6 @@
+url: https://github.com/lucas-ward/dsh-ci-context
+name: lucas-ward/dsh-ci-context
+category: workflow
+description:
+  en: Injects allowlisted GitHub Actions and GitLab CI run metadata into agent context without reading logs, credentials, or provider APIs.
+  zh: 将白名单内的 GitHub Actions 与 GitLab CI 运行元数据注入 Agent 上下文，不读取日志、凭据或服务商 API。

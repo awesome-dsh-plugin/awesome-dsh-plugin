@@ -1,0 +1,6 @@
+url: https://github.com/wjy9902/dsh-web-default-session
+name: wjy9902/dsh-web-default-session
+category: ui
+description:
+  en: The generic New Session action opens a default-directory workspace instead of requiring a folder pick, and the workspace picker lists that workspace as a no-folder choice.
+  zh: 点「新会话」默认打开绑定宿主启动目录的「默认目录」工作区（无需选文件夹），工作区选择菜单中也可选该项。

@@ -1,0 +1,6 @@
+url: https://github.com/nanpaidashi/dsh-honcho-sync
+name: nanpaidashi/dsh-honcho-sync
+category: memory
+description:
+  en: 'Honcho memory bridge: auto-syncs every conversation turn to a self-hosted Honcho service, with recall/search/remember/context/status tools, context injection on session start, and a visual settings panel.'
+  zh: Honcho 记忆桥接：每轮对话自动同步到自建 Honcho 记忆服务（NAS/服务器/云），提供 recall/search/remember/context/status 工具，会话启动自动注入上下文，内置可视化设置面板。

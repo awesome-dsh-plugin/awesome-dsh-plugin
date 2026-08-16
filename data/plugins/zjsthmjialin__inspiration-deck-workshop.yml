@@ -1,0 +1,6 @@
+url: https://github.com/zjsthmjialin/inspiration-deck-workshop
+name: zjsthmjialin/inspiration-deck-workshop
+category: skill
+description:
+  en: 'Registers the Inspiration Deck Workshop skill for DSH: local static HTML presentation decks (6 deck templates, 25+ layouts, 23 themes & motion showroom) with a validate + PNG/PDF export CLI and smoke tests, zero runtime dependencies.'
+  zh: 注册灵感演示工坊技能：本地静态 HTML 演示文稿（6 套 deck 模板、25+ 布局、23 套主题与动效展示馆），带 validate 校验与 PNG/PDF 导出 CLI 和 smoke 测试，零运行时依赖。

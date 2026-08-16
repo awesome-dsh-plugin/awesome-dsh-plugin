@@ -1,0 +1,6 @@
+url: https://github.com/loadingvx/deepseek-harness-workbench-plugin
+name: loadingvx/deepseek-harness-workbench-plugin
+category: ui
+description:
+  en: 'Fills in the Web UI''s missing IDE workbench: resizable chat / editor / files-and-Git columns in Conversation, multi-tab file editing with save and new-file, workspace Terminal, a file tree with name filter and open-in-external-editor, SCM (stage/commit/push/pull, branch switch, Git graph, inline diffs), a status bar, and git_* model tools.'
+  zh: 为 Web UI 补齐缺失的 IDE 工作台：对话页可拖拽三栏（对话 / 编辑器 / 文件与 Git），多标签编辑（保存、新建、路径面包屑、行内 diff）、工作区 Terminal、文件树（按名筛选、用外部编辑器打开）、源代码管理（暂存/提交/推送/拉取、分支切换、提交图）、状态栏，以及 git_* 模型工具。

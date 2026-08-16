@@ -1,0 +1,6 @@
+url: https://github.com/vlln/plugin-registry
+name: vlln/plugin-registry
+category: dev
+description:
+  en: 'Ecosystem infrastructure: a thin browser console for managing official repository plugins (zero patches) plus a make-dsh-plugin skill for guided plugin development.'
+  zh: 插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。

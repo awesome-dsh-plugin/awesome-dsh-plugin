@@ -1,0 +1,6 @@
+url: https://github.com/p2coder/dsh-task-control
+name: p2coder/dsh-task-control
+category: session
+description:
+  en: 'Pause / resume / cancel the in-flight conversation task from the composer area: forced pause interrupts immediately and remembers the interrupted tool, safe pause lands after the tool or reasoning finishes, resume asks for confirmation, and the default pause granularity is configurable in the settings.'
+  zh: 在输入区暂停/恢复/取消正在运行的对话任务：强制暂停立即中断并记住被中断的工具，安全暂停等工具/推理完成后再落地，恢复时需确认；默认暂停粒度可在设置中配置（出厂 safe wait）。

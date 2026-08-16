@@ -1,0 +1,6 @@
+url: https://github.com/Bernardxu123/dsh-mobile-gate
+name: Bernardxu123/dsh-mobile-gate
+category: ui
+description:
+  en: 'LAN mobile gateway: isolated child-process reverse proxy with first-visit approval, per-device token binding, rate limiting, and mobile layout injection (compact composer pills, randomUUID polyfill).'
+  zh: 局域网手机访问网关：独立子进程反向代理 + 首次访问审批 + 设备令牌绑定 + 限流 + 手机端紧凑排版注入（输入区权限/模型小胶囊、randomUUID polyfill）。

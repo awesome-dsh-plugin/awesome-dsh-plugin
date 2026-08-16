@@ -1,0 +1,6 @@
+url: https://github.com/pengxuding/dsh-plugin-judge
+name: pengxuding/dsh-plugin-judge
+category: tools
+description:
+  en: 'Plugin value auditor: pre-install review (source scan + LLM judge) and post-install audit of installed bundles, with model-switch re-audit reminders.'
+  zh: 插件价值裁判：装前审核（源码静态扫描 + LLM 裁判）与装后审计已装插件，模型切换时弹窗提醒复核；判断插件对当前模型是增强还是压制。

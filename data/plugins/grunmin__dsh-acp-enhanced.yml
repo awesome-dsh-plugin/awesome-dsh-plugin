@@ -1,0 +1,6 @@
+url: https://github.com/grunmin/dsh-acp-enhanced
+name: grunmin/dsh-acp-enhanced
+category: notify
+description:
+  en: 'Enhanced ACP server for DeepSeek Harness: block & reasoning streaming, usage telemetry, model/effort switching, permission presets, session resume/archive, per-session MCP servers, and Zed file/terminal forwarding.'
+  zh: 增强版 ACP 服务器：块级与推理流式、用量遥测、模型/推理强度切换、权限预设、会话恢复/归档、每会话 MCP servers、Zed 文件/终端转发。

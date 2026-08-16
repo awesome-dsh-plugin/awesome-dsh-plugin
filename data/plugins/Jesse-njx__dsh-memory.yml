@@ -1,0 +1,6 @@
+url: https://github.com/Jesse-njx/dsh-memory
+name: Jesse-njx/dsh-memory
+category: memory
+description:
+  en: 'Cited memory over DSH''s lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.'
+  zh: 基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。

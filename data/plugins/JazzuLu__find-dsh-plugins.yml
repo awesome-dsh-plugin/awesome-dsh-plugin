@@ -1,0 +1,6 @@
+url: https://github.com/JazzuLu/find-dsh-plugins
+name: JazzuLu/find-dsh-plugins
+category: skill
+description:
+  en: 'Conversational DSH plugin finder: four-source unified index, BM25 pre-filter plus LLM semantic ranking, candidates carry evidence grades and local static security audit, safe install flow with post-install verification.'
+  zh: 对话式查找 DSH 插件的增强版 skill：四源聚合统一索引，BM25 粗筛 + LLM 语义精排，候选表带证据分级与本地静态安全审计，安装走安全确认流程并自动验证。

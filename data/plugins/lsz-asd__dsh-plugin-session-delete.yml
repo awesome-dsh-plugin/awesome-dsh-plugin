@@ -1,0 +1,6 @@
+url: https://github.com/lsz-asd/dsh-plugin-session-delete
+name: lsz-asd/dsh-plugin-session-delete
+category: session
+description:
+  en: 'Delete DSH sessions from the web UI and desktop client: header danger button and session-row menu item with a risk-consent dialog; host endpoint and agent tool remove the session log, projection cache, and workspace accounting.'
+  zh: 在 Web UI 与桌面客户端中删除 DSH 会话：头部危险按钮 + 会话行菜单项，风险确认弹窗，宿主端点与 agent 工具同步清理会话日志、投影缓存与工作区记账。

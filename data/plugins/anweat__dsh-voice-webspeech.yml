@@ -1,0 +1,6 @@
+url: https://github.com/anweat/dsh-voice-webspeech
+name: anweat/dsh-voice-webspeech
+category: tools
+description:
+  en: 'Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).'
+  zh: 浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。

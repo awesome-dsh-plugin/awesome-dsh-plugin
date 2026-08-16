@@ -1,0 +1,6 @@
+url: https://github.com/Jesse-njx/dsh-voice
+name: Jesse-njx/dsh-voice
+category: tools
+description:
+  en: 'Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under ~/.dsh/voice.'
+  zh: 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。

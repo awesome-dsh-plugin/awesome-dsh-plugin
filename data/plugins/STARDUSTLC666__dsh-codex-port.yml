@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-codex-port
+name: STARDUSTLC666/dsh-codex-port
+category: tools
+description:
+  en: 'Batch-port official Codex plugins into DSH skills (measured: 186 plugins / 583 skills, 577 ported, 0 failures).'
+  zh: Codex 官方插件一键移植为 DSH 技能（实测 186 插件/583 技能，移植 577 个 0 失败）。

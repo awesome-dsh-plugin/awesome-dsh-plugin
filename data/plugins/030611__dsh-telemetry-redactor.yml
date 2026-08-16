@@ -1,0 +1,6 @@
+url: https://github.com/030611/dsh-telemetry-redactor
+name: 030611/dsh-telemetry-redactor
+category: dev
+description:
+  en: Redacts supported secret patterns from the `session-telemetry/record` export copy before configured telemetry backends receive it.
+  zh: 在已配置遥测后端接收前，对 `session-telemetry/record` 导出副本中的已支持秘密模式进行脱敏。

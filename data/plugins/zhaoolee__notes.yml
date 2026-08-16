@@ -1,0 +1,6 @@
+url: https://github.com/zhaoolee/notes
+name: zhaoolee/notes
+category: tools
+description:
+  en: Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.
+  zh: 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
