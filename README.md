@@ -301,6 +301,7 @@ dsh plugin --profile web add dshmarket
 
 ### Models & Providers
 
+- [ringoage/dsh-subagent-model-picker](https://github.com/ringoage/dsh-subagent-model-picker) - A GUI subagent-model selector beside the main model seat: pick a model and reasoning effort per session, applied to every in-process subagent.
 - [WNJXYK/dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth) - Use a ChatGPT/Codex subscription in DeepSeek Harness with GPT models, image generation, web search, subscription quota reporting, model and feature controls, and browser or device-code OAuth sign-in.
 - [r600a-code/dsh-swarm-router](https://github.com/r600a-code/dsh-swarm-router) - Sub-agent matrix swarm that routes heterogeneous tasks to the most suitable model from an OpenRouter-like gateway plus cfgpu.com/llm/square, dispatches each via in-process subagents or direct LLM calls, and tracks per-model token consumption with a feedback-driven ranking.
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
