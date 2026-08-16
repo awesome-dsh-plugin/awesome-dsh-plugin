@@ -197,5 +197,13 @@
   "https://raw.githubusercontent.com/truelove-dreamer/dsh-plugin-vetting/main/assets/shot-report.png",
   "https://raw.githubusercontent.com/truelove-dreamer/dsh-plugin-vetting/main/assets/shot-detail.png",
   "https://raw.githubusercontent.com/truelove-dreamer/dsh-plugin-vetting/main/assets/shot-gate.png"
+ ],
+ "https://github.com/lire1131/dsh-undo-plugin": [
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-panel.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-settings-section.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-main.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-settings.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-confirm.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-done.png"
  ]
 }
