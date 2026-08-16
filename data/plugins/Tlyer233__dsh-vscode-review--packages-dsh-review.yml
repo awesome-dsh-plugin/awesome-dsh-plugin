@@ -1,5 +1,5 @@
 url: https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review
-name: Tlyer233/dsh-vscode-review
+name: Tlyer233/dsh-vscode-review#dsh-review
 category: ui
 description:
   en: Journals every AI file write/edit into before/after snapshots for an inline VS Code review flow (accept/reject hunks, per-file undo, no git).
