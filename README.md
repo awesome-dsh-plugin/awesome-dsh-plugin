@@ -325,6 +325,7 @@ dsh plugin --profile web add dshmarket
 - [katsos/dsh-claude-cli](https://github.com/katsos/dsh-claude-cli) - LLM provider that runs the locally installed Claude Code CLI as the model backend, so requests go through an existing Claude subscription instead of a metered API key; native tool calls are bridged over MCP.
 - [NagasakiSoyo-ui/dsh-llm-deepseek-vision](https://github.com/NagasakiSoyo-ui/dsh-llm-deepseek-vision) - Vision-augmented DeepSeek adapter: a vision-capable model describes image input, then a text-only DeepSeek model reasons over the description.
 
+- [vinyumao/dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) - OpenCode Go plan usage display for the DSH web GUI: a persistent badge under the composer shows rolling/weekly/monthly usage percents with reset countdowns; click to expand a card; agents can query the balance via the `opencode_go_usage` tool.
 ### Sessions & Messages
 
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.

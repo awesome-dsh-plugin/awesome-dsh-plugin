@@ -325,6 +325,7 @@ dsh plugin --profile web add dshmarket
 - [katsos/dsh-claude-cli](https://github.com/katsos/dsh-claude-cli) — LLM 供应商：把本机已安装的 Claude Code CLI 作为模型后端，请求走已订阅的 Claude 账号，无需按量计费的 API key；原生工具调用经 MCP 桥接。
 - [NagasakiSoyo-ui/dsh-llm-deepseek-vision](https://github.com/NagasakiSoyo-ui/dsh-llm-deepseek-vision) — 视觉增强的 DeepSeek 适配器：由视觉模型把图片描述成文字，纯文本 DeepSeek 模型再基于描述推理。
 
+- [vinyumao/dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) — OpenCode Go 套餐用量显示：输入框下方常驻徽章显示滚动 / 每周 / 每月用量百分比与重置倒计时，点击展开进度卡片；Agent 可经 `opencode_go_usage` 工具随时查询余额。
 ### 💬 会话与消息
 
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) — 将当前会话以只读、token 保护的 HTML 快照分享到局域网，附带会话统计与 Markdown 渲染。
