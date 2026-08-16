@@ -927,7 +927,7 @@ dsh plugin --profile web add dshmarket
 - [SaiSenBox/dsh-boot-guard](https://github.com/SaiSenBox/dsh-boot-guard) — 独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。
 - [sjh9714/dsh-movein](https://github.com/sjh9714/dsh-movein) — 把整套 Claude Code 配置搬进 DSH：技能、MCP、hooks、子代理、权限规则，默认先出搬家清单预演并输出迁移差异报告；作为插件提供 movein_from_claude_code 工具，直接让 agent 帮你搬。
 - [sjh9714/dsh-movein-permissions](https://github.com/sjh9714/dsh-movein/tree/main/plugin) — 为 DSH 补上按工具粒度的权限规则：在 tools/pre-execute 强制执行 deny/ask 清单，规则语法与 Claude Code 相同，不迁移也能单独用。
-- [sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — 让 Minimal 模式在 Windows 上真正可用：补上缺失的 win32 进程探测，常驻 Git Bash shell 才能正常工作；附还原度高的 minimal-windows 预设与安装排障工具（koffi 崩溃、PS 5.1 回退、localhost 403）。
+- [sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — 补上官方缺失的 win32 进程探测，让 Minimal 模式在 Windows 上真正可用，持久 shell 才能起来。附 busybox 变体预设，其持久 shell 能在 workspace-write 受限令牌下存活（MSYS 系 shell 在那里会崩），另有基于 ConPTY 控制台进程列表的前台命令解析、GBK/UTF-16 文件读取，以及安装排障工具。
 - [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。
 - [Small-tailqwq/dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — TPS 指标插件。
 - [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) — DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。
