@@ -254,6 +254,7 @@ dsh plugin --profile web add dshmarket
 - [johnnycls/dsh-no-setup-mode](https://github.com/johnnycls/dsh-no-setup-mode) - No-setup mode for the DSH web UI: hides advanced surfaces, auto-applies best defaults (chat mode, full access, account balance), and one-click role-play personas (maid/butler).
 
 - [mtty-ai/mmx-quota-tool](https://github.com/mtty-ai/mmx-quota-tool) - MiniMax token-plan quota dock for the Web UI: a drop-shape 5h-usage % chip in the conversation input area, click for a detail panel listing every model's 5h & weekly usage and reset countdown, auto-hidden when the active default model is not a MiniMax model.
+- [dannyvan/dsh-file-drop](https://github.com/dannyvan/dsh-file-drop) - Drag & drop or click to attach any non-image file (PDF/Word/Excel/ZIP/text) into the composer: in the desktop shell it resolves the real Finder path instantly; otherwise it uploads to the workspace and inserts the path.
 ### Themes & Appearance
 
 - [Ultronen/dsh-liquid-glass](https://github.com/Ultronen/dsh-liquid-glass) - One toggle makes the whole DeepSeek Harness shell translucent, with an opacity slider and a custom full-page background.
