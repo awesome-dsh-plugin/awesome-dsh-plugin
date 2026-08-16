@@ -634,6 +634,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-tool-stat](https://github.com/omdsh-dev/dsh-tool-stat) - Descriptive statistics, percentiles, frequency distributions, and correlation.
 - [omdsh-dev/dsh-tool-time](https://github.com/omdsh-dev/dsh-tool-time) - Strict ISO 8601 parsing, IANA timezone conversion, and UTC calendar arithmetic.
 - [omdsh-dev/dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) - Zero-dependency toolkit: time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema — ten deterministic tools in one install.
+- [OpenTritium/dsh-codex-shim](https://github.com/OpenTritium/dsh-codex-shim) - Simulates a Codex environment for selected model routes to improve GPT-family model tool-call success.
 - [pengpengyi92/dsh-quant](https://github.com/pengpengyi92/dsh-quant) - Quantitative R&D toolkit for DeepSeek Harness — 37 tools across six domains covering market data, technical indicators, factor evaluation, backtests, risk metrics and fund simulation.
 - [pengxuding/dsh-plugin-judge](https://github.com/pengxuding/dsh-plugin-judge) - Plugin value auditor: pre-install review (source scan + LLM judge) and post-install audit of installed bundles, with model-switch re-audit reminders.
 - [pengzhou267-ai/dsh-shop-assistant](https://github.com/pengzhou267-ai/dsh-shop-assistant) - Ecommerce operator workbench: CSV batch preview with marketplace column adapters, reproducible profit/six-dimension scoring, public product-page snapshots, Chinese skills, and a replaceable store-policy KB.
