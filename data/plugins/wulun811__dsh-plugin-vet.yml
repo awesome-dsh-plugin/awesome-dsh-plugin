@@ -1,0 +1,6 @@
+url: https://github.com/wulun811/dsh-plugin-vet
+name: wulun811/dsh-plugin-vet
+category: dev
+description:
+  en: 'Plugin trust pipeline for DeepSeek Harness: deterministic static scan with verdicts, opt-in runtime guard with honeypot lures, agent audit-protocol skill, and a browser shield status light. Alarm-only, never an enforcer.'
+  zh: DSH 插件信任流水线：确定性静态扫描判定、可选运行时守卫与蜜罐诱饵、agent 审查协议技能与浏览器盾牌状态灯，只报警不执法。
