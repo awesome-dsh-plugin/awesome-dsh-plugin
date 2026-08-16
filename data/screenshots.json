@@ -258,5 +258,10 @@
  ],
  "https://github.com/AI-Galaxy-GPU/dsh-sound": [
   "https://raw.githubusercontent.com/AI-Galaxy-GPU/dsh-sound/main/assets/screenshots/sound-image.png"
+ ],
+ "https://github.com/wz-heng/dsh-feishu-bridge": [
+  "https://raw.githubusercontent.com/wz-heng/dsh-feishu-bridge/main/docs/screenshots/fail-closed-boot.png",
+  "https://raw.githubusercontent.com/wz-heng/dsh-feishu-bridge/main/docs/screenshots/dsh-plugin-add.png",
+  "https://raw.githubusercontent.com/wz-heng/dsh-feishu-bridge/main/docs/screenshots/architecture.png"
  ]
 }
