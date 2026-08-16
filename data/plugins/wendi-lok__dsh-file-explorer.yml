@@ -1,0 +1,6 @@
+url: https://github.com/wendi-lok/dsh-file-explorer
+name: wendi-lok/dsh-file-explorer
+category: ui
+description:
+  en: 'File directory card in the left sidebar: arrow-expand tree, drive-selection page, wheel-scrollable breadcrumbs, and a full-screen toggle that tracks the sidebar width.'
+  zh: 左侧边栏文件目录卡片：箭头展开树形目录、双击进入文件夹、此电脑磁盘选择、可滚动的完整路径链、一键全屏并随侧边栏缩放。
