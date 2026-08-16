@@ -566,9 +566,13 @@ ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code
 `)
 
 // shields.io endpoint badge — the READMEs embed this instead of a hand-written
-// count, so the build never has to touch source files
+// count, so the build never has to touch source files.
+//
+// cacheSeconds is how long shields' CDN serves a stale count: the badge sits
+// directly above a list whose length anyone can count, so an hour of drift
+// reads as a bug in the list. 300 is shields' floor for endpoint badges.
 fs.writeFileSync('docs/count.json', JSON.stringify({
-  schemaVersion: 1, label: 'plugins', message: String(N), color: 'c0392b', cacheSeconds: 3600,
+  schemaVersion: 1, label: 'plugins', message: String(N), color: 'c0392b', cacheSeconds: 300,
 }) + '\n')
 
 console.log(`site built: ${N} rows × ${LOCALES.length} locales + sitemap + count badge`)
