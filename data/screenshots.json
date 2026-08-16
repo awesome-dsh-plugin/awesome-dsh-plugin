@@ -140,5 +140,33 @@
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
+ ],
+ "https://github.com/LeemanCheung/dsh-agent-preset-recommender": [
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-agent-preset-recommender/main/docs/screenshot.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-agent-preset-recommender/main/docs/project-detail.png"
+ ],
+ "https://github.com/LeemanCheung/dsh-image-gen": [
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-image-gen/main/assets/demo.svg",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-image-gen/main/assets/final-card.png"
+ ],
+ "https://github.com/LeemanCheung/dsh-qq2007-skin": [
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/main/docs/screenshot.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/main/docs/preview.svg"
+ ],
+ "https://github.com/LeemanCheung/dsh-task-dag": [
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/screenshot.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-task-dag/main/docs/task-dag-preview.svg"
+ ],
+ "https://github.com/LeemanCheung/dsh-token-usage": [
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-token-usage/main/assets/token-usage-overview.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-token-usage/main/assets/token-usage-insights.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-token-usage/main/assets/token-usage-budget.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-token-usage/main/assets/token-usage-ai-analysis.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-token-usage/main/assets/token-usage-trajectory-analysis.png"
+ ],
+ "https://github.com/LeemanCheung/dsh-whale-animation": [
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/launch.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/apex.png",
+  "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/deep-dive.png"
  ]
 }
