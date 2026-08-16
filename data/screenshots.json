@@ -471,5 +471,13 @@
   "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/03-native-dsh-execution.png",
   "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/04-workspace-security.png",
   "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/05-bridge-health.png"
+ ],
+ "https://github.com/YeqingTang/dsh-session-flow": [
+  "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/overview.png",
+  "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/session-flow-tab.png",
+  "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/turn-rail.png",
+  "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/fulltext-search.png",
+  "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/dock-right.png",
+  "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/folded-detail.png"
  ]
 }
