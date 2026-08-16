@@ -176,6 +176,7 @@ dsh plugin --profile web add dshmarket
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) - Bottom multi-tab terminal panel (node-pty + xterm.js) pinned to the viewport bottom, always below the input box.
 - [SnowCrescenter-tech/dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) - Right-side dot-timeline rail: jump between user messages.
 - [SongMiao-tech/dsh-prompt-optimizer](https://github.com/SongMiao-tech/dsh-prompt-optimizer) - Optimize Prompt button under the composer: one click rewrites your draft into a clearer, more executable prompt, with a before-and-after dialog and one-click replacement.
+- [songoao25/dsh-bottom-info-bar](https://github.com/songoao25/dsh-bottom-info-bar) - Bottom info bar for the DSH Web UI: provider/model, live balance, peak/off-peak pricing with countdown, and real persisted per-session spend in a single line.
 - [SpookySandwich/dsh-smooth-stream](https://github.com/SpookySandwich/dsh-smooth-stream) - Better streaming text animation for DeepSeek Harness.
 - [taxueseek/dsh-files](https://github.com/taxueseek/dsh-files) - File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.
 - [Tlyer233/dsh-vscode-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review) - Journals every AI file write/edit into before/after snapshots for an inline VS Code review flow (accept/reject hunks, per-file undo, no git).
