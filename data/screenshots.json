@@ -320,5 +320,12 @@
   "https://github.com/user-attachments/assets/0b48ac02-4648-4b94-8d8f-344f8b7c25b4",
   "https://github.com/user-attachments/assets/8b2610d0-3d00-41be-b314-bac2fe616787",
   "https://github.com/user-attachments/assets/9b66deea-3786-4296-9b0d-52873a15f5e1"
+ ],
+ "https://github.com/GOU-GEE/deepseek-vision/tree/main/plugins/dsh-plugin-deepseek-vision": [
+  "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/01-settings.png",
+  "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/02-paste-analyze.png",
+  "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/03-clipboard.png",
+  "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/04-result.png",
+  "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/05-market.png"
  ]
 }
