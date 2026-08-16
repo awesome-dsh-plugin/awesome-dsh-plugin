@@ -372,5 +372,8 @@
  ],
  "https://github.com/huguangyu666/dsh-store": [
   "https://raw.githubusercontent.com/huguangyu666/dsh-plugin-store/main/assets/screenshot.png"
+ ],
+ "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": [
+  "https://raw.githubusercontent.com/moguiyu/dsh-tavily/main/assets/tavily-search.png"
  ]
 }
