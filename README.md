@@ -1015,6 +1015,7 @@ dsh plugin --profile web add dshmarket
 
 ### Plugin Markets & Managers
 
+- [1e0zj/dsh-plugin-mall](https://github.com/1e0zj/dsh-plugin-mall) - Open plugin marketplace: live GitHub dsh-plugin topic search with per-repo package.json verification (dsh.bundle/dsh.client manifest badges and a verified-only filter), npm-first installs with same-source anti-squatting checks, update detection, and five agent tools for headless use.
 - [alex04130/dsh-forge](https://github.com/alex04130/dsh-forge) - Runtime extension suite for DeepSeek Harness: cross-session mailbox with wake cold-start, agent teams (captain + members + dependency task board + team_wait), subagent spawn policy with escalation approval, task-aware routing preset, plugin market, skill manager and runtime injector.
 - [bradeGithub/DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace) - GitHub-topic-driven plugin & skill marketplace: a Settings page that browses the auto-collected registry (the whole dsh-plugin topic plus the skills index, CI-refreshed every 2 hours) with one-click install, type detection, install-script and host-shadow-dependency safety confirmations, env-key management, and the STANDARD.md recognition spec.
 - [buhuikongpan/dsh-pluginmanager](https://github.com/buhuikongpan/dsh-pluginmanager) - Layered plugin manager for DSH web: native plugins grouped read-only by system/WebUI/tools, user extensions with enable/disable, register, uninstall and editable descriptions.
