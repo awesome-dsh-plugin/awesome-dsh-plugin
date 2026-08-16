@@ -303,6 +303,7 @@ dsh plugin --profile web add dshmarket
 
 ### Themes & Appearance
 
+- [0nt-one/dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin) - Neo-brutalism skin with two switchable schemes (Blue Command / Aged Newspaper), hard shadows, sharp corners, and light/dark theme support.
 - [aerince/dsh-models-dev-reasoning](https://github.com/aerince/dsh-models-dev-reasoning) - Adds models.dev reasoning levels to unconfigured third-party DeepSeek Harness models.
 - [AKS1st/dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle) - Particle-network background overlay for the DSH Web shell: full-screen, click-through, zero runtime dependencies.
 - [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) - IKUN fandom skin for the DSH Web UI: star-blue and black-gold palettes in the system theme list, full-screen photo wallpaper rotation, a music box, and a send-button voice line.
@@ -498,6 +499,7 @@ dsh plugin --profile web add dshmarket
 
 ### Tools & Capabilities
 
+- [0nt-one/dsh-voice-input](https://github.com/0nt-one/dsh-voice-input) - Mic button in the composer tool row: Web Speech API speech-to-text (Chrome/Edge), language switching, and optional auto-send, zero dependencies.
 - [1624318455/dsh-plugin-tavily](https://github.com/1624318455/dsh-plugin-tavily) - Tavily-backed web search provider for the built-in web_search tool, with a settings card for the API key, result count, and recency window.
 - [1na-ko/dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) - HarmonyOS device bridge: hdc screenshot/install/log/crash/UI automation loop with read_image, official-first versioned API knowledge (SDK .d.ts + offline bundled docs), and a DevEco CLI build/sign/lint lane.
 - [6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) - Add a WSL workspace from the web GUI without needing to install dsh or related tools again inside WSL. Bash commands and file read/write operations run within the local WSL distribution on the host machine, while Windows files remain accessible.
