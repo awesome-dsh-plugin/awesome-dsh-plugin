@@ -113,5 +113,10 @@
   "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/04-celebrate.png",
   "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/05-error.png",
   "https://raw.githubusercontent.com/nzl153/dsh-pet-whale/main/docs/screenshots/06-feed.png"
+ ],
+ "https://github.com/iamfromchangsha/dsh-go-balance": [
+  "https://raw.githubusercontent.com/iamfromchangsha/dsh-go-balance/main/docs/screenshot-composer.png",
+  "https://raw.githubusercontent.com/iamfromchangsha/dsh-go-balance/main/docs/screenshot-tooltip.png",
+  "https://raw.githubusercontent.com/iamfromchangsha/dsh-go-balance/main/docs/screenshot-warn.png"
  ]
 }
