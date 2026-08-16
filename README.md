@@ -451,6 +451,7 @@ dsh plugin --profile web add dshmarket
 - [vectorize-io/hindsight#coding-agents](https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents) - Hindsight, agent memory that learns: long-term project memory with auto recall and retain, knowledge pages, deep reflection, and per-repo memory banks.
 
 - [scd13150/dsh-cognition](https://github.com/scd13150/dsh-cognition) - Project memory for coding agents on DeepSeek Harness: similar past edits surface as precedents, out-of-scope edits are blocked, and cognition persists across sessions (47 upstream-verified fixes, gold-free 20-task run).
+- [volcengine/OpenViking#examples/dsh-memory-plugin](https://github.com/volcengine/OpenViking/tree/main/examples/dsh-memory-plugin) - OpenViking memory and context bundle for DeepSeek Harness: pre-step auto-recall and profile injection, session capture, `viking://` URI guarding, and recall/write memory tools backed by an OpenViking server.
 
 ### Tools & Capabilities
 
