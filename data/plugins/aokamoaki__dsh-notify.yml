@@ -1,0 +1,6 @@
+url: https://github.com/aokamoaki/dsh-notify
+name: aokamoaki/dsh-notify
+category: notify
+description:
+  en: 'Conversation-completion notifications for DeepSeek Harness: Windows toast + sound on turn done / error / goal, plus ask & approval alerts - background-only, with a volume-adjustable bell in the conversation header.'
+  zh: 对话完成通知：回合完成/出错/目标完成/提问/审批时弹出 Windows toast 与提示音，仅后台提醒，会话头部铃铛即控制中心。
