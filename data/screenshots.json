@@ -3,4 +3,12 @@
   "https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-en.png",
   "https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/themes-en.png"
  ]
+ ,
+  "https://github.com/keyiadiannao/dsh-restart-button": [
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/screenshot-1.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/screenshot-2.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/screenshot-3.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/screenshot-4.png",
+   "https://raw.githubusercontent.com/keyiadiannao/dsh-power-button/master/docs/screenshots/screenshot-5.png"
+  ]
 }
