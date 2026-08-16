@@ -867,6 +867,8 @@ dsh plugin --profile web add dshmarket
 - [kimiya1010/dsh-plugin-market](https://github.com/kimiya1010/dsh-plugin-market) - A plugin market for DeepSeek Harness: search and one-click install GitHub dsh-plugin plugins straight from the web GUI.
 
 
+- [kinmat-A/dsh-theme-switch](https://github.com/kinmat-A/dsh-theme-switch) - One-click skin switching for DSH Web settings: auto-detects installed themes, keeps exactly one active at a time, and falls back to the official look when all are off. Changes apply instantly and survive restarts.
+
 ### Just for Fun
 
 - [xczhanjun/lazeword](https://github.com/xczhanjun/lazeword) - A cozy offline vocabulary trainer for the whole family: 1094 curated words, spaced repetition, 6 quiz types, spelling games and a lazy large-screen mode; opens as a sidebar panel and also runs standalone as one HTML file.
