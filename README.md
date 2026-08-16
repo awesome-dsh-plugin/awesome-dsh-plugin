@@ -919,6 +919,7 @@ dsh plugin --profile web add dshmarket
 
 ### Plugin Markets & Managers
 
+- [alex04130/dsh-forge](https://github.com/alex04130/dsh-forge) - Runtime extension suite for DeepSeek Harness: cross-session mailbox with wake cold-start, agent teams (captain + members + dependency task board + team_wait), subagent spawn policy with escalation approval, task-aware routing preset, plugin market, skill manager and runtime injector.
 - [buhuikongpan/dsh-pluginmanager](https://github.com/buhuikongpan/dsh-pluginmanager) - Layered plugin manager for DSH web: native plugins grouped read-only by system/WebUI/tools, user extensions with enable/disable, register, uninstall and editable descriptions.
 - [cynch18/plugin-switch](https://github.com/cynch18/plugin-switch) - Toggle switches for the plugin inventory: enable/disable any plugin live from Settings → Plugins → Plugin list without restarting, with groups/filters, bulk toggle, undo, and backup.
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) - (Recommended) The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.
