@@ -17,6 +17,7 @@ import LOCALES from '../site/locales.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
+const SCREENSHOTS_FILE = 'data/screenshots.json'
 
 // docs/ is fully generated: static assets live in site/assets/ and are copied
 // in here, so a from-scratch build (empty docs/) produces the complete site
@@ -125,6 +126,41 @@ if (ordered.some((e) => !dates[e.url])) {
 }
 const isoTs = (s) => (s.includes('T') ? s : s + 'T00:00:00Z')
 for (const e of ordered) { e.addedAt = dates[e.url]; e.added = e.addedAt.slice(0, 10) }
+
+// Optional per-entry screenshots (data/screenshots.json): keyed by the entry
+// URL like added-dates.json; values are image URLs surfaced by storefronts
+// (dsh-market #61: AppStore-style screenshots on the detail view). Validated
+// here so a bad submission fails the PR check: keys must match a listed
+// entry, and images must live on GitHub's own hosting — a third-party image
+// host would let a list PR plant a tracking pixel in every storefront
+// user's browser.
+const SCREENSHOT_HOSTS = new Set([
+  'raw.githubusercontent.com',
+  'user-images.githubusercontent.com',
+  'camo.githubusercontent.com',
+  'github.com',
+])
+const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SCREENSHOTS_FILE, 'utf8')) : {}
+{
+  const listed = new Set(ordered.map((e) => e.url))
+  let shotsBroken = false
+  const complain = (msg) => { console.error(`${SCREENSHOTS_FILE}: ${msg}`); shotsBroken = true }
+  for (const [key, value] of Object.entries(shotsMap)) {
+    if (!listed.has(key)) complain(`"${key}" is not a listed entry URL (keys must match the README entry link exactly)`)
+    if (!Array.isArray(value) || value.length === 0 || value.length > 8 || value.some((s) => typeof s !== 'string')) {
+      complain(`"${key}" must map to an array of 1-8 image URL strings`)
+      continue
+    }
+    for (const shot of value) {
+      let parsed = null
+      try { parsed = new URL(shot) } catch { /* complain below */ }
+      if (parsed === null || parsed.protocol !== 'https:' || !SCREENSHOT_HOSTS.has(parsed.hostname)) {
+        complain(`"${key}": images must be https URLs on GitHub hosting (${[...SCREENSHOT_HOSTS].join(' / ')}), got: ${shot}`)
+      }
+    }
+  }
+  if (shotsBroken) process.exit(1)
+}
 
 // derive repo/subdir install specs and the detail-page slug once
 for (const e of ordered) {
@@ -482,6 +518,10 @@ const registry = {
       stars: e.stars,
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit,
       added: e.added,
+      // Optional, author-maintained (data/screenshots.json); omitted when
+      // absent so the payload stays lean. Storefronts fall back to their own
+      // README extraction (dsh-market #61).
+      screenshots: shotsMap[e.url],
     }
   }),
 }

@@ -52,6 +52,25 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
 
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
 
+### Screenshots / 截图（optional, recommended / 可选，推荐）
+
+Storefronts (e.g. [dsh-market](https://github.com/dsh-market/dsh-market)'s detail view) show AppStore-style screenshots for your plugin. Add yours to [`data/screenshots.json`](data/screenshots.json), keyed by your entry's GitHub URL — the same URL as your README line — mapping to 1-8 image URLs:
+
+在插件市场（如 [dsh-market](https://github.com/dsh-market/dsh-market) 的详情页）中，你的插件可以像 App Store 一样展示截图。在 [`data/screenshots.json`](data/screenshots.json) 里以你条目的 GitHub URL（与 README 行完全一致）为 key，加入 1-8 张图片 URL：
+
+```jsonc
+{
+ "https://github.com/owner/repo": [
+  "https://raw.githubusercontent.com/owner/repo/main/assets/screenshot-1.png",
+  "https://raw.githubusercontent.com/owner/repo/main/assets/screenshot-2.png"
+ ]
+}
+```
+
+- Images must be **https URLs on GitHub hosting** (`raw.githubusercontent.com`, `user-images.githubusercontent.com`, `camo.githubusercontent.com`, `github.com` attachments) — third-party image hosts are rejected by the build for user-privacy reasons. / 图片必须是 **GitHub 托管的 https URL**（`raw.githubusercontent.com` 等）——出于用户隐私考虑，第三方图床会被构建校验拒绝。
+- Keep the images in your own repo (an `assets/` folder works well) so they update with your releases. / 建议把图片放在你自己的仓库里（如 `assets/` 目录），随版本一起维护。
+- No screenshots? Storefronts fall back to extracting images from your README — a maintained entry here just gives you control over order and selection. / 不提交也没关系：市场会从你的 README 自动抽取——这里的条目只是让你能控制展示的顺序与内容。
+
 ### Themes & skins / 主题与皮肤
 
 Entries under the **Themes & Appearance / 主题与外观** category automatically appear in the [dsh-market](https://github.com/dsh-market/dsh-market) plugin's dedicated **Themes tab**, where users install, switch, and uninstall them with one click — so put your theme/skin there, not under UI Enhancements. Monorepo subpackages are supported: link the subdirectory directly, e.g. `https://github.com/owner/repo/tree/main/packages/my-theme`.
