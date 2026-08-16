@@ -368,6 +368,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) - A floating button beside the chat that opens a searchable list of all questions in the session for quick jumps.
 - [Leeminjing/dsh-messages-sanitizer](https://github.com/Leeminjing/dsh-messages-sanitizer) - Auto-repairs the messages array after a tool-dispatch crash (orphaned tool_calls / tool messages), preventing 400 INVALID_REQUEST session lock-ups.
 
+- [p2coder/dsh-task-control](https://github.com/p2coder/dsh-task-control) - Pause / resume / cancel the in-flight conversation task from the composer area: forced pause interrupts immediately and remembers the interrupted tool, safe pause lands after the tool or reasoning finishes, resume asks for confirmation, and the default pause granularity is configurable in the settings.
 
 ### Memory
 - [madage/dsh-self-improved](https://github.com/madage/dsh-self-improved) - Long-term memory & self-evolving plugin for DSH: L0 capture → L1 memory extraction → L2 scene grouping → L3 user persona, auto recall injection, skill synthesis, fully local (SQLite FTS5 + jieba, optional vector recall).
