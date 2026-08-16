@@ -168,5 +168,9 @@
   "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/launch.png",
   "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/apex.png",
   "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/deep-dive.png"
+ ],
+ "https://github.com/Mars-Sea/dsh-commandcode-provider": [
+  "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/main/assets/screenshots/model-picker.png",
+  "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/main/assets/screenshots/usage-dashboard.png"
  ]
 }
