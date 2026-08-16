@@ -387,7 +387,8 @@ dsh plugin --profile web add dshmarket
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
 - [zoahdev/dsh-shelf](https://github.com/zoahdev/dsh-shelf) - Session lifecycle CLI: export (md/json/jsonl), archive/restore, trash, search, and stats. Read-only by default; nothing is ever deleted by the engine.
 - [ZRui-C/dsh-minimal-first-turn](https://github.com/ZRui-C/dsh-minimal-first-turn) - Minimal-compatible first turn for Web root sessions: starts with persistent bash and str_replace_editor, removes automatic workspace and skill context, then restores the selected preset after the first tool call or reply; includes a persistent composer toggle.
-
+- [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) - Adds a configurable humanized whale-girl maid persona with immersive roleplay, speaking modes, and a lightweight layered memory with query-triggered recall.
+- 
 ### Memory
 
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) - Model-authored context pruning for DeepSeek Harness through the official compaction API.
