@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-soul-md
+name: Scorp1o117/dsh-soul-md
+category: memory
+description:
+  en: 'Soul.md-style persona + long-term memory: type a card name and content in Settings and the plugin manages everything else (no paths); per-workspace personas, per-chat switcher, and the AI evolves its own persona and memory (soul_read / soul_update / memory_* tools); npm published.'
+  zh: soul.md 风格人设 + 长期记忆：设置页输入人设卡名称和内容即可，文件由插件自动管理（无需碰路径）；按工作区指定人设、聊天框可给会话单独切人设；AI 可自行演化人设与记忆（soul_read / soul_update / memory_*）；npm 已发布。

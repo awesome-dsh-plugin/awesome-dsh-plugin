@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-tool-vision
+name: Scorp1o117/dsh-tool-vision
+category: tools
+description:
+  en: 'External vision model plugin: inspect_image sends local images or http(s) image URLs to any OpenAI-compatible endpoint and brings the vision model''s textual answer back into the conversation; settings-backed, no bundled API key.'
+  zh: 外置视觉模型插件：inspect_image 把本地图片或 http(s) 图片 URL 发给任意 OpenAI 兼容端点，视觉模型看图的文字回答直接带回对话；设置页配置、不捆绑 API key。

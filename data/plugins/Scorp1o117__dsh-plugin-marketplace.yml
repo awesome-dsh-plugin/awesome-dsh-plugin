@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-plugin-marketplace
+name: Scorp1o117/dsh-plugin-marketplace
+category: market
+description:
+  en: 'Plugin marketplace inside the DSH Web UI: browse the GitHub dsh-plugin topic right in Settings — search, sort by stars, README summary, one-click install with automatic cordis.patch.yml mounting, and AI explain; npm published.'
+  zh: DSH Web UI 内置插件市场：设置页直接浏览 GitHub dsh-plugin 话题，搜索/按 Star 排序/README 摘要，一键安装并自动挂载 cordis.patch.yml，AI 解释；npm 已发布。
