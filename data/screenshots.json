@@ -126,5 +126,8 @@
  ],
  "https://github.com/FengHuoLinShan/dsh-plugin-llm-balance": [
   "https://raw.githubusercontent.com/FengHuoLinShan/dsh-plugin-llm-balance/main/assets/llm-balance-preview.png"
+ ],
+ "https://github.com/iiwish/dsh-testkit": [
+  "https://raw.githubusercontent.com/iiwish/dsh-testkit/main/docs/assets/dsh-testkit-showcase.png"
  ]
 }
