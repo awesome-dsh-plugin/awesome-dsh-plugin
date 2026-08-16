@@ -74,7 +74,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 <!-- BEGIN PLUGINS -->
 ### UI Enhancements
-
+- [zmm863-commits/dsh-paperclip](https://github.com/zmm863-commits/dsh-paperclip) - DSH Web GUI paperclip button: a 📎 button in the composer opens a file picker (drag & drop supported) and inserts file contents into the textarea.
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) - Replaces the "Deep diving..." turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.
 - [0xsline/dsh-spotlight](https://github.com/0xsline/dsh-spotlight) - Keyboard-first command palette for the DSH Web UI.
 - [1070296335-create/dph-taskboard](https://github.com/1070296335-create/dph-taskboard) - Session-based task board in the sidebar: drag sessions into todo/doing/review/done columns, create sessions with model and reasoning-effort selection, trash with restore, notes, export/import.
