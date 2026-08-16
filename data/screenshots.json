@@ -87,5 +87,12 @@
  "https://github.com/zhtx2024/dsh-pdf": [
   "https://raw.githubusercontent.com/zhtx2024/dsh-pdf/master/assets/screenshot-schematic.png",
   "https://raw.githubusercontent.com/zhtx2024/dsh-pdf/master/assets/screenshot-power.png"
+ ],
+ "https://github.com/wuxiangru915/dsh-session-manager": [
+  "https://raw.githubusercontent.com/wuxiangru915/dsh-session-manager/main/assets/session-manager.png"
+ ],
+ "https://github.com/wuxiangru915/dsh-review-loop": [
+  "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.en.png",
+  "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.zh.png"
  ]
 }
