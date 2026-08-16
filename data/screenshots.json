@@ -490,5 +490,9 @@
   "https://raw.githubusercontent.com/Jiyr0119/dsh-workspace-explorer/main/assets/screenshots/panel.png",
   "https://raw.githubusercontent.com/Jiyr0119/dsh-workspace-explorer/main/assets/screenshots/tree.png",
   "https://raw.githubusercontent.com/Jiyr0119/dsh-workspace-explorer/main/assets/screenshots/insert.png"
+ ],
+ "https://github.com/Lhy723/dsh-agent-canvas": [
+  "https://raw.githubusercontent.com/Lhy723/dsh-agent-canvas/main/docs/assets/agent-canvas-overview.png",
+  "https://raw.githubusercontent.com/Lhy723/dsh-agent-canvas/main/docs/assets/agent-canvas-dark-settings.png"
  ]
 }
