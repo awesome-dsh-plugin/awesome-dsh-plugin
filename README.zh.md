@@ -823,6 +823,7 @@ dsh plugin --profile web add dshmarket
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) — 任务完成或需要确认/输入时发送操作系统原生通知：Windows toast、macOS osascript、Linux notify-send。
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) — 系统级桌面通知：回合完成 / 工作流完成横幅，需要审批时弹出模态提醒（macOS osascript / Linux notify-send）。
+- [zhengjy01/dsh-ticktick](https://github.com/zhengjy01/dsh-ticktick) — 基于官方 OAuth Open API 双向同步滴答清单（TickTick/Dida365）任务：拉取各清单任务、创建/更新/完成/删除、按标题去重的一键同步，带 Web 设置面板。
 
 ### 🧑‍💻 开发与运行时
 

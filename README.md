@@ -823,6 +823,7 @@ dsh plugin --profile web add dshmarket
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) - Native Windows system notification (Notification Center toast) when a task completes: goal completion or agent turn end.
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) - System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) - System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).
+- [zhengjy01/dsh-ticktick](https://github.com/zhengjy01/dsh-ticktick) - Two-way TickTick/Dida365 (滴答清单) task sync via the official OAuth Open API: pull tasks across lists, create/update/complete/delete tasks, and one-shot title-deduped sync, with a web settings panel.
 
 ### Development & Runtime
 
