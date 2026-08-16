@@ -1,0 +1,6 @@
+url: https://github.com/Relistencode/dsh-extension-hub/tree/main/packages/dsh-myrules
+name: dsh-myrules
+category: ui
+description:
+  en: Edit the host-wide global instructions (~/.dsh/AGENTS.md) from a dedicated Customize page in Settings - every session on this machine applies them.
+  zh: 在设置页的「个性化」页编辑此主机全局指令（~/.dsh/AGENTS.md），此机器上的所有会话都会应用。
