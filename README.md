@@ -437,6 +437,7 @@ dsh plugin --profile web add dshmarket
 
 ### Memory
 
+- [863683348/dsh-plugin-focus](https://github.com/863683348/dsh-plugin-focus) - Focus board for DeepSeek Harness agents: durable, model-maintained notes in the session workspace that pin the objective, constraints, and decisions across compaction and sessions, with automatic context injection, archive on clear, and an optional web panel.
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) - Model-authored context pruning for DeepSeek Harness through the official compaction API.
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) - Auto-memory for DSH: three-layer memory (user / project notes / daily logs) with automatic injection, per-turn auto-consolidation, AI greetings, smart search, a calendar view and a settings page, plus inheritance of other AI tools' memories.
 - [akslcw/dsh-negative-ledger](https://github.com/akslcw/dsh-negative-ledger) - Evidence-bound negative-knowledge ledger: persists disproven paths (command_failed, file_missing) with their outcome and precondition evidence, then warns or blocks repeat attempts until the evidence changes.
