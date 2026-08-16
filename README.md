@@ -535,6 +535,7 @@ dsh plugin --profile web add dshmarket
 - [lynx-gt/dsh-subagent-cwd](https://github.com/lynx-gt/dsh-subagent-cwd) - Extends dsh-subagent-tools with a per-call cwd for subagents, shipped with the two in-process provider patches it requires.
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) - Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under ~/.dsh/voice.
 - [Jesse-njx/dsh-docker](https://github.com/Jesse-njx/dsh-docker) - Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.
+- [xxiaoxiong/dsh-kubernetes](https://github.com/xxiaoxiong/dsh-kubernetes) - Safe Kubernetes capability for DeepSeek Harness with workload inspection, bounded logs and events, failure diagnosis, and approval-gated operations.
 - [hccccc01333/dsh-excel-chat](https://github.com/hccccc01333/dsh-excel-chat) - Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.
 - [zhang787jun/dsh-finance](https://github.com/zhang787jun/dsh-finance) - Financial research workflow and portfolio risk tools with source discipline for current market facts.
 - [Realyujie/dsh-us-stocks](https://github.com/Realyujie/dsh-us-stocks) - US stock quotes, price history, financial statements, analyst consensus and news via yahoo-finance2.
