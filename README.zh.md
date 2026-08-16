@@ -748,6 +748,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🧑‍💻 开发与运行时
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) — 为第三方客户端提供 REST + SSE 网关：API 密钥鉴权、token 流式回包、会话工作区分组，并可接管 GUI 会话继续对话。
+- [534119219/chicheng-gate](https://github.com/534119219/chicheng-gate) — DSH Web 插件：局域网/远程访问控制、frpc 内网穿透、面板密码门禁与手机端 UI 适配。
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) — 验证驱动的自我进化循环：失败日志自动变成经过验证的 AGENTS.md 规则；会话内插件（evolve_learn/evolve_apply/evolve_touch/evolve_recall）、工具体检、规则生命周期、本地召回。
 
 - [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) — 右侧停靠的可折叠 Web 终端（xterm.js），经 WebSocket 桥接宿主 PTY：支持 bash/zsh 切换、拖拽调宽，折叠时保留会话。

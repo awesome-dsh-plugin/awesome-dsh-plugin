@@ -749,6 +749,7 @@ dsh plugin --profile web add dshmarket
 
 ### Development & Runtime
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) - REST + SSE gateway exposing running Harness sessions to third-party clients: API-key auth, token streaming, workspace grouping, and adopting GUI sessions to keep chatting.
+- [534119219/chicheng-gate](https://github.com/534119219/chicheng-gate) - LAN / remote-access control, frpc NAT tunneling, a panel password gate, and mobile UI adaptation for the DSH Web GUI.
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) - Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.
 
 - [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) - Collapsible right-docked web terminal (xterm.js) bridged to a host PTY over WebSocket: bash/zsh switching, resizable panel, and fold/unfold that keeps the session alive.
