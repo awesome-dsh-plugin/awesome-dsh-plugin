@@ -898,6 +898,7 @@ dsh plugin --profile web add dshmarket
 - [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) - Close and restart controls for DeepSeek Harness Desktop and Web on Windows, in Settings → General.
 - [hellosky983/dsh-fabric](https://github.com/hellosky983/dsh-fabric) - Unifies every DSH extensibility seam behind one declarative DSL: a runtime `fabric` service, `fabric_extend`/`fabric_inspect` tools, and a capability-graph settings page.
 - [hellosky983/dsh-foundry](https://github.com/hellosky983/dsh-foundry) - Plugin compiler with a blueprint registry (scaffold → validate → deploy) exposed as a runtime service, three model tools, and a blueprint-gallery settings page.
+- [bigclawd/dsh-security-guard](https://github.com/bigclawd/dsh-security-guard) - Static and runtime security guard for dsh: rule-based scans for malicious code, prompt injection and token waste, runtime interception of dangerous tool calls, /scan command, plugin_scan tool, web panel, and allowlist.
 
 ### Plugin Markets & Managers
 
