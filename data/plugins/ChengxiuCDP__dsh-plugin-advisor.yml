@@ -1,0 +1,6 @@
+url: https://github.com/ChengxiuCDP/dsh-plugin-advisor
+name: ChengxiuCDP/dsh-plugin-advisor
+category: market
+description:
+  en: 'Quality-aware in-agent plugin discovery: a find_dsh_plugins tool that ranks the whole dsh-plugin topic through a daily quality-scored index (installable manifest, curated listing, license, activity) merged with a live gh search — zero LLM API cost, risk flags and exact install commands in every result.'
+  zh: 质量感知的会话内插件发现：find_dsh_plugins 工具基于每日更新的质量评分索引（可安装声明 / 精选收录 / 许可证 / 活跃度）对 dsh-plugin topic 全量排序，并叠加实时 gh 搜索——零 LLM API 成本，每条结果附风险徽章与精确安装命令。
