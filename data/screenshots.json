@@ -394,5 +394,15 @@
  ],
  "https://github.com/SamizuHM/dsh-client-ui-theme-xp": [
   "https://raw.githubusercontent.com/SamizuHM/dsh-client-ui-theme-xp/main/docs/screenshot.png"
+ ],
+ "https://github.com/franksong2702/dsh-codex-connect": [
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/plugin-entry.jpg",
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/oauth-status.jpg",
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/plugin-configuration.jpg",
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/model-selector.jpg",
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/zh/hero.jpg",
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/zh/plugin-entry.jpg",
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/zh/oauth-status.jpg",
+  "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/zh/plugin-configuration.jpg"
  ]
 }
