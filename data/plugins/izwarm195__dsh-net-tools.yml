@@ -1,0 +1,6 @@
+url: https://github.com/izwarm195/dsh-net-tools
+name: izwarm195/dsh-net-tools
+category: tools
+description:
+  en: 'Registers net_fetch and net_proxy_status tools that tunnel HTTP(S) requests through your local proxy via CONNECT, bypassing sandboxed-shell schannel TLS failures.'
+  zh: '注册 net_fetch 与 net_proxy_status 工具：通过本机 HTTP 代理的 CONNECT 隧道抓取网页，绕开沙箱 shell 的 schannel TLS 故障。'
