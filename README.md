@@ -953,6 +953,7 @@ dsh plugin --profile web add dshmarket
 - [chen731215-dev/-](https://github.com/chen731215-dev/-) - Native tavern management panel for DeepSeek Harness: multiple character cards, multiple worldbooks, switchable presets.
 - [hellodigua/dsh-emoji](https://github.com/hellodigua/dsh-emoji) - Automatically add emojis to AI replies.
 - [HuanLinOTO/dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) - Pops up a mini-game menu (wordle, match-3, extensible) while the model generates.
+- [JAdpp/dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) - Multi-character Galgame conversation view with separate character and reply-model selection, per-character affection, memory, dialogue history, and CG galleries, plus responses informed by task events across Harness sessions.
 - [jitengfei/dsh-whale-arcade](https://github.com/jitengfei/dsh-whale-arcade) - Floating, browser-local whale arcade with three score games and ocean-themed Gomoku for breaks while waiting on the agent.
 - [KongChengZhi/dsh-pixel-studio#dsh-cli-anything-aseprite](https://github.com/KongChengZhi/dsh-pixel-studio/tree/main/dsh-cli-anything-aseprite) - Aseprite-style pixel art studio: the AI draws sprites stroke by stroke with selections, layers, animation frames, gradients, symmetry and reference layers, each step rendered live as ANSI terminal frames.
 - [lhh010/dsh-minigames](https://github.com/lhh010/dsh-minigames) - Side-panel arcade: 18 offline mini-games to play while the model thinks.
