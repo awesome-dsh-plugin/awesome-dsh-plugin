@@ -363,5 +363,10 @@
  ],
  "https://github.com/AcidGr/dsh-web-lan-access": [
   "https://raw.githubusercontent.com/AcidGr/dsh-web-lan-access/main/assets/screenshot-lan-access.jpg"
+ ],
+ "https://github.com/Awu12277/dsh-stock-watch": [
+  "https://raw.githubusercontent.com/Awu12277/dsh-stock-watch/main/screenshots/detail-kline-dark.png",
+  "https://raw.githubusercontent.com/Awu12277/dsh-stock-watch/main/screenshots/detail-minute-dark.png",
+  "https://raw.githubusercontent.com/Awu12277/dsh-stock-watch/main/screenshots/list-dark.png"
  ]
 }
