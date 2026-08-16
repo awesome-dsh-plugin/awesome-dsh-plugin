@@ -1,0 +1,6 @@
+url: https://github.com/Nothree-code/voco-input-sh
+name: Nothree-code/voco-input-sh
+category: ui
+description:
+  en: 'Voice input for the Web UI: a mic button that drives local VocoType offline speech recognition and auto-inserts recognized text into the composer (auto-deploy, dedupe, continuous dictation).'
+  zh: Web UI 语音输入：输入框麦克风按钮驱动本地 VocoType 离线识别，识别结果自动插入输入框（自动部署/防重复/持续输入）。

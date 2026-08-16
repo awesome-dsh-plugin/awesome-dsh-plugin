@@ -1,0 +1,6 @@
+url: https://github.com/940842546/dsh-permissions
+name: 940842546/dsh-permissions
+category: workflow
+description:
+  en: 'Claude Code-style permission rules engine: hard/deny/ask/allow tiers with a hard tier above full access, workspace-scoped rules, wildcard path protection, and a visual staged editor; rules persist in settings.yaml.'
+  zh: Claude Code 风格权限规则引擎：hard/deny/ask/allow 四级规则（hard 高于全访问、不可豁免）、workspace 作用域、通配符路径保护、可视化草稿式编辑器，规则持久化于 settings.yaml。

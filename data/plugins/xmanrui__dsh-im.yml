@@ -1,0 +1,6 @@
+url: https://github.com/xmanrui/dsh-im
+name: xmanrui/dsh-im
+category: notify
+description:
+  en: Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).
+  zh: 通过扫码把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉等）。

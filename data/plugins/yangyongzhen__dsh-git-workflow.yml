@@ -1,0 +1,6 @@
+url: https://github.com/yangyongzhen/dsh-git-workflow
+name: yangyongzhen/dsh-git-workflow
+category: workflow
+description:
+  en: Conventional-commit enforcement, changelog generation, PR summaries and branch pushes through the plain git CLI.
+  zh: 规范提交（Conventional Commits）、自动 changelog、PR 描述生成与分支推送，纯 git CLI 实现。

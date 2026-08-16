@@ -1,0 +1,6 @@
+url: https://github.com/lire1131/dsh-undo-plugin
+name: lire1131/dsh-undo-plugin
+category: tools
+description:
+  en: 'Undo/redo & rollback system for DSH: every config change is auto-snapshotted; undo/redo/restore to any version from the WebUI or the offline CLI/GUI tools (works even when DSH fails to boot).'
+  zh: DSH 撤销/回退系统：配置变更自动存档，一键撤销/恢复/回退到任意版本，支持 WebUI 与离线 CLI/GUI 工具（DSH 启动失败也能救）。

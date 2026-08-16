@@ -1,0 +1,6 @@
+url: https://github.com/CAOGGL/dsh-ding
+name: CAOGGL/dsh-ding
+category: notify
+description:
+  en: 'Notifies you when a conversation finishes: plays a sound and shows a Windows notification when the agent goes idle (configurable sound file, volume, debounce/throttle).'
+  zh: 对话完成提醒：Agent 空闲（idle）时播放提示音并弹 Windows 原生通知，可配 ding.mp3、音量与防抖节流。

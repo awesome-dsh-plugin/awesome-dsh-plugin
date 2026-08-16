@@ -1,0 +1,6 @@
+url: https://github.com/ZhenHuangLab/dsh-sync
+name: ZhenHuangLab/dsh-sync
+category: workflow
+description:
+  en: Policy-driven Git sync for DSH settings and profile configuration, with secret-aware projections, conflict review, and per-line apply controls.
+  zh: 面向 DSH 设置与 Profile 配置的策略化 Git 同步，支持敏感信息隔离、冲突审阅与按行选择应用。

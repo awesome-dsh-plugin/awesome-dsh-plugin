@@ -1,0 +1,6 @@
+url: https://github.com/Edge-Echo/dsh-mcp-bridge
+name: Edge-Echo/dsh-mcp-bridge
+category: tools
+description:
+  en: 'Curated MCP server bundle: one install brings demo, memory, filesystem, GitHub, Playwright and remote HTTP MCP servers, plus a connectivity verifier tool and CI checks.'
+  zh: 精选 MCP 服务器全家桶：一键接入演示、记忆、文件系统、GitHub、Playwright、远程 HTTP 等服务器，自带连通性验证工具与 CI 检查。

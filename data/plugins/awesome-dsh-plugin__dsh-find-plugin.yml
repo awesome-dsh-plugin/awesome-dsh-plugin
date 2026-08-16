@@ -1,0 +1,6 @@
+url: https://github.com/awesome-dsh-plugin/dsh-find-plugin
+name: awesome-dsh-plugin/dsh-find-plugin
+category: tools
+description:
+  en: 'Find plugins without leaving the agent: search this curated registry by keyword or category, with ready-to-run install commands.'
+  zh: 会话内直接找插件：按关键词/分类搜索本精选 registry，返回描述与可直接执行的安装命令。

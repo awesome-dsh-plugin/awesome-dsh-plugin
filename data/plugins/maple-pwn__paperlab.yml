@@ -1,0 +1,6 @@
+url: https://github.com/maple-pwn/paperlab
+name: maple-pwn/paperlab
+category: workflow
+description:
+  en: 'Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and let a dsh agent revise the sources with compile checks and git history.'
+  zh: Overleaf 式 LaTeX 论文工作台：在渲染后的 PDF 上选中任意文字批注，由 dsh agent 改写源文件、编译验证并提交 git 修订。

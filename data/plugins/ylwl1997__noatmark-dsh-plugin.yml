@@ -1,0 +1,6 @@
+url: https://github.com/ylwl1997/noatmark-dsh-plugin
+name: ylwl1997/noatmark-dsh-plugin
+category: tools
+description:
+  en: 'Text hygiene as a dsh plugin: sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV formula injection.'
+  zh: 文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。

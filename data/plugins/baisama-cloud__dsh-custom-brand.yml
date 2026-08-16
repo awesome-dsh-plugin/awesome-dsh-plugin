@@ -1,0 +1,6 @@
+url: https://github.com/baisama-cloud/dsh-custom-brand
+name: baisama-cloud/dsh-custom-brand
+category: ui
+description:
+  en: 'Customizable brand area for the Web UI: replace the whale logo and DeepSeek wordmark with local images, and edit the HARNESS badge text (double-click to change, right-click to reset).'
+  zh: Web UI 品牌区自定义：鲸鱼 logo 与 DeepSeek 文字可换成本地图片，HARNESS 徽章文字可双击编辑（双击修改，右键恢复）。

@@ -1,0 +1,6 @@
+url: https://github.com/tancheng33/dsh-code-runtime-container
+name: tancheng33/dsh-code-runtime-container
+category: dev
+description:
+  en: 'Container-isolated backend for the `ctx.codeRuntime` seam: each Code Mode program runs in a fresh container with no network, a read-only rootfs, dropped capabilities, and kernel-enforced memory, CPU and pid ceilings.'
+  zh: '`ctx.codeRuntime` seam 的容器隔离后端：每个 Code Mode 程序跑在全新容器里，无网络、根文件系统只读、丢弃全部 capability，内存/CPU/进程数上限由内核强制。'

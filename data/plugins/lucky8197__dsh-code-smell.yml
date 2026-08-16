@@ -1,0 +1,6 @@
+url: https://github.com/lucky8197/dsh-code-smell
+name: lucky8197/dsh-code-smell
+category: dev
+description:
+  en: 'Code smell radar: statically scans TODO/FIXME debt, stub implementations, long lines, oversized files and duplicated blocks, with severity-sorted read-only fix suggestions.'
+  zh: 代码气味雷达：静态扫描 TODO/FIXME 债务、未实现桩、超长行、大文件与重复代码块，按严重度输出修复建议，全程只读。

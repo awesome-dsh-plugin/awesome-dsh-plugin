@@ -1,0 +1,6 @@
+url: https://github.com/hccccc01333/dsh-excel-chat
+name: hccccc01333/dsh-excel-chat
+category: tools
+description:
+  en: 'Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.'
+  zh: 在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。

@@ -1,0 +1,6 @@
+url: https://github.com/Starfie1d1272/dsh-github-skills
+name: Starfie1d1272/dsh-github-skills
+category: skill
+description:
+  en: Four GitHub workflow skills for PR triage, review feedback, GitHub Actions diagnosis, and safe draft-PR publishing, reusing existing DSH capabilities with gh/git fallbacks.
+  zh: 四个面向 GitHub 工程工作流的 DSH Skill：PR 分诊、review 反馈、GitHub Actions 诊断和安全的 draft PR 发布；优先复用现有 DSH 能力，必要时回退到 gh/git。

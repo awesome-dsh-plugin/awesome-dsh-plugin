@@ -1,0 +1,6 @@
+url: https://github.com/ishuowang/dsh-rolehub-bridge
+name: ishuowang/dsh-rolehub-bridge
+category: session
+description:
+  en: Discover and verify portable RoleHub roles, pin each exact bundle, then launch its prompt and bundled skills in an isolated, continuable DSH Session with Host-approved tool bindings and optional Agent Team Room attachment.
+  zh: 发现并校验可移植的 RoleHub 角色，固定其精确 bundle，再将提示词和随角色打包的 Skills 加载到独立、可续聊的 DSH Session，以 Host 批准的工具绑定限制能力，并可选接入 Agent Team Room。

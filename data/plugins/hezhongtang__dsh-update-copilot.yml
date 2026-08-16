@@ -1,0 +1,6 @@
+url: https://github.com/hezhongtang/dsh-update-copilot
+name: hezhongtang/dsh-update-copilot
+category: dev
+description:
+  en: 'Update copilot for DeepSeek Harness: one scan covers the dsh core, official bundles, and every profile plugin; explains what changed and how risky each update is, then updates only what you confirm.'
+  zh: DeepSeek Harness 的更新助手：一次扫描覆盖 dsh 本体、官方 bundle 和每个 profile 的插件，说清改了什么、风险多大，只更新你确认过的那些。

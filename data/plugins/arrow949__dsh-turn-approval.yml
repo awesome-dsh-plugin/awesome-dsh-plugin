@@ -1,0 +1,6 @@
+url: https://github.com/arrow949/dsh-turn-approval
+name: arrow949/dsh-turn-approval
+category: dev
+description:
+  en: 'Turn-scoped “Allow for this task” approvals: automatically allow matching `danger-full-access` escalations only for the current task, then expire.'
+  zh: DSH「允许本次任务」临时授权：仅在当前任务内自动放行同类 `danger-full-access` 请求，任务结束自动失效。

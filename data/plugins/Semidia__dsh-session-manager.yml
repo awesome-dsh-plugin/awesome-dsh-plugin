@@ -1,0 +1,6 @@
+url: https://github.com/Semidia/dsh-session-manager
+name: Semidia/dsh-session-manager
+category: ui
+description:
+  en: 'Right-click session menu and sidebar session manager: pin, rename, archive, fork, export, copy cwd/id/deep link, and open in explorer or a new window.'
+  zh: 会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。

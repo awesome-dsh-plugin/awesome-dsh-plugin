@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-subscribe/tree/main/plugin
+name: zoahdev/dsh-subscribe#plugin
+category: market
+description:
+  en: 'Steam-style plugin storefront: a plugin registry browsable inside DSH with one-click install, uninstall and update, plus a zero-dependency CLI and agent-callable market tools.'
+  zh: Steam 风格的插件商店：在 DSH 里浏览插件注册表，一键安装、卸载与更新，另有零依赖 CLI 与可供 agent 调用的市场工具。

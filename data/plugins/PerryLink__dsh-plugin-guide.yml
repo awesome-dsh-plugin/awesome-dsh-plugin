@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-plugin-guide
+name: PerryLink/dsh-plugin-guide
+category: skill
+description:
+  en: 'The DSH plugin-development knowledge base as an on-demand agent skill: official constraints, task workflows, API reference and community gotchas, installed with the bundle so the agent can look things up while building a plugin.'
+  zh: DSH 插件开发知识库，作为按需加载的 agent 技能随 bundle 安装：官方约束、任务工作流、API 参考与社区踩坑，写插件时让 DSH 自己查。

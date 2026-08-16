@@ -1,0 +1,6 @@
+url: https://github.com/johnnycls/dsh-no-setup-mode
+name: johnnycls/dsh-no-setup-mode
+category: ui
+description:
+  en: 'No-setup mode for the DSH web UI: hides advanced surfaces, auto-applies best defaults (chat mode, full access, account balance), and one-click role-play personas (maid/butler).'
+  zh: DSH 网页免设置模式：隐藏复杂界面、自动套用最佳设置（聊天模式、Full Access、账户余额），并提供一键人设角色扮演（女僕/管家）。

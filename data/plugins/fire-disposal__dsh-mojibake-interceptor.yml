@@ -1,0 +1,6 @@
+url: https://github.com/fire-disposal/dsh-mojibake-interceptor
+name: fire-disposal/dsh-mojibake-interceptor
+category: tools
+description:
+  en: 'Mojibake guard bundle for DSH: feature-based garbled-text detection before writes with review-then-release (an identical retry passes), plus pre-execution pwsh encoding audit (ANSI/GBK/UTF-16/Default), Windows and Chinese first.'
+  zh: DSH 乱码拦截器 bundle：写入前特征值/编码回环检测乱码并复查放行（原样重试即通过），pwsh 写入编码执行前审计（ANSI/GBK/UTF-16/默认编码），Windows 与中文场景优先。

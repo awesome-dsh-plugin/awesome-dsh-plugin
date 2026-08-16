@@ -1,0 +1,6 @@
+url: https://github.com/TonyDua/dsh-web-search-exa
+name: TonyDua/dsh-web-search-exa
+category: tools
+description:
+  en: 'Zero-config Exa web search provider for the ctx.web seam: anonymous MCP fallback without an API key, plus keyed REST search.'
+  zh: ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。

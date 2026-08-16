@@ -1,0 +1,6 @@
+url: https://github.com/lucky8197/dsh-git-hygiene
+name: lucky8197/dsh-git-hygiene
+category: dev
+description:
+  en: 'Git hygiene checker: read-only scan of merged and stale branches, oversized tracked files, untracked files and uncommitted work, with cleanup suggestions (it never deletes anything).'
+  zh: Git 卫生巡检：只读扫描已合并/过期分支、大文件、未跟踪文件与未提交修改，输出体检报告与清理建议，不自动删除任何东西。

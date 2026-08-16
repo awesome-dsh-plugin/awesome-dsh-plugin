@@ -1,0 +1,6 @@
+url: https://github.com/cdxiaodong/dsh-llm-inspector
+name: cdxiaodong/dsh-llm-inspector
+category: tools
+description:
+  en: 'Unified LLM request/response inspector: reasoning-effort tuning, external-think export, traffic & bundle analysis.'
+  zh: 统一 LLM 请求/响应检查器：调 reasoning effort、外部思考(think)导出、流量与包分析。

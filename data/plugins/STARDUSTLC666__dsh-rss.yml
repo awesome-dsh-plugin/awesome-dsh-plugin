@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-rss
+name: STARDUSTLC666/dsh-rss
+category: tools
+description:
+  en: RSS/Atom subscription management and parsing (rss_list/add/remove/fetch/check), persisted to settings.
+  zh: RSS/Atom 订阅管理 + 抓取解析（rss_list/add/remove/fetch/check），订阅持久化到 settings。

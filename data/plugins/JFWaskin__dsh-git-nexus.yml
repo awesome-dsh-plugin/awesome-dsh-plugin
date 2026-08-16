@@ -1,0 +1,6 @@
+url: https://github.com/JFWaskin/dsh-git-nexus
+name: JFWaskin/dsh-git-nexus
+category: dev
+description:
+  en: 'Git and GitHub panel for the DSH web profile: stage/unstage/discard/diff, branches, commit, push/pull/sync, log, file browser, workflow board, and GitHub OAuth with PR creation.'
+  zh: DSH Web 的 Git 与 GitHub 面板：暂存/撤销/丢弃/差异、分支、提交、推送/拉取/同步、日志、文件浏览、工作流看板，以及带 PR 创建的 GitHub OAuth。

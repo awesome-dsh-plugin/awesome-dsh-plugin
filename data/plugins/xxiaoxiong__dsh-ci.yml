@@ -1,0 +1,6 @@
+url: https://github.com/xxiaoxiong/dsh-ci
+name: xxiaoxiong/dsh-ci
+category: workflow
+description:
+  en: Provider-neutral CI/CD capability for DeepSeek Harness with GitHub Actions support, bounded failure evidence, source-aware diagnostics, and approval-gated rerun/cancel controls.
+  zh: 面向 DeepSeek Harness 的通用 CI/CD 能力，支持 GitHub Actions、有限失败证据提取、源码定位诊断，以及带审批控制的重跑与取消操作。

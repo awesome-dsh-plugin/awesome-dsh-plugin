@@ -1,0 +1,6 @@
+url: https://github.com/Jiao-XXX/dsh-auto-approve
+name: Jiao-XXX/dsh-auto-approve
+category: workflow
+description:
+  en: 'Adds an `auto` permission preset between workspace-write and danger-full-access: a classifier grants routine sandbox escalations once, while dangerous or uncertain requests still go to a human.'
+  zh: 在 workspace-write 与 danger-full-access 之间增加 `auto` 权限档：分类器一次性放行例行沙箱升级，危险或不确定的操作仍转人工审批。

@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-email
+name: STARDUSTLC666/dsh-email
+category: tools
+description:
+  en: IMAP/SMTP email tools (list/read/search/send/folders/attachment) with QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud presets, multi-account support and a send-approval gate.
+  zh: 邮件工具插件：IMAP/SMTP 收/发/搜/列文件夹/附件下载，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门。

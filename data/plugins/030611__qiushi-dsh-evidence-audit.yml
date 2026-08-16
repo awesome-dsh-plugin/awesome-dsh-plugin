@@ -1,0 +1,6 @@
+url: https://github.com/030611/qiushi-dsh-evidence-audit
+name: 030611/qiushi-dsh-evidence-audit
+category: dev
+description:
+  en: Appends local hash-chained JSONL receipts for tool results and session events without storing prompts, tool arguments, result text, or raw session IDs.
+  zh: 把工具结果与会话事件的 receipt 写入本地哈希链 JSONL，不保存提示词、工具参数、结果正文或原始会话 ID。

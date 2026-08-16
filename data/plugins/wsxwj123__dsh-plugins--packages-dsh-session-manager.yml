@@ -1,0 +1,6 @@
+url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager
+name: wsxwj123/dsh-plugins#dsh-session-manager
+category: session
+description:
+  en: Delete sessions with a 5-second undo and a recycle bin, plus an archive view to browse and unarchive, for the DSH Web GUI.
+  zh: 会话删除（5 秒可撤销 + 回收站）与归档视图（查看、取消归档）。

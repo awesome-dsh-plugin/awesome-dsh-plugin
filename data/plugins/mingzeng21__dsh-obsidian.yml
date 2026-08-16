@@ -1,0 +1,6 @@
+url: https://github.com/mingzeng21/dsh-obsidian
+name: mingzeng21/dsh-obsidian
+category: tools
+description:
+  en: 'Connect dsh to a local Obsidian vault: search, read, write, move, and trash notes through `obsidian_*` tools.'
+  zh: 把 dsh 连接到本地 Obsidian vault：通过 `obsidian_*` 工具搜索、读取、写入、移动与回收笔记。

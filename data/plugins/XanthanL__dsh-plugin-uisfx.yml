@@ -1,0 +1,6 @@
+url: https://github.com/XanthanL/dsh-plugin-uisfx
+name: XanthanL/dsh-plugin-uisfx
+category: ui
+description:
+  en: 'Semantic UI sound effects powered by uisfx: task start/success/failure and per-button cues, settings UI with instant preview, 12 sound packs, Host-persisted preferences, and `ctx.uisfx` service for other plugins.'
+  zh: 基于 uisfx 的语义化 UI 音效：任务开始/成功/失败、不同按钮情景 cue，设置页即时试听，12 种音色包，Host 持久化，并提供 `ctx.uisfx` 服务给其他插件。

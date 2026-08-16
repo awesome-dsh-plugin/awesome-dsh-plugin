@@ -1,0 +1,6 @@
+url: https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier
+name: PAKIKNOWLEDGE/dsh-auto-classifier
+category: dev
+description:
+  en: 'Autonomous permission classifier for the auto preset: tool-scoped allow/deny rules, an LLM semantic judge, and git checkpointing for unattended sessions.'
+  zh: auto（自主模式）权限分类器：工具作用域的放行/拒绝规则、LLM 语义裁判与 git 快照，面向无人值守会话。

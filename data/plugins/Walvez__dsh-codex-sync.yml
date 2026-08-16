@@ -1,0 +1,6 @@
+url: https://github.com/Walvez/dsh-codex-sync
+name: Walvez/dsh-codex-sync
+category: tools
+description:
+  en: 'One-stop bidirectional sync between OpenAI Codex and DeepSeek Harness: first-class skills from ~/.codex/skills, codex session import with workspace attach, live MCP auto-mirror of codex''s mcp_servers, and a Codex-side reverse MCP installer.'
+  zh: OpenAI Codex 与 DeepSeek Harness 一站式双向同步：一等公民技能、codex 会话导入与工作区挂载、codex mcp_servers 实时 MCP 自动镜像、Codex 侧反向 MCP 一键安装器。

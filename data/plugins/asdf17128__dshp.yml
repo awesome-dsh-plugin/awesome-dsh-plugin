@@ -1,0 +1,6 @@
+url: https://github.com/asdf17128/dshp
+name: asdf17128/dshp
+category: tools
+description:
+  en: Registers `list_profiles` and `export_profile`, so the agent can show what setups exist and hand back a whole profile — bundle order, plugin versions and patch — as one portable file to share. Read-only.
+  zh: 注册 `list_profiles` 与 `export_profile`：让 agent 列出本机有哪些配置，并把整套 profile（bundle 顺序、插件版本、patch）导出成一个可直接分享的文件。只读。

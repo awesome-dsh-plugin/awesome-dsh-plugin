@@ -39,6 +39,15 @@ jobs:
             echo "::error::This PR removes $removed existing entries — the fork looks stale. Sync it with upstream main (GitHub: 'Sync fork') and re-push; a single plugin submission should be +2/-0."
             exit 1
           fi
+      - name: READMEs match data/plugins
+        # The READMEs are generated from data/plugins/*.yml. Editing them by
+        # hand would drift from the source of truth and get silently reverted
+        # by the next contributor's regeneration.
+        run: |
+          if ! node scripts/generate-readme.mjs --check; then
+            echo "::error::The READMEs are generated from data/plugins/. Edit the YAML file, run 'node scripts/generate-readme.mjs', and commit both."
+            exit 1
+          fi
       - name: awesome-lint
         run: npx awesome-lint
       - name: Build (locale parity, date derivation, templates)

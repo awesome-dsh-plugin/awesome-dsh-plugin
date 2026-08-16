@@ -1,0 +1,6 @@
+url: https://github.com/a179-sanae/dsh-code-check
+name: a179-sanae/dsh-code-check
+category: dev
+description:
+  en: 'Automatic type-check diagnostics: after the model edits or creates TS files, runs `tsc --noEmit` in the background (debounced per project) and reports errors via the `code_check` tool — grouped by file with line/column, severity and TS error codes, closing the "edit → check → fix" loop.'
+  zh: 自动类型检查诊断：模型编辑/创建 TS 文件后后台防抖运行 `tsc --noEmit`，经 `code_check` 工具按文件分组汇报错误（行列号 + 严重级别 + TS 错误码），形成「改 → 查 → 修」闭环。

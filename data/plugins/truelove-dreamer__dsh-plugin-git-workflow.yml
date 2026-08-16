@@ -1,0 +1,6 @@
+url: https://github.com/truelove-dreamer/dsh-plugin-git-workflow
+name: truelove-dreamer/dsh-plugin-git-workflow
+category: tools
+description:
+  en: 'First-class Git tools for the model: status / diff / log / commit / branch with validated messages and paths - no bare-shell git calls.'
+  zh: 一等公民的 Git 工具：status / diff / log / commit / branch，参数与路径校验、零 shell 调用，杜绝注入。

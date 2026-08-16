@@ -1,0 +1,6 @@
+url: https://github.com/pany0593/dsh-ui-notifications
+name: pany0593/dsh-ui-notifications
+category: notify
+description:
+  en: 'OS-level system notifications for the dsh web GUI: popups when a turn finishes or the agent needs your approval, answer, or plan review while the page is in the background.'
+  zh: DSH Web 界面系统通知：回合结束或 agent 等待授权/回答/计划审核时，页面在后台也弹出系统级提醒。

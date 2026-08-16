@@ -1,0 +1,6 @@
+url: https://github.com/1123762794/dsh-web-restart
+name: 1123762794/dsh-web-restart
+category: ui
+description:
+  en: 'One-click restart button for the DSH Web UI: a sidebar footer button that restarts the dsh web process with a single click and persists across the restart it triggers.'
+  zh: DSH Web 界面一键重启按钮：侧边栏底部按钮，单击即重启 dsh web 进程，且重启后按钮常驻。

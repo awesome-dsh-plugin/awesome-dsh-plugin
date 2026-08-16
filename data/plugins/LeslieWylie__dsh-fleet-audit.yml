@@ -1,0 +1,6 @@
+url: https://github.com/LeslieWylie/dsh-fleet-audit
+name: LeslieWylie/dsh-fleet-audit
+category: tools
+description:
+  en: 'Read-only agent-fleet credential hygiene audit: credential-file permissions, embedded credentials in git remotes (masked in output), and provider token literal counts; zero-dependency and deterministic.'
+  zh: 只读的 agent 机群凭据卫生审计：检查凭据文件权限、git remote 内嵌凭据（输出脱敏）与 provider token 字面量计数；零依赖、确定性。

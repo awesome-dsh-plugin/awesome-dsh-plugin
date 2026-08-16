@@ -1,0 +1,6 @@
+url: https://github.com/badai147/dsh-global-rules
+name: badai147/dsh-global-rules
+category: ui
+description:
+  en: Edit the global ~/.dsh/AGENTS.md rules from the web settings panel, live on save.
+  zh: 在设置面板中编辑 ~/.dsh/AGENTS.md 全局规则，保存后实时生效。

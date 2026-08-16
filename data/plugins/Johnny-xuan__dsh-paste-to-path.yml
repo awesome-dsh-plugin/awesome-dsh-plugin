@@ -1,0 +1,6 @@
+url: https://github.com/Johnny-xuan/dsh-paste-to-path
+name: Johnny-xuan/dsh-paste-to-path
+category: tools
+description:
+  en: Adds a path-backed attachment dock for images, documents, archives, code, and other files, leaving file reading to the Agent's available tools.
+  zh: 为图片、文档、压缩包、代码及其他文件提供路径附件 Dock，文件读取交由 Agent 的当前可用工具完成。

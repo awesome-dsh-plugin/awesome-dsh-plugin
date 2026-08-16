@@ -1,0 +1,6 @@
+url: https://github.com/jiayan-xu/dsh-ocr-review
+name: jiayan-xu/dsh-ocr-review
+category: dev
+description:
+  en: 'Local AI code-review gate: review a workspace/branch/commit diff via the managed ocr.js, returning structured findings with token stats; gate mode fails on findings.'
+  zh: 本地 AI 代码评审门禁：对工作区/分支/commit diff 跑评审（托管 ocr.js），返回结构化 findings 与 token 统计；门禁模式发现问题即失败。

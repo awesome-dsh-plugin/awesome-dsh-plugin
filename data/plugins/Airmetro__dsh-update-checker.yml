@@ -1,0 +1,6 @@
+url: https://github.com/Airmetro/dsh-update-checker
+name: Airmetro/dsh-update-checker
+category: dev
+description:
+  en: Checks the latest DeepSeek Harness and third-party plugin versions from npm, shows a locale-aware banner in the GUI, and offers one-click update with a restart watchdog.
+  zh: 自动检查 DeepSeek Harness 与第三方插件在 npm 上的最新版本，GUI 顶部横幅跟随系统语言提示，支持一键更新并重启服务。

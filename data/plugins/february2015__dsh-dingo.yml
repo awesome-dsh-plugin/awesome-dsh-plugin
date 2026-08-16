@@ -1,0 +1,6 @@
+url: https://github.com/february2015/dsh-dingo
+name: february2015/dsh-dingo
+category: notify
+description:
+  en: 'Sound reminders with one-click jump for concurrent sessions: the current session gets crisp dang/dang-dang tones, other sessions a soft ding/ding-ding plus a top-right card that jumps straight to the replying conversation.'
+  zh: 多对话并行的声音提醒 + 对话直达：当前对话当/当当（crisp 清脆档），其他对话叮/叮叮（soft 柔和档）+ 右上角小卡片，点一下直达对应对话。

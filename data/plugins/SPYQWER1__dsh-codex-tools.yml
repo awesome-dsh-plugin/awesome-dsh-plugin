@@ -1,0 +1,6 @@
+url: https://github.com/SPYQWER1/dsh-codex-tools
+name: SPYQWER1/dsh-codex-tools
+category: tools
+description:
+  en: Codex-backed `web_search`, `image_gen`, and `image_vision` tools for DeepSeek Harness, reusing ChatGPT OAuth login state.
+  zh: 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。

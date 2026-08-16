@@ -1,0 +1,6 @@
+url: https://github.com/wuxiangru915/dsh-review-loop
+name: wuxiangru915/dsh-review-loop
+category: workflow
+description:
+  en: 'Incremental diff reviewer for DSH: after approving a batch, only new changes since the checkpoint are shown, with a Web review panel and `/review` command that inject feedback back to the agent.'
+  zh: 增量代码审查插件：批准一批改动后只审查检查点之后的新改动，提供 Web 审查面板与 `/review` 命令，并把审查意见注入回 agent。
