@@ -306,12 +306,17 @@
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
  ],
  "https://github.com/UndeadSheep/dsh-file-preview": [
- "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/github-social-preview.png",
- "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/btnPos.gif",
- "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/write.gif",
- "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/clickOpen.gif",
- "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/SearchBar.gif"
-],
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/github-social-preview.png",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/btnPos.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/write.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/clickOpen.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/SearchBar.gif"
+ ],
+ "https://github.com/WenhongPan/dsh-projects": [
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/picker.webp",
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/create.webp",
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/native.webp"
+ ],
  "https://github.com/YeqingTang/dsh-session-flow": [
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/overview.png",
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/session-flow-tab.png",
@@ -500,6 +505,10 @@
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/chat-demo.png",
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/plugin-list.png"
  ],
+ "https://github.com/kanchengw/dsh-mindseye": [
+  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_config.png",
+  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_dialog.png"
+ ],
  "https://github.com/kaziii/dsh-github-connector": [
   "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/pr-bar.png",
   "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/connect-github.png"
@@ -616,6 +625,10 @@
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-persistent-sandboxed.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-preset-picker.png"
  ],
+ "https://github.com/skyhancloud/dsh-client-ui-quote": [
+  "https://raw.githubusercontent.com/skyhancloud/dsh-client-ui-quote/main/assets/preview-1.png",
+  "https://raw.githubusercontent.com/skyhancloud/dsh-client-ui-quote/main/assets/preview-2.png"
+ ],
  "https://github.com/slywalker2006/dsh-passwords": [
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/white-login.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/black-login.png",
@@ -684,11 +697,6 @@
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/decay.png",
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
  ],
- "https://github.com/WenhongPan/dsh-projects": [
-  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/picker.webp",
-  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/create.webp",
-  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/native.webp"
- ],
  "https://github.com/wuxiangru915/dsh-review-loop": [
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.en.png",
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.zh.png"
@@ -751,9 +759,5 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
- ],
- "https://github.com/kanchengw/dsh-mindseye": [
-  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_config.png",
-  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_dialog.png"
  ]
 }
