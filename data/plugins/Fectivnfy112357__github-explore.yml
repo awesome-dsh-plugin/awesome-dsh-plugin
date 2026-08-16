@@ -1,0 +1,6 @@
+url: https://github.com/Fectivnfy112357/github-explore
+name: Fectivnfy112357/github-explore
+category: skill
+description:
+  en: 'GitHub search, discovery and audit scripts wrapped as a SKILL.md pack around the gh CLI: repo search, multi-axis explore, trending, repo summaries, similar projects, code search, issue/PR search and org audits; ships as a dsh bundle (and on npm).'
+  zh: '基于 gh CLI 的 GitHub 搜索/发现/审计技能包（SKILL.md 打包）：仓库搜索、多轴探索、趋势、仓库概览、相似项目、代码搜索、issue/PR 搜索与组织审计；以 dsh bundle 形式安装（并已发布 npm）。'
