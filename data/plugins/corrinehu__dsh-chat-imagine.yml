@@ -2,5 +2,5 @@ url: https://github.com/corrinehu/dsh-chat-imagine
 name: corrinehu/dsh-chat-imagine
 category: vision
 description:
-  en: Generates images in DeepSeek Harness through configured OpenAI-compatible image models or a local MiniMax CLI, and displays the result in chat.
-  zh: 通过已配置的 OpenAI 兼容生图模型或本机 MiniMax CLI，在 DeepSeek Harness 对话中生成并展示图片。
+  zh: 在 DSH 聊天窗口自动调用生图工具（API 渠道，或本机 CLI：已支持 mmx / codex / agy）并展示图片。
+  en: Automatically generates and displays images in the DSH chat via API channels or local CLIs (supports mmx / codex / agy).
