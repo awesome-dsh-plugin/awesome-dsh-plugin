@@ -266,5 +266,12 @@
  ],
  "https://github.com/a179-sanae/dsh-auto-collapse": [
   "https://raw.githubusercontent.com/a179-sanae/dsh-auto-collapse/main/assets/screenshot.png"
+ ],
+ "https://github.com/pengyue-polaron/deepseek-harness-genui": [
+  "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/code-path-canvas.png",
+  "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/code-path-inline.png",
+  "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/photosynthesis-explorer.png",
+  "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/calendar-planner.png",
+  "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/code-path-explorer.png"
  ]
 }
