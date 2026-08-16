@@ -575,6 +575,7 @@ dsh plugin --profile web add dshmarket
 - [Johnny-xuan/dsh-paste-to-path](https://github.com/Johnny-xuan/dsh-paste-to-path) — 为图片、文档、压缩包、代码及其他文件提供路径附件 Dock，文件读取交由 Agent 的当前可用工具完成。
 - [JohnXu22786/command-scout](https://github.com/JohnXu22786/command-scout) — 扫描项目已声明的构建命令——Makefile 目标、package.json 脚本、just 配方、deno 任务——并作为可直接调用的 agent 工具暴露给智能体。
 - [JohnXu22786/github-mcp](https://github.com/JohnXu22786/github-mcp) — GitHub 开发者工作台 MCP server（dsh bundle）：23 个 MCP 工具覆盖仓库、issue、PR、代码审查与搜索，零运行时依赖，支持 PAT 与 OAuth 双认证。
+- [JohnXu22786/pty-runner](https://github.com/JohnXu22786/pty-runner) — dsh 后台终端作业管理插件：在独立 PTY 会话中运行长时进程，写入普通文本与转义控制序列，分页读取环形缓冲输出，并支持优雅或强制终止作业。
 - [JohnXu22786/safety-net](https://github.com/JohnXu22786/safety-net) — dsh 破坏性命令拦截闸门：解析 shell 语义、依据 41 条内置规则判定风险，将 rm -rf、git reset --hard、git push --force 等不可逆命令挡在确认关卡之前。
 - [JohnXu22786/secret-guard](https://github.com/JohnXu22786/secret-guard) — 拦截 agent 对敏感文件（.env、凭据、密钥材料）的读写，对工具结果中泄露的机密形状内容做掩码兜底，记录审计日志，并提供永不输出原始值的 sg_* 安全检查工具。
 - [JohnXu22786/worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — 按任务隔离的 git worktree 工作区，覆盖创建/同步/收尾全生命周期：任务名自动派生分支、合并目标双重校验、内置批量清理——全程零手工 git 操作。
