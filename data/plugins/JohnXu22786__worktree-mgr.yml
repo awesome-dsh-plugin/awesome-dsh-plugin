@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/worktree-mgr
+name: JohnXu22786/worktree-mgr
+category: tools
+description:
+  en: "Per-task isolated git worktrees with a full create/sync/finish lifecycle: task names auto-derive branches, merge targets are double-checked, and batch cleanup is built in — zero manual git operations."
+  zh: "按任务隔离的 git worktree 工作区，覆盖创建/同步/收尾全生命周期：任务名自动派生分支、合并目标双重校验、内置批量清理——全程零手工 git 操作。"
