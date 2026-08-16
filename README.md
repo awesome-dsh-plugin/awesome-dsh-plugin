@@ -652,6 +652,7 @@ dsh plugin --profile web add dshmarket
 ### Skills
 
 - [mudden2380078550-creator/write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) - Chinese long-form screenwriting skill: two input blocks (background + character bible) feeding a causal-value engine, anti-AI-flavor review, and a continuity ledger; works on Codex / Claude Code / dsh / zcode.
+- [zjsthmjialin/inspiration-deck-workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop) - Registers the Inspiration Deck Workshop skill for DSH: local static HTML presentation decks (6 deck templates, 25+ layouts, 23 themes & motion showroom) with a validate + PNG/PDF export CLI and smoke tests, zero runtime dependencies.
 - [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) - Skill for packaging DeepSeek Harness into a Tauri 2 desktop app (macOS + Windows): dual-platform install playbook, China mirror bootstrap with a subagent timeout sentinel, admin-free Windows toolchain recipe (no VS Build Tools), and three-path acceptance checklists.
 - [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) - Official Remotion skill ported to DSH: programmatic video with React (animation/audio/captions/3D/charts/fonts, 38 rule files).
 - [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) - Five official HyperFrames by HeyGen skills: HTML video / CLI / registry / website-to-video / GSAP reference.
