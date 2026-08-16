@@ -356,5 +356,12 @@
  "https://github.com/TQSY114514/dsh-ui-appearance": [
   "https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/main/docs/screenshot-settings.png",
   "https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/main/docs/screenshot-wallpaper.png"
+ ],
+ "https://github.com/AcidGr/dsh-web-mobile-fix": [
+  "https://raw.githubusercontent.com/AcidGr/dsh-web-mobile-fix/main/assets/screenshot-1.jpg",
+  "https://raw.githubusercontent.com/AcidGr/dsh-web-mobile-fix/main/assets/screenshot-2.jpg"
+ ],
+ "https://github.com/AcidGr/dsh-web-lan-access": [
+  "https://raw.githubusercontent.com/AcidGr/dsh-web-lan-access/main/assets/screenshot-lan-access.jpg"
  ]
 }
