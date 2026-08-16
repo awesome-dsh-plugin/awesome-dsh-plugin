@@ -273,5 +273,11 @@
   "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/photosynthesis-explorer.png",
   "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/calendar-planner.png",
   "https://raw.githubusercontent.com/pengyue-polaron/deepseek-harness-genui/main/screenshots/en/code-path-explorer.png"
+ ],
+ "https://github.com/kaixinbaba/dsh-vision-recognizer": [
+  "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/vision-config.png",
+  "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/model-picker.png",
+  "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/chat-demo.png",
+  "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/plugin-list.png"
  ]
 }
