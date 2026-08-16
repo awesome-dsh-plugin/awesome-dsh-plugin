@@ -629,13 +629,13 @@ dsh plugin --profile web add dshmarket
 
 - [wqty123/dsh-browser](https://github.com/wqty123/dsh-browser) - Shared real browser for DSH: a native Electron window the human can watch and take over, driven by the agent over CDP with 20 browser_* tools (open/snapshot/execute/fill/screenshot/download/auth), per-task session isolation, cookie persistence, CAPTCHA detection; self-hosts on plain dsh web without a desktop shell.
 
+- [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) - Auto-supplement QMD semantic search when the model greps/globs a knowledge-base directory: zero-dependency DSH plugin, async injection via next-step, no manual invocation.
 ### Skills
 
 - [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) - Skill for packaging DeepSeek Harness into a Tauri 2 desktop app (macOS + Windows): dual-platform install playbook, China mirror bootstrap with a subagent timeout sentinel, admin-free Windows toolchain recipe (no VS Build Tools), and three-path acceptance checklists.
 - [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) - Official Remotion skill ported to DSH: programmatic video with React (animation/audio/captions/3D/charts/fonts, 38 rule files).
 - [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) - Five official HyperFrames by HeyGen skills: HTML video / CLI / registry / website-to-video / GSAP reference.
 - [YuanyuanMa03/cot-lint](https://github.com/YuanyuanMa03/cot-lint) - Chain-of-thought leakage linter: zero-dependency CLI that finds AI-session residue in docs and comments (dead design citations, PR vantage, change narration, review choreography), shipping the cot-trim fixing skill as the installable bundle.
-- [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) - Auto-supplement QMD semantic search when the model greps/globs a knowledge-base directory: zero-dependency DSH plugin, async injection via next-step, no manual invocation.
 - [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) - Complete reverse-skill pack (85 SKILL.md) as a DeepSeek Harness Cordis plugin: reverse engineering, authorized pentesting and security-research skill router.
 - [dhicoc/dsh-wuyun-liuqi](https://github.com/dhicoc/dsh-wuyun-liuqi) - Complete wuyun-liuqi (five-evolutions-six-qi / 五运六气) Traditional Chinese Medicine skill pack as a DeepSeek Harness Cordis plugin: annual and guest-qi calculation, clinical pattern differentiation, and pathogenesis reasoning.
 - [dhicoc/dsh-chinese-traditional-wisdom-skill](https://github.com/dhicoc/dsh-chinese-traditional-wisdom-skill) - Complete chinese-traditional-wisdom (玄枢 / XuanShu) skill pack as a DeepSeek Harness Cordis plugin: bazi, ziwei-doushu, liuyao, meihua, qimen, daliuren, taiyi, wuyun-liuqi, constitution and fengshui calculation, with a local deterministic engine and a visualization dashboard.
