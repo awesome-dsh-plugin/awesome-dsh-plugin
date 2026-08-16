@@ -131,6 +131,7 @@ dsh plugin --profile web add dshmarket
 - [MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider](https://github.com/MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider) — Claude 风格动画推理等级滑块与模型选择器，替换原生模型选择器。
 - [mengyun233/dsh-codex-pet](https://github.com/mengyun233/dsh-codex-pet) — 把 Codex 桌宠皮肤自动迁移到 DSH：右下角动画桌宠随 agent 状态实时变化（思考/工具/等待批准/出错/完成），多会话毛玻璃对话框 + 完整设置面板。
 - [Meredith2328/dsh-sticky-note](https://github.com/Meredith2328/dsh-sticky-note) — 编辑框工具栏便签，随手记点子和 TODO，自动保存为 Markdown，一键发送到对话。
+- [mervyn-teo/dsh-plugin-collapsible-steps](https://github.com/mervyn-teo/dsh-plugin-collapsible-steps) — 把消息之间连续的工具调用与思考步骤折叠成单个可展开的括号条目。
 - [mexiaosqwq/dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) — DSH Web UI 移动端适配：窄屏下侧边栏变为贴合内容的 overlay 抽屉、会话独占全宽，设置面板改为近全宽 sheet。
 - [miisaka19800/dsh-restart-fab](https://github.com/miisaka19800/dsh-restart-fab) — DSH 网页界面右下角的一键重启按钮：全屏遮罩原地重启 dsh 进程并自动刷新页面；无需启动脚本，跨 Windows/macOS/Linux。
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) — Codex 风格的工具调用折叠，将多个工具调用折叠到一行内。
