@@ -461,5 +461,12 @@
  ],
  "https://github.com/pengpengyi92/dsh-quant": [
   "https://raw.githubusercontent.com/pengpengyi92/dsh-quant/master/demos/ui-demo-preview.png"
+ ],
+ "https://github.com/jiezeng2004-design/dsh-chatgpt-bridge": [
+  "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/01-human-in-the-loop.png",
+  "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/02-runtime-goal-update.png",
+  "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/03-native-dsh-execution.png",
+  "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/04-workspace-security.png",
+  "https://raw.githubusercontent.com/jiezeng2004-design/dsh-chatgpt-bridge/main/assets/screenshots/05-bridge-health.png"
  ]
 }
