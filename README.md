@@ -42,6 +42,7 @@ dsh plugin --profile web add dshmarket
 ## Plugins
 
 ### UI Enhancements
+
 - [Limitinfinitude/DSH-Right-Sidebar](https://github.com/Limitinfinitude/DSH-Right-Sidebar) - DSH Web right-side output dock that collects session artifacts, previews user-facing files, and preserves tab state per session.
 - [No-PRM/dsh-explorer](https://github.com/No-PRM/dsh-explorer) - Git-first file-tree sidebar for the DSH web GUI: VS Code-style indent guides, M/A/U/D/R git decorations, HEAD-vs-worktree diff preview, media preview, and drag-to-reference (files/folders/selected code with line numbers) — pure plugin.
 - [xiaweiliang060035/dsh-opencode-go-usage](https://github.com/xiaweiliang060035/dsh-opencode-go-usage) - Floating widget showing real-time OpenCode Go subscription usage (rolling/weekly/monthly) for every API key, with rate-limit alerts and automatic key-pool discovery.
@@ -245,9 +246,11 @@ dsh plugin --profile web add dshmarket
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) - Runs open-mcp-apps inside DSH: every MCP app gets its own sidebar container with a separate workspace, session, and App mode, an agent status strip under the app, and inline app rendering in ordinary chats.
 - [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) - Shows the current conversation's working directory in a draggable directory panel with adjustable opacity.
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) - Live subagent run monitor for the Web UI: a sidebar footer trigger plus a fixed top-right card panel showing each subagent of the current session in real time (running/elapsed, terminal outcomes, tree indent), with one-click jump into the child conversation and a return button, refresh-surviving and mobile-hidden by default.
+- [johnnycls/dsh-no-setup-mode](https://github.com/johnnycls/dsh-no-setup-mode) - No-setup mode for the DSH web UI: hides advanced surfaces, auto-applies best defaults (chat mode, full access, account balance), and one-click role-play personas (maid/butler).
 
 ### Themes & Appearance
 
+- [Ultronen/dsh-liquid-glass](https://github.com/Ultronen/dsh-liquid-glass) - One toggle makes the whole DeepSeek Harness shell translucent, with an opacity slider and a custom full-page background.
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) - Wallpaper skin for the DSH Web UI: presets, image URL or upload, and an opacity slider that fades the interface to reveal the wallpaper.
 - [RizenHNT/dsh-skin-digital-arcade](https://github.com/RizenHNT/dsh-skin-digital-arcade) - Digital arcade HUD skin: neon cyan/violet/magenta palette, Ark Pixel fonts, animated sprites (city backdrop, data core, mascot), custom crosshair cursor; light and dark themes follow the system.
 
@@ -287,6 +290,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-whale-background](https://github.com/tuogusa/dsh-whale-background) - Whale-girl wallpaper background with a frosted semi-transparent app surface for the Web UI.
 
 ### Models & Providers
+
 - [WNJXYK/dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth) - Use a ChatGPT/Codex subscription in DeepSeek Harness with GPT models, image generation, web search, subscription quota reporting, model and feature controls, and browser or device-code OAuth sign-in.
 - [r600a-code/dsh-swarm-router](https://github.com/r600a-code/dsh-swarm-router) - Sub-agent matrix swarm that routes heterogeneous tasks to the most suitable model from an OpenRouter-like gateway plus cfgpu.com/llm/square, dispatches each via in-process subagents or direct LLM calls, and tracks per-model token consumption with a feedback-driven ranking.
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
@@ -386,6 +390,7 @@ dsh plugin --profile web add dshmarket
 - [p2coder/dsh-task-control](https://github.com/p2coder/dsh-task-control) - Pause / resume / cancel the in-flight conversation task from the composer area: forced pause interrupts immediately and remembers the interrupted tool, safe pause lands after the tool or reasoning finishes, resume asks for confirmation, and the default pause granularity is configurable in the settings.
 
 ### Memory
+
 - [madage/dsh-self-improved](https://github.com/madage/dsh-self-improved) - Long-term memory & self-evolving plugin for DSH: L0 capture → L1 memory extraction → L2 scene grouping → L3 user persona, auto recall injection, skill synthesis, fully local (SQLite FTS5 + jieba, optional vector recall).
 
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) - Model-authored context pruning for DeepSeek Harness through the official compaction API.
@@ -435,6 +440,7 @@ dsh plugin --profile web add dshmarket
 - [scd13150/dsh-cognition](https://github.com/scd13150/dsh-cognition) - Project memory for coding agents on DeepSeek Harness: similar past edits surface as precedents, out-of-scope edits are blocked, and cognition persists across sessions (47 upstream-verified fixes, gold-free 20-task run).
 
 ### Tools & Capabilities
+
 - [988hj7tczd-oss/dsh-computer-use](https://github.com/988hj7tczd-oss/dsh-computer-use) - Cross-platform Computer Use for DeepSeek Harness: virtual-mouse human-like operation (screen_observe + computer_click + type + key + scroll + drag, 11 tools), AX-tree zero-vision-cost mode with free GLM-4V-Flash vision fallback, safety guards (snapshot TTL / app whitelist / dangerous-action approval / password-box protection).
 - [Asher-2000/dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) - Expert-mode agent preset for DeepSeek Harness: a chief coordinator plus 11 domain-expert subagents (data analyst, copywriter, legal review, product manager, frontend, UI/UX, architect, social media ops, growth hacker, quant finance, finance) with automatic task delegation.
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) - Connects DSH to the local Beav desktop app for durable social-media content, knowledge, image, audio, and video tasks, with approval and artifact tracking.
@@ -617,6 +623,7 @@ dsh plugin --profile web add dshmarket
 - [kexuejin/dsh-zhihu-dashboard](https://github.com/kexuejin/dsh-zhihu-dashboard) - Zhihu (知乎) dashboard: hot list with trend arrows, follow feed (favorites/creations/followees), post tracking (question/keyword/person) with auto-briefs, and five agent tools (zhihu_search/hot/answer/global_search/followees).
 
 - [wqty123/dsh-browser](https://github.com/wqty123/dsh-browser) - Shared real browser for DSH: a native Electron window the human can watch and take over, driven by the agent over CDP with 20 browser_* tools (open/snapshot/execute/fill/screenshot/download/auth), per-task session isolation, cookie persistence, CAPTCHA detection; self-hosts on plain dsh web without a desktop shell.
+
 ### Skills
 
 - [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) - Skill for packaging DeepSeek Harness into a Tauri 2 desktop app (macOS + Windows): dual-platform install playbook, China mirror bootstrap with a subagent timeout sentinel, admin-free Windows toolchain recipe (no VS Build Tools), and three-path acceptance checklists.
@@ -649,7 +656,9 @@ dsh plugin --profile web add dshmarket
 - [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) - Four GitHub workflow skills for PR triage, review feedback, GitHub Actions diagnosis, and safe draft-PR publishing, reusing existing DSH capabilities with gh/git fallbacks.
 - [xiongjiamu/dsh-atomgit](https://github.com/xiongjiamu/dsh-atomgit) - AtomGit plugin bundle for DeepSeek Harness: six built-in AtomGit skills (plan issues, implement issues, review PRs, merge PRs, publish CLI releases, mirror to GitHub) plus ag CLI integration and platform-hosted MCP tools for repos, branches, issues, PRs, and search.
 - [Vladimir-Human/humanizer-ru#dsh](https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh) - Cleans AI traces from Russian text: finds chatbot copy-paste artefacts (ChatGPT, Gemini, Grok, Perplexity, DeepSeek) and rewrites the text into natural prose on request; 39 regex markers with an evidence registry, offline, text-only bundle.
+
 ### Workflow & Automation
+
 - [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) - Overleaf-style LaTeX paper workbench: annotate any text in the rendered PDF and let a dsh agent revise the sources with compile checks and git history.
 - [ZhenHuangLab/dsh-sync](https://github.com/ZhenHuangLab/dsh-sync) - Policy-driven Git sync for DSH settings and profile configuration, with secret-aware projections, conflict review, and per-line apply controls.
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) - Installs two selectable Agent Presets: a shell-restricted general-purpose agent and a repository-focused coding agent.
@@ -712,6 +721,7 @@ dsh plugin --profile web add dshmarket
 - [PandaPolo/dsh-voice-call](https://github.com/PandaPolo/dsh-voice-call) - Agent-initiated voice calls: `offer_call` rings the human (接听/拒接/稍后再说); accepted calls synthesize and play locally via CrispASR + Qwen3-TTS (9 speakers, 2 Chinese dialects), rejected calls return the decision to the agent.
 - [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) - Two-way Slack messaging (notify/channels/inbox/reply) over Socket Mode, no public callback needed.
 - [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) - DingTalk group-robot notifications (webhook + HMAC signing, zero runtime dependencies).
+- [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) - DingTalk IM channel via Stream-mode WebSocket: each chat drives its own tooled agent; replies stream back as messages, no public callback URL needed.
 - [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) - Rings your phone over CallKit: `call_me` and `text_me` tools, plus optional turn-end and approval calls whose spoken answer is transcribed back into the session.
 - [omdsh-dev/dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) - Open DSH workspace directories in VS Code directly from the web GUI.
 - [ChuanTianML/dsh-open-with](https://github.com/ChuanTianML/dsh-open-with) - Open registered workspaces from the Web UI in a detected or configured local editor, terminal, or file manager, with a remembered per-browser preference.
@@ -767,6 +777,7 @@ dsh plugin --profile web add dshmarket
 - [cdxiaodong/dsh-island](https://github.com/cdxiaodong/dsh-island) - Bridge DSH agent sessions, tool calls, and approvals to the CodeIsland macOS notch panel over a Unix socket, with in-panel allow/deny.
 
 ### Development & Runtime
+
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) - REST + SSE gateway exposing running Harness sessions to third-party clients: API-key auth, token streaming, workspace grouping, and adopting GUI sessions to keep chatting.
 - [534119219/chicheng-gate](https://github.com/534119219/chicheng-gate) - LAN / remote-access control, frpc NAT tunneling, a panel password gate, and mobile UI adaptation for the DSH Web GUI.
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) - Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.
@@ -896,7 +907,6 @@ dsh plugin --profile web add dshmarket
 
 - [tuogusa/dsh-plugin-toggle](https://github.com/tuogusa/dsh-plugin-toggle) - Toggle or delete plugins from the Web settings panel, with runtime enable and disable persisted to the profile.
 - [kimiya1010/dsh-plugin-market](https://github.com/kimiya1010/dsh-plugin-market) - A plugin market for DeepSeek Harness: search and one-click install GitHub dsh-plugin plugins straight from the web GUI.
-
 
 - [kinmat-A/dsh-theme-switch](https://github.com/kinmat-A/dsh-theme-switch) - One-click skin switching for DSH Web settings: auto-detects installed themes, keeps exactly one active at a time, and falls back to the official look when all are off. Changes apply instantly and survive restarts.
 
