@@ -430,5 +430,12 @@
   "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/hot.png",
   "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/help.png",
   "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/mini.png"
+ ],
+ "https://github.com/jitengfei/dsh-whale-arcade": [
+  "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/01-catalog.png",
+  "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/02-whale-jump.png",
+  "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/03-blue-whale-treasure.png",
+  "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/04-coast-runner.png",
+  "https://raw.githubusercontent.com/jitengfei/dsh-whale-arcade/main/assets/screenshots/05-ocean-gomoku.png"
  ]
 }
