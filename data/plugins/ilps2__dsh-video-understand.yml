@@ -1,0 +1,6 @@
+url: https://github.com/ilps2/dsh-video-understand
+name: ilps2/dsh-video-understand
+category: tools
+description:
+  en: 'Low-cost video understanding tool: a video_understand tool turns a Bilibili link / BV / local video into an AVIS info layer (ASR + scene structure + object tracks + YOLO labels, ~1k tokens) and returns summary + Q&A. Token compression 99.95%+ vs frame sampling, ~0.006 CNY/video, repeat understanding hits prompt cache (~1/20 cost).'
+  zh: '低成本视频理解工具：video_understand 把 B站链接/BV号/本地视频转成 AVIS 信息层（ASR+场景结构+对象轨迹+YOLO 标签，约 1k token）并输出摘要+问答。token 压缩 99.95%+，单视频约 0.006 元，重复理解命中 prompt 缓存（约 1/20 成本）。'
