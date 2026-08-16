@@ -234,6 +234,7 @@ dsh plugin --profile web add dshmarket
 - [xiaoshihou514/dsh-tui](https://github.com/xiaoshihou514/dsh-tui) — 干净简单的终端交互式界面。
 - [xiaweiliang060035/dsh-opencode-go-usage](https://github.com/xiaweiliang060035/dsh-opencode-go-usage) — 悬浮组件实时显示 OpenCode Go 各 key 用量（滚动/每周/每月），限流预警，自动发现 key 池。
 - [XiLuovo/dsh-session-timeline](https://github.com/XiLuovo/dsh-session-timeline) — 会话左侧的短横线时间轴：整个会话的用户消息一览、当前消息定位、悬停预览消息与回复、点击跳转，可收起展开。
+- [xxvk/dsh-cost-crystal](https://github.com/xxvk/dsh-cost-crystal) — Web UI 成本水晶球:余额卡片、实时 tok/s 速率、波峰/低峰计费倒计时、近 24h 消耗,以及 🔮 下一条消息消耗预测,全部时区感知。
 - [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) — 多供应商用量看板：按供应商/模型统计 Token 与日期下钻，统一展示账户余额，并追踪 OpenCode Go / Z.ai 订阅额度。
 - [YEYEYEYESHIFU/dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) — Web 对话「只看结果」开关：隐藏思考与工具调用过程，运行中仅保留一条实时状态行，reduced-motion 环境下恢复活动光影，中英双语。
 - [YEYEYEYESHIFU/dsh-session-hotkeys](https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys) — Web UI 会话快捷键：Alt+1-9 顺序切换、固定槽位三态、侧边栏高亮导航模式、新建/重命名/归档会话快捷键，以及支持方向键导航的可改键面板。
