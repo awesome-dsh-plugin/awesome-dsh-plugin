@@ -72,12 +72,16 @@ jobs:
           BASE='${{ steps.pr.outputs.base_sha }}'
           git cat-file -e "$BASE^{commit}" || git fetch -q origin "$BASE"
 
-          # Entry files this PR adds or modifies. The diff goes to a file
-          # first so a git failure fails the step instead of silently reading
-          # as "no changes" and reporting success on an unchecked PR.
-          # -z handles paths with spaces; --diff-filter=d ignores deletions.
+          # Entry files this PR ADDS — only new submissions face the gate.
+          # Modifying an already-listed entry (recategorize, reword) must not
+          # re-litigate repo age or commit count: those entries were accepted
+          # under the rules in force at the time, and the weekly decay scan is
+          # what watches listed entries for regressions. The diff goes to a
+          # file first so a git failure fails the step instead of silently
+          # reading as "no changes" and reporting success on an unchecked PR.
+          # -z handles paths with spaces.
           mkdir -p /tmp/prdata
-          git diff -z --name-only --diff-filter=d "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
+          git diff -z --name-only --diff-filter=A "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
           FILES=()
           while IFS= read -r -d '' f; do FILES+=("$f"); done < /tmp/prdata/diff.z
           printf 'changed entry files: %s\n' "${#FILES[@]}"

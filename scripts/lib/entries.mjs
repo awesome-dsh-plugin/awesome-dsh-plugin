@@ -13,18 +13,20 @@ export const PLUGINS_DIR = 'data/plugins'
 // chips and the sitemap. Kept in sync with CAT_IDS in build-site.mjs and the
 // two `categories` blocks in site/locales.mjs (reorder-categories.py rewrites
 // build-site.mjs by regex, so that array must stay on one line).
-export const CAT_IDS = ['ui', 'theme', 'model', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
+export const CAT_IDS = ['ui', 'usage', 'theme', 'model', 'session', 'memory', 'tools', 'vision', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
 
 // The emoji prefixes live only in README.zh.md — site/locales.mjs stores the
 // bare names because build-site matches headings by substring. A generator has
 // to carry them, or regenerating would silently strip every Chinese heading.
 export const ZH_EMOJI = {
   ui: '🎨',
+  usage: '💰',
   theme: '🎭',
   model: '🔌',
   session: '💬',
   memory: '🧠',
   tools: '🛠️',
+  vision: '🖼️',
   skill: '🧩',
   workflow: '🔁',
   notify: '🔔',
