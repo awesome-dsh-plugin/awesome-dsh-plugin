@@ -559,6 +559,7 @@ dsh plugin --profile web add dshmarket
 
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) — 任务完成或需要确认/输入时发送操作系统原生通知：Windows toast、macOS osascript、Linux notify-send。
 ### 🧑‍💻 开发与运行时
+- [zoahdev/dsh-poison-guard](https://github.com/zoahdev/dsh-poison-guard) — 安装前供应链投毒扫描：AST（JS-X-Ray）+ 去混淆解码 + 正则启发式；发现即非零退出，可作 CI 门禁。
 
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) — 插件安装前静态安全审计：生命周期脚本、动态执行、凭据外传组合特征与 patch 层风险；零依赖，tar 包全程内存解析不落盘。
 - [BotonJ/dsh-windtunnel](https://github.com/BotonJ/dsh-windtunnel) — 插件作者的契约回归风洞：剧本适配器在隔离子进程中驱动真实管线，会话事件断言覆盖加载/契约/行为/故障四层；零 API key，可进 CI。

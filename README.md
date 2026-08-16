@@ -559,6 +559,7 @@ dsh plugin --profile web add dshmarket
 
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) - System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.
 ### Development & Runtime
+- [zoahdev/dsh-poison-guard](https://github.com/zoahdev/dsh-poison-guard) - Pre-install supply-chain poison scanner: AST (JS-X-Ray) + deobfuscation decoder + regex heuristics; exits non-zero on findings for CI gating.
 
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) - Static pre-install security auditor for plugin bundles: lifecycle scripts, dynamic execution, credential-exfiltration combos, and patch-layer hazards, with zero dependencies and in-memory tar parsing.
 - [BotonJ/dsh-windtunnel](https://github.com/BotonJ/dsh-windtunnel) - Contract regression harness for plugin authors: a scripted LLM adapter drives the real pipeline in isolated child processes with session-event assertions (load/contract/behavior/fault layers); zero API key, CI-ready.
