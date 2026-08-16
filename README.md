@@ -743,6 +743,7 @@ dsh plugin --profile web add dshmarket
 
 ### Skills
 
+- [AKS1st/dsh-skill-manager](https://github.com/AKS1st/dsh-skill-manager) - Skill Manager page in the DSH settings panel: browse system / user / workspace / preset skills, expand a skill to its file tree, view and edit files, import skills from a zip, and export or delete them (system skills read-only).
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) - Hook DeepSeek Harness into a Hermes pipeline: dispatch-spec template, model-tier routing, orchestrator-run quality gates, git single-writer rule, as a SKILL.md pack (bundle installable).
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) - Barrage-meme skill distilled from 22,771 real messages in the 6657 live room: wanjiqi-style banter, CS and DOTA cross-memes, player roasting and casting commentary.
 - [creght-dev/skills](https://github.com/creght-dev/skills) - Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.

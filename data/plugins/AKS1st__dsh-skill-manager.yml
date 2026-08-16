@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dsh-skill-manager
+name: AKS1st/dsh-skill-manager
+category: skill
+description:
+  en: 'Skill Manager page in the DSH settings panel: browse system / user / workspace / preset skills, expand a skill to its file tree, view and edit files, import skills from a zip, and export or delete them (system skills read-only).'
+  zh: DSH 设置面板内的「技能管理」页面：按系统 / 用户 / 工作区 / 预设浏览技能，展开技能查看文件树、查看和编辑文件，支持从 zip 导入技能，以及导出、删除（系统技能只读）。
