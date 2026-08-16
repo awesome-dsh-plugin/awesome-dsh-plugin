@@ -118,5 +118,10 @@
   "https://raw.githubusercontent.com/iamfromchangsha/dsh-go-balance/main/docs/screenshot-composer.png",
   "https://raw.githubusercontent.com/iamfromchangsha/dsh-go-balance/main/docs/screenshot-tooltip.png",
   "https://raw.githubusercontent.com/iamfromchangsha/dsh-go-balance/main/docs/screenshot-warn.png"
+ ],
+ "https://github.com/zljr/dsh-share": [
+  "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
+  "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
+  "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
  ]
 }
