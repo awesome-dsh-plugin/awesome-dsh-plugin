@@ -701,6 +701,7 @@ dsh plugin --profile web add dshmarket
 - [pc439527/dsh-notify-bark](https://github.com/pc439527/dsh-notify-bark) - Bark push notifications to iPhone: turn completion, waiting-for-input, and approval events sent from the DSH Host.
 - [ly6170/dsh-messager](https://github.com/ly6170/dsh-messager) - Monitors session state in the DSH web app and sends desktop, browser, and third-party notifications for interactions, completions, and errors.
 - [pany0593/dsh-ui-notifications](https://github.com/pany0593/dsh-ui-notifications) - OS-level system notifications for the dsh web GUI: popups when a turn finishes or the agent needs your approval, answer, or plan review while the page is in the background.
+- [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) - Native Windows system notification (Notification Center toast) when a task completes: goal completion or agent turn end.
 
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) - Notifies you when a conversation finishes: plays a sound and shows a Windows notification when the agent goes idle (configurable sound file, volume, debounce/throttle).
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) - Per-workspace completion ringtones plus attention sounds for approval, question, plan-review, goal-blocked, and task-failure events, with built-in synth, voice (TTS), and custom audio.
