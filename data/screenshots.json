@@ -172,5 +172,9 @@
  "https://github.com/Mars-Sea/dsh-commandcode-provider": [
   "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/main/assets/screenshots/model-picker.png",
   "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/main/assets/screenshots/usage-dashboard.png"
+ ],
+ "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet": [
+  "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/assets/screenshots/dsh-pet-running-1.png",
+  "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/assets/screenshots/dsh-pet-running-2.png"
  ]
 }
