@@ -78,7 +78,15 @@ function parsedUrls(loc) {
   return urls
 }
 
-const entries = readEntries()
+let entries
+try {
+  entries = readEntries()
+} catch (e) {
+  // A parse failure is a contributor's typo, not a crash — print it as a
+  // reviewable message instead of a stack trace.
+  console.error(e.message)
+  process.exit(1)
+}
 const problems = validateEntries(entries)
 if (problems.length) {
   for (const p of problems) console.error(`  ${p}`)

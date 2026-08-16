@@ -24,6 +24,18 @@ npm ci
 node scripts/generate-readme.mjs
 ```
 
+⚠️ **A description containing `: ` must be quoted** — otherwise YAML reads it as a nested key. / **描述中含 `: `（冒号加空格）时必须加引号**，否则 YAML 会把它当成嵌套键：
+
+```yaml
+description:
+  en: 'Vision toolkit: OCR, grounding and pixel diff.'   # ✅ quoted / 加引号
+  zh: '识图工具包：OCR、定位与像素比对。'                    # 中文全角冒号无此问题，加引号也无妨
+```
+
+```yaml
+  en: Vision toolkit: OCR, grounding and pixel diff.     # ❌ breaks the parser / 解析失败
+```
+
 **Why one file per plugin / 为什么一个插件一个文件：** everyone used to append to the same spot in the same README section, so merging one PR broke the next. Separate files never collide. / 以前所有人都往同一分类的同一位置追加，合并一个 PR 就会撞掉下一个。独立文件永不冲突。
 
 Valid `category` values / 可用的 `category` 取值：
