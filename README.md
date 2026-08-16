@@ -328,6 +328,7 @@ dsh plugin --profile web add dshmarket
 - [ChuanTianML/dsh-local-share](https://github.com/ChuanTianML/dsh-local-share) - Export complete Web Sessions to local Markdown or self-contained HTML, with stable rendered previews, default redaction, and opt-in bounded tool-call details.
 - [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) - Branch-based message editing, reroll, retry, and a version timeline.
 - [Buyi-wsgzg/dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) - `/side` persistent side sessions and `/btw` one-shot side questions, run in a temporary fork without touching main history.
+- [brunhildzhou/dsh-all-warmup](https://github.com/brunhildzhou/dsh-all-warmup) - Global frictionless warm-up layer: every session's first request (subagent depths and post-compaction included) is narrowed to the minimal tool pair with one injected warmup reply; the full original mode returns from round two.
 - [bill9109/dsh-conversation-share](https://github.com/bill9109/dsh-conversation-share) - Share any excerpt of a conversation.
 - [yuezengwu/dsh-explain](https://github.com/yuezengwu/dsh-explain) - Local-first learning mode: cross-session learning threads with per-source explanations.
 - [Moeblack/dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) - Edit user and built-in system-prompt sections with live preview.
