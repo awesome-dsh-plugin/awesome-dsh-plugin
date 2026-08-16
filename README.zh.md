@@ -299,6 +299,7 @@ dsh plugin --profile web add dshmarket
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) — DSH Web 壁纸皮肤：预设 / 图片 URL / 本地上传，透明度滑块让整面界面透出壁纸。
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) — Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。
+- [leavestring/awesome-dsh-background-plugin](https://github.com/leavestring/awesome-dsh-background-plugin) — 为 DSH Web 设置背景：上传本地图片或选择预设氛围，实时预览且设置持久化。
 - [LeemanCheung/dsh-qq2007-skin](https://github.com/LeemanCheung/dsh-qq2007-skin) — DSH Web GUI 的 QQ 2007 风格皮肤：72 个原生主题 token、作用域三栏窗框、原创离线素材与像素伙伴、可选合成发送提示音、响应式/无障碍回退和可恢复设置开关。
 - [Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — DSH Web 轻拟物主题：提供浅色与深色配色、环境光影、材质阴影、纹理、磨砂玻璃表面与微交互。
 - [MangMax/dsh-themes](https://github.com/MangMax/dsh-themes) — DSH Web UI 外观与主题插件：内置调色板、明 / 暗 / 跟随系统外观模式、Open VSX 主题搜索导入与 VS Code 主题导入，主题库持久化。
