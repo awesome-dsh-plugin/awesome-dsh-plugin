@@ -522,6 +522,7 @@ dsh plugin --profile web add dshmarket
 - [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) — codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。
 - [jiayan-xu/dsh-nuphus-mcp](https://github.com/jiayan-xu/dsh-nuphus-mcp) — 桌面 + 浏览器自动化桥（36 个工具）：窗口/屏幕/鼠标/键盘控制配 PaddleOCR 元素感知，Chrome CDP 浏览配无障碍快照。
 - [jihongboo/dsh-apple-mode](https://github.com/jihongboo/dsh-apple-mode) — DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。
+- [jing-hy/picturereader](https://github.com/jing-hy/picturereader) — 给纯文本模型的"读图"能力：图片降分辨率+降色深+结构/色彩指纹渲染成文本网格喂回对话，模型像多模态一样自主缩放、取样、OCR 读图；纯本地零外部模型依赖，附读图方法论 skill 与可选 PaddleOCR。
 - [jinguanghai/deepseek-harness-forge-plugins#forge-gates](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates) — 真实计算验证门：数学化简、逻辑证明、正则校验、E-prover 一阶逻辑、状态机检查与代码修复，由 Go 编译的二进制支撑（附 Windows 预编译产物）。
 - [jinguanghai/deepseek-harness-forge-plugins#forge-tcm](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm) — 中医工具集：八纲辨证与药对查询。
 - [Johnny-xuan/dsh-paste-to-path](https://github.com/Johnny-xuan/dsh-paste-to-path) — 为图片、文档、压缩包、代码及其他文件提供路径附件 Dock，文件读取交由 Agent 的当前可用工具完成。
