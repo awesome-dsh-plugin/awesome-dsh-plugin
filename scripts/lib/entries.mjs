@@ -75,6 +75,27 @@ export function readEntries(dir = PLUGINS_DIR) {
   return out
 }
 
+// A release tarball must live on GitHub's own release hosting. Anywhere else
+// and the list would be handing users a download link it can't vouch for —
+// the same reasoning that restricts screenshot hosts in build-site.mjs.
+const TARBALL_HOSTS = new Set(['github.com', 'objects.githubusercontent.com', 'release-assets.githubusercontent.com'])
+
+/** Returns a problem description, or null when the value is a usable tarball URL. */
+export function tarballProblem(value) {
+  if (typeof value !== 'string' || !value.trim()) return 'must be a URL string'
+  let u
+  try {
+    u = new URL(value)
+  } catch {
+    return `is not a valid URL: ${value}`
+  }
+  if (u.protocol !== 'https:') return 'must be https'
+  if (!TARBALL_HOSTS.has(u.hostname)) return `must be hosted on GitHub releases (got ${u.hostname})`
+  if (u.hostname === 'github.com' && !u.pathname.includes('/releases/')) return 'must point at a GitHub release asset'
+  if (!u.pathname.endsWith('.tgz') && !u.pathname.endsWith('.tar.gz')) return 'must point at a .tgz'
+  return null
+}
+
 /** Validate shape. Returns an array of human-readable problems (empty = ok). */
 export function validateEntries(entries) {
   const problems = []
@@ -101,6 +122,14 @@ export function validateEntries(entries) {
       if (typeof d !== 'string' || !d.trim()) problems.push(`${at}: "description.${loc}" is required`)
       else if (d.includes('\n')) problems.push(`${at}: "description.${loc}" must be a single line`)
     }
+
+    // Optional prebuilt tarball. Deliberately a URL and not a command string:
+    // this ends up as something people paste into a shell, so the build owns
+    // the command and only the artifact location comes from the entry.
+    if (e.tarball !== undefined) {
+      const bad = tarballProblem(e.tarball)
+      if (bad) problems.push(`${at}: "tarball" ${bad}`)
+    }
   }
   return problems
 }
@@ -113,10 +142,9 @@ export function orderEntries(entries) {
 }
 
 export function dumpEntry(e) {
-  return yamlDump(
-    { url: e.url, name: e.name, category: e.category, description: { en: e.description.en, zh: e.description.zh } },
-    { lineWidth: -1, noRefs: true, quotingType: '"', forceQuotes: false },
-  )
+  const doc = { url: e.url, name: e.name, category: e.category, description: { en: e.description.en, zh: e.description.zh } }
+  if (e.tarball) doc.tarball = e.tarball
+  return yamlDump(doc, { lineWidth: -1, noRefs: true, quotingType: '"', forceQuotes: false })
 }
 
 export function writeEntry(e, dir = PLUGINS_DIR) {
