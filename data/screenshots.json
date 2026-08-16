@@ -99,5 +99,11 @@
   "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-main.png",
   "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-settings.png",
   "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-memory-settings.png"
+ ],
+ "https://github.com/kinoward/dsh-plugin-subhub": [
+  "https://raw.githubusercontent.com/kinoward/dsh-plugin-subhub/main/assets/models-en-light.png",
+  "https://raw.githubusercontent.com/kinoward/dsh-plugin-subhub/main/assets/models-zh-light.png",
+  "https://raw.githubusercontent.com/kinoward/dsh-plugin-subhub/main/assets/settings-loggedin-en-light.png",
+  "https://raw.githubusercontent.com/kinoward/dsh-plugin-subhub/main/assets/settings-loggedin-zh-light.png"
  ]
 }
