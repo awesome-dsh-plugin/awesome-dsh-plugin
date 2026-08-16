@@ -688,6 +688,8 @@ dsh plugin --profile web add dshmarket
 - [zoahdev/dsh-github-release-radar](https://github.com/zoahdev/dsh-github-release-radar) - Track releases and stars of any public GitHub repository from inside dsh agents — no API key needed.
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) - Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) - Text-first computer use for DSH: background Chromium control via Playwright/CDP plus accessibility-first macOS control; actions stay pinned to the right process and window without taking the user's pointer, ships a Developer ID signed, notarized Universal 2 DMG.
+- [weike-zhang/dsh-svg-motion](https://github.com/weike-zhang/dsh-svg-motion) - Turn any SVG logo into a motion video inside DSH: an `animate_svg` tool renders a transparent 30fps assembly animation (parts fly in, or the whole mark settles) and synthesizes an MP4 with ffmpeg.
+
 
 ### Skills
 

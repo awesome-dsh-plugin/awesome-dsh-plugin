@@ -688,6 +688,7 @@ dsh plugin --profile web add dshmarket
 - [zoahdev/dsh-github-release-radar](https://github.com/zoahdev/dsh-github-release-radar) — 让 dsh agent 直接查询任意 GitHub 公开仓库的 Release 与星标变化，无需 API Key。
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) — DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) — DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。
+- [weike-zhang/dsh-svg-motion](https://github.com/weike-zhang/dsh-svg-motion) — 在 DSH 里把任意 SVG logo 变成动效视频：`animate_svg` 工具渲染透明背景 30fps 组装动画（零件飞入或整体落位），并用 ffmpeg 合成 MP4。
 
 ### 🧩 技能包
 
