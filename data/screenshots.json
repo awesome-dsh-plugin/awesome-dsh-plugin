@@ -308,5 +308,17 @@
  ],
  "https://github.com/fuyue521/dsh-desktop-shortcut": [
   "https://raw.githubusercontent.com/fuyue521/dsh-desktop-shortcut/main/assets/screenshots/screenshot-web-ui.png"
+ ],
+ "https://github.com/omdsh-dev/dsh-genui": [
+  "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/main/assets/showcase-panel.png",
+  "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/main/assets/showcase-plot.png",
+  "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/main/assets/showcase.png",
+  "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/main/assets/demo-thumb.png"
+ ],
+ "https://github.com/omdsh-dev/dsh-annotation": [
+  "https://github.com/user-attachments/assets/c3186efc-44d3-4e7f-9523-1902d9d037e9",
+  "https://github.com/user-attachments/assets/0b48ac02-4648-4b94-8d8f-344f8b7c25b4",
+  "https://github.com/user-attachments/assets/8b2610d0-3d00-41be-b314-bac2fe616787",
+  "https://github.com/user-attachments/assets/9b66deea-3786-4296-9b0d-52873a15f5e1"
  ]
 }
