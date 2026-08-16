@@ -205,5 +205,9 @@
   "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-settings.png",
   "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-confirm.png",
   "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-done.png"
+ ],
+ "https://github.com/2nd1st/dsh-plugin-open-app": [
+  "https://raw.githubusercontent.com/2nd1st/dsh-plugin-open-app/main/docs/screenshot-app-container.jpg",
+  "https://raw.githubusercontent.com/2nd1st/dsh-plugin-open-app/main/docs/screenshot-inline.jpg"
  ]
 }
