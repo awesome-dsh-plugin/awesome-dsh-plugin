@@ -861,6 +861,8 @@ dsh plugin --profile web add dshmarket
 - [loongsuite/dsh-plugin](https://github.com/loongsuite/dsh-plugin) - Converts session, agent-loop, LLM, and tool lifecycle events into OpenTelemetry GenAI traces and metrics, exported over standard OTLP/HTTP to any compatible backend, with content capture off by default.
 - [hezhongtang/dsh-update-copilot](https://github.com/hezhongtang/dsh-update-copilot) - Update copilot for DeepSeek Harness: one scan covers the dsh core, official bundles, and every profile plugin; explains what changed and how risky each update is, then updates only what you confirm.
 - [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) - Close and restart controls for DeepSeek Harness Desktop and Web on Windows, in Settings → General.
+- [hellosky983/dsh-fabric](https://github.com/hellosky983/dsh-fabric) - Unifies every DSH extensibility seam behind one declarative DSL: a runtime `fabric` service, `fabric_extend`/`fabric_inspect` tools, and a capability-graph settings page.
+- [hellosky983/dsh-foundry](https://github.com/hellosky983/dsh-foundry) - Plugin compiler with a blueprint registry (scaffold → validate → deploy) exposed as a runtime service, three model tools, and a blueprint-gallery settings page.
 
 ### Plugin Markets & Managers
 - [xiaoyangcheng84-svg/dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager) - Skin manager for the DSH web GUI: discovers installed skins and switches the active one from a dedicated Settings page, mutually exclusive, hot-reloaded without restart.
