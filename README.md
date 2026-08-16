@@ -353,7 +353,7 @@ dsh plugin --profile web add dshmarket
 
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
 - [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) - Role-based LLM retry & fallback strategies.
-- [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) - Global Simplified-Chinese mode: a 中 switch in the input box that injects a Chinese-language requirement into every session's system prompt when enabled, skipping anchored presets' pre-promotion round.
+- [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) - Global Simplified-Chinese mode: a 中 switch in the input box that injects language requirements (Chinese or English per region) into every session's system prompt; anchored mode forces English thinking for anchored presets.
 - [dylan121322/llm-adaptive](https://github.com/dylan121322/llm-adaptive) - Adaptive model routing: per-request complexity classification with automatic provider routing.
 - [fieldnote-ops/keyringseam](https://github.com/fieldnote-ops/keyringseam) - macOS Keychain credential provider that replaces the local-file provider and uses a signed, notarized universal helper.
 - [franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) - Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.
