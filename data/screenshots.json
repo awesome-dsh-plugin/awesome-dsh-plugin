@@ -363,5 +363,14 @@
  ],
  "https://github.com/AcidGr/dsh-web-lan-access": [
   "https://raw.githubusercontent.com/AcidGr/dsh-web-lan-access/main/assets/screenshot-lan-access.jpg"
+ ],
+ "https://github.com/huguangyu666/dsh-plugin-notify": [
+  "https://raw.githubusercontent.com/huguangyu666/dsh-plugin-notify/main/assets/screenshot.png"
+ ],
+ "https://github.com/huguangyu666/dsh-plugin-session-import": [
+  "https://raw.githubusercontent.com/huguangyu666/dsh-plugin-session-import/main/assets/screenshot.png"
+ ],
+ "https://github.com/huguangyu666/dsh-store": [
+  "https://raw.githubusercontent.com/huguangyu666/dsh-plugin-store/main/assets/screenshot.png"
  ]
 }
