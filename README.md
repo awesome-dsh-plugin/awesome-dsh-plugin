@@ -947,6 +947,7 @@ dsh plugin --profile web add dshmarket
 - [mexiaosqwq/want-a-init](https://github.com/mexiaosqwq/want-a-init) - Model-driven /init command: the agent analyzes the current repo and generates/updates a high-signal AGENTS.md, with a persistent system-prompt reminder to keep it maintained.
 - [MicroMilo/upstream-radar](https://github.com/MicroMilo/upstream-radar) - Always-on dependency security for DSH plugins: tracks exact installed paths, OSV vulnerabilities, npm releases, and breaking-change signals, then routes project evidence to a DSH Agent.
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) - Offline diagnostic for DSH: 19 checks across env, profile, and session state, with a settings "Doctor" panel and a read-only JSON API.
+- [MutaLucem/dsh-plugin-integration](https://github.com/MutaLucem/dsh-plugin-integration) - Discovers installed DSH plugins with tags, overlap and compatibility detection, one-click enable/disable, failure diagnosis, and update checking.
 - [omdsh-dev/dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) - Plugin health checks: manifest protocol / patch format / build traps, zero-dependency and read-only.
 - [omdsh-dev/dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) - Local security audit: config, plugin origins, sessions, network exposure — read-only redacted risk report.
 - [omdsh-dev/dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) - Frame-level scan diagnostics for session files (torn/corrupt/empty detection).
