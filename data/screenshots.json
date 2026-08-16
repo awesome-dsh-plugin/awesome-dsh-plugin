@@ -238,5 +238,13 @@
  ],
  "https://github.com/MangMax/dsh-themes": [
   "https://raw.githubusercontent.com/MangMax/dsh-themes/main/assets/screenshot.png"
+ ],
+ "https://github.com/biociao/dsh-science": [
+  "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/research-loop.png",
+  "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/artifact-provenance.png",
+  "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/research-report.png",
+  "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/remote-compute.png",
+  "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/plugin-inventory.png",
+  "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/topology.png"
  ]
 }
