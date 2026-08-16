@@ -772,7 +772,7 @@ dsh plugin --profile web add dshmarket
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) — 通过微信扫码把微信机器人接入 DeepSeek Harness。
 - [xiaoshihou514/dsh-weixin](https://github.com/xiaoshihou514/dsh-weixin) — 通过微信远程控制 DeepSeek Harness，支持任意文件传输。
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — 通过扫码把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉等）。
-- [THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) — 统一通知推送：一个 notify() API 打通 25+ 渠道（Telegram / 钉钉 / 飞书 / 企业微信 / QQ 机器人 / WxPusher / PushPlus / Server 酱 / Bark / Discord / Slack / ntfy / webhook），按 timeSensitive / active / passive 路由并分级重试；多通道反向审批——在 Telegram、飞书交互卡片、QQ、WxPusher、微信（iLink）上直接批准 agent 的请求。回合结束、待审批、报错时自动推送，agent 也能主动调用 notify 工具；零运行时依赖。
+- [THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) — DSH 统一通知推送与远程控制：一个 `notify()` API 打通 25+ 渠道（Telegram / 钉钉 / 飞书 / 企业微信 / QQ 机器人 / WxPusher / PushPlus / Server 酱 / Bark / Discord / Slack / ntfy / webhook 等），timeSensitive / active / passive 分级路由并重试；五通道反向审批（Telegram 按钮 / 飞书卡片 / QQ / WxPusher / 微信 iLink）；QQ/钉钉/飞书官方扫码登录；本地 Web 管理台；多 agent 路由；系统桌面通知——以及**手机指挥中心**：在手机上发 `!status` / `!stop` / `!retry` 遥控 agent，通知带可操作按钮（查看结果 / 重试 / 日志，点击回调 agent）。密钥脱敏、工具限流、零运行时依赖。
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) — 系统级桌面通知：回合完成 / 工作流完成横幅，需要审批时弹出模态提醒（macOS osascript / Linux notify-send）。
 - [ThreeBody6666/dsh-im-hub](https://github.com/ThreeBody6666/dsh-im-hub) — 多平台 IM 网关：飞书（Lark）WebSocket 长连接（无需公网）、企业微信 AES 加密回调、Telegram 长轮询；每会话独立 agent、白名单访问、Web GUI 可视化设置卡片。
 - [yangyongzhen/dsh-notify](https://github.com/yangyongzhen/dsh-notify) — 任务完成通知：ServerChan / 钉钉 / 飞书 / 通用 Webhook。
