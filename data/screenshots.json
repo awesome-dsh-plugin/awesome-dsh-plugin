@@ -216,5 +216,11 @@
  ],
  "https://github.com/030611/qiushi-dsh-evidence-audit": [
   "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
+ ],
+ "https://github.com/Isilsolme/dsh-splash-launcher": [
+  "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-light.png",
+  "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-drawing.png",
+  "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-dark.png",
+  "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/main.png"
  ]
 }
