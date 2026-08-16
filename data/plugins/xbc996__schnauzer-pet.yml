@@ -3,5 +3,5 @@ name: xbc996/schnauzer-pet
 category: ui
 tarball: https://github.com/xbc996/schnauzer-pet/releases/download/v0.1.0/schnauzer-pet-0.1.0.tgz
 description:
-  en: A floating, draggable, interactive schnauzer desktop pet for the DSH Web UI: Q-version cartoon by default with a photo mode toggle, agent-status reflection (paces while thinking, shakes while working, celebrates on completion), click/double-click/right-click interactions, idle animations, and a summon gesture.
+  en: 'A floating, draggable, interactive schnauzer desktop pet for the DSH Web UI: Q-version cartoon by default with a photo mode toggle, agent-status reflection (paces while thinking, shakes while working, celebrates on completion), click/double-click/right-click interactions, idle animations, and a summon gesture.'
   zh: 给 DSH Web 界面加一只悬浮、可拖拽、会互动的雪纳瑞桌宠：默认 Q 版卡通造型，可切换真实照片；能反映 Agent 状态（思考时踱步、干活时抖动、完成时庆祝）；支持单击/双击/右键互动、待机动画与一键召回。
