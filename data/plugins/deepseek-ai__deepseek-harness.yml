@@ -1,0 +1,6 @@
+url: https://github.com/deepseek-ai/deepseek-harness
+name: deepseek-ai/deepseek-harness
+category: dev
+description:
+  en: The official DeepSeek Harness repository, a plugin-based agent harness where every capability, including the agent loop itself, is a Cordis plugin.
+  zh: DeepSeek Harness 官方仓库——基于插件的可组合智能体 harness，一切能力（包括 agent 循环本身）都是 Cordis 插件。
