@@ -13,18 +13,20 @@ export const PLUGINS_DIR = 'data/plugins'
 // chips and the sitemap. Kept in sync with CAT_IDS in build-site.mjs and the
 // two `categories` blocks in site/locales.mjs (reorder-categories.py rewrites
 // build-site.mjs by regex, so that array must stay on one line).
-export const CAT_IDS = ['ui', 'theme', 'model', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
+export const CAT_IDS = ['ui', 'usage', 'theme', 'model', 'session', 'memory', 'tools', 'vision', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
 
 // The emoji prefixes live only in README.zh.md — site/locales.mjs stores the
 // bare names because build-site matches headings by substring. A generator has
 // to carry them, or regenerating would silently strip every Chinese heading.
 export const ZH_EMOJI = {
   ui: '🎨',
+  usage: '💰',
   theme: '🎭',
   model: '🔌',
   session: '💬',
   memory: '🧠',
   tools: '🛠️',
+  vision: '🖼️',
   skill: '🧩',
   workflow: '🔁',
   notify: '🔔',
@@ -48,11 +50,25 @@ export function readEntries(dir = PLUGINS_DIR) {
   for (const f of fs.readdirSync(dir).sort()) {
     if (!f.endsWith('.yml')) continue
     const full = path.join(dir, f)
+    const text = fs.readFileSync(full, 'utf8')
     let doc
     try {
-      doc = yamlLoad(fs.readFileSync(full, 'utf8'))
+      doc = yamlLoad(text)
     } catch (e) {
-      throw new Error(`${full}: invalid YAML — ${e.message}`)
+      // By far the most common way a hand-written entry breaks: a description
+      // like `en: Foo bar: baz` — an unquoted scalar containing ": " is a
+      // mapping to YAML. Say so, because the parser's own message ("bad
+      // indentation of a mapping entry") points nowhere useful.
+      const culprit = text
+        .split('\n')
+        .find((l) => /^\s+(en|zh):\s/.test(l) && /:\s/.test(l.replace(/^\s+(en|zh):\s/, '')) && !/^\s+(en|zh):\s*['"]/.test(l))
+      const hint = culprit
+        ? `\n\n  A description containing ": " must be quoted:\n` +
+          `    ${culprit.trim().replace(/^(en|zh):\s*/, (m) => m)}\n` +
+          `  becomes\n` +
+          `    ${culprit.trim().replace(/^((en|zh):\s*)(.*)$/, (_, p, __, v) => `${p}'${v.replaceAll("'", "''")}'`)}`
+        : ''
+      throw new Error(`${full}: invalid YAML — ${e.reason ?? e.message}${hint}`)
     }
     out.push({ ...doc, file: full })
   }

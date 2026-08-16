@@ -1,0 +1,6 @@
+url: https://github.com/songoao25/dsh-bottom-info-bar
+name: songoao25/dsh-bottom-info-bar
+category: ui
+description:
+  en: 'Bottom info bar for the DSH Web UI: provider/model, live balance, peak/off-peak pricing with countdown, and real persisted per-session spend in a single line.'
+  zh: 'DSH 底部信息栏：一行显示服务商/模型、真实余额、高峰(琥珀)/空闲(绿)价与倒计时，以及本对话·今日·近一月·全部花费（真实落盘统计）。'

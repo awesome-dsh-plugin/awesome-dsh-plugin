@@ -1,0 +1,6 @@
+url: https://github.com/genius-alray/dsh-mermaid-render
+name: genius-alray/dsh-mermaid-render
+category: ui
+description:
+  en: 'Mermaid diagram renderer for the Web UI conversation: renders mermaid code blocks into interactive cards (zoom, fit-width, fullscreen viewer, preview/code toggle) with official UI primitives, and keeps the original code block with an inline error banner when rendering fails.'
+  zh: Web UI 对话 mermaid 渲染插件：将消息中的 mermaid 代码块渲染为可交互图表卡片（缩放 / 适应宽度 / 全屏查看 / 预览代码切换），复用官方组件原语，渲染失败时保留原代码块并内联展示错误。

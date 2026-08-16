@@ -1,0 +1,6 @@
+url: https://github.com/nanshan1995/DSH-Plugin-Market
+name: nanshan1995/DSH-Plugin-Market
+category: tools
+description:
+  en: 'Alternative plugin market for DSH: curated catalog plus live GitHub browsing, zh/en cross-language search, a fail-closed pre-install static security audit with an install-hook block, and per-plugin README viewing with garbled-encoding repair.'
+  zh: 另一款 DSH 插件市场：精选目录 + GitHub 实时浏览、中英互通搜索、安装前 fail-closed 静态安全审计（拦截安装钩子），每个插件可直接查看 README 且乱码自动修复。

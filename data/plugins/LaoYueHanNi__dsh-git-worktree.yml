@@ -1,0 +1,6 @@
+url: https://github.com/LaoYueHanNi/dsh-git-worktree
+name: LaoYueHanNi/dsh-git-worktree
+category: dev
+description:
+  en: Branch switching and isolated git worktrees as real workspaces, from the Web UI composer.
+  zh: 在 Web 输入框切换分支、以真实工作区方式创建隔离的 git worktree。
