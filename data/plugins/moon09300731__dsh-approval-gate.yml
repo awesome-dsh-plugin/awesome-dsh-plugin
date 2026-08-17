@@ -1,0 +1,6 @@
+url: https://github.com/moon09300731/dsh-approval-gate
+name: moon09300731/dsh-approval-gate
+category: tools
+description:
+  en: 'Risk-gated approval automation for DeepSeek Harness: flash pre-classifies whether a write/command is irreversible — safe operations are auto-approved, dangerous ones are escalated to human approval (fail-safe).'
+  zh: 'DeepSeek Harness 自动审批门控：Flash 预判写入/命令是否不可回补，安全操作自动批准、危险操作转人工（fail-safe）。'
