@@ -150,6 +150,9 @@
   "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/apex.png",
   "https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/main/docs/screenshots/deep-dive.png"
  ],
+ "https://github.com/Leeminjing/dsh-eyes": [
+  "https://raw.githubusercontent.com/Leeminjing/dsh-eyes/main/assets/demo.png"
+ ],
  "https://github.com/Lhy723/dsh-agent-canvas": [
   "https://raw.githubusercontent.com/Lhy723/dsh-agent-canvas/main/docs/assets/agent-canvas-overview.png",
   "https://raw.githubusercontent.com/Lhy723/dsh-agent-canvas/main/docs/assets/agent-canvas-dark-settings.png"
@@ -653,66 +656,9 @@
   "https://raw.githubusercontent.com/zhtx2024/dsh-pdf/master/assets/screenshot-schematic.png",
   "https://raw.githubusercontent.com/zhtx2024/dsh-pdf/master/assets/screenshot-power.png"
  ],
-<<<<<<< HEAD
  "https://github.com/zljr/dsh-share": [
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
-=======
- "https://github.com/a903067276-rgb/dsh-file-upload": [
-  "https://raw.githubusercontent.com/a903067276-rgb/dsh-file-upload/main/assets/screenshot.png"
- ],
- "https://github.com/a903067276-rgb/dsh-hud": [
-  "https://raw.githubusercontent.com/a903067276-rgb/dsh-hud/main/assets/hud-panel.png"
- ],
- "https://github.com/a903067276-rgb/dsh-plan-switch": [
-  "https://raw.githubusercontent.com/a903067276-rgb/dsh-plan-switch/main/assets/plan-button.png"
- ],
- "https://github.com/wly8691-jpg/knowlp-rag": [
-  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/demo.png",
-  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/health.png",
-  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/decay.png",
-  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
- ],
- "https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness": [
-  "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-live-proof.gif",
-  "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-dark.png",
-  "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-light.png"
- ],
- "https://github.com/daetz-coder/dsh-multi-chat": [
-  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/01-windows-dual-chat.png",
-  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/02-ipad-dual-chat.png",
-  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/03-windows-triple-chat.png"
- ],
- "https://github.com/imkingjh999/dsh-shorts-wall": [
-  "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-stick.png",
-  "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-float.png",
-  "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-minimized.png"
- ],
- "https://github.com/hanzhangzzz/dsh-diagram": [
-  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/dsh-diagram-demo.gif",
-  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-architecture.png",
-  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-flow.png",
-  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-chat.png"
- ],
- "https://github.com/elves-ai/dsh-web-search-firecrawl": [
-  "https://raw.githubusercontent.com/elves-ai/dsh-web-search-firecrawl/master/docs/firecrawl-settings.png"
- ],
- "https://github.com/Gin-7/dsh-pet-remielle": [
-  "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/main/assets/screenshot-waiting.png",
-  "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/main/assets/screenshot-priding.png"
- ],
- "https://github.com/slywalker2006/dsh-passwords": [
-  "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/white-login.png",
-  "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/black-login.png",
-  "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/white-login-en.png",
-  "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/main-ui.png",
-  "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/chat.png",
-  "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-front.png",
-  "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-back.png"
- ],
- "https://github.com/Leeminjing/dsh-eyes": [
-  "https://raw.githubusercontent.com/Leeminjing/dsh-eyes/main/assets/demo.png"
->>>>>>> efd87c0b (Add Leeminjing/dsh-eyes (Vision & Multimodal))
  ]
 }
