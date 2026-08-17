@@ -88,8 +88,17 @@ async function hasBundle(repo, sub) {
 
   const tree = await api(`repos/${repo}/git/trees/HEAD?recursive=1`)
   if (tree.status !== 200) return { ok: null, why: `could not read the repository tree (HTTP ${tree.status})` }
-  const pkgs = (tree.body?.tree ?? []).filter((t) => t.path?.endsWith('package.json')).map((t) => t.path).slice(0, MAX_TREE_PKGS)
-  if (!pkgs.length) return { ok: false, why: 'no `package.json` anywhere in the repository' }
+  // A recursive tree is capped by the API (~100k entries / 7MB) and the
+  // response says so with `truncated`, while still being a 200. Reading a
+  // partial listing as the whole repository turns "we could not see all of it"
+  // into "there is no manifest", which is a definite rejection drawn from an
+  // admittedly incomplete answer. Unknown, not absent — same as a failed fetch.
+  if (tree.body?.truncated) {
+    return { ok: null, why: 'the repository tree is too large for the API to return in full' }
+  }
+  const found = (tree.body?.tree ?? []).filter((t) => t.path?.endsWith('package.json')).map((t) => t.path)
+  if (!found.length) return { ok: false, why: 'no `package.json` anywhere in the repository' }
+  const pkgs = found.slice(0, MAX_TREE_PKGS)
 
   let sawClient = false
   for (const p of pkgs) {
@@ -101,12 +110,13 @@ async function hasBundle(repo, sub) {
     if (dsh.bundle) return { ok: true, at: p }
     if (dsh.client) sawClient = true
   }
-  return {
-    ok: false,
-    why: sawClient
-      ? 'declares only `dsh.client` — that alone is not installable'
-      : `no \`dsh.bundle\` in any of ${pkgs.length} package.json file(s)`,
+  if (sawClient) return { ok: false, why: 'declares only `dsh.client` — that alone is not installable' }
+  // Same reasoning as a truncated tree: with more manifests than the cap, the
+  // ones past it were never read, so absence here is not established.
+  if (found.length > pkgs.length) {
+    return { ok: null, why: `the repository has ${found.length} package.json files, more than the ${MAX_TREE_PKGS} this check reads` }
   }
+  return { ok: false, why: `no \`dsh.bundle\` in any of ${pkgs.length} package.json file(s)` }
 }
 
 async function commitCount(repo) {
