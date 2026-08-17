@@ -775,6 +775,7 @@ dsh plugin --profile web add dshmarket
 
 ### Vision & Multimodal
 
+- [ld-1101/dsh-vision-plugin](https://github.com/ld-1101/dsh-vision-plugin) - Give your text-only model eyes: chat image attachments are auto-described via a vision model (default prompt), with iterative re-parsing through model-generated prompts when details are missing; system/custom model modes + GUI config panel (settings → 视觉模型), key-safe secret handling, and a small host patch for DSH 0.1.0-rc.6 (see repo README).
 - [54xkeee/dsh-vision](https://github.com/54xkeee/dsh-vision) - Vision for text-only DeepSeek via Doubao Web by default (zero-cost, no API key — drives your logged-in Chrome through a Windows CDP bridge), with Antigravity IDE quota (flash/pro) or Gemini fallback; auto detail escalation, vision evidence memory with compaction rehydration, content-hash cache, and a bilingual client panel.
 - [54xkeee/dsh-youreyes](https://github.com/54xkeee/dsh-youreyes) - Vision toolkit for text-only DeepSeek: model-invokable `vision` tool, wrapper adapters for deepseek/opencode-go (v4 flash/pro), Antigravity IDE quota (default, flash/pro) / any OpenAI-compatible VLM / Gemini / local Ollama channels, evidence memory with compaction rehydration, content-hash cache, and a bilingual client panel.
 - [akqwpeter-prog/dsh-media-skills](https://github.com/akqwpeter-prog/dsh-media-skills) - Free vision bridge and image generation for text-only models: paste-image reading, GLM-4V-Flash and Gemini engine failover, ModLens-style structured evidence, and a seeded free vision model route.
