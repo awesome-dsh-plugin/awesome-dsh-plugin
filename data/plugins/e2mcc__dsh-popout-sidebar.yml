@@ -1,0 +1,6 @@
+url: https://github.com/e2mcc/dsh-popout-sidebar
+name: e2mcc/dsh-popout-sidebar
+category: ui
+description:
+  en: Sidebar that lists agent artifacts (files written or edited) and can pop out into a separate browser tab.
+  zh: 侧边栏展示代理产物（写入或编辑的文件），并可弹出为独立浏览器标签页。
