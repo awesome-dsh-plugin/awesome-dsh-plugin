@@ -1,0 +1,6 @@
+url: https://github.com/Choi-Peng/dsh-deepseek-balance
+name: Choi-Peng/dsh-deepseek-balance
+category: usage
+description:
+  en: DeepSeek account balance in the dsh web sidebar footer with live config hot reload and an editable Settings → Plugins card.
+  zh: 在 DSH Web 侧边栏底部展示 DeepSeek 账户余额，支持配置热重载与可编辑的设置 → 插件卡片。
