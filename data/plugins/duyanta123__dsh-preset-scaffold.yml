@@ -1,0 +1,6 @@
+url: https://github.com/duyanta123/dsh-preset-scaffold
+name: duyanta123/dsh-preset-scaffold
+category: skill
+description:
+  en: 'DSH project scaffold preset: strict 5-phase init runbook, engineering standards and six runnable starter templates (node-ts / react-vite / python / go / spring-boot / monorepo).'
+  zh: DSH 项目初始化脚手架预设：严格 5 阶段初始化流程 + 工程规范 + 六套可运行模板（node-ts / react-vite / python / go / spring-boot / monorepo）。
