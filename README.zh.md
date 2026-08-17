@@ -1159,6 +1159,7 @@ dsh plugin --profile web add dshmarket
 - [Relistencode/dsh-extension-hub](https://github.com/Relistencode/dsh-extension-hub) — 设置页一体化扩展中心：管理技能/MCP/插件，内置插件市场（精选目录+GitHub 搜索、npm 一键安装），并提供附加功能区统一安装/停用/卸载、一起更新附属功能。
 - [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) — dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。
 - [stakeswky/awesome-dsh](https://github.com/stakeswky/awesome-dsh) — 把「我想让 DSH 做什么」直接变成选好的插件：技能查询覆盖整个 `dsh-plugin` topic 的目录（2600+ 仓库，每 6 小时重抓，简介由 Workers AI 译成中文）的相关度检索接口，再给出对应的 `dsh plugin add` 命令。
+- [tttwh/dsh-plugin-Audit](https://github.com/tttwh/dsh-plugin-Audit) — 装在 DSH 里的插件目录：按来源（官方/自装）分组展示已安装插件，可搜索，支持启用/停用、卸载和一键更新。
 - [tuogusa/dsh-plugin-toggle](https://github.com/tuogusa/dsh-plugin-toggle) — 在 Web 设置面板中启用、停用或删除插件，运行时开关并持久化到 profile。
 - [whyihaveyou/dsh-suite#plugin-manager](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager) — DSH Web UI 内置插件商店：浏览、搜索、一键安装、兼容性徽章。
 - [xiaoyangcheng84-svg/dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager) — DSH Web GUI 皮肤管理器：自动发现已安装皮肤，在独立设置页一键互斥切换，热载入无需重启。
