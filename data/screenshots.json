@@ -500,5 +500,10 @@
   "https://raw.githubusercontent.com/Physicolor/harness-widgets/main/docs/screenshots/dock-magnify.png",
   "https://raw.githubusercontent.com/Physicolor/harness-widgets/main/docs/screenshots/add-panel.png",
   "https://raw.githubusercontent.com/Physicolor/harness-widgets/main/docs/screenshots/widget-cards.png"
- ]
+ ],
+  "https://github.com/ayahunter/dsh-trail": [
+   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshot.png",
+   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/rounds-view.png",
+   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/tool-details.png"
+  ]
 }
