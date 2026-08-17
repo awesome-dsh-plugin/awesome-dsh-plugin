@@ -529,7 +529,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — 由 Mnemon 驱动的 DeepSeek Harness（DSH）跨 Agent、本地优先的持久记忆插件。它可在支持 Mnemon 的 Agent 之间共享长期记忆，并提供运行时记忆、可检索项目档案、语义召回、知识图谱和 Sidebar UI。
 - [orangeshinee/dsh-mem0](https://github.com/orangeshinee/dsh-mem0) — 自托管 mem0 记忆读写插件：agent 直接读写自有 mem0 服务（增删查改、搜索、历史、重置、状态），并带设置面板配置卡片。
 - [PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — 有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入，并预演 dsh-memory-protocol v1——适配器注册表与可分发的一致性套件。
-- [Phant0Meow/dsh-memory-meow](https://github.com/Phant0Meow/dsh-memory-meow) — 项目级跨会话记忆：node:sqlite 六层存储（soul/user/project/fact/lesson/topic），首条用户消息缓存友好注入，memory_remember/search/find_similar/read/update 工具，按窗口夜间整理（dream）。
+- [Phant0Meow/dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) — 项目级跨会话记忆：node:sqlite 六层存储（soul/user/project/fact/lesson/topic），首条用户消息缓存友好注入，memory_remember/search/find_similar/read/update 工具，按窗口夜间整理（dream）。
 - [plur-ai/dsh-plugin](https://github.com/plur-ai/dsh-plugin) — PLUR 记忆在每次组装时渲染进系统提示词，而非以工具调用形式暴露，因此记忆块是被替换而不是追加，整段会话的上下文长度保持不变。全本地混合检索（BM25 + BGE，RRF 融合）、可直接编辑的纯 YAML 存储、按工作区划分 scope，并提供 /plur-memory 浏览器界面。
 - [Relistencode/dsh-recall](https://github.com/Relistencode/dsh-recall) — 对话历史回忆：字面/模糊/语义三层检索全部历史会话的原始文本，完全本地离线——AI 再也不会忘记你说的话。一条命令安装（自带 `dsh.bundle.patch`），语义推理跑在 worker 线程。
 - [reshuibuduo/TMCRA-Agent-Memory](https://github.com/reshuibuduo/TMCRA-Agent-Memory) — 面向 DSH 与 Codex 的技术预览版本机图记忆：每轮前从用户全局与当前项目作用域召回证据，分别保存 USER 与 ASSISTANT 记录，并保留项目、会话、角色和来源信息，用于可视化图谱与带证据引用的知识页。
