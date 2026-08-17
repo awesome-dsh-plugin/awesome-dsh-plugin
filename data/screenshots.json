@@ -550,5 +550,9 @@
  ],
  "https://github.com/a903067276-rgb/dsh-plan-switch": [
   "https://raw.githubusercontent.com/a903067276-rgb/dsh-plan-switch/main/assets/plan-button.png"
- ]
+ ],
+  "https://github.com/wly8691-jpg/knowlp-rag": [
+   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/demo.png",
+   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
+  ]
 }
