@@ -1,0 +1,6 @@
+url: https://github.com/elves-ai/dsh-web-search-firecrawl
+name: elves-ai/dsh-web-search-firecrawl
+category: tools
+description:
+  en: Firecrawl-backed web search provider for the built-in web_search tool, with a settings card for the API key and result limits.
+  zh: 基于 Firecrawl 的网页搜索提供方：替换内置 web_search 的后端，并提供 API Key、结果数量等字段的设置卡片。

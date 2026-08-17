@@ -577,5 +577,8 @@
   "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-architecture.png",
   "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-flow.png",
   "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-chat.png"
+ ],
+ "https://github.com/elves-ai/dsh-web-search-firecrawl": [
+  "https://raw.githubusercontent.com/elves-ai/dsh-web-search-firecrawl/master/docs/firecrawl-settings.png"
  ]
 }
