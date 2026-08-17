@@ -897,6 +897,7 @@ dsh plugin --profile web add dshmarket
 - [zimai233/dsh-wash-calendar](https://github.com/zimai233/dsh-wash-calendar) — 基于纯日期数学的周期习惯排程：下次发生日、区间排程与逾期提醒。
 - [zjl1989-li/dsh-harness-zh-cn](https://github.com/zjl1989-li/dsh-harness-zh-cn) — DeepSeek Harness 中文汉化插件：通过 system-prompt/assemble 瀑布钩子在运行时把全部系统提示词、工具描述与运行时上下文翻译成中文（1788 条译文，零源码修改，卸载即还原英文）。
 - [zoahdev/dsh-artifacts](https://github.com/zoahdev/dsh-artifacts) — 把 Markdown + JSON 渲染成自包含 HTML 文档/卡片/仪表盘/画廊（CLI + 内置 artifact_render 工具）。
+- [zoahdev/dsh-browser-use](https://github.com/zoahdev/dsh-browser-use) — Browser Use 云端桥接：通过 Browser Use API 让 dsh agent 执行真实网页任务，包括打开页面、点击、输入、填表和提取数据。
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) — DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) — DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。
 
