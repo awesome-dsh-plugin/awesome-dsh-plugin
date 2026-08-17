@@ -165,6 +165,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [omdsh-dev/ex-setting](https://github.com/omdsh-dev/ex-setting) - Settings extensions for DSH.
 - [omdsh-dev/web-components](https://github.com/omdsh-dev/web-components) - Web Components support.
 - [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) - File-browser web app for DSH: React frontend and REST API served by the host webserver, a /dsh-agfs command that opens at the current session workspace, and a browse_files model tool.
+- [opencues/opencues#integrations-dsh](https://github.com/opencues/opencues/tree/master/integrations/dsh) - Word alternatives and underscore-gated fill-ins in the composer. End a line with _ and it is filled; misspellings are flagged as you type. Routes through the model dsh is already configured with, so it needs no API key.
 - [openma-ai/deepseek-harness-tui](https://github.com/openma-ai/deepseek-harness-tui) - A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.
 - [pc439527/dsh-side-monitor](https://github.com/pc439527/dsh-side-monitor) - Sidebar system monitor for the DSH Web UI: live host overview (CPU/memory/network/disk), process list, and Docker container status, all read-only.
 - [penguin-oo/dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink) - Ctrl+click file paths and links in chat: paths open their folder in the OS file manager (with the file selected), links open in a new browser tab.
