@@ -101,6 +101,10 @@
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-dark.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/main.png"
  ],
+ "https://github.com/Jannchie/dsh-bill": [
+  "https://raw.githubusercontent.com/Jannchie/dsh-bill/main/docs/attribution.png",
+  "https://raw.githubusercontent.com/Jannchie/dsh-bill/main/docs/in-chat.png"
+ ],
  "https://github.com/Jiyr0119/dsh-workspace-explorer": [
   "https://raw.githubusercontent.com/Jiyr0119/dsh-workspace-explorer/main/assets/screenshots/panel.png",
   "https://raw.githubusercontent.com/Jiyr0119/dsh-workspace-explorer/main/assets/screenshots/tree.png",
@@ -597,6 +601,9 @@
   "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/usage-detail.png",
   "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/set-cookie-wid.png"
  ],
+ "https://github.com/weisiren000/dsh-remote-ssh-ops": [
+  "https://raw.githubusercontent.com/weisiren000/dsh-remote-ssh-ops/main/docs/assets/remote-workbench-preview.png"
+ ],
  "https://github.com/welsione/dsh-mmx-bridge": [
   "https://raw.githubusercontent.com/welsione/dsh-mmx-bridge/main/docs/image-generation.png",
   "https://raw.githubusercontent.com/welsione/dsh-mmx-bridge/main/docs/speech-tts.png",
@@ -660,8 +667,5 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
- ],
- "https://github.com/weisiren000/dsh-remote-ssh-ops": [
-  "https://raw.githubusercontent.com/weisiren000/dsh-remote-ssh-ops/main/docs/assets/remote-workbench-preview.png"
  ]
 }
