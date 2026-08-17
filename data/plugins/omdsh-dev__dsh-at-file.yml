@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Codex-style `@file` mentions: search workspace files in the composer and attach their contents to prompts.'
   zh: Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。
-  ja: Codex 風の `@file` メンション。コンポーザーからワークスペースのファイルを検索し、その内容をプロンプトに添付できます。

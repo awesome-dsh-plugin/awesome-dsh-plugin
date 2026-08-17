@@ -4,4 +4,3 @@ category: session
 description:
   en: Auto-repairs the messages array after a tool-dispatch crash (orphaned tool_calls / tool messages), preventing 400 INVALID_REQUEST session lock-ups.
   zh: 工具调度崩溃后自动修复 messages 数组（孤儿 tool_calls / tool 消息），防止 400 INVALID_REQUEST 会话卡死。
-  ja: ツール実行のクラッシュ後に messages 配列を自動修復し（孤立した tool_calls / tool メッセージ）、400 INVALID_REQUEST によるセッションのロックを防ぎます。

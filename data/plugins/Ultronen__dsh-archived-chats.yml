@@ -4,4 +4,3 @@ category: session
 description:
   en: 'Archived Chats settings page for DeepSeek Harness: browse, search, unarchive, and delete archived sessions grouped by workspace — deletion takes effect immediately, no restart needed, even for sessions still resident in the background.'
   zh: DSH 已归档聊天管理页：浏览、搜索、取消归档与删除已归档会话，按工作区分组；删除即生效、无需重启，后台驻留的会话也能当场彻底删除。
-  ja: DeepSeek Harness の設定にアーカイブ済みチャットのページを追加。ワークスペース別にまとめたアーカイブ済みセッションを閲覧・検索・アーカイブ解除・削除でき、削除はバックグラウンドに残っているセッションでも再起動なしで即座に反映されます。

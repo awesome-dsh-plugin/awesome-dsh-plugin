@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Client-side writing panel for the Web UI: project volumes and stats, corpus library, full-text search, evolution version-chain diffs, and an SVG thread graph, shown only in writing-preset sessions.'
   zh: Web 客户端「写作」面板：项目分卷与统计、书库与全文检索、设定演化版本链 diff、线索 SVG 图谱，仅在写作预设会话显示。
-  ja: Web UI のクライアント側執筆パネル。プロジェクトの巻と統計、資料ライブラリ、全文検索、推敲のバージョン連鎖の差分、SVG の筋書きグラフを、執筆プリセットのセッションでのみ表示します。

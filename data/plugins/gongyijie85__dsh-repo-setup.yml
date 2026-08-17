@@ -4,5 +4,4 @@ category: tools
 description:
   en: 'Read-only repo bootstrap scanner (repo_setup_scan tool): detects stack/tests/docs/git/db and recommends plugins, MCP servers and hygiene files.'
   zh: 只读仓库体检引导工具（repo_setup_scan）：识别技术栈/测试/文档/git/数据库线索，给出插件、MCP 与卫生文件的安装建议。
-  ja: 読み取り専用のリポジトリ立ち上げスキャナー（repo_setup_scan ツール）。技術スタック/テスト/ドキュメント/git/DB を検出し、プラグイン、MCP サーバー、整備しておくべきファイルを提案します。
 

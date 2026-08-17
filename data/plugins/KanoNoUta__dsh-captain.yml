@@ -4,4 +4,3 @@ category: workflow
 description:
   en: GPT plans dependency DAGs, DeepSeek workers execute tasks with adaptive parallelism, and an optional GPT reviewer audits incremental Git diffs and drives repair rounds.
   zh: GPT 规划依赖 DAG，DeepSeek Worker 自适应并行执行任务，可选 GPT Reviewer 审核增量 Git Diff 并驱动返工轮次。
-  ja: GPT が依存関係の DAG を計画し、DeepSeek のワーカーが適応的な並列度でタスクを実行、任意で GPT のレビュアーが Git の差分を逐次監査して修正のラウンドを回します。

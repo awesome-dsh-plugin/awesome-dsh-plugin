@@ -4,4 +4,3 @@ category: model
 description:
   en: LLM provider that runs the locally installed Claude Code CLI as the model backend, so requests go through an existing Claude subscription instead of a metered API key; native tool calls are bridged over MCP.
   zh: LLM 供应商：把本机已安装的 Claude Code CLI 作为模型后端，请求走已订阅的 Claude 账号，无需按量计费的 API key；原生工具调用经 MCP 桥接。
-  ja: ローカルにインストールされた Claude Code CLI をモデルのバックエンドとして動かす LLM プロバイダー。従量課金の API キーではなく既存の Claude サブスクリプションを使ってリクエストします。ネイティブのツール呼び出しは MCP を介して橋渡しされます。

@@ -4,4 +4,3 @@ category: vision
 description:
   en: Native vision capability extension, using either Zhipu (free) or Qwen-VL (local).
   zh: 极简的原生视觉能力增强，支持免费的智谱模型或本地千问视觉模型。
-  ja: ネイティブな視覚機能の拡張。智譜（無料）か Qwen-VL（ローカル）のどちらかを使います。

@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'General-purpose knowledge base for DSH: import md/txt/json/yml/docx/pdf, folder management, FTS5 full-text search (BM25), and a Web management UI.'
   zh: DSH 通用知识库插件：导入 md/txt/json/yml/docx/pdf、目录化管理、FTS5 全文检索（BM25）、Web 管理界面。
-  ja: DSH 向けの汎用ナレッジベース。md/txt/json/yml/docx/pdf の取り込み、フォルダー管理、FTS5 による全文検索（BM25）、Web の管理 UI を備えます。

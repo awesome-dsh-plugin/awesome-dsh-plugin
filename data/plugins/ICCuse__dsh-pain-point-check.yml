@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Enforced pain-point gate: after two non-converged experiments it injects the three questions, denies non-investigative tool calls until answered, and blocks same-direction retries.'
   zh: 强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。
-  ja: 痛点の確認を強制するゲート。収束しない試行が 2 回続くと 3 つの問いを差し込み、答えるまで調査以外のツール呼び出しを拒否し、同じ方向の再試行を止めます。

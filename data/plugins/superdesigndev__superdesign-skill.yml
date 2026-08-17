@@ -4,4 +4,3 @@ category: skill
 description:
   en: 'Design skill for UI and marketing graphics on the Superdesign canvas: reads the repo for context, extracts its design system, then generates and iterates branchable design drafts, flow pages, and reusable components through the Superdesign CLI.'
   zh: 在 Superdesign 画布上做 UI 与营销图的设计技能：先读代码库拿上下文、抽取现有设计系统，再通过 Superdesign CLI 生成并迭代可分支的设计稿、流程页与可复用组件。
-  ja: Superdesign のキャンバス上で UI とマーケティング用グラフィックを作るデザインスキル。リポジトリを読んで文脈を把握し、そのデザインシステムを抽出したうえで、分岐できるデザイン案、フロー画面、再利用可能なコンポーネントを Superdesign CLI で生成・改良します。

@@ -4,4 +4,3 @@ category: vision
 description:
   en: Advertise image paste on text-only DeepSeek routes, describe attachments with a vision sidecar, and leave native vision models untouched.
   zh: 在纯文本 DeepSeek 线路上开放贴图准入，用视觉 sidecar 把附件转成文字，原生视觉模型不改写。
-  ja: テキスト専用の DeepSeek 経路でも画像の貼り付けを可能にし、添付は視覚のサイドカーが説明します。ネイティブに視覚対応のモデルはそのままです。

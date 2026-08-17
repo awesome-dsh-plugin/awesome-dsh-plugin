@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.'
   zh: 类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。
-  ja: 型付きでガードの効いたコンテナ操作。ps/logs/inspect/exec/start/stop と compose up/down を JSON 出力で提供し、プロジェクトを意識した対象選択と、破壊的操作の承認ゲートを備えます。

@@ -4,4 +4,3 @@ category: tools
 description:
   en: Manages multiple Jenkins servers and triggers jobs from a Settings page, model tools, or a per-workspace "Run Jenkins Job" entry, with a bilingual host + browser UI.
   zh: 管理多台 Jenkins 服务器，支持从设置页、模型工具或工作区级「执行 Jenkins Job」入口触发构建，宿主 + 浏览器双端、界面中英双语。
-  ja: 複数の Jenkins サーバーを管理し、設定ページ、モデルツール、ワークスペースごとの「Run Jenkins Job」からジョブを起動できます。ホストとブラウザの二言語 UI 付き。

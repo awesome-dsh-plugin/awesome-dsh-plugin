@@ -4,4 +4,3 @@ category: dev
 description:
   en: Reloads an upgraded plugin inside the running dsh process instead of restarting it, and rolls back to the old version when a reload fails.
   zh: 插件升级后在运行中的 dsh 内直接重载，无需重启；重载失败时回滚到旧版本并提示手动重启。
-  ja: '更新したプラグインを dsh を再起動せずに実行中のプロセス内で再読み込みし、失敗した場合は以前のバージョンにロールバックします。'

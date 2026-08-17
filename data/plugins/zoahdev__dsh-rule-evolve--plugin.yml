@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.'
   zh: 验证驱动的自我进化循环：失败日志自动变成经过验证的 AGENTS.md 规则；会话内插件（evolve_learn/evolve_apply/evolve_touch/evolve_recall）、工具体检、规则生命周期、本地召回。
-  ja: 検証を軸にした自己進化のループ。失敗のログが検証済みの AGENTS.md のルールになります。セッション内で動くプラグイン（evolve_learn / evolve_apply / evolve_touch / evolve_recall）、ツールによる検証ゲート、ルールのライフサイクル管理、ローカルでの想起を備えます。

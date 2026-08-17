@@ -4,4 +4,3 @@ category: tools
 description:
   en: A read_graph tool backed by a codebase knowledge graph (CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL relations).
   zh: 基于代码库知识图谱的 read_graph 工具（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL 关系）。
-  ja: コードベースの知識グラフ（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL の関係）に基づく read_graph ツール。

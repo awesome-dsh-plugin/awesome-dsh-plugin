@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Anti-bot HTTP fetch tools hardened by SXS''s production scraping stack (millions of requests/day): UA-pool rotation, retry with exponential backoff, anti-bot wall detection (captcha / verification challenges) and adaptive rate limiting — tools: `sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`.'
   zh: 反爬 HTTP 工具：UA 池轮换、指数退避重试、反爬墙检测（验证码/安全验证）与自适应限流，提炼自 SXS 生产采集体系（每日数百万请求）——工具：`sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`。
-  ja: SXS の本番スクレイピング基盤（1 日あたり数百万リクエスト）で鍛えた、bot 対策に強い HTTP 取得ツール。UA プールのローテーション、指数バックオフの再試行、bot 判定の壁（CAPTCHA や本人確認）の検出、適応的なレート制限を備えます——ツールは `sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`。

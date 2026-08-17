@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Scheduled coding runs in fresh agent sessions with auditable history.
   zh: 定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。
-  ja: 新しいエージェントセッションで定期的にコーディングを実行し、履歴を監査できる形で残します。

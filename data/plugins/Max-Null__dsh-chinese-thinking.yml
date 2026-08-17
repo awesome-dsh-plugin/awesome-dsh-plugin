@@ -4,4 +4,3 @@ category: session
 description:
   en: Injects one fixed system-prompt section so the agent thinks and replies in Chinese, regardless of the user's language.
   zh: 注入一条固定 system-prompt 段落，让 Agent 无论用户使用什么语言都始终用中文思考和回复。
-  ja: 固定のシステムプロンプトを 1 セクション注入し、ユーザーの言語にかかわらずエージェントが中国語で考えて中国語で答えるようにします。

@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.'
   zh: DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。
-  ja: DSH のモデル切り替え役。OpenAI 互換の任意のエンドポイントを指定でき、厳選した無料/低価格の DeepSeek プロバイダーのプリセットと、無料枠でレート制限に当たったときの自動フォールバックを備えます。

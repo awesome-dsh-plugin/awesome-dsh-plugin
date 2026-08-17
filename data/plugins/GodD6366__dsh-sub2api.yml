@@ -4,4 +4,3 @@ category: model
 description:
   en: 'Connect a sub2api gateway to DeepSeek Harness: OpenAI-compatible multi-provider routes (OpenAI / Claude / Grok / Gemini) behind one base URL, with per-key model discovery, usage lookup, and global vision/image tools.'
   zh: 将 sub2api 网关接入 DeepSeek Harness：用一个 base URL 统一管理 OpenAI / Claude / Grok / Gemini 等多供应商路由，支持按 key 发现模型、用量查询与全局视觉/图像生成工具。
-  ja: sub2api ゲートウェイを DeepSeek Harness に接続。OpenAI 互換のマルチプロバイダー経路（OpenAI / Claude / Grok / Gemini）を 1 つのベース URL にまとめ、キーごとのモデル検出、使用量の照会、共通の視覚/画像ツールを提供します。

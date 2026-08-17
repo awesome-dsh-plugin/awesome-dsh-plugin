@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'DSH self-updater in the settings page: one-click check/pull (`git pull --ff-only`), auto background checks, version diff and changelog preview with a red-dot reminder.'
   zh: 设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。
-  ja: 設定ページから使える DSH の自己更新機能。ワンクリックでの確認と取得（`git pull --ff-only`）、バックグラウンドでの自動確認、バージョン差分と変更履歴のプレビュー、赤ドットのお知らせを備えます。

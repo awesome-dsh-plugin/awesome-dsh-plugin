@@ -4,4 +4,3 @@ category: ui
 description:
   en: Cross-platform file drag-and-drop with raw path insertion, no file copying.
   zh: 跨平台文件拖拽与原始路径插入，无需复制文件。
-  ja: クロスプラットフォームのファイルドラッグ＆ドロップ。ファイルはコピーせず、生のパスを挿入します。

@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Native Windows system notification (Notification Center toast) when a task completes: goal completion or agent turn end.'
   zh: 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
-  ja: タスク完了時（ゴール達成またはエージェントのターン終了）に Windows のシステム通知（通知センターのトースト）を出します。

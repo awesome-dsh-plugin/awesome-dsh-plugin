@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Bridge dsh session status to the cc-pet desktop pet bubble: thinking, tool calls, and completion in real time.'
   zh: dsh ↔ cc-pet 桌面宠物状态桥：把会话状态（思考中 / 读取文件 / 运行命令 / 完成）实时推送到桌面宠物气泡。
-  ja: dsh のセッション状態を cc-pet デスクトップペットの吹き出しに橋渡しします。思考中、ツール呼び出し、完了をリアルタイムで伝えます。

@@ -4,4 +4,3 @@ category: ui
 description:
   en: Live token estimates and generation throughput for the dsh web GUI.
   zh: dsh web GUI 实时 token 估算与生成吞吐。
-  ja: dsh web GUI にトークン推定値と生成スループットをリアルタイム表示します。

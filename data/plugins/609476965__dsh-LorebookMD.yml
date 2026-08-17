@@ -4,4 +4,3 @@ category: fun
 description:
   en: Import SillyTavern/TavernAI character cards and world books, save them as local Markdown lore documents, and generate novel prose from your prompts with the world settings as reference.
   zh: 导入酒馆（SillyTavern/TavernAI）角色卡与世界书，落地为本地 Markdown 设定文档，激活创作模式后根据用户输入、参考世界书创作小说。
-  ja: SillyTavern/TavernAI のキャラクターカードとワールドブックを取り込み、ローカルの Markdown 設定資料として保存。その世界観を参照しながらプロンプトから小説の文章を生成します。

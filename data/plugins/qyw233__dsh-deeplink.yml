@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Deep links: open a specific session or workspace via `?session=` / `?workspace=`.'
   zh: '`?session=` / `?workspace=` 深链直达指定项目对话。'
-  ja: ディープリンク。`?session=` / `?workspace=` で特定のセッションやワークスペースを直接開けます。

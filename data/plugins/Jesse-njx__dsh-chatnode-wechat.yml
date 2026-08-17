@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Chat with, monitor, and approve your DSH agents from WeChat via the iLink gateway: text both ways, session targeting, digest heartbeats, and numbered approval prompts.'
   zh: 通过 iLink 网关在微信里与 DSH agent 聊天、监控与审批：双向文本、会话切换、进度摘要与编号审批提示。
-  ja: iLink ゲートウェイ経由で WeChat から DSH エージェントと会話し、監視や承認も行えます。双方向のテキスト、対象セッションの指定、要約のハートビート、番号付きの承認プロンプトに対応。

@@ -4,4 +4,3 @@ category: session
 description:
   en: Delete conversations with a confirmation dialog and manage archived sessions (archive/unarchive) in the DeepSeek Harness web UI.
   zh: 在 DeepSeek Harness Web 中删除对话（二次确认），并管理归档会话（移入/移出归档）。
-  ja: DeepSeek Harness の web UI で、確認ダイアログ付きの会話削除と、アーカイブ済みセッションの管理（アーカイブ/解除）ができます。

@@ -4,4 +4,3 @@ category: fun
 description:
   en: 'Codex-style desktop pet: a floating animated sprite in the corner that mirrors the agent''s running state (working, waiting, failed, done).'
   zh: Codex 风格桌面宠物：右下角悬浮动画精灵，随 agent 运行状态实时变化（工作、等待、报错、完成）。
-  ja: Codex 風のデスクトップペット。画面隅に浮かぶアニメーションのスプライトが、エージェントの実行状態（作業中、待機中、失敗、完了）を映します。

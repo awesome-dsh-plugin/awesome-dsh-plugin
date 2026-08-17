@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Turn any SVG logo into a motion video inside DSH: an `animate_svg` tool renders a transparent 30fps assembly animation (parts fly in, or the whole mark settles) and synthesizes an MP4 with ffmpeg.'
   zh: '在 DSH 里把任意 SVG logo 变成动效视频：`animate_svg` 工具渲染透明背景 30fps 组装动画（零件飞入或整体落位），并用 ffmpeg 合成 MP4。'
-  ja: DSH の中で SVG のロゴをモーション動画に変えます。`animate_svg` ツールが背景透過の 30fps の組み立てアニメーション（パーツが飛び込む、あるいはマーク全体が収まる）を描画し、ffmpeg で MP4 に合成します。

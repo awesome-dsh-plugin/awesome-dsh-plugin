@@ -4,4 +4,3 @@ category: tools
 description:
   en: Expose MineRU document parsing tools to the model.
   zh: 向模型暴露 MineRU 文档解析工具。
-  ja: MineRU のドキュメント解析ツールをモデルから使えるようにします。

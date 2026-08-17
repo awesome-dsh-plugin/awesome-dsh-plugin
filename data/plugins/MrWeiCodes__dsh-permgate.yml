@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Fine-grained permission gateway: per-category tool-call review (outside-workspace directories, commands, file read/write, subagents, repeated actions) with global & per-project allow/deny exceptions, quick-tool defaults, custom rules, a bilingual approval modal with inline diff details, custom rejection reasons and a sandbox-upgrade flow.'
   zh: 细粒度权限网关：按分类（工作区外目录/命令/读写文件/子代理/重复操作）逐项审查工具调用，全局/项目双级白黑名单、快捷工具默认值、自定义规则，中英文审批弹窗（内联 diff 详情、自定义拒绝意见）与底层沙箱升级流程。
-  ja: きめ細かなパーミッションゲートウェイ。カテゴリ別（ワークスペース外のディレクトリ、コマンド、ファイルの読み書き、サブエージェント、繰り返し操作）にツール呼び出しをレビューし、グローバルとプロジェクト単位の許可/拒否の例外、よく使うツールの既定値、カスタムルール、差分をその場で見られる二言語の承認モーダル、任意の拒否理由、サンドボックスの権限引き上げフローを備えます。

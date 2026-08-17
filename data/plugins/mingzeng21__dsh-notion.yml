@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Connect dsh to Notion via the official Notion MCP (OAuth + PKCE): search, read, and write pages, databases, and comments through `mcp__notion__*` tools.'
   zh: 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
-  ja: 公式の Notion MCP（OAuth ＋ PKCE）を通じて dsh を Notion に接続します。`mcp__notion__*` ツールでページ、データベース、コメントの検索・読み取り・書き込みができます。

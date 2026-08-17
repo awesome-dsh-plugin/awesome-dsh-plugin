@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'Cited memory over DSH''s lossless session log: distilled facts carry `(sessionId, eventRange)` citations that expand back to the exact original log excerpt.'
   zh: 基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。
-  ja: DSH の無損失セッションログを引用できるメモリ。抽出された事実には `(sessionId, eventRange)` の引用が付き、元のログの該当箇所をそのまま展開できます。

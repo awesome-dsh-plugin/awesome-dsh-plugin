@@ -4,4 +4,3 @@ category: workflow
 description:
   en: 'Disk-persisted execution planning for DSH: milestone/step state machines, dependency gating, an audit event stream, and a deterministic completion gate via dsh tools, CLI, or skill.'
   zh: '磁盘持久化的执行规划插件：以 .trail 目录承载里程碑/步骤状态机、依赖标注、审计事件与复盘纪要，提供 dsh 工具、CLI 与技能三种接口。'
-  ja: DSH 向けの、ディスクに永続化する実行計画。マイルストーン/ステップの状態機械、依存関係によるゲート、監査イベントストリーム、決定論的な完了ゲートを、dsh のツール・CLI・スキルから利用できます。

@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Update manager for installed plugins: check for updates, back up, and roll back.'
   zh: 已装插件更新管理：检查更新、备份与回滚。
-  ja: インストール済みプラグインの更新マネージャー。更新の確認、バックアップ、ロールバックに対応します。

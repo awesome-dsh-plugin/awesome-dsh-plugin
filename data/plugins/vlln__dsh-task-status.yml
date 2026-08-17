@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Background task status bar: progress plus live output tail on the chat page.'
   zh: 后台任务状态条：对话页任务进度 + 实时输出 tail。
-  ja: バックグラウンドタスクのステータスバー。チャット画面に進捗と出力の末尾をリアルタイム表示します。

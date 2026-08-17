@@ -4,4 +4,3 @@ category: notify
 description:
   en: Per-workspace completion ringtones plus attention sounds for approval, question, plan-review, goal-blocked, and task-failure events, with built-in synth, voice (TTS), and custom audio.
   zh: 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
-  ja: ワークスペースごとの完了時の着信音に加え、承認、質問、プランレビュー、ゴールの停滞、タスク失敗のイベントに注意喚起の音を鳴らします。内蔵シンセ、音声（TTS）、任意の音声ファイルに対応。

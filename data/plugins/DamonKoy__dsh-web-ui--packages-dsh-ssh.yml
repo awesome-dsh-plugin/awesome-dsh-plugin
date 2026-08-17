@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Remote SSH operations for the dsh web GUI: host config store and persisted sessions.'
   zh: dsh web GUI 远程 SSH 操作：主机配置存储、持久化会话。
-  ja: dsh web GUI からのリモート SSH 操作。ホスト設定の保存とセッションの永続化に対応します。

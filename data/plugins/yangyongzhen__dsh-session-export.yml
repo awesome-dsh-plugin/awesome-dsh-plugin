@@ -4,4 +4,3 @@ category: session
 description:
   en: Export sessions to Markdown/JSON for review, replay, and per-session cost summaries.
   zh: 会话导出为 Markdown/JSON，便于复盘、重放与单会话成本汇总。
-  ja: セッションを Markdown/JSON に書き出し、振り返り、再生、セッションごとのコスト集計に使えます。

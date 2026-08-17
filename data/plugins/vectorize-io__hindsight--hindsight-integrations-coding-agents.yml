@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'Hindsight, agent memory that learns: long-term project memory with auto recall and retain, knowledge pages, deep reflection, and per-repo memory banks.'
   zh: Hindsight：会学习的 Agent 长期记忆系统，自动召回/保存、知识页、深度反思与按仓库隔离的记忆银行。
-  ja: 学習するエージェントメモリ Hindsight。自動の想起と保持を伴う長期のプロジェクトメモリ、ナレッジページ、深い振り返り、リポジトリごとのメモリバンクを備えます。

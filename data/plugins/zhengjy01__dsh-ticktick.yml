@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Two-way TickTick/Dida365 (滴答清单) task sync via the official OAuth Open API: pull tasks across lists, create/update/complete/delete tasks, and one-shot title-deduped sync, with a web settings panel.'
   zh: 基于官方 OAuth Open API 双向同步滴答清单（TickTick/Dida365）任务：拉取各清单任务、创建/更新/完成/删除、按标题去重的一键同步，带 Web 设置面板。
-  ja: 公式の OAuth Open API を使った TickTick/滴答清单 の双方向タスク同期。複数リストからのタスク取得、タスクの作成/更新/完了/削除、タイトルの重複を除いた一括同期に対応し、Web の設定パネルも備えます。

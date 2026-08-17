@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Evaluation harness for DSH plugins: YAML cases drive real headless agent runs, assert on tool calls, args, results and token usage, with a baseline gate for CI regression.'
   zh: DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。
-  ja: DSH プラグイン向けの評価ハーネス。YAML のケースから実際の headless エージェント実行を駆動し、ツール呼び出し・引数・結果・トークン使用量をアサートします。CI でのリグレッション検知用にベースラインゲートも用意。

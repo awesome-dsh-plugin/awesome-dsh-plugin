@@ -4,4 +4,3 @@ category: memory
 description:
   en: Scans the skills visible to the current session and ranks them by relevance to the recent conversation.
   zh: 扫描当前会话可见的技能，按与最近对话的相关性排序推荐。
-  ja: 現在のセッションから見えるスキルを走査し、直近の会話との関連度で並べ替えます。

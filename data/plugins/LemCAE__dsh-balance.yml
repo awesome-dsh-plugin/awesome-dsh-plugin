@@ -4,4 +4,3 @@ category: usage
 description:
   en: DeepSeek account balance and current-session spend estimate in a top-bar chip and settings card, with pause-aware auto-refresh, an editable official price table, a `deepseek_balance` model tool, and a bilingual UI.
   zh: 顶栏徽章与设置卡片展示 DeepSeek 账户余额与当前会话预估花费：暂停感知的自动刷新、可编辑官方价格表、`deepseek_balance` 模型工具与中英文界面。
-  ja: DeepSeek アカウントの残高と現セッションの支出見積もりを、トップバーのチップと設定カードに表示。一時停止を考慮した自動更新、編集できる公式価格表、`deepseek_balance` モデルツール、二言語対応 UI を備えます。

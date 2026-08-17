@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Sound + popup when a task completes: a Web Audio chime, an in-page toast, and a system notification while the page is in the background (browser-only, cross-platform).'
   zh: 任务完成时播放提示音并弹出小通知：Web Audio 合成音效、页面内 toast、页面在后台时系统通知，纯浏览器方案、零系统依赖、跨平台。
-  ja: タスク完了時に音とポップアップで知らせます。Web Audio のチャイム、ページ内トースト、ページが背面にあるときのシステム通知（ブラウザのみで完結、クロスプラットフォーム）。

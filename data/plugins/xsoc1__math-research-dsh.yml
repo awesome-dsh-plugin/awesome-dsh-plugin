@@ -4,4 +4,3 @@ category: skill
 description:
   en: 'Rigorous open mathematics research suite: four agent skills (rigorous-open-math-research, manage-math-research-program, math-research-workflow, lean-verify) for theorem solving with adversarial audit, research program management, pipeline orchestration, and Lean 4 formalization audit; CI-verified tests and mechanical upstream sync.'
   zh: 严谨开放数学研究套件：4 个 agent skill（rigorous-open-math-research、manage-math-research-program、math-research-workflow、lean-verify），覆盖对抗性审计的定理求解、研究项目管理、流水线编排与 Lean 4 形式化审计；CI 测试与机械式上游同步。
-  ja: 厳密な未解決問題の数学研究スイート。4 つのエージェントスキル（rigorous-open-math-research、manage-math-research-program、math-research-workflow、lean-verify）で、敵対的な監査を伴う定理の解決、研究プログラムの管理、パイプラインの統括、Lean 4 での形式化の監査を行います。CI で検証されたテストと、上流との機械的な同期を備えます。

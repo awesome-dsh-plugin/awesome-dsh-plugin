@@ -4,7 +4,7 @@ Thanks for helping grow the list! / 感谢参与！
 
 ## Adding a plugin / 收录插件
 
-> **The READMEs are generated — don't edit them by hand.** The list lives in `data/plugins/`, one YAML file per plugin. / **各语言 README 由脚本生成，请勿手工编辑。** 列表数据在 `data/plugins/`，一个插件一个 YAML 文件。
+> **The READMEs are generated — don't edit them by hand.** The list lives in `data/plugins/`, one YAML file per plugin. / **两个 README 由脚本生成，请勿手工编辑。** 列表数据在 `data/plugins/`，一个插件一个 YAML 文件。
 
 Open a PR that adds **one file**, named after your repo — `data/plugins/<owner>__<repo>.yml`:
 
@@ -14,11 +14,12 @@ name: owner/repo                          # link text shown in the list / 列表
 category: ui                              # see the category list below / 见下方分类列表
 description:
   en: One-line description ending with a period.
-  zh: 一句话描述，以句号结尾。
-  ja: 句点で終わる一文の説明。
+  zh: 一句话描述，以句号结尾。   # optional — a maintainer will add it / 可选，维护者会补
 ```
 
-Then regenerate every README and commit them along with your YAML file / 然后重新生成各语言 README，与 YAML 文件一起提交：
+**Only `description.en` is required.** If you can't write the Chinese, leave `zh` out and a maintainer will add it — a missing translation is our work, not a reason to bounce your plugin. / **只有 `description.en` 是必填的。** 写不了中文就不写 `zh`，维护者会补上——缺翻译是我们的活，不该成为你的插件被打回的理由。
+
+Then regenerate both READMEs and commit them along with your YAML file / 然后重新生成两个 README，与 YAML 文件一起提交：
 
 ```sh
 npm ci
@@ -31,7 +32,6 @@ node scripts/generate-readme.mjs
 description:
   en: 'Vision toolkit: OCR, grounding and pixel diff.'   # ✅ quoted / 加引号
   zh: '识图工具包：OCR、定位与像素比对。'                    # 中文全角冒号无此问题，加引号也无妨
-  ja: '画像認識ツールキット：OCR、座標特定、ピクセル比較。'      # 日文全角冒号同理 / 全角コロンなら問題なし
 ```
 
 ```yaml

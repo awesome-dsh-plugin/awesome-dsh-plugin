@@ -4,5 +4,4 @@ category: ui
 description:
   en: Yellow one-line prompt-cache-miss notice under assistant replies that rebuilt the prompt cache.
   zh: 在重建了提示缓存的 assistant 回复下方显示一条黄色的缓存未命中提示。
-  ja: プロンプトキャッシュを作り直したアシスタントの返信の下に、キャッシュミスを知らせる黄色の 1 行を表示します。
 tarball: https://github.com/wefio/dsh-cache-miss/releases/latest/download/dsh-cache-miss-0.1.0.tgz

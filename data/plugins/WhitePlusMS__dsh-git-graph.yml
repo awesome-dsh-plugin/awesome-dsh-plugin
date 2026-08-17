@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Dedicated read-only Git Graph view beside Chat and Trajectory: commit topology, local/remote/tag refs, HEAD and working-tree status, search, filtering, first-parent mode, refresh, and load more.'
   zh: Chat 和 Trajectory 旁的独立 Git Graph 视图：提交拓扑、本地/远程/tag 引用、HEAD 与工作区状态、搜索、筛选、首父模式、刷新和加载更多。
-  ja: チャットと軌跡の隣に置く読み取り専用の Git Graph ビュー。コミットのトポロジー、ローカル/リモート/タグの参照、HEAD と作業ツリーの状態、検索、絞り込み、first-parent モード、更新、追加読み込みに対応します。

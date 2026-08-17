@@ -4,4 +4,3 @@ category: dev
 description:
   en: Plugin compiler with a blueprint registry (scaffold → validate → deploy) exposed as a runtime service, three model tools, and a blueprint-gallery settings page.
   zh: 插件编译器：以运行时服务提供蓝图注册表（脚手架 → 校验 → 部署），配三个模型工具和一个蓝图画廊设置页。
-  ja: 設計図レジストリを備えたプラグインコンパイラー（雛形作成 → 検証 → デプロイ）。実行時サービス、3 つのモデルツール、設計図ギャラリーの設定ページとして公開されます。

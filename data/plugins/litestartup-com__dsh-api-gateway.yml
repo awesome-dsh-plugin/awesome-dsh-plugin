@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'REST + SSE gateway exposing running Harness sessions to third-party clients: API-key auth, token streaming, workspace grouping, and adopting GUI sessions to keep chatting.'
   zh: 为第三方客户端提供 REST + SSE 网关：API 密钥鉴权、token 流式回包、会话工作区分组，并可接管 GUI 会话继续对话。
-  ja: 稼働中の Harness のセッションをサードパーティのクライアントに公開する REST ＋ SSE ゲートウェイ。API キー認証、トークンのストリーミング、ワークスペース単位のグループ分け、GUI のセッションを引き取って会話を続ける機能を備えます。

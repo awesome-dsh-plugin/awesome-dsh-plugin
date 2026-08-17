@@ -4,4 +4,3 @@ category: market
 description:
   en: 'A plugin manager tab in Settings → Plugins: Chinese names and plain-language descriptions for every installed plugin, one-click enable/disable, in-UI notes editing, and search/filter over the installed catalog.'
   zh: 设置 → 插件里的插件管理页：已装插件中文名与白话描述、一键启停、界面内改备注，支持搜索与筛选。
-  ja: 設定 → プラグインにプラグイン管理タブを追加。インストール済みプラグインごとに中国語名と平易な説明を表示し、ワンクリックで有効化/無効化、UI 上でのメモ編集、一覧の検索と絞り込みができます。

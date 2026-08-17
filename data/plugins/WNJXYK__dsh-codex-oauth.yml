@@ -4,4 +4,3 @@ category: model
 description:
   en: Use a ChatGPT/Codex subscription in DeepSeek Harness with GPT models, image generation, web search, subscription quota reporting, model and feature controls, and browser or device-code OAuth sign-in.
   zh: 在 DeepSeek Harness 中使用 ChatGPT/Codex 订阅接入 GPT 模型、图像生成与 Web 搜索，并支持订阅额度显示、模型与功能控制，以及浏览器或设备码 OAuth 登录。
-  ja: DeepSeek Harness で ChatGPT/Codex のサブスクリプションを使えるようにします。GPT モデル、画像生成、Web 検索、サブスクリプションのクォータ表示、モデルと機能の制御に対応し、ブラウザまたはデバイスコードでの OAuth ログインが可能です。

@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Google AI Studio-style floating preview for the Web UI: a draggable/resizable iframe preview with aspect-ratio and resolution presets, plus a VS Code-style code window with direct editing, confirmed writes, and session-log recording.'
   zh: Web UI 悬浮预览与代码窗口：Google AI Studio 风格的 iframe 预览（宽幅比/分辨率预设、一键放大），VS Code 风格代码窗支持直接编辑，保存需确认并写入会话日志。
-  ja: Google AI Studio 風の Web UI 向けフローティングプレビュー。ドラッグとリサイズができる iframe プレビューにアスペクト比と解像度のプリセットを備え、直接編集・確認つき書き込み・セッションログへの記録に対応した VS Code 風のコードウィンドウも付きます。

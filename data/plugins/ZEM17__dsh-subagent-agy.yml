@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Google Antigravity CLI (agy) as a DSH product subagent: delegate tasks to a Gemini coding agent with your Antigravity login (no API key), with conversation follow-ups, background streaming progress, image analysis by path, and a pop-up login window.'
   zh: 把 Google Antigravity CLI（agy）接入 DSH 作为产品子代理：用 Antigravity 登录态（无需 API key）委托 Gemini 编程智能体干活，支持对话续聊、后台流式进度、按路径识图与自动弹出登录窗口。
-  ja: Google Antigravity CLI（agy）を DSH のサブエージェントとして利用。Antigravity のログイン情報だけで（API キー不要）Gemini のコーディングエージェントにタスクを委譲でき、会話の続き、バックグラウンドでの進捗ストリーミング、パス指定での画像解析、ログイン用のポップアップウィンドウに対応します。

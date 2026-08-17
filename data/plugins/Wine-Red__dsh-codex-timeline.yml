@@ -4,4 +4,3 @@ category: ui
 description:
   en: Left-edge user-Turn navigation rail with reading-position highlighting, hover previews of per-turn metrics and model-answer excerpts, keyboard and click-to-jump controls, and local conversation search.
   zh: 左侧用户轮次导航轨道：随阅读位置高亮，悬停预览单轮指标与模型回答摘要，支持键盘和点击跳转及本地会话搜索。
-  ja: 左端に置くユーザーターンのナビゲーションレール。読んでいる位置のハイライト、ターンごとの指標とモデル回答の抜粋をホバーで表示、キーボードとクリックでのジャンプ、ローカルの会話検索に対応します。

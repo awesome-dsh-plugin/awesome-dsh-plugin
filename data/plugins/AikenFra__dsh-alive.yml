@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Zero-token online status indicator for the DeepSeek Harness web UI: an always-visible online/offline dot in the conversation header, auto-refreshed every 15 seconds with no LLM calls.'
   zh: 零 token 在线状态指示器：会话头部常驻显示 ● 在线 / ● 离线 状态点，每 15 秒自动检测一次，不调用任何 LLM。
-  ja: DeepSeek Harness web UI 向けの、トークンを消費しないオンライン状態インジケーター。会話ヘッダーに常時オンライン/オフラインのドットを表示し、LLM を呼ばずに 15 秒ごとに自動更新します。

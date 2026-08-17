@@ -4,4 +4,3 @@ category: workflow
 description:
   en: 'Declarative task-DAG orchestration for DSH: validates dependency graphs, runs topological task layers in parallel through workflow-backed subagents, and propagates failures deterministically.'
   zh: DSH 声明式任务 DAG 编排：校验依赖图，通过工作流子智能体并行执行拓扑任务层，并确定性传播失败。
-  ja: DSH 向けの宣言的なタスク DAG のオーケストレーション。依存グラフを検証し、トポロジカル順に並べた各層をワークフロー基盤のサブエージェントで並列実行し、失敗を決定論的に伝播させます。

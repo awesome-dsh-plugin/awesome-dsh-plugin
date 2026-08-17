@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.'
   zh: 任务完成或需要确认/输入时发送操作系统原生通知：Windows toast、macOS osascript、Linux notify-send。
-  ja: タスクの完了時や確認が必要なときにシステム標準の通知を出します。Windows のトースト、macOS の osascript、Linux の notify-send に対応。

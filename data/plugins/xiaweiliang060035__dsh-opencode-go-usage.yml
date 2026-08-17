@@ -4,4 +4,3 @@ category: usage
 description:
   en: Floating widget showing real-time OpenCode Go subscription usage (rolling/weekly/monthly) for every API key, with rate-limit alerts and automatic key-pool discovery.
   zh: 悬浮组件实时显示 OpenCode Go 各 key 用量（滚动/每周/每月），限流预警，自动发现 key 池。
-  ja: すべての API キーについて OpenCode Go のサブスクリプション使用状況（ローリング/週次/月次）をリアルタイム表示するフローティングウィジェット。レート制限の警告とキープールの自動検出に対応します。

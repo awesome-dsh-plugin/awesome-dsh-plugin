@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Remote host tunnel manager: runs dsh web on a remote Linux server (systemd supervision, no root needed) behind an auto-reconnecting SSH tunnel; allocates and registers remote ports on the server, multi-user safe, with an audit view.'
   zh: 远程主机隧道管理器：把 dsh web 跑在远程 Linux 服务器上（systemd 守护、免 root），本地经自动重连的 SSH 隧道访问；远程端口自动分配并在服务器登记留档，支持多人共用与 audit 审查。
-  ja: リモートホストのトンネル管理。リモートの Linux サーバーで dsh web を動かし（systemd で管理、root 不要）、自動再接続する SSH トンネル越しに接続します。サーバー側でリモートポートを割り当てて登録し、複数ユーザーでも安全で、監査ビューも備えます。

@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Voice input for the Web UI: a mic button that drives local VocoType offline speech recognition and auto-inserts recognized text into the composer (auto-deploy, dedupe, continuous dictation).'
   zh: Web UI 语音输入：输入框麦克风按钮驱动本地 VocoType 离线识别，识别结果自动插入输入框（自动部署/防重复/持续输入）。
-  ja: Web UI の音声入力。マイクボタンからローカルの VocoType によるオフライン音声認識を動かし、認識したテキストをコンポーザーに自動挿入します（自動配置、重複排除、連続ディクテーション）。

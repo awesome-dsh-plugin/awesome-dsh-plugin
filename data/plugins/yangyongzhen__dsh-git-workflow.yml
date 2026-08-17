@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Conventional-commit enforcement, changelog generation, PR summaries and branch pushes through the plain git CLI.
   zh: 规范提交（Conventional Commits）、自动 changelog、PR 描述生成与分支推送，纯 git CLI 实现。
-  ja: 素の git CLI を通じて、Conventional Commits の強制、変更履歴の生成、PR の要約、ブランチの push を行います。

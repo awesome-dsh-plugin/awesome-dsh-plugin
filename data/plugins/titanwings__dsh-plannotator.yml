@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Plan review with anchored annotations and structured feedback back to the agent.
   zh: 计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。
-  ja: 位置を固定した注釈と構造化されたフィードバックをエージェントに返せるプランレビュー。

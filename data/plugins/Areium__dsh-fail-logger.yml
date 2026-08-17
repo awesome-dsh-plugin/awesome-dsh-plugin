@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Auto-log failed tool calls across native tools, PTC run_code, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.'
   zh: 全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。
-  ja: ネイティブツール、PTC の run_code、インライン呼び出しにまたがって失敗したツール呼び出しを自動記録。原因を重複排除して件数とともにスキルに蓄積し、同じ失敗を繰り返さないようにします。

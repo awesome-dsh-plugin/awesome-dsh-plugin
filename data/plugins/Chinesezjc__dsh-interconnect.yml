@@ -4,4 +4,3 @@ category: session
 description:
   en: Cross-instance message and event handoff between DSH instances via an interconnect server.
   zh: 跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。
-  ja: interconnect サーバーを介した DSH インスタンス間のメッセージとイベントの受け渡し。

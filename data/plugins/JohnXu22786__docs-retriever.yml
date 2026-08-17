@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Doctrove: versioned library documentation retrieval MCP server for coding agents — catalog lookup, version selection and focus-ranked doc extraction, with zero runtime dependencies and a dsh bundle.'
   zh: doctrove：面向编码 agent 的版本化库文档检索 MCP server——目录检索、版本选择与按主题提取带相关度排序的文档片段，零运行时依赖，dsh bundle 接入。
-  ja: 'Doctrove: コーディングエージェント向けの、バージョン対応ライブラリドキュメント検索 MCP サーバー。カタログ検索、バージョン選択、関心に応じてランク付けした抽出に対応し、実行時依存ゼロで dsh バンドルも提供します。'

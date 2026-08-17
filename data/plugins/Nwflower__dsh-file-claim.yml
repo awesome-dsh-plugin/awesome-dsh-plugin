@@ -4,4 +4,3 @@ category: session
 description:
   en: File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).
   zh: 同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。
-  ja: 同じワークスペースで並行して動く DSH セッションのためのファイルの占有/解放保護（ハートビートが途絶えたら引き継ぎ、保留中の 3 方向マージ領域つき）。

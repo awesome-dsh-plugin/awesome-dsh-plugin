@@ -4,4 +4,3 @@ category: usage
 description:
   en: 'OpenCode Go usage bar in the composer dock: rolling/weekly/monthly quota rings, DSH-session token & cost stats priced with live official rates, per-model and current-session scope breakdowns with live per-session updates, one-click API key copy.'
   zh: 输入框下方常驻 OpenCode Go 用量条：5 小时/每周/每月配额圆环，DSH 会话 token 与花费统计（官方实时定价），支持按模型与按「本次会话」范围联动明细（本次会话实时更新），一键复制 API Key。
-  ja: コンポーザーのドックに表示する OpenCode Go の使用量バー。ローリング/週次/月次のクォータリング、公式レートをリアルタイム取得して算出する DSH セッションのトークンとコスト、モデル別と現セッションの内訳（セッションごとにリアルタイム更新）、API キーのワンクリックコピーに対応します。

@@ -4,4 +4,3 @@ category: notify
 description:
   en: Notifications for four session states, with browser alerts and prompts.
   zh: 会话完成等四种状态的通知响应，支持浏览器提示。
-  ja: 4 つのセッション状態に対する通知。ブラウザのアラートとプロンプトで知らせます。

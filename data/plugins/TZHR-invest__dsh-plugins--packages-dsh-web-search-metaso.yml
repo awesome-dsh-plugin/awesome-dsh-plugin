@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Metaso (秘塔AI搜索) search & reader providers for the web seam: web_search returns page summaries, web_fetch reads full-page markdown, multi-scope search (webpage/document/paper/image/video/podcast).'
   zh: 秘塔AI搜索 providers for ctx.web：web_search 返回网页摘要，web_fetch 读取网页全文 markdown，多范围搜索（网页/文库/论文/图片/视频/播客）。
-  ja: web の接続点向けの秘塔 AI 検索（Metaso）の検索・読み取りプロバイダー。web_search はページの要約を返し、web_fetch は全文を Markdown で読み取ります。範囲を指定した検索（ウェブページ/文書/論文/画像/動画/ポッドキャスト）に対応。

@@ -4,4 +4,3 @@ category: theme
 description:
   en: 'API key rotation pool for your LLM providers: auto-discovers providers from settings, per-provider multi-key round-robin, failover on 401/403/429, and cooldown recovery.'
   zh: 对话模型 API Key 轮换池：自动检测 settings 中的厂商，每个厂商下多 Key 轮询，401/403/429 自动切换，冷却恢复。
-  ja: LLM プロバイダー向けの API キーのローテーションプール。設定からプロバイダーを自動検出し、プロバイダーごとに複数キーをラウンドロビンし、401/403/429 でフェイルオーバー、クールダウン後に復帰します。

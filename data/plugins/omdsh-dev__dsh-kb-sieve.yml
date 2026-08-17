@@ -4,4 +4,3 @@ category: tools
 description:
   en: Build auditable KB packs (SQLite FTS5) from md/txt/docx/pdf with deterministic retrieval and original-text reading.
   zh: 从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。
-  ja: md/txt/docx/pdf から監査できる KB パック（SQLite FTS5）を構築します。決定論的な検索と原文の読み取りに対応。

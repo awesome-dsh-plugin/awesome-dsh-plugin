@@ -4,4 +4,3 @@ category: dev
 description:
   en: Conversation header badge showing the DeepSeek Harness version, checking npm for the latest release and prompting upgrades.
   zh: 会话顶栏徽章：显示 DeepSeek Harness 当前版本，自动检查 npm 最新版本，有新版时提示升级。
-  ja: 会話ヘッダーに DeepSeek Harness のバージョンバッジを表示。npm で最新リリースを確認し、更新を促します。

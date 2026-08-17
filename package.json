@@ -10,8 +10,7 @@
   "license": "CC0-1.0",
   "files": [
     "README.md",
-    "README.zh.md",
-    "README.ja.md"
+    "README.zh.md"
   ],
   "keywords": [
     "awesome",

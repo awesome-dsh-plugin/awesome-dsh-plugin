@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Free voice closed loop for the Web UI: browser SpeechRecognition mic input with live interim results plus read-aloud speaker buttons and auto-read for assistant replies, zero configuration and no API key.'
   zh: Web UI 免费语音闭环：浏览器语音识别输入（实时中间结果上屏）+ 助手回复朗读与自动朗读，零配置、免 API key。
-  ja: Web UI で完結する無料の音声ループ。ブラウザの SpeechRecognition による音声入力（途中経過も表示）と、アシスタントの返信の読み上げボタン・自動読み上げを、設定不要・API キー不要で提供します。

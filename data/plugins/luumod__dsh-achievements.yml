@@ -4,4 +4,3 @@ category: fun
 description:
   en: 'Achievement and gamification plugin: unlock badges for turns, tool calls, sessions, daily streaks and coding behavior (edits/reads/tests), with a badge wall, unlock toasts and a ctx.achievements SDK.'
   zh: 成就与游戏化插件：按回合、工具调用、会话、连续天数与编码行为（编辑/读取/测试）解锁徽章，带徽章墙、解锁 toast 与 ctx.achievements SDK。
-  ja: 実績とゲーミフィケーションのプラグイン。ターン、ツール呼び出し、セッション、連続日数、コーディングの振る舞い（編集/読み取り/テスト）に応じてバッジを解除でき、バッジの壁、解除時のトースト、ctx.achievements の SDK を備えます。

@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Installation safety gate for DSH plugins: antivirus-style scan of install scripts, permissions, secrets and network callbacks on local directories or npm tarballs, returning a BLOCK/WARN/PASS verdict before "dsh plugin add".'
   zh: DSH 插件的安装安全闸门：在 "dsh plugin add" 前对本地目录或 npm 包做"杀毒"式扫描（安装脚本、权限、密钥、网络回连），给出 BLOCK/WARN/PASS 判定。
-  ja: DSH プラグインのインストール安全ゲート。ローカルのディレクトリや npm の tarball に対して、インストールスクリプト、権限、秘密情報、ネットワークへのコールバックをウイルス対策ソフトのようにスキャンし、「dsh plugin add」の前に BLOCK/WARN/PASS の判定を返します。

@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Skills and optional MCP rows for ten Russian marketplaces: price comparison across Wildberries, Detsky Mir and Yandex Market, plus per-source search, product cards and reviews. The 13 skills load on install; both MCP rows stay disabled until RU_MARKETPLACE_MCP_DIR points at a local clone, which needs Python 3.12+ and uv.'
   zh: 面向俄罗斯十家电商平台的技能与可选 MCP 行：跨 Wildberries、Detsky Mir、Yandex Market 比价，以及各平台的搜索、商品卡与评论。安装后 13 个技能立即可用；两行 MCP 默认关闭，需将 RU_MARKETPLACE_MCP_DIR 指向本地克隆，该克隆需要 Python 3.12+ 与 uv。
-  ja: ロシアの 10 のマーケットプレイス向けのスキルと、任意の MCP 行。Wildberries、Detsky Mir、Yandex Market をまたいだ価格比較に加え、サイトごとの検索、商品カード、レビューに対応します。13 のスキルはインストール時に読み込まれ、MCP の 2 行は RU_MARKETPLACE_MCP_DIR がローカルのクローンを指すまで無効のままです（Python 3.12 以上と uv が必要）。

@@ -4,4 +4,3 @@ category: session
 description:
   en: Local, per-session LIFO prompt stash for temporarily setting aside unfinished composer text and safely restoring it later.
   zh: 本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。
-  ja: セッションごとにローカルで動く LIFO 方式のプロンプト退避。書きかけのコンポーザーの文章を一時的に脇へ置き、あとで安全に戻せます。

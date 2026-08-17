@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'The most complete GitHub integration for dsh: repo overview, releases, issues, pull requests, contributors, search, and a deep repo report with TTL caching — no API key needed.'
   zh: 目前最完整的 dsh GitHub 整合：仓库概览、Release、Issue、PR、贡献者、搜索与一键深度报告，内置 TTL 缓存，无需 API Key。
-  ja: dsh 向けで最も充実した GitHub 連携。リポジトリの概要、リリース、issue、プルリクエスト、コントリビューター、検索に加え、TTL キャッシュ付きの詳細なリポジトリレポートを提供します。API キーは不要です。

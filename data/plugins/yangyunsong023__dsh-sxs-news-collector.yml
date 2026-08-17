@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Trending-topics collector aggregating Baidu / Toutiao / Douyin / Weibo hot lists in one call (Weibo optional cookie), returning titles with heat values for content creators — tool: `sxs_news_hot`.'
   zh: 时事热点采集：一次调用聚合百度热搜 / 头条热榜 / 抖音热点 / 微博热搜（微博可选 cookie），返回标题+热度值，供内容创作借势——工具：`sxs_news_hot`。
-  ja: トレンド収集ツール。百度 / 今日頭条 / 抖音 / 微博 のホットリストを 1 回の呼び出しでまとめて取得し（微博は任意で cookie が必要）、コンテンツ制作者向けに話題と熱量の値を返します——ツールは `sxs_news_hot`。

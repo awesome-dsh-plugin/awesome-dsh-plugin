@@ -4,4 +4,3 @@ category: model
 description:
   en: Codex App Server model provider using a local Codex login, with session reuse, Harness tool bridging, native action traces, and durable generated-image projection.
   zh: 使用本地 Codex 登录的 Codex App Server 模型提供方，支持会话复用、Harness 工具桥接、原生动作轨迹和生成图片持久化。
-  ja: ローカルの Codex ログインを使う Codex App Server のモデルプロバイダー。セッションの再利用、Harness のツールとの橋渡し、ネイティブな操作履歴、生成画像の永続的な投影に対応します。

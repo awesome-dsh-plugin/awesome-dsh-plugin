@@ -4,4 +4,3 @@ category: session
 description:
   en: Coordinate independent DSH Sessions and provider-backed members without merging their histories, using persistent native Rooms with identity-bound leading `@` mentions, direct delivery, broadcasts, and leader-scoped controls.
   zh: 在不合并对话历史的前提下，将多个独立 DSH Session 与 provider-backed 成员组成持久原生 Room，支持绑定精确成员身份的行首 `@` 提及、定向投递、广播和 Leader 权限控制。
-  ja: 履歴を混ぜずに、独立した DSH のセッションとプロバイダー由来のメンバーを協調させます。永続的なネイティブの Room を使い、識別子に紐づく先頭の `@` メンション、直接配信、ブロードキャスト、リーダー権限の制御を提供します。

@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'Long-term memory injected at session start: preferences/facts/summaries/knowledge in global and per-project scopes, budgeted recall via `agent/pre-step`, durable JSON store.'
   zh: 会话开始自动注入的长期记忆：preference/fact/summary/knowledge 四类、global/project 双作用域，`agent/pre-step` 字节预算召回，JSON 原子持久化。
-  ja: セッション開始時に注入される長期記憶。設定・事実・要約・知識をグローバルとプロジェクト単位で保持し、`agent/pre-step` で予算を決めて想起します。保存先は永続的な JSON ストアです。

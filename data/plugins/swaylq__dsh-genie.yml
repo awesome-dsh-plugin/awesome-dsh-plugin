@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Keeps what the agent builds at runtime: turns a `cordis_define` dynamic package into a real installed plugin that survives restart, writing the bundle and registering the profile layer with no pnpm, no network, and no build authorization.'
   zh: 把 agent 现场造出来的插件留下来：将 `cordis_define` 的动态包固化成能跨重启存活的正式插件，写包并注册 profile 层的全过程不用 pnpm、不联网、不需要构建授权。
-  ja: エージェントが実行時に作ったものを残します。`cordis_define` の動的パッケージを、再起動しても消えない本物のインストール済みプラグインに変換し、pnpm もネットワークもビルド許可も使わずにバンドルを書き出してプロファイル層に登録します。

@@ -4,4 +4,3 @@ category: ui
 description:
   en: Edit the host-wide global instructions (~/.dsh/AGENTS.md) from a dedicated Customize page in Settings - every session on this machine applies them.
   zh: 在设置页的「个性化」页编辑此主机全局指令（~/.dsh/AGENTS.md），此机器上的所有会话都会应用。
-  ja: ホスト全体のグローバル指示（~/.dsh/AGENTS.md）を、設定の専用カスタマイズページから編集できます。このマシンのすべてのセッションに適用されます。

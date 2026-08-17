@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Agent governance suite: policy-based tool gating (allow/deny/ask with wildcards and priorities), a structured JSONL audit trail, and per-agent token quotas against the host token meter, with state under $DSH_HOME/gov.'
   zh: 'Agent 治理套件：基于策略的工具门禁（allow/deny/ask，支持通配符与优先级）、结构化 JSONL 审计日志、基于宿主 token 计量的按 agent 配额，状态存于 $DSH_HOME/gov。'
-  ja: エージェント統治スイート。ポリシーによるツールのゲート制御（ワイルドカードと優先度を備えた allow/deny/ask）、構造化された JSONL の監査証跡、ホストのトークンメーターに基づくエージェント別のトークンクォータを提供し、状態は $DSH_HOME/gov 配下に保存します。

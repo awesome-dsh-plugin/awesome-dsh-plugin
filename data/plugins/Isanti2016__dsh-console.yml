@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Slash-command console for dsh: /web start|stop|restart|status, /tunnel SSH forward management, one-shot /ask, and a console TUI launcher.'
   zh: dsh 控制台命令：/web 启动/停止/重启/状态、/tunnel SSH 隧道管理、/ask 一次性问答、/console 启动控制台 TUI。
-  ja: dsh 向けのスラッシュコマンドコンソール。/web start|stop|restart|status、/tunnel による SSH フォワード管理、単発の /ask、コンソール TUI ランチャーを備えます。

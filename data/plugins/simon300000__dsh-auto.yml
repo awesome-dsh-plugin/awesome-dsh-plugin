@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Adds an Auto Approve permission preset to the Web UI, using a fresh restricted Reviewer Agent to allow or deny each approval request.
   zh: 为 WebUI 增加 Auto Approve 权限档位，由全新且受限的审查 Agent 逐次允许或拒绝审批请求。
-  ja: Web UI に自動承認のパーミッションプリセットを追加。制限された新しいレビュアーエージェントが、承認要求ごとに許可か拒否かを判断します。

@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Results-only conversation toggle for the Web GUI: hides thinking and tool-call process rows, keeps one live status line while the agent works, restores working animations under prefers-reduced-motion, zh-CN/en localized.'
   zh: Web 对话「只看结果」开关：隐藏思考与工具调用过程，运行中仅保留一条实时状态行，reduced-motion 环境下恢复活动光影，中英双语。
-  ja: Web GUI の結果だけを表示するトグル。思考とツール呼び出しの過程の行を隠し、エージェントの作業中は 1 行のステータスだけを残します。prefers-reduced-motion の環境では動きのある表現を戻し、zh-CN/en に対応します。

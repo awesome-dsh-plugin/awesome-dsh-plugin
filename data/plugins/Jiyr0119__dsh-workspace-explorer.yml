@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Workspace file-tree panel for the DSH web UI: click or drag to insert \[file: path\] references into the composer, styled with native DSH design tokens.'
   zh: 'DSH Web 工作区文件树面板：点击或拖拽把 \[file: 路径\] 引用插入聊天输入框，UI 对齐 DSH 原生设计 token。'
-  ja: 'DSH web UI 向けのワークスペースファイルツリーパネル。クリックまたはドラッグで \[file: path\] の参照をコンポーザーに挿入でき、DSH ネイティブのデザイントークンで整えられています。'

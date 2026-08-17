@@ -4,4 +4,3 @@ category: fun
 description:
   en: 'Aseprite-style pixel art studio: the AI draws sprites stroke by stroke with selections, layers, animation frames, gradients, symmetry and reference layers, each step rendered live as ANSI terminal frames.'
   zh: Aseprite 风格像素画工作室：AI 像人类一样分步绘制精灵，支持选区、图层、动画帧、渐变、对称、参考层与 rgb16 4096 色，每一步实时渲染为 ANSI 终端帧。
-  ja: Aseprite 風のピクセルアートスタジオ。AI が選択範囲、レイヤー、アニメーションフレーム、グラデーション、対称、参照レイヤーを使って一筆ずつスプライトを描き、各ステップを ANSI のターミナルフレームとしてその場に描画します。

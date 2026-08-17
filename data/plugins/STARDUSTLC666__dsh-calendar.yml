@@ -4,4 +4,3 @@ category: tools
 description:
   en: CalDAV calendar tools (list/create/update/delete/search) for Google/iCloud/Nextcloud/custom endpoints, with RRULE expansion.
   zh: CalDAV 日历插件：查/建/改/删/搜日程，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开。
-  ja: Google/iCloud/Nextcloud および任意のエンドポイント向けの CalDAV カレンダーツール（一覧/作成/更新/削除/検索）。RRULE の展開にも対応します。

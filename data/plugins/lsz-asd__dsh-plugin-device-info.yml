@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Read-only Windows device information tools: one agent tool per Win32 device category (time, system, cpu, memory, disk, gpu, network, battery, processes, usb, audio, printers) via WMI/CIM and Node os collectors.'
   zh: 只读的 Windows 设备信息工具：每个 Win32 设备类别一个 agent 工具（时间、系统、CPU、内存、磁盘、GPU、网络、电池、进程、USB、音频、打印机），基于 WMI/CIM 与 Node os 采集。
-  ja: 読み取り専用の Windows デバイス情報ツール。WMI/CIM と Node の os コレクターを使い、Win32 のデバイスカテゴリ（時刻、システム、CPU、メモリ、ディスク、GPU、ネットワーク、バッテリー、プロセス、USB、オーディオ、プリンター）ごとにエージェントツールを 1 つずつ提供します。

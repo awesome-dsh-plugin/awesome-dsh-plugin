@@ -4,4 +4,3 @@ category: theme
 description:
   en: 'A settings-panel skin manager that auto-discovers installed Web UI skins, switches between them in one click, and maintains the profile patch automatically.'
   zh: 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。
-  ja: 設定パネルのスキンマネージャー。インストール済みの Web UI スキンを自動検出してワンクリックで切り替え、プロファイルのパッチも自動で維持します。

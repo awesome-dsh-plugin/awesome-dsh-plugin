@@ -4,4 +4,3 @@ category: session
 description:
   en: Bidirectionally synchronize sessions, workspaces, settings and plugins between the DSH web instance and the DSH Desktop instance.
   zh: 双向同步网页版与 DSH Desktop 桌面版之间的会话、工作区、设置与插件。
-  ja: DSH の web インスタンスと DSH Desktop の間で、セッション、ワークスペース、設定、プラグインを双方向に同期します。

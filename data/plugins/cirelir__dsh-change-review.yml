@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Session change-review plugin for DeepSeek Harness: tracks write/edit tool calls per session and renders line-level diffs with customizable colors, with session isolation, subagent aggregation, and SSE live updates.'
   zh: 会话修改审查插件：追踪会话内 write/edit 工具调用并展示 diff 对比；会话隔离、子代理聚合、SSE 实时推送、角标与颜色自定义。
-  ja: DeepSeek Harness 向けのセッション変更レビュー。セッションごとに write/edit のツール呼び出しを追跡し、色を変更できる行単位の差分を表示します。セッションの分離、サブエージェント分の集約、SSE によるリアルタイム更新に対応。

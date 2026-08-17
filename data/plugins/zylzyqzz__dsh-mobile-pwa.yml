@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Complete mobile PWA for DSH, built on dsh-mobile-gate: secure remote-access gateway plus install-to-homescreen (manifest + service worker), offline capability, touch gestures (pull-to-refresh, edge-swipe back, pinch-zoom font), agent-done push notifications, and touch-first layout — desktop unaffected.'
   zh: 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。
-  ja: dsh-mobile-gate を土台にした DSH 用の完全なモバイル PWA。安全なリモートアクセスゲートウェイに加え、ホーム画面への追加（manifest ＋ service worker）、オフライン対応、タッチジェスチャー（引っ張って更新、端からのスワイプで戻る、ピンチでの文字サイズ変更）、エージェント完了時のプッシュ通知、タッチ優先のレイアウトを備えます。デスクトップには影響しません。

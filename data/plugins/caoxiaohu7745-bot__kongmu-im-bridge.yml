@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Feishu bridge for DeepSeek Harness (derived from dsh-im-bridge): WebSocket long connection, approval cards, group @-mention-only replies, streaming card updates, /stop command.'
   zh: DeepSeek Harness 飞书桥（衍生自 dsh-im-bridge）：长连接免公网、审批卡片、群聊仅 @ 回复、流式卡片打字机回显、/stop 中断任务。
-  ja: DeepSeek Harness 向けの飛書ブリッジ（dsh-im-bridge 派生）。WebSocket 常時接続、承認カード、グループではメンションされたときだけ返信、ストリーミングでのカード更新、/stop コマンドに対応します。

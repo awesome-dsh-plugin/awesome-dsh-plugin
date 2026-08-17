@@ -4,4 +4,3 @@ category: tools
 description:
   en: JSON queries with a JMESPath subset.
   zh: JMESPath 子集 JSON 查询。
-  ja: JMESPath のサブセットによる JSON の問い合わせ。

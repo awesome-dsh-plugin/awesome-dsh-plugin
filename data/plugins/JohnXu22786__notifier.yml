@@ -4,4 +4,3 @@ category: notify
 description:
   en: Desktop notifications and tones when a task finishes, waits for approval, or errors — native on macOS, Windows and Linux with zero runtime dependencies.
   zh: 任务完成、等待批准或运行出错时在桌面弹出通知并播放提示音，macOS、Windows、Linux 原生实现，零运行时依赖。
-  ja: タスクの完了、承認待ち、エラーのときにデスクトップ通知と通知音を出します。macOS、Windows、Linux でネイティブに動き、実行時依存はゼロです。

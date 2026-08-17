@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'A hands-off safety net: directories the agent deletes go to a trash folder first and symlinks are never followed, with zero approvals.'
   zh: 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
-  ja: 手のかからない安全網。エージェントが削除したディレクトリはまずゴミ箱フォルダーに入り、シンボリックリンクは決してたどりません。承認は一切不要です。

@@ -4,4 +4,3 @@ category: tools
 description:
   en: Extends dsh-subagent-tools with a per-call cwd for subagents, shipped with the two in-process provider patches it requires.
   zh: 在 dsh-subagent-tools 基础上增加子代理按调用 cwd，附带所需的两个 in-process provider 补丁。
-  ja: dsh-subagent-tools を拡張し、サブエージェントの呼び出しごとに cwd を指定できるようにします。必要となるプロセス内プロバイダーのパッチ 2 種を同梱しています。

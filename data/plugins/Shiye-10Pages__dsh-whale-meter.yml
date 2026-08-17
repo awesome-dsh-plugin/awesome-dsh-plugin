@@ -4,4 +4,3 @@ category: usage
 description:
   en: 'Usage tiers and shareable stats cards: 🐟→🐳 ranks by monthly token burn with a locally-computed estimated percentile, precise pricing for 46 models across 6 vendors (including size-tiered Chinese pricing), backfill of pre-install sessions, and old-vs-new comparison across the 2026-08-17 rate change. Local-only, no telemetry.'
   zh: '用量段位与战绩卡片：按本月 token 消耗评 🐟→🐳 五档段位，分位本地估算（零上报）；6 家厂商 46 个模型精准计价，支持国内厂商按输入长度分档；自动回填安装前的历史会话；8·17 调价前后同一份用量的新旧价对比。数据全在本机，无遥测。'
-  ja: 使用量のランクと共有できる統計カード。月間のトークン消費に応じて 🐟 から 🐳 までランク付けし、推定パーセンタイルをローカルで算出します。6 ベンダー 46 モデルの正確な価格（サイズ別の中国国内価格を含む）、インストール前のセッションの遡及集計、2026-08-17 の料金改定をまたいだ新旧比較に対応。完全ローカルで、テレメトリはありません。

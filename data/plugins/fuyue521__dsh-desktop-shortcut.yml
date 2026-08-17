@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Windows desktop shortcut for dsh web: launches the server, auto-opens the browser when ready, and stops the service when the Harness window closes.'
   zh: Windows 桌面快捷方式：一键启动 dsh web，就绪后自动打开浏览器，关闭 Harness 窗口即停服务。
-  ja: dsh web の Windows デスクトップショートカット。サーバーを起動し、準備ができたらブラウザを自動で開き、Harness のウィンドウを閉じるとサービスを停止します。

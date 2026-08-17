@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Mobile remote control for the dsh web GUI: scan-to-pair QR entry with one-time pairing tokens.'
   zh: dsh web GUI 移动端远程控制：扫码配对 QR 入口、一次性配对 token。
-  ja: dsh web GUI のモバイル遠隔操作。QR コードを読み取ってワンタイムのペアリングトークンで接続します。

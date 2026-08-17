@@ -4,4 +4,3 @@ category: dev
 description:
   en: '/repro exports a minimal, secret-scrubbed, replayable problem bundle: the session log, failed commands, and Git diff.'
   zh: /repro 导出最小可复现问题包：去 secret 的会话日志、失败命令与 git diff。
-  ja: /repro でセッションログ、失敗したコマンド、Git の差分をまとめ、秘匿情報を除いた最小限で再現可能な問題バンドルを書き出します。

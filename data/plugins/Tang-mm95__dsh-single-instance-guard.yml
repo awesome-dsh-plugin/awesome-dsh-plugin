@@ -4,4 +4,3 @@ category: dev
 description:
   en: Aborts startup when another live dsh instance holds the same DSH_HOME data directory, preventing the concurrent session-log writes that corrupt transcripts.
   zh: 检测到其他存活的 dsh 实例占用同一 DSH_HOME 数据目录时中止启动，防止并发写会话日志导致的历史损坏。
-  ja: 同じ DSH_HOME のデータディレクトリを別の稼働中の dsh インスタンスが使っている場合、起動を中止します。セッションログの同時書き込みによる記録の破損を防ぎます。

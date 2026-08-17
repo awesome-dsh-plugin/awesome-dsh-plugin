@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Auto-migrate Codex desktop-pet skins into DSH: an animated corner pet that mirrors agent state (thinking, tool use, awaiting approval, failed, done), with per-session frosted-glass dialogs and a full settings panel.'
   zh: 把 Codex 桌宠皮肤自动迁移到 DSH：右下角动画桌宠随 agent 状态实时变化（思考/工具/等待批准/出错/完成），多会话毛玻璃对话框 + 完整设置面板。
-  ja: Codex のデスクトップペットのスキンを DSH に自動移行します。画面隅のアニメーションペットがエージェントの状態（思考中、ツール使用、承認待ち、失敗、完了）を映し、セッションごとのすりガラス調ダイアログと本格的な設定パネルを備えます。

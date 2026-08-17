@@ -4,4 +4,3 @@ category: tools
 description:
   en: Test/extract/safe-replace/statically explain regexes without executing code.
   zh: 正则测试/提取/安全替换/静态解释（不执行代码）。
-  ja: コードを実行せずに正規表現をテスト・抽出・安全に置換し、静的に解説します。

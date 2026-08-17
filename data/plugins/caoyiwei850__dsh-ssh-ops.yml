@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'SSH ops terminal for DSH Web UI: drive a connected server from the main conversation (ssh_connect/ssh_exec/ssh_read/ssh_write/ssh_disconnect) while keeping an interactive xterm.js terminal on the right.'
   zh: DSH SSH 运维终端：在主对话中直接指挥已连接的服务器（ssh_connect/ssh_exec/ssh_read/ssh_write/ssh_disconnect），右侧保留可交互的 xterm.js 终端。
-  ja: DSH Web UI 向けの SSH 運用ターミナル。メインの会話から接続先サーバーを操作でき（ssh_connect/ssh_exec/ssh_read/ssh_write/ssh_disconnect）、右側には対話型の xterm.js ターミナルを常駐させます。

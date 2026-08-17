@@ -4,4 +4,3 @@ category: usage
 description:
   en: DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.
   zh: dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。
-  ja: Web のサイドバーに DeepSeek の残高とトークン使用量を表示。当日/全期間の切り替えとプロバイダーの絞り込みができます。

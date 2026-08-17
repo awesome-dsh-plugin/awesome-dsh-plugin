@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Zero-config Exa web search provider for the ctx.web seam: anonymous MCP fallback without an API key, plus keyed REST search.'
   zh: ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。
-  ja: ctx.web の接続点向けの設定不要な Exa 検索プロバイダー。API キーなしの匿名 MCP フォールバックと、キーを使った REST 検索に対応します。

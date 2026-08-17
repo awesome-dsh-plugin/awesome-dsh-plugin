@@ -4,4 +4,3 @@ category: theme
 description:
   en: 'Theme studio for the DSH Web GUI: five built-in presets plus fully customizable light/dark palettes (accent, background, foreground, UI and code fonts, translucent sidebar, contrast), hot-swapped instantly and persisted in localStorage.'
   zh: DSH Web GUI 主题工作室：5 套内置预设 + 完全可自定义的浅/深配色（强调色、背景、前景、UI 与代码字体、半透明侧栏、对比度），即时热切换并持久化到 localStorage。
-  ja: DSH Web GUI 向けのテーマスタジオ。5 つの組み込みプリセットに加え、ライト/ダークの配色（アクセント、背景、前景、UI とコードのフォント、半透明サイドバー、コントラスト）を自由にカスタマイズでき、即座に反映されて localStorage に保存されます。

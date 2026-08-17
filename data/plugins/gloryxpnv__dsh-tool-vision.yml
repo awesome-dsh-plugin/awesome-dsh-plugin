@@ -4,4 +4,3 @@ category: vision
 description:
   en: 'Local-first structured vision for text-only agents: images go to a local OpenAI-compatible VLM and come back as JSON evidence (summary, verbatim OCR, layout regions, entities/relations, colors, explicit uncertainty), with anti-hallucination fallback and an optional paste/upload bridge; zero cloud cost, images never leave the machine.'
   zh: 本地优先的结构化视觉插件：图片交给本地 OpenAI 兼容 VLM，返回 JSON 证据（摘要、逐字 OCR、版面区域、实体/关系、配色、显式不确定项），带反幻觉回退与可选粘贴/上传桥；零云端成本，图片不出本机。
-  ja: テキスト専用エージェント向けの、ローカル優先の構造化ビジョン。画像はローカルの OpenAI 互換 VLM に送られ、JSON の根拠（要約、原文どおりの OCR、レイアウト領域、実体と関係、色、明示的な不確かさ）として返ります。幻覚を避けるフォールバックと、任意の貼り付け/アップロードのブリッジつき。クラウド費用はゼロで、画像がマシンの外に出ることはありません。

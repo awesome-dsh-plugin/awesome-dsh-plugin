@@ -4,4 +4,3 @@ category: theme
 description:
   en: 'Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.'
   zh: DSH Web GUI 字体切换器：99 个界面字体与 31 个代码字体，中西文自动搭配，即选即生效，localStorage 持久化。
-  ja: DSH Web GUI のフォント切り替え。UI フォント 99 種とコードフォント 31 種を、CJK とラテンの組み合わせスタックつきで提供し、即座に適用して localStorage に保存します。

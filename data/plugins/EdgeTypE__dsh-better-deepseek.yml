@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Bridge plugin for the [Better DeepSeek](https://github.com/EdgeTypE/better-deepseek) Chrome extension: exposes HTTP handshake and session-filtered SSE event streams over the web server, enabling browser-extension UI integrations with DeepSeek Harness.'
   zh: '[Better DeepSeek](https://github.com/EdgeTypE/better-deepseek) Chrome 扩展桥接插件：在 webServer 上提供 HTTP 握手与会话过滤的 SSE 事件流，实现浏览器扩展 UI 与 DeepSeek Harness 的集成。'
-  ja: Chrome 拡張 [Better DeepSeek](https://github.com/EdgeTypE/better-deepseek) 向けのブリッジプラグイン。Web サーバー上に HTTP ハンドシェイクとセッションで絞り込んだ SSE イベントストリームを公開し、ブラウザ拡張の UI と DeepSeek Harness を連携させます。

@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Unified LLM request/response inspector: reasoning-effort tuning, external-think export, traffic & bundle analysis.'
   zh: 统一 LLM 请求/响应检查器：调 reasoning effort、外部思考(think)导出、流量与包分析。
-  ja: LLM のリクエストとレスポンスをまとめて確認できるインスペクター。推論強度の調整、外部への思考の書き出し、通信量とバンドルの分析に対応します。

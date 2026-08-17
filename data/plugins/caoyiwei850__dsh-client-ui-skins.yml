@@ -4,4 +4,3 @@ category: theme
 description:
   en: 'Skin plugin for the DSH Web UI: 4 built-in skins plus custom image skins with the photo as a full-interface background and the palette following its dominant hue.'
   zh: DSH Web 换肤插件：4 套内置皮肤 + 自定义图片皮肤，图片作为全界面背景，配色自动跟随图片主色调。
-  ja: DSH Web UI 向けのスキンプラグイン。組み込みスキン 4 種に加え、任意の画像をインターフェース全体の背景にできるカスタムスキンを提供し、配色はその画像の主要な色相に追従します。

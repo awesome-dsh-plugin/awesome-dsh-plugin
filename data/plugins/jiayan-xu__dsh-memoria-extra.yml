@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'Advanced memoria tools: session context injection (profile + recall), recent decisions, health report, namespace allowlist, memory relation graph, and entity search; companion to dsh-memoria.'
   zh: memoria 进阶工具：会话上下文注入（画像+召回）、近期决策、健康报告、命名空间白名单、记忆关系图与实体搜索；dsh-memoria 的伴生插件。
-  ja: memoria の応用ツール群。セッション文脈の注入（プロフィール＋想起）、直近の決定事項、健全性レポート、名前空間の許可リスト、記憶の関係グラフ、実体検索を提供します。dsh-memoria の補完プラグインです。

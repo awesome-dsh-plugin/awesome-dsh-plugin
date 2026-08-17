@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Codex-style drag-drop: drag any file into the DSH web GUI, it lands in ~/.dsh-dropbox, and the path is inserted into the composer as a whole blue chip.'
   zh: Codex 式拖拽：把任意文件拖入 DSH Web 界面，文件存入 ~/.dsh-dropbox，路径以整块蓝色 chip 插入输入框。
-  ja: Codex 風のドラッグ＆ドロップ。DSH web GUI に任意のファイルをドラッグすると ~/.dsh-dropbox に置かれ、そのパスが青いチップとしてコンポーザーに挿入されます。

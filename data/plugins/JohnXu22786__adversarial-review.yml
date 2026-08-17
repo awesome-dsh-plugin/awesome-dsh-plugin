@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Adversarial multi-lens code review: parallel correctness/security/maintainability lenses attack a diff, with deterministic severity grading, suppression rules and incremental review history.'
   zh: '对抗式多视角代码审查：正确性/安全性/可维护性透镜并行攻击 diff，确定性严重度定级、抑制规则与增量审查历史。'
-  ja: 複数の観点から攻める敵対的コードレビュー。正確性・セキュリティ・保守性のレンズが並行して差分を突き、深刻度を決定論的に採点します。抑制ルールと差分レビュー履歴つき。

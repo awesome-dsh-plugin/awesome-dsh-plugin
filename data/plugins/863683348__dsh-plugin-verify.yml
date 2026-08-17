@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Verification toolkit for DSH agents: evidence-based claim checking against workspace files with line citations, config validation (JSON/YAML), and read-only URL/npm/GitHub submission-readiness probes.'
   zh: DSH 核验工具箱：在工作区文件中核查声明并返回带行号引用的证据，校验配置文件（JSON/YAML），以及只读的 URL / npm / GitHub 提交就绪度探测。
-  ja: 'DSH エージェント向け検証ツールキット：ワークスペース内のファイルに対して主張を裏付け証拠（行番号付き引用）で照合し、設定ファイル（JSON/YAML）を検証、URL・npm・GitHub のコミット準備状況を読み取り専用で確認します。'

@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Injects allowlisted GitHub Actions and GitLab CI run metadata into agent context without reading logs, credentials, or provider APIs.
   zh: 将白名单内的 GitHub Actions 与 GitLab CI 运行元数据注入 Agent 上下文，不读取日志、凭据或服务商 API。
-  ja: 許可リストに入れた GitHub Actions と GitLab CI の実行メタデータを、ログ・認証情報・プロバイダー API を読むことなくエージェントの文脈に注入します。

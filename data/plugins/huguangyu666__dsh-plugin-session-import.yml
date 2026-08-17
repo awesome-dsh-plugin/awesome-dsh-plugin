@@ -4,4 +4,3 @@ category: session
 description:
   en: 'Import claude-code / codex / reasonix / zcode chat history into dsh sessions: workspace binding, tool calls preserved, oversized-session protection, zcode compaction restore.'
   zh: 把 claude-code / codex / reasonix / zcode 的聊天历史导入为 dsh 会话：工作区绑定、工具调用保留、超长会话保护、zcode 压缩还原。
-  ja: claude-code / codex / reasonix / zcode のチャット履歴を dsh のセッションに取り込みます。ワークスペースの紐付け、ツール呼び出しの保持、巨大セッションの保護、zcode のコンパクション復元に対応。

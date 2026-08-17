@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Take control of your tmux panes: list/send-keys/capture, run long jobs in a pane with watch mode, and approval-gated destructive commands.'
   zh: 掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。
-  ja: tmux のペインを操作します。一覧/キー送信/取り込みに加え、ペインで長時間ジョブを走らせて監視するモードと、破壊的コマンドの承認ゲートを備えます。

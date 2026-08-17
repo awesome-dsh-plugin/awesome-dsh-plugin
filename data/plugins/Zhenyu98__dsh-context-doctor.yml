@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Context injection audit: token costs of instruction chains / skill catalogs / tool schemas, duplicate and conflict detection.'
   zh: 上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。
-  ja: コンテキスト注入の監査。指示チェーン / スキルカタログ / ツールスキーマのトークンコストと、重複や矛盾を検出します。

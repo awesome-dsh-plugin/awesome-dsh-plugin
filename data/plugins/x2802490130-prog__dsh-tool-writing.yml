@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'A web-novel writing engine for DeepSeek Harness: parallel drafting, outlining and brainstorming with a separate DeepSeek key, lore and foreshadowing management, semantic vector retrieval, a corpus library, usage ledger, mechanical proofreading, and a local serialization plan.'
   zh: 写文引擎：用独立 DeepSeek key 分流并发生成草稿/细纲/点子，设定与伏笔管理、语义向量检索、书库（饲料区）、用量总账、机械校对与本地连载计划。
-  ja: DeepSeek Harness 向けのウェブ小説執筆エンジン。別の DeepSeek キーを使った並行執筆・構成・発想に加え、設定資料と伏線の管理、意味的なベクトル検索、資料ライブラリ、使用量の台帳、機械的な校正、ローカルでの連載計画を備えます。

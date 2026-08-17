@@ -4,4 +4,3 @@ category: notify
 description:
   en: Desktop notifications for run completion, model questions, and approval requests with per-platform system sounds, zero runtime dependencies.
   zh: 系统桌面通知：运行结束、模型提问与审批请求即时提醒，三平台提示音，零运行时依赖。
-  ja: 実行完了、モデルからの質問、承認要求のデスクトップ通知。プラットフォームごとのシステム音を使い、実行時依存はゼロです。

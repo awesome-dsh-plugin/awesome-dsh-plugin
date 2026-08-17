@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Provider-tabbed model picker for the dsh web composer: left provider column and right model list, both independently scrollable, with cross-provider search.'
   zh: dsh web 输入栏模型选择面板：左侧提供商栏 + 右侧模型列表，两侧独立滚动，支持跨提供商搜索。
-  ja: dsh web のコンポーザー向け、プロバイダーをタブ分けしたモデルピッカー。左にプロバイダー列、右にモデル一覧を配置し、それぞれ独立してスクロールでき、プロバイダー横断の検索にも対応します。

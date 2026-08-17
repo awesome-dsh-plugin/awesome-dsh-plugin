@@ -4,4 +4,3 @@ category: vision
 description:
   en: 'Two-tier image reading for text-only models: fast local OCR (RapidOCR, offline) first, vision-model fallback (modlens).'
   zh: 纯文本模型双层识图：优先本地快速 OCR（RapidOCR，离线），不足时回落视觉模型（modlens）。
-  ja: テキスト専用モデル向けの 2 段階の画像読み取り。まず高速なローカル OCR（RapidOCR、オフライン）を試し、だめなら視覚モデル（modlens）にフォールバックします。

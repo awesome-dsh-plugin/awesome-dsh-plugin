@@ -4,4 +4,3 @@ category: workflow
 description:
   en: 'Condition-driven wakeup: durable file/command/http/process/webhook watches that wake the agent.'
   zh: 条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。
-  ja: 条件によるエージェントの起こし込み。ファイル/コマンド/HTTP/プロセス/webhook を永続的に監視し、条件が満たされたらエージェントを起こします。

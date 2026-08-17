@@ -4,4 +4,3 @@ category: ui
 description:
   en: Draggable grid-aligned workbench of 28 mini-cards in the margins of the conversation (API balance, token usage, cost, context pressure, todos, goal, usage heatmap, GitHub repo, image relay), with S/M/L/XL size tiers.
   zh: 对话两侧空白区的可拖动卡片工作台，28 个小组件（余额、Token 用量、成本、上下文压力、待办、目标、用量热力图、GitHub 仓库、图片中转等），支持 S/M/L/XL 四档尺寸。
-  ja: 会話の余白に置ける、ドラッグとグリッド整列に対応した 28 種のミニカードのワークベンチ（API 残高、トークン使用量、コスト、コンテキスト圧、TODO、ゴール、使用量ヒートマップ、GitHub リポジトリ、画像中継）。S/M/L/XL のサイズ段階に対応します。

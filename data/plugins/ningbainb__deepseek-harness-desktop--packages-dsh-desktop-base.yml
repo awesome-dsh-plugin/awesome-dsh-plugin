@@ -4,4 +4,3 @@ category: ui
 description:
   en: Desktop feature aggregate that installs the DSH Web UI collection, dshmarket, Codex Connect, and reasoning-effort controls at pinned versions.
   zh: 桌面版基础功能聚合包：按固定版本安装 DSH Web UI 合集、dshmarket、Codex Connect 与推理强度控制。
-  ja: デスクトップ向け機能の集約バンドル。DSH Web UI のプラグイン群、dshmarket、Codex Connect、推論強度の制御を、バージョンを固定して導入します。

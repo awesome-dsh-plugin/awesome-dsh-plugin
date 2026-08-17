@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Professional translation for DSH: 18 target languages, 4 styles (formal/casual/technical/literal), glossary-controlled terminology, and whole-file translation (README/docs/subtitles) with Markdown/code-block format preservation; powered by DeepSeek via SiliconFlow.'
   zh: 专业翻译：18 种目标语言、4 种风格（正式/口语/技术/直译）、术语表控制译名、整文件翻译（README/文档/字幕）并保留 Markdown 与代码块格式；经 SiliconFlow 调用 DeepSeek。
-  ja: DSH 向けの本格的な翻訳機能。18 の対象言語、4 つのスタイル（フォーマル/カジュアル/技術文書/逐語）、用語集による訳語統一、ファイル丸ごとの翻訳（README/ドキュメント/字幕）に対応し、Markdown とコードブロックの書式を保ちます。SiliconFlow 経由の DeepSeek を利用します。

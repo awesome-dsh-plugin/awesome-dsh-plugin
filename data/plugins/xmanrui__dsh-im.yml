@@ -4,4 +4,3 @@ category: notify
 description:
   en: Connect IM bots to DeepSeek Harness by scanning QR codes (supports Feishu, Weixin, DingTalk, and more).
   zh: 通过扫码把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉等）。
-  ja: QR コードを読み取るだけで IM の bot を DeepSeek Harness に接続できます（飛書、微信、DingTalk ほかに対応）。

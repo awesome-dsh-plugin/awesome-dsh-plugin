@@ -4,4 +4,3 @@ category: dev
 description:
   en: Syncs the GitHub dsh-plugin topic into a local catalog, probes npm, static-scans plugin files for security, and scores every plugin (maintenance, docs, npm, ecosystem) with agent tools and a web leaderboard.
   zh: 同步 GitHub dsh-plugin 主题为本地目录，探测 npm，静态扫描插件安全性，并为每个插件打分（维护、文档、npm、生态），提供 Agent 工具与网页榜单。
-  ja: GitHub の dsh-plugin topic をローカルカタログに同期し、npm を調べ、プラグインのファイルをセキュリティ観点で静的スキャンして、各プラグインを採点（保守状況、ドキュメント、npm、エコシステム）します。エージェントツールと Web のランキングページ付き。

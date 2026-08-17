@@ -4,4 +4,3 @@ category: session
 description:
   en: 'Voice input for DeepSeek Harness: speak into the microphone and the recognized text is submitted as a normal chat message, via local or browser speech recognition.'
   zh: 语音输入插件：对着麦克风说话，识别后的文字作为普通聊天消息发送（本地模型或浏览器语音识别）。
-  ja: DeepSeek Harness の音声入力。マイクに話しかけると、ローカルまたはブラウザの音声認識で変換したテキストが通常のチャットメッセージとして送信されます。

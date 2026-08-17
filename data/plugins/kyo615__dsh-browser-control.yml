@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Playwright MCP browser control for AI agents: drive a real, visible Chrome (navigate/click/type/snapshot + ~80 browser_* tools), with a live screenshot panel embedded in the GUI that refreshes after every action.'
   zh: 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
-  ja: AI エージェント向けの Playwright MCP ブラウザ操作。実際に目に見える Chrome を操作でき（navigate/click/type/snapshot ほか約 80 の browser_* ツール）、操作のたびに更新されるスクリーンショットパネルを GUI に埋め込みます。

@@ -4,4 +4,3 @@ category: dev
 description:
   en: Adds approval-gated Git status, diff, log, commit, branch, and optional checkpoint tools.
   zh: 增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。
-  ja: 承認ゲート付きの Git の状態確認、差分、ログ、コミット、ブランチ操作と、任意のチェックポイントツールを追加します。

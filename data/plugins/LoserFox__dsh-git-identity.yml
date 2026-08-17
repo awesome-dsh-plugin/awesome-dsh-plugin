@@ -4,4 +4,3 @@ category: dev
 description:
   en: Pin Git commits to the environment's own author identity; env-var injection overrides all `git config` settings.
   zh: git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。
-  ja: Git のコミットを実行環境自身の作者情報に固定します。環境変数の注入がすべての `git config` の設定を上書きします。

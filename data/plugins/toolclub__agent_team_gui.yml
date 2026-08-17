@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Reusable agent squads with per-agent provider/model routes and tool policies, serial/parallel dispatch, spawn/fork/chain context modes, and a Web management panel.
   zh: 可复用 Agent 小队：每个成员独立配置 provider/model 路由与工具策略，支持串行/并行派单、spawn/fork/chain 上下文模式和 Web 管理面板。
-  ja: 再利用できるエージェントの分隊。エージェントごとのプロバイダー/モデル経路とツールポリシー、直列/並列の割り当て、spawn/fork/chain の文脈モード、Web の管理パネルを備えます。

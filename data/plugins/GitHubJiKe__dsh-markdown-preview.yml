@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'In-chat preview for produced files: click a produced-file chip to render Markdown (server-side markdown-it + highlight.js), images, or plain text right in the conversation; system-app open and reveal-in-folder stay one click away.'
   zh: 产物文件聊天内预览：点击产物 chip 直接在对话中渲染 Markdown（宿主侧 markdown-it + highlight.js 代码高亮）、图片或纯文本，系统应用打开与在文件夹中显示仍一键可达。
-  ja: 生成されたファイルをチャット内でプレビュー。ファイルのチップをクリックすると、Markdown（サーバー側の markdown-it ＋ highlight.js）、画像、プレーンテキストをその場で描画します。システムのアプリで開く操作やフォルダー表示もワンクリックです。

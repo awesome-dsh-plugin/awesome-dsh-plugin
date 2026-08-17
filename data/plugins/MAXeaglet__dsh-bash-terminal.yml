@@ -4,4 +4,3 @@ category: tools
 description:
   en: One shell tool for PowerShell / Git Bash / WSL on Windows plus an interactive PTY terminal; the default terminal is chosen by the user in DSH settings.
   zh: 一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。
-  ja: Windows の PowerShell / Git Bash / WSL を 1 つのシェルツールにまとめ、対話型の PTY ターミナルも提供します。既定のターミナルは DSH の設定でユーザーが選べます。

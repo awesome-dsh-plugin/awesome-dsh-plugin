@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Agent trajectory governance and anomaly diagnosis: rebuilds flat session logs into multi-branch trajectory trees, detects loop deadlock, invalid retry, and goal drift, alerts with cost attribution, one-click interrupt and breakpoint fork via official APIs, independent GUI tab.'
   zh: Agent 轨迹治理与异常诊断：把平铺会话日志重建为多分支轨迹树，识别循环死锁/无效重试/目标漂移，带成本归因的告警与一键中断/断点分支（官方 API），独立 GUI Tab。
-  ja: エージェントの軌跡の統治と異常診断。平坦なセッションログを多分岐の軌跡ツリーに組み直し、ループのデッドロック、無効な再試行、目標のずれを検出して、コストの帰属つきで警告します。公式 API を使ったワンクリックの中断とブレークポイントでの分岐、独立した GUI タブを備えます。

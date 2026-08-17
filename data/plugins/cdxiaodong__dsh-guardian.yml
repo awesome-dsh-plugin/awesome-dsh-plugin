@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Agent security guardrail: intercepts and audits every tool call, requiring human confirmation on sensitive operations.'
   zh: Agent 安全护栏：拦截并审计所有工具调用，命中敏感操作就要求人工确认。
-  ja: エージェントのセキュリティガードレール。すべてのツール呼び出しを遮って監査し、機微な操作には人の確認を求めます。

@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'One-command bundle of the three AgentFrame plugins: memory-director, compaction, and aura-scheduler together.'
   zh: AgentFrame 三件套整合包：一条命令装齐记忆、压缩与主动调度。
-  ja: AgentFrame の 3 プラグイン（memory-director、compaction、aura-scheduler）をコマンド 1 つでまとめて導入するバンドル。

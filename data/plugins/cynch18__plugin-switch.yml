@@ -4,4 +4,3 @@ category: market
 description:
   en: 'Toggle switches for the plugin inventory: enable/disable any plugin live from Settings → Plugins → Plugin list without restarting, with groups/filters, bulk toggle, undo, and backup.'
   zh: 插件清单页滑块开关：在设置 → 插件 → 插件清单实时启用/停用任意插件，无需重启；支持分组/筛选、批量开关、撤销与自动备份。
-  ja: プラグイン一覧のトグルスイッチ。設定 → プラグイン → プラグイン一覧から、再起動なしでどのプラグインでも有効化/無効化できます。グループと絞り込み、一括切り替え、取り消し、バックアップつき。

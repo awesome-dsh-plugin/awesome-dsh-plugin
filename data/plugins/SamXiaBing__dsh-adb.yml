@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'ADB device & bench operations for DSH: device discovery, structured logcat (background streaming), apk install, file pull/push, and dumpsys performance snapshots.'
   zh: ADB 设备·台架运维工具集：设备发现、结构化 logcat（后台采集）、apk 安装、文件 pull/push、性能快照。
-  ja: DSH 向けの ADB デバイス・実機操作。デバイスの検出、構造化した logcat（バックグラウンドでのストリーミング）、apk のインストール、ファイルの pull/push、dumpsys によるパフォーマンスのスナップショットに対応します。

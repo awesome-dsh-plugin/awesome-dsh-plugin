@@ -4,4 +4,3 @@ category: ui
 description:
   en: Upload files and folders straight into the conversation — images attach as real message blocks, text content is written into the composer draft, folders land by directory structure.
   zh: 把文件与文件夹直接传进对话——图片以真实图片块加入消息，文本内容写入输入框草稿，文件夹按目录结构落盘。
-  ja: ファイルとフォルダーを会話に直接アップロードします。画像は本物のメッセージブロックとして添付され、テキストの内容はコンポーザーの下書きに書き込まれ、フォルダーはディレクトリ構造のまま取り込まれます。

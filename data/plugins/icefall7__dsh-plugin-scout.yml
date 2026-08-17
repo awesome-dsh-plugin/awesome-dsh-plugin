@@ -4,4 +4,3 @@ category: market
 description:
   en: Scouts the deepseek-harness repo and every dsh-plugin-tagged repository to discover harnesses related to your goal, then judges each as worth trying, watching, or skipping.
   zh: 侦察 deepseek-harness 官方仓库与所有 dsh-plugin topic 仓库，发现与目标相关的 harness，并判断每个值得试用、观望还是跳过。
-  ja: deepseek-harness リポジトリと dsh-plugin タグの付いた全リポジトリを偵察して、あなたの目的に関係する harness を見つけ出し、試す価値がある・様子見・見送り のいずれかを判定します。

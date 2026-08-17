@@ -4,4 +4,3 @@ category: memory
 description:
   en: Structured memory engine for DeepSeek Harness. Offline semantic search, entity-attribute-timeline, autoDream self-consolidation, and human-editable Markdown storage.
   zh: DeepSeek Harness 结构化记忆引擎。离线语义搜索、实体-属性-时间轴、autoDream 自我巩固、可人工编辑的 Markdown 存储。
-  ja: DeepSeek Harness 向けの構造化メモリエンジン。オフラインの意味検索、実体・属性・時系列の管理、autoDream による自己統合、人が編集できる Markdown 保存に対応します。

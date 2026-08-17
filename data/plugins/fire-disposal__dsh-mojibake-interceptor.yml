@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Mojibake guard bundle for DSH: feature-based garbled-text detection before writes with review-then-release (an identical retry passes), plus pre-execution pwsh encoding audit (ANSI/GBK/UTF-16/Default), Windows and Chinese first.'
   zh: DSH 乱码拦截器 bundle：写入前特征值/编码回环检测乱码并复查放行（原样重试即通过），pwsh 写入编码执行前审计（ANSI/GBK/UTF-16/默认编码），Windows 与中文场景优先。
-  ja: DSH 向けの文字化けガードバンドル。書き込み前に特徴ベースで文字化けを検出し、確認してから通します（同じ内容で再試行すれば通過）。加えて実行前に pwsh のエンコーディング（ANSI/GBK/UTF-16/Default）を監査します。Windows と中国語環境を主眼に置いています。

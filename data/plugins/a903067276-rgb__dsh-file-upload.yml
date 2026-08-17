@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'One upload button plus drag-and-drop files into the conversation as local paths: save to the project''s uploads/, path text into the input box, works with any vision tool.'
   zh: 统一上传按钮 + 拖拽文件直进对话：文件保存到项目 uploads/，路径文本自动进输入框，可配合任意视觉工具看图。
-  ja: アップロードボタンとドラッグ＆ドロップで、ファイルをローカルパスとして会話に取り込みます。プロジェクトの uploads/ に保存し、パスを入力欄に挿入するので、どの視覚ツールとも組み合わせられます。

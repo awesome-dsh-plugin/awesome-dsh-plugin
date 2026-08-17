@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'WebUI authentication enforced at the HTTP/transport layer: four-layer login gate (resources, plugin bundles, /api, WebSocket), server-side sessions with HttpOnly cookies.'
   zh: WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。
-  ja: HTTP／トランスポート層で強制する WebUI 認証。リソース、プラグインバンドル、/api、WebSocket の 4 層のログインゲートと、HttpOnly クッキーによるサーバー側セッションを提供します。

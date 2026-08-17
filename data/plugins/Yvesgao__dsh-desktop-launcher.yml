@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Create a one-click Windows desktop shortcut from the Settings page: a .cmd launcher + desktop icon for DeepSeek Harness or any local server, auto-opens the browser, with taskbar pin hints.'
   zh: 在设置页一键创建 Windows 桌面快捷方式：为 DeepSeek Harness 或任意本地服务生成 .cmd 启动器与桌面图标，自动打开浏览器、可固定任务栏。
-  ja: 設定ページから Windows のデスクトップショートカットをワンクリックで作成。DeepSeek Harness や任意のローカルサーバー向けの .cmd ランチャーとアイコンを作り、ブラウザを自動で開き、タスクバーへのピン留め方法も案内します。

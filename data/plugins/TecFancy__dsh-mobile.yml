@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Mobile adapter for the DSH web shell: overlay sidebar/details drawers, responsive composer and settings below 768px, zero desktop regression.'
   zh: DSH Web 移动端适配插件：侧边栏/详情抽屉浮层化、输入栏与设置页响应式适配，桌面零回归。
-  ja: DSH web シェルのモバイル対応。768px 未満でサイドバーと詳細を重ねて表示するドロワー、レスポンシブなコンポーザーと設定画面を提供し、デスクトップ表示は変えません。

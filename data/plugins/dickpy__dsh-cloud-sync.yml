@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Synchronizes DSH profiles and local plugin source archives through WebDAV and S3-compatible storage, with encrypted snapshots, conflict-aware recovery, and explicit self-updates.
   zh: 通过 WebDAV 和兼容 S3 的存储同步 DSH profile 与本地插件源码归档，支持加密快照、冲突感知恢复和显式自更新。
-  ja: WebDAV と S3 互換ストレージを通じて、DSH のプロファイルとローカルのプラグインソースのアーカイブを同期します。暗号化したスナップショット、コンフリクトを踏まえた復元、明示的な自己更新に対応。

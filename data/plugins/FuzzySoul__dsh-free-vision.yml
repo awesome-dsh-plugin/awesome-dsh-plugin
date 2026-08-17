@@ -4,4 +4,3 @@ category: vision
 description:
   en: 'Free vision bridge for text-only models: image understanding, OCR, UI and debug analysis via free-tier providers (Qwen3-VL-Flash, Doubao, DeepSeek-OCR) with a settings GUI.'
   zh: 免费视觉插件：纯文本模型看图 / OCR / UI / 报错分析，优先免费模型（千问 Qwen3-VL-Flash、豆包、DeepSeek-OCR），设置界面可配置。
-  ja: テキスト専用モデル向けの無料の視覚ブリッジ。無料枠のプロバイダー（Qwen3-VL-Flash、Doubao、DeepSeek-OCR）を使って画像理解、OCR、UI やデバッグの解析を行い、設定用の GUI も備えます。

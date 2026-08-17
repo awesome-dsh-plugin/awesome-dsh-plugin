@@ -4,4 +4,3 @@ category: usage
 description:
   en: Adds a "用量" section to the DSH Settings page that shows your MiniMax Token Plan usage (5h and weekly windows with reset countdowns), per-model breakdown, and video bonus credits; fetches `/v1/token_plan/remains` via a trusted plugin that holds the API key, auto-hides when no key is configured. MIT.
   zh: 在 DSH 设置页「用量」section 展示 MiniMax Token Plan 的 5 小时 / 周窗口用量（带重置倒计时）、单模型明细与视频赠送额度；通过 trusted plugin 调 `/v1/token_plan/remains` 拿 key，未配置 key 时整段 section 自动隐藏。MIT。
-  ja: DSH の設定ページに「用量」セクションを追加し、MiniMax Token Plan の使用状況（5 時間枠と週次枠、リセットまでのカウントダウン）、モデル別の内訳、動画のボーナスクレジットを表示します。API キーを持つ信頼済みプラグインが `/v1/token_plan/remains` を取得し、キー未設定なら自動的に非表示になります。MIT ライセンス。

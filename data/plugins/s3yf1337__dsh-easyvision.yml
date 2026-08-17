@@ -4,4 +4,3 @@ category: vision
 description:
   en: 'Give text-only models vision: a describe_image tool that delegates images to a vision model from your dsh model list over the harness''s own LLM runtime.'
   zh: 让纯文本模型拥有视觉：describe_image 工具调用 dsh 模型列表中的视觉模型描述图片，走 harness 自身的 LLM 运行时。
-  ja: テキスト専用モデルに視覚を与えます。describe_image ツールが、harness 自身の LLM ランタイム経由で、dsh のモデル一覧にある視覚モデルに画像を委譲します。

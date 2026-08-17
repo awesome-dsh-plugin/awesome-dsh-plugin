@@ -4,4 +4,3 @@ category: ui
 description:
   en: Session-scoped Markdown writing pad docked beside the conversation, with edit/preview modes, selection-based AI rewrites, diff review, undo, and draft recovery.
   zh: 停靠在对话旁的会话级 Markdown 写作板，支持编辑/预览、选区 AI 改写、Diff 审核、撤销与草稿恢复。
-  ja: 会話の横にドッキングする、セッション単位の Markdown 執筆パッド。編集/プレビューの切り替え、選択範囲の AI による書き直し、差分レビュー、取り消し、下書きの復元に対応します。

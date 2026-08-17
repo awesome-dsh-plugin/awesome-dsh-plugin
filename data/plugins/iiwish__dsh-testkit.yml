@@ -4,4 +4,3 @@ category: dev
 description:
   en: Docker-isolated real-host lifecycle tests for DSH plugins across install, boot, tool registration, update, uninstall, reinstall, and recovery, with structured evidence.
   zh: 在 Docker 隔离的真实宿主中测试 DSH 插件的安装、启动、工具注册、更新、卸载、重装与恢复生命周期，并输出结构化证据。
-  ja: DSH プラグインの、Docker で隔離した実ホスト上のライフサイクルテスト。インストール、起動、ツール登録、更新、アンインストール、再インストール、復旧までを構造化された証跡つきで検証します。

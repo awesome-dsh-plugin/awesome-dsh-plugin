@@ -4,4 +4,3 @@ category: session
 description:
   en: Let dsh and Claude Code sessions message each other directly; comes with a clickable peer list card (sort/search/send/refresh).
   zh: 让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。
-  ja: dsh と Claude Code のセッションが直接メッセージをやり取りできるようにします。クリックできるピア一覧カード（並べ替え/検索/送信/更新）付き。

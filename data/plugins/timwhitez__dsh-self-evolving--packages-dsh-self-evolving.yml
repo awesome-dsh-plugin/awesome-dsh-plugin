@@ -4,4 +4,3 @@ category: workflow
 description:
   en: 'Evidence-first self-evolution controller: bounded Cordis candidate generation, one-shot real-Loader admission, Harbor evaluation, and a crash-resumable journaled lineage.'
   zh: 证据优先的自进化控制器：有界生成 Cordis 候选插件，一次性真实 Loader 准入，Harbor 评测，可崩溃恢复的日志化谱系。
-  ja: 根拠優先の自己進化コントローラー。範囲を限定した Cordis の候補生成、実際のローダーによる一発の受け入れ判定、Harbor による評価、クラッシュしても再開できるジャーナル付きの系譜管理を行います。

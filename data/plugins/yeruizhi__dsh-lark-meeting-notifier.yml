@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Feishu meeting reminder: a dsh-plugin which has only side effect: reminding you, mid-flow with AI, that you "have to go meet carbon-based lifeforms".'
   zh: 飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。
-  ja: 飛書の会議リマインダー。副作用しかない dsh プラグインで、AI と作業に没頭している最中に「炭素系生命体に会いに行かないといけない」ことを思い出させてくれます。

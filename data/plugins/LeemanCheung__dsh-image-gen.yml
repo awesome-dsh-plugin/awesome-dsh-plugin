@@ -4,4 +4,3 @@ category: vision
 description:
   en: 'GPT Image 2 `image_gen` with Codex subscription OAuth by default or explicit API-key mode: developing card, up to three live API partials, durable attachment replay/lightbox/download, text-only model output, and bounded credential-safe requests.'
   zh: GPT Image 2 `image_gen`：默认复用 Codex 订阅 OAuth，也可显式使用 API Key；显影卡片、最多 3 张 API 实时局部图、持久附件回放/灯箱/下载、纯文本模型输出和受限的凭据安全请求。
-  ja: GPT Image 2 による `image_gen`。既定では Codex サブスクリプションの OAuth を使い、API キーの明示指定にも対応します。生成中のカード表示、最大 3 枚のライブ途中経過、添付の再生・ライトボックス・ダウンロード、テキスト専用モデルへの出力、資格情報を守る範囲限定のリクエストを備えます。

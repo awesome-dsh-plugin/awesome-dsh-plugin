@@ -4,4 +4,3 @@ category: skill
 description:
   en: Software-engineering method pack for coding agents, with skills for baseline-first planning, systematic debugging, prompt hygiene, verification before completion, and repair/retirement tracking.
   zh: 面向编码 Agent 的软件工程方法包，提供基线优先规划、系统化调试、提示词卫生、完成前验证，以及修复/退役双轨跟踪技能。
-  ja: コーディングエージェント向けのソフトウェア工学メソッドパック。ベースラインを先に固める計画、体系的なデバッグ、プロンプトの衛生管理、完了前の検証、修復/引退の追跡といったスキルを収録します。

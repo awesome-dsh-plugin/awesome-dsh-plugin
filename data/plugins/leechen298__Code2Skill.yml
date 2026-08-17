@@ -4,4 +4,3 @@ category: dev
 description:
   en: Generate Functions, MCP tools, workflow Skills, and offline test packages from user-authorized source code.
   zh: 从用户授权的源码生成 Function、MCP 工具、工作流 Skill 与离线测试包。
-  ja: ユーザーが許諾したソースコードから、関数、MCP ツール、ワークフローのスキル、オフラインのテストパッケージを生成します。

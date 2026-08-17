@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.
   zh: 多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。
-  ja: Cordis のサービスキーを介した、複数エージェントで共有するタスクボード（作成/受け取り/状態遷移/照会）。

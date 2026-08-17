@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Data analysis toolkit: CSV/TSV/JSON profiling, IQR and z-score anomaly detection, structured summarization with quality issues, and code-free filter/group/aggregate queries.'
   zh: 数据分析工具包：CSV/TSV/JSON 数据画像、IQR 与 z-score 异常检测、带质量问题提示的结构化摘要、以及无需写代码的筛选/分组/聚合查询。
-  ja: データ分析ツールキット。CSV/TSV/JSON のプロファイリング、IQR と z スコアによる異常検知、品質上の問題も含めた構造化された要約、コードを書かずに使えるフィルター/グループ化/集計のクエリを提供します。

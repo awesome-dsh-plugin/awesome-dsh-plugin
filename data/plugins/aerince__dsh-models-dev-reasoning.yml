@@ -4,4 +4,3 @@ category: theme
 description:
   en: Adds models.dev reasoning levels to unconfigured third-party DeepSeek Harness models.
   zh: 为未配置的第三方 DeepSeek Harness 模型添加 models.dev 推理级别支持。
-  ja: 設定されていないサードパーティの DeepSeek Harness モデルに、models.dev の推論レベルを追加します。

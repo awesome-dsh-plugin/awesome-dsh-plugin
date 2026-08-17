@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Desktop and browser automation bridge (36 tools): window/screen/mouse/keyboard control with PaddleOCR element perception, Chrome CDP browsing with accessibility snapshots.'
   zh: 桌面 + 浏览器自动化桥（36 个工具）：窗口/屏幕/鼠标/键盘控制配 PaddleOCR 元素感知，Chrome CDP 浏览配无障碍快照。
-  ja: デスクトップとブラウザの自動操作ブリッジ（ツール 36 種）。ウィンドウ/画面/マウス/キーボードの操作を PaddleOCR による要素認識と組み合わせ、Chrome の CDP によるブラウジングとアクセシビリティスナップショットにも対応します。

@@ -4,4 +4,3 @@ category: model
 description:
   en: Built-in ChatGPT OAuth provider for Codex models, selectable subscription web search, backend quota for standard Codex and Spark, and a DSH settings UI; no API key or Codex CLI required.
   zh: 内置 ChatGPT OAuth 的 Codex 模型提供方：可切换订阅联网搜索，在设置页显示普通 Codex 与 Spark 独立额度；无需 API Key 或 Codex CLI。
-  ja: Codex モデル向けの組み込み ChatGPT OAuth プロバイダー。選択式のサブスクリプション Web 検索、標準 Codex と Spark のバックエンドクォータ、DSH の設定 UI を備え、API キーも Codex CLI も不要です。

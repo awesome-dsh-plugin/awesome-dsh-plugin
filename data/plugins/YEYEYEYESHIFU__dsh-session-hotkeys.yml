@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Session hotkeys for the DSH Web GUI: switch sessions like browser tabs (positional Alt+1-9, pinned slots, previous/next, new/archive/rename, navigation mode, search focus), all rebindable with Windows/macOS presets.'
   zh: Web 会话热键插件：像切浏览器标签页一样用键盘管理会话——Alt+1-9 顺序切换、固定槽位、上/下一个、新建/归档/重命名、导航模式、聚焦搜索，键位可在面板录制重绑，Windows/macOS 双预设。
-  ja: DSH Web GUI のセッション用ホットキー。ブラウザのタブのようにセッションを切り替えられます（位置指定の Alt+1〜9、ピン留めスロット、前/次、新規/アーカイブ/名前変更、ナビゲーションモード、検索フォーカス）。すべて再割り当て可能で、Windows/macOS のプリセットつき。

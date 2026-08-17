@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Codex-style workflow auto-collapse: finished turns fold into a single "processed in Xs" row leaving only the final answer; tool calls and think blocks collapse into live-summary chips that follow streaming; expand level by level, fully reversible on uninstall.'
   zh: Codex 风格工作流自动折叠：回合完成收成一行「已处理 X秒」只留最终正文，工具/思考块折叠成实时摘要 chip（运行中跟随流式滚动），逐级点击展开；卸载完整还原。
-  ja: Codex 風のワークフローの自動折りたたみ。終わったターンは「processed in X 秒」の 1 行にたたまれ、最終的な回答だけが残ります。ツール呼び出しと思考ブロックはストリーミングに追従する要約チップにまとまり、階層ごとに展開でき、アンインストールで完全に元へ戻せます。

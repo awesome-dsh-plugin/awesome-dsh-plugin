@@ -4,4 +4,3 @@ category: tools
 description:
   en: Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.
   zh: 将 SVG 路径与关键帧参数编译成自包含的 Lottie JSON 动画文件。
-  ja: SVG のパスとキーフレームの仕様から、単体で完結する Lottie の JSON アニメーションファイルを生成します。

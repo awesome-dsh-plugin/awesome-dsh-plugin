@@ -4,4 +4,3 @@ category: notify
 description:
   en: Journals every AI file write/edit into before/after snapshots for an inline VS Code review flow (accept/reject hunks, per-file undo, no git).
   zh: 把 AI 每次文件写入/编辑记录为 before/after 快照，供 VS Code 内联 review 使用（逐块接受/撤回、单文件撤销，不依赖 git）。
-  ja: AI によるファイルの書き込み/編集をすべて変更前後のスナップショットとして記録し、VS Code 上でのインラインレビュー（ハンク単位の受け入れ/却下、ファイル単位の取り消し）を git なしで実現します。

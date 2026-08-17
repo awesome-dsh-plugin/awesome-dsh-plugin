@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Git hygiene checker: read-only scan of merged and stale branches, oversized tracked files, untracked files and uncommitted work, with cleanup suggestions (it never deletes anything).'
   zh: Git 卫生巡检：只读扫描已合并/过期分支、大文件、未跟踪文件与未提交修改，输出体检报告与清理建议，不自动删除任何东西。
-  ja: Git の衛生チェッカー。マージ済みや放置されたブランチ、大きすぎる追跡ファイル、未追跡ファイル、未コミットの作業を読み取り専用でスキャンし、片付けの提案をします（削除は一切行いません）。

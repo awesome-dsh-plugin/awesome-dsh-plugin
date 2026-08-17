@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Persistent model tool-call trace recorder: every tool call is durably written to a JSONL file that survives restarts, queryable via a structured call_trace tool and a callTraceHistory service, with size rotation and an optional floating canvas UI add-on.'
   zh: 持久化模型工具调用轨迹记录器：每次工具调用落盘为 JSONL（重启不丢），提供结构化 call_trace 查询工具与 callTraceHistory 服务，支持文件大小轮转，附可选浮层画布 UI。
-  ja: モデルのツール呼び出しを永続的に記録するトレーサー。すべての呼び出しを再起動後も残る JSONL に書き出し、構造化された call_trace ツールと callTraceHistory サービスから照会できます。サイズによるローテーションと、任意のフローティングキャンバス UI 追加機能つき。

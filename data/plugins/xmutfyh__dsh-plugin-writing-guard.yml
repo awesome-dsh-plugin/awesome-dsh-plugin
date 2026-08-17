@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Academic writing guard (EN/ZH bilingual rules): local-regex linter for revision-process residue, defensive writing and AI-writing tells (em-dash abuse, not-X-but-Y, LLM word spikes, rule of three); writing_audit + writing_rules with incremental auto-audit that only reports new/resolved issues on paper file writes.'
   zh: 论文写作守卫（中英双语规则）：本地正则扫描修改过程残留、防御性写作与 AI 写作痕迹（破折号滥用、不是X而是Y、LLM 高频词、三连排比）；writing_audit / writing_rules 工具，论文写入后增量自动审计（仅反馈新增/已解决问题）。
-  ja: 学術文章のガード（英中の二言語ルール）。推敲の途中経過の残骸、予防線だらけの書き方、AI っぽさの兆候（ダッシュの多用、「X ではなく Y」構文、LLM が好む語の偏り、3 つ並べる癖）を、ローカルの正規表現リンターで検出します。writing_audit と writing_rules を提供し、論文ファイルの書き込み時には差分だけを自動監査して、新たに出た問題と解消した問題のみを報告します。

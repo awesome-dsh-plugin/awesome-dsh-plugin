@@ -4,4 +4,3 @@ category: model
 description:
   en: 'A GUI subagent-model selector beside the main model seat: pick a model and reasoning effort per session, applied to every in-process subagent.'
   zh: 主模型选择器旁的子代理模型选择器：按会话选择模型与思考程度，应用到所有进程内子代理。
-  ja: メインのモデル欄の隣に置く GUI のサブエージェント用モデルセレクター。セッションごとにモデルと推論強度を選ぶと、プロセス内のすべてのサブエージェントに適用されます。

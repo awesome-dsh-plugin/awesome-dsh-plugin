@@ -4,4 +4,3 @@ category: dev
 description:
   en: A TPS metrics plugin.
   zh: TPS 指标插件。
-  ja: TPS（1 秒あたりのトークン数）を表示するプラグイン。

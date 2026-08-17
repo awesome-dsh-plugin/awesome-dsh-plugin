@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Paddock: constrained local filesystem MCP server for agents — text read/write, directory ops, filename and content search confined to configurable zones, with zero runtime dependencies and a dsh bundle.'
   zh: paddock：面向 agent 的本地文件系统 MCP server——读写、目录操作、文件名与正文检索全部约束在可配置「围场」目录内，零运行时依赖，dsh bundle 接入。
-  ja: 'Paddock: エージェント向けの制約付きローカルファイルシステム MCP サーバー。テキストの読み書き、ディレクトリ操作、ファイル名と内容の検索を設定したゾーン内に限定します。実行時依存ゼロで dsh バンドルも提供。'

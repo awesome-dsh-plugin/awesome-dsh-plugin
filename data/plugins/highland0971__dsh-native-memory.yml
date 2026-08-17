@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'Native per-workspace memory on the harness''s own seams: facts and a bounded always-on profile on the storage-domain JSON unit, approval-gated writes with `(sessionId, seq)` citations, deterministic recall plus session-query FTS over past sessions — no external server, no custom SQLite.'
   zh: 基于 DSH 原生接缝的按工作区记忆：事实与有界常驻档案落在 storage-domain 的 JSON 单元上，写入经人工审批并带 `(sessionId, seq)` 引证，确定性召回 + session-query 全文检索历史会话——无外部服务器、无自建 SQLite。
-  ja: harness 自身の接続点に載せた、ワークスペース単位のネイティブなメモリ。storage ドメインの JSON ユニットに事実と常時参照される範囲限定のプロフィールを保存し、書き込みは承認を挟んで `(sessionId, seq)` の引用付きで行います。決定論的な想起に加えて、過去セッションに対する session-query の全文検索も利用できます。外部サーバーも独自の SQLite も不要です。

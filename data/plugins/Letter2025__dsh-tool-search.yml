@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Hermes-style tool search & slimming: progressive disclosure, semantic search, describe, and call long-tail tools on demand while core tools stay eager.'
   zh: Hermes 风格工具搜索与瘦身：渐进式披露，语义搜索/查看/调用长尾工具，核心工具保持直通。
-  ja: Hermes 風のツール検索と絞り込み。段階的な開示、意味検索、説明の取得に対応し、コアのツールは常時読み込みつつ、めったに使わないツールは必要になったときだけ呼び出します。

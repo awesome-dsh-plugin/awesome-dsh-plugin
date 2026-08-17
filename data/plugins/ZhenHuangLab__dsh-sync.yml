@@ -4,4 +4,3 @@ category: workflow
 description:
   en: Policy-driven Git sync for DSH settings and profile configuration, with secret-aware projections, conflict review, and per-line apply controls.
   zh: 面向 DSH 设置与 Profile 配置的策略化 Git 同步，支持敏感信息隔离、冲突审阅与按行选择应用。
-  ja: DSH の設定とプロファイル構成を、ポリシーに沿って Git で同期します。秘匿情報を考慮した投影、コンフリクトのレビュー、行単位の適用制御を備えます。

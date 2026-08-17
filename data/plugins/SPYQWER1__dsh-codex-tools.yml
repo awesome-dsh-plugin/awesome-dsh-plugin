@@ -4,4 +4,3 @@ category: tools
 description:
   en: Codex-backed `web_search`, `image_gen`, and `image_vision` tools for DeepSeek Harness, reusing ChatGPT OAuth login state.
   zh: 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
-  ja: ChatGPT の OAuth ログイン状態を再利用して、Codex を裏で使う `web_search`、`image_gen`、`image_vision` ツールを DeepSeek Harness に追加します。

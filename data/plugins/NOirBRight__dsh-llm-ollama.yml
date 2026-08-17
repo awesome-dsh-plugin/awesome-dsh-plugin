@@ -4,4 +4,3 @@ category: model
 description:
   en: 'Ollama Cloud native chat adapter: direct NDJSON translation of the Ollama /api/chat wire format, model discovery with context windows and capabilities, and web search/fetch providers under the ollama-cloud id, plus a Web settings card.'
   zh: Ollama Cloud 原生聊天适配器：直连 NDJSON 翻译 Ollama /api/chat 协议，模型发现带上下文窗口与能力信息，并注册 web 搜索/抓取 provider，附 Web 设置卡片。
-  ja: Ollama Cloud のネイティブチャットアダプター。Ollama の /api/chat のワイヤ形式を NDJSON のまま変換し、コンテキスト長と機能を含むモデル検出、ollama-cloud という id での Web 検索/取得プロバイダー、Web の設定カードを提供します。

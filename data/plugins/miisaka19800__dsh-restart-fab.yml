@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Floating restart button for the DSH web GUI: restarts the dsh process in place with a full-screen overlay and auto-reloads the page; no launcher script required, works on Windows/macOS/Linux.'
   zh: DSH 网页界面右下角的一键重启按钮：全屏遮罩原地重启 dsh 进程并自动刷新页面；无需启动脚本，跨 Windows/macOS/Linux。
-  ja: DSH web GUI 向けのフローティング再起動ボタン。全画面のオーバーレイを出しながら dsh のプロセスをその場で再起動し、ページを自動で再読み込みします。ランチャースクリプトは不要で、Windows/macOS/Linux で動きます。

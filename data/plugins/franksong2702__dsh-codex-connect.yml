@@ -4,4 +4,3 @@ category: model
 description:
   en: Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.
   zh: 通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。
-  ja: ChatGPT の OAuth と OpenAI Codex のモデルを DeepSeek Harness に接続します。検索と画像のツールは任意で有効にできます。

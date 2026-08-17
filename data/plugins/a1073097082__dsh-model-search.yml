@@ -4,4 +4,3 @@ category: ui
 description:
   en: Adds searchable filtering to the model selector by provider, model name, and model ID; spaces act as wildcards.
   zh: 为模型选择器增加按提供方、模型名称和模型 ID 搜索的筛选框，空格表示任意字符。
-  ja: モデルセレクターに、プロバイダー・モデル名・モデル ID での検索絞り込みを追加します。スペースはワイルドカードとして働きます。

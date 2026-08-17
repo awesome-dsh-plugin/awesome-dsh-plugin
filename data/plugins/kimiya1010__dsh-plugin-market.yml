@@ -4,4 +4,3 @@ category: market
 description:
   en: 'A plugin market for DeepSeek Harness: search and one-click install GitHub dsh-plugin plugins straight from the web GUI.'
   zh: DeepSeek Harness 插件市场：在 Web 界面里搜索并一键安装 GitHub 上的 dsh-plugin 插件。
-  ja: DeepSeek Harness 向けのプラグインマーケット。GitHub の dsh-plugin プラグインを web GUI から直接検索し、ワンクリックでインストールできます。

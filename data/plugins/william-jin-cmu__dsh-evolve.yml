@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Self-evolution: the agent hot-mounts/removes persistent plugins on itself mid-session.'
   zh: 自进化：agent 在会话内给自己热挂载/卸载持久化插件。
-  ja: 自己進化。エージェントがセッションの途中で、自分自身に永続プラグインをホットマウントしたり取り外したりします。

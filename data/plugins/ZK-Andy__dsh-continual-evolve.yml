@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.'
   zh: 持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。
-  ja: 継続的な自己進化。セッションの軌跡から harness の状態（プロンプト、メモリ、スキル、サブエージェントの仕様）を洗練させ、バージョン管理・監査・安全なロールバックを可能にします。レビューゲートとスキルのホットリロードつき。

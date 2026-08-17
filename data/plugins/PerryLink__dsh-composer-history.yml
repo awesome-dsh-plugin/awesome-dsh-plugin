@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Terminal-style input history for the web composer: edge-first arrow-key recall with exact draft/caret restore, browser-local persisted history, Ctrl+R reverse search, and sliding-context awareness; 0.5.0 adds a smart input layer — cross-session snippets (/save, /load), prompt templates with variables, reuse insights, and compaction-summary highlighting.'
   zh: Web 作曲器终端风格输入历史：边缘优先的方向键召回并精确还原草稿与光标、浏览器本地持久化历史、Ctrl+R 反向搜索，以及滑动上下文感知；0.5.0 再加智能输入层——跨会话片段库（/save、/load）、带变量的提示词模板、复用洞察与压缩摘要高亮。
-  ja: Web コンポーザー向けのターミナル風の入力履歴。端からの矢印キー呼び出しで下書きとカーソル位置を正確に復元し、ブラウザ内に履歴を保存、Ctrl+R の逆方向検索、スライドする文脈の把握に対応します。0.5.0 ではスマート入力層を追加——セッションをまたぐスニペット（/save、/load）、変数つきプロンプトテンプレート、再利用の分析、コンパクション要約のハイライトが加わりました。

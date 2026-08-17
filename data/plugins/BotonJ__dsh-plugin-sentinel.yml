@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Static pre-install security auditor for plugin bundles: lifecycle scripts, dynamic execution, credential-exfiltration combos, and patch-layer hazards, with zero dependencies and in-memory tar parsing.'
   zh: 插件安装前静态安全审计：生命周期脚本、动态执行、凭据外传组合特征与 patch 层风险；零依赖，tar 包全程内存解析不落盘。
-  ja: プラグインバンドルをインストール前に静的監査するセキュリティチェッカー。ライフサイクルスクリプト、動的実行、認証情報の持ち出しにつながる組み合わせ、パッチ層の危険を検出します。依存関係ゼロ、tar はメモリ上で解析します。

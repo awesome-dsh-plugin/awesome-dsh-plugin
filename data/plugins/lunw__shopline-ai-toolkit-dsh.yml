@@ -4,4 +4,3 @@ category: skill
 description:
   en: 'SHOPLINE AI Toolkit: bridges the official SHOPLINE Developer MCP server and ships seven SHOPLINE agent skills (Admin REST, GraphQL, OAuth, webhooks, Sline) — the SHOPLINE counterpart of the Shopify AI Toolkit.'
   zh: SHOPLINE AI 工具包：接入 SHOPLINE 官方开发者 MCP 服务器，内置七个 SHOPLINE 平台技能（Admin REST、GraphQL、OAuth、Webhook、Sline），是 Shopify AI Toolkit 的 SHOPLINE 对应版。
-  ja: SHOPLINE AI Toolkit。公式の SHOPLINE Developer MCP サーバーを橋渡しし、SHOPLINE 向けのエージェントスキル 7 種（Admin REST、GraphQL、OAuth、webhook、Sline）を提供します。Shopify AI Toolkit の SHOPLINE 版です。

@@ -4,4 +4,3 @@ category: workflow
 description:
   en: 'Unified anchored agent preset for DeepSeek V4 Pro/Flash on the official API and opencode-go: Minimal-exact two-tool first-request bootstrap, model-aware Pro/Flash paths, and epoch-aware catalog management for long-session stability.'
   zh: DeepSeek V4 Pro/Flash 统一锚定 agent 预设（官方 API 与 opencode-go）：首请求 Minimal 精确两工具锚定、按模型分流 Pro/Flash 路径、epoch 感知目录管理保证长对话稳定。
-  ja: 公式 API と opencode-go 上の DeepSeek V4 Pro/Flash 向けの、基準を固定した統一エージェントプリセット。Minimal と完全に同じ 2 ツールの初回リクエストによるブートストラップ、モデルに応じた Pro/Flash の経路、長時間セッションを安定させるエポック対応のカタログ管理を備えます。

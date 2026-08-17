@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Plugin health checks: manifest protocol / patch format / build traps, zero-dependency and read-only.'
   zh: 插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。
-  ja: プラグインの健全性チェック。manifest のプロトコル / パッチの形式 / ビルド時の落とし穴を、依存関係ゼロ・読み取り専用で調べます。

@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Client-only right-edge chat input index rail: one bar per user message, two-stage hover preview (15 chars, expandable to 40), click-to-jump, and scroll-follow highlight; static npm bundle with no host half.'
   zh: 纯客户端对话输入目录条：每条用户消息一根横条，两级悬停预览（15 字，移入气泡展开 40 字）、点击跳转、滚动跟随高亮；静态 npm 包，无宿主半。
-  ja: クライアント側だけで動く、右端のチャット入力インデックスバー。ユーザーメッセージ 1 件につき 1 本のバーを表示し、ホバーで 2 段階のプレビュー（15 文字、展開して 40 文字）、クリックでジャンプ、スクロールに追従したハイライトを行います。ホスト側を持たない静的な npm バンドルです。

@@ -4,4 +4,3 @@ category: skill
 description:
   en: Generate validated, self-contained interactive architecture, workflow, sequence, data-flow, and lifecycle diagrams from repositories or system descriptions.
   zh: 从仓库或系统描述生成经过校验的自包含交互式架构图、流程图、时序图、数据流图和生命周期图。
-  ja: リポジトリやシステムの説明から、検証済みで単体完結する対話的なアーキテクチャ図、ワークフロー図、シーケンス図、データフロー図、ライフサイクル図を生成します。

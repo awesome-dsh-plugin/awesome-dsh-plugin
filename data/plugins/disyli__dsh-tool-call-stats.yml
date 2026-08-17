@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Per-process tool-call statistics: a `tool_stats` tool reporting per-tool call counts, error counts, and average durations.'
   zh: 进程内工具调用统计：提供 `tool_stats` 工具，按工具汇报调用次数、失败次数与平均耗时。
-  ja: プロセス単位のツール呼び出し統計。`tool_stats` ツールが、ツールごとの呼び出し回数、エラー数、平均所要時間を報告します。

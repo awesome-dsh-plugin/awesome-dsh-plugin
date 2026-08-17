@@ -4,4 +4,3 @@ category: ui
 description:
   en: Git branch selector and Git graph in the conversation header of the dsh web GUI.
   zh: dsh web GUI 会话头部栏的 Git 分支选择器与提交图。
-  ja: dsh web GUI の会話ヘッダーに Git ブランチセレクターと Git グラフを追加します。

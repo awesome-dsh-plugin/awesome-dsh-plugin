@@ -4,4 +4,3 @@ category: notify
 description:
   en: Task-completion notifications via ServerChan / DingTalk / Feishu / generic webhooks.
   zh: 任务完成通知：ServerChan / 钉钉 / 飞书 / 通用 Webhook。
-  ja: ServerChan / DingTalk / 飛書 / 汎用 webhook によるタスク完了通知。

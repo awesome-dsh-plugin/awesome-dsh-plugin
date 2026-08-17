@@ -4,4 +4,3 @@ category: usage
 description:
   en: Per-model token usage and cost estimation with DeepSeek account balance, shown in a Settings panel tab.
   zh: 按模型统计 token 消耗并估算费用，同时显示 DeepSeek 账户余额，展示于设置面板「模型消耗」页签。
-  ja: モデル別のトークン使用量とコスト推定に加え、DeepSeek アカウントの残高を設定パネルのタブに表示します。

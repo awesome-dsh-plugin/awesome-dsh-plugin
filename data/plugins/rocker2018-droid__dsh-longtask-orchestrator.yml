@@ -4,4 +4,3 @@ category: workflow
 description:
   en: 'Long-task orchestration loop: Codex plans/scores/reviews, DeepSeek executes, Kimi supplements (vision acceptance, summarization, cross-check).'
   zh: 长任务编排闭环：Codex 规划/打分/审核，DeepSeek 执行，Kimi 补充（视觉验收/摘要/交叉验证）。
-  ja: 長時間タスクの統括ループ。Codex が計画・採点・レビューし、DeepSeek が実行し、Kimi が補助します（視覚での受け入れ確認、要約、相互チェック）。

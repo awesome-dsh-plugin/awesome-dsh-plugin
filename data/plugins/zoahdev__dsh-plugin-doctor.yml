@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Health checks for DSH plugins: manifest/patch/entry/build/pack/install verification, model-callable plugin_check, profile host-shadowing + BOM detection, environment diagnostics, and poison preflight.'
   zh: 'DSH 插件体检：manifest/patch/entry/build/pack/install 校验、可被模型调用的 plugin_check、profile 宿主遮蔽与 BOM 检测、环境诊断、投毒预检。'
-  ja: DSH プラグインの健全性チェック。manifest/パッチ/エントリ/ビルド/パック/インストールの検証、モデルから呼べる plugin_check、プロファイルによるホストの上書きと BOM の検出、環境の診断、汚染の事前確認を行います。

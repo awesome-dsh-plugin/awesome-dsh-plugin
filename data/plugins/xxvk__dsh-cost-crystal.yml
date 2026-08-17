@@ -4,4 +4,3 @@ category: usage
 description:
   en: 'Floating cost crystal for the Web UI: balance card, real-time tok/s, peak/off-peak billing countdown, last-24h spend, and a 🔮 next-message cost forecast, all timezone-aware.'
   zh: Web UI 成本水晶球:余额卡片、实时 tok/s 速率、波峰/低峰计费倒计时、近 24h 消耗,以及 🔮 下一条消息消耗预测,全部时区感知。
-  ja: Web UI 向けのフローティングなコストの水晶。残高カード、リアルタイムの tok/s、ピーク/オフピーク切り替えのカウントダウン、直近 24 時間の支出、🔮 次のメッセージのコスト予測を、すべてタイムゾーンを踏まえて表示します。

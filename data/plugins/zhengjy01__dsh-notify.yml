@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).'
   zh: 系统级桌面通知：回合完成 / 工作流完成横幅，需要审批时弹出模态提醒（macOS osascript / Linux notify-send）。
-  ja: システムレベルのデスクトップ通知。ターン完了とワークフロー終了のバナーに加え、承認が必要なときはモーダルで知らせます（macOS は osascript、Linux は notify-send）。

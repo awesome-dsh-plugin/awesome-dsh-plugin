@@ -4,4 +4,3 @@ category: tools
 description:
   en: "Desktop (native) control for dsh as a stdio JSON-RPC bridge over a Python core: capture the screen, inject pointer/keyboard input, drive accessibility-tree actions, and gate high-risk operations behind required confirmations."
   zh: "桌面(native)控制:dsh 经 stdio JSON-RPC 桥接 Python 核心;支持截屏、指针/键盘注入、无障碍树语义操作,并以强制确认为高风险操作把关。"
-  ja: Python コアを stdio JSON-RPC ブリッジで包んだ dsh 向けのデスクトップ（ネイティブ）操作。画面の取得、ポインター/キーボード入力の注入、アクセシビリティツリーを介した操作を行い、リスクの高い操作は確認を必須にします。

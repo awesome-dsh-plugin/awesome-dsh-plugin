@@ -4,4 +4,3 @@ category: fun
 description:
   en: 'A Chrome-dino-style runner for the DeepSeek Harness Web UI: play while the agent replies, score from 梁子 to 梁圣 on a persistent progress strip.'
   zh: 等待 Agent 回复时的恐龙快跑小游戏：常驻进度条从「梁子」冲向「梁圣」，折叠即暂停、任意键恢复。
-  ja: DeepSeek Harness Web UI 向けの Chrome の恐竜ゲーム風ランナー。エージェントの返信中に遊べ、スコアは「梁子」から「梁圣」まで、保存される進捗バーで上がっていきます。

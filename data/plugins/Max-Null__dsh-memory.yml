@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'Cross-session plaintext memory: deterministic BM25 keyword recall (no embeddings), memory_save/list/search/confirm/forget tools behind a human-confirm gate, and global + project-scoped JSON stores that follow your git repo.'
   zh: 跨会话明文记忆：确定性 BM25 关键词召回（无向量嵌入），memory_save/list/search/confirm/forget 五个工具 + 人工确认闸门，global/project 两层 JSON 存储（project 随 git 分享）。
-  ja: セッションをまたぐ平文メモリ。埋め込みを使わない決定論的な BM25 キーワード想起、人の確認を挟む memory_save/list/search/confirm/forget ツール、git リポジトリに追従するグローバルとプロジェクト単位の JSON ストアを備えます。

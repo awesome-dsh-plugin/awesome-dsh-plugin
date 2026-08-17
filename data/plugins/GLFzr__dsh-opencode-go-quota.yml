@@ -4,4 +4,3 @@ category: usage
 description:
   en: 'OpenCode Go quota ring: click-to-cycle progress ring (5h/weekly/monthly) left of the model selector, colored by urgency, with reset countdowns on hover.'
   zh: 模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。
-  ja: OpenCode Go のクォータリング。モデルセレクターの左に進捗リング（5 時間/週次/月次をクリックで切り替え）を表示し、逼迫度に応じて色を変え、ホバーでリセットまでのカウントダウンを出します。

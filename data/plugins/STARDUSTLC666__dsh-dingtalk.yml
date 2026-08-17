@@ -4,4 +4,3 @@ category: notify
 description:
   en: DingTalk group-robot notifications (webhook + HMAC signing, zero runtime dependencies).
   zh: 钉钉群机器人通知（webhook + 加签，零运行时依赖）。
-  ja: DingTalk のグループロボット通知（webhook ＋ HMAC 署名、実行時依存ゼロ）。

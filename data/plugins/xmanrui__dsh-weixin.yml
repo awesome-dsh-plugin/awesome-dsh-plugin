@@ -4,4 +4,3 @@ category: notify
 description:
   en: Connect a Weixin bot to DeepSeek Harness by scanning a QR code.
   zh: 通过微信扫码把微信机器人接入 DeepSeek Harness。
-  ja: QR コードを読み取るだけで微信の bot を DeepSeek Harness に接続できます。

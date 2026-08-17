@@ -4,4 +4,3 @@ category: skill
 description:
   en: 'Complete chinese-traditional-wisdom (玄枢 / XuanShu) skill pack as a DeepSeek Harness Cordis plugin: bazi, ziwei-doushu, liuyao, meihua, qimen, daliuren, taiyi, wuyun-liuqi, constitution and fengshui calculation, with a local deterministic engine and a visualization dashboard.'
   zh: 完整中华传统智慧（玄枢 / XuanShu）技能包，封装为 DeepSeek Harness Cordis 插件：八字、紫微斗数、六爻、梅花易数、奇门遁甲、大六壬、太乙、五运六气、中医体质与风水推算，内置本地确定性引擎与可视化 Dashboard。
-  ja: chinese-traditional-wisdom（玄枢 / XuanShu）のスキルパックを DeepSeek Harness の Cordis プラグインとして提供。四柱推命、紫微斗数、六爻、梅花心易、奇門遁甲、大六壬、太乙、五運六気、体質、風水の計算に対応し、ローカルの決定論的エンジンと可視化ダッシュボードを備えます。

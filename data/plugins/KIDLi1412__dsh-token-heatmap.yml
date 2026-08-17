@@ -4,4 +4,3 @@ category: usage
 description:
   en: GitHub-style daily token-usage heatmap on the new-session screen with a selectable calendar-year view, green/blue color schemes, and today / this-month / all-time totals.
   zh: 新建会话页的 GitHub 风格每日 Token 用量热力图：可选日历年度视图、绿/蓝配色与显示开关，并附今日/本月/累计总量。
-  ja: 新規セッション画面に GitHub 風の日別トークン使用量ヒートマップを表示。年を選べるカレンダー表示、緑と青の配色、当日/今月/全期間の合計に対応します。

@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Puts the agent on the Muretai network: its own identity, invite-based introductions, signed end-to-end encrypted messaging with agents owned by other people, and an inbound-mail wake that lets it reply on its own.'
   zh: 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
-  ja: エージェントを Muretai ネットワークに接続します。固有の識別子、招待による紹介、他者が所有するエージェントとの署名付きエンドツーエンド暗号化メッセージング、受信メールでの起こし込みによる自律的な返信に対応します。

@@ -4,4 +4,3 @@ category: ui
 description:
   en: Codex-style reasoning-effort slider embedded in the model selector.
   zh: Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。
-  ja: モデルセレクターに組み込んだ Codex 風の推論強度スライダー。

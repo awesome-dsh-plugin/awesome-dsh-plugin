@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.'
   zh: 给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。
-  ja: あらゆる AI ツールとエージェントに共通のメモリ層。Context Bundle の注入、プロンプト時の想起、MCP ツール、ターン終了時の DSH スレッドの取り込みに対応します。

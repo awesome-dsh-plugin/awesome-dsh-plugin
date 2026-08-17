@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Lark/Feishu bot channel for DeepSeek Harness: each chat drives its own agent, and tool approvals, model questions, and plan reviews return as cards answered by a button or a reply. Switch workspace and model from the chat (`/cd`, `/model`, `/new`), and run several bots that keep separate sessions and can hand turns to each other in one group.'
   zh: DeepSeek Harness 的飞书/Lark 机器人渠道：每个会话驱动独立 agent，工具审批、模型提问与计划审阅都以卡片回到聊天，点按钮或直接回复即可作答；聊天里用 `/cd`、`/model`、`/new` 切工作区、换模型、重开会话，多个机器人各自独立并可在同群交接回合。
-  ja: DeepSeek Harness 向けの Lark/飛書 bot チャネル。チャットごとに独立したエージェントが動き、ツールの承認、モデルからの質問、プランのレビューはカードとして返り、ボタンか返信で答えられます。チャットからワークスペースとモデルを切り替えられ（`/cd`、`/model`、`/new`）、複数の bot を別々のセッションで動かして 1 つのグループ内でターンを引き継ぐこともできます。

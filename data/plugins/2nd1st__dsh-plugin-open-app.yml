@@ -4,4 +4,3 @@ category: ui
 description:
   en: 'Runs open-mcp-apps inside DSH: every MCP app gets its own sidebar container with a separate workspace, session, and App mode, an agent status strip under the app, and inline app rendering in ordinary chats.'
   zh: 把 open-mcp-apps 接进 DSH：每个 MCP app 都是侧边栏里自己的容器，带独立 workspace、会话与 App mode，应用下方是 agent 状态条，普通聊天里也能行内渲染 app。
-  ja: DSH の中で open-mcp-apps を動かします。MCP アプリごとに専用のサイドバーコンテナ（独立したワークスペース、セッション、App モード）、アプリ下部のエージェント状態バー、通常チャット内でのインライン描画を提供します。

@@ -4,4 +4,3 @@ category: tools
 description:
   en: Tavily search with multiple API keys, key rotation and failover, a usage gauge, and a settings card.
   zh: Tavily 多密钥搜索：支持密钥轮换/故障转移、用量仪表盘与设置卡片。
-  ja: 複数の API キーに対応した Tavily 検索。キーのローテーションとフェイルオーバー、使用量のゲージ、設定カードを備えます。

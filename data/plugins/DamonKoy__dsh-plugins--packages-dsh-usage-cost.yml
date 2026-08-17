@@ -4,4 +4,3 @@ category: dev
 description:
   en: Token usage and cost tracking with daily/session budget alerts and a usage_report tool.
   zh: Token 用量与成本统计：日/会话预算告警 + usage_report 工具。
-  ja: トークン使用量とコストの追跡。日次/セッション単位の予算アラートと usage_report ツールを備えます。

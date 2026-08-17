@@ -4,4 +4,3 @@ category: tools
 description:
   en: Create and manage sandboxed JavaScript tools with a Monaco editor and model-driven tool lifecycle.
   zh: 用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。
-  ja: サンドボックス化された JavaScript のツールを、Monaco エディターとモデル主導のライフサイクル管理で作成・管理できます。

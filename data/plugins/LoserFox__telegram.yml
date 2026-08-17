@@ -4,4 +4,3 @@ category: notify
 description:
   en: 'Bridge to the Telegram Bot API: long polling, per-chat sessions, HTML formatting.'
   zh: Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化。
-  ja: Telegram Bot API へのブリッジ。ロングポーリング、チャットごとのセッション、HTML 整形に対応します。

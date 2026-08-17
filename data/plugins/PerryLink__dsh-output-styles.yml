@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Runtime-switchable model output styles with Claude Code outputStyles parity, plus the output.render.* presentation protocol: a /style command, per-session persistence, systemPrompt injection, six built-in styles, a web picker, and a renderer registry with per-session/per-tool rules and /export.'
   zh: 运行时切换模型输出风格（对标 Claude Code outputStyles），另加 output.render.* 呈现协议：/style 命令、按会话持久化、systemPrompt 注入、六个内置风格、Web 选择器，以及带按会话/按工具规则与 /export 的渲染器注册表。
-  ja: 実行時に切り替えられるモデル出力スタイル。Claude Code の outputStyles と同等の機能に加え、output.render.* 表示プロトコルを提供します。/style コマンド、セッション単位の保持、systemPrompt への注入、組み込みスタイル 6 種、Web のピッカー、セッション/ツールごとのルールと /export を備えたレンダラーレジストリを含みます。

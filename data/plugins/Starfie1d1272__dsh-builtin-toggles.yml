@@ -4,4 +4,3 @@ category: dev
 description:
   en: 'Evidence-backed inspector for DSH Web built-in capabilities: runtime/config provenance, compatibility and drift diagnostics, plus fail-closed controls for nine reviewed UI leaves.'
   zh: DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。
-  ja: DSH Web の組み込み機能を根拠つきで調べるインスペクター。実行時と設定の出どころ、互換性とずれの診断に加え、精査済みの UI 9 か所に対するフェイルクローズの制御を提供します。

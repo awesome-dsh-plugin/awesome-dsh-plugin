@@ -4,4 +4,3 @@ category: tools
 description:
   en: 'Complement to official Creator mode: stage, validate, live-mount via ctx.plugin, score, and solidify or roll back in-memory tool-plugin trials.'
   zh: 补充官方创造模式：把内存里试过的小工具插件校验、经 ctx.plugin 热挂、打分后固化到盘上或回滚。
-  ja: 公式の Creator モードを補完します。プロセス内のツールプラグインの試作を、ステージング、検証、ctx.plugin によるライブマウント、採点のうえ、定着させるかロールバックするかを選べます。

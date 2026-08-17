@@ -4,4 +4,3 @@ category: model
 description:
   en: 'Use third-party subscription accounts in DeepSeek Harness: chat, image understanding, image generation, and image editing with the models your subscription covers, with available models and reasoning levels synced from your account; currently supports OpenAI/ChatGPT subscriptions, more providers planned.'
   zh: 用第三方订阅账户在 DeepSeek Harness 中使用订阅覆盖的模型：文字对话、图片理解、图片生成与图片编辑，可用模型与推理等级随账户自动同步；当前支持 OpenAI / ChatGPT 订阅，更多订阅服务规划中。
-  ja: DeepSeek Harness でサードパーティのサブスクリプションアカウントを利用。契約に含まれるモデルでチャット、画像理解、画像生成、画像編集ができ、利用可能なモデルと推論レベルはアカウントから同期されます。現在は OpenAI/ChatGPT のサブスクリプションに対応し、今後プロバイダーを追加予定です。

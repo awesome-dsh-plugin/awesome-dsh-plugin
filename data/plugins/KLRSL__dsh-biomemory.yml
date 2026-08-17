@@ -4,4 +4,3 @@ category: memory
 description:
   en: 'Biomimetic memory system for DeepSeek Harness: plain-Markdown data layer, memory tools, frozen-snapshot injection, graded approval gating, structured audits, memory metabolism (dream), memory pins, semantic recall, /memory command, and cross-session retrieval.'
   zh: 为 DeepSeek Harness 打造的生物仿生记忆系统：纯 Markdown 数据层、memory 工具、冻结快照注入、分级审批门、结构化审计、记忆代谢（dream）、记忆钉、语义检索、/memory 命令与跨会话召回。
-  ja: DeepSeek Harness 向けの生体模倣型メモリシステム。プレーンな Markdown のデータ層、メモリツール、凍結スナップショットの注入、段階的な承認ゲート、構造化された監査、記憶の代謝（dream）、メモリのピン留め、意味検索による想起、/memory コマンド、セッション横断の検索を備えます。

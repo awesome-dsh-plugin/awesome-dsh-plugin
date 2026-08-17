@@ -6,7 +6,7 @@
 //   node scripts/generate-readme.mjs --check  # verify in sync (CI)
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
-import { CAT_EMOJI, CAT_IDS, orderEntries, readEntries, validateEntries } from './lib/entries.mjs'
+import { BASE_LOCALE, CAT_EMOJI, CAT_IDS, orderEntries, readEntries, validateEntries } from './lib/entries.mjs'
 
 const CHECK = process.argv.includes('--check')
 
@@ -44,7 +44,6 @@ function headingFor(loc, id) {
 const TOC_SHELL = {
   en: { top: 'Plugins', tail: ['Badge', 'Disclaimer'] },
   zh: { top: '插件', tail: ['徽章', '免责声明'] },
-  ja: { top: 'プラグイン', tail: ['バッジ', '免責事項'] },
 }
 
 function replaceBlock(text, [open, close], body, file) {
@@ -99,6 +98,7 @@ const ordered = orderEntries(entries)
 const used = CAT_IDS.filter((id) => ordered.some((e) => e.category === id))
 
 let stale = false
+const untranslated = []
 for (const loc of LOCALES) {
   const shell = TOC_SHELL[loc.code]
   if (!shell) {
@@ -115,7 +115,13 @@ for (const loc of LOCALES) {
     .map((id) => {
       const lines = ordered
         .filter((e) => e.category === id)
-        .map((e) => `- [${e.name}](${e.url}) ${loc.sep} ${e.description[loc.code]}`)
+        .map((e) => {
+          // Untranslated entries render their English text rather than blocking
+          // the build — an honest gap a maintainer closes later.
+          const d = e.description[loc.code] ?? e.description[BASE_LOCALE]
+          if (e.description[loc.code] === undefined) untranslated.push(`${loc.readme}: ${e.url}`)
+          return `- [${e.name}](${e.url}) ${loc.sep} ${d}`
+        })
       return `### ${headingFor(loc, id)}\n\n${lines.join('\n')}`
     })
     .join('\n\n')
@@ -145,6 +151,12 @@ for (const loc of LOCALES) {
   for (const u of smuggled) console.error(`${loc.readme}: ${u} appears in the README but has no data/plugins file`)
   for (const u of missing) console.error(`${loc.readme}: ${u} is declared in data/plugins but the README doesn't list it`)
   if (smuggled.length || missing.length) stale = true
+}
+
+if (untranslated.length) {
+  console.log(`\n${untranslated.length} entr${untranslated.length === 1 ? 'y' : 'ies'} awaiting translation (showing ${BASE_LOCALE} for now):`)
+  for (const u of untranslated.slice(0, 20)) console.log(`  ${u}`)
+  if (untranslated.length > 20) console.log(`  … and ${untranslated.length - 20} more`)
 }
 
 if (stale) {

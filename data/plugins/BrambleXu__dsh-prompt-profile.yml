@@ -4,4 +4,3 @@ category: dev
 description:
   en: Reusable Markdown prompt profiles for DeepSeek Harness with per-turn model selection, argument substitution, and state restoration.
   zh: DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。
-  ja: DeepSeek Harness 向けの再利用できる Markdown プロンプトプロファイル。ターンごとのモデル選択、引数の差し込み、状態の復元に対応します。

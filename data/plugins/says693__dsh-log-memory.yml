@@ -4,4 +4,3 @@ category: fun
 description:
   en: 'Popup guardian for session logs: opens with the Web UI on a configurable reminder interval (10 min-3 h), with one-click incremental backup of every session.jsonl(.zstd) under ~/.dsh/sessions in raw or readable chat-log format.'
   zh: 会话日志守护弹窗：打开 Web 即提醒（间隔 10 分钟至 3 小时可调），一键增量备份 ~/.dsh/sessions 全部 session.jsonl(.zstd)，可选原始压缩或可读聊天记录两种格式，弹窗内可选备份文件夹。
-  ja: セッションログの見守り役のポップアップ。設定した間隔（10 分〜3 時間）で Web UI とともに現れ、~/.dsh/sessions 配下のすべての session.jsonl(.zstd) を、生のままか読みやすいチャットログ形式でワンクリック差分バックアップします。
