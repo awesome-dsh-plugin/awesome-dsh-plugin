@@ -1,6 +1,6 @@
 url: https://github.com/Viger1/dsh-pilot
 name: Viger1/dsh-pilot
-category: tools
+category: browser
 description:
   en: 'Browser operation by accessibility refs: navigate, snapshot the page as a ref tree, act on elements, and wait for conditions; the origin policy follows the session approval stance and is enforced by request interception.'
   zh: 按无障碍 ref 操控浏览器：导航、把页面快照成 ref 树、操作元素、等待条件；域名策略跟随会话审批状态，并由请求拦截层强制执行。

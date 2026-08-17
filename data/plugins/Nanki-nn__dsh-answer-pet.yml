@@ -1,6 +1,6 @@
 url: https://github.com/Nanki-nn/dsh-answer-pet
 name: Nanki-nn/dsh-answer-pet
-category: ui
+category: fun
 description:
   en: Extensible animated response pet with blue-whale, orange-cat, and silver-shaded-cat themes, per-session progress, model and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.
   zh: 可扩展回答状态宠物，内置蓝鲸、橘猫和银渐层猫主题；按会话实时展示回答进度、模型动作与工具调用轨迹、token、输出速率与耗时，并支持多会话状态卡片展开和收起。

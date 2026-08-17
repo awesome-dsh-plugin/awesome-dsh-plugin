@@ -24,7 +24,7 @@ export const BASE_LOCALE = 'en'
 // chips and the sitemap. Kept in sync with CAT_IDS in build-site.mjs and the
 // two `categories` blocks in site/locales.mjs (reorder-categories.py rewrites
 // build-site.mjs by regex, so that array must stay on one line).
-export const CAT_IDS = ['ui', 'usage', 'theme', 'model', 'session', 'memory', 'tools', 'vision', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
+export const CAT_IDS = ['ui', 'usage', 'theme', 'model', 'session', 'memory', 'tools', 'browser', 'vision', 'voice', 'docs', 'skill', 'workflow', 'git', 'notify', 'dev', 'security', 'remote', 'market', 'fun']
 
 // Every README except the English one prefixes its headings with an emoji —
 // site/locales.mjs stores the bare names because build-site matches headings
@@ -38,11 +38,17 @@ export const CAT_EMOJI = {
   session: '💬',
   memory: '🧠',
   tools: '🛠️',
+  browser: '🌐',
   vision: '🖼️',
+  voice: '🎙️',
+  docs: '📄',
   skill: '🧩',
   workflow: '🔁',
+  git: '🔀',
   notify: '🔔',
   dev: '🧑‍💻',
+  security: '🔒',
+  remote: '📱',
   market: '🛒',
   fun: '🎮',
 }

@@ -1,6 +1,6 @@
 url: https://github.com/xbzbing/dsh-auth-gateway
 name: xbzbing/dsh-auth-gateway
-category: dev
+category: security
 description:
   en: 'Password + TOTP two-factor authentication gateway for the dsh web UI: every HTTP request and WebSocket upgrade is refused until login, with per-source lockout, global rate limits and one-time backup codes.'
   zh: '为 dsh web 提供密码与 TOTP 双因素认证网关：登录前拦截全部 HTTP/WebSocket 请求，含按来源锁定、全局限流与一次性备份代码。'

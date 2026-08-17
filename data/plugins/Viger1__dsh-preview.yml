@@ -1,6 +1,6 @@
 url: https://github.com/Viger1/dsh-preview
 name: Viger1/dsh-preview
-category: tools
+category: browser
 description:
   en: Headless-browser verification tools so the agent opens the page it just built, reads the rendered DOM and computed styles, checks the console, and screenshots the result; ships a frontend-verify skill.
   zh: 无头浏览器验证工具：让 agent 打开自己刚写的页面，读取渲染后的 DOM 与计算样式、检查控制台、截图留档；内置 frontend-verify 技能。
