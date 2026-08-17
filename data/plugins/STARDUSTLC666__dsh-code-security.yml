@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-code-security
+name: STARDUSTLC666/dsh-code-security
+category: tools
+description:
+  en: 'Deterministic code security review: 40+ rules, secret entropy detection, staged-diff review, SARIF export, baseline acceptance and SBOM-lite dependency inventory.'
+  zh: 确定性代码安全审查：40+ 规则、密钥熵检测、staged diff 审查、SARIF 导出、基线接受与 SBOM-lite 依赖清单。
