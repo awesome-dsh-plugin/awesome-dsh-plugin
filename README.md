@@ -341,6 +341,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [YZz-S/dsh-token-cost-meter](https://github.com/YZz-S/dsh-token-cost-meter) - Real-time session token usage and estimated cost in the composer stats row, with pricing fetched from DeepSeek official pricing page.
 - [zer0zio-stack/dsh-opencode-go-quota](https://github.com/zer0zio-stack/dsh-opencode-go-quota) - Bottom-right 余额 badge for the DSH Web UI: on expand it fetches the currently-selected provider's OpenCode Go plan limits or DeepSeek prepaid balance, plus local token usage and pricing-based spend estimates.
 - [zh667/TokenLedger](https://github.com/zh667/TokenLedger) - Sidebar usage panel that attributes tokens to the relay site that served each request, read from your existing provider config: today/month/all-time totals, per-site and per-model breakdowns, a year activity heatmap, and New API / Sub2API / DeepSeek balances.
+- [zhang-jiazhi/dsh-stats-panel](https://github.com/zhang-jiazhi/dsh-stats-panel) - Token usage statistics for DeepSeek Harness. Per-channel usage with balances and plan quotas for mainstream providers, CNY cost estimates, and daily charts — a settings-sidebar section.
 - [zoumutou/dsh-cost-balance](https://github.com/zoumutou/dsh-cost-balance) - Collapsible iOS-style stats pill under the composer: session cost, DeepSeek account balance, cache-hit rate, and token usage in a frosted panel.
 
 ### Themes & Appearance
