@@ -37,6 +37,11 @@ jobs:
             const { owner, repo } = context.repo
             const MAX = Number(process.env.MAX_RERUNS)
 
+            // Housekeeping: a busy API quota is a reason to do less this pass,
+            // never a reason to page anyone with a red run. Everything below is
+            // wrapped so the job only fails on a genuine bug.
+            try {
+
             // One request: recent PR-check runs, indexed by the commit they ran on.
             const runs = await github.rest.actions.listWorkflowRuns({
               owner, repo, workflow_id: 'pr-check.yml', per_page: 100,
@@ -78,3 +83,8 @@ jobs:
               }
             }
             core.info(`re-queued ${requeued} pull request(s)`)
+
+            } catch (e) {
+              if (e.status === 403 || e.status === 429) core.warning(`API quota busy — skipping this pass (${e.status})`)
+              else throw e
+            }
