@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/memory-vault
+name: JohnXu22786/memory-vault
+category: memory
+description:
+  en: 'Cross-session persistent memory for coding agents: local SQLite storage, keyword + semantic hybrid retrieval, markdown import/export, web/MCP interfaces — installable as a dsh.bundle Node bridge and an MCP server.'
+  zh: '面向编码代理的跨会话持久记忆插件：本地 SQLite 存储、关键词与语义混合检索、markdown 导入导出、Web/MCP 界面，可作 dsh.bundle Node 桥接或以 MCP 服务安装。'

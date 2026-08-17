@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/skill-manager
+name: JohnXu22786/skill-manager
+category: skill
+description:
+  en: 'Skill discovery, loading, creation and statistics for DeepSeek Harness: multi-level zone scanning, three-tier progressive disclosure, a creation wizard and full audit — driven through a dsh.bundle Node bridge over the repertoire --io protocol.'
+  zh: '为 DeepSeek Harness 提供技能发现、加载、创建与统计：多级目录自动发现、三级渐进式披露、创建向导与完整校验，经 dsh.bundle 的 Node 桥接驱动 repertoire --io 协议。'
