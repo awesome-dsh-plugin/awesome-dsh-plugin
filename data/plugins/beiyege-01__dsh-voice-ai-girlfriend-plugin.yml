@@ -1,0 +1,6 @@
+url: https://github.com/beiyege-01/dsh-voice-ai-girlfriend-plugin
+name: beiyege-01/dsh-voice-ai-girlfriend-plugin
+category: notify
+description:
+  en: 'Voice AI girlfriend for the Web UI: FunASR mic input, Qwen3-TTS spoken replies, companion animation window, and two-way QQ chat (text/voice/image push) via NapCat.'
+  zh: Web UI 语音 AI 女友：FunASR 麦克风语音输入、Qwen3-TTS 语音回复、数字人动画窗、QQ 双向聊天（文本/语音/图片推送，经 NapCat）。
