@@ -383,7 +383,6 @@ dsh plugin --profile web add dshmarket
 - [kinoward/dsh-plugin-subhub](https://github.com/kinoward/dsh-plugin-subhub) — 用第三方订阅账户在 DeepSeek Harness 中使用订阅覆盖的模型：文字对话、图片理解、图片生成与图片编辑，可用模型与推理等级随账户自动同步；当前支持 OpenAI / ChatGPT 订阅，更多订阅服务规划中。
 - [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) — 非官方 Command Code 模型接入插件：注册 `commandcode` 路由，带实时模型目录与推理强度支持。
 - [NOirBRight/dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama) — Ollama Cloud 原生聊天适配器：直连 NDJSON 翻译 Ollama /api/chat 协议，模型发现带上下文窗口与能力信息，并注册 web 搜索/抓取 provider，附 Web 设置卡片。
-- [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) — 零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。
 - [omdsh-dev/Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) — Qwen 多模态插件支持。
 - [OpenTritium/dsh-codex-shim](https://github.com/OpenTritium/dsh-codex-shim) — 为选定的模型路由模拟 Codex 环境，以提升 GPT 系列模型的工具调用成功率。
 - [r600a-code/dsh-swarm-router](https://github.com/r600a-code/dsh-swarm-router) — 子智能体矩阵蜂群：把异质任务路由到最合适的模型（OpenRouter 类网关 + cfgpu.com/llm/square），通过进程内子智能体或直接 LLM 调用下放，并按模型统计 token 消耗、用真实反馈驱动排名。
@@ -995,6 +994,7 @@ dsh plugin --profile web add dshmarket
 - [lucky8197/dsh-git-hygiene](https://github.com/lucky8197/dsh-git-hygiene) — Git 卫生巡检：只读扫描已合并/过期分支、大文件、未跟踪文件与未提交修改，输出体检报告与清理建议，不自动删除任何东西。
 - [NEAZ71eve/dsh-tool-github](https://github.com/NEAZ71eve/dsh-tool-github) — GitHub REST API 工具 + 浏览器侧边栏面板：仓库/搜索/Issue/PR/评论、账号绑定（凭据库）与一键克隆为工作区。
 - [No-PRM/dsh-explorer](https://github.com/No-PRM/dsh-explorer) — Git 优先的文件树侧栏：VS Code 风格层级线、M/A/U/D/R git 状态装饰、HEAD 与工作区对照预览、媒体预览、拖拽引用（文件/文件夹/选中代码带行号）—— 纯插件。
+- [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) — 零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。
 - [PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — 官方级 GitHub CI 集成：composite action.yml、轮询 PR 评审机器人（幂等行内评论 + status-check 门禁）以及 PR/issue 工具，所有写入走人工审批门。
 - [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) — 四个面向 GitHub 工程工作流的 DSH Skill：PR 分诊、review 反馈、GitHub Actions 诊断和安全的 draft PR 发布；优先复用现有 DSH 能力，必要时回退到 gh/git。
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review) — 把 AI 每次文件写入/编辑记录为 before/after 快照，供 VS Code 内联 review 使用（逐块接受/撤回、单文件撤销，不依赖 git）。
