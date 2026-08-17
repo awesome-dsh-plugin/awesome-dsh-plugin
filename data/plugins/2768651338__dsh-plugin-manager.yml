@@ -1,0 +1,6 @@
+url: https://github.com/2768651338/dsh-plugin-manager
+name: 2768651338/dsh-plugin-manager
+category: market
+description:
+  en: 'A plugin manager tab in Settings → Plugins: Chinese names and plain-language descriptions for every installed plugin, one-click enable/disable, in-UI notes editing, and search/filter over the installed catalog.'
+  zh: 设置 → 插件里的插件管理页：已装插件中文名与白话描述、一键启停、界面内改备注，支持搜索与筛选。
