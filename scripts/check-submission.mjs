@@ -179,9 +179,14 @@ if (ONLY_LIST) {
   }
 }
 
+// `checked` is reported separately from `ok` on purpose. Writing ok:true here
+// once let the workflow announce "repo old enough, enough commits" for a repo
+// three hours old, because nothing had been examined at all — a gate that
+// cannot tell "passed" from "never ran" is worse than no gate, since it is
+// trusted.
 if (!targets.length) {
   console.log('no entry files added or changed — nothing to verify')
-  if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: true, failures: [] }, null, 1))
+  if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: true, checked: 0, failures: [] }, null, 1))
   process.exit(0)
 }
 console.log(`checking ${targets.length} entr${targets.length === 1 ? 'y' : 'ies'}` + (gateApplies ? '' : ' (age/commit gate not applied — PR predates the rule)'))
@@ -196,7 +201,7 @@ for (let i = 0; i < targets.length; i += CONCURRENCY) {
   }
 }
 
-if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, failures }, null, 1))
+if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures }, null, 1))
 
 if (!failures.length) {
   console.log('all checked entries pass')

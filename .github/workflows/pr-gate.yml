@@ -149,9 +149,20 @@ jobs:
               return
             }
 
+            // The extract step said this PR adds entries, so the checker must
+            // have examined some. If it examined none, the two disagree and we
+            // do not know whether the submission is sound — say that instead of
+            // vouching for checks that never ran.
+            if (result.checked === 0) {
+              await post('failure', 'The gate checked nothing',
+                'This PR adds entries under `data/plugins/`, but the submission checker examined none of them, so no verdict was reached. Re-run the workflow; if it persists this is a bug in the gate, not in the submission.')
+              core.setFailed('gate examined no entries despite changed files')
+              return
+            }
+
             if (result.ok) {
               await post('success', 'Entries look good',
-                'All submitted entries pass: `dsh.bundle` declared, repo old enough, enough commits.')
+                `All ${result.checked} submitted entr${result.checked === 1 ? 'y passes' : 'ies pass'}: \`dsh.bundle\` declared, repo old enough, enough commits.`)
               return
             }
             const body = result.failures.flatMap((f) => [`**${f.url}**`, ...f.problems.map((p) => `- ${p}`), '']).join('\n')
