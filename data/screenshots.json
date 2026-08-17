@@ -571,5 +571,11 @@
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-stick.png",
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-float.png",
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-minimized.png"
+ ],
+ "https://github.com/hanzhangzzz/dsh-diagram": [
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/dsh-diagram-demo.gif",
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-architecture.png",
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-flow.png",
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-chat.png"
  ]
 }
