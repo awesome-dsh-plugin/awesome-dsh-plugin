@@ -1,0 +1,6 @@
+url: https://github.com/photon-hq/dsh-imessage
+name: photon-hq/dsh-imessage
+category: notify
+description:
+  en: 'Two-way iMessage channel for DeepSeek Harness over Photon: sender allowlisting, session commands, in-chat approvals and questions, and a Settings page for device authorization and hosted-line setup.'
+  zh: '通过 Photon 接入 DeepSeek Harness 的双向 iMessage 通道：按发件人白名单路由，支持会话命令、聊天内审批与提问，并提供用于设备授权和托管号码设置的 Settings 页面。'
