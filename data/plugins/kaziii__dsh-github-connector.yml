@@ -1,0 +1,6 @@
+url: https://github.com/kaziii/dsh-github-connector
+name: kaziii/dsh-github-connector
+category: workflow
+description:
+  en: 'GitHub Device Flow connect plus an in-conversation PR workflow: a status bar above the composer for create / AI-review / merge, and github_* tools for search, issue and PR read and write.'
+  zh: 'GitHub Device Flow 授权与对话内 PR 工作流：输入框上方的状态条支持创建 / AI 审查 / 合并 PR，另有 github_* 工具用于搜索、Issue 与 PR 读写。'
