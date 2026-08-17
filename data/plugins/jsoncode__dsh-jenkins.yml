@@ -1,5 +1,5 @@
-url: https://github.com/jsoncode/dsh-jenkins-cli
-name: jsoncode/dsh-jenkins-cli
+url: https://github.com/jsoncode/dsh-jenkins
+name: jsoncode/dsh-jenkins
 category: tools
 description:
   en: Manages multiple Jenkins servers and triggers jobs from a Settings page, model tools, or a per-workspace "Run Jenkins Job" entry, with a bilingual host + browser UI.
