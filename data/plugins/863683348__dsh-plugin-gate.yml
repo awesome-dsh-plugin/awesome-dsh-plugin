@@ -1,6 +1,6 @@
 url: https://github.com/863683348/dsh-plugin-gate
 name: 863683348/dsh-plugin-gate
-category: security
+category: dev
 description:
   en: 'Installation safety gate for DeepSeek Harness plugins: an antivirus-style scanner that inspects a plugin source (local directory or npm tarball) for malicious install scripts, dangerous permissions/fs usage, secret exfiltration, and network callbacks before you run dsh plugin add.'
   zh: 插件安装安全门：在 dsh plugin add 之前，对插件来源（本地目录或 npm 包）做杀毒式扫描——恶意安装脚本、危险权限/文件操作、密钥外泄与网络回连。
