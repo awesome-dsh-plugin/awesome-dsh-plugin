@@ -32,6 +32,19 @@ const MAX_TREE_PKGS = 40
 // identity rather than by contract.
 const FIRST_PARTY_REPOS = new Set(['deepseek-ai/deepseek-harness'])
 
+// Packages published only by the DSH project. A repository containing one of
+// these under `dsh.bundle` is shipping a copy of the harness: measured on the
+// live topic, five repositories carry `packages/bundle/base/package.json` naming
+// `@deepseek-ai/dsh-base` verbatim, reached about 21 manifests into a ~250
+// manifest tree, so this check finds it inside MAX_TREE_PKGS and accepts them.
+// `fork` is false for all five, so they are source copies that neither an owner
+// check nor a fork check detects.
+const FIRST_PARTY_PACKAGES = new Set([
+  '@deepseek-ai/dsh-base',
+  '@deepseek-ai/dsh-web-app',
+  '@deepseek-ai/dsh-headless',
+])
+
 // Entries submitted before the gate existed are judged by the old rules; only
 // the manifest check applies to them. Set to when the rule change landed.
 const GATE_EFFECTIVE_FROM = process.env.GATE_EFFECTIVE_FROM ?? '2026-08-16T00:00:00Z'
@@ -111,14 +124,32 @@ async function hasBundle(repo, sub) {
   const pkgs = found.slice(0, MAX_TREE_PKGS)
 
   let sawClient = false
+  let vendored = null
   for (const p of pkgs) {
     const f = await api(`repos/${repo}/contents/${p}`)
     if (f.status !== 200 || !f.body?.content) continue
     const pkg = parsePkg(f.body.content)
     if (!pkg) continue
     const dsh = pkg.dsh ?? {}
-    if (dsh.bundle) return { ok: true, at: p }
+    if (dsh.bundle) {
+      // A repository that vendors DSH's own bundle packages satisfies this
+      // check by containing the harness, not by offering a plugin. Recorded
+      // rather than accepted, and only reported if no genuine bundle turns up
+      // later in the tree — a plugin repository may legitimately keep a copy
+      // of the harness for testing.
+      if (FIRST_PARTY_PACKAGES.has(pkg.name)) {
+        vendored ??= { at: p, name: pkg.name }
+        continue
+      }
+      return { ok: true, at: p }
+    }
     if (dsh.client) sawClient = true
+  }
+  if (vendored) {
+    return {
+      ok: false,
+      why: `\`${vendored.at}\` is DSH's own \`${vendored.name}\`, so this repository contains the harness rather than a plugin for it`,
+    }
   }
   if (sawClient) return { ok: false, why: 'declares only `dsh.client` — that alone is not installable' }
   // Same reasoning as a truncated tree: with more manifests than the cap, the
