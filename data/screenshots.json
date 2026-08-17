@@ -590,7 +590,6 @@
   "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/main/assets/screenshot-waiting.png",
   "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/main/assets/screenshot-priding.png"
  ],
-<<<<<<< HEAD
  "https://github.com/slywalker2006/dsh-passwords": [
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/white-login.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/black-login.png",
@@ -599,10 +598,5 @@
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/chat.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-front.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-back.png"
-=======
- "https://github.com/wjt0321/dsh-git-proxy": [
-  "https://raw.githubusercontent.com/wjt0321/dsh-git-proxy/main/image/open.jpg",
-  "https://raw.githubusercontent.com/wjt0321/dsh-git-proxy/main/image/close.jpg"
->>>>>>> a109a9d4 (add screenshots for dsh-git-proxy)
  ]
 }
