@@ -1,6 +1,6 @@
 url: https://github.com/zdx8637-gitdog/dshmobile/tree/main/plugins/dshmobile-plugin
 name: zdx8637-gitdog/dshmobile#dshmobile-plugin
-category: session
+category: remote
 description:
   en: 'Phone access to DSH over a self-hosted relay (WSS via your own TLS-terminating proxy): bundle plugin with bridge supervisor and QR login, a native Android app, and server-side device revocation.'
   zh: 通过自建中继从手机访问 DSH（WSS 由你自己的 TLS 终止代理提供）：含桥接守护与扫码登录的 bundle 插件、原生 Android 应用，并支持服务端设备吊销。

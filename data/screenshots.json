@@ -2,6 +2,10 @@
  "https://github.com/030611/qiushi-dsh-evidence-audit": [
   "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
  ],
+ "https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer": [
+  "https://raw.githubusercontent.com/7dgroup-ai/dsh-skill-7d-code-reviewer/main/screenshots/skills.png",
+  "https://raw.githubusercontent.com/7dgroup-ai/dsh-skill-7d-code-reviewer/main/screenshots/report-preview.png"
+ ],
  "https://github.com/263311487-ux/dsh-verify": [
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/report-screenshot.png",
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/visual-diff.png"
@@ -30,6 +34,13 @@
   "https://raw.githubusercontent.com/534119219/chicheng-gate/main/assets/mobile-ui-1.png",
   "https://raw.githubusercontent.com/534119219/chicheng-gate/main/assets/mobile-ui-2.png",
   "https://raw.githubusercontent.com/534119219/chicheng-gate/main/assets/mobile-ui-3.png"
+ ],
+ "https://github.com/534119219/chicheng-stats": [
+  "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/card-mode.png",
+  "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/text-mode.png",
+  "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/usage-dialog.png",
+  "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/card-settings.png",
+  "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/text-settings.png"
  ],
  "https://github.com/AI-Galaxy-GPU/dsh-sound": [
   "https://raw.githubusercontent.com/AI-Galaxy-GPU/dsh-sound/main/assets/screenshots/sound-image.png"
@@ -320,9 +331,18 @@
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/plugin-inventory.png",
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/topology.png"
  ],
+ "https://github.com/chouyong/dsh-fork-diff": [
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-diff/main/assets/fork-diff-desktop.png",
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-diff/main/assets/fork-diff-selector.png",
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-diff/main/assets/fork-diff-mobile.png"
+ ],
  "https://github.com/chouyong/dsh-fork-graph": [
   "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-trigger.png",
   "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-panel.png"
+ ],
+ "https://github.com/chouyong/dsh-branch-review": [
+  "https://raw.githubusercontent.com/chouyong/dsh-branch-review/main/assets/branch-review-desktop.png",
+  "https://raw.githubusercontent.com/chouyong/dsh-branch-review/main/assets/branch-review-decisions.png"
  ],
  "https://github.com/cirelir/dsh-change-review": [
   "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/review-tab.png",
@@ -411,6 +431,9 @@
  ],
  "https://github.com/huguangyu666/dsh-store": [
   "https://raw.githubusercontent.com/huguangyu666/dsh-plugin-store/main/assets/screenshot.png"
+ ],
+ "https://github.com/huxint/dsh-team": [
+  "https://raw.githubusercontent.com/huxint/dsh-team/main/screenshots/image.png"
  ],
  "https://github.com/iamfromchangsha/dsh-go-balance": [
   "https://raw.githubusercontent.com/iamfromchangsha/dsh-go-balance/main/docs/screenshot-composer.png",
@@ -552,6 +575,11 @@
  "https://github.com/sanqiPanax/dsh-sticker-board": [
   "https://raw.githubusercontent.com/sanqiPanax/dsh-sticker-board/master/docs/screenshot-dock.png"
  ],
+ "https://github.com/siberiah2o/dsh-plugin-terminal": [
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-collapsed.png",
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-panel.png",
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-multitab.png"
+ ],
  "https://github.com/sjh9714/dsh-movein": [
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/report.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/demo.gif",
@@ -682,6 +710,11 @@
  "https://github.com/534119219/dsh-messaging": [
   "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/sidebar.png",
   "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/dialog.png"
+ ],
+ "https://github.com/yyyyukari/dsh-plugin-workshop": [
+  "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/main-ui.jpg",
+  "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/installed-view.jpg",
+  "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/sidebar-entry.jpg"
  ],
  "https://github.com/izwarm195/dsh-net-tools": [
   "https://raw.githubusercontent.com/izwarm195/dsh-net-tools/main/assets/net_fetch-demo.png"

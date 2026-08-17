@@ -1,6 +1,6 @@
 url: https://github.com/SummerSec/dsh-web-auth
 name: SummerSec/dsh-web-auth
-category: dev
+category: security
 description:
   en: Transport-level authentication gate for the DeepSeek Harness Web GUI with server-side sessions, HttpOnly cookies, IP-based login throttling, and an scrypt password CLI.
   zh: DeepSeek Harness Web GUI 的传输层认证门禁，提供服务端会话、HttpOnly Cookie、基于 IP 的登录限流及 scrypt 口令 CLI。
