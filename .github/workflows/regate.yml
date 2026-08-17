@@ -1,11 +1,16 @@
 name: Re-check gated submissions
 
-# The submission gate rejects repos younger than a day or under ten commits.
-# That verdict is a snapshot: a PR blocked at "0.5 days old" qualifies a few
-# hours later, but nothing re-runs the check, so it sits red until someone
-# pushes. This re-runs `PR check` on open PRs whose gate failed, which in turn
-# re-triggers the gate — it stops the backlog silting up with submissions that
-# already meet the bar.
+# A gate verdict is a snapshot, and snapshots go out of date two ways.
+#
+# By the clock: a PR blocked at "0.5 days old" qualifies a few hours later, but
+# nothing re-runs the check, so it sits red until someone pushes.
+#
+# By the code: when the gate itself changes, every verdict it issued earlier was
+# decided by code that no longer exists. Re-running only the failures leaves the
+# worse half unattended — a stale red gets noticed by its author, a stale green
+# gets merged. This re-runs `PR check` (which re-triggers the gate) on open PRs
+# that aged in, whose verdict predates the current gate, or that were never
+# gated at all.
 #
 # Kept deliberately cheap: one page of runs is indexed by head SHA up front
 # rather than queried per pull request, and MAX_RERUNS bounds each pass. The
@@ -31,7 +36,11 @@ jobs:
     steps:
       - uses: actions/github-script@v7
         env:
-          MAX_RERUNS: '12'
+          # Raised from 12 when re-running stale verdicts was added: that rule
+          # has a one-off backlog to clear, and at 12 per six hours a gate fix
+          # would take days to reach every open PR. Each pass costs one read per
+          # open PR plus one write per re-run, so this stays well inside quota.
+          MAX_RERUNS: '20'
         with:
           script: |
             const { owner, repo } = context.repo
@@ -48,6 +57,22 @@ jobs:
             })
             const runBySha = new Map()
             for (const r of runs.data.workflow_runs) if (!runBySha.has(r.head_sha)) runBySha.set(r.head_sha, r.id)
+
+            // When did the gate last change? Any verdict older than that was
+            // reached by code that is gone. Found the hard way: a gate bug fixed
+            // on 2026-08-17 left open PRs showing "all entries pass" for entries
+            // that the current gate rejects outright.
+            let gateChangedAt = 0
+            for (const path of ['.github/workflows/pr-gate.yml', 'scripts/check-submission.mjs']) {
+              try {
+                const { data } = await github.rest.repos.listCommits({ owner, repo, path, per_page: 1 })
+                const at = Date.parse(data[0]?.commit?.committer?.date ?? '')
+                if (at > gateChangedAt) gateChangedAt = at
+              } catch (e) {
+                if (e.status === 403 || e.status === 429) { core.warning('rate limited reading gate history'); break }
+              }
+            }
+            core.info(`gate last changed: ${gateChangedAt ? new Date(gateChangedAt).toISOString() : 'unknown'}`)
 
             const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
             let requeued = 0
@@ -67,11 +92,22 @@ jobs:
                 continue
               }
 
-              if (gate?.conclusion !== 'failure') continue
               // A failing `check` means the PR's own content is wrong; time
               // will not fix that, and re-running just burns quota.
               if (check && check.conclusion !== 'success') continue
-              if (!/days old|commit\(s\)/.test(gate.output?.summary ?? '')) continue
+
+              // Three reasons to re-run, and only three.
+              const ranAt = Date.parse(gate?.completed_at ?? '')
+              // 1. No verdict at all — the PR predates the gate, or its run died
+              //    before reporting. Nothing has vouched for it, which looks
+              //    identical to "passed" when scanning a PR list for green.
+              const never = !gate
+              // 2. The verdict predates the current gate (see above).
+              const stale = gate && gateChangedAt && (!ranAt || ranAt < gateChangedAt)
+              // 3. It failed on age or commit count, which time alone fixes.
+              const aged = gate?.conclusion === 'failure' && /days old|commit\(s\)/.test(gate.output?.summary ?? '')
+              if (!never && !stale && !aged) continue
+              core.info(`#${pr.number}: ${never ? 'never gated' : stale ? 'verdict predates the current gate' : 'aged in'}`)
 
               try {
                 await github.rest.actions.reRunWorkflow({ owner, repo, run_id: runId })
