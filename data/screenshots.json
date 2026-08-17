@@ -544,6 +544,11 @@
  "https://github.com/sanqiPanax/dsh-sticker-board": [
   "https://raw.githubusercontent.com/sanqiPanax/dsh-sticker-board/master/docs/screenshot-dock.png"
  ],
+ "https://github.com/siberiah2o/dsh-plugin-terminal": [
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-collapsed.png",
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-panel.png",
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-terminal/main/docs/screenshot-multitab.png"
+ ],
  "https://github.com/sjh9714/dsh-movein": [
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/report.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/demo.gif",
