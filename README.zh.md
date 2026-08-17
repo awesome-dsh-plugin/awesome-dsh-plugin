@@ -849,6 +849,7 @@ dsh plugin --profile web add dshmarket
 - [kaixinbaba/dsh-vision-recognizer](https://github.com/kaixinbaba/dsh-vision-recognizer) — 视觉模型路由：把附加图片经可配置模型（15+ OpenAI 兼容与 Anthropic 供应商）转译为文字，对话仍由 DeepSeek 作答。
 - [ld-1101/dsh-vision-plugin](https://github.com/ld-1101/dsh-vision-plugin) — 让纯文本模型也能看图：发图自动用视觉模型描述（默认提示词），描述不足时对话模型自动生成更具体的提示词重新解析；系统模型/自定义双模式 + GUI 可视化配置、Key 脱敏安全、针对 DSH 0.1.0-rc.6 的宿主小补丁（见仓库 README）。
 - [LeemanCheung/dsh-image-gen](https://github.com/LeemanCheung/dsh-image-gen) — GPT Image 2 `image_gen`：默认复用 Codex 订阅 OAuth，也可显式使用 API Key；显影卡片、最多 3 张 API 实时局部图、持久附件回放/灯箱/下载、纯文本模型输出和受限的凭据安全请求。
+- [Leeminjing/dsh-eyes](https://github.com/Leeminjing/dsh-eyes) — 为纯文本 DeepSeek 模型提供按需视觉：上传图片后，模型通过 view_image 工具调用任意 OpenAI 兼容视觉端点（默认 Qwen/DashScope）。
 - [linenxi-ctrl/dsh-vision](https://github.com/linenxi-ctrl/dsh-vision) — 外挂识图插件：鲸鱼按钮配置面板、图片识图自动回传、模型自主截图识图工具。
 - [liustack/modlens](https://github.com/liustack/modlens) — 为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。
 - [lsjspl/dsh-plugin-grok2api-media-tool](https://github.com/lsjspl/dsh-plugin-grok2api-media-tool) — 让 dsh 通过 grok2api 的 API 获得生成图片与视频能力。
