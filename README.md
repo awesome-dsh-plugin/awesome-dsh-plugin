@@ -1235,6 +1235,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) - Fixes the bug where your account can't lose money while you code.
 - [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) - A-share watchlist real-time market monitoring plugin: a collapsible popup in the top-right corner of the DeepSeek Harness (DSH) web interface for real-time quote monitoring, group switching, intraday and candlestick (K-line) charts, and buy/sell target price settings.
 - [chen731215-dev/-](https://github.com/chen731215-dev/-) - Native tavern management panel for DeepSeek Harness: multiple character cards, multiple worldbooks, switchable presets.
+- [cipher2026/dsh-idle-deepcompute](https://github.com/cipher2026/dsh-idle-deepcompute) - Terminal-style AI-lab idle game where you hoard compute, train and upgrade models, publish papers, and prestige from neural nets to ASI.
 - [hellodigua/dsh-emoji](https://github.com/hellodigua/dsh-emoji) - Automatically add emojis to AI replies.
 - [HuanLinOTO/dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) - Pops up a mini-game menu (wordle, match-3, extensible) while the model generates.
 - [JAdpp/dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) - Multi-character Galgame conversation view with separate character and reply-model selection, per-character affection, memory, dialogue history, and CG galleries, plus responses informed by task events across Harness sessions.
