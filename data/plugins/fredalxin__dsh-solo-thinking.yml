@@ -4,3 +4,4 @@ category: session
 description:
   en: Visual branch brainstorming that creates an isolated Session for each direction, automates parent, sibling, checkpoint, and return Handoffs, and provides a full tree tab with an optional Better Sidebar view.
   zh: 可视化分支头脑风暴：为每个方向创建独立 Session，自动处理父子继承、兄弟感知、进展与回传 Handoff，并提供完整树形 Tab 与可选 Better Sidebar 右栏。
+  ja: 視覚的な分岐ブレインストーミング。方向性ごとに独立したセッションを作り、親・兄弟・チェックポイント・復帰の引き継ぎを自動化し、ツリー全体のタブと任意の Better Sidebar 表示を提供します。

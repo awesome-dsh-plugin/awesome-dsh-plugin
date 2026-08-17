@@ -6,7 +6,7 @@
 //   node scripts/generate-readme.mjs --check  # verify in sync (CI)
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
-import { CAT_IDS, ZH_EMOJI, orderEntries, readEntries, validateEntries } from './lib/entries.mjs'
+import { CAT_EMOJI, CAT_IDS, orderEntries, readEntries, validateEntries } from './lib/entries.mjs'
 
 const CHECK = process.argv.includes('--check')
 
@@ -31,10 +31,10 @@ function anchor(heading) {
     .replaceAll(' ', '-')
 }
 
-/** README.zh.md headings carry an emoji prefix; README.md headings do not. */
+/** Translated READMEs carry an emoji prefix on headings; README.md does not. */
 function headingFor(loc, id) {
   const name = loc.categories[id]
-  return loc.code === 'en' ? name : `${ZH_EMOJI[id]} ${name}`
+  return loc.code === 'en' ? name : `${CAT_EMOJI[id]} ${name}`
 }
 
 // The non-category rows of the Contents list. awesome-lint wants one single
@@ -44,6 +44,7 @@ function headingFor(loc, id) {
 const TOC_SHELL = {
   en: { top: 'Plugins', tail: ['Badge', 'Disclaimer'] },
   zh: { top: '插件', tail: ['徽章', '免责声明'] },
+  ja: { top: 'プラグイン', tail: ['バッジ', '免責事項'] },
 }
 
 function replaceBlock(text, [open, close], body, file) {

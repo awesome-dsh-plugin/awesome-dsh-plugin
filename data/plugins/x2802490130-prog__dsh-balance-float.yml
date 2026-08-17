@@ -4,3 +4,4 @@ category: usage
 description:
   en: 'A floating balance widget for the Web UI: live DeepSeek account balance with manual refresh and a Y/N-confirmed graceful exit.'
   zh: Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。
+  ja: Web UI 向けのフローティング残高ウィジェット。DeepSeek アカウントの残高をリアルタイム表示し、手動更新と Y/N 確認つきの穏やかな終了に対応します。

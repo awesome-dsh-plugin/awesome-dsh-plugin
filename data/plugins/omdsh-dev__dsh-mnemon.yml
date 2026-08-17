@@ -4,3 +4,4 @@ category: memory
 description:
   en: Cross-agent, local-first persistent memory plugin for DeepSeek Harness (DSH), powered by Mnemon. It shares long-term memory across Mnemon-enabled agents and adds runtime memory, searchable project documents, semantic recall, knowledge graph, and a Sidebar UI.
   zh: 由 Mnemon 驱动的 DeepSeek Harness（DSH）跨 Agent、本地优先的持久记忆插件。它可在支持 Mnemon 的 Agent 之间共享长期记忆，并提供运行时记忆、可检索项目档案、语义召回、知识图谱和 Sidebar UI。
+  ja: Mnemon を基盤にした、DeepSeek Harness（DSH）向けのエージェント横断・ローカル優先の永続メモリプラグイン。Mnemon に対応したエージェント間で長期記憶を共有し、実行時メモリ、検索できるプロジェクト文書、意味的な想起、知識グラフ、サイドバー UI を追加します。

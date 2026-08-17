@@ -4,3 +4,4 @@ category: usage
 description:
   en: DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.
   zh: 右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。
+  ja: DeepSeek API の支出（現在のセッションと全セッション）とアカウント残高をサイドパネルに表示します。公式価格とピーク/オフピークに対応。

@@ -4,3 +4,4 @@ category: theme
 description:
   en: 'Catppuccin themes for the DSH Web GUI: Latte, Frappé, Macchiato and Mocha registered into the native theme runtime, one-click switching with a persisted choice.'
   zh: DSH Web GUI 的 Catppuccin 主题插件：Latte、Frappé、Macchiato、Mocha 四套主题接入原生主题系统，一键切换并记住选择。
+  ja: DSH Web GUI 向けの Catppuccin テーマ。Latte、Frappé、Macchiato、Mocha をネイティブのテーマランタイムに登録し、ワンクリックで切り替えて選択を保存します。

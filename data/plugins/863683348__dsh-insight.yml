@@ -4,3 +4,4 @@ category: market
 description:
   en: 'Plugin insight center: one answer to "哪些值得装" — plugin_guide matches needs to plugins, recipe installs whole environments, plugin_rank scores health (0-100), plugin_audit static-scans a local checkout for security, and plugin_verdict outputs install / caution / research / avoid.'
   zh: 插件评测中心：一个答案回答"哪些值得装"——plugin_guide 按需求推荐插件、recipe 安装整套环境、plugin_rank 健康评分（0-100）、plugin_audit 静态安全扫描本地目录、plugin_verdict 给出 install / caution / research / avoid 结论。
+  ja: プラグインの分析センター。「どれを入れる価値があるか」に一つの答えを出します——plugin_guide が要望とプラグインを突き合わせ、recipe が環境一式を導入し、plugin_rank が健全性を 0〜100 で採点し、plugin_audit がローカルのチェックアウトをセキュリティ観点で静的スキャンし、plugin_verdict が install / caution / research / avoid を返します。

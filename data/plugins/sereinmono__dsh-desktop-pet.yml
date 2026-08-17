@@ -4,3 +4,4 @@ category: ui
 description:
   en: A plugin that adds a desktop pet to your DeepSeek Harness, supporting the Codex pet format, you can use hatch-pet or Petdex to add your pets.
   zh: DeepSeek Harness 桌面宠物：完全支持 Codex 桌宠格式，可使用 hatch-pet Skill 创建宠物，或通过 Petdex 导入宠物。
+  ja: DeepSeek Harness にデスクトップペットを追加するプラグイン。Codex のペット形式に対応しており、hatch-pet や Petdex で自分のペットを追加できます。

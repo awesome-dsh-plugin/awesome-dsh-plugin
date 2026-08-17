@@ -4,3 +4,4 @@ category: session
 description:
   en: 'Multi-folder workspace: a durable global linked-folders list plus per-session on-the-fly linking (link_folder/unlink_folder), managed from the Web sidebar with a native folder picker.'
   zh: 多文件夹工作区：全局链接文件夹列表 + 会话内临时挂载（link_folder/unlink_folder），侧边栏管理并支持系统选目录。
+  ja: 複数フォルダーのワークスペース。永続的なグローバルのリンクフォルダー一覧に加え、セッションごとにその場でリンクでき（link_folder/unlink_folder）、Web のサイドバーからネイティブのフォルダー選択で管理できます。

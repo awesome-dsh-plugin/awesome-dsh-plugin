@@ -4,3 +4,4 @@ category: ui
 description:
   en: Select text → annotate → send with your message; replies map back to each annotation.
   zh: 选中文字→批注→随消息发送，回复按批注逐条对照。
+  ja: テキストを選択 → 注釈を付ける → メッセージと一緒に送信。返信は各注釈に対応づけられます。

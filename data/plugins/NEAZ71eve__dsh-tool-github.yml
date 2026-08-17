@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'GitHub REST API tools + browser sidebar panel: repos, search, issues, PRs, comments, account binding (credential-store), and one-click clone-as-workspace.'
   zh: GitHub REST API 工具 + 浏览器侧边栏面板：仓库/搜索/Issue/PR/评论、账号绑定（凭据库）与一键克隆为工作区。
+  ja: GitHub REST API のツール群とブラウザのサイドバーパネル。リポジトリ、検索、issue、PR、コメント、アカウント連携（資格情報ストア）、ワンクリックでのクローンとワークスペース化に対応します。

@@ -4,3 +4,4 @@ category: notify
 description:
   en: IM webhook and local notifications on turn completion, errors, or approval (Feishu/WeCom/DingTalk/Slack/Discord/custom).
   zh: 回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。
+  ja: ターンの完了、エラー、承認時の IM webhook とローカル通知（飛書/WeCom/DingTalk/Slack/Discord/カスタム）。

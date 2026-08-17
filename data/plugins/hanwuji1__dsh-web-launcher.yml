@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'One-click launcher for the Web UI: a double-click Start-DSH-Web.cmd on the Windows desktop that boots dsh web and auto-opens the browser (polling until ready), plus a web_launcher model tool (install / open / status).'
   zh: Web 界面一键启动器：在 Windows 桌面创建双击即用的 Start-DSH-Web.cmd（自动启动 dsh web，轮询就绪后自动打开浏览器），并提供 web_launcher 模型工具（install / open / status）。
+  ja: Web UI のワンクリックランチャー。Windows のデスクトップに置いた Start-DSH-Web.cmd をダブルクリックすると dsh web が起動し、準備が整い次第ブラウザを自動で開きます（起動を待ってからポーリング）。web_launcher モデルツール（install / open / status）も提供。

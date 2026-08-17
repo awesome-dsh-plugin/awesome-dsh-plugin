@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'System status floating widget: live CPU/memory/disk usage in the bottom-right corner of the DSH Web UI with threshold colour warnings.'
   zh: DSH Web 右下角系统状态悬浮窗：实时显示 CPU、内存、磁盘占用率，带阈值变色告警。
+  ja: システム状態のフローティングウィジェット。DSH Web UI の右下に CPU/メモリ/ディスクの使用率をリアルタイム表示し、しきい値を超えると色で警告します。

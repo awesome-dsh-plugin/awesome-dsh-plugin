@@ -4,3 +4,4 @@ category: tools
 description:
   en: RSS/Atom subscription management and parsing (rss_list/add/remove/fetch/check), persisted to settings.
   zh: RSS/Atom 订阅管理 + 抓取解析（rss_list/add/remove/fetch/check），订阅持久化到 settings。
+  ja: RSS/Atom の購読管理と解析（rss_list/add/remove/fetch/check）。設定に永続化されます。

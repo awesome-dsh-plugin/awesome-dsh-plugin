@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Model-based permission approval: an approval-request answerer backed by a separate reviewer model.'
   zh: 基于模型的权限审批：由独立审查模型自动应答 approval 权限请求。
+  ja: モデルによるパーミッション承認。別のレビュアーモデルが承認要求に回答します。

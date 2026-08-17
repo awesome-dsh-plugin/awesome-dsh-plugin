@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Runtime security gate on the tool pipeline: denies calls naming hosts outside an egress allowlist, redacts credentials from results at the canonical value rather than only the rendered content, and appends every decision to a JSONL audit log; ships in monitor-only mode.'
   zh: 工具管线上的运行时安全网关：拦截出站白名单之外的主机调用，在 canonical value（而非仅渲染内容）层面脱敏结果中的凭据，每个决策写入 JSONL 审计日志；默认仅监控不拦截。
+  ja: ツールのパイプライン上で働く実行時セキュリティゲート。送信先許可リストにないホストを指す呼び出しを拒否し、結果に含まれる資格情報を表示上ではなく正規の値の段階で伏せ字化し、すべての判断を JSONL の監査ログに追記します。初期状態は監視のみのモードです。

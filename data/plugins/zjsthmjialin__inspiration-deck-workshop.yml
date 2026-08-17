@@ -4,3 +4,4 @@ category: skill
 description:
   en: 'Registers the Inspiration Deck Workshop skill for DSH: local static HTML presentation decks (6 deck templates, 25+ layouts, 23 themes & motion showroom) with a validate + PNG/PDF export CLI and smoke tests, zero runtime dependencies.'
   zh: 注册灵感演示工坊技能：本地静态 HTML 演示文稿（6 套 deck 模板、25+ 布局、23 套主题与动效展示馆），带 validate 校验与 PNG/PDF 导出 CLI 和 smoke 测试，零运行时依赖。
+  ja: DSH 向けに Inspiration Deck Workshop スキルを登録します。ローカルの静的 HTML のプレゼン資料（デッキのテンプレート 6 種、25 以上のレイアウト、23 のテーマとモーションのショールーム）を作れ、検証と PNG/PDF 書き出しの CLI、スモークテストを備え、実行時依存はゼロです。

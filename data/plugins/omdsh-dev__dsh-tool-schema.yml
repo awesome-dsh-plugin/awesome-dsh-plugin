@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'JSON Schema validation: validate/paths/explain/normalize.'
   zh: JSON Schema 验证：validate/paths/explain/normalize。
+  ja: JSON Schema の検証。validate/paths/explain/normalize に対応します。

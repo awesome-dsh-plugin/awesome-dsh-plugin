@@ -4,3 +4,4 @@ category: tools
 description:
   en: Bounded, cell-addressed `doc_read`/`doc_write` for xlsx / pdf / docx / pptx / ipynb, plus an MCP server and CLI.
   zh: doc_read/doc_write：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。
+  ja: xlsx / pdf / docx / pptx / ipynb 向けの、範囲を限定しセル単位で指定できる `doc_read`/`doc_write`。MCP サーバーと CLI も付属します。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'One-command backup & restore of DSH user data: /backup command family plus backup_dsh tool and a visual Settings panel, sha256 verify with hardened restore validation (path-traversal/symlink rejection), scheduled auto-backup that survives restarts on an absolute cadence, configurable rotation, archive download route, and GitHub sync to a private repo; macOS/Linux/Windows.'
   zh: 一键备份与恢复 DSH 用户数据：/backup 备份、完整性校验、恢复，定时自动备份（重启续跑），sha256 校验与自动轮换（macOS/Linux/Windows）。
+  ja: DSH のユーザーデータをコマンド 1 つでバックアップ・復元。/backup コマンド群、backup_dsh ツール、視覚的な設定パネルに加え、sha256 検証と強化した復元時の検証（パストラバーサルとシンボリックリンクの拒否）、再起動をまたいで一定間隔で動く自動バックアップ、世代管理、アーカイブのダウンロード経路、プライベートリポジトリへの GitHub 同期を備えます。macOS/Linux/Windows 対応。

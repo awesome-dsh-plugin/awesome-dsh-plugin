@@ -4,3 +4,4 @@ category: ui
 description:
   en: Edit the global ~/.dsh/AGENTS.md rules from the web settings panel, live on save.
   zh: 在设置面板中编辑 ~/.dsh/AGENTS.md 全局规则，保存后实时生效。
+  ja: グローバルな ~/.dsh/AGENTS.md のルールを Web の設定パネルから編集でき、保存すると即座に反映されます。

@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Line-range selection: browse workspace files, preview code with line numbers, visually select a line range, and write a `@path:start-end` reference into the composer; the agent receives the exact selected lines on send.'
   zh: 行选区：浏览工作区文件、带行号预览代码、可视化选中行范围，一键把 `@path:start-end` 引用写入输入框，agent 发送时自动收到所选行原文，精准修改指定行。
+  ja: 行範囲の選択。ワークスペースのファイルを閲覧し、行番号つきでコードをプレビューして、範囲を視覚的に選ぶと `@path:start-end` の参照がコンポーザーに書き込まれます。送信時、エージェントには選択した行がそのまま渡ります。

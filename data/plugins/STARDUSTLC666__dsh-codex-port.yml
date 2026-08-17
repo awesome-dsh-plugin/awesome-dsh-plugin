@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Batch-port official Codex plugins into DSH skills (measured: 186 plugins / 583 skills, 577 ported, 0 failures).'
   zh: Codex 官方插件一键移植为 DSH 技能（实测 186 插件/583 技能，移植 577 个 0 失败）。
+  ja: '公式 Codex プラグインを DSH のスキルへ一括移植します（実測: プラグイン 186 個 / スキル 583 個のうち 577 個を移植、失敗 0）。'

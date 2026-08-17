@@ -4,3 +4,4 @@ category: session
 description:
   en: A simple DSH queue panel for editing, removing, steering, reordering, and bulk removal.
   zh: DSH 排队消息增强面板，支持编辑、删除、插话、排序和批量删除。
+  ja: 編集、削除、方向づけ、並べ替え、一括削除ができるシンプルな DSH のキューパネル。

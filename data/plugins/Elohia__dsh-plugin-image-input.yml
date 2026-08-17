@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Image-to-text input for the Web UI: paste or drag an image and it is transcribed into structured text and sent, giving text-only LLMs image-input takeover (OpenAI-compatible vision API).'
   zh: 图片转文字输入插件：粘贴/拖拽图片自动转为结构化文字描述发送，给纯文本 LLM 提供图片输入接管（OpenAI 兼容视觉 API）。
+  ja: Web UI 向けの画像→テキスト入力。画像を貼るかドラッグすると構造化テキストに書き起こして送信し、テキスト専用 LLM でも画像入力を扱えるようにします（OpenAI 互換の vision API を使用）。

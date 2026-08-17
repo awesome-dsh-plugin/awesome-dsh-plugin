@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Rings your phone over CallKit: `call_me` and `text_me` tools, plus optional turn-end and approval calls whose spoken answer is transcribed back into the session.'
   zh: 通过 CallKit 打电话到你的手机：`call_me` 与 `text_me` 工具，并可在回合结束或等待审批时来电，语音回答转写后送回会话。
+  ja: CallKit 経由でスマホを鳴らします。`call_me` と `text_me` のツールに加え、任意でターン終了時や承認時に電話をかけ、話した答えを書き起こしてセッションに戻します。

@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Real-time token billing for DSH web: official DeepSeek CNY pricing with automatic peak/off-peak switching, hourly price sync from the official site, visual custom model prices, and multi-currency fallback.'
   zh: DSH Web 实时 token 计费插件：官网人民币价直接计费、高峰/错峰自动切换、价格实时跟随官网、可视化自定义模型价格、多币种兜底。
+  ja: DSH web 向けのリアルタイムトークン課金表示。DeepSeek 公式の人民元価格をピーク/オフピークで自動切り替えし、公式サイトから毎時価格を同期。モデル価格の手動設定と複数通貨のフォールバックにも対応します。

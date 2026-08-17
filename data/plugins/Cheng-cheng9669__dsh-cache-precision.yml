@@ -4,3 +4,4 @@ category: tools
 description:
   en: Renders the built-in cache-hit percentage with three decimals and widens the composer stats line to prevent truncation.
   zh: 把内置缓存命中率原位显示为 3 位小数，并加宽底部统计行避免内容被截断。
+  ja: 組み込みのキャッシュヒット率を小数点以下 3 桁で表示し、切り詰めが起きないようコンポーザーの統計行を広げます。

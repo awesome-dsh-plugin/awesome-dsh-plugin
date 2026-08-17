@@ -4,3 +4,4 @@ category: session
 description:
   en: 'Bring the deepseek.com web/app chat experience to DSH: edit your prompt and regenerate answers in place, with a per-message <i/N> version pager (tree model, stable across conversations).'
   zh: 更贴近 deepseek 网页版/App 的聊天体验：原位编辑提问、重新生成回复、每条消息带 <i/N> 版本翻页器（树状版本模型，跨对话保持稳定）。
+  ja: deepseek.com の Web/アプリと同じチャット体験を DSH にもたらします。プロンプトをその場で編集して回答を作り直せ、メッセージごとに <i/N> のバージョンページャー（会話をまたいで安定するツリーモデル）が付きます。

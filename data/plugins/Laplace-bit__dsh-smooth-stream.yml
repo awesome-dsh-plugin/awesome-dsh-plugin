@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Silky streaming reveal for the Web UI: text appears at the model''s arrival rate, new lines glide in, no flicker; follow stays with the user and prefers-reduced-motion is respected.'
   zh: 丝滑流式渲染：字跟着模型到达走、换行滑入、不闪，滚动归用户，尊重 prefers-reduced-motion。
+  ja: Web UI の滑らかなストリーミング表示。テキストはモデルの到着ペースで現れ、新しい行はすっと入り、ちらつきません。追従はユーザーの操作を優先し、prefers-reduced-motion も尊重します。

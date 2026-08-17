@@ -4,3 +4,4 @@ category: dev
 description:
   en: Discovers installed DSH plugins with tags, overlap and compatibility detection, one-click enable/disable, failure diagnosis, and update checking.
   zh: 动态发现已装插件并打标分类，检测功能重叠与兼容冲突，一键启停切换、失效诊断与更新检测。
+  ja: インストール済みの DSH プラグインを検出し、タグ付け、機能の重複と互換性の検出、ワンクリックの有効化/無効化、失敗の診断、更新確認を行います。

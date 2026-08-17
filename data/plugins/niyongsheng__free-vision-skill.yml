@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Fully-local image understanding & OCR via macOS Vision Framework: `ocr_image` (text, table layout + coordinates) and `view_image` (scene, faces, QR) — paste multiple images into the web input box or pass path/URL/base64; images never leave your Mac.'
   zh: 基于 macOS Vision Framework 的全本地识图插件：`ocr_image`（文字提取，表格结构+坐标）与 `view_image`（场景/人脸/二维码）；web 输入框可直接粘贴多张图片，图片永不离开你的 Mac。
+  ja: macOS の Vision Framework による完全ローカルの画像理解と OCR。`ocr_image`（テキスト、表のレイアウトと座標）と `view_image`（情景、顔、QR）を提供し、web の入力欄に複数画像を貼り付けても、パス/URL/base64 で渡しても使えます。画像が Mac の外に出ることはありません。

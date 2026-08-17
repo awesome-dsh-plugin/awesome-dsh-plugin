@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'LLM-driven remember/forget memory: after each turn a model decides what to keep (MemoryDirector), injects relevant memories before each step, dedups, and persists cross-session.'
   zh: LLM 驱动的记忆记/忘插件：每轮对话后由模型决定记住什么/忘记什么（MemoryDirector），请求前注入相关记忆，自动去重，跨会话持久化。
+  ja: LLM が判断する記憶と忘却。各ターンの後にモデル（MemoryDirector）が何を残すかを決め、ステップの前に関連する記憶を注入し、重複を除いてセッションをまたいで保持します。

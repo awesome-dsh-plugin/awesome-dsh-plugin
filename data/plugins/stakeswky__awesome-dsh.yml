@@ -4,3 +4,4 @@ category: market
 description:
   en: 'Turns a stated need into a plugin choice: an agent skill that queries a catalog of the whole `dsh-plugin` topic (2600+ repos, recrawled every 6 hours, Chinese descriptions from Workers AI) through a ranked search API, then hands back the matching `dsh plugin add` command.'
   zh: 把「我想让 DSH 做什么」直接变成选好的插件：技能查询覆盖整个 `dsh-plugin` topic 的目录（2600+ 仓库，每 6 小时重抓，简介由 Workers AI 译成中文）的相关度检索接口，再给出对应的 `dsh plugin add` 命令。
+  ja: 「こういうものが欲しい」からプラグインの選定までを橋渡しするエージェントスキル。`dsh-plugin` topic 全体のカタログ（2600 以上のリポジトリ、6 時間ごとに再収集、Workers AI による中国語説明）をランキング検索 API 経由で調べ、該当する `dsh plugin add` コマンドを返します。

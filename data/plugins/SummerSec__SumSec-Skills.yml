@@ -4,3 +4,4 @@ category: skill
 description:
   en: Multi-platform Agent Skills monorepo that mounts as a DeepSeek Harness profile bundle, exposing Chinese writing, Git, plugin-dev, taste, and semantic-linter skills.
   zh: 多平台 Agent Skills 集合，作为 DeepSeek Harness profile bundle 挂载，提供中文写作、Git、插件开发、Taste 与语义边界检测等 Skill。
+  ja: DeepSeek Harness のプロファイルバンドルとしてマウントできる、複数プラットフォーム対応の Agent Skills モノレポ。中国語の文章作成、Git、プラグイン開発、審美眼、意味的なリンターのスキルを提供します。

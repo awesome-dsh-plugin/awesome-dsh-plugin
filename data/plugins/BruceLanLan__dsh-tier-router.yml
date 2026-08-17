@@ -4,3 +4,4 @@ category: model
 description:
   en: 'Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.'
   zh: 双档模型路由：强档负责规划/咨询/评审、弱档负责实现；含计划模式自动路由、高危操作守卫、失败自动升级与子代理分层。
+  ja: 2 階層のモデルルーティング。強いモデルが計画・助言・レビューを担い、安価なモデルが実装します。プランモードを踏まえた自動振り分け、影響の大きい操作のエスカレーションガード、失敗時の自動エスカレーション、サブエージェントの階層化に対応。

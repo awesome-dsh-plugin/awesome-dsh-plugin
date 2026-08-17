@@ -4,3 +4,4 @@ category: session
 description:
   en: Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.
   zh: 把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。
+  ja: 追記のみのセッションログを、人が読める Markdown か HTML として、軌跡の出どころごとにまとめて書き出します。

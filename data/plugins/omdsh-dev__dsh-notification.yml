@@ -4,3 +4,4 @@ category: notify
 description:
   en: Desktop notifications for turn completions, with per-outcome controls and keyword rules.
   zh: 回合完成桌面通知，按结果分控 + 关键词过滤。
+  ja: ターン完了時のデスクトップ通知。結果ごとの制御とキーワードのルールを設定できます。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'One-click OAuth (PKCE) connect to Qichacha (qcc.com) MCP services in DeepSeek Harness: dynamic client registration, token auto-refresh, and dynamic mcp-client configuration.'
   zh: '一键 OAuth（PKCE）授权接入企查查 MCP 服务：动态注册客户端、token 自动刷新、动态配置 mcp-client 条目，一次授权覆盖全部企查查数据服务。'
+  ja: DeepSeek Harness から企查查（qcc.com）の MCP サービスにワンクリックで OAuth（PKCE）接続します。動的なクライアント登録、トークンの自動更新、mcp-client の動的設定に対応。

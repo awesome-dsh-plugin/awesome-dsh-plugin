@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Bark push notifications to iPhone: turn completion, waiting-for-input, and approval events sent from the DSH Host.'
   zh: Bark 推送通知到 iPhone：回合完成、等待回答、等待授权等事件由 Host 端发送。
+  ja: iPhone への Bark プッシュ通知。ターンの完了、入力待ち、承認のイベントを DSH のホストから送ります。

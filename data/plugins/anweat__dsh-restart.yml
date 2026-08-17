@@ -4,3 +4,4 @@ category: dev
 description:
   en: 'Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.'
   zh: DSH 重启插件：可配置的重启方式（Node 原生/旧 PowerShell 适配）、重启后自动继续的提示词、可选看门狗自动拉起。
+  ja: DSH の再起動。再起動方法を選べ（Node ネイティブ / 従来の PowerShell）、再起動後の続行プロンプト、任意のウォッチドッグによる自動再起動に対応します。

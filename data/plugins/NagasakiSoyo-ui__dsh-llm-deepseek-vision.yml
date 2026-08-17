@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Vision-augmented DeepSeek adapter: a vision-capable model describes image input, then a text-only DeepSeek model reasons over the description.'
   zh: 视觉增强的 DeepSeek 适配器：由视觉模型把图片描述成文字，纯文本 DeepSeek 模型再基于描述推理。
+  ja: 視覚を補ったDeepSeek アダプター。視覚対応モデルが画像入力を説明し、その説明をテキスト専用の DeepSeek モデルが読んで推論します。

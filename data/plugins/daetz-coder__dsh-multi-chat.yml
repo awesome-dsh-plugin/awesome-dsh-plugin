@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Multi-window wall for the DSH Web UI: run and monitor N conversations side-by-side in one screen, with auto-discovery, per-window controls, and an authenticated LAN gateway for phone/tablet access.'
   zh: '在 DSH Web 界面里并排运行、监控多个对话实例：多窗口墙 + 自动发现 + 单窗控制，内置带口令认证的局域网网关，手机/平板也能看。'
+  ja: DSH Web UI のマルチウィンドウの壁。N 個の会話を 1 画面に並べて実行・監視でき、自動検出、ウィンドウごとの操作、スマホ/タブレットからアクセスできる認証付きの LAN ゲートウェイを備えます。

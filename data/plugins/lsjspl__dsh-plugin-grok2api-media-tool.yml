@@ -4,3 +4,4 @@ category: vision
 description:
   en: Gives dsh the ability to generate images and videos through the grok2api API.
   zh: 让 dsh 通过 grok2api 的 API 获得生成图片与视频能力。
+  ja: grok2api の API を通じて、dsh に画像と動画の生成機能を追加します。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: Track releases and stars of any public GitHub repository from inside dsh agents — no API key needed.
   zh: 让 dsh agent 直接查询任意 GitHub 公开仓库的 Release 与星标变化，无需 API Key。
+  ja: dsh のエージェントの中から、任意の公開 GitHub リポジトリのリリースと Star を追跡できます。API キーは不要です。

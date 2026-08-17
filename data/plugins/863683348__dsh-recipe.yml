@@ -4,3 +4,4 @@ category: market
 description:
   en: 'Scenario bundles of dsh plugins (插件界的 dotfiles): a recipe tool that lists, searches, applies and composes ready-made plugin environments with ordered install sequences.'
   zh: '把 dsh 插件打包成场景配方（"插件界的 dotfiles"）：recipe 工具可列出、搜索、应用并组合现成插件环境，带有序安装序列。'
+  ja: dsh プラグインのシナリオ別バンドル（插件界的 dotfiles）。既成のプラグイン環境を一覧・検索し、決まった順序でインストールして組み合わせる recipe ツールです。

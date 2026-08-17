@@ -4,3 +4,4 @@ category: dev
 description:
   en: 'Zero-touch runtime telemetry for DSH: every session auto-writes task, model tier, tools, failures, duration, status into a human-readable journal with a stats section (pure observer — no tools, no LLM calls, no injection).'
   zh: DeepSeek Harness 零侵入运行事实遥测：每个会话自动把任务/模型档位/工具/失败/时长/状态写入人机共读观测卡并附统计区（纯观察者——零工具、零 LLM、零注入）。
+  ja: DSH の実行時テレメトリを手間なく記録。セッションごとにタスク、モデル階層、ツール、失敗、所要時間、状態を人が読める journal に自動で書き出し、統計セクションも付けます（純粋な観測役で、ツールも LLM 呼び出しも注入もありません）。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: Strict ISO 8601 parsing, IANA timezone conversion, and UTC calendar arithmetic.
   zh: 严格 ISO 8601 解析、IANA 时区转换、UTC 日历运算。
+  ja: 厳密な ISO 8601 の解析、IANA タイムゾーンの変換、UTC の暦計算。

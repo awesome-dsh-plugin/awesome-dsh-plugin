@@ -4,3 +4,4 @@ category: dev
 description:
   en: 'Login gate for the dsh web surface: password or shared-token authentication, session cookies, rate limiting, and a user-management CLI (dsh.bundle manifest since 0.4.1, one-command `dsh plugin add` mounting).'
   zh: DSH 网页端登录门插件：账号口令或共享令牌认证、会话 cookie、登录限速，附用户管理 CLI（0.4.1 起声明 dsh.bundle manifest，`dsh plugin add` 一键挂载）。
+  ja: dsh の Web 画面へのログインゲート。パスワードまたは共有トークンによる認証、セッションクッキー、レート制限、ユーザー管理 CLI を備えます（0.4.1 から dsh.bundle manifest に対応し、`dsh plugin add` 一発で組み込めます）。

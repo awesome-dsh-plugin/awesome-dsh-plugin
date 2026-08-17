@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'WorkBuddy-style skill picker: a button beside the composer opens a searchable list of installed skills; picking one inserts the official /skill-name gesture, so the skill loads with your message.'
   zh: WorkBuddy 同款技能选择器：输入框旁 ⚡ 按钮弹出全部技能列表，支持搜索与最近/常用排序，点选即插入官方 `/技能名` 手势，随消息发出自动加载执行。
+  ja: WorkBuddy 風のスキルピッカー。コンポーザー横のボタンからインストール済みスキルを検索でき、選ぶと公式の /skill-name の書式が挿入されるので、メッセージと一緒にスキルが読み込まれます。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Connect dsh to a local Obsidian vault: search, read, write, move, and trash notes through `obsidian_*` tools.'
   zh: 把 dsh 连接到本地 Obsidian vault：通过 `obsidian_*` 工具搜索、读取、写入、移动与回收笔记。
+  ja: dsh をローカルの Obsidian vault に接続します。`obsidian_*` ツールでノートの検索、読み取り、書き込み、移動、ゴミ箱への移動ができます。

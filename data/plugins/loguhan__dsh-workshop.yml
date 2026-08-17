@@ -4,3 +4,4 @@ category: market
 description:
   en: 'Steam Workshop-style plugin store for the DSH Web UI: browse, search, and one-click install community plugins with mirror acceleration, progress UI, security checks, and Chinese descriptions.'
   zh: DSH Web UI 的 Steam 创意工坊式插件商店：浏览、搜索并一键安装社区插件，支持镜像加速、进度 UI、安全检测与中文描述。
+  ja: DSH Web UI 向けの Steam ワークショップ風プラグインストア。コミュニティのプラグインを閲覧・検索し、ミラーによる高速化、進捗表示、セキュリティチェック、中国語の説明つきでワンクリックインストールできます。

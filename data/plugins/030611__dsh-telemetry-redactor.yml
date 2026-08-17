@@ -4,3 +4,4 @@ category: dev
 description:
   en: Redacts supported secret patterns from the `session-telemetry/record` export copy before configured telemetry backends receive it.
   zh: 在已配置遥测后端接收前，对 `session-telemetry/record` 导出副本中的已支持秘密模式进行脱敏。
+  ja: '`session-telemetry/record` のエクスポート内容から、設定済みのテレメトリ送信先に届く前に既知のシークレットパターンを伏せ字化します。'

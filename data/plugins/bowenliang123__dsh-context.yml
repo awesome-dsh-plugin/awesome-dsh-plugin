@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'Context insight panel: see what the model''s context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.'
   zh: 上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。
+  ja: コンテキストの内訳パネル。モデルのコンテキストウィンドウが何で構成され、どう変化しているかを確認できます——構成比とウィンドウサイズ、リクエストごとの履歴、圧縮/注入のイベント、メッセージ単位のトークン統計。

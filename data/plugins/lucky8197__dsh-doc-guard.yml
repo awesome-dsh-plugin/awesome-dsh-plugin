@@ -4,3 +4,4 @@ category: dev
 description:
   en: 'Document-code consistency guard: audits version headers / changelog tables / directory trees / module & test counts / cross-doc references for drift, with severity-sorted, read-only fix suggestions.'
   zh: 文档与代码一致性守护：版本号/更新记录表/结构树/模块清单/测试计数/交叉引用漂移审计与修复建议，全程只读。
+  ja: ドキュメントとコードの整合性ガード。バージョンの見出し / 変更履歴の表 / ディレクトリツリー / モジュールとテストの数 / 文書間の参照のずれを調べ、深刻度順の読み取り専用の修正提案を出します。

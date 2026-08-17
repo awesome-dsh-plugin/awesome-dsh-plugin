@@ -4,3 +4,4 @@ category: tools
 description:
   en: Query 64 Chinese exams (高考/考研/四六级/CPA/法考…) with rule-aware date math (2nd-Saturday, 1st-Sunday) and countdowns.
   zh: 查询 64 场中国考试（高考/考研/四六级/CPA/法考…）的规则日期（第二个周六、第一个周日）与倒计时。
+  ja: 中国の 64 種の試験（高考/考研/四六級/CPA/司法試験…）を、規則を踏まえた日付計算（第 2 土曜、第 1 日曜など）とカウントダウンつきで照会できます。

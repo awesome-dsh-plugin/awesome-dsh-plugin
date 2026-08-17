@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.'
   zh: 助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。
+  ja: 返信の中に埋め込まれる対話的な UI コンポーネント。レイアウト、チャート、フォーム、クイズ、mermaid、3D シーンに対応し、操作イベントはモデルへ戻ります。

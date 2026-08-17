@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'A project-agnostic multi-agent collaboration protocol for the DeepSeek Harness: loop guards that stop runaway agent loops, a six-field handoff format, risk-tiered review routing, and a fixed verify→commit→push→review→close sequence. One skill instead of the same rules copy-pasted into every agent''s instructions.'
   zh: 面向 DeepSeek Harness、与具体项目无关的多智能体协作协议：阻止失控循环的循环守卫、六字段交接格式、按风险分级的评审路由，以及固定的验证→提交→推送→评审→关闭流程。用一个 skill 取代复制粘贴进每个 agent 指令里的相同规则。
+  ja: DeepSeek Harness 向けの、プロジェクトに依存しないマルチエージェント協働プロトコル。暴走したエージェントループを止めるループガード、6 項目の引き継ぎフォーマット、リスク階層に応じたレビューの振り分け、verify→commit→push→review→close の固定手順を定めます。同じルールを各エージェントの指示にコピペする代わりに、スキル 1 つで済ませます。

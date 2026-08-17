@@ -4,3 +4,4 @@ category: skill
 description:
   en: 'Cleans AI traces from Russian text: finds chatbot copy-paste artefacts (ChatGPT, Gemini, Grok, Perplexity, DeepSeek) and rewrites the text into natural prose on request; 39 regex markers with an evidence registry, offline, text-only bundle.'
   zh: 清理俄语文本中的 AI 痕迹：识别聊天机器人复制粘贴残留（ChatGPT、Gemini、Grok、Perplexity、DeepSeek），并按需改写为自然行文；39 个正则标记配证据登记表，离线运行，纯文本 bundle。
+  ja: ロシア語の文章から AI の痕跡を取り除きます。チャットボット（ChatGPT、Gemini、Grok、Perplexity、DeepSeek）由来のコピペの跡を見つけ、依頼に応じて自然な文章に書き直します。根拠レジストリを備えた 39 個の正規表現マーカーを収録し、オフラインで動くテキスト専用バンドルです。

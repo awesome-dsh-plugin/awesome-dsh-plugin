@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Fail-closed Feishu (Lark) channel bridge: chat with a bot, get dsh agent turns back — with opt-in human-in-the-loop tool approval (Allow/Deny cards before every bash call, fail-closed timeout). Official-Python-SDK-only integration (exact-pinned); deny-by-default allowlist, webhook signature/timestamp/replay verification, per-chat sticky sessions; daily latest-SDK compatibility canary; bilingual docs.'
   zh: Fail-closed 的飞书（Lark）channel 桥：和机器人聊天即驱动 dsh agent turn，可选人在环工具审批（每次 bash 调用前飞书弹 Allow/Deny 卡，超时默认拒绝）。仅经官方 Python SDK 集成（精确锁版）；白名单默认全拒、webhook 验签/时间窗/防重放、按 chat 粘性会话；每日最新 SDK 兼容金丝雀；中英双语文档。
+  ja: フェイルクローズ設計の飛書（Lark）チャネルブリッジ。bot とチャットすると dsh のエージェントのターンが返ってきます。任意で人が介在するツール承認も使えます（bash 呼び出しのたびに Allow/Deny のカードを出し、タイムアウト時は拒否）。公式 Python SDK のみを使う統合（バージョン固定）で、既定拒否の許可リスト、webhook の署名・タイムスタンプ・リプレイ検証、チャットごとの固定セッション、最新 SDK との互換性を毎日確かめるカナリア、二言語のドキュメントを備えます。

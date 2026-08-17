@@ -4,3 +4,4 @@ category: dev
 description:
   en: 'Autonomous permission classifier for the auto preset: tool-scoped allow/deny rules, an LLM semantic judge, and git checkpointing for unattended sessions.'
   zh: auto（自主模式）权限分类器：工具作用域的放行/拒绝规则、LLM 语义裁判与 git 快照，面向无人值守会话。
+  ja: auto プリセット向けの自律的なパーミッション分類器。ツール単位の許可/拒否ルール、LLM による意味的な判定、無人セッション向けの git チェックポイントを備えます。

@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'One-click start/stop button pinned to the window bottom-right corner: restarts DeepSeek Harness in place via a detached helper that relaunches the exact boot invocation (loopback same-origin guarded), with an optional stop-only action.'
   zh: 固定在窗口右下角的一键启停按钮：通过脱离终端的辅助进程按原始启动命令重启 DeepSeek Harness（仅本机同源可调），附「仅停止」小按钮。
+  ja: ウィンドウ右下に固定される起動/停止のワンクリックボタン。分離したヘルパーが起動時とまったく同じコマンドで DeepSeek Harness をその場で再起動します（ループバックの同一オリジンで保護）。停止のみの動作も選べます。

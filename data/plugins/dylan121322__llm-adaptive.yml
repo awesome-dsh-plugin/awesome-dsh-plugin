@@ -4,3 +4,4 @@ category: model
 description:
   en: 'Adaptive model routing: per-request complexity classification with automatic provider routing.'
   zh: 自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。
+  ja: 適応的なモデルルーティング。リクエストごとに複雑さを判定し、プロバイダーを自動で振り分けます。

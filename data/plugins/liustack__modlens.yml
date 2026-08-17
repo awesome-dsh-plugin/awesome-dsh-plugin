@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).'
   zh: 为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。
+  ja: テキスト専用モデル向けの視覚ブリッジ。画像を貼ると、構造化された JSON の根拠（OCR、レイアウト、意味）が返ります。

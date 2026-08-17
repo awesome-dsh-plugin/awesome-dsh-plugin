@@ -4,3 +4,4 @@ category: skill
 description:
   en: 'Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.'
   zh: 设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。
+  ja: 設定サイドバーのスキルプール管理。有効化/無効化、名前の衝突を確認しながらのフォルダー一括取り込み、状態に応じたワンクリックの DSH 仕様チェックと自動修正、システム/プロジェクトのスコープ表示に対応します。

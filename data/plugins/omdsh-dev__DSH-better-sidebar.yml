@@ -4,3 +4,4 @@ category: ui
 description:
   en: Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register new tabs.
   zh: 侧边栏完整工作台：内置文件渲染编辑、终端、Git 与子代理，支持三方插件注册新 Tab。
+  ja: 本格的なサイドバーワークベンチ。ファイルの表示と編集、ターミナル、Git、サブエージェントを備え、サードパーティのプラグインが新しいタブを登録することもできます。

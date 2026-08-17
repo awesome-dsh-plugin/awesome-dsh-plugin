@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Universal image generation for DeepSeek Harness: auto-discovers image models from any OpenAI-compatible endpoint (SenseNova, StepFun, Agnes, Qwen, Flux, SD, Imagen and more), with agent tools and REST API.'
   zh: DeepSeek Harness 统一生图路由：自动识别任意 OpenAI 兼容端点的绘图模型（商汤、阶跃、Agnes、千问、Flux、SD、Imagen 等），提供 Agent 工具与 REST API。
+  ja: DeepSeek Harness 向けの汎用画像生成。OpenAI 互換の任意のエンドポイント（SenseNova、StepFun、Agnes、Qwen、Flux、SD、Imagen ほか）から画像モデルを自動検出し、エージェントツールと REST API を提供します。

@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Proactive scheduling: an adaptive heartbeat plus a value network (urgency, relevance, interruption cost) decides when the agent should speak unprompted.'
   zh: 主动调度：自适应心跳 + 价值网络（紧迫度、相关性、打断代价）决定 Agent 何时主动开口。
+  ja: 先回りのスケジューリング。適応的なハートビートと価値ネットワーク（緊急度、関連度、割り込みのコスト）が、エージェントが自分から話しかけるべきタイミングを判断します。

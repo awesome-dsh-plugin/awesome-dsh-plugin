@@ -4,3 +4,4 @@ category: dev
 description:
   en: A starter template for dsh plugins covering config, tools, events, services, hooks, browser UI slots, and slash commands.
   zh: dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
+  ja: dsh プラグインのスターターテンプレート。設定、ツール、イベント、サービス、hooks、ブラウザ UI のスロット、スラッシュコマンドを一通り網羅しています。

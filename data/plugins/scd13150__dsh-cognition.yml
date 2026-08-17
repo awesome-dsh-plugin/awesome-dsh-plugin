@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'Project memory for coding agents on DeepSeek Harness: similar past edits surface as precedents, out-of-scope edits are blocked, and cognition persists across sessions (47 upstream-verified fixes, gold-free 20-task run).'
   zh: 给 DSH agent 的项目记忆:历史相似编辑作为先例出现、越界修改被 scope 锁拦下、认知跨会话持续积累(47 次上游验收修复、去 gold 化 20/20)。
+  ja: DeepSeek Harness 上のコーディングエージェント向けのプロジェクトメモリ。過去の似た編集を前例として提示し、範囲外の編集は止め、セッションをまたいで認識を保ちます（上流で確認された修正 47 件、正解データなしの 20 タスク実行）。

@@ -4,3 +4,4 @@ category: fun
 description:
   en: Pops up a mini-game menu (wordle, match-3, extensible) while the model generates.
   zh: 模型生成时弹出小游戏菜单（wordle/消消乐，可扩展）。
+  ja: モデルの生成中にミニゲームのメニュー（wordle、マッチ 3、拡張可能）を表示します。

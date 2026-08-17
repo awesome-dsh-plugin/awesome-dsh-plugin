@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Piano-key in-conversation navigation for the Web UI: one key per user message with hover ladder, message-preview tooltip, and active-message highlight; click to smooth-scroll.'
   zh: 钢琴键风格会话内导航条：一根键锚定一条用户消息，悬停显示消息预览气泡与阶梯展开，点击平滑跳转。
+  ja: Web UI 向けのピアノの鍵盤のような会話内ナビゲーション。ユーザーメッセージ 1 件につき 1 つの鍵盤を並べ、ホバー時のはしご表示、メッセージのプレビュー、現在位置のハイライトを備え、クリックで滑らかにスクロールします。

@@ -4,3 +4,4 @@ category: model
 description:
   en: macOS Keychain credential provider that replaces the local-file provider and uses a signed, notarized universal helper.
   zh: macOS Keychain 凭据提供器：替换本地文件提供器，并使用已签名、公证的通用二进制辅助程序。
+  ja: macOS のキーチェーンを使う資格情報プロバイダー。ローカルファイル方式を置き換え、署名・公証済みのユニバーサルヘルパーを使います。

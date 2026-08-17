@@ -4,3 +4,4 @@ category: usage
 description:
   en: 'Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.'
   zh: Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。
+  ja: Web UI にターンごとの USD コストバッジを表示。ヘッダーにセッション合計、各メッセージのフッターにターンごとのコストを出し、ホバーで内訳を確認できます。

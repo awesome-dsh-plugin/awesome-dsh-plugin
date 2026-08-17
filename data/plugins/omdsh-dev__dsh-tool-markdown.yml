@@ -4,3 +4,4 @@ category: tools
 description:
   en: HTML↔Markdown conversion, GFM table normalization, and TOC generation.
   zh: HTML↔Markdown 转换、GFM 表格规范化、目录生成。
+  ja: HTML と Markdown の相互変換、GFM のテーブル整形、目次の生成。

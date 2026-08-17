@@ -4,3 +4,4 @@ category: tools
 description:
   en: Browser automation (Playwright) with a live view, an MCP server exposing DSH agents to any MCP client, and GitHub issue/PR/webhook review tools.
   zh: 浏览器自动化（Playwright，带实时画面）+ MCP Server（把 DSH agent 暴露给任何 MCP 客户端）+ GitHub issue/PR/webhook 评审工具。
+  ja: ブラウザ自動操作（Playwright）とライブビュー、DSH のエージェントを任意の MCP クライアントに公開する MCP サーバー、GitHub の issue/PR/webhook レビューツールを提供します。

@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Manage MCP servers from the Web settings panel: view, add, edit, remove, enable or disable them, with hot reload on save.'
   zh: 在 Web 设置面板中查看、添加、编辑、删除、启用或停用 MCP 服务器，保存后热重载。
+  ja: MCP サーバーを Web の設定パネルから管理。閲覧、追加、編集、削除、有効化/無効化ができ、保存時にホットリロードされます。

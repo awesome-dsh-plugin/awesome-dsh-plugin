@@ -4,3 +4,4 @@ category: usage
 description:
   en: Persistent provider-reported token usage totals with per-session, per-model, and daily activity statistics.
   zh: 持久化 provider 上报的 Token 用量统计，支持按会话、按模型和按日活跃度查看。
+  ja: プロバイダーが報告するトークン使用量の累計を永続化し、セッション別・モデル別・日別の活動統計を表示します。

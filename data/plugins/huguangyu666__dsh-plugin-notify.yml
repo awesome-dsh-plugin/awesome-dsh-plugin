@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Notification outbox: agent proactively notifies via toast / Chinese TTS voice / sound effects (explosion, victory, alarm), 60s confirmation window voice-calls you back, volume boost, settings panel.'
   zh: 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
+  ja: 通知の送信箱。エージェントがトースト、中国語の TTS 音声、効果音（爆発、勝利、アラーム）で能動的に知らせます。60 秒の確認枠では音声で呼び返し、音量ブーストと設定パネルも備えます。

@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Feishu (Lark) UI for DeepSeek Harness — a panel-driven control console: every slash command is a button on the ⚙️ control-panel card, in-card approvals and questions, live streaming cards, and one-QR app setup.'
   zh: DeepSeek Harness 的飞书 UI：面板驱动控制台——每个斜杠命令都是 ⚙️ 控制面板卡片上的按钮，卡内审批与提问，流式卡片，扫码一次完成配置。
+  ja: DeepSeek Harness の飛書（Lark）UI——パネル駆動の操作コンソール。すべてのスラッシュコマンドが ⚙️ コントロールパネルカードのボタンになり、カード内での承認と質問、ライブのストリーミングカード、QR 1 枚でのアプリ設定に対応します。

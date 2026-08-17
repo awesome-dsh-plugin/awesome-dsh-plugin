@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Composer input toolkit: arrow-key session history (first/last-line gated, IME and command-menu safe) and related input conveniences.'
   zh: 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）等输入增强。
+  ja: コンポーザーの入力ツールキット。矢印キーによるセッション履歴の呼び出し（先頭行/末尾行でのみ動作し、IME やコマンドメニューとも競合しません）ほか、入力まわりの細かな便利機能を提供します。

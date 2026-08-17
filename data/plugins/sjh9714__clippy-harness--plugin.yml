@@ -4,3 +4,4 @@ category: fun
 description:
   en: Clippy is back and this time he can actually help. An office assistant pet that reacts to real agent state, jumps when the turn completes, and opens a classic "illegal operation" dialog when a turn fails.
   zh: 回形针助手回来了，这次它真的会干活：会对真实 agent 状态做出反应的办公助手宠物，任务完成时跳起来庆祝，回合失败时弹出经典的 "illegal operation" 对话框。
+  ja: クリッピーが帰ってきました。今度は本当に役に立ちます。エージェントの実際の状態に反応するオフィスアシスタントのペットで、ターンが完了すると跳ね、失敗すると往年の「不正な処理」ダイアログを開きます。

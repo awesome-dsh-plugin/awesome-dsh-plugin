@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Learning Mode agent preset: a coding agent that teaches while coding — concrete scenario-grounded explanations, Socratic guidance, and TODO(你) practice blanks, modeled on Claude Code''s Learning output style; installable via dsh plugin add (dsh-learning-mode on npm).'
   zh: 学习模式（Learning Mode）Agent 预设：边做边教的编码 Agent——具体的情景化阐释、苏格拉底式引导、TODO(你) 留白练习，模拟 Claude Code 的 Learning 输出风格；可 `dsh plugin add` 安装（npm 包 dsh-learning-mode）。
+  ja: ラーニングモードのエージェントプリセット。コードを書きながら教えるコーディングエージェントで、具体的な場面に即した説明、ソクラテス式の誘導、TODO(你) の練習用穴埋めを行います。Claude Code の Learning 出力スタイルを参考にしており、dsh plugin add でインストールできます（npm の dsh-learning-mode）。

@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'Evidence-bound negative-knowledge ledger: persists disproven paths (command_failed, file_missing) with their outcome and precondition evidence, then warns or blocks repeat attempts until the evidence changes.'
   zh: 证据约束的负面知识账本：记录被证伪的路径（command_failed / file_missing）及其结果与前置条件证据，重复尝试时警告或拦截，证据变化后自动解除。
+  ja: 根拠に紐づく「うまくいかなかったこと」の台帳。否定された道筋（command_failed、file_missing）を結果と前提条件の根拠つきで保存し、根拠が変わるまで同じ試みを警告または阻止します。

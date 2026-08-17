@@ -4,3 +4,4 @@ category: usage
 description:
   en: DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.
   zh: 在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。
+  ja: 設定画面に DeepSeek API の残高と 24 時間の使用状況ダッシュボードを追加。推定支出、トークン数、リクエスト数、時間別の推移を表示します。

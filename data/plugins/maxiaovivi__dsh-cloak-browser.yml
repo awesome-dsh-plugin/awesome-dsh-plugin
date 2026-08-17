@@ -4,3 +4,4 @@ category: tools
 description:
   en: CloakBrowser-powered native browser tools with per-agent isolated sessions, bounded snapshots, ref-based interaction, screenshots, and safe routing.
   zh: 基于 CloakBrowser 的原生浏览器工具：按 Agent 隔离会话，提供有界快照、ref 交互、截图与安全路由。
+  ja: CloakBrowser を使ったネイティブなブラウザツール。エージェントごとに独立したセッション、範囲を限定したスナップショット、参照 ID を使った操作、スクリーンショット、安全な経路選択に対応します。

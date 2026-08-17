@@ -4,3 +4,4 @@ category: ui
 description:
   en: '**DeepSeek Chat (chat.deepseek.com) same-style attachments**: paperclip upload button, 240×64 DS-style file cards with official colored doc icons (PDF/DOCX/XLSX/PPT/IMG extracted from the DS frontend bundle), drag-and-drop, text extraction (PDF/DOCX/XLSX/TXT) injected into the message, and real attachment cards rendered in the transcript (custom user renderer) with the model reading full content.'
   zh: '**DeepSeek Chat（chat.deepseek.com）同款附件**：回形针上传按钮、240×64 DS 风格文件卡片（官方彩色文档图标，从 DS 前端 bundle 提取）、拖拽上传、文本提取（PDF/DOCX/XLSX/TXT）注入消息、对话流中渲染真实附件卡片（自定义 user 渲染器）且模型读取完整内容。'
+  ja: '**DeepSeek Chat（chat.deepseek.com）と同じ見た目の添付機能**。クリップのアップロードボタン、DS 公式のカラーアイコン（PDF/DOCX/XLSX/PPT/IMG を DS のフロントエンドのバンドルから抽出）を使った 240×64 のファイルカード、ドラッグ＆ドロップ、メッセージに差し込まれるテキスト抽出（PDF/DOCX/XLSX/TXT）に対応し、会話ログにも本物の添付カード（独自のユーザー描画）を表示します。モデルは内容の全文を読めます。'

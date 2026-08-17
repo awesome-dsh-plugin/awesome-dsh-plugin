@@ -4,3 +4,4 @@ category: session
 description:
   en: Rewind conversation and workspace state, powered by a persistent Change Ledger.
   zh: 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
+  ja: 永続的な変更台帳（Change Ledger）を使って、会話とワークスペースの状態を巻き戻します。

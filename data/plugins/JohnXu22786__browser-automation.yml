@@ -4,3 +4,4 @@ category: tools
 description:
   en: "Real-browser automation for dsh via an MCP server (Playwright core): navigate, click, fill, type, screenshot, and act on accessibility snapshots with numbered references - all 22 web_* tools re-exposed to the harness over stdio."
   zh: "dsh 的真实浏览器自动化:基于 Playwright 的 MCP 服务,提供导航、点击、填写、输入、截图与带编号引用的无障碍快照操作,22 个 web_* 工具经 stdio 接入 Agent。"
+  ja: MCP サーバー（Playwright ベース）を介した dsh 向けの実ブラウザ自動操作。遷移、クリック、入力、タイピング、スクリーンショットに加え、番号付き参照のアクセシビリティスナップショットに対して操作できます。22 個の web_* ツールをすべて stdio 経由で harness に再公開します。

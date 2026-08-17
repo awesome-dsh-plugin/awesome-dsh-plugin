@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Text-first computer use for DSH: background Chromium control via Playwright/CDP plus accessibility-first macOS control; actions stay pinned to the right process and window without taking the user''s pointer, ships a Developer ID signed, notarized Universal 2 DMG.'
   zh: DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。
+  ja: DSH 向けのテキスト優先の Computer Use。Playwright/CDP によるバックグラウンドの Chromium 操作と、アクセシビリティ優先の macOS 操作を組み合わせます。操作は対象のプロセスとウィンドウに固定され、ユーザーのポインターを奪いません。Developer ID 署名と公証済みの Universal 2 DMG を提供します。

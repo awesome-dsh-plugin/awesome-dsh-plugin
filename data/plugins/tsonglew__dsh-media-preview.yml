@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Audio/video FileViewer for dsh-better-sidebar: native inline playback for mp4/webm/mkv/mov and mp3/flac/wav, served by a Range-capable streaming media route.'
   zh: better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。
+  ja: dsh-better-sidebar 向けの音声/動画ファイルビューア。mp4/webm/mkv/mov と mp3/flac/wav をその場で再生でき、Range 対応のストリーミング配信経路が支えます。

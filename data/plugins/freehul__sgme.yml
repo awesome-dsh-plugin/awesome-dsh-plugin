@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'ShiGuang Memory Engine (SGME) bridge: multi-agent shared long-term memory via HTTP — L0/L1/L1.5/L2 distillation, scenario-based injection, unified search, and proactive care signals (memory_search / wiki_search / signal_pull / signal_claim / signal_ack), installable as `dsh-sgme`.'
   zh: 拾光记忆引擎（SGME）桥接：多智能体共享长期记忆（HTTP）—— L0/L1/L1.5/L2 分层提炼、按场景注入、统一检索、主动关怀信号（memory_search / wiki_search / signal_pull / signal_claim / signal_ack），npm 包名 `dsh-sgme`。
+  ja: ShiGuang Memory Engine（SGME）ブリッジ。HTTP 経由で複数エージェントが長期記憶を共有します——L0/L1/L1.5/L2 の蒸留、場面に応じた注入、統合検索、先回りの気づかいシグナル（memory_search / wiki_search / signal_pull / signal_claim / signal_ack）。`dsh-sgme` としてインストールできます。

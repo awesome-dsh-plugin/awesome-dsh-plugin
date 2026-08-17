@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Read-only agent-fleet credential hygiene audit: credential-file permissions, embedded credentials in git remotes (masked in output), and provider token literal counts; zero-dependency and deterministic.'
   zh: 只读的 agent 机群凭据卫生审计：检查凭据文件权限、git remote 内嵌凭据（输出脱敏）与 provider token 字面量计数；零依赖、确定性。
+  ja: 読み取り専用のエージェント群の資格情報衛生監査。資格情報ファイルのパーミッション、git remote に埋め込まれた資格情報（出力ではマスク）、プロバイダートークンのリテラル数を調べます。依存関係ゼロで決定論的です。

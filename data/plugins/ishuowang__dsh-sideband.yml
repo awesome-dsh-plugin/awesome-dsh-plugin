@@ -4,3 +4,4 @@ category: session
 description:
   en: 'Hand off focused context without waiting for or interrupting the active Agent: freeze a bounded Session snapshot, summarize it asynchronously with an isolated no-tool LLM, and deliver a provenance-bearing capsule to another Session or an authorized Room—quiet by default for Sessions, with explicit wakeup available.'
   zh: 无需等待或打断正在工作的 Agent：即时冻结有界 Session 快照，由隔离且无工具的 LLM 异步总结，再将带来源信息的上下文胶囊投递到另一 Session 或已授权 Room；对 Session 默认 quiet，也可显式 wakeup。
+  ja: 動作中のエージェントを待つことも中断することもなく、必要な文脈だけを引き渡します。範囲を限定したセッションのスナップショットを凍結し、ツールを持たない独立した LLM で非同期に要約して、来歴つきのカプセルを別のセッションや権限のある Room に届けます。セッションへは既定で静かに届き、必要なら明示的に起こすこともできます。

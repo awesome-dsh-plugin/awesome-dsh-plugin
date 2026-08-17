@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Real PTY terminal panel for the DSH Web UI: host half spawns shells with node-pty (cmd.exe default on Windows), rendered in the browser with xterm.js; multi-tab sessions, dock/floating window, clipboard support.'
   zh: DSH Web UI 终端面板：宿主端 node-pty 真实 PTY（Windows 默认 cmd.exe）+ 浏览器 xterm.js 渲染；多标签会话、停靠/浮动窗口、复制粘贴。
+  ja: DSH Web UI 向けの本物の PTY ターミナルパネル。ホスト側が node-pty でシェルを起動し（Windows では既定で cmd.exe）、ブラウザ側は xterm.js で描画します。複数タブのセッション、ドック/フローティングウィンドウ、クリップボード対応。
