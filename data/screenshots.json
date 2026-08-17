@@ -457,6 +457,10 @@
  "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": [
   "https://raw.githubusercontent.com/moguiyu/dsh-tavily/main/assets/tavily-search.png"
  ],
+ "https://github.com/niuniuaba/dsh-subagent-vision": [
+  "https://raw.githubusercontent.com/niuniuaba/dsh-subagent-vision/main/assets/screenshot-models.png",
+  "https://raw.githubusercontent.com/niuniuaba/dsh-subagent-vision/main/assets/screenshot-vision-route.png"
+ ],
  "https://github.com/nonewind/dsh-spend": [
   "https://raw.githubusercontent.com/nonewind/dsh-spend/main/docs/screenshots/dashboard.png",
   "https://raw.githubusercontent.com/nonewind/dsh-spend/main/docs/screenshots/details-window.png"
