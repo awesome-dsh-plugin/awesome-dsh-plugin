@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/rss
+name: hyzyn/dsh-plugin-kit#packages/rss
+category: tools
+description:
+  en: 'RSS/Atom news aggregator: subscribes to multiple feeds and merges them into a daily digest that is injected into the system prompt for direct reference.'
+  zh: RSS/Atom 新闻聚合：订阅多个源，每天汇总成「今日值得读」并注入 systemPrompt 供模型直接引用。

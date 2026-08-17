@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/search
+name: hyzyn/dsh-plugin-kit#packages/search
+category: ui
+description:
+  en: 'Global search for the DSH Web GUI: a sidebar entry that searches past sessions, saved prompts, and loaded MCP tools with keyword highlighting.'
+  zh: DSH Web GUI 全局搜索：侧边栏搜索框同时检索历史会话、已保存的 Prompt 与已加载的 MCP 工具，关键词高亮。
