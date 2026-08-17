@@ -1057,7 +1057,6 @@ dsh plugin --profile web add dshmarket
 - [2008924/dsh-progress-viz](https://github.com/2008924/dsh-progress-viz) — headless dsh 任务的实时阶段、ETA 与成本看板：把黑盒会话事件流变成实时多任务网格（cordis 插件 + 本地独立看板，零 API 调用）。
 - [534119219/chicheng-gate](https://github.com/534119219/chicheng-gate) — DSH Web 插件：局域网/远程访问控制、frpc 内网穿透、面板密码门禁与手机端 UI 适配。
 - [863683348/dsh-gov](https://github.com/863683348/dsh-gov) — Agent 治理套件：基于策略的工具门禁（allow/deny/ask，支持通配符与优先级）、结构化 JSONL 审计日志、基于宿主 token 计量的按 agent 配额，状态存于 $DSH_HOME/gov。
-- [863683348/dsh-plugin-audit](https://github.com/863683348/dsh-plugin-audit) — 同步 GitHub dsh-plugin 主题为本地目录，探测 npm，静态扫描插件安全性，并为每个插件打分（维护、文档、npm、生态），提供 Agent 工具与网页榜单。
 - [863683348/dsh-plugin-gate](https://github.com/863683348/dsh-plugin-gate) — DSH 插件的安装安全闸门：在 "dsh plugin add" 前对本地目录或 npm 包做"杀毒"式扫描（安装脚本、权限、密钥、网络回连），给出 BLOCK/WARN/PASS 判定。
 - [863683348/dsh-plugin-verify](https://github.com/863683348/dsh-plugin-verify) — DSH 核验工具箱：在工作区文件中核查声明并返回带行号引用的证据，校验配置文件（JSON/YAML），以及只读的 URL / npm / GitHub 提交就绪度探测。
 - [863683348/dsh-trend-radar](https://github.com/863683348/dsh-trend-radar) — 生态行情面板：把 dsh-plugin topic 与 awesome 收录列表快照成本地历史，产出周报（新增插件、star 增速、类别热度、收录覆盖率），并支持关键词雷达监控新品与 star 突增。
@@ -1192,6 +1191,7 @@ dsh plugin --profile web add dshmarket
 - [863683348/dsh-feed](https://github.com/863683348/dsh-feed) — 跨生态聚合数据层（"聚合的聚合"）：把 GitHub dsh-plugin 主题与 npm registry 归一化为开放 JSON 索引，供模型工具、CLI 与轻量 stdio MCP 服务查询。
 - [863683348/dsh-insight](https://github.com/863683348/dsh-insight) — 插件评测中心：一个答案回答"哪些值得装"——plugin_guide 按需求推荐插件、recipe 安装整套环境、plugin_rank 健康评分（0-100）、plugin_audit 静态安全扫描本地目录、plugin_verdict 给出 install / caution / research / avoid 结论。
 - [863683348/dsh-need-finder](https://github.com/863683348/dsh-need-finder) — 需求型插件导购与环境配方：plugin_guide 按自然语言需求语义匹配精选插件并给出理由与安装命令；recipe 一键安装整套社区配方（通知全家桶、安全审计套装等），带有序安装计划。
+- [863683348/dsh-plugin-audit](https://github.com/863683348/dsh-plugin-audit) — 插件生态体检：将 dsh-plugin 话题同步为本地评分目录（维护/文档/npm+周下载/生态四维，0-100 分 A-D 级），静态安全扫描高危一票否决，支持 star 历史快照、Web 榜单与 Agent 工具。
 - [863683348/dsh-plugin-recommend](https://github.com/863683348/dsh-plugin-recommend) — DSH 插件推荐器：按需求描述、分类与标签在 1100+ 条内嵌市场目录中搜索并排序插件，返回匹配理由，支持从 awesome-dsh-plugin README 在线刷新目录。
 - [863683348/dsh-recipe](https://github.com/863683348/dsh-recipe) — 把 dsh 插件打包成场景配方（"插件界的 dotfiles"）：recipe 工具可列出、搜索、应用并组合现成插件环境，带有序安装序列。
 - [alex04130/dsh-forge](https://github.com/alex04130/dsh-forge) — DeepSeek Harness 扩展套件：跨会话邮箱与 wake 冷启动、代理团队（队长 + 成员 + 依赖任务板 + team_wait）、子代理派发策略（提权自动审批）、任务感知路由 preset、插件市场、技能管理器与运行时注入器。
