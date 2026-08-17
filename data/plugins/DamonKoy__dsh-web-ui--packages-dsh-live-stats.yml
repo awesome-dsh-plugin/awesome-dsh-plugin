@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-live-stats
+name: DamonKoy/dsh-web-ui#dsh-live-stats
+category: ui
+description:
+  en: Live token estimates and generation throughput for the dsh web GUI.
+  zh: dsh web GUI 实时 token 估算与生成吞吐。

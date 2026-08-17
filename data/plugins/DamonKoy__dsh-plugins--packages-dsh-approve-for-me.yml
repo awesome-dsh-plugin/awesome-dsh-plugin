@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-approve-for-me
+name: DamonKoy/dsh-plugins#dsh-approve-for-me
+category: workflow
+description:
+  en: 'Automated approval review: auto-approve read-only tools, auto-deny dangerous commands, fail-closed policy engine.'
+  zh: 自动化审批审核：只读工具自动放行、危险命令自动拒绝，策略引擎 fail-closed。
