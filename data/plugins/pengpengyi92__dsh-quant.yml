@@ -4,3 +4,4 @@ category: tools
 description:
   en: Quantitative R&D toolkit for DeepSeek Harness — 37 tools across six domains covering market data, technical indicators, factor evaluation, backtests, risk metrics and fund simulation.
   zh: 面向 DeepSeek Harness 的量化研究工具箱，37 个工具覆盖行情、指标、因子评价、回测、风控与基金模拟。
+  ja: DeepSeek Harness 向けのクオンツ研究開発ツールキット——市場データ、テクニカル指標、ファクター評価、バックテスト、リスク指標、ファンドのシミュレーションの 6 領域にわたる 37 のツールを提供します。

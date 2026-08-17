@@ -4,3 +4,4 @@ category: ui
 description:
   en: Replaces the Web GUI trajectory tab with a new-user-friendly round-by-round storyline, plain-language tool labels, category filters and fuzzy search.
   zh: 把 Web GUI 的轨迹页签替换为新手友好的回合故事线：工具名通俗中文化，支持类别筛选与模糊搜索。
+  ja: Web GUI の軌跡タブを、初めての人にも分かりやすいラウンドごとの物語形式に置き換えます。平易な言葉のツールラベル、カテゴリの絞り込み、あいまい検索つき。

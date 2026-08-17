@@ -4,3 +4,4 @@ category: theme
 description:
   en: 'Font system plugin: OFL webfont presets served offline from the plugin, user-imported custom woff2 fonts, and a ctx.fonts registry other plugins can extend.'
   zh: 字体系统插件：随插件离线分发的 OFL 开源字体预设、自定义 woff2 字体导入，以及供其他插件扩展的 ctx.fonts 注册表。
+  ja: フォントシステムのプラグイン。プラグインからオフラインで配信される OFL の Web フォントのプリセット、ユーザーが取り込んだ woff2 フォント、他のプラグインが拡張できる ctx.fonts のレジストリを備えます。

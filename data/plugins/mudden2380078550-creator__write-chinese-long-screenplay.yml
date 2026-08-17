@@ -4,3 +4,4 @@ category: skill
 description:
   en: 'Chinese long-form screenwriting skill: two input blocks (background + character bible) feeding a causal-value engine, anti-AI-flavor review, and a continuity ledger; works on Codex / Claude Code / dsh / zcode.'
   zh: 中文长剧本写作 skill：双输入板块（背景 + 人物卡）+ 因果—价值内核，保证长篇幅的连续性与人物声音，兼容 Codex / Claude Code / dsh / zcode。
+  ja: 中国語の長編脚本の執筆スキル。2 つの入力ブロック（背景設定＋キャラクター設定）を因果と価値のエンジンに流し、AI っぽさを取り除くレビューと整合性の台帳を組み合わせます。Codex / Claude Code / dsh / zcode で動作します。

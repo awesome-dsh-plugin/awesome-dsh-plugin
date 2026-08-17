@@ -4,3 +4,4 @@ category: session
 description:
   en: 'Cross-session messaging for DSH: any session on the machine can list and message any other, Claude Code-style, via a local heartbeat registry and inbox.'
   zh: 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
+  ja: DSH のセッション間メッセージング。ローカルのハートビートレジストリと受信箱を使い、同じマシン上のどのセッションからでも他セッションを一覧して Claude Code 風にメッセージを送れます。

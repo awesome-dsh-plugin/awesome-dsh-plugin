@@ -4,3 +4,4 @@ category: session
 description:
   en: Import Claude Code sessions, skills and plugin assets into DSH as native resumable sessions, and export or sync DSH sessions back to Claude Code JSONL.
   zh: 将 Claude Code 会话、技能与插件资产导入为 DSH 原生可续聊会话，并支持将 DSH 会话导出或同步回 Claude Code JSONL。
+  ja: Claude Code のセッション、スキル、プラグイン資産を、再開可能なネイティブセッションとして DSH に取り込み、DSH のセッションを Claude Code の JSONL へ書き出したり同期したりできます。

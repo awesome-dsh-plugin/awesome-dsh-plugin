@@ -4,7 +4,7 @@ Thanks for helping grow the list! / 感谢参与！
 
 ## Adding a plugin / 收录插件
 
-> **The READMEs are generated — don't edit them by hand.** The list lives in `data/plugins/`, one YAML file per plugin. / **两个 README 由脚本生成，请勿手工编辑。** 列表数据在 `data/plugins/`，一个插件一个 YAML 文件。
+> **The READMEs are generated — don't edit them by hand.** The list lives in `data/plugins/`, one YAML file per plugin. / **各语言 README 由脚本生成，请勿手工编辑。** 列表数据在 `data/plugins/`，一个插件一个 YAML 文件。
 
 Open a PR that adds **one file**, named after your repo — `data/plugins/<owner>__<repo>.yml`:
 
@@ -15,9 +15,10 @@ category: ui                              # see the category list below / 见下
 description:
   en: One-line description ending with a period.
   zh: 一句话描述，以句号结尾。
+  ja: 句点で終わる一文の説明。
 ```
 
-Then regenerate both READMEs and commit them along with your YAML file / 然后重新生成两个 README，与 YAML 文件一起提交：
+Then regenerate every README and commit them along with your YAML file / 然后重新生成各语言 README，与 YAML 文件一起提交：
 
 ```sh
 npm ci
@@ -30,6 +31,7 @@ node scripts/generate-readme.mjs
 description:
   en: 'Vision toolkit: OCR, grounding and pixel diff.'   # ✅ quoted / 加引号
   zh: '识图工具包：OCR、定位与像素比对。'                    # 中文全角冒号无此问题，加引号也无妨
+  ja: '画像認識ツールキット：OCR、座標特定、ピクセル比較。'      # 日文全角冒号同理 / 全角コロンなら問題なし
 ```
 
 ```yaml

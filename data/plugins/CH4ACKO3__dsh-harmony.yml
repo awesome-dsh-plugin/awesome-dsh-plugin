@@ -4,3 +4,4 @@ category: dev
 description:
   en: Modifies DSH plugin code at runtime, with ordered patches, inspection, and hot reload.
   zh: 在运行时修改 DSH 插件代码，并提供 Patch 排序、检查和热重载。
+  ja: DSH のプラグインコードを実行時に書き換えます。順序付きパッチ、確認、ホットリロードに対応。

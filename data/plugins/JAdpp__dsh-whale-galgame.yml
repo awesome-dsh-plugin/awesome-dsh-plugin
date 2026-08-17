@@ -4,3 +4,4 @@ category: fun
 description:
   en: Multi-character Galgame conversation view with separate character and reply-model selection, per-character affection, memory, dialogue history, and CG galleries, plus responses informed by task events across Harness sessions.
   zh: 多角色 Galgame 对话界面：角色与回复模型可独立切换，分角色保存好感度、记忆、对话历史与 CG 图鉴，并根据 Harness 跨会话任务事件做出角色回应。
+  ja: 複数キャラクターのギャルゲー風会話ビュー。キャラクターと返答モデルを個別に選べ、キャラクターごとの好感度、記憶、会話履歴、CG ギャラリーを備えます。Harness の各セッションのタスクイベントを踏まえた応答も行います。

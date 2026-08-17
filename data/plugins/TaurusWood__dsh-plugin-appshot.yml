@@ -3,4 +3,5 @@ name: TaurusWood/dsh-plugin-appshot
 category: vision
 description:
   zh: DSH 版 Codex Appshots：全局快捷键精准捕获当前工作窗口，零摩擦挂载至 Composer 作为上下文向 Agent 提问。
+  ja: DSH 版の Codex Appshots。グローバルショートカットで最前面のウィンドウを取り込み、そのままコンポーザーに載せてエージェントに質問できます。
   en: 'Codex Appshots for DSH: capture the frontmost active window via global shortcut and seamlessly mount it into the composer for agent queries.'

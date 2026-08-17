@@ -4,3 +4,4 @@ category: skill
 description:
   en: 'Hook DeepSeek Harness into a Hermes pipeline: dispatch-spec template, model-tier routing, orchestrator-run quality gates, git single-writer rule, as a SKILL.md pack (bundle installable).'
   zh: 把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。
+  ja: DeepSeek Harness を Hermes のパイプラインに組み込みます。dispatch-spec テンプレート、モデル階層のルーティング、オーケストレーターによる品質ゲート、git の単一ライター原則を SKILL.md パックとして提供します（バンドルとしてインストール可能）。

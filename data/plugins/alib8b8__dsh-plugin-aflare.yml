@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Workflow tools for the local aflare binary: generate, validate and run local-first deterministic YAML workflow DAGs (WAL crash recovery, Saga compensation) through the local aflare binary, with 300+ templates built in.'
   zh: aflare 工作流工具：通过本地 aflare 二进制生成、校验并执行本地优先的确定性 YAML 工作流 DAG（WAL 崩溃恢复、Saga 补偿），内置 300+ 模板。
+  ja: ローカルの aflare バイナリ向けのワークフローツール。ローカル優先で決定論的な YAML のワークフロー DAG（WAL によるクラッシュ復旧、Saga による補償）を、aflare バイナリを通じて生成・検証・実行します。300 以上のテンプレートを同梱。

@@ -4,3 +4,4 @@ category: session
 description:
   en: Select part of a conversation and ask about it in a right-side side chat; bring AI replies back to the main chat directly or as a summary.
   zh: 选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。
+  ja: 会話の一部を選んで、右側のサイドチャットで質問できます。AI の返信はそのままか要約としてメインのチャットに戻せます。

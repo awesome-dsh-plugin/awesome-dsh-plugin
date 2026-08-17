@@ -4,3 +4,4 @@ category: ui
 description:
   en: Collapses consecutive tool-use and thinking steps between messages into a single bracketed, expandable item.
   zh: 把消息之间连续的工具调用与思考步骤折叠成单个可展开的括号条目。
+  ja: メッセージ間で連続するツール使用と思考のステップを、括弧でまとめた展開可能な 1 項目に折りたたみます。

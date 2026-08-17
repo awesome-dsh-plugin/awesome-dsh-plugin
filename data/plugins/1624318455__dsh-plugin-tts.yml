@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Reads assistant replies aloud via free Edge TTS or your own RVC voice models: read-aloud buttons + auto-read, adaptive chunked progressive playback (gapless long reads), one-click voice-pack installs from a registry, and a portable RVC runtime.'
   zh: 用免费 Edge TTS 或你自己的 RVC 音色朗读 AI 回复：消息朗读与自动朗读、长文自适应分块渐进播放（无缝衔接）、音色包仓库一键安装、便携 RVC 运行时。
+  ja: 無料の Edge TTS または自前の RVC 音声モデルでアシスタントの返信を読み上げ。読み上げボタンと自動読み上げ、適応的なチャンク分割による逐次再生（長文でも途切れません）、レジストリからのワンクリック音声パック導入、ポータブルな RVC ランタイムを備えます。

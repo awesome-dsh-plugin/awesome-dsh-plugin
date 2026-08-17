@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Browser Web Speech API voice input: zero server, zero keys, zero model downloads (Edge=Azure, Chrome=Google speech).'
   zh: 浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。
+  ja: ブラウザの Web Speech API による音声入力。サーバーもキーもモデルのダウンロードも不要です（Edge は Azure、Chrome は Google の音声認識を利用）。

@@ -4,3 +4,4 @@ category: usage
 description:
   en: 'Floating API-balance badge for DeepSeek Harness: live balance for DeepSeek, Moonshot, OpenAI and custom endpoints; draggable, resizable, frosted-glass look, with text color adapting to the content beneath.'
   zh: DeepSeek Harness 悬浮 API 余额徽章：实时显示 DeepSeek / Moonshot / OpenAI / 自定义接口余额；可拖动缩放、亚克力质感、文字颜色随下方内容明暗自适应。
+  ja: DeepSeek Harness 向けのフローティング API 残高バッジ。DeepSeek、Moonshot、OpenAI とカスタムエンドポイントの残高をリアルタイム表示します。ドラッグとリサイズが可能で、すりガラス調の見た目、下地に応じて文字色が変わります。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Session execution analytics: steps, tool calls, failures, repeated actions, token usage and verification signals, rendered as text/Markdown/JSON reports.'
   zh: 会话执行分析：步骤、工具调用、失败、重复动作、token 用量与验证信号，输出 text/Markdown/JSON 报告。
+  ja: セッション実行の分析。ステップ数、ツール呼び出し、失敗、繰り返された操作、トークン使用量、検証シグナルを、テキスト/Markdown/JSON のレポートとして出力します。

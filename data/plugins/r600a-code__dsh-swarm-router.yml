@@ -4,3 +4,4 @@ category: model
 description:
   en: Sub-agent matrix swarm that routes heterogeneous tasks to the most suitable model from an OpenRouter-like gateway plus cfgpu.com/llm/square, dispatches each via in-process subagents or direct LLM calls, and tracks per-model token consumption with a feedback-driven ranking.
   zh: 子智能体矩阵蜂群：把异质任务路由到最合适的模型（OpenRouter 类网关 + cfgpu.com/llm/square），通过进程内子智能体或直接 LLM 调用下放，并按模型统计 token 消耗、用真实反馈驱动排名。
+  ja: サブエージェントの行列型スウォーム。OpenRouter 系のゲートウェイと cfgpu.com/llm/square から、多様なタスクに最も適したモデルへ振り分け、プロセス内サブエージェントまたは直接の LLM 呼び出しで実行し、モデル別のトークン消費をフィードバックに基づくランキングとともに追跡します。

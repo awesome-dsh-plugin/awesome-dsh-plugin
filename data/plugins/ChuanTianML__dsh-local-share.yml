@@ -4,3 +4,4 @@ category: session
 description:
   en: Export complete Web Sessions to local Markdown or self-contained HTML, with stable rendered previews, default redaction, and opt-in bounded tool-call details.
   zh: 把完整 Web Session 导出为本地 Markdown 或自包含 HTML，提供稳定的 Markdown 渲染预览、默认脱敏和可选的有界工具调用详情。
+  ja: Web のセッション全体をローカルの Markdown か単体で完結する HTML に書き出します。表示崩れのないプレビュー、既定での秘匿情報の伏せ字化、任意で有効にできる範囲限定のツール呼び出し詳細に対応。

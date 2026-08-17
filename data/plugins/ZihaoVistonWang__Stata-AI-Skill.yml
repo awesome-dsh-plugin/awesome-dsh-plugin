@@ -4,3 +4,4 @@ category: skill
 description:
   en: 'Run Stata through DeepSeek Harness: the native Stata AI Skill service auto-starts with DSH (macOS/Windows binaries bundled), so you can run regressions, do-files and econometrics workflows with no manual setup.'
   zh: 在 DeepSeek Harness 中运行 Stata：Stata AI Skill 原生服务随 DSH 自动启动（内置 macOS/Windows 多平台二进制），无需手动配置即可跑回归、do 文件与计量工作流。
+  ja: DeepSeek Harness から Stata を動かします。ネイティブの Stata AI Skill サービスが DSH と一緒に自動起動するので（macOS/Windows のバイナリを同梱）、回帰分析、do ファイル、計量経済のワークフローを手作業の設定なしで実行できます。

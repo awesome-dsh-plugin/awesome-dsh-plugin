@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Fail-closed Feishu (Lark) channel bridge: chat with a bot, get dsh agent turns back. Official-Python-SDK-only integration (exact-pinned); deny-by-default allowlist, webhook signature/timestamp/replay verification, per-chat sticky sessions; bilingual docs.'
   zh: Fail-closed 的飞书（Lark）channel 桥：和机器人聊天即驱动 dsh agent turn。仅经官方 Python SDK 集成（精确锁版）；白名单默认全拒、webhook 验签/时间窗/防重放、按 chat 粘性会话；中英双语文档。
+  ja: フェイルクローズ設計の飛書（Lark）チャネルブリッジ。bot とチャットすると dsh のエージェントのターンが返ってきます。公式 Python SDK のみを使う統合（バージョン固定）で、既定拒否の許可リスト、webhook の署名・タイムスタンプ・リプレイ検証、チャットごとの固定セッションを備え、ドキュメントは二言語です。

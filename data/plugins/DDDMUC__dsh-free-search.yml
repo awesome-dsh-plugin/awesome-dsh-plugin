@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Free, keyless web search for DSH: 7 engines (DuckDuckGo/Bing/SearXNG free + Exa/Perplexity/DeepSeek paid), auto-failover, settings-page UI with API key inputs and official links, web_fetch, and an engine test tool.'
   zh: DSH 免费搜索插件：7 个引擎（DuckDuckGo/Bing/SearXNG 免费 + Exa/Perplexity/DeepSeek 付费）、自动回退、设置页 UI（API key 输入 + 官网链接）、web_fetch、引擎测试工具。
+  ja: DSH 向けの無料・キー不要な Web 検索。7 つのエンジン（無料の DuckDuckGo/Bing/SearXNG と有料の Exa/Perplexity/DeepSeek）を自動フェイルオーバーで使い分け、API キー入力欄と公式リンクを備えた設定ページ、web_fetch、エンジンのテストツールを提供します。

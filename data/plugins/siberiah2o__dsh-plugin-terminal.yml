@@ -4,3 +4,4 @@ category: ui
 description:
   en: Bottom multi-tab terminal panel (node-pty + xterm.js) pinned to the viewport bottom, always below the input box.
   zh: 底部多标签终端面板（node-pty + xterm.js）：贴底全宽，输入框始终在终端上方。
+  ja: 画面下部に固定される複数タブのターミナルパネル（node-pty ＋ xterm.js）。常に入力欄の下に配置されます。

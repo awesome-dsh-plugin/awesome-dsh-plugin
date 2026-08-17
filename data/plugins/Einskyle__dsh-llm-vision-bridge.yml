@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Native LLM-provider vision bridge: images pasted in the chat are described by a vision model (Qwen3-VL via pi-ai/llama.cpp) and the text description is fed to text-only DeepSeek for the reply — image admission, routing and compaction all run through harness-native mechanisms, with an LRU description cache and 503 retry.'
   zh: DeepSeek 视觉桥接：注册原生 LLM provider，聊天内粘贴的图片自动由视觉模型（pi-ai/llama.cpp 上的 Qwen3-VL）转成文字描述后交给纯文本 DeepSeek 作答——图片准入、路由与会话压缩全部走 harness 原生机制，带 LRU 描述缓存与 503 重试。
+  ja: LLM プロバイダーのネイティブな視覚ブリッジ。チャットに貼った画像を視覚モデル（pi-ai/llama.cpp 経由の Qwen3-VL）が説明し、そのテキストをテキスト専用の DeepSeek に渡して返答させます。画像の受け入れ、振り分け、コンパクションはすべて harness ネイティブの仕組みで動き、説明の LRU キャッシュと 503 時の再試行を備えます。

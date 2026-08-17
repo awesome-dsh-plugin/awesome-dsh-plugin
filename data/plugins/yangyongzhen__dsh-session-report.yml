@@ -4,3 +4,4 @@ category: usage
 description:
   en: 'Per-session cost & usage report cards: tokens, cache hits, duration.'
   zh: 会话成本与耗时报表：tokens / 缓存命中 / 耗时。
+  ja: セッションごとのコストと使用状況のレポートカード。トークン、キャッシュヒット、所要時間を表示します。

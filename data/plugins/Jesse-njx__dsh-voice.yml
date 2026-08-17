@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Voice notes in, spoken answers out: dictate audio that becomes user messages (transcribe), have the agent read replies aloud (speak), local-first under ~/.dsh/voice.'
   zh: 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
+  ja: 音声メモを入力に、返答を音声で出力。録音した音声をユーザーメッセージに変換し（transcribe）、エージェントの返信を読み上げます（speak）。~/.dsh/voice 配下でローカル優先に動作します。

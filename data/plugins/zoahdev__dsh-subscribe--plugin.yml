@@ -4,3 +4,4 @@ category: market
 description:
   en: 'Steam-style plugin storefront: a plugin registry browsable inside DSH with one-click install, uninstall and update, plus a zero-dependency CLI and agent-callable market tools.'
   zh: Steam 风格的插件商店：在 DSH 里浏览插件注册表，一键安装、卸载与更新，另有零依赖 CLI 与可供 agent 调用的市场工具。
+  ja: Steam 風のプラグインストアフロント。DSH の中で閲覧できるプラグインレジストリから、ワンクリックでインストール・アンインストール・更新ができ、依存関係ゼロの CLI とエージェントから呼べるマーケットツールも備えます。

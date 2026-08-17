@@ -4,3 +4,4 @@ category: tools
 description:
   en: Android GUI Agent with ADB screenshots, compact UI hierarchy grounding, verified iterative actions, approvals, and a Mobile Web view.
   zh: Android GUI Agent：ADB 截图、压缩 UI hierarchy 定位、逐步动作验证、审批和 Mobile Web 视图。
+  ja: Android の GUI エージェント。ADB のスクリーンショット、簡潔な UI 階層による位置特定、検証を挟む反復的な操作、承認、モバイル Web ビューを備えます。

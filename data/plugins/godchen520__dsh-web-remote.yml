@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Access DSH from your phone or anywhere: Cloudflare Quick Tunnel public link + LAN HTTP/HTTPS direct access (auto self-signed cert), token auth, gzip compression, floating phone-icon panel with QR codes, and a NapCat QQ bot channel to fetch the link.'
   zh: 手机/外网远程访问 DSH：Cloudflare Quick Tunnel 公网链接 + 局域网 HTTP/HTTPS 直连（自动生成自签名证书）、token 鉴权、gzip 压缩、常驻手机图标面板（一键复制/二维码），并内置 NapCat QQ 机器人取链接通道。
+  ja: スマホなどどこからでも DSH にアクセス。Cloudflare Quick Tunnel の公開リンクと LAN の HTTP/HTTPS 直接アクセス（自己署名証明書を自動生成）、トークン認証、gzip 圧縮、QR コード付きのフローティングなスマホアイコンのパネル、リンクを取得できる NapCat の QQ bot チャネルを備えます。

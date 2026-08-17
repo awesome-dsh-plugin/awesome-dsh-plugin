@@ -4,3 +4,4 @@ category: dev
 description:
   en: Adds dangerous-operation policy checks, output redaction, and a security-review workflow.
   zh: 增加危险操作策略检查、输出脱敏和安全审查工作流。
+  ja: 危険な操作のポリシーチェック、出力の伏せ字化、セキュリティレビューのワークフローを追加します。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'HeartFlow (心虫) AGI layer-1 discriminator gate as a DSH plugin: 47-dimension rule-based text checking (heartflow_check tool) plus automatic output supervision at tools/post-execute, fail-closed when engine missing.'
   zh: 心虫（AGI 第1层辨别门禁）作为 DSH 插件：47 维纯规则文本判别（heartflow_check 工具）+ 工具调用后自动输出监督（fail-closed，引擎缺失时拒绝放行）。
+  ja: HeartFlow（心虫）の AGI レイヤー 1 判別ゲートを DSH プラグインにしたもの。47 次元のルールベースのテキスト検査（heartflow_check ツール）と、tools/post-execute での出力の自動監督を行い、エンジンがない場合はフェイルクローズします。

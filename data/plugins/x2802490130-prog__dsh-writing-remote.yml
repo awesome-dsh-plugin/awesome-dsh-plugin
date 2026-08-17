@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Host-side Typert remote for dsh-tool-writing: serves project volumes, chapter status, corpus library, full-text search, evolution entries, and thread-graph data to the client writing panel.'
   zh: 写文引擎的 host 侧数据通道：把项目分卷、章节状态、书库、全文检索、演化条目与线索图谱以 Typert remote 暴露给客户端写作面板。
+  ja: dsh-tool-writing 向けのホスト側 Typert リモート。プロジェクトの巻、章の状態、資料ライブラリ、全文検索、推敲の記録、筋書きグラフのデータを、クライアントの執筆パネルに提供します。

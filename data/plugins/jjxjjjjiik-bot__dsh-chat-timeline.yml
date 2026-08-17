@@ -4,3 +4,4 @@ category: ui
 description:
   en: '1:1 port of DeepSeek''s official web right-side chat navigation rail (ScrollNav): hover-expandable rail, reading-position highlight, click-to-jump.'
   zh: 1:1 复刻 DeepSeek 官网右侧对话导航栏（ScrollNav）：悬停展开面板、阅读位置高亮、点击跳转。
+  ja: DeepSeek 公式 Web の右側チャットナビゲーションレール（ScrollNav）の 1:1 移植。ホバーで広がるレール、読んでいる位置のハイライト、クリックでのジャンプに対応します。

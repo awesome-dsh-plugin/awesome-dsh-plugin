@@ -4,3 +4,4 @@ category: tools
 description:
   en: US stock quotes, price history, financial statements, analyst consensus and news via yahoo-finance2.
   zh: 美股行情、历史 K 线、财务报表、分析师共识与新闻，数据来自 yahoo-finance2。
+  ja: yahoo-finance2 を使った米国株の気配値、株価履歴、財務諸表、アナリスト予想、ニュースの取得。

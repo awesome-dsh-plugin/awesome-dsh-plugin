@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Remote phone access to the DSH Web UI: scan a QR code for LAN or public (cloudflared tunnel) access with real-time sync, a mobile-adaptive layout, and a settings tab.'
   zh: 手机远程访问 DSH Web 界面：扫码即用局域网或公网（cloudflared 隧道）访问，实时同屏、移动端适配布局，带设置页管理。
+  ja: スマホから DSH Web UI へリモートアクセス。QR コードを読み取って LAN か公開（cloudflared トンネル）でつなぎ、リアルタイム同期、モバイル対応レイアウト、設定タブを利用できます。

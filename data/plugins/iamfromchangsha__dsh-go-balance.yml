@@ -4,3 +4,4 @@ category: usage
 description:
   en: 'OpenCode Go balance pill at the right end of the composer tool row: rolling/weekly/monthly quota remaining straight from the Zen usage endpoint, with hover detail and warn/danger coloring.'
   zh: 输入框工具行右侧的 OpenCode Go 余额胶囊：滚动/每周/每月配额剩余百分比（数据直接来自 Zen 用量接口），悬停查看明细，低余额自动变黄/变红。
+  ja: コンポーザーのツール行の右端に置く OpenCode Go の残量ピル。Zen の使用量エンドポイントからローリング/週次/月次のクォータ残量を直接取得し、ホバーでの詳細と警告/危険の色分けを表示します。

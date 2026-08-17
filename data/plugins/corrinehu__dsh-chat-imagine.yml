@@ -3,4 +3,5 @@ name: corrinehu/dsh-chat-imagine
 category: vision
 description:
   zh: 在 DSH 聊天窗口自动调用生图工具（API 渠道，或本机 CLI：已支持 mmx / codex / agy）并展示图片。
+  ja: API チャネルまたはローカルの CLI（mmx / codex / agy に対応）を使って、DSH のチャット内に画像を自動生成して表示します。
   en: Automatically generates and displays images in the DSH chat via API channels or local CLIs (supports mmx / codex / agy).

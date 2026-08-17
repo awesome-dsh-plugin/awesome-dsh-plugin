@@ -4,3 +4,4 @@ category: tools
 description:
   en: Route eligible shell commands through rtk to compress tool output and save tokens.
   zh: 将符合条件的 shell 命令路由给 rtk，压缩工具输出并节省 token。
+  ja: 対象となるシェルコマンドを rtk 経由で実行し、ツール出力を圧縮してトークンを節約します。

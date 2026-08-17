@@ -1,0 +1,1265 @@
+# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg) ![プラグイン数](https://img.shields.io/endpoint?url=https%3A%2F%2Fawesome-dsh-plugin.com%2Fcount.json&label=%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E6%95%B0)
+
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com/ja/)
+
+[English](README.md) | [中文](README.zh.md) | 日本語
+
+> [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）向けプラグインの厳選リスト。
+
+DeepSeek Harness は DeepSeek がオープンソースで公開している agent harness です。そのまま動くコーディングエージェント（Web と headless の 2 形態）であると同時に、「すべてがプラグイン」というフレームワークでもあります——モデル、ツール、サンドボックス、セッションストレージ、UI、さらにはエージェントループ自体までがプラグインです。プラグインは公式のコーディングエージェントを拡張することも、その中核部品を差し替えることも、まったく別のものを組み上げることもできます。
+
+このリストは `dsh plugin add` でインストールできるコミュニティプラグイン（いずれも `dsh.bundle` manifest を宣言しています）を集めたものです。[PR 歓迎](#貢献)。
+
+> 🛒 **おすすめ: [dsh-market](https://github.com/dsh-market/dsh-market#readme)**（任意）——DeepSeek Harness の中で動くプラグインマーケットで、このリストのプラグインがすべて入っています。シンプルで分かりやすい UI から、プラグインのインストールとアップグレード、テーマの切り替えがワンクリックで行えます:
+
+```sh
+dsh plugin --profile web add dshmarket
+```
+
+<a href="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-en.png"><img src="https://raw.githubusercontent.com/dsh-market/dsh-market/main/assets/demo-en.png" width="320" alt="DeepSeek Harness の設定画面内にある dsh-market のプラグインブラウザ: 検索できるプラグインカード、ワンクリックインストール、カテゴリ絞り込み、テーマタブ"></a>
+
+<sub><i>設定画面の中のプラグインマーケット——クリックで拡大。</i></sub>
+
+> 💡 対話でのほうが好みですか？ [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) を入れれば、欲しいプラグインをエージェントが探してくれます（`dsh plugin --profile web add dsh-find-plugin`）。
+
+> [!WARNING]
+> プラグインをインストールすることは、あなた自身と同じ権限で第三者のコードをマシン上で実行することを意味します——ファイルを読み、認証情報を使い、ネットワークにも到達できます。ツール承認はプラグインのコードをサンドボックス化しません。このリストに載っていることはセキュリティ監査を通ったことを意味しません。インストール前にソースを確認し、よく知らないプラグインは鍵や重要なデータを置いていない環境で試してください。完全な免責事項はページ下部にあります。
+
+## 目次
+
+<!-- BEGIN TOC -->
+- [プラグイン](#プラグイン)
+  - [🎨 UI 拡張](#-ui-拡張)
+  - [💰 使用量と課金](#-使用量と課金)
+  - [🎭 テーマと外観](#-テーマと外観)
+  - [🔌 モデルとプロバイダー](#-モデルとプロバイダー)
+  - [💬 セッションとメッセージ](#-セッションとメッセージ)
+  - [🧠 メモリ](#-メモリ)
+  - [🛠️ ツールと機能](#-ツールと機能)
+  - [🖼️ ビジョンとマルチモーダル](#-ビジョンとマルチモーダル)
+  - [🧩 スキル](#-スキル)
+  - [🔁 ワークフローと自動化](#-ワークフローと自動化)
+  - [🔔 通知と連携](#-通知と連携)
+  - [🧑‍💻 開発とランタイム](#-開発とランタイム)
+  - [🛒 プラグインマーケットと管理](#-プラグインマーケットと管理)
+  - [🎮 お楽しみ](#-お楽しみ)
+- [バッジ](#バッジ)
+- [免責事項](#免責事項)
+<!-- END TOC -->
+
+## プラグイン
+
+<!-- BEGIN PLUGINS -->
+### 🎨 UI 拡張
+
+- [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — ターン状態の「Deep diving...」ラベルを、タイプライター効果とグラデーション付きのミーム風テキストに差し替えて順番に切り替えます。
+- [0xsline/dsh-spotlight](https://github.com/0xsline/dsh-spotlight) — DSH Web UI 向けの、キーボード操作を軸にしたコマンドパレット。
+- [1123762794/dsh-web-restart](https://github.com/1123762794/dsh-web-restart) — DSH Web UI をワンクリックで再起動。サイドバー下部のボタンから dsh web プロセスを再起動し、その再起動をまたいで有効なままになります。
+- [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) — Web UI のコンポーザー開閉トグル。ツール行の ⬆/⬇ ボタンで入力欄を高さ 70vh の執筆ビューに広げ、長い下書きを書けます。
+- [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) — 無料の Edge TTS または自前の RVC 音声モデルでアシスタントの返信を読み上げ。読み上げボタンと自動読み上げ、適応的なチャンク分割による逐次再生（長文でも途切れません）、レジストリからのワンクリック音声パック導入、ポータブルな RVC ランタイムを備えます。
+- [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) — DSH の中で open-mcp-apps を動かします。MCP アプリごとに専用のサイドバーコンテナ（独立したワークスペース、セッション、App モード）、アプリ下部のエージェント状態バー、通常チャット内でのインライン描画を提供します。
+- [a1073097082/dsh-model-search](https://github.com/a1073097082/dsh-model-search) — モデルセレクターに、プロバイダー・モデル名・モデル ID での検索絞り込みを追加します。スペースはワイルドカードとして働きます。
+- [a179-sanae/dsh-auto-collapse](https://github.com/a179-sanae/dsh-auto-collapse) — Codex 風のワークフローの自動折りたたみ。終わったターンは「processed in X 秒」の 1 行にたたまれ、最終的な回答だけが残ります。ツール呼び出しと思考ブロックはストリーミングに追従する要約チップにまとまり、階層ごとに展開でき、アンインストールで完全に元へ戻せます。
+- [a735624258/dsh-skill-picker](https://github.com/a735624258/dsh-skill-picker) — WorkBuddy 風のスキルピッカー。コンポーザー横のボタンからインストール済みスキルを検索でき、選ぶと公式の /skill-name の書式が挿入されるので、メッセージと一緒にスキルが読み込まれます。
+- [a903067276-rgb/dsh-file-mentions](https://github.com/a903067276-rgb/dsh-file-mentions) — DSH の返信内のファイルパスをクリックできるようにします。Codex 風のその場で開く操作、ファイルマネージャーでの表示、ターン末尾での言及ファイルのチップ一覧を提供します。
+- [a903067276-rgb/dsh-file-upload](https://github.com/a903067276-rgb/dsh-file-upload) — アップロードボタンとドラッグ＆ドロップで、ファイルをローカルパスとして会話に取り込みます。プロジェクトの uploads/ に保存し、パスを入力欄に挿入するので、どの視覚ツールとも組み合わせられます。
+- [a903067276-rgb/dsh-hud](https://github.com/a903067276-rgb/dsh-hud) — HUD ステータスパネル。Git の状態、MCP サーバー、スキル、モデルとトークン使用量をフローティングのサイドパネルに表示します。
+- [a903067276-rgb/dsh-plan-switch](https://github.com/a903067276-rgb/dsh-plan-switch) — DSH web の入力バーからプランモードをワンクリックで開始/終了できます。/plan の手早いショートカットです。
+- [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) — Web UI の LAN／リモートアクセス対応。平文 HTTP のオリジンで crypto.randomUUID の polyfill を注入し、LAN や Tailscale の IP 直リンクでもフロントエンドが動くようにします。
+- [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) — 狭い画面での Web UI のモバイルレイアウト修正。設定パネルの全画面化、プラグインナビの 1 行化、サイドバーの全画面化、ポップアップの中央寄せ、セッションログボタンのアイコンのみ表示を行います。
+- [AikenFra/dsh-alive](https://github.com/AikenFra/dsh-alive) — DeepSeek Harness web UI 向けの、トークンを消費しないオンライン状態インジケーター。会話ヘッダーに常時オンライン/オフラインのドットを表示し、LLM を呼ばずに 15 秒ごとに自動更新します。
+- [AKIRACOD/dsh-drag-and-drop](https://github.com/AKIRACOD/dsh-drag-and-drop) — ファイルドラッグ機能のフォーク。ドキュメントをコンポーザー上部に削除可能なチップとしてドロップし、入力なしで送信できます。
+- [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) — サイドバー下部にアーカイブ済み会話の一覧を追加。製品側があえて非表示にして再開できなくしているセッションについて、直近メッセージの読み取り専用プレビューを提供します。
+- [AKS1st/dsh-mermaid](https://github.com/AKS1st/dsh-mermaid) — DSH Web のチャットメッセージ内の Mermaid コードフェンスを、遅延読み込みの SVG 図として描画します。厳格なサニタイズとライト/ダークテーマ追従付き。
+- [AKS1st/dsh-sysmon](https://github.com/AKS1st/dsh-sysmon) — システム状態のフローティングウィジェット。DSH Web UI の右下に CPU/メモリ/ディスクの使用率をリアルタイム表示し、しきい値を超えると色で警告します。
+- [alingalingling/ui-status-label](https://github.com/alingalingling/ui-status-label) — 「deep diving」という思考中のステータス表示を好きな文言に変更できます。
+- [asukasec/dsh-message-preview](https://github.com/asukasec/dsh-message-preview) — 右端に置くユーザーメッセージのナビゲーター。使える高さに合わせて配置が変わるブロックレイアウトに、ホバープレビュー、キーボード操作、クリックでのジャンプを備えます。
+- [ayahunter/dsh-trail](https://github.com/ayahunter/dsh-trail) — Web GUI の軌跡タブを、初めての人にも分かりやすいラウンドごとの物語形式に置き換えます。平易な言葉のツールラベル、カテゴリの絞り込み、あいまい検索つき。
+- [baconbao/dsh-mermaid-image-preview](https://github.com/baconbao/dsh-mermaid-image-preview) — チャットメッセージに Mermaid のコードフェンスが含まれるとき、DSH Web 内でローカル描画して画像としてプレビューします。外部の描画サーバーとの連携もできます。
+- [badai147/dsh-global-rules](https://github.com/badai147/dsh-global-rules) — グローバルな ~/.dsh/AGENTS.md のルールを Web の設定パネルから編集でき、保存すると即座に反映されます。
+- [baisama-cloud/dsh-custom-brand](https://github.com/baisama-cloud/dsh-custom-brand) — Web UI のブランド部分をカスタマイズ。クジラのロゴと DeepSeek のワードマークをローカル画像に差し替え、HARNESS バッジの文字も編集できます（ダブルクリックで変更、右クリックでリセット）。
+- [Bernardxu123/dsh-mobile-gate](https://github.com/Bernardxu123/dsh-mobile-gate) — LAN のモバイル用ゲートウェイ。子プロセスとして隔離したリバースプロキシに、初回アクセス時の承認、端末ごとのトークン紐付け、レート制限、モバイル用レイアウトの注入（コンパクトなコンポーザーピル、randomUUID の polyfill）を備えます。
+- [bill9109/dsh-101](https://github.com/bill9109/dsh-101) — DSH のドキュメント閲覧モード。
+- [bill9109/dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) — クロスプラットフォームのファイルドラッグ＆ドロップ。ファイルはコピーせず、生のパスを挿入します。
+- [Blank-not-black/dsh-Remote](https://github.com/Blank-not-black/dsh-Remote) — モバイル遠隔操作スイート。ネイティブなサイドバー項目と管理ドロワーを持つバンドルプラグイン、LAN/Tailscale 上で自己修復する bearer トークンゲートウェイ、Android アプリ（セッション/承認/質問/ゴール）、/fs/* によるファイル転送（Range 再開、2GB アップロード）、レイテンシに応じた複数サーバーの自動切り替え、オフラインのチャットキャッシュを備えます。
+- [causebefore/dsh-pomodoro](https://github.com/causebefore/dsh-pomodoro) — DSH Web 向けのポモドーロタイマー。作業と休憩のサイクルを設定でき、ドラッグできるミニパネル、アプリ内・音・ブラウザの通知に対応します。
+- [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) — Claude Code 風の全画面ターミナル UI。ドット絵のクジラのヘッダー、リアルタイムのステータス行、思考のストリーミング展開を備えます。
+- [ccq1/dsh-side-panel](https://github.com/ccq1/dsh-side-panel) — ファイルブラウザー、ターミナル、Git レビューを備えたサイドパネル。ファイルをすばやくプレビューできます。
+- [Ceelog/dsh-plugins#dsh-plugin-setting-mcp](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-setting-mcp) — MCP サーバーを Web の設定パネルから管理。閲覧、追加、編集、削除、有効化/無効化ができ、保存時にホットリロードされます。
+- [ChuanTianML/dsh-chat-tidy](https://github.com/ChuanTianML/dsh-chat-tidy) — DSH の会話画面を Codex の実測値に合わせて組み直すスタイルシート 1 枚。本文 14/22 px、見出しの階層を引き締め、リストとブロックのリズム、引用のバー、テーブルのセルを整えます。設定項目はなく、README にビフォーアフターの画像があります。
+- [ChuanTianML/prompt-for-me](https://github.com/ChuanTianML/prompt-for-me) — DSH のコンポーザーに、文脈を踏まえた次のメッセージの候補を表示します。Trigger を繰り返すと候補が切り替わり、送信前に必ずユーザーが確認します。
+- [cindyguyuehu123/dsh-mobile](https://github.com/cindyguyuehu123/dsh-mobile) — iPhone/iPad から DSH を使えるようにします。明示的に有効化する LAN のリバースプロキシ（ループバックの信頼境界を通す Host/Origin の書き換え、WebSocket のアップグレードにも対応）、iOS の PWA 化（ホーム画面アイコン、standalone の meta、viewport-fit）、タッチ/モバイル向け CSS（セーフエリア、キーボード表示時の持ち上げ、コンポーザー行の調整）を備えます。
+- [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) — DeepSeek Harness 向けのセッション変更レビュー。セッションごとに write/edit のツール呼び出しを追跡し、色を変更できる行単位の差分を表示します。セッションの分離、サブエージェント分の集約、SSE によるリアルタイム更新に対応。
+- [DamonKoy/dsh-plugin-toggle](https://github.com/DamonKoy/dsh-plugin-toggle) — 設定 → プラグインのスイッチボード。読み込まれたプラグインのカードにパッケージの説明と実行フェーズを表示し、あいまい検索と開始/停止のトグルを提供します。設定ファイルは書き換えません。
+- [DamonKoy/dsh-web-ui#dsh-aionui-panel](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-aionui-panel) — dsh web GUI 向けの右パネル基盤。AionUi の Explorer ＋ Preview をピクセル単位で忠実に再現します（ファイルツリー、差分表示、プレビュー）。
+- [DamonKoy/dsh-web-ui#dsh-git-graph](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-git-graph) — dsh web GUI の会話ヘッダーに Git ブランチセレクターと Git グラフを追加します。
+- [DamonKoy/dsh-web-ui#dsh-liangshen](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-liangshen) — dsh web GUI 向けの LiangShen（梁神）エージェントプリセット。基準を固定した 2 段階構成のプリセットです。
+- [DamonKoy/dsh-web-ui#dsh-live-stats](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-live-stats) — dsh web GUI にトークン推定値と生成スループットをリアルタイム表示します。
+- [DamonKoy/dsh-web-ui#dsh-pet](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-pet) — dsh web GUI 向けのマルチペットコンパニオン。レジストリで管理されるフローティングペットが、モデルの動きに反応します。
+- [DamonKoy/dsh-web-ui#dsh-remote-web-ui](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) — dsh web GUI のモバイル遠隔操作。QR コードを読み取ってワンタイムのペアリングトークンで接続します。
+- [DamonKoy/dsh-web-ui#dsh-task-board](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-task-board) — dsh web GUI 向けのタスクボード。サイドバー項目と、ローカルに保存される複数カラムのカンバンビューを追加します。
+- [DamonKoy/dsh-web-ui#dsh-web-ui-all](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-all) — DSH Web UI ファミリーのまとめ役。機能プラグイン一式（task-board、git-graph、pet、remote-web-ui、live-stats、web-ui-settings）をワンクリックで導入します。
+- [DamonKoy/dsh-web-ui#dsh-web-ui-settings](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-settings) — dsh の設定ページに Web UI プラグインのグループカードを追加。dsh-web-ui ファミリーの有効/無効スイッチと設定をまとめます。
+- [dannyvan/dsh-file-drop](https://github.com/dannyvan/dsh-file-drop) — 画像以外のファイル（PDF/Word/Excel/ZIP/テキスト）を、ドラッグ＆ドロップかクリックでコンポーザーに添付します。デスクトップシェルでは Finder の実際のパスをすぐに解決し、それ以外ではワークスペースにアップロードしてパスを挿入します。
+- [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) — 現在の会話の作業ディレクトリを、ドラッグでき不透明度も変えられるパネルに表示します。
+- [Devin-AXIS/deepseek-design#deepseek-idesign](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-idesign) — ウェブサイト、アプリのプロトタイプ、ポスター、カード、レポート、雑誌を作れるビジュアルデザインスタジオ。テンプレート、要素の直接編集、選択範囲を踏まえた AI へのドラフト受け渡し、書き出しに対応します。
+- [dhb861832993-star/pbr-render](https://github.com/dhb861832993-star/pbr-render) — ゲームアート向けの PBR 3D モデルプレビュー。テクスチャ付きの GLB/GLTF、IBL の環境光、オービット操作、マテリアルのチャンネルインスペクター（baseColor/normal/roughness/metallic/AO/emissive/ワイヤーフレーム）に対応し、スカラーのチャンネルは PBR 仕様どおりグレースケールで表示します。pbr3d のコードフェンスと pbr_render ツールから利用できます。
+- [dingyi222666/dsh-focus-chat](https://github.com/dingyi222666/dsh-focus-chat) — 最終的な出力だけを表示する「フォーカスチャット」の最小ビュー。
+- [eric-song-dev/dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet) — 返信中に「Deep diving...」の行の下のドックを占領する ikun（バスケットボールのミーム）ペット。スプライトシートのペットが 0→100% の進捗バーを歩き、20% ごとにアニメーションと文言を変え、完了時にはシステムレベルで「你干嘛〜」の音声を再生します。
+- [Fayelin12/dsh-office](https://github.com/Fayelin12/dsh-office) — オフィス風のワークスペース＆セッションダッシュボード。6 カラムのドット絵パネルがワークスペース、セッション、トークン使用量、サブエージェントを可視化します。
+- [fengMax1997/dsh-line-select](https://github.com/fengMax1997/dsh-line-select) — 行範囲の選択。ワークスペースのファイルを閲覧し、行番号つきでコードをプレビューして、範囲を視覚的に選ぶと `@path:start-end` の参照がコンポーザーに書き込まれます。送信時、エージェントには選択した行がそのまま渡ります。
+- [FuzzySoul/dsh-chatvoice](https://github.com/FuzzySoul/dsh-chatvoice) — Web UI で完結する無料の音声ループ。ブラウザの SpeechRecognition による音声入力（途中経過も表示）と、アシスタントの返信の読み上げボタン・自動読み上げを、設定不要・API キー不要で提供します。
+- [garrisonz/dsh-sidebar-width](https://github.com/garrisonz/dsh-sidebar-width) — Web UI の左サイドバーの幅を調整。ドラッグ時の下限 264px を下げられるほか、上限と展開時の既定幅も設定でき、起動時に ui-layout バンドルへパッチを当てて適用します。
+- [genius-alray/dsh-mermaid-render](https://github.com/genius-alray/dsh-mermaid-render) — Web UI の会話向け Mermaid 図レンダラー。mermaid のコードブロックを対話式のカード（ズーム、幅に合わせる、全画面ビューア、プレビュー/コードの切り替え）として公式の UI 部品で描画し、描画に失敗したときは元のコードブロックとエラーバナーを表示します。
+- [genius-alray/dsh-model-picker](https://github.com/genius-alray/dsh-model-picker) — DSH Web UI 向けのダイアログ形式のモデルピッカー。あいまい検索、折りたためるプロバイダーのグループ、お気に入りとその絞り込み、思考レベルのドロップダウンを備え、公式の UI 部品と DSW トークンで組み込みのモデルセレクターを置き換えます。
+- [giiiiiithub/terminal](https://github.com/giiiiiithub/terminal) — DSH Web UI 向けの本物の PTY ターミナルパネル。ホスト側が node-pty でシェルを起動し（Windows では既定で cmd.exe）、ブラウザ側は xterm.js で描画します。複数タブのセッション、ドック/フローティングウィンドウ、クリップボード対応。
+- [GitHubJiKe/dsh-markdown-preview](https://github.com/GitHubJiKe/dsh-markdown-preview) — 生成されたファイルをチャット内でプレビュー。ファイルのチップをクリックすると、Markdown（サーバー側の markdown-it ＋ highlight.js）、画像、プレーンテキストをその場で描画します。システムのアプリで開く操作やフォルダー表示もワンクリックです。
+- [GLFzr/dsh-drop-file-to-path](https://github.com/GLFzr/dsh-drop-file-to-path) — Codex 風のドラッグ＆ドロップ。DSH web GUI に任意のファイルをドラッグすると ~/.dsh-dropbox に置かれ、そのパスが青いチップとしてコンポーザーに挿入されます。
+- [GooodWei/arcana](https://github.com/GooodWei/arcana) — DeepSeek Harness のスラッシュコマンドをすべて実行可能なボタンとして並べるフローティングのコマンドデッキ。使用頻度順に並びます。
+- [GooodWei/context-vista](https://github.com/GooodWei/context-vista) — DeepSeek Harness 向けの右側フローティングパネルと /context コマンド——コンテキストのトークン使用量、内訳、推定コストをドーナツチャートでリアルタイム表示します。
+- [guo-ziao/dsh-interrupt-button](https://github.com/guo-ziao/dsh-interrupt-button) — 送信ボックスの横に置く緑の中断ボタン。動作中のエージェントを静かに止め、そこまでの進捗を要約させて次の要望を尋ねます。中断時のプロンプトはカスタマイズできます。
+- [Han-1413141/dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure) — 展開済みのセクション（Think の行、ツールカード）をワンクリックですべて折りたたみます。件数を示すピルとカスタマイズ可能なホットキー付き。
+- [Han-1413141/dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) — あらゆるプラグイン UI の執事役。公式/プラグインのカテゴリ分け、ウィジェットごとの表示切り替え、ドラッグでの移動とリサイズ、重なりの回避、ワンクリックの自動整列に対応します。
+- [hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — DeepSeek Harness の会話で編集できる Excalidraw の図を扱えます。
+- [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI の全二重ボイスモード。コンポーザーのマイク（RMS による発話区間検出）がブラウザ内でローカル実行される whisper で音声を書き起こし、アシスタントの返信は文ごとに音声で返ってきます。話しかけると再生と実行中のターンが中断されます（本物の割り込み）。API キーは不要です。
+- [hellosz/dsh-pets](https://github.com/hellosz/dsh-pets) — Codex Pets 風のフローティングなドット絵ペット。Petdex 互換のペット 10 種を内蔵し、エージェントの状態を 9 通りに表現するエンジン（idle/running/waiting/review/failed に加え、クライアント側での手振り・ジャンプ・向き）、ドラッグできるオーバーレイ、ペットの選択と拡大率の設定、通知の吹き出し、エージェントがペットを通して話す `pet_say` ツールを備えます。
+- [HongMing-Huang/dsh-file-upload](https://github.com/HongMing-Huang/dsh-file-upload) — Claude 風のドラッグ＆ドロップ／クリップアイコンによるファイルアップロード。内容の判別、Microsoft MarkItDown による文書の Markdown 化（組み込みの JS フォールバックあり）、テキストのインライン展開、エージェント向けの read_document ツールを備えます。
+- [HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — 中断された DSH Web のリクエストを自動再開。ネットワーク障害、タイムアウト、ホストのクラッシュのあとに「继续」をキュー送信します。エラーの分類、適応的なバックオフ、続行文のテンプレート、ブラウザ通知に対応。
+- [huasheng33991/dsh-power-button](https://github.com/huasheng33991/dsh-power-button) — ウィンドウ右下に固定される起動/停止のワンクリックボタン。分離したヘルパーが起動時とまったく同じコマンドで DeepSeek Harness をその場で再起動します（ループバックの同一オリジンで保護）。停止のみの動作も選べます。
+- [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — DeepSeek Harness 向けのターミナル UI（TUI）。
+- [Isilsolme/dsh-splash-launcher](https://github.com/Isilsolme/dsh-splash-launcher) — Windows 向けのワンクリックランチャー。枠なし WPF の起動アニメーション（HARNESS の文字を一画ずつ描画）を出しながら裏で dsh web を起動し、準備ができたら GUI へフェードします。desktop_launch ツールも同梱。
+- [jiangnanquan/dsh-ux](https://github.com/jiangnanquan/dsh-ux) — DSH web UI 向けの Solarized ライトテーマ、コンパクトなレイアウト、思考とツールチェーンを折りたたむカプセル、残高・セッションコスト・使用状況のダッシュボード。
+- [Jiyr0119/dsh-workspace-explorer](https://github.com/Jiyr0119/dsh-workspace-explorer) — DSH web UI 向けのワークスペースファイルツリーパネル。クリックまたはドラッグで \[file: path\] の参照をコンポーザーに挿入でき、DSH ネイティブのデザイントークンで整えられています。
+- [jjxjjjjiik-bot/dsh-chat-timeline](https://github.com/jjxjjjjiik-bot/dsh-chat-timeline) — DeepSeek 公式 Web の右側チャットナビゲーションレール（ScrollNav）の 1:1 移植。ホバーで広がるレール、読んでいる位置のハイライト、クリックでのジャンプに対応します。
+- [johnnycls/dsh-no-setup-mode](https://github.com/johnnycls/dsh-no-setup-mode) — DSH web UI の「設定いらず」モード。高度な画面を隠し、最適な既定値（チャットモード、フルアクセス、アカウント残高）を自動適用し、ロールプレイのペルソナ（メイド/執事）にワンクリックで切り替えられます。
+- [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH web UI 向けのビジュアル MCP マネージャー。設定 → MCP から、MCP サーバーの確認、追加、削除、有効化/無効化と、接続状態のリアルタイム表示ができます。
+- [kelearns/dsh-navigation-bar](https://github.com/kelearns/dsh-navigation-bar) — Web UI 向けのピアノの鍵盤のような会話内ナビゲーション。ユーザーメッセージ 1 件につき 1 つの鍵盤を並べ、ホバー時のはしご表示、メッセージのプレビュー、現在位置のハイライトを備え、クリックで滑らかにスクロールします。
+- [l541402398/dsh-file-uploads](https://github.com/l541402398/dsh-file-uploads) — Web のコンポーザーから任意のローカルファイルをアップロードし、送信前のカードを表示、保存済みファイルを設定画面から管理できます。
+- [Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — Web UI の滑らかなストリーミング表示。テキストはモデルの到着ペースで現れ、新しい行はすっと入り、ちらつきません。追従はユーザーの操作を優先し、prefers-reduced-motion も尊重します。
+- [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) — セッションのサブエージェントと永続ワークフローを、投影に基づいてリアルタイムな DAG で表示。状態表示と移動、深い連鎖でも崩れないレイアウト、キャンバスのフィット/パン操作、現在のセッションのノードの並べ替えに対応します。
+- [LeemanCheung/dsh-whale-animation](https://github.com/LeemanCheung/dsh-whale-animation) — DSH Web のターン状態表示に、テーマに追従する 60 フレームのモノクロのクジラ潜水アニメーション（水の反応つき）を追加。素材を同梱し、途切れないループ再生、動きを抑える設定向けの PNG フォールバック、アンインストール時のきれいな後始末に対応します。
+- [lehhair/dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer) — write/edit のツール呼び出しの標準 DiffBlock を置き換える、PiUI 風の差分ビューア。
+- [Lhy723/dsh-agent-canvas](https://github.com/Lhy723/dsh-agent-canvas) — DSH Web で Agent、サブエージェント、ワークフロー、フェーズ、ツールの関係を可視化する対話式キャンバス。
+- [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) — 会話の常設アウトライン。ターンごとの質問と最終返信、キーワードでの絞り込み、ワンクリックのジャンプ、軽量/全履歴の表示モードに対応し、Ctrl/Shift＋クリックで同じ位置を軌跡ビューでも開けます。
+- [lilyblessing/dsh-mcp-skill-panel](https://github.com/lilyblessing/dsh-mcp-skill-panel) — MCP とスキルの管理。設定パネルから MCP サーバーとスキルを有効化/無効化して、その場でコンテキストを空けられます。任意の AI 中間層（mcp_search/mcp_call）が無効なサーバーも必要に応じて呼び出し、状態に応じた表示の絞り込みでユーザーが有効にしたサーバーは常に見えるようにします。
+- [Limitinfinitude/DSH-Right-Sidebar](https://github.com/Limitinfinitude/DSH-Right-Sidebar) — DSH Web の右側に出力ドックを追加。セッションの成果物をまとめ、ユーザー向けファイルをプレビューし、タブの状態をセッションごとに保持します。
+- [linhx1999/dsh-writing-pad](https://github.com/linhx1999/dsh-writing-pad) — 会話の横にドッキングする、セッション単位の Markdown 執筆パッド。編集/プレビューの切り替え、選択範囲の AI による書き直し、差分レビュー、取り消し、下書きの復元に対応します。
+- [lisniuse/dsh-modal-enhancer](https://github.com/lisniuse/dsh-modal-enhancer) — Web UI のあらゆるモーダルにウィンドウのような操作性を追加。タイトルバーでのドラッグ、8 方向のリサイズ、外側クリックで閉じないようにするピン留め、ビューポート全体への最大化、背景ぼかしの解除、ダイアログごとの状態保持に対応します。
+- [littleboylittlegirl/dsh-community-hot](https://github.com/littleboylittlegirl/dsh-community-hot) — Web UI 向けのフローティングなコミュニティパネル。24 時間のホットな話題と人気プラグイン TOP10 を、ドラッグでき常に手前に表示されるボタンから確認できます。
+- [loadingvx/deepseek-harness-workbench-plugin](https://github.com/loadingvx/deepseek-harness-workbench-plugin) — Web UI に欠けている IDE ワークベンチを補います。会話画面をチャット / エディター / ファイルと Git の可変幅 3 カラムにし、保存と新規作成に対応した複数タブのファイル編集、ワークスペースのターミナル、名前で絞り込めて外部エディターでも開けるファイルツリー、SCM（ステージ/コミット/push/pull、ブランチ切り替え、Git グラフ、インライン差分）、ステータスバー、git_* モデルツールを提供します。
+- [Luaphes/dsh-web-attention-badge](https://github.com/Luaphes/dsh-web-attention-badge) — 気づきのためのリマインダー。入力待ちのセッションや、完了したのに開いていないセッションについて、枠のバッジ、タブタイトルの件数、状態で色が変わるクジラの favicon で知らせます。
+- [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — DSH web クライアントの中国語 UI 強化。中国語ロケールを補完し、セッション統計の行が 1 行に収まるようにし、チャット幅を設定できる「強化」セクションを設定画面に追加します。
+- [magicOF2/dsh-chat-width-customizer](https://github.com/magicOF2/dsh-chat-width-customizer) — セッションヘッダーのボタンで会話の幅（748〜1600px）を順に切り替えます。チャット列、コンポーザー、ユーザーの吹き出しがまとめて広がります。
+- [magicOF2/dsh-turn-marks](https://github.com/magicOF2/dsh-turn-marks) — チャット左端のターンマークの帯。ユーザーメッセージ 1 件につき 1 本のバーを表示し、クリックでそのメッセージへ移動、ホバーでプレビュー、現在位置のバーは白くなります。
+- [MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider](https://github.com/MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider) — ネイティブの DSH モデルセレクターを置き換える、Claude 風のアニメーション付き推論強度スライダーとモデルピッカー。
+- [mengyun233/dsh-codex-pet](https://github.com/mengyun233/dsh-codex-pet) — Codex のデスクトップペットのスキンを DSH に自動移行します。画面隅のアニメーションペットがエージェントの状態（思考中、ツール使用、承認待ち、失敗、完了）を映し、セッションごとのすりガラス調ダイアログと本格的な設定パネルを備えます。
+- [Meredith2328/dsh-sticky-note](https://github.com/Meredith2328/dsh-sticky-note) — コンポーザーのツールバーから使える簡易付箋。思いつきや TODO を書き留めると Markdown として自動保存され、ワンクリックでチャットに送れます。
+- [mervyn-teo/dsh-plugin-collapsible-steps](https://github.com/mervyn-teo/dsh-plugin-collapsible-steps) — メッセージ間で連続するツール使用と思考のステップを、括弧でまとめた展開可能な 1 項目に折りたたみます。
+- [mexiaosqwq/dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) — DSH Web UI のモバイル対応レイアウト。サイドバーは内容に合わせて重なるドロワーになり、会話は全幅で表示され、設定パネルはほぼ全幅のシートになります。
+- [miisaka19800/dsh-restart-fab](https://github.com/miisaka19800/dsh-restart-fab) — DSH web GUI 向けのフローティング再起動ボタン。全画面のオーバーレイを出しながら dsh のプロセスをその場で再起動し、ページを自動で再読み込みします。ランチャースクリプトは不要で、Windows/macOS/Linux で動きます。
+- [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) — Codex 風のツール呼び出しの折りたたみ。複数のツール呼び出しを 1 行にまとめます。
+- [Mobai-read/dsh-chat-index-rail](https://github.com/Mobai-read/dsh-chat-index-rail) — クライアント側だけで動く、右端のチャット入力インデックスバー。ユーザーメッセージ 1 件につき 1 本のバーを表示し、ホバーで 2 段階のプレビュー（15 文字、展開して 40 文字）、クリックでジャンプ、スクロールに追従したハイライトを行います。ホスト側を持たない静的な npm バンドルです。
+- [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) — Web UI 向けのサブエージェント実行モニター。サイドバー下部のトリガーと右上固定のカードパネルで、現在のセッションの各サブエージェントをリアルタイム表示します（実行中と経過時間、終了結果、ツリーのインデント）。子会話へのワンクリック移動と戻るボタンを備え、リロードしても状態が残り、モバイルでは既定で非表示です。
+- [MorGogh/widget-dock](https://github.com/MorGogh/widget-dock) — 会話の余白に置ける、ドラッグとグリッド整列に対応した 28 種のミニカードのワークベンチ（API 残高、トークン使用量、コスト、コンテキスト圧、TODO、ゴール、使用量ヒートマップ、GitHub リポジトリ、画像中継）。S/M/L/XL のサイズ段階に対応します。
+- [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) — 会話の中で生成する UI。モデルが対話式の HTML カードをチャットの流れに描画します。ストリーミングのプレビューとサンドボックス化された描画に対応。
+- [Nanki-nn/dsh-answer-pet](https://github.com/Nanki-nn/dsh-answer-pet) — アニメーションするシロナガスクジラのデスクトップペット。セッションごとの応答進捗、モデルの活動とツール呼び出しの履歴、トークン数、出力速度、経過時間を表示し、複数セッションの状態カードを折りたためます。
+- [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) — Web UI の音声入力。コンポーザーのマイクボタンが Web Speech API で音声を下書きに書き起こします。自動送信の切り替えも可能です。
+- [ningbainb/deepseek-harness-desktop#packages/dsh-desktop-base](https://github.com/ningbainb/deepseek-harness-desktop/tree/main/packages/dsh-desktop-base) — デスクトップ向け機能の集約バンドル。DSH Web UI のプラグイン群、dshmarket、Codex Connect、推論強度の制御を、バージョンを固定して導入します。
+- [No-PRM/dsh-explorer](https://github.com/No-PRM/dsh-explorer) — DSH web GUI 向けの Git を軸にしたファイルツリーサイドバー。VS Code 風のインデントガイド、M/A/U/D/R の git 装飾、HEAD と作業ツリーの差分プレビュー、メディアのプレビュー、ドラッグでの参照挿入（ファイル/フォルダー/行番号つきの選択コード）に対応する純粋なプラグインです。
+- [Nothree-code/folder-tree-sh](https://github.com/Nothree-code/folder-tree-sh) — Web UI 向けのワークスペースファイルツリー。複数タブのプレビュー（テキスト/DOCX/PDF/Markdown/CSV/画像）、Markdown のその場編集、Git 変更パネル、コンテキストメニューからのファイル操作（名前変更/削除/コピー/移動/作成）に対応します。
+- [Nothree-code/voco-input-sh](https://github.com/Nothree-code/voco-input-sh) — Web UI の音声入力。マイクボタンからローカルの VocoType によるオフライン音声認識を動かし、認識したテキストをコンポーザーに自動挿入します（自動配置、重複排除、連続ディクテーション）。
+- [omdsh-dev/dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) — テキストを選択 → 注釈を付ける → メッセージと一緒に送信。返信は各注釈に対応づけられます。
+- [omdsh-dev/dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — Codex 風の `@file` メンション。コンポーザーからワークスペースのファイルを検索し、その内容をプロンプトに添付できます。
+- [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 本格的なサイドバーワークベンチ。ファイルの表示と編集、ターミナル、Git、サブエージェントを備え、サードパーティのプラグインが新しいタブを登録することもできます。
+- [omdsh-dev/dsh-genui](https://github.com/omdsh-dev/dsh-genui) — 返信の中に埋め込まれる対話的な UI コンポーネント。レイアウト、チャート、フォーム、クイズ、mermaid、3D シーンに対応し、操作イベントはモデルへ戻ります。
+- [omdsh-dev/ex-setting](https://github.com/omdsh-dev/ex-setting) — DSH の設定画面の拡張。
+- [omdsh-dev/web-components](https://github.com/omdsh-dev/web-components) — Web Components への対応。
+- [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) — DSH Web UI のモバイル対応。詰めた文字組み、キャレットの位置を直した全幅コンポーザー、オーバーレイをタップして閉じられるドロワーサイドバー、2 ページ構成の設定フロー、レスポンシブな表と統計、押しやすいタッチ領域を備えます。
+- [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) — DSH 向けのファイルブラウザーの Web アプリ。React のフロントエンドと REST API をホストの Web サーバーから提供し、現在のセッションのワークスペースで開く /dsh-agfs コマンドと browse_files モデルツールを備えます。
+- [openma-ai/deepseek-harness-tui](https://github.com/openma-ai/deepseek-harness-tui) — DSH の SDK の JSON-RPC プロトコルを直接話す Rust/ratatui 製のターミナルクライアント。単体でもプロファイルバンドルとしても動きます。
+- [pc439527/dsh-side-monitor](https://github.com/pc439527/dsh-side-monitor) — DSH Web UI 向けのサイドバー型システムモニター。ホストの概況（CPU/メモリ/ネットワーク/ディスク）、プロセス一覧、Docker コンテナの状態をリアルタイムに、すべて読み取り専用で表示します。
+- [penguin-oo/dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink) — チャット内のファイルパスとリンクを Ctrl＋クリック。パスは OS のファイルマネージャーでフォルダーを開き（該当ファイルを選択した状態）、リンクは新しいタブで開きます。
+- [pengyue-polaron/deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) — コードファーストな React / TypeScript のタスクアプリを、インライン、キャンバス、全画面、localhost のいずれかで表示します。操作の状態はその後のエージェントのターンからも参照でき、MCP と API へのアクセスは承認ゲート越しに行われます。
+- [PerryLink/dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) — Web コンポーザー向けのターミナル風の入力履歴。端からの矢印キー呼び出しで下書きとカーソル位置を正確に復元し、ブラウザ内に履歴を保存、Ctrl+R の逆方向検索、スライドする文脈の把握に対応します。0.5.0 ではスマート入力層を追加——セッションをまたぐスニペット（/save、/load）、変数つきプロンプトテンプレート、再利用の分析、コンパクション要約のハイライトが加わりました。
+- [Physicolor/harness-ui-enhancer](https://github.com/Physicolor/harness-ui-enhancer) — DeepSeek Harness の Web UI を整える層。未完成だったり自己矛盾している公式 UI をならし、インストール済みプラグイン同士のスタイル衝突を調停し、公式のデザイントークンで見た目の言語を統一します。チャット幅、Markdown の文字サイズ、ワークスペースの拡大率、UI フォントをその場で調整できます。
+- [Physicolor/harness-widgets](https://github.com/Physicolor/harness-widgets) — DSH Web UI 向けの右側ウィジェットレール。セッションの統計（ターン数、LLM/ツールの所要時間、TTFT、速度、キャッシュ、トークン）と、同一オリジンのホストプロキシ経由の OpenCode Go クォータをリアルタイム表示します。ウィジェットのレジストリは拡張でき、他のプラットフォームの使用量表示や装飾、ユーティリティ、外部連携も追加できます。
+- [pppolf/dsh-webgate](https://github.com/pppolf/dsh-webgate) — DSH Web GUI へのリモートアクセス。LAN の QR アクセス、cloudflared のクイックトンネル、自前サーバー経由の frp リバースプロキシに対応し、認証ポータルを内蔵しています。
+- [pyf2818/dsh-bili-widget](https://github.com/pyf2818/dsh-bili-widget) — DSH 向けのフローティング Bilibili ミニプレーヤー——常に手前に表示されるウィンドウで、発見/検索/フォロー中のチャンネル、自動プレイリスト、ミニ＆集中モード、視聴履歴の保存、ウィンドウのボール化に対応します。
+- [qjcnmd/dsh-reasoning-slider](https://github.com/qjcnmd/dsh-reasoning-slider) — モデルセレクターに組み込んだ Codex 風の推論強度スライダー。
+- [QT-Chen/dsh-mic-input](https://github.com/QT-Chen/dsh-mic-input) — コンポーザーのマイク音声入力。ブラウザの Web Speech API によるリアルタイム書き起こし、重複排除と自動継続、句読点の自動付与、言語と自動送信の設定に対応します。
+- [qyw233/dsh-deeplink](https://github.com/qyw233/dsh-deeplink) — ディープリンク。`?session=` / `?workspace=` で特定のセッションやワークスペースを直接開けます。
+- [RAFOLIE/dsh-desktop-windowos](https://github.com/RAFOLIE/dsh-desktop-windowos) — Windows のタスクトレイ常駐デスクトップシェル。GitHub Releases から exe を自動インストール・自動更新し、アプリと Web UI の両方のショートカットを作成、会話から起動できる desktop_launch ツールも提供します。
+- [ReachGa0/dsh-desktop#plugin](https://github.com/ReachGa0/dsh-desktop/tree/main/plugin) — 会話から dsh-desktop の Windows Electron シェルを起動する DSH プラグイン（dsh-desktop-launcher）。ダブルクリックで DSH web を独立ウィンドウとして開き、GPU アクセラレーションの範囲選択スクリーンショットをチャットに自動で貼り付け（視覚ブリッジと併用可）、タスクトレイ常駐、セッション管理、環境の自動設定、ポートの変更、多重起動の防止に対応します。
+- [dsh-myrules](https://github.com/Relistencode/dsh-extension-hub/tree/main/packages/dsh-myrules) — ホスト全体のグローバル指示（~/.dsh/AGENTS.md）を、設定の専用カスタマイズページから編集できます。このマシンのすべてのセッションに適用されます。
+- [renat3u/dsh-web-archive](https://github.com/renat3u/dsh-web-archive) — 会話内のノイズになりがちなメッセージ（Think、Bash など）を折りたたみます。
+- [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) — Web UI のキーボードショートカットを自由に設定。あらかじめ登録された 34 の機能（セッション、ビュー、クリップボード、モデル、パーミッションの静かな切り替え、設定）をワンクリックの記録で好きなキーに割り当てられ、診断機能つきのチートシートも備えます。
+- [s3yf1337/dsh-desktop](https://github.com/s3yf1337/dsh-desktop) — dsh のデスクトッププロファイル。harness の Web 画面をネイティブな Tauri ウィンドウで包み、タスクトレイ、ネイティブ通知、ファイルマネージャーのパネル、ワンクリック更新を提供します。
+- [Sanqi-normal/dsh-model-picker](https://github.com/Sanqi-normal/dsh-model-picker) — dsh web のコンポーザー向け、プロバイダーをタブ分けしたモデルピッカー。左にプロバイダー列、右にモデル一覧を配置し、それぞれ独立してスクロールでき、プロバイダー横断の検索にも対応します。
+- [sanqiPanax/dsh-sticker-board](https://github.com/sanqiPanax/dsh-sticker-board) — コンポーザーの上に置く、冷蔵庫のマグネットのようなクイックタスクのステッカー。ワンクリックで用意しておいたプロンプトを現在のセッションに送れ、長期用と短期用にグループ分けできます。
+- [Semidia/dsh-sampling-sliders](https://github.com/Semidia/dsh-sampling-sliders) — コンポーザーにモデルのサンプリングスライダー（temperature / maxTokens）を追加。agent/request フックを介してすべてのプロバイダーのリクエストを上書きでき、一時適用と永続化のモードを選べます。
+- [Semidia/dsh-session-manager](https://github.com/Semidia/dsh-session-manager) — セッションの右クリックメニューとサイドバーのセッション管理。ピン留め、名前変更、アーカイブ、分岐、書き出し、cwd/id/ディープリンクのコピー、エクスプローラーや新しいウィンドウで開く操作に対応します。
+- [sereinmono/dsh-desktop-pet](https://github.com/sereinmono/dsh-desktop-pet) — DeepSeek Harness にデスクトップペットを追加するプラグイン。Codex のペット形式に対応しており、hatch-pet や Petdex で自分のペットを追加できます。
+- [SherUnlocked-4869/dsh-plugin-msg-nav](https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav) — DSH Web UI 向けの会話ノードのナビゲーションレール。右端にユーザーメッセージ 1 件につき 1 本のダッシュを表示し、読んでいる位置の追跡、ホバーのプレビューカード、ハイライト行つきのクリックジャンプ、スライディングウィンドウ、自動非表示に対応します。
+- [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) — 画面下部に固定される複数タブのターミナルパネル（node-pty ＋ xterm.js）。常に入力欄の下に配置されます。
+- [SnowCrescenter-tech/dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) — 右側のドット型タイムラインレール。ユーザーメッセージ間を行き来できます。
+- [SoDaZilla-zzz/dsh-liquid-glass-balance-card](https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card) — DSH web GUI 向けのドラッグできる 3D リキッドグラス調フローティングカード。DeepSeek API の残高、累計の支出とトークン統計（当日/前日/7 日/30 日/全期間）、ガラス感・3D・色の調整、ワンクリックのチャージに対応します。
+- [SongMiao-tech/dsh-prompt-optimizer](https://github.com/SongMiao-tech/dsh-prompt-optimizer) — コンポーザー下の「プロンプト最適化」ボタン。ワンクリックで下書きをより明確で実行しやすいプロンプトに書き直し、変更前後を並べたダイアログとワンクリックの置き換えを提供します。
+- [songoao25/dsh-bottom-info-bar](https://github.com/songoao25/dsh-bottom-info-bar) — DSH Web UI 向けの下部情報バー。プロバイダー/モデル、リアルタイムの残高、カウントダウン付きのピーク/オフピーク価格、実際に保存されたセッションごとの支出を 1 行にまとめて表示します。
+- [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — DeepSeek Harness のストリーミングテキストのアニメーションを改善します。
+- [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) — dsh のコンポーザードックに置く、17 セグメント構成の設定可能なセッションステータスバー。TPS のリアルタイム表示、モデル別のコスト推定、使用量とコストのダイアログを備えます。
+- [tangzheng202202/dsh-voice-live](https://github.com/tangzheng202202/dsh-voice-live) — 火山エンジンのストリーミング ASR/TTS による、リアルタイムの全二重ボイス。エージェントの返信の読み上げ、割り込み、ウェイクワード、リアルタイム字幕、30 種の中国語音声、まず返事をする相づちに対応し、DSH のモノレポでビルドされます。
+- [taxueseek/dsh-files](https://github.com/taxueseek/dsh-files) — 色分けされた添付カード付きのファイルアップロード（セッションごとに隔離された保存、sha256 による重複排除、TTL での掃除）と、PDF/DOCX/XLSX/TXT を内容判別して読む read_document ツール。
+- [TecFancy/dsh-mobile](https://github.com/TecFancy/dsh-mobile) — DSH web シェルのモバイル対応。768px 未満でサイドバーと詳細を重ねて表示するドロワー、レスポンシブなコンポーザーと設定画面を提供し、デスクトップ表示は変えません。
+- [tsonglew/dsh-media-preview](https://github.com/tsonglew/dsh-media-preview) — dsh-better-sidebar 向けの音声/動画ファイルビューア。mp4/webm/mkv/mov と mp3/flac/wav をその場で再生でき、Range 対応のストリーミング配信経路が支えます。
+- [tsonglew/dsh-workspace-search](https://github.com/tsonglew/dsh-workspace-search) — dsh-better-sidebar 向けの VS Code 風のワークスペースキーワード検索タブ。ファイル名と内容を検索し、ファイル別に行番号つきでまとめ、サイドバーのエディターで開けます。
+- [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) — Web UI の LAN／リモートアクセス一式。0.0.0.0 へのバインド、crypto.randomUUID の polyfill、トークンゲート（401 のログインページ＋WebSocket の遮断、ループバックは対象外）、特権境界と設定永続化の除外、アップグレード時の復旧に対応した冪等なインストーラーを備えます。
+- [TZHR-invest/dsh-plugins#dsh-mobile-ui](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui) — 狭い画面向けの Web GUI のモバイル UI。全幅のレスポンシブレイアウト、重ねて出るセッションドロワー、44px のタッチターゲット、セーフエリア対応、読みやすさの改善を、デスクトップに影響を与えずに実現します。
+- [urzeye/dsh-outline](https://github.com/urzeye/dsh-outline) — DSH Web のセッション画面向けのリアルタイムなアウトラインパネル。ユーザーの質問と Markdown の見出しツリー（H1〜H6）がストリーミング中も更新され、クリックでの位置特定とハイライト、展開の深さの調整、検索、セッションごとのお気に入りに対応します。
+- [vibeinging/dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) — DSH Web UI のターンナビゲーション。
+- [vlln/dsh-navbar](https://github.com/vlln/dsh-navbar) — ユーザーメッセージ間をすばやく行き来できる会話ノードのナビゲーションバー。
+- [vlln/dsh-task-status](https://github.com/vlln/dsh-task-status) — バックグラウンドタスクのステータスバー。チャット画面に進捗と出力の末尾をリアルタイム表示します。
+- [vvvspec/better-reasoning-slider](https://github.com/vvvspec/better-reasoning-slider) — 公式に似た見た目のコンポーザーのモデル切り替えボタンと、フローティングの推論強度スライダーのポップアップ。
+- [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) — Web GUI のフォントエンジン。システムのフォント一覧の取得、Spy++ 風のピッカーによる全体とコンポーネント単位の文字サイズ調整、設定ページを備えます。
+- [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) — プロンプトキャッシュを作り直したアシスタントの返信の下に、キャッシュミスを知らせる黄色の 1 行を表示します。
+- [weshopai/weshop-dsh-plugin](https://github.com/weshopai/weshop-dsh-plugin) — 無限キャンバスの EC 向けビジュアルワークスペース。商品撮影、バーチャル試着、背景の編集、動画制作を、Harness の会話とリアルタイムに同期しながら行えます。
+- [whiteguo233/dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) — DSH 向けの OpenBiliClaw 利用者パネル。おすすめ、保存リスト、ソクラテス式の対話、プロフィール表示、Agent Bridge のツールを備えます。
+- [WhitePlusMS/dsh-git-graph](https://github.com/WhitePlusMS/dsh-git-graph) — チャットと軌跡の隣に置く読み取り専用の Git Graph ビュー。コミットのトポロジー、ローカル/リモート/タグの参照、HEAD と作業ツリーの状態、検索、絞り込み、first-parent モード、更新、追加読み込みに対応します。
+- [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) — `@` でワークスペースのファイルとディレクトリのパスを検索して挿入できるほか、`/h` メニューから現在のセッションのプロンプトを再利用できます。
+- [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) — 左端に置くユーザーターンのナビゲーションレール。読んでいる位置のハイライト、ターンごとの指標とモデル回答の抜粋をホバーで表示、キーボードとクリックでのジャンプ、ローカルの会話検索に対応します。
+- [WJNCT55555/dsh-web-preview-float](https://github.com/WJNCT55555/dsh-web-preview-float) — Google AI Studio 風の Web UI 向けフローティングプレビュー。ドラッグとリサイズができる iframe プレビューにアスペクト比と解像度のプリセットを備え、直接編集・確認つき書き込み・セッションログへの記録に対応した VS Code 風のコードウィンドウも付きます。
+- [wjy9902/dsh-web-default-session](https://github.com/wjy9902/dsh-web-default-session) — 汎用の「新規セッション」操作で、フォルダーを選ばせる代わりに既定ディレクトリのワークスペースを開きます。ワークスペースの選択画面にも、フォルダーなしの選択肢としてそのワークスペースが並びます。
+- [wlj521/dsh-ui-tweaks](https://github.com/wlj521/dsh-ui-tweaks) — DSH Web の会話 UI を設定画面からその場で調整。メッセージの文字サイズ、Claude Desktop 風の Markdown テーブル、ダイアログの幅、任意のタイムラインレールに加え、ブランチ管理・ファイル別の差分・コミットと push ができる GitBar を備えます。
+- [Wongzexu/dsh-git-status](https://github.com/Wongzexu/dsh-git-status) — Git のブランチと状態の扱いに特化。DSH web UI の右端に Git ステータスのドロワーを置き、コミットの DAG レーングラフ、未コミットの変更と stash の行、インラインの差分、右クリックによるブランチ/タグ操作、すべてのリモートからのワンクリック fetch を提供します。
+- [wqx-txdsyl/dsh-ds-attach](https://github.com/wqx-txdsyl/dsh-ds-attach) — **DeepSeek Chat（chat.deepseek.com）と同じ見た目の添付機能**。クリップのアップロードボタン、DS 公式のカラーアイコン（PDF/DOCX/XLSX/PPT/IMG を DS のフロントエンドのバンドルから抽出）を使った 240×64 のファイルカード、ドラッグ＆ドロップ、メッセージに差し込まれるテキスト抽出（PDF/DOCX/XLSX/TXT）に対応し、会話ログにも本物の添付カード（独自のユーザー描画）を表示します。モデルは内容の全文を読めます。
+- [wsxwj123/dsh-plugins#dsh-composer-tools](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools) — コンポーザーの入力ツールキット。矢印キーによるセッション履歴の呼び出し（先頭行/末尾行でのみ動作し、IME やコマンドメニューとも競合しません）ほか、入力まわりの細かな便利機能を提供します。
+- [wsxwj123/dsh-plugins#turn-scrubber](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber) — 右端にコンパクトなターンレール。ホバーで要約を表示し、クリックで移動できます。
+- [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) — Web UI 向けの Codex 風の左側メッセージナビゲーションレール。ユーザーメッセージ 1 件につき目盛りを 1 つ表示し、ホバーでプレビュー、クリックで履歴全体のどこへでも移動できます。
+- [x2802490130-prog/dsh-client-ui-writing](https://github.com/x2802490130-prog/dsh-client-ui-writing) — Web UI のクライアント側執筆パネル。プロジェクトの巻と統計、資料ライブラリ、全文検索、推敲のバージョン連鎖の差分、SVG の筋書きグラフを、執筆プリセットのセッションでのみ表示します。
+- [x2802490130-prog/dsh-lan-pass](https://github.com/x2802490130-prog/dsh-lan-pass) — Web UI 向けの LAN パスワードゲート。同じネットワークのスマホやタブレットが共有の鍵でログインし、同じセッションをリアルタイムに見られます。平文 HTTP のオリジン向けに randomUUID の polyfill を内蔵。
+- [XanthanL/dsh-plugin-uisfx](https://github.com/XanthanL/dsh-plugin-uisfx) — uisfx による意味づけされた UI 効果音。タスクの開始/成功/失敗やボタンごとの音、その場で試聴できる設定 UI、サウンドパック 12 種、ホスト側に保存される設定、他プラグイン向けの `ctx.uisfx` サービスを備えます。
+- [xiaoshihou514/dsh-tui](https://github.com/xiaoshihou514/dsh-tui) — すっきりとシンプルな TUI。
+- [XiLuovo/dsh-session-timeline](https://github.com/XiLuovo/dsh-session-timeline) — 会話の左側に表示するセッションのタイムライン。ユーザーメッセージを一覧でき、現在位置の追跡、メッセージとその返信のホバープレビュー、クリックでのジャンプ、折りたたみに対応します。
+- [YEYEYEYESHIFU/dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) — Web GUI の結果だけを表示するトグル。思考とツール呼び出しの過程の行を隠し、エージェントの作業中は 1 行のステータスだけを残します。prefers-reduced-motion の環境では動きのある表現を戻し、zh-CN/en に対応します。
+- [YEYEYEYESHIFU/dsh-session-hotkeys](https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys) — DSH Web GUI のセッション用ホットキー。ブラウザのタブのようにセッションを切り替えられます（位置指定の Alt+1〜9、ピン留めスロット、前/次、新規/アーカイブ/名前変更、ナビゲーションモード、検索フォーカス）。すべて再割り当て可能で、Windows/macOS のプリセットつき。
+- [YiRan0/dsh-mobile-glass](https://github.com/YiRan0/dsh-mobile-glass) — 狭い画面での DSH Web UI のモバイル対応。チャット層を上に重ねて開くドロワー、ドラッグ操作、ボトムシート形式の設定パネル、コンポーザーとヘッダーの修正を、デスクトップに影響を与えずに提供します。
+- [ysyyhhh/dsh-pet](https://github.com/ysyyhhh/dsh-pet) — エージェントの活動に追従する DSH のネイティブなデスクトップペット。Codex のペットパッケージに対応し、CLI を使わずに Petdex から承認済みのペットを直接取り込めます。
+- [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) — Codex 風の自動で隠れる右端のターンレール。端に寄せると現れる表示/非表示、ターンごとのツールチップ、レール内検索、長いセッション向けの 30 ターン分のスクロール窓を備えます。
+- [YZz-S/dsh-workspace-files-explorer](https://github.com/YZz-S/dsh-workspace-files-explorer) — Web GUI 向けのフローティングなワークスペースファイルツリー。行番号つきのシンタックスハイライトと Markdown プレビューに対応します。
+- [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) — DSH Web GUI のモバイル UI シェル。1024px 未満のビューポートで、デスクトップの 3 カラムレイアウトをタッチ向けのスマホレイアウト（重ねて開くドロワー、ドラッグできる FAB、全画面ダイアログ、無限スクロールの履歴）に変えます。デスクトップには影響しません。dsh-mobile-gate を土台にした DSH 用の完全なモバイル PWA でもあり、安全なリモートアクセスゲートウェイ、ホーム画面への追加（manifest ＋ service worker）、オフライン対応、タッチジェスチャー（引っ張って更新、端からのスワイプで戻る、ピンチでの文字サイズ変更）、エージェント完了時のプッシュ通知、タッチ優先のレイアウトを備えます。
+- [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 向けのデスクトップペット。スプライトシートのアニメーション、エージェント状態との連動、ドラッグ、アラーム（毎日/単発）とポモドーロのウィジェット、プレビュー付きのスキン選択を備えます。
+- [Zhangbo-cn/dsh-voice-input-plugin](https://github.com/Zhangbo-cn/dsh-voice-input-plugin) — Web UI のコンポーザー用マイク。タップで書き起こしをリアルタイム確認するモードと、押している間だけ話すモードに対応し、ホスト側の Edge TTS がモデルの生成中から返信を読み上げます。読み上げ中はエコーを避けて入力を止め、タップで停止できます。
+- [dsh-settings-nav-organizer](https://github.com/zhengjy01/dsh-settings-nav-organizer) — DSH の設定ナビを整理します。サードパーティのプラグインの項目を折りたためるグループ行にまとめ、ブックマークのような独自グループと、一般設定からの折りたたみ切り替えを提供します。
+- [zhousun55-byte/dsh-postman](https://github.com/zhousun55-byte/dsh-postman) — ファイルとフォルダーを会話に直接アップロードします。画像は本物のメッセージブロックとして添付され、テキストの内容はコンポーザーの下書きに書き込まれ、フォルダーはディレクトリ構造のまま取り込まれます。
+- [zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all](https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-web-ui-all) — DSH Web UI 向けのプラグインとスキンの詰め合わせ。タスクボード、Git グラフ、右パネル、モバイル用リモート UI、ペット、トークン統計のリアルタイム表示、スキンセンターを収録します。
+- [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 向けのオールインワンバンドル。Windows のネイティブデスクトップウィンドウ（WebView2）、DeepEye の視覚機能（GLM-4V-Flash）、音声入力（マイクボタン）を 1 回のインストールでまとめて導入します。
+- [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 向けの Windows ネイティブデスクトップウィンドウ（WebView2）。コマンド 1 つでインストールでき、GitHub Releases からアプリの zip を自動取得し、デスクトップショートカットを作成、チャットから起動できる desktop_launch ツールも追加します。
+- [zoumutou/dsh-web-preview](https://github.com/zoumutou/dsh-web-preview) — サイドの Web プレビューパネル。ローカルの静的配信、Markdown/コード/画像のプレビュー、静的でないプロジェクト（Cargo/npm/Go/Python）のワンクリック実行とログのリアルタイム表示、チャットへのファイルのドラッグ（ワークスペースに保存）、要素の指定と注釈、404 時のワークスペース内ファイル検索、リンククリックのサイドパネルでの引き受けに対応します。
+- [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — OpenPencil のデザインプレビューと編集を行うプラグイン。
+- [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) — DSH Web の描画された Markdown 内で品詞を色分けします（名詞は緑、動詞は赤、形容詞と副詞は紫）。ライト/ダークの配色、表示の切り替え、ストリーミング中の更新に対応。
+- [zylzyqzz/dsh-mobile-pwa](https://github.com/zylzyqzz/dsh-mobile-pwa) — dsh-mobile-gate を土台にした DSH 用の完全なモバイル PWA。安全なリモートアクセスゲートウェイに加え、ホーム画面への追加（manifest ＋ service worker）、オフライン対応、タッチジェスチャー（引っ張って更新、端からのスワイプで戻る、ピンチでの文字サイズ変更）、エージェント完了時のプッシュ通知、タッチ優先のレイアウトを備えます。デスクトップには影響しません。
+
+### 💰 使用量と課金
+
+- [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) — DeepSeek API アカウントの残高をコンポーザーのドックにリアルタイム表示。手動更新と任意間隔の自動更新に対応します。
+- [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) — DSH Web サイドバーの活動ヒートマップ。GitHub 風のグリッドに日々のコミット、トークン使用量、推定コストを表示し、当日の統計行に全セッションのトークン合計、キャッシュヒット率、モデル別の自動価格換算コストを出します。
+- [940842546/dsh-usage-billing](https://github.com/940842546/dsh-usage-billing) — 使用量とコストの統計。2026-08-17 の料金改定後のピーク/オフピーク価格に対応し、フローティングのサマリーパネル、セッション別の内訳、日/週/月/年/全期間の使用量ヒートマップを表示します。
+- [AKS1st/model-usage-plugin](https://github.com/AKS1st/model-usage-plugin) — モデル別のトークン使用量とコスト推定に加え、DeepSeek アカウントの残高を設定パネルのタブに表示します。
+- [BeiZi6/dsh-opencodego-usage](https://github.com/BeiZi6/dsh-opencodego-usage) — DSH Web GUI 向けの OpenCodeGo クォータモニター。入力欄の右下に残量で色が変わる（緑/黄/赤）呼吸インジケーター、リキッドグラス調のパネルにローリング/週次/月次の使用量とリセット時刻を表示し、30 秒ごとに自動更新します。API キーは DSH の資格情報から読み取ります。
+- [bobcat848/dsh-calculator](https://github.com/bobcat848/dsh-calculator) — DeepSeek API の支出（現在のセッションと全セッション）とアカウント残高をサイドパネルに表示します。公式価格とピーク/オフピークに対応。
+- [chenyinrusi/dsh-llm-cost](https://github.com/chenyinrusi/dsh-llm-cost) — ターンごと・ステップごとの LLM コスト計測。costUsage のセッション投影、各メッセージ下のコスト行、LLM と Web の価格を自動で保守するツールを備えます。
+- [CN-Leo/dsh-deepseek-balance](https://github.com/CN-Leo/dsh-deepseek-balance) — DeepSeek アカウントの残高をコンポーザーのドックにリアルタイム表示。15 秒ごとに自動更新し、ホバーで詳細を表示します。
+- [dk33333333/dsh-deepseek-quota-left](https://github.com/dk33333333/dsh-deepseek-quota-left) — DeepSeek API のクォータパネルを Web UI の左端のハンドルに畳んで表示。クリックで展開すると残高、公式の当日消費（プラットフォームのトークンを使用）、進行中の会話コストが分かります。dsh-deepseek-quota のフォークです。
+- [feibi-mochi/deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) — DeepSeek Harness のコントロールセンター。公式残高の監視、セッション別のコストとトークン、サードパーティのトークン合計、完了通知、公式のチャージ、柔軟なレイアウト、エージェントによるセッション操作の補助を提供します。
+- [FengHuoLinShan/dsh-plugin-llm-balance](https://github.com/FengHuoLinShan/dsh-plugin-llm-balance) — 直近に使ったプロバイダー（DeepSeek/Moonshot/Kimi For Coding）の残高とクォータを表示するドラッグ可能なフローティングカード。自動検出、残量に応じた色分け、リアルタイム更新に対応します。
+- [fishxcode/dsh-plugin-deepseek-balance](https://github.com/fishxcode/dsh-plugin-deepseek-balance) — DSH Web の設定に DeepSeek API の残高、残高の推移、日次使用量のグラフを表示します。
+- [Floating-Dreaming/dsh-minimax-usage](https://github.com/Floating-Dreaming/dsh-minimax-usage) — DSH の設定ページに「用量」セクションを追加し、MiniMax Token Plan の使用状況（5 時間枠と週次枠、リセットまでのカウントダウン）、モデル別の内訳、動画のボーナスクレジットを表示します。API キーを持つ信頼済みプラグインが `/v1/token_plan/remains` を取得し、キー未設定なら自動的に非表示になります。MIT ライセンス。
+- [Ghost011118/dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) — DeepSeek アカウントの残高とセッションのコストをコンポーザーのドックに表示。公式価格を自動取得し、ピーク/オフピークにも対応します。
+- [GLFzr/dsh-opencode-go-quota](https://github.com/GLFzr/dsh-opencode-go-quota) — OpenCode Go のクォータリング。モデルセレクターの左に進捗リング（5 時間/週次/月次をクリックで切り替え）を表示し、逼迫度に応じて色を変え、ホバーでリセットまでのカウントダウンを出します。
+- [GPIOX/dsh-api-balance](https://github.com/GPIOX/dsh-api-balance) — DeepSeek Harness 向けのフローティング API 残高バッジ。DeepSeek、Moonshot、OpenAI とカスタムエンドポイントの残高をリアルタイム表示します。ドラッグとリサイズが可能で、すりガラス調の見た目、下地に応じて文字色が変わります。
+- [Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — セッション別と日次の API コスト、使用率つきの予算、公式残高、履歴ダッシュボードに加え、ピーク/オフピーク対応の公式価格をワンクリックで同期します。
+- [huanyuLv/dsh-balance-tide](https://github.com/huanyuLv/dsh-balance-tide) — コンポーザーの下に DeepSeek アカウントの残高とセッションのコストを表示。ピーク/オフピークの料金バッジ（北京時間）、次の切り替わりまでのカウントダウン、ホバーでの価格表、使い方のアドバイスを備えます。
+- [iamfromchangsha/dsh-go-balance](https://github.com/iamfromchangsha/dsh-go-balance) — コンポーザーのツール行の右端に置く OpenCode Go の残量ピル。Zen の使用量エンドポイントからローリング/週次/月次のクォータ残量を直接取得し、ホバーでの詳細と警告/危険の色分けを表示します。
+- [ibka512/dsh-ibka-balance](https://github.com/ibka512/dsh-ibka-balance) — コンポーザーのドックに常設する残高カード。DeepSeek API アカウントの残高をリアルタイム表示し、5 分ごとの自動更新、手動更新ボタン、残高が少ないときの色による警告を備えます。
+- [izz-BLUE/dsh-deepseek-usage-dashboard](https://github.com/izz-BLUE/dsh-deepseek-usage-dashboard) — DSH Web 向けの DeepSeek API 使用状況ダッシュボード。セッションログから日次のキャッシュヒット/ミスと出力トークンの統計、モデル別のコスト推定、アカウント残高、7 日間の推移を集計し、コンポーザーにも使用量のサマリーを表示します。
+- [jiangli07/dsh-deepseek-quota-bar](https://github.com/jiangli07/dsh-deepseek-quota-bar) — ドラッグできる半透明の残高カード。月初との比較を血液バーのように示す残高、当日/当月の支出（プラットフォームのトークンを設定すれば公式値）、セッションのコストを表示します。
+- [Jolly-J/dsh-deepseek-billing](https://github.com/Jolly-J/dsh-deepseek-billing) — DeepSeek アカウントの残高とセッションごとのコストを、サイドバー下部のカードに表示します。
+- [JonyChan8394/dsh-llm-balance](https://github.com/JonyChan8394/dsh-llm-balance) — チャット入力欄の下に複数プロバイダーの LLM API 残高を表示。DeepSeek、OpenRouter、SiliconFlow のプリセットを備えます。
+- [kelearns/dsh-token-usage](https://github.com/kelearns/dsh-token-usage) — Web UI 向けのトークン使用量ヒートマップ。12 か月分の期間について日次/週次/累計の表示を切り替えられ、ライト/ダークテーマに対応します。
+- [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) — サイドバーの課金ダッシュボード。セッションログから集計した実使用量（モデル別・日別の呼び出し数/トークン/キャッシュ）を、複数プロバイダーの最新価格表から人民元で概算します。サブスクリプション（coding/token/agent）の経路は対象外とし、プロバイダーごとの健全性ドットも表示します。
+- [KIDLi1412/dsh-session-cost](https://github.com/KIDLi1412/dsh-session-cost) — 会話下部のステータスバーにセッションのコスト見積もり（モデル別のトークン単価、人民元建て）を表示し、公式の残高 API から DeepSeek アカウントの残高もリアルタイムで取得します。
+- [KIDLi1412/dsh-token-heatmap](https://github.com/KIDLi1412/dsh-token-heatmap) — 新規セッション画面に GitHub 風の日別トークン使用量ヒートマップを表示。年を選べるカレンダー表示、緑と青の配色、当日/今月/全期間の合計に対応します。
+- [kirigayakazima/dsh-usage-vendor-stats](https://github.com/kirigayakazima/dsh-usage-vendor-stats) — ベンダー別の使用状況ダッシュボード。プロバイダーごとのトークン/キャッシュ/出力の KPI、53 週のヒートマップ、当日を時間単位で見られる推移グラフ、モデルの掘り下げ、コスト推定、CSV 書き出し、健全性カード（TTFT、生成速度、コンテキストのピーク、エラー率）を備えます。
+- [LaoYueHanNi/dsh-token-usage](https://github.com/LaoYueHanNi/dsh-token-usage) — リクエストごとのモデルトークン使用量を日別の JSONL に記録し、Web 設定に統計ページを追加。日次の推移グラフ、モデル別の内訳、日付とモデルでの絞り込みができます。
+- [LeemanCheung/dsh-token-usage](https://github.com/LeemanCheung/dsh-token-usage) — ローカル優先の 4 分類トークン可観測性。セッション/プロバイダー/モデル/日別の永続ダッシュボード、推移、予算と異常のシグナル、公開レートによる見積もり、安全な集計値の書き出しに加え、使用状況やセッション軌跡の分析は明示的なオプトインで行います。
+- [LemCAE/dsh-balance](https://github.com/LemCAE/dsh-balance) — DeepSeek アカウントの残高と現セッションの支出見積もりを、トップバーのチップと設定カードに表示。一時停止を考慮した自動更新、編集できる公式価格表、`deepseek_balance` モデルツール、二言語対応 UI を備えます。
+- [luokai-demo/dsh-plugins#plugins/dsh-balance-plugin](https://github.com/luokai-demo/dsh-plugins/tree/main/plugins/dsh-balance-plugin) — サイドバー下部に DeepSeek のウォレット残高を表示。クレジットカードのアイコンが残高に応じて色づき（2 元超は緑、0〜2 元は琥珀、それ未満は赤）、表示時・ターン終了時・クリック時に更新されます。残高が変わるたびに増減の値が浮かび上がって消えます。
+- [Make0209/dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) — GitHub 風の使用状況ヒートマップダッシュボード。ワークスペース別のターン数とトークン支出（キャッシュヒット率つき）、DeepSeek アカウントの残高、ワークスペースの別名表示に対応します。
+- [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) — コンポーザー下部のトークン・コスト・残高ダッシュボード。リアルタイムのインジケーターに加え、ターンごとの使用量、推定コスト、DeepSeek アカウント残高を依存関係ゼロの SVG チャートで表示します。
+- [mov-eax-eax/dsh-token-anxiety](https://github.com/mov-eax-eax/dsh-token-anxiety) — タスクごとのトークンコストをリアルタイム表示するウィジェット。ピーク/オフピークの時間帯、値上げ後の想定コスト、並べ替えできるタスク別のコスト表、複数通貨（COP/USD/CNY ほか約 40 種、為替レート対応）、高コストなタスクの理由を LLM がストリーミングで説明する機能を備えます。
+- [mtty-ai/mmx-quota-tool](https://github.com/mtty-ai/mmx-quota-tool) — Web UI 向けの MiniMax トークンプランのクォータドック。会話の入力欄にしずく形の 5 時間使用率チップを表示し、クリックすると各モデルの 5 時間・週次の使用量とリセットまでの時間を一覧できます。既定のモデルが MiniMax でないときは自動的に隠れます。
+- [Mu-scorpio/token-usage-counter](https://github.com/Mu-scorpio/token-usage-counter) — プロバイダーが報告するトークン使用量の累計を永続化し、セッション別・モデル別・日別の活動統計を表示します。
+- [nonewind/dsh-spend](https://github.com/nonewind/dsh-spend) — dsh web UI のトークン使用量と推定支出。モデル別・日別・セッション別の統計をフローティングパネルに表示します。
+- [OK-wx/dsh-ocgo-lite](https://github.com/OK-wx/dsh-ocgo-lite) — コンポーザーのドックに表示する OpenCode Go の使用量バー。ローリング/週次/月次のクォータリング、公式レートをリアルタイム取得して算出する DSH セッションのトークンとコスト、モデル別と現セッションの内訳（セッションごとにリアルタイム更新）、API キーのワンクリックコピーに対応します。
+- [SenmuuuuW/dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report) — DeepTrace——セッションログから決定論的にエージェントのレポートを生成します（日次/週次/月次/年次/任意期間）。コストとトークンの内訳、8 つの洞察ルール、協働のふり返り、プロバイダー残高のリアルタイム表示、PDF/PNG/HTML への書き出しに対応。読み取り専用で履歴は書き換えません。
+- [Sev7een/ds-api-usage](https://github.com/Sev7een/ds-api-usage) — 設定画面に DeepSeek API の残高と 24 時間の使用状況ダッシュボードを追加。推定支出、トークン数、リクエスト数、時間別の推移を表示します。
+- [stevenx65/dsh-balance-plugin](https://github.com/stevenx65/dsh-balance-plugin) — Web のサイドバーに DeepSeek の残高とトークン使用量を表示。当日/全期間の切り替えとプロバイダーの絞り込みができます。
+- [Sttrevens/dsh-cost-meter](https://github.com/Sttrevens/dsh-cost-meter) — Web UI にターンごとの USD コストバッジを表示。ヘッダーにセッション合計、各メッセージのフッターにターンごとのコストを出し、ホバーで内訳を確認できます。
+- [V-dev-388/dsh-usage-meter](https://github.com/V-dev-388/dsh-usage-meter) — 設定ページの使用状況ダッシュボード。全セッションを通じたプロバイダー/モデル別のトークン集計を、当日/7 日/30 日の CSS バーによる推移とキャッシュヒット率とともに表示します。
+- [v587d/dsh-opencode-go-usage](https://github.com/v587d/dsh-opencode-go-usage) — OpenCode Go のサブスクリプション使用状況（ローリング/週次/月次の枠とリセットまでのカウントダウン）をコンポーザーのドックに表示。資格情報のエディターを内蔵しています。
+- [vinyumao/dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) — DSH web GUI 向けの OpenCode Go プランの使用状況表示。コンポーザーの下に常設したバッジがローリング/週次/月次の使用率とリセットまでのカウントダウンを示し、クリックでカードが開きます。エージェントは `opencode_go_usage` ツールで残量を照会できます。
+- [wenzetan/dsh-quota-panel](https://github.com/wenzetan/dsh-quota-panel) — 右下のクォータカプセル。設定済みのすべてのプロバイダー（DeepSeek、OpenRouter、SiliconFlow、GLM、one-api/new-api、コーディングプラン）を自動検出し、残高またはローリング 5 時間・週次の使用量を表示します。プロバイダーごとの表示切り替え、警告しきい値、プロキシに対応。
+- [x2802490130-prog/dsh-balance-float](https://github.com/x2802490130-prog/dsh-balance-float) — Web UI 向けのフローティング残高ウィジェット。DeepSeek アカウントの残高をリアルタイム表示し、手動更新と Y/N 確認つきの穏やかな終了に対応します。
+- [xiaweiliang060035/dsh-opencode-go-usage](https://github.com/xiaweiliang060035/dsh-opencode-go-usage) — すべての API キーについて OpenCode Go のサブスクリプション使用状況（ローリング/週次/月次）をリアルタイム表示するフローティングウィジェット。レート制限の警告とキープールの自動検出に対応します。
+- [xxvk/dsh-cost-crystal](https://github.com/xxvk/dsh-cost-crystal) — Web UI 向けのフローティングなコストの水晶。残高カード、リアルタイムの tok/s、ピーク/オフピーク切り替えのカウントダウン、直近 24 時間の支出、🔮 次のメッセージのコスト予測を、すべてタイムゾーンを踏まえて表示します。
+- [yangyongzhen/dsh-session-report](https://github.com/yangyongzhen/dsh-session-report) — セッションごとのコストと使用状況のレポートカード。トークン、キャッシュヒット、所要時間を表示します。
+- [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) — 複数プロバイダーに対応した使用状況ダッシュボード。プロバイダー/モデル別のトークン内訳、カレンダーからの掘り下げ、アカウント残高、OpenCode Go / Z.ai のサブスクリプションクォータの追跡に対応します。
+- [yflmq001/dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) — モデル別のトークンコスト追跡。キャッシュのヒット/ミス、出力、ピーク時間帯の価格を設定でき、セッションのコストバーをリアルタイム表示し、未設定のモデルには印を付けます。
+- [yokesky/dsh-usage-lens](https://github.com/yokesky/dsh-usage-lens) — DSH Web UI 向けの使用状況ダッシュボード。情報カード、280 日分の GitHub 風の活動ヒートマップ、日次のトークン推移、モデル使用のドーナツチャートを表示します。
+- [yyb16yyb-hub/dsh-deepseek-usage](https://github.com/yyb16yyb-hub/dsh-deepseek-usage) — DeepSeek API のリアルタイムな使用状況。低残高の警告（しきい値を下回るとブラウザ通知）付きのアカウント残高、トークンとリクエストの統計（累計/当日/直近 60 秒、モデル別・セッション別）、推定コストを、コンポーザーのドックと設定ページの使用状況パネルに表示します。
+- [YZz-S/dsh-billing-balance](https://github.com/YZz-S/dsh-billing-balance) — DeepSeek API アカウントの残高と、火山エンジン Ark の Coding/Agent Plan のクォータ枠（5 時間/週次/月次、リセットまでのカウントダウンつき）を、設定パネル、コンポーザーのドック、ドラッグできるフローティング更新ボタンに表示します。
+- [YZz-S/dsh-token-cost-meter](https://github.com/YZz-S/dsh-token-cost-meter) — コンポーザーの統計行にセッションのトークン使用量と推定コストをリアルタイム表示。価格は DeepSeek の公式価格ページから取得します。
+- [zer0zio-stack/dsh-opencode-go-quota](https://github.com/zer0zio-stack/dsh-opencode-go-quota) — DSH Web UI の右下に置く残高バッジ。展開すると、選択中のプロバイダーの OpenCode Go プランの上限または DeepSeek のプリペイド残高に加え、ローカルのトークン使用量と価格に基づく支出見積もりを取得します。
+- [zh667/TokenLedger](https://github.com/zh667/TokenLedger) — サイドバーの使用状況パネル。既存のプロバイダー設定を読み取り、各リクエストを処理した中継サイトごとにトークンを割り当てます。当日/当月/全期間の合計、サイト別とモデル別の内訳、1 年分の活動ヒートマップ、New API / Sub2API / DeepSeek の残高を表示します。
+- [zoumutou/dsh-cost-balance](https://github.com/zoumutou/dsh-cost-balance) — コンポーザーの下に置く、折りたためる iOS 風の統計ピル。セッションのコスト、DeepSeek アカウントの残高、キャッシュヒット率、トークン使用量をすりガラス調のパネルにまとめます。
+
+### 🎭 テーマと外観
+
+- [0nt-one/dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin) — ネオブルータリズム風スキン。2 つの配色（Blue Command / Aged Newspaper）を切り替えられ、硬い影と角張ったコーナー、ライト/ダークテーマに対応します。
+- [aerince/dsh-models-dev-reasoning](https://github.com/aerince/dsh-models-dev-reasoning) — 設定されていないサードパーティの DeepSeek Harness モデルに、models.dev の推論レベルを追加します。
+- [AKS1st/dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle) — DSH Web シェルの背景に粒子ネットワークを重ねるオーバーレイ。全画面・クリックスルー・実行時依存ゼロです。
+- [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) — DSH Web UI 向けの IKUN ファンスキン。システムテーマ一覧に星空ブルーと黒金の配色を追加し、全画面の写真壁紙のローテーション、ミュージックボックス、送信ボタンのボイスを備えます。
+- [BeiZi6/dsh-theme-plugin](https://github.com/BeiZi6/dsh-theme-plugin) — DSH Web GUI 向けのテーマスタジオ。5 つの組み込みプリセットに加え、ライト/ダークの配色（アクセント、背景、前景、UI とコードのフォント、半透明サイドバー、コントラスト）を自由にカスタマイズでき、即座に反映されて localStorage に保存されます。
+- [caoyiwei850/dsh-client-ui-skins](https://github.com/caoyiwei850/dsh-client-ui-skins) — DSH Web UI 向けのスキンプラグイン。組み込みスキン 4 種に加え、任意の画像をインターフェース全体の背景にできるカスタムスキンを提供し、配色はその画像の主要な色相に追従します。
+- [chinaRXQ/dsh-wallpaper](https://github.com/chinaRXQ/dsh-wallpaper) — DSH Web UI 向けの壁紙スキン。画像を背景にし、不透明度、マスク、ぼかしを調整できます。
+- [DamonKoy/dsh-web-ui#dsh-skins](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-skins) — スキンの一括パッケージ。1 回のインストールでスキンセンターと全スキン素材（qq98、ths、xp、blue-fantasy、dragon-heir、minecraft、miku、trading）が揃います。
+- [DocJlm/dsh-arknights#pramanix-eyjafjalla](https://github.com/DocJlm/dsh-arknights/tree/main/skins/pramanix-eyjafjalla) — アークナイツ風の DSH Web UI ファンスキン。昼と夜の天空の庭を舞台に、スカジャン（Pramanix）とエイヤフィヤトラ（Eyjafjalla）が登場します。
+- [dsh-plugins/dsh-thought-buddy](https://github.com/dsh-plugins/dsh-thought-buddy) — GrokBot 風のアニメーションアバターと、同期して動くタイプライターのステータス行を「Deep diving...」の表示のすぐ前に置きます。
+- [GGBond2424648901/deep-whale-day-night-theme](https://github.com/GGBond2424648901/deep-whale-day-night-theme) — 昼夜で切り替わるクジラ娘スキン。昼はクリスタルの工房、夜は月の潮の観測所という対になる情景に、ちびキャラ、装飾、控えめな泡と星の演出を添えます。
+- [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — DSH Web UI 向けの Anthropic Sans / Serif / Mono フォント。CJK には Source Han をフォールバックとして使います。
+- [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) — DSH Web UI 向けの壁紙スキン。プリセット、画像 URL またはアップロードに対応し、不透明度のスライダーでインターフェースを薄くして壁紙を見せられます。
+- [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) — Codex 風のスキン切り替えに加え、不透明度とぼかしを調整できる壁紙レイヤーを追加します。
+- [kingOfSoySauce/dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin) — 各モデルが選べる推論強度を 0〜30 の視覚的な強度スケールに割り当てる、適応的な推論スライダーのスキン。人物画、背景、インターフェースの色が連動して変わります。
+- [leavestring/awesome-dsh-background-plugin](https://github.com/leavestring/awesome-dsh-background-plugin) — DSH Web の背景設定。ローカル画像のアップロードやプリセットの雰囲気の選択を、プレビューを見ながら行え、設定は保存されます。
+- [LeemanCheung/dsh-qq2007-skin](https://github.com/LeemanCheung/dsh-qq2007-skin) — QQ 2007 を思わせる DSH Web スキン。ネイティブなテーマトークン 72 個、範囲を限定した 3 ペイン構成、オリジナルのオフライン素材とドット絵の相棒、任意の送信音、レスポンシブとアクセシビリティのフォールバック、設定から元に戻せるスイッチを備えます。
+- [Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — ニューモーフィズム調の DSH Web テーマ。ライトとダークの配色、環境光、マテリアルの影、粒状のテクスチャ、すりガラス面、細やかなインタラクションを備えます。
+- [MangMax/dsh-themes](https://github.com/MangMax/dsh-themes) — DSH Web UI の外観・テーマプラグイン。組み込みの配色、ライト/ダーク/システム追従の外観モード、Open VSX のテーマ検索とインストール、VS Code テーマの取り込みに対応し、テーマライブラリを保存します。
+- [NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin) — DSH Web GUI 向けの Catppuccin テーマ。Latte、Frappé、Macchiato、Mocha をネイティブのテーマランタイムに登録し、ワンクリックで切り替えて選択を保存します。
+- [PAKIKNOWLEDGE/dsh-client-ui-skin-claude](https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude) — Claude 風のスキン。温かみのある黒のキャンバス、粘土色のアクセント、セリフ体の UI で、ネイティブのライト/ダークテーマに追従します。
+- [RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) — コマンド 1 つで導入できるスキンプラグイン。オリジナルテーマ 8 種、不透明度とぼかしを調整できる半透明壁紙、ユーザーごとのアクセント色、共有できるテーマパックの入出力、お気に入り、おまかせ機能を、DSH のトークンシステム上でネイティブに実装しています。
+- [RizenHNT/dsh-skin-digital-arcade](https://github.com/RizenHNT/dsh-skin-digital-arcade) — デジタルアーケードの HUD 風スキン。ネオンのシアン/バイオレット/マゼンタの配色、Ark Pixel フォント、アニメーションするスプライト（街の背景、データコア、マスコット）、独自のクロスヘアカーソルを備え、ライトとダークはシステムに追従します。
+- [SamizuHM/dsh-client-ui-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp) — DSH Web UI 向けの Windows XP Luna デスクトップ。タスクバーとデスクトップアイコンを備えたフローティングウィンドウマネージャーに、当時に忠実な Luna スキンを組み合わせています。
+- [SenryLee/dsh-frosted-window](https://github.com/SenryLee/dsh-frosted-window) — 画像をアップロードしてウィンドウ全体をすりガラス調のテーマにします。サイドバー・会話・詳細が 1 枚のすりガラス層を共有し、保存と削除に対応。公式のライト/ダーク/システム設定はそのまま有効です。
+- [Sim-xia/dsh-vscode-theme](https://github.com/Sim-xia/dsh-vscode-theme) — Visual Studio Code 向けに作られた .vsix のテーマファイルを取り込み、DSH Web UI に適用します。
+- [Small-tailqwq/dsh-deep-whale#maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier) — DSH Web UI 向けのクジラ娘スキンシリーズ（maid-atelier）。
+- [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) — DeepSeek Chat 風のシロナガスクジラの配色スキン。ライトとダークは組み込みの外観設定に追従します。
+- [tianyhjg-lab/dsh-font](https://github.com/tianyhjg-lab/dsh-font) — DSH Web GUI のフォント切り替え。UI フォント 99 種とコードフォント 31 種を、CJK とラテンの組み合わせスタックつきで提供し、即座に適用して localStorage に保存します。
+- [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) — Web UI の外観を細かくカスタマイズできるテーマプラグイン。テーマ色、背景の壁紙、ホーム画面の各領域ごとの透明度とぼかしを調整でき、テーマ共有のための入出力にも対応します。
+- [Tommy00748/dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) — サイバーパンク 2077／ナイトシティ風テーマ。NC イエローとネオンシアンの世界観、CRT の走査線、Kiroshi 風のホバー追尾、戦闘状態の HUD、合成されたタイプライター音とメッセージ効果音、隠し要素（relic / johnny）を備えます。
+- [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) — DeepSeek Harness の WebUI の外観カスタマイズ。テーマの配色、壁紙と動画背景、半透明とガラス調の表現に対応します。
+- [tuogusa/dsh-whale-background](https://github.com/tuogusa/dsh-whale-background) — Web UI 向けのクジラ娘の壁紙背景と、すりガラス調の半透明なアプリ表面。
+- [Ultronen/dsh-liquid-glass](https://github.com/Ultronen/dsh-liquid-glass) — トグル 1 つで DeepSeek Harness のシェル全体を半透明にします。不透明度のスライダーと、ページ全体の背景画像の設定つき。
+- [wsxwj123/dsh-plugins#skin-gallery](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/skin-gallery) — dsh-web-ui のスキンを忠実に再現した 9 種類。独自スキンパックの取り込み、プレビュー、適用、削除、既定への復帰に対応し、吹き出しとコードブロックの読みやすさも整えます。
+- [wsxwj123/dsh-plugins#theme-gallery](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/theme-gallery) — 厳選されたテーマファミリー 15 種に加え、CSS のみの独自テーマの取り込み、プレビュー、適用、削除、既定への復帰に対応します。ネイティブのライト、ダーク、システム追従のモードに沿って動きます。
+- [xiaozhe7772222/dsh-api-key-pool](https://github.com/xiaozhe7772222/dsh-api-key-pool) — LLM プロバイダー向けの API キーのローテーションプール。設定からプロバイダーを自動検出し、プロバイダーごとに複数キーをラウンドロビンし、401/403/429 でフェイルオーバー、クールダウン後に復帰します。
+- [xingyingyuzhui/dsh-liquid-glass](https://github.com/xingyingyuzhui/dsh-liquid-glass) — DSH Web UI 向けの壁紙と、任意で使える Liquid Glass の島。Ice/Deepwater のプリセット、画像の取り込み、壁紙の不透明度、島ごとのぼかしを、公式のライト/ダーク/システム設定のうえで利用できます。
+- [yunxiiQwQ/dsh-maid-whale-webUI#maid-whale-webui](https://github.com/yunxiiQwQ/dsh-maid-whale-webUI/tree/main/maid-whale-webui) — DSH Web UI 向けのクジラメイドの紙質感テーマ。ライトとダークの配色、海のイラスト、手描きの枠、装飾素材、常駐するペットを備えます。
+- [zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme) — Catppuccin のテーマプラグイン。Latte、Frappé、Macchiato、Mocha のスキンを DSH Web のテーマランタイムに提供します。
+- [zhijun-dai/dsh-Fonts](https://github.com/zhijun-dai/dsh-Fonts) — フォントシステムのプラグイン。プラグインからオフラインで配信される OFL の Web フォントのプリセット、ユーザーが取り込んだ woff2 フォント、他のプラグインが拡張できる ctx.fonts のレジストリを備えます。
+- [zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme) — Solarized と Selenized のテーマプラグイン。忠実な 4 つの配色を DSH Web のテーマランタイムに登録します。
+- [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) — 設定パネルのスキンマネージャー。インストール済みの Web UI スキンを自動検出してワンクリックで切り替え、プロファイルのパッチも自動で維持します。
+- [zhxqc/dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme) — Web テーマとファイルワークスペースのプラグイン。全体の文字組みの調整、@file メンション、プロジェクトのファイルツリー、Markdown プレビュー、幅を変えられるサイドパネルを備えます。
+
+### 🔌 モデルとプロバイダー
+
+- [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) — 2 階層のモデルルーティング。強いモデルが計画・助言・レビューを担い、安価なモデルが実装します。プランモードを踏まえた自動振り分け、影響の大きい操作のエスカレーションガード、失敗時の自動エスカレーション、サブエージェントの階層化に対応。
+- [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) — 役割に応じた LLM の再試行とフォールバックの戦略。
+- [cuboteam/Dit#dsh-plugin-dit](https://github.com/cuboteam/Dit/tree/main/packages/dsh-plugin-dit) — DeepSeek Harness 向けの DIT.ai プロバイダーバンドル。DIT_API_KEY 1 つで OpenAI Chat Completions のモデル 29 個と Anthropic Messages のモデル 10 個を導入し、プロトコルごとの thinking 設定にも対応します。
+- [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) — グローバルな簡体字中国語モード。入力欄の「中」スイッチが、各セッションのシステムプロンプトに言語の指定（地域に応じて中国語または英語）を注入します。アンカー付きモードでは、対象のプリセットに対して英語で思考させます。
+- [dylan121322/llm-adaptive](https://github.com/dylan121322/llm-adaptive) — 適応的なモデルルーティング。リクエストごとに複雑さを判定し、プロバイダーを自動で振り分けます。
+- [fieldnote-ops/keyringseam](https://github.com/fieldnote-ops/keyringseam) — macOS のキーチェーンを使う資格情報プロバイダー。ローカルファイル方式を置き換え、署名・公証済みのユニバーサルヘルパーを使います。
+- [franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — ChatGPT の OAuth と OpenAI Codex のモデルを DeepSeek Harness に接続します。検索と画像のツールは任意で有効にできます。
+- [GodD6366/dsh-sub2api](https://github.com/GodD6366/dsh-sub2api) — sub2api ゲートウェイを DeepSeek Harness に接続。OpenAI 互換のマルチプロバイダー経路（OpenAI / Claude / Grok / Gemini）を 1 つのベース URL にまとめ、キーごとのモデル検出、使用量の照会、共通の視覚/画像ツールを提供します。
+- [jiay98528-dev/dsh-model-sync](https://github.com/jiay98528-dev/dsh-model-sync) — プロバイダーの最新モデル一覧を DSH の設定に書き込み、現在のセッションのモデルについて 5 時間/7 日のプラン枠か従量課金の残高を表示します。
+- [kam74515-boop/dsh-everything-oauth](https://github.com/kam74515-boop/dsh-everything-oauth) — ローカルの Codex、Grok、Claude、OpenCode、CC Switch のログイン情報を DSH に取り込みます。設定画面で使う情報源を選び、モデルを有効化できます。
+- [katsos/dsh-claude-cli](https://github.com/katsos/dsh-claude-cli) — ローカルにインストールされた Claude Code CLI をモデルのバックエンドとして動かす LLM プロバイダー。従量課金の API キーではなく既存の Claude サブスクリプションを使ってリクエストします。ネイティブのツール呼び出しは MCP を介して橋渡しされます。
+- [kinoward/dsh-plugin-subhub](https://github.com/kinoward/dsh-plugin-subhub) — DeepSeek Harness でサードパーティのサブスクリプションアカウントを利用。契約に含まれるモデルでチャット、画像理解、画像生成、画像編集ができ、利用可能なモデルと推論レベルはアカウントから同期されます。現在は OpenAI/ChatGPT のサブスクリプションに対応し、今後プロバイダーを追加予定です。
+- [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) — 非公式の Command Code LLM プロバイダー。モデルカタログをリアルタイム取得し、推論強度にも対応した `commandcode` 経路を登録します。
+- [NOirBRight/dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama) — Ollama Cloud のネイティブチャットアダプター。Ollama の /api/chat のワイヤ形式を NDJSON のまま変換し、コンテキスト長と機能を含むモデル検出、ollama-cloud という id での Web 検索/取得プロバイダー、Web の設定カードを提供します。
+- [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) — ターミナルを使わないビジュアルな GitHub ログイン。ウィンドウ内でデバイスフローを完了し、トークンを gh CLI に同期、ホストの状態確認と起動のエンドポイントも提供します。
+- [omdsh-dev/Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) — Qwen のマルチモーダル対応プラグイン。
+- [r600a-code/dsh-swarm-router](https://github.com/r600a-code/dsh-swarm-router) — サブエージェントの行列型スウォーム。OpenRouter 系のゲートウェイと cfgpu.com/llm/square から、多様なタスクに最も適したモデルへ振り分け、プロセス内サブエージェントまたは直接の LLM 呼び出しで実行し、モデル別のトークン消費をフィードバックに基づくランキングとともに追跡します。
+- [ringoage/dsh-subagent-model-picker](https://github.com/ringoage/dsh-subagent-model-picker) — メインのモデル欄の隣に置く GUI のサブエージェント用モデルセレクター。セッションごとにモデルと推論強度を選ぶと、プロセス内のすべてのサブエージェントに適用されます。
+- [SeverusZh/dsh-plugin-subagent-director](https://github.com/SeverusZh/dsh-plugin-subagent-director) — サブエージェントごとに LLM のプロバイダーとモデルを選べるようにし、役割テンプレートも提供します。
+- [songoao25/dsh-chatgpt-subscription](https://github.com/songoao25/dsh-chatgpt-subscription) — 公式の OAuth で ChatGPT アカウントを連携し、Plus/Pro のサブスクリプション枠を使って DSH 内で ChatGPT のモデルと会話できます。
+- [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) — Codex CLI の ChatGPT ログインを `openai-codex` の LLM 経路として再利用し、DSH Web の設定に GPT の認証コントロールを追加します。
+- [superboy911/dsh-model-router](https://github.com/superboy911/dsh-model-router) — DeepSeek Harness 向けの決定論的なキーワードルーティング、許可リストによるモデル切り替え、独立した image_gen チャネル。
+- [wenzetan/dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) — NewAPI（OpenAI 互換ゲートウェイ）の LLM プロバイダー。`newapi` 経路を登録してチャット用モデルのみを検出し、モデルのパラメーター（コンテキスト長、推論強度）を models.dev から自動補完、Web の設定にベース URL と API キーの項目を追加します。
+- [WNJXYK/dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth) — DeepSeek Harness で ChatGPT/Codex のサブスクリプションを使えるようにします。GPT モデル、画像生成、Web 検索、サブスクリプションのクォータ表示、モデルと機能の制御に対応し、ブラウザまたはデバイスコードでの OAuth ログインが可能です。
+- [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) — Codex モデル向けの組み込み ChatGPT OAuth プロバイダー。選択式のサブスクリプション Web 検索、標準 Codex と Spark のバックエンドクォータ、DSH の設定 UI を備え、API キーも Codex CLI も不要です。
+- [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) — ローカルの Codex ログインを使う Codex App Server のモデルプロバイダー。セッションの再利用、Harness のツールとの橋渡し、ネイティブな操作履歴、生成画像の永続的な投影に対応します。
+
+### 💬 セッションとメッセージ
+
+- [3274375092/dsh-voice](https://github.com/3274375092/dsh-voice) — DeepSeek Harness の音声入力。マイクに話しかけると、ローカルまたはブラウザの音声認識で変換したテキストが通常のチャットメッセージとして送信されます。
+- [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) — アシスタントの返信に含まれるローカル画像パスを、メッセージ本文内にそのまま表示します（9 形式対応、クリックで拡大するライトボックス、サイズ調整可）。
+- [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — 永続的な変更台帳（Change Ledger）を使って、会話とワークスペースの状態を巻き戻します。
+- [anweat/dsh-assistant-message-forge](https://github.com/anweat/dsh-assistant-message-forge) — テスト用のアシスタントメッセージの作成・変更・注入と、session.jsonl(.zstd) のセッションログを新しいセッションへ取り込み・修復します。
+- [beijingwahw/dsh-companion](https://github.com/beijingwahw/dsh-companion) — 4 つの機能をまとめたセッションの相棒。賢い会話の書き出し（Markdown/PDF/JSON/PNG の長い画像、秘匿情報の伏せ字化、まとめて ZIP 化）、テンプレートの保存と取り込みができる引き継ぎ要約、API コストの最適化（公式価格のリアルタイム取得、ピーク/オフピークの調整、日次・月次の予算、モデルの振り分け）、全体の会話検索とチャット内検索（Ctrl+F、CSS Custom Highlight API）を備えます。
+- [bill9109/dsh-conversation-share](https://github.com/bill9109/dsh-conversation-share) — 会話の任意の部分を切り出して共有できます。
+- [Boliban/dsh-enter-customizer](https://github.com/Boliban/dsh-enter-customizer) — チャット入力欄でシステムの入力ショートカットを引き取り、ショートカットごとに挙動を個別設定できます。
+- [Buyi-wsgzg/dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) — `/side` による永続的なサイドセッションと `/btw` による使い切りのサイド質問。一時的なフォークで実行され、メインの履歴には手を触れません。
+- [bwndlct/dsh-session-export](https://github.com/bwndlct/dsh-session-export) — `session_export` ツールとスラッシュコマンドで、現在のセッションを可搬でスキーマのバージョン管理された Markdown と JSON に書き出します。ファイル名はどの OS でも安全な形式になります。
+- [caoqinnan-web/organize-workspace-sessions](https://github.com/caoqinnan-web/organize-workspace-sessions) — DeepSeek Harness のワークスペースのセッションを「类别｜主题」の形式に名前変更して整理し、アーカイブ・改名・見直しの提案を報告します。
+- [Chinesezjc/dsh-interconnect](https://github.com/Chinesezjc/dsh-interconnect) — interconnect サーバーを介した DSH インスタンス間のメッセージとイベントの受け渡し。
+- [chouyong/dsh-fork-graph](https://github.com/chouyong/dsh-fork-graph) — セッションヘッダーに Git 風の会話の分岐グラフを表示。色分けされたレーンと分岐の曲線でどのセッションがどこから分かれたかが分かり、クリックで移動できます。
+- [ChuanTianML/dsh-local-share](https://github.com/ChuanTianML/dsh-local-share) — Web のセッション全体をローカルの Markdown か単体で完結する HTML に書き出します。表示崩れのないプレビュー、既定での秘匿情報の伏せ字化、任意で有効にできる範囲限定のツール呼び出し詳細に対応。
+- [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) — deepseek.com の Web/アプリと同じチャット体験を DSH にもたらします。プロンプトをその場で編集して回答を作り直せ、メッセージごとに <i/N> のバージョンページャー（会話をまたいで安定するツリーモデル）が付きます。
+- [czm15053/dsh-peer-link](https://github.com/czm15053/dsh-peer-link) — dsh と Claude Code のセッションが直接メッセージをやり取りできるようにします。クリックできるピア一覧カード（並べ替え/検索/送信/更新）付き。
+- [DamonKoy/dsh-projection-guard](https://github.com/DamonKoy/dsh-projection-guard) — 永続化されたセッション投影キャッシュを保護します。行ごとに JSON を段階的に切り捨てることで、行儀の悪い投影ユニット（Map を保存するサードパーティプラグインなど）がセッションタイトルやキャッシュ全体を止めてしまうのを防ぎ、起動時の自己修復で欠けたタイトルを埋め直します。
+- [dongsheng123132/task-passport](https://github.com/dongsheng123132/task-passport) — DeepSeek Harness、WorkBuddy、Claude Code、Codex をまたいでタスクの状態を持ち運びます。機械可読なチェックポイントと楽観的ロックを備えます。
+- [dream12347/dsh-session-manager](https://github.com/dream12347/dsh-session-manager) — DSH のセッションマネージャー。ゴミ箱による削除/復元/完全削除、アーカイブ済みセッションの復元、最近の活動統計、続行/一時停止、ログフォルダーを開く、未読マーク、新しいチャットへの分岐、ワークスペース単位のグループ分けと並べ替え、コンパクションのしきい値設定に対応します。
+- [dylan121322/dsh-session-unarchive](https://github.com/dylan121322/dsh-session-unarchive) — アーカイブ済みのセッションを、Web GUI のサイドバーから元のワークスペースに戻します。
+- [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) — 視覚的な分岐ブレインストーミング。方向性ごとに独立したセッションを作り、親・兄弟・チェックポイント・復帰の引き継ぎを自動化し、ツリー全体のタブと任意の Better Sidebar 表示を提供します。
+- [GengDaPeng/dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — DeepSeek Harness のセッション間エージェントメッセージング。セッションの発見、オフライン配信、配信レシート、送信元セッションへの移動に対応します。
+- [hajimimaodie8/DSH-Session-Sync](https://github.com/hajimimaodie8/DSH-Session-Sync) — DSH の web インスタンスと DSH Desktop の間で、セッション、ワークスペース、設定、プラグインを双方向に同期します。
+- [heartmove/dsh-side-chat](https://github.com/heartmove/dsh-side-chat) — 会話の一部を選んで、右側のサイドチャットで質問できます。AI の返信はそのままか要約としてメインのチャットに戻せます。
+- [hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — 会話をワンクリックで共有できます。
+- [hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — DeepSeek Harness の web UI で、確認ダイアログ付きの会話削除と、アーカイブ済みセッションの管理（アーカイブ/解除）ができます。
+- [huguangyu666/dsh-plugin-session-import](https://github.com/huguangyu666/dsh-plugin-session-import) — claude-code / codex / reasonix / zcode のチャット履歴を dsh のセッションに取り込みます。ワークスペースの紐付け、ツール呼び出しの保持、巨大セッションの保護、zcode のコンパクション復元に対応。
+- [HuiHuitie-zhu/dsh-incognito](https://github.com/HuiHuitie-zhu/dsh-incognito) — シークレットセッション。親の文脈を持たない独自プリセットとフルのツールセットを備えた単発のサブエージェントを、ドラッグできるフローティングウィンドウで動かし、閉じると痕跡を残さず消去します。
+- [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) — 履歴を混ぜずに、独立した DSH のセッションとプロバイダー由来のメンバーを協調させます。永続的なネイティブの Room を使い、識別子に紐づく先頭の `@` メンション、直接配信、ブロードキャスト、リーダー権限の制御を提供します。
+- [ishuowang/dsh-rolehub-bridge](https://github.com/ishuowang/dsh-rolehub-bridge) — 可搬な RoleHub のロールを見つけて検証し、バンドルを厳密に固定したうえで、そのプロンプトと同梱スキルを隔離された継続可能な DSH セッションで起動します。ツールの紐付けはホストの承認を経て行われ、Agent Team Room への参加も任意で選べます。
+- [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) — 動作中のエージェントを待つことも中断することもなく、必要な文脈だけを引き渡します。範囲を限定したセッションのスナップショットを凍結し、ツールを持たない独立した LLM で非同期に要約して、来歴つきのカプセルを別のセッションや権限のある Room に届けます。セッションへは既定で静かに届き、必要なら明示的に起こすこともできます。
+- [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) — DSH Web UI 向けのアーカイブ済みセッション管理。アーカイブしたセッションを開いて会話を続ける、元の場所に戻す、完全に削除する、といった操作ができます。メッセージ検索とネイティブ表示への同期を備えたパネルにまとまっています。
+- [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — DSH のセッション間メッセージング。ローカルのハートビートレジストリと受信箱を使い、同じマシン上のどのセッションからでも他セッションを一覧して Claude Code 風にメッセージを送れます。
+- [JohnXu22786/session-titler](https://github.com/JohnXu22786/session-titler) — 2 段階のセッションタイトル付け。会話中はキーワードから即座にタイトルを付け、アイドルになったら最も安価なモデルで整えたタイトルと一行要約を生成します。
+- [kirkchinese/claude2dsh](https://github.com/kirkchinese/claude2dsh) — Claude Code のセッション、スキル、プラグイン資産を、再開可能なネイティブセッションとして DSH に取り込み、DSH のセッションを Claude Code の JSONL へ書き出したり同期したりできます。
+- [Leeminjing/dsh-messages-sanitizer](https://github.com/Leeminjing/dsh-messages-sanitizer) — ツール実行のクラッシュ後に messages 配列を自動修復し（孤立した tool_calls / tool メッセージ）、400 INVALID_REQUEST によるセッションのロックを防ぎます。
+- [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) — harness 自身の `sessionQuery` サービスを通じて、過去と現在のセッションを検索・一覧・閲覧します。SQLite の FTS5 インデックスが有効な環境ではそれを使い、そうでなければ新しい順の範囲限定スキャンにフォールバックします。
+- [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) — 引き継ぎメモ付きのセッション横断タスクキュー。セッションやサブエージェントが、ファイルに保存された共有キューに対してタスクの投入・受け取り・完了・取り消しを行い、次に引き継ぐ相手のために要約を残します。
+- [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) — 任意のユーザーメッセージまで巻き戻します。会話（公式のセッション分岐）とワークスペースのファイル（メッセージごとの影 git スナップショット）をその直前の状態に戻し、差分プレビューの確認パネルを表示します。
+- [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) — 設定できる人間味のあるクジラ娘メイドのペルソナを追加します。没入感のあるロールプレイ、話し方のモード、問い合わせで想起される軽量な階層メモリを備えます。
+- [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) — web UI とデスクトップクライアントから DSH のセッションを削除します。ヘッダーの危険ボタンとセッション行のメニュー項目にリスク同意のダイアログを設け、ホストのエンドポイントとエージェントツールがセッションログ、投影キャッシュ、ワークスペースの集計を取り除きます。
+- [Max-Null/dsh-chinese-thinking](https://github.com/Max-Null/dsh-chinese-thinking) — 固定のシステムプロンプトを 1 セクション注入し、ユーザーの言語にかかわらずエージェントが中国語で考えて中国語で答えるようにします。
+- [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) — DSH セッションの診断・復旧・閲覧。エージェントの状態つきでセッションを一覧し、会話を読み、止まったエージェントを診断して cancel+keepInbox で復旧させ、他のセッションにメッセージを送れます。
+- [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — 分岐を使ったメッセージの編集、振り直し、再試行と、バージョンのタイムライン。
+- [Moeblack/dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) — ユーザーと組み込みのシステムプロンプトのセクションを、プレビューを見ながら編集できます。
+- [MuWinds/dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) — アーカイブ済みセッションの管理。閲覧、アーカイブ解除、まとめての削除ができます。
+- [Nothree-code/review-quote-sh](https://github.com/Nothree-code/review-quote-sh) — 会話用のメッセージレビューと引用チップ。複数モデルによる相互レビュー（コード/返信）を深刻度の採点と要約つきで行い、レビュー履歴とホスト側に保存される設定を備えます。
+- [Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 13 種のコーディングエージェント（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode ほか）のチャット履歴を、忠実さを保ったまま再開可能な DeepSeek Harness のセッションとして取り込みます。Claude Code への逆方向の書き出しにも対応。
+- [Nwflower/dsh-file-claim](https://github.com/Nwflower/dsh-file-claim) — 同じワークスペースで並行して動く DSH セッションのためのファイルの占有/解放保護（ハートビートが途絶えたら引き継ぎ、保留中の 3 方向マージ領域つき）。
+- [p2coder/dsh-task-control](https://github.com/p2coder/dsh-task-control) — 進行中の会話タスクをコンポーザー付近から一時停止/再開/中止できます。強制停止は即座に割り込んで中断したツールを覚えておき、安全な停止はツールや推論が終わってから効きます。再開時は確認を挟み、既定の停止の粒度は設定で変更できます。
+- [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) — アシスタントの返信をメモとタグ付きでブックマークできます。すべてのブックマークをセッション横断のセンターで閲覧し、Markdown に書き出せます。
+- [PerryLink/dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) — 4 つの移行元に対応したウィザード。Claude Code、Codex、OpenCode、Hermes のセッション、メモリ、スキル、指示、スラッシュコマンドを DSH に移します（承認ゲートと冪等な move.json を備えた /move ウィザード、セッションは再開可能）。
+- [PerryLink/dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) — セッションとワークスペースを Web サイドバーの上部にピン留め。ピンごとの行の色分け、ヘッダーの切り替え、ピン専用パネルを備えます。0.4.0 ではナビゲーションの整理機能を追加——ピンのグループ（ボード）、タグ、保存した絞り込みビュー、セッションの健全性サマリー、/goto が加わりました。
+- [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — `dsh://` のセッションディープリンクをコピーして開いたり、別の会話に貼って、参照先セッションの範囲を限定した読み取り専用スナップショットを差し込んだりできます。
+- [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) — Web UI からドラッグ＆ドロップまたはメニューでセッションを別のフォルダーへ移動でき、リスク同意のダイアログを経て完全削除もできます。会話全体を要約した AI による名前変更（誤字も考慮）にも対応。各操作はエージェントツールとしても使えます。
+- [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — ブラウザ内に保存するプロンプトライブラリ。コンポーザーのピッカーからセッション単位のシステムプロンプトを複数注入でき、分岐時の継承、二言語 UI、お気に入り、JSON でのバックアップに対応します。
+- [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) — 編集、削除、方向づけ、並べ替え、一括削除ができるシンプルな DSH のキューパネル。
+- [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) — チャットの横に置いたフローティングボタンから、セッション内のすべての質問を検索できる一覧を開き、すばやく移動できます。
+- [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) — セッションにタグを付け、Web の設定パネルからタグでセッションを検索できます。
+- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — DeepSeek Harness の設定にアーカイブ済みチャットのページを追加。ワークスペース別にまとめたアーカイブ済みセッションを閲覧・検索・アーカイブ解除・削除でき、削除はバックグラウンドに残っているセッションでも再起動なしで即座に反映されます。
+- [whyihaveyou/dsh-suite#plugin-session-export](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export) — 追記のみのセッションログを、人が読める Markdown か HTML として、軌跡の出どころごとにまとめて書き出します。
+- [Wine-Red/dsh-prompt-stash](https://github.com/Wine-Red/dsh-prompt-stash) — セッションごとにローカルで動く LIFO 方式のプロンプト退避。書きかけのコンポーザーの文章を一時的に脇へ置き、あとで安全に戻せます。
+- [wsxwj123/dsh-plugins#dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager) — DSH Web GUI 向けのセッション削除。5 秒間の取り消しとゴミ箱に加え、アーカイブを閲覧して元に戻せるビューを備えます。
+- [wuxiangru915/dsh-session-manager](https://github.com/wuxiangru915/dsh-session-manager) — DSH Web UI 向けのセッション管理。すべてのセッションとアーカイブ済みセッションの閲覧、復元/アーカイブ解除、2 段階確認つきの削除、設定パネルからの会話内容のプレビューができます。
+- [xianshu-virtuous/dsh-whale-companion](https://github.com/xianshu-virtuous/dsh-whale-companion) — コンテキストの上限が近づくと、直近の完結したターンを引き継いで新しい Web セッションを自動で開始します。あわせて、編集でき必要に応じて読み込み直せる追加的なクジラメイドのペルソナも提供します。
+- [yangyongzhen/dsh-session-export](https://github.com/yangyongzhen/dsh-session-export) — セッションを Markdown/JSON に書き出し、振り返り、再生、セッションごとのコスト集計に使えます。
+- [YeqingTang/dsh-session-flow](https://github.com/YeqingTang/dsh-session-flow) — セッション横断のアーカイブ。全体を見渡すワークベンチ、折りたたんだタイムライン、サブエージェントの系譜、内容の検索、ルール＋LLM による要約、ZIP での書き出し、リアルタイム追跡を備えます。
+- [yuezengwu/dsh-explain](https://github.com/yuezengwu/dsh-explain) — ローカル優先の学習モード。セッションをまたぐ学習スレッドと、情報源ごとの解説を提供します。
+- [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) — 任意の期間で作れるセッションレポート。AI がまとめた日次/週次のダイジェストを任意の日付範囲で生成でき、N 日ごとの定期リマインダーをシステム通知で受け取れます（macOS / Linux）。
+- [zljr/dsh-share](https://github.com/zljr/dsh-share) — 現在のセッションを、トークンで保護した読み取り専用の HTML スナップショットとして LAN 内に共有します。セッションの統計と Markdown の描画に対応。
+- [zoahdev/dsh-shelf](https://github.com/zoahdev/dsh-shelf) — セッションのライフサイクル CLI。書き出し（md/json/jsonl）、アーカイブと復元、ゴミ箱、検索、統計に対応します。既定では読み取り専用で、エンジンが何かを削除することはありません。
+- [ZRui-C/dsh-minimal-first-turn](https://github.com/ZRui-C/dsh-minimal-first-turn) — Web のルートセッション向けの Minimal 互換な初回ターン。まず永続 bash と str_replace_editor だけで始め、ワークスペースとスキルの文脈の自動注入を外し、最初のツール呼び出しか返答の後に選択中のプリセットへ戻します。コンポーザーに常設のトグルも追加します。
+
+### 🧠 メモリ
+
+- [863683348/dsh-plugin-focus](https://github.com/863683348/dsh-plugin-focus) — DeepSeek Harness エージェント向けのフォーカスボード。目的・制約・決定事項をセッションワークスペースの永続メモとしてモデル自身が維持し、コンパクションやセッションをまたいで保持します。コンテキストの自動注入、クリア時のアーカイブ、任意の Web パネル付き。
+- [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) — 公式のコンパクション API を通じて、DeepSeek Harness のコンテキストをモデル自身が整理して削ります。
+- [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — キャッシュに優しい 3 層メモリ。無駄のない自動注入、ターンごとの AI による統合、先回りのカレンダーリマインドと挨拶に加え、他の AI ツールからのメモリ引き継ぎに対応します。
+- [akslcw/dsh-negative-ledger](https://github.com/akslcw/dsh-negative-ledger) — 根拠に紐づく「うまくいかなかったこと」の台帳。否定された道筋（command_failed、file_missing）を結果と前提条件の根拠つきで保存し、根拠が変わるまで同じ試みを警告または阻止します。
+- [baaai123/dsh-memory-protocol](https://github.com/baaai123/dsh-memory-protocol) — メモリプロトコルを強制するプラグイン。opencode-memory の MCP サーバーを橋渡しし、ツール呼び出しの前に memory_weave を必須にし、ターンを自動で取り込み、エージェントのステップにメモリの文脈を注入します。
+- [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — コンテキストの内訳パネル。モデルのコンテキストウィンドウが何で構成され、どう変化しているかを確認できます——構成比とウィンドウサイズ、リクエストごとの履歴、圧縮/注入のイベント、メッセージ単位のトークン統計。
+- [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) — ナレッジベース駆動のエージェントプリセット。wiki 形式の長期メモリ、Web の KB UI、管理ページ、任意の UI 調整を備えます。
+- [Co-Engram/Co-Engram](https://github.com/Co-Engram/Co-Engram) — git 上のプレーンな Markdown として自己進化するチームメモリ。ネイティブな Cordis プラグインとして 38 個の短い名前のメモリツールを登録し、組み立てのたびに再評価される prompt-signals セクション、RPE による強化、減衰、睡眠中の統合を備えます。Claude Code（MCP）や OpenClaw のホストと 1 つのデータリポジトリを共有し、DSH 0.1.0-rc.6 で動作確認済みです。
+- [DamonKoy/dsh-plugins#dsh-memories](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-memories) — プロジェクト単位で永続化するキーバリューのメモリ。set/get/list/delete/search のモデルツールと JSON ファイル保存に対応します。
+- [diqierjia/StrataGate-AgentMemory#deepseek-harness](https://github.com/diqierjia/StrataGate-AgentMemory/tree/main/integrations/deepseek-harness) — DeepSeek Harness 向けの、ローカル優先で自動的に働くセッション横断メモリ。階層化された Event/Element カード、根拠を条件とする想起、元のターンやツール結果への展開に対応します。
+- [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) — 作業ディレクトリと git ブランチごとに自己維持される引き継ぎメモリ。ターンを記録して簡潔な Markdown にまとめ、~/.agent/agent-handoff から以後のセッションに注入します。pi-handoff とバイト互換です。
+- [flymysql/dsh-memory](https://github.com/flymysql/dsh-memory) — セッション横断のメモリ保管庫。remember / recall / forget の各ツール、ターンごとのプロンプト注入、設定ページのエントリブラウザーを備えます。
+- [freehul/sgme](https://github.com/freehul/sgme) — ShiGuang Memory Engine（SGME）ブリッジ。HTTP 経由で複数エージェントが長期記憶を共有します——L0/L1/L1.5/L2 の蒸留、場面に応じた注入、統合検索、先回りの気づかいシグナル（memory_search / wiki_search / signal_pull / signal_claim / signal_ack）。`dsh-sgme` としてインストールできます。
+- [FuRongJun-1999/dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) — AGI 向けの長期記憶基盤。マルチエージェントの時空間メモリグラフ、自己進化する知識のフライホイール、自己認知、監査可能な信頼ガードレールを備えます。
+- [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) — CBDC 方式の権限ゲートを備えた、範囲を限定するローカルメモリ。SQLite + FTS5 のクレーム、使用/検証/無視の判断理由を説明できるスコープ付き想起、完全な監査証跡、/memory コマンドを備え、1 回あたりの注入は 3 クレーム・1200 文字以内、追加のモデル呼び出しもありません。
+- [hellosky983/dsh-qrcode](https://github.com/hellosky983/dsh-qrcode) — DeepSeek Harness 向けのオフライン QR コード（SVG/PNG/ASCII）とバーコード（Code128/EAN-13）の生成。ネットワークもシェルも使いません。
+- [hellosky983/dsh-skillradar](https://github.com/hellosky983/dsh-skillradar) — 現在のセッションから見えるスキルを走査し、直近の会話との関連度で並べ替えます。
+- [highland0971/dsh-native-memory](https://github.com/highland0971/dsh-native-memory) — harness 自身の接続点に載せた、ワークスペース単位のネイティブなメモリ。storage ドメインの JSON ユニットに事実と常時参照される範囲限定のプロフィールを保存し、書き込みは承認を挟んで `(sessionId, seq)` の引用付きで行います。決定論的な想起に加えて、過去セッションに対する session-query の全文検索も利用できます。外部サーバーも独自の SQLite も不要です。
+- [ICCuse/dsh-file-memory](https://github.com/ICCuse/dsh-file-memory) — ファイルに裏打ちされた作業メモリ。重要な前提をセッションのメモファイルに一言一句そのまま記憶・想起させ、コンテキストのコンパクションを経ても失われないようにします。
+- [ICCuse/dsh-knowledge](https://github.com/ICCuse/dsh-knowledge) — Codex の kb.cmd CLI と共有するグローバルな Markdown ナレッジベースへの橋渡し。kb_add/kb_search/kb_show/kb_timeline の各ツールを、バイト互換の frontmatter で提供します。
+- [ICCuse/dsh-premise-guard](https://github.com/ICCuse/dsh-premise-guard) — コンパクション後の前提ずれを防ぐガード。要約から重要な文言のアンカーが落ちたとき、その旨を一度だけ通知します。
+- [Jesse-njx/dsh-memory](https://github.com/Jesse-njx/dsh-memory) — DSH の無損失セッションログを引用できるメモリ。抽出された事実には `(sessionId, eventRange)` の引用が付き、元のログの該当箇所をそのまま展開できます。
+- [jiayan-xu/dsh-memoria](https://github.com/jiayan-xu/dsh-memoria) — ベクトル＋グラフのメモリバックエンド。ローカルの memoria サーバーに対して observe/remember/search/recall のツールを提供し、HNSW による意味的想起、FTS5 のキーワード検索、知識グラフのシグナルを RRF でランキング統合します。ターン終了時の自動永続化と、エージェントごとの名前空間の分離に対応。
+- [jiayan-xu/dsh-memoria-extra](https://github.com/jiayan-xu/dsh-memoria-extra) — memoria の応用ツール群。セッション文脈の注入（プロフィール＋想起）、直近の決定事項、健全性レポート、名前空間の許可リスト、記憶の関係グラフ、実体検索を提供します。dsh-memoria の補完プラグインです。
+- [jinguanghai/deepseek-harness-forge-plugins#forge-memory](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory) — BM25 のキーワードに基づくメモリの想起。
+- [JohnXu22786/context-pruner](https://github.com/JohnXu22786/context-pruner) — 長時間の DeepSeek Harness セッション向けのコンテキスト整理。決定論的なスクリーナーが、公式の ctx.compaction の接続点を通じて古い内容、重複、失敗、肥大化した内容を削ぎ落とします。
+- [KLRSL/dsh-biomemory](https://github.com/KLRSL/dsh-biomemory) — DeepSeek Harness 向けの生体模倣型メモリシステム。プレーンな Markdown のデータ層、メモリツール、凍結スナップショットの注入、段階的な承認ゲート、構造化された監査、記憶の代謝（dream）、メモリのピン留め、意味検索による想起、/memory コマンド、セッション横断の検索を備えます。
+- [lanyun077/dsh-project](https://github.com/lanyun077/dsh-project) — フォルダーとセッションをプロジェクトにまとめ、共有の PROJECT.md メモリと AGENTS.md の指示を各セッションに注入します。プロジェクトツリーのサイドバーつき。
+- [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — コンパクションのバックエンドを、LLM による要約から決定論的な意味抽出（コード/パス/コマンドは残し、雑談は落とす）に置き換えます。28.4 倍の KV 圧縮の計上も行います。
+- [ljsysfurryACE/dsh-memory-director](https://github.com/ljsysfurryACE/dsh-memory-director) — LLM が判断する記憶と忘却。各ターンの後にモデル（MemoryDirector）が何を残すかを決め、ステップの前に関連する記憶を注入し、重複を除いてセッションをまたいで保持します。
+- [LoserFox/distill](https://github.com/LoserFox/distill) — 会話の自動蒸留。バックグラウンドのサブエージェントが振り返りを行い、スキルを作成・更新します。
+- [lovezi0/dsh-memory-palace](https://github.com/lovezi0/dsh-memory-palace) — DeepSeek Harness 向けの人が読める Markdown メモリ。ユーザー単位（~/.deepseek-harness/MEMORY.md）とワークスペース単位のメモリを毎ターン注入し、日次ログを蒸留しながら自動で書き、既存の WorkBuddy/CodeBuddy のメモリディレクトリとも橋渡しします。重複排除を内蔵した memory_note / memory_note_user / memory_read ツールと二言語の設定ページ付き。プレーンテキスト保存でデータベースは不要です。
+- [madage/dsh-self-improved](https://github.com/madage/dsh-self-improved) — DSH 向けの長期記憶と自己進化のプラグイン。L0 の記録 → L1 の記憶抽出 → L2 の場面分類 → L3 のユーザー像、という流れで、想起の自動注入とスキルの合成を行います。完全にローカルで動作します（SQLite FTS5 ＋ jieba、任意でベクトル検索）。
+- [Max-Null/dsh-memory](https://github.com/Max-Null/dsh-memory) — セッションをまたぐ平文メモリ。埋め込みを使わない決定論的な BM25 キーワード想起、人の確認を挟む memory_save/list/search/confirm/forget ツール、git リポジトリに追従するグローバルとプロジェクト単位の JSON ストアを備えます。
+- [modusensus/dsh-mneme#dsh-mneme](https://github.com/modusensus/dsh-mneme/tree/main/dsh-mneme) — DeepSeek Harness 向けの構造化メモリエンジン。オフラインの意味検索、実体・属性・時系列の管理、autoDream による自己統合、人が編集できる Markdown 保存に対応します。
+- [moononnn/DeepSeek-Harness-Hanako-Memory](https://github.com/moononnn/DeepSeek-Harness-Hanako-Memory) — DSH 向けの Hana 風アシスタントマネージャー。ビジュアルなプリセット管理（カード、yuan の性格、アバターの切り抜き）と、Hana のメモリ機構一式（ローリング要約、階層的なまとめ、SQLite の事実ストア、深い記憶）を備えます。
+- [nanpaidashi/dsh-honcho-sync](https://github.com/nanpaidashi/dsh-honcho-sync) — Honcho のメモリブリッジ。会話の各ターンを自前でホストする Honcho サービスに自動同期し、recall/search/remember/context/status のツール、セッション開始時の文脈注入、視覚的な設定パネルを提供します。
+- [Noelune/unified-agent-memory](https://github.com/Noelune/unified-agent-memory) — すべてのエージェントで 1 つの Obsidian vault を共有します。依存関係のない Python コア（search/promote/adjudicate/forget）、vault のテンプレート、dsh プラグイン（memory_search/show/submit/status）で構成されます。
+- [nowledge-co/nowledge-mem-deepseek-harness](https://github.com/nowledge-co/nowledge-mem-deepseek-harness) — あらゆる AI ツールとエージェントに共通のメモリ層。Context Bundle の注入、プロンプト時の想起、MCP ツール、ターン終了時の DSH スレッドの取り込みに対応します。
+- [omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — Mnemon を基盤にした、DeepSeek Harness（DSH）向けのエージェント横断・ローカル優先の永続メモリプラグイン。Mnemon に対応したエージェント間で長期記憶を共有し、実行時メモリ、検索できるプロジェクト文書、意味的な想起、知識グラフ、サイドバー UI を追加します。
+- [PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — 範囲を限定し、層に分け、承認を挟み、監査もできるセッション横断メモリ。型付きの `ctx.memory` 接続点、依存関係ゼロの SQLite プロバイダー、`memory` ツール、凍結スナップショットの注入に加え、アダプターレジストリと配布可能な適合テストを備えた dsh-memory-protocol v1 の試行版を含みます。
+- [Phant0Meow/dsh-memory-meow](https://github.com/Phant0Meow/dsh-memory-meow) — プロジェクト単位のセッション横断メモリ。node:sqlite 上の 6 層ストア（soul/user/project/fact/lesson/topic）、キャッシュに優しい初回メッセージへの注入、memory_remember/search/find_similar/read/update の各ツール、時間帯ごとの夜間統合（「dream」）を備えます。
+- [plur-ai/dsh-plugin](https://github.com/plur-ai/dsh-plugin) — PLUR のメモリを、ツール呼び出しとして公開する代わりに組み立てのたびにシステムプロンプトへ描き込みます。ブロックは追記ではなく置き換えられるため、セッションを通じて文脈が膨らみません。完全ローカルのハイブリッド検索（BM25 ＋ BGE を RRF で統合）、編集できるプレーンな YAML 保存、ワークスペース単位のスコープ、/plur-memory のブラウザを備えます。
+- [Relistencode/dsh-recall](https://github.com/Relistencode/dsh-recall) — DSH の会話履歴の呼び出し。過去のすべてのセッションの原文に対して 3 層（完全一致/あいまい/意味）の検索を、完全にローカル・オフラインで行います——伝えたことを AI が忘れません。`dsh.bundle.patch` によるコマンド 1 つのインストールで、意味検索層はワーカースレッドで動きます。
+- [reshuibuduo/TMCRA-Agent-Memory](https://github.com/reshuibuduo/TMCRA-Agent-Memory) — DSH と Codex 向けの技術プレビュー版ローカルグラフメモリ。各ターンの前にオーナー全体と現在のプロジェクトの根拠を思い出し、USER と ASSISTANT の記録を別々に書き、プロジェクト・セッション・行為者・出典の来歴を保持して、可視化されたアトラスと引用付きのナレッジページを作ります。
+- [scd13150/dsh-cognition](https://github.com/scd13150/dsh-cognition) — DeepSeek Harness 上のコーディングエージェント向けのプロジェクトメモリ。過去の似た編集を前例として提示し、範囲外の編集は止め、セッションをまたいで認識を保ちます（上流で確認された修正 47 件、正解データなしの 20 タスク実行）。
+- [dsh-engramory](https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin) — Engramory の厳選メモリ運用をインストール可能なプラグインにしたもの（[npm: dsh-engramory](https://www.npmjs.com/package/dsh-engramory)）。`ctx.tools.guard()` により `MEMORY.md` の索引を 200 行 / 25 KB に決定論的に制限し（増やす変更は拒否、縮める書き換えは常に通過）、その運用規約を実行時スキルとして登録します。保存先は 1 つの事実につき 1 ファイルのプレーンな Markdown で、Claude Code、Codex、Kiro、OpenClaw と共有できます。
+- [truelove-dreamer/dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) — モデル向けのセッション横断メモリ。過去のすべてのセッションを全文検索し（ctx.sessionQuery 経由の SQLite FTS5）、最も関連する抜粋を現在の文脈に戻します。
+- [Tyan66666/billion-context-dsh](https://github.com/Tyan66666/billion-context-dsh) — DeepSeek Harness 向けのモデル主導のコンテキスト圧縮（Active Context Pruning）。いつ何を圧縮するかをモデル自身が判断します。
+- [vectorize-io/hindsight#coding-agents](https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents) — 学習するエージェントメモリ Hindsight。自動の想起と保持を伴う長期のプロジェクトメモリ、ナレッジページ、深い振り返り、リポジトリごとのメモリバンクを備えます。
+- [volcengine/OpenViking#examples/dsh-memory-plugin](https://github.com/volcengine/OpenViking/tree/main/examples/dsh-memory-plugin) — DeepSeek Harness 向けの OpenViking のメモリと文脈のバンドル。ステップ前の自動想起とプロフィールの注入、セッションの記録、`viking://` URI の保護、OpenViking サーバーに支えられた想起・書き込みのメモリツールを提供します。
+- [Xplore-LAB/dsh-plugin-asmemory](https://github.com/Xplore-LAB/dsh-plugin-asmemory) — 行動と状態の時系列メモリ。型付きの状態と行動を記録し、傾向、異常、因果関係を分析します。
+- [yangyongzhen/dsh-memory](https://github.com/yangyongzhen/dsh-memory) — セッション開始時に注入される長期記憶。設定・事実・要約・知識をグローバルとプロジェクト単位で保持し、`agent/pre-step` で予算を決めて想起します。保存先は永続的な JSON ストアです。
+- [Yiipu/dsh-agentmemory](https://github.com/Yiipu/dsh-agentmemory) — DSH と agentmemory をつなぐセッションメモリのブリッジ。セッションのライフサイクルをローカルの agentmemory デーモン（REST）に反映し、memory_recall / memory_remember ツールを公開、agent/pre-step でセッションごとのメモリコンテキストを注入します。
+- [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) — flomo（浮墨笔记）にノートやメモを書き込むツール。flomo の API URL か API キーを一度設定すれば、どのエージェントからでも flomo_send ツールで送れます。
+- [zhengjy01/dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) — DeepSeek Harness 向けの Notion コネクター。6 つのエージェントツールで Notion のページとデータベースの検索、読み取り、クエリ、作成、更新、追記ができます。Web の設定ページから Integration Token を一度設定するだけです。
+
+### 🛠️ ツールと機能
+
+- [0nt-one/dsh-voice-input](https://github.com/0nt-one/dsh-voice-input) — コンポーザーのツール行にマイクボタンを追加。Web Speech API による音声入力（Chrome/Edge）、言語切り替え、任意の自動送信を依存関係ゼロで提供します。
+- [1624318455/dsh-plugin-tavily](https://github.com/1624318455/dsh-plugin-tavily) — 組み込みの web_search ツール向け Tavily 検索プロバイダー。API キー、取得件数、対象期間を設定カードから指定できます。
+- [1na-ko/dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) — HarmonyOS デバイスブリッジ。hdc によるスクリーンショット/インストール/ログ/クラッシュ/UI 自動化のループを read_image と組み合わせ、公式優先のバージョン付き API 知識（SDK の .d.ts とオフライン同梱ドキュメント）、DevEco CLI のビルド/署名/lint レーンを提供します。
+- [6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) — WSL の中に dsh や関連ツールを入れ直さずに、Web GUI から WSL ワークスペースを追加します。bash コマンドとファイルの読み書きはホスト上の WSL ディストリビューション内で実行され、Windows 側のファイルにもアクセスできます。
+- [988hj7tczd-oss/dsh-computer-use](https://github.com/988hj7tczd-oss/dsh-computer-use) — DeepSeek Harness 向けのクロスプラットフォーム Computer Use。仮想マウスによる人間らしい操作（screen_observe + computer_click + type + key + scroll + drag の 11 ツール）、視覚コストゼロの AX ツリーモードと無料 GLM-4V-Flash による視覚フォールバック、安全ガード（スナップショット TTL／アプリのホワイトリスト／危険操作の承認／パスワード欄の保護）を備えます。
+- [AbcdefgXW/dsh-toolbox-web](https://github.com/AbcdefgXW/dsh-toolbox-web) — Web UI 向けのツールボックス。セッション/ゴミ箱/サブディレクトリ/検索/プリセット/設定の管理、タグによるグループ分け、長いメッセージの折りたたみ、IM チャネルへのプッシュを任意で伴う定期ハートビートを提供します。
+- [AbnerAI/dsh-monitor](https://github.com/AbnerAI/dsh-monitor) — 新着メッセージ（ファイル受信箱、またはコマンド出力の差分）でエージェントを起こす常駐ウォッチャー。Claude Code の Monitor ツールに相当する機能を harness にもたらします。
+- [akqwpeter-prog/dsh-agent-conductor](https://github.com/akqwpeter-prog/dsh-agent-conductor) — 自己完結したタスクを DSH から 11 種の外部エージェント CLI（Codex、Claude Code、TraeCode、OpenCode、Gemini、Cursor、Kimi、Qwen、Copilot、WorkBuddy、Grok）へ割り振ります。conductor_dispatch ツールと自動起動する conductor スキルを登録する、ホスト側のみのバンドルです。
+- [AngelosZou/dsh-multi-folder](https://github.com/AngelosZou/dsh-multi-folder) — DSH プロジェクトに副次的な作業ディレクトリを追加。エージェントは主ワークスペースを cwd に保ったまま、設定した副ディレクトリにも同等の読み書き・実行権限を得ます。セッションヘッダーと新規セッション画面から設定できます。
+- [AngLi1997/dsh-plugin-sync](https://github.com/AngLi1997/dsh-plugin-sync) — インストール済みの DeepSeek Harness プラグイン構成を GitHub Gist に同期します（OAuth ログイン、依存関係の自動インストール付きワンクリックのエクスポート/インポート）。
+- [Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — アクセシビリティ優先の macOS Computer Use。常に最新の観測、古い状態の拒否、範囲を限定した権限、安全な入力を備えます。
+- [anweat/dsh-browser](https://github.com/anweat/dsh-browser) — 自己完結したブラウザランタイム。Playwright（chromium）と OpenCLI をプラグイン内の依存として持ち（グローバルのものがあれば再利用）、`browser` サービスと 9 種の対話式ブラウザツールを公開します。
+- [anweat/dsh-voice-webspeech](https://github.com/anweat/dsh-voice-webspeech) — ブラウザの Web Speech API による音声入力。サーバーもキーもモデルのダウンロードも不要です（Edge は Azure、Chrome は Google の音声認識を利用）。
+- [anweat/dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro) — 常設の強化版 Web 検索。複数エンジンの振り分け（DeepSeek/Exa/DDG/Bing/Jina ＋ GitHub/Bilibili/YouTube/V2EX/小紅書/Twitter/Reddit/RSS）、SQLite ＋ LRU のキャッシュ、ユーザースクリプト風の抽出、Playwright による描画に対応します。
+- [asdf17128/dsh-doctor](https://github.com/asdf17128/dsh-doctor) — `config_doctor` ツールを登録し、harness 自身の設定に潜む「静かに起動してしまう」問題を検査します。設定全体の置き換えで消えたパッチ、存在しないエントリ id を狙ったパッチ、ツール名の衝突を検出します。読み取り専用です。
+- [asdf17128/dshp](https://github.com/asdf17128/dshp) — `list_profiles` と `export_profile` を登録し、どんな構成があるかをエージェントが示したり、プロファイル一式（バンドルの順序、プラグインのバージョン、パッチ）を可搬な 1 ファイルとして渡したりできるようにします。読み取り専用です。
+- [Asher-2000/dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) — DeepSeek Harness 向けのエキスパートモードのプリセット（バイリンガル対応）。英語の「Expert Mode」プリセット（Chief Coordinator ＋ 完全英語のドメイン専門サブエージェント 11 体）と中国語の「专家模式」プリセット（首席协调官）を収録。専門家はデータアナリスト、コピーライター、法務レビュー、プロダクトマネージャー、フロントエンド、UI/UX、アーキテクト、SNS 運用、グロースハッカー、クオンツ、財務で、タスクは自動で振り分けられます。
+- [awesome-dsh-plugin/dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) — エージェントから離れずにプラグインを探せます。この厳選レジストリをキーワードやカテゴリで検索でき、そのまま実行できるインストールコマンドが付きます。
+- [bpc-oss/chrome-faithful](https://github.com/bpc-oss/chrome-faithful) — ログイン済みの実際の Chrome を、プロファイルそのままに操作します。MCP サーバーと MV3 拡張、認証付きの localhost ブリッジで、タブ、ロケーター、ファイルの注入、メディアの書き出し、長いスクロールの取り込みに対応。デバッグ用プロファイルもリモートデバッグポートも使いません。
+- [buhuikongpan/dsh-win-gitbash](https://github.com/buhuikongpan/dsh-win-gitbash) — Windows 向けの Git Bash シェルツール。Git for Windows 同梱の bash でコマンドを実行し、タイムアウト、サンドボックス、出力の切り詰め、バックグラウンドジョブに対応。遅い pwsh ツールと WSL 専用の bash ツールを置き換えます。
+- [bwndlct/dsh-session-audit](https://github.com/bwndlct/dsh-session-audit) — セッション実行の分析。ステップ数、ツール呼び出し、失敗、繰り返された操作、トークン使用量、検証シグナルを、テキスト/Markdown/JSON のレポートとして出力します。
+- [caoyiwei850/dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) — DSH Web UI 向けの SSH 運用ターミナル。メインの会話から接続先サーバーを操作でき（ssh_connect/ssh_exec/ssh_read/ssh_write/ssh_disconnect）、右側には対話型の xterm.js ターミナルを常駐させます。
+- [cdxiaodong/dsh-guardian](https://github.com/cdxiaodong/dsh-guardian) — エージェントのセキュリティガードレール。すべてのツール呼び出しを遮って監査し、機微な操作には人の確認を求めます。
+- [cdxiaodong/dsh-llm-inspector](https://github.com/cdxiaodong/dsh-llm-inspector) — LLM のリクエストとレスポンスをまとめて確認できるインスペクター。推論強度の調整、外部への思考の書き出し、通信量とバンドルの分析に対応します。
+- [cerebrixos-org/dsh-asimovbox](https://github.com/cerebrixos-org/dsh-asimovbox) — DeepSeek Harness を AsimovBox に接続し、API キー認証のツールを通じて動画の作成、更新、レンダリング、仕上げを行います。
+- [Cheng-cheng9669/dsh-cache-precision](https://github.com/Cheng-cheng9669/dsh-cache-precision) — 組み込みのキャッシュヒット率を小数点以下 3 桁で表示し、切り詰めが起きないようコンポーザーの統計行を広げます。
+- [ChenLaoshiYF/dsh-mcpguard](https://github.com/ChenLaoshiYF/dsh-mcpguard) — スキルと MCP 設定をスキャンし、プロンプトインジェクション、同形異字、不可視 Unicode、危険なシェル、認証情報の漏洩を検出します。
+- [CheshireJCat/blender](https://github.com/CheshireJCat/blender) — Blender 3D 制作用プラグイン。モデリング/再構成のスキル 30 種、実行時ツール 13 種、参照合わせ・レンダリング・検証・アニメーション・可搬エクスポート向けの決定論的ヘルパー 26 種を備え、`dsh-blender` としてインストールできます。
+- [CHplus0/dsh-learning-mode](https://github.com/CHplus0/dsh-learning-mode) — ラーニングモードのエージェントプリセット。コードを書きながら教えるコーディングエージェントで、具体的な場面に即した説明、ソクラテス式の誘導、TODO(你) の練習用穴埋めを行います。Claude Code の Learning 出力スタイルを参考にしており、dsh plugin add でインストールできます（npm の dsh-learning-mode）。
+- [coolbreezecoin/dsh-wechat-mp](https://github.com/coolbreezecoin/dsh-wechat-mp) — Markdown を微信公众号の下書きに変換します。エディターが `<style>` ブロックとクラス名を捨ててしまうため、すべての CSS ルールを要素にインライン化し、ローカル画像は WeChat 自身のエンドポイントにアップロードして弾かれないようにしたうえで下書きを作成します。配信は行いません。
+- [crTnT/dsh-plugin-suite#dsh-plugin-center](https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center) — プラグインセンター。DSH のプラグインを設定画面から探し、インストールし、管理できます。
+- [crTnT/dsh-plugin-suite#dsh-plugin-updater](https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater) — インストール済みプラグインの更新マネージャー。更新の確認、バックアップ、ロールバックに対応します。
+- [CZX2244/dsh-bilibili](https://github.com/CZX2244/dsh-bilibili) — Bilibili 動画の解析。メタデータ、文字起こし（Bijian/sherpa-onnx/whisper.cpp による ASR フォールバック）、コメント、弾幕、鮮明なキーフレームを取得し、任意でローカルの視覚モデルによる説明も付けられます。
+- [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — 強化版 MCP クライアント。ページング付きのツール探索、起動をブロックしない初期化、mcp_tool_search、独自実装の stdio / streamable-http トランスポートを備えます。
+- [DamonKoy/dsh-plugins#dsh-secret-redactor](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-secret-redactor) — ツール結果内の秘匿情報を自動で伏せ字化。API キー、トークン、JWT、秘密鍵、設定した秘密文字列をモデルが見る前にマスクします。
+- [DamonKoy/dsh-web-ui#dsh-ssh](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-ssh) — dsh web GUI からのリモート SSH 操作。ホスト設定の保存とセッションの永続化に対応します。
+- [DamonKoy/dsh-web-ui#dsh-tool-describe-image](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-tool-describe-image) — 視覚言語モデルを介してテキスト専用モデルに画像理解を与えます。`describe_image` ツールとして公開されます。
+- [Dariandai/dsh-starter-pack](https://github.com/Dariandai/dsh-starter-pack) — 厳選プラグインのスターターパック。4 グループにわたる検証済みのコミュニティプラグイン 15 個を、設定ページの UI または /setup コマンドから一括でインストールして設定します。
+- [DDDMUC/dsh-free-search](https://github.com/DDDMUC/dsh-free-search) — DSH 向けの無料・キー不要な Web 検索。7 つのエンジン（無料の DuckDuckGo/Bing/SearXNG と有料の Exa/Perplexity/DeepSeek）を自動フェイルオーバーで使い分け、API キー入力欄と公式リンクを備えた設定ページ、web_fetch、エンジンのテストツールを提供します。
+- [DeepTrial/dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) — 対象となるシェルコマンドを rtk 経由で実行し、ツール出力を圧縮してトークンを節約します。
+- [dfycaly98931680/dsh-trajectory-governance](https://github.com/dfycaly98931680/dsh-trajectory-governance) — エージェントの軌跡の統治と異常診断。平坦なセッションログを多分岐の軌跡ツリーに組み直し、ループのデッドロック、無効な再試行、目標のずれを検出して、コストの帰属つきで警告します。公式 API を使ったワンクリックの中断とブレークポイントでの分岐、独立した GUI タブを備えます。
+- [didclawapp-ai/DSH-Office](https://github.com/didclawapp-ai/DSH-Office) — ローカルの zagens-office CLI を通じて PPTX、DOCX、XLSX、PDF を作成・閲覧・編集します。office_schema / office_write / office_edit / office_read の各ツールとして提供されます。
+- [dsh-plugins/dsh-auxiliary](https://github.com/dsh-plugins/dsh-auxiliary) — 視覚、コンパクション、レビュー、サブエージェント、タイトル生成、画像生成のための専用モデル経路・ツール・システム指示。
+- [duhu2000/qcc-mcp-oauth](https://github.com/duhu2000/qcc-mcp-oauth) — DeepSeek Harness から企查查（qcc.com）の MCP サービスにワンクリックで OAuth（PKCE）接続します。動的なクライアント登録、トークンの自動更新、mcp-client の動的設定に対応。
+- [Edge-Echo/dsh-mcp-bridge](https://github.com/Edge-Echo/dsh-mcp-bridge) — 厳選 MCP サーバーのバンドル。1 回のインストールで demo、memory、filesystem、GitHub、Playwright、リモート HTTP の各 MCP サーバーが揃い、疎通確認ツールと CI チェックも付属します。
+- [EdgeTypE/dsh-better-deepseek](https://github.com/EdgeTypE/dsh-better-deepseek) — Chrome 拡張 [Better DeepSeek](https://github.com/EdgeTypE/better-deepseek) 向けのブリッジプラグイン。Web サーバー上に HTTP ハンドシェイクとセッションで絞り込んだ SSE イベントストリームを公開し、ブラウザ拡張の UI と DeepSeek Harness を連携させます。
+- [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) — 必要なときだけ文脈を取り出す軽量な検索層。context_query / context_slice / context_grep の各ツールが、永続化済みの履歴を再生しても壊れない引用付きで読み戻します。
+- [fire-disposal/dsh-mojibake-interceptor](https://github.com/fire-disposal/dsh-mojibake-interceptor) — DSH 向けの文字化けガードバンドル。書き込み前に特徴ベースで文字化けを検出し、確認してから通します（同じ内容で再試行すれば通過）。加えて実行前に pwsh のエンコーディング（ANSI/GBK/UTF-16/Default）を監査します。Windows と中国語環境を主眼に置いています。
+- [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) — ワンクリックのプロンプト強化。別の LLM 呼び出しがコンポーザー内の粗い下書きを書き直します。取り消しも自由です。
+- [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) — OverleafMCP を通じて複数の Overleaf プロジェクトを DSH に接続し、閲覧、分析、Git ベースのファイル更新を行います。
+- [flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) — 複数マシンのリモートワークスペース。多数の SSH ホストを管理し、ネイティブのワークスペース追加フローでローカル/リモートのワークスペースを選べます（システムのフォルダー選択 / ローカルパス / リモートディレクトリの参照）。リモートのワークスペースを実際のローカルフォルダーにミラーし、rw_* ツールで操作できます。選択画面は中央のモーダルで、ローカルタブから開き、リモートパスでは `/` を自動入力して階層ごとに補完します。
+- [Fro2en12/dsh-download-progress](https://github.com/Fro2en12/dsh-download-progress) — ダウンロード進捗パネル。URL からのダウンロード、エージェントのシェル/SSH 転送の追跡、ワークスペース内のファイル増加の監視を、ドラッグできるフローティングパネルに転送量・速度・進捗率・残り時間つきで表示します。
+- [godchen520/dsh-web-remote](https://github.com/godchen520/dsh-web-remote) — スマホなどどこからでも DSH にアクセス。Cloudflare Quick Tunnel の公開リンクと LAN の HTTP/HTTPS 直接アクセス（自己署名証明書を自動生成）、トークン認証、gzip 圧縮、QR コード付きのフローティングなスマホアイコンのパネル、リンクを取得できる NapCat の QQ bot チャネルを備えます。
+- [gongyijie85/dsh-repo-setup](https://github.com/gongyijie85/dsh-repo-setup) — 読み取り専用のリポジトリ立ち上げスキャナー（repo_setup_scan ツール）。技術スタック/テスト/ドキュメント/git/DB を検出し、プラグイン、MCP サーバー、整備しておくべきファイルを提案します。
+- [guo6x/dsh-pilot](https://github.com/guo6x/dsh-pilot) — 依存関係ゼロのブラウザ操作。CDP 経由で実際の headless Edge/Chrome を 8 つの `pilot_*` ツール（navigate/click/type/keys/eval/screenshot）で動かし、Web GUI にはドラッグできるコックピットパネルを表示します。テキスト専用モデル向けにテキスト優先のスナップショットを返し、Playwright も API キーも不要です。
+- [hccccc01333/dsh-excel-chat](https://github.com/hccccc01333/dsh-excel-chat) — DeepSeek Harness で Excel と対話します。会話しながらスプレッドシートを作成・編集・修復・検証でき、編集のたびに数式の健全性を自動チェックします。
+- [Hongcheng-LI/dsh-zotero](https://github.com/Hongcheng-LI/dsh-zotero) — ローカル API 経由（API キー不要）の Zotero ライブラリツール。アイテム/コレクションの検索、メタデータと抄録の取得、添付ファイルの一覧、全文の取得（Zotero のキャッシュがない場合はその場で PDF を解析）、PDF のダウンロード、ノートの管理ができます。
+- [htcqp802/dsh-knowledge-base](https://github.com/htcqp802/dsh-knowledge-base) — DSH 向けの汎用ナレッジベース。md/txt/json/yml/docx/pdf の取り込み、フォルダー管理、FTS5 による全文検索（BM25）、Web の管理 UI を備えます。
+- [Huang-zhishi/dsh-plugin-call-trace](https://github.com/Huang-zhishi/dsh-plugin-call-trace) — モデルのツール呼び出しを永続的に記録するトレーサー。すべての呼び出しを再起動後も残る JSONL に書き出し、構造化された call_trace ツールと callTraceHistory サービスから照会できます。サイズによるローテーションと、任意のフローティングキャンバス UI 追加機能つき。
+- [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — MineRU のドキュメント解析ツールをモデルから使えるようにします。
+- [huey1in/trio](https://github.com/huey1in/trio) — ブラウザ自動操作（Playwright）とライブビュー、DSH のエージェントを任意の MCP クライアントに公開する MCP サーバー、GitHub の issue/PR/webhook レビューツールを提供します。
+- [Isanti2016/dsh-console](https://github.com/Isanti2016/dsh-console) — dsh 向けのスラッシュコマンドコンソール。/web start|stop|restart|status、/tunnel による SSH フォワード管理、単発の /ask、コンソール TUI ランチャーを備えます。
+- [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — DSH をローカルの Beav に接続し、小紅書（RED/RedNote）と SNS の AI 運用を実現します。ネタ探し、ナレッジ、コピーライティング、画像、音声、ショート動画のワークフローを、承認と成果物の追跡つきで回します。
+- [jcaiagent7143-ui/sendpage-mcp](https://github.com/jcaiagent7143-ui/sendpage-mcp) — HTML 文書を、ワンタップで開けてチャットアプリではカードとしてプレビューされる共有リンクとして公開します。公開、更新、PNG/PDF/Word への書き出しに対応。
+- [Jesse-njx/dsh-cowork](https://github.com/Jesse-njx/dsh-cowork) — xlsx / pdf / docx / pptx / ipynb 向けの、範囲を限定しセル単位で指定できる `doc_read`/`doc_write`。MCP サーバーと CLI も付属します。
+- [Jesse-njx/dsh-docker](https://github.com/Jesse-njx/dsh-docker) — 型付きでガードの効いたコンテナ操作。ps/logs/inspect/exec/start/stop と compose up/down を JSON 出力で提供し、プロジェクトを意識した対象選択と、破壊的操作の承認ゲートを備えます。
+- [Jesse-njx/dsh-skillport](https://github.com/Jesse-njx/dsh-skillport) — 手持ちの Agent Skills（SKILL.md）ライブラリを DSH に持ち込みます。Claude/Codex/Cursor/Gemini の各パスからスキルを見つけ、段階的に開示するインデックスを注入し、本文は必要になった時点で読み込みます。
+- [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 音声メモを入力に、返答を音声で出力。録音した音声をユーザーメッセージに変換し（transcribe）、エージェントの返信を読み上げます（speak）。~/.dsh/voice 配下でローカル優先に動作します。
+- [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) — codebase-memory-mcp 向けのコード知識グラフのブリッジ。意味的なシンボル検索（BM25）、ソースの抜粋、Leiden コミュニティによるアーキテクチャ概観、呼び出し/データフロー/サービス間のトレース、グラフで補強した grep を提供します。
+- [jiayan-xu/dsh-nuphus-mcp](https://github.com/jiayan-xu/dsh-nuphus-mcp) — デスクトップとブラウザの自動操作ブリッジ（ツール 36 種）。ウィンドウ/画面/マウス/キーボードの操作を PaddleOCR による要素認識と組み合わせ、Chrome の CDP によるブラウジングとアクセシビリティスナップショットにも対応します。
+- [jihongboo/dsh-apple-mode](https://github.com/jihongboo/dsh-apple-mode) — DSH 向けの Xcode AI 連携。Xcode の MCP ツール 26 種（mcpbridge）、Apple プラットフォーム向けスキル、Xcode Intelligence 風のペルソナ（エージェントプリセットまたはグローバルバンドル）を提供します。
+- [jinguanghai/deepseek-harness-forge-plugins#forge-gates](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates) — 実際に計算して検証するゲート。数式の簡約、論理の証明、正規表現の検証、E-prover による一階述語論理、状態機械のチェック、コードの修復を、Go でコンパイルしたバイナリ（Windows 向けのビルド済み実行ファイルつき）で行います。
+- [jinguanghai/deepseek-harness-forge-plugins#forge-tcm](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm) — 東洋医学のツールキット。八綱弁証と生薬の対（薬対）の検索を行います。
+- [Johnny-xuan/dsh-paste-to-path](https://github.com/Johnny-xuan/dsh-paste-to-path) — 画像、文書、アーカイブ、コードなどのファイルを、パスとして扱う添付ドックに追加します。ファイルの読み取り自体はエージェントが持つツールに任せます。
+- [JohnXu22786/browser-automation](https://github.com/JohnXu22786/browser-automation) — MCP サーバー（Playwright ベース）を介した dsh 向けの実ブラウザ自動操作。遷移、クリック、入力、タイピング、スクリーンショットに加え、番号付き参照のアクセシビリティスナップショットに対して操作できます。22 個の web_* ツールをすべて stdio 経由で harness に再公開します。
+- [JohnXu22786/command-scout](https://github.com/JohnXu22786/command-scout) — プロジェクトが宣言しているビルドコマンド（Makefile のターゲット、package.json の scripts、just のレシピ、deno のタスク）を走査し、そのまま実行できるエージェントツールとして公開します。
+- [JohnXu22786/computer-control](https://github.com/JohnXu22786/computer-control) — Python コアを stdio JSON-RPC ブリッジで包んだ dsh 向けのデスクトップ（ネイティブ）操作。画面の取得、ポインター/キーボード入力の注入、アクセシビリティツリーを介した操作を行い、リスクの高い操作は確認を必須にします。
+- [JohnXu22786/docs-retriever](https://github.com/JohnXu22786/docs-retriever) — Doctrove: コーディングエージェント向けの、バージョン対応ライブラリドキュメント検索 MCP サーバー。カタログ検索、バージョン選択、関心に応じてランク付けした抽出に対応し、実行時依存ゼロで dsh バンドルも提供します。
+- [JohnXu22786/fs-mcp](https://github.com/JohnXu22786/fs-mcp) — Paddock: エージェント向けの制約付きローカルファイルシステム MCP サーバー。テキストの読み書き、ディレクトリ操作、ファイル名と内容の検索を設定したゾーン内に限定します。実行時依存ゼロで dsh バンドルも提供。
+- [JohnXu22786/github-mcp](https://github.com/JohnXu22786/github-mcp) — GitHub ワークベンチの MCP サーバー（dsh バンドル）。リポジトリ、issue、PR、コードレビュー、検索向けの MCP ツール 23 種を、実行時依存ゼロと PAT/OAuth 認証で提供します。
+- [JohnXu22786/pty-runner](https://github.com/JohnXu22786/pty-runner) — dsh 向けの常駐バックグラウンドターミナルジョブ。PTY でプロセスを起動し、入力（Ctrl+C などの制御シーケンスを含む）を送り、リングバッファの出力をページ送りで読み、ジョブを穏やかにまたは強制的に停止できます。
+- [JohnXu22786/safety-net](https://github.com/JohnXu22786/safety-net) — dsh 向けの破壊的コマンドの遮断ゲート。シェルの意味を解析し、組み込みの 41 ルールでリスクを判定して、取り返しのつかない rm -rf、git reset --hard、git push --force のようなコマンドを確認ゲートで止めます。
+- [JohnXu22786/secret-guard](https://github.com/JohnXu22786/secret-guard) — エージェントによる機微なファイル（.env、認証情報、鍵素材）の読み書きをブロックし、ツール結果に紛れ込んだ秘密らしき値をマスクします。監査ジャーナルを残し、生の値を決して出力しない sg_* の安全な確認ツールを提供します。
+- [JohnXu22786/worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — タスクごとに隔離された git worktree を、作成/同期/終了の一連の流れで管理します。タスク名からブランチ名を自動生成し、マージ先を二重に確認し、まとめて後片付けも行います。手動の git 操作は不要です。
+- [jsoncode/dsh-jenkins](https://github.com/jsoncode/dsh-jenkins) — 複数の Jenkins サーバーを管理し、設定ページ、モデルツール、ワークスペースごとの「Run Jenkins Job」からジョブを起動できます。ホストとブラウザの二言語 UI 付き。
+- [JUANWANG-BUAA/dsh-full-remote](https://github.com/JUANWANG-BUAA/dsh-full-remote) — サーバー側 API（`settings.*` / `credentials.*` / `host.listDirectory`）に完全アクセスできるリモート DeepSeek Harness。トークンで保護したリバースプロキシ、端末ごとのセッション、スマホ用の招待 QR、防御境界のセルフチェック、任意の承認/CIDR 制限/アイドルタイムアウト/ローカル TLS、WebSocket と SSE に対応します。
+- [kexuejin/dsh-zhihu-dashboard](https://github.com/kexuejin/dsh-zhihu-dashboard) — 知乎のダッシュボード。トレンド矢印つきのホットリスト、フォローのフィード（お気に入り/投稿/フォロー中）、自動要約つきの投稿追跡（質問/キーワード/人物）、5 つのエージェントツール（zhihu_search/hot/answer/global_search/followees）を備えます。
+- [klarkxy/dsh-plugin-autoevo](https://github.com/klarkxy/dsh-plugin-autoevo) — 再利用を第一に考えるエージェントの能力進化。既存のツールとスキルを洗い出し、コミットを固定した DSH プラグインを見つけて精査し、一度の承認でインストールし、実際にツールが往復することを検証します。部分的に合致するものは、作り直さずに最小限の適応で使います。
+- [KLRSL/dsh-packer](https://github.com/KLRSL/dsh-packer) — DeepSeek Harness のエージェント設定パッカー。ローカルのエージェント資産（スキル/セッション/プロファイル/設定/メモリ）を zip にまとめて移行や共有に使えます。プライバシースキャン、差分に基づく復元、パックの管理、設定パネルを備えます。
+- [kunjinkao-os/dsh-mobile-gui-agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent) — Android の GUI エージェント。ADB のスクリーンショット、簡潔な UI 階層による位置特定、検証を挟む反復的な操作、承認、モバイル Web ビューを備えます。
+- [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) — エージェント向けの、ワークスペース内で安全に動く Office ツール。Word の作成/読み取り、Excel の作成/読み取り/更新、PowerPoint の作成/読み取りに対応し、PNG/JPG/GIF の画像配置もできます。
+- [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — AI エージェント向けの Playwright MCP ブラウザ操作。実際に目に見える Chrome を操作でき（navigate/click/type/snapshot ほか約 80 の browser_* ツール）、操作のたびに更新されるスクリーンショットパネルを GUI に埋め込みます。
+- [LeemanCheung/dsh-agent-preset-recommender](https://github.com/LeemanCheung/dsh-agent-preset-recommender) — Codex、Claude Code、WorkBuddy、CodeBuddy のメタデータを対象にした、範囲を限定するプライバシー配慮のローカルスキャナー。キー付きの根拠をアトミックに集計し、DSH の組み込みプリセットと任意の機能を決定論的に提案します。内容の保持もネットワークアクセスもプリセットの書き換えも行いません。
+- [LeslieWylie/dsh-fleet-audit](https://github.com/LeslieWylie/dsh-fleet-audit) — 読み取り専用のエージェント群の資格情報衛生監査。資格情報ファイルのパーミッション、git remote に埋め込まれた資格情報（出力ではマスク）、プロバイダートークンのリテラル数を調べます。依存関係ゼロで決定論的です。
+- [LeslieWylie/dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) — Markdown を単体で完結する HTML ページに描画。headless プロファイルでも動く `md_html_render` ツールと、ローカルの `.md` を閲覧・プレビュー・編集・書き出しできる Web ドロワーを提供します。両者は同じレンダラーを共有し、実行時依存はありません。
+- [Letter2025/dsh-tool-search](https://github.com/Letter2025/dsh-tool-search) — Hermes 風のツール検索と絞り込み。段階的な開示、意味検索、説明の取得に対応し、コアのツールは常時読み込みつつ、めったに使わないツールは必要になったときだけ呼び出します。
+- [lifeodyssey/dsh-compressor](https://github.com/lifeodyssey/dsh-compressor) — Headroom の軽量移植。ツール出力を圧縮してコンテキストを最大 20% 削りつつ、モデルのコンテキストキャッシュやエージェントの性能には影響しません。
+- [liguobao/deepseek-harness-remote](https://github.com/liguobao/deepseek-harness-remote) — DeepSeek Harness の安全な複数デバイスからのリモートアクセス。スマホやブラウザから、エンドツーエンド暗号化されたチャネル（Noise IK と WebRTC に対応できる適応的トランスポート）でローカルの Harness に接続します。デバイスの認可と ApiProxy に限定した機能のみを許可し、シェルや任意のファイルへのアクセスはありません。
+- [lire1131/dsh-undo-plugin](https://github.com/lire1131/dsh-undo-plugin) — DSH の取り消し/やり直しとロールバックの仕組み。設定変更のたびに自動でスナップショットを取り、WebUI からでもオフラインの CLI/GUI ツールからでも任意のバージョンへ戻せます（DSH が起動しないときでも使えます）。
+- [literaf/dsh-ai4scholar](https://github.com/literaf/dsh-ai4scholar) — AI4Scholar の学術検索。Semantic Scholar、PubMed、Google Scholar、arXiv、bioRxiv/medRxiv、DOI 解決にまたがる 38 のツール（検索、引用グラフ、著者、推薦、PDF 全文の分割取得、自動引用、図表）に加え、重複を除いた横断検索、設定画面の API キーカード、`/ai4scholar` の残高カードによる呼び出しごとのクレジット管理を備えます。
+- [liustack/modsearch](https://github.com/liustack/modsearch) — テキスト専用エージェント向けの Web 検索ブリッジ。Web や X に問い合わせ、構造化された JSON の根拠（検索、取得、引用）を返します。
+- [lonelymoon87/dsh-code-intel](https://github.com/lonelymoon87/dsh-code-intel) — Tree-sitter でワークスペースのシンボルを索引化し、字句ベース、または任意で埋め込みを併用したコード検索を提供します。
+- [lsz-asd/dsh-plugin-device-info](https://github.com/lsz-asd/dsh-plugin-device-info) — 読み取り専用の Windows デバイス情報ツール。WMI/CIM と Node の os コレクターを使い、Win32 のデバイスカテゴリ（時刻、システム、CPU、メモリ、ディスク、GPU、ネットワーク、バッテリー、プロセス、USB、オーディオ、プリンター）ごとにエージェントツールを 1 つずつ提供します。
+- [Luke-Yong/dsh-plugin-knowledge-graph](https://github.com/Luke-Yong/dsh-plugin-knowledge-graph) — コードベースの知識グラフ（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL の関係）に基づく read_graph ツール。
+- [Lum1104/dsh-browser](https://github.com/Lum1104/dsh-browser) — DSH からブラウザを直接操作できるようにする Chrome のサイドバー拡張。視覚能力は不要です。
+- [lussey820/dsh-http-tools](https://github.com/lussey820/dsh-http-tools) — HTTP/API のデバッグツール一式。細かく制御できる HTTP リクエスト（メソッド/ヘッダー/ボディ/認証）、curl コマンドの解析とそのままの実行、セッション内のリクエスト履歴とレスポンスの並列比較、Link ヘッダーによるページング対応、DeepSeek 風の UI カード（任意の dsh-http-tools-ui）を備えます。
+- [lynx-gt/dsh-subagent-cwd](https://github.com/lynx-gt/dsh-subagent-cwd) — dsh-subagent-tools を拡張し、サブエージェントの呼び出しごとに cwd を指定できるようにします。必要となるプロセス内プロバイダーのパッチ 2 種を同梱しています。
+- [lynx-gt/dsh-subagent-tools](https://github.com/lynx-gt/dsh-subagent-tools) — サブエージェントへの委譲時に、呼び出しごとのモデル、プロバイダー、ペルソナ、toolFilter を上書きできます。@preset: 参照とプロバイダー/モデルの複合 id に対応。
+- [lzszq/dsh-scholar](https://github.com/lzszq/dsh-scholar) — 学術研究の補助プラグイン。
+- [mafeis/dsh-net-proxy](https://github.com/mafeis/dsh-net-proxy) — エージェントのネットワークリクエストを、ローカルの HTTP/CONNECT/SOCKS5 プロキシ経由に振り向けます。
+- [MAXeaglet/dsh-bash-terminal](https://github.com/MAXeaglet/dsh-bash-terminal) — Windows の PowerShell / Git Bash / WSL を 1 つのシェルツールにまとめ、対話型の PTY ターミナルも提供します。既定のターミナルは DSH の設定でユーザーが選べます。
+- [maxiaovivi/dsh-cloak-browser](https://github.com/maxiaovivi/dsh-cloak-browser) — CloakBrowser を使ったネイティブなブラウザツール。エージェントごとに独立したセッション、範囲を限定したスナップショット、参照 ID を使った操作、スクリーンショット、安全な経路選択に対応します。
+- [MicroHEROX/dsh-exa-mcp](https://github.com/MicroHEROX/dsh-exa-mcp) — ホスト型の Exa 検索 MCP エンドポイント（https://mcp.exa.ai/mcp）を、同梱の @deepseek-ai/dsh-mcp-client ブリッジ経由でマウントします。web_search_exa と web_fetch_exa のツールを、無料枠の匿名利用でも自前の EXA_API_KEY でも使えます。
+- [MicroHEROX/dsh-Kimi-WebBridge](https://github.com/MicroHEROX/dsh-Kimi-WebBridge) — ローカルの Kimi WebBridge デーモンを介してユーザーの実ブラウザを操作します。遷移、タブ検索、スナップショット、クリック、入力、評価、CDP、スクリーンショット、ネットワーク、アップロード、PDF 書き出し、タブ管理の各ツールが、既存のログインセッションをそのまま使います。
+- [mingzeng21/dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) — dsh をローカルの Obsidian vault に接続します。`obsidian_*` ツールでノートの検索、読み取り、書き込み、移動、ゴミ箱への移動ができます。
+- [moguiyu/dsh-tavily#packages/dsh-tool-tavily-search](https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search) — 複数の API キーに対応した Tavily 検索。キーのローテーションとフェイルオーバー、使用量のゲージ、設定カードを備えます。
+- [moon09300731/dsh-approval-gate](https://github.com/moon09300731/dsh-approval-gate) — DeepSeek Harness 向けのリスクに応じた承認の自動化。書き込みやコマンドが取り返しのつかないものかを flash が事前に分類し、安全な操作は自動承認、危険なものは人の承認に回します（フェイルセーフ設計）。
+- [moononnn/DeepSeek-Harness-biaoqingbao](https://github.com/moononnn/DeepSeek-Harness-biaoqingbao) — アシスタントのスタンプ・表情表現。感情に応じた自動マッチング、ライブラリ管理、AI による画像タグ付け、方言、作風の模倣、チャットからのタグ調整に対応します。
+- [MrWeiCodes/dsh-permgate](https://github.com/MrWeiCodes/dsh-permgate) — きめ細かなパーミッションゲートウェイ。カテゴリ別（ワークスペース外のディレクトリ、コマンド、ファイルの読み書き、サブエージェント、繰り返し操作）にツール呼び出しをレビューし、グローバルとプロジェクト単位の許可/拒否の例外、よく使うツールの既定値、カスタムルール、差分をその場で見られる二言語の承認モーダル、任意の拒否理由、サンドボックスの権限引き上げフローを備えます。
+- [nanshan1995/DSH-Plugin-Market](https://github.com/nanshan1995/DSH-Plugin-Market) — DSH のもう 1 つのプラグインマーケット。厳選カタログと GitHub のライブ閲覧、中英をまたぐ検索、インストール前のフェイルクローズな静的セキュリティ監査（インストールフックの遮断つき）、文字化けを直しながらのプラグイン README 表示を備えます。
+- [NEAZ71eve/dsh-tool-github](https://github.com/NEAZ71eve/dsh-tool-github) — GitHub REST API のツール群とブラウザのサイドバーパネル。リポジトリ、検索、issue、PR、コメント、アカウント連携（資格情報ストア）、ワンクリックでのクローンとワークスペース化に対応します。
+- [omdsh-dev/dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) — サンドボックス化された JavaScript のツールを、Monaco エディターとモデル主導のライフサイクル管理で作成・管理できます。
+- [omdsh-dev/dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — AI がデータベースに接続し、代わりに SQL を書いてくれます。
+- [omdsh-dev/dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — md/txt/docx/pdf から監査できる KB パック（SQLite FTS5）を構築します。決定論的な検索と原文の読み取りに対応。
+- [omdsh-dev/dsh-tool-calculator](https://github.com/omdsh-dev/dsh-tool-calculator) — 安全な数式評価ツール。依存関係ゼロの再帰下降パーサーで実装されています。
+- [omdsh-dev/dsh-tool-csv](https://github.com/omdsh-dev/dsh-tool-csv) — CSV（RFC 4180）の解析・問い合わせ・集計・変換。依存関係ゼロの状態機械パーサーを使います。
+- [omdsh-dev/dsh-tool-diff](https://github.com/omdsh-dev/dsh-tool-diff) — テキスト/JSON/CSV/Markdown の構造的な比較と unified 形式の差分。
+- [omdsh-dev/dsh-tool-encoding](https://github.com/omdsh-dev/dsh-tool-encoding) — base64/url/hex のエンコード、よく使うハッシュ、UUID の生成。
+- [omdsh-dev/dsh-tool-json](https://github.com/omdsh-dev/dsh-tool-json) — JMESPath のサブセットによる JSON の問い合わせ。
+- [omdsh-dev/dsh-tool-markdown](https://github.com/omdsh-dev/dsh-tool-markdown) — HTML と Markdown の相互変換、GFM のテーブル整形、目次の生成。
+- [omdsh-dev/dsh-tool-regex](https://github.com/omdsh-dev/dsh-tool-regex) — コードを実行せずに正規表現をテスト・抽出・安全に置換し、静的に解説します。
+- [omdsh-dev/dsh-tool-schema](https://github.com/omdsh-dev/dsh-tool-schema) — JSON Schema の検証。validate/paths/explain/normalize に対応します。
+- [omdsh-dev/dsh-tool-stat](https://github.com/omdsh-dev/dsh-tool-stat) — 記述統計、パーセンタイル、度数分布、相関の計算。
+- [omdsh-dev/dsh-tool-time](https://github.com/omdsh-dev/dsh-tool-time) — 厳密な ISO 8601 の解析、IANA タイムゾーンの変換、UTC の暦計算。
+- [omdsh-dev/dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) — 依存関係ゼロのツールキット。time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema の決定論的なツール 10 種を 1 回のインストールで導入します。
+- [OpenTritium/dsh-codex-shim](https://github.com/OpenTritium/dsh-codex-shim) — 選んだモデル経路に対して Codex 環境を模擬し、GPT 系モデルのツール呼び出しの成功率を高めます。
+- [pengpengyi92/dsh-quant](https://github.com/pengpengyi92/dsh-quant) — DeepSeek Harness 向けのクオンツ研究開発ツールキット——市場データ、テクニカル指標、ファクター評価、バックテスト、リスク指標、ファンドのシミュレーションの 6 領域にわたる 37 のツールを提供します。
+- [pengxuding/dsh-plugin-judge](https://github.com/pengxuding/dsh-plugin-judge) — プラグインの価値を監査。インストール前のレビュー（ソースのスキャン＋LLM による判定）と、導入済みバンドルの事後監査を行い、モデルを切り替えたときの再監査も促します。
+- [pengzhou267-ai/dsh-shop-assistant](https://github.com/pengzhou267-ai/dsh-shop-assistant) — EC 運用のワークベンチ。マーケットプレイスごとの列アダプターを備えた CSV の一括プレビュー、再現できる利益と 6 軸のスコアリング、商品ページの公開スナップショット、中国語のスキル、差し替え可能な店舗ポリシーの KB を提供します。
+- [PerryLink/dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) — DeepSeek Harness 版の Claude Code /rewind。変更を伴うツール実行の前に git を軸としたワークスペースのスナップショットを取り、ターン境界でセッションを分岐させ、/rewind コマンド 1 回でファイルを復元してチェックポイント時点にセッションを戻します。
+- [PerryLink/dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — DSH 向けの LSP 操作面。診断、フォーマット、補完、コードアクション、シンボル、シグネチャヘルプ、インレイヒント、リネームを、実際の言語サーバーに基づいて提供します。
+- [PicGo/dsh-plugin](https://github.com/PicGo/dsh-plugin) — ローカル画像やファイルを、PicGo の既存設定（PicGo Cloud、GitHub、S3、COS、七牛、その他インストール済みのアップローダープラグイン）を使って画像ホストにアップロードします。`picgo_upload` ツールと `/picgo` コマンドを提供。
+- [Q1hangL/dsh-ask-guard](https://github.com/Q1hangL/dsh-ask-guard) — ask_user_question の協調的なタイムアウトガード。行方不明になったり回答されなかった質問を、ターンを永久に止める代わりに構造化された ASK_TIMEOUT として解決します。
+- [QSWWLTN/dsh-UEAssetsOperator](https://github.com/QSWWLTN/dsh-UEAssetsOperator) — Unreal Engine の .uasset の調査（resolve/registry/load）と、組み込みの UE Python を介した限定的な Blueprint ノード編集。
+- [Realyujie/dsh-us-stocks](https://github.com/Realyujie/dsh-us-stocks) — yahoo-finance2 を使った米国株の気配値、株価履歴、財務諸表、アナリスト予想、ニュースの取得。
+- [Rianico/dsh-better-edit](https://github.com/Rianico/dsh-better-edit) — ハッシュを目印にする read / edit / batch_edit / undo_last_edit ツール。各行に一意な 3 文字の内容ハッシュを付け、行番号ではなくハッシュを指定して編集します。提示済みの状態を検証し、古い範囲は新しい目印とともに拒否します。
+- [rogerdigital/dsh-searxng](https://github.com/rogerdigital/dsh-searxng) — SearXNG を使う web_search プロバイダー。自前インスタンスの JSON API を通じた無料・自己ホスト・キー不要のメタ検索を提供し、ループバック限定の docker-compose の例を同梱しています。
+- [sakikoTGW/pack-agent](https://github.com/sakikoTGW/pack-agent) — プロジェクトを .pack.json/.pack.zip として .agent-pack/modpacks/ にまとめ、ワークスペースの許可リストを通じてスキルを公開します。
+- [Samge0/dsh-plugin-qcc](https://github.com/Samge0/dsh-plugin-qcc) — 企查查（Qichacha）の企業データを動的な Cordis プラグインとして利用。エージェントツール 5 種（QR ログインによる認証、企業検索、ナレッジ検索、ツール検索、ツール実行）で 100 以上のデータ項目（商業登記、株主、司法、知財）を扱い、設定ページのアカウント管理も備えます。ネットワークとファイル IO は DSH のサブプロセスで node -e を起動して行い、資格情報はローカルの BizOwl クライアントと相互運用できます。
+- [SamXiaBing/dsh-adb](https://github.com/SamXiaBing/dsh-adb) — DSH 向けの ADB デバイス・実機操作。デバイスの検出、構造化した logcat（バックグラウンドでのストリーミング）、apk のインストール、ファイルの pull/push、dumpsys によるパフォーマンスのスナップショットに対応します。
+- [SARTHAK2511/dsh-cve-audit](https://github.com/SARTHAK2511/dsh-cve-audit) — ワークスペースのプロジェクト依存関係（npm/pip/go）に対する CVE・サプライチェーンの監査。OSV.dev を情報源に `cve_audit` ツールを提供し、任意でロックファイルの変更時に自動で再スキャンします。
+- [seven282/oss-prompt-optimizer](https://github.com/seven282/oss-prompt-optimizer) — 素の指示を、harness の llm サービスを通じて 4 セクション構成（役割 / タスク / 文脈 / 形式）の本格的なプロンプトに整えます。コンポーザーのボタン、ワンクリックの取り消し、prompt_optimize ツール、自動最適化のフックを備えます。
+- [shinjiyu/deepseek-harness-evolver](https://github.com/shinjiyu/deepseek-harness-evolver) — 公式の Creator モードを補完します。プロセス内のツールプラグインの試作を、ステージング、検証、ctx.plugin によるライブマウント、採点のうえ、定着させるかロールバックするかを選べます。
+- [shinjiyu/dsh-plugin-search](https://github.com/shinjiyu/dsh-plugin-search) — DeepSeek の公式 API キーがなくても組み込みの web_search ツールを使えるようにします。web-search-deepseek を無効にし、既定でキー不要の Tavily を使います。
+- [ShiXiangYu2/dsh-translate-pro](https://github.com/ShiXiangYu2/dsh-translate-pro) — DSH 向けの本格的な翻訳機能。18 の対象言語、4 つのスタイル（フォーマル/カジュアル/技術文書/逐語）、用語集による訳語統一、ファイル丸ごとの翻訳（README/ドキュメント/字幕）に対応し、Markdown とコードブロックの書式を保ちます。SiliconFlow 経由の DeepSeek を利用します。
+- [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 文脈付きバンディット（トンプソンサンプリング）で、高速な検索戦略と丁寧な検索戦略を学習しながら選び分ける `search` ツール。固定のヒューリスティックではなく、実際の利用から改善していきます。
+- [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) — DSH と Godot エンジンをつなぐ実行時ブリッジ。ゲーム内の TCP 対話サーバーを介して動作中の Godot 4.x のゲームを起動・操作します。ツールは 16 種（約 130 のゲームコマンドによる実行時制御、シーン/UI の確認、GDScript の評価、入力のシミュレーション、スクリーンショット、headless での静的操作、プロジェクトの編集、書き出し、スクリプトの検証、エンジンのパス設定）で、godot-mcp を置き換えます。
+- [somnusovis/dsh-multi-workspace](https://github.com/somnusovis/dsh-multi-workspace) — マルチワークスペースのサンドボックス。登録済みのすべてのワークスペースに自動で書き込み権限を与えます——ワークスペースを追加すればすぐ書き込め、設定も権限の引き上げも要りません。
+- [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — ChatGPT の OAuth ログイン状態を再利用して、Codex を裏で使う `web_search`、`image_gen`、`image_vision` ツールを DeepSeek Harness に追加します。
+- [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — Google/iCloud/Nextcloud および任意のエンドポイント向けの CalDAV カレンダーツール（一覧/作成/更新/削除/検索）。RRULE の展開にも対応します。
+- [STARDUSTLC666/dsh-codex-port](https://github.com/STARDUSTLC666/dsh-codex-port) — 公式 Codex プラグインを DSH のスキルへ一括移植します（実測: プラグイン 186 個 / スキル 583 個のうち 577 個を移植、失敗 0）。
+- [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — IMAP/SMTP のメールツール（一覧/閲覧/検索/送信/フォルダー/添付）。QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud のプリセット、複数アカウント、送信時の承認ゲートに対応します。
+- [STARDUSTLC666/dsh-ffmpeg](https://github.com/STARDUSTLC666/dsh-ffmpeg) — 公式のサブプロセスサービス上で動く動画ツール 7 種（probe/cut/concat/encode/subtitle/extract/gif）。シェルを介さない argv で実行し、実行時依存はゼロです。
+- [STARDUSTLC666/dsh-rss](https://github.com/STARDUSTLC666/dsh-rss) — RSS/Atom の購読管理と解析（rss_list/add/remove/fetch/check）。設定に永続化されます。
+- [STARDUSTLC666/dsh-voice](https://github.com/STARDUSTLC666/dsh-voice) — 音声の入出力ペア。無料の edge-tts によるニューラル音声合成と、OpenAI 互換の ASR による書き起こしを提供します。
+- [StruggleYang/dsh-project-kanban](https://github.com/StruggleYang/dsh-project-kanban) — ワークスペースごとのプロジェクトかんばんボード。エージェントによる計画のための kanban_* モデルツール 9 種とブラウザのボード UI を備え、ディスクへの永続化、取り消し、テンプレート、アーカイブに対応します。
+- [superagents-lab/dsh-s1](https://github.com/superagents-lab/dsh-s1) — Search1API（s1）のネイティブな Web リサーチツール。検索、ニュース、ページのクロール、サイトマップの発見、話題のトピックを一級の `s1_*` ツールとして提供し、s1 のスキルを同梱します。
+- [superdesigndev/treg](https://github.com/superdesigndev/treg) — エージェント向けのツールカタログ。約 2,600 の外部エンドポイント（SEO と SERP、被リンク、ソーシャル、人物・企業情報の付加、広告ライブラリ、スクレイピング）を「やりたいこと」から検索し、各エンドポイントのパラメーターと呼び出し単価を確認して、資格情報をサーバー側で差し込みながら呼び出せます。スキルに加え、TREG_TOKEN を設定するまで無効のままの MCP 行を同梱します。
+- [SZMY-haruhi/dsh-tavily](https://github.com/SZMY-haruhi/dsh-tavily) — DSH 向けの Tavily Web 検索。設定のトグル、既定でキー不要、接続テスト機能を備えます。
+- [Taler97/dsh-rollback](https://github.com/Taler97/dsh-rollback) — fs ツールのファイル変更を観測してロールバックします。write/edit の変更前の内容を git blob かスナップショットとしてチェックポイント化し、モデル向けの rollback_files ツールか /rollback コマンドで復元します。
+- [tancheng33/dsh-egress-guard](https://github.com/tancheng33/dsh-egress-guard) — ツールのパイプライン上で働く実行時セキュリティゲート。送信先許可リストにないホストを指す呼び出しを拒否し、結果に含まれる資格情報を表示上ではなく正規の値の段階で伏せ字化し、すべての判断を JSONL の監査ログに追記します。初期状態は監視のみのモードです。
+- [taxueseek/argo](https://github.com/taxueseek/argo) — エージェントのために作られた検索。Web、学術、コード、ショッピング、金融、ニュース、百科事典を多言語で横断します。
+- [TecFancy/dsh-deeptutor](https://github.com/TecFancy/dsh-deeptutor) — DeepTutor の学習ブリッジ。deeptutor_run / deeptutor_kb / deeptutor_note の各ツールを通じて、踏み込んだ解説、理解度確認の問題、学習経路の設計、個人ナレッジベースの検索（RAG）、ノートの保管を行います。
+- [THU-MAIC/dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — OpenMAIC: 教室、スライド、対話型ウィジェット、ソクラテス式の指導を提供します。
+- [TonyDua/dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa) — ctx.web の接続点向けの設定不要な Exa 検索プロバイダー。API キーなしの匿名 MCP フォールバックと、キーを使った REST 検索に対応します。
+- [truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) — モデルが直接使える一級の Git ツール。status / diff / log / commit / branch を、検証済みのメッセージとパスとともに提供します。素のシェルで git を呼ぶ必要はありません。
+- [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) — web の接続点向けの秘塔 AI 検索（Metaso）の検索・読み取りプロバイダー。web_search はページの要約を返し、web_fetch は全文を Markdown で読み取ります。範囲を指定した検索（ウェブページ/文書/論文/画像/動画/ポッドキャスト）に対応。
+- [v587d/capital-generation](https://github.com/v587d/capital-generation) — harness 向けの中国 A 株の金融データ MCP サーバー。11 種の fin_data__* ツール（気配値/K 線/財務/カレンダー/特殊データ/開示/EDB/照合/ファンド/指数）を、同花順の無料公式 REST（主）＋ AKShare（フォールバック）＋ Wind（専用領域）で提供します。機能縮退が見える形で行われ、コンテキスト予算の圧縮（結果側で実測 -72.2%）と 10 年分のオフライン市場データレイクを備えます。キーは各自で用意（BYOK）。
+- [vibeinging/dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — エージェントごとの必要に応じたツール探索と、スキーマの段階的な開示。
+- [Vladimir-Human/ru-marketplace-mcp#dsh](https://github.com/Vladimir-Human/ru-marketplace-mcp/tree/main/dsh) — ロシアの 10 のマーケットプレイス向けのスキルと、任意の MCP 行。Wildberries、Detsky Mir、Yandex Market をまたいだ価格比較に加え、サイトごとの検索、商品カード、レビューに対応します。13 のスキルはインストール時に読み込まれ、MCP の 2 行は RU_MARKETPLACE_MCP_DIR がローカルのクローンを指すまで無効のままです（Python 3.12 以上と uv が必要）。
+- [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — エージェントがローカルの Zotero ライブラリを検索・閲覧・引用できるようにします。論文を探し、ノートと注釈を見て、問いに応じた根拠を取り出し、原文を開き、引用を生成します。
+- [wade20250715/dsh-pubmed](https://github.com/wade20250715/dsh-pubmed) — PubMed のディープリサーチツール一式。文献検索、著者調査、同姓同名の判別、機関ごとの統計、指導教員と学生の照合に対応します。
+- [Walvez/dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — OpenAI Codex と DeepSeek Harness の双方向同期をまとめて実現。~/.codex/skills のスキルを一級市民として扱い、codex のセッションをワークスペースに紐づけて取り込み、codex の mcp_servers をリアルタイムで MCP に自動ミラーし、Codex 側への逆方向 MCP インストーラーも提供します。
+- [warmwine/dsh-memoryleak](https://github.com/warmwine/dsh-memoryleak) — ワークスペース内のプレーンな Markdown ファイルとして扱うメモと TODO。/ml に続けて一文書けばその日のジャーナルに残ります。TODO は 3 種類——期限つき、指定日まで眠るもの（期日に自動で起きます）、いつでもよいもの。/ml view なら数打鍵のあいまい検索でどのファイルも開けます。すべてトークン消費ゼロで、モデルを経由せず、メモはただのローカルファイルなので git でもどのエディターでも扱えます。
+- [weike-zhang/dsh-svg-motion](https://github.com/weike-zhang/dsh-svg-motion) — DSH の中で SVG のロゴをモーション動画に変えます。`animate_svg` ツールが背景透過の 30fps の組み立てアニメーション（パーツが飛び込む、あるいはマーク全体が収まる）を描画し、ffmpeg で MP4 に合成します。
+- [welsione/dsh-mmx-bridge](https://github.com/welsione/dsh-mmx-bridge) — MiniMax のマルチモーダルブリッジ。1 つの `mmx_bridge` ツールで画像理解/生成、動画、TTS、音楽、カバー画像、Web 検索、クォータ確認までを扱えます。`web_search`/`read_image` の置き換えも任意で行え、Web GUI にプレーヤーや画像プレビューをそのまま表示します（npm: `dsh-mmx-bridge`）。
+- [whitefirer/dsh-browser-fs](https://github.com/whitefirer/dsh-browser-fs) — ブラウザが動いているマシン上のファイルにエージェントがアクセスできるようにします。ユーザーが File System Access でローカルディレクトリを許可すると、ツール呼び出しはプラグイン自身の WebSocket で中継されます。モバイルやセキュアでない環境向けに読み取り専用の互換モードも用意しています。
+- [wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — Domi 品質の git worktree による分離と受け渡し。.dsh-worktrees 配下の永続 worktree と、レビュー準備 / 適用 / 完了 / 破棄 のライフサイクルを、コンフリクト処理と安全な後片付けつきで提供します（Domi の本番システムからの移植）。
+- [wly8691-jpg/knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) — Markdown のノート向けの 2 種類の知識グラフ RAG。前提グラフと類似グラフ（P/S-Agent による探索）、段落単位のチャンク分割、n-gram と埋め込みのハイブリッド検索、明示的な重みのフィードバックループを MCP 経由で提供します。
+- [wqty123/dsh-browser](https://github.com/wqty123/dsh-browser) — DSH 向けの共有できる実ブラウザ。人が様子を見て操作を代われるネイティブな Electron ウィンドウを、エージェントが CDP 経由で 20 種の browser_* ツール（open/snapshot/execute/fill/screenshot/download/auth）で動かします。タスクごとのセッション分離、cookie の保持、CAPTCHA の検出に対応し、デスクトップシェルのない素の dsh web でも動きます。
+- [wulun811/LiuHe](https://github.com/wulun811/LiuHe) — LiuHe の MCP コードツールキット（44 ツール）を dsh web に橋渡しします。repo_map、シンボル検索、表記ゆれに強い edit_batch、取り消しジャーナル付きのトランザクション編集、決定論的な品質ゲートを、クラッシュを隔離した Rust の tree-sitter 解析デーモンと SQLite の索引が支えます。
+- [x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) — DeepSeek Harness 向けのウェブ小説執筆エンジン。別の DeepSeek キーを使った並行執筆・構成・発想に加え、設定資料と伏線の管理、意味的なベクトル検索、資料ライブラリ、使用量の台帳、機械的な校正、ローカルでの連載計画を備えます。
+- [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) — dsh-tool-writing 向けのホスト側 Typert リモート。プロジェクトの巻、章の状態、資料ライブラリ、全文検索、推敲の記録、筋書きグラフのデータを、クライアントの執筆パネルに提供します。
+- [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — DSH のユーザーデータをコマンド 1 つでバックアップ・復元。/backup コマンド群、backup_dsh ツール、視覚的な設定パネルに加え、sha256 検証と強化した復元時の検証（パストラバーサルとシンボリックリンクの拒否）、再起動をまたいで一定間隔で動く自動バックアップ、世代管理、アーカイブのダウンロード経路、プライベートリポジトリへの GitHub 同期を備えます。macOS/Linux/Windows 対応。
+- [xiehuan123/dsh-deepread](https://github.com/xiehuan123/dsh-deepread) — 書籍や記事を 5 つのモード（速読、精読、知識マップ、ファインマン、通読）で深く読み解きます。主張・根拠・データのレポート、Mermaid/XMind のマインドマップ、一括比較、予算の事前確認、バックグラウンドジョブの進捗の可視化に対応し、URL・ファイル・貼り付けたテキストから MD/HTML に書き出せます。
+- [xmutfyh/dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) — 学術文章のガード（英中の二言語ルール）。推敲の途中経過の残骸、予防線だらけの書き方、AI っぽさの兆候（ダッシュの多用、「X ではなく Y」構文、LLM が好む語の偏り、3 つ並べる癖）を、ローカルの正規表現リンターで検出します。writing_audit と writing_rules を提供し、論文ファイルの書き込み時には差分だけを自動監査して、新たに出た問題と解消した問題のみを報告します。
+- [xxiaoxiong/dsh-issue-tracker](https://github.com/xxiaoxiong/dsh-issue-tracker) — Jira Cloud の課題管理との連携。issue の検索、プロジェクトと遷移の参照、作成、更新、コメント、状態遷移を扱う 8 つのモデルツールを提供します。書き込みはオプトインで、ドライランにも対応します。
+- [xxiaoxiong/dsh-kubernetes](https://github.com/xxiaoxiong/dsh-kubernetes) — DeepSeek Harness 向けの安全な Kubernetes 操作。ワークロードの確認、範囲を限定したログとイベント、障害の診断、承認ゲート付きの操作を提供します。
+- [yangyunsong023/dsh-sxs-anti-bot-http](https://github.com/yangyunsong023/dsh-sxs-anti-bot-http) — SXS の本番スクレイピング基盤（1 日あたり数百万リクエスト）で鍛えた、bot 対策に強い HTTP 取得ツール。UA プールのローテーション、指数バックオフの再試行、bot 判定の壁（CAPTCHA や本人確認）の検出、適応的なレート制限を備えます——ツールは `sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`。
+- [yangyunsong023/dsh-sxs-news-collector](https://github.com/yangyunsong023/dsh-sxs-news-collector) — トレンド収集ツール。百度 / 今日頭条 / 抖音 / 微博 のホットリストを 1 回の呼び出しでまとめて取得し（微博は任意で cookie が必要）、コンテンツ制作者向けに話題と熱量の値を返します——ツールは `sxs_news_hot`。
+- [ylwl1997/noatmark-dsh-plugin](https://github.com/ylwl1997/noatmark-dsh-plugin) — テキストの衛生管理を担う dsh プラグイン。信頼できないテキストの無害化、不可視文字の検出、LLM 特有の書式の除去、CSV の数式インジェクションのエスケープを行います。
+- [YuanyuanMa03/dsh-funnel](https://github.com/YuanyuanMa03/dsh-funnel) — 取り込み時にツール出力を整えます。エラーと警告の行に加えて先頭と末尾を残し、全文はディスクに退避してモデルが読み戻せるポインターを添えます。すべてのテキストツールが対象で、小さな結果はそのまま通します。
+- [yun520-1/deepseek-heartflow](https://github.com/yun520-1/deepseek-heartflow) — HeartFlow（心虫）の AGI レイヤー 1 判別ゲートを DSH プラグインにしたもの。47 次元のルールベースのテキスト検査（heartflow_check ツール）と、tools/post-execute での出力の自動監督を行い、エンジンがない場合はフェイルクローズします。
+- [Yvesgao/dsh-desktop-launcher](https://github.com/Yvesgao/dsh-desktop-launcher) — 設定ページから Windows のデスクトップショートカットをワンクリックで作成。DeepSeek Harness や任意のローカルサーバー向けの .cmd ランチャーとアイコンを作り、ブラウザを自動で開き、タスクバーへのピン留め方法も案内します。
+- [ywgATustcbbs/dsh-human-task](https://github.com/ywgATustcbbs/dsh-human-task) — 人が介在するためのツール（`human_task` / `human_task_ready_check`）。ユーザーが現実の操作を行うか観察結果を返すまでエージェントを止めます（GUI 操作、ゲームのテスト、目視確認、ハードウェアの確認など）。セッションでの同意と離席チェックを条件に、Web のタスクダイアログから構造化された JSON の結果を返します。
+- [YZz-S/dsh-bili-summary](https://github.com/YZz-S/dsh-bili-summary) — bili_summary ツールを提供します。Bilibili の動画メタデータ、字幕のタイムライン、sharp によるフレーム取得に対応し、エラー処理と段階的な機能縮退を内蔵しています。
+- [zaiwenJ/dsh-cdp-browser](https://github.com/zaiwenJ/dsh-cdp-browser) — DSH 向けの、すでに動いている Chrome/Edge に CDP でつなぐブリッジ。HTTP ＋ WebSocket 経由でスクリーンショット、ピクセル単位のアサーション、DOM/CSS の確認、ページ上の JS 評価を行います。子プロセスも npm 依存も、使うたびの承認も不要です。
+- [ZEM17/dsh-subagent-agy](https://github.com/ZEM17/dsh-subagent-agy) — Google Antigravity CLI（agy）を DSH のサブエージェントとして利用。Antigravity のログイン情報だけで（API キー不要）Gemini のコーディングエージェントにタスクを委譲でき、会話の続き、バックグラウンドでの進捗ストリーミング、パス指定での画像解析、ログイン用のポップアップウィンドウに対応します。
+- [zhang787jun/dsh-finance](https://github.com/zhang787jun/dsh-finance) — 金融リサーチのワークフローとポートフォリオのリスク分析ツール。最新の市場情報については出典を厳密に扱います。
+- [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) — モデルがナレッジベースのディレクトリを grep/glob したときに、QMD の意味検索を自動で補います。依存関係ゼロの DSH プラグインで、next-step による非同期の注入により手動の呼び出しは不要です。
+- [zhaoolee/notes](https://github.com/zhaoolee/notes) — DSH の会話を Smartisan メモ風の PNG として書き出したり、設定したアカウント単位のワークスペースに Markdown のメモを作成・更新したりできます。
+- [zhtx2024/dsh-pdf](https://github.com/zhtx2024/dsh-pdf) — DSH 向けの PDF 解析ツール。pdf_info、pdf_extract_text、pdf_render_page を pdfjs と内蔵の 2 つの描画エンジンで提供し、CJK フォントが埋め込まれていない PDF はシステムフォントで描画します。
+- [zimai233/dsh-adhd-copilot](https://github.com/zimai233/dsh-adhd-copilot) — ADHD 向けの行動コーチングスキル。タスクの分解、あふれそうなときの対処、着手の儀式、失敗からの立て直しを扱います。
+- [zimai233/dsh-exam-countdown](https://github.com/zimai233/dsh-exam-countdown) — 中国の 64 種の試験（高考/考研/四六級/CPA/司法試験…）を、規則を踏まえた日付計算（第 2 土曜、第 1 日曜など）とカウントダウンつきで照会できます。
+- [zimai233/dsh-figma-to-lottie](https://github.com/zimai233/dsh-figma-to-lottie) — SVG のパスとキーフレームの仕様から、単体で完結する Lottie の JSON アニメーションファイルを生成します。
+- [zimai233/dsh-image-search](https://github.com/zimai233/dsh-image-search) — 複数エンジンの画像検索アグリゲーター。Google レンズ、百度、Yandex、TinEye、SauceNAO、IQDB、Ascii2d に対応します。
+- [zimai233/dsh-video-downloader](https://github.com/zimai233/dsh-video-downloader) — Bilibili/YouTube/抖音/小紅書 のメディアを検出してダウンロードします。画質と形式の分析つき。
+- [zimai233/dsh-wash-calendar](https://github.com/zimai233/dsh-wash-calendar) — 純粋な日付計算による習慣のスケジューリング。次回の日付、期間内の予定、遅れているときの助言を返します。
+- [zjl1989-li/dsh-harness-zh](https://github.com/zjl1989-li/dsh-harness-zh) — DeepSeek Harness の中国語ローカライズ。system-prompt/assemble の連鎖を通じて、すべてのシステムプロンプト、ツールの説明、実行時の文脈を実行時に中国語へ翻訳します（1788 項目、ソースの改変なし、アンインストールで英語に戻ります）。
+- [zjl1989-li/dsh-harness-zh-cn](https://github.com/zjl1989-li/dsh-harness-zh-cn) — DeepSeek Harness の中国語ローカライズ。system-prompt/assemble の連鎖を通じて、すべてのシステムプロンプト、ツールの説明、実行時の文脈を実行時に中国語へ翻訳します（1788 項目、ソースの改変なし、アンインストールで英語に戻ります）。
+- [ZK-Andy/dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — 継続的な自己進化。セッションの軌跡から harness の状態（プロンプト、メモリ、スキル、サブエージェントの仕様）を洗練させ、バージョン管理・監査・安全なロールバックを可能にします。レビューゲートとスキルのホットリロードつき。
+- [zoahdev/dsh-github-intelligence](https://github.com/zoahdev/dsh-github-intelligence) — dsh 向けで最も充実した GitHub 連携。リポジトリの概要、リリース、issue、プルリクエスト、コントリビューター、検索に加え、TTL キャッシュ付きの詳細なリポジトリレポートを提供します。API キーは不要です。
+- [zoahdev/dsh-github-release-radar](https://github.com/zoahdev/dsh-github-release-radar) — dsh のエージェントの中から、任意の公開 GitHub リポジトリのリリースと Star を追跡できます。API キーは不要です。
+- [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) — DSH プラグインのエコシステムを透明にランク付けして推薦します。毎日自動取得する topic のデータ、公開されたスコアリングモデル、rank/search/recommend のツール、設定ページのランキングを備えます。
+- [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) — DSH 向けのテキスト優先の Computer Use。Playwright/CDP によるバックグラウンドの Chromium 操作と、アクセシビリティ優先の macOS 操作を組み合わせます。操作は対象のプロセスとウィンドウに固定され、ユーザーのポインターを奪いません。Developer ID 署名と公証済みの Universal 2 DMG を提供します。
+
+### 🖼️ ビジョンとマルチモーダル
+
+- [54xkeee/dsh-vision](https://github.com/54xkeee/dsh-vision) — テキスト専用の DeepSeek に視覚を追加。既定では Doubao Web を利用し（コストゼロ・API キー不要、Windows の CDP ブリッジ経由でログイン済み Chrome を操作）、Antigravity IDE のクォータ（flash/pro）や Gemini にフォールバックします。詳細度の自動引き上げ、コンパクション後も復元できる視覚エビデンスメモリ、内容ハッシュキャッシュ、日英対応のクライアントパネル付き。
+- [54xkeee/dsh-youreyes](https://github.com/54xkeee/dsh-youreyes) — テキスト専用の DeepSeek 向けビジョンツールキット。モデルから呼べる `vision` ツール、deepseek/opencode-go 用ラッパーアダプター（v4 flash/pro）、Antigravity IDE クォータ（既定、flash/pro）／OpenAI 互換 VLM／Gemini／ローカル Ollama の各チャネル、コンパクション後も復元できるエビデンスメモリ、内容ハッシュキャッシュ、日英対応のクライアントパネルを備えます。
+- [akqwpeter-prog/dsh-media-skills](https://github.com/akqwpeter-prog/dsh-media-skills) — テキスト専用モデル向けの無料の視覚ブリッジと画像生成。貼り付けた画像の読み取り、GLM-4V-Flash と Gemini のエンジン間フェイルオーバー、ModLens 風の構造化された根拠、無料の視覚モデル経路の初期設定を備えます。
+- [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — テキスト専用モデル向けの視覚タスク。意図を汲んだ画像 Q&A、長いスクリーンショットの OCR、UI の再現、座標特定、ピクセル差分に対応します。
+- [Cheng-cheng9669/dsh-deepseek-vision](https://github.com/Cheng-cheng9669/dsh-deepseek-vision) — テキスト専用モデル向けに DeepSeek web の視覚モードを再利用します。deepseek_vision ツールがローカルの deepseek-vision-cli によるブラウザ自動操作を駆動し（手動ログイン補助、深い思考を有効化、終了時にブラウザを自動で閉じる）、画像の説明をテキストで返します。
+- [ConsoleSun/Gemini-Eyes](https://github.com/ConsoleSun/Gemini-Eyes) — gemini.google.com への MCP ブリッジ。ログイン済みのブラウザセッションを使い、API キーなしで画像・動画の視覚解析、Imagen による画像生成と Veo による動画生成、会話の管理を行います。
+- [corrinehu/dsh-chat-imagine](https://github.com/corrinehu/dsh-chat-imagine) — API チャネルまたはローカルの CLI（mmx / codex / agy に対応）を使って、DSH のチャット内に画像を自動生成して表示します。
+- [dickpy/dsh-imagegen](https://github.com/dickpy/dsh-imagegen) — DSH Web GUI の AI 画像生成。設定した OpenAI 互換のエンドポイント（gpt-image-2 / gpt-image-1 / dall-e-3）でテキストから画像、画像から画像を生成します。api_url/api_key の設定カードと、サイドバーの分割ペイン型の生成スタジオを備えます。
+- [Einskyle/dsh-llm-vision-bridge](https://github.com/Einskyle/dsh-llm-vision-bridge) — LLM プロバイダーのネイティブな視覚ブリッジ。チャットに貼った画像を視覚モデル（pi-ai/llama.cpp 経由の Qwen3-VL）が説明し、そのテキストをテキスト専用の DeepSeek に渡して返答させます。画像の受け入れ、振り分け、コンパクションはすべて harness ネイティブの仕組みで動き、説明の LRU キャッシュと 503 時の再試行を備えます。
+- [Elohia/dsh-plugin-image-input](https://github.com/Elohia/dsh-plugin-image-input) — Web UI 向けの画像→テキスト入力。画像を貼るかドラッグすると構造化テキストに書き起こして送信し、テキスト専用 LLM でも画像入力を扱えるようにします（OpenAI 互換の vision API を使用）。
+- [Elohia/dsh-plugin-mm-vision](https://github.com/Elohia/dsh-plugin-mm-vision) — DSH 向けの共感覚エンコーダー。視覚モデルが画像を簡潔な構造化空間テキスト（キャンバス/要素/パーセント座標）に翻訳し、`mm_vision` ツールを通じてテキスト専用 LLM にピクセル単位の画像理解を与えます。
+- [Flyvhidbwo/dsh-vision-proxy](https://github.com/Flyvhidbwo/dsh-vision-proxy) — DeepSeek の頭脳と画像の自動書き起こしの組み合わせ。GUI で添付した画像は、テキスト専用の DeepSeek に届く前に OpenAI 互換の VLM でテキスト化されます。自前のキーを使う高速経路（既定は qwen3.7-flash、DashScope/Zhipu/OpenRouter などの OpenAI 互換エンドポイント）と、設定不要で自動検出されるローカル Ollama に対応。
+- [FuzzySoul/dsh-free-vision](https://github.com/FuzzySoul/dsh-free-vision) — テキスト専用モデル向けの無料の視覚ブリッジ。無料枠のプロバイダー（Qwen3-VL-Flash、Doubao、DeepSeek-OCR）を使って画像理解、OCR、UI やデバッグの解析を行い、設定用の GUI も備えます。
+- [gloryxpnv/dsh-tool-vision](https://github.com/gloryxpnv/dsh-tool-vision) — テキスト専用エージェント向けの、ローカル優先の構造化ビジョン。画像はローカルの OpenAI 互換 VLM に送られ、JSON の根拠（要約、原文どおりの OCR、レイアウト領域、実体と関係、色、明示的な不確かさ）として返ります。幻覚を避けるフォールバックと、任意の貼り付け/アップロードのブリッジつき。クラウド費用はゼロで、画像がマシンの外に出ることはありません。
+- [good-boy4069/dsh-vision-guard](https://github.com/good-boy4069/dsh-vision-guard) — テキスト専用経路向けの透過的な画像ガード。画像を貼っても 400 エラーでセッションが固まらなくなり、OCR/PDF/docx/pptx/動画に対応した vision_analyze ツールも使えます。
+- [GOU-GEE/deepseek-vision#plugins/dsh-plugin-deepseek-vision](https://github.com/GOU-GEE/deepseek-vision/tree/main/plugins/dsh-plugin-deepseek-vision) — テキスト専用の DeepSeek 向けの視覚 MCP ＋ DSH バンドル。analyze_image、analyze_clipboard、compare_images、vision_status の各ツールと設定ページを備え、既定では無料の GLM-4.6V-Flash を使い、結果のキャッシュとレート制限への耐性も持ちます。キーはログに残りません。
+- [haiziyao/dsh-vision-mix](https://github.com/haiziyao/dsh-vision-mix) — テキスト、視覚、画像生成の API を 1 つの Mix モデルにまとめ、自動で振り分けます。テキストだけのリクエストはチャットモデルへ、ユーザーの画像やエージェントのスクリーンショットは視覚モデルへ回り、続きの質問では同じセッションの画像を使い続けます。エージェントはセッション単位の呼び出し履歴つきで画像の生成や編集も行えます。
+- [Hyp6666/dsh-open-eyes](https://github.com/Hyp6666/dsh-open-eyes) — テキスト専用の DeepSeek 経路向けの視覚ブリッジ。添付画像とローカル画像を、設定した OpenAI Responses / Chat Completions / Anthropic Messages のいずれかのエンドポイントで解析します。画像対応の経路はそのままネイティブに動きます。
+- [Isanti2016/dsh-quicksight](https://github.com/Isanti2016/dsh-quicksight) — テキスト専用モデル向けの 2 段階の画像読み取り。まず高速なローカル OCR（RapidOCR、オフライン）を試し、だめなら視覚モデル（modlens）にフォールバックします。
+- [jing-hy/picturereader](https://github.com/jing-hy/picturereader) — テキスト専用モデルのための画像「読解」。縮小と減色を行い、構造と色の指紋をテキストのグリッドに変換して会話に戻すことで、マルチモーダルモデルのようにモデル自身が拡大・サンプリング・OCR を進められます。完全にローカルで動き外部モデルへの依存はなく、画像読解の方法論スキルと任意の PaddleOCR を同梱します。
+- [jyh20030112/dsh-visual-plugin](https://github.com/jyh20030112/dsh-visual-plugin) — テキスト専用モデルに視覚を与えます。ユーザーの画像を OpenAI 互換の視覚モデルに転送し、その説明を Web UI の右パネルに表示します。
+- [kaixinbaba/dsh-vision-recognizer](https://github.com/kaixinbaba/dsh-vision-recognizer) — 添付画像を設定可能なモデル（OpenAI 互換と Anthropic の 15 以上のベンダー）でテキストに書き起こす視覚プロバイダー経路。回答自体は DeepSeek が続けます。
+- [LeemanCheung/dsh-image-gen](https://github.com/LeemanCheung/dsh-image-gen) — GPT Image 2 による `image_gen`。既定では Codex サブスクリプションの OAuth を使い、API キーの明示指定にも対応します。生成中のカード表示、最大 3 枚のライブ途中経過、添付の再生・ライトボックス・ダウンロード、テキスト専用モデルへの出力、資格情報を守る範囲限定のリクエストを備えます。
+- [linenxi-ctrl/dsh-vision](https://github.com/linenxi-ctrl/dsh-vision) — DeepSeek Harness 向けの外部視覚プラグイン。クジラボタンの設定パネル、自動返信を伴う画像認識、エージェント用のスクリーンショット/認識ツールを備えます。
+- [liustack/modlens](https://github.com/liustack/modlens) — テキスト専用モデル向けの視覚ブリッジ。画像を貼ると、構造化された JSON の根拠（OCR、レイアウト、意味）が返ります。
+- [lsjspl/dsh-plugin-grok2api-media-tool](https://github.com/lsjspl/dsh-plugin-grok2api-media-tool) — grok2api の API を通じて、dsh に画像と動画の生成機能を追加します。
+- [MicroHEROX/dsh-koboldcpp-hands](https://github.com/MicroHEROX/dsh-koboldcpp-hands) — OCR、画像解析、比較といった繰り返しの多いテキスト・視覚作業を、koboldcpp_run と koboldcpp_vision ツールを通じてローカルの KoboldCpp（llama.cpp）サーバーに任せます。サーバーの起動と停止も必要に応じて管理します。
+- [MicroHEROX/dsh-unsloth-hands](https://github.com/MicroHEROX/dsh-unsloth-hands) — OCR、画像解析、比較といった繰り返しの多いテキスト・視覚作業を、unsloth_run と unsloth_vision ツールを通じてローカルで動く Unsloth Desktop（Unsloth Studio）サーバーに任せます。純粋な HTTP クライアントで、プロセスの起動や管理は行いません。
+- [moon09300731/dsh-vision-tools](https://github.com/moon09300731/dsh-vision-tools) — DeepSeek Harness 向けの視覚機能一式。vision_understand ツール（OpenAI 互換の視覚 API、既定は無料の智譜 GLM-4V-Flash）に加え、貼り付け・ドラッグ＆ドロップ・ボタンからの画像認識の導線を提供します。
+- [NagasakiSoyo-ui/dsh-llm-deepseek-vision](https://github.com/NagasakiSoyo-ui/dsh-llm-deepseek-vision) — 視覚を補ったDeepSeek アダプター。視覚対応モデルが画像入力を説明し、その説明をテキスト専用の DeepSeek モデルが読んで推論します。
+- [niuniuaba/dsh-subagent-vision](https://github.com/niuniuaba/dsh-subagent-vision) — テキスト専用の DeepSeek エージェントが同じセッションのまま画像を読めるようにします。視覚対応のサブエージェントに委譲し、送信時に画像をパスへ変換します。
+- [niyongsheng/free-vision-skill](https://github.com/niyongsheng/free-vision-skill) — macOS の Vision Framework による完全ローカルの画像理解と OCR。`ocr_image`（テキスト、表のレイアウトと座標）と `view_image`（情景、顔、QR）を提供し、web の入力欄に複数画像を貼り付けても、パス/URL/base64 で渡しても使えます。画像が Mac の外に出ることはありません。
+- [ruby1304/dsh-vision-subagent](https://github.com/ruby1304/dsh-vision-subagent) — テキスト専用エージェントに視覚を与えます。vision_agent ツールが、設定した視覚経路（MiniMax/Kimi）の使い切りサブエージェントに画像の読み取りを委譲し、Codex 風の貼り付けブリッジも備えます。画像は隔離された文脈で解析され、メインのセッションにはテキストだけが届きます。
+- [s3yf1337/dsh-easyvision](https://github.com/s3yf1337/dsh-easyvision) — テキスト専用モデルに視覚を与えます。describe_image ツールが、harness 自身の LLM ランタイム経由で、dsh のモデル一覧にある視覚モデルに画像を委譲します。
+- [shinjiyu/dsh-plugin-multimodal](https://github.com/shinjiyu/dsh-plugin-multimodal) — テキスト専用の DeepSeek 経路でも画像の貼り付けを可能にし、添付は視覚のサイドカーが説明します。ネイティブに視覚対応のモデルはそのままです。
+- [siegfly/dsh-deepseek-vision](https://github.com/siegfly/dsh-deepseek-vision) — 視覚言語のゲートウェイとなるプロバイダー経路。貼り付けた画像を、DeepSeek に渡す前に設定可能な VL モデル（既定は Qwen-VL）が説明します。
+- [TaurusWood/dsh-plugin-appshot](https://github.com/TaurusWood/dsh-plugin-appshot) — DSH 版の Codex Appshots。グローバルショートカットで最前面のウィンドウを取り込み、そのままコンポーザーに載せてエージェントに質問できます。
+- [TZHR-invest/dsh-plugins#dsh-vision-tool](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-vision) — エージェントから呼べる視覚ツール。設定した任意の OpenAI 互換の視覚エンドポイントでローカル画像を説明します。任意で複数モデルによる相互確認も行え、キーは同梱していません。
+- [wulusai2333/mimo-vision](https://github.com/wulusai2333/mimo-vision) — `describe_image` ツール。opencode の Zen API（資格情報 `OPENCODE_GO_API_KEY`、まず無料経路を試し、だめなら有料）で画像を mimo-v2.5 に送り、テキスト専用モデル向けに説明文を返す視覚ブリッジです。ネイティブなパススルーと、SVG/TIFF/HEIC の ImageMagick による変換に対応します。
+- [xiaoshihou514/dsh-vision](https://github.com/xiaoshihou514/dsh-vision) — ネイティブな視覚機能の拡張。智譜（無料）か Qwen-VL（ローカル）のどちらかを使います。
+- [xiaozhe7772222/dsh-draw-router](https://github.com/xiaozhe7772222/dsh-draw-router) — DeepSeek Harness 向けの汎用画像生成。OpenAI 互換の任意のエンドポイント（SenseNova、StepFun、Agnes、Qwen、Flux、SD、Imagen ほか）から画像モデルを自動検出し、エージェントツールと REST API を提供します。
+- [ximengxiaolan/dsh-vision-bridge](https://github.com/ximengxiaolan/dsh-vision-bridge) — コンポーザーに添付した画像を、テキスト専用の DeepSeek モデルに届く前に OpenAI 互換の視覚モデルがテキストに書き起こします。
+- [xsoc1/dsh-image-vision](https://github.com/xsoc1/dsh-image-vision) — チャットの画像添付を橋渡しし、OpenAI 互換の任意の VLM（ローカルの Ollama でもクラウドでも）で使える `view_image` ツールを提供します。貼り付け/ドロップした画像は、テキスト専用の DeepSeek モデルに届く前に `view_image` のパス目印に変換されます。
+- [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) — テキスト専用エージェント向けの無料の視覚機能。キー不要の視覚チェーンに加え、ピクセル系のツール（Q&A、座標特定、切り抜き、ピクセル差分、色、OCR、SVG トレース、切り抜き合成、スクリーンショット）を備えます。画像を貼るだけで使えます。
+
+### 🧩 スキル
+
+- [AKS1st/dsh-skill-manager](https://github.com/AKS1st/dsh-skill-manager) — DSH の設定パネルにスキル管理ページを追加。system／user／workspace／preset のスキルを一覧し、展開してファイルツリーを表示、ファイルの閲覧と編集、zip からのインポート、エクスポートや削除ができます（system スキルは読み取り専用）。
+- [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) — DeepSeek Harness を Hermes のパイプラインに組み込みます。dispatch-spec テンプレート、モデル階層のルーティング、オーケストレーターによる品質ゲート、git の単一ライター原則を SKILL.md パックとして提供します（バンドルとしてインストール可能）。
+- [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) — 6657 のライブ配信ルームの実メッセージ 22,771 件から抽出した弾幕ミームのスキル。wanjiqi 風の掛け合い、CS と DOTA のミーム、プレイヤーいじりと実況風コメントを再現します。
+- [creght-dev/skills](https://github.com/creght-dev/skills) — Creght プラットフォームでウェブサイトを構築するためのスキル。CLI での pull/push 同期、ページとコンポーネントの規約、CMS、フォーム、認証、SEO、公開、バージョンのロールバックを扱います。
+- [dhicoc/dsh-chinese-traditional-wisdom-skill](https://github.com/dhicoc/dsh-chinese-traditional-wisdom-skill) — chinese-traditional-wisdom（玄枢 / XuanShu）のスキルパックを DeepSeek Harness の Cordis プラグインとして提供。四柱推命、紫微斗数、六爻、梅花心易、奇門遁甲、大六壬、太乙、五運六気、体質、風水の計算に対応し、ローカルの決定論的エンジンと可視化ダッシュボードを備えます。
+- [dhicoc/dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) — リバースエンジニアリングのスキルパック（SKILL.md 85 本）を DeepSeek Harness の Cordis プラグインとして提供。リバースエンジニアリング、許諾を得たペネトレーションテスト、セキュリティ研究のスキルルーターです。
+- [dhicoc/dsh-wuyun-liuqi](https://github.com/dhicoc/dsh-wuyun-liuqi) — 五運六気の東洋医学スキルパックを DeepSeek Harness の Cordis プラグインとして提供。年運と客気の計算、臨床での証の弁別、病機の推論に対応します。
+- [Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — gh CLI を包んだ GitHub 検索・発見・監査スクリプトの SKILL.md パック。リポジトリ検索、多軸での探索、トレンド、リポジトリ要約、類似プロジェクト、コード検索、issue/PR 検索、組織監査に対応し、dsh バンドルとして（npm でも）提供されます。
+- [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) — コーディングエージェント向けのソフトウェア工学メソッドパック。ベースラインを先に固める計画、体系的なデバッグ、プロンプトの衛生管理、完了前の検証、修復/引退の追跡といったスキルを収録します。
+- [gongyijie85/dsh-ecc](https://github.com/gongyijie85/dsh-ecc) — 273 個の ECC スキル（22.7 万 Star のオペレーターシステムの 95.8%）を 4 回に分けて DSH へ移植したもの。
+- [gongyijie85/dsh-ponytail](https://github.com/gongyijie85/dsh-ponytail) — Ponytail 流の「ものぐさシニア開発者」モード。DietrichGebert/ponytail から 6 つのスキルを移植しています。
+- [gongyijie85/mattpocock-skills-dsh](https://github.com/gongyijie85/mattpocock-skills-dsh) — Matt Pocock の推奨スキル一式（SKILL.md 25 本: grilling、writing-for-agents、wait-what、TDD、コードレビュー、wayfinder、ask-matt ルーター）を DSH へ移植したもの。
+- [gongyijie85/mattpocock-skills-dsh-zh](https://github.com/gongyijie85/mattpocock-skills-dsh-zh) — Matt Pocock の 25 スキルを中国語に完全翻訳したもの（技術用語は英語のまま注釈つき）。
+- [hackerFish/awesome-dsh-skills](https://github.com/hackerFish/awesome-dsh-skills) — 検証済みのエンジニアリングスキル 12 種（git コミット、コードレビュー、テストファースト、プラグイン開発、デバッグ、変更履歴、PR レビュー、タスク分解ほか）。すべての SKILL.md が公式のスキル規約に沿ったフォーマット検証と、隔離環境での読み込みスモークテストを通過しています。
+- [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) — DeepSeek Harness を Tauri 2 のデスクトップアプリ（macOS ＋ Windows）に仕上げるためのスキル。両プラットフォームのインストール手順、サブエージェントのタイムアウト監視つき中国ミラーの初期設定、管理者権限のいらない Windows のツールチェーン構成（VS Build Tools 不要）、3 通りの受け入れチェックリストを収録します。
+- [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — 失敗からの復旧メモリ。実際の開発セッションから復旧の教訓を検索・記録し、BM25 ＋ 意味検索の RAG と教訓ナレッジベースを提供します。
+- [JazzuLu/find-dsh-plugins](https://github.com/JazzuLu/find-dsh-plugins) — 対話型の DSH プラグイン検索。4 つの情報源を統合したインデックスに BM25 の事前絞り込みと LLM による意味ランキングを組み合わせ、候補には根拠のグレードとローカル静的セキュリティ監査の結果が付きます。インストール後の検証まで含めた安全な導入フローを備えます。
+- [jeremy9682/dsh-skill-pack](https://github.com/jeremy9682/dsh-skill-pack) — 共有できるワークフロースキル 11 種（handoff、triage、to-spec、to-tickets、wayfinder、teach、wait-what、dsh-mode-routing、ask-matt、overnight-execution、full-throttle）を、インストール可能なスキルパックとして提供します。
+- [JohnXu22786/skill-framework](https://github.com/JohnXu22786/skill-framework) — エンジニアリング手法のスキルライブラリを 1 つの Cordis プラグインにまとめます。DeepSeek Harness の ctx.skills に 14 個の Agent Skills（計画、テスト、デバッグ、レビュー、デリバリー）を登録します。
+- [linhay/harmony-next.skills](https://github.com/linhay/harmony-next.skills) — DeepSeek Harness 向けの HarmonyOS NEXT スキルバンドル。オフラインの API リファレンスと、DevEco、HDC、エミュレーターの自動化に関する手引きを収録します。
+- [linxichen/dsh-rigorquant](https://github.com/linxichen/dsh-rigorquant) — RigorQuant のプリセット＋スキルパック。実証的・計算的な数学（経済、金融、ポートフォリオ）のための、囲われた環境で無人稼働するマルチエージェント研究を提供します。実装前の 4 部構成のチェック群と、jacobian/Lean へのエスカレーション経路を備えます。
+- [lunw/shopline-ai-toolkit-dsh](https://github.com/lunw/shopline-ai-toolkit-dsh) — SHOPLINE AI Toolkit。公式の SHOPLINE Developer MCP サーバーを橋渡しし、SHOPLINE 向けのエージェントスキル 7 種（Admin REST、GraphQL、OAuth、webhook、Sline）を提供します。Shopify AI Toolkit の SHOPLINE 版です。
+- [mudden2380078550-creator/write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) — 中国語の長編脚本の執筆スキル。2 つの入力ブロック（背景設定＋キャラクター設定）を因果と価値のエンジンに流し、AI っぽさを取り除くレビューと整合性の台帳を組み合わせます。Codex / Claude Code / dsh / zcode で動作します。
+- [PAKIKNOWLEDGE/dsh-notify-skill](https://github.com/PAKIKNOWLEDGE/dsh-notify-skill) — 席を外しているときに DSH エージェントからメールで知らせます。ゴール達成時、行き詰まり時、ユーザーに判断を仰ぐ前、長時間タスクの節目で、同梱の依存関係ゼロの Node 製 SMTP 送信機から通知します。
+- [PerryLink/dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) — DSH プラグイン開発の知識ベースを、必要なときに読み込むエージェントスキルとして提供。公式の制約、作業手順、API リファレンス、コミュニティで知られた落とし穴をバンドルと一緒に導入するので、プラグインを作りながら参照できます。
+- [PerryLink/dsh-skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security) — セキュリティ監査の方法論スキルパックと plugin_vet によるサプライチェーンゲート。8 つのエージェントスキル（秘密情報スキャン、依存関係監査、サプライチェーンレビュー、プロンプトインジェクションのレビュー、監査の統括、脅威モデリング、脆弱性情報、インシデント対応）を中英 2 言語で提供し、スキルをマウントして plugin_vet のインストール前自動スキャンを登録する npm プロバイダーバンドルを同梱します。
+- [songoao25/dsh-virtual-product-team](https://github.com/songoao25/dsh-virtual-product-team) — 仮想プロダクトチームのエージェントプリセット。ユーザー主導の会話で、アイデアからリリース・宣伝・運用までの 12 ステップを、段階ごとのゲートと専用スキルとともに進めます。
+- [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — HeyGen の公式 HyperFrames スキル 5 種。HTML 動画 / CLI / レジストリ / ウェブサイトから動画 / GSAP リファレンスを収録します。
+- [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) — 公式の Remotion スキルを DSH へ移植。React によるプログラマブルな動画制作（アニメーション/音声/字幕/3D/チャート/フォント、ルールファイル 38 個）に対応します。
+- [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) — GitHub のワークフロー向けスキル 4 種。PR のトリアージ、レビューへの対応、GitHub Actions の障害診断、ドラフト PR の安全な公開を、既存の DSH の機能と gh/git のフォールバックで実現します。
+- [SummerSec/SumSec-Skills](https://github.com/SummerSec/SumSec-Skills) — DeepSeek Harness のプロファイルバンドルとしてマウントできる、複数プラットフォーム対応の Agent Skills モノレポ。中国語の文章作成、Git、プラグイン開発、審美眼、意味的なリンターのスキルを提供します。
+- [superdesigndev/superdesign-skill](https://github.com/superdesigndev/superdesign-skill) — Superdesign のキャンバス上で UI とマーケティング用グラフィックを作るデザインスキル。リポジトリを読んで文脈を把握し、そのデザインシステムを抽出したうえで、分岐できるデザイン案、フロー画面、再利用可能なコンポーネントを Superdesign CLI で生成・改良します。
+- [tt-a1i/archify#integrations/deepseek-harness](https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness) — リポジトリやシステムの説明から、検証済みで単体完結する対話的なアーキテクチャ図、ワークフロー図、シーケンス図、データフロー図、ライフサイクル図を生成します。
+- [tuogusa/dsh-skill-manager](https://github.com/tuogusa/dsh-skill-manager) — Web の設定パネルからユーザースキルを閲覧・検索・削除できます。
+- [Vladimir-Human/humanizer-ru#dsh](https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh) — ロシア語の文章から AI の痕跡を取り除きます。チャットボット（ChatGPT、Gemini、Grok、Perplexity、DeepSeek）由来のコピペの跡を見つけ、依頼に応じて自然な文章に書き直します。根拠レジストリを備えた 39 個の正規表現マーカーを収録し、オフラインで動くテキスト専用バンドルです。
+- [xiongjiamu/dsh-atomgit](https://github.com/xiongjiamu/dsh-atomgit) — DeepSeek Harness 向けの AtomGit プラグインバンドル。組み込みの AtomGit スキル 6 種（issue の計画、issue の実装、PR のレビュー、PR のマージ、CLI リリースの公開、GitHub へのミラー）に加え、ag CLI の連携と、リポジトリ・ブランチ・issue・PR・検索を扱うホスト型 MCP ツールを提供します。
+- [xsoc1/math-research-dsh](https://github.com/xsoc1/math-research-dsh) — 厳密な未解決問題の数学研究スイート。4 つのエージェントスキル（rigorous-open-math-research、manage-math-research-program、math-research-workflow、lean-verify）で、敵対的な監査を伴う定理の解決、研究プログラムの管理、パイプラインの統括、Lean 4 での形式化の監査を行います。CI で検証されたテストと、上流との機械的な同期を備えます。
+- [YTxue/dsh-skill-manager-ytxue](https://github.com/YTxue/dsh-skill-manager-ytxue) — 設定サイドバーのスキルプール管理。有効化/無効化、名前の衝突を確認しながらのフォルダー一括取り込み、状態に応じたワンクリックの DSH 仕様チェックと自動修正、システム/プロジェクトのスコープ表示に対応します。
+- [YuanyuanMa03/cot-lint](https://github.com/YuanyuanMa03/cot-lint) — 思考連鎖の漏れを検出するリンター。ドキュメントやコメントに残った AI セッションの痕跡（もう存在しない設計への言及、PR 目線の記述、変更の実況、レビューの段取り）を、依存関係ゼロの CLI で見つけます。修正用の cot-trim スキルをインストール可能なバンドルとして同梱。
+- [zhaiyateng/dsh-design-skills](https://github.com/zhaiyateng/dsh-design-skills) — デザイン美学のスキルパック（10 スタイル: ダーク SaaS、ミニマルホワイト、ニューモーフィズム、ブルータリズム、グラスモーフィズム、和のミニマル、ベントーグリッド、サイバーパンク、ヴェイパーウェイヴ、アールデコ）。実際に動くランディングページのデモに加え、スタイルごとのトークン、コンポーネントのルール、禁止事項、受け入れチェックリストを収録します。
+- [ZihaoVistonWang/Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — DeepSeek Harness から Stata を動かします。ネイティブの Stata AI Skill サービスが DSH と一緒に自動起動するので（macOS/Windows のバイナリを同梱）、回帰分析、do ファイル、計量経済のワークフローを手作業の設定なしで実行できます。
+- [zjsthmjialin/commercial-ui-ux-codex-skill](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill) — DSH 向けに commercial-ui-ux スキルを登録します。タスクに応じた商用の UI/UX/GUI の設計、レビュー、修正、実装（SaaS、ダッシュボード、管理画面、フォーム、テーブル、デザインシステム）を、参照ドキュメントの仕組みと品質ゲートとともに提供します。
+- [zjsthmjialin/inspiration-deck-workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop) — DSH 向けに Inspiration Deck Workshop スキルを登録します。ローカルの静的 HTML のプレゼン資料（デッキのテンプレート 6 種、25 以上のレイアウト、23 のテーマとモーションのショールーム）を作れ、検証と PNG/PDF 書き出しの CLI、スモークテストを備え、実行時依存はゼロです。
+- [zjsthmjialin/pdf-background-gray-codex-skill](https://github.com/zjsthmjialin/pdf-background-gray-codex-skill) — DSH 向けに remove-pdf-background-gray スキルを登録します。画像ベースの PDF の灰色がかった背景を白くしつつ、解像度、ページの寸法、アンチエイリアスされた文字の輪郭を保ちます（可逆な Flate で書き戻し）。Python スクリプト 1 本（pypdf ＋ Pillow ＋ numpy）で動きます。
+- [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) — PR の評価と改善のコンサルタント。過去のアンチパターンと成功パターンをもとに PR が通る見込みを評価し、ワンクリックの採点と具体的な改善案を出します。
+
+### 🔁 ワークフローと自動化
+
+- [1052326311/dsh-plan-lattice](https://github.com/1052326311/dsh-plan-lattice) — 長期タスクや要件が曖昧なタスク向けに、永続的な実行契約、再帰的な作業グラフ、重要事項の確認、エビデンスゲートを追加します。
+- [940842546/dsh-permissions](https://github.com/940842546/dsh-permissions) — Claude Code 風のパーミッションルールエンジン。hard/deny/ask/allow の階層（full access より上位の hard 層を含む）、ワークスペース単位のルール、ワイルドカードによるパス保護、視覚的な段階エディターを備え、ルールは settings.yaml に永続化されます。
+- [adithya-hmt/fullstack-expert](https://github.com/adithya-hmt/fullstack-expert) — Cordis ネイティブで根拠を重視するフルスタック開発のワークフロー。まず調べてから計画する進め方、明示的な検証の証跡、機微な操作に対する承認を意識したゲートを備えます。
+- [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) — ローカルの aflare バイナリ向けのワークフローツール。ローカル優先で決定論的な YAML のワークフロー DAG（WAL によるクラッシュ復旧、Saga による補償）を、aflare バイナリを通じて生成・検証・実行します。300 以上のテンプレートを同梱。
+- [apheli0os/deepseek-harness-orchestrate](https://github.com/apheli0os/deepseek-harness-orchestrate) — DSH 向けの宣言的なタスク DAG のオーケストレーション。依存グラフを検証し、トポロジカル順に並べた各層をワークフロー基盤のサブエージェントで並列実行し、失敗を決定論的に伝播させます。
+- [biociao/dsh-science](https://github.com/biociao/dsh-science) — Claude Science 風のリサーチワークベンチ。ReAct のリサーチループエンジン（research_* ツール）、来歴を持つバージョン管理された成果物（artifact_* ツール）、ゲノム/病原体/バイオインフォマティクス向けのサイエンススキル 10 種を備えます。
+- [btspoony/dsh-advisor](https://github.com/btspoony/dsh-advisor) — 2 つ目のモデルを相棒にして、各ターンを受動的にレビューさせ、気づきを注入します。
+- [btspoony/mstar-harness](https://github.com/btspoony/mstar-harness) — スキル駆動で harness とループの設計を進めるワークフローのエージェントプラグイン。
+- [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) — プロジェクト単位の定期プロンプトを、毎回新しい headless エージェントセッションとして実行します。単発・間隔・cron のスケジュールに対応し、実行履歴も永続化します。
+- [ChongCyrus/Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — マルチエージェントの数学問題解答・検証フレームワーク。ブレインストーム → 解答者の反復 → 複数検証者による討論 → 検証済みナレッジベース、という流れで進み、チェックポイントからの再開と手動/自動の介入に対応します（エージェントプリセットとしても提供）。
+- [cloader/dsh-taskboard](https://github.com/cloader/dsh-taskboard) — DSH のタスクボード。プロジェクトとモデルを指定してタスクを作成し、手動または cron で実行できます。プロジェクト内で新しいセッションを始めると未着手のタスクを自動で拾い、完了するとレビュー待ちに移します。
+- [Cola1018/dsh-aicc-zhunao](https://github.com/Cola1018/dsh-aicc-zhunao) — メインブレインとして統括するプリセット。委譲を優先するペルソナ、ルートセッションでの実行ゲート、可搬な AI-LAW ルールスキルを備えます。
+- [DamonKoy/dsh-plugins#dsh-approve-for-me](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-approve-for-me) — 承認レビューの自動化。読み取り専用ツールは自動承認、危険なコマンドは自動拒否する、フェイルクローズ方式のポリシーエンジンです。
+- [Dely0/dsh-workbench](https://github.com/Dely0/dsh-workbench) — カレンダーと階層型タスクのワークベンチ。AI の補助による要件の確認、相談、分解、ユーザー承認を伴う実行、振り返りに加え、リマインダーとタスクごとの AI セッションワークスペースを提供します。
+- [dickpy/dsh-cloud-sync](https://github.com/dickpy/dsh-cloud-sync) — WebDAV と S3 互換ストレージを通じて、DSH のプロファイルとローカルのプラグインソースのアーカイブを同期します。暗号化したスナップショット、コンフリクトを踏まえた復元、明示的な自己更新に対応。
+- [EvilIrving/dsh-proof](https://github.com/EvilIrving/dsh-proof) — 独立した読み取り専用の受け入れ検査層。トップレベルのターンが閉じる前に読み取り専用の検証役を起動し、合格しなかった点をエージェントに差し戻します。
+- [fakechris/dsh-track](https://github.com/fakechris/dsh-track) — 組み込みのタスク管理エンジン。意思決定ポイントのプロトコル、アイデアを書き留める壁、Linear 風の issue ストアを備えます。
+- [february2015/dsh-taskswarm](https://github.com/february2015/dsh-taskswarm) — TaskPlane の DSH 移植版。依存関係の順に並べた波を、git worktree のレーンで並列実行します。タスクパケット、モデルをまたいだレビュー、クラッシュ復旧に対応。
+- [fuhefei/dsh-sentinel](https://github.com/fuhefei/dsh-sentinel) — 条件によるエージェントの起こし込み。ファイル/コマンド/HTTP/プロセス/webhook を永続的に監視し、条件が満たされたらエージェントを起こします。
+- [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) — Kimi Code 風のスウォーム。適応的なスケジューリングでサブエージェントを一括並列に割り当て、/swarm コマンドとチャット内のリアルタイム進捗行を提供します。
+- [icetomoyo/dsh_workflow](https://github.com/icetomoyo/dsh_workflow) — UltraCode 風のマルチエージェント統括。生成でき、保存でき、統制でき、観測でき、再開できるワークフローの層を提供します。
+- [Jesse-njx/dsh-routines](https://github.com/Jesse-njx/dsh-routines) — cron で動くスケジュールエージェント。決まった時刻にプロンプトを実行し、要約を普段いる場所に届けます。実行の重複、実行漏れ、タイムアウトに対する安全な既定値つき。
+- [Jiao-XXX/dsh-auto-approve](https://github.com/Jiao-XXX/dsh-auto-approve) — workspace-write と danger-full-access の間に `auto` パーミッションプリセットを追加。分類器が日常的なサンドボックス権限の引き上げを一度だけ許可し、危険なものや判断に迷うものは人に回します。
+- [jiezeng2004-design/dsh-requirements-alignment](https://github.com/jiezeng2004-design/dsh-requirements-alignment) — 実行時の要件のずれを防ぐガード。長時間動く DSH のエージェントを、ユーザーが承認したゴール、制約、決定事項に沿わせ続けます。
+- [JohnXu22786/file-planning](https://github.com/JohnXu22786/file-planning) — DSH 向けの、ディスクに永続化する実行計画。マイルストーン/ステップの状態機械、依存関係によるゲート、監査イベントストリーム、決定論的な完了ゲートを、dsh のツール・CLI・スキルから利用できます。
+- [JohnXu22786/task-board](https://github.com/JohnXu22786/task-board) — イベントソーシングによるセッション横断の作業台帳。タスクの登録・追跡・完了を完全な監査履歴つきで行い、カンバン形式の書き出しと、毎ターン注入されるボードの要約を提供します。
+- [Jungod1121/dsh-anchored-standard](https://github.com/Jungod1121/dsh-anchored-standard) — DeepSeek V4 Pro 向けの 2 段階エージェントプリセット。最初のリクエストでは bash と read だけを見せ（Minimal に寄せたブートストラップ）、最初のツール呼び出しか返答の後に Standard のツール一式を解禁します。インストーラーバンドルと手動配置用のプリセットディレクトリを同梱。
+- [KanoNoUta/dsh-captain](https://github.com/KanoNoUta/dsh-captain) — GPT が依存関係の DAG を計画し、DeepSeek のワーカーが適応的な並列度でタスクを実行、任意で GPT のレビュアーが Git の差分を逐次監査して修正のラウンドを回します。
+- [Karbo123/DSH-EvoResearch#evoresearch-plugin](https://github.com/Karbo123/DSH-EvoResearch/tree/main/packages/evoresearch-plugin) — リサーチエージェント一式。監査可能な根拠チェーンを伴う長期ゴール制御、cron によるスケジューリング、複数エージェントの専門家チーム、自己進化する研究メモリ（FTS5 ＋ RRF による想起）、プロジェクト単位のワークスペース、専用のワークスペース UI を備えます。
+- [kaziii/dsh-github-connector](https://github.com/kaziii/dsh-github-connector) — GitHub の Device Flow による接続と、会話内で完結する PR ワークフロー。コンポーザー上部のステータスバーから作成 / AI レビュー / マージができ、検索や issue・PR の読み書きを行う github_* ツールも提供します。
+- [LeslieWylie/agent-loop-workflow](https://github.com/LeslieWylie/agent-loop-workflow) — DeepSeek Harness 向けの、プロジェクトに依存しないマルチエージェント協働プロトコル。暴走したエージェントループを止めるループガード、6 項目の引き継ぎフォーマット、リスク階層に応じたレビューの振り分け、verify→commit→push→review→close の固定手順を定めます。同じルールを各エージェントの指示にコピペする代わりに、スキル 1 つで済ませます。
+- [LeslieWylie/dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) — 根拠を第一に据えた運用キット。読み取り専用ツール 6 種（機能カタログ、段階的なワークフロー計画、同梱スキルのリーダー、範囲を限定したローカルメモリ検索、リポジトリのリリース監査、リリースチェックリスト）と同梱スキル 5 種を提供します。計画と監査に徹し、リモートへの書き込みは行いません。
+- [LeslieWylie/review-workflow](https://github.com/LeslieWylie/review-workflow) — DeepSeek Harness 向けの、複数審査員による構造化レビューのワークフロー。N 人の審査員が互いを見ない独立したサブエージェントで採点し、議長がアンカー一致とΔレベルの裁定で意見の相違を調停、独立した批評役がプロセス自体を監査します。設計、コード、論文、プロジェクトのレビューに使えます。
+- [Letter2025/dsh-approval-llm](https://github.com/Letter2025/dsh-approval-llm) — モデルによるパーミッション承認。別のレビュアーモデルが承認要求に回答します。
+- [Letter2025/dsh-model-failover](https://github.com/Letter2025/dsh-model-failover) — 2 段階のモデルサーキットブレーカーとフェイルオーバー。リクエストの失敗が続いたらモデル単位、あるいはプロバイダー全体を遮断し、次のリクエストを設定済みのフォールバック先に回します。
+- [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) — 先回りのスケジューリング。適応的なハートビートと価値ネットワーク（緊急度、関連度、割り込みのコスト）が、エージェントが自分から話しかけるべきタイミングを判断します。
+- [lonelymoon87/dsh-specflow](https://github.com/lonelymoon87/dsh-specflow) — 仕様の成果物、スキル、コマンド、ゴールに紐づく実装、タスク進捗の文脈を追加します。
+- [lucas-ward/dsh-ci-context](https://github.com/lucas-ward/dsh-ci-context) — 許可リストに入れた GitHub Actions と GitLab CI の実行メタデータを、ログ・認証情報・プロバイダー API を読むことなくエージェントの文脈に注入します。
+- [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) — Overleaf 風の LaTeX 論文ワークベンチ。描画された PDF 上の任意のテキストに注釈を付け、dsh のエージェントにソースを直させます。コンパイル確認と git の履歴つき。
+- [MoonCoder-HAPPY/SpecWorkflow](https://github.com/MoonCoder-HAPPY/SpecWorkflow) — 要件の明確化、実装仕様、実行、納品レビュー、修正計画、バグ診断、出典に基づく調査のための SpecWorkflow スキルパックを登録します。
+- [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — AgentTeams によるマルチエージェントのチーム編成。
+- [Noelune/dsh-agent-relay](https://github.com/Noelune/dsh-agent-relay) — ループバック優先のマルチエージェントメッセージ中継。HMAC 認証のブローカーと dsh プラグイン（relay_send/recv/peers/history）、依存関係ゼロの CLI と Python クライアント、ワイヤプロトコル v1.0 を備えます。
+- [nyantused-cpun/folio#plugins/folio-events](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events) — Folio（兰亭）@nyantused/folio-dsh-events: セッションプロトコルのイベント——セッション開始時の自動リマインドと終了時の自動保存。@nyantused/folio-dsh-tools と組み合わせて使います。
+- [nyantused-cpun/folio#plugins/folio-tools](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-tools) — Folio（兰亭）@nyantused/folio-dsh-tools: スキーマ検証された 15 のツール（メモリ＋品質ゲート）と、コンサル文書生成エンジンの L0 ガード。完全なセッションプロトコルには @nyantused/folio-dsh-events と組み合わせてください。
+- [omdsh-dev/dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research) — 公式のワークフローエンジン上に構築した、適応的なディープリサーチの統括役。
+- [omdsh-dev/dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) — 敵対的な点検 → 修正 → レビューのループを回すツール一式。
+- [PerryLink/dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) — 承認応答チェーンに 2 つ目のモデルによる自動レビューを追加。読み取り専用のレビュアーサブエージェントが理由つきの構造化された許可/拒否の判定を返します。既定はフェイルクローズです。
+- [PerryLink/dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) — 公式のサブエージェント接続点上で動く、永続的なバックグラウンド子エージェント。どのセッションからでも起動でき、Web UI のサイドバーで進捗を見ながら、いつでもメッセージ送信や中断ができます。子ごとのツール範囲、ペルソナ、委譲の深さの上限を設定できます。
+- [PerryLink/dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) — エンジニアリング規律のガード。最初の編集前に要件を問い詰め、red/green のテスト証跡ゲートを設け、分岐した敵対レビューを行い、観点ごとの検証ワークフローを備えた納品レポートを出します。
+- [PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — 公式品質の GitHub CI 連携。composite の action.yml、冪等なインラインコメントとステータスチェックのゲートを備えたポーリング型 PR レビューボット、書き込みをすべて人の承認で守った PR/issue ツールを提供します。
+- [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) — 選択できるエージェントプリセットを 2 つ追加します。シェルを制限した汎用エージェントと、リポジトリに集中するコーディングエージェントです。
+- [rinDBeans/dsh-apex-standard](https://github.com/rinDBeans/dsh-apex-standard) — 公式 API と opencode-go 上の DeepSeek V4 Pro/Flash 向けの、基準を固定した統一エージェントプリセット。Minimal と完全に同じ 2 ツールの初回リクエストによるブートストラップ、モデルに応じた Pro/Flash の経路、長時間セッションを安定させるエポック対応のカタログ管理を備えます。
+- [rocker2018-droid/dsh-longtask-orchestrator](https://github.com/rocker2018-droid/dsh-longtask-orchestrator) — 長時間タスクの統括ループ。Codex が計画・採点・レビューし、DeepSeek が実行し、Kimi が補助します（視覚での受け入れ確認、要約、相互チェック）。
+- [sailoumili/novel-writer](https://github.com/sailoumili/novel-writer) — DeepSeek Harness 向けのマルチエージェント小説執筆プリセットを導入します。1 体の指揮エージェントが、世界観構築・プロット・キャラクター管理・執筆・品質レビューの 5 種の専門サブエージェントに指示を出します。
+- [Saktawdi/dsh-ha-orchestrator](https://github.com/Saktawdi/dsh-ha-orchestrator) — モデルの高可用フェイルオーバー（隔離、サーキットブレーカー、疎通確認による復帰）とサブエージェントの統括（fanout/pipeline/supervisor）。二言語の設定 UI つき。
+- [Sev7een/dsh-plugin-automations](https://github.com/Sev7een/dsh-plugin-automations) — 設定から作る定期タスク。指定時刻、または DeepSeek のオフピーク時間帯に実行でき、単発と毎日のスケジュールをタスク状態の永続化つきで扱えます。
+- [severin-ye/uagent-sync#packages/dsh](https://github.com/severin-ye/uagent-sync/tree/master/packages/dsh) — uagent-sync CLI を使った、デバイスをまたぐワークスペースのバックアップ、復元、エコシステムの更新。
+- [SeverusZh/dsh-yolo-mode](https://github.com/SeverusZh/dsh-yolo-mode) — サンドボックスの権限引き上げ要求を LLM が自動承認します。プリセットとフェイルクローズのフォールバック付き。
+- [shengsheng90/DSH-taskboard](https://github.com/shengsheng90/DSH-taskboard) — ローカルの SQLite を使ったタスクボードを、ネイティブなオーバーレイページとして提供。プロジェクト、タスク、コメント、関連、添付、ワークフローの自動化に対応し、backlog → todo → in_progress → in_review → done の状態を持ちます。`taskboard_*` のエージェントツールは in_review までしか進められず、headless の JSON CLI と同梱スキルも用意しています。
+- [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) — Web UI に自動承認のパーミッションプリセットを追加。制限された新しいレビュアーエージェントが、承認要求ごとに許可か拒否かを判断します。
+- [timwhitez/dsh-self-evolving#packages/dsh-self-evolving](https://github.com/timwhitez/dsh-self-evolving/tree/main/packages/dsh-self-evolving) — 根拠優先の自己進化コントローラー。範囲を限定した Cordis の候補生成、実際のローダーによる一発の受け入れ判定、Harbor による評価、クラッシュしても再開できるジャーナル付きの系譜管理を行います。
+- [titanwings/dsh-automation](https://github.com/titanwings/dsh-automation) — 新しいエージェントセッションで定期的にコーディングを実行し、履歴を監査できる形で残します。
+- [titanwings/dsh-plannotator](https://github.com/titanwings/dsh-plannotator) — 位置を固定した注釈と構造化されたフィードバックをエージェントに返せるプランレビュー。
+- [toolclub/agent_team_gui](https://github.com/toolclub/agent_team_gui) — 再利用できるエージェントの分隊。エージェントごとのプロバイダー/モデル経路とツールポリシー、直列/並列の割り当て、spawn/fork/chain の文脈モード、Web の管理パネルを備えます。
+- [toolclub/dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) — エージェントごとのモデル/ツールポリシーを持つ、永続的なグローバルのエージェント分隊。設定画面で管理し、会話ごとに 1 つ選んで有効にすれば、通常の送信時に固定順またはモデルが決めた順で協働します。
+- [truelove-dreamer/dsh-plugin-hooks](https://github.com/truelove-dreamer/dsh-plugin-hooks) — Claude Code 風のライフサイクル hooks。設定したシェルコマンドがモデルのツール呼び出しの前後に、JSON のペイロードを標準入力から受け取って実行されます。ツール実行前のコマンドが 0 以外で終了すると、その呼び出しは中止されます。
+- [victorzhong0110/dsh-code-reference](https://github.com/victorzhong0110/dsh-code-reference) — 開発の前に、ローカルのコードと GitHub/npm から再利用できる実装を洗い出し、再利用と作り直しを比較して、アーキテクチャの結合度も確認します。
+- [vlln/dsh-loop](https://github.com/vlln/dsh-loop) — 繰り返し実行のループ。`/loop` コマンド、loop ツール、稼働状況のステータスバーを提供します。
+- [whyihaveyou/dsh-suite#plugin-team-board](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board) — Cordis のサービスキーを介した、複数エージェントで共有するタスクボード（作成/受け取り/状態遷移/照会）。
+- [wuxiangru915/dsh-review-loop](https://github.com/wuxiangru915/dsh-review-loop) — DSH 向けの差分レビュー。まとめて承認したあとは、チェックポイント以降の新しい変更だけが表示されます。Web のレビューパネルと `/review` コマンドから、フィードバックをエージェントに返せます。
+- [xxiaoxiong/dsh-ci](https://github.com/xxiaoxiong/dsh-ci) — DeepSeek Harness 向けの、プロバイダーに依存しない CI/CD 機能。GitHub Actions に対応し、範囲を限定した失敗の証跡、ソースを踏まえた診断、承認ゲート付きの再実行・中止の操作を提供します。
+- [yangyongzhen/dsh-article-publish](https://github.com/yangyongzhen/dsh-article-publish) — セッションから直接 CSDN / 掘金 / 博客園 に記事を公開します。外部サーバーは不要です。
+- [yangyongzhen/dsh-git-workflow](https://github.com/yangyongzhen/dsh-git-workflow) — 素の git CLI を通じて、Conventional Commits の強制、変更履歴の生成、PR の要約、ブランチの push を行います。
+- [yangyongzhen/dsh-scheduler](https://github.com/yangyongzhen/dsh-scheduler) — cron と単発のスケジュールタスク。決まった時刻にシェルコマンドを実行したり webhook を叩いたりでき、結果を ServerChan/DingTalk/飛書/webhook に送ることもできます。
+- [ZhenHuangLab/dsh-sync](https://github.com/ZhenHuangLab/dsh-sync) — DSH の設定とプロファイル構成を、ポリシーに沿って Git で同期します。秘匿情報を考慮した投影、コンフリクトのレビュー、行単位の適用制御を備えます。
+- [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) — 経験という筋肉の記憶を活かしたタスク計画。過去の解法を条件反射的に思い出し、LLM の能力とタスクを突き合わせ、得られた教訓を自動で保存します。
+
+### 🔔 通知と連携
+
+- [117BS/dsh-perlica-ding](https://github.com/117BS/dsh-perlica-ding) — Perlica（アークナイツ：エンドフィールド）テーマの段階別サウンド通知。プラン完成、タスク完了、入力待ち、エラーで音を出し分け、通常のチャットでは鳴らしません。システムレベル再生（バックグラウンドでも動作）、クロスプラットフォーム（Windows/macOS/Linux）、TTS 音声のカスタマイズに対応します。
+- [2006spy/dsh-token-billing](https://github.com/2006spy/dsh-token-billing) — DSH web 向けのリアルタイムトークン課金表示。DeepSeek 公式の人民元価格をピーク/オフピークで自動切り替えし、公式サイトから毎時価格を同期。モデル価格の手動設定と複数通貨のフォールバックにも対応します。
+- [AbcdefgXW/dsh-msg-hub](https://github.com/AbcdefgXW/dsh-msg-hub) — IM チャネルのブリッジ。WeChat（ilinkai）／QQ／Feishu に対応し、能動的なプッシュも可能——スケジュールタスクからチャネルの bot を起こし、AI の返信をスマホに届けます。
+- [AI-Galaxy-GPU/dsh-sound](https://github.com/AI-Galaxy-GPU/dsh-sound) — イベント別のサウンド通知。ターン完了、承認、質問、プランレビュー、ゴール停滞、タスク失敗それぞれに音量つきの音を割り当て、Web UI から設定できます（内蔵シンセ、ミュート、ローカル音声ファイルに対応）。
+- [Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) — 最終応答を Windows（SAPI5 のナチュラルボイス）と macOS（システム音声）で読み上げます。推論とツール呼び出しは読み飛ばし、npm で 1 行インストール。
+- [amlyczz/dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) — DeepSeek Harness 向けの高信頼な飛書/Lark ブリッジ。QR でのワンクリック認証、カード形式のコマンドと意図確認カード、少なくとも一度は必ず届く送信キュー、メディアの送受信、/doctor によるセッションログの ZIP 化に加え、セッションを正しいワークスペースに着地させる再利用可能な DSH Web GUI を備えます。
+- [aokamoaki/dsh-notify](https://github.com/aokamoaki/dsh-notify) — DeepSeek Harness の会話完了通知。ターン完了 / エラー / ゴール達成で Windows のトーストと音を出し、質問と承認の通知にも対応します。バックグラウンド時のみ動作し、会話ヘッダーに音量調整できるベルを置きます。
+- [beiyege-01/dsh-voice-ai-girlfriend-plugin](https://github.com/beiyege-01/dsh-voice-ai-girlfriend-plugin) — Web UI の音声 AI ガールフレンド。FunASR によるマイク入力、Qwen3-TTS による音声返信、コンパニオンのアニメーションウィンドウ、NapCat 経由の QQ 双方向チャット（テキスト/音声/画像の送信）に対応します。
+- [BiBoyang/dsh-im-bridge](https://github.com/BiBoyang/dsh-im-bridge) — WeChat（iLink）双方向ブリッジ。ターン終了と承認要求のプッシュ、チャット内での承認/却下とメッセージ注入、永続的な重複排除と長文返信の収束的な分割に対応し、チャネル層は他の IM にも拡張できます。
+- [bill9109/dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) — デスクトップ通知によるリマインダー。
+- [bill9109/dsh-webbridge](https://github.com/bill9109/dsh-webbridge) — DSH と Kimi WebBridge をつなぎます。
+- [Bing-Bryan/dsh-unread-dot](https://github.com/Bing-Bryan/dsh-unread-dot) — macOS の Dock バッジと通知音。Dock に未読バッジを表示し（実行中はドット、完了時は件数）、アプリが非表示のときはチャイムを鳴らします。復帰時にクリアされ、Badging API 上に構築されています。
+- [bobleer/dsh-acp-for-bitfun](https://github.com/bobleer/dsh-acp-for-bitfun) — BitFun と DSH をつなぐ ACP ブリッジ。
+- [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) — 会話が終わったら知らせます。エージェントがアイドルになったタイミングで音を鳴らし、Windows の通知を表示します（音声ファイル、音量、デバウンス/スロットルを設定可能）。
+- [caoxiaohu7745-bot/kongmu-im-bridge](https://github.com/caoxiaohu7745-bot/kongmu-im-bridge) — DeepSeek Harness 向けの飛書ブリッジ（dsh-im-bridge 派生）。WebSocket 常時接続、承認カード、グループではメンションされたときだけ返信、ストリーミングでのカード更新、/stop コマンドに対応します。
+- [cdxiaodong/dsh-island](https://github.com/cdxiaodong/dsh-island) — DSH のエージェントセッション、ツール呼び出し、承認を、Unix ソケット経由で macOS のノッチパネル CodeIsland に橋渡しします。パネル内で許可/拒否も行えます。
+- [cerebrixos-org/tuning-engines-cli#tuningengines-dsh-plugin](https://github.com/cerebrixos-org/tuning-engines-cli/tree/main/packages/tuningengines-dsh-plugin) — DSH のターン、モデル、ツール、承認、再試行、エラーの各イベントをメタデータのみ Tuning Engines へ送り、統制された履歴、ポリシー評価、コスト分析、作業セッションのレビューに使えるようにします。ディスクに保存される再送キューつき。
+- [ChuanTianML/dsh-open-with](https://github.com/ChuanTianML/dsh-open-with) — 登録済みのワークスペースを Web UI から、検出済みまたは設定したローカルのエディター、ターミナル、ファイルマネージャーで開きます。ブラウザごとに選択を記憶します。
+- [dingyi222666/dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification) — 4 つのセッション状態に対する通知。ブラウザのアラートとプロンプトで知らせます。
+- [doncelee229-cmyk/dsh-plugin-approval-alert](https://github.com/doncelee229-cmyk/dsh-plugin-approval-alert) — 承認や質問・プランの確認を OS 標準の通知で知らせます。トーストにワークスペース名が入り、クリックでそこへ移動できます。zh-CN/zh-TW/en の多言語対応、通知音つき。
+- [february2015/dsh-dingo](https://github.com/february2015/dsh-dingo) — 同時に走るセッション向けの、ワンクリックで飛べる音の通知。現在のセッションははっきりした「ダン/ダンダン」、他のセッションは柔らかい「ディン/ディンディン」を鳴らし、右上のカードから返信したセッションへ直接移動できます。
+- [good-boy4069/dsh-mobile-remote](https://github.com/good-boy4069/dsh-mobile-remote) — iLink ゲートウェイ経由で WeChat から dsh エージェントを操作します。双方向の暗号化メディア転送（自動復号の受信箱と /send）、能動的な weixin_send ツール、完了通知、複数セッションの切り替え、ファイルログ付きの状態パネルを備えます。
+- [grunmin/dsh-acp-enhanced](https://github.com/grunmin/dsh-acp-enhanced) — DeepSeek Harness 向けの強化版 ACP サーバー。ブロックと推論のストリーミング、使用量テレメトリ、モデルと推論強度の切り替え、パーミッションのプリセット、セッションの再開/アーカイブ、セッションごとの MCP サーバー、Zed のファイル/ターミナル転送に対応します。
+- [hanwuji1/dsh-web-launcher](https://github.com/hanwuji1/dsh-web-launcher) — Web UI のワンクリックランチャー。Windows のデスクトップに置いた Start-DSH-Web.cmd をダブルクリックすると dsh web が起動し、準備が整い次第ブラウザを自動で開きます（起動を待ってからポーリング）。web_launcher モデルツール（install / open / status）も提供。
+- [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知の送信箱。エージェントがトースト、中国語の TTS 音声、効果音（爆発、勝利、アラーム）で能動的に知らせます。60 秒の確認枠では音声で呼び返し、音量ブーストと設定パネルも備えます。
+- [imetn/dsh-lark-bridge](https://github.com/imetn/dsh-lark-bridge) — DeepSeek Harness 向けの Lark/飛書 双方向コントローラー。プロジェクトとセッションの振り分け、対話式カード、承認、添付ファイル、タスクの操作に対応します。
+- [ingleav626-art/dsh-native-launcher](https://github.com/ingleav626-art/dsh-native-launcher) — DSH Web UI 向けの Windows デスクトップランチャー。デスクトップショートカット、静かな起動、タスクトレイからの起動と完全終了（サービス停止、アプリウィンドウを閉じる、トレイの終了）、再起動せずフォーカスする PWA アプリウィンドウ、インストールの案内、タスク完了の通知を備えます。
+- [itr-del/dsh-feishu](https://github.com/itr-del/dsh-feishu) — `dsh plugin add` で導入できる DeepSeek Harness 向けの飛書（Lark）IM ブリッジ。DM の 1 ユーザーが 1 つの永続 dsh セッションに対応し、デバッグ用のドキュメントも充実しています。
+- [Jesse-njx/dsh-chatnode-wechat](https://github.com/Jesse-njx/dsh-chatnode-wechat) — iLink ゲートウェイ経由で WeChat から DSH エージェントと会話し、監視や承認も行えます。双方向のテキスト、対象セッションの指定、要約のハートビート、番号付きの承認プロンプトに対応。
+- [jiezeng2004-design/dsh-chatgpt-bridge](https://github.com/jiezeng2004-design/dsh-chatgpt-bridge) — ChatGPT Web から DeepSeek Harness のエージェントセッションとゴールを作成・閲覧・継続・監督できる MCP ブリッジ。DSH 本来の承認、サンドボックス、ワークスペースのセキュリティモデルはそのまま保たれます。
+- [JohnXu22786/notifier](https://github.com/JohnXu22786/notifier) — タスクの完了、承認待ち、エラーのときにデスクトップ通知と通知音を出します。macOS、Windows、Linux でネイティブに動き、実行時依存はゼロです。
+- [kaixinbaba/dsh-complete-notify](https://github.com/kaixinbaba/dsh-complete-notify) — タスク完了時に音とポップアップで知らせます。Web Audio のチャイム、ページ内トースト、ページが背面にあるときのシステム通知（ブラウザのみで完結、クロスプラットフォーム）。
+- [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — ワークスペースごとの完了時の着信音に加え、承認、質問、プランレビュー、ゴールの停滞、タスク失敗のイベントに注意喚起の音を鳴らします。内蔵シンセ、音声（TTS）、任意の音声ファイルに対応。
+- [LoserFox/telegram](https://github.com/LoserFox/telegram) — Telegram Bot API へのブリッジ。ロングポーリング、チャットごとのセッション、HTML 整形に対応します。
+- [luzhengyangtx/dsh-telegram-duty](https://github.com/luzhengyangtx/dsh-telegram-duty) — Telegram の当直ゲートウェイ。専用の当直セッションでスマホからのメッセージをタスクとして回し、承認はインラインの承認/却下ボタン付きで全体に転送、telegram_ask による選択式の質問、当直/ローカルの切り替えと Web の当直バナー、zh/en のメッセージに対応します。待機中のトークン消費はありません。
+- [ly6170/dsh-messager](https://github.com/ly6170/dsh-messager) — DSH の web アプリでセッションの状態を監視し、やり取り・完了・エラーについてデスクトップ、ブラウザ、サードパーティの通知を送ります。
+- [michaelcode-wang/dsh-wecom](https://github.com/michaelcode-wang/dsh-wecom) — WeCom（企業版 WeChat）のスマートロボットブリッジ。aibot の WebSocket ゲートウェイ経由で双方向にチャットでき、公開エンドポイントは不要です。
+- [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 公式の Notion MCP（OAuth ＋ PKCE）を通じて dsh を Notion に接続します。`mcp__notion__*` ツールでページ、データベース、コメントの検索・読み取り・書き込みができます。
+- [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — エージェントを Muretai ネットワークに接続します。固有の識別子、招待による紹介、他者が所有するエージェントとの署名付きエンドツーエンド暗号化メッセージング、受信メールでの起こし込みによる自律的な返信に対応します。
+- [omdsh-dev/dsh-lark](https://github.com/omdsh-dev/dsh-lark) — DeepSeek Harness 向けの Lark/飛書 bot チャネル。チャットごとに独立したエージェントが動き、ツールの承認、モデルからの質問、プランのレビューはカードとして返り、ボタンか返信で答えられます。チャットからワークスペースとモデルを切り替えられ（`/cd`、`/model`、`/new`）、複数の bot を別々のセッションで動かして 1 つのグループ内でターンを引き継ぐこともできます。
+- [omdsh-dev/dsh-notification](https://github.com/omdsh-dev/dsh-notification) — ターン完了時のデスクトップ通知。結果ごとの制御とキーワードのルールを設定できます。
+- [omdsh-dev/dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) — DSH のワークスペースのディレクトリを、web GUI から直接 VS Code で開けます。
+- [openma-ai/deepseek-harness-acp](https://github.com/openma-ai/deepseek-harness-acp) — Zed などの ACP クライアントから DSH のエージェントをそのまま使うための ACP プロファイルプラグインと単体の stdio サーバー。DSH の資格情報とセッションを共有します。
+- [PandaPolo/dsh-voice-call](https://github.com/PandaPolo/dsh-voice-call) — エージェントから電話をかける機能。`offer_call` が人を呼び出し（接听/拒接/稍后再说）、応答すると CrispASR ＋ Qwen3-TTS（話者 9 種、中国語の方言 2 種）でローカル合成して再生します。拒否した場合はその判断がエージェントに返ります。
+- [pany0593/dsh-ui-notifications](https://github.com/pany0593/dsh-ui-notifications) — dsh web GUI 向けの OS レベルのシステム通知。ページが背面にあるとき、ターンの完了や、承認・回答・プランレビューが必要になったタイミングでポップアップを出します。
+- [pc439527/dsh-notify-bark](https://github.com/pc439527/dsh-notify-bark) — iPhone への Bark プッシュ通知。ターンの完了、入力待ち、承認のイベントを DSH のホストから送ります。
+- [PeterBon/dsh-hooks](https://github.com/PeterBon/dsh-hooks) — 設定駆動のライフサイクル hooks。cordis.patch.yml にイベント→コマンドを宣言でき、飛書のカード通知と QR 読み取りによる bot 作成に対応します。
+- [PGZXB/dsh-feishu](https://github.com/PGZXB/dsh-feishu) — DeepSeek Harness の飛書（Lark）UI——パネル駆動の操作コンソール。すべてのスラッシュコマンドが ⚙️ コントロールパネルカードのボタンになり、カード内での承認と質問、ライブのストリーミングカード、QR 1 枚でのアプリ設定に対応します。
+- [pitetow/dsh-notify-on-complete](https://github.com/pitetow/dsh-notify-on-complete) — 実行完了、モデルからの質問、承認要求のデスクトップ通知。プラットフォームごとのシステム音を使い、実行時依存はゼロです。
+- [Qing45/dsh-feishu-chat](https://github.com/Qing45/dsh-feishu-chat) — 公式の WebSocket 常時接続を使った DeepSeek Harness の飛書（Lark）双方向チャットブリッジ。メッセージは紐づけたワークスペースの最新セッションに届き、返信は自動で戻ります。bot の資格情報とワークスペースの振り分けは設定ページから変更できます。
+- [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) — CallKit 経由でスマホを鳴らします。`call_me` と `text_me` のツールに加え、任意でターン終了時や承認時に電話をかけ、話した答えを書き起こしてセッションに戻します。
+- [shaobeichen/dsh-pocket](https://github.com/shaobeichen/dsh-pocket) — スマホから DSH Web UI へリモートアクセス。QR コードを読み取って LAN か公開（cloudflared トンネル）でつなぎ、リアルタイム同期、モバイル対応レイアウト、設定タブを利用できます。
+- [shrekcg/dsh-lark-bridge](https://github.com/shrekcg/dsh-lark-bridge) — DeepSeek Harness 向けの飛書/Lark 双方向チャネル。継続する会話、本物のストリーミング返信、40 種の MCP 飛書ツール、スラッシュコマンド、プラグイン設定内の IM bot ステータスタブを備えます。
+- [SingleOne/dsh-notify-center](https://github.com/SingleOne/dsh-notify-center) — ターンの完了、失敗、承認要求をネイティブのデスクトップ通知と webhook で知らせます。結果による絞り込み、内容のルール、プライバシー設定、再送に対応します。
+- [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) — DingTalk のグループロボット通知（webhook ＋ HMAC 署名、実行時依存ゼロ）。
+- [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) — Socket Mode 経由の Slack 双方向メッセージング（notify/channels/inbox/reply）。公開のコールバック URL は不要です。
+- [THEWOLFWALKER/dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) — DSH の通知とリモート操作を統合。1 つの `notify()` API で 25 以上のチャネル（Telegram / DingTalk / 飛書 / WeCom / QQ bot / WxPusher / PushPlus / ServerChan / Bark / Discord / Slack / ntfy / webhook…）に対応し、重要度による振り分け（timeSensitive / active / passive）と段階的な再送、複数チャネルからの承認（Telegram のボタン、飛書のカード、QQ、WxPusher、WeChat iLink）、QQ/DingTalk/飛書の公式 QR ログイン、ローカルの Web 管理コンソール、複数エージェントの振り分け、デスクトップ通知を備えます。さらにスマホからの司令塔として `!status` / `!stop` / `!retry` によるエージェント操作と、行動できる通知（結果の表示・再試行・ログのボタンからエージェントに戻る）も提供。秘密情報は伏せ字化し、ツールにはレート制限を設け、実行時依存はゼロです。加えてイベントを公開しており、他のプラグインが通知サービス（ctx.notifier）を注入して dsh-notifier/sent を購読すれば、密結合なしに通知を再利用できます。v0.7 では識別の仕組みも追加——ペアリングコード（任意の DM で /pair、最初に使った人がオーナー）、複合キーによる紐付け、メンバーの役割、ホワイトリストが空のときのガイド付き初期設定が加わりました。
+- [ThreeBody6666/dsh-im-hub](https://github.com/ThreeBody6666/dsh-im-hub) — DSH 向けの複数プラットフォーム IM ゲートウェイ。飛書（Lark）の WebSocket 常時接続（公開 URL 不要）、WeCom の AES 暗号化コールバック、Telegram のロングポーリングに対応し、チャットごとのエージェントセッション、ホワイトリストによるアクセス制御、web GUI の設定カードを備えます。
+- [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review) — AI によるファイルの書き込み/編集をすべて変更前後のスナップショットとして記録し、VS Code 上でのインラインレビュー（ハンク単位の受け入れ/却下、ファイル単位の取り消し）を git なしで実現します。
+- [Tlyer233/dsh-vscode-review#dsh-review-changes](https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review-changes) — Web コンポーザーの上に置く変更レビューパネルと、VS Code サイドバーとの橋渡し。エディターの選択範囲を送る、ファイル/フォルダーをタグとしてドラッグする、一覧のファイルをまとめて受け入れ/却下する、といった操作ができます。
+- [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) — Stream モードの WebSocket を使った DingTalk の IM チャネル。チャットごとにツールを持つエージェントが動き、返信はメッセージとしてストリーミングで戻ります。公開のコールバック URL は不要です。
+- [wendayuan/dsh-weixin](https://github.com/wendayuan/dsh-weixin) — WeChat（iLink）チャネル。WeChat アプリから DSH のエージェントと会話でき、会話ごとに 1 つの永続セッションを保ち、DSH の資格情報を再利用します。
+- [whyihaveyou/dsh-suite#plugin-notify](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify) — ターンの完了、エラー、承認時の IM webhook とローカル通知（飛書/WeCom/DingTalk/Slack/Discord/カスタム）。
+- [wsxwj123/dsh-plugins#pet-bridge](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/pet-bridge) — dsh のセッション状態を cc-pet デスクトップペットの吹き出しに橋渡しします。思考中、ツール呼び出し、完了をリアルタイムで伝えます。
+- [wz-heng/dsh-feishu-bridge](https://github.com/wz-heng/dsh-feishu-bridge) — フェイルクローズ設計の飛書（Lark）チャネルブリッジ。bot とチャットすると dsh のエージェントのターンが返ってきます。公式 Python SDK のみを使う統合（バージョン固定）で、既定拒否の許可リスト、webhook の署名・タイムスタンプ・リプレイ検証、チャットごとの固定セッションを備え、ドキュメントは二言語です。
+- [xiaoshihou514/dsh-weixin](https://github.com/xiaoshihou514/dsh-weixin) — dsh を微信につなぎます。任意のファイル送信にも対応。
+- [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) — QR コードを読み取るだけで飛書の bot を DeepSeek Harness に接続できます。
+- [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — QR コードを読み取るだけで IM の bot を DeepSeek Harness に接続できます（飛書、微信、DingTalk ほかに対応）。
+- [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) — QR コードを読み取るだけで微信の bot を DeepSeek Harness に接続できます。
+- [yangyongzhen/dsh-notify](https://github.com/yangyongzhen/dsh-notify) — ServerChan / DingTalk / 飛書 / 汎用 webhook によるタスク完了通知。
+- [yeruizhi/dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier) — 飛書の会議リマインダー。副作用しかない dsh プラグインで、AI と作業に没頭している最中に「炭素系生命体に会いに行かないといけない」ことを思い出させてくれます。
+- [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — タスク完了時（ゴール達成またはエージェントのターン終了）に Windows のシステム通知（通知センターのトースト）を出します。
+- [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) — タスクの完了時や確認が必要なときにシステム標準の通知を出します。Windows のトースト、macOS の osascript、Linux の notify-send に対応。
+- [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) — システムレベルのデスクトップ通知。ターン完了とワークフロー終了のバナーに加え、承認が必要なときはモーダルで知らせます（macOS は osascript、Linux は notify-send）。
+- [zhengjy01/dsh-ticktick](https://github.com/zhengjy01/dsh-ticktick) — 公式の OAuth Open API を使った TickTick/滴答清单 の双方向タスク同期。複数リストからのタスク取得、タスクの作成/更新/完了/削除、タイトルの重複を除いた一括同期に対応し、Web の設定パネルも備えます。
+
+### 🧑‍💻 開発とランタイム
+
+- [030611/dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — `session-telemetry/record` のエクスポート内容から、設定済みのテレメトリ送信先に届く前に既知のシークレットパターンを伏せ字化します。
+- [030611/dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt) — ターンごとのツール呼び出し数と大まかな検証シグナルをローカルの JSONL に記録します。プロンプト、ツール引数、結果テキストは保存しません。
+- [030611/qiushi-dsh-evidence-audit](https://github.com/030611/qiushi-dsh-evidence-audit) — ツール結果とセッションイベントのレシートをハッシュチェーン化した JSONL でローカルに追記します。プロンプト、ツール引数、結果テキスト、生のセッション ID は保存しません。
+- [2008924/dsh-progress-viz](https://github.com/2008924/dsh-progress-viz) — headless の dsh タスク向けに、進行段階・残り時間・コストをリアルタイム表示するダッシュボード。ブラックボックスなセッションイベントを複数タスクのライブ一覧に変換します（cordis プラグイン＋単体ローカルダッシュボード、API 呼び出しなし）。
+- [534119219/chicheng-gate](https://github.com/534119219/chicheng-gate) — DSH Web GUI 向けの LAN／リモートアクセス制御。frpc による NAT トンネル、パネルのパスワードゲート、モバイル UI 対応を備えます。
+- [863683348/dsh-plugin-audit](https://github.com/863683348/dsh-plugin-audit) — GitHub の dsh-plugin topic をローカルカタログに同期し、npm を調べ、プラグインのファイルをセキュリティ観点で静的スキャンして、各プラグインを採点（保守状況、ドキュメント、npm、エコシステム）します。エージェントツールと Web のランキングページ付き。
+- [863683348/dsh-trend-radar](https://github.com/863683348/dsh-trend-radar) — エコシステムの動向ダッシュボード（行情面板）。dsh-plugin topic と awesome リストのスナップショットをローカル履歴に蓄積し、新着プラグイン、Star 増加、カテゴリの盛り上がり、awesome 収録率といった週次トレンドを報告します。新着プラグインと Star 急増のキーワードレーダー付き。
+- [a179-sanae/dsh-code-check](https://github.com/a179-sanae/dsh-code-check) — 型チェックの診断を自動化。モデルが TS ファイルを編集・作成した後にバックグラウンドで `tsc --noEmit` を実行し（プロジェクト単位でデバウンス）、`code_check` ツールでエラーを報告します。ファイル別に行と列、深刻度、TS のエラーコードをまとめ、「編集 → チェック → 修正」のループを閉じます。
+- [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) — スタック全体の更新管理。DeepSeek Harness とインストール済みのサードパーティプラグインを npm と GitHub リリースと突き合わせ（semver 対応）、ロケール対応（zh/en）のバナーにプラグインごとの更新状況を表示します。自動バックアップ/ロールバック、他パッケージに触れない一時ディレクトリでのインストール、ウォッチドッグ付き再起動を伴うワンクリック更新に対応。設定ページではプラグインごとのバージョンランプ、更新の進捗表示、バナー/通知の切り替えも行えます。どの環境でも設定不要で動きます。
+- [AngelosZou/graphlint#integrations/dsh](https://github.com/AngelosZou/graphlint/tree/main/integrations/dsh) — AI が生成したコードベースのデッドコード検出。graphlint が依存グラフを構築し、どのエントリポイントからも到達しないコードを見つけて、整理と実効性の把握を助けます。DSH エージェントには graphlint_query / graphlint_build / graphlint_config ツールと graphlint スキルを提供します。
+- [anweat/dsh-restart](https://github.com/anweat/dsh-restart) — DSH の再起動。再起動方法を選べ（Node ネイティブ / 従来の PowerShell）、再起動後の続行プロンプト、任意のウォッチドッグによる自動再起動に対応します。
+- [aokamoaki/dsh-startup-guard](https://github.com/aokamoaki/dsh-startup-guard) — 起動時のガード。壊れたセッションログを修復し、プラグイン構成を事前確認し、クライアント成果物を VM で検査し、ホストの apply() をスモークテストして、クラッシュの原因になるバンドルを隔離します。壊れたプラグインが起動不能を招くことはありません。
+- [Areium/dsh-fail-logger](https://github.com/Areium/dsh-fail-logger) — ネイティブツール、PTC の run_code、インライン呼び出しにまたがって失敗したツール呼び出しを自動記録。原因を重複排除して件数とともにスキルに蓄積し、同じ失敗を繰り返さないようにします。
+- [arrow949/dsh-turn-approval](https://github.com/arrow949/dsh-turn-approval) — ターン単位の「このタスクの間は許可」。条件に合う `danger-full-access` への引き上げを現在のタスクの間だけ自動で許可し、終われば失効します。
+- [ayahunter/dsh-plugin-clinic](https://github.com/ayahunter/dsh-plugin-clinic) — インストール済みの DSH プラグイン一式を読み取り専用で診断するクリニック。ローダーの健全性、依存関係の整合性、バージョンの互換性、インストールスクリプトのリスク、重複、パッチの整合性を調べ、モデルツール・設定ダッシュボード・JSON レポートとして提供します。
+- [bainianlaoyao/bash-on-windows](https://github.com/bainianlaoyao/bash-on-windows) — Windows では bash ツールを Git Bash に限定し、PowerShell を無効にします。
+- [BiBoyang/dsh-eval-harness](https://github.com/BiBoyang/dsh-eval-harness) — DSH プラグイン向けの評価ハーネス。YAML のケースから実際の headless エージェント実行を駆動し、ツール呼び出し・引数・結果・トークン使用量をアサートします。CI でのリグレッション検知用にベースラインゲートも用意。
+- [bigclawd/dsh-security-guard](https://github.com/bigclawd/dsh-security-guard) — dsh 向けの静的・実行時セキュリティガード。ルールに基づく悪意あるコード、プロンプトインジェクション、トークンの浪費のスキャン、危険なツール呼び出しの実行時遮断、/scan コマンド、plugin_scan ツール、Web パネル、許可リストを備えます。
+- [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) — プラグインバンドルをインストール前に静的監査するセキュリティチェッカー。ライフサイクルスクリプト、動的実行、認証情報の持ち出しにつながる組み合わせ、パッチ層の危険を検出します。依存関係ゼロ、tar はメモリ上で解析します。
+- [BotonJ/dsh-remote-link](https://github.com/BotonJ/dsh-remote-link) — 公式 Web UI への安全なリモートアクセス。認証付きの LAN/トンネルゲートウェイに QR ＋ HMAC のワンタイムペアリング、端末ごとのセッションと失効、mDNS による発見、fork_session ツールを備えます。
+- [BotonJ/dsh-windtunnel](https://github.com/BotonJ/dsh-windtunnel) — プラグイン作者向けの契約リグレッションハーネス。スクリプト化した LLM アダプターが隔離した子プロセスで実際のパイプラインを動かし、セッションイベントをアサートします（load/contract/behavior/fault の各層）。API キー不要で CI にも組み込めます。
+- [BrambleXu/dsh-annotate](https://github.com/BrambleXu/dsh-annotate) — Vibe Coding 中にブラウザの要素を直接選択し、構造化した視覚フィードバックを DeepSeek Harness のエージェントに送ります。
+- [BrambleXu/dsh-prompt-profile](https://github.com/BrambleXu/dsh-prompt-profile) — DeepSeek Harness 向けの再利用できる Markdown プロンプトプロファイル。ターンごとのモデル選択、引数の差し込み、状態の復元に対応します。
+- [BrambleXu/dsh-revdiff](https://github.com/BrambleXu/dsh-revdiff) — DeepSeek Harness にネイティブな対話式 Git diff レビューを追加し、構造化した注釈を現在のエージェントセッションに返します。
+- [bujue600-arch/dsh-testgen](https://github.com/bujue600-arch/dsh-testgen) — ユニットテストの自動生成。/testgen コマンドと generate_tests ツールが、テストの雛形作成・実行・修正を通るまで繰り返します（LLM ＋ オフラインのテンプレート生成、vitest/jest/mocha/node:test に対応）。
+- [Cavan-Ou/dsh-observation-journal](https://github.com/Cavan-Ou/dsh-observation-journal) — DSH の実行時テレメトリを手間なく記録。セッションごとにタスク、モデル階層、ツール、失敗、所要時間、状態を人が読める journal に自動で書き出し、統計セクションも付けます（純粋な観測役で、ツールも LLM 呼び出しも注入もありません）。
+- [CH4ACKO3/dsh-harmony](https://github.com/CH4ACKO3/dsh-harmony) — DSH のプラグインコードを実行時に書き換えます。順序付きパッチ、確認、ホットリロードに対応。
+- [DamonKoy/dsh-plugins#dsh-system-proxy](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-system-proxy) — システムプロキシの検出（scutil/env/PAC）。状態確認ツールと proxy_export の bash スニペットツールを提供します。
+- [DamonKoy/dsh-plugins#dsh-usage-cost](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-usage-cost) — トークン使用量とコストの追跡。日次/セッション単位の予算アラートと usage_report ツールを備えます。
+- [DeLightor/dsh-depguard](https://github.com/DeLightor/dsh-depguard) — 依存関係トポロジーのガード。インストール前に競合を予測し、インストール後には @deepseek-ai/dsh-* の重複、バージョンのずれ、Symbol キー由来の「Cannot read properties of undefined (reading 'prepare')」のようなクラッシュを招くコアサービスの同梱を検出します。
+- [DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — プロジェクト内の UX 上の問題を洗い出します。React/TypeScript のコードを自動でレビューし、問題箇所を特定して具体的な改善案を提示します。
+- [disyli/dsh-tool-call-stats](https://github.com/disyli/dsh-tool-call-stats) — プロセス単位のツール呼び出し統計。`tool_stats` ツールが、ツールごとの呼び出し回数、エラー数、平均所要時間を報告します。
+- [Elohia/dsh-genome](https://github.com/Elohia/dsh-genome) — 能力の変換・組み立てエンジン（銭学森のサイバネティクス/システム理論に基づく）。常駐する静的層がスキル/MCP/プラグインのレジストリを管理し、スキルとツールの指標を自動で取り込みつつ、負のフィードバックによる進化ループ（Sick/Weak を検出 → 変異 → 採用/却下の選択 → 30 秒でロールバック）を回します。Web UI パネルと GitHub の dsh-plugin ストアブリッジも同梱。
+- [EvilIrving/dsh-repro](https://github.com/EvilIrving/dsh-repro) — /repro でセッションログ、失敗したコマンド、Git の差分をまとめ、秘匿情報を除いた最小限で再現可能な問題バンドルを書き出します。
+- [forrestchang/dsh-multica-runtime](https://github.com/forrestchang/dsh-multica-runtime) — Multica 上で dsh のランタイムを動かします。
+- [fuyue521/dsh-desktop-shortcut](https://github.com/fuyue521/dsh-desktop-shortcut) — dsh web の Windows デスクトップショートカット。サーバーを起動し、準備ができたらブラウザを自動で開き、Harness のウィンドウを閉じるとサービスを停止します。
+- [guo6x/dsh-housekeeper](https://github.com/guo6x/dsh-housekeeper) — エージェントのための環境の家事係。ツールチェーンの棚卸し（node/pnpm/git/gh/ffmpeg/ブラウザ）、一時ファイルとキャッシュのスキャンとホワイトリストで守られたワンクリック掃除、マシンのルールファイル（AGENTS.md）の編集を、すべて Web GUI の設定から行えます。
+- [hackerFish/dsh-lab](https://github.com/hackerFish/dsh-lab) — DSH プラグインの検証つき厳選ラボ。すべてのエントリが隔離環境での実インストールと静的スキャンのゲートを通過しており、完全なログと再現用コマンドが付きます（中国語優先）。
+- [hellosky983/dsh-fabric](https://github.com/hellosky983/dsh-fabric) — DSH のあらゆる拡張点を 1 つの宣言的 DSL の裏にまとめます。実行時の `fabric` サービス、`fabric_extend`/`fabric_inspect` ツール、機能グラフの設定ページを提供します。
+- [hellosky983/dsh-foundry](https://github.com/hellosky983/dsh-foundry) — 設計図レジストリを備えたプラグインコンパイラー（雛形作成 → 検証 → デプロイ）。実行時サービス、3 つのモデルツール、設計図ギャラリーの設定ページとして公開されます。
+- [hezhongtang/dsh-update-copilot](https://github.com/hezhongtang/dsh-update-copilot) — DeepSeek Harness の更新の相棒。一度のスキャンで dsh 本体、公式バンドル、すべてのプロファイルのプラグインを確認し、何が変わったか、更新のリスクはどの程度かを説明したうえで、あなたが承認したものだけを更新します。
+- [HuiHuitie-zhu/dsh-check-update](https://github.com/HuiHuitie-zhu/dsh-check-update) — 更新チェッカー（npm 版）。@deepseek-ai/dsh とインストール済みプラグインのローカル版と最新版を比較する設定ページを追加し、ナビの赤ドット通知と、そのまま使える更新コマンドを表示します。
+- [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) — コミュニティ版のディストリビューション。TUI、デスクトップ、Web UI を 1 つのバンドルにまとめ、段階的にインストールできます。
+- [ICCuse/dsh-pain-point-check](https://github.com/ICCuse/dsh-pain-point-check) — 痛点の確認を強制するゲート。収束しない試行が 2 回続くと 3 つの問いを差し込み、答えるまで調査以外のツール呼び出しを拒否し、同じ方向の再試行を止めます。
+- [iiwish/dsh-testkit](https://github.com/iiwish/dsh-testkit) — DSH プラグインの、Docker で隔離した実ホスト上のライフサイクルテスト。インストール、起動、ツール登録、更新、アンインストール、再インストール、復旧までを構造化された証跡つきで検証します。
+- [ilharp/dsh-tool-approval](https://github.com/ilharp/dsh-tool-approval) — 手動承認モード（「Manual Mode」/「Ask Mode」）。
+- [izz-BLUE/dsh-devtools](https://github.com/izz-BLUE/dsh-devtools) — DSH エージェント向けの、メタデータを主軸にした実行時プロファイラー。ターン/ステップの履歴、モデルとツールの実時間タイムライン、プロバイダーの使用状況、再試行、エラーを、進行中と過去のどちらのセッションでも確認できます。
+- [Jayden-X-L/forkprobe](https://github.com/Jayden-X-L/forkprobe) — 同じタスクを複数のスキルで解かせて比較し、優れたほうを選びます。
+- [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) — 右側に折りたためる Web ターミナル（xterm.js）。WebSocket 経由でホストの PTY に接続し、bash/zsh の切り替え、パネルのリサイズ、セッションを保ったままの開閉に対応します。
+- [Jesse-njx/dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — DSH のモデル切り替え役。OpenAI 互換の任意のエンドポイントを指定でき、厳選した無料/低価格の DeepSeek プロバイダーのプリセットと、無料枠でレート制限に当たったときの自動フォールバックを備えます。
+- [Jesse-njx/dsh-tmuxctl](https://github.com/Jesse-njx/dsh-tmuxctl) — tmux のペインを操作します。一覧/キー送信/取り込みに加え、ペインで長時間ジョブを走らせて監視するモードと、破壊的コマンドの承認ゲートを備えます。
+- [JFWaskin/dsh-git-nexus](https://github.com/JFWaskin/dsh-git-nexus) — DSH web プロファイル向けの Git / GitHub パネル。ステージング/取り消し/破棄/差分、ブランチ、コミット、push/pull/同期、ログ、ファイルブラウザー、ワークフローボード、GitHub OAuth と PR 作成に対応します。
+- [jiayan-xu/dsh-ocr-review](https://github.com/jiayan-xu/dsh-ocr-review) — ローカルの AI コードレビューゲート。管理された ocr.js を通じてワークスペース/ブランチ/コミットの差分をレビューし、トークン統計つきの構造化された指摘を返します。ゲートモードでは指摘があると失敗扱いになります。
+- [jinguanghai/deepseek-harness-forge-plugins#evidence-first](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/evidence-first) — 根拠優先のガード。直近の文脈に対応するツール実行の記録がないのにエージェントが成功を主張したとき、警告します。
+- [JohnXu22786/adversarial-review](https://github.com/JohnXu22786/adversarial-review) — 複数の観点から攻める敵対的コードレビュー。正確性・セキュリティ・保守性のレンズが並行して差分を突き、深刻度を決定論的に採点します。抑制ルールと差分レビュー履歴つき。
+- [JohnXu22786/hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — Claude Code、Codex、opencode の設定で宣言された hooks を dsh でも再利用します。shell、webhook、oracle、proxy の各ハンドラーを実行時依存ゼロで実行します。
+- [jorinyang/dsh-clawshell](https://github.com/jorinyang/dsh-clawshell) — 自己修復する実行時レイヤー。戦略の切り替えと修復のエスカレーションを行うリソース制御ループ、エラーの多発とファイバー障害の分析、セッションをまたいだ知識の持ち越し、自己修復ダッシュボード、7 つのツールを備えます。
+- [jorinyang/dsh-doctor](https://github.com/jorinyang/dsh-doctor) — DSH 環境の診断、段階的な修復とワンクリックのロールバック、実行時の自己修復サービス。
+- [keyiadiannao/dsh-restart-button](https://github.com/keyiadiannao/dsh-restart-button) — DSH 向けの小さく完結した電源コントロール。サイドバーの電源ボタンから上方向に開く再起動/終了メニューと、Windows のシャットダウン風のオーバーレイを表示します。独自の再起動・終了エンジンを持ち（他のプラグインに依存しません）、動的なポートにも対応します。
+- [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh プラグインのスターターテンプレート。設定、ツール、イベント、サービス、hooks、ブラウザ UI のスロット、スラッシュコマンドを一通り網羅しています。
+- [labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) — 段階的に開示する MCP ゲートウェイ。大規模なリモートカタログを `mcp_search` で検索し、`mcp_call` で正確なスキーマを指定して呼び出します。接続は遅延させ、キャッシュも上限を設けています。
+- [LaoYueHanNi/dsh-git-worktree](https://github.com/LaoYueHanNi/dsh-git-worktree) — Web UI のコンポーザーから、ブランチの切り替えと隔離された git worktree を実際のワークスペースとして扱えます。
+- [leechen298/Code2Skill](https://github.com/leechen298/Code2Skill) — ユーザーが許諾したソースコードから、関数、MCP ツール、ワークフローのスキル、オフラインのテストパッケージを生成します。
+- [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) — Web GUI の LAN アクセス対応。0.0.0.0 へのバインドに加え、セキュアでないコンテキスト（LAN の HTTP）向けに crypto.randomUUID の polyfill を提供します。
+- [Linjiangxian0203/dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) — リモートホストのトンネル管理。リモートの Linux サーバーで dsh web を動かし（systemd で管理、root 不要）、自動再接続する SSH トンネル越しに接続します。サーバー側でリモートポートを割り当てて登録し、複数ユーザーでも安全で、監査ビューも備えます。
+- [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) — 稼働中の Harness のセッションをサードパーティのクライアントに公開する REST ＋ SSE ゲートウェイ。API キー認証、トークンのストリーミング、ワークスペース単位のグループ分け、GUI のセッションを引き取って会話を続ける機能を備えます。
+- [ljsysfurryACE/dsh-agentframe-suite](https://github.com/ljsysfurryACE/dsh-agentframe-suite) — AgentFrame の 3 プラグイン（memory-director、compaction、aura-scheduler）をコマンド 1 つでまとめて導入するバンドル。
+- [lonelymoon87/dsh-gitflow](https://github.com/lonelymoon87/dsh-gitflow) — 承認ゲート付きの Git の状態確認、差分、ログ、コミット、ブランチ操作と、任意のチェックポイントツールを追加します。
+- [lonelymoon87/dsh-guardian](https://github.com/lonelymoon87/dsh-guardian) — 危険な操作のポリシーチェック、出力の伏せ字化、セキュリティレビューのワークフローを追加します。
+- [loongsuite/dsh-plugin](https://github.com/loongsuite/dsh-plugin) — セッション、エージェントループ、LLM、ツールのライフサイクルイベントを OpenTelemetry の GenAI トレースとメトリクスに変換し、標準の OTLP/HTTP で任意の対応バックエンドへ送ります。内容の記録は既定で無効です。
+- [LoserFox/dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — Git のコミットを実行環境自身の作者情報に固定します。環境変数の注入がすべての `git config` の設定を上書きします。
+- [lsz-asd/dsh-chameleon#bundle](https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle) — DeepSeek Harness の自己編集できるデスクトップワークベンチ。dsh web を完全に再現したうえで編集モードを備え、エージェント自身がワークベンチ（パッチ層、プラグイン、UI）をホットリロードしながら書き換えられます。
+- [lucky8197/dsh-code-smell](https://github.com/lucky8197/dsh-code-smell) — コードの臭いのレーダー。TODO/FIXME の負債、仮実装、長すぎる行、肥大化したファイル、重複ブロックを静的にスキャンし、深刻度順の読み取り専用の修正提案を出します。
+- [lucky8197/dsh-doc-guard](https://github.com/lucky8197/dsh-doc-guard) — ドキュメントとコードの整合性ガード。バージョンの見出し / 変更履歴の表 / ディレクトリツリー / モジュールとテストの数 / 文書間の参照のずれを調べ、深刻度順の読み取り専用の修正提案を出します。
+- [lucky8197/dsh-git-hygiene](https://github.com/lucky8197/dsh-git-hygiene) — Git の衛生チェッカー。マージ済みや放置されたブランチ、大きすぎる追跡ファイル、未追跡ファイル、未コミットの作業を読み取り専用でスキャンし、片付けの提案をします（削除は一切行いません）。
+- [lucky8197/dsh-weekly-digest](https://github.com/lucky8197/dsh-weekly-digest) — 週次ダイジェストの生成。git のコミット、DSH のセッション活動、日々のメモリ項目を Markdown の週報にまとめます。読み取り専用です。
+- [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) — Windows 上の DeepSeek Harness Desktop と Web の終了・再起動を、設定 → 一般 から操作できるようにします。
+- [mervyn-teo/dsh-plugin-qr-connect](https://github.com/mervyn-teo/dsh-plugin-qr-connect) — 設定の上に QR コードのボタンを置き、認証つきのリバースプロキシ経由でスマホから web UI に接続できるようにします。
+- [mexiaosqwq/want-a-init](https://github.com/mexiaosqwq/want-a-init) — モデル主導の /init コマンド。エージェントが現在のリポジトリを分析して要点の詰まった AGENTS.md を生成・更新し、その後も維持するようシステムプロンプトで思い出させます。
+- [MicroMilo/upstream-radar](https://github.com/MicroMilo/upstream-radar) — DSH プラグイン向けの常時稼働の依存関係セキュリティ。実際にインストールされているパス、OSV の脆弱性、npm のリリース、破壊的変更の兆候を追跡し、プロジェクトの根拠を DSH のエージェントに渡します。
+- [MiraculousGarfield/dsh-ops-health](https://github.com/MiraculousGarfield/dsh-ops-health) — DSH Web GUI のワンクリックヘルスチェック。サイドバーのボタンから、ツールレジストリに依存しない素の HTTP 経路で ops kit の check-health.ps1 を実行し、構造化されたレポートカードを表示します。配色は現在のテーマに追従します（Windows/PowerShell）。
+- [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) — DSH のオフライン診断。環境、プロファイル、セッション状態にわたる 19 のチェックを行い、設定の「Doctor」パネルと読み取り専用の JSON API を提供します。
+- [MutaLucem/dsh-plugin-integration](https://github.com/MutaLucem/dsh-plugin-integration) — インストール済みの DSH プラグインを検出し、タグ付け、機能の重複と互換性の検出、ワンクリックの有効化/無効化、失敗の診断、更新確認を行います。
+- [omdsh-dev/dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) — プラグインの健全性チェック。manifest のプロトコル / パッチの形式 / ビルド時の落とし穴を、依存関係ゼロ・読み取り専用で調べます。
+- [omdsh-dev/dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) — ローカルのセキュリティ監査。設定、プラグインの出どころ、セッション、ネットワークの露出を調べ、秘匿処理したリスクレポートを読み取り専用で出します。
+- [omdsh-dev/dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) — セッションファイルのフレーム単位のスキャン診断（途中で切れた/壊れた/空のファイルを検出）。
+- [omdsh-dev/fabric](https://github.com/omdsh-dev/fabric) — MC-Fabric 風のフック処理系。
+- [omdsh-dev/plugin-template](https://github.com/omdsh-dev/plugin-template) — プラグインのテンプレートリポジトリ（公式の turtle-ui リポジトリがベース）。
+- [omdsh-dev/sandbox-micro](https://github.com/omdsh-dev/sandbox-micro) — microsandbox バックエンドへの対応。
+- [omdsh-dev/sandbox-mxc](https://github.com/omdsh-dev/sandbox-mxc) — Microsoft のクロスプラットフォームサンドボックスへの対応。
+- [omdsh-dev/sandbox-nono](https://github.com/omdsh-dev/sandbox-nono) — nono サンドボックスバックエンドへの対応。
+- [PAKIKNOWLEDGE/dsh-auto-classifier](https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier) — auto プリセット向けの自律的なパーミッション分類器。ツール単位の許可/拒否ルール、LLM による意味的な判定、無人セッション向けの git チェックポイントを備えます。
+- [PerryLink/dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — 公式 DSH MCP クライアントの読み取り専用の実行時管理パネル。/mcp コマンドと設定タブから、接続状態、登録されたツール、エラー、再接続回数を確認できます。表示は秘匿処理され、有効化/無効化のパッチも提案します。
+- [PerryLink/dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) — 実行時に切り替えられるモデル出力スタイル。Claude Code の outputStyles と同等の機能に加え、output.render.* 表示プロトコルを提供します。/style コマンド、セッション単位の保持、systemPrompt への注入、組み込みスタイル 6 種、Web のピッカー、セッション/ツールごとのルールと /export を備えたレンダラーレジストリを含みます。
+- [PerryLink/dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) — Claude Code 風の宣言的パーミッションルール。tools/pre-execute の連鎖上で、ツール名・引数・ワークスペースのパス・エージェントの識別子に一致する allow/deny/ask の YAML ルールを順に評価します。セッションログへの完全な監査、ドライラン、ホットリロードに対応。
+- [rj-jiangyichen/dsh-rules](https://github.com/rj-jiangyichen/dsh-rules) — Claude Code の rules.md 風のルールプロンプト。エージェントが読み書きするファイルにグロブで一致するルールの Markdown を有効化し、プロンプトへの注入と順序の指定に対応します。
+- [SaiSenBox/dsh-boot-guard](https://github.com/SaiSenBox/dsh-boot-guard) — ローダーに依存しない DSH Web の起動リカバリー。壊れている可能性の高いプラグインを検出して一時的にスキップし、Boot Guard が加えた変更だけを元に戻します。
+- [sjh9714/dsh-movein](https://github.com/sjh9714/dsh-movein) — Claude Code の設定一式を DSH に移します。スキル、MCP サーバー、hooks、サブエージェント、パーミッションルールに対応し、移行前の見積もり（ドライラン）と差分レポートを出します。movein_from_claude_code ツールを公開するプラグインとして導入するので、エージェントに移行を任せられます。
+- [sjh9714/dsh-movein-permissions](https://github.com/sjh9714/dsh-movein/tree/main/plugin) — tools/pre-execute のゲートで働く、DSH 向けのツール単位の細かなパーミッションルール。Claude Code のルール構文（Bash(rm -rf:*)、Read(_secrets_)、mcp__server__tool）で拒否リストと確認リストを書け、移行しなくても単体で使えます。
+- [sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — 欠けていた win32 のプロセスインスペクターを補い、Windows でも Minimal モードが動く（永続シェルがちゃんと起動する）ようにします。ワークスペース書き込みの制限トークン下でも生き残る busybox ベースのプリセット（MSYS のシェルはここで落ちます）、ConPTY のコンソール一覧による前面判定、GBK/UTF-16 のファイル読み取り、インストール時の落とし穴を調べる doctor を追加します。
+- [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — DeepSeek Harness をサーバー級のマルチテナント基盤に変えます。リモートアクセスと HTTPS の自動化、サブユーザーの権限とトークン/日次のクォータ、サンドボックスの強制、暗号化された認証と監査ログを備えます。
+- [Small-tailqwq/dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — TPS（1 秒あたりのトークン数）を表示するプラグイン。
+- [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) — DSH Web の組み込み機能を根拠つきで調べるインスペクター。実行時と設定の出どころ、互換性とずれの診断に加え、精査済みの UI 9 か所に対するフェイルクローズの制御を提供します。
+- [strukto-ai/mirage#dsh](https://github.com/strukto-ai/mirage/tree/main/typescript/packages/dsh) — ファイルシステムと bash のプロバイダーを mirage の仮想ワークスペースに差し替えます。ファイルツールとシェルコマンドは、ホストのディスクではなくマウントされたリソース（RAM、S3、Redis、Slack、Gmail、Notion、Postgres）上で動きます。マウントごとの読み/書き/実行モード、コマンドごとのサンドボックス振り分け（プロセス内の monty、pyodide、quickjs と、リモートの docker、e2b、daytona）、仮想ターミナルの先頭語として使えるインストール済み CLI（git、gh、slack、linear、ntn、gws、あるいは自分で登録したもの）に対応します。
+- [swaylq/dsh-genie](https://github.com/swaylq/dsh-genie) — エージェントが実行時に作ったものを残します。`cordis_define` の動的パッケージを、再起動しても消えない本物のインストール済みプラグインに変換し、pnpm もネットワークもビルド許可も使わずにバンドルを書き出してプロファイル層に登録します。
+- [tancheng33/dsh-code-runtime-container](https://github.com/tancheng33/dsh-code-runtime-container) — `ctx.codeRuntime` の接続点向けの、コンテナで隔離したバックエンド。Code Mode のプログラムは毎回まっさらなコンテナで動き、ネットワークなし、読み取り専用の rootfs、権限の削除、カーネルが強制するメモリ・CPU・PID の上限のもとで実行されます。
+- [tancheng33/dsh-credentials-vault](https://github.com/tancheng33/dsh-credentials-vault) — 資格情報の接続点向けの HashiCorp Vault バックエンド。KV v2/v1、AppRole によるマシン認証、操作ごとに読み直すためローテーションに再起動が不要な設計、compare-and-swap の書き込みに対応します。
+- [tancheng33/dsh-spill-s3](https://github.com/tancheng33/dsh-spill-s3) — spill の接続点向けの S3 互換バックエンド。大きすぎるツール出力を、エージェントのローカルディスクではなくオブジェクトストレージ（S3、MinIO、R2）に、ハッシュ化したセッションのプレフィックスと推測できないキーで保存します。
+- [Tang-mm95/dsh-single-instance-guard](https://github.com/Tang-mm95/dsh-single-instance-guard) — 同じ DSH_HOME のデータディレクトリを別の稼働中の dsh インスタンスが使っている場合、起動を中止します。セッションログの同時書き込みによる記録の破損を防ぎます。
+- [TecFancy/dsh-auth-gate](https://github.com/TecFancy/dsh-auth-gate) — dsh の Web 画面へのログインゲート。パスワードまたは共有トークンによる認証、セッションクッキー、レート制限、ユーザー管理 CLI を備えます（0.4.1 から dsh.bundle manifest に対応し、`dsh plugin add` 一発で組み込めます）。
+- [tianyaZTY/dsh-hot-plugin-host](https://github.com/tianyaZTY/dsh-hot-plugin-host) — Web UI の実行時プラグイン読み込み。監視対象のホットディレクトリに置くと、開いているすべてのページにクライアントプラグインのバンドルが再起動なしでインストール・更新されます。右カラムのサブエージェントダッシュボードの例も付属。
+- [truelove-dreamer/dsh-plugin-vetting](https://github.com/truelove-dreamer/dsh-plugin-vetting) — 信頼する前にサードパーティのプラグインを精査します。悪意あるパターン（情報の持ち出し、資格情報へのアクセス、難読化、常駐化）と過剰な権限のパス利用を静的にスキャンし、推移的な依存関係まで確認、公式パッケージのハッシュを基準にサプライチェーンの改ざんを検出し、任意でプラグインのツール呼び出しにゲートを設けられます。
+- [txy-ucas/dsh-workspace-snapshot](https://github.com/txy-ucas/dsh-workspace-snapshot) — ステージングもコミットもブランチの切り替えもせずに、リポジトリからの相対パスで Git の状態を構造化データとして報告します。
+- [vibeinging/dsh-agent-budget](https://github.com/vibeinging/dsh-agent-budget) — エージェントツリーのトークン予算の管理。
+- [vibeinging/dsh-trace](https://github.com/vibeinging/dsh-trace) — ターン、モデルのステップ、ツール呼び出しを yiTrace へ送るテレメトリのバックエンド。
+- [vlln/plugin-registry](https://github.com/vlln/plugin-registry) — エコシステムの基盤。公式リポジトリのプラグインを管理する軽量なブラウザコンソール（パッチなし）と、プラグイン開発を導く make-dsh-plugin スキルを提供します。
+- [wikkd/dsh-remote-access-web#remote-access-web](https://github.com/wikkd/dsh-remote-access-web/tree/main/packages/bundle/remote-access-web) — DSH Web GUI のリバーストンネル。`dsh --profile web` のデプロイを frp の公開 URL で公開し、ディレクトリ選択をアプリ内ブラウザに切り替えるので、スマホや別のマシンからワークスペースを開いて操作できます。
+- [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) — 自己進化。エージェントがセッションの途中で、自分自身に永続プラグインをホットマウントしたり取り外したりします。
+- [wulun811/dsh-plugin-vet](https://github.com/wulun811/dsh-plugin-vet) — DeepSeek Harness 向けのプラグイン信頼パイプライン。判定つきの決定論的な静的スキャン、任意で有効にできるハニーポット付きの実行時ガード、エージェント向けの監査プロトコルスキル、ブラウザのシールド状態ランプを備えます。警告のみで、強制はしません。
+- [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 開発時の安全キット。設定のローリングスナップショット、プラグイン障害時の自動ロールバック、起動失敗からの救済、設定内の管理パネルを備えます。
+- [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 手のかからない安全網。エージェントが削除したディレクトリはまずゴミ箱フォルダーに入り、シンボリックリンクは決してたどりません。承認は一切不要です。
+- [xingyingyuzhui/dsh-updater-ui](https://github.com/xingyingyuzhui/dsh-updater-ui) — 設定ページから使える DSH の自己更新機能。ワンクリックでの確認と取得（`git pull --ff-only`）、バックグラウンドでの自動確認、バージョン差分と変更履歴のプレビュー、赤ドットのお知らせを備えます。
+- [xxiaoxiong/dsh-prometheus](https://github.com/xxiaoxiong/dsh-prometheus) — DSH のセッション、エージェント、LLM 呼び出し、ツール、承認、サブエージェント、ジョブについて、範囲を限定した Prometheus メトリクスを公開します。Grafana のダッシュボードを同梱し、エンドポイントは既定でループバック限定です。
+- [Yuuz12/dsh-webui-auth](https://github.com/Yuuz12/dsh-webui-auth) — HTTP／トランスポート層で強制する WebUI 認証。リソース、プラグインバンドル、/api、WebSocket の 4 層のログインゲートと、HttpOnly クッキーによるサーバー側セッションを提供します。
+- [YZz-S/dsh-update-checker](https://github.com/YZz-S/dsh-update-checker) — 会話ヘッダーに DeepSeek Harness のバージョンバッジを表示。npm で最新リリースを確認し、更新を促します。
+- [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — コンテキスト注入の監査。指示チェーン / スキルカタログ / ツールスキーマのトークンコストと、重複や矛盾を検出します。
+- [zoahdev/dsh-plugin-doctor](https://github.com/zoahdev/dsh-plugin-doctor) — DSH プラグインの健全性チェック。manifest/パッチ/エントリ/ビルド/パック/インストールの検証、モデルから呼べる plugin_check、プロファイルによるホストの上書きと BOM の検出、環境の診断、汚染の事前確認を行います。
+- [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) — 検証を軸にした自己進化のループ。失敗のログが検証済みの AGENTS.md のルールになります。セッション内で動くプラグイン（evolve_learn / evolve_apply / evolve_touch / evolve_recall）、ツールによる検証ゲート、ルールのライフサイクル管理、ローカルでの想起を備えます。
+
+### 🛒 プラグインマーケットと管理
+
+- [1e0zj/dsh-plugin-mall](https://github.com/1e0zj/dsh-plugin-mall) — オープンなプラグインマーケット。GitHub の dsh-plugin topic をライブ検索し、リポジトリごとに package.json を検証（dsh.bundle/dsh.client manifest のバッジと検証済みのみの絞り込み）、同一ソース確認によるなりすまし対策付きの npm 優先インストール、更新検知、headless 用の 5 つのエージェントツールを提供します。
+- [2768651338/dsh-plugin-manager](https://github.com/2768651338/dsh-plugin-manager) — 設定 → プラグインにプラグイン管理タブを追加。インストール済みプラグインごとに中国語名と平易な説明を表示し、ワンクリックで有効化/無効化、UI 上でのメモ編集、一覧の検索と絞り込みができます。
+- [863683348/dsh-feed](https://github.com/863683348/dsh-feed) — エコシステム横断の集約データ層。GitHub の dsh-plugin topic と npm レジストリを 1 つのオープンな JSON インデックスに同期し、モデルツール、CLI、最小構成の stdio MCP サーバーから照会できます。
+- [863683348/dsh-need-finder](https://github.com/863683348/dsh-need-finder) — 要望起点の dsh プラグイン探索と環境レシピ。plugin_guide が自然言語の要望を厳選プラグイン一覧に突き合わせ、理由とインストールコマンドを提示します。recipe は同梱のコミュニティバンドル（通知全家桶、安全审计套装 など）から環境一式を手順どおりに導入します。
+- [863683348/dsh-recipe](https://github.com/863683348/dsh-recipe) — dsh プラグインのシナリオ別バンドル（插件界的 dotfiles）。既成のプラグイン環境を一覧・検索し、決まった順序でインストールして組み合わせる recipe ツールです。
+- [alex04130/dsh-forge](https://github.com/alex04130/dsh-forge) — DeepSeek Harness の実行時拡張スイート。セッション横断のメールボックス（コールドスタート時の起こし込み）、エージェントチーム（キャプテン＋メンバー＋依存関係タスクボード＋team_wait）、権限引き上げの承認を伴うサブエージェント生成ポリシー、タスクに応じたルーティングのプリセット、プラグインマーケット、スキル管理、実行時インジェクターを備えます。
+- [bradeGithub/DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace) — GitHub の topic を情報源にしたプラグイン＆スキルのマーケット。自動収集されたレジストリ（dsh-plugin topic 全体とスキルの索引、CI で 2 時間ごとに更新）を閲覧できる設定ページで、ワンクリックのインストール、種別の判定、インストールスクリプトとホストの依存上書きに対する安全確認、環境変数キーの管理、STANDARD.md の認識仕様を備えます。
+- [buhuikongpan/dsh-pluginmanager](https://github.com/buhuikongpan/dsh-pluginmanager) — DSH web 向けの階層化されたプラグインマネージャー。ネイティブプラグインは system/WebUI/tools に分けて読み取り専用で表示し、ユーザー拡張は有効化/無効化、登録、アンインストール、説明の編集ができます。
+- [ChengxiuCDP/dsh-plugin-advisor](https://github.com/ChengxiuCDP/dsh-plugin-advisor) — 品質を踏まえたエージェント内でのプラグイン探索。find_dsh_plugins ツールが、日次で品質採点したインデックス（インストール可能な manifest、厳選リストへの掲載、ライセンス、活動状況）と gh のライブ検索を組み合わせて dsh-plugin topic 全体をランキングします。LLM の API コストはゼロで、結果には常にリスク表示と正確なインストールコマンドが付きます。
+- [cynch18/plugin-switch](https://github.com/cynch18/plugin-switch) — プラグイン一覧のトグルスイッチ。設定 → プラグイン → プラグイン一覧から、再起動なしでどのプラグインでも有効化/無効化できます。グループと絞り込み、一括切り替え、取り消し、バックアップつき。
+- [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) — （推奨）DSH の中のプラグインマーケット。設定ページからコミュニティのカタログ全体をカテゴリ別に閲覧・検索でき、確認を挟んだワンクリックインストールとインストール済み一覧を備えます。
+- [Dylan37670/dsh-plugin-panel](https://github.com/Dylan37670/dsh-plugin-panel) — アプリ内の DSH プラグインマーケットパネル。厳選版と全件のカタログ、キーワード検索と意味検索、中国語訳、お気に入り、インストール状態の追跡に対応し、公式 CLI 経由でインストール/更新/アンインストールを行います。
+- [huguangyu666/dsh-store](https://github.com/huguangyu666/dsh-store) — プラグインストア。npm を正とするカタログと awesome の厳選リスト（550 以上、11 カテゴリ）を組み合わせ、dsh-field による品質検証、公式の `dsh plugin add/remove` を使ったワンクリックインストール、サイドバーと設定からの導線を備えます。
+- [icefall7/dsh-plugin-scout](https://github.com/icefall7/dsh-plugin-scout) — deepseek-harness リポジトリと dsh-plugin タグの付いた全リポジトリを偵察して、あなたの目的に関係する harness を見つけ出し、試す価値がある・様子見・見送り のいずれかを判定します。
+- [Jesse-njx/dsh-plugin-manager](https://github.com/Jesse-njx/dsh-plugin-manager) — `dsh pm` プラグインマネージャー。複数ソースの検索（awesome リスト＋GitHub＋npm）、プロファイル単位のインストール/削除/更新、manifest・バンドルパッチ・バージョンのずれを調べる doctor 監査を備えます。
+- [kimiya1010/dsh-plugin-market](https://github.com/kimiya1010/dsh-plugin-market) — DeepSeek Harness 向けのプラグインマーケット。GitHub の dsh-plugin プラグインを web GUI から直接検索し、ワンクリックでインストールできます。
+- [kinmat-A/dsh-theme-switch](https://github.com/kinmat-A/dsh-theme-switch) — DSH Web の設定からワンクリックでスキンを切り替え。インストール済みのテーマを自動検出し、常に 1 つだけを有効に保ち、すべて無効にすると公式の見た目に戻ります。変更は即座に反映され、再起動後も保たれます。
+- [kkkkkklze/dsh-plugin-manager](https://github.com/kkkkkklze/dsh-plugin-manager) — DeepSeek Harness の Web 内プラグインマネージャー。カテゴリ分けされたプラグイン一覧、ワンクリックで切り替えられるプリセットの組み合わせ、設定の入出力と失敗時の自動ロールバック、ワンクリックインストールできるプラグインマーケットを備えます。
+- [liqichen/dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) — DSH の設定パネル内の GUI。MCP サーバーの有効化/削除、スキルの閲覧と削除、組み込みプラグインパッケージの一覧を、再起動なしで即座に反映できます。
+- [LKMeng2001/dsh-mcp-market](https://github.com/LKMeng2001/dsh-mcp-market) — DSH 向けの MCP サーバーマーケット。npm で検証済みの厳選カタログを閲覧し、現在のプロファイルにワンクリックで MCP サーバーを追加できます。再起動なしで反映されます。
+- [loguhan/dsh-workshop](https://github.com/loguhan/dsh-workshop) — DSH Web UI 向けの Steam ワークショップ風プラグインストア。コミュニティのプラグインを閲覧・検索し、ミラーによる高速化、進捗表示、セキュリティチェック、中国語の説明つきでワンクリックインストールできます。
+- [nonentity303/dsh-plugin-manager](https://github.com/nonentity303/dsh-plugin-manager) — レスキューセンター付きのプラグインマネージャー。必要度でグループ分けした有効化/無効化、複数の更新元（npm / dshfind マーケット / GitHub）、自動インストールフォルダーを使うブラウザ優先のダウンロード、P2P のフォールバック、起動前のセルフチェック、壊れたバンドルの隔離を備えます。
+- [Noob-stupid/dsh-plugin-hub](https://github.com/Noob-stupid/dsh-plugin-hub) — プラグイン管理パネル。インストール済みプラグインのワンクリック有効化/無効化に加え、GitHub の dsh-plugin マーケットを詳細表示つきで閲覧し、ワンクリックでインストールできます。
+- [Relistencode/dsh-extension-hub](https://github.com/Relistencode/dsh-extension-hub) — 設定内にまとめた DSH の拡張センター。スキル、MCP サーバー、プラグインの管理に加え、プラグインマーケット（厳選＋GitHub 検索、npm のワンクリックインストール）と、関連機能をまとめてインストール・無効化・アンインストール・更新できるアドオンブロックを備えます。
+- [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) — dsh web GUI 内で動くプラグインマーケット。設定 → プラグイン → プラグインマーケットから awesome-dsh-plugin.com のカタログを閲覧し、プロファイルへのインストールとアンインストールができます。
+- [stakeswky/awesome-dsh](https://github.com/stakeswky/awesome-dsh) — 「こういうものが欲しい」からプラグインの選定までを橋渡しするエージェントスキル。`dsh-plugin` topic 全体のカタログ（2600 以上のリポジトリ、6 時間ごとに再収集、Workers AI による中国語説明）をランキング検索 API 経由で調べ、該当する `dsh plugin add` コマンドを返します。
+- [tttwh/dsh-plugin-Audit](https://github.com/tttwh/dsh-plugin-Audit) — DSH のインストール済みプラグインのカタログ。出どころ（公式と自分で入れたもの）でグループ分けした検索可能なパネルから、有効化/無効化、アンインストール、ワンクリック更新ができます。
+- [tuogusa/dsh-plugin-toggle](https://github.com/tuogusa/dsh-plugin-toggle) — Web の設定パネルからプラグインの有効/無効の切り替えや削除ができます。実行時の状態はプロファイルに保存されます。
+- [whyihaveyou/dsh-suite#plugin-manager](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager) — DSH Web UI のアプリ内プラグインストア。閲覧、検索、ワンクリックインストール、互換性バッジに対応します。
+- [xiaoyangcheng84-svg/dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager) — dsh web GUI 向けのスキンマネージャー。インストール済みのスキンを検出し、専用の設定ページから有効なスキンを切り替えます。同時に有効なのは 1 つだけで、再起動なしで反映されます。
+- [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) — Steam ワークショップ風のアプリ内プラグインブラウザー。検索、人気/新着/トレンド（7/30/90 日）の並べ替え、中国語キーワードの対応付け、二言語の説明と README の翻訳、プラグイン署名での絞り込み、ワンクリックのインストールと更新に対応します。
+- [zoahdev/dsh-subscribe#plugin](https://github.com/zoahdev/dsh-subscribe/tree/main/plugin) — Steam 風のプラグインストアフロント。DSH の中で閲覧できるプラグインレジストリから、ワンクリックでインストール・アンインストール・更新ができ、依存関係ゼロの CLI とエージェントから呼べるマーケットツールも備えます。
+
+### 🎮 お楽しみ
+
+- [609476965/dsh-LorebookMD](https://github.com/609476965/dsh-LorebookMD) — SillyTavern/TavernAI のキャラクターカードとワールドブックを取り込み、ローカルの Markdown 設定資料として保存。その世界観を参照しながらプロンプトから小説の文章を生成します。
+- [AmeKrance/anan-thermal-monitor](https://github.com/AmeKrance/anan-thermal-monitor) — 画面端に張り付く紫と白のデスクトップペット。CPU・RAM・GPU・NVMe の温度とハードウェア情報をリアルタイム表示します。
+- [AnacondaKC/dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — ショート動画のサイドバー。ネイティブプレーヤー、シリーズ内の移動、履歴の正確な再生に対応します。
+- [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) — コーディング中は口座のお金が減らないというバグを修正します。
+- [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) — A 株ウォッチリストのリアルタイム相場モニター。DeepSeek Harness（DSH）web 画面の右上に開閉できるポップアップを置き、リアルタイム気配の監視、グループ切り替え、日中足とローソク足（K 線）チャート、売買目標価格の設定ができます。
+- [chen731215-dev/-](https://github.com/chen731215-dev/-) — DeepSeek Harness 向けのネイティブなタバーン管理パネル。複数のキャラクターカード、複数のワールドブック、切り替え可能なプリセットに対応します。
+- [hellodigua/dsh-emoji](https://github.com/hellodigua/dsh-emoji) — AI の返信に絵文字を自動で添えます。
+- [HuanLinOTO/dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) — モデルの生成中にミニゲームのメニュー（wordle、マッチ 3、拡張可能）を表示します。
+- [JAdpp/dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) — 複数キャラクターのギャルゲー風会話ビュー。キャラクターと返答モデルを個別に選べ、キャラクターごとの好感度、記憶、会話履歴、CG ギャラリーを備えます。Harness の各セッションのタスクイベントを踏まえた応答も行います。
+- [jitengfei/dsh-whale-arcade](https://github.com/jitengfei/dsh-whale-arcade) — ブラウザ内で動くフローティングなクジラのアーケード。エージェントの待ち時間向けに、スコア形式のゲーム 3 種と海がテーマの五目並べを収録しています。
+- [KongChengZhi/dsh-pixel-studio#dsh-cli-anything-aseprite](https://github.com/KongChengZhi/dsh-pixel-studio/tree/main/dsh-cli-anything-aseprite) — Aseprite 風のピクセルアートスタジオ。AI が選択範囲、レイヤー、アニメーションフレーム、グラデーション、対称、参照レイヤーを使って一筆ずつスプライトを描き、各ステップを ANSI のターミナルフレームとしてその場に描画します。
+- [lhh010/dsh-minigames](https://github.com/lhh010/dsh-minigames) — サイドパネルのアーケード。モデルの思考中に遊べるオフラインのミニゲーム 18 種を収録しています。
+- [lucky8197/dsh-devquest](https://github.com/lucky8197/dsh-devquest) — コーディングを RPG にします。終えたターン、ツール呼び出し、完了した TODO が経験値になり、27 以上の実績バッジ、レベル、称号、シーズンが用意されています。純粋関数のエンジンによるイベント駆動の採点で、仕事そのものがゲームになります。
+- [luumod/dsh-achievements](https://github.com/luumod/dsh-achievements) — 実績とゲーミフィケーションのプラグイン。ターン、ツール呼び出し、セッション、連続日数、コーディングの振る舞い（編集/読み取り/テスト）に応じてバッジを解除でき、バッジの壁、解除時のトースト、ctx.achievements の SDK を備えます。
+- [marvin9551/dynamic-schulte-dsh](https://github.com/marvin9551/dynamic-schulte-dsh) — 動くシュルテ表の待ち時間ミニゲーム。モデルの思考中に、静止したグリッドか回転するルーレット上で 1 から N まで順にクリックします。
+- [minybear/DeepSeek-Harness-Pet](https://github.com/minybear/DeepSeek-Harness-Pet) — Codex 風のデスクトップペット。画面隅に浮かぶアニメーションのスプライトが、エージェントの実行状態（作業中、待機中、失敗、完了）を映します。
+- [Moeblack/deepseek-manners](https://github.com/Moeblack/deepseek-manners) — メッセージのたびにお礼の一言を添えます。礼儀を忘れずに。
+- [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) — 2005 年頃の中国の Web を思わせるパロディ広告。サイドバーのバナー、チャット内のフィード、隅のポップアップ、見た目より当たり判定が小さい閉じるボタン付き。すべて架空のものです。
+- [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) — 公式のクジラの輪郭から起こしたデスクトップペット。純粋な SVG のアニメーションがエージェントの状態（思考中、作業中、お祝い、エラー）に追従し、つつく操作とダブルクリックでの反転、カーソルからの回避、7 種の配色、ライト/ダークテーマへの同期、ブラウザで試せるプレビューを備えます。
+- [omdsh-dev/dsh-auto-chess](https://github.com/omdsh-dev/dsh-auto-chess) — オートチェス。人間対 AI でも、AI 同士でも対戦できます。
+- [omdsh-dev/dsh-gomoku](https://github.com/omdsh-dev/dsh-gomoku) — AI と五目並べで対戦したり、AI 同士で戦わせたりできます。
+- [ovdoesw/dsh-xiangqi](https://github.com/ovdoesw/dsh-xiangqi) — ドラッグできるマスコットが、AI の思考中に象棋（中国将棋）へ誘います。エンジンを内蔵し、棋譜の書き出しと任意の複数モデルによる解説に対応します。
+- [PC2005-cloud/dsh-pet#dsh-pet](https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet) — DSH Web UI 向けのデスクトップペット。透過アニメーション 25 種、画面内の移動、クリック反応、ドラッグに対応し、素材生成の再現可能なパイプラインも同梱します。
+- [PM25000/dsh-ths-holdings](https://github.com/PM25000/dsh-ths-holdings) — 実際の持ち高の損益（今日盈亏）、上海総合指数、日中チャートを表示するフローティングカード。同花順の取引台帳から自動同期するため、ウォッチリストの手入力は不要です。
+- [Rain-Shuoyu/dsh-client-deep-sneak](https://github.com/Rain-Shuoyu/dsh-client-deep-sneak) — サボりのお供。Bilibili の動画を流すフローティングのミニプレーヤー（ネイティブプレーヤー、弾幕、コメント、検索）で、エージェントがあなたを必要としたら自動で一時停止し、戻ればその続きから再生します。
+- [says693/dsh-log-memory](https://github.com/says693/dsh-log-memory) — セッションログの見守り役のポップアップ。設定した間隔（10 分〜3 時間）で Web UI とともに現れ、~/.dsh/sessions 配下のすべての session.jsonl(.zstd) を、生のままか読みやすいチャットログ形式でワンクリック差分バックアップします。
+- [sjh9714/clippy-harness#plugin](https://github.com/sjh9714/clippy-harness/tree/master/plugin) — クリッピーが帰ってきました。今度は本当に役に立ちます。エージェントの実際の状態に反応するオフィスアシスタントのペットで、ターンが完了すると跳ね、失敗すると往年の「不正な処理」ダイアログを開きます。
+- [skiuniverse/dsh-running-liang](https://github.com/skiuniverse/dsh-running-liang) — DeepSeek Harness Web UI 向けの Chrome の恐竜ゲーム風ランナー。エージェントの返信中に遊べ、スコアは「梁子」から「梁圣」まで、保存される進捗バーで上がっていきます。
+- [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) — Codex 形式のスプライトシートのペットを取り込み、shell.overlay のフローティング要素として描画します。ペットのライブラリ、インタラクション、エージェント状態との連動を備えます。
+- [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) — デジモン風の育成ゲーム。実際の作業（ターン、ツール呼び出し、エラー）を糧に卵が孵り、あなたの働き方に応じて 4 系統に分岐して進化します。トークン消費はゼロで、モデルからは見えません。
+- [swaylq/dsh-wildmon](https://github.com/swaylq/dsh-wildmon) — ポケモン風のコレクションゲーム。実際の作業が草むらになり、ターン、ツール呼び出し、エラーが野生の遭遇を生みます。ボールを投げ、28 枠の図鑑を埋め、6 体のパーティを連れて歩きます。トークン消費はゼロで、モデルからは見えません。
+- [THEWOLFWALKER/dsh-coyote](https://github.com/THEWOLFWALKER/dsh-coyote) — エージェントと GUI から操作する DG-LAB Coyote 電気刺激プラグイン。8 つの `coyote_*` ツールと DSH の Web パネルを 1 つの安全機構（ソフトリミット、非対称レート制限、セッションのクールダウン、再生の上限、切断時のフェイルセーフ）で包みます。任意の自動刺激層はエージェントのイベント（ツール呼び出し、エラー、ターン終了）を範囲内のパルスに割り当てます。公式 V3 のソケットプロトコル、QR ペアリング、波形のプログラミングに対応。成人向け。
+- [vlln/whale-girl](https://github.com/vlln/whale-girl) — デスクトップペット（QQ ペット風）。画面隅に浮かび、ドラッグでき、エサをあげたり遊んだりできます。
+- [william-jin-cmu/dsh-stickers](https://github.com/william-jin-cmu/dsh-stickers) — ユーザーとエージェントが双方向にスタンプでリアクションできます。
+- [WJNCT55555/dsh-achievements](https://github.com/WJNCT55555/dsh-achievements) — DSH Web UI の実績システム。カテゴリ/レア度で並べ替えられるギャラリー、解除時のトースト、サイドバーのトロフィー、コンポーザーのドック、他プラグインと連動した実績、ローカル保存に対応します。
+- [xczhanjun/lazeword](https://github.com/xczhanjun/lazeword) — 家族みんなで使えるオフラインの単語トレーナー。厳選 1094 語、間隔反復、6 種類のクイズ、スペリングゲーム、大画面向けのゆったりモードを収録。サイドバーのパネルとして開けるほか、単体の HTML ファイルとしても動きます。
+- [xiaoshihou514/dsh-desktop-pet](https://github.com/xiaoshihou514/dsh-desktop-pet) — DSH のペットがデスクトップに登場します。
+- [xiekai886/dsh-MusicPlayer](https://github.com/xiekai886/dsh-MusicPlayer) — 折りたたみと展開ができるドラッグ可能なフローティング音楽プレーヤー。網易雲音楽のプレイリスト取り込みと曲/アーティスト検索に対応——チャットしながら音楽を聴けます。
+- [yushi-xxh/dsh-homepage-skin](https://github.com/yushi-xxh/dsh-homepage-skin) — dsh web に DeepSeek Harness のホームページの背景を追加します。WebGL の流体光、点と線のグリッド、デジタルな点群のクジラを、ダークとライトの配色で表示します。
+- [yyh-001/dsh-expression](https://github.com/yyh-001/dsh-expression) — 楽しいミーム検索。雰囲気を伝えると、エージェントがぴったりのミーム画像を見つけて送ってくれます。
+- [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) — エージェントとともに育つペット。実際のシグナル（検証済みのルール、完了したセッション、ツール呼び出し、コンパクション）で 5 段階に進化し、エージェントの状態を映し、成長を共有できるカードをワンクリックで作れます。依存関係ゼロ、完全ローカルで動作します。
+<!-- END PLUGINS -->
+
+## 貢献
+
+PR を歓迎します。**このページは生成物です。手で編集しないでください。** 代わりに `data/plugins/<owner>__<repo>.yml` にファイルを 1 つ追加してください:
+
+```yaml
+url: https://github.com/owner/repo
+name: owner/repo
+category: ui
+description:
+  en: One-line description ending with a period.
+  zh: 一句话描述，以句号结尾。
+  ja: 句点で終わる一文の説明。
+```
+
+プラグイン 1 つにつきファイル 1 つなので、2 つの投稿が同じファイルに触れることはなく、PR 同士がコンフリクトしなくなります。`node scripts/generate-readme.mjs` を実行して各言語の README を再生成し、その結果も一緒にコミットしてください。
+
+あなたのリポジトリは次の条件を満たす必要があります:
+
+- `package.json` に **`dsh.bundle`** manifest を宣言していること——`dsh.client` だけではインストールできません。これは PR ごとに自動でチェックされます
+- 作成から **1 日以上**が経過し、**コミット数が 10 以上**であること——作りたてのリポジトリは条件を満たしてから再投稿できます
+- [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic が付いていること
+
+テーマ/スキン: **テーマと外観**カテゴリのエントリは `dsh-market` のテーマタブに反映され、ユーザーはワンクリックでインストール・切り替えできます。
+
+詳しいルール、記入例、スクリーンショットの形式は [contributing.md](contributing.md) を参照してください。
+
+## バッジ
+
+掲載されましたか？ ぜひ表示してください:
+
+![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)
+
+```markdown
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
+```
+
+## 免責事項
+
+これはコミュニティが維持しているインデックスです。プラグインは各作者が開発・保守しており、ここに掲載されていることは推奨を意味しません。また、いかなるプラグインについても安全性・品質・保守状況を保証するものではありません。プラグインのインストールはあなたのマシン上で第三者のコードを実行します——ソースを確認のうえ、自己責任でインストールしてください。本プロジェクトは DeepSeek とは無関係です。
+
+このリポジトリの issue はリストとそのウェブサイトに関するものだけを扱います。プラグインマーケットの UI に関する問題は [dsh-market](https://github.com/dsh-market/dsh-market/issues) へ、`dsh` 本体の問題は [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues) へ、個々のプラグインの不具合はそのプラグイン自身のリポジトリへ報告してください。

@@ -4,3 +4,4 @@ category: notify
 description:
   en: Monitors session state in the DSH web app and sends desktop, browser, and third-party notifications for interactions, completions, and errors.
   zh: 在 DSH Web 端监控会话状态，为需要交互、任务完成、任务出错发送桌面 / 浏览器 / 第三方通知。
+  ja: DSH の web アプリでセッションの状態を監視し、やり取り・完了・エラーについてデスクトップ、ブラウザ、サードパーティの通知を送ります。

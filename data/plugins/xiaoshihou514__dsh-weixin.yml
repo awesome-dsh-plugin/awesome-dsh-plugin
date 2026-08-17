@@ -4,3 +4,4 @@ category: notify
 description:
   en: Connects dsh to Weixin, with arbitrary file sending support.
   zh: 通过微信远程控制 DeepSeek Harness，支持任意文件传输。
+  ja: dsh を微信につなぎます。任意のファイル送信にも対応。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Dual knowledge-graph RAG for Markdown notes: prerequisite + similarity graphs (P/S-Agent traversal), paragraph chunking, n-gram/embedding hybrid search, and an explicit weight feedback loop — via MCP.'
   zh: Markdown 笔记的双知识图谱 RAG：前置依赖 + 相似关联双图（P/S-Agent 遍历）、段落级匹配、ngram/embedding 混合检索、显式权重反馈闭环，以 MCP 接入。
+  ja: Markdown のノート向けの 2 種類の知識グラフ RAG。前提グラフと類似グラフ（P/S-Agent による探索）、段落単位のチャンク分割、n-gram と埋め込みのハイブリッド検索、明示的な重みのフィードバックループを MCP 経由で提供します。

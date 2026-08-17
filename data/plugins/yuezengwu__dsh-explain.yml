@@ -4,3 +4,4 @@ category: session
 description:
   en: 'Local-first learning mode: cross-session learning threads with per-source explanations.'
   zh: 本地优先学习模式：跨会话全局学习线程、按来源讲解。
+  ja: ローカル優先の学習モード。セッションをまたぐ学習スレッドと、情報源ごとの解説を提供します。

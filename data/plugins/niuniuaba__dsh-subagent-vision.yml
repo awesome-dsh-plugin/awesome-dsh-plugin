@@ -4,3 +4,4 @@ category: vision
 description:
   en: Lets a text-only DeepSeek agent read images in the same session by delegating to a vision-capable subagent, with send-time image-to-path conversion.
   zh: 让纯文本 DeepSeek 代理在同一会话内读图：委派给视觉子代理，发送时自动把图片转为文件路径。
+  ja: テキスト専用の DeepSeek エージェントが同じセッションのまま画像を読めるようにします。視覚対応のサブエージェントに委譲し、送信時に画像をパスへ変換します。

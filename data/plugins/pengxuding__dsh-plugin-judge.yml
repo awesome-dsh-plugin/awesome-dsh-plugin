@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Plugin value auditor: pre-install review (source scan + LLM judge) and post-install audit of installed bundles, with model-switch re-audit reminders.'
   zh: 插件价值裁判：装前审核（源码静态扫描 + LLM 裁判）与装后审计已装插件，模型切换时弹窗提醒复核；判断插件对当前模型是增强还是压制。
+  ja: プラグインの価値を監査。インストール前のレビュー（ソースのスキャン＋LLM による判定）と、導入済みバンドルの事後監査を行い、モデルを切り替えたときの再監査も促します。

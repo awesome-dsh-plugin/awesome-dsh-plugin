@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Declutter the DSH settings nav: fold third-party plugin entries under collapsible group rows, with bookmark-style custom groups and a fold toggle in General settings.'
   zh: 设置面板导航整理：第三方插件入口折叠为可展开的分组行，支持书签式自定义分组与「通用设置」折叠开关。
+  ja: DSH の設定ナビを整理します。サードパーティのプラグインの項目を折りたためるグループ行にまとめ、ブックマークのような独自グループと、一般設定からの折りたたみ切り替えを提供します。

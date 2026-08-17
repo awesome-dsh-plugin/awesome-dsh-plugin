@@ -4,3 +4,4 @@ category: session
 description:
   en: Create/modify/inject test assistant messages and import/repair session.jsonl(.zstd) session logs into new sessions.
   zh: 消息锻造台：创建/修改/注入测试用 assistant 消息，导入识别并安全修复 session.jsonl(.zstd) 会话日志为新会话。
+  ja: テスト用のアシスタントメッセージの作成・変更・注入と、session.jsonl(.zstd) のセッションログを新しいセッションへ取り込み・修復します。

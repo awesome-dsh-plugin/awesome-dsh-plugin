@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Real-time duplex voice over Volcengine streaming ASR/TTS: agent reply narration, barge-in, wake word, live captions, 30 Chinese voices and a reply-first acknowledgment; builds in the DSH monorepo.'
   zh: '基于火山流式 ASR/TTS 的实时双工语音：回复朗读、打断、唤醒词、实时字幕、30 个中文音色与先响应后思考；在 DSH monorepo 内构建。'
+  ja: 火山エンジンのストリーミング ASR/TTS による、リアルタイムの全二重ボイス。エージェントの返信の読み上げ、割り込み、ウェイクワード、リアルタイム字幕、30 種の中国語音声、まず返事をする相づちに対応し、DSH のモノレポでビルドされます。

@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.'
   zh: 按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。
+  ja: 必要なときだけ文脈を取り出す軽量な検索層。context_query / context_slice / context_grep の各ツールが、永続化済みの履歴を再生しても壊れない引用付きで読み戻します。

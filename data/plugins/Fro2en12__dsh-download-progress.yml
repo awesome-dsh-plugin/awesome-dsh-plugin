@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Download progress panel: URL downloader, agent shell/SSH transfer tracking and workspace black-box file-growth monitoring, shown in a draggable floating panel with live bytes, speed, percentage and ETA.'
   zh: 下载进度面板：URL 下载器、agent shell/SSH 传输追踪与工作区黑箱文件增长监控，汇聚到可拖拽浮窗实时显示字节、速度、百分比与预计剩余时间。
+  ja: ダウンロード進捗パネル。URL からのダウンロード、エージェントのシェル/SSH 転送の追跡、ワークスペース内のファイル増加の監視を、ドラッグできるフローティングパネルに転送量・速度・進捗率・残り時間つきで表示します。

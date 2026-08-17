@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'SearXNG-backed web_search provider for the web seam: free, self-hosted, key-less metasearch through your own instance''s JSON API, with a bundled loopback-only docker-compose example.'
   zh: 基于 SearXNG 的 web_search provider：通过自建实例的 JSON API 实现免费、免密钥的元搜索，附仅绑定回环地址的 docker-compose 示例。
+  ja: SearXNG を使う web_search プロバイダー。自前インスタンスの JSON API を通じた無料・自己ホスト・キー不要のメタ検索を提供し、ループバック限定の docker-compose の例を同梱しています。

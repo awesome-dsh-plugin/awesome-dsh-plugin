@@ -4,3 +4,4 @@ category: tools
 description:
   en: A `search` tool that learns to pick between fast and thorough search strategies using a contextual bandit (Thompson sampling), improving from real usage instead of a fixed heuristic.
   zh: '使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 '
+  ja: 文脈付きバンディット（トンプソンサンプリング）で、高速な検索戦略と丁寧な検索戦略を学習しながら選び分ける `search` ツール。固定のヒューリスティックではなく、実際の利用から改善していきます。

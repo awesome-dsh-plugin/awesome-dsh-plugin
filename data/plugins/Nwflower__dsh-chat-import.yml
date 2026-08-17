@@ -4,3 +4,4 @@ category: session
 description:
   en: Import full-fidelity chat histories from 13 coding agents (Claude Code, Codex, ChatGPT, Cursor, Gemini, opencode, and more) as resumable DeepSeek Harness sessions, with reverse export back to Claude Code.
   zh: 把 13 家 coding agent（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode 等）的完整对话历史导入为可续聊的 DeepSeek Harness 会话，并支持反向导出回 Claude Code。
+  ja: 13 種のコーディングエージェント（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode ほか）のチャット履歴を、忠実さを保ったまま再開可能な DeepSeek Harness のセッションとして取り込みます。Claude Code への逆方向の書き出しにも対応。

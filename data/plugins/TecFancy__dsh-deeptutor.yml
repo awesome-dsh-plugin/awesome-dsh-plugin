@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'DeepTutor tutoring bridge: deep explanations, self-test questions, learning-path planning, personal knowledge-base search (RAG), and note archiving via deeptutor_run / deeptutor_kb / deeptutor_note tools.'
   zh: DeepTutor 学习辅导桥接插件：通过 deeptutor_run / deeptutor_kb / deeptutor_note 工具为 agent 接入深度讲解、自测题、学习路径规划、个人知识库检索（RAG）与笔记归档。
+  ja: DeepTutor の学習ブリッジ。deeptutor_run / deeptutor_kb / deeptutor_note の各ツールを通じて、踏み込んだ解説、理解度確認の問題、学習経路の設計、個人ナレッジベースの検索（RAG）、ノートの保管を行います。

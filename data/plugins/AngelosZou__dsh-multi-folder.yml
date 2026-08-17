@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Secondary working directories for a DSH project: the agent keeps the primary workspace as cwd and gains equal read/write/exec permissions on configured secondary directories, configurable from the session header and the new-session page.'
   zh: 为 DSH 项目提供副工作目录：agent 保持主工作区为 cwd，同时对已配置的副目录获得同等读写/执行权限，可在会话头部与新会话页配置。
+  ja: DSH プロジェクトに副次的な作業ディレクトリを追加。エージェントは主ワークスペースを cwd に保ったまま、設定した副ディレクトリにも同等の読み書き・実行権限を得ます。セッションヘッダーと新規セッション画面から設定できます。

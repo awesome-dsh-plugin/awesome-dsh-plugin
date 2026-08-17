@@ -4,3 +4,4 @@ category: ui
 description:
   en: Animated blue-whale desktop pet with per-session response progress, model activity and tool-call traces, token counts, output speed, elapsed time, and collapsible multi-session status cards.
   zh: 蓝鲸桌面宠物：按会话实时展示回答进度、模型动作与工具调用轨迹、token、输出速率与耗时，并支持多会话状态卡片展开和收起。
+  ja: アニメーションするシロナガスクジラのデスクトップペット。セッションごとの応答進捗、モデルの活動とツール呼び出しの履歴、トークン数、出力速度、経過時間を表示し、複数セッションの状態カードを折りたためます。

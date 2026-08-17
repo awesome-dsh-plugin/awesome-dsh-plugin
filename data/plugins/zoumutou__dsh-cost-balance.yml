@@ -4,3 +4,4 @@ category: usage
 description:
   en: 'Collapsible iOS-style stats pill under the composer: session cost, DeepSeek account balance, cache-hit rate, and token usage in a frosted panel.'
   zh: 输入框下方的 iOS 风格统计条：一键展开查看会话花费、DeepSeek 账户余额、缓存命中率与 Token 用量。
+  ja: コンポーザーの下に置く、折りたためる iOS 風の統計ピル。セッションのコスト、DeepSeek アカウントの残高、キャッシュヒット率、トークン使用量をすりガラス調のパネルにまとめます。

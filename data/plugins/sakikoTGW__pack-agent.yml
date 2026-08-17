@@ -4,3 +4,4 @@ category: tools
 description:
   en: Project .pack.json/.pack.zip into .agent-pack/modpacks/ and expose skills via a workspace allow-list.
   zh: 把 .pack.json/.pack.zip 投影到 .agent-pack/modpacks/，按工作区白名单暴露 skill。
+  ja: プロジェクトを .pack.json/.pack.zip として .agent-pack/modpacks/ にまとめ、ワークスペースの許可リストを通じてスキルを公開します。

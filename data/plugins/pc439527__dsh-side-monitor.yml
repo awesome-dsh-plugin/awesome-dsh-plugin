@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Sidebar system monitor for the DSH Web UI: live host overview (CPU/memory/network/disk), process list, and Docker container status, all read-only.'
   zh: 侧边栏系统监控：实时查看宿主机概览（CPU/内存/网络/磁盘）、进程列表与 Docker 容器状态，全程只读。
+  ja: DSH Web UI 向けのサイドバー型システムモニター。ホストの概況（CPU/メモリ/ネットワーク/ディスク）、プロセス一覧、Docker コンテナの状態をリアルタイムに、すべて読み取り専用で表示します。

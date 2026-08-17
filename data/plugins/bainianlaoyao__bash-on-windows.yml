@@ -4,3 +4,4 @@ category: dev
 description:
   en: On Windows, the available bash tool is limited to Git Bash and PowerShell is disabled.
   zh: 让 Windows 上可用的 bash 工具限制为 Git Bash,并禁用 PowerShell。
+  ja: Windows では bash ツールを Git Bash に限定し、PowerShell を無効にします。

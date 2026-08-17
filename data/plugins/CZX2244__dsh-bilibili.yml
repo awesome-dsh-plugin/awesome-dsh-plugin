@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Bilibili video analysis: metadata, transcript (ASR fallback via Bijian/sherpa-onnx/whisper.cpp), comments, danmaku, and sharp keyframes with optional local vision descriptions.'
   zh: B站视频分析工具：提取元数据、字幕文稿（必剪/本地 ASR 兜底）、评论与弹幕，抓取清晰关键帧并可选本地视觉描述。
+  ja: Bilibili 動画の解析。メタデータ、文字起こし（Bijian/sherpa-onnx/whisper.cpp による ASR フォールバック）、コメント、弾幕、鮮明なキーフレームを取得し、任意でローカルの視覚モデルによる説明も付けられます。

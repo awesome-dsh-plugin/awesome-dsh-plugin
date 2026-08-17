@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Free vision bridge and image generation for text-only models: paste-image reading, GLM-4V-Flash and Gemini engine failover, ModLens-style structured evidence, and a seeded free vision model route.'
   zh: 面向纯文本模型的免费视觉桥与生图：粘贴读图、GLM-4V-Flash 与 Gemini 引擎故障转移、modlens 同款结构化证据输出，并自动播种免费视觉模型路由。
+  ja: テキスト専用モデル向けの無料の視覚ブリッジと画像生成。貼り付けた画像の読み取り、GLM-4V-Flash と Gemini のエンジン間フェイルオーバー、ModLens 風の構造化された根拠、無料の視覚モデル経路の初期設定を備えます。

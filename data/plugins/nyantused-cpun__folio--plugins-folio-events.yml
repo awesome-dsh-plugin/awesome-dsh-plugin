@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Folio (兰亭) @nyantused/folio-dsh-events: session-protocol events — auto session-start reminder + auto-save on session close; pair with @nyantused/folio-dsh-tools.'
   zh: Folio（兰亭）@nyantused/folio-dsh-events：会话协议事件插件——新会话入口提醒 + 会话关闭自动 save；与 @nyantused/folio-dsh-tools 配套使用。
+  ja: 'Folio（兰亭）@nyantused/folio-dsh-events: セッションプロトコルのイベント——セッション開始時の自動リマインドと終了時の自動保存。@nyantused/folio-dsh-tools と組み合わせて使います。'

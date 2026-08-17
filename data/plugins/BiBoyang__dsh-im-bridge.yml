@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Two-way WeChat (iLink) bridge: turn-end and approval-request push, in-chat approve/reject and message injection, persistent dedup and convergent long-reply chunking; channel layer extensible to other IMs.'
   zh: 微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。
+  ja: WeChat（iLink）双方向ブリッジ。ターン終了と承認要求のプッシュ、チャット内での承認/却下とメッセージ注入、永続的な重複排除と長文返信の収束的な分割に対応し、チャネル層は他の IM にも拡張できます。

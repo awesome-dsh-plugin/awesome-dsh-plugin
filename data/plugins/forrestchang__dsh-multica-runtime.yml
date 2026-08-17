@@ -4,3 +4,4 @@ category: dev
 description:
   en: Run the dsh runtime on Multica.
   zh: 让 dsh 运行时跑在 Multica 上。
+  ja: Multica 上で dsh のランタイムを動かします。

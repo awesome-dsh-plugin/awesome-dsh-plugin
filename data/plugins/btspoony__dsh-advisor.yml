@@ -4,3 +4,4 @@ category: workflow
 description:
   en: Pair a second model that passively reviews each turn and injects notes.
   zh: 搭配一个副模型，每轮被动审查并注入见解。
+  ja: 2 つ目のモデルを相棒にして、各ターンを受動的にレビューさせ、気づきを注入します。

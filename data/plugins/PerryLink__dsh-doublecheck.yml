@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Engineering-discipline guard: requirements grill before the first edit, red/green test-evidence gates, forked adversary review, and a delivery report with a per-dimension verification workflow.'
   zh: 工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审，并汇总交付报告与逐维度核对。
+  ja: エンジニアリング規律のガード。最初の編集前に要件を問い詰め、red/green のテスト証跡ゲートを設け、分岐した敵対レビューを行い、観点ごとの検証ワークフローを備えた納品レポートを出します。

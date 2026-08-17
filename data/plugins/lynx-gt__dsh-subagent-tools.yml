@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Per-call model, provider, persona, and toolFilter overrides for subagent delegation, with @preset: references and provider/model composite ids.'
   zh: '子代理委派的按调用覆盖：model/provider/persona/toolFilter、@preset: 引用与 provider/model 组合 id。'
+  ja: 'サブエージェントへの委譲時に、呼び出しごとのモデル、プロバイダー、ペルソナ、toolFilter を上書きできます。@preset: 参照とプロバイダー/モデルの複合 id に対応。'

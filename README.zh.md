@@ -2,7 +2,7 @@
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-zh.png)](https://awesome-dsh-plugin.com/zh/)
 
-[English](README.md) | 中文
+[English](README.md) | 中文 | [日本語](README.ja.md)
 
 > [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件精选列表。
 

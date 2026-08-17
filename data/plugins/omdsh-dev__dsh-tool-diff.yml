@@ -4,3 +4,4 @@ category: tools
 description:
   en: Structured comparison and unified diffs for text/JSON/CSV/Markdown.
   zh: 文本/JSON/CSV/Markdown 结构化比较与 unified diff。
+  ja: テキスト/JSON/CSV/Markdown の構造的な比較と unified 形式の差分。

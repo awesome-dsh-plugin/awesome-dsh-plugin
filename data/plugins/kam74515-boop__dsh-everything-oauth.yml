@@ -4,3 +4,4 @@ category: model
 description:
   en: Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.
   zh: 把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。
+  ja: ローカルの Codex、Grok、Claude、OpenCode、CC Switch のログイン情報を DSH に取り込みます。設定画面で使う情報源を選び、モデルを有効化できます。

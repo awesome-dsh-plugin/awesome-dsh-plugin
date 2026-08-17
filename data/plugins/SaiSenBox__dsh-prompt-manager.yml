@@ -4,3 +4,4 @@ category: session
 description:
   en: Browser-local prompt library with a composer picker for injecting multiple session-scoped system prompts, branch inheritance, bilingual UI, favorites, and JSON backups.
   zh: 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
+  ja: ブラウザ内に保存するプロンプトライブラリ。コンポーザーのピッカーからセッション単位のシステムプロンプトを複数注入でき、分岐時の継承、二言語 UI、お気に入り、JSON でのバックアップに対応します。

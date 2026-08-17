@@ -4,3 +4,4 @@ category: session
 description:
   en: 'Session manager for the DSH Web UI: browse all and archived sessions, restore/unarchive, delete with two-step confirmation, and preview conversation content from the Settings panel.'
   zh: DSH Web 会话管理插件：在设置页查看全部与已归档会话，支持恢复（取消归档）、二次确认删除与对话内容预览。
+  ja: DSH Web UI 向けのセッション管理。すべてのセッションとアーカイブ済みセッションの閲覧、復元/アーカイブ解除、2 段階確認つきの削除、設定パネルからの会話内容のプレビューができます。

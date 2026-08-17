@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Synesthesia Encoder for DSH: a vision model translates images into compact structured spatial text (canvas/elements/percentage coordinates), giving text-only LLMs pixel-level image understanding via the `mm_vision` tool.'
   zh: 通感编码器（Synesthesia Encoder）：调用视觉模型把图片翻译成紧凑的结构化空间文字（画布/元素/百分比坐标），让纯文本 LLM 获得像素级看图能力（`mm_vision` 工具）。
+  ja: DSH 向けの共感覚エンコーダー。視覚モデルが画像を簡潔な構造化空間テキスト（キャンバス/要素/パーセント座標）に翻訳し、`mm_vision` ツールを通じてテキスト専用 LLM にピクセル単位の画像理解を与えます。

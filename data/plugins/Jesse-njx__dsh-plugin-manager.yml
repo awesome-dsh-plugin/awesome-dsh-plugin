@@ -4,3 +4,4 @@ category: market
 description:
   en: 'The `dsh pm` plugin manager: multi-source search (awesome list + GitHub + npm), install/remove/update per profile, and a doctor audit of manifests, bundle patches, and version drift.'
   zh: '`dsh pm` 插件管理器：多源搜索（awesome 列表 + GitHub + npm）、按 profile 安装/移除/更新，以及 doctor 审计（清单、bundle patch、版本漂移）。'
+  ja: '`dsh pm` プラグインマネージャー。複数ソースの検索（awesome リスト＋GitHub＋npm）、プロファイル単位のインストール/削除/更新、manifest・バンドルパッチ・バージョンのずれを調べる doctor 監査を備えます。'

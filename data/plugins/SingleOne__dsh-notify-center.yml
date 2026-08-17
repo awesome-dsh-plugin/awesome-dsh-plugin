@@ -4,3 +4,4 @@ category: notify
 description:
   en: Native desktop and webhook notifications for turn completions, failures, and approval requests, with outcome filters, content rules, privacy controls, and retrying delivery.
   zh: 回合完成、失败和待审批时发送跨平台本机通知与 Webhook，支持结果过滤、内容规则、隐私控制和失败重试。
+  ja: ターンの完了、失敗、承認要求をネイティブのデスクトップ通知と webhook で知らせます。結果による絞り込み、内容のルール、プライバシー設定、再送に対応します。

@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Sound reminders with one-click jump for concurrent sessions: the current session gets crisp dang/dang-dang tones, other sessions a soft ding/ding-ding plus a top-right card that jumps straight to the replying conversation.'
   zh: 多对话并行的声音提醒 + 对话直达：当前对话当/当当（crisp 清脆档），其他对话叮/叮叮（soft 柔和档）+ 右上角小卡片，点一下直达对应对话。
+  ja: 同時に走るセッション向けの、ワンクリックで飛べる音の通知。現在のセッションははっきりした「ダン/ダンダン」、他のセッションは柔らかい「ディン/ディンディン」を鳴らし、右上のカードから返信したセッションへ直接移動できます。

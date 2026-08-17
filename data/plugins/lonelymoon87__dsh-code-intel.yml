@@ -4,3 +4,4 @@ category: tools
 description:
   en: Indexes workspace symbols with Tree-sitter and provides lexical or optional embedding-assisted code search.
   zh: 用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。
+  ja: Tree-sitter でワークスペースのシンボルを索引化し、字句ベース、または任意で埋め込みを併用したコード検索を提供します。

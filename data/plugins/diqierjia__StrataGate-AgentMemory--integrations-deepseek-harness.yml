@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'Automatic, local-first cross-session memory for DeepSeek Harness: layered Event/Element cards, evidence-gated recall, and expansion back to original turns and tool results.'
   zh: 为 DeepSeek Harness 自动建立本地优先的跨会话长期记忆：以 Event/Element 卡片分层沉淀对话与工具结果，召回时检查证据充分性，并可展开回原始记录。
+  ja: DeepSeek Harness 向けの、ローカル優先で自動的に働くセッション横断メモリ。階層化された Event/Element カード、根拠を条件とする想起、元のターンやツール結果への展開に対応します。

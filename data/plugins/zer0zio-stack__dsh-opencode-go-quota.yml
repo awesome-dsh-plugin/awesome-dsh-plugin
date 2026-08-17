@@ -4,3 +4,4 @@ category: usage
 description:
   en: 'Bottom-right 余额 badge for the DSH Web UI: on expand it fetches the currently-selected provider''s OpenCode Go plan limits or DeepSeek prepaid balance, plus local token usage and pricing-based spend estimates.'
   zh: DSH Web 右下角「余额」徽标：展开时读取当前所选提供方，显示 OpenCode Go 计划限额或 DeepSeek 预充值余额，并附本机 token 用量与按定价表估算的消费金额。
+  ja: DSH Web UI の右下に置く残高バッジ。展開すると、選択中のプロバイダーの OpenCode Go プランの上限または DeepSeek のプリペイド残高に加え、ローカルのトークン使用量と価格に基づく支出見積もりを取得します。

@@ -4,3 +4,4 @@ category: ui
 description:
   en: A floating command deck that lists every slash command in DeepSeek Harness as runnable buttons, sorted by usage.
   zh: DeepSeek Harness 的悬浮命令甲板：把所有斜杠命令列成可执行按钮，悬停看介绍，按使用次数排序。
+  ja: DeepSeek Harness のスラッシュコマンドをすべて実行可能なボタンとして並べるフローティングのコマンドデッキ。使用頻度順に並びます。

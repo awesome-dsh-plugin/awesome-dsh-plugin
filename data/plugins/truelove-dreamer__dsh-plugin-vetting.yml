@@ -4,3 +4,4 @@ category: dev
 description:
   en: 'Vets third-party plugins before you trust them: static scan for malicious patterns (exfiltration, credential access, obfuscation, persistence) and over-privileged path use, transitive-dependency coverage, official-package hash baseline for supply-chain tamper detection, and an optional plugin-tool call gate.'
   zh: '为了您的电脑安全，装插件前先体检：静态扫描恶意模式（外传/凭据/混淆/持久化）与高权限误用，覆盖传递依赖与官方包哈希基线（防供应链篡改），可选插件工具调用闸。'
+  ja: 信頼する前にサードパーティのプラグインを精査します。悪意あるパターン（情報の持ち出し、資格情報へのアクセス、難読化、常駐化）と過剰な権限のパス利用を静的にスキャンし、推移的な依存関係まで確認、公式パッケージのハッシュを基準にサプライチェーンの改ざんを検出し、任意でプラグインのツール呼び出しにゲートを設けられます。

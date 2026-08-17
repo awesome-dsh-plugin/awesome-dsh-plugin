@@ -4,3 +4,4 @@ category: memory
 description:
   en: BM25 keyword-based memory recall.
   zh: 基于 BM25 关键词检索的记忆召回。
+  ja: BM25 のキーワードに基づくメモリの想起。

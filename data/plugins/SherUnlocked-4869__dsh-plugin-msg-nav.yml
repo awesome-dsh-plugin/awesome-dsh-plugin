@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Conversation node navigation rail for the DSH Web UI: one dash per user message on the right edge, reading-position tracking, hover preview card, click-to-jump with highlight line, sliding window, and auto-hide.'
   zh: 对话节点导航条：对话区右缘一列短横线节点对应每条用户消息，支持阅读位置跟踪、悬停预览卡片、点击跳转高亮、滑动窗口与自动隐藏。
+  ja: DSH Web UI 向けの会話ノードのナビゲーションレール。右端にユーザーメッセージ 1 件につき 1 本のダッシュを表示し、読んでいる位置の追跡、ホバーのプレビューカード、ハイライト行つきのクリックジャンプ、スライディングウィンドウ、自動非表示に対応します。

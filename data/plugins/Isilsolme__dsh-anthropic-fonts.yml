@@ -4,3 +4,4 @@ category: theme
 description:
   en: Anthropic Sans, Serif, and Mono fonts for the DSH Web UI, with Source Han fallback for CJK.
   zh: Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
+  ja: DSH Web UI 向けの Anthropic Sans / Serif / Mono フォント。CJK には Source Han をフォールバックとして使います。

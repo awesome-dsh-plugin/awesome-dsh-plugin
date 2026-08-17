@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Workspace-safe Office tools for agents: create/read Word, create/read/update Excel, and create/read PowerPoint decks with PNG/JPG/GIF image placement.'
   zh: 面向 agent 的工作区安全 Office 工具集：创建/读取 Word、创建/读取/更新 Excel、创建/读取 PowerPoint，并支持 PNG/JPG/GIF 图片排版。
+  ja: エージェント向けの、ワークスペース内で安全に動く Office ツール。Word の作成/読み取り、Excel の作成/読み取り/更新、PowerPoint の作成/読み取りに対応し、PNG/JPG/GIF の画像配置もできます。

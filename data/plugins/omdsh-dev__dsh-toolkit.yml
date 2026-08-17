@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Zero-dependency toolkit: time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema — ten deterministic tools in one install.'
   zh: 零依赖工具包：time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十件套一键安装。
+  ja: 依存関係ゼロのツールキット。time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema の決定論的なツール 10 種を 1 回のインストールで導入します。

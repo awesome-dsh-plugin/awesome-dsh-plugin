@@ -4,3 +4,4 @@ category: notify
 description:
   en: ACP bridge between BitFun and DSH.
   zh: BitFun 与 DSH 的 ACP 交互对接。
+  ja: BitFun と DSH をつなぐ ACP ブリッジ。

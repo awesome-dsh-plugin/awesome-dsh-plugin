@@ -4,3 +4,4 @@ category: vision
 description:
   en: 'Transparent image guard for text-only routes: paste images without the 400 session deadlock, plus a vision_analyze tool for OCR/PDF/docx/pptx/video.'
   zh: 纯文本路由的透明图片护栏：贴图不再 400 卡死会话，附带 vision_analyze 工具（OCR/PDF/docx/pptx/视频）。
+  ja: テキスト専用経路向けの透過的な画像ガード。画像を貼っても 400 エラーでセッションが固まらなくなり、OCR/PDF/docx/pptx/動画に対応した vision_analyze ツールも使えます。

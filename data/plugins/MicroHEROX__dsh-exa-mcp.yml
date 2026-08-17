@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Mounts the hosted Exa search MCP endpoint (https://mcp.exa.ai/mcp) through the in-box @deepseek-ai/dsh-mcp-client bridge: web_search_exa and web_fetch_exa tools, anonymous on the free tier or with your own EXA_API_KEY.'
   zh: 通过内置的 @deepseek-ai/dsh-mcp-client 桥接接入托管的 Exa 搜索 MCP 端点（mcp.exa.ai）：web_search_exa 与 web_fetch_exa 工具，免费额度匿名可用，设置 EXA_API_KEY 可解锁更高限额。
+  ja: ホスト型の Exa 検索 MCP エンドポイント（https://mcp.exa.ai/mcp）を、同梱の @deepseek-ai/dsh-mcp-client ブリッジ経由でマウントします。web_search_exa と web_fetch_exa のツールを、無料枠の匿名利用でも自前の EXA_API_KEY でも使えます。

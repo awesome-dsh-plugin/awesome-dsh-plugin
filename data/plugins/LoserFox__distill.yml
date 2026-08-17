@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'Automatic conversation distillation: background subagent reflection + skill create/update.'
   zh: 自动对话蒸馏：后台 subagent 反省 + 技能 create/update。
+  ja: 会話の自動蒸留。バックグラウンドのサブエージェントが振り返りを行い、スキルを作成・更新します。

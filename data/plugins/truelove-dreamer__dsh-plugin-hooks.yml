@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Claude-Code-style lifecycle hooks: configured shell commands run before/after model tool calls with a JSON payload on stdin; a non-zero pre-tool exit blocks the call.'
   zh: Claude Code 风格生命周期 hooks：工具调用前后自动执行 shell 命令（stdin 收 JSON payload），pre-tool 非零退出即阻断调用。
+  ja: Claude Code 風のライフサイクル hooks。設定したシェルコマンドがモデルのツール呼び出しの前後に、JSON のペイロードを標準入力から受け取って実行されます。ツール実行前のコマンドが 0 以外で終了すると、その呼び出しは中止されます。

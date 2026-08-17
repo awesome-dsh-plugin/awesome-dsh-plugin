@@ -4,3 +4,4 @@ category: ui
 description:
   en: A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.
   zh: Rust/ratatui 终端客户端，直接使用 DSH SDK JSON-RPC 协议，支持独立运行或作为 profile bundle 加载。
+  ja: DSH の SDK の JSON-RPC プロトコルを直接話す Rust/ratatui 製のターミナルクライアント。単体でもプロファイルバンドルとしても動きます。

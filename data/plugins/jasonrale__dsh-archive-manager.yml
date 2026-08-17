@@ -4,3 +4,4 @@ category: session
 description:
   en: 'Archived-session manager for DSH Web UI: reopen an archived session and keep chatting, unarchive it back in place, or hard-delete a session — grouped panel with message search and native view sync.'
   zh: DSH Web UI 的归档会话管理器：重新打开已归档会话并继续对话、取消归档恢复原位、彻底删除会话，支持分组浏览、消息搜索与原生视图同步。
+  ja: DSH Web UI 向けのアーカイブ済みセッション管理。アーカイブしたセッションを開いて会話を続ける、元の場所に戻す、完全に削除する、といった操作ができます。メッセージ検索とネイティブ表示への同期を備えたパネルにまとまっています。

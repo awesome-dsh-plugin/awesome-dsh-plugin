@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'PDF parsing tools for DSH: pdf_info, pdf_extract_text, and pdf_render_page with dual pdfjs and built-in rendering engines, including system-font rendering for PDFs with non-embedded CJK fonts.'
   zh: DSH 的 PDF 解析工具：pdf_info、pdf_extract_text、pdf_render_page 三件套，pdfjs 与自研渲染器双引擎，未内嵌 CJK 字体的 PDF 也能用系统字体渲染出图。
+  ja: DSH 向けの PDF 解析ツール。pdf_info、pdf_extract_text、pdf_render_page を pdfjs と内蔵の 2 つの描画エンジンで提供し、CJK フォントが埋め込まれていない PDF はシステムフォントで描画します。

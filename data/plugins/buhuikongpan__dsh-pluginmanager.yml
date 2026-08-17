@@ -4,3 +4,4 @@ category: market
 description:
   en: 'Layered plugin manager for DSH web: native plugins grouped read-only by system/WebUI/tools, user extensions with enable/disable, register, uninstall and editable descriptions.'
   zh: DSH 分层插件管理器：原生插件按系统/WebUI/工具三层只读展示，用户扩展支持停用/启用、补登记、卸载与可编辑描述。
+  ja: DSH web 向けの階層化されたプラグインマネージャー。ネイティブプラグインは system/WebUI/tools に分けて読み取り専用で表示し、ユーザー拡張は有効化/無効化、登録、アンインストール、説明の編集ができます。

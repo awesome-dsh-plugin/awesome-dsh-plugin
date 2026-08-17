@@ -4,3 +4,4 @@ category: ui
 description:
   en: Search and insert workspace file and directory paths with `@`, plus a `/h` menu for reusing prompts from the current session.
   zh: 在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。
+  ja: '`@` でワークスペースのファイルとディレクトリのパスを検索して挿入できるほか、`/h` メニューから現在のセッションのプロンプトを再利用できます。'

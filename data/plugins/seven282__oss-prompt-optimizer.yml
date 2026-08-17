@@ -4,3 +4,4 @@ category: tools
 description:
   en: Optimize a raw instruction into a professional four-section prompt (Role / Task / Context / Format) through the harness llm service, with a composer button, one-click undo, a prompt_optimize tool, and an auto-optimize hook.
   zh: 将原始指令经 harness llm 服务优化为 Role / Task / Context / Format 四段专业提示词；提供输入框一键优化与撤销、prompt_optimize 工具与自动优化钩子。
+  ja: 素の指示を、harness の llm サービスを通じて 4 セクション構成（役割 / タスク / 文脈 / 形式）の本格的なプロンプトに整えます。コンポーザーのボタン、ワンクリックの取り消し、prompt_optimize ツール、自動最適化のフックを備えます。

@@ -4,3 +4,4 @@ category: dev
 description:
   en: 'Local security audit: config, plugin origins, sessions, network exposure — read-only redacted risk report.'
   zh: 本机安全审计：配置/插件来源/会话/网络暴露面，只读脱敏风险报告。
+  ja: ローカルのセキュリティ監査。設定、プラグインの出どころ、セッション、ネットワークの露出を調べ、秘匿処理したリスクレポートを読み取り専用で出します。

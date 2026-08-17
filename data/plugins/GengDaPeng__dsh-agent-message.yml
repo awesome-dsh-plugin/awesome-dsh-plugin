@@ -4,3 +4,4 @@ category: session
 description:
   en: Cross-session agent messaging for DeepSeek Harness with session discovery, offline delivery, delivery receipts, and sender-session navigation.
   zh: DeepSeek Harness 跨会话 Agent 通信：支持会话发现、离线投递、投递回执与发送方会话导航。
+  ja: DeepSeek Harness のセッション間エージェントメッセージング。セッションの発見、オフライン配信、配信レシート、送信元セッションへの移動に対応します。

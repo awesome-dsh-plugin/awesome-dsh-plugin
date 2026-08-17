@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Mobile adaptation for the DSH Web UI on narrow screens: reveal drawer with the chat layer on top, drag gestures, bottom-sheet settings panel, composer and header fixes, zero desktop impact.'
   zh: DSH Web 移动端适配：窄屏下聊天页在上/侧栏在下的 reveal 抽屉、拖动手势、设置面板底部卡片上滑、composer 与头部修复，桌面端零影响。
+  ja: 狭い画面での DSH Web UI のモバイル対応。チャット層を上に重ねて開くドロワー、ドラッグ操作、ボトムシート形式の設定パネル、コンポーザーとヘッダーの修正を、デスクトップに影響を与えずに提供します。

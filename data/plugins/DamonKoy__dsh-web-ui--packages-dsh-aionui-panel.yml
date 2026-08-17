@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Right-panel system for the dsh web GUI: a pixel-faithful AionUi Explorer + Preview (file tree, diff view, preview).'
   zh: dsh web GUI 右侧面板系统：像素级还原 AionUi 的资源树 + 预览（文件树、差异视图、预览）。
+  ja: dsh web GUI 向けの右パネル基盤。AionUi の Explorer ＋ Preview をピクセル単位で忠実に再現します（ファイルツリー、差分表示、プレビュー）。
