@@ -1,4 +1,11 @@
 {
+ "https://github.com/Airmetro/dsh-update-checker": [
+  "https://raw.githubusercontent.com/Airmetro/dsh-update-checker/main/assets/screenshots/01-banner-update-zh.png",
+  "https://raw.githubusercontent.com/Airmetro/dsh-update-checker/main/assets/screenshots/02-banner-update-en.png",
+  "https://raw.githubusercontent.com/Airmetro/dsh-update-checker/main/assets/screenshots/03-banner-plugins.png",
+  "https://raw.githubusercontent.com/Airmetro/dsh-update-checker/main/assets/screenshots/04-settings-zh.png",
+  "https://raw.githubusercontent.com/Airmetro/dsh-update-checker/main/assets/screenshots/05-settings-en.png"
+ ],
  "https://github.com/sanqiPanax/dsh-sticker-board": [
   "https://raw.githubusercontent.com/sanqiPanax/dsh-sticker-board/master/docs/screenshot-dock.png"
  ],
