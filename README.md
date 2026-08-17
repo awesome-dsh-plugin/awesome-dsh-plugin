@@ -348,6 +348,7 @@ dsh plugin --profile web add dshmarket
 - [zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme) - Catppuccin theme plugin: Latte, Frappé, Macchiato, and Mocha skins for the DSH Web theme runtime.
 - [zhijun-dai/dsh-Fonts](https://github.com/zhijun-dai/dsh-Fonts) - Font system plugin: OFL webfont presets served offline from the plugin, user-imported custom woff2 fonts, and a ctx.fonts registry other plugins can extend.
 - [zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme) - Solarized and Selenized theme plugin: four faithful palettes registered with the DSH Web theme runtime.
+- [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) - A settings-panel skin manager that auto-discovers installed Web UI skins, switches between them in one click, and maintains the profile patch automatically.
 - [zhxqc/dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme) - Web theme and file workspace plugin with global typography controls, @file mentions, a project file tree, Markdown preview, and a resizable side panel.
 
 ### Models & Providers
