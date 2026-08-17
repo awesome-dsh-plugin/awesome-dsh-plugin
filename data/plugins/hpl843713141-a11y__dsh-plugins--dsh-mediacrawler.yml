@@ -1,0 +1,6 @@
+url: https://github.com/hpl843713141-a11y/dsh-plugins/tree/main/dsh-mediacrawler
+name: hpl843713141-a11y/dsh-plugins#dsh-mediacrawler
+category: tools
+description:
+  en: 'MediaCrawler keyword crawls for DSH agents: Douyin and Xiaohongshu content (titles, bodies, comments) saved as local jsonl files.'
+  zh: '为 DSH 智能体提供 MediaCrawler 关键词采集：抖音与小红书内容（标题/正文/评论）落地本地 jsonl 文件。'

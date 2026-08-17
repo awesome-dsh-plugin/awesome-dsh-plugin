@@ -1,0 +1,6 @@
+url: https://github.com/hpl843713141-a11y/dsh-plugins/tree/main/dsh-formatmaster
+name: hpl843713141-a11y/dsh-plugins#dsh-formatmaster
+category: tools
+description:
+  en: 'Offline FormatMaster tools for DSH agents: local OCR for scanned PDFs, document format conversion, PDF info, and file hashing via cli-anything-formatmaster.'
+  zh: '为 DSH 智能体提供 FormatMaster 本地工具：扫描件 PDF 离线 OCR、文档格式转换、PDF 信息与文件哈希，全程本地执行。'

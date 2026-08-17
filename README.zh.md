@@ -603,6 +603,8 @@ dsh plugin --profile web add dshmarket
 - [guo6x/dsh-pilot](https://github.com/guo6x/dsh-pilot) — 零依赖浏览器操控：agent 通过 CDP 驾驶真实 headless Edge/Chrome（导航/点击/输入/按键/JS/截图，8 个 `pilot_*` 工具），Web GUI 内可拖拽驾驶舱面板实时围观——文本优先快照适配纯文本模型，无需 Playwright、无需 API key。
 - [hccccc01333/dsh-excel-chat](https://github.com/hccccc01333/dsh-excel-chat) — 在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。
 - [Hongcheng-LI/dsh-zotero](https://github.com/Hongcheng-LI/dsh-zotero) — 通过 Zotero 本地 API（无需 API Key）操作文献库：检索条目/分类、读元数据与摘要、列附件、读全文（缓存未命中时现场解析 PDF）、下载 PDF、管理笔记。
+- [hpl843713141-a11y/dsh-plugins#dsh-formatmaster](https://github.com/hpl843713141-a11y/dsh-plugins/tree/main/dsh-formatmaster) — 为 DSH 智能体提供 FormatMaster 本地工具：扫描件 PDF 离线 OCR、文档格式转换、PDF 信息与文件哈希，全程本地执行。
+- [hpl843713141-a11y/dsh-plugins#dsh-mediacrawler](https://github.com/hpl843713141-a11y/dsh-plugins/tree/main/dsh-mediacrawler) — 为 DSH 智能体提供 MediaCrawler 关键词采集：抖音与小红书内容（标题/正文/评论）落地本地 jsonl 文件。
 - [htcqp802/dsh-knowledge-base](https://github.com/htcqp802/dsh-knowledge-base) — DSH 通用知识库插件：导入 md/txt/json/yml/docx/pdf、目录化管理、FTS5 全文检索（BM25）、Web 管理界面。
 - [Huang-zhishi/dsh-plugin-call-trace](https://github.com/Huang-zhishi/dsh-plugin-call-trace) — 持久化模型工具调用轨迹记录器：每次工具调用落盘为 JSONL（重启不丢），提供结构化 call_trace 查询工具与 callTraceHistory 服务，支持文件大小轮转，附可选浮层画布 UI。
 - [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 向模型暴露 MineRU 文档解析工具。
