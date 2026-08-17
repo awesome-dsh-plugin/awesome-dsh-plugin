@@ -1,0 +1,6 @@
+url: https://github.com/yangyunsong023/dsh-sxs-anti-bot-http
+name: yangyunsong023/dsh-sxs-anti-bot-http
+category: tools
+description:
+  en: 'Anti-bot HTTP fetch tools hardened by SXS''s production scraping stack (millions of requests/day): UA-pool rotation, retry with exponential backoff, anti-bot wall detection (captcha / verification challenges) and adaptive rate limiting — tools: `sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`.'
+  zh: 反爬 HTTP 工具：UA 池轮换、指数退避重试、反爬墙检测（验证码/安全验证）与自适应限流，提炼自 SXS 生产采集体系（每日数百万请求）——工具：`sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`。
