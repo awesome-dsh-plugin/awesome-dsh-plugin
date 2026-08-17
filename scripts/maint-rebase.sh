@@ -32,16 +32,30 @@ for n in "$@"; do
     # data/screenshots.json is a single JSON object that every screenshot PR
     # appends to, so it collides constantly. Taking main's copy would silently
     # drop the contributor's screenshots — the entire point of their PR — so
-    # merge instead: main's object as the base, this branch's additions on top.
+    # merge it instead.
+    #
+    # This has to be a real three-way merge against the merge-base, not main's
+    # copy with the branch's keys laid over the top. Overlaying resurrects any
+    # key main has since DELETED but the branch still carries: a stale entry URL
+    # from before a repo rename comes back, and build-site rejects it because it
+    # no longer matches a listed entry. Only keys the branch changed relative to
+    # where it forked are the branch's contribution.
     if git diff --name-only --diff-filter=U | grep -qx 'data/screenshots.json'; then
-      git show origin/main:data/screenshots.json > /tmp/shots-base.json 2>/dev/null
+      MB=$(git merge-base origin/main FETCH_HEAD 2>/dev/null)
+      git show "$MB:data/screenshots.json" > /tmp/shots-base.json 2>/dev/null || echo '{}' > /tmp/shots-base.json
+      git show origin/main:data/screenshots.json > /tmp/shots-ours.json 2>/dev/null
       git show FETCH_HEAD:data/screenshots.json > /tmp/shots-theirs.json 2>/dev/null
       if node -e '
         const fs = require("fs")
-        const base = JSON.parse(fs.readFileSync("/tmp/shots-base.json", "utf8"))
-        const theirs = JSON.parse(fs.readFileSync("/tmp/shots-theirs.json", "utf8"))
-        for (const [k, v] of Object.entries(theirs)) base[k] = v
-        const sorted = Object.fromEntries(Object.keys(base).sort().map((k) => [k, base[k]]))
+        const read = (f) => { try { return JSON.parse(fs.readFileSync(f, "utf8")) } catch { return {} } }
+        const base = read("/tmp/shots-base.json")
+        const ours = read("/tmp/shots-ours.json")
+        const theirs = read("/tmp/shots-theirs.json")
+        const same = (a, b) => JSON.stringify(a) === JSON.stringify(b)
+        const out = { ...ours }
+        for (const [k, v] of Object.entries(theirs)) if (!same(base[k], v)) out[k] = v
+        for (const k of Object.keys(base)) if (!(k in theirs) && k in out) delete out[k]
+        const sorted = Object.fromEntries(Object.keys(out).sort().map((k) => [k, out[k]]))
         fs.writeFileSync("data/screenshots.json", JSON.stringify(sorted, null, 1) + "\n")
       ' 2>/dev/null; then
         git add data/screenshots.json
