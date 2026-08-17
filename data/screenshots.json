@@ -2,6 +2,10 @@
  "https://github.com/030611/qiushi-dsh-evidence-audit": [
   "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
  ],
+ "https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer": [
+  "https://raw.githubusercontent.com/7dgroup-ai/dsh-skill-7d-code-reviewer/main/screenshots/skills.png",
+  "https://raw.githubusercontent.com/7dgroup-ai/dsh-skill-7d-code-reviewer/main/screenshots/report-preview.png"
+ ],
  "https://github.com/263311487-ux/dsh-verify": [
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/report-screenshot.png",
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/visual-diff.png"

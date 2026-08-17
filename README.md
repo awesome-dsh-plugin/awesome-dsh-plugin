@@ -851,6 +851,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Skills
 
+- [7dgroup-ai/dsh-skill-7d-code-reviewer](https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer) - Template-driven code review skill: five-step review flow, critical/medium/minor severity grading, four-dimension scoring (quality, security, performance, maintainability), dual text and HTML report output, and an on-demand reference knowledge base.
 - [863683348/dsh-starter-zh](https://github.com/863683348/dsh-starter-zh) - Beginner starter pack for DeepSeek Harness: welcome flow, 0→1 learning path, scenario-based plugin recommendations and a self-check checklist, paired with the dsh-handbook-zh Chinese tutorial repo.
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) - Hook DeepSeek Harness into a Hermes pipeline: dispatch-spec template, model-tier routing, orchestrator-run quality gates, git single-writer rule, as a SKILL.md pack (bundle installable).
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) - Barrage-meme skill distilled from 22,771 real messages in the 6657 live room: wanjiqi-style banter, CS and DOTA cross-memes, player roasting and casting commentary.
