@@ -327,6 +327,11 @@
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/plugin-inventory.png",
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/topology.png"
  ],
+ "https://github.com/chouyong/dsh-fork-diff": [
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-diff/main/assets/fork-diff-desktop.png",
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-diff/main/assets/fork-diff-selector.png",
+  "https://raw.githubusercontent.com/chouyong/dsh-fork-diff/main/assets/fork-diff-mobile.png"
+ ],
  "https://github.com/chouyong/dsh-fork-graph": [
   "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-trigger.png",
   "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-panel.png"
