@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-skill-manager
+name: xingyingyuzhui/dsh-skill-manager
+category: skill
+description:
+  en: 'Manage DeepSeek Harness skills from Settings: list discovered skills, disable without editing SKILL.md, and install/uninstall user-root copies.'
+  zh: '在设置里管理技能：列出已发现的技能、无需改动 SKILL.md 即可整机关闭、安装/卸载用户目录副本。'
