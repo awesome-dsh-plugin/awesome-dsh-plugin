@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-scorecard
+name: 863683348/dsh-plugin-scorecard
+category: market
+description:
+  en: 'Health scorecard for the dsh-plugin ecosystem: quality & security audit with a 0-100 score, A/B/C/D grades, maintenance/documentation/npm/security signals, install-script risk veto, star-ranked catalog sync, rankings and search, exposed as four agent tools.'
+  zh: 插件体检评分卡：为 dsh-plugin 生态提供 0-100 质量评分与 A/B/C/D 等级，覆盖维护活跃度、文档、npm 可装性与安装脚本安全审计（高危一票否决），支持目录同步、榜单与搜索，共四个 agent 工具。
