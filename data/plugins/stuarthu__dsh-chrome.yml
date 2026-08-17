@@ -4,3 +4,4 @@ category: tools
 description:
   en: Chrome side panel that embeds the dsh web UI and lets the agent read the current page, capture HTTP traffic, and drive the browser.
   zh: Chrome 侧边栏内嵌 dsh 网页界面，让 agent 读取当前页面、捕获 HTTP 流量并操作浏览器。
+  ja: 'dsh の Web UI を組み込む Chrome サイドパネル。エージェントが現在のページを読み取り、HTTP 通信をキャプチャし、ブラウザを操作できます。'

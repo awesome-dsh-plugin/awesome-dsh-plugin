@@ -4,3 +4,4 @@ category: notify
 description:
   en: Checks npm hourly for newer versions of the installed plugins and asks which ones to upgrade.
   zh: 每小时检查 npm 上已安装插件的新版本，并询问升级其中哪些。
+  ja: 'インストール済みプラグインの新しいバージョンを npm で 1 時間ごとに確認し、どれを更新するか尋ねます。'
