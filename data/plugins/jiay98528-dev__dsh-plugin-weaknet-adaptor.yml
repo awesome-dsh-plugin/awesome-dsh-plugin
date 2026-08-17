@@ -1,0 +1,6 @@
+url: https://github.com/jiay98528-dev/dsh-plugin-weaknet-adaptor
+name: jiay98528-dev/dsh-plugin-weaknet-adaptor
+category: model
+description:
+  en: 'Weak-network adaptor: transparent long-backoff model-stream retries (10-min cap), local response replay cache, heartbeat auto-reconnect, and degraded-mode token economy, with a bilingual (zh/en) settings page.'
+  zh: 弱网适配器：模型流式请求的长退避透明重试（上限 10 分钟）、本地响应重放缓存、心跳自动重连、降级模式 token 节流，并提供中英双语设置页。

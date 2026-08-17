@@ -1,0 +1,6 @@
+url: https://github.com/tttwh/dsh-plugin-Audit
+name: tttwh/dsh-plugin-Audit
+category: market
+description:
+  en: 'Installed-plugin catalog for DSH: group plugins by origin (official vs self-installed) in a searchable panel with enable/disable, uninstall, and one-click update.'
+  zh: 装在 DSH 里的插件目录：按来源（官方/自装）分组展示已安装插件，可搜索，支持启用/停用、卸载和一键更新。
