@@ -87,6 +87,16 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
   Must be an `https` `.tgz` on GitHub's own release hosting — the list won't hand users a download link it can't vouch for. / 必须是 GitHub Release 托管的 `https` `.tgz`——列表不会给用户一个无法担保来源的下载链接。
 - Declare official `@deepseek-ai/*` packages as `peerDependencies`, not `dependencies`. / 官方 `@deepseek-ai/*` 包请用 `peerDependencies` 声明。
 
+  ⚠️ **A peer range without an explicit prerelease branch silently excludes every prerelease build of the harness.** node-semver only lets a version's prerelease tag satisfy a range if *some* comparator in that range shares its exact `major.minor.patch` tuple and itself carries a prerelease tag. A broad-looking range like `>=0.0.1-rc.1 <0.2.0` — or even the "match everything" `>=0.0.0-0 <0.2.0-0` — does **not** match `0.1.0-rc.6`: neither has a comparator on the `0.1.0` tuple with a prerelease tag, so it's silently excluded and your users hit an `ERESOLVE` they have to work around by hand. Use an explicit `||` branch that puts a prerelease tag on the matching tuple instead / **不带显式预发布分支的 peer 范围会静默排除 harness 的所有预发布构建。** node-semver 只有当范围里*某个*比较符与该版本的 `major.minor.patch` 元组完全一致、且自身也带预发布标签时，才会放行预发布版本。看起来很宽的范围，比如 `>=0.0.1-rc.1 <0.2.0`，甚至「匹配一切」的 `>=0.0.0-0 <0.2.0-0`，都**匹配不到** `0.1.0-rc.6`——两者在 `0.1.0` 这个元组上都没有带预发布标签的比较符，于是被静默排除，用户 `npm install` 时会遇到 `ERESOLVE`，还得自己手工解决。请改用显式的 `||` 分支，在匹配的元组上带上预发布标签：
+
+  ```jsonc
+  // ❌ looks broad, silently excludes every 0.1.0-* prerelease
+  "peerDependencies": { "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1 <0.2.0" }
+
+  // ✅ explicit prerelease branch on the 0.1.0 tuple
+  "peerDependencies": { "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0" }
+  ```
+
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。
 
 ### What CI checks / CI 会检查什么
