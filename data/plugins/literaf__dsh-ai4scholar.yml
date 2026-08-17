@@ -1,5 +1,5 @@
-url: https://github.com/literaf/ai4scholar-plugin-dsh
-name: literaf/ai4scholar-plugin-dsh
+url: https://github.com/literaf/dsh-ai4scholar
+name: literaf/dsh-ai4scholar
 category: tools
 description:
   en: 'AI4Scholar academic search: 38 tools over Semantic Scholar, PubMed, Google Scholar, arXiv, bioRxiv/medRxiv, and DOI resolution (search, citation graph, authors, recommendations, PDF full text in slices, auto-cite, scientific figures), a unified cross-platform search with de-duplication, an API-key card in Settings, and per-call credit accounting with an `/ai4scholar` balance card.'
