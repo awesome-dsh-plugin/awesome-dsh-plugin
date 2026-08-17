@@ -1,0 +1,90 @@
+name: Re-check gated submissions
+
+# The submission gate rejects repos younger than a day or under ten commits.
+# That verdict is a snapshot: a PR blocked at "0.5 days old" qualifies a few
+# hours later, but nothing re-runs the check, so it sits red until someone
+# pushes. This re-runs `PR check` on open PRs whose gate failed, which in turn
+# re-triggers the gate — it stops the backlog silting up with submissions that
+# already meet the bar.
+#
+# Kept deliberately cheap: one page of runs is indexed by head SHA up front
+# rather than queried per pull request, and MAX_RERUNS bounds each pass. The
+# first version issued two calls per open PR and exhausted the hourly quota.
+
+on:
+  schedule:
+    - cron: '19 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  checks: read
+  pull-requests: read
+
+concurrency:
+  group: regate
+  cancel-in-progress: true
+
+jobs:
+  regate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        env:
+          MAX_RERUNS: '12'
+        with:
+          script: |
+            const { owner, repo } = context.repo
+            const MAX = Number(process.env.MAX_RERUNS)
+
+            // Housekeeping: a busy API quota is a reason to do less this pass,
+            // never a reason to page anyone with a red run. Everything below is
+            // wrapped so the job only fails on a genuine bug.
+            try {
+
+            // One request: recent PR-check runs, indexed by the commit they ran on.
+            const runs = await github.rest.actions.listWorkflowRuns({
+              owner, repo, workflow_id: 'pr-check.yml', per_page: 100,
+            })
+            const runBySha = new Map()
+            for (const r of runs.data.workflow_runs) if (!runBySha.has(r.head_sha)) runBySha.set(r.head_sha, r.id)
+
+            const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
+            let requeued = 0
+            for (const pr of prs) {
+              if (requeued >= MAX) { core.info(`hit MAX_RERUNS=${MAX}, stopping`); break }
+              if (pr.draft) continue
+              const runId = runBySha.get(pr.head.sha)
+              if (!runId) continue // no recent run to re-trigger
+
+              let gate, check
+              try {
+                const { data } = await github.rest.checks.listForRef({ owner, repo, ref: pr.head.sha, per_page: 30 })
+                gate = data.check_runs.find((c) => c.name === 'Submission gate')
+                check = data.check_runs.find((c) => c.name === 'check')
+              } catch (e) {
+                if (e.status === 403) { core.warning('rate limited — stopping early'); break }
+                continue
+              }
+
+              if (gate?.conclusion !== 'failure') continue
+              // A failing `check` means the PR's own content is wrong; time
+              // will not fix that, and re-running just burns quota.
+              if (check && check.conclusion !== 'success') continue
+              if (!/days old|commit\(s\)/.test(gate.output?.summary ?? '')) continue
+
+              try {
+                await github.rest.actions.reRunWorkflow({ owner, repo, run_id: runId })
+                core.info(`#${pr.number}: re-ran PR check`)
+                requeued++
+              } catch (e) {
+                if (e.status === 403) { core.warning('rate limited — stopping early'); break }
+                core.info(`#${pr.number}: could not re-run (${e.status})`)
+              }
+            }
+            core.info(`re-queued ${requeued} pull request(s)`)
+
+            } catch (e) {
+              if (e.status === 403 || e.status === 429) core.warning(`API quota busy — skipping this pass (${e.status})`)
+              else throw e
+            }

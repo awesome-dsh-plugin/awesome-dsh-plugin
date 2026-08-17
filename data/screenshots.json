@@ -553,11 +553,32 @@
  ],
  "https://github.com/wly8691-jpg/knowlp-rag": [
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/demo.png",
+  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/health.png",
+  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/decay.png",
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
  ],
  "https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness": [
   "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-live-proof.gif",
   "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-dark.png",
   "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-light.png"
+ ],
+ "https://github.com/daetz-coder/dsh-multi-chat": [
+  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/01-windows-dual-chat.png",
+  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/02-ipad-dual-chat.png",
+  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/03-windows-triple-chat.png"
+ ],
+ "https://github.com/imkingjh999/dsh-shorts-wall": [
+  "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-stick.png",
+  "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-float.png",
+  "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-minimized.png"
+ ],
+ "https://github.com/hanzhangzzz/dsh-diagram": [
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/dsh-diagram-demo.gif",
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-architecture.png",
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-canvas-flow.png",
+  "https://raw.githubusercontent.com/hanzhangzzz/dsh-diagram/assets/screenshot-chat.png"
+ ],
+ "https://github.com/elves-ai/dsh-web-search-firecrawl": [
+  "https://raw.githubusercontent.com/elves-ai/dsh-web-search-firecrawl/master/docs/firecrawl-settings.png"
  ]
 }
