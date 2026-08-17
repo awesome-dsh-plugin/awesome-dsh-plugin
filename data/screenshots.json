@@ -331,6 +331,10 @@
   "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-trigger.png",
   "https://raw.githubusercontent.com/chouyong/dsh-fork-graph/main/assets/screenshot-panel.png"
  ],
+ "https://github.com/chouyong/dsh-branch-review": [
+  "https://raw.githubusercontent.com/chouyong/dsh-branch-review/main/assets/branch-review-desktop.png",
+  "https://raw.githubusercontent.com/chouyong/dsh-branch-review/main/assets/branch-review-decisions.png"
+ ],
  "https://github.com/cirelir/dsh-change-review": [
   "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/review-tab.png",
   "https://raw.githubusercontent.com/cirelir/dsh-change-review/main/assets/screenshots/per-turn-card.png",
