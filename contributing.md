@@ -90,10 +90,14 @@ What that review looks at / 评审会看：
 1. **Does the code do what the entry claims** — including any numbers or API names in the description. / 代码是否与条目声明一致，包括描述里的数字与 API 名称。
 2. **Is the category right.** / 分类是否正确。
 3. **Is it real, working code** rather than a placeholder or a wrapper around nothing. / 是否是真实可用的代码，而非占位或空壳。
-4. **Is it already covered** by an entry on the list — near-identical forks of a listed plugin are usually not added. / 是否已被现有条目覆盖——与已收录插件近乎相同的分叉通常不再收录。
+4. **Is it already covered** by an entry on the list. Where two plugins do the same thing, whoever got here first keeps the slot — but that is a tiebreaker, not tenure. Being listed is not permanent: entries that stop being maintained, behave badly, or carry obvious defects get removed. So a fork *is* added when it is the better-kept one, or when it genuinely adds something. The rule is not first-come; the rule is whichever is better. / 是否已被现有条目覆盖。两个插件做同一件事时，先来者保留位置——但这只是平局时的排序依据，不是既得利益。收录不是永久的：停止维护、有恶意行为、存在明显缺陷的条目会被移除。所以一个分叉**是可以**被收录的——只要它维护得更好，或者确实做了新东西。规则不是先来后到，规则是谁更好。
 5. **Anything alarming in the source** — obfuscated code, credential exfiltration, surprising install-time behaviour. Being listed is still **not** a security review (see the warning at the top of the README); this is a sanity check, not an audit. / 源码中是否有可疑之处——混淆代码、凭据外传、异常的安装期行为。收录仍**不等于**做过安全审查（见 README 顶部警告），这只是常识性检查，不是审计。
 
 Feedback comes as a PR comment naming exactly what to change. Being sent back for an inaccurate description isn't a rejection of the plugin — fix the line and it goes in. / 反馈会以 PR 评论给出，明确指出要改什么。因描述不准确被打回不是对插件本身的否定——改好那一行即可收录。
+
+**One thing worth saying plainly:** we are not judges of plugin quality, and being on this list — or not being on it — is not a verdict on your work. Plenty of good software will never be here, and a slot here proves nothing beyond meeting the rules above. We have no interest in being that arbiter. The rules exist for one reason: someone landing on this page should be able to install what they pick and have it do what the line said it would. Thanks for bearing with them.
+
+**有一点想说清楚：** 我们不是插件好坏的裁判，收录与否也不代表对你作品的评价。有很多优秀的软件永远不会出现在这里，而出现在这里也仅仅说明它符合上面这些规则，不说明别的。我们无意扮演这个裁判。这些规则只为一件事存在：让打开这个页面的人，装上他挑中的插件后，它确实做描述里写的那件事。感谢理解与配合。
 
 Recommended for a better install experience / 推荐（更好的安装体验）：
 
