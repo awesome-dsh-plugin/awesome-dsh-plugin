@@ -1,0 +1,6 @@
+url: https://github.com/moon09300731/dsh-peak-cost-mode
+name: moon09300731/dsh-peak-cost-mode
+category: notify
+description:
+  en: 'Auto-switches the agent to ultra-compressed caveman-style output during DeepSeek peak-pricing hours (Beijing 09:00–12:00 / 14:00–18:00, price x2) and shows a status badge plus transition toasts.'
+  zh: '在 DeepSeek 高峰计价时段（北京时间 09:00–12:00、14:00–18:00，价格 ×2）自动切换 caveman 超精简输出省 token，标题栏常驻状态徽章，档位切换时弹提醒。'
