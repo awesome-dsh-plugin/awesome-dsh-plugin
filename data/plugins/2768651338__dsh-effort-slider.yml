@@ -2,5 +2,5 @@ url: https://github.com/2768651338/dsh-effort-slider
 name: 2768651338/dsh-effort-slider
 category: ui
 description:
-  en: 'A Claude Code-style reasoning-effort slider for the DSH Web UI: stepless drag, snap-on-release, a WebGL fire trail, and working thinking-effort control for any custom third-party model or provider.'
+  en: 'A Claude Code-style reasoning-effort slider for the DSH Web UI: stepless drag, snap-on-release, a WebGL fire trail, and real, working thinking-effort control for any custom third-party model or provider.'
   zh: 仿 Claude Code 的推理等级滑块：无极拖动、松手吸附、WebGL 火焰跟随，任何自定义第三方模型/提供商都能获得真实生效的思考强度调节。
