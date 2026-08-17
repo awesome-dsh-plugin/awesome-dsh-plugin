@@ -1,0 +1,6 @@
+url: https://github.com/Lion-1209/dsh-plugin-lion-skills
+name: Lion-1209/dsh-plugin-lion-skills
+category: skill
+description:
+  en: 'A developer-focused agent skill suite (in Chinese) mounting 11 workflow skills — code review, debugging, testing, naming, spec writing and more — as a bundled ctx.skills provider.'
+  zh: '面向开发者的中文 agent 技能套件，以 bundled provider 形式提供 11 个工作流技能——代码审查、调试、测试、命名、设计文档、任务拆解等。'
