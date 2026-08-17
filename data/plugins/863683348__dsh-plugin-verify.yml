@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-verify
+name: 863683348/dsh-plugin-verify
+category: dev
+description:
+  en: 'Verification toolkit for DeepSeek Harness agents: evidence-based claim checking against workspace files with line citations, config file validation (JSON/YAML), HTTP URL status checks, npm package checks and GitHub repo submission-readiness checks — complementary to dsh-plugin-gate.'
+  zh: 证据核验工具包：基于工作区文件的行级引证核验 Agent 断言，校验 JSON/YAML 配置、HTTP 链接、npm 包与 GitHub 仓库提交流程就绪度——与 dsh-plugin-gate 互补。

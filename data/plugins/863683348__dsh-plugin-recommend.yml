@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-recommend
+name: 863683348/dsh-plugin-recommend
+category: market
+description:
+  en: 'Plugin recommender for DeepSeek Harness: search and rank DSH plugins from an embedded marketplace catalog by need description, category and tags, with match reasons, plus a live catalog refresh from the awesome-dsh-plugin README.'
+  zh: 插件推荐器：基于内置市场目录，按需求描述、分类与标签检索并排序 DSH 插件，给出匹配理由，支持从 awesome-dsh-plugin 刷新目录。
