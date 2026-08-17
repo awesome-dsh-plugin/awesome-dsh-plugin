@@ -1,0 +1,6 @@
+url: https://github.com/Tang-mm95/dsh-single-instance-guard
+name: Tang-mm95/dsh-single-instance-guard
+category: dev
+description:
+  en: Aborts startup when another live dsh instance holds the same DSH_HOME data directory, preventing the concurrent session-log writes that corrupt transcripts.
+  zh: 检测到其他存活的 dsh 实例占用同一 DSH_HOME 数据目录时中止启动，防止并发写会话日志导致的历史损坏。
