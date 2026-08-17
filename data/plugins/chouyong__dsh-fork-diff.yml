@@ -1,0 +1,6 @@
+url: https://github.com/chouyong/dsh-fork-diff
+name: chouyong/dsh-fork-diff
+category: session
+description:
+  en: 'Read-only parent and sibling session comparison for DSH Web, with message and tool diffs, usage and latency summaries, branch filtering, and click-through navigation.'
+  zh: DSH Web 的只读父分支与兄弟分支比较：展示消息与工具差异、用量与耗时摘要，支持分支筛选和点击跳转。
