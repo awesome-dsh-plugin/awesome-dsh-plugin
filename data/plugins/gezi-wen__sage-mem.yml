@@ -2,5 +2,5 @@ url: https://github.com/gezi-wen/sage-mem
 name: gezi-wen/sage-mem
 category: memory
 description:
-  en: 'File-based cross-session memory for DeepSeek Harness: transparent Markdown memory files with automatic retrieval injection, plus a lossless migration path from Claude Code (CLAUDE.md persona to AGENTS.md, memories to Markdown files).'
-  zh: DeepSeek Harness 文件式跨会话记忆：纯 Markdown 记忆文件 + 自动检索注入，并支持从 Claude Code 无损迁移（CLAUDE.md 人格迁至 AGENTS.md，记忆迁至 Markdown 文件）。
+  en: 'File-based cross-session memory: plain Markdown memory files with automatic retrieval injection, format-compatible with Claude Code''s CLAUDE.md and memory files, so migrating is a manual file copy.'
+  zh: 基于文件的跨会话记忆：纯 Markdown 记忆文件，检索结果自动注入；格式与 Claude Code 的 CLAUDE.md 及记忆文件兼容，迁移即手工复制文件。
