@@ -546,6 +546,7 @@ dsh plugin --profile web add dshmarket
 - [ruby1304/dsh-vision-subagent](https://github.com/ruby1304/dsh-vision-subagent) — 纯文本模型的视觉补全：vision_agent 工具把读图委托给可配 MiniMax/Kimi 路由的一次性子代理，另有 Codex 式输入框粘贴桥——图片在隔离上下文分析，只有文本进入主会话。
 - [scd13150/dsh-cognition](https://github.com/scd13150/dsh-cognition) — 给 DSH agent 的项目记忆:历史相似编辑作为先例出现、越界修改被 scope 锁拦下、认知跨会话持续积累(47 次上游验收修复、去 gold 化 20/20)。
 - [songoao25/dsh-auto-compact](https://github.com/songoao25/dsh-auto-compact) — 为 DSH 智能体预设注入增强的自动压缩默认值：一键应用调优的触发阈值/保留比例与分模型策略，幂等执行、自动备份、可回滚。
+- [tancheng33/dsh-yogacara](https://github.com/tancheng33/dsh-yogacara) — 以唯识心所与种子藏记录 agent 的状态，并以第一人称倾向写回提示词。
 - [dsh-engramory](https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin) — 把 Engramory 策展式记忆纪律做成可安装插件（[npm: dsh-engramory](https://www.npmjs.com/package/dsh-engramory)）：通过 `ctx.tools.guard()` 对 `MEMORY.md` 索引施加确定性的 200 行 / 25KB 上限（增长即拒、缩小的重写一律放行），并把协议注册为运行时 skill。记忆库是纯 markdown、一条事实一个文件，与 Claude Code、Codex、Kiro、OpenClaw 共用。
 - [truelove-dreamer/dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) — 跨会话记忆：全文检索所有历史会话（复用 ctx.sessionQuery 的 SQLite FTS5 索引），把最强匹配片段带回当前上下文。
 - [Tyan66666/billion-context-dsh](https://github.com/Tyan66666/billion-context-dsh) — 模型驱动的上下文压缩（Active Context Pruning）：由模型决定何时压缩、压缩什么。
