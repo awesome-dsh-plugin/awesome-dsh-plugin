@@ -706,8 +706,7 @@
  ],
  "https://github.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL": [
   "https://raw.githubusercontent.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL/main/assets/readme/accounts-demo.png"
- ]
- ,
+ ],
  "https://github.com/534119219/dsh-messaging": [
   "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/sidebar.png",
   "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/dialog.png"
@@ -716,5 +715,8 @@
   "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/main-ui.jpg",
   "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/installed-view.jpg",
   "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/sidebar-entry.jpg"
+ ],
+ "https://github.com/izwarm195/dsh-net-tools": [
+  "https://raw.githubusercontent.com/izwarm195/dsh-net-tools/main/assets/net_fetch-demo.png"
  ]
 }
