@@ -1,0 +1,6 @@
+url: https://github.com/miiaowuwu/dsh-event-sounds
+name: miiaowuwu/dsh-event-sounds
+category: session
+description:
+  en: 'Plays your chosen sound effects when a session ends, options pop up, permission is requested, or generation stops.'
+  zh: 语音控制插件：在会话结束、弹出选项、请求许可或停止生成时播放指定音效。
