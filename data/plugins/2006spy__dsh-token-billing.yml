@@ -1,0 +1,6 @@
+url: https://github.com/2006spy/dsh-token-billing
+name: 2006spy/dsh-token-billing
+category: notify
+description:
+  en: 'Real-time token billing for DSH web: official DeepSeek CNY pricing with automatic peak/off-peak switching, hourly price sync from the official site, visual custom model prices, and multi-currency fallback.'
+  zh: DSH Web 实时 token 计费插件：官网人民币价直接计费、高峰/错峰自动切换、价格实时跟随官网、可视化自定义模型价格、多币种兜底。

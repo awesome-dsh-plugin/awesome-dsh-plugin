@@ -911,6 +911,7 @@ dsh plugin --profile web add dshmarket
 ### Notifications & Integrations
 
 - [117BS/dsh-perlica-ding](https://github.com/117BS/dsh-perlica-ding) - Perlica (Arknights: Endfield) themed tiered sound notifications: plan-ready, task-done, needs-your-input, and error tones; silent for plain chat, system-level playback (works in background), cross-platform (Windows/macOS/Linux), custom TTS sounds.
+- [2006spy/dsh-token-billing](https://github.com/2006spy/dsh-token-billing) - Real-time token billing for DSH web: official DeepSeek CNY pricing with automatic peak/off-peak switching, hourly price sync from the official site, visual custom model prices, and multi-currency fallback.
 - [AbcdefgXW/dsh-msg-hub](https://github.com/AbcdefgXW/dsh-msg-hub) - IM channel bridge: WeChat (ilinkai) / QQ / Feishu with proactive push — wake the channel bot from scheduled tasks and deliver AI replies to your phone.
 - [AI-Galaxy-GPU/dsh-sound](https://github.com/AI-Galaxy-GPU/dsh-sound) - Per-event sound notifications: turn completion, approval, question, plan-review, goal-blocked, and task-failure each get their own sound and volume, configurable in the Web UI (built-in synth, mute, or local audio file).
 - [Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) - Voice-announce the final reply on Windows (SAPI5 natural voices) and macOS (system voice); skips reasoning and tool calls, one-line npm install.
