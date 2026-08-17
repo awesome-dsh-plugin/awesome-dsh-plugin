@@ -1,0 +1,56 @@
+name: Re-check gated submissions
+
+# The submission gate rejects repos younger than a day or under ten commits.
+# That verdict is a snapshot: a PR blocked at "0.5 days old" qualifies a few
+# hours later, but nothing re-runs the check, so it sits red until someone
+# pushes. This re-runs `PR check` on open PRs whose gate failed, which in turn
+# re-triggers the gate — cheap, and it stops the backlog from silting up with
+# submissions that already meet the bar.
+
+on:
+  schedule:
+    - cron: '19 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  checks: read
+  pull-requests: read
+
+concurrency:
+  group: regate
+  cancel-in-progress: true
+
+jobs:
+  regate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo
+            const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
+            let requeued = 0
+            for (const pr of prs) {
+              if (pr.draft) continue
+              const { data } = await github.rest.checks.listForRef({ owner, repo, ref: pr.head.sha, per_page: 100 })
+              const gate = data.check_runs.find((c) => c.name === 'Submission gate')
+              const check = data.check_runs.find((c) => c.name === 'check')
+              // Only age/commit rejections are worth retrying; a failing `check`
+              // means the PR's own content is wrong and time will not fix it.
+              if (gate?.conclusion !== 'failure') continue
+              if (check && check.conclusion !== 'success') continue
+              if (!/days old|commit\(s\)/.test(gate.output?.summary ?? '')) continue
+
+              const runs = await github.rest.actions.listWorkflowRunsForRepo({ owner, repo, head_sha: pr.head.sha, per_page: 20 })
+              const run = runs.data.workflow_runs.find((r) => r.name === 'PR check')
+              if (!run) continue
+              try {
+                await github.rest.actions.reRunWorkflow({ owner, repo, run_id: run.id })
+                core.info(`#${pr.number}: re-ran PR check`)
+                requeued++
+              } catch (e) {
+                core.info(`#${pr.number}: could not re-run (${e.status})`)
+              }
+            }
+            core.info(`re-queued ${requeued} pull request(s)`)
