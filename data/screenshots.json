@@ -639,6 +639,12 @@
   "https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/main/maid-whale-webui/preview/light.webp",
   "https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/main/maid-whale-webui/preview/dark.webp"
  ],
+ "https://github.com/zdx8637-gitdog/dshmobile/tree/main/plugins/dshmobile-plugin": [
+  "https://raw.githubusercontent.com/zdx8637-gitdog/dshmobile/main/docs/images/plugin-panel.jpg",
+  "https://raw.githubusercontent.com/zdx8637-gitdog/dshmobile/main/docs/images/phone-1.jpg",
+  "https://raw.githubusercontent.com/zdx8637-gitdog/dshmobile/main/docs/images/phone-2.jpg",
+  "https://raw.githubusercontent.com/zdx8637-gitdog/dshmobile/main/docs/images/phone-3.jpg"
+ ],
  "https://github.com/zer0zio-stack/dsh-opencode-go-quota": [
   "https://raw.githubusercontent.com/zer0zio-stack/dsh-opencode-go-quota/main/assets/screenshot-deepseek-balance.png",
   "https://raw.githubusercontent.com/zer0zio-stack/dsh-opencode-go-quota/main/assets/screenshot-opencode-go-limit.png"
