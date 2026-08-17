@@ -917,6 +917,7 @@ dsh plugin --profile web add dshmarket
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) — 在不合并对话历史的前提下，将多个独立 DSH Session 与 provider-backed 成员组成持久原生 Room，支持绑定精确成员身份的行首 `@` 提及、定向投递、广播和 Leader 权限控制。
 - [Jesse-njx/dsh-routines](https://github.com/Jesse-njx/dsh-routines) — 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
 - [jiezeng2004-design/dsh-requirements-alignment](https://github.com/jiezeng2004-design/dsh-requirements-alignment) — 运行时需求漂移防护，在长任务执行过程中保持 DSH Agent 与用户确认的目标、约束和决策一致。
+- [jingzhao-l/iterate-plugin](https://github.com/jingzhao-l/iterate-plugin) — 把 iterate 技能跑成自主闭环：规划、并行审查、原子修复、验证、循环、自动停止，并支持纯评审的 dry-run 模式与元评审最终报告。
 - [JohnXu22786/file-planning](https://github.com/JohnXu22786/file-planning) — 磁盘持久化的执行规划插件：以 .trail 目录承载里程碑/步骤状态机、依赖标注、审计事件与复盘纪要，提供 dsh 工具、CLI 与技能三种接口。
 - [JohnXu22786/task-board](https://github.com/JohnXu22786/task-board) — 事件溯源跨会话工作台账：任务登记、跟踪与结算，完整审计历史、看板导出，并将石板摘要注入每一轮模型上下文。
 - [Jungod1121/dsh-anchored-standard](https://github.com/Jungod1121/dsh-anchored-standard) — V4 Pro 两阶段 agent 预设：首轮仅 bash+read 完成极简开局，首个工具调用或回复后恢复 Standard 完整工具目录；以安装器 bundle 与手动预设目录双形态发布。
