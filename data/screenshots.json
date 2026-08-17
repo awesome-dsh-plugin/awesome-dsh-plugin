@@ -555,9 +555,14 @@
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/demo.png",
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
  ],
- "https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness": [
+"https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness": [
   "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-live-proof.gif",
   "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-dark.png",
   "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-light.png"
+ ],
+ "https://github.com/daetz-coder/dsh-multi-chat": [
+  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/01-windows-dual-chat.png",
+  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/02-ipad-dual-chat.png",
+  "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/03-windows-triple-chat.png"
  ]
 }
