@@ -598,5 +598,10 @@
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/chat.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-front.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-back.png"
+ ],
+ "https://github.com/WenhongPan/dsh-projects": [
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/picker.webp",
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/create.webp",
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/native.webp"
  ]
 }
