@@ -1,0 +1,6 @@
+url: https://github.com/SZMY-haruhi/dsh-tavily
+name: SZMY-haruhi/dsh-tavily
+category: tools
+description:
+  en: Tavily web search for DSH with a settings toggle, keyless by default, and a connection test.
+  zh: 为 DSH 提供 Tavily 网页搜索：设置开关、默认无 Key，以及连通测试。
