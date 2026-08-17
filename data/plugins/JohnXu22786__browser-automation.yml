@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/browser-automation
+name: JohnXu22786/browser-automation
+category: tools
+description:
+  en: "Real-browser automation for dsh via an MCP server (Playwright core): navigate, click, fill, type, screenshot, and act on accessibility snapshots with numbered references - all 22 web_* tools re-exposed to the harness over stdio."
+  zh: "dsh 的真实浏览器自动化:基于 Playwright 的 MCP 服务,提供导航、点击、填写、输入、截图与带编号引用的无障碍快照操作,22 个 web_* 工具经 stdio 接入 Agent。"
