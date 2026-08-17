@@ -1014,6 +1014,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Notifications & Integrations
 
+- [534119219/chicheng-push](https://github.com/534119219/chicheng-push) - Multi-channel push for DeepSeek Harness: Server酱, PushPlus, Bark, DingTalk, WeCom, Telegram, Feishu, ntfy, custom webhooks and more, configurable from the settings panel and callable by other plugins via the pushNotifier service.
 - [534119219/dsh-messaging](https://github.com/534119219/dsh-messaging) - Unified messaging gateway for DeepSeek Harness: 27 IM platforms (Telegram, QQ, WeChat, Discord, WhatsApp, Feishu and more) in one plugin, with QR scan-to-authorize, per-platform workspaces, slash commands, and a web setup dialog.
 - [AbcdefgXW/dsh-msg-hub](https://github.com/AbcdefgXW/dsh-msg-hub) - IM channel bridge: WeChat (ilinkai) / QQ / Feishu with proactive push — wake the channel bot from scheduled tasks and deliver AI replies to your phone.
 - [alvinunreal/openpets#dsh](https://github.com/alvinunreal/openpets/tree/main/packages/dsh) - Bridges DeepSeek Harness lifecycle status, errors, and approval requests to a locally running OpenPets desktop companion.
