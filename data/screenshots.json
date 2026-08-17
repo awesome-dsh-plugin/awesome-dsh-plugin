@@ -513,5 +513,10 @@
  ],
  "https://github.com/2768651338/dsh-plugin-manager": [
   "https://raw.githubusercontent.com/2768651338/dsh-plugin-manager/main/assets/preview.png"
+ ],
+ "https://github.com/v587d/dsh-opencode-go-usage": [
+  "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/custom-footer.png",
+  "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/usage-detail.png",
+  "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/set-cookie-wid.png"
  ]
 }
