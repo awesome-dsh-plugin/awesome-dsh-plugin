@@ -60,8 +60,14 @@ async function hasBundle(repo, sub) {
   }
   const tree = await api(`repos/${repo}/git/trees/HEAD?recursive=1`)
   if (tree.status !== 200) return null
-  const pkgs = (tree.body?.tree ?? []).filter((t) => t.path?.endsWith('package.json')).map((t) => t.path).slice(0, MAX_TREE_PKGS)
-  if (!pkgs.length) return false
+  // A recursive tree is capped by the API (~100k entries / 7MB) and says so with
+  // `truncated` while still returning 200. A partial listing, or one with more
+  // package.json files than the cap reads, is doubt, not evidence — reading it as
+  // "no bundle" would flag a healthy entry as unbundled. Inconclusive, not absent.
+  if (tree.body?.truncated) return null
+  const found = (tree.body?.tree ?? []).filter((t) => t.path?.endsWith('package.json')).map((t) => t.path)
+  if (!found.length) return false
+  const pkgs = found.slice(0, MAX_TREE_PKGS)
   for (const p of pkgs) {
     const f = await api(`repos/${repo}/contents/${p}`)
     if (f.status !== 200 || !f.body?.content) continue
@@ -69,6 +75,7 @@ async function hasBundle(repo, sub) {
       if (JSON.parse(b64(f.body.content)).dsh?.bundle) return true
     } catch {}
   }
+  if (found.length > pkgs.length) return null
   return false
 }
 
