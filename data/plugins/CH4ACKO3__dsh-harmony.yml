@@ -1,0 +1,6 @@
+url: https://github.com/CH4ACKO3/dsh-harmony
+name: CH4ACKO3/dsh-harmony
+category: dev
+description:
+  en: Modifies DSH plugin code at runtime, with ordered patches, inspection, and hot reload.
+  zh: 在运行时修改 DSH 插件代码，并提供 Patch 排序、检查和热重载。

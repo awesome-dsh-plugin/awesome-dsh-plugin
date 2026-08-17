@@ -1,0 +1,6 @@
+url: https://github.com/didclawapp-ai/DSH-Office
+name: didclawapp-ai/DSH-Office
+category: tools
+description:
+  en: Create, read, and edit PPTX, DOCX, XLSX, and PDF via the local zagens-office CLI as office_schema / office_write / office_edit / office_read tools.
+  zh: 通过本机 zagens-office CLI 读写编辑 PPTX / DOCX / XLSX / PDF，注册为 office_schema / office_write / office_edit / office_read。

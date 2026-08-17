@@ -1,0 +1,6 @@
+url: https://github.com/tsonglew/dsh-workspace-search
+name: tsonglew/dsh-workspace-search
+category: ui
+description:
+  en: 'VS Code-style workspace keyword search tab for dsh-better-sidebar: matches file names and content, grouped by file with line numbers, opens in the sidebar editor.'
+  zh: VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。

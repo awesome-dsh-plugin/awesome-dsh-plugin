@@ -1,0 +1,6 @@
+url: https://github.com/shinjiyu/dsh-plugin-search
+name: shinjiyu/dsh-plugin-search
+category: tools
+description:
+  en: 'Keep the built-in web_search tool without an official DeepSeek API key: disable web-search-deepseek and use Tavily keyless by default.'
+  zh: 不用官方 DeepSeek API 也能用内置 web_search：关掉 web-search-deepseek，默认走 Tavily keyless。

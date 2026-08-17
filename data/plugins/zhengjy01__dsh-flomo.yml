@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-flomo
+name: zhengjy01/dsh-flomo
+category: memory
+description:
+  en: Write notes and memos to flomo (浮墨笔记) from any agent via the flomo_send tool, configured once with the flomo API URL or API Key.
+  zh: 配置一次 flomo API URL / API Key，Agent 即可用 flomo_send 把笔记、摘要、待办写进 flomo（浮墨笔记）。

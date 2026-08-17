@@ -1,0 +1,6 @@
+url: https://github.com/wloops/dsh-git-worktree
+name: wloops/dsh-git-worktree
+category: tools
+description:
+  en: 'Domi-grade git worktree isolation and delivery: permanent worktrees under .dsh-worktrees, ready-for-review / apply / finish / discard lifecycle with conflict handling and safe cleanup (ported from Domi''s production system).'
+  zh: Domi 级 git worktree 隔离与交付：.dsh-worktrees 永久 worktree，ready-for-review / apply / finish / discard 完整生命周期，冲突处理与安全清理（移植自 Domi 生产系统）。

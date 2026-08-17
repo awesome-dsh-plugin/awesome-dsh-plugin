@@ -1,0 +1,6 @@
+url: https://github.com/MicroHEROX/dsh-Kimi-WebBridge
+name: MicroHEROX/dsh-Kimi-WebBridge
+category: tools
+description:
+  en: 'Drive the user''s real browser through the local Kimi WebBridge daemon: navigate, find-tab, snapshot, click, fill, evaluate, CDP, screenshot, network, upload, PDF export and tab-management tools that reuse existing login sessions.'
+  zh: 通过本地 Kimi WebBridge 守护进程驱动用户的真实浏览器：navigate、find-tab、snapshot、click、fill、evaluate、CDP、screenshot、network、upload、PDF 导出与标签管理工具，复用浏览器已登录会话。

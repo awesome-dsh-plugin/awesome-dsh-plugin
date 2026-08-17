@@ -1,0 +1,6 @@
+url: https://github.com/BrambleXu/dsh-revdiff
+name: BrambleXu/dsh-revdiff
+category: dev
+description:
+  en: Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.
+  zh: DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。

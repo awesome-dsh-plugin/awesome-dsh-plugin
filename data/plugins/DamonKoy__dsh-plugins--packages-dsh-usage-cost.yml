@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-usage-cost
+name: DamonKoy/dsh-plugins#dsh-usage-cost
+category: dev
+description:
+  en: Token usage and cost tracking with daily/session budget alerts and a usage_report tool.
+  zh: Token 用量与成本统计：日/会话预算告警 + usage_report 工具。

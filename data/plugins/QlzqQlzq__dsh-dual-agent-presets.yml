@@ -1,0 +1,6 @@
+url: https://github.com/QlzqQlzq/dsh-dual-agent-presets
+name: QlzqQlzq/dsh-dual-agent-presets
+category: workflow
+description:
+  en: 'Installs two selectable Agent Presets: a shell-restricted general-purpose agent and a repository-focused coding agent.'
+  zh: 安装两个可选 Agent Preset：默认不暴露 Shell 的通用 Agent，以及面向真实代码仓库的 Coding Pro。

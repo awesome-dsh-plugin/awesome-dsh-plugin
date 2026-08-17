@@ -1,0 +1,6 @@
+url: https://github.com/EvilIrving/dsh-context-proxy
+name: EvilIrving/dsh-context-proxy
+category: tools
+description:
+  en: 'Thin on-demand context retrieval: context_query / context_slice / context_grep tools that read already-persisted history back with replay-safe citations.'
+  zh: 按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。

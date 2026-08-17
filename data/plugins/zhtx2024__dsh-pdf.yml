@@ -1,0 +1,6 @@
+url: https://github.com/zhtx2024/dsh-pdf
+name: zhtx2024/dsh-pdf
+category: tools
+description:
+  en: 'PDF parsing tools for DSH: pdf_info, pdf_extract_text, and pdf_render_page with dual pdfjs and built-in rendering engines, including system-font rendering for PDFs with non-embedded CJK fonts.'
+  zh: DSH 的 PDF 解析工具：pdf_info、pdf_extract_text、pdf_render_page 三件套，pdfjs 与自研渲染器双引擎，未内嵌 CJK 字体的 PDF 也能用系统字体渲染出图。

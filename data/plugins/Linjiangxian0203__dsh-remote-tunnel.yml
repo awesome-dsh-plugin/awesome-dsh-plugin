@@ -1,0 +1,6 @@
+url: https://github.com/Linjiangxian0203/dsh-remote-tunnel
+name: Linjiangxian0203/dsh-remote-tunnel
+category: dev
+description:
+  en: 'Remote host tunnel manager: runs dsh web on a remote Linux server (systemd supervision, no root needed) behind an auto-reconnecting SSH tunnel; allocates and registers remote ports on the server, multi-user safe, with an audit view.'
+  zh: 远程主机隧道管理器：把 dsh web 跑在远程 Linux 服务器上（systemd 守护、免 root），本地经自动重连的 SSH 隧道访问；远程端口自动分配并在服务器登记留档，支持多人共用与 audit 审查。

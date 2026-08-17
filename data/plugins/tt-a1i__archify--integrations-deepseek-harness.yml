@@ -1,0 +1,6 @@
+url: https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness
+name: tt-a1i/archify#integrations/deepseek-harness
+category: skill
+description:
+  en: Generate validated, self-contained interactive architecture, workflow, sequence, data-flow, and lifecycle diagrams from repositories or system descriptions.
+  zh: 从仓库或系统描述生成经过校验的自包含交互式架构图、流程图、时序图、数据流图和生命周期图。

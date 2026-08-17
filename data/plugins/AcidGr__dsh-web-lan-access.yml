@@ -1,0 +1,6 @@
+url: https://github.com/AcidGr/dsh-web-lan-access
+name: AcidGr/dsh-web-lan-access
+category: ui
+description:
+  en: 'LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.'
+  zh: Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。

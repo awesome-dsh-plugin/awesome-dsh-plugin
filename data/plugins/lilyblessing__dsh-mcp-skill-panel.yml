@@ -1,0 +1,6 @@
+url: https://github.com/lilyblessing/dsh-mcp-skill-panel
+name: lilyblessing/dsh-mcp-skill-panel
+category: ui
+description:
+  en: 'MCP & Skill manager: enable/disable MCP servers and skills from a Settings panel to free context in real time; optional AI middle layer (mcp_search/mcp_call) calls disabled servers on demand, with state-based visibility filtering that keeps user-enabled servers visible.'
+  zh: 'MCP 与技能管理面板：设置页面板实时启停 MCP 服务器与 Skill 释放上下文占用；可选 AI 中间层（mcp_search/mcp_call）按需调用停用服务器，按 server 状态过滤模型可见性（用户打开的保持可见）。'

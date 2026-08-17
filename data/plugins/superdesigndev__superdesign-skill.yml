@@ -1,0 +1,6 @@
+url: https://github.com/superdesigndev/superdesign-skill
+name: superdesigndev/superdesign-skill
+category: skill
+description:
+  en: 'Design skill for UI and marketing graphics on the Superdesign canvas: reads the repo for context, extracts its design system, then generates and iterates branchable design drafts, flow pages, and reusable components through the Superdesign CLI.'
+  zh: 在 Superdesign 画布上做 UI 与营销图的设计技能：先读代码库拿上下文、抽取现有设计系统，再通过 Superdesign CLI 生成并迭代可分支的设计稿、流程页与可复用组件。

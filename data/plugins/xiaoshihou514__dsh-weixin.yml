@@ -1,0 +1,6 @@
+url: https://github.com/xiaoshihou514/dsh-weixin
+name: xiaoshihou514/dsh-weixin
+category: notify
+description:
+  en: Connects dsh to Weixin, with arbitrary file sending support.
+  zh: 通过微信远程控制 DeepSeek Harness，支持任意文件传输。

@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-task-dag
+name: LeemanCheung/dsh-task-dag
+category: ui
+description:
+  en: 'Projection-driven live DAG for a Session''s subagents and durable workflows: status and navigation, deterministic deep-chain layout, fit/pan canvas controls, and current-session node rearrangement.'
+  zh: 由投影驱动的会话子代理与持久工作流实时 DAG：状态与节点导航、深层链路确定性布局、适应/平移画布，以及当前会话内节点拖动重排。

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-skill-pack-security
+name: PerryLink/dsh-skill-pack-security
+category: skill
+description:
+  en: 'Security-audit methodology skill pack plus the plugin_vet supply-chain gate: eight agent skills (secret scan, dependency audit, supply-chain review, prompt-injection review, audit orchestration, threat modeling, vuln intel, incident response) in Chinese and English editions, with an npm provider bundle that mounts the skills and registers the automated plugin_vet pre-install scanner.'
+  zh: 安全审计方法论技能包 + plugin_vet 供应链门禁：八个 agent 技能（密钥扫描、依赖审计、供应链评审、提示注入审查、审计总编排、威胁建模、漏洞情报、事件响应），中英双版本，附 npm provider 包一键挂载并注册自动化 plugin_vet 安装前扫描。

@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-calendar
+name: STARDUSTLC666/dsh-calendar
+category: tools
+description:
+  en: CalDAV calendar tools (list/create/update/delete/search) for Google/iCloud/Nextcloud/custom endpoints, with RRULE expansion.
+  zh: CalDAV 日历插件：查/建/改/删/搜日程，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开。

@@ -1,0 +1,6 @@
+url: https://github.com/btspoony/dsh-llm-fallbacks
+name: btspoony/dsh-llm-fallbacks
+category: model
+description:
+  en: Role-based LLM retry & fallback strategies.
+  zh: 基于角色的模型重试与备用策略。

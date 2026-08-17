@@ -1,0 +1,6 @@
+url: https://github.com/fly233338/dsh-overleaf
+name: fly233338/dsh-overleaf
+category: tools
+description:
+  en: Connect multiple Overleaf projects to DSH through OverleafMCP for browsing, analysis, and Git-based file updates.
+  zh: 通过 OverleafMCP 将多个 Overleaf 项目接入 DSH，支持浏览、分析和通过 Git 写回 LaTeX 文件。

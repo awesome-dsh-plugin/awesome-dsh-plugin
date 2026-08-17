@@ -1,0 +1,6 @@
+url: https://github.com/Ikalus1988/MisakaNet
+name: Ikalus1988/MisakaNet
+category: skill
+description:
+  en: 'Failure-recovery memory: search and record failure-recovery lessons from real engineering sessions, with BM25 + semantic RAG retrieval and a lessons knowledge base.'
+  zh: 失败恢复记忆库：从真实工程会话中搜索和记录失败恢复教训，支持 BM25 + 语义 RAG 检索和知识库管理。

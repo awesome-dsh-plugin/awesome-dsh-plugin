@@ -1,0 +1,140 @@
+<!doctype html>
+<!-- 方案 C：深色开发者风（GitHub dark 系） -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C — Developer Dark · Awesome DSH Plugin</title>
+<style>
+:root{
+  --bg:#0d1117; --surface:#161b22; --surface-2:#1c2430; --border:#30363d; --border-soft:#21262d;
+  --text:#e6edf3; --text-2:#9aa4b2; --text-3:#6e7680;
+  --accent:#ff6b4a; --accent-deep:#e5522f; --accent-soft:rgba(255,107,74,.12);
+  --green:#3fb950;
+  --sans:"Inter","SF Pro Text","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+
+nav{position:sticky;top:0;z-index:10;background:rgba(13,17,23,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--border-soft)}
+.nav-in{display:flex;align-items:center;gap:1.6rem;height:3.5rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-weight:650;font-size:.95rem}
+.nav-links{display:flex;gap:1.3rem;margin-left:auto;font-size:.86rem;color:var(--text-2)}
+.nav-links a:hover{color:var(--text)}
+.lang{font-size:.82rem;color:var(--text-3);border:1px solid var(--border);border-radius:6px;padding:.25rem .6rem}
+
+.hero{padding-block:clamp(2.8rem,7vh,4.4rem) 2rem;text-align:center;
+  background:radial-gradient(ellipse 60% 50% at 50% -10%, rgba(255,107,74,.09), transparent)}
+.hero h1{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:750;letter-spacing:-.03em;line-height:1.12}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{margin-top:.8rem;color:var(--text-2)}
+.hero .count{font-family:var(--mono);font-size:.82rem;color:var(--text-3);margin-top:.4rem}
+.hero .count b{color:var(--green);font-weight:600}
+.searchbar{margin:1.8rem auto 0;max-width:34rem;display:flex;align-items:center;gap:.7rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.75rem 1rem}
+.searchbar:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.searchbar svg{color:var(--text-3)}
+.searchbar input{flex:1;border:none;outline:none;font:inherit;background:none;color:var(--text)}
+.searchbar kbd{font-family:var(--mono);font-size:.7rem;color:var(--text-3);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem}
+
+/* market: terminal line */
+.market{margin:1.4rem auto 0;max-width:34rem;display:flex;align-items:center;gap:.6rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.55rem .8rem;
+  font-family:var(--mono);font-size:.78rem;color:var(--text-2);text-align:left}
+.market .ps{color:var(--green)}
+.market .cmd{color:var(--text)}
+.market .hint{margin-left:auto;flex:none;color:var(--accent);font-family:var(--sans);font-size:.8rem;font-weight:550}
+
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;justify-content:center;padding-block:1.7rem 0}
+.chip{font-size:.82rem;color:var(--text-2);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:.32rem .85rem;transition:all .15s}
+.chip small{color:var(--text-3);font-size:.72rem}
+.chip:hover{border-color:var(--text-3);color:var(--text)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:#0d1117;font-weight:600}
+.chip.active small{color:#0d1117aa}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1rem;padding-block:2rem 3rem}
+.card{background:var(--surface);border:1px solid var(--border-soft);border-radius:10px;padding:1.15rem 1.2rem;
+  display:flex;flex-direction:column;gap:.5rem;transition:all .16s ease}
+.card:hover{border-color:var(--border);background:var(--surface-2);transform:translateY(-1px)}
+.card .top{display:flex;align-items:baseline;gap:.5rem}
+.card h3{font-size:.95rem;font-weight:630;font-family:var(--mono);letter-spacing:-.02em;overflow-wrap:anywhere}
+.card h3 .owner{color:var(--text-3);font-weight:400}
+.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--text-2)}
+.card .stars::before{content:"★ ";color:#e3b341}
+.card p{font-size:.85rem;color:var(--text-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em}
+.card .foot{display:flex;align-items:center;margin-top:.35rem}
+.card .tag{font-family:var(--mono);font-size:.68rem;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:.16rem .6rem}
+.card .install{margin-left:auto;font-size:.78rem;font-weight:600;color:var(--text);background:var(--surface-2);
+  border:1px solid var(--border);border-radius:7px;padding:.36rem .8rem;transition:all .15s}
+.card .install:hover{background:var(--accent);border-color:var(--accent);color:#0d1117}
+
+footer{border-top:1px solid var(--border-soft);padding-block:2rem 3rem;color:var(--text-3);font-size:.82rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav-in">
+  <span class="logo">
+    <svg width="20" height="20" viewBox="76 42 400 400"><g fill="#e6edf3"><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g><rect x="346" y="78" width="88" height="88" rx="14" fill="#ff6b4a" transform="rotate(9 390 122)"/></svg>
+    awesome-dsh-plugin
+  </span>
+  <div class="nav-links"><a href="#">Categories</a><a href="#">dsh-market</a><a href="#">Submit ↗</a><a href="#">GitHub ↗</a></div>
+  <span class="lang">中文</span>
+</div></nav>
+
+<header class="hero wrap">
+  <h1>Every <em>DeepSeek Harness</em> plugin,<br>one command away.</h1>
+  <p>The curated dsh plugin directory — searchable, star-ranked, installable.</p>
+  <p class="count"><b>301</b> plugins · updated daily</p>
+  <div class="searchbar">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+    <input placeholder="Search 301 plugins…">
+    <kbd>/</kbd>
+  </div>
+  <div class="market">
+    <span class="ps">$</span><span class="cmd">dsh plugin add dshmarket</span>
+    <span class="hint">browse in-app with dsh-market →</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="chips">
+    <button class="chip active">All <small>301</small></button>
+    <button class="chip">UI Enhancements <small>63</small></button>
+    <button class="chip">Themes <small>3</small></button>
+    <button class="chip">Sessions <small>22</small></button>
+    <button class="chip">Memory <small>19</small></button>
+    <button class="chip">Tools <small>80</small></button>
+    <button class="chip">Skills <small>4</small></button>
+    <button class="chip">Workflow <small>22</small></button>
+    <button class="chip">Notifications <small>21</small></button>
+    <button class="chip">Models <small>7</small></button>
+    <button class="chip">Dev &amp; Runtime <small>44</small></button>
+    <button class="chip">Fun <small>19</small></button>
+  </div>
+
+  <main class="grid">
+    <article class="card"><div class="top"><h3><span class="owner">zhu1090093659/</span>dsh-web-ui</h3><span class="stars">1699</span></div><p>Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats.</p><div class="foot"><span class="tag">ui</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">liustack/</span>modlens</h3><span class="stars">1152</span></div><p>Vision bridge for text-only models: paste an image, get structured JSON evidence back into the conversation.</p><div class="foot"><span class="tag">tools</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">ccch1mneyyy/</span>dsh-TUI</h3><span class="stars">799</span></div><p>Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.</p><div class="foot"><span class="tag">ui</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">omdsh-dev/</span>DSH-better-sidebar</h3><span class="stars">684</span></div><p>Full sidebar workbench with file rendering and editing, terminal, Git, and subagents; third-party plugins can register tabs.</p><div class="foot"><span class="tag">ui</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">Small-tailqwq/</span>dsh-deep-whale</h3><span class="stars">506</span></div><p>Whale-girl skin series for the DSH Web UI (maid-atelier).</p><div class="foot"><span class="tag">theme</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">Nagi-ovo/</span>dsh-ads</h3><span class="stars">308</span></div><p>Parody ads in 2005-Chinese-web style: sidebar banners, in-chat feeds, corner popups.</p><div class="foot"><span class="tag">fun</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">Anionex/</span>dsh-vision-toolkit</h3><span class="stars">303</span></div><p>Vision tasks for text-only models: intent-aware image Q&amp;A, long-screenshot OCR, structured extraction.</p><div class="foot"><span class="tag">tools</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">NanmiCoder/</span>dsh-agent-teams</h3><span class="stars">223</span></div><p>AgentTeams multi-agent teams.</p><div class="foot"><span class="tag">workflow</span><button class="install">Install</button></div></article>
+    <article class="card"><div class="top"><h3><span class="owner">hust-open-atom-club/</span>oh-dsh</h3><span class="stars">159</span></div><p>Community distribution: TUI, desktop, and Web UI as one bundle with layered install.</p><div class="foot"><span class="tag">dev</span><button class="install">Install</button></div></article>
+  </main>
+</div>
+
+<footer><div class="wrap">
+  <span>© 2026 awesome-dsh-plugin · Not affiliated with DeepSeek</span>
+  <span>Plugins run third-party code — review before installing.</span>
+</div></footer>
+
+</body>
+</html>

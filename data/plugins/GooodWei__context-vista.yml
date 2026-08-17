@@ -1,0 +1,6 @@
+url: https://github.com/GooodWei/context-vista
+name: GooodWei/context-vista
+category: ui
+description:
+  en: A right-side floating panel and /context command for DeepSeek Harness — a live donut chart of context token usage, allocation, and estimated cost.
+  zh: 为 DeepSeek Harness 提供右侧悬浮栏以及 /context 命令，用环形图实时展示当前上下文 token 用量与分配及消费估算。

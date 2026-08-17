@@ -1,0 +1,6 @@
+url: https://github.com/shinjiyu/deepseek-harness-evolver
+name: shinjiyu/deepseek-harness-evolver
+category: tools
+description:
+  en: 'Complement to official Creator mode: stage, validate, live-mount via ctx.plugin, score, and solidify or roll back in-memory tool-plugin trials.'
+  zh: 补充官方创造模式：把内存里试过的小工具插件校验、经 ctx.plugin 热挂、打分后固化到盘上或回滚。

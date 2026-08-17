@@ -1,0 +1,6 @@
+url: https://github.com/guo6x/dsh-pilot
+name: guo6x/dsh-pilot
+category: tools
+description:
+  en: 'Zero-dependency browser control: drive a real headless Edge/Chrome over CDP with 8 `pilot_*` tools (navigate/click/type/keys/eval/screenshot) plus a live draggable cockpit panel in the Web GUI - text-first snapshots for text-only models, no Playwright, no API key.'
+  zh: 零依赖浏览器操控：agent 通过 CDP 驾驶真实 headless Edge/Chrome（导航/点击/输入/按键/JS/截图，8 个 `pilot_*` 工具），Web GUI 内可拖拽驾驶舱面板实时围观——文本优先快照适配纯文本模型，无需 Playwright、无需 API key。

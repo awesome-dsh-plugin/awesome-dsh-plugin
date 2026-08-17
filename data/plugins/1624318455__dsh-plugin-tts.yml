@@ -1,0 +1,6 @@
+url: https://github.com/1624318455/dsh-plugin-tts
+name: 1624318455/dsh-plugin-tts
+category: ui
+description:
+  en: 'Reads assistant replies aloud via free Edge TTS or your own RVC voice models: read-aloud buttons + auto-read, adaptive chunked progressive playback (gapless long reads), one-click voice-pack installs from a registry, and a portable RVC runtime.'
+  zh: 用免费 Edge TTS 或你自己的 RVC 音色朗读 AI 回复：消息朗读与自动朗读、长文自适应分块渐进播放（无缝衔接）、音色包仓库一键安装、便携 RVC 运行时。

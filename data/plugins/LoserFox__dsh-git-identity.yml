@@ -1,0 +1,6 @@
+url: https://github.com/LoserFox/dsh-git-identity
+name: LoserFox/dsh-git-identity
+category: dev
+description:
+  en: Pin Git commits to the environment's own author identity; env-var injection overrides all `git config` settings.
+  zh: git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。

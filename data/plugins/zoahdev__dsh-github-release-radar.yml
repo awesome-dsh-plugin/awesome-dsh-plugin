@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-github-release-radar
+name: zoahdev/dsh-github-release-radar
+category: tools
+description:
+  en: Track releases and stars of any public GitHub repository from inside dsh agents — no API key needed.
+  zh: 让 dsh agent 直接查询任意 GitHub 公开仓库的 Release 与星标变化，无需 API Key。

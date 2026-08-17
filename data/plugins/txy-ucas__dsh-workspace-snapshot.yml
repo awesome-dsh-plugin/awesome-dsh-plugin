@@ -1,0 +1,6 @@
+url: https://github.com/txy-ucas/dsh-workspace-snapshot
+name: txy-ucas/dsh-workspace-snapshot
+category: dev
+description:
+  en: Reports bounded, repository-relative Git status as structured data without staging, committing, or changing branches.
+  zh: 以结构化数据返回有界、相对仓库根的 Git 状态，不暂存、不提交，也不切换分支。

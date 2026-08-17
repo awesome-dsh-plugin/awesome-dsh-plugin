@@ -1,0 +1,6 @@
+url: https://github.com/kw78/dsh-office-tools
+name: kw78/dsh-office-tools
+category: tools
+description:
+  en: 'Workspace-safe Office tools for agents: create/read Word, create/read/update Excel, and create/read PowerPoint decks with PNG/JPG/GIF image placement.'
+  zh: 面向 agent 的工作区安全 Office 工具集：创建/读取 Word、创建/读取/更新 Excel、创建/读取 PowerPoint，并支持 PNG/JPG/GIF 图片排版。

@@ -1,0 +1,6 @@
+url: https://github.com/liguobao/deepseek-harness-remote
+name: liguobao/deepseek-harness-remote
+category: tools
+description:
+  en: 'Secure multi-device remote access for DeepSeek Harness: connect from your phone or browser to your local Harness over an end-to-end encrypted channel (Noise IK with a WebRTC-ready adaptive transport), with device authorization and ApiProxy-only remote capabilities, no shell or arbitrary file access.'
+  zh: DeepSeek Harness 多端安全远程访问：手机或浏览器通过端到端加密通道（Noise IK + 自适应传输）连接本地 Harness，设备授权管理，远程端仅开放 ApiProxy 能力，不提供 Shell 与任意文件访问。

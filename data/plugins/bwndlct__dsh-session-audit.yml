@@ -1,0 +1,6 @@
+url: https://github.com/bwndlct/dsh-session-audit
+name: bwndlct/dsh-session-audit
+category: tools
+description:
+  en: 'Session execution analytics: steps, tool calls, failures, repeated actions, token usage and verification signals, rendered as text/Markdown/JSON reports.'
+  zh: 会话执行分析：步骤、工具调用、失败、重复动作、token 用量与验证信号，输出 text/Markdown/JSON 报告。

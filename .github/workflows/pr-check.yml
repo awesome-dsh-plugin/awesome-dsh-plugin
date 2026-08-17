@@ -1,0 +1,56 @@
+name: PR check
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # added-date derivation walks the README's history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Stale-fork guard
+        # A fork behind main re-adds old entries (caught by the duplicate
+        # check) or, worse, deletes recent ones — which every content check
+        # passes, because the deletion is symmetric across both locales
+        # (#502 would have silently removed 32 entries). Fail when the PR
+        # drops more than 2 existing entries; genuine removals are rare and
+        # a maintainer can land them directly.
+        run: |
+          git fetch -q origin ${{ github.event.pull_request.base.sha }}
+          removed=$(git diff ${{ github.event.pull_request.base.sha }}...HEAD -- README.md \
+            | grep -cE '^-- \[.+\]\(https://github\.com/' || true)
+          added=$(git diff ${{ github.event.pull_request.base.sha }}...HEAD -- README.md \
+            | grep -cE '^\+- \[.+\]\(https://github\.com/' || true)
+          echo "entry lines: +$added -$removed"
+          if [ "$removed" -gt 2 ] && [ "$removed" -gt "$added" ]; then
+            echo "::error::This PR removes $removed existing entries — the fork looks stale. Sync it with upstream main (GitHub: 'Sync fork') and re-push; a single plugin submission should be +2/-0."
+            exit 1
+          fi
+      - name: READMEs match data/plugins
+        # The READMEs are generated from data/plugins/*.yml. Editing them by
+        # hand would drift from the source of truth and get silently reverted
+        # by the next contributor's regeneration.
+        run: |
+          if ! node scripts/generate-readme.mjs --check; then
+            echo "::error::The READMEs are generated from data/plugins/. Edit the YAML file, run 'node scripts/generate-readme.mjs', and commit both."
+            exit 1
+          fi
+      - name: awesome-lint
+        run: npx awesome-lint
+      - name: Build (locale parity, date derivation, templates)
+        # probes are skipped on purpose: the build tolerates missing probe
+        # data, and this keeps the check token-free and fork-safe
+        run: node scripts/build-site.mjs

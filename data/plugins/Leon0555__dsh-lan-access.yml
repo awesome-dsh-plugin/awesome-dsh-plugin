@@ -1,0 +1,6 @@
+url: https://github.com/Leon0555/dsh-lan-access
+name: Leon0555/dsh-lan-access
+category: dev
+description:
+  en: 'LAN access for the Web GUI: 0.0.0.0 bind plus a crypto.randomUUID polyfill for non-secure (LAN HTTP) contexts.'
+  zh: 局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。

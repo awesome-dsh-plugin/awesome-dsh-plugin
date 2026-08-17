@@ -1,0 +1,6 @@
+url: https://github.com/superagents-lab/dsh-s1
+name: superagents-lab/dsh-s1
+category: tools
+description:
+  en: 'Native Search1API (s1) web research tools: search, news, page crawling, sitemap discovery, and trending topics as first-class `s1_*` tools, with a bundled s1 skill.'
+  zh: Search1API（s1）原生联网检索工具：网页搜索、新闻、页面抓取、站点地图与趋势榜，以 `s1_*` 一等工具形式提供，并附带 s1 技能。

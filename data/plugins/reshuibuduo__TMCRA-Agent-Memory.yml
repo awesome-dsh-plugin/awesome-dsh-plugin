@@ -1,0 +1,6 @@
+url: https://github.com/reshuibuduo/TMCRA-Agent-Memory
+name: reshuibuduo/TMCRA-Agent-Memory
+category: memory
+description:
+  en: 'Technical-preview local graph memory for DSH and Codex: recalls owner-global and current-project evidence before each turn, writes USER and ASSISTANT records separately, and preserves project, session, actor, and source provenance for a visual atlas and cited knowledge pages.'
+  zh: 面向 DSH 与 Codex 的技术预览版本机图记忆：每轮前从用户全局与当前项目作用域召回证据，分别保存 USER 与 ASSISTANT 记录，并保留项目、会话、角色和来源信息，用于可视化图谱与带证据引用的知识页。

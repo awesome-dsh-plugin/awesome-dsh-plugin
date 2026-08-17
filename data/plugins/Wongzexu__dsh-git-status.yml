@@ -1,0 +1,6 @@
+url: https://github.com/Wongzexu/dsh-git-status
+name: Wongzexu/dsh-git-status
+category: ui
+description:
+  en: 'Specialized in Git branch and status handling: a Git status drawer on the right edge of the DSH web UI with a commit DAG lane graph, uncommitted changes and stash rows, inline diffs, right-click branch/tag actions, and one-click fetch from all remotes.'
+  zh: 专精于 Git 分支与状态处理：Web 右缘 Git 状态浮窗，commit DAG 泳道图、未提交改动与 stash、行内 diff，右键分支/tag 切换、合并、重命名、删除、新建，一键拉取全部远程。

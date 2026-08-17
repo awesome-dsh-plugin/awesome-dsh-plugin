@@ -1,0 +1,6 @@
+url: https://github.com/x2802490130-prog/dsh-tool-writing
+name: x2802490130-prog/dsh-tool-writing
+category: tools
+description:
+  en: 'A web-novel writing engine for DeepSeek Harness: parallel drafting, outlining and brainstorming with a separate DeepSeek key, lore and foreshadowing management, semantic vector retrieval, a corpus library, usage ledger, mechanical proofreading, and a local serialization plan.'
+  zh: 写文引擎：用独立 DeepSeek key 分流并发生成草稿/细纲/点子，设定与伏笔管理、语义向量检索、书库（饲料区）、用量总账、机械校对与本地连载计划。

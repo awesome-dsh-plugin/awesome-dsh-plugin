@@ -1,0 +1,6 @@
+url: https://github.com/eric-song-dev/dsh-ikun-pet
+name: eric-song-dev/dsh-ikun-pet
+category: ui
+description:
+  en: 'An ikun (basketball meme) pet that fills the dock under the "Deep diving..." status row during replies: a sprite-sheet pet walks a 0→100% progress bar, switching animation and text every 20%, and plays a system-level "nǐ gàn ma~" voice cue at completion.'
+  zh: ikun 桌宠填满「Deep diving...」状态行下方整行区块：坤宠动图沿 0%→100% 进度条行走，每 20% 切换动作与文案，完成时系统级播放「你干嘛~哎哟」提示音。

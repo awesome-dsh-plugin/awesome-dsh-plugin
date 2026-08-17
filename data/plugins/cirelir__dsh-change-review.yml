@@ -1,0 +1,6 @@
+url: https://github.com/cirelir/dsh-change-review
+name: cirelir/dsh-change-review
+category: ui
+description:
+  en: 'Session change-review plugin for DeepSeek Harness: tracks write/edit tool calls per session and renders line-level diffs with customizable colors, with session isolation, subagent aggregation, and SSE live updates.'
+  zh: 会话修改审查插件：追踪会话内 write/edit 工具调用并展示 diff 对比；会话隔离、子代理聚合、SSE 实时推送、角标与颜色自定义。

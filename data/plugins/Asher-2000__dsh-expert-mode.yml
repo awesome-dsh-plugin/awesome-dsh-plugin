@@ -1,0 +1,6 @@
+url: https://github.com/Asher-2000/dsh-expert-mode
+name: Asher-2000/dsh-expert-mode
+category: tools
+description:
+  en: 'Expert-mode agent preset for DeepSeek Harness, now BILINGUAL: English "Expert Mode" preset (Chief Coordinator + 11 fully-English domain-expert subagents) and Chinese 「专家模式」 preset (首席协调官). Experts: data analyst, copywriter, legal review, product manager, frontend, UI/UX, architect, social media ops, growth hacker, quant finance, finance — with automatic task delegation.'
+  zh: 专家模式 agent preset（双语双份）：中文「专家模式」+ 英文 "Expert Mode"（Chief Coordinator + 全英文 11 位专家）。首席协调官 + 11 位领域专家子代理（数据分析/文案/法务/产品/前端/UI-UX/架构/社交运营/增长/量化/财务），按任务特性自动委派。

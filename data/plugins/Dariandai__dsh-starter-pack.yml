@@ -1,0 +1,6 @@
+url: https://github.com/Dariandai/dsh-starter-pack
+name: Dariandai/dsh-starter-pack
+category: tools
+description:
+  en: 'A curated plugin starter pack: batch-installs and configures 15 vetted community plugins across four groups from a Settings-page UI or the /setup command.'
+  zh: 精选插件启动包：从设置页或 /setup 命令一键批量安装并配置 4 组共 15 个经过筛选的社区插件。

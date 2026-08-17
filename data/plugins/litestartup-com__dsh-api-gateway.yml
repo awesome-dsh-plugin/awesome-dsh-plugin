@@ -1,0 +1,6 @@
+url: https://github.com/litestartup-com/dsh-api-gateway
+name: litestartup-com/dsh-api-gateway
+category: dev
+description:
+  en: 'REST + SSE gateway exposing running Harness sessions to third-party clients: API-key auth, token streaming, workspace grouping, and adopting GUI sessions to keep chatting.'
+  zh: 为第三方客户端提供 REST + SSE 网关：API 密钥鉴权、token 流式回包、会话工作区分组，并可接管 GUI 会话继续对话。

@@ -1,0 +1,6 @@
+url: https://github.com/030611/dsh-verification-receipt
+name: 030611/dsh-verification-receipt
+category: dev
+description:
+  en: Writes local JSONL summaries of per-turn tool counts and coarse verification signals without storing prompts, tool arguments, or result text.
+  zh: 把每轮工具计数与粗粒度验证信号写入本地 JSONL，不保存提示词、工具参数或结果正文。

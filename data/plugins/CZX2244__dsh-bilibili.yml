@@ -1,0 +1,6 @@
+url: https://github.com/CZX2244/dsh-bilibili
+name: CZX2244/dsh-bilibili
+category: tools
+description:
+  en: 'Bilibili video analysis: metadata, transcript (ASR fallback via Bijian/sherpa-onnx/whisper.cpp), comments, danmaku, and sharp keyframes with optional local vision descriptions.'
+  zh: B站视频分析工具：提取元数据、字幕文稿（必剪/本地 ASR 兜底）、评论与弹幕，抓取清晰关键帧并可选本地视觉描述。

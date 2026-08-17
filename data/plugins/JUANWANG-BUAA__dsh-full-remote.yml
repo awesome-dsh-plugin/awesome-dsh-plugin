@@ -1,0 +1,6 @@
+url: https://github.com/JUANWANG-BUAA/dsh-full-remote
+name: JUANWANG-BUAA/dsh-full-remote
+category: tools
+description:
+  en: Remote DeepSeek Harness with full server-side API access (`settings.*` / `credentials.*` / `host.listDirectory`). Token-gated reverse proxy, per-device sessions, phone invite QR, fence self-check, optional approval / CIDR / idle timeout / local TLS, WebSocket/SSE.
+  zh: 远程访问 DeepSeek Harness 且服务端 API 完整：转发时改写 Host/Origin，恢复其他方案必定 403 的 settings.* / credentials.* / host.listDirectory。令牌门、按设备会话、可选首访审批。

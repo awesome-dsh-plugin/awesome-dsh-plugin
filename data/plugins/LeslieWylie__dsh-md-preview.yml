@@ -1,0 +1,6 @@
+url: https://github.com/LeslieWylie/dsh-md-preview
+name: LeslieWylie/dsh-md-preview
+category: tools
+description:
+  en: 'Render Markdown to a standalone, self-contained HTML page: an `md_html_render` tool that works in a headless profile, plus a web drawer to browse, preview, edit and export local `.md` files; both share one renderer, with no runtime dependencies.'
+  zh: 把 Markdown 渲染为自包含的独立 HTML 页面：提供在 headless 配置下同样可用的 `md_html_render` 工具，以及在网页端浏览、预览、编辑并导出本地 `.md` 文件的抽屉；两个入口共用同一个渲染器，无运行时依赖。

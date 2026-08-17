@@ -1,0 +1,6 @@
+url: https://github.com/bpc-oss/chrome-faithful
+name: bpc-oss/chrome-faithful
+category: tools
+description:
+  en: 'Exact-profile control of your real logged-in Chrome browser: an MCP server plus MV3 extension and authenticated localhost bridge for tabs, locators, file injection, media export, and durable scroll capture, with no debug profile or remote-debugging port.'
+  zh: 按精确 Profile 名控制你真实已登录的 Chrome 浏览器：MCP 服务器 + MV3 扩展 + 认证本地桥接，提供标签页、定位器、文件注入、媒体导出与持久滚动采集，不使用调试 Profile 或远程调试端口。

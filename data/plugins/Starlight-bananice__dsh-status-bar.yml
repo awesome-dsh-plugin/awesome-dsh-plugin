@@ -1,0 +1,6 @@
+url: https://github.com/Starlight-bananice/dsh-status-bar
+name: Starlight-bananice/dsh-status-bar
+category: ui
+description:
+  en: A configurable 17-segment session status bar for the dsh composer dock with live TPS, per-model cost estimation, and a usage & cost dialog.
+  zh: 输入栏下可配置的 17 段会话状态栏，提供实时 TPS、按模型分别计价的费用估算，以及用量与费用弹窗。

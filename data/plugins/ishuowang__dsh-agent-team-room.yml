@@ -1,0 +1,6 @@
+url: https://github.com/ishuowang/dsh-agent-team-room
+name: ishuowang/dsh-agent-team-room
+category: session
+description:
+  en: Coordinate independent DSH Sessions and provider-backed members without merging their histories, using persistent native Rooms with identity-bound leading `@` mentions, direct delivery, broadcasts, and leader-scoped controls.
+  zh: 在不合并对话历史的前提下，将多个独立 DSH Session 与 provider-backed 成员组成持久原生 Room，支持绑定精确成员身份的行首 `@` 提及、定向投递、广播和 Leader 权限控制。

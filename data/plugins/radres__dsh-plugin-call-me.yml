@@ -1,0 +1,6 @@
+url: https://github.com/radres/dsh-plugin-call-me
+name: radres/dsh-plugin-call-me
+category: notify
+description:
+  en: 'Rings your phone over CallKit: `call_me` and `text_me` tools, plus optional turn-end and approval calls whose spoken answer is transcribed back into the session.'
+  zh: 通过 CallKit 打电话到你的手机：`call_me` 与 `text_me` 工具，并可在回合结束或等待审批时来电，语音回答转写后送回会话。

@@ -1,0 +1,6 @@
+url: https://github.com/mayf3/dsh-session-doctor
+name: mayf3/dsh-session-doctor
+category: session
+description:
+  en: 'Diagnose, unstick, and read DSH sessions: list sessions with agent status, read conversations, diagnose stuck agents, recover them with cancel+keepInbox, and send messages to other sessions.'
+  zh: 会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。

@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-plugin-toggle
+name: DamonKoy/dsh-plugin-toggle
+category: ui
+description:
+  en: 'Settings -> Plugins switchboard: every loaded plugin card shows its package description and runtime phase, with fuzzy search and start/stop toggles that never rewrite config files.'
+  zh: 设置→插件开关面板：每个已加载插件的卡片显示简述与运行阶段，支持模糊搜索与运行时启动/关闭（不改写配置文件）。

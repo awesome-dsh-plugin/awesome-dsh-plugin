@@ -1,0 +1,6 @@
+url: https://github.com/sjh9714/dsh-movein/tree/main/plugin
+name: sjh9714/dsh-movein-permissions
+category: dev
+description:
+  en: Fine grained per tool permission rules for DSH at the tools/pre-execute gate, deny and ask lists in Claude Code rule syntax (Bash(rm -rf:*), Read(_secrets_), mcp__server__tool), works standalone without migrating.
+  zh: 为 DSH 补上按工具粒度的权限规则：在 tools/pre-execute 强制执行 deny/ask 清单，规则语法与 Claude Code 相同，不迁移也能单独用。

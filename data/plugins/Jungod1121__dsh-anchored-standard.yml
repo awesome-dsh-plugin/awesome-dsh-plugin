@@ -1,0 +1,6 @@
+url: https://github.com/Jungod1121/dsh-anchored-standard
+name: Jungod1121/dsh-anchored-standard
+category: workflow
+description:
+  en: 'Two-phase agent preset for DeepSeek V4 Pro: the first request sees only bash+read (Minimal-aligned bootstrap), then the full Standard tool catalog after the first tool call or reply; ships as an installer bundle plus a manual preset directory.'
+  zh: V4 Pro 两阶段 agent 预设：首轮仅 bash+read 完成极简开局，首个工具调用或回复后恢复 Standard 完整工具目录；以安装器 bundle 与手动预设目录双形态发布。

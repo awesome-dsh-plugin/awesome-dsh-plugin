@@ -1,0 +1,6 @@
+url: https://github.com/Hongcheng-LI/dsh-zotero
+name: Hongcheng-LI/dsh-zotero
+category: tools
+description:
+  en: 'Zotero library tools via the local API (no API key): search items/collections, read metadata and abstracts, list attachments, read full text (parses PDFs on the fly when Zotero cache misses), download PDFs, and manage notes.'
+  zh: 通过 Zotero 本地 API（无需 API Key）操作文献库：检索条目/分类、读元数据与摘要、列附件、读全文（缓存未命中时现场解析 PDF）、下载 PDF、管理笔记。

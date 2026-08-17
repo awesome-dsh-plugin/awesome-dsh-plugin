@@ -1,0 +1,6 @@
+url: https://github.com/MicroMilo/upstream-radar
+name: MicroMilo/upstream-radar
+category: dev
+description:
+  en: 'Always-on dependency security for DSH plugins: tracks exact installed paths, OSV vulnerabilities, npm releases, and breaking-change signals, then routes project evidence to a DSH Agent.'
+  zh: 面向 DSH 插件的常驻依赖安全监控：追踪实际安装路径、OSV 漏洞、npm 发布和破坏性更新信号，再把项目证据交给 DSH Agent。

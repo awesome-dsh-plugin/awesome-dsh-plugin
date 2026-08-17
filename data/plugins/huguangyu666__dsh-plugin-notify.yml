@@ -1,0 +1,6 @@
+url: https://github.com/huguangyu666/dsh-plugin-notify
+name: huguangyu666/dsh-plugin-notify
+category: notify
+description:
+  en: 'Notification outbox: agent proactively notifies via toast / Chinese TTS voice / sound effects (explosion, victory, alarm), 60s confirmation window voice-calls you back, volume boost, settings panel.'
+  zh: 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。

@@ -1,0 +1,6 @@
+url: https://github.com/tuogusa/dsh-plugin-toggle
+name: tuogusa/dsh-plugin-toggle
+category: market
+description:
+  en: Toggle or delete plugins from the Web settings panel, with runtime enable and disable persisted to the profile.
+  zh: 在 Web 设置面板中启用、停用或删除插件，运行时开关并持久化到 profile。

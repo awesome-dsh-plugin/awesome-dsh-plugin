@@ -1,0 +1,74 @@
+name: Build site from README
+
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+    inputs:
+      probe_all:
+        description: Re-probe every entry, ignoring cached verdicts
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    # No paths filter, deliberately: every push must either supersede the
+    # in-flight build (concurrency cancel) or start the one that replaces it.
+    # Irrelevant pushes just redeploy the same bytes.
+
+# The build never writes to the repository. Added dates derive from git
+# history, probe results live in the Actions cache, docs/ ships as a Pages
+# artifact — so contents stays read-only and nothing can race a human push.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# docs/ is a pure function of main's tip, so an older run can only produce
+# stale output — supersede it rather than queueing it.
+concurrency:
+  group: build-site
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # added-date derivation walks the README's history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      # Rolling probe cache: unique key so every run saves, restore-keys pulls
+      # the most recent. A miss just means a full re-probe (~700 API calls,
+      # within the GITHUB_TOKEN hourly budget) — degraded never, slower once.
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/npm-map.json
+            data/stars.json
+            data/readmes.json
+          key: probe-data-${{ github.run_id }}
+          restore-keys: probe-data-
+      - name: Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The nightly run is the authoritative refresh: it re-checks every
+          # entry regardless of cached verdicts, so a plugin that publishes to
+          # npm can never be stuck on a stale "not published" (see #487).
+          # Push-triggered runs stay incremental.
+          PROBE_ALL: ${{ (github.event_name == 'schedule' || inputs.probe_all) && '1' || '' }}
+        run: |
+          node scripts/probe-npm.mjs
+          node scripts/probe-stars.mjs
+          node scripts/probe-readmes.mjs
+          node scripts/build-site.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

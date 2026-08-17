@@ -1,0 +1,6 @@
+url: https://github.com/xmutfyh/dsh-plugin-writing-guard
+name: xmutfyh/dsh-plugin-writing-guard
+category: tools
+description:
+  en: 'Academic writing guard (EN/ZH bilingual rules): local-regex linter for revision-process residue, defensive writing and AI-writing tells (em-dash abuse, not-X-but-Y, LLM word spikes, rule of three); writing_audit + writing_rules with incremental auto-audit that only reports new/resolved issues on paper file writes.'
+  zh: 论文写作守卫（中英双语规则）：本地正则扫描修改过程残留、防御性写作与 AI 写作痕迹（破折号滥用、不是X而是Y、LLM 高频词、三连排比）；writing_audit / writing_rules 工具，论文写入后增量自动审计（仅反馈新增/已解决问题）。

@@ -1,0 +1,6 @@
+url: https://github.com/HuanLinOTO/dsh-plugin-mineru
+name: HuanLinOTO/dsh-plugin-mineru
+category: tools
+description:
+  en: Expose MineRU document parsing tools to the model.
+  zh: 向模型暴露 MineRU 文档解析工具。

@@ -1,0 +1,6 @@
+url: https://github.com/baconbao/dsh-mermaid-image-preview
+name: baconbao/dsh-mermaid-image-preview
+category: ui
+description:
+  en: Preview Mermaid diagrams as images via local rendering in DSH Web when the chat message contains a Mermaid fenced code block, and also allow integration with external rendering servers.
+  zh: 当 DSH Web 中的消息包含 Mermaid 语法时，通过本地渲染以图像形式预览 Mermaid Diagrams，并允许接入外部渲染服务器。

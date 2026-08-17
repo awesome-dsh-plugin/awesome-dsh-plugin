@@ -1,0 +1,161 @@
+name: Submission gate
+
+# Checks the repos behind a PR's entries: dsh.bundle manifest, repo age and
+# commit count. All three need the authenticated GitHub API, which the
+# fork-safe `pull_request` job in pr-check.yml deliberately has no access to —
+# so this runs via workflow_run, in the base repository's context, after that
+# job finishes.
+#
+# SECURITY: a token is in scope here, so nothing from the pull request is ever
+# executed. The checkout stays on the base repo's default branch — trusted
+# code, trusted lockfile — and the only thing taken from the PR is the content
+# of data/plugins/*.yml, extracted into a scratch directory and read as data.
+# Checking out refs/pull/N/merge and running `npm ci` there would hand the
+# token to fork-supplied install scripts, which is the pull_request_target
+# footgun this workflow exists to avoid.
+
+on:
+  workflow_run:
+    workflows: ['PR check']
+    types: [completed]
+
+permissions:
+  contents: read
+  checks: write
+
+concurrency:
+  group: pr-gate-${{ github.event.workflow_run.head_sha }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run.event == 'pull_request'
+    steps:
+      - name: Resolve the pull request
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo
+            const sha = context.payload.workflow_run.head_sha
+            const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
+            const pr = prs.find((p) => p.head.sha === sha)
+            if (!pr) {
+              core.info(`no open PR matches ${sha} — nothing to gate`)
+              core.setOutput('found', 'false')
+              return
+            }
+            core.setOutput('found', 'true')
+            core.setOutput('number', String(pr.number))
+            core.setOutput('created_at', pr.created_at)
+
+      # Trusted code only: the base repo's default branch, never the PR's.
+      - uses: actions/checkout@v4
+        if: steps.pr.outputs.found == 'true'
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        if: steps.pr.outputs.found == 'true'
+        with:
+          node-version: 22
+      - run: npm ci
+        if: steps.pr.outputs.found == 'true'
+
+      - name: Extract the PR's entry files (data only, never executed)
+        if: steps.pr.outputs.found == 'true'
+        id: extract
+        run: |
+          set -euo pipefail
+          git fetch -q origin "refs/pull/${{ steps.pr.outputs.number }}/head:pr-head"
+          # The API's base.sha is a snapshot from when the PR was opened. For a
+          # PR whose head is a fork's synced main branch, diffing against that
+          # stale snapshot attributes every entry merged since to this PR — the
+          # gate then judges other people's submissions (and pins its check-run
+          # on the main-tip sha, a red X on main). The merge-base against
+          # today's main gives exactly the PR's own contribution instead.
+          BASE=$(git merge-base origin/main pr-head)
+
+          # Entry files this PR ADDS — only new submissions face the gate.
+          # Modifying an already-listed entry (recategorize, reword) must not
+          # re-litigate repo age or commit count: those entries were accepted
+          # under the rules in force at the time, and the weekly decay scan is
+          # what watches listed entries for regressions. The diff goes to a
+          # file first so a git failure fails the step instead of silently
+          # reading as "no changes" and reporting success on an unchecked PR.
+          # -z handles paths with spaces.
+          mkdir -p /tmp/prdata
+          git diff -z --name-only --diff-filter=A "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
+          FILES=()
+          while IFS= read -r -d '' f; do FILES+=("$f"); done < /tmp/prdata/diff.z
+          printf 'changed entry files: %s\n' "${#FILES[@]}"
+          if [ "${#FILES[@]}" -eq 0 ]; then
+            echo "none=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # git archive writes the blobs without running anything from the PR.
+          git archive pr-head -- data/plugins | tar -x -C /tmp/prdata
+          printf '%s\n' "${FILES[@]}" | sed 's|^data/plugins/||' > /tmp/prdata/changed.txt
+          echo "none=false" >> "$GITHUB_OUTPUT"
+
+          # The gate applies only to PRs opened after it landed; everything
+          # older is judged by the rules that were in force at the time.
+          EFF=$(git log --diff-filter=A --format=%cI -1 -- .github/workflows/pr-gate.yml)
+          echo "effective_from=${EFF:-1970-01-01T00:00:00Z}" >> "$GITHUB_OUTPUT"
+
+      - name: Check submitted entries
+        if: steps.pr.outputs.found == 'true' && steps.extract.outputs.none == 'false'
+        id: check
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GATE_EFFECTIVE_FROM: ${{ steps.extract.outputs.effective_from }}
+        run: |
+          node scripts/check-submission.mjs \
+            --dir /tmp/prdata/data/plugins \
+            --only-list /tmp/prdata/changed.txt \
+            --pr-created "${{ steps.pr.outputs.created_at }}" \
+            --json gate-result.json
+
+      - name: Report result on the PR
+        if: steps.pr.outputs.found == 'true'
+        uses: actions/github-script@v7
+        env:
+          NOTHING_TO_CHECK: ${{ steps.extract.outputs.none }}
+          CHECK_OUTCOME: ${{ steps.check.outcome }}
+        with:
+          script: |
+            const fs = require('fs')
+            const { owner, repo } = context.repo
+            const head_sha = context.payload.workflow_run.head_sha
+            const post = (conclusion, title, summary) =>
+              github.rest.checks.create({ owner, repo, name: 'Submission gate', head_sha, status: 'completed', conclusion,
+                output: { title, summary: summary.slice(0, 65000) } })
+
+            if (process.env.NOTHING_TO_CHECK === 'true') {
+              await post('success', 'No entries changed', 'This PR does not add or modify any file under `data/plugins/`.')
+              return
+            }
+
+            let result = null
+            try { result = JSON.parse(fs.readFileSync('gate-result.json', 'utf8')) } catch {}
+
+            // No result file means the checker itself failed. Reporting success
+            // here would let an unchecked submission through, so say so instead.
+            if (!result) {
+              await post('failure', 'The gate could not run',
+                `\`check-submission.mjs\` exited without producing a result (step outcome: ${process.env.CHECK_OUTCOME}). Re-run the workflow; if it keeps failing this is a bug in the check, not in the submission.`)
+              core.setFailed('gate did not produce a result')
+              return
+            }
+
+            if (result.ok) {
+              await post('success', 'Entries look good',
+                'All submitted entries pass: `dsh.bundle` declared, repo old enough, enough commits.')
+              return
+            }
+            const body = result.failures.flatMap((f) => [`**${f.url}**`, ...f.problems.map((p) => `- ${p}`), '']).join('\n')
+            const contrib = `https://github.com/${owner}/${repo}/blob/main/contributing.md`
+            await post('failure', `${result.failures.length} entry/entries need changes`,
+              `${body}\nSee [contributing.md](${contrib}) for the bundle manifest example and the full rules.`)
+            core.setFailed(`${result.failures.length} entry/entries did not pass`)

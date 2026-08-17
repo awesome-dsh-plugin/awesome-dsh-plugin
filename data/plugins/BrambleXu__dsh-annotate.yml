@@ -1,0 +1,6 @@
+url: https://github.com/BrambleXu/dsh-annotate
+name: BrambleXu/dsh-annotate
+category: dev
+description:
+  en: Select browser elements directly during Vibe Coding and send structured visual feedback to the DeepSeek Harness Agent.
+  zh: 面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。

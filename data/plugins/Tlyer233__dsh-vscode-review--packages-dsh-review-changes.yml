@@ -1,0 +1,6 @@
+url: https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review-changes
+name: Tlyer233/dsh-vscode-review#dsh-review-changes
+category: notify
+description:
+  en: 'Review Changes panel above the web composer with a VS Code sidebar bridge: send editor selections, drag files/folders as tags, and batch accept/reject every listed file.'
+  zh: Web 输入框上方的 Review Changes 面板与 VS Code 侧栏桥：发送编辑器选区、把文件/文件夹拖成 tag，并批量接受/撤回列表中的全部文件。

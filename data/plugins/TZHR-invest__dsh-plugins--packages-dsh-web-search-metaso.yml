@@ -1,0 +1,6 @@
+url: https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso
+name: TZHR-invest/dsh-plugins#dsh-web-search-metaso
+category: tools
+description:
+  en: 'Metaso (秘塔AI搜索) search & reader providers for the web seam: web_search returns page summaries, web_fetch reads full-page markdown, multi-scope search (webpage/document/paper/image/video/podcast).'
+  zh: 秘塔AI搜索 providers for ctx.web：web_search 返回网页摘要，web_fetch 读取网页全文 markdown，多范围搜索（网页/文库/论文/图片/视频/播客）。

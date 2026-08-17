@@ -1,0 +1,6 @@
+url: https://github.com/ChenLaoshiYF/dsh-mcpguard
+name: ChenLaoshiYF/dsh-mcpguard
+category: tools
+description:
+  en: Scans skills and MCP configs for prompt injection, homoglyphs, hidden Unicode, dangerous shell, and credential leaks.
+  zh: 扫描 skill 与 MCP 配置中的提示注入、同形字、Unicode 隐形字符、危险 shell 与凭据泄露。

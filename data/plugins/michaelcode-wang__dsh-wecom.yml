@@ -1,0 +1,6 @@
+url: https://github.com/michaelcode-wang/dsh-wecom
+name: michaelcode-wang/dsh-wecom
+category: notify
+description:
+  en: 'WeCom (Enterprise WeChat) Smart Robot bridge: two-way chat over the aibot WebSocket gateway, no public endpoint needed.'
+  zh: 企业微信智能机器人桥接：aibot WebSocket 双向对话（bot_id + secret），无需公网回调。

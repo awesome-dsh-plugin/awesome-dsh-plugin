@@ -1,0 +1,6 @@
+url: https://github.com/hellosky983/dsh-foundry
+name: hellosky983/dsh-foundry
+category: dev
+description:
+  en: Plugin compiler with a blueprint registry (scaffold → validate → deploy) exposed as a runtime service, three model tools, and a blueprint-gallery settings page.
+  zh: 插件编译器：以运行时服务提供蓝图注册表（脚手架 → 校验 → 部署），配三个模型工具和一个蓝图画廊设置页。

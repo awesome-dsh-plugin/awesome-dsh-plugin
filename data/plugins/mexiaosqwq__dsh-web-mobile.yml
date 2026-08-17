@@ -1,0 +1,6 @@
+url: https://github.com/mexiaosqwq/dsh-web-mobile
+name: mexiaosqwq/dsh-web-mobile
+category: ui
+description:
+  en: 'Mobile-adaptive layout for the DSH Web UI: the sidebar becomes a content-hugging overlay drawer, the conversation gets the full width, and the settings panel becomes a near-full-width sheet.'
+  zh: DSH Web UI 移动端适配：窄屏下侧边栏变为贴合内容的 overlay 抽屉、会话独占全宽，设置面板改为近全宽 sheet。

@@ -1,0 +1,6 @@
+url: https://github.com/DietCokewithSugar/dsh-user-experience
+name: DietCokewithSugar/dsh-user-experience
+category: dev
+description:
+  en: 'Finds potential UX issues in your project: automatically reviews React/TypeScript code, pinpoints each problem, and gives concrete suggestions.'
+  zh: 帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。

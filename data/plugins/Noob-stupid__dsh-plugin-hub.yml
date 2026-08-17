@@ -1,0 +1,6 @@
+url: https://github.com/Noob-stupid/dsh-plugin-hub
+name: Noob-stupid/dsh-plugin-hub
+category: market
+description:
+  en: 'A plugin management panel: one-click enable/disable for installed plugins plus a GitHub dsh-plugin marketplace with details and one-click installs.'
+  zh: 插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。

@@ -1,0 +1,6 @@
+url: https://github.com/Zhangbo-cn/dsh-voice-input-plugin
+name: Zhangbo-cn/dsh-voice-input-plugin
+category: ui
+description:
+  en: "Composer mic for the Web UI: tap-to-monitor live transcription and hold-to-talk, with host Edge TTS reply reading that streams while the model generates, echo-pause during reading, and tap-to-stop."
+  zh: "输入框麦克风：点击持续监控、按住对话；浏览器语音识别逐字上屏，回复由 host Edge TTS 边生成边朗读，朗读时暂停识别防回声，点击可停止。"

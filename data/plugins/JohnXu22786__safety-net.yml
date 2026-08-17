@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/safety-net
+name: JohnXu22786/safety-net
+category: tools
+description:
+  en: "Destructive-command interception gate for dsh: parses shell semantics, judges risk against 41 built-in rules, and holds irreversible rm -rf, git reset --hard, and git push --force style commands at a confirmation gate."
+  zh: "dsh 破坏性命令拦截闸门：解析 shell 语义、依据 41 条内置规则判定风险，将 rm -rf、git reset --hard、git push --force 等不可逆命令挡在确认关卡之前。"

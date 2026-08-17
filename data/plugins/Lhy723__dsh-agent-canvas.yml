@@ -1,0 +1,6 @@
+url: https://github.com/Lhy723/dsh-agent-canvas
+name: Lhy723/dsh-agent-canvas
+category: ui
+description:
+  en: Interactive canvas for visualizing Agent, Subagent, Workflow, Phase, and tool relationships in DSH Web.
+  zh: 为 DSH Web 提供可交互画布，用于展示 Agent、Subagent、Workflow、Phase 与工具调用之间的关系。

@@ -1,0 +1,6 @@
+url: https://github.com/truelove-dreamer/dsh-plugin-vetting
+name: truelove-dreamer/dsh-plugin-vetting
+category: dev
+description:
+  en: 'Vets third-party plugins before you trust them: static scan for malicious patterns (exfiltration, credential access, obfuscation, persistence) and over-privileged path use, transitive-dependency coverage, official-package hash baseline for supply-chain tamper detection, and an optional plugin-tool call gate.'
+  zh: '为了您的电脑安全，装插件前先体检：静态扫描恶意模式（外传/凭据/混淆/持久化）与高权限误用，覆盖传递依赖与官方包哈希基线（防供应链篡改），可选插件工具调用闸。'

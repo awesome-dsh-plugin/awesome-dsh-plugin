@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="__LANG__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<meta name="description" content="__DESC__">
+<link rel="canonical" href="__URL__">
+__HREFLANGS__
+<link rel="alternate" type="application/atom+xml" title="__TITLE__" href="__FEED__">
+<meta property="og:title" content="__TITLE__">
+<meta property="og:description" content="__DESC__">
+<meta property="og:url" content="__URL__">
+<meta property="og:image" content="__OG_IMAGE__">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="__OG_IMAGE__">__LANG_REDIRECT__
+<meta property="og:type" content="website">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">{}</script>
+<style>
+/* ── 纸墨朱砂 · warm paper + modern cards (design B, 2026-08) ── */
+:root{
+  --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
+  --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
+  --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
+  --on-cinnabar:#ffffff;
+  --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#211d18; --paper-2:#282218; --card:#2a2620; --line:#3b352c; --line-2:#4c4436;
+    --ink:#ece7de; --ink-2:#b5ac9e; --ink-3:#8f8678;
+    --cinnabar:#e06a52; --cinnabar-deep:#ea8069; --cinnabar-soft:rgba(224,106,82,.13); --cinnabar-border:rgba(224,106,82,.35);
+    --on-cinnabar:#211d18;
+  }
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+::selection{background:var(--cinnabar-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
+html{scrollbar-color:var(--line-2) transparent}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--card);color:var(--cinnabar-deep);padding:.6rem 1rem;z-index:99}
+.skip:focus{left:0}
+
+/* ── nav ── */
+nav.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:1.4rem;height:3.6rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.95rem;letter-spacing:-.01em}
+.logo svg{flex:none}
+.logo svg g{fill:var(--ink)}
+.logo svg .plug-block{fill:var(--cinnabar)}
+.nav-links{display:flex;gap:1.2rem;margin-left:auto;font-size:.86rem;color:var(--ink-2);align-items:center;flex-wrap:wrap}
+.nav-links a{transition:color .15s ease}
+.nav-links a:hover{color:var(--cinnabar)}
+.lang-btn{font-size:.82rem;color:var(--ink-3);border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem;transition:all .15s ease}
+.lang-btn:hover{color:var(--ink);border-color:var(--line-2)}
+
+/* ── hero on grid paper ── */
+header.hero{
+  background-image:linear-gradient(var(--paper-2) 1px,transparent 1px),linear-gradient(90deg,var(--paper-2) 1px,transparent 1px);
+  background-size:28px 28px;border-bottom:1px solid var(--line);
+}
+.hero-in{padding-block:clamp(2.4rem,6vh,4.2rem) 0;display:flex;align-items:center;gap:clamp(1.4rem,4vw,3rem);flex-wrap:wrap}
+.mark{flex:none;width:clamp(72px,9vw,104px);height:auto}
+.mark g{fill:var(--ink)}
+.mark .plug-block{fill:var(--cinnabar);transform-box:fill-box;transform-origin:center;transform:rotate(9deg);
+  animation:snap-in .9s cubic-bezier(.22,1,.36,1) .3s both}
+@keyframes snap-in{from{transform:translate(46px,-46px) rotate(0deg);opacity:0}60%{opacity:1}to{transform:translate(0,0) rotate(9deg)}}
+@media (prefers-reduced-motion:reduce){.mark .plug-block{animation:none}}
+h1{font-family:var(--display);font-size:clamp(1.7rem,3.9vw,2.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.12;text-wrap:balance}
+h1 em{font-style:normal;color:var(--cinnabar)}
+.tagline{margin-top:.6rem;color:var(--ink-2);max-width:40rem;text-wrap:pretty}
+.tagline b{color:var(--ink)}
+.count-line{font-family:var(--mono);font-size:.8rem;color:var(--ink-3);margin-top:.5rem}
+.count-line a{color:var(--cinnabar)}
+.count-line a:hover{color:var(--cinnabar-deep)}
+
+.searchband{padding-block:1.6rem 2rem;display:flex;flex-direction:column;gap:1.1rem}
+.searchbar{display:flex;align-items:center;gap:.7rem;max-width:38rem;
+  background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:.78rem 1.05rem;
+  box-shadow:3px 3px 0 var(--line-2);transition:box-shadow .15s ease}
+.searchbar:focus-within{box-shadow:3px 3px 0 var(--cinnabar)}
+.searchbar svg{color:var(--ink-3);flex:none}
+.searchbar input{flex:1;border:none;outline:none;font:inherit;background:none;color:var(--ink);min-width:0;caret-color:var(--cinnabar)}
+.searchbar input::placeholder{color:var(--ink-3)}
+.searchbar .count{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums}
+
+.market{max-width:38rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;
+  background:var(--cinnabar-soft);border:1px solid var(--cinnabar-border);border-radius:12px;padding:.7rem 1rem;font-size:.88rem;color:var(--ink-2)}
+.market svg{color:var(--cinnabar);flex:none}
+.market .lead b{color:var(--cinnabar-deep)}
+.market .lead a:hover{text-decoration:underline;text-underline-offset:3px}
+.market .go{margin-left:auto;flex:none;font-weight:600;font-size:.82rem;color:var(--on-cinnabar);background:var(--cinnabar);
+  border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap}
+.market .go:hover{background:var(--cinnabar-deep)}
+
+/* ── chips ── */
+.filters-band{padding-block:1.5rem 0}
+.filters{display:flex;flex-wrap:wrap;gap:.45rem}
+.chip{font-size:.83rem;color:var(--ink-2);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.34rem .9rem;transition:all .15s ease;white-space:nowrap}
+.chip small{color:var(--ink-3);font-size:.72rem;margin-left:.15rem}
+.chip:hover{border-color:var(--ink-3);color:var(--ink)}
+.chip.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip.active small{color:color-mix(in srgb,var(--paper) 60%,transparent)}
+
+/* ── card grid ── */
+ol.dex{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1.05rem;padding-block:1.7rem 2.5rem}
+li.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.25rem;
+  display:flex;flex-direction:column;gap:.5rem;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;position:relative}
+li.card:hover{border-color:var(--line-2);box-shadow:0 3px 5px rgb(43 38 32 / .05),0 14px 34px rgb(43 38 32 / .08);transform:translateY(-2px)}
+li.card:has(.inst[open]){z-index:30}
+li.card .top{display:flex;align-items:baseline;gap:.5rem;min-width:0}
+li.card h3{font-size:.98rem;font-weight:680;letter-spacing:-.01em;overflow-wrap:anywhere;line-height:1.35}
+li.card h3 a{transition:color .15s ease}
+li.card h3 a:hover{color:var(--cinnabar-deep)}
+li.card h3 .owner{color:var(--ink-3);font-weight:450}
+li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
+li.card .stars::before{content:"★ ";color:var(--cinnabar)}
+li.card .desc-link{display:block}
+li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
+li.card .desc-link:hover p{color:var(--ink)}
+li.card .foot{display:flex;align-items:center;margin-top:auto;padding-top:.45rem;gap:.6rem}
+li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;transition:all .15s ease}
+li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
+li.hidden{display:none}
+.noresult{padding-block:3rem;color:var(--ink-3);text-align:center;display:none}
+.noresult button{background:none;border:none;color:var(--cinnabar);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* ── install dropdown ── */
+.inst{position:relative;margin-left:auto}
+.inst summary{list-style:none;font-size:.8rem;font-weight:600;color:var(--cinnabar);
+  border:1.5px solid var(--cinnabar);border-radius:8px;padding:.3rem .8rem;cursor:pointer;user-select:none;white-space:nowrap;
+  transition:all .15s ease}
+.inst summary::-webkit-details-marker{display:none}
+.inst summary:hover,.inst[open] summary{background:var(--cinnabar);color:var(--on-cinnabar)}
+.inst .menu{position:absolute;right:0;top:calc(100% + 6px);z-index:20;min-width:21rem;max-width:min(24rem,86vw);
+  background:var(--card);border:1px solid var(--line-2);border-radius:12px;box-shadow:0 6px 24px rgb(43 38 32 / .14);
+  overscroll-behavior:contain;overflow:hidden}
+.inst .menu>button{display:block;width:100%;text-align:left;background:none;border:none;
+  padding:.6rem .85rem;border-bottom:1px solid var(--line);transition:background-color .16s ease}
+.inst .menu>button:hover{background:var(--cinnabar-soft)}
+.inst .menu b{display:block;font-size:.8rem;font-weight:650;color:var(--ink)}
+.inst .menu small{display:block;font-size:.7rem;color:var(--ink-3);margin-top:.1rem}
+.inst .menu button.done b{color:var(--cinnabar-deep)}
+.mi-cli{padding:.6rem .85rem}
+.mi-cli b{display:block;font-size:.8rem;font-weight:650;color:var(--ink)}
+.cli{display:flex;align-items:stretch;margin-top:.45rem;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;width:100%}
+.cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--ink);
+  background:var(--paper);border:none;outline:none;padding:.42rem .6rem}
+.cli .copy{margin:0;border:none;border-left:1px solid var(--line-2);flex:none;display:flex;align-items:center;
+  font-family:var(--mono);font-size:.68rem;color:var(--ink-3);background:var(--card);padding:0 .8rem;white-space:nowrap;
+  transition:all .15s ease}
+.cli .copy:hover,.cli .copy.done{color:var(--on-cinnabar);background:var(--cinnabar)}
+
+/* ── info panels ── */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:1.05rem;padding-block:0 2.5rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem}
+.panel h2{font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.6rem}
+.panel pre{font-family:var(--mono);font-size:.78rem;line-height:1.9;color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;overflow-x:auto;margin-block:.5rem}
+.panel pre .c{color:var(--ink-3)}
+.panel p{font-size:.85rem;color:var(--ink-2);text-wrap:pretty}
+.panel .note{margin-top:.5rem;font-size:.78rem;color:var(--ink-3)}
+.panel a{color:var(--cinnabar)}
+.panel a:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
+.panel code{font-family:var(--mono);font-size:.9em}
+@media (max-width:760px){.panels{grid-template-columns:1fr}}
+
+/* ── footer / back-to-top ── */
+footer{border-top:1px solid var(--line);padding-block:1.8rem 2.8rem;color:var(--ink-3);font-size:.8rem}
+footer .frow{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1.5rem}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--cinnabar)}
+footer .motto{font-family:var(--mono);color:var(--cinnabar)}
+#toTop{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:30;
+  width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:10px;
+  font-family:var(--mono);font-size:1rem;color:var(--ink-2);
+  background:var(--card);border:1px solid var(--line-2);box-shadow:0 2px 8px rgb(43 38 32 / .1);
+  opacity:0;pointer-events:none;transition:opacity .2s ease,color .16s ease,border-color .16s ease,background-color .16s ease}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{color:var(--on-cinnabar);border-color:var(--cinnabar);background:var(--cinnabar)}
+
+@media (max-width:640px){
+  .nav-links{gap:.9rem;font-size:.82rem}
+  .market .go{margin-left:0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#dex">__T_SKIP__</a>
+
+<nav class="top"><div class="wrap nav-in">
+  <a class="logo" href="__HOME__" translate="no">
+    <svg width="20" height="20" viewBox="76 42 400 400" aria-hidden="true"><g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g><rect class="plug-block" x="346" y="78" width="88" height="88" rx="14" transform="rotate(9 390 122)"/></svg>
+    awesome-dsh-plugin
+  </a>
+  <div class="nav-links">
+    <a href="https://github.com/dsh-market/dsh-market" rel="noopener" translate="no">dsh-market</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md" rel="noopener">__T_NAV_SUBMIT__ ↗</a>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub ↗</a>
+    <a href="__FEED__" title="Atom/RSS">RSS</a>
+    __LOCALE_LINKS__
+  </div>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <svg class="mark" viewBox="76 42 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g><rect x="112" y="112" width="88" height="88" rx="14"/><rect x="212" y="112" width="88" height="88" rx="14"/><rect x="112" y="212" width="88" height="88" rx="14"/><rect x="212" y="212" width="88" height="88" rx="14"/><rect x="112" y="312" width="88" height="88" rx="14"/><rect x="212" y="312" width="88" height="88" rx="14"/><rect x="312" y="212" width="88" height="88" rx="14"/><rect x="312" y="312" width="88" height="88" rx="14"/></g>
+      <rect class="plug-block" x="346" y="78" width="88" height="88" rx="14"/>
+    </svg>
+    <div>
+      <h1 translate="no">Awesome <em>DeepSeek Harness</em> Plugin</h1>
+      <p class="tagline">__T_TAGLINE__</p>
+      <p class="count-line">__T_LISTING_PRE__ <span id="total">0</span> __T_LISTING_POST__ · <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">__T_WHATIS__</a></p>
+    </div>
+  </div>
+  <div class="wrap searchband">
+    <div class="searchbar">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" name="plugin-search" placeholder="__SEARCH_PH__" aria-label="__SEARCH_PH__">
+      <span class="count" id="count" aria-live="polite">0 / 0</span>
+    </div>
+    <div class="market">
+      <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+      <span class="lead">__T_MARKET_LEAD__</span>
+      <button class="go" type="button" data-cmd="dsh plugin --profile web add dshmarket">__T_MARKET_GO__</button>
+    </div>
+  </div>
+</header>
+
+<div class="filters-band"><div class="wrap">
+  <div class="filters" id="filters">
+  </div><!--/filters-->
+</div></div>
+
+<main class="wrap">
+  <ol class="dex" id="dex">
+  </ol>
+
+  <div class="noresult" id="noresult">
+    __T_NORESULT__
+    <button type="button" id="clearFilter">__T_CLEAR__</button>
+  </div>
+
+  <div class="panels">
+    <section class="panel">
+      <h2>__T_INSTALL__</h2>
+      <pre translate="no"><span class="c"># __T_NPM_C__</span>
+dsh plugin --profile web add &lt;npm-package&gt;
+
+<span class="c"># __T_GH_C__</span>
+dsh plugin --profile web add github:owner/repo</pre>
+      <p class="note">__T_INSTALL_NOTE__</p>
+    </section>
+    <section class="panel">
+      <h2>__T_CONTRIB__</h2>
+      <p>__T_CONTRIB_BODY__</p>
+    </section>
+  </div>
+</main>
+
+<button id="toTop" type="button" aria-label="__T_TOTOP__">↑</button>
+<span id="live" class="sr" aria-live="polite"></span>
+
+<footer><div class="wrap frow">
+  <span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · __T_NOTAFF__ · <span class="motto" translate="no">__T_MOTTO__</span></span>
+  <span>__T_DISCLAIMER__</span>
+</div></footer>
+
+<script>
+const urlParams = new URLSearchParams(location.search);
+
+// filter = category chip × search text; URL reflects state (?cat=&q=)
+const items = [...document.querySelectorAll('#dex li.card')];
+const count = document.getElementById('count');
+const noresult = document.getElementById('noresult');
+const total = document.getElementById('total');
+total.textContent = items.length;
+let activeCat = urlParams.get('cat') || 'all';
+let query = (urlParams.get('q') || '').toLowerCase();
+
+function syncUrl() {
+  const p = new URLSearchParams(location.search);
+  activeCat === 'all' ? p.delete('cat') : p.set('cat', activeCat);
+  query ? p.set('q', query) : p.delete('q');
+  history.replaceState(null, '', p.size ? `?${p}` : location.pathname);
+}
+function applyFilter() {
+  let shown = 0;
+  for (const li of items) {
+    const hit = (activeCat === 'all' || li.dataset.cat === activeCat)
+      && (!query || li.textContent.toLowerCase().includes(query));
+    li.classList.toggle('hidden', !hit);
+    if (hit) shown++;
+  }
+  count.textContent = `${shown} / ${items.length}`;
+  noresult.style.display = shown ? 'none' : 'block';
+  syncUrl();
+}
+const q = document.getElementById('q');
+q.value = query;
+q.addEventListener('input', (e) => {
+  query = e.target.value.trim().toLowerCase();
+  applyFilter();
+});
+document.getElementById('filters').addEventListener('click', (e) => {
+  const chip = e.target.closest('button.chip');
+  if (!chip) return;
+  activeCat = chip.dataset.cat;
+  for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
+  applyFilter();
+});
+document.getElementById('clearFilter').addEventListener('click', () => {
+  activeCat = 'all'; query = ''; q.value = '';
+  for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
+  applyFilter();
+});
+
+const live = document.getElementById('live');
+async function copyCmd(btn) {
+  try { await navigator.clipboard.writeText(btn.dataset.cmd); } catch {}
+  live.textContent = '__T_COPIED__';
+  setTimeout(() => { live.textContent = ''; }, 1500);
+}
+document.addEventListener('click', async (e) => {
+  const mi = e.target.closest('.inst .menu > button');
+  if (mi) {
+    await copyCmd(mi);
+    mi.classList.add('done');
+    const b = mi.querySelector('b');
+    const old = b.textContent;
+    b.textContent = '✓ __T_COPIED__';
+    setTimeout(() => { b.textContent = old; mi.classList.remove('done'); mi.closest('details').open = false; }, 900);
+    return;
+  }
+  const btn = e.target.closest('.cli .copy, .market .go');
+  if (btn) {
+    await copyCmd(btn);
+    btn.classList.add('done');
+    const old = btn.textContent;
+    btn.textContent = '✓ __T_COPIED__';
+    setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
+    return;
+  }
+  // close any open install menu on outside click
+  if (!e.target.closest('details.inst')) for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
+});
+// one menu open at a time; Esc closes; "/" focuses search
+document.addEventListener('toggle', (e) => {
+  if (e.target.matches?.('details.inst') && e.target.open)
+    for (const d of document.querySelectorAll('details.inst[open]')) if (d !== e.target) d.open = false;
+}, true);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') for (const d of document.querySelectorAll('details.inst[open]')) d.open = false;
+  if (e.key === '/' && document.activeElement !== q && !e.target.closest?.('input,textarea')) { e.preventDefault(); q.focus(); }
+});
+// CLI input: focus selects the whole command
+document.addEventListener('focusin', (e) => { if (e.target.matches('.cli input')) e.target.select(); });
+
+// back to top
+const toTop = document.getElementById('toTop');
+addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
+toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+
+// restore state from URL on load
+for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
+applyFilter();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

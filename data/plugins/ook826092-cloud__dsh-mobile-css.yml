@@ -1,0 +1,6 @@
+url: https://github.com/ook826092-cloud/dsh-mobile-css
+name: ook826092-cloud/dsh-mobile-css
+category: ui
+description:
+  en: 'Mobile adaptation for the DSH Web UI: compact typography, full-width composer with caret fix, drawer sidebar with overlay-close, two-page settings flow, responsive tables and stats, safe touch targets.'
+  zh: DSH Web UI 移动端适配：紧凑排版、全宽输入卡（含光标修复）、抽屉式侧边栏（点击遮罩关闭）、两页式设置流程、响应式表格与统计、安全触控目标。

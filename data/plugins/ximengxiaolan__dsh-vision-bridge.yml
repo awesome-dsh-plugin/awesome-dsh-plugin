@@ -1,0 +1,6 @@
+url: https://github.com/ximengxiaolan/dsh-vision-bridge
+name: ximengxiaolan/dsh-vision-bridge
+category: vision
+description:
+  en: Composer-attached images are transcribed to text by an OpenAI-compatible vision model before reaching text-only DeepSeek models.
+  zh: 输入框贴图自动识别：由 OpenAI 兼容视觉模型转成文字描述后，再交给纯文本 DeepSeek 模型处理。

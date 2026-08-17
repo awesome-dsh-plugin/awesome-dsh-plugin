@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-github
+name: PerryLink/dsh-github
+category: workflow
+description:
+  en: 'Official-grade GitHub CI integration: a composite action.yml, a polling PR review bot with idempotent inline comments and a status-check gate, plus PR/issues tools with every write gated by human approval.'
+  zh: 官方级 GitHub CI 集成：composite action.yml、轮询 PR 评审机器人（幂等行内评论 + status-check 门禁）以及 PR/issue 工具，所有写入走人工审批门。

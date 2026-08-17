@@ -1,0 +1,6 @@
+url: https://github.com/Relistencode/dsh-extension-hub
+name: Relistencode/dsh-extension-hub
+category: market
+description:
+  en: 'All-in-one DSH extension center in Settings: manage skills, MCP servers and plugins, a Plugin Market (curated + GitHub search, npm one-click install), and an Add-ons block to install, disable, uninstall and update companion features together.'
+  zh: 设置页一体化扩展中心：管理技能/MCP/插件，内置插件市场（精选目录+GitHub 搜索、npm 一键安装），并提供附加功能区统一安装/停用/卸载、一起更新附属功能。

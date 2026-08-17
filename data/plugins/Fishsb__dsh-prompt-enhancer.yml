@@ -1,0 +1,6 @@
+url: https://github.com/Fishsb/dsh-prompt-enhancer
+name: Fishsb/dsh-prompt-enhancer
+category: tools
+description:
+  en: 'One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.'
+  zh: 一键提示词增强：独立 LLM 调用把模糊草稿改写为更强的提示词，不满意可撤回。

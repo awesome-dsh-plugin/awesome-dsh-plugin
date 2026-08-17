@@ -1,0 +1,6 @@
+url: https://github.com/GengDaPeng/dsh-agent-message
+name: GengDaPeng/dsh-agent-message
+category: session
+description:
+  en: Cross-session agent messaging for DeepSeek Harness with session discovery, offline delivery, delivery receipts, and sender-session navigation.
+  zh: DeepSeek Harness 跨会话 Agent 通信：支持会话发现、离线投递、投递回执与发送方会话导航。

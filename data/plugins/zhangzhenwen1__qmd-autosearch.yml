@@ -1,0 +1,6 @@
+url: https://github.com/zhangzhenwen1/qmd-autosearch
+name: zhangzhenwen1/qmd-autosearch
+category: tools
+description:
+  en: 'Auto-supplement QMD semantic search when the model greps/globs a knowledge-base directory: zero-dependency DSH plugin, async injection via next-step, no manual invocation.'
+  zh: 模型在知识库目录执行 grep/glob 搜索时自动补充 QMD 语义检索：零依赖 DSH 插件，异步注入下一步上下文，无需手动调用。

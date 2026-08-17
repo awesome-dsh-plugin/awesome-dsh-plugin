@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyuyu6420/dsh-backup
+name: xiaoyuyu6420/dsh-backup
+category: tools
+description:
+  en: 'One-command backup & restore of DSH user data: /backup command family plus backup_dsh tool and a visual Settings panel, sha256 verify with hardened restore validation (path-traversal/symlink rejection), scheduled auto-backup that survives restarts on an absolute cadence, configurable rotation, archive download route, and GitHub sync to a private repo; macOS/Linux/Windows.'
+  zh: 一键备份与恢复 DSH 用户数据：/backup 备份、完整性校验、恢复，定时自动备份（重启续跑），sha256 校验与自动轮换（macOS/Linux/Windows）。

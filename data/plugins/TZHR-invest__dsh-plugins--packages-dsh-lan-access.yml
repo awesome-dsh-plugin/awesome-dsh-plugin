@@ -1,0 +1,6 @@
+url: https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access
+name: TZHR-invest/dsh-plugins#dsh-lan-gateway
+category: ui
+description:
+  en: 'Complete LAN/remote access for the Web UI: 0.0.0.0 binding, crypto.randomUUID polyfill, token gate (401 login page + WebSocket interception, loopback exempt), privileged-fence and settings-persistence exemptions, and an idempotent installer with upgrade recovery.'
+  zh: 完整的 Web GUI 局域网/远程访问方案：0.0.0.0 绑定、crypto.randomUUID polyfill、令牌门卫（401 登录页 + WebSocket 拦截，回环豁免）、特权围栏与设置持久化放行，附带幂等安装器与升级恢复。

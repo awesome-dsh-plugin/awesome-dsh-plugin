@@ -1,0 +1,6 @@
+url: https://github.com/PAKIKNOWLEDGE/dsh-notify-skill
+name: PAKIKNOWLEDGE/dsh-notify-skill
+category: skill
+description:
+  en: 'Email reminders from your DSH agent when you''re away: fires at goal completion, blockage, before asking the user a decision, and at long-task milestones via a bundled zero-dependency Node SMTP sender.'
+  zh: 你不在电脑前时由 agent 邮件提醒你：goal 完成、阻塞、向你提问决策前、长任务节点时触发，自带零依赖 Node SMTP 发送器。

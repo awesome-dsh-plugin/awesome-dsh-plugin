@@ -1,0 +1,6 @@
+url: https://github.com/cindyguyuehu123/dsh-mobile
+name: cindyguyuehu123/dsh-mobile
+category: ui
+description:
+  en: 'Use DSH from iPhone/iPad: an explicit-opt-in LAN reverse proxy (Host/Origin rewrite through the loopback trust fence, WebSocket upgrades included), iOS PWA chrome (home-screen icon, standalone meta, viewport-fit), and touch/mobile CSS (safe areas, keyboard lifting, composer row fit).'
+  zh: 让 DSH 在 iPhone/iPad 上可用：显式开启的局域网反向代理（改写 Host/Origin 通过回环信任栅栏，含 WebSocket 升级）、iOS PWA 外壳（主屏幕图标、standalone meta、viewport-fit）、触屏/移动端 CSS（安全区、键盘避让、输入框按钮行适配）。

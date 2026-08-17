@@ -1,0 +1,6 @@
+url: https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search
+name: moguiyu/dsh-tavily#packages/dsh-tool-tavily-search
+category: tools
+description:
+  en: Tavily search with multiple API keys, key rotation and failover, a usage gauge, and a settings card.
+  zh: Tavily 多密钥搜索：支持密钥轮换/故障转移、用量仪表盘与设置卡片。

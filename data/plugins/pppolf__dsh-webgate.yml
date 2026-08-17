@@ -1,0 +1,6 @@
+url: https://github.com/pppolf/dsh-webgate
+name: pppolf/dsh-webgate
+category: ui
+description:
+  en: 'Remote access for the DSH Web GUI: LAN QR access, cloudflared quick tunnels, and frp reverse proxying via your own server, with a built-in auth portal.'
+  zh: Web GUI 远程访问：局域网二维码直连、cloudflared 快速隧道、frp 自有服务器反代，内置登录门户，并放行设置接口。

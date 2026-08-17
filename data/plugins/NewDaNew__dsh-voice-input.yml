@@ -1,0 +1,6 @@
+url: https://github.com/NewDaNew/dsh-voice-input
+name: NewDaNew/dsh-voice-input
+category: ui
+description:
+  en: 'Voice input for the web UI: a mic button in the composer that transcribes speech into the draft via the Web Speech API, with an optional auto-send toggle.'
+  zh: Web UI 语音输入：输入框一键麦克风按钮，基于 Web Speech API 语音转文字填入草稿，可选识别后自动发送。

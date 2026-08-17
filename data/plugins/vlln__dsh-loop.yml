@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-loop
+name: vlln/dsh-loop
+category: workflow
+description:
+  en: 'Recurring loops: `/loop` command + loop tool + activity status bar.'
+  zh: 定时循环：`/loop` 命令 + loop 工具 + 活动状态条。

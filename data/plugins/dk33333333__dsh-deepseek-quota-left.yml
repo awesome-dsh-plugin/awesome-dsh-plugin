@@ -1,0 +1,6 @@
+url: https://github.com/dk33333333/dsh-deepseek-quota-left
+name: dk33333333/dsh-deepseek-quota-left
+category: usage
+description:
+  en: 'DeepSeek API quota panel collapsed into a left-edge handle for the Web UI: click to expand balance, official today''s consumption (with platform token) and live conversation cost; fork of dsh-deepseek-quota.'
+  zh: DeepSeek API 额度面板折叠为左侧边框把手：点击展开查看余额、官方精确今日已消费（配置平台 token 后）与实时对话费用；dsh-deepseek-quota 的修改版。

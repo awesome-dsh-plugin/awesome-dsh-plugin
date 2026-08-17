@@ -1,0 +1,6 @@
+url: https://github.com/lonelymoon87/dsh-guardian
+name: lonelymoon87/dsh-guardian
+category: dev
+description:
+  en: Adds dangerous-operation policy checks, output redaction, and a security-review workflow.
+  zh: 增加危险操作策略检查、输出脱敏和安全审查工作流。

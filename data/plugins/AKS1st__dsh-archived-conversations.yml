@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dsh-archived-conversations
+name: AKS1st/dsh-archived-conversations
+category: ui
+description:
+  en: Archived conversations list in the sidebar footer with read-only previews of the most recent messages, for sessions the product deliberately keeps hidden and unreopenable.
+  zh: 侧边栏底部的已归档对话列表，可只读预览最近消息；针对产品刻意隐藏且无法重新打开的归档会话。

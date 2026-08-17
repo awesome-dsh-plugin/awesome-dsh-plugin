@@ -1,0 +1,6 @@
+url: https://github.com/ldchaowin/dsh-plugin-notify-sound
+name: ldchaowin/dsh-plugin-notify-sound
+category: notify
+description:
+  en: Per-workspace completion ringtones plus attention sounds for approval, question, plan-review, goal-blocked, and task-failure events, with built-in synth, voice (TTS), and custom audio.
+  zh: 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。

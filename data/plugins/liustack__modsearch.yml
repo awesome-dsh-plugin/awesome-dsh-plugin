@@ -1,0 +1,6 @@
+url: https://github.com/liustack/modsearch
+name: liustack/modsearch
+category: tools
+description:
+  en: 'Web search bridge for text-only agents: ask the web or X, get structured JSON evidence (search, fetch, citations).'
+  zh: 纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。

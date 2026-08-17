@@ -1,0 +1,6 @@
+url: https://github.com/534119219/chicheng-gate
+name: 534119219/chicheng-gate
+category: dev
+description:
+  en: LAN / remote-access control, frpc NAT tunneling, a panel password gate, and mobile UI adaptation for the DSH Web GUI.
+  zh: DSH Web 插件：局域网/远程访问控制、frpc 内网穿透、面板密码门禁与手机端 UI 适配。

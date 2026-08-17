@@ -1,0 +1,6 @@
+url: https://github.com/forrestchang/dsh-multica-runtime
+name: forrestchang/dsh-multica-runtime
+category: dev
+description:
+  en: Run the dsh runtime on Multica.
+  zh: 让 dsh 运行时跑在 Multica 上。

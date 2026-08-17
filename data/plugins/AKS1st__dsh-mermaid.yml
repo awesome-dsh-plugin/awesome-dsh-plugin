@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dsh-mermaid
+name: AKS1st/dsh-mermaid
+category: ui
+description:
+  en: Render Mermaid code fences in DSH Web chat messages as lazy-loaded SVG diagrams with strict sanitization and light/dark theme follow.
+  zh: 把 DSH Web 会话消息中的 Mermaid 代码围栏渲染为惰性加载的 SVG 图表，严格消毒并跟随明暗主题。

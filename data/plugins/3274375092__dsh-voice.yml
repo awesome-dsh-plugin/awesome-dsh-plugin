@@ -1,0 +1,6 @@
+url: https://github.com/3274375092/dsh-voice
+name: 3274375092/dsh-voice
+category: session
+description:
+  en: 'Voice input for DeepSeek Harness: speak into the microphone and the recognized text is submitted as a normal chat message, via local or browser speech recognition.'
+  zh: 语音输入插件：对着麦克风说话，识别后的文字作为普通聊天消息发送（本地模型或浏览器语音识别）。

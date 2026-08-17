@@ -1,0 +1,6 @@
+url: https://github.com/Noob-stupid/dsh-github-login
+name: Noob-stupid/dsh-github-login
+category: model
+description:
+  en: 'Visual GitHub login without a terminal: in-window device flow, token synced into the gh CLI, and host status/launch endpoints.'
+  zh: 零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。

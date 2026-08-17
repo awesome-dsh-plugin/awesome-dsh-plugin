@@ -1,0 +1,6 @@
+url: https://github.com/LIU20030725/dsh-skill-manager
+name: LIU20030725/dsh-skill-manager
+category: skill
+description:
+  en: Manage and organize your agent skills by category, tags and collections in DeepSeek Harness, with a settings panel and a slash-command folder picker.
+  zh: 在 DeepSeek Harness 中按分类、标签和集合文件夹管理你的 agent 技能，自带设置面板与输入框文件夹技能挑选器。

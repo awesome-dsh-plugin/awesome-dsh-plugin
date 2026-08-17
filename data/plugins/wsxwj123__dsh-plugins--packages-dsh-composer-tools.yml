@@ -1,0 +1,6 @@
+url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools
+name: wsxwj123/dsh-plugins#dsh-composer-tools
+category: ui
+description:
+  en: 'Composer input toolkit: arrow-key session history (first/last-line gated, IME and command-menu safe) and related input conveniences.'
+  zh: 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）等输入增强。

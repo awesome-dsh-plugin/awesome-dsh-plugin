@@ -1,0 +1,7 @@
+url: https://github.com/lehhair/dsh-diff-viewer
+name: lehhair/dsh-diff-viewer
+category: ui
+description:
+  en: PiUI-style diff viewer replacing the stock DiffBlock for write/edit tool calls.
+  zh: PiUI 风格 diff 查看器，替换 write/edit 工具调用的默认 DiffBlock。
+tarball: https://github.com/lehhair/dsh-diff-viewer/releases/latest/download/dsh-external-dsh-diff-viewer.tgz

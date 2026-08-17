@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-kb-sieve
+name: omdsh-dev/dsh-kb-sieve
+category: tools
+description:
+  en: Build auditable KB packs (SQLite FTS5) from md/txt/docx/pdf with deterministic retrieval and original-text reading.
+  zh: 从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。

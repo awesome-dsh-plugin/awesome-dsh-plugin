@@ -1,0 +1,6 @@
+url: https://github.com/Leeminjing/dsh-messages-sanitizer
+name: Leeminjing/dsh-messages-sanitizer
+category: session
+description:
+  en: Auto-repairs the messages array after a tool-dispatch crash (orphaned tool_calls / tool messages), preventing 400 INVALID_REQUEST session lock-ups.
+  zh: 工具调度崩溃后自动修复 messages 数组（孤儿 tool_calls / tool 消息），防止 400 INVALID_REQUEST 会话卡死。

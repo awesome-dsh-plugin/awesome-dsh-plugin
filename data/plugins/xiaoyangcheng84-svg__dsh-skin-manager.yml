@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyangcheng84-svg/dsh-skin-manager
+name: xiaoyangcheng84-svg/dsh-skin-manager
+category: market
+description:
+  en: 'Skin manager for the DSH web GUI: discovers installed skins and switches the active one from a dedicated Settings page, mutually exclusive, hot-reloaded without restart.'
+  zh: DSH Web GUI 皮肤管理器：自动发现已安装皮肤，在独立设置页一键互斥切换，热载入无需重启。
