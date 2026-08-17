@@ -2,5 +2,5 @@ url: https://github.com/bainianlaoyao/easy-archive
 name: bainianlaoyao/easy-archive
 category: ui
 description:
-  en: Two-step inline archive on workspace sidebar rows — one click arms a red confirm, the second archives; the archive entry is removed from the ⋮ menu.
+  en: Two-step inline archive on workspace sidebar rows — one click arms a red confirm, the second click archives; the archive entry is removed from the ⋮ menu.
   zh: 工作区侧边栏行内两击归档：点一次变红确认，再点即归档，归档项不再出现在 ⋮ 菜单里。
