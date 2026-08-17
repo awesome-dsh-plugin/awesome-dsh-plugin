@@ -534,5 +534,9 @@
  "https://github.com/kaziii/dsh-github-connector": [
   "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/pr-bar.png",
   "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/connect-github.png"
+ ],
+ "https://github.com/PicGo/dsh-plugin": [
+  "https://raw.githubusercontent.com/PicGo/dsh-plugin/main/assets/DeepSeek-PicGo.png",
+  "https://raw.githubusercontent.com/PicGo/dsh-plugin/main/assets/dsh-plugin-picgo.png"
  ]
 }
