@@ -1,0 +1,6 @@
+url: https://github.com/wsz987/dsh-channels/tree/main/packages/channels
+name: wsz987/dsh-channels#channels
+category: notify
+description:
+  en: Connects WeChat, QQ, DingTalk, Lark, and Telegram to DeepSeek Harness with unified configuration and channel-side Agent chat.
+  zh: 将微信、QQ、钉钉、飞书和 Telegram 接入 DeepSeek Harness，提供统一配置并支持在各聊天平台中直接与 Agent 对话。
