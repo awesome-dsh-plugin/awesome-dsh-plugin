@@ -1,0 +1,6 @@
+url: https://github.com/ai-eks/dsh-auth-tunnel
+name: ai-eks/dsh-auth-tunnel
+category: dev
+description:
+  en: Password-gated public access for the DSH Web GUI through quick or named Cloudflare Tunnels, with HTTP/WebSocket proxying and an in-app directory picker.
+  zh: 通过快速或命名 Cloudflare Tunnel 为 DSH Web GUI 提供密码保护的公网访问，并代理 HTTP/WebSocket 流量、改用应用内目录选择器。
