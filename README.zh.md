@@ -957,7 +957,7 @@ dsh plugin --profile web add dshmarket
 - [timwhitez/dsh-self-evolving#packages/dsh-self-evolving](https://github.com/timwhitez/dsh-self-evolving/tree/main/packages/dsh-self-evolving) — 证据优先的自进化控制器：有界生成 Cordis 候选插件，一次性真实 Loader 准入，Harbor 评测，可崩溃恢复的日志化谱系。
 - [titanwings/dsh-automation](https://github.com/titanwings/dsh-automation) — 定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。
 - [titanwings/dsh-plannotator](https://github.com/titanwings/dsh-plannotator) — 计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。
-- [toolclub/dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) — 持久化多模型 Agent 小队，可在普通发送中协作：逐成员配置主用与回退的模型/工具策略，支持按项目设默认，运行中心展示计划、重试与厂商上报的 token 用量。
+- [toolclub/dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) — 持久化多模型小队在 Settings 中配置、从 Composer 选择，并支持逐成员模型与工具策略；主 Agent 为每次发送动态规划有界 DAG，并可执行有界的审阅/修复质量回路；Run Center 展示重试和基于 Harness 官方 usage 事件的逐成员 token 用量。
 - [truelove-dreamer/dsh-plugin-hooks](https://github.com/truelove-dreamer/dsh-plugin-hooks) — Claude Code 风格生命周期 hooks：工具调用前后自动执行 shell 命令（stdin 收 JSON payload），pre-tool 非零退出即阻断调用。
 - [victorzhong0110/dsh-code-reference](https://github.com/victorzhong0110/dsh-code-reference) — 在开发前检索本地代码与 GitHub/npm 的可复用实现，评估复用与重写成本，并检查架构耦合。
 - [vlln/dsh-loop](https://github.com/vlln/dsh-loop) — 定时循环：`/loop` 命令 + loop 工具 + 活动状态条。
