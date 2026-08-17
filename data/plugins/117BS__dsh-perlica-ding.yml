@@ -1,0 +1,6 @@
+url: https://github.com/117BS/dsh-perlica-ding
+name: 117BS/dsh-perlica-ding
+category: notify
+description:
+  en: 'Perlica (Arknights: Endfield) themed tiered sound notifications: plan-ready, task-done, needs-your-input, and error tones; silent for plain chat, system-level playback (works in background), cross-platform (Windows/macOS/Linux), custom TTS sounds.'
+  zh: 明日方舟终末地佩丽卡主题分级提示音：计划出方案 / 任务完成 / 需要你回应 / 出错四档独立音效，普通问答保持安静；系统级播放（窗口在后台也响），跨平台（Windows/macOS/Linux），支持自定义 TTS 语音。

@@ -1,6 +1,6 @@
 url: https://github.com/haiziyao/dsh-vision-mix
 name: haiziyao/dsh-vision-mix
-category: model
+category: vision
 description:
-  en: Mix route for configured text and vision models, with cross-turn image follow-ups, agent screenshot analysis, session history, and image generation or editing.
-  zh: 组合已配置的文本与视觉模型，提供 Mix 路由、跨轮图片追问、Agent 截图分析、会话记录以及图片生成与编辑。
+  en: 'Combine text, vision, and image-generation APIs into one Mix model with automatic routing: text-only requests go to the chat model, user images and agent screenshots go to the vision model, follow-ups keep using the same session image, and agents can generate or edit images with session-scoped call history.'
+  zh: 把文本、识图和生图 API 组合成一个 Mix 模型并按对话内容自动路由：纯文本走聊天模型，用户图片和 Agent 截图走识图模型，后续可继续追问同一张图；还支持图片生成与编辑及会话级调用记录。

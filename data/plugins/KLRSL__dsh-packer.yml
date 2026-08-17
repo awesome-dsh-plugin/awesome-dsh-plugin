@@ -1,0 +1,6 @@
+url: https://github.com/KLRSL/dsh-packer
+name: KLRSL/dsh-packer
+category: tools
+description:
+  en: 'Agent config packer for DeepSeek Harness: pack local agent assets (skills/sessions/profiles/settings/memory) into a zip for migration or sharing, with privacy scanning, diff-based restore, pack management, and a settings panel.'
+  zh: 为 DeepSeek Harness 打造的 Agent 配置打包器：把本地 Agent 资产（Skills/会话/Profile/全局设置/记忆）打包成 zip，用于迁移或分享；带隐私安全扫描、恢复差异对比、包管理与设置面板。

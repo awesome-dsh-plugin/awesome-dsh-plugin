@@ -1,0 +1,6 @@
+url: https://github.com/Laplace-bit/dsh-smooth-stream
+name: Laplace-bit/dsh-smooth-stream
+category: ui
+description:
+  en: 'Silky streaming reveal for the Web UI: text appears at the model''s arrival rate, new lines glide in, no flicker; follow stays with the user and prefers-reduced-motion is respected.'
+  zh: 丝滑流式渲染：字跟着模型到达走、换行滑入、不闪，滚动归用户，尊重 prefers-reduced-motion。

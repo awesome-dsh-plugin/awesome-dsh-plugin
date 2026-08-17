@@ -1,0 +1,6 @@
+url: https://github.com/Z-6354/dsh-mobile-hanui
+name: Z-6354/dsh-mobile-hanui
+category: ui
+description:
+  en: 'Mobile UI shell for the DSH Web GUI: turns the desktop three-column layout into a touch-friendly phone layout (overlay drawers, draggable FAB, full-screen dialogs, infinite-scroll history) under a 1024px viewport, with zero desktop impact. - Complete mobile PWA for DSH, built on dsh-mobile-gate: secure remote-access gateway plus install-to-homescreen (manifest + service worker), offline capability, touch gestures (pull-to-refresh, edge-swipe back, pinch-zoom font), agent-done push notifications, and touch-first layout — desktop unaffected.'
+  zh: DSH Web 界面的移动端适配：窄屏下把桌面三栏布局改造成触屏友好的手机布局（覆盖式抽屉、可拖拽悬浮按钮、全屏弹窗、上滑加载历史），1024px 断点内生效，桌面端零影响。 — 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。

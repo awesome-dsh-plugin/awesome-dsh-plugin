@@ -48,7 +48,6 @@ jobs:
             }
             core.setOutput('found', 'true')
             core.setOutput('number', String(pr.number))
-            core.setOutput('base_sha', pr.base.sha)
             core.setOutput('created_at', pr.created_at)
 
       # Trusted code only: the base repo's default branch, never the PR's.
@@ -69,15 +68,24 @@ jobs:
         run: |
           set -euo pipefail
           git fetch -q origin "refs/pull/${{ steps.pr.outputs.number }}/head:pr-head"
-          BASE='${{ steps.pr.outputs.base_sha }}'
-          git cat-file -e "$BASE^{commit}" || git fetch -q origin "$BASE"
+          # The API's base.sha is a snapshot from when the PR was opened. For a
+          # PR whose head is a fork's synced main branch, diffing against that
+          # stale snapshot attributes every entry merged since to this PR — the
+          # gate then judges other people's submissions (and pins its check-run
+          # on the main-tip sha, a red X on main). The merge-base against
+          # today's main gives exactly the PR's own contribution instead.
+          BASE=$(git merge-base origin/main pr-head)
 
-          # Entry files this PR adds or modifies. The diff goes to a file
-          # first so a git failure fails the step instead of silently reading
-          # as "no changes" and reporting success on an unchecked PR.
-          # -z handles paths with spaces; --diff-filter=d ignores deletions.
+          # Entry files this PR ADDS — only new submissions face the gate.
+          # Modifying an already-listed entry (recategorize, reword) must not
+          # re-litigate repo age or commit count: those entries were accepted
+          # under the rules in force at the time, and the weekly decay scan is
+          # what watches listed entries for regressions. The diff goes to a
+          # file first so a git failure fails the step instead of silently
+          # reading as "no changes" and reporting success on an unchecked PR.
+          # -z handles paths with spaces.
           mkdir -p /tmp/prdata
-          git diff -z --name-only --diff-filter=d "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
+          git diff -z --name-only --diff-filter=A "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
           FILES=()
           while IFS= read -r -d '' f; do FILES+=("$f"); done < /tmp/prdata/diff.z
           printf 'changed entry files: %s\n' "${#FILES[@]}"

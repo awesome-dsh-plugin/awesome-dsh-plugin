@@ -14,7 +14,7 @@ import fs from 'node:fs'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
-import { CAT_IDS as ENTRY_CAT_IDS } from './lib/entries.mjs'
+import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -25,6 +25,8 @@ const SCREENSHOTS_FILE = 'data/screenshots.json'
 fs.mkdirSync('docs', { recursive: true })
 for (const f of fs.readdirSync('site/assets')) fs.copyFileSync(`site/assets/${f}`, `docs/${f}`)
 const NPM_MAP_FILE = 'data/npm-map.json'
+// url -> prebuilt release tarball, declared per entry in data/plugins/*.yml
+const tarballMap = Object.fromEntries(readEntries().filter((e) => e.tarball).map((e) => [e.url, e.tarball]))
 // Single source of truth, shared with the README generator (scripts/lib/entries.mjs).
 const CAT_IDS = ENTRY_CAT_IDS
 
@@ -173,6 +175,11 @@ for (const e of ordered) {
     ? `dsh plugin --profile web add github:${e.repo}#path:/${e.sub}`
     : `dsh plugin --profile web add github:${e.repo}`
   e.npm = npmMap[e.url]?.npm ?? null
+  // Optional author-declared prebuilt release tarball (data/plugins/*.yml).
+  // Some plugins ship only a built tarball and are not installable from
+  // source at all, so `github:owner/repo` would hand users a broken command.
+  e.tarball = tarballMap[e.url] ?? null
+  e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
   e.stars = starsMap[e.url]?.stars ?? null
   e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
 }
@@ -372,6 +379,7 @@ for (const loc of LOCALES) {
 
     const cmds = []
     if (e.npm) cmds.push({ cmd: `dsh plugin --profile web add ${e.npm}`, note: loc.strings.NPM_C })
+    if (e.cmdTarball) cmds.push({ cmd: e.cmdTarball, note: loc.strings.TGZ_C })
     cmds.push({ cmd: e.cmdGit, note: loc.strings.GH_C })
     const install = cmds.map(({ cmd, note }) => `<p class="note" style="margin:.2rem 0 .45rem"># ${note}</p>
     <div class="cmd"><pre translate="no">${esc(cmd)}</pre><button type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button></div>`).join('\n    ')
@@ -518,7 +526,7 @@ const registry = {
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
       stars: e.stars,
-      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit,
+      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
@@ -558,9 +566,13 @@ ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code
 `)
 
 // shields.io endpoint badge — the READMEs embed this instead of a hand-written
-// count, so the build never has to touch source files
+// count, so the build never has to touch source files.
+//
+// cacheSeconds is how long shields' CDN serves a stale count: the badge sits
+// directly above a list whose length anyone can count, so an hour of drift
+// reads as a bug in the list. 300 is shields' floor for endpoint badges.
 fs.writeFileSync('docs/count.json', JSON.stringify({
-  schemaVersion: 1, label: 'plugins', message: String(N), color: 'c0392b', cacheSeconds: 3600,
+  schemaVersion: 1, label: 'plugins', message: String(N), color: 'c0392b', cacheSeconds: 300,
 }) + '\n')
 
 console.log(`site built: ${N} rows × ${LOCALES.length} locales + sitemap + count badge`)

@@ -1,0 +1,6 @@
+url: https://github.com/2008924/dsh-progress-viz
+name: 2008924/dsh-progress-viz
+category: dev
+description:
+  en: 'Real-time stage, ETA & cost dashboard for headless dsh tasks: turns the black-box session event stream into a live multi-task grid (cordis plugin + standalone local dashboard, no API calls).'
+  zh: headless dsh 任务的实时阶段、ETA 与成本看板：把黑盒会话事件流变成实时多任务网格（cordis 插件 + 本地独立看板，零 API 调用）。

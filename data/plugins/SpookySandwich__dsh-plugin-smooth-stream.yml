@@ -1,5 +1,5 @@
-url: https://github.com/SpookySandwich/dsh-smooth-stream
-name: SpookySandwich/dsh-smooth-stream
+url: https://github.com/SpookySandwich/dsh-plugin-smooth-stream
+name: SpookySandwich/dsh-plugin-smooth-stream
 category: ui
 description:
   en: Better streaming text animation for DeepSeek Harness.

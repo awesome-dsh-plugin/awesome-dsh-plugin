@@ -24,6 +24,18 @@ npm ci
 node scripts/generate-readme.mjs
 ```
 
+⚠️ **A description containing `: ` must be quoted** — otherwise YAML reads it as a nested key. / **描述中含 `: `（冒号加空格）时必须加引号**，否则 YAML 会把它当成嵌套键：
+
+```yaml
+description:
+  en: 'Vision toolkit: OCR, grounding and pixel diff.'   # ✅ quoted / 加引号
+  zh: '识图工具包：OCR、定位与像素比对。'                    # 中文全角冒号无此问题，加引号也无妨
+```
+
+```yaml
+  en: Vision toolkit: OCR, grounding and pixel diff.     # ❌ breaks the parser / 解析失败
+```
+
 **Why one file per plugin / 为什么一个插件一个文件：** everyone used to append to the same spot in the same README section, so merging one PR broke the next. Separate files never collide. / 以前所有人都往同一分类的同一位置追加，合并一个 PR 就会撞掉下一个。独立文件永不冲突。
 
 Valid `category` values / 可用的 `category` 取值：
@@ -66,6 +78,13 @@ Maintainers also add notable plugins directly — the list grows through both co
 Recommended for a better install experience / 推荐（更好的安装体验）：
 
 - Publish your plugin to npm — prebuilt installs skip the `allowBuilds` build-approval step. / 发布 npm 包：预构建安装免 `allowBuilds` 构建授权。
+- Not publishing to npm? Attach a prebuilt tarball to a GitHub Release and point at it with an optional `tarball:` field — storefronts will offer it instead of the build-from-source command. Required if your repo can't be installed from source at all. / 不发 npm 也可以：把预构建 tarball 附加到 GitHub Release，并用可选的 `tarball:` 字段指向它，市场会优先展示它而不是源码构建命令。**如果你的仓库根本无法从源码安装，这一项是必需的。**
+
+  ```yaml
+  tarball: https://github.com/owner/repo/releases/latest/download/your-plugin.tgz
+  ```
+
+  Must be an `https` `.tgz` on GitHub's own release hosting — the list won't hand users a download link it can't vouch for. / 必须是 GitHub Release 托管的 `https` `.tgz`——列表不会给用户一个无法担保来源的下载链接。
 - Declare official `@deepseek-ai/*` packages as `peerDependencies`, not `dependencies`. / 官方 `@deepseek-ai/*` 包请用 `peerDependencies` 声明。
 
 The website rebuilds automatically after merge — no need to touch anything else. / 合并后网站自动重建，无需改动其他文件。

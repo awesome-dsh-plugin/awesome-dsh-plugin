@@ -1,0 +1,6 @@
+url: https://github.com/siruignaw-sys/dsh-tool-bandit-search
+name: siruignaw-sys/dsh-tool-bandit-search
+category: tools
+description:
+  en: A `search` tool that learns to pick between fast and thorough search strategies using a contextual bandit (Thompson sampling), improving from real usage instead of a fixed heuristic.
+  zh: '使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 '

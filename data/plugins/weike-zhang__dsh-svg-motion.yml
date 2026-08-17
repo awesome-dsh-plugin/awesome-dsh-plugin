@@ -1,0 +1,6 @@
+url: https://github.com/weike-zhang/dsh-svg-motion
+name: weike-zhang/dsh-svg-motion
+category: tools
+description:
+  en: 'Turn any SVG logo into a motion video inside DSH: an `animate_svg` tool renders a transparent 30fps assembly animation (parts fly in, or the whole mark settles) and synthesizes an MP4 with ffmpeg.'
+  zh: '在 DSH 里把任意 SVG logo 变成动效视频：`animate_svg` 工具渲染透明背景 30fps 组装动画（零件飞入或整体落位），并用 ffmpeg 合成 MP4。'

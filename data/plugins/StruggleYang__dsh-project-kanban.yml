@@ -1,0 +1,6 @@
+url: https://github.com/StruggleYang/dsh-project-kanban
+name: StruggleYang/dsh-project-kanban
+category: tools
+description:
+  en: 'Per-workspace project kanban board: nine kanban_* model tools for agent-driven planning plus a browser board UI, with disk persistence, undo, templates, and archiving.'
+  zh: '按工作区（项目）隔离的项目看板：9 个 kanban_* 模型工具供 Agent 规划时写卡，另带浏览器看板 UI，支持磁盘持久化、撤销、模板与归档。'
