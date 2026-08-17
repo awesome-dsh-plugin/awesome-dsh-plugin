@@ -404,6 +404,7 @@ dsh plugin --profile web add dshmarket
 
 ### Sessions & Messages
 
+- [Sttrevens/dsh-linked-folders](https://github.com/Sttrevens/dsh-linked-folders) - Multi-folder workspace: a durable global linked-folders list plus per-session on-the-fly linking (link_folder/unlink_folder), managed from the Web sidebar.
 - [3274375092/dsh-voice](https://github.com/3274375092/dsh-voice) - Voice input for DeepSeek Harness: speak into the microphone and the recognized text is submitted as a normal chat message, via local or browser speech recognition.
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) - Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) - Rewind conversation and workspace state, powered by a persistent Change Ledger.
