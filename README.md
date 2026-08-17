@@ -1117,6 +1117,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ilharp/dsh-tool-approval](https://github.com/ilharp/dsh-tool-approval) - Manual approval mode ("Manual Mode" / "Ask Mode").
 - [izz-BLUE/dsh-devtools](https://github.com/izz-BLUE/dsh-devtools) - Metadata-first runtime profiler for DSH agents: turn/step traces, model and tool wall-time timelines, provider usage, retries, errors, and live or historical sessions.
 - [Jayden-X-L/forkprobe](https://github.com/Jayden-X-L/forkprobe) - Compare multiple skills on the same task and pick the winner.
+- [JayDong9130/dsh-evolution-lab](https://github.com/JayDong9130/dsh-evolution-lab) - Evidence-backed Skill self-evolution for DeepSeek Harness: redacted trajectory learning, quarantined proposals, arena validation, canary monitoring, automatic rollback.
 - [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) - Collapsible right-docked web terminal (xterm.js) bridged to a host PTY over WebSocket: bash/zsh switching, resizable panel, and fold/unfold that keeps the session alive.
 - [Jesse-njx/dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) - The model switch for DSH: point it at any OpenAI-compatible endpoint, with curated free/cheap DeepSeek provider presets and automatic fallback when a free tier rate-limits you.
 - [Jesse-njx/dsh-tmuxctl](https://github.com/Jesse-njx/dsh-tmuxctl) - Take control of your tmux panes: list/send-keys/capture, run long jobs in a pane with watch mode, and approval-gated destructive commands.
