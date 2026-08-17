@@ -538,5 +538,17 @@
  "https://github.com/PicGo/dsh-plugin": [
   "https://raw.githubusercontent.com/PicGo/dsh-plugin/main/assets/DeepSeek-PicGo.png",
   "https://raw.githubusercontent.com/PicGo/dsh-plugin/main/assets/dsh-plugin-picgo.png"
+ ],
+ "https://github.com/a903067276-rgb/dsh-file-mentions": [
+  "https://raw.githubusercontent.com/a903067276-rgb/dsh-file-mentions/main/assets/screenshot.png"
+ ],
+ "https://github.com/a903067276-rgb/dsh-file-upload": [
+  "https://raw.githubusercontent.com/a903067276-rgb/dsh-file-upload/main/assets/screenshot.png"
+ ],
+ "https://github.com/a903067276-rgb/dsh-hud": [
+  "https://raw.githubusercontent.com/a903067276-rgb/dsh-hud/main/assets/hud-panel.png"
+ ],
+ "https://github.com/a903067276-rgb/dsh-plan-switch": [
+  "https://raw.githubusercontent.com/a903067276-rgb/dsh-plan-switch/main/assets/plan-button.png"
  ]
 }
