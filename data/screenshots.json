@@ -660,5 +660,8 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
+ ],
+ "https://github.com/weisiren000/dsh-remote-ssh-ops": [
+  "https://raw.githubusercontent.com/weisiren000/dsh-remote-ssh-ops/main/docs/assets/remote-workbench-preview.png"
  ]
 }
