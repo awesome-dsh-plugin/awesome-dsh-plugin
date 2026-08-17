@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-pet
+name: DamonKoy/dsh-web-ui#dsh-pet
+category: ui
+description:
+  en: 'Multi-pet companion for the dsh web GUI: a registry-driven floating pet that reacts to model activity.'
+  zh: dsh web GUI 多桌宠伴侣：注册表驱动的悬浮宠物，随模型活动实时反应。

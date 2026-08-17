@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-gate
+name: 863683348/dsh-plugin-gate
+category: dev
+description:
+  en: 'Installation safety gate for DSH plugins: antivirus-style scan of install scripts, permissions, secrets and network callbacks on local directories or npm tarballs, returning a BLOCK/WARN/PASS verdict before "dsh plugin add".'
+  zh: DSH 插件的安装安全闸门：在 "dsh plugin add" 前对本地目录或 npm 包做"杀毒"式扫描（安装脚本、权限、密钥、网络回连），给出 BLOCK/WARN/PASS 判定。

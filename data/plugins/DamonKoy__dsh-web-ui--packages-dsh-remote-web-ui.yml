@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-remote-web-ui
+name: DamonKoy/dsh-web-ui#dsh-remote-web-ui
+category: ui
+description:
+  en: 'Mobile remote control for the dsh web GUI: scan-to-pair QR entry with one-time pairing tokens.'
+  zh: dsh web GUI 移动端远程控制：扫码配对 QR 入口、一次性配对 token。

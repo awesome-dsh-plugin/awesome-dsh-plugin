@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-tool-describe-image
+name: DamonKoy/dsh-web-ui#dsh-tool-describe-image
+category: tools
+description:
+  en: 'Gives a text-only model image understanding via a vision-language model, exposed as a `describe_image` tool.'
+  zh: describe_image 模型工具：让纯文本模型通过视觉语言模型获得图像理解能力。

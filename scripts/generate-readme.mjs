@@ -6,7 +6,7 @@
 //   node scripts/generate-readme.mjs --check  # verify in sync (CI)
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
-import { CAT_IDS, ZH_EMOJI, orderEntries, readEntries, validateEntries } from './lib/entries.mjs'
+import { BASE_LOCALE, CAT_EMOJI, CAT_IDS, orderEntries, readEntries, validateEntries } from './lib/entries.mjs'
 
 const CHECK = process.argv.includes('--check')
 
@@ -31,10 +31,10 @@ function anchor(heading) {
     .replaceAll(' ', '-')
 }
 
-/** README.zh.md headings carry an emoji prefix; README.md headings do not. */
+/** Translated READMEs carry an emoji prefix on headings; README.md does not. */
 function headingFor(loc, id) {
   const name = loc.categories[id]
-  return loc.code === 'en' ? name : `${ZH_EMOJI[id]} ${name}`
+  return loc.code === 'en' ? name : `${CAT_EMOJI[id]} ${name}`
 }
 
 // The non-category rows of the Contents list. awesome-lint wants one single
@@ -98,6 +98,7 @@ const ordered = orderEntries(entries)
 const used = CAT_IDS.filter((id) => ordered.some((e) => e.category === id))
 
 let stale = false
+const untranslated = []
 for (const loc of LOCALES) {
   const shell = TOC_SHELL[loc.code]
   if (!shell) {
@@ -114,7 +115,13 @@ for (const loc of LOCALES) {
     .map((id) => {
       const lines = ordered
         .filter((e) => e.category === id)
-        .map((e) => `- [${e.name}](${e.url}) ${loc.sep} ${e.description[loc.code]}`)
+        .map((e) => {
+          // Untranslated entries render their English text rather than blocking
+          // the build — an honest gap a maintainer closes later.
+          const d = e.description[loc.code] ?? e.description[BASE_LOCALE]
+          if (e.description[loc.code] === undefined) untranslated.push(`${loc.readme}: ${e.url}`)
+          return `- [${e.name}](${e.url}) ${loc.sep} ${d}`
+        })
       return `### ${headingFor(loc, id)}\n\n${lines.join('\n')}`
     })
     .join('\n\n')
@@ -146,7 +153,26 @@ for (const loc of LOCALES) {
   if (smuggled.length || missing.length) stale = true
 }
 
+if (untranslated.length) {
+  console.log(`\n${untranslated.length} entr${untranslated.length === 1 ? 'y' : 'ies'} awaiting translation (showing ${BASE_LOCALE} for now):`)
+  for (const u of untranslated.slice(0, 20)) console.log(`  ${u}`)
+  if (untranslated.length > 20) console.log(`  … and ${untranslated.length - 20} more`)
+}
+
 if (stale) {
   console.error('\nRun `node scripts/generate-readme.mjs` and commit the result.')
   process.exit(1)
+}
+
+// contributing.md lists the valid category values for contributors to copy.
+// It drifted once already — `usage` and `vision` were added to the taxonomy
+// and the docs kept advertising the old twelve — so the list is checked here
+// rather than trusted to stay in step by hand.
+{
+  const doc = fs.readFileSync('contributing.md', 'utf8')
+  const want = CAT_IDS.map((c) => `\`${c}\``).join(' ')
+  if (!doc.includes(want)) {
+    console.error(`contributing.md: the category list is out of date — it should read\n  ${want}`)
+    process.exit(1)
+  }
 }

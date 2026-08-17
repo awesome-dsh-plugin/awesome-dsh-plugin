@@ -1,0 +1,6 @@
+url: https://github.com/kangjinghang/dsh-xueqiu
+name: kangjinghang/dsh-xueqiu
+category: ui
+description:
+  en: 'Xueqiu (Snowball) market panel docked above the composer: A-share/HK/US quotes and indices, watchlist, candlestick K-line with volume, MAs and crosshair tooltip, hot list, search, 7x24 news, plus a draggable mini index badge — no login needed.'
+  zh: 雪球行情面板：嵌入输入框上方，免登录查看 A股/港美股行情、指数与自选股，K线蜡烛图（成交量/均线/十字光标）、热榜、搜索、7×24 快讯，另有可拖动迷你指数徽章。

@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-ssh
+name: DamonKoy/dsh-web-ui#dsh-ssh
+category: tools
+description:
+  en: 'Remote SSH operations for the dsh web GUI: host config store and persisted sessions.'
+  zh: dsh web GUI 远程 SSH 操作：主机配置存储、持久化会话。

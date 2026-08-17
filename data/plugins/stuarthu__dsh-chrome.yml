@@ -1,0 +1,6 @@
+url: https://github.com/stuarthu/dsh-chrome
+name: stuarthu/dsh-chrome
+category: tools
+description:
+  en: Chrome side panel that embeds the dsh web UI and lets the agent read the current page, capture HTTP traffic, and drive the browser.
+  zh: Chrome 侧边栏内嵌 dsh 网页界面，让 agent 读取当前页面、捕获 HTTP 流量并操作浏览器。

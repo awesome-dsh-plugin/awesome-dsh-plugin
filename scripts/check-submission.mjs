@@ -5,6 +5,7 @@
 //      whole tree is enumerated rather than a guessed list of directories)
 //   2. the repo is at least MIN_AGE_DAYS old and has >= MIN_COMMITS commits
 //   3. the repo exists and isn't archived
+//   4. the repo is not DSH itself (it declares `dsh.bundle` and would pass 1-3)
 //
 // Needs GITHUB_TOKEN: the git-tree enumeration and the commit count are API
 // calls, and unauthenticated (60/hr per IP) is nowhere near enough. That is
@@ -21,6 +22,15 @@ const MIN_AGE_DAYS = 1
 const MIN_COMMITS = 10
 const CONCURRENCY = 6
 const MAX_TREE_PKGS = 40
+
+// DSH itself declares `dsh.bundle`: packages/bundle/base/package.json is
+// @deepseek-ai/dsh-base, and it is the 19th of 248 manifests in that tree, so
+// the enumeration reaches it well inside MAX_TREE_PKGS and the age and commit
+// thresholds are met by years. The harness would therefore pass the gate as a
+// plugin for itself. Listing the product in a list of plugins for the product
+// is the one wrong entry every visitor would recognise, so it is refused by
+// identity rather than by contract.
+const FIRST_PARTY_REPOS = new Set(['deepseek-ai/deepseek-harness'])
 
 // Entries submitted before the gate existed are judged by the old rules; only
 // the manifest check applies to them. Set to when the rule change landed.
@@ -88,8 +98,17 @@ async function hasBundle(repo, sub) {
 
   const tree = await api(`repos/${repo}/git/trees/HEAD?recursive=1`)
   if (tree.status !== 200) return { ok: null, why: `could not read the repository tree (HTTP ${tree.status})` }
-  const pkgs = (tree.body?.tree ?? []).filter((t) => t.path?.endsWith('package.json')).map((t) => t.path).slice(0, MAX_TREE_PKGS)
-  if (!pkgs.length) return { ok: false, why: 'no `package.json` anywhere in the repository' }
+  // A recursive tree is capped by the API (~100k entries / 7MB) and the
+  // response says so with `truncated`, while still being a 200. Reading a
+  // partial listing as the whole repository turns "we could not see all of it"
+  // into "there is no manifest", which is a definite rejection drawn from an
+  // admittedly incomplete answer. Unknown, not absent — same as a failed fetch.
+  if (tree.body?.truncated) {
+    return { ok: null, why: 'the repository tree is too large for the API to return in full' }
+  }
+  const found = (tree.body?.tree ?? []).filter((t) => t.path?.endsWith('package.json')).map((t) => t.path)
+  if (!found.length) return { ok: false, why: 'no `package.json` anywhere in the repository' }
+  const pkgs = found.slice(0, MAX_TREE_PKGS)
 
   let sawClient = false
   for (const p of pkgs) {
@@ -101,12 +120,13 @@ async function hasBundle(repo, sub) {
     if (dsh.bundle) return { ok: true, at: p }
     if (dsh.client) sawClient = true
   }
-  return {
-    ok: false,
-    why: sawClient
-      ? 'declares only `dsh.client` — that alone is not installable'
-      : `no \`dsh.bundle\` in any of ${pkgs.length} package.json file(s)`,
+  if (sawClient) return { ok: false, why: 'declares only `dsh.client` — that alone is not installable' }
+  // Same reasoning as a truncated tree: with more manifests than the cap, the
+  // ones past it were never read, so absence here is not established.
+  if (found.length > pkgs.length) {
+    return { ok: null, why: `the repository has ${found.length} package.json files, more than the ${MAX_TREE_PKGS} this check reads` }
   }
+  return { ok: false, why: `no \`dsh.bundle\` in any of ${pkgs.length} package.json file(s)` }
 }
 
 async function commitCount(repo) {
@@ -121,6 +141,9 @@ async function commitCount(repo) {
 
 async function check(entry) {
   const { repo, sub } = decompose(entry.url)
+  if (FIRST_PARTY_REPOS.has(repo.toLowerCase())) {
+    return ['this is DeepSeek Harness itself, not a plugin for it']
+  }
   const meta = await api(`repos/${repo}`)
   if (meta.status === 404) return [`repository not found: https://github.com/${repo}`]
   if (meta.status !== 200) {
@@ -169,9 +192,14 @@ if (ONLY_LIST) {
   }
 }
 
+// `checked` is reported separately from `ok` on purpose. Writing ok:true here
+// once let the workflow announce "repo old enough, enough commits" for a repo
+// three hours old, because nothing had been examined at all — a gate that
+// cannot tell "passed" from "never ran" is worse than no gate, since it is
+// trusted.
 if (!targets.length) {
   console.log('no entry files added or changed — nothing to verify')
-  if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: true, failures: [] }, null, 1))
+  if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: true, checked: 0, failures: [] }, null, 1))
   process.exit(0)
 }
 console.log(`checking ${targets.length} entr${targets.length === 1 ? 'y' : 'ies'}` + (gateApplies ? '' : ' (age/commit gate not applied — PR predates the rule)'))
@@ -186,7 +214,7 @@ for (let i = 0; i < targets.length; i += CONCURRENCY) {
   }
 }
 
-if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, failures }, null, 1))
+if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures }, null, 1))
 
 if (!failures.length) {
   console.log('all checked entries pass')

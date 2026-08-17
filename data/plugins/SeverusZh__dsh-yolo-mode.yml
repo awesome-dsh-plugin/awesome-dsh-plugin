@@ -1,0 +1,6 @@
+url: https://github.com/SeverusZh/dsh-yolo-mode
+name: SeverusZh/dsh-yolo-mode
+category: workflow
+description:
+  en: LLM auto-approval for sandbox escalation requests, with presets and a fail-closed fallback.
+  zh: 沙箱升权申请的 LLM 自动审批：内置预设，fail-closed 兜底。

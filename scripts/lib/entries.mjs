@@ -9,16 +9,28 @@ import { load as yamlLoad, dump as yamlDump } from 'js-yaml'
 
 export const PLUGINS_DIR = 'data/plugins'
 
+// Locales the list publishes, in sync with site/locales.mjs.
+//
+// Only BASE_LOCALE is a contributor's responsibility. Asking submitters for
+// every translation just filters for bilingual authors, not for good plugins,
+// and it bounced a steady stream of otherwise-fine PRs. A missing translation
+// is maintenance work for us, not a defect in their submission — so entries
+// validate on English alone and generation falls back to it, leaving a
+// translation to be filled in afterwards.
+export const LOCALE_CODES = ['en', 'zh']
+export const BASE_LOCALE = 'en'
+
 // Category order is canonical: it drives README section order, site ordering,
 // chips and the sitemap. Kept in sync with CAT_IDS in build-site.mjs and the
 // two `categories` blocks in site/locales.mjs (reorder-categories.py rewrites
 // build-site.mjs by regex, so that array must stay on one line).
 export const CAT_IDS = ['ui', 'usage', 'theme', 'model', 'session', 'memory', 'tools', 'vision', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
 
-// The emoji prefixes live only in README.zh.md — site/locales.mjs stores the
-// bare names because build-site matches headings by substring. A generator has
-// to carry them, or regenerating would silently strip every Chinese heading.
-export const ZH_EMOJI = {
+// Every README except the English one prefixes its headings with an emoji —
+// site/locales.mjs stores the bare names because build-site matches headings
+// by substring. A generator has to carry them, or regenerating would silently
+// strip the prefix from every translated heading.
+export const CAT_EMOJI = {
   ui: '🎨',
   usage: '💰',
   theme: '🎭',
@@ -59,14 +71,16 @@ export function readEntries(dir = PLUGINS_DIR) {
       // like `en: Foo bar: baz` — an unquoted scalar containing ": " is a
       // mapping to YAML. Say so, because the parser's own message ("bad
       // indentation of a mapping entry") points nowhere useful.
+      const loc = LOCALE_CODES.join('|')
+      const head = new RegExp(`^\\s+(${loc}):\\s`)
       const culprit = text
         .split('\n')
-        .find((l) => /^\s+(en|zh):\s/.test(l) && /:\s/.test(l.replace(/^\s+(en|zh):\s/, '')) && !/^\s+(en|zh):\s*['"]/.test(l))
+        .find((l) => head.test(l) && /:\s/.test(l.replace(head, '')) && !new RegExp(`^\\s+(${loc}):\\s*['"]`).test(l))
       const hint = culprit
         ? `\n\n  A description containing ": " must be quoted:\n` +
-          `    ${culprit.trim().replace(/^(en|zh):\s*/, (m) => m)}\n` +
+          `    ${culprit.trim()}\n` +
           `  becomes\n` +
-          `    ${culprit.trim().replace(/^((en|zh):\s*)(.*)$/, (_, p, __, v) => `${p}'${v.replaceAll("'", "''")}'`)}`
+          `    ${culprit.trim().replace(new RegExp(`^((${loc}):\\s*)(.*)$`), (_, p, __, v) => `${p}'${v.replaceAll("'", "''")}'`)}`
         : ''
       throw new Error(`${full}: invalid YAML — ${e.reason ?? e.message}${hint}`)
     }
@@ -117,10 +131,16 @@ export function validateEntries(entries) {
     if (!CAT_IDS.includes(e.category)) {
       problems.push(`${at}: "category" must be one of ${CAT_IDS.join(', ')} (got ${JSON.stringify(e.category)})`)
     }
-    for (const loc of ['en', 'zh']) {
+    for (const loc of LOCALE_CODES) {
       const d = e.description?.[loc]
-      if (typeof d !== 'string' || !d.trim()) problems.push(`${at}: "description.${loc}" is required`)
-      else if (d.includes('\n')) problems.push(`${at}: "description.${loc}" must be a single line`)
+      if (d === undefined && loc !== BASE_LOCALE) continue // a maintainer fills this in
+      if (typeof d !== 'string' || !d.trim()) {
+        problems.push(
+          loc === BASE_LOCALE
+            ? `${at}: "description.${BASE_LOCALE}" is required`
+            : `${at}: "description.${loc}" is present but empty — omit the key instead`,
+        )
+      } else if (d.includes('\n')) problems.push(`${at}: "description.${loc}" must be a single line`)
     }
 
     // Optional prebuilt tarball. Deliberately a URL and not a command string:
@@ -142,7 +162,12 @@ export function orderEntries(entries) {
 }
 
 export function dumpEntry(e) {
-  const doc = { url: e.url, name: e.name, category: e.category, description: { en: e.description.en, zh: e.description.zh } }
+  // Omit absent translations rather than writing empty keys, so "not yet
+  // translated" stays distinguishable from "translated to nothing".
+  const description = Object.fromEntries(
+    LOCALE_CODES.filter((loc) => typeof e.description?.[loc] === 'string' && e.description[loc].trim()).map((loc) => [loc, e.description[loc]]),
+  )
+  const doc = { url: e.url, name: e.name, category: e.category, description }
   if (e.tarball) doc.tarball = e.tarball
   return yamlDump(doc, { lineWidth: -1, noRefs: true, quotingType: '"', forceQuotes: false })
 }
