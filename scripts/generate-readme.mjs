@@ -163,3 +163,16 @@ if (stale) {
   console.error('\nRun `node scripts/generate-readme.mjs` and commit the result.')
   process.exit(1)
 }
+
+// contributing.md lists the valid category values for contributors to copy.
+// It drifted once already — `usage` and `vision` were added to the taxonomy
+// and the docs kept advertising the old twelve — so the list is checked here
+// rather than trusted to stay in step by hand.
+{
+  const doc = fs.readFileSync('contributing.md', 'utf8')
+  const want = CAT_IDS.map((c) => `\`${c}\``).join(' ')
+  if (!doc.includes(want)) {
+    console.error(`contributing.md: the category list is out of date — it should read\n  ${want}`)
+    process.exit(1)
+  }
+}

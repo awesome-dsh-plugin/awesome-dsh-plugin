@@ -41,7 +41,9 @@ description:
 **Why one file per plugin / 为什么一个插件一个文件：** everyone used to append to the same spot in the same README section, so merging one PR broke the next. Separate files never collide. / 以前所有人都往同一分类的同一位置追加，合并一个 PR 就会撞掉下一个。独立文件永不冲突。
 
 Valid `category` values / 可用的 `category` 取值：
-`ui` `theme` `model` `session` `memory` `tools` `skill` `workflow` `notify` `dev` `market` `fun`
+`ui` `usage` `theme` `model` `session` `memory` `tools` `vision` `skill` `workflow` `notify` `dev` `market` `fun`
+
+This set is not fixed — see the note on categories under [how submissions are reviewed](#how-submissions-are-reviewed--收录如何评审). / 这组取值不是固定的，说明见[收录如何评审](#how-submissions-are-reviewed--收录如何评审)中关于分类的那条。
 
 Monorepo subpackages / monorepo 子包: point `url` at the subdirectory and use `owner/repo#subname` as the `name`, e.g. `url: https://github.com/owner/repo/tree/main/packages/my-plugin`. The filename becomes `owner__repo--packages-my-plugin.yml`.
 
@@ -75,7 +77,7 @@ Requirements / 要求：
 - Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your repo. / 为仓库添加 `dsh-plugin` topic。
 - Descriptions state what the plugin does — no superlatives or marketing. / 描述只说功能，不带营销词。
 - **The description must be accurate.** It is read as a claim about your plugin, and it is checked against your code. If you write "46 tools across six domains", there should be 46 tools and six domains; if you name a command or an API, it should exist. Overstating is the one thing that gets an otherwise-good plugin sent back. / **描述必须属实。** 它会被当作对你插件的声明，并与代码核对。写「46 个工具、六大领域」，就应该真有 46 个工具和六个领域；提到某个命令或 API，它就应该存在。夸大是让一个本来不错的插件被打回的主要原因。
-- **The category must match what the plugin does**, not where you'd like it to appear. / **分类要贴合插件实际做的事**，而不是你希望它出现在哪里。
+- **Pick the category that matches what the plugin does**, not where you'd like it to appear. A near miss is fixed by a maintainer, not bounced back. / **选贴合插件实际做的事的分类**，而不是你希望它出现在哪里。选得不够准的，维护者会直接改，不会打回。
 
 Maintainers also add notable plugins directly — the list grows through both community PRs and editorial curation. / 维护者也会主动收录值得关注的插件——列表由社区 PR 与编辑精选共同生长。
 
@@ -88,7 +90,7 @@ CI 通过是**前置条件**，不是结论。CI 校验的是提交的形式—�
 What that review looks at / 评审会看：
 
 1. **Does the code do what the entry claims** — including any numbers or API names in the description. / 代码是否与条目声明一致，包括描述里的数字与 API 名称。
-2. **Is the category right.** / 分类是否正确。
+2. **Is the category reasonable.** Nobody gets sent back over a category — if a better one fits, a maintainer just changes it. The taxonomy itself keeps moving: categories get split as they grow (that's where `usage` and `vision` came from) and renamed or merged when they stop being useful, so today's best fit may be re-filed later. Pick the closest one and don't agonise. / 分类是否合理。**不会有人因为分类被打回**——如果有更贴切的，维护者直接改。分类体系本身也在变：某一类长大了就会拆分（`usage` 与 `vision` 就是这么来的），不再有用的会改名或合并，所以今天最贴切的归类以后也可能被重新调整。挑最接近的一个即可，不必纠结。
 3. **Is it real, working code** rather than a placeholder or a wrapper around nothing. / 是否是真实可用的代码，而非占位或空壳。
 4. **Is it already covered** by an entry on the list. Where two plugins do the same thing, whoever got here first keeps the slot — but that is a tiebreaker, not tenure. Being listed is not permanent: entries that stop being maintained, behave badly, or carry obvious defects get removed. So a fork *is* added when it is the better-kept one, or when it genuinely adds something. The rule is not first-come; the rule is whichever is better. / 是否已被现有条目覆盖。两个插件做同一件事时，先来者保留位置——但这只是平局时的排序依据，不是既得利益。收录不是永久的：停止维护、有恶意行为、存在明显缺陷的条目会被移除。所以一个分叉**是可以**被收录的——只要它维护得更好，或者确实做了新东西。规则不是先来后到，规则是谁更好。
 5. **Anything alarming in the source** — obfuscated code, credential exfiltration, surprising install-time behaviour. Being listed is still **not** a security review (see the warning at the top of the README); this is a sanity check, not an audit. / 源码中是否有可疑之处——混淆代码、凭据外传、异常的安装期行为。收录仍**不等于**做过安全审查（见 README 顶部警告），这只是常识性检查，不是审计。
