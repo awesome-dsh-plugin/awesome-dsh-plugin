@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/statusline
+name: JohnXu22786/statusline
+category: session
+description:
+  en: 'Live terminal status line for the current session: model, context usage bar, sub-agent count, rate-limit state, elapsed time and clock in one refreshed line, with structured JSON output for other plugins to consume.'
+  zh: '当前会话的实时终端状态栏：一行刷新显示模型、上下文占用条、子 agent 数、限流状态、会话时长与当前时间，并输出结构化 JSON 供其他插件直接消费。'
