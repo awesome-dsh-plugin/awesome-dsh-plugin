@@ -789,5 +789,8 @@
   "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-worktree.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-shell.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel.png"
+ ],
+ "https://github.com/detongz/dsh-client-ui-obsidian-memory": [
+  "https://raw.githubusercontent.com/detongz/dsh-client-ui-obsidian-memory/main/assets/screenshot-panel.png"
  ]
 }
