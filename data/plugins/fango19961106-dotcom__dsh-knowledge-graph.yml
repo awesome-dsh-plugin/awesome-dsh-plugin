@@ -1,0 +1,6 @@
+url: https://github.com/fango19961106-dotcom/dsh-knowledge-graph
+name: fango19961106-dotcom/dsh-knowledge-graph
+category: memory
+description:
+  en: 'Durable knowledge tools for DeepSeek Harness: kg_remember / kg_search / kg_recent over one embedded node:sqlite FTS5 store — zero npm dependencies, survives session ends and preset switches.'
+  zh: 为 DeepSeek Harness 提供持久知识工具：kg_remember / kg_search / kg_recent 基于内嵌 node:sqlite FTS5 全文检索——零 npm 依赖，会话结束与预设切换后数据不丢失。
