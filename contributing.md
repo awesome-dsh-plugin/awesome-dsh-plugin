@@ -74,8 +74,26 @@ Requirements / 要求：
 - The project is actively maintained. A periodic scan flags entries whose repo is gone, archived, or long dormant; they're collected in a tracking issue and removed after review. / 项目处于活跃维护状态。定期扫描会标记仓库消失、已归档或长期停更的条目，汇总到一个跟踪 issue，经确认后移除。
 - Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your repo. / 为仓库添加 `dsh-plugin` topic。
 - Descriptions state what the plugin does — no superlatives or marketing. / 描述只说功能，不带营销词。
+- **The description must be accurate.** It is read as a claim about your plugin, and it is checked against your code. If you write "46 tools across six domains", there should be 46 tools and six domains; if you name a command or an API, it should exist. Overstating is the one thing that gets an otherwise-good plugin sent back. / **描述必须属实。** 它会被当作对你插件的声明，并与代码核对。写「46 个工具、六大领域」，就应该真有 46 个工具和六个领域；提到某个命令或 API，它就应该存在。夸大是让一个本来不错的插件被打回的主要原因。
+- **The category must match what the plugin does**, not where you'd like it to appear. / **分类要贴合插件实际做的事**，而不是你希望它出现在哪里。
 
 Maintainers also add notable plugins directly — the list grows through both community PRs and editorial curation. / 维护者也会主动收录值得关注的插件——列表由社区 PR 与编辑精选共同生长。
+
+### How submissions are reviewed / 收录如何评审
+
+A green CI run is the **precondition**, not the decision. CI verifies the shape of a submission — manifest, repo age, formatting, that the READMEs regenerate. It cannot tell whether a plugin does what its entry says, whether the category fits, or whether an entry duplicates one already on the list. A maintainer reads the target repository before merging.
+
+CI 通过是**前置条件**，不是结论。CI 校验的是提交的形式——manifest、仓库年龄、格式、README 能否重新生成；它无法判断插件是否名副其实、分类是否贴切、是否与已有条目重复。合并前维护者会实际阅读目标仓库。
+
+What that review looks at / 评审会看：
+
+1. **Does the code do what the entry claims** — including any numbers or API names in the description. / 代码是否与条目声明一致，包括描述里的数字与 API 名称。
+2. **Is the category right.** / 分类是否正确。
+3. **Is it real, working code** rather than a placeholder or a wrapper around nothing. / 是否是真实可用的代码，而非占位或空壳。
+4. **Is it already covered** by an entry on the list — near-identical forks of a listed plugin are usually not added. / 是否已被现有条目覆盖——与已收录插件近乎相同的分叉通常不再收录。
+5. **Anything alarming in the source** — obfuscated code, credential exfiltration, surprising install-time behaviour. Being listed is still **not** a security review (see the warning at the top of the README); this is a sanity check, not an audit. / 源码中是否有可疑之处——混淆代码、凭据外传、异常的安装期行为。收录仍**不等于**做过安全审查（见 README 顶部警告），这只是常识性检查，不是审计。
+
+Feedback comes as a PR comment naming exactly what to change. Being sent back for an inaccurate description isn't a rejection of the plugin — fix the line and it goes in. / 反馈会以 PR 评论给出，明确指出要改什么。因描述不准确被打回不是对插件本身的否定——改好那一行即可收录。
 
 Recommended for a better install experience / 推荐（更好的安装体验）：
 
