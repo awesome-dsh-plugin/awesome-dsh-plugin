@@ -518,5 +518,10 @@
   "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/custom-footer.png",
   "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/usage-detail.png",
   "https://raw.githubusercontent.com/v587d/dsh-opencode-go-usage/main/assets/set-cookie-wid.png"
+ ],
+ "https://github.com/yflmq001/dsh-cost-tracker": [
+  "https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshots/screenshot-main.png",
+  "https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshots/screenshot-cost-panel.png",
+  "https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshots/screenshot-config.png"
  ]
 }
