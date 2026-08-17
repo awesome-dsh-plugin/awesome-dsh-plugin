@@ -551,8 +551,13 @@
  "https://github.com/a903067276-rgb/dsh-plan-switch": [
   "https://raw.githubusercontent.com/a903067276-rgb/dsh-plan-switch/main/assets/plan-button.png"
  ],
-  "https://github.com/wly8691-jpg/knowlp-rag": [
-   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/demo.png",
-   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
-  ]
+ "https://github.com/wly8691-jpg/knowlp-rag": [
+  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/demo.png",
+  "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
+ ],
+ "https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness": [
+  "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-live-proof.gif",
+  "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-dark.png",
+  "https://raw.githubusercontent.com/tt-a1i/archify/main/docs/assets/archify-light.png"
+ ]
 }
