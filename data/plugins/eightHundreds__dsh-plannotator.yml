@@ -2,5 +2,5 @@ url: https://github.com/eightHundreds/dsh-plannotator
 name: eightHundreds/dsh-plannotator
 category: workflow
 description:
-  en: Intercepts exit_plan_mode and opens the installed Plannotator CLI so a human can approve, deny, or dismiss the plan.
-  zh: 拦截 exit_plan_mode，打开本机 Plannotator 审阅界面，由人工批准、拒绝或关掉计划。
+  en: Review the agent's plan in Plannotator — annotate it, approve it, or send it back.
+  zh: 用 Plannotator 审代理写好的计划：批注、批准，或打回重写。
