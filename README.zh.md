@@ -706,6 +706,7 @@ dsh plugin --profile web add dshmarket
 
 - [1624318455/dsh-plugin-tavily](https://github.com/1624318455/dsh-plugin-tavily) — 基于 Tavily 的网页搜索提供方：替换内置 web_search 的后端，并提供 API Key、结果数量与时间窗口的设置卡片。
 - [263311487-ux/dsh-verify](https://github.com/263311487-ux/dsh-verify) — Agent 交付物的独立浏览器验收测试：JSON 规格进，真实 Chromium 结论出。
+- [2672243194/dsh-read-url](https://github.com/2672243194/dsh-read-url) — 读取网页返回干净正文：中文编码自动识别（GBK/GB2312/UTF-8/Big5）、噪音过滤、紧凑文本/Markdown、offset 续读、可选 SPA 渲染、批量读取与整站爬取。
 - [anweat/dsh-browser](https://github.com/anweat/dsh-browser) — 自包含浏览器运行时：Playwright（chromium）+ OpenCLI 作为插件本地依赖（全局复用回退），提供 `browser` 服务与 9 个交互式浏览器工具。
 - [anweat/dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro) — 增强型、可持久化的网页搜索：多引擎路由（DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS）、SQLite+LRU 缓存、userscript 风格抽取、Playwright 渲染。
 - [bpc-oss/chrome-faithful](https://github.com/bpc-oss/chrome-faithful) — 按精确 Profile 名控制你真实已登录的 Chrome 浏览器：MCP 服务器 + MV3 扩展 + 认证本地桥接，提供标签页、定位器、文件注入、媒体导出与持久滚动采集，不使用调试 Profile 或远程调试端口。
