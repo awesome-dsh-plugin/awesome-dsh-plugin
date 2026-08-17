@@ -1,0 +1,7 @@
+url: https://github.com/314857493/dsh-vision/tree/main/packages/vision-tool
+name: 314857493/dsh-vision#vision-tool
+category: vision
+npm: dsh-vision-free-eyes
+description:
+  en: 'Model-facing `vision` tool for DeepSeek Harness: describe and OCR image files by calling the free Zhipu GLM vision API directly (glm-4v-flash fallback chain), no external CLI required.'
+  zh: '给 DeepSeek Harness 的纯文本模型补上免费识图：`vision` 工具直连智谱 GLM 视觉 API 描述/OCR 图片文件（glm-4v-flash 降级链），无需任何外部 CLI。'

@@ -2,5 +2,5 @@ url: https://github.com/toolclub/dsh-agent-team-gui
 name: toolclub/dsh-agent-team-gui
 category: workflow
 description:
-  en: 'Global persistent agent squads with per-agent model/tool policies: manage them in Settings, select and toggle one per conversation, then collaborate on normal sends in a fixed or model-planned order.'
-  zh: 全局持久 Agent 小队：每个成员独立配置模型与工具策略；在 Settings 中管理、按对话选择并开关协作，普通发送按固定顺序或由模型规划执行。
+  en: Persistent multi-model squads configured in Settings and selected in the Composer, with per-member model/tool policies; the main Agent dynamically plans each send as a bounded DAG with bounded reviewer/repair loops, while Run Center tracks retries and per-member tokens from official Harness usage events.
+  zh: 持久化多模型小队在 Settings 中配置、从 Composer 选择，并支持逐成员模型与工具策略；主 Agent 为每次发送动态规划有界 DAG，并可执行有界的审阅/修复质量回路；Run Center 展示重试和基于 Harness 官方 usage 事件的逐成员 token 用量。
