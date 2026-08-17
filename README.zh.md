@@ -598,6 +598,7 @@ dsh plugin --profile web add dshmarket
 - [jihongboo/dsh-apple-mode](https://github.com/jihongboo/dsh-apple-mode) — DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。
 - [jinguanghai/deepseek-harness-forge-plugins#forge-gates](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates) — 真实计算验证门：数学化简、逻辑证明、正则校验、E-prover 一阶逻辑、状态机检查与代码修复，由 Go 编译的二进制支撑（附 Windows 预编译产物）。
 - [jinguanghai/deepseek-harness-forge-plugins#forge-tcm](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm) — 中医工具集：八纲辨证与药对查询。
+- [jinsiyu/dsh-auto-open-web](https://github.com/jinsiyu/dsh-auto-open-web) — deepseek harness自动打开浏览器插件，内置WebView2程序实现轻量级桌面化。
 - [Johnny-xuan/dsh-paste-to-path](https://github.com/Johnny-xuan/dsh-paste-to-path) — 为图片、文档、压缩包、代码及其他文件提供路径附件 Dock，文件读取交由 Agent 的当前可用工具完成。
 - [JohnXu22786/command-scout](https://github.com/JohnXu22786/command-scout) — 扫描项目已声明的构建命令——Makefile 目标、package.json 脚本、just 配方、deno 任务——并作为可直接调用的 agent 工具暴露给智能体。
 - [JohnXu22786/computer-control](https://github.com/JohnXu22786/computer-control) — 桌面(native)控制:dsh 经 stdio JSON-RPC 桥接 Python 核心;支持截屏、指针/键盘注入、无障碍树语义操作,并以强制确认为高风险操作把关。
