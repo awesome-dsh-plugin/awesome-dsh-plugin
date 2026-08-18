@@ -1,0 +1,6 @@
+url: https://github.com/lanbaolu/dsh-fail-soft
+name: lanbaolu/dsh-fail-soft
+category: dev
+description:
+  en: 'Quarantine broken plugins automatically: a failing plugin is disabled and the rest of DSH keeps booting, with status tools and a one-click restore panel.'
+  zh: '自动隔离损坏插件：坏插件被禁用、其余插件照常启动，提供状态工具与一键恢复面板。'
