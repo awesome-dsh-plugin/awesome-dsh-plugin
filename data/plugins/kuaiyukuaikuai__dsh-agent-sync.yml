@@ -1,0 +1,6 @@
+url: https://github.com/kuaiyukuaikuai/dsh-agent-sync
+name: kuaiyukuaikuai/dsh-agent-sync
+category: tools
+description:
+  en: 'Scans 20+ AI agents on this machine (Codex, Claude Code, cc-switch, Hermes, opencode, Gemini, Grok, Kimi, CodeBuddy, Trae, OpenClaw, Qoder, WorkBuddy, Zcode, Cursor, Windsurf, Cline, Roo Code, Qwen Code, ...) and one-click syncs their MCP servers and skills into DSH.'
+  zh: '扫描本机 20+ 种 AI agent 的 MCP 服务器与 Skills（Codex、Claude Code、cc-switch、Hermes、opencode、Gemini、Grok、Kimi、CodeBuddy、Trae、OpenClaw、Qoder、WorkBuddy、Zcode、Cursor、Windsurf、Cline、Roo Code、Qwen Code 等），一键同步进 DSH。'
