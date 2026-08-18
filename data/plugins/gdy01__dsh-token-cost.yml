@@ -1,0 +1,6 @@
+url: https://github.com/gdy01/dsh-token-cost
+name: gdy01/dsh-token-cost
+category: usage
+description:
+  en: 'Per-project LLM token usage and RMB cost in the DSH Web sidebar, split by input (cache miss), cache hit, and output with model price auto-pricing.'
+  zh: '在 DSH Web 侧边栏按项目展示 LLM Token 用量与人民币花费，分别统计输入（未命中）、命中与输出，并按模型标准价格自动计价。'
