@@ -1477,6 +1477,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) - Context injection audit: token costs of instruction chains / skill catalogs / tool schemas, duplicate and conflict detection.
 - [ZK-Andy/dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) - Continual self-evolution: versioned, auditable, rollback-safe harness state (prompts, memory, skills, subagent specs) refined from session trajectories, with review gates and hot-reloaded skills.
 - [zoahdev/dsh-plugin-doctor](https://github.com/zoahdev/dsh-plugin-doctor) - Health checks for DSH plugins: manifest/patch/entry/build/pack/install verification, model-callable plugin_check, profile host-shadowing + BOM detection, environment diagnostics, and poison preflight.
+- [zoahdev/dsh-readme-forge](https://github.com/zoahdev/dsh-readme-forge) - Generate README.md for dsh plugin repositories from package.json + cordis.patch.yml + source layout — install/CLI/tools/dev/license sections, deterministic, zero runtime deps, read-only by default. CLI plus an agent-callable readme_forge tool.
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) - Verification-driven self-evolution loop: failure logs become verified AGENTS.md rules; in-session plugin (evolve_learn / evolve_apply / evolve_touch / evolve_recall), tool-verify gate, rule lifecycle, local recall.
 
 ### Security & Permissions
