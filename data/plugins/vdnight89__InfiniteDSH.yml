@@ -2,5 +2,5 @@ url: https://github.com/vdnight89/InfiniteDSH
 name: vdnight89/InfiniteDSH
 category: skill
 description:
-  en: 'Literary DSH plugin: one session is one book, with cover-card /new, a prose-only 诸天万界DSH preset, keyword worldbook injection, and /export-story Markdown export.'
-  zh: 诸天万界DSH：一个会话就是一本书，封面开书，点启程写第一段，规则书按关键词注入，/export-story 誊成 Markdown。
+  en: 'Literary DSH plugin: one session is one book. Cover-card /new opens one of 19 realms, a prose-only 诸天万界DSH preset keeps the model writing fiction, keyword worldbook entries ground each turn, and /export-story typesets the session into a Markdown novel.'
+  zh: 诸天万界DSH：一个会话就是一本书。封面开书，十九界任选，文学预设只写正文，规则书按关键词注入，/export-story 把整场会话誊成 Markdown 小说。

@@ -777,5 +777,11 @@
  ],
  "https://github.com/minivv/dsh-agent-skills": [
   "https://raw.githubusercontent.com/minivv/dsh-agent-skills/main/agent-skills-page.png"
+ ],
+ "https://github.com/vdnight89/InfiniteDSH": [
+  "https://raw.githubusercontent.com/vdnight89/InfiniteDSH/main/docs/%E6%88%AA%E5%9B%BE1.png",
+  "https://raw.githubusercontent.com/vdnight89/InfiniteDSH/main/docs/%E6%88%AA%E5%9B%BE2.png",
+  "https://raw.githubusercontent.com/vdnight89/InfiniteDSH/main/docs/%E6%88%AA%E5%9B%BE2.1.png",
+  "https://raw.githubusercontent.com/vdnight89/InfiniteDSH/main/docs/%E6%88%AA%E5%9B%BE2.2.png"
  ]
 }
