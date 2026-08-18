@@ -1,0 +1,6 @@
+url: https://github.com/wlj521/dsh-ui-tweaks
+name: wlj521/dsh-ui-tweaks
+category: ui
+description:
+  en: 'Live-tune the DSH Web conversation UI from Settings: message font size, Claude Desktop-style markdown tables, dialog width, an optional timeline rail, and a GitBar with branch management, per-file diff, and commit & push.'
+  zh: '从设置面板实时调教 DSH 网页对话界面：消息字体大小、Claude Desktop 风格 Markdown 表格、对话框宽度、可选时间线侧栏，以及带分支管理、逐文件 Diff 和提交推送功能的 GitBar。'
