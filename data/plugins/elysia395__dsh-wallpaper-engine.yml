@@ -1,0 +1,6 @@
+url: https://github.com/elysia395/dsh-wallpaper-engine
+name: elysia395/dsh-wallpaper-engine
+category: theme
+description:
+  en: 'Wallpaper Engine backgrounds for the DSH web GUI: renders local Video and Web wallpapers behind the chat with an iOS-style liquid glass effect and adjustable blur, dim, border and glass sliders.'
+  zh: 在 DSH 网页界面后方渲染本机 Wallpaper Engine 的 Video/Web 壁纸，支持 iOS 风格液态玻璃效果，并可用滑动条调节模糊、暗化、边框与玻璃强度。
