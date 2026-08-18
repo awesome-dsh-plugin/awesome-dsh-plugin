@@ -119,7 +119,13 @@ jobs:
           # reading as "no changes" and reporting success on an unchecked PR.
           # -z handles paths with spaces.
           mkdir -p /tmp/prdata
-          git diff -z --name-only --diff-filter=A "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
+          # AR, not A: git reports a renamed entry file as R, and a rename is
+          # how an entry's `url` changes without ever looking added. #1554
+          # renamed one entry file and re-pointed it at a different repository;
+          # the gate read "no entries changed" and passed. For a rename
+          # --name-only prints the new path, which is the one to check —
+          # the target may be a repository nothing has ever verified.
+          git diff -z --name-only --diff-filter=AR "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
 
           # Entries this PR MODIFIES rather than adds. These face no gate (see
           # above) but they are where cross-entry damage hides: #1348 was a PR
