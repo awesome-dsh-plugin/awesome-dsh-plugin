@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-plugin-check
+name: omdsh-dev/dsh-plugin-check
+category: dev
+description:
+  en: 'Plugin health checks: manifest protocol / patch format / build traps, zero-dependency and read-only.'
+  zh: 插件健康检查：扫描清单协议/patch 格式/构建陷阱，零依赖只读。
