@@ -1,5 +1,5 @@
-url: https://github.com/s3yf1337/dsh-desktop
-name: s3yf1337/dsh-desktop
+url: https://github.com/s3yf1337/dsh-desktop/tree/main/bundle
+name: s3yf1337/dsh-desktop#bundle
 category: ui
 description:
   en: 'Desktop profile for dsh: native Tauri window over the harness web surface with tray, native notifications, a file-manager panel, and one-click updates.'

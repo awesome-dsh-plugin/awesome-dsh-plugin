@@ -1,5 +1,5 @@
-url: https://github.com/btspoony/mstar-harness
-name: btspoony/mstar-harness
+url: https://github.com/btspoony/mstar-harness/tree/main/packages/dsh
+name: btspoony/mstar-harness#dsh
 category: workflow
 description:
   en: Skill-driven harness/loop engineering workflow agent plugin.

@@ -1,5 +1,5 @@
-url: https://github.com/Co-Engram/Co-Engram
-name: Co-Engram/Co-Engram
+url: https://github.com/Co-Engram/Co-Engram/tree/main/packages/dsh-plugin
+name: Co-Engram/Co-Engram#dsh-plugin
 category: memory
 description:
   en: 'Self-evolving team memory as plain Markdown in git: a native Cordis plugin that registers 38 bare-name memory tools plus a prompt-signals section re-evaluated at every assembly, with RPE reinforcement, decay and sleep consolidation; shares one data repo with its Claude Code (MCP) and OpenClaw hosts; verified against DSH 0.1.0-rc.6.'

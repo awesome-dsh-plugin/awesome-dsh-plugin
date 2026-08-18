@@ -1,5 +1,5 @@
-url: https://github.com/zjsthmjialin/inspiration-deck-workshop
-name: zjsthmjialin/inspiration-deck-workshop
+url: https://github.com/zjsthmjialin/inspiration-deck-workshop/tree/master/dsh-inspiration-deck-workshop
+name: zjsthmjialin/inspiration-deck-workshop#dsh-inspiration-deck-workshop
 category: docs
 description:
   en: 'Registers the Inspiration Deck Workshop skill for DSH: local static HTML presentation decks (6 deck templates, 25+ layouts, 23 themes & motion showroom) with a validate + PNG/PDF export CLI and smoke tests, zero runtime dependencies.'

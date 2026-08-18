@@ -1,5 +1,5 @@
-url: https://github.com/Blank-not-black/dsh-Remote
-name: Blank-not-black/dsh-Remote
+url: https://github.com/Blank-not-black/dsh-Remote/tree/main/packages/plugin
+name: Blank-not-black/dsh-Remote#plugin
 category: remote
 description:
   en: 'Mobile remote-control suite: bundle plugin with native sidebar entry and admin drawer, self-healing bearer-token gateway over LAN/Tailscale, Android app (sessions/approvals/questions/goals), /fs/* file transfer (Range resume, 2GB upload), latency-based multi-server auto-switch, offline chat cache.'

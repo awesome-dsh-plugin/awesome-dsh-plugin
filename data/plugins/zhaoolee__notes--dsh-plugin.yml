@@ -1,5 +1,5 @@
-url: https://github.com/zhaoolee/notes
-name: zhaoolee/notes
+url: https://github.com/zhaoolee/notes/tree/main/dsh-plugin
+name: zhaoolee/notes#dsh-plugin
 category: tools
 description:
   en: Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.

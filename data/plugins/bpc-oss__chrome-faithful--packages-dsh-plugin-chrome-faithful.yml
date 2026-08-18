@@ -1,5 +1,5 @@
-url: https://github.com/bpc-oss/chrome-faithful
-name: bpc-oss/chrome-faithful
+url: https://github.com/bpc-oss/chrome-faithful/tree/main/packages/dsh-plugin-chrome-faithful
+name: bpc-oss/chrome-faithful#dsh-plugin-chrome-faithful
 category: browser
 description:
   en: 'Exact-profile control of your real logged-in Chrome browser: an MCP server plus MV3 extension and authenticated localhost bridge for tabs, locators, file injection, media export, and durable scroll capture, with no debug profile or remote-debugging port.'

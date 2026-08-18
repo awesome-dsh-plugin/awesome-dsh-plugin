@@ -1,5 +1,5 @@
-url: https://github.com/v587d/capital-generation
-name: v587d/capital-generation
+url: https://github.com/v587d/capital-generation/tree/master/dsh-plugin
+name: v587d/capital-generation#dsh-plugin
 category: tools
 description:
   en: 'China A-share financial data MCP server for the harness: 11 fin_data__* tools (quotes/K-lines/financials/calendar/special-data/announcements/EDB/reconcile/funds/indices) over THS free official REST (primary) + AKShare (fallback) + Wind (exclusive domains), with observable degradation, context-budget compression (result-side -72.2% measured), and an offline 10-year market-data lake; BYOK.'

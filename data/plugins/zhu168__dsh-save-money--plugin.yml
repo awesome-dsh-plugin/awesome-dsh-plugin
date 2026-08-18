@@ -1,5 +1,5 @@
-url: https://github.com/zhu168/dsh-save-money
-name: zhu168/dsh-save-money
+url: https://github.com/zhu168/dsh-save-money/tree/main/plugin
+name: zhu168/dsh-save-money#plugin
 category: usage
 description:
   en: Pause and resume tasks automatically during user-defined time windows to avoid peak-hour API costs; includes account balance display and 10-minute granularity spend bar chart.

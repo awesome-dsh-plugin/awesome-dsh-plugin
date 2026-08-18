@@ -1,5 +1,5 @@
-url: https://github.com/ywgATustcbbs/dsh-human-task
-name: ywgATustcbbs/dsh-human-task
+url: https://github.com/ywgATustcbbs/dsh-human-task/tree/main/packages/dsh-human-task
+name: ywgATustcbbs/dsh-human-task#dsh-human-task
 category: tools
 description:
   en: 'Human-in-the-loop tools (`human_task` / `human_task_ready_check`): pause the agent until the user performs a real-world action or returns an observation (GUI operation, game testing, visual verification, hardware checks), gated by session consent and an AFK presence check, returning a structured JSON result via a web task dialog.'

@@ -1,5 +1,5 @@
-url: https://github.com/taxueseek/argo
-name: taxueseek/argo
+url: https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin
+name: taxueseek/argo#dsh-plugin
 category: tools
 description:
   en: 'Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.'

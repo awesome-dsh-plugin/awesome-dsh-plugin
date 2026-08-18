@@ -7,9 +7,6 @@
  "https://github.com/030611/qiushi-dsh-evidence-audit": [
   "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
  ],
- "https://github.com/2008924/dsh-progress-viz": [
-  "https://raw.githubusercontent.com/2008924/dsh-progress-viz/main/docs/screenshot.png"
- ],
  "https://github.com/263311487-ux/dsh-verify": [
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/report-screenshot.png",
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/visual-diff.png"
@@ -50,10 +47,6 @@
   "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/usage-dialog.png",
   "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/card-settings.png",
   "https://raw.githubusercontent.com/534119219/chicheng-stats/main/assets/text-settings.png"
- ],
- "https://github.com/534119219/dsh-messaging": [
-  "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/sidebar.png",
-  "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/dialog.png"
  ],
  "https://github.com/54xkeee/dsh-youreyes": [
   "https://raw.githubusercontent.com/54xkeee/dsh-youreyes/master/assets/screenshot-panel.png"
@@ -107,16 +100,6 @@
   "https://raw.githubusercontent.com/Awu12277/dsh-stock-watch/main/screenshots/detail-minute-dark.png",
   "https://raw.githubusercontent.com/Awu12277/dsh-stock-watch/main/screenshots/list-dark.png"
  ],
- "https://github.com/Blank-not-black/dsh-Remote": [
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-sessions.png",
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-approvals.png",
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-files.png",
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-settings.png",
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/gateway.png",
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/settings-mobile.png",
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/sessions.png",
-  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/files.png"
- ],
  "https://github.com/ChongCyrus/Vibe-Mathematics": [
   "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE-v1.png",
   "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE-v2.png"
@@ -139,10 +122,10 @@
  "https://github.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL": [
   "https://raw.githubusercontent.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL/main/assets/readme/accounts-demo.png"
  ],
-  "https://github.com/Fantasality/dsh-origin-plugin": [
-    "https://raw.githubusercontent.com/Fantasality/dsh-origin-plugin/main/docs/example.png",
-    "https://raw.githubusercontent.com/Fantasality/dsh-origin-plugin/main/docs/example_3d.png"
-  ],
+ "https://github.com/Fantasality/dsh-origin-plugin": [
+  "https://raw.githubusercontent.com/Fantasality/dsh-origin-plugin/main/docs/example.png",
+  "https://raw.githubusercontent.com/Fantasality/dsh-origin-plugin/main/docs/example_3d.png"
+ ],
  "https://github.com/FengHuoLinShan/dsh-plugin-llm-balance": [
   "https://raw.githubusercontent.com/FengHuoLinShan/dsh-plugin-llm-balance/main/assets/llm-balance-preview.png"
  ],
@@ -356,13 +339,6 @@
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
  ],
- "https://github.com/UndeadSheep/dsh-file-preview": [
-  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/github-social-preview.png",
-  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/btnPos.gif",
-  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/write.gif",
-  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/clickOpen.gif",
-  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/SearchBar.gif"
- ],
  "https://github.com/WenhongPan/dsh-projects": [
   "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/picker.webp",
   "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/create.webp",
@@ -401,11 +377,6 @@
  ],
  "https://github.com/a903067276-rgb/dsh-plan-switch": [
   "https://raw.githubusercontent.com/a903067276-rgb/dsh-plan-switch/main/assets/plan-button.png"
- ],
- "https://github.com/ayahunter/dsh-trail": [
-  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshot.png",
-  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/rounds-view.png",
-  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/tool-details.png"
  ],
  "https://github.com/biociao/dsh-science": [
   "https://raw.githubusercontent.com/biociao/dsh-science/main/assets/screenshots/research-loop.png",
@@ -869,5 +840,34 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
+ ],
+ "https://github.com/2008924/dsh-progress-viz/tree/main/plugin": [
+  "https://raw.githubusercontent.com/2008924/dsh-progress-viz/main/docs/screenshot.png"
+ ],
+ "https://github.com/534119219/dsh-messaging/tree/main/packages/messaging-core": [
+  "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/sidebar.png",
+  "https://raw.githubusercontent.com/534119219/dsh-messaging/main/assets/dialog.png"
+ ],
+ "https://github.com/Blank-not-black/dsh-Remote/tree/main/packages/plugin": [
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-sessions.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-approvals.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-files.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-settings.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/gateway.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/settings-mobile.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/sessions.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/files.png"
+ ],
+ "https://github.com/UndeadSheep/dsh-file-preview/tree/main/packages/dsh-file-preview": [
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/github-social-preview.png",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/btnPos.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/write.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/clickOpen.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/SearchBar.gif"
+ ],
+ "https://github.com/ayahunter/dsh-trail/tree/main/packages/bundle": [
+  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshot.png",
+  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/rounds-view.png",
+  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/tool-details.png"
  ]
 }

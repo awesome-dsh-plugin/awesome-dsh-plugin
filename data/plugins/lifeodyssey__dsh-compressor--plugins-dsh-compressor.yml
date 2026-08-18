@@ -1,5 +1,5 @@
-url: https://github.com/lifeodyssey/dsh-compressor
-name: lifeodyssey/dsh-compressor
+url: https://github.com/lifeodyssey/dsh-compressor/tree/main/plugins/dsh-compressor
+name: lifeodyssey/dsh-compressor#dsh-compressor
 category: tools
 description:
   en: 'A slim port of Headroom: compresses tool output, cuts up to 20% of context, without affecting the model''s context cache or agent performance.'

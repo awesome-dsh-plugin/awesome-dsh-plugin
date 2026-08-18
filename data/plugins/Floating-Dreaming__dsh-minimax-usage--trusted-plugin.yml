@@ -1,5 +1,5 @@
-url: https://github.com/Floating-Dreaming/dsh-minimax-usage
-name: Floating-Dreaming/dsh-minimax-usage
+url: https://github.com/Floating-Dreaming/dsh-minimax-usage/tree/main/trusted-plugin
+name: Floating-Dreaming/dsh-minimax-usage#trusted-plugin
 category: usage
 description:
   en: Adds a "用量" section to the DSH Settings page that shows your MiniMax Token Plan usage (5h and weekly windows with reset countdowns), per-model breakdown, and video bonus credits; fetches `/v1/token_plan/remains` via a trusted plugin that holds the API key, auto-hides when no key is configured. MIT.

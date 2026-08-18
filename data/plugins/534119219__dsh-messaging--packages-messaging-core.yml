@@ -1,5 +1,5 @@
-url: https://github.com/534119219/dsh-messaging
-name: 534119219/dsh-messaging
+url: https://github.com/534119219/dsh-messaging/tree/main/packages/messaging-core
+name: 534119219/dsh-messaging#messaging-core
 category: notify
 description:
   en: 'Unified messaging gateway for DeepSeek Harness: 27 IM platforms (Telegram, QQ, WeChat, Discord, WhatsApp, Feishu and more) in one plugin, with QR scan-to-authorize, per-platform workspaces, slash commands, and a web setup dialog.'

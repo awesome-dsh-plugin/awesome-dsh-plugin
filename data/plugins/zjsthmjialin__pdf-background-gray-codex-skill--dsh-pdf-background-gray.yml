@@ -1,5 +1,5 @@
-url: https://github.com/zjsthmjialin/pdf-background-gray-codex-skill
-name: zjsthmjialin/pdf-background-gray-codex-skill
+url: https://github.com/zjsthmjialin/pdf-background-gray-codex-skill/tree/main/dsh-pdf-background-gray
+name: zjsthmjialin/pdf-background-gray-codex-skill#dsh-pdf-background-gray
 category: docs
 description:
   en: 'Registers the remove-pdf-background-gray skill for DSH: whitens gray/off-white scan backgrounds in image-based PDFs while preserving resolution, page geometry, and anti-aliased text edges (lossless Flate write-back), via a single Python script (pypdf + Pillow + numpy).'

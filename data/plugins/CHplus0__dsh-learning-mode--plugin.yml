@@ -1,5 +1,5 @@
-url: https://github.com/CHplus0/dsh-learning-mode
-name: CHplus0/dsh-learning-mode
+url: https://github.com/CHplus0/dsh-learning-mode/tree/main/plugin
+name: CHplus0/dsh-learning-mode#plugin
 category: tools
 description:
   en: 'Learning Mode agent preset: a coding agent that teaches while coding — concrete scenario-grounded explanations, Socratic guidance, and TODO(你) practice blanks, modeled on Claude Code''s Learning output style; installable via dsh plugin add (dsh-learning-mode on npm).'

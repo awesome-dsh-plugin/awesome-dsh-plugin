@@ -1,5 +1,5 @@
-url: https://github.com/Ch0uHuaZ1/DeepSeek-Harness-Desktop
-name: Ch0uHuaZ1/DeepSeek-Harness-Desktop
+url: https://github.com/Ch0uHuaZ1/DeepSeek-Harness-Desktop/tree/main/packages/desktop-launcher-plugin
+name: Ch0uHuaZ1/DeepSeek-Harness-Desktop#desktop-launcher-plugin
 category: usage
 description:
   en: Adds a Desktop card to the settings page that detects the DeepSeek Harness Desktop app and launches it with one click.

@@ -1,5 +1,5 @@
-url: https://github.com/hccccc01333/dsh-excel-chat
-name: hccccc01333/dsh-excel-chat
+url: https://github.com/hccccc01333/dsh-excel-chat/tree/master/bundle
+name: hccccc01333/dsh-excel-chat#bundle
 category: tools
 description:
   en: 'Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.'

@@ -1,5 +1,5 @@
-url: https://github.com/2008924/dsh-progress-viz
-name: 2008924/dsh-progress-viz
+url: https://github.com/2008924/dsh-progress-viz/tree/main/plugin
+name: 2008924/dsh-progress-viz#plugin
 category: dev
 description:
   en: 'Real-time stage, ETA & cost dashboard for headless dsh tasks: turns the black-box session event stream into a live multi-task grid (cordis plugin + standalone local dashboard, no API calls).'

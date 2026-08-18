@@ -1,5 +1,5 @@
-url: https://github.com/wulun811/LiuHe
-name: wulun811/LiuHe
+url: https://github.com/wulun811/LiuHe/tree/master/malong/dsh/bundle
+name: wulun811/LiuHe#bundle
 category: tools
 description:
   en: 'Bridges the LiuHe MCP code toolkit (44 tools) into dsh web: repo_map, symbol search, edit_batch with tolerant matching, transactional edits with undo journal, and deterministic quality gates — backed by a crash-isolated Rust tree-sitter parse daemon and SQLite index.'

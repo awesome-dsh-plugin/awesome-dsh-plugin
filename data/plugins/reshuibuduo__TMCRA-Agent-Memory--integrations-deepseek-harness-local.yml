@@ -1,5 +1,5 @@
-url: https://github.com/reshuibuduo/TMCRA-Agent-Memory
-name: reshuibuduo/TMCRA-Agent-Memory
+url: https://github.com/reshuibuduo/TMCRA-Agent-Memory/tree/main/integrations/deepseek-harness-local
+name: reshuibuduo/TMCRA-Agent-Memory#deepseek-harness-local
 category: memory
 description:
   en: 'Technical-preview local graph memory for DSH and Codex: recalls owner-global and current-project evidence before each turn, writes USER and ASSISTANT records separately, and preserves project, session, actor, and source provenance for a visual atlas and cited knowledge pages.'

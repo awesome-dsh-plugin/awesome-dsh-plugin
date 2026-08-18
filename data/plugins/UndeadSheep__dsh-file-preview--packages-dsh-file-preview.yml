@@ -1,5 +1,5 @@
-url: https://github.com/UndeadSheep/dsh-file-preview
-name: UndeadSheep/dsh-file-preview
+url: https://github.com/UndeadSheep/dsh-file-preview/tree/main/packages/dsh-file-preview
+name: UndeadSheep/dsh-file-preview#dsh-file-preview
 category: ui
 description:
   en: 'Floating workspace file-preview window for the Web client: lazy file tree, CodeMirror preview and in-window edit with save, Markdown and image preview, Quick Open search, and opening paths clicked in the conversation.'

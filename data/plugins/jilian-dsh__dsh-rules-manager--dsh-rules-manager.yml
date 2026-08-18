@@ -1,5 +1,5 @@
-url: https://github.com/jilian-dsh/dsh-rules-manager
-name: jilian-dsh/dsh-rules-manager
+url: https://github.com/jilian-dsh/dsh-rules-manager/tree/main/dsh-rules-manager
+name: jilian-dsh/dsh-rules-manager#dsh-rules-manager
 category: dev
 description:
   en: 'Rules, commands & skills manager for dsh: /rules slash command, settings panel with visual rule editing (add/edit/disable/delete, free-zone support), user-defined custom commands with {input} arguments, skill management, and automatic backup & one-click restore of AGENTS.md.'

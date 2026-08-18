@@ -1,5 +1,5 @@
-url: https://github.com/songoao25/dsh-bottom-info-bar
-name: songoao25/dsh-bottom-info-bar
+url: https://github.com/songoao25/dsh-bottom-info-bar/tree/main/plugin
+name: songoao25/dsh-bottom-info-bar#plugin
 category: ui
 description:
   en: 'Bottom info bar for the DSH Web UI: provider/model, live balance, peak/off-peak pricing with countdown, and real persisted per-session spend in a single line.'

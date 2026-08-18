@@ -1,5 +1,5 @@
-url: https://github.com/Lum1104/dsh-browser
-name: Lum1104/dsh-browser
+url: https://github.com/Lum1104/dsh-browser/tree/main/packages/browser/bridge-browser
+name: Lum1104/dsh-browser#bridge-browser
 category: browser
 description:
   en: Chrome sidebar extension that lets DSH operate your browser directly, no vision capabilities required.

@@ -1,5 +1,5 @@
-url: https://github.com/ZihaoVistonWang/Stata-AI-Skill
-name: ZihaoVistonWang/Stata-AI-Skill
+url: https://github.com/ZihaoVistonWang/Stata-AI-Skill/tree/main/dsh-plugin
+name: ZihaoVistonWang/Stata-AI-Skill#dsh-plugin
 category: skill
 description:
   en: 'Run Stata through DeepSeek Harness: the native Stata AI Skill service auto-starts with DSH (macOS/Windows binaries bundled), so you can run regressions, do-files and econometrics workflows with no manual setup.'

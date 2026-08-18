@@ -1,5 +1,5 @@
-url: https://github.com/ayahunter/dsh-trail
-name: ayahunter/dsh-trail
+url: https://github.com/ayahunter/dsh-trail/tree/main/packages/bundle
+name: ayahunter/dsh-trail#bundle
 category: ui
 description:
   en: Replaces the Web GUI trajectory tab with a new-user-friendly round-by-round storyline, plain-language tool labels, category filters and fuzzy search.
