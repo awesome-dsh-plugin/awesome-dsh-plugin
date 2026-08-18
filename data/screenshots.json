@@ -765,5 +765,8 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
+ ],
+ "https://github.com/minivv/dsh-agent-skills": [
+  "https://raw.githubusercontent.com/minivv/dsh-agent-skills/main/agent-skills-page.png"
  ]
 }
