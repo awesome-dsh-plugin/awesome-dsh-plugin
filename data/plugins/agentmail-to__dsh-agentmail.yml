@@ -1,0 +1,5 @@
+url: https://github.com/agentmail-to/dsh-agentmail
+name: agentmail-to/dsh-agentmail
+category: tools
+description:
+  en: Gives an agent its own email inbox through AgentMail — eleven tools for sending, reading and labelling mail, plus inbound mail delivered into one harness session per email thread, with an approval gate and recipient allowlist on everything outbound.
