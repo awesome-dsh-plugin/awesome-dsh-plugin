@@ -1,0 +1,6 @@
+url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber
+name: wsxwj123/dsh-plugins#turn-scrubber
+category: ui
+description:
+  en: Compact right-edge turn rail with hover summaries and click-to-jump navigation.
+  zh: 右侧紧凑回合刻度条，悬停显示回合摘要，点击跳转到对应用户回合。
