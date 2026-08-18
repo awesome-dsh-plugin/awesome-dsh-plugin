@@ -1,0 +1,6 @@
+url: https://github.com/dawnliming/dsh-chinese-mode
+name: dawnliming/dsh-chinese-mode
+category: model
+description:
+  en: 'Global Simplified-Chinese mode: a 中 switch in the input box that injects language requirements (Chinese or English per region) into every session''s system prompt; anchored mode forces English thinking for anchored presets.'
+  zh: 全局中文模式：输入框旁的「中」字开关，开启后向任意预设的系统提示注入语言要求，各区域可分别设为中文或英文；锚定模式下，锚定预设的思考强制为英文。
