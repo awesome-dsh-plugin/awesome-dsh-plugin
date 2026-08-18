@@ -1,0 +1,6 @@
+url: https://github.com/zhu168/dsh-save-money
+name: zhu168/dsh-save-money
+category: usage
+description:
+  en: Pause and resume tasks automatically during user-defined time windows to avoid peak-hour API costs; includes account balance display and 10-minute granularity spend bar chart.
+  zh: 自定义时间窗口自动暂停/恢复任务，高峰时段节省 API 费用；含账户余额显示和 10 分钟粒度的消费柱状图。
