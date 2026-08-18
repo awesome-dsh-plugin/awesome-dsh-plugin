@@ -1,0 +1,6 @@
+url: https://github.com/xiyuepcl/dsh-approval-translator
+name: xiyuepcl/dsh-approval-translator
+category: ui
+description:
+  en: 'DSH审批汉化 — approval dialogs translated to Chinese before they render: DeepSeek-powered, host-side, nothing for React to revert.'
+  zh: 'DSH审批汉化 — 审批弹窗在渲染前自动翻译成中文：DeepSeek 驱动、宿主侧完成，React 重渲染也无法还原。'
