@@ -1,0 +1,6 @@
+url: https://github.com/leaforbook/dsh-mcp-lazy
+name: leaforbook/dsh-mcp-lazy
+category: tools
+description:
+  en: Loads MCP tools on demand through a shared search-and-activate router or per-server controls, unloading remote tool schemas at turn end by default while keeping idle connections warm for reuse.
+  zh: 通过共享搜索激活路由器或每服务器控制工具按需加载 MCP 工具；默认在轮次结束时卸载远端工具 Schema，并短暂保温空闲连接以便复用。
