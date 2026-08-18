@@ -128,6 +128,31 @@ const N = ordered.length
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+
+// Publishing is the last chance to notice that a data file arrived empty, and
+// the only one that matters to consumers: docs/ is deployed straight to Pages,
+// so a bad build replaces the good one and downstream clients read whatever it
+// contains. On 2026-08-18 plugins.json went out with `stars: null` for all
+// 1,362 entries (#1673) because probe-stars.mjs was handed an exhausted API
+// quota and a cold cache at the same time, wrote {}, and nothing between it and
+// the deploy asked whether that was plausible.
+//
+// A floor, not an exact match: entries added since the last probe legitimately
+// have no star count yet, and a repository that 404s never will. Losing more
+// than a third of them at once is not attrition, it is a broken probe — and
+// keeping yesterday's stars live beats publishing nulls, because a stale number
+// degrades gracefully and a null does not.
+const STARS_MIN_COVERAGE = 0.66
+const starsHave = ordered.filter((e) => typeof starsMap[e.url]?.stars === 'number').length
+if (ordered.length && starsHave / ordered.length < STARS_MIN_COVERAGE) {
+  const pct = ((starsHave / ordered.length) * 100).toFixed(1)
+  throw new Error(
+    `refusing to publish: only ${starsHave}/${ordered.length} entries (${pct}%) have a star count, below the ${STARS_MIN_COVERAGE * 100}% floor.\n`
+    + 'data/stars.json is empty or truncated — almost always probe-stars.mjs hitting an exhausted\n'
+    + 'GitHub API quota on a cold cache. The previous deploy stays live, which is the point.\n'
+    + 'Re-run once the hourly quota resets; PROBE_ALL=1 forces a full refresh.',
+  )
+}
 if (ordered.some((e) => !dates[e.url])) {
   const log = execSync(`git log --reverse --date-order --format=%x01%cI -p -- ${LOCALES[0].readme}`,
     { encoding: 'utf8', maxBuffer: 1 << 28 })
