@@ -1,0 +1,7 @@
+url: https://github.com/JimchengChina/dsh-action-outbox
+name: JimchengChina/dsh-action-outbox
+category: security
+tarball: https://github.com/JimchengChina/dsh-action-outbox/releases/download/v0.3.0/dsh-action-outbox-0.3.0.tgz
+description:
+  en: 'Stages exact DSH tool calls without dispatch, presents complete canonical arguments in a durable Batch Review Inbox, invalidates approvals after edits or restarts, and commits only a matching SHA-256 digest plus single-use nonce through the normal DSH tool pipeline.'
+  zh: '暂存精确的 DSH 工具调用而不执行，在持久化批量审查收件箱中展示完整规范参数；编辑或重启后审批失效，仅允许携带匹配 SHA-256 摘要与一次性 nonce 的批次通过 DSH 正常工具管线提交。'
