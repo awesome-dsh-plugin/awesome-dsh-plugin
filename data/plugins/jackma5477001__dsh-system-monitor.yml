@@ -1,0 +1,6 @@
+url: https://github.com/jackma5477001/dsh-system-monitor
+name: jackma5477001/dsh-system-monitor
+category: ui
+description:
+  en: Displays real-time CPU and memory usage for the machine running the DSH Web server.
+  zh: 在 DSH Web 界面右上角实时显示运行 DSH 服务端机器的 CPU 与内存使用情况。
