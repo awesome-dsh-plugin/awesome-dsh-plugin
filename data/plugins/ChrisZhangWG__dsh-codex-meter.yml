@@ -1,0 +1,6 @@
+url: https://github.com/ChrisZhangWG/dsh-codex-meter
+name: ChrisZhangWG/dsh-codex-meter
+category: usage
+description:
+  en: Adds a Settings Usage dashboard for DeepSeek API balance, official token and cost analysis, trends, context warnings, live API activity, and private Tailscale remote access.
+  zh: 在设置中添加 DeepSeek API 用量仪表板，显示余额、官方 Token 与费用分析、趋势、上下文警告、实时 API 活动及私有 Tailscale 远程访问。
