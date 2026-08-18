@@ -1,0 +1,6 @@
+url: https://github.com/badai147/dsh-ocgo-usage
+name: badai147/dsh-ocgo-usage
+category: usage
+description:
+  en: 'OpenCode Go usage for the DSH Web GUI: a bottom-left sidebar badge showing the remaining monthly quota, a hover card for rolling/weekly/monthly usage and reset times, auto-refreshing every 60 s; the API key is read from DSH credentials.'
+  zh: 'OpenCode Go 用量小部件：左下角常驻角标显示本月剩余额度，悬停卡片展示滚动/本周/本月用量进度与重置时间，每 60 秒自动刷新；API Key 自动读取 DSH 凭据。'
