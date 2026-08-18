@@ -173,20 +173,24 @@ async function commitCount(repo) {
 async function check(entry) {
   const { repo, sub } = decompose(entry.url)
   if (FIRST_PARTY_REPOS.has(repo.toLowerCase())) {
-    return ['this is DeepSeek Harness itself, not a plugin for it']
+    return { problems: ['this is DeepSeek Harness itself, not a plugin for it'], unverified: [] }
   }
   const meta = await api(`repos/${repo}`)
-  if (meta.status === 404) return [`repository not found: https://github.com/${repo}`]
+  if (meta.status === 404) return { problems: [`repository not found: https://github.com/${repo}`], unverified: [] }
   if (meta.status !== 200) {
-    console.error(`  ${entry.url}: repo lookup failed (HTTP ${meta.status}) — skipping`)
-    return []
+    // Nothing about this entry was established. Returning no problems read as
+    // "passed" all the way out to the check-run summary, which is how
+    // repositories under both bars came to sit green: a 403 during a quota
+    // squeeze looked identical to a clean bill of health.
+    return { problems: [], unverified: [`nothing checked — repo lookup failed (HTTP ${meta.status})`] }
   }
   const problems = []
+  const unverified = []
   if (meta.body.archived) problems.push('repository is archived')
 
   const bundle = await hasBundle(repo, sub)
   if (bundle.ok === false) problems.push(bundle.why)
-  else if (bundle.ok === null) console.error(`  ${entry.url}: ${bundle.why} — manifest check skipped`)
+  else if (bundle.ok === null) unverified.push(`manifest not checked — ${bundle.why}`)
 
   if (gateApplies) {
     const ageDays = (Date.now() - new Date(meta.body.created_at).getTime()) / 86400000
@@ -195,11 +199,14 @@ async function check(entry) {
       const hours = Math.ceil((MIN_AGE_DAYS - ageDays) * 24)
       problems.push(`repository is ${ageDays.toFixed(1)} days old (needs ${MIN_AGE_DAYS}) — resubmit in about ${hours}h, nothing is held against a resubmission`)
     }
-    if (commits !== null && commits < MIN_COMMITS) {
-      problems.push(`repository has ${commits} commit(s) (needs ${MIN_COMMITS})`)
-    }
+    // A count we could not read is not a count that met the bar. Letting it
+    // through is right — a busy API quota must not reject a good submission —
+    // but the verdict has to say so, or "enough commits" is printed about a
+    // repository nobody counted.
+    if (commits === null) unverified.push('commit count could not be read')
+    else if (commits < MIN_COMMITS) problems.push(`repository has ${commits} commit(s) (needs ${MIN_COMMITS})`)
   }
-  return problems
+  return { problems, unverified }
 }
 
 function changedEntryFiles(base) {
@@ -236,19 +243,32 @@ if (!targets.length) {
 console.log(`checking ${targets.length} entr${targets.length === 1 ? 'y' : 'ies'}` + (gateApplies ? '' : ' (age/commit gate not applied — PR predates the rule)'))
 
 const failures = []
+const incomplete = []
 for (let i = 0; i < targets.length; i += CONCURRENCY) {
   const batch = targets.slice(i, i + CONCURRENCY)
-  const results = await Promise.all(batch.map(async (e) => [e, await check(e).catch((err) => { console.error(`  ${e.url}: ${err.message} — skipping`); return [] })]))
-  for (const [e, problems] of results) {
+  const results = await Promise.all(batch.map(async (e) => [e, await check(e).catch((err) => ({ problems: [], unverified: [`the check itself failed: ${err.message}`] }))]))
+  for (const [e, { problems, unverified }] of results) {
     if (problems.length) failures.push({ url: e.url, file: e.file, problems })
-    else console.log(`  ok  ${e.url}`)
+    else if (unverified.length) {
+      incomplete.push({ url: e.url, file: e.file, unverified })
+      console.log(`  ??  ${e.url} — ${unverified.join('; ')}`)
+    } else console.log(`  ok  ${e.url}`)
   }
 }
 
-if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures }, null, 1))
+// `incomplete` never blocks: a busy API quota must not reject a good
+// submission. It is reported separately so the verdict can say which entries
+// were let through unchecked rather than vouching for them.
+if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures, incomplete }, null, 1))
 
 if (!failures.length) {
-  console.log('all checked entries pass')
+  if (incomplete.length) {
+    const passed = targets.length - incomplete.length
+    console.log(`${passed} entr${passed === 1 ? 'y' : 'ies'} pass; ${incomplete.length} could not be fully checked:`)
+    for (const c of incomplete) console.log(`  ${c.url} — ${c.unverified.join('; ')}`)
+  } else {
+    console.log('all checked entries pass')
+  }
   process.exit(0)
 }
 for (const f of failures) {
