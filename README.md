@@ -247,6 +247,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### Usage & Billing
 
 - [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) - Real-time DeepSeek API account balance in the composer dock with manual or custom-interval auto-refresh.
+- [1HelloMan1/dsh-usage-dashboard-plus](https://github.com/1HelloMan1/dsh-usage-dashboard-plus) - Shows DeepSeek balance and estimated daily spend, merges external vision-call JSONL records, and adds a per-session dashboard with model statistics, TTFT, cache rate, call logs, cost estimates, filters, and CSV export.
 - [2006spy/dsh-token-billing](https://github.com/2006spy/dsh-token-billing) - Real-time token billing for DSH web: official DeepSeek CNY pricing with automatic peak/off-peak switching, hourly price sync from the official site, visual custom model prices, and multi-currency fallback.
 - [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) - Activity heatmap in the DSH Web sidebar: GitHub-style grid of daily commits, token usage, and estimated spend, with a today stats line for all-session token totals, cache hit rate, and per-model auto-priced cost.
 - [534119219/chicheng-stats](https://github.com/534119219/chicheng-stats) - Configurable DSH usage statistics: a sidebar text/card widget plus a detail dialog with per-provider and per-model breakdowns, cache-hit rates, token trends, and latency details (TTFT and duration).
