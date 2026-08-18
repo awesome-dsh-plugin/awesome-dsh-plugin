@@ -1,0 +1,10 @@
+url: https://github.com/Yuuhann1999/dsh-bloub-mood
+name: Yuuhann1999/dsh-bloub-mood
+category: theme
+npm: dsh-bloub-mood
+description:
+  en: 'Animated mood icon: swaps the favicon, sidebar wordmark and hero headline
+    for bloub expression animations that follow session state (working / awaiting
+    input / done / idle), with 8 shapes, 12 colors and custom wordmark texts configurable
+    in Settings.'
+  zh: '动态心情图标：favicon、侧栏字标与首页标题随会话状态切换 bloub 表情动画（执行中 / 等输入 / 完成 / 空闲），8 种形状、12 种颜色与自定义文字均可在设置页配置。'
