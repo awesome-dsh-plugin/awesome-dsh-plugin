@@ -208,6 +208,7 @@ dsh plugin --profile web add dshmarket
 - [whiteguo233/dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) — OpenBiliClaw 的 DSH 消费侧插件：提供推荐、收藏列表、苏格拉底式对话、画像面板和 Agent Bridge 工具。
 - [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) — 在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。
 - [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) — 左侧用户轮次导航轨道：随阅读位置高亮，悬停预览单轮指标与模型回答摘要，支持键盘和点击跳转及本地会话搜索。
+- [Winter-And-You-Gone/dsh-turn-fold](https://github.com/Winter-And-You-Gone/dsh-turn-fold) — 工具调用按 Think 段自动分组折叠；回合结束后整回合收成一个大组头，显示耗时/token/tok/s/缓存命中率指标。
 - [WJNCT55555/dsh-web-preview-float](https://github.com/WJNCT55555/dsh-web-preview-float) — Web UI 悬浮预览与代码窗口：Google AI Studio 风格的 iframe 预览（宽幅比/分辨率预设、一键放大），VS Code 风格代码窗支持直接编辑，保存需确认并写入会话日志。
 - [wjy9902/dsh-web-default-session](https://github.com/wjy9902/dsh-web-default-session) — 点「新会话」默认打开绑定宿主启动目录的「默认目录」工作区（无需选文件夹），工作区选择菜单中也可选该项。
 - [wlj521/dsh-ui-tweaks](https://github.com/wlj521/dsh-ui-tweaks) — 从设置面板实时调教 DSH 网页对话界面：消息字体大小、Claude Desktop 风格 Markdown 表格、对话框宽度、可选时间线侧栏，以及带分支管理、逐文件 Diff 和提交推送功能的 GitBar。
