@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-skill-mcp-center
+name: Max-Null/dsh-skill-mcp-center
+category: dev
+description:
+  en: 'Skill and MCP management center for DeepSeek Harness: browse and toggle user/project skills, add/edit/remove MCP servers hot without restart, with live per-session status in the sidebar.'
+  zh: DeepSeek Harness 技能与 MCP 管理中心：浏览并启停用户/项目技能，热增删改 MCP 服务器（免重启），侧边栏实时展示各服务器状态。
