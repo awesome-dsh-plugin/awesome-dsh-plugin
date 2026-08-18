@@ -108,6 +108,7 @@ dsh plugin --profile web add dshmarket
 - [dingyi222666/dsh-focus-chat](https://github.com/dingyi222666/dsh-focus-chat) — 「聚焦会话」精简视图，只关注最终产出结果。
 - [e2mcc/dsh-popout-sidebar](https://github.com/e2mcc/dsh-popout-sidebar) — 可弹出式侧边栏：侧边栏展示产物与文件树，支持多种文件预览形式；并可弹出为独立浏览器标签页（可拖至另一显示器）；兼容其他sidebar插件，可以同时显示。
 - [Fayelin12/dsh-office](https://github.com/Fayelin12/dsh-office) — 办公室工作区/会话仪表盘：悬浮 6 列精灵面板，可视化工作区、会话、token 用量与子代理。
+- [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 输入框旁的 prompt 工具箱面板：24 条内置深度模板 + 自定义模板，/prompt 触发源 + 智能推荐悬浮卡，点选即插入当前对话。
 - [fengMax1997/dsh-line-select](https://github.com/fengMax1997/dsh-line-select) — 行选区：浏览工作区文件、带行号预览代码、可视化选中行范围，一键把 `@path:start-end` 引用写入输入框，agent 发送时自动收到所选行原文，精准修改指定行。
 - [garrisonz/dsh-sidebar-width](https://github.com/garrisonz/dsh-sidebar-width) — 调整 Web UI 左侧会话列表栏宽度：调低 264px 拖动下限，可选调整拖动上限与展开默认宽度，启动时自动修补 ui-layout bundle。
 - [genius-alray/dsh-model-picker](https://github.com/genius-alray/dsh-model-picker) — Web UI 模型选择器替换插件：对话框式选择，支持模糊搜索、供应商折叠分组、收藏与只看收藏过滤，以及思考档位下拉，复用官方组件库与 DSW 设计 token。
