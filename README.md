@@ -1403,7 +1403,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [xiaoshihou514/dsh-desktop-pet](https://github.com/xiaoshihou514/dsh-desktop-pet) - DSH pet, on the desktop!
 - [xiekai886/dsh-MusicPlayer](https://github.com/xiekai886/dsh-MusicPlayer) - A collapsible/expandable draggable floating music player with NetEase Cloud Music playlist import and song/artist search — chat and listen at the same time.
 - [yushi-xxh/dsh-homepage-skin](https://github.com/yushi-xxh/dsh-homepage-skin) - Adds the DeepSeek Harness homepage background to dsh web: WebGL fluid light, dot-line grid and a digital point-cloud whale, with dark and light palettes.
-- [yyh-001/dsh-expression](https://github.com/yyh-001/dsh-expression) - Meme search, the fun way: describe the vibe, and the agent finds and sends a real meme that actually fits.
+- [yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) - Chat meme stickers: text-only send, mood auto-send, QQ/WeChat-style picker, auto-learn, custom packs.
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) - The pet that grows with your agent: 5 evolution stages earned from real signals (verified rules, completed sessions, tool calls, compactions), agent-state mirroring, and one-click growth share cards. Zero dependencies, 100% local.
 <!-- END PLUGINS -->
 
