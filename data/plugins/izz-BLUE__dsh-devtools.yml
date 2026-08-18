@@ -1,0 +1,6 @@
+url: https://github.com/izz-BLUE/dsh-devtools
+name: izz-BLUE/dsh-devtools
+category: dev
+description:
+  en: 'Metadata-first runtime profiler for DSH agents: turn/step traces, model and tool wall-time timelines, provider usage, retries, errors, and live or historical sessions.'
+  zh: 面向 DSH Agent 的运行时分析器：查看 Turn/Step 轨迹、模型与工具耗时、Provider 用量、重试与错误，实时与历史会话都能看。
