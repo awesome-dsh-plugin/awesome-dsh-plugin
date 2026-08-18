@@ -1,10 +1,4 @@
 {
- "https://github.com/xiajiajun516/dsh-config-manager": [
-  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-export.png",
-  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-import-preview.png",
-  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-snapshots.png",
-  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-sync.png"
- ],
  "https://github.com/030611/qiushi-dsh-evidence-audit": [
   "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
  ],
@@ -264,6 +258,10 @@
   "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-4-punctuation.png",
   "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-3-settings.png",
   "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-5-error.png"
+ ],
+ "https://github.com/RevolutionLA/dsh-dream-skin": [
+  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/preview.png",
+  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/settings.png"
  ],
  "https://github.com/SamizuHM/dsh-client-ui-theme-xp": [
   "https://raw.githubusercontent.com/SamizuHM/dsh-client-ui-theme-xp/main/docs/screenshot.png"
@@ -633,6 +631,12 @@
  "https://github.com/superagents-lab/dsh-s1": [
   "https://raw.githubusercontent.com/superagents-lab/dsh-s1/main/assets/dsh-s1.png"
  ],
+ "https://github.com/text2future/flowix/tree/main/app/flowix-dsh-host/bundles/dsh-flowix-memory": [
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/home-write.png",
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/readme-agent.png",
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/gh-detail-4.png",
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/gh-detail-6.png"
+ ],
  "https://github.com/tpmoonchefryan/dsh-joi-channel-theme": [
   "https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/main/docs/settings-wardrobe.png",
   "https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/main/docs/settings-wardrobe-dark.png",
@@ -697,6 +701,12 @@
   "https://raw.githubusercontent.com/xbzbing/dsh-auth-gateway/main/docs/assets/settings-menu.png",
   "https://raw.githubusercontent.com/xbzbing/dsh-auth-gateway/main/docs/assets/settings-auth.png"
  ],
+ "https://github.com/xiajiajun516/dsh-config-manager": [
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-export.png",
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-import-preview.png",
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-snapshots.png",
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-sync.png"
+ ],
  "https://github.com/yflmq001/dsh-cost-tracker": [
   "https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshots/screenshot-main.png",
   "https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshots/screenshot-cost-panel.png",
@@ -729,9 +739,5 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
- ],
- "https://github.com/RevolutionLA/dsh-dream-skin": [
-  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/preview.png",
-  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/settings.png"
  ]
 }
