@@ -1,0 +1,6 @@
+url: https://github.com/ljsysfurryACE/dsh-agentframe-suite
+name: ljsysfurryACE/dsh-agentframe-suite
+category: dev
+description:
+  en: 'One-command bundle of the three AgentFrame plugins: memory-director, compaction, and aura-scheduler together.'
+  zh: AgentFrame 三件套整合包：一条命令装齐记忆、压缩与主动调度。
