@@ -1057,5 +1057,11 @@
  "https://github.com/feng78-boop/dsh-thirteen-bg": [
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-poster.jpg",
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-shot-2.jpg"
+ ],
+ "https://github.com/ryubyte/dsh-a2a": [
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/dashboard-outbound.png",
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/dashboard-inbound.png",
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/server-inbound.png",
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/server-serve.png"
  ]
 }
