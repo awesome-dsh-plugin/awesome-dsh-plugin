@@ -1,0 +1,6 @@
+url: https://github.com/s3yf1337/dsh-desktop
+name: s3yf1337/dsh-desktop
+category: ui
+description:
+  en: 'Desktop profile for dsh: native Tauri window over the harness web surface with tray, native notifications, a file-manager panel, and one-click updates.'
+  zh: dsh 桌面配置：原生 Tauri 窗口承载 harness Web 界面，支持托盘、原生通知、文件管理器面板与一键更新。
