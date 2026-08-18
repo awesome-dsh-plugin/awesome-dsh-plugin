@@ -1,0 +1,6 @@
+url: https://github.com/dannyvan/dsh-file-drop
+name: dannyvan/dsh-file-drop
+category: ui
+description:
+  en: 'Drag & drop or click to attach any non-image file (PDF/Word/Excel/ZIP/text) into the composer: in the desktop shell it resolves the real Finder path instantly; otherwise it uploads to the workspace and inserts the path.'
+  zh: 拖拽/点击上传任意非图片文件（PDF/Word/Excel/ZIP/文本）到输入框：桌面壳下直取 Finder 原始路径；无壳时上传到工作区并插入路径。
