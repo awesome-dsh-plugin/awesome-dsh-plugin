@@ -108,7 +108,12 @@ jobs:
               const sha = commit.oid
 
               const runs = new Map()
-              for (const s of commit.checkSuites.nodes) for (const r of s.checkRuns.nodes) if (!runs.has(r.name)) runs.set(r.name, r.conclusion)
+              // GraphQL returns check conclusions as a SCREAMING_CASE enum
+              // (FAILURE), while the REST API this job posts with uses
+              // lowercase. Comparing the two directly is silently always false,
+              // which is exactly how the first version of the retraction below
+              // never fired. Normalise once, here.
+              for (const s of commit.checkSuites.nodes) for (const r of s.checkRuns.nodes) if (!runs.has(r.name)) runs.set(r.name, (r.conclusion ?? '').toLowerCase())
               const names = new Set(runs.keys())
               const mine = runs.get(NAME) ?? null
 
