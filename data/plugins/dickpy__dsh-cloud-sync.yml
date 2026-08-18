@@ -1,0 +1,6 @@
+url: https://github.com/dickpy/dsh-cloud-sync
+name: dickpy/dsh-cloud-sync
+category: workflow
+description:
+  en: Synchronizes DSH profiles and local plugin source archives through WebDAV and S3-compatible storage, with encrypted snapshots, conflict-aware recovery, and explicit self-updates.
+  zh: 通过 WebDAV 和兼容 S3 的存储同步 DSH profile 与本地插件源码归档，支持加密快照、冲突感知恢复和显式自更新。
