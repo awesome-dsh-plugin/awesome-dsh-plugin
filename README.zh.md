@@ -192,6 +192,7 @@ dsh plugin --profile web add dshmarket
 - [springbrand-lab/dsh-skin-universe](https://github.com/springbrand-lab/dsh-skin-universe) — DSH Web GUI 全家桶：带定时调度的任务看板、Git 分支图、文件与变更侧栏、支持 SFTP 与端口转发的 SSH 终端、扫码配对的手机远程控制、桌面宠物、实时 token 统计，以及五套可安装主题。
 - [taxueseek/dsh-files](https://github.com/taxueseek/dsh-files) — 文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。
 - [TecFancy/dsh-mobile](https://github.com/TecFancy/dsh-mobile) — DSH Web 移动端适配插件：侧边栏/详情抽屉浮层化、输入栏与设置页响应式适配，桌面零回归。
+- [TianYa-DAO/dsh-wallpaper-engine#plugin](https://github.com/TianYa-DAO/dsh-wallpaper-engine/tree/main/packages/dsh-wallpaper-engine) — 面向 DSH 桌面壳的 Wallpaper Engine 本地库、背景层、原生 Scene 面板与桌面模式控件。
 - [tsonglew/dsh-media-preview](https://github.com/tsonglew/dsh-media-preview) — better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。
 - [tsonglew/dsh-workspace-search](https://github.com/tsonglew/dsh-workspace-search) — VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。
 - [TZHR-invest/dsh-plugins#dsh-mobile-ui](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui) — Web GUI 移动端适配：窄屏全宽响应式布局、会话抽屉、44px 触摸目标、安全区适配与阅读增强，桌面端零影响。
