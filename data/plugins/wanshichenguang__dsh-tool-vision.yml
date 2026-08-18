@@ -1,0 +1,6 @@
+url: https://github.com/wanshichenguang/dsh-tool-vision
+name: wanshichenguang/dsh-tool-vision
+category: vision
+description:
+  en: 'Adds an image_describe tool backed by the DashScope OpenAI-compatible vision API; on text-only sessions, pasted images are stored as local paths for the model and rendered inline in the chat transcript.'
+  zh: 通过 DashScope OpenAI 兼容视觉接口提供 image_describe 识图工具；在纯文本模型会话中，将粘贴图片保存为模型可读取的本地路径，并在聊天记录中回显图片。
