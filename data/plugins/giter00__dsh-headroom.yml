@@ -1,0 +1,6 @@
+url: https://github.com/giter00/dsh-headroom
+name: giter00/dsh-headroom
+category: memory
+description:
+  en: 'Automatic context compression for DeepSeek Harness: compresses tool outputs before they reach the model and keeps every lossy compression reversible via CCR retrieval tools.'
+  zh: 面向 DeepSeek Harness 的自动上下文压缩插件：在工具输出进入模型前压缩，并通过 CCR 检索工具保持所有有损压缩可逆。
