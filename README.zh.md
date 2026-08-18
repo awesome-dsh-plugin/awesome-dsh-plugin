@@ -234,6 +234,7 @@ dsh plugin --profile web add dshmarket
 - [wsxwj123/dsh-plugins#dsh-composer-tools](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools) — 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）等输入增强。
 - [wsxwj123/dsh-plugins#turn-scrubber](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/turn-scrubber) — 右侧紧凑回合刻度条，悬停显示回合摘要，点击跳转到对应用户回合。
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) — Codex 风格左侧消息导航轨道：每条用户消息一个刻度，悬停预览、点击跳转，全历史一次索引。
+- [wzz3034026545/dsh-rule-manager](https://github.com/wzz3034026545/dsh-rule-manager) — 在设置面板统一管理 DSH 规则：编辑全局/项目 AGENTS.md，或由 LLM 自动拆分粘贴的规则为分层 AGENTS.md 与技能。
 - [x2802490130-prog/dsh-client-ui-writing](https://github.com/x2802490130-prog/dsh-client-ui-writing) — Web 客户端「写作」面板：项目分卷与统计、书库与全文检索、设定演化版本链 diff、线索 SVG 图谱，仅在写作预设会话显示。
 - [XHR666/dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在浏览器里直接加载 Wallpaper Engine 的 .mpkg 作为 DSH 网页背景：内嵌视频、多时段切换、统一磨砂虚化、本地壁纸库与轮换。
 - [xiaoshihou514/dsh-tui](https://github.com/xiaoshihou514/dsh-tui) — 干净简单的终端交互式界面。
