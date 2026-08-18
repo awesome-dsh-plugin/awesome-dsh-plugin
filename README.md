@@ -88,6 +88,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [alingalingling/ui-status-label](https://github.com/alingalingling/ui-status-label) - Customize the "deep diving" thinking status label to anything you like.
 - [asukasec/dsh-message-preview](https://github.com/asukasec/dsh-message-preview) - Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.
 - [ayahunter/dsh-trail](https://github.com/ayahunter/dsh-trail) - Replaces the Web GUI trajectory tab with a new-user-friendly round-by-round storyline, plain-language tool labels, category filters and fuzzy search.
+- [bainianlaoyao/easy-archive](https://github.com/bainianlaoyao/easy-archive) - Two-step inline archive on workspace sidebar rows — one click arms a red confirm, the second click archives; the archive entry is removed from the ⋮ menu.
 - [bill9109/dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) - Cross-platform file drag-and-drop with raw path insertion, no file copying.
 - [boogoo619/dsh-focus-overlay](https://github.com/boogoo619/dsh-focus-overlay) - Focus mode with a full-screen reading overlay that hides the header and composer and folds AI tool calls into summaries.
 - [causebefore/dsh-pomodoro](https://github.com/causebefore/dsh-pomodoro) - Pomodoro focus-and-break timer for DSH Web with configurable cycles, a draggable mini panel, and in-app, sound, and browser notifications.
