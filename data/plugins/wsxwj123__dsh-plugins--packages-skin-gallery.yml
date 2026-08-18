@@ -1,0 +1,6 @@
+url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/skin-gallery
+name: wsxwj123/dsh-plugins#skin-gallery
+category: theme
+description:
+  en: Nine complete dsh-web-ui skin replicas with custom skin-pack import, preview, apply, delete, restore-default, and readability fixes for bubbles and code blocks.
+  zh: 9 个完整 dsh-web-ui 皮肤复刻，支持自定义皮肤包导入、试穿、应用、删除、恢复默认，并修正气泡与代码块可读性。
