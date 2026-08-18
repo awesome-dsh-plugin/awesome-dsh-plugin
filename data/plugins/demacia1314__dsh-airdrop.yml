@@ -1,0 +1,6 @@
+url: https://github.com/demacia1314/dsh-airdrop
+name: demacia1314/dsh-airdrop
+category: ui
+description:
+  en: 'Drop files or folders anywhere in the DSH window to upload them into the session workspace, with type-aware cards, in-browser previews, and sending through the native composer button.'
+  zh: '把文件或文件夹拖到 DSH 窗口任意位置即可上传到会话工作区，带类型感知卡片、浏览器内预览，并通过原生发送按钮发送。'
