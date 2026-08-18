@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-im-connect
+name: MichengAI/dsh-im-connect
+category: notify
+description:
+  en: Connects WeChat, WeCom, DingTalk, Feishu, Lark, QQ, and Telegram to a local DeepSeek Harness agent, with each IM chat as a separate workspace channel.
+  zh: 把微信、企业微信、钉钉、飞书、Lark、QQ、Telegram 接到本机 DeepSeek Harness，每个 IM 聊天对应一条独立工作区频道。
