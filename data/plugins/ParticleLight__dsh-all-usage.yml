@@ -1,0 +1,6 @@
+url: https://github.com/ParticleLight/dsh-all-usage
+name: ParticleLight/dsh-all-usage
+category: usage
+description:
+  en: Usage dashboard for DeepSeek Harness with model, provider, workspace, token, cache, balance, and CSV insights.
+  zh: DeepSeek Harness 全量用量看板：按模型、供应商、工作区和时间范围分析 Token、缓存与账户余额。

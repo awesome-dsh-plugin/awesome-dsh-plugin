@@ -850,5 +850,9 @@
  "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/rss": [
   "https://raw.githubusercontent.com/hyzyn/dsh-plugin-kit/main/docs/dsh-plugin-kit-rss-setting.png",
   "https://raw.githubusercontent.com/hyzyn/dsh-plugin-kit/main/docs/dsh-plugin-kit-rss-view.png"
+ ],
+ "https://github.com/ParticleLight/dsh-all-usage": [
+  "https://raw.githubusercontent.com/ParticleLight/dsh-all-usage/main/assets/screenshot-1.png",
+  "https://raw.githubusercontent.com/ParticleLight/dsh-all-usage/main/assets/screenshot-2.png"
  ]
 }
