@@ -3,4 +3,4 @@ name: chinosk6/dsh-roleplay
 category: fun
 description:
   en: Role-play conversations with character cards, in-chat character-card authoring and editing, and image generation through configurable backends.
-  zh: 角色扮演对话插件：支持角色卡对话、在对话中创作与编辑角色卡，并可接入可配置的生图后端生成插图。
+  zh: 角色扮演插件：支持角色卡对话、在对话中创作与编辑角色卡，可接入生图后端生成插图。
