@@ -1,5 +1,5 @@
-url: https://github.com/kaziii/dsh-github-connector
-name: kaziii/dsh-github-connector
+url: https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github
+name: kaziii/dsh-github-connector#github
 category: git
 description:
   en: 'GitHub Device Flow connect plus an in-conversation PR workflow: a status bar above the composer for create / AI-review / merge, and github_* tools for search, issue and PR read and write.'

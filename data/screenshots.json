@@ -557,10 +557,6 @@
   "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_config.png",
   "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_dialog.png"
  ],
- "https://github.com/kaziii/dsh-github-connector": [
-  "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/pr-bar.png",
-  "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/connect-github.png"
- ],
  "https://github.com/kexuejin/dsh-zhihu-dashboard": [
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/hot.png",
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/track.png",
@@ -869,5 +865,9 @@
   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshot.png",
   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/rounds-view.png",
   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/tool-details.png"
+ ],
+ "https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github": [
+  "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/pr-bar.png",
+  "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/connect-github.png"
  ]
 }

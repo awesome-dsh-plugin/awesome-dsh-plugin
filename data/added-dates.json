@@ -63,7 +63,6 @@
  "https://github.com/ICCuse/dsh-premise-guard": "2026-08-14",
  "https://github.com/Jayden-X-L/forkprobe": "2026-08-14",
  "https://github.com/Jesse-njx/dsh-chatnode-wechat": "2026-08-14",
- "https://github.com/Jesse-njx/dsh-cowork": "2026-08-14",
  "https://github.com/Jesse-njx/dsh-crosstalk": "2026-08-14",
  "https://github.com/Jesse-njx/dsh-docker": "2026-08-14",
  "https://github.com/Jesse-njx/dsh-memory": "2026-08-14",
@@ -318,7 +317,6 @@
  "https://github.com/omdsh-dev/sandbox-nono": "2026-08-13",
  "https://github.com/omdsh-dev/web-components": "2026-08-13",
  "https://github.com/openma-ai/deepseek-harness-acp": "2026-08-14",
- "https://github.com/openma-ai/deepseek-harness-tui": "2026-08-14",
  "https://github.com/pc439527/dsh-notify-bark": "2026-08-14",
  "https://github.com/penguin-oo/dsh-bookmarks": "2026-08-14",
  "https://github.com/qjcnmd/dsh-reasoning-slider": "2026-08-14",
@@ -437,5 +435,10 @@
  "https://github.com/zhu168/dsh-save-money/tree/main/plugin": "2026-08-18",
  "https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill/tree/main/dsh-commercial-ui-ux": "2026-08-16",
  "https://github.com/zjsthmjialin/inspiration-deck-workshop/tree/master/dsh-inspiration-deck-workshop": "2026-08-16",
- "https://github.com/zjsthmjialin/pdf-background-gray-codex-skill/tree/main/dsh-pdf-background-gray": "2026-08-16"
+ "https://github.com/zjsthmjialin/pdf-background-gray-codex-skill/tree/main/dsh-pdf-background-gray": "2026-08-16",
+ "https://github.com/Jesse-njx/dsh-cowork/tree/main/packages/dsh": "2026-08-14",
+ "https://github.com/No-PRM/dsh-explorer/tree/main/dsh-plugins/dsh-explorer": "2026-08-16",
+ "https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github": "2026-08-17",
+ "https://github.com/openma-ai/deepseek-harness-tui/tree/main/npm": "2026-08-14",
+ "https://github.com/springbrand-lab/dsh-skin-universe/tree/main/packages/dsh-web-ui-all": "2026-08-17"
 }

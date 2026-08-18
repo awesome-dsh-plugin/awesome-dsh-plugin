@@ -1,5 +1,5 @@
-url: https://github.com/springbrand-lab/dsh-skin-universe
-name: springbrand-lab/dsh-skin-universe
+url: https://github.com/springbrand-lab/dsh-skin-universe/tree/main/packages/dsh-web-ui-all
+name: springbrand-lab/dsh-skin-universe#dsh-web-ui-all
 category: ui
 description:
   en: 'Web GUI bundle for DSH: a task board with cron scheduling, a Git branch graph, a file and change side panel, an SSH terminal with SFTP and port forwarding, QR-paired mobile remote control, a desktop companion, live token statistics, and five installable themes.'

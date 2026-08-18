@@ -1,5 +1,5 @@
-url: https://github.com/openma-ai/deepseek-harness-tui
-name: openma-ai/deepseek-harness-tui
+url: https://github.com/openma-ai/deepseek-harness-tui/tree/main/npm
+name: openma-ai/deepseek-harness-tui#npm
 category: ui
 description:
   en: A Rust/ratatui terminal client that speaks the DSH SDK JSON-RPC protocol directly and runs standalone or as a profile bundle.

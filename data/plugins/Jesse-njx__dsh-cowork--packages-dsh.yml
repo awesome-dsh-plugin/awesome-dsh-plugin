@@ -1,5 +1,5 @@
-url: https://github.com/Jesse-njx/dsh-cowork
-name: Jesse-njx/dsh-cowork
+url: https://github.com/Jesse-njx/dsh-cowork/tree/main/packages/dsh
+name: Jesse-njx/dsh-cowork#dsh
 category: docs
 description:
   en: Bounded, cell-addressed `doc_read`/`doc_write` for xlsx / pdf / docx / pptx / ipynb, plus an MCP server and CLI.
