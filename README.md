@@ -1101,6 +1101,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Git & Code Review
 
+- [7dgroup-ai/dsh-skill-7d-git-commit](https://github.com/7dgroup-ai/dsh-skill-7d-git-commit) - Checks git commit messages against the 7DGroup convention (Chinese type tags, length and punctuation rules) before committing, as a client-side guard before GitLab pre-receive hooks.
 - [BrambleXu/dsh-revdiff](https://github.com/BrambleXu/dsh-revdiff) - Native interactive Git diff review for DeepSeek Harness with structured annotations sent back to the current Agent session.
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) - Session change-review plugin for DeepSeek Harness: tracks write/edit tool calls per session and renders line-level diffs with customizable colors, with session isolation, subagent aggregation, and SSE live updates.
 - [DamonKoy/dsh-web-ui#dsh-git-graph](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-git-graph) - Git branch selector and Git graph in the conversation header of the dsh web GUI.
