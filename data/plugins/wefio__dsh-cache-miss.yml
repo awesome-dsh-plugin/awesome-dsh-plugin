@@ -2,6 +2,6 @@ url: https://github.com/wefio/dsh-cache-miss
 name: wefio/dsh-cache-miss
 category: ui
 description:
-  en: Yellow one-line prompt-cache-miss notice under assistant replies that rebuilt the prompt cache.
-  zh: 在重建了提示缓存的 assistant 回复下方显示一条黄色的缓存未命中提示。
+  en: Yellow one-line notice for a prompt cache miss after the cache was rebuilt; shows re-billed uncached input tokens, cached hit tokens, and TTFT.
+  zh: 提示缓存未命中（cache miss）时，在重建缓存的 assistant 回复下方显示一条黄色缓存提示，展示未缓存（uncached）重新计费（re-billed）的输入 token、缓存命中 token 与首字延迟（TTFT）。
 tarball: https://github.com/wefio/dsh-cache-miss/releases/latest/download/dsh-cache-miss.tgz

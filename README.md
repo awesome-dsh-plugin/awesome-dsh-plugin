@@ -240,7 +240,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [vlln/dsh-task-status](https://github.com/vlln/dsh-task-status) - Background task status bar: progress plus live output tail on the chat page.
 - [vvvspec/better-reasoning-slider](https://github.com/vvvspec/better-reasoning-slider) - Official-style composer model trigger with a floating reasoning-effort slider popup.
 - [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) - Font engine for the Web GUI: system font enumeration, global and per-component font-size tuning with a Spy++-style picker, settings page.
-- [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) - Yellow one-line prompt-cache-miss notice under assistant replies that rebuilt the prompt cache.
+- [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) - Yellow one-line notice for a prompt cache miss after the cache was rebuilt; shows re-billed uncached input tokens, cached hit tokens, and TTFT.
 - [weshopai/weshop-dsh-plugin](https://github.com/weshopai/weshop-dsh-plugin) - Infinite-canvas e-commerce visual workspace for product photography, virtual try-on, background edits, and video, synced live with the Harness conversation.
 - [whiteguo233/dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) - OpenBiliClaw consumer panel for DSH: recommendations, saved lists, Socratic dialogue, profile views, and Agent Bridge tools.
 - [WhitePlusMS/dsh-git-graph](https://github.com/WhitePlusMS/dsh-git-graph) - Dedicated read-only Git Graph view beside Chat and Trajectory: commit topology, local/remote/tag refs, HEAD and working-tree status, search, filtering, first-parent mode, refresh, and load more.
