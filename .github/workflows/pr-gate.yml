@@ -217,6 +217,20 @@ jobs:
               : ''
 
             if (result.ok) {
+              // An entry the checker could not reach is let through — a busy
+              // API quota must not reject a good submission — but it must not
+              // be described as having met the bar either. On 2026-08-18 six
+              // entries under the age or commit bar sat green because a 403
+              // during a quota squeeze produced the same verdict as a clean
+              // pass, and the summary said "repo old enough, enough commits"
+              // about repositories nobody had looked at.
+              const partial = result.incomplete ?? []
+              if (partial.length) {
+                const detail = partial.map((c) => `- **${c.url}** — ${c.unverified.join('; ')}`).join('\n')
+                await post('neutral', `${partial.length} entry/entries could not be fully checked`,
+                  `${result.checked - partial.length} of ${result.checked} submitted entr${result.checked === 1 ? 'y' : 'ies'} pass. The rest were let through unchecked rather than rejected, but nothing here vouches for them:\n\n${detail}\n\nRe-run the workflow to check them properly.${modifiedNote}`)
+                return
+              }
               await post('success', 'Entries look good',
                 `All ${result.checked} submitted entr${result.checked === 1 ? 'y passes' : 'ies pass'}: \`dsh.bundle\` declared, repo old enough, enough commits.${modifiedNote}`)
               return
