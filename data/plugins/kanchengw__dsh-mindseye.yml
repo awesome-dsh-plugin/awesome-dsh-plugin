@@ -1,0 +1,6 @@
+url: https://github.com/kanchengw/dsh-mindseye
+name: kanchengw/dsh-mindseye
+category: vision
+description:
+  en: 'Vision plugin for text-only DeepSeek Harness models: native image paste, layered evidence memory and cache, and intent-driven tool selection.'
+  zh: 为纯文本 DeepSeek Harness 模型提供视觉能力：原生图片粘贴、分层证据记忆与缓存、意图驱动的工具选择。

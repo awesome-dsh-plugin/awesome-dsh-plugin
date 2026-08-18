@@ -739,5 +739,9 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
+ ],
+ "https://github.com/kanchengw/dsh-mindseye": [
+  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_config.png",
+  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_dialog.png"
  ]
 }
