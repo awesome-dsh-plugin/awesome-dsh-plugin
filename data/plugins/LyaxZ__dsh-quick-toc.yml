@@ -1,7 +1,7 @@
 url: https://github.com/LyaxZ/dsh-quick-toc
 name: LyaxZ/dsh-quick-toc
 category: ui
-tarball: https://github.com/LyaxZ/dsh-quick-toc/releases/download/v0.1.0/dsh-quick-toc-0.1.0.tgz
+tarball: https://github.com/LyaxZ/dsh-quick-toc/releases/latest/download/dsh-quick-toc.tgz
 description:
   en: 'Conversation TOC for DeepSeek Harness: markdown heading outline grouped by turn, with auto-follow highlight and smooth jump navigation.'
   zh: 'DeepSeek Harness 对话大纲插件：按回合分组的 Markdown 标题目录，自动跟随高亮，平滑跳转导航。'
