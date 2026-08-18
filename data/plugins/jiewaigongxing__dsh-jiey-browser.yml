@@ -1,6 +1,6 @@
 url: https://github.com/jiewaigongxing/dsh-jiey-browser
 name: jiewaigongxing/dsh-jiey-browser
-category: tools
+category: browser
 description:
   en: 'Drive Jiey Browser from DeepSeek Harness over MCP: navigate, snapshot, act, read, screenshot, and manage tabs in a real Chromium profile.'
   zh: 通过 MCP 在 DeepSeek Harness 中驱动 Jiey 浏览器：导航、快照、操作、读取、截图与标签页管理，使用真实 Chromium 环境。
