@@ -193,7 +193,39 @@ async function hasBundle(repo, sub) {
     if (dsh.bundle) return { ok: true }
     if (sub) return { ok: false, why: dsh.client ? 'declares only `dsh.client` — that alone is not installable' : `\`${sub}/package.json\` has no \`dsh.bundle\`` }
   }
-  return scanTree(repo)
+
+  // The entry points at the repository root and the root does not declare a
+  // bundle. The tree scan below may still find one in a subdirectory — and for
+  // a long time that counted as a pass, which is the bug: the site builds the
+  // install command from the entry's URL, so `dsh plugin add github:owner/repo`
+  // targets the root, not wherever the manifest happens to live. The gate was
+  // verifying something other than what it publishes.
+  //
+  // Found by auditing the 1,302 root-pointing entries on 2026-08-18: 48 of them
+  // are listed and cannot be installed from the URL beside their name. #1701
+  // was merged that morning and was one of them.
+  //
+  // The submission is not rejected outright — the plugin is usually real and
+  // only the URL is wrong — so the failure names the exact replacement.
+  const scanned = await scanTree(repo)
+  if (scanned.ok === true && scanned.at) {
+    const dir = scanned.at.replace(/\/package\.json$/, '')
+    if (dir && dir !== 'package.json') {
+      const branch = await once(`branch:${repo}`, async () => (await api(`repos/${repo}`)).body?.default_branch ?? 'main')
+      return {
+        ok: false,
+        why: [
+          `the entry points at the repository root, but the root \`package.json\` declares no \`dsh.bundle\` — `,
+          `\`dsh plugin --profile web add github:${repo}\` would install nothing. The manifest is at \`${scanned.at}\`, `,
+          'so point the entry at that subpackage instead:\n',
+          `  url: https://github.com/${repo}/tree/${branch}/${dir}\n`,
+          `  name: ${repo}#${dir.split('/').pop()}\n`,
+          '\nand rename the file to match (`node scripts/generate-readme.mjs` will tell you the expected name).',
+        ].join(''),
+      }
+    }
+  }
+  return scanned
 }
 
 async function commitCount(repo) {
