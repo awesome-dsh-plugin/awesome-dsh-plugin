@@ -1,0 +1,6 @@
+url: https://github.com/XIZRSAMS/dsh-gui-hanhua
+name: XIZRSAMS/dsh-gui-hanhua
+category: ui
+description:
+  en: 'Localizes the DeepSeek Harness interface — tool call cards, plugin list, command menu and permission selector display Chinese text while keeping the English originals.'
+  zh: 'DeepSeek Harness 界面信息汉化插件：工具调用卡片、插件列表、命令菜单与权限选择器显示中文，保留英文原名。'
