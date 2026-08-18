@@ -206,7 +206,7 @@ function buildRows(loc, only) {
     .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
   return group.map((e) => {
     const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
-    const short = e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name
+    const short = shortName(e.name)
     return `    <li class="card" data-cat="${e.cat}">
       <div class="top">
         <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
@@ -228,6 +228,26 @@ function buildRows(loc, only) {
       </div>
     </li>`
   }).join('\n\n')
+}
+
+// The bare plugin name, without the "owner/" the READMEs carry for human
+// disambiguation. Titles lead with this: nobody searches the owner prefix,
+// and it costs a dozen characters of a budget that truncates around sixty.
+const shortName = (name) => (name.includes('/') ? name.slice(name.indexOf('/') + 1) : name)
+
+// Highest-starred entries in a category, for its meta description. Stars come
+// from a probe that only runs in CI, so a local build ranks by list order
+// instead — the names still differ per category, which is the point.
+function catTop(id, loc, n = 3) {
+  const names = ordered
+    .filter((e) => e.cat === id)
+    .slice()
+    .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+    .slice(0, n)
+    .map((e) => shortName(e.name))
+  if (names.length <= 1) return names[0] ?? ''
+  const sep = loc.code === 'zh' ? '、' : ', '
+  return names.join(sep)
 }
 
 function buildChips(loc) {
@@ -280,6 +300,7 @@ for (const loc of LOCALES) {
     .replaceAll('__LOCALE_LINKS__', () => localeLinks(loc))
     .replaceAll('__SEARCH_PH__', () => loc.SEARCH_PH)
     .replaceAll('__HOME__', () => loc.urlPath)
+    .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
@@ -311,14 +332,18 @@ for (const loc of LOCALES) {
     page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChipLinks(loc, id)}\n    ${b}`)
     page = page
       .replaceAll('__LANG__', () => loc.htmlLang)
-      .replaceAll('__TITLE__', () => loc.CAT_TITLE.replace('{CAT}', loc.categories[id]))
-      .replaceAll('__DESC__', () => loc.CAT_DESC.replace('{CAT}', loc.categories[id]).replace('{N}', n))
+      .replaceAll('__TITLE__', () => esc(loc.CAT_TITLE.replace('{CAT}', loc.categories[id]).replace('{N}', n)))
+      .replaceAll('__DESC__', () => esc(loc.CAT_DESC
+        .replace('{CAT}', loc.categories[id])
+        .replaceAll('{N}', n)
+        .replace('{TOP}', catTop(id, loc))))
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => catHreflangs)
       .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}${id}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__SEARCH_PH__', () => loc.SEARCH_PH)
     .replaceAll('__HOME__', () => loc.urlPath)
+    .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
@@ -326,6 +351,38 @@ for (const loc of LOCALES) {
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
   }
+}
+
+// Privacy page: /privacy/ per locale. The body is prose, not UI strings, so it
+// lives in its own per-locale file (site/privacy.<code>.html) rather than in
+// the locale registry — but the registry still declares it, so a new language
+// fails loudly here instead of silently shipping an English privacy notice.
+const privacyMaster = fs.readFileSync('site/privacy-template.html', 'utf8')
+for (const loc of LOCALES) {
+  if (!fs.existsSync(loc.privacyBody)) {
+    console.error(`${loc.readme}'s locale declares privacyBody ${loc.privacyBody}, which does not exist`)
+    process.exit(1)
+  }
+  const url = ORIGIN + loc.privacyPath
+  const pHreflangs = [
+    ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.privacyPath}">`),
+    `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].privacyPath}">`,
+  ].join('\n')
+  let page = privacyMaster
+    .replaceAll('__LANG__', () => loc.htmlLang)
+    .replaceAll('__TITLE__', () => esc(loc.PRIVACY_TITLE))
+    .replaceAll('__DESC__', () => esc(loc.PRIVACY_DESC))
+    .replaceAll('__URL__', () => url)
+    .replaceAll('__HREFLANGS__', () => pHreflangs)
+    .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
+    .replaceAll('__HOME__', () => loc.urlPath)
+    .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code)
+      .map((l) => `<a class="lang-btn" href="${l.privacyPath}" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n  '))
+    .replaceAll('__PRIVACY_BODY__', () => fs.readFileSync(loc.privacyBody, 'utf8').trimEnd())
+  for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
+  const outDir = 'docs' + loc.privacyPath.replace(/\/$/, '')
+  fs.mkdirSync(outDir, { recursive: true })
+  fs.writeFileSync(`${outDir}/index.html`, page)
 }
 
 // Plugin detail pages: /p/{owner}/{repo}[--subdir]/ per locale
@@ -340,18 +397,54 @@ function renderReadme(rm) {
     if (/^data:/i.test(href)) return allowData ? href : '#'
     return base + href.replace(/^\.\//, '').replace(/^\//, '')
   }
+  // A README is third-party markdown, and an <img> in it is a request the
+  // visitor's browser makes to whatever host the author named — which is
+  // exactly the tracking-pixel vector SCREENSHOT_HOSTS already exists to shut
+  // (see data/screenshots.json validation above). The same rule has to apply
+  // here or the guarantee is only as strong as its weakest path.
+  //
+  // The allowlist is GitHub's own hosting, which costs the visitor nothing new:
+  // this site is served from GitHub Pages, so GitHub already sees the request
+  // for the page itself. Everything else — badge services, CDNs, personal
+  // domains — is dropped outright, along with the link and paragraph it leaves
+  // behind. Keeping the alt text instead was worse: nearly all of these are
+  // status badges, and a row of them collapses into "DSH Node.js JavaScript
+  // Cordis Zero deps" — prose the author never wrote, in the position a reader
+  // starts reading. The whole README is one click away in either case.
+  const imgAllowed = (href) => {
+    if (/^data:/i.test(href)) return true // inline bytes, no request leaves
+    try { return SCREENSHOT_HOSTS.has(new URL(href).hostname) } catch { return false }
+  }
   const md = new Marked({
     walkTokens(t) {
       if (t.type === 'heading') t.depth = Math.min(t.depth + 1, 6)
       else if (t.type === 'image') t.href = abs(t.href, rm.base, true)
       else if (t.type === 'link') t.href = abs(t.href, rm.blobBase)
     },
-    renderer: { html: () => '' },
+    renderer: {
+      html: () => '',
+      image({ href, title, text }) {
+        if (!href || !imgAllowed(href)) return ''
+        const t = title ? ` title="${esc(title)}"` : ''
+        return `<img src="${esc(href)}" alt="${esc(text ?? '')}"${t} loading="lazy" decoding="async" referrerpolicy="no-referrer">`
+      },
+    },
   })
   try {
     // drop a leading H1 — the page already has one
     const src = rm.md.replace(/^\s*# .*\n/, '')
-    return md.parse(src)
+    // A dropped image leaves debris: first the link that wrapped it, then the
+    // paragraph that held only that link. Raw HTML is already stripped, so
+    // every anchor and paragraph here came from markdown and had content until
+    // we removed the image. Loop because emptying a link empties its paragraph.
+    let html = md.parse(src)
+    for (let prev = null; prev !== html;) {
+      prev = html
+      html = html
+        .replace(/<a\b[^>]*>\s*<\/a>/g, '')
+        .replace(/<p>\s*<\/p>\s*/g, '')
+    }
+    return html
   } catch {
     return null
   }
@@ -365,9 +458,20 @@ for (const loc of LOCALES) {
       `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/">`,
     ].join('\n')
     const desc = e.descs[loc.code]
-    const metaDesc = desc.length > 155 ? desc.slice(0, 152) + '…' : desc
+    // Trim to a boundary rather than mid-word: a description cut at "config" ->
+    // "conf…" is the one line a searcher reads before deciding to click. Prefer
+    // ending on a sentence, else the last word; CJK has no spaces, so the word
+    // fallback simply does not fire there and the hard cut stands.
+    const metaDesc = (() => {
+      if (desc.length <= 155) return desc
+      const head = desc.slice(0, 152)
+      const stop = Math.max(head.lastIndexOf('. '), head.lastIndexOf('。'), head.lastIndexOf('；'), head.lastIndexOf('; '))
+      if (stop > 90) return desc.slice(0, stop + 1).trim()
+      const space = head.lastIndexOf(' ')
+      return (space > 90 ? head.slice(0, space) : head).trimEnd() + '…'
+    })()
 
-    const short = e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name
+    const short = shortName(e.name)
     const h1 = `<span class="owner">${esc(e.owner)}/</span><wbr><span class="name">${esc(short)}</span>`
 
     const specs = [
@@ -416,13 +520,32 @@ for (const loc of LOCALES) {
       ],
     }])
 
-    // pick the README matching the page locale; fall back to whatever exists
+    // Pick the README matching the page locale, falling back to whatever the
+    // project actually published. Roughly a third of entries ship only one
+    // language, so the fallback fires on hundreds of pages: rendering it is
+    // still right (documentation in the wrong language beats none), but the
+    // block must then carry its own `lang` — a page that declares lang="en"
+    // around Chinese prose is lying to every consumer that reads it, from
+    // screen readers to search engines, and there is no upside to that.
     const entry = readmes[e.url]
-    const rm = entry ? (entry[loc.code] ?? entry.en ?? entry.zh ?? (entry.md ? entry : null)) : null
+    let rm = null
+    let rmLang = null
+    if (entry) {
+      for (const code of [loc.code, ...LOCALES.map((l) => l.code)]) {
+        if (entry[code]) { rm = entry[code]; rmLang = code; break }
+      }
+      // legacy shape: the README sat directly on the entry, with no locale key
+      if (!rm && entry.md) { rm = entry; rmLang = loc.code }
+    }
     const readmeHtml = rm ? renderReadme(rm) : null
+    const rmLocale = LOCALES.find((l) => l.code === rmLang)
+    const rmMismatch = rm != null && rmLang !== loc.code
+    const rmNote = rmMismatch
+      ? `\n    <p class="note">${esc(loc.strings.P_README_ONLY.replace('{LANG}', loc.langNames[rmLang] ?? rmLang))}</p>`
+      : ''
     const readmeSection = readmeHtml ? `<section class="panel readme">
-    <h2>README</h2>
-    <div class="md" translate="no">
+    <h2>README</h2>${rmNote}
+    <div class="md" lang="${rmLocale?.htmlLang ?? loc.htmlLang}" translate="no">
 ${readmeHtml}
     </div>
     <p class="note"><a href="${rm.htmlUrl}" rel="noopener">${loc.strings.P_README_SRC}</a></p>
@@ -432,13 +555,16 @@ ${readmeHtml}
     page = page
       .replaceAll('__P_README_SECTION__', () => readmeSection)
       .replaceAll('__LANG__', () => loc.htmlLang)
-      .replaceAll('__TITLE__', () => esc(loc.P_TITLE.replace('{NAME}', e.name).replace('{CAT}', loc.categories[e.cat])))
+      .replaceAll('__TITLE__', () => esc(loc.P_TITLE
+        .replace('{NAME}', e.name)
+        .replace('{CAT}', loc.categories[e.cat])))
       .replaceAll('__DESC__', () => esc(metaDesc))
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => dHreflangs)
       .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
       .replaceAll('__JSONLD__', () => ldSafe(jsonldDetail))
       .replaceAll('__HOME__', () => loc.urlPath)
+      .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
@@ -518,13 +644,21 @@ const registry = {
       // READMEs render "owner/name" for human disambiguation; machine
       // consumers (find-plugin, dsh-market) match on the bare plugin name,
       // with `owner` as its own field.
-      name: e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name,
+      name: shortName(e.name),
       owner: e.owner,
       url: e.url,
       page: `${ORIGIN}/p/${e.slug}/`,
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
+      // The author-declared release asset, when there is one. `install` folds
+      // it into a display string, but a consumer that only reads `npm` sees
+      // null and falls back to `github:owner/repo` — a different artifact from
+      // the one the listing tells a human to install, and for a plugin that
+      // ships no built output, one that does not install at all. Recovering it
+      // by parsing the command string is not a contract worth offering, so the
+      // field is published directly. Omitted when absent, like `screenshots`.
+      tarball: e.tarball ?? undefined,
       stars: e.stars,
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
@@ -537,7 +671,51 @@ const registry = {
 }
 fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 
+// Public README payload: /readmes.json — the markdown the detail pages render,
+// keyed by entry URL like the registry. Published so a storefront can build
+// plugin pages with the same body text instead of re-probing GitHub for it:
+// the probe costs ~700 API calls, and two independent copies would drift.
+//
+// Only listed entries are included, so a delisted plugin disappears here the
+// same build it disappears everywhere else. Large — a few MB before the
+// compression Pages applies — which is why it is one file a build fetches
+// once rather than 1,300 a build fetches individually.
+{
+  const listed = new Set(ordered.map((e) => e.url))
+  const payload = {
+    name: 'awesome-dsh-plugin',
+    url: ORIGIN,
+    updated: registry.updated,
+    count: 0,
+    // locale code -> the README language it is served for, so a consumer can
+    // reproduce the fallback the site itself does (and mark the mismatch).
+    locales: LOCALES.map((l) => l.code),
+    readmes: {},
+  }
+  for (const [url, entry] of Object.entries(readmes)) {
+    if (!listed.has(url)) continue
+    const langs = {}
+    for (const l of LOCALES) if (entry[l.code]) langs[l.code] = entry[l.code]
+    if (!Object.keys(langs).length) continue
+    payload.readmes[url] = langs
+    payload.count++
+  }
+  fs.writeFileSync('docs/readmes.json', JSON.stringify(payload) + '\n')
+  console.log(`readmes.json: ${payload.count} entries, ${(fs.statSync('docs/readmes.json').size / 1048576).toFixed(1)} MB`)
+}
+
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
+
+// The privacy page changes on the order of once a year, so its lastmod comes
+// from the commit that last touched its sources rather than from build time.
+// A lastmod that moves every night without the page changing is worse than
+// none: it teaches a crawler to stop believing every lastmod on the site.
+// Empty only before these files are first committed, where today is correct.
+const PRIVACY_LASTMOD = (() => {
+  const sources = ['site/privacy-template.html', ...LOCALES.map((l) => l.privacyBody)]
+  const out = execSync(`git log -1 --format=%cs -- ${sources.join(' ')}`, { encoding: 'utf8' }).trim()
+  return out || new Date().toISOString().slice(0, 10)
+})()
 const alternates = [
   ...LOCALES.map((l) => `      <xhtml:link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}"/>`),
   `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}"/>`,
@@ -556,6 +734,12 @@ ${LOCALES.flatMap((l) => CAT_IDS.map((id) => `  <url>
     <changefreq>daily</changefreq>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}${id}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/"/>`].join('\n')}
   </url>`)).join('\n')}
+${LOCALES.map((l) => `  <url>
+    <loc>${ORIGIN}${l.privacyPath}</loc>
+    <lastmod>${PRIVACY_LASTMOD}</lastmod>
+    <changefreq>yearly</changefreq>
+${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.privacyPath}"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].privacyPath}"/>`].join('\n')}
+  </url>`).join('\n')}
 ${LOCALES.flatMap((l) => ordered.map((e) => `  <url>
     <loc>${ORIGIN}${l.urlPath}p/${e.slug}/</loc>
     <lastmod>${e.added}</lastmod>

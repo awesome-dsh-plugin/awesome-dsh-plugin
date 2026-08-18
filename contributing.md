@@ -41,7 +41,7 @@ description:
 **Why one file per plugin / 为什么一个插件一个文件：** everyone used to append to the same spot in the same README section, so merging one PR broke the next. Separate files never collide. / 以前所有人都往同一分类的同一位置追加，合并一个 PR 就会撞掉下一个。独立文件永不冲突。
 
 Valid `category` values / 可用的 `category` 取值：
-`ui` `usage` `theme` `model` `session` `memory` `tools` `vision` `skill` `workflow` `notify` `dev` `market` `fun`
+`ui` `usage` `theme` `model` `session` `memory` `tools` `browser` `vision` `voice` `docs` `skill` `workflow` `git` `notify` `dev` `security` `remote` `market` `fun`
 
 This set is not fixed — see the note on categories under [how submissions are reviewed](#how-submissions-are-reviewed--收录如何评审). / 这组取值不是固定的，说明见[收录如何评审](#how-submissions-are-reviewed--收录如何评审)中关于分类的那条。
 
@@ -90,10 +90,13 @@ CI 通过是**前置条件**，不是结论。CI 校验的是提交的形式—�
 What that review looks at / 评审会看：
 
 1. **Does the code do what the entry claims** — including any numbers or API names in the description. / 代码是否与条目声明一致，包括描述里的数字与 API 名称。
-2. **Is the category reasonable.** Nobody gets sent back over a category — if a better one fits, a maintainer just changes it. The taxonomy itself keeps moving: categories get split as they grow (that's where `usage` and `vision` came from) and renamed or merged when they stop being useful, so today's best fit may be re-filed later. Pick the closest one and don't agonise. / 分类是否合理。**不会有人因为分类被打回**——如果有更贴切的，维护者直接改。分类体系本身也在变：某一类长大了就会拆分（`usage` 与 `vision` 就是这么来的），不再有用的会改名或合并，所以今天最贴切的归类以后也可能被重新调整。挑最接近的一个即可，不必纠结。
+2. **Is the category reasonable.** Nobody gets sent back over a category — if a better one fits, a maintainer just changes it. The taxonomy itself keeps moving: categories get split as they grow — `usage` and `vision` came from that, and so did `security`, `browser`, `git`, `docs`, `remote` and `voice`, all split out of `tools`, `ui` and `dev` once those had grown past the point where anyone could scan them — and categories get renamed or merged when they stop being useful. Today's best fit may be re-filed later; that is maintenance, not a correction of your judgement. Pick the closest one and don't agonise. / 分类是否合理。**不会有人因为分类被打回**——如果有更贴切的，维护者直接改。分类体系本身也在变：某一类长大了就会拆分——`usage` 与 `vision` 就是这么来的，`security`、`browser`、`git`、`docs`、`remote`、`voice` 也是，它们都是在 `tools`、`ui`、`dev` 大到没人能扫完之后从中拆出来的——不再有用的分类则会改名或合并。今天最贴切的归类以后也可能被重新归档，那是维护，不是在纠正你的判断。挑最接近的一个即可，不必纠结。
 3. **Is it real, working code** rather than a placeholder or a wrapper around nothing. / 是否是真实可用的代码，而非占位或空壳。
 4. **Is it already covered** by an entry on the list. Where two plugins do the same thing, whoever got here first keeps the slot — but that is a tiebreaker, not tenure. Being listed is not permanent: entries that stop being maintained, behave badly, or carry obvious defects get removed. So a fork *is* added when it is the better-kept one, or when it genuinely adds something. The rule is not first-come; the rule is whichever is better. / 是否已被现有条目覆盖。两个插件做同一件事时，先来者保留位置——但这只是平局时的排序依据，不是既得利益。收录不是永久的：停止维护、有恶意行为、存在明显缺陷的条目会被移除。所以一个分叉**是可以**被收录的——只要它维护得更好，或者确实做了新东西。规则不是先来后到，规则是谁更好。
 5. **Anything alarming in the source** — obfuscated code, credential exfiltration, surprising install-time behaviour. Being listed is still **not** a security review (see the warning at the top of the README); this is a sanity check, not an audit. / 源码中是否有可疑之处——混淆代码、凭据外传、异常的安装期行为。收录仍**不等于**做过安全审查（见 README 顶部警告），这只是常识性检查，不是审计。
+6. **Does the PR touch entries it has no business touching.** A PR updating one plugin should not rewrite another's description. This slipped through twice ([#1348](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/issues/1348)) because every mechanical check passed — the YAML was valid, the READMEs regenerated, lint was clean. The gate now lists every existing entry a PR modifies so it can be questioned. / PR 是否动了与它无关的条目。更新某个插件的 PR 不该改写另一个插件的描述。这类问题曾两次蒙混过关（[#1348](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/issues/1348)）——因为所有机械检查都通过了：YAML 合法、README 能生成、lint 干净。现在 gate 会列出 PR 修改的每一个既有条目，以便被追问。
+
+If you're updating your own entry, **change only your own entry**. Editing the READMEs by hand is the usual way this goes wrong: line positions shift as the list grows, and an edit lands on a neighbour. That's why the READMEs are generated — edit your `data/plugins/<owner>__<repo>.yml` and regenerate. / 如果你在更新自己的条目，**请只改自己那一条**。手工编辑 README 是这类事故的常见起因：列表增长会让行号移位，改动就落到了邻居身上。这正是 README 改为生成的原因——请编辑你自己的 `data/plugins/<owner>__<repo>.yml` 再重新生成。
 
 Feedback comes as a PR comment naming exactly what to change. Being sent back for an inaccurate description isn't a rejection of the plugin — fix the line and it goes in. / 反馈会以 PR 评论给出，明确指出要改什么。因描述不准确被打回不是对插件本身的否定——改好那一行即可收录。
 

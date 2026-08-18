@@ -1,0 +1,8 @@
+url: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck
+name: FeatherHunter/dsh-mattpocock-skills-deck
+category: dev
+description:
+  en: 'Right-side details panel that turns the Matt Pocock skills collection into a DSH quest board: wayfinder decision maps, per-issue triage / fix / discuss / execute actions, 9-item core-skill probe plus 20-skill radar, environment checks, and one-click handoff across sessions.'
+  zh: 'Matt Pocock 技能套件的 DSH 控制面板：右侧 details 列打开；含 wayfinder 决策地图、issue 行级 triage / 修复 / 讨论 / 执行按钮、9 项核心套件探测 + 20 个技能雷达、环境检查、跨会话 handoff 交接。'
+
+npm: dsh-mattpocock-skills-deck

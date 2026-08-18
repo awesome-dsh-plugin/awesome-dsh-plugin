@@ -1,0 +1,6 @@
+url: https://github.com/jilian-dsh/dsh-rules-manager
+name: jilian-dsh/dsh-rules-manager
+category: dev
+description:
+  en: 'Rules, commands & skills manager for dsh: /rules slash command, settings panel with visual rule editing (add/edit/disable/delete, free-zone support), user-defined custom commands with {input} arguments, skill management, and automatic backup & one-click restore of AGENTS.md.'
+  zh: 'dsh 规则、命令与技能管理：/rules 斜杠命令、设置面板可视化编辑规则（增改禁用删除、自由区域支持）、带参数的自定义命令、技能管理、AGENTS.md 自动备份与一键恢复。'

@@ -21,11 +21,30 @@ __HREFLANGS__
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" href="/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{}</script>
 <style>
+/* Archivo is self-hosted, not loaded from Google Fonts: a webfont request
+   hands the visitor's IP to a third party on every page view, for a display
+   face used in headings only. One variable file per subset covers the whole
+   500-900 range the design uses, so this is also fewer bytes and two fewer
+   connections. Files live in site/assets/ and the build copies them to docs/. */
+@font-face{
+  font-family:'Archivo';
+  font-style:normal;
+  font-weight:500 900;
+  font-display:swap;
+  src:url(/archivo-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Archivo';
+  font-style:normal;
+  font-weight:500 900;
+  font-display:swap;
+  src:url(/archivo-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
 /* ── 纸墨朱砂 · warm paper + modern cards (design B, 2026-08) ── */
 :root{
   --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
@@ -280,7 +299,7 @@ dsh plugin --profile web add github:owner/repo</pre>
 <span id="live" class="sr" aria-live="polite"></span>
 
 <footer><div class="wrap frow">
-  <span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · __T_NOTAFF__ · <span class="motto" translate="no">__T_MOTTO__</span></span>
+  <span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · <a href="__PRIVACY__">__T_PRIVACY__</a> · __T_NOTAFF__ · <span class="motto" translate="no">__T_MOTTO__</span></span>
   <span>__T_DISCLAIMER__</span>
 </div></footer>
 

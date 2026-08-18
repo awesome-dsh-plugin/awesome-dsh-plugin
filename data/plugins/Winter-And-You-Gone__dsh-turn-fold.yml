@@ -1,0 +1,6 @@
+url: https://github.com/Winter-And-You-Gone/dsh-turn-fold
+name: Winter-And-You-Gone/dsh-turn-fold
+category: ui
+description:
+  en: "Automatically folds tool calls into Think-segment groups and collapses each finished turn into a single header showing duration, token, throughput, and cache-hit metrics."
+  zh: "工具调用按 Think 段自动分组折叠；回合结束后整回合收成一个大组头，显示耗时/token/tok/s/缓存命中率指标。"
