@@ -399,7 +399,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
 - [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) - Role-based LLM retry & fallback strategies.
-- [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) - Global Simplified-Chinese mode: a 中 switch in the input box that injects language requirements (Chinese or English per region) into every session's system prompt; anchored mode forces English thinking for anchored presets.
+- [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) - Global Chinese mode: a compact pill switch beside the composer that injects a language requirement into any preset's system prompt (complete personas excepted); reply, thinking and tool output each toggle between Chinese and English, and anchored presets are supported.
 - [dylan121322/llm-adaptive](https://github.com/dylan121322/llm-adaptive) - Adaptive model routing: per-request complexity classification with automatic provider routing.
 - [Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL](https://github.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL) - Use your ChatGPT/Codex subscriptions in DSH, with image generation and web search support.
 - [fieldnote-ops/keyringseam](https://github.com/fieldnote-ops/keyringseam) - macOS Keychain credential provider that replaces the local-file provider and uses a signed, notarized universal helper.
