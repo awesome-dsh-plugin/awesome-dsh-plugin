@@ -1424,6 +1424,7 @@ dsh plugin --profile web add dshmarket
 - [sjh9714/clippy-harness#plugin](https://github.com/sjh9714/clippy-harness/tree/master/plugin) — 回形针助手回来了，这次它真的会干活：会对真实 agent 状态做出反应的办公助手宠物，任务完成时跳起来庆祝，回合失败时弹出经典的 "illegal operation" 对话框。
 - [skiuniverse/dsh-running-liang](https://github.com/skiuniverse/dsh-running-liang) — 等待 Agent 回复时的恐龙快跑小游戏：常驻进度条从「梁子」冲向「梁圣」，折叠即暂停、任意键恢复。
 - [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) — 导入/上传 Codex 风格精灵图序列帧宠物，在 DSH Web GUI 以悬浮浮层渲染，含图库管理、交互与 Agent 状态联动。
+- [Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) — 元气鲸鱼娘桌宠：摸头养成、工作状态联动、494 条台词与 30 项成就，自带设置面板，全本地零遥测。
 - [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) — 数码宝贝式养成：孵一颗吃真实工作长大的蛋（回合、工具调用、报错都是营养），按你的工作方式走四条进化分支；零 token，模型完全看不见。
 - [swaylq/dsh-wildmon](https://github.com/swaylq/dsh-wildmon) — 宝可梦式捕捉收集：真实工作就是草丛 —— 回合、工具调用、报错刷出野外遭遇；投球捕捉、集 28 格图鉴、带 6 只队伍。零 token，模型完全看不见。
 - [THEWOLFWALKER/dsh-coyote](https://github.com/THEWOLFWALKER/dsh-coyote) — Agent 与网页 GUI 双面控制的 DG-LAB 郊狼（Coyote）电击/电刺激插件：八个 `coyote_*` 工具 + DSH 网页面板，共用同一安全边界（软上限、非对称升速限流、会话冷却、播放硬上限、断连即停）；v0.2 起可选自动电击层，把 agent 事件（工具调用/报错/回合结束）映射为有界脉冲；官方 V3 socket 协议 + 二维码配对、可编程波形。仅限成年人。
