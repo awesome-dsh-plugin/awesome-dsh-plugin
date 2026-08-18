@@ -1,0 +1,6 @@
+url: https://github.com/maxwell-feng/dsh-windows-ocr
+name: maxwell-feng/dsh-windows-ocr
+category: vision
+description:
+  en: 'Local OCR for attached images via the built-in Windows engine (Windows.Media.Ocr): only the recognized text is sent to the model, never the image bytes; vision passthrough is opt-in.'
+  zh: '本地 Windows 引擎（Windows.Media.Ocr）识别附加图片：只把识别出的文字发送给模型，图片字节不进入上下文；视觉直通可选开启。'
