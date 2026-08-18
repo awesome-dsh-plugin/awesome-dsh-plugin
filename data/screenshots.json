@@ -838,5 +838,13 @@
  ],
  "https://github.com/itr-del/dsh-feishu": [
   "https://raw.githubusercontent.com/itr-del/dsh-feishu/master/assets/hero.png"
+ ],
+ "https://github.com/940842546/dsh-permissions": [
+  "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/01-permissions-overview.png",
+  "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/02-permissions-rules.png",
+  "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/03-permissions-draft.png",
+  "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/en-01-permissions-overview.png",
+  "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/en-02-permissions-rules.png",
+  "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/en-03-permissions-draft.png"
  ]
 }
