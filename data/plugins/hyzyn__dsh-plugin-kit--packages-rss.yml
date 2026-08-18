@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/rss
+name: hyzyn/dsh-plugin-kit#rss
+category: tools
+description:
+  en: 'Daily RSS/Atom news digest for DSH: built-in channels plus a curated awesome-rsshub-routes catalog and custom feeds (validated on save), aggregated into one "今日值得读" Markdown digest each day and injected into the system prompt; Web GUI settings card and sidebar reader.'
+  zh: 'DSH 的 RSS/新闻聚合插件：内置渠道库 + awesome-rsshub-routes 精选订阅源目录 + 自定义源（保存时真实抓取校验），每天自动汇总成「今日值得读」Markdown 并注入 systemPrompt；带 Web 设置卡片与侧边栏阅读弹窗。'
