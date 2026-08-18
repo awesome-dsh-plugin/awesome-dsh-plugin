@@ -1,5 +1,5 @@
-url: https://github.com/cuboteam/Dit/tree/main/packages/dsh-plugin-dit
-name: cuboteam/Dit#dsh-plugin-dit
+url: https://github.com/cuboteam/dsh-plugin-dit
+name: cuboteam/dsh-plugin-dit
 category: model
 description:
   en: 'DIT.ai provider bundle for DeepSeek Harness: installs 29 OpenAI Chat Completions models and 10 Anthropic Messages models from one DIT_API_KEY, with protocol-specific thinking configuration.'

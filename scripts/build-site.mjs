@@ -525,6 +525,14 @@ const registry = {
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
+      // The author-declared release asset, when there is one. `install` folds
+      // it into a display string, but a consumer that only reads `npm` sees
+      // null and falls back to `github:owner/repo` — a different artifact from
+      // the one the listing tells a human to install, and for a plugin that
+      // ships no built output, one that does not install at all. Recovering it
+      // by parsing the command string is not a contract worth offering, so the
+      // field is published directly. Omitted when absent, like `screenshots`.
+      tarball: e.tarball ?? undefined,
       stars: e.stars,
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
