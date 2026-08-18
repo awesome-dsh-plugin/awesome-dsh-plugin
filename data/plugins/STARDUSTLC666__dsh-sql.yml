@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-sql
+name: STARDUSTLC666/dsh-sql
+category: tools
+description:
+  en: 'Database tools for agents: list/query/exec/schema across SQLite/MySQL/PostgreSQL, with lexer-grade read-only protection, row caps and an approval-gated write path.'
+  zh: 数据库工具：sql_list/query/exec/schema，SQLite/MySQL/PostgreSQL 三引擎，词法级只读保护、行数钳制与写审批门。

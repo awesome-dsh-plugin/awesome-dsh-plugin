@@ -5,6 +5,7 @@
 //      whole tree is enumerated rather than a guessed list of directories)
 //   2. the repo is at least MIN_AGE_DAYS old and has >= MIN_COMMITS commits
 //   3. the repo exists and isn't archived
+//   4. the repo is not DSH itself (it declares `dsh.bundle` and would pass 1-3)
 //
 // Needs GITHUB_TOKEN: the git-tree enumeration and the commit count are API
 // calls, and unauthenticated (60/hr per IP) is nowhere near enough. That is
@@ -21,6 +22,28 @@ const MIN_AGE_DAYS = 1
 const MIN_COMMITS = 10
 const CONCURRENCY = 6
 const MAX_TREE_PKGS = 40
+
+// DSH itself declares `dsh.bundle`: packages/bundle/base/package.json is
+// @deepseek-ai/dsh-base, and it is the 19th of 248 manifests in that tree, so
+// the enumeration reaches it well inside MAX_TREE_PKGS and the age and commit
+// thresholds are met by years. The harness would therefore pass the gate as a
+// plugin for itself. Listing the product in a list of plugins for the product
+// is the one wrong entry every visitor would recognise, so it is refused by
+// identity rather than by contract.
+const FIRST_PARTY_REPOS = new Set(['deepseek-ai/deepseek-harness'])
+
+// Packages published only by the DSH project. A repository containing one of
+// these under `dsh.bundle` is shipping a copy of the harness: measured on the
+// live topic, five repositories carry `packages/bundle/base/package.json` naming
+// `@deepseek-ai/dsh-base` verbatim, reached about 21 manifests into a ~250
+// manifest tree, so this check finds it inside MAX_TREE_PKGS and accepts them.
+// `fork` is false for all five, so they are source copies that neither an owner
+// check nor a fork check detects.
+const FIRST_PARTY_PACKAGES = new Set([
+  '@deepseek-ai/dsh-base',
+  '@deepseek-ai/dsh-web-app',
+  '@deepseek-ai/dsh-headless',
+])
 
 // Entries submitted before the gate existed are judged by the old rules; only
 // the manifest check applies to them. Set to when the rule change landed.
@@ -101,14 +124,32 @@ async function hasBundle(repo, sub) {
   const pkgs = found.slice(0, MAX_TREE_PKGS)
 
   let sawClient = false
+  let vendored = null
   for (const p of pkgs) {
     const f = await api(`repos/${repo}/contents/${p}`)
     if (f.status !== 200 || !f.body?.content) continue
     const pkg = parsePkg(f.body.content)
     if (!pkg) continue
     const dsh = pkg.dsh ?? {}
-    if (dsh.bundle) return { ok: true, at: p }
+    if (dsh.bundle) {
+      // A repository that vendors DSH's own bundle packages satisfies this
+      // check by containing the harness, not by offering a plugin. Recorded
+      // rather than accepted, and only reported if no genuine bundle turns up
+      // later in the tree — a plugin repository may legitimately keep a copy
+      // of the harness for testing.
+      if (FIRST_PARTY_PACKAGES.has(pkg.name)) {
+        vendored ??= { at: p, name: pkg.name }
+        continue
+      }
+      return { ok: true, at: p }
+    }
     if (dsh.client) sawClient = true
+  }
+  if (vendored) {
+    return {
+      ok: false,
+      why: `\`${vendored.at}\` is DSH's own \`${vendored.name}\`, so this repository contains the harness rather than a plugin for it`,
+    }
   }
   if (sawClient) return { ok: false, why: 'declares only `dsh.client` — that alone is not installable' }
   // Same reasoning as a truncated tree: with more manifests than the cap, the
@@ -131,6 +172,9 @@ async function commitCount(repo) {
 
 async function check(entry) {
   const { repo, sub } = decompose(entry.url)
+  if (FIRST_PARTY_REPOS.has(repo.toLowerCase())) {
+    return ['this is DeepSeek Harness itself, not a plugin for it']
+  }
   const meta = await api(`repos/${repo}`)
   if (meta.status === 404) return [`repository not found: https://github.com/${repo}`]
   if (meta.status !== 200) {

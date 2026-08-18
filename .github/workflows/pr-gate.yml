@@ -86,6 +86,15 @@ jobs:
           # -z handles paths with spaces.
           mkdir -p /tmp/prdata
           git diff -z --name-only --diff-filter=A "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
+
+          # Entries this PR MODIFIES rather than adds. These face no gate (see
+          # above) but they are where cross-entry damage hides: #1348 was a PR
+          # to refresh one plugin's entry that also rewrote an unrelated
+          # plugin's description, twice, past every check we had. Surfacing the
+          # list is what lets a reviewer ask why it is there.
+          git diff --name-only --diff-filter=M "$BASE...pr-head" -- data/plugins \
+            | sed 's|^data/plugins/||;s|\.yml$||' > /tmp/prdata/modified.txt || true
+          echo "modified entries: $(wc -l < /tmp/prdata/modified.txt | tr -d ' ')"
           FILES=()
           while IFS= read -r -d '' f; do FILES+=("$f"); done < /tmp/prdata/diff.z
           printf 'changed entry files: %s\n' "${#FILES[@]}"
@@ -160,9 +169,16 @@ jobs:
               return
             }
 
+            const modified = (() => {
+              try { return fs.readFileSync('/tmp/prdata/modified.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
+            })()
+            const modifiedNote = modified.length
+              ? `\n\n**This PR also rewrites ${modified.length} existing entr${modified.length === 1 ? 'y' : 'ies'}:** ${modified.map((m) => `\`${m}\``).join(', ')}. If any of those aren't the subject of this PR, that's an accidental edit — check before merging.`
+              : ''
+
             if (result.ok) {
               await post('success', 'Entries look good',
-                `All ${result.checked} submitted entr${result.checked === 1 ? 'y passes' : 'ies pass'}: \`dsh.bundle\` declared, repo old enough, enough commits.`)
+                `All ${result.checked} submitted entr${result.checked === 1 ? 'y passes' : 'ies pass'}: \`dsh.bundle\` declared, repo old enough, enough commits.${modifiedNote}`)
               return
             }
             const body = result.failures.flatMap((f) => [`**${f.url}**`, ...f.problems.map((p) => `- ${p}`), '']).join('\n')
