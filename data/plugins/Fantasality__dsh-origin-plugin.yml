@@ -1,0 +1,6 @@
+url: https://github.com/Fantasality/dsh-origin-plugin
+name: Fantasality/dsh-origin-plugin
+category: tools
+description:
+  en: 'Drive Origin scientific plotting from DeepSeek Harness AI chat via MCP: write data, plot line/scatter/column, export PNG/SVG.'
+  zh: '通过 MCP 在 DeepSeek Harness 对话里驱动 Origin 科学绘图：写数据、折线/散点/柱状图，导出 PNG/SVG。'
