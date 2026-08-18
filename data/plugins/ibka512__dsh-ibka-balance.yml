@@ -1,0 +1,6 @@
+url: https://github.com/ibka512/dsh-ibka-balance
+name: ibka512/dsh-ibka-balance
+category: usage
+description:
+  en: 'Permanent composer-dock balance card: real-time DeepSeek API account balance with 5-minute auto-refresh, a manual refresh button, and low-balance color warnings.'
+  zh: 输入框下方常驻余额卡片：实时显示 DeepSeek API 账户余额，每 5 分钟自动刷新，支持手动刷新，余额过低自动变色提醒。
