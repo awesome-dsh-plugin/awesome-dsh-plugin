@@ -657,121 +657,190 @@
       "name": "dsh-desktop",
       "url": "https://github.com/howlma/dsh-desktop",
       "category": "ui-user-experience",
-      "description": {"en": "Windows desktop client that boots or reuses the Harness gateway and embeds the official web UI, with tray residency and optional launch-at-login.", "zh-CN": "Windows 桌面客户端：打开即拉起或复用 Harness 网关，窗口内嵌官方 Web 界面；托盘常驻，可选开机自启。"}
+      "description": {
+        "en": "Windows desktop client that boots or reuses the Harness gateway and embeds the official web UI, with tray residency and optional launch-at-login.",
+        "zh-CN": "Windows 桌面客户端：打开即拉起或复用 Harness 网关，窗口内嵌官方 Web 界面；托盘常驻，可选开机自启。"
+      }
     },
     {
       "name": "dsh-deepseek-quota",
       "url": "https://github.com/yingjunnan/dsh-deepseek-quota",
       "category": "ui-user-experience",
-      "description": {"en": "Shows remaining DeepSeek API balance in a floating bottom-right card on the DSH Web page, with auto-refresh and a manual refresh button.", "zh-CN": "在 DSH Web 页面右下角悬浮卡片展示 DeepSeek API 剩余额度，支持自动刷新与手动刷新。"}
+      "description": {
+        "en": "Shows remaining DeepSeek API balance in a floating bottom-right card on the DSH Web page, with auto-refresh and a manual refresh button.",
+        "zh-CN": "在 DSH Web 页面右下角悬浮卡片展示 DeepSeek API 剩余额度，支持自动刷新与手动刷新。"
+      }
     },
     {
       "name": "dsh-vision-tools",
       "url": "https://github.com/moon09300731/dsh-vision-tools",
       "category": "ai-design-media",
-      "description": {"en": "Vision toolkit for DeepSeek Harness with a vision_understand tool bridging text-only DeepSeek models to OpenAI-compatible vision APIs.", "zh-CN": "DeepSeek Harness 视觉工具包：通过 vision_understand 将纯文本 DeepSeek 模型桥接到 OpenAI 兼容视觉 API。"}
+      "description": {
+        "en": "Vision toolkit for DeepSeek Harness with a vision_understand tool bridging text-only DeepSeek models to OpenAI-compatible vision APIs.",
+        "zh-CN": "DeepSeek Harness 视觉工具包：通过 vision_understand 将纯文本 DeepSeek 模型桥接到 OpenAI 兼容视觉 API。"
+      }
     },
     {
       "name": "dsh-approval-gate",
       "url": "https://github.com/moon09300731/dsh-approval-gate",
       "category": "agent-automation",
-      "description": {"en": "Risk-gated auto-approval for DeepSeek Harness: safe operations auto-approve, while risky operations require human approval.", "zh-CN": "DSH 风险门控自动审批：安全操作自动批准，风险操作转人工审批。"}
+      "description": {
+        "en": "Risk-gated auto-approval for DeepSeek Harness: safe operations auto-approve, while risky operations require human approval.",
+        "zh-CN": "DSH 风险门控自动审批：安全操作自动批准，风险操作转人工审批。"
+      }
     },
     {
       "name": "dsh-adb",
       "url": "https://github.com/SamXiaBing/dsh-adb",
       "category": "life-devices-physical-world",
-      "description": {"en": "ADB device and bench operations for DSH: device discovery, logcat streaming, APK installation, file transfer, and performance snapshots.", "zh-CN": "DSH 的 ADB 设备与台架操作：设备发现、logcat 流、APK 安装、文件传输和性能快照。"}
+      "description": {
+        "en": "ADB device and bench operations for DSH: device discovery, logcat streaming, APK installation, file transfer, and performance snapshots.",
+        "zh-CN": "DSH 的 ADB 设备与台架操作：设备发现、logcat 流、APK 安装、文件传输和性能快照。"
+      }
     },
     {
       "name": "dsh-preset-flash-director",
       "url": "https://github.com/zhaoyilun/dsh-preset-flash-director",
       "category": "agent-automation",
-      "description": {"en": "A token-economical DeepSeek Harness agent preset that delegates deep-thinking tasks to expert subagents.", "zh-CN": "一个节省 token 的 DeepSeek Harness 智能体预设，将深度思考任务委派给专家子智能体。"}
+      "description": {
+        "en": "A token-economical DeepSeek Harness agent preset that delegates deep-thinking tasks to expert subagents.",
+        "zh-CN": "一个节省 token 的 DeepSeek Harness 智能体预设，将深度思考任务委派给专家子智能体。"
+      }
     },
     {
       "name": "dsh-plugin-hub",
       "url": "https://github.com/Noob-stupid/dsh-plugin-hub",
       "category": "ui-user-experience",
-      "description": {"en": "A DSH Web UI plugin manager with one-click controls and a GitHub dsh-plugin marketplace.", "zh-CN": "DSH Web UI 插件管理器，支持一键控制和 GitHub dsh-plugin 市场。"}
+      "description": {
+        "en": "A DSH Web UI plugin manager with one-click controls and a GitHub dsh-plugin marketplace.",
+        "zh-CN": "DSH Web UI 插件管理器，支持一键控制和 GitHub dsh-plugin 市场。"
+      }
     },
     {
       "name": "dsh-github-login",
       "url": "https://github.com/Noob-stupid/dsh-github-login",
       "category": "developer-tools",
-      "description": {"en": "A visual GitHub device-flow login tool that synchronizes the token to gh CLI configuration.", "zh-CN": "一个将令牌同步到 gh CLI 配置的可视化 GitHub 设备码登录工具。"}
+      "description": {
+        "en": "A visual GitHub device-flow login tool that synchronizes the token to gh CLI configuration.",
+        "zh-CN": "一个将令牌同步到 gh CLI 配置的可视化 GitHub 设备码登录工具。"
+      }
     },
     {
       "name": "dsh-suite",
       "url": "https://github.com/whyihaveyou/dsh-suite",
       "category": "developer-tools",
-      "description": {"en": "A living DeepSeek Harness plugin directory with compatibility CI, a searchable catalog, and an in-app plugin store.", "zh-CN": "DSH 插件活目录，提供兼容性 CI、可搜索目录和内置插件商店。"}
+      "description": {
+        "en": "A living DeepSeek Harness plugin directory with compatibility CI, a searchable catalog, and an in-app plugin store.",
+        "zh-CN": "DSH 插件活目录，提供兼容性 CI、可搜索目录和内置插件商店。"
+      }
     },
     {
       "name": "create-dsh-plugin",
       "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/create-dsh-plugin",
       "category": "developer-tools",
-      "description": {"en": "A DSH plugin scaffolder with tool, events, and Web UI templates plus a built-in smoke test.", "zh-CN": "DSH 插件脚手架，提供工具、事件和 Web UI 模板及内置冒烟测试。"}
+      "description": {
+        "en": "A DSH plugin scaffolder with tool, events, and Web UI templates plus a built-in smoke test.",
+        "zh-CN": "DSH 插件脚手架，提供工具、事件和 Web UI 模板及内置冒烟测试。"
+      }
     },
     {
       "name": "plugin-manager",
       "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager",
       "category": "developer-tools",
-      "description": {"en": "An in-app DSH Web UI plugin store with browsing, search, installation, compatibility badges, and an installed list.", "zh-CN": "DSH Web UI 内置插件商店，支持浏览、搜索、安装、兼容徽章和已装列表。"}
+      "description": {
+        "en": "An in-app DSH Web UI plugin store with browsing, search, installation, compatibility badges, and an installed list.",
+        "zh-CN": "DSH Web UI 内置插件商店，支持浏览、搜索、安装、兼容徽章和已装列表。"
+      }
     },
     {
       "name": "plugin-team-board",
       "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board",
       "category": "agent-automation",
-      "description": {"en": "A shared multi-agent task board backed by a Cordis service key.", "zh-CN": "由 Cordis 服务键支持的共享多智能体任务板。"}
+      "description": {
+        "en": "A shared multi-agent task board backed by a Cordis service key.",
+        "zh-CN": "由 Cordis 服务键支持的共享多智能体任务板。"
+      }
     },
     {
       "name": "plugin-notify",
       "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify",
       "category": "productivity-collaboration",
-      "description": {"en": "Sends IM webhook and local notifications on turn completion, errors, or approval requests.", "zh-CN": "在回合完成、出错或需要审批时发送 IM webhook 和本地通知。"}
+      "description": {
+        "en": "Sends IM webhook and local notifications on turn completion, errors, or approval requests.",
+        "zh-CN": "在回合完成、出错或需要审批时发送 IM webhook 和本地通知。"
+      }
     },
     {
       "name": "plugin-session-export",
       "url": "https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export",
       "category": "productivity-collaboration",
-      "description": {"en": "Exports append-only session logs as human-readable Markdown or HTML.", "zh-CN": "将只追加会话日志导出为可读的 Markdown 或 HTML。"}
+      "description": {
+        "en": "Exports append-only session logs as human-readable Markdown or HTML.",
+        "zh-CN": "将只追加会话日志导出为可读的 Markdown 或 HTML。"
+      }
     },
     {
       "name": "dsh-settings-plus",
       "url": "https://github.com/oneinitAI/dsh-settings-plus",
       "category": "developer-tools",
-      "description": {"en": "Advanced settings manager for DeepSeek Harness with form-level and file-level configuration editing plus a plugin settings SDK.", "zh-CN": "DeepSeek Harness 高级设置管理器，支持表单级和文件级配置编辑及插件设置 SDK。"}
+      "description": {
+        "en": "Advanced settings manager for DeepSeek Harness with form-level and file-level configuration editing plus a plugin settings SDK.",
+        "zh-CN": "DeepSeek Harness 高级设置管理器，支持表单级和文件级配置编辑及插件设置 SDK。"
+      }
     },
     {
       "name": "dsh-lark-meeting-notifier",
       "url": "https://github.com/yeruizhi/dsh-lark-meeting-notifier",
       "category": "productivity-collaboration",
-      "description": {"en": "A Feishu meeting reminder panel with today/tomorrow views and multi-alarm flashing reminders.", "zh-CN": "飞书会议提醒面板，提供今天/明天视图和多闹钟闪烁提醒。"}
+      "description": {
+        "en": "A Feishu meeting reminder panel with today/tomorrow views and multi-alarm flashing reminders.",
+        "zh-CN": "飞书会议提醒面板，提供今天/明天视图和多闹钟闪烁提醒。"
+      }
     },
     {
       "name": "shopline-ai-toolkit-dsh",
       "url": "https://github.com/lunw/shopline-ai-toolkit-dsh",
       "category": "business-finance-commerce",
-      "description": {"en": "SHOPLINE AI Toolkit for DeepSeek Harness, bridging the official SHOPLINE Developer MCP server and seven agent skills.", "zh-CN": "面向 DeepSeek Harness 的 SHOPLINE AI 工具包，接入官方 SHOPLINE Developer MCP 服务并提供七个智能体技能。"}
+      "description": {
+        "en": "SHOPLINE AI Toolkit for DeepSeek Harness, bridging the official SHOPLINE Developer MCP server and seven agent skills.",
+        "zh-CN": "面向 DeepSeek Harness 的 SHOPLINE AI 工具包，接入官方 SHOPLINE Developer MCP 服务并提供七个智能体技能。"
+      }
     },
     {
       "name": "dsh-im-hub",
       "url": "https://github.com/ThreeBody6666/dsh-im-hub",
       "category": "productivity-collaboration",
-      "description": {"en": "Multi-platform IM gateway for DeepSeek Harness with Feishu, WeCom, and Telegram integrations and per-chat agent sessions.", "zh-CN": "DeepSeek Harness 多平台 IM 网关，集成飞书、企业微信和 Telegram，并提供每聊天独立智能体会话。"}
+      "description": {
+        "en": "Multi-platform IM gateway for DeepSeek Harness with Feishu, WeCom, and Telegram integrations and per-chat agent sessions.",
+        "zh-CN": "DeepSeek Harness 多平台 IM 网关，集成飞书、企业微信和 Telegram，并提供每聊天独立智能体会话。"
+      }
     },
     {
       "name": "dsh-theme-plugin",
       "url": "https://github.com/BeiZi6/dsh-theme-plugin",
       "category": "ui-user-experience",
-      "description": {"en": "A DSH Web GUI theme studio with built-in presets, customizable palettes, and instant theme switching.", "zh-CN": "DSH Web GUI 主题工作室，提供内置预设、可自定义配色和即时主题切换。"}
+      "description": {
+        "en": "A DSH Web GUI theme studio with built-in presets, customizable palettes, and instant theme switching.",
+        "zh-CN": "DSH Web GUI 主题工作室，提供内置预设、可自定义配色和即时主题切换。"
+      }
     },
     {
       "name": "dsh-opencodego-usage",
       "url": "https://github.com/BeiZi6/dsh-opencodego-usage",
       "category": "developer-tools",
-      "description": {"en": "An OpenCodeGo quota monitor for the DSH Web GUI with rolling, weekly, and monthly usage views.", "zh-CN": "DSH Web GUI 的 OpenCodeGo 额度监视器，提供滚动、周和月度用量视图。"}
+      "description": {
+        "en": "An OpenCodeGo quota monitor for the DSH Web GUI with rolling, weekly, and monthly usage views.",
+        "zh-CN": "DSH Web GUI 的 OpenCodeGo 额度监视器，提供滚动、周和月度用量视图。"
+      }
+    },
+    {
+      "name": "dsh-movein",
+      "url": "https://github.com/sjh9714/dsh-movein",
+      "category": "developer-tools",
+      "description": {
+        "en": "Migrates a whole Claude Code or Codex CLI setup into DSH in one command: skills, slash commands, MCP servers, hooks, subagents and permission rules, with a dry-run estimate and a post-move doctor check.",
+        "zh-CN": "一条命令把整套 Claude Code 或 Codex CLI 配置迁入 DSH：技能、斜杠命令、MCP 服务器、hooks、子代理与权限规则，默认先出预演清单，搬完可用 doctor 体检。"
+      }
     }
   ]
 }
