@@ -1,0 +1,6 @@
+url: https://github.com/heartleo/hn-cli/tree/main/plugins/hacker-news
+name: heartleo/hn-cli#hacker-news
+category: tools
+description:
+  en: Hacker News tools for feeds, discussion threads, search, and user profiles.
+  zh: 用于获取 Hacker News 榜单、讨论串、搜索和用户资料的工具。
