@@ -1,0 +1,5 @@
+url: https://github.com/opencues/opencues/tree/master/integrations/dsh
+name: opencues/opencues#integrations-dsh
+category: ui
+description:
+  en: Word alternatives and underscore-gated fill-ins in the composer. End a line with _ and it is filled; misspellings are flagged as you type. Routes through the model dsh is already configured with, so it needs no API key.
