@@ -1400,6 +1400,7 @@ dsh plugin --profile web add dshmarket
 - [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) — 有效解决了写代码的时候账户不能同时亏钱的 BUG。
 - [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) — A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。
 - [chen731215-dev/-](https://github.com/chen731215-dev/-) — 酒馆管理原生面板：多角色卡、多世界书、可切换预设，深浅色跟随，点侧边栏自动关闭。
+- [cipher2026/dsh-idle-deepcompute](https://github.com/cipher2026/dsh-idle-deepcompute) — 终端风 AI 实验室挂机游戏：攒算力、训练升级模型、发论文，一路转生到 AGI/ASI。
 - [DamonKoy/dsh-web-ui#dsh-pet](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-pet) — dsh web GUI 多桌宠伴侣：注册表驱动的悬浮宠物，随模型活动实时反应。
 - [eric-song-dev/dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet) — ikun 桌宠填满「Deep diving...」状态行下方整行区块：坤宠动图沿 0%→100% 进度条行走，每 20% 切换动作与文案，完成时系统级播放「你干嘛~哎哟」提示音。
 - [falser101/dsh-mascot](https://github.com/falser101/dsh-mascot) — 可拖拽的猫狗悬浮伴侣，表情随当前会话变化，在 Companion 设置页里换皮肤。
