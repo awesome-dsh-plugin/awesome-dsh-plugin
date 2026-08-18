@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/docgen
+name: JohnXu22786/docgen
+category: skill
+description:
+  en: 'Document workshop skill pack: four pure-prompt Agent Skills that turn a codebase into READMEs, PR descriptions, changelogs and code reviews, installed into dsh via a dsh.bundle plugin row.'
+  zh: '文档工坊技能包：四个纯提示词 Agent Skills，从代码库生成 README、PR 描述、changelog 与代码审查意见，以 dsh.bundle 插件行接入 dsh，也可文件式发现免拷贝使用。'
