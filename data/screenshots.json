@@ -2,6 +2,9 @@
  "https://github.com/030611/qiushi-dsh-evidence-audit": [
   "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
  ],
+ "https://github.com/2008924/dsh-progress-viz": [
+  "https://raw.githubusercontent.com/2008924/dsh-progress-viz/main/docs/screenshot.png"
+ ],
  "https://github.com/263311487-ux/dsh-verify": [
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/report-screenshot.png",
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/visual-diff.png"
@@ -89,8 +92,12 @@
   "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/files.png"
  ],
  "https://github.com/ChongCyrus/Vibe-Mathematics": [
-  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE.png",
-  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B-%E9%95%BF%E6%88%AA%E5%9B%BE.png"
+  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE-v1.png",
+  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE-v2.png"
+ ],
+ "https://github.com/ChrisZhangWG/dsh-codex-meter": [
+  "https://raw.githubusercontent.com/ChrisZhangWG/dsh-codex-meter/main/docs/settings-usage-overview.png",
+  "https://raw.githubusercontent.com/ChrisZhangWG/dsh-codex-meter/main/docs/settings-usage-cost-history.png"
  ],
  "https://github.com/Dely0/dsh-personal-workbench": [
   "https://raw.githubusercontent.com/Dely0/dsh-personal-workbench/main/screenshot/%E4%B8%BB%E7%95%8C%E9%9D%A2.PNG",
@@ -259,8 +266,17 @@
   "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-3-settings.png",
   "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-5-error.png"
  ],
+ "https://github.com/RevolutionLA/dsh-dream-skin": [
+  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/preview.png",
+  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/settings.png"
+ ],
  "https://github.com/SamizuHM/dsh-client-ui-theme-xp": [
   "https://raw.githubusercontent.com/SamizuHM/dsh-client-ui-theme-xp/main/docs/screenshot.png"
+ ],
+ "https://github.com/Signalight/codex-to-dsh-pet/tree/main/packages/dsh-codex-pet": [
+  "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-1.png",
+  "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-2.png",
+  "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-3.png"
  ],
  "https://github.com/Smalldy/godot-bridge": [
   "https://raw.githubusercontent.com/Smalldy/godot-bridge/main/assets/godot-bridge-env-check.png"
@@ -300,6 +316,18 @@
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
+ ],
+ "https://github.com/UndeadSheep/dsh-file-preview": [
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/github-social-preview.png",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/btnPos.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/write.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/clickOpen.gif",
+  "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/SearchBar.gif"
+ ],
+ "https://github.com/WenhongPan/dsh-projects": [
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/picker.webp",
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/create.webp",
+  "https://raw.githubusercontent.com/WenhongPan/dsh-projects/main/docs/assets/native.webp"
  ],
  "https://github.com/YeqingTang/dsh-session-flow": [
   "https://raw.githubusercontent.com/YeqingTang/dsh-session-flow/main/assets/screenshots/overview.png",
@@ -435,6 +463,9 @@
  "https://github.com/haoku123/dsh-voice": [
   "https://raw.githubusercontent.com/haoku123/dsh-voice/main/docs/demo.gif"
  ],
+ "https://github.com/hezhongtang/dsh-capability-optimizer": [
+  "https://raw.githubusercontent.com/hezhongtang/dsh-capability-optimizer/main/assets/screenshot-zh.png"
+ ],
  "https://github.com/huguangyu666/dsh-plugin-notify": [
   "https://raw.githubusercontent.com/huguangyu666/dsh-plugin-notify/main/assets/screenshot.png"
  ],
@@ -488,6 +519,10 @@
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/model-picker.png",
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/chat-demo.png",
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/plugin-list.png"
+ ],
+ "https://github.com/kanchengw/dsh-mindseye": [
+  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_config.png",
+  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_dialog.png"
  ],
  "https://github.com/kaziii/dsh-github-connector": [
   "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/pr-bar.png",
@@ -605,6 +640,10 @@
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-persistent-sandboxed.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-preset-picker.png"
  ],
+ "https://github.com/skyhancloud/dsh-client-ui-quote": [
+  "https://raw.githubusercontent.com/skyhancloud/dsh-client-ui-quote/main/assets/preview-1.png",
+  "https://raw.githubusercontent.com/skyhancloud/dsh-client-ui-quote/main/assets/preview-2.png"
+ ],
  "https://github.com/slywalker2006/dsh-passwords": [
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/white-login.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/black-login.png",
@@ -626,6 +665,12 @@
  ],
  "https://github.com/superagents-lab/dsh-s1": [
   "https://raw.githubusercontent.com/superagents-lab/dsh-s1/main/assets/dsh-s1.png"
+ ],
+ "https://github.com/text2future/flowix/tree/main/app/flowix-dsh-host/bundles/dsh-flowix-memory": [
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/home-write.png",
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/readme-agent.png",
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/gh-detail-4.png",
+  "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/gh-detail-6.png"
  ],
  "https://github.com/tpmoonchefryan/dsh-joi-channel-theme": [
   "https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/main/docs/settings-wardrobe.png",
@@ -691,6 +736,12 @@
   "https://raw.githubusercontent.com/xbzbing/dsh-auth-gateway/main/docs/assets/settings-menu.png",
   "https://raw.githubusercontent.com/xbzbing/dsh-auth-gateway/main/docs/assets/settings-auth.png"
  ],
+ "https://github.com/xiajiajun516/dsh-config-manager": [
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-export.png",
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-import-preview.png",
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-snapshots.png",
+  "https://raw.githubusercontent.com/xiajiajun516/dsh-config-manager/main/assets/screenshot-sync.png"
+ ],
  "https://github.com/yflmq001/dsh-cost-tracker": [
   "https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshots/screenshot-main.png",
   "https://raw.githubusercontent.com/yflmq001/dsh-cost-tracker/main/assets/screenshots/screenshot-cost-panel.png",
@@ -723,5 +774,8 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
+ ],
+ "https://github.com/minivv/dsh-agent-skills": [
+  "https://raw.githubusercontent.com/minivv/dsh-agent-skills/main/agent-skills-page.png"
  ]
 }

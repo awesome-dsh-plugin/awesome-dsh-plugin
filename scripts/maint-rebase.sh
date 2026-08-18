@@ -55,8 +55,14 @@ for n in "$@"; do
         const out = { ...ours }
         for (const [k, v] of Object.entries(theirs)) if (!same(base[k], v)) out[k] = v
         for (const k of Object.keys(base)) if (!(k in theirs) && k in out) delete out[k]
-        const sorted = Object.fromEntries(Object.keys(out).sort().map((k) => [k, out[k]]))
-        fs.writeFileSync("data/screenshots.json", JSON.stringify(sorted, null, 1) + "\n")
+        // Keep main'"'"'s existing key order and append whatever is new. The file
+        // matches no sort — it grew by appending — so re-sorting it rewrites a
+        // couple of hundred lines that nobody changed. That noise landed in
+        // contributors'"'"' diffs and read as "this PR also touched unrelated
+        // entries", which is the exact signal used to catch cross-entry damage.
+        // Poisoning it is worse than an untidy file.
+        const order = [...Object.keys(ours).filter((k) => k in out), ...Object.keys(out).filter((k) => !(k in ours))]
+        fs.writeFileSync("data/screenshots.json", JSON.stringify(Object.fromEntries(order.map((k) => [k, out[k]])), null, 1) + "\n")
       ' 2>/dev/null; then
         git add data/screenshots.json
       fi

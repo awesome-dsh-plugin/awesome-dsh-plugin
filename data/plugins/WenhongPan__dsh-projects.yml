@@ -1,0 +1,7 @@
+url: https://github.com/WenhongPan/dsh-projects
+name: WenhongPan/dsh-projects
+category: session
+tarball: https://github.com/WenhongPan/dsh-projects/releases/download/v0.3.0-alpha.1/dsh-projects-0.3.0-alpha.1.tgz
+description:
+  en: "Project and session organization with multi-folder groups, attention summaries, grouped chat search, native folder picking, pinning, favorites, ordering, and an archive center."
+  zh: "项目与会话整理工具：支持多文件夹组合、待处理状态摘要、分组聊天搜索、原生目录选择、置顶、收藏、排序和归档中心。"

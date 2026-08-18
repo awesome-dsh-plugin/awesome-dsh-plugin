@@ -1,0 +1,6 @@
+url: https://github.com/opencues/opencues/tree/master/integrations/dsh
+name: opencues/opencues#integrations-dsh
+category: ui
+description:
+  en: Word alternatives and underscore-gated fill-ins in the composer. End a line with _ and it is filled; misspellings are flagged as you type. Routes through the model dsh is already configured with, so it needs no API key.
+  zh: 在输入框内提供同义词替换与以下划线触发的补全：一行以 _ 结尾即自动补全，拼写错误在输入时即时标出。它走 dsh 已配置好的模型，因此无需额外的 API key。

@@ -1,0 +1,6 @@
+url: https://github.com/flyhigao/dsh-sticky-notes
+name: flyhigao/dsh-sticky-notes
+category: ui
+description:
+  en: Workspace sticky notes for DSH, saved as multiple Markdown files under the current workspace.
+  zh: DSH 工作区便签：在当前工作区保存多张 Markdown 便签。

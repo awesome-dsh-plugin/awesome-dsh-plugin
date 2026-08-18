@@ -1,0 +1,6 @@
+url: https://github.com/zuoyunlai/lunheng-article-pipeline-dsh
+name: zuoyunlai/lunheng-article-pipeline-dsh
+category: skill
+description:
+  en: Multi-agent deep long-form article pipeline skill for DeepSeek Harness, running 7 roles across 5 phases with parallel literature/data/case retrieval, an evidence base, independent audit and human verification gates.
+  zh: 多 Agent 深度长文流水线技能包：7 角色 + 5 阶段，文献/数据/案例三线并行检索，产出带证据底座、反方论证、独立审计与人工核验节点的深度文章/论文。

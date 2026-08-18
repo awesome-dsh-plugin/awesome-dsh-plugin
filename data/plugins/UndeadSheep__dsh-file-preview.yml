@@ -1,0 +1,6 @@
+url: https://github.com/UndeadSheep/dsh-file-preview
+name: UndeadSheep/dsh-file-preview
+category: ui
+description:
+  en: 'Floating workspace file-preview window for the Web client: lazy file tree, CodeMirror preview and in-window edit with save, Markdown and image preview, Quick Open search, and opening paths clicked in the conversation.'
+  zh: Web 客户端悬浮文件预览窗：懒加载文件树、CodeMirror 预览与窗内编辑保存、Markdown 与图片预览、Quick Open 搜索，以及点击会话中的路径直接打开。

@@ -1,0 +1,6 @@
+url: https://github.com/jilian-dsh/dsh-rule-engine
+name: jilian-dsh/dsh-rule-engine
+category: security
+description:
+  en: 'Rules execution engine for dsh: parses AGENTS.md, hard-blocks rule-violating tool calls, text-based B/D rule auditing, /guard command, version-guard for versioned files, and free-zone support (engine skips free-zone sections).'
+  zh: 'dsh 规则执行引擎：解析 AGENTS.md、硬拦违反规则的工具调用、文本纠察与审计、/guard 命令、版本化文件守卫、自由区域支持（引擎跳过自由区内容）。'

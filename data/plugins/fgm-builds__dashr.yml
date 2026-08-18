@@ -1,0 +1,6 @@
+url: https://github.com/fgm-builds/dashr
+name: fgm-builds/dashr
+category: dev
+description:
+  en: 'RLM Mode for DeepSeek Harness (dsh): one persistent Python kernel per agent session — schema-driven tools.* bindings, sub-agents, harness, and snapshots.'
+  zh: 'RLM 模式：每个会话一个常驻 Python 内核，全部工具以 tools.* 绑定在内核内调用，支持子代理、harness 与快照。'

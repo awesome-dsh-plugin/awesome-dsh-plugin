@@ -1,0 +1,7 @@
+url: https://github.com/JimchengChina/dsh-frontier-repro
+name: JimchengChina/dsh-frontier-repro
+category: workflow
+description:
+  en: Collects primary frontier-AI sources and gates reproduction with evidence, rubrics, rollback, and manifests.
+  zh: 汇集前沿 AI 一手来源，并用证据、量化标准、回滚与清单约束复现流程。
+tarball: https://github.com/JimchengChina/dsh-frontier-repro/releases/latest/download/dsh-frontier-repro.tgz
