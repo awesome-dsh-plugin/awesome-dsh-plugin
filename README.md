@@ -780,6 +780,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Vision & Multimodal
 
+- [1HelloMan1/dsh-vision-fallback](https://github.com/1HelloMan1/dsh-vision-fallback) - Routes chat images to a fixed OpenAI-compatible vision model, returns factual observations to the selected main model, and reuses session-scoped observations across replay, compaction, and restarts.
 - [314857493/dsh-vision#vision-route](https://github.com/314857493/dsh-vision/tree/main/packages/vision-route) - Registers a `deepseek-vision` provider route: the Web GUI accepts pasted images and transcribes them to text via the free Zhipu GLM vision API before delegating to the DeepSeek adapter.
 - [314857493/dsh-vision#vision-tool](https://github.com/314857493/dsh-vision/tree/main/packages/vision-tool) - Model-facing `vision` tool for DeepSeek Harness: describe and OCR image files by calling the free Zhipu GLM vision API directly (glm-4v-flash fallback chain), no external CLI required.
 - [54xkeee/dsh-vision](https://github.com/54xkeee/dsh-vision) - Vision for text-only DeepSeek via Doubao Web by default (zero-cost, no API key — drives your logged-in Chrome through a Windows CDP bridge), with Antigravity IDE quota (flash/pro) or Gemini fallback; auto detail escalation, vision evidence memory with compaction rehydration, content-hash cache, and a bilingual client panel.
