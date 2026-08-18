@@ -52,6 +52,7 @@ jobs:
             data/npm-map.json
             data/stars.json
             data/readmes.json
+            data/tarballs.json
           key: probe-data-${{ github.run_id }}
           restore-keys: probe-data-
       - name: Build
@@ -66,6 +67,10 @@ jobs:
           node scripts/probe-npm.mjs
           node scripts/probe-stars.mjs
           node scripts/probe-readmes.mjs
+          # Runs every time, not just nightly: a release-asset URL validated at
+          # submission can 404 later without anyone touching the entry, and the
+          # set is small enough that there is no reason to sample it (#1619).
+          node scripts/probe-tarballs.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -25,8 +25,28 @@ const SCREENSHOTS_FILE = 'data/screenshots.json'
 fs.mkdirSync('docs', { recursive: true })
 for (const f of fs.readdirSync('site/assets')) fs.copyFileSync(`site/assets/${f}`, `docs/${f}`)
 const NPM_MAP_FILE = 'data/npm-map.json'
-// url -> prebuilt release tarball, declared per entry in data/plugins/*.yml
-const tarballMap = Object.fromEntries(readEntries().filter((e) => e.tarball).map((e) => [e.url, e.tarball]))
+// url -> prebuilt release tarball, declared per entry in data/plugins/*.yml.
+// A declared tarball is dropped once probe-tarballs.mjs has confirmed it 404s:
+// the entry then falls back to its `github:owner/repo` command, which is what
+// every entry had before the field existed, rather than shipping a download
+// link that is known to be dead (#1619).
+//
+// Confirmed-dead only. No verdict means the probe has not run — a local build,
+// or an entry added since the last refresh — and treating that as dead would
+// strip the field from every entry whenever the probe is skipped.
+const TARBALLS_FILE = 'data/tarballs.json'
+const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSync(TARBALLS_FILE, 'utf8')) : {}
+const tarballMap = Object.fromEntries(
+  readEntries()
+    .filter((e) => {
+      if (!e.tarball) return false
+      const v = tarballVerdicts[e.url]
+      // A verdict is only about the URL it was recorded against: if the entry
+      // now declares a different tarball, the old verdict says nothing.
+      return !(v && v.tarball === e.tarball && v.ok === false)
+    })
+    .map((e) => [e.url, e.tarball]),
+)
 // Single source of truth, shared with the README generator (scripts/lib/entries.mjs).
 const CAT_IDS = ENTRY_CAT_IDS
 

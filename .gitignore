@@ -4,5 +4,6 @@ docs/
 data/npm-map.json
 data/stars.json
 data/readmes.json
+data/tarballs.json
 
 .npm-cache/
