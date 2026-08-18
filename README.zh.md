@@ -1198,6 +1198,7 @@ dsh plugin --profile web add dshmarket
 - [MichengAI/dsh-im-connect](https://github.com/MichengAI/dsh-im-connect) — 把微信、企业微信、钉钉、飞书、Lark、QQ、Telegram 接到本机 DeepSeek Harness，每个 IM 聊天对应一条独立工作区频道。
 - [miiaowuwu/dsh-sound-lab](https://github.com/miiaowuwu/dsh-sound-lab) — DSH 声音工坊：在会话结束、弹出选项、请求许可与停止时播放指定音效，支持 AI 角色语音生成与音效库管理。
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
+- [moon09300731/dsh-peak-cost-mode](https://github.com/moon09300731/dsh-peak-cost-mode) — 在 DeepSeek 高峰计价时段（北京时间 09:00–12:00、14:00–18:00，价格 ×2）自动切换 caveman 超精简输出省 token，标题栏常驻状态徽章，档位切换时弹提醒。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 - [Nixz0824/dsh-sound-cue](https://github.com/Nixz0824/dsh-sound-cue) — 会话需要你操作（审批、提问或计划确认）以及任务完成时播放不同的短提示音。Web Audio 现场合成，无弹窗、无系统通知。
 - [omdsh-dev/dsh-lark](https://github.com/omdsh-dev/dsh-lark) — DeepSeek Harness 的飞书/Lark 机器人渠道：每个会话驱动独立 agent，工具审批、模型提问与计划审阅都以卡片回到聊天，点按钮或直接回复即可作答；聊天里用 `/cd`、`/model`、`/new` 切工作区、换模型、重开会话，多个机器人各自独立并可在同群交接回合。
