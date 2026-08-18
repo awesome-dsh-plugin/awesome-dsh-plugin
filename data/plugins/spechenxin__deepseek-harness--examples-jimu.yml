@@ -1,0 +1,6 @@
+url: https://github.com/spechenxin/deepseek-harness/tree/master/examples/jimu
+name: spechenxin/deepseek-harness#jimu
+category: workflow
+description:
+  en: 'Jimu (积木): domain-based orchestration plugin for DeepSeek Harness — domain_plan confirmation, per-domain sub-agents with hand-off, and automatic LLM audit.'
+  zh: 积木：DSH 分域编排插件，domain_plan 分域确认 + 按域编排子代理（手递手）+ LLM 自动审计。
