@@ -1,0 +1,6 @@
+url: https://github.com/FeatherHunter/dsh-prompt
+name: FeatherHunter/dsh-prompt
+category: ui
+description:
+  en: 'Right-side prompt toolbox panel with 24 built-in deep templates plus user-defined ones, accessible via the /prompt slash trigger and a context-aware floating suggestion card; one-click inserts the selected prompt into the composer.'
+  zh: '输入框旁的 prompt 工具箱面板：24 条内置深度模板 + 自定义模板，/prompt 触发源 + 智能推荐悬浮卡，点选即插入当前对话。'
