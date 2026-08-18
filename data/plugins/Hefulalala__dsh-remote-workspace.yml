@@ -1,0 +1,7 @@
+url: https://github.com/Hefulalala/dsh-remote-workspace
+name: Hefulalala/dsh-remote-workspace
+category: tools
+description:
+  en: 'SSH/SFTP remote sites and workspaces: manage connections and remote directories like local workspaces.'
+  zh: 'SSH/SFTP 远程站点与远程工作区：像本地工作区一样管理远程连接与目录。'
+tarball: https://github.com/Hefulalala/dsh-remote-workspace/releases/latest/download/dsh-external-dsh-remote-workspace-0.0.1.tgz
