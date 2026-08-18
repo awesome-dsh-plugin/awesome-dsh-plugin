@@ -1,0 +1,6 @@
+url: https://github.com/Frog755/dsh-client-auto-retry
+name: Frog755/dsh-client-auto-retry
+category: session
+description:
+  en: 'Auto-resumes interrupted DSH turns: sends a queued 「继续」 after turn/end with error, interrupted or max-tokens reasons, with a grace period, cooldown, a consecutive-attempts cap, boot-time scanning and a settings card; it never switches models or providers.'
+  zh: '回合中断自动续跑：turn/end 因 error / interrupted / max-tokens 结束时自动发送「继续」，支持宽限期、冷却、连续次数上限、启动扫描与设置卡片；不切换模型/provider。'
