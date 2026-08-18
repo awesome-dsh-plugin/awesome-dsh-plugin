@@ -1,0 +1,6 @@
+url: https://github.com/TecFancy/dsh-mobile
+name: TecFancy/dsh-mobile
+category: ui
+description:
+  en: 'Mobile adapter for the DSH web shell: overlay sidebar/details drawers, responsive composer and settings below 768px, zero desktop regression.'
+  zh: DSH Web 移动端适配插件：侧边栏/详情抽屉浮层化、输入栏与设置页响应式适配，桌面零回归。
