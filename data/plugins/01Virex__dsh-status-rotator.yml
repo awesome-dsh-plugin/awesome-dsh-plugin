@@ -1,0 +1,6 @@
+url: https://github.com/01Virex/dsh-status-rotator
+name: 01Virex/dsh-status-rotator
+category: ui
+description:
+  en: Replaces the "Deep diving..." turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.
+  zh: 把回合状态那句 "Deep diving..." 替换成更有梗的自定义文案，按阶段轮换，支持打字机与流动渐变。
