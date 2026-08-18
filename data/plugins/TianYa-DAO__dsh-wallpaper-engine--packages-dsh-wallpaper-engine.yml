@@ -1,0 +1,7 @@
+url: https://github.com/TianYa-DAO/dsh-wallpaper-engine/tree/main/packages/dsh-wallpaper-engine
+name: TianYa-DAO/dsh-wallpaper-engine#plugin
+category: ui
+description:
+  en: Wallpaper Engine local library, background layer, native Scene panel, and desktop-mode controls for the DSH desktop shell.
+  zh: 面向 DSH 桌面壳的 Wallpaper Engine 本地库、背景层、原生 Scene 面板与桌面模式控件。
+tarball: https://github.com/TianYa-DAO/dsh-wallpaper-engine/releases/latest/download/dsh-wallpaper-engine-0.1.0.tgz
