@@ -1,0 +1,6 @@
+url: https://github.com/qyw233/dsh-deeplink
+name: qyw233/dsh-deeplink
+category: ui
+description:
+  en: 'Deep links: open a specific session or workspace via `?session=` / `?workspace=`.'
+  zh: '`?session=` / `?workspace=` 深链直达指定项目对话。'
