@@ -1,0 +1,6 @@
+url: https://github.com/Juryorca/dsh-custom-theme-import
+name: Juryorca/dsh-custom-theme-import
+category: theme
+description:
+  en: 'DSH Web theme manager: import local paths or GitHub theme collections, preview and refresh themes, and keep a hosted theme library with optional managed copies.'
+  zh: 'DSH Web 主题管理插件：支持本地路径/GitHub 集合导入、预览与刷新主题，并维护托管主题库，可选择性保存托管副本。'
