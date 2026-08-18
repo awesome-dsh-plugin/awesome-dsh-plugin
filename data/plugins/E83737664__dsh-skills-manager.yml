@@ -1,0 +1,6 @@
+url: https://github.com/E83737664/dsh-skills-manager
+name: E83737664/dsh-skills-manager
+category: dev
+description:
+  en: Manage DSH skills and selectively import Codex and Claude Code skills into global or project scopes as symlinks or copies.
+  zh: 管理 DSH 技能，并按全局或项目范围选择性导入 Codex 与 Claude Code 技能，支持软链和复制。
