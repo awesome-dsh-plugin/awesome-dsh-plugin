@@ -846,5 +846,9 @@
   "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/en-01-permissions-overview.png",
   "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/en-02-permissions-rules.png",
   "https://raw.githubusercontent.com/940842546/dsh-permissions/main/assets/en-03-permissions-draft.png"
+ ],
+ "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/rss": [
+  "https://raw.githubusercontent.com/hyzyn/dsh-plugin-kit/main/docs/dsh-plugin-kit-rss-setting.png",
+  "https://raw.githubusercontent.com/hyzyn/dsh-plugin-kit/main/docs/dsh-plugin-kit-rss-view.png"
  ]
 }
