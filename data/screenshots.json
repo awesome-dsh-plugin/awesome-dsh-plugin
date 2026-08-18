@@ -783,5 +783,11 @@
   "https://raw.githubusercontent.com/vdnight89/InfiniteDSH/main/docs/%E6%88%AA%E5%9B%BE2.png",
   "https://raw.githubusercontent.com/vdnight89/InfiniteDSH/main/docs/%E6%88%AA%E5%9B%BE2.1.png",
   "https://raw.githubusercontent.com/vdnight89/InfiniteDSH/main/docs/%E6%88%AA%E5%9B%BE2.2.png"
+ ],
+ "https://github.com/sjh9714/dsh-what-changed": [
+  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-zh.png",
+  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-worktree.png",
+  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-shell.png",
+  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel.png"
  ]
 }
