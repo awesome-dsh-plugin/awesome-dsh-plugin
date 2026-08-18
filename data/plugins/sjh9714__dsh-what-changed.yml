@@ -1,0 +1,6 @@
+url: https://github.com/sjh9714/dsh-what-changed
+name: sjh9714/dsh-what-changed
+category: session
+description:
+  en: Reviews every file the agent wrote in a session from the session header, with per-file hunks and refused writes counted apart from changes.
+  zh: 在会话顶栏审阅本次会话 Agent 写过的所有文件，按文件列出逐处改动，被权限拒绝的写入单独计数不算改动。
