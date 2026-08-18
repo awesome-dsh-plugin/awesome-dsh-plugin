@@ -1,5 +1,5 @@
-url: https://github.com/akqwpeter-prog/dsh-media-skills
-name: akqwpeter-prog/dsh-media-skills
+url: https://github.com/MJorgin/dsh-media-skills
+name: MJorgin/dsh-media-skills
 category: vision
 description:
   en: 'Free vision bridge and image generation for text-only models: paste-image reading, GLM-4V-Flash and Gemini engine failover, ModLens-style structured evidence, and a seeded free vision model route.'
