@@ -873,5 +873,9 @@
  "https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github": [
   "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/pr-bar.png",
   "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/connect-github.png"
+ ],
+ "https://github.com/siberiah2o/dsh-plugin-remote": [
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-remote/main/docs/screenshot-login.png",
+  "https://raw.githubusercontent.com/siberiah2o/dsh-plugin-remote/main/docs/screenshot-settings-panel.png"
  ]
 }
