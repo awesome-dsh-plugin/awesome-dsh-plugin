@@ -82,12 +82,25 @@ async function probe(url) {
     const mainLang = langOf(main.md)
     const out = { [mainLang]: main, fetchedAt: today }
 
-    // look for the other language next to the default README
+    // look for the other language next to the default README.
+    // One directory listing per repo instead of probing every candidate name
+    // (rate-limit friendly: ≤3 API calls per repo instead of up to 10).
     const dir = main.htmlUrl.replace(/^https:\/\/github\.com\/[^/]+\/[^/]+\/blob\/[^/]+\//, '').split('/').slice(0, -1).join('/')
     const names = mainLang === 'en' ? ZH_NAMES : EN_NAMES
     const otherLang = mainLang === 'en' ? 'zh' : 'en'
+    const listings = {}
+    const listDir = async (d) => {
+      if (!(d in listings)) {
+        try { listings[d] = new Map((await gh(`/repos/${repo}/contents/${d}`)).map((e) => [e.path.toLowerCase(), e.path])) } catch { listings[d] = new Map() }
+      }
+      return listings[d]
+    }
     for (const name of names) {
-      const path = dir ? `${dir}/${name}` : name
+      const want = dir ? `${dir}/${name}` : name
+      const parent = want.split('/').slice(0, -1).join('/')
+      // case-insensitive: some repos ship README-ZH.md etc.
+      const path = (await listDir(parent)).get(want.toLowerCase())
+      if (!path) continue
       try {
         const alt = await gh(`/repos/${repo}/contents/${path}`)
         if (alt.content) {
