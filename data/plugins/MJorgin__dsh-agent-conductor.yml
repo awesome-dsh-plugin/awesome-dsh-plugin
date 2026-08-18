@@ -1,5 +1,5 @@
-url: https://github.com/akqwpeter-prog/dsh-agent-conductor
-name: akqwpeter-prog/dsh-agent-conductor
+url: https://github.com/MJorgin/dsh-agent-conductor
+name: MJorgin/dsh-agent-conductor
 category: workflow
 description:
   en: 'Dispatch self-contained tasks from DSH to 11 external agent CLIs (Codex, Claude Code, TraeCode, OpenCode, Gemini, Cursor, Kimi, Qwen, Copilot, WorkBuddy, Grok): a host-only bundle registering the conductor_dispatch tool plus an auto-triggered conductor skill.'
