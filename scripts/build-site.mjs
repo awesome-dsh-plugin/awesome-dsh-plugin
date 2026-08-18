@@ -142,9 +142,16 @@ const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('
 // than a third of them at once is not attrition, it is a broken probe — and
 // keeping yesterday's stars live beats publishing nulls, because a stale number
 // degrades gracefully and a null does not.
+// Only on the publishing path. pr-check.yml also runs this build — for locale
+// parity, date derivation and template validation — with no intention of
+// deploying, and there a missing data/stars.json would fail every contributor's
+// PR with a message about publishing that has nothing to do with their
+// submission. A guard that blocks people for our own infrastructure's state is
+// the failure mode this repository has spent the day removing, so it is opt-out
+// by the caller rather than inferred from whether the file happens to be there.
 const STARS_MIN_COVERAGE = 0.66
 const starsHave = ordered.filter((e) => typeof starsMap[e.url]?.stars === 'number').length
-if (ordered.length && starsHave / ordered.length < STARS_MIN_COVERAGE) {
+if (process.env.SKIP_PUBLISH_CHECKS !== '1' && ordered.length && starsHave / ordered.length < STARS_MIN_COVERAGE) {
   const pct = ((starsHave / ordered.length) * 100).toFixed(1)
   throw new Error(
     `refusing to publish: only ${starsHave}/${ordered.length} entries (${pct}%) have a star count, below the ${STARS_MIN_COVERAGE * 100}% floor.\n`

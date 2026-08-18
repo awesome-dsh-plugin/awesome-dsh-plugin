@@ -1,5 +1,11 @@
 node_modules/
 .DS_Store
+# Editor state, never part of a submission. IntelliJ and PyCharm create .idea/
+# the moment the folder is opened, and `git add -A` sweeps it into the PR —
+# #1663 committed six of these files before anyone noticed.
+.idea/
+.vscode/
+*.swp
 docs/
 data/npm-map.json
 # data/stars.json is deliberately NOT ignored — see the header of
