@@ -87,6 +87,7 @@ dsh plugin --profile web add dshmarket
 - [AKS1st/dsh-sysmon](https://github.com/AKS1st/dsh-sysmon) — DSH Web 右下角系统状态悬浮窗：实时显示 CPU、内存、磁盘占用率，带阈值变色告警。
 - [alingalingling/ui-status-label](https://github.com/alingalingling/ui-status-label) — 把鲸鱼娘思考时的 "deep diving" 状态文案自定义成任意你想要的样子。
 - [asukasec/dsh-message-preview](https://github.com/asukasec/dsh-message-preview) — 右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。
+- [Awu12277/dsh-sleep-send](https://github.com/Awu12277/dsh-sleep-send) — 在输入框右侧提供「定时发送」按钮与配置面板，支持智能时段、自定义日期时间、多个定时任务并行，任务经 localStorage 持久化，刷新页面后自动恢复。
 - [ayahunter/dsh-trail](https://github.com/ayahunter/dsh-trail) — 把 Web GUI 的轨迹页签替换为新手友好的回合故事线：工具名通俗中文化，支持类别筛选与模糊搜索。
 - [bainianlaoyao/easy-archive](https://github.com/bainianlaoyao/easy-archive) — 工作区侧边栏行内两击归档：点一次变红确认，再点即归档，归档项不再出现在 ⋮ 菜单里。
 - [bill9109/dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) — 跨平台文件拖拽与原始路径插入，无需复制文件。
@@ -1140,6 +1141,7 @@ dsh plugin --profile web add dshmarket
 - [luzhengyangtx/dsh-telegram-duty](https://github.com/luzhengyangtx/dsh-telegram-duty) — Telegram 值班网关：手机消息任务闭环（专属值班会话）、值守模式全局审批转发（内联同意/拒绝按钮）、telegram_ask 选项提问、值守/本地切换与网页横幅、中英双语消息、空闲零 token。
 - [ly6170/dsh-messager](https://github.com/ly6170/dsh-messager) — 在 DSH Web 端监控会话状态，为需要交互、任务完成、任务出错发送桌面 / 浏览器 / 第三方通知。
 - [michaelcode-wang/dsh-wecom](https://github.com/michaelcode-wang/dsh-wecom) — 企业微信智能机器人桥接：aibot WebSocket 双向对话（bot_id + secret），无需公网回调。
+- [MichengAI/dsh-im-connect](https://github.com/MichengAI/dsh-im-connect) — 把微信、企业微信、钉钉、飞书、Lark、QQ、Telegram 接到本机 DeepSeek Harness，每个 IM 聊天对应一条独立工作区频道。
 - [miiaowuwu/dsh-sound-lab](https://github.com/miiaowuwu/dsh-sound-lab) — DSH 声音工坊：在会话结束、弹出选项、请求许可与停止时播放指定音效，支持 AI 角色语音生成与音效库管理。
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
