@@ -745,7 +745,7 @@ dsh plugin --profile web add dshmarket
 - [Samge0/dsh-plugin-qcc](https://github.com/Samge0/dsh-plugin-qcc) — 企查查企业数据源动态 Cordis 插件：5 个 agent 工具（扫码登录认证、企业快搜、知识库检索、工具发现、取数执行），覆盖工商/股东/司法/知识产权等 100+ 数据维度，附设置页账号管理；网络与文件 IO 经 DSH subprocess 拉起 node -e 完成，凭证与本地 BizOwl 客户端互通。
 - [SamurAIGPT/dsh-plugin-muapi](https://github.com/SamurAIGPT/dsh-plugin-muapi) — MuApi 媒体生成工具：muapi_generate 工具通过一个 x-api-key 提交并轮询 MuApi 100 多个图片、视频、音频与 3D 模型的生成任务。
 - [SamXiaBing/dsh-adb](https://github.com/SamXiaBing/dsh-adb) — ADB 设备·台架运维工具集：设备发现、结构化 logcat（后台采集）、apk 安装、文件 pull/push、性能快照。
-- [seven282/oss-prompt-optimizer](https://github.com/seven282/oss-prompt-optimizer) — 将原始指令经 harness llm 服务优化为专业提示词——默认 Role / Task / Context / Format 四段，可配置为无标题纯文本（outputStyle: plain，更省 token）；上下文感知默认开启（注入此前对话作背景参考）；提供输入框 ✨ 一键优化与撤销、prompt_optimize 工具（优化+迭代）、自动优化钩子与中英自动检测的角色文档。
+- [seven282/oss-prompt-optimizer](https://github.com/seven282/oss-prompt-optimizer) — 将原始指令经 harness llm 服务优化为专业提示词——四段（Role / Task / Context / Format）或无标题纯文本风格；上下文感知默认开启（注入此前对话作背景，四段模式可充实 ## Context 段）；长输出断点续传+自动扩容、结果缓存（同请求零模型调用）、统一调用预算控制最坏成本；输入框 ✨ 一键优化/撤销/取消与 token 消耗提示、prompt_optimize 工具（优化+迭代）、自动优化钩子与中英自动检测的角色文档。
 - [ShiXiangYu2/dsh-translate-pro](https://github.com/ShiXiangYu2/dsh-translate-pro) — 专业翻译：18 种目标语言、4 种风格（正式/口语/技术/直译）、术语表控制译名、整文件翻译（README/文档/字幕）并保留 Markdown 与代码块格式；经 SiliconFlow 调用 DeepSeek。
 - [SiriLee/dsh-edit-approval](https://github.com/SiriLee/dsh-edit-approval) — write/edit/str_replace_editor 编辑前审批：改动落盘前展示红绿行级 diff，选择同意一次或拒绝，带设置页总开关。
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
