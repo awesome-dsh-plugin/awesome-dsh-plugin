@@ -1,4 +1,9 @@
 {
+ "https://github.com/kendu76/dsh-music-player": [
+  "https://raw.githubusercontent.com/kendu76/dsh-music-player/main/assets/screenshot-bar.png",
+  "https://raw.githubusercontent.com/kendu76/dsh-music-player/main/assets/screenshot-spectrum.png",
+  "https://raw.githubusercontent.com/kendu76/dsh-music-player/main/assets/screenshot-panel.png"
+ ],
  "https://github.com/030611/qiushi-dsh-evidence-audit": [
   "https://raw.githubusercontent.com/030611/qiushi-dsh-evidence-audit/main/docs/evidence-flow.svg"
  ],
