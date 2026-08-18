@@ -38,17 +38,51 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo
-            const sha = context.payload.workflow_run.head_sha
-            const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
-            const pr = prs.find((p) => p.head.sha === sha)
-            if (!pr) {
-              core.info(`no open PR matches ${sha} — nothing to gate`)
-              core.setOutput('found', 'false')
-              return
+            const run = context.payload.workflow_run
+            const sha = run.head_sha
+            try {
+              // One request, not a walk of every open pull request. This gate
+              // fires on every PR-check completion, and paginating ~150 open
+              // PRs per fire is what exhausted the installation rate limit on
+              // 2026-08-18. `workflow_run.pull_requests` is empty for forks —
+              // presumably why this listed everything — but the head
+              // repository and branch are always present and identify the PR
+              // exactly, since a branch has at most one open PR.
+              const head = `${run.head_repository.owner.login}:${run.head_branch}`
+              const { data } = await github.rest.pulls.list({ owner, repo, state: 'open', head, per_page: 10 })
+              const pr = data.find((p) => p.head.sha === sha)
+              if (!pr) {
+                // Either the PR closed, or a newer push superseded this run —
+                // in which case that push has its own gate run and this one
+                // would be judging a commit nobody is proposing any more.
+                core.info(`no open PR at ${head} with head ${sha} — nothing to gate`)
+                core.setOutput('found', 'false')
+                return
+              }
+              core.setOutput('found', 'true')
+              core.setOutput('number', String(pr.number))
+              core.setOutput('created_at', pr.created_at)
+            } catch (e) {
+              // A gate that dies before posting is indistinguishable from one
+              // that never needed to run: the PR simply carries no verdict,
+              // and a green `check` beside it reads as ready to merge. That is
+              // how two submissions under the commit-count bar came to look
+              // mergeable on 2026-08-18. Say it on the commit instead.
+              await github.rest.checks.create({
+                owner, repo, name: 'Submission gate', head_sha: sha,
+                status: 'completed', conclusion: 'failure',
+                output: {
+                  title: 'The gate could not run',
+                  summary: [
+                    `Resolving the pull request for this run failed: ${e.message}`,
+                    '',
+                    'This is a fault in the gate, not in the submission. Re-run the',
+                    'workflow; if it keeps failing a maintainer needs to look at it.',
+                  ].join('\n'),
+                },
+              }).catch(() => {})
+              throw e
             }
-            core.setOutput('found', 'true')
-            core.setOutput('number', String(pr.number))
-            core.setOutput('created_at', pr.created_at)
 
       # Trusted code only: the base repo's default branch, never the PR's.
       - uses: actions/checkout@v4
