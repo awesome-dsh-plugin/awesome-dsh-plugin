@@ -2,5 +2,5 @@ url: https://github.com/chenyinrusi/dsh-llm-cost
 name: chenyinrusi/dsh-llm-cost
 category: usage
 description:
-  en: 'Per-turn, per-step LLM cost metering: a costUsage session projection, a cost line under each message, and an LLM+web price auto-maintenance tool.'
-  zh: 每个 turn、每个 step 的 LLM 成本计量：costUsage 会话投影 + 消息下方成本行 + LLM 联网自动更新价格。
+  en: 'Per-turn and session-wide LLM cost metering: a dollar cost line under each message, a session cumulative total with hover breakdown, and an LLM+web price auto-refresh tool.'
+  zh: '按轮次与会话统计 LLM 成本：每条消息下方显示美元成本、会话累计总额（悬停看分项），以及 LLM+联网的价格自动刷新工具。'
