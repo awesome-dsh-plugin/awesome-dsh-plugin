@@ -1,0 +1,6 @@
+url: https://github.com/lifeodyssey/dsh-compressor
+name: lifeodyssey/dsh-compressor
+category: tools
+description:
+  en: 'A slim port of Headroom: compresses tool output, cuts up to 20% of context, without affecting the model''s context cache or agent performance.'
+  zh: Headroom 的精简移植，在不影响模型上下文缓存以及 Agent 性能的情况下，压缩工具的输出，至多减少 20% 的上下文。
