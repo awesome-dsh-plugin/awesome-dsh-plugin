@@ -134,6 +134,10 @@
  "https://github.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL": [
   "https://raw.githubusercontent.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL/main/assets/readme/accounts-demo.png"
  ],
+  "https://github.com/Fantasality/dsh-origin-plugin": [
+    "https://raw.githubusercontent.com/Fantasality/dsh-origin-plugin/main/docs/example.png",
+    "https://raw.githubusercontent.com/Fantasality/dsh-origin-plugin/main/docs/example_3d.png"
+  ],
  "https://github.com/FengHuoLinShan/dsh-plugin-llm-balance": [
   "https://raw.githubusercontent.com/FengHuoLinShan/dsh-plugin-llm-balance/main/assets/llm-balance-preview.png"
  ],
