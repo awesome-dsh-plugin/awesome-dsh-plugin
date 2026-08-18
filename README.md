@@ -489,6 +489,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Max-Null/dsh-chinese-thinking](https://github.com/Max-Null/dsh-chinese-thinking) - Injects one fixed system-prompt section so the agent thinks and replies in Chinese, regardless of the user's language.
 - [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) - Diagnose, unstick, and read DSH sessions: list sessions with agent status, read conversations, diagnose stuck agents, recover them with cancel+keepInbox, and send messages to other sessions.
 - [MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) - Adds an archived-sessions page in Settings to search, restore, and delete archived DeepSeek Harness sessions by workspace.
+- [MingoZhou/dsh-replay](https://github.com/MingoZhou/dsh-replay) - Replay sessions on a playable timeline with per-step token usage, audit sensitive operations, estimate cost, view fork lineage, compare sessions, and export standalone HTML replays.
 - [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) - Branch-based message editing, reroll, retry, and a version timeline.
 - [Moeblack/dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) - Edit user and built-in system-prompt sections with live preview.
 - [MuWinds/dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) - Archived-session management: browse archived sessions, unarchive them, or clear them out.
