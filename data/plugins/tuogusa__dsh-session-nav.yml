@@ -1,0 +1,6 @@
+url: https://github.com/tuogusa/dsh-session-nav
+name: tuogusa/dsh-session-nav
+category: session
+description:
+  en: A floating button beside the chat that opens a searchable list of all questions in the session for quick jumps.
+  zh: 对话旁的悬浮按钮，打开当前会话全部提问的可搜索列表并快速跳转。
