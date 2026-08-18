@@ -1,0 +1,6 @@
+url: https://github.com/fatemarcus-hub/dsh-balance
+name: fatemarcus-hub/dsh-balance
+category: model
+description:
+  en: 'DeepSeek balance button next to the DSH settings button: shows total/topped-up/granted balance and status on click, with a one-click jump to the official top-up page and a red low-balance warning.'
+  zh: DeepSeek 余额按钮：在 DSH 设置按钮右侧显示 DeepSeek API 账户余额（总额/充值/赠送/状态），点击查看、一键跳转官方充值页，低余额变红提醒。
