@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-find
+name: kouyichi/dsh-plugins#dsh-tui-find
+category: ui
+description:
+  en: '/find in-session search with selectable results for the dsh TUI.'
+  zh: 'dsh TUI 的 /find 会话内搜索，结果可选中继续。'

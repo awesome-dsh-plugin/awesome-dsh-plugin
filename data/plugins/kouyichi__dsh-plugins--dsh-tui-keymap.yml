@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-keymap
+name: kouyichi/dsh-plugins#dsh-tui-keymap
+category: ui
+description:
+  en: 'Leader keys (ctrl+x) and Alt+Enter queued input for the dsh TUI.'
+  zh: 'dsh TUI 的 leader 键（ctrl+x）与 Alt+Enter 忙时输入排队。'

@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-history
+name: kouyichi/dsh-plugins#dsh-tui-history
+category: ui
+description:
+  en: '/undo command and double-Esc history panel for the dsh TUI.'
+  zh: 'dsh TUI 的 /undo 命令与双击 Esc 历史面板。'

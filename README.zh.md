@@ -165,6 +165,24 @@ dsh plugin --profile web add dshmarket
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [kangjinghang/dsh-xueqiu](https://github.com/kangjinghang/dsh-xueqiu) — 雪球行情面板：嵌入输入框上方，免登录查看 A股/港美股行情、指数与自选股，K线蜡烛图（成交量/均线/十字光标）、热榜、搜索、7×24 快讯，另有可拖动迷你指数徽章。
 - [kelearns/dsh-navigation-bar](https://github.com/kelearns/dsh-navigation-bar) — 钢琴键风格会话内导航条：一根键锚定一条用户消息，悬停显示消息预览气泡与阶梯展开，点击平滑跳转。
+- [kouyichi/dsh-plugins#dsh-tui-a2a](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-a2a) — dsh TUI 的 /agents 面板与 @提及派活：向本地 A2A 代理分发任务。
+- [kouyichi/dsh-plugins#dsh-tui-btw](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-btw) — dsh TUI 的 /btw 侧会话：新标签页并行提问，不扰主线。
+- [kouyichi/dsh-plugins#dsh-tui-commands](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-commands) — dsh TUI 的 md 文件自定义命令与 /init（AGENTS.md）生成。
+- [kouyichi/dsh-plugins#dsh-tui-compact](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-compact) — dsh TUI 的 /compact 命令：真实上下文压缩与错误分级。
+- [kouyichi/dsh-plugins#dsh-tui-context](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-context) — dsh TUI 的 /context 面板：上下文窗口占用进度条与 ctx% 状态字段。
+- [kouyichi/dsh-plugins#dsh-tui-export](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-export) — dsh TUI 的 /export 命令：会话导出为 markdown。
+- [kouyichi/dsh-plugins#dsh-tui-feedback](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-feedback) — dsh TUI 的 /feedback up|down 反馈记录。
+- [kouyichi/dsh-plugins#dsh-tui-find](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-find) — dsh TUI 的 /find 会话内搜索，结果可选中继续。
+- [kouyichi/dsh-plugins#dsh-tui-goals](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-goals) — dsh TUI 的 /goal 与 /goals 目标面板。
+- [kouyichi/dsh-plugins#dsh-tui-history](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-history) — dsh TUI 的 /undo 命令与双击 Esc 历史面板。
+- [kouyichi/dsh-plugins#dsh-tui-keymap](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-keymap) — dsh TUI 的 leader 键（ctrl+x）与 Alt+Enter 忙时输入排队。
+- [kouyichi/dsh-plugins#dsh-tui-providers](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-providers) — dsh TUI 多 provider 适配：/provider 与 /providers 切换和探测 OpenAI 兼容路由，/effort 切换推理力度，模型目录接入 /model 选择器。
+- [kouyichi/dsh-plugins#dsh-tui-search](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-search) — dsh TUI 的 /search 跨会话全文搜索面板。
+- [kouyichi/dsh-plugins#dsh-tui-theme](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-theme) — dsh TUI 的 /theme 主题切换：deep/light/ocean/mono 四套配色，持久化保存。
+- [kouyichi/dsh-plugins#dsh-tui-todos](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-todos) — dsh TUI 的 /todos 面板与 todo n/n 状态字段。
+- [kouyichi/dsh-plugins#dsh-tui-trajectory](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-trajectory) — dsh TUI 的 /trajectory 轨迹回放：逐步重演事件时间线。
+- [kouyichi/dsh-plugins#dsh-tui-update](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-update) — dsh TUI 的 /update 命令：npm 版本检查。
+- [kouyichi/dsh-plugins#dsh-tui-usage](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-usage) — dsh TUI 的 /usage 面板与成本状态栏字段，数据来自 dsh-meter。
 - [kouyichi/dsh-tui-app](https://github.com/kouyichi/dsh-tui-app) — dsh 交互式终端聊天应用：流式对话、工具卡片、任务面板、全文搜索、轨迹回放、多会话标签与 A2A 派发（Ink 实现）。
 - [l541402398/dsh-file-uploads](https://github.com/l541402398/dsh-file-uploads) — 从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。
 - [Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — 丝滑流式渲染：字跟着模型到达走、换行滑入、不闪，滚动归用户，尊重 prefers-reduced-motion。
@@ -557,6 +575,7 @@ dsh plugin --profile web add dshmarket
 - [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
 - [JohnXu22786/session-titler](https://github.com/JohnXu22786/session-titler) — 两阶段会话题词：会话进行中即时关键词题名，空闲后再调用最经济的预算模型精修，并附带一句话摘要。
 - [kirkchinese/claude2dsh](https://github.com/kirkchinese/claude2dsh) — 将 Claude Code 会话、技能与插件资产导入为 DSH 原生可续聊会话，并支持将 DSH 会话导出或同步回 Claude Code JSONL。
+- [kouyichi/dsh-plugins#dsh-xray](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-xray) — dsh 会话日志分析：解码 zstd 会话为结构化统计、全文搜索与 markdown/JSON 导出。
 - [Leeminjing/dsh-messages-sanitizer](https://github.com/Leeminjing/dsh-messages-sanitizer) — 工具调度崩溃后自动修复 messages 数组（孤儿 tool_calls / tool 消息），防止 400 INVALID_REQUEST 会话卡死。
 - [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) — 通过 harness 自带的 `sessionQuery` 服务搜索、列出、读取历史与当前会话：部署启用了 SQLite FTS5 索引时走索引，未启用时回退到有上限的倒序扫描。
 - [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) — 跨会话任务队列与交接摘要：会话与子 agent 在共享的文件队列上投递、认领、完成、取消任务，并留下交接摘要供后续会话查看。
@@ -650,6 +669,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/context-pruner](https://github.com/JohnXu22786/context-pruner) — 面向 DeepSeek Harness 长会话的上下文分诊插件：通过官方 ctx.compaction 接缝，用确定性规则筛查并裁剪过期、重复、失败与超大的上下文内容。
 - [JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — dsh 分层记忆管线：自动把会话蒸馏为原子事实、场景摘要与用户画像（L0~L3），BM25 + 向量混合检索，chat/work 双族隔离，每步模型调用前注入相关上下文。
 - [KLRSL/dsh-biomemory](https://github.com/KLRSL/dsh-biomemory) — 为 DeepSeek Harness 打造的生物仿生记忆系统：纯 Markdown 数据层、memory 工具、冻结快照注入、分级审批门、结构化审计、记忆代谢（dream）、记忆钉、语义检索、/memory 命令与跨会话召回。
+- [kouyichi/dsh-plugins#dsh-dream](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-dream) — dsh 记忆整合：四阶段（定向、采集会话信号、整合入 MEMORY.md、精简索引），每 24 小时自动执行。
 - [lanyun077/dsh-project](https://github.com/lanyun077/dsh-project) — 把多个文件夹与会话收纳为「项目」，共享 PROJECT.md 记忆与 AGENTS.md 指令并注入每个会话，附带项目树侧边栏。
 - [lemoncat7/dsh-knowledge](https://github.com/lemoncat7/dsh-knowledge) — 提供本地与远程知识库，支持项目和会话范围检索、可控回写以及内嵌 Web 管理台。
 - [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。
@@ -784,6 +804,10 @@ dsh plugin --profile web add dshmarket
 - [kexuejin/dsh-zhihu-dashboard](https://github.com/kexuejin/dsh-zhihu-dashboard) — 知乎面板：热榜（带趋势标记）、关注动态（收藏/创作/关注的人）、帖子追踪（问题/关键词/关注的人，支持自动创意简报），并提供 5 个对话工具（zhihu_search / hot / answer / global_search / followees）。
 - [klarkxy/dsh-plugin-autoevo](https://github.com/klarkxy/dsh-plugin-autoevo) — 面向 Agent 的“复用优先”能力演进层：先解析已有工具与 Skills，再发现并审查锁定 commit 的 DSH 插件，经一次性批准安装并验证真实工具往返；部分匹配则最小改进，而非从零重造。
 - [KLRSL/dsh-packer](https://github.com/KLRSL/dsh-packer) — 为 DeepSeek Harness 打造的 Agent 配置打包器：把本地 Agent 资产（Skills/会话/Profile/全局设置/记忆）打包成 zip，用于迁移或分享；带隐私安全扫描、恢复差异对比、包管理与设置面板。
+- [kouyichi/dsh-plugins#dsh-a2a](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-a2a) — dsh 原生 A2A 服务：通过 HTTP JSON-RPC 将本 dsh 暴露为可调用的代理。
+- [kouyichi/dsh-plugins#dsh-guard](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-guard) — dsh 安全治理：规则化工具拦截、完整工具调用审计轨迹与治理报告。
+- [kouyichi/dsh-plugins#dsh-meter](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-meter) — dsh 用量计量：会话级与汇总 token 统计、可配置计价与报告。
+- [kouyichi/dsh-plugins#dsh-pack](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-pack) — dsh 上下文打包：将文件、技能、记忆与会话摘要编译为有界上下文包。
 - [kunjinkao-os/dsh-mobile-gui-agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent) — Android GUI Agent：ADB 截图、压缩 UI hierarchy 定位、逐步动作验证、审批和 Mobile Web 视图。
 - [leaforbook/dsh-mcp-lazy](https://github.com/leaforbook/dsh-mcp-lazy) — DSH 的 MCP懒加载、动态加载工具与 Tool Router 插件：解决同时配置多个 MCP 服务器时 MCP工具过多、工具Schema常驻、工具目录过长造成的上下文膨胀和Token浪费。插件只在当前任务需要时搜索、路由并按需加载MCP工具，轮次结束后卸载闲置工具Schema，以减少Token占用、节省Token；连接继续保温，短时间内再次使用可快速复用。支持显式激活、自动路由、工具目录分页刷新、有限自动重连，以及 stdio 和 Streamable HTTP MCP 传输。
 - [LeemanCheung/dsh-agent-preset-recommender](https://github.com/LeemanCheung/dsh-agent-preset-recommender) — 有界、隐私安全的本地扫描器：汇总 Codex、Claude Code、WorkBuddy、CodeBuddy 元数据，原子保存密钥化聚合证据，并确定性推荐 DSH 内置 preset 与可选能力；不保留正文、不联网、不修改 preset。
@@ -1092,6 +1116,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/skill-framework](https://github.com/JohnXu22786/skill-framework) — 以单个 Cordis 插件打包一整套工程方法论技能库：14 个 Agent Skills（规划、测试、排障、评审、交付）注册到 DeepSeek Harness 的 ctx.skills。
 - [JohnXu22786/spec-driven](https://github.com/JohnXu22786/spec-driven) — 规格驱动开发纪律技能包（keel）：五个技能（锚定/立规/探针/建造/审计）、三个审查工具与六个规格模板，强制先规格后代码、假设先行验证并约束范围蔓延。
 - [JUNQINGV587/mattpocock-skills-dsh](https://github.com/JUNQINGV587/mattpocock-skills-dsh) — 将 Matt Pocock 的 25 个精选工程与效率 Agent 技能（grilling、TDD、代码审查、领域建模等）移植为 DeepSeek Harness 插件包。
+- [kouyichi/dsh-plugins#dsh-learn](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-learn) — dsh 自我学习闭环：记录经验、生成并发布技能，定期审查修正、合并与退役技能。
 - [linhay/harmony-next.skills](https://github.com/linhay/harmony-next.skills) — 为 DeepSeek Harness 提供 HarmonyOS NEXT 技能包、离线 API 参考及 DevEco、HDC 与模拟器自动化指南。
 - [linhut/gongwen-skill](https://github.com/linhut/gongwen-skill) — 中文公文全流程处理工具：GB/T 9704 格式检查、自动修复、内容修订（红色标注+删除线）、模板生成、Markdown 转公文、版头/版记/页码注入，覆盖通知/请示/报告/函/会议纪要等 24 类公文。
 - [linxichen/dsh-rigorquant](https://github.com/linxichen/dsh-rigorquant) — RigorQuant 预设与技能包：面向实证与计算数学（经济学、金融、组合）的无人值守隔离多智能体研究，内置四重实现前校验与 jacobian/Lean 升级通道。
@@ -1157,6 +1182,9 @@ dsh plugin --profile web add dshmarket
 - [Jungod1121/dsh-anchored-standard](https://github.com/Jungod1121/dsh-anchored-standard) — V4 Pro 两阶段 agent 预设：首轮仅 bash+read 完成极简开局，首个工具调用或回复后恢复 Standard 完整工具目录；以安装器 bundle 与手动预设目录双形态发布。
 - [KanoNoUta/dsh-captain](https://github.com/KanoNoUta/dsh-captain) — GPT 规划依赖 DAG，DeepSeek Worker 自适应并行执行任务，可选 GPT Reviewer 审核增量 Git Diff 并驱动返工轮次。
 - [Karbo123/DSH-EvoResearch#evoresearch-plugin](https://github.com/Karbo123/DSH-EvoResearch/tree/main/packages/evoresearch-plugin) — 科研 agent 套件：长程目标控制（可审计证据链）、定时任务、多智能体专家团队、自进化科研记忆（FTS5 + RRF 召回）、科研项目工作区与自定义工作台界面。
+- [kouyichi/dsh-plugins#dsh-cron](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-cron) — dsh 定时任务：持久化后台 agent 定时任务，支持增删查与调度执行。
+- [kouyichi/dsh-plugins#dsh-kanban](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-kanban) — dsh 看板（Hermes 风格）：SQLite 任务板，支持列流转、依赖晋升、后台派发与子代理执行。
+- [kouyichi/dsh-plugins#dsh-tower](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tower) — dsh 多代理指挥塔编排：规划任务、派发 worker 到独立 git worktree、审查门禁合并（Kimi Code /tower 移植）。
 - [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) — 由投影驱动的会话子代理与持久工作流实时 DAG：状态与节点导航、深层链路确定性布局、适应/平移画布，以及当前会话内节点拖动重排。
 - [LeslieWylie/agent-loop-workflow](https://github.com/LeslieWylie/agent-loop-workflow) — 面向 DeepSeek Harness、与具体项目无关的多智能体协作协议：阻止失控循环的循环守卫、六字段交接格式、按风险分级的评审路由，以及固定的验证→提交→推送→评审→关闭流程。用一个 skill 取代复制粘贴进每个 agent 指令里的相同规则。
 - [LeslieWylie/dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) — 证据优先的操作套件：六个只读工具（能力清单、分阶段编排计划、随包技能阅读、有上限的本地记忆检索、仓库发布审计、发布清单）加五个随包技能；只规划与审计，不做远程写入。
@@ -1411,6 +1439,11 @@ dsh plugin --profile web add dshmarket
 - [jorinyang/dsh-doctor](https://github.com/jorinyang/dsh-doctor) — DSH 环境诊断、分级修复与一键回滚，附带运行时自愈服务。
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
 - [keyiadiannao/dsh-restart-button](https://github.com/keyiadiannao/dsh-restart-button) — 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。
+- [kouyichi/dsh-plugins#dsh-bench](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-bench) — dsh 代理基准测试：以新会话跑任务集、按期望判定成败并生成对比报告。
+- [kouyichi/dsh-plugins#dsh-profile](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-profile) — dsh profile 管理：列出、创建、删除、重命名、描述、设默认、导出与导入。
+- [kouyichi/dsh-plugins#dsh-scaffold](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-scaffold) — dsh 插件开发工具链：生成 rc.6 兼容脚手架、mock 上下文验证注册、检查 API 兼容性。
+- [kouyichi/dsh-plugins#dsh-tui-bridge](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-bridge) — dsh TUI 扩展接缝：从插件积木注册命令、面板、状态栏字段、主题与输入钩子。
+- [kouyichi/dsh-plugins#dsh-tui-headless-app](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-headless-app) — dsh tui-headless profile 的一次性任务驱动器：创建代理、执行单条提示、落盘并输出结构化 JSON 结果。
 - [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
 - [labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) — 渐进披露 MCP 网关：用 `mcp_search` 检索大型远程工具目录，再由 `mcp_call` 按精确 schema 调用，并采用惰性连接与有界缓存。
 - [leechen298/Code2Skill](https://github.com/leechen298/Code2Skill) — 从用户授权的源码生成 Function、MCP 工具、工作流 Skill 与离线测试包。

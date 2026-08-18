@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-profile
+name: kouyichi/dsh-plugins#dsh-profile
+category: dev
+description:
+  en: 'Profile manager for dsh: list, create, delete, rename, describe, switch default, export, and import profiles.'
+  zh: 'dsh profile 管理：列出、创建、删除、重命名、描述、设默认、导出与导入。'

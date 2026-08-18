@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-search
+name: kouyichi/dsh-plugins#dsh-tui-search
+category: ui
+description:
+  en: '/search cross-session full-text search panel for the dsh TUI.'
+  zh: 'dsh TUI 的 /search 跨会话全文搜索面板。'

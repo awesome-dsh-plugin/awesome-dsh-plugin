@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-commands
+name: kouyichi/dsh-plugins#dsh-tui-commands
+category: ui
+description:
+  en: 'Markdown-file custom commands and /init (AGENTS.md) for the dsh TUI.'
+  zh: 'dsh TUI 的 md 文件自定义命令与 /init（AGENTS.md）生成。'

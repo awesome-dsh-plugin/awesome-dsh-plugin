@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-providers
+name: kouyichi/dsh-plugins#dsh-tui-providers
+category: ui
+description:
+  en: 'Multi-provider LLM adaptation for the dsh TUI: /provider and /providers to switch and probe OpenAI-compatible routes, /effort for reasoning levels, model catalog feeding the /model picker.'
+  zh: 'dsh TUI 多 provider 适配：/provider 与 /providers 切换和探测 OpenAI 兼容路由，/effort 切换推理力度，模型目录接入 /model 选择器。'

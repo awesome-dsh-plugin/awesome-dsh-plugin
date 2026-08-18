@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-a2a
+name: kouyichi/dsh-plugins#dsh-tui-a2a
+category: ui
+description:
+  en: '/agents panel and @mention dispatch to local A2A agents for the dsh TUI.'
+  zh: 'dsh TUI 的 /agents 面板与 @提及派活：向本地 A2A 代理分发任务。'

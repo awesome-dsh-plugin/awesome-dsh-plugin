@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tower
+name: kouyichi/dsh-plugins#dsh-tower
+category: workflow
+description:
+  en: 'Control-tower multi-agent orchestration for dsh: plan missions, spawn workers in isolated git worktrees, review-gated merges (Kimi Code /tower port).'
+  zh: 'dsh 多代理指挥塔编排：规划任务、派发 worker 到独立 git worktree、审查门禁合并（Kimi Code /tower 移植）。'

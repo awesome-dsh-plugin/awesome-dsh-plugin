@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-cron
+name: kouyichi/dsh-plugins#dsh-cron
+category: workflow
+description:
+  en: 'Persistent scheduled agent jobs for dsh: cron add/list/remove/run with durable storage and a dispatcher tick.'
+  zh: 'dsh 定时任务：持久化后台 agent 定时任务，支持增删查与调度执行。'

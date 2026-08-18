@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-todos
+name: kouyichi/dsh-plugins#dsh-tui-todos
+category: ui
+description:
+  en: '/todos panel with todo n/n status field for the dsh TUI.'
+  zh: 'dsh TUI 的 /todos 面板与 todo n/n 状态字段。'

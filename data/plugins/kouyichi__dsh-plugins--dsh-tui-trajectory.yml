@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-trajectory
+name: kouyichi/dsh-plugins#dsh-tui-trajectory
+category: ui
+description:
+  en: '/trajectory step-through event replay for the dsh TUI.'
+  zh: 'dsh TUI 的 /trajectory 轨迹回放：逐步重演事件时间线。'

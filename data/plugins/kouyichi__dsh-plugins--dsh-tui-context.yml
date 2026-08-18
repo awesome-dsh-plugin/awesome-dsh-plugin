@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-context
+name: kouyichi/dsh-plugins#dsh-tui-context
+category: ui
+description:
+  en: '/context panel showing context-window occupancy with a progress bar and ctx% status field.'
+  zh: 'dsh TUI 的 /context 面板：上下文窗口占用进度条与 ctx% 状态字段。'
