@@ -1,0 +1,7 @@
+url: https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness
+name: jermaine123123/agent-context-editor#deepseek-harness
+category: ui
+tarball: https://github.com/jermaine123123/agent-context-editor/releases/download/v0.1.0-alpha.1/context-editor-deepseek-harness-0.1.1.tgz
+description:
+  en: Searchable and reversible management view for DeepSeek Harness reasoning and answer units, with type filters, batch actions, and sidecar-persisted hide state that preserves the original Session.
+  zh: 为 DeepSeek Harness 的 reasoning 与 answer 单元提供可搜索、可恢复的管理视图，支持类型筛选和批量操作，使用 sidecar 保存隐藏状态并保留原始 Session。
