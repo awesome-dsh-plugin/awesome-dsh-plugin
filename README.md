@@ -2,7 +2,7 @@
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com)
 
-English | [中文](README.zh.md)
+English | [中文](README.zh.md) | [日本語](README.ja.md)
 
 > A curated list of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
@@ -21,12 +21,6 @@ dsh plugin --profile web add dshmarket
 <sub><i>The plugin market inside Settings — click to enlarge.</i></sub>
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
-
-> ℹ️ **On desktop clients.** This list is client-agnostic. A plugin is listed because it follows the official protocol — it declares a `dsh.bundle` manifest and installs with `dsh plugin add` — not because it adapts to any particular client.
->
-> We will not adopt the protocol that `anywhere-labs/deepseek-harness-desktop` unilaterally requires of others, and conformance to it will never be a condition of being listed here. No plugin will be removed, demoted, or asked to adapt because of it.
->
-> Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop) and [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop) — both ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
 
 > [!WARNING]
 > Installing a plugin runs third-party code on your machine with your own permissions — it can read your files, use your credentials, and reach the network. Tool approvals don't sandbox plugin code. Being on this list is not a security review: check the source before you install, and try unfamiliar plugins somewhere that doesn't hold your keys. See the full disclaimer at the bottom of this page.
@@ -267,6 +261,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [wsxwj123/dsh-plugins#dsh-composer-tools](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools) - Composer input toolkit: arrow-key session history (first/last-line gated, IME and command-menu safe) and related input conveniences.
 - [wsxwj123/dsh-plugins#dsh-turn-scrubber](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-turn-scrubber) - Compact right-edge turn rail with hover summaries and click-to-jump navigation.
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) - Codex-style left-side message navigation rail for the Web UI: one tick per user message, hover previews, and click-to-jump across the whole history.
+- [wydddddcool/dsh-hover-approve](https://github.com/wydddddcool/dsh-hover-approve) - Anchors an approve/answer bubble to each DSH Web sidebar session row — one-click handling of authorization, questions, plan reviews and blocked goals without opening the conversation.
 - [wzz3034026545/dsh-rule-manager](https://github.com/wzz3034026545/dsh-rule-manager) - Manage DSH rules from the web settings panel — edit global/project AGENTS.md, or auto-split pasted rules into layered AGENTS.md and skills via LLM.
 - [x2802490130-prog/dsh-client-ui-writing](https://github.com/x2802490130-prog/dsh-client-ui-writing) - Client-side writing panel for the Web UI: project volumes and stats, corpus library, full-text search, evolution version-chain diffs, and an SVG thread graph, shown only in writing-preset sessions.
 - [XHR666/dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) - Load Wallpaper Engine .mpkg files as the DSH web background: embedded video, time-of-day switching, unified frosted blur, local wallpaper library & rotation.
