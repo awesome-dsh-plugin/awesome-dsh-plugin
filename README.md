@@ -469,7 +469,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Models & Providers
 
-- [qiujianfeng44-bit/dsh-plugin-thinking-api](https://github.com/qiujianfeng44-bit/dsh-plugin-thinking-api) - One-click OpenAI-compatible API (CodeBuddy/vLLM/proxies) with thinking mode, avoiding developer-role content_filter rejection.
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
 - [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) - Role-based LLM retry & fallback strategies.
 - [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) - Brings the models in the WorkBuddy desktop app straight into DeepSeek Harness — zero configuration in the DSH chat.
