@@ -1,0 +1,6 @@
+url: https://github.com/songoao25/dsh-auto-compact
+name: songoao25/dsh-auto-compact
+category: memory
+description:
+  en: 'Enhanced auto-compaction defaults for DeepSeek Harness agent presets: apply tuned threshold/retention budgets and per-model policies with one command, idempotent with backups and rollback.'
+  zh: '为 DSH 智能体预设注入增强的自动压缩默认值：一键应用调优的触发阈值/保留比例与分模型策略，幂等执行、自动备份、可回滚。'
