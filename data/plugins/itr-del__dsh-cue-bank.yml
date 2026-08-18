@@ -1,0 +1,6 @@
+url: https://github.com/itr-del/dsh-cue-bank
+name: itr-del/dsh-cue-bank
+category: memory
+description:
+  en: 'Cross-session event-cue memory for DeepSeek Harness: auto-extracts task/conversation cues and user language habits from every turn into a persistent global cue bank, then re-injects remembered context on topic-switch detection (keyword or vector matching).'
+  zh: 跨会话「触点记忆库」插件：自动从每轮对话提取任务/会话级触点与用户惯用词，存入全局持久记忆库；检测到话题切换时重新注入相关历史记忆（关键词或向量匹配）。
