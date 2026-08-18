@@ -1,6 +1,6 @@
 url: https://github.com/txlznbzsdj-collab/dsh-deepseek-pet
 name: txlznbzsdj-collab/dsh-deepseek-pet
-category: ui
+category: fun
 description:
   en: 'Animated DeepSeek blue-whale desktop pet floating on the DSH Web page: draggable with speech bubbles and mood poses, a pet_say tool for the model to make it talk, and turn-start/end thinking and celebrating states.'
   zh: 浮动在 DSH Web 页面上的 DeepSeek 蓝色小鲸鱼桌宠：可拖拽，说话气泡与心情姿势随互动切换，模型可调用 pet_say 工具让它开口，对话开始/结束时自动进入思考与庆祝状态。
