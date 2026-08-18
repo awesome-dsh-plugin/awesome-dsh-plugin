@@ -1,0 +1,6 @@
+url: https://github.com/lusblead/dsh-Kingdom
+name: lusblead/dsh-Kingdom
+category: workflow
+description:
+  en: 'Governed multi-agent kingdom in your DSH session: roles, territories, task review loop, and Claim != Fact enforced in code.'
+  zh: '在 DSH 会话中运行治理型多 Agent 王国：角色、领地、任务验收闭环，Claim ≠ Fact 由代码强制。'
