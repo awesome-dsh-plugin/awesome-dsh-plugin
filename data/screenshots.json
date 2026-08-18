@@ -723,5 +723,9 @@
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-dialog.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-light.png",
   "https://raw.githubusercontent.com/zljr/dsh-share/master/assets/share-page-dark.png"
+ ],
+ "https://github.com/RevolutionLA/dsh-dream-skin": [
+  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/preview.png",
+  "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/main/docs/screenshots/settings.png"
  ]
 }
