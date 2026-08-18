@@ -722,6 +722,14 @@
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/decay.png",
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
  ],
+ "https://github.com/wloops/dsh-git-worktree": [
+  "https://raw.githubusercontent.com/wloops/dsh-git-worktree/master/docs/screenshots/01-create-worktree.png",
+  "https://raw.githubusercontent.com/wloops/dsh-git-worktree/master/docs/screenshots/02-ready-for-review.png",
+  "https://raw.githubusercontent.com/wloops/dsh-git-worktree/master/docs/screenshots/03-local-preview.png",
+  "https://raw.githubusercontent.com/wloops/dsh-git-worktree/master/docs/screenshots/04-commit-confirmation.png",
+  "https://raw.githubusercontent.com/wloops/dsh-git-worktree/master/docs/screenshots/05-next-iteration.png",
+  "https://raw.githubusercontent.com/wloops/dsh-git-worktree/master/docs/screenshots/06-retain-environment.png"
+ ],
  "https://github.com/wuxiangru915/dsh-review-loop": [
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.en.png",
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.zh.png"
