@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-kanban
+name: kouyichi/dsh-plugins#dsh-kanban
+category: workflow
+description:
+  en: 'Hermes-style kanban board for dsh: SQLite task board with columns, dependencies, background dispatcher, and subagent execution.'
+  zh: 'dsh 看板（Hermes 风格）：SQLite 任务板，支持列流转、依赖晋升、后台派发与子代理执行。'

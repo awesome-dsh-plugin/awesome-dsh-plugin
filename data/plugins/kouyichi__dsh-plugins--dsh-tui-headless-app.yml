@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-headless-app
+name: kouyichi/dsh-plugins#dsh-tui-headless-app
+category: dev
+description:
+  en: 'One-shot task driver for the dsh tui-headless profile: create an agent, run one prompt, flush, and print the result with structured JSON output.'
+  zh: 'dsh tui-headless profile 的一次性任务驱动器：创建代理、执行单条提示、落盘并输出结构化 JSON 结果。'

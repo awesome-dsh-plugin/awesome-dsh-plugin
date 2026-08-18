@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-bench
+name: kouyichi/dsh-plugins#dsh-bench
+category: dev
+description:
+  en: 'Agent benchmark runner for dsh: run task sets through fresh agents, score pass/fail by expectations, compare reports.'
+  zh: 'dsh 代理基准测试：以新会话跑任务集、按期望判定成败并生成对比报告。'

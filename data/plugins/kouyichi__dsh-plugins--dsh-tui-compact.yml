@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-compact
+name: kouyichi/dsh-plugins#dsh-tui-compact
+category: ui
+description:
+  en: '/compact command for the dsh TUI: real context compaction with error grading.'
+  zh: 'dsh TUI 的 /compact 命令：真实上下文压缩与错误分级。'

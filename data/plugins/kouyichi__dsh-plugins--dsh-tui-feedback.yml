@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-feedback
+name: kouyichi/dsh-plugins#dsh-tui-feedback
+category: ui
+description:
+  en: '/feedback up|down recording for the dsh TUI.'
+  zh: 'dsh TUI 的 /feedback up|down 反馈记录。'

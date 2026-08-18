@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-dream
+name: kouyichi/dsh-plugins#dsh-dream
+category: memory
+description:
+  en: 'Four-phase memory consolidation for dsh: orient, gather session signals, consolidate into MEMORY.md, prune and index; auto-runs every 24 hours.'
+  zh: 'dsh 记忆整合：四阶段（定向、采集会话信号、整合入 MEMORY.md、精简索引），每 24 小时自动执行。'

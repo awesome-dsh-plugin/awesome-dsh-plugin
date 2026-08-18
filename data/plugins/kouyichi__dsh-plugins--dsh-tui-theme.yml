@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-theme
+name: kouyichi/dsh-plugins#dsh-tui-theme
+category: ui
+description:
+  en: '/theme switcher for the dsh TUI: deep/light/ocean/mono palettes with persistence.'
+  zh: 'dsh TUI 的 /theme 主题切换：deep/light/ocean/mono 四套配色，持久化保存。'

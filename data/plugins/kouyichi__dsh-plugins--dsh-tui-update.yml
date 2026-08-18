@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-update
+name: kouyichi/dsh-plugins#dsh-tui-update
+category: ui
+description:
+  en: '/update npm version check for the dsh TUI.'
+  zh: 'dsh TUI 的 /update 命令：npm 版本检查。'

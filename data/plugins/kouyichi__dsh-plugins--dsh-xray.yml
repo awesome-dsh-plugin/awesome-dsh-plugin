@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-xray
+name: kouyichi/dsh-plugins#dsh-xray
+category: session
+description:
+  en: 'Session log analysis for dsh: decode zstd session logs into structured analytics, full-text search, and markdown/JSON export.'
+  zh: 'dsh 会话日志分析：解码 zstd 会话为结构化统计、全文搜索与 markdown/JSON 导出。'

@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-usage
+name: kouyichi/dsh-plugins#dsh-tui-usage
+category: ui
+description:
+  en: '/usage panel and cost status field for the dsh TUI, fed by dsh-meter.'
+  zh: 'dsh TUI 的 /usage 面板与成本状态栏字段，数据来自 dsh-meter。'

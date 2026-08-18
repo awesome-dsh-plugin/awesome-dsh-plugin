@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-pack
+name: kouyichi/dsh-plugins#dsh-pack
+category: tools
+description:
+  en: 'Context packing for dsh: compile files, skills, memory, and session highlights into a bounded context pack.'
+  zh: 'dsh 上下文打包：将文件、技能、记忆与会话摘要编译为有界上下文包。'

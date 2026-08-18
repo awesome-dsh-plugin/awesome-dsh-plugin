@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-btw
+name: kouyichi/dsh-plugins#dsh-tui-btw
+category: ui
+description:
+  en: '/btw side conversation in a new tab for the dsh TUI.'
+  zh: 'dsh TUI 的 /btw 侧会话：新标签页并行提问，不扰主线。'

@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-bridge
+name: kouyichi/dsh-plugins#dsh-tui-bridge
+category: dev
+description:
+  en: 'Extension seam for the dsh TUI: register commands, panels, status fields, themes, and input hooks from plugin bricks.'
+  zh: 'dsh TUI 扩展接缝：从插件积木注册命令、面板、状态栏字段、主题与输入钩子。'

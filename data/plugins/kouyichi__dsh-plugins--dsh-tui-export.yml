@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-export
+name: kouyichi/dsh-plugins#dsh-tui-export
+category: ui
+description:
+  en: '/export command: session export to markdown from the dsh TUI.'
+  zh: 'dsh TUI 的 /export 命令：会话导出为 markdown。'

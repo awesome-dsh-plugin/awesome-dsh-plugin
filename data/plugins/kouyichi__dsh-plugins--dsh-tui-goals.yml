@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-goals
+name: kouyichi/dsh-plugins#dsh-tui-goals
+category: ui
+description:
+  en: '/goal and /goals panels for the dsh TUI.'
+  zh: 'dsh TUI 的 /goal 与 /goals 目标面板。'
