@@ -116,12 +116,37 @@ export function tarballProblem(value) {
   return null
 }
 
+// Every key an entry file may carry. `file` is added by readEntries, not by
+// the author.
+//
+// Unknown keys used to be accepted in silence, which is worse than it sounds:
+// a field nothing reads still looks authoritative to anyone opening the file,
+// and four entries had accumulated an `npm:` key that no code has ever
+// consulted — build-site.mjs takes the npm mapping from data/npm-map.json,
+// which probe-npm.mjs only fills in after checking that the package's own
+// `repository` points back at the listed repo. #1775 proposed adding one more
+// such key to a third party's entry, pointing at a package republished under a
+// different scope. It would have changed nothing, because nothing reads it —
+// but a reader could not have known that, and neither could the reviewer
+// without going to look. Refusing the key is how the file stays honest about
+// what it does.
+const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'tarball', 'file'])
+
 /** Validate shape. Returns an array of human-readable problems (empty = ok). */
 export function validateEntries(entries) {
   const problems = []
   const seen = new Map()
   for (const e of entries) {
     const at = e.file ?? e.url ?? '(unknown)'
+    const extra = Object.keys(e).filter((k) => !ENTRY_KEYS.has(k))
+    if (extra.length) {
+      problems.push(
+        `${at}: unknown field${extra.length > 1 ? 's' : ''} ${extra.map((k) => `"${k}"`).join(', ')} — `
+        + `an entry may only declare ${[...ENTRY_KEYS].filter((k) => k !== 'file').join(', ')}. `
+        + 'Nothing reads anything else, so it would sit in the file looking meaningful without being so. '
+        + 'The npm package is resolved automatically from the repository, not declared here.',
+      )
+    }
     if (typeof e.url !== 'string' || !/^https:\/\/github\.com\/[^/]+\/[^/]+/.test(e.url)) {
       problems.push(`${at}: "url" must be a https://github.com/owner/repo link`)
       continue

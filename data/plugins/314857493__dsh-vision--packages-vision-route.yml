@@ -1,7 +1,6 @@
 url: https://github.com/314857493/dsh-vision/tree/main/packages/vision-route
 name: 314857493/dsh-vision#vision-route
 category: vision
-npm: dsh-vision-proxy-route
 description:
   en: 'Registers a `deepseek-vision` provider route: the Web GUI accepts pasted images and transcribes them to text via the free Zhipu GLM vision API before delegating to the DeepSeek adapter.'
   zh: '注册 `deepseek-vision` 路由：Web GUI 直接粘贴图片，由免费智谱 GLM 视觉模型转译为文字后，再交给 DeepSeek 适配器作答。'
