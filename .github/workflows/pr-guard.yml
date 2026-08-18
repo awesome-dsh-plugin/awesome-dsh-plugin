@@ -46,7 +46,15 @@ jobs:
         env:
           # A pull request is only flagged for having no checks once CI has had
           # time to start. Below this it is simply too early to tell.
-          MIN_AGE_MINUTES: '20'
+          #
+          # 90 rather than 20: a fork PR from a first-time contributor sits with
+          # no checks at all until a maintainer approves the run, and that wait
+          # is measured in hours, not minutes. At 20 the job was reliably
+          # flagging normal submissions for being new. Genuinely undispatched
+          # PRs (#1680) are not time-sensitive — they stay broken until someone
+          # pushes — so waiting longer costs nothing and stops the guard from
+          # crying wolf at the people it is meant to help.
+          MIN_AGE_MINUTES: '90'
         with:
           script: |
             const { owner, repo } = context.repo
@@ -69,7 +77,7 @@ jobs:
                       files(first:100) { totalCount nodes { path } }
                       commits(last:1) { nodes { commit {
                         oid
-                        checkSuites(first:20) { nodes { checkRuns(first:20) { nodes { name } } } }
+                        checkSuites(first:20) { nodes { checkRuns(first:20) { nodes { name conclusion } } } }
                       } } }
                     }
                   }
@@ -99,10 +107,21 @@ jobs:
               if (!commit) continue
               const sha = commit.oid
 
-              const names = new Set()
-              for (const s of commit.checkSuites.nodes) for (const r of s.checkRuns.nodes) names.add(r.name)
-              // Already judged by this guard on this commit — do not post again.
-              if (names.has(NAME)) continue
+              const runs = new Map()
+              for (const s of commit.checkSuites.nodes) for (const r of s.checkRuns.nodes) if (!runs.has(r.name)) runs.set(r.name, r.conclusion)
+              const names = new Set(runs.keys())
+              const mine = runs.get(NAME) ?? null
+
+              // The "no checks ran" verdict is about a moment, and the moment
+              // passes: a fork PR whose run is queued for maintainer approval
+              // has no checks until someone approves it, which can be hours.
+              // The first version of this job posted a failure and then skipped
+              // the commit forever, so #1624 kept a red X after its checks came
+              // back green. A stale red is the mirror of the stale green this
+              // whole guard exists to prevent, so the verdict is recomputed
+              // every pass and cleared when it no longer holds. Posting only on
+              // a *change* keeps that from becoming an hourly stream of
+              // identical check runs.
 
               // `files(first:100)` is a cap, not a filter: a stale-fork PR can
               // carry hundreds of paths and the `.github/` ones may fall outside
@@ -120,6 +139,7 @@ jobs:
               const config = paths.filter((p) => p.startsWith('.github/'))
 
               if (config.length) {
+                if (mine === 'failure') continue // already flagged, and still true
                 const list = config.map((p) => `- \`${p}\``).join('\n')
                 await post(sha, 'failure', `${config.length} repository config file(s) changed`,
                   [
@@ -149,9 +169,25 @@ jobs:
                 continue
               }
 
-              // Nothing else to say if the normal checks ran.
-              if (names.has('check')) continue
+              // The normal checks ran. If this job had previously said they had
+              // not, retract that rather than leaving a contradiction sitting
+              // on the commit.
+              if (names.has('check')) {
+                if (mine === 'failure') {
+                  await post(sha, 'success', 'Checks are present',
+                    [
+                      'This pull request was briefly flagged here for having no checks. It has them',
+                      'now, so that verdict is withdrawn — most often the run was simply waiting for',
+                      'a maintainer to approve it, which is normal for a first-time contributor.',
+                      '',
+                      'Nothing is required from you.',
+                    ].join('\n'))
+                  core.info(`#${pr.number}: cleared a stale "no checks" verdict`)
+                }
+                continue
+              }
               if (Date.now() - Date.parse(pr.createdAt) < MIN_AGE_MS) continue
+              if (mine === 'failure') continue // already flagged, and still true
 
               await post(sha, 'failure', 'No checks ran on this pull request',
                 [
