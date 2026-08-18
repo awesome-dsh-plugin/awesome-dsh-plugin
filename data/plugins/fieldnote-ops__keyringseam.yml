@@ -1,0 +1,6 @@
+url: https://github.com/fieldnote-ops/keyringseam
+name: fieldnote-ops/keyringseam
+category: model
+description:
+  en: macOS Keychain credential provider that replaces the local-file provider and uses a signed, notarized universal helper.
+  zh: macOS Keychain 凭据提供器：替换本地文件提供器，并使用已签名、公证的通用二进制辅助程序。
