@@ -765,6 +765,7 @@ dsh plugin --profile web add dshmarket
 - [DDDMUC/dsh-free-search](https://github.com/DDDMUC/dsh-free-search) — DSH 免费搜索插件：7 个引擎（DuckDuckGo/Bing/SearXNG 免费 + Exa/Perplexity/DeepSeek 付费）、自动回退、设置页 UI（API key 输入 + 官网链接）、web_fetch、引擎测试工具。
 - [elves-ai/dsh-web-search-firecrawl](https://github.com/elves-ai/dsh-web-search-firecrawl) — 基于 Firecrawl 的网页搜索提供方：替换内置 web_search 的后端，并提供 API Key、结果数量等字段的设置卡片。
 - [guo6x/dsh-pilot](https://github.com/guo6x/dsh-pilot) — 零依赖浏览器操控：agent 通过 CDP 驾驶真实 headless Edge/Chrome（导航/点击/输入/按键/JS/截图，8 个 `pilot_*` 工具），Web GUI 内可拖拽驾驶舱面板实时围观——文本优先快照适配纯文本模型，无需 Playwright、无需 API key。
+- [jiewaigongxing/dsh-jiey-browser](https://github.com/jiewaigongxing/dsh-jiey-browser) — 通过 MCP 在 DeepSeek Harness 中驱动 Jiey 浏览器：导航、快照、操作、读取、截图与标签页管理，使用真实 Chromium 环境。
 - [JohnXu22786/browser-automation](https://github.com/JohnXu22786/browser-automation) — dsh 的真实浏览器自动化:基于 Playwright 的 MCP 服务,提供导航、点击、填写、输入、截图与带编号引用的无障碍快照操作,22 个 web_* 工具经 stdio 接入 Agent。
 - [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
 - [liustack/modsearch](https://github.com/liustack/modsearch) — 纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。
