@@ -1,0 +1,6 @@
+url: https://github.com/moononnn/DeepSeek-Harness-Hanako-Memory
+name: moononnn/DeepSeek-Harness-Hanako-Memory
+category: memory
+description:
+  en: 'Hana-style assistant manager for DSH: visual preset management (cards, yuan personalities, avatar cropping) plus a full Hana memory stack (rolling summaries, layered compilation, SQLite fact store, deep memory).'
+  zh: Hana 式助手管理：可视化配置助手预设（卡片、四性格「元」、头像裁剪），并完整复刻 Hana 记忆系统（滚动摘要、分层编译、SQLite 事实库、深度记忆）。
