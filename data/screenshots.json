@@ -262,6 +262,11 @@
  "https://github.com/SamizuHM/dsh-client-ui-theme-xp": [
   "https://raw.githubusercontent.com/SamizuHM/dsh-client-ui-theme-xp/main/docs/screenshot.png"
  ],
+ "https://github.com/Signalight/codex-to-dsh-pet/tree/main/packages/dsh-codex-pet": [
+  "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-1.png",
+  "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-2.png",
+  "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-3.png"
+ ],
  "https://github.com/Smalldy/godot-bridge": [
   "https://raw.githubusercontent.com/Smalldy/godot-bridge/main/assets/godot-bridge-env-check.png"
  ],
