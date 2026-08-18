@@ -890,5 +890,12 @@
  ],
  "https://github.com/WilliamShi666/dsh-wsl-workspace-picker": [
   "https://raw.githubusercontent.com/WilliamShi666/dsh-wsl-workspace-picker/main/assets/workspace-picker-demo.png"
+ ],
+ "https://github.com/Liu-ZA-81/dsh-theme-firefly": [
+  "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/01-wallpaper.jpg",
+  "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/02-boot.jpg",
+  "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/03-firefly.jpg",
+  "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/04-music.jpg",
+  "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/05-emote.jpg"
  ]
 }
