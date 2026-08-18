@@ -904,5 +904,9 @@
   "https://raw.githubusercontent.com/cheshireez/dsh-skill-hub/main/promo/real-skill-hub.png",
   "https://raw.githubusercontent.com/cheshireez/dsh-skill-hub/main/promo/real-skill-hub-catalog.png",
   "https://raw.githubusercontent.com/cheshireez/dsh-skill-hub/main/promo/real-skill-hub-scenes.png"
+ ],
+ "https://github.com/maddogfinance/dsh-trading": [
+  "https://raw.githubusercontent.com/maddogfinance/dsh-trading/main/docs/screenshots/chart-card-panes.png",
+  "https://raw.githubusercontent.com/maddogfinance/dsh-trading/main/docs/screenshots/annotate-levels-table.png"
  ]
 }
