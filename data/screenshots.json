@@ -899,5 +899,10 @@
   "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/03-firefly.jpg",
   "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/04-music.jpg",
   "https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/main/docs/screenshots/05-emote.jpg"
+ ],
+ "https://github.com/cheshireez/dsh-skill-hub": [
+  "https://raw.githubusercontent.com/cheshireez/dsh-skill-hub/main/promo/real-skill-hub.png",
+  "https://raw.githubusercontent.com/cheshireez/dsh-skill-hub/main/promo/real-skill-hub-catalog.png",
+  "https://raw.githubusercontent.com/cheshireez/dsh-skill-hub/main/promo/real-skill-hub-scenes.png"
  ]
 }
