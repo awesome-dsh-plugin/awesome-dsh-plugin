@@ -1,0 +1,8 @@
+url: https://github.com/FeatherHunter/dsh-opencode-palette
+name: FeatherHunter/dsh-opencode-palette
+category: theme
+description:
+  en: "Ports all 34 opencode official themes (33 static JSON + 1 system) into DeepSeek Harness: data-driven pipeline (JSON → color resolve → DSH override), per-browser persistence, monospace/proportional choice, five code fonts, and a system fallback that keeps typography only."
+  zh: "把 opencode 官方 34 款主题（33 个静态 JSON + system）完整搬到 DeepSeek Harness：数据驱动三层管线（JSON → 颜色解析 → DSH 覆盖注入），按浏览器持久化，等宽/正体切换、五种代码字体实时预览，system 模式仅保留排印。"
+npm: dsh-opencode-palette
+tarball: https://github.com/FeatherHunter/dsh-opencode-palette/releases/download/v1.6.4/dsh-opencode-palette-1.6.4.tgz
