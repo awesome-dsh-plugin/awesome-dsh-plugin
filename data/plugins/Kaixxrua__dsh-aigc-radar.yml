@@ -1,0 +1,6 @@
+url: https://github.com/Kaixxrua/dsh-aigc-radar
+name: Kaixxrua/dsh-aigc-radar
+category: tools
+description:
+  en: 'Search AIGC Radar''s curated GitHub AI project library (500-star admission, bilingual zh/en tags, star-growth snapshots) with native result cards; an agent/pre-step listener proactively suggests a reuse check before the agent writes code.'
+  zh: '检索 AIGC Radar 精选 GitHub AI 项目库（500 Stars 准入、中英双语标签、星标增长快照），原生结果卡片展示；agent/pre-step 监听器在 agent 动手写代码前主动建议复用检查。'
