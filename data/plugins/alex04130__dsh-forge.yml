@@ -1,0 +1,6 @@
+url: https://github.com/alex04130/dsh-forge
+name: alex04130/dsh-forge
+category: market
+description:
+  en: 'Runtime extension suite for DeepSeek Harness: cross-session mailbox with wake cold-start, agent teams (captain + members + dependency task board + team_wait), subagent spawn policy with escalation approval, task-aware routing preset, plugin market, skill manager and runtime injector.'
+  zh: DeepSeek Harness 扩展套件：跨会话邮箱与 wake 冷启动、代理团队（队长 + 成员 + 依赖任务板 + team_wait）、子代理派发策略（提权自动审批）、任务感知路由 preset、插件市场、技能管理器与运行时注入器。
