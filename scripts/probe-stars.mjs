@@ -16,6 +16,14 @@ import LOCALES from '../site/locales.mjs'
 
 const STARS_FILE = 'data/stars.json'
 const CONCURRENCY = 10
+// A GitHub Actions token is capped at ~1000 requests per hour per repository,
+// shared by every workflow. Probing all ~1300 entries on each push blew that
+// budget on its own — with a dozen merges in an hour the Submission gate was
+// left with nothing and died mid-run, which is how submissions came to sit
+// with no verdict at all. Push-triggered runs now refresh only what is new or
+// a day stale; the nightly PROBE_ALL run still sweeps everything.
+const RECHECK_DAYS = Number(process.env.PROBE_RECHECK_DAYS ?? 1)
+const PROBE_ALL = process.env.PROBE_ALL === '1'
 
 const token = process.env.GITHUB_TOKEN
 if (!token) {
@@ -27,6 +35,15 @@ const map = fs.existsSync(STARS_FILE) ? JSON.parse(fs.readFileSync(STARS_FILE, '
 const readme = fs.readFileSync(LOCALES[0].readme, 'utf8')
 const urls = [...readme.matchAll(/^- \[.+?\]\((https:\/\/github\.com\/[^)]+)\) [—-] /gm)].map((m) => m[1])
 const today = new Date().toISOString().slice(0, 10)
+
+const fresh = (entry) =>
+  !PROBE_ALL
+  && entry !== undefined
+  && entry.checkedAt
+  && (Date.now() - new Date(entry.checkedAt).getTime()) / 86400000 <= RECHECK_DAYS
+
+const pending = urls.filter((url) => !fresh(map[url]))
+console.log(`${urls.length} listed, ${pending.length} to probe${PROBE_ALL ? ' (PROBE_ALL)' : ''}`)
 
 async function probe(url) {
   // monorepo subdir entries (…/tree/main/path) inherit the parent repo's stars
@@ -50,14 +67,14 @@ async function probe(url) {
 }
 
 let done = 0
-for (let i = 0; i < urls.length; i += CONCURRENCY) {
-  const batch = urls.slice(i, i + CONCURRENCY)
+for (let i = 0; i < pending.length; i += CONCURRENCY) {
+  const batch = pending.slice(i, i + CONCURRENCY)
   const results = await Promise.all(batch.map(async (url) => [url, await probe(url)]))
   for (const [url, result] of results) {
     if (result !== null) map[url] = result
   }
   done += batch.length
-  if (done % 50 === 0 || done >= urls.length) console.log(`stars ${done}/${urls.length}`)
+  if (done % 50 === 0 || done >= pending.length) console.log(`stars ${done}/${pending.length}`)
 }
 
 const listed = new Set(urls)
