@@ -2,5 +2,5 @@ url: https://github.com/rainow/dsh-simple-wiki-memory
 name: rainow/dsh-simple-wiki-memory
 category: memory
 description:
-  en: 'Super-simplified LLM-wiki memory: one auto-injected index document plus one Markdown file per topic read on demand; pending→promote→archive admission with an append-only log and git auto-backup, plain Markdown shared across harnesses.'
-  zh: '超级简化版 llm-wiki 记忆：一个自动注入的索引文档 + 每个主题一个按需读取的 md 文件；pending 准入→晋升→归档 + 追加式日志与 git 自动备份，纯 Markdown 跨 harness 共享。'
+  en: 'A super-simplified LLM-wiki memory plugin: one index document (auto-loaded) + one markdown file per topic (read only when needed) — no dumping everything into the context and burning tokens. Simple and lightweight, painless to install/uninstall, and freely editable however you like.'
+  zh: '超级简化版 llm-wiki 记忆插件：一个索引文档（自动加载）+ 每个主题一个 md 文件（需要时才读）——不会把所有东西塞进上下文烧 token。简单轻量，安装卸载无压力，想怎么改就怎么改。'
