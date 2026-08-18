@@ -1,0 +1,6 @@
+url: https://github.com/asd13006/dsh-zh-tw-ui
+name: asd13006/dsh-zh-tw-ui
+category: ui
+description:
+  en: Add Traditional Chinese (繁體中文) to the DeepSeek Harness Web UI with hand-polished translations for known strings and a runtime Simplified-to-Traditional converter that auto-covers upstream updates and third-party plugins.
+  zh: 為 DeepSeek Harness Web UI 新增繁體中文：已知字串逐條精譯，加上運行時簡轉繁自動轉換，官方更新與第三方插件都能自動覆蓋。
