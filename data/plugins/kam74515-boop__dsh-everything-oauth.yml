@@ -1,0 +1,6 @@
+url: https://github.com/kam74515-boop/dsh-everything-oauth
+name: kam74515-boop/dsh-everything-oauth
+category: model
+description:
+  en: Import local Codex, Grok, Claude, OpenCode, and CC Switch logins into DSH; pick sources and enable models in Settings.
+  zh: 把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。
