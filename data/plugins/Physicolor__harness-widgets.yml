@@ -1,0 +1,6 @@
+url: https://github.com/Physicolor/harness-widgets
+name: Physicolor/harness-widgets
+category: ui
+description:
+  en: 'Right-hand widget rail for the DSH Web UI: live session stats (turns, LLM/tool time, TTFT, speed, cache, tokens) and OpenCode Go quota via a same-origin host proxy; extensible widget registry for more platform usage widgets, visuals, utility actions and external integrations.'
+  zh: DSH Web UI 右侧部件栏：实时会话统计（轮次/LLM 与工具耗时/首 token 延迟/速率/缓存/tokens）与 OpenCode Go 套餐用量（同源代理）；可扩展部件注册表，为更多平台用量部件、视觉表现、实用工具与外部接口集成打基础。
