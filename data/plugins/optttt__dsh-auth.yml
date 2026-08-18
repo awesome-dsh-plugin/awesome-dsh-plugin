@@ -1,0 +1,6 @@
+url: https://github.com/optttt/dsh-auth
+name: optttt/dsh-auth
+category: security
+description:
+  en: Login gate for dsh web — username/password, idle-timeout auto logout, credentials and session expiry, single sign-on, a settings UI, and CLI to reset the password or change the username; sessions use scrypt-hashed secrets and HttpOnly cookies, with a LAN reverse proxy.
+  zh: dsh web 登录认证门：用户名/密码、空闲自动登出、认证有效期与单点登录，设置界面可改用户名/密码/过期时间，`dsh web p` 重置密码、`dsh web u` 改用户名；scrypt 加盐哈希 + HttpOnly Cookie，附局域网反向代理。
