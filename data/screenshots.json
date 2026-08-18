@@ -908,5 +908,11 @@
  "https://github.com/maddogfinance/dsh-trading": [
   "https://raw.githubusercontent.com/maddogfinance/dsh-trading/main/docs/screenshots/chart-card-panes.png",
   "https://raw.githubusercontent.com/maddogfinance/dsh-trading/main/docs/screenshots/annotate-levels-table.png"
+ ],
+ "https://github.com/mux9056-bot/dsh-theme": [
+  "https://raw.githubusercontent.com/mux9056-bot/dsh-theme/main/shots/preview-gallery.png",
+  "https://raw.githubusercontent.com/mux9056-bot/dsh-theme/main/shots/mono-dark.png",
+  "https://raw.githubusercontent.com/mux9056-bot/dsh-theme/main/shots/sakura-light.png",
+  "https://raw.githubusercontent.com/mux9056-bot/dsh-theme/main/shots/terminal-dark.png"
  ]
 }
