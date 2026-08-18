@@ -927,6 +927,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZihaoVistonWang/Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) - Run Stata through DeepSeek Harness: the native Stata AI Skill service auto-starts with DSH (macOS/Windows binaries bundled), so you can run regressions, do-files and econometrics workflows with no manual setup.
 - [zimai233/dsh-adhd-copilot](https://github.com/zimai233/dsh-adhd-copilot) - ADHD behavioral coaching skill: task breakdown, overwhelm management, launch rituals, and failure recovery.
 - [zjsthmjialin/commercial-ui-ux-codex-skill](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill) - Registers the commercial-ui-ux skill for DSH: task-aware commercial UI/UX/GUI design, review, repair, and implementation (SaaS, dashboards, admin panels, forms, tables, design systems) with a reference-doc system and quality gates.
+- [zuoyunlai/lunheng-article-pipeline-dsh](https://github.com/zuoyunlai/lunheng-article-pipeline-dsh) - Multi-agent deep long-form article pipeline skill for DeepSeek Harness, running 7 roles across 5 phases with parallel literature/data/case retrieval, an evidence base, independent audit and human verification gates.
 
 ### Workflow & Automation
 
