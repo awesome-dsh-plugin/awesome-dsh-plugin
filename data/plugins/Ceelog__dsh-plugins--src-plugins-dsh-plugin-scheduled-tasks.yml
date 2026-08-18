@@ -1,0 +1,6 @@
+url: https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks
+name: Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks
+category: workflow
+description:
+  en: Per-project scheduled prompts run as fresh headless agent sessions, with one-time, interval, and cron schedules plus durable run history.
+  zh: 按项目调度提示词，在全新的无头 Agent 会话中执行，支持单次、固定间隔和 cron 计划，并持久化运行历史。
