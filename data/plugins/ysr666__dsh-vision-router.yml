@@ -1,0 +1,6 @@
+url: https://github.com/ysr666/dsh-vision-router
+name: ysr666/dsh-vision-router
+category: vision
+description:
+  en: 'Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image to use it.'
+  zh: 为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。
