@@ -439,6 +439,7 @@ dsh plugin --profile web add dshmarket
 - [kam74515-boop/dsh-everything-oauth](https://github.com/kam74515-boop/dsh-everything-oauth) — 把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。
 - [katsos/dsh-claude-cli](https://github.com/katsos/dsh-claude-cli) — LLM 供应商：把本机已安装的 Claude Code CLI 作为模型后端，请求走已订阅的 Claude 账号，无需按量计费的 API key；原生工具调用经 MCP 桥接。
 - [kinoward/dsh-plugin-subhub](https://github.com/kinoward/dsh-plugin-subhub) — 用第三方订阅账户在 DeepSeek Harness 中使用订阅覆盖的模型：文字对话、图片理解、图片生成与图片编辑，可用模型与推理等级随账户自动同步；当前支持 OpenAI / ChatGPT 订阅，更多订阅服务规划中。
+- [llmpolska/oh-my-dsh](https://github.com/llmpolska/oh-my-dsh) — 面向 DeepSeek Harness 的分级模型路由：think/build 模型分级、视觉委派（视觉模型只负责描述图片，工作模型负责执行操作）、图片生成，以及高影响操作守卫。
 - [lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — 编码订阅 OAuth，支持 SuperGrok / Grok Build、ChatGPT Plus Codex、Kimi Code、Claude Code，并提供可选 loopback OpenAI/Anthropic 网关：本地登录无需粘贴 token，支持 AUTH 刷新重试、grok-4.6 xhigh，并可与 API-key 路由共存。
 - [lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — GitHub Copilot LLM 适配器：OAuth 设备码登录、从 Copilot API 动态发现模型、视觉模型图片输入支持（gpt-4.1、gpt-4o），以及 Chat Completions 与 Responses 双协议，按模型自动路由。
 - [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) — 非官方 Command Code 模型接入插件：注册 `commandcode` 路由，带实时模型目录与推理强度支持。
