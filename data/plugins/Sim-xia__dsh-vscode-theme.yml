@@ -1,0 +1,6 @@
+url: https://github.com/Sim-xia/dsh-vscode-theme
+name: Sim-xia/dsh-vscode-theme
+category: theme
+description:
+  en: Imports .vsix theme files made for Visual Studio Code and applies them to the DSH Web UI.
+  zh: 导入为 Visual Studio Code 设计的 .vsix 主题文件并应用到 DSH Web UI。
