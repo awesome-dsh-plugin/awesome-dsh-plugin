@@ -1,0 +1,6 @@
+url: https://github.com/YTxue/dsh-skill-manager-ytxue
+name: YTxue/dsh-skill-manager-ytxue
+category: skill
+description:
+  en: 'Skill pool manager in the Settings sidebar: enable/disable, folder batch import with rename-conflict prompts, state-driven one-click DSH-spec check & auto-fix, system/project scope labels.'
+  zh: 设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。
