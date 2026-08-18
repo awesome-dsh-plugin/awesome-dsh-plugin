@@ -92,6 +92,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [bainianlaoyao/easy-archive](https://github.com/bainianlaoyao/easy-archive) - Two-step inline archive on workspace sidebar rows — one click arms a red confirm, the second click archives; the archive entry is removed from the ⋮ menu.
 - [bill9109/dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) - Cross-platform file drag-and-drop with raw path insertion, no file copying.
 - [boogoo619/dsh-focus-overlay](https://github.com/boogoo619/dsh-focus-overlay) - Focus mode with a full-screen reading overlay that hides the header and composer and folds AI tool calls into summaries.
+- [caisiyang123/dsh-tick-rail](https://github.com/caisiyang123/dsh-tick-rail) - Tick-rail conversation navigator: one tick per message you sent, a lit peak that follows the mouse with an even falloff, hover previews, click or keyboard to jump.
 - [causebefore/dsh-pomodoro](https://github.com/causebefore/dsh-pomodoro) - Pomodoro focus-and-break timer for DSH Web with configurable cycles, a draggable mini panel, and in-app, sound, and browser notifications.
 - [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) - Claude Code-style full-screen terminal UI: pixel-whale header, live status line, and streaming thought expansion.
 - [ccq1/dsh-side-panel](https://github.com/ccq1/dsh-side-panel) - Side panel with file browser, terminal, and Git review for quick file previews.
