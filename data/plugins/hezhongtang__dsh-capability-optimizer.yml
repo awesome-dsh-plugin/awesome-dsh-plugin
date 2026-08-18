@@ -1,0 +1,6 @@
+url: https://github.com/hezhongtang/dsh-capability-optimizer
+name: hezhongtang/dsh-capability-optimizer
+category: tools
+description:
+  en: Headless Claude Code consultations with advisor, reviewer, and designer roles, returned as reference answers.
+  zh: 以 advisor / reviewer / designer 角色无头调用 Claude Code，回复作为参考答案。
