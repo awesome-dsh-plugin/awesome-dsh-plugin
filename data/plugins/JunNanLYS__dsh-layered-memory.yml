@@ -1,0 +1,6 @@
+url: https://github.com/JunNanLYS/dsh-layered-memory
+name: JunNanLYS/dsh-layered-memory
+category: memory
+description:
+  en: 'Layered memory pipeline for DSH: auto-distills conversations into atomic facts, scene summaries and a persona profile (L0–L3), with hybrid BM25 + vector retrieval, chat/work family separation, and context injection before each model step.'
+  zh: 'dsh 分层记忆管线：自动把会话蒸馏为原子事实、场景摘要与用户画像（L0~L3），BM25 + 向量混合检索，chat/work 双族隔离，每步模型调用前注入相关上下文。'
