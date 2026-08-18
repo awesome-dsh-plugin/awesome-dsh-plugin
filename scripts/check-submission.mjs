@@ -5,6 +5,7 @@
 //      whole tree is enumerated rather than a guessed list of directories)
 //   2. the repo is at least MIN_AGE_DAYS old and has >= MIN_COMMITS commits
 //   3. the repo exists and isn't archived
+//   4. the repo is not DSH itself (it declares `dsh.bundle` and would pass 1-3)
 //
 // Needs GITHUB_TOKEN: the git-tree enumeration and the commit count are API
 // calls, and unauthenticated (60/hr per IP) is nowhere near enough. That is
@@ -21,6 +22,28 @@ const MIN_AGE_DAYS = 1
 const MIN_COMMITS = 10
 const CONCURRENCY = 6
 const MAX_TREE_PKGS = 40
+
+// DSH itself declares `dsh.bundle`: packages/bundle/base/package.json is
+// @deepseek-ai/dsh-base, and it is the 19th of 248 manifests in that tree, so
+// the enumeration reaches it well inside MAX_TREE_PKGS and the age and commit
+// thresholds are met by years. The harness would therefore pass the gate as a
+// plugin for itself. Listing the product in a list of plugins for the product
+// is the one wrong entry every visitor would recognise, so it is refused by
+// identity rather than by contract.
+const FIRST_PARTY_REPOS = new Set(['deepseek-ai/deepseek-harness'])
+
+// Packages published only by the DSH project. A repository containing one of
+// these under `dsh.bundle` is shipping a copy of the harness: measured on the
+// live topic, five repositories carry `packages/bundle/base/package.json` naming
+// `@deepseek-ai/dsh-base` verbatim, reached about 21 manifests into a ~250
+// manifest tree, so this check finds it inside MAX_TREE_PKGS and accepts them.
+// `fork` is false for all five, so they are source copies that neither an owner
+// check nor a fork check detects.
+const FIRST_PARTY_PACKAGES = new Set([
+  '@deepseek-ai/dsh-base',
+  '@deepseek-ai/dsh-web-app',
+  '@deepseek-ai/dsh-headless',
+])
 
 // Entries submitted before the gate existed are judged by the old rules; only
 // the manifest check applies to them. Set to when the rule change landed.
@@ -101,14 +124,32 @@ async function hasBundle(repo, sub) {
   const pkgs = found.slice(0, MAX_TREE_PKGS)
 
   let sawClient = false
+  let vendored = null
   for (const p of pkgs) {
     const f = await api(`repos/${repo}/contents/${p}`)
     if (f.status !== 200 || !f.body?.content) continue
     const pkg = parsePkg(f.body.content)
     if (!pkg) continue
     const dsh = pkg.dsh ?? {}
-    if (dsh.bundle) return { ok: true, at: p }
+    if (dsh.bundle) {
+      // A repository that vendors DSH's own bundle packages satisfies this
+      // check by containing the harness, not by offering a plugin. Recorded
+      // rather than accepted, and only reported if no genuine bundle turns up
+      // later in the tree — a plugin repository may legitimately keep a copy
+      // of the harness for testing.
+      if (FIRST_PARTY_PACKAGES.has(pkg.name)) {
+        vendored ??= { at: p, name: pkg.name }
+        continue
+      }
+      return { ok: true, at: p }
+    }
     if (dsh.client) sawClient = true
+  }
+  if (vendored) {
+    return {
+      ok: false,
+      why: `\`${vendored.at}\` is DSH's own \`${vendored.name}\`, so this repository contains the harness rather than a plugin for it`,
+    }
   }
   if (sawClient) return { ok: false, why: 'declares only `dsh.client` — that alone is not installable' }
   // Same reasoning as a truncated tree: with more manifests than the cap, the
@@ -131,18 +172,25 @@ async function commitCount(repo) {
 
 async function check(entry) {
   const { repo, sub } = decompose(entry.url)
+  if (FIRST_PARTY_REPOS.has(repo.toLowerCase())) {
+    return { problems: ['this is DeepSeek Harness itself, not a plugin for it'], unverified: [] }
+  }
   const meta = await api(`repos/${repo}`)
-  if (meta.status === 404) return [`repository not found: https://github.com/${repo}`]
+  if (meta.status === 404) return { problems: [`repository not found: https://github.com/${repo}`], unverified: [] }
   if (meta.status !== 200) {
-    console.error(`  ${entry.url}: repo lookup failed (HTTP ${meta.status}) — skipping`)
-    return []
+    // Nothing about this entry was established. Returning no problems read as
+    // "passed" all the way out to the check-run summary, which is how
+    // repositories under both bars came to sit green: a 403 during a quota
+    // squeeze looked identical to a clean bill of health.
+    return { problems: [], unverified: [`nothing checked — repo lookup failed (HTTP ${meta.status})`] }
   }
   const problems = []
+  const unverified = []
   if (meta.body.archived) problems.push('repository is archived')
 
   const bundle = await hasBundle(repo, sub)
   if (bundle.ok === false) problems.push(bundle.why)
-  else if (bundle.ok === null) console.error(`  ${entry.url}: ${bundle.why} — manifest check skipped`)
+  else if (bundle.ok === null) unverified.push(`manifest not checked — ${bundle.why}`)
 
   if (gateApplies) {
     const ageDays = (Date.now() - new Date(meta.body.created_at).getTime()) / 86400000
@@ -151,11 +199,14 @@ async function check(entry) {
       const hours = Math.ceil((MIN_AGE_DAYS - ageDays) * 24)
       problems.push(`repository is ${ageDays.toFixed(1)} days old (needs ${MIN_AGE_DAYS}) — resubmit in about ${hours}h, nothing is held against a resubmission`)
     }
-    if (commits !== null && commits < MIN_COMMITS) {
-      problems.push(`repository has ${commits} commit(s) (needs ${MIN_COMMITS})`)
-    }
+    // A count we could not read is not a count that met the bar. Letting it
+    // through is right — a busy API quota must not reject a good submission —
+    // but the verdict has to say so, or "enough commits" is printed about a
+    // repository nobody counted.
+    if (commits === null) unverified.push('commit count could not be read')
+    else if (commits < MIN_COMMITS) problems.push(`repository has ${commits} commit(s) (needs ${MIN_COMMITS})`)
   }
-  return problems
+  return { problems, unverified }
 }
 
 function changedEntryFiles(base) {
@@ -192,19 +243,32 @@ if (!targets.length) {
 console.log(`checking ${targets.length} entr${targets.length === 1 ? 'y' : 'ies'}` + (gateApplies ? '' : ' (age/commit gate not applied — PR predates the rule)'))
 
 const failures = []
+const incomplete = []
 for (let i = 0; i < targets.length; i += CONCURRENCY) {
   const batch = targets.slice(i, i + CONCURRENCY)
-  const results = await Promise.all(batch.map(async (e) => [e, await check(e).catch((err) => { console.error(`  ${e.url}: ${err.message} — skipping`); return [] })]))
-  for (const [e, problems] of results) {
+  const results = await Promise.all(batch.map(async (e) => [e, await check(e).catch((err) => ({ problems: [], unverified: [`the check itself failed: ${err.message}`] }))]))
+  for (const [e, { problems, unverified }] of results) {
     if (problems.length) failures.push({ url: e.url, file: e.file, problems })
-    else console.log(`  ok  ${e.url}`)
+    else if (unverified.length) {
+      incomplete.push({ url: e.url, file: e.file, unverified })
+      console.log(`  ??  ${e.url} — ${unverified.join('; ')}`)
+    } else console.log(`  ok  ${e.url}`)
   }
 }
 
-if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures }, null, 1))
+// `incomplete` never blocks: a busy API quota must not reject a good
+// submission. It is reported separately so the verdict can say which entries
+// were let through unchecked rather than vouching for them.
+if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures, incomplete }, null, 1))
 
 if (!failures.length) {
-  console.log('all checked entries pass')
+  if (incomplete.length) {
+    const passed = targets.length - incomplete.length
+    console.log(`${passed} entr${passed === 1 ? 'y' : 'ies'} pass; ${incomplete.length} could not be fully checked:`)
+    for (const c of incomplete) console.log(`  ${c.url} — ${c.unverified.join('; ')}`)
+  } else {
+    console.log('all checked entries pass')
+  }
   process.exit(0)
 }
 for (const f of failures) {

@@ -1,0 +1,6 @@
+url: https://github.com/white-sand-grand/dsh-plugin-doctor
+name: white-sand-grand/dsh-plugin-doctor
+category: usage
+description:
+  en: Community search, similarity analysis, and install/dedupe/build-it-yourself decisions for the dsh-plugin ecosystem.
+  zh: DSH 插件生态的社区搜索、相似度分析与安装/去重/自建决策工具。

@@ -1,0 +1,6 @@
+url: https://github.com/Phant0Meow/dsh-meow-memory
+name: Phant0Meow/dsh-meow-memory
+category: memory
+description:
+  en: 'Project-scoped cross-session memory: six-layer SQLite store (soul/user/project/fact/lesson/topic) on node:sqlite, cache-friendly first-message injection, memory_remember/search/find_similar/read/update tools, and per-window nightly consolidation ("dream").'
+  zh: 项目级跨会话记忆：node:sqlite 六层存储（soul/user/project/fact/lesson/topic），首条用户消息缓存友好注入，memory_remember/search/find_similar/read/update 工具，按窗口夜间整理（dream）。

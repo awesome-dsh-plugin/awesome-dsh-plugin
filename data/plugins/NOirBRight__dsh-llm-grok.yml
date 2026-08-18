@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-llm-grok
+name: NOirBRight/dsh-llm-grok
+category: model
+description:
+  en: 'xAI Grok subscription chat: SuperGrok or X Premium+ OAuth, a displayed model subset, Responses through the Grok CLI proxy, and always-on server-side web_search and x_search.'
+  zh: xAI Grok 订阅聊天：用 SuperGrok 或 X Premium+ 的 OAuth 登录，选择要显示的模型子集，经 Grok CLI 代理走 Responses，并始终开启服务端 web_search 与 x_search。

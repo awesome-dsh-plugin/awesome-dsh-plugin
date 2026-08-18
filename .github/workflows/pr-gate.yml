@@ -38,17 +38,51 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo
-            const sha = context.payload.workflow_run.head_sha
-            const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
-            const pr = prs.find((p) => p.head.sha === sha)
-            if (!pr) {
-              core.info(`no open PR matches ${sha} — nothing to gate`)
-              core.setOutput('found', 'false')
-              return
+            const run = context.payload.workflow_run
+            const sha = run.head_sha
+            try {
+              // One request, not a walk of every open pull request. This gate
+              // fires on every PR-check completion, and paginating ~150 open
+              // PRs per fire is what exhausted the installation rate limit on
+              // 2026-08-18. `workflow_run.pull_requests` is empty for forks —
+              // presumably why this listed everything — but the head
+              // repository and branch are always present and identify the PR
+              // exactly, since a branch has at most one open PR.
+              const head = `${run.head_repository.owner.login}:${run.head_branch}`
+              const { data } = await github.rest.pulls.list({ owner, repo, state: 'open', head, per_page: 10 })
+              const pr = data.find((p) => p.head.sha === sha)
+              if (!pr) {
+                // Either the PR closed, or a newer push superseded this run —
+                // in which case that push has its own gate run and this one
+                // would be judging a commit nobody is proposing any more.
+                core.info(`no open PR at ${head} with head ${sha} — nothing to gate`)
+                core.setOutput('found', 'false')
+                return
+              }
+              core.setOutput('found', 'true')
+              core.setOutput('number', String(pr.number))
+              core.setOutput('created_at', pr.created_at)
+            } catch (e) {
+              // A gate that dies before posting is indistinguishable from one
+              // that never needed to run: the PR simply carries no verdict,
+              // and a green `check` beside it reads as ready to merge. That is
+              // how two submissions under the commit-count bar came to look
+              // mergeable on 2026-08-18. Say it on the commit instead.
+              await github.rest.checks.create({
+                owner, repo, name: 'Submission gate', head_sha: sha,
+                status: 'completed', conclusion: 'failure',
+                output: {
+                  title: 'The gate could not run',
+                  summary: [
+                    `Resolving the pull request for this run failed: ${e.message}`,
+                    '',
+                    'This is a fault in the gate, not in the submission. Re-run the',
+                    'workflow; if it keeps failing a maintainer needs to look at it.',
+                  ].join('\n'),
+                },
+              }).catch(() => {})
+              throw e
             }
-            core.setOutput('found', 'true')
-            core.setOutput('number', String(pr.number))
-            core.setOutput('created_at', pr.created_at)
 
       # Trusted code only: the base repo's default branch, never the PR's.
       - uses: actions/checkout@v4
@@ -85,7 +119,22 @@ jobs:
           # reading as "no changes" and reporting success on an unchecked PR.
           # -z handles paths with spaces.
           mkdir -p /tmp/prdata
-          git diff -z --name-only --diff-filter=A "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
+          # AR, not A: git reports a renamed entry file as R, and a rename is
+          # how an entry's `url` changes without ever looking added. #1554
+          # renamed one entry file and re-pointed it at a different repository;
+          # the gate read "no entries changed" and passed. For a rename
+          # --name-only prints the new path, which is the one to check —
+          # the target may be a repository nothing has ever verified.
+          git diff -z --name-only --diff-filter=AR "$BASE...pr-head" -- data/plugins > /tmp/prdata/diff.z
+
+          # Entries this PR MODIFIES rather than adds. These face no gate (see
+          # above) but they are where cross-entry damage hides: #1348 was a PR
+          # to refresh one plugin's entry that also rewrote an unrelated
+          # plugin's description, twice, past every check we had. Surfacing the
+          # list is what lets a reviewer ask why it is there.
+          git diff --name-only --diff-filter=M "$BASE...pr-head" -- data/plugins \
+            | sed 's|^data/plugins/||;s|\.yml$||' > /tmp/prdata/modified.txt || true
+          echo "modified entries: $(wc -l < /tmp/prdata/modified.txt | tr -d ' ')"
           FILES=()
           while IFS= read -r -d '' f; do FILES+=("$f"); done < /tmp/prdata/diff.z
           printf 'changed entry files: %s\n' "${#FILES[@]}"
@@ -160,9 +209,30 @@ jobs:
               return
             }
 
+            const modified = (() => {
+              try { return fs.readFileSync('/tmp/prdata/modified.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
+            })()
+            const modifiedNote = modified.length
+              ? `\n\n**This PR also rewrites ${modified.length} existing entr${modified.length === 1 ? 'y' : 'ies'}:** ${modified.map((m) => `\`${m}\``).join(', ')}. If any of those aren't the subject of this PR, that's an accidental edit — check before merging.`
+              : ''
+
             if (result.ok) {
+              // An entry the checker could not reach is let through — a busy
+              // API quota must not reject a good submission — but it must not
+              // be described as having met the bar either. On 2026-08-18 six
+              // entries under the age or commit bar sat green because a 403
+              // during a quota squeeze produced the same verdict as a clean
+              // pass, and the summary said "repo old enough, enough commits"
+              // about repositories nobody had looked at.
+              const partial = result.incomplete ?? []
+              if (partial.length) {
+                const detail = partial.map((c) => `- **${c.url}** — ${c.unverified.join('; ')}`).join('\n')
+                await post('neutral', `${partial.length} entry/entries could not be fully checked`,
+                  `${result.checked - partial.length} of ${result.checked} submitted entr${result.checked === 1 ? 'y' : 'ies'} pass. The rest were let through unchecked rather than rejected, but nothing here vouches for them:\n\n${detail}\n\nRe-run the workflow to check them properly.${modifiedNote}`)
+                return
+              }
               await post('success', 'Entries look good',
-                `All ${result.checked} submitted entr${result.checked === 1 ? 'y passes' : 'ies pass'}: \`dsh.bundle\` declared, repo old enough, enough commits.`)
+                `All ${result.checked} submitted entr${result.checked === 1 ? 'y passes' : 'ies pass'}: \`dsh.bundle\` declared, repo old enough, enough commits.${modifiedNote}`)
               return
             }
             const body = result.failures.flatMap((f) => [`**${f.url}**`, ...f.problems.map((p) => `- ${p}`), '']).join('\n')

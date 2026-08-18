@@ -1,0 +1,6 @@
+url: https://github.com/chouyong/dsh-branch-review
+name: chouyong/dsh-branch-review
+category: session
+description:
+  en: 'Track human decisions for related DSH session branches: keep, discard, or follow up with reasons, labels, and external links.'
+  zh: 为相关 DSH 会话分支记录人工决策：保留、淘汰或待跟进，并保存理由、标签与外部链接。

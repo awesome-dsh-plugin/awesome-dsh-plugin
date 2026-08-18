@@ -28,6 +28,56 @@ for n in "$@"; do
   if ! git rebase origin/main >/dev/null 2>&1; then
     # Generated files are regenerated below, so main's copy always wins.
     git checkout origin/main -- README.md README.zh.md 2>/dev/null
+
+    # data/screenshots.json is a single JSON object that every screenshot PR
+    # appends to, so it collides constantly. Taking main's copy would silently
+    # drop the contributor's screenshots — the entire point of their PR — so
+    # merge it instead.
+    #
+    # This has to be a real three-way merge against the merge-base, not main's
+    # copy with the branch's keys laid over the top. Overlaying resurrects any
+    # key main has since DELETED but the branch still carries: a stale entry URL
+    # from before a repo rename comes back, and build-site rejects it because it
+    # no longer matches a listed entry. Only keys the branch changed relative to
+    # where it forked are the branch's contribution.
+    if git diff --name-only --diff-filter=U | grep -qx 'data/screenshots.json'; then
+      MB=$(git merge-base origin/main FETCH_HEAD 2>/dev/null)
+      git show "$MB:data/screenshots.json" > /tmp/shots-base.json 2>/dev/null || echo '{}' > /tmp/shots-base.json
+      git show origin/main:data/screenshots.json > /tmp/shots-ours.json 2>/dev/null
+      git show FETCH_HEAD:data/screenshots.json > /tmp/shots-theirs.json 2>/dev/null
+      if node -e '
+        const fs = require("fs")
+        const read = (f) => { try { return JSON.parse(fs.readFileSync(f, "utf8")) } catch { return {} } }
+        const base = read("/tmp/shots-base.json")
+        const ours = read("/tmp/shots-ours.json")
+        const theirs = read("/tmp/shots-theirs.json")
+        const same = (a, b) => JSON.stringify(a) === JSON.stringify(b)
+        const out = { ...ours }
+        for (const [k, v] of Object.entries(theirs)) if (!same(base[k], v)) out[k] = v
+        for (const k of Object.keys(base)) if (!(k in theirs) && k in out) delete out[k]
+        // Keep main'"'"'s existing key order and append whatever is new. The file
+        // matches no sort — it grew by appending — so re-sorting it rewrites a
+        // couple of hundred lines that nobody changed. That noise landed in
+        // contributors'"'"' diffs and read as "this PR also touched unrelated
+        // entries", which is the exact signal used to catch cross-entry damage.
+        // Poisoning it is worse than an untidy file.
+        const order = [...Object.keys(ours).filter((k) => k in out), ...Object.keys(out).filter((k) => !(k in ours))]
+        fs.writeFileSync("data/screenshots.json", JSON.stringify(Object.fromEntries(order.map((k) => [k, out[k]])), null, 1) + "\n")
+      ' 2>/dev/null; then
+        git add data/screenshots.json
+      fi
+    fi
+
+    # Anything still unmerged is a conflict nobody has decided. Staging it with
+    # `git add -A` commits the <<<<<<< markers verbatim and pushes them to the
+    # contributor's branch — which is exactly what happened before this check
+    # existed, to ten branches at once. Hand it back instead.
+    if [ -n "$(git diff --name-only --diff-filter=U)" ]; then
+      echo "$n :: unresolved: $(git diff --name-only --diff-filter=U | tr '\n' ' ')"
+      git rebase --abort >/dev/null 2>&1; git checkout -f -q main
+      echo "$n :: CONFLICT (needs a human)"; continue
+    fi
+
     git add -A 2>/dev/null
     git -c core.editor=true rebase --continue >/dev/null 2>&1 || {
       git rebase --abort >/dev/null 2>&1; git checkout -f -q main
@@ -45,6 +95,18 @@ for n in "$@"; do
   # their fork. Never push an empty result.
   if [ -z "$(git diff origin/main --name-only)" ]; then
     git checkout -f -q main; echo "$n :: EMPTY (already on main? left untouched)"; continue
+  fi
+
+  # Last line of defence, deliberately independent of the resolution logic
+  # above: never push conflict markers to someone else's branch. This has gone
+  # wrong twice, both times because a resolution step looked like it worked. A
+  # grep costs nothing and does not care why the markers are there. Only the
+  # <<<<<<< and >>>>>>> forms are checked — a bare ======= line is a legitimate
+  # setext heading underline in Markdown.
+  if git grep -qE '^(<{7}|>{7}) ' -- 2>/dev/null; then
+    echo "$n :: MARKERS (conflict markers in the result — refusing to push)"
+    git grep -lE '^(<{7}|>{7}) ' -- 2>/dev/null | sed 's/^/      /'
+    git checkout -f -q main; continue
   fi
 
   if git push -q --force-with-lease="$ref:$old" "git@github.com:$owner/$repo.git" "maint$n:$ref" 2>/dev/null; then

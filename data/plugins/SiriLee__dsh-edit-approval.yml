@@ -1,0 +1,6 @@
+url: https://github.com/SiriLee/dsh-edit-approval
+name: SiriLee/dsh-edit-approval
+category: tools
+description:
+  en: 'Per-edit approval for write/edit/str_replace_editor: shows a red/green line diff before the file is touched and asks approve once or reject, with a master switch in Settings.'
+  zh: 'write/edit/str_replace_editor 编辑前审批：改动落盘前展示红绿行级 diff，选择同意一次或拒绝，带设置页总开关。'
