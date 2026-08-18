@@ -1,0 +1,5 @@
+url: https://github.com/bpc-oss/litkit-search/tree/main/adapters/dsh
+name: bpc-oss/litkit-search#adapters/dsh
+category: tools
+description:
+  en: Adds litkit academic literature search, citation audit, and download tools to DeepSeek Harness.

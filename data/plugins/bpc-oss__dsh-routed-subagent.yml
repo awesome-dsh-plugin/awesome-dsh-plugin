@@ -1,0 +1,6 @@
+url: https://github.com/bpc-oss/dsh-routed-subagent
+name: bpc-oss/dsh-routed-subagent
+category: tools
+description:
+  en: 'Dispatch a one-shot subagent fully mounted on ANY agent preset from ANY session, with per-call model/provider override and a model-availability pre-check.'
+  zh: '任意会话按指定 agent preset 与模型派一次性子代理（完整挂载 persona/技能/工具），带模型可用性预检。'
