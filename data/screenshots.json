@@ -259,6 +259,10 @@
   "https://raw.githubusercontent.com/PicGo/dsh-plugin/main/assets/DeepSeek-PicGo.png",
   "https://raw.githubusercontent.com/PicGo/dsh-plugin/main/assets/dsh-plugin-picgo.png"
  ],
+ "https://github.com/PwnKY/dsh-session-link": [
+  "https://raw.githubusercontent.com/PwnKY/dsh-session-link/master/assets/screenshots/01-cross-session-context.png",
+  "https://raw.githubusercontent.com/PwnKY/dsh-session-link/master/assets/screenshots/02-source-session.png"
+ ],
  "https://github.com/QT-Chen/dsh-mic-input": [
   "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-1-composer.png",
   "https://raw.githubusercontent.com/QT-Chen/dsh-mic-input/main/assets/shot-2-listening.png",
