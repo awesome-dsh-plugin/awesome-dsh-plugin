@@ -703,7 +703,7 @@ dsh plugin --profile web add dshmarket
 - [uckkk/dsh-json-flatten](https://github.com/uckkk/dsh-json-flatten) - Flattens nested JSON to dot keys and back.
 - [uckkk/dsh-json-merge](https://github.com/uckkk/dsh-json-merge) - Deep-merges multiple JSON objects.
 - [uckkk/dsh-json-patch](https://github.com/uckkk/dsh-json-patch) - Applies JSON Patch (RFC 6902) operations.
-- [uckkk/dsh-json-query](https://github.com/uckkk/dsh-json-query) - Gets/sets values in JSON by path (a.b[0], wildcards).
+- [uckkk/dsh-json-query](https://github.com/uckkk/dsh-json-query) - Gets/sets values in JSON by path (dot/bracket access, wildcards).
 - [uckkk/dsh-json-schema](https://github.com/uckkk/dsh-json-schema) - Validates JSON against a JSON Schema (draft-07 subset).
 - [uckkk/dsh-json-size](https://github.com/uckkk/dsh-json-size) - JSON statistics (keys, depth, size).
 - [uckkk/dsh-json-to-go](https://github.com/uckkk/dsh-json-to-go) - Converts JSON to Go structs with json tags.
