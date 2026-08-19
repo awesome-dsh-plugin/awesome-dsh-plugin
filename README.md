@@ -56,6 +56,9 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
   - [Git & Code Review](#git--code-review)
   - [Notifications & Integrations](#notifications--integrations)
   - [Development & Runtime](#development--runtime)
+  -  - [777-Zen/dsh-capability-index](https://github.com/777-Zen/dsh-capability-index) - Pre-flight plugin-library index
+  for DSH agents: injects per-step trigger-table hints into the runtime context so suitable installed plugins get used
+  predictably instead of opportunistically.
   - [Security & Permissions](#security--permissions)
   - [Remote & Mobile](#remote--mobile)
   - [Plugin Markets & Managers](#plugin-markets--managers)
