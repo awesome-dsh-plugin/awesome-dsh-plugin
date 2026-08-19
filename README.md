@@ -1052,6 +1052,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [AKS1st/dsh-mermaid](https://github.com/AKS1st/dsh-mermaid) - Render Mermaid code fences in DSH Web chat messages as lazy-loaded SVG diagrams with strict sanitization and light/dark theme follow.
 - [baconbao/dsh-mermaid-image-preview](https://github.com/baconbao/dsh-mermaid-image-preview) - Preview Mermaid diagrams as images via local rendering in DSH Web when the chat message contains a Mermaid fenced code block, and also allow integration with external rendering servers.
 - [bill9109/dsh-101](https://github.com/bill9109/dsh-101) - Document reading mode for DSH.
+- [Bob-Bo1/obsidian-workbench](https://github.com/Bob-Bo1/obsidian-workbench) - Obsidian-style Markdown workbench for DSH: browse, edit, preview, create, move, and delete notes inside the selected local vault.
 - [didclawapp-ai/DSH-Office](https://github.com/didclawapp-ai/DSH-Office) - Create, read, and edit PPTX, DOCX, XLSX, and PDF via the local zagens-office CLI as office_schema / office_write / office_edit / office_read tools.
 - [dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) - Create, edit, inspect, and deliver spreadsheets, documents, presentations, databases, and canvases in DeepSeek Harness, with live preview and worktree review.
 - [duyanta123/arch-doc](https://github.com/duyanta123/arch-doc) - Analyze a codebase and generate architecture documentation: module responsibilities, dependencies, entry points and run methods.
