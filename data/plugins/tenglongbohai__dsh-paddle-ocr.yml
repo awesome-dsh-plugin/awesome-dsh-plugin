@@ -3,3 +3,4 @@ name: tenglongbohai/dsh-paddle-ocr
 category: vision
 description:
   en: Add PaddleOCR vision to text-only LLMs like Agnes, DeepSeek, MiniMax, GLM, and Mimo. Supports local files and URLs. Free.
+  zh: 为纯文本模型添加PaddleOCR视觉能力，支持Agnes、DeepSeek、MiniMax、GLM、Mimo等。支持本地文件和URL。免费。
