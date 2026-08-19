@@ -1,0 +1,6 @@
+url: https://github.com/777-Zen/dsh-capability-index
+name: 777-Zen/dsh-capability-index
+category: dev
+description:
+  en: 'Pre-flight plugin-library index for DSH agents: injects per-step trigger-table hints into the runtime context so suitable installed plugins get used predictably instead of opportunistically.'
+  zh: 'DSH agent 的插件库起飞检查：向运行时上下文注入按步骤触发的提示，让合适的已装插件从「碰巧想起」变成「可预期使用」。'
