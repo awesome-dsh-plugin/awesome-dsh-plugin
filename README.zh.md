@@ -68,6 +68,8 @@ dsh plugin --profile web add dshmarket
   - [🎮 娱乐](#-娱乐)
 - [徽章](#徽章)
 - [免责声明](#免责声明)
+
+- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..
 <!-- END TOC -->
 
 ## 插件
