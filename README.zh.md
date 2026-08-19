@@ -1546,6 +1546,7 @@ dsh plugin --profile web add dshmarket
 - [chen731215-dev/-](https://github.com/chen731215-dev/-) — 酒馆管理原生面板：多角色卡、多世界书、可切换预设，深浅色跟随，点侧边栏自动关闭。
 - [chinosk6/dsh-roleplay](https://github.com/chinosk6/dsh-roleplay) — 角色扮演插件：支持角色卡对话、在对话中创作与编辑角色卡，可接入生图后端生成插图。
 - [cipher2026/dsh-idle-deepcompute](https://github.com/cipher2026/dsh-idle-deepcompute) — 终端风 AI 实验室挂机游戏：攒算力、训练升级模型、发论文，一路转生到 AGI/ASI。
+- [cyanfish-x/dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) — DSH Web GUI 的 Live2D 桌宠悬浮层：镜像 agent 思考/空闲/出错/完成/待审批状态，配动画与气泡，支持分部位触摸反应、拖动停靠、切换人设，以及通过 URL 或本地路径加载自定义模型。
 - [DamonKoy/dsh-web-ui#dsh-pet](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-pet) — dsh web GUI 多桌宠伴侣：注册表驱动的悬浮宠物，随模型活动实时反应。
 - [eric-song-dev/dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet) — ikun 桌宠填满「Deep diving...」状态行下方整行区块：坤宠动图沿 0%→100% 进度条行走，每 20% 切换动作与文案，完成时系统级播放「你干嘛~哎哟」提示音。
 - [falser101/dsh-mascot](https://github.com/falser101/dsh-mascot) — 可拖拽的猫狗悬浮伴侣，表情随当前会话变化，在 Companion 设置页里换皮肤。
