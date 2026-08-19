@@ -451,6 +451,11 @@
   "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/02-ipad-dual-chat.png",
   "https://raw.githubusercontent.com/daetz-coder/dsh-multi-chat/main/assets/03-windows-triple-chat.png"
  ],
+ "https://github.com/demacia1314/dsh-airdrop": [
+  "https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/drop-in.png",
+  "https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/in-chat.png",
+  "https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/preview-modal.png"
+ ],
  "https://github.com/detongz/dsh-client-ui-obsidian-memory": [
   "https://raw.githubusercontent.com/detongz/dsh-client-ui-obsidian-memory/main/assets/screenshot-panel.png"
  ],
