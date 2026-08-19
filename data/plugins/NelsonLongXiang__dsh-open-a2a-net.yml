@@ -1,0 +1,6 @@
+url: https://github.com/NelsonLongXiang/dsh-open-a2a-net
+name: NelsonLongXiang/dsh-open-a2a-net
+category: remote
+description:
+  en: Turns a DSH deployment into one node of a decentralized agent network — signed agent cards, peer and zone discovery, direct message-routing model tools, and joinable session nodes in the web sidebar.
+  zh: 把 DSH 部署变成去中心化 agent 网络中的一个节点——签名 agent 卡片、peer 与 zone 发现、直连消息路由模型工具，以及 Web 侧栏可加入的会话节点。
