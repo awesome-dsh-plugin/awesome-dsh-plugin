@@ -2,5 +2,5 @@ url: https://github.com/leaforbook/dsh-mcp-lazy
 name: leaforbook/dsh-mcp-lazy
 category: tools
 description:
-  en: Loads MCP tools on demand and unloads idle tool schemas at turn end, reducing the tool catalog and context tokens sent to the model while keeping connections warm for fast reuse.
-  zh: 按需加载 MCP 工具，并在轮次结束时卸载闲置工具 Schema，减少发送给模型的工具目录及上下文 Token；同时保温连接以便快速复用。
+  en: An MCP lazy-loading, dynamic tool-loading, and Tool Router plugin for DSH. It addresses context bloat, wasted tokens, oversized tool catalogs, and persistent tool schemas when many MCP servers are configured. The plugin searches, routes, and loads MCP tools on demand only when the current task needs them, then unloads idle tool schemas at turn end to reduce context usage and save tokens while keeping connections warm for fast reuse. Supports explicit activation, automatic routing, paginated tool-catalog refresh, bounded reconnection, and both stdio and Streamable HTTP MCP transports.
+  zh: DSH 的 MCP懒加载、动态加载工具与 Tool Router 插件：解决同时配置多个 MCP 服务器时 MCP工具过多、工具Schema常驻、工具目录过长造成的上下文膨胀和Token浪费。插件只在当前任务需要时搜索、路由并按需加载MCP工具，轮次结束后卸载闲置工具Schema，以减少Token占用、节省Token；连接继续保温，短时间内再次使用可快速复用。支持显式激活、自动路由、工具目录分页刷新、有限自动重连，以及 stdio 和 Streamable HTTP MCP 传输。
