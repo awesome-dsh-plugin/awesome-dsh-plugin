@@ -1,0 +1,6 @@
+url: https://github.com/Zenjibad/dsh-drop-any-file
+name: Zenjibad/dsh-drop-any-file
+category: ui
+description:
+  en: 'Extends the DSH web chat drag-and-drop to accept every file type: non-image files are saved into the active session workspace so the agent can read and use them.'
+  zh: 让 DSH 网页聊天支持拖拽任意类型文件：非图片文件保存到当前会话工作区，供 Agent 读取使用。
