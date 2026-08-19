@@ -1,0 +1,6 @@
+url: https://github.com/NelsonLongXiang/dsh-prompt-templates
+name: NelsonLongXiang/dsh-prompt-templates
+category: usage
+description:
+  en: Global and per-session prompt templates in a right-side panel — insert into the draft or send now, edit, promote session templates to global, SQLite persistence through a bundled Python backend.
+  zh: 右侧面板中的全局与会话级提示词模板——插入草稿或立即发送、编辑、会话模板提升为全局，经内置 Python 后端做 SQLite 持久化。

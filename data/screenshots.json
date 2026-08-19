@@ -977,5 +977,20 @@
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-upload-reference.png"
+ ],
+ "https://github.com/NelsonLongXiang/dsh-open-a2a-net": [
+  "https://raw.githubusercontent.com/NelsonLongXiang/dsh-open-a2a-net/master/images/image-01.png",
+  "https://raw.githubusercontent.com/NelsonLongXiang/dsh-open-a2a-net/master/images/image-02.png"
+ ],
+ "https://github.com/NelsonLongXiang/dsh-prompt-templates": [
+  "https://raw.githubusercontent.com/NelsonLongXiang/dsh-prompt-templates/master/images/image-01.png"
+ ],
+ "https://github.com/lire1131/dsh-undo-plugin": [
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-panel.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-settings-section.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-main.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-settings.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-confirm.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-done.png"
  ]
 }
