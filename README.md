@@ -858,6 +858,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zoahdev/dsh-artifacts](https://github.com/zoahdev/dsh-artifacts) - Render Markdown + JSON into self-contained HTML documents, cards, dashboards, and galleries (CLI + artifact_render tool).
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) - Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) - Text-first computer use for DSH: background Chromium control via Playwright/CDP plus accessibility-first macOS control; actions stay pinned to the right process and window without taking the user's pointer, ships a Developer ID signed, notarized Universal 2 DMG.
+- [CHplus0/dsh-shell-command](https://github.com/CHplus0/dsh-shell-command) - Claude Code-style shell integration: /! for single-command analysis and /terminal for interactive PTY sessions with on-demand history reference.
 
 ### Browser & Web
 
