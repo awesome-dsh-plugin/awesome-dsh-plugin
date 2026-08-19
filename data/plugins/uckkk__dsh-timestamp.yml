@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-timestamp
+name: uckkk/dsh-timestamp
+category: tools
+description:
+  en: "Converts Unix timestamps, ISO 8601 and relative times."
+  zh: "时间戳转换"

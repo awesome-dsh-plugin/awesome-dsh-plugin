@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-test-coverage
+name: uckkk/dsh-test-coverage
+category: tools
+description:
+  en: "Parses coverage reports (LCOV/Cobertura/Istanbul/Go) into structured data."
+  zh: "测试覆盖率分析"

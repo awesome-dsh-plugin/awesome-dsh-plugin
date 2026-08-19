@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-string-pad
+name: uckkk/dsh-string-pad
+category: tools
+description:
+  en: "Pads strings to a fixed width (left/right/center)."
+  zh: "字符串填充"

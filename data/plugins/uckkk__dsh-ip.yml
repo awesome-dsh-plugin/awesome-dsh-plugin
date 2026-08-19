@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-ip
+name: uckkk/dsh-ip
+category: tools
+description:
+  en: "IP address validation/classification and CIDR range calculation."
+  zh: "IP 工具"

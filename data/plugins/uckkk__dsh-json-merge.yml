@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-merge
+name: uckkk/dsh-json-merge
+category: tools
+description:
+  en: "Deep-merges multiple JSON objects."
+  zh: "JSON 深合并"

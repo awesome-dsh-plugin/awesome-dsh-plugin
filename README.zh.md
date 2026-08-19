@@ -643,6 +643,133 @@ dsh plugin --profile web add dshmarket
 - [truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) — 一等公民的 Git 工具：status / diff / log / commit / branch，参数与路径校验、零 shell 调用，杜绝注入。
 - [TZHR-invest/dsh-plugins#dsh-vision-tool](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-vision) — Agent 可调用的视觉工具：通过你配置的任意 OpenAI 兼容视觉端点描述本地图片，支持多模型交叉核对，不内置任何密钥。
 - [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) — 秘塔AI搜索 providers for ctx.web：web_search 返回网页摘要，web_fetch 读取网页全文 markdown，多范围搜索（网页/文库/论文/图片/视频/播客）。
+- [uckkk/dsh-animation-principles](https://github.com/uckkk/dsh-animation-principles) — 迪士尼动画12法则知识库
+- [uckkk/dsh-api-contract](https://github.com/uckkk/dsh-api-contract) — 接口契约助手
+- [uckkk/dsh-api-mock](https://github.com/uckkk/dsh-api-mock) — 接口模拟服务器
+- [uckkk/dsh-api-testgen](https://github.com/uckkk/dsh-api-testgen) — 接口测试生成
+- [uckkk/dsh-aspect-ratio](https://github.com/uckkk/dsh-aspect-ratio) — 画幅宽高比计算器
+- [uckkk/dsh-base-convert](https://github.com/uckkk/dsh-base-convert) — 进制转换
+- [uckkk/dsh-base64](https://github.com/uckkk/dsh-base64) — Base64 编解码
+- [uckkk/dsh-base64-file](https://github.com/uckkk/dsh-base64-file) — Base64 文件转换
+- [uckkk/dsh-base64url](https://github.com/uckkk/dsh-base64url) — Base64URL 编解码
+- [uckkk/dsh-brand-identity](https://github.com/uckkk/dsh-brand-identity) — 品牌设计体系参考
+- [uckkk/dsh-byte-size](https://github.com/uckkk/dsh-byte-size) — 字节大小格式化
+- [uckkk/dsh-cinematography](https://github.com/uckkk/dsh-cinematography) — 电影运镜与镜头语言参考
+- [uckkk/dsh-code-stats](https://github.com/uckkk/dsh-code-stats) — 代码统计
+- [uckkk/dsh-color](https://github.com/uckkk/dsh-color) — 颜色工具
+- [uckkk/dsh-color-blindness](https://github.com/uckkk/dsh-color-blindness) — 色盲模拟与色盲安全配色
+- [uckkk/dsh-color-contrast](https://github.com/uckkk/dsh-color-contrast) — WCAG颜色对比度计算器
+- [uckkk/dsh-color-name](https://github.com/uckkk/dsh-color-name) — 颜色名称
+- [uckkk/dsh-color-palette](https://github.com/uckkk/dsh-color-palette) — 配色方案生成
+- [uckkk/dsh-color-psychology](https://github.com/uckkk/dsh-color-psychology) — 色彩心理学参考
+- [uckkk/dsh-color-theory](https://github.com/uckkk/dsh-color-theory) — 色彩理论与配色方案参考
+- [uckkk/dsh-composition](https://github.com/uckkk/dsh-composition) — 构图法则参考
+- [uckkk/dsh-cron](https://github.com/uckkk/dsh-cron) — Cron 解析
+- [uckkk/dsh-csv-to-md](https://github.com/uckkk/dsh-csv-to-md) — CSV 转 Markdown 表格
+- [uckkk/dsh-data-visualization](https://github.com/uckkk/dsh-data-visualization) — 图表类型选择参考
+- [uckkk/dsh-date-calc](https://github.com/uckkk/dsh-date-calc) — 日期计算
+- [uckkk/dsh-db-migration](https://github.com/uckkk/dsh-db-migration) — 数据库迁移生成
+- [uckkk/dsh-dependency-audit](https://github.com/uckkk/dsh-dependency-audit) — 依赖安全审计
+- [uckkk/dsh-design-patterns](https://github.com/uckkk/dsh-design-patterns) — UI设计模式参考
+- [uckkk/dsh-design-review](https://github.com/uckkk/dsh-design-review) — 设计评审清单
+- [uckkk/dsh-design-styles](https://github.com/uckkk/dsh-design-styles) — 设计风格参考
+- [uckkk/dsh-design-tokens](https://github.com/uckkk/dsh-design-tokens) — 设计令牌命名规范参考
+- [uckkk/dsh-dns](https://github.com/uckkk/dsh-dns) — DNS 查询
+- [uckkk/dsh-duration](https://github.com/uckkk/dsh-duration) — 时长格式化
+- [uckkk/dsh-emoji](https://github.com/uckkk/dsh-emoji) — Emoji 工具
+- [uckkk/dsh-env-json](https://github.com/uckkk/dsh-env-json) — .env ↔ JSON
+- [uckkk/dsh-env-manager](https://github.com/uckkk/dsh-env-manager) — 环境变量管理
+- [uckkk/dsh-file-rename](https://github.com/uckkk/dsh-file-rename) — 批量重命名
+- [uckkk/dsh-gestalt](https://github.com/uckkk/dsh-gestalt) — 格式塔视觉感知原则参考
+- [uckkk/dsh-git-commit](https://github.com/uckkk/dsh-git-commit) — Git 提交助手
+- [uckkk/dsh-golden-ratio](https://github.com/uckkk/dsh-golden-ratio) — 黄金比例计算器
+- [uckkk/dsh-grid-system](https://github.com/uckkk/dsh-grid-system) — 栅格与间距系统参考
+- [uckkk/dsh-headers](https://github.com/uckkk/dsh-headers) — HTTP 请求头解析
+- [uckkk/dsh-hex](https://github.com/uckkk/dsh-hex) — Hex 编解码
+- [uckkk/dsh-hmac](https://github.com/uckkk/dsh-hmac) — HMAC 消息认证码
+- [uckkk/dsh-html-escape](https://github.com/uckkk/dsh-html-escape) — HTML 实体编解码
+- [uckkk/dsh-html-parse](https://github.com/uckkk/dsh-html-parse) — HTML 解析
+- [uckkk/dsh-html-to-text](https://github.com/uckkk/dsh-html-to-text) — HTML 转纯文本
+- [uckkk/dsh-http](https://github.com/uckkk/dsh-http) — HTTP 请求工具
+- [uckkk/dsh-http-status](https://github.com/uckkk/dsh-http-status) — HTTP 状态码速查
+- [uckkk/dsh-iconography](https://github.com/uckkk/dsh-iconography) — 图标设计规范参考
+- [uckkk/dsh-image](https://github.com/uckkk/dsh-image) — 图片处理
+- [uckkk/dsh-ini](https://github.com/uckkk/dsh-ini) — INI ↔ JSON 转换
+- [uckkk/dsh-interaction-design](https://github.com/uckkk/dsh-interaction-design) — 交互设计理论参考
+- [uckkk/dsh-ip](https://github.com/uckkk/dsh-ip) — IP 工具
+- [uckkk/dsh-json-csv](https://github.com/uckkk/dsh-json-csv) — CSV ↔ JSON 转换
+- [uckkk/dsh-json-diff](https://github.com/uckkk/dsh-json-diff) — JSON 语义对比
+- [uckkk/dsh-json-escape](https://github.com/uckkk/dsh-json-escape) — JSON 转义
+- [uckkk/dsh-json-flatten](https://github.com/uckkk/dsh-json-flatten) — JSON 扁平化
+- [uckkk/dsh-json-merge](https://github.com/uckkk/dsh-json-merge) — JSON 深合并
+- [uckkk/dsh-json-patch](https://github.com/uckkk/dsh-json-patch) — JSON Patch（RFC 6902）
+- [uckkk/dsh-json-query](https://github.com/uckkk/dsh-json-query) — JSON 路径查询/设置
+- [uckkk/dsh-json-schema](https://github.com/uckkk/dsh-json-schema) — JSON Schema 校验
+- [uckkk/dsh-json-size](https://github.com/uckkk/dsh-json-size) — JSON 统计
+- [uckkk/dsh-json-to-go](https://github.com/uckkk/dsh-json-to-go) — JSON 转 Go
+- [uckkk/dsh-json-to-rust](https://github.com/uckkk/dsh-json-to-rust) — JSON 转 Rust
+- [uckkk/dsh-json-to-sql](https://github.com/uckkk/dsh-json-to-sql) — JSON 转 SQL
+- [uckkk/dsh-json-to-table](https://github.com/uckkk/dsh-json-to-table) — JSON 转 ASCII 表格
+- [uckkk/dsh-json-tools](https://github.com/uckkk/dsh-json-tools) — JSON 规范化
+- [uckkk/dsh-json-types](https://github.com/uckkk/dsh-json-types) — JSON 类型生成
+- [uckkk/dsh-json-validate](https://github.com/uckkk/dsh-json-validate) — JSON 校验与修复
+- [uckkk/dsh-jwt](https://github.com/uckkk/dsh-jwt) — JWT 解码
+- [uckkk/dsh-license-guard](https://github.com/uckkk/dsh-license-guard) — 依赖许可证合规
+- [uckkk/dsh-log-analyzer](https://github.com/uckkk/dsh-log-analyzer) — 日志分析
+- [uckkk/dsh-lorem](https://github.com/uckkk/dsh-lorem) — 占位文本生成
+- [uckkk/dsh-markdown-lint](https://github.com/uckkk/dsh-markdown-lint) — Markdown 检查
+- [uckkk/dsh-markdown-table](https://github.com/uckkk/dsh-markdown-table) — Markdown 表格生成
+- [uckkk/dsh-markdown-toc](https://github.com/uckkk/dsh-markdown-toc) — Markdown 目录生成
+- [uckkk/dsh-mime](https://github.com/uckkk/dsh-mime) — MIME 类型查询
+- [uckkk/dsh-modular-scale](https://github.com/uckkk/dsh-modular-scale) — 字号阶梯（模块化比例）计算器
+- [uckkk/dsh-motion-design](https://github.com/uckkk/dsh-motion-design) — 动效设计原则参考
+- [uckkk/dsh-number-format](https://github.com/uckkk/dsh-number-format) — 数字格式化
+- [uckkk/dsh-number-words](https://github.com/uckkk/dsh-number-words) — 数字转大写
+- [uckkk/dsh-otp](https://github.com/uckkk/dsh-otp) — 一次性密码 TOTP/HOTP
+- [uckkk/dsh-paper-sizes](https://github.com/uckkk/dsh-paper-sizes) — 纸张尺寸标准参考
+- [uckkk/dsh-password](https://github.com/uckkk/dsh-password) — 密码工具
+- [uckkk/dsh-percentage](https://github.com/uckkk/dsh-percentage) — 百分比计算
+- [uckkk/dsh-phone](https://github.com/uckkk/dsh-phone) — 手机号工具
+- [uckkk/dsh-photography](https://github.com/uckkk/dsh-photography) — 摄影基础参考
+- [uckkk/dsh-query-string](https://github.com/uckkk/dsh-query-string) — 查询字符串 ↔ 对象
+- [uckkk/dsh-random](https://github.com/uckkk/dsh-random) — 随机工具
+- [uckkk/dsh-readme](https://github.com/uckkk/dsh-readme) — README 生成
+- [uckkk/dsh-regex](https://github.com/uckkk/dsh-regex) — 正则工具
+- [uckkk/dsh-repo-health](https://github.com/uckkk/dsh-repo-health) — 项目体检
+- [uckkk/dsh-roman](https://github.com/uckkk/dsh-roman) — 罗马数字转换
+- [uckkk/dsh-scaffold](https://github.com/uckkk/dsh-scaffold) — 项目脚手架
+- [uckkk/dsh-secret-scan](https://github.com/uckkk/dsh-secret-scan) — 敏感信息扫描
+- [uckkk/dsh-semver](https://github.com/uckkk/dsh-semver) — 语义化版本比较
+- [uckkk/dsh-sql-format](https://github.com/uckkk/dsh-sql-format) — SQL 格式化
+- [uckkk/dsh-storyboard](https://github.com/uckkk/dsh-storyboard) — 分镜脚本模板与术语
+- [uckkk/dsh-string-pad](https://github.com/uckkk/dsh-string-pad) — 字符串填充
+- [uckkk/dsh-string-similarity](https://github.com/uckkk/dsh-string-similarity) — 字符串相似度
+- [uckkk/dsh-test-coverage](https://github.com/uckkk/dsh-test-coverage) — 测试覆盖率分析
+- [uckkk/dsh-text-diff](https://github.com/uckkk/dsh-text-diff) — 行级文本 diff
+- [uckkk/dsh-text-lines](https://github.com/uckkk/dsh-text-lines) — 文本行去重/排序/统计
+- [uckkk/dsh-text-mask](https://github.com/uckkk/dsh-text-mask) — 文本脱敏
+- [uckkk/dsh-text-reverse](https://github.com/uckkk/dsh-text-reverse) — 文本反转
+- [uckkk/dsh-text-template](https://github.com/uckkk/dsh-text-template) — 模板渲染
+- [uckkk/dsh-text-tools](https://github.com/uckkk/dsh-text-tools) — 字符串工具
+- [uckkk/dsh-text-wrap](https://github.com/uckkk/dsh-text-wrap) — 文本换行
+- [uckkk/dsh-timestamp](https://github.com/uckkk/dsh-timestamp) — 时间戳转换
+- [uckkk/dsh-todo-extract](https://github.com/uckkk/dsh-todo-extract) — TODO/FIXME 提取
+- [uckkk/dsh-toml](https://github.com/uckkk/dsh-toml) — TOML ↔ JSON 转换
+- [uckkk/dsh-typography](https://github.com/uckkk/dsh-typography) — 字体排印与排版原则参考
+- [uckkk/dsh-unicode](https://github.com/uckkk/dsh-unicode) — Unicode 编解码
+- [uckkk/dsh-unit](https://github.com/uckkk/dsh-unit) — 单位换算
+- [uckkk/dsh-url](https://github.com/uckkk/dsh-url) — URL 工具
+- [uckkk/dsh-url-codec](https://github.com/uckkk/dsh-url-codec) — URL 编解码
+- [uckkk/dsh-useragent](https://github.com/uckkk/dsh-useragent) — User-Agent 解析
+- [uckkk/dsh-uuid](https://github.com/uckkk/dsh-uuid) — UUID 生成/解析
+- [uckkk/dsh-ux-writing](https://github.com/uckkk/dsh-ux-writing) — UX文案写作指南
+- [uckkk/dsh-validator](https://github.com/uckkk/dsh-validator) — 数据校验（邮箱/手机/Luhn/IBAN/URL）
+- [uckkk/dsh-video-creator](https://github.com/uckkk/dsh-video-creator) — 视频号创作助手
+- [uckkk/dsh-visual-hierarchy](https://github.com/uckkk/dsh-visual-hierarchy) — 视觉层级构建参考
+- [uckkk/dsh-wcag](https://github.com/uckkk/dsh-wcag) — WCAG无障碍标准查询
+- [uckkk/dsh-word-frequency](https://github.com/uckkk/dsh-word-frequency) — 词频统计
+- [uckkk/dsh-xml](https://github.com/uckkk/dsh-xml) — XML ↔ JSON 转换
+- [uckkk/dsh-yaml](https://github.com/uckkk/dsh-yaml) — YAML ↔ JSON 转换
 - [vibeinging/dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — 按 agent 的按需工具发现与渐进式 schema 披露。
 - [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — 让 Agent 搜索、阅读并引用本地 Zotero 文献库：找文献、查看笔记与批注、按问题取证、打开原文、生成引用。
 - [wade20250715/dsh-pubmed](https://github.com/wade20250715/dsh-pubmed) — PubMed 深度科研工具集：文献检索、作者调查、同名消歧、机构统计与师承匹配。

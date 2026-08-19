@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-text-mask
+name: uckkk/dsh-text-mask
+category: tools
+description:
+  en: "Masks sensitive info (email, phone, ID, keys) in text."
+  zh: "文本脱敏"

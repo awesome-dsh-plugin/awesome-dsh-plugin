@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-text-lines
+name: uckkk/dsh-text-lines
+category: tools
+description:
+  en: "Dedupe, sort and count text lines."
+  zh: "文本行去重/排序/统计"

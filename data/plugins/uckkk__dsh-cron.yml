@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-cron
+name: uckkk/dsh-cron
+category: tools
+description:
+  en: "Parses 5-field cron expressions into human-readable descriptions and next runs."
+  zh: "Cron 解析"

@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-log-analyzer
+name: uckkk/dsh-log-analyzer
+category: tools
+description:
+  en: "Parses log files, extracts errors and groups them by normalized signature."
+  zh: "日志分析"

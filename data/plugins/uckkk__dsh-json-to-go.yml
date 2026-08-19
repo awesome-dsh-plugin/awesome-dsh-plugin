@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-to-go
+name: uckkk/dsh-json-to-go
+category: tools
+description:
+  en: "Converts JSON to Go structs with json tags."
+  zh: "JSON 转 Go"

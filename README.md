@@ -643,6 +643,133 @@ dsh plugin --profile web add dshmarket
 - [truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) - First-class Git tools for the model: status / diff / log / commit / branch with validated messages and paths - no bare-shell git calls.
 - [TZHR-invest/dsh-plugins#dsh-vision-tool](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-vision) - Agent-callable vision tool that describes local images via any OpenAI-compatible vision endpoint you configure, with an optional multi-model cross-check and no built-in keys.
 - [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) - Metaso (秘塔AI搜索) search & reader providers for the web seam: web_search returns page summaries, web_fetch reads full-page markdown, multi-scope search (webpage/document/paper/image/video/podcast).
+- [uckkk/dsh-animation-principles](https://github.com/uckkk/dsh-animation-principles) - Disney's 12 principles of animation reference (list + lookup).
+- [uckkk/dsh-api-contract](https://github.com/uckkk/dsh-api-contract) - Parses OpenAPI 3.x (JSON/YAML) to generate typed TypeScript/Python clients and detect breaking changes.
+- [uckkk/dsh-api-mock](https://github.com/uckkk/dsh-api-mock) - Generates a zero-dependency Node mock server from an OpenAPI 3.x spec with deterministic sample data.
+- [uckkk/dsh-api-testgen](https://github.com/uckkk/dsh-api-testgen) - Generates API test skeletons (pytest/vitest) from an OpenAPI 3.x spec.
+- [uckkk/dsh-aspect-ratio](https://github.com/uckkk/dsh-aspect-ratio) - Aspect-ratio calculator (16:9, 4:3, etc.) plus a list of common ratios.
+- [uckkk/dsh-base-convert](https://github.com/uckkk/dsh-base-convert) - Converts integers between arbitrary bases (2-36).
+- [uckkk/dsh-base64](https://github.com/uckkk/dsh-base64) - Base64 encode/decode tools.
+- [uckkk/dsh-base64-file](https://github.com/uckkk/dsh-base64-file) - Converts files to/from base64 or data URLs.
+- [uckkk/dsh-base64url](https://github.com/uckkk/dsh-base64url) - Base64URL (URL-safe) encode/decode.
+- [uckkk/dsh-brand-identity](https://github.com/uckkk/dsh-brand-identity) - Brand identity system reference (elements and principles).
+- [uckkk/dsh-byte-size](https://github.com/uckkk/dsh-byte-size) - Formats byte counts into human-readable units.
+- [uckkk/dsh-cinematography](https://github.com/uckkk/dsh-cinematography) - Camera movements and shot types reference for film/video.
+- [uckkk/dsh-code-stats](https://github.com/uckkk/dsh-code-stats) - Scans a project and reports code statistics by language and largest files.
+- [uckkk/dsh-color](https://github.com/uckkk/dsh-color) - Color conversion between hex/rgb/hsl plus complement and contrast.
+- [uckkk/dsh-color-blindness](https://github.com/uckkk/dsh-color-blindness) - Simulates color blindness and provides a colorblind-safe palette.
+- [uckkk/dsh-color-contrast](https://github.com/uckkk/dsh-color-contrast) - WCAG contrast-ratio calculator with AA/AAA checks.
+- [uckkk/dsh-color-name](https://github.com/uckkk/dsh-color-name) - Looks up common color names and hex values.
+- [uckkk/dsh-color-palette](https://github.com/uckkk/dsh-color-palette) - Generates color schemes from a base color.
+- [uckkk/dsh-color-psychology](https://github.com/uckkk/dsh-color-psychology) - Color psychology reference (emotions and industry palettes).
+- [uckkk/dsh-color-theory](https://github.com/uckkk/dsh-color-theory) - Color theory reference (schemes and harmony tips).
+- [uckkk/dsh-composition](https://github.com/uckkk/dsh-composition) - Composition rules reference for design/photography.
+- [uckkk/dsh-cron](https://github.com/uckkk/dsh-cron) - Parses 5-field cron expressions into human-readable descriptions and next runs.
+- [uckkk/dsh-csv-to-md](https://github.com/uckkk/dsh-csv-to-md) - Converts CSV text to a Markdown table.
+- [uckkk/dsh-data-visualization](https://github.com/uckkk/dsh-data-visualization) - Chart type selection reference for data visualization.
+- [uckkk/dsh-date-calc](https://github.com/uckkk/dsh-date-calc) - Date calculations: diff, add/subtract, weekday.
+- [uckkk/dsh-db-migration](https://github.com/uckkk/dsh-db-migration) - Diffs two SQL DDL files and generates ALTER TABLE migration SQL.
+- [uckkk/dsh-dependency-audit](https://github.com/uckkk/dsh-dependency-audit) - Audits dependencies for known vulnerabilities (OSV.dev) and outdated versions.
+- [uckkk/dsh-design-patterns](https://github.com/uckkk/dsh-design-patterns) - Common UI design patterns reference.
+- [uckkk/dsh-design-review](https://github.com/uckkk/dsh-design-review) - Design review checklist organized by category.
+- [uckkk/dsh-design-styles](https://github.com/uckkk/dsh-design-styles) - Visual design styles reference.
+- [uckkk/dsh-design-tokens](https://github.com/uckkk/dsh-design-tokens) - Design token naming and layer reference.
+- [uckkk/dsh-dns](https://github.com/uckkk/dsh-dns) - DNS lookups (A/AAAA/CNAME/MX/TXT/NS and reverse).
+- [uckkk/dsh-duration](https://github.com/uckkk/dsh-duration) - Formats durations into human-readable or clock format.
+- [uckkk/dsh-emoji](https://github.com/uckkk/dsh-emoji) - Emoji lookup and listing tools.
+- [uckkk/dsh-env-json](https://github.com/uckkk/dsh-env-json) - Converts .env text to JSON and back.
+- [uckkk/dsh-env-manager](https://github.com/uckkk/dsh-env-manager) - Scans code for environment variables, diffs against .env, and generates .env.example.
+- [uckkk/dsh-file-rename](https://github.com/uckkk/dsh-file-rename) - Batch file renaming by find/replace, prefix/suffix, or case with dry-run.
+- [uckkk/dsh-gestalt](https://github.com/uckkk/dsh-gestalt) - Gestalt principles of visual perception reference.
+- [uckkk/dsh-git-commit](https://github.com/uckkk/dsh-git-commit) - Suggests Conventional Commits messages, generates CHANGELOG, and suggests versions.
+- [uckkk/dsh-golden-ratio](https://github.com/uckkk/dsh-golden-ratio) - Golden ratio and silver ratio calculators.
+- [uckkk/dsh-grid-system](https://github.com/uckkk/dsh-grid-system) - Grid system and spacing scale reference (8pt grid, breakpoints).
+- [uckkk/dsh-headers](https://github.com/uckkk/dsh-headers) - Parses and serializes HTTP request headers.
+- [uckkk/dsh-hex](https://github.com/uckkk/dsh-hex) - Hex encode/decode.
+- [uckkk/dsh-hmac](https://github.com/uckkk/dsh-hmac) - Computes HMAC message authentication codes (sha1/sha256/sha512).
+- [uckkk/dsh-html-escape](https://github.com/uckkk/dsh-html-escape) - Escapes/unescapes HTML entities.
+- [uckkk/dsh-html-parse](https://github.com/uckkk/dsh-html-parse) - Extracts title, meta, headings, links, tables and text from HTML.
+- [uckkk/dsh-html-to-text](https://github.com/uckkk/dsh-html-to-text) - Converts HTML to plain text.
+- [uckkk/dsh-http](https://github.com/uckkk/dsh-http) - HTTP request tool returning status, headers, body and timing.
+- [uckkk/dsh-http-status](https://github.com/uckkk/dsh-http-status) - HTTP status code reference.
+- [uckkk/dsh-iconography](https://github.com/uckkk/dsh-iconography) - Icon design style, grid and consistency reference.
+- [uckkk/dsh-image](https://github.com/uckkk/dsh-image) - Image info, resize and format conversion (bundled ffmpeg).
+- [uckkk/dsh-ini](https://github.com/uckkk/dsh-ini) - INI to JSON and back.
+- [uckkk/dsh-interaction-design](https://github.com/uckkk/dsh-interaction-design) - Interaction design theories reference (Fitts's law, heuristics, etc.).
+- [uckkk/dsh-ip](https://github.com/uckkk/dsh-ip) - IP address validation/classification and CIDR range calculation.
+- [uckkk/dsh-json-csv](https://github.com/uckkk/dsh-json-csv) - Converts JSON object arrays to CSV and back.
+- [uckkk/dsh-json-diff](https://github.com/uckkk/dsh-json-diff) - Deep JSON comparison returning added/removed/changed key paths.
+- [uckkk/dsh-json-escape](https://github.com/uckkk/dsh-json-escape) - Escapes/unescapes JSON strings.
+- [uckkk/dsh-json-flatten](https://github.com/uckkk/dsh-json-flatten) - Flattens nested JSON to dot keys and back.
+- [uckkk/dsh-json-merge](https://github.com/uckkk/dsh-json-merge) - Deep-merges multiple JSON objects.
+- [uckkk/dsh-json-patch](https://github.com/uckkk/dsh-json-patch) - Applies JSON Patch (RFC 6902) operations.
+- [uckkk/dsh-json-query](https://github.com/uckkk/dsh-json-query) - Gets/sets values in JSON by path (a.b[0], wildcards).
+- [uckkk/dsh-json-schema](https://github.com/uckkk/dsh-json-schema) - Validates JSON against a JSON Schema (draft-07 subset).
+- [uckkk/dsh-json-size](https://github.com/uckkk/dsh-json-size) - JSON statistics (keys, depth, size).
+- [uckkk/dsh-json-to-go](https://github.com/uckkk/dsh-json-to-go) - Converts JSON to Go structs with json tags.
+- [uckkk/dsh-json-to-rust](https://github.com/uckkk/dsh-json-to-rust) - Converts JSON to serde Rust structs.
+- [uckkk/dsh-json-to-sql](https://github.com/uckkk/dsh-json-to-sql) - Converts JSON data to SQL statements (CREATE/INSERT).
+- [uckkk/dsh-json-to-table](https://github.com/uckkk/dsh-json-to-table) - Renders JSON arrays as an aligned ASCII table.
+- [uckkk/dsh-json-tools](https://github.com/uckkk/dsh-json-tools) - JSON normalization: sorts keys and pretty-prints/minifies.
+- [uckkk/dsh-json-types](https://github.com/uckkk/dsh-json-types) - Converts JSON to TypeScript interfaces, JSON Schema, or Pydantic models.
+- [uckkk/dsh-json-validate](https://github.com/uckkk/dsh-json-validate) - Validates JSON syntax and auto-fixes comments, trailing commas and single quotes.
+- [uckkk/dsh-jwt](https://github.com/uckkk/dsh-jwt) - Decodes JWT header/payload and checks expiry (no signature verification).
+- [uckkk/dsh-license-guard](https://github.com/uckkk/dsh-license-guard) - Scans and classifies dependency licenses (SPDX) for release compliance.
+- [uckkk/dsh-log-analyzer](https://github.com/uckkk/dsh-log-analyzer) - Parses log files, extracts errors and groups them by normalized signature.
+- [uckkk/dsh-lorem](https://github.com/uckkk/dsh-lorem) - Generates lorem ipsum placeholder text.
+- [uckkk/dsh-markdown-lint](https://github.com/uckkk/dsh-markdown-lint) - Lints Markdown (heading jumps, trailing whitespace, broken links).
+- [uckkk/dsh-markdown-table](https://github.com/uckkk/dsh-markdown-table) - Builds Markdown tables from JSON arrays.
+- [uckkk/dsh-markdown-toc](https://github.com/uckkk/dsh-markdown-toc) - Generates a table of contents from Markdown headings.
+- [uckkk/dsh-mime](https://github.com/uckkk/dsh-mime) - MIME type lookup by extension and vice versa.
+- [uckkk/dsh-modular-scale](https://github.com/uckkk/dsh-modular-scale) - Modular type-scale calculator (px/rem).
+- [uckkk/dsh-motion-design](https://github.com/uckkk/dsh-motion-design) - Motion design principles and duration reference.
+- [uckkk/dsh-number-format](https://github.com/uckkk/dsh-number-format) - Formats numbers with thousands separators, decimals, currency and percent.
+- [uckkk/dsh-number-words](https://github.com/uckkk/dsh-number-words) - Converts integers to Chinese/English words or Roman numerals.
+- [uckkk/dsh-otp](https://github.com/uckkk/dsh-otp) - Generates TOTP/HOTP one-time passwords.
+- [uckkk/dsh-paper-sizes](https://github.com/uckkk/dsh-paper-sizes) - ISO A/B/C paper sizes and common print sizes reference.
+- [uckkk/dsh-password](https://github.com/uckkk/dsh-password) - Generates strong random passwords and checks password strength/entropy.
+- [uckkk/dsh-percentage](https://github.com/uckkk/dsh-percentage) - Percentage calculations (percent of, percent change).
+- [uckkk/dsh-phone](https://github.com/uckkk/dsh-phone) - Chinese phone number formatting, masking and carrier lookup.
+- [uckkk/dsh-photography](https://github.com/uckkk/dsh-photography) - Photography basics reference (exposure triangle, focal lengths, lighting).
+- [uckkk/dsh-query-string](https://github.com/uckkk/dsh-query-string) - Parses and serializes query strings.
+- [uckkk/dsh-random](https://github.com/uckkk/dsh-random) - Cryptographically secure random integers, strings, samples and shuffle.
+- [uckkk/dsh-readme](https://github.com/uckkk/dsh-readme) - Generates a structured README from a project's package.json and structure.
+- [uckkk/dsh-regex](https://github.com/uckkk/dsh-regex) - Regex test, replace and escape helpers.
+- [uckkk/dsh-repo-health](https://github.com/uckkk/dsh-repo-health) - Repository best-practice health check with a scorecard.
+- [uckkk/dsh-roman](https://github.com/uckkk/dsh-roman) - Converts between Roman numerals and integers.
+- [uckkk/dsh-scaffold](https://github.com/uckkk/dsh-scaffold) - Generates common project files (LICENSE, .gitignore, .editorconfig).
+- [uckkk/dsh-secret-scan](https://github.com/uckkk/dsh-secret-scan) - Scans code for leaked secrets/tokens/private keys with severity levels.
+- [uckkk/dsh-semver](https://github.com/uckkk/dsh-semver) - Compares semantic versions and checks version ranges.
+- [uckkk/dsh-sql-format](https://github.com/uckkk/dsh-sql-format) - Formats SQL with uppercased keywords and line breaks.
+- [uckkk/dsh-storyboard](https://github.com/uckkk/dsh-storyboard) - Storyboard terms and a storyboard template.
+- [uckkk/dsh-string-pad](https://github.com/uckkk/dsh-string-pad) - Pads strings to a fixed width (left/right/center).
+- [uckkk/dsh-string-similarity](https://github.com/uckkk/dsh-string-similarity) - Levenshtein edit distance and similarity between strings.
+- [uckkk/dsh-test-coverage](https://github.com/uckkk/dsh-test-coverage) - Parses coverage reports (LCOV/Cobertura/Istanbul/Go) into structured data.
+- [uckkk/dsh-text-diff](https://github.com/uckkk/dsh-text-diff) - Line-based text diff.
+- [uckkk/dsh-text-lines](https://github.com/uckkk/dsh-text-lines) - Dedupe, sort and count text lines.
+- [uckkk/dsh-text-mask](https://github.com/uckkk/dsh-text-mask) - Masks sensitive info (email, phone, ID, keys) in text.
+- [uckkk/dsh-text-reverse](https://github.com/uckkk/dsh-text-reverse) - Reverses text by characters, words or lines.
+- [uckkk/dsh-text-template](https://github.com/uckkk/dsh-text-template) - Renders {placeholder} string templates.
+- [uckkk/dsh-text-tools](https://github.com/uckkk/dsh-text-tools) - String case/format conversion and text statistics.
+- [uckkk/dsh-text-wrap](https://github.com/uckkk/dsh-text-wrap) - Wraps text to a given width.
+- [uckkk/dsh-timestamp](https://github.com/uckkk/dsh-timestamp) - Converts Unix timestamps, ISO 8601 and relative times.
+- [uckkk/dsh-todo-extract](https://github.com/uckkk/dsh-todo-extract) - Extracts TODO/FIXME/HACK comments from a codebase.
+- [uckkk/dsh-toml](https://github.com/uckkk/dsh-toml) - TOML to JSON and back.
+- [uckkk/dsh-typography](https://github.com/uckkk/dsh-typography) - Typography and typeface classification reference.
+- [uckkk/dsh-unicode](https://github.com/uckkk/dsh-unicode) - Unicode escape/unescape and codepoint lookup.
+- [uckkk/dsh-unit](https://github.com/uckkk/dsh-unit) - Unit conversion for length, weight, temperature, data and time.
+- [uckkk/dsh-url](https://github.com/uckkk/dsh-url) - Parses URLs into components and builds URLs from parts.
+- [uckkk/dsh-url-codec](https://github.com/uckkk/dsh-url-codec) - URL encode/decode.
+- [uckkk/dsh-useragent](https://github.com/uckkk/dsh-useragent) - Parses User-Agent strings (browser, OS, device, engine, bot).
+- [uckkk/dsh-uuid](https://github.com/uckkk/dsh-uuid) - Generates and parses UUIDs (v4/v7).
+- [uckkk/dsh-ux-writing](https://github.com/uckkk/dsh-ux-writing) - UX microcopy writing rules and button/error label guides.
+- [uckkk/dsh-validator](https://github.com/uckkk/dsh-validator) - Validates email, phone, Luhn, IBAN and URL.
+- [uckkk/dsh-video-creator](https://github.com/uckkk/dsh-video-creator) - Short-video creation assistant using China-hosted LLMs to generate content packages.
+- [uckkk/dsh-visual-hierarchy](https://github.com/uckkk/dsh-visual-hierarchy) - Visual hierarchy levers and checklist reference.
+- [uckkk/dsh-wcag](https://github.com/uckkk/dsh-wcag) - WCAG accessibility guidelines, checklist and conformance levels.
+- [uckkk/dsh-word-frequency](https://github.com/uckkk/dsh-word-frequency) - Counts word frequency in text.
+- [uckkk/dsh-xml](https://github.com/uckkk/dsh-xml) - XML to JSON and back.
+- [uckkk/dsh-yaml](https://github.com/uckkk/dsh-yaml) - YAML to JSON and back.
 - [vibeinging/dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) - Per-agent on-demand tool discovery and progressive schema disclosure.
 - [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) - Let agents search, read, and cite your local Zotero library: find papers, view notes and annotations, pull evidence by question, open the source document, and generate citations.
 - [wade20250715/dsh-pubmed](https://github.com/wade20250715/dsh-pubmed) - PubMed deep-research toolset: literature search, author investigation, same-name disambiguation, institution statistics and mentor-student matching.

@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-random
+name: uckkk/dsh-random
+category: tools
+description:
+  en: "Cryptographically secure random integers, strings, samples and shuffle."
+  zh: "随机工具"

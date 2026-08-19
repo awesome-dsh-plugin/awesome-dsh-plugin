@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-diff
+name: uckkk/dsh-json-diff
+category: tools
+description:
+  en: "Deep JSON comparison returning added/removed/changed key paths."
+  zh: "JSON 语义对比"

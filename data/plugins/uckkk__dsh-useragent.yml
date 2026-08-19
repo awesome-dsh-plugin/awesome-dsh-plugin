@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-useragent
+name: uckkk/dsh-useragent
+category: tools
+description:
+  en: "Parses User-Agent strings (browser, OS, device, engine, bot)."
+  zh: "User-Agent 解析"

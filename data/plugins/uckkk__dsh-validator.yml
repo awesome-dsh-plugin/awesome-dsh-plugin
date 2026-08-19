@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-validator
+name: uckkk/dsh-validator
+category: tools
+description:
+  en: "Validates email, phone, Luhn, IBAN and URL."
+  zh: "数据校验（邮箱/手机/Luhn/IBAN/URL）"

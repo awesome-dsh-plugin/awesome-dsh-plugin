@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-scaffold
+name: uckkk/dsh-scaffold
+category: tools
+description:
+  en: "Generates common project files (LICENSE, .gitignore, .editorconfig)."
+  zh: "项目脚手架"

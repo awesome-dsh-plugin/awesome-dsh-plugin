@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-dependency-audit
+name: uckkk/dsh-dependency-audit
+category: tools
+description:
+  en: "Audits dependencies for known vulnerabilities (OSV.dev) and outdated versions."
+  zh: "依赖安全审计"

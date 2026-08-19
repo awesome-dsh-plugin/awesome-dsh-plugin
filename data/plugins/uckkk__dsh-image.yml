@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-image
+name: uckkk/dsh-image
+category: tools
+description:
+  en: "Image info, resize and format conversion (bundled ffmpeg)."
+  zh: "图片处理"

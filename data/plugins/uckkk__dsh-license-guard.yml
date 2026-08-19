@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-license-guard
+name: uckkk/dsh-license-guard
+category: tools
+description:
+  en: "Scans and classifies dependency licenses (SPDX) for release compliance."
+  zh: "依赖许可证合规"

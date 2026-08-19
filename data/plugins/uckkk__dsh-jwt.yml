@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-jwt
+name: uckkk/dsh-jwt
+category: tools
+description:
+  en: "Decodes JWT header/payload and checks expiry (no signature verification)."
+  zh: "JWT 解码"

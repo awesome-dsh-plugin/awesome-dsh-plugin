@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-readme
+name: uckkk/dsh-readme
+category: tools
+description:
+  en: "Generates a structured README from a project's package.json and structure."
+  zh: "README 生成"

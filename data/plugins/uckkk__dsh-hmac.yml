@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-hmac
+name: uckkk/dsh-hmac
+category: tools
+description:
+  en: "Computes HMAC message authentication codes (sha1/sha256/sha512)."
+  zh: "HMAC 消息认证码"

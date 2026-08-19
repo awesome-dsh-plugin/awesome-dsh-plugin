@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-todo-extract
+name: uckkk/dsh-todo-extract
+category: tools
+description:
+  en: "Extracts TODO/FIXME/HACK comments from a codebase."
+  zh: "TODO/FIXME 提取"

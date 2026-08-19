@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-to-table
+name: uckkk/dsh-json-to-table
+category: tools
+description:
+  en: "Renders JSON arrays as an aligned ASCII table."
+  zh: "JSON 转 ASCII 表格"
