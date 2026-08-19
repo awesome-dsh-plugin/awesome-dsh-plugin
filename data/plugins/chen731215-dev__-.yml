@@ -1,6 +1,6 @@
-url: https://github.com/chen731215-dev/-
-name: chen731215-dev/-
+url: https://github.com/chen731215-dev/dsh-tavern
+name: chen731215-dev/dsh-tavern
 category: fun
 description:
-  en: 'Native tavern management panel for DeepSeek Harness: multiple character cards, multiple worldbooks, switchable presets.'
-  zh: 酒馆管理原生面板：多角色卡、多世界书、可切换预设，深浅色跟随，点侧边栏自动关闭。
+  en: 'Native tavern management panel for DeepSeek Harness: character cards, worldbooks, presets with session-level isolation, memory summary, relationship web, one-click plot options, and NSFW mode. Install: dsh plugin --profile web add dsh-tavern'
+  zh: 酒馆管理原生面板：多角色卡、多世界书、多预设与会话级隔离，记忆总结 + 角色关系网，剧情选项一键发送，NSFW 成人模式。安装：dsh plugin --profile web add dsh-tavern
