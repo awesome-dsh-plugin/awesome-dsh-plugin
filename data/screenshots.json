@@ -998,10 +998,12 @@
  ],
  "https://github.com/WJZ-P/dsh-model-capabilities": [
   "https://raw.githubusercontent.com/WJZ-P/dsh-model-capabilities/main/assets/screenshots/01-model-input-selector.png"
- ]
-,
+ ],
  "https://github.com/winditer/dsh-elf": [
   "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-elf.png",
   "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-chat.png"
+ ],
+ "https://github.com/Frog755/dsh-client-auto-retry": [
+  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg"
  ]
 }
