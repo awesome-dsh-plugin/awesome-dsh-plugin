@@ -1,0 +1,6 @@
+url: https://github.com/Alvinpro/DSH-Launcher
+name: Alvinpro/DSH-Launcher
+category: ui
+description:
+  en: Rust single-file dsh web launcher built for Windows. No WebView2, no install. Double-click to open dsh in your default browser; close the browser to auto-shutdown, zero residue.
+  zh: 专为 Windows 打造的 Rust 单文件 dsh web 启动器,免 WebView2、免安装。双击调用默认浏览器打开 dsh,关闭浏览器即自动停服,零残留。
