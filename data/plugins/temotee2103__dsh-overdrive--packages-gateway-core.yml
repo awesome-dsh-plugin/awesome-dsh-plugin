@@ -1,0 +1,6 @@
+url: https://github.com/temotee2103/dsh-overdrive/tree/main/packages/gateway-core
+name: temotee2103/dsh-overdrive#gateway-core
+category: notify
+description:
+  en: Multi-platform chat gateway for DeepSeek Harness (WhatsApp, Telegram, Discord, Slack, Feishu, DingTalk, WeCom) with in-chat trajectory replay, subagents, cron scheduling and tap-to-approve buttons.
+  zh: 把 DeepSeek Harness 接入 WhatsApp / Telegram / Discord / Slack / 飞书 / 钉钉 / 企业微信，支持聊天内轨迹回放、子任务、定时任务与一键审批。
