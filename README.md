@@ -961,6 +961,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ximengxiaolan/dsh-vision-bridge](https://github.com/ximengxiaolan/dsh-vision-bridge) - Composer-attached images are transcribed to text by an OpenAI-compatible vision model before reaching text-only DeepSeek models.
 - [xsoc1/dsh-image-vision](https://github.com/xsoc1/dsh-image-vision) - Chat image-attachment bridge with a `view_image` tool for any OpenAI-compatible VLM (local Ollama or cloud): pasted/dropped images become `view_image` path markers before reaching text-only DeepSeek models.
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) - Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image to use it.
+- [zclDragon/dsh-tool-generate-image](https://github.com/zclDragon/dsh-tool-generate-image) - Model-facing `generate_image` tool for text-only models: the model asks for a picture in natural language, Gemini draws it via the Antigravity CLI, the image is saved to a configurable output directory, and the tool returns the file paths for the model to use in its work.
 
 ### Voice & Audio
 
