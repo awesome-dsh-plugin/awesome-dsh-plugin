@@ -24,7 +24,7 @@ dsh plugin --profile web add dshmarket
 
 > ℹ️ **On desktop clients.** This list is client-agnostic. A plugin is listed because it follows the official protocol — it declares a `dsh.bundle` manifest and installs with `dsh plugin add` — not because it adapts to any particular client.
 >
-> We will not adopt the protocol that `anywhere-labs/deepseek-harness-desktop` unilaterally requires of others, and conformance to it will never be a condition of being listed here. No plugin will be removed, demoted, or asked to adapt because of it.
+> We're talking with `anywhere-labs/deepseek-harness-desktop` about working together again; we'll update this note as that progresses. Whatever comes of it, the listing rule stays as it is: adapting to any particular client is not a condition of being listed, and no plugin will be removed or demoted for not doing so.
 >
 > Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop) and [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop) — both ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
 
