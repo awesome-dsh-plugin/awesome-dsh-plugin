@@ -1559,6 +1559,7 @@ dsh plugin --profile web add dshmarket
 - [AmeKrance/anan-thermal-monitor](https://github.com/AmeKrance/anan-thermal-monitor) — 紫白桌宠悬浮球，贴边停靠实时显示 CPU/内存/GPU/NVMe 温度与硬件信息。
 - [AnacondaKC/dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — 侧栏短视频：原生播放器、系列导航、精确历史回放。
 - [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) — 有效解决了写代码的时候账户不能同时亏钱的 BUG。
+- [Awesome-AI-Pedia/Awesome-DSH-Pet](https://github.com/Awesome-AI-Pedia/Awesome-DSH-Pet) — DSH Web GUI 的可扩展桌面宠物插件，支持投喂、玩耍、切换角色，并使用 Codex 8x9 spritesheet 添加自定义角色。
 - [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) — A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。
 - [baisama-cloud/dsh-galgame-generator](https://github.com/baisama-cloud/dsh-galgame-generator) — Galgame 生成器：提供剧本文档与立绘/背景/音乐/动画素材（工作区 img_human/、img_bg/、audio/、img_cg/）即可生成可玩视觉小说网页，支持可配置存档槽位（`[存档 N]`，默认 9）、立绘自动跟随说话人并切换多表情立绘（`[表情]`）、开局/结束/CG 动画（`[op]`/`[ed]`/`[cg]`）、BGM 播放/停止/音量控制与 if 条件线分支。
 - [Bob-Bo1/dsh-stock-watch](https://github.com/Bob-Bo1/dsh-stock-watch) — DSH 本地优先的 A 股持仓与自选监控：侧栏行情、持仓盈亏，以及网页添加、修改、删除和 JSON 保存。
