@@ -1,0 +1,5 @@
+url: https://github.com/unclecode/toolshrink
+name: unclecode/toolshrink
+category: tools
+description:
+  en: 'Content-aware tool-result reducer: 13 reducers cut oversized output by meaning at tools/post-execute (failing tests kept, diff context dropped, JSON and CSV sampled, lint problems grouped by rule, dependency stack frames collapsed, crowded directories counted), with full originals spilled to disk behind a locator.'
