@@ -1,0 +1,6 @@
+url: https://github.com/starsstreaming/beautiCode/tree/main/integrations/deepseek-harness
+name: starsstreaming/beautiCode#deepseek-harness
+category: theme
+description:
+  en: 'Local image and MP4 video backgrounds for DSH Web: a sidebar Background panel, saved themes including a built-in window-frame preset, mute toggle, last-background restore, plus /bg, /bg-theme and /bg-clear commands.'
+  zh: 为 DSH Web 设置本地图片与 MP4 视频背景：侧栏「背景」面板、可保存主题（含内置「画窗」）、声音开关、恢复上次背景，以及 /bg、/bg-theme、/bg-clear 命令。
