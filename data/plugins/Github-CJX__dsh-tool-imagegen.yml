@@ -2,5 +2,5 @@ url: https://github.com/Github-CJX/dsh-tool-imagegen
 name: Github-CJX/dsh-tool-imagegen
 category: tools
 description:
-  en: 'OpenAI-compatible image generation for DSH Desktop: the model calls generate_image in chat and the images render inline in the conversation.'
-  zh: 'DSH Desktop 对话内联生图插件：模型在对话中调用 generate_image，图片直接显示在对话框内。'
+  en: 'OpenAI-compatible image generation in DSH Desktop chat: generate inline, upload or one-click edit reference images (image-to-image), with storage cleanup.'
+  zh: '对话内联生图插件：模型在对话框直接出图，上传参考图即可图生图连续修改，附存储清理。'
