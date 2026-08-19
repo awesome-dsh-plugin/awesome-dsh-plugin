@@ -938,5 +938,11 @@
   "https://raw.githubusercontent.com/kanneiren/dsh-network-settings/main/docs/images/wsl-path-graph.png",
   "https://raw.githubusercontent.com/kanneiren/dsh-network-settings/main/docs/images/win-path-graph.png",
   "https://raw.githubusercontent.com/kanneiren/dsh-network-settings/main/docs/images/win-network-config.png"
+ ],
+ "https://github.com/anneheartrecord/dsh-desk-pet": [
+  "https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/main/docs/media/diy-skin.png",
+  "https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/main/docs/media/floats-above.png",
+  "https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/main/docs/media/skins.png",
+  "https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/main/docs/media/states.png"
  ]
 }
