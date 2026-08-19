@@ -612,6 +612,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🧠 记忆
 
+- [111111AAA111111/dsh-premise-guard-cn](https://github.com/111111AAA111111/dsh-premise-guard-cn) — 中文前提锚点守卫（前提守卫）：面向中文小说/长文创作，压缩摘要丢失关键前提（中文引号/书名号/术语链/编号/路径锚点）时报警，支持手动锚点清单、premise_anchor 工具与 /anchor 命令。fork of ICCuse/dsh-premise-guard (MIT)。
 - [863683348/dsh-plugin-focus](https://github.com/863683348/dsh-plugin-focus) — 为 DeepSeek Harness agent 提供持久化专注板：在会话工作区维护目标、约束与决策笔记，跨压缩与会话存活，支持自动注入上下文、清空归档与可选 Web 面板。
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) — 面向 DeepSeek Harness 的模型驱动上下文裁剪插件，通过官方 compaction API 释放上下文空间。
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — DSH 三层自动记忆引擎：缓存友好的精简注入与每轮 AI 自动沉淀，主动日历提醒与暖心问候，可继承其他 AI 工具的记忆。
