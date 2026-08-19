@@ -1,0 +1,7 @@
+url: https://github.com/YV3507/dsh-webui-launcher
+name: YV3507/dsh-webui-launcher
+category: tools
+description:
+  en: 'Cross-platform Web UI launcher for DeepSeek Harness: webui_start/stop/status/open model tools, a /webui start|stop|status|open slash command, a Settings-page launch card, and an optional desktop shortcut that starts the Web UI hidden and opens the browser once it is fully ready (dsh default icon).'
+  zh: '跨平台 Web UI 启动器：提供 webui_start/stop/status/open 模型工具、/webui start|stop|status|open 斜杠命令、设置页启动卡片，以及可选的桌面快捷方式——隐藏控制台启动 Web UI，完全就绪后自动打开浏览器，默认使用 dsh 官方图标。'
+tarball: https://github.com/YV3507/dsh-webui-launcher/releases/download/v0.1.7/dsh-webui-launcher-0.1.7.tgz
