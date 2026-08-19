@@ -1,0 +1,6 @@
+url: https://github.com/Ricketts-Guo/dsh-off-peak-message
+name: Ricketts-Guo/dsh-off-peak-message
+category: session
+description:
+  en: 'Off-peak message scheduler: turn on valley mode and the composer queues your messages until DeepSeek off-peak hours (half price), then auto-injects them into the session and gets replies. Native-look composer, hotkeys (Enter queue / ⌘+Enter send now / Esc exit), per-session toggle persisted across restarts.'
+  zh: '谷时发送调度器：开启谷时模式后输入框消息排队至 DeepSeek 谷时窗口（半价）自动注入会话并得到回复。原生外观输入条、快捷键（Enter 入队 / ⌘+Enter 立即发送 / Esc 退出）、按会话记忆的开关，重启不丢。'
