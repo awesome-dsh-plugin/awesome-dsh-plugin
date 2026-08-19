@@ -56,6 +56,8 @@ dsh plugin --profile web add dshmarket
   - [🔀 Git 与代码评审](#-git-与代码评审)
   - [🔔 通知与集成](#-通知与集成)
   - [🧑‍💻 开发与运行时](#-开发与运行时)
+  - - [777-Zen/dsh-capability-index](https://github.com/777-Zen/dsh-capability-index) — DSH agent
+  的插件库起飞检查：向运行时上下文注入按步骤触发的提示，让合适的已装插件从「碰巧想起」变成「可预期使用」。
   - [🔒 安全与权限](#-安全与权限)
   - [📱 远程与移动端](#-远程与移动端)
   - [🛒 插件市场与管理](#-插件市场与管理)
