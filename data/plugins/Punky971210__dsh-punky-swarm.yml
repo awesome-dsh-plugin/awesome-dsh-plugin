@@ -1,0 +1,6 @@
+url: https://github.com/Punky971210/dsh-punky-swarm
+name: Punky971210/dsh-punky-swarm
+category: tools
+description:
+  en: Single-machine multi-subagent swarm governance for dsh — fixed-semantics wavePlan (3-layer DAG), engine-enforced Tier3 gates, state machine, locks/mailbox, session isolation, and a per-turn task-difficulty routing gate (A/B/C, C forces a batch).
+  zh: dsh 单机多子 agent 集群治理：固定语义 wavePlan（三层 DAG）、引擎级三层门禁、状态机、锁/mailbox、会话隔离，以及每轮任务难度路由门禁（A/B/C，C 类强制建批）。
