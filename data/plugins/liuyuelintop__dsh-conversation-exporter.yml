@@ -1,0 +1,6 @@
+url: https://github.com/liuyuelintop/dsh-conversation-exporter
+name: liuyuelintop/dsh-conversation-exporter
+category: session
+description:
+  en: Export the current DSH conversation, or selected turns, as clean readable Markdown.
+  zh: 将当前 DSH 对话或选定轮次导出为干净、易读的 Markdown。
