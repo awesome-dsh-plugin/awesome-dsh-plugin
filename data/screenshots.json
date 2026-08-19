@@ -972,5 +972,10 @@
   "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/1.png",
   "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/2.png",
   "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/3.png"
+ ],
+ "https://github.com/tipoLi5890/dsh-file-mention": [
+  "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
+  "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
+  "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-upload-reference.png"
  ]
 }
