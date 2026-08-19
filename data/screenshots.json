@@ -1024,5 +1024,11 @@
   "https://raw.githubusercontent.com/geguanming/dsh-office-plugin/master/assets/entry.png",
   "https://raw.githubusercontent.com/geguanming/dsh-office-plugin/master/assets/work-monitor.png",
   "https://raw.githubusercontent.com/geguanming/dsh-office-plugin/master/assets/order-boss.png"
+ ],
+ "https://github.com/lninghaha/dsh-hub-oauth-gateway": [
+  "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-hud.png",
+  "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-peek.png",
+  "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-dashboard.png",
+  "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-settings.png"
  ]
 }
