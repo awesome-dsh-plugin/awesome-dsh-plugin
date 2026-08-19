@@ -1,0 +1,6 @@
+url: https://github.com/BiBoyang/dsh-im-bridge
+name: BiBoyang/dsh-im-bridge
+category: notify
+description:
+  en: 'Two-way WeChat (iLink) bridge: turn-end and approval-request push, in-chat approve/reject and message injection, persistent dedup and convergent long-reply chunking; channel layer extensible to other IMs.'
+  zh: 微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。

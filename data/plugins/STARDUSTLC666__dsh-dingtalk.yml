@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-dingtalk
+name: STARDUSTLC666/dsh-dingtalk
+category: notify
+description:
+  en: DingTalk group-robot notifications (webhook + HMAC signing, zero runtime dependencies).
+  zh: 钉钉群机器人通知（webhook + 加签，零运行时依赖）。

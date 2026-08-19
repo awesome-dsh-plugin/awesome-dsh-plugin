@@ -1,0 +1,6 @@
+url: https://github.com/wjt0321/dsh-git-proxy
+name: wjt0321/dsh-git-proxy
+category: tools
+description:
+  en: "On-demand GitHub proxy for the Web UI: one-click git/SSH proxy toggle with connectivity tests."
+  zh: "Web UI 按需 GitHub 代理：一键开关 git/SSH 代理并测试连通性。"

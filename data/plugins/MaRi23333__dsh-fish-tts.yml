@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-fish-tts
+name: MaRi23333/dsh-fish-tts
+category: voice
+description:
+  en: 'Reads assistant replies aloud via Fish Audio API only (bring your own key): per-message read-aloud, auto-read toggle, and a settings page for model, voice reference_id, encrypted API key, and proxy.'
+  zh: 朗读助手回复（仅支持 Fish Audio API，需自备 Key）：逐条朗读、自动朗读开关，设置页可配模型、音色 reference_id、加密 API Key 与代理。

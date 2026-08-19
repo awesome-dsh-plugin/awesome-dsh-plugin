@@ -1,0 +1,6 @@
+url: https://github.com/luzhengyangtx/dsh-telegram-duty
+name: luzhengyangtx/dsh-telegram-duty
+category: notify
+description:
+  en: 'Telegram duty gateway: phone-message task loop on a dedicated duty session, global approval forwarding with inline approve/reject buttons, telegram_ask choice questions, duty/local toggle with a web duty banner, zh/en messages, zero idle tokens.'
+  zh: Telegram 值班网关：手机消息任务闭环（专属值班会话）、值守模式全局审批转发（内联同意/拒绝按钮）、telegram_ask 选项提问、值守/本地切换与网页横幅、中英双语消息、空闲零 token。

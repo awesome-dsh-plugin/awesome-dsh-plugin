@@ -1,0 +1,6 @@
+url: https://github.com/wenzetan/dsh-llm-newapi
+name: wenzetan/dsh-llm-newapi
+category: model
+description:
+  en: 'NewAPI (OpenAI-compatible gateway) LLM provider: registers a `newapi` route with chat-only model discovery, auto-fills model parameters (context window, reasoning effort) from models.dev, and adds a Web settings section for the base URL and API key.'
+  zh: NewAPI（OpenAI 兼容网关）模型接入：注册 `newapi` 路由，仅发现聊天类模型，自动从 models.dev 获取模型参数（上下文窗口、思考强度等）并填充，并在 Web 设置页配置 base URL 与 API Key。

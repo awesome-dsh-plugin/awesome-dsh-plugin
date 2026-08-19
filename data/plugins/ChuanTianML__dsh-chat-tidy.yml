@@ -1,0 +1,6 @@
+url: https://github.com/ChuanTianML/dsh-chat-tidy
+name: ChuanTianML/dsh-chat-tidy
+category: ui
+description:
+  en: 'One stylesheet that retypesets the DSH conversation to measured Codex metrics: 14/22 px body, tighter heading ladder, list and block rhythm, blockquote bar and table cells, with no settings to choose and before/after captures in the README.'
+  zh: 一张样式表，按实测的 Codex 版式重排 DSH 对话页：14/22 px 正文、更紧凑的标题层级、列表与块级节奏、引用条与表格单元格；无需任何设置，README 内附前后对比图。

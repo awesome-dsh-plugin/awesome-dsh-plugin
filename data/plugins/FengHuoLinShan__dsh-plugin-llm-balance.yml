@@ -1,0 +1,6 @@
+url: https://github.com/FengHuoLinShan/dsh-plugin-llm-balance
+name: FengHuoLinShan/dsh-plugin-llm-balance
+category: usage
+description:
+  en: 'Draggable floating card showing the balance/quota of your most recently used providers (DeepSeek/Moonshot/Kimi For Coding): auto-discovery, color-coded tiers, live refresh.'
+  zh: 可拖动的 API 余额/配额悬浮卡片：自动显示最近使用的 provider 余额/配额（DeepSeek/Moonshot/Kimi For Coding），按余额分档变色、实时刷新。

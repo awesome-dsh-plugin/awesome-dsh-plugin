@@ -1,0 +1,6 @@
+url: https://github.com/sakuraqqq/dsh-auto-paste
+name: sakuraqqq/dsh-auto-paste
+category: ui
+description:
+  en: Auto-saves large pasted text as an attachment file in the DeepSeek Harness web input box.
+  zh: 在输入框粘贴大段文本时自动保存为附件文件。

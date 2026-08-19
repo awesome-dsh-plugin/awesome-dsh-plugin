@@ -1,0 +1,6 @@
+url: https://github.com/mafeis/dsh-net-proxy
+name: mafeis/dsh-net-proxy
+category: tools
+description:
+  en: Route agent network requests through a local HTTP/CONNECT/SOCKS5 proxy.
+  zh: 让 agent 的网络请求走本机 HTTP/CONNECT/SOCKS5 代理。

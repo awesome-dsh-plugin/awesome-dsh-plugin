@@ -1,0 +1,6 @@
+url: https://github.com/Moeblack/dsh-prompt-studio
+name: Moeblack/dsh-prompt-studio
+category: session
+description:
+  en: Edit user and built-in system-prompt sections with live preview.
+  zh: 带实时预览的用户/内置 system prompt 分节编辑器。

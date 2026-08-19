@@ -1,0 +1,6 @@
+url: https://github.com/loeanxi/dsh-cursor-acp
+name: loeanxi/dsh-cursor-acp
+category: dev
+description:
+  en: Hands standalone jobs to the Cursor CLI signed in on the same machine, with child-model settings and a read-only connectivity test.
+  zh: 将独立任务交给同机已登录的 Cursor 命令行，并提供子模型设置和只读连通性测试。

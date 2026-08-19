@@ -1,0 +1,6 @@
+url: https://github.com/xxiaoxiong/dsh-kubernetes
+name: xxiaoxiong/dsh-kubernetes
+category: tools
+description:
+  en: Safe Kubernetes capability for DeepSeek Harness with workload inspection, bounded logs and events, failure diagnosis, and approval-gated operations.
+  zh: 面向 DeepSeek Harness 的安全 Kubernetes 能力，支持工作负载检查、有限日志与事件获取、故障诊断以及带审批控制的集群操作。

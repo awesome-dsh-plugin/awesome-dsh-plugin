@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-lsp-actions
+name: PerryLink/dsh-lsp-actions
+category: tools
+description:
+  en: 'LSP action surface for DSH: diagnostics, formatting, completion, code actions, symbols, signature help, inlay hints and rename, all backed by real language servers.'
+  zh: DSH 的 LSP 动作面：诊断、格式化、补全、代码动作、符号、签名提示、inlay 提示与重命名，全部由真实语言服务器驱动。

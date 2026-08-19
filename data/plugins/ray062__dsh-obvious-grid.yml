@@ -1,0 +1,6 @@
+url: https://github.com/ray062/dsh-obvious-grid
+name: ray062/dsh-obvious-grid
+category: notify
+description:
+  en: 'Ambient fullscreen status grid for DeepSeek Harness sessions with token/rate graphs, plus ntfy push and alarm notifications when a turn ends, errors, or waits for approval.'
+  zh: 'DeepSeek Harness 全屏状态看板：会话状态网格与 token/速率图表一览无余，回合结束、出错或等待审批时通过 ntfy 推送与铃声提醒。'

@@ -1,0 +1,6 @@
+url: https://github.com/Chinesezjc/dsh-interconnect
+name: Chinesezjc/dsh-interconnect
+category: session
+description:
+  en: Cross-instance message and event handoff between DSH instances via an interconnect server.
+  zh: 跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。

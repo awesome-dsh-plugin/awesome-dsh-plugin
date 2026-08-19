@@ -1,0 +1,6 @@
+url: https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager
+name: whyihaveyou/dsh-suite#plugin-manager
+category: market
+description:
+  en: 'In-app plugin store for the DSH Web UI: browse, search, one-click install, compat badges.'
+  zh: DSH Web UI 内置插件商店：浏览、搜索、一键安装、兼容性徽章。

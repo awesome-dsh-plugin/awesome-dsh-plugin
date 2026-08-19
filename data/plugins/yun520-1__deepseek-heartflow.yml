@@ -1,0 +1,6 @@
+url: https://github.com/yun520-1/deepseek-heartflow
+name: yun520-1/deepseek-heartflow
+category: tools
+description:
+  en: 'HeartFlow (心虫) AGI layer-1 discriminator gate as a DSH plugin: 47-dimension rule-based text checking (heartflow_check tool) plus automatic output supervision at tools/post-execute, fail-closed when engine missing.'
+  zh: 心虫（AGI 第1层辨别门禁）作为 DSH 插件：47 维纯规则文本判别（heartflow_check 工具）+ 工具调用后自动输出监督（fail-closed，引擎缺失时拒绝放行）。

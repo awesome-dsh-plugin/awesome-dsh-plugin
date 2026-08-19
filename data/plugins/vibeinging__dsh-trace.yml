@@ -1,0 +1,6 @@
+url: https://github.com/vibeinging/dsh-trace
+name: vibeinging/dsh-trace
+category: dev
+description:
+  en: Telemetry backend exporting turns, model steps, and tool calls to yiTrace.
+  zh: 遥测后端：把 turns、model steps、tool calls 导出到 yiTrace。

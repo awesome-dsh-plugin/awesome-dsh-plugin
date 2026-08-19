@@ -1,0 +1,6 @@
+url: https://github.com/Limitinfinitude/DSH-Right-Sidebar
+name: Limitinfinitude/DSH-Right-Sidebar
+category: ui
+description:
+  en: DSH Web right-side output dock that collects session artifacts, previews user-facing files, and preserves tab state per session.
+  zh: DSH Web 原生右侧产物栏，按会话收集用户产物，预览用户可读文件并保存标签状态。

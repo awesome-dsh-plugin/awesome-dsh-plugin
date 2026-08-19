@@ -1,0 +1,6 @@
+url: https://github.com/xgone/dsh-remote
+name: xgone/dsh-remote
+category: security
+description:
+  en: 'Remote access & authentication for DeepSeek Harness web UI: account/password login gate, MFA (TOTP), signed session cookies, role-based access, in-browser directory picker, account management settings, fully localized in English and Chinese.'
+  zh: 'DeepSeek Harness 网页端远程访问与认证：账号/密码登录门、MFA（TOTP 两步验证）、签名会话 Cookie、基于角色的访问控制、浏览器内目录选择器、账号管理设置页，界面支持中英双语。'

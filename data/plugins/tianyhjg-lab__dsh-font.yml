@@ -1,0 +1,6 @@
+url: https://github.com/tianyhjg-lab/dsh-font
+name: tianyhjg-lab/dsh-font
+category: theme
+description:
+  en: 'Font switcher for the DSH Web GUI: 99 UI fonts and 31 code fonts with CJK-Latin pairing stacks, instant apply and localStorage persistence.'
+  zh: DSH Web GUI 字体切换器：99 个界面字体与 31 个代码字体，中西文自动搭配，即选即生效，localStorage 持久化。

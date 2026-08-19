@@ -1,0 +1,6 @@
+url: https://github.com/yoza10635/dsh-argp
+name: yoza10635/dsh-argp
+category: session
+description:
+  en: 'Deterministic context compaction: prunes conversation atoms in reference-graph topological order with no LLM calls during compaction, and keeps pruned atoms recallable by marker.'
+  zh: '确定性上下文压缩：按引用图拓扑序摘除对话原子，压缩阶段不调用 LLM；被摘除的原子保留 marker，可按需回拉。'

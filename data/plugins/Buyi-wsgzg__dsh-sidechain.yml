@@ -1,0 +1,6 @@
+url: https://github.com/Buyi-wsgzg/dsh-sidechain
+name: Buyi-wsgzg/dsh-sidechain
+category: session
+description:
+  en: '`/side` persistent side sessions and `/btw` one-shot side questions, run in a temporary fork without touching main history.'
+  zh: '`/side` 持续性侧会话与 `/btw` 一次性侧问，在临时 fork 中运行、不写入主会话历史。'

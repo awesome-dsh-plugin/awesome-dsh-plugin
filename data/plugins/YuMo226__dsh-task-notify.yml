@@ -1,0 +1,6 @@
+url: https://github.com/YuMo226/dsh-task-notify
+name: YuMo226/dsh-task-notify
+category: notify
+description:
+  en: 'Native Windows system notification (Notification Center toast) when a task completes: goal completion or agent turn end.'
+  zh: 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。

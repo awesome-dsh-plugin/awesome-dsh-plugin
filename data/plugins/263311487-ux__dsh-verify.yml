@@ -1,0 +1,6 @@
+url: https://github.com/263311487-ux/dsh-verify
+name: 263311487-ux/dsh-verify
+category: browser
+description:
+  en: 'Independent browser acceptance testing for agent deliverables: JSON spec in, real-Chromium verdict out.'
+  zh: 'Agent 交付物的独立浏览器验收测试：JSON 规格进，真实 Chromium 结论出。'

@@ -1,0 +1,6 @@
+url: https://github.com/Nwflower/dsh-file-claim
+name: Nwflower/dsh-file-claim
+category: session
+description:
+  en: File claim/release protection for parallel DSH sessions on the same workspace (heartbeat stale takeover, pending 3-way merge area).
+  zh: 同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。

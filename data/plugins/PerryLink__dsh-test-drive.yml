@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-test-drive
+name: PerryLink/dsh-test-drive
+category: dev
+description:
+  en: Runs isolated install-and-smoke test drives for DSH plugins in throwaway profiles, returning structured pass/fail records and batch matrices without touching your real profile.
+  zh: 在一次性隔离配置中为 DSH 插件执行安装与冒烟测试，返回结构化的通过/失败记录与批量矩阵，不触碰真实配置。

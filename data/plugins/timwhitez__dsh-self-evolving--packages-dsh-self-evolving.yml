@@ -1,0 +1,6 @@
+url: https://github.com/timwhitez/dsh-self-evolving/tree/main/packages/dsh-self-evolving
+name: timwhitez/dsh-self-evolving#packages/dsh-self-evolving
+category: workflow
+description:
+  en: 'Evidence-first self-evolution controller: bounded Cordis candidate generation, one-shot real-Loader admission, Harbor evaluation, and a crash-resumable journaled lineage.'
+  zh: 证据优先的自进化控制器：有界生成 Cordis 候选插件，一次性真实 Loader 准入，Harbor 评测，可崩溃恢复的日志化谱系。

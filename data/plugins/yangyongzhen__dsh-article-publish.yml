@@ -1,0 +1,6 @@
+url: https://github.com/yangyongzhen/dsh-article-publish
+name: yangyongzhen/dsh-article-publish
+category: workflow
+description:
+  en: Publish articles to CSDN / Juejin / CNBlog directly from the session, no external server.
+  zh: 会话内直接发布文章到 CSDN / 掘金 / 博客园，无外部服务。

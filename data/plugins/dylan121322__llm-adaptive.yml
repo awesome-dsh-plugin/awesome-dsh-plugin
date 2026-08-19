@@ -1,0 +1,6 @@
+url: https://github.com/dylan121322/llm-adaptive
+name: dylan121322/llm-adaptive
+category: model
+description:
+  en: 'Adaptive model routing: per-request complexity classification with automatic provider routing.'
+  zh: 自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。

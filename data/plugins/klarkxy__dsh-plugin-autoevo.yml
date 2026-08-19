@@ -1,0 +1,6 @@
+url: https://github.com/klarkxy/dsh-plugin-autoevo
+name: klarkxy/dsh-plugin-autoevo
+category: tools
+description:
+  en: 'Reuse-first capability evolution for agents: resolve existing tools and skills, discover and review exact-commit DSH plugins, install with one-time approval, verify real tool round trips, and minimally adapt partial matches instead of rebuilding from scratch.'
+  zh: 面向 Agent 的“复用优先”能力演进层：先解析已有工具与 Skills，再发现并审查锁定 commit 的 DSH 插件，经一次性批准安装并验证真实工具往返；部分匹配则最小改进，而非从零重造。

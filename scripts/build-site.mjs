@@ -14,16 +14,41 @@ import fs from 'node:fs'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
+import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
+const SCREENSHOTS_FILE = 'data/screenshots.json'
 
 // docs/ is fully generated: static assets live in site/assets/ and are copied
 // in here, so a from-scratch build (empty docs/) produces the complete site
 fs.mkdirSync('docs', { recursive: true })
 for (const f of fs.readdirSync('site/assets')) fs.copyFileSync(`site/assets/${f}`, `docs/${f}`)
 const NPM_MAP_FILE = 'data/npm-map.json'
-const CAT_IDS = ['ui', 'theme', 'model', 'session', 'memory', 'tools', 'skill', 'workflow', 'notify', 'dev', 'market', 'fun']
+// url -> prebuilt release tarball, declared per entry in data/plugins/*.yml.
+// A declared tarball is dropped once probe-tarballs.mjs has confirmed it 404s:
+// the entry then falls back to its `github:owner/repo` command, which is what
+// every entry had before the field existed, rather than shipping a download
+// link that is known to be dead (#1619).
+//
+// Confirmed-dead only. No verdict means the probe has not run — a local build,
+// or an entry added since the last refresh — and treating that as dead would
+// strip the field from every entry whenever the probe is skipped.
+const TARBALLS_FILE = 'data/tarballs.json'
+const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSync(TARBALLS_FILE, 'utf8')) : {}
+const tarballMap = Object.fromEntries(
+  readEntries()
+    .filter((e) => {
+      if (!e.tarball) return false
+      const v = tarballVerdicts[e.url]
+      // A verdict is only about the URL it was recorded against: if the entry
+      // now declares a different tarball, the old verdict says nothing.
+      return !(v && v.tarball === e.tarball && v.ok === false)
+    })
+    .map((e) => [e.url, e.tarball]),
+)
+// Single source of truth, shared with the README generator (scripts/lib/entries.mjs).
+const CAT_IDS = ENTRY_CAT_IDS
 
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -103,6 +128,44 @@ const N = ordered.length
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+// Missing (not yet bootstrapped, or an entry with no npm package) is a
+// normal, permanent state for most entries — unlike stars.json, absence
+// here needs no publish-blocking floor of its own: probe-downloads.mjs
+// already refuses to WRITE the file on a bad run, so whatever is on disk is
+// the last known-good result, or nothing yet.
+const downloadsMap = fs.existsSync('data/downloads.json') ? JSON.parse(fs.readFileSync('data/downloads.json', 'utf8')) : {}
+
+// Publishing is the last chance to notice that a data file arrived empty, and
+// the only one that matters to consumers: docs/ is deployed straight to Pages,
+// so a bad build replaces the good one and downstream clients read whatever it
+// contains. On 2026-08-18 plugins.json went out with `stars: null` for all
+// 1,362 entries (#1673) because probe-stars.mjs was handed an exhausted API
+// quota and a cold cache at the same time, wrote {}, and nothing between it and
+// the deploy asked whether that was plausible.
+//
+// A floor, not an exact match: entries added since the last probe legitimately
+// have no star count yet, and a repository that 404s never will. Losing more
+// than a third of them at once is not attrition, it is a broken probe — and
+// keeping yesterday's stars live beats publishing nulls, because a stale number
+// degrades gracefully and a null does not.
+// Only on the publishing path. pr-check.yml also runs this build — for locale
+// parity, date derivation and template validation — with no intention of
+// deploying, and there a missing data/stars.json would fail every contributor's
+// PR with a message about publishing that has nothing to do with their
+// submission. A guard that blocks people for our own infrastructure's state is
+// the failure mode this repository has spent the day removing, so it is opt-out
+// by the caller rather than inferred from whether the file happens to be there.
+const STARS_MIN_COVERAGE = 0.66
+const starsHave = ordered.filter((e) => typeof starsMap[e.url]?.stars === 'number').length
+if (process.env.SKIP_PUBLISH_CHECKS !== '1' && ordered.length && starsHave / ordered.length < STARS_MIN_COVERAGE) {
+  const pct = ((starsHave / ordered.length) * 100).toFixed(1)
+  throw new Error(
+    `refusing to publish: only ${starsHave}/${ordered.length} entries (${pct}%) have a star count, below the ${STARS_MIN_COVERAGE * 100}% floor.\n`
+    + 'data/stars.json is empty or truncated — almost always probe-stars.mjs hitting an exhausted\n'
+    + 'GitHub API quota on a cold cache. The previous deploy stays live, which is the point.\n'
+    + 'Re-run once the hourly quota resets; PROBE_ALL=1 forces a full refresh.',
+  )
+}
 if (ordered.some((e) => !dates[e.url])) {
   const log = execSync(`git log --reverse --date-order --format=%x01%cI -p -- ${LOCALES[0].readme}`,
     { encoding: 'utf8', maxBuffer: 1 << 28 })
@@ -126,6 +189,41 @@ if (ordered.some((e) => !dates[e.url])) {
 const isoTs = (s) => (s.includes('T') ? s : s + 'T00:00:00Z')
 for (const e of ordered) { e.addedAt = dates[e.url]; e.added = e.addedAt.slice(0, 10) }
 
+// Optional per-entry screenshots (data/screenshots.json): keyed by the entry
+// URL like added-dates.json; values are image URLs surfaced by storefronts
+// (dsh-market #61: AppStore-style screenshots on the detail view). Validated
+// here so a bad submission fails the PR check: keys must match a listed
+// entry, and images must live on GitHub's own hosting — a third-party image
+// host would let a list PR plant a tracking pixel in every storefront
+// user's browser.
+const SCREENSHOT_HOSTS = new Set([
+  'raw.githubusercontent.com',
+  'user-images.githubusercontent.com',
+  'camo.githubusercontent.com',
+  'github.com',
+])
+const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SCREENSHOTS_FILE, 'utf8')) : {}
+{
+  const listed = new Set(ordered.map((e) => e.url))
+  let shotsBroken = false
+  const complain = (msg) => { console.error(`${SCREENSHOTS_FILE}: ${msg}`); shotsBroken = true }
+  for (const [key, value] of Object.entries(shotsMap)) {
+    if (!listed.has(key)) complain(`"${key}" is not a listed entry URL (keys must match the README entry link exactly)`)
+    if (!Array.isArray(value) || value.length === 0 || value.length > 8 || value.some((s) => typeof s !== 'string')) {
+      complain(`"${key}" must map to an array of 1-8 image URL strings`)
+      continue
+    }
+    for (const shot of value) {
+      let parsed = null
+      try { parsed = new URL(shot) } catch { /* complain below */ }
+      if (parsed === null || parsed.protocol !== 'https:' || !SCREENSHOT_HOSTS.has(parsed.hostname)) {
+        complain(`"${key}": images must be https URLs on GitHub hosting (${[...SCREENSHOT_HOSTS].join(' / ')}), got: ${shot}`)
+      }
+    }
+  }
+  if (shotsBroken) process.exit(1)
+}
+
 // derive repo/subdir install specs and the detail-page slug once
 for (const e of ordered) {
   const repoPath = e.url.replace('https://github.com/', '')
@@ -135,7 +233,16 @@ for (const e of ordered) {
     ? `dsh plugin --profile web add github:${e.repo}#path:/${e.sub}`
     : `dsh plugin --profile web add github:${e.repo}`
   e.npm = npmMap[e.url]?.npm ?? null
+  // Optional author-declared prebuilt release tarball (data/plugins/*.yml).
+  // Some plugins ship only a built tarball and are not installable from
+  // source at all, so `github:owner/repo` would hand users a broken command.
+  e.tarball = tarballMap[e.url] ?? null
+  e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
   e.stars = starsMap[e.url]?.stars ?? null
+  // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
+  // entries with no npm package at all — a coverage gap, not a zero.
+  // Consumers must tell "not published" apart from "published, unused".
+  e.downloads = downloadsMap[e.url]?.downloads ?? null
   e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
 }
 
@@ -161,7 +268,7 @@ function buildRows(loc, only) {
     .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
   return group.map((e) => {
     const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
-    const short = e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name
+    const short = shortName(e.name)
     return `    <li class="card" data-cat="${e.cat}">
       <div class="top">
         <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
@@ -183,6 +290,26 @@ function buildRows(loc, only) {
       </div>
     </li>`
   }).join('\n\n')
+}
+
+// The bare plugin name, without the "owner/" the READMEs carry for human
+// disambiguation. Titles lead with this: nobody searches the owner prefix,
+// and it costs a dozen characters of a budget that truncates around sixty.
+const shortName = (name) => (name.includes('/') ? name.slice(name.indexOf('/') + 1) : name)
+
+// Highest-starred entries in a category, for its meta description. Stars come
+// from a probe that only runs in CI, so a local build ranks by list order
+// instead — the names still differ per category, which is the point.
+function catTop(id, loc, n = 3) {
+  const names = ordered
+    .filter((e) => e.cat === id)
+    .slice()
+    .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+    .slice(0, n)
+    .map((e) => shortName(e.name))
+  if (names.length <= 1) return names[0] ?? ''
+  const sep = loc.code === 'zh' ? '、' : ', '
+  return names.join(sep)
 }
 
 function buildChips(loc) {
@@ -235,6 +362,7 @@ for (const loc of LOCALES) {
     .replaceAll('__LOCALE_LINKS__', () => localeLinks(loc))
     .replaceAll('__SEARCH_PH__', () => loc.SEARCH_PH)
     .replaceAll('__HOME__', () => loc.urlPath)
+    .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
@@ -266,14 +394,18 @@ for (const loc of LOCALES) {
     page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChipLinks(loc, id)}\n    ${b}`)
     page = page
       .replaceAll('__LANG__', () => loc.htmlLang)
-      .replaceAll('__TITLE__', () => loc.CAT_TITLE.replace('{CAT}', loc.categories[id]))
-      .replaceAll('__DESC__', () => loc.CAT_DESC.replace('{CAT}', loc.categories[id]).replace('{N}', n))
+      .replaceAll('__TITLE__', () => esc(loc.CAT_TITLE.replace('{CAT}', loc.categories[id]).replace('{N}', n)))
+      .replaceAll('__DESC__', () => esc(loc.CAT_DESC
+        .replace('{CAT}', loc.categories[id])
+        .replaceAll('{N}', n)
+        .replace('{TOP}', catTop(id, loc))))
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => catHreflangs)
       .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}${id}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__SEARCH_PH__', () => loc.SEARCH_PH)
     .replaceAll('__HOME__', () => loc.urlPath)
+    .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
@@ -281,6 +413,38 @@ for (const loc of LOCALES) {
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
   }
+}
+
+// Privacy page: /privacy/ per locale. The body is prose, not UI strings, so it
+// lives in its own per-locale file (site/privacy.<code>.html) rather than in
+// the locale registry — but the registry still declares it, so a new language
+// fails loudly here instead of silently shipping an English privacy notice.
+const privacyMaster = fs.readFileSync('site/privacy-template.html', 'utf8')
+for (const loc of LOCALES) {
+  if (!fs.existsSync(loc.privacyBody)) {
+    console.error(`${loc.readme}'s locale declares privacyBody ${loc.privacyBody}, which does not exist`)
+    process.exit(1)
+  }
+  const url = ORIGIN + loc.privacyPath
+  const pHreflangs = [
+    ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.privacyPath}">`),
+    `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].privacyPath}">`,
+  ].join('\n')
+  let page = privacyMaster
+    .replaceAll('__LANG__', () => loc.htmlLang)
+    .replaceAll('__TITLE__', () => esc(loc.PRIVACY_TITLE))
+    .replaceAll('__DESC__', () => esc(loc.PRIVACY_DESC))
+    .replaceAll('__URL__', () => url)
+    .replaceAll('__HREFLANGS__', () => pHreflangs)
+    .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
+    .replaceAll('__HOME__', () => loc.urlPath)
+    .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code)
+      .map((l) => `<a class="lang-btn" href="${l.privacyPath}" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n  '))
+    .replaceAll('__PRIVACY_BODY__', () => fs.readFileSync(loc.privacyBody, 'utf8').trimEnd())
+  for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
+  const outDir = 'docs' + loc.privacyPath.replace(/\/$/, '')
+  fs.mkdirSync(outDir, { recursive: true })
+  fs.writeFileSync(`${outDir}/index.html`, page)
 }
 
 // Plugin detail pages: /p/{owner}/{repo}[--subdir]/ per locale
@@ -295,18 +459,54 @@ function renderReadme(rm) {
     if (/^data:/i.test(href)) return allowData ? href : '#'
     return base + href.replace(/^\.\//, '').replace(/^\//, '')
   }
+  // A README is third-party markdown, and an <img> in it is a request the
+  // visitor's browser makes to whatever host the author named — which is
+  // exactly the tracking-pixel vector SCREENSHOT_HOSTS already exists to shut
+  // (see data/screenshots.json validation above). The same rule has to apply
+  // here or the guarantee is only as strong as its weakest path.
+  //
+  // The allowlist is GitHub's own hosting, which costs the visitor nothing new:
+  // this site is served from GitHub Pages, so GitHub already sees the request
+  // for the page itself. Everything else — badge services, CDNs, personal
+  // domains — is dropped outright, along with the link and paragraph it leaves
+  // behind. Keeping the alt text instead was worse: nearly all of these are
+  // status badges, and a row of them collapses into "DSH Node.js JavaScript
+  // Cordis Zero deps" — prose the author never wrote, in the position a reader
+  // starts reading. The whole README is one click away in either case.
+  const imgAllowed = (href) => {
+    if (/^data:/i.test(href)) return true // inline bytes, no request leaves
+    try { return SCREENSHOT_HOSTS.has(new URL(href).hostname) } catch { return false }
+  }
   const md = new Marked({
     walkTokens(t) {
       if (t.type === 'heading') t.depth = Math.min(t.depth + 1, 6)
       else if (t.type === 'image') t.href = abs(t.href, rm.base, true)
       else if (t.type === 'link') t.href = abs(t.href, rm.blobBase)
     },
-    renderer: { html: () => '' },
+    renderer: {
+      html: () => '',
+      image({ href, title, text }) {
+        if (!href || !imgAllowed(href)) return ''
+        const t = title ? ` title="${esc(title)}"` : ''
+        return `<img src="${esc(href)}" alt="${esc(text ?? '')}"${t} loading="lazy" decoding="async" referrerpolicy="no-referrer">`
+      },
+    },
   })
   try {
     // drop a leading H1 — the page already has one
     const src = rm.md.replace(/^\s*# .*\n/, '')
-    return md.parse(src)
+    // A dropped image leaves debris: first the link that wrapped it, then the
+    // paragraph that held only that link. Raw HTML is already stripped, so
+    // every anchor and paragraph here came from markdown and had content until
+    // we removed the image. Loop because emptying a link empties its paragraph.
+    let html = md.parse(src)
+    for (let prev = null; prev !== html;) {
+      prev = html
+      html = html
+        .replace(/<a\b[^>]*>\s*<\/a>/g, '')
+        .replace(/<p>\s*<\/p>\s*/g, '')
+    }
+    return html
   } catch {
     return null
   }
@@ -320,9 +520,20 @@ for (const loc of LOCALES) {
       `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/">`,
     ].join('\n')
     const desc = e.descs[loc.code]
-    const metaDesc = desc.length > 155 ? desc.slice(0, 152) + '…' : desc
+    // Trim to a boundary rather than mid-word: a description cut at "config" ->
+    // "conf…" is the one line a searcher reads before deciding to click. Prefer
+    // ending on a sentence, else the last word; CJK has no spaces, so the word
+    // fallback simply does not fire there and the hard cut stands.
+    const metaDesc = (() => {
+      if (desc.length <= 155) return desc
+      const head = desc.slice(0, 152)
+      const stop = Math.max(head.lastIndexOf('. '), head.lastIndexOf('。'), head.lastIndexOf('；'), head.lastIndexOf('; '))
+      if (stop > 90) return desc.slice(0, stop + 1).trim()
+      const space = head.lastIndexOf(' ')
+      return (space > 90 ? head.slice(0, space) : head).trimEnd() + '…'
+    })()
 
-    const short = e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name
+    const short = shortName(e.name)
     const h1 = `<span class="owner">${esc(e.owner)}/</span><wbr><span class="name">${esc(short)}</span>`
 
     const specs = [
@@ -334,6 +545,7 @@ for (const loc of LOCALES) {
 
     const cmds = []
     if (e.npm) cmds.push({ cmd: `dsh plugin --profile web add ${e.npm}`, note: loc.strings.NPM_C })
+    if (e.cmdTarball) cmds.push({ cmd: e.cmdTarball, note: loc.strings.TGZ_C })
     cmds.push({ cmd: e.cmdGit, note: loc.strings.GH_C })
     const install = cmds.map(({ cmd, note }) => `<p class="note" style="margin:.2rem 0 .45rem"># ${note}</p>
     <div class="cmd"><pre translate="no">${esc(cmd)}</pre><button type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button></div>`).join('\n    ')
@@ -370,13 +582,32 @@ for (const loc of LOCALES) {
       ],
     }])
 
-    // pick the README matching the page locale; fall back to whatever exists
+    // Pick the README matching the page locale, falling back to whatever the
+    // project actually published. Roughly a third of entries ship only one
+    // language, so the fallback fires on hundreds of pages: rendering it is
+    // still right (documentation in the wrong language beats none), but the
+    // block must then carry its own `lang` — a page that declares lang="en"
+    // around Chinese prose is lying to every consumer that reads it, from
+    // screen readers to search engines, and there is no upside to that.
     const entry = readmes[e.url]
-    const rm = entry ? (entry[loc.code] ?? entry.en ?? entry.zh ?? (entry.md ? entry : null)) : null
+    let rm = null
+    let rmLang = null
+    if (entry) {
+      for (const code of [loc.code, ...LOCALES.map((l) => l.code)]) {
+        if (entry[code]) { rm = entry[code]; rmLang = code; break }
+      }
+      // legacy shape: the README sat directly on the entry, with no locale key
+      if (!rm && entry.md) { rm = entry; rmLang = loc.code }
+    }
     const readmeHtml = rm ? renderReadme(rm) : null
+    const rmLocale = LOCALES.find((l) => l.code === rmLang)
+    const rmMismatch = rm != null && rmLang !== loc.code
+    const rmNote = rmMismatch
+      ? `\n    <p class="note">${esc(loc.strings.P_README_ONLY.replace('{LANG}', loc.langNames[rmLang] ?? rmLang))}</p>`
+      : ''
     const readmeSection = readmeHtml ? `<section class="panel readme">
-    <h2>README</h2>
-    <div class="md" translate="no">
+    <h2>README</h2>${rmNote}
+    <div class="md" lang="${rmLocale?.htmlLang ?? loc.htmlLang}" translate="no">
 ${readmeHtml}
     </div>
     <p class="note"><a href="${rm.htmlUrl}" rel="noopener">${loc.strings.P_README_SRC}</a></p>
@@ -386,13 +617,16 @@ ${readmeHtml}
     page = page
       .replaceAll('__P_README_SECTION__', () => readmeSection)
       .replaceAll('__LANG__', () => loc.htmlLang)
-      .replaceAll('__TITLE__', () => esc(loc.P_TITLE.replace('{NAME}', e.name).replace('{CAT}', loc.categories[e.cat])))
+      .replaceAll('__TITLE__', () => esc(loc.P_TITLE
+        .replace('{NAME}', e.name)
+        .replace('{CAT}', loc.categories[e.cat])))
       .replaceAll('__DESC__', () => esc(metaDesc))
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => dHreflangs)
       .replaceAll('__OG_IMAGE__', () => ORIGIN + loc.og)
       .replaceAll('__JSONLD__', () => ldSafe(jsonldDetail))
       .replaceAll('__HOME__', () => loc.urlPath)
+      .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
@@ -472,22 +706,79 @@ const registry = {
       // READMEs render "owner/name" for human disambiguation; machine
       // consumers (find-plugin, dsh-market) match on the bare plugin name,
       // with `owner` as its own field.
-      name: e.name.includes('/') ? e.name.slice(e.name.indexOf('/') + 1) : e.name,
+      name: shortName(e.name),
       owner: e.owner,
       url: e.url,
       page: `${ORIGIN}/p/${e.slug}/`,
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
+      // The author-declared release asset, when there is one. `install` folds
+      // it into a display string, but a consumer that only reads `npm` sees
+      // null and falls back to `github:owner/repo` — a different artifact from
+      // the one the listing tells a human to install, and for a plugin that
+      // ships no built output, one that does not install at all. Recovering it
+      // by parsing the command string is not a contract worth offering, so the
+      // field is published directly. Omitted when absent, like `screenshots`.
+      tarball: e.tarball ?? undefined,
       stars: e.stars,
-      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit,
+      downloads: e.downloads,
+      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
+      // Optional, author-maintained (data/screenshots.json); omitted when
+      // absent so the payload stays lean. Storefronts fall back to their own
+      // README extraction (dsh-market #61).
+      screenshots: shotsMap[e.url],
     }
   }),
 }
 fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 
+// Public README payload: /readmes.json — the markdown the detail pages render,
+// keyed by entry URL like the registry. Published so a storefront can build
+// plugin pages with the same body text instead of re-probing GitHub for it:
+// the probe costs ~700 API calls, and two independent copies would drift.
+//
+// Only listed entries are included, so a delisted plugin disappears here the
+// same build it disappears everywhere else. Large — a few MB before the
+// compression Pages applies — which is why it is one file a build fetches
+// once rather than 1,300 a build fetches individually.
+{
+  const listed = new Set(ordered.map((e) => e.url))
+  const payload = {
+    name: 'awesome-dsh-plugin',
+    url: ORIGIN,
+    updated: registry.updated,
+    count: 0,
+    // locale code -> the README language it is served for, so a consumer can
+    // reproduce the fallback the site itself does (and mark the mismatch).
+    locales: LOCALES.map((l) => l.code),
+    readmes: {},
+  }
+  for (const [url, entry] of Object.entries(readmes)) {
+    if (!listed.has(url)) continue
+    const langs = {}
+    for (const l of LOCALES) if (entry[l.code]) langs[l.code] = entry[l.code]
+    if (!Object.keys(langs).length) continue
+    payload.readmes[url] = langs
+    payload.count++
+  }
+  fs.writeFileSync('docs/readmes.json', JSON.stringify(payload) + '\n')
+  console.log(`readmes.json: ${payload.count} entries, ${(fs.statSync('docs/readmes.json').size / 1048576).toFixed(1)} MB`)
+}
+
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
+
+// The privacy page changes on the order of once a year, so its lastmod comes
+// from the commit that last touched its sources rather than from build time.
+// A lastmod that moves every night without the page changing is worse than
+// none: it teaches a crawler to stop believing every lastmod on the site.
+// Empty only before these files are first committed, where today is correct.
+const PRIVACY_LASTMOD = (() => {
+  const sources = ['site/privacy-template.html', ...LOCALES.map((l) => l.privacyBody)]
+  const out = execSync(`git log -1 --format=%cs -- ${sources.join(' ')}`, { encoding: 'utf8' }).trim()
+  return out || new Date().toISOString().slice(0, 10)
+})()
 const alternates = [
   ...LOCALES.map((l) => `      <xhtml:link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}"/>`),
   `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}"/>`,
@@ -506,6 +797,12 @@ ${LOCALES.flatMap((l) => CAT_IDS.map((id) => `  <url>
     <changefreq>daily</changefreq>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}${id}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}${id}/"/>`].join('\n')}
   </url>`)).join('\n')}
+${LOCALES.map((l) => `  <url>
+    <loc>${ORIGIN}${l.privacyPath}</loc>
+    <lastmod>${PRIVACY_LASTMOD}</lastmod>
+    <changefreq>yearly</changefreq>
+${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.privacyPath}"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].privacyPath}"/>`].join('\n')}
+  </url>`).join('\n')}
 ${LOCALES.flatMap((l) => ordered.map((e) => `  <url>
     <loc>${ORIGIN}${l.urlPath}p/${e.slug}/</loc>
     <lastmod>${e.added}</lastmod>
@@ -516,9 +813,13 @@ ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code
 `)
 
 // shields.io endpoint badge — the READMEs embed this instead of a hand-written
-// count, so the build never has to touch source files
+// count, so the build never has to touch source files.
+//
+// cacheSeconds is how long shields' CDN serves a stale count: the badge sits
+// directly above a list whose length anyone can count, so an hour of drift
+// reads as a bug in the list. 300 is shields' floor for endpoint badges.
 fs.writeFileSync('docs/count.json', JSON.stringify({
-  schemaVersion: 1, label: 'plugins', message: String(N), color: 'c0392b', cacheSeconds: 3600,
+  schemaVersion: 1, label: 'plugins', message: String(N), color: 'c0392b', cacheSeconds: 300,
 }) + '\n')
 
 console.log(`site built: ${N} rows × ${LOCALES.length} locales + sitemap + count badge`)

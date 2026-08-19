@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-flakefinder
+name: STARDUSTLC666/dsh-flakefinder
+category: dev
+description:
+  en: 'Test-stability tools: repeatedly run vitest/jest/pytest/node:test suites, classify flaky cases, keep history and maintain a quarantine manifest.'
+  zh: 测试稳定性工具：重复运行 vitest/jest/pytest/node:test，识别 flaky 用例，历史留档与隔离清单。

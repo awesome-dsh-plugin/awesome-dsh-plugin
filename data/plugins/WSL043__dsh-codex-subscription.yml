@@ -1,0 +1,6 @@
+url: https://github.com/WSL043/dsh-codex-subscription
+name: WSL043/dsh-codex-subscription
+category: model
+description:
+  en: Built-in ChatGPT OAuth provider for Codex models, selectable subscription web search, backend quota for standard Codex and Spark, and a DSH settings UI; no API key or Codex CLI required.
+  zh: 内置 ChatGPT OAuth 的 Codex 模型提供方：可切换订阅联网搜索，在设置页显示普通 Codex 与 Spark 独立额度；无需 API Key 或 Codex CLI。

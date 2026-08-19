@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-skill-explorer
+name: wingsky-1/dsh-plugin-hub#packages/dsh-skill-explorer
+category: dev
+description:
+  en: 'Skill center in the DSH web GUI: browse loaded skills grouped by source (system / project / user / custom / runtime), with create, enable/disable, and delete (moves to .trash) actions.'
+  zh: DSH Web GUI 技能中心：按来源分级（系统内置/项目/用户/自定义/运行时）浏览已加载技能，支持创建、启用/禁用与删除（移入 .trash 可恢复）。

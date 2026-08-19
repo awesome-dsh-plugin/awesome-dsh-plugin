@@ -1,0 +1,7 @@
+url: https://github.com/Nixz0824/dsh-usage-stats-plus
+name: Nixz0824/dsh-usage-stats-plus
+category: usage
+description:
+  en: DSH usage and balance panel with official live balance, per-event official peak/off-peak pricing, all-channel spend estimates from daily balance snapshots, and a Codex-style 12-month token activity timeline. Fork of Ychris12138/dsh-usage-stats.
+  zh: DSH 用量与余额面板：官方余额实时拉取、逐事件官方峰谷计价、基于余额快照的全渠道消耗估算、Codex 风格 12 个月 Token 活动时间轴。Fork 自 Ychris12138/dsh-usage-stats。
+tarball: https://github.com/Nixz0824/dsh-usage-stats-plus/releases/latest/download/dsh-usage-stats-plus-0.3.0.tgz

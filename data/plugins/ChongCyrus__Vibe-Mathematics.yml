@@ -1,0 +1,6 @@
+url: https://github.com/ChongCyrus/Vibe-Mathematics
+name: ChongCyrus/Vibe-Mathematics
+category: workflow
+description:
+  en: 'Multi-agent math problem-solving & verification framework: brainstorm → solver iteration → multi-verifier debate → Verified knowledge base, with checkpoint resume and manual/auto intervention (also ships as an agent preset).'
+  zh: 多代理数学问题求解与验证框架：头脑风暴 → 求解迭代 → 多验证器辩论 → 可信知识库沉淀，支持断点续跑与人工/自动干预（同时提供 agent preset 与可安装 bundle）。

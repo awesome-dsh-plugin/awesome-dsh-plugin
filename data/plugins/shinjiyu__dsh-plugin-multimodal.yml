@@ -1,0 +1,6 @@
+url: https://github.com/shinjiyu/dsh-plugin-multimodal
+name: shinjiyu/dsh-plugin-multimodal
+category: vision
+description:
+  en: Advertise image paste on text-only DeepSeek routes, describe attachments with a vision sidecar, and leave native vision models untouched.
+  zh: 在纯文本 DeepSeek 线路上开放贴图准入，用视觉 sidecar 把附件转成文字，原生视觉模型不改写。

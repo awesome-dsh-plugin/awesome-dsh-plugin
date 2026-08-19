@@ -1,0 +1,6 @@
+url: https://github.com/xmanrui/dsh-feishu
+name: xmanrui/dsh-feishu
+category: notify
+description:
+  en: Connect a Feishu bot to DeepSeek Harness by scanning a QR code.
+  zh: 通过扫码把飞书机器人接入DeepSeek Harness。

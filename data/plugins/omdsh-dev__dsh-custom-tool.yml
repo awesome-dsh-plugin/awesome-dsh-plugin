@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-custom-tool
+name: omdsh-dev/dsh-custom-tool
+category: tools
+description:
+  en: Create and manage sandboxed JavaScript tools with a Monaco editor and model-driven tool lifecycle.
+  zh: 用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。

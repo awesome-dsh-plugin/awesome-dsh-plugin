@@ -1,0 +1,6 @@
+url: https://github.com/Elohia/dsh-plugin-mm-vision
+name: Elohia/dsh-plugin-mm-vision
+category: vision
+description:
+  en: 'Synesthesia Encoder for DSH: a vision model translates images into compact structured spatial text (canvas/elements/percentage coordinates), giving text-only LLMs pixel-level image understanding via the `mm_vision` tool.'
+  zh: 通感编码器（Synesthesia Encoder）：调用视觉模型把图片翻译成紧凑的结构化空间文字（画布/元素/百分比坐标），让纯文本 LLM 获得像素级看图能力（`mm_vision` 工具）。

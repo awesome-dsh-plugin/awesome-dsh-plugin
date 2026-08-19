@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/pty-runner
+name: JohnXu22786/pty-runner
+category: tools
+description:
+  en: 'Long-lived background terminal jobs for dsh: launch processes in a PTY, write input (including control sequences like Ctrl+C), page through ring-buffered output, and stop jobs gracefully or forcefully.'
+  zh: 'dsh 后台终端作业管理插件：在独立 PTY 会话中运行长时进程，写入普通文本与转义控制序列，分页读取环形缓冲输出，并支持优雅或强制终止作业。'

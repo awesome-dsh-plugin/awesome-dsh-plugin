@@ -1,0 +1,6 @@
+url: https://github.com/shrekcg/dsh-lark-bridge
+name: shrekcg/dsh-lark-bridge
+category: notify
+description:
+  en: 'Bidirectional Feishu/Lark channel for DeepSeek Harness: persistent conversations, true streaming replies, 40 MCP Feishu tools, slash commands, and an IM-bot status tab in the plugin settings.'
+  zh: DeepSeek Harness 的飞书/Lark 双向通道：持久会话、真流式回复、40 个飞书 MCP 工具、斜杠命令，以及插件设置页中的 IM 机器人状态页。

@@ -1,0 +1,6 @@
+url: https://github.com/Isanti2016/dsh-quicksight
+name: Isanti2016/dsh-quicksight
+category: vision
+description:
+  en: 'Two-tier image reading for text-only models: fast local OCR (RapidOCR, offline) first, vision-model fallback (modlens).'
+  zh: 纯文本模型双层识图：优先本地快速 OCR（RapidOCR，离线），不足时回落视觉模型（modlens）。

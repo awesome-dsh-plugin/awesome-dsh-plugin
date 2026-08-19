@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/fs-mcp
+name: JohnXu22786/fs-mcp
+category: tools
+description:
+  en: 'Paddock: constrained local filesystem MCP server for agents — text read/write, directory ops, filename and content search confined to configurable zones, with zero runtime dependencies and a dsh bundle.'
+  zh: paddock：面向 agent 的本地文件系统 MCP server——读写、目录操作、文件名与正文检索全部约束在可配置「围场」目录内，零运行时依赖，dsh bundle 接入。

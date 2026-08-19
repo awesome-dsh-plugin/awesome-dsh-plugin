@@ -1,0 +1,6 @@
+url: https://github.com/GXX182/dsh-vision-bridge
+name: GXX182/dsh-vision-bridge
+category: vision
+description:
+  en: Bridges session images to configurable vision providers and returns text-only analysis to eligible DeepSeek Harness model routes.
+  zh: 将会话图片转交可配置视觉服务，并向符合条件的 DeepSeek Harness 模型路由返回纯文本分析。

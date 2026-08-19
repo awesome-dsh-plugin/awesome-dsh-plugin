@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-doublecheck
+name: PerryLink/dsh-doublecheck
+category: workflow
+description:
+  en: 'Engineering-discipline guard: requirements grill before the first edit, red/green test-evidence gates, forked adversary review, and a delivery report with a per-dimension verification workflow.'
+  zh: 工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审，并汇总交付报告与逐维度核对。
