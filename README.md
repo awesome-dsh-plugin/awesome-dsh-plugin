@@ -615,6 +615,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Memory
 
+- [863683348/dsh-memory-setup](https://github.com/863683348/dsh-memory-setup) - Local, auditable personal memory for DeepSeek Harness: preferences, project conventions, workflows and error lessons persisted as a changelogged JSON file in the workspace, with onboarding, auto project-convention extraction and evidence-backed lessons.
 - [863683348/dsh-plugin-focus](https://github.com/863683348/dsh-plugin-focus) - Focus board for DeepSeek Harness agents: durable, model-maintained notes in the session workspace that pin the objective, constraints, and decisions across compaction and sessions, with automatic context injection, archive on clear, and an optional web panel.
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) - Model-authored context pruning for DeepSeek Harness through the official compaction API.
 - [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) - Cache-friendly three-layer memory for DSH: lean auto injection, per-turn AI consolidation, proactive calendar reminders and warm greetings, plus memory inheritance from other AI tools.
