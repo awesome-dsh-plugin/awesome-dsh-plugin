@@ -933,5 +933,10 @@
  "https://github.com/wenheguo2/dsh-delegation-suite": [
   "https://raw.githubusercontent.com/wenheguo2/dsh-delegation-suite/main/assets/routes.png",
   "https://raw.githubusercontent.com/wenheguo2/dsh-delegation-suite/main/assets/subagents.png"
+ ],
+ "https://github.com/kanneiren/dsh-network-settings": [
+  "https://raw.githubusercontent.com/kanneiren/dsh-network-settings/main/docs/images/wsl-path-graph.png",
+  "https://raw.githubusercontent.com/kanneiren/dsh-network-settings/main/docs/images/win-path-graph.png",
+  "https://raw.githubusercontent.com/kanneiren/dsh-network-settings/main/docs/images/win-network-config.png"
  ]
 }
