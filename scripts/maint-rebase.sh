@@ -85,6 +85,16 @@ for n in "$@"; do
     }
   fi
 
+  # The READMEs are generated, so main's copy is the only correct starting
+  # point — not just when the rebase conflicted. A rebase that applies cleanly
+  # still carries whatever the branch's README said, and on an old fork that is
+  # a README from a different era: entry lines main has since removed (which
+  # then fail the "appears in the README but has no data/plugins file" check)
+  # and links to locale files that no longer exist. Both showed up as
+  # GEN-FAIL "bad entry data", blaming the contributor's YAML for a staleness
+  # this script had itself preserved.
+  git checkout origin/main -- README.md README.zh.md 2>/dev/null
+
   node scripts/generate-readme.mjs >/dev/null 2>&1 || {
     git checkout -f -q main; echo "$n :: GEN-FAIL (bad entry data)"; continue
   }
