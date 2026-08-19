@@ -596,6 +596,7 @@ dsh plugin --profile web add dshmarket
 - [Sttrevens/dsh-linked-folders](https://github.com/Sttrevens/dsh-linked-folders) — 多文件夹工作区：全局链接文件夹列表 + 会话内临时挂载（link_folder/unlink_folder），侧边栏管理并支持系统选目录。
 - [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) — 对话旁的悬浮按钮，打开当前会话全部提问的可搜索列表并快速跳转。
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) — 为会话添加标签，并在 Web 设置面板中按标签搜索会话。
+- [txlznbzsdj-collab/dsh-session-delete](https://github.com/txlznbzsdj-collab/dsh-session-delete) — 在侧边栏会话菜单添加「删除」项，经二次确认后硬删除该会话。
 - [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — DSH 已归档聊天管理页：浏览、搜索、取消归档与删除已归档会话，按工作区分组；删除即生效、无需重启，后台驻留的会话也能当场彻底删除。
 - [WenhongPan/dsh-projects](https://github.com/WenhongPan/dsh-projects) — 项目与会话整理工具：支持多文件夹组合、待处理状态摘要、分组聊天搜索、原生目录选择、置顶、收藏、排序和归档中心。
 - [whyihaveyou/dsh-suite#plugin-session-export](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export) — 把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。
