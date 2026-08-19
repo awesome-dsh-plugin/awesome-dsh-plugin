@@ -3,5 +3,5 @@ name: ParticleLight/dsh-all-usage
 category: usage
 tarball: https://github.com/ParticleLight/dsh-all-usage/releases/download/v1.0.4/dsh-all-usage-1.0.4.tgz
 description:
-  en: 'Usage dashboard for DeepSeek Harness with model, provider, workspace, token, cache, balance, aliases, and CSV insights.'
-  zh: DeepSeek Harness 全量用量看板：按模型、供应商、工作区和时间范围分析 Token、缓存、余额、别名与 CSV 数据。
+  en: 'Analyze usage across models, providers, workspaces, and time ranges, with live cache-hit visibility and separate model and provider breakdowns. Includes a 53-week GitHub-style heatmap, usage streaks, cache-efficiency trends, DeepSeek account balance, workspace aliases, and CSV export. Chinese uses local time, English uses UTC; API access is loopback-only.'
+  zh: 支持跨多个模型、供应商、工作区与时间范围进行统一分析，实时呈现缓存命中率，并可分别查看模型和供应商的分类数据；提供 53 周 GitHub 风格热力图、连续使用和缓存效率趋势，支持查询 DeepSeek 账户余额、管理工作区别名及导出 CSV 数据。中文使用本地时区，英文统一使用 UTC；API 仅限本机访问。

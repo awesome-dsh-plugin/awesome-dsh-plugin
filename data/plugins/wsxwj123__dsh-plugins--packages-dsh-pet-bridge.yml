@@ -1,5 +1,5 @@
-url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/pet-bridge
-name: wsxwj123/dsh-plugins#pet-bridge
+url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-pet-bridge
+name: wsxwj123/dsh-plugins#dsh-pet-bridge
 category: notify
 description:
   en: 'Bridge dsh session status to the cc-pet desktop pet bubble: thinking, tool calls, and completion in real time.'

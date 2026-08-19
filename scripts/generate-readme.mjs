@@ -164,6 +164,17 @@ if (stale) {
   process.exit(1)
 }
 
+for (const file of ['README.md', 'README.zh.md']) {
+  const text = fs.readFileSync(file, 'utf8')
+  for (const match of text.matchAll(/\[[^\]]+\]\((README(?:\.[A-Za-z-]+)?\.md)\)/g)) {
+    const target = match[1]
+    if (!fs.existsSync(target)) {
+      console.error(`${file}: broken locale link -> ${target}`)
+      process.exit(1)
+    }
+  }
+}
+
 // contributing.md lists the valid category values for contributors to copy.
 // It drifted once already — `usage` and `vision` were added to the taxonomy
 // and the docs kept advertising the old twelve — so the list is checked here

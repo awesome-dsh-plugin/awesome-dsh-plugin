@@ -1,0 +1,6 @@
+url: https://github.com/Leo-Ayh-Oday/dsh-orcana/tree/main/packages/dsh-bundle
+name: Leo-Ayh-Oday/dsh-orcana#dsh-bundle
+category: dev
+description:
+  en: 'Runtime governor for DeepSeek Harness: zero-progress steering, generation-bound verification evidence, evidence-aware completion guarding, and task-profile tool restriction.'
+  zh: 'DeepSeek Harness 运行时治理器：零进展回合引导、按代际绑定的验证证据、基于证据的完成守卫，以及按任务配置限制工具集。'
