@@ -1,0 +1,7 @@
+url: https://github.com/Nixz0824/dsh-composer-alcove
+name: Nixz0824/dsh-composer-alcove
+category: ui
+description:
+  en: Collapses the composer to an iPhone-style home indicator while you scroll, then restores it on hover, click, or scroll up. Corner arcs dock the real composer into the left or right gutter.
+  zh: 阅读时把输入栏收到底部 Home 指示条，悬停预览、点击钉住或上滑还原。左右圆角弧线把原来的输入框停到两侧留白。
+tarball: https://github.com/Nixz0824/dsh-composer-alcove/releases/latest/download/dsh-composer-alcove-0.5.4.tgz
