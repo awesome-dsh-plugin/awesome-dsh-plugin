@@ -1125,6 +1125,17 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/skill-framework](https://github.com/JohnXu22786/skill-framework) — 以单个 Cordis 插件打包一整套工程方法论技能库：14 个 Agent Skills（规划、测试、排障、评审、交付）注册到 DeepSeek Harness 的 ctx.skills。
 - [JohnXu22786/spec-driven](https://github.com/JohnXu22786/spec-driven) — 规格驱动开发纪律技能包（keel）：五个技能（锚定/立规/探针/建造/审计）、三个审查工具与六个规格模板，强制先规格后代码、假设先行验证并约束范围蔓延。
 - [JUNQINGV587/mattpocock-skills-dsh](https://github.com/JUNQINGV587/mattpocock-skills-dsh) — 将 Matt Pocock 的 25 个精选工程与效率 Agent 技能（grilling、TDD、代码审查、领域建模等）移植为 DeepSeek Harness 插件包。
+- [kobenfang/Big8](https://github.com/kobenfang/Big8) — AI玄学助手技能：风水、面相、八字、星座、每日一卦与老黄历。
+- [kobenfang/bigA](https://github.com/kobenfang/bigA) — A股智能选股技能：实时行情、技术面择时分、买卖信号与动态股票池。
+- [kobenfang/BigFish](https://github.com/kobenfang/BigFish) — AI钓鱼助手技能：水面照片分析鱼情，结合天气气压推荐鱼种、钓法与饵料。
+- [kobenfang/BigFocus](https://github.com/kobenfang/BigFocus) — 追踪管家技能：追踪商品价格、明星动态与自定义指标，变动自动汇报，支持定时推送。
+- [kobenfang/BigFood](https://github.com/kobenfang/BigFood) — AI冰箱管家技能：食材图片识别并推荐菜谱，支持库存管理与采购提醒。
+- [kobenfang/BigLead](https://github.com/kobenfang/BigLead) — 精准客户线索挖掘技能：按行业/产品/地区搜索目标公司，多渠道验证并提取联系方式。
+- [kobenfang/BigPlan](https://github.com/kobenfang/BigPlan) — AI产品调研技能：分析市场、技术与供应链，输出高中低三套产品规格方案。
+- [kobenfang/BigSeedSkill](https://github.com/kobenfang/BigSeedSkill) — 闪念记录与人生拼图技能：捕捉生活点滴，构建画像并生成小说、剧本或自传。
+- [kobenfang/Eyes](https://github.com/kobenfang/Eyes) — 全球热点监控技能：追踪全球事件，按行业、汇率与大宗商品链路分析影响。
+- [kobenfang/FruitPi](https://github.com/kobenfang/FruitPi) — 全球水果价格追踪技能：采集与查询国内外水果批发价，支持人民币/公斤换算。
+- [kobenfang/ListForm](https://github.com/kobenfang/ListForm) — 智能表单技能：支出账单、台账与日志的结构化记录，自动归类并生成周期报表。
 - [linhay/harmony-next.skills](https://github.com/linhay/harmony-next.skills) — 为 DeepSeek Harness 提供 HarmonyOS NEXT 技能包、离线 API 参考及 DevEco、HDC 与模拟器自动化指南。
 - [linhut/gongwen-skill](https://github.com/linhut/gongwen-skill) — 中文公文全流程处理工具：GB/T 9704 格式检查、自动修复、内容修订（红色标注+删除线）、模板生成、Markdown 转公文、版头/版记/页码注入，覆盖通知/请示/报告/函/会议纪要等 24 类公文。
 - [linxichen/dsh-rigorquant](https://github.com/linxichen/dsh-rigorquant) — RigorQuant 预设与技能包：面向实证与计算数学（经济学、金融、组合）的无人值守隔离多智能体研究，内置四重实现前校验与 jacobian/Lean 升级通道。
