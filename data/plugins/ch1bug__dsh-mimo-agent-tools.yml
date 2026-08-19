@@ -1,0 +1,6 @@
+url: https://github.com/ch1bug/dsh-mimo-agent-tools
+name: ch1bug/dsh-mimo-agent-tools
+category: tools
+description:
+  en: 'Xiaomi MiMo model tools for DSH agents: web search, image/audio/video understanding, speech-to-text, and text-to-speech.'
+  zh: '把小米 MiMo API 变成 DSH agent 的模型工具：web 搜索、图/音/视频理解、语音转写与合成。'
