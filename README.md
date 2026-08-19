@@ -1699,7 +1699,8 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) - Chat meme stickers: text-only send, mood auto-send, QQ/WeChat-style picker, auto-learn, custom packs.
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) - The pet that grows with your agent: 5 evolution stages earned from real signals (verified rules, completed sessions, tool calls, compactions), agent-state mirroring, and one-click growth share cards. Zero dependencies, 100% local.
 
-- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..<!-- END PLUGINS -->
+
+- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision to text-only LLMs like Agnes, DeepSeek, MiniMax, GLM, and Mimo. Supports local files and URLs. Free..<!-- END PLUGINS -->
 
 
 

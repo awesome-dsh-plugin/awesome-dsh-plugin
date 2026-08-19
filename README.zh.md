@@ -69,12 +69,12 @@ dsh plugin --profile web add dshmarket
 - [徽章](#徽章)
 - [免责声明](#免责声明)
 
-- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..
 <!-- END TOC -->
 
 ## 插件
 
 <!-- BEGIN PLUGINS -->
+- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - 为纯文本模型添加PaddleOCR视觉能力，支持Agnes、DeepSeek、MiniMax、GLM、Mimo等。支持本地文件和URL。免费。.
 ### 🎨 UI 增强
 
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — 把回合状态那句 "Deep diving..." 替换成更有梗的自定义文案，按阶段轮换，支持打字机与流动渐变。
