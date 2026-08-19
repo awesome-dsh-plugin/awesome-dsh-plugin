@@ -1,0 +1,6 @@
+url: https://github.com/1HelloMan1/dsh-vision-fallback
+name: 1HelloMan1/dsh-vision-fallback
+category: vision
+description:
+  en: Routes chat images to a fixed OpenAI-compatible vision model, returns factual observations to the selected main model, and reuses session-scoped observations across replay, compaction, and restarts.
+  zh: 将聊天图片交给固定的 OpenAI 兼容视觉模型，把事实性观察交给当前主模型，并在事件回放、上下文压缩和重启时复用会话内观察。

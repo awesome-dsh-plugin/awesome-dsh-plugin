@@ -1,0 +1,6 @@
+url: https://github.com/y2zyyr/dsh-token-usage-sidebar
+name: y2zyyr/dsh-token-usage-sidebar
+category: usage
+description:
+  en: Persistent provider-reported token usage for DSH Web, with a sidebar summary and settings-page breakdowns by range, token type, provider, and model.
+  zh: 为 DSH Web 持久保存 provider 上报的 Token 用量，提供侧边栏摘要，以及按范围、Token 类别、供应商和模型查看的设置页明细。

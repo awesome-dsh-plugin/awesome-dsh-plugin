@@ -1,0 +1,6 @@
+url: https://github.com/paicat1/dsh-screenshot
+name: paicat1/dsh-screenshot
+category: vision
+description:
+  en: Standalone screen capture for DeepSeek Harness (dsh). Browser hotkeys for instant capture plus an agent-facing capture and read tool that lets the agent see and analyze any screen region.
+  zh: DeepSeek Harness (dsh) 的独立截图工具。浏览器快捷键一键截图，并提供面向智能体的截图加读取能力，让智能体能看到并分析任意屏幕区域。

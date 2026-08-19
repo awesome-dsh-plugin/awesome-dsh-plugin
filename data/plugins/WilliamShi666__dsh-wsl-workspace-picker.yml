@@ -1,0 +1,6 @@
+url: https://github.com/WilliamShi666/dsh-wsl-workspace-picker
+name: WilliamShi666/dsh-wsl-workspace-picker
+category: ui
+description:
+  en: 'Enhanced workspace directory browser for the web UI: one-click access to /mnt Windows drives under WSL, full breadcrumb ancestry and an always-visible path input.'
+  zh: Web UI 增强版工作区目录选择器：WSL 下 /mnt Windows 盘符一键直达、完整面包屑层级与常显路径输入框。

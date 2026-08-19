@@ -1,0 +1,6 @@
+url: https://github.com/leaforbook/dsh-mcp-lazy
+name: leaforbook/dsh-mcp-lazy
+category: tools
+description:
+  en: Loads MCP tools on demand and unloads idle tool schemas at turn end, reducing the tool catalog and context tokens sent to the model while keeping connections warm for fast reuse.
+  zh: 按需加载 MCP 工具，并在轮次结束时卸载闲置工具 Schema，减少发送给模型的工具目录及上下文 Token；同时保温连接以便快速复用。

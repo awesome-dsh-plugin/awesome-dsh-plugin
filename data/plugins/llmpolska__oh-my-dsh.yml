@@ -1,0 +1,6 @@
+url: https://github.com/llmpolska/oh-my-dsh
+name: llmpolska/oh-my-dsh
+category: model
+description:
+  en: 'Tiered model routing for DeepSeek Harness: think/build model tiers, vision delegation (the vision model only describes images; the working model acts), image generation, and a high-impact guard.'
+  zh: 面向 DeepSeek Harness 的分级模型路由：think/build 模型分级、视觉委派（视觉模型只负责描述图片，工作模型负责执行操作）、图片生成，以及高影响操作守卫。
