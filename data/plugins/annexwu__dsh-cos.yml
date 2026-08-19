@@ -1,0 +1,6 @@
+url: https://github.com/annexwu/dsh-cos
+name: annexwu/dsh-cos
+category: tools
+description:
+  en: Adds COS storage browsing and transfers, DSH workspace artifact uploads, temporary links, and Agent tools for Tencent Cloud COS, CI, and MetaInsight.
+  zh: 提供 COS 云存储浏览与传输、DSH 工作区产物上传、临时链接，以及腾讯云 COS、数据万象和 MetaInsight 的 Agent 工具。
