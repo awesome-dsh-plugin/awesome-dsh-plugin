@@ -1,3 +1,5 @@
+# dsh-token-cost plugin entry
+# Rerun trigger after repo age requirement is met.
 url: https://github.com/gdy01/dsh-token-cost
 name: gdy01/dsh-token-cost
 category: usage
