@@ -317,6 +317,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Choi-Peng/dsh-deepseek-balance](https://github.com/Choi-Peng/dsh-deepseek-balance) - DeepSeek account balance in the dsh web sidebar footer with live config hot reload and an editable Settings → Plugins card.
 - [ChrisZhangWG/dsh-codex-meter](https://github.com/ChrisZhangWG/dsh-codex-meter) - Adds a Settings Usage dashboard for DeepSeek API balance, official token and cost analysis, trends, context warnings, and live API activity.
 - [CN-Leo/dsh-deepseek-balance](https://github.com/CN-Leo/dsh-deepseek-balance) - Real-time DeepSeek account balance in the composer dock, auto-refreshing every 15 seconds with hover details.
+- [CZ1900/suanzhang-dsh](https://github.com/CZ1900/suanzhang-dsh) - Trading-terminal style cost tracker for DeepSeek Harness: sidebar balance and today spend, per-step RMB cost table, auto-synced official pricing with peak/off-peak, cross-session and per-day summaries, tool-level attribution, and cost forecast.
 - [DamonKoy/dsh-plugins#dsh-usage-cost](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-usage-cost) - Token usage and cost tracking with daily/session budget alerts and a usage_report tool.
 - [DamonKoy/dsh-web-ui#dsh-live-stats](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-live-stats) - Live token estimates and generation throughput for the dsh web GUI.
 - [dk33333333/dsh-deepseek-quota-left](https://github.com/dk33333333/dsh-deepseek-quota-left) - DeepSeek API quota panel collapsed into a left-edge handle for the Web UI: click to expand balance, official today's consumption (with platform token) and live conversation cost; fork of dsh-deepseek-quota.
@@ -1729,3 +1730,4 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
+
