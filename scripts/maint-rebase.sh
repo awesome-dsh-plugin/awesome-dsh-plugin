@@ -88,7 +88,18 @@ for n in "$@"; do
   node scripts/generate-readme.mjs >/dev/null 2>&1 || {
     git checkout -f -q main; echo "$n :: GEN-FAIL (bad entry data)"; continue
   }
-  git add -A && git diff --cached --quiet || git commit -q --amend --no-edit
+  # `git commit --amend` refuses when the amended commit would be empty, and
+  # that refusal used to pass silently: the loop pushed on, printed no verdict
+  # for this PR at all, and left README.md modified in the tree — so the *next*
+  # iteration's `git checkout main` aborted and took an innocent PR down with
+  # it. One PR's odd history became a cascade of skipped ones. Whatever the
+  # outcome here, leave the tree clean and say what happened.
+  git add -A
+  if ! git diff --cached --quiet; then
+    git commit -q --amend --no-edit || {
+      git checkout -f -q main; echo "$n :: AMEND-FAIL (nothing left to commit after regeneration)"; continue
+    }
+  fi
 
   # A branch identical to main has no commits, and GitHub auto-closes such a
   # PR — destroying the contributor's work and revoking our push access to
