@@ -2,5 +2,5 @@ url: https://github.com/tuogusa/dsh-whale-background
 name: tuogusa/dsh-whale-background
 category: theme
 description:
-  en: Whale-girl wallpaper background with a frosted semi-transparent app surface; customize image, opacity, and contain/cover from the Web settings.
-  zh: Web UI 鲸鱼娘壁纸背景，应用表面半透明磨砂；支持在设置页自定义图片、透明度与 contain/cover 铺放方式。
+  en: Whale-girl wallpaper background with a frosted semi-transparent app surface; customize image, opacity, and contain/cover from the Web settings, with remote image preflight and no-referrer loading.
+  zh: Web UI 鲸鱼娘壁纸背景，应用表面半透明磨砂；支持在设置页自定义图片、透明度与 contain/cover 铺放方式，远程图片自动预检并 no-referrer 加载。
