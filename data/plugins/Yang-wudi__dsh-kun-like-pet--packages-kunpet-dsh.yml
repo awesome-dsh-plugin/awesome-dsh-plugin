@@ -1,5 +1,5 @@
-url: https://github.com/Yang-wudi/dsh-kun-like-pet
-name: Yang-wudi/dsh-kun-like-pet
+url: https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh
+name: Yang-wudi/dsh-kun-like-pet#kunpet-dsh
 category: fun
 description:
   en: A Kun-Like desktop pet living in the corner of the DSH web UI; switches animations with agent state and plays a voice line on task completion.
