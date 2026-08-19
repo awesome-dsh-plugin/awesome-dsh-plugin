@@ -1,0 +1,6 @@
+url: https://github.com/WindyPro-rourou/dsh-code-studio
+name: WindyPro-rourou/dsh-code-studio
+category: ui
+description:
+  en: Code Studio for the DSH Web UI - a file tree, syntax-highlighted editor, and Cline-style line-by-line diffs that auto-appear when the agent edits files.
+  zh: DSH Web UI 的代码工作台 - 文件树、语法高亮编辑器，以及 Agent 修改代码时自动浮现的 Cline 式逐行 Diff。
