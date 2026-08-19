@@ -1,5 +1,5 @@
-url: https://github.com/ankye/dsh-client-vision
-name: ankye/dsh-client-vision
+url: https://github.com/ankye/dsh-client-vision/tree/main/packages/tool-vision
+name: ankye/dsh-client-vision#tool-vision
 category: vision
 description:
   en: 'Screen capture and external vision recognition: take_screenshot, list_windows, analyze_image and view_image tools with a configurable GPT vision channel (gpt-5.5 / gpt-5.6-sol / gpt-5.6-terra), API key via the credentials service, and a settings card; view_image shows the screenshot in the Web UI while the model context keeps text only.'
