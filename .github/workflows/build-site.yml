@@ -44,16 +44,26 @@ jobs:
           node-version: 22
       - run: npm ci
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
-      # the most recent. A miss just means a full re-probe (~700 API calls,
-      # within the GITHUB_TOKEN hourly budget) — degraded never, slower once.
+      # the most recent.
+      #
+      # A miss is NOT harmless, which is what "degraded never, slower once" used
+      # to claim here. actions/cache scopes restores by a version derived from
+      # this `path` list, so editing the list — adding data/tarballs.json on
+      # 2026-08-18 — makes `restore-keys` match nothing and forces a cold start
+      # for every probe at once. That cold start wants ~1,400 API calls, and if
+      # the hourly budget happens to be spent the probes all fail together
+      # (#1673). data/stars.json is committed now so a miss costs staleness
+      # rather than the data itself; before changing this list again, expect a
+      # full re-probe and check the quota first.
       - uses: actions/cache@v4
         with:
           path: |
             data/npm-map.json
             data/stars.json
             data/readmes.json
-          key: probe-data-${{ github.run_id }}
-          restore-keys: probe-data-
+            data/tarballs.json
+          key: probe-data-v2-${{ github.run_id }}
+          restore-keys: probe-data-v2-
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -66,6 +76,10 @@ jobs:
           node scripts/probe-npm.mjs
           node scripts/probe-stars.mjs
           node scripts/probe-readmes.mjs
+          # Runs every time, not just nightly: a release-asset URL validated at
+          # submission can 404 later without anyone touching the entry, and the
+          # set is small enough that there is no reason to sample it (#1619).
+          node scripts/probe-tarballs.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:

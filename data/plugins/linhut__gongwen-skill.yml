@@ -1,0 +1,6 @@
+url: https://github.com/linhut/gongwen-skill
+name: linhut/gongwen-skill
+category: skill
+description:
+  en: 'Chinese government document processing toolkit: GB/T 9704 format check, auto-fix, content revision (red annotation + strikethrough), template generation, Markdown-to-docx, and document header/footer/page-number injection for 24 official document types.'
+  zh: 中文公文全流程处理工具：GB/T 9704 格式检查、自动修复、内容修订（红色标注+删除线）、模板生成、Markdown 转公文、版头/版记/页码注入，覆盖通知/请示/报告/函/会议纪要等 24 类公文。

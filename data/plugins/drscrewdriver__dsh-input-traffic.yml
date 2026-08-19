@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-input-traffic
+name: drscrewdriver/dsh-input-traffic
+category: ui
+description:
+  en: 'Three-tier now/next/later input planning dock for the DeepSeek Harness web GUI: a red/yellow/green priority strip replaces the busy-Enter queue, plain Enter queues to later, with freeze/resume and in-place multi-line editing.'
+  zh: '三档（now/next/later）输入规划 dock：以红/黄/绿色优先级条取代忙碌 Enter 排队栏，普通 Enter 排入 later，支持冻结/恢复与多行原位编辑。'

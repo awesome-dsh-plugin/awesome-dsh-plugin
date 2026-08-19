@@ -2,5 +2,5 @@ url: https://github.com/dsh-market/dsh-market
 name: dsh-market/dsh-market
 category: market
 description:
-  en: '(Recommended) The plugin market inside DSH: a Settings page to browse and search the full community catalog by category, with confirmed one-click installs and an installed-plugins view.'
-  zh: （推荐）装在 DSH 里的插件市场：设置页内逛/搜全部社区插件，按分类筛选，确认后一键安装，已装插件一目了然。
+  en: Browse, search and install community plugins from inside DeepSeek Harness settings, with category filters, one-click updates, enable/disable, theme switching and configuration backup.
+  zh: 在 DeepSeek Harness 设置页内浏览、搜索并安装社区插件，支持分类筛选、一键更新与停用，以及主题切换与配置备份。

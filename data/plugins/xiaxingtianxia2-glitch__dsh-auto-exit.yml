@@ -1,0 +1,6 @@
+url: https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit
+name: xiaxingtianxia2-glitch/dsh-auto-exit
+category: dev
+description:
+  en: Exits the dsh CLI process automatically when the Web UI closes, with a configurable grace period and dry-run mode.
+  zh: 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。

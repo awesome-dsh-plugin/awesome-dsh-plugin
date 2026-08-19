@@ -25,8 +25,28 @@ const SCREENSHOTS_FILE = 'data/screenshots.json'
 fs.mkdirSync('docs', { recursive: true })
 for (const f of fs.readdirSync('site/assets')) fs.copyFileSync(`site/assets/${f}`, `docs/${f}`)
 const NPM_MAP_FILE = 'data/npm-map.json'
-// url -> prebuilt release tarball, declared per entry in data/plugins/*.yml
-const tarballMap = Object.fromEntries(readEntries().filter((e) => e.tarball).map((e) => [e.url, e.tarball]))
+// url -> prebuilt release tarball, declared per entry in data/plugins/*.yml.
+// A declared tarball is dropped once probe-tarballs.mjs has confirmed it 404s:
+// the entry then falls back to its `github:owner/repo` command, which is what
+// every entry had before the field existed, rather than shipping a download
+// link that is known to be dead (#1619).
+//
+// Confirmed-dead only. No verdict means the probe has not run — a local build,
+// or an entry added since the last refresh — and treating that as dead would
+// strip the field from every entry whenever the probe is skipped.
+const TARBALLS_FILE = 'data/tarballs.json'
+const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSync(TARBALLS_FILE, 'utf8')) : {}
+const tarballMap = Object.fromEntries(
+  readEntries()
+    .filter((e) => {
+      if (!e.tarball) return false
+      const v = tarballVerdicts[e.url]
+      // A verdict is only about the URL it was recorded against: if the entry
+      // now declares a different tarball, the old verdict says nothing.
+      return !(v && v.tarball === e.tarball && v.ok === false)
+    })
+    .map((e) => [e.url, e.tarball]),
+)
 // Single source of truth, shared with the README generator (scripts/lib/entries.mjs).
 const CAT_IDS = ENTRY_CAT_IDS
 
@@ -108,6 +128,38 @@ const N = ordered.length
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+
+// Publishing is the last chance to notice that a data file arrived empty, and
+// the only one that matters to consumers: docs/ is deployed straight to Pages,
+// so a bad build replaces the good one and downstream clients read whatever it
+// contains. On 2026-08-18 plugins.json went out with `stars: null` for all
+// 1,362 entries (#1673) because probe-stars.mjs was handed an exhausted API
+// quota and a cold cache at the same time, wrote {}, and nothing between it and
+// the deploy asked whether that was plausible.
+//
+// A floor, not an exact match: entries added since the last probe legitimately
+// have no star count yet, and a repository that 404s never will. Losing more
+// than a third of them at once is not attrition, it is a broken probe — and
+// keeping yesterday's stars live beats publishing nulls, because a stale number
+// degrades gracefully and a null does not.
+// Only on the publishing path. pr-check.yml also runs this build — for locale
+// parity, date derivation and template validation — with no intention of
+// deploying, and there a missing data/stars.json would fail every contributor's
+// PR with a message about publishing that has nothing to do with their
+// submission. A guard that blocks people for our own infrastructure's state is
+// the failure mode this repository has spent the day removing, so it is opt-out
+// by the caller rather than inferred from whether the file happens to be there.
+const STARS_MIN_COVERAGE = 0.66
+const starsHave = ordered.filter((e) => typeof starsMap[e.url]?.stars === 'number').length
+if (process.env.SKIP_PUBLISH_CHECKS !== '1' && ordered.length && starsHave / ordered.length < STARS_MIN_COVERAGE) {
+  const pct = ((starsHave / ordered.length) * 100).toFixed(1)
+  throw new Error(
+    `refusing to publish: only ${starsHave}/${ordered.length} entries (${pct}%) have a star count, below the ${STARS_MIN_COVERAGE * 100}% floor.\n`
+    + 'data/stars.json is empty or truncated — almost always probe-stars.mjs hitting an exhausted\n'
+    + 'GitHub API quota on a cold cache. The previous deploy stays live, which is the point.\n'
+    + 'Re-run once the hourly quota resets; PROBE_ALL=1 forces a full refresh.',
+  )
+}
 if (ordered.some((e) => !dates[e.url])) {
   const log = execSync(`git log --reverse --date-order --format=%x01%cI -p -- ${LOCALES[0].readme}`,
     { encoding: 'utf8', maxBuffer: 1 << 28 })

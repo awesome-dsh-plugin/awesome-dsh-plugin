@@ -1,0 +1,6 @@
+url: https://github.com/MingoZhou/dsh-replay
+name: MingoZhou/dsh-replay
+category: session
+description:
+  en: Replay sessions on a playable timeline with per-step token usage, audit sensitive operations, estimate cost, view fork lineage, compare sessions, and export standalone HTML replays.
+  zh: 在可播放的时间线上回放会话并显示逐步 token 用量，审计敏感操作，估算成本，查看 fork 血缘，对比会话，并可导出独立 HTML 回放。

@@ -1,0 +1,6 @@
+url: https://github.com/demacia1314/dsh-airdrop
+name: demacia1314/dsh-airdrop
+category: ui
+description:
+  en: 'Codex-app-style attachments for DSH: drop any file or folder anywhere in the window — bytes upload straight into the session workspace on the server, so remote servers and SSH tunnels work exactly like localhost.'
+  zh: '像在 Codex app 里一样给 DSH 加附件：任意文件、任意文件夹，拖到窗口任意位置即可——字节直接上传到服务器的会话工作区，远程服务器和 SSH 隧道下与本地体验一致。'

@@ -1,0 +1,6 @@
+url: https://github.com/fgm-builds/dashr/tree/main/dashr
+name: fgm-builds/dashr#dashr
+category: dev
+description:
+  en: 'RLM mode for dsh: recursive sub-agents via a unified rlm() function — spawn, await, and chain child agents as first-class Python calls. Adds a persistent IPython kernel with tools.* bindings and context-as-variable.'
+  zh: 'dsh 的 RLM 模式：通过统一的 rlm() 函数实现递归子代理——以一等 Python 函数调用生成、等待、链式传递子代理。附带常驻 IPython 内核、tools.* 绑定与上下文即变量。'

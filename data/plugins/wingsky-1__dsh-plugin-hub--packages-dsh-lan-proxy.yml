@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-lan-proxy
+name: wingsky-1/dsh-plugin-hub#packages/dsh-lan-proxy
+category: remote
+description:
+  en: 'LAN access to the dsh web UI: forwards HTTP/HTTPS and WebSocket/wss from 0.0.0.0 to the loopback web server, with DNS-rebinding protection and a loopback-only upstream whitelist.'
+  zh: 局域网访问 dsh web UI：在 0.0.0.0 监听并把 HTTP/HTTPS 与 WebSocket/wss 转发到回环 web 服务器，带 DNS 重绑定防护与回环-only 上游白名单。

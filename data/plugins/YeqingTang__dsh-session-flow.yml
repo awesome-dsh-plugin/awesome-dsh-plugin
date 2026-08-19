@@ -2,5 +2,5 @@ url: https://github.com/YeqingTang/dsh-session-flow
 name: YeqingTang/dsh-session-flow
 category: session
 description:
-  en: 'Cross-session archive: overview workbench, folded timeline, subagent lineage, content search, rule+LLM summaries, ZIP export, live tracking.'
-  zh: 跨会话档案柜：总览工作台、折叠时间线、子代理血缘、内容检索、规则+LLM 双模式摘要、ZIP 导出、实时跟踪。
+  en: 'Cross-session archive: overview workbench, folded timeline, subagent lineage, full-text search, rule+LLM summaries, ZIP export, live tracking. Native session-page embeds: turn rail, docked right panel, rename (official-synced), conclusion digest, health monitoring + header chip (stall detection).'
+  zh: 跨会话档案柜：总览工作台、折叠时间线、子代理血缘、全文检索、双模式摘要、ZIP 导出、实时跟踪。会话流标签页嵌入原生会话页：轮次悬浮条、详情并入右栏、会话重命名（对齐官方即时同步）、结论摘要行、健康监控与头部芯片（疑似卡死识别）。
