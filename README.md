@@ -1043,6 +1043,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [baconbao/dsh-mermaid-image-preview](https://github.com/baconbao/dsh-mermaid-image-preview) - Preview Mermaid diagrams as images via local rendering in DSH Web when the chat message contains a Mermaid fenced code block, and also allow integration with external rendering servers.
 - [bill9109/dsh-101](https://github.com/bill9109/dsh-101) - Document reading mode for DSH.
 - [didclawapp-ai/DSH-Office](https://github.com/didclawapp-ai/DSH-Office) - Create, read, and edit PPTX, DOCX, XLSX, and PDF via the local zagens-office CLI as office_schema / office_write / office_edit / office_read tools.
+- [dream-num/dsh-univer-office](https://github.com/dream-num/dsh-univer-office) - Create, edit, inspect, and deliver spreadsheets, documents, presentations, databases, and canvases in DeepSeek Harness, with live preview and worktree review.
 - [duyanta123/arch-doc](https://github.com/duyanta123/arch-doc) - Analyze a codebase and generate architecture documentation: module responsibilities, dependencies, entry points and run methods.
 - [duyanta123/dsh-data-insight](https://github.com/duyanta123/dsh-data-insight) - Turn raw data (CSV / pasted table / SQL results / DuckDB) into a structured Markdown report with business conclusions, metrics and charts.
 - [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) - Connect multiple Overleaf projects to DSH through OverleafMCP for browsing, analysis, and Git-based file updates.
