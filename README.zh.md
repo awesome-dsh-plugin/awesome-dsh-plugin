@@ -1476,6 +1476,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-start](https://github.com/zhengjy01/dsh-start) — macOS 上 DSH Web 的一键启停启动器：前台/后台启动、停止、状态、防重复启动、自动打开浏览器，并可用脚本构建程序坞版 DSH.app。
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — 上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。
 - [ZK-Andy/dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — 持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。
+- [Zlyraz/dsh-ballute](https://github.com/Zlyraz/dsh-ballute) — 已装插件的崩溃防护：崩溃卡片一键停用、静态预检、黑匣子遥测，以及救援损坏 UI 的安全模式 profile。
 - [zoahdev/dsh-plugin-doctor](https://github.com/zoahdev/dsh-plugin-doctor) — DSH 插件体检：manifest/patch/entry/build/pack/install 校验、可被模型调用的 plugin_check、profile 宿主遮蔽与 BOM 检测、环境诊断、投毒预检。
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) — 验证驱动的自我进化循环：失败日志自动变成经过验证的 AGENTS.md 规则；会话内插件（evolve_learn/evolve_apply/evolve_touch/evolve_recall）、工具体检、规则生命周期、本地召回。
 
