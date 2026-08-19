@@ -947,5 +947,14 @@
  ],
  "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-appearance-gallery": [
   "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/appearance-gallery.png"
+ ],
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-turn-scrubber": [
+  "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/turn-scrubber.png"
+ ],
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager": [
+  "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/session-manager.png"
+ ],
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools": [
+  "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/composer-tools.png"
  ]
 }
