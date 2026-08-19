@@ -519,6 +519,10 @@
  "https://github.com/huxint/dsh-team": [
   "https://raw.githubusercontent.com/huxint/dsh-team/main/screenshots/image.png"
  ],
+ "https://github.com/hxy91819/dsh-auth": [
+  "https://raw.githubusercontent.com/hxy91819/dsh-auth/main/docs/images/login.png",
+  "https://raw.githubusercontent.com/hxy91819/dsh-auth/main/docs/images/authenticated-harness.png"
+ ],
  "https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/rss": [
   "https://raw.githubusercontent.com/hyzyn/dsh-plugin-kit/main/docs/dsh-plugin-kit-rss-setting.png",
   "https://raw.githubusercontent.com/hyzyn/dsh-plugin-kit/main/docs/dsh-plugin-kit-rss-view.png"
