@@ -1,0 +1,6 @@
+url: https://github.com/guo6x/dsh-palate
+name: guo6x/dsh-palate
+category: memory
+description:
+  en: "An eye that grows: accumulated *design taste* rather than general memory — a corpus of good/bad design examples plus codified principles that sharpen with every one you feed, so reviews draw on learned judgment instead of a fixed ruleset. Six `palate_*` tools (review/add/learn/list/principles/stats), a growth panel, node:sqlite + human-readable Markdown mirrors, zero runtime dependencies."
+  zh: 会长大的眼：积累的是**设计品味**而非通用记忆——好/坏设计例子 + 编码原则构成的语料库，喂得越多评审越准，凭学到的判断而非固定规则做评审。6 个 `palate_*` 工具（review/add/learn/list/principles/stats）、成长面板、node:sqlite + 人可读 Markdown 镜像、零运行时依赖。
