@@ -157,6 +157,16 @@ Storefronts (e.g. [dsh-market](https://github.com/dsh-market/dsh-market)'s detai
 - Keep the images in your own repo (an `assets/` folder works well) so they update with your releases. / 建议把图片放在你自己的仓库里（如 `assets/` 目录），随版本一起维护。
 - No screenshots? Storefronts fall back to extracting images from your README — a maintained entry here just gives you control over order and selection. / 不提交也没关系：市场会从你的 README 自动抽取——这里的条目只是让你能控制展示的顺序与内容。
 
+### npm package / npm 包（optional / 可选）
+
+Publishing your plugin to npm lets storefronts show and sort by download count. Nothing here depends on it — **listing is unaffected either way**, and plugins install from GitHub exactly as before.
+
+把插件发布到 npm，可以让市场展示并按下载量排序。这与收录无关——**发不发布都不影响收录**，插件照样能从 GitHub 安装。
+
+- The published package's `repository` field must point back at the repository listed here, or the two are not linked. This is deliberate: it stops a package from attaching itself to a repository that has not claimed it. / 已发布包的 `repository` 字段必须指回本列表收录的那个仓库，否则两者不会关联。这是刻意的——防止某个包把自己挂到一个并未认领它的仓库上。
+- You do not need to tell us. The mapping is picked up automatically from the registry; there is no field to add to your entry, and a hand-written `npm:` key in your yml is rejected. / **不需要通知我们。** 映射会从 registry 自动采集，条目里没有任何字段需要填；在 yml 里手写 `npm:` 会被校验拒绝。
+- No npm package? Your entry works the same, just without a download figure. / 没有 npm 包也一样：条目照常工作，只是没有下载量数字。
+
 ### Themes & skins / 主题与皮肤
 
 Entries under the **Themes & Appearance / 主题与外观** category automatically appear in the [dsh-market](https://github.com/dsh-market/dsh-market) plugin's dedicated **Themes tab**, where users install, switch, and uninstall them with one click — so put your theme/skin there, not under UI Enhancements. Monorepo subpackages are supported: link the subdirectory directly, e.g. `https://github.com/owner/repo/tree/main/packages/my-theme`.
