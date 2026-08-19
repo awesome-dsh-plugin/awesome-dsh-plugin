@@ -980,5 +980,10 @@
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-upload-reference.png"
+ ],
+ "https://github.com/zenglihunter/dsh-petdex-pet": [
+  "https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/master/img/screenshot.png",
+  "https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/master/img/menu.png",
+  "https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/master/img/install.png"
  ]
 }
