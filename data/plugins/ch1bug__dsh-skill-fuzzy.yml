@@ -1,0 +1,6 @@
+url: https://github.com/ch1bug/dsh-skill-fuzzy
+name: ch1bug/dsh-skill-fuzzy
+category: skill
+description:
+  en: 'Fuzzy skill search for the DSH Web GUI: Codex-style subsequence matching over skill names and descriptions.'
+  zh: '为 DSH Web 界面提供模糊技能搜索：按 Codex 风格的子序列匹配技能名与描述。'
