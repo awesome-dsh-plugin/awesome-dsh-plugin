@@ -1699,7 +1699,8 @@ dsh plugin --profile web add dshmarket
 - [yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) — 聊天表情包：纯文本斗图、情绪主动发图、像 QQ/微信 一样发图、AI 自动学图、自定义表情包。
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) — 会随 agent 成长的宠物：真实信号（已验证规则/会话/工具调用/压缩）驱动 5 阶段进化、镜像 agent 状态、一键导出成长分享卡。零依赖、全本地。
 
-- [tenglongbohai/dsh-paddle-ocr](https) - None.
+
+- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..
 - [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..<!-- END PLUGINS -->
 
 ## 贡献
