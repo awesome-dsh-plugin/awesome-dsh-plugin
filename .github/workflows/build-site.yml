@@ -74,6 +74,12 @@ jobs:
           PROBE_ALL: ${{ (github.event_name == 'schedule' || inputs.probe_all) && '1' || '' }}
         run: |
           node scripts/probe-npm.mjs
+          # After probe-npm.mjs, never before: this reads data/npm-map.json to
+          # know which entries HAVE a package to probe. Commits data/downloads.json
+          # directly (see its own header) — deliberately absent from the cache
+          # `path:` list above, so it needs no entry there and touching it can
+          # never trigger the cold-start hazard that list's own comment warns about.
+          node scripts/probe-downloads.mjs
           node scripts/probe-stars.mjs
           node scripts/probe-readmes.mjs
           # Runs every time, not just nightly: a release-asset URL validated at

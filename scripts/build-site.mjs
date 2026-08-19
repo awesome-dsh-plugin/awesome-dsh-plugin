@@ -128,6 +128,12 @@ const N = ordered.length
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+// Missing (not yet bootstrapped, or an entry with no npm package) is a
+// normal, permanent state for most entries — unlike stars.json, absence
+// here needs no publish-blocking floor of its own: probe-downloads.mjs
+// already refuses to WRITE the file on a bad run, so whatever is on disk is
+// the last known-good result, or nothing yet.
+const downloadsMap = fs.existsSync('data/downloads.json') ? JSON.parse(fs.readFileSync('data/downloads.json', 'utf8')) : {}
 
 // Publishing is the last chance to notice that a data file arrived empty, and
 // the only one that matters to consumers: docs/ is deployed straight to Pages,
@@ -233,6 +239,10 @@ for (const e of ordered) {
   e.tarball = tarballMap[e.url] ?? null
   e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
   e.stars = starsMap[e.url]?.stars ?? null
+  // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
+  // entries with no npm package at all — a coverage gap, not a zero.
+  // Consumers must tell "not published" apart from "published, unused".
+  e.downloads = downloadsMap[e.url]?.downloads ?? null
   e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
 }
 
@@ -712,6 +722,7 @@ const registry = {
       // field is published directly. Omitted when absent, like `screenshots`.
       tarball: e.tarball ?? undefined,
       stars: e.stars,
+      downloads: e.downloads,
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
       // Optional, author-maintained (data/screenshots.json); omitted when
