@@ -1106,6 +1106,7 @@ dsh plugin --profile web add dshmarket
 - [xiaozhe7772222/dsh-draw-router](https://github.com/xiaozhe7772222/dsh-draw-router) — DeepSeek Harness 统一绘图路由器：自动识别任意 OpenAI 兼容接口的绘图模型，提供 draw_image 和 draw_list_sources 工具，支持商汤、阶跃、Agnes、千问、Flux、SD、Imagen 等。
 - [ximengxiaolan/dsh-vision-bridge](https://github.com/ximengxiaolan/dsh-vision-bridge) — 输入框贴图自动识别：由 OpenAI 兼容视觉模型转成文字描述后，再交给纯文本 DeepSeek 模型处理。
 - [xsoc1/dsh-image-vision](https://github.com/xsoc1/dsh-image-vision) — 纯文本 DeepSeek 的聊天识图插件：view_image 工具转发任意 OpenAI 兼容 VLM（本地 Ollama 或云端），对话框粘贴/拖拽的图片自动改写为 view_image 路径标记供模型查看。
+- [xing666173/dsh-vision-hub](https://github.com/xing666173/dsh-vision-hub) — 视觉集大成插件：dsh-vision-router 的 14 个像素级视觉工具（看图问答、定位、检测、裁剪、像素对比、OCR、矢量化、取色、抠图、HTML 截图、长截图 OCR、演示、实物化）合体 dsh-tool-vision 图片桥与内联预览；五级供应商降级链（用户模型 → Ollama → LM Studio → 自定义 HTTP → OVH 免 Key 兜底）、韧性层、内容哈希缓存、inspect_image 工具与合并设置卡。
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) — 为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。
 
 ### 🎙️ 语音与音频

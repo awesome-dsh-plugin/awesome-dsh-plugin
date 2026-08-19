@@ -1,0 +1,6 @@
+url: https://github.com/xing666173/dsh-vision-hub
+name: xing666173/dsh-vision-hub
+category: vision
+description:
+  en: 'Merged vision powerhouse: 14 pixel-level vision tools (describe/ground/detect/crop/pixel-diff/OCR/trace/colors/cutout/screenshots) from dsh-vision-router plus the dsh-tool-vision image bridge with inline previews; five-tier provider chain (user models → Ollama → LM Studio → custom HTTP → OVH keyless fallback), resilience layer, content-hash cache, inspect_image tool and a merged settings card.'
+  zh: '视觉集大成插件：dsh-vision-router 的 14 个像素级视觉工具（Q&A/定位/检测/裁剪/像素对比/OCR/矢量化/取色/抠图/截图）合体 dsh-tool-vision 图片桥与内联预览；五级供应商降级链（用户模型 → Ollama → LM Studio → 自定义 HTTP → OVH 免 Key 兜底）、韧性层、内容哈希缓存、inspect_image 工具与合并设置卡。'
