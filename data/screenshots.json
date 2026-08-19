@@ -170,11 +170,6 @@
   "https://raw.githubusercontent.com/Jungod1121/dsh-anchored-standard/main/screenshots/market-2.png",
   "https://raw.githubusercontent.com/Jungod1121/dsh-anchored-standard/main/screenshots/market-3.png"
  ],
- "https://github.com/KKKneko/dsh-search-enhance": [
-  "https://raw.githubusercontent.com/KKKneko/dsh-search-enhance/main/assets/search-workflow.png",
-  "https://raw.githubusercontent.com/KKKneko/dsh-search-enhance/main/assets/docs-search.png",
-  "https://raw.githubusercontent.com/KKKneko/dsh-search-enhance/main/assets/settings.png"
- ],
  "https://github.com/KLRSL/dsh-biomemory": [
   "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-main.png",
   "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-settings.png",
@@ -623,6 +618,11 @@
   "https://raw.githubusercontent.com/literaf/dsh-ai4scholar/main/docs/settings-card.png",
   "https://raw.githubusercontent.com/literaf/dsh-ai4scholar/main/docs/balance-card.png"
  ],
+ "https://github.com/liuyuelintop/dsh-conversation-exporter": [
+  "https://raw.githubusercontent.com/liuyuelintop/dsh-conversation-exporter/main/assets/select-turns.png",
+  "https://raw.githubusercontent.com/liuyuelintop/dsh-conversation-exporter/main/assets/selective-export-mermaid.png",
+  "https://raw.githubusercontent.com/liuyuelintop/dsh-conversation-exporter/main/assets/selective-export-result.png"
+ ],
  "https://github.com/maple-pwn/paperlab": [
   "https://raw.githubusercontent.com/maple-pwn/paperlab/main/docs/assets/screenshot.png"
  ],
@@ -809,10 +809,6 @@
  ],
  "https://github.com/wuxiangru915/dsh-session-manager": [
   "https://raw.githubusercontent.com/wuxiangru915/dsh-session-manager/main/assets/session-manager.png"
- ],
- "https://github.com/wydddddcool/dsh-hover-approve": [
-  "https://raw.githubusercontent.com/wydddddcool/dsh-hover-approve/main/assets/shot-approval.png",
-  "https://raw.githubusercontent.com/wydddddcool/dsh-hover-approve/main/assets/shot-goal-blocked.png"
  ],
  "https://github.com/wx-yss/dsh-message-rail": [
   "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-hover-preview.png",
