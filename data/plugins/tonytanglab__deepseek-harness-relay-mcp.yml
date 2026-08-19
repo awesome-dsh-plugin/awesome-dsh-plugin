@@ -1,0 +1,7 @@
+url: https://github.com/tonytanglab/deepseek-harness-relay-mcp
+name: tonytanglab/deepseek-harness-relay-mcp
+category: remote
+tarball: https://github.com/tonytanglab/deepseek-harness-relay-mcp/releases/latest/download/dsh-relay-0.1.0.tgz
+description:
+  en: Installs a Web-profile helper that diagnoses and writes MCP config so Codex, Cursor, or Claude Code can spawn dsh --profile codex.
+  zh: 在 Web profile 中安装适配层，检测并写入 MCP 配置，供 Codex、Cursor 或 Claude Code 拉起 dsh --profile codex.
