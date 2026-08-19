@@ -923,6 +923,8 @@ dsh plugin --profile web add dshmarket
 - [MicroHEROX/dsh-exa-mcp](https://github.com/MicroHEROX/dsh-exa-mcp) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接接入托管的 Exa 搜索 MCP 端点（mcp.exa.ai）：web_search_exa 与 web_fetch_exa 工具，免费额度匿名可用，设置 EXA_API_KEY 可解锁更高限额。
 - [MicroHEROX/dsh-Kimi-WebBridge](https://github.com/MicroHEROX/dsh-Kimi-WebBridge) — 通过本地 Kimi WebBridge 守护进程驱动用户的真实浏览器：navigate、find-tab、snapshot、click、fill、evaluate、CDP、screenshot、network、upload、PDF 导出与标签管理工具，复用浏览器已登录会话。
 - [moguiyu/dsh-tavily#packages/dsh-tool-tavily-search](https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search) — Tavily 多密钥搜索：支持密钥轮换/故障转移、用量仪表盘与设置卡片。
+- [PyModel/dsh-research-plugins#dsh-mcp-firecrawl](https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-mcp-firecrawl) — Firecrawl MCP bridge: exposes firecrawl scrape, crawl, map and search tools to the model via the hosted Firecrawl MCP server.
+- [PyModel/dsh-research-plugins#dsh-tavily](https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-tavily) — Tavily Search API as a web search provider (settings toggle with DeepSeek fallback, keyless search) plus a Tavily MCP bridge for extract, crawl and map tools.
 - [rogerdigital/dsh-searxng](https://github.com/rogerdigital/dsh-searxng) — 基于 SearXNG 的 web_search provider：通过自建实例的 JSON API 实现免费、免密钥的元搜索，附仅绑定回环地址的 docker-compose 示例。
 - [shinjiyu/dsh-plugin-search](https://github.com/shinjiyu/dsh-plugin-search) — 不用官方 DeepSeek API 也能用内置 web_search：关掉 web-search-deepseek，默认走 Tavily keyless。
 - [stuarthu/dsh-chrome](https://github.com/stuarthu/dsh-chrome) — Chrome 侧边栏内嵌 dsh 网页界面，让 agent 读取当前页面、捕获 HTTP 流量并操作浏览器。
@@ -1058,6 +1060,7 @@ dsh plugin --profile web add dshmarket
 - [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) — Overleaf 式 LaTeX 论文工作台：在渲染后的 PDF 上选中任意文字批注，由 dsh agent 改写源文件、编译验证并提交 git 修订。
 - [omdsh-dev/dsh-tool-markdown](https://github.com/omdsh-dev/dsh-tool-markdown) — HTML↔Markdown 转换、GFM 表格规范化、目录生成。
 - [poiuyjie/dsh-md-preview](https://github.com/poiuyjie/dsh-md-preview) — DSH Web 端可停靠的 Markdown 预览面板：与对话并排展示，会话级「最近打开 .md」列表，本地相对路径图片可直接渲染；点击对话中的 .md 引用改为并排预览而非唤起系统编辑器；跟随 shell 深浅色主题。
+- [PyModel/dsh-research-plugins#dsh-mcp-context7](https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-mcp-context7) — Context7 MCP bridge: gives the model up-to-date, version-specific library documentation and code examples through the Context7 MCP server, keyless by default.
 - [STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — 演示文稿技能与工具：一句话或一篇文档生成 HTML 放映与可编辑 PPTX，内置 5 套主题，可配置默认主题/语言，中英双语。
 - [tt-a1i/archify#integrations/deepseek-harness](https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness) — 从仓库或系统描述生成经过校验的自包含交互式架构图、流程图、时序图、数据流图和生命周期图。
 - [zhtx2024/dsh-pdf](https://github.com/zhtx2024/dsh-pdf) — DSH 的 PDF 解析工具：pdf_info、pdf_extract_text、pdf_render_page 三件套，pdfjs 与自研渲染器双引擎，未内嵌 CJK 字体的 PDF 也能用系统字体渲染出图。
