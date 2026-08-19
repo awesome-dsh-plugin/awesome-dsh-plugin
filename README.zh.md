@@ -1443,7 +1443,7 @@ dsh plugin --profile web add dshmarket
 - [kouyichi/dsh-plugins#dsh-profile](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-profile) — dsh profile 管理：列出、创建、删除、重命名、描述、设默认、导出与导入。
 - [kouyichi/dsh-plugins#dsh-scaffold](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-scaffold) — dsh 插件开发工具链：生成 rc.6 兼容脚手架、mock 上下文验证注册、检查 API 兼容性。
 - [kouyichi/dsh-plugins#dsh-tui-bridge](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-bridge) — dsh TUI 扩展接缝：从插件积木注册命令、面板、状态栏字段、主题与输入钩子。
-- [kouyichi/dsh-plugins#dsh-tui-headless-app](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-headless-app) — dsh tui-headless profile 的一次性任务驱动器：创建代理、执行单条提示、落盘并输出结构化 JSON 结果。
+- [kouyichi/dsh-plugins#dsh-tui-headless-app](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-tui-headless-app) — dsh tui-headless profile 的一次性任务驱动器：CLI 指定 agent 模式（--mode: standard/code/minimal/cordis）、模型/力度/目标/权限/恢复会话运行单条提示并输出结构化 JSON——补上官方 headless 不支持指定模式运行的缺口。
 - [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
 - [labmimors/dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) — 渐进披露 MCP 网关：用 `mcp_search` 检索大型远程工具目录，再由 `mcp_call` 按精确 schema 调用，并采用惰性连接与有界缓存。
 - [leechen298/Code2Skill](https://github.com/leechen298/Code2Skill) — 从用户授权的源码生成 Function、MCP 工具、工作流 Skill 与离线测试包。
