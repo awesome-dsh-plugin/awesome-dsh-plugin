@@ -1,0 +1,6 @@
+url: https://github.com/poiuyjie/dsh-md-preview
+name: poiuyjie/dsh-md-preview
+category: docs
+description:
+  en: 'Dockable Markdown preview for the DSH Web UI: a side-by-side panel with a per-session recently-read .md list; clicking an in-chat .md reference previews it instead of launching the system editor, following the shell dark/light theme.'
+  zh: DSH Web 端可停靠的 Markdown 预览面板：与对话并排展示，会话级「最近打开 .md」列表；点击对话中的 .md 引用改为并排预览而非唤起系统编辑器；跟随 shell 深浅色主题。
