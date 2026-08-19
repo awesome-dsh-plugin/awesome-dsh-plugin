@@ -608,13 +608,13 @@
   "https://raw.githubusercontent.com/labmimors/dsh-mcp-lens/main/assets/mcp-lens-comparison.svg",
   "https://raw.githubusercontent.com/labmimors/dsh-mcp-lens/main/assets/mcp-lens-comparison.zh-CN.svg"
  ],
- "https://github.com/lire1131/dsh-undo-plugin": [
-  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-panel.png",
-  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-settings-section.png",
-  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-main.png",
-  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-settings.png",
-  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-confirm.png",
-  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-done.png"
+ "https://github.com/lire1131/dsh-undo-savepoint": [
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-savepoint/master/docs/webui-panel.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-savepoint/master/docs/webui-settings-section.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-savepoint/master/docs/gui-main.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-savepoint/master/docs/gui-settings.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-savepoint/master/docs/safe-mode-confirm.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-savepoint/master/docs/safe-mode-done.png"
  ],
  "https://github.com/literaf/dsh-ai4scholar": [
   "https://raw.githubusercontent.com/literaf/dsh-ai4scholar/main/docs/ai4scholar-home.jpg",

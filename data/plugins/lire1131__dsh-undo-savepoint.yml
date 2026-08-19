@@ -1,5 +1,5 @@
-url: https://github.com/lire1131/dsh-undo-plugin
-name: lire1131/dsh-undo-plugin
+url: https://github.com/lire1131/dsh-undo-savepoint
+name: lire1131/dsh-undo-savepoint
 category: dev
 description:
   en: 'Undo/redo & rollback system for DSH: every config change is auto-snapshotted; undo/redo/restore to any version from the WebUI or the offline CLI/GUI tools (works even when DSH fails to boot).'
