@@ -2,5 +2,5 @@ url: https://github.com/xiaheng1/dsh-turn-nav
 name: xiaheng1/dsh-turn-nav
 category: ui
 description:
-  en: Codex-style turn histogram navigation rail for DeepSeek Harness Web.
-  zh: Codex 风格的 DeepSeek Harness Web 对话轮次导航轨。
+  en: Turn histogram navigation rail for DeepSeek Harness Web with mixed, DeepSeek, and Codex visual variants.
+  zh: DeepSeek Harness Web 对话轮次导航轨，支持 mixed / DeepSeek / Codex 三种视觉风格。
