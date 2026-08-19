@@ -1319,6 +1319,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) - System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) - System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).
 - [zhengjy01/dsh-ticktick](https://github.com/zhengjy01/dsh-ticktick) - Two-way TickTick/Dida365 (滴答清单) task sync via the official OAuth Open API: pull tasks across lists, create/update/complete/delete tasks, and one-shot title-deduped sync, with a web settings panel.
+- [zzx-dear/dsh-capybara-notify](https://github.com/zzx-dear/dsh-capybara-notify) - Capybara secretary for DSH: desktop pet notifications with ding sound, alert inbox API, session-aware alerts (turn done / approval needed / turn blocked), check scripts, and daily high-star plugin recommendations.
 
 ### Development & Runtime
 
