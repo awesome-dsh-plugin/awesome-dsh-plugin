@@ -1,0 +1,6 @@
+url: https://github.com/Cavan-Ou/dsh-flash-godmode
+name: Cavan-Ou/dsh-flash-godmode
+category: workflow
+description:
+  en: "V4 Flash \"god mode\" plugin: w7 persona anchoring, first-turn tool anchoring and complexity-dispatched reasoning guidance (headless-native, verified on opencode-go)."
+  zh: V4 Flash「神模式」插件：w7 persona 锚定 + 首轮工具锚定 + 按任务复杂度分派的推理引导（headless 原生，opencode-go 通道实测）。
