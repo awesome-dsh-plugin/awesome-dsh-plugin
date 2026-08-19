@@ -1,5 +1,5 @@
-url: https://github.com/Ricketts-Guo/dsh-off-peak-message
-name: Ricketts-Guo/dsh-off-peak-message
+url: https://github.com/Ricketts-Guo/dsh-off-peak-message/tree/main/dsh-offpeak-send
+name: Ricketts-Guo/dsh-off-peak-message#dsh-offpeak-send
 category: session
 description:
   en: 'Off-peak message scheduler: turn on valley mode and the composer queues your messages until DeepSeek off-peak hours (half price), then auto-injects them into the session and gets replies. Native-look composer, hotkeys (Enter queue / ⌘+Enter send now / Esc exit), per-session toggle persisted across restarts.'
