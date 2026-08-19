@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-mask
+name: PerryLink/dsh-mask
+category: security
+description:
+  en: 'PII masking middleware for DeepSeek Harness: anonymize names, phones, emails, ID cards, bank cards, keys, and addresses to placeholders before they reach the model, restore them at the display layer, keep the restore table only in memory and a controlled storage domain, never log plaintext, with /mask and the mask_test tool.'
+  zh: 'PII 脱敏中间件：姓名、电话、邮箱、身份证、银行卡、密钥、地址在到达模型前匿名化为占位符，展示层还原；还原表只存内存与受控存储域，绝不记录明文；/mask 命令 + mask_test 工具。'

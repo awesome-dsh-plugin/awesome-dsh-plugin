@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-score
+name: PerryLink/dsh-score
+category: dev
+description:
+  en: 'Multi-dimensional quality scoring for DeepSeek Harness plugins: scores one repo or npm package across install success (consuming dsh-test-drive results), maintenance activity, documentation completeness, security scan, and protocol compliance — every conclusion backed by real CLI evidence with audit timestamps — and produces a JSON/Markdown leaderboard report.'
+  zh: 'DSH 插件多维质量评分：对单个仓库或 npm 包按安装成功（消费 dsh-test-drive 结果）、维护活跃度、文档完整度、安全扫描、协议合规五维打分——每个结论都有带审计时间戳的真实 CLI 证据——产出 JSON/Markdown 榜单报告。'

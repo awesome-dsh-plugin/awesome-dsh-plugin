@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-fast
+name: PerryLink/dsh-fast
+category: dev
+description:
+  en: 'Read-only performance diagnostics for DeepSeek Harness: session load (open/restore) timing, spill-hit counts, compaction count and trigger, context-injection volume (AGENTS.md/skills/tool-schema token share), and LLM cache hit rate, surfaced via the /fast command and the fast_report tool, persisted as reconstructable fast/* session events with async sampling off the model path.'
+  zh: '只读性能诊断：会话加载（打开/恢复）耗时、spill 命中数、压缩次数与触发、上下文注入量（AGENTS.md/技能/工具 schema 的 token 占比）、LLM 缓存命中率，经 /fast 命令与 fast_report 工具呈现，落盘为可重建的 fast/* 会话事件，异步采样不占模型路径。'

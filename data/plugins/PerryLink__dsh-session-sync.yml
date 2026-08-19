@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-session-sync
+name: PerryLink/dsh-session-sync
+category: session
+description:
+  en: 'Cross-device sync for DeepSeek Harness sessions: a dedicated git mirror of the session store, append-only three-way merge with keep-both + fork conflict resolution, /sync command, sync_pull/sync_push/sync_status tools, and configurable auto push/pull.'
+  zh: 'DSH 会话跨设备同步：会话存储的专用 git 镜像，append-only 三方合并（keep-both + fork 冲突解决，绝不静默覆盖），/sync 命令与 sync_pull/sync_push/sync_status 工具，可配置自动推拉。'

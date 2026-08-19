@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-click
+name: PerryLink/dsh-click
+category: tools
+description:
+  en: 'Cross-platform native desktop control tools for DeepSeek Harness (Windows first): screen_shot, screen_read (accessibility tree + pixel description for text-only models), click/type/scroll/key, and app_list/app_launch — every mutating action gated by approval, never stealing foreground focus, with stale-observation rejection and process-identity checks.'
+  zh: '跨平台原生桌面控制工具（Windows 优先）：screen_shot、screen_read（无障碍树 + 纯文本模型的像素描述）、click/type/scroll/key、app_list/app_launch——每个变更动作都过审批门，绝不抢前台焦点，带过期观测拒绝与进程身份校验。'

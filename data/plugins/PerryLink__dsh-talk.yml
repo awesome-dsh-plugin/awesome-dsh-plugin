@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-talk
+name: PerryLink/dsh-talk
+category: voice
+description:
+  en: 'Voice-first session loop for DeepSeek Harness: a composer microphone button with browser/local speech-to-text (Web Speech, FunASR, whisper.cpp), a speak tool for text-to-speech replies (browser, edge-tts, piper), event announcements with mute, and speak-to-interrupt.'
+  zh: '语音优先会话回路：输入区麦克风按钮（浏览器/本地语音识别：Web Speech、FunASR、whisper.cpp），speak 工具语音播报回复（browser、edge-tts、piper），事件播报可静音，支持说话打断。'
