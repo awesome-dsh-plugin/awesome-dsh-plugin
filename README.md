@@ -1509,6 +1509,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [omdsh-dev/sandbox-micro](https://github.com/omdsh-dev/sandbox-micro) - Support for the microsandbox backend.
 - [omdsh-dev/sandbox-mxc](https://github.com/omdsh-dev/sandbox-mxc) - Microsoft cross-platform sandbox support.
 - [omdsh-dev/sandbox-nono](https://github.com/omdsh-dev/sandbox-nono) - Support for the nono sandbox backend.
+- [onlyqzq/dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) - Provenance-aware execution security that tracks sensitive data across DSH tool calls and blocks risky exfiltration before execution.
 - [PAKIKNOWLEDGE/dsh-auto-classifier](https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier) - Autonomous permission classifier for the auto preset: tool-scoped allow/deny rules, an LLM semantic judge, and git checkpointing for unattended sessions.
 - [pengxuding/dsh-plugin-judge](https://github.com/pengxuding/dsh-plugin-judge) - Plugin value auditor: pre-install review (source scan + LLM judge) and post-install audit of installed bundles, with model-switch re-audit reminders.
 - [PerryLink/dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) - Second-model auto-review on the approval answerer chain: a read-only reviewer subagent returns structured allow/deny verdicts with reasons, fail-closed by default.
