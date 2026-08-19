@@ -1,0 +1,6 @@
+url: https://github.com/feiertu/dsh-input-rewriter
+name: feiertu/dsh-input-rewriter
+category: ui
+description:
+  en: 'Auto-rewrites the composer draft into a clearer, more executable prompt after you stop typing, using scene-aware playbooks, preserving long attachments verbatim, and numbering multi-part questions.'
+  zh: '停止输入后自动把草稿改写为更清晰、更可执行的提示词：按场景套用 playbook、长附件逐字保留、多提问保留编号。'
