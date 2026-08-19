@@ -933,5 +933,18 @@
  "https://github.com/wenheguo2/dsh-delegation-suite": [
   "https://raw.githubusercontent.com/wenheguo2/dsh-delegation-suite/main/assets/routes.png",
   "https://raw.githubusercontent.com/wenheguo2/dsh-delegation-suite/main/assets/subagents.png"
+ ],
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-appearance-gallery": [
+  "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/appearance-gallery.png"
+ ],
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager": [
+  "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/session-manager.png"
+ ],
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools": [
+  "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/composer-tools.png"
+ ],
+ "https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-turn-scrubber": [
+  "https://raw.githubusercontent.com/wsxwj123/dsh-plugins/main/assets/screenshots/turn-scrubber.png"
  ]
+
 }
