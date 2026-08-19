@@ -174,6 +174,21 @@ export function validateEntries(entries) {
       } else if (d.includes('\n')) problems.push(`${at}: "description.${loc}" must be a single line`)
     }
 
+    // A description in a locale the site does not render is text nobody will
+    // ever read: build-site only picks up LOCALE_CODES, so the contributor's
+    // translation is dropped without a word. Two entries reached main with a
+    // `ja` key before this check existed. Say so instead of silently ignoring
+    // it — adding a locale is a change to the site, not to one entry.
+    if (e.description && typeof e.description === 'object') {
+      const extraLocales = Object.keys(e.description).filter((k) => !LOCALE_CODES.includes(k))
+      if (extraLocales.length) {
+        problems.push(
+          `${at}: "description" has ${extraLocales.map((k) => `"${k}"`).join(', ')}, ` +
+            `but the site renders only ${LOCALE_CODES.join(' and ')} — remove the extra key(s)`,
+        )
+      }
+    }
+
     // Optional prebuilt tarball. Deliberately a URL and not a command string:
     // this ends up as something people paste into a shell, so the build owns
     // the command and only the artifact location comes from the entry.
