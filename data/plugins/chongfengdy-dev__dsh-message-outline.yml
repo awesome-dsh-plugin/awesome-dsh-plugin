@@ -1,0 +1,6 @@
+url: https://github.com/chongfengdy-dev/dsh-message-outline
+name: chongfengdy-dev/dsh-message-outline
+category: ui
+description:
+  en: Current-session message outline rail for the DSH web UI — your messages show as slim bars on the left edge; hover to expand the full outline (line number + text), click to jump instantly to that message. Pure frontend, zero external service dependencies, sessions-snapshot driven with zero polling.
+  zh: 当前会话消息大纲（左缘横杠）——你的消息在对话区左缘显示一列细横杠，hover 展开完整大纲（行号+文本），点击瞬间定位到对话里那条消息。纯前端、零外部服务依赖、sessions 快照驱动零轮询。
