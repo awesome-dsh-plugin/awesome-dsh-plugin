@@ -104,8 +104,8 @@
   "https://raw.githubusercontent.com/Awu12277/dsh-stock-watch/main/screenshots/list-dark.png"
  ],
  "https://github.com/ChongCyrus/Vibe-Mathematics": [
-  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE-v1.png",
-  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE-v2.png"
+  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E6%A1%86%E6%9E%B6%E5%9B%BE.png",
+  "https://raw.githubusercontent.com/ChongCyrus/Vibe-Mathematics/main/%E7%A4%BA%E4%BE%8B%E5%9B%BE/%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B-%E9%95%BF%E6%88%AA%E5%9B%BE.png"
  ],
  "https://github.com/ChrisZhangWG/dsh-codex-meter": [
   "https://raw.githubusercontent.com/ChrisZhangWG/dsh-codex-meter/main/docs/settings-usage-overview.png",
@@ -980,5 +980,42 @@
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-upload-reference.png"
+ ],
+ "https://github.com/Blank-not-black/dsh-Remote": [
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-sessions.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-approvals.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-files.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/mobile-settings.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/gateway.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/settings-mobile.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/sessions.png",
+  "https://raw.githubusercontent.com/Blank-not-black/dsh-Remote/main/docs/screenshots/files.png"
+ ],
+ "https://github.com/NoNameLeGo/dsh-catppuccin": [
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/latte.png",
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/frappe.png",
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/macchiato.png",
+  "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/main/assets/previews/mocha.png"
+ ],
+ "https://github.com/WSL043/dsh-codex-subscription": [
+  "https://raw.githubusercontent.com/WSL043/dsh-codex-subscription/main/docs/assets/settings-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-codex-subscription/main/docs/assets/composer-quota-en.png"
+ ],
+ "https://github.com/ayahunter/dsh-trail": [
+  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshot.png",
+  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/rounds-view.png",
+  "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/tool-details.png"
+ ],
+ "https://github.com/kaziii/dsh-github-connector": [
+  "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/pr-bar.png",
+  "https://raw.githubusercontent.com/kaziii/dsh-github-connector/main/docs/assets/connect-github.png"
+ ],
+ "https://github.com/lire1131/dsh-undo-plugin": [
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-panel.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/webui-settings-section.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-main.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/gui-settings.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-confirm.png",
+  "https://raw.githubusercontent.com/lire1131/dsh-undo-plugin/master/docs/safe-mode-done.png"
  ]
 }
