@@ -1143,6 +1143,7 @@ dsh plugin --profile web add dshmarket
 - [CTWCTW9999/dsh-agent-preset-router](https://github.com/CTWCTW9999/dsh-agent-preset-router) — DSH 自动模式：用 Flash 模型为每个新会话自动判断最合适的 Agent 预设（标准/PTC/极简/创造）并直接执行，无需确认。
 - [Dely0/dsh-personal-workbench](https://github.com/Dely0/dsh-personal-workbench) — 日历 + 层级任务个人工作台：AI 辅助澄清、咨询、拆解、执行（用户验收）与复盘，支持到期提醒与按任务组织的 AI 会话工作区。
 - [dickpy/dsh-cloud-sync](https://github.com/dickpy/dsh-cloud-sync) — 通过 WebDAV 和兼容 S3 的存储同步 DSH profile 与本地插件源码归档，支持加密快照、冲突感知恢复和显式自更新。
+- [eightHundreds/dsh-plannotator](https://github.com/eightHundreds/dsh-plannotator) — 打开官方 Plannotator 应用（plannotator.ai）审代理写好的计划：批注、批准，或打回重写。
 - [EthanYoQ/AI-Novel-Writer#dsh-ai-novel-writer](https://github.com/EthanYoQ/AI-Novel-Writer/tree/master/plugins/dsh-ai-novel-writer) — 安装专用 AI 小说创作预设与工作台：提供带修订号的本地项目资产、紧凑侧边工作台，以及需要原生审批的逐文件变更。
 - [EvilIrving/dsh-proof](https://github.com/EvilIrving/dsh-proof) — 独立只读验收层：顶层 turn 收尾前 spawn 只读 verifier，未通过时把缺口注回主 agent。
 - [fakechris/dsh-track](https://github.com/fakechris/dsh-track) — 嵌入式任务管理引擎：决策点协议、念头捕获墙、Linear 形 issue 存储。
