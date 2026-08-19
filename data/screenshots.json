@@ -980,5 +980,10 @@
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-upload-reference.png"
+ ],
+ "https://github.com/liguobao/deepseek-harness-remote": [
+  "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/setting.png",
+  "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/host-list.png",
+  "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/remote.png"
  ]
 }
