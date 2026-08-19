@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyuer3921/dsh-showreel
+name: xiaoyuer3921/dsh-showreel
+category: ui
+description:
+  en: 'Turns the latest completed DeepSeek Harness turn into an editable, privacy-redacted vertical recap video, exported as a 1080x1920 MP4/WebM plus a PNG cover.'
+  zh: 把最近一次已完成的 DSH Agent 任务生成可编辑、隐私脱敏的竖屏战报视频，导出 1080×1920 的 MP4/WebM 与 PNG 封面。
