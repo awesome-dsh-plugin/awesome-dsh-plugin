@@ -1,0 +1,7 @@
+url: https://github.com/ruisenbai/dsh-inline-comments
+name: ruisenbai/dsh-inline-comments
+category: ui
+description:
+  en: Select text in a finished assistant reply to add numbered comments beside the quote; collect drafts and submit the batch through the official composer as one user message.
+  zh: 在已完成的助手回复中选中原文，在引文旁添加编号注释；草稿攒齐后通过官方输入框一次性作为一条用户消息发送。
+tarball: https://github.com/ruisenbai/dsh-inline-comments/releases/download/v0.1.1/dsh-inline-comments-0.1.1.tgz
