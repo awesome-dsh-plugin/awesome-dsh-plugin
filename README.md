@@ -460,6 +460,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
 - [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) - Role-based LLM retry & fallback strategies.
+- [cuboteam/dsh-plugin-dit](https://github.com/cuboteam/dsh-plugin-dit) - DIT.ai provider bundle for DeepSeek Harness: installs 29 OpenAI Chat Completions models and 10 Anthropic Messages models from one DIT_API_KEY, with protocol-specific thinking configuration.
 - [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) - Global Chinese mode: a compact pill switch beside the composer that injects a language requirement into any preset's system prompt (complete personas excepted); reply, thinking and tool output each toggle between Chinese and English, and anchored presets are supported.
 - [dingminhua/dsh-subagent-default-model#plugin](https://github.com/dingminhua/dsh-subagent-default-model/tree/main/plugin) - Configurable default model for subagent delegations via settings.yaml, with single-model and multi-model round-robin or random strategies.
 - [dylan121322/llm-adaptive](https://github.com/dylan121322/llm-adaptive) - Adaptive model routing: per-request complexity classification with automatic provider routing.
