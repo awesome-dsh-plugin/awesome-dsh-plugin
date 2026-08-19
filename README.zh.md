@@ -766,6 +766,7 @@ dsh plugin --profile web add dshmarket
 - [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) — codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。
 - [jiayan-xu/dsh-nuphus-mcp](https://github.com/jiayan-xu/dsh-nuphus-mcp) — 桌面 + 浏览器自动化桥（36 个工具）：窗口/屏幕/鼠标/键盘控制配 PaddleOCR 元素感知，Chrome CDP 浏览配无障碍快照。
 - [jihongboo/dsh-apple-mode](https://github.com/jihongboo/dsh-apple-mode) — DSH 的 Xcode AI 集成：26 个 Xcode MCP 工具（mcpbridge）+ Apple 平台技能 + Xcode Intelligence 风格 persona（agent preset 或全局 bundle）。
+- [jing-hy/dsh-task-runner](https://github.com/jing-hy/dsh-task-runner) — DSH 项目/任务双模式工作区：任务不绑定工作区，每次新对话在 D:\dsh_working\<名称>-<时间戳> 自动创建独立临时目录（类 Codex）；侧边栏"任务"分组常驻显示所有无工作区会话并带空状态提示，新建会话的工作区选择器增加"无工作区（任务）"选项。
 - [jinguanghai/deepseek-harness-forge-plugins#forge-gates](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates) — 真实计算验证门：数学化简、逻辑证明、正则校验、E-prover 一阶逻辑、状态机检查与代码修复，由 Go 编译的二进制支撑（附 Windows 预编译产物）。
 - [jinguanghai/deepseek-harness-forge-plugins#forge-tcm](https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm) — 中医工具集：八纲辨证与药对查询。
 - [jinhuoooo/dsh-prompt-polish](https://github.com/jinhuoooo/dsh-prompt-polish) — 输入框 ✨ 一键润色按钮：参考 WorkBuddy 润色（humanizer-zh）规则改写提示词与草稿（去除 AI 写作痕迹、调整句式节奏，按指令/提问/普通文本分类处理），默认使用免费的智谱 GLM-4.5-Flash，也支持任意 OpenAI 兼容 API，断网时回退到本地规则引擎。
