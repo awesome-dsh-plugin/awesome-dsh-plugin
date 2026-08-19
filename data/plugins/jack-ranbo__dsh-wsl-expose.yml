@@ -1,0 +1,6 @@
+url: https://github.com/jack-ranbo/dsh-wsl-expose
+name: jack-ranbo/dsh-wsl-expose
+category: remote
+description:
+  en: 'Expose the DSH Web GUI over IPv6 or IPv4 from WSL2 through a reverse proxy (Lucky): /wan up sets up the socat relay, Windows portproxy, firewall, and trusted-host fence.'
+  zh: '从 WSL2 走 IPv6/IPv4 经反向代理（Lucky）把 DSH Web GUI 暴露到公网：/wan up 一键建立 socat 中继、Windows portproxy、防火墙与 trusted-host 白名单。'
