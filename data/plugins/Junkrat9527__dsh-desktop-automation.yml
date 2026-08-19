@@ -1,0 +1,6 @@
+url: https://github.com/Junkrat9527/dsh-desktop-automation
+name: Junkrat9527/dsh-desktop-automation
+category: remote
+description:
+  en: 'macOS desktop automation for DeepSeek Harness: agent tools control mouse, keyboard, scrolling, app activation, windows and screenshots directly; plus a vision closed-loop (desktop_see for image understanding + desktop_locate for UI element coordinates) that reuses dsh existing vision credentials. The GUI-session service is started on demand via launchctl bootstrap (no login autostart) because only GUI-session processes get macOS Accessibility permission.'
+  zh: 'macOS 桌面自动化插件：agent 工具直接控制鼠标/键盘/滚动/应用/窗口/截图；并整合视觉闭环（desktop_see 识图 + desktop_locate UI 定位坐标，复用 dsh 既有视觉凭据）。服务经 launchctl bootstrap gui 按需拉起（非登录自启）——因为只有 GUI 会话进程才能拿到 macOS 辅助功能权限。'
