@@ -990,5 +990,13 @@
   "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/setting.png",
   "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/host-list.png",
   "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/remote.png"
+ ],
+ "https://github.com/WJZ-P/dsh-attachments": [
+  "https://raw.githubusercontent.com/WJZ-P/dsh-attachments/main/assets/markdown/01-drag-drop-overlay.png",
+  "https://raw.githubusercontent.com/WJZ-P/dsh-attachments/main/assets/markdown/02-image-conversation.png",
+  "https://raw.githubusercontent.com/WJZ-P/dsh-attachments/main/assets/markdown/03-multiple-image-preview.png"
+ ],
+ "https://github.com/WJZ-P/dsh-model-capabilities": [
+  "https://raw.githubusercontent.com/WJZ-P/dsh-model-capabilities/main/assets/screenshots/01-model-input-selector.png"
  ]
 }
