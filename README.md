@@ -768,6 +768,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [MAXeaglet/dsh-bash-terminal](https://github.com/MAXeaglet/dsh-bash-terminal) - One shell tool for PowerShell / Git Bash / WSL on Windows plus an interactive PTY terminal; the default terminal is chosen by the user in DSH settings.
 - [MlittleFriend/dsh-character-profiler](https://github.com/MlittleFriend/dsh-character-profiler) - Character consistency toolkit: personality profile cards, appearance-weight stats, and behavioral-drift detection for long-form fiction.
 - [moononnn/DeepSeek-Harness-biaoqingbao](https://github.com/moononnn/DeepSeek-Harness-biaoqingbao) - Sticker/emoji expression for assistants: emotion-driven auto-matching, library management, AI image tagging, dialects, style mimicry, and chat-based tag refinement.
+- [Nrxous/dsh-context7](https://github.com/Nrxous/dsh-context7) - Fetches up-to-date, version-pinned library documentation and code examples from context7.com for DSH agents via context7_search and context7_get_docs tools.
 - [omdsh-dev/dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) - Create and manage sandboxed JavaScript tools with a Monaco editor and model-driven tool lifecycle.
 - [omdsh-dev/dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) - Let the AI connect to databases and write SQL for you.
 - [omdsh-dev/dsh-tool-calculator](https://github.com/omdsh-dev/dsh-tool-calculator) - Safe math expression evaluator, zero-dependency recursive-descent parser.

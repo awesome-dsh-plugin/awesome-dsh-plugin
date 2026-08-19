@@ -1,0 +1,6 @@
+url: https://github.com/Nrxous/dsh-context7
+name: Nrxous/dsh-context7
+category: tools
+description:
+  en: Fetches up-to-date, version-pinned library documentation and code examples from context7.com for DSH agents via context7_search and context7_get_docs tools.
+  zh: 通过 context7_search 与 context7_get_docs 工具，为 DSH 智能体从 context7.com 获取最新、可锁定版本的库文档与代码示例。
