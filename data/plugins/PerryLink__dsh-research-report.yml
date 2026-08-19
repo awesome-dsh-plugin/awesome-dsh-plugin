@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-research-report
+name: PerryLink/dsh-research-report
+category: workflow
+description:
+  en: 'Evidence ledger and verifiable report engine: content-addressed claim-to-snapshot bindings with byte-level verification, sealed into versioned reports behind a SHA-256 manifest with per-claim verdicts.'
+  zh: '证据账本与可验证报告引擎：内容寻址的声明-快照绑定与逐字节核查，产出带逐条判定与 SHA-256 清单封存的版本化报告。'
