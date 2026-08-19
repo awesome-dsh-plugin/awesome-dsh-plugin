@@ -1,0 +1,7 @@
+url: https://github.com/azure5100/huahua-dsh-plugin-orchestra
+name: azure5100/huahua-dsh-plugin-orchestra
+category: market
+description:
+  en: 'A plugin management system for DeepSeek Harness: plugin inventory with L0/L1/L2 AI purpose summaries, changelog tracking, update alerts, one-click upgrade, and backup/rollback with crash recovery.'
+  zh: 'DSH 插件管理系统：插件清单与 AI 用途解读、变更日志、更新提醒、一键升级、自动备份与回滚，附带崩溃恢复。'
+  ja: 'DSH 向けプラグイン管理システム：プラグイン一覧と L0/L1/L2 の AI 用途要約、変更履歴の追跡、更新通知、ワンクリック更新、自動バックアップとロールバック、クラッシュ復旧を備えています。'

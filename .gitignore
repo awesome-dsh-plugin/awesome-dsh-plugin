@@ -1,8 +1,18 @@
 node_modules/
 .DS_Store
+# Editor state, never part of a submission. IntelliJ and PyCharm create .idea/
+# the moment the folder is opened, and `git add -A` sweeps it into the PR —
+# #1663 committed six of these files before anyone noticed.
+.idea/
+.vscode/
+*.swp
 docs/
 data/npm-map.json
-data/stars.json
+# data/stars.json is deliberately NOT ignored — see the header of
+# scripts/probe-stars.mjs. It is the committed floor that makes "a failed repo
+# keeps its old entry" true; while it lived only in the Actions cache, one
+# cache miss on a spent API quota published `stars: null` for every entry.
 data/readmes.json
+data/tarballs.json
 
 .npm-cache/

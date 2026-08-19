@@ -1,0 +1,6 @@
+url: https://github.com/NormanFxxkingRockwell/harmonyos-dev-mcp-for-dsh
+name: NormanFxxkingRockwell/harmonyos-dev-mcp-for-dsh
+category: dev
+description:
+  en: 'Bridges the harmonyos-dev-mcp Python MCP server into DSH: HarmonyOS device discovery, build/install/run/uninstall, UI automation (click/input/keys/swipe/screenshot), E2E UI-tree inspection, and log/crash analysis as 18 mcp__harmonyos__* tools.'
+  zh: '把 harmonyos-dev-mcp Python MCP 服务桥接进 DSH：鸿蒙设备发现、构建/安装/运行/卸载、UI 自动化（点击/输入/按键/滑动/截图）、E2E 界面树检查、日志与崩溃分析，共 18 个 mcp__harmonyos__* 工具。'

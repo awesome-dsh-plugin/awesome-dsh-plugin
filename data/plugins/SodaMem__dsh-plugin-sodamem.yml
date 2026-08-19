@@ -1,0 +1,6 @@
+url: https://github.com/SodaMem/dsh-plugin-sodamem
+name: SodaMem/dsh-plugin-sodamem
+category: memory
+description:
+  en: 'Bi-temporal memory backed by a SodaMem daemon: recall is contributed to the prompt while each turn is assembled and every closed turn is ingested, with no tool call and no model call on the read path; each recalled fact cites the turn it came from and carries validity dates, so superseded facts stop being retrieved.'
+  zh: '基于 SodaMem 守护进程的双时间轴记忆：每轮组装提示词时注入检索结果，回合结束后自动写回，读路径不经工具调用也不额外调用模型；每条召回的事实都标注来源回合并带有效期，失效的事实不再被检索到。'

@@ -76,6 +76,28 @@ async function api(pathname, { raw = false } = {}) {
   return { status: 200, body: raw ? r : await r.json().catch(() => null), headers: r.headers }
 }
 
+// A monorepo submission lists one entry per subpackage, and every one of them
+// resolves to the SAME repository — so the repository metadata and the commit
+// count were fetched once per entry. #1608 lists 33 subpackages of
+// kouyichi/dsh-plugins: 33 identical `repos/…` calls plus 33 identical
+// `commits?per_page=1` calls, 64 of which were pure repetition.
+//
+// That budget is 1000/hour per repository and is shared with every other
+// workflow. Exhausting it is what made the gate report entries it had never
+// looked at on 2026-08-18, and it is why 23 open PRs are currently sitting on
+// a "could not be fully checked" verdict. Deduplicating by repository costs
+// nothing in accuracy — both values are per-repository, not per-entry.
+//
+// Promises are memoised rather than results, so entries checked concurrently
+// within a batch share one in-flight request instead of racing to issue their
+// own. The cache lives for the process, which is one gate run, so there is no
+// staleness question.
+const memo = new Map()
+const once = (key, make) => {
+  if (!memo.has(key)) memo.set(key, make())
+  return memo.get(key)
+}
+
 function decompose(url) {
   const p = url.replace(/^https:\/\/github\.com\//, '').replace(/\/+$/, '')
   return {
@@ -96,19 +118,16 @@ function parsePkg(content) {
   }
 }
 
-async function hasBundle(repo, sub) {
-  // The entry may point straight at a subpackage — that manifest is authoritative.
-  const direct = await api(`repos/${repo}/contents/${sub ? `${sub}/` : ''}package.json`)
-  if (direct.status === 200 && direct.body?.content) {
-    const pkg = parsePkg(direct.body.content)
-    // An unparseable manifest must not fall through to "looks fine" — it is
-    // exactly as uninstallable as a missing one.
-    if (!pkg) return { ok: false, why: `\`${sub ? `${sub}/` : ''}package.json\` is not valid JSON` }
-    const dsh = pkg.dsh ?? {}
-    if (dsh.bundle) return { ok: true }
-    if (sub) return { ok: false, why: dsh.client ? 'declares only `dsh.client` — that alone is not installable' : `\`${sub}/package.json\` has no \`dsh.bundle\`` }
-  }
-
+/**
+ * Walk a repository's manifests looking for a `dsh.bundle`.
+ *
+ * Memoised whole, not just its tree fetch: the walk does not depend on which
+ * subpackage an entry points at, so for a monorepo listing N subpackages it
+ * would otherwise run N times over the same up-to-40 manifests. That is the
+ * gate's worst case by a wide margin — 33 entries x 40 manifests is 1,320
+ * requests against a 1,000/hour repository budget, from a single pull request.
+ */
+const scanTree = (repo) => once(`scan:${repo}`, async () => {
   const tree = await api(`repos/${repo}/git/trees/HEAD?recursive=1`)
   if (tree.status !== 200) return { ok: null, why: `could not read the repository tree (HTTP ${tree.status})` }
   // A recursive tree is capped by the API (~100k entries / 7MB) and the
@@ -158,6 +177,55 @@ async function hasBundle(repo, sub) {
     return { ok: null, why: `the repository has ${found.length} package.json files, more than the ${MAX_TREE_PKGS} this check reads` }
   }
   return { ok: false, why: `no \`dsh.bundle\` in any of ${pkgs.length} package.json file(s)` }
+})
+
+async function hasBundle(repo, sub) {
+  // The entry may point straight at a subpackage — that manifest is
+  // authoritative, and it is per-entry rather than per-repository, so it stays
+  // outside the memoised tree scan below.
+  const direct = await api(`repos/${repo}/contents/${sub ? `${sub}/` : ''}package.json`)
+  if (direct.status === 200 && direct.body?.content) {
+    const pkg = parsePkg(direct.body.content)
+    // An unparseable manifest must not fall through to "looks fine" — it is
+    // exactly as uninstallable as a missing one.
+    if (!pkg) return { ok: false, why: `\`${sub ? `${sub}/` : ''}package.json\` is not valid JSON` }
+    const dsh = pkg.dsh ?? {}
+    if (dsh.bundle) return { ok: true }
+    if (sub) return { ok: false, why: dsh.client ? 'declares only `dsh.client` — that alone is not installable' : `\`${sub}/package.json\` has no \`dsh.bundle\`` }
+  }
+
+  // The entry points at the repository root and the root does not declare a
+  // bundle. The tree scan below may still find one in a subdirectory — and for
+  // a long time that counted as a pass, which is the bug: the site builds the
+  // install command from the entry's URL, so `dsh plugin add github:owner/repo`
+  // targets the root, not wherever the manifest happens to live. The gate was
+  // verifying something other than what it publishes.
+  //
+  // Found by auditing the 1,302 root-pointing entries on 2026-08-18: 48 of them
+  // are listed and cannot be installed from the URL beside their name. #1701
+  // was merged that morning and was one of them.
+  //
+  // The submission is not rejected outright — the plugin is usually real and
+  // only the URL is wrong — so the failure names the exact replacement.
+  const scanned = await scanTree(repo)
+  if (scanned.ok === true && scanned.at) {
+    const dir = scanned.at.replace(/\/package\.json$/, '')
+    if (dir && dir !== 'package.json') {
+      const branch = await once(`branch:${repo}`, async () => (await api(`repos/${repo}`)).body?.default_branch ?? 'main')
+      return {
+        ok: false,
+        why: [
+          `the entry points at the repository root, but the root \`package.json\` declares no \`dsh.bundle\` — `,
+          `\`dsh plugin --profile web add github:${repo}\` would install nothing. The manifest is at \`${scanned.at}\`, `,
+          'so point the entry at that subpackage instead:\n',
+          `  url: https://github.com/${repo}/tree/${branch}/${dir}\n`,
+          `  name: ${repo}#${dir.split('/').pop()}\n`,
+          '\nand rename the file to match (`node scripts/generate-readme.mjs` will tell you the expected name).',
+        ].join(''),
+      }
+    }
+  }
+  return scanned
 }
 
 async function commitCount(repo) {
@@ -173,33 +241,40 @@ async function commitCount(repo) {
 async function check(entry) {
   const { repo, sub } = decompose(entry.url)
   if (FIRST_PARTY_REPOS.has(repo.toLowerCase())) {
-    return ['this is DeepSeek Harness itself, not a plugin for it']
+    return { problems: ['this is DeepSeek Harness itself, not a plugin for it'], unverified: [] }
   }
-  const meta = await api(`repos/${repo}`)
-  if (meta.status === 404) return [`repository not found: https://github.com/${repo}`]
+  const meta = await once(`meta:${repo}`, () => api(`repos/${repo}`))
+  if (meta.status === 404) return { problems: [`repository not found: https://github.com/${repo}`], unverified: [] }
   if (meta.status !== 200) {
-    console.error(`  ${entry.url}: repo lookup failed (HTTP ${meta.status}) — skipping`)
-    return []
+    // Nothing about this entry was established. Returning no problems read as
+    // "passed" all the way out to the check-run summary, which is how
+    // repositories under both bars came to sit green: a 403 during a quota
+    // squeeze looked identical to a clean bill of health.
+    return { problems: [], unverified: [`nothing checked — repo lookup failed (HTTP ${meta.status})`] }
   }
   const problems = []
+  const unverified = []
   if (meta.body.archived) problems.push('repository is archived')
 
   const bundle = await hasBundle(repo, sub)
   if (bundle.ok === false) problems.push(bundle.why)
-  else if (bundle.ok === null) console.error(`  ${entry.url}: ${bundle.why} — manifest check skipped`)
+  else if (bundle.ok === null) unverified.push(`manifest not checked — ${bundle.why}`)
 
   if (gateApplies) {
     const ageDays = (Date.now() - new Date(meta.body.created_at).getTime()) / 86400000
-    const commits = await commitCount(repo)
+    const commits = await once(`commits:${repo}`, () => commitCount(repo))
     if (ageDays < MIN_AGE_DAYS) {
       const hours = Math.ceil((MIN_AGE_DAYS - ageDays) * 24)
       problems.push(`repository is ${ageDays.toFixed(1)} days old (needs ${MIN_AGE_DAYS}) — resubmit in about ${hours}h, nothing is held against a resubmission`)
     }
-    if (commits !== null && commits < MIN_COMMITS) {
-      problems.push(`repository has ${commits} commit(s) (needs ${MIN_COMMITS})`)
-    }
+    // A count we could not read is not a count that met the bar. Letting it
+    // through is right — a busy API quota must not reject a good submission —
+    // but the verdict has to say so, or "enough commits" is printed about a
+    // repository nobody counted.
+    if (commits === null) unverified.push('commit count could not be read')
+    else if (commits < MIN_COMMITS) problems.push(`repository has ${commits} commit(s) (needs ${MIN_COMMITS})`)
   }
-  return problems
+  return { problems, unverified }
 }
 
 function changedEntryFiles(base) {
@@ -236,19 +311,32 @@ if (!targets.length) {
 console.log(`checking ${targets.length} entr${targets.length === 1 ? 'y' : 'ies'}` + (gateApplies ? '' : ' (age/commit gate not applied — PR predates the rule)'))
 
 const failures = []
+const incomplete = []
 for (let i = 0; i < targets.length; i += CONCURRENCY) {
   const batch = targets.slice(i, i + CONCURRENCY)
-  const results = await Promise.all(batch.map(async (e) => [e, await check(e).catch((err) => { console.error(`  ${e.url}: ${err.message} — skipping`); return [] })]))
-  for (const [e, problems] of results) {
+  const results = await Promise.all(batch.map(async (e) => [e, await check(e).catch((err) => ({ problems: [], unverified: [`the check itself failed: ${err.message}`] }))]))
+  for (const [e, { problems, unverified }] of results) {
     if (problems.length) failures.push({ url: e.url, file: e.file, problems })
-    else console.log(`  ok  ${e.url}`)
+    else if (unverified.length) {
+      incomplete.push({ url: e.url, file: e.file, unverified })
+      console.log(`  ??  ${e.url} — ${unverified.join('; ')}`)
+    } else console.log(`  ok  ${e.url}`)
   }
 }
 
-if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures }, null, 1))
+// `incomplete` never blocks: a busy API quota must not reject a good
+// submission. It is reported separately so the verdict can say which entries
+// were let through unchecked rather than vouching for them.
+if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify({ ok: !failures.length, checked: targets.length, failures, incomplete }, null, 1))
 
 if (!failures.length) {
-  console.log('all checked entries pass')
+  if (incomplete.length) {
+    const passed = targets.length - incomplete.length
+    console.log(`${passed} entr${passed === 1 ? 'y' : 'ies'} pass; ${incomplete.length} could not be fully checked:`)
+    for (const c of incomplete) console.log(`  ${c.url} — ${c.unverified.join('; ')}`)
+  } else {
+    console.log('all checked entries pass')
+  }
   process.exit(0)
 }
 for (const f of failures) {

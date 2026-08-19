@@ -2,5 +2,5 @@ url: https://github.com/modusensus/dsh-mneme/tree/main/dsh-mneme
 name: modusensus/dsh-mneme#dsh-mneme
 category: memory
 description:
-  en: Structured memory engine for DeepSeek Harness. Offline semantic search, entity-attribute-timeline, autoDream self-consolidation, and human-editable Markdown storage.
-  zh: DeepSeek Harness 结构化记忆引擎。离线语义搜索、实体-属性-时间轴、autoDream 自我巩固、可人工编辑的 Markdown 存储。
+  en: 'Cross-session memory engine for DeepSeek Harness: SQLite store + human-editable Markdown mirror, autoDream consolidation, offline semantic search (local vector/rerank/clustering), entity-attribute-timeline, Sleep Mode, custom-model autoSummarize, and 7 memory tools.'
+  zh: DeepSeek Harness 跨会话记忆引擎：SQLite 存储 + 可人工编辑的 Markdown 镜像、autoDream 自我巩固、离线语义搜索（本地向量/精排/聚类）、实体-属性-时间轴、Sleep Mode、autoSummarize 自定义模型，共 7 个记忆工具。
