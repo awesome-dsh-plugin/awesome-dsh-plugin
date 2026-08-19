@@ -1,7 +1,7 @@
 {
     "name": "awesome-dsh-plugin",
     "version": "0.1.0",
-    "description": "A curated list of DeepSeek Harness (dsh) plugins \u00b7 DeepSeek Harness \u63d2\u4ef6\u7cbe\u9009\u5217\u8868",
+    "description": "A curated list of DeepSeek Harness (dsh) plugins · DeepSeek Harness 插件精选列表",
     "homepage": "https://awesome-dsh-plugin.com",
     "repository": {
         "type": "git",
