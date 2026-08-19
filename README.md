@@ -1698,9 +1698,9 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [yushi-xxh/dsh-homepage-skin](https://github.com/yushi-xxh/dsh-homepage-skin) - Adds the DeepSeek Harness homepage background to dsh web: WebGL fluid light, dot-line grid and a digital point-cloud whale, with dark and light palettes.
 - [yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) - Chat meme stickers: text-only send, mood auto-send, QQ/WeChat-style picker, auto-learn, custom packs.
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) - The pet that grows with your agent: 5 evolution stages earned from real signals (verified rules, completed sessions, tool calls, compactions), agent-state mirroring, and one-click growth share cards. Zero dependencies, 100% local.
-<!-- END PLUGINS -->
 
-- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - 为 Agnes-2.5-Flash 免费模型添加 PaddleOCR 视觉识别能力
+- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..<!-- END PLUGINS -->
+
 
 
 - [1HelloMan1/dsh-vision-fallback](https://github.com/1HelloMan1/dsh-vision-fallback) - Routes chat images to a fixed OpenAI-compatible vision model, returns factual observations to the selected main model, and reuses session-scoped observations across replay, compaction, and restarts.
@@ -2432,8 +2432,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) - The pet that grows with your agent: 5 evolution stages earned from real signals (verified rules, completed sessions, tool calls, compactions), agent-state mirroring, and one-click growth share cards. Zero dependencies, 100% local.
 
 
-- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..
-- [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) - Add PaddleOCR vision capability to Agnes-2.5-Flash free model, enabling DeepSeek Harness full functionality for free..<!-- END PLUGINS -->
 
 ## Contributing
 
