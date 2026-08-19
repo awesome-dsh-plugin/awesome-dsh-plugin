@@ -296,6 +296,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zoumutou/dsh-web-preview](https://github.com/zoumutou/dsh-web-preview) - Side web-preview panel: local static hosting, Markdown/code/image preview, one-click run of non-static projects (Cargo/npm/Go/Python) with live logs, drag files into the chat (saved to the workspace), element mark & annotate, workspace file search on 404, and link-click takeover into the side panel.
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) - OpenPencil design preview and editing plugin.
 - [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) - Highlights parts of speech (nouns green, verbs red, adjectives/adverbs purple) in rendered DSH Web Markdown, with light/dark palettes, toggles, and stream-aware updates.
+- [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) - Select any text in a DSH chat reply to get a floating Follow-up/Copy pill: one click quotes the selection into the composer so you can type your own follow-up question, or copies it.
 
 ### Usage & Billing
 
