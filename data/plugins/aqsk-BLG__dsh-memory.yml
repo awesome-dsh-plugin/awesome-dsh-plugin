@@ -1,0 +1,7 @@
+url: https://github.com/aqsk-BLG/dsh-memory
+name: aqsk-BLG/dsh-memory
+category: memory
+description:
+  en: 'Layered file memory for DeepSeek Harness with workspace-scoped USER/MEMORY notes, background consolidation, and hybrid session recall.'
+  zh: DeepSeek Harness 分层文件记忆，提供工作区隔离的 USER/MEMORY 笔记、后台沉淀与混合会话召回。
+tarball: https://github.com/aqsk-BLG/dsh-memory/releases/download/v1.2.1/dsh-file-memory-1.2.1.tgz
