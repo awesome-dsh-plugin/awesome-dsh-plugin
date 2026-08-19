@@ -860,6 +860,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Browser & Web
 
+- [131CDA1/dsh-scrape-webpage](https://github.com/131CDA1/dsh-scrape-webpage) - Fetches any http/https page and returns title, description, main text, heading outline and links, with stats (char/word counts, reading time, language) and top keywords; can download content images to the session workspace for vision analysis and dispatch them to registered analyzers via the scrape.imageAnalyzer service.
 - [1624318455/dsh-plugin-tavily](https://github.com/1624318455/dsh-plugin-tavily) - Tavily-backed web search provider for the built-in web_search tool, with a settings card for the API key, result count, and recency window.
 - [263311487-ux/dsh-verify](https://github.com/263311487-ux/dsh-verify) - Independent browser acceptance testing for agent deliverables: JSON spec in, real-Chromium verdict out.
 - [2672243194/dsh-read-url](https://github.com/2672243194/dsh-read-url) - Read any page as clean main content: charset auto-detect (GBK/GB2312/UTF-8/Big5), noise stripping, compact text/Markdown, offset continuation, optional SPA rendering, batch reads and site crawling.
