@@ -1,0 +1,7 @@
+url: https://github.com/uigdwunm/dsh-process-fold
+name: uigdwunm/dsh-process-fold
+category: ui
+tarball: https://github.com/uigdwunm/dsh-process-fold/releases/latest/download/dsh-process-fold-0.1.1.tgz
+description:
+  en: Groups each DSH Web turn's thinking, tool calls and context into an expandable process box that shows the latest two items by default, while keeping user dialogue, interactive questions and final answers outside.
+  zh: 把每轮 DSH Web 会话中的思考、工具调用和上下文合并为可展开的过程框，默认显示最新两项，同时把用户对话、交互式提问和最终回答留在框外。

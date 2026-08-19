@@ -1,6 +1,0 @@
-url: https://github.com/brunhildzhou/dsh-all-warmup
-name: brunhildzhou/dsh-all-warmup
-category: session
-description:
-  en: 'Global frictionless warm-up layer: every session''s first request (subagent depths and post-compaction included) is narrowed to the minimal tool pair with one injected warmup reply; the full original mode returns from round two.'
-  zh: 全局无感热身层：每个会话（含子代理与压缩后）首轮自动收窄到极简工具对并注入一次热身回复，第二轮起恢复完整模式。

@@ -1,0 +1,6 @@
+url: https://github.com/AntaresCorn/dsh-auto-reviewer
+name: AntaresCorn/dsh-auto-reviewer
+category: security
+description:
+  en: 'Codex-style auto-review permission mode: adds an auto-review preset that auto-approves safe sandbox escalations, asks on risky or ambiguous ones, and rejects critical unconfirmed operations.'
+  zh: Codex 风格自动审查权限模式：新增 auto-review 权限档，自动放行安全沙箱提权，危险或模糊操作转人工确认，未确认的致命操作直接拒绝。

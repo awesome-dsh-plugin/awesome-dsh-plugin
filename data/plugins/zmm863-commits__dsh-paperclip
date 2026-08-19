@@ -1,0 +1,6 @@
+url: https://github.com/zmm863-commits/dsh-paperclip
+name: zmm863-commits/dsh-paperclip
+category: ui
+description:
+  en: DSH Web GUI paperclip button: a 📎 button in the composer opens a file picker (drag & drop supported) and inserts file contents into the textarea.
+  zh: 在 DSH Web 输入框添加回形针按钮：点击选择文件（支持拖拽），文件内容自动插入输入框。

@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-mcp-manager
+name: wingsky-1/dsh-plugin-hub#packages/dsh-mcp-manager
+category: tools
+description:
+  en: 'MCP server manager: side-panel with per-status server listing, stdio/streamable-http setup forms, mcpServers JSON import, exponential-backoff reconnect, and tools registered to the model as mcp__<server>__<tool>.'
+  zh: MCP 服务器管理器：侧边栏面板按状态分级展示服务器，支持 stdio/streamable-http 表单接入与 mcpServers JSON 导入，断线指数退避重连，工具以 mcp__<server>__<tool> 注册给模型。

@@ -1,0 +1,6 @@
+url: https://github.com/pengpengyi92/dsh-quant
+name: pengpengyi92/dsh-quant
+category: tools
+description:
+  en: Quantitative R&D toolkit for DeepSeek Harness — 46 tools across six domains covering market data, indicators, factor evaluation, walk-forward ML validation, risk, options, bonds and fund simulation, with an end-to-end research pipeline.
+  zh: 面向 DeepSeek Harness 的量化研究工具箱，46 个工具覆盖行情、指标、因子评价、机器学习验证、风控、期权、债券与基金模拟，并提供端到端研究管线。

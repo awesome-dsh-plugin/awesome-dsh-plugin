@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-memories
+name: DamonKoy/dsh-plugins#dsh-memories
+category: memory
+description:
+  en: Project-scoped persistent key-value memories with set/get/list/delete/search model tools and JSON-file storage.
+  zh: 项目作用域持久化键值记忆：set/get/list/delete/search 模型工具，JSON 文件存储。

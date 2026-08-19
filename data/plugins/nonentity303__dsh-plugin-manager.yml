@@ -1,0 +1,6 @@
+url: https://github.com/nonentity303/dsh-plugin-manager
+name: nonentity303/dsh-plugin-manager
+category: market
+description:
+  en: 'Plugin manager with a rescue center: grouped enable/disable by necessity, multi update sources (npm / dshfind market / GitHub), browser-first downloads with an auto-install folder, P2P fallback, pre-boot self-check and broken-bundle quarantine.'
+  zh: '插件管理器与救砖中心：按必要程度分组启停、多更新源（npm / 插件超市 / GitHub）、浏览器下载优先与目录自动安装、P2P 兜底、启动前自检与坏包隔离。'

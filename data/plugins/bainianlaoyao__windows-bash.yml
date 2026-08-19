@@ -1,6 +1,0 @@
-url: https://github.com/bainianlaoyao/windows-bash
-name: bainianlaoyao/windows-bash
-category: dev
-description:
-  en: 'Makes Git Bash the only terminal tool for DeepSeek Harness on Windows: enables the bash executor and tool, disables PowerShell everywhere, and ships standard/code/cordis bash-only agent presets with the full-access sandbox defaults Git Bash''s cygwin runtime needs.'
-  zh: 让 Windows 上 DeepSeek Harness 的终端工具只剩 Git Bash：启用 bash 执行器与工具、全局禁用 PowerShell，并附 standard/code/cordis 三个 bash-only agent 预设及配套的 full-access 沙箱默认值。

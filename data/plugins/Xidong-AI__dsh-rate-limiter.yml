@@ -1,0 +1,6 @@
+url: https://github.com/Xidong-AI/dsh-rate-limiter
+name: Xidong-AI/dsh-rate-limiter
+category: usage
+description:
+  en: Proactive per-provider token-bucket rate limiting that queues over-limit requests before they are sent, preventing upstream 429 errors.
+  zh: 按 provider 令牌桶主动限速，超限请求在发出前延迟排队而非失败，避免触发上游 429。

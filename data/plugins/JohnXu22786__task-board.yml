@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/task-board
+name: JohnXu22786/task-board
+category: workflow
+description:
+  en: 'Event-sourced cross-session work ledger: register, track and settle tasks with full audit history, kanban export, and a board digest injected into every model turn.'
+  zh: '事件溯源跨会话工作台账：任务登记、跟踪与结算，完整审计历史、看板导出，并将石板摘要注入每一轮模型上下文。'

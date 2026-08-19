@@ -1,0 +1,6 @@
+url: https://github.com/agentmail-to/dsh-agentmail
+name: agentmail-to/dsh-agentmail
+category: tools
+description:
+  en: Gives an agent its own email inbox through AgentMail — eleven tools for sending, reading and labelling mail, plus inbound mail delivered into one harness session per email thread, with an approval gate and recipient allowlist on everything outbound.
+  zh: 用 AgentMail 给 agent 配一个自己的收件箱：发信、读信、搜索与打标签共十一个工具；收到的邮件按邮件线程分派，每个线程对应一个独立会话；所有外发邮件都要过审批与收件人白名单。

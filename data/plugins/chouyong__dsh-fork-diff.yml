@@ -1,0 +1,7 @@
+url: https://github.com/chouyong/dsh-fork-diff
+name: chouyong/dsh-fork-diff
+category: session
+description:
+  en: 'Read-only side-by-side comparison of related DeepSeek Harness conversation histories, including messages, tool calls, responses, timing, and usage.'
+  zh: 只读并排比较相关 DeepSeek Harness 会话历史，展示消息、工具调用、回答、耗时和 usage 差异。
+tarball: https://github.com/chouyong/dsh-fork-diff/releases/download/v0.1.0/dsh-fork-diff-0.1.0.tgz

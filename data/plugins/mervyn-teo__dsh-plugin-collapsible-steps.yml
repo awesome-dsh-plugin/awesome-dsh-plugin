@@ -1,0 +1,6 @@
+url: https://github.com/mervyn-teo/dsh-plugin-collapsible-steps
+name: mervyn-teo/dsh-plugin-collapsible-steps
+category: ui
+description:
+  en: Collapses consecutive tool-use and thinking steps between messages into a single bracketed, expandable item.
+  zh: 把消息之间连续的工具调用与思考步骤折叠成单个可展开的括号条目。

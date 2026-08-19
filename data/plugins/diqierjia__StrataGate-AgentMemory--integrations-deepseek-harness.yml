@@ -1,0 +1,6 @@
+url: https://github.com/diqierjia/StrataGate-AgentMemory/tree/main/integrations/deepseek-harness
+name: diqierjia/StrataGate-AgentMemory#deepseek-harness
+category: memory
+description:
+  en: 'Automatic, local-first cross-session memory for DeepSeek Harness: remembers user preferences, project decisions, conversations, and tool results; verifies recalled information against original messages before answering.'
+  zh: 'DeepSeek Harness 的自动本地跨会话记忆：记住用户偏好、项目决策、历史对话与工具结果；回答前检查证据，并可追溯到原始消息。'

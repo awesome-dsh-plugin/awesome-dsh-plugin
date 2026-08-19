@@ -1,0 +1,6 @@
+url: https://github.com/zhangyoufu-123/stylotrace/tree/main/extras/dsh-plugin-stylotrace
+name: zhangyoufu-123/stylotrace#dsh-plugin-stylotrace
+category: tools
+description:
+  en: 'Deep-collaboration writing agent for DSH: per-user writing-style learning from edit pairs, clarify→outline→section-writing→red-team→reader-gallery flow, project-to-report synthesis (lab report / product intro / survey / README), 41 MCP tools, and web selection-improve UI with in-app file preview.'
+  zh: 面向 DSH 的深度协作写作 Agent：从用户的编辑对学习个人写作风格，完整 澄清→大纲→逐节写作→红队审计→读者群像 流程，项目自动提炼成实验报告/产品介绍/综述/README，41 个 MCP 工具，Web 端选中改进与文件内嵌预览。

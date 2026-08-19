@@ -1,0 +1,6 @@
+url: https://github.com/izwarm195/dsh-net-tools
+name: izwarm195/dsh-net-tools
+category: tools
+description:
+  en: 'Lets sandboxed agents reach the web through your local proxy: net_fetch fetches pages, net_proxy_status reports proxy status.'
+  zh: '让沙箱里的 agent 通过你的本地代理联网：net_fetch 抓取网页，net_proxy_status 查看代理状态。'

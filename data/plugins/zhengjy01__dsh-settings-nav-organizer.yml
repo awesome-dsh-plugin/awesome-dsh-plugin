@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-settings-nav-organizer
+name: dsh-settings-nav-organizer
+category: ui
+description:
+  en: 'Declutter the DSH settings nav: fold third-party plugin entries under collapsible group rows, with bookmark-style custom groups and a fold toggle in General settings.'
+  zh: 设置面板导航整理：第三方插件入口折叠为可展开的分组行，支持书签式自定义分组与「通用设置」折叠开关。

@@ -1,0 +1,6 @@
+url: https://github.com/nexsjournal/dsh-vision-plugin
+name: nexsjournal/dsh-vision-plugin
+category: ui
+description:
+  en: 'Installs an image-input checkbox into the Models catalog so a custom model can declare image input and receive images directly; includes an optional BYO vision relay.'
+  zh: 给模型目录装上「图片输入」勾选框，自定义模型声明后可直接收图；附带可选的 BYO 视觉中继。

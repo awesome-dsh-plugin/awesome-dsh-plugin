@@ -52,5 +52,13 @@ jobs:
         run: npx awesome-lint
       - name: Build (locale parity, date derivation, templates)
         # probes are skipped on purpose: the build tolerates missing probe
-        # data, and this keeps the check token-free and fork-safe
+        # data, and this keeps the check token-free and fork-safe.
+        #
+        # SKIP_PUBLISH_CHECKS turns off the star-coverage floor build-site.mjs
+        # enforces before deploying. Nothing is published here, and without it a
+        # checkout missing data/stars.json would fail every contributor's PR
+        # with "refusing to publish" — an infrastructure state they cannot see
+        # and did not cause.
+        env:
+          SKIP_PUBLISH_CHECKS: '1'
         run: node scripts/build-site.mjs

@@ -1,0 +1,6 @@
+url: https://github.com/zhtx2024/dsh-skin-switcher
+name: zhtx2024/dsh-skin-switcher
+category: theme
+description:
+  en: 'A settings-panel skin manager that auto-discovers installed Web UI skins, switches between them in one click, and maintains the profile patch automatically.'
+  zh: 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。

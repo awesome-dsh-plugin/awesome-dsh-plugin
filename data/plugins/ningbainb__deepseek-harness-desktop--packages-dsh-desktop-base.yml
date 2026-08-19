@@ -1,0 +1,6 @@
+url: https://github.com/ningbainb/deepseek-harness-desktop/tree/main/packages/dsh-desktop-base
+name: ningbainb/deepseek-harness-desktop#packages/dsh-desktop-base
+category: ui
+description:
+  en: Desktop feature aggregate that installs the DSH Web UI collection, dshmarket, Codex Connect, and reasoning-effort controls at pinned versions.
+  zh: 桌面版基础功能聚合包：按固定版本安装 DSH Web UI 合集、dshmarket、Codex Connect 与推理强度控制。
