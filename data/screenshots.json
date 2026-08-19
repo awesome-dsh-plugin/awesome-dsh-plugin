@@ -981,4 +981,9 @@
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
   "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-upload-reference.png"
  ]
+,
+ "https://github.com/winditer/dsh-elf": [
+  "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-elf.png",
+  "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-chat.png"
+ ]
 }
