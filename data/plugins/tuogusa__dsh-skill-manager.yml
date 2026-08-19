@@ -2,5 +2,5 @@ url: https://github.com/tuogusa/dsh-skill-manager
 name: tuogusa/dsh-skill-manager
 category: dev
 description:
-  en: Browse, search, and delete user skills from the Web settings panel.
-  zh: 在 Web 设置面板中浏览、搜索并删除用户技能。
+  en: Browse, search, delete, undo-delete, and update user skills from the Web settings panel; checks GitHub/Gitee Releases for newer skill versions.
+  zh: 在 Web 设置面板中浏览、搜索、删除/撤回并更新用户技能，支持从 GitHub/Gitee Release 检查技能更新。
