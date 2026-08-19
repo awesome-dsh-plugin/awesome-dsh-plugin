@@ -1,0 +1,7 @@
+url: https://github.com/MDR-EX1000/dsh-rw
+name: MDR-EX1000/dsh-rw
+category: remote
+tarball: https://github.com/MDR-EX1000/dsh-rw/releases/latest/download/dsh-rw-0.1.0.tgz
+description:
+  en: 'Remote-SSH-style workspaces: turn an SSH host and a remote directory into a native DSH workspace; the agent operates the remote filesystem directly via 12 rw_* tools (SFTP/exec), with workspace-confined paths and known_hosts verification.'
+  zh: 'Remote-SSH 风格工作区：把 SSH 主机上的远程目录变成原生 DSH 工作区，agent 通过 12 个 rw_* 工具（SFTP/exec）直接操作远程文件，路径限定在工作区内并校验 known_hosts。'
