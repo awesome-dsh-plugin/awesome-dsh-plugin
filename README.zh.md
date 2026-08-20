@@ -105,6 +105,7 @@ dsh plugin --profile web add dshmarket
 - [bainianlaoyao/easy-archive](https://github.com/bainianlaoyao/easy-archive) — 工作区侧边栏行内两击归档：点一次变红确认，再点即归档，归档项不再出现在 ⋮ 菜单里。
 - [bill9109/dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) — 跨平台文件拖拽与原始路径插入，无需复制文件。
 - [bitxeno/dsh-github-picker](https://github.com/bitxeno/dsh-github-picker) — 输入框右下角 GitHub 图标打开当前仓库的 issue/PR 搜索弹窗，数据来自本机 gh CLI，点选即以 URL 或 @owner/repo#number 形式插入引用。
+- [BlackBearCC/dsh-pet-sprite](https://github.com/BlackBearCC/dsh-pet-sprite) — 聊天区里的像素小宠物：从蛋孵化三选一，自动在消息气泡间平台跳跃，支持 WASD 操控与拖拽，用已配置的模型角色扮演陪聊，养成系统（心情/电量/健康、等级、商店）由真实 token 消耗驱动。
 - [boogoo619/dsh-focus-overlay](https://github.com/boogoo619/dsh-focus-overlay) — 专注模式：全屏阅读视图，隐藏标题与输入区，把 AI 工具调用折叠成摘要。
 - [caisiyang123/dsh-tick-rail](https://github.com/caisiyang123/dsh-tick-rail) — 会话刻度线导航条：你发的每条消息一格刻度，点亮峰值随鼠标移动、两侧均匀衰减，悬停预览消息摘要，点击或键盘跳转到对应位置。
 - [causebefore/dsh-pomodoro](https://github.com/causebefore/dsh-pomodoro) — DSH Web 番茄钟：提供可配置专注/休息循环、可拖动迷你面板，以及站内提醒、提示音和浏览器通知。
