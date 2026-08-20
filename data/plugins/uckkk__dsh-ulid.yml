@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-ulid
+name: uckkk/dsh-ulid
+category: tools
+description:
+  en: "ULID generator and parser (time-sortable 26-char IDs)."
+  zh: "ULID 生成/解析（时间可排序 ID）"
