@@ -7,6 +7,8 @@ capsule at the bottom-right shows the **current model provider's** plan usage:
 colored dot + remaining percentage; click to expand per-window progress bars
 with reset countdowns.
 
+![screenshot](assets/screenshot.png)
+
 ## Supported providers
 
 | Provider | Data | Windows |
