@@ -34,5 +34,9 @@
   "scripts": {
     "test": "node --test test/*.test.mjs"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
