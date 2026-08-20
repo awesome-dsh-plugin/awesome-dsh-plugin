@@ -1,0 +1,6 @@
+url: https://github.com/imkingjh999/dsh-tool-accurate-vision
+name: imkingjh999/dsh-tool-accurate-vision
+category: vision
+description:
+  en: 'Model-facing accurate_vision tool: precise image spatial reasoning via any OpenAI-compatible vision model, with normalised 0-1000 bounding-box primitives, a tested bboxEdgeDistance helper, a per-call annotated-SVG output for eyeballing the boxes, and a grounding-hardened prompt.'
+  zh: 模型可调用的 accurate_vision 工具：通过任意 OpenAI 兼容视觉模型做精确空间推理——0-1000 归一化包围盒图元、带回归测试的 bboxEdgeDistance 助手、每次调用附带可肉眼核对的带框 SVG 标注图，以及强化 grounding 的提示词。
