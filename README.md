@@ -31,8 +31,6 @@ Run a single command in your terminal. DSH will automatically download, bundle-r
 dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 ```
 
-*Note: If published to npm, you can also run `dsh plugin --profile web add @moon16u/dsh-pocket`.*
-
 ---
 
 ### Method 2: Local Git Clone Installation

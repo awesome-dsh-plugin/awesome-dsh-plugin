@@ -31,8 +31,6 @@
 dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 ```
 
-*注：若已发布至 npm，亦可直接执行 `dsh plugin --profile web add @moon16u/dsh-pocket`。*
-
 ---
 
 ### 方式二：通过 Git 源码本地链接安装
