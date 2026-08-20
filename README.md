@@ -1,6 +1,6 @@
 # 🎒 dsh-pocket
 
-**English** | [简体中文](./README.zh-CN.md)
+**English** | [中文](./README.zh-CN.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![DeepSeek Harness](https://img.shields.io/badge/DSH-0.1.0--rc-purple.svg)](https://github.com/deepseek-ai/deepseek-harness)
