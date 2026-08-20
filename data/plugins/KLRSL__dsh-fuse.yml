@@ -1,0 +1,6 @@
+url: https://github.com/KLRSL/dsh-fuse
+name: KLRSL/dsh-fuse
+category: ui
+description:
+  en: "Fuse v1.0: page-level UI generation for DeepSeek Harness - design tokens (theme.json) + code standards (code-style.json), dsh-fuse fence rendering with a pixel-level style inspector (getComputedStyle), undo history, and a three-tab settings panel."
+  zh: 为 DeepSeek Harness 打造的页面级 UI 生成插件：设计令牌（theme.json）+ 代码规范（code-style.json），dsh-fuse 围栏页面渲染，带像素级走查器（getComputedStyle）、撤销历史与三 tab 设置面板。
