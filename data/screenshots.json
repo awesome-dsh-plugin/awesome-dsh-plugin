@@ -1048,7 +1048,7 @@
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-dashboard.png",
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-settings.png"
  ],
-"https://github.com/deepseek-dsh/dsh-workspace": [
+ "https://github.com/deepseek-dsh/dsh-workspace": [
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-1.png",
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-2.png"
  ],
@@ -1061,5 +1061,8 @@
  "https://github.com/feng78-boop/dsh-thirteen-bg": [
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-poster.jpg",
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-shot-2.jpg"
+ ],
+ "https://github.com/YeqingTang/dsh-task-watcher-plugin": [
+  "https://raw.githubusercontent.com/YeqingTang/dsh-task-watcher-plugin/main/assets/screenshots/preview.png"
  ]
 }

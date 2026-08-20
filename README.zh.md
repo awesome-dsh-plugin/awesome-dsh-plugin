@@ -1471,6 +1471,7 @@ dsh plugin --profile web add dshmarket
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — 通过二维码或机器人凭据将 IM 机器人接入 DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord 和 WhatsApp 共 9 种渠道）。
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) — 通过微信扫码把微信机器人接入 DeepSeek Harness。
 - [yangyongzhen/dsh-notify](https://github.com/yangyongzhen/dsh-notify) — 任务完成通知：ServerChan / 钉钉 / 飞书 / 通用 Webhook。
+- [YeqingTang/dsh-task-watcher-plugin](https://github.com/YeqingTang/dsh-task-watcher-plugin) — Windows 托盘任务监视器：部署并管理独立监视程序——四态托盘图标（灰=未连接、绿=空闲、橙=运行中、红=有待处理）、逐任务实时面板（时长/速度/token）、完成与结局通知。设置→插件内启停开关；监视器独立进程运行，DSH 重启不影响。
 - [yeruizhi/dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier) — 飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) — 任务完成或需要确认/输入时发送操作系统原生通知：Windows toast、macOS osascript、Linux notify-send。
