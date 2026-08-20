@@ -1,0 +1,6 @@
+url: https://github.com/garrisonz/dsh-chat-widener
+name: garrisonz/dsh-chat-widener
+category: ui
+description:
+  en: "Widen the Web UI conversation content area: overrides the 748px chat column and the composer to a configurable width via CSS-variable injection, releasing the user-bubble width cap."
+  zh: 加宽 Web UI 对话内容区：通过 CSS 变量注入把 748px 的对话列与输入框调整为可配置宽度，并释放用户气泡宽度上限。
