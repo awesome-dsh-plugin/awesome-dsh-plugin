@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-maf
+name: WODE25500/dsh-maf
+category: dev
+description:
+  en: 'Microsoft Agent Framework (MAF) integration: validate, run and scaffold declarative agents and workflows defined in YAML.'
+  zh: '微软 Agent Framework (MAF) 集成：验证、运行与搭建 YAML 声明式 agents 与 workflows。'
