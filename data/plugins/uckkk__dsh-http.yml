@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-http
+name: uckkk/dsh-http
+category: tools
+description:
+  en: "HTTP request tool returning status, headers, body and timing."
+  zh: "HTTP 请求工具"
