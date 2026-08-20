@@ -1019,5 +1019,10 @@
   "https://raw.githubusercontent.com/LiZhenNet/dsh-antigravity/main/assets/images/settings-signed-in.png",
   "https://raw.githubusercontent.com/LiZhenNet/dsh-antigravity/main/assets/images/chat-model-picker.png",
   "https://raw.githubusercontent.com/LiZhenNet/dsh-antigravity/main/assets/images/settings-not-signed-in.png"
+ ],
+ "https://github.com/geguanming/dsh-office-plugin": [
+  "https://raw.githubusercontent.com/geguanming/dsh-office-plugin/master/assets/entry.png",
+  "https://raw.githubusercontent.com/geguanming/dsh-office-plugin/master/assets/work-monitor.png",
+  "https://raw.githubusercontent.com/geguanming/dsh-office-plugin/master/assets/order-boss.png"
  ]
 }
