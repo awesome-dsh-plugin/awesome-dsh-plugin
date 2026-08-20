@@ -130,6 +130,20 @@ for n in "$@"; do
     git checkout -f -q main; continue
   fi
 
+  # A submission changes entry data and the two generated READMEs. Nothing
+  # else. Forks taken before the CI landed carry a branch that *deletes*
+  # .github/workflows — ten open pull requests do this right now — and a clean
+  # rebase preserves that deletion, so rebasing one and merging it would take
+  # the repository's own CI down. pr-guard.yml catches it on the way in; this
+  # catches it on the way out, so a maintainer's rebase can never push a
+  # workflow deletion onto a contributor's branch either. Refuse and report.
+  stray=$(git diff origin/main --name-only | grep -vE '^(data/|README\.md$|README\.zh\.md$)' || true)
+  if [ -n "$stray" ]; then
+    echo "$n :: OUT-OF-SCOPE (touches files a submission has no business changing — refusing to push)"
+    echo "$stray" | sed 's/^/      /'
+    git checkout -f -q main; continue
+  fi
+
   if git push -q --force-with-lease="$ref:$old" "git@github.com:$owner/$repo.git" "maint$n:$ref" 2>/dev/null; then
     echo "$n :: REBASED"
   else
