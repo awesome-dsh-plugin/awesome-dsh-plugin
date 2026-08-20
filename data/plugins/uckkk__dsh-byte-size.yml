@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-byte-size
+name: uckkk/dsh-byte-size
+category: tools
+description:
+  en: "Formats byte counts into human-readable units."
+  zh: "字节大小格式化"
