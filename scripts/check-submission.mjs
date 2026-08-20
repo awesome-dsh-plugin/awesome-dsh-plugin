@@ -200,6 +200,19 @@ const scanTree = (repo) => once(`scan:${repo}`, async () => {
   return { ok: false, why: `no \`dsh.bundle\` in any of ${pkgs.length} package.json file(s)` }
 })
 
+/**
+ * Directories that contain a `package.json`, for suggesting a correction when
+ * an entry's subpath does not exist. Cheap: one tree read, memoised per
+ * repository, and only ever reached on the 404 path.
+ */
+const manifestDirs = (repo) => once(`dirs:${repo}`, async () => {
+  const tree = await api(`repos/${repo}/git/trees/HEAD?recursive=1`)
+  if (tree.status !== 200 || tree.body?.truncated) return []
+  return (tree.body?.tree ?? [])
+    .filter((t) => t.path?.endsWith('/package.json'))
+    .map((t) => t.path.replace(/\/package\.json$/, ''))
+})
+
 async function hasBundle(repo, sub) {
   // The entry may point straight at a subpackage — that manifest is
   // authoritative, and it is per-entry rather than per-repository, so it stays
@@ -213,6 +226,29 @@ async function hasBundle(repo, sub) {
     const dsh = pkg.dsh ?? {}
     if (dsh.bundle) return { ok: true }
     if (sub) return { ok: false, why: dsh.client ? 'declares only `dsh.client` — that alone is not installable' : `\`${sub}/package.json\` has no \`dsh.bundle\`` }
+  }
+
+  // A subpath that does not resolve is a different failure from a root-pointing
+  // entry, and reporting it as one sends the author somewhere wrong. #1794
+  // pointed at `packages/pet-bridge` — the real directory is
+  // `packages/dsh-pet-bridge` — and the fall-through below told it the entry
+  // "points at the repository root" and to switch to
+  // `packages/dsh-appearance-gallery`, which is a different plugin. An author
+  // who followed that advice would have listed the wrong one, and the gate
+  // would have gone green on it.
+  if (sub && direct.status === 404) {
+    const dirs = await manifestDirs(repo)
+    const leaf = sub.split('/').pop().toLowerCase()
+    const near = dirs.filter((d) => {
+      const l = d.split('/').pop().toLowerCase()
+      return l.includes(leaf) || leaf.includes(l)
+    })
+    const hint = near.length
+      ? ` Did you mean ${near.slice(0, 3).map((d) => `\`${d}\``).join(' or ')}?`
+      : dirs.length
+        ? ` Directories with a \`package.json\`: ${dirs.slice(0, 6).map((d) => `\`${d}\``).join(', ')}.`
+        : ''
+    return { ok: false, why: `the entry URL points at \`${sub}\`, which this repository does not have.${hint}` }
   }
 
   // The entry points at the repository root and the root does not declare a
