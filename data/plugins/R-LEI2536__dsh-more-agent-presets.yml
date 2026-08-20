@@ -1,0 +1,6 @@
+url: https://github.com/R-LEI2536/dsh-more-agent-presets
+name: R-LEI2536/dsh-more-agent-presets
+category: workflow
+description:
+  en: More agent presets for DSH, derived from other coding agents such as Qwen Code and iFlow.
+  zh: 为 DSH 提供更多智能体预设，衍生自其他编程智能体（例如 Qwen Code、iFlow）。

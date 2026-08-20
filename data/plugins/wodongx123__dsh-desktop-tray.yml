@@ -1,0 +1,6 @@
+url: https://github.com/wodongx123/dsh-desktop-tray
+name: wodongx123/dsh-desktop-tray
+category: ui
+description:
+  en: Adds a system tray icon to DSH Desktop, with settings to hide the main window to the tray on minimize or close and self-healing after app updates.
+  zh: 为 DSH Desktop 增加系统托盘图标，可在设置中选择最小化或关闭时隐藏到托盘，应用更新后自动恢复。
