@@ -1,0 +1,5 @@
+url: https://github.com/dsh-pulse/dsh-hermes-bridge
+name: dsh-pulse/dsh-hermes-bridge
+category: notify
+description:
+  en: 'Bridges DSH and WeChat: dispatches inbound WeChat messages to a persistent per-directory agent session and pushes task progress back to WeChat via hermes send with no LLM calls on the outbound path.'
