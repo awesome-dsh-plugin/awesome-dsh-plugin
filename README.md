@@ -4,8 +4,8 @@
 [![DeepSeek Harness](https://img.shields.io/badge/DSH-0.1.0--rc-purple.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![pnpm workspace](https://img.shields.io/badge/pnpm-workspace-orange.svg)](https://pnpm.io/workspaces)
 
-> **dsh-pocket** 是一个专为 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) 打造的精选插件工具箱（Pocket Toolkit）。
-> 旨在提供**小而美、轻量、高实用度**的微扩展，解决日常交互、调试重启与真实网络搜索中的高频痛点。
+> **dsh-pocket** 是一个专为 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) 打造的实用小插件工具箱（Pocket Toolkit）。
+> 旨在提供**小而美、轻量、开箱即用**的实用微扩展，提升日常使用与开发体验。
 
 ---
 
