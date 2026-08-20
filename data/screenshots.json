@@ -1,4 +1,10 @@
 {
+ "https://github.com/hunter118/dsh-s7r": [
+  "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-desktop.png",
+  "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-agent.png",
+  "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-workflows.png",
+  "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-display.png"
+ ],
  "https://github.com/lavapapa/dsh-composer-layout": [
   "https://raw.githubusercontent.com/lavapapa/dsh-composer-layout/main/assets/screenshots/hero-en.png",
   "https://raw.githubusercontent.com/lavapapa/dsh-composer-layout/main/assets/screenshots/hero-zh.png"
