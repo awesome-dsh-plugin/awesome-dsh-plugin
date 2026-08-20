@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-checksum
+name: uckkk/dsh-checksum
+category: tools
+description:
+  en: "Computes MD5/SHA1/SHA256/SHA512 checksums for text and files, with verification."
+  zh: "哈希校验"

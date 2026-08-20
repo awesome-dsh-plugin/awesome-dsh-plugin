@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-otp
+name: uckkk/dsh-otp
+category: tools
+description:
+  en: "Generates TOTP/HOTP one-time passwords."
+  zh: "一次性密码 TOTP/HOTP"
