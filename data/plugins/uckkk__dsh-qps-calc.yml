@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-qps-calc
+name: uckkk/dsh-qps-calc
+category: tools
+description:
+  en: "Peak QPS estimation from DAU."
+  zh: "峰值QPS估算"
