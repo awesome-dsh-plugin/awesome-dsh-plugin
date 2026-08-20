@@ -1,0 +1,44 @@
+{
+  "name": "dsh-quota-capsule",
+  "version": "0.1.0",
+  "description": "Provider quota capsule for the DSH Web UI: shows the current model provider's plan usage (GLM Coding 5h/weekly, Kimi Coding, MiniMax Token Plan) or balance (DeepSeek) as a floating capsule.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heiweilu/dsh-quota-capsule.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "quota",
+    "usage",
+    "glm",
+    "kimi",
+    "minimax",
+    "deepseek"
+  ]
+}

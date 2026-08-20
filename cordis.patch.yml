@@ -1,0 +1,5 @@
+# dsh-quota-capsule bundle patch: inserts the plugin row into the web profile
+# roster. Dev install: `dsh plugin --profile web add link:<this-repo>`.
+- insert:
+    - id: quota-capsule
+      name: 'dsh-quota-capsule'
