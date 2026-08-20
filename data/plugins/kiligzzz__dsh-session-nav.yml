@@ -1,6 +1,6 @@
 url: https://github.com/kiligzzz/dsh-session-nav
 name: kiligzzz/dsh-session-nav
-category: ui
+category: session
 description:
-  en: Piano-key style in-conversation navigation bar: one key per real user message of the current session (built from the FULL on-disk log, not the loaded window). Hover a key to preview that turn's user message plus the model reply; click to smoothly jump. Auto-pages through history when the target is outside the virtualized loaded window via the same channel as the official "Load earlier" button.
-  zh: 钢琴键风格的会话内导航条 —— 每根键对应当前会话的一个真实用户问题（数据来自完整磁盘日志，非浏览器已加载窗口）。悬停键预览该轮「用户消息 + 模型回复」，点击平滑跳转；当目标在虚拟列表窗口外时，自动通过与官方「加载更早」同一通道翻页历史直到目标行渲染。
+  en: Piano-key style in-conversation navigation bar: one key per real user message of the current session. Hover a key to preview that turn, click to jump smoothly; auto-pages older history when the target is outside the virtualized window.
+  zh: 钢琴键风格的会话内导航条：每根键对应当前会话的一个真实用户问题（数据来自完整磁盘日志）。悬停键预览该轮「用户消息 + 模型回复」，点击平滑跳转到对应位置；当目标在虚拟列表窗口外时，自动翻页加载更早的历史，无需手动操作。
