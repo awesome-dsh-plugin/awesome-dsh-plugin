@@ -1,0 +1,6 @@
+url: https://github.com/ShiXiangYu2/dsh-feishu-remote
+name: ShiXiangYu2/dsh-feishu-remote
+category: notify
+description:
+  en: 'Control a DeepSeek Harness agent from Feishu/Lark: send a task by DM, an agent runs it with your configured model and replies in the chat, and a feishu_send tool lets the agent push results. Uses lark-cli''s WebSocket connection, so no public webhook is needed, and ships a resident launcher.'
+  zh: 从飞书/Lark 操作 DeepSeek Harness：私聊发送任务，agent 用你配置的模型执行并把结果回到会话；feishu_send 工具可让 agent 主动推送结果。基于 lark-cli 的 WebSocket 长连接，无需公网 webhook，并附常驻启动器。
