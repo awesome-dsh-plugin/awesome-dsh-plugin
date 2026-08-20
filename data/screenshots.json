@@ -824,6 +824,10 @@
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/decay.png",
   "https://raw.githubusercontent.com/wly8691-jpg/knowlp-rag/main/docs/architecture.png"
  ],
+ "https://github.com/wss534857356/dsh-plugin-codex": [
+  "https://raw.githubusercontent.com/wss534857356/dsh-plugin-codex/main/docs/images/conversation-screenshot.png",
+  "https://raw.githubusercontent.com/wss534857356/dsh-plugin-codex/main/docs/images/model-selector-screenshot.png"
+ ],
  "https://github.com/wuxiangru915/dsh-review-loop": [
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.en.png",
   "https://raw.githubusercontent.com/wuxiangru915/dsh-review-loop/master/assets/review-panel.zh.png"
