@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-semver
+name: uckkk/dsh-semver
+category: tools
+description:
+  en: "Compares semantic versions and checks version ranges."
+  zh: "语义化版本比较"
