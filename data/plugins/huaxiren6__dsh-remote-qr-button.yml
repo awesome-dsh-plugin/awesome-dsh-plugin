@@ -2,5 +2,5 @@ url: https://github.com/huaxiren6/dsh-remote-qr-button
 name: huaxiren6/dsh-remote-qr-button
 category: ui
 description:
-  en: 'Floating phone-pairing QR button for the DSH WebUI: opens the dsh-remote-link /qr pairing page in an in-app overlay, with the gateway port resolved dynamically at runtime.'
-  zh: 'DSH WebUI 右下角悬浮手机配对二维码按钮：点击在应用内弹层打开 dsh-remote-link 的 /qr 配对页，网关端口运行时动态获取，无需硬编码。'
+  en: 'Floating phone-pairing QR button for the DSH WebUI. One click opens the dsh-remote-link pairing QR (image + 6-digit code + TTL) in an in-app overlay — works in both browser and DSH Desktop (same-origin img, no iframe).'
+  zh: 'DSH WebUI 右下角悬浮「手机连接」二维码按钮：点击在应用内弹层显示配对二维码、6 位短码与倒计时，浏览器与 DSH 桌面端通吃（同源 img 渲染，无 iframe）。'
