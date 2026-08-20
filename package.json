@@ -1,0 +1,19 @@
+{
+  "name": "dsh-pocket",
+  "version": "0.1.0",
+  "description": "A collection of small, beautiful, and practical plugins for DeepSeek Harness (DSH)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "pnpm -r test"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "plugins"
+  ],
+  "author": "moon16u",
+  "license": "MIT"
+}
