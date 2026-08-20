@@ -24,7 +24,9 @@ dsh plugin --profile web add dshmarket
 
 > ℹ️ **On desktop clients.** This list is client-agnostic. A plugin is listed because it follows the official protocol — it declares a `dsh.bundle` manifest and installs with `dsh plugin add` — not because it adapts to any particular client.
 >
-> Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop), [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop), and [deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) by anywhere-labs — all ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
+> We're talking with `anywhere-labs/deepseek-harness-desktop` about working together again; we'll update this note as that progresses. Whatever comes of it, the listing rule stays as it is: adapting to any particular client is not a condition of being listed, and no plugin will be removed or demoted for not doing so.
+>
+> Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop) and [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop) — both ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
 
 > [!WARNING]
 > Installing a plugin runs third-party code on your machine with your own permissions — it can read your files, use your credentials, and reach the network. Tool approvals don't sandbox plugin code. Being on this list is not a security review: check the source before you install, and try unfamiliar plugins somewhere that doesn't hold your keys. See the full disclaimer at the bottom of this page.
@@ -1052,6 +1054,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [JohnXu22786/command-scout](https://github.com/JohnXu22786/command-scout) - Scans a project's declared build commands — Makefile targets, package.json scripts, just recipes, deno tasks — and exposes them as ready-to-run agent tools.
 - [JohnXu22786/computer-control](https://github.com/JohnXu22786/computer-control) - Desktop (native) control for dsh as a stdio JSON-RPC bridge over a Python core: capture the screen, inject pointer/keyboard input, drive accessibility-tree actions, and gate high-risk operations behind required confirmations.
 - [JohnXu22786/db-connector](https://github.com/JohnXu22786/db-connector) - Safe, audited SQLite/PostgreSQL/MySQL access for dsh agents: schema introspection, enforced read-only queries, a write approval gate, and a durable JSONL SQL audit trail.
+- [JohnXu22786/docindex](https://github.com/JohnXu22786/docindex) - Local semantic index over workspace documents (MD/PDF/DOCX/TXT): FTS5 BM25 + local embedding hybrid retrieval, hit citations with line numbers, and incremental updates.
 - [JohnXu22786/docs-retriever](https://github.com/JohnXu22786/docs-retriever) - Doctrove: versioned library documentation retrieval MCP server for coding agents — catalog lookup, version selection and focus-ranked doc extraction, with zero runtime dependencies and a dsh bundle.
 - [JohnXu22786/market-watch](https://github.com/JohnXu22786/market-watch) - Financial market monitor bundle for dsh: real-time quotes, a local watchlist, threshold alerts with cooldowns, periodic polling, and in-chat ASCII/mermaid charts for A-share stocks/indices and crypto (Tencent + CoinGecko).
 - [JohnXu22786/model-catalog](https://github.com/JohnXu22786/model-catalog) - Auto-discovers model listings, pricing and capabilities from OpenAI-compatible API hosts, normalizes them, and emits ready-to-use model configs for dsh.
@@ -2311,3 +2314,4 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
+
