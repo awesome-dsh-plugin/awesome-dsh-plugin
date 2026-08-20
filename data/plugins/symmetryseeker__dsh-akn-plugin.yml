@@ -1,0 +1,6 @@
+url: https://github.com/symmetryseeker/dsh-akn-plugin
+name: symmetryseeker/dsh-akn-plugin
+category: memory
+description:
+  en: "Agent Knowledge Network (AKN): tool-call-as-knowledge. Every tool call auto-captures into a content-addressed, immutable knowledge object (id = sha256(body)); a shared memory substrate & collaboration bus for all DSH agents via akn_search / akn_publish / akn_verify, pluggable verification with dependency-aware cascade invalidation, and token-economy search. Installable as `dsh-akn-plugin`."
+  zh: Agent Knowledge Network (AKN)：工具调用即知识。每次工具调用自动捕获为内容可寻址、不可变的知识对象（id = sha256(body)）；通过 akn_search / akn_publish / akn_verify 成为所有 DSH Agent 的共享记忆基底与协作总线，可插拔验证 + 依赖感知级联失效 + Token Economy 检索。安装：`dsh-akn-plugin`。
