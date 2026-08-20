@@ -630,6 +630,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [SocFeng/dsh-query-jump](https://github.com/SocFeng/dsh-query-jump) - DSH WebUI session query navigation with a faint conversation-edge rail, a hover list of real user queries, and click-to-jump back to the matching bubble.
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) - A simple DSH queue panel for editing, removing, steering, reordering, and bulk removal.
 - [Sttrevens/dsh-linked-folders](https://github.com/Sttrevens/dsh-linked-folders) - Multi-folder workspace: a durable global linked-folders list plus per-session on-the-fly linking (link_folder/unlink_folder), managed from the Web sidebar with a native folder picker.
+- [SZMY-haruhi/dsh-session-plus](https://github.com/SZMY-haruhi/dsh-session-plus) - Sidebar archive directory for DSH Web: restore a session to its original workspace slot, delete the session log, or edit-and-branch a user message into a new conversation.
 - [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) - A floating button beside the chat that opens a searchable list of all questions in the session for quick jumps.
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) - Attach tags to sessions and search sessions by tag in the Web settings panel.
 - [txlznbzsdj-collab/dsh-session-delete](https://github.com/txlznbzsdj-collab/dsh-session-delete) - Adds a "Delete" item to the sidebar session menu with a confirmation dialog, then hard-deletes the session.
