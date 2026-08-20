@@ -2,5 +2,5 @@ url: https://github.com/leaforbook/dsh-mcp-lazy
 name: leaforbook/dsh-mcp-lazy
 category: tools
 description:
-  en: DSH MCP lazy-loading, dynamic tool-loading, and Tool Router plugin. Version 0.5 automatically hides compatible MCP tool schemas until the current conversation routes to one server, reducing persistent tool-catalog context and wasted tokens. Incompatible or uncertain MCPs fail open and keep their original behavior; explicitly configured lazy servers still support warm connections, bounded reconnection, stdio, and Streamable HTTP.
-  zh: DSH 的 MCP懒加载、动态加载工具与 Tool Router 插件。0.5 会自动隐藏兼容 MCP 的工具 Schema，直到当前会话通过路由选择所需服务器，减少常驻工具目录造成的上下文膨胀和 Token 浪费，实现按需加载MCP工具、减少Token占用、节省Token；不兼容或无法确认的 MCP 保持直通，显式懒加载服务器仍支持连接保温、有限重连、stdio 和 Streamable HTTP。
+  en: A token-saving MCP lazy-loading, dynamic tool-loading, and Tool Router plugin for DSH. When many MCPs are installed, it hides compatible tool descriptions until the current conversation actually needs them, then reveals only the selected MCP. Incompatible MCPs keep working as before. Explicit lazy servers also support on-demand connections, warm reuse, bounded reconnection, stdio, and Streamable HTTP.
+  zh: DSH 的 MCP懒加载、动态加载工具与 Tool Router 插件。装了很多 MCP 后，它会先隐藏当前用不到的工具说明，只在会话真正需要时加载对应 MCP，从而减少上下文和 Token 占用、节省 Token。不兼容或无法安全接管的 MCP 保持原样；显式懒加载服务器还支持按需连接、连接保温、有限重连、stdio 和 Streamable HTTP。

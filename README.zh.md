@@ -845,7 +845,7 @@ dsh plugin --profile web add dshmarket
 - [KLRSL/dsh-packer](https://github.com/KLRSL/dsh-packer) — 为 DeepSeek Harness 打造的 Agent 配置打包器：把本地 Agent 资产（Skills/会话/Profile/全局设置/记忆）打包成 zip，用于迁移或分享；带隐私安全扫描、恢复差异对比、包管理与设置面板。
 - [kuaiyukuaikuai/dsh-agent-sync](https://github.com/kuaiyukuaikuai/dsh-agent-sync) — 扫描本机 20+ 种 AI agent 的 MCP 服务器与 Skills（Codex、Claude Code、cc-switch、Hermes、opencode、Gemini、Grok、Kimi、CodeBuddy、Trae、OpenClaw、Qoder、WorkBuddy、Zcode、Cursor、Windsurf、Cline、Roo Code、Qwen Code 等），一键同步、管理并添加进 DSH（全局或按工作区）。
 - [kunjinkao-os/dsh-mobile-gui-agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent) — Android GUI Agent：ADB 截图、压缩 UI hierarchy 定位、逐步动作验证、审批和 Mobile Web 视图。
-- [leaforbook/dsh-mcp-lazy](https://github.com/leaforbook/dsh-mcp-lazy) — DSH 的 MCP懒加载、动态加载工具与 Tool Router 插件。0.5 会自动隐藏兼容 MCP 的工具 Schema，直到当前会话通过路由选择所需服务器，减少常驻工具目录造成的上下文膨胀和 Token 浪费，实现按需加载MCP工具、减少Token占用、节省Token；不兼容或无法确认的 MCP 保持直通，显式懒加载服务器仍支持连接保温、有限重连、stdio 和 Streamable HTTP。
+- [leaforbook/dsh-mcp-lazy](https://github.com/leaforbook/dsh-mcp-lazy) — DSH 的 MCP懒加载、动态加载工具与 Tool Router 插件。装了很多 MCP 后，它会先隐藏当前用不到的工具说明，只在会话真正需要时加载对应 MCP，从而减少上下文和 Token 占用、节省 Token。不兼容或无法安全接管的 MCP 保持原样；显式懒加载服务器还支持按需连接、连接保温、有限重连、stdio 和 Streamable HTTP。
 - [LeemanCheung/dsh-agent-preset-recommender](https://github.com/LeemanCheung/dsh-agent-preset-recommender) — 有界、隐私安全的本地扫描器：汇总 Codex、Claude Code、WorkBuddy、CodeBuddy 元数据，原子保存密钥化聚合证据，并确定性推荐 DSH 内置 preset 与可选能力；不保留正文、不联网、不修改 preset。
 - [Letter2025/dsh-tool-search](https://github.com/Letter2025/dsh-tool-search) — Hermes 风格工具搜索与瘦身：渐进式披露，语义搜索/查看/调用长尾工具，核心工具保持直通。
 - [lifeodyssey/dsh-compressor#dsh-compressor](https://github.com/lifeodyssey/dsh-compressor/tree/main/plugins/dsh-compressor) — Headroom 的精简移植，在不影响模型上下文缓存以及 Agent 性能的情况下，压缩工具的输出，至多减少 20% 的上下文。
