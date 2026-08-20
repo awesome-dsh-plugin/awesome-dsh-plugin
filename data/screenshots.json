@@ -1014,5 +1014,10 @@
   "https://raw.githubusercontent.com/falser101/dsh-mascot/main/assets/cover.jpg",
   "https://raw.githubusercontent.com/falser101/dsh-mascot/main/assets/faces.jpg",
   "https://raw.githubusercontent.com/falser101/dsh-mascot/main/assets/skins.jpg"
+ ],
+ "https://github.com/LiZhenNet/dsh-antigravity": [
+  "https://raw.githubusercontent.com/LiZhenNet/dsh-antigravity/main/assets/images/settings-signed-in.png",
+  "https://raw.githubusercontent.com/LiZhenNet/dsh-antigravity/main/assets/images/chat-model-picker.png",
+  "https://raw.githubusercontent.com/LiZhenNet/dsh-antigravity/main/assets/images/settings-not-signed-in.png"
  ]
 }
