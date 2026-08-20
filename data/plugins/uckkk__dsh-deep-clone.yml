@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-deep-clone
+name: uckkk/dsh-deep-clone
+category: tools
+description:
+  en: "Deep clones a JSON value."
+  zh: "深拷贝"

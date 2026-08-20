@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-db-migration
+name: uckkk/dsh-db-migration
+category: tools
+description:
+  en: "Diffs two SQL DDL files and generates ALTER TABLE migration SQL."
+  zh: "数据库迁移生成"

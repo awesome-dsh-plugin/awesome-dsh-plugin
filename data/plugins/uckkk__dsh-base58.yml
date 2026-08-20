@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-base58
+name: uckkk/dsh-base58
+category: tools
+description:
+  en: "Base58 encode/decode (Bitcoin alphabet)."
+  zh: "Base58 编解码"

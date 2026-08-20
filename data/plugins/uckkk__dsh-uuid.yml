@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-uuid
+name: uckkk/dsh-uuid
+category: tools
+description:
+  en: "Generates and parses UUIDs (v4/v7)."
+  zh: "UUID 生成/解析"

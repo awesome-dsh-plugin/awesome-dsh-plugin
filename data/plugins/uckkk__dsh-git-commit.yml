@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-git-commit
+name: uckkk/dsh-git-commit
+category: tools
+description:
+  en: "Suggests Conventional Commits messages, generates CHANGELOG, and suggests versions."
+  zh: "Git 提交助手"

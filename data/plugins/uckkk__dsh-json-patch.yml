@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-patch
+name: uckkk/dsh-json-patch
+category: tools
+description:
+  en: "Applies JSON Patch (RFC 6902) operations."
+  zh: "JSON Patch（RFC 6902）"

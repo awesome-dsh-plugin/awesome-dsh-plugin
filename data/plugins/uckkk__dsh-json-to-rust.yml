@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-to-rust
+name: uckkk/dsh-json-to-rust
+category: tools
+description:
+  en: "Converts JSON to serde Rust structs."
+  zh: "JSON 转 Rust"

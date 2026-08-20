@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-chunk
+name: uckkk/dsh-chunk
+category: tools
+description:
+  en: "Chunks an array into groups."
+  zh: "数组分块"

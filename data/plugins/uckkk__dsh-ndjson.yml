@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-ndjson
+name: uckkk/dsh-ndjson
+category: tools
+description:
+  en: "NDJSON (newline-delimited JSON) tools."
+  zh: "NDJSON 转换"

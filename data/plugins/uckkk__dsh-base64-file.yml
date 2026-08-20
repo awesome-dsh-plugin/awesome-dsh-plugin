@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-base64-file
+name: uckkk/dsh-base64-file
+category: tools
+description:
+  en: "Converts files to/from base64 or data URLs."
+  zh: "Base64 文件转换"

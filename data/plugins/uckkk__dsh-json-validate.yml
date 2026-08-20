@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-validate
+name: uckkk/dsh-json-validate
+category: tools
+description:
+  en: "Validates JSON syntax and auto-fixes comments, trailing commas and single quotes."
+  zh: "JSON 校验与修复"

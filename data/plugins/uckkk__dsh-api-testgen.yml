@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-api-testgen
+name: uckkk/dsh-api-testgen
+category: tools
+description:
+  en: "Generates API test skeletons (pytest/vitest) from an OpenAPI 3.x spec."
+  zh: "接口测试生成"

@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-rot13
+name: uckkk/dsh-rot13
+category: tools
+description:
+  en: "ROT13 cipher (rotate letters by 13)."
+  zh: "ROT13 位移"

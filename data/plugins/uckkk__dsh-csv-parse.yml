@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-csv-parse
+name: uckkk/dsh-csv-parse
+category: tools
+description:
+  en: "Robust CSV parser (quoted fields, escaped quotes, multiline)."
+  zh: "健壮 CSV 解析器"

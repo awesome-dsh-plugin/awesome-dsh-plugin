@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-types
+name: uckkk/dsh-json-types
+category: tools
+description:
+  en: "Converts JSON to TypeScript interfaces, JSON Schema, or Pydantic models."
+  zh: "JSON 类型生成"

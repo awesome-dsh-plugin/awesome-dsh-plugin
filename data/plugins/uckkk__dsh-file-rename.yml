@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-file-rename
+name: uckkk/dsh-file-rename
+category: tools
+description:
+  en: "Batch file renaming by find/replace, prefix/suffix, or case with dry-run."
+  zh: "批量重命名"

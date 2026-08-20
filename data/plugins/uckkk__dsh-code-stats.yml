@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-code-stats
+name: uckkk/dsh-code-stats
+category: tools
+description:
+  en: "Scans a project and reports code statistics by language and largest files."
+  zh: "代码统计"

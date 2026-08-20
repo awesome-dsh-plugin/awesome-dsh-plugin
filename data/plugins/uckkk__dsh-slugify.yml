@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-slugify
+name: uckkk/dsh-slugify
+category: tools
+description:
+  en: "URL slug generator that keeps Unicode letters."
+  zh: "URL slug 生成器"

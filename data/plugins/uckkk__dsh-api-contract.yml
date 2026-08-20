@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-api-contract
+name: uckkk/dsh-api-contract
+category: tools
+description:
+  en: "Parses OpenAPI 3.x (JSON/YAML) to generate typed TypeScript/Python clients and detect breaking changes."
+  zh: "接口契约助手"

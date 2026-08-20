@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-toml
+name: uckkk/dsh-toml
+category: tools
+description:
+  en: "TOML to JSON and back."
+  zh: "TOML ↔ JSON 转换"

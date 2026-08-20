@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-is-coprime
+name: uckkk/dsh-is-coprime
+category: tools
+description:
+  en: "Checks if two numbers are coprime."
+  zh: "互质判断"

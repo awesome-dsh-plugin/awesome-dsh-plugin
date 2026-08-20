@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-glob
+name: uckkk/dsh-glob
+category: tools
+description:
+  en: "Glob pattern matching (supports *, **, ?, {a,b}, [abc])."
+  zh: "Glob 模式匹配工具"

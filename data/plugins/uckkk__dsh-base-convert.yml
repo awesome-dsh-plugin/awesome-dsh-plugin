@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-base-convert
+name: uckkk/dsh-base-convert
+category: tools
+description:
+  en: "Converts integers between arbitrary bases (2-36)."
+  zh: "进制转换"

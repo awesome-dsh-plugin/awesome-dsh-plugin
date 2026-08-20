@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-text-template
+name: uckkk/dsh-text-template
+category: tools
+description:
+  en: "Renders {placeholder} string templates."
+  zh: "模板渲染"
