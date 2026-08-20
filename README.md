@@ -50,6 +50,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
   - [Usage & Billing](#usage--billing)
   - [Themes & Appearance](#themes--appearance)
   - [Models & Providers](#models--providers)
+  - [Identity & Communication](#identity--communication)
   - [Sessions & Messages](#sessions--messages)
   - [Memory](#memory)
   - [Tools & Capabilities](#tools--capabilities)
@@ -566,6 +567,10 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) - Built-in ChatGPT OAuth provider for Codex models, selectable subscription web search, backend quota for standard Codex and Spark, and a DSH settings UI; no API key or Codex CLI required.
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) - Codex App Server model provider using a local Codex login, with session reuse, Harness tool bridging, native action traces, and durable generated-image projection.
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card to tune the DSH LLM auto-retry policy (retry count, backoff, jitter) live from Settings → General.
+
+### Identity & Communication
+
+- [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) - Provides DeepSeek Harness agents with native AWiki identities and identity-based direct, group, mail, and Agent-to-Agent communication.
 
 ### Sessions & Messages
 

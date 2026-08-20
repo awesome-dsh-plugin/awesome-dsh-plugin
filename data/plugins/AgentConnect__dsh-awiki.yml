@@ -1,0 +1,6 @@
+url: https://github.com/AgentConnect/dsh-awiki
+name: AgentConnect/dsh-awiki
+category: identity
+description:
+  en: Provides DeepSeek Harness agents with native AWiki identities and identity-based direct, group, mail, and Agent-to-Agent communication.
+  zh: 为 DeepSeek Harness 智能体提供原生 AWiki 身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。
