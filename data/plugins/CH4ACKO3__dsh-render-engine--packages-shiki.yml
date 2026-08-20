@@ -1,0 +1,6 @@
+url: https://github.com/CH4ACKO3/dsh-render-engine/tree/main/packages/shiki
+name: CH4ACKO3/dsh-render-engine#shiki
+category: dev
+description:
+  en: 'Shared browser-side Shiki tokenization service for DSH Web plugins, with bundled languages, aliases, DSH theme variables, and source line-ending preservation.'
+  zh: '供 DSH Web 插件共享的浏览器端 Shiki 分词服务，内置语言与别名，使用 DSH 主题变量并保留源码换行符。'
