@@ -1,0 +1,7 @@
+url: https://github.com/yihefeikong-rgb/dsh-cc-haha-dream
+name: yihefeikong-rgb/dsh-cc-haha-dream
+category: memory
+tarball: https://github.com/yihefeikong-rgb/dsh-cc-haha-dream/releases/latest/download/dsh-dream-0.1.0.tgz
+description:
+  en: "Background memory consolidation (auto dream) for DeepSeek Harness: periodically reviews recent sessions and existing memories to dedupe, refresh stale entries, remove contradictions and rebuild the MEMORY.md index, with hybrid/volume auto triggers, /dream command and a settings-panel config card."
+  zh: "DeepSeek Harness 自动做梦插件：后台定期回顾近期会话与记忆，整合去重、更新过时、删除矛盾、修剪索引，支持 hybrid/volume 自动触发、/dream 手动执行与设置面板配置。"
