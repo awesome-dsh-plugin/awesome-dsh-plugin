@@ -1,0 +1,6 @@
+url: https://github.com/huaxiren6/dsh-sms-webhook
+name: huaxiren6/dsh-sms-webhook
+category: notify
+description:
+  en: 'SMS forwarding webhook for DeepSeek Harness: receive pushes from phone SMS Forwarder apps, store to JSONL, expose sms_recent / sms_search with OTP extraction.'
+  zh: '短信转发 webhook 插件：接收手机短信转发 App 的推送、JSONL 落盘，提供 sms_recent / sms_search 工具并自动提取验证码。'

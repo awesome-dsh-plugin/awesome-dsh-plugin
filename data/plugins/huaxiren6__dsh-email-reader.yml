@@ -1,0 +1,6 @@
+url: https://github.com/huaxiren6/dsh-email-reader
+name: huaxiren6/dsh-email-reader
+category: tools
+description:
+  en: 'IMAP email reader for DeepSeek Harness: list, read, and search mail via imapflow (email_list / email_read / email_search), multi-account with OAuth and proxy support.'
+  zh: 'IMAP 邮件读取插件：用 imapflow 列邮件/读全文/服务端搜索（email_list / email_read / email_search），多账号、OAuth 与代理支持。'
