@@ -109,6 +109,32 @@ for n in "$@"; do
   # this script had itself preserved.
   git checkout origin/main -- README.md README.zh.md 2>/dev/null
 
+  # Prune screenshots for entries that no longer exist. This has to run on
+  # every rebase, not only when screenshots.json conflicted: a branch that
+  # rebases cleanly keeps its own copy of the file verbatim, dead keys and all,
+  # and build-site then refuses it with "is not a listed entry URL". #1664 and
+  # #1044 both rebased clean and both came back red for four dead keys the
+  # contributor never touched. Contributor screenshots are untouched.
+  if [ -f data/screenshots.json ]; then
+    node -e '
+      const fs = require("fs")
+      let shots
+      try { shots = JSON.parse(fs.readFileSync("data/screenshots.json", "utf8")) } catch { process.exit(0) }
+      const listed = new Set(
+        fs.readdirSync("data/plugins")
+          .filter((f) => f.endsWith(".yml"))
+          .map((f) => (fs.readFileSync("data/plugins/" + f, "utf8").match(/^url:\s*(\S+)/m) || [])[1])
+          .filter(Boolean),
+      )
+      const dead = Object.keys(shots).filter((k) => !listed.has(k))
+      if (!dead.length) process.exit(0)
+      for (const k of dead) delete shots[k]
+      fs.writeFileSync("data/screenshots.json", JSON.stringify(shots, null, 1) + "\n")
+      console.error("      dropped " + dead.length + " screenshot key(s) for entries that no longer exist")
+    ' 2>&1
+    git add data/screenshots.json 2>/dev/null
+  fi
+
   node scripts/generate-readme.mjs >/dev/null 2>&1 || {
     git checkout -f -q main; echo "$n :: GEN-FAIL (bad entry data)"; continue
   }
