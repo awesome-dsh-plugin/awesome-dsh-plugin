@@ -1,72 +1,74 @@
 # 🎒 dsh-pocket
 
+**English** | [简体中文](./README.zh-CN.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![DeepSeek Harness](https://img.shields.io/badge/DSH-0.1.0--rc-purple.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![pnpm workspace](https://img.shields.io/badge/pnpm-workspace-orange.svg)](https://pnpm.io/workspaces)
 
-> **dsh-pocket** 是一个专为 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) 打造的实用小插件工具箱（Pocket Toolkit）。
-> 旨在提供**小而美、轻量、开箱即用**的实用微扩展，提升日常使用与开发体验。
+> **dsh-pocket** is a pocket toolkit of practical, lightweight, and beautiful plugins designed for [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness).  
+> It delivers out-of-the-box micro-extensions to enhance your daily workflow, interactive experience, and development productivity.
 
 ---
 
-## 📦 包含插件 (Plugins Included)
+## 📦 Plugins Included
 
-| 插件 (Package) | 类型 | 描述 (Description) |
+| Plugin | Type | Description |
 | :--- | :--- | :--- |
-| **[`@moon16u/dsh-plugin-restart`](./packages/dsh-plugin-restart)** | Host / CLI | 提供 `/dsh-restart` 命令与 `dsh_restart` Agent 工具，实现进程分离的安全 3 秒无损自愈重启。 |
-| **[`@moon16u/dsh-plugin-session-id`](./packages/dsh-plugin-session-id)** | Web UI | 在 Web 会话顶栏右侧显示当前 Session ID，支持一键快速复制到剪贴板。 |
-| **[`@moon16u/dsh-plugin-web-search-tavily`](./packages/dsh-plugin-web-search-tavily)** | Capability Seam | 基于 Tavily REST API 的真实网络搜索提供方，无缝接入 DSH 官方 `ctx.web` 网络能力标准。 |
+| **[`@moon16u/dsh-plugin-restart`](./packages/dsh-plugin-restart)** | Host / CLI | Safe, detached DSH process restart command (`/dsh-restart`) and agent tool (`dsh_restart`) with a 3-second grace period. |
+| **[`@moon16u/dsh-plugin-session-id`](./packages/dsh-plugin-session-id)** | Web UI | Displays a native-styled Session ID badge in the web session header with one-click clipboard copy. |
+| **[`@moon16u/dsh-plugin-web-search-tavily`](./packages/dsh-plugin-web-search-tavily)** | Capability Seam | Real-time web search provider backed by the Tavily REST API, seamlessly integrating with DSH's `ctx.web` capability seam. |
 
 ---
 
-## 🚀 快速安装与使用 (Installation & Setup)
+## 🚀 Quick Start & Installation
 
-### 方式一：通过 DSH CLI 一行命令一键安装（推荐 ⭐️⭐️⭐️⭐️⭐️）
+### Method 1: One-Command Installation via DSH CLI (Recommended ⭐️⭐️⭐️⭐️⭐️)
 
-只需在终端执行一行命令，DSH 将自动下载并加载全部 3 个实用插件（0 手动配置，开箱即用）：
+Run a single command in your terminal. DSH will automatically download, bundle-register, and mount all 3 pocket plugins (zero manual configuration):
 
 ```bash
 dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 ```
 
-*注：若已发布至 npm，亦可直接执行 `dsh plugin --profile web add @moon16u/dsh-pocket`。*
+*Note: If published to npm, you can also run `dsh plugin --profile web add @moon16u/dsh-pocket`.*
 
 ---
 
-### 方式二：通过 Git 源码本地链接安装
+### Method 2: Local Git Clone Installation
 
-1. **克隆仓库到本地**：
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/moon16u/dsh-pocket.git ~/dsh-pocket
    ```
 
-2. **在 DSH Profile 中一键引入 Bundle**：
+2. **Add the bundle to your DSH profile**:
    ```bash
    dsh plugin --profile web add file:~/dsh-pocket
    ```
-   *DSH 将自动识别 `dsh.bundle` 并自动挂载内置的 `cordis.patch.yml`，无需手动编辑配置文件。*
+   *DSH automatically detects `dsh.bundle` and applies the built-in `cordis.patch.yml` layer without manual configuration file edits.*
 
 ---
 
-## 🛠️ 单个插件详解
+## 🛠️ Plugin Highlights
 
 ### 1. `@moon16u/dsh-plugin-restart`
-* **痛点**：在修改插件或配置后，需要手动到外部终端重启 DSH 进程；如果在 Agent 内部直接 kill 自身会导致会话卡死。
-* **解决**：在 DSH 内部注册 `/dsh-restart` 斜杠命令与 `dsh_restart` Agent 工具，采用 detached setsid 异步工作进程，先正常返回响应再在 3 秒后平滑重启。
+* **Problem**: After editing plugins or configs, restarting DSH manually in an external terminal is tedious; killing the process directly inside an agent tool causes the session to freeze.
+* **Solution**: Exposes `/dsh-restart` slash command and `dsh_restart` agent tool. Spawns an asynchronous detached worker process that returns the response immediately and restarts cleanly after 3 seconds.
 
 ### 2. `@moon16u/dsh-plugin-session-id`
-* **痛点**：排查问题、查看日志或跨环境关联时，需要获取当前会话的 UUID，但界面上没有直观的复制入口。
-* **解决**：在 Web 顶栏工具区优雅注入一个胶囊状的 `Session ID` 按钮，点击即可一键复制。
+* **Problem**: Retrieving the current session UUID for debugging or log tracking requires digging into URLs or console logs.
+* **Solution**: Injects a clean capsule button displaying the Session ID in the web header utility bar with instant one-click clipboard copying.
 
 ### 3. `@moon16u/dsh-plugin-web-search-tavily`
-* **痛点**：默认搜索引擎可能受限或无法获取高质量结构化检索结果。
-* **解决**：标准实现 DSH 的 `ctx.web.registerSearchProvider` 接口，支持通过环境变量 `TAVILY_API_KEY` 或 DSH Credentials 凭据管理服务安全解析密钥。
+* **Problem**: Built-in search engines may be restricted or lack high-quality synthesized web answers.
+* **Solution**: Formally implements the `ctx.web.registerSearchProvider` contract. Automatically resolves API keys from the `TAVILY_API_KEY` environment variable or DSH Credentials service.
 
 ---
 
-## 🧪 运行测试 (Testing)
+## 🧪 Testing
 
-本仓库采用 pnpm workspace 管理，所有插件均包含基于 Node.js 原生测试运行器的单元测试与契约测试：
+This monorepo uses pnpm workspaces and Node.js native test runner for contract and smoke tests:
 
 ```bash
 cd dsh-pocket
@@ -76,6 +78,6 @@ pnpm test
 
 ---
 
-## 📄 许可证 (License)
+## 📄 License
 
 [MIT License](./LICENSE) © 2026 moon16u
