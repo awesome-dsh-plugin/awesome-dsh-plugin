@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-objectid
+name: uckkk/dsh-objectid
+category: tools
+description:
+  en: "MongoDB ObjectId-like generator."
+  zh: "ObjectId 生成"
