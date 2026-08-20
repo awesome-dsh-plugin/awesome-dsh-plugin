@@ -1046,5 +1046,13 @@
  ],
  "https://github.com/Y1X1n/dsh-prompt-optimizer": [
   "https://raw.githubusercontent.com/Y1X1n/dsh-prompt-optimizer/main/docs/screenshots/optimize-panel.png"
+ ],
+ "https://github.com/liqiming-whu/dsh-status-card": [
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-a.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-b.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-c.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-d.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-e.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-f.svg"
  ]
 }
