@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-string-similarity
+name: uckkk/dsh-string-similarity
+category: tools
+description:
+  en: "Levenshtein edit distance and similarity between strings."
+  zh: "字符串相似度"
