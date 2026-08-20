@@ -1,0 +1,6 @@
+url: https://github.com/rex178178/dsh-turnbar
+name: rex178178/dsh-turnbar
+category: ui
+description:
+  en: 'Video-style in-session turn navigation: a full-map progress bar with hover preview cards, drag scrub, ⌘K search that lands on the bar, a context-window fuel gauge, /goal chapter ticks, and a ⌘/Alt+click jump to the Trajectory view.'
+  zh: '视频播放器式轮次导航：全景进度条、悬停预览、拖动 scrub、结果落在进度条上的 ⌘K 搜索、上下文余量仪表、/goal 章节刻度与 ⌘/Alt 点击直达轨迹视图。'
