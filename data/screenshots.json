@@ -1043,5 +1043,8 @@
  ],
  "https://github.com/CheshireJCat/blender": [
   "https://raw.githubusercontent.com/CheshireJCat/blender/main/assets/dsh-blender-lamp-preview.png"
+ ],
+ "https://github.com/Y1X1n/dsh-prompt-optimizer": [
+  "https://raw.githubusercontent.com/Y1X1n/dsh-prompt-optimizer/main/docs/screenshots/optimize-panel.png"
  ]
 }
