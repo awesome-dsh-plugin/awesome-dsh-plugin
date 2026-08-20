@@ -10,7 +10,7 @@ Safe, detached DSH process restart command (`/dsh-restart`) and agent tool (`dsh
 ## Installation
 ```bash
 cd ~/.dsh/profiles/web
-pnpm add file:<path-to-dsh-pocket>/packages/dsh-plugin-restart
+pnpm add file:<path-to-dsh-pouch>/packages/dsh-plugin-restart
 ```
 
 ## Configuration (cordis.patch.yml)

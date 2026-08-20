@@ -10,7 +10,7 @@ Display current DSH Session ID badge in the web header with one-click clipboard 
 ## Installation
 ```bash
 cd ~/.dsh/profiles/web
-pnpm add file:<path-to-dsh-pocket>/packages/dsh-plugin-session-id
+pnpm add file:<path-to-dsh-pouch>/packages/dsh-plugin-session-id
 ```
 
 ## Configuration (cordis.patch.yml)

@@ -13,7 +13,7 @@ const DEFAULT_DELAY_MS = 3000;
 // the request. Even if a model passes delay_ms (e.g. 15000), it is ignored and
 // replaced with this constant.
 const FIXED_DELAY_MS = 3000;
-const SCRIPT = join(homedir(), "Agent YueJian", "dsh-pocket", "scripts", "dsh-restart.sh");
+const SCRIPT = join(homedir(), "Agent YueJian", "dsh-pouch", "scripts", "dsh-restart.sh");
 
 function scheduleDetachedRestart(delayMs = DEFAULT_DELAY_MS) {
   const dshHome = process.env.DSH_HOME || join(homedir(), ".dsh");

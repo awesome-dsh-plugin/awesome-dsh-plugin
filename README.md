@@ -1,4 +1,4 @@
-# 🧰 dsh-pocket
+# 👝 dsh-pouch
 
 **English** | [中文](./README.zh-CN.md)
 
@@ -6,7 +6,7 @@
 [![DeepSeek Harness](https://img.shields.io/badge/DSH-0.1.0--rc-purple.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![pnpm workspace](https://img.shields.io/badge/pnpm-workspace-orange.svg)](https://pnpm.io/workspaces)
 
-> **dsh-pocket** is a pocket toolkit of practical, lightweight, and beautiful plugins designed for [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness).  
+> **dsh-pouch** is a pocket toolkit of practical, lightweight, and beautiful plugins designed for [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness).  
 > It delivers out-of-the-box micro-extensions to enhance your daily workflow, interactive experience, and development productivity.
 
 ---
@@ -29,10 +29,10 @@ Run a single command in your terminal. DSH will automatically download, bundle-r
 
 ```bash
 # 1. Install the entire toolkit via npm (recommended)
-dsh plugin --profile web add @moon16u/dsh-pocket
+dsh plugin --profile web add @moon16u/dsh-pouch
 
 # Or install directly from GitHub
-dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
+dsh plugin --profile web add https://github.com/moon16u/dsh-pouch.git
 ```
 
 ---
@@ -41,12 +41,12 @@ dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/moon16u/dsh-pocket.git ~/dsh-pocket
+   git clone https://github.com/moon16u/dsh-pouch.git ~/dsh-pouch
    ```
 
 2. **Add the bundle to your DSH profile**:
    ```bash
-   dsh plugin --profile web add file:~/dsh-pocket
+   dsh plugin --profile web add file:~/dsh-pouch
    ```
    *DSH automatically detects `dsh.bundle` and applies the built-in `cordis.patch.yml` layer without manual configuration file edits.*
 
@@ -73,7 +73,7 @@ dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 This monorepo uses pnpm workspaces and Node.js native test runner for contract and smoke tests:
 
 ```bash
-cd dsh-pocket
+cd dsh-pouch
 pnpm install
 pnpm test
 ```

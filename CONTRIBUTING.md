@@ -1,4 +1,4 @@
-# Contributing to dsh-pocket
+# Contributing to dsh-pouch
 
 We welcome contributions of small, practical, and well-tested plugins for DeepSeek Harness!
 

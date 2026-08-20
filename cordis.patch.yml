@@ -1,11 +1,11 @@
-# dsh-pocket bundle layer: automatically loads all pocket utilities into DSH
+# dsh-pouch bundle layer: automatically loads all pocket utilities into DSH
 - id: web
   config:
     searchProvider: tavily
 
 - insert:
-    - id: dsh-pocket
-      name: '@moon16u/dsh-pocket'
+    - id: dsh-pouch
+      name: '@moon16u/dsh-pouch'
       config:
         apiKeyEnv: TAVILY_API_KEY
         baseURL: https://api.tavily.com/search

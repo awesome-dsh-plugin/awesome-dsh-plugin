@@ -1,4 +1,4 @@
-# 🧰 dsh-pocket
+# 👝 dsh-pouch
 
 [English](./README.md) | **中文**
 
@@ -6,7 +6,7 @@
 [![DeepSeek Harness](https://img.shields.io/badge/DSH-0.1.0--rc-purple.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![pnpm workspace](https://img.shields.io/badge/pnpm-workspace-orange.svg)](https://pnpm.io/workspaces)
 
-> **dsh-pocket** 是一个专为 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) 打造的实用小插件工具箱（Pocket Toolkit）。  
+> **dsh-pouch** 是一个专为 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) 打造的实用小插件锦囊（Pouch Toolkit）。  
 > 旨在提供**小而美、轻量、开箱即用**的实用微扩展，提升日常使用与开发体验。
 
 ---
@@ -29,10 +29,10 @@
 
 ```bash
 # 1. 一键安装整套工具箱（来自 npm）
-dsh plugin --profile web add @moon16u/dsh-pocket
+dsh plugin --profile web add @moon16u/dsh-pouch
 
 # 或直接通过 GitHub 仓库安装
-dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
+dsh plugin --profile web add https://github.com/moon16u/dsh-pouch.git
 ```
 
 ---
@@ -41,12 +41,12 @@ dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 
 1. **克隆仓库到本地**：
    ```bash
-   git clone https://github.com/moon16u/dsh-pocket.git ~/dsh-pocket
+   git clone https://github.com/moon16u/dsh-pouch.git ~/dsh-pouch
    ```
 
 2. **在 DSH Profile 中一键引入 Bundle**：
    ```bash
-   dsh plugin --profile web add file:~/dsh-pocket
+   dsh plugin --profile web add file:~/dsh-pouch
    ```
    *DSH 将自动识别 `dsh.bundle` 并自动挂载内置的 `cordis.patch.yml`，无需手动编辑配置文件。*
 
@@ -73,7 +73,7 @@ dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 本仓库采用 pnpm workspace 管理，所有插件均包含基于 Node.js 原生测试运行器的单元测试与契约测试：
 
 ```bash
-cd dsh-pocket
+cd dsh-pouch
 pnpm install
 pnpm test
 ```

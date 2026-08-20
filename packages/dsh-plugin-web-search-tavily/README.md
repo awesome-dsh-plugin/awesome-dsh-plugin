@@ -10,7 +10,7 @@ Tavily-backed web search provider for the DeepSeek Harness capability seam (`ctx
 ## Installation
 ```bash
 cd ~/.dsh/profiles/web
-pnpm add file:<path-to-dsh-pocket>/packages/dsh-plugin-web-search-tavily
+pnpm add file:<path-to-dsh-pouch>/packages/dsh-plugin-web-search-tavily
 ```
 
 ## Configuration (cordis.patch.yml)
