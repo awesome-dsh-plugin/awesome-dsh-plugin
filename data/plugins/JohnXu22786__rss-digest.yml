@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/rss-digest
+name: JohnXu22786/rss-digest
+category: tools
+description:
+  en: "RSS/Atom digest bundle for dsh: subscribe to feeds, fetch on a schedule, dedupe exact and near-duplicate stories, and get LLM-summarized daily Markdown briefings delivered into conversations and/or files (with a standalone CLI)."
+  zh: "dsh 的 RSS/Atom 摘要插件:订阅源管理、定时抓取、精确与近似去重,并由 LLM 生成每日 Markdown 简报投递到会话和/或文件(同时提供独立 CLI)。"
