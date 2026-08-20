@@ -1048,7 +1048,7 @@
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-dashboard.png",
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-settings.png"
  ],
-"https://github.com/deepseek-dsh/dsh-workspace": [
+ "https://github.com/deepseek-dsh/dsh-workspace": [
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-1.png",
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-2.png"
  ],
@@ -1070,5 +1070,11 @@
   "https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-dsh-settings-card.jpg",
   "https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-search.png",
   "https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-fetch.png"
+ ],
+ "https://github.com/liustack/modlens": [
+  "https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-dsh-settings-card.jpg",
+  "https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-dsh-paste.jpg",
+  "https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-chart.jpg",
+  "https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-app.jpg"
  ]
 }
