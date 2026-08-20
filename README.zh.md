@@ -1066,6 +1066,7 @@ dsh plugin --profile web add dshmarket
 - [Cheng-cheng9669/dsh-deepseek-vision](https://github.com/Cheng-cheng9669/dsh-deepseek-vision) — 复用 DeepSeek 网页端识图模式给纯文本模型补上看图能力：deepseek_vision 工具调用本地 deepseek-vision-cli 浏览器自动化（手动登录助手、自动开启深度思考、用后自动关窗），把图片描述以文字返回给模型。
 - [ConsoleSun/Gemini-Eyes](https://github.com/ConsoleSun/Gemini-Eyes) — 接入 gemini.google.com 的 MCP 桥：图片/视频视觉识别、Imagen 生图、Veo 生视频与历史对话管理，复用浏览器登录态，无需 API Key。
 - [corrinehu/dsh-chat-imagine](https://github.com/corrinehu/dsh-chat-imagine) — 在 DSH 聊天窗口自动调用生图工具（API 渠道，或本机 CLI：已支持 mmx / codex / agy）并展示图片，也支持利用对应 CLI 识别图片。
+- [dami9527/dsh-image-pathify](https://github.com/dami9527/dsh-image-pathify) — 让纯文本模型也能处理聊天贴图，提供原生视觉体验，支持批量看图，走内置 OpenAI 兼容识图工具 analyze_image；具备视觉能力的模型不受影响。
 - [DamonKoy/dsh-web-ui#dsh-tool-describe-image](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-tool-describe-image) — describe_image 模型工具：让纯文本模型通过视觉语言模型获得图像理解能力。
 - [dickpy/dsh-imagegen](https://github.com/dickpy/dsh-imagegen) — 面向 DSH Web GUI 的 AI 生图插件：通过可配置的 OpenAI 兼容端点（gpt-image-2 / gpt-image-1 / dall-e-3）实现文生图与图生图，提供 api_url/api_key 设置卡片与侧边栏分栏生图工作台。
 - [Einskyle/dsh-llm-vision-bridge](https://github.com/Einskyle/dsh-llm-vision-bridge) — DeepSeek 视觉桥接：注册原生 LLM provider，聊天内粘贴的图片自动由视觉模型（pi-ai/llama.cpp 上的 Qwen3-VL）转成文字描述后交给纯文本 DeepSeek 作答——图片准入、路由与会话压缩全部走 harness 原生机制，带 LRU 描述缓存与 503 重试。
