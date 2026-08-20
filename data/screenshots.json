@@ -1061,5 +1061,9 @@
  "https://github.com/feng78-boop/dsh-thirteen-bg": [
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-poster.jpg",
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-shot-2.jpg"
+ ],
+ "https://github.com/wsz987/dsh-channels/tree/main/packages/channels": [
+  "https://raw.githubusercontent.com/wsz987/dsh-channels/main/docs/ScreenShot/dsh-channels-setting.png",
+  "https://raw.githubusercontent.com/wsz987/dsh-channels/main/docs/ScreenShot/telegram.png"
  ]
 }
