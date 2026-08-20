@@ -21,49 +21,30 @@
 
 ## 🚀 快速安装与使用 (Installation & Setup)
 
-### 方式一：通过 Git 源码在本地安装（推荐）
+### 方式一：通过 DSH CLI 一行命令一键安装（推荐 ⭐️⭐️⭐️⭐️⭐️）
+
+只需在终端执行一行命令，DSH 将自动下载并加载全部 3 个实用插件（0 手动配置，开箱即用）：
+
+```bash
+dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
+```
+
+*注：若已发布至 npm，亦可直接执行 `dsh plugin --profile web add @moon16u/dsh-pocket`。*
+
+---
+
+### 方式二：通过 Git 源码本地链接安装
 
 1. **克隆仓库到本地**：
    ```bash
    git clone https://github.com/moon16u/dsh-pocket.git ~/dsh-pocket
    ```
 
-2. **在 DSH Profile 中安装插件**：
+2. **在 DSH Profile 中一键引入 Bundle**：
    ```bash
-   cd ~/.dsh/profiles/web
-   pnpm add file:~/dsh-pocket/packages/dsh-plugin-restart \
-            file:~/dsh-pocket/packages/dsh-plugin-session-id \
-            file:~/dsh-pocket/packages/dsh-plugin-web-search-tavily
+   dsh plugin --profile web add file:~/dsh-pocket
    ```
-
-3. **在 DSH 配置层 (`cordis.patch.yml`) 中启用插件**：
-   在 `~/.dsh/profiles/web/cordis.patch.yml` 中添加：
-   ```yaml
-   # 1. 一键会话 ID 复制徽章 (Web UI)
-   - insert:
-       - id: dsh-session-id
-         name: '@moon16u/dsh-plugin-session-id'
-         config: {}
-
-   # 2. 进程自愈与平滑重启工具
-   - insert:
-       - id: dsh-restart
-         name: '@moon16u/dsh-plugin-restart'
-         config: {}
-
-   # 3. Tavily 真实联网搜索提供方
-   - id: web
-     config:
-       searchProvider: tavily
-   - insert:
-       - id: web-search-tavily
-         name: '@moon16u/dsh-plugin-web-search-tavily'
-         config:
-           apiKeyEnv: TAVILY_API_KEY
-           baseURL: https://api.tavily.com/search
-           searchDepth: basic
-           maxResults: 5
-   ```
+   *DSH 将自动识别 `dsh.bundle` 并自动挂载内置的 `cordis.patch.yml`，无需手动编辑配置文件。*
 
 ---
 

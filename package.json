@@ -1,9 +1,39 @@
 {
-  "name": "dsh-pocket",
+  "name": "@moon16u/dsh-pocket",
   "version": "0.1.0",
   "description": "A collection of small, beautiful, and practical plugins for DeepSeek Harness (DSH)",
-  "private": true,
   "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./restart": "./packages/dsh-plugin-restart/lib/index.js",
+    "./session-id": "./packages/dsh-plugin-session-id/lib/index.js",
+    "./session-id/client": "./packages/dsh-plugin-session-id/lib/client.js",
+    "./web-search-tavily": "./packages/dsh-plugin-web-search-tavily/lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "packages",
+    "scripts",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
   "scripts": {
     "test": "pnpm -r test"
   },

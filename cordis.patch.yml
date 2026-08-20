@@ -1,0 +1,25 @@
+# dsh-pocket bundle layer: automatically loads all pocket utilities into DSH
+# 1. dsh-session-id: Session ID header badge with one-click copy
+- insert:
+    - id: dsh-session-id
+      name: '@moon16u/dsh-pocket/session-id'
+      config: {}
+
+# 2. dsh-restart: /dsh-restart command & dsh_restart agent tool
+- insert:
+    - id: dsh-restart
+      name: '@moon16u/dsh-pocket/restart'
+      config: {}
+
+# 3. dsh-web-search-tavily: Tavily web search provider
+- id: web
+  config:
+    searchProvider: tavily
+- insert:
+    - id: web-search-tavily
+      name: '@moon16u/dsh-pocket/web-search-tavily'
+      config:
+        apiKeyEnv: TAVILY_API_KEY
+        baseURL: https://api.tavily.com/search
+        searchDepth: basic
+        maxResults: 5
