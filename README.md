@@ -28,6 +28,10 @@
 Run a single command in your terminal. DSH will automatically download, bundle-register, and mount all 3 pocket plugins (zero manual configuration):
 
 ```bash
+# 1. Install the entire toolkit via npm (recommended)
+dsh plugin --profile web add @moon16u/dsh-pocket
+
+# Or install directly from GitHub
 dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 ```
 

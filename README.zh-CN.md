@@ -28,6 +28,10 @@
 只需在终端执行一行命令，DSH 将自动下载并加载全部 3 个实用插件（0 手动配置，开箱即用）：
 
 ```bash
+# 1. 一键安装整套工具箱（来自 npm）
+dsh plugin --profile web add @moon16u/dsh-pocket
+
+# 或直接通过 GitHub 仓库安装
 dsh plugin --profile web add https://github.com/moon16u/dsh-pocket.git
 ```
 
