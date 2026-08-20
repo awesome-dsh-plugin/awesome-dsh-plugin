@@ -598,9 +598,7 @@
  ],
  "https://github.com/kanchengw/dsh-mindseye": [
   "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_config.png",
-  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_generate_image.png",
-  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_ocr.png",
-  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_vision.png"
+  "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/assets/ScreenShot_dialog.png"
  ],
  "https://github.com/kexuejin/dsh-zhihu-dashboard": [
   "https://raw.githubusercontent.com/kexuejin/dsh-zhihu-dashboard/main/assets/hot.png",
@@ -1048,7 +1046,7 @@
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-dashboard.png",
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-settings.png"
  ],
-"https://github.com/deepseek-dsh/dsh-workspace": [
+ "https://github.com/deepseek-dsh/dsh-workspace": [
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-1.png",
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-2.png"
  ],
@@ -1061,5 +1059,8 @@
  "https://github.com/feng78-boop/dsh-thirteen-bg": [
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-poster.jpg",
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-shot-2.jpg"
+ ],
+ "https://github.com/JimchengChina/dsh-action-outbox": [
+  "https://raw.githubusercontent.com/JimchengChina/dsh-action-outbox/main/assets/action-outbox-hero.jpg"
  ]
 }
