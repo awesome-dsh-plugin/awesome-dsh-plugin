@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-enhancement-suite
+name: Scorp1o117/dsh-enhancement-suite
+category: market
+description:
+  en: 'Official entry point and one-command installer for the four Scorp1o117 plugins (vision / soul / memory / marketplace): zero-dependency CLI (list/install/update/doctor) driving the official `dsh plugin` CLI with safe auto-mounting; npm published.'
+  zh: 四个 Scorp1o117 插件的官方总入口 + 一键安装器（vision/soul/memory/marketplace）：零依赖 CLI（list/install/update/doctor），驱动官方 `dsh plugin` CLI 并安全自动挂载；npm 已发布。

@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-tdai-memory
+name: Scorp1o117/dsh-tdai-memory
+category: memory
+description:
+  en: 'TencentDB Agent Memory port: L0 conversation capture → L1 structured memory extraction → L2 scenario / L3 profile, auto-recall injection plus memory/dialogue search tools; reuses existing ~/.memory-tencentdb data.'
+  zh: TencentDB Agent Memory 移植：L0 对话捕获 → L1 结构化记忆提取 → L2 场景/L3 画像，自动召回注入 + 记忆/对话搜索工具；复用现有 ~/.memory-tencentdb 数据。
