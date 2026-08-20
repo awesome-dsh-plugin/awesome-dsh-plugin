@@ -879,6 +879,7 @@ dsh plugin --profile web add dshmarket
 - [SeverusZh/dsh-yolo-mode](https://github.com/SeverusZh/dsh-yolo-mode) — 沙箱升权申请的 LLM 自动审批：内置预设，fail-closed 兜底。
 - [shengsheng90/DSH-taskboard](https://github.com/shengsheng90/DSH-taskboard) — 本地 SQLite 任务板，以原生覆盖页呈现：项目、任务、评论、关联、附件与工作流自动化，状态流转 backlog → todo → in_progress → in_review → done；提供 `taskboard_*` Agent 工具（Agent 只能提交到 in_review，验收需人工）、无头 JSON CLI 与打包 skill。
 - [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) — 为 WebUI 增加 Auto Approve 权限档位，由全新且受限的审查 Agent 逐次允许或拒绝审批请求。
+- [tangzheng202202/dsh-sparkos](https://github.com/tangzheng202202/dsh-sparkos) — 自媒体工作台插件：8 tab 看板（今日简报/叙事主线/选题/草稿/知识卡蒸馏审核/信息源/发布表现/系统建议），五守卫硬执行，VAULT 数据与代码分离，intel 模块只读接入并遵守四条红线。
 - [timwhitez/dsh-self-evolving#packages/dsh-self-evolving](https://github.com/timwhitez/dsh-self-evolving/tree/main/packages/dsh-self-evolving) — 证据优先的自进化控制器：有界生成 Cordis 候选插件，一次性真实 Loader 准入，Harbor 评测，可崩溃恢复的日志化谱系。
 - [titanwings/dsh-automation](https://github.com/titanwings/dsh-automation) — 定时任务：让 Coding 任务按计划在全新 Agent Session 中运行，保留可审计历史。
 - [titanwings/dsh-plannotator](https://github.com/titanwings/dsh-plannotator) — 计划批注：选中计划原文逐条批注，结构化反馈送回 Agent。
