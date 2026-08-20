@@ -1080,5 +1080,13 @@
   "https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-dsh-paste.jpg",
   "https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-chart.jpg",
   "https://raw.githubusercontent.com/liustack/modlens/main/assets/demo-codex-app.jpg"
+ ],
+ "https://github.com/elysia395/dsh-wallpaper-engine": [
+  "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/showcase.png",
+  "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/wallpaper-library.png",
+  "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/liquid-glass-window.png",
+  "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/features.png",
+  "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/compact-wallpaper-library.png",
+  "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/better-sidebar.png"
  ]
 }
