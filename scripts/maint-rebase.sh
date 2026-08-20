@@ -61,6 +61,20 @@ for n in "$@"; do
         // contributors'"'"' diffs and read as "this PR also touched unrelated
         // entries", which is the exact signal used to catch cross-entry damage.
         // Poisoning it is worse than an untidy file.
+        // Screenshots for entries that are no longer listed have to go. An old
+        // branch carries keys for entries main has since removed or renamed,
+        // and build-site refuses a key that matches no entry — "is not a
+        // listed entry URL". Two rebases came back red for exactly this and
+        // for nothing else, which reads to the contributor as their
+        // submission being broken. Their screenshots are untouched; only keys
+        // pointing at entries that do not exist are dropped.
+        const listed = new Set(
+          fs.readdirSync("data/plugins")
+            .filter((f) => f.endsWith(".yml"))
+            .map((f) => (fs.readFileSync("data/plugins/" + f, "utf8").match(/^url:\s*(\S+)/m) || [])[1])
+            .filter(Boolean),
+        )
+        for (const k of Object.keys(out)) if (!listed.has(k)) delete out[k]
         const order = [...Object.keys(ours).filter((k) => k in out), ...Object.keys(out).filter((k) => !(k in ours))]
         fs.writeFileSync("data/screenshots.json", JSON.stringify(Object.fromEntries(order.map((k) => [k, out[k]])), null, 1) + "\n")
       ' 2>/dev/null; then
