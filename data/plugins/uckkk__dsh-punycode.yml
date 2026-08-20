@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-punycode
+name: uckkk/dsh-punycode
+category: tools
+description:
+  en: "Punycode (IDN) encode/decode."
+  zh: "Punycode 转换"

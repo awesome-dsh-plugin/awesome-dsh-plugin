@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-unicode
+name: uckkk/dsh-unicode
+category: tools
+description:
+  en: "Unicode escape/unescape and codepoint lookup."
+  zh: "Unicode 编解码"
