@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-html-parse
+name: uckkk/dsh-html-parse
+category: tools
+description:
+  en: "Extracts title, meta, headings, links, tables and text from HTML."
+  zh: "HTML 解析"
