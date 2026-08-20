@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-nanoid
+name: uckkk/dsh-nanoid
+category: tools
+description:
+  en: "Nano ID generator using crypto-secure randomness."
+  zh: "Nano ID 生成器（crypto 安全随机）"

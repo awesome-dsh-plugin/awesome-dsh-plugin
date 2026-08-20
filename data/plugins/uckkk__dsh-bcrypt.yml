@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-bcrypt
+name: uckkk/dsh-bcrypt
+category: tools
+description:
+  en: "Password hashing and verification (PBKDF2/scrypt via Node crypto)."
+  zh: "密码哈希（PBKDF2/scrypt）"
