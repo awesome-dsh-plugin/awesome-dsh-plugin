@@ -1,0 +1,6 @@
+url: https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-session-delete
+name: Vast-Unhurried/dsh-toolkit#dsh-session-delete
+category: session
+description:
+  en: Adds a delete-session action that permanently removes session logs, workspace entries and archives.
+  zh: 为会话菜单添加删除操作，彻底清除会话日志、工作区登记与归档。

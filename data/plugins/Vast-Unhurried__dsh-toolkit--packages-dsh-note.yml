@@ -1,0 +1,6 @@
+url: https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-note
+name: Vast-Unhurried/dsh-toolkit#dsh-note
+category: memory
+description:
+  en: Native sticky note in the chat input toolbar with auto-saved drafts and a draggable, resizable history window.
+  zh: 在会话输入栏提供原生便签，草稿自动保存，历史便签支持拖拽缩放的独立窗口。

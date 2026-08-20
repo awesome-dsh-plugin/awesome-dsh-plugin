@@ -1,0 +1,6 @@
+url: https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-api-balance
+name: Vast-Unhurried/dsh-toolkit#dsh-api-balance
+category: usage
+description:
+  en: Shows DeepSeek API balance and per-turn conversation cost directly in the session UI.
+  zh: 在会话界面直接显示 DeepSeek API 余额与每轮对话费用。

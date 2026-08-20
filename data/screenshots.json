@@ -588,7 +588,8 @@
   "https://raw.githubusercontent.com/jyh20030112/dsh-visual-plugin/main/assets/screenshots/screenshot-1.png",
   "https://raw.githubusercontent.com/jyh20030112/dsh-visual-plugin/main/assets/screenshots/screenshot-2.png",
   "https://raw.githubusercontent.com/jyh20030112/dsh-visual-plugin/main/assets/screenshots/screenshot-3.png",
-  "https://raw.githubusercontent.com/jyh20030112/dsh-visual-plugin/main/assets/screenshots/screenshot-4.png"
+  "https://raw.githubusercontent.com/jyh20030112/dsh-visual-plugin/main/assets/screenshots/screenshot-4.png",
+  "https://raw.githubusercontent.com/jyh20030112/dsh-visual-plugin/main/assets/screenshots/screenshot-5.png"
  ],
  "https://github.com/kaixinbaba/dsh-vision-recognizer": [
   "https://raw.githubusercontent.com/kaixinbaba/dsh-vision-recognizer/main/screenshots/vision-config.png",
@@ -704,10 +705,11 @@
   "https://raw.githubusercontent.com/pyf2818/dsh-bili-widget/main/assets/mini.png"
  ],
  "https://github.com/qjcnmd/dsh-reasoning-slider": [
-  "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/deepseek-v4-pro-max.png",
-  "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/deepseek-v4-pro-off.png",
+  "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/deepseek-v4-flash-high.png",
+  "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/deepseek-v4-flash-max.png",
   "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/kimi-k3-max.png",
-  "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/minimax-m3-minimal.png"
+  "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/qwen3-7-max-off.png",
+  "https://raw.githubusercontent.com/qjcnmd/dsh-reasoning-slider/main/assets/screenshots/qwen3-7-max-high.png"
  ],
  "https://github.com/sanqiPanax/dsh-sticker-board": [
   "https://raw.githubusercontent.com/sanqiPanax/dsh-sticker-board/master/docs/screenshot-dock.png"
@@ -1048,7 +1050,7 @@
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-dashboard.png",
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-settings.png"
  ],
-"https://github.com/deepseek-dsh/dsh-workspace": [
+ "https://github.com/deepseek-dsh/dsh-workspace": [
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-1.png",
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-2.png"
  ],
@@ -1061,5 +1063,14 @@
  "https://github.com/feng78-boop/dsh-thirteen-bg": [
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-poster.jpg",
   "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-shot-2.jpg"
+ ],
+ "https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-note": [
+  "https://raw.githubusercontent.com/Vast-Unhurried/dsh-toolkit/main/docs/screenshots/screenshot-note-and-balance.png"
+ ],
+ "https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-api-balance": [
+  "https://raw.githubusercontent.com/Vast-Unhurried/dsh-toolkit/main/docs/screenshots/screenshot-note-and-balance.png"
+ ],
+ "https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-session-delete": [
+  "https://raw.githubusercontent.com/Vast-Unhurried/dsh-toolkit/main/docs/screenshots/screenshot-session-delete.jpg"
  ]
 }
