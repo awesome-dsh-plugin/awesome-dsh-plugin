@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-query-string
+name: uckkk/dsh-query-string
+category: tools
+description:
+  en: "Parses and serializes query strings."
+  zh: "查询字符串 ↔ 对象"

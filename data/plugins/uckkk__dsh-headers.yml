@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-headers
+name: uckkk/dsh-headers
+category: tools
+description:
+  en: "Parses and serializes HTTP request headers."
+  zh: "HTTP 请求头解析"
