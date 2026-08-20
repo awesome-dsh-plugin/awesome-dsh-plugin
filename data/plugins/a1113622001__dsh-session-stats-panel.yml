@@ -1,0 +1,6 @@
+url: https://github.com/a1113622001/dsh-session-stats-panel
+name: a1113622001/dsh-session-stats-panel
+category: usage
+description:
+  en: Right-side session stats panel for the DSH web GUI showing average cache-hit rate, session cost (DeepSeek pricing), account balance, runtime, request count and cumulative tokens.
+  zh: DSH Web 界面右侧的会话统计面板，显示平均缓存命中率、会话费用（按 DeepSeek 定价）、账户余额、运行时长、请求数与累计 tokens。

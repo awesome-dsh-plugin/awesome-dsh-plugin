@@ -1,0 +1,6 @@
+url: https://github.com/a1113622001/dsh-auto-update
+name: a1113622001/dsh-auto-update
+category: dev
+description:
+  en: Makes the DeepSeek Harness launcher update itself — checks npm for a newer @deepseek-ai/dsh, stages the tarball, and applies it on harness exit or from the web panel.
+  zh: 让 DeepSeek Harness 启动器自我更新——检查 npm 上更新的 @deepseek-ai/dsh，暂存 tarball，并在退出时或从 Web 面板应用更新。
