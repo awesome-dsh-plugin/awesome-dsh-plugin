@@ -1,0 +1,6 @@
+url: https://github.com/jorinyang/dsh-hermit
+name: jorinyang/dsh-hermit
+category: workflow
+description:
+  en: 'An agent preset (Hermit/小寄) that turns DSH into an always-on personal hub: a scoped butler persona, a dispatch tool that delegates multi-step tasks to background sub-agents with per-task model routing, async completion reports woven back into chat, plus a credit budget gate, a P/M confirmation chain and an M1 event log.'
+  zh: '一个 agent 预设（Hermit/小寄），把 DSH 变成常驻个人中枢：作用域隔离的管家人格、把多步任务派给后台子代理的 dispatch 工具（按任务类型路由模型）、完成后异步把汇报自然插回对话，另含 credit 预算闸、P/M 确认链与 M1 事件日志。'
