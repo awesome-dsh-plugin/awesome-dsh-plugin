@@ -1,4 +1,8 @@
 {
+ "https://github.com/lavapapa/dsh-composer-layout": [
+  "https://raw.githubusercontent.com/lavapapa/dsh-composer-layout/main/assets/screenshots/hero-en.png",
+  "https://raw.githubusercontent.com/lavapapa/dsh-composer-layout/main/assets/screenshots/hero-zh.png"
+ ],
  "https://github.com/Little-Star888/dsh-pelican": [
   "https://raw.githubusercontent.com/Little-Star888/dsh-pelican/main/assets/screenshot-1.png"
  ],
@@ -911,6 +915,9 @@
   "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/clickOpen.gif",
   "https://raw.githubusercontent.com/UndeadSheep/dsh-file-preview/main/assets/SearchBar.gif"
  ],
+ "https://github.com/Lzh3070/dsh-file-review-tab": [
+  "https://raw.githubusercontent.com/Lzh3070/dsh-file-review-tab/main/docs/screenshot.png"
+ ],
  "https://github.com/ayahunter/dsh-trail/tree/main/packages/bundle": [
   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshot.png",
   "https://raw.githubusercontent.com/ayahunter/dsh-trail/main/docs/screenshots/rounds-view.png",
@@ -1041,8 +1048,18 @@
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-dashboard.png",
   "https://raw.githubusercontent.com/lninghaha/dsh-hub-oauth-gateway/main/docs/images/usage-center-settings.png"
  ],
- "https://github.com/deepseek-dsh/dsh-workspace": [
+"https://github.com/deepseek-dsh/dsh-workspace": [
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-1.png",
   "https://raw.githubusercontent.com/deepseek-dsh/dsh-workspace/main/assets/Screenshot-2.png"
+ ],
+ "https://github.com/CheshireJCat/blender": [
+  "https://raw.githubusercontent.com/CheshireJCat/blender/main/assets/dsh-blender-lamp-preview.png"
+ ],
+ "https://github.com/Y1X1n/dsh-prompt-optimizer": [
+  "https://raw.githubusercontent.com/Y1X1n/dsh-prompt-optimizer/main/docs/screenshots/optimize-panel.png"
+ ],
+ "https://github.com/feng78-boop/dsh-thirteen-bg": [
+  "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-poster.jpg",
+  "https://raw.githubusercontent.com/feng78-boop/dsh-thirteen-bg/master/assets/demo-shot-2.jpg"
  ]
 }
