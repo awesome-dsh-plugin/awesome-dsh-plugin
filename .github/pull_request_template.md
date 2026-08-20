@@ -1,6 +1,6 @@
 <!-- Thanks for contributing! Quick checklist / 提交前快速自查 -->
 
-- [ ] I added **one file** at `data/plugins/<owner>__<repo>.yml` — the READMEs are generated, don't edit them by hand / 我新增了一个 `data/plugins/<owner>__<repo>.yml` 文件（两个 README 由脚本生成，不要手工编辑）
+- [ ] I added **one file** at `data/plugins/<owner>__<repo>.yml` — the READMEs are generated, don't edit them by hand / 我新增了一个 `data/plugins/<owner>__<repo>.yml` 文件（各语言 README 由脚本生成，不要手工编辑）
 - [ ] I ran `node scripts/generate-readme.mjs` and committed the regenerated READMEs / 我已执行 `node scripts/generate-readme.mjs` 并提交了重新生成的 README
 - [ ] My repo's `package.json` declares **`dsh.bundle`** (not just `dsh.client`) — [example](../blob/main/contributing.md) / 仓库 `package.json` 已声明 `dsh.bundle`（只有 `dsh.client` 无法安装）
 - [ ] My repo is at least **1 day old** with **10+ commits** / 仓库创建满 1 天且提交数 ≥ 10
