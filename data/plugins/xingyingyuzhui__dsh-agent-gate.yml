@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-agent-gate
+name: xingyingyuzhui/dsh-agent-gate
+category: security
+description:
+  en: Claw tool gate with one-shot approval and audit. Workspace sessions are not filtered by this plugin.
+  zh: Claw 工具闸，含一次性审批与审计。工作区会话不受本插件过滤。

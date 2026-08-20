@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-agent-registry
+name: xingyingyuzhui/dsh-agent-registry
+category: session
+description:
+  en: Registers named Claw agents, isolates them from the official workspace sidebar, and provides settings plus a global new-agent template.
+  zh: 登记具名 Claw Agent，与官方工作区侧栏隔离，并提供设置页和全局新建模板。
