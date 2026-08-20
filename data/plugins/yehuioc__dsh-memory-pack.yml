@@ -1,0 +1,6 @@
+url: https://github.com/yehuioc/dsh-memory-pack
+name: yehuioc/dsh-memory-pack
+category: memory
+description:
+  en: 'File-based layered memory skill pack: 11-layer directory model, Maps-first navigation, producer/review metadata contract, and contamination guard, with zero-dep scaffold/audit scripts.'
+  zh: 文件式分层记忆 skill pack：11 层目录模型、Maps-first 导航、producer/review 元数据契约、污染防护，附零依赖 scaffold/audit 脚本。
