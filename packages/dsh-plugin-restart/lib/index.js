@@ -1,7 +1,7 @@
 import { spawn } from "node:child_process";
 import { join } from "node:path";
 import { homedir } from "node:os";
-import { writeFileSync } from "node:fs";
+import { writeFileSync, mkdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { defineTool } from "@deepseek-ai/dsh-tools";
 
@@ -13,7 +13,7 @@ const DEFAULT_DELAY_MS = 3000;
 // the request. Even if a model passes delay_ms (e.g. 15000), it is ignored and
 // replaced with this constant.
 const FIXED_DELAY_MS = 3000;
-const SCRIPT = join(homedir(), "Agent YueJian", "dsh-plugin-local", "scripts", "dsh-restart.sh");
+const SCRIPT = join(homedir(), "Agent YueJian", "dsh-pocket", "scripts", "dsh-restart.sh");
 
 function scheduleDetachedRestart(delayMs = DEFAULT_DELAY_MS) {
   const dshHome = process.env.DSH_HOME || join(homedir(), ".dsh");
@@ -28,6 +28,7 @@ sleep "$(awk "BEGIN { print ${Math.max(0, Number(delayMs) || 0)} / 1000 }")"
 exec "${SCRIPT}"${modeArg} >> "${SCRIPT}.schedule.log" 2>&1
 `;
   const helperPath = join(dshHome, "dsh-restart-helper.sh");
+  mkdirSync(dshHome, { recursive: true });
   writeFileSync(helperPath, helper, { mode: 0o700 });
   // Launch the helper through setsid+nohup so it is reparented to init
   // immediately and survives the DSH process being killed. A plain
