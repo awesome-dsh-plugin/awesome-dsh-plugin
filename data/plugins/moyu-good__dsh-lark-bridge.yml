@@ -1,0 +1,6 @@
+url: https://github.com/moyu-good/dsh-lark-bridge
+name: moyu-good/dsh-lark-bridge
+category: remote
+description:
+  en: Feishu/Lark IM channel for DeepSeek Harness agents with native thinking-process messages, approval cards, live goal and todo cards, workflow fan-out lines, session text search, and background job and subagent settlement notices.
+  zh: 飞书/Lark 深度通道：原生思考过程消息、审批卡片、goal/todo 实时卡片、workflow 展开行、会话全文检索、后台任务与子代理结算通知。
