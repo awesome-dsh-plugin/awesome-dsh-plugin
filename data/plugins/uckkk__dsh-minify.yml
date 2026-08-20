@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-minify
+name: uckkk/dsh-minify
+category: tools
+description:
+  en: "Basic JS/CSS/HTML minification (comment removal and whitespace collapse)."
+  zh: "JS/CSS/HTML 代码压缩"
