@@ -1,0 +1,6 @@
+url: https://github.com/dataelement/dsh-plugin-coaligne
+name: dataelement/dsh-plugin-coaligne
+category: tools
+description:
+  en: Connects DSH to CoAligne shared team project context - synced files, Agent sessions, comments and teammate activity over MCP, with a bundled workflow skill.
+  zh: 将 DSH 接入 CoAligne 团队共享项目上下文，通过 MCP 访问同步文件、Agent 会话、评论与队友动态，并内置 workflow skill。
