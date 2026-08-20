@@ -1103,5 +1103,10 @@
   "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/dashboard-inbound.png",
   "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/server-inbound.png",
   "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/server-serve.png"
+ ],
+ "https://github.com/EdwinDigital/dsh-web-search-microsoft-webiq": [
+  "https://raw.githubusercontent.com/EdwinDigital/dsh-web-search-microsoft-webiq/main/docs/images/screenshot-1-settings.png",
+  "https://raw.githubusercontent.com/EdwinDigital/dsh-web-search-microsoft-webiq/main/docs/images/screenshot-2-web-search.png",
+  "https://raw.githubusercontent.com/EdwinDigital/dsh-web-search-microsoft-webiq/main/docs/images/screenshot-3-trace.png"
  ]
 }
