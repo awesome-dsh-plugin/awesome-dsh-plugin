@@ -85,6 +85,7 @@ pnpm test
 
 ---
 
-## 📄 License
+## 📄 License & Credits
 
-[MIT License](./LICENSE) © 2026 moon16u
+* [MIT License](./LICENSE) © 2026 moon16u
+* Logo icon: [Toolbox icon](https://icons8.com/icon/41P574Kp7REI/toolbox) by [Icons8](https://icons8.com).

@@ -85,6 +85,7 @@ pnpm test
 
 ---
 
-## 📄 许可证
+## 📄 开源协议与致谢
 
-[MIT License](./LICENSE) © 2026 moon16u
+* [MIT License](./LICENSE) © 2026 moon16u
+* Logo 图标来源于 [Icons8](https://icons8.com) 的 [Toolbox 图标](https://icons8.com/icon/41P574Kp7REI/toolbox)。
