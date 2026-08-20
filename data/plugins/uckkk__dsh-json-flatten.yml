@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-flatten
+name: uckkk/dsh-json-flatten
+category: tools
+description:
+  en: "Flattens nested JSON to dot keys and back."
+  zh: "JSON 扁平化"
