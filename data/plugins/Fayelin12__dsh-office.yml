@@ -2,5 +2,5 @@ url: https://github.com/Fayelin12/dsh-office
 name: Fayelin12/dsh-office
 category: ui
 description:
-  en: 'Office workspace & session dashboard: a floating 6-column sprite panel visualizing workspaces, sessions, token usage and subagents.'
-  zh: 办公室工作区/会话仪表盘：悬浮 6 列精灵面板，可视化工作区、会话、token 用量与子代理。
+  en: 'Office workspace & session dashboard: a floating 6-column sprite panel visualizing workspaces, sessions, token usage and subagents, plus Agent Mail and an office log tab. Feishu/Lark views (message feed, meeting schedules, transcripts) additionally require the `@larksuite/cli` tool installed and authenticated separately.'
+  zh: 办公室工作区/会话仪表盘：悬浮 6 列精灵面板，可视化工作区、会话、token 用量与子代理，并提供 Agent Mail 与办公日志页签。飞书相关视图（消息流、会议日程、妙记逐字稿）另需自行安装并授权 `@larksuite/cli`。
