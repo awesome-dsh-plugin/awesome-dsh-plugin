@@ -198,6 +198,29 @@ jobs:
               return
             }
 
+            // Over the per-PR entry cap. Reported before the "checked nothing"
+            // branch below, because the checker deliberately stops before
+            // probing anything in this case — checked === 0 here means the cap
+            // was hit, not that the gate malfunctioned.
+            if (result.tooMany) {
+              const { count, limit } = result.tooMany
+              await post('failure', `${count} entries in one pull request (limit ${limit})`,
+                [
+                  `This pull request adds **${count}** entries. The limit is **${limit}**.`,
+                  '',
+                  "Reviewing a submission means reading the plugin's source and checking every claim",
+                  'in its description against it. That work is per-entry and does not get cheaper in',
+                  'bulk, so a batch this size would either sit unreviewed or get waved through — and',
+                  'waving it through is how a curated list turns into a directory.',
+                  '',
+                  `Please split this into separate pull requests, at most **${limit}** entries each.`,
+                  'If they are all yours, pick as well as split: send the ones you would keep if you',
+                  'could only keep a few, rather than everything that works.',
+                ].join('\n'))
+              core.setFailed(`${count} entries in one PR (limit ${limit})`)
+              return
+            }
+
             // The extract step said this PR adds entries, so the checker must
             // have examined some. If it examined none, the two disagree and we
             // do not know whether the submission is sound — say that instead of

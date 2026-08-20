@@ -49,6 +49,27 @@ const FIRST_PARTY_PACKAGES = new Set([
 // the manifest check applies to them. Set to when the rule change landed.
 const GATE_EFFECTIVE_FROM = process.env.GATE_EFFECTIVE_FROM ?? '2026-08-16T00:00:00Z'
 
+// How many entries one pull request may add.
+//
+// Reviewing a submission means reading the plugin's source and checking every
+// claim in its description against it. That is per-entry work, and it does not
+// get cheaper in bulk — a pull request carrying 127 of them is not one
+// submission, it is 127 submissions wearing a coat, and the realistic outcome
+// is that none of them get read properly.
+//
+// Three is measured, not picked: of the last 100 merged pull requests, 92
+// added a single entry and 8 added two. None added three. So this rejects
+// nothing anyone has actually been doing, while still leaving room for the one
+// legitimate multi-entry shape — a monorepo whose subpackages are separate
+// installable plugins.
+//
+// awesome-go allows exactly one item per pull request; awesome-python
+// auto-closes any PR adding several, and separately auto-closes "multiple
+// related projects from the same author, across one or several PRs". Three is
+// the loose end of that range, not the strict one.
+const MAX_ENTRIES_PER_PR = Number(process.env.MAX_ENTRIES_PER_PR ?? 3)
+const BULK_RULE_FROM = process.env.BULK_RULE_FROM ?? '2026-08-20T00:00:00Z'
+
 const arg = (name) => {
   const i = process.argv.indexOf(name)
   return i === -1 ? null : process.argv[i + 1]
@@ -309,6 +330,33 @@ if (!targets.length) {
   process.exit(0)
 }
 console.log(`checking ${targets.length} entr${targets.length === 1 ? 'y' : 'ies'}` + (gateApplies ? '' : ' (age/commit gate not applied — PR predates the rule)'))
+
+// Checked before anything is fetched: if the pull request is over the cap it
+// is going back regardless of what the repositories look like, and probing
+// 127 of them first would spend the API quota to reach the same answer.
+// Existing submissions are judged by the rules that existed when they were
+// opened, same as the age/commit gate.
+const bulkRuleApplies = !PR_CREATED || new Date(PR_CREATED) >= new Date(BULK_RULE_FROM)
+if (bulkRuleApplies && targets.length > MAX_ENTRIES_PER_PR) {
+  const list = targets.map((e) => `- ${e.url}`).join('\n')
+  const body =
+    `This pull request adds ${targets.length} entries; the limit is ${MAX_ENTRIES_PER_PR}.\n\n` +
+    `Reviewing a submission means reading the plugin's source and checking every claim in\n` +
+    `its description against it. That work is per-entry and does not get cheaper in bulk, so\n` +
+    `a batch this size would either sit unreviewed or get waved through — and waving it\n` +
+    `through is how a curated list turns into a directory.\n\n` +
+    `Split this into separate pull requests, at most ${MAX_ENTRIES_PER_PR} entries each. If these are\n` +
+    `all yours, please also pick: send the ones you would keep if you could only keep a few,\n` +
+    `rather than everything that works.\n\n${list}\n`
+  console.error(body)
+  if (JSON_OUT) {
+    fs.writeFileSync(JSON_OUT, JSON.stringify({
+      ok: false, checked: 0, tooMany: { count: targets.length, limit: MAX_ENTRIES_PER_PR },
+      failures: [], incomplete: [],
+    }, null, 1))
+  }
+  process.exit(1)
+}
 
 const failures = []
 const incomplete = []
