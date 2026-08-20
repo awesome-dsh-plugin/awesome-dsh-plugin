@@ -1,0 +1,6 @@
+url: https://github.com/xiaomengxinbb/dsh-qq-bridge
+name: xiaomengxinbb/dsh-qq-bridge
+category: remote
+description:
+  en: Bidirectional QQ bot bridge for DeepSeek Harness. Each QQ conversation (C2C and group mentions) gets its own isolated, persistent agent session; includes /help /status /model commands, first-visit approval flow, attachment pipeline (image / voice / TXT / PDF) and the qq_send_local_file outbound tool.
+  zh: 将 QQ（私聊与群聊 @）接入 DeepSeek Harness 的双向桥插件，每个 QQ 对话对应一个隔离、持久的 Agent 会话，支持命令体系、首访审批、附件入站（图片/语音/TXT/PDF）与本地文件出站发送。
