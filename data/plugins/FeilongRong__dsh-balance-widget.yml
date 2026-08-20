@@ -1,0 +1,6 @@
+url: https://github.com/FeilongRong/dsh-balance-widget
+name: FeilongRong/dsh-balance-widget
+category: usage
+description:
+  en: Sidebar "余额" button with a live DeepSeek account balance panel and console links for MiniMax, Qwen and SCNet; API key stays in local browser storage.
+  zh: 侧边栏「余额」按钮：实时查询 DeepSeek 账户余额，并提供 MiniMax / 百炼 / SCNet 控制台链接；API Key 仅保存在浏览器本地。
