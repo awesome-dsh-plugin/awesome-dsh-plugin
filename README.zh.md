@@ -621,6 +621,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) — 把会话与工作区置顶到 Web 侧边栏顶部：行级图钉与换色、会话头开关、已置顶面板；0.4.0 再加导航组织器——Pin 分组（boards）、标签与保存视图、会话健康摘要与 /goto。
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) — 在 Web 侧边栏把会话移动到别的文件夹（拖拽或菜单选择），带风险确认地永久删除会话，以及 AI 重命名会话（总结整个对话并自动纠正错别字）；每个操作都提供 agent 工具。
+- [Relethe/dsh-brief-session-title](https://github.com/Relethe/dsh-brief-session-title) — 把 DSH 会话标题从一句话精简为不含动词的短语，目标五个词以内。
 - [Renzic-Stone/DSH-EasyRewrite](https://github.com/Renzic-Stone/DSH-EasyRewrite) — 在 dsh web 中内联编辑与撤回自己的消息——惰性、无痕，带版本翻页器与会话级草稿持久化。
 - [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
 - [Semidia/dsh-session-manager](https://github.com/Semidia/dsh-session-manager) — 会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。

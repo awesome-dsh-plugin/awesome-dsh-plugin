@@ -1,0 +1,6 @@
+url: https://github.com/Relethe/dsh-brief-session-title
+name: Relethe/dsh-brief-session-title
+category: session
+description:
+  en: Condenses DSH session titles from a full sentence into a short verb-free phrase, aiming for under five words.
+  zh: 把 DSH 会话标题从一句话精简为不含动词的短语，目标五个词以内。
