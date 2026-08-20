@@ -24,7 +24,7 @@ GLM 就显示 GLM。
 ## 安装
 
 ```sh
-dsh plugin --profile web add dsh-quota-capsule
+dsh plugin --profile web add @heiweilu/dsh-quota-capsule
 ```
 
 开发模式（本地仓库）：

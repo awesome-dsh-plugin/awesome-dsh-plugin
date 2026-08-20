@@ -2,4 +2,4 @@
 # roster. Dev install: `dsh plugin --profile web add link:<this-repo>`.
 - insert:
     - id: quota-capsule
-      name: 'dsh-quota-capsule'
+      name: '@heiweilu/dsh-quota-capsule'

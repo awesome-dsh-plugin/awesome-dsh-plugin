@@ -25,7 +25,7 @@ selection); switch models and the capsule switches with it.
 ## Install
 
 ```sh
-dsh plugin --profile web add dsh-quota-capsule
+dsh plugin --profile web add @heiweilu/dsh-quota-capsule
 ```
 
 Dev (from a local clone):
