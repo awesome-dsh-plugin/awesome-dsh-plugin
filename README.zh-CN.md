@@ -1,8 +1,13 @@
-# 👝 dsh-pouch
+<p align="center">
+  <img src="./assets/logo.png" width="96" height="96" alt="dsh-pouch logo" />
+</p>
+
+# dsh-pouch
 
 [English](./README.md) | **中文**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/v/@moon16u/dsh-pouch.svg?color=cb3837)](https://www.npmjs.com/package/@moon16u/dsh-pouch)
 [![DeepSeek Harness](https://img.shields.io/badge/DSH-0.1.0--rc-purple.svg)](https://github.com/deepseek-ai/deepseek-harness)
 [![pnpm workspace](https://img.shields.io/badge/pnpm-workspace-orange.svg)](https://pnpm.io/workspaces)
 
