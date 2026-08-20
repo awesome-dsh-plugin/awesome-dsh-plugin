@@ -1,4 +1,4 @@
-# 🎒 dsh-pocket
+# 👝 dsh-pocket
 
 **English** | [中文](./README.zh-CN.md)
 
