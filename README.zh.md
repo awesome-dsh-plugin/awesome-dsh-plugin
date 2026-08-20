@@ -1091,7 +1091,7 @@ dsh plugin --profile web add dshmarket
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) — 对话完成提醒：Agent 空闲（idle）时播放提示音并弹 Windows 原生通知，可配 ding.mp3、音量与防抖节流。
 - [february2015/dsh-dingo](https://github.com/february2015/dsh-dingo) — 多对话并行的声音提醒 + 对话直达：当前对话当/当当（crisp 清脆档），其他对话叮/叮叮（soft 柔和档）+ 右上角小卡片，点一下直达对应对话。
 - [FuzzySoul/dsh-chatvoice](https://github.com/FuzzySoul/dsh-chatvoice) — Web UI 免费语音闭环：浏览器语音识别输入（实时中间结果上屏）+ 助手回复朗读与自动朗读，零配置、免 API key。
-- [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI 全双工语音对话：输入框麦克风（RMS 端点检测）配合浏览器本地 whisper 转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
+- [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI 全双工语音对话：点按切换或按住说话（发送键或 `Ctrl`）并显示实时字幕，宿主端 SenseVoice（sherpa-onnx）转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
