@@ -1,0 +1,6 @@
+url: https://github.com/Xiaofei-fei/dsh-prompt-history
+name: Xiaofei-fei/dsh-prompt-history
+category: ui
+description:
+  en: 'Bash-like prompt history for the DSH web composer: Up/Down arrows recall previously submitted messages, sourced from the session''s own message log (zero config, zero extra storage).'
+  zh: '为 DSH Web 输入框提供类 Linux shell 的提示词历史：按 ↑/↓ 召回之前发送过的消息，历史直接取自会话自身的消息记录（零配置、零额外存储）。'
