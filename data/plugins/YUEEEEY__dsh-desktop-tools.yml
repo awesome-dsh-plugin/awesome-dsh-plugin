@@ -1,0 +1,6 @@
+url: https://github.com/YUEEEEY/dsh-desktop-tools
+name: YUEEEEY/dsh-desktop-tools
+category: tools
+description:
+  en: 'dsh environment management: auto-installs a Rust/Tauri desktop host (downloaded per-OS from dsh-desktop-host releases, source build as fallback), one-click runtime updates, Windows platform compatibility, official DeepSeek billing, and a built-in code editor for the workspace.'
+  zh: 'dsh 环境管理插件：自动获取 Rust/Tauri 桌面宿主（按系统从 dsh-desktop-host 下载，无 Release 时源码构建），运行时一键更新、Windows 平台兼容自动适配、DeepSeek 官方计费，并内置工作区代码编辑器。'
