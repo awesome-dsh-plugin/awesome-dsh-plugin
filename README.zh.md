@@ -666,6 +666,7 @@ dsh plugin --profile web add dshmarket
 - [AndyYang12345/dsh-butler-memory](https://github.com/AndyYang12345/dsh-butler-memory) — PostgreSQL 持久个人记忆：MCP 记忆工具 + 可查看记忆与候选的 Web 面板。
 - [aqsk-BLG/dsh-memory](https://github.com/aqsk-BLG/dsh-memory) — DeepSeek Harness 分层文件记忆，提供工作区隔离的 USER/MEMORY 笔记、后台沉淀与混合会话召回。
 - [baaai123/dsh-memory-protocol](https://github.com/baaai123/dsh-memory-protocol) — 记忆强制协议插件：桥接 opencode-memory MCP 服务器，工具调用前强制 memory_weave、每轮自动存档、自动注入记忆上下文。
+- [Breeze136/dsh-kb-rag](https://github.com/Breeze136/dsh-kb-rag) — 本地文献知识库 RAG：8 个工具（PDF/文件夹/Zotero 入库、BM25+向量+重排混合检索、DOI 可点击溯源问答、范围/严格模式、去重/清空/统计），全本地 bge 嵌入 + 单文件 SQLite，实测 242 篇 86 秒入库、2 万块亚秒热查询。
 - [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) — 知识库驱动的 Agent 预设：wiki 长期记忆、网页知识库、管理页、可选界面润色。
 - [Co-Engram/Co-Engram#dsh-plugin](https://github.com/Co-Engram/Co-Engram/tree/main/packages/dsh-plugin) — 自进化团队记忆，以纯 Markdown 存于 Git：原生 Cordis 插件注册 38 个裸名记忆工具，并按每次组装动态注入 prompt-signals 段；含 RPE 强化、衰减与睡眠巩固；与 Claude Code（MCP）、OpenClaw 宿主共享同一数据仓；已对 DSH 0.1.0-rc.6 实测。
 - [DamonKoy/dsh-plugins#dsh-memories](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-memories) — 项目作用域持久化键值记忆：set/get/list/delete/search 模型工具，JSON 文件存储。
