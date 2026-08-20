@@ -29,11 +29,23 @@ if (!TOKEN) {
 }
 const HEADERS = { accept: 'application/vnd.github+json', authorization: `Bearer ${TOKEN}`, 'user-agent': 'awesome-dsh-plugin-decay-scan' }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+
+// A full pass is several thousand calls, which trips GitHub's *secondary* rate
+// limit — a 403 that arrives while `rate_limit` still reports the core quota
+// untouched, so there is nothing to check before firing. Left unhandled it
+// degrades the whole scan: every 403 became an unchecked entry that the report
+// then presented as healthy. Back off and retry before giving up on an entry.
 async function api(pathname, opts = {}) {
-  const r = await fetch(`https://api.github.com/${pathname}`, { headers: HEADERS, signal: AbortSignal.timeout(20000), ...opts })
-  if (r.status === 404) return { status: 404 }
-  if (!r.ok) return { status: r.status }
-  return { status: 200, body: await r.json().catch(() => null) }
+  for (let attempt = 0; ; attempt++) {
+    const r = await fetch(`https://api.github.com/${pathname}`, { headers: HEADERS, signal: AbortSignal.timeout(20000), ...opts })
+    if (r.status === 404) return { status: 404 }
+    if (r.ok) return { status: 200, body: await r.json().catch(() => null) }
+    const retryable = r.status === 403 || r.status === 429 || r.status >= 500
+    if (!retryable || attempt >= 3) return { status: r.status }
+    const after = Number(r.headers.get('retry-after'))
+    await sleep(Number.isFinite(after) && after > 0 ? after * 1000 : 2000 * 2 ** attempt)
+  }
 }
 
 function decompose(url) {
@@ -44,7 +56,13 @@ function decompose(url) {
   }
 }
 
-const b64 = (s) => Buffer.from(s, 'base64').toString('utf8')
+// The BOM has to go before anything tries to JSON.parse the result. A
+// package.json saved by a Windows editor starts U+FEFF, `JSON.parse` throws on
+// it, and every caller here reads that throw as "no dsh.bundle" — so three
+// perfectly healthy entries (dsh-mcpguard, dsh-koboldcpp-hands,
+// dsh-web-launcher) were reported as having had their manifest removed. npm
+// itself tolerates the BOM, so nothing was actually broken but this scan.
+const b64 = (s) => Buffer.from(s, 'base64').toString('utf8').replace(/^﻿/, '')
 
 /** true / false / null (inconclusive — never flag on null) */
 async function hasBundle(repo, sub) {
@@ -55,7 +73,10 @@ async function hasBundle(repo, sub) {
     try {
       return Boolean(JSON.parse(b64(f.body.content)).dsh?.bundle)
     } catch {
-      return false
+      // A manifest that won't parse is a broken repository, not a manifest
+      // whose `dsh.bundle` was removed. This flag ends in a removal proposal,
+      // so it has to carry evidence of the thing it claims.
+      return null
     }
   }
   const tree = await api(`repos/${repo}/git/trees/HEAD?recursive=1`)
@@ -68,22 +89,33 @@ async function hasBundle(repo, sub) {
   const found = (tree.body?.tree ?? []).filter((t) => t.path?.endsWith('package.json')).map((t) => t.path)
   if (!found.length) return false
   const pkgs = found.slice(0, MAX_TREE_PKGS)
+  // A manifest we could not read is not a manifest without a bundle. Rate
+  // limiting, a transient 5xx or unparseable JSON each used to `continue` and
+  // then fall through to `return false` — so a scan that failed to look was
+  // indistinguishable from a scan that looked and found nothing, and the
+  // difference is a proposal to delist someone. Count them and bail out.
+  let unreadable = 0
   for (const p of pkgs) {
     const f = await api(`repos/${repo}/contents/${p}`)
-    if (f.status !== 200 || !f.body?.content) continue
+    if (f.status !== 200 || !f.body?.content) { unreadable++; continue }
     try {
       if (JSON.parse(b64(f.body.content)).dsh?.bundle) return true
-    } catch {}
+    } catch { unreadable++ }
   }
-  if (found.length > pkgs.length) return null
+  if (found.length > pkgs.length || unreadable) return null
   return false
 }
+
+// Returned when the scan could not reach a verdict. Distinct from `null`,
+// which means "checked, and healthy". Conflating the two is how a scan that
+// was rate-limited on 1,000 entries still printed "0 inconclusive".
+const INCONCLUSIVE = { kind: 'inconclusive' }
 
 async function scan(entry) {
   const { repo, sub } = decompose(entry.url)
   const meta = await api(`repos/${repo}`)
   if (meta.status === 404) return { kind: 'gone', detail: 'repository returns 404' }
-  if (meta.status !== 200) return null // inconclusive
+  if (meta.status !== 200) return INCONCLUSIVE
   if (meta.body.archived) return { kind: 'archived', detail: `archived, last push ${meta.body.pushed_at?.slice(0, 10)}` }
 
   const pushed = new Date(meta.body.pushed_at)
@@ -93,6 +125,7 @@ async function scan(entry) {
   }
 
   const bundled = await hasBundle(repo, sub)
+  if (bundled === null) return INCONCLUSIVE
   if (bundled === false) return { kind: 'unbundled', detail: 'dsh.bundle no longer found in any package.json' }
   return null
 }
@@ -108,12 +141,14 @@ for (let i = 0; i < entries.length; i += CONCURRENCY) {
       try {
         return [e, await scan(e)]
       } catch (err) {
-        inconclusive++
-        return [e, null]
+        return [e, INCONCLUSIVE]
       }
     }),
   )
-  for (const [e, f] of results) if (f) findings.push({ ...f, url: e.url, file: e.file })
+  for (const [e, f] of results) {
+    if (f === INCONCLUSIVE) { inconclusive++; continue }
+    if (f) findings.push({ ...f, url: e.url, file: e.file })
+  }
   if ((i + CONCURRENCY) % 200 < CONCURRENCY) console.log(`  ${Math.min(i + CONCURRENCY, entries.length)}/${entries.length}`)
 }
 
@@ -129,6 +164,20 @@ for (const [kind, label] of KINDS) {
   if (!rows.length) continue
   console.log(`\n## ${label} (${rows.length})`)
   for (const f of rows) console.log(`- ${f.url} — ${f.detail}`)
+}
+
+// A scan that could not look at a meaningful share of the list has not
+// produced a decay report; it has produced a shorter one. Publishing it as
+// though it were complete is the failure this whole file is supposed to avoid,
+// since the reader's next action is deleting entries. Say so and stop.
+const INCONCLUSIVE_LIMIT = Math.ceil(entries.length * 0.05)
+if (inconclusive > INCONCLUSIVE_LIMIT) {
+  console.error(
+    `\nERROR: ${inconclusive} of ${entries.length} entries could not be checked ` +
+      `(limit ${INCONCLUSIVE_LIMIT}). The findings above are incomplete — not publishing. ` +
+      `This is usually GitHub's secondary rate limit; re-run in a few minutes.`,
+  )
+  process.exit(1)
 }
 
 if (DRY) process.exit(0)

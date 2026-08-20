@@ -127,7 +127,12 @@ function decompose(url) {
   }
 }
 
-const b64 = (s) => Buffer.from(s, 'base64').toString('utf8')
+// Strip a leading BOM before any caller parses this. A package.json written by
+// a Windows editor begins U+FEFF; `JSON.parse` throws on it, `parsePkg` returns
+// null, and the gate then tells a contributor their manifest has no
+// `dsh.bundle` when it plainly does. npm installs such a package fine, so the
+// rejection would have been ours alone.
+const b64 = (s) => Buffer.from(s, 'base64').toString('utf8').replace(/^﻿/, '')
 
 /** Parse a base64 package.json; null when it isn't valid JSON. */
 function parsePkg(content) {
