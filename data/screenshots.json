@@ -1065,5 +1065,10 @@
  "https://github.com/wsz987/dsh-channels/tree/main/packages/channels": [
   "https://raw.githubusercontent.com/wsz987/dsh-channels/main/docs/ScreenShot/dsh-channels-setting.png",
   "https://raw.githubusercontent.com/wsz987/dsh-channels/main/docs/ScreenShot/telegram.png"
+ ],
+ "https://github.com/liustack/modsearch": [
+  "https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-dsh-settings-card.jpg",
+  "https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-search.png",
+  "https://raw.githubusercontent.com/liustack/modsearch/main/assets/demo-codex-fetch.png"
  ]
 }
