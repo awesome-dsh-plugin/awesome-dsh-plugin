@@ -2,5 +2,5 @@ url: https://github.com/YUEEEEY/dsh-desktop-tools
 name: YUEEEEY/dsh-desktop-tools
 category: tools
 description:
-  en: 'Desktop window host and environment management for dsh: auto-opens a desktop window (embedded Rust/Tauri host, Windows/macOS/Linux), manages runtime updates, applies Windows patches, and provides environment panel and billing pages.'
-  zh: 'dsh 桌面端与环境管理插件：自动打开桌面窗口（内嵌 Rust/Tauri 宿主，支持 Windows/macOS/Linux）、运行时更新管理、Windows 补丁、环境面板与计费页。'
+  en: 'Environment management for dsh: auto-opens a desktop window via a Rust/Tauri host built per-OS from the separate dsh-desktop-host repo, manages runtime updates, applies Windows patches, and provides environment panel and billing pages.'
+  zh: 'dsh 环境管理插件：通过独立 dsh-desktop-host 仓库按系统构建的 Rust/Tauri 宿主自动打开桌面窗口，管理运行时更新、应用 Windows 补丁，并提供环境面板与计费页。'
