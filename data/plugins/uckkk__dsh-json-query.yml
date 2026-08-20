@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-json-query
+name: uckkk/dsh-json-query
+category: tools
+description:
+  en: "Gets/sets values in JSON by path (dot/bracket access, wildcards)."
+  zh: "JSON 路径查询/设置"
