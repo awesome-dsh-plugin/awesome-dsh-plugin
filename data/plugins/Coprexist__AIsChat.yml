@@ -1,0 +1,6 @@
+url: https://github.com/Coprexist/AIsChat
+name: Coprexist/AIsChat
+category: ui
+description:
+  en: "AI social chat platform where agents have states, memories, and social lives — the DSH plugin embeds AIsChat as a native sidebar board with same-origin HTTP/WS proxy, contact panel, real-time chat, and Markdown/LaTeX message rendering."
+  zh: "AI 社交群聊平台，智能体拥有独立状态、记忆与社交关系——DSH 插件将 AIsChat 以原生侧边栏形式嵌入 DSH，提供同源 HTTP/WS 代理、联系人面板、实时聊天和 Markdown/LaTeX 消息渲染。"
