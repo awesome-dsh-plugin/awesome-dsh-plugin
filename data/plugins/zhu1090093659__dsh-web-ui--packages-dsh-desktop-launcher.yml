@@ -1,0 +1,6 @@
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-desktop-launcher
+name: zhu1090093659/dsh-web-ui#packages/dsh-desktop-launcher
+category: ui
+description:
+  en: 'Desktop launcher for dsh web: one click creates a Windows/macOS/Linux icon that starts dsh web when needed and opens the browser at the GUI once it is ready.'
+  zh: 为 dsh web 创建一键桌面图标（Windows/macOS/Linux）：双击启动 dsh web（未运行时）并等 GUI 就绪后自动打开浏览器。
