@@ -681,6 +681,7 @@ dsh plugin --profile web add dshmarket
 - [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) — 在 Web 侧边栏把会话移动到别的文件夹（拖拽或菜单选择），带风险确认地永久删除会话，以及 AI 重命名会话（总结整个对话并自动纠正错别字）；每个操作都提供 agent 工具。
 - [Relethe/dsh-brief-session-title](https://github.com/Relethe/dsh-brief-session-title) — 把 DSH 会话标题从一句话精简为不含动词的短语，目标五个词以内。
 - [Renzic-Stone/DSH-EasyRewrite](https://github.com/Renzic-Stone/DSH-EasyRewrite) — 在 dsh web 中内联编辑与撤回自己的消息——惰性、无痕，带版本翻页器与会话级草稿持久化。
+- [Ricketts-Guo/dsh-off-peak-message#dsh-offpeak-send](https://github.com/Ricketts-Guo/dsh-off-peak-message/tree/main/dsh-offpeak-send) — 谷时发送调度器：开启谷时模式后输入框消息排队至 DeepSeek 谷时窗口（半价）自动注入会话并得到回复。原生外观输入条、快捷键（Enter 入队 / ⌘+Enter 立即发送 / Esc 退出）、按会话记忆的开关，重启不丢。
 - [RyensX/dsh-message-fold](https://github.com/RyensX/dsh-message-fold) — 为 DeepSeek Harness 提供 Codex 风格的会话消息折叠。
 - [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
 - [Semidia/dsh-session-manager](https://github.com/Semidia/dsh-session-manager) — 会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。
