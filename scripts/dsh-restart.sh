@@ -138,7 +138,10 @@ PIDS=""
 if [[ "$MODE" == "dev" ]]; then
   PIDS=$(pgrep -f 'dsh web --port 18888' || true)
 else
-  PIDS=$(pgrep -f 'dsh --profile web' || true)
+  # Match both launch spellings: `dsh --profile web` (this script) and plain
+  # `dsh web` with DSH_HOME picking the profile; [n]ode keeps the pattern
+  # from matching this script's own command line.
+  PIDS=$(pgrep -f '[n]ode .*/dsh( --profile web| web)( |$)' || true)
 fi
 
 if [[ -n "$PIDS" ]]; then
@@ -188,15 +191,18 @@ echo "launched pid: $NEW_PID"
 echo "$NEW_PID" > "$PROFILE_HOME/dsh-restart.pid"
 
 # Wait until the web server responds.
+# Check NEW_PID liveness FIRST: if it died during startup (e.g. the port is
+# still held by an old process we failed to kill), the port probe below would
+# pass against that stale process and report a false "DSH is up".
 for _ in $(seq 1 60); do
-  if curl -fsS -o /dev/null "http://127.0.0.1:$PORT/" 2>/dev/null; then
-    echo "DSH is up at http://127.0.0.1:$PORT/"
-    exit 0
-  fi
   if ! kill -0 "$NEW_PID" 2>/dev/null; then
     echo "error: DSH exited during startup, see $PROFILE_HOME/dsh-web.out.log" >&2
     tail -50 "$PROFILE_HOME/dsh-web.out.log" >&2 || true
     exit 1
+  fi
+  if curl -fsS -o /dev/null "http://127.0.0.1:$PORT/" 2>/dev/null; then
+    echo "DSH is up at http://127.0.0.1:$PORT/"
+    exit 0
   fi
   sleep 0.5
 done
