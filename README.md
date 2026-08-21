@@ -296,6 +296,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [vlln/dsh-task-status](https://github.com/vlln/dsh-task-status) - Background task status bar: progress plus live output tail on the chat page.
 - [vvvspec/better-reasoning-slider](https://github.com/vvvspec/better-reasoning-slider) - Official-style composer model trigger with a floating reasoning-effort slider popup.
 - [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) - Font engine for the Web GUI: system font enumeration, global and per-component font-size tuning with a Spy++-style picker, settings page.
+- [Waverly-W/dsh-scratchpad](https://github.com/Waverly-W/dsh-scratchpad) - Quick temporary conversation and workspace manager for DeepSeek Harness Web GUI.
 - [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) - Yellow one-line notice for a prompt cache miss after the cache was rebuilt; shows re-billed uncached input tokens, cached hit tokens, and TTFT.
 - [weien666/dsh-conversation-density-map](https://github.com/weien666/dsh-conversation-density-map) - Adds a non-uniform conversation density map(chat history markers) to the right of the DSH chat area: one tick per turn, with tick length and spacing reflecting message size, clickable to jump to a turn and expanding on hover when crowded.
 - [weshopai/weshop-dsh-plugin](https://github.com/weshopai/weshop-dsh-plugin) - Infinite-canvas e-commerce visual workspace for product photography, virtual try-on, background edits, and video, synced live with the Harness conversation.
