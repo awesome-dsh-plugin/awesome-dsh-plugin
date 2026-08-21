@@ -1117,5 +1117,9 @@
   "https://raw.githubusercontent.com/EdwinDigital/dsh-web-search-microsoft-webiq/main/docs/images/screenshot-1-settings.png",
   "https://raw.githubusercontent.com/EdwinDigital/dsh-web-search-microsoft-webiq/main/docs/images/screenshot-2-web-search.png",
   "https://raw.githubusercontent.com/EdwinDigital/dsh-web-search-microsoft-webiq/main/docs/images/screenshot-3-trace.png"
+ ],
+ "https://github.com/SmileBuild/dsh-planchart": [
+  "https://raw.githubusercontent.com/SmileBuild/dsh-planchart/main/assets/screenshot-1.png",
+  "https://raw.githubusercontent.com/SmileBuild/dsh-planchart/main/assets/screenshot-2.png"
  ]
 }
