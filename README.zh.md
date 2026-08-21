@@ -1627,6 +1627,7 @@ dsh plugin --profile web add dshmarket
 - [vibeinging/dsh-trace](https://github.com/vibeinging/dsh-trace) — 遥测后端：把 turns、model steps、tool calls 导出到 yiTrace。
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) — 自进化：agent 在会话内给自己热挂载/卸载持久化插件。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-gzip](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-gzip) — /api 响应 gzip 压缩，解决远程/低带宽访问时历史加载超时；SSE 与已编码响应自动豁免。
+- [WODE25500/dsh-az](https://github.com/WODE25500/dsh-az) — Azure 资源管理：查询/展示资源、部署 Bicep/ARM 模板、查看活动日志。
 - [WODE25500/dsh-codex](https://github.com/WODE25500/dsh-codex) — OpenAI Codex CLI 封装：一次性任务、仓库审查与会话续接，默认只读沙箱。
 - [WODE25500/dsh-winget](https://github.com/WODE25500/dsh-winget) — Windows 包管理器：搜索、安装、升级、卸载、导入导出与版本固定。
 - [worksAssistant/dsh-quickref](https://github.com/worksAssistant/dsh-quickref) — 开发者速查工具箱：12 个主题 195 条速查 + 6 个零依赖工具（正则实时测试、JSON 格式化、时间戳转换、Base64/URL 编解码、Cron 生成、行 diff），设置页可搜索查阅。
