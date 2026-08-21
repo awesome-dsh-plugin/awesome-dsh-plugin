@@ -129,6 +129,16 @@ h1 em{font-style:normal;color:var(--cinnabar)}
   border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap}
 .market .go:hover{background:var(--cinnabar-deep)}
 
+/* ── sponsor slot ── */
+/* Height is reserved up front so a late-arriving ad never shifts the list.
+   The frame only paints once the slot is filled — unfilled requests (most
+   non-EU/NA traffic) leave plain whitespace instead of an empty box. */
+.adband{padding-block:1.4rem 0}
+.adslot{min-height:104px;display:flex;align-items:center;
+  padding:.9rem 1.1rem;border:1px solid transparent;border-radius:12px}
+.adslot:not(:empty){background:var(--card);border-color:var(--line)}
+@media (max-width:640px){.adslot{min-height:172px}}
+
 /* ── chips ── */
 .filters-band{padding-block:1.5rem 0}
 .filters{display:flex;flex-wrap:wrap;gap:.45rem}
@@ -220,6 +230,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
   .market .go{margin-left:0}
 }
 </style>
+__AD_HEAD__
 </head>
 <body>
 <a class="skip" href="#dex">__T_SKIP__</a>
@@ -264,6 +275,7 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
   </div>
 </header>
 
+__AD_SLOT__
 <div class="filters-band"><div class="wrap">
   <div class="filters" id="filters">
   </div><!--/filters-->
@@ -403,5 +415,6 @@ for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active',
 applyFilter();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+__AD_SCRIPT__
 </body>
 </html>
