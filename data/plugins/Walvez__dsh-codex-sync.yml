@@ -2,5 +2,5 @@ url: https://github.com/Walvez/dsh-codex-sync
 name: Walvez/dsh-codex-sync
 category: tools
 description:
-  en: 'Bidirectional Codex ⇄ DSH sync: Skills, session import, MCP auto-mirror, reverse MCP installer.'
-  zh: Codex ⇄ DSH 双向同步：Skills、会话导入、MCP 镜像、反向 MCP 安装。
+  en: 'One-tap Codex move-in to DSH: auto-import Codex project chats; two-way Skills and MCP sync.'
+  zh: Codex一键搬家到DSH：Codex项目对话自动导入DSH，Skills、MCP双向同步。
