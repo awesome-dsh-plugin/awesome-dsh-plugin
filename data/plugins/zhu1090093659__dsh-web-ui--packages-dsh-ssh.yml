@@ -1,0 +1,6 @@
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-ssh
+name: zhu1090093659/dsh-web-ui#packages/dsh-ssh
+category: remote
+description:
+  en: 'SSH ops panel for DSH: web terminal, SFTP transfer with progress, local port forwarding, and one-command cluster execution across hosts; agents share the same host config.'
+  zh: SSH 远程运维面板：Web 终端、SFTP 传输、本地端口转发与一条命令并发集群执行，Agent 与面板共用同一份主机配置。
