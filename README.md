@@ -1399,6 +1399,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZhenHuangLab/dsh-sync](https://github.com/ZhenHuangLab/dsh-sync) - Policy-driven Git sync for DSH settings and profile configuration, with secret-aware projections, conflict review, and per-line apply controls.
 - [ZSeven-W/dsh-crew](https://github.com/ZSeven-W/dsh-crew) - Dispatch work to DSH agents from Claude Code or Codex: native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge for vision and image generation.
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) - Task planning with experience muscle-memory: condition-reflex recall of past solutions, LLM capability matching, and auto-persisted lessons.
+- [zzhzz/dsh-ask-peer](https://github.com/zzhzz/dsh-ask-peer) - Peer-to-peer colleague-agent consultation for DSH: ask one or several configured peers, queue asynchronous questions, discover peers through signed friend cards, and review inbound requests in the Web UI.
 
 ### Git & Code Review
 
