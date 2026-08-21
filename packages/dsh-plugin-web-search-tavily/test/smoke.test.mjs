@@ -8,6 +8,66 @@ test("host entry exports name/inject/apply", async () => {
   assert.equal(typeof mod.apply, "function");
 });
 
+function registerProvider(mod, config, get) {
+  let provider;
+  mod.apply({
+    get,
+    inject() {},
+    web: {
+      registerSearchProvider(registered) {
+        provider = registered;
+      },
+    },
+  }, config);
+  assert.ok(provider, "Tavily provider registered");
+  return provider;
+}
+
+test("credential service prefers the configured API key reference", async () => {
+  const mod = await import("../lib/index.js");
+  const resolved = [];
+  const credentials = {
+    async resolve(ref) {
+      resolved.push(ref);
+      return ref === "TAVILY_API_KEY" ? { value: "tavily-key" } : { value: "deepseek-key" };
+    },
+  };
+  const provider = registerProvider(mod, { baseURL: "https://api.tavily.com" }, (name) => name === "credentials" ? credentials : void 0);
+
+  assert.equal(await provider.resolveOptions().resolveApiKey(), "tavily-key");
+  assert.deepEqual(resolved, ["TAVILY_API_KEY"]);
+});
+
+test("credential service falls back to DEEPSEEK_API_KEY", async () => {
+  const mod = await import("../lib/index.js");
+  const resolved = [];
+  const credentials = {
+    async resolve(ref) {
+      resolved.push(ref);
+      return ref === "TAVILY_API_KEY" ? { value: "" } : { value: "deepseek-key" };
+    },
+  };
+  const provider = registerProvider(mod, { baseURL: "https://api.tavily.com" }, (name) => name === "credentials" ? credentials : void 0);
+
+  assert.equal(await provider.resolveOptions().resolveApiKey(), "deepseek-key");
+  assert.deepEqual(resolved, ["TAVILY_API_KEY", "DEEPSEEK_API_KEY"]);
+});
+
+test("launch environment falls back to DEEPSEEK_API_KEY", async () => {
+  const mod = await import("../lib/index.js");
+  const requested = [];
+  const launchEnvironment = {
+    get(ref) {
+      requested.push(ref);
+      return ref === "DEEPSEEK_API_KEY" ? { value: "deepseek-env-key" } : void 0;
+    },
+  };
+  const provider = registerProvider(mod, { baseURL: "https://api.tavily.com" }, (name) => name === "launchEnvironment" ? launchEnvironment : void 0);
+
+  assert.equal(await provider.resolveOptions().resolveApiKey(), "deepseek-env-key");
+  assert.deepEqual(requested, ["TAVILY_API_KEY", "DEEPSEEK_API_KEY"]);
+});
+
 test("provider maps Tavily response into WebSearchResult", async () => {
   const mod = await import("../lib/index.js");
   const provider = new mod.TavilySearchProvider(() => ({

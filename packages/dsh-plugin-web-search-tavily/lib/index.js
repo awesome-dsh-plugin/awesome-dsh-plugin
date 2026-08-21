@@ -7,9 +7,10 @@ import { WebError } from "@deepseek-ai/dsh-web";
 const PROVIDER_ID = "tavily";
 const DEFAULT_BASE_URL = "https://api.tavily.com";
 const DEFAULT_API_KEY_ENV = "TAVILY_API_KEY";
+const FALLBACK_API_KEY_ENV = credentialRef("DEEPSEEK_API_KEY");
 const DEFAULT_SEARCH_DEPTH = "basic";
 const DEFAULT_MAX_RESULTS = 5;
-const USER_AGENT = "deepseek-harness/0.1.0 (tavily web search provider)";
+const USER_AGENT = "deepseek-harness/0.1.1 (tavily web search provider)";
 
 const name = "web-search-tavily";
 const inject = ["web"];
@@ -32,9 +33,17 @@ function resolveOptions(ctx, config) {
     ...(literalApiKey !== void 0 ? { apiKey: literalApiKey } : {}),
     resolveApiKey: async () => {
       const credentials = ctx.get("credentials");
-      if (credentials !== void 0) return (await credentials.resolve(apiKeyEnv))?.value;
-      const ambient = launchEnvironmentOf(ctx).get(apiKeyEnv);
-      return ambient !== void 0 && ambient.value.length > 0 ? ambient.value : void 0;
+      if (credentials !== void 0) {
+        const primary = await credentials.resolve(apiKeyEnv);
+        if (primary !== void 0 && primary.value.length > 0) return primary.value;
+        if (apiKeyEnv === FALLBACK_API_KEY_ENV) return;
+        return (await credentials.resolve(FALLBACK_API_KEY_ENV))?.value;
+      }
+      const environment = launchEnvironmentOf(ctx);
+      const primary = environment.get(apiKeyEnv)?.value;
+      if (primary !== void 0 && primary.length > 0) return primary;
+      if (apiKeyEnv === FALLBACK_API_KEY_ENV) return;
+      return environment.get(FALLBACK_API_KEY_ENV)?.value;
     },
     apiKeyEnv,
     baseURL: config.baseURL ?? launchEnvironmentOf(ctx).get(SEARCH_BASE_URL_ENV)?.value ?? DEFAULT_BASE_URL,
@@ -120,7 +129,7 @@ class TavilySearchProvider {
       throw new WebError(`Tavily search credential resolution failed: ${String(error)}`, "WEB_PROVIDER_ERROR", { cause: error });
     }
     if (resolved !== void 0 && resolved.length > 0) return resolved;
-    throw new WebError(`Tavily search has no API key for "${options.apiKeyEnv ?? DEFAULT_API_KEY_ENV}"; store it through the credentials service, export it in the launching environment, or set a literal "apiKey" in the web-search-tavily config`, "WEB_PROVIDER_CREDENTIAL_MISSING");
+    throw new WebError(`Tavily search has no API key for "${options.apiKeyEnv ?? DEFAULT_API_KEY_ENV}" or fallback "${FALLBACK_API_KEY_ENV}"; store it through the credentials service, export it in the launching environment, or set a literal "apiKey" in the web-search-tavily config`, "WEB_PROVIDER_CREDENTIAL_MISSING");
   }
 }
 
