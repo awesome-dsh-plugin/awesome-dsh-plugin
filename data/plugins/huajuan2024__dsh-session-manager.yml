@@ -1,0 +1,6 @@
+url: https://github.com/huajuan2024/dsh-session-manager
+name: huajuan2024/dsh-session-manager
+category: session
+description:
+  en: Lists, views, deletes, and exports DeepSeek Harness session histories from a panel under Settings → Plugins; supports JSON or Markdown export of a single session.
+  zh: 在「设置 → 插件」中列出、查看、删除和导出 DeepSeek Harness 会话历史，支持将单条会话导出为 JSON 或 Markdown。
