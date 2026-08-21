@@ -1,0 +1,6 @@
+url: https://github.com/ankye/dsh-image-generation
+name: ankye/dsh-image-generation
+category: vision
+description:
+  en: 'AI image generation for the harness: a generate_image model tool with a configurable OpenAI-compatible endpoint (gpt-image-2), aspect-ratio/quality/count and output-directory settings card, and per-channel API key via the credentials service.'
+  zh: 'DSH 生图插件：generate_image 模型工具，可配置 OpenAI 兼容端点（gpt-image-2）、宽高比/质量/张数与输出目录设置卡片，API Key 经凭据服务按通道存储。'
