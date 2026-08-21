@@ -1127,5 +1127,9 @@
  "https://github.com/SmileBuild/dsh-planchart": [
   "https://raw.githubusercontent.com/SmileBuild/dsh-planchart/main/assets/screenshot-1.png",
   "https://raw.githubusercontent.com/SmileBuild/dsh-planchart/main/assets/screenshot-2.png"
+ ],
+ "https://github.com/WSL043/dsh-codex-subscription": [
+  "https://raw.githubusercontent.com/WSL043/dsh-codex-subscription/main/docs/assets/settings-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-codex-subscription/main/docs/assets/composer-quota-en.png"
  ]
 }
