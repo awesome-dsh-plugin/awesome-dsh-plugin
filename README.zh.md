@@ -1821,7 +1821,7 @@ dsh plugin --profile web add dshmarket
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) — 为第三方客户端提供 REST + SSE 网关：API 密钥鉴权、token 流式回包、会话工作区分组，并可接管 GUI 会话继续对话。
 - [MDR-EX1000/dsh-rw](https://github.com/MDR-EX1000/dsh-rw) — Remote-SSH 风格工作区：把 SSH 主机上的远程目录变成原生 DSH 工作区，agent 通过 12 个 rw_* 工具（SFTP/exec）直接操作远程文件，路径限定在工作区内并校验 known_hosts。
 - [mervyn-teo/dsh-plugin-qr-connect](https://github.com/mervyn-teo/dsh-plugin-qr-connect) — 「设置」按钮上方的一键二维码，让手机通过带鉴权的反向代理连接 Web 界面。
-- [mexiaosqwq/dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) — DSH Web UI 移动端适配：窄屏下侧边栏变为贴合内容的 overlay 抽屉、会话独占全宽，设置面板改为近全宽 sheet。
+- [mexiaosqwq/dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) — DSH Web UI 移动端适配：窄屏好用，宽屏适用。
 - [moyu-good/dsh-lark-bridge](https://github.com/moyu-good/dsh-lark-bridge) — 飞书/Lark 深度通道：原生思考过程消息、审批卡片、goal/todo 实时卡片、workflow 展开行、会话全文检索、后台任务与子代理结算通知。其设计以飞书应用自身的可见性范围为访问边界——凡是应用允许触达的人都能驱动 agent 并回答它的审批请求，除非填写可选的发送者/群组/审批人白名单收窄。
 - [NattoCB/dsh-plugin-wechat-bridge](https://github.com/NattoCB/dsh-plugin-wechat-bridge) — 把微信私聊桥接进 DSH agent 会话并流式回传回复，支持热插拔与设置页签。
 - [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) — DSH Web UI 移动端适配：紧凑排版、全宽输入卡（含光标修复）、抽屉式侧边栏（点击遮罩关闭）、两页式设置流程、响应式表格与统计、安全触控目标。

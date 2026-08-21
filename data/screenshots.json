@@ -1162,5 +1162,10 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/mexiaosqwq/dsh-web-mobile": [
+  "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/main/assets/hero.png",
+  "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/main/assets/drawer.png",
+  "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/main/assets/settings.png"
  ]
 }
