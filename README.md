@@ -43,6 +43,18 @@ credential store (`~/.dsh/.credentials.yaml`). Nothing is written to disk by
 this plugin; keys never leave the host except to their own provider API.
 The state route is loopback-only.
 
+Environment variable names per provider (first match wins):
+
+| Provider | Env vars |
+|---|---|
+| GLM Coding | `ZAI_CODING_CN_API_KEY`, `ZAI_API_KEY` |
+| Kimi Coding | `KIMI_CODING_API_KEY`, `KIMI_API_KEY` |
+| MiniMax | `MINIMAX_CN_API_KEY`, `MINIMAX_API_KEY` |
+| DeepSeek | `DEEPSEEK_API_KEY` |
+
+Without a key the capsule shows "<provider> 无 key" and never sends any
+request; an unsupported provider shows "待支持" (adapter pending).
+
 ## How it works
 
 - Host (`lib/index.js`): provider adapters normalize each vendor response into
