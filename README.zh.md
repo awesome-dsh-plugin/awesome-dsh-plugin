@@ -1699,6 +1699,7 @@ dsh plugin --profile web add dshmarket
 - [WODE25500/dsh-kubectl](https://github.com/WODE25500/dsh-kubectl) — Kubernetes 运维：JSON 结构化查资源、describe、日志、exec、apply/delete（需确认）与端口转发。
 - [WODE25500/dsh-terraform](https://github.com/WODE25500/dsh-terraform) — 基础设施即代码：plan/apply 门控、state/output 检查与配置校验。
 - [WODE25500/dsh-winget](https://github.com/WODE25500/dsh-winget) — Windows 包管理器：搜索、安装、升级、卸载、导入导出与版本固定。
+- [WODE25500/dsh-wsl](https://github.com/WODE25500/dsh-wsl) — WSL 桥接：运行 Linux 命令、查询发行版状态、路径转换与跨系统复制，自动处理 UTF-16 输出。
 - [worksAssistant/dsh-quickref](https://github.com/worksAssistant/dsh-quickref) — 开发者速查工具箱：12 个主题 195 条速查 + 6 个零依赖工具（正则实时测试、JSON 格式化、时间戳转换、Base64/URL 编解码、Cron 生成、行 diff），设置页可搜索查阅。
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
