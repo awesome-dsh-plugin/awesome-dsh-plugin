@@ -1465,6 +1465,8 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zoahdev/dsh-github-release-radar](https://github.com/zoahdev/dsh-github-release-radar) - Track releases and stars of any public GitHub repository from inside dsh agents — no API key needed.
 - [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) - PR evaluation and improvement consultant: assesses PR success probability based on historical anti-patterns and success patterns, with one-click scoring and actionable suggestions.
 
+- [Li3NGa/DHS-multi-agent-plugin](https://github.com/Li3NGa/DHS-multi-agent-plugin) - Multi-agent collaboration engine: six strategies (broadcast, sequential, debate, supervisor, consensus, relay) over a team of DeepSeek/OpenAI-compatible LLMs, HTTP services, CLI commands, or Python handlers, with a native DSH Cordis plugin plus Python API, CLI, HTTP service, and MCP server entry points.
+
 ### Notifications & Integrations
 
 - [534119219/chicheng-push](https://github.com/534119219/chicheng-push) - Multi-channel push for DeepSeek Harness: Server酱, PushPlus, Bark, DingTalk, WeCom, Telegram, Feishu, ntfy, custom webhooks and more, configurable from the settings panel and callable by other plugins via the pushNotifier service.
