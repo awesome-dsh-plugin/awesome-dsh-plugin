@@ -1,4 +1,8 @@
 {
+ "https://github.com/islibaodong/dsh-login": [
+  "https://raw.githubusercontent.com/islibaodong/dsh-login/master/images/login.png",
+  "https://raw.githubusercontent.com/islibaodong/dsh-login/master/images/users.png"
+ ],
  "https://github.com/hunter118/dsh-s7r": [
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-desktop.png",
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-agent.png",
