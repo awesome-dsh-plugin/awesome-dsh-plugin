@@ -1162,5 +1162,9 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/AKS1st/dsh-cyber-particle": [
+  "https://raw.githubusercontent.com/AKS1st/dsh-cyber-particle/master/assets/image_light.png",
+  "https://raw.githubusercontent.com/AKS1st/dsh-cyber-particle/master/assets/image_dark.png"
  ]
 }
