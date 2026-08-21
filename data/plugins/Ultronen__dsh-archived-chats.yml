@@ -2,5 +2,5 @@ url: https://github.com/Ultronen/dsh-archived-chats
 name: Ultronen/dsh-archived-chats
 category: session
 description:
-  en: 'Archived Chats settings page for DeepSeek Harness: browse, search, unarchive, and delete archived sessions grouped by workspace — deletion takes effect immediately, no restart needed, even for sessions still resident in the background.'
-  zh: DSH 已归档聊天管理页：浏览、搜索、取消归档与删除已归档会话，按工作区分组；删除即生效、无需重启，后台驻留的会话也能当场彻底删除。
+  en: 'Manage DeepSeek Harness archived chats with workspace grouping, search and filters, tags, notes, size statistics, on-demand bulk actions, unarchive, permanent deletion, and ZIP backup export and restore.'
+  zh: '管理 DeepSeek Harness 已归档聊天：按工作区分组、搜索筛选、标签备注与容量统计，支持按需批量操作、取消归档、永久删除，以及 ZIP 备份导出与恢复。'
