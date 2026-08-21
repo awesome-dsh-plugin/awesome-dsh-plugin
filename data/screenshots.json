@@ -1156,5 +1156,11 @@
  "https://github.com/zhujunpeng12/dsh-memory-system": [
   "https://raw.githubusercontent.com/zhujunpeng12/dsh-memory-system/master/assets/social-preview.png",
   "https://raw.githubusercontent.com/zhujunpeng12/dsh-memory-system/master/docs/memory-system-flowchart.png"
+ ],
+ "https://github.com/wangzhishou/onebox-dsh-bridge": [
+  "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/pairing-page.png",
+  "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
+  "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
+  "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
  ]
 }
