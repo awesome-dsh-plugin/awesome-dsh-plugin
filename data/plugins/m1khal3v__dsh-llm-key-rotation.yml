@@ -3,4 +3,4 @@ name: m1khal3v/dsh-llm-key-rotation
 category: usage
 description:
   en: Rotates configured LLM API keys after quota, rate-limit, or authentication failures.
-  zn: 在配额、速率限制或身份验证失败后轮换已配置的 LLM API 密钥。
+  zh: 在配额、速率限制或身份验证失败后轮换已配置的 LLM API 密钥。
