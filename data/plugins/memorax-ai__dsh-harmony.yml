@@ -1,5 +1,5 @@
-url: https://github.com/CH4ACKO3/dsh-harmony
-name: CH4ACKO3/dsh-harmony
+url: https://github.com/memorax-ai/dsh-harmony
+name: memorax-ai/dsh-harmony
 category: dev
 description:
   en: Modifies DSH plugin code at runtime, with ordered patches, inspection, and hot reload.
