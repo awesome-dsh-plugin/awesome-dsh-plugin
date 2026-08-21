@@ -1097,5 +1097,11 @@
  "https://github.com/WSL043/dsh-session-delete": [
   "https://raw.githubusercontent.com/WSL043/dsh-session-delete/main/docs/assets/hero.en.png",
   "https://raw.githubusercontent.com/WSL043/dsh-session-delete/main/docs/assets/confirm-delete.en.png"
+ ],
+ "https://github.com/ryubyte/dsh-a2a": [
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/dashboard-outbound.png",
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/dashboard-inbound.png",
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/server-inbound.png",
+  "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/server-serve.png"
  ]
 }
