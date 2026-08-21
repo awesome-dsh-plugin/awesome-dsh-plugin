@@ -1,0 +1,5 @@
+url: https://github.com/haoku123/dsh-blast-radius
+name: haoku123/dsh-blast-radius
+category: git
+description:
+  en: 'Reports the semantic blast radius of agent code edits: which symbols changed, who calls them, and which of those callers have no covering test.'
