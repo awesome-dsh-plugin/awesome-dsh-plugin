@@ -575,6 +575,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### Identity & Communication
 
 - [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) - Provides DeepSeek Harness agents with native AWiki identities and identity-based direct, group, mail, and Agent-to-Agent communication.
+- [Freakz2z/dsh-catgirl-plugin](https://github.com/Freakz2z/dsh-catgirl-plugin) - Token-efficient persona runtime for DeepSeek Harness with local catgirl rendering and progressive tool-schema disclosure.
 
 ### Sessions & Messages
 
