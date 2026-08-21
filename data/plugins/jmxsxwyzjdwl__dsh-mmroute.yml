@@ -1,0 +1,6 @@
+url: https://github.com/jmxsxwyzjdwl/dsh-mmroute
+name: jmxsxwyzjdwl/dsh-mmroute
+category: vision
+description:
+  en: 'Multimodal router for text-only models: every image in every agent step (uploads, read_image, MCP tool renders) is transcribed to text by a multimodal understander before dispatch, with automatic transcription-retry on image-related failures.'
+  zh: '面向纯文本模型的多模态路由：agent 全流程每一步的每张图片（上传、read_image、MCP 工具渲染）先经多模态理解模型转述为文字再发给模型，图片类报错自动转述重试。'
