@@ -1,0 +1,6 @@
+url: https://github.com/seriousz158/dsh-codex-use/tree/main/packages/dsh-codex-appserver
+name: seriousz158/dsh-codex-use#dsh-codex-appserver
+category: model
+description:
+  en: 'Local Codex CLI App Server provider for DeepSeek Harness: adds OpenAI Codex (ChatGPT) as a selectable model route over stdio JSON-RPC.'
+  zh: '本机 Codex CLI App Server 的 DSH Provider：通过 stdio JSON-RPC 将 OpenAI Codex（ChatGPT）作为可选择的模型路由接入。'
