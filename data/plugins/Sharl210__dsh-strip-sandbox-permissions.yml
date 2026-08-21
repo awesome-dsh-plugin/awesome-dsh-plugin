@@ -1,0 +1,6 @@
+url: https://github.com/Sharl210/dsh-strip-sandbox-permissions
+name: Sharl210/dsh-strip-sandbox-permissions
+category: security
+description:
+  en: 'Strips sandbox_permissions and justification from model tool-call arguments so sandbox escalation is never triggered when the session already has sufficient permission.'
+  zh: '从模型工具调用参数中移除 sandbox_permissions 与 justification，避免会话已有足够权限时触发沙箱升级误拒绝。'
