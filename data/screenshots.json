@@ -1,4 +1,9 @@
 {
+ "https://github.com/fandc520/dsh-comfyui": [
+  "https://raw.githubusercontent.com/fandc520/dsh-comfyui/master/images/panel.png",
+  "https://raw.githubusercontent.com/fandc520/dsh-comfyui/master/images/loadarea.png",
+  "https://raw.githubusercontent.com/fandc520/dsh-comfyui/master/images/settings.png"
+ ],
  "https://github.com/hunter118/dsh-s7r": [
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-desktop.png",
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-agent.png",
