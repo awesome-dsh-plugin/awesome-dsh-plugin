@@ -353,6 +353,15 @@
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
  ],
+ "https://github.com/V1ki/dsh-plugin-subscriptions": [
+  "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/subscriptions.png",
+  "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/model-picker.png",
+  "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/model-effort.png",
+  "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/speed-toggle.png",
+  "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/image-generate-inline.png",
+  "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/image-generate-providers.png",
+  "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/video-generate-inline.png"
+ ],
  "https://github.com/Vncntvx/dsh-zotero": [
   "https://raw.githubusercontent.com/Vncntvx/dsh-zotero/main/docs/images/header-collage.png",
   "https://raw.githubusercontent.com/Vncntvx/dsh-zotero/main/docs/images/zotero-chat-workflow.png",
