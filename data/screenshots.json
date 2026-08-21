@@ -1088,5 +1088,10 @@
   "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/features.png",
   "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/compact-wallpaper-library.png",
   "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/better-sidebar.png"
+ ],
+ "https://github.com/dami9527/dsh-image-pathify": [
+  "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/example.png",
+  "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/settings.png",
+  "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/update.png"
  ]
 }
