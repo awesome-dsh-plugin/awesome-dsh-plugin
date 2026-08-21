@@ -165,6 +165,7 @@ dsh plugin --profile web add dshmarket
 - [HongMing-Huang/dsh-file-upload](https://github.com/HongMing-Huang/dsh-file-upload) — Claude 风格拖拽/回形针文件上传：内容嗅探、文档转 Markdown（微软 MarkItDown，内置 JS 兜底）、文本直插输入框、read_document 工具。
 - [houyanchao/dsh-timeline](https://github.com/houyanchao/dsh-timeline) — DSH 效率插件：时间轴、提示词库、导出对话、闪记等提效功能。
 - [HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — DSH Web 请求中断自动续跑：网络、超时或宿主崩溃等非人为失败后自动发送「继续」，支持错误分类、自适应退避、模板化继续文本与浏览器通知。
+- [hufeide/dsh-sidebar-assistant](https://github.com/hufeide/dsh-sidebar-assistant) — Web 界面的侧边栏助手插件,在 Web 聊天界面里选中任意文本，在浮层面板里流式显示思考过程与最终答案。
 - [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — DeepSeek Harness 的终端 UI（TUI）。
 - [HUITianYi/dsh-whale-desktop-launcher](https://github.com/HUITianYi/dsh-whale-desktop-launcher) — DSH 的 Windows 桌面启动器，提供鲸鱼娘图标、后台服务启动和无浏览器工具栏的 Chromium 应用窗口。
 - [hunter118/dsh-s7r](https://github.com/hunter118/dsh-s7r) — 为 DeepSeek Harness 提供复古 macOS System 7 风格工作站界面，包含桌面窗口、工作区与 Agent 管理、Finder、终端、监视器、上下文工具和桌面附件。
@@ -350,6 +351,7 @@ dsh plugin --profile web add dshmarket
 - [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 三件套全家桶：Windows 原生窗口（WebView2）+ DeepEye 视觉（GLM-4V-Flash）+ 语音输入（麦克风按钮），一条命令装齐。
 - [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。
 - [zizhongfeiyang/dsh-settings-drawer](https://github.com/zizhongfeiyang/dsh-settings-drawer) — 让你选择 DeepSeek Harness 设置页左侧导航要显示哪些栏目。
+- [zmm863-commits/dsh-paperclip](https://github.com/zmm863-commits/dsh-paperclip) — 在 DSH Web 输入框添加回形针按钮：点击选择文件（支持拖拽），文件内容自动插入输入框。
 - [zoumutou/dsh-web-preview](https://github.com/zoumutou/dsh-web-preview) — 侧边网页预览面板：本地静态托管、Markdown/代码/图片预览、非静态项目一键运行（Cargo/npm/Go/Python）实时日志、文件直接拖入对话（保存到工作区）、网页元素标记批注、404 时工作区文件搜索、链接点击接管到侧边预览。
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — OpenPencil 设计预览与编辑插件。
 - [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) — 在 DSH Web 已渲染的 Markdown 中做词性高亮：名词绿、动词红、形容/副词紫，支持深/浅色板、词性开关与流式防抖。
@@ -1426,7 +1428,6 @@ dsh plugin --profile web add dshmarket
 - [dd2673/dsh-wending-git-workbench](https://github.com/dd2673/dsh-wending-git-workbench) — Codex 风格 Git 工作台：工作区级更改、diff、暂存、提交、受守卫的分支操作、提交图谱、fetch、pull --ff-only 与经官方插件 API 的上游推送。
 - [DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — 帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。
 - [Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — 基于 gh CLI 的 GitHub 搜索/发现/审计技能包（SKILL.md 打包）：仓库搜索、多轴探索、趋势、仓库概览、相似项目、代码搜索、issue/PR 搜索与组织审计；以 dsh bundle 形式安装（并已发布 npm）。
-- [hufeide/dsh-sidebar-assistant](https://github.com/hufeide/dsh-sidebar-assistant) — Web 界面的侧边栏助手插件,在 Web 聊天界面里选中任意文本，在浮层面板里流式显示思考过程与最终答案。
 - [JFWaskin/dsh-git-nexus](https://github.com/JFWaskin/dsh-git-nexus) — DSH Web 的 Git 与 GitHub 面板：暂存/撤销/丢弃/差异、分支、提交、推送/拉取/同步、日志、文件浏览、工作流看板，以及带 PR 创建的 GitHub OAuth。
 - [jiayan-xu/dsh-ocr-review](https://github.com/jiayan-xu/dsh-ocr-review) — 本地 AI 代码评审门禁：对工作区/分支/commit diff 跑评审（托管 ocr.js），返回结构化 findings 与 token 统计；门禁模式发现问题即失败。
 - [JohnXu22786/adversarial-review](https://github.com/JohnXu22786/adversarial-review) — 对抗式多视角代码审查：正确性/安全性/可维护性透镜并行攻击 diff，确定性严重度定级、抑制规则与增量审查历史。
