@@ -145,6 +145,14 @@ ul.rel .desc-link:hover p{color:var(--ink)}
 .panel.readme .note a{color:var(--ink-3)}
 .panel.readme .note a:hover{color:var(--cinnabar)}
 
+/* ── sponsor slot ── mirrors site/template.html; height reserved up front so
+   a late-arriving ad never shifts the page, frame paints only when filled */
+.adband{padding-block:1.2rem 0}
+.adslot{min-height:104px;display:flex;align-items:center;
+  padding:.9rem 1.1rem;border:1px solid transparent;border-radius:12px}
+.adslot:not(:empty){background:var(--card);border-color:var(--line)}
+@media (max-width:640px){.adslot{min-height:172px}}
+
 footer{padding-block:1.8rem 2.8rem;border-top:1px solid var(--line);margin-top:clamp(2rem,6vh,3rem);color:var(--ink-3);font-size:.78rem}
 footer a{color:var(--ink-2)}
 footer a:hover{color:var(--cinnabar)}
@@ -154,6 +162,7 @@ footer p+p{margin-top:.5rem}
   .cmd button{border-left:none;border-top:1px solid var(--line-2);padding:.5rem}
 }
 </style>
+__AD_HEAD__
 </head>
 <body>
 
@@ -187,6 +196,7 @@ footer p+p{margin-top:.5rem}
   </div>
 </header>
 
+__AD_SLOT__
 <main class="wrap">
   <p class="desc">__P_DESC__</p>
 
@@ -231,5 +241,6 @@ document.addEventListener('click', async (e) => {
 });
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+__AD_SCRIPT__
 </body>
 </html>

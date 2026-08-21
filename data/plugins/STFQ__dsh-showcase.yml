@@ -1,0 +1,6 @@
+url: https://github.com/STFQ/dsh-showcase
+name: STFQ/dsh-showcase
+category: docs
+description:
+  en: Turn DSH session exports into locally rendered, redacted README-ready WebP/GIF demos, posters, snippets, and manifests via the dsh_showcase tool.
+  zh: 通过 dsh_showcase 工具，将 DSH 会话导出文件在本地转换为自动脱敏、可直接用于 README 的 WebP/GIF 动图、封面、片段和清单。
