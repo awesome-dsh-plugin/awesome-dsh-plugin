@@ -1627,6 +1627,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [vibeinging/dsh-trace](https://github.com/vibeinging/dsh-trace) - Telemetry backend exporting turns, model steps, and tool calls to yiTrace.
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) - Self-evolution: the agent hot-mounts/removes persistent plugins on itself mid-session.
 - [wingsky-1/dsh-plugin-hub#packages/dsh-gzip](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-gzip) - Gzip compression for /api responses, fixing history-load timeouts over remote/low-bandwidth connections; skips SSE and already-encoded responses.
+- [WODE25500/dsh-az](https://github.com/WODE25500/dsh-az) - Azure resource management: query and show resources, deploy Bicep/ARM templates, and check the activity log.
 - [WODE25500/dsh-codex](https://github.com/WODE25500/dsh-codex) - OpenAI Codex CLI wrapper: one-shot exec, repo review and session resume with a default read-only sandbox.
 - [WODE25500/dsh-terraform](https://github.com/WODE25500/dsh-terraform) - Infrastructure as code: gated plan/apply, state and output inspection, and configuration validation via the terraform CLI.
 - [WODE25500/dsh-winget](https://github.com/WODE25500/dsh-winget) - Windows Package Manager: search, install, upgrade, uninstall, import/export and pin software through native tools.
