@@ -1,0 +1,6 @@
+url: https://github.com/tttnny/my-dsh/tree/main/dsh-client-ui-deepseek-bg
+name: tttnny/my-dsh#dsh-client-ui-deepseek-bg
+category: theme
+description:
+  en: 'Harness homepage-style dark skin for the DSH Web UI: aurora and particle-whale background, constellation grid, glassmorphism, Border Beam state machine, Thinking Orbs and Pulse todo, with a Background Effects GPU tuning panel.'
+  zh: '仿 DeepSeek Harness 官网的 DSH Web 深色皮肤：极光与粒子鲸鱼背景、星座网格、玻璃拟态、Border Beam 状态机、Thinking Orbs 与 Pulse 任务框，设置页内置背景特效 GPU 调优面板。'
