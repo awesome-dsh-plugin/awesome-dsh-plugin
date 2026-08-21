@@ -585,6 +585,8 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/session-titler](https://github.com/JohnXu22786/session-titler) — 两阶段会话题词：会话进行中即时关键词题名，空闲后再调用最经济的预算模型精修，并附带一句话摘要。
 - [kaieye/dsh-AIR](https://github.com/kaieye/dsh-AIR) — DSH Web 输入框增强：跨会话召回已发送提示词、用 Ctrl+R 搜索并还原富草稿，以及提供停靠式 /btw 或 /side 旁路会话。
 - [keepermttl/dsh-archive-viewer](https://github.com/keepermttl/dsh-archive-viewer) — DSH Web 归档会话管理器：支持标题/内容搜索、标签筛选、阅读日志、恢复会话与 ZIP 导出。
+- [kiligzzz/dsh-session-archive](https://github.com/kiligzzz/dsh-session-archive) — 侧边栏入口，呈现 host 端全部全局归档会话（只读预览最近一轮、恢复取消归档、删除并在会话仍在运行时给出友好提示）。操作完成后仅局部刷新工作区/会话列表，不刷新整个页面。
+- [kiligzzz/dsh-session-nav](https://github.com/kiligzzz/dsh-session-nav) — 钢琴键风格的会话内导航条：每根键对应当前会话的一个真实用户问题（数据来自完整磁盘日志）。悬停键预览该轮「用户消息 + 模型回复」，点击平滑跳转到对应位置；当目标在虚拟列表窗口外时，自动翻页加载更早的历史，无需手动操作。支持键盘方向键导航；历史翻页不可用时会给出提示。
 - [kirkchinese/claude2dsh](https://github.com/kirkchinese/claude2dsh) — 将 Claude Code 会话、技能与插件资产导入为 DSH 原生可续聊会话，并支持将 DSH 会话导出或同步回 Claude Code JSONL。
 - [lacemou/dsh-session-ref](https://github.com/lacemou/dsh-session-ref) — 跨会话引用插件：在任意会话（含其他工作区）粘贴 @[label](dsh-session:…) 引用，宿主注入被引用会话的快照供模型阅读，并提供一键复制引用按钮。
 - [Leeminjing/dsh-messages-sanitizer](https://github.com/Leeminjing/dsh-messages-sanitizer) — 工具调度崩溃后自动修复 messages 数组（孤儿 tool_calls / tool 消息），防止 400 INVALID_REQUEST 会话卡死。
