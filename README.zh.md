@@ -1465,6 +1465,8 @@ dsh plugin --profile web add dshmarket
 - [zoahdev/dsh-github-release-radar](https://github.com/zoahdev/dsh-github-release-radar) — 让 dsh agent 直接查询任意 GitHub 公开仓库的 Release 与星标变化，无需 API Key。
 - [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) — PR 评估和改进顾问：基于历史反模式和成功模式评估 PR 成功率，一键评分并提供可操作的改进建议。
 
+- [Li3NGa/DHS-multi-agent-plugin](https://github.com/Li3NGa/DHS-multi-agent-plugin) — 多智能体协作引擎：以广播、顺序流水线、辩论、主管-下属、共识投票、接力六种策略驱动一支由 DeepSeek / OpenAI 兼容 LLM、HTTP 服务、CLI 命令或 Python 逻辑组成的 Agent 团队；原生 DSH Cordis 插件 + Python API、命令行、HTTP 服务与 MCP 服务器多种接入。
+
 ### 🔔 通知与集成
 
 - [534119219/chicheng-push](https://github.com/534119219/chicheng-push) — DSH 多渠道消息推送插件：支持 Server酱、PushPlus、Bark、钉钉、企业微信、Telegram、飞书、ntfy、自定义 Webhook 等，可在设置面板配置多个渠道，并通过 pushNotifier 服务供其他插件调用。
