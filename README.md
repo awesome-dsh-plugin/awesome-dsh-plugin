@@ -1637,6 +1637,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [vibeinging/dsh-trace](https://github.com/vibeinging/dsh-trace) - Telemetry backend exporting turns, model steps, and tool calls to yiTrace.
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) - Self-evolution: the agent hot-mounts/removes persistent plugins on itself mid-session.
 - [wingsky-1/dsh-plugin-hub#packages/dsh-gzip](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-gzip) - Gzip compression for /api responses, fixing history-load timeouts over remote/low-bandwidth connections; skips SSE and already-encoded responses.
+- [wiyi/dsh-web-service-manager](https://github.com/wiyi/dsh-web-service-manager) - Manage the DSH web service from a settings panel: status, version, restart, stop, and one-click updates.
 - [WM-CODER/custom-first-control-prompt](https://github.com/WM-CODER/custom-first-control-prompt) - Inject deployment-configured system-prompt sections and reference exchanges into every conversation request via stream interception, with a web settings panel.
 - [WODE25500/dsh-az](https://github.com/WODE25500/dsh-az) - Azure resource management: query and show resources, deploy Bicep/ARM templates, and check the activity log.
 - [WODE25500/dsh-codex](https://github.com/WODE25500/dsh-codex) - OpenAI Codex CLI wrapper: one-shot exec, repo review and session resume with a default read-only sandbox.
