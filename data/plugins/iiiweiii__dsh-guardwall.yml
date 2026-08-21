@@ -1,0 +1,6 @@
+url: https://github.com/iiiweiii/dsh-guardwall
+name: iiiweiii/dsh-guardwall
+category: security
+description:
+  en: 'Runtime guardrail for DeepSeek Harness: pre-install plugin vetting with permission inventory, static risk scan and A-D trust score; blocks dangerous tool calls; tamper-proof HMAC chained audit logs.'
+  zh: 'DeepSeek Harness 运行时安全护栏：安装前体检（权限清单、静态风险、A-D 信任评分）+ 拦截危险工具调用 + 防篡改 HMAC 审计。'
