@@ -1,0 +1,6 @@
+url: https://github.com/Jesse-njx/dsh-skillport
+name: Jesse-njx/dsh-skillport
+category: tools
+description:
+  en: 'Bring your existing Agent Skills (SKILL.md) library to DSH: discover skills across Claude/Codex/Cursor/Gemini paths, inject a progressive-disclosure index, and load bodies on demand.'
+  zh: 把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。

@@ -1,0 +1,6 @@
+url: https://github.com/Hua1Q1nG/dsh-hindsight-local-optimize
+name: Hua1Q1nG/dsh-hindsight-local-optimize
+category: memory
+description:
+  en: 'Local-memory lifecycle for the official Hindsight plugin on DSH desktop: one-click start/stop of the hindsight-embed daemon, auto-start on boot, stop on exit, hides the uv.exe console window, and installs the vault/models to another drive.'
+  zh: 为 DSH 桌面端官方 Hindsight 插件补齐本地记忆生命周期：一键启停 hindsight-embed 守护进程、开机自启、退出随停、隐藏 uv.exe 黑框，并支持把档案柜与模型装到其它盘。

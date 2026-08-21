@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-cite
+name: STARDUSTLC666/dsh-cite
+category: tools
+description:
+  en: 'Citation tools for agents: exact DOI lookup, Crossref bibliographic search, GB/T 7714 / APA / MLA / Chicago formatting, BibTeX generation and bounded-concurrency DOI validation.'
+  zh: 参考文献工具：DOI 精确查询与 Crossref 题录检索，GB/T 7714 / APA / MLA / Chicago 格式化，BibTeX 生成与有界并发 DOI 校验。

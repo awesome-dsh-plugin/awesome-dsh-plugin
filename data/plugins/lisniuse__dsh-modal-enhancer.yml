@@ -1,0 +1,6 @@
+url: https://github.com/lisniuse/dsh-modal-enhancer
+name: lisniuse/dsh-modal-enhancer
+category: ui
+description:
+  en: 'Window-like controls for every Web UI modal: drag by title bar, eight-way resize, pin against outside clicks, maximize to the full viewport, removable backdrop blur, and per-dialog persistent state.'
+  zh: 为所有 Web UI 弹窗添加窗口化操作：标题栏拖动、八向缩放、钉住防误触关闭、全屏最大化、移除背景模糊，以及按弹窗持久化的状态。

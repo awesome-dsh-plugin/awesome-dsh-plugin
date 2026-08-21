@@ -1,0 +1,6 @@
+url: https://github.com/wx-yss/dsh-message-rail
+name: wx-yss/dsh-message-rail
+category: ui
+description:
+  en: 'Codex-style left-side message navigation rail for the Web UI: one tick per user message, hover previews, and click-to-jump across the whole history.'
+  zh: Codex 风格左侧消息导航轨道：每条用户消息一个刻度，悬停预览、点击跳转，全历史一次索引。

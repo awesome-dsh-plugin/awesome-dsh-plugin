@@ -1,0 +1,6 @@
+url: https://github.com/Bing-Bryan/dsh-unread-dot
+name: Bing-Bryan/dsh-unread-dot
+category: notify
+description:
+  en: 'macOS Dock badge and bubble chime: shows an unread badge on the Dock (dot while running, count when done) and plays a chime while the app is hidden; clears on return, built on the Badging API.'
+  zh: macOS Dock 角标与提示音：最小化/切走时 Dock 显示未读角标（运行中=红点、跑完=数字）并播放水泡提示音，回到应用自动清除，基于 Badging API。

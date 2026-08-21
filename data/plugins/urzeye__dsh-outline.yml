@@ -1,0 +1,6 @@
+url: https://github.com/urzeye/dsh-outline
+name: urzeye/dsh-outline
+category: ui
+description:
+  en: 'Real-time outline panel for the DSH Web session page: user questions plus a Markdown heading tree (H1–H6) that updates live during streaming, with click-to-locate highlighting, expand-depth control, search, and per-session favorites.'
+  zh: DSH Web 会话页实时大纲面板：「用户问题 + Markdown 标题（1~6 级）」大纲树，流式生成时实时更新，点击节点滚动定位并高亮，支持展开深度调节、搜索与会话级收藏。

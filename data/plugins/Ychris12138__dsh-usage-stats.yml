@@ -1,0 +1,6 @@
+url: https://github.com/Ychris12138/dsh-usage-stats
+name: Ychris12138/dsh-usage-stats
+category: usage
+description:
+  en: Multi-provider usage dashboard with provider/model token breakdowns, calendar drill-downs, account balances, and OpenCode Go / Z.ai subscription quota tracking.
+  zh: 多供应商用量看板：按供应商/模型统计 Token 与日期下钻，统一展示账户余额，并追踪 OpenCode Go / Z.ai 订阅额度。

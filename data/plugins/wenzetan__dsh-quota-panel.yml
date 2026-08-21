@@ -1,0 +1,6 @@
+url: https://github.com/wenzetan/dsh-quota-panel
+name: wenzetan/dsh-quota-panel
+category: usage
+description:
+  en: Bottom-right quota capsule that auto-discovers every configured provider (DeepSeek, OpenRouter, SiliconFlow, GLM, one-api/new-api, coding plans) and shows balance or rolling 5-hour and weekly usage, with per-provider visibility, alert thresholds and proxy support.
+  zh: 右下角额度胶囊：自动发现所有已配置 Key 的供应商（DeepSeek、OpenRouter、SiliconFlow、GLM、one-api/new-api、各类 Coding 套餐），显示余额或 5 小时/周滚动用量，支持按供应商设置可见性、告警阈值与代理。

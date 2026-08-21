@@ -1,0 +1,6 @@
+url: https://github.com/keyiadiannao/dsh-restart-button
+name: keyiadiannao/dsh-restart-button
+category: dev
+description:
+  en: 'A small self-contained power control for DSH: sidebar power button with an upward restart/shutdown menu and a Windows-shutdown-style overlay. Own restart & shutdown engine (no dependency on other plugins), dynamic-port aware.'
+  zh: 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。

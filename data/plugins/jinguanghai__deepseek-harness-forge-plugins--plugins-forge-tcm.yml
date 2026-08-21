@@ -1,0 +1,6 @@
+url: https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-tcm
+name: jinguanghai/deepseek-harness-forge-plugins#forge-tcm
+category: tools
+description:
+  en: 'Traditional Chinese Medicine toolkit: eight-axes diagnosis and herb-pair lookup.'
+  zh: 中医工具集：八纲辨证与药对查询。

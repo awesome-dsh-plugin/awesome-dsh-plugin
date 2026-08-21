@@ -1,0 +1,6 @@
+url: https://github.com/Yvesgao/dsh-desktop-launcher
+name: Yvesgao/dsh-desktop-launcher
+category: tools
+description:
+  en: 'Create a one-click Windows desktop shortcut from the Settings page: a .cmd launcher + desktop icon for DeepSeek Harness or any local server, auto-opens the browser, with taskbar pin hints.'
+  zh: 在设置页一键创建 Windows 桌面快捷方式：为 DeepSeek Harness 或任意本地服务生成 .cmd 启动器与桌面图标，自动打开浏览器、可固定任务栏。

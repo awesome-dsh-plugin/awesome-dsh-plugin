@@ -1,0 +1,6 @@
+url: https://github.com/Punky971210/dsh-punky-swarm/tree/main/packages/dsh-punky-swarm
+name: Punky971210/dsh-punky-swarm#dsh-punky-swarm
+category: workflow
+description:
+  en: 'Single-machine multi-subagent swarm governance for DeepSeek Harness: fixed-semantics wavePlan (3-layer DAG), engine-enforced Tier3 gates (Entry/L0/Exit/Complete), state machine, locks/mailbox, session isolation, plus the Punky Mode preset and jiufeng-team role guide.'
+  zh: 'dsh 单机多子 Agent 集群治理引擎：wavePlan 三层 DAG + 引擎级门禁（Entry/L0/Exit/Complete）+ 状态机 + 锁/mailbox + 会话隔离，附蟛蜞模式预设与 jiufeng-team 角色指引。'

@@ -1,0 +1,6 @@
+url: https://github.com/RAFOLIE/dsh-desktop-windowos
+name: RAFOLIE/dsh-desktop-windowos
+category: ui
+description:
+  en: 'Windows tray desktop shell: auto-installs and auto-updates the exe from GitHub Releases, creates desktop shortcuts for both the app and the web UI, and exposes a desktop_launch tool to start it from the conversation.'
+  zh: Windows 托盘桌面壳：自动从 GitHub Releases 安装并升级 exe、创建应用与网页端两个桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。

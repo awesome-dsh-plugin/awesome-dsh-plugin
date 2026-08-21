@@ -1,0 +1,6 @@
+url: https://github.com/Isilsolme/dsh-anthropic-fonts
+name: Isilsolme/dsh-anthropic-fonts
+category: theme
+description:
+  en: Anthropic Sans, Serif, and Mono fonts for the DSH Web UI, with Source Han fallback for CJK.
+  zh: Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。

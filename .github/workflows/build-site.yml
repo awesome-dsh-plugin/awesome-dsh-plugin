@@ -1,0 +1,113 @@
+name: Build site from README
+
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+    inputs:
+      probe_all:
+        description: Re-probe every entry, ignoring cached verdicts
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    # No paths filter, deliberately: every push must either supersede the
+    # in-flight build (concurrency cancel) or start the one that replaces it.
+    # Irrelevant pushes just redeploy the same bytes.
+    #
+    # Push builds deploy but do NOT probe (see PROBE below). On a busy day this
+    # workflow runs dozens of times, and each run used to fire another 134
+    # single-package requests at api.npmjs.org — which is what put the download
+    # probe permanently over the rate limit. Fresh data is a once-a-day need;
+    # publishing a newly merged plugin is a right-away need. They are separated.
+
+# The build never writes to the repository. Added dates derive from git
+# history, probe results live in the Actions cache, docs/ ships as a Pages
+# artifact — so contents stays read-only and nothing can race a human push.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# docs/ is a pure function of main's tip, so an older run can only produce
+# stale output — supersede it rather than queueing it.
+concurrency:
+  group: build-site
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # added-date derivation walks the README's history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      # Rolling probe cache: unique key so every run saves, restore-keys pulls
+      # the most recent.
+      #
+      # A miss is NOT harmless, which is what "degraded never, slower once" used
+      # to claim here. actions/cache scopes restores by a version derived from
+      # this `path` list, so editing the list — adding data/tarballs.json on
+      # 2026-08-18 — makes `restore-keys` match nothing and forces a cold start
+      # for every probe at once. That cold start wants ~1,400 API calls, and if
+      # the hourly budget happens to be spent the probes all fail together
+      # (#1673). data/stars.json is committed now so a miss costs staleness
+      # rather than the data itself; before changing this list again, expect a
+      # full re-probe and check the quota first.
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/npm-map.json
+            data/stars.json
+            data/readmes.json
+            data/tarballs.json
+          key: probe-data-v2-${{ github.run_id }}
+          restore-keys: probe-data-v2-
+      - name: Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The nightly run is the authoritative refresh: it re-checks every
+          # entry regardless of cached verdicts, so a plugin that publishes to
+          # npm can never be stuck on a stale "not published" (see #487).
+          # Push-triggered runs stay incremental.
+          PROBE_ALL: ${{ (github.event_name == 'schedule' || inputs.probe_all) && '1' || '' }}
+        run: |
+          # Probing is for the nightly run and manual dispatch only. A push
+          # build deploys what is already committed or cached; it does not go
+          # ask the world again. See the `push:` comment above for why.
+          # ...unless the cache missed, in which case there is nothing to
+          # build from: npm-map.json is gitignored and exists only in the
+          # cache, so skipping the probes on a cold push build would publish
+          # every entry with npm and downloads blank. Probing is slow; that is
+          # cheaper than a wrong plugins.json.
+          if [ "${{ github.event_name }}" != "push" ] || [ ! -s data/npm-map.json ]; then
+            node scripts/probe-npm.mjs
+            # After probe-npm.mjs, never before: this reads data/npm-map.json
+            # to know which entries HAVE a package to probe. Reads and writes
+            # data/downloads.json, which is committed (see its own header) —
+            # deliberately absent from the cache `path:` list above, so it
+            # needs no entry there and touching it can never trigger the
+            # cold-start hazard that list's own comment warns about.
+            node scripts/probe-downloads.mjs
+            node scripts/probe-stars.mjs
+            node scripts/probe-readmes.mjs
+          else
+            echo "push build with cached probe data — skipping probes"
+          fi
+          # Runs every time, not just nightly: a release-asset URL validated at
+          # submission can 404 later without anyone touching the entry, and the
+          # set is small enough that there is no reason to sample it (#1619).
+          node scripts/probe-tarballs.mjs
+          node scripts/build-site.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

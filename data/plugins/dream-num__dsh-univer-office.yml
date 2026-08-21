@@ -1,0 +1,6 @@
+url: https://github.com/dream-num/dsh-univer-office
+name: dream-num/dsh-univer-office
+category: docs
+description:
+  en: 'Create, edit, inspect, and deliver spreadsheets, documents, presentations, databases, and canvases in DeepSeek Harness, with live preview and worktree review.'
+  zh: 在 DeepSeek Harness 中创建、编辑、检查和交付表格、文档、演示文稿、多维表格和画布，支持实时预览与 worktree 审阅。

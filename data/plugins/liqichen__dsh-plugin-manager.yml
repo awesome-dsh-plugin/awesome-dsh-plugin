@@ -1,0 +1,6 @@
+url: https://github.com/liqichen/dsh-plugin-manager
+name: liqichen/dsh-plugin-manager
+category: market
+description:
+  en: 'GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, and list built-in plugin packages — hot-applied without restart.'
+  zh: 在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。

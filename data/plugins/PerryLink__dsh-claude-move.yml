@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-claude-move
+name: PerryLink/dsh-claude-move
+category: session
+description:
+  en: 'Four-source migration wizard: move Claude Code, Codex, OpenCode and Hermes sessions, memories, skills, instructions and slash commands into DSH (/move wizard with approval gate and idempotent move.json, resumable sessions).'
+  zh: 四合一迁移向导：把 Claude Code、Codex、OpenCode、Hermes 的会话、记忆、技能、指令与斜杠命令迁入 DSH（/move 向导，审批门 + 幂等 move.json，会话可续聊）。

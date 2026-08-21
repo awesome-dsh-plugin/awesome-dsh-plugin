@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-all
+name: DamonKoy/dsh-web-ui#dsh-web-ui-all
+category: ui
+description:
+  en: 'DSH Web UI family aggregator: one-click install of all feature plugins (task-board, git-graph, pet, remote-web-ui, live-stats, web-ui-settings).'
+  zh: DSH Web UI 全家桶聚合插件：一键安装全部功能插件（task-board/git-graph/pet/remote-web-ui/live-stats/web-ui-settings）。

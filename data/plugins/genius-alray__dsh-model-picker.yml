@@ -1,0 +1,6 @@
+url: https://github.com/genius-alray/dsh-model-picker
+name: genius-alray/dsh-model-picker
+category: ui
+description:
+  en: 'Dialog-style model picker for the DSH Web UI: fuzzy search, collapsible provider groups, favorites with a favorites-only filter, and a thinking-level dropdown, replacing the built-in model selector with official UI primitives and DSW tokens.'
+  zh: Web UI 模型选择器替换插件：对话框式选择，支持模糊搜索、供应商折叠分组、收藏与只看收藏过滤，以及思考档位下拉，复用官方组件库与 DSW 设计 token。

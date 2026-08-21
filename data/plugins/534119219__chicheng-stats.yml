@@ -1,0 +1,6 @@
+url: https://github.com/534119219/chicheng-stats
+name: 534119219/chicheng-stats
+category: usage
+description:
+  en: 'Configurable DSH usage statistics: a sidebar text/card widget plus a detail dialog with per-provider and per-model breakdowns, cache-hit rates, token trends, and latency details (TTFT and duration).'
+  zh: 高度可配置的 DSH 用量统计插件：侧边栏文字/卡片组件加统计弹窗，提供按提供方与按模型的请求/Token 统计、缓存命中率、趋势图与首字节/总耗时明细。

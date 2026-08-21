@@ -1,0 +1,6 @@
+url: https://github.com/Yujm888/dsh-turn-rail
+name: Yujm888/dsh-turn-rail
+category: ui
+description:
+  en: 'Codex-style auto-hiding right-edge turn rail: edge-peek show/hide, per-turn tooltip, in-rail search, and a scrolling 30-turn window for long sessions.'
+  zh: Codex 风格自动隐藏右缘轮次导航：靠边浮现、单轮 tooltip、会话内搜索、长会话 30 轮滚动窗口。

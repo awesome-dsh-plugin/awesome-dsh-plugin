@@ -1,0 +1,6 @@
+url: https://github.com/DshMarketPlace/dsh-plugins-store
+name: DshMarketPlace/dsh-plugins-store
+category: market
+description:
+  en: 'Browse and install DSH plugins without leaving the harness: a /store command, a Settings → Plugins tab, two agent-callable tools and a bundled skill, with an approval gate that lists the detected risk flags before anything installs.'
+  zh: '不离开 harness 就能找插件、装插件：/store 命令、设置页的插件标签页、两个可供 agent 调用的工具和一个随包技能，安装前先确认并列出检测到的风险项。'

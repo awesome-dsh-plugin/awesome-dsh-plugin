@@ -1,0 +1,6 @@
+url: https://github.com/dsh-niao/dsh-niao-quick-open
+name: dsh-niao/dsh-niao-quick-open
+category: ui
+description:
+  en: 'UI enhancement suite for DeepSeek Harness: one-click workspace open (copy path, reveal in Finder, open in an auto-discovered editor), DeepSeek-web-style user-message nav rail, session to-do marks, flat-list polish, and a hard-restart button.'
+  zh: 'DeepSeek Harness 界面增强插件：工作区一键打开（复制路径、访达显示、自动发现编辑器打开）、用户消息导航条、会话待办标记、单列表增强与硬性重启按钮。'

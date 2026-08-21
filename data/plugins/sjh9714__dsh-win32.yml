@@ -1,0 +1,6 @@
+url: https://github.com/sjh9714/dsh-win32
+name: sjh9714/dsh-win32
+category: dev
+description:
+  en: Makes Minimal mode work on Windows by supplying the missing win32 process inspector, so the persistent shell actually starts. Adds a busybox-based preset whose persistent shell survives the workspace-write restricted token (MSYS shells die there), ConPTY console-list foreground resolution, GBK/UTF-16 file reads, and an install-trap doctor.
+  zh: 补上官方缺失的 win32 进程探测，让 Minimal 模式在 Windows 上真正可用，持久 shell 才能起来。附 busybox 变体预设，其持久 shell 能在 workspace-write 受限令牌下存活（MSYS 系 shell 在那里会崩），另有基于 ConPTY 控制台进程列表的前台命令解析、GBK/UTF-16 文件读取，以及安装排障工具。

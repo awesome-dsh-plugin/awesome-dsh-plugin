@@ -1,0 +1,6 @@
+url: https://github.com/yoiizesdev-crypto/DSH-Balance-display
+name: yoiizesdev-crypto/DSH-Balance-display
+category: usage
+description:
+  en: 'Real-time DeepSeek account balance badge in the sidebar footer with odometer roll animation, multi-currency support, balance trend chart, per-key usage statistics with historical backfill, and GitHub version auto-check.'
+  zh: '侧边栏底部实时显示 DeepSeek 账户余额徽章：数字滚轮动画、多币种支持、余额趋势图、按 Key 用量统计（含安装前历史回填），并支持 GitHub 版本自动检查。'

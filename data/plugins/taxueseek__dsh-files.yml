@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/dsh-files
+name: taxueseek/dsh-files
+category: ui
+description:
+  en: File upload with color-coded attachment cards (session-isolated storage, sha256 dedup, TTL sweep) plus a content-sniffing read_document tool for PDF/DOCX/XLSX/TXT.
+  zh: 文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。

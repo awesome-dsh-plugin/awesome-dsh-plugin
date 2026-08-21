@@ -1,0 +1,6 @@
+url: https://github.com/hackerFish/dsh-lab
+name: hackerFish/dsh-lab
+category: dev
+description:
+  en: 'Tested-curation lab for DSH plugins: every entry passes real install/static-scan gates in an isolated environment, with full logs and reproduction commands (Chinese-first).'
+  zh: DSH 插件实测实验室：每个条目都在隔离环境真机过四关（安装/冒烟/快检/钉版），公开完整日志与复现命令，只发测过的结论。

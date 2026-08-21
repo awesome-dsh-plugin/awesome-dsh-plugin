@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-projection-guard
+name: DamonKoy/dsh-projection-guard
+category: session
+description:
+  en: 'Guards the persisted session-projection cache: per-row JSON degradation so one misbehaving projection unit (e.g. a third-party plugin storing a Map) can never stall session titles or the whole cache again, plus a startup self-heal that backfills missing titles.'
+  zh: 会话投影缓存守卫：逐行 JSON 降级，单个违规投影单元（如第三方插件存储 Map）不再拖垮会话标题与整个缓存；启动自愈自动补全缺失标题。

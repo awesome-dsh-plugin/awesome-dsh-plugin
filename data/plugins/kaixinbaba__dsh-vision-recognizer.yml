@@ -1,0 +1,6 @@
+url: https://github.com/kaixinbaba/dsh-vision-recognizer
+name: kaixinbaba/dsh-vision-recognizer
+category: vision
+description:
+  en: Vision provider route that transcribes attached images to text through a configurable model (15+ OpenAI-compatible and Anthropic vendors) while DeepSeek keeps answering.
+  zh: 视觉模型路由：把附加图片经可配置模型（15+ OpenAI 兼容与 Anthropic 供应商）转译为文字，对话仍由 DeepSeek 作答。

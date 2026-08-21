@@ -1,0 +1,6 @@
+url: https://github.com/lonelymoon87/dsh-specflow
+name: lonelymoon87/dsh-specflow
+category: workflow
+description:
+  en: Adds specification artifacts, skills, commands, goal-backed implementation, and task-progress context.
+  zh: 增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。

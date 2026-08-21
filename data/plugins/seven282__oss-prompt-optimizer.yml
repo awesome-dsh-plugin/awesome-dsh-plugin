@@ -1,0 +1,6 @@
+url: https://github.com/seven282/oss-prompt-optimizer
+name: seven282/oss-prompt-optimizer
+category: tools
+description:
+  en: 'Turn a casually written sentence into a four-section (Role / Task / Context / Format) or plain-text professional prompt via the harness llm service. Situation-aware role / task / goal profiling keeps ##Role tied to the task; /dream appends a clearly labelled AI-inferred insights appendix; /template covers 21 sub-scenes with zero model calls; input-box ✨ one-click optimize / undo, prompt_optimize tool (optimize + iterate), auto-optimize hook, auto-detected zh/en role document.'
+  zh: '将随手写的一句话经 harness llm 服务优化为四段（Role / Task / Context / Format）或纯文本格式的专业提示词。情境感知角色/任务/目标画像，让 ##Role 与任务强相关；/dream 追加明确标注的「AI 推断延伸洞察」；/template 覆盖 21 个子类场景零模型调用；输入框 ✨ 一键优化/撤销、prompt_optimize 工具（优化+迭代）、自动优化钩子与中英自动检测的角色文档。'

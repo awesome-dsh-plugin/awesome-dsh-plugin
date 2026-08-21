@@ -1,0 +1,6 @@
+url: https://github.com/Jamailar/beav-deepseek-harness
+name: Jamailar/beav-deepseek-harness
+category: tools
+description:
+  en: 'Connects DSH to local Beav for Xiaohongshu (RED/RedNote) and social-media AI operations: topic research, knowledge, copywriting, image, audio, and short-video workflows with approval and artifact tracking.'
+  zh: 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。

@@ -1,0 +1,6 @@
+url: https://github.com/SaiSenBox/dsh-boot-guard
+name: SaiSenBox/dsh-boot-guard
+category: dev
+description:
+  en: Loader-independent startup recovery for DSH Web that detects likely broken plugins, temporarily skips them, and restores only Boot Guard-managed changes.
+  zh: 独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。

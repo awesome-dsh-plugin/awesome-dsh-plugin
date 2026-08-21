@@ -1,0 +1,7 @@
+url: https://github.com/HUITianYi/dsh-whale-desktop-launcher
+name: HUITianYi/dsh-whale-desktop-launcher
+category: ui
+description:
+  en: Windows desktop launcher for DSH with a whale-girl icon, background server startup, and a Chromium app-mode window without browser chrome.
+  zh: DSH 的 Windows 桌面启动器，提供鲸鱼娘图标、后台服务启动和无浏览器工具栏的 Chromium 应用窗口。
+tarball: https://github.com/HUITianYi/dsh-whale-desktop-launcher/releases/latest/download/dsh-whale-desktop-launcher-0.1.0.tgz

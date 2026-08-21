@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-slack
+name: STARDUSTLC666/dsh-slack
+category: notify
+description:
+  en: Two-way Slack messaging (notify/channels/inbox/reply) over Socket Mode, no public callback needed.
+  zh: Slack 双向通信（notify/channels/inbox/reply，Socket Mode 免公网回调）。

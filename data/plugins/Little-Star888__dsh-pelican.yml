@@ -1,0 +1,6 @@
+url: https://github.com/Little-Star888/dsh-pelican
+name: Little-Star888/dsh-pelican
+category: fun
+description:
+  en: 'A pelican riding a bicycle along a seashore in the bottom-right corner: an SVG animation that reflects the agent working state (thinking/done), with a chime and an optional system notification when a reply finishes.'
+  zh: '右下角鹈鹕环海骑行 SVG 动画，随代理状态在思考/完成间切换，回复完成时播放提示音并可选发送系统通知。'

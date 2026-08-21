@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-plugin-center
+name: Max-Null/dsh-plugin-center
+category: market
+description:
+  en: 'Plugin center for DeepSeek Harness: installed-plugin metadata, a community market with stars and versions, one-click install and update, and a What''s New dialog.'
+  zh: DeepSeek Harness 插件中心：已安装插件信息、带星标与版本号的社区市场、一键安装与更新，以及启动时的更新日志弹窗。

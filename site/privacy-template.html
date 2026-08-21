@@ -1,0 +1,106 @@
+<!doctype html>
+<!-- Privacy page template. The :root block and @font-face are duplicated from
+     template.html — keep all three files in sync. Body prose per locale lives
+     in site/privacy.<code>.html, referenced from site/locales.mjs. -->
+<html lang="__LANG__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<meta name="description" content="__DESC__">
+<link rel="canonical" href="__URL__">
+__HREFLANGS__
+<meta property="og:type" content="website">
+<meta property="og:title" content="__TITLE__">
+<meta property="og:description" content="__DESC__">
+<meta property="og:url" content="__URL__">
+<meta property="og:image" content="__OG_IMAGE__">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211d18">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preload" href="/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Self-hosted — see the note in site/template.html. */
+@font-face{
+  font-family:'Archivo';
+  font-style:normal;
+  font-weight:500 900;
+  font-display:swap;
+  src:url(/archivo-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Archivo';
+  font-style:normal;
+  font-weight:500 900;
+  font-display:swap;
+  src:url(/archivo-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+:root{
+  --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
+  --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
+  --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
+  --on-cinnabar:#ffffff;
+  --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#211d18; --paper-2:#282218; --card:#2a2620; --line:#3b352c; --line-2:#4c4436;
+    --ink:#ece7de; --ink-2:#b5ac9e; --ink-3:#8f8678;
+    --cinnabar:#e06a52; --cinnabar-deep:#ea8069; --cinnabar-soft:rgba(224,106,82,.13); --cinnabar-border:rgba(224,106,82,.35);
+    --on-cinnabar:#211d18;
+  }
+}
+*{margin:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--cinnabar);text-underline-offset:.15em}
+a:hover{color:var(--cinnabar-deep)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.3rem}
+header{border-bottom:1px solid var(--line);padding-block:1rem}
+header .row{display:flex;align-items:center;gap:1rem;max-width:46rem;margin:0 auto;padding:0 1.3rem}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.logo img{width:22px;height:22px}
+header .grow{flex:1}
+.lang-btn{font-size:.82rem;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:.22rem .6rem}
+.lang-btn:hover{border-color:var(--cinnabar-border);color:var(--cinnabar)}
+main{padding-block:2.6rem 1rem}
+h1{font-family:var(--display);font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:800;letter-spacing:-.025em;line-height:1.15}
+.updated{color:var(--ink-3);font-size:.86rem;margin-top:.7rem}
+.prose h2{font-family:var(--display);font-size:1.12rem;font-weight:700;letter-spacing:-.01em;margin:2.2rem 0 .5rem;padding-top:.9rem;border-top:1px solid var(--line)}
+.prose h3{font-size:.98rem;font-weight:650;margin:1.5rem 0 .3rem}
+.prose p,.prose li{color:var(--ink-2);margin:.55rem 0}
+.prose ul{padding-left:1.15rem}
+.prose strong{color:var(--ink);font-weight:650}
+.prose code{font-family:var(--mono);background:var(--cinnabar-soft);border:1px solid var(--cinnabar-border);border-radius:5px;padding:.06em .34em;font-size:.86em;color:var(--ink)}
+.prose table{width:100%;border-collapse:collapse;margin:.9rem 0;font-size:.92rem}
+.prose th,.prose td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+.prose th{color:var(--ink);font-weight:650}
+footer{border-top:1px solid var(--line);margin-top:2.6rem;padding-block:1.6rem 2.6rem;color:var(--ink-3);font-size:.8rem}
+footer .frow{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1.5rem}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--cinnabar)}
+</style>
+</head>
+<body>
+<header><div class="row">
+  <a class="logo" href="__HOME__"><img src="/logo.svg" alt="" width="22" height="22"><span translate="no">awesome-dsh-plugin</span></a>
+  <span class="grow"></span>
+  __LOCALE_LINKS__
+</div></header>
+
+<main class="wrap prose">
+__PRIVACY_BODY__
+</main>
+
+<footer><div class="wrap frow">
+  <span>© 2026 awesome-dsh-plugin · <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">GitHub</a> · __T_NOTAFF__</span>
+  <span><a href="__HOME__">__T_BACKHOME__</a></span>
+</div></footer>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

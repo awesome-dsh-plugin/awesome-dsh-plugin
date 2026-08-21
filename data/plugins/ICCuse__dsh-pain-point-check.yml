@@ -1,0 +1,6 @@
+url: https://github.com/ICCuse/dsh-pain-point-check
+name: ICCuse/dsh-pain-point-check
+category: dev
+description:
+  en: 'Enforced pain-point gate: after two non-converged experiments it injects the three questions, denies non-investigative tool calls until answered, and blocks same-direction retries.'
+  zh: 强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。

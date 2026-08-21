@@ -1,0 +1,6 @@
+url: https://github.com/YZz-S/dsh-billing-balance
+name: YZz-S/dsh-billing-balance
+category: usage
+description:
+  en: Shows DeepSeek API account balance and Volcengine Ark Coding/Agent Plan quota windows (5h/weekly/monthly with reset countdowns) in the settings panel, composer dock, and a draggable floating refresh button.
+  zh: 在设置页、输入框下方读数条与可拖动悬浮按钮三处显示 DeepSeek 官方 API 余额与火山方舟 Coding/Agent Plan 套餐额度（5小时/周/月窗口及重置倒计时）。
