@@ -1,0 +1,6 @@
+url: https://github.com/wilianyichen/dsh-official-vision
+name: wilianyichen/dsh-official-vision
+category: vision
+description:
+  en: 'Direct official DeepSeek vision API bridge: registers deepseek-v4-flash-vision-exp as a provider route, streams images straight to api.deepseek.com with base64 inline and configurable detail, and delegates text-only calls to the built-in route.'
+  zh: '直连 DeepSeek 官方视觉 API 的插件：注册 deepseek-v4-flash-vision-exp 为 provider 路由，图片直接送入官方 API（base64 内联、detail 可选），纯文本请求透传官方路由。'

@@ -1,0 +1,6 @@
+url: https://github.com/wilianyichen/dsh-deepseek-web
+name: wilianyichen/dsh-deepseek-web
+category: tools
+description:
+  en: 'Operate chat.deepseek.com as a programmable agent from inside DSH: list/get/chat sessions, share create/fork/list, sync archive, and a digest tool that compresses the 100-session history into one high-density page.'
+  zh: '把 DeepSeek 网页版当作可编程 Agent：列会话/读全文/发消息/分享创建与 Fork/同步归档，以及把 100 段会话压缩成一页高密度摘要的 digest 工具。'
