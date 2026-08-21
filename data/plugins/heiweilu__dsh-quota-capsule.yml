@@ -1,0 +1,6 @@
+url: https://github.com/heiweilu/dsh-quota-capsule
+name: heiweilu/dsh-quota-capsule
+category: usage
+description:
+  en: Provider quota capsule that follows the session's current model — GLM Coding / Kimi Coding / MiniMax 5-hour and weekly windows with reset countdowns, plus DeepSeek balance, in a floating capsule.
+  zh: 跟随会话当前模型供应商的配额胶囊：GLM Coding / Kimi Coding / MiniMax 的 5 小时与每周窗口用量（带重置倒计时）及 DeepSeek 余额，右下角悬浮显示。
