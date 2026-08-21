@@ -665,9 +665,6 @@
  "https://github.com/minivv/dsh-agent-skills": [
   "https://raw.githubusercontent.com/minivv/dsh-agent-skills/main/agent-skills-page.png"
  ],
- "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": [
-  "https://raw.githubusercontent.com/moguiyu/dsh-tavily/main/assets/tavily-search.png"
- ],
  "https://github.com/niuniuaba/dsh-subagent-vision": [
   "https://raw.githubusercontent.com/niuniuaba/dsh-subagent-vision/main/assets/screenshot-models.png",
   "https://raw.githubusercontent.com/niuniuaba/dsh-subagent-vision/main/assets/screenshot-vision-route.png"
@@ -1140,13 +1137,16 @@
  "https://github.com/alone-tree/dsh-skill-mcp-manager": [
   "https://raw.githubusercontent.com/alone-tree/dsh-skill-mcp-manager/main/docs/screenshot-mcp.png",
   "https://raw.githubusercontent.com/alone-tree/dsh-skill-mcp-manager/main/docs/screenshot-skills.png"
+ ],
+ "https://github.com/liqiming-whu/dsh-status-card": [
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-a.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-b.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-c.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-d.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-e.svg",
+  "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-f.svg"
+ ],
+ "https://github.com/moguiyu/dsh-tavily": [
+  "https://raw.githubusercontent.com/moguiyu/dsh-tavily/main/assets/tavily-search.png"
  ]
-,
-  "https://github.com/liqiming-whu/dsh-status-card": [
-   "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-a.svg",
-   "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-b.svg",
-   "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-c.svg",
-   "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-d.svg",
-   "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-e.svg",
-   "https://raw.githubusercontent.com/liqiming-whu/dsh-status-card/main/docs/images/templates/bilingual/template-f.svg"
-  ]}
+}
