@@ -1162,5 +1162,11 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/AKS1st/dsh-skill-manager": [
+  "https://raw.githubusercontent.com/AKS1st/dsh-skill-manager/main/assets/screenshot-en.png",
+  "https://raw.githubusercontent.com/AKS1st/dsh-skill-manager/main/assets/editor-en.png",
+  "https://raw.githubusercontent.com/AKS1st/dsh-skill-manager/main/assets/screenshot-zh.png",
+  "https://raw.githubusercontent.com/AKS1st/dsh-skill-manager/main/assets/editor-zh.png"
  ]
 }
