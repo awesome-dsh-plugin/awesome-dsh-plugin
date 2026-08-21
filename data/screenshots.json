@@ -1093,5 +1093,9 @@
   "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/example.png",
   "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/settings.png",
   "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/update.png"
+ ],
+ "https://github.com/WSL043/dsh-session-delete": [
+  "https://raw.githubusercontent.com/WSL043/dsh-session-delete/main/docs/assets/hero.en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-session-delete/main/docs/assets/confirm-delete.en.png"
  ]
 }
