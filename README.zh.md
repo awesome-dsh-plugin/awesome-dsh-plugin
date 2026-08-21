@@ -487,6 +487,7 @@ dsh plugin --profile web add dshmarket
 - [GptsApp/dsh-stylevault](https://github.com/GptsApp/dsh-stylevault) — 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。
 - [hanyi7867069-create/dsh-moonrise](https://github.com/hanyi7867069-create/dsh-moonrise) — 月升暗色主题——深蓝夜色打底、琥珀月光点缀。
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
+- [jiangwangyang/dsh-theme-blackhole](https://github.com/jiangwangyang/dsh-theme-blackhole) — DeepSeek Harness（dsh）Web UI 的黑洞主题插件。
 - [Juryorca/dsh-custom-theme-import](https://github.com/Juryorca/dsh-custom-theme-import) — DSH Web 皮肤管理器：支持主流 DSH 皮肤包本地/GitHub 导入、扫描已安装皮肤、预览/使用/禁用/刷新/删除，宿主持久化。
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) — DSH Web 壁纸皮肤：预设 / 图片 URL / 本地上传，透明度滑块让整面界面透出壁纸。
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) — Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。
