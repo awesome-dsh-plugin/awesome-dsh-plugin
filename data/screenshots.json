@@ -1131,5 +1131,10 @@
  "https://github.com/WSL043/dsh-codex-subscription": [
   "https://raw.githubusercontent.com/WSL043/dsh-codex-subscription/main/docs/assets/settings-en.png",
   "https://raw.githubusercontent.com/WSL043/dsh-codex-subscription/main/docs/assets/composer-quota-en.png"
+ ],
+ "https://github.com/mkiea/dsh-forge": [
+  "https://raw.githubusercontent.com/mkiea/dsh-forge/master/assets/screenshot-1.png",
+  "https://raw.githubusercontent.com/mkiea/dsh-forge/master/assets/screenshot-2.png",
+  "https://raw.githubusercontent.com/mkiea/dsh-forge/master/assets/screenshot-3.png"
  ]
 }
