@@ -693,7 +693,7 @@ dsh plugin --profile web add dshmarket
 - [tmpdot/dsh-checkpoint-diff](https://github.com/tmpdot/dsh-checkpoint-diff) — 把 dsh-checkpoint-rewind 产生的检查点变成时间线时间节点，任意两节点之间逐文件行级 diff；可从会话日志重放 trace 区间差异（无需快照生产者）；支持预览式工作区回滚与一次性撤销。提供 /diff、/rollback 命令、JSON HTTP API 与 GUI 面板。
 - [Totoro-qaq/dsh-plugin-bridge](https://github.com/Totoro-qaq/dsh-plugin-bridge) — 通过可预览的五段式交接，将已有 DSH 会话迁移到另一个 Agent Preset；保留源会话，并可让目标会话暂停等待确认或立即继续。
 - [tsingshitao-nuke/dsh-set-workspace](https://github.com/tsingshitao-nuke/dsh-set-workspace) — 给 Windows 文件管理器加右键项：把文件夹设为 DSH 工作区并切换到它，DSH 未运行会自动拉起。
-- [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) — 对话旁的悬浮按钮，打开当前会话全部提问的可搜索列表并快速跳转。
+- [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) — 对话旁的悬浮按钮，打开当前会话全部提问的可搜索列表并快速跳转；悬浮弹出/移出平滑关闭。
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) — 为会话添加标签，并在 Web 设置面板中按标签搜索会话。
 - [txlznbzsdj-collab/dsh-session-delete](https://github.com/txlznbzsdj-collab/dsh-session-delete) — 在侧边栏会话菜单添加「删除」项，经二次确认后硬删除该会话。
 - [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — DeepSeek Harness 已归档聊天设置页：按工作区浏览、搜索和筛选会话，添加标签与备注，查看存储统计，导出并预览导入带版本的 JSON/Markdown ZIP 备份，恢复无冲突归档，取消归档和删除会话，包括无需重启即可删除仍在后台运行的会话。
