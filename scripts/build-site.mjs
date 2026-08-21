@@ -53,6 +53,21 @@ const CAT_IDS = ENTRY_CAT_IDS
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
+// Sponsor slot. Unset (the default) emits no markup and loads no third-party
+// script, so the slot is inert until EA_PUBLISHER is set in the build env.
+const EA_PUBLISHER = process.env.EA_PUBLISHER || ''
+const adSlot = () =>
+  EA_PUBLISHER
+    ? `<div class="adband"><div class="wrap">
+  <div class="adslot" data-ea-publisher="${esc(EA_PUBLISHER)}" data-ea-type="image"></div>
+</div></div>`
+    : ''
+const adScript = () =>
+  EA_PUBLISHER
+    ? `<script>if(matchMedia('(prefers-color-scheme:dark)').matches)for(const e of document.querySelectorAll('.adslot'))e.classList.add('dark')</script>
+<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>`
+    : ''
+
 const dupes = []
 function parseReadme(loc) {
   const text = fs.readFileSync(loc.readme, 'utf8')
@@ -365,6 +380,8 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    .replaceAll('__AD_SLOT__', () => adSlot())
+    .replaceAll('__AD_SCRIPT__', () => adScript())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
@@ -408,6 +425,8 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      .replaceAll('__AD_SLOT__', () => adSlot())
+      .replaceAll('__AD_SCRIPT__', () => adScript())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
@@ -629,6 +648,8 @@ ${readmeHtml}
       .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
+      .replaceAll('__AD_SLOT__', () => adSlot())
+      .replaceAll('__AD_SCRIPT__', () => adScript())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
       .replaceAll('__P_SHORT__', () => esc(short))
       .replaceAll('__P_H1__', () => h1)
