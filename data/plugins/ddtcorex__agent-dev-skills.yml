@@ -1,0 +1,6 @@
+url: https://github.com/ddtcorex/agent-dev-skills
+name: ddtcorex/agent-dev-skills
+category: skill
+description:
+  en: Eleven AI-agent development skills — eight Magento 2 specialists (architecture core, backend/frontend, Hyvä, linting, security scan, performance audit, code review) plus Govard environment tooling with Laravel support — mounted as a DeepSeek Harness skill provider by a Cordis plugin.
+  zh: 十一个AI代理开发技能——八个 Magento 2 专项（架构核心、后台/前台、Hyvä、静态检查、安全扫描、性能审计、代码评审）加 Govard 环境工具与 Laravel 支持——通过 Cordis 插件挂载为 DeepSeek Harness 的技能提供者。

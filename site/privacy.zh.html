@@ -1,17 +1,17 @@
 <h1>隐私政策</h1>
-<p class="updated">最后更新 2026-08-18。本页按代码写，不按意图写——下面每一条都能在构建本站的<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">仓库</a>里核对。如果哪一条和站点实际行为对不上，那是 bug，请告诉我们。</p>
+<p class="updated">最后更新 2026-08-21。本页按代码写，不按意图写——下面每一条都能在构建本站的<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">仓库</a>里核对。如果哪一条和站点实际行为对不上，那是 bug，请告诉我们。</p>
 
 <h2>一句话版本</h2>
-<p>这是一个静态站点，没有账号，我们也不运营任何服务器。它<strong>不设置任何 cookie</strong>，不在你的浏览器里存任何东西。它统计页面访问量，但无法识别你是谁。除这个计数器外，渲染页面不会联系任何第三方。</p>
+<p>这是一个静态站点，没有账号，我们也不运营任何服务器。它统计页面访问量但无法识别你是谁，自身也不在你的浏览器里存任何东西。它<strong>正在引入广告</strong>——见下文——这里会不会出现 cookie，取决于最终接的是哪一家。除此之外，渲染页面不会联系任何第三方。</p>
 
 <h2>访问统计</h2>
 <p>我们使用 <strong>Cloudflare Web Analytics</strong>。它不用 cookie，不做浏览器指纹，也不跨站跟踪你。它记录页面访问量和粗粒度的技术信息——来源页、国家/地区、浏览器与设备类别——由 Cloudflare 聚合。我们看到的是数字，不是个人，也没有任何办法从里面把你单独识别出来。详见 <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a>。</p>
 
 <h2>Cookie 与浏览器存储</h2>
-<p>本站不设置 cookie，不写入 <code>localStorage</code> 或 <code>sessionStorage</code>。你的分类筛选和搜索状态保存在 URL 里，除非你自己复制链接，否则它不会离开你的浏览器。</p>
+<p>本站自身不设置 cookie。若<a href="#advertising">广告</a>一节所述的 Google AdSense 广告位启用，Google 会为广告设置 cookie，那是这里唯一的 cookie 来源。本站不写入 <code>localStorage</code> 或 <code>sessionStorage</code>。你的分类筛选和搜索状态保存在 URL 里，除非你自己复制链接，否则它不会离开你的浏览器。</p>
 
 <h2>一个页面会加载什么</h2>
-<p>字体和样式表都由本域名提供，<strong>没有第三方网络字体</strong>。没有广告网络，没有社交组件，没有代码管理器（tag manager），除上面提到的统计脚本和页面内少量筛选逻辑外没有其他脚本。</p>
+<p>字体和样式表都由本域名提供，<strong>没有第三方网络字体</strong>。没有社交组件，没有代码管理器（tag manager）；除上面提到的统计脚本、页面内少量筛选逻辑，以及启用时<a href="#advertising">广告</a>一节所述的广告脚本外，没有其他脚本。</p>
 
 <h3>插件页面里的图片</h3>
 <p>每个插件页面会转载该项目的 README，其中可能包含图片。README 由第三方撰写，因此其中的图片本会让你的浏览器向我们无法控制的主机发起请求——追踪像素正是这样进入页面的。所以我们把这些图片限制在 <strong>GitHub 自有托管</strong>（<code>raw.githubusercontent.com</code>、<code>user-images.githubusercontent.com</code>、<code>camo.githubusercontent.com</code>、<code>github.com</code>）范围内，其余一律丢弃并保留其替代文字。由于本站本身就由 GitHub Pages 提供服务，GitHub 已经会收到你对页面本身的请求——因此保留下来的图片不会引入任何原本不在链路上的第三方。</p>
@@ -28,8 +28,15 @@
 <h2>参与贡献</h2>
 <p>投稿通过 GitHub 的 pull request 提交，适用 GitHub 的条款，并具有公开仓库应有的可见性。本网站不接收任何投稿，它没有任何表单。</p>
 
-<h2>广告</h2>
-<p>本站没有广告，也没有引入广告的安排。若此事发生变化，本页会更新，明确说明届时运行的是什么、它会收到什么，并且该变更会体现在本仓库的提交历史中。</p>
+<h2 id="advertising">广告</h2>
+<p>本页此前的版本写着「本站没有广告，也没有引入广告的安排」，并承诺若此事变化，本页会明确说明届时运行的是什么。这一节就是那份说明。</p>
+<p>本站正在引入广告。已经向两家申请，但最终最多只会跑其中一家——第一家要求页面上只能有它一个广告：</p>
+<ul>
+<li><strong><a href="https://www.ethicalads.io/" rel="noopener">EthicalAds</a></strong>——面向开发者站点的广告网络。每页一条，位于列表上方，绝不插在列表中间。它不设置 cookie，不使用 localStorage 类标识符，不运行广告主提供的代码，所有广告素材托管在自己的服务器上，也不做行为定向：广告只根据页面内容和请求时由 IP 推算出的粗略地理位置来选择。</li>
+<li><strong>Google AdSense</strong>——<strong>这一家确实会用 cookie</strong>，本站其它任何部分都不用。Google 及其合作方用它来投放和衡量广告，并在你同意的前提下，根据你在其它网站上的活动做个性化。Google 也会在广告请求中收到你的 IP 地址。欧洲经济区、英国和瑞士的访客会先被征求同意，可以拒绝；拒绝的结果是投放非个性化广告，而不是页面出错。你可以在<a href="https://myadcenter.google.com/" rel="noopener">我的广告中心</a>查看并更改这些设置。</li>
+</ul>
+<p>两个广告位都已随构建脚本发布，但在配置对应的 publisher id 之前保持惰性；同时配置两家会让构建直接失败。惰性状态下不请求任何广告脚本，也不加载任何第三方资源——你可以查看网页源代码、搜索 <code>ethicalads</code> 或 <code>adsbygoogle</code> 来判断本站当前处于哪种状态。本域名下的 <code>/ads.txt</code> 列出了谁有权出售这里的广告位。</p>
+<p>广告绝不影响收录。是否收录只由 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md" rel="noopener">contributing.md</a> 里的标准决定，从来不能购买；页面上多了一条横幅并不改变这一点。</p>
 
 <h2>联系方式</h2>
 <p>勘误与疑问请<a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/issues" rel="noopener">提交 issue</a>。</p>
