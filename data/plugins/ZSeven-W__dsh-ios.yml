@@ -1,0 +1,6 @@
+url: https://github.com/ZSeven-W/dsh-ios
+name: ZSeven-W/dsh-ios
+category: remote
+description:
+  en: 'A live iOS Simulator or USB-connected iPhone inside the conversation: 22 agent tools for booting, building, driving the UI by accessibility identity or OCR text, list-row actions and SwiftUI preview hot reload, plus a streaming sidebar panel you can tap and drag on.'
+  zh: '在对话里直接操作 iOS 模拟器或 USB 连接的 iPhone：22 个 Agent 工具用于启动、构建、按无障碍标识或 OCR 文本驱动 UI、列表行操作与 SwiftUI 预览热重载，并附带可点击拖拽的流式侧边栏面板。'
