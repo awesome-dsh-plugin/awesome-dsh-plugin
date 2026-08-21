@@ -1697,6 +1697,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [WODE25500/dsh-codex](https://github.com/WODE25500/dsh-codex) - OpenAI Codex CLI wrapper: one-shot exec, repo review and session resume with a default read-only sandbox.
 - [WODE25500/dsh-k6](https://github.com/WODE25500/dsh-k6) - Load testing with Grafana k6: smoke-test first, then run scripts and read percentiles from the JSON summary.
 - [WODE25500/dsh-kubectl](https://github.com/WODE25500/dsh-kubectl) - Kubernetes ops for the agent: get resources with structured JSON output, describe, logs, exec, apply/delete (user-confirmed) and port-forward.
+- [WODE25500/dsh-maf](https://github.com/WODE25500/dsh-maf) - Microsoft Agent Framework (MAF) integration: validate, run and scaffold declarative agents and workflows defined in YAML.
 - [WODE25500/dsh-terraform](https://github.com/WODE25500/dsh-terraform) - Infrastructure as code: gated plan/apply, state and output inspection, and configuration validation via the terraform CLI.
 - [WODE25500/dsh-winget](https://github.com/WODE25500/dsh-winget) - Windows Package Manager: search, install, upgrade, uninstall, import/export and pin software through native tools.
 - [worksAssistant/dsh-quickref](https://github.com/worksAssistant/dsh-quickref) - Developer quick-reference toolbox for DSH: 12 themed categories (195 entries) plus zero-dependency tools — regex tester, JSON formatter, timestamp converter, Base64/URL codec, cron generator and line diff, in a searchable settings panel.
