@@ -1,0 +1,7 @@
+url: https://github.com/jsdvjx/dshn/tree/main/packages/agent
+name: jsdvjx/dshn#agent
+category: remote
+tarball: https://github.com/jsdvjx/dshn/releases/latest/download/dshn.tgz
+description:
+  en: "Forwards a local dsh web UI to the public internet under a *.ds.hn subdomain (or your own self-hosted relay), gated by a login, with optional end-to-end encryption (PBKDF2 to AES-256-GCM)."
+  zh: "把本地 dsh 网页通过带登录门禁的中继转发到公网 *.ds.hn 子域名(也可自托管到自己的域名),支持可选的端到端加密(PBKDF2 到 AES-256-GCM)。"
