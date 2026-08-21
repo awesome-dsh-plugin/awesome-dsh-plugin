@@ -898,6 +898,7 @@ dsh plugin --profile web add dshmarket
 - [jinhuoooo/dsh-prompt-polish](https://github.com/jinhuoooo/dsh-prompt-polish) — 输入框 ✨ 一键润色按钮：参考 WorkBuddy 润色（humanizer-zh）规则改写提示词与草稿（去除 AI 写作痕迹、调整句式节奏，按指令/提问/普通文本分类处理），默认使用免费的智谱 GLM-4.5-Flash，也支持任意 OpenAI 兼容 API，断网时回退到本地规则引擎。
 - [jinsiyu/dsh-auto-open-web](https://github.com/jinsiyu/dsh-auto-open-web) — deepseek harness自动打开浏览器插件，内置WebView2程序实现轻量级桌面化。
 - [jinsiyu/dsh-safemode-profile](https://github.com/jinsiyu/dsh-safemode-profile) — dsh安全模式插件，通过构建空白profile实现零第三方插件启动。
+- [JoFe2/kaleidosphere-dsh-plugin](https://github.com/JoFe2/kaleidosphere-dsh-plugin) — Registers six native DeepSeek Harness tools for deterministic fixture-based or read-only Microsoft SQL Server and Oracle database analysis, planning, preview, and readback.
 - [Johnny-xuan/dsh-paste-to-path](https://github.com/Johnny-xuan/dsh-paste-to-path) — 为图片、文档、压缩包、代码及其他文件提供路径附件 Dock，文件读取交由 Agent 的当前可用工具完成。
 - [JohnXu22786/bookkeeping](https://github.com/JohnXu22786/bookkeeping) — dsh 的对话式记账插件:聊天即可记账(严格金额校验、自然语言日期、自动分类),并支持查询、报表、CSV/HTML 导出和月度预算,数据存于本地 SQLite 账本。
 - [JohnXu22786/codegraph](https://github.com/JohnXu22786/codegraph) — 面向 agent 的本地代码知识图谱：把代码库（Python/JS/TS/Go/Java/Rust）解析进 SQLite 索引，回答调用者、被调用者、依赖、反向依赖、影响面与全文检索问题。
