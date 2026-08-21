@@ -1,0 +1,6 @@
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-skins
+name: zhu1090093659/dsh-web-ui#packages/dsh-skins
+category: theme
+description:
+  en: 'Skin center for the dsh web GUI: skins are pure asset directories loaded by the skin-center loader, with try-on before applying, plus Wallpaper Engine wallpaper integration.'
+  zh: dsh web 皮肤中心：皮肤是纯资产目录、由皮肤中心统一加载，支持先试穿再应用，并集成 Wallpaper Engine 壁纸库。

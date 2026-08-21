@@ -1,0 +1,6 @@
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-liangshen
+name: zhu1090093659/dsh-web-ui#packages/dsh-liangshen
+category: ui
+description:
+  en: 'LiangShen (梁神) agent preset for the dsh web GUI: a two-phase anchored preset that opens with a minimal tool set and switches to full PTC mode once the trajectory is anchored.'
+  zh: 面向 DeepSeek V4 Pro 的「梁神模式」agent 预设：首轮按 Minimal 开局，轨迹锚定后自动切到完整 PTC Mode。

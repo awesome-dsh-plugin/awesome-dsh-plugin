@@ -1,0 +1,6 @@
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-web-ui-settings
+name: zhu1090093659/dsh-web-ui#packages/dsh-web-ui-settings
+category: ui
+description:
+  en: 'A first-level DSH settings section grouping the dsh-web-ui family plugin toggles and config forms.'
+  zh: 在 DSH 设置页注册一级菜单项，归组全家桶插件的启用开关与配置表单。
