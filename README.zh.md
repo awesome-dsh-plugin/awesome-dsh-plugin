@@ -192,6 +192,7 @@ dsh plugin --profile web add dshmarket
 - [lcthe/dsh-timeline-rail](https://github.com/lcthe/dsh-timeline-rail) — DeepSeek Harness 网页会话消息时间轴导航条：消息区右侧等间距刻度，点击跳转，悬浮预览。
 - [LeemanCheung/dsh-whale-animation](https://github.com/LeemanCheung/dsh-whale-animation) — DSH Web 回合状态旁的 60 帧随主题适配的单色鲸鱼深潜动画：传播式水面、无缝闭环、资源内嵌、减少动态效果 PNG 回退，且随生命周期完整清理。
 - [lemonorangeapple/dsh-effort-switcher](https://github.com/lemonorangeapple/dsh-effort-switcher) — 为DSH添加一个类似于Codex的推理强度切换器。
+- [liguobao/dsh-file-viewer](https://github.com/liguobao/dsh-file-viewer) — Web 客户端只读文件预览面板，支持图片、PDF、CSV/TSV、文本、源代码、Markdown、JSON 与 YAML 渲染、大文件分段读取，以及面向非本地内容的 provider API。
 - [lihang-lh/dsh-moon-light](https://github.com/lihang-lh/dsh-moon-light) — DSH Web 界面边缘的跑马灯氛围光环：随会话状态自动变色（运行中绿色流动、完成粉色、有待处理黄色警告），设置面板可调颜色、光圈宽度、转速与闪动频率。
 - [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) — 对话栏左侧常驻大纲：按轮次列出提问与最后回复，关键词过滤与一键跳转，轻便/全面两种历史模式，按住 Ctrl/Shift 单击可跳到轨迹视图同一位置。
 - [Limitinfinitude/DSH-Right-Sidebar](https://github.com/Limitinfinitude/DSH-Right-Sidebar) — DSH Web 原生右侧产物栏，按会话收集用户产物，预览用户可读文件并保存标签状态。
