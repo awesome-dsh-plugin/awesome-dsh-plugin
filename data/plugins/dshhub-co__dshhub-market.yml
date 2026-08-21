@@ -1,5 +1,5 @@
-url: https://github.com/dshhub/dshhub-market
-name: dshhub/dshhub-market
+url: https://github.com/dshhub-co/dshhub-market
+name: dshhub-co/dshhub-market
 category: market
 description:
   en: 'Plugin market inside DeepSeek Harness powered by DSHHub.co: browse, search, one-click install community plugins and themes, with backup, updates and diagnostics.'
