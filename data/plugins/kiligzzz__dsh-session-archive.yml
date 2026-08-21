@@ -1,0 +1,6 @@
+url: https://github.com/kiligzzz/dsh-session-archive
+name: kiligzzz/dsh-session-archive
+category: session
+description:
+  en: Sidebar entry that lists every globally archived session across the host (read-only preview of the most recent turn, restore to un-archive, delete with friendly live-session error). Workspaces / sessions refresh in place after each action.
+  zh: 侧边栏入口，呈现 host 端全部全局归档会话（只读预览最近一轮、恢复取消归档、删除并在会话仍在运行时给出友好提示）。操作完成后仅局部刷新工作区/会话列表，不刷新整个页面。
