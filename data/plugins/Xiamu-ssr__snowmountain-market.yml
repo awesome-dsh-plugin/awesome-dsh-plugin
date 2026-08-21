@@ -1,0 +1,7 @@
+url: https://github.com/Xiamu-ssr/snowmountain-market
+name: Xiamu-ssr/snowmountain-market
+category: tools
+description:
+  en: Connects seven Wind financial MCP domains and Wind Alice to DSH while resolving WIND_API_KEY only inside the host credential boundary.
+  zh: 将 Wind 七个金融 MCP 域和 Wind Alice 接入 DSH，并仅在宿主凭证边界内解析 WIND_API_KEY。
+tarball: https://github.com/Xiamu-ssr/snowmountain-market/releases/latest/download/dsh-wind-aifin.tgz

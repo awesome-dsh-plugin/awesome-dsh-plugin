@@ -1,0 +1,6 @@
+url: https://github.com/shaoshi20/dshscan
+name: shaoshi20/dshscan
+category: security
+description:
+  en: 'Security scanner for DSH plugins: static and semantic passes over plugin source, DSH-specific attack-surface rules, npm audit, batch scanning, and an HTML report with per-finding severity and evidence.'
+  zh: 'DSH 插件安全扫描器：对插件源码做静态与语义双通道检查，内置 DSH 特有攻击面规则，集成 npm audit，支持批量扫描，输出带严重等级与证据的 HTML 报告。'

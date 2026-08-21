@@ -1,0 +1,6 @@
+url: https://github.com/upJiang/dsh-ccswitch
+name: upJiang/dsh-ccswitch
+category: model
+description:
+  en: Adds CC Switch providers and models to DeepSeek Harness, with provider filtering and model-name search.
+  zh: 将 CC Switch 中的 provider 和模型接入 DeepSeek Harness，并支持 provider 筛选和模型名称搜索。
