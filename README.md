@@ -24,7 +24,9 @@ dsh plugin --profile web add dshmarket
 
 > ℹ️ **On desktop clients.** This list is client-agnostic. A plugin is listed because it follows the official protocol — it declares a `dsh.bundle` manifest and installs with `dsh plugin add` — not because it adapts to any particular client.
 >
-> Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop), [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop), and [deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) by anywhere-labs — all ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
+> We're talking with `anywhere-labs/deepseek-harness-desktop` about working together again; we'll update this note as that progresses. Whatever comes of it, the listing rule stays as it is: adapting to any particular client is not a condition of being listed, and no plugin will be removed or demoted for not doing so.
+>
+> Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop) and [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop) — both ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
 
 > [!WARNING]
 > Installing a plugin runs third-party code on your machine with your own permissions — it can read your files, use your credentials, and reach the network. Tool approvals don't sandbox plugin code. Being on this list is not a security review: check the source before you install, and try unfamiliar plugins somewhere that doesn't hold your keys. See the full disclaimer at the bottom of this page.
@@ -402,6 +404,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ysyyhhh/dsh-pet](https://github.com/ysyyhhh/dsh-pet) - Native desktop pet for DSH that follows agent activity, supports Codex pet packages, and imports approved pets directly from Petdex without its CLI.
 - [Yu-tao-Li/dsh-read-image-view](https://github.com/Yu-tao-Li/dsh-read-image-view) - Displays the images read in the conversation (read_image results) in the DSH Web GUI: a dedicated Read image row with a default thumbnail and an in-page full-resolution lightbox (zoom buttons, mouse wheel, 1:1 original size), plus the metadata envelope.
 - [yuanbaoerer/dsh-decision-split](https://github.com/yuanbaoerer/dsh-decision-split) - Decision split view for DSH web UI: a decision summary card in the main window plus the full plan in an independently scrollable side panel, so you can review the whole plan while writing decisions and send them back to the agent with one click.
+- [yuanzhenqi/dsh-mobile-ui](https://github.com/yuanzhenqi/dsh-mobile-ui) - Phone-first drawer shell for DSH Web. Collapses the session list into a tap-to-open drawer, keeps header plugin actions, and turns Settings into a full-width sheet.
 - [Yuer6327/NoLetMe](https://github.com/Yuer6327/NoLetMe) - Real-time 'We need…' and 'Let me…' reasoning-trajectory keyword stats for the DeepSeek Harness web chat.
 - [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) - Codex-style auto-hiding right-edge turn rail: edge-peek show/hide, per-turn tooltip, in-rail search, and a scrolling 30-turn window for long sessions.
 - [yumm007/dsh-reveal-files](https://github.com/yumm007/dsh-reveal-files) - Turns each produced-file chip into a per-file menu: open the file, copy its path, reveal it in the native file browser, or open a terminal cd-ed into its directory.
