@@ -55,7 +55,22 @@ const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, 
 
 // Sponsor slot. Unset (the default) emits no markup and loads no third-party
 // script, so the slot is inert until EA_PUBLISHER is set in the build env.
+//
+// Two networks, never at once. EthicalAds' terms require it to be the only ad
+// on the page, so setting both is a configuration error rather than a doubling
+// of revenue — fail the build instead of quietly violating one of them.
 const EA_PUBLISHER = process.env.EA_PUBLISHER || ''
+const ADSENSE_CLIENT = process.env.ADSENSE_CLIENT || ''
+if (EA_PUBLISHER && ADSENSE_CLIENT) {
+  console.error('EA_PUBLISHER and ADSENSE_CLIENT are both set — EthicalAds must be the only ad on the page. Pick one.')
+  process.exit(1)
+}
+// AdSense places its own units (Auto ads) from this one tag, so it needs no
+// slot markup — only the head script.
+const adHead = () =>
+  ADSENSE_CLIENT
+    ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT)}" crossorigin="anonymous"></script>`
+    : ''
 const adSlot = () =>
   EA_PUBLISHER
     ? `<div class="adband"><div class="wrap">
@@ -381,6 +396,7 @@ for (const loc of LOCALES) {
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
     .replaceAll('__AD_SLOT__', () => adSlot())
+      .replaceAll('__AD_HEAD__', () => adHead())
     .replaceAll('__AD_SCRIPT__', () => adScript())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
@@ -426,6 +442,7 @@ for (const loc of LOCALES) {
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
       .replaceAll('__AD_SLOT__', () => adSlot())
+      .replaceAll('__AD_HEAD__', () => adHead())
       .replaceAll('__AD_SCRIPT__', () => adScript())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
@@ -649,6 +666,7 @@ ${readmeHtml}
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
       .replaceAll('__AD_SLOT__', () => adSlot())
+      .replaceAll('__AD_HEAD__', () => adHead())
       .replaceAll('__AD_SCRIPT__', () => adScript())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
       .replaceAll('__P_SHORT__', () => esc(short))
