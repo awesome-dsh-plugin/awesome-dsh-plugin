@@ -1,0 +1,6 @@
+url: https://github.com/onlyqzq/dsh-riskproof
+name: onlyqzq/dsh-riskproof
+category: security
+description:
+  en: Provenance-aware execution security that tracks sensitive data across DSH tool calls and blocks risky exfiltration before execution.
+  zh: 具备来源追踪能力的执行安全机制，可跨 DSH 工具调用持续追踪敏感数据，并在执行前阻断高风险的数据外泄行为。

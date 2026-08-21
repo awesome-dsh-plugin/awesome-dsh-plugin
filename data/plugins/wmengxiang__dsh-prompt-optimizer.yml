@@ -1,0 +1,6 @@
+url: https://github.com/wmengxiang/dsh-prompt-optimizer
+name: wmengxiang/dsh-prompt-optimizer
+category: ui
+description:
+  en: Adds an icon button to the composer that optimizes the current draft prompt through the active model.
+  zh: 在输入框新增图标按钮，一键调用当前模型把提示词优化得更清晰具体。

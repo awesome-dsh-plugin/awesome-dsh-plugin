@@ -1,6 +1,6 @@
 url: https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin
-name: dsh-engramory
+name: tinqiao-oss/engramory#plugin
 category: memory
 description:
-  en: 'The Engramory curated-memory discipline as an installable plugin ([npm: dsh-engramory](https://www.npmjs.com/package/dsh-engramory)): a deterministic 200-line / 25 KB cap on the `MEMORY.md` index via `ctx.tools.guard()` — growth denied, a shrinking rewrite always passes — plus the protocol registered as a runtime skill. The store is plain markdown, one file per fact, shared with Claude Code, Codex, Kiro, and OpenClaw.'
-  zh: '把 Engramory 策展式记忆纪律做成可安装插件（[npm: dsh-engramory](https://www.npmjs.com/package/dsh-engramory)）：通过 `ctx.tools.guard()` 对 `MEMORY.md` 索引施加确定性的 200 行 / 25KB 上限（增长即拒、缩小的重写一律放行），并把协议注册为运行时 skill。记忆库是纯 markdown、一条事实一个文件，与 Claude Code、Codex、Kiro、OpenClaw 共用。'
+  en: 'Long-term memory for DeepSeek Harness kept as plain markdown, one fact per file, readable in any editor. The `MEMORY.md` index has a hard 200-line / 25 KB cap enforced by `ctx.tools.guard()`: a write that would grow an over-cap index is denied, while a rewrite that shrinks it always passes, so an oversized index can be compacted step by step. The plugin never writes memories on its own — what is kept is decided by you and the model. The same store is also used by Claude Code, Codex, Kiro and OpenClaw.'
+  zh: '给 DeepSeek Harness 的长期记忆，以纯 markdown 保存：一条事实一个文件，任何编辑器都能打开。索引 `MEMORY.md` 有 200 行 / 25KB 的硬上限，由 `ctx.tools.guard()` 强制执行——让已超限的索引继续变大的写入会被拒绝，而缩小它的重写一律放行，于是过大的索引可以一步步压缩下来。插件不会自行写入记忆，记什么由你和模型决定。同一个记忆库也被 Claude Code、Codex、Kiro、OpenClaw 使用。'
