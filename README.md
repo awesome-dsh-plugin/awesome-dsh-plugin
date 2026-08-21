@@ -720,6 +720,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [yuezengwu/dsh-explain](https://github.com/yuezengwu/dsh-explain) - Local-first learning mode: cross-session learning threads with per-source explanations.
 - [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) - Free-interval session reports with AI-narrated daily/weekly digests over any date range, plus every-N-days scheduled reminders with system notifications (macOS / Linux).
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) - Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
+- [bpc-oss/dsh-fork-to-preset](https://github.com/bpc-oss/dsh-fork-to-preset) - Fork any session into a different agent preset from the conversation header: a preset-picker button that creates a new child session mounted on the chosen preset, inheriting the source session's completed turns.
 - [zoahdev/dsh-shelf](https://github.com/zoahdev/dsh-shelf) - Session lifecycle CLI: export (md/json/jsonl), archive/restore, trash, search, and stats. Read-only by default; nothing is ever deleted by the engine.
 - [ZRui-C/dsh-minimal-first-turn](https://github.com/ZRui-C/dsh-minimal-first-turn) - Minimal-compatible first turn for Web root sessions: starts with persistent bash and str_replace_editor, removes automatic workspace and skill context, then restores the selected preset after the first tool call or reply; includes a persistent composer toggle.
 
