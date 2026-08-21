@@ -7,6 +7,7 @@
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
+    "./current-time": "./packages/dsh-plugin-current-time/lib/index.js",
     "./restart": "./packages/dsh-plugin-restart/lib/index.js",
     "./session-id": "./packages/dsh-plugin-session-id/lib/index.js",
     "./session-id/client": "./packages/dsh-plugin-session-id/lib/client.js",
