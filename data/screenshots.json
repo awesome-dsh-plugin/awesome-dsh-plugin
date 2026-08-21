@@ -1088,5 +1088,11 @@
   "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/features.png",
   "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/compact-wallpaper-library.png",
   "https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/main/docs/images/better-sidebar.png"
- ]
+ ],
+  "https://github.com/baaai123/dsh-memory-protocol": [
+    "https://raw.githubusercontent.com/baaai123/dsh-memory-protocol/main/assets/screenshots/cover.png",
+    "https://raw.githubusercontent.com/baaai123/dsh-memory-protocol/main/assets/screenshots/architecture@2x.png",
+    "https://raw.githubusercontent.com/baaai123/dsh-memory-protocol/main/assets/screenshots/enforcement-demo.png",
+    "https://raw.githubusercontent.com/baaai123/dsh-memory-protocol/main/assets/screenshots/config.png"
+  ]
 }
