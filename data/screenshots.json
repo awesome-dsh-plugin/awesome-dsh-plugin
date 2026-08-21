@@ -1162,5 +1162,11 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/AKS1st/dsh-mermaid": [
+  "https://raw.githubusercontent.com/AKS1st/dsh-mermaid/main/assets/main-page-white.png",
+  "https://raw.githubusercontent.com/AKS1st/dsh-mermaid/main/assets/main-page-dark.png",
+  "https://raw.githubusercontent.com/AKS1st/dsh-mermaid/main/assets/fangda-white.png",
+  "https://raw.githubusercontent.com/AKS1st/dsh-mermaid/main/assets/fangda-dark.png"
  ]
 }
