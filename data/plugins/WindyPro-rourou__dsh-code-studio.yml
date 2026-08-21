@@ -1,0 +1,6 @@
+url: https://github.com/WindyPro-rourou/dsh-code-studio
+name: WindyPro-rourou/dsh-code-studio
+category: ui
+description:
+  en: File-change monitor and code editor for the DSH Web UI - real-time line-by-line diffs of agent edits beside your conversation, with a built-in syntax-highlighted editor.
+  zh: DSH Web UI 的文件修改监视器与代码工作台 - Agent 修改代码时实时浮现逐行 Diff，并可在浏览器内直接查看、编辑和保存文件。
