@@ -1743,6 +1743,7 @@ dsh plugin --profile web add dshmarket
 - [cindyguyuehu123/dsh-mobile](https://github.com/cindyguyuehu123/dsh-mobile) — 让 DSH 在 iPhone/iPad 上可用：显式开启的局域网反向代理（改写 Host/Origin 通过回环信任栅栏，含 WebSocket 升级）、iOS PWA 外壳（主屏幕图标、standalone meta、viewport-fit）、触屏/移动端 CSS（安全区、键盘避让、输入框按钮行适配）。
 - [DamonKoy/dsh-web-ui#dsh-remote-web-ui](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) — dsh web GUI 移动端远程控制：扫码配对 QR 入口、一次性配对 token。
 - [DamonKoy/dsh-web-ui#dsh-ssh](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-ssh) — dsh web GUI 远程 SSH 操作：主机配置存储、持久化会话。
+- [dsh-ssh/dsh-ssh#dsh-ssh](https://github.com/dsh-ssh/dsh-ssh/tree/main/packages/dsh-ssh) — SSH 远端工作区——在远端机器上执行 bash、文件读写、glob 与 grep（基于 sshd 的 exec + SFTP），远端零安装，纯附加。
 - [godchen520/dsh-web-remote](https://github.com/godchen520/dsh-web-remote) — 手机/外网远程访问 DSH：Cloudflare Quick Tunnel 公网链接 + 局域网 HTTP/HTTPS 直连（自动生成自签名证书）、token 鉴权、gzip 压缩、常驻手机图标面板（一键复制/二维码），并内置 NapCat QQ 机器人取链接通道。
 - [jack-ranbo/dsh-wsl-expose](https://github.com/jack-ranbo/dsh-wsl-expose) — 从 WSL2 走 IPv6/IPv4 经反向代理（Lucky）把 DSH Web GUI 暴露到公网：/wan up 一键建立 socat 中继、Windows portproxy、防火墙与 trusted-host 白名单；域名与端口可在设置卡片或命令中配置。
 - [jsdvjx/dshn#agent](https://github.com/jsdvjx/dshn/tree/main/packages/agent) — 把本地 dsh 网页通过带登录门禁的中继转发到公网 *.ds.hn 子域名(也可自托管到自己的域名),支持可选的端到端加密(PBKDF2 到 AES-256-GCM)。
