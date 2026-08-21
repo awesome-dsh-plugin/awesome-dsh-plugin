@@ -1,0 +1,6 @@
+url: https://github.com/lxp731/agents-plugins/tree/main/dsh-service-control
+name: lxp731/agents-plugins#dsh-service-control
+category: dev
+description:
+  en: 'HTTP API and dshctl CLI for managing the dsh service: start, stop, restart and check status per profile, with graceful detached restart and shell completions.'
+  zh: 'DSH 服务启停控制：HTTP API 与 dshctl CLI 按 profile 启动/停止/重启/查看状态，重启由独立进程执行，附带 shell 补全。'

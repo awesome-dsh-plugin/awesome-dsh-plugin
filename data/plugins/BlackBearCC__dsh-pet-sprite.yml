@@ -1,0 +1,6 @@
+url: https://github.com/BlackBearCC/dsh-pet-sprite
+name: BlackBearCC/dsh-pet-sprite
+category: ui
+description:
+  en: "A pixel companion living in the chat area: hatches from an egg into one of three sprites or an LLM-drawn custom one from a text description, platform-jumps over message bubbles on its own, WASD controllable, chats in character through the models you already configured, and carries a nurture system (mood/power/health, levels, shop) driven by real token usage."
+  zh: 聊天区里的像素小宠物：从蛋孵化三选一，也可用一句话描述让 LLM 画出自定义形象，自动在消息气泡间平台跳跃，支持 WASD 操控与拖拽，用已配置的模型角色扮演陪聊，养成系统（心情/电量/健康、等级、商店）由真实 token 消耗驱动。
