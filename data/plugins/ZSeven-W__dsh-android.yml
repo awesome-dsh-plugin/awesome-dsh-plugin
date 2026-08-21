@@ -1,0 +1,6 @@
+url: https://github.com/ZSeven-W/dsh-android
+name: ZSeven-W/dsh-android
+category: remote
+description:
+  en: 'A live Android device inside the conversation — emulator or USB phone, driven entirely through adb: 20 agent tools for streaming, Gradle build and run, UI-tree or OCR interaction, logcat, processes and memory, plus a three-button navigation panel.'
+  zh: '在对话里直接操作 Android 设备——模拟器或 USB 手机，完全通过 adb 驱动：20 个 Agent 工具用于流式投屏、Gradle 构建运行、UI 树或 OCR 交互、logcat、进程与内存检查，并附带三键导航面板。'
