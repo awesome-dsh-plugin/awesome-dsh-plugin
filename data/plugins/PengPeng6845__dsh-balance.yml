@@ -1,0 +1,6 @@
+url: https://github.com/PengPeng6845/dsh-balance
+name: PengPeng6845/dsh-balance
+category: usage
+description:
+  en: 'Real API balance in the sidebar: polls the official /user/balance endpoint with your API key and pushes updates over SSE — no estimates.'
+  zh: '侧边栏真实 API 余额：用你的 API key 轮询官方 /user/balance 端点，SSE 即时推送，只显示真实数据不做估算。'
