@@ -1162,5 +1162,9 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/ph4310822/dsh-edex-ui/tree/main/packages/bundle": [
+  "https://raw.githubusercontent.com/ph4310822/dsh-edex-ui/main/screenshot.png",
+  "https://raw.githubusercontent.com/ph4310822/dsh-edex-ui/main/traffic-region.png"
  ]
 }
