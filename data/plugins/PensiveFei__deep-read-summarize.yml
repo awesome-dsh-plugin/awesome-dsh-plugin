@@ -1,0 +1,5 @@
+url: https://github.com/PensiveFei/deep-read-summarize
+name: PensiveFei/deep-read-summarize
+category: workflow
+description:
+  en: 'Deep reading & summarization for DSH: books/papers/videos/web into structured Obsidian notes via plugin parsers, MapReduce parallel deep-read subagents, JSON Schema outputs and an idempotent cache.'
