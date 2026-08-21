@@ -1,0 +1,5 @@
+url: https://github.com/OwlCodeTech/dsh-market-plus
+name: OwlCodeTech/dsh-market-plus
+category: market
+description:
+  en: 'Merged plugin market: dsh-market''s curated registry (screenshots, themes, i18n, Windows CLI shim) + dsh-store''s npm authoritative source with background dsh-field verification badges, GitHub stars, proxy injection and a manual install fallback; installable as `dsh-market-plus`.'
