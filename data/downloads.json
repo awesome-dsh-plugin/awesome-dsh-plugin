@@ -1227,10 +1227,6 @@
   "downloads": 1250,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": {
-  "downloads": 1865,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/Mombrane/dsh-subagent-monitor": {
   "downloads": 246,
   "checkedAt": "2026-08-19"
@@ -2493,6 +2489,10 @@
  },
  "https://github.com/zylzyqzz/dsh-mobile-pwa": {
   "downloads": 220,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/moguiyu/dsh-tavily": {
+  "downloads": 1865,
   "checkedAt": "2026-08-19"
  }
 }
