@@ -188,6 +188,11 @@
   "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-settings.png",
   "https://raw.githubusercontent.com/KLRSL/dsh-biomemory/main/assets/screenshot-memory-settings.png"
  ],
+ "https://github.com/kunjinkao-os/dsh-mobile-gui-agent": [
+  "https://raw.githubusercontent.com/kunjinkao-os/dsh-mobile-gui-agent/main/docs/images/open-settings-wifi-demo.png",
+  "https://raw.githubusercontent.com/kunjinkao-os/dsh-mobile-gui-agent/main/docs/images/open-taobao-demo.png",
+  "https://raw.githubusercontent.com/kunjinkao-os/dsh-mobile-gui-agent/main/docs/images/mobile-gui-agent-alarm-task.png"
+ ],
  "https://github.com/LKMeng2001/dsh-mcp-market": [
   "https://raw.githubusercontent.com/LKMeng2001/dsh-mcp-market/main/assets/market-discover.png"
  ],
