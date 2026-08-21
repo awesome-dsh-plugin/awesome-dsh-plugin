@@ -2,5 +2,5 @@ url: https://github.com/dshhub-co/dshhub-market
 name: dshhub-co/dshhub-market
 category: market
 description:
-  en: 'Plugin market inside DeepSeek Harness powered by DSHHub.co: browse, search, one-click install community plugins and themes, with backup, updates and diagnostics.'
-  zh: DSHHub.co 驱动的 DeepSeek Harness 插件市场：浏览、搜索、一键安装社区插件与主题，含备份、更新与诊断。
+  en: 'Passcode marketplace inside DeepSeek Harness: enter a six-character code to unlock and install plugins shared by creators, plus themes, backup, updates and diagnostics.'
+  zh: 'DeepSeek Harness 口令插件市场：输入 6 位口令解锁并安装创作者分享的插件，附带主题、备份、更新与诊断。'
