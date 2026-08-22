@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-thinking-levels
+name: drscrewdriver/dsh-thinking-levels
+category: model
+description:
+  en: 'DSH thinking-level (reasoning effort) control: auto-adjust reasoning strength per tool round with optional manual lock and per-tool timing telemetry.'
+  zh: DSH 思考级别（reasoning effort）控制：按工具调用轮次自动调整推理强度，支持手动锁定与单工具耗时遥测。
