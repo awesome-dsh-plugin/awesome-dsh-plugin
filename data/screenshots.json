@@ -1162,5 +1162,9 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/ZHOUcourier/dsh-theme-whalegirl": [
+  "https://raw.githubusercontent.com/ZHOUcourier/dsh-theme-whalegirl/main/assets/previews/preview.png",
+  "https://raw.githubusercontent.com/ZHOUcourier/dsh-theme-whalegirl/main/assets/previews/preview-full.png"
  ]
 }
