@@ -1,0 +1,6 @@
+url: https://github.com/kiligzzz/dsh-session-archive
+name: kiligzzz/dsh-session-archive
+category: session
+description:
+  en: 'Sidebar panel for archived sessions in DeepSeek Harness: group by workspace, search by title, preview user questions, one-click restore, or delete with confirmation.'
+  zh: DeepSeek Harness 已归档会话管理面板：按工作区目录分组、按标题实时搜索、只读预览用户问题、一键恢复，或二次确认后删除。

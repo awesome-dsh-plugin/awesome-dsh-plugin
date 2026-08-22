@@ -1,0 +1,6 @@
+url: https://github.com/kiligzzz/dsh-session-nav
+name: kiligzzz/dsh-session-nav
+category: session
+description:
+  en: 'Piano-key style in-conversation navigation bar: one key per user message, hover preview tooltip, click-to-jump across full history. Official dual-face dsh plugin, no dsh source changes.'
+  zh: 钢琴键风格的会话内导航条：每根键对应一条用户消息，悬停预览、点击跳转到完整历史的任意消息。官方双面 dsh 插件，不改 DSH 源码。
