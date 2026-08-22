@@ -1,0 +1,6 @@
+url: https://github.com/suntianc/dsh-ui-settings-icons
+name: suntianc/dsh-ui-settings-icons
+category: ui
+description:
+  en: Adds custom icons to the DSH Settings sidebar and exposes a keyed `settings.section.icon` slot for third-party settings sections.
+  zh: 为 DSH 设置侧边栏添加自定义图标，并开放 keyed `settings.section.icon` 槽位供第三方设置分区注册图标。
