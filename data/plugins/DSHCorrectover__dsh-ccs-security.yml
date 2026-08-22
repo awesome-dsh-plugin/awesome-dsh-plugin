@@ -1,0 +1,7 @@
+url: https://github.com/DSHCorrectover/dsh-ccs-security
+name: DSHCorrectover/dsh-ccs-security
+category: security
+description:
+  en: "Runtime security guard for DSH — blocks command injection, SSRF, credential exfiltration and destructive tool calls in under 3 microseconds with Ed25519-signed audit receipts."
+  zh: "DSH 运行时安全防护：3 微秒内拦截命令注入、SSRF、凭证外泄和破坏性工具调用，生成 Ed25519 签名审计凭证。"
+
