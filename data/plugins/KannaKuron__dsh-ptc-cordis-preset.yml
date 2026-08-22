@@ -1,0 +1,6 @@
+url: https://github.com/KannaKuron/dsh-ptc-cordis-preset
+name: KannaKuron/dsh-ptc-cordis-preset
+category: dev
+description:
+  en: "Materializes a ptc-cordis agent preset at startup, combining the built-in PTC Code-Mode preset with the Creation-mode Cordis toolset — dynamic-plugin tools, runtime inspection and preset-authoring skills — while never overwriting user-edited files."
+  zh: "启动时物化 ptc-cordis 智能体预设：在内置 PTC（Code Mode）模式之上叠加创造模式 Cordis 工具集（动态插件工具、运行时检查、preset 创作技能），且绝不覆盖用户改过的文件。"
