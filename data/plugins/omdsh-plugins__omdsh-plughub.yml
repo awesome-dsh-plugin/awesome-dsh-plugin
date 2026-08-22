@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-plughub
+name: omdsh-plugins/omdsh-plughub
+category: market
+description:
+  en: "The omdsh plugin hub: a Settings tab that installs and removes omdsh plugins from a configurable upstream, and configures every installed one from the settings schema it already registers."
+  zh: "omdsh 插件中心：在设置页里从可配置的上游安装、移除 omdsh 插件，并按各插件已注册的设置结构配置它们。"

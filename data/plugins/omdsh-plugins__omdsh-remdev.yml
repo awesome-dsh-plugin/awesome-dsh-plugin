@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-remdev
+name: omdsh-plugins/omdsh-remdev
+category: dev
+description:
+  en: "Remote development for the DeepSeek Harness web GUI: connect a workspace to an SSH server, provision a .dsh-server there, and run its files, terminals, and agents on that machine."
+  zh: "DeepSeek Harness Web GUI 的远程开发：把工作区接到 SSH 服务器，在那里配置 .dsh-server，让文件、终端与智能体在那台机器上运行。"

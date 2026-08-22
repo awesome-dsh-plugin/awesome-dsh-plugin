@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-editor
+name: omdsh-plugins/omdsh-editor
+category: dev
+description:
+  en: "Open the current project directory in a native editor from the DeepSeek Harness web GUI: the session header's editor picker, and the host half that finds the installed editors and launches one."
+  zh: "从 DeepSeek Harness Web GUI 用本机编辑器打开当前项目目录：会话头部的编辑器选择器，加上查找并启动已安装编辑器的宿主端。"

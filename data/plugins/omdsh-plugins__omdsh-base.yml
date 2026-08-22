@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-base
+name: omdsh-plugins/omdsh-base
+category: session
+description:
+  en: "The session-mode system for the DeepSeek Harness web GUI: the segment registry every mode plugin registers into, the switch that renders them, and the sidebar dots that colour their conversations."
+  zh: "DeepSeek Harness Web GUI 的会话模式系统：模式插件注册的分段注册表、渲染它们的切换器，以及给会话着色的侧边栏圆点。"

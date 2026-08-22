@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-plugins/omdsh-shortcuts
+name: omdsh-plugins/omdsh-shortcuts
+category: tools
+description:
+  en: "Bind a chord to anything the harness can do: a menu the desktop shell renders natively, a switchboard the runtime dispatches through, and an in-page listener for the web — one document, two surfaces."
+  zh: "把快捷键绑定到 harness 能做的任何事：桌面壳原生渲染的菜单、运行时派发的交换台，以及网页内的监听器——一份文档，两种界面。"
