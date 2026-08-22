@@ -1,5 +1,5 @@
-url: https://github.com/ADWMC/helm-d
-name: ADWMC/helm-d
+url: https://github.com/ADWMC/helm-d/tree/main/packages/helmd
+name: ADWMC/helm-d#helmd
 category: security
 tarball: https://github.com/ADWMC/helm-d/releases/latest/download/helmd.tgz
 description:
