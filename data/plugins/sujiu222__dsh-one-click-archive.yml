@@ -1,6 +1,7 @@
 url: https://github.com/sujiu222/dsh-one-click-archive
 name: sujiu222/dsh-one-click-archive
 category: session
+tarball: https://github.com/sujiu222/dsh-one-click-archive/releases/download/v0.1.1/dsh-one-click-archive-0.1.0.tgz
 description:
   en: Archives DSH conversations by configurable last-activity thresholds after a candidate preview, while retaining session logs for restoration.
   zh: 按可配置的最后活跃时间预览并归档 DSH 会话，同时保留会话日志以便恢复。
