@@ -1,0 +1,6 @@
+url: https://github.com/jacujay/dsh-model-balance
+name: jacujay/dsh-model-balance
+category: usage
+description:
+  en: Auto-detect the current model vendor (7 built-in) and show its balance or quota in the composer input row, with custom endpoints for unsupported vendors.
+  zh: 自动识别当前模型厂商（内置 7 家），在输入框内显示余额或配额，未内置厂商可配置自定义接口。

@@ -1,0 +1,6 @@
+url: https://github.com/winditer/dsh-elf
+name: winditer/dsh-elf
+category: ui
+description:
+  en: Floating translucent DeepSeek whale elf on the DSH page that opens a draggable, minimizable temporary chat window using the session model or a custom OpenAI-compatible endpoint, with real-time streaming.
+  zh: DSH 页面悬浮的半透明 DeepSeek 鲸鱼小精灵：点击打开可拖动、可最小化的临时聊天浮窗，支持跟随会话模型或自定义 OpenAI 兼容端点实时流式输出。

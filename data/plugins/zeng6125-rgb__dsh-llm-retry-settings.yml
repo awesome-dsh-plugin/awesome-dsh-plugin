@@ -1,0 +1,6 @@
+url: https://github.com/zeng6125-rgb/dsh-llm-retry-settings
+name: zeng6125-rgb/dsh-llm-retry-settings
+category: model
+description:
+  en: Settings card to tune the DSH LLM auto-retry policy (retry count, backoff, jitter) live from Settings → General.
+  zh: 在 DSH 设置里调整 LLM 自动重试的次数与退避时间并实时生效的设置卡片。

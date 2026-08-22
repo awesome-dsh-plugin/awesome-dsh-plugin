@@ -1,0 +1,6 @@
+url: https://github.com/JUNQINGV587/dsh-ssh-hub
+name: JUNQINGV587/dsh-ssh-hub
+category: remote
+description:
+  en: 'Multi-server SSH terminal panel for the DSH Web GUI: floating terminal window with tabs, side-by-side groups, broadcast, host-owned persistent sessions, and password/private-key/SSH-agent auth.'
+  zh: 'DSH Web GUI 多服务器 SSH 终端面板：浮动终端窗口支持标签页、并排组合、广播、宿主侧持久会话，以及密码/私钥/SSH Agent 认证。'

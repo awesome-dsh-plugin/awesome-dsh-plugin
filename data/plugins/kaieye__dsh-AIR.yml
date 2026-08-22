@@ -1,0 +1,6 @@
+url: https://github.com/kaieye/dsh-AIR
+name: kaieye/dsh-AIR
+category: session
+description:
+  en: 'Web composer enhancement: recalls sent prompts across sessions with ArrowUp/ArrowDown, searches them with Ctrl+R, restores rich drafts, and opens a docked /btw or /side conversation.'
+  zh: 'DSH Web 输入框增强：跨会话召回已发送提示词、用 Ctrl+R 搜索并还原富草稿，以及提供停靠式 /btw 或 /side 旁路会话。'
