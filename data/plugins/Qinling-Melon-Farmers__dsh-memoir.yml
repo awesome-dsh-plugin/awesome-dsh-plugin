@@ -2,5 +2,5 @@ url: https://github.com/Qinling-Melon-Farmers/dsh-memoir
 name: Qinling-Melon-Farmers/dsh-memoir
 category: memory
 description:
-  en: 'Local project memory for DeepSeek Harness with bounded hot-memory prompt injection, BM25-ranked recall, lifecycle-aware records, automatic distillation reminders, and a Web management panel.'
-  zh: 'DeepSeek Harness 本地项目记忆插件，提供有界 Hot Memory 提示词注入、BM25 排序召回、带生命周期的记忆记录、自动归纳提醒与 Web 管理面板。'
+  en: 'Local-only project memory with zero bundled runtime dependencies or external services: structured JSON plus generated PROJECT_MEMORY.md, token-bounded session-frozen Hot Memory designed to preserve prompt-prefix cache hits, cached cross-project BM25 ranked recall, editable pin/supersede/archive lifecycle, configurable top-level turn-end distillation, and a bilingual Web panel for search, inspection, diagnostics, and live settings.'
+  zh: '仅本地运行、零额外运行时依赖（仅使用 DSH 宿主 peer）且不调用外部服务的项目记忆：结构化 JSON 与自动生成的 PROJECT_MEMORY.md、按 token 有界并按会话冻结的 Hot Memory 以优化 prompt-prefix cache 命中、带查询缓存的跨项目 BM25 排序召回、可编辑/置顶/supersede/归档生命周期、可配置的顶层回合自动蒸馏，以及支持搜索、检查、诊断和实时设置的中英双语 Web 面板。'
