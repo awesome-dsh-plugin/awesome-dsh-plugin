@@ -1171,6 +1171,8 @@ dsh plugin --profile web add dshmarket
 
 ### 🎙️ 语音与音频
 
+- [zeshuochen/dsh-video-understand](https://github.com/zeshuochen/dsh-video-understand) — 字幕优先的视频转录插件：使用 yt-dlp 获取字幕，无字幕时以 faster-whisper large-v3 转录音频，并生成确定性的抽取式 Markdown 总结。
+
 - [0nt-one/dsh-voice-input](https://github.com/0nt-one/dsh-voice-input) — 输入框麦克风语音输入：浏览器 Web Speech API 实时转写（Chrome/Edge），多语言切换与可选自动发送，零依赖零密钥。
 - [117BS/dsh-perlica-ding](https://github.com/117BS/dsh-perlica-ding) — 明日方舟终末地佩丽卡主题分级提示音：计划出方案 / 任务完成 / 需要你回应 / 出错四档独立音效，普通问答保持安静；系统级播放（窗口在后台也响），跨平台（Windows/macOS/Linux），支持自定义 TTS 语音。
 - [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) — 用免费 Edge TTS 或你自己的 RVC 音色朗读 AI 回复：消息朗读与自动朗读、长文自适应分块渐进播放（无缝衔接）、音色包仓库一键安装、便携 RVC 运行时。

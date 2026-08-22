@@ -1171,6 +1171,8 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Voice & Audio
 
+- [zeshuochen/dsh-video-understand](https://github.com/zeshuochen/dsh-video-understand) - Subtitle-first video transcription for DSH using yt-dlp, with faster-whisper large-v3 audio fallback and deterministic extractive Markdown summaries.
+
 - [0nt-one/dsh-voice-input](https://github.com/0nt-one/dsh-voice-input) - Mic button in the composer tool row: Web Speech API speech-to-text (Chrome/Edge), language switching, and optional auto-send, zero dependencies.
 - [117BS/dsh-perlica-ding](https://github.com/117BS/dsh-perlica-ding) - Perlica (Arknights: Endfield) themed tiered sound notifications: plan-ready, task-done, needs-your-input, and error tones; silent for plain chat, system-level playback (works in background), cross-platform (Windows/macOS/Linux), custom TTS sounds.
 - [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) - Reads assistant replies aloud via free Edge TTS or your own RVC voice models: read-aloud buttons + auto-read, adaptive chunked progressive playback (gapless long reads), one-click voice-pack installs from a registry, and a portable RVC runtime.
