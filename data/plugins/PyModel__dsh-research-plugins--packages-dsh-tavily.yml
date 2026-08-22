@@ -2,4 +2,4 @@ url: https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-tavi
 name: PyModel/dsh-research-plugins#dsh-tavily
 category: browser
 description:
-  en: 'Tavily Search API as a web search provider (settings toggle with DeepSeek fallback, keyless search) plus a Tavily MCP bridge for extract, crawl and map tools.'
+  en: 'Tavily Search API as a web search provider (settings toggle with DeepSeek fallback, keyless search) plus a Tavily MCP bridge: keyless search and extract tools, crawl and map with an API key.'
