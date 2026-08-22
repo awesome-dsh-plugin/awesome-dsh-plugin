@@ -301,6 +301,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [vlln/dsh-navbar](https://github.com/vlln/dsh-navbar) - Conversation node navigation bar for quick jumps between user messages.
 - [vlln/dsh-task-status](https://github.com/vlln/dsh-task-status) - Background task status bar: progress plus live output tail on the chat page.
 - [vvvspec/better-reasoning-slider](https://github.com/vvvspec/better-reasoning-slider) - Official-style composer model trigger with a floating reasoning-effort slider popup.
+- [waknow/dsh-web-icon-indicator](https://github.com/waknow/dsh-web-icon-indicator) - Browser tab favicon mirrors the DSH session state (idle / running / asking / done), recolored and animated from one base SVG entirely in the browser, with colors and effects configurable from the Settings page.
 - [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) - Font engine for the Web GUI: system font enumeration, global and per-component font-size tuning with a Spy++-style picker, settings page.
 - [Waverly-W/dsh-scratchpad](https://github.com/Waverly-W/dsh-scratchpad) - Quick temporary conversation and workspace manager for DeepSeek Harness Web GUI.
 - [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) - Yellow one-line notice for a prompt cache miss after the cache was rebuilt; shows re-billed uncached input tokens, cached hit tokens, and TTFT.
