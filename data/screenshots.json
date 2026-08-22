@@ -1162,5 +1162,9 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/Wine-Red/dsh-codex-timeline": [
+  "https://raw.githubusercontent.com/Wine-Red/dsh-codex-timeline/main/docs/images/cover.png",
+  "https://raw.githubusercontent.com/Wine-Red/dsh-codex-timeline/main/docs/images/timeline-hover-dsh.png"
  ]
 }
