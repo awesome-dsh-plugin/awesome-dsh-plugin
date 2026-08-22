@@ -1,7 +1,7 @@
-url: https://github.com/WSL043/dsh-session-delete
-name: WSL043/dsh-session-delete
+url: https://github.com/WSL043/dsh-native-session-delete
+name: WSL043/dsh-native-session-delete
 category: session
-tarball: https://github.com/WSL043/dsh-session-delete/releases/latest/download/dsh-native-session-delete.tgz
+tarball: https://github.com/WSL043/dsh-native-session-delete/releases/latest/download/dsh-native-session-delete.tgz
 description:
-  en: Adds a red permanent-delete action with a confirmation dialog to the native session menu.
-  zh: 在原生会话菜单中增加红色永久删除操作，并在删除前二次确认。
+  en: Adds a native archive manager with conversation search and restore, plus confirmed safe permanent deletion.
+  zh: 在原生侧边栏中管理、搜索和恢复归档会话，并提供二次确认的安全永久删除。
