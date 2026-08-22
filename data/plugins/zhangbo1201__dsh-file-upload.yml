@@ -1,0 +1,6 @@
+url: https://github.com/zhangbo1201/dsh-file-upload
+name: zhangbo1201/dsh-file-upload
+category: ui
+description:
+  en: 'Web composer paperclip and Cmd/Ctrl+V upload for ordinary files: copy each file into the current workspace''s .dsh-uploads/ directory and insert its @path, while preserving native PNG/JPG/WebP/GIF attachments.'
+  zh: 'Web 输入框回形针与 Cmd/Ctrl+V 普通文件上传：将文件复制到当前工作区的 .dsh-uploads/ 目录并插入 @路径，同时保留 PNG/JPG/WebP/GIF 原生图片附件流程。'
