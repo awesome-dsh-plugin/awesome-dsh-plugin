@@ -1,0 +1,6 @@
+url: https://github.com/L3n3L/dsh-resume
+name: L3n3L/dsh-resume
+category: workflow
+description:
+  en: A visual review workflow for resumes that addresses overflow, excessive whitespace, and layout drift after AI-generated content changes, with Markdown editing, templates, A4 measurement, and AI-assisted tuning.
+  zh: 面向 AI 生成简历后溢出、留白过多和排版变形问题的视觉复核工作流，支持 Markdown 编辑、模板切换、A4 测量和 AI 辅助调优。
