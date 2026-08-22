@@ -1,0 +1,5 @@
+url: https://github.com/edusrez/dsh-smart-restart
+name: edusrez/dsh-smart-restart
+category: notify
+description:
+  en: 'Restarts the dsh service on request (smart_restart tool) and wakes the local agent after a restart with a resume notice; an optional canary boots an ephemeral instance to validate the restart, aborting and alerting the session when it fails.'
