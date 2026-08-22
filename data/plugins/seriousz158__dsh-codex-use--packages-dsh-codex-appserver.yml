@@ -1,0 +1,6 @@
+url: https://github.com/seriousz158/dsh-codex-use/tree/main/packages/dsh-codex-appserver
+name: seriousz158/dsh-codex-use#dsh-codex-appserver
+category: model
+description:
+  en: 'Connects DeepSeek Harness to the local OpenAI Codex App Server over stdio: read-only diagnostics, ChatGPT account and quota metadata, revision-fenced settings, capability-gated Fast Mode, and DSH-local image attachments.'
+  zh: '通过 stdio 将 DeepSeek Harness 接入本地 OpenAI Codex App Server：提供只读诊断、ChatGPT 账户与额度元数据、带 revision 防护的设置、按模型能力启用的 Fast Mode，以及 DSH 本地图片附件。'
