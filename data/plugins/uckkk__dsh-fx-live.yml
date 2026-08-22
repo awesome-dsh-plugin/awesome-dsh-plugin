@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-fx-live
+name: uckkk/dsh-fx-live
+category: tools
+description:
+  en: "Live currency exchange rate lookup and conversion (fetches daily rates from open.er-api.com)."
+  zh: "实时汇率查询与换算，每日从 open.er-api.com 拉取。"
