@@ -1,0 +1,6 @@
+url: https://github.com/wallpap/dsh-compact-activity
+name: wallpap/dsh-compact-activity
+category: ui
+description:
+  en: Collapses consecutive DeepSeek Harness thinking and tool calls into a compact, expandable activity group.
+  zh: 将 DeepSeek Harness 连续的思考和工具调用收进紧凑、可展开的过程项。
