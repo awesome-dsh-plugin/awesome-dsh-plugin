@@ -1,6 +1,7 @@
-﻿url: https://github.com/yyyy231209/ai-company-framework
+url: https://github.com/yyyy231209/ai-company-framework
 name: yyyy231209/ai-company-framework
+tarball: https://github.com/yyyy231209/ai-company-framework/releases/download/v0.3.10/ai-company-framework-0.3.10.tgz
 category: workflow
 description:
-  zh: "AI 鍏徃妗嗘灦锛氫竴鍙ヨ瘽寮€涓€瀹跺 Agent 鍏徃鈥斺€?5 涓墎骞?Skills锛堣€佹澘/娴佹按绾?宀椾綅妯℃澘/11 涓矖浣?閫氱敤瀹㈡埛璁板繂锛夈€? 涓伐浣滄祦妯℃澘銆丄gentTeams 杩愯鏃朵笌娲诲姩闈㈡澘銆佸甫浼氳瘽闅旂鐨勫憳宸ヤ晶杈规爮銆侀涔︽満鍣ㄤ汉妗ワ紙鑰佹澘/浠绘剰鍛樺伐鏈哄櫒浜恒€佺兢鑱婅矾鐢便€佽嚜涓绘帹閫併€侀噸澶у喅绛栦汉宸ラ椄闂ㄣ€佸閮ㄨ仈绯讳汉鎸囧紩锛夈€佸鎴锋。妗?SQLite 鏁版嵁搴撲笌涓夊眰璁板繂锛堣法缇ゅ綊骞讹級銆?company 鍏徃妯″紡寮€鍏筹紱涓嶅惈 RAG銆?
-  en: "AI Company Framework: turn one sentence into a multi-agent company 鈥?15 flat Skills (boss/pipeline/role-template/11 roles/generic customer-memory), 7 workflow templates, AgentTeams runtime + activity panel, employee sidebar with per-session isolation, Feishu bot bridge (boss and per-employee bots, group routing, autonomous push, human decision gate, external-contact guide), per-customer SQLite memory with three-layer memory (cross-group merge), /company mode switch; no RAG."
+  zh: "AI 公司框架：一句话开一家多 Agent 公司——15 个扁平 Skills（老板/流水线/岗位模板/11 个岗位/通用客户记忆）、7 个工作流模板、AgentTeams 运行时与活动面板、带会话隔离的员工侧边栏、飞书机器人桥（老板/任意员工机器人、群聊路由、自主推送、重大决策人工闸门、外部联系人指引）、客户档案 SQLite 数据库与三层记忆（跨群归并）、/company 公司模式开关；不含 RAG。"
+  en: "AI Company Framework: turn one sentence into a multi-agent company — 15 flat Skills (boss/pipeline/role-template/11 roles/generic customer-memory), 7 workflow templates, AgentTeams runtime + activity panel, employee sidebar with per-session isolation, Feishu bot bridge (boss and per-employee bots, group routing, autonomous push, human decision gate, external-contact guide), per-customer SQLite memory with three-layer memory (cross-group merge), /company mode switch; no RAG."
