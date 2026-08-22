@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/dsh-healthcheck
+name: taxueseek/dsh-healthcheck
+category: dev
+description:
+  en: 'Read-only environment health check: disk/memory/latency/~/.dsh bloat/plugin staleness with a graded CRITICAL/WARNING/INFO report and trend comparison.'
+  zh: 只读环境体检：磁盘/内存/延迟/~/.dsh 膨胀/插件版本落后，产出 CRITICAL/WARNING/INFO 分级报告并对比历史基线趋势。
