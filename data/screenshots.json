@@ -1,4 +1,12 @@
 {
+ "https://github.com/Chael-Chael/dsh-reference-anything": [
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/banner.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-external-conversations.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-files.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-sessions.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-commands.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-skills.png"
+ ],
  "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
