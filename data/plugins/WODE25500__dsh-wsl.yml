@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-wsl
+name: WODE25500/dsh-wsl
+category: dev
+description:
+  en: 'WSL bridge: run Linux commands, list distributions and query state, convert Windows-WSL paths and copy files, with automatic UTF-16 output normalization.'
+  zh: 'WSL 桥接：运行 Linux 命令、查询发行版状态、路径转换与跨系统复制，自动处理 UTF-16 输出。'
