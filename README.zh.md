@@ -1333,6 +1333,7 @@ dsh plugin --profile web add dshmarket
 - [btspoony/dsh-advisor](https://github.com/btspoony/dsh-advisor) — 搭配一个副模型，每轮被动审查并注入见解。
 - [btspoony/mstar-harness#dsh](https://github.com/btspoony/mstar-harness/tree/main/packages/dsh) — 技能驱动的 harness/loop 工程化工作流插件。
 - [buhuikongpan/dsh-project-context](https://github.com/buhuikongpan/dsh-project-context) — 把 DSH 工作区文件夹变成项目：新会话自动注入精简的「项目工作区约定」上下文（先读代码、空目录即新建项目）；输入框旁每会话「项目」开关可将会话显式降级为普通工作区（状态渲染式注入，关时有提示，不整块消失），状态存于会话日志。
+- [callmesoul/deepseek-kanban-plugin](https://github.com/callmesoul/deepseek-kanban-plugin) — DSH 任务看板：任务状态机 + git 分支隔离，agent 自动执行、审核后自动合并回基础分支。
 - [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) — 按项目调度提示词，在全新的无头 Agent 会话中执行，支持单次、固定间隔和 cron 计划，并持久化运行历史。
 - [changlianxiya-139/dsh-ambiguity-handling](https://github.com/changlianxiya-139/dsh-ambiguity-handling) — 向 dsh system prompt 追加歧义处理规则，让 agent 在猜测前先列出 A/B/C/D 选项请求澄清。
 - [ChongCyrus/Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 多代理数学问题求解与验证框架：头脑风暴 → 求解迭代 → 多验证器辩论 → 可信知识库沉淀，支持断点续跑与人工/自动干预（同时提供 agent preset 与可安装 bundle）。
