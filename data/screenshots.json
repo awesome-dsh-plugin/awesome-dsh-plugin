@@ -1166,5 +1166,9 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/wyzh0117/dsh-skill-select": [
+  "https://raw.githubusercontent.com/wyzh0117/dsh-skill-select/main/assets/product.png",
+  "https://raw.githubusercontent.com/wyzh0117/dsh-skill-select/main/assets/better-sidebar.png"
  ]
 }
