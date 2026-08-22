@@ -1,6 +1,0 @@
-url: https://github.com/CH4ACKO3/dsh-render-engine/tree/main/packages/syntax-highlight
-name: CH4ACKO3/dsh-render-engine#syntax-highlight
-category: dev
-description:
-  en: 'Structured syntax-highlighting service for DSH Web plugins, with stable theme-aware tokens, language aliases, source line-ending preservation, and plain-text fallback.'
-  zh: '面向 DSH Web 插件的结构化语法高亮服务，提供稳定的主题响应 token、语言别名、源码换行符保留与纯文本回退。'
