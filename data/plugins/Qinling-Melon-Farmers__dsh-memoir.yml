@@ -1,0 +1,6 @@
+url: https://github.com/Qinling-Melon-Farmers/dsh-memoir
+name: Qinling-Melon-Farmers/dsh-memoir
+category: memory
+description:
+  en: 'Local project memory for DeepSeek Harness with bounded hot-memory prompt injection, BM25-ranked recall, lifecycle-aware records, automatic distillation reminders, and a Web management panel.'
+  zh: 'DeepSeek Harness 本地项目记忆插件，提供有界 Hot Memory 提示词注入、BM25 排序召回、带生命周期的记忆记录、自动归纳提醒与 Web 管理面板。'
