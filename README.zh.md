@@ -168,6 +168,7 @@ dsh plugin --profile web add dshmarket
 - [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — DeepSeek Harness 的终端 UI（TUI）。
 - [HUITianYi/dsh-whale-desktop-launcher](https://github.com/HUITianYi/dsh-whale-desktop-launcher) — DSH 的 Windows 桌面启动器，提供鲸鱼娘图标、后台服务启动和无浏览器工具栏的 Chromium 应用窗口。
 - [hunter118/dsh-s7r](https://github.com/hunter118/dsh-s7r) — 为 DeepSeek Harness 提供复古 macOS System 7 风格工作站界面，包含桌面窗口、工作区与 Agent 管理、Finder、终端、监视器、上下文工具和桌面附件。
+- [hyperion2144/dsh-desktop-tauriapp](https://github.com/hyperion2144/dsh-desktop-tauriapp) — 把 DeepSeek Harness 封装成 Tauri 2 桌面应用（macOS + Windows），从打包技能演进为可运行应用 + 可装插件：托盘常驻启动器（profile/端口可切换）、三段式自愈进程守护、远程 dsh 接入、任务完成通知（Dock 角标 + 系统通知）、用 --patch 注入的页面内桌面 chrome（替代 plugin add 路线，不重写 stock ui-layout）、外链交系统默认浏览器、实时启动控制台。
 - [Icather/dsh-clean-desktop-shell](https://github.com/Icather/dsh-clean-desktop-shell) — DSH 插件形态的纯净桌面壳：为现有 web profile 套一层原生窗口，托盘管理后端启停/重启（带进度弹窗）、离线自动重连、桌面快捷方式与单实例，Windows + macOS 双平台。
 - [imkingjh999/dsh-shorts-wall](https://github.com/imkingjh999/dsh-shorts-wall) — 在 DSH Web UI 中加入默认贴边的竖屏短视频墙：YouTube Shorts 与 B站双源、关键词轮换、四角缩放及 Alt+S/Alt+M 快捷键。
 - [Isilsolme/dsh-splash-launcher](https://github.com/Isilsolme/dsh-splash-launcher) — Windows 一键启动器：无边框 WPF 启动动画（HARNESS 逐笔描边），后台拉起 dsh web 并在 GUI 就绪后淡入，附 desktop_launch 工具。

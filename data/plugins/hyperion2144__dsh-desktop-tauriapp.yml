@@ -1,0 +1,6 @@
+url: https://github.com/hyperion2144/dsh-desktop-tauriapp
+name: hyperion2144/dsh-desktop-tauriapp
+category: ui
+description:
+  en: 'Tauri 2 desktop shell for DeepSeek Harness (macOS + Windows), evolved from a packaging skill into a runnable app with an installable plugin: tray-resident launcher with profile/port switching, process guardian with three-attempt auto-heal, remote-dsh support, task-completion notifications (Dock badge + system notification), in-page desktop chrome injected via `--patch` instead of `plugin add` (no stock ui-layout rewrite), external links handed to the system browser, and a live startup console.'
+  zh: '把 DeepSeek Harness 封装成 Tauri 2 桌面应用（macOS + Windows），从打包技能演进为可运行应用 + 可装插件：托盘常驻启动器（profile/端口可切换）、三段式自愈进程守护、远程 dsh 接入、任务完成通知（Dock 角标 + 系统通知）、用 --patch 注入的页面内桌面 chrome（替代 plugin add 路线，不重写 stock ui-layout）、外链交系统默认浏览器、实时启动控制台。'
