@@ -1162,5 +1162,9 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/rice-awa/dsh-lan-gateway": [
+  "https://raw.githubusercontent.com/rice-awa/dsh-lan-gateway/main/assets/banner.webp",
+  "https://raw.githubusercontent.com/rice-awa/dsh-lan-gateway/main/assets/login-screenshot.webp"
  ]
 }
