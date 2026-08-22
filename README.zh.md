@@ -1761,6 +1761,7 @@ dsh plugin --profile web add dshmarket
 - [zoahdev/dsh-rule-evolve](https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin) — 验证驱动的自我进化循环：失败日志自动变成经过验证的 AGENTS.md 规则；会话内插件（evolve_learn/evolve_apply/evolve_touch/evolve_recall）、工具体检、规则生命周期、本地召回。
 - [zoahdev/dsh-timesheet](https://github.com/zoahdev/dsh-timesheet) — 从 dsh 会话日志做基于 turn 的时间跟踪：总计、按天/项目/供应商/来源汇总、工具调用数、失败率与首 token 延迟——CLI + agent 可调用 timesheet 工具，dsh-timesheet/v1 报告，零运行时依赖。
 - [zoahdev/dsh-unplug](https://github.com/zoahdev/dsh-unplug) — 让 DSH 插件的安装和卸载干净利落——列出所有加载层（Bundle + 补丁行）、完整卸载（清理 Bundle 列表+补丁行+依赖）、临时禁用以调试而不真正删除、以及审计残留的孤立行或悬空引用。CLI 与 agent 均可调用，默认只读，破坏性操作需二次确认。
+- [ZSeven-W/dsh-ios](https://github.com/ZSeven-W/dsh-ios) — 在 DSH 对话中运行 iOS 模拟器与 USB 连接的真机：21 个 agent 工具，可启动设备、构建运行 Xcode 工程、按无障碍标识 / OCR 文本 / 列表行驱动 UI、读取统一日志并查看进程、backtrace 与内存泄漏，并附带可点按、拖拽、旋转的实时侧边栏画面。
 
 ### 🔒 安全与权限
 
