@@ -1162,5 +1162,14 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/WolfGenerals/ncm-player": [
+  "https://raw.githubusercontent.com/WolfGenerals/ncm-player/main/doc/screenshot-1.png",
+  "https://raw.githubusercontent.com/WolfGenerals/ncm-player/main/doc/screenshot-2.png",
+  "https://raw.githubusercontent.com/WolfGenerals/ncm-player/main/doc/screenshot-3.png",
+  "https://raw.githubusercontent.com/WolfGenerals/ncm-player/main/doc/screenshot-4.png",
+  "https://raw.githubusercontent.com/WolfGenerals/ncm-player/main/doc/screenshot-5.png",
+  "https://raw.githubusercontent.com/WolfGenerals/ncm-player/main/doc/screenshot-6.png",
+  "https://raw.githubusercontent.com/WolfGenerals/ncm-player/main/doc/screenshot-7.png"
  ]
 }
