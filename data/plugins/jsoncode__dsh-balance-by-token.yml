@@ -1,0 +1,6 @@
+url: https://github.com/jsoncode/dsh-balance-by-token
+name: jsoncode/dsh-balance-by-token
+category: tools
+description:
+  en: A DeepSeek Harness plugin (dual-face host + browser) for watching your DeepSeek account **balance** and estimating **token-based costs**, with prices configured per **model × peak/off-peak period** online. Everything lives in a unified modal (opened from the sidebar-footer **Balance** button); a **session-header** button shows a live "Session ≈xx CNY". UI copy is bilingual (Chinese / English, following the host UI language).
+  zh: DeepSeek Harness（dsh）双面插件（宿主 + 浏览器半边）：查看 DeepSeek 账户**余额**，按 token 用量估算**费用**，价格按**模型 × 高峰/空闲时段**在线配置。所有能力收敛在统一弹框中（侧边栏底部「余额」入口），另在**会话头部**提供实时当前会话 ≈xx CNY」按钮。界面中英双语（跟随宿主 UI 语言）。
