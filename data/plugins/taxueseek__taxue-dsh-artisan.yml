@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/taxue-dsh-artisan
+name: taxueseek/taxue-dsh-artisan
+category: vision
+description:
+  en: 'Unified visual creation toolchain: prompt reverse-engineering/optimization plus multi-vendor image generation (Gemini, OpenAI, Seedream, Grok) with async background generation.'
+  zh: 一体化视觉创作工具链：提示词反推/优化 + 多供应商生图（Gemini/OpenAI/Seedream/Grok），支持异步后台出图。

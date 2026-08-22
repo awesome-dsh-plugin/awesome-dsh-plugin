@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/dsh-snippets
+name: taxueseek/dsh-snippets
+category: dev
+description:
+  en: 'Minimal snippet/command toolbox: store high-frequency commands, code, URLs and prompts in a JSONL library, five zero-dependency tools.'
+  zh: 极简常用片段/命令工具箱：把高频命令/代码/网址/提示词存进 JSONL 库，五个工具、零依赖。
