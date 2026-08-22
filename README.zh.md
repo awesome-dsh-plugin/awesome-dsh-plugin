@@ -873,6 +873,7 @@ dsh plugin --profile web add dshmarket
 - [CHplus0/dsh-shell-command](https://github.com/CHplus0/dsh-shell-command) — Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。
 - [ciky20171114/dsh-plugin-midscene](https://github.com/ciky20171114/dsh-plugin-midscene) — 基于 Midscene 的 AI UI 自动化——android_ui 与 web_ui 工具，通过 ctx.midscene seam 在真实 Android 设备或已运行的 Chrome 上完成点击、输入、查询与断言。
 - [ClaireXi99/dsh-data-insight](https://github.com/ClaireXi99/dsh-data-insight) — 数据分析工具包：CSV/TSV/JSON 数据画像、IQR 与 z-score 异常检测、带质量问题提示的结构化摘要、以及无需写代码的筛选/分组/聚合查询。
+- [codingayice/dsh-interview](https://github.com/codingayice/dsh-interview) — 面向 DeepSeek Harness Web 的 AI 面试陪练：支持背八股、模拟面试、场景题与力扣热题 100 四种模式，自动评分、点评并讲解知识点。
 - [coolbreezecoin/dsh-wechat-mp](https://github.com/coolbreezecoin/dsh-wechat-mp) — 把 markdown 变成排好版的微信公众号草稿：样式逐条内联到元素上（编辑器会丢弃 `<style>` 块和 class 名），每张本地图片走微信自己的上传接口以免被过滤，然后创建草稿；不做群发。
 - [CZX2244/dsh-bilibili](https://github.com/CZX2244/dsh-bilibili) — B站视频分析工具：提取元数据、字幕文稿（必剪/本地 ASR 兜底）、评论与弹幕，抓取清晰关键帧并可选本地视觉描述。
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
