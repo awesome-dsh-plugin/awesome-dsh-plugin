@@ -3307,10 +3307,6 @@
   "stars": 3,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": {
-  "stars": 3,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/Mombrane/dsh-subagent-monitor": {
   "stars": 16,
   "checkedAt": "2026-08-19"
@@ -5973,6 +5969,10 @@
  },
  "https://github.com/zylzyqzz/dsh-mobile-pwa": {
   "stars": 0,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/moguiyu/dsh-tavily": {
+  "stars": 3,
   "checkedAt": "2026-08-19"
  }
 }
