@@ -1,6 +1,0 @@
-url: https://github.com/kiligzzz/dsh-capability-manager
-name: kiligzzz/dsh-capability-manager
-category: dev
-description:
-  en: 'Capability Manager for DeepSeek Harness Desktop: manage MCP servers and Skills from a Settings-page UI, no config-file editing. Dual-face dsh plugin.'
-  zh: DeepSeek Harness Desktop 能力管理器：在设置页内统一管理 MCP server 与 Skill，无需手改配置文件。官方双面 dsh 插件。
