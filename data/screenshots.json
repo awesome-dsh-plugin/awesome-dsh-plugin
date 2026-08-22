@@ -1162,5 +1162,8 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/hyrinx/dsh-plugin-open-with": [
+  "https://raw.githubusercontent.com/hyrinx/dsh-plugin-open-with/main/assets/screenshot-1.png"
  ]
 }
