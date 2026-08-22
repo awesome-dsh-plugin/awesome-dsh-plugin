@@ -1162,5 +1162,10 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/philmingdao/anno/tree/main/adapters/dsh-native": [
+  "https://raw.githubusercontent.com/philmingdao/anno/main/plugins/anno/assets/screenshots/anno-editor-light.png",
+  "https://raw.githubusercontent.com/philmingdao/anno/main/plugins/anno/assets/screenshots/anno-editor-dark.png",
+  "https://raw.githubusercontent.com/philmingdao/anno/main/plugins/anno/assets/screenshots/anno-comment.png"
  ]
 }
