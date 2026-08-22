@@ -1535,6 +1535,7 @@ dsh plugin --profile web add dshmarket
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 - [NattoCB/dsh-plugin-notifications](https://github.com/NattoCB/dsh-plugin-notifications) — 在设置中新增卡片，对话轮次完成时弹出系统通知与可选提示音。
 - [nickhelion/dsh-serverchan-notify](https://github.com/nickhelion/dsh-serverchan-notify) — 回合结束时向 Server酱3 推送微信通知——标题、模型、项目目录、Git 分支、状态与回复摘要，支持子代理过滤，fire-and-forget 不阻塞主流程。
+- [nishit130/dsh-notification](https://github.com/nishit130/dsh-notification) — Desktop and webhook alerts on macOS, Linux and Windows when an agent finishes a turn, errors, or waits for approval — zero-dependency native notifications (osascript / notify-send / PowerShell toast) plus a Slack-compatible webhook, with a configurable minimum turn duration.
 - [Nixz0824/dsh-sound-cue](https://github.com/Nixz0824/dsh-sound-cue) — 会话需要你操作（审批、提问或计划确认）以及任务完成时播放不同的短提示音。Web Audio 现场合成，无弹窗、无系统通知。
 - [omdsh-dev/dsh-lark](https://github.com/omdsh-dev/dsh-lark) — DeepSeek Harness 的飞书/Lark 机器人渠道：每个会话驱动独立 agent，工具审批、模型提问与计划审阅都以卡片回到聊天，点按钮或直接回复即可作答；聊天里用 `/cd`、`/model`、`/new` 切工作区、换模型、重开会话，多个机器人各自独立并可在同群交接回合。
 - [omdsh-dev/dsh-notification](https://github.com/omdsh-dev/dsh-notification) — 回合完成桌面通知，按结果分控 + 关键词过滤。
