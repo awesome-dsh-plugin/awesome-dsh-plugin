@@ -1,4 +1,8 @@
 {
+ "https://github.com/kirkchinese/CiteCiter/tree/main/packages/citeciter": [
+  "https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/assets/demo/citeciter-0.4.0.gif",
+  "https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/assets/screenshots/citeciter-settings.png"
+ ],
  "https://github.com/hunter118/dsh-s7r": [
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-desktop.png",
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-agent.png",
@@ -1165,5 +1169,24 @@
  ],
  "https://github.com/jhuanxx44/dsh-sseye": [
   "https://raw.githubusercontent.com/jhuanxx44/dsh-sseye/main/assets/panel-detail.png"
+ ],
+ "https://github.com/wyzh0117/dsh-skill-select": [
+  "https://raw.githubusercontent.com/wyzh0117/dsh-skill-select/main/assets/product.png",
+  "https://raw.githubusercontent.com/wyzh0117/dsh-skill-select/main/assets/better-sidebar.png"
+ ],
+ "https://github.com/wqy8593521/dsh-model-pro": [
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/dashboard.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/editor.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/models.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/test.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/routes.png"
+ ],
+ "https://github.com/Kenerlee/dsh-moments-aieo": [
+  "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-dashboard.png",
+  "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-diagnosis-report.png",
+  "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-dashboard-mobile.png"
+ ],
+ "https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker": [
+  "https://raw.githubusercontent.com/FeiZhuNiU-INFJA/dsh-stock-ticker/main/assets/screenshot.png"
  ]
 }
