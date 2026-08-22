@@ -1,0 +1,6 @@
+url: https://github.com/balue8246-maker/dshteamup
+name: balue8246-maker/dshteamup
+category: workflow
+description:
+  en: 'Multi-thread team orchestration for DeepSeek Harness: main brain dispatches to worker threads (hub-and-spoke), workers proactively report back, threads survive restarts and appear in the sidebar. Includes a TeamUp web panel.'
+  zh: '多线程团队编排：主脑派工给 worker 线程（hub-and-spoke），worker 主动回报，线程跨重启存活且侧栏可见，附 TeamUp 协作面板。'
