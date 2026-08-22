@@ -1,4 +1,11 @@
 {
+ "https://github.com/Chael-Chael/dsh-reference-anything": [
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-external-conversations.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-files.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-sessions.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-commands.png",
+  "https://raw.githubusercontent.com/Chael-Chael/dsh-reference-anything/main/images/at-skills.png"
+ ],
  "https://github.com/hunter118/dsh-s7r": [
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-desktop.png",
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-agent.png",
