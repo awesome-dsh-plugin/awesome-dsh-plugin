@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-agent-memory
+name: xingyingyuzhui/dsh-agent-memory
+category: memory
+description:
+  en: Persistent Claw memory with a vault, daily notes, and turn review. Official workspace sessions do not receive Claw memory briefs.
+  zh: Claw 持久记忆：金库、日记与回合回顾。官方工作区会话不注入 Claw 记忆摘要。
