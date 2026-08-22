@@ -1162,5 +1162,11 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/Dkrillex/dsh-macos-pet": [
+  "https://raw.githubusercontent.com/Dkrillex/dsh-macos-pet/main/docs/media/diy-skin.png",
+  "https://raw.githubusercontent.com/Dkrillex/dsh-macos-pet/main/docs/media/floats-above.png",
+  "https://raw.githubusercontent.com/Dkrillex/dsh-macos-pet/main/docs/media/skins.png",
+  "https://raw.githubusercontent.com/Dkrillex/dsh-macos-pet/main/docs/media/states.png"
  ]
 }
