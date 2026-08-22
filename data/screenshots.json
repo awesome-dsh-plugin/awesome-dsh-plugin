@@ -1170,5 +1170,12 @@
  "https://github.com/wyzh0117/dsh-skill-select": [
   "https://raw.githubusercontent.com/wyzh0117/dsh-skill-select/main/assets/product.png",
   "https://raw.githubusercontent.com/wyzh0117/dsh-skill-select/main/assets/better-sidebar.png"
+ ],
+ "https://github.com/wqy8593521/dsh-model-pro": [
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/dashboard.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/editor.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/models.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/test.png",
+  "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/routes.png"
  ]
 }
