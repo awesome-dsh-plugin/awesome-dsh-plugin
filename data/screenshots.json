@@ -1162,5 +1162,11 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-connect.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
+ ],
+ "https://github.com/PolinniZhong/dsh-personal-center": [
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/light-profile.png",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-pet.png",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/pet-emotions.gif",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-model-cost.png"
  ]
 }

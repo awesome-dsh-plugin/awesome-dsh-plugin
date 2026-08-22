@@ -1,0 +1,6 @@
+url: https://github.com/PolinniZhong/dsh-personal-center
+name: PolinniZhong/dsh-personal-center
+category: usage
+description:
+  en: 'Personal center for DeepSeek Harness: cross-session usage statistics, per-model cost estimation, global custom instructions, a data-driven desktop pet, and a conversation status overview, all local and offline.'
+  zh: 'DeepSeek Harness 个人中心：跨会话用量统计、按模型成本估算、全局自定义指令、数据驱动的桌面宠物与会话状态概览，纯本地离线运行。'
