@@ -690,6 +690,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [MingoZhou/dsh-replay](https://github.com/MingoZhou/dsh-replay) - Replay sessions on a playable timeline with per-step token usage, audit sensitive operations, estimate cost, view fork lineage, compare sessions, and export standalone HTML replays.
 - [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) - Branch-based message editing, reroll, retry, and a version timeline.
 - [Moeblack/dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) - Edit user and built-in system-prompt sections with live preview.
+- [MoonlitDropOfBlood/dsh-archive-manager](https://github.com/MoonlitDropOfBlood/dsh-archive-manager) - Archived-session manager for DeepSeek Harness: grouped archive panel with restore and delete.
 - [mrzhangkris/dsh-session-pruner](https://github.com/mrzhangkris/dsh-session-pruner) - Full-type session lifecycle management: one-shot subagents archived on completion, idle continuable subagents / main sessions archived (recoverable), a capacity cap, projection-cache cleanup, and a hot-reload settings panel.
 - [MuWinds/dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) - Archived-session management: browse archived sessions, unarchive them, or clear them out.
 - [Nothree-code/review-quote-sh](https://github.com/Nothree-code/review-quote-sh) - Message review and quote chips for conversations: multi-model cross review (code/reply) with severity grading and summaries, review history, and host-persisted preferences.
