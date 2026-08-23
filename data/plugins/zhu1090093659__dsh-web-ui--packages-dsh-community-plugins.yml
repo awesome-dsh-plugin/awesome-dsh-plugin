@@ -1,0 +1,6 @@
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-community-plugins
+name: zhu1090093659/dsh-web-ui#packages/dsh-community-plugins
+category: market
+description:
+  en: 'Community plugin index as a first-level Settings section: a searchable, filterable card grid of community-maintained plugins, with in-UI install/uninstall when the plugin-manager service is present.'
+  zh: 设置页一级「社区插件」分区：以可搜索、可筛选的卡片网格索引社区插件；装有配套插件管理器时可界面内安装/卸载，否则退化为只读索引并保留复制安装命令。
