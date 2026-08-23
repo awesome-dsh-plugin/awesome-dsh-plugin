@@ -617,6 +617,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) - Built-in ChatGPT OAuth provider for Codex models, selectable subscription web search, backend quota for standard Codex and Spark, and a DSH settings UI; no API key or separate Codex installation required.
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) - Codex App Server model provider using a local Codex login, with session reuse, Harness tool bridging, native action traces, and durable generated-image projection.
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) - Zero-cost access to 6 free large models. No registration, no recharge, 6 free models built-in, multi-key rotation and rate-limit backoff.
+- [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) - Connects ChatGPT accounts through OAuth, switches among them manually or automatically, and adds Codex models with usage limits to DeepSeek Harness.
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card to tune the DSH LLM auto-retry policy (retry count, backoff, jitter) live from Settings → General.
 
 ### Identity & Communication
