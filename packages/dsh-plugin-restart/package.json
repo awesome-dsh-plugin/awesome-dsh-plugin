@@ -1,6 +1,6 @@
 {
   "name": "@moon16u/dsh-plugin-restart",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Schedule a detached DSH restart from inside DSH via /dsh-restart command or dsh_restart agent tool",
   "type": "module",
   "main": "lib/index.js",

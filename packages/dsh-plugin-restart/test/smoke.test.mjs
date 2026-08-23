@@ -4,6 +4,12 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
+// MUST be set before any handler runs. Scheduling is otherwise a real,
+// detached restart of whatever DSH instance the test process inherited —
+// running this suite unprotected actually restarted production once (each
+// handler call schedules a 3s detached `dsh-restart.sh`).
+process.env.DSH_RESTART_DRY_RUN = "1";
+
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, "..");
 

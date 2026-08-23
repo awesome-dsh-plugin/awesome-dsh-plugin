@@ -24,6 +24,16 @@
 # immediately. The worker performs the kill/start sequence and writes progress
 # to ~/.dsh/dsh-restart.log (prod) or ~/.dsh-dev/dsh-restart.log (dev).
 #
+# If the new DSH process dies during startup, or never becomes ready within
+# 30s, the worker starts a detached single-file error page service
+# (dsh-restart-error-server.js) on the target port, so refreshing the browser
+# tab shows a real failure report (reason + log tails) instead of a bare
+# connection error. That service always exits by itself: its retry button
+# first kills it (releasing the port) before rerunning this script, and it
+# quits immediately if the port is taken by something else — so it can never
+# block a later manual DSH start. Its state file is
+# $PROFILE_HOME/restart-failed.json; a successful restart removes it.
+#
 # Usage:
 #   dsh-restart.sh                # production: dsh --profile web (default port 3080)
 #   dsh-restart.sh dev            # dev: DSH_HOME=~/.dsh-dev dsh web --port 18888
@@ -125,6 +135,74 @@ if [[ "$DELAY_MS" -gt 0 ]]; then
   sleep "$(awk "BEGIN { print $DELAY_MS / 1000 }")"
 fi
 
+# --- failure fallback: make the failure visible in the browser --------------
+# When the new DSH process dies or never becomes ready, DSH and all plugin
+# code are already gone; the only survivor is this detached bash chain, so the
+# error page can only be served from here. See dsh-restart-error-server.js.
+serve_error_page_and_fail() {
+  local reason="$1"
+  local cfg="$PROFILE_HOME/restart-failed.json"
+  local args_json="[]"
+  if [[ "$MODE" == "dev" ]]; then
+    args_json='["dev"]'
+  elif [[ -n "${PORT_ARG:-}" ]]; then
+    args_json="[\"--port\", \"$PORT_ARG\"]"
+  fi
+
+  # Port probe WITHOUT -f: ANY http answer counts — a previous error page
+  # instance, or an old DSH that survived the kill. Either way someone is
+  # already answering on $PORT; do not fight over it (idempotency guard).
+  if curl -sS -o /dev/null -m 2 "http://127.0.0.1:$PORT/" 2>/dev/null; then
+    echo "note: port $PORT already answers, not starting the error page server"
+    echo "error: $reason" >&2
+    exit 1
+  fi
+
+  # State file doubles as the marker the plugin reads after a later successful
+  # start, to tell the user "the previous restart had failed". Preserve the
+  # retry counter: the error-page server increments it on every retry press,
+  # and each repeated failure rewrites this file — without this the count
+  # would reset to zero on every cycle.
+  local prev_retries prev_last
+  prev_retries="$(sed -n 's/.*"retryCount": \([0-9]\{1,\}\).*/\1/p' "$cfg" 2>/dev/null | tail -1)"
+  prev_last="$(sed -n 's/.*"lastRetryAt": "\([^"]*\)".*/\1/p' "$cfg" 2>/dev/null | tail -1)"
+  cat > "$cfg" <<EOF
+{
+  "time": "$(date '+%Y-%m-%dT%H:%M:%S')",
+  "mode": "$MODE",
+  "port": $PORT,
+  "reason": "$reason",
+  "profileHome": "$PROFILE_HOME",
+  "scriptPath": "$(cd "$(dirname "$0")" && pwd)/$(basename "$0")",
+  "args": $args_json,
+  "workerPid": $$,
+  "retryCount": ${prev_retries:-0},
+  "lastRetryAt": "${prev_last:-}"
+}
+EOF
+
+  local node_bin err_server err_log
+  node_bin="${NODE_BIN:-$(command -v node 2>/dev/null || echo "$HOME/node/bin/node")}"
+  err_server="$(cd "$(dirname "$0")" && pwd)/dsh-restart-error-server.js"
+  err_log="$PROFILE_HOME/dsh-restart-error-server.log"
+  if [[ ! -x "$node_bin" || ! -f "$err_server" ]]; then
+    echo "error: cannot start error page server (node=$node_bin server=$err_server)" >&2
+    echo "error: $reason" >&2
+    exit 1
+  fi
+  : > "$err_log"
+  echo "serving failure report at http://127.0.0.1:$PORT/ (log: $err_log)"
+  nohup setsid "$node_bin" "$err_server" --config "$cfg" >>"$err_log" 2>&1 < /dev/null &
+  sleep 1
+  if curl -sS -o /dev/null -m 2 "http://127.0.0.1:$PORT/" 2>/dev/null; then
+    echo "error page is live at http://127.0.0.1:$PORT/ (refresh the old DSH tab to see it)"
+  else
+    echo "warning: error page did not come up, see $err_log" >&2
+  fi
+  echo "error: $reason" >&2
+  exit 1
+}
+
 if [[ ! -d "$PROFILE_DIR" ]]; then
   echo "error: profile directory not found: $PROFILE_DIR" >&2
   exit 1
@@ -196,16 +274,15 @@ echo "$NEW_PID" > "$PROFILE_HOME/dsh-restart.pid"
 # pass against that stale process and report a false "DSH is up".
 for _ in $(seq 1 60); do
   if ! kill -0 "$NEW_PID" 2>/dev/null; then
-    echo "error: DSH exited during startup, see $PROFILE_HOME/dsh-web.out.log" >&2
-    tail -50 "$PROFILE_HOME/dsh-web.out.log" >&2 || true
-    exit 1
+    serve_error_page_and_fail "新进程启动即退出 (new DSH process exited during startup)"
   fi
   if curl -fsS -o /dev/null "http://127.0.0.1:$PORT/" 2>/dev/null; then
     echo "DSH is up at http://127.0.0.1:$PORT/"
+    # Restart succeeded: clear the failure marker so the plugin does not
+    # report a stale failure on this boot.
+    rm -f "$PROFILE_HOME/restart-failed.json"
     exit 0
   fi
   sleep 0.5
 done
-echo "error: DSH did not become ready within 30s" >&2
-tail -50 "$PROFILE_HOME/dsh-web.out.log" >&2 || true
-exit 1
+serve_error_page_and_fail "等待30秒后 Web 服务仍未就绪 (did not become ready within 30s)"
