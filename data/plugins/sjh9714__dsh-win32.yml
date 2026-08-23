@@ -2,5 +2,5 @@ url: https://github.com/sjh9714/dsh-win32
 name: sjh9714/dsh-win32
 category: dev
 description:
-  en: Adds native Windows shell and Workspace Write sandbox presets to DeepSeek Harness without WSL, including busybox-w32 for sandboxed sessions, Git Bash for unrestricted sessions, legacy text decoding, and setup diagnostics.
-  zh: 为 DeepSeek Harness 添加原生 Windows shell 与 Workspace Write 沙箱预设，无需 WSL；沙箱会话使用 busybox-w32，非受限会话使用 Git Bash，并提供旧编码读取与安装诊断。
+  en: Diagnoses and repairs DeepSeek Harness on native Windows around the official persistent PowerShell and Workspace Write stack, creates the desktop shortcut, and keeps earlier Git Bash and BusyBox presets behind an explicit legacy setup. No WSL.
+  zh: 围绕官方持久 PowerShell 与 Workspace Write 方案检查和修复原生 Windows 上的 DeepSeek Harness，创建桌面快捷方式，并仅通过明确的 legacy 安装保留早期 Git Bash 与 BusyBox 预设，无需 WSL。
