@@ -442,5 +442,6 @@
  "https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github": "2026-08-17",
  "https://github.com/openma-ai/deepseek-harness-tui/tree/main/npm": "2026-08-14",
  "https://github.com/springbrand-lab/dsh-skin-universe/tree/main/packages/dsh-web-ui-all": "2026-08-17",
- "https://github.com/moguiyu/dsh-tavily": "2026-08-15"
+ "https://github.com/moguiyu/dsh-tavily": "2026-08-15",
+ "https://github.com/Tabbit-Browser/dsh-tabbit": "2026-08-21"
 }
