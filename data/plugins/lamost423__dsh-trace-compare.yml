@@ -1,6 +1,0 @@
-url: https://github.com/lamost423/dsh-trace-compare
-name: lamost423/dsh-trace-compare
-category: session
-description:
-  en: "Trace Compare & Live Maze: draw the agent's real exploration — main path, failed or dead-end detours, backtracks, and subagent branches — on one wall-clock timeline; upload 1–2 session logs for a same-axis compare, or watch it grow live in a session tab."
-  zh: 轨迹对比与实时迷宫：把智能体真实的探索过程——主干推进、失败或扑空的支路、折返点与子代理支路——画在同一根墙钟时间轴上；可上传 1–2 个 session log 做同轴对比，或在会话页签里实时生长。
