@@ -1,4 +1,8 @@
 {
+ "https://github.com/LayneChai/superpowers-dsh": [
+  "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/home.png",
+  "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/install-success.png"
+ ],
  "https://github.com/kirkchinese/CiteCiter/tree/main/packages/citeciter": [
   "https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/assets/demo/citeciter-0.4.0.gif",
   "https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/assets/screenshots/citeciter-settings.png"
