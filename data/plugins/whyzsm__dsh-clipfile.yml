@@ -1,0 +1,6 @@
+url: https://github.com/whyzsm/dsh-clipfile
+name: whyzsm/dsh-clipfile
+category: tools
+description:
+  en: Attach files and folders in the composer via clipboard paste, a native file/folder picker, and @-mention path search; folders are converted to paged Markdown for the agent to read page by page.
+  zh: 在输入框附加文件和文件夹：剪贴板粘贴、原生文件/文件夹选择器、@-mention 路径搜索；文件夹转分页 Markdown 供智能体逐页读取。
