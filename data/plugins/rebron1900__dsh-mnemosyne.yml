@@ -1,0 +1,6 @@
+url: https://github.com/rebron1900/dsh-mnemosyne
+name: rebron1900/dsh-mnemosyne
+category: memory
+description:
+  en: 'Mnemosyne memory for DeepSeek Harness: remember / recall / forget / stats / sleep tools, an embedded skill, a Settings panel (CLI status / stats / one-click install / config), data under ~/.dsh/mnemosyne, and optional auto-memory (all off by default). Ported from mnemosyne-oss/pi-mnemosyne.'
+  zh: 'Mnemosyne 记忆插件 for DeepSeek Harness：remember / recall / forget / stats / sleep 五个工具 + 内嵌技能 + Settings 面板（CLI 状态/统计/一键安装/配置），数据落 ~/.dsh/mnemosyne，可选自动记忆增强（默认全关）。移植自 mnemosyne-oss/pi-mnemosyne。'
