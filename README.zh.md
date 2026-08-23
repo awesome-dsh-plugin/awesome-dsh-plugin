@@ -627,6 +627,7 @@ dsh plugin --profile web add dshmarket
 - [shuind/dsh-codex-harness](https://github.com/shuind/dsh-codex-harness) — 在 DSH 中提供 Codex preset：引入 Codex 风格的系统提示词与工具契约，支持图片输入、可选思考强度、Fast 优先级请求、OpenAI Responses 网页搜索与远程压缩，以及在 Web 设置上下文容量；旨在给来源于Codex的token提供适配harness，并兼容享受DSH生态。
 - [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) — 按 default、planner 和 subagent 角色将代理请求路由到可配置模型，在计划模式下自动使用 planner，并提供逐角色推理强度与 Web UI 配置。
 - [songoao25/dsh-chatgpt-subscription](https://github.com/songoao25/dsh-chatgpt-subscription) — 通过官方 OAuth 绑定你的 ChatGPT 账号，在 DSH 内直接使用 ChatGPT 模型对话，消耗 Plus/Pro 订阅额度。
+- [SpookySandwich/dsh-plugin-rollout-scout](https://github.com/SpookySandwich/dsh-plugin-rollout-scout) — 检测账号当前被分配到哪个对话模型：并发发起一次性探测会话，按段落开头的写法为流式思维链打分，读起来像旧模型的在数秒内中止。附带离线自检，用同一分类器回放 13 条人工标注的思维链。
 - [stoneface10/dsh-codex-connect-plus](https://github.com/stoneface10/dsh-codex-connect-plus) — 为 DSH 添加基于 ChatGPT/Codex OAuth 的 Codex 模型及 gpt-image-2 文生图和编辑能力，无需 OpenAI Platform API Key。
 - [suntianc/dsh-codex-auth](https://github.com/suntianc/dsh-codex-auth) — 复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。
 - [superboy911/dsh-model-router](https://github.com/superboy911/dsh-model-router) — DSH 关键词路由与隔离生图插件：确定性关键词路由、白名单模型切换与隔离的 image_gen 生图通道。
