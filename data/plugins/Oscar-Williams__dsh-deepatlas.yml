@@ -1,0 +1,6 @@
+url: https://github.com/Oscar-Williams/dsh-deepatlas
+name: Oscar-Williams/dsh-deepatlas
+category: market
+description:
+  zh: "任务感知的插件导航:3000+ 插件本地索引,28 类中英能力分类检索;装前安全审计(风险信号+内容寻址缓存),事务化安装状态机(审计→同意→锁定 commit→组合/启动验证→ACTIVE,失败回滚)。"
+  en: "Task-aware plugin navigator: capability-taxonomy search over a 3000+ entry local ecosystem index, pre-install audit with risk signals (content-addressed cache), and a transactional install state machine (audit → consent → commit-pinned install → compose/boot verify → ACTIVE, with rollback)."
