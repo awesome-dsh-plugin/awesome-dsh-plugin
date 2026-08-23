@@ -1849,6 +1849,7 @@ dsh plugin --profile web add dshmarket
 - [young-tim/dsh-profile-lab](https://github.com/young-tim/dsh-profile-lab) — 运行可复现的 DSH Profile 与 Patch 实验，并提供引导式用例构建、断言、Web 对比报告、恢复和策略门禁。
 - [YTxue/dsh-skill-manager-ytxue](https://github.com/YTxue/dsh-skill-manager-ytxue) — 设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。
 - [YZz-S/dsh-update-checker](https://github.com/YZz-S/dsh-update-checker) — 会话顶栏徽章：显示 DeepSeek Harness 当前版本，自动检查 npm 最新版本，有新版时提示升级。
+- [zebbkira/dsh-skills-mcp-manager](https://github.com/zebbkira/dsh-skills-mcp-manager) — DSH Web 设置内的技能与 MCP 管理器：在项目级与用户级技能目录间浏览/启用/导入/删除技能，并管理 stdio/streamable-http 的 MCP 服务器（真实连接，工具注册为 mcp__<server>__<tool>，配置存 ~/.dsh/mcp.json）。
 - [zhengjy01/dsh-start](https://github.com/zhengjy01/dsh-start) — macOS 上 DSH Web 的一键启停启动器：前台/后台启动、停止、状态、防重复启动、自动打开浏览器，并可用脚本构建程序坞版 DSH.app。
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — 上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。
 - [ZK-Andy/dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — 持续自进化：从会话轨迹沉淀版本化、可审计、可回滚的 harness 状态（提示词/记忆/技能/子代理规格），带审查门禁与技能热加载。
