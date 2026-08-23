@@ -1,0 +1,6 @@
+url: https://github.com/chidaic/dsh-agent-notify
+name: chidaic/dsh-agent-notify
+category: notify
+description:
+  en: 'Task-completion notifications for DSH Web: Windows system-level toast when the agent finishes a task or needs your input (question/approval/plan-review), with tap-to-focus and a send-test-notification diagnostic.'
+  zh: 'DSH Web 任务完成通知插件：agent 完成任务或需要你输入（提问/批准/审阅计划）时弹 Windows 系统级通知，点气泡聚焦会话，附发送测试通知诊断。'
