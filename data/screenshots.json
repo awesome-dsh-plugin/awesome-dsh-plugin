@@ -1202,4 +1202,12 @@
   "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/preset.png",
   "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/image.png"
  ]
+,
+ "https://github.com/lunaship/dsh-links": [
+  "https://raw.githubusercontent.com/lunaship/dsh-links/main/docs/images/phone-connection-sanitized.png",
+  "https://raw.githubusercontent.com/lunaship/dsh-links/main/docs/images/android-device-list-sanitized.png",
+  "https://raw.githubusercontent.com/lunaship/dsh-links/main/docs/images/android-navigation-drawer.jpg",
+  "https://raw.githubusercontent.com/lunaship/dsh-links/main/docs/images/android-workspace-light.jpg",
+  "https://raw.githubusercontent.com/lunaship/dsh-links/main/docs/images/android-workspace-dark.jpg"
+ ]
 }
