@@ -1,5 +1,5 @@
-url: https://github.com/omdsh-dev/fabric
-name: omdsh-dev/fabric
+url: https://github.com/omdsh-dev/stent
+name: omdsh-dev/stent
 category: dev
 description:
   en: An MC-Fabric-style hook processor.
