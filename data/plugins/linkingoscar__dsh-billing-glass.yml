@@ -1,0 +1,6 @@
+url: https://github.com/linkingoscar/dsh-billing-glass
+name: linkingoscar/dsh-billing-glass
+category: usage
+description:
+  en: 'Liquid-glass billing overlay for the Web GUI: a provider-balance capsule, per-message cost chips, session cost priced by the official DeepSeek peak/valley policy chain, daily spend via the platform API, and a local spend ledger; unknown models are marked unpriced instead of being priced at zero.'
+  zh: '液态玻璃计费悬浮卡：右下角余额胶囊、逐条消息费用角标、按官方峰谷政策链精确计价的会话费用与 token 三桶拆分、平台接口今日消费与本地消费账本；未知模型一律标记未计价，绝不按零计费。'
