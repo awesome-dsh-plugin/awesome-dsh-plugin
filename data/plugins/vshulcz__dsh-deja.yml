@@ -1,5 +1,5 @@
-url: https://github.com/vshulcz/deja-vu/tree/main/packages/dsh-deja
-name: vshulcz/deja-vu#dsh-deja
+url: https://github.com/vshulcz/dsh-deja
+name: vshulcz/dsh-deja
 category: memory
 description:
   en: 'Reads the session files nineteen other coding agents on this machine already wrote — Claude Code, Codex, Cursor, opencode, Antigravity, Kimi, Cline, Zed and more — including sessions from before it was installed: deja_recall, deja_session and deja_blame tools, a /deja command, and optional automatic recall added to the runtime context. Local BM25 index, no LLM, no embeddings, no network.'
