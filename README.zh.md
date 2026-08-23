@@ -1929,7 +1929,7 @@ dsh plugin --profile web add dshmarket
 - [pppolf/dsh-webgate](https://github.com/pppolf/dsh-webgate) — Web GUI 远程访问：局域网二维码直连、cloudflared 快速隧道、frp 自有服务器反代，内置登录门户，并放行设置接口。
 - [saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — 在手机上通过受保护的局域网使用 DeepSeek Harness：专属移动界面、安全 HTTPS 配对，以及 /mobile 对话定制。
 - [siberiah2o/dsh-plugin-remote](https://github.com/siberiah2o/dsh-plugin-remote) — DSH Web 远程访问网关：登录鉴权 + 到本机服务的 HTTP/WebSocket 反向代理，无需 --trusted-host。
-- [TiantianFlow/dsh-tailscale-gateway](https://github.com/TiantianFlow/dsh-tailscale-gateway) — 为 DeepSeek Harness Web 提供私有 Tailscale 访问：用 Serve 注入的可信 Tailscale-User-Login 请求头做用户白名单，仅回环网关，受保护的 Serve 配置。
+- [TiantianFlow/dsh-one-gateway](https://github.com/TiantianFlow/dsh-one-gateway) — 为 DeepSeek Harness Web 提供仅回环的私有网关，支持 Tailscale Serve、Cloudflare Access 与 Headscale TCP Serve，精确主体白名单，引导式 fail-closed 配置。
 - [TongaiLinC/dsh-mobile-access](https://github.com/TongaiLinC/dsh-mobile-access) — 移动端访问插件：经局域网/VPN 访问 Web GUI，含 PC 审批门禁、网络模式切换与移动端 UI 适配。
 - [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) — 完整的 Web GUI 局域网/远程访问方案：0.0.0.0 绑定、crypto.randomUUID polyfill、令牌门卫（401 登录页 + WebSocket 拦截，回环豁免）、特权围栏与设置持久化放行，附带幂等安装器与升级恢复。
 - [wangzhishou/onebox-dsh-bridge](https://github.com/wangzhishou/onebox-dsh-bridge) — DeepSeek Harness 的 Android 客户端实现:扫码配对 + 端到端加密云端中继,把本机 dsh web 桥接到万宝盒 App。
