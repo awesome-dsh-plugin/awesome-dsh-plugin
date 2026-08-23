@@ -1,0 +1,7 @@
+url: https://github.com/walkzzz/dsh-plugin-blender-3d
+name: walkzzz/dsh-plugin-blender-3d
+category: tools
+tarball: https://github.com/walkzzz/dsh-plugin-blender-3d/releases/latest/download/dsh-plugin-blender-3d-0.1.0.tgz
+description:
+  en: Drive Blender 3D modeling from the harness — create primitives, run boolean CSG, transform, assign material and modifier, query the scene, and export STL/OBJ/PLY/GLTF via a JSON bridge. Bundles a headless trimesh+manifold3d runtime and a Blender bpy add-on speaking the same protocol.
+  zh: 在 DeepSeek Harness 中驱动 Blender 3D 建模——创建基本体、布尔运算、变换、赋予材质与修改器、查询场景，并通过 JSON 桥接导出 STL/OBJ/PLY/GLTF。内置无头 trimesh+manifold3d 运行时，以及同协议的 Blender bpy 插件。
