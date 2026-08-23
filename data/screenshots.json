@@ -1185,5 +1185,18 @@
  ],
  "https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker": [
   "https://raw.githubusercontent.com/FeiZhuNiU-INFJA/dsh-stock-ticker/main/assets/screenshot.png"
+ ],
+ "https://github.com/qinyre/dsh-plugin-install": [
+  "https://raw.githubusercontent.com/qinyre/dsh-plugin-install/main/docs/images/screenshot-install.png"
+ ],
+ "https://github.com/qinyre/dsh-plugin-capabilities": [
+  "https://raw.githubusercontent.com/qinyre/dsh-plugin-capabilities/main/docs/images/screenshot-skills.png",
+  "https://raw.githubusercontent.com/qinyre/dsh-plugin-capabilities/main/docs/images/screenshot-mcp.png",
+  "https://raw.githubusercontent.com/qinyre/dsh-plugin-capabilities/main/docs/images/screenshot-market-skills.png",
+  "https://raw.githubusercontent.com/qinyre/dsh-plugin-capabilities/main/docs/images/screenshot-market-mcp.png"
+ ],
+ "https://github.com/qinyre/dsh-plugin-atlas": [
+  "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
+  "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
  ]
 }
