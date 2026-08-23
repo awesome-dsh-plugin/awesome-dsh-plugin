@@ -48,6 +48,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          # Needed by the catalog publish below; harmless for the site build.
+          registry-url: https://registry.npmjs.org
       - run: npm ci
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
@@ -111,3 +113,21 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # The same plugins.json, published to npm — see
+      # scripts/publish-catalog.mjs for why it has to exist in two places.
+      #
+      # AFTER the deploy, deliberately: the site is what people look at, and
+      # a registry outage must not be able to hold it up. The script is a
+      # no-op when the catalog has not changed, so the ordinary push build
+      # publishes nothing.
+      #
+      # Still no repository write: the version and the content hash are set
+      # in the runner's working copy and never committed, so the invariant at
+      # the top of this file holds.
+      - name: publish the catalog to npm
+        # Trusted publishing (OIDC) — the id-token permission above is what
+        # authorizes it, so there is no token to leak or rotate.
+        run: |
+          npm install -g npm@latest  # trusted publishing needs npm >= 11.5
+          node scripts/publish-catalog.mjs

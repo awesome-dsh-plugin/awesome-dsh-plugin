@@ -1,5 +1,5 @@
 url: https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin
-name: dsh-engramory
+name: tinqiao-oss/engramory#plugin
 category: memory
 description:
   en: 'Long-term memory for DeepSeek Harness kept as plain markdown, one fact per file, readable in any editor. The `MEMORY.md` index has a hard 200-line / 25 KB cap enforced by `ctx.tools.guard()`: a write that would grow an over-cap index is denied, while a rewrite that shrinks it always passes, so an oversized index can be compacted step by step. The plugin never writes memories on its own — what is kept is decided by you and the model. The same store is also used by Claude Code, Codex, Kiro and OpenClaw.'
