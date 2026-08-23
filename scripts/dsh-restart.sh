@@ -256,17 +256,19 @@ echo "starting DSH ($MODE)  NODE_OPTIONS=$NODE_OPTIONS"
 DSH_EXEC="${DSH_BIN:-$(which dsh 2>/dev/null || echo "$HOME/node/bin/dsh")}"
 if [[ "$MODE" == "dev" ]]; then
   cd "${DSH_WORKSPACE:-$PWD}"
-  # -u DSH_RESTART_DETACHED/-u DSH_SHELL: never leak the launcher's markers
-  # into the DSH environment. A worker carries DSH_RESTART_DETACHED=1; if the
-  # started DSH inherits it, the NEXT scheduled helper skips launcher mode
-  # entirely and the marker propagates to every future generation (seen live
-  # in production after a racing-restart wave).
+  # -u DSH_RESTART_DETACHED/-u DSH_SHELL/-u DSH_RESTART_ALLOWED: never leak
+  # the launcher's markers into the DSH environment. A worker carries
+  # DSH_RESTART_DETACHED=1; if the started DSH inherits it, the NEXT
+  # scheduled helper skips launcher mode entirely and the marker propagates
+  # to every future generation (seen live in production). ALLOWED is stripped
+  # too: combined with an inherited DSH_SHELL it would silently bypass the
+  # "refuse to restart from inside a DSH session" guard.
   DSH_HOME="$PROFILE_HOME" \
-  nohup setsid env -u DSH_RESTART_DETACHED -u DSH_SHELL "$DSH_EXEC" web "${EXTRA_ARGS[@]}" >>"$PROFILE_HOME/dsh-web.out.log" 2>&1 < /dev/null &
+  nohup setsid env -u DSH_RESTART_DETACHED -u DSH_SHELL -u DSH_RESTART_ALLOWED "$DSH_EXEC" web "${EXTRA_ARGS[@]}" >>"$PROFILE_HOME/dsh-web.out.log" 2>&1 < /dev/null &
 else
   cd "${DSH_WORKSPACE:-$HOME}"
   DSH_HOME="$PROFILE_HOME" \
-  nohup setsid env -u DSH_RESTART_DETACHED -u DSH_SHELL "$DSH_EXEC" --profile web "${EXTRA_ARGS[@]}" >>"$PROFILE_HOME/dsh-web.out.log" 2>&1 < /dev/null &
+  nohup setsid env -u DSH_RESTART_DETACHED -u DSH_SHELL -u DSH_RESTART_ALLOWED "$DSH_EXEC" --profile web "${EXTRA_ARGS[@]}" >>"$PROFILE_HOME/dsh-web.out.log" 2>&1 < /dev/null &
 fi
 
 NEW_PID=$!
