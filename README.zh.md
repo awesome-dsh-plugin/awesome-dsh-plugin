@@ -957,6 +957,7 @@ dsh plugin --profile web add dshmarket
 - [988hj7tczd-oss/dsh-computer-use](https://github.com/988hj7tczd-oss/dsh-computer-use) — 跨平台 Computer Use 插件：虚拟鼠标真人操作（screen_observe / computer_click / type / key / scroll / drag 共 11 个工具），AX 语义树零视觉成本 + GLM-4V-Flash 免费视觉兜底，安全护栏（快照 TTL / 应用白名单 / 危险操作审批 / 密码框保护）。
 - [AbcdefgXW/dsh-toolbox-web](https://github.com/AbcdefgXW/dsh-toolbox-web) — Web 界面工具箱：会话/回收站/子目录/搜索/预设/配置管理、标签分组、长消息折叠，以及支持 IM 渠道推送的定时心跳。
 - [AbnerAI/dsh-monitor](https://github.com/AbnerAI/dsh-monitor) — 常驻后台监视器：文件收件箱（NDJSON）或命令输出增量一到就唤醒 agent，相当于 Claude Code Monitor 工具的 Harness 实现。
+- [JohnXu22786/auditrail](https://github.com/JohnXu22786/auditrail) — dsh 安全审计与会话取证：完整工具调用链录制（谁/哪个工具/涉及文件/时间戳），支持脱敏回放与规则扫描。
 - [acebang0303/dsh-quick-launch](https://github.com/acebang0303/dsh-quick-launch) — 一键创建、更新或删除 DeepSeek Harness 桌面快捷方式，图标可自定义上传切换，蓝白金鲸鱼悬浮按钮可拖动，点击旋转 90° 弹出面板。
 - [agentmail-to/dsh-agentmail](https://github.com/agentmail-to/dsh-agentmail) — 用 AgentMail 给 agent 配一个自己的收件箱：发信、读信、搜索与打标签共十一个工具；收到的邮件按邮件线程分派，每个线程对应一个独立会话；所有外发邮件都要过审批与收件人白名单。
 - [alone-tree/dsh-skill-mcp-manager](https://github.com/alone-tree/dsh-skill-mcp-manager) — 一站式可视化管理 DSH 的 SKILL 与 MCP：MCP按需加载、会话内热重载、SKILL与MCP描述可在插件内直接查看
