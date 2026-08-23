@@ -1,5 +1,5 @@
-url: https://github.com/xinchen03/minta
-name: xinchen03/minta
+url: https://github.com/xinchen03/minta/tree/main/dsh-plugin
+name: xinchen03/minta#dsh-plugin
 category: memory
 description:
   zh: '面向智能体的上下文质量层:记忆治理、合规检查与声称门控;19 个 MCP 工具,已验证接入 DSH。'
