@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-valley-meter
+name: uckkk/dsh-valley-meter
+category: ui
+description:
+  en: "Off-peak countdown widget: live valley-time countdown against configurable peak windows, an hourly spend timeline of rounded blocks, official account balance and today's spend, custom valley color, a numbers-only minimal mode, and switchable minimal/card styles."
+  zh: "波谷倒计时小组件：峰谷实时倒计时与时段、按小时方块的今日消耗时间轴、官方账户余额，谷时颜色自定义，余额/花费纯数字极简模式与极简/详细样式自由切换。"
