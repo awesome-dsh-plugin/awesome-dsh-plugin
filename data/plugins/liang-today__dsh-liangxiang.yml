@@ -1,0 +1,6 @@
+url: https://github.com/liang-today/dsh-liangxiang
+name: liang-today/dsh-liangxiang
+category: fun
+description:
+  en: A DeepSeek Harness WebUI plugin that converts input and output tokens into incense, spends one stick to raise or lower the daily community case, and displays today's Liangzi from the community raise ratio, then archives the result at day end.
+  zh: DeepSeek Harness WebUI 插件：把输入与输出 Token 折算成香火，花一炷对当日社区梁案投夯或拉，按社区夯率显示今日梁子，日终将结果收入梁祠。
