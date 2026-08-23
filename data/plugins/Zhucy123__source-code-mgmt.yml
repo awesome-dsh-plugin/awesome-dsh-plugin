@@ -1,0 +1,6 @@
+﻿url: https://github.com/Zhucy123/source-code-mgmt
+name: Zhucy123/source-code-mgmt
+category: ui
+description:
+  en: DSH plugin that integrates env checks, SSH ed25519 key setup, GitHub/Gitee dual-platform push, and a local Git workflow into the "Source Code Management" panel.
+  zh: DSH 源代码管理插件——集成环境检查、SSH 密钥配置、GitHub/Gitee 双平台代码推送及本地 Git 工作流。
