@@ -2,5 +2,5 @@ url: https://github.com/nxz1026/dsh-tray
 name: nxz1026/dsh-tray
 category: dev
 description:
-  en: 'Windows system-tray launcher for DeepSeek Harness Web: start, stop, restart, open the Web UI, and tail logs from the tray icon.'
-  zh: 'DeepSeek Harness Web 的 Windows 托盘启动器：托盘图标一键启动、停止、重启服务，打开 Web UI 并查看日志。'
+  en: 'Windows system-tray launcher for DeepSeek Harness Web: start, stop, restart, open the Web UI, tail logs, live status icon, and a launch-at-login toggle.'
+  zh: 'DeepSeek Harness Web 的 Windows 托盘启动器：托盘图标一键启动、停止、重启服务，打开 Web UI、查看日志，实时状态图标，并支持开机自启开关。'
