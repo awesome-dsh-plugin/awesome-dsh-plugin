@@ -1,0 +1,6 @@
+url: https://github.com/fan56/dsh-llm-net-retry
+name: fan56/dsh-llm-net-retry
+category: tools
+description:
+  en: "Bounded retry plugin for dsh that catches gateway network_error finish_reason failures the stock retry policy classifies as non-retryable, preventing hard turn failures."
+  zh: "网关 finish_reason: network_error 兜底重试插件：dsh 原生重试策略将此类失败归为不可重试，本插件在 agent/request-error waterfall 末端兜底，避免整轮硬失败。"
