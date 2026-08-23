@@ -66,6 +66,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
   - [Security & Permissions](#security--permissions)
   - [Remote & Mobile](#remote--mobile)
   - [Plugin Markets & Managers](#plugin-markets--managers)
+    - [piaobo123/dafeiyu-buchibaifan](https://github.com/piaobo123/dafeiyu-buchibaifan) - Desktop BigFish companion for DSH: real-time balance, out-of-browser desktop Q&A, 7 custom animations, 53 meme lines. 桌面大肥鱼增强版：实时余额、浏览器外桌面问答、7 套专属动作、53 条玩梗。
   - [Just for Fun](#just-for-fun)
 - [Badge](#badge)
 - [Disclaimer](#disclaimer)
