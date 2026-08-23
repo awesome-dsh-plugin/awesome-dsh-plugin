@@ -843,7 +843,8 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhengjy01/dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) - Notion connector for DeepSeek Harness: search, read, query, create, update, and append Notion pages and databases via six agent tools, with a Web settings page — configured once with an Integration Token.
 - [zhujunpeng12/dsh-memory-system](https://github.com/zhujunpeng12/dsh-memory-system) - Local-first persistent memory for DeepSeek Harness: bounded pre-step hot-memory injection, exact and Chinese-bigram BM25 cold recall, six agent tools, approval-gated lease-lock writes with recovery receipts, and read-only governance and trajectory-review candidates.
 - [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) - Long-term memory for DSH agents — durable, inspectable memories with recall, search, browse and knowledge-graph tools, import from ten other AI coding tools, and a settings page.
-
+- [xinchen03/minta](https://github.com/xinchen03/minta) - Context quality layer for DSH: memory governance (stale/conflict/redundancy/fragmentation checks), research compliance engine, staged claim gates, plus 19 MCP tools via streamable-http — verified end-to-end with dsh 0.1.1-rc.2.
+  
 ### Tools & Capabilities
 
 - [1na-ko/dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) - HarmonyOS device bridge: hdc screenshot/install/log/crash/UI automation loop with read_image, official-first versioned API knowledge (SDK .d.ts + offline bundled docs), and a DevEco CLI build/sign/lint lane.
