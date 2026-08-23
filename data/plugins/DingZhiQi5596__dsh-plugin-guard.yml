@@ -1,0 +1,6 @@
+url: https://github.com/DingZhiQi5596/dsh-plugin-guard
+name名称: DingZhiQi5596/dsh-plugin-guard名称: DingZhiQi5596/dsh-plugin-guard
+category: security
+description:
+  en: 'DSH Desktop plugin safety guard: self-repairs plugin load crashes, runs 8-point safety checks, and prompts you the moment you edit a plugin. Non-commercial source-available.'英文: “DSH桌面插件安全守护：可自动修复插件加载崩溃，执行八项安全检查，并在您编辑插件时即时提示。非商业用途，源代码开源。”英文：“DSH桌面插件安全守护：可自动修复插件加载崩溃，执行八项安全检查，并在您编辑插件时即时提示。非商业用途，源代码开源。”
+  zh: 'DSH Desktop 插件安全防护：启动崩溃自我修复 + 八项安全验证 + 写完插件自动提示。非商业源可用。'  zh: 'DSH桌面插件安全防护：启动崩溃自我修复 + 八项安全验证 + 写完插件自动提示。非商业源可用。'
