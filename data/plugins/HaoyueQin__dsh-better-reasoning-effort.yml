@@ -1,0 +1,6 @@
+url: https://github.com/HaoyueQin/dsh-better-reasoning-effort
+name: HaoyueQin/dsh-better-reasoning-effort
+category: model
+description:
+  en: "Per-model reasoning-effort configuration for third-party providers: suggestions fused from a model knowledge base and raw /models endpoint evidence with confidence labels, edited inside the official Models page card."
+  zh: "为第三方供应商模型按模型配置思考强度：知识库与原始 /models 端点取证融合建议并标注置信度，在官方「模型」页卡片内直接编辑。"
