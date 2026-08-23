@@ -1267,5 +1267,9 @@
 ,
  "https://github.com/Whale-Zhang/dsh-complete-chime": [
   "https://raw.githubusercontent.com/Whale-Zhang/dsh-complete-chime/main/docs/settings-card.png"
+ ],
+ "https://github.com/zmh2000829/DSH-agent-bridge": [
+  "https://raw.githubusercontent.com/zmh2000829/DSH-agent-bridge/main/docs/assets/dsh-home.png",
+  "https://raw.githubusercontent.com/zmh2000829/DSH-agent-bridge/main/docs/assets/grok-home.png"
  ]
 }
