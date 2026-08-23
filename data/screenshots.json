@@ -1,4 +1,8 @@
 {
+ "https://github.com/GreenLv/dsh-session-insights": [
+  "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-en.png",
+  "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-zh.png"
+ ],
  "https://github.com/LayneChai/superpowers-dsh": [
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/home.png",
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/install-success.png"
