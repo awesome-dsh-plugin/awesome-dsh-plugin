@@ -1,0 +1,6 @@
+url: https://github.com/fan56/dsh-tui-pi
+name: fan56/dsh-tui-pi
+category: ui
+description:
+  en: "Full-featured TUI for DeepSeek Harness: streaming conversation, powerline status bar, real-time think/tool/todo panels, subagent dual-view, theme hot-switch — all as pure cordis plugins with zero upstream patches."
+  zh: "DeepSeek Harness 的全功能 TUI：流式对话、powerline 状态栏、实时思考/工具/待办面板、子代理双视图、主题热切换——全部以纯 cordis 插件实现，不 fork、不 patch 上游一行代码。"

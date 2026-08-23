@@ -24,7 +24,9 @@ dsh plugin --profile web add dshmarket
 
 > ℹ️ **关于桌面客户端。** 本列表与客户端无关：一个插件被收录，是因为它遵守官方协议——声明 `dsh.bundle` manifest、可通过 `dsh plugin add` 安装——而不是因为它适配了某个特定客户端。
 >
-> 值得一试的客户端：[dsh-desktop](https://github.com/dataelement/dsh-desktop)、[deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop)，以及 anywhere-labs 的 [deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop)——均内嵌 dsh-market，本列表的插件一键即达。其他优秀的第三方客户端同样可以。
+> 我们正在与 `anywhere-labs/deepseek-harness-desktop` 沟通重新合作的事，有进展会在这里同步。无论结果如何，收录标准不变：适配任何单一客户端都不是收录条件，也不会有插件因为没有适配某个客户端而被移除或降权。
+>
+> 值得一试的客户端：[dsh-desktop](https://github.com/dataelement/dsh-desktop) 与 [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop)——两者均内嵌 dsh-market，本列表的插件一键即达。其他优秀的第三方客户端同样可以。
 
 > [!WARNING]
 > 安装插件等于在你的机器上跑第三方代码，权限和你本人一样大——能读你的文件、用你的凭据、访问网络，工具审批管不到插件自己的代码。收录不等于做过安全审查：装之前先看一眼源码，不熟的插件尽量放在没有密钥、没有重要资料的环境里试。完整免责声明见页面底部。
@@ -163,6 +165,7 @@ dsh plugin --profile web add dshmarket
 - [EternalNight996/dsh-ui-agents-pixe](https://github.com/EternalNight996/dsh-ui-agents-pixe) — 为 DeepSeek Harness Web 主窗口添加「工作角色」页签 + 像素办公室浮层：内置 508 张角色卡（The Agency 255 + agency-agents-zh 253），支持搜索 / 中英切换 / 分部分类；Canvas 2D 像素小人可站立、打字、踱步，闲聊台词可接 AI。一条命令安装，不改 dsh 源码。
 - [EternalNight996/dsh-ui-three-body](https://github.com/EternalNight996/dsh-ui-three-body) — 给 DeepSeek Harness 装上会开智的智子：注入驯兽内核让 AI 真正懂你，11 款动态皮肤、幽灵模式，关闭 AI 模式即零 token 消耗。
 - [EugeneVl/dsh_session_folders](https://github.com/EugeneVl/dsh_session_folders) — 为网页侧边栏提供单层会话文件夹——按工作区分组会话，支持拖拽或右键菜单移动、归档与恢复，数据在服务端持久化。
+- [fan56/dsh-tui-pi](https://github.com/fan56/dsh-tui-pi) — DeepSeek Harness 的全功能 TUI：流式对话、powerline 状态栏、实时思考/工具/待办面板、子代理双视图、主题热切换——全部以纯 cordis 插件实现，不 fork、不 patch 上游一行代码。
 - [Fayelin12/dsh-office](https://github.com/Fayelin12/dsh-office) — 办公室工作区/会话仪表盘：悬浮 6 列精灵面板，可视化工作区、会话、token 用量与子代理，并提供 Agent Mail 与办公日志页签。飞书相关视图（消息流、会议日程、妙记逐字稿）另需自行安装并授权 `@larksuite/cli`。
 - [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 输入框旁的 prompt 工具箱面板：24 条内置深度模板 + 自定义模板，/prompt 触发源 + 智能推荐悬浮卡，点选即插入当前对话。
 - [FeiZhuNiU-INFJA/dsh-stock-ticker](https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker) — 一个悬浮的半透明行情小窗，实时显示上证指数、创业板指、科创50 与恒生科技的当前点位与涨跌幅。
@@ -2365,3 +2368,4 @@ description:
 本项目是社区维护的索引。插件由各自作者开发与维护，收录不构成背书，亦不对任何插件的安全性、质量或维护状态作出保证。安装插件即在你的机器上运行第三方代码——请自行审阅源码、风险自担。本项目与 DeepSeek 无隶属关系。
 
 本仓库的 issue 只处理清单与网站本身。插件市场界面里的问题请提到 [dsh-market](https://github.com/dsh-market/dsh-market/issues)；`dsh` 本体的问题请提到 [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues)；某个插件的 bug 请到该插件自己的仓库提。
+
