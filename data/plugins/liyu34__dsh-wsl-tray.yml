@@ -1,0 +1,6 @@
+url: https://github.com/liyu34/dsh-wsl-tray
+name: liyu34/dsh-wsl-tray
+category: notify
+description:
+  en: Windows desktop shortcut and system-tray launcher for DSH running in WSL, with fully hidden startup, tray open/restart/exit menu, and a plugin-configuration card to manage the shortcut.
+  zh: 为运行在 WSL 的 DSH 提供 Windows 桌面快捷方式和系统托盘启动器：完全隐藏启动，托盘菜单支持打开/重启/退出，插件配置页可管理快捷方式。
