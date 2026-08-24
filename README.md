@@ -2033,6 +2033,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Plugin Markets & Managers
 
+- [01men/ybkk-AIOS](https://github.com/01men/ybkk-AIOS) - Enterprise AI resource platform as a 13-plugin cordis bundle: org/account/role IAM, OIDC provider, MCP server management, skill hub, agent and app registries, usage metering, wallet billing, audit with alerts, and a reviewed third-party plugin marketplace — 37 ops tools become callable by the dsh agent.
 - [1e0zj/dsh-plugin-mall](https://github.com/1e0zj/dsh-plugin-mall) - Open plugin marketplace: live GitHub dsh-plugin topic search with per-repo package.json verification (dsh.bundle/dsh.client manifest badges and a verified-only filter), npm-first installs with same-source anti-squatting checks, update detection, and five agent tools for headless use.
 - [2768651338/dsh-plugin-manager](https://github.com/2768651338/dsh-plugin-manager) - A plugin manager tab in Settings → Plugins: Chinese names and plain-language descriptions for every installed plugin, one-click enable/disable, in-UI notes editing, and search/filter over the installed catalog.
 - [863683348/dsh-feed](https://github.com/863683348/dsh-feed) - Cross-ecosystem aggregation data layer: syncs the GitHub dsh-plugin topic and the npm registry into one open JSON index, queried by model tools, a CLI, and a minimal stdio MCP server.
