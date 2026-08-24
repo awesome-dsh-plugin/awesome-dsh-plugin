@@ -1,8 +1,4 @@
 {
- "https://github.com/diqierjia/StrataGate-AgentMemory/tree/main/integrations/deepseek-harness": [
-  "https://raw.githubusercontent.com/diqierjia/StrataGate-AgentMemory/main/integrations/deepseek-harness/docs/assets/stratagate-short-term-memory.png",
-  "https://raw.githubusercontent.com/diqierjia/StrataGate-AgentMemory/main/integrations/deepseek-harness/docs/assets/stratagate-memory-structure.png"
- ],
  "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
@@ -18,10 +14,6 @@
  "https://github.com/LayneChai/superpowers-dsh": [
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/home.png",
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/install-success.png"
- ],
- "https://github.com/Angel2518975237/deepseek-harness-hello-kitty-suite": [
-  "https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/main/docs/screenshots/preview.png",
-  "https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/main/docs/screenshots/preview-toast.png"
  ],
  "https://github.com/kirkchinese/CiteCiter/tree/main/packages/citeciter": [
   "https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/assets/demo/citeciter-0.4.0.gif",
@@ -188,7 +180,8 @@
   "https://raw.githubusercontent.com/Flyvhidbwo/dsh-vision-proxy/main/assets/demo-selector.png"
  ],
  "https://github.com/foooold/dsh-message-nav": [
-  "https://raw.githubusercontent.com/foooold/dsh-message-nav/personal/assets/rail-hover-preview.png"
+  "https://raw.githubusercontent.com/foooold/dsh-message-nav/main/assets/rail-hover-preview.png",
+  "https://raw.githubusercontent.com/foooold/dsh-message-nav/main/assets/rail-left-edge.png"
  ],
  "https://github.com/GOU-GEE/deepseek-vision/tree/main/plugins/dsh-plugin-deepseek-vision": [
   "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/01-settings.png",
@@ -406,10 +399,10 @@
   "https://raw.githubusercontent.com/Totoro-qaq/dsh-plugin-bridge/main/assets/bridge-demo.en.gif"
  ],
  "https://github.com/Ultronen/dsh-archived-chats": [
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/01-archive-entry.png",
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/02-archived-overview.png",
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/04-conversation-preview.png",
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/08-recycle-bin.png"
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/1-archived-chats.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/2-search.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/3-delete-confirm.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/4-group-menu.png"
  ],
  "https://github.com/Ultronen/dsh-liquid-glass": [
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
@@ -1295,19 +1288,8 @@
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/02-review-details.png",
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/03-saved-activity.png"
  ],
- "https://github.com/hanxuanliang/dsh-chaos": [
-  "https://raw.githubusercontent.com/hanxuanliang/dsh-chaos/main/assets/collab/img1.png",
-  "https://raw.githubusercontent.com/hanxuanliang/dsh-chaos/main/assets/collab/img2.png",
-  "https://raw.githubusercontent.com/hanxuanliang/dsh-chaos/main/assets/collab/img3.png"
- ]
-,
- "https://github.com/gjj-star/dsh-conversation-navigator": [
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/01-main.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/02-steps.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/03-minimal.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/04-search-n-hover.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/05-dark.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/06-theme1-preview.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/07-theme2-preview.png"
+ "https://github.com/BananaSoldier01/dsh-tidychat": [
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/navigator.png",
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/settings.png"
  ]
 }
