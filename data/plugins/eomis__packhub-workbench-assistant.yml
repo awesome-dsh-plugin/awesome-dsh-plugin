@@ -2,6 +2,6 @@ url: https://github.com/eomis/packhub-workbench-assistant
 name: eomis/packhub-workbench-assistant
 category: ui
 description:
-  en: 'Adds an in-app workbench manager to DSH Desktop: install signed workbenches with workbench codes, switch between the default and installed workbenches, and apply updates.'
-  zh: '为 DSH Desktop 增加应用内工作台管理：使用工作台码安装签名工作台、在默认与已安装工作台间切换，并接收更新。'
+  en: 'Adds quick installation and switching for workbench templates in DSH Desktop.'
+  zh: '为 DSH Desktop 提供工作台模板的快捷安装与切换。'
 tarball: https://github.com/eomis/packhub-workbench-assistant/releases/latest/download/packhub-workbench-assistant.tgz
