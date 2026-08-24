@@ -1,0 +1,6 @@
+url: https://github.com/HaoyueQin/deepseek-harness-background
+name: HaoyueQin/deepseek-harness-background
+category: theme
+description:
+  en: 'Custom image wallpaper for the DSH Web UI: upload a local picture or paste an image URL behind the whole app surface, with opacity, theme-aware scrim, panel transparency, frosted-glass and wallpaper blur sliders, cover/contain fit, live preview and persisted settings.'
+  zh: DSH Web 自定义壁纸插件：上传本地图片或粘贴图片链接作为全界面背景，可调不透明度、明暗自适应遮罩、面板透明度、毛玻璃与壁纸模糊，支持铺满/完整显示，实时预览，设置持久化。

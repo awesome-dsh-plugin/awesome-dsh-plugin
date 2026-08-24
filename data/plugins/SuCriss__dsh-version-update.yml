@@ -1,0 +1,7 @@
+url: https://github.com/SuCriss/dsh-version-update
+name: SuCriss/dsh-version-update
+category: dev
+tarball: https://github.com/SuCriss/dsh-version-update/releases/download/v0.3.0/dsh-version-update-0.3.0.tgz
+description:
+  zh: "DeepSeek Harness 版本更新插件：显示当前版本、检查最新版本、一键更新并重启宿主。"
+  en: "Version update plugin for DeepSeek Harness: display current version, check latest, one-click update and restart host."
