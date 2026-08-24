@@ -1,7 +1,7 @@
 url: https://github.com/MDR-EX1000/dsh-desktop-kit
 name: MDR-EX1000/dsh-desktop-kit
 category: ui
-tarball: https://github.com/MDR-EX1000/dsh-desktop-kit/releases/latest/download/dsh-desktop-kit-0.1.0.tgz
+tarball: https://github.com/MDR-EX1000/dsh-desktop-kit/releases/latest/download/dsh-desktop-kit.tgz
 description:
   en: 'macOS desktop shell for the DSH web UI: a plugin plus a small Tauri/WKWebView window over the loopback web surface — real macOS fullscreen, single instance, external links delegated to the system browser, and browser-style zoom.'
   zh: '把 DSH Web UI 装进原生 macOS 桌面窗口：插件 + 轻量 Tauri/WKWebView 外壳跑在同一个 loopback 地址上——真 macOS 全屏、单实例、外链交给系统浏览器、类浏览器页面缩放。'
