@@ -1487,7 +1487,7 @@
   "stars": 1,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/fgm-builds/dashr/tree/main/dashr": {
+ "https://github.com/pgmi-builds/dashr/tree/main/dashr": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
@@ -3304,10 +3304,6 @@
   "checkedAt": "2026-08-19"
  },
  "https://github.com/Moeblack/dsh-prompt-studio": {
-  "stars": 3,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": {
   "stars": 3,
   "checkedAt": "2026-08-19"
  },
@@ -5973,6 +5969,10 @@
  },
  "https://github.com/zylzyqzz/dsh-mobile-pwa": {
   "stars": 0,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/moguiyu/dsh-tavily": {
+  "stars": 3,
   "checkedAt": "2026-08-19"
  }
 }
