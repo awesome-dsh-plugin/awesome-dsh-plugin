@@ -1,0 +1,6 @@
+url: https://github.com/0xRabit/dsh-crypto-portfolio
+name: 0xRabit/dsh-crypto-portfolio
+category: tools
+description:
+  en: 'Crypto portfolio tracker for DSH: BTC / EVM (DeBank free+paid) / Solana / Hyperliquid L1 / CEX balances with multi-provider API failover, per-profile configs, scheduled daily refresh and trend charts (self-contained web dashboard).'
+  zh: 加密货币组合追踪器：BTC / EVM（DeBank 免费+付费双源）/ Solana / Hyperliquid L1 / CEX 余额，多 API 源自动切换、多 Profile 配置、每日定时刷新与趋势图（自带 Web 仪表盘）。
