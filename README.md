@@ -1638,6 +1638,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Notifications & Integrations
 
+- [gusu45/dsh-wechat-persistent](https://github.com/gusu45/dsh-wechat-persistent) - Real persistent WeChat bridge for DeepSeek Harness: one WeChat user = one persistent DSH session via official agents.create/resume (iLink official channel, context survives messages and restarts).
 - [534119219/chicheng-push](https://github.com/534119219/chicheng-push) - Multi-channel push for DeepSeek Harness: Server酱, PushPlus, Bark, DingTalk, WeCom, Telegram, Feishu, ntfy, custom webhooks and more, configurable from the settings panel and callable by other plugins via the pushNotifier service.
 - [534119219/dsh-messaging#messaging-core](https://github.com/534119219/dsh-messaging/tree/main/packages/messaging-core) - Unified messaging gateway for DeepSeek Harness: 27 IM platforms (Telegram, QQ, WeChat, Discord, WhatsApp, Feishu and more) in one plugin, with QR scan-to-authorize, per-platform workspaces, slash commands, and a web setup dialog.
 - [988hj7tczd-oss/dsh-im-qq](https://github.com/988hj7tczd-oss/dsh-im-qq) - QQ official bot (q.qq.com) integration for DeepSeek Harness: chat with the full agent from private chats, groups and channels — WS long connection (heartbeat / reconnect / RESUME), per-chat session isolation, standard agent preset, approval inline buttons with /revoke, slash commands, whitelist fail-closed, credentials via the credentials domain.
