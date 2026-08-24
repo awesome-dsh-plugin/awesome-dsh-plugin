@@ -1,0 +1,6 @@
+url: https://github.com/Henta111/dsh-more-models-thinking-level
+name: Henta111/dsh-more-models-thinking-level
+category: model
+description:
+  en: Per-model reasoning effort levels (off/minimal/low/medium/high/xhigh) for GPT, Codex, Gemini and OpenAI-compatible models in DeepSeek Harness.
+  zh: 为 DeepSeek Harness 中的 GPT、Codex、Gemini 及 OpenAI-compatible 模型按模型提供推理等级（off/minimal/low/medium/high/xhigh）。
