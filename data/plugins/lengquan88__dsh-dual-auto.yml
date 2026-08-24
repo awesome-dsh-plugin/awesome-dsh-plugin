@@ -1,0 +1,8 @@
+url: https://github.com/lengquan88/dsh-dual-auto
+name: lengquan88/dsh-dual-auto
+category: tools
+tarball: https://github.com/lengquan88/dsh-dual-auto/releases/latest/download/lengquan88-dsh-dual-auto-0.1.1.tgz
+description:
+  zh: "双模型 Auto 路由插件：低成本模型直返 / 高成本模型升级 + 逃逸学习闭环（直返答错自动学习指纹，同指纹下次强制升级），状态持久化并与 Python ModelRouter 互通。"
+  en: "Dual-model auto-routing plugin: low-cost direct / high-cost upgrade with an escape-learning closed loop (wrong direct answers auto-learn fingerprints, force-upgrading the same fingerprint next time), persisted and interoperable with the Python ModelRouter."
+# 可安装: dsh plugin add github:lengquan88/dsh-dual-auto (dsh.bundle + cordis.patch.yml 已声明)

@@ -114,6 +114,17 @@ jobs:
               const stale = gate && gateChangedAt && (!ranAt || ranAt < gateChangedAt)
               // 3. It failed on age or commit count, which time alone fixes.
               const aged = gate?.conclusion === 'failure' && /days old|commit\(s\)/.test(gate.output?.summary ?? '')
+                // 3b. It reported `neutral`, which is the gate failing OPEN: when
+                //    the repository lookup errors (HTTP 403 under rate limit) the
+                //    gate lets the entry through and says so in its own summary —
+                //    "let through unchecked ... nothing here vouches for them".
+                //    That is reason 1's problem exactly (nothing vouched for it,
+                //    and a PR list scanned for green reads it as fine), but
+                //    `never` is false because a run does exist. Without this the
+                //    verdict is never revisited: `aged` only matches `failure`
+                //    and `passStale` only matches `success`, so a neutral sits
+                //    unverified until the author happens to push again.
+              const unverified = gate?.conclusion === 'neutral'
 
               // 4. It PASSED, but long enough ago that the verdict is a claim
               //    about a repository as it stood then. Reasons 1-3 all assume
@@ -126,7 +137,7 @@ jobs:
               //    human re-check, which is not a control.
               const passStale = gate?.conclusion === 'success' && ranAt && (Date.now() - ranAt) > PASS_STALE_MS
 
-              if (never || stale || aged) urgent.push([pr, runId, never ? 'never gated' : stale ? 'verdict predates the current gate' : 'aged in'])
+              if (never || stale || aged || unverified) urgent.push([pr, runId, never ? 'never gated' : stale ? 'verdict predates the current gate' : aged ? 'aged in' : 'gate failed open (neutral) — never verified'])
               else if (passStale) speculative.push([pr, runId, `passing verdict is ${Math.round((Date.now() - ranAt) / 3600000)}h old`])
             }
 

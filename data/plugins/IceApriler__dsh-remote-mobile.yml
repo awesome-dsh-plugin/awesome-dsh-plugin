@@ -1,0 +1,6 @@
+url: https://github.com/IceApriler/dsh-remote-mobile
+name: IceApriler/dsh-remote-mobile
+category: remote
+description:
+  en: 'Remote and mobile security guard: safely opens Tailscale and LAN access with zero DSH core modifications, featuring QR scan pairing, RSA encryption, and brute-force protection.'
+  zh: '远程与移动端安全网关：在不改动 DSH 底层代码的前提下安全开放局域网和 Tailscale 连接，支持扫码配对、RSA 传输加密与防暴力破解。'
