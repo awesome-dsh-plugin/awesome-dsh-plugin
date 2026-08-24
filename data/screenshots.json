@@ -1278,5 +1278,9 @@
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/01-proposal-inbox.png",
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/02-review-details.png",
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/03-saved-activity.png"
+ ],
+ "https://github.com/sunnystarye-ui/dsh-plugin-text-quote": [
+  "https://raw.githubusercontent.com/sunnystarye-ui/dsh-plugin-text-quote/master/assets/selection-menu.png",
+  "https://raw.githubusercontent.com/sunnystarye-ui/dsh-plugin-text-quote/master/assets/note-editor.png"
  ]
 }
