@@ -1,0 +1,20 @@
+name: fix-readme
+on: [push]
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: clean-add-simon
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: node scripts/generate-readme.mjs
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: clean-add-simon
+          commit_message: "chore: regenerate READMEs from data/plugins"
