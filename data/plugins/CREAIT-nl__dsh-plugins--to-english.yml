@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/to-english
+name: CREAIT-nl/dsh-plugins#to-english
+category: market
+description:
+  en: 'Rewrites the Chinese copy of a market-installed plugin into English using a model already configured in the harness — automatically when the plugin is installed, then live-reloaded. The model is shown only the line ranges that contain Chinese and must return the same number of lines; each returned line is checked against the original for structure before it is accepted, a rejected line is left in Chinese, and the untouched file is kept as a .zh.bak. Trigger phrases and locale tables can optionally be preserved rather than translated.'
+  zh: '用你已经配置好的模型，把从市场安装的插件里的中文文案改写成英文——安装时自动运行，随后热重载。模型只会看到包含中文的行区间，且必须返回相同的行数；每一行返回结果都会先与原文做结构比对再决定是否采用，未通过的行保持中文原样，未改动的原文件保留为 .zh.bak。触发短语与本地化表可以选择保留而不翻译。'

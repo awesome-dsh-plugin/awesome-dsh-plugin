@@ -2077,6 +2077,7 @@ dsh plugin --profile web add dshmarket
 - [bradeGithub/DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace) — 面向 GitHub dsh-plugin 话题的插件与技能市场：设置页内逛自动收录的全量索引（CI 每 2 小时刷新），一键安装带类型识别、安装脚本与宿主依赖遮蔽安全检查、环境变量密钥管理，并附 STANDARD.md 识别层规范。
 - [buhuikongpan/dsh-pluginmanager](https://github.com/buhuikongpan/dsh-pluginmanager) — DSH 分层插件管理器：原生插件按系统/WebUI/工具三层只读展示，用户扩展支持停用/启用、补登记、卸载与可编辑描述。
 - [ChengxiuCDP/dsh-plugin-advisor](https://github.com/ChengxiuCDP/dsh-plugin-advisor) — 质量感知的会话内插件发现：find_dsh_plugins 工具基于每日更新的质量评分索引（可安装声明 / 精选收录 / 许可证 / 活跃度）对 dsh-plugin topic 全量排序，并叠加实时 gh 搜索——零 LLM API 成本，每条结果附风险徽章与精确安装命令。
+- [CREAIT-nl/dsh-plugins#to-english](https://github.com/CREAIT-nl/dsh-plugins/tree/main/to-english) — 用你已经配置好的模型，把从市场安装的插件里的中文文案改写成英文——安装时自动运行，随后热重载。模型只会看到包含中文的行区间，且必须返回相同的行数；每一行返回结果都会先与原文做结构比对再决定是否采用，未通过的行保持中文原样，未改动的原文件保留为 .zh.bak。触发短语与本地化表可以选择保留而不翻译。
 - [crTnT/dsh-plugin-suite#dsh-plugin-center](https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-center) — 插件中心：在设置页发现、安装与管理 DSH 插件。
 - [crTnT/dsh-plugin-suite#dsh-plugin-updater](https://github.com/crTnT/dsh-plugin-suite/tree/main/dsh-plugin-updater) — 已装插件更新管理：检查更新、备份与回滚。
 - [cxdyun/dsh-skills-marketplace](https://github.com/cxdyun/dsh-skills-marketplace) — 类 Codex 插件市场的 DSH 技能管理器。
