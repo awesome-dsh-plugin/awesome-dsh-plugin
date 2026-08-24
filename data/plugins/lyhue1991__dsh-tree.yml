@@ -1,0 +1,6 @@
+url: https://github.com/lyhue1991/dsh-tree
+name: lyhue1991/dsh-tree
+category: ui
+description:
+  en: Project file explorer in the details column with read-only preview (Markdown/HTML/JSON/CSV/IPYNB/PDF/code highlighting), model throughput badge, and multiline GoalBar.
+  zh: 右侧 details 列项目资源管理器，只读预览（Markdown/HTML/JSON/CSV/IPYNB/PDF/代码高亮），附带模型吞吐徽标与多行 GoalBar。
