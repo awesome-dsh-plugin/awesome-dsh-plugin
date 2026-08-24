@@ -1,5 +1,5 @@
-url: https://github.com/lyhue1991/dsh-tree
-name: lyhue1991/dsh-tree
+url: https://github.com/lyhue1991/dsh-soup
+name: lyhue1991/dsh-soup
 category: ui
 description:
   en: Project file explorer in the details column with read-only preview (Markdown/HTML/JSON/CSV/IPYNB/PDF/code highlighting), model throughput badge, and multiline GoalBar.
