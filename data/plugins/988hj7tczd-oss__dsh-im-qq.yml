@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-im-qq
+name: 988hj7tczd-oss/dsh-im-qq
+category: notify
+description:
+  en: 'QQ official bot (q.qq.com) integration for DeepSeek Harness: chat with the full agent from private chats, groups and channels — WS long connection (heartbeat / reconnect / RESUME), per-chat session isolation, standard agent preset, approval inline buttons with /revoke, slash commands, whitelist fail-closed, credentials via the credentials domain.'
+  zh: 接入 QQ 官方机器人（q.qq.com）：私聊 / 群聊 / 频道 @ 与完整 agent 对话——WS 长连接（心跳 / 重连 / RESUME）、每会话隔离、标准 agent preset、审批内联按钮 + /revoke、斜杠命令、白名单 fail-closed、凭据走凭据域。

@@ -1,0 +1,6 @@
+url: https://github.com/rayzhu1109/dsh-balance
+name: rayzhu1109/dsh-balance
+category: usage
+description:
+  en: Real-time DeepSeek account balance in the sidebar footer with a 5-day spending chart.
+  zh: 在侧边栏底部实时显示 DeepSeek 账户余额，点击展开最近 5 天消费柱状图。
