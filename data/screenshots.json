@@ -1207,6 +1207,9 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
  ],
+ "https://github.com/m1khal3v/dsh-llm-key-rotation": [
+  "https://github.com/user-attachments/assets/84f63f77-3492-4027-ace7-30b6d08616ef"
+ ],
  "https://github.com/IceApriler/dsh-remote-mobile": [
   "https://raw.githubusercontent.com/IceApriler/dsh-remote-mobile/master/images/pc-dsh-setting-1.png",
   "https://raw.githubusercontent.com/IceApriler/dsh-remote-mobile/master/images/pc-dsh-setting-2.png",
@@ -1263,8 +1266,7 @@
  "https://github.com/qinyre/dsh-plugin-atlas": [
   "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
   "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
- ]
-,
+ ],
  "https://github.com/Whale-Zhang/dsh-complete-chime": [
   "https://raw.githubusercontent.com/Whale-Zhang/dsh-complete-chime/main/docs/settings-card.png"
  ],
