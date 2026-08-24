@@ -2076,7 +2076,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🛒 插件市场与管理
 
-- [01men/ybkk-AIOS](https://github.com/01men/ybkk-AIOS) — 企业 AI 资源平台，由 13 个 cordis 插件组成：组织/账号/角色 IAM、OIDC 认证、MCP 服务管理、Skill 市场、Agent 与应用管理、计量、钱包计费、审计告警与带审核的第三方插件市场——37 个运维工具可直接被 dsh Agent 调用。
+- [01men/ybkk-AIOS](https://github.com/01men/ybkk-AIOS) — 企业 AI 资源平台，由 16 个 cordis 插件组成：组织/账号/角色 IAM、OIDC 认证与 App SSO、MCP 服务管理（平台自身亦作为 MCP Server 对外提供调用）、NAS 资产存储、Skill 市场、Agent 与应用管理、远程 dsh 一键接入与工具远程代理、计量、钱包计费、模型网关、审计告警、平台自更新与带审核的第三方插件市场——60+ 个运维工具可直接被 dsh Agent 调用。
 - [1e0zj/dsh-plugin-mall](https://github.com/1e0zj/dsh-plugin-mall) — 开放式插件市场：GitHub dsh-plugin 话题实时搜索，逐仓库 package.json 验证（dsh.bundle/dsh.client 声明徽章与只看已验证过滤），npm 优先安装带同源防抢注校验，更新检测，并附五个可在无界面环境使用的 agent 工具。
 - [2768651338/dsh-plugin-manager](https://github.com/2768651338/dsh-plugin-manager) — 设置 → 插件里的插件管理页：已装插件中文名与白话描述、一键启停、界面内改备注，支持搜索与筛选。
 - [863683348/dsh-feed](https://github.com/863683348/dsh-feed) — 跨生态聚合数据层（"聚合的聚合"）：把 GitHub dsh-plugin 主题与 npm registry 归一化为开放 JSON 索引，供模型工具、CLI 与轻量 stdio MCP 服务查询。
