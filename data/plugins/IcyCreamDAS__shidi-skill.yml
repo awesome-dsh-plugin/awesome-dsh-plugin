@@ -1,0 +1,6 @@
+url: https://github.com/IcyCreamDAS/shidi-skill
+name: IcyCreamDAS/shidi-skill
+category: skill
+description:
+  en: "AI-for-Science research workflow skill for DeepSeek Harness, aimed at researchers and grad students using agentic AI: multi-angle literature review with per-angle files, experiment design with a caveat list, figures and paper reading; each job returns files plus a cross-verification brief for a second model. Zero deps, MIT."
+  zh: "AI4S 科研工作流技能包，面向 AI for Science 与研究生/科研 Agent 用户：多角度文献调研（每角度落盘）、实验方案（含漏洞清单）、作图与精读；每单交付文件，附交叉验证任务书。零依赖，MIT。"

@@ -1,0 +1,6 @@
+url: https://github.com/Nono-neko/dsh-browser
+name: Nono-neko/dsh-browser
+category: browser
+description:
+  en: 'Embedded browser for DSH Web and Desktop: multi-tab browsing via Puppeteer rendering proxy that bypasses X-Frame-Options, per-workspace tab persistence, workspace file preview, and agent tools (browser_open, browser_read).'
+  zh: DSH Web 与 Desktop 端的内置浏览器：通过 Puppeteer 渲染代理实现多标签浏览并绕过 X-Frame-Options，按工作区持久化标签，支持工作区文件预览，以及 agent 工具（browser_open、browser_read）。

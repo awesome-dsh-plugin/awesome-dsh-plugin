@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-pace-calc
+name: uckkk/dsh-pace-calc
+category: tools
+description:
+  en: "Running pace calculator: converts distance and time to min/km pace and km/h speed."
+  zh: "跑步配速计算：根据距离与时间换算配速（分/公里）与速度（公里/小时）。"
