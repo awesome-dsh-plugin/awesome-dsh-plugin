@@ -48,6 +48,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          # Needed by the catalog publish below; harmless for the site build.
+          registry-url: https://registry.npmjs.org
       - run: npm ci
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
@@ -70,6 +72,26 @@ jobs:
             data/tarballs.json
           key: probe-data-v2-${{ github.run_id }}
           restore-keys: probe-data-v2-
+      # data/downloads.json gets its OWN cache entry rather than joining the
+      # list above. Two reasons, and the second is the whole point:
+      #
+      # 1. actions/cache derives its version from the `path` list, so adding a
+      #    file there invalidates every existing entry and forces the cold
+      #    start that comment warns about (#1673). A separate step has its own
+      #    version and leaves the other cache untouched.
+      #
+      # 2. Without a cache, downloads silently regressed to the committed
+      #    snapshot on every push build (#2797). The nightly refreshes the file
+      #    in the runner and deploys it, but this workflow never writes to the
+      #    repository — so the committed copy stayed frozen at 2026-08-19 and
+      #    each push build rebuilt docs/ from it, undoing the nightly. Live
+      #    counts ran ~42% under npm's own figures with no staleness signal.
+      #    Restoring the nightly's copy here is what makes the refresh stick.
+      - uses: actions/cache@v4
+        with:
+          path: data/downloads.json
+          key: downloads-v1-${{ github.run_id }}
+          restore-keys: downloads-v1-
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -91,10 +113,11 @@ jobs:
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes
-            # data/downloads.json, which is committed (see its own header) —
-            # deliberately absent from the cache `path:` list above, so it
-            # needs no entry there and touching it can never trigger the
-            # cold-start hazard that list's own comment warns about.
+            # data/downloads.json, which is committed AND now has its own cache
+            # entry above. It stays out of the shared `path:` list so that
+            # caching it cannot invalidate the other probes' cache; the
+            # committed copy remains the cold-start floor, and the cache is
+            # what carries a nightly refresh across the next push build.
             node scripts/probe-downloads.mjs
             node scripts/probe-stars.mjs
             node scripts/probe-readmes.mjs
@@ -111,3 +134,21 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # The same plugins.json, published to npm — see
+      # scripts/publish-catalog.mjs for why it has to exist in two places.
+      #
+      # AFTER the deploy, deliberately: the site is what people look at, and
+      # a registry outage must not be able to hold it up. The script is a
+      # no-op when the catalog has not changed, so the ordinary push build
+      # publishes nothing.
+      #
+      # Still no repository write: the version and the content hash are set
+      # in the runner's working copy and never committed, so the invariant at
+      # the top of this file holds.
+      - name: publish the catalog to npm
+        # Trusted publishing (OIDC) — the id-token permission above is what
+        # authorizes it, so there is no token to leak or rotate.
+        run: |
+          npm install -g npm@latest  # trusted publishing needs npm >= 11.5
+          node scripts/publish-catalog.mjs

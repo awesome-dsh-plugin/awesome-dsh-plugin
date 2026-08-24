@@ -1,0 +1,7 @@
+url: https://github.com/Andrew111888/dsh-plugin-balance
+name: Andrew111888/dsh-plugin-balance
+category: usage
+tarball: https://github.com/Andrew111888/dsh-plugin-balance/releases/latest/download/dsh-plugin-balance-1.3.2.tgz
+description:
+  en: "A floating credit/quota widget for the DeepSeek Harness Web: shows DeepSeek / OpenCode Go balances and usage, and tracks DSH session token usage and estimated cost by day, month, and model."
+  zh: "DSH Web 的 LLM 额度/用量悬浮窗：显示 DeepSeek / OpenCode Go 余额与套餐用量，并按日、月、模型统计 DSH 会话 token 用量与费用估算。"

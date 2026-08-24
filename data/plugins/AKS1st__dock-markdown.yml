@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dock-markdown
+name: AKS1st/dock-markdown
+category: ui
+description:
+  en: 'Markdown viewer for the dock workbench: GFM rendering with DOMPurify sanitization, document outline and relative-path image/link resolution, with one-click switch to editing.'
+  zh: dock 系列 Markdown 查看器：GFM 渲染 + DOMPurify 消毒、文档大纲、相对路径图片/链接解析，可一键切换编辑。
