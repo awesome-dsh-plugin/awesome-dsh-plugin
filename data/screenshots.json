@@ -29,6 +29,11 @@
   "https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/master/preview/light.webp",
   "https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/master/preview/dark.webp"
  ],
+ "https://github.com/liang-today/dsh-liangxiang": [
+  "https://raw.githubusercontent.com/liang-today/dsh-liangxiang/main/assets/main-frame.jpg",
+  "https://raw.githubusercontent.com/liang-today/dsh-liangxiang/main/assets/plugin-panel.jpg",
+  "https://raw.githubusercontent.com/liang-today/dsh-liangxiang/main/assets/liangci.jpg"
+ ],
  "https://github.com/Little-Star888/dsh-pelican": [
   "https://raw.githubusercontent.com/Little-Star888/dsh-pelican/main/assets/screenshot-1.png"
  ],
@@ -1215,8 +1220,7 @@
   "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/menu.png",
   "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/preset.png",
   "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/image.png"
- ]
-,
+ ],
  "https://github.com/lunaship/dsh-links": [
   "https://raw.githubusercontent.com/lunaship/dsh-links/main/docs/images/phone-connection-sanitized.png",
   "https://raw.githubusercontent.com/lunaship/dsh-links/main/docs/images/android-device-list-sanitized.png",
