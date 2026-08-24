@@ -1267,5 +1267,11 @@
 ,
  "https://github.com/Whale-Zhang/dsh-complete-chime": [
   "https://raw.githubusercontent.com/Whale-Zhang/dsh-complete-chime/main/docs/settings-card.png"
+ ],
+ "https://github.com/WSL043/dsh-native-deepseek-balance": [
+  "https://raw.githubusercontent.com/WSL043/dsh-native-deepseek-balance/main/docs/assets/balance-usage-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-native-deepseek-balance/main/docs/assets/balance-usage-zh.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-native-deepseek-balance/main/docs/assets/balance-composer-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-native-deepseek-balance/main/docs/assets/balance-composer-zh.png"
  ]
 }
