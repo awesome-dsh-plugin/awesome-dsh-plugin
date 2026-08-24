@@ -400,6 +400,7 @@ dsh plugin --profile web add dshmarket
 - [a1113622001/dsh-session-stats-panel](https://github.com/a1113622001/dsh-session-stats-panel) — 右侧会话统计面板，展示平均缓存命中率、会话成本、运行时长、请求数、累计 token 与账户余额。
 - [AKS1st/model-usage-plugin](https://github.com/AKS1st/model-usage-plugin) — 按模型统计 token 消耗并估算费用，同时显示 DeepSeek 账户余额，展示于设置面板「模型消耗」页签。
 - [Andrew111888/dsh-plugin-balance](https://github.com/Andrew111888/dsh-plugin-balance) — DSH Web 的 LLM 额度/用量悬浮窗：显示 DeepSeek / OpenCode Go 余额与套餐用量，并按日、月、模型统计 DSH 会话 token 用量与费用估算。
+- [Angelyeye/dsh-cost-tracker](https://github.com/Angelyeye/dsh-cost-tracker) — 统计 DeepSeek Harness 的 LLM Token 用量与花费（人民币、峰谷计价），提供设置面板、Agent 工具、HTTP 接口与持久化存储。
 - [badai147/dsh-ocgo-usage](https://github.com/badai147/dsh-ocgo-usage) — 在 Web 侧边栏左下角显示 OpenCode Go 用量——滚动/本周/本月配额进度与悬停明细卡片，并附按北京时间标记的 DeepSeek 高峰时段进度条。
 - [BeiZi6/dsh-opencodego-usage](https://github.com/BeiZi6/dsh-opencodego-usage) — OpenCodeGo 剩余额度监视器：输入框右下角呼吸指示灯（按剩余额度绿/黄/红），液态玻璃面板显示滚动/周/月用量窗口与重置时间，每 30 秒自动刷新，API Key 自动读取 DSH 凭据。
 - [Bob-Bo1/dsh-deepseek-balance](https://github.com/Bob-Bo1/dsh-deepseek-balance) — 在 DSH 中查看 DeepSeek API 余额及本机 Flash 和 Pro 消费统计。
