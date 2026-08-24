@@ -1,0 +1,6 @@
+url: https://github.com/FeatherHunter/dsh-chinese-skill-patch
+name: FeatherHunter/dsh-chinese-skill-patch
+category: skill
+description:
+  en: 'Type /私 and complete 私家大厨 — Chinese skill names, zero renaming. Patches DSH skill discovery, the / gesture and the skill tool so any Unicode SKILL.md name (私家大厨, 卡路里, 作息管家…) works: slash completion, direct /私家大厨 invocation, model skill({name}) loading. Zero config, uninstall reverts.'
+  zh: '中文技能名零改造直用：输入 /私 自动补全 私家大厨。为 DSH 打上技能发现、斜杠手势与 skill 工具补丁，Unicode 技能名（私家大厨/卡路里/作息管家…）补全、直达、加载全可用；不改 SKILL.md、零配置、卸载即回退。'
