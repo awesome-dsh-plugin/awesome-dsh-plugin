@@ -996,6 +996,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [goecho/dsh-generation](https://github.com/goecho/dsh-generation) - Adds generation_fork and generation_run to copy an agent preset and run a task on a new session.
 - [gongyijie85/dsh-repo-setup](https://github.com/gongyijie85/dsh-repo-setup) - Read-only repo bootstrap scanner (repo_setup_scan tool): detects stack/tests/docs/git/db and recommends plugins, MCP servers and hygiene files.
 - [hanyi7867069-create/dsh-content-lab](https://github.com/hanyi7867069-create/dsh-content-lab) - Content workshop tools for DSH — topic, title, post and content-calendar generation through the built-in LLM.
+- [Harzva/dsh-agent-project-sync](https://github.com/Harzva/dsh-agent-project-sync) - Discovers Codex and Claude project directories and registers them as shared DeepSeek Harness workspaces.
 - [hccccc01333/dsh-excel-chat#bundle](https://github.com/hccccc01333/dsh-excel-chat/tree/master/bundle) - Talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation, with automatic formula health checks after every edit.
 - [heartleo/hn-cli#hacker-news](https://github.com/heartleo/hn-cli/tree/main/plugins/hacker-news) - Hacker News tools for feeds, discussion threads, search, and user profiles.
 - [Hefulalala/dsh-remote-workspace](https://github.com/Hefulalala/dsh-remote-workspace) - SSH/SFTP remote sites and workspaces: manage connections and remote directories like local workspaces.
