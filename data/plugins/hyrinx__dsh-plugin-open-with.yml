@@ -1,0 +1,6 @@
+url: https://github.com/hyrinx/dsh-plugin-open-with
+name: hyrinx/dsh-plugin-open-with
+category: ui
+description:
+  en: 'Capsule split-button in the conversation header: open the workspace in VS Code, terminal, or file explorer with one click.'
+  zh: 会话头部胶囊拆分按钮：一键在当前工作区打开 VS Code、终端或文件资源管理器。
