@@ -1,5 +1,5 @@
-url: https://github.com/Vesna-Strivozha/DSH-LLM-wiki-plugin
-name: Vesna-Strivozha/DSH-LLM-wiki-plugin
+url: https://github.com/Vesna-Strivozha/DSH-LLM-wiki-plugin/tree/main/packages/dsh-llm-wiki
+name: Vesna-Strivozha/DSH-LLM-wiki-plugin#dsh-llm-wiki
 category: memory
 description:
   en: 'An Obsidian-style knowledge base: ingest sources, let the LLM build and maintain an interlinked wiki, and ask questions grounded in it.'
