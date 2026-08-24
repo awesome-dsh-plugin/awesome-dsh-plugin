@@ -1,0 +1,7 @@
+url: https://github.com/megatronyy/dsh-skin-background
+name: megatronyy/dsh-skin-background
+category: theme
+description:
+  en: Image-background skin with four shipped wallpapers, a user wallpaper directory, custom image URLs, and live dim/blur controls in Settings.
+  zh: 图片背景皮肤：内置四张壁纸，支持用户壁纸目录与自定义图片链接，设置页实时调节压暗与模糊。
+tarball: https://github.com/megatronyy/dsh-skin-background/releases/latest/download/dsh-skin-background-0.1.0.tgz
