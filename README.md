@@ -1750,6 +1750,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) - Connect a Weixin bot to DeepSeek Harness by scanning a QR code.
 - [yangyongzhen/dsh-notify](https://github.com/yangyongzhen/dsh-notify) - Task-completion notifications via ServerChan / DingTalk / Feishu / generic webhooks.
 - [yeruizhi/dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier) - Feishu meeting reminder: a dsh-plugin which has only side effect: reminding you, mid-flow with AI, that you "have to go meet carbon-based lifeforms".
+- [YiMlT/dsh-notify-yimit](https://github.com/YiMlT/dsh-notify-yimit) - Windows system and custom desktop notifications for DeepSeek Harness events: task completed, failed, running, awaiting approval, and awaiting answer. Click-to-jump to the session.
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) - Native Windows system notification (Notification Center toast) when a task completes: goal completion or agent turn end.
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) - System-native notifications when a task finishes or needs your confirmation: Windows toast, macOS osascript, and Linux notify-send.
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) - System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).
