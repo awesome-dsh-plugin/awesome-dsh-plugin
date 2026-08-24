@@ -1,0 +1,6 @@
+url: https://github.com/hytime/dsh-client-ui-shortcuts
+name: hytime/dsh-client-ui-shortcuts
+category: ui
+description:
+  en: 'Profile-aware keyboard shortcuts for DSH Web: supports Question and Approval cards, Standard/Vim/Custom profiles, and capability-gated Session and Workspace navigation.'
+  zh: '为 DSH Web 提供按 profile 管理的键盘快捷键：支持 Question 和 Approval 卡片、Standard/Vim/Custom 配置，并按能力提供 Session 与 Workspace 导航。'

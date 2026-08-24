@@ -1,0 +1,6 @@
+url: https://github.com/dygin/dsh-recover-context
+name: dygin/dsh-recover-context
+category: ui
+description:
+  en: Roll back to before any of your questions or edit the last one and resubmit, with the workspace files of the discarded turns restored.
+  zh: 回退到任意一条提问之前，或编辑上一条问题重新提交；被丢弃轮次产生的工作区文件会一并还原。

@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-subagent-library
+name: MaRi23333/dsh-subagent-library
+category: workflow
+description:
+  en: 'Named subagent roster: manage role entries (model, persona, tool filter, depth, background mode) from a hot-reloaded settings page; the model picks one with list_subagents and dispatches by id with delegate — foreground, background, or continuable.'
+  zh: '具名子代理名册：设置页可视化维护角色条目（模型、persona、工具过滤、深度、后台模式），热生效；模型用 list_subagents 选人、delegate 按 id 派活，支持前台、后台与可续聊。'

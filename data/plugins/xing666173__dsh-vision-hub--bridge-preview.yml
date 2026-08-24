@@ -1,0 +1,6 @@
+url: https://github.com/xing666173/dsh-vision-hub/tree/main/bridge-preview
+name: xing666173/dsh-vision-hub#bridge-preview
+category: session
+description:
+  en: 'Inline preview for \[图片: path] image bridge markers: after the marker renders, the image shows in chat automatically, keeping long instructions out of the conversation.'
+  zh: '图片桥接内联预览:对话中 \[图片: 路径] 标记渲染后自动显示图片,长指令不留在对话里。'

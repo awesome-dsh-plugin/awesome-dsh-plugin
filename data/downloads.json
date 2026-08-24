@@ -511,7 +511,7 @@
   "downloads": 401,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/fgm-builds/dashr/tree/main/dashr": {
+ "https://github.com/pgmi-builds/dashr/tree/main/dashr": {
   "downloads": 689,
   "checkedAt": "2026-08-19"
  },
@@ -1225,10 +1225,6 @@
  },
  "https://github.com/Moeblack/dsh-message-edit": {
   "downloads": 1250,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": {
-  "downloads": 1865,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/Mombrane/dsh-subagent-monitor": {
@@ -2493,6 +2489,10 @@
  },
  "https://github.com/zylzyqzz/dsh-mobile-pwa": {
   "downloads": 220,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/moguiyu/dsh-tavily": {
+  "downloads": 1865,
   "checkedAt": "2026-08-19"
  }
 }

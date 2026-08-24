@@ -1,0 +1,6 @@
+url: https://github.com/huaxiren6/dsh-sms-webhook
+name: huaxiren6/dsh-sms-webhook
+category: tools
+description:
+  en: SMS forwarding webhook for DeepSeek Harness. Phone apps (SMS Forwarder, Tasker, or any HTTP POST) push messages to a local HTTP endpoint; the plugin stores them as JSONL and exposes sms_recent / sms_search tools so the agent can read SMS verification codes during tasks. Auto-extracts the first 4-8 digit OTP from each message, supports keyword filtering, and works over LAN or Tailscale.
+  zh: DSH 短信转发 webhook：手机端转发 App（短信转发器/Tasker 等）把短信 POST 到本地 HTTP 端点，插件落盘 JSONL 并暴露 sms_recent / sms_search 工具，让 agent 在任务中直接读取短信验证码；自动提取 4–8 位 OTP，支持关键词过滤，可走局域网或 Tailscale。
