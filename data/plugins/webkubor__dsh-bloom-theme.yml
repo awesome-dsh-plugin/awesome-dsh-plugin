@@ -2,5 +2,5 @@ url: https://github.com/webkubor/dsh-bloom-theme
 name: webkubor/dsh-bloom-theme
 category: theme
 description:
-  en: 'Bloom Morandi theme: four variants (mist, cinnabar, petal, ripple) built on OKLCH so light and dark stay perceptually even, switchable from the top bar, with all eight foreground/background pairs measured at WCAG AA or better.'
-  zh: 'Bloom 莫兰迪主题：四款变体（雾蓝 mist、朱砂 cinnabar、花瓣 petal、涟漪 ripple）基于 OKLCH 调色，明暗切换不跳变，顶栏一键切换，八组「主色 + 底色」实测全部达到 WCAG AA。'
+  en: 'Bloom Morandi theme: eight OKLCH palettes (mist, cinnabar, petal, ripple, sage, stone, lapis, amber) with frosted-glass panels and restrained micro-animations, switchable from the top bar. Every text token is measured across all 16 palette-by-mode combinations and lands at WCAG AA.'
+  zh: 'Bloom 莫兰迪主题：八套 OKLCH 配色（雾蓝、朱砂、花瓣、涟漪、鼠尾草、暖石、青金、琥珀），磨砂玻璃面板 + 克制的微动效，顶栏一键切换。16 组「配色 × 明暗」下的文字色全部实测达到 WCAG AA。'

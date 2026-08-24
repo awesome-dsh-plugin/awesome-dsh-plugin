@@ -1273,5 +1273,15 @@
  "https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree": [
   "https://raw.githubusercontent.com/Cerbur/clutch-dsh/main/packages/clutch-dsh-worktree/assets/screenshots/screenshots-en.png",
   "https://raw.githubusercontent.com/Cerbur/clutch-dsh/main/packages/clutch-dsh-worktree/assets/screenshots/screenshots-zh.png"
+ ],
+ "https://github.com/webkubor/dsh-bloom-theme": [
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-mist-light.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-cinnabar-dark.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-petal-light.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-ripple-dark.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-sage-light.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-stone-dark.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-lapis-light.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-amber-dark.png"
  ]
 }
