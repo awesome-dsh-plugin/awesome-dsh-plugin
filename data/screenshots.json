@@ -1,7 +1,15 @@
 {
+ "https://github.com/fengb3/dsh-session-icons": [
+  "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
+ ],
  "https://github.com/GreenLv/dsh-session-insights": [
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-en.png",
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-zh.png"
+ ],
+ "https://github.com/xiaoksio/dsh-solution-explorer": [
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-1-file-explorer.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-2-source-control.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-3-diff.png"
  ],
  "https://github.com/LayneChai/superpowers-dsh": [
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/home.png",
@@ -170,6 +178,10 @@
  "https://github.com/Flyvhidbwo/dsh-vision-proxy": [
   "https://raw.githubusercontent.com/Flyvhidbwo/dsh-vision-proxy/main/assets/demo-reply.png",
   "https://raw.githubusercontent.com/Flyvhidbwo/dsh-vision-proxy/main/assets/demo-selector.png"
+ ],
+ "https://github.com/foooold/dsh-message-nav": [
+  "https://raw.githubusercontent.com/foooold/dsh-message-nav/main/assets/rail-hover-preview.png",
+  "https://raw.githubusercontent.com/foooold/dsh-message-nav/main/assets/rail-left-edge.png"
  ],
  "https://github.com/GOU-GEE/deepseek-vision/tree/main/plugins/dsh-plugin-deepseek-vision": [
   "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/01-settings.png",
@@ -347,6 +359,12 @@
   "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-1.png",
   "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-2.png",
   "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-3.png"
+ ],
+ "https://github.com/SiriLee/dsh-rewind": [
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/rewind-button.png",
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/mode-popover.png",
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/impact-list.png",
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/rewind-candidates.png"
  ],
  "https://github.com/Smalldy/godot-bridge": [
   "https://raw.githubusercontent.com/Smalldy/godot-bridge/main/assets/godot-bridge-env-check.png"
@@ -1072,7 +1090,11 @@
   "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-chat.png"
  ],
  "https://github.com/Frog755/dsh-client-auto-retry": [
-  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg"
+  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg",
+  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/screenshot-settings-card.png"
+ ],
+ "https://github.com/Frog755/dsh-prompt-vault": [
+  "https://raw.githubusercontent.com/Frog755/dsh-prompt-vault/master/assets/screenshot-panel.png"
  ],
  "https://github.com/lemonorangeapple/dsh-effort-switcher": [
   "https://raw.githubusercontent.com/lemonorangeapple/dsh-effort-switcher/master/screenshots/1.png",
@@ -1227,6 +1249,10 @@
  "https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker": [
   "https://raw.githubusercontent.com/FeiZhuNiU-INFJA/dsh-stock-ticker/main/assets/screenshot.png"
  ],
+ "https://github.com/miuzel/dsh-graph/tree/main/dsh-graph-host": [
+  "https://raw.githubusercontent.com/miuzel/dsh-graph/main/screenshot/screenshot-1.png",
+  "https://raw.githubusercontent.com/miuzel/dsh-graph/main/screenshot/screenshot-2.png"
+ ],
  "https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts": [
   "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/menu.png",
   "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/preset.png",
@@ -1251,9 +1277,21 @@
  "https://github.com/qinyre/dsh-plugin-atlas": [
   "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
   "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
- ]
-,
+ ],
  "https://github.com/Whale-Zhang/dsh-complete-chime": [
   "https://raw.githubusercontent.com/Whale-Zhang/dsh-complete-chime/main/docs/settings-card.png"
+ ],
+ "https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree": [
+  "https://raw.githubusercontent.com/Cerbur/clutch-dsh/main/packages/clutch-dsh-worktree/assets/screenshots/screenshots-en.png",
+  "https://raw.githubusercontent.com/Cerbur/clutch-dsh/main/packages/clutch-dsh-worktree/assets/screenshots/screenshots-zh.png"
+ ],
+ "https://github.com/qkycir-123/dsh-run2skill": [
+  "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/01-proposal-inbox.png",
+  "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/02-review-details.png",
+  "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/03-saved-activity.png"
+ ],
+ "https://github.com/BananaSoldier01/dsh-tidychat": [
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/navigator.png",
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/settings.png"
  ]
 }
