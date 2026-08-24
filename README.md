@@ -90,6 +90,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [a903067276-rgb/dsh-hud](https://github.com/a903067276-rgb/dsh-hud) - HUD status panel: Git status, MCP servers, skills, model and token usage in a floating side panel.
 - [a903067276-rgb/dsh-plan-switch](https://github.com/a903067276-rgb/dsh-plan-switch) - One-click enter/exit Plan mode for the DSH web input bar, a quick-click shortcut for /plan.
 - [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) - Mobile layout fixes for the Web UI on narrow screens: full-screen settings panel, one-row plugin nav, full-screen sidebar, centered popups, icon-only session-log button.
+- [ai-eks/dsh-docking-layout](https://github.com/ai-eks/dsh-docking-layout) - Dockable DSH Web UI layout that organizes conversations as tabs across draggable split groups.
 - [Aik358/dsh-anchored-monitor](https://github.com/Aik358/dsh-anchored-monitor) - A whip for DeepSeek V4 Pro: it watches the reasoning fingerprint of every thinking block and pulls the model back when it slips from focused "We will / I will" mode into scattered "let me" mode.
 - [AikenFra/dsh-alive](https://github.com/AikenFra/dsh-alive) - Zero-token online status indicator for the DeepSeek Harness web UI: an always-visible online/offline dot in the conversation header, auto-refreshed every 15 seconds with no LLM calls.
 - [AKIRACOD/dsh-drag-and-drop](https://github.com/AKIRACOD/dsh-drag-and-drop) - File-drag fork: drop documents as removable chips above the composer, send without typing.
