@@ -1,6 +1,7 @@
 url: https://github.com/YoyuDev/dsh-ping
 name: YoyuDev/dsh-ping
-category: tools
+category: notify
 description:
-  en: Simple ping test plugin for DeepSeek Harness.
-  zh: DeepSeek‑Harness ping测试插件。
+  en: Sounds a chime and raises a desktop notification when the agent needs you — stage completion, approval requests, awaiting input, task completion, and errors, each with its own tone.
+  zh: Agent 需要你时响铃并弹出桌面通知：阶段完成、请求批准、等待输入、任务完成、出错，五种场景各配不同提示音。
+
