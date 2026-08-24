@@ -1,1 +1,1 @@
-Merge upstream/main: resolve screenshots.json conflict, regenerate README
+Merge upstream/main: resolve screenshots.json conflict, relocate entry, regenerate README
