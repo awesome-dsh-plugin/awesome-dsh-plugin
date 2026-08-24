@@ -1,0 +1,6 @@
+url: https://github.com/NeoMei/dsh-roundtable
+name: NeoMei/dsh-roundtable
+category: workflow
+description:
+  en: 'Multi-agent roundtable discussion: each member runs as a subagent on its own model and speaks in turn, a host summarizes each round, and termination writes meeting-minutes Markdown.'
+  zh: '多智能体圆桌讨论：每个成员作为子代理在自己的模型上依次发言，主持人逐轮汇总，终止时生成会议纪要 Markdown。'
