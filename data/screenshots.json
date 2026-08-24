@@ -1236,5 +1236,8 @@
  "https://github.com/qinyre/dsh-plugin-atlas": [
   "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
   "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
+ ],
+ "https://github.com/chendefine/dsh-web-search-aggregation": [
+  "https://raw.githubusercontent.com/chendefine/dsh-web-search-aggregation/main/search-plugin-config.png"
  ]
 }
