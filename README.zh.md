@@ -1711,6 +1711,7 @@ dsh plugin --profile web add dshmarket
 - [ThreeBody6666/dsh-im-hub](https://github.com/ThreeBody6666/dsh-im-hub) — 多平台 IM 网关：飞书（Lark）WebSocket 长连接（无需公网）、企业微信 AES 加密回调、Telegram 长轮询；每会话独立 agent、白名单访问、Web GUI 可视化设置卡片。
 - [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) — 钉钉 IM 双向 channel（Stream 模式）：每条单聊/群聊驱动一个 agent，思考与回复通过 WebSocket 长连接回流消息，免公网回调。
 - [wendayuan/dsh-weixin](https://github.com/wendayuan/dsh-weixin) — 微信（iLink）通道：用手机微信直接对话 DSH agent，每个对话一个持久会话，复用 DSH 凭据。
+- [Whale-Zhang/dsh-complete-chime](https://github.com/Whale-Zhang/dsh-complete-chime) — 会话回合结束时播放短提示音，内置三种音色或一条自定义上传，在设置 → 插件中配置。
 - [whyihaveyou/dsh-suite#plugin-notify](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify) — 回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-notifier](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-notifier) — 审批/完成/错误事件通知：浏览器 Notification + 系统原生 toast（Windows PowerShell WinRT、Linux/macOS notify-send），支持免打扰时段、同类错误合并、子代理完成独立开关。
 - [wsxwj123/dsh-plugins#dsh-pet-bridge](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-pet-bridge) — dsh ↔ cc-pet 桌面宠物状态桥：把会话状态（思考中 / 读取文件 / 运行命令 / 完成）实时推送到桌面宠物气泡。
