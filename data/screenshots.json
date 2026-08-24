@@ -1283,4 +1283,14 @@
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/02-review-details.png",
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/03-saved-activity.png"
  ]
+,
+ "https://github.com/gjj-star/dsh-conversation-navigator": [
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/01-main.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/02-steps.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/03-minimal.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/04-search-n-hover.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/05-dark.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/06-theme1-preview.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/07-theme2-preview.png"
+ ]
 }
