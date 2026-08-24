@@ -2,5 +2,5 @@ url: https://github.com/lyhue1991/dsh-soup
 name: lyhue1991/dsh-soup
 category: ui
 description:
-  en: Project file explorer in the details column with read-only preview (Markdown/HTML/JSON/CSV/IPYNB/PDF/code highlighting), model throughput badge, and multiline GoalBar.
-  zh: 右侧 details 列项目资源管理器，只读预览（Markdown/HTML/JSON/CSV/IPYNB/PDF/代码高亮），附带模型吞吐徽标与多行 GoalBar。
+  en: 'Project file explorer in the details column (multi-select, drag-move, upload, download, rename, trash, system-open) with an in-session read-only preview tab for Markdown/HTML/JSON/CSV/notebook/PDF + code highlighting, a live model throughput badge, and a multiline GoalBar.'
+  zh: 'DSH 右侧 details 列项目资源管理器（多选、拖拽移动、上传、下载、重命名、废纸篓、系统打开），会话内只读预览 Markdown/HTML/JSON/CSV/Notebook/PDF 与代码高亮，附带模型实时吞吐徽标与多行 GoalBar。'
