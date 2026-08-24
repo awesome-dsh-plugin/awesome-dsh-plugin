@@ -139,14 +139,27 @@ jobs:
       # scripts/publish-catalog.mjs for why it has to exist in two places.
       #
       # AFTER the deploy, deliberately: the site is what people look at, and
-      # a registry outage must not be able to hold it up. The script is a
-      # no-op when the catalog has not changed, so the ordinary push build
-      # publishes nothing.
+      # a registry outage must not be able to hold it up.
+      #
+      # Nightly and manual dispatch only. The script skips an unchanged
+      # catalog, and the note here used to read "the ordinary push build
+      # publishes nothing" on that basis — true on a quiet day, and wrong on
+      # exactly the days that matter. Every merged submission changes the
+      # catalog, so every push build earned a version: 46 releases went out
+      # over 2026-08-23/24, one per merged pull request, each one an npm
+      # notification to the maintainer.
+      #
+      # The site still deploys on every push, because a newly merged plugin
+      # should be visible right away. The npm copy is the market plugin's
+      # fallback source for hosts that cannot reach github.com; it being a few
+      # hours behind costs nothing, which is the same trade the probes above
+      # already make.
       #
       # Still no repository write: the version and the content hash are set
       # in the runner's working copy and never committed, so the invariant at
       # the top of this file holds.
       - name: publish the catalog to npm
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         # Trusted publishing (OIDC) — the id-token permission above is what
         # authorizes it, so there is no token to leak or rotate.
         run: |
