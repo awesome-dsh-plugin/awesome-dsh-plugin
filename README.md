@@ -681,7 +681,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Sessions & Messages
 
-- [23swccp/dsh-undo#bundle-rollback](https://github.com/23swccp/dsh-undo/tree/master/packages/bundle-rollback) - Conversation undo: roll a session back to before any sent prompt via /undo, the session-header button, or the icon under the message, restoring files from a plugin-private shadow-Git snapshot and forking the conversation so the model never sees the reverted turns; includes an Archive Tasks settings page and per-tool colored tool cards.
+- [dsh-undo-plugin](https://github.com/23swccp/dsh-undo/tree/master/packages/bundle-rollback) - Conversation and workspace undo: use the /undo timeline, session-header action, or message icon to roll back before any sent prompt; private Shadow Git snapshots restore files, the reverted turns stay out of model context, and Undo Rollback can recover mistakes. Includes archived-session management and per-tool colored cards.
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) - Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) - Archived conversations list in the sidebar footer with read-only previews of the most recent messages, for sessions the product deliberately keeps hidden and unreopenable.
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) - Rewind conversation and workspace state, powered by a persistent Change Ledger.
