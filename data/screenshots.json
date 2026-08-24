@@ -1358,5 +1358,12 @@
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/backup_EN.png",
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/import_EN.png",
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/delete-confirm_EN.png"
+ ],
+
+ "https://github.com/ccll/dsh-activity-pane": [
+  "https://raw.githubusercontent.com/ccll/dsh-activity-pane/main/assets/screenshot-desktop-dark.png",
+  "https://raw.githubusercontent.com/ccll/dsh-activity-pane/main/assets/screenshot-desktop-light.png",
+  "https://raw.githubusercontent.com/ccll/dsh-activity-pane/main/assets/screenshot-mobile-dark.png",
+  "https://raw.githubusercontent.com/ccll/dsh-activity-pane/main/assets/screenshot-mobile-light.png"
  ]
 }
