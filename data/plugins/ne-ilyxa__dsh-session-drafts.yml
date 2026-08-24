@@ -1,0 +1,6 @@
+url: https://github.com/ne-ilyxa/dsh-session-drafts
+name: ne-ilyxa/dsh-session-drafts
+category: session
+description:
+  en: 'Cursor-style New Session: every click creates a fresh blank draft session (persisted before the first message) instead of reusing the workspace''s single one, plus a sidebar Drafts switcher to keep several empty chats open at once.'
+  zh: 'Cursor 风格的新会话：每次点击都新建一个空白草稿会话（首条消息前即持久化），不再复用工作区唯一的空会话；侧栏新增草稿切换器，可同时保留多个空会话。'

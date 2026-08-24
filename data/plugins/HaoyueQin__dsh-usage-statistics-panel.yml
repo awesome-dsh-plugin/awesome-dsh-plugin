@@ -1,0 +1,6 @@
+url: https://github.com/HaoyueQin/dsh-usage-statistics-panel
+name: HaoyueQin/dsh-usage-statistics-panel
+category: usage
+description:
+  en: 'Usage statistics settings panel: 26-week activity heatmap, daily token trend with a cache hit-rate curve, per-model donut and breakdown, plus a one-time historical session backfill.'
+  zh: 用量统计设置面板：26 周活跃热力图、按日 Token 趋势与缓存命中率曲线、模型用量环形图与明细，支持一次性历史会话回扫。
