@@ -1,4 +1,8 @@
 {
+ "https://github.com/diqierjia/StrataGate-AgentMemory/tree/main/integrations/deepseek-harness": [
+  "https://raw.githubusercontent.com/diqierjia/StrataGate-AgentMemory/main/integrations/deepseek-harness/docs/assets/stratagate-short-term-memory.png",
+  "https://raw.githubusercontent.com/diqierjia/StrataGate-AgentMemory/main/integrations/deepseek-harness/docs/assets/stratagate-memory-structure.png"
+ ],
  "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
