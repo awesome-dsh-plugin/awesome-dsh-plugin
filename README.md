@@ -504,6 +504,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhouchengke2046/dsh-sidebar-balance](https://github.com/zhouchengke2046/dsh-sidebar-balance) - DeepSeek Harness plugin that shows the DeepSeek API account balance and OpenCode Go plan usage (consumption ring, hover details) in the sidebar footer, with adaptive polling and zh/en locale support.
 - [zhu168/dsh-save-money#plugin](https://github.com/zhu168/dsh-save-money/tree/main/plugin) - Pause and resume tasks automatically during user-defined time windows to avoid peak-hour API costs; includes account balance display and 10-minute granularity spend bar chart.
 - [zoumutou/dsh-cost-balance](https://github.com/zoumutou/dsh-cost-balance) - Collapsible iOS-style stats pill under the composer: session cost, DeepSeek account balance, cache-hit rate, and token usage in a frosted panel.
+- [pc439527/dsh-model-provider](https://github.com/pc439527/dsh-model-provider) - Provider-first three-level model selector for the DSH Web model seat: pick a provider, then a model from that provider, with inline search on both levels, failed-provider retry rows, and a `Model · Provider` trigger.
 
 ### Themes & Appearance
 

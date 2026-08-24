@@ -504,6 +504,7 @@ dsh plugin --profile web add dshmarket
 - [zhouchengke2046/dsh-sidebar-balance](https://github.com/zhouchengke2046/dsh-sidebar-balance) — DSH Web 插件:在侧边栏底部显示 DeepSeek API 余额与 OpenCode Go 套餐用量(消耗圆环、悬浮详情),自适应轮询,支持中英文。
 - [zhu168/dsh-save-money#plugin](https://github.com/zhu168/dsh-save-money/tree/main/plugin) — 自定义时间窗口自动暂停/恢复任务，高峰时段节省 API 费用；含账户余额显示和 10 分钟粒度的消费柱状图。
 - [zoumutou/dsh-cost-balance](https://github.com/zoumutou/dsh-cost-balance) — 输入框下方的 iOS 风格统计条：一键展开查看会话花费、DeepSeek 账户余额、缓存命中率与 Token 用量。
+- [pc439527/dsh-model-provider](https://github.com/pc439527/dsh-model-provider) — Provider-first 三级模型选择器：先选供应商再选模型，两级均可行内搜索，失败供应商以可重试行展示，触发器显示 Model · Provider。
 
 ### 🎭 主题与外观
 
