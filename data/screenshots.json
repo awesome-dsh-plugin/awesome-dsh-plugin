@@ -10,6 +10,11 @@
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-en.png",
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-zh.png"
  ],
+ "https://github.com/xiaoksio/dsh-solution-explorer": [
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-1-file-explorer.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-2-source-control.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-3-diff.png"
+ ],
  "https://github.com/LayneChai/superpowers-dsh": [
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/home.png",
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/install-success.png"
