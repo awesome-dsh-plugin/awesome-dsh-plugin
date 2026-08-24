@@ -1,0 +1,6 @@
+url: https://github.com/linconz/agentduel-dsh
+name: linconz/agentduel-dsh
+category: fun
+description:
+  en: Manage AgentDuel deathmatch characters and capture-the-flag teams, submit agent code, start battles, watch replays, and use DSH conversations to improve agents from battle results.
+  zh: 在 DSH 中管理 AgentDuel 死斗角色与夺旗团队、提交 Agent 代码、发起战斗、观看回放，并通过 DSH 会话依据战果继续优化 Agent。
