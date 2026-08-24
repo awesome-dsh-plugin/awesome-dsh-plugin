@@ -1,0 +1,5 @@
+url: https://github.com/dsh-pulse/dsh-hermes-bridge
+name: dsh-pulse/dsh-hermes-bridge
+category: notify
+description:
+  en: 'Task-queue execution endpoint for DSH: requires a self-deployed Hermes Agent gateway and your own inbound script; the plugin itself does not implement WeChat.'
