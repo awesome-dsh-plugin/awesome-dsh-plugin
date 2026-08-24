@@ -1,0 +1,6 @@
+url: https://github.com/modusensus/dsh-mneme
+name: modusensus/dsh-mneme
+category: memory
+description:
+  en: "Self-evolving AI memory engine with heat-powered decay (power-law forgetting), sleep consolidation, entity heat projection, and offline semantic search — memories grow, cool down, and fade just like a real brain."
+  zh: "AI 自进化记忆引擎：heat 热度模型驱动的记忆遗忘与巩固、sleep 深度维护、实体热投影、离线语义搜索 — 让 AI 的记忆像人脑一样会生长、会淡忘。"
