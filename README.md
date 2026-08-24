@@ -478,6 +478,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) - A configurable 17-segment session status bar for the dsh composer dock with live TPS, per-model cost estimation, and a usage & cost dialog.
 - [stevenx65/dsh-balance-plugin](https://github.com/stevenx65/dsh-balance-plugin) - DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.
 - [Sttrevens/dsh-cost-meter](https://github.com/Sttrevens/dsh-cost-meter) - Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.
+- [Thedeergod666/dsh-musage](https://github.com/Thedeergod666/dsh-musage) - Shows coding-plan usage and balance for 5 AI providers (MiniMax, DeepSeek, Kimi, OpenRouter, Zhipu) beside the composer input, switching with the selected model and reusing API keys configured in DSH model settings.
 - [V-dev-388/dsh-usage-meter](https://github.com/V-dev-388/dsh-usage-meter) - Settings-page usage dashboard: per-provider/model token summary across all sessions, with today/7-day/30-day CSS-bar trends and a cache-hit rate.
 - [v587d/dsh-opencode-go-usage](https://github.com/v587d/dsh-opencode-go-usage) - OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.
 - [vibeinging/dsh-agent-budget](https://github.com/vibeinging/dsh-agent-budget) - Agent-tree token budget management.
