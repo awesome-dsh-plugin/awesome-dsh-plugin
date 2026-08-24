@@ -1897,6 +1897,7 @@ dsh plugin --profile web add dshmarket
 - [worksAssistant/dsh-quickref](https://github.com/worksAssistant/dsh-quickref) — 开发者速查工具箱：12 个主题 195 条速查 + 6 个零依赖工具（正则实时测试、JSON 格式化、时间戳转换、Base64/URL 编解码、Cron 生成、行 diff），设置页可搜索查阅。
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
+- [xiaoso456/dsh-run-config](https://github.com/xiaoso456/dsh-run-config) — DSH 的 IDE 风格运行配置：把常用 LLM 提示词和 Shell 命令保存为可复用的运行配置（全局或按工作区），在会话头部或新会话页一键运行，大模型可通过 task_run_config 工具管理（写操作走审批）。
 - [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — 一键备份与恢复 DSH 用户数据：/backup 命令族、backup_dsh 工具与可视化设置面板，sha256 校验与加固恢复（拒绝路径穿越/软链），定时自动备份（重启续跑）、轮换、归档下载路由、GitHub 私有仓库同步。默认对凭据脱敏——.credentials.yaml 与 .env 留在本地保险库而不进归档，跨机恢复时会列出需要重新填写的项。macOS/Linux/Windows。
 - [xiaxingtianxia2-glitch/dsh-auto-exit](https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit) — 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。
 - [xingyingyuzhui/dsh-updater-ui](https://github.com/xingyingyuzhui/dsh-updater-ui) — 设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。
