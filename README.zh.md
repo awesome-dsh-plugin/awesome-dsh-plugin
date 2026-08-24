@@ -2014,6 +2014,7 @@ dsh plugin --profile web add dshmarket
 - [zhaenggg/dsh-ssh-remote](https://github.com/zhaenggg/dsh-ssh-remote) — SSH 远程执行插件集：把会话工作区指向 ssh:// 目录，文件读写、命令与 shell 全部在远程主机上执行。
 - [zhu1090093659/dsh-web-ui#packages/dsh-remote-web-ui](https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) — 手机/PC 远程操控 dsh web 工作区：扫码配对、令牌门控通道、SSE 实时同步，提供移动端与完整桌面 GUI 两种远程形态。
 - [zylzyqzz/dsh-mobile-pwa](https://github.com/zylzyqzz/dsh-mobile-pwa) — 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。
+- [zzy1601/dsh-weixin-bot](https://github.com/zzy1601/dsh-weixin-bot) — 在微信里通过 ClawBot 驱动本机 DSH 原生 Agent：同一会话多轮上下文；创建时加入默认 agent preset，工具全量可用、任务真执行；执行中实时推送思考确认、工具调用计数与心跳，不再发出去就没音讯。
 
 ### 🛒 插件市场与管理
 

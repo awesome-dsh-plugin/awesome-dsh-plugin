@@ -2014,6 +2014,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhaenggg/dsh-ssh-remote](https://github.com/zhaenggg/dsh-ssh-remote) - SSH remote execution set: give a session an ssh:// workspace and every file, command, and shell operation runs on the remote host.
 - [zhu1090093659/dsh-web-ui#packages/dsh-remote-web-ui](https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) - Remote control of a dsh web workspace from phone or PC: QR-code pairing through a token-gated channel, SSE real-time sync, and separate mobile and full desktop GUI modes.
 - [zylzyqzz/dsh-mobile-pwa](https://github.com/zylzyqzz/dsh-mobile-pwa) - Complete mobile PWA for DSH, built on dsh-mobile-gate: secure remote-access gateway plus install-to-homescreen (manifest + service worker), offline capability, touch gestures (pull-to-refresh, edge-swipe back, pinch-zoom font), agent-done push notifications, and touch-first layout — desktop unaffected.
+- [zzy1601/dsh-weixin-bot](https://github.com/zzy1601/dsh-weixin-bot) - Drive a native DSH agent from WeChat ClawBot: multi-turn context per chat, joins the default agent preset so the full toolset executes real tasks, and pushes live progress mid-run (thinking acks, tool-call counters, heartbeats).
 
 ### Plugin Markets & Managers
 

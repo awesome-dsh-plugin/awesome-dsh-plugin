@@ -1,0 +1,6 @@
+url: https://github.com/zzy1601/dsh-weixin-bot
+name: zzy1601/dsh-weixin-bot
+category: remote
+description:
+  en: 'Drive a native DSH agent from WeChat ClawBot: multi-turn context per chat, joins the default agent preset so the full toolset executes real tasks, and pushes live progress mid-run (thinking acks, tool-call counters, heartbeats).'
+  zh: '在微信里通过 ClawBot 驱动本机 DSH 原生 Agent：同一会话多轮上下文；创建时加入默认 agent preset，工具全量可用、任务真执行；执行中实时推送思考确认、工具调用计数与心跳，不再发出去就没音讯。'
