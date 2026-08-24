@@ -1,0 +1,6 @@
+url: https://github.com/Godners-Code/dao-zang-skill
+name: Godners-Code/dao-zang-skill
+category: skill
+description:
+  en: 'Daoist Canon (DaoZang) retrieval skill: keyword or semantic search over 285,117 scripture chunks with exact original-text extraction (line numbers, hit markers), and one-command workspace setup from the Godners/DaoZang dataset.'
+  zh: '道藏知识库离线检索与原文提取：对 28.5 万段经文进行关键词或语义检索，精确提取原文（带行号与命中标记），可从 Godners/DaoZang 数据集一键搭建工作区。'
