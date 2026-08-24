@@ -6,6 +6,11 @@
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-en.png",
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-zh.png"
  ],
+ "https://github.com/xiaoksio/dsh-solution-explorer": [
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-1-file-explorer.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-2-source-control.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-3-diff.png"
+ ],
  "https://github.com/LayneChai/superpowers-dsh": [
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/home.png",
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/install-success.png"
@@ -1085,7 +1090,11 @@
   "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-chat.png"
  ],
  "https://github.com/Frog755/dsh-client-auto-retry": [
-  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg"
+  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg",
+  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/screenshot-settings-card.png"
+ ],
+ "https://github.com/Frog755/dsh-prompt-vault": [
+  "https://raw.githubusercontent.com/Frog755/dsh-prompt-vault/master/assets/screenshot-panel.png"
  ],
  "https://github.com/lemonorangeapple/dsh-effort-switcher": [
   "https://raw.githubusercontent.com/lemonorangeapple/dsh-effort-switcher/master/screenshots/1.png",
@@ -1273,5 +1282,14 @@
  "https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree": [
   "https://raw.githubusercontent.com/Cerbur/clutch-dsh/main/packages/clutch-dsh-worktree/assets/screenshots/screenshots-en.png",
   "https://raw.githubusercontent.com/Cerbur/clutch-dsh/main/packages/clutch-dsh-worktree/assets/screenshots/screenshots-zh.png"
+ ],
+ "https://github.com/qkycir-123/dsh-run2skill": [
+  "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/01-proposal-inbox.png",
+  "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/02-review-details.png",
+  "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/03-saved-activity.png"
+ ],
+ "https://github.com/BananaSoldier01/dsh-tidychat": [
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/navigator.png",
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/settings.png"
  ]
 }
