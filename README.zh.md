@@ -651,6 +651,7 @@ dsh plugin --profile web add dshmarket
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) — 0元接入6个免费大模型，免注册免充值，内置6个免费模型，多Key轮换与限流退避。
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) — 通过 OAuth 连接 ChatGPT 账号，支持手动或自动切换，并为 DeepSeek Harness 添加带用量限额信息的 Codex 模型。
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) — 在 DSH 设置里调整 LLM 自动重试的次数与退避时间并实时生效的设置卡片。
+- [zzy1601/dsh-zcode-sync](https://github.com/zzy1601/dsh-zcode-sync) — 把 ZCode 的自定义模型提供商自动同步进 DeepSeek Harness——通过进程内 settings/credentials 服务把 config.json 里的 provider 与 API Key 合并进 llm-pi-ai 命名空间，写入受其自带校验把关；启动/周期/配置变更时幂等同步，零硬编码路径。
 
 ### 🆔 身份与通信
 
