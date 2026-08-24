@@ -2,5 +2,5 @@ url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-too
 name: wsxwj123/dsh-plugins#dsh-composer-tools
 category: ui
 description:
-  en: 'Composer input toolkit: arrow-key session history (first/last-line gated, IME and command-menu safe) and related input conveniences. Ships on npm as `dsh-composer-tools`.'
-  zh: 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）等输入增强。npm 包名 `dsh-composer-tools`。
+  en: 'Composer input toolkit: arrow-key session history (first/last-line gated, IME and command-menu safe), an instructions viewer/editor for global and project AGENTS.md/CLAUDE.md, and a prompt library of 780 Chinese prompts (Cherry Studio agents-zh corpus, AGPL-3.0) inserted into the composer in one click. Ships on npm as `dsh-composer-tools`.'
+  zh: 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）、指令查看/编辑器（全局与项目级 AGENTS.md / CLAUDE.md）、提示词库（780 条中文提示词，源自 Cherry Studio agents-zh 语料，AGPL-3.0，一键插入输入框）。npm 包名 `dsh-composer-tools`。
