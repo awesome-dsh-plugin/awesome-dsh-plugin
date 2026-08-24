@@ -1,0 +1,6 @@
+url: https://github.com/aduo-111/second-brain
+name: aduo-111/second-brain
+category: docs
+description:
+  en: 'Distills daily AI conversations (Doubao, ChatGPT, DeepSeek, Kimi) into structured Markdown notes in your Obsidian vault.'
+  zh: '把每天和各种 AI 的对话提炼成结构化 Markdown 笔记，写入你的 Obsidian 库。'
