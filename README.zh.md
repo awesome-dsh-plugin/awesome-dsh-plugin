@@ -818,6 +818,7 @@ dsh plugin --profile web add dshmarket
 - [AndyYang12345/dsh-butler-memory](https://github.com/AndyYang12345/dsh-butler-memory) — PostgreSQL 持久个人记忆：MCP 记忆工具 + 可查看记忆与候选的 Web 面板。
 - [aqsk-BLG/dsh-memory](https://github.com/aqsk-BLG/dsh-memory) — DeepSeek Harness 分层文件记忆，提供工作区隔离的 USER/MEMORY 笔记、后台沉淀与混合会话召回。
 - [Asher-2000/dsh-memory-connect](https://github.com/Asher-2000/dsh-memory-connect) — 跨会话记忆插件（v0.4.0 修复版，此版本真正激活）：自动提取、SQLite FTS5 索引、RRF 语义召回（每轮注入系统提示词）、定时维护、LLM 智能合并（自动接入 ctx.llm）、上下文爆炸防护、全局身份 Soul（~/.dsh/soul.md）。零配置装完即用。
+- [AtinyFurina/dsh-memory-triage](https://github.com/AtinyFurina/dsh-memory-triage) — 记忆分诊：每轮自动判定保留/归档，并把条目路由到项目桶或总体桶；规则优先 + LLM 兜底（拿不准的条目每批 ≤8 条问模型），自动动作只归档不真删（/triage-run 全库分诊、/triage-purge 清理超期归档），零依赖。
 - [baaai123/dsh-memory-protocol](https://github.com/baaai123/dsh-memory-protocol) — 记忆强制协议插件：桥接 opencode-memory MCP 服务器，工具调用前强制 memory_weave、每轮自动存档、自动注入记忆上下文。
 - [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) — 知识库驱动的 Agent 预设：wiki 长期记忆、网页知识库、管理页、可选界面润色。
 - [chenzheshushi-commits/dsh-evolve](https://github.com/chenzheshushi-commits/dsh-evolve) — 跨会话记忆，零 token 确定性召回（bigram-Jaccard 与 FTS5 BM25 经 RRF 融合，中文分词精确）；分级审批门只自动确认可逆且源自用户原话的写入，其余待人工确认；重复观察会强化已有理解而非堆叠重复。过程性知识结晶为 SKILL.md，就地精炼升级，并走 active-stale-archived 生命周期治理，归档可逆、可回滚，绝不删除。另含 skill 与记忆双层防臃肿收敛、每轮结束的隔离式后台复盘、以及完整的网页设置页。需要 Node 22.5+。
