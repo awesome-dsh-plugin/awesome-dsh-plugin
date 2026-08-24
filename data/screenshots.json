@@ -351,6 +351,12 @@
   "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-2.png",
   "https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/main/assets/screenshots/screenshot-3.png"
  ],
+ "https://github.com/SiriLee/dsh-rewind": [
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/rewind-button.png",
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/mode-popover.png",
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/impact-list.png",
+  "https://raw.githubusercontent.com/SiriLee/dsh-rewind/main/assets/screenshots/rewind-candidates.png"
+ ],
  "https://github.com/Smalldy/godot-bridge": [
   "https://raw.githubusercontent.com/Smalldy/godot-bridge/main/assets/godot-bridge-env-check.png"
  ],
