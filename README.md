@@ -1342,6 +1342,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [xing666173/dsh-vision-hub#tool-vision](https://github.com/xing666173/dsh-vision-hub/tree/main/tool-vision) - Enhanced vision toolbox: 14 pixel-level vision tools (describe, ground, detect, crop, pixel-diff, OCR, long-screenshot OCR, vectorize, colors, cutout, screenshot, present, materialize, html-screenshot) driven by one OpenAI-compatible endpoint, with clean \[图片: path] bridge markers, content-safety classification and rate-limit auto-retry.
 - [xsoc1/dsh-image-vision](https://github.com/xsoc1/dsh-image-vision) - Chat image-attachment bridge with a `view_image` tool for any OpenAI-compatible VLM (local Ollama or cloud): pasted/dropped images become `view_image` path markers before reaching text-only DeepSeek models.
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) - Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image to use it.
+- [yxqfg/phone-lens#lens-mate](https://github.com/yxqfg/phone-lens/tree/main/packages/lens-mate) - Turn a phone camera into a live viewfinder and photo input for your dsh session, over LAN or USB.
 
 ### Voice & Audio
 
