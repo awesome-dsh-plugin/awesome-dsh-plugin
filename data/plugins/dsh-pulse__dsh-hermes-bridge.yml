@@ -2,4 +2,5 @@ url: https://github.com/dsh-pulse/dsh-hermes-bridge
 name: dsh-pulse/dsh-hermes-bridge
 category: notify
 description:
-  en: 'Two-way WeChat bridge for DeepSeek Harness via a Hermes gateway: dispatch tasks from WeChat into DSH agents with persistent per-cwd sessions, and push progress, results and errors back with zero LLM tokens.'
+  en: 'Task-queue execution endpoint for DSH: requires a separately self-deployed Hermes Agent gateway plus your own WeChat inbound script; verified on a single environment — expect to adapt it.'
+  zh: 'DSH 的任务队列执行端点：需要自行部署独立的 Hermes Agent 网关并编写自己的微信入站脚本；仅在单一环境验证过，需要按你的环境适配。'
