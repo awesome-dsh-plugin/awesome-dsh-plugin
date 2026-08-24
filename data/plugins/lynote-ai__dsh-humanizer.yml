@@ -1,0 +1,6 @@
+url: https://github.com/lynote-ai/dsh-humanizer
+name: lynote-ai/dsh-humanizer
+category: tools
+description:
+  en: Writing tools that remove AI-sounding patterns and match your personal voice. 8 deterministic tools scan text, build a style fingerprint from your samples, and return rewrite briefs.
+  zh: 写作工具：去除 AI 腔并贴合个人文风。8 个确定性工具扫描文本、从样本提取文风指纹，并返回改写 brief。

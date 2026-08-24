@@ -1,0 +1,7 @@
+url: https://github.com/00080000/dsh-project-memory
+name: 00080000/dsh-project-memory
+category: memory
+tarball: https://github.com/00080000/dsh-project-memory/releases/latest/download/dsh-project-memory-0.1.0.tgz
+description:
+  zh: "为 DeepSeek Harness 提供的项目记忆插件：项目文件在读取时索引为可检索摘要，上下文失效后按需检索命中，无需重读文件，自带出处与 BM25 排序。"
+  en: "Project memory for DeepSeek Harness: project files are indexed into searchable summaries as they are read, so after context loss the agent retrieves hits on demand instead of re-reading files, with source citations and BM25 ranking."

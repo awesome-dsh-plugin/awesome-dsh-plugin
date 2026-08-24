@@ -1,0 +1,6 @@
+url: https://github.com/Iwctwbh/dsh-flowglass
+name: Iwctwbh/dsh-flowglass
+category: ui
+description:
+  en: Live flowgraph visualization for DeepSeek Harness sessions, including tool calls, parallel groups, subagent branches, and drill-down details.
+  zh: DeepSeek Harness 会话实时流程图，可查看工具调用、并行分组、子代理分支和逐层详情。

@@ -344,7 +344,35 @@ function changedEntryFiles(base) {
   return new Set(out.split('\n').map((s) => s.trim()).filter(Boolean))
 }
 
-const entries = DIR ? readEntries(DIR) : readEntries()
+// A submission whose YAML does not parse is a submission problem, and
+// `readEntries` already explains it better than anything here could — it names
+// the file, the reason, and for the common `": "` case prints the corrected
+// line. Letting that throw escape kills the process before it writes its JSON
+// result, so the workflow falls back to "exited without producing a result …
+// this is a bug in the check, not in the submission" — telling the author to
+// re-run and wait, while the one message that would have fixed their entry in
+// ten seconds never reaches them. Catch it and report it as what it is.
+let entries
+try {
+  entries = DIR ? readEntries(DIR) : readEntries()
+} catch (e) {
+  // In CI, DIR is a scratch directory the workflow extracted the PR's files
+  // into, so the raw message would open with a runner temp path the author has
+  // never seen. Show the path they recognise.
+  const detail = String(e?.message ?? e).replaceAll(`${DIR ?? ''}/`, `${PLUGINS_DIR}/`)
+  console.error(detail)
+  if (JSON_OUT) {
+    fs.writeFileSync(
+      JSON_OUT,
+      JSON.stringify(
+        { ok: false, checked: 0, failures: [{ url: null, problems: [detail], unverified: [] }] },
+        null,
+        1,
+      ),
+    )
+  }
+  process.exit(1)
+}
 let targets = entries
 if (ONLY_LIST) {
   const want = new Set(

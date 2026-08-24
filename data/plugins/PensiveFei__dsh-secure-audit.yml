@@ -1,0 +1,6 @@
+url: https://github.com/PensiveFei/dsh-secure-audit
+name: PensiveFei/dsh-secure-audit
+category: security
+description:
+  en: 'Read-only security and compliance plugin for DeepSeek Harness: prompt-injection detection, Chinese-PII redaction, and a local configuration audit with redacted, reproducible reports.'
+  zh: 'DSH 只读安全合规插件：提示注入检测、中文 PII 脱敏、本机配置安全审计，输出脱敏且可复现的报告。'
