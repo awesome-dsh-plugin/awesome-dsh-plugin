@@ -926,6 +926,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) - Write notes and memos to flomo (浮墨笔记) from any agent via the flomo_send tool, configured once with the flomo API URL or API Key.
 - [zhengjy01/dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) - Notion connector for DeepSeek Harness: search, read, query, create, update, and append Notion pages and databases via six agent tools, with a Web settings page — configured once with an Integration Token.
 - [zhujunpeng12/dsh-memory-system](https://github.com/zhujunpeng12/dsh-memory-system) - Local-first persistent memory for DeepSeek Harness: bounded pre-step hot-memory injection, exact and Chinese-bigram BM25 cold recall, six agent tools, approval-gated lease-lock writes with recovery receipts, and read-only governance and trajectory-review candidates.
+- [zilliztech/memsearch#dsh](https://github.com/zilliztech/memsearch/tree/main/plugins/dsh) - Shared Markdown memory for DSH and other coding agents, with automatic capture, pre-step context injection, searchable recall, and memory-to-skill self-evolution through a review panel.
 - [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) - Long-term memory for DSH agents — durable, inspectable memories with recall, search, browse and knowledge-graph tools, import from ten other AI coding tools, and a settings page.
 
 ### Tools & Capabilities
@@ -1194,6 +1195,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhaoolee/notes#dsh-plugin](https://github.com/zhaoolee/notes/tree/main/dsh-plugin) - Export DSH conversations as Smartisan Notes-style PNGs, or create and update Markdown notes in a configured account-scoped workspace.
 - [zhengjy01/weread-export](https://github.com/zhengjy01/weread-export) - WeChat Reading (WeRead) multi-target export for DeepSeek Harness via the official Skills API gateway: browse your bookshelf, export highlights & thoughts to flomo, a local Markdown file, or Notion, optionally reworked by a configurable LLM prompt.
 - [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) - A settings-panel skin manager that auto-discovers installed Web UI skins, switches between them in one click, and maintains the profile patch automatically.
+- [zilliztech/dsh-milvus](https://github.com/zilliztech/dsh-milvus) - Read-only DSH Web plugin for inspecting and searching Milvus or Zilliz Cloud collections from chat, including scalar, BM25, dense, and hybrid queries.
 - [zimai233/dsh-exam-countdown](https://github.com/zimai233/dsh-exam-countdown) - Query 64 Chinese exams (高考/考研/四六级/CPA/法考…) with rule-aware date math (2nd-Saturday, 1st-Sunday) and countdowns.
 - [zimai233/dsh-figma-to-lottie](https://github.com/zimai233/dsh-figma-to-lottie) - Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.
 - [zimai233/dsh-wash-calendar](https://github.com/zimai233/dsh-wash-calendar) - Recurring-habit scheduling from pure date math: next occurrence, range schedules, and overdue advice.

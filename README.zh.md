@@ -926,6 +926,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) — 配置一次 flomo API URL / API Key，Agent 即可用 flomo_send 把笔记、摘要、待办写进 flomo（浮墨笔记）。
 - [zhengjy01/dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) — 配置一次 Notion Integration Token，Agent 即可搜索、读取、查询、创建、更新、追加 Notion 页面与数据库内容，并提供 Web 设置页。
 - [zhujunpeng12/dsh-memory-system](https://github.com/zhujunpeng12/dsh-memory-system) — 面向 DeepSeek Harness 的本地优先持久记忆：在 pre-step 注入有预算上限的热记忆，使用精确匹配与中文二元 BM25 召回冷层，提供六个 Agent 工具，并以审批门禁、租约锁、恢复回执和只读治理与轨迹复盘候选保护写入。
+- [zilliztech/memsearch#dsh](https://github.com/zilliztech/memsearch/tree/main/plugins/dsh) — 供 DSH 与其他编程 Agent 共享的 Markdown 记忆，支持自动捕获、步骤前上下文注入、搜索召回，以及通过审阅面板实现 memory-to-skill 自进化。
 - [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) — 为 DSH Agent 提供长期记忆——可检索、可检视的持久记忆，带回忆、搜索、浏览与知识图谱工具，支持从十个其他 AI 编码工具导入记忆，并附设置页。
 
 ### 🛠️ 工具与能力
@@ -1194,6 +1195,7 @@ dsh plugin --profile web add dshmarket
 - [zhaoolee/notes#dsh-plugin](https://github.com/zhaoolee/notes/tree/main/dsh-plugin) — 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
 - [zhengjy01/weread-export](https://github.com/zhengjy01/weread-export) — 微信读书多目标导出：通过官方 Skills API Key 查看书架、导出划线/想法到 flomo、本地 Markdown 或 Notion，可选按自定义 LLM prompt 整理后再导出。
 - [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) — 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。
+- [zilliztech/dsh-milvus](https://github.com/zilliztech/dsh-milvus) — 只读 DSH Web 插件，可在对话中检查和搜索 Milvus 或 Zilliz Cloud Collection，支持标量、BM25、稠密向量与混合查询。
 - [zimai233/dsh-exam-countdown](https://github.com/zimai233/dsh-exam-countdown) — 查询 64 场中国考试（高考/考研/四六级/CPA/法考…）的规则日期（第二个周六、第一个周日）与倒计时。
 - [zimai233/dsh-figma-to-lottie](https://github.com/zimai233/dsh-figma-to-lottie) — 将 SVG 路径与关键帧参数编译成自包含的 Lottie JSON 动画文件。
 - [zimai233/dsh-wash-calendar](https://github.com/zimai233/dsh-wash-calendar) — 基于纯日期数学的周期习惯排程：下次发生日、区间排程与逾期提醒。
