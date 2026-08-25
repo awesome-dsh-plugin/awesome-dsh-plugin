@@ -1,0 +1,6 @@
+url: https://github.com/1byteone/dsh-plugin-nlbi
+name: 1byteone/dsh-plugin-nlbi
+category: tools
+description:
+  en: "Natural-language data queries + BI reports: Text2SQL, charts, report saving, schema/data grid panel, and a sidebar workbench — all behind DSH's MySQL connection layer."
+  zh: "自然语言查询 + 商业智能报表：Text2SQL、图表、报表收藏、Schema/数据面板与侧栏工作台，基于 DSH 的 MySQL 连接层。"
