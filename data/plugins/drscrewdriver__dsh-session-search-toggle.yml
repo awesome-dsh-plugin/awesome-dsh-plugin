@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-session-search-toggle
+name: drscrewdriver/dsh-session-search-toggle
+category: session
+description:
+  en: 'Sidebar session-search toggle between title and content: title filters by session title, content searches historical messages through DSH''s built-in full-text index, grouped per session with the strongest snippet and message-type tags.'
+  zh: 侧边栏会话搜索开关，标题 / 内容一键切换：标题按会话标题过滤，内容经 DSH 自带全文索引搜索历史消息关键词，结果按会话聚合，附最强命中片段与消息类型标签。

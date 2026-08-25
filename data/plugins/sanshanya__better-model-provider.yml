@@ -1,0 +1,6 @@
+url: https://github.com/sanshanya/better-model-provider
+name: sanshanya/better-model-provider
+category: ui
+description:
+  en: 'Settings page for per-model capabilities: reasoning-effort levels with their wire spellings, input modalities, and token capacities, written as declarations or sparse catalog overrides.'
+  zh: '在设置页按模型编辑能力：推理档位及其发往端点的取值写法、输入模态与 token 容量，以声明或官方目录稀疏覆盖的形式写入。'

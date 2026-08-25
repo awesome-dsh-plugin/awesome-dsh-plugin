@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-mobile/tree/master/plugins/pairing
+name: NOirBRight/dsh-mobile#pairing
+category: remote
+description:
+  en: 'Mobile remote suite: Host pairing plugin with QR offer, loopback Host Gateway, encrypted Tunnel and same-LAN WebRTC Direct, plus an Android APK in this repo.'
+  zh: 移动远程套件：Host 配对插件（二维码 offer、回环 Host Gateway、加密 Tunnel、同网 WebRTC Direct），以及仓库内的 Android APK。
