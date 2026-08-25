@@ -1,0 +1,7 @@
+url: https://github.com/Harzva/dsh-cli-store
+name: Harzva/dsh-cli-store
+category: market
+description:
+  en: '64-entry external CLI catalog with bounded public discovery and guarded package-manager or manual official installation, exposed through DSH tools and a standalone command.'
+  zh: '包含 64 个条目的外部 CLI 清单，支持受限公开来源发现，并通过 DSH 工具和独立命令行提供受保护的包管理器或官方手动安装。'
+tarball: https://github.com/Harzva/dsh-cli-store/releases/latest/download/dsh-cli-store-0.3.0.tgz
