@@ -1,0 +1,6 @@
+url: https://github.com/baixianger/dsh-network
+name: baixianger/dsh-network
+category: remote
+description:
+  en: Authenticated LAN, Tailnet, and public HTTPS access for a DSH Host, with persistent host identity, pairing, and QR setup.
+  zh: 为 DSH Host 提供经认证的局域网、Tailnet 与公网 HTTPS 接入，支持持久主机身份、配对和二维码配置。
