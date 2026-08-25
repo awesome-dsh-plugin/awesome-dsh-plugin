@@ -2081,6 +2081,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [xgone/dsh-remote](https://github.com/xgone/dsh-remote) - Remote access & authentication for DeepSeek Harness web UI: account/password login gate, MFA (TOTP), signed session cookies, role-based access, in-browser directory picker, account management settings, fully localized in English and Chinese.
 - [ylwl1997/noatmark-dsh-plugin](https://github.com/ylwl1997/noatmark-dsh-plugin) - Text hygiene as a dsh plugin: sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV formula injection.
 - [Yuuz12/dsh-webui-auth](https://github.com/Yuuz12/dsh-webui-auth) - WebUI authentication enforced at the HTTP/transport layer: four-layer login gate (resources, plugin bundles, /api, WebSocket), server-side sessions with HttpOnly cookies.
+- [zjuhbh/dsh-full-with-approval](https://github.com/zjuhbh/dsh-full-with-approval) - Fourth permission preset for dsh: unconfined, GPU-capable sessions (danger-full-access) with per-operation user approval for writes outside the workspace or to protected paths (.git/**, .env*); implemented purely as a bundle over the official tools/pre-execute ask hook, no core edits.
 - [zoahdev/dsh-poison-guard](https://github.com/zoahdev/dsh-poison-guard) - Pre-install supply-chain poison scanner for DSH plugins: AST (JS-X-Ray) + deobfuscation + regex heuristics, exits non-zero on findings for CI gating.
 
 ### Remote & Mobile
