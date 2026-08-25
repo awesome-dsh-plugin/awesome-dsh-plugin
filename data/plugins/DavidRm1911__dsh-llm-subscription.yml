@@ -1,0 +1,5 @@
+url: https://github.com/DavidRm1911/dsh-llm-subscription
+name: DavidRm1911/dsh-llm-subscription
+category: model
+description:
+  en: Adds Claude, Gemini, and a local Ollama model to DSH's native model picker, using your existing Claude Code / Antigravity CLI logins instead of a metered API key, with a working reasoning-effort selector for Claude.
