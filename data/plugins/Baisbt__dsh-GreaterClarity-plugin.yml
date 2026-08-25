@@ -1,0 +1,6 @@
+url: https://github.com/Baisbt/dsh-GreaterClarity-plugin
+name: Baisbt/dsh-GreaterClarity-plugin
+category: ui
+description:
+  en: 'Enhances the DSH web session view — one-click collapse of reasoning and tool chains, numbered history quick-jump, Markdown export, AI avatars.'
+  zh: '增强 DSH Web 会话视图：一键折叠思考链与工具链、历史快速定位、Markdown 导出、AI 头像。'

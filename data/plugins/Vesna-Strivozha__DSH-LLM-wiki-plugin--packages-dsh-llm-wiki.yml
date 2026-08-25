@@ -1,0 +1,6 @@
+url: https://github.com/Vesna-Strivozha/DSH-LLM-wiki-plugin/tree/main/packages/dsh-llm-wiki
+name: Vesna-Strivozha/DSH-LLM-wiki-plugin#dsh-llm-wiki
+category: memory
+description:
+  en: 'An Obsidian-style knowledge base: ingest sources, let the LLM build and maintain an interlinked wiki, and ask questions grounded in it.'
+  zh: '一个 Obsidian 风格的知识库：摄取资料，让 LLM 构建并维护互联 wiki，并基于它提问。'
