@@ -1,7 +1,7 @@
 url: https://github.com/alpacachen/dsh-worktree
 name: alpacachen/dsh-worktree
 category: git
-tarball: https://github.com/alpacachen/dsh-worktree/releases/download/v1.0.1/dsh-simple-worktree-1.0.1.tgz
+tarball: https://github.com/alpacachen/dsh-worktree/releases/download/v1.0.2/alpacachen-dsh-simple-worktree-1.0.2.tgz
 description:
   en: A minimal worktree management solution with only one button and one dialog.
   zh: 极简 worktree 管理方案，只有一个按钮和一个弹窗。
