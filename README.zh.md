@@ -1103,6 +1103,7 @@ dsh plugin --profile web add dshmarket
 - [maddogfinance/dsh-trading](https://github.com/maddogfinance/dsh-trading) — 只读交易研究工作台 bundle：带类型的行情数据接缝（含 CSV 参考数据源）、多周期指标 regime 快照与 OHLCV 工具、dsh web 交互式 K 线卡（模型标注需溯源并经价格区间校验）、以及在 tools/pre-execute 拦截下单形工具调用的 risk-guard。
 - [mafeis/dsh-net-proxy](https://github.com/mafeis/dsh-net-proxy) — 让 agent 的网络请求走本机 HTTP/CONNECT/SOCKS5 代理。
 - [mario03690/dsh-netcafe](https://github.com/mario03690/dsh-netcafe) — 托管工具服务器（MCP）：发票与银行流水提取并做代码内算术校验、按整数分对账、PDF 与表格转换、SQL 方言转写，以及从中国移动骨干网实测大陆可达性。
+- [Max-Null/dsh-draft-polish](https://github.com/Max-Null/dsh-draft-polish) — DSH 输入框草稿润色：发送键左侧一键调用 LLM 润色草稿，可携带会话上下文，模型渠道可配置。
 - [MAXeaglet/dsh-bash-terminal](https://github.com/MAXeaglet/dsh-bash-terminal) — 一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。
 - [MaxHou-infinity/dsh-scout](https://github.com/MaxHou-infinity/dsh-scout) — 证据驱动的公司与岗位尽调插件：登记带证据等级的来源、添加受证据边界约束的结论、用官方登记信息核验公司主体，并生成推进/核验/停止三态报告，附核验清单与面试问题。
 - [megatronyy/dsh-tradingagents](https://github.com/megatronyy/dsh-tradingagents) — /trading-agent 命令背后的 A 股多智能体分析，移植自 TradingAgents-AShare：14 个角色（分析师、多空辩论、风控、交易员）经 dsh 已配置的模型路由协作产出完整投研报告。
@@ -1333,6 +1334,7 @@ dsh plugin --profile web add dshmarket
 - [linenxi-ctrl/dsh-vision](https://github.com/linenxi-ctrl/dsh-vision) — 外挂识图插件：鲸鱼按钮配置面板、图片识图自动回传、模型自主截图识图工具。
 - [liustack/modlens](https://github.com/liustack/modlens) — 为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。
 - [lsjspl/dsh-plugin-grok2api-media-tool](https://github.com/lsjspl/dsh-plugin-grok2api-media-tool) — 让 dsh 通过 grok2api 的 API 获得生成图片与视频能力。
+- [Max-Null/dsh-capture](https://github.com/Max-Null/dsh-capture) — DSH 双引擎截图：思灵桌面壳内，全局快捷键/托盘打开全屏框选浮层（多显示器、逐屏像素级抓帧），选区定格后工具条就地画红框，一次确认送进输入框；纯 DSH（浏览器）下由输入框相机按钮经 getDisplayMedia 捕获屏幕，复用同一套单阶段框选+标注遮罩。均走官方附件通道。
 - [maxwell-feng/dsh-tesseract-ocr](https://github.com/maxwell-feng/dsh-tesseract-ocr) — 本地 Tesseract 识别附加图片：只把识别出的文字发送给模型，图片字节不进入上下文；视觉直通可选开启。
 - [maxwell-feng/dsh-windows-ocr](https://github.com/maxwell-feng/dsh-windows-ocr) — 本地 Windows 引擎（Windows.Media.Ocr）识别附加图片：只把识别出的文字发送给模型，图片字节不进入上下文；视觉直通可选开启。
 - [MicroHEROX/dsh-koboldcpp-hands](https://github.com/MicroHEROX/dsh-koboldcpp-hands) — 给在线模型装上本地双手：koboldcpp_run 与 koboldcpp_vision 工具把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地 KoboldCpp（llama.cpp）服务器，并按需拉起与管理服务器生命周期。
