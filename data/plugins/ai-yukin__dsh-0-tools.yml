@@ -2,5 +2,5 @@ url: https://github.com/ai-yukin/dsh-0-tools
 name: ai-yukin/dsh-0-tools
 category: model
 description:
-  en: 'One-click free model setup for DSH web: integrates Zhipu GLM free text and image models, reminds you of DeepSeek peak/off-peak pricing periods, and bundles an online help center.'
-  zh: DSH Web 小白零门槛零费用套件：一键接入智谱双免费模型（文本+图片）、DeepSeek 计价时段提醒、内置在线帮助中心。
+  en: 'One-click free model setup for DSH web: integrates Zhipu GLM free text and image models, and can also connect OpenRouter''s anonymous stealth/ox-alpha preview model with one click, setting it as the session default; reminds you of DeepSeek peak/off-peak pricing periods, and bundles an online help center.'
+  zh: DSH Web 小白零门槛零费用套件：一键接入智谱双免费模型（文本+图片），也可一键接入 OpenRouter 匿名 stealth/ox-alpha 预览模型并自动设为会话默认模型；含 DeepSeek 计价时段提醒、内置在线帮助中心。
