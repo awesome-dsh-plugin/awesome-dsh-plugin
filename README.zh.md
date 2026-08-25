@@ -1146,6 +1146,7 @@ dsh plugin --profile web add dshmarket
 - [PiedPiper911/dsh-video-tools](https://github.com/PiedPiper911/dsh-video-tools) — 基于 FFmpeg.wasm 的浏览器端音视频工具集，支持抽帧、截图、图片压缩与视频转 GIF。
 - [poplarity/dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench) — 可复现科学分析工作台：agent 驱动的 cell、内联图形与反馈重画、manifest 溯源、环境快照与出版级出图技能（9 个 bio_* 工具 + 工作台界面）。
 - [Q1hangL/dsh-ask-guard](https://github.com/Q1hangL/dsh-ask-guard) — 为 ask_user_question 提供协作式超时守卫：提问卡片丢失或用户未答复时以结构化 ASK_TIMEOUT 结束调用，避免回合无限挂起。
+- [qphotoai/dsh-computer-use-windows](https://github.com/qphotoai/dsh-computer-use-windows) — 适用于 Windows 的 DeepSeek Harness Computer Use 插件，支持 UIA、cua-driver 和可选 GLM 视觉。
 - [qq1376868542-lang/dsh-tools](https://github.com/qq1376868542-lang/dsh-tools) — 面向 dsh web profile 的个人工具箱，各功能可单独开关：任务完成桌面通知、一键重启、会话删除、插件启停、更新检查，以及若干界面小工具。
 - [QSWWLTN/dsh-UEAssetsOperator](https://github.com/QSWWLTN/dsh-UEAssetsOperator) — 通过 Unreal 内置 Python 提供 .uasset 检查与受限蓝图节点编辑。
 - [Realyujie/dsh-us-stocks](https://github.com/Realyujie/dsh-us-stocks) — 美股行情、历史 K 线、财务报表、分析师共识与新闻，数据来自 yahoo-finance2。
