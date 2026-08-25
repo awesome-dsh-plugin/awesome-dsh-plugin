@@ -1,0 +1,6 @@
+url: https://github.com/LouisHaoL/dsh-timer-agent
+name: LouisHaoL/dsh-timer-agent
+category: workflow
+description:
+  en: 'Host-resident cron engine with a web jobs board and a timer_agent tool: fires real agent sessions on schedule, continuing a pinned session for context or starting fresh ones in a chosen project workspace.'
+  zh: '常驻宿主的定时引擎，带 Web 任务面板与 timer_agent 工具：按 cron 计划触发真实 Agent 会话，可固定已有会话保持上下文连续，也可在指定项目目录新开会话。'
