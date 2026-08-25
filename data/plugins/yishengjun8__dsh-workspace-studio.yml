@@ -1,0 +1,6 @@
+url: https://github.com/yishengjun8/dsh-workspace-studio
+name: yishengjun8/dsh-workspace-studio
+category: ui
+description:
+  en: 'Replace the Harness Web root layout with a three-pane workspace studio: file tree, CodeMirror 6 editing and previews, session-bound preview tabs, and a conversation-branch mindmap view.'
+  zh: '以三栏工作区布局替换 Harness Web 根布局：文件树、CodeMirror 6 编辑与预览、按会话持久化的预览标签，以及会话分支导图视图。'
