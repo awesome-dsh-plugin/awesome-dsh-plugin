@@ -1291,5 +1291,10 @@
  "https://github.com/BananaSoldier01/dsh-tidychat": [
   "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/navigator.png",
   "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/settings.png"
+ ],
+ "https://github.com/sunyuhuirong/shl-session-history": [
+  "https://raw.githubusercontent.com/sunyuhuirong/shl-session-history/main/docs/screenshots/01-overview.png",
+  "https://raw.githubusercontent.com/sunyuhuirong/shl-session-history/main/docs/screenshots/02-settings-panel.png",
+  "https://raw.githubusercontent.com/sunyuhuirong/shl-session-history/main/docs/screenshots/03-rail-dot-mode.png"
  ]
 }
