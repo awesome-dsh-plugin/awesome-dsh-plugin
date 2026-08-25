@@ -1,0 +1,6 @@
+url: https://github.com/KeS1Ke/dsh-exit
+name: KeS1Ke/dsh-exit
+category: dev
+description:
+  en: 'Adds a confirmation-based Exit section to the DSH Web settings panel that invokes a host Remote method to terminate the dsh host process.'
+  zh: '为 DSH Web 设置面板增加带确认的退出栏目，调用宿主 Remote 方法结束 dsh 宿主进程。'
