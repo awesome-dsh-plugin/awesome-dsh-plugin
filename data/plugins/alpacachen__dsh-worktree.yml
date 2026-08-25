@@ -3,5 +3,5 @@ name: alpacachen/dsh-worktree
 category: git
 tarball: https://github.com/alpacachen/dsh-worktree/releases/download/v1.0.1/dsh-simple-worktree-1.0.1.tgz
 description:
-  en: Creates task-branch Git worktrees and opens them as DSH Workspaces from the web GUI.
-  zh: 从 Web GUI 创建任务分支 Git worktree，并将其作为 DSH Workspace 打开。
+  en: A minimal worktree management solution with only one button and one dialog.
+  zh: 极简 worktree 管理方案，只有一个按钮和一个弹窗。
