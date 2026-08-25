@@ -1,0 +1,5 @@
+url: https://github.com/huajuan2024/dsh-session-manager
+name: huajuan2024/dsh-session-manager
+category: session
+description:
+  en: 'Session manager panel under Settings → Plugins: list all sessions with title, cwd, agent preset, updated time, turns and steps, expand a row to view message history, delete non-running sessions, and export a session as JSON or Markdown via a browser Blob URL.'
