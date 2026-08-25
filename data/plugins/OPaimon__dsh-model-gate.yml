@@ -1,0 +1,6 @@
+url: https://github.com/OPaimon/dsh-model-gate
+name: OPaimon/dsh-model-gate
+category: model
+description:
+  en: 'Single-model disable gate: hides denied models from DSH catalogs, blocks direct dispatch with an in-protocol error chunk, and exposes a settings UI for the denylist.'
+  zh: '提供模型粒度的启用禁用机制：从 DSH 模型目录隐藏被禁用的模型，以协议内错误块拦截直接分发请求，并提供UI设置界面。'
