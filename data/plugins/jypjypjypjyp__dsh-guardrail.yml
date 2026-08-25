@@ -1,0 +1,7 @@
+url: https://github.com/jypjypjypjyp/dsh-guardrail
+name: jypjypjypjyp/dsh-guardrail
+category: security
+description:
+  en: 'String-matches tool-call input arguments, blocks dangerous tool calls (deny) or allows them with an injected warning (warn), and ships a full rules-management panel.'
+  zh: '对 agent 工具调用输入参数做字符串匹配，命中危险行为则拦截（deny）或放行但注入警告（warn），附规则管理面板。'
+tarball: https://github.com/jypjypjypjyp/dsh-guardrail/releases/latest/download/dsh-guardrail-0.0.1.tgz
