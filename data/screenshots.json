@@ -281,6 +281,14 @@
   "https://raw.githubusercontent.com/MingoZhou/dsh-replay/main/assets/overview-light.png",
   "https://raw.githubusercontent.com/MingoZhou/dsh-replay/main/assets/timeline-light.png",
   "https://raw.githubusercontent.com/MingoZhou/dsh-replay/main/assets/audit-light.png"
+],
+ "https://github.com/MrWeiCodes/dsh-permgate": [
+  "https://raw.githubusercontent.com/MrWeiCodes/dsh-permgate/main/assets/approval-modal.png",
+  "https://raw.githubusercontent.com/MrWeiCodes/dsh-permgate/main/assets/approval-modal-en.png",
+  "https://raw.githubusercontent.com/MrWeiCodes/dsh-permgate/main/assets/reject-reason.png",
+  "https://raw.githubusercontent.com/MrWeiCodes/dsh-permgate/main/assets/reject-reason-en.png",
+  "https://raw.githubusercontent.com/MrWeiCodes/dsh-permgate/main/assets/settings-page.jpg",
+  "https://raw.githubusercontent.com/MrWeiCodes/dsh-permgate/main/assets/settings-page-en.jpg"
  ],
  "https://github.com/Mu-scorpio/token-usage-counter": [
   "https://raw.githubusercontent.com/Mu-scorpio/token-usage-counter/main/assets/usage-stats-overview.png",
