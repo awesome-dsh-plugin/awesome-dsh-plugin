@@ -2,5 +2,5 @@ url: https://github.com/kanchengw/dsh-mindseye
 name: kanchengw/dsh-mindseye
 category: vision
 description:
-  en: 'Plug-in vision for text-only models on DSH, with native interaction for image understanding and generation, layered evidence memory and cache, and intent-driven VLM router.'
-  zh: 为纯文本模型提供 DSH 视觉插件：原生图片理解与生成交互、分层证据记忆与缓存、意图驱动的 VLM 路由。
+  en: 'Plug-in vision for text-only models on DSH, with native interaction for image understanding and generation, layered evidence memory and cache, and GUI automation.'
+  zh: 为 DSH 上的纯文本模型提供视觉能力：支持图片理解与生成的原生交互、分层证据记忆与缓存，以及 GUI 自动化。
