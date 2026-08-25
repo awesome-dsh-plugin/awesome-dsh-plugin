@@ -1,6 +1,6 @@
 url: https://github.com/wly8691-jpg/knowlp-rag
 name: wly8691-jpg/knowlp-rag
-category: memory
+category: tools
 description:
-  en: 'Dual knowledge-graph RAG for Markdown notes: prerequisite + similarity graphs (P/S-Agent traversal), paragraph chunking, n-gram/embedding hybrid search, and an explicit weight feedback loop — via MCP.'
-  zh: Markdown 笔记的双知识图谱 RAG：前置依赖 + 相似关联双图（P/S-Agent 遍历）、段落级匹配、ngram/embedding 混合检索、显式权重反馈闭环，以 MCP 接入。
+  en: 'Dual knowledge-graph RAG for Markdown notes with half-life memory decay: prerequisite + similarity graphs (P/S-Agent traversal), paragraph chunking, n-gram/embedding hybrid search, and an explicit weight-feedback loop — a native Cordis plugin, npm-installable as @eqman00003/knowlp-rag.'
+  zh: Markdown 笔记的双知识图谱 RAG，带半衰期记忆衰减：前置依赖 + 相似关联双图（P/S-Agent 遍历）、段落级匹配、ngram/embedding 混合检索、显式权重反馈闭环——原生 Cordis 插件，npm 包 @eqman00003/knowlp-rag。

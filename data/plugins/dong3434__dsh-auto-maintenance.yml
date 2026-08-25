@@ -1,0 +1,6 @@
+url: https://github.com/dong3434/dsh-auto-maintenance
+name: dong3434/dsh-auto-maintenance
+category: dev
+description:
+  en: 'Auto maintenance and resilience for DeepSeek Harness: startup self-diagnosis, automatic repair of missing directories, scheduled configuration backups with rotation, one-click restore, config file change monitoring, and smart-start port detection. Ships as a Cordis plugin plus a standalone CLI.'
+  zh: '为 DeepSeek Harness 提供一体化自动维护与稳定性保障：启动自检、缺失目录自动修复、配置周期备份与轮转、一键还原、配置文件变更监控，以及智能启动端口检测。以 Cordis 插件和独立 CLI 双形态交付。'

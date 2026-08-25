@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-draft-polish
+name: Max-Null/dsh-draft-polish
+category: tools
+description:
+  en: 'Draft polish for the DSH composer: one-click AI polish of the input draft (sparkles button next to send), with optional conversation context and a configurable model channel.'
+  zh: 'DSH 输入框草稿润色：发送键左侧一键调用 LLM 润色草稿，可携带会话上下文，模型渠道可配置。'
