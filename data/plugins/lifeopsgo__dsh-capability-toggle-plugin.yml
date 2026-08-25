@@ -1,0 +1,6 @@
+url: https://github.com/lifeopsgo/dsh-capability-toggle-plugin
+name: lifeopsgo/dsh-capability-toggle-plugin
+category: tools
+description:
+  en: 'Adds session, project, and global controls in the DSH WebUI for skills, MCP servers, tools, prompt injections, approval escalation, and safety guards; enforcement is scoped to the current agent.'
+  zh: 在 DSH WebUI 中为技能、MCP 服务器、工具、提示词注入、审批升权和安全守卫提供会话、项目与全局三级控制，并在当前 agent 作用域内强制执行。
