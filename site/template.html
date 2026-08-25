@@ -137,6 +137,13 @@ h1 em{font-style:normal;color:var(--cinnabar)}
 .chip:hover{border-color:var(--ink-3);color:var(--ink)}
 .chip.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .chip.active small{color:color-mix(in srgb,var(--paper) 60%,transparent)}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;margin-top:.6rem}
+.sortwrap{display:inline-flex;align-items:center;gap:.4rem;font-size:.83rem;color:var(--ink-3)}
+.sortwrap select{font:inherit;font-size:.83rem;color:var(--ink-2);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.34rem 1.6rem .34rem .9rem;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-3) 50%),linear-gradient(135deg,var(--ink-3) 50%,transparent 50%);background-position:calc(100% - 14px) 52%,calc(100% - 9px) 52%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;cursor:pointer;transition:border-color .15s ease,color .15s ease}
+.sortwrap select:hover{border-color:var(--ink-3);color:var(--ink)}
+.toggle{font-size:.83rem;color:var(--ink-2);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.34rem .9rem;transition:all .15s ease;white-space:nowrap}
+.toggle:hover{border-color:var(--ink-3);color:var(--ink)}
+.toggle[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 
 /* ── card grid ── */
 ol.dex{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1.05rem;padding-block:1.7rem 2.5rem}
@@ -151,6 +158,13 @@ li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
 li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
 li.card .stars::before{content:"★ ";color:var(--cinnabar)}
+/* Sits after stars and reads quieter: a download figure is only present for
+   the ~45% of entries published to npm, so it must not look like a field the
+   others are missing. `.stars` claims margin-left:auto; when a card has both,
+   only the first of them should. */
+li.card .dl{flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+li.card .dl::before{content:"↓ ";color:var(--ink-3)}
+li.card .dl:first-of-type{margin-left:auto}
 li.card .desc-link{display:block}
 li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
 li.card .desc-link:hover p{color:var(--ink)}
@@ -267,6 +281,18 @@ footer .motto{font-family:var(--mono);color:var(--cinnabar)}
 <div class="filters-band"><div class="wrap">
   <div class="filters" id="filters">
   </div><!--/filters-->
+  <div class="controls">
+    <label class="sortwrap"><span>__T_SORT__</span>
+      <select id="sort">
+        <option value="dl">__T_SORT_DL__</option>
+        <option value="stars">__T_SORT_STARS__</option>
+        <option value="new">__T_SORT_NEW__</option>
+        <option value="name">__T_SORT_NAME__</option>
+      </select>
+    </label>
+    <button type="button" class="toggle" id="fNpm" aria-pressed="false">__T_F_NPM__</button>
+    <button type="button" class="toggle" id="fNew" aria-pressed="false">__T_F_RECENT__</button>
+  </div><!--/controls-->
 </div></div>
 
 <main class="wrap">
@@ -306,7 +332,9 @@ dsh plugin --profile web add github:owner/repo</pre>
 <script>
 const urlParams = new URLSearchParams(location.search);
 
-// filter = category chip × search text; URL reflects state (?cat=&q=)
+// filter = category chip × search text × npm/recent toggles; sort reorders.
+// URL reflects state (?cat=&q=&sort=&npm=1&new=1) — nothing is stored.
+const dex = document.getElementById('dex');
 const items = [...document.querySelectorAll('#dex li.card')];
 const count = document.getElementById('count');
 const noresult = document.getElementById('noresult');
@@ -314,18 +342,61 @@ const total = document.getElementById('total');
 total.textContent = items.length;
 let activeCat = urlParams.get('cat') || 'all';
 let query = (urlParams.get('q') || '').toLowerCase();
+let sortBy = urlParams.get('sort') || 'dl';
+let onlyNpm = urlParams.get('npm') === '1';
+let onlyNew = urlParams.get('new') === '1';
+
+// Computed at load, not at build: a static page served for weeks would
+// otherwise keep filtering against the day it was generated.
+//
+// Seven days, not thirty. `added` derives from git history and this repository
+// was initialised 2026-08-13, so every one of the 2,143 entries currently
+// carries a date inside the last two weeks — a 30-day window matches all of
+// them and the button does nothing. Seven selects ~43% today and keeps
+// selecting a useful slice once the history is long enough for either to work.
+const cutoff = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+
+// `data-dl` is absent — never "0" — for entries with no npm package, so a
+// missing attribute means "not published", not "published and unused".
+// This must stay equivalent to byDownloads() in scripts/build-site.mjs, which
+// produces the server-rendered order; if they differ the grid visibly
+// reshuffles on load.
+const num = (li, k) => (k in li.dataset ? +li.dataset[k] : null);
+const SORTS = {
+  dl: (a, b) => {
+    const ad = num(a, 'dl'), bd = num(b, 'dl');
+    if ((ad === null) !== (bd === null)) return ad === null ? 1 : -1;
+    if (ad !== null && bd !== null && ad !== bd) return bd - ad;
+    return (num(b, 'stars') ?? -1) - (num(a, 'stars') ?? -1);
+  },
+  stars: (a, b) => (num(b, 'stars') ?? -1) - (num(a, 'stars') ?? -1),
+  new: (a, b) => (a.dataset.added < b.dataset.added ? 1 : a.dataset.added > b.dataset.added ? -1 : 0),
+  name: (a, b) => a.dataset.name.localeCompare(b.dataset.name),
+};
 
 function syncUrl() {
   const p = new URLSearchParams(location.search);
   activeCat === 'all' ? p.delete('cat') : p.set('cat', activeCat);
   query ? p.set('q', query) : p.delete('q');
+  sortBy === 'dl' ? p.delete('sort') : p.set('sort', sortBy);
+  onlyNpm ? p.set('npm', '1') : p.delete('npm');
+  onlyNew ? p.set('new', '1') : p.delete('new');
   history.replaceState(null, '', p.size ? `?${p}` : location.pathname);
+}
+function applySort() {
+  // One fragment, one reflow. Appending 2,000+ nodes individually forces a
+  // layout per node and is visibly janky on a mid-range phone.
+  const frag = document.createDocumentFragment();
+  for (const li of [...items].sort(SORTS[sortBy] || SORTS.dl)) frag.appendChild(li);
+  dex.appendChild(frag);
 }
 function applyFilter() {
   let shown = 0;
   for (const li of items) {
     const hit = (activeCat === 'all' || li.dataset.cat === activeCat)
-      && (!query || li.textContent.toLowerCase().includes(query));
+      && (!query || li.textContent.toLowerCase().includes(query))
+      && (!onlyNpm || 'npm' in li.dataset)
+      && (!onlyNew || li.dataset.added >= cutoff);
     li.classList.toggle('hidden', !hit);
     if (hit) shown++;
   }
@@ -346,9 +417,28 @@ document.getElementById('filters').addEventListener('click', (e) => {
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
   applyFilter();
 });
+const sortSel = document.getElementById('sort');
+sortSel.value = sortBy in SORTS ? sortBy : 'dl';
+sortBy = sortSel.value;
+sortSel.addEventListener('change', (e) => {
+  sortBy = e.target.value;
+  applySort();
+  syncUrl();
+});
+
+const fNpm = document.getElementById('fNpm');
+const fNew = document.getElementById('fNew');
+function paintToggles() {
+  fNpm.setAttribute('aria-pressed', String(onlyNpm));
+  fNew.setAttribute('aria-pressed', String(onlyNew));
+}
+fNpm.addEventListener('click', () => { onlyNpm = !onlyNpm; paintToggles(); applyFilter(); });
+fNew.addEventListener('click', () => { onlyNew = !onlyNew; paintToggles(); applyFilter(); });
+
 document.getElementById('clearFilter').addEventListener('click', () => {
-  activeCat = 'all'; query = ''; q.value = '';
+  activeCat = 'all'; query = ''; q.value = ''; onlyNpm = false; onlyNew = false;
   for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
+  paintToggles();
   applyFilter();
 });
 
@@ -398,8 +488,11 @@ const toTop = document.getElementById('toTop');
 addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
 toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
 
-// restore state from URL on load
+// restore state from URL on load. applySort() runs only when the request
+// differs from the server-rendered order, so the common case touches no DOM.
 for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
+paintToggles();
+if (sortBy !== 'dl') applySort();
 applyFilter();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->

@@ -2,5 +2,5 @@ url: https://github.com/Asher-2000/dsh-memory-connect
 name: Asher-2000/dsh-memory-connect
 category: memory
 description:
-  en: 'Cross-session memory plugin for DSH (v0.3.0): auto-extraction, SQLite FTS5 indexing, RRF semantic recall, scheduled maintenance, LLM-powered consolidation via ctx.llm, context explosion prevention, and global Soul identity via ~/.dsh/soul.md. Zero-config.'
-  zh: 跨会话记忆插件 (v0.3.0)：自动提取、SQLite FTS5 索引、RRF 语义召回、定时维护、LLM 智能合并（自动接入 ctx.llm）、上下文爆炸防护、全局身份 Soul（~/.dsh/soul.md）。零配置。
+  en: 'Cross-session memory plugin for DSH (v0.4.0, the "it actually works now" release): auto-extraction, SQLite FTS5 indexing, RRF semantic recall injected into the system prompt on every turn, scheduled maintenance, LLM-powered consolidation via ctx.llm, context explosion prevention, and global Soul identity via ~/.dsh/soul.md. Zero-config install.'
+  zh: 跨会话记忆插件（v0.4.0 修复版，此版本真正激活）：自动提取、SQLite FTS5 索引、RRF 语义召回（每轮注入系统提示词）、定时维护、LLM 智能合并（自动接入 ctx.llm）、上下文爆炸防护、全局身份 Soul（~/.dsh/soul.md）。零配置装完即用。

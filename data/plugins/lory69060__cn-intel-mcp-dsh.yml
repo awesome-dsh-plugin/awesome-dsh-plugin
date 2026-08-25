@@ -1,0 +1,7 @@
+url: https://github.com/lory69060/cn-intel-mcp-dsh
+name: lory69060/cn-intel-mcp-dsh
+category: tools
+tarball: https://github.com/lory69060/cn-intel-mcp-dsh/releases/latest/download/cn-intel-mcp-dsh-0.1.0.tgz
+description:
+  en: "China hard-tech supply chain intelligence: 33-signal board, H1 earnings tracker, hit-rate track record and Q&A, via a remote MCP (mcp__cn_intel__*)."
+  zh: "中国硬科技供应链情报：33 条信号看板、中报验证追踪、命中率记录与问答，通过远程 MCP 接入（mcp__cn_intel__*）。"

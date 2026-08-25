@@ -260,19 +260,56 @@ const jsonld = (url) => JSON.stringify({
   itemListElement: ordered.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 
-// star-ranked card grid; `only` limits to one category (category pages)
+// Thousands separators, en-US in both locales on purpose: the number is a
+// count, not prose, and letting it follow the locale would make the two
+// READMEs' generated pages differ by separator alone on every rebuild.
+const fmtNum = (n) => n.toLocaleString('en-US')
+
+// Default order for the card grid: downloads first, then everything with no
+// npm package at all, ranked among themselves by stars.
+//
+// `downloads == null` means "not published to npm", NOT "published and never
+// installed" — see where e.downloads is assigned. Coercing it to 0 would sort
+// 55% of the list as if it had been measured and found unused, and would put a
+// widely-starred GitHub-only plugin below an npm package with three installs.
+// So nulls are partitioned to the back and ordered by the signal they do have.
+//
+// The in-page `sort=dl` comparator in site/template.html must stay equivalent
+// to this: it is the same ordering, recomputed client-side. If they drift, the
+// first paint reshuffles on load for everyone with JS.
+const byDownloads = (a, b) => {
+  const ad = a.downloads, bd = b.downloads
+  if ((ad == null) !== (bd == null)) return ad == null ? 1 : -1
+  if (ad != null && bd != null && ad !== bd) return bd - ad
+  return (b.stars ?? -1) - (a.stars ?? -1)
+}
+
+// download-ranked card grid; `only` limits to one category (category pages)
 function buildRows(loc, only) {
   const group = ordered
     .filter((e) => !only || e.cat === only)
     .slice()
-    .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+    .sort(byDownloads)
   return group.map((e) => {
     const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
     const short = shortName(e.name)
-    return `    <li class="card" data-cat="${e.cat}">
+    // data-* carry what the in-page sort and filters need. Absent attribute,
+    // not a zero: `downloads` is null for entries with no npm package at all,
+    // and `data-dl="0"` would rank them alongside a published package nobody
+    // installs. The client reads presence, so omitting is the encoding.
+    const attrs = [
+      `data-cat="${e.cat}"`,
+      e.downloads != null ? `data-dl="${e.downloads}"` : '',
+      e.stars != null ? `data-stars="${e.stars}"` : '',
+      `data-added="${e.added}"`,
+      e.npm ? 'data-npm="1"' : '',
+      `data-name="${esc(short.toLowerCase())}"`,
+    ].filter(Boolean).join(' ')
+    return `    <li class="card" ${attrs}>
       <div class="top">
         <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
         ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
+        ${e.downloads != null ? `<span class="dl" translate="no" title="${loc.strings.P_DOWNLOADS}">${fmtNum(e.downloads)}</span>` : ''}
       </div>
       <a class="desc-link" href="${loc.urlPath}p/${e.slug}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
       <div class="foot">
@@ -538,6 +575,10 @@ for (const loc of LOCALES) {
 
     const specs = [
       e.stars != null ? `<span>${loc.strings.P_STARS} <b>★ ${e.stars}</b></span>` : '',
+      // Only when the number exists. An entry with no npm package has no
+      // download figure to report, and printing "0" would read as a measured
+      // result rather than an absent one.
+      e.downloads != null ? `<span>${loc.strings.P_DOWNLOADS} <b translate="no">${fmtNum(e.downloads)}</b></span>` : '',
       `<span>${loc.strings.P_CAT} <a href="${catUrl}">${loc.categories[e.cat]}</a></span>`,
       `<span>${loc.strings.P_ADDED} <b>${e.added}</b></span>`,
       e.npm ? `<span>npm <a href="https://www.npmjs.com/package/${e.npm}" rel="noopener" translate="no">${esc(e.npm)}</a></span>` : '',
