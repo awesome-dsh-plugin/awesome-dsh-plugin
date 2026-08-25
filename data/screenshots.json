@@ -1296,5 +1296,11 @@
  "https://github.com/BananaSoldier01/dsh-tidychat": [
   "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/navigator.png",
   "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/settings.png"
+ ],
+ "https://github.com/PolinniZhong/dsh-personal-center": [
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/light-profile.png",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-pet.png",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/pet-emotions.gif",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-model-cost.png"
  ]
 }
