@@ -1,0 +1,7 @@
+url: https://github.com/TindalosKorone/dsh-cheatengine
+name: TindalosKorone/dsh-cheatengine
+category: tools
+tarball: https://github.com/TindalosKorone/dsh-cheatengine/releases/latest/download/tindalosko-dsh-cheatengine-0.5.2.tgz
+description:
+  zh: "让 DSH Agent 通过 Cheat Engine 进行动态内存调试：扫描、指针分析、断点与游戏内存修改。"
+  en: "DSH plugin bridging agents to Cheat Engine for dynamic memory debugging: scanning, pointer analysis, breakpoints, and game memory hacking."
