@@ -1,0 +1,6 @@
+url: https://github.com/whoisjiahao/dsh-feishu-channel
+name: whoisjiahao/dsh-feishu-channel
+category: remote
+description:
+  en: 'Feishu/Lark channel that drives DeepSeek Harness agents from chats: streaming rich cards with live thinking and tool steps, per-turn cost metering at DeepSeek peak/off-peak rates, one-tap approval cards, model-gated image intake, and QR onboarding without a public endpoint.'
+  zh: 在飞书聊天里驱动 DeepSeek Harness agent：流式富卡片实时展示思考与工具步骤，按 DeepSeek 峰谷牌价计量每轮费用，一键审批、按模型能力透传图片，扫码即用、无需公网。
