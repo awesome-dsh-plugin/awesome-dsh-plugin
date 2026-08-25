@@ -2282,6 +2282,7 @@ dsh plugin --profile web add dshmarket
 - [HuanLinOTO/dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) — 模型生成时弹出小游戏菜单（wordle/消消乐，可扩展）。
 - [imkingjh999/dsh-deepsea](https://github.com/imkingjh999/dsh-deepsea) — 把会话 context 变成浮窗深海摸鱼：context 越长手沉得越深，摸到鱼后服务端掷骰定胜负，中卡铸造镭射收藏卡，五大洋摸鱼、鱼池养成、GitHub 绑定全球排行榜。
 - [JAdpp/dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) — 多角色 Galgame 对话界面：角色与回复模型可独立切换，分角色保存好感度、记忆、对话历史与 CG 图鉴，并根据 Harness 跨会话任务事件做出角色回应。
+- [jerryqx/dsh-ximalaya](https://github.com/jerryqx/dsh-ximalaya) — 在 DSH Web 界面收听喜马拉雅播客/有声书：按关键词搜索专辑、分页浏览曲目列表，播放条支持上下集/进度/音量/倍速，面板可拖动并含专辑详情、扫码登录与收藏；Host 端音频流代理支持 Range 拖动，并注册 `ximalaya_play` 模型工具让 agent 按需搜索播放。
 - [jitengfei/dsh-whale-arcade](https://github.com/jitengfei/dsh-whale-arcade) — 浏览器本地运行的悬浮鲸鱼游戏中心，包含三款积分游戏和海洋主题五子棋，适合等待 Agent 时随手游玩。
 - [kendu76/dsh-music-player](https://github.com/kendu76/dsh-music-player) — 在 DSH Web 界面播放本地音乐：Host 扫描本地音乐目录（默认 ~/Music）并以 HTTP 流式播放，提供正在播放条（上一首/播放/停止、循环模式、音量、实时频谱）与可拖动的播放列表面板，并注册 `music_play` 模型工具让 agent 直接播放。
 - [KongChengZhi/dsh-pixel-studio#dsh-cli-anything-aseprite](https://github.com/KongChengZhi/dsh-pixel-studio/tree/main/dsh-cli-anything-aseprite) — Aseprite 风格像素画工作室：AI 像人类一样分步绘制精灵，支持选区、图层、动画帧、渐变、对称、参考层与 rgb16 4096 色，每一步实时渲染为 ANSI 终端帧。
