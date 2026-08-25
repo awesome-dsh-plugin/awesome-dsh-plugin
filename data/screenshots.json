@@ -634,6 +634,11 @@
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-float.png",
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-minimized.png"
  ],
+ "https://github.com/imkingjh999/dsh-deepsea": [
+  "https://raw.githubusercontent.com/imkingjh999/dsh-deepsea/main/assets/screenshots/deepsea-ocean.png",
+  "https://raw.githubusercontent.com/imkingjh999/dsh-deepsea/main/assets/screenshots/deepsea-wall.png",
+  "https://raw.githubusercontent.com/imkingjh999/dsh-deepsea/main/assets/screenshots/deepsea-pond.png"
+ ],
  "https://github.com/itr-del/dsh-feishu": [
   "https://raw.githubusercontent.com/itr-del/dsh-feishu/master/assets/hero.png"
  ],
@@ -906,8 +911,7 @@
   "https://raw.githubusercontent.com/wuxiangru915/dsh-session-manager/main/assets/session-manager.png"
  ],
  "https://github.com/wx-yss/dsh-message-rail": [
-  "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-hover-preview.png",
-  "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-market-2.png"
+  "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-hover-preview.png"
  ],
  "https://github.com/wz-heng/dsh-feishu-bridge": [
   "https://raw.githubusercontent.com/wz-heng/dsh-feishu-bridge/main/docs/screenshots/fail-closed-boot.png",
@@ -1221,8 +1225,10 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
  ],
- "https://github.com/m1khal3v/dsh-llm-key-rotation": [
-  "https://github.com/user-attachments/assets/84f63f77-3492-4027-ace7-30b6d08616ef"
+ "https://github.com/EugeneVl/dsh_session_folders": [
+  "https://raw.githubusercontent.com/EugeneVl/dsh_session_folders/master/assets/screenshot-1.jpg",
+  "https://raw.githubusercontent.com/EugeneVl/dsh_session_folders/master/assets/screenshot-2.jpg",
+  "https://raw.githubusercontent.com/EugeneVl/dsh_session_folders/master/assets/screenshot-3.jpg"
  ],
  "https://github.com/IceApriler/dsh-remote-mobile": [
   "https://raw.githubusercontent.com/IceApriler/dsh-remote-mobile/master/images/pc-dsh-setting-1.png",
@@ -1302,5 +1308,12 @@
   "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-pet.png",
   "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/pet-emotions.gif",
   "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-model-cost.png"
+ ]
+,
+ "https://github.com/KarlOfLaw/dsh-side-chat": [
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/dsh-side-chat-hero.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-parallel.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-selection.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-settings.png"
  ]
 }
