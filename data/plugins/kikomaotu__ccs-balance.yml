@@ -1,0 +1,6 @@
+url: https://github.com/kikomaotu/ccs-balance
+name: kikomaotu/ccs-balance
+category: usage
+description:
+  en: Sync cc-switch provider balances and track token usage and cost by day, month, or total.
+  zh: 同步 cc-switch 各 provider 余额，按日/月/总量统计 token 用量与花费。
