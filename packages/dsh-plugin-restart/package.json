@@ -13,7 +13,8 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "lib"
+    "lib",
+    "scripts"
   ],
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",

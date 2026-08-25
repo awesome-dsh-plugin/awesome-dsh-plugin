@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { homedir } from "node:os";
 import { readFileSync, statSync, mkdirSync, writeFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import { defineTool } from "@deepseek-ai/dsh-tools";
 
 export const name = "dsh-restart";
@@ -13,7 +14,7 @@ const DEFAULT_DELAY_MS = 3000;
 // the request. Even if a model passes delay_ms (e.g. 15000), it is ignored and
 // replaced with this constant.
 const FIXED_DELAY_MS = 3000;
-const SCRIPT = join(homedir(), "Agent YueJian", "dsh-pouch", "scripts", "dsh-restart.sh");
+const SCRIPT = join(fileURLToPath(new URL("../scripts/", import.meta.url)), "dsh-restart.sh");
 // Written by dsh-restart.sh's failure branches; removed by its success path.
 const FAILURE_MARKER = "restart-failed.json";
 // Stop surfacing a failure notice after this long — the marker may survive if
