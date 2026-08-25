@@ -1,0 +1,7 @@
+url: https://github.com/wssfk12138/dsh-damage-pulse
+name: wssfk12138/dsh-damage-pulse
+category: usage
+description:
+  en: Tracks DeepSeek token usage, per-call and session costs, and account balance with cache-aware charge animations in the DSH Web UI.
+  zh: 在 DSH Web 界面追踪 DeepSeek Token 用量、单次与会话费用及账户余额，并显示缓存感知的扣费动画。
+tarball: https://github.com/wssfk12138/dsh-damage-pulse/releases/latest/download/dsh-damage-pulse-v0.3.0.tgz

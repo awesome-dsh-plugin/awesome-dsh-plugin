@@ -181,10 +181,27 @@ jobs:
               github.rest.checks.create({ owner, repo, name: 'Submission gate', head_sha, status: 'completed', conclusion,
                 output: { title, summary: summary.slice(0, 65000) } })
 
-            if (process.env.NOTHING_TO_CHECK === 'true') {
-              await post('success', 'No entries changed', 'This PR does not add or modify any file under `data/plugins/`.')
-              return
-            }
+              // Read before the early return below, not after it. A PR that only
+              // MODIFIES entries has no added file, so it took that branch and
+              // reported "does not add or modify any file" — false, and it hid the
+              // very list #1348 taught us to surface. Defining it here covers both.
+              const modified = (() => {
+                try { return fs.readFileSync('/tmp/prdata/modified.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
+              })()
+              const modifiedNote = modified.length
+                ? `\n\n**This PR also rewrites ${modified.length} existing entr${modified.length === 1 ? 'y' : 'ies'}:** ${modified.map((m) => `\`${m}\``).join(', ')}. If any of those aren't the subject of this PR, that's an accidental edit — check before merging.`
+                : ''
+
+              if (process.env.NOTHING_TO_CHECK === 'true') {
+                await post(
+                  'success',
+                  modified.length === 0 ? 'No entries changed' : `No new entries; ${modified.length} modified`,
+                  (modified.length === 0
+                    ? 'This PR adds no file under `data/plugins/`.'
+                    : 'This PR adds no new entry under `data/plugins/`, so the age and commit floors have nothing to judge.') + modifiedNote,
+                )
+                return
+              }
 
             let result = null
             try { result = JSON.parse(fs.readFileSync('gate-result.json', 'utf8')) } catch {}
@@ -231,13 +248,6 @@ jobs:
               core.setFailed('gate examined no entries despite changed files')
               return
             }
-
-            const modified = (() => {
-              try { return fs.readFileSync('/tmp/prdata/modified.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
-            })()
-            const modifiedNote = modified.length
-              ? `\n\n**This PR also rewrites ${modified.length} existing entr${modified.length === 1 ? 'y' : 'ies'}:** ${modified.map((m) => `\`${m}\``).join(', ')}. If any of those aren't the subject of this PR, that's an accidental edit — check before merging.`
-              : ''
 
             if (result.ok) {
               // An entry the checker could not reach is let through — a busy
