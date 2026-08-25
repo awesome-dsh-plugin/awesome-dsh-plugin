@@ -144,6 +144,7 @@ dsh plugin --profile web add dshmarket
 - [dannyvan/dsh-file-drop](https://github.com/dannyvan/dsh-file-drop) — 拖拽/点击上传任意非图片文件（PDF/Word/Excel/ZIP/文本）到输入框：桌面壳下直取 Finder 原始路径；无壳时上传到工作区并插入路径。
 - [dcrzsy/dsh-enhance-tool](https://github.com/dcrzsy/dsh-enhance-tool) — DeepSeek Harness Web 一站式界面增强：提示词库（快选+管理）、两步 AI 润色、预测回复栏（点击直接发送）、MCP 工具管理、定时自动化、智能会话标题、对话宽度可调、AI 回复占满无灰底、超长用户消息自动折叠（带平滑展开/收起动效），以及各面板的场景化入场动效。
 - [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) — 在可拖动、透明度可调的目录面板中显示当前对话的工作目录与文件列表。
+- [delaydai/dsh-jumpbar](https://github.com/delaydai/dsh-jumpbar) — DSH Web 用户消息跳转条：对话区右缘 minimap 式横杠条带，悬停预览消息内容、点击跳转置顶、拖拽快速浏览，并带当前视口标记。
 - [demacia1314/dsh-airdrop](https://github.com/demacia1314/dsh-airdrop) — ⭐ 支持拖拽上传：任意文件、整个文件夹，拖到窗口任意位置即可；支持远程上传——字节直传服务器的会话工作区，部署在服务器上的 DSH 也能像本地一样拖了就发。
 - [Devin-AXIS/deepseek-design#deepseek-idesign](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-idesign) — 可视化设计工作室，支持网站、App 原型、海报、信息卡、报告和杂志的模板创建、元素编辑、选区级 AI 草稿衔接与导出。
 - [Devin-AXIS/deepseek-design#deepseek-ivideo](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ivideo) — 可视化视频工作室，支持可编辑时间线、动画和素材控制、27 个模板、整段与选区级 AI 草稿衔接、校验、预览和导出。
