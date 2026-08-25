@@ -1,7 +1,7 @@
 url: https://github.com/lninghaha/dsh-hub-oauth-gateway
 name: lninghaha/dsh-hub-oauth-gateway
 category: usage
-tarball: https://github.com/lninghaha/dsh-hub-oauth-gateway/releases/download/v1.7.2/dsh-hub-oauth-gateway-1.7.2.tgz
+tarball: https://github.com/lninghaha/dsh-hub-oauth-gateway/releases/download/v1.9.0/dsh-hub-oauth-gateway-1.9.0.tgz
 description:
   en: "DSH Web Usage Center with local SQLite history, HUD and dashboard, Hub account/quota snapshots, custom pricing and fee ledger, and CSV/JSON export, plus coding-plan OAuth and an optional loopback OpenAI/Anthropic gateway."
   zh: "DSH Web 用量中心：本地 SQLite 历史、HUD 与仪表盘、Hub 账户与额度快照、自定义定价与订阅费用账本、CSV/JSON 导出，并含 coding 计划 OAuth 与可选回环 OpenAI/Anthropic 网关。"
