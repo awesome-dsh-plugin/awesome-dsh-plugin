@@ -1,0 +1,7 @@
+url: https://github.com/NeoRrrr/dsh-project-skill-paths
+name: NeoRrrr/dsh-project-skill-paths
+category: skill
+tarball: https://github.com/NeoRrrr/dsh-project-skill-paths/releases/download/v0.3.0/dsh-project-skill-paths-0.3.0.tgz
+description:
+  en: Adds project-scoped relative Skill roots with Desktop add/remove settings, local YAML configuration, hot reload, and default blocking of paths outside the project.
+  zh: 为 DSH 添加项目级相对 Skill 根目录，支持在桌面设置中增删路径、使用项目内 YAML 配置和热更新，并默认阻止跳出项目的路径。
