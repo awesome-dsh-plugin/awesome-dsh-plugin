@@ -1968,6 +1968,7 @@ dsh plugin --profile web add dshmarket
 - [jorinyang/dsh-clawshell](https://github.com/jorinyang/dsh-clawshell) — 运行时自愈层：资源控制闭环（策略切换 + 修复升级链）、错误风暴与 fiber 失败洞察、跨会话知识传承，附自愈可视化面板与 7 个工具。
 - [jorinyang/dsh-doctor](https://github.com/jorinyang/dsh-doctor) — DSH 环境诊断、分级修复与一键回滚，附带运行时自愈服务。
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
+- [KeS1Ke/dsh-exit](https://github.com/KeS1Ke/dsh-exit) — 为 DSH Web 设置面板增加带确认的退出栏目，调用宿主 Remote 方法结束 dsh 宿主进程。
 - [keyiadiannao/dsh-restart-button](https://github.com/keyiadiannao/dsh-restart-button) — 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。
 - [kriskite/dsh-network-proxy](https://github.com/kriskite/dsh-network-proxy) — DeepSeek Harness 网络代理管理器：在设置界面即时切换跟随系统 / 手动 / 直连三种模式，立即生效。
 - [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
