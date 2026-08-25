@@ -1,4 +1,8 @@
 {
+ "https://github.com/xuan666-lab/dsh-openrouter-provider-advisor": [
+  "https://raw.githubusercontent.com/xuan666-lab/dsh-openrouter-provider-advisor/main/docs/images/provider-panel.png",
+  "https://raw.githubusercontent.com/xuan666-lab/dsh-openrouter-provider-advisor/main/docs/images/settings-weights.png"
+ ],
  "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
