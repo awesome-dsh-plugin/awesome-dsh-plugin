@@ -1303,4 +1303,11 @@
   "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/pet-emotions.gif",
   "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-model-cost.png"
  ]
+,
+ "https://github.com/KarlOfLaw/dsh-side-chat": [
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/dsh-side-chat-hero.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-parallel.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-selection.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-settings.png"
+ ]
 }
