@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/hookkit
+name: CREAIT-nl/dsh-plugins#hookkit
+category: workflow
+description:
+  en: 'Config-driven lifecycle hooks, including context injection: declare event, handler and outcome in YAML, where the handler is an in-harness tool (MCP included), a shell command or an HTTP endpoint, and the outcome is model-visible context, a denied tool call, or fire-and-forget.'
+  zh: '以配置驱动的生命周期钩子，并支持上下文注入：在 YAML 中声明事件、处理器与结果——处理器可以是进程内工具（含 MCP）、shell 命令或 HTTP 端点，结果可以是模型可见的上下文、拒绝该次工具调用，或触发即忘。'

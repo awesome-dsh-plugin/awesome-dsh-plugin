@@ -1,0 +1,6 @@
+url: https://github.com/Cyning12/dsh-coding-kit
+name: Cyning12/dsh-coding-kit
+category: workflow
+description:
+  en: 'ICVO coding-standards kit for DeepSeek Harness: a bundle plugin that registers tools on load and injects the standards only when apply_coding_standards is called, plus a P0 gate CLI (npx dsh-coding-kit) with G1-G7 process commands, skills install and IDE-block refresh.'
+  zh: 'DeepSeek Harness 的 ICVO 编码规范套件：bundle 插件加载时仅注册工具，须调用 apply_coding_standards 才注入规范；另附 P0 门禁 CLI（npx dsh-coding-kit），含 G1–G7 过程命令、skills install 与 IDE 块刷新。'

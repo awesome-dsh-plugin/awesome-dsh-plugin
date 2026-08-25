@@ -1,0 +1,7 @@
+url: https://github.com/Harzva/dsh-agent-project-sync
+name: Harzva/dsh-agent-project-sync
+category: tools
+description:
+  en: 'Discovers Codex and Claude project directories and registers them as shared DeepSeek Harness workspaces.'
+  zh: '发现 Codex 和 Claude 使用过的项目目录，并将其注册为共享的 DeepSeek Harness 工作区。'
+tarball: https://github.com/Harzva/dsh-agent-project-sync/releases/latest/download/dsh-agent-project-sync-0.1.0.tgz
