@@ -1,0 +1,6 @@
+url: https://github.com/ph4310822/dsh-edex-xry-ui
+name: ph4310822/dsh-edex-xry-ui
+category: theme
+description:
+  en: 'eDEX-UI-style shell over the DSH web GUI themed as an XRY/B1 medical HUD: ECG heartbeat waveform and a rotating radar scan disc on the right bar, power-gen energy-cell meters on the left bar, a DATA TIMELINE scan-log table on the bottom, all in a cyan-on-near-black CRT skin around the original UI.'
+  zh: '以 XRY/B1 医疗 HUD 为主题色的 eDEX-UI 风格 DSH 外壳：右侧 ECG 心电波形与旋转雷达扫描盘、左侧能量条仪表、底部 DATA TIMELINE 扫描日志表，青蓝近黑 CRT 皮肤包裹原始界面。'
