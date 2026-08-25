@@ -63,9 +63,9 @@
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/visual-diff.png"
  ],
  "https://github.com/2768651338/dsh-effort-slider": [
-  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/屏幕截图%202026-08-16%20190943.png",
-  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/屏幕截图%202026-08-16%20190950.png",
-  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/屏幕截图%202026-08-16%20190903.png"
+  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/灞忓箷鎴浘%202026-08-16%20190943.png",
+  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/灞忓箷鎴浘%202026-08-16%20190950.png",
+  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/灞忓箷鎴浘%202026-08-16%20190903.png"
  ],
  "https://github.com/2768651338/dsh-plugin-manager": [
   "https://raw.githubusercontent.com/2768651338/dsh-plugin-manager/main/assets/preview.png"
@@ -1315,5 +1315,9 @@
   "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-parallel.png",
   "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-selection.png",
   "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-settings.png"
+ ],
+ "https://github.com/biggerboy/dsh-conversation-anchors": [
+  "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-hover.png",
+  "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-wave.png"
  ]
 }
