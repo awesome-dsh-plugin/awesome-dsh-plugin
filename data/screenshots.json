@@ -1320,4 +1320,10 @@
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-hover.png",
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-wave.png"
  ]
+,
+ "https://github.com/KarlOfLaw/dsh-goal-mode-enhance": [
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-goal-mode-enhance/main/assets/screenshot-goal-dock.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-goal-mode-enhance/main/assets/screenshot-goal-create.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-goal-mode-enhance/main/assets/screenshot-goal-chip.png"
+ ]
 }
