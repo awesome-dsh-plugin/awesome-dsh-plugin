@@ -1,0 +1,6 @@
+url: https://github.com/hoyyang/dsh-mall
+name: hoyyang/dsh-mall
+category: market
+description:
+  en: Complete #dsh-plugin mall inside DeepSeek Harness: browse, search and score the full GitHub dsh-plugin topic catalog refreshed every 2 hours, AI pre-install review with install/caution/avoid verdicts, five-dimension scores with radar charts, nine-language UI, editor picks and personalized recommendations, one-click install/update/rollback with a global task panel, and an in-agent /dsh-mall skill.
+  zh: DeepSeek Harness 内完整的插件商场：每 2 小时刷新 GitHub #dsh-plugin 全量目录，支持浏览、搜索与评分；AI 装前审查给出装/谨慎/别装结论，五维评分雷达图，九语言界面，编辑精选与个性化推荐，一键安装/更新/回退及全局任务面板，并内置 /dsh-mall skill 在会话中发现插件。
