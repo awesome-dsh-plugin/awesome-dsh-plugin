@@ -1,0 +1,7 @@
+url: https://github.com/WSL043/dsh-native-session-manager
+name: WSL043/dsh-native-session-manager
+category: session
+tarball: https://github.com/WSL043/dsh-native-session-manager/releases/latest/download/dsh-native-session-delete.tgz
+description:
+  en: Manages archived DSH sessions in the native sidebar with conversation search, restore, and confirmed safe permanent deletion.
+  zh: 在 DSH 原生侧边栏中管理归档会话，支持聊天记录搜索、恢复和二次确认的安全永久删除。

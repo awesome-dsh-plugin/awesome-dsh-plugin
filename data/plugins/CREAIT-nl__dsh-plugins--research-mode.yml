@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/research-mode
+name: CREAIT-nl/dsh-plugins#research-mode
+category: workflow
+description:
+  en: 'Deep research as an agent mode: one reviewed loop that plans, researches in adaptive parallel rounds driven by the gaps the researchers themselves declare, synthesises a cited report and then reviews it adversarially, instead of a script the model rewrites per call. Questions the round budget never reached are named in the report rather than dropped.'
+  zh: '把深度研究做成一种代理模式：一条经过审阅的固定循环——先规划，再按研究员自行声明的缺口进行自适应并行轮次，综合出带引用的报告，最后对其做对抗性审阅——而不是让模型每次现写脚本。轮次预算未能覆盖的问题会在报告中被逐一点名，而不是被悄悄丢弃。'

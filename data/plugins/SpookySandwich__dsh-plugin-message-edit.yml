@@ -1,0 +1,6 @@
+url: https://github.com/SpookySandwich/dsh-plugin-message-edit
+name: SpookySandwich/dsh-plugin-message-edit
+category: session
+description:
+  en: Edit a sent message to rewind and branch the conversation from that turn, switch versions with a counter under the bubble, and browse every branch in a turn-level version tree.
+  zh: 编辑已发送的消息即可从该轮次回溯并分叉对话，用气泡下方的计数器切换版本，并在轮次级版本树中浏览所有分支。
