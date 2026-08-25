@@ -1,0 +1,5 @@
+url: https://github.com/MeghanBao/dsh-backstory
+name: MeghanBao/dsh-backstory
+category: git
+description:
+  en: A `/backstory` command and tool that annotate each line with the git commit that last touched it and the agent turn + prompt that wrote it, from a persistent per-line ledger (drift-proof by content hash), DSH-* commit trailers, or the live session log.
