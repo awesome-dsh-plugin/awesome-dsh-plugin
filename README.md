@@ -639,6 +639,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### Models & Providers
 
 - [AdonisSheldon/dsh-openai-oauth](https://github.com/AdonisSheldon/dsh-openai-oauth) - Connect a ChatGPT account to Codex models in DeepSeek Harness through browser PKCE or device-code OAuth, with automatic token refresh and Web or headless login.
+- [alaxrpg/dsh-adaptive-model-router](https://github.com/alaxrpg/dsh-adaptive-model-router) - Adaptive model discovery, evaluation, tiering, and subagent routing for DeepSeek Harness.
 - [amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) - Google Antigravity (agy CLI) models for DSH — streaming chat with Gemini/Claude/GPT-OSS subscriptions, native tool cards, thinking turns, and in-GUI Google OAuth login.
 - [beijingwahw/dsh-proactive](https://github.com/beijingwahw/dsh-proactive) - Proactive multi-model scheduling plugin: multi-source signal intake with dedup and urgency ranking, a four-way execute/defer/dismiss/ask-user decision engine, DAG plan generation with parallel model execution, quality reflection with automatic retry and model switch, long-term memory for task patterns and lessons, and strategy evolution via genetic algorithms with sandboxed evaluation and canary rollout.
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
