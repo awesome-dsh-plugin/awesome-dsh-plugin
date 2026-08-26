@@ -151,22 +151,43 @@ If a check fails it says exactly what to change. Push a fix to the same branch �
 
 ### Screenshots / 截图（optional, recommended / 可选，推荐）
 
-Storefronts (e.g. [dsh-market](https://github.com/dsh-market/dsh-market)'s detail view) show AppStore-style screenshots for your plugin. Add yours to [`data/screenshots.json`](data/screenshots.json), keyed by your entry's GitHub URL — the same URL as your README line — mapping to 1-8 image URLs:
+Storefronts (e.g. [dsh-market](https://github.com/dsh-market/dsh-market)'s detail view) show AppStore-style screenshots for your plugin. **Declare them in your own repository**: add a `screenshots.json` next to your `package.json` (inside the subdirectory, for a monorepo entry), listing 1-8 image paths.
 
-在插件市场（如 [dsh-market](https://github.com/dsh-market/dsh-market) 的详情页）中，你的插件可以像 App Store 一样展示截图。在 [`data/screenshots.json`](data/screenshots.json) 里以你条目的 GitHub URL（与 README 行完全一致）为 key，加入 1-8 张图片 URL：
+在插件市场（如 [dsh-market](https://github.com/dsh-market/dsh-market) 的详情页）中，你的插件可以像 App Store 一样展示截图。**在你自己的仓库里声明**：在 `package.json` 旁边放一个 `screenshots.json`（monorepo 条目放在对应子目录里），列出 1-8 张图片路径。
 
 ```jsonc
-{
- "https://github.com/owner/repo": [
-  "https://raw.githubusercontent.com/owner/repo/main/assets/screenshot-1.png",
-  "https://raw.githubusercontent.com/owner/repo/main/assets/screenshot-2.png"
- ]
-}
+// <your repo>/screenshots.json
+[
+ "assets/screenshot-1.png",
+ "assets/screenshot-2.png"
+]
 ```
 
-- Images must be **https URLs on GitHub hosting** (`raw.githubusercontent.com`, `user-images.githubusercontent.com`, `camo.githubusercontent.com`, `github.com` attachments) — third-party image hosts are rejected by the build for user-privacy reasons. / 图片必须是 **GitHub 托管的 https URL**（`raw.githubusercontent.com` 等）——出于用户隐私考虑，第三方图床会被构建校验拒绝。
-- Keep the images in your own repo (an `assets/` folder works well) so they update with your releases. / 建议把图片放在你自己的仓库里（如 `assets/` 目录），随版本一起维护。
-- No screenshots? Storefronts fall back to extracting images from your README — a maintained entry here just gives you control over order and selection. / 不提交也没关系：市场会从你的 README 自动抽取——这里的条目只是让你能控制展示的顺序与内容。
+Paths are relative to that file, so they point at images already in your repository. `{"screenshots": [...]}` works too if you prefer a named field.
+
+路径相对于该文件本身，指向你仓库里已有的图片。若偏好带字段名，`{"screenshots": [...]}` 同样可用。
+
+**Why in your repo / 为什么放在你自己的仓库**
+
+- You can update screenshots by pushing to your own repository — no pull request here, no waiting on a maintainer. The next nightly build picks them up. / 之后想换截图，推自己的仓库即可，不用再来提 PR、不用等维护者，下一次构建自动生效。
+- A relative path breaks visibly in your own repository if you rename the file. An absolute URL written into a file over here can only rot silently — that is how 41 of the 773 published screenshots became 404s. / 相对路径在你自己仓库里改名就能立刻发现；写死在我们这边的绝对 URL 只会悄无声息地烂掉——已发布的 773 张截图里有 41 张就是这样变成 404 的。
+- Nobody else edits your file, so screenshot submissions stop colliding with each other. / 没有别人会动你这个文件，截图投稿之间不会再互相冲突。
+
+**Rules / 规则**
+
+- 1-8 images. / 1 到 8 张。
+- Absolute URLs are accepted as well, but must be **https on GitHub hosting** (`raw.githubusercontent.com`, `user-images.githubusercontent.com`, `camo.githubusercontent.com`, `github.com` attachments) — third-party image hosts are rejected for user-privacy reasons. / 也接受绝对 URL，但必须是 **GitHub 托管的 https 链接**——出于用户隐私考虑，第三方图床会被拒绝。
+- Relative paths may not leave your plugin's directory (no leading `/`, no `..`). / 相对路径不能跳出插件目录（不能以 `/` 开头，不能含 `..`）。
+- No screenshots? Storefronts fall back to extracting images from your README — declaring them just gives you control over order and selection. / 不声明也没关系：市场会从你的 README 自动抽取——声明只是让你能控制展示的顺序与内容。
+
+<details>
+<summary>Older entries: <code>data/screenshots.json</code> / 旧条目：<code>data/screenshots.json</code></summary>
+
+Entries added before this convention still have their screenshots in [`data/screenshots.json`](data/screenshots.json) here, and those keep working — that file is read whenever a repository declares nothing. It is a fallback with an end date, not a second place to put things: once your repository declares its own `screenshots.json`, your key there is removed as redundant, and the file is deleted when it empties. **Please do not add new keys to it.**
+
+早于这个约定的条目，截图仍然记在本仓库的 [`data/screenshots.json`](data/screenshots.json) 里，照常生效——仓库没有声明时就读它。它是一个有终点的回退，不是第二个存放地：一旦你的仓库自己声明了 `screenshots.json`，那边多余的键会被清理掉，等它空了这个文件就会删除。**请不要再往里面加新的键。**
+
+</details>
 
 ### npm package / npm 包（optional / 可选）
 

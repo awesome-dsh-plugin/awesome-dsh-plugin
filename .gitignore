@@ -19,6 +19,7 @@ data/tarballs.json
 # that list keys the cache, and extending it forces a cold start for every
 # probe at once (#1673). This one costs nothing to rebuild — it hits
 # raw.githubusercontent.com, not the API quota the gate depends on.
+data/screenshots-declared.json
 data/screenshots-live.json
 
 .npm-cache/

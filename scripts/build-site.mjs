@@ -236,6 +236,25 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
 // An entry whose shots all die loses the field entirely rather than shipping an
 // empty array, which is the state every entry had before screenshots existed.
 {
+  // The author's own repository wins. probe-screenshots.mjs reads
+  // `screenshots.json` from beside the plugin's package.json and resolves it to
+  // absolute URLs here; data/screenshots.json above is what every entry that
+  // predates the convention still uses. An author who adopts the file becomes
+  // the single source for their own entry — their key in the legacy file is
+  // then redundant and prune-legacy-screenshots.mjs removes it, so the old file
+  // drains rather than growing a second, competing copy of the same data.
+  const DECLARED_FILE = 'data/screenshots-declared.json'
+  const declaredMap = fs.existsSync(DECLARED_FILE) ? JSON.parse(fs.readFileSync(DECLARED_FILE, 'utf8')) : {}
+  let adopted = 0
+  for (const [key, list] of Object.entries(declaredMap)) {
+    if (!Array.isArray(list) || !list.length) continue
+    if (shotsMap[key] !== undefined) adopted++
+    shotsMap[key] = list
+  }
+  if (Object.keys(declaredMap).length) {
+    console.log(`screenshots: ${Object.keys(declaredMap).length} entry/entries declare their own (${adopted} superseding ${SCREENSHOTS_FILE})`)
+  }
+
   const LIVE_FILE = 'data/screenshots-live.json'
   const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
   let dropped = 0
