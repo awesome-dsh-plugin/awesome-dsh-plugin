@@ -1,7 +1,6 @@
 url: https://github.com/xiaoksio/dsh-solution-explorer
 name: xiaoksio/dsh-solution-explorer
 category: git
-tarball: https://github.com/xiaoksio/dsh-solution-explorer/releases/latest/download/dsh-solution-explorer-0.2.1.tgz
 description:
-  zh: "DSH Web GUI 右侧边栏：VS Code 风格文件浏览器加源代码管理（git 状态、暂存/取消暂存/放弃变更、提交、差异、提交图形、同步抓取/拉取/推送、分支管理、远程管理、Git 初始化、多仓库切换），含可编辑全文差异视图、语法高亮编辑器（15 种语言）、文件操作（新建/移动/复制/删除）与保存。"
-  en: "DSH Web GUI right sidebar: VS Code-style file explorer plus source control (git status, stage/unstage/discard, commit, diff, commit graph, sync fetch/pull/push, branch management, remote management, git init, multi-repo switch) with an editable full-file diff view, a syntax-highlighted editor (15 languages), file operations (new/move/copy/delete), and save."
+  en: "DSH Web GUI right sidebar: VS Code-style file explorer plus source control (git status, stage/unstage/discard, commit, diff, commit graph, sync fetch/pull/push, branch management, remote management, git init, multi-repo switch, color-coded file status (untracked/modified/ignored), file-type icons, image preview) with an editable full-file diff view, a syntax-highlighted editor (15 languages), file operations (new/move/copy/delete), and save."
+  zh: "DSH Web GUI 右侧边栏：VS Code 风格文件浏览器加源代码管理（git 状态、暂存/取消暂存/放弃变更、提交、差异、提交图形、同步抓取/拉取/推送、分支管理、远程管理、Git 初始化、多仓库切换、文件状态着色（未跟踪/已修改/已忽略）、文件类型图标、图片预览），含可编辑全文差异视图、语法高亮编辑器（15 种语言）、文件操作（新建/移动/复制/删除）与保存。"
