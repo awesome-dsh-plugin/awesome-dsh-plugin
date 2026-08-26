@@ -1,0 +1,6 @@
+url: https://github.com/etony668/dsh-task-board
+name: etony668/dsh-task-board
+category: workflow
+description:
+  en: 'Canvas task board ported from CodexFF: hierarchical parent/child tasks with boundaries, snap-aligned draggable panels in a conversation view tab, plus board_*/task_* agent tools and a sync skill.'
+  zh: '移植自 CodexFF 的画布任务看板：父子层级任务树与任务边界，会话「任务看板」tab 内磁吸对齐的可拖拽面板，配套 board_*/task_* 模型工具与同步技能。'
