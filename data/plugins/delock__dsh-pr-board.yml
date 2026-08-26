@@ -1,0 +1,6 @@
+url: https://github.com/delock/dsh-pr-board
+name: delock/dsh-pr-board
+category: git
+description:
+  en: 'Maintainer PR review queue board: five-state tracking (waiting on me / waiting on author / ready to merge / merged / inbox) with sidebar counters, a fullscreen kanban, polling, and back-to-you transition toasts.'
+  zh: '维护者 PR 看板：五状态跟踪（等我行动 / 等作者行动 / 可合并 / 已合并 / 新 PR 待分诊），侧边栏计数、全屏看板、轮询，以及 PR 回到你手上时的迁移提醒。'
