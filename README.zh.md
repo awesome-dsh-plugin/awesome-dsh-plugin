@@ -1545,6 +1545,7 @@ dsh plugin --profile web add dshmarket
 - [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) — 无需等待或打断正在工作的 Agent：即时冻结有界 Session 快照，由隔离且无工具的 LLM 异步总结，再将带来源信息的上下文胶囊投递到另一 Session 或已授权 Room；对 Session 默认 quiet，也可显式 wakeup。
 - [itchenshi/dsh-gui-last-session](https://github.com/itchenshi/dsh-gui-last-session) — 重启 DeepSeek Harness 后自动回到最近一次对话；实现方式是在 DSH 数据目录里保存一个指针文件，不修改引擎文件。
 - [JanEickholt/dsh-asc](https://github.com/JanEickholt/dsh-asc) — 由模型主导的 DeepSeek Harness 上下文压缩：由 agent 决定何时压缩、压缩什么，以持久化会话日志替换提交，并提供可逆的工具结果压缩与逐字节哈希取回。
+- [jarvisluk/dsh-projectless-session](https://github.com/jarvisluk/dsh-projectless-session) — 在 DSH 工作区选择器中添加无工作区会话入口，创建按日期整理的独立目录，并让已开始的会话在未分组区域保持可恢复。
 - [Jason-skd/dsh-session-fork](https://github.com/Jason-skd/dsh-session-fork) — Git 式会话分支，模拟真实程序员协作的并行开发：根分支充当秘书维持调度，子分支持有各自上下文并行工作，任务完成后仅以压缩摘要 squash/rebase 合并回来；提供 /branch 命令、分支页签、send_message_by_branch 跨分支消息，并附一份把会话分支绑定到 git worktree 的治理基线。
 - [JasonQQ/dsh-btw-plugin](https://github.com/JasonQQ/dsh-btw-plugin) — Codex 风格 /btw 指令：在继承主会话上下文的子代理中回答附带问题，答案展示在界面里、不写入主会话历史。
 - [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) — DSH Web UI 的归档会话管理器：重新打开已归档会话并继续对话、取消归档恢复原位、彻底删除会话，支持分组浏览、消息搜索与原生视图同步。
