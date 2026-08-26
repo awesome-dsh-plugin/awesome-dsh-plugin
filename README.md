@@ -2259,6 +2259,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### Just for Fun
 
 - [609476965/dsh-LorebookMD](https://github.com/609476965/dsh-LorebookMD) - Import SillyTavern/TavernAI character cards and world books, save them as local Markdown lore documents, and generate novel prose from your prompts with the world settings as reference.
+- [9livewolf/dsh-think-bounce-pet](https://github.com/9livewolf/dsh-think-bounce-pet) - This plugin lets two deepseek bounce around the interface—it has no real purpose.
 - [Aik358/dsh-draw-gacha](https://github.com/Aik358/dsh-draw-gacha) - Pull a 3D lever next to the send button and turn the model's reasoning signals into a pixel-art gacha reveal.
 - [AmeKrance/anan-thermal-monitor](https://github.com/AmeKrance/anan-thermal-monitor) - Purple-white desktop pet that docks to the screen edge and shows real-time CPU, RAM, GPU and NVMe temperatures with hardware info.
 - [AnacondaKC/dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) - Short-video sidebar: native player, series navigation, precise history replay.
