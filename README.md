@@ -1888,6 +1888,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### Development & Runtime
 
 - [1123762794/dsh-web-restart](https://github.com/1123762794/dsh-web-restart) - One-click restart button for the DSH Web UI: a sidebar footer button that restarts the dsh web process with a single click and persists across the restart it triggers.
+- [173787247/dsh-wsl-env](https://github.com/173787247/dsh-wsl-env) - Injects WSL distro, Linux path mapping, /mnt/c CRLF and git caveats, and NODE_USE_ENV_PROXY into the system prompt.
 - [2008924/dsh-progress-viz#plugin](https://github.com/2008924/dsh-progress-viz/tree/main/plugin) - Real-time stage, ETA & cost dashboard for headless dsh tasks: turns the black-box session event stream into a live multi-task grid (cordis plugin + standalone local dashboard, no API calls).
 - [777-Zen/dsh-capability-index](https://github.com/777-Zen/dsh-capability-index) - Pre-flight plugin-library index for DSH agents: injects per-step trigger-table hints into the runtime context so suitable installed plugins get used predictably instead of opportunistically.
 - [863683348/dsh-plugin-verify](https://github.com/863683348/dsh-plugin-verify) - Verification toolkit for DSH agents: evidence-based claim checking against workspace files with line citations, config validation (JSON/YAML), and read-only URL/npm/GitHub submission-readiness probes.
