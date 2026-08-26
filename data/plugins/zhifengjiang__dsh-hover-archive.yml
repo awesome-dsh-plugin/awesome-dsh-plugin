@@ -1,0 +1,6 @@
+url: https://github.com/zhifengjiang/dsh-hover-archive
+name: zhifengjiang/dsh-hover-archive
+category: ui
+description:
+  en: 'Codex-style session archiving: hovering a sidebar conversation row reveals an Archive icon at the far right; one click archives the session via the official workspace archive API.'
+  zh: Codex 风格会话归档：鼠标悬浮侧边栏会话行时，最右侧浮现 Archive 图标，一键归档会话。

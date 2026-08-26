@@ -1,0 +1,6 @@
+url: https://github.com/biggerboy/dsh-conversation-anchors
+name: biggerboy/dsh-conversation-anchors
+category: ui
+description:
+  en: Codex-style left-gutter tick rail for each user turn, with hover preview and click-to-scroll.
+  zh: 对话区左侧 Codex 风格短横线锚点，悬停预览，点击跳转到对应轮次。

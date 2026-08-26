@@ -1,0 +1,6 @@
+url: https://github.com/rebron1900/dsh-mnemosyne
+name: rebron1900/dsh-mnemosyne
+category: memory
+description:
+  en: 'Mnemosyne memory for DeepSeek Harness: remember / recall / forget / stats / sleep tools, embedded skill, auto-setup, optional auto-sync/prefetch, and a Settings panel. Data lives under ~/.dsh/mnemosyne.'
+  zh: 'Mnemosyne 记忆插件 for DeepSeek Harness：提供 remember / recall / forget / stats / sleep 工具、内嵌技能、Settings 面板和可选的自动记忆功能。'
