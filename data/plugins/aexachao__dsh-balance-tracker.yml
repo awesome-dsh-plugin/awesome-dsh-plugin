@@ -1,5 +1,5 @@
-url: https://github.com/aexachao/dsh-balance-meter
-name: aexachao/dsh-balance-meter
+url: https://github.com/aexachao/dsh-balance-tracker
+name: aexachao/dsh-balance-tracker
 category: usage
 description:
   en: Real DeepSeek account balance and official spend tracker in the session header, with peak/off-peak badge, monetary alert with auto-stop, and one-click top-up.
