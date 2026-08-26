@@ -1,0 +1,7 @@
+url: https://github.com/Harzva/dsh-uvm
+name: Harzva/dsh-uvm
+category: dev
+description:
+  en: 'DSH-native uv environment manager: create, sync and run Python virtualenvs from the settings tab, with pip fallback, read-only conda visibility and a dry-run project sync preview.'
+  zh: 'DSH 原生 uv 环境管理器：在设置面板创建、同步、运行 Python 虚拟环境，pip 回退、conda 只读可见，项目依赖同步带 dry-run 差异预览。'
+tarball: https://github.com/Harzva/dsh-uvm/releases/latest/download/harness-flow-dsh-uvm-0.1.0-alpha.1.tgz

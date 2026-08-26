@@ -1,0 +1,6 @@
+url: https://github.com/sxl19951101/dsh-done-sound
+name: sxl19951101/dsh-done-sound
+category: notify
+description:
+  en: Play a user-chosen sound when a conversation finishes in the DeepSeek Harness web GUI, with interrupt/error switches and a community sound library.
+  zh: 对话完成时播放自选提示音：支持正常完成、中断与出错三种触发开关，附带社区音色库下载。
