@@ -1,0 +1,6 @@
+url: https://github.com/FuqiangCraft/dsh-desktop/tree/main/packages/dsh-desktop-plugin
+name: FuqiangCraft/dsh-desktop#dsh-desktop-plugin
+category: ui
+description:
+  en: Adds desktop companion characters, native notifications, recent-session tray actions, screen capture, and a multi-agent canvas.
+  zh: 提供桌面宠物、原生通知、最近会话托盘操作、屏幕截图与多智能体画布。
