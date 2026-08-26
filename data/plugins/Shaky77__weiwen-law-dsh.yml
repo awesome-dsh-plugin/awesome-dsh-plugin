@@ -1,0 +1,6 @@
+url: https://github.com/Shaky77/weiwen-law-dsh
+name: Shaky77/weiwen-law-dsh
+category: security
+description:
+  en: 'White-box causal guardrail for dsh: every tool call is adjudicated along the causal chain R→S→D→H→M (rigid anchors, break-window, inner-H boundary, first-bug halt, forward deduction) before execution — deterministic, runs fully local, zero API cost, with 6 white-box self-check tools.'
+  zh: '唯稳律白箱因果闸门：每个工具调用执行前沿 R→S→D→H→M 因果链裁决（刚性锚点 / 破窗止损 / 内 H 边界 / 第一 Bug 停机 / 前向推演），确定性规则层、纯本地运行、零 API 成本，附带 6 个白箱自查工具。'
