@@ -1048,6 +1048,7 @@ dsh plugin --profile web add dshmarket
 - [Github-CJX/dsh-tool-imagegen](https://github.com/Github-CJX/dsh-tool-imagegen) — 对话内联生图插件：模型在对话框直接出图，可基于参考图或上次生成结果连续图生图修改，附存储清理。
 - [goecho/dsh-generation](https://github.com/goecho/dsh-generation) — 提供 generation_fork 与 generation_run，用于拷贝 Agent preset 并在新会话上跑任务。
 - [gongyijie85/dsh-repo-setup](https://github.com/gongyijie85/dsh-repo-setup) — 只读仓库体检引导工具（repo_setup_scan）：识别技术栈/测试/文档/git/数据库线索，给出插件、MCP 与卫生文件的安装建议。
+- [GooDAnDReaDY/dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) — 提供 generate_image 工具，可接入 FAL 队列、任意 OpenAI 兼容图像 API 或 ChatGPT/Grok 订阅，并在对话中内联显示结果。
 - [hanyi7867069-create/dsh-content-lab](https://github.com/hanyi7867069-create/dsh-content-lab) — 内容工坊——选题、标题、文案与排期生成工具，直接调用内置 LLM。
 - [Harzva/dsh-agent-project-sync](https://github.com/Harzva/dsh-agent-project-sync) — 发现 Codex 和 Claude 使用过的项目目录，并将其注册为共享的 DeepSeek Harness 工作区。
 - [hccccc01333/dsh-excel-chat#bundle](https://github.com/hccccc01333/dsh-excel-chat/tree/master/bundle) — 在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。
@@ -1351,6 +1352,7 @@ dsh plugin --profile web add dshmarket
 - [FuzzySoul/dsh-free-vision](https://github.com/FuzzySoul/dsh-free-vision) — 免费视觉插件：纯文本模型看图 / OCR / UI / 报错分析，优先免费模型（千问 Qwen3-VL-Flash、豆包、DeepSeek-OCR），设置界面可配置。
 - [gloryxpnv/dsh-tool-vision](https://github.com/gloryxpnv/dsh-tool-vision) — 本地优先的结构化视觉插件：图片交给本地 OpenAI 兼容 VLM，返回 JSON 证据（摘要、逐字 OCR、版面区域、实体/关系、配色、显式不确定项），带反幻觉回退与可选粘贴/上传桥；零云端成本，图片不出本机。
 - [good-boy4069/dsh-vision-guard](https://github.com/good-boy4069/dsh-vision-guard) — 纯文本路由的透明图片护栏：贴图不再 400 卡死会话，附带 vision_analyze 工具（OCR/PDF/docx/pptx/视频）。
+- [GooDAnDReaDY/dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) — 将图片交给所选的视觉模型处理（自动改写、显式工具或混合模式），使纯文本聊天模型也能处理包含图片的对话。
 - [GOU-GEE/deepseek-vision#plugins/dsh-plugin-deepseek-vision](https://github.com/GOU-GEE/deepseek-vision/tree/main/plugins/dsh-plugin-deepseek-vision) — 面向纯文本 DeepSeek 的视觉 MCP + DSH 插件：analyze_image / analyze_clipboard / compare_images / vision_status 四个工具、可视化配置页、默认免费 GLM-4.6V-Flash、结果缓存与限流容错，Key 不入日志。
 - [GXX182/dsh-vision-bridge](https://github.com/GXX182/dsh-vision-bridge) — 将会话图片转交可配置视觉服务，并向符合条件的 DeepSeek Harness 模型路由返回纯文本分析。
 - [haiziyao/dsh-vision-mix](https://github.com/haiziyao/dsh-vision-mix) — 把文本、识图和生图 API 组合成一个 Mix 模型并按对话内容自动路由：纯文本走聊天模型，用户图片和 Agent 截图走识图模型，后续可继续追问同一张图；还支持图片生成与编辑及会话级调用记录。
@@ -1420,6 +1422,7 @@ dsh plugin --profile web add dshmarket
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) — 对话完成提醒：Agent 空闲（idle）时播放提示音并弹 Windows 原生通知，可配 ding.mp3、音量与防抖节流。
 - [february2015/dsh-dingo](https://github.com/february2015/dsh-dingo) — 多对话并行的声音提醒 + 对话直达：当前对话当/当当（crisp 清脆档），其他对话叮/叮叮（soft 柔和档）+ 右上角小卡片，点一下直达对应对话。
 - [FuzzySoul/dsh-chatvoice](https://github.com/FuzzySoul/dsh-chatvoice) — Web UI 免费语音闭环：浏览器语音识别输入（实时中间结果上屏）+ 助手回复朗读与自动朗读，零配置、免 API key。
+- [GooDAnDReaDY/dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) — Web UI 语音输入：按停顿分段的听写与语音消息，各自拥有独立的服务商回退链（Deepgram、Groq、HuggingFace、本地 whisper.cpp 或 OpenAI 兼容接口）。
 - [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI 全双工语音对话：点按切换或按住说话（发送键或 `Ctrl`）并显示实时字幕，宿主端 SenseVoice（sherpa-onnx）转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
