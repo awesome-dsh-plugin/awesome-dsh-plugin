@@ -1708,6 +1708,7 @@ dsh plugin --profile web add dshmarket
 ### 🔀 Git 与代码评审
 
 - [7dgroup-ai/dsh-skill-7d-git-commit](https://github.com/7dgroup-ai/dsh-skill-7d-git-commit) — 提交前按 7DGroup 规范校验 git commit message（中文类型标签、长度与标点规则），作为 GitLab pre-receive 钩子的客户端前置校验。
+- [alpacachen/dsh-worktree](https://github.com/alpacachen/dsh-worktree) — 极简 worktree 管理方案，只有一个按钮和一个弹窗。
 - [andyfan1094/dsh-github](https://github.com/andyfan1094/dsh-github) — Web GUI 的 GitHub 账号与本地 Git 工作流插件，支持 clone、快进 pull、status、commit、push，推送默认关闭并有宿主侧开关保护。
 - [BrambleXu/dsh-revdiff](https://github.com/BrambleXu/dsh-revdiff) — DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。
 - [Cerbur/clutch-dsh#clutch-dsh-worktree](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree) — 为 DSH Web UI 增加按 Git Worktree 组织 Session 的视角，同时继续由 DSH 管理原始 Project 和 Session 数据。
