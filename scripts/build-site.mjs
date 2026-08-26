@@ -224,6 +224,31 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
   if (shotsBroken) process.exit(1)
 }
 
+// Everything above checks the shape of a screenshot URL and the host it points
+// at. Nothing there asks whether the image is actually served, so a 404 passed
+// the PR check, passed the gate, merged, and shipped as a broken picture in
+// every storefront — 41 of 773 were in that state when the probe first ran.
+// probe-screenshots.mjs asks; this drops what it found gone.
+//
+// Absent verdict means live, deliberately: a URL the probe never reached (5xx,
+// throttle, or a run that did not happen) must keep publishing. Only a recorded
+// `ok: false` — which the probe writes for 404/410 alone — removes an image.
+// An entry whose shots all die loses the field entirely rather than shipping an
+// empty array, which is the state every entry had before screenshots existed.
+{
+  const LIVE_FILE = 'data/screenshots-live.json'
+  const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
+  let dropped = 0
+  for (const [key, list] of Object.entries(shotsMap)) {
+    if (!Array.isArray(list)) continue
+    const live = list.filter((shot) => verdicts[shot]?.ok !== false)
+    dropped += list.length - live.length
+    if (live.length) shotsMap[key] = live
+    else delete shotsMap[key]
+  }
+  if (dropped) console.log(`screenshots: dropped ${dropped} image(s) confirmed 404/410 by probe-screenshots.mjs`)
+}
+
 // derive repo/subdir install specs and the detail-page slug once
 for (const e of ordered) {
   const repoPath = e.url.replace('https://github.com/', '')
