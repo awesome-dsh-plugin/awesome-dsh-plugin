@@ -1,5 +1,5 @@
 url: https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-plan-api
-name: volcengine/ark-cli#ark-plan-api
+name: "@volcengine/ark-plan-api"
 category: model
 tarball: https://github.com/volcengine/ark-cli/releases/download/dsh-plugins%2Fv0.1.0/ark-plan-api.tgz
 description:

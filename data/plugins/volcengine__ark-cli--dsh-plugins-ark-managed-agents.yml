@@ -1,5 +1,5 @@
 url: https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-managed-agents
-name: volcengine/ark-cli#ark-managed-agents
+name: "@volcengine/ark-managed-agents"
 category: tools
 tarball: https://github.com/volcengine/ark-cli/releases/download/dsh-plugins%2Fv0.1.0/ark-managed-agents.tgz
 description:
