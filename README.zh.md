@@ -2134,6 +2134,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security) — 安全审计方法论技能包 + plugin_vet 供应链门禁：八个 agent 技能（密钥扫描、依赖审计、供应链评审、提示注入审查、审计总编排、威胁建模、漏洞情报、事件响应），中英双版本，附 npm provider 包一键挂载并注册自动化 plugin_vet 安装前扫描。
 - [SARTHAK2511/dsh-cve-audit](https://github.com/SARTHAK2511/dsh-cve-audit) — 面向你自己项目依赖（npm/pip/go）的实时 CVE/供应链审计，基于 OSV.dev，提供 `cve_audit` 工具，并支持在 lockfile 变化时自动重新扫描。
 - [sashankh/dsh-taintguard](https://github.com/sashankh/dsh-taintguard) — 当工具结果包含不可信内容时将代理标记为已污染，对随后的高权限调用进行拦截，并在所有模式下拒绝将凭据传递给可联网的工具。
+- [SeaOf0/dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) — 面向授权安全研究的 DSH 合集：九个工作模式（redteam 总控、渗透测试、代码审计、二进制分析、攻防评估、免杀对抗、应急溯源、云安全攻防、CTF 解题）与十五个运行时插件，设置页管理台支持一键部署、安装、更新与卸载。
 - [sensedeal/cue-skills#cue-omni-reader-guard](https://github.com/sensedeal/cue-skills/tree/main/dsh/cue-omni-reader-guard) — 面向 DeepSeek Harness 的 mcp__omni__parse 加固护栏：tools/pre-execute 监听器拒绝私网/保留主机（SSRF），施加白名单或 ask（同意），allowedRoots 为空时 fail-closed。
 - [SeverusZh/dsh-yolo-mode](https://github.com/SeverusZh/dsh-yolo-mode) — 沙箱升权申请的 LLM 自动审批：内置预设，fail-closed 兜底。
 - [shaoshi20/dshscan](https://github.com/shaoshi20/dshscan) — DSH 插件安全扫描器：对插件源码做静态与语义双通道检查，内置 DSH 特有攻击面规则，集成 npm audit，支持批量扫描，输出带严重等级与证据的 HTML 报告。
