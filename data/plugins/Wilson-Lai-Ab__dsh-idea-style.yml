@@ -1,0 +1,6 @@
+url: https://github.com/Wilson-Lai-Ab/dsh-idea-style
+name: Wilson-Lai-Ab/dsh-idea-style
+category: ui
+description:
+  en: 'Aggregator that installs and mounts a fixed set of DSH plugins in one add: better-sidebar, smooth-stream, genui, vision-router, at-file, file-search, skills-manager, superpowers, team-skills, routing-suite, local-history, and session-desk.'
+  zh: 聚合包：一次安装并挂载固定的一组 DSH 插件，包括侧栏、流式渲染、GenUI、视觉工具、路径引用、文件搜索、技能、路由、本地历史与会话桌面。
