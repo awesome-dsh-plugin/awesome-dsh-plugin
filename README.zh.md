@@ -357,6 +357,7 @@ dsh plugin --profile web add dshmarket
 - [WilliamShi666/dsh-wsl-workspace-picker](https://github.com/WilliamShi666/dsh-wsl-workspace-picker) — Web UI 增强版工作区目录选择器：WSL 下 /mnt Windows 盘符一键直达、完整面包屑层级与常显路径输入框。
 - [winditer/dsh-elf](https://github.com/winditer/dsh-elf) — DSH 页面悬浮的半透明 DeepSeek 鲸鱼小精灵：点击打开可拖动、可最小化的临时聊天浮窗，支持跟随会话模型或自定义 OpenAI 兼容端点实时流式输出。
 - [winditer/dsh-prompt-optimizer](https://github.com/winditer/dsh-prompt-optimizer) — 在输入框按 ✨ 或 Alt+O 一键把草稿润色成更清晰、更结构化的 prompt；默认零配置复用当前会话模型（SSE 真流式、推理过程先出），也可自配任意 OpenAI 兼容端点。
+- [WindyPro-rourou/dsh-code-studio](https://github.com/WindyPro-rourou/dsh-code-studio) — DSH Web UI 的文件修改监视器与代码工作台。Agent 修改代码时实时浮现逐行 Diff，内置语法高亮编辑器，支持一键还原、修改历史、工作区切换与按会话隔离。
 - [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) — 左侧用户轮次导航轨道：随阅读位置高亮，悬停预览单轮指标与模型回答摘要，支持键盘和点击跳转及本地会话搜索。
 - [Winter-And-You-Gone/dsh-deep-verbs](https://github.com/Winter-And-You-Gone/dsh-deep-verbs) — 把内置 'Deep diving...' 思考状态行扩展为 53 条 deep 系英/中双语短语池：回合开场随机一条，随新思考段/工具调用事件轮换（最短间隔 3 秒），点击状态行切换中英文。
 - [Winter-And-You-Gone/dsh-turn-fold](https://github.com/Winter-And-You-Gone/dsh-turn-fold) — 自动折叠工具调用与 Think 段，回合结束后整回合收成一个大组头，实时显示耗时、token 消耗、tok/s 及缓存命中率等指标。
