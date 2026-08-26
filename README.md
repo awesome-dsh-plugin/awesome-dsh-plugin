@@ -634,6 +634,7 @@ dsh plugin --profile web add dshmarket
 
 - [wqty123/dsh-browser](https://github.com/wqty123/dsh-browser) - Shared real browser for DSH: a native Electron window the human can watch and take over, driven by the agent over CDP with 20 browser_* tools (open/snapshot/execute/fill/screenshot/download/auth), per-task session isolation, cookie persistence, CAPTCHA detection; self-hosts on plain dsh web without a desktop shell.
 
+- [Yvesgao/dsh-env-profile](https://github.com/Yvesgao/dsh-env-profile) - Global experience archive for DeepSeek Harness: probes local tools (with versions and PATH-first hits), convenient paths, network latency and disk speed; folds per-session stats from session/event; LLM-extracts durable facts; env_profile tool with remember; byte-stable summary injected every turn to speed up sessions and cut token use.
 - [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) - Auto-supplement QMD semantic search when the model greps/globs a knowledge-base directory: zero-dependency DSH plugin, async injection via next-step, no manual invocation.
 ### Skills
 
