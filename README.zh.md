@@ -1461,6 +1461,7 @@ dsh plugin --profile web add dshmarket
 - [sudoprivacy/dsh-shareone-plugin](https://github.com/sudoprivacy/dsh-shareone-plugin) — 将 TXT、Markdown、HTML、PDF、Word 和 PowerPoint 文件发布为 ShareOne 分享链接，支持访问密码、水印、文本页面更新和 TXT/Markdown/HTML 评论。
 - [tt-a1i/archify#integrations/deepseek-harness](https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness) — 从仓库或系统描述生成经过校验的自包含交互式架构图、流程图、时序图、数据流图和生命周期图。
 - [Whatsmore-nf/dsh-pdf-edit](https://github.com/Whatsmore-nf/dsh-pdf-edit) — 面向 PDF 文档的编辑插件,精确编辑PDF文字
+- [wx971025/dsh-openspec](https://github.com/wx971025/dsh-openspec) — 在 Web UI 会话标题栏打开当前项目的 openspec/ 目录，浏览、预览、编辑并保存其中的文件，自动跟随会话工作区。
 - [zhtx2024/dsh-pdf](https://github.com/zhtx2024/dsh-pdf) — DSH 的 PDF 解析工具：pdf_info、pdf_extract_text、pdf_render_page 三件套，pdfjs 与自研渲染器双引擎，未内嵌 CJK 字体的 PDF 也能用系统字体渲染出图。
 - [zjsthmjialin/inspiration-deck-workshop#dsh-inspiration-deck-workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop/tree/master/dsh-inspiration-deck-workshop) — 注册灵感演示工坊技能：本地静态 HTML 演示文稿（6 套 deck 模板、25+ 布局、23 套主题与动效展示馆），带 validate 校验与 PNG/PDF 导出 CLI 和 smoke 测试，零运行时依赖。
 - [zjsthmjialin/pdf-background-gray-codex-skill#dsh-pdf-background-gray](https://github.com/zjsthmjialin/pdf-background-gray-codex-skill/tree/main/dsh-pdf-background-gray) — 注册 remove-pdf-background-gray 技能：去除扫描 PDF 的灰色/米白底色，保持分辨率、页面几何与抗锯齿文字边缘（无损 Flate 写回），核心为单文件 Python 脚本（pypdf + Pillow + numpy）。
