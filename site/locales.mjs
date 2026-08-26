@@ -57,6 +57,7 @@ export default [
     COPY_LABEL: 'Copy install command',
     COPY_TEXT: 'copy install',
     categories: {
+      agi: 'AGI Architecture Exploration',
       ui: 'UI Enhancements',
       usage: 'Usage & Billing',
       theme: 'Themes & Appearance',
@@ -166,6 +167,7 @@ export default [
     COPY_LABEL: '复制安装命令',
     COPY_TEXT: '复制安装命令',
     categories: {
+      agi: 'AGI 架构探索',
       ui: 'UI 增强',
       usage: '用量与计费',
       theme: '主题与外观',
