@@ -1,0 +1,6 @@
+url: https://github.com/TussalZeus18028/dsh-conflict-checker
+name: TussalZeus18028/dsh-conflict-checker
+category: dev
+description:
+  en: "Scans the DSH loader tree for plugin conflicts and runtime issues (duplicate mounts, failed or pending fibers, duplicate settings namespaces, duplicate tool names, boot-graph problems, duplicate typert packages), and manages plugins (enable, disable, uninstall) from a settings page."
+  zh: "扫描 DSH 加载器中的插件冲突与运行问题(重复挂载、启动失败或依赖等待、设置命名空间与工具名重复、前端加载图问题、反射包重复),并在设置页提供插件管理(启用、禁用、卸载)。"
