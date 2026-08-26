@@ -340,6 +340,7 @@ dsh plugin --profile web add dshmarket
 - [tsonglew/dsh-workspace-search](https://github.com/tsonglew/dsh-workspace-search) — VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。
 - [tuogusa/dsh-word-complete](https://github.com/tuogusa/dsh-word-complete) — 输入框词自动补全：按前缀匹配与接近程度排序弹出当前会话词建议，↑/↓ 选择、回车确认。
 - [TZHR-invest/dsh-plugins#dsh-mobile-ui](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui) — Web GUI 移动端适配：窄屏全宽响应式布局、会话抽屉、44px 触摸目标、安全区适配与阅读增强，桌面端零影响。
+- [uckkk/dsh-valley-meter](https://github.com/uckkk/dsh-valley-meter) — 峰谷电表——波谷倒计时小组件：24 小时时间轴上的峰谷时段与按小时消耗方块阵列、官方账户余额、今日花费；内置 10 套沉稳配色预置（One Dark/Dracula/Nord/Tokyo Night/Gruvbox/Solarized + 中国传统色/潘通），默认极简卡片，全中文界面。
 - [uigdwunm/dsh-process-fold](https://github.com/uigdwunm/dsh-process-fold) — 把每轮 DSH Web 会话中的思考、工具调用和上下文合并为可展开的过程框，默认显示最新两项，同时把用户对话、交互式提问和最终回答留在框外。
 - [UndeadSheep/dsh-file-preview#dsh-file-preview](https://github.com/UndeadSheep/dsh-file-preview/tree/main/packages/dsh-file-preview) — Web 客户端悬浮文件预览窗：懒加载文件树、CodeMirror 预览与窗内编辑保存、Markdown 与图片预览、Quick Open 搜索，以及点击会话中的路径直接打开。
 - [urzeye/dsh-outline](https://github.com/urzeye/dsh-outline) — DSH Web 会话页实时大纲面板：「用户问题 + Markdown 标题（1~6 级）」大纲树，流式生成时实时更新，点击节点滚动定位并高亮，支持展开深度调节、搜索与会话级收藏。
