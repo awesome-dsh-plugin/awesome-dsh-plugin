@@ -712,7 +712,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) - Zero-cost access to 6 free large models. No registration, no recharge, 6 free models built-in, multi-key rotation and rate-limit backoff.
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) - Connects ChatGPT accounts through OAuth, switches among them manually or automatically, and adds Codex models with usage limits to DeepSeek Harness.
 - [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) - Maps a stable agent_key to an exact provider/model pair declared in role Markdown front matter, validates the pair against the live DSH model registry before spawning, and maintains per-workspace prefercmd and memory evolution files.
-- [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card for the DSH LLM auto-retry engine (retry count, backoff, jitter) plus configurable retryableCodes chips - defaults add INVALID_REQUEST so OpenAI-style HTTP 400 reasoning_text errors get retried automatically.
+- [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card for the DSH LLM auto-retry engine: tune retry count, backoff and jitter live from Settings -> General, with configurable retryableCodes chips - defaults add INVALID_REQUEST so OpenAI-style HTTP 400 reasoning_text errors in thinking mode get retried automatically.
 
 ### Identity & Communication
 
