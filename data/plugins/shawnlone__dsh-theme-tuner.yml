@@ -2,5 +2,5 @@ url: https://github.com/shawnlone/dsh-theme-tuner
 name: shawnlone/dsh-theme-tuner
 category: theme
 description:
-  en: Customize the DSH interface theme under Appearance by adjusting accent, background, foreground and contrast for the active light/dark theme, applied live through theme token overrides.
-  zh: 在「外观」下方自定义 DSH 界面主题：针对当前浅/深主题调整强调色、背景、前景与对比度，并通过主题 token 实时生效。
+  en: Add a theme-adjustment panel under Appearance to customize accent, background, foreground, contrast and gradient, applied live through theme token overrides.
+  zh: 在「外观」下增加一个主题调节面板，可自定义强调色/背景色/前景色/对比度/渐变度，并实时生效。
