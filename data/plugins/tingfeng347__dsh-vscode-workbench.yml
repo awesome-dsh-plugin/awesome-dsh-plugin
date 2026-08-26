@@ -1,0 +1,6 @@
+url: https://github.com/tingfeng347/dsh-vscode-workbench
+name: tingfeng347/dsh-vscode-workbench
+category: ui
+description:
+  en: VS Code-style local workbench for DSH with a file explorer, Monaco editor, full-text search and a Git panel.
+  zh: 为 DSH 提供 VS Code 风格的本地工作台，含文件资源管理器、Monaco 编辑器、全文搜索与 Git 面板。

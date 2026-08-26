@@ -334,6 +334,7 @@ dsh plugin --profile web add dshmarket
 - [taxueseek/dsh-files](https://github.com/taxueseek/dsh-files) — 文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。
 - [TecFancy/dsh-mobile](https://github.com/TecFancy/dsh-mobile) — DSH Web 移动端适配插件：侧边栏/详情抽屉浮层化、输入栏与设置页响应式适配，桌面零回归。
 - [TianYa-DAO/dsh-wallpaper-engine#plugin](https://github.com/TianYa-DAO/dsh-wallpaper-engine/tree/main/packages/dsh-wallpaper-engine) — 面向 DSH 桌面壳的 Wallpaper Engine 本地库、背景层、原生 Scene 面板与桌面模式控件。
+- [tingfeng347/dsh-vscode-workbench](https://github.com/tingfeng347/dsh-vscode-workbench) — 为 DSH 提供 VS Code 风格的本地工作台，含文件资源管理器、Monaco 编辑器、全文搜索与 Git 面板。
 - [tipoLi5890/dsh-file-mention](https://github.com/tipoLi5890/dsh-file-mention) — 输入框内 session 范围的 @文件/@文件夹提及：Git 感知索引、拖放与粘贴受管上传、经校验的路径标记。
 - [tsonglew/dsh-media-preview](https://github.com/tsonglew/dsh-media-preview) — better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。
 - [tsonglew/dsh-workspace-search](https://github.com/tsonglew/dsh-workspace-search) — VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。
