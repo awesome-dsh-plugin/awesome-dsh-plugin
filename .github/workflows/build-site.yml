@@ -128,6 +128,13 @@ jobs:
           # submission can 404 later without anyone touching the entry, and the
           # set is small enough that there is no reason to sample it (#1619).
           node scripts/probe-tarballs.mjs
+          # Same reasoning, same shape, for screenshots. The PR check validates
+          # that an image URL is well-formed and on GitHub's hosting, never that
+          # it resolves — so a dead link merged clean and published as a broken
+          # picture in the storefront. 41 of 773 were dead the first time anyone
+          # asked. Neither probe blocks the build: a dead URL is dropped from
+          # the published data, not turned into a failure.
+          node scripts/probe-screenshots.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
