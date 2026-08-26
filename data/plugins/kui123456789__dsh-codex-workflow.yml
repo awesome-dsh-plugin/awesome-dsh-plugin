@@ -4,4 +4,4 @@ category: workflow
 description:
   en: Coordinates Codex planning and independent review while the original DSH session implements and tests changes.
   zh: 协调 Codex 制定计划和独立审查，由 DSH 原会话完成代码修改与测试。
-tarball: https://github.com/kui123456789/dsh-codex-workflow/releases/latest/download/dsh-codex-workflow-1.0.5.tgz
+tarball: https://github.com/kui123456789/dsh-codex-workflow/releases/latest/download/dsh-codex-workflow-1.0.6.tgz
