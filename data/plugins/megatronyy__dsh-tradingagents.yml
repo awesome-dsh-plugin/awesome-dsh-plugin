@@ -4,4 +4,4 @@ category: tools
 description:
   en: A-share multi-agent analysis behind /trading-agent, ported from TradingAgents-AShare, running 14 roles (analysts, bull/bear debate, risk review, trader) through the harness LLM route.
   zh: /trading-agent 命令背后的 A 股多智能体分析，移植自 TradingAgents-AShare：14 个角色（分析师、多空辩论、风控、交易员）经 dsh 已配置的模型路由协作产出完整投研报告。
-tarball: https://github.com/megatronyy/dsh-tradingagents/releases/download/v0.2.0/dsh-tradingagents-0.2.0.tgz
+tarball: https://github.com/megatronyy/dsh-tradingagents/releases/download/v0.3.0/dsh-tradingagents-0.3.0.tgz
