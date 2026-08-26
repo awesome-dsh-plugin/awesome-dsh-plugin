@@ -1,0 +1,6 @@
+url: https://github.com/ZiFan1117/bazidiy/tree/main/packages/ontology
+name: ZiFan1117/bazidiy#ontology
+category: tools
+description:
+  en: Deterministic bazi/wuxing/bead rules as dsh tools, plus bracelet SVG rendering and a bead editor.
+  zh: 确定性八字排盘、喜用神与珠子匹配规则工具，附带手串 SVG 渲染与换珠编辑器。
