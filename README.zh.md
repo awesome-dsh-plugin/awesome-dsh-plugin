@@ -1388,6 +1388,7 @@ dsh plugin --profile web add dshmarket
 - [niuniuaba/dsh-subagent-vision](https://github.com/niuniuaba/dsh-subagent-vision) — 让纯文本 DeepSeek 代理在同一会话内读图：委派给视觉子代理，发送时自动把图片转为文件路径。
 - [niyongsheng/free-vision-skill](https://github.com/niyongsheng/free-vision-skill) — 基于 macOS Vision Framework 的全本地识图插件：`ocr_image`（文字提取，表格结构+坐标）与 `view_image`（场景/人脸/二维码）；web 输入框可直接粘贴多张图片，图片永不离开你的 Mac。
 - [NormanFxxkingRockwell/dsh-auto-vision](https://github.com/NormanFxxkingRockwell/dsh-auto-vision) — 为纯文本 DeepSeek Harness 主模型搭视觉桥：自动从已配置模型中挑选多模态模型，通过 vision 工具把图片描述以纯文本返回。
+- [ns-zzj/dsh-hos-scrcpy](https://github.com/ns-zzj/dsh-hos-scrcpy) — 在 DSH 网页中投屏并控制鸿蒙手机，实时 H.264 投屏、鼠标触控、系统按键、hilog 日志，并可逐次让 AI 识别手机屏幕。
 - [Okkay712/DSH-dseyes](https://github.com/Okkay712/DSH-dseyes) — 为纯文本 DeepSeek 提供原生图片上传体验：在 Web GUI 粘贴/拖入图片即以缩略图附件进入会话，发送前由 host 用免费智谱 GLM-4V-Flash 视觉 API（glm-4v-flash 降级链）读取并替换为文字描述，DeepSeek 据此回答，原图保留在聊天历史中。
 - [paicat1/dsh-screenshot](https://github.com/paicat1/dsh-screenshot) — DeepSeek Harness (dsh) 的独立截图工具。浏览器快捷键一键截图，并提供面向智能体的截图加读取能力，让智能体能看到并分析任意屏幕区域。
 - [poiuyjie/dsh-vision-opencode](https://github.com/poiuyjie/dsh-vision-opencode) — 给纯文本主模型加可配置识图模型：vision_read_image 工具、输入框识图模型选择器，以及纯文本路由的图片自动转文字。
