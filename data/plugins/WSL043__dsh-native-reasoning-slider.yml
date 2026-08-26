@@ -1,0 +1,6 @@
+url: https://github.com/WSL043/dsh-native-reasoning-slider
+name: WSL043/dsh-native-reasoning-slider
+category: ui
+description:
+  en: Adds a model-aware reasoning effort slider with native and animated modes, light and dark palettes, and per-model colors.
+  zh: 为模型添加推理强度滑块，支持原生与动画模式、明暗配色和按模型配色。
