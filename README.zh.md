@@ -1042,7 +1042,7 @@ dsh plugin --profile web add dshmarket
 - [fashionmascherine-svg/dsh-polymarket-knowhow](https://github.com/fashionmascherine-svg/dsh-polymarket-knowhow) — Polymarket toolkit for DeepSeek Harness and Claude Code: market-data tools for Gamma/CLOB/Data-API (31 model tools in DSH; read-only subset exposed over MCP), opt-in authenticated trading tools, WebSocket stream service, and an embedded Polymarket knowhow skill.
 - [fire-disposal/dsh-mojibake-interceptor](https://github.com/fire-disposal/dsh-mojibake-interceptor) — DSH 乱码拦截器 bundle：写入前特征值/编码回环检测乱码并复查放行（原样重试即通过），pwsh 写入编码执行前审计（ANSI/GBK/UTF-16/默认编码），Windows 与中文场景优先。
 - [Fish121380/auto-mouse](https://github.com/Fish121380/auto-mouse) — 面向 Codex、DeepSeek Harness 和 MCP 客户端的 Windows 桌面 UI 上下文取景器：选择窗口、UI 元素或屏幕区域，使用悬停高亮、UI Automation、截图和本机 OCR，并在输出前确认 Markdown/JSON 上下文。
-- [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) — 一键提示词增强：独立 LLM 调用把模糊草稿改写为更强的提示词，不满意可撤回。
+- [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) — 一键提示词增强（5 模式·记忆链·模型链）+ 语音识别（云端 Qwen3-ASR / 本地 SenseVoice 离线，说完自动停），附服务异常一键重启。
 - [flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) — 多机远程工作区：管理多台 SSH 主机，在原生「添加工作区」流程里选本机系统文件夹或远程目录，把远程工作区镜像成真实本地文件夹并用 rw_* 工具操作。选择器是居中弹窗，默认落在本机页签，远程路径自动预填 `/` 并逐级自动补全目录。
 - [Fro2en12/dsh-download-progress](https://github.com/Fro2en12/dsh-download-progress) — 下载进度面板：URL 下载器、agent shell/SSH 传输追踪与工作区黑箱文件增长监控，汇聚到可拖拽浮窗实时显示字节、速度、百分比与预计剩余时间。
 - [geml-spec/geml#integrations/dsh-plugin](https://github.com/geml-spec/geml/tree/main/integrations/dsh-plugin) — 按块寻址的文档读写：MCP server 提供 geml_get / geml_set / geml_check 等工具，Agent 只取回或改写 Markdown、GEML 文档中的某一个块，而不是整篇文件。另带 GEML 写作技能，以及把项目调用图构建为 GEML codemap 并浏览的代码图谱技能。
