@@ -1,5 +1,13 @@
 {
- "https://github.com/fengb3/dsh-session-icons": [
+ "https://github.com/jiang12345-code/dsh-multi-role-debate": [
+
+  "https://raw.githubusercontent.com/jiang12345-code/dsh-multi-role-debate/main/docs/debate.png",
+
+  "https://raw.githubusercontent.com/jiang12345-code/dsh-multi-role-debate/main/docs/config.png",
+
+  "https://raw.githubusercontent.com/jiang12345-code/dsh-multi-role-debate/main/docs/result.png"
+
+ ], "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
  "https://github.com/GreenLv/dsh-session-insights": [
