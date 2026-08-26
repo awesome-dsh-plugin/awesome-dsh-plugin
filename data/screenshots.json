@@ -1319,5 +1319,15 @@
  "https://github.com/biggerboy/dsh-conversation-anchors": [
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-hover.png",
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-wave.png"
+ ],
+ "https://github.com/gjj-star/dsh-conversation-navigator": [
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/01-main.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/02-steps.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/03-no-round.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/04-minimal.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/05-search-n-hover.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/06-dark.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/07-theme1-preview.png",
+  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/08-theme2-preview.png"
  ]
 }
