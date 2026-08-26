@@ -90,10 +90,61 @@ const HEADERS = { accept: 'application/vnd.github+json', authorization: `Bearer 
 
 const gateApplies = !PR_CREATED || new Date(PR_CREATED) >= new Date(GATE_EFFECTIVE_FROM)
 
-async function api(pathname, { raw = false } = {}) {
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+
+// GitHub answers 403 to two unrelated questions: "may this token see that
+// repository" and "have you asked too fast". The second kind comes in two
+// flavours — a primary quota (x-ratelimit-remaining: 0, resets on the hour)
+// and a secondary/abuse limit from a burst, which sets retry-after and clears
+// in about a minute. The gate treated all three identically and gave up on the
+// first response, which is how eight submissions came to sit unverified on
+// 2026-08-25 naming nine repositories that were public and reachable the whole
+// time. Nothing was wrong with any of them; the gate simply asked during a
+// squeeze and reported "nothing checked".
+//
+// Retry only what a retry can fix, and wait exactly as long as GitHub asks.
+// A permission 403 carries neither header and is returned immediately, because
+// asking again would just spend another request to be told the same thing.
+const retryDelay = (r) => {
+  const after = Number(r.headers.get('retry-after'))
+  if (Number.isFinite(after) && after > 0) return after * 1000 + 1000
+  if (r.headers.get('x-ratelimit-remaining') === '0') {
+    const reset = Number(r.headers.get('x-ratelimit-reset'))
+    if (Number.isFinite(reset)) return Math.max(0, reset * 1000 - Date.now()) + 1000
+  }
+  return null
+}
+
+// Two budgets, because an unbounded backoff is its own outage. A primary quota
+// can be forty minutes from resetting, and a job holding a runner idle that
+// long is worse than reporting the entry unverified and letting regate.yml
+// re-run it later — which it already does, on a `neutral` conclusion.
+const MAX_WAIT_PER_CALL_MS = 75_000
+const MAX_WAIT_TOTAL_MS = 150_000
+let waited = 0
+
+async function api(pathname, { raw = false, attempt = 0 } = {}) {
   const r = await fetch(`https://api.github.com/${pathname}`, { headers: HEADERS, signal: AbortSignal.timeout(20000) })
   if (r.status === 404) return { status: 404 }
-  if (!r.ok) return { status: r.status }
+  if ((r.status === 403 || r.status === 429) && attempt < 3) {
+    const wait = retryDelay(r)
+    if (wait != null && wait <= MAX_WAIT_PER_CALL_MS && waited + wait <= MAX_WAIT_TOTAL_MS) {
+      waited += wait
+      console.log(`  ..  rate limited on ${pathname} — waiting ${Math.round(wait / 1000)}s (attempt ${attempt + 1}/3)`)
+      await sleep(wait)
+      return api(pathname, { raw, attempt: attempt + 1 })
+    }
+  }
+  // Keep what GitHub said. Discarding the body is what left "HTTP 403" as the
+  // only evidence in every summary, indistinguishable between a rate limit and
+  // a repository this token genuinely cannot read.
+  if (!r.ok) {
+    const reason = await r
+      .json()
+      .then((b) => (typeof b?.message === 'string' ? b.message : null))
+      .catch(() => null)
+    return { status: r.status, reason }
+  }
   return { status: 200, body: raw ? r : await r.json().catch(() => null), headers: r.headers }
 }
 
@@ -290,14 +341,17 @@ async function hasBundle(repo, sub) {
   return scanned
 }
 
+// Goes through api() rather than fetching directly, so the commit-count bar
+// gets the same rate-limit backoff as everything else. It used to have its own
+// bare fetch, which meant a squeeze made a repository look like it had no
+// commit history rather than like it had not been asked.
 async function commitCount(repo) {
-  const r = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`, { headers: HEADERS, signal: AbortSignal.timeout(20000) })
-  if (!r.ok) return null
+  const r = await api(`repos/${repo}/commits?per_page=1`)
+  if (r.status !== 200) return null
   const link = r.headers.get('link') ?? ''
   const m = link.match(/[?&]page=(\d+)>;\s*rel="last"/)
   if (m) return Number(m[1])
-  const body = await r.json().catch(() => [])
-  return Array.isArray(body) ? body.length : null
+  return Array.isArray(r.body) ? r.body.length : null
 }
 
 async function check(entry) {
@@ -312,7 +366,8 @@ async function check(entry) {
     // "passed" all the way out to the check-run summary, which is how
     // repositories under both bars came to sit green: a 403 during a quota
     // squeeze looked identical to a clean bill of health.
-    return { problems: [], unverified: [`nothing checked — repo lookup failed (HTTP ${meta.status})`] }
+    const why = meta.reason ? ` — ${meta.reason}` : ''
+    return { problems: [], unverified: [`nothing checked — repo lookup failed (HTTP ${meta.status})${why}`] }
   }
   const problems = []
   const unverified = []

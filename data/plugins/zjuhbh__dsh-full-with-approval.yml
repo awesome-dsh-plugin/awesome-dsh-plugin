@@ -1,0 +1,6 @@
+url: https://github.com/zjuhbh/dsh-full-with-approval
+name: zjuhbh/dsh-full-with-approval
+category: security
+description:
+  en: 'Fourth permission preset for dsh: unconfined, GPU-capable sessions (danger-full-access) with per-operation user approval for writes outside the workspace or to protected paths (.git/**, .env*); implemented purely as a bundle over the official tools/pre-execute ask hook, no core edits.'
+  zh: 'dsh 第四个权限预设：进程全权限（GPU 可用），同时工作区外与受保护文件（.git/**、.env*）的写入逐次向用户审批；纯插件实现，零核心改动。'

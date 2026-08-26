@@ -80,6 +80,25 @@ jobs:
             core.info(`gate last changed: ${gateChangedAt ? new Date(gateChangedAt).toISOString() : 'unknown'}`)
 
             const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
+            // Oldest first. pulls.list answers newest-first, and only
+            // `speculative` was ever sorted (below) — so `urgent` inherited that
+            // order and MAX_RERUNS truncated its tail, which is exactly where
+            // the pull requests blocked longest live. #2146 sat on a "resubmit
+            // in about 24h" verdict for 119 hours: every pass re-ran twenty
+            // newer submissions and stopped before reaching it. Twenty-two of
+            // them were in that state on 2026-08-25, the oldest five days deep.
+            prs.sort((a, b) => a.number - b.number)
+
+            // The run id used to come only from the map of the last 100 PR-check
+            // runs above, which covers roughly two hours of activity here. Any
+            // pull request not pushed to inside that window failed the lookup
+            // and was skipped before a single reason below was evaluated —
+            // invisible to the sweep rather than merely last in line. The check
+            // run already names its own workflow run, so ask it.
+            const runIdFrom = (url) => {
+              const m = /\/actions\/runs\/(\d+)/.exec(url ?? '')
+              return m ? Number(m[1]) : null
+            }
             // Collected first, re-run second, so the cheap-and-urgent reasons
             // are never crowded out by the speculative one (see PASS_STALE).
             const urgent = []
@@ -87,8 +106,11 @@ jobs:
             let requeued = 0
             for (const pr of prs) {
               if (pr.draft) continue
-              const runId = runBySha.get(pr.head.sha)
-              if (!runId) continue // no recent run to re-trigger
+              // Nothing found past this point can be re-run this pass anyway,
+              // and each iteration costs a listForRef. Stopping here makes the
+              // sweep cheaper than the version that scanned every open PR to
+              // build a list it was about to truncate.
+              if (urgent.length >= MAX) break
 
               let gate, check
               try {
@@ -99,6 +121,9 @@ jobs:
                 if (e.status === 403) { core.warning('rate limited — stopping early'); break }
                 continue
               }
+
+              const runId = runBySha.get(pr.head.sha) ?? runIdFrom(check?.details_url)
+              if (!runId) continue // nothing to re-trigger
 
               // A failing `check` means the PR's own content is wrong; time
               // will not fix that, and re-running just burns quota.
@@ -113,7 +138,14 @@ jobs:
               // 2. The verdict predates the current gate (see above).
               const stale = gate && gateChangedAt && (!ranAt || ranAt < gateChangedAt)
               // 3. It failed on age or commit count, which time alone fixes.
-              const aged = gate?.conclusion === 'failure' && /days old|commit\(s\)/.test(gate.output?.summary ?? '')
+              //    Once a day, not once a pass: the age bar is measured in whole
+              //    days, so re-asking every six hours spends three runs to hear
+              //    the same answer. Without the cooldown, a repository that is
+              //    genuinely too new camps at the head of an oldest-first queue
+              //    and re-runs forever while the rest of the backlog waits.
+              const aged = gate?.conclusion === 'failure'
+                && /days old|commit\(s\)/.test(gate.output?.summary ?? '')
+                && (!ranAt || Date.now() - ranAt >= 24 * 3600 * 1000)
                 // 3b. It reported `neutral`, which is the gate failing OPEN: when
                 //    the repository lookup errors (HTTP 403 under rate limit) the
                 //    gate lets the entry through and says so in its own summary —

@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-repeat-stop
+name: 173787247/dsh-repeat-stop
+category: security
+description:
+  en: Denies the next tool call after a configurable streak of consecutive identical calls with the same arguments.
+  zh: 在连续相同参数的同一工具调用达到可配置次数后，拒绝下一次调用。
