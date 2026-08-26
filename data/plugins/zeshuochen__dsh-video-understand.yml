@@ -1,0 +1,6 @@
+url: https://github.com/zeshuochen/dsh-video-understand
+name: zeshuochen/dsh-video-understand
+category: voice
+description:
+  en: 'Subtitle-first video transcription and deterministic extractive Markdown summaries, with a faster-whisper large-v3 fallback when subtitles are unavailable.'
+  zh: 字幕优先的视频转录与确定性抽取式 Markdown 总结；字幕不可用时回退到 faster-whisper `large-v3`。

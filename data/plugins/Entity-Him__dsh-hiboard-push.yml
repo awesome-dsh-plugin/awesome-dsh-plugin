@@ -1,0 +1,6 @@
+url: https://github.com/Entity-Him/dsh-hiboard-push
+name: Entity-Him/dsh-hiboard-push
+category: notify
+description:
+  en: 'Huawei HarmonyOS assistant-today (负一屏) task-completion push for DeepSeek Harness: hiboard_push / hiboard_verify tools post Markdown task results to the phone card feed, wire-compatible with the OpenClaw today-task skill, with the authCode managed from the dsh settings panel.'
+  zh: '华为鸿蒙负一屏（智慧助手·今天）任务完成推送：hiboard_push / hiboard_verify 工具把 Markdown 任务结果推送到手机卡片流，与 OpenClaw today-task 技能线级兼容，授权码可在 dsh 设置面板配置。'

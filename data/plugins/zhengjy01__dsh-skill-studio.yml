@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-skill-studio
+name: zhengjy01/dsh-skill-studio
+category: skill
+description:
+  en: 'Skill studio for DeepSeek Harness: visualize every agent skill (name, description, source root, nested flag, model/user invocation state), view and edit the full SKILL.md body, and enable or disable model/user invocation — from the web settings panel and via skillmgr_* tools.'
+  zh: 'DSH skill 可视化与管理插件：在设置面板列出全部 skill（含来源、嵌套标记与模型/用户调用状态），查看并编辑 SKILL.md 正文，一键启用/禁用模型与用户调用；同时提供 skillmgr_list/get/save/policy 工具。'
