@@ -1,0 +1,6 @@
+url: https://github.com/delaydai/dsh-jumpbar
+name: delaydai/dsh-jumpbar
+category: ui
+description:
+  en: 'User message jump bar for the DSH web GUI: a minimap-style dash strip on the right edge of the conversation, with hover preview, click-to-jump, drag-to-scrub and a viewport marker.'
+  zh: 'DSH Web 用户消息跳转条：对话区右缘 minimap 式横杠条带，悬停预览消息内容、点击跳转置顶、拖拽快速浏览，并带当前视口标记。'

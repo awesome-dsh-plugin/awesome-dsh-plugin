@@ -1,14 +1,15 @@
 {
- "https://github.com/diqierjia/StrataGate-AgentMemory/tree/main/integrations/deepseek-harness": [
-  "https://raw.githubusercontent.com/diqierjia/StrataGate-AgentMemory/main/integrations/deepseek-harness/docs/assets/stratagate-short-term-memory.png",
-  "https://raw.githubusercontent.com/diqierjia/StrataGate-AgentMemory/main/integrations/deepseek-harness/docs/assets/stratagate-memory-structure.png"
- ],
  "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
  "https://github.com/GreenLv/dsh-session-insights": [
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-en.png",
   "https://raw.githubusercontent.com/GreenLv/dsh-session-insights/main/assets/screenshots/dashboard-overview-zh.png"
+ ],
+ "https://github.com/xiaoksio/dsh-solution-explorer": [
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-1-file-explorer.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-2-source-control.png",
+  "https://raw.githubusercontent.com/xiaoksio/dsh-solution-explorer/main/assets/screenshot-3-diff.png"
  ],
  "https://github.com/LayneChai/superpowers-dsh": [
   "https://raw.githubusercontent.com/LayneChai/superpowers-dsh/main/static/home.png",
@@ -17,6 +18,11 @@
  "https://github.com/kirkchinese/CiteCiter/tree/main/packages/citeciter": [
   "https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/assets/demo/citeciter-0.4.0.gif",
   "https://raw.githubusercontent.com/kirkchinese/CiteCiter/main/assets/screenshots/citeciter-settings.png"
+ ],
+ "https://github.com/L3n3L/dsh-resume": [
+  "https://raw.githubusercontent.com/L3n3L/dsh-resume/main/docs/screenshots/workbench.png",
+  "https://raw.githubusercontent.com/L3n3L/dsh-resume/main/docs/screenshots/ai-assistant.png",
+  "https://raw.githubusercontent.com/L3n3L/dsh-resume/main/docs/screenshots/template-library.png"
  ],
  "https://github.com/hunter118/dsh-s7r": [
   "https://raw.githubusercontent.com/hunter118/dsh-s7r/main/docs/screenshots/s7r-desktop.png",
@@ -57,9 +63,9 @@
   "https://raw.githubusercontent.com/263311487-ux/dsh-verify/main/assets/visual-diff.png"
  ],
  "https://github.com/2768651338/dsh-effort-slider": [
-  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/屏幕截图%202026-08-16%20190943.png",
-  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/屏幕截图%202026-08-16%20190950.png",
-  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/屏幕截图%202026-08-16%20190903.png"
+  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/灞忓箷鎴浘%202026-08-16%20190943.png",
+  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/灞忓箷鎴浘%202026-08-16%20190950.png",
+  "https://raw.githubusercontent.com/2768651338/dsh-effort-slider/main/assets/screenshots/灞忓箷鎴浘%202026-08-16%20190903.png"
  ],
  "https://github.com/2768651338/dsh-plugin-manager": [
   "https://raw.githubusercontent.com/2768651338/dsh-plugin-manager/main/assets/preview.png"
@@ -179,7 +185,8 @@
   "https://raw.githubusercontent.com/Flyvhidbwo/dsh-vision-proxy/main/assets/demo-selector.png"
  ],
  "https://github.com/foooold/dsh-message-nav": [
-  "https://raw.githubusercontent.com/foooold/dsh-message-nav/personal/assets/rail-hover-preview.png"
+  "https://raw.githubusercontent.com/foooold/dsh-message-nav/main/assets/rail-hover-preview.png",
+  "https://raw.githubusercontent.com/foooold/dsh-message-nav/main/assets/rail-left-edge.png"
  ],
  "https://github.com/GOU-GEE/deepseek-vision/tree/main/plugins/dsh-plugin-deepseek-vision": [
   "https://raw.githubusercontent.com/GOU-GEE/deepseek-vision/main/docs/screenshots/01-settings.png",
@@ -195,7 +202,12 @@
  "https://github.com/HaoyueQin/dsh-better-reasoning-effort": [
   "https://raw.githubusercontent.com/HaoyueQin/dsh-better-reasoning-effort/master/docs/market-card.png"
  ],
- "https://github.com/Isilsolme/dsh-splash-launcher": [
+ "https://github.com/Harvey-Will/dsh-vision-analysis": [
+  "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ocr.png",
+  "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-chart.png",
+  "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ui.png"
+],
+"https://github.com/Isilsolme/dsh-splash-launcher": [
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-light.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-drawing.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-dark.png",
@@ -397,10 +409,10 @@
   "https://raw.githubusercontent.com/Totoro-qaq/dsh-plugin-bridge/main/assets/bridge-demo.en.gif"
  ],
  "https://github.com/Ultronen/dsh-archived-chats": [
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/01-archive-entry.png",
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/02-archived-overview.png",
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/04-conversation-preview.png",
-  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/08-recycle-bin.png"
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/1-archived-chats.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/2-search.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/3-delete-confirm.png",
+  "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/4-group-menu.png"
  ],
  "https://github.com/Ultronen/dsh-liquid-glass": [
   "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
@@ -626,6 +638,11 @@
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-stick.png",
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-float.png",
   "https://raw.githubusercontent.com/imkingjh999/dsh-shorts-wall/main/docs/screenshot-minimized.png"
+ ],
+ "https://github.com/imkingjh999/dsh-deepsea": [
+  "https://raw.githubusercontent.com/imkingjh999/dsh-deepsea/main/assets/screenshots/deepsea-ocean.png",
+  "https://raw.githubusercontent.com/imkingjh999/dsh-deepsea/main/assets/screenshots/deepsea-wall.png",
+  "https://raw.githubusercontent.com/imkingjh999/dsh-deepsea/main/assets/screenshots/deepsea-pond.png"
  ],
  "https://github.com/itr-del/dsh-feishu": [
   "https://raw.githubusercontent.com/itr-del/dsh-feishu/master/assets/hero.png"
@@ -899,8 +916,7 @@
   "https://raw.githubusercontent.com/wuxiangru915/dsh-session-manager/main/assets/session-manager.png"
  ],
  "https://github.com/wx-yss/dsh-message-rail": [
-  "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-hover-preview.png",
-  "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-market-2.png"
+  "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-hover-preview.png"
  ],
  "https://github.com/wz-heng/dsh-feishu-bridge": [
   "https://raw.githubusercontent.com/wz-heng/dsh-feishu-bridge/main/docs/screenshots/fail-closed-boot.png",
@@ -1088,7 +1104,11 @@
   "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-chat.png"
  ],
  "https://github.com/Frog755/dsh-client-auto-retry": [
-  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg"
+  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg",
+  "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/screenshot-settings-card.png"
+ ],
+ "https://github.com/Frog755/dsh-prompt-vault": [
+  "https://raw.githubusercontent.com/Frog755/dsh-prompt-vault/master/assets/screenshot-panel.png"
  ],
  "https://github.com/lemonorangeapple/dsh-effort-switcher": [
   "https://raw.githubusercontent.com/lemonorangeapple/dsh-effort-switcher/master/screenshots/1.png",
@@ -1210,8 +1230,10 @@
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-chat.png",
   "https://raw.githubusercontent.com/wangzhishou/onebox-dsh-bridge/main/docs/images/app-feedback.png"
  ],
- "https://github.com/m1khal3v/dsh-llm-key-rotation": [
-  "https://github.com/user-attachments/assets/84f63f77-3492-4027-ace7-30b6d08616ef"
+ "https://github.com/EugeneVl/dsh_session_folders": [
+  "https://raw.githubusercontent.com/EugeneVl/dsh_session_folders/master/assets/screenshot-1.jpg",
+  "https://raw.githubusercontent.com/EugeneVl/dsh_session_folders/master/assets/screenshot-2.jpg",
+  "https://raw.githubusercontent.com/EugeneVl/dsh_session_folders/master/assets/screenshot-3.jpg"
  ],
  "https://github.com/IceApriler/dsh-remote-mobile": [
   "https://raw.githubusercontent.com/IceApriler/dsh-remote-mobile/master/images/pc-dsh-setting-1.png",
@@ -1281,15 +1303,31 @@
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/01-proposal-inbox.png",
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/02-review-details.png",
   "https://raw.githubusercontent.com/qkycir-123/dsh-run2skill/main/docs/assets/03-saved-activity.png"
- ]
-,
- "https://github.com/gjj-star/dsh-conversation-navigator": [
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/01-main.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/02-steps.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/03-minimal.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/04-search-n-hover.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/05-dark.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/06-theme1-preview.png",
-  "https://raw.githubusercontent.com/gjj-star/dsh-conversation-navigator/main/assets/screenshots/07-theme2-preview.png"
+ ],
+ "https://github.com/BananaSoldier01/dsh-tidychat": [
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/navigator.png",
+  "https://raw.githubusercontent.com/BananaSoldier01/dsh-tidychat/main/assets/settings.png"
+ ],
+ "https://github.com/PolinniZhong/dsh-personal-center": [
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/light-profile.png",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-pet.png",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/pet-emotions.gif",
+  "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/main/docs/screenshots/dark-model-cost.png"
+ ],
+ "https://github.com/KarlOfLaw/dsh-side-chat": [
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/dsh-side-chat-hero.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-parallel.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-selection.png",
+  "https://raw.githubusercontent.com/KarlOfLaw/dsh-side-chat/main/docs/assets/side-chat-settings.png"
+ ],
+ "https://github.com/biggerboy/dsh-conversation-anchors": [
+  "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-hover.png",
+  "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-wave.png"
+ ],
+ "https://github.com/WSL043/dsh-native-reasoning-slider": [
+  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/reasoning-slider-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/reasoning-slider-energy-zh.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-dark-zh.png"
  ]
 }
