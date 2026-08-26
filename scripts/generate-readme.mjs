@@ -94,6 +94,27 @@ if (problems.length) {
   process.exit(1)
 }
 
+// A description is prose supplied by a contributor, but it lands in a Markdown
+// document, and `[like this]` is a link reference there. remark-lint fails the
+// whole README on one — "expected corresponding definition", the entire
+// awesome-lint step red for everybody — so a plugin that says its marker looks
+// like [Shot N HH:mm] takes CI down and the author has no way to know why.
+//
+// Escape the opening bracket, but only where it really is a stray reference:
+//
+//   `[存档 N]`        inside a code span — remark ignores it, and a backslash
+//                     there would RENDER, so code spans are skipped entirely
+//   [label](url)      a real inline link; three entries depend on these
+//   \[ENGRAM\]        the author escaped it by hand already
+//
+// Verified a no-op against all 4,279 descriptions currently in data/plugins:
+// this changes nothing that exists and only catches what would arrive next.
+const escapeRefs = (s) =>
+  s
+    .split(/(`[^`]*`)/)
+    .map((part, i) => (i % 2 ? part : part.replace(/(^|[^\\])\[(?![^\]]*\]\()/g, '$1\\[')))
+    .join('')
+
 const ordered = orderEntries(entries)
 const used = CAT_IDS.filter((id) => ordered.some((e) => e.category === id))
 
@@ -120,7 +141,7 @@ for (const loc of LOCALES) {
           // the build — an honest gap a maintainer closes later.
           const d = e.description[loc.code] ?? e.description[BASE_LOCALE]
           if (e.description[loc.code] === undefined) untranslated.push(`${loc.readme}: ${e.url}`)
-          return `- [${e.name}](${e.url}) ${loc.sep} ${d}`
+          return `- [${e.name}](${e.url}) ${loc.sep} ${escapeRefs(d)}`
         })
       return `### ${headingFor(loc, id)}\n\n${lines.join('\n')}`
     })

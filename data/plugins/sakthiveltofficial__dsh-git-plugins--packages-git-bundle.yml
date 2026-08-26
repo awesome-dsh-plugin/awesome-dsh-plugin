@@ -1,0 +1,5 @@
+url: https://github.com/sakthiveltofficial/dsh-git-plugins/tree/main/packages/git/bundle
+name: sakthiveltofficial/dsh-git-plugins#bundle
+category: git
+description:
+  en: 'Git and source-control plugin suite for DeepSeek Harness: local git operations plus GitHub, GitLab, Bitbucket, Azure DevOps and Gitea adapters, with self-evolving memory.'

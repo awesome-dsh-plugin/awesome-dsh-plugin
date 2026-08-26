@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-net
+name: 173787247/dsh-wsl-net
+category: tools
+description:
+  en: Adds a net_doctor tool that reports proxy environment, NODE_USE_ENV_PROXY, and reachability of the DeepSeek API and the npm registry, and sets NODE_USE_ENV_PROXY on bash and npm child processes.
+  zh: 提供 net_doctor 工具，报告代理环境、NODE_USE_ENV_PROXY，以及 DeepSeek API 与 npm registry 的连通性，并为 bash 和 npm 子进程设置 NODE_USE_ENV_PROXY。
