@@ -2136,7 +2136,7 @@ dsh plugin --profile web add dshmarket
 - [sashankh/dsh-taintguard](https://github.com/sashankh/dsh-taintguard) — 当工具结果包含不可信内容时将代理标记为已污染，对随后的高权限调用进行拦截，并在所有模式下拒绝将凭据传递给可联网的工具。
 - [sensedeal/cue-skills#cue-omni-reader-guard](https://github.com/sensedeal/cue-skills/tree/main/dsh/cue-omni-reader-guard) — 面向 DeepSeek Harness 的 mcp__omni__parse 加固护栏：tools/pre-execute 监听器拒绝私网/保留主机（SSRF），施加白名单或 ask（同意），allowedRoots 为空时 fail-closed。
 - [SeverusZh/dsh-yolo-mode](https://github.com/SeverusZh/dsh-yolo-mode) — 沙箱升权申请的 LLM 自动审批：内置预设，fail-closed 兜底。
-- [Shaky77/weiwen-law-dsh](https://github.com/Shaky77/weiwen-law-dsh) — 唯稳律白箱因果闸门：每个工具调用执行前沿 R→S→D→H→M 因果链裁决（刚性锚点 / 破窗止损 / 内 H 边界 / 第一 Bug 停机 / 前向推演），确定性规则层、纯本地运行、零 API 成本，附带 6 个白箱自查工具。
+- [Shaky77/weiwen-law-dsh](https://github.com/Shaky77/weiwen-law-dsh) — 唯稳律白箱因果闸门：每个工具调用执行前沿确定性因果逻辑链裁决——拦截破坏性与凭据文件操作、对反复越界升级止损、故障环节切断至修复验证、不可审计执行给出风险判定；纯本地运行、零 API 成本，附带 6 个白箱自查工具。
 - [shaoshi20/dshscan](https://github.com/shaoshi20/dshscan) — DSH 插件安全扫描器：对插件源码做静态与语义双通道检查，内置 DSH 特有攻击面规则，集成 npm audit，支持批量扫描，输出带严重等级与证据的 HTML 报告。
 - [shuxue6662-a11y/dsh-risk-guard](https://github.com/shuxue6662-a11y/dsh-risk-guard) — 零打扰审计与保险丝拦截：静默记录每次工具调用并做纯规则风险评分（含累积加分、风险等级分布、归档保留期清理），只拦不可逆灾难（受保护路径删除、磁盘擦除、force push 到受保护分支/引用、凭据外发），/risk-guard 输出脱敏操作账单并支持 --since 时间过滤。
 - [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) — 为 WebUI 增加 Auto Approve 权限档位，由全新且受限的审查 Agent 逐次允许或拒绝审批请求。
