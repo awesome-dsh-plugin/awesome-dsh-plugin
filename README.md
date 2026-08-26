@@ -703,6 +703,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [wyouwd1/dsh-opencode-models](https://github.com/wyouwd1/dsh-opencode-models) - Manages OpenCode Zen free-tier and Go-tier models in settings.yaml — fetches the live model listings from opencode.ai, reports configured-versus-live drift per route, and adds or removes entries through four agent tools and an OpenCode Models settings section.
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) - Zero-cost access to 6 free large models. No registration, no recharge, 6 free models built-in, multi-key rotation and rate-limit backoff.
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) - Connects ChatGPT accounts through OAuth, switches among them manually or automatically, and adds Codex models with usage limits to DeepSeek Harness.
+- [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) - Maps a stable agent_key to an exact provider/model pair declared in role Markdown front matter, validates the pair against the live DSH model registry before spawning, and maintains per-workspace prefercmd and memory evolution files.
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card to tune the DSH LLM auto-retry policy (retry count, backoff, jitter) live from Settings → General.
 
 ### Identity & Communication
