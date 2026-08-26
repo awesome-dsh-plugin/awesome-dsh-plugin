@@ -202,7 +202,12 @@
  "https://github.com/HaoyueQin/dsh-better-reasoning-effort": [
   "https://raw.githubusercontent.com/HaoyueQin/dsh-better-reasoning-effort/master/docs/market-card.png"
  ],
- "https://github.com/Isilsolme/dsh-splash-launcher": [
+ "https://github.com/Harvey-Will/dsh-vision-analysis": [
+  "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ocr.png",
+  "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-chart.png",
+  "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ui.png"
+],
+"https://github.com/Isilsolme/dsh-splash-launcher": [
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-light.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-drawing.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-dark.png",
