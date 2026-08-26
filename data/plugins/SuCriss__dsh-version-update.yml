@@ -3,5 +3,5 @@ name: SuCriss/dsh-version-update
 category: dev
 tarball: https://github.com/SuCriss/dsh-version-update/releases/latest/download/dsh-version-update.tgz
 description:
-  zh: "DeepSeek Harness 版本管理：对照各 npm 通道或版本线查看已装版本，一键安装或降级，从本地快照秒级回滚，并用策略引擎（静默自动更新、执行时间窗、每日检查）托管整个流程。"
-  en: "Version management for dsh: inspect the installed version against every npm channel or version line, install or downgrade in one click, roll back instantly from local snapshots, and automate the cycle with a policy engine (silent auto-update, execution windows, daily checks)."
+  zh: "DeepSeek Harness 版本管理：对照各 npm 通道或版本线查看已装版本，一键安装或降级，从本地快照秒级回滚，用策略引擎（静默自动更新、执行时间窗、每日检查）托管整个流程，检查到新版本时弹窗确认是否立即更新，保存策略即时提示成功或失败，安装后自动重启宿主，遇到 registry 不可达时自动回退到镜像。"
+  en: "Version management for dsh: inspect the installed version against every npm channel or version line, install or downgrade in one click, roll back instantly from local snapshots, automate the cycle with a policy engine (silent auto-update, execution windows, daily checks), confirm before installing a found update, report policy-save success or failure, auto-restart the host after install, and fall back to a mirror when the primary registry is unreachable."

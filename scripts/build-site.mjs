@@ -224,6 +224,50 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
   if (shotsBroken) process.exit(1)
 }
 
+// Everything above checks the shape of a screenshot URL and the host it points
+// at. Nothing there asks whether the image is actually served, so a 404 passed
+// the PR check, passed the gate, merged, and shipped as a broken picture in
+// every storefront — 41 of 773 were in that state when the probe first ran.
+// probe-screenshots.mjs asks; this drops what it found gone.
+//
+// Absent verdict means live, deliberately: a URL the probe never reached (5xx,
+// throttle, or a run that did not happen) must keep publishing. Only a recorded
+// `ok: false` — which the probe writes for 404/410 alone — removes an image.
+// An entry whose shots all die loses the field entirely rather than shipping an
+// empty array, which is the state every entry had before screenshots existed.
+{
+  // The author's own repository wins. probe-screenshots.mjs reads
+  // `screenshots.json` from beside the plugin's package.json and resolves it to
+  // absolute URLs here; data/screenshots.json above is what every entry that
+  // predates the convention still uses. An author who adopts the file becomes
+  // the single source for their own entry — their key in the legacy file is
+  // then redundant and prune-legacy-screenshots.mjs removes it, so the old file
+  // drains rather than growing a second, competing copy of the same data.
+  const DECLARED_FILE = 'data/screenshots-declared.json'
+  const declaredMap = fs.existsSync(DECLARED_FILE) ? JSON.parse(fs.readFileSync(DECLARED_FILE, 'utf8')) : {}
+  let adopted = 0
+  for (const [key, list] of Object.entries(declaredMap)) {
+    if (!Array.isArray(list) || !list.length) continue
+    if (shotsMap[key] !== undefined) adopted++
+    shotsMap[key] = list
+  }
+  if (Object.keys(declaredMap).length) {
+    console.log(`screenshots: ${Object.keys(declaredMap).length} entry/entries declare their own (${adopted} superseding ${SCREENSHOTS_FILE})`)
+  }
+
+  const LIVE_FILE = 'data/screenshots-live.json'
+  const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
+  let dropped = 0
+  for (const [key, list] of Object.entries(shotsMap)) {
+    if (!Array.isArray(list)) continue
+    const live = list.filter((shot) => verdicts[shot]?.ok !== false)
+    dropped += list.length - live.length
+    if (live.length) shotsMap[key] = live
+    else delete shotsMap[key]
+  }
+  if (dropped) console.log(`screenshots: dropped ${dropped} image(s) confirmed 404/410 by probe-screenshots.mjs`)
+}
+
 // derive repo/subdir install specs and the detail-page slug once
 for (const e of ordered) {
   const repoPath = e.url.replace('https://github.com/', '')
