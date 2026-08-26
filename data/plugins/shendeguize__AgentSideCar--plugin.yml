@@ -1,0 +1,6 @@
+url: https://github.com/shendeguize/AgentSideCar/tree/main/plugin
+name: shendeguize/AgentSideCar#plugin
+category: session
+description:
+  en: Cross-agent monitoring board for local AI agent sessions (cursor-ide, claude, codex, copilot, kimi and dsh itself) with session timelines, and message injection behind a default-off two-phase confirmation gate.
+  zh: 跨 agent 看板监控本机 AI agent 会话（cursor-ide、claude、codex、copilot、kimi 及 dsh 自身），提供会话时间线，并可经默认关闭的两阶段确认门注入消息。
