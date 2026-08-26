@@ -1206,6 +1206,7 @@ dsh plugin --profile web add dshmarket
 - [TecFancy/dsh-deeptutor](https://github.com/TecFancy/dsh-deeptutor) — DeepTutor 学习辅导桥接插件：通过 deeptutor_run / deeptutor_kb / deeptutor_note 工具为 agent 接入深度讲解、自测题、学习路径规划、个人知识库检索（RAG）与笔记归档。
 - [Tencent/WeKnora#dsh-weknora](https://github.com/Tencent/WeKnora/tree/main/packages/dsh-weknora) — 把 WeKnora 知识库接入 dsh 的四个只读工具：列出知识库、混合检索原文片段、按顺序还原单篇文档，以及直接取用 WeKnora 自己带引用的 RAG 或 ReAct agent 回答（含可续聊的 session id）。
 - [THU-MAIC/dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。
+- [Tianbuyu-wwx/DSH-FormatForge#dsh-formatforge](https://github.com/Tianbuyu-wwx/DSH-FormatForge/tree/main/packages/dsh-formatforge) — FormatForge：把 30+ 种文件格式（PDF、DOCX、PPTX、XLSX、EML、EPUB、TOML、压缩包）锻造成 AI 可读文本——网页拖拽入箱自动转换，提供 ff_translate/ff_formats/ff_result 工具与 CLI；扫描件回退本地 OCR 或交给会话模型增强。
 - [tiantianlaolao/dsh-astock-research](https://github.com/tiantianlaolao/dsh-astock-research) — A股个股研究：搜股票、查任意区间公告、财报卡、估值画像与交易信号科普（约 5000 只、2011 年至今，公共只读数据服务），另有一个跳转外部交易推演产品的链接工具。
 - [tobysunsun/dsh-code-reading-coach](https://github.com/tobysunsun/dsh-code-reading-coach) — 代码研读教练：交互式引导研读论文对应的开源代码。五段研读法（锚定论文主张、地形扫描、入口追踪、核心映射、闭环验证），自动识别并告知语言的框架与架构，适合研读 AI 论文源码。
 - [trench-xinxin/dsh-tool-lens](https://github.com/trench-xinxin/dsh-tool-lens) — 确定性 AST 代码图谱与架构治理分析工具：调用链消歧、重构爆炸半径、循环依赖审计、领域切片与全栈 API 契约追踪。
