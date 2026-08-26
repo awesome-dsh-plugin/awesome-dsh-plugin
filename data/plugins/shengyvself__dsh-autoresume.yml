@@ -2,7 +2,13 @@ url: https://github.com/shengyvself/dsh-autoresume
 name: shengyvself/dsh-autoresume
 category: workflow
 description:
-  en: Auto-continue an interrupted dsh session after a web restart by injecting a "continue" follow-up; one-shot per process, no duplicate-injection loops.
-  zh: dsh web 重启后自动向被打断的会话注入「继续」，让 agent 自动接续干活；每进程只注入一次，不重复触发。
-
-# refreshed 2026-08-19 (standard push): repo >1 day, 11 commits
+  en: >-
+    Auto-continues dsh sessions interrupted by web restarts or transient
+    network failures. Global scan over recent sessions (24h window), resumes
+    with the session's own model preset, live watch catches mid-run network
+    failures, and a dead-loop guard settles models that keep returning empty
+    content.
+  zh: >-
+    自动继续被 web 重启或网络瞬时故障打断的会话：全域扫描近 24h 会话、以会话原
+    模型预设自我恢复、liveWatch 补捞运行期间再次失败，并对持续空返回的模型内置
+    死循环守卫；completed/settled 一律不打扰。
