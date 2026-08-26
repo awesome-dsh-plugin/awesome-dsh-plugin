@@ -206,8 +206,8 @@
   "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ocr.png",
   "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-chart.png",
   "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ui.png"
-],
-"https://github.com/Isilsolme/dsh-splash-launcher": [
+ ],
+ "https://github.com/Isilsolme/dsh-splash-launcher": [
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-light.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-drawing.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-dark.png",
@@ -1329,5 +1329,12 @@
   "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/reasoning-slider-energy-zh.png",
   "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-en.png",
   "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-dark-zh.png"
+ ],
+ "https://github.com/m1khal3v/dsh-llm-key-rotation": [
+  "https://github.com/user-attachments/assets/84f63f77-3492-4027-ace7-30b6d08616ef"
+ ],
+ "https://github.com/sunnystarye-ui/dsh-plugin-text-quote": [
+  "https://raw.githubusercontent.com/sunnystarye-ui/dsh-plugin-text-quote/master/assets/selection-menu.png",
+  "https://raw.githubusercontent.com/sunnystarye-ui/dsh-plugin-text-quote/master/assets/note-editor.png"
  ]
 }
