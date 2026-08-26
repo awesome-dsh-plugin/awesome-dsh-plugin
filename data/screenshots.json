@@ -1319,5 +1319,12 @@
  "https://github.com/biggerboy/dsh-conversation-anchors": [
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-hover.png",
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-wave.png"
+ ],
+ "https://github.com/mienfong/dsh-session-mgr": [
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/session-manager_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/move-dialog_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/backup_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/import_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/delete-confirm_EN.png"
  ]
 }
