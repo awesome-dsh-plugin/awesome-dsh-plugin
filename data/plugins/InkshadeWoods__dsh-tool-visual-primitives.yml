@@ -1,0 +1,6 @@
+url: https://github.com/InkshadeWoods/dsh-tool-visual-primitives
+name: InkshadeWoods/dsh-tool-visual-primitives
+category: vision
+description:
+  en: Bridges image understanding to text-only models by analyzing conversation images and injecting structured evidence (captions, grounding boxes, UI layout) as text.
+  zh: 为纯文本模型桥接图像理解：分析对话中的图片，将结构化证据（图像描述、定位框、UI 布局）以文本注入上下文。
