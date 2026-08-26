@@ -75,6 +75,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### UI Enhancements
 
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) - Replaces the "Deep diving..." turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.
+- [0imzero/dsh-workspace-menu](https://github.com/0imzero/dsh-workspace-menu) - Workspace/chat context menu for the DSH home page: pin, rename, open in file explorer, archive, fork, copy, and open in a new window.
 - [0xsline/dsh-spotlight](https://github.com/0xsline/dsh-spotlight) - Keyboard-first command palette for the DSH Web UI.
 - [1070296335-create/dph-taskboard](https://github.com/1070296335-create/dph-taskboard) - Session-based task board in the sidebar: drag sessions into todo/doing/review/done columns, create sessions with model and reasoning-effort selection, trash with restore, notes, export/import.
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) - Composer expand/collapse toggle for the Web UI: a ⬆/⬇ button in the composer tool row grows the input to a tall 70vh writing view for long drafts.
