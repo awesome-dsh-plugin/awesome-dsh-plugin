@@ -1784,6 +1784,7 @@ dsh plugin --profile web add dshmarket
 - [shengyvself/dsh-autoresume](https://github.com/shengyvself/dsh-autoresume) — 自动继续被 web 重启或网络瞬时故障打断的会话：全域扫描近 24h 会话、以会话原 模型预设自我恢复、liveWatch 补捞运行期间再次失败，并对持续空返回的模型内置 死循环守卫；completed/settled 一律不打扰。
 - [squirrel20/dsh-cron](https://github.com/squirrel20/dsh-cron) — 宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。
 - [STARDUSTLC666/dsh-minimal-ptc](https://github.com/STARDUSTLC666/dsh-minimal-ptc) — 极简提示词 × PTC 全量工具：一句人格、Code Mode SDK、子代理、工作流、联网搜索与 Windows Git Bash。
+- [starwish-ai/xingyuan-dsh](https://github.com/starwish-ai/xingyuan-dsh) — 愿望与任务管理的 Agent Preset 组合包：在对话中创建愿望/任务、机会日打卡、微行动，并附带记忆存储与 Web 端进度图表。
 - [StruggleYang/dsh-project-kanban](https://github.com/StruggleYang/dsh-project-kanban) — 按工作区（项目）隔离的项目看板：9 个 kanban_* 模型工具供 Agent 规划时写卡，另带浏览器看板 UI，支持磁盘持久化、撤销、模板与归档。
 - [stuarthu/dsh-crew](https://github.com/stuarthu/dsh-crew) — 以角色团队的方式干活：产品经理先写 PRD 或 DoD 并等你确认，再启动架构师、工程师、QA 与各类评审；每个角色的工具集按角色锁定，彼此通过磁盘文件协作。
 - [tevenfeng/dsh-plugin-omoslim](https://github.com/tevenfeng/dsh-plugin-omoslim) — 安装 Orchestrator 智能体预设：规划任务并分派给指定模型的专家子代理（explorer、oracle、librarian、designer、fixer、council），支持命名模型配置（用 omoslim CLI 切换）与 Web 端查看当前子代理模型的按钮。
