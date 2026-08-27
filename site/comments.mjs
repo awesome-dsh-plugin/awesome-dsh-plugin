@@ -11,9 +11,9 @@
  * a broken third-party request to every visitor.
  */
 export default Object.freeze({
-  enabled: false,
+  enabled: true,
   repo: 'awesome-dsh-plugin/awesome-dsh-plugin',
-  repoId: '',
-  category: 'Plugin comments',
-  categoryId: '',
+  repoId: 'R_kgDOT3ajCQ',
+  category: 'Plugins',
+  categoryId: 'DIC_kwDOT3ajCc4DES8_',
 })
