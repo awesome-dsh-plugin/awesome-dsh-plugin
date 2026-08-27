@@ -1,27 +1,70 @@
 {
-  "name": "awesome-dsh-plugin",
-  "version": "0.1.0",
-  "description": "A curated list of DeepSeek Harness (dsh) plugins · DeepSeek Harness 插件精选列表",
-  "homepage": "https://awesome-dsh-plugin.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.git"
+  "name": "dsh-more-models-thinking-level",
+  "version": "0.1.1",
+  "description": "Per-model reasoning effort declarations for GPT, Gemini and OpenAI-compatible providers in DeepSeek Harness",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
   },
-  "license": "CC0-1.0",
   "files": [
+    "lib",
+    "cordis.patch.yml",
     "README.md",
-    "README.zh.md"
+    "README.zh.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "install.ps1",
+    "uninstall.ps1",
+    "enable-capabilities.ps1",
+    "disable-capabilities.ps1"
   ],
   "keywords": [
-    "awesome",
-    "awesome-list",
-    "dsh",
-    "dsh-plugin",
-    "deepseek-harness",
-    "deepseek"
+    "reasoning",
+    "thinking",
+    "gpt",
+    "gemini",
+    "openai-compatible",
+    "model-settings",
+    "llm",
+    "dsh-plugin"
   ],
-  "devDependencies": {
-    "js-yaml": "^5.3.0",
-    "marked": "^18.0.9"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henta111/dsh-more-models-thinking-level.git"
+  },
+  "homepage": "https://github.com/Henta111/dsh-more-models-thinking-level#readme",
+  "bugs": {
+    "url": "https://github.com/Henta111/dsh-more-models-thinking-level/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-connection": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-locale": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.1.1-rc.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
