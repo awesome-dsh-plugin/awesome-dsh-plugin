@@ -1,0 +1,6 @@
+url: https://github.com/null5069/dsh-better-stats
+name: null5069/dsh-better-stats
+category: usage
+description:
+  en: 'Composer stats strip for the DSH Web UI: official CNY pricing with auto-synced peak/off-peak tiers, per-model accounting, live timers, subagent-tree merging, DeepSeek account balance, budget alerts, and streaming cost estimation.'
+  zh: DSH Web 输入框下方的增强统计条：官方人民币计价（峰谷分时、价目自动同步）、多模型分账、实时计时、子代理树合并、余额直连、预算预警与流式成本估算。

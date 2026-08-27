@@ -121,6 +121,15 @@ ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* Comment provider is never loaded until the visitor chooses to load it. */
+.comments-load{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:.9rem;border:1px solid var(--cinnabar);border-radius:8px;padding:.55rem .95rem;background:var(--cinnabar);color:var(--on-cinnabar);font-size:.82rem;font-weight:650;transition:background .15s ease,border-color .15s ease}
+.comments-load:hover:not(:disabled){background:var(--cinnabar-deep);border-color:var(--cinnabar-deep)}
+.comments-load:disabled{cursor:wait;opacity:.72}
+.comments-status{min-height:1.55em;margin-top:.65rem;color:var(--ink-3);font-size:.78rem}
+.comments-mount{margin-top:.7rem;min-height:0;overflow:hidden}
+.comments-mount:has(iframe){min-height:12rem}
+.comments-mount iframe{width:100%;border:0}
+
 /* rendered README content */
 .md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
 .md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
@@ -212,6 +221,8 @@ __P_RELATED__
     </ul>
     <a class="morelink" href="__CAT_URL__">__T_P_MORECAT__ →</a>
   </section>
+
+  __P_COMMENTS_SECTION__
 </main>
 
 <footer class="wrap">
@@ -228,6 +239,53 @@ document.addEventListener('click', async (e) => {
   const old = btn.textContent;
   btn.textContent = '✓';
   setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
+});
+
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.comments-load');
+  if (!btn || btn.disabled) return;
+  const panel = btn.closest('.comments');
+  const mount = panel?.querySelector('.comments-mount');
+  const status = panel?.querySelector('.comments-status');
+  if (!mount || !status) return;
+
+  let config;
+  try { config = JSON.parse(btn.dataset.comments); } catch {
+    status.textContent = btn.dataset.error;
+    return;
+  }
+  btn.disabled = true;
+  btn.setAttribute('aria-busy', 'true');
+  status.textContent = btn.dataset.loading;
+
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.async = true;
+  script.crossOrigin = 'anonymous';
+  script.dataset.repo = config.repo;
+  script.dataset.repoId = config.repoId;
+  script.dataset.category = config.category;
+  script.dataset.categoryId = config.categoryId;
+  script.dataset.mapping = 'specific';
+  script.dataset.term = config.term;
+  script.dataset.strict = '1';
+  script.dataset.reactionsEnabled = '1';
+  script.dataset.emitMetadata = '0';
+  script.dataset.inputPosition = 'bottom';
+  script.dataset.theme = 'preferred_color_scheme';
+  script.dataset.lang = config.lang;
+  script.dataset.loading = 'lazy';
+  script.onload = () => {
+    btn.removeAttribute('aria-busy');
+    status.textContent = btn.dataset.ready;
+  };
+  script.onerror = () => {
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    status.textContent = btn.dataset.error;
+    script.remove();
+  };
+  mount.append(script);
 });
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
