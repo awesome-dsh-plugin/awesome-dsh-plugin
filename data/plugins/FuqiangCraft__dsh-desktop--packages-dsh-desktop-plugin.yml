@@ -2,5 +2,5 @@ url: https://github.com/FuqiangCraft/dsh-desktop/tree/main/packages/dsh-desktop-
 name: FuqiangCraft/dsh-desktop#packages/dsh-desktop-plugin
 category: ui
 description:
-  en: 'Desktop-grade companion: browser native notifications for user questions and approval interactions, screen capture model tool, multi-agent tiling grid view, and lightweight Tauri desktop shell.'
-  zh: '桌面级增强套件：原生提问/审批交互通知、屏幕截图工具、多智能体平铺网格视图与轻量级 Tauri 桌面外壳。'
+  en: 'Desktop companion with interaction notifications, an opt-in screen capture tool, a multi-agent tiling grid, configurable desk-pet animations, and a Tauri shell with tray controls and updates.'
+  zh: '桌面增强套件：交互通知、可选屏幕截图工具、多智能体平铺网格、可配置桌宠动画，以及带托盘控制和更新功能的 Tauri 外壳。'
