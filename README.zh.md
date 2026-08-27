@@ -2144,6 +2144,7 @@ dsh plugin --profile web add dshmarket
 - [hxy91819/dsh-auth](https://github.com/hxy91819/dsh-auth) — 通过 Caddy forward_auth 为 DeepSeek Harness Web 提供管理员登录，含 Argon2id 口令、可撤销会话、中英界面和侧栏原生退出。
 - [iiiweiii/dsh-guardwall](https://github.com/iiiweiii/dsh-guardwall) — 在安装前体检本地、npm 与 GitHub 插件源码，运行时拦截命中配置阈值的高风险工具调用，审计输出中的密钥模式，并写入 HMAC 链式本地审计日志。
 - [ilharp/dsh-tool-approval](https://github.com/ilharp/dsh-tool-approval) — 手动审批模式（Manual/Ask Mode）。
+- [J0ss077/dsh-always-require-tools-approval](https://github.com/J0ss077/dsh-always-require-tools-approval) — 在配置的工具（默认 bash、pwsh）执行前要求一次性用户审批：受控工具暂停并询问，其余委托执行，缺少审批渠道时默认拒绝。
 - [Jiao-XXX/dsh-auto-approve](https://github.com/Jiao-XXX/dsh-auto-approve) — 在 workspace-write 与 danger-full-access 之间增加 `auto` 权限档：分类器一次性放行例行沙箱升级，危险或不确定的操作仍转人工审批。
 - [jilian-dsh/dsh-rule-engine](https://github.com/jilian-dsh/dsh-rule-engine) — dsh 规则执行引擎：解析 AGENTS.md、硬拦违反规则的工具调用、文本纠察与审计、/guard 命令、版本化文件守卫、自由区域支持（引擎跳过自由区内容）。
 - [JohnXu22786/safety-net](https://github.com/JohnXu22786/safety-net) — dsh 破坏性命令拦截闸门：解析 shell 语义、依据 41 条内置规则判定风险，将 rm -rf、git reset --hard、git push --force 等不可逆命令挡在确认关卡之前。
