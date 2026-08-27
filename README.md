@@ -44,6 +44,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 <!-- BEGIN TOC -->
 - [Plugins](#plugins)
+  - [AGI Architecture Exploration](#agi-architecture-exploration)
   - [UI Enhancements](#ui-enhancements)
   - [Usage & Billing](#usage--billing)
   - [Themes & Appearance](#themes--appearance)
@@ -72,6 +73,10 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ## Plugins
 
 <!-- BEGIN PLUGINS -->
+### AGI Architecture Exploration
+
+- [FuRongJun-1999/dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) - White-box AGI architecture exploration: metacognition (self-cognition loop), continual learning (knowledge flywheel), world model (condition space, spatiotemporal memory graph), self-improvement (bootstrap discipline), zero-LLM white-box pipeline, and auditable trust guardrails.
+
 ### UI Enhancements
 
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) - Replaces the "Deep diving..." turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.
@@ -912,7 +917,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) - Self-maintaining handoff memory per working directory and git branch: records turns, folds them into concise Markdown, and injects the result into future sessions from ~/.agent/agent-handoff, byte-compatible with pi-handoff.
 - [flymysql/dsh-memory](https://github.com/flymysql/dsh-memory) - Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.
 - [freehul/sgme](https://github.com/freehul/sgme) - ShiGuang Memory Engine (SGME) bridge: multi-agent shared long-term memory via HTTP — L0/L1/L1.5/L2 distillation, scenario-based injection, unified search, and proactive care signals (memory_search / wiki_search / signal_pull / signal_claim / signal_ack), installable as `dsh-sgme`.
-- [FuRongJun-1999/dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) - AGI long-term memory base: multi-agent spatiotemporal memory graph, self-evolving knowledge flywheel, self-cognition, and auditable trust guardrails.
 - [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) - File-based cross-session memory: plain Markdown memory files with automatic retrieval injection, format-compatible with Claude Code's CLAUDE.md and memory files, so migrating is a manual file copy.
 - [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) - Bounded local memory with CBDC authority gating: SQLite + FTS5 claims, scoped recall with explainable use/verify/ignore decisions and a full audit trail, /memory commands, ≤3-claim/1200-char injection per call, no extra model call.
 - [giter00/dsh-headroom](https://github.com/giter00/dsh-headroom) - Automatic context compression for DeepSeek Harness: compresses tool outputs before they reach the model and keeps every lossy compression reversible via CCR retrieval tools.
