@@ -1,0 +1,6 @@
+url: https://github.com/sqfcyily/dsh-workspace-files
+name: sqfcyily/dsh-workspace-files
+category: ui
+description:
+  en: Browse the directories/files of the workspace in DeepSeek Harness Web GUI and display file changes in conjunction with Git.
+  zh: 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
