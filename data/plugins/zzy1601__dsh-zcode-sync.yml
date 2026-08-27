@@ -1,0 +1,6 @@
+url: https://github.com/zzy1601/dsh-zcode-sync
+name: zzy1601/dsh-zcode-sync
+category: model
+description:
+  en: 'Syncs ZCode custom model providers into DeepSeek Harness: merges providers and API keys from ZCode''s config into the llm-pi-ai namespace via in-process settings/credentials services, gated by llm-pi-ai''s own validation; idempotent startup/interval sync, zero hardcoded paths.'
+  zh: '把 ZCode 的自定义模型提供商自动同步进 DeepSeek Harness——通过进程内 settings/credentials 服务把 config.json 里的 provider 与 API Key 合并进 llm-pi-ai 命名空间，写入受其自带校验把关；启动/周期/配置变更时幂等同步，零硬编码路径。'

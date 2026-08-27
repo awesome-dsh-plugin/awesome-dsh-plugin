@@ -739,6 +739,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) - Connects ChatGPT accounts through OAuth, switches among them manually or automatically, and adds Codex models with usage limits to DeepSeek Harness.
 - [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) - Maps a stable agent_key to an exact provider/model pair declared in role Markdown front matter, validates the pair against the live DSH model registry before spawning, and maintains per-workspace prefercmd and memory evolution files.
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card to tune the DSH LLM auto-retry policy (retry count, backoff, jitter) live from Settings → General.
+- [zzy1601/dsh-zcode-sync](https://github.com/zzy1601/dsh-zcode-sync) - Syncs ZCode custom model providers into DeepSeek Harness: merges providers and API keys from ZCode's config into the llm-pi-ai namespace via in-process settings/credentials services, gated by llm-pi-ai's own validation; idempotent startup/interval sync, zero hardcoded paths.
 
 ### Identity & Communication
 
@@ -2286,6 +2287,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhaenggg/dsh-ssh-remote](https://github.com/zhaenggg/dsh-ssh-remote) - SSH remote execution set: give a session an ssh:// workspace and every file, command, and shell operation runs on the remote host.
 - [zhu1090093659/dsh-web-ui#packages/dsh-remote-web-ui](https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) - Remote control of a dsh web workspace from phone or PC: QR-code pairing through a token-gated channel, SSE real-time sync, and separate mobile and full desktop GUI modes.
 - [zylzyqzz/dsh-mobile-pwa](https://github.com/zylzyqzz/dsh-mobile-pwa) - Complete mobile PWA for DSH, built on dsh-mobile-gate: secure remote-access gateway plus install-to-homescreen (manifest + service worker), offline capability, touch gestures (pull-to-refresh, edge-swipe back, pinch-zoom font), agent-done push notifications, and touch-first layout — desktop unaffected.
+- [zzy1601/dsh-weixin-bot](https://github.com/zzy1601/dsh-weixin-bot) - Drive a native DSH agent from WeChat ClawBot: multi-turn context per chat, joins the default agent preset so the full toolset executes real tasks, and pushes live progress mid-run (thinking acks, tool-call counters, heartbeats).
 
 ### Plugin Markets & Managers
 
