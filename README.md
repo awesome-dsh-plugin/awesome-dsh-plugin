@@ -751,6 +751,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) - Connects ChatGPT accounts through OAuth, switches among them manually or automatically, and adds Codex models with usage limits to DeepSeek Harness.
 - [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) - Maps a stable agent_key to an exact provider/model pair declared in role Markdown front matter, validates the pair against the live DSH model registry before spawning, and maintains per-workspace prefercmd and memory evolution files.
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card to tune the DSH LLM auto-retry policy (retry count, backoff, jitter) live from Settings → General.
+- [zhangjunjesse/dsh-claude-driver](https://github.com/zhangjunjesse/dsh-claude-driver) - Run the main session model on a local Claude Code subscription through the official Claude Agent SDK, taking over the llm/stream route for the claude-code provider, with token-level streaming, session resume, and DSH tools bridged in over MCP so they keep DSH sandbox and approval.
 
 ### Identity & Communication
 

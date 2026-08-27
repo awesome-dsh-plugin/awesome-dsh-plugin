@@ -751,6 +751,7 @@ dsh plugin --profile web add dshmarket
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) — 通过 OAuth 连接 ChatGPT 账号，支持手动或自动切换，并为 DeepSeek Harness 添加带用量限额信息的 Codex 模型。
 - [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) — 将稳定的 agent_key 映射到角色 Markdown 文件 front matter 中声明的具体 provider/model 组合，spawn 前会对照 DSH 模型注册表校验该组合，并按工作区维护 prefercmd 与 memory 进化文件。
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) — 在 DSH 设置里调整 LLM 自动重试的次数与退避时间并实时生效的设置卡片。
+- [zhangjunjesse/dsh-claude-driver](https://github.com/zhangjunjesse/dsh-claude-driver) — 让会话主模型跑在本机 Claude Code 订阅上：经官方 Claude Agent SDK 接管 claude-code provider 的 llm/stream 路由，支持 token 级流式、会话 resume 续接，并把 DSH 工具经 MCP 桥接进去以保留 DSH 的沙箱与审批。
 
 ### 🆔 身份与通信
 
