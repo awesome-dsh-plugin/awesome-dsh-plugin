@@ -1,0 +1,6 @@
+url: https://github.com/lkh081231/screenshot-feedback-hook-mcp/tree/main/dsh-plugin
+name: lkh081231/screenshot-feedback-hook-mcp#dsh-plugin
+category: vision
+description:
+  en: Adds a take screenshot tool plus two optional automatic capture points, putting the screen into the conversation as an image block; requires an image-capable model.
+  zh: 一个截图工具，外加两个默认关闭的自动截图时机。需要模型支持图片输入。

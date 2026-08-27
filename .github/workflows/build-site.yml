@@ -92,6 +92,15 @@ jobs:
           path: data/downloads.json
           key: downloads-v1-${{ github.run_id }}
           restore-keys: downloads-v1-
+      # data/updates.json gets its own cache entry, NOT a line in the shared
+      # list above — same reasoning as downloads below: adding a path to the
+      # shared list derives a new cache version and forces every other probe
+      # into the cold start that spent a whole quota mid-run (#1673).
+      - uses: actions/cache@v4
+        with:
+          path: data/updates.json
+          key: updates-v1-${{ github.run_id }}
+          restore-keys: updates-v1-
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -121,6 +130,14 @@ jobs:
             node scripts/probe-downloads.mjs
             node scripts/probe-stars.mjs
             node scripts/probe-readmes.mjs
+            # Update notes for the market's "what changed" dialog (#294): the
+            # latest release plus a short commit tail, probed here once a day
+            # so no end-user market ever has to ask GitHub itself — anonymous
+            # REST quota is shared per egress IP and already unreliable.
+            # data/updates.json is committed AND cached above (same shape as
+            # downloads), and absence of notes is a normal state downstream,
+            # so this probe never blocks the build.
+            node scripts/probe-updates.mjs
           else
             echo "push build with cached probe data — skipping probes"
           fi
@@ -128,6 +145,13 @@ jobs:
           # submission can 404 later without anyone touching the entry, and the
           # set is small enough that there is no reason to sample it (#1619).
           node scripts/probe-tarballs.mjs
+          # Same reasoning, same shape, for screenshots. The PR check validates
+          # that an image URL is well-formed and on GitHub's hosting, never that
+          # it resolves — so a dead link merged clean and published as a broken
+          # picture in the storefront. 41 of 773 were dead the first time anyone
+          # asked. Neither probe blocks the build: a dead URL is dropped from
+          # the published data, not turned into a failure.
+          node scripts/probe-screenshots.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -165,3 +189,14 @@ jobs:
         run: |
           npm install -g npm@latest  # trusted publishing needs npm >= 11.5
           node scripts/publish-catalog.mjs
+      # The update-notes payload, published to npm for the same reason as the
+      # catalog above — Pages IS GitHub, and the proxies that would carry it
+      # refuse non-github.com hostnames — but as its OWN package: notes are
+      # read only by a user who opened one dialog, so folding them into the
+      # catalog tarball would multiply every consumer's daily download for
+      # data most never request. See scripts/publish-updates.mjs.
+      - name: publish the update notes to npm
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          npm install -g npm@latest  # trusted publishing needs npm >= 11.5
+          node scripts/publish-updates.mjs

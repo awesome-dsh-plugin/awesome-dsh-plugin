@@ -1,0 +1,6 @@
+url: https://github.com/lijinhao315/dsh-question-index
+name: lijinhao315/dsh-question-index
+category: ui
+description:
+  en: 'Question index: an ordered, collapsible list of your asked questions floating on the right side of the conversation; click a question to jump the session to that point.'
+  zh: '提问索引：在会话右侧按序展示你提过的问题列表，可收起；点击某条即可把会话滚动跳转到对应的提问位置。'

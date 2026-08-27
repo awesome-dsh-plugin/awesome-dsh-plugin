@@ -224,6 +224,50 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
   if (shotsBroken) process.exit(1)
 }
 
+// Everything above checks the shape of a screenshot URL and the host it points
+// at. Nothing there asks whether the image is actually served, so a 404 passed
+// the PR check, passed the gate, merged, and shipped as a broken picture in
+// every storefront — 41 of 773 were in that state when the probe first ran.
+// probe-screenshots.mjs asks; this drops what it found gone.
+//
+// Absent verdict means live, deliberately: a URL the probe never reached (5xx,
+// throttle, or a run that did not happen) must keep publishing. Only a recorded
+// `ok: false` — which the probe writes for 404/410 alone — removes an image.
+// An entry whose shots all die loses the field entirely rather than shipping an
+// empty array, which is the state every entry had before screenshots existed.
+{
+  // The author's own repository wins. probe-screenshots.mjs reads
+  // `screenshots.json` from beside the plugin's package.json and resolves it to
+  // absolute URLs here; data/screenshots.json above is what every entry that
+  // predates the convention still uses. An author who adopts the file becomes
+  // the single source for their own entry — their key in the legacy file is
+  // then redundant and prune-legacy-screenshots.mjs removes it, so the old file
+  // drains rather than growing a second, competing copy of the same data.
+  const DECLARED_FILE = 'data/screenshots-declared.json'
+  const declaredMap = fs.existsSync(DECLARED_FILE) ? JSON.parse(fs.readFileSync(DECLARED_FILE, 'utf8')) : {}
+  let adopted = 0
+  for (const [key, list] of Object.entries(declaredMap)) {
+    if (!Array.isArray(list) || !list.length) continue
+    if (shotsMap[key] !== undefined) adopted++
+    shotsMap[key] = list
+  }
+  if (Object.keys(declaredMap).length) {
+    console.log(`screenshots: ${Object.keys(declaredMap).length} entry/entries declare their own (${adopted} superseding ${SCREENSHOTS_FILE})`)
+  }
+
+  const LIVE_FILE = 'data/screenshots-live.json'
+  const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
+  let dropped = 0
+  for (const [key, list] of Object.entries(shotsMap)) {
+    if (!Array.isArray(list)) continue
+    const live = list.filter((shot) => verdicts[shot]?.ok !== false)
+    dropped += list.length - live.length
+    if (live.length) shotsMap[key] = live
+    else delete shotsMap[key]
+  }
+  if (dropped) console.log(`screenshots: dropped ${dropped} image(s) confirmed 404/410 by probe-screenshots.mjs`)
+}
+
 // derive repo/subdir install specs and the detail-page slug once
 for (const e of ordered) {
   const repoPath = e.url.replace('https://github.com/', '')
@@ -260,19 +304,56 @@ const jsonld = (url) => JSON.stringify({
   itemListElement: ordered.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 
-// star-ranked card grid; `only` limits to one category (category pages)
+// Thousands separators, en-US in both locales on purpose: the number is a
+// count, not prose, and letting it follow the locale would make the two
+// READMEs' generated pages differ by separator alone on every rebuild.
+const fmtNum = (n) => n.toLocaleString('en-US')
+
+// Default order for the card grid: downloads first, then everything with no
+// npm package at all, ranked among themselves by stars.
+//
+// `downloads == null` means "not published to npm", NOT "published and never
+// installed" — see where e.downloads is assigned. Coercing it to 0 would sort
+// 55% of the list as if it had been measured and found unused, and would put a
+// widely-starred GitHub-only plugin below an npm package with three installs.
+// So nulls are partitioned to the back and ordered by the signal they do have.
+//
+// The in-page `sort=dl` comparator in site/template.html must stay equivalent
+// to this: it is the same ordering, recomputed client-side. If they drift, the
+// first paint reshuffles on load for everyone with JS.
+const byDownloads = (a, b) => {
+  const ad = a.downloads, bd = b.downloads
+  if ((ad == null) !== (bd == null)) return ad == null ? 1 : -1
+  if (ad != null && bd != null && ad !== bd) return bd - ad
+  return (b.stars ?? -1) - (a.stars ?? -1)
+}
+
+// download-ranked card grid; `only` limits to one category (category pages)
 function buildRows(loc, only) {
   const group = ordered
     .filter((e) => !only || e.cat === only)
     .slice()
-    .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
+    .sort(byDownloads)
   return group.map((e) => {
     const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
     const short = shortName(e.name)
-    return `    <li class="card" data-cat="${e.cat}">
+    // data-* carry what the in-page sort and filters need. Absent attribute,
+    // not a zero: `downloads` is null for entries with no npm package at all,
+    // and `data-dl="0"` would rank them alongside a published package nobody
+    // installs. The client reads presence, so omitting is the encoding.
+    const attrs = [
+      `data-cat="${e.cat}"`,
+      e.downloads != null ? `data-dl="${e.downloads}"` : '',
+      e.stars != null ? `data-stars="${e.stars}"` : '',
+      `data-added="${e.added}"`,
+      e.npm ? 'data-npm="1"' : '',
+      `data-name="${esc(short.toLowerCase())}"`,
+    ].filter(Boolean).join(' ')
+    return `    <li class="card" ${attrs}>
       <div class="top">
         <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
         ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
+        ${e.downloads != null ? `<span class="dl" translate="no" title="${loc.strings.P_DOWNLOADS}">${fmtNum(e.downloads)}</span>` : ''}
       </div>
       <a class="desc-link" href="${loc.urlPath}p/${e.slug}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
       <div class="foot">
@@ -450,6 +531,14 @@ for (const loc of LOCALES) {
 // Plugin detail pages: /p/{owner}/{repo}[--subdir]/ per locale
 const detailMaster = fs.readFileSync('site/detail-template.html', 'utf8')
 const readmes = fs.existsSync('data/readmes.json') ? JSON.parse(fs.readFileSync('data/readmes.json', 'utf8')) : {}
+// Update notes (probe-updates.mjs): the latest release's notes and a short
+// tail of recent commits, published as docs/updates.json for market-side
+// consumers. Kept OUT of plugins.json on purpose: that file is fetched by
+// every market on every open, and 1,300 release bodies would multiply its
+// size for data only a user opening one update dialog ever reads. Absence is
+// normal — repos without releases still carry their commit tail, and an
+// entry missing here means "no notes available", never an error downstream.
+const updates = fs.existsSync('data/updates.json') ? JSON.parse(fs.readFileSync('data/updates.json', 'utf8')) : {}
 
 // render a plugin README to safe HTML: raw HTML dropped, headings demoted,
 // relative links/images resolved against the repo (probe supplies the bases)
@@ -538,6 +627,10 @@ for (const loc of LOCALES) {
 
     const specs = [
       e.stars != null ? `<span>${loc.strings.P_STARS} <b>★ ${e.stars}</b></span>` : '',
+      // Only when the number exists. An entry with no npm package has no
+      // download figure to report, and printing "0" would read as a measured
+      // result rather than an absent one.
+      e.downloads != null ? `<span>${loc.strings.P_DOWNLOADS} <b translate="no">${fmtNum(e.downloads)}</b></span>` : '',
       `<span>${loc.strings.P_CAT} <a href="${catUrl}">${loc.categories[e.cat]}</a></span>`,
       `<span>${loc.strings.P_ADDED} <b>${e.added}</b></span>`,
       e.npm ? `<span>npm <a href="https://www.npmjs.com/package/${e.npm}" rel="noopener" translate="no">${esc(e.npm)}</a></span>` : '',
@@ -765,6 +858,30 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   fs.writeFileSync('docs/readmes.json', JSON.stringify(payload) + '\n')
   console.log(`readmes.json: ${payload.count} entries, ${(fs.statSync('docs/readmes.json').size / 1048576).toFixed(1)} MB`)
+}
+
+// Public update-notes payload: /updates.json — what a consumer needs to show
+// "what changed" between an installed version and HEAD without touching the
+// GitHub API (whose anonymous budget is shared per egress IP and unusable
+// behind common proxies). One file fetched once per consumer, like readmes;
+// only listed entries, so delisting removes the notes the same build it
+// removes everything else about a plugin.
+{
+  const listed = new Set(ordered.map((e) => e.url))
+  const payload = {
+    name: 'awesome-dsh-plugin',
+    url: ORIGIN,
+    updated: registry.updated,
+    count: 0,
+    updates: {},
+  }
+  for (const [url, entry] of Object.entries(updates)) {
+    if (!listed.has(url)) continue
+    payload.updates[url] = entry
+    payload.count++
+  }
+  fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
+  console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
