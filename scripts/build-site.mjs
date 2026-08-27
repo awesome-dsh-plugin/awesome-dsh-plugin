@@ -691,9 +691,8 @@ for (const loc of LOCALES) {
     const commentsSection = commentsConfig ? `<section class="panel comments" aria-labelledby="${commentsId}-title">
     <h2 id="${commentsId}-title">${loc.strings.P_COMMENTS}</h2>
     <p class="note">${loc.strings.P_COMMENTS_NOTE}</p>
-    <button class="comments-load" type="button" aria-controls="${commentsId}-mount" data-comments="${esc(JSON.stringify(commentsConfig))}" data-loading="${esc(loc.strings.P_COMMENTS_LOADING)}" data-ready="${esc(loc.strings.P_COMMENTS_READY)}" data-error="${esc(loc.strings.P_COMMENTS_ERROR)}">${loc.strings.P_COMMENTS_LOAD}</button>
     <p class="comments-status" role="status" aria-live="polite"></p>
-    <div class="comments-mount giscus" id="${commentsId}-mount"></div>
+    <div class="comments-mount giscus" id="${commentsId}-mount" data-comments="${esc(JSON.stringify(commentsConfig))}" data-loading="${esc(loc.strings.P_COMMENTS_LOADING)}" data-ready="${esc(loc.strings.P_COMMENTS_READY)}" data-error="${esc(loc.strings.P_COMMENTS_ERROR)}" data-retry="${esc(loc.strings.P_COMMENTS_RETRY)}"></div>
     <noscript><p class="note"><a href="https://github.com/${COMMENTS.repo}/discussions" rel="noopener">${loc.strings.P_COMMENTS_FALLBACK}</a></p></noscript>
   </section>` : ''
 
