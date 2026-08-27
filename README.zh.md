@@ -1212,6 +1212,8 @@ dsh plugin --profile web add dshmarket
 - [Max-Null/dsh-draft-polish](https://github.com/Max-Null/dsh-draft-polish) — DSH 输入框草稿润色：发送键左侧一键调用 LLM 润色草稿，可携带会话上下文，模型渠道可配置。
 - [MAXeaglet/dsh-bash-terminal](https://github.com/MAXeaglet/dsh-bash-terminal) — 一个 shell 工具：Windows 上统一执行 PowerShell / Git Bash / WSL，外加交互式 PTY 终端，默认终端由用户在设置中选择。
 - [MaxHou-infinity/dsh-scout](https://github.com/MaxHou-infinity/dsh-scout) — 证据驱动的公司与岗位尽调插件：登记带证据等级的来源、添加受证据边界约束的结论、用官方登记信息核验公司主体，并生成推进/核验/停止三态报告，附核验清单与面试问题。
+- [maxmilian/dsh-grafana-query](https://github.com/maxmilian/dsh-grafana-query) — 面向 Grafana 的只读工具，经数据源代理查询指标：实例健康、数据源列表、instant 与 range PromQL 查询、当前告警状态与已配置的告警规则。range 查询会按点数预算降采样；调用方显式指定的 step 若会超量则直接拒绝，而不是静默改写，避免模型拿到与预期不同分辨率的数据。
+- [maxmilian/dsh-odoo](https://github.com/maxmilian/dsh-odoo) — 经 JSON-RPC 的 Odoo 只读工具：服务器信息、模型字段自省，以及受限的 search_read——仅限白名单模型，且 domain 字段名不允许包含点号，因此无法沿关联关系穿透。草稿创建工具需显式开启 allowWrite 才会注册，且仅限 sale.order 与 project.task，草稿状态由插件强制。
 - [megatronyy/dsh-tradingagents](https://github.com/megatronyy/dsh-tradingagents) — /trading-agent 命令背后的 A 股多智能体分析，移植自 TradingAgents-AShare：14 个角色（分析师、多空辩论、风控、交易员）经 dsh 已配置的模型路由协作产出完整投研报告。
 - [minyang-chen/dsh-stock-lookup](https://github.com/minyang-chen/dsh-stock-lookup) — 通过 SEC EDGAR 将公司名称或股票代码解析为已验证的股票代号，再从 yahoo-finance2 获取实时行情，包括价格、市盈率、每股收益、市值、52周区间和股息率。
 - [MlittleFriend/dsh-character-profiler](https://github.com/MlittleFriend/dsh-character-profiler) — 角色一致性工具包：性格侧写档案、出场权重统计与行为偏离检测。
@@ -2104,6 +2106,7 @@ dsh plugin --profile web add dshmarket
 - [lxp731/agents-plugins#dsh-service-control](https://github.com/lxp731/agents-plugins/tree/main/dsh-service-control) — 通过 `dsh --profile ctl` 管理 DSH 服务：systemd 生命周期（安装、启停、重启、自启、卸载）、持久化配置、健康探测与日志，附带 shell 补全与自更新。
 - [mangomt/dsh-power](https://github.com/mangomt/dsh-power) — DSH Web 悬浮电源坞:一键重启或优雅关机,仅限环回访问,零依赖。
 - [Max-Null/dsh-skill-mcp-center](https://github.com/Max-Null/dsh-skill-mcp-center) — DeepSeek Harness 技能与 MCP 管理中心：浏览并启停用户/项目技能，热增删改 MCP 服务器（免重启），侧边栏实时展示各服务器状态。
+- [maxmilian/dsh-sentry](https://github.com/maxmilian/dsh-sentry) — 面向 Sentry 的只读工具：项目列表、组织或项目范围的议题搜索、单个议题详情，以及最新或指定 event 的裁剪后堆栈。局部变量、请求头与请求体、查询字符串、依赖清单以及疑似机密的 tag 会在 event 交给模型前移除；超大 event 会依次降级源码上下文、面包屑与栈帧，而不是直接失败。
 - [memorax-ai/dsh-webui-studio](https://github.com/memorax-ai/dsh-webui-studio) — 面向 DSH WebUI 插件的可视化开发工作室，提供隔离的 Git worktree、真实官方 WebUI 预览、源码编辑、Patch 检查、构建与验证。
 - [mexiaosqwq/want-a-init](https://github.com/mexiaosqwq/want-a-init) — 模型驱动 /init 命令：让 agent 分析当前仓库并生成/更新高信号 AGENTS.md，并通过常驻 system prompt 提醒持续维护。
 - [MichengAI/dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) — 在设置里管理本地 DSH 技能，并只读查看公共 Agent 技能。
