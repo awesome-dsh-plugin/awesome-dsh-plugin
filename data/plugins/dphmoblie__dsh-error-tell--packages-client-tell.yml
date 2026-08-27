@@ -1,5 +1,5 @@
-url: https://github.com/dphmoblie/dsh-error-tell
-name: dphmoblie/dsh-error-tell
+url: https://github.com/dphmoblie/dsh-error-tell/tree/main/packages/client-tell
+name: dphmoblie/dsh-error-tell#client-tell
 category: dev
 description:
   en: 'Boot-time watchdog for DSH web: detects broken plugins, disables them persistently so the UI opens, with quarantine audit, automatic probe recovery, and one-click restore.'
