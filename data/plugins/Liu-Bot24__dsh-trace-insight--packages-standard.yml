@@ -1,0 +1,6 @@
+url: https://github.com/Liu-Bot24/dsh-trace-insight/tree/main/packages/standard
+name: Liu-Bot24/dsh-trace-insight#standard
+category: dev
+description:
+  en: Read-only trajectory review with rule analysis, model explanations, evidence navigation, and run comparison in a conversation tab.
+  zh: 在会话标签中提供只读轨迹复盘、规则分析、模型解读、证据定位和运行对比。
