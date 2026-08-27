@@ -1401,6 +1401,7 @@ dsh plugin --profile web add dshmarket
 - [linenxi-ctrl/dsh-vision](https://github.com/linenxi-ctrl/dsh-vision) — 外挂识图插件：鲸鱼按钮配置面板、图片识图自动回传、模型自主截图识图工具。
 - [linxuhao/Deepseek-Continuity](https://github.com/linxuhao/Deepseek-Continuity) — 本地生成图像/配音/音乐/音效并听写，同一性锁定：角色、动物、道具与配音角色定妆定声一次，之后每次调用复用同一份参考；退化产物（接近纯色的图、静音的音频）被拒绝而不是当成成功返回；生成的台词可以听写回文字，好让吞掉结尾的克隆暴露出来。空闲时引擎卸载显存，生图与听写也可改指向任意 OpenAI 形状的 API 而不用本地 Vulkan 后端。
 - [liustack/modlens](https://github.com/liustack/modlens) — 为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。
+- [lkh081231/screenshot-feedback-hook-mcp#dsh-plugin](https://github.com/lkh081231/screenshot-feedback-hook-mcp/tree/main/dsh-plugin) — 一个截图工具，外加两个默认关闭的自动截图时机。需要模型支持图片输入。
 - [lsjspl/dsh-plugin-grok2api-media-tool](https://github.com/lsjspl/dsh-plugin-grok2api-media-tool) — 让 dsh 通过 grok2api 的 API 获得生成图片与视频能力。
 - [Max-Null/dsh-capture](https://github.com/Max-Null/dsh-capture) — DSH 双引擎截图：思灵桌面壳内，全局快捷键/托盘打开全屏框选浮层（多显示器、逐屏像素级抓帧），选区定格后工具条就地画红框，一次确认送进输入框；纯 DSH（浏览器）下由输入框相机按钮经 getDisplayMedia 捕获屏幕，复用同一套单阶段框选+标注遮罩。均走官方附件通道。
 - [maxwell-feng/dsh-tesseract-ocr](https://github.com/maxwell-feng/dsh-tesseract-ocr) — 本地 Tesseract 识别附加图片：只把识别出的文字发送给模型，图片字节不进入上下文；视觉直通可选开启。
