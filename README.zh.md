@@ -721,6 +721,7 @@ dsh plugin --profile web add dshmarket
 - [ringoage/dsh-subagent-model-picker](https://github.com/ringoage/dsh-subagent-model-picker) — 主模型选择器旁的子代理模型选择器：按会话选择模型与思考程度，应用到所有进程内子代理。
 - [seriousz158/dsh-codex-use#dsh-codex-appserver](https://github.com/seriousz158/dsh-codex-use/tree/main/packages/dsh-codex-appserver) — 通过本机 Codex App Server，将 OpenAI Codex（ChatGPT）作为可选 DSH Provider。
 - [SeverusZh/dsh-plugin-subagent-director](https://github.com/SeverusZh/dsh-plugin-subagent-director) — 子代理 LLM 供应商/模型选择，支持角色模板。
+- [sharewiner/dsh-model-management](https://github.com/sharewiner/dsh-model-management) — 管理 DSH 默认模型、Provider 与模型可见性，并支持可选的 OpenAI Responses 联网搜索。
 - [shuind/dsh-codex-harness](https://github.com/shuind/dsh-codex-harness) — 在 DSH 中提供 Codex preset：引入 Codex 风格的系统提示词与工具契约，支持图片输入、可选思考强度、Fast 优先级请求、OpenAI Responses 网页搜索与远程压缩，以及在 Web 设置上下文容量；旨在给来源于Codex的token提供适配harness，并兼容享受DSH生态。
 - [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) — 按 default、planner 和 subagent 角色将代理请求路由到可配置模型，在计划模式下自动使用 planner，并提供逐角色推理强度与 Web UI 配置。
 - [songoao25/dsh-chatgpt-subscription](https://github.com/songoao25/dsh-chatgpt-subscription) — 通过官方 OAuth 绑定你的 ChatGPT 账号，在 DSH 内直接使用 ChatGPT 模型对话，消耗 Plus/Pro 订阅额度。
