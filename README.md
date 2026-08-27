@@ -646,6 +646,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [shawnlone/dsh-theme-tuner](https://github.com/shawnlone/dsh-theme-tuner) - Add a theme-adjustment panel under Appearance to customize accent, background, foreground, contrast and gradient, applied live through theme token overrides.
 - [Sim-xia/dsh-vscode-theme](https://github.com/Sim-xia/dsh-vscode-theme) - Imports .vsix theme files made for Visual Studio Code and applies them to the DSH Web UI.
 - [skymecode/dsh-deep-diving](https://github.com/skymecode/dsh-deep-diving) - Adds selectable animated skins to the "Deep diving..." status row, with configurable size and optional status-text replacement.
+- [SLin-code/dsh-custom-skin](https://github.com/SLin-code/dsh-custom-skin) - Browser-local wallpaper and translucent-panel controls for DSH Web, with multiple images, fit and position choices, shading, blur, and panel opacity.
 - [Small-tailqwq/dsh-deep-whale#maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier) - Whale-girl skin series for the DSH Web UI (maid-atelier).
 - [Smith-yue/harness-plugin](https://github.com/Smith-yue/harness-plugin) - Adds two switchable themes, built-in and local-folder background slideshows, and per-session token usage details to DeepSeek Harness Web and Desktop.
 - [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) - A DeepSeek Chat-style blue-whale color skin. Light and dark follow the built-in appearance.

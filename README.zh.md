@@ -646,6 +646,7 @@ dsh plugin --profile web add dshmarket
 - [shawnlone/dsh-theme-tuner](https://github.com/shawnlone/dsh-theme-tuner) — 在「外观」下增加一个主题调节面板，可自定义强调色/背景色/前景色/对比度/渐变度，并实时生效。
 - [Sim-xia/dsh-vscode-theme](https://github.com/Sim-xia/dsh-vscode-theme) — 导入为 Visual Studio Code 设计的 .vsix 主题文件并应用到 DSH Web UI。
 - [skymecode/dsh-deep-diving](https://github.com/skymecode/dsh-deep-diving) — 为“Deep diving...”状态行添加可选动态皮肤，并支持调整尺寸和可选状态文案替换。
+- [SLin-code/dsh-custom-skin](https://github.com/SLin-code/dsh-custom-skin) — DSH Web 的浏览器本地壁纸与半透明面板插件，支持多图切换、填充与位置选择、遮罩、模糊和面板透明度调节。
 - [Small-tailqwq/dsh-deep-whale#maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier) — DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
 - [Smith-yue/harness-plugin](https://github.com/Smith-yue/harness-plugin) — 为 DeepSeek Harness Web 与桌面端提供两套可切换主题、内置及本地文件夹背景轮播和逐会话 Token 用量明细。
 - [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) — 复刻 DeepSeek Chat 蓝鲸配色的皮肤，亮色/深色跟随系统外观。
