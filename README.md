@@ -234,6 +234,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [kkbsgg/dsh-balance](https://github.com/kkbsgg/dsh-balance) - Shows the selected model provider's account balance next to the composer's model seat once a model and reasoning effort are selected.
 - [kongdexu/dsh-nav-pointer](https://github.com/kongdexu/dsh-nav-pointer) - Vertical message pointer rail on the left edge of the chat: one dash per user message, click to scroll to that message, hover for a preview bubble.
 - [kouyichi/dsh-tui-app](https://github.com/kouyichi/dsh-tui-app) - Interactive terminal chat app for dsh: streaming conversation, tool cards, jobs panel, full-text search, trajectory replay, multi-session tabs, and A2A dispatch (Ink-based).
+- [kuanfu0430/dsh-sidebar-branch-chat](https://github.com/kuanfu0430/dsh-sidebar-branch-chat) - Adds a Branch Chat tab to dsh-better-sidebar that opens independent archived sessions with a head/middle/tail context digest and the same tools as the main agent.
 - [l541402398/dsh-file-uploads](https://github.com/l541402398/dsh-file-uploads) - Upload arbitrary local files from the Web composer, show pending cards, and manage stored files in Settings.
 - [lakabuji-arch/dsh-model-accordion](https://github.com/lakabuji-arch/dsh-model-accordion) - Provider-folded model selector for the DSH Web composer with catalog-driven reasoning effort choices.
 - [Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) - Fluid streaming rendering and smooth scrolling for the DeepSeek Harness Web UI.
