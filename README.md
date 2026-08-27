@@ -1025,7 +1025,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) - Write notes and memos to flomo (浮墨笔记) from any agent via the flomo_send tool, configured once with the flomo API URL or API Key.
 - [zhengjy01/dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) - Notion connector for DeepSeek Harness: search, read, query, create, update, and append Notion pages and databases via six agent tools, with a Web settings page — configured once with an Integration Token.
 - [zhujunpeng12/dsh-memory-system](https://github.com/zhujunpeng12/dsh-memory-system) - Local-first persistent memory for DeepSeek Harness: bounded pre-step hot-memory injection, exact and Chinese-bigram BM25 cold recall, six agent tools, approval-gated lease-lock writes with recovery receipts, and read-only governance and trajectory-review candidates.
-- [zilliztech/memsearch#dsh](https://github.com/zilliztech/memsearch/tree/main/plugins/dsh) - Shared Markdown memory for DSH and other coding agents, with automatic capture, pre-step context injection, searchable recall, and memory-to-skill self-evolution through a review panel.
+- [zilliztech/memsearch#MemSearch](https://github.com/zilliztech/memsearch/tree/main/plugins/dsh) - Shared Markdown memory for DSH and other coding agents, with automatic capture, pre-step context injection, searchable recall, and memory-to-skill self-evolution through a review panel.
 - [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) - Long-term memory for DSH agents — durable, inspectable memories with recall, search, browse and knowledge-graph tools, import from ten other AI coding tools, and a settings page.
 
 ### Tools & Capabilities

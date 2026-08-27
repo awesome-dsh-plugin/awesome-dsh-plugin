@@ -1,5 +1,5 @@
 url: https://github.com/zilliztech/memsearch/tree/main/plugins/dsh
-name: zilliztech/memsearch#dsh
+name: zilliztech/memsearch#MemSearch
 category: memory
 description:
   en: 'Shared Markdown memory for DSH and other coding agents, with automatic capture, pre-step context injection, searchable recall, and memory-to-skill self-evolution through a review panel.'
