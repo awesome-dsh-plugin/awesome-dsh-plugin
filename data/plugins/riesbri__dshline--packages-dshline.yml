@@ -1,0 +1,6 @@
+url: https://github.com/riesbri/dshline/tree/main/packages/dshline
+name: riesbri/dshline#dshline
+category: ui
+description:
+  en: Terminal-native TUI frontend for DeepSeek Harness that presents sessions, models, plugins, jobs, subagents, todos, and provider configuration through Harness capabilities while preserving real terminal scrollback.
+  zh: DeepSeek Harness 的终端原生 TUI 前端，通过 Harness 能力提供会话、模型、插件、任务、子代理、待办事项和 Provider 配置，并保留真实的终端滚动历史。

@@ -1,0 +1,6 @@
+url: https://github.com/curtainsmall/dsh-electro-lab
+name: curtainsmall/dsh-electro-lab
+category: tools
+description:
+  en: "Electrical and electronics calculation workbench for DSH: circuit impedance and transients (RC/RL/RLC), op-amp configurations, filters, matching networks, Smith chart, noise and dB tools, DSP transforms, transmission lines and common-unit conversion, all on complex value objects in SI base units."
+  zh: "DSH 电气电子计算工作台：电路阻抗与瞬态（RC/RL/RLC）、运放配置、滤波器、匹配网络、史密斯圆图、噪声与 dB 工具、DSP 变换、传输线与常见单位换算，全部基于 SI 基本单位的复数值对象。"

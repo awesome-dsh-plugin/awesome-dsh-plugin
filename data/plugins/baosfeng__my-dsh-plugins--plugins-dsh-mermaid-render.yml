@@ -1,0 +1,7 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-mermaid-render
+name: baosfeng/my-dsh-plugins#dsh-mermaid-render
+category: docs
+tarball: https://github.com/baosfeng/my-dsh-plugins/releases/latest/download/dsh-mermaid-render-0.1.3.tgz
+description:
+  en: 'Renders mermaid/mmd code blocks in the conversation as chart cards with preview/code toggle; the engine is inlined so it works fully offline with no CDN (npm: `dsh-mermaid-render`).'
+  zh: '对话 mermaid/mmd 代码块自动渲染为图表卡片（预览/代码切换），mermaid 引擎内联打包、零 CDN 依赖、完全离线可用（npm: `dsh-mermaid-render`）。'

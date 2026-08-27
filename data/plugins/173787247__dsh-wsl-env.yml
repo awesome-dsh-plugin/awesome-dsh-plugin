@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-env
+name: 173787247/dsh-wsl-env
+category: dev
+description:
+  en: Injects WSL distro, Linux path mapping, /mnt/c CRLF and git caveats, and NODE_USE_ENV_PROXY into the system prompt.
+  zh: 向 system prompt 注入 WSL 发行版、Linux 路径映射、/mnt/c 的 CRLF 与 git 注意点，以及 NODE_USE_ENV_PROXY。
