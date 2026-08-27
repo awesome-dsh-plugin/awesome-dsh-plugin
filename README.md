@@ -1521,7 +1521,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [WayneYu430/dsh-voice-agent#voice-app](https://github.com/WayneYu430/dsh-voice-agent/tree/master/packages/voice-app) - A conversational voice frontend Agent for dsh: speak naturally over ByteDance Duplex, delegate requests to background tasks, and hear their asynchronous results reported by voice.
 - [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) - Voice input plugin for DeepSeek Harness (dsh): a microphone button in the composer turns speech into a draft transcript, with a choice of speech-recognition backends, optional polish through dsh own LLM routes, and a native settings page.
 - [XanthanL/dsh-plugin-uisfx](https://github.com/XanthanL/dsh-plugin-uisfx) - Semantic UI sound effects powered by uisfx: task start/success/failure and per-button cues, settings UI with instant preview, 12 sound packs, Host-persisted preferences, and `ctx.uisfx` service for other plugins.
-- [zeshuochen/dsh-video-understand](https://github.com/zeshuochen/dsh-video-understand) - Subtitle-first video transcription and deterministic extractive Markdown summaries, with a faster-whisper large-v3 fallback when subtitles are unavailable.
+- [dsh-watch-video](https://github.com/zeshuochen/dsh-watch-video) - Subtitle-first video transcription with SRT export, cancellable job controls, and a faster-whisper large-v3 fallback when subtitles are unavailable.
 - [Zhangbo-cn/dsh-voice-input-plugin](https://github.com/Zhangbo-cn/dsh-voice-input-plugin) - Composer mic for the Web UI: tap-to-monitor live transcription and hold-to-talk, with host Edge TTS reply reading that streams while the model generates, echo-pause during reading, and tap-to-stop.
 
 ### Docs & Rendering
