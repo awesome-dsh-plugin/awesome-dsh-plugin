@@ -1233,6 +1233,7 @@ dsh plugin --profile web add dshmarket
 - [Samge0/dsh-plugin-qcc](https://github.com/Samge0/dsh-plugin-qcc) — 企查查企业数据源动态 Cordis 插件：5 个 agent 工具（扫码登录认证、企业快搜、知识库检索、工具发现、取数执行），覆盖工商/股东/司法/知识产权等 100+ 数据维度，附设置页账号管理；网络与文件 IO 经 DSH subprocess 拉起 node -e 完成，凭证与本地 BizOwl 客户端互通。
 - [SamurAIGPT/dsh-plugin-muapi](https://github.com/SamurAIGPT/dsh-plugin-muapi) — MuApi 媒体生成工具：muapi_generate 工具通过一个 x-api-key 提交并轮询 MuApi 100 多个图片、视频、音频与 3D 模型的生成任务。
 - [SamXiaBing/dsh-adb](https://github.com/SamXiaBing/dsh-adb) — ADB 设备·台架运维工具集：设备发现、结构化 logcat（后台采集）、apk 安装、文件 pull/push、性能快照。
+- [savageops/dsh-rich-questions](https://github.com/savageops/dsh-rich-questions) — 网页端分支问卷：ask_survey 工具，按选项路由后续问题，悬停洞察、Mermaid 流程图、一键快速模板，答案可暂存续答。
 - [sensedeal/cue-skills#cue-omni-reader](https://github.com/sensedeal/cue-skills/tree/main/dsh/cue-omni-reader) — 面向 DeepSeek Harness 的 Cue Omni Reader：接入审校版 omni-reader-mcp MCP 服务，把 URL/文件解析工具以 mcp__omni__ 暴露（parse、get_parse_status、read_result、read_outline、save_result、discard_result、cancel_parse）。
 - [seven282/oss-prompt-optimizer](https://github.com/seven282/oss-prompt-optimizer) — 把原始指令一键优化为专业提示词——支持三种输出形态、情境感知画像、自迭代学习，以及 /template 等命令与一键工具/钩子/自动语言。
 - [ShiXiangYu2/dsh-translate-pro](https://github.com/ShiXiangYu2/dsh-translate-pro) — 专业翻译：18 种目标语言、4 种风格（正式/口语/技术/直译）、术语表控制译名、整文件翻译（README/文档/字幕）并保留 Markdown 与代码块格式；经 SiliconFlow 调用 DeepSeek。
