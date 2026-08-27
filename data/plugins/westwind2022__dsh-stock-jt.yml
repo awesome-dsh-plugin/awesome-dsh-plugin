@@ -1,0 +1,6 @@
+url: https://github.com/westwind2022/dsh-stock-jt
+name: westwind2022/dsh-stock-jt
+category: skill
+description:
+  en: 'A-share technical analysis (ladder dynamics) plugin: chanlun structure via struct_calc, hang-slope D+/D/D- and strong-start E+/E/E- signals, with an in-app settings page and work prompts.'
+  zh: 'A股技术面研判（架梯动力学）插件：基于缠论结构给出挂坡 D⁺/D/D⁻ 与强势起步 E⁺/E/E⁻ 信号，附设置页与工作提示词。'
