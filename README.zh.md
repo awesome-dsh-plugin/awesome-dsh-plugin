@@ -2124,6 +2124,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) — 会话文件帧级扫描诊断（torn/损坏/空会话检测）。
 - [omdsh-dev/plugin-template](https://github.com/omdsh-dev/plugin-template) — 插件模板仓库（基于 turtle-ui 官方仓库）。
 - [omdsh-dev/stent](https://github.com/omdsh-dev/stent) — 类似 MC Fabric 的 hook 处理器。
+- [patrick1099/dsh-claude-plugin-loader](https://github.com/patrick1099/dsh-claude-plugin-loader) — 把 Claude 风格的插件加载进 DeepSeek Harness（dsh）：扫描 Claude 插件目录，接入 skills、commands 与可选的 SessionStart hooks，支持命令热更新与卸载清理。
 - [PerryLink/dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — 官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。
 - [PerryLink/dsh-observe](https://github.com/PerryLink/dsh-observe) — 将会话事件流导出为 OpenTelemetry OTLP 与 Langfuse 的脱敏、缓冲 traces 与指标，默认关闭。
 - [PerryLink/dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) — 运行时切换模型输出风格（对标 Claude Code outputStyles），另加 output.render.* 呈现协议：/style 命令、按会话持久化、systemPrompt 注入、六个内置风格、Web 选择器，以及带按会话/按工具规则与 /export 的渲染器注册表。
