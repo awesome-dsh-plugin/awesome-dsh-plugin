@@ -1858,6 +1858,7 @@ dsh plugin --profile web add dshmarket
 - [bill9109/dsh-webbridge](https://github.com/bill9109/dsh-webbridge) — DSH 结合 Kimi WebBridge。
 - [Bing-Bryan/dsh-unread-dot](https://github.com/Bing-Bryan/dsh-unread-dot) — macOS Dock 角标与提示音：最小化/切走时 Dock 显示未读角标（运行中=红点、跑完=数字）并播放水泡提示音，回到应用自动清除，基于 Badging API。
 - [bobleer/dsh-acp-for-bitfun](https://github.com/bobleer/dsh-acp-for-bitfun) — BitFun 与 DSH 的 ACP 交互对接。
+- [BolunHan/cc-monitor#dsh-cc-monitor](https://github.com/BolunHan/cc-monitor/tree/main/dsh-cc-monitor) — 将 DeepSeek Harness 会话活动上报到自托管的 cc-monitor 服务器：Claude Code 与 DSH 会话以彩色状态卡片出现在同一个 Web 仪表盘中，会话需要关注时通过浏览器与 Android 应用通知你。
 - [br1nosense/dsh-wxauto-plugin](https://github.com/br1nosense/dsh-wxauto-plugin) — 基于 wxauto4 的微信自动化插件：任务进度微信推送、消息监听（关键词自动回复）、微信⇄DSH 双向桥，设置页开关与配置。
 - [caoxiaohu7745-bot/kongmu-im-bridge](https://github.com/caoxiaohu7745-bot/kongmu-im-bridge) — DeepSeek Harness 飞书桥（衍生自 dsh-im-bridge）：长连接免公网、审批卡片、群聊仅 @ 回复、流式卡片打字机回显、/stop 中断任务。
 - [cdxiaodong/dsh-island](https://github.com/cdxiaodong/dsh-island) — 通过 Unix socket 把 DSH agent 的会话、工具调用与审批实时桥接到 CodeIsland macOS 刘海面板，可直接在面板上批准/拒绝。
