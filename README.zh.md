@@ -942,6 +942,7 @@ dsh plugin --profile web add dshmarket
 - [ICCuse/dsh-file-memory](https://github.com/ICCuse/dsh-file-memory) — 文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。
 - [ICCuse/dsh-knowledge](https://github.com/ICCuse/dsh-knowledge) — 全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\knowledge（格式逐字节兼容）。
 - [ICCuse/dsh-premise-guard](https://github.com/ICCuse/dsh-premise-guard) — 压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。
+- [icearia0219/dsh-memory-spaces](https://github.com/icearia0219/dsh-memory-spaces) — 用户治理的跨会话记忆空间，提供独立的来源与使用关系、来源追踪、版本管理和发送前注入检查。
 - [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — 失败恢复记忆库：从真实工程会话中搜索和记录失败恢复教训，支持 BM25 + 语义 RAG 检索和知识库管理。
 - [isheng-eqi/dsh-hermes-memory](https://github.com/isheng-eqi/dsh-hermes-memory) — DSH 上 hermes-agent 记忆机制的忠实移植（MEMORY.md / USER.md）：有界双记忆库（2200/1375 字符）、单个 memory 工具（add/replace/remove/batch 全有或全无）、每会话冻结快照注入与 nudge 提醒、DSH 原生 JSON 存储——零外部依赖、零 LLM 成本。
 - [itr-del/dsh-cue-bank](https://github.com/itr-del/dsh-cue-bank) — 跨会话「触点记忆库」插件：自动从每轮对话提取任务/会话级触点与用户惯用词，存入全局持久记忆库；检测到话题切换时重新注入相关历史记忆（关键词或向量匹配）。
