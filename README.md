@@ -287,6 +287,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) - Codex-style tool call folding, collapsing multiple tool calls into a single line.
 - [Mobai-read/dsh-chat-index-rail](https://github.com/Mobai-read/dsh-chat-index-rail) - Client-only right-edge chat input index rail: one bar per user message, two-stage hover preview (15 chars, expandable to 40), click-to-jump, and scroll-follow highlight; static npm bundle with no host half.
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) - Live subagent run monitor for the Web UI: a sidebar footer trigger plus a fixed top-right card panel showing each subagent of the current session in real time (running/elapsed, terminal outcomes, tree indent), with one-click jump into the child conversation and a return button, refresh-surviving and mobile-hidden by default.
+- [Moonshile/moonshile-dsh-plugins](https://github.com/Moonshile/moonshile-dsh-plugins) - Re-sorts sidebar workspaces by last activity once per day; stable order within the day.
 - [MorGogh/widget-dock](https://github.com/MorGogh/widget-dock) - Draggable grid-aligned workbench of 28 mini-cards in the margins of the conversation (API balance, token usage, cost, context pressure, todos, goal, usage heatmap, GitHub repo, image relay), with S/M/L/XL size tiers.
 - [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) - In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.
 - [nailing10086-zx/dsh-custom-ui](https://github.com/nailing10086-zx/dsh-custom-ui) - Right-side file-tree sidebar that opens workspace files, plus a DeepSeek account balance meter in the composer stats line.
@@ -448,7 +449,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) - OpenPencil design preview and editing plugin.
 - [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) - Highlights parts of speech (nouns green, verbs red, adjectives/adverbs purple) in rendered DSH Web Markdown, with light/dark palettes, toggles, and stream-aware updates.
 - [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) - Select any text in a DSH chat reply to get a floating Follow-up/Copy pill: one click quotes the selection into the composer so you can type your own follow-up question, or copies it.
-- [Moonshile/moonshile-dsh-plugins](https://github.com/Moonshile/moonshile-dsh-plugins) - Re-sorts sidebar workspaces by last activity once per day; stable order within the day.
 
 ### Usage & Billing
 
