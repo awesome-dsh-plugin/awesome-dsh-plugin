@@ -211,8 +211,8 @@
   "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ocr.png",
   "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-chart.png",
   "https://raw.githubusercontent.com/Harvey-Will/dsh-vision-analysis/main/assets/demo-ui.png"
-],
-"https://github.com/Isilsolme/dsh-splash-launcher": [
+ ],
+ "https://github.com/Isilsolme/dsh-splash-launcher": [
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-light.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-drawing.png",
   "https://raw.githubusercontent.com/Isilsolme/dsh-splash-launcher/main/docs/screenshots/splash-dark.png",
@@ -1335,5 +1335,9 @@
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-album.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
+ ],
+ "https://github.com/Seetraum/harness-session-delete": [
+  "https://raw.githubusercontent.com/Seetraum/harness-session-delete/main/static/1.png",
+  "https://raw.githubusercontent.com/Seetraum/harness-session-delete/main/static/2.png"
  ]
 }
