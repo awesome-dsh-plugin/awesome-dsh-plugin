@@ -2,5 +2,5 @@ url: https://github.com/JanEickholt/dsh-inline-diff
 name: JanEickholt/dsh-inline-diff
 category: ui
 description:
-  en: "Renders edit and write tool calls in the DeepSeek Harness web GUI as always-expanded side-by-side diffs with line numbers, with optional syntax coloring and word-level highlighting."
-  zh: "在 DeepSeek Harness 网页界面中将编辑与写入工具调用渲染为常开的双栏 diff，带行号，可选语法配色与词级高亮。"
+  en: "Renders edit and write tool calls as always-expanded side-by-side diffs, with optional syntax coloring and word-level highlighting."
+  zh: "将编辑与写入工具调用渲染为常开的双栏 diff，可选语法配色与词级高亮。"
