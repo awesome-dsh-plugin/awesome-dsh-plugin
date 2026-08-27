@@ -1,0 +1,6 @@
+url: https://github.com/QSyingSQ/dsh-skin-typora-forest
+name: QSyingSQ/dsh-skin-typora-forest
+category: theme
+description:
+  en: 'Typora Forest theme skin for the DSH web GUI: forest-green light and dark palettes registered into the native theme runtime, one-click mode switching with a persisted choice, and selectable interface fonts (Source Han Sans plus JetBrains Mono, serif, or monospace).'
+  zh: 'DSH Web GUI 的 Typora Forest 主题皮肤：森林绿明亮/深色两套配色接入原生主题系统，一键切换并记住选择；界面字体可选（思源黑体加 JetBrains Mono、衬线或等宽）。'
