@@ -22,6 +22,8 @@ dsh plugin --profile web add dshmarket
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
 
+> 💬 **Every plugin page takes comments.** Ask the author a question, say what you used it for, or warn the next reader — [see an example](https://awesome-dsh-plugin.com/p/00080000/dsh-project-memory/). Threads live in this repository's [GitHub Discussions](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/discussions), so there is no account to make beyond the GitHub one you have. Nothing loads until you ask for it.
+
 > ℹ️ **On desktop clients.** This list is client-agnostic. A plugin is listed because it follows the official protocol — it declares a `dsh.bundle` manifest and installs with `dsh plugin add` — not because it adapts to any particular client.
 >
 > Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop), [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop), and [deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) by anywhere-labs — all ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
