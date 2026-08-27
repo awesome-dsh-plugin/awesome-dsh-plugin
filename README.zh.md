@@ -1452,6 +1452,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) — Web UI 语音输入：按停顿分段的听写与语音消息，各自拥有独立的服务商回退链（Deepgram、Groq、HuggingFace、本地 whisper.cpp 或 OpenAI 兼容接口）。
 - [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI 全双工语音对话：点按切换或按住说话（发送键或 `Ctrl`）并显示实时字幕，宿主端 SenseVoice（sherpa-onnx）转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
+- [jerryqx/dsh-ximalaya](https://github.com/jerryqx/dsh-ximalaya) — 在 DSH Web 界面收听喜马拉雅播客/有声书：搜索专辑、分页浏览曲目，播放条支持上下集/进度/音量/倍速；扫码登录后「我的」页可看收藏的声音（点击即播）、我的订阅（带最新一集提示）与关注的主播（含其公开专辑）；Host 端音频流代理支持 Range 拖动，并注册 `ximalaya_play` 模型工具让 agent 按需搜索播放。
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
 - [maoyuching/dsh-voice-chat](https://github.com/maoyuching/dsh-voice-chat) — 豆包式语音对话插件：聊天框麦克风按钮（按住说话）语音转文字并自动发送，AI 回复自动朗读。可选 LLM 转述精简（长回复压缩成口语再播，跟随当前对话模型）、朗读前清洗 markdown/emoji/特殊符号、Edge TTS 多种音色、静音自动结束时长可调，设置嵌入 DSH 自带设置弹窗（voice chat 类目）。

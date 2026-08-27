@@ -1328,5 +1328,11 @@
   "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/reasoning-slider-energy-zh.png",
   "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-en.png",
   "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-dark-zh.png"
+ ],
+ "https://github.com/jerryqx/dsh-ximalaya": [
+  "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-search.png",
+  "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-album.png",
+  "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
+  "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
  ]
 }
