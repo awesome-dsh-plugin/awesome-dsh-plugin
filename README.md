@@ -448,6 +448,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) - OpenPencil design preview and editing plugin.
 - [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) - Highlights parts of speech (nouns green, verbs red, adjectives/adverbs purple) in rendered DSH Web Markdown, with light/dark palettes, toggles, and stream-aware updates.
 - [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) - Select any text in a DSH chat reply to get a floating Follow-up/Copy pill: one click quotes the selection into the composer so you can type your own follow-up question, or copies it.
+- [Moonshile/moonshile-dsh-plugins](https://github.com/Moonshile/moonshile-dsh-plugins) - Re-sorts sidebar workspaces by last activity once per day; stable order within the day.
 
 ### Usage & Billing
 
