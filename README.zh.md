@@ -1274,13 +1274,13 @@ dsh plugin --profile web add dshmarket
 - [somnusovis/dsh-multi-workspace](https://github.com/somnusovis/dsh-multi-workspace) — 多工作区沙箱：自动赋予所有已注册工作区的文件写入权限——添加工作区后即可直接写入，无需配置或提权。
 - [springbrand-lab/dsh-oauth-mcp-client](https://github.com/springbrand-lab/dsh-oauth-mcp-client) — 面向 Streamable HTTP 服务的 OAuth 2.1 MCP 客户端：在设置页添加连接，通过浏览器登录（PKCE + 动态客户端注册），其工具随即注册进 DSH；令牌存于凭据服务，连接写入 profile。
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
-- [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历插件：查/建/改/删/搜日程，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开。
-- [STARDUSTLC666/dsh-cite](https://github.com/STARDUSTLC666/dsh-cite) — 参考文献工具：DOI 精确查询与 Crossref 题录检索，GB/T 7714 / APA / MLA / Chicago 格式化，BibTeX 生成与有界并发 DOI 校验。
-- [STARDUSTLC666/dsh-codex-port](https://github.com/STARDUSTLC666/dsh-codex-port) — Codex 官方插件一键移植为 DSH 技能（实测 186 插件/583 技能，移植 577 个 0 失败）。
-- [STARDUSTLC666/dsh-docker](https://github.com/STARDUSTLC666/dsh-docker) — Docker 工具：ps/images/logs/inspect/exec/manage，JSON 输出、DSH_DOCKER_PATH 环境变量、exec 审批门、零运行时依赖。
-- [STARDUSTLC666/dsh-ffmpeg](https://github.com/STARDUSTLC666/dsh-ffmpeg) — 视频处理七工具（探测/剪辑/拼接/转码/字幕烧录/抽帧/GIF），官方 subprocess 服务、argv 无 shell 注入、零运行时依赖。
-- [STARDUSTLC666/dsh-rss](https://github.com/STARDUSTLC666/dsh-rss) — RSS/Atom 订阅管理 + 抓取解析（rss_list/add/remove/fetch/check），订阅持久化到 settings。
-- [STARDUSTLC666/dsh-sql](https://github.com/STARDUSTLC666/dsh-sql) — 数据库工具：sql_list/query/exec/schema，SQLite/MySQL/PostgreSQL 三引擎，词法级只读保护、行数钳制与写审批门。
+- [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历插件：查/建/改/删/搜日程与健康自检，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开。
+- [STARDUSTLC666/dsh-cite](https://github.com/STARDUSTLC666/dsh-cite) — 参考文献工具：DOI 精确查询与 Crossref 题录检索，GB/T 7714 / APA / MLA / Chicago 格式化，BibTeX 生成、有界并发 DOI 校验与健康自检。
+- [STARDUSTLC666/dsh-codex-port](https://github.com/STARDUSTLC666/dsh-codex-port) — Codex 官方插件一键移植为 DSH 技能（codex_list/port/status/health，实测 186 插件/583 技能，移植 577 个 0 失败）。
+- [STARDUSTLC666/dsh-docker](https://github.com/STARDUSTLC666/dsh-docker) — Docker 工具：ps/images/logs/inspect/exec/manage/health 七工具，JSON 输出、DSH_DOCKER_PATH 环境变量、exec 审批门、零运行时依赖。
+- [STARDUSTLC666/dsh-ffmpeg](https://github.com/STARDUSTLC666/dsh-ffmpeg) — 视频处理九工具（探测/剪辑/拼接/转码/字幕烧录/抽帧/批量抽帧/GIF/健康自检）：探测摘要、官方 subprocess 服务、argv 无 shell 注入、零运行时依赖。
+- [STARDUSTLC666/dsh-rss](https://github.com/STARDUSTLC666/dsh-rss) — RSS/Atom 订阅九工具（管理/校验/抓取解析/跨订阅搜索/增量抓取/OPML 导入导出/健康自检），游标增量抓取，订阅持久化到 settings。
+- [STARDUSTLC666/dsh-sql](https://github.com/STARDUSTLC666/dsh-sql) — 数据库工具：sql_list/query/exec/schema/stats/health，SQLite/MySQL/PostgreSQL 三引擎，词法级只读保护、行数钳制、CSV/JSON 查询输出与写审批门。
 - [StvLi/dsh-ros2](https://github.com/StvLi/dsh-ros2) — 面向 DeepSeek Harness 的 ROS2 调试工具集与机器人状态视觉分析：节点/话题/服务/动作/接口/TF 枚举、全图拓扑 JSON、依赖检查，审批门控的构建与自定义消息骨架生成，GUI 截图与多模态视觉观察，以及无头 RViz2 离屏渲染（低模 + 直读像素 + GPU 直通，动作渲染 30Hz）与并行 VLM 实时分析。
 - [SuCriss/dsh-leekbox](https://github.com/SuCriss/dsh-leekbox) — 韭菜盒子：A股看盘助手——实时行情与大盘指数、同花顺式个股详情弹窗（前复权蜡烛图K线+MA均线+成交量+十字光标）、自选股持久化、多信号条件选股评分排序、新浪/东财/金十三源聚合7x24快讯（重要资讯标红）。
 - [superdesigndev/treg](https://github.com/superdesigndev/treg) — 给 Agent 的工具目录：按「要做的事」检索约 2,600 个外部接口（SEO 与 SERP、外链、社交、人物与公司信息补全、广告库、抓取），查看参数与单次调用价格后直接调用，凭据由服务端注入。附带技能，MCP 行在未设置 TREG_TOKEN 前保持禁用。
@@ -1533,7 +1533,7 @@ dsh plugin --profile web add dshmarket
 - [QT-Chen/dsh-mic-input](https://github.com/QT-Chen/dsh-mic-input) — 输入框麦克风语音输入：浏览器 Web Speech API 实时转写，自动去重/续听、智能标点，支持语言与自动发送设置。
 - [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) — 通过 CallKit 打电话到你的手机：`call_me` 与 `text_me` 工具，并可在回合结束或等待审批时来电，语音回答转写后送回会话。
 - [Schumchanvi/dsh-voice-input-cn](https://github.com/Schumchanvi/dsh-voice-input-cn) — 国内可用的输入框语音输入。需要先启动本地 Python bridge（pip install dashscope websockets，运行 bridge/voice-bridge.py）——只装插件不可用。浏览器麦克风采集 16kHz PCM 流式转发给 bridge，由阿里云 DashScope ASR（paraformer-realtime-v2）识别；识别文字在光标处实时填入草稿，静音自动停止，可选识别后自动发送。
-- [STARDUSTLC666/dsh-voice](https://github.com/STARDUSTLC666/dsh-voice) — 语音双件套：edge-tts 免费微软神经语音合成 + OpenAI 兼容 ASR 转写。
+- [STARDUSTLC666/dsh-voice](https://github.com/STARDUSTLC666/dsh-voice) — 语音五工具：edge-tts 免费微软神经语音合成、OpenAI 兼容 ASR 转写、音色清单、批量音色试听与健康自检。
 - [tangzheng202202/dsh-voice-live](https://github.com/tangzheng202202/dsh-voice-live) — 基于火山流式 ASR/TTS 的实时双工语音：回复朗读、打断、唤醒词、实时字幕、30 个中文音色与先响应后思考；在 DSH monorepo 内构建。
 - [WayneYu430/dsh-voice-agent#voice-app](https://github.com/WayneYu430/dsh-voice-agent/tree/master/packages/voice-app) — dsh 的对话式语音前端 Agent：通过 ByteDance Duplex 自然对话，把语音请求委派给后台任务，并用语音回报异步结果。
 - [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) — 面向 DeepSeek Harness (dsh) 的语音输入插件：输入框的麦克风按钮把语音转成草稿文本，支持多种语音识别后端，可选经 dsh 自有 LLM 路由润色，并带原生设置页。
@@ -1649,8 +1649,8 @@ dsh plugin --profile web add dshmarket
 - [SLin-code/dsh-skill-manager](https://github.com/SLin-code/dsh-skill-manager) — 在 DSH Web 设置中查看本地 Skills，并编辑自动调用与 /name 调用策略；内置和软链接条目保持只读。
 - [songoao25/dsh-contract-drafting-agent](https://github.com/songoao25/dsh-contract-drafting-agent) — 合同起草模式：11 阶段律师工作流，五路并行 AI 评审与决策门，内置通用/劳动/股权三类合同领域包。
 - [songoao25/dsh-virtual-product-team](https://github.com/songoao25/dsh-virtual-product-team) — 虚拟产品团队模式：用户主导式对话，由虚拟产品团队带你走完 12 环节完整流水线——从想法到发布、宣传、运营的产品全流程，阶段关卡制，内置 8 个阶段技能。
-- [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — HyperFrames by HeyGen 官方移植技能五件套：HTML 写视频 / CLI / 注册表 / 网址转视频 / GSAP 参考。
-- [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) — Remotion 官方移植技能：React 编程式视频（动画/音频/字幕/3D/图表/字体，38 规则文件），安装即用。
+- [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — HyperFrames by HeyGen 官方移植技能五件套：HTML 写视频 / CLI / 注册表 / 网址转视频 / GSAP 参考，附随包资源完整性自检。
+- [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) — Remotion 官方移植技能：React 编程式视频（动画/音频/字幕/3D/图表/字体，38 规则文件），安装即用，附随包资源完整性自检。
 - [SummerSec/SumSec-Skills](https://github.com/SummerSec/SumSec-Skills) — 多平台 Agent Skills 集合，作为 DeepSeek Harness profile bundle 挂载，提供中文写作、Git、插件开发、Taste 与语义边界检测等 Skill。
 - [superdesigndev/superdesign-skill](https://github.com/superdesigndev/superdesign-skill) — 在 Superdesign 画布上做 UI 与营销图的设计技能：先读代码库拿上下文、抽取现有设计系统，再通过 Superdesign CLI 生成并迭代可分支的设计稿、流程页与可复用组件。
 - [tetckx/deep-structural-analysis-skill](https://github.com/tetckx/deep-structural-analysis-skill) — 多视角深层结构分析技能：16 透镜 4 类别、10 个结构工具，先攻击默认立场，产出置信度校准、事实绑定的分层结论。
@@ -1968,9 +1968,9 @@ dsh plugin --profile web add dshmarket
 - [shrekcg/dsh-im-channel](https://github.com/shrekcg/dsh-im-channel) — DeepSeek Harness 的统一 IM 渠道：飞书、Telegram、钉钉、Slack、Discord —— 持久会话、真流式回复、40 个飞书 MCP 工具、斜杠命令，以及插件设置页中的 IM 机器人状态页。
 - [SingleOne/dsh-notify-center](https://github.com/SingleOne/dsh-notify-center) — 回合完成、失败和待审批时发送跨平台本机通知与 Webhook，支持结果过滤、内容规则、隐私控制和失败重试。
 - [SkyloveQiu/dsh-finreport](https://github.com/SkyloveQiu/dsh-finreport) — DSH 定时双语财经日报：包含行情、新闻与宏观日历，支持每个目标独立配置时区，并通过 dsh-im 的八种通道投递。
-- [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) — 钉钉群机器人通知（webhook + 加签，零运行时依赖）。
-- [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 邮件工具插件：IMAP/SMTP 收/发/搜/列文件夹/附件下载，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门。
-- [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) — Slack 双向通信（notify/channels/inbox/reply，Socket Mode 免公网回调）。
+- [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) — 钉钉群机器人通知：dingtalk_notify/text/health 三工具，webhook + HMAC 加签，零运行时依赖。
+- [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 邮件工具插件：IMAP/SMTP 收/发/搜/列文件夹/附件下载与健康自检，since/until 日期范围过滤，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门。
+- [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) — Slack 双向通信（notify/channels/inbox/reply/health 五工具），Socket Mode 免公网回调。
 - [stuarthu/dsh-update-notifier](https://github.com/stuarthu/dsh-update-notifier) — 每小时检查 npm 上已安装插件的新版本，并询问升级其中哪些。
 - [suuuuuu-1/dsh-discord](https://github.com/suuuuuu-1/dsh-discord) — DeepSeek Harness 的 Discord 原生远程控制器：通过私信、需提及机器人的服务器频道及 Thread 操作持久化的编程 Agent Session，并支持斜杠命令、进度更新、工具审批、结构化问题、图片和文本附件。
 - [sxl19951101/dsh-done-sound](https://github.com/sxl19951101/dsh-done-sound) — 对话完成时播放自选提示音：支持正常完成、中断与出错三种触发开关；出错后自动重连，重连等待时长可自定义（10-300 秒）；附带社区音色库下载。
@@ -2147,7 +2147,7 @@ dsh plugin --profile web add dshmarket
 - [sjh9714/dsh-movein](https://github.com/sjh9714/dsh-movein) — 通过原生设置页或 CLI 将 Claude Code 配置迁入 DeepSeek Harness，可先预览技能、命令、代理、hooks、权限规则与 MCP 配置；Codex 和 OpenCode 作为次要来源继续支持，并提供目标冲突保护和迁移后检查。
 - [sjh9714/dsh-win32](https://github.com/sjh9714/dsh-win32) — 围绕官方持久 PowerShell 与 Workspace Write 方案检查和修复原生 Windows 上的 DeepSeek Harness，创建桌面快捷方式，并仅通过明确的 legacy 安装保留早期 Git Bash 与 BusyBox 预设，无需 WSL。
 - [Small-tailqwq/dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — TPS 指标插件。
-- [STARDUSTLC666/dsh-flakefinder](https://github.com/STARDUSTLC666/dsh-flakefinder) — 测试稳定性工具：重复运行 vitest/jest/pytest/node:test，识别 flaky 用例，历史留档与隔离清单。
+- [STARDUSTLC666/dsh-flakefinder](https://github.com/STARDUSTLC666/dsh-flakefinder) — 测试稳定性工具：重复运行 vitest/jest/pytest/node:test，识别 flaky 用例，历史留档、隔离清单与健康自检。
 - [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) — DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。
 - [strukto-ai/mirage#dsh](https://github.com/strukto-ai/mirage/tree/main/typescript/packages/dsh) — 把文件系统与 bash 提供者换成 mirage 虚拟工作区：文件工具与 shell 命令作用于挂载的资源（RAM、S3、Redis、Slack、Gmail、Notion、Postgres）而非宿主磁盘，支持按挂载点设置读/写/执行模式、按命令选择沙箱（进程内 monty、pyodide、quickjs；远程 docker、e2b、daytona），并可在虚拟终端中安装 CLI（git、gh、slack、linear、ntn、gws，或自行注册的程序树）作为命令头词。
 - [stuarthu/dsh-hot-reload](https://github.com/stuarthu/dsh-hot-reload) — 插件升级后在运行中的 dsh 内直接重载，无需重启；重载失败时回滚到旧版本并提示手动重启。
@@ -2271,7 +2271,7 @@ dsh plugin --profile web add dshmarket
 - [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) — 为 WebUI 增加 Auto Approve 权限档位，由全新且受限的审查 Agent 逐次允许或拒绝审批请求。
 - [sjh9714/dsh-movein-permissions](https://github.com/sjh9714/dsh-movein/tree/main/plugin) — 为 DSH 补上按工具粒度的权限规则：在 tools/pre-execute 强制执行 deny/ask 清单，规则语法与 Claude Code 相同，不迁移也能单独用。
 - [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。
-- [STARDUSTLC666/dsh-code-security](https://github.com/STARDUSTLC666/dsh-code-security) — 确定性代码安全审查：40+ 规则、密钥熵检测、staged diff 审查、SARIF 导出、基线接受与 SBOM-lite 依赖清单。
+- [STARDUSTLC666/dsh-code-security](https://github.com/STARDUSTLC666/dsh-code-security) — 确定性代码安全审查：40+ 规则、密钥熵检测、staged diff 审查、SARIF 导出、基线接受、SBOM-lite 依赖清单与健康自检。
 - [SummerSec/dsh-web-auth](https://github.com/SummerSec/dsh-web-auth) — DeepSeek Harness Web GUI 的传输层认证门禁，提供服务端会话、HttpOnly Cookie、基于 IP 的登录限流及 scrypt 口令 CLI。
 - [tancheng33/dsh-code-runtime-container](https://github.com/tancheng33/dsh-code-runtime-container) — `ctx.codeRuntime` seam 的容器隔离后端：每个 Code Mode 程序跑在全新容器里，无网络、根文件系统只读、丢弃全部 capability，内存/CPU/进程数上限由内核强制。
 - [tancheng33/dsh-credentials-vault](https://github.com/tancheng33/dsh-credentials-vault) — 凭证 seam 的 HashiCorp Vault 后端：支持 KV v2/v1、AppRole 机器认证、逐次操作读取（轮换无需重启）与 compare-and-swap 写入。
