@@ -1569,6 +1569,7 @@ dsh plugin --profile web add dshmarket
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
 - [Whatsmore-nf/dsh-pdf-edit](https://github.com/Whatsmore-nf/dsh-pdf-edit) — 面向 PDF 文档的编辑插件,精确编辑PDF文字
 - [wx971025/dsh-openspec](https://github.com/wx971025/dsh-openspec) — 在 Web UI 会话标题栏打开当前项目的 openspec/ 目录，浏览、预览、编辑并保存其中的文件，自动跟随会话工作区。
+- [zh851233/docs-mode](https://github.com/zh851233/docs-mode) — 面向 DeepSeek Harness 的技术文档撰写 Agent 模式：模板驱动写作与自学习模板库、技术文档去 AI 味，以及文档质量保障工具集（量化体检、多文档口径一致性校验、图/表编号重排、版本同步检查、Word/PDF 导出与界面截图自动化）。
 - [zhtx2024/dsh-pdf](https://github.com/zhtx2024/dsh-pdf) — DSH 的 PDF 解析工具：pdf_info、pdf_extract_text、pdf_render_page 三件套，pdfjs 与自研渲染器双引擎，未内嵌 CJK 字体的 PDF 也能用系统字体渲染出图。
 - [zjsthmjialin/inspiration-deck-workshop#dsh-inspiration-deck-workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop/tree/master/dsh-inspiration-deck-workshop) — 注册灵感演示工坊技能：本地静态 HTML 演示文稿（6 套 deck 模板、25+ 布局、23 套主题与动效展示馆），带 validate 校验与 PNG/PDF 导出 CLI 和 smoke 测试，零运行时依赖。
 - [zjsthmjialin/pdf-background-gray-codex-skill#dsh-pdf-background-gray](https://github.com/zjsthmjialin/pdf-background-gray-codex-skill/tree/main/dsh-pdf-background-gray) — 注册 remove-pdf-background-gray 技能：去除扫描 PDF 的灰色/米白底色，保持分辨率、页面几何与抗锯齿文字边缘（无损 Flate 写回），核心为单文件 Python 脚本（pypdf + Pillow + numpy）。
