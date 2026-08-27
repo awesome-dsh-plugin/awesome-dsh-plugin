@@ -1,7 +1,7 @@
 url: https://github.com/andyfan1094/dsh-feishu
 name: andyfan1094/dsh-feishu
 category: notify
-tarball: https://github.com/andyfan1094/dsh-feishu/releases/download/v0.2.0/dsh-feishu-0.2.0.tgz
+tarball: https://github.com/andyfan1094/dsh-feishu/releases/download/v0.2.0/dsh-feishu-0.2.2.tgz
 description:
   en: Connects a Feishu self-built app over WebSocket, routes each chat to an independent DSH agent session, and streams replies through a Card JSON 2.0 card with plain-text fallback.
   zh: 接入飞书自建应用，把每个飞书会话映射到独立的 DSH Agent，经卡片 JSON 2.0 流式回复，不可用时回退纯文本。

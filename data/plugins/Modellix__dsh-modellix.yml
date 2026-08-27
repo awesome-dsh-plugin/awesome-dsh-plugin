@@ -1,0 +1,6 @@
+url: https://github.com/Modellix/dsh-modellix
+name: Modellix/dsh-modellix
+category: model
+description:
+  en: 'Modellix integration for DSH: schema-driven image, video and audio generation in a split Design workspace, a live LLM model catalog, and native web search and fetch providers through one API key.'
+  zh: '将 Modellix 接入 DSH：使用一个 API Key 在分栏 Design 工作区中提供基于 Schema 的图片、视频与音频生成、实时 LLM 模型目录，以及原生网页搜索与抓取 Provider。'
