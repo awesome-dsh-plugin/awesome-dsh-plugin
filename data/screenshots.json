@@ -1,4 +1,9 @@
 {
+ "https://github.com/anweat/dsh-context-console": [
+  "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-trajectory.png",
+  "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",
+  "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-forge.png"
+ ],
  "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
