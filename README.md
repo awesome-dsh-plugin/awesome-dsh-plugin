@@ -48,6 +48,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Plugins](#plugins)
   - [UI Enhancements](#ui-enhancements)
   - [Usage & Billing](#usage--billing)
+  - [Enterprise & Team](#enterprise--team)
   - [Themes & Appearance](#themes--appearance)
   - [Models & Providers](#models--providers)
   - [Sessions & Messages](#sessions--messages)
@@ -396,6 +397,10 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhang-jiazhi/dsh-stats-panel](https://github.com/zhang-jiazhi/dsh-stats-panel) - Token usage statistics for DeepSeek Harness. Per-channel usage with balances and plan quotas for mainstream providers, CNY cost estimates, and daily charts — a settings-sidebar section.
 - [zhu168/dsh-save-money#plugin](https://github.com/zhu168/dsh-save-money/tree/main/plugin) - Pause and resume tasks automatically during user-defined time windows to avoid peak-hour API costs; includes account balance display and 10-minute granularity spend bar chart.
 - [zoumutou/dsh-cost-balance](https://github.com/zoumutou/dsh-cost-balance) - Collapsible iOS-style stats pill under the composer: session cost, DeepSeek account balance, cache-hit rate, and token usage in a frosted panel.
+
+### Enterprise & Team
+
+- [Como44/dsh-enterprise](https://github.com/Como44/dsh-enterprise) - Self-hosted, bring-your-own-API enterprise AI workbench for DSH: organization, members (Owner/Admin/Member), AI assets (agents/skills/plugins with personal vs enterprise sharing), usage & real per-model cost, budgets, and a five-step agent-creation wizard. Product patterns referenced from Accio Work Business; no branding/assets copied. MIT.
 
 ### Themes & Appearance
 

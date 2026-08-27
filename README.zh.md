@@ -48,6 +48,7 @@ dsh plugin --profile web add dshmarket
 - [插件](#插件)
   - [🎨 UI 增强](#-ui-增强)
   - [💰 用量与计费](#-用量与计费)
+  - [🏢 企业与团队](#-企业与团队)
   - [🎭 主题与外观](#-主题与外观)
   - [🔌 模型与账号接入](#-模型与账号接入)
   - [💬 会话与消息](#-会话与消息)
@@ -396,6 +397,10 @@ dsh plugin --profile web add dshmarket
 - [zhang-jiazhi/dsh-stats-panel](https://github.com/zhang-jiazhi/dsh-stats-panel) — DeepSeek Harness Token 用量统计。按渠道区分统计，官方渠道自动显示余额，套餐渠道显示 5 小时/7 天/30 天用量余量，人民币计费估算，含每日图表与模型分布，集成在设置页侧边菜单。
 - [zhu168/dsh-save-money#plugin](https://github.com/zhu168/dsh-save-money/tree/main/plugin) — 自定义时间窗口自动暂停/恢复任务，高峰时段节省 API 费用；含账户余额显示和 10 分钟粒度的消费柱状图。
 - [zoumutou/dsh-cost-balance](https://github.com/zoumutou/dsh-cost-balance) — 输入框下方的 iOS 风格统计条：一键展开查看会话花费、DeepSeek 账户余额、缓存命中率与 Token 用量。
+
+### 🏢 企业与团队
+
+- [Como44/dsh-enterprise](https://github.com/Como44/dsh-enterprise) — 自托管、自带上游 API（BYO-API）的 DSH 企业 AI 工作台：企业空间、成员（Owner/Admin/Member）、AI 资产（智能体/技能/插件，个人⇄企业共享）、用量与真实成本（按模型计价）、企业额度，以及五步创建智能体向导。产品理念参考 Accio Work Business，不复刻品牌/素材。MIT。
 
 ### 🎭 主题与外观
 
