@@ -1565,6 +1565,7 @@ dsh plugin --profile web add dshmarket
 - [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 向模型暴露 MineRU 文档解析工具。
 - [jcaiagent7143-ui/sendpage-mcp](https://github.com/jcaiagent7143-ui/sendpage-mcp) — 把 HTML 文档变成一键打开、在聊天里显示预览卡的分享链接;支持发布、更新,以及导出 PNG/PDF/Word。
 - [Jesse-njx/dsh-cowork#dsh](https://github.com/Jesse-njx/dsh-cowork/tree/main/packages/dsh) — doc_read/doc_write：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。
+- [jinsiyu/dsh-code-server-app](https://github.com/jinsiyu/dsh-code-server-app) — 将code-server（VSCode网页版）打包安装到dsh内的插件，快速实现专业的文件编辑。
 - [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) — 面向 agent 的工作区安全 Office 工具集：创建/读取 Word、创建/读取/更新 Excel、创建/读取 PowerPoint，并支持 PNG/JPG/GIF 图片排版。
 - [LeslieWylie/dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) — 把 Markdown 渲染为自包含的独立 HTML 页面：提供在 headless 配置下同样可用的 `md_html_render` 工具，以及在网页端浏览、预览、编辑并导出本地 `.md` 文件的抽屉；两个入口共用同一个渲染器，无运行时依赖。
 - [linkingoscar/dsh-attachment-formats](https://github.com/linkingoscar/dsh-attachment-formats) — DeepSeek Harness Web 插件——PDF 文字层与扫描件 OCR、Office 文档转 Markdown、TIFF/epub 与长文档索引卡。
