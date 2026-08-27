@@ -1,0 +1,6 @@
+url: https://github.com/xobexo/dsh-smart-scenario-router
+name: xobexo/dsh-smart-scenario-router
+category: usage
+description:
+  en: Routes dsh requests by conversation scenario and retries with fallback models when requests fail.
+  zh: 根据对话场景将 dsh 请求路由到不同模型，并在请求失败时使用备用模型重试。
