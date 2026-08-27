@@ -1,5 +1,5 @@
-url: https://github.com/liuqingman/dsh-hawkeye-scan
-name: liuqingman/dsh-hawkeye-scan
+url: https://github.com/liuqingman/dsh-hawkeye-scan/tree/main/npm
+name: liuqingman/dsh-hawkeye-scan#npm
 category: security
 description:
   en: 'AI-driven source-code security scanning workbench: 5 model tools (start/finding/status/report/list) plus a /hawkeye web UI and JSON/Markdown/HTML vulnerability reports; zero-dependency Cordis plugin, installable as agent preset or npm package.'
