@@ -1,6 +1,0 @@
-url: https://github.com/GM-HZ/dsh-dag-workflow/tree/main/packages/bundle
-name: GM-HZ/dsh-dag-workflow#bundle
-category: workflow
-description:
-  en: Durable DAG workflows for DeepSeek Harness with Agent authoring tools, SQLite persistence, resumable runs, and a visual Canvas Studio.
-  zh: 为 DeepSeek Harness 提供持久化 DAG 工作流、Agent 创作工具、SQLite 存储、可恢复运行和可视化 Canvas Studio。
