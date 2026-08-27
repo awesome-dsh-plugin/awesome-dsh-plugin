@@ -801,6 +801,7 @@ dsh plugin --profile web add dshmarket
 - [ishuowang/dsh-rolehub-bridge](https://github.com/ishuowang/dsh-rolehub-bridge) — 发现并校验可移植的 RoleHub 角色，固定其精确 bundle，再将提示词和随角色打包的 Skills 加载到独立、可续聊的 DSH Session，以 Host 批准的工具绑定限制能力，并可选接入 Agent Team Room。
 - [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) — 无需等待或打断正在工作的 Agent：即时冻结有界 Session 快照，由隔离且无工具的 LLM 异步总结，再将带来源信息的上下文胶囊投递到另一 Session 或已授权 Room；对 Session 默认 quiet，也可显式 wakeup。
 - [Jason-skd/dsh-session-fork](https://github.com/Jason-skd/dsh-session-fork) — Git 式会话分支：把当前会话收编为分支，通过 /branch 命令或分支页签在任意轮次分叉，并把分支 squash 回另一条分支。
+- [JasonQQ/dsh-btw-plugin](https://github.com/JasonQQ/dsh-btw-plugin) — Codex 风格 /btw 指令：在继承主会话上下文的子代理中回答附带问题，答案展示在界面里、不写入主会话历史。
 - [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) — DSH Web UI 的归档会话管理器：重新打开已归档会话并继续对话、取消归档恢复原位、彻底删除会话，支持分组浏览、消息搜索与原生视图同步。
 - [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
 - [JohnXu22786/session-titler](https://github.com/JohnXu22786/session-titler) — 两阶段会话题词：会话进行中即时关键词题名，空闲后再调用最经济的预算模型精修，并附带一句话摘要。
