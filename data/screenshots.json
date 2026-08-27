@@ -1180,9 +1180,9 @@
   "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/settings.png",
   "https://raw.githubusercontent.com/dami9527/dsh-image-pathify/master/assets/update.png"
  ],
- "https://github.com/WSL043/dsh-native-session-manager": [
-  "https://raw.githubusercontent.com/WSL043/dsh-native-session-manager/main/docs/assets/archive-manager.en.png",
-  "https://raw.githubusercontent.com/WSL043/dsh-native-session-manager/main/docs/assets/confirm-delete.en.png"
+ "https://github.com/WSL043/dsh-chat-manager": [
+  "https://raw.githubusercontent.com/WSL043/dsh-chat-manager/main/docs/assets/archive-manager.en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-chat-manager/main/docs/assets/confirm-delete.en.png"
  ],
  "https://github.com/ryubyte/dsh-a2a": [
   "https://raw.githubusercontent.com/ryubyte/dsh-a2a/main/docs/screenshots/dashboard-outbound.png",
@@ -1324,11 +1324,11 @@
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-hover.png",
   "https://raw.githubusercontent.com/biggerboy/dsh-conversation-anchors/master/assets/anchors-wave.png"
  ],
- "https://github.com/WSL043/dsh-native-reasoning-slider": [
-  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/reasoning-slider-en.png",
-  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/reasoning-slider-energy-zh.png",
-  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-en.png",
-  "https://raw.githubusercontent.com/WSL043/dsh-native-reasoning-slider/main/docs/assets/mode-settings-dark-zh.png"
+ "https://github.com/WSL043/dsh-reasoning-slider": [
+  "https://raw.githubusercontent.com/WSL043/dsh-reasoning-slider/main/docs/assets/reasoning-slider-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-reasoning-slider/main/docs/assets/reasoning-slider-energy-zh.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-reasoning-slider/main/docs/assets/mode-settings-en.png",
+  "https://raw.githubusercontent.com/WSL043/dsh-reasoning-slider/main/docs/assets/mode-settings-dark-zh.png"
  ],
  "https://github.com/jerryqx/dsh-ximalaya": [
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-search.png",
