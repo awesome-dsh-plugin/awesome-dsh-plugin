@@ -892,6 +892,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) — 自由周期会话报告：任意日期区间的 AI 叙事日报/周报/月报，支持每隔 N 天定时提醒并弹系统通知（macOS / Linux）。
 - [zhu1090093659/dsh-web-ui#packages/dsh-chat-recovery](https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-chat-recovery) — 对话恢复插件：编辑最近一轮已结束的用户消息、显式重试失败轮次；两条路径都走 session fork 分支，原会话不被改动。
 - [zljr/dsh-share](https://github.com/zljr/dsh-share) — 将当前会话以只读、token 保护的 HTML 快照分享到局域网，附带会话统计与 Markdown 渲染。
+- [Zn-Dk/dsh-session-explorer](https://github.com/Zn-Dk/dsh-session-explorer) — DSH 会话消息级全文检索浏览器：FTS5 trigram 索引按消息检索（用户/助手/系统注入/工具四类，可按类型筛选），fork/续接会话结果自动去重，只读上下文预览自动滚动定位焦点消息，一键跳转真实会话；支持增量/全量重建索引与健康检查；界面中英双语跟随 Host locale 服务。
 - [Zn-Dk/dsh-session-repair](https://github.com/Zn-Dk/dsh-session-repair) — 诊断并安全修复损坏的 DSH 会话历史：raw zstd/JSONL 校验、tool-call ID 修复、单槽 pre-repair 备份与恢复、审计记录。
 - [zoahdev/dsh-shelf](https://github.com/zoahdev/dsh-shelf) — 会话生命周期 CLI：导出（md/json/jsonl）、归档/恢复、回收站、搜索与统计。默认只读；引擎从不删除任何东西。
 - [ZRui-C/dsh-minimal-first-turn](https://github.com/ZRui-C/dsh-minimal-first-turn) — Web 根会话的首轮精简：先使用持久 bash 与 str_replace_editor，移除自动工作区和技能上下文；首次工具调用或回复后恢复所选预设，带持久 composer 开关。
