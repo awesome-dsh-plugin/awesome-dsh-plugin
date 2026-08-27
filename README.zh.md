@@ -90,6 +90,7 @@ dsh plugin --profile web add dshmarket
 - [a903067276-rgb/dsh-file-upload](https://github.com/a903067276-rgb/dsh-file-upload) — 统一上传按钮 + 拖拽文件直进对话：文件保存到项目 uploads/，路径文本自动进输入框，可配合任意视觉工具看图。
 - [a903067276-rgb/dsh-hud](https://github.com/a903067276-rgb/dsh-hud) — HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。
 - [a903067276-rgb/dsh-plan-switch](https://github.com/a903067276-rgb/dsh-plan-switch) — 输入框一键进/出 Plan 模式（/plan 的快捷点击），常驻小按钮。
+- [AbelKeithsun/dsh-question-nav](https://github.com/AbelKeithsun/dsh-question-nav) — DSH Web UI 会话内提问导航：对话栏左/右缘（可在设置中切换）的圆点迷你地图，一个圆点对应一个用户提问——悬停显示全文，点击跳转到该提问。
 - [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) — Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。
 - [ai-eks/dsh-docking-layout](https://github.com/ai-eks/dsh-docking-layout) — 可停靠的 DSH Web UI 布局插件，将对话组织为标签页，并支持拖拽拆分对话分组。
 - [Aik358/dsh-anchored-monitor](https://github.com/Aik358/dsh-anchored-monitor) — 给 DeepSeek V4 Pro 的鞭子：实时监听每个思维块的指纹，当模型从专注的 We will / I will 模式滑向发散的 let me 模式时把它拉回来。
