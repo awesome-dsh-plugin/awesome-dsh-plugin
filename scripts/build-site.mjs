@@ -531,6 +531,14 @@ for (const loc of LOCALES) {
 // Plugin detail pages: /p/{owner}/{repo}[--subdir]/ per locale
 const detailMaster = fs.readFileSync('site/detail-template.html', 'utf8')
 const readmes = fs.existsSync('data/readmes.json') ? JSON.parse(fs.readFileSync('data/readmes.json', 'utf8')) : {}
+// Update notes (probe-updates.mjs): the latest release's notes and a short
+// tail of recent commits, published as docs/updates.json for market-side
+// consumers. Kept OUT of plugins.json on purpose: that file is fetched by
+// every market on every open, and 1,300 release bodies would multiply its
+// size for data only a user opening one update dialog ever reads. Absence is
+// normal — repos without releases still carry their commit tail, and an
+// entry missing here means "no notes available", never an error downstream.
+const updates = fs.existsSync('data/updates.json') ? JSON.parse(fs.readFileSync('data/updates.json', 'utf8')) : {}
 
 // render a plugin README to safe HTML: raw HTML dropped, headings demoted,
 // relative links/images resolved against the repo (probe supplies the bases)
@@ -850,6 +858,30 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   fs.writeFileSync('docs/readmes.json', JSON.stringify(payload) + '\n')
   console.log(`readmes.json: ${payload.count} entries, ${(fs.statSync('docs/readmes.json').size / 1048576).toFixed(1)} MB`)
+}
+
+// Public update-notes payload: /updates.json — what a consumer needs to show
+// "what changed" between an installed version and HEAD without touching the
+// GitHub API (whose anonymous budget is shared per egress IP and unusable
+// behind common proxies). One file fetched once per consumer, like readmes;
+// only listed entries, so delisting removes the notes the same build it
+// removes everything else about a plugin.
+{
+  const listed = new Set(ordered.map((e) => e.url))
+  const payload = {
+    name: 'awesome-dsh-plugin',
+    url: ORIGIN,
+    updated: registry.updated,
+    count: 0,
+    updates: {},
+  }
+  for (const [url, entry] of Object.entries(updates)) {
+    if (!listed.has(url)) continue
+    payload.updates[url] = entry
+    payload.count++
+  }
+  fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
+  console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
