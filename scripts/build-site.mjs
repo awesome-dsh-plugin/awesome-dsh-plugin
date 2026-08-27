@@ -14,6 +14,7 @@ import fs from 'node:fs'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
+import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
@@ -53,12 +54,30 @@ const CAT_IDS = ENTRY_CAT_IDS
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
+// Comments are deliberately opt-in. A half-configured widget would otherwise
+// turn every detail page into a broken third-party request, so fail loudly only
+// when a maintainer says it is ready to ship.
+if (typeof COMMENTS.enabled !== 'boolean') throw new Error('site/comments.mjs: enabled must be true or false')
+const commentsEnabled = COMMENTS.enabled
+if (commentsEnabled) {
+  for (const key of ['repo', 'repoId', 'category', 'categoryId']) {
+    if (typeof COMMENTS[key] !== 'string' || !COMMENTS[key].trim()) {
+      throw new Error(`site/comments.mjs: ${key} is required while comments are enabled`)
+    }
+  }
+  if (!/^[^/\s]+\/[^/\s]+$/.test(COMMENTS.repo)) {
+    throw new Error('site/comments.mjs: repo must be an owner/repository pair')
+  }
+}
+
 const dupes = []
 function parseReadme(loc) {
   const text = fs.readFileSync(loc.readme, 'utf8')
   const out = new Map() // url -> {name, url, desc, cat}
   let cat = null
-  for (const line of text.split('\n')) {
+  // A checkout with core.autocrlf leaves a trailing \r on every split line;
+  // regexes below intentionally use $ and would otherwise parse zero entries.
+  for (const line of text.split(/\r?\n/)) {
     const h = line.match(/^#{2,3} (.+)$/)
     if (h) {
       cat = CAT_IDS.find((id) => h[1].includes(loc.categories[id])) ?? null
@@ -656,6 +675,28 @@ for (const loc of LOCALES) {
       .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${r.slug}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
       .join('\n')
 
+    // Map a plugin, rather than a rendered URL, to its Discussion. This keeps
+    // /p/... and /zh/p/... in one conversation and survives future route or
+    // domain changes. The IDs in COMMENTS are public, but the script itself is
+    // not injected until the visitor asks to load comments.
+    const commentsId = `comments-${e.slug.replace(/[^a-z0-9-]/gi, '-')}`
+    const commentsConfig = commentsEnabled ? {
+      repo: COMMENTS.repo,
+      repoId: COMMENTS.repoId,
+      category: COMMENTS.category,
+      categoryId: COMMENTS.categoryId,
+      term: `plugin:${e.slug.toLowerCase()}`,
+      lang: loc.giscusLang,
+    } : null
+    const commentsSection = commentsConfig ? `<section class="panel comments" aria-labelledby="${commentsId}-title">
+    <h2 id="${commentsId}-title">${loc.strings.P_COMMENTS}</h2>
+    <p class="note">${loc.strings.P_COMMENTS_NOTE}</p>
+    <button class="comments-load" type="button" aria-controls="${commentsId}-mount" data-comments="${esc(JSON.stringify(commentsConfig))}" data-loading="${esc(loc.strings.P_COMMENTS_LOADING)}" data-ready="${esc(loc.strings.P_COMMENTS_READY)}" data-error="${esc(loc.strings.P_COMMENTS_ERROR)}">${loc.strings.P_COMMENTS_LOAD}</button>
+    <p class="comments-status" role="status" aria-live="polite"></p>
+    <div class="comments-mount giscus" id="${commentsId}-mount"></div>
+    <noscript><p class="note"><a href="https://github.com/${COMMENTS.repo}/discussions" rel="noopener">${loc.strings.P_COMMENTS_FALLBACK}</a></p></noscript>
+  </section>` : ''
+
     const jsonldDetail = JSON.stringify([{
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
@@ -709,6 +750,7 @@ ${readmeHtml}
     let page = detailMaster
     page = page
       .replaceAll('__P_README_SECTION__', () => readmeSection)
+      .replaceAll('__P_COMMENTS_SECTION__', () => commentsSection)
       .replaceAll('__LANG__', () => loc.htmlLang)
       .replaceAll('__TITLE__', () => esc(loc.P_TITLE
         .replace('{NAME}', e.name)
