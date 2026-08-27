@@ -1541,6 +1541,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Skills
 
+- [452926826/dsh-at-skill](https://github.com/452926826/dsh-at-skill) - Invoke user-accessible Skills with @name tokens and show matching Skill suggestions in the conversation composer.
 - [7dgroup-ai/dsh-skill-7d-code-reviewer](https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer) - Template-driven code review skill: five-step review flow, critical/medium/minor severity grading, four-dimension scoring (quality, security, performance, maintainability), dual text and HTML report output, and an on-demand reference knowledge base.
 - [863683348/dsh-starter-zh](https://github.com/863683348/dsh-starter-zh) - Beginner starter pack for DeepSeek Harness: welcome flow, 0→1 learning path, scenario-based plugin recommendations and a self-check checklist, paired with the dsh-handbook-zh Chinese tutorial repo.
 - [akqwpeter-prog/skill-bartender](https://github.com/akqwpeter-prog/skill-bartender) - Task-to-skill pairing meta-skill with a laziness ladder for minimal loading, a user-editable routing table, and a quarantine, SkillSpector scan, human-approval install flow.
