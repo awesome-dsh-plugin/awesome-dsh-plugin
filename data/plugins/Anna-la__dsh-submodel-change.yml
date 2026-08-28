@@ -1,0 +1,6 @@
+url: https://github.com/Anna-la/dsh-submodel-change
+name: Anna-la/dsh-submodel-change
+category: model
+description:
+  en: 'Lets you pick which provider/model drives each subagent: when the AI delegates, a picker card appears in the UI and the chosen route is injected into the child agent.'
+  zh: '子代理模型选择：AI 调用 subagent 时在 UI 弹出模型选择卡片，把所选 provider/model 注入子代理，嵌套子代理自动继承。'
