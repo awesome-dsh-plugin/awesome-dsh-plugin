@@ -1,0 +1,6 @@
+url: https://github.com/zhuiyueya/dsh-im-gateway
+name: zhuiyueya/dsh-im-gateway
+category: remote
+description:
+  en: 'Aggregated IM gateway for DeepSeek Harness: drive agents from WeChat, Feishu, Telegram, Discord, QQ, WhatsApp and 20+ chat platforms with unified sessions, remote approvals and interactive questions. By default, anyone who can message a connected bot can drive the agent; configure allowedUserIds to restrict access.'
+  zh: 'DeepSeek Harness 聚合 IM 网关：通过微信、飞书、Telegram、Discord、QQ、WhatsApp 等 20+ 聊天平台驱动 agent，支持统一会话、远程审批和交互提问。默认放行所有能给机器人发消息的人，需要限制请配置 allowedUserIds。'
