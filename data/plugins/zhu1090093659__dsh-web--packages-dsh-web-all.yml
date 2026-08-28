@@ -1,5 +1,5 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-web-ui-all
-name: zhu1090093659/dsh-web-ui#packages/dsh-web-ui-all
+url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-web-all
+name: zhu1090093659/dsh-web#packages/dsh-web-all
 category: ui
 description:
   en: 'Plugin and skin collection for the DSH Web UI: task board, Git graph, right-side panel, remote mobile UI, pet, live token stats, and a skin center.'

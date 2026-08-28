@@ -1,5 +1,6 @@
 url: https://github.com/lkh081231/screenshot-feedback-hook-mcp/tree/main/dsh-plugin
-name: lkh081231/screenshot-feedback-hook-mcp#dsh-plugin
+name: lkh081231/screenshot-feedback-hook-mcp#dsh-screenshot-feedback-hook-mcp
+
 category: vision
 description:
   en: Adds a take screenshot tool plus two optional automatic capture points, putting the screen into the conversation as an image block; requires an image-capable model.

@@ -1,6 +1,0 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-chat-recovery
-name: zhu1090093659/dsh-web-ui#packages/dsh-chat-recovery
-category: session
-description:
-  en: 'Chat recovery for DSH: edit the last finished user message and explicitly retry failed turns, both via session-fork branches that leave the original conversation untouched.'
-  zh: 对话恢复插件：编辑最近一轮已结束的用户消息、显式重试失败轮次；两条路径都走 session fork 分支，原会话不被改动。
