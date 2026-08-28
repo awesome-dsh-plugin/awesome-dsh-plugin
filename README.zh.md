@@ -985,6 +985,7 @@ dsh plugin --profile web add dshmarket
 - [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) — 每个工作目录与 git 分支自动维护 handoff.md：记录回合、折叠为简洁 Markdown 并注入后续会话，存储于 ~/.agent/agent-handoff，与 pi-handoff 字节级兼容。
 - [flymysql/dsh-memory](https://github.com/flymysql/dsh-memory) — 跨会话记忆库：remember / recall / forget 工具、每轮提示注入与设置页条目浏览。
 - [freehul/sgme](https://github.com/freehul/sgme) — 拾光记忆引擎（SGME）桥接：多智能体共享长期记忆（HTTP）—— L0/L1/L1.5/L2 分层提炼、按场景注入、统一检索、主动关怀信号（memory_search / wiki_search / signal_pull / signal_claim / signal_ack），npm 包名 `dsh-sgme`。
+- [Frog755/dsh-hybrid-memory](https://github.com/Frog755/dsh-hybrid-memory) — DSH 本地混合记忆插件：L1 冻结快照（MEMORY.md/USER.md 注入 system prompt，保 prefix cache）+ L2 可检索知识库（facts + SQLite FTS5，滑窗分词支持中文检索）+ L3 从 Hermes/Claude Code/Codex/WorkBuddy 导入（账本去重）；会话首步或记忆触发词自动注入相关事实，skill 加载后自动召回；数据全部留在本地。
 - [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) — 基于文件的跨会话记忆：纯 Markdown 记忆文件，检索结果自动注入；格式与 Claude Code 的 CLAUDE.md 及记忆文件兼容，迁移即手工复制文件。
 - [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) — 有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。
 - [giter00/dsh-headroom](https://github.com/giter00/dsh-headroom) — 面向 DeepSeek Harness 的自动上下文压缩插件：在工具输出进入模型前压缩，并通过 CCR 检索工具保持所有有损压缩可逆。
