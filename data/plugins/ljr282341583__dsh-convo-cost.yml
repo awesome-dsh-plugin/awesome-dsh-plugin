@@ -1,0 +1,6 @@
+url: https://github.com/ljr282341583/dsh-convo-cost
+name: ljr282341583/dsh-convo-cost
+category: usage
+description:
+  en: 'Real-time token usage and DeepSeek price estimates for the current conversation, shown below the composer.'
+  zh: '实时统计当前对话的 token 用量与 DeepSeek 费用估算，并显示在输入框下方。'
