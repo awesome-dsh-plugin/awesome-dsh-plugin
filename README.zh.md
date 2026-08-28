@@ -410,6 +410,7 @@ dsh plugin --profile web add dshmarket
 - [WSL043/dsh-reasoning-slider](https://github.com/WSL043/dsh-reasoning-slider) — 为模型添加推理强度滑块，支持原生与动画模式、明暗配色，以及全局或按模型配色。
 - [wsxwj123/dsh-plugins#dsh-composer-tools](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools) — 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）等输入增强。
 - [wsxwj123/dsh-plugins#dsh-turn-scrubber](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-turn-scrubber) — 右侧紧凑回合刻度条，悬停显示回合摘要，点击跳转到对应用户回合。
+- [wwumit/dsh-phone#client](https://github.com/wwumit/dsh-phone/tree/main/client) — 苹果风格智能体手机：双面板电话/短信、RCS 群聊（信任门禁）、跨设备智能体消息（registry 收件箱桥）、L0–L4 信任徽章与证据审计。实验性：信任摘要非安全保证，短信/信令经运营方收件箱中继（运营方可见）；E2E 加密为演进方向。
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) — Codex 风格左侧消息导航轨道：每条用户消息一个刻度，悬停预览、点击跳转，全历史一次索引。
 - [wydddddcool/dsh-hover-approve](https://github.com/wydddddcool/dsh-hover-approve) — DSH Web 侧边栏锚定气泡：会话待授权、提问、计划确认、目标阻断时在会话行旁自动弹出并一键处理，无需点进会话。
 - [wzz3034026545/dsh-rule-manager](https://github.com/wzz3034026545/dsh-rule-manager) — 在设置面板统一管理 DSH 规则：编辑全局/项目 AGENTS.md，或由 LLM 自动拆分粘贴的规则为分层 AGENTS.md 与技能。
