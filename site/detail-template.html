@@ -121,6 +121,15 @@ ul.rel .desc-link:hover p{color:var(--ink)}
 .morelink{display:inline-block;margin-top:1rem;font-size:.84rem;font-weight:550;color:var(--cinnabar)}
 .morelink:hover{color:var(--cinnabar-deep);text-decoration:underline;text-underline-offset:3px}
 
+/* Comment provider is never loaded until the visitor chooses to load it. */
+.comments-load{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:.9rem;border:1px solid var(--cinnabar);border-radius:8px;padding:.55rem .95rem;background:var(--cinnabar);color:var(--on-cinnabar);font-size:.82rem;font-weight:650;transition:background .15s ease,border-color .15s ease}
+.comments-load:hover{background:var(--cinnabar-deep);border-color:var(--cinnabar-deep)}
+.comments-status{min-height:1.55em;margin-top:.65rem;color:var(--ink-3);font-size:.78rem}
+.comments-mount{margin-top:.7rem;min-height:0;overflow:hidden}
+.comments-mount:empty,.comments-mount:has(iframe){min-height:12rem}
+.comments-status:empty{display:none}
+.comments-mount iframe{width:100%;border:0}
+
 /* rendered README content */
 .md{font-size:.9rem;color:var(--ink-2);overflow-wrap:break-word}
 .md h2,.md h3,.md h4,.md h5,.md h6{color:var(--ink);font-weight:700;margin:1.4em 0 .5em;letter-spacing:-.01em;line-height:1.3}
@@ -212,6 +221,8 @@ __P_RELATED__
     </ul>
     <a class="morelink" href="__CAT_URL__">__T_P_MORECAT__ →</a>
   </section>
+
+  __P_COMMENTS_SECTION__
 </main>
 
 <footer class="wrap">
@@ -229,6 +240,72 @@ document.addEventListener('click', async (e) => {
   btn.textContent = '✓';
   setTimeout(() => { btn.classList.remove('done'); btn.textContent = old; }, 1200);
 });
+
+// Comments load on their own — arriving on the page is the request. They are
+// still deferred until the section is close to the viewport, because giscus is
+// a third-party iframe and most visitors never scroll past the README: paying
+// for that connection on every page view would slow down the common case to
+// serve the rare one. The button below only ever appears after a failure.
+;(() => {
+  const mount = document.querySelector('.comments-mount');
+  if (!mount) return;
+  const status = document.querySelector('.comments-status');
+  const d = mount.dataset;
+  let config;
+  try { config = JSON.parse(d.comments); } catch { status.textContent = d.error; return; }
+
+  const load = () => {
+    status.textContent = d.loading;
+    mount.setAttribute('aria-busy', 'true');
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    Object.assign(script.dataset, {
+      repo: config.repo,
+      repoId: config.repoId,
+      category: config.category,
+      categoryId: config.categoryId,
+      mapping: 'specific',
+      term: config.term,
+      strict: '1',
+      reactionsEnabled: '1',
+      emitMetadata: '0',
+      inputPosition: 'bottom',
+      theme: 'preferred_color_scheme',
+      lang: config.lang,
+      loading: 'lazy',
+    });
+    script.onload = () => {
+      mount.removeAttribute('aria-busy');
+      // Sighted readers can see the thread arrive, so the confirmation is only
+      // here to be announced; leaving it on screen is a line of noise stapled
+      // under every plugin page forever.
+      status.textContent = d.ready;
+      setTimeout(() => { if (status.textContent === d.ready) status.textContent = ''; }, 2500);
+    };
+    script.onerror = () => {
+      mount.removeAttribute('aria-busy');
+      script.remove();
+      status.textContent = d.error;
+      const retry = document.createElement('button');
+      retry.type = 'button';
+      retry.className = 'comments-load';
+      retry.textContent = d.retry;
+      retry.addEventListener('click', () => { retry.remove(); load(); }, { once: true });
+      status.after(retry);
+    };
+    mount.append(script);
+  };
+
+  if (!('IntersectionObserver' in window)) { load(); return; }
+  const io = new IntersectionObserver((entries) => {
+    if (!entries.some((e) => e.isIntersecting)) return;
+    io.disconnect();
+    load();
+  }, { rootMargin: '400px' });
+  io.observe(mount);
+})();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

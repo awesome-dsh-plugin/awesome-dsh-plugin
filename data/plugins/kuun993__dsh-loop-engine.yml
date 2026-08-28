@@ -1,0 +1,6 @@
+url: https://github.com/kuun993/dsh-loop-engine
+name: kuun993/dsh-loop-engine
+category: session
+description:
+  en: 'Adds a Settings dropdown to switch the agent loop engine between the built-in in-process driver, Claude Code CLI, and Codex CLI.'
+  zh: '在设置页增加下拉，切换 agent 循环引擎：内置进程内驱动、Claude Code CLI 与 Codex CLI。'
