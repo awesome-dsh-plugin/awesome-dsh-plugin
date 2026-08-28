@@ -801,6 +801,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) - Maps a stable agent_key to an exact provider/model pair declared in role Markdown front matter, validates the pair against the live DSH model registry before spawning, and maintains per-workspace prefercmd and memory evolution files.
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) - Settings card for the DSH LLM auto-retry engine: tune retry count, backoff and jitter live from Settings -> General, with configurable retryableCodes chips - defaults add INVALID_REQUEST so OpenAI-style HTTP 400 reasoning_text errors in thinking mode get retried automatically.
 - [zhangjunjesse/dsh-claude-driver](https://github.com/zhangjunjesse/dsh-claude-driver) - Run the main session model on a local Claude Code subscription through the official Claude Agent SDK, taking over the llm/stream route for the claude-code provider, with token-level streaming, session resume, and DSH tools bridged in over MCP so they keep DSH sandbox and approval.
+- [zhangyh-x/dsh-model-pricing](https://github.com/zhangyh-x/dsh-model-pricing) - A quick reference table for the latest pricing and policies of large language models.
 
 ### Identity & Communication
 
