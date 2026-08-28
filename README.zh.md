@@ -1207,6 +1207,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/db-connector](https://github.com/JohnXu22786/db-connector) — 为 dsh agent 提供安全且可审计的 SQLite/PostgreSQL/MySQL 访问：schema 内省、强制只读查询、写审批门与持久化 JSONL SQL 审计追踪。
 - [JohnXu22786/docindex](https://github.com/JohnXu22786/docindex) — 工作区文档的本地语义索引（MD/PDF/DOCX/TXT）：FTS5 BM25 与本地嵌入混合检索、带行号命中引用、增量更新。
 - [JohnXu22786/docs-retriever](https://github.com/JohnXu22786/docs-retriever) — doctrove：面向编码 agent 的版本化库文档检索 MCP server——目录检索、版本选择与按主题提取带相关度排序的文档片段，零运行时依赖，dsh bundle 接入。
+- [JohnXu22786/dsh-web-submit](https://github.com/JohnXu22786/dsh-web-submit) — 把 CLI 提交的 headless 任务跑进正在运行的 dsh Web 进程（/x/headless + SSE 事件流），Web 界面实时可见进度。
 - [JohnXu22786/market-watch](https://github.com/JohnXu22786/market-watch) — dsh 的金融行情监控插件:实时报价、本地自选列表、带冷却的阈值提醒、定时轮询,以及在会话内用 ASCII/mermaid 渲染 A 股与加密货币图表(数据源腾讯 + CoinGecko)。
 - [JohnXu22786/model-catalog](https://github.com/JohnXu22786/model-catalog) — 从 OpenAI 兼容 API 主机自动发现模型列表、定价与能力，归一化后生成 dsh 可直接使用的模型配置。
 - [JohnXu22786/net-debug](https://github.com/JohnXu22786/net-debug) — 为 DeepSeek Harness 打造的网络调试工具集：带 SSRF/私网防护的通用 HTTP 客户端、会话内请求历史与重放、响应检查与 HAR 导出——三个 dsh 工具外加零依赖 CLI。
