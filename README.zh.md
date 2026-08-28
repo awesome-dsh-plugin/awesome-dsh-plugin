@@ -1187,6 +1187,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/model-catalog](https://github.com/JohnXu22786/model-catalog) — 从 OpenAI 兼容 API 主机自动发现模型列表、定价与能力，归一化后生成 dsh 可直接使用的模型配置。
 - [JohnXu22786/net-debug](https://github.com/JohnXu22786/net-debug) — 为 DeepSeek Harness 打造的网络调试工具集：带 SSRF/私网防护的通用 HTTP 客户端、会话内请求历史与重放、响应检查与 HAR 导出——三个 dsh 工具外加零依赖 CLI。
 - [JohnXu22786/rss-digest](https://github.com/JohnXu22786/rss-digest) — dsh 的 RSS/Atom 摘要插件:订阅源管理、定时抓取、精确与近似去重,并由 LLM 生成每日 Markdown 简报投递到会话和/或文件(同时提供独立 CLI)。
+- [JohnXu22786/semantic-search](https://github.com/JohnXu22786/semantic-search) — 面向 DeepSeek Harness 的本地语义代码搜索：片段级符号感知索引、离线词法 embedding（或 OpenAI 兼容端点）、向量+BM25 混合检索并以 RRF 融合——三个 dsh 工具外加 sema CLI。
 - [JohnXu22786/snippet-expander](https://github.com/JohnXu22786/snippet-expander) — 发送前把消息中的 #tag 展开为片段库配置的正文；支持多片段库、别名、变量占位符与递归防护。
 - [JohnXu22786/subtitle-studio](https://github.com/JohnXu22786/subtitle-studio) — 多语言字幕翻译工作流：SRT/VTT 解析、逐句 LLM 翻译、双语合并；批量处理支持断点续跑。
 - [jsoncode/dsh-jenkins](https://github.com/jsoncode/dsh-jenkins) — 管理多台 Jenkins 服务器，支持从设置页、模型工具或工作区级「执行 Jenkins Job」入口触发构建，宿主 + 浏览器双端、界面中英双语。
