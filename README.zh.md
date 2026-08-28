@@ -1877,6 +1877,7 @@ dsh plugin --profile web add dshmarket
 - [lucky8197/dsh-git-hygiene](https://github.com/lucky8197/dsh-git-hygiene) — Git 卫生巡检：只读扫描已合并/过期分支、大文件、未跟踪文件与未提交修改，输出体检报告与清理建议，不自动删除任何东西。
 - [maxmilian/dsh-forge](https://github.com/maxmilian/dsh-forge) — 面向自建 Gitea / Forgejo 的只读工具，走两者共用的 REST API：实例信息、仓库列表、议题与 PR 搜索和读取、PR diff 与变更文件，以及 Actions 运行、任务与任务日志。工具元数据支持英文、繁体中文、简体中文与日文。
 - [MeghanBao/dsh-backstory](https://github.com/MeghanBao/dsh-backstory) — A `/backstory` command and tool that annotate each line with the git commit that last touched it and the agent turn + prompt that wrote it, from a persistent per-line ledger (drift-proof by content hash), DSH-* commit trailers, or the live session log.
+- [meyaomiao/dsh-github-workbench](https://github.com/meyaomiao/dsh-github-workbench) — DSH 侧边栏 GitHub 工作台：远端目录树加 Issues / Pull requests / Actions 页签，支持建 Issue/PR、评论、编辑、关闭、merge/squash/rebase 与重跑或取消 CI；挂载为 better-sidebar 页签或独立右侧面板。
 - [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) — 在对话框左下角一键连接你的 GitHub 账号（OAuth 设备流或 Personal Access Token），之后 AI 可通过 github_api 工具读取和操作你的 GitHub。
 - [NEAZ71eve/dsh-tool-github](https://github.com/NEAZ71eve/dsh-tool-github) — GitHub REST API 工具 + 浏览器侧边栏面板：仓库/搜索/Issue/PR/评论、账号绑定（凭据库）与一键克隆为工作区。
 - [No-PRM/dsh-explorer#dsh-explorer](https://github.com/No-PRM/dsh-explorer/tree/main/dsh-plugins/dsh-explorer) — Git 优先的文件树侧栏：VS Code 风格层级线、M/A/U/D/R git 状态装饰、HEAD 与工作区对照预览、媒体预览、拖拽引用（文件/文件夹/选中代码带行号）—— 纯插件。
@@ -2354,6 +2355,7 @@ dsh plugin --profile web add dshmarket
 - [MDR-EX1000/dsh-rw](https://github.com/MDR-EX1000/dsh-rw) — Remote-SSH 风格工作区：把 SSH 主机上的远程目录变成原生 DSH 工作区，agent 通过 12 个 rw_* 工具（SFTP/exec）直接操作远程文件，路径限定在工作区内并校验 known_hosts。
 - [mervyn-teo/dsh-plugin-qr-connect](https://github.com/mervyn-teo/dsh-plugin-qr-connect) — 「设置」按钮上方的一键二维码，让手机通过带鉴权的反向代理连接 Web 界面。
 - [mexiaosqwq/dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) — DSH Web UI 移动端适配：窄屏下侧边栏变为贴合内容的 overlay 抽屉、会话独占全宽，设置面板改为近全宽 sheet。
+- [meyaomiao/dsh-server-deck](https://github.com/meyaomiao/dsh-server-deck) — DSH 服务器卡片仪表盘：每台主机展示在线状态、CPU、内存、磁盘与延迟，点卡片进入 xterm.js SSH 终端；支持导入 ~/.ssh/config，挂载为 better-sidebar 页签或独立右侧抽屉。
 - [moyu-good/dsh-lark-bridge](https://github.com/moyu-good/dsh-lark-bridge) — 飞书/Lark 深度通道：原生思考过程消息、审批卡片、goal/todo 实时卡片、workflow 展开行、会话全文检索、后台任务与子代理结算通知。其设计以飞书应用自身的可见性范围为访问边界——凡是应用允许触达的人都能驱动 agent 并回答它的审批请求，除非填写可选的发送者/群组/审批人白名单收窄。
 - [NattoCB/dsh-plugin-wechat-bridge](https://github.com/NattoCB/dsh-plugin-wechat-bridge) — 把微信私聊桥接进 DSH agent 会话并流式回传回复，支持热插拔与设置页签。
 - [NOirBRight/dsh-mobile#pairing](https://github.com/NOirBRight/dsh-mobile/tree/master/plugins/pairing) — 移动远程套件：Host 配对插件（二维码 offer、回环 Host Gateway、加密 Tunnel、同网 WebRTC Direct），以及仓库内的 Android APK。
