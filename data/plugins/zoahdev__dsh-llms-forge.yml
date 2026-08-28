@@ -1,0 +1,7 @@
+url: https://github.com/zoahdev/dsh-llms-forge
+name: zoahdev/dsh-llms-forge
+category: dev
+description:
+  en: 'Generate llms.txt for dsh plugin repositories from package.json + README — AI-readable discovery files, zero runtime deps, read-only by default. CLI plus an agent-callable llms_forge tool.'
+  zh: '为 dsh 插件仓库从 package.json + README 生成 llms.txt（AI 可读发现文件），零运行时依赖、默认只读，含 CLI 与 agent 可调用 llms_forge 工具。'
+# listing updated 2026-08-19 (repo hardened to 10+ commits; submission gate)

@@ -1,0 +1,6 @@
+url: https://github.com/mjylfz/dsh-skill-mover
+name: mjylfz/dsh-skill-mover
+category: skill
+description:
+  en: 'Migrates skills from other agents (Cursor, Claude Code, Codex, OpenCode, and more) into DSH: scans 14 agent platforms plus the shared ~/.agents skills layer, detects duplicate names across sources, lets you pick the best source per skill, copies them into the DSH skills directory, and rolls back previously migrated skills.'
+  zh: 把其他 Agent（Cursor、Claude Code、Codex、OpenCode 等）的技能一键搬进 DeepSeek Harness：扫描 14 个平台外加共享的 ~/.agents 技能层，识别不同来源的同名技能，可挑选每个技能的最佳来源，复制到 DSH 技能目录，支持回滚移除已迁移的技能。

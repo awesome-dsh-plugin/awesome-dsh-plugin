@@ -2,5 +2,5 @@ url: https://github.com/zeng6125-rgb/dsh-llm-retry-settings
 name: zeng6125-rgb/dsh-llm-retry-settings
 category: model
 description:
-  en: Settings card to tune the DSH LLM auto-retry policy (retry count, backoff, jitter) live from Settings → General.
-  zh: 在 DSH 设置里调整 LLM 自动重试的次数与退避时间并实时生效的设置卡片。
+  en: "Settings card for the DSH LLM auto-retry engine: tune retry count, backoff and jitter live from Settings -> General, with configurable retryableCodes chips - defaults add INVALID_REQUEST so OpenAI-style HTTP 400 reasoning_text errors in thinking mode get retried automatically."
+  zh: "LLM 自动重试设置卡片：在设置页实时调整重试次数、退避与抖动，并可勾选额外可重试错误码（retryableCodes）—— 默认补入 INVALID_REQUEST，OpenAI thinking 模式 HTTP 400 reasoning_text 报错开箱即自动重试。"

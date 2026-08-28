@@ -1,0 +1,6 @@
+url: https://github.com/ilps2/dsh-video-understand
+name: ilps2/dsh-video-understand
+category: tools
+description:
+  en: 'Low-cost video understanding tool: a video_understand tool turns a Bilibili link / BV / local video into an AVIS info layer (ASR + scene structure + object tracks + YOLO labels) and returns summary + Q&A. Question-driven dynamic routing across layers (L0 ASR / L1 object tracks / L2 key-frame VLM), semantic-layer reuse for repeat questions, per-question budget cap. Self-contained engine, no external dependencies.'
+  zh: '低成本视频理解工具：video_understand 把 B站链接/BV号/本地视频转成 AVIS 信息层（ASR+场景结构+对象轨迹+YOLO 标签）并输出摘要+问答。问题驱动动态路由分层（L0 ASR / L1 对象轨迹 / L2 关键帧 VLM）、语义层复用（重复提问直接查层）、单次问题预算上限。引擎自包含，无外部依赖。'

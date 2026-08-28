@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-skillopt
+name: WODE25500/dsh-skillopt
+category: skill
+description:
+  en: 'Microsoft SkillOpt-Sleep integration: a nightly sleep cycle that harvests sessions, mines recurring tasks, replays them and consolidates validated skills behind a held-out gate.'
+  zh: '微软 SkillOpt-Sleep 集成：夜间睡眠循环——收获会话、挖掘重复任务、重放并在留出验证门后沉淀技能。'

@@ -11,6 +11,17 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
+# Every iteration below starts with `git reset --hard`, which silently throws
+# away anything uncommitted in the working tree. That includes edits to this
+# very script: a fix being written here was destroyed mid-run, and because bash
+# re-reads a script while executing it, the run afterwards was following a file
+# that no longer existed on disk. Refuse to start unless the tree is clean.
+if [ -n "$(git status --porcelain)" ]; then
+  echo "working tree is not clean — commit or stash first (this script runs 'git reset --hard')"
+  git status --short | sed 's/^/  /'
+  exit 1
+fi
+
 for n in "$@"; do
   git checkout -q main && git fetch -q origin && git reset -q --hard origin/main
 
@@ -26,6 +37,20 @@ for n in "$@"; do
   git checkout -q -B "maint$n" FETCH_HEAD
 
   if ! git rebase origin/main >/dev/null 2>&1; then
+    # A stale fork usually carries several commits that each touch the two
+    # generated READMEs, so the rebase stops once per commit. Resolving once and
+    # calling `rebase --continue` a single time only clears the first stop: the
+    # second one made --continue return non-zero, and the script reported
+    # CONFLICT and handed back a branch that needed no human at all. #1873 was
+    # exactly this — four commits, three of them README regenerations, no real
+    # conflict anywhere. Keep resolving until the rebase finishes or something
+    # this script has no business deciding is left unmerged.
+    giveup=""
+    guard=0
+    while [ -d "$(git rev-parse --git-path rebase-merge)" ] || [ -d "$(git rev-parse --git-path rebase-apply)" ]; do
+    guard=$((guard + 1))
+    if [ "$guard" -gt 50 ]; then giveup="more than 50 conflicting commits"; break; fi
+
     # Generated files are regenerated below, so main's copy always wins.
     git checkout origin/main -- README.md README.zh.md 2>/dev/null
 
@@ -87,16 +112,27 @@ for n in "$@"; do
     # contributor's branch — which is exactly what happened before this check
     # existed, to ten branches at once. Hand it back instead.
     if [ -n "$(git diff --name-only --diff-filter=U)" ]; then
-      echo "$n :: unresolved: $(git diff --name-only --diff-filter=U | tr '\n' ' ')"
-      git rebase --abort >/dev/null 2>&1; git checkout -f -q main
-      echo "$n :: CONFLICT (needs a human)"; continue
+      giveup="unresolved: $(git diff --name-only --diff-filter=U | tr '\n' ' ')"
+      break
     fi
 
     git add -A 2>/dev/null
-    git -c core.editor=true rebase --continue >/dev/null 2>&1 || {
+    if ! git -c core.editor=true rebase --continue >/dev/null 2>&1; then
+      # Once a commit's README churn is discarded in favour of main's copy the
+      # commit can have nothing left in it, and --continue refuses to create an
+      # empty commit. For a "regenerate README" commit that is the expected
+      # outcome, not a failure — drop it and carry on.
+      git -c core.editor=true rebase --skip >/dev/null 2>&1 || {
+        giveup="rebase --continue and --skip both failed"
+        break
+      }
+    fi
+    done
+
+    if [ -n "$giveup" ]; then
       git rebase --abort >/dev/null 2>&1; git checkout -f -q main
-      echo "$n :: CONFLICT (needs a human)"; continue
-    }
+      echo "$n :: CONFLICT ($giveup)"; continue
+    fi
   fi
 
   # The READMEs are generated, so main's copy is the only correct starting

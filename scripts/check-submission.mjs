@@ -90,10 +90,61 @@ const HEADERS = { accept: 'application/vnd.github+json', authorization: `Bearer 
 
 const gateApplies = !PR_CREATED || new Date(PR_CREATED) >= new Date(GATE_EFFECTIVE_FROM)
 
-async function api(pathname, { raw = false } = {}) {
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+
+// GitHub answers 403 to two unrelated questions: "may this token see that
+// repository" and "have you asked too fast". The second kind comes in two
+// flavours — a primary quota (x-ratelimit-remaining: 0, resets on the hour)
+// and a secondary/abuse limit from a burst, which sets retry-after and clears
+// in about a minute. The gate treated all three identically and gave up on the
+// first response, which is how eight submissions came to sit unverified on
+// 2026-08-25 naming nine repositories that were public and reachable the whole
+// time. Nothing was wrong with any of them; the gate simply asked during a
+// squeeze and reported "nothing checked".
+//
+// Retry only what a retry can fix, and wait exactly as long as GitHub asks.
+// A permission 403 carries neither header and is returned immediately, because
+// asking again would just spend another request to be told the same thing.
+const retryDelay = (r) => {
+  const after = Number(r.headers.get('retry-after'))
+  if (Number.isFinite(after) && after > 0) return after * 1000 + 1000
+  if (r.headers.get('x-ratelimit-remaining') === '0') {
+    const reset = Number(r.headers.get('x-ratelimit-reset'))
+    if (Number.isFinite(reset)) return Math.max(0, reset * 1000 - Date.now()) + 1000
+  }
+  return null
+}
+
+// Two budgets, because an unbounded backoff is its own outage. A primary quota
+// can be forty minutes from resetting, and a job holding a runner idle that
+// long is worse than reporting the entry unverified and letting regate.yml
+// re-run it later — which it already does, on a `neutral` conclusion.
+const MAX_WAIT_PER_CALL_MS = 75_000
+const MAX_WAIT_TOTAL_MS = 150_000
+let waited = 0
+
+async function api(pathname, { raw = false, attempt = 0 } = {}) {
   const r = await fetch(`https://api.github.com/${pathname}`, { headers: HEADERS, signal: AbortSignal.timeout(20000) })
   if (r.status === 404) return { status: 404 }
-  if (!r.ok) return { status: r.status }
+  if ((r.status === 403 || r.status === 429) && attempt < 3) {
+    const wait = retryDelay(r)
+    if (wait != null && wait <= MAX_WAIT_PER_CALL_MS && waited + wait <= MAX_WAIT_TOTAL_MS) {
+      waited += wait
+      console.log(`  ..  rate limited on ${pathname} — waiting ${Math.round(wait / 1000)}s (attempt ${attempt + 1}/3)`)
+      await sleep(wait)
+      return api(pathname, { raw, attempt: attempt + 1 })
+    }
+  }
+  // Keep what GitHub said. Discarding the body is what left "HTTP 403" as the
+  // only evidence in every summary, indistinguishable between a rate limit and
+  // a repository this token genuinely cannot read.
+  if (!r.ok) {
+    const reason = await r
+      .json()
+      .then((b) => (typeof b?.message === 'string' ? b.message : null))
+      .catch(() => null)
+    return { status: r.status, reason }
+  }
   return { status: 200, body: raw ? r : await r.json().catch(() => null), headers: r.headers }
 }
 
@@ -290,14 +341,17 @@ async function hasBundle(repo, sub) {
   return scanned
 }
 
+// Goes through api() rather than fetching directly, so the commit-count bar
+// gets the same rate-limit backoff as everything else. It used to have its own
+// bare fetch, which meant a squeeze made a repository look like it had no
+// commit history rather than like it had not been asked.
 async function commitCount(repo) {
-  const r = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`, { headers: HEADERS, signal: AbortSignal.timeout(20000) })
-  if (!r.ok) return null
+  const r = await api(`repos/${repo}/commits?per_page=1`)
+  if (r.status !== 200) return null
   const link = r.headers.get('link') ?? ''
   const m = link.match(/[?&]page=(\d+)>;\s*rel="last"/)
   if (m) return Number(m[1])
-  const body = await r.json().catch(() => [])
-  return Array.isArray(body) ? body.length : null
+  return Array.isArray(r.body) ? r.body.length : null
 }
 
 async function check(entry) {
@@ -312,7 +366,8 @@ async function check(entry) {
     // "passed" all the way out to the check-run summary, which is how
     // repositories under both bars came to sit green: a 403 during a quota
     // squeeze looked identical to a clean bill of health.
-    return { problems: [], unverified: [`nothing checked — repo lookup failed (HTTP ${meta.status})`] }
+    const why = meta.reason ? ` — ${meta.reason}` : ''
+    return { problems: [], unverified: [`nothing checked — repo lookup failed (HTTP ${meta.status})${why}`] }
   }
   const problems = []
   const unverified = []
@@ -322,7 +377,30 @@ async function check(entry) {
   if (bundle.ok === false) problems.push(bundle.why)
   else if (bundle.ok === null) unverified.push(`manifest not checked — ${bundle.why}`)
 
-  if (gateApplies) {
+  // The age/commit bar filters the REPOSITORY, not the entry: it exists to
+  // keep hours-old throwaway repos out. The workflow already acts on that —
+  // it gates added and RENAMED entry files but deliberately not modified ones,
+  // because "recategorize, reword" must not re-litigate a repository that was
+  // accepted years of commits ago.
+  //
+  // Renames are in that list for a real reason (#1554): a rename is how an
+  // entry's url changes without ever looking added, and that one repointed an
+  // entry at a DIFFERENT repository, which nothing had verified. But it also
+  // catches the ordinary case — a plugin moving inside its own repository —
+  // and there the answer is already known and can now come back WORSE, since
+  // a force-push shortens history. Tlyer233/dsh-vscode-review moved a plugin
+  // up one directory and the gate rejected the move for "7 commits (needs
+  // 10)", on a repository it had already accepted.
+  //
+  // So the split is on the repository, not on the kind of change: a rename
+  // that lands on a repository the catalog already lists skips the bar; a
+  // rename that lands anywhere else still faces it, which is #1554 intact.
+  // Scoped to the BASE commit so a pull request cannot grant itself the
+  // exemption by adding a first entry for a new repository in the same push.
+  // Everything else still runs — archived, bundle manifest, the per-PR cap,
+  // and the human read of the description.
+  const alreadyListed = listedRepos !== null && listedRepos.has(repo.toLowerCase())
+  if (gateApplies && !alreadyListed) {
     const ageDays = (Date.now() - new Date(meta.body.created_at).getTime()) / 86400000
     const commits = await once(`commits:${repo}`, () => commitCount(repo))
     if (ageDays < MIN_AGE_DAYS) {
@@ -342,6 +420,38 @@ async function check(entry) {
 function changedEntryFiles(base) {
   const out = execSync(`git diff --name-only --diff-filter=d ${base}...HEAD -- ${PLUGINS_DIR}`, { encoding: 'utf8' })
   return new Set(out.split('\n').map((s) => s.trim()).filter(Boolean))
+}
+
+/**
+ * Every `owner/repo` the catalog already listed at `base`, lowercased.
+ *
+ * Read from the entry FILENAMES rather than their contents: names are
+ * `owner__repo--sub-path.yml`, and 2,500 `git show` calls to learn something
+ * the names already carry would cost more than the check it feeds. The split
+ * is exact rather than lucky — GitHub owner names are alphanumerics and
+ * hyphens only, so the first `__` is always the owner/repo boundary even when
+ * the repository name itself contains `__`.
+ * @returns the set, or null when the base cannot be read — callers must treat
+ *   null as "grant nothing", so an unreadable base fails closed.
+ */
+function listedReposAt(base) {
+  let out
+  try {
+    out = execSync(`git ls-tree -r --name-only ${base} -- ${PLUGINS_DIR}`, { encoding: 'utf8' })
+  } catch (e) {
+    console.error(`could not list entries at ${base} (${e.message}) — treating every repository as new`)
+    return null
+  }
+  const repos = new Set()
+  for (const line of out.split('\n')) {
+    const file = path.basename(line.trim())
+    if (!file.endsWith('.yml')) continue
+    const stem = file.slice(0, -'.yml'.length).split('--')[0]
+    const cut = stem.indexOf('__')
+    if (cut === -1) continue
+    repos.add(`${stem.slice(0, cut)}/${stem.slice(cut + 2)}`.toLowerCase())
+  }
+  return repos
 }
 
 // A submission whose YAML does not parse is a submission problem, and
@@ -373,6 +483,11 @@ try {
   }
   process.exit(1)
 }
+// Needs BASE: without a base commit there is no "already listed" to consult,
+// and the exemption must not fall back to the working tree — the pull request
+// IS the working tree, so every repository it adds would look pre-existing.
+const listedRepos = BASE ? listedReposAt(BASE) : null
+
 let targets = entries
 if (ONLY_LIST) {
   const want = new Set(

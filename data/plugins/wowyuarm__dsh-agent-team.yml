@@ -1,0 +1,6 @@
+url: https://github.com/wowyuarm/dsh-agent-team
+name: wowyuarm/dsh-agent-team
+category: workflow
+description:
+  en: 'Helps a human manage tasks in an orderly way with collaborating agents: persistent agent identities, per-project Workspaces, responsibility-bearing Channels, and Task Threads chaining session agents.'
+  zh: '帮助 human 有序管理任务：Agent 是持久身份，Workspace 按项目组织，Channel 承载职责分派，Task Thread 串联多个 session agent 协作推进。'

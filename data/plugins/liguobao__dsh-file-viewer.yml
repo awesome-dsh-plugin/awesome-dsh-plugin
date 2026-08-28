@@ -1,0 +1,6 @@
+url: https://github.com/liguobao/dsh-file-viewer
+name: liguobao/dsh-file-viewer
+category: ui
+description:
+  en: 'Read-only Web client file-preview panel with image, PDF, CSV/TSV, text, source-code, Markdown, JSON and YAML renderers, large-file range loading, and a provider API for non-local content.'
+  zh: Web 客户端只读文件预览面板，支持图片、PDF、CSV/TSV、文本、源代码、Markdown、JSON 与 YAML 渲染、大文件分段读取，以及面向非本地内容的 provider API。

@@ -1,0 +1,6 @@
+url: https://github.com/GreenLv/dsh-session-insights
+name: GreenLv/dsh-session-insights
+category: session
+description:
+  en: Generate local, evidence-backed workflow retrospectives from DSH session history through `/session-insights`, with deterministic and optional model-assisted analysis.
+  zh: 通过 `/session-insights` 将 DSH 会话历史生成为本地、基于证据的工作流复盘，支持确定性分析和可选的模型辅助分析。

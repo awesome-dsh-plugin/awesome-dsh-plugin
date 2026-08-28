@@ -1,0 +1,7 @@
+url: https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin
+name: liwuzhan/agent-native-trade#dsh-plugin
+category: tools
+tarball: https://github.com/liwuzhan/agent-native-trade/releases/latest/download/agent-trade-dsh-plugin.tgz
+description:
+  en: Adds catalog discovery, counterparty contact, deal signing, settlement coordination, human-task handoff, and signed receipt tools for agent-native trade.
+  zh: 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。

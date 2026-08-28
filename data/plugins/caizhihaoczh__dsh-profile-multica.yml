@@ -1,0 +1,6 @@
+url: https://github.com/caizhihaoczh/dsh-profile-multica
+name: caizhihaoczh/dsh-profile-multica
+category: dev
+description:
+  en: Bridges Multica to DeepSeek Harness through a versioned JSONL process protocol.
+  zh: 通过版本化 JSONL 进程协议将 Multica 接入 DeepSeek Harness。

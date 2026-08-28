@@ -1,0 +1,6 @@
+url: https://github.com/lihang-lh/dsh-task-panel
+name: lihang-lh/dsh-task-panel
+category: ui
+description:
+  en: 'Task panel for the DSH Web sidebar: publish tasks, auto-distill related sessions, and drive plan/develop/review stages with subagents plus in-panel acceptance.'
+  zh: 'DSH Web 侧边栏任务面板：发布任务、自动蒸馏历史会话，由子代理分阶段（规划/开发/复核）执行，并在面板内验收。'

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-research-report
+name: PerryLink/dsh-research-report
+category: workflow
+description:
+  en: Verifiable research-report engine for DeepSeek Harness with a content-addressed evidence ledger, versioned sealed reports where every claim carries a verification verdict and the manifest hash seals the directory, and retrieval orchestration that reuses the ctx.web and ctx.jobs seams.
+  zh: DeepSeek Harness 的可核查研究报告引擎：通过内容寻址的证据台账和版本化封存报告使每条结论携带核查结论，由 manifest 哈希封存目录，检索编排复用 ctx.web 与 ctx.jobs 接口。

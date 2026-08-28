@@ -1,0 +1,6 @@
+url: https://github.com/KevinZhangNothing/dsh-task-graph
+name: KevinZhangNothing/dsh-task-graph
+category: ui
+description:
+  en: Adds a Graph tab that renders one session's execution as an interactive DAG of turns, LLM steps, tools, skills, subagents, code changes and tests, with live status, retry aggregation, critical path and trajectory linkage.
+  zh: 在会话区新增「图谱」Tab，把单个会话的执行过程渲染为可交互 DAG：轮次、LLM 步骤、工具、技能、子代理、代码改动与测试，支持实时状态、重试聚合、关键路径与轨迹双向联动。

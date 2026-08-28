@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-terraform
+name: WODE25500/dsh-terraform
+category: dev
+description:
+  en: 'Infrastructure as code: gated plan/apply, state and output inspection, and configuration validation via the terraform CLI.'
+  zh: '基础设施即代码：plan/apply 门控、state/output 检查与配置校验。'

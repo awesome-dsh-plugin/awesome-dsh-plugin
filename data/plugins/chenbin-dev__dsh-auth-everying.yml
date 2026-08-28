@@ -1,0 +1,5 @@
+url: https://github.com/chenbin-dev/dsh-auth-everying
+name: chenbin-dev/dsh-auth-everying
+category: identity
+description:
+  en: Import local Claude, Codex, Grok, Gemini, Copilot, OpenCode, and CC Switch config into DeepSeek Harness with OAuth login for supported providers.

@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-codex
+name: WODE25500/dsh-codex
+category: dev
+description:
+  en: 'OpenAI Codex CLI wrapper: one-shot exec, repo review and session resume with a default read-only sandbox.'
+  zh: 'OpenAI Codex CLI 封装：一次性任务、仓库审查与会话续接，默认只读沙箱。'

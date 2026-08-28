@@ -1,6 +1,7 @@
 url: https://github.com/FuRongJun-1999/dsh-memory
 name: FuRongJun-1999/dsh-memory
-category: memory
+category: agi
+tarball: https://github.com/FuRongJun-1999/dsh-memory/releases/download/v0.3.0/furongjun1999-dsh-memory-0.3.0.tgz
 description:
-  en: 'AGI long-term memory base: multi-agent spatiotemporal memory graph, self-evolving knowledge flywheel, self-cognition, and auditable trust guardrails.'
-  zh: AGI长期记忆基础：多智能体时空记忆图谱、自进化知识飞轮、自我认知与可审计的信任护栏。
+  en: 'White-box AGI architecture exploration: metacognition (self-cognition loop), continual learning (knowledge flywheel), world model (condition space, spatiotemporal memory graph), self-improvement (bootstrap discipline), zero-LLM white-box pipeline, and auditable trust guardrails.'
+  zh: 白箱AGI架构探索：元认知（自我认知循环）、持续学习（知识飞轮）、世界模型（条件空间+语义时空图）、自我改进（自举纪律）、零LLM白箱管线与可审计信任护栏。

@@ -1,0 +1,7 @@
+url: https://github.com/ygcdsj/dsh-home-migrate
+name: ygcdsj/dsh-home-migrate
+category: workflow
+tarball: https://github.com/ygcdsj/dsh-home-migrate/releases/download/v0.0.9/dsh-migrate-0.0.9.tgz
+description:
+  en: Export and import DeepSeek Harness configuration across machines as same-OS .dshmig archives, with credential redaction, verification and rollback.
+  zh: 迁移 DSH 配置：跨机器导出/导入 .dshmig 归档（同 OS、新建 profile、凭据脱敏、校验与回滚）。

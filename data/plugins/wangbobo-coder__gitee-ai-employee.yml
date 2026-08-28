@@ -1,0 +1,6 @@
+url: https://github.com/wangbobo-coder/gitee-ai-employee
+name: wangbobo-coder/gitee-ai-employee
+category: workflow
+description:
+  en: 'Gitee/GitHub AI employee: @ the bot on an issue (Gitee or GitHub), it clones the repo, implements the fix on the branch you name, opens a PR to that branch, and can auto-merge and auto-close the issue.'
+  zh: 'Gitee/GitHub AI 员工：在 issue 里 @ 机器人并指定目标分支（如"需要修改 release-v1.2 分支"），它自动克隆仓库开发、向指定分支提交 PR，可自动合并并自动关闭 issue。'

@@ -1,0 +1,7 @@
+url: https://github.com/ParticleLight/dsh-browser-plus
+name: ParticleLight/dsh-browser-plus
+category: browser
+tarball: https://github.com/ParticleLight/dsh-browser-plus/releases/download/v0.4.0/dsh-browser-plus-0.4.0.tgz
+description:
+  en: 'Visible Electron browser for DSH with one shared BrowserWindow, isolated task views, explicit human-Agent handoff, snapshot-reference and native navigation tools, operation trails, and demand-driven page thumbnails.'
+  zh: '面向 DSH 的可见 Electron 浏览器：共享一个 BrowserWindow，提供隔离任务视图、显式人机交接、快照引用与原生导航工具、操作轨迹和按需页面缩略图。'

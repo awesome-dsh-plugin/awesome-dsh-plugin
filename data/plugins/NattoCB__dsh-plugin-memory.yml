@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-plugin-memory
+name: NattoCB/dsh-plugin-memory
+category: memory
+description:
+  en: Persistent five-layer memory system with relevance injection, LLM auto-extraction, profile rotation, and six agent tools.
+  zh: 五层持久记忆系统：相关性注入、LLM 自动提取、画像轮替与六个 agent 工具。

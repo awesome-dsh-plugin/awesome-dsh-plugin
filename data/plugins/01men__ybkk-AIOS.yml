@@ -1,0 +1,6 @@
+url: https://github.com/01men/ybkk-AIOS
+name: 01men/ybkk-AIOS
+category: market
+description:
+  en: 'Enterprise AI resource platform as a 16-plugin cordis bundle: org/account/role IAM, OIDC provider and App SSO, MCP server management with the platform itself exposed as an MCP server, NAS asset storage, skill hub, agent and app registries, one-click remote dsh enrollment with tool proxying, usage metering, wallet billing, model gateway, audit with alerts, self-update, and a reviewed third-party plugin marketplace — 60+ ops tools become callable by the dsh agent.'
+  zh: '企业 AI 资源平台，由 16 个 cordis 插件组成：组织/账号/角色 IAM、OIDC 认证与 App SSO、MCP 服务管理（平台自身亦作为 MCP Server 对外提供调用）、NAS 资产存储、Skill 市场、Agent 与应用管理、远程 dsh 一键接入与工具远程代理、计量、钱包计费、模型网关、审计告警、平台自更新与带审核的第三方插件市场——60+ 个运维工具可直接被 dsh Agent 调用。'
