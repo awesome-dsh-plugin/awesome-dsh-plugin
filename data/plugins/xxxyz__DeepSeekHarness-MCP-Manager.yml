@@ -1,0 +1,6 @@
+url: https://github.com/xxxyz/DeepSeekHarness-MCP-Manager
+name: xxxyz/DeepSeekHarness-MCP-Manager
+category: ui
+description:
+  en: 'MCP server manager for DeepSeek Harness: add, edit, enable/disable, restart and delete MCP servers from Settings → MCP 管理, with JSON export/import, four mcp_manager_* model tools and an HTTP API; install via npx, npm or cross-platform scripts.'
+  zh: DeepSeek Harness 的 MCP 服务管理器：在「设置 → MCP 管理」中新增/编辑/启停/重启/删除 MCP 服务，支持 JSON 导入导出、4 个 mcp_manager_* 模型工具与 HTTP API，可通过 npx、npm 或跨平台脚本安装。
