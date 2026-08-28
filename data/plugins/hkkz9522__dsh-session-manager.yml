@@ -2,5 +2,5 @@ url: https://github.com/hkkz9522/dsh-session-manager
 name: hkkz9522/dsh-session-manager
 category: session
 description:
-  en: Delete conversations with a confirmation dialog and manage archived sessions (archive/unarchive) in the DeepSeek Harness web UI.
-  zh: 在 DeepSeek Harness Web 中删除对话（二次确认），并管理归档会话（移入/移出归档）。
+  en: Delete, archive, move conversations across workspaces, and migrate a session's Agent preset — with confirmation dialogs — in the DeepSeek Harness web UI.
+  zh: 在 DeepSeek Harness Web 中删除、归档、跨工作区移动会话，以及迁移单条会话的 Agent 预设，全部带二次确认。
