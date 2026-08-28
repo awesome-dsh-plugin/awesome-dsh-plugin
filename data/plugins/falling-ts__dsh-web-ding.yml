@@ -1,0 +1,6 @@
+url: https://github.com/falling-ts/dsh-web-ding
+name: falling-ts/dsh-web-ding
+category: notify
+description:
+  en: "Plays a short synthesized ding in the browser tab the moment an agent finishes a turn, built entirely with the Web Audio API; no backend audio and no OS notification."
+  zh: "agent 回合结束时在浏览器标签页里播放一声合成的叮,纯前端 Web Audio 发音,不经过后端、不弹系统通知。"
