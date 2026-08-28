@@ -1335,5 +1335,16 @@
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-album.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
+ ],
+ "https://github.com/yangdongzhen590/dsh-knj-workflow": [
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/task-detail.png",
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/workflow-editor.png",
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/new-task-modal.png"
+ ],
+ "https://github.com/yangdongzhen590/dsh-knj-menu": [
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-menu/main/assets/screenshots/menu-manager.png"
+ ],
+ "https://github.com/yangdongzhen590/dsh-knj-scheduler": [
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-scheduler/main/assets/screenshots/scheduler-panel.png"
  ]
 }
