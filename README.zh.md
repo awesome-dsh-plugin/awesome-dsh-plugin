@@ -809,6 +809,7 @@ dsh plugin --profile web add dshmarket
 - [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) — 为 DeepSeek Harness 智能体提供基于开放协议ANP的原生身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。
 - [chenbin-dev/dsh-auth-everying](https://github.com/chenbin-dev/dsh-auth-everying) — Import local Claude, Codex, Grok, Gemini, Copilot, OpenCode, and CC Switch config into DeepSeek Harness with OAuth login for supported providers.
 - [MengYuil/dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) — ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。
+- [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 - [wutian122/dsh-remote-shell](https://github.com/wutian122/dsh-remote-shell) — 打包 remote-shell 技能，提供安全的 SSH、SFTP、Telnet、WinRM 远程操作，内置加密凭证库，登录与执行脚本不接受明文密码。
 
 ### 💬 会话与消息
@@ -2024,7 +2025,6 @@ dsh plugin --profile web add dshmarket
 - [miiaowuwu/dsh-sound-lab](https://github.com/miiaowuwu/dsh-sound-lab) — DSH 声音工坊：在会话结束、弹出选项、请求许可与停止时播放指定音效，支持 AI 角色语音生成与音效库管理。
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
 - [moon09300731/dsh-peak-cost-mode](https://github.com/moon09300731/dsh-peak-cost-mode) — 在 DeepSeek 高峰计价时段（北京时间 09:00–12:00、14:00–18:00，价格 ×2）自动切换 caveman 超精简输出省 token，标题栏常驻状态徽章，档位切换时弹提醒。
-- [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 - [NattoCB/dsh-plugin-notifications](https://github.com/NattoCB/dsh-plugin-notifications) — 在设置中新增卡片，对话轮次完成时弹出系统通知与可选提示音。
 - [nicecx/dsh-relay](https://github.com/nicecx/dsh-relay) — 把 agent 的审批与提问诉求推送到 iMessage / 邮件 / 微信通道，回复 `#编号 批准/拒绝/回答` 即可处理，无需打开网页。
 - [nickhelion/dsh-serverchan-notify](https://github.com/nickhelion/dsh-serverchan-notify) — 回合结束时向 Server酱3 推送微信通知——标题、模型、项目目录、Git 分支、状态与回复摘要，支持子代理过滤，fire-and-forget 不阻塞主流程。
