@@ -1,0 +1,7 @@
+url: https://github.com/0QwQ0/dsh-ui-auth
+name: 0QwQ0/dsh-ui-auth
+category: security
+tarball: https://github.com/0QwQ0/dsh-ui-auth/releases/latest/download/dsh-ui-auth-0.4.0.tgz
+description:
+  en: 'Authentication gate for the DeepSeek Harness Web UI: login covers pages, /api, /plugins and WebSocket upgrades; PBKDF2 password hashing, HttpOnly SameSite session cookies, IP-based login lockout, a user-management settings panel (users edit their own profile, admins add or remove users and reset passwords), admin-only model and API-key configuration guards, per-user isolation on the REST/list APIs and the WebSocket event streams, session persistence across restarts, a JSONL audit log, and a fail-closed gateway.'
+  zh: 'DeepSeek Harness Web UI 认证网关：登录门禁覆盖页面、/api、/plugins 与 WebSocket 升级；PBKDF2 口令哈希、HttpOnly SameSite 会话 Cookie、按源 IP 登录锁定；设置面板内置用户管理（普通用户仅可修改本人资料与密码，管理员可新增/删除用户、重置密码、调整角色）；模型配置与 API Key 仅管理员可修改；REST/列表接口与 WebSocket 事件流均按用户隔离；会话重启后免登录恢复；JSONL 审计日志；存储故障时保持 fail-closed。'
