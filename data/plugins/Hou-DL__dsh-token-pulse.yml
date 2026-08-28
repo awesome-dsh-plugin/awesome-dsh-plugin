@@ -1,5 +1,5 @@
-url: https://github.com/Hou-DL/dsh-token-heatmap
-name: Hou-DL/dsh-token-heatmap
+url: https://github.com/Hou-DL/dsh-token-pulse
+name: Hou-DL/dsh-token-pulse
 category: usage
 description:
   en: 'Local-first token usage heatmap inside DSH settings: GitHub-style week/month/quarter/year grids, hourly usage per day, per-model and per-provider Top 5, and persisted history that survives session deletion. Zero network, zero billing.'
