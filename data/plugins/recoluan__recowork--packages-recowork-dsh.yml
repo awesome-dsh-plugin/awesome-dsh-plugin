@@ -1,0 +1,6 @@
+url: https://github.com/recoluan/recowork/tree/main/packages/recowork-dsh
+name: recoluan/recowork#recowork-dsh
+category: workflow
+description:
+  en: 'Creates and inspects RecoWork local-agent-project workspaces through two bounded DSH tools and a web workspace card.'
+  zh: '通过两个受限的 DSH 工具和网页工作区卡片，创建并检查 RecoWork local-agent-project 工作区。'

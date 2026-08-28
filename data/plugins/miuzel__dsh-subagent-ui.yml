@@ -1,0 +1,6 @@
+url: https://github.com/miuzel/dsh-subagent-ui
+name: miuzel/dsh-subagent-ui
+category: ui
+description:
+  en: Search, monitor, interrupt, and batch-archive workspace subagents, featuring real-time activity streaming and an active-agent floating panel.
+  zh: 搜索、监控、打断与批量归档工作区子代理，支持实时活动/思考流式展示与活跃浮窗。

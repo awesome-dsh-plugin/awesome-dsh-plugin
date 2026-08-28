@@ -1,4 +1,5 @@
 {
+ "https://github.com/shengyvself/dsh-autoresume": "2026-08-18",
  "https://github.com/buhuikongpan/dsh-project-context": "2026-08-18",
  "https://github.com/01Virex/dsh-status-rotator": "2026-08-14",
  "https://github.com/030611/dsh-telemetry-redactor": "2026-08-14",
@@ -159,6 +160,7 @@
  "https://github.com/a903067276-rgb/dsh-hud": "2026-08-14",
  "https://github.com/alingalingling/ui-status-label": "2026-08-13",
  "https://github.com/anweat/dsh-browser": "2026-08-14",
+ "https://github.com/anweat/dsh-context-console": "2026-08-16",
  "https://github.com/anweat/dsh-restart": "2026-08-14",
  "https://github.com/anweat/dsh-voice-webspeech": "2026-08-14",
  "https://github.com/anweat/dsh-web-search-pro": "2026-08-14",
@@ -441,7 +443,7 @@
  "https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github": "2026-08-17",
  "https://github.com/openma-ai/deepseek-harness-tui/tree/main/npm": "2026-08-14",
  "https://github.com/springbrand-lab/dsh-skin-universe/tree/main/packages/dsh-web-ui-all": "2026-08-17",
- "https://github.com/moguiyu/dsh-tavily": "2026-08-15",
  "https://github.com/Tabbit-Browser/dsh-tabbit": "2026-08-21",
- "https://github.com/omdsh-dev/stent": "2026-08-13"
+ "https://github.com/omdsh-dev/stent": "2026-08-13",
+ "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tavily": "2026-08-15"
 }

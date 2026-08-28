@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-scheduler
+name: yangdongzhen590/dsh-knj-scheduler
+category: workflow
+description:
+  en: 'Cron task scheduler for DSH: on schedule, automatically creates a new session and injects your prompt as its first message, with task history and manual run/stop controls.'
+  zh: '定时任务调度器：按 Cron 表达式到点自动新建 DSH 会话并注入提示词执行，支持任务历史、手动运行与启停。'

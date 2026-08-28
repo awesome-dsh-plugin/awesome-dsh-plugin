@@ -1,0 +1,6 @@
+url: https://github.com/tomowang/dsh-tui
+name: tomowang/dsh-tui
+category: ui
+description:
+  en: 'Full-screen terminal client for DeepSeek Harness built on pi-tui: session replay/resume, streaming responses, collapsible tool cards, in-terminal approvals and questions, model/preset/permission/plan/goal management, shell mode, and a trajectory ledger.'
+  zh: '基于 pi-tui 的 DeepSeek Harness 全屏终端客户端：会话回放/续接、流式响应、可折叠工具卡片、终端内审批与提问、模型/预设/权限/计划/目标管理、Shell 模式，以及轨迹（trajectory）事件台账。'
