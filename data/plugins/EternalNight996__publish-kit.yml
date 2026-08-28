@@ -1,0 +1,6 @@
+url: https://github.com/EternalNight996/publish-kit
+name: EternalNight996/publish-kit
+category: skill
+description:
+  en: 'Release playbook for AI agents covering npm / GitHub / Gitee / DSH marketplace / cargo crates.io / PyPI / PyInstaller multi-channel publish, bilingual README design, git tag SOP, and npm package slimming. Skill bundle that turns a one-line release prompt into a coordinated publish across every channel so npm version, git tag, both remotes, marketplace listings, repo RP fields, and README all stay in agreement.'
+  zh: '面向 AI Agent 的发布工具箱：覆盖 npm / GitHub / Gitee / DSH 插件市场 / cargo crates.io / PyPI / PyInstaller 多渠道发布，README 双语排版设计，git tag 发版 SOP，npm 包瘦身。把一行发布指令变成跨渠道对齐的完整发布动作——npm 版本、git tag、双远端、市场收录、RP 字段、README 全部一致。安装：`npx skills add https://github.com/EternalNight996/publish-kit`。'

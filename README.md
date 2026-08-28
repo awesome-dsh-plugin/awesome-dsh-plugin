@@ -2,7 +2,7 @@
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com)
 
-English | [中文](README.zh.md)
+English | [中文](README.zh.md) | [日本語](README.ja.md)
 
 > A curated list of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
@@ -21,14 +21,6 @@ dsh plugin --profile web add dshmarket
 <sub><i>The plugin market inside Settings — click to enlarge.</i></sub>
 
 > 💡 Prefer chat? [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme) lets your agent find plugins for you (`dsh plugin --profile web add dsh-find-plugin`).
-
-> 💬 **Every plugin page takes comments.** Ask the author a question, say what you used it for, or warn the next reader — [see an example](https://awesome-dsh-plugin.com/p/00080000/dsh-project-memory/). Threads live in this repository's [GitHub Discussions](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/discussions), so there is no account to make beyond the GitHub one you have. Nothing loads until you ask for it.
-
-> ℹ️ **On desktop clients.** This list is client-agnostic. A plugin is listed because it follows the official protocol — it declares a `dsh.bundle` manifest and installs with `dsh plugin add` — not because it adapts to any particular client.
->
-> We're talking with `anywhere-labs/deepseek-harness-desktop` about working together again; we'll update this note as that progresses. Whatever comes of it, the listing rule stays as it is: adapting to any particular client is not a condition of being listed, and no plugin will be removed or demoted for not doing so.
->
-> Clients worth a look: [dsh-desktop](https://github.com/dataelement/dsh-desktop) and [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop) — both ship dsh-market built in, so everything on this list is one click away. Any other good third-party client works too.
 
 > [!WARNING]
 > Installing a plugin runs third-party code on your machine with your own permissions — it can read your files, use your credentials, and reach the network. Tool approvals don't sandbox plugin code. Being on this list is not a security review: check the source before you install, and try unfamiliar plugins somewhere that doesn't hold your keys. See the full disclaimer at the bottom of this page.
@@ -1668,6 +1660,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [dhicoc/dsh-wuyun-liuqi](https://github.com/dhicoc/dsh-wuyun-liuqi) - Complete wuyun-liuqi (five-evolutions-six-qi / 五运六气) Traditional Chinese Medicine skill pack as a DeepSeek Harness Cordis plugin: annual and guest-qi calculation, clinical pattern differentiation, and pathogenesis reasoning.
 - [duyanta123/dsh-preset-scaffold](https://github.com/duyanta123/dsh-preset-scaffold) - DSH project scaffold preset: strict 5-phase init runbook, engineering standards and six runnable starter templates (node-ts / react-vite / python / go / spring-boot / monorepo).
 - [dylanzhangzx/dknowc-dsh](https://github.com/dylanzhangzx/dknowc-dsh) - Trusted office suite for government/enterprise work by Beijing Caizhi Technology (深知可信智能): three skills — trusted consulting (policy/regulation Q&A with citation markers + provenance HTML), trusted search (authoritative policy/standard retrieval with traceable HTML + clean Markdown), and official-document writing (draft/rewrite/Word/red-head delivery); all interfaces go through the dknowc trusted workbench MCP (Bearer auth), products land in the session workspace, one-time key setup persists for later sessions; ships on npm as dknowc-dsh.
+- [EternalNight996/publish-kit](https://github.com/EternalNight996/publish-kit) - Release playbook for AI agents covering npm / GitHub / Gitee / DSH marketplace / cargo crates.io / PyPI / PyInstaller multi-channel publish, bilingual README design, git tag SOP, and npm package slimming. Skill bundle that turns a one-line release prompt into a coordinated publish across every channel so npm version, git tag, both remotes, marketplace listings, repo RP fields, and README all stay in agreement.
 - [fishzjp/qa-skills](https://github.com/fishzjp/qa-skills) - QA pipeline as 10 agent skills: requirement analysis, test strategy, case writing and review, E2E (Playwright) and API automation, exploratory, regression scope and bug analysis, backed by a shared knowledge base with format rules, risk model and schema validators.
 - [FuncWei/dsh-wechat-mp-studio](https://github.com/FuncWei/dsh-wechat-mp-studio) - WeChat Official Account content studio: anti-homogenization rotation writing, low-creativity remediation playbook, blessing-image visual baseline, gpt-image pipeline with OCR acceptance, and the measured xiaolvshu draft web API.
 - [fuxin123z/dsh-skill-manage](https://github.com/fuxin123z/dsh-skill-manage) - Agent-managed procedural memory: a skill_manage tool that creates, patches, disables and deletes the agent's own skills in user or project scope, with delete guards (agent-created marker, pin, path confinement) and a trigger-discipline prompt.
@@ -2651,4 +2644,3 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
-
