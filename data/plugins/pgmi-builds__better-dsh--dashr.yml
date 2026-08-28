@@ -1,5 +1,5 @@
-url: https://github.com/pgmi-builds/dashr/tree/main/dashr
-name: pgmi-builds/dashr#dashr
+url: https://github.com/pgmi-builds/better-dsh/tree/main/dashr
+name: pgmi-builds/better-dsh#dashr
 category: dev
 description:
   en: 'Dashr ("Better Dsh"): a persistent Python-kernel REPL for dsh — eval cells with tool.* bindings, scheme:// resource addressing, and a wired-in IDE (LSP, AST, hashline edit).'
