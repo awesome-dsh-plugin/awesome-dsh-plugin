@@ -155,6 +155,7 @@ dsh plugin --profile web add dshmarket
 - [cookiesheep/whale-on-desk](https://github.com/cookiesheep/whale-on-desk) — 像素鲸鱼桌宠,29 个逐帧验收状态:等批准时贴屏敲玻璃并让标签页标题闪烁,任务完成开口汇报,并为 web 端提供斜杠命令面板。
 - [Coprexist/AIsChat#dsh-aischat](https://github.com/Coprexist/AIsChat/tree/main/dsh-aischat) — 把 AIsChat 社交智能体平台以原生侧边栏形式嵌入 DSH Web 界面——联系人面板、经同源 HTTP/WS 代理的实时聊天、Markdown/LaTeX 渲染。插件只是前端，它代理到你自己运行的 AIsChat 后端（默认 http://127.0.0.1:5228，后端在同一仓库内）。
 - [cuhaitiang0405-collab/dsh-indexbookmark](https://github.com/cuhaitiang0405-collab/dsh-indexbookmark) — DSH 对话问题索引：列出会话中你提过的所有问题，支持搜索、分页与一键定位。
+- [cyrus123456/dsh-johari-cognition-quadrant-dialog-composer](https://github.com/cyrus123456/dsh-johari-cognition-quadrant-dialog-composer) — 乔哈里认知四象限对话梳理工具——在输入框上方添加按钮，弹出 2×2 象限面板（我知道/不知道 × AI知道/不知道），将对话上下文梳理为结构化 Prompt 并写回输入框。
 - [daetz-coder/dsh-multi-chat](https://github.com/daetz-coder/dsh-multi-chat) — 在 DSH Web 界面里并排运行、监控多个对话实例：多窗口墙 + 自动发现 + 单窗控制，内置带口令认证的局域网网关，手机/平板也能看。
 - [DamonKoy/dsh-web-ui#dsh-aionui-panel](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-aionui-panel) — dsh web GUI 右侧面板系统：像素级还原 AionUi 的资源树 + 预览（文件树、差异视图、预览）。
 - [DamonKoy/dsh-web-ui#dsh-liangshen](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-liangshen) — dsh web GUI 的梁神 agent 预设：两阶段锚定标准预设。
