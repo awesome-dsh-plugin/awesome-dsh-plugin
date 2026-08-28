@@ -1,5 +1,5 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-remote-web-ui
-name: zhu1090093659/dsh-web-ui#packages/dsh-remote-web-ui
+url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-remote-web-ui
+name: zhu1090093659/dsh-web#packages/dsh-remote-web-ui
 category: remote
 description:
   en: 'Remote control of a dsh web workspace from phone or PC: QR-code pairing through a token-gated channel, SSE real-time sync, and separate mobile and full desktop GUI modes.'
