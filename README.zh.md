@@ -330,6 +330,7 @@ dsh plugin --profile web add dshmarket
 - [pingg02/dsh-plugins#dsh-desktop-entry](https://github.com/pingg02/dsh-plugins/tree/main/dsh-desktop-entry) — 创建 Windows 桌面快捷方式，必要时启动 DeepSeek Harness，并用 Chrome 或 Edge 应用窗口打开 Web UI。
 - [pingg02/dsh-plugins#dsh-quote-selection](https://github.com/pingg02/dsh-plugins/tree/main/dsh-quote-selection) — 引用选中的对话文本并添加可选备注，在发送下一条消息时自动附带引用内容。
 - [plolpl789/dsh-raw-html](https://github.com/plolpl789/dsh-raw-html) — 让 DeepSeek Harness Web GUI 把 agent 输出的 HTML 渲染成真实界面，支持视觉卡片、KaTeX 公式、Mermaid 图表与内置开源字体，并向 agent 注入设计规范。
+- [Pudge1996/dsh-composer-stretch](https://github.com/Pudge1996/dsh-composer-stretch) — 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠，扩展模式下 Enter 换行。
 - [pyf2818/dsh-bili-widget](https://github.com/pyf2818/dsh-bili-widget) — DSH 里的 B站悬浮看片小窗：置顶窗口，含推荐/热门/排行/精选/关注/AI 频道与搜索，自动连播、迷你专注模式、历史持久化与最小化悬浮球。
 - [qjcnmd/dsh-reasoning-slider](https://github.com/qjcnmd/dsh-reasoning-slider) — Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。
 - [Quinn2006/dsh-guise](https://github.com/Quinn2006/dsh-guise) — 给 DSH 的 agent 穿上主人钦定的人设：多套人格随心换，全局或按工作区生效，内置人设库、总开关、余额预警与没电模式（80 句随机话术）。文件即配置、保存即生效、零依赖。
