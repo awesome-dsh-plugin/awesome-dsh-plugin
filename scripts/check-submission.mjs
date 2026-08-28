@@ -377,7 +377,30 @@ async function check(entry) {
   if (bundle.ok === false) problems.push(bundle.why)
   else if (bundle.ok === null) unverified.push(`manifest not checked — ${bundle.why}`)
 
-  if (gateApplies) {
+  // The age/commit bar filters the REPOSITORY, not the entry: it exists to
+  // keep hours-old throwaway repos out. The workflow already acts on that —
+  // it gates added and RENAMED entry files but deliberately not modified ones,
+  // because "recategorize, reword" must not re-litigate a repository that was
+  // accepted years of commits ago.
+  //
+  // Renames are in that list for a real reason (#1554): a rename is how an
+  // entry's url changes without ever looking added, and that one repointed an
+  // entry at a DIFFERENT repository, which nothing had verified. But it also
+  // catches the ordinary case — a plugin moving inside its own repository —
+  // and there the answer is already known and can now come back WORSE, since
+  // a force-push shortens history. Tlyer233/dsh-vscode-review moved a plugin
+  // up one directory and the gate rejected the move for "7 commits (needs
+  // 10)", on a repository it had already accepted.
+  //
+  // So the split is on the repository, not on the kind of change: a rename
+  // that lands on a repository the catalog already lists skips the bar; a
+  // rename that lands anywhere else still faces it, which is #1554 intact.
+  // Scoped to the BASE commit so a pull request cannot grant itself the
+  // exemption by adding a first entry for a new repository in the same push.
+  // Everything else still runs — archived, bundle manifest, the per-PR cap,
+  // and the human read of the description.
+  const alreadyListed = listedRepos !== null && listedRepos.has(repo.toLowerCase())
+  if (gateApplies && !alreadyListed) {
     const ageDays = (Date.now() - new Date(meta.body.created_at).getTime()) / 86400000
     const commits = await once(`commits:${repo}`, () => commitCount(repo))
     if (ageDays < MIN_AGE_DAYS) {
@@ -397,6 +420,38 @@ async function check(entry) {
 function changedEntryFiles(base) {
   const out = execSync(`git diff --name-only --diff-filter=d ${base}...HEAD -- ${PLUGINS_DIR}`, { encoding: 'utf8' })
   return new Set(out.split('\n').map((s) => s.trim()).filter(Boolean))
+}
+
+/**
+ * Every `owner/repo` the catalog already listed at `base`, lowercased.
+ *
+ * Read from the entry FILENAMES rather than their contents: names are
+ * `owner__repo--sub-path.yml`, and 2,500 `git show` calls to learn something
+ * the names already carry would cost more than the check it feeds. The split
+ * is exact rather than lucky — GitHub owner names are alphanumerics and
+ * hyphens only, so the first `__` is always the owner/repo boundary even when
+ * the repository name itself contains `__`.
+ * @returns the set, or null when the base cannot be read — callers must treat
+ *   null as "grant nothing", so an unreadable base fails closed.
+ */
+function listedReposAt(base) {
+  let out
+  try {
+    out = execSync(`git ls-tree -r --name-only ${base} -- ${PLUGINS_DIR}`, { encoding: 'utf8' })
+  } catch (e) {
+    console.error(`could not list entries at ${base} (${e.message}) — treating every repository as new`)
+    return null
+  }
+  const repos = new Set()
+  for (const line of out.split('\n')) {
+    const file = path.basename(line.trim())
+    if (!file.endsWith('.yml')) continue
+    const stem = file.slice(0, -'.yml'.length).split('--')[0]
+    const cut = stem.indexOf('__')
+    if (cut === -1) continue
+    repos.add(`${stem.slice(0, cut)}/${stem.slice(cut + 2)}`.toLowerCase())
+  }
+  return repos
 }
 
 // A submission whose YAML does not parse is a submission problem, and
@@ -428,6 +483,11 @@ try {
   }
   process.exit(1)
 }
+// Needs BASE: without a base commit there is no "already listed" to consult,
+// and the exemption must not fall back to the working tree — the pull request
+// IS the working tree, so every repository it adds would look pre-existing.
+const listedRepos = BASE ? listedReposAt(BASE) : null
+
 let targets = entries
 if (ONLY_LIST) {
   const want = new Set(

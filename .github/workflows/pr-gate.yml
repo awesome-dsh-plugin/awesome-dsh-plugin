@@ -152,6 +152,14 @@ jobs:
           EFF=$(git log --diff-filter=A --format=%cI -1 -- .github/workflows/pr-gate.yml)
           echo "effective_from=${EFF:-1970-01-01T00:00:00Z}" >> "$GITHUB_OUTPUT"
 
+          # The checker reads the catalog AT THIS COMMIT to answer one
+          # question: is this entry's repository one we already list? A rename
+          # inside a repository we accepted long ago must not be re-judged as a
+          # new submission. It has to come from here rather than from the
+          # checkout, because the checkout is the PR — every repository the PR
+          # adds would look pre-existing.
+          echo "base=$BASE" >> "$GITHUB_OUTPUT"
+
       - name: Check submitted entries
         if: steps.pr.outputs.found == 'true' && steps.extract.outputs.none == 'false'
         id: check
@@ -164,6 +172,7 @@ jobs:
             --dir /tmp/prdata/data/plugins \
             --only-list /tmp/prdata/changed.txt \
             --pr-created "${{ steps.pr.outputs.created_at }}" \
+            --base "${{ steps.extract.outputs.base }}" \
             --json gate-result.json
 
       - name: Report result on the PR
