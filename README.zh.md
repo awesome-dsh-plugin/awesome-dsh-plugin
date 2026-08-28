@@ -1453,6 +1453,7 @@ dsh plugin --profile web add dshmarket
 - [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
 - [liustack/modsearch](https://github.com/liustack/modsearch) — 纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。
 - [Lum1104/dsh-browser#bridge-browser](https://github.com/Lum1104/dsh-browser/tree/main/packages/browser/bridge-browser) — Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。
+- [LWJ007/dsh-browser-tabs](https://github.com/LWJ007/dsh-browser-tabs) — 输入 /tabs 弹出浏览器标签页选择器，点选后链接自动填入输入框。
 - [maxiaovivi/dsh-cloak-browser](https://github.com/maxiaovivi/dsh-cloak-browser) — 基于 CloakBrowser 的原生浏览器工具：按 Agent 隔离会话，提供有界快照、ref 交互、截图与安全路由。
 - [maxwell-feng/dsh-searxng-web](https://github.com/maxwell-feng/dsh-searxng-web) — 用自托管 SearXNG 实例接管原生 web_search 与 web_fetch 工具，免密钥、不经第三方。
 - [MicroHEROX/dsh-exa-mcp](https://github.com/MicroHEROX/dsh-exa-mcp) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接接入托管的 Exa 搜索 MCP 端点（mcp.exa.ai）：web_search_exa 与 web_fetch_exa 工具，免费额度匿名可用，设置 EXA_API_KEY 可解锁更高限额。
