@@ -1,0 +1,7 @@
+url: https://github.com/Jiachi5533/dsh-remote-gateway
+name: Jiachi5533/dsh-remote-gateway
+category: remote
+tarball: https://github.com/Jiachi5533/dsh-remote-gateway/releases/latest/download/dsh-remote-gateway.tgz
+description:
+  en: Source-filtered HTTP/SSE/WebSocket gateway for using the DSH Web UI behind an authenticated reverse proxy, with loopback trust adaptation and in-app host directory selection.
+  zh: 带精确来源 IP 白名单的 HTTP/SSE/WebSocket 网关，让 DSH Web UI 在带认证反向代理后保持设置、插件与宿主机目录选择功能。
