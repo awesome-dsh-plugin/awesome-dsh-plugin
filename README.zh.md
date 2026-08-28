@@ -1761,6 +1761,7 @@ dsh plugin --profile web add dshmarket
 - [fuhefei/dsh-sentinel](https://github.com/fuhefei/dsh-sentinel) — 条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。
 - [fxylabs/superself#dsh-plugin](https://github.com/fxylabs/superself/tree/main/apps/dsh-plugin) — 把 Superself 的 self CLI 暴露为模型工具（项目上下文、工作单元、报告、决策）并提供 /self 命令——跨会话、跨项目的项目状态，保存在代码仓库之外。
 - [GM-HZ/dsh-dag-workflow](https://github.com/GM-HZ/dsh-dag-workflow) — 为 DeepSeek Harness 提供持久化 DAG 工作流、Agent 创作工具、SQLite 存储、可恢复运行和可视化 Canvas Studio。
+- [Guard42/dsh-humanize](https://github.com/Guard42/dsh-humanize) — 把多阶段目标编排为可恢复 Flow 的 agent 预设：阶段带裁判、SHA-256 流锁身份、HMAC 终局评审门禁、事件溯源运行日志；附 15 个工具。
 - [hanxuanliang/dsh-chaos](https://github.com/hanxuanliang/dsh-chaos) — 面向 DeepSeek Harness 的持久化多 Agent 协作插件，提供频道、话题、任务与可恢复的 Agent 会话。
 - [haochi72/dsh-auto-continue-429](https://github.com/haochi72/dsh-auto-continue-429) — 遇到 RATE_LIMIT（429）或配额耗尽（insufficient_quota）错误时自动发送 continue 恢复对话。每会话独立计数连续失败次数（默认 20，可设 1-100），带工具栏开关条与设置页配置卡片。
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) — Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。
