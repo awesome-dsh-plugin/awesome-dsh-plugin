@@ -1,0 +1,6 @@
+url: https://github.com/Austin-Patrician/dsh-workbuddy
+name: Austin-Patrician/dsh-workbuddy
+category: ui
+description:
+  en: 'Replaces the DSH conversation hero — brand mark and welcome workspace — with a Wordless-style landing view, keeping the native dsh web composer untouched.'
+  zh: 替换 DSH 会话首屏的品牌标识与欢迎工作区为 Wordless 风格着陆视图，保留 dsh 原生 Web 输入框不变。
