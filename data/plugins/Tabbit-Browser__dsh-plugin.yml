@@ -1,0 +1,6 @@
+url: https://github.com/Tabbit-Browser/dsh-plugin
+name: Tabbit-Browser/dsh-plugin
+category: browser
+description:
+  en: 'Gives DeepSeek Harness control of the Tabbit Browser: auto-loads the tabbit-browser skill on install, detects official Tabbit and Tabbit Browser releases (>= 1.9.0), checks the tabbit-cli persistent runtime, diagnoses the per-platform DSH sandbox mode needed to call the CLI, and downloads the region-matched official installer via a background job when no qualifying version is present.'
+  zh: '让 DeepSeek Harness 能够控制 Tabbit 浏览器：安装即自动加载 tabbit-browser skill，检测国际版 Tabbit 与国内版 Tabbit Browser 正式版（>= 1.9.0），检查 tabbit-cli 常驻运行时，按平台诊断调用 CLI 所需的 DSH sandbox 模式，并在没有合格版本时通过后台任务下载与系统地区匹配的正式版安装包。'
