@@ -2,5 +2,5 @@ url: https://github.com/Phant0Meow/dsh-meow-memory
 name: Phant0Meow/dsh-meow-memory
 category: memory
 description:
-  en: 'Project-scoped cross-session memory: seven-layer SQLite store (soul/user/project/fact/lesson/rules/topic) on node:sqlite, cache-friendly first-message injection plus per-message keyword hits, memory_remember/search/find_similar/read/update/project tools, and idle-window consolidation ("dream") with peak-hour suppression.'
-  zh: '项目级跨会话记忆：node:sqlite 七层存储（soul/user/project/fact/lesson/rules/topic），首条消息缓存友好注入 + 每条消息关键词命中，memory_remember/search/find_similar/read/update/project 工具，空闲窗口自动整理记忆（dream，峰时抑制）。'
+  en: 'Project-scoped cross-session memory: seven-layer SQLite store (soul/user/project/fact/lesson/rules/topic) on node:sqlite, cache-friendly first-message injection plus per-message keyword hits, memory_remember/search/find_similar/read/update/project tools, and idle-window consolidation ("dream") with peak-hour suppression. Prompt texts ship as per-language data files — the framework supports multilingual users.'
+  zh: '项目级跨会话记忆：node:sqlite 七层存储（soul/user/project/fact/lesson/rules/topic），首条消息缓存友好注入 + 每条消息关键词命中，memory_remember/search/find_similar/read/update/project 工具，空闲窗口自动整理记忆（dream，峰时抑制）。prompt 文案按语言数据文件加载——框架支持多语言用户。'
