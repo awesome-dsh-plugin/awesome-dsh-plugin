@@ -225,7 +225,6 @@ dsh plugin --profile web add dshmarket
 - [jackma5477001/dsh-system-monitor](https://github.com/jackma5477001/dsh-system-monitor) — 在 DSH Web 界面右上角实时显示运行 DSH 服务端机器的 CPU 与内存使用情况。
 - [JanEickholt/dsh-inline-diff](https://github.com/JanEickholt/dsh-inline-diff) — 将编辑与写入工具调用渲染为常开的双栏 diff，可选语法配色与词级高亮。
 - [jasondu/dsh-ui-mobile](https://github.com/jasondu/dsh-ui-mobile) — 面向手机的 DeepSeek Harness 界面，提供可安装 PWA、响应式导航，以及 Agent 成功完成时的 Web Push 通知。
-- [jermaine123123/agent-context-editor#deepseek-harness](https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness) — Agent Context Editor 是一个可以手动排除和编辑 AI 对话上下文的跨 Agent 插件，同时支持搜索、筛选、选择、隐藏、恢复和撤销对话内容，并保留原始 Session。
 - [jhuanxx44/dsh-paste-path](https://github.com/jhuanxx44/dsh-paste-path) — macOS Finder 剪贴板粘贴：在 Finder 里 Cmd+C 复制文件或文件夹，回到 DSH 按 Ctrl+V 把绝对路径插入输入框；普通文本粘贴的 Cmd+V 不受影响。
 - [jiangnanquan/dsh-ux](https://github.com/jiangnanquan/dsh-ux) — Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。
 - [jiuyuechuwuhao/dsh-canvas-preview](https://github.com/jiuyuechuwuhao/dsh-canvas-preview) — Conversation Canvas 标签页：实时预览工作区内的 HTML artifact，并支持本地导出 PNG/JPG/SVG（`npx dsh-canvas-preview`）。
@@ -843,6 +842,7 @@ dsh plugin --profile web add dshmarket
 - [Jason-skd/dsh-session-fork](https://github.com/Jason-skd/dsh-session-fork) — Git 式会话分支：把当前会话收编为分支，通过 /branch 命令或分支页签在任意轮次分叉，并把分支 squash 回另一条分支。
 - [JasonQQ/dsh-btw-plugin](https://github.com/JasonQQ/dsh-btw-plugin) — Codex 风格 /btw 指令：在继承主会话上下文的子代理中回答附带问题，答案展示在界面里、不写入主会话历史。
 - [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) — DSH Web UI 的归档会话管理器：重新打开已归档会话并继续对话、取消归档恢复原位、彻底删除会话，支持分组浏览、消息搜索与原生视图同步。
+- [jermaine123123/agent-context-editor#deepseek-harness](https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness) — Agent Context Editor 是一个可以手动排除和编辑 AI 对话上下文的跨 Agent 插件，同时支持搜索、筛选、选择、隐藏、恢复和撤销对话内容，并保留原始 Session。
 - [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
 - [JohnXu22786/session-titler](https://github.com/JohnXu22786/session-titler) — 两阶段会话题词：会话进行中即时关键词题名，空闲后再调用最经济的预算模型精修，并附带一句话摘要。
 - [jueburenshu123/dsh-win-minimal](https://github.com/jueburenshu123/dsh-win-minimal) — Windows 极简模式 preset：单句 persona、三工具、无运行时上下文。

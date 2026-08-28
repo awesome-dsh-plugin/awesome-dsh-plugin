@@ -1,6 +1,6 @@
 url: https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness
 name: jermaine123123/agent-context-editor#deepseek-harness
-category: ui
+category: session
 tarball: https://github.com/jermaine123123/agent-context-editor/releases/download/v0.3.0/context-editor-deepseek-harness-0.3.0.tgz
 description:
   en: Agent Context Editor is a cross-agent plugin for manually excluding and editing AI conversation context. It also supports searching, filtering, selecting, hiding, restoring, and undoing conversation changes while preserving the original Session.
