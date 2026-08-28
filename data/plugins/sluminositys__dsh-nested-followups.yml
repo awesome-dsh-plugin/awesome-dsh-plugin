@@ -2,5 +2,5 @@ url: https://github.com/sluminositys/dsh-nested-followups
 name: sluminositys/dsh-nested-followups
 category: session
 description:
-  en: Branch from any completed answer, then branch again from answers inside the side trail while the main session stays untouched.
-  zh: 从任意已完成回答创建隔离侧线，再从侧线回答继续分叉，主会话始终不受影响。
+  en: Keep branching from any completed answer at any depth while the main session stays untouched.
+  zh: 从任意层级的已完成回答持续创建隔离分支，主会话始终不受影响。
