@@ -1,0 +1,6 @@
+url: https://github.com/sluminositys/dsh-nested-followups
+name: sluminositys/dsh-nested-followups
+category: session
+description:
+  en: Branch from any completed answer into an isolated session, then continue or nest it in a message-level conversation tree.
+  zh: 从任意已完成回答创建隔离 Session，并在消息级会话树中继续或嵌套分支。
