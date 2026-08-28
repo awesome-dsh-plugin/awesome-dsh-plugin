@@ -1185,6 +1185,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/docs-retriever](https://github.com/JohnXu22786/docs-retriever) — doctrove：面向编码 agent 的版本化库文档检索 MCP server——目录检索、版本选择与按主题提取带相关度排序的文档片段，零运行时依赖，dsh bundle 接入。
 - [JohnXu22786/market-watch](https://github.com/JohnXu22786/market-watch) — dsh 的金融行情监控插件:实时报价、本地自选列表、带冷却的阈值提醒、定时轮询,以及在会话内用 ASCII/mermaid 渲染 A 股与加密货币图表(数据源腾讯 + CoinGecko)。
 - [JohnXu22786/model-catalog](https://github.com/JohnXu22786/model-catalog) — 从 OpenAI 兼容 API 主机自动发现模型列表、定价与能力，归一化后生成 dsh 可直接使用的模型配置。
+- [JohnXu22786/net-debug](https://github.com/JohnXu22786/net-debug) — 为 DeepSeek Harness 打造的网络调试工具集：带 SSRF/私网防护的通用 HTTP 客户端、会话内请求历史与重放、响应检查与 HAR 导出——三个 dsh 工具外加零依赖 CLI。
 - [JohnXu22786/rss-digest](https://github.com/JohnXu22786/rss-digest) — dsh 的 RSS/Atom 摘要插件:订阅源管理、定时抓取、精确与近似去重,并由 LLM 生成每日 Markdown 简报投递到会话和/或文件(同时提供独立 CLI)。
 - [JohnXu22786/snippet-expander](https://github.com/JohnXu22786/snippet-expander) — 发送前把消息中的 #tag 展开为片段库配置的正文；支持多片段库、别名、变量占位符与递归防护。
 - [JohnXu22786/subtitle-studio](https://github.com/JohnXu22786/subtitle-studio) — 多语言字幕翻译工作流：SRT/VTT 解析、逐句 LLM 翻译、双语合并；批量处理支持断点续跑。
