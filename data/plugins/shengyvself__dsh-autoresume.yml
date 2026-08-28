@@ -4,11 +4,13 @@ category: workflow
 description:
   en: >-
     Auto-continues dsh sessions interrupted by web restarts or transient
-    network failures. Global scan over recent sessions (24h window), resumes
-    with the session's own model preset, live watch catches mid-run network
-    failures, and a dead-loop guard settles models that keep returning empty
-    content.
+    network failures (429/rate limits, upstream outages, service_unavailable).
+    Global scan over recent sessions (24h window), resumes with the session's
+    own model preset; live watch with a permanent default window catches
+    mid-run failures, unwraps DSH/OpenAI error envelopes, and a dead-loop
+    guard settles models that keep returning empty content.
   zh: >-
-    自动继续被 web 重启或网络瞬时故障打断的会话：全域扫描近 24h 会话、以会话原
-    模型预设自我恢复、liveWatch 补捞运行期间再次失败，并对持续空返回的模型内置
-    死循环守卫；completed/settled 一律不打扰。
+    自动继续被 web 重启或网络瞬时故障（429/限流、上游故障、service_unavailable）
+    打断的会话：全域扫描近 24h 会话、以会话原模型预设自我恢复；liveWatch 默认
+    永久守护窗口补捞运行期间再次失败、解包 DSH/OpenAI 错误信封，并对持续空返回
+    的模型内置死循环守卫；completed/settled 一律不打扰。

@@ -1801,7 +1801,7 @@ dsh plugin --profile web add dshmarket
 - [shanliuling/dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) — 为 DeepSeek Harness 提供原生对话生图能力：直接让 Agent 画图，插件自动完成生成并把结果保留在当前会话中。
 - [shaun5297/dsh-launcher](https://github.com/shaun5297/dsh-launcher) — DeepSeek Harness 一键启动器：检测后台是否在运行，未运行则启动 dsh web，等待就绪后在新 Chrome 窗口打开主页面。附带跨平台 CLI（dsh-launcher start / open / status / make-shortcut）与 harness_launch agent 工具。
 - [shengsheng90/DSH-taskboard](https://github.com/shengsheng90/DSH-taskboard) — 本地 SQLite 任务板，以原生覆盖页呈现：项目、任务、评论、关联、附件与工作流自动化，状态流转 backlog → todo → in_progress → in_review → done；提供 `taskboard_*` Agent 工具（Agent 只能提交到 in_review，验收需人工）、无头 JSON CLI 与打包 skill。
-- [shengyvself/dsh-autoresume](https://github.com/shengyvself/dsh-autoresume) — 自动继续被 web 重启或网络瞬时故障打断的会话：全域扫描近 24h 会话、以会话原 模型预设自我恢复、liveWatch 补捞运行期间再次失败，并对持续空返回的模型内置 死循环守卫；completed/settled 一律不打扰。
+- [shengyvself/dsh-autoresume](https://github.com/shengyvself/dsh-autoresume) — 自动继续被 web 重启或网络瞬时故障（429/限流、上游故障、service_unavailable） 打断的会话：全域扫描近 24h 会话、以会话原模型预设自我恢复；liveWatch 默认 永久守护窗口补捞运行期间再次失败、解包 DSH/OpenAI 错误信封，并对持续空返回 的模型内置死循环守卫；completed/settled 一律不打扰。
 - [squirrel20/dsh-cron](https://github.com/squirrel20/dsh-cron) — 宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。
 - [STARDUSTLC666/dsh-minimal-ptc](https://github.com/STARDUSTLC666/dsh-minimal-ptc) — 极简提示词 × PTC 全量工具：一句人格、Code Mode SDK、子代理、工作流、联网搜索与 Windows Git Bash。
 - [starwish-ai/xingyuan-dsh](https://github.com/starwish-ai/xingyuan-dsh) — 愿望与任务管理的 Agent Preset 组合包：在对话中创建愿望/任务、机会日打卡、微行动，并附带记忆存储与 Web 端进度图表。
