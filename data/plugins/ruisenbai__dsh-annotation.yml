@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'Select text in a finished assistant reply to add numbered annotations beside the quote; drafts submit with composer text and images as one user message, and the model replies to each annotation in order.'
   zh: '在已完成的助手回复中选中原文，在引文旁添加编号注解；草稿与输入框文字、图片合并为一条用户消息发送，模型按注解逐条回复。'
-tarball: https://github.com/ruisenbai/dsh-annotation/releases/download/v0.2.4/dsh-annotation-0.2.4.tgz
+tarball: https://github.com/ruisenbai/dsh-annotation/releases/latest/download/dsh-annotation.tgz
