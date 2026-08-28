@@ -2458,6 +2458,7 @@ dsh plugin --profile web add dshmarket
 - [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) — 以进程内 Cordis 插件的形式，通过腾讯 iLink bot 协议把微信私聊桥接到 DeepSeek Harness——双向收发文本、图片、文件与语音，微信内 slash 命令经原生命令注册中心解析（DSH 新增命令零改动可用），支持在微信端处理审批与提问，并提供 send_wechat 工具主动推送。
 - [polaris-smart/dph-fleet](https://github.com/polaris-smart/dph-fleet) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [pppolf/dsh-webgate](https://github.com/pppolf/dsh-webgate) — Web GUI 远程访问：局域网二维码直连、cloudflared 快速隧道、frp 自有服务器反代，内置登录门户，并放行设置接口。
+- [rice-awa/dsh-lan-gateway](https://github.com/rice-awa/dsh-lan-gateway) — DeepSeek Harness Web GUI 的局域网/公网反向代理网关：dsh 仍绑定回环，本插件在 0.0.0.0 提供登录+HMAC Cookie（仅对非局域网来源生效，局域网与回环来源默认免密直连）、可选自签名或自定义 TLS 与官方设置页卡片。自带不安全源 UUID shim，让局域网纯 HTTP 地址也能正常打开工作区。
 - [saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — 通过 Android App 或手机浏览器访问 DeepSeek Harness，支持安全局域网连接、远程访问、持久设备配对和可自定义移动界面。
 - [siberiah2o/dsh-plugin-remote](https://github.com/siberiah2o/dsh-plugin-remote) — DSH Web 远程访问网关：登录鉴权 + 到本机服务的 HTTP/WebSocket 反向代理，无需 --trusted-host。
 - [swarm-apps/dsh-swarmdrop](https://github.com/swarm-apps/dsh-swarmdrop) — 在 agent 和你自己的手机之间开一条设备通道：agent 把刚产出的文件发过去，手机传回来的东西可以在输入框里 @ 引用。底层经 SwarmDrop CLI 走端到端加密的 P2P，不需要账号，也不需要公网 IP；节点状态、已配对设备与扫码配对都在侧边栏面板里。
