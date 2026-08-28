@@ -1,0 +1,6 @@
+url: https://github.com/dat-lequoc/dsh-kiro
+name: dat-lequoc/dsh-kiro
+category: model
+description:
+  en: Kiro model provider with Builder ID, Identity Center, Google, GitHub and credential-import sign-in, automatic token and profile refresh, account usage, live model discovery, selectable reasoning efforts, streaming tool calls, provider stop-reason and context-overflow handling, and token accounting that uses Kiro's exact counters when it sends them and otherwise scales the context-usage percentage it does send by the model's advertised window.
+  zh: Kiro 模型提供商，支持 Builder ID、Identity Center、Google、GitHub 与凭据导入登录、token 和 profile 自动刷新、账户用量、实时模型发现、推理档位选择、流式工具调用、上游结束原因与上下文溢出处理；token 统计在 Kiro 提供精确计数时直接采用，否则用它确实会发送的上下文占用百分比乘以模型公布的窗口换算。

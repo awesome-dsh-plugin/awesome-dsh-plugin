@@ -1,0 +1,8 @@
+# PR 时复制到 awesome-dsh-plugin/data/plugins/ 目录
+# 文件名为 <owner>__<repo>.yml，必须与 GitHub 仓库完全一致
+url: https://github.com/Wodexinhaoleng-Kasssa/dsh-reader
+name: Wodexinhaoleng-Kasssa/dsh-reader
+category: usage
+description:
+  en: 'In-browser novel reader for the dsh web GUI: online book-source search, chapter-by-chapter reading in a chat-style view, and whole-book TXT download.'
+  zh: DSH Web GUI 在线小说阅读器：书源搜索、聊天式阅读界面、整本下载 TXT 到本地。
