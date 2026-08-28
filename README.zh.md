@@ -2259,6 +2259,7 @@ dsh plugin --profile web add dshmarket
 - [log-li/dsh-automode](https://github.com/log-li/dsh-automode) — 为 DeepSeek Harness 提供 Claude Code 式自动审批：确定性 deny/allow 规则 + 两阶段 allow/reject 分类器，内置熔断器与拒绝引导。
 - [lonelymoon87/dsh-guardian](https://github.com/lonelymoon87/dsh-guardian) — 增加危险操作策略检查、输出脱敏和安全审查工作流。
 - [maxmilian/dsh-sonarqube](https://github.com/maxmilian/dsh-sonarqube) — 面向 SonarQube Community Build 的只读工具：实例状态、分支或 PR 的项目质量阈、议题与安全热点搜索、单个热点详情，以及覆盖率、重复率或调用方指定的度量项。议题与热点结果附带标准化的位置信息，包含组件 key、文件路径、行号与文本范围。
+- [Mengshang-spec/dsh-plugin-trustlens](https://github.com/Mengshang-spec/dsh-plugin-trustlens) — 只读 DSH 插件审查器：静态扫描、当前会话模型审查和启用前确认。
 - [MicroMilo/upstream-radar](https://github.com/MicroMilo/upstream-radar) — 持续监控 DSH 与插件发布，在一次性隔离环境中复测精确发布物，发布机器可读的兼容性证据，并在修复后自动核对和关闭受管理的问题。
 - [moon09300731/dsh-approval-gate](https://github.com/moon09300731/dsh-approval-gate) — DeepSeek Harness 自动审批门控：Flash 预判写入/命令是否不可回补，安全操作自动批准、危险操作转人工（fail-safe）。另含文件改动对比（unified diff）与一键撤销、按会话隔离的快照管理（v0.5.1：通过工具调用参数回溯精确保存快照，覆盖人工审批场景）。
 - [MoonlitDropOfBlood/dsh-agent-approval](https://github.com/MoonlitDropOfBlood/dsh-agent-approval) — 由独立审批子代理裁决每次沙箱提权，可配置审批模型并带审计记录。
