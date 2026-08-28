@@ -1,0 +1,6 @@
+url: https://github.com/YannZhou/dsh-about
+name: YannZhou/dsh-about
+category: ui
+description:
+  en: 'About section for the DeepSeek Harness settings: version info, npm latest/next update check with one-click install and auto-restart, and GitHub release history.'
+  zh: '在 DeepSeek Harness 设置中心增加「关于」分区：版本信息、npm 检查更新与一键安装（自动重启）、GitHub 版本更新记录。'
