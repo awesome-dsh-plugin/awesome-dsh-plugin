@@ -1,5 +1,5 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-git-graph
-name: zhu1090093659/dsh-web-ui#packages/dsh-git-graph
+url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-git-graph
+name: zhu1090093659/dsh-web#packages/dsh-git-graph
 category: git
 description:
   en: 'Git branch selector and Git graph for the dsh web GUI: switch branches and explore branch-lane and commit history from the conversation header.'

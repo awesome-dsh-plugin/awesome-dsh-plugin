@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/review-gate
+name: JohnXu22786/review-gate
+category: dev
+description:
+  en: "Turns code review into a hard gate: deterministic severity rules, LLM-assisted findings, a team approval quorum and a durable compliance audit trail that must pass before a merge proceeds."
+  zh: "将代码评审变成一道硬性闸门：确定性严重级别规则、LLM 辅助发现、团队批准法定人数与合规审计追踪，未通过前禁止合并。"

@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'Native side-by-side chat beside the main conversation: an independent archived DSH session with full native UI, on-demand parent-context retrieval, selection quoting, and a keep-or-delete lifecycle.'
   zh: 在主对话旁边打开原生并排侧聊：独立归档的真实 DSH 会话、按需读取父会话上下文、选文引用与保留或删除的生命周期。
-tarball: https://github.com/KarlOfLaw/dsh-side-chat/releases/latest/download/dsh-side-chat-1.1.3.tgz
+tarball: https://github.com/KarlOfLaw/dsh-side-chat/releases/latest/download/dsh-side-chat-1.2.0.tgz

@@ -1,5 +1,5 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-plugin-manager
-name: zhu1090093659/dsh-web-ui#packages/dsh-plugin-manager
+url: https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-plugin-manager
+name: zhu1090093659/dsh-web#packages/dsh-plugin-manager
 category: market
 description:
   en: 'Plugin manager tab in DSH Settings → Plugins: install from npm or git with progress, enable/disable switches effective at next startup, conflict reconciliation with undo, and one-click hand-off to a fix session.'
