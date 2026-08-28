@@ -1,0 +1,6 @@
+url: https://github.com/mangomt/dsh-power
+name: mangomt/dsh-power
+category: dev
+description:
+  en: 'Floating power dock for the DSH web GUI: one-click restart or graceful shutdown of the dsh host, loopback-guarded and dependency-free.'
+  zh: 'DSH Web 悬浮电源坞:一键重启或优雅关机,仅限环回访问,零依赖。'

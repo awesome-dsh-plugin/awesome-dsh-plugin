@@ -1,0 +1,6 @@
+url: https://github.com/moon16u/dsh-pouch
+name: moon16u/dsh-pouch
+category: tools
+description:
+  en: 'A pouch of practical micro-plugins for DSH: safe restart, session ID header badge, and Tavily search provider.'
+  zh: 'DSH 实用小插件锦囊：安全自愈重启、顶栏会话 ID 复制与 Tavily 真实搜索提供方。'

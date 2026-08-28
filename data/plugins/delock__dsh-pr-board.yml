@@ -1,0 +1,6 @@
+url: https://github.com/delock/dsh-pr-board
+name: delock/dsh-pr-board
+category: git
+description:
+  en: 'Maintainer review queue for the DSH sidebar: five-state PR board (waiting on me / waiting on author / ready to merge / merged / inbox) plus a three-column issue board (waiting on me / waiting on reporter / recently closed), CI rollup badges, an inactivity filter, and one click per card to open or start the matching review conversation.'
+  zh: 'DSH 侧边栏维护者评审队列：五状态 PR 看板（等我 / 等作者 / 可合并 / 已合并 / 待分诊）加三列 issue 看板（等我 / 等报告者 / 最近关闭），CI 汇总徽章、不活跃过滤，点卡片一键打开或新建对应的评审会话。'

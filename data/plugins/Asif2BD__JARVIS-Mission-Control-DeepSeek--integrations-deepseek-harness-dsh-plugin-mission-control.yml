@@ -1,0 +1,5 @@
+url: https://github.com/Asif2BD/JARVIS-Mission-Control-DeepSeek/tree/main/integrations/deepseek-harness/dsh-plugin-mission-control
+name: Asif2BD/JARVIS-Mission-Control-DeepSeek#dsh-plugin-mission-control
+category: workflow
+description:
+  en: Streams DeepSeek Harness sessions, messages, tool activity, and turn outcomes to a JARVIS Mission Control board with task status and human review.

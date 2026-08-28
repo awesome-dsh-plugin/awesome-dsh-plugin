@@ -66,7 +66,7 @@ function replaceBlock(text, [open, close], body, file) {
 function parsedUrls(loc) {
   const urls = new Set()
   let cat = null
-  for (const line of fs.readFileSync(loc.readme, 'utf8').split('\n')) {
+  for (const line of fs.readFileSync(loc.readme, 'utf8').split(/\r?\n/)) {
     const h = line.match(/^#{2,3} (.+)$/)
     if (h) {
       cat = CAT_IDS.find((id) => h[1].includes(loc.categories[id])) ?? null

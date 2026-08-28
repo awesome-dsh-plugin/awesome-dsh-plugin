@@ -1,7 +1,7 @@
 url: https://github.com/MengYuil/dsh-ponytail
 name: MengYuil/dsh-ponytail
 category: identity
-tarball: https://github.com/MengYuil/dsh-ponytail/releases/latest/download/mengyuly-dsh-ponytail-0.1.6.tgz
+tarball: https://github.com/MengYuil/dsh-ponytail/releases/latest/download/mengyuly-dsh-ponytail-0.2.1.tgz
 description:
   en: 'Port of ponytail: an always-on lazy-senior-developer coding persona with intensity levels, persistence of the default level, and review, audit, debt, gain and help skills for DeepSeek Harness.'
   zh: 'ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。'

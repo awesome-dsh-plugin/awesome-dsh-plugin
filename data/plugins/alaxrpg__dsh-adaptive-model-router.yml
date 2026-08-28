@@ -1,0 +1,6 @@
+url: https://github.com/alaxrpg/dsh-adaptive-model-router
+name: alaxrpg/dsh-adaptive-model-router
+category: model
+description:
+  en: "Adaptive model discovery, evaluation, tiering, and subagent routing for DeepSeek Harness."
+  zh: "面向 DeepSeek Harness 的自适应模型发现、评估、定级与子代理路由插件。"
