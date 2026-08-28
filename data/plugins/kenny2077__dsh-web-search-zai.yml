@@ -1,0 +1,6 @@
+url: https://github.com/kenny2077/dsh-web-search-zai
+name: kenny2077/dsh-web-search-zai
+category: browser
+description:
+  en: ZAI (Zhipu/GLM)-backed web search provider that swaps the built-in web_search backend to Z.ai's standalone search API, reusing the same ZAI_API_KEY as the GLM chat model.
+  zh: 基于 ZAI（智谱/GLM）的网页搜索提供方：把内置 web_search 的后端切换为 Z.ai 独立搜索 API，与 GLM 聊天模型共用同一个 ZAI_API_KEY。
