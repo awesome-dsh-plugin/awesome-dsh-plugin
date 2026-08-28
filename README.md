@@ -2597,6 +2597,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) - Chat meme stickers: text-only send, mood auto-send, QQ/WeChat-style picker, auto-learn, custom packs.
 - [ZelinW1/dsh-cosplay](https://github.com/ZelinW1/dsh-cosplay) - Turns the DeepSeek Harness agent into any character: a global cosplay switch, SillyTavern v2 role cards with JSON import/export, a neutral/role thinking-style toggle, and natural-language card authoring via a built-in skill.
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) - The pet that grows with your agent: 5 evolution stages earned from real signals (verified rules, completed sessions, tool calls, compactions), agent-state mirroring, and one-click growth share cards. Zero dependencies, 100% local.
+- [ZutoMayoo/totoTheCat](https://github.com/ZutoMayoo/totoTheCat) - Desktop pet for the DSH web UI: a draggable pixel-art cat with a pomodoro timer, XP levels, and 30 unlockable facts.
 <!-- END PLUGINS -->
 
 ## Contributing
