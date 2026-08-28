@@ -1351,5 +1351,12 @@
  ],
  "https://github.com/yangdongzhen590/dsh-knj-scheduler": [
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-scheduler/main/assets/screenshots/scheduler-panel.png"
+ ],
+ "https://github.com/mienfong/dsh-session-mgr": [
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/session-manager_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/move-dialog_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/backup_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/import_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/delete-confirm_EN.png"
  ]
 }
