@@ -1336,4 +1336,24 @@
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
  ]
+,
+ "https://github.com/AKS1st/dock-editor": [
+  "https://raw.githubusercontent.com/AKS1st/dock-editor/main/assets/image-en.png",
+  "https://raw.githubusercontent.com/AKS1st/dock-editor/main/assets/image-zh.png"
+ ],
+ "https://github.com/AKS1st/dock-files": [
+  "https://raw.githubusercontent.com/AKS1st/dock-files/main/assets/main-gui.png",
+  "https://raw.githubusercontent.com/AKS1st/dock-files/main/assets/menu-en.png",
+  "https://raw.githubusercontent.com/AKS1st/dock-files/main/assets/menu-zh.png"
+ ],
+ "https://github.com/AKS1st/dock-git": [
+  "https://raw.githubusercontent.com/AKS1st/dock-git/main/assets/main-gui-en.png",
+  "https://raw.githubusercontent.com/AKS1st/dock-git/main/assets/main-gui-zh.png"
+ ],
+ "https://github.com/AKS1st/dock-images": [
+  "https://raw.githubusercontent.com/AKS1st/dock-images/main/assets/image.png"
+ ],
+ "https://github.com/AKS1st/dock-markdown": [
+  "https://raw.githubusercontent.com/AKS1st/dock-markdown/main/assets/image.png"
+ ]
 }
