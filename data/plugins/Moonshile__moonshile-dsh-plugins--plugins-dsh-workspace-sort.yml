@@ -1,5 +1,5 @@
-url: https://github.com/Moonshile/moonshile-dsh-plugins
-name: Moonshile/moonshile-dsh-plugins
+url: https://github.com/Moonshile/moonshile-dsh-plugins/tree/main/plugins/dsh-workspace-sort
+name: Moonshile/moonshile-dsh-plugins#dsh-workspace-sort
 category: ui
 description:
   en: 'Re-sorts sidebar workspaces by last activity once per day; stable order within the day.'
