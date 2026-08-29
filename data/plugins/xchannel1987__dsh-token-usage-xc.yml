@@ -1,0 +1,7 @@
+url: https://github.com/xchannel1987/dsh-token-usage-xc
+name: xchannel1987/dsh-token-usage-xc
+category: usage
+description:
+  en: DSH token usage statistics plugin with daily/7-day trends and cache hit rate.
+  zh: DSH Token 用量统计插件，今日/7日用量、趋势图、缓存命中率。
+
