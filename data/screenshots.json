@@ -1340,7 +1340,8 @@
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-album.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
- ],
+ ]
+,
  "https://github.com/yangdongzhen590/dsh-knj-workflow": [
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/task-detail.png",
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/workflow-editor.png",
@@ -1358,5 +1359,9 @@
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/backup_EN.png",
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/import_EN.png",
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/delete-confirm_EN.png"
+ ],
+ "https://github.com/xiyunSacire/dsh-skill-manager": [
+   "https://raw.githubusercontent.com/xiyunSacire/dsh-skill-manager/main/assets/screenshot-1.png",
+   "https://raw.githubusercontent.com/xiyunSacire/dsh-skill-manager/main/assets/screenshot-2.png"
  ]
 }
