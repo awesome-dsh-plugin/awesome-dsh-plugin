@@ -2,5 +2,5 @@ url: https://github.com/WODE25500/dsh-skillopt
 name: WODE25500/dsh-skillopt
 category: skill
 description:
-  en: 'Microsoft SkillOpt-Sleep integration: a nightly sleep cycle that harvests sessions, mines recurring tasks, replays them and consolidates validated skills behind a held-out gate.'
-  zh: '微软 SkillOpt-Sleep 集成：夜间睡眠循环——收获会话、挖掘重复任务、重放并在留出验证门后沉淀技能。'
+  en: "Nightly self-improvement for your DeepSeek Harness agent: harvest past sessions offline, replay recurring tasks on your own API budget, and consolidate validated skills behind a held-out gate. Brings microsoft/SkillOpt's SkillOpt-Sleep engine to dsh as native tools plus a bundled skill - no weight training, zero extra inference cost."
+  zh: "为 DeepSeek Harness agent 提供夜间自我进化：离线复盘过往会话，在你的 API 预算内重放高频任务，并把学到的技能凝练成经得起门禁验证的技能。把 microsoft/SkillOpt 的 SkillOpt-Sleep 引擎带进 dsh，作为原生工具加内置技能——无需模型训练，零额外推理开销。"
