@@ -247,6 +247,7 @@ dsh plugin --profile web add dshmarket
 - [jasondu/dsh-ui-mobile](https://github.com/jasondu/dsh-ui-mobile) — 面向手机的 DeepSeek Harness 界面，提供可安装 PWA、响应式导航，以及 Agent 成功完成时的 Web Push 通知。
 - [jhuanxx44/dsh-paste-path](https://github.com/jhuanxx44/dsh-paste-path) — macOS Finder 剪贴板粘贴：在 Finder 里 Cmd+C 复制文件或文件夹，回到 DSH 按 Ctrl+V 把绝对路径插入输入框；普通文本粘贴的 Cmd+V 不受影响。
 - [jiangnanquan/dsh-ux](https://github.com/jiangnanquan/dsh-ux) — Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。
+- [jiangyinluwei/dsh-plugInOne](https://github.com/jiangyinluwei/dsh-plugInOne) — 在设置弹窗中增加「插件设置」导航，将各插件的设置页与卡片统一收纳到可拖拽排序的顶部标签页中。
 - [jiuyuechuwuhao/dsh-canvas-preview](https://github.com/jiuyuechuwuhao/dsh-canvas-preview) — Conversation Canvas 标签页：实时预览工作区内的 HTML artifact，并支持本地导出 PNG/JPG/SVG（`npx dsh-canvas-preview`）。
 - [Jiyr0119/dsh-workspace-explorer](https://github.com/Jiyr0119/dsh-workspace-explorer) — 独立单功能的工作区文件树面板：会话头部图标打开当前工作区目录树的动画弹窗；点击或拖拽文件即可把引用插入输入框；自带搜索、行内预览、实时设置与中英双语；零配置，一条命令即装即用。
 - [jjxjjjjiik-bot/dsh-chat-timeline](https://github.com/jjxjjjjiik-bot/dsh-chat-timeline) — 1:1 复刻 DeepSeek 官网右侧对话导航栏（ScrollNav）：悬停展开面板、阅读位置高亮、点击跳转。
