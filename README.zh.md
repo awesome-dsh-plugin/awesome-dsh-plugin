@@ -600,6 +600,7 @@ dsh plugin --profile web add dshmarket
 - [Rannist/balance-dsh](https://github.com/Rannist/balance-dsh) — 在侧边栏底部和输入框上方显示你的 DeepSeek 账户余额与当前会话 token 及费用消耗，支持高峰/空闲峰谷计费与子代理消耗统计。
 - [rayadesune/DeepSeek-Harness-chat-billing](https://github.com/rayadesune/DeepSeek-Harness-chat-billing) — 会话头部徽标显示 DeepSeek 账户余额、本轮对话花费与今日全部会话总花费；每轮消息操作行前置本轮花费，详情面板含按模型计价与今日会话消费排行。官方峰谷定价，余额取自 /user/balance API。
 - [rayzhu1109/dsh-balance](https://github.com/rayzhu1109/dsh-balance) — 在侧边栏底部实时显示 DeepSeek 账户余额，点击展开最近 5 天消费柱状图。
+- [Rycbartbad/dsh-key-manager](https://github.com/Rycbartbad/dsh-key-manager) — 在设置 → API 密钥中为每个提供商管理多个 API 密钥：密钥池加备注、一键切换当前使用密钥，切换后下一次模型调用立即生效。
 - [SenmuuuuW/dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report) — 深迹 DeepTrace — 从会话日志生成日报/周报/月报/年报/自定义区间报告：成本与 Token 拆解、8 条确定性洞察、协作复盘、实时模型余额、PDF/PNG/HTML 导出；只读，绝不改写历史。
 - [Sev7een/ds-api-usage](https://github.com/Sev7een/ds-api-usage) — 在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。
 - [Shiye-10Pages/dsh-whale-meter](https://github.com/Shiye-10Pages/dsh-whale-meter) — 用量段位与战绩卡片：按本月 token 消耗评 🐟→🐳 五档段位，分位本地估算（零上报）；6 家厂商 46 个模型精准计价，支持国内厂商按输入长度分档；自动回填安装前的历史会话；8·17 调价前后同一份用量的新旧价对比。数据全在本机，无遥测。
