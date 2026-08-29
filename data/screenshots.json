@@ -1,18 +1,4 @@
 {
- "https://github.com/zhijun-dai/Catppuccin-dsh-theme": [
-  "https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/main/assets/preview.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/main/assets/latte.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/main/assets/frappe.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/main/assets/macchiato.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/main/assets/mocha.webp"
- ],
- "https://github.com/zhijun-dai/Solarized-dsh-theme": [
-  "https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/main/assets/preview.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/main/assets/solarized-dark.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/main/assets/solarized-light.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/main/assets/selenized-dark.webp",
-  "https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/main/assets/selenized-light.webp"
- ],
  "https://github.com/anweat/dsh-context-console": [
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-trajectory.png",
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",
