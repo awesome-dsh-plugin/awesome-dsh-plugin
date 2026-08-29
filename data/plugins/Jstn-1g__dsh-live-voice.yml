@@ -1,0 +1,7 @@
+url: https://github.com/Jstn-1g/dsh-live-voice
+name: Jstn-1g/dsh-live-voice
+category: voice
+description:
+  en: 'Experimental one-turn Qwen Audio preview for the DSH Web UI with active-session disclosure, bounded microphone input, and explicit final-user-transcript insertion into the editable composer draft without automatic submission.'
+  zh: 'DSH Web UI 的单轮 Qwen Audio 实验性预览：在当前会话披露后接收有界麦克风输入，并仅通过明确操作将最终用户转写写入可编辑草稿，不会自动提交。'
+tarball: https://github.com/Jstn-1g/dsh-live-voice/releases/download/v0.3.0-preview.2/dsh-live-voice-0.3.0-preview.2.tgz
