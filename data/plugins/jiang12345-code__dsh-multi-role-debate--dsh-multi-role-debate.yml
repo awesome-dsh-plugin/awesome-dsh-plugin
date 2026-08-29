@@ -1,5 +1,5 @@
-url: https://github.com/jiang12345-code/dsh-multi-role-debate
-name: jiang12345-code/dsh-multi-role-debate
+url: https://github.com/jiang12345-code/dsh-multi-role-debate/tree/main/dsh-multi-role-debate
+name: jiang12345-code/dsh-multi-role-debate#dsh-multi-role-debate
 category: workflow
 description:
   zh: "在 DeepSeek Harness 里让 Codex 与 Claude CLI 并行辩论，主会话模型作为第三方 Judge 汇总并回写对话；支持单 Agent 直接对话、对话流触发与模型配置面板。"
