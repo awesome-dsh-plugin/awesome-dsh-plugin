@@ -140,6 +140,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-conversation-timeline](https://github.com/bycall/dsh-conversation-timeline) — 对话时间线横条：输入框上方按轮次聚合的时间线，悬停显示该轮用户提示词，点击直接跳转到对话中的对应位置。
 - [caisiyang123/dsh-tick-rail](https://github.com/caisiyang123/dsh-tick-rail) — 会话刻度线导航条：你发的每条消息一格刻度，点亮峰值随鼠标移动、两侧均匀衰减，悬停预览消息摘要，点击或键盘跳转到对应位置。
 - [causebefore/dsh-pomodoro](https://github.com/causebefore/dsh-pomodoro) — DSH Web 番茄钟：提供可配置专注/休息循环、可拖动迷你面板，以及站内提醒、提示音和浏览器通知。
+- [cayan0x/dsh-fold-context](https://github.com/cayan0x/dsh-fold-context) — 自动折叠 DSH 对话中的系统/上下文消息——将思考块、工具调用和工具结果合并为可展开的分组折叠条。
 - [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) — Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。
 - [ccq1/dsh-side-panel](https://github.com/ccq1/dsh-side-panel) — 侧边栏集成文件浏览器、终端和 Git 审查，方便预览文件。
 - [Ceelog/dsh-plugins#dsh-plugin-setting-mcp](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-setting-mcp) — 在 Web 设置面板中查看、添加、编辑、删除、启用或停用 MCP 服务器，保存后热重载。
