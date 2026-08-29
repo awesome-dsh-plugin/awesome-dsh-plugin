@@ -1,0 +1,6 @@
+url: https://github.com/kenny2077/dsh-web-search-zai
+name: kenny2077/dsh-web-search-zai
+category: browser
+description:
+  en: 'Single-key web search for the DeepSeek Harness: swaps the built-in web_search backend to the Z.ai (GLM) standalone Web Search API and reuses your existing ZAI_API_KEY for both chat and search.'
+  zh: '单密钥模式的 DeepSeek Harness 网页搜索：把内置 web_search 的后端切换为 Z.ai（智谱/GLM）独立 Web 搜索 API，复用你已有的 ZAI_API_KEY，聊天与搜索共用一把密钥。'
