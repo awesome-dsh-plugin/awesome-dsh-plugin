@@ -1,0 +1,6 @@
+url: https://github.com/randomix777/dsh-plugin-subscriptions
+name: randomix777/dsh-plugin-subscriptions
+category: model
+description:
+  en: OAuth sign-in for subscription LLM providers (Claude, Codex, Grok, Antigravity, OpenRouter, Agnes AI) exposing them as DeepSeek Harness chat models with streaming and tool calling.
+  zh: 通过 OAuth 登录订阅制 LLM 提供商（Claude、Codex、Grok、Antigravity、OpenRouter、Agnes AI），在 DSH 中以流式对话和工具调用方式暴露。
