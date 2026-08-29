@@ -326,7 +326,7 @@ dsh plugin --profile web add dshmarket
 - [NecromanAlbert/dsh-show-media](https://github.com/NecromanAlbert/dsh-show-media) — 在当前对话卡片里展示本地图片或短视频，点击可预览。
 - [Neumannzc/dsh-archive-manager#plugin](https://github.com/Neumannzc/dsh-archive-manager/tree/main/plugin) — 美化版归档管理设置页：按工作区分组展示归档会话，悬停即可取消归档，附相对时间显示。
 - [nexsjournal/dsh-vision-plugin](https://github.com/nexsjournal/dsh-vision-plugin) — 给模型目录装上「图片输入」勾选框，自定义模型声明后可直接收图；附带可选的 BYO 视觉中继。
-- [nickkkkkk123123/dsh-whale-girl](https://github.com/nickkkkkk123123/dsh-whale-girl) — 会卖萌、会记账、会弹跳的 DSH 桌面挂件：实时显示余额、用量与上下文占用，支持拖动、甩抛弹跳、彩蛋气泡、音效切换与右键菜单。
+- [nickkkkkk123123/dsh-whale-girl](https://github.com/nickkkkkk123123/dsh-whale-girl) — 会卖萌、会记账、会弹跳的鲸鱼娘桌宠：实时余额/用量/上下文占用、中键弹弓抛掷、彩蛋气泡、省电模式；安装包 346KB，零新进程。
 - [nikoart-liu/dsh-open-in-x](https://github.com/nikoart-liu/dsh-open-in-x) — 从 DSH Web UI 使用已安装的文件管理器、终端和受支持的编辑器打开工作区目录。
 - [NOirBRight/dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) — DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。
 - [NormanFxxkingRockwell/dsh-keyboard-history](https://github.com/NormanFxxkingRockwell/dsh-keyboard-history) — DSH 会话输入框的极简输入历史：按 ↑/↓ 翻阅发过的消息。只有方向键，别无其他。
@@ -1332,11 +1332,11 @@ dsh plugin --profile web add dshmarket
 - [lemonxiny55/dsh-code-index](https://github.com/lemonxiny55/dsh-code-index) — 语义仓库索引：基于 tree-sitter 的符号索引、带排名的符号搜索，以及注入系统提示词的限量自动更新仓库地图。
 - [lengquan88/dsh-dual-auto](https://github.com/lengquan88/dsh-dual-auto) — 双模型 Auto 路由插件：低成本模型直返 / 高成本模型升级 + 逃逸学习闭环（直返答错自动学习指纹，同指纹下次强制升级），状态持久化并与 Python ModelRouter 互通。
 - [Letter2025/dsh-tool-search](https://github.com/Letter2025/dsh-tool-search) — Hermes 风格工具搜索与瘦身：渐进式披露，语义搜索/查看/调用长尾工具，核心工具保持直通。
-- [ListenJ/axiom-kb-dsh](https://github.com/ListenJ/axiom-kb-dsh) — 为 dsh 提供知识库（Vault 记忆 + 知识图谱）：kb__* 工具覆盖确定性记忆检索/写入、知识图谱节点/边/子图/遍历、文档入图谱与跨存储统一查询（KAL），不含联网检索工具。
 - [lifeodyssey/dsh-compressor#dsh-compressor](https://github.com/lifeodyssey/dsh-compressor/tree/main/plugins/dsh-compressor) — Headroom 的精简移植，在不影响模型上下文缓存以及 Agent 性能的情况下，压缩工具的输出，至多减少 20% 的上下文。
 - [lifeopsgo/dsh-capability-toggle-plugin](https://github.com/lifeopsgo/dsh-capability-toggle-plugin) — 在 DSH WebUI 中为技能、MCP 服务器、工具、提示词注入、审批升权和安全守卫提供会话、项目与全局三级控制，并在当前 agent 作用域内强制执行。
 - [Lion-1209/dsh-plugin-wiki-tools](https://github.com/Lion-1209/dsh-plugin-wiki-tools) — Obsidian wiki vault 原生工具：wiki_query、wiki_write、wiki_rename、wiki_scaffold、wiki_archive、wiki_lint 覆盖 BM25 链接图检索、带 sha256 源追踪的簿记式写入、全库改名、模式化脚手架、源归档与健康检查，并内置跨进程锁与可选 git 自动提交。
 - [liqiming-whu/dsh-environment-context](https://github.com/liqiming-whu/dsh-environment-context) — 将实时的时间、天气、地点、电量和设备信息注入 DSH 系统提示，并提供双语设置页面。
+- [ListenJ/axiom-kb-dsh](https://github.com/ListenJ/axiom-kb-dsh) — 为 dsh 提供知识库（Vault 记忆 + 知识图谱）：kb__* 工具覆盖确定性记忆检索/写入、知识图谱节点/边/子图/遍历、文档入图谱与跨存储统一查询（KAL），不含联网检索工具。
 - [literaf/dsh-ai4scholar](https://github.com/literaf/dsh-ai4scholar) — AI4Scholar 学术检索：覆盖 Semantic Scholar、PubMed、Google Scholar、arXiv、bioRxiv/medRxiv 与 DOI 解析的 38 个工具（搜索、引用图谱、作者、推荐、PDF 全文分片、自动引用、科研绘图），跨平台去重统一搜索，设置页 API Key 卡片，按次积分统计与 `/ai4scholar` 余额卡。
 - [littleblakew/msds-chain-mcp#dsh](https://github.com/littleblakew/msds-chain-mcp/tree/main/plugins/dsh) — 通过托管的 MSDS Chain MCP 端点接入化学品安全数据：23 个工具覆盖相容性与投料顺序、GHS 危害、PPE、储存、废弃处置、职业接触限值、运输分类、多法域合规、SDS 查询与版本比对、签名审计报告；每条回答都标注其依据的供应商 SDS 与版本日期。
 - [liwuzhan/agent-native-trade#dsh-plugin](https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin) — 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。
