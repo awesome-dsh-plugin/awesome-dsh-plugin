@@ -1,6 +1,0 @@
-url: https://github.com/xchannel1987/dsh-reverse-proxy-xc
-name: xchannel1987/dsh-reverse-proxy-xc
-category: remote
-description:
-  en: "Reverse proxy for DeepSeek Harness - expose local DSH instance to the internet with ngrok or similar tunneling services."
-  zh: "DeepSeek Harness 反向代理 - 使用 ngrok 或类似隧道服务将本地 DSH 实例暴露到互联网。"

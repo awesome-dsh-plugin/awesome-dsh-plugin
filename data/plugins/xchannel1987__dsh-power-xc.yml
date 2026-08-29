@@ -1,6 +1,0 @@
-url: https://github.com/xchannel1987/dsh-power-xc
-name: xchannel1987/dsh-power-xc
-category: tools
-description:
-  en: "Power management for DeepSeek Harness - restart/shutdown functionality via Web UI button, with graceful session flush and process management."
-  zh: "DeepSeek Harness 电源管理 - 通过 Web UI 按钮实现重启/关机功能，支持优雅会话刷新和进程管理。"
