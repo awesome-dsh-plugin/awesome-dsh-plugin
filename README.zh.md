@@ -1312,7 +1312,7 @@ dsh plugin --profile web add dshmarket
 - [minyang-chen/dsh-stock-lookup](https://github.com/minyang-chen/dsh-stock-lookup) — 通过 SEC EDGAR 将公司名称或股票代码解析为已验证的股票代号，再从 yahoo-finance2 获取实时行情，包括价格、市盈率、每股收益、市值、52周区间和股息率。
 - [MlittleFriend/dsh-character-profiler](https://github.com/MlittleFriend/dsh-character-profiler) — 角色一致性工具包：性格侧写档案、出场权重统计与行为偏离检测。
 - [MochiNek0/dsh-web-search-free](https://github.com/MochiNek0/dsh-web-search-free) — 把默认的 Web 搜索与抓取通道替换为 Tavily、Exa、Brave 等八个免费搜索引擎，按可配置的顺序依次 fallback。在设置卡片中填写各引擎 Key，并可开关 web_fetch 工具。
-- [moon16u/dsh-pouch](https://github.com/moon16u/dsh-pouch) — DSH 实用小插件锦囊：安全自愈重启、顶栏会话 ID 复制与 Tavily 真实搜索提供方。
+- [moon16u/dsh-pouch](https://github.com/moon16u/dsh-pouch) — DSH 实用小插件锦囊：安全自愈重启、顶栏会话 ID 复制、Tavily 真实搜索提供方、可配置的 LLM 请求头路由，以及运行时管理官方 @deepseek-ai/dsh-mcp-client 的 MCP 服务器控制台——增删改/启停/重连、工具级开关、SSE 实时状态、mcpServers JSON 导入、profile YAML 条目自动移植。
 - [moononnn/DeepSeek-Harness-biaoqingbao](https://github.com/moononnn/DeepSeek-Harness-biaoqingbao) — 表情包表达插件：让助手用表情包表达情绪，按情绪自动配图，含图库管理、AI 识图打标、方言口音、学我说话，还能点「和助手聊聊」直接调教标签。
 - [Mr-Neutr0n/dsh-medseek](https://github.com/Mr-Neutr0n/dsh-medseek) — 面向临床人员的文档与参考工具包：SOAP/APSO 病程录、入院 H&P、SBAR/I-PASS 交接班、 出院小结、Safe Harbor 脱敏、患者须知可读性评分、完整性检查，以及来自 FDA 说明书、 MedlinePlus、PubMed 和 ClinicalTrials.gov 的带出处检索。仅起草不决定， 内置 PHI 外发守卫；非医疗器械。
 - [mrpulor-gh/dsh-nuphus-mcp](https://github.com/mrpulor-gh/dsh-nuphus-mcp) — nuphus-mcp 官方 DSH 插件（由 nuphus-mcp 维护者发布）：桌面 + 浏览器自动化（38 个工具），配 PaddleOCR 元素感知与 Chrome CDP 浏览，经常驻 stdio MCP 子进程接入。
