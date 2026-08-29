@@ -2,5 +2,5 @@ url: https://github.com/xchannel1987/dsh-power-xc
 name: xchannel1987/dsh-power-xc
 category: tools
 description:
-  en: "Power management for DeepSeek Harness - restart/shutdown functionality via Web UI button, with graceful session flush and process management."
-  zh: "DeepSeek Harness 电源管理 - 通过 Web UI 按钮实现重启/关机功能，支持优雅会话刷新和进程管理。"
+  en: "Power management plugin for DeepSeek Harness with sidebar power button. Features: Restart/Shutdown menu with Windows-style transition overlay, self-contained restart engine (no PowerShell/taskkill), graceful session flush on exit, /restart and /shutdown slash commands, restart_harness model tool for AI-initiated restarts, auto cleanup of old log files, bilingual UI (zh/en)."
+  zh: "DSH 电源管理插件，提供侧边栏电源按钮。功能包括：重启/关机菜单（Windows 风格过渡动画）、自包含重启引擎（无需 PowerShell）、优雅会话刷新退出、/restart 和 /shutdown 斜杠命令、restart_harness 模型工具供 AI 调用、自动清理旧日志、中英文双语界面。"

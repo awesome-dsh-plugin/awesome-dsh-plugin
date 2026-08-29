@@ -2,5 +2,5 @@ url: https://github.com/xchannel1987/dsh-reverse-proxy-xc
 name: xchannel1987/dsh-reverse-proxy-xc
 category: remote
 description:
-  en: "Reverse proxy for DeepSeek Harness - expose local DSH instance to the internet with ngrok or similar tunneling services."
-  zh: "DeepSeek Harness 反向代理 - 使用 ngrok 或类似隧道服务将本地 DSH 实例暴露到互联网。"
+  en: "LAN reverse proxy plugin for DeepSeek Harness. Enables mobile/tablet devices to access DSH Web GUI with full features (sidebar, settings, credentials, WebSocket). Fixes: settings panel inaccessible via reverse proxy (isLoopback injection), crypto.randomUUID polyfill for non-HTTPS, proper WebSocket passthrough. Runs on 0.0.0.0:3090 by default, designed for trusted LAN/VPN environments."
+  zh: "DSH 局域网反向代理插件。让手机/平板等设备在局域网内访问 DSH Web GUI，获得完整功能（侧边栏/设置/凭据/WebSocket）。修复：反代访问时设置面板无法打开（isLoopback 注入）、非 HTTPS 下 crypto.randomUUID 不可用（自动注入 polyfill）、WebSocket 正确透传。默认监听 0.0.0.0:3090，适用于可信内网/VPN 环境。"

@@ -2,5 +2,5 @@ url: https://github.com/xchannel1987/dsh-mobile-xc
 name: xchannel1987/dsh-mobile-xc
 category: remote
 description:
-  en: "Mobile access for DeepSeek Harness - access from Android app or mobile browser with secure LAN/remote connections and persistent device pairing."
-  zh: "DeepSeek Harness 移动端访问 - 通过 Android App 或手机浏览器访问，支持安全局域网/远程连接和持久设备配对。"
+  en: "Comprehensive mobile UI adaptation plugin for DeepSeek Harness. Features: overlay drawer navigation with swipe gestures, glassmorphism card design, safe-area coverage for notch/home indicator, smart compatibility system with version mismatch detection, PWA support with official DSH whale icon. Activates at <=1023px breakpoint for seamless mobile experience."
+  zh: "DSH 移动端 UI 完美适配插件。功能包括：Overlay 抽屉导航（支持滑动手势）、玻璃卡片设计（Glassmorphism 风格）、Safe Area 全覆盖（刘海屏/手势条适配）、智能兼容系统（版本检测+兜底降级）、PWA 支持（官方黑鲸鱼图标）。断点 <=1023px 激活，提供原生移动端体验。"

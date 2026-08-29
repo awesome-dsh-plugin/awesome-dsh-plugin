@@ -1,6 +1,0 @@
-url: https://github.com/xchannel1987/dsh-token-usage-xc
-name: xchannel1987/dsh-token-usage-xc
-category: usage
-description:
-  en: "Token usage tracking for DeepSeek Harness - monitor and display token consumption per session and conversation with detailed statistics."
-  zh: "DeepSeek Harness Token 使用追踪 - 监控和显示每个会话和对话的 Token 消耗，提供详细统计信息。"
