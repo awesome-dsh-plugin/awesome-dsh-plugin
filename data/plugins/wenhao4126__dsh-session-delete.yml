@@ -2,5 +2,5 @@ url: https://github.com/wenhao4126/dsh-session-delete
 name: wenhao4126/dsh-session-delete
 category: session
 description:
-  en: 'Sidebar session management for DSH: delete one session, archive/delete all sessions in a workspace, and restore archived sessions to their original workspace — recreating deleted workspace registrations from the session project directory.'
-  zh: 'DSH 侧边栏会话管理：可删除单个会话，工作区行可归档全部、恢复已归档或删除全部会话；恢复时自动放回原工作区，原工作区被删除时按会话项目目录自动重建。'
+  en: 'Session management for DSH: delete one session, archive/delete all sessions in a workspace, and restore archived sessions from the settings page — archiving backs up workspace metadata and restoring recreates deleted workspace registrations automatically.'
+  zh: 'DSH 会话管理：可删除单个会话，工作区行可归档全部、恢复已归档或删除全部会话，设置页可查看/恢复/删除已归档会话；归档时备份工作区信息，恢复时自动恢复原工作区，原工作区被删除时自动重建。'
