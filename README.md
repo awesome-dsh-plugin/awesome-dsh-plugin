@@ -625,6 +625,8 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhu168/dsh-save-money#plugin](https://github.com/zhu168/dsh-save-money/tree/main/plugin) - Pause and resume tasks automatically during user-defined time windows to avoid peak-hour API costs; includes account balance display and 10-minute granularity spend bar chart.
 - [zoumutou/dsh-cost-balance](https://github.com/zoumutou/dsh-cost-balance) - Collapsible iOS-style stats pill under the composer: session cost, DeepSeek account balance, cache-hit rate, and token usage in a frosted panel.
 
+- [zhuzichen362/dsh-call-shrink](https://github.com/zhuzichen362/dsh-call-shrink) - Extreme LLM-call compression for DeepSeek Harness: title short-circuit, in-flight dedup, 24h replay cache, and batch-merging N parallel requests into 1 upstream call via a [[TASK n]]/[[ANSWER n]] delimiter protocol - fewer API calls, less spend, same answers.
+
 ### Themes & Appearance
 
 - [0nt-one/dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin) - Neo-brutalism skin with two switchable schemes (Blue Command / Aged Newspaper), hard shadows, sharp corners, and light/dark theme support.
