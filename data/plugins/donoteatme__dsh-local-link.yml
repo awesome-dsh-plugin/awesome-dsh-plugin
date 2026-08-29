@@ -1,5 +1,5 @@
-url: https://github.com/DoNotEatMe/dsh-local-link
-name: DoNotEatMe/dsh-local-link
+url: https://github.com/donoteatme/dsh-local-link
+name: donoteatme/dsh-local-link
 category: remote
 description:
   en: 'Browser-first, LAN-only access to the current DeepSeek Harness Web UI with one-time QR pairing, revocable devices, event-driven diagnostics, and a slot-preserving mobile layout; no companion app, cloud relay, or remote tunnel.'
