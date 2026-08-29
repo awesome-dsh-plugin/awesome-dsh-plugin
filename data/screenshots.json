@@ -598,5 +598,9 @@
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/chat.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-front.png",
   "https://raw.githubusercontent.com/slywalker2006/dsh-passwords/main/docs/screenshots/card-back.png"
+ ],
+ "https://github.com/paicat1/dsh-screenshot": [
+  "https://raw.githubusercontent.com/paicat1/dsh-screenshot/main/assets/demo-manual.gif",
+  "https://raw.githubusercontent.com/paicat1/dsh-screenshot/main/assets/demo-agent.gif"
  ]
 }
