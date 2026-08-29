@@ -1,5 +1,5 @@
-url: https://github.com/Raiyan007-gb/dsh-qrcode-hassle-free
-name: Raiyan007-gb/dsh-qrcode-hassle-free
+url: https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy
+name: Raiyan007-gb/dsh-remote-tunnel-easy
 category: remote
 description:
   en: Scan a QR code in Settings to open the DeepSeek Harness web UI on your phone inside the active session via a cloudflared quick tunnel.
