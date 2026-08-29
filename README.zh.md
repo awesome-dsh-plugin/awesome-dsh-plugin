@@ -1133,6 +1133,7 @@ dsh plugin --profile web add dshmarket
 - [AngLi1997/dsh-plugin-sync](https://github.com/AngLi1997/dsh-plugin-sync) — 将已安装的 DeepSeek Harness 插件清单同步到 GitHub Gist（OAuth 登录、一键导出/导入并自动安装依赖）。
 - [Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。
 - [annexwu/dsh-cos](https://github.com/annexwu/dsh-cos) — 提供 COS 云存储浏览与传输、工作区产物上传、临时链接，以及同时保留本地副本和云端对象身份的会话附件，并提供腾讯云 COS、数据万象和 MetaInsight 的 Agent 工具。
+- [Ansonfishing/dsh-ca-ref](https://github.com/Ansonfishing/dsh-ca-ref) — DSH 的 Clean Architecture 参考库:8 个钉版参考仓(Go / Java / C# / Python)索引进本地 FTS5,提供断言规则、审查台账与只读观察窗面板。
 - [anysearch-team/anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) — 基于 AnySearch 的实时网页与垂直搜索插件，为 DeepSeek Harness 提供搜索工具。
 - [anyuer678/dsh-logtimeline](https://github.com/anyuer678/dsh-logtimeline) — 用中文自然语言时间描述查询本地日志（如「昨天下午」「3小时前」）——精确时间范围、匹配行、级别统计，完全离线。
 - [Asher-2000/dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) — 专家模式 agent preset（v0.9.2，npm 包 dsh-expert-mode，双语双份）：首席协调官 + 17 位领域专家子代理，按任务特性自动委派。特性：任务调度器（文件系统任务状态机 pending/ready/running/done/failed + 依赖DAG + 原子认领 + 重试 + 崩溃恢复）、质量门禁（高风险任务五段式：需求澄清→实现→验证→独立评审→集成，最多回炉2轮）、五锚约束（每轮回顾/收敛/反跑题/协作检查/资源感知自检）+ 近距离引导（身份/任务/输出格式模板）+ 渐进式披露（省token约28%）+ 专家持久化 + 专家间文件消息总线（P2P直连，零协调官中转）+ 交叉评审 + 经验沉淀 + 简单任务快速通道 + 故障自动重试。专家：数据分析/文案/法务/产品/前端/UI-UX/架构/社交运营/增长/量化/财务/后端/DevOps/数据库/QA/安全/生图短视频。
