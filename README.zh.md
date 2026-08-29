@@ -1343,6 +1343,7 @@ dsh plugin --profile web add dshmarket
 - [liwuzhan/cad-tool#dsh-cad-studio](https://github.com/liwuzhan/cad-tool/tree/main/packages/dsh-cad-studio) — 为 DSH 添加参数化 CAD 建模、几何验证、预览、设计历史和 STEP/STL 导出能力。
 - [lonelymoon87/dsh-code-intel](https://github.com/lonelymoon87/dsh-code-intel) — 用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。
 - [lory69060/cn-intel-mcp-dsh](https://github.com/lory69060/cn-intel-mcp-dsh) — 中国硬科技供应链情报：33 条信号看板、中报验证追踪、命中率记录与问答，通过远程 MCP 接入（mcp__cn_intel__*）。
+- [lsqace-del/dsh-progress](https://github.com/lsqace-del/dsh-progress) — 「进度」实验/项目进度管理：16 个 progress_* agent 工具（安排增删改查、画板页、每日记录、全局搜索、概览、甘特、留言、导入导出），并在 better-sidebar 注册「进度」侧边栏 tab 托管原版界面；数据存会话项目 .progress/progress.json，随项目目录走。
 - [lsz-asd/dsh-plugin-device-info](https://github.com/lsz-asd/dsh-plugin-device-info) — 只读的 Windows 设备信息工具：每个 Win32 设备类别一个 agent 工具（时间、系统、CPU、内存、磁盘、GPU、网络、电池、进程、USB、音频、打印机），基于 WMI/CIM 与 Node os 采集。
 - [LucienLL/dsh-plugin-proxy](https://github.com/LucienLL/dsh-plugin-proxy) — DeepSeek Harness 全局代理插件：通过 Windows 系统代理或自定义地址统一代理模型请求与工具流量，主界面常驻开关，且 Agent 在对话中实时感知代理状态。
 - [Luke-Yong/dsh-plugin-knowledge-graph](https://github.com/Luke-Yong/dsh-plugin-knowledge-graph) — 基于代码库知识图谱的 read_graph 工具（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL 关系）。
