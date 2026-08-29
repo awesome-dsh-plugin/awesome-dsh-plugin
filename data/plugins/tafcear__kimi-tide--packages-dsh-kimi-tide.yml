@@ -1,5 +1,5 @@
-url: https://github.com/tafcear/kimi-tide
-name: tafcear/kimi-tide
+url: https://github.com/tafcear/kimi-tide/tree/main/packages/dsh-kimi-tide
+name: tafcear/kimi-tide#dsh-kimi-tide
 category: model
 tarball: https://github.com/tafcear/kimi-tide/releases/latest/download/dsh-kimi-tide.tgz
 description:
