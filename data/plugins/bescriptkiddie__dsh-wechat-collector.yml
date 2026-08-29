@@ -1,0 +1,6 @@
+url: https://github.com/bescriptkiddie/dsh-wechat-collector
+name: bescriptkiddie/dsh-wechat-collector
+category: tools
+description:
+  en: 'WeChat Official Account source collector: QR-login credential profiles, rate-limit-safe crawling with cooldown, RSS second water source, and secret-safe handoff to ContentStudio.'
+  zh: '公众号素材采集：扫码登录的多套凭证档案、带冷却保护的限流安全抓取、RSS 第二水源，以及凭证隔离的 ContentStudio 来源卡交接。'
