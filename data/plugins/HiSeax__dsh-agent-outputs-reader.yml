@@ -1,0 +1,7 @@
+url: https://github.com/HiSeax/dsh-agent-outputs-reader
+name: HiSeax/dsh-agent-outputs-reader
+category: docs
+description:
+  en: 'Overlay reader for agent output files: Markdown rendering, in-panel PDF, DOCX/XLSX/PPTX text preview and reply-end file chips, with search, outline and position memory.'
+  zh: agent 产出文件的浮层阅读器：Markdown 渲染、PDF 面板预览、DOCX/XLSX/PPTX 文本提取与回复末尾文件 chips，支持搜索、大纲与位置记忆。
+tarball: https://github.com/HiSeax/dsh-agent-outputs-reader/releases/latest/download/dsh-external-dsh-agent-outputs-reader-0.2.0.tgz
