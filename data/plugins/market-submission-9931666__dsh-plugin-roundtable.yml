@@ -1,0 +1,8 @@
+# awesome-dsh-plugin 收录条目（提交 PR 时新增 data/plugins/9931666__dsh-plugin-roundtable.yml）
+# 参考 wenjian/contributing.md 的要求：只改这一个文件，勿手改 README。
+url: https://github.com/9931666/dsh-plugin-roundtable
+name: 9931666/dsh-plugin-roundtable
+category: workflow
+description:
+  en: Visual round-table meetings for DeepSeek Harness — expert nodes on a ring with directed edges, an aggregation gateway, proxy thinking for black-box worker models, and adversarial review (red-team) of settled plans with per-viewpoint endorse/reject.
+  zh: 把 DeepSeek Harness 会话变成可视化圆桌会议：环形专家拓扑、连线协作、汇聚网关、代理思考，以及「针锋相对」红队评审（观点支持/驳回）。
