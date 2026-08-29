@@ -2,5 +2,5 @@ url: https://github.com/ziduup/dsh-programming-mode
 name: ziduup/dsh-programming-mode
 category: workflow
 description:
-  en: 'Programming Mode agent preset bundle: the standard coding agent with its persona mandating the Superpowers discipline (skills first, brainstorming before building, plans before code, TDD, systematic debugging, verification before completion); ships all fourteen skills bundled.'
-  zh: '编程模式 agent preset 组合包：标准编码 Agent 强制执行 Superpowers 工程纪律（技能优先、先头脑风暴、先计划后编码、TDD、系统化调试、完成前验证），内置全部 14 个技能。'
+  en: 'Programming Mode agent preset bundle: the standard coding agent with its persona mandating the Superpowers discipline (skills first, brainstorming before building, plans before code, TDD, systematic debugging, verification before completion); ships all fourteen skills bundled and mechanically injects the full using-superpowers skill into every new session''s first request.'
+  zh: '编程模式 agent preset 组合包：标准编码 Agent 强制执行 Superpowers 工程纪律（技能优先、先头脑风暴、先计划后编码、TDD、系统化调试、完成前验证），内置全部 14 个技能，并在每个新会话的第一条请求前自动注入 using-superpowers 技能全文。'

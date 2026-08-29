@@ -4715,7 +4715,7 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/text2future/flowix/tree/main/app/flowix-dsh-host/bundles/dsh-flowix-memory": {
+ "https://github.com/text2future/flowix/tree/main/dsh-flowix-memory": {
   "stars": 320,
   "checkedAt": "2026-08-19"
  },
@@ -4779,11 +4779,7 @@
   "stars": 11,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review": {
-  "stars": 2,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review-changes": {
+ "https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review": {
   "stars": 2,
   "checkedAt": "2026-08-19"
  },

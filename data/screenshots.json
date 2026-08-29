@@ -847,7 +847,7 @@
  "https://github.com/superagents-lab/dsh-s1": [
   "https://raw.githubusercontent.com/superagents-lab/dsh-s1/main/assets/dsh-s1.png"
  ],
- "https://github.com/text2future/flowix/tree/main/app/flowix-dsh-host/bundles/dsh-flowix-memory": [
+ "https://github.com/text2future/flowix/tree/main/dsh-flowix-memory": [
   "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/home-write.png",
   "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/readme-agent.png",
   "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/gh-detail-4.png",
@@ -1351,5 +1351,12 @@
  ],
  "https://github.com/yangdongzhen590/dsh-knj-scheduler": [
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-scheduler/main/assets/screenshots/scheduler-panel.png"
+ ],
+ "https://github.com/mienfong/dsh-session-mgr": [
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/session-manager_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/move-dialog_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/backup_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/import_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/delete-confirm_EN.png"
  ]
 }
