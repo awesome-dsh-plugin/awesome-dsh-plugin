@@ -1,0 +1,6 @@
+﻿url: https://github.com/randomix777/dsh-sprite-gen
+name: randomix777/dsh-sprite-gen
+category: tools
+description:
+  en: Sprite sheet generator with AI image generation (Gemini Flash, Stable Diffusion, Agnes AI, ComfyUI local). 37 tools: generate, cutout, tileset, GIF export, Tiled JSON, Aseprite import, video→sprite, palette quantization, animation sequences, weapons/effects, backgrounds, character consistency, prop packs, scene objects, anchor layout, terrain QC, platform strips, preview. Auto-crops transparent edges and arranges sprites into grids.
+  zh: 精灵图生成器，支持 Gemini Flash、Stable Diffusion、Agnes AI、ComfyUI 本地节点。37 个工具：生成/抠图/色板量化/视频提取/GIF 导出/Tiled JSON/Aseprite 导入/动画序列/武器特效/角色一致性/道具包/场景对象/锚定布局/地形QC/平台条/预览。自动裁剪透明边并网格排列。
