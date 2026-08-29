@@ -2667,6 +2667,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) - Steam Workshop-style in-app plugin browser: search, hot/newest/trending (7/30/90-day) sorting, Chinese keyword mapping, bilingual descriptions and README translation, plugin-signature filtering, and one-click install/update.
 - [zhu1090093659/dsh-web#packages/dsh-plugin-manager](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-plugin-manager) - Plugin manager tab in DSH Settings → Plugins: install from npm or git with progress, enable/disable switches effective at next startup, conflict reconciliation with undo, and one-click hand-off to a fix session.
 - [zoahdev/dsh-subscribe#plugin](https://github.com/zoahdev/dsh-subscribe/tree/main/plugin) - Steam-style plugin storefront: a plugin registry browsable inside DSH with one-click install, uninstall and update, plus a zero-dependency CLI and agent-callable market tools.
+- - [mimosa776/dsh-plugin-recommender](https://github.com/mimosa776/dsh-plugin-recommender) - Role-based plugin recommender: asks your role (developer/designer/writer/researcher/ops/student...), recommends suitable DSH plugins, and audits each with a local static security scan (dangerous code patterns + 0-100 risk score) and reputation check (npm downloads / GitHub stars). 按职业/角色推荐 DSH 插件，并对每个插件做安全审计与口碑检查。
 
 ### Just for Fun
 
