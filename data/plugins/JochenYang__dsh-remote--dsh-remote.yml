@@ -1,5 +1,5 @@
-url: https://github.com/JochenYang/dsh-remote
-name: JochenYang/dsh-remote
+url: https://github.com/JochenYang/dsh-remote/tree/main/dsh-remote
+name: JochenYang/dsh-remote#dsh-remote
 category: remote
 description:
   en: 'Use DSH from your phone anywhere: a self-hosted relay plus a desktop host plugin form a token-authenticated tunnel (order-preserving HTTP reverse proxy + WebSocket bridging) with QR pairing, an admin console for device/token management, and an injected mobile adaptation layer (full-width chat, full-screen settings sheet, sidebar drawer).'
