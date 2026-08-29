@@ -1,0 +1,6 @@
+url: https://github.com/DoNotEatMe/dsh-local-link
+name: DoNotEatMe/dsh-local-link
+category: remote
+description:
+  en: 'Opens the current DeepSeek Harness Web UI on another LAN device through one-time QR pairing, remembered and revocable devices, event-driven diagnostics, and a responsive mobile layout that preserves registered Harness views.'
+  zh: '通过一次性二维码配对，在同一局域网的其他设备上打开当前 DeepSeek Harness Web UI，支持已配对设备持久化与撤销、事件驱动诊断，以及保留已注册 Harness 视图的响应式移动端布局。'
