@@ -1,4 +1,9 @@
 {
+ "https://github.com/jiang12345-code/dsh-multi-role-debate/tree/main/dsh-multi-role-debate": [
+  "https://raw.githubusercontent.com/jiang12345-code/dsh-multi-role-debate/main/docs/debate.png",
+  "https://raw.githubusercontent.com/jiang12345-code/dsh-multi-role-debate/main/docs/result.png",
+  "https://raw.githubusercontent.com/jiang12345-code/dsh-multi-role-debate/main/docs/config.png"
+ ],
  "https://github.com/anweat/dsh-context-console": [
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-trajectory.png",
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",
