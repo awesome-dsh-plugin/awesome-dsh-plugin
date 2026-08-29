@@ -2,5 +2,5 @@ url: https://github.com/ChuanTianML/prompt-for-me
 name: ChuanTianML/prompt-for-me
 category: ui
 description:
-  en: Context-aware next-message suggestions in the DSH composer, with repeated Trigger cycling and explicit user review before sending.
-  zh: DSH 输入框的上下文感知下一句建议：重复 Trigger 可持续换一条，发送前始终由用户确认。
+  en: Automatic context-aware ghost text after Agent replies, with direct-fill manual generation and Harness-native settings for automation, shortcut, and model.
+  zh: Agent 回复后自动给出上下文感知 Ghost Text，支持直接写入的手动生成，以及自动开关、快捷键和模型选择等 Harness 原生设置。
