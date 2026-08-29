@@ -1,0 +1,6 @@
+url: https://github.com/haoyu-qi/dsh-zentao/tree/main/packages/bundle/zentao
+name: haoyu-qi/dsh-zentao#zentao
+category: notify
+description:
+  en: 'Floating ZenTao work center: a right-edge sidebar listing tasks, bugs and stories assigned to you, with drag-to-chat, original links and auto-refresh.'
+  zh: '悬浮禅道工作台：右侧边栏展示指派给你的任务、Bug 与需求，支持拖拽到聊天、原始链接与自动刷新。'
