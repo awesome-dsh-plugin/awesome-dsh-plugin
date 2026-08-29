@@ -1,0 +1,7 @@
+url: https://github.com/xchannel1987/dsh-reverse-proxy-xc
+name: xchannel1987/dsh-reverse-proxy-xc
+category: remote
+description:
+  en: DSH LAN reverse proxy plugin for accessing Web GUI from mobile devices.
+  zh: DSH 局域网反向代理插件，让手机/其他设备访问 DSH Web GUI。
+

@@ -1,0 +1,7 @@
+url: https://github.com/xchannel1987/dsh-mobile-xc
+name: xchannel1987/dsh-mobile-xc
+category: ui
+description:
+  en: DSH Web mobile UI adaptation plugin with overlay drawer, safe-area support, and canary version detection.
+  zh: DSH Web 移动端 UI 适配插件，overlay 抽屉、安全区、canary 防升级失效。
+

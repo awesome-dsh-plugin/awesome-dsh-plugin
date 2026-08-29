@@ -1,0 +1,7 @@
+url: https://github.com/xchannel1987/dsh-power-xc
+name: xchannel1987/dsh-power-xc
+category: ui
+description:
+  en: DSH power control plugin with restart/shutdown menu and Windows-style overlay animation.
+  zh: DSH 电源控制插件，重启/关机菜单加全屏过渡动画。
+
