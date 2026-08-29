@@ -1,4 +1,3 @@
-# re-trigger submission gate after source-repo fixes
 url: https://github.com/iqingyoung/429-throttle-mcp/tree/main/packages/dsh-throttle
 name: iqingyoung/429-throttle-mcp#dsh-throttle
 category: tools
