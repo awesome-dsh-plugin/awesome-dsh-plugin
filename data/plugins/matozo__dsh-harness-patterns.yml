@@ -1,0 +1,6 @@
+url: https://github.com/matozo/dsh-harness-patterns
+name: matozo/dsh-harness-patterns
+category: tools
+description:
+  en: Production-grade agent harness patterns: verify-seed (human approval gate), checkpoint (session state preservation), slop-check (COT leakage detection).
+  pt: Padroes de harness para agentes em produtivo: verify-seed (gate de aprobacao humana), checkpoint (preservacao de estado), slop-check (detecao de vazamento de raciocinio).
