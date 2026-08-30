@@ -406,9 +406,16 @@ function applyFilter() {
 }
 const q = document.getElementById('q');
 q.value = query;
+const SEARCH_DEBOUNCE_MS = 180;
+let searchTimer;
 q.addEventListener('input', (e) => {
   query = e.target.value.trim().toLowerCase();
-  applyFilter();
+  clearTimeout(searchTimer);
+  if (!query) {
+    applyFilter();
+    return;
+  }
+  searchTimer = setTimeout(applyFilter, SEARCH_DEBOUNCE_MS);
 });
 document.getElementById('filters').addEventListener('click', (e) => {
   const chip = e.target.closest('button.chip');
