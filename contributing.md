@@ -114,6 +114,13 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
   ```
 
   Must be an `https` `.tgz` on GitHub's own release hosting — the list won't hand users a download link it can't vouch for. / 必须是 GitHub Release 托管的 `https` `.tgz`——列表不会给用户一个无法担保来源的下载链接。
+
+  ⚠️ **`latest/download/` resolves `latest` at request time but takes the filename literally.** If the asset name carries the version, the URL works the day you submit it and 404s the moment you cut your next release — a quiet rot nobody notices, least of all you. Either keep the asset name version-free (as above), or pin the release tag, where a versioned filename is the normal convention. / **`latest/download/` 只在请求时解析 `latest`，文件名是照字面取的。** 如果资产名里带版本号，这个链接提交当天有效，你下一次发版就会 404——而且不会有人察觉,包括你自己。要么让资产名不带版本(如上),要么改成钉住 release tag 的形式,那里带版本的文件名反而是正常写法：
+
+  ```yaml
+  # pinned to a tag — never rots, version in the filename is fine here
+  tarball: https://github.com/owner/repo/releases/download/v1.2.0/your-plugin-1.2.0.tgz
+  ```
 - Declare official `@deepseek-ai/*` packages as `peerDependencies`, not `dependencies`. / 官方 `@deepseek-ai/*` 包请用 `peerDependencies` 声明。
 
   ⚠️ **A peer range without an explicit prerelease branch silently excludes every prerelease build of the harness.** node-semver only lets a version's prerelease tag satisfy a range if *some* comparator in that range shares its exact `major.minor.patch` tuple and itself carries a prerelease tag. A broad-looking range like `>=0.0.1-rc.1 <0.2.0` — or even the "match everything" `>=0.0.0-0 <0.2.0-0` — does **not** match `0.1.0-rc.6`: neither has a comparator on the `0.1.0` tuple with a prerelease tag, so it's silently excluded and your users hit an `ERESOLVE` they have to work around by hand. Use an explicit `||` branch that puts a prerelease tag on the matching tuple instead / **不带显式预发布分支的 peer 范围会静默排除 harness 的所有预发布构建。** node-semver 只有当范围里*某个*比较符与该版本的 `major.minor.patch` 元组完全一致、且自身也带预发布标签时，才会放行预发布版本。看起来很宽的范围，比如 `>=0.0.1-rc.1 <0.2.0`，甚至「匹配一切」的 `>=0.0.0-0 <0.2.0-0`，都**匹配不到** `0.1.0-rc.6`——两者在 `0.1.0` 这个元组上都没有带预发布标签的比较符，于是被静默排除，用户 `npm install` 时会遇到 `ERESOLVE`，还得自己手工解决。请改用显式的 `||` 分支，在匹配的元组上带上预发布标签：
