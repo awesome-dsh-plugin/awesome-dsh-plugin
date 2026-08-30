@@ -799,6 +799,7 @@ dsh plugin --profile web add dshmarket
 - [hi-fangj/dsh-models-radar](https://github.com/hi-fangj/dsh-models-radar) — 在设置页展示 CodexRadar 模型能力评测，并在输入框旁显示当前会话所选模型的 DeepSWE 分数。
 - [HiSeax/dsh-better-model-setting](https://github.com/HiSeax/dsh-better-model-setting) — 替代官方「模型」设置页：提供方生命周期管理、每模型思考档位、重试覆盖、拖动排序与上游模型同步。
 - [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) — 为 DSH 自定义模型配置思考档位和子 agent 默认思考强度。
+- [Jensen-Yao/dsh-model-palette](https://github.com/Jensen-Yao/dsh-model-palette) — DeepSeek Harness Web 的全局 Alt+M 模型命令面板：模型与提供商的模糊搜索、收藏与最近使用、每模型思考档位、提供商与模型配置、请求重试、容量预设，以及可选的 OpenRouter 图片/视频生成工具。
 - [Jesse-njx/dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — DSH 的模型切换器：指向任意 OpenAI 兼容端点，内置精选免费/低价 DeepSeek 服务商预设，免费额度限流时自动回退。
 - [jiay98528-dev/dsh-model-sync](https://github.com/jiay98528-dev/dsh-model-sync) — 把各提供方线上模型列表写进 DSH 设置，输入框圆环显示当前会话模型的 5 小时/7 天窗口或按量剩余余额。
 - [jiay98528-dev/dsh-plugin-weaknet-adaptor](https://github.com/jiay98528-dev/dsh-plugin-weaknet-adaptor) — 弱网适配器：模型流式请求的长退避透明重试（上限 10 分钟）、本地响应重放缓存、心跳自动重连、降级模式 token 节流，并提供中英双语设置页。
