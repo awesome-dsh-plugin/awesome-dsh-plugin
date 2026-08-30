@@ -1,5 +1,5 @@
-url: https://github.com/DaLongggggg/dsh-skill-manager
-name: DaLongggggg/dsh-skill-manager
+url: https://github.com/DaLongggggg/dsh-skill-manager/tree/master/plugin
+name: DaLongggggg/dsh-skill-manager#plugin
 category: skill
 description:
   en: 'Manage installed DeepSeek Harness skills from settings: list, search, view rendered docs, copy content, open the folder, soft-delete to a recoverable trash, and try a skill out.'
