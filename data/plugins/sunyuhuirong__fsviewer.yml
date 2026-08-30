@@ -1,0 +1,6 @@
+url: https://github.com/sunyuhuirong/fsviewer
+name: sunyuhuirong/fsviewer
+category: ui
+description:
+  en: 'Codex-style right-edge workspace for the dsh web UI: file tree with preview tabs (Markdown/source), an embedded browser (direct/proxy iframe), and a side chat streaming from the host LLM — all as switchable tabs in the native details column.'
+  zh: 'Codex 式右侧工作区：文件树 + 预览页签（Markdown/源码）、嵌入式浏览器（直连/代理 iframe）、侧边聊天（直连 host LLM 流式对话），全部收敛为原生 details 右栏的页签，可开关多开。'
