@@ -1542,6 +1542,7 @@ dsh plugin --profile web add dshmarket
 
 - [173787247/dsh-wsl-browser](https://github.com/173787247/dsh-wsl-browser) — 在 Windows 默认浏览器中打开来自 WSL 的 http(s) 链接。
 - [173787247/dsh-wsl-env](https://github.com/173787247/dsh-wsl-env) — 向 system prompt 注入 WSL 发行版、Linux 路径映射、/mnt/c 的 CRLF 与 git 注意点，以及 NODE_USE_ENV_PROXY。
+- [173787247/dsh-wsl-gpu](https://github.com/173787247/dsh-wsl-gpu) — 探测 WSL 内的 nvidia-smi 与 GPU 可见性。
 - [173787247/dsh-wsl-net](https://github.com/173787247/dsh-wsl-net) — 提供 net_doctor 工具，报告代理环境、NODE_USE_ENV_PROXY，以及 DeepSeek API 与 npm registry 的连通性，并为 bash 和 npm 子进程设置 NODE_USE_ENV_PROXY。
 - [173787247/dsh-wsl-open](https://github.com/173787247/dsh-wsl-open) — 把 DeepSeek Harness 聊天里的 WSL Linux 路径在 Windows 默认程序或资源管理器中打开。
 - [6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) — 从 Web GUI 添加 WSL 工作区，无需在 WSL 之中再次安装 dsh 以及相关工具，bash 命令与文件读写运行在本机 WSL 发行版内，Windows 文件仍可访问。

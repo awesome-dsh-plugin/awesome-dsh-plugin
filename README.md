@@ -1542,6 +1542,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 - [173787247/dsh-wsl-browser](https://github.com/173787247/dsh-wsl-browser) - Opens http(s) URLs from WSL in the Windows default browser.
 - [173787247/dsh-wsl-env](https://github.com/173787247/dsh-wsl-env) - Injects WSL distro, Linux path mapping, /mnt/c CRLF and git caveats, and NODE_USE_ENV_PROXY into the system prompt.
+- [173787247/dsh-wsl-gpu](https://github.com/173787247/dsh-wsl-gpu) - Probes nvidia-smi and GPU visibility inside WSL.
 - [173787247/dsh-wsl-net](https://github.com/173787247/dsh-wsl-net) - Adds a net_doctor tool that reports proxy environment, NODE_USE_ENV_PROXY, and reachability of the DeepSeek API and the npm registry, and sets NODE_USE_ENV_PROXY on bash and npm child processes.
 - [173787247/dsh-wsl-open](https://github.com/173787247/dsh-wsl-open) - Opens WSL Linux paths from DeepSeek Harness chat in the Windows default app or Explorer.
 - [6Mikao9/dsh-wsl-workspace](https://github.com/6Mikao9/dsh-wsl-workspace) - Add a WSL workspace from the web GUI without needing to install dsh or related tools again inside WSL. Bash commands and file read/write operations run within the local WSL distribution on the host machine, while Windows files remain accessible.
