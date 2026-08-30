@@ -648,7 +648,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [xobexo/dsh-smart-scenario-router](https://github.com/xobexo/dsh-smart-scenario-router) - Routes dsh requests by conversation scenario and retries with fallback models when requests fail.
 - [xohmai/dsh-cpa-status](https://github.com/xohmai/dsh-cpa-status) - CPA account-pool status panel: sidebar health light, quota bars, success-rate ticks, and gateway key endings.
 - [xxvk/dsh-cost-crystal](https://github.com/xxvk/dsh-cost-crystal) - Floating cost crystal for the Web UI: balance card, real-time tok/s, peak/off-peak billing countdown, last-24h spend, and a 🔮 next-message cost forecast, all timezone-aware.
-- [y2zyyr/dsh-token-usage-sidebar](https://github.com/y2zyyr/dsh-token-usage-sidebar) - Persistent provider-reported token usage for DSH Web, with a sidebar summary and settings-page breakdowns by range, token type, provider, and model.
+- [y2zyyr/dsh-token-usage-sidebar](https://github.com/y2zyyr/dsh-token-usage-sidebar) - Persistent local token-usage accounting for DSH Web with automatic history discovery and compact provider/model details.
 - [yangyongzhen/dsh-session-report](https://github.com/yangyongzhen/dsh-session-report) - Per-session cost & usage report cards: tokens, cache hits, duration.
 - [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) - Multi-provider usage dashboard with provider/model token breakdowns, calendar drill-downs, account balances, and OpenCode Go / Z.ai subscription quota tracking.
 - [yflmq001/dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) - Per-model token cost tracking with configurable cache-hit/miss, output and peak-window pricing, a live session cost bar, and unconfigured-model flags.
