@@ -2,5 +2,5 @@ url: https://github.com/paicat1/dsh-screenshot
 name: paicat1/dsh-screenshot
 category: vision
 description:
-  en: 'Zero-dependency screen capture for DSH: instant full-screen shots, or stage your desktop (move/resize any window) and box-select a region — agent-callable capture, path-only delivery. Works with any vision consumer; pair with modlens (optional) for one-call structured evidence.'
-  zh: DSH 轻量截图插件：一键全屏，或先摆好窗口再框选；Agent 可自助截屏；传路径不传图、零依赖零二进制；路径通用，接上 modlens（选装）即可一步读出结构化内容。
+  en: 'Zero-dependency screen capture for DSH: Lightweight — zero deps, zero binaries; Stage & shoot — one-click full screen, window layout, hover-snap capture of occluded windows; Agent self-service — path-only delivery; paths are universal, pair with modlens (optional) for one-call structured evidence.'
+  zh: DSH 轻量截图插件：轻——零依赖零二进制；摆——一键全屏、窗口排版、悬停吸附截取被遮挡窗口；自助——Agent 可自助截屏，传路径不传图，路径通用，接上 modlens（选装）一步读出结构化内容。
