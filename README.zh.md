@@ -169,7 +169,6 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-web-ui#dsh-aionui-panel](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-aionui-panel) — dsh web GUI 右侧面板系统：像素级还原 AionUi 的资源树 + 预览（文件树、差异视图、预览）。
 - [DamonKoy/dsh-web-ui#dsh-liangshen](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-liangshen) — dsh web GUI 的梁神 agent 预设：两阶段锚定标准预设。
 - [DamonKoy/dsh-web-ui#dsh-task-board](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-task-board) — dsh web GUI 任务看板：侧边栏入口 + 多列看板视图，本地持久化。
-- [DamonKoy/dsh-web-ui#dsh-web-ui-all](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-all) — DSH Web UI 全家桶聚合插件：一键安装全部功能插件（task-board/git-graph/pet/remote-web-ui/live-stats/web-ui-settings）。
 - [DamonKoy/dsh-web-ui#dsh-web-ui-settings](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-settings) — dsh 设置页的 Web UI 插件组卡片：dsh-web-ui 全家插件的开关与配置。
 - [dannyvan/dsh-file-drop](https://github.com/dannyvan/dsh-file-drop) — 拖拽/点击上传任意非图片文件（PDF/Word/Excel/ZIP/文本）到输入框：桌面壳下直取 Finder 原始路径；无壳时上传到工作区并插入路径。
 - [dcrzsy/dsh-enhance-tool](https://github.com/dcrzsy/dsh-enhance-tool) — DeepSeek Harness Web 一站式界面增强：提示词库（快选+管理）、两步 AI 润色、预测回复栏（点击直接发送）、MCP 工具管理、定时自动化、智能会话标题、对话宽度可调、AI 回复占满无灰底、超长用户消息自动折叠（带平滑展开/收起动效），以及各面板的场景化入场动效。
@@ -688,7 +687,6 @@ dsh plugin --profile web add dshmarket
 - [code-newbie-1/dsh-wallpaper](https://github.com/code-newbie-1/dsh-wallpaper) — Wallpaper Engine 壁纸联动：把本机下载的 WE 壁纸（创意工坊 431960 + 本地 projects）设为 DSH Web GUI 页面背景（图片/视频/网页原样渲染，场景壁纸柔化为静态预览），侧边栏「壁纸设计」面板可调不透明度、作用范围、填充、模糊、暗角、帧率、视差、轮播与主题联动，附 wallpaper_scan/list/set/config 四个 agent 工具。
 - [codeMonkey-Pine/dsh-wallpaper](https://github.com/codeMonkey-Pine/dsh-wallpaper) — Wallpaper Engine 壁纸联动：把本机下载的 WE 壁纸（创意工坊 431960 + 本地 projects）设为 DSH Web GUI 页面背景（图片/视频/网页原样渲染，场景壁纸柔化为静态预览），侧边栏「壁纸设计」面板可调不透明度、作用范围、填充、模糊、暗角、帧率、视差、轮播与主题联动，附 wallpaper_scan/list/set/config 四个 agent 工具。
 - [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) — 实时 WebGPU 海洋皮肤，可快捷调节波浪、日光、玻璃不透明度与自动昼夜循环。
-- [DamonKoy/dsh-web-ui#dsh-skins](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-skins) — 皮肤全家桶聚合插件：一键安装皮肤中心 + 全部皮肤资产（qq98/ths/xp/blue-fantasy/dragon-heir/minecraft/miku/trading 等）。
 - [Ddamage/dsh-shunshun-wallpaper](https://github.com/Ddamage/dsh-shunshun-wallpaper) — 以网络主播张顺飞为主题的粉丝同人二创壁纸插件：彩色飞马高清旋转动图全屏壁纸，支持主题融合与突出度调节；附带 B站音乐播放器，可粘贴链接添加歌曲、删除、调音量、拖进度条、切换单曲/列表/随机循环，并有侧栏迷你播放器。
 - [ddbj-hub/dsh-wallpaper-skin](https://github.com/ddbj-hub/dsh-wallpaper-skin) — dsh Web 界面的持久化壁纸皮肤：静态图片或静音循环视频作为应用背景，面板半透明化，右下角悬浮面板一键换壁纸。
 - [dhicoc/dsh-theme-mineradio](https://github.com/dhicoc/dsh-theme-mineradio) — Mineradio 玻璃拟态 DSH 网页主题：香槟金玻璃面板、流体或壁纸背景，一键开关即可还原原生界面。
@@ -2360,7 +2358,6 @@ dsh plugin --profile web add dshmarket
 - [lispking/dsh-devpanel](https://github.com/lispking/dsh-devpanel) — DSH 网页控制台的开发者工具包：一个真实的多标签 PTY 终端（停靠在输入框下方），外加 AI 输出文件浏览器侧栏，支持语法高亮、Markdown 渲染与图片预览。
 - [Liu-Bot24/dsh-trace-insight#standard](https://github.com/Liu-Bot24/dsh-trace-insight/tree/main/packages/standard) — 在可调宽的会话右侧栏中提供只读轨迹复盘、规则分析、可选模型解读、证据定位和同区间运行对比。
 - [LIU20030725/dsh-skill-manager](https://github.com/LIU20030725/dsh-skill-manager) — 在 DeepSeek Harness 中按分类、标签和集合文件夹管理你的 agent 技能，自带设置面板与输入框文件夹技能挑选器。
-- [ljsysfurryACE/dsh-agentframe-suite](https://github.com/ljsysfurryACE/dsh-agentframe-suite) — AgentFrame 三件套整合包：一条命令装齐记忆、压缩与主动调度。
 - [loeanxi/dsh-cursor-acp](https://github.com/loeanxi/dsh-cursor-acp) — 将独立任务交给同机已登录的 Cursor 命令行，并提供子模型设置和只读连通性测试。
 - [loeanxi/dsh-injection-guard](https://github.com/loeanxi/dsh-injection-guard) — 面向 DSH 的来源感知提示词注入防护：跟踪 Turn 中的不可信上下文，检测注入信号，评估敏感 Sink，并通过可解释审计日志阻断高风险工具调用。
 - [loongsuite/dsh-plugin](https://github.com/loongsuite/dsh-plugin) — 将会话、Agent 循环、LLM 与工具生命周期事件转换为 OpenTelemetry GenAI 调用链与指标，通过标准 OTLP/HTTP 导出到任意兼容后端，正文采集默认关闭。
