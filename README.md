@@ -517,7 +517,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Models & Providers
 
-- [ai-yukin/dsh-0-tools](https://github.com/ai-yukin/dsh-0-tools) - One-click free-model setup for DSH web, built for coding beginners: Zhipu GLM free text + image models, plus the OpenRouter free model pool (one key, ~27 dynamically-updated free models auto-picked, retired ones auto-routed-around); bottom-left setup hint hides once any free model is connected; real-time DeepSeek peak/off-peak pricing reminder; bundled beginner help center.
+- [ai-yukin/dsh-0-tools](https://github.com/ai-yukin/dsh-0-tools) - One-click free-model setup for DSH web, built for coding beginners: one-click installer for Windows (install.bat) and macOS/Linux (install.sh, v1.7.0+); Zhipu GLM free text + image models, plus the OpenRouter free model pool (one key, ~27 dynamically-updated free models auto-picked, retired ones auto-routed-around); bottom-left setup hint hides once any free model is connected; real-time DeepSeek peak/off-peak pricing reminder; bundled beginner help center.
 - [amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) - Google Antigravity (agy CLI) models for DSH — streaming chat with Gemini/Claude/GPT-OSS subscriptions, native tool cards, thinking turns, and in-GUI Google OAuth login.
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) - Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.
 - [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) - Role-based LLM retry & fallback strategies.
