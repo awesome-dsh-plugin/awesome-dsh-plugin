@@ -1,0 +1,6 @@
+url: https://github.com/fno2010/dsh-web-search-ext
+name: fno2010/dsh-web-search-ext
+category: browser
+description:
+  en: Multi-backend web_search provider (Exa + Firecrawl) for the built-in web_search tool, with automatic failover, per-backend 429 cooldowns, and key-free anonymous access.
+  zh: 面向内置 web_search 工具的多后端搜索提供方（Exa + Firecrawl）：自动故障切换、按后端 429 冷却、无密钥匿名可用。

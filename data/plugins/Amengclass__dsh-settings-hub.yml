@@ -1,0 +1,5 @@
+url: https://github.com/Amengclass/dsh-settings-hub
+name: Amengclass/dsh-settings-hub
+category: ui
+description:
+  en: "Unify third-party plugin settings in DeepSeek Harness. Auto-discover, group, and reorder plugin settings under one collapsible nav entry with drag-and-drop support."

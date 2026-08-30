@@ -1,6 +1,0 @@
-url: https://github.com/xing666173/dsh-bridge-preview
-name: xing666173/dsh-bridge-preview
-category: session
-description:
-  en: 'Inline image previews in chat for pasted images bridged by dsh-tool-vision on text-only models (click to zoom, old messages get previews too).'
-  zh: '在对话气泡中内联显示 dsh-tool-vision 桥接的粘贴图片,点击可放大,旧消息也会自动补上预览。'

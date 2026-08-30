@@ -1,0 +1,6 @@
+url: https://github.com/seriousz158/dsh-memory
+name: seriousz158/dsh-memory
+category: memory
+description:
+  en: 'Local Git-backed long-term memory for DeepSeek Harness with cited context, usage-aware read tools, safe sync, previews, and rollback.'
+  zh: 基于本地 Git 的 DeepSeek Harness 长期记忆：带引用上下文、按使用反馈排序的读取工具、安全同步、预览与回滚。

@@ -1,0 +1,6 @@
+url: https://github.com/shuind/dsh-codex-harness
+name: shuind/dsh-codex-harness
+category: model
+description:
+  en: 'Provides a Codex preset for DSH with Codex-style system instructions and tool contracts, image input, optional reasoning effort, Fast priority-tier requests, OpenAI Responses web search and remote compaction, and Web context-capacity settings; it is intended as a harness adapter for tokens originating from Codex and remains compatible with the DSH ecosystem.'
+  zh: '在 DSH 中提供 Codex preset：引入 Codex 风格的系统提示词与工具契约，支持图片输入、可选思考强度、Fast 优先级请求、OpenAI Responses 网页搜索与远程压缩，以及在 Web 设置上下文容量；旨在给来源于Codex的token提供适配harness，并兼容享受DSH生态。'

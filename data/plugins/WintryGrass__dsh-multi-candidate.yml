@@ -1,0 +1,6 @@
+url: https://github.com/WintryGrass/dsh-multi-candidate
+name: WintryGrass/dsh-multi-candidate
+category: workflow
+description:
+  en: 'Multi-candidate mode for DeepSeek Harness (test-time scaling): floating panel config, the agent auto-runs parallel candidates plus verifier selection, scoped to the current session.'
+  zh: '多候选模式插件（test-time scaling）：悬浮球面板配置，模型对任务自动执行并行候选加验证选优，仅当前会话生效。'

@@ -1,0 +1,7 @@
+url: https://github.com/0QwQ0/dsh-discord-richpresence
+name: 0QwQ0/dsh-discord-richpresence
+category: notify
+description:
+  en: Push vague or rich, user-configurable DSH interaction states to the local Discord client as Rich Presence — real-time, content-free, with a user-editable status list and an optional rich-mode toggle in Settings.
+  zh: 将模糊或丰富的 DSH 交互状态实时推送到本地 Discord 客户端作为 Rich Presence——不携带任何工作区内容，状态消息列表可自由编辑，并可在设置中切换丰富模式。
+tarball: https://github.com/0QwQ0/dsh-discord-richpresence/releases/latest/download/dsh-discord-richpresence-0.2.2.tgz

@@ -1,0 +1,5 @@
+url: https://github.com/edusrez/dsh-smart-restart
+name: edusrez/dsh-smart-restart
+category: dev
+description:
+  en: 'Wakes the main agent after any DSH restart so interrupted work resumes automatically — adds a restart tool and an optional canary that validates the boot and aborts with an alert before a broken restart.'

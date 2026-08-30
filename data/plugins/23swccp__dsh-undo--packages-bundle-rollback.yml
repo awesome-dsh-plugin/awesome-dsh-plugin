@@ -1,6 +1,6 @@
 url: https://github.com/23swccp/dsh-undo/tree/master/packages/bundle-rollback
-name: 23swccp/dsh-undo#bundle-rollback
+name: dsh-undo-plugin
 category: session
 description:
-  en: 'Conversation undo: roll a session back to before any sent prompt via /undo, the session-header button, or the icon under the message, restoring files from a plugin-private shadow-Git snapshot and forking the conversation so the model never sees the reverted turns; includes an Archive Tasks settings page and per-tool colored tool cards.'
-  zh: '对话撤销：通过 /undo、会话头部按钮或消息下方图标把会话回滚到任意已发送 prompt 之前，文件由插件私有 Shadow Git 快照恢复、会话 fork 成新分支，模型看不到被回滚的回合；附带归档任务设置页与工具卡片按类型着色。'
+  en: 'Conversation and workspace undo: use the /undo timeline, session-header action, or message icon to roll back before any sent prompt; private Shadow Git snapshots restore files, the reverted turns stay out of model context, and Undo Rollback can recover mistakes. Includes archived-session management and per-tool colored cards.'
+  zh: '对话与工作区撤销：通过 /undo 节点轴、会话头部按钮或消息下方图标回滚到任意已发送 prompt 之前；插件私有 Shadow Git 快照恢复文件，被回滚回合不会进入模型上下文，误操作还能“撤回回滚”。附带归档会话管理与工具卡片分类配色。'

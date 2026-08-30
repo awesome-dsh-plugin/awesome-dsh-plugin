@@ -1,0 +1,5 @@
+url: https://github.com/fashionmascherine-svg/dsh-polymarket-knowhow
+name: fashionmascherine-svg/dsh-polymarket-knowhow
+category: tools
+description:
+  en: 'Polymarket toolkit for DeepSeek Harness and Claude Code: market-data tools for Gamma/CLOB/Data-API (31 model tools in DSH; read-only subset exposed over MCP), opt-in authenticated trading tools, WebSocket stream service, and an embedded Polymarket knowhow skill.'

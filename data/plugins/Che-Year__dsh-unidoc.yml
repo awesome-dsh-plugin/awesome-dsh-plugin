@@ -1,0 +1,6 @@
+url: https://github.com/Che-Year/dsh-unidoc   
+name: Che-Year/dsh-unidoc
+category: tools
+description:
+  en: 'A document preview / edit / management plugin for DeepSeek Harness. It provides a VSCode-style "Document Center" workbench inside the DSH Web GUI: a file tree on the left, click-to-preview, editable code & Markdown with Ctrl/Cmd+S save; and exposes three document tools (doc_read / doc_edit / doc_create) to agents, letting models read and write workspace documents through natural language.'
+  zh: DeepSeek Harness 的文档预览 / 编辑 / 管理插件。在 DSH Web GUI 中提供一个 VSCode 风格的「文档中心」工作台：左侧文件树，点击即预览，代码与 Markdown 支持编辑与 Ctrl/Cmd+S 保存；同时为 Agent 暴露 doc_read / doc_edit / doc_create 三个文档工具，让模型可以通过自然语言读写工作区文档。

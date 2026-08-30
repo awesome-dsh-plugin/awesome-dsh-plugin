@@ -1,0 +1,6 @@
+url: https://github.com/reatcat/l123-harness
+name: reatcat/l123-harness
+category: memory
+description:
+  en: 'Three-tier agent memory harness: L1 always-on CLAUDE.md, L2 index, L3 detail skeleton with templates, a gate that blocks writes to protected files without a one-time approval token, zero-judgement event logging, weekly distillation, and a TDD execution-loop skill.'
+  zh: 三级记忆 agent 底座：L1 常驻层、L2 索引、L3 详情骨架与模板，受保护文件门禁（一次性审批令牌），零判断事件日志，周审提炼与 TDD 执行流技能。

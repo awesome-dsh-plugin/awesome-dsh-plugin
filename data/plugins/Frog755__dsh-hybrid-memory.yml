@@ -1,0 +1,6 @@
+url: https://github.com/Frog755/dsh-hybrid-memory
+name: Frog755/dsh-hybrid-memory
+category: memory
+description:
+  en: 'Three-layer local memory for DeepSeek Harness: L1 frozen-snapshot memory (MEMORY.md/USER.md injected into the system prompt, prefix-cache friendly) + L2 searchable knowledge base (facts + SQLite FTS5, Chinese search via sliding-window tokenization) + L3 import from Hermes/Claude Code/Codex/WorkBuddy with dedup. Auto-injects relevant facts on the first step or memory trigger words (agent/pre-step) and after skill loads (tools/post-execute); data stays on the local drive.'
+  zh: 'DSH 本地混合记忆插件：L1 冻结快照（MEMORY.md/USER.md 注入 system prompt，保 prefix cache）+ L2 可检索知识库（facts + SQLite FTS5，滑窗分词支持中文检索）+ L3 从 Hermes/Claude Code/Codex/WorkBuddy 导入（账本去重）；会话首步或记忆触发词自动注入相关事实，skill 加载后自动召回；数据全部留在本地。'

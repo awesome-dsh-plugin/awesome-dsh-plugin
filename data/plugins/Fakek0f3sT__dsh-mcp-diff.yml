@@ -1,0 +1,5 @@
+url: https://github.com/Fakek0f3sT/dsh-mcp-diff
+name: Fakek0f3sT/dsh-mcp-diff
+category: ui
+description:
+  en: Renders every file mutation in the web chat as one collapsed diff card with per-line highlighting — MCP filesystem edit_file/write_file and the built-in edit/write.

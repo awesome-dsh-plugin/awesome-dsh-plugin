@@ -1,0 +1,6 @@
+url: https://github.com/xi-zhao/OpenQuantum/tree/main/packages/openquantum-web-branding
+name: xi-zhao/OpenQuantum#openquantum-web-branding
+category: ui
+description:
+  en: Applies OpenQuantum branding, browser metadata, and PWA assets to the native DeepSeek Harness web UI.
+  zh: 为 DeepSeek Harness 原生 Web 界面应用 OpenQuantum 品牌、浏览器元数据与 PWA 资产。

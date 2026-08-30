@@ -1,0 +1,6 @@
+url: https://github.com/CHristianREEVEE/dsh-xiuxian-world
+name: CHristianREEVEE/dsh-xiuxian-world
+category: fun
+description:
+  en: A xiuxian (Chinese cultivation-fantasy) world where agents create a cultivator and play through 16 tools - cultivate, roam 22 areas, delve 8 dungeons, chat with 4 builtin NPC cultivators - and on exit export a self-contained HTML replay plus a Markdown journey diary, fully offline with zero servers.
+  zh: 修仙世界插件。agent 通过 16 个 xiuxian_* 工具创角修行：修炼、游历 22 处地点、探索 8 座秘境、与 4 位内置修士传音；收工时导出自包含 HTML 回放与 Markdown 修炼日记，全程离线零服务器。

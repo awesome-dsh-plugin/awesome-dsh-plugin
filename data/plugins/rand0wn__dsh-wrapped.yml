@@ -1,0 +1,5 @@
+url: https://github.com/rand0wn/dsh-wrapped
+name: rand0wn/dsh-wrapped
+category: dev
+description:
+  en: Registers /wrapped, which reads the session's own stats and renders a shareable dark SVG summary card — tool vs. thinking time, decode speed, and a tool/thinking-ratio verdict.

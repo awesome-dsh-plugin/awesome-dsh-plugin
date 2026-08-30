@@ -1,0 +1,7 @@
+url: https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh
+name: KelaoHu/dsh-lowtide#dsh
+category: workflow
+tarball: https://github.com/KelaoHu/dsh-lowtide/releases/latest/download/dsh-lowtide.tgz
+description:
+  en: 'Off-peak batch runner for DeepSeek Harness: users define tasks during busy hours — prompt, strategy, priority, workspace, locked files — and release them by hand; the plugin then runs the batch automatically inside user-defined off-peak windows. Each run passes five preflight checks (workspace, git HEAD, locked-file sha256, window fit, daily budget), supports four execution strategies (single / iterative / sampling / review) and three autonomy levels (L1 per-task, L2 batch, L3 full-auto), and closes the loop with a morning report containing diffs, actual spend and savings from a daily ledger aligned with official peak/valley pricing.'
+  zh: '闲时批处理插件：用户在忙时定制任务——提示词、策略、优先级、工作区、锁定文件——人工放行后，插件在用户设定的闲时窗口内自动批量执行。每次执行前通过五项预检（工作区、git 快照、锁定文件 sha256、窗口容量、日预算），支持单次/迭代/采样/复核四种策略与 L1–L3 三档自治（逐条确认/批次确认/全自动），并以晨报闭环：diff、实花、以及基于官方峰谷价目账本算出的节省金额。'

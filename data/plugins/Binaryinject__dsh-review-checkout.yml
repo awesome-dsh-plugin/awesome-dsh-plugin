@@ -1,0 +1,6 @@
+url: https://github.com/Binaryinject/dsh-review-checkout
+name: Binaryinject/dsh-review-checkout
+category: git
+description:
+  en: 'Codex-style review of session file changes: per-turn cards, a latest-turn review tab with syntax-highlighted diffs, light/dark presets, one-click revert via a built-in tool (works on DSH Desktop too), powered by the official history channel.'
+  zh: 'Codex 风格的会话文件修改审查：每轮变更卡片、最新一轮审查标签（语法高亮 diff）、深浅双套配色，以及通过内置工具的一键撤销（DSH Desktop 同样可用），基于官方会话历史通道。'

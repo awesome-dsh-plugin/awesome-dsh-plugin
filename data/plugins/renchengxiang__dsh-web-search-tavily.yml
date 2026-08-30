@@ -1,0 +1,6 @@
+url: https://github.com/renchengxiang/dsh-web-search-tavily
+name: renchengxiang/dsh-web-search-tavily
+category: browser
+description:
+  en: Tavily-backed search provider for native web_search, with a Settings → Plugins card for API key management and toggling DeepSeek replacement.
+  zh: 为原生 web_search 提供 Tavily 搜索后端，并在设置 → 插件中提供 API Key 管理与是否替换 DeepSeek 的开关。

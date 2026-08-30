@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/ci-runner
+name: JohnXu22786/ci-runner
+category: tools
+description:
+  en: "Triggers GitHub Actions workflows and local test pipelines, streams their logs back, and on failure hands the log tail to the agent for diagnosis."
+  zh: "触发 GitHub Actions 与本地测试流水线，流式回传日志；失败时把日志尾部交给 agent 诊断。"

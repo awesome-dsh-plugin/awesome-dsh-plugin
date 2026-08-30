@@ -39,6 +39,24 @@ jobs:
             echo "::error::This PR removes $removed existing entries — the fork looks stale. Sync it with upstream main (GitHub: 'Sync fork') and re-push; a single plugin submission should be +2/-0."
             exit 1
           fi
+      - name: Every entry file ends in .yml
+        # readEntries() only reads *.yml, so a file that loses its extension is
+        # skipped in silence — and every other check still passes, because the
+        # regenerated READMEs omit the entry too and stay self-consistent. The
+        # stale-fork guard above misses it as well: renaming one entry away is
+        # -1/+1, under its "more than 2 removed" threshold.
+        #
+        # This is not hypothetical. #2495 fixed exactly this for
+        # zmm863-commits__dsh-paperclip, and days later #2140 — an unrelated
+        # submission based on a pre-#2495 main — carried the extensionless name
+        # back in and would have dropped that entry again on merge.
+        run: |
+          stray=$(find data/plugins -type f ! -name '*.yml' -print)
+          if [ -n "$stray" ]; then
+            echo "$stray" | sed 's/^/  /'
+            echo "::error::Files under data/plugins/ must end in .yml — anything else is silently skipped by readEntries() and drops the entry from the list without failing any other check."
+            exit 1
+          fi
       - name: READMEs match data/plugins
         # The READMEs are generated from data/plugins/*.yml. Editing them by
         # hand would drift from the source of truth and get silently reverted

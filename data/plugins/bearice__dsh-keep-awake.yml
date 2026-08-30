@@ -1,0 +1,6 @@
+url: https://github.com/bearice/dsh-keep-awake
+name: dsh-keep-awake
+category: ui
+description:
+  en: 'Holds the OS wake lock while any agent, subagent, or background job runs, releases it after a configurable grace period, and provides a bilingual web settings page with live status, manual hold, and display-on options.'
+  zh: '任意 agent、subagent 或后台任务运行时持有系统唤醒锁，全部结束后按可配置宽限期释放；提供中英双语 Web 设置页，实时显示活动与唤醒锁状态，支持手动保持与阻止屏幕关闭。'

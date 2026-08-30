@@ -1,0 +1,7 @@
+url: https://github.com/andyfan1094/dsh-github
+name: andyfan1094/dsh-github
+category: git
+tarball: https://github.com/andyfan1094/dsh-github/releases/download/v0.1.2/dsh-github-0.1.2.tgz
+description:
+  en: GitHub account management plus a local Git workflow for the web GUI with clone, fast-forward pull, status, commit, push, and host-side push guards.
+  zh: Web GUI 的 GitHub 账号与本地 Git 工作流插件，支持 clone、快进 pull、status、commit、push，推送默认关闭并有宿主侧开关保护。

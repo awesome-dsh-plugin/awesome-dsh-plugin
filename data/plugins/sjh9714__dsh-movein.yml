@@ -2,5 +2,5 @@ url: https://github.com/sjh9714/dsh-movein
 name: sjh9714/dsh-movein
 category: dev
 description:
-  en: Migrate and import a whole Claude Code or Codex setup into DSH. Skills, slash commands, MCP servers, hooks, subagents and permission rules, with a dry-run moving estimate, a migration diff report and a post-move doctor; installs as a plugin exposing a movein_from_claude_code tool so the agent can do the move for you.
-  zh: 一键迁移导入整套 Claude Code 或 Codex 配置到 DSH：技能、斜杠命令、MCP、hooks、子代理、权限规则，默认先出搬家清单预演，输出迁移差异报告，搬完可用 doctor 体检；作为插件提供 movein_from_claude_code 工具，直接让 agent 帮你搬。
+  en: Imports Claude Code setup into DeepSeek Harness from a native settings screen or CLI, with dry-run previews for skills, commands, agents, hooks, permission rules, and MCP config. Codex and OpenCode remain supported as secondary origins, with collision-safe apply and post-move checks.
+  zh: 通过原生设置页或 CLI 将 Claude Code 配置迁入 DeepSeek Harness，可先预览技能、命令、代理、hooks、权限规则与 MCP 配置；Codex 和 OpenCode 作为次要来源继续支持，并提供目标冲突保护和迁移后检查。
