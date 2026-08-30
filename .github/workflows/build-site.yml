@@ -29,10 +29,24 @@ permissions:
   pages: write
   id-token: write
 
-# docs/ is a pure function of main's tip, so an older run can only produce
-# stale output — supersede it rather than queueing it.
+# docs/ is a pure function of main's tip, so an older PUSH build can only
+# produce stale output — supersede it rather than queueing it.
+#
+# Two groups, not one, and the second group is the whole point. The nightly is
+# the only run that probes with PROBE_ALL and the only run that publishes the
+# catalog and update notes to npm, and a cancelled nightly does neither: the
+# cache-save post-steps are skipped along with everything after them, so a run
+# killed 47 minutes into the probe throws that work away instead of banking it.
+# A push shares nothing with that — it must not be able to cancel it.
+#
+# This was not theoretical. The 02:23 cron is routinely delayed hours into the
+# busy part of the day (2026-08-27 12:54, 2026-08-28 14:25), where the next
+# merge cancelled it mid-probe. Symptoms filed separately, one cause:
+#   #3512 — npm catalog frozen 2026-08-26 → 08-29, the two cancelled nights
+#   #3417, #3698 — detail-page READMEs stuck on their last good fetch, because
+#           readmes.json only ever advances in the cache the nightly saves
 concurrency:
-  group: build-site
+  group: build-site-${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && 'probe' || 'push' }}
   cancel-in-progress: true
 
 jobs:
@@ -163,6 +177,12 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+        # The concurrency split above means a push build and the nightly can now
+        # be in flight together, and Pages accepts one deployment at a time.
+        # Losing that race must not abort the nightly before the two publish
+        # steps below — they are the reason the run exists, and the site is
+        # about to be redeployed by whichever push won anyway.
+        continue-on-error: ${{ github.event_name == 'schedule' }}
 
       # The same plugins.json, published to npm — see
       # scripts/publish-catalog.mjs for why it has to exist in two places.
