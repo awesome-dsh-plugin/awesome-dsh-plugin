@@ -1563,6 +1563,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 - [173787247/dsh-wsl-browser](https://github.com/173787247/dsh-wsl-browser) - Opens http(s) URLs from WSL in the Windows default browser.
 - [173787247/dsh-wsl-clipboard](https://github.com/173787247/dsh-wsl-clipboard) - Reads and writes the Windows clipboard from WSL.
+- [173787247/dsh-wsl-cred](https://github.com/173787247/dsh-wsl-cred) - Safe Git Credential Manager hints for WSL without exposing secrets.
 - [173787247/dsh-wsl-env](https://github.com/173787247/dsh-wsl-env) - Injects WSL distro, Linux path mapping, /mnt/c CRLF and git caveats, and NODE_USE_ENV_PROXY into the system prompt.
 - [173787247/dsh-wsl-gpu](https://github.com/173787247/dsh-wsl-gpu) - Probes nvidia-smi and GPU visibility inside WSL.
 - [173787247/dsh-wsl-net](https://github.com/173787247/dsh-wsl-net) - Adds a net_doctor tool that reports proxy environment, NODE_USE_ENV_PROXY, and reachability of the DeepSeek API and the npm registry, and sets NODE_USE_ENV_PROXY on bash and npm child processes.
