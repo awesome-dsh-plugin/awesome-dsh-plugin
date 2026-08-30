@@ -1567,6 +1567,7 @@ dsh plugin --profile web add dshmarket
 - [173787247/dsh-wsl-distro](https://github.com/173787247/dsh-wsl-distro) — 报告当前 WSL 发行版，并提醒多发行版混用风险。
 - [173787247/dsh-wsl-env](https://github.com/173787247/dsh-wsl-env) — 向 system prompt 注入 WSL 发行版、Linux 路径映射、/mnt/c 的 CRLF 与 git 注意点，以及 NODE_USE_ENV_PROXY。
 - [173787247/dsh-wsl-gpu](https://github.com/173787247/dsh-wsl-gpu) — 探测 WSL 内的 nvidia-smi 与 GPU 可见性。
+- [173787247/dsh-wsl-launch](https://github.com/173787247/dsh-wsl-launch) — 从 WSL 白名单启动 Windows 应用（如 VS Code、资源管理器、浏览器）。
 - [173787247/dsh-wsl-net](https://github.com/173787247/dsh-wsl-net) — 提供 net_doctor 工具，报告代理环境、NODE_USE_ENV_PROXY，以及 DeepSeek API 与 npm registry 的连通性，并为 bash 和 npm 子进程设置 NODE_USE_ENV_PROXY。
 - [173787247/dsh-wsl-notify](https://github.com/173787247/dsh-wsl-notify) — 长任务结束后弹出 Windows 提示框。
 - [173787247/dsh-wsl-open](https://github.com/173787247/dsh-wsl-open) — 把 DeepSeek Harness 聊天里的 WSL Linux 路径在 Windows 默认程序或资源管理器中打开。
