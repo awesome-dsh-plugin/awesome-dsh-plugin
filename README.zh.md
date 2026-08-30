@@ -1564,6 +1564,7 @@ dsh plugin --profile web add dshmarket
 - [173787247/dsh-wsl-browser](https://github.com/173787247/dsh-wsl-browser) — 在 Windows 默认浏览器中打开来自 WSL 的 http(s) 链接。
 - [173787247/dsh-wsl-clipboard](https://github.com/173787247/dsh-wsl-clipboard) — 从 WSL 读写 Windows 剪贴板。
 - [173787247/dsh-wsl-cred](https://github.com/173787247/dsh-wsl-cred) — 提供 WSL 下 Git Credential Manager 的安全指引，不回传密钥。
+- [173787247/dsh-wsl-distro](https://github.com/173787247/dsh-wsl-distro) — 报告当前 WSL 发行版，并提醒多发行版混用风险。
 - [173787247/dsh-wsl-env](https://github.com/173787247/dsh-wsl-env) — 向 system prompt 注入 WSL 发行版、Linux 路径映射、/mnt/c 的 CRLF 与 git 注意点，以及 NODE_USE_ENV_PROXY。
 - [173787247/dsh-wsl-gpu](https://github.com/173787247/dsh-wsl-gpu) — 探测 WSL 内的 nvidia-smi 与 GPU 可见性。
 - [173787247/dsh-wsl-net](https://github.com/173787247/dsh-wsl-net) — 提供 net_doctor 工具，报告代理环境、NODE_USE_ENV_PROXY，以及 DeepSeek API 与 npm registry 的连通性，并为 bash 和 npm 子进程设置 NODE_USE_ENV_PROXY。
