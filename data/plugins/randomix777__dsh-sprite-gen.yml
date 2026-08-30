@@ -1,0 +1,6 @@
+url: https://github.com/randomix777/dsh-sprite-gen
+name: randomix777/dsh-sprite-gen
+category: tools
+description:
+  en: Sprite sheet generator with AI image generation using free providers (Gemini Flash, Stable Diffusion, Agnes AI). Auto-crops transparent edges and arranges sprites into animation grids.
+  zh: 精灵图生成器，使用免费 AI 图片生成服务（Gemini Flash、Stable Diffusion、Agnes AI）。自动裁剪透明边、网格排列，输出动画精灵图集。
