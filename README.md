@@ -1198,6 +1198,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) - Long-term memory for DSH agents — durable, inspectable memories with recall, search, browse and knowledge-graph tools, import from ten other AI coding tools, and a settings page.
 
 ### Tools & Capabilities
+- [Edge-Echo/dsh-netassist](https://github.com/Edge-Echo/dsh-netassist) - Network & proxy assistant for DeepSeek Harness: one-shot GitHub connectivity check, system proxy status, proxy port probing, full diag chain (DNS/TCP/HTTP) and hosts conflict scan.
 
 - [0xRabit/dsh-crypto-portfolio](https://github.com/0xRabit/dsh-crypto-portfolio) - Crypto portfolio tracker for DSH: BTC / EVM (DeBank free+paid) / Solana / Hyperliquid L1 / CEX balances with multi-provider API failover, per-profile configs, scheduled daily refresh and trend charts (self-contained web dashboard).
 - [1321928757/dsh-mysql](https://github.com/1321928757/dsh-mysql) - MySQL connector for DeepSeek Harness: configure multiple connections in the settings page with per-connection table allowlist and write permission, switch the active connection from the composer, and expose mysql_query / mysql_tables / mysql_execute tools to every agent preset.
