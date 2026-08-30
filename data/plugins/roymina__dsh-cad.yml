@@ -1,0 +1,6 @@
+url: https://github.com/roymina/dsh-cad
+name: roymina/dsh-cad
+category: tools
+description:
+  en: "Read-only CAD tools that inspect, extract and export DWG/DXF drawings, including SVG and PNG previews and DXF conversion."
+  zh: "只读 CAD 工具：查看、提取 DWG/DXF 图纸，导出 SVG/PNG 预览或转换 DXF。"
