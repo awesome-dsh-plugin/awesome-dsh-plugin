@@ -1,0 +1,6 @@
+url: https://github.com/kiligzzz/dsh-skill-mcp-manager
+name: kiligzzz/dsh-skill-mcp-manager
+category: dev
+description:
+  en: 'DSH Skill MCP Manager: manage MCP servers (~/.dsh/mcp.json, live mount/unmount) and Skills (~/.dsh/skills, toggle/delete/import/folder-sync) from a Settings-page UI, plus a per-session capability-directory prompt section. Dual-face dsh plugin (host + browser half), no DSH source changes.'
+  zh: DSH Skill MCP Manager 能力管理器：在设置页内统一管理 MCP server（~/.dsh/mcp.json，实时挂载/卸载）与 Skill（~/.dsh/skills，开关/删除/导入/文件夹同步），并注入每会话的能力目录提示段。官方双面插件（host + 浏览器端），不改 DSH 源码。
