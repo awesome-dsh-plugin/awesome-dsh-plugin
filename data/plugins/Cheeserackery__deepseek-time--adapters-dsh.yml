@@ -1,0 +1,6 @@
+url: https://github.com/Cheeserackery/deepseek-time/tree/master/adapters/dsh
+name: Cheeserackery/deepseek-time#dsh
+category: usage
+description:
+  en: Peak and off-peak pricing-period indicator for the DeepSeek API in the DSH chat UI, with a countdown to the next period and an API balance readout on hover.
+  zh: 在 DSH 会话界面显示 DeepSeek 当前高峰/空闲收费时段图标与下一时段倒计时，悬停图标可查询 API 余额。

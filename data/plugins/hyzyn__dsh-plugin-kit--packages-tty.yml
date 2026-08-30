@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/tty
+name: hyzyn/dsh-plugin-kit#tty
+category: ui
+description:
+  en: 'Terminal panel for the DSH Web GUI: a sidebar "Terminal" entry opens a multi-tab xterm.js interactive terminal over a real PTY (node-pty), with SSH remote tabs (ssh2, agent / key / password auth), a cwd following the current session, and tty_list / tty_capture / tty_send agent tools.'
+  zh: 'DSH Web GUI 的终端面板：侧边栏「终端」打开多标签页 xterm.js 全交互终端（node-pty 真实 PTY），支持 ssh2 原生 SSH 远程标签页（agent/key/password 三种认证），cwd 跟随当前会话，并提供 tty_list / tty_capture / tty_send 三个 agent 工具。'

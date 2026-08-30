@@ -109,6 +109,11 @@ jobs:
           # npm can never be stuck on a stale "not published" (see #487).
           # Push-triggered runs stay incremental.
           PROBE_ALL: ${{ (github.event_name == 'schedule' || inputs.probe_all) && '1' || '' }}
+          # Unset until the AdSense review clears this domain; while unset the
+          # build emits no ad markup and no third-party script, so the site is
+          # byte-identical to an ad-free one. A variable rather than a secret:
+          # the publisher id ships in the HTML either way.
+          ADSENSE_CLIENT: ${{ vars.ADSENSE_CLIENT }}
         run: |
           # Probing is for the nightly run and manual dispatch only. A push
           # build deploys what is already committed or cached; it does not go
