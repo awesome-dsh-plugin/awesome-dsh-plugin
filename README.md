@@ -2563,6 +2563,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Remote & Mobile
 
+- [452926826/dsh-feishu-bot](https://github.com/452926826/dsh-feishu-bot) - Connect Feishu chats to DeepSeek Harness projects, conversations, replies, and scoped tool approvals over WebSocket.
 - [452926826/dsh-ssh-logs](https://github.com/452926826/dsh-ssh-logs) - Read and search bounded log output from allowlisted SSH servers and log roots without exposing arbitrary remote commands.
 - [534119219/chicheng-gate](https://github.com/534119219/chicheng-gate) - LAN / remote-access control, frpc NAT tunneling, a panel password gate, and mobile UI adaptation for the DSH Web GUI.
 - [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) - LAN/remote access for the Web UI: injects a crypto.randomUUID polyfill on plain-HTTP origins so the frontend survives LAN or Tailscale IP direct links.
