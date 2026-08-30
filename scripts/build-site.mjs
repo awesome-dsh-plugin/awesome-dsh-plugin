@@ -37,6 +37,10 @@ const NPM_MAP_FILE = 'data/npm-map.json'
 // strip the field from every entry whenever the probe is skipped.
 const TARBALLS_FILE = 'data/tarballs.json'
 const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSync(TARBALLS_FILE, 'utf8')) : {}
+// url -> data/plugins/<slug>.yml. The rest of this file works from entries
+// parsed out of the READMEs, which carry no file path; the added-date
+// derivation below needs one to ask git when an entry first appeared.
+const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -215,11 +219,37 @@ if (ordered.some((e) => !dates[e.url])) {
       if (m && !dates[m[1]]) dates[m[1]] = cur
     }
   }
-  const undated = ordered.filter((e) => !dates[e.url])
-  if (undated.length) {
-    // reachable only from a shallow clone or an unstamped uncommitted entry —
+  // Second source: the entry's own file under data/plugins/. The README line
+  // used to be the only ledger because the README was the only thing a
+  // submission touched. Since sync-readme.yml took over generation, a PR
+  // carries just the yml and the README line is written by a bot commit
+  // seconds after the merge — so during pr-check the line has no history at
+  // all, and after the merge its history is the bot's, not the author's.
+  //
+  // The yml is the better ledger anyway: one file per entry, added exactly
+  // once, never rewritten by a neighbour's regeneration. README history stays
+  // FIRST so that every date published before this change keeps the value it
+  // already had; this only fills in what that pass could not.
+  let stillUndated = ordered.filter((e) => !dates[e.url])
+  if (stillUndated.length) {
+    for (const e of stillUndated) {
+      const file = entryFiles[e.url]
+      if (!file) continue
+      try {
+        // Oldest "added" commit for that path. Not `-1`, which git applies
+        // before --reverse and would hand back the newest instead.
+        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        const iso = out[out.length - 1]
+        if (iso) dates[e.url] = new Date(iso).toISOString()
+      } catch { /* not committed yet — falls through to the error below */ }
+    }
+    stillUndated = ordered.filter((e) => !dates[e.url])
+  }
+  if (stillUndated.length) {
+    // reachable only from a shallow clone or a genuinely uncommitted entry —
     // stamping "now" here would make the output flap between runs
-    console.error(`no added-date derivable for: ${undated.map((e) => e.url).join(', ')}`)
+    console.error(`no added-date derivable for: ${stillUndated.map((e) => e.url).join(', ')}`)
     console.error('need full git history (fetch-depth: 0) and committed entries — refusing to build')
     process.exit(1)
   }
