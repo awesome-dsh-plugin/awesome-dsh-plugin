@@ -1505,6 +1505,7 @@ dsh plugin --profile web add dshmarket
 - [xmutfyh/dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) — 论文写作守卫（中英双语）：去掉 AI 式防御性写作，润色时守住科学证据（数字/引用/主张强度/零结果/scope），并按目标期刊校准写作风格（Journal Profile + Journal Fit）。纯本地正则/统计，零网络零 LLM；提供 writing_rules / writing_audit / writing_style_profile / writing_journal_profile，论文写入后自动审计。
 - [xxiaoxiong/dsh-issue-tracker](https://github.com/xxiaoxiong/dsh-issue-tracker) — Jira Cloud 工单集成，提供 8 个模型工具用于工单查询、项目与流转查询、创建、更新、评论和状态流转；写操作默认关闭并支持 dry-run。
 - [xxiaoxiong/dsh-kubernetes](https://github.com/xxiaoxiong/dsh-kubernetes) — 面向 DeepSeek Harness 的安全 Kubernetes 能力，支持工作负载检查、有限日志与事件获取、故障诊断以及带审批控制的集群操作。
+- [YangRuiYangDan/dsh-media-card](https://github.com/YangRuiYangDan/dsh-media-card) - 在 DSH 对话卡片内显示本地图片、短视频,并可下载任意本地文件;本机与远程连接均可用,不消耗模型 token。
 - [yangyunsong023/dsh-sxs-news-collector](https://github.com/yangyunsong023/dsh-sxs-news-collector) — 时事热点采集：一次调用聚合百度热搜 / 头条热榜 / 抖音热点 / 微博热搜（微博可选 cookie），返回标题+热度值，供内容创作借势——工具：`sxs_news_hot`。
 - [yaways/dsh-subagent-claude-code-wrapper](https://github.com/yaways/dsh-subagent-claude-code-wrapper) — 子代理委派提供方：通过可配置的 executablePath 字段，运行任意 Claude 兼容 CLI 二进制。
 - [Yu-tao-Li/dsh-computer-use-win](https://github.com/Yu-tao-Li/dsh-computer-use-win) — 为 DeepSeek Harness 提供 Windows 电脑操控：MCP stdio 服务器 + PowerShell UIA 后端，22 个桌面工具（UIA 树、截图、键鼠输入、OCR、窗口管理、急停保护）。
