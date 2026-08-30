@@ -54,6 +54,25 @@ const CAT_IDS = ENTRY_CAT_IDS
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
+// ── advertising ─────────────────────────────────────────────────────────────
+// One AdSense head tag, gated behind a build variable. Unset — the default —
+// emits nothing at all, so an unconfigured build is byte-identical to an
+// ad-free one and no third-party script is requested.
+//
+// Auto ads decide placement from this tag alone, so there is no slot markup to
+// write and no reserved height to get wrong. The publisher id is a `vars`
+// entry rather than a secret because it ships in the HTML either way.
+const ADSENSE_CLIENT = process.env.ADSENSE_CLIENT || ''
+const adHead = () =>
+  ADSENSE_CLIENT
+    ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT)}" crossorigin="anonymous"></script>\n`
+    : ''
+// The token sits on its own line in every template, so the match takes the
+// newline with it. Otherwise an unconfigured build leaves a blank line behind
+// and "identical to an ad-free build" stops being literally true — which is
+// the one claim about this feature worth being able to check by diffing.
+const AD_HEAD_TOKEN = '__AD_HEAD__\n'
+
 // Comments are deliberately opt-in. A half-configured widget would otherwise
 // turn every detail page into a broken third-party request, so fail loudly only
 // when a maintainer says it is ready to ship.
@@ -465,6 +484,7 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
@@ -508,6 +528,7 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
@@ -763,6 +784,7 @@ ${readmeHtml}
       .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
+      .replaceAll(AD_HEAD_TOKEN, () => adHead())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
       .replaceAll('__P_SHORT__', () => esc(short))
       .replaceAll('__P_H1__', () => h1)
