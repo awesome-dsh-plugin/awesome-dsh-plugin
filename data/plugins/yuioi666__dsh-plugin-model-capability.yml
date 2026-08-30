@@ -3,4 +3,3 @@ name: yuioi666/dsh-plugin-model-capability
 category: model
 description:
   en: 'Model Capability Manager for DSH Web: thinking levels, context window, output caps, input modalities, gateway compat presets, EN/中文 UI.'
-  zh:
