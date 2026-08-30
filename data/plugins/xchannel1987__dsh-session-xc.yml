@@ -1,0 +1,6 @@
+url: https://github.com/xchannel1987/dsh-session-xc
+name: xchannel1987/dsh-session-xc
+category: session
+description:
+  en: "Session management enhancement plugin for DeepSeek Harness - workspace session count display, archived sessions panel with restore/delete, drag-and-drop session move across workspaces."
+  zh: "DSH 会话管理增强插件 - 工作区会话数展示、归档会话面板（支持恢复/删除）、拖拽移动会话到其他工作区。"
