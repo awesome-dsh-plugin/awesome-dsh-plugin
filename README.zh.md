@@ -517,7 +517,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🔌 模型与账号接入
 
-- [ai-yukin/dsh-0-tools](https://github.com/ai-yukin/dsh-0-tools) — DSH Web 小白零门槛零费用套件：一键接入智谱双免费模型（文本+图片），也可一键接入 OpenRouter 匿名 stealth/ox-alpha 预览模型并自动设为会话默认模型；仅在智谱与 OpenRouter 均未接入时于左下角显示一键配置提示，接入任一即自动隐藏；含 DeepSeek 计价时段提醒、内置在线帮助中心。
+- [ai-yukin/dsh-0-tools](https://github.com/ai-yukin/dsh-0-tools) — DSH Web 小白零门槛零费用套件：一键接入智谱双免费模型（文本+图片）及 OpenRouter 免费模型池（一个 Key 通吃约 27 款动态更新的免费模型，自动挑选、下架自动绕开）；接入任一免费模型后左下角配置提示自动隐藏；含 DeepSeek 计价时段提醒、内置新手帮助中心。
 - [amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — 将 Google Antigravity (agy CLI) 接入 DSH：无 API Key 使用 Gemini/Claude/GPT-OSS 订阅模型，支持流式对话、原生工具卡片、思考轮次注记及 Web 界面 Google OAuth 扫码登录。
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) — 双档模型路由：强档负责规划/咨询/评审、弱档负责实现；含计划模式自动路由、高危操作守卫、失败自动升级与子代理分层。
 - [btspoony/dsh-llm-fallbacks](https://github.com/btspoony/dsh-llm-fallbacks) — 基于角色的模型重试与备用策略。
