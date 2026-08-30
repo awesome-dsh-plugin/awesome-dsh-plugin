@@ -1522,7 +1522,6 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-bili-summary](https://github.com/YZz-S/dsh-bili-summary) — 提供 bili_summary 工具：B 站视频元数据、字幕时间轴与 sharp 切帧配图，内置错误处理与优雅降级。
 - [zhang787jun/dsh-finance](https://github.com/zhang787jun/dsh-finance) — 金融研究工作流与组合风控工具，对当前市场事实强制来源与时间戳边界。
 - [zhangjunjesse/dsh-claude-code](https://github.com/zhangjunjesse/dsh-claude-code) — 把自包含的编码任务委派给本机 Claude Code 订阅执行（走官方 Claude Agent SDK），并在会话里新增一个标签页，实时显示输出、费用与剩余额度。
-- [zhangyoufu-123/stylotrace#dsh-plugin-stylotrace](https://github.com/zhangyoufu-123/stylotrace/tree/main/extras/dsh-plugin-stylotrace) — 面向 DSH 的深度协作写作 Agent：从用户的编辑对学习个人写作风格，完整 澄清→大纲→逐节写作→红队审计→读者群像 流程，项目自动提炼成实验报告/产品介绍/综述/README，41 个 MCP 工具，Web 端选中改进与文件内嵌预览。
 - [zhaoolee/notes#dsh-plugin](https://github.com/zhaoolee/notes/tree/main/dsh-plugin) — 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
 - [zhengjy01/weread-export](https://github.com/zhengjy01/weread-export) — 微信读书多目标导出：通过官方 Skills API Key 查看书架、导出划线/想法到 flomo、本地 Markdown 或 Notion，可选按自定义 LLM prompt 整理后再导出。
 - [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) — 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。
@@ -2776,7 +2775,6 @@ dsh plugin --profile web add dshmarket
 - [says693/dsh-log-memory](https://github.com/says693/dsh-log-memory) — 会话日志守护弹窗：打开 Web 即提醒（间隔 10 分钟至 3 小时可调），一键增量备份 ~/.dsh/sessions 全部 session.jsonl(.zstd)，可选原始压缩或可读聊天记录两种格式，弹窗内可选备份文件夹。
 - [shinjiyu/holdem#dsh-plugin](https://github.com/shinjiyu/holdem/tree/main/dsh-plugin) — 连接 kuroneko.chat 德州扑克桌的 Host 工具：座位令牌、人控/托管切换、合法动作查询与行动循环（同一 GitHub 帐号一席）。
 - [Signalight/codex-to-dsh-pet#dsh-codex-pet](https://github.com/Signalight/codex-to-dsh-pet/tree/main/packages/dsh-codex-pet) — DSH 网页 GUI 实时桌宠：可把任何 Codex 桌宠图集（webp/png/gif，v1/v2 自动识别）转换为 DSH 中可拖拽的悬浮桌宠。支持拖拽/挥手/跳跃，v2 桌宠的眼睛实时追踪活动鼠标，随 agent 状态切换姿势；进度气泡反映工作状态；「设置 → 桌宠」图形界面可导入、切换与调整桌宠；内置一只原创示例桌宠（娜斯佳），用户桌宠存放在 ~/.dsh/pets。
-- [sjh9714/clippy-harness#plugin](https://github.com/sjh9714/clippy-harness/tree/master/plugin) — 回形针助手回来了，这次它真的会干活：会对真实 agent 状态做出反应的办公助手宠物，任务完成时跳起来庆祝，回合失败时弹出经典的 "illegal operation" 对话框。
 - [skiuniverse/dsh-running-liang](https://github.com/skiuniverse/dsh-running-liang) — 等待 Agent 回复时的恐龙快跑小游戏：常驻进度条从「梁子」冲向「梁圣」，折叠即暂停、任意键恢复。
 - [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) — 导入/上传 Codex 风格精灵图序列帧宠物，在 DSH Web GUI 以悬浮浮层渲染，含图库管理、交互与 Agent 状态联动。
 - [skymecode/dsh-bgm](https://github.com/skymecode/dsh-bgm) — 将本地分析的系统音频映射为 DSH Web 的对话律动、音游判定、分数与连击反馈，以及可选的 RGB 频谱柱。
