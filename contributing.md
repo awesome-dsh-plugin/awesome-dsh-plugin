@@ -41,7 +41,7 @@ description:
 **Why one file per plugin / 为什么一个插件一个文件：** everyone used to append to the same spot in the same README section, so merging one PR broke the next. Separate files never collide. / 以前所有人都往同一分类的同一位置追加，合并一个 PR 就会撞掉下一个。独立文件永不冲突。
 
 Valid `category` values / 可用的 `category` 取值：
-`agi` `ui` `usage` `theme` `model` `identity` `session` `memory` `tools` `browser` `vision` `voice` `docs` `skill` `workflow` `git` `notify` `dev` `security` `remote` `market` `fun`
+`agi` `ui` `usage` `theme` `model` `identity` `session` `memory` `tools` `wsl` `browser` `vision` `voice` `docs` `skill` `workflow` `git` `notify` `dev` `security` `remote` `market` `fun`
 
 This set is not fixed — see the note on categories under [how submissions are reviewed](#how-submissions-are-reviewed--收录如何评审). / 这组取值不是固定的，说明见[收录如何评审](#how-submissions-are-reviewed--收录如何评审)中关于分类的那条。
 
@@ -96,6 +96,10 @@ What that review looks at / 评审会看：
 5. **Anything alarming in the source** — obfuscated code, credential exfiltration, surprising install-time behaviour. Being listed is still **not** a security review (see the warning at the top of the README); this is a sanity check, not an audit. / 源码中是否有可疑之处——混淆代码、凭据外传、异常的安装期行为。收录仍**不等于**做过安全审查（见 README 顶部警告），这只是常识性检查，不是审计。
 6. **Does the PR touch entries it has no business touching.** A PR updating one plugin should not rewrite another's description. This slipped through twice ([#1348](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/issues/1348)) because every mechanical check passed — the YAML was valid, the READMEs regenerated, lint was clean. The gate now lists every existing entry a PR modifies so it can be questioned. / PR 是否动了与它无关的条目。更新某个插件的 PR 不该改写另一个插件的描述。这类问题曾两次蒙混过关（[#1348](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/issues/1348)）——因为所有机械检查都通过了：YAML 合法、README 能生成、lint 干净。现在 gate 会列出 PR 修改的每一个既有条目，以便被追问。
 
+7. **Is it a meta-package.** A bundle whose only content is a dependency list — it installs a set of other plugins and ships no behaviour of its own — is not listed as an entry. **List the plugins, not the bundle.** The bundle can keep existing and users can keep installing it; it just does not get a row of its own, because a row that only points at other rows tells a reader nothing they could not already see, and it double-counts the same work in every category it touches. `hyzyn/dsh-plugin-kit` and `wingsky-1/dsh-plugin-hub` are the shape to copy: both ship an all-in-one package, both list only the individual plugins. A bundle that does something itself — composes configuration, adds a settings surface, coordinates the parts at runtime — is a plugin and is judged like any other. / **是不是纯聚合包。** 内容只有一份依赖清单的聚合包——装上一组别的插件、自己不带任何行为——**不单独收录**。**收插件，不收聚合包。** 聚合包本身可以继续存在、用户也可以继续装，只是不占一行:一行只指向别的行,对读者没有增量信息,还会让同一份工作在它涉及的每个分类里被重复计数。`hyzyn/dsh-plugin-kit` 与 `wingsky-1/dsh-plugin-hub` 是可以照抄的形态:两者都发了 all-in-one 包,也都只收录了单个插件。如果聚合包自己做事——合成配置、提供设置界面、在运行时协调各部分——那它就是个插件,按普通标准审。
+
+8. **Do its dependencies point at the original.** A bundle's dependencies must resolve to the original author's repository or their published npm package. Re-uploading other people's plugins under your own account and depending on those copies is not listed — the copies carry no fork relationship, no attribution, and no upstream, so a user installing your bundle gets a silent snapshot of someone else's work with the author's name kept only in the package name. This is not a judgement about who wrote what; depending on the upstream directly fixes it. / **依赖是否指向原作者。** 聚合包的依赖必须解析到原作者的仓库或其发布的 npm 包。把别人的插件重新上传到自己账号下、再依赖这些副本的,不予收录——副本没有 fork 关系、没有署名、也没有上游,用户装到的是别人作品的一份静默快照,而原作者只在包名里留了个名字。这不是在裁定谁写了什么;把依赖直接指向上游即可解决。
+
 If you're updating your own entry, **change only your own entry**. Editing the READMEs by hand is the usual way this goes wrong: line positions shift as the list grows, and an edit lands on a neighbour. That's why the READMEs are generated — edit your `data/plugins/<owner>__<repo>.yml` and regenerate. / 如果你在更新自己的条目，**请只改自己那一条**。手工编辑 README 是这类事故的常见起因：列表增长会让行号移位，改动就落到了邻居身上。这正是 README 改为生成的原因——请编辑你自己的 `data/plugins/<owner>__<repo>.yml` 再重新生成。
 
 Feedback comes as a PR comment naming exactly what to change. Being sent back for an inaccurate description isn't a rejection of the plugin — fix the line and it goes in. / 反馈会以 PR 评论给出，明确指出要改什么。因描述不准确被打回不是对插件本身的否定——改好那一行即可收录。
@@ -114,6 +118,13 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
   ```
 
   Must be an `https` `.tgz` on GitHub's own release hosting — the list won't hand users a download link it can't vouch for. / 必须是 GitHub Release 托管的 `https` `.tgz`——列表不会给用户一个无法担保来源的下载链接。
+
+  ⚠️ **`latest/download/` resolves `latest` at request time but takes the filename literally.** If the asset name carries the version, the URL works the day you submit it and 404s the moment you cut your next release — a quiet rot nobody notices, least of all you. Either keep the asset name version-free (as above), or pin the release tag, where a versioned filename is the normal convention. / **`latest/download/` 只在请求时解析 `latest`，文件名是照字面取的。** 如果资产名里带版本号，这个链接提交当天有效，你下一次发版就会 404——而且不会有人察觉,包括你自己。要么让资产名不带版本(如上),要么改成钉住 release tag 的形式,那里带版本的文件名反而是正常写法：
+
+  ```yaml
+  # pinned to a tag — never rots, version in the filename is fine here
+  tarball: https://github.com/owner/repo/releases/download/v1.2.0/your-plugin-1.2.0.tgz
+  ```
 - Declare official `@deepseek-ai/*` packages as `peerDependencies`, not `dependencies`. / 官方 `@deepseek-ai/*` 包请用 `peerDependencies` 声明。
 
   ⚠️ **A peer range without an explicit prerelease branch silently excludes every prerelease build of the harness.** node-semver only lets a version's prerelease tag satisfy a range if *some* comparator in that range shares its exact `major.minor.patch` tuple and itself carries a prerelease tag. A broad-looking range like `>=0.0.1-rc.1 <0.2.0` — or even the "match everything" `>=0.0.0-0 <0.2.0-0` — does **not** match `0.1.0-rc.6`: neither has a comparator on the `0.1.0` tuple with a prerelease tag, so it's silently excluded and your users hit an `ERESOLVE` they have to work around by hand. Use an explicit `||` branch that puts a prerelease tag on the matching tuple instead / **不带显式预发布分支的 peer 范围会静默排除 harness 的所有预发布构建。** node-semver 只有当范围里*某个*比较符与该版本的 `major.minor.patch` 元组完全一致、且自身也带预发布标签时，才会放行预发布版本。看起来很宽的范围，比如 `>=0.0.1-rc.1 <0.2.0`，甚至「匹配一切」的 `>=0.0.0-0 <0.2.0-0`，都**匹配不到** `0.1.0-rc.6`——两者在 `0.1.0` 这个元组上都没有带预发布标签的比较符，于是被静默排除，用户 `npm install` 时会遇到 `ERESOLVE`，还得自己手工解决。请改用显式的 `||` 分支，在匹配的元组上带上预发布标签：
