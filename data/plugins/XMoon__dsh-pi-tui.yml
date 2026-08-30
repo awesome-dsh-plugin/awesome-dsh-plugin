@@ -1,0 +1,6 @@
+url: https://github.com/XMoon/dsh-pi-tui
+name: XMoon/dsh-pi-tui
+category: ui
+description:
+  en: 'Third-party TUI mode for DeepSeek Harness (dsh --profile pi-tui), built on a vendored pi-tui fork: covers the main session loop plus approvals, commands, session switching and full-text search, as well as presets, skills, model/settings menus and slash commands.'
+  zh: 'DeepSeek Harness 的第三方 TUI 模式（dsh --profile pi-tui），基于内置 pi-tui fork 构建：覆盖主会话循环（审批、命令、会话切换与全文搜索），以及预设、技能、模型/设置菜单与斜杠命令。'

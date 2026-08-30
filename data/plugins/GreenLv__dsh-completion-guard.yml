@@ -1,0 +1,6 @@
+url: https://github.com/GreenLv/dsh-completion-guard
+name: GreenLv/dsh-completion-guard
+category: security
+description:
+  en: 'Task-contract and completion-certification layer: eight lifecycle hooks keep an immutable requirement ledger, restore the bounded contract after /compact or resume, and block unsupported completion claims with fail-closed evidence binding.'
+  zh: '任务合同与完成认证层:八个生命周期 hook 维护不可变需求账本,/compact 或会话恢复后重建有界合同,完成声明必须通过 checkpoint 绑定匹配证据,否则 fail-closed 阻止 Goal 与整任务完成。'

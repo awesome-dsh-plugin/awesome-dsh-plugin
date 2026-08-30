@@ -1,0 +1,6 @@
+url: https://github.com/Thedeergod666/dsh-musage
+name: Thedeergod666/dsh-musage
+category: usage
+description:
+  en: Shows coding-plan usage and balance for 5 AI providers (MiniMax, DeepSeek, Kimi, OpenRouter, Zhipu) beside the composer input, switching with the selected model and reusing API keys configured in DSH model settings.
+  zh: 在 composer 输入框旁显示 5 家 AI 套餐用量与余额（MiniMax、DeepSeek、Kimi、OpenRouter、智谱），跟随当前模型自动切换，复用 DSH 模型设置里已配的 API Key。

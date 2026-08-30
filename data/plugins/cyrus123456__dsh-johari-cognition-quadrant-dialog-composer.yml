@@ -1,0 +1,7 @@
+url: https://github.com/cyrus123456/dsh-johari-cognition-quadrant-dialog-composer
+name: cyrus123456/dsh-johari-cognition-quadrant-dialog-composer
+category: ui
+description:
+  en: 'Johari cognition-quadrant dialog prompt composer — adds a button above the composer that opens a 2×2 quadrant panel (known/unknown × AI-known/AI-unknown) to groom conversation context into a structured prompt written back into the draft.'
+  zh: '乔哈里认知四象限对话梳理工具——在输入框上方添加按钮，弹出 2×2 象限面板（我知道/不知道 × AI知道/不知道），将对话上下文梳理为结构化 Prompt 并写回输入框。'
+

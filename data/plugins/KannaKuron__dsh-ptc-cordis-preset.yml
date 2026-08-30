@@ -1,0 +1,6 @@
+url: https://github.com/KannaKuron/dsh-ptc-cordis-preset
+name: KannaKuron/dsh-ptc-cordis-preset
+category: tools
+description:
+  en: "Agent preset for DeepSeek Harness that layers the self-referential Cordis toolset (dynamic plugins, runtime inspection) and preset-authoring skills onto the PTC Code-Mode preset; materialized files carry per-file sha256 markers, so user-edited presets are never overwritten on upgrade or uninstall."
+  zh: "为 DeepSeek Harness 提供的 Agent 预设：在 PTC 编码模式之上叠加自引用 Cordis 工具集（动态插件、运行时检视）与预设编写技能；物化文件带逐文件 sha256 标记，用户改过的预设升级与卸载时都不会被覆盖。"

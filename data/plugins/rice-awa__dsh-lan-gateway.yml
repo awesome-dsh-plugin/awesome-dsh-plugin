@@ -1,0 +1,6 @@
+url: https://github.com/rice-awa/dsh-lan-gateway
+name: rice-awa/dsh-lan-gateway
+category: remote
+description:
+  en: "LAN/internet reverse-proxy gateway for the DeepSeek Harness web GUI: keeps dsh on loopback, exposes 0.0.0.0 with login + HMAC cookie for non-LAN sources (LAN and loopback are proxied without a password by default), optional self-signed or custom TLS, and a Settings card. Includes an insecure-origin UUID shim so workspaces open over plain-HTTP LAN addresses."
+  zh: "DeepSeek Harness Web GUI 的局域网/公网反向代理网关：dsh 仍绑定回环，本插件在 0.0.0.0 提供登录+HMAC Cookie（仅对非局域网来源生效，局域网与回环来源默认免密直连）、可选自签名或自定义 TLS 与官方设置页卡片。自带不安全源 UUID shim，让局域网纯 HTTP 地址也能正常打开工作区。"

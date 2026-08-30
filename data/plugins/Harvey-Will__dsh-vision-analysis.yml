@@ -1,0 +1,6 @@
+url: https://github.com/Harvey-Will/dsh-vision-analysis
+name: Harvey-Will/dsh-vision-analysis
+category: vision
+description:
+  en: 'Vision for DeepSeek Harness: an `analyze_image` tool with 8 modes (describe, OCR, chart data, UI review, object detection, compare, code-gen, debug) plus a built-in free anonymous vision source, an image bridge for text-only models, automatic rate-limit failover across models, and structured JSON output, over any OpenAI- or Anthropic-compatible endpoint.'
+  zh: 'DeepSeek Harness 视觉插件：`analyze_image` 工具提供 8 种模式（描述、OCR、图表取数、UI 评审、目标检测、对比、代码生成、诊断），内置免费匿名视觉源、纯文本模型图片桥接、多模型限流自动切换与结构化 JSON 输出，兼容任意 OpenAI 或 Anthropic 兼容的视觉端点。'

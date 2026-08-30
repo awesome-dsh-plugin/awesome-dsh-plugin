@@ -1,6 +1,7 @@
 url: https://github.com/DeepTrial/dsh-bash-rtk
 name: DeepTrial/dsh-bash-rtk
 category: tools
+tarball: https://github.com/DeepTrial/dsh-bash-rtk/releases/latest/download/dsh-bash-rtk-latest.tgz
 description:
   en: Route eligible shell commands through rtk to compress tool output and save tokens.
   zh: 将符合条件的 shell 命令路由给 rtk，压缩工具输出并节省 token。

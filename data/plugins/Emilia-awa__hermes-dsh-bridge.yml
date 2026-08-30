@@ -1,0 +1,6 @@
+url: https://github.com/Emilia-awa/hermes-dsh-bridge
+name: Emilia-awa/hermes-dsh-bridge
+category: tools
+description:
+  en: 'Embedded MCP server letting external agents (Hermes, Claude Code, etc.) drive DeepSeek Harness over StreamableHTTP: sync/async task execution, a three-tier file sandbox, a Web-backed approval bridge, session management and search, and path-jailed file tools.'
+  zh: 内嵌 MCP server，让外部 Agent（Hermes、Claude Code 等）通过 StreamableHTTP 驱动 DeepSeek Harness：同步/异步任务执行、三档文件沙箱、Web 审批桥、会话管理与搜索、路径隔离的文件工具。

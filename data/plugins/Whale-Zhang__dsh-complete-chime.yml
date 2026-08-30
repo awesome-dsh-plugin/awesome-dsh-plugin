@@ -1,0 +1,6 @@
+url: https://github.com/Whale-Zhang/dsh-complete-chime
+name: Whale-Zhang/dsh-complete-chime
+category: notify
+description:
+  en: Plays a short chime when a conversation turn finishes, with three built-in tones or one custom upload, configured in Settings → Plugins.
+  zh: 会话回合结束时播放短提示音，内置三种音色或一条自定义上传，在设置 → 插件中配置。

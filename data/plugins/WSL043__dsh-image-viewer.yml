@@ -1,0 +1,6 @@
+url: https://github.com/WSL043/dsh-image-viewer
+name: WSL043/dsh-image-viewer
+category: vision
+description:
+  en: Upgrades DSH image viewing with pointer-centered zoom, pan, galleries, downloads, keyboard support, and inline region notes (Beta).
+  zh: 增强 DSH 原生图片查看体验，支持指针中心缩放、拖动、画廊、下载、键盘操作和图片区域备注（Beta）。
