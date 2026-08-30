@@ -1333,6 +1333,7 @@ dsh plugin --profile web add dshmarket
 - [Rianico/dsh-better-edit](https://github.com/Rianico/dsh-better-edit) — 基于哈希锚定的 read / edit / batch_edit / undo_last_edit 工具：每行分配唯一的 3 字符内容哈希，编辑按哈希而非行号定位；对已提供状态逐行校验，过期范围会被拒绝并回传新锚点。
 - [Roarpeng/GraphFlow](https://github.com/Roarpeng/GraphFlow) — 面向编程 Agent 的本地代码知识图谱：提供 10 个 MCP 工具，覆盖分层上下文压缩、DAG 规划、增量 AST 建图、跨会话技能飞轮、诊断与图谱产物导入导出。
 - [Roykf/dsh-tool-weather](https://github.com/Roykf/dsh-tool-weather) — 面向模型的天气工具，基于公开 Open-Meteo API 查询当前天气与 7 天预报，无需 API Key。
+- [RyanShen3/dsh-toutiao-reader](https://github.com/RyanShen3/dsh-toutiao-reader) — 读网页/头条文章全文的 webfetch 工具：三级策略（直连 → Edge 常驻无头浏览器 CDP → dump-dom 兜底），自动识别头条反爬质询页，附 toutiao-reader 实战经验技能。
 - [sakikoTGW/pack-agent](https://github.com/sakikoTGW/pack-agent) — 把 .pack.json/.pack.zip 投影到 .agent-pack/modpacks/，按工作区白名单暴露 skill。
 - [Samge0/dsh-plugin-nexterm](https://github.com/Samge0/dsh-plugin-nexterm) — 在 DSH 会话中运维 Nexterm 托管的 SSH 机群：6 个 agent 工具（密码/TOTP/设备授权码登录认证、机群清单、单机执行、批量并行执行、预设健康检查、CPU/内存/磁盘监控），全走 Nexterm REST API，附极简设置页；DSH 机器上无需任何 SSH 私钥。
 - [Samge0/dsh-plugin-qcc](https://github.com/Samge0/dsh-plugin-qcc) — 企查查企业数据源动态 Cordis 插件：5 个 agent 工具（扫码登录认证、企业快搜、知识库检索、工具发现、取数执行），覆盖工商/股东/司法/知识产权等 100+ 数据维度，附设置页账号管理；网络与文件 IO 经 DSH subprocess 拉起 node -e 完成，凭证与本地 BizOwl 客户端互通。
@@ -1433,7 +1434,6 @@ dsh plugin --profile web add dshmarket
 - [zoahdev/dsh-artifacts](https://github.com/zoahdev/dsh-artifacts) — 把 Markdown + JSON 渲染成自包含 HTML 文档/卡片/仪表盘/画廊（CLI + 内置 artifact_render 工具）。
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) — DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) — DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。
-- [RyanShen3/dsh-toutiao-reader](https://github.com/RyanShen3/dsh-toutiao-reader) — 读网页/头条文章全文的 webfetch 工具：三级策略（直连 → Edge 常驻无头浏览器 CDP → dump-dom），自动识别头条反爬质询页，附 toutiao-reader 实战经验技能。
 
 ### 🌐 浏览器与网页
 
