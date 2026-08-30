@@ -1,0 +1,5 @@
+url: https://github.com/ankesu/dsh-live2d-pet
+name: ankesu/dsh-live2d-pet
+category: ui
+description:
+  en: 'Live2D companion for DSH: a floating Cubism model with state-driven expressions and mouse tracking; config-driven geometry (size/position from the plugin config); official Haru sample bundled (© Live2D Inc.).'
