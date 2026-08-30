@@ -1,0 +1,6 @@
+url: https://github.com/Zhucy123/source-code-mgmt
+name: Zhucy123/source-code-mgmt
+category: git
+description:
+  en: 'Source code management panel for the DSH web UI: git/gh env checks, SSH ed25519 key setup, GitHub/Gitee dual-platform push and repo creation, connectivity tests, and auto-ignore of >100MB files with per-file reasons.'
+  zh: 'DSH 网页界面的代码管理面板：git/gh 环境检查、SSH ed25519 密钥配置、GitHub/Gitee 双平台推送与新建仓库、连通性测试，自动忽略超过 100MB 的文件并说明原因。'
