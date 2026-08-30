@@ -1,0 +1,6 @@
+url: https://github.com/Lacquervii/smooth-cursor
+name: Lacquervii/smooth-cursor
+category: ui
+description:
+  en: "Smooth comet-mode animated caret for the DSH Web composer: a glowing comet trail replaces the native blinking caret and glides across the input as you type, with configurable accent color, thickness, and trail, IME-aware for CJK input."
+  zh: 为 DSH Web 输入框提供流畅的彗星光标：以发光的彗星拖尾取代原生闪烁光标，随输入平滑滑动，可配置强调色、粗细与拖尾，并适配中文等 IME 输入。
