@@ -1,0 +1,6 @@
+url: https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy
+name: Raiyan007-gb/dsh-remote-tunnel-easy
+category: remote
+description:
+  en: Scan a QR code in Settings to open the DeepSeek Harness web UI on your phone inside the active session via a cloudflared quick tunnel.
+  zh: 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
