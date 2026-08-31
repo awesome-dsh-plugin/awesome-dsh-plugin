@@ -909,7 +909,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [yoshino-xiao7/dsh-codex](https://github.com/yoshino-xiao7/dsh-codex) - Community Codex provider for DeepSeek Harness with ChatGPT OAuth, Codex models, image input, quota display, per-session Fast and transport controls, and safe stream recovery.
 - [yoshino-xiao7/dsh-grok-provider](https://github.com/yoshino-xiao7/dsh-grok-provider) - Grok Build provider using the official CLI browser login, with dynamic account-visible models, streaming reasoning and tools, plus quota and model-capability settings.
 - [young-tim/dsh-llm-governor](https://github.com/young-tim/dsh-llm-governor) - Governs multi-model access, monthly credits, manual/quality/credit/auto routing, failure rerouting, and usage auditing for DSH.
-
 - [yuioi666/dsh-plugin-model-capability](https://github.com/yuioi666/dsh-plugin-model-capability) - Model Capability Manager for DSH Web: thinking levels, context window, output caps, input modalities, gateway compat presets, EN/中文 UI.
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) - Connects ChatGPT accounts through OAuth, switches among them manually or automatically, and adds Codex models with usage limits to DeepSeek Harness.
 - [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) - Maps a stable agent_key to an exact provider/model pair declared in role Markdown front matter, validates the pair against the live DSH model registry before spawning, and maintains per-workspace prefercmd and memory evolution files.
