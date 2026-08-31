@@ -60,6 +60,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
   - [WSL & Windows Interop](#wsl--windows-interop)
   - [Browser & Web](#browser--web)
   - [Vision & Multimodal](#vision--multimodal)
+  - [Design & Creativity](#design--creativity)
   - [Voice & Audio](#voice--audio)
   - [Docs & Rendering](#docs--rendering)
   - [Skills](#skills)
@@ -1719,7 +1720,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [k2d5rqjpkg-art/dsh-auto-vision](https://github.com/k2d5rqjpkg-art/dsh-auto-vision) - Auto-switch the DeepSeek route to the vision model on demand: flash main session switches (A), pro keeps deep reasoning and delegates image reading to a vision subagent (B), subagents always switch, with fatal-failure fallback. No manual model switching.
 - [kaixinbaba/dsh-vision-recognizer](https://github.com/kaixinbaba/dsh-vision-recognizer) - Vision provider route that transcribes attached images to text through a configurable model (15+ OpenAI-compatible and Anthropic vendors) while DeepSeek keeps answering.
 - [kanchengw/dsh-mindseye](https://github.com/kanchengw/dsh-mindseye) - Plug-in vision for text-only models on DSH, with native interaction for image understanding and generation, GUI automation, through layered evidence memory and cache.
-- [klingai-dev/deepseek-plugin](https://github.com/klingai-dev/deepseek-plugin) - Turn every idea into an image or video with Kling AI. In DeepSeek Harness, use natural language for text-to-image, image-to-image, text-to-video, image-to-video, reference-image creation, task tracking, and result previews.
 - [ld-1101/dsh-vision-plugin](https://github.com/ld-1101/dsh-vision-plugin) - Give your text-only model eyes - chat image attachments are auto-described via a vision model (default prompt), with iterative re-parsing through model-generated prompts when details are missing; system/custom model modes + GUI config panel, key-safe secret handling, and a small host patch for DSH 0.1.0-rc.6 (see repo README).
 - [LeemanCheung/dsh-image-gen](https://github.com/LeemanCheung/dsh-image-gen) - GPT Image 2 `image_gen` with Codex subscription OAuth by default or explicit API-key mode: developing card, up to three live API partials, durable attachment replay/lightbox/download, text-only model output, and bounded credential-safe requests.
 - [Leeminjing/dsh-eyes](https://github.com/Leeminjing/dsh-eyes) - On-demand vision for text-only DeepSeek models: upload images, and the model calls a view_image tool backed by any OpenAI-compatible vision endpoint (Qwen/DashScope by default).
@@ -1766,6 +1766,10 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Yang-wudi/dsh-video-gen](https://github.com/Yang-wudi/dsh-video-gen) - Text-to-video and image-to-video generation via DashScope Wanx, Volcengine Seedance, Google Veo and OpenAI Sora, with tool results saved to the session workspace and a video gallery (grid, lightbox, download, delete) that survives DSH restarts.
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) - Free vision for text-only agents: built-in keyless vision chain plus pixel tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots); paste an image to use it.
 - [yxqfg/phone-lens#phone-lens](https://github.com/yxqfg/phone-lens/tree/main/packages/phone-lens) - Turn a phone camera into a live viewfinder and photo input for your dsh session, over LAN or USB.
+
+### Design & Creativity
+
+- [klingai-dev/deepseek-plugin](https://github.com/klingai-dev/deepseek-plugin) - Turn every idea into an image or video with Kling AI. In DeepSeek Harness, use natural language for text-to-image, image-to-image, text-to-video, image-to-video, reference-image creation, task tracking, and result previews.
 
 ### Voice & Audio
 
