@@ -2,5 +2,5 @@ url: https://github.com/Lorvaste/DSH-Project-Initialization
 name: Lorvaste/DSH-Project-Initialization
 category: workflow
 description:
-  en: Two agent presets that align AI-built products with the user's original idea — from-scratch runs a six-step Q&A to a frozen spec and task breakdown; confirm-first reviews understanding before refining or changing a plan with versioned change records.
-  zh: '两个 agent preset 场景，让 AI 从零创建产品的每一步与用户想法对齐——从零开始：六步问答出规格与任务拆分；先等等，让我确认一下：复核理解后再完善或变更方案，变更留版本记录。'
+  en: "Single alignment scenario that aligns AI-built products with the user's idea: requirement establishment, pre-development and maintenance presets, with ten on-demand skills covering Q&A, confirmation, integration, spec organization, terminology unification, verification, change management, regression, maintenance init and token compression."
+  zh: "DSH 单场景对齐插件：需求确立 / 开发前 / 维护三个最小预设，10 个按上下文加载的功能 skill（问答、确认、统合、规格化、术语一致化、验证、变更管理、回归、维护初始化、token 压缩），让 AI 创建产品每一步对齐用户想法。"
