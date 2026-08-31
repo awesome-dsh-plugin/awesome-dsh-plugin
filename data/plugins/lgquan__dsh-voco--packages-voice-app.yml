@@ -1,0 +1,7 @@
+url: https://github.com/lgquan/dsh-voco/tree/main/packages/voice-app
+name: lgquan/dsh-voco#voice-app
+category: voice
+description:
+  en: Continuous voice conversations for DSH with hands-free listening, push-to-talk, speech recognition, TTS replies, and background Agent delegation.
+  zh: 为 DSH 提供持续语音对话，支持免提监听、按住说话、语音识别、TTS 语音回复和后台 Agent 任务委派。
+tarball: https://github.com/lgquan/dsh-voco/releases/download/v0.3.8/flowingspring-dsh-voco-0.3.8.tgz

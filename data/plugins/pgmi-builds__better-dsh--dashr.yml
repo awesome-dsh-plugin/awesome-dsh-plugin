@@ -2,5 +2,5 @@ url: https://github.com/pgmi-builds/better-dsh/tree/main/dashr
 name: pgmi-builds/better-dsh#dashr
 category: dev
 description:
-  en: 'Dashr ("Better Dsh"): a persistent Python-kernel REPL for dsh — eval cells with tool.* bindings, scheme:// resource addressing, and a wired-in IDE (LSP, AST, hashline edit).'
-  zh: 'Dashr（"Better Dsh"）：dsh 的常驻 Python 内核 REPL——eval 单元、tool.* 绑定、scheme:// 资源寻址，以及内置 IDE（LSP、AST、hashline 编辑）。'
+  en: 'Make your dsh ready for serious coding tasks. (Tools x Schemas)^REPL. `skill://`, `ctx://`, `agent://`, `dvc://`, `dsh://`, IPython REPL, Context as Variables, cross compactions recallable, full context revive. `hash-edit`, `dvc://browser`, subagent as function, workflow as function.'
+  zh: '能胜任严肃编程任务的 dsh。（Tools x Schemas）^REPL。`skill://`，`ctx://`，`agent://`，`dvc://`，`dsh://`，IPython REPL，Context as Variables，抗压缩可回溯、完整上下文重构。`hash-edit`、`dvc://browser`、subagent as function、workflow as function。'

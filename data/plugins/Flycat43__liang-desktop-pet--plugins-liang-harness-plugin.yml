@@ -1,0 +1,7 @@
+url: https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin
+name: Flycat43/liang-desktop-pet#liang-harness-plugin
+category: fun
+description:
+  en: A draggable character companion for the DeepSeek Harness web profile with six visual and expression levels, four task modes, current-session chat, public reasoning summaries and browser speech synthesis.
+  zh: DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
+tarball: https://github.com/Flycat43/liang-desktop-pet/releases/latest/download/liang-harness-plugin.tgz

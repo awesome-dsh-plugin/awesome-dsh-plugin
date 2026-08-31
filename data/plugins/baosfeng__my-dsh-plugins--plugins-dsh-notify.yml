@@ -1,0 +1,7 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-notify
+name: baosfeng/my-dsh-plugins#dsh-notify
+category: notify
+tarball: https://github.com/baosfeng/my-dsh-plugins/releases/latest/download/bsfeng-dsh-notify-0.2.1.tgz
+description:
+  en: 'Browser notifications and a beep when a session turn ends, the agent asks a question or approval is pending; clicking the notification jumps to the session; remote trigger endpoint and SSE channel (npm: `bsfeng-dsh-notify`).'
+  zh: '会话（本轮）结束 / agent 询问 / 等待审批时弹浏览器通知 + 滴声，点击通知跳转会话；预留远程触发接口与 SSE 实时通道（npm: `bsfeng-dsh-notify`）。'

@@ -19,7 +19,9 @@ description:
 
 **Only `description.en` is required.** If you can't write the Chinese, leave `zh` out and a maintainer will add it — a missing translation is our work, not a reason to bounce your plugin. / **只有 `description.en` 是必填的。** 写不了中文就不写 `zh`，维护者会补上——缺翻译是我们的活，不该成为你的插件被打回的理由。
 
-Then regenerate both READMEs and commit them along with your YAML file / 然后重新生成两个 README，与 YAML 文件一起提交：
+**That one file is the whole submission.** The two READMEs are generated from `data/plugins/*.yml` and are regenerated on `main` after your PR merges — you do not have to run anything, and you should not edit them by hand. This is also why your PR will not conflict with anyone else's: entry files never collide, generated README lines always did. / **一个文件就是全部投稿。** 两个 README 由 `data/plugins/*.yml` 生成，你的 PR 合并后会在 `main` 上自动重新生成——你不需要跑任何命令，也不要手工编辑它们。这同时也是你的 PR 不会和别人冲突的原因：条目文件永不相撞，而生成出来的 README 行总是相撞。
+
+Want to preview what your line will look like? Regenerating locally is fine, and committing the result is still accepted — it just has to match / 想预览你那一行长什么样？本地重新生成没问题，把结果一起提交也照样接受，只是必须与数据源一致：
 
 ```sh
 npm ci
