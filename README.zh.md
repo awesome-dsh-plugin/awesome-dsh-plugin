@@ -2938,7 +2938,7 @@ description:
   zh: 一句话描述，以句号结尾。
 ```
 
-一个插件一个文件，两份投稿永远不会碰同一个文件，PR 之间不再互相冲突。执行 `node scripts/generate-readme.mjs` 重新生成两个 README，并把结果一起提交。
+一个插件一个文件，两份投稿永远不会碰同一个文件，PR 之间不再互相冲突。你可以执行 `node scripts/generate-readme.mjs` 在本地预览两个 README；合并后它们会在 `main` 上自动重新生成，因此无需提交生成结果。
 
 你的仓库需要满足：
 
