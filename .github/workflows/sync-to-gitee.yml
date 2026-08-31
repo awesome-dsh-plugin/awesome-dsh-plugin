@@ -1,0 +1,30 @@
+﻿name: Sync to Gitee
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync to Gitee
+        env:
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        run: |
+          git config --global user.name "ai-yukin"
+          git config --global user.email "ai-yukin@users.noreply.github.com"
+          git remote add gitee "https://ai-yukin:${GITEE_TOKEN}@gitee.com/ai-yukin/awesome-dsh-plugin.git"
+          echo "=== 推送 main 分支 ==="
+          git push gitee main:main --force
+          echo "=== 推送 master 分支 ==="
+          git push gitee main:master --force
+          echo "=== 推送所有 tags ==="
+          git push gitee --tags --force
+          echo "=== 同步完成 ==="
