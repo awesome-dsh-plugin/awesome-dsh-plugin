@@ -174,15 +174,21 @@ jobs:
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
+          # A rerun keeps artifacts from prior attempts under the same run id.
+          # Give each attempt one deployable artifact instead of making
+          # deploy-pages reject multiple artifacts named "github-pages".
+          name: github-pages-${{ github.run_attempt }}
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
-        # The concurrency split above means a push build and the nightly can now
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
+        # The concurrency split above means a push build and a probe run can now
         # be in flight together, and Pages accepts one deployment at a time.
-        # Losing that race must not abort the nightly before the two publish
-        # steps below — they are the reason the run exists, and the site is
-        # about to be redeployed by whichever push won anyway.
-        continue-on-error: ${{ github.event_name == 'schedule' }}
+        # Losing that race must not abort a scheduled or manually dispatched
+        # probe before the two publish steps below — they are the reason the run
+        # exists, and the site is about to be redeployed by whichever push won.
+        continue-on-error: ${{ github.event_name != 'push' }}
 
       # The same plugins.json, published to npm — see
       # scripts/publish-catalog.mjs for why it has to exist in two places.
