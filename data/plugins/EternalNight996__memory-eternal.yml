@@ -1,0 +1,6 @@
+url: https://github.com/EternalNight996/memory-eternal
+name: EternalNight996/memory-eternal
+category: memory
+description:
+  en: "A self-contained second brain for DeepSeek Harness — auto-captures durable dialogue knowledge into a local Markdown vault (custom dedup, CJK search, git-friendly), with a graphical knowledge base and an interactive knowledge graph (legend filter, time-dimension coloring, box-select, merge, delete, PNG export/import)."
+  zh: "给 DeepSeek Harness 装上自研「第二大脑」：对话结束自动把值得复用的内容沉淀成本地 Markdown 知识卡（自研去重、CJK 检索、可 git 管理），设置页提供图形化知识库 + 交互式知识图谱（图例过滤、时间维、框选、合并、导入导出）。"
