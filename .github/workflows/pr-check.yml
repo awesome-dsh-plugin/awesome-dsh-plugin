@@ -64,6 +64,32 @@ jobs:
             echo "::error::Files under data/plugins/ must end in .yml — anything else is silently skipped by readEntries() and drops the entry from the list without failing any other check."
             exit 1
           fi
+      - name: Entry files live in data/plugins/
+        # The mirror of the check above, and the same silent-skip failure seen
+        # from the other side: readEntries() globs data/plugins/*.yml, so a
+        # submission that lands its yml one directory up — data/<owner>__<repo>.yml
+        # — is never read. Every other check still passes for the same reason
+        # the extensionless case passed: the regenerated READMEs omit the entry
+        # too, so the tree is self-consistent and `--check` is happy. Merging it
+        # is a no-op that looks like a successful submission to everyone
+        # involved, including the contributor.
+        #
+        # #3914 did exactly this and went fully green. Found by hand while
+        # reviewing the merge queue, which is not a control.
+        #
+        # Scoped to files this PR adds: data/ legitimately holds non-entry
+        # files (npm-map.json, tarballs.json, screenshots.json, readmes.json),
+        # and a repo-wide find would fail on the first *.yml anyone ever parks
+        # there for another purpose.
+        run: |
+          git fetch -q origin ${{ github.event.pull_request.base.sha }}
+          misplaced=$(git diff --name-only --diff-filter=A ${{ github.event.pull_request.base.sha }}...HEAD -- data \
+            | grep -E '^data/[^/]+\.yml$' || true)
+          if [ -n "$misplaced" ]; then
+            echo "$misplaced" | sed 's/^/  /'
+            echo "::error::Entry files must be added under data/plugins/, not directly in data/. readEntries() only globs data/plugins/*.yml, so a file placed here is never read: the READMEs regenerate without it, every other check passes, and merging the PR changes nothing. Move it with: git mv data/<file>.yml data/plugins/<file>.yml"
+            exit 1
+          fi
       - name: READMEs match data/plugins
         # Two shapes are accepted, and which one you get is the contributor's
         # choice, not a rule they have to learn:
