@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-kanban
+name: GooDAnDReaDY/dsh-kanban
+category: workflow
+description:
+  en: "Kanban board inside DeepSeek Harness backed by Gitea tasks: columns map to workflow states, cards open dedicated agent sessions, and tasks stay in sync with the Gitea issue tracker."
+  zh: "在 DeepSeek Harness 内嵌入由 Gitea 任务驱动的看板：列对应工作流状态，卡片可打开专属 Agent 会话，任务与 Gitea 问题追踪器保持同步。"
