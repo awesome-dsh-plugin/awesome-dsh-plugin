@@ -1,6 +1,0 @@
-url: https://github.com/THEWOLFWALKER/dsh-notifier
-name: THEWOLFWALKER/dsh-notifier
-category: notify
-description:
-  en: 'Multi-channel notifications and phone control for DSH: one `notify()` API across 27 channels, event-driven pushes, phone approvals and questions, six inbound control channels, a loopback web console, multi-agent routing, and zero runtime dependencies.'
-  zh: 'DSH 多渠道通知与手机控制插件：一个 `notify()` API 接入 27 个渠道，支持事件推送、手机审批与提问、六条入站控制通道、本机 Web 管理台、多 agent 路由和零运行时依赖。'

@@ -1,6 +1,0 @@
-url: https://github.com/demacia1314/dsh-airdrop
-name: demacia1314/dsh-airdrop
-category: ui
-description:
-  en: '⭐ Drag-and-drop uploads of any file or whole folders, anywhere in the window; remote-safe — bytes go straight into the session workspace on the server, so a DSH deployed on a remote machine works exactly like localhost.'
-  zh: '⭐ 支持拖拽上传：任意文件、整个文件夹，拖到窗口任意位置即可；支持远程上传——字节直传服务器的会话工作区，部署在服务器上的 DSH 也能像本地一样拖了就发。'

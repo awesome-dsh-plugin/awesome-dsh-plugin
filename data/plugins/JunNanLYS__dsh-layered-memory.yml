@@ -1,6 +1,0 @@
-url: https://github.com/JunNanLYS/dsh-layered-memory
-name: JunNanLYS/dsh-layered-memory
-category: memory
-description:
-  en: 'Long-term memory for DSH: conversations auto-distilled into atomic facts, scene summaries and a persona profile, with relevant memories injected before every model step. Zero-config out of the box — hybrid BM25 + vector retrieval, optional offline local embeddings, chat/work family separation.'
-  zh: 'dsh 长期记忆：对话自动蒸馏为原子事实、场景摘要与用户画像，每步模型调用前自动注入相关记忆。开箱零配置——BM25 + 向量混合检索，可选本地离线嵌入，chat/work 双族隔离。'
