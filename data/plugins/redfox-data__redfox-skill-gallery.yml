@@ -1,0 +1,6 @@
+url: https://github.com/redfox-data/redfox-skill-gallery
+name: redfox-data/redfox-skill-gallery
+category: ui
+description:
+  en: add a "Red Fox Skills" entry at the bottom of the sidebar. When clicked, the entire interface will switch to a card-style skill gallery, presenting all the Red Fox Community skills within the redfox-community-dsh plugin in a centralized manner.
+  zh: 侧边栏底部加一个「红狐Skills」入口，点击后整个界面切换为卡片式技能画廊，集中展示redfox-community-dsh插件内的全部红狐社区 skills。
