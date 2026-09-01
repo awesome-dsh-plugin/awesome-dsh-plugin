@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-gitea
+name: GooDAnDReaDY/dsh-gitea
+category: git
+description:
+  en: "Gitea and Forgejo integration for DeepSeek Harness: manage issues, pull requests, CI pipelines, releases, and repository operations from the agent, with worktree support for parallel branch work."
+  zh: "DeepSeek Harness 的 Gitea/Forgejo 集成：从 Agent 管理问题、PR、CI 流水线、发布版本和仓库操作，并支持工作树以并行处理多分支。"
