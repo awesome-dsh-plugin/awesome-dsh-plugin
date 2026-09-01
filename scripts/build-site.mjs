@@ -14,6 +14,7 @@ import fs from 'node:fs'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
+import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
@@ -36,6 +37,10 @@ const NPM_MAP_FILE = 'data/npm-map.json'
 // strip the field from every entry whenever the probe is skipped.
 const TARBALLS_FILE = 'data/tarballs.json'
 const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSync(TARBALLS_FILE, 'utf8')) : {}
+// url -> data/plugins/<slug>.yml. The rest of this file works from entries
+// parsed out of the READMEs, which carry no file path; the added-date
+// derivation below needs one to ask git when an entry first appeared.
+const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -53,12 +58,49 @@ const CAT_IDS = ENTRY_CAT_IDS
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
+// ── advertising ─────────────────────────────────────────────────────────────
+// One AdSense head tag, gated behind a build variable. Unset — the default —
+// emits nothing at all, so an unconfigured build is byte-identical to an
+// ad-free one and no third-party script is requested.
+//
+// Auto ads decide placement from this tag alone, so there is no slot markup to
+// write and no reserved height to get wrong. The publisher id is a `vars`
+// entry rather than a secret because it ships in the HTML either way.
+const ADSENSE_CLIENT = process.env.ADSENSE_CLIENT || ''
+const adHead = () =>
+  ADSENSE_CLIENT
+    ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT)}" crossorigin="anonymous"></script>\n`
+    : ''
+// The token sits on its own line in every template, so the match takes the
+// newline with it. Otherwise an unconfigured build leaves a blank line behind
+// and "identical to an ad-free build" stops being literally true — which is
+// the one claim about this feature worth being able to check by diffing.
+const AD_HEAD_TOKEN = '__AD_HEAD__\n'
+
+// Comments are deliberately opt-in. A half-configured widget would otherwise
+// turn every detail page into a broken third-party request, so fail loudly only
+// when a maintainer says it is ready to ship.
+if (typeof COMMENTS.enabled !== 'boolean') throw new Error('site/comments.mjs: enabled must be true or false')
+const commentsEnabled = COMMENTS.enabled
+if (commentsEnabled) {
+  for (const key of ['repo', 'repoId', 'category', 'categoryId']) {
+    if (typeof COMMENTS[key] !== 'string' || !COMMENTS[key].trim()) {
+      throw new Error(`site/comments.mjs: ${key} is required while comments are enabled`)
+    }
+  }
+  if (!/^[^/\s]+\/[^/\s]+$/.test(COMMENTS.repo)) {
+    throw new Error('site/comments.mjs: repo must be an owner/repository pair')
+  }
+}
+
 const dupes = []
 function parseReadme(loc) {
   const text = fs.readFileSync(loc.readme, 'utf8')
   const out = new Map() // url -> {name, url, desc, cat}
   let cat = null
-  for (const line of text.split('\n')) {
+  // A checkout with core.autocrlf leaves a trailing \r on every split line;
+  // regexes below intentionally use $ and would otherwise parse zero entries.
+  for (const line of text.split(/\r?\n/)) {
     const h = line.match(/^#{2,3} (.+)$/)
     if (h) {
       cat = CAT_IDS.find((id) => h[1].includes(loc.categories[id])) ?? null
@@ -177,11 +219,37 @@ if (ordered.some((e) => !dates[e.url])) {
       if (m && !dates[m[1]]) dates[m[1]] = cur
     }
   }
-  const undated = ordered.filter((e) => !dates[e.url])
-  if (undated.length) {
-    // reachable only from a shallow clone or an unstamped uncommitted entry —
+  // Second source: the entry's own file under data/plugins/. The README line
+  // used to be the only ledger because the README was the only thing a
+  // submission touched. Since sync-readme.yml took over generation, a PR
+  // carries just the yml and the README line is written by a bot commit
+  // seconds after the merge — so during pr-check the line has no history at
+  // all, and after the merge its history is the bot's, not the author's.
+  //
+  // The yml is the better ledger anyway: one file per entry, added exactly
+  // once, never rewritten by a neighbour's regeneration. README history stays
+  // FIRST so that every date published before this change keeps the value it
+  // already had; this only fills in what that pass could not.
+  let stillUndated = ordered.filter((e) => !dates[e.url])
+  if (stillUndated.length) {
+    for (const e of stillUndated) {
+      const file = entryFiles[e.url]
+      if (!file) continue
+      try {
+        // Oldest "added" commit for that path. Not `-1`, which git applies
+        // before --reverse and would hand back the newest instead.
+        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        const iso = out[out.length - 1]
+        if (iso) dates[e.url] = new Date(iso).toISOString()
+      } catch { /* not committed yet — falls through to the error below */ }
+    }
+    stillUndated = ordered.filter((e) => !dates[e.url])
+  }
+  if (stillUndated.length) {
+    // reachable only from a shallow clone or a genuinely uncommitted entry —
     // stamping "now" here would make the output flap between runs
-    console.error(`no added-date derivable for: ${undated.map((e) => e.url).join(', ')}`)
+    console.error(`no added-date derivable for: ${stillUndated.map((e) => e.url).join(', ')}`)
     console.error('need full git history (fetch-depth: 0) and committed entries — refusing to build')
     process.exit(1)
   }
@@ -222,6 +290,50 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
     }
   }
   if (shotsBroken) process.exit(1)
+}
+
+// Everything above checks the shape of a screenshot URL and the host it points
+// at. Nothing there asks whether the image is actually served, so a 404 passed
+// the PR check, passed the gate, merged, and shipped as a broken picture in
+// every storefront — 41 of 773 were in that state when the probe first ran.
+// probe-screenshots.mjs asks; this drops what it found gone.
+//
+// Absent verdict means live, deliberately: a URL the probe never reached (5xx,
+// throttle, or a run that did not happen) must keep publishing. Only a recorded
+// `ok: false` — which the probe writes for 404/410 alone — removes an image.
+// An entry whose shots all die loses the field entirely rather than shipping an
+// empty array, which is the state every entry had before screenshots existed.
+{
+  // The author's own repository wins. probe-screenshots.mjs reads
+  // `screenshots.json` from beside the plugin's package.json and resolves it to
+  // absolute URLs here; data/screenshots.json above is what every entry that
+  // predates the convention still uses. An author who adopts the file becomes
+  // the single source for their own entry — their key in the legacy file is
+  // then redundant and prune-legacy-screenshots.mjs removes it, so the old file
+  // drains rather than growing a second, competing copy of the same data.
+  const DECLARED_FILE = 'data/screenshots-declared.json'
+  const declaredMap = fs.existsSync(DECLARED_FILE) ? JSON.parse(fs.readFileSync(DECLARED_FILE, 'utf8')) : {}
+  let adopted = 0
+  for (const [key, list] of Object.entries(declaredMap)) {
+    if (!Array.isArray(list) || !list.length) continue
+    if (shotsMap[key] !== undefined) adopted++
+    shotsMap[key] = list
+  }
+  if (Object.keys(declaredMap).length) {
+    console.log(`screenshots: ${Object.keys(declaredMap).length} entry/entries declare their own (${adopted} superseding ${SCREENSHOTS_FILE})`)
+  }
+
+  const LIVE_FILE = 'data/screenshots-live.json'
+  const verdicts = fs.existsSync(LIVE_FILE) ? JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8')) : {}
+  let dropped = 0
+  for (const [key, list] of Object.entries(shotsMap)) {
+    if (!Array.isArray(list)) continue
+    const live = list.filter((shot) => verdicts[shot]?.ok !== false)
+    dropped += list.length - live.length
+    if (live.length) shotsMap[key] = live
+    else delete shotsMap[key]
+  }
+  if (dropped) console.log(`screenshots: dropped ${dropped} image(s) confirmed 404/410 by probe-screenshots.mjs`)
 }
 
 // derive repo/subdir install specs and the detail-page slug once
@@ -402,6 +514,7 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
@@ -445,6 +558,7 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
@@ -487,6 +601,14 @@ for (const loc of LOCALES) {
 // Plugin detail pages: /p/{owner}/{repo}[--subdir]/ per locale
 const detailMaster = fs.readFileSync('site/detail-template.html', 'utf8')
 const readmes = fs.existsSync('data/readmes.json') ? JSON.parse(fs.readFileSync('data/readmes.json', 'utf8')) : {}
+// Update notes (probe-updates.mjs): the latest release's notes and a short
+// tail of recent commits, published as docs/updates.json for market-side
+// consumers. Kept OUT of plugins.json on purpose: that file is fetched by
+// every market on every open, and 1,300 release bodies would multiply its
+// size for data only a user opening one update dialog ever reads. Absence is
+// normal — repos without releases still carry their commit tail, and an
+// entry missing here means "no notes available", never an error downstream.
+const updates = fs.existsSync('data/updates.json') ? JSON.parse(fs.readFileSync('data/updates.json', 'utf8')) : {}
 
 // render a plugin README to safe HTML: raw HTML dropped, headings demoted,
 // relative links/images resolved against the repo (probe supplies the bases)
@@ -604,6 +726,27 @@ for (const loc of LOCALES) {
       .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${r.slug}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
       .join('\n')
 
+    // Map a plugin, rather than a rendered URL, to its Discussion. This keeps
+    // /p/... and /zh/p/... in one conversation and survives future route or
+    // domain changes. The IDs in COMMENTS are public, but the script itself is
+    // not injected until the visitor asks to load comments.
+    const commentsId = `comments-${e.slug.replace(/[^a-z0-9-]/gi, '-')}`
+    const commentsConfig = commentsEnabled ? {
+      repo: COMMENTS.repo,
+      repoId: COMMENTS.repoId,
+      category: COMMENTS.category,
+      categoryId: COMMENTS.categoryId,
+      term: `plugin:${e.slug.toLowerCase()}`,
+      lang: loc.giscusLang,
+    } : null
+    const commentsSection = commentsConfig ? `<section class="panel comments" aria-labelledby="${commentsId}-title">
+    <h2 id="${commentsId}-title">${loc.strings.P_COMMENTS}</h2>
+    <p class="note">${loc.strings.P_COMMENTS_NOTE}</p>
+    <p class="comments-status" role="status" aria-live="polite"></p>
+    <div class="comments-mount giscus" id="${commentsId}-mount" data-comments="${esc(JSON.stringify(commentsConfig))}" data-loading="${esc(loc.strings.P_COMMENTS_LOADING)}" data-ready="${esc(loc.strings.P_COMMENTS_READY)}" data-error="${esc(loc.strings.P_COMMENTS_ERROR)}" data-retry="${esc(loc.strings.P_COMMENTS_RETRY)}"></div>
+    <noscript><p class="note"><a href="https://github.com/${COMMENTS.repo}/discussions" rel="noopener">${loc.strings.P_COMMENTS_FALLBACK}</a></p></noscript>
+  </section>` : ''
+
     const jsonldDetail = JSON.stringify([{
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
@@ -657,6 +800,7 @@ ${readmeHtml}
     let page = detailMaster
     page = page
       .replaceAll('__P_README_SECTION__', () => readmeSection)
+      .replaceAll('__P_COMMENTS_SECTION__', () => commentsSection)
       .replaceAll('__LANG__', () => loc.htmlLang)
       .replaceAll('__TITLE__', () => esc(loc.P_TITLE
         .replace('{NAME}', e.name)
@@ -670,6 +814,7 @@ ${readmeHtml}
       .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
+      .replaceAll(AD_HEAD_TOKEN, () => adHead())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
       .replaceAll('__P_SHORT__', () => esc(short))
       .replaceAll('__P_H1__', () => h1)
@@ -806,6 +951,30 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   fs.writeFileSync('docs/readmes.json', JSON.stringify(payload) + '\n')
   console.log(`readmes.json: ${payload.count} entries, ${(fs.statSync('docs/readmes.json').size / 1048576).toFixed(1)} MB`)
+}
+
+// Public update-notes payload: /updates.json — what a consumer needs to show
+// "what changed" between an installed version and HEAD without touching the
+// GitHub API (whose anonymous budget is shared per egress IP and unusable
+// behind common proxies). One file fetched once per consumer, like readmes;
+// only listed entries, so delisting removes the notes the same build it
+// removes everything else about a plugin.
+{
+  const listed = new Set(ordered.map((e) => e.url))
+  const payload = {
+    name: 'awesome-dsh-plugin',
+    url: ORIGIN,
+    updated: registry.updated,
+    count: 0,
+    updates: {},
+  }
+  for (const [url, entry] of Object.entries(updates)) {
+    if (!listed.has(url)) continue
+    payload.updates[url] = entry
+    payload.count++
+  }
+  fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
+  console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()

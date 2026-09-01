@@ -1,0 +1,6 @@
+url: https://github.com/pan17/dsh-minimax-usage
+name: pan17/dsh-minimax-usage
+category: usage
+description:
+  en: Draggable floating bubble in the DSH Web UI showing MiniMax Token Plan usage — 5h and weekly windows with reset countdowns, CN and global panels, click-to-refresh, idle-15s trigger plus 2min→24h heartbeat with auto endpoint fallback. Reuses the subscription key already configured under Settings → 模型; auto-hides the panel for any region whose key is not set. 36 unit tests, MIT.
+  zh: 在 DSH Web UI 右下角以可拖动悬浮气泡展示 MiniMax Token Plan 用量：5 小时 / 周窗口重置倒计时、国内与国际双面板、点击刷新、空闲 15 秒触发 + 心跳 2 分钟起步每次翻倍到 24 小时上限、端点失败自动回退；密钥复用「设置 → 模型」已配置的订阅 Key，未配置的区域静默跳过。36 个单元测试，MIT。

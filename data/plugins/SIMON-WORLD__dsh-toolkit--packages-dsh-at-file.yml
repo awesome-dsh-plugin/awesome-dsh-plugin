@@ -1,0 +1,6 @@
+url: https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file
+name: SIMON-WORLD/dsh-toolkit#dsh-at-file
+category: tools
+description:
+  en: 'A @-file reference tool for DSH: registers an at_file_read tool that injects workspace-file contents into the session, with traversal protection and a 50KB truncation cap (MIT).'
+  zh: 'DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。'

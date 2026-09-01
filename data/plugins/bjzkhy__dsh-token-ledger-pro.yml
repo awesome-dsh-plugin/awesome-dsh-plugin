@@ -1,0 +1,6 @@
+url: https://github.com/bjzkhy/dsh-token-ledger-pro
+name: bjzkhy/dsh-token-ledger-pro
+category: usage
+description:
+  en: 'Cost panel for DeepSeek Harness: meters every request from session events, prices it against a built-in catalog of 136 models across 16 providers, and shows the current model, account balance, session, today and month spend plus a monthly budget bar next to the composer. Bilingual zh/en.'
+  zh: 'DSH 费用统计面板：从 session 事件采集每次请求用量，按内置 16 家厂商 136 个模型的价格目录实时计费，在输入框旁展示当前模型、账户余额、本会话/今日/本月消费与月度预算横条。中英双语。'

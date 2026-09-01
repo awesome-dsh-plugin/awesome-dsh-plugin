@@ -2,5 +2,5 @@ url: https://github.com/Fishsb/dsh-prompt-enhancer
 name: Fishsb/dsh-prompt-enhancer
 category: tools
 description:
-  en: 'One-click prompt enhancement: an independent LLM call rewrites your rough draft in the composer, fully undoable.'
-  zh: 一键提示词增强：独立 LLM 调用把模糊草稿改写为更强的提示词，不满意可撤回。
+  en: 'One-click prompt enhancement (5 modes, memory chain, multi-model fallback) plus voice recognition (cloud Qwen3-ASR / offline SenseVoice, auto-stop on silence) for the composer, with one-click DSH service restart.'
+  zh: 一键提示词增强（5 模式·记忆链·模型链）+ 语音识别（云端 Qwen3-ASR / 本地 SenseVoice 离线，说完自动停），附服务异常一键重启。

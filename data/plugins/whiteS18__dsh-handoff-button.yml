@@ -1,0 +1,6 @@
+url: https://github.com/whiteS18/dsh-handoff-button
+name: whiteS18/dsh-handoff-button
+category: session
+description:
+  en: Adds a handoff button to every assistant message that writes an LLM-summarized handoff document of the current conversation into the workspace handoff/ directory.
+  zh: 为每条 AI 回复添加 Handoff 按钮，点击后由 LLM 将当前会话总结为交接文档，写入该会话工作区的 handoff/ 目录。

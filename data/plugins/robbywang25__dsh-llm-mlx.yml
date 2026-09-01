@@ -1,0 +1,7 @@
+url: https://github.com/robbywang25/dsh-llm-mlx
+name: robbywang25/dsh-llm-mlx
+category: model
+description:
+  en: Use local MLX-LM or MLX-VLM models in DeepSeek Harness through a loopback OpenAI-compatible provider, with optional DSH-owned server startup.
+  zh: 通过回环 OpenAI-compatible 提供方在 DeepSeek Harness 中使用本机 MLX-LM 或 MLX-VLM 模型，并可选由 DSH 托管模型服务进程。
+tarball: https://github.com/robbywang25/dsh-llm-mlx/releases/download/v0.3.0/dsh-llm-mlx-0.3.0.tgz

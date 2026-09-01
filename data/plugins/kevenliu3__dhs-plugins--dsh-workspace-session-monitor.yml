@@ -1,0 +1,6 @@
+url: https://github.com/kevenliu3/dhs-plugins/tree/main/dsh-workspace-session-monitor
+name: kevenliu3/dhs-plugins#dsh-workspace-session-monitor
+category: session
+description:
+  en: 'Sidebar badge and panel that aggregate per-session pending, running, and completed states across workspaces, with one click to open a session.'
+  zh: '侧边栏徽标与面板，跨工作区聚合各会话的待处理、运行中、已完成状态，点击即可打开对应会话。'

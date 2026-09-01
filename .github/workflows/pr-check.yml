@@ -28,15 +28,22 @@ jobs:
         # (#502 would have silently removed 32 entries). Fail when the PR
         # drops more than 2 existing entries; genuine removals are rare and
         # a maintainer can land them directly.
+        #
+        # Counts entry FILES, not README lines. It used to count README lines,
+        # which stops working the moment a PR is allowed to omit the generated
+        # READMEs — a stale fork carrying only data/plugins/ would have shown
+        # +0/-0 and sailed through the one guard written to catch it.
+        # data/plugins/ is also the better signal: one file per entry, and the
+        # deletion is unambiguous rather than inferred from a diff of prose.
         run: |
           git fetch -q origin ${{ github.event.pull_request.base.sha }}
-          removed=$(git diff ${{ github.event.pull_request.base.sha }}...HEAD -- README.md \
-            | grep -cE '^-- \[.+\]\(https://github\.com/' || true)
-          added=$(git diff ${{ github.event.pull_request.base.sha }}...HEAD -- README.md \
-            | grep -cE '^\+- \[.+\]\(https://github\.com/' || true)
-          echo "entry lines: +$added -$removed"
+          removed=$(git diff --name-status --diff-filter=D ${{ github.event.pull_request.base.sha }}...HEAD -- data/plugins \
+            | grep -c '\.yml$' || true)
+          added=$(git diff --name-status --diff-filter=A ${{ github.event.pull_request.base.sha }}...HEAD -- data/plugins \
+            | grep -c '\.yml$' || true)
+          echo "entry files: +$added -$removed"
           if [ "$removed" -gt 2 ] && [ "$removed" -gt "$added" ]; then
-            echo "::error::This PR removes $removed existing entries — the fork looks stale. Sync it with upstream main (GitHub: 'Sync fork') and re-push; a single plugin submission should be +2/-0."
+            echo "::error::This PR deletes $removed existing entry files under data/plugins/ — the fork looks stale. Sync it with upstream main (GitHub: 'Sync fork') and re-push; a single plugin submission should be +1/-0."
             exit 1
           fi
       - name: Every entry file ends in .yml
@@ -57,13 +64,58 @@ jobs:
             echo "::error::Files under data/plugins/ must end in .yml — anything else is silently skipped by readEntries() and drops the entry from the list without failing any other check."
             exit 1
           fi
-      - name: READMEs match data/plugins
-        # The READMEs are generated from data/plugins/*.yml. Editing them by
-        # hand would drift from the source of truth and get silently reverted
-        # by the next contributor's regeneration.
+      - name: Entry files live in data/plugins/
+        # The mirror of the check above, and the same silent-skip failure seen
+        # from the other side: readEntries() globs data/plugins/*.yml, so a
+        # submission that lands its yml one directory up — data/<owner>__<repo>.yml
+        # — is never read. Every other check still passes for the same reason
+        # the extensionless case passed: the regenerated READMEs omit the entry
+        # too, so the tree is self-consistent and `--check` is happy. Merging it
+        # is a no-op that looks like a successful submission to everyone
+        # involved, including the contributor.
+        #
+        # #3914 did exactly this and went fully green. Found by hand while
+        # reviewing the merge queue, which is not a control.
+        #
+        # Scoped to files this PR adds: data/ legitimately holds non-entry
+        # files (npm-map.json, tarballs.json, screenshots.json, readmes.json),
+        # and a repo-wide find would fail on the first *.yml anyone ever parks
+        # there for another purpose.
         run: |
+          git fetch -q origin ${{ github.event.pull_request.base.sha }}
+          misplaced=$(git diff --name-only --diff-filter=A ${{ github.event.pull_request.base.sha }}...HEAD -- data \
+            | grep -E '^data/[^/]+\.yml$' || true)
+          if [ -n "$misplaced" ]; then
+            echo "$misplaced" | sed 's/^/  /'
+            echo "::error::Entry files must be added under data/plugins/, not directly in data/. readEntries() only globs data/plugins/*.yml, so a file placed here is never read: the READMEs regenerate without it, every other check passes, and merging the PR changes nothing. Move it with: git mv data/<file>.yml data/plugins/<file>.yml"
+            exit 1
+          fi
+      - name: READMEs match data/plugins
+        # Two shapes are accepted, and which one you get is the contributor's
+        # choice, not a rule they have to learn:
+        #
+        #   yml only          — the common case now. sync-readme.yml regenerates
+        #                       on main after the merge. Nothing to check here
+        #                       beyond "the generator runs", which the step
+        #                       below does by regenerating in the runner so
+        #                       awesome-lint and the build see a consistent tree.
+        #   yml + regenerated — still fine, still verified exactly as before.
+        #                       Must MATCH, so a hand-edited README is still
+        #                       caught rather than silently overwritten later.
+        #
+        # This is what unblocked the queue. Requiring the regeneration in the
+        # PR meant two unrelated submissions in one category always conflicted
+        # over generated lines; 218 of 296 open PRs were stuck that way, none
+        # over anything a human had written.
+        run: |
+          if git diff --quiet ${{ github.event.pull_request.base.sha }}...HEAD -- README.md README.zh.md; then
+            echo "PR does not touch the generated READMEs — regenerating locally for the checks below."
+            node scripts/generate-readme.mjs
+            exit 0
+          fi
+          echo "PR modifies the READMEs — they must match data/plugins/."
           if ! node scripts/generate-readme.mjs --check; then
-            echo "::error::The READMEs are generated from data/plugins/. Edit the YAML file, run 'node scripts/generate-readme.mjs', and commit both."
+            echo "::error::You committed README changes that do not match data/plugins/. Either run 'node scripts/generate-readme.mjs' and commit the result, or drop the README changes entirely — they are regenerated on main after merge either way."
             exit 1
           fi
       - name: awesome-lint
