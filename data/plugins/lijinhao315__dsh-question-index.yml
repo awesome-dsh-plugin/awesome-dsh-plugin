@@ -1,7 +1,7 @@
 url: https://github.com/lijinhao315/dsh-question-index
 name: lijinhao315/dsh-question-index
 category: ui
-tarball: https://github.com/lijinhao315/dsh-question-index/releases/latest/download/lijinhao315-dsh-question-index-0.1.1.tgz
+tarball: https://github.com/lijinhao315/dsh-question-index/releases/latest/download/dsh-question-index.tgz
 description:
-  en: "Question index: an ordered, collapsible list of your asked questions floating on the right side of the conversation; click a question to jump the session to that point. Auto-indexes each session's full history on open and persists it locally."
-  zh: '提问索引：在会话右侧按序展示你提过的问题列表，可收起；点击某条即可把会话滚动跳转到对应的提问位置。打开会话自动加载并索引全部历史提问，本地持久保存。'
+  en: "Question index: an ordered, collapsible list of your asked questions floating on the right side of the conversation; click a question to jump the session to that point. Auto-indexes each session's full history on open, persists it locally, and jumps to older questions by growing the window on demand."
+  zh: '提问索引：在会话右侧按序展示你提过的问题列表，可收起；点击某条即可把会话滚动跳转到对应位置。打开会话自动索引全部历史提问并本地持久保存；点击更早的提问会按需翻页加载后跳转。'
