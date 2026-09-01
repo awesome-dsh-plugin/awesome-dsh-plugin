@@ -1,0 +1,7 @@
+url: https://github.com/CDeZT/dsh-default-workspace
+name: CDeZT/dsh-default-workspace
+category: memory
+tarball: https://github.com/CDeZT/dsh-default-workspace/releases/download/v1.0.0/dsh-default-workspace-1.0.0.tgz
+description:
+  en: 'Creates a persistent DSH default workspace and exposes paged read-only access to plugins, skills, memory, sessions, storage, settings, credentials, and DSH_HOME files.'
+  zh: '创建持久化的 DSH 默认工作区，并提供对插件、skills、memory、会话、storage、settings、credentials 及 DSH_HOME 文件的分页只读访问。'
