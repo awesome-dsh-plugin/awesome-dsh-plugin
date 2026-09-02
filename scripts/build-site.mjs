@@ -514,6 +514,12 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    // Rendered server-side rather than left at 0 for the client to correct.
+    // The counters sit inside the search bar and the line under the hero; going
+    // from "0 / 0" to "2662 / 2662" on load widened both and reflowed the row
+    // around them, which is what made #count the single largest contributor to
+    // this site's CLS. Same number either way — it just arrives before paint.
+    .replaceAll('__CARD_COUNT__', () => String(N))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
@@ -558,6 +564,10 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      // A category page renders only its own rows, so its counters start from
+      // that number, not the site total. See the index block for why these are
+      // server-rendered.
+      .replaceAll('__CARD_COUNT__', () => String(n))
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id

@@ -1,0 +1,6 @@
+url: https://github.com/hherosoul/dsh-smart-charts
+name: hherosoul/dsh-smart-charts
+category: skill
+description:
+  en: Chart generation skill that renders CSV, Excel, or JSON data into 26 types of interactive ECharts HTML, fully offline. Supports multi-file merge and sandboxed data transformation.
+  zh: 图表生成技能：将 CSV、Excel 或 JSON 数据离线渲染为 26 类交互式 ECharts HTML 图表，支持多文件合并与沙箱化数据转换。

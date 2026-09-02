@@ -1,0 +1,6 @@
+url: https://github.com/KongFangXun/sofagent/tree/main/engine/dsh-plugins/cordis-plugin-sofagent-audit
+name: KongFangXun/sofagent#cordis-plugin-sofagent-audit
+category: security
+description:
+  en: "Commit-time audit harness for AI coding agents: 24 git-diff rules (secrets, out-of-scope edits, prompt injection), HMAC-signed audit trail, snapshot rollback, and an MCP server with 79 tools. Installable via dsh plugin add."
+  zh: "面向 AI 编程 agent 的提交时审计 harness——24 条 git diff 规则（密钥泄漏、越界改动、提示注入）、HMAC 签名审计链、快照回滚、79 工具 MCP server；dsh plugin add 即装。"

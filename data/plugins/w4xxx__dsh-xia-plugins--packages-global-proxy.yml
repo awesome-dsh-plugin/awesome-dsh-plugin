@@ -1,0 +1,6 @@
+url: https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/global-proxy
+name: w4xxx/dsh-xia-plugins#packages/global-proxy
+category: tools
+description:
+  en: 'Route every host-process undici fetch through a local HTTP(S) proxy while keeping localhost and China-reachable APIs direct.'
+  zh: '把 Host 进程的 undici 请求统一路由到本地 HTTP(S) 代理，同时保持 localhost 与国内可达 API 直连。'

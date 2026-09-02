@@ -125,8 +125,10 @@ h1 em{font-style:normal;color:var(--cinnabar)}
 .market svg{color:var(--cinnabar);flex:none}
 .market .lead b{color:var(--cinnabar-deep)}
 .market .lead a:hover{text-decoration:underline;text-underline-offset:3px}
+/* min-width: same label swap as .cli .copy, same reason — see there. */
 .market .go{margin-left:auto;flex:none;font-weight:600;font-size:.82rem;color:var(--on-cinnabar);background:var(--cinnabar);
-  border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap}
+  border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap;
+  min-width:7rem;text-align:center}
 .market .go:hover{background:var(--cinnabar-deep)}
 
 /* ── chips ── */
@@ -196,9 +198,13 @@ li.hidden{display:none}
 .cli{display:flex;align-items:stretch;margin-top:.45rem;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;width:100%}
 .cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--ink);
   background:var(--paper);border:none;outline:none;padding:.42rem .6rem}
+/* min-width reserves room for the "✓ copied" label this swaps to on click and
+   reverts from 1.2s later. That revert is past the 500ms window CLS forgives
+   after an interaction, so without it the button resizes and squeezes the
+   input beside it as an unexpected shift. Same reason as .market .go below. */
 .cli .copy{margin:0;border:none;border-left:1px solid var(--line-2);flex:none;display:flex;align-items:center;
   font-family:var(--mono);font-size:.68rem;color:var(--ink-3);background:var(--card);padding:0 .8rem;white-space:nowrap;
-  transition:all .15s ease}
+  min-width:5.5rem;justify-content:center;transition:all .15s ease}
 .cli .copy:hover,.cli .copy.done{color:var(--on-cinnabar);background:var(--cinnabar)}
 
 /* ── info panels ── */
@@ -262,14 +268,14 @@ __AD_HEAD__
     <div>
       <h1 translate="no">Awesome <em>DeepSeek Harness</em> Plugin</h1>
       <p class="tagline">__T_TAGLINE__</p>
-      <p class="count-line">__T_LISTING_PRE__ <span id="total">0</span> __T_LISTING_POST__ · <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">__T_WHATIS__</a></p>
+      <p class="count-line">__T_LISTING_PRE__ <span id="total">__CARD_COUNT__</span> __T_LISTING_POST__ · <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">__T_WHATIS__</a></p>
     </div>
   </div>
   <div class="wrap searchband">
     <div class="searchbar">
       <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
       <input id="q" type="search" autocomplete="off" spellcheck="false" name="plugin-search" placeholder="__SEARCH_PH__" aria-label="__SEARCH_PH__">
-      <span class="count" id="count" aria-live="polite">0 / 0</span>
+      <span class="count" id="count" aria-live="polite">__CARD_COUNT__ / __CARD_COUNT__</span>
     </div>
     <div class="market">
       <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>

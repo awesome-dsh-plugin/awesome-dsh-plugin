@@ -1,5 +1,5 @@
-url: https://github.com/ColdCGH/dsh-desktop-shell
-name: ColdCGH/dsh-desktop-shell
+url: https://github.com/zerorigin-studio/dsh-desktop-shell
+name: zerorigin-studio/dsh-desktop-shell
 category: ui
 description:
   en: 'Turns the dsh web UI into a native Windows desktop window, with a system tray, autostart option and a protocol file that the bundled client reads.'

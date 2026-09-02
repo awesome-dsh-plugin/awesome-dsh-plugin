@@ -1,0 +1,6 @@
+url: https://github.com/jkStars/dsh-token-usage-stats
+name: jkStars/dsh-token-usage-stats
+category: usage
+description:
+  en: DeepSeek-styled cross-session token usage, request count, and tiered cost analytics dashboard.
+  zh: 仿 DeepSeek 官方 Token 统计，跨会话 Token 消耗、请求次数与峰谷分时费用统计看板。
