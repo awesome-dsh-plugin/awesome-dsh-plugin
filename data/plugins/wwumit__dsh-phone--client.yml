@@ -1,0 +1,6 @@
+url: https://github.com/wwumit/dsh-phone/tree/main/client
+name: wwumit/dsh-phone#client
+category: ui
+description:
+  en: 'iPhone-style agent phone: dual-panel calls & SMS, RCS group chat with trust gates, cross-device agent messaging via the registry inbox bridge, L0–L4 trust badges and evidence audit. Experimental: trust summaries are not a security guarantee, and SMS/signalling is relayed through the operator''s inbox (visible to them); E2E encryption is planned.'
+  zh: '苹果风格智能体手机：双面板电话/短信、RCS 群聊（信任门禁）、跨设备智能体消息（registry 收件箱桥）、L0–L4 信任徽章与证据审计。实验性：信任摘要非安全保证，短信/信令经运营方收件箱中继（运营方可见）；E2E 加密为演进方向。'

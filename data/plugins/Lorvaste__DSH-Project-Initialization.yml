@@ -1,0 +1,6 @@
+url: https://github.com/Lorvaste/DSH-Project-Initialization
+name: Lorvaste/DSH-Project-Initialization
+category: workflow
+description:
+  en: A single agent preset that turns a one-line idea into requirements, tech plan and maintenance baseline — every step is restated and confirmed by you before proceeding (requirement establishment / pre-development / maintenance).
+  zh: '单 agent preset 场景「想法落地」：一句话想法 → 需求规格 → 技术方案 → 维护基准；每一步先复述、你确认、再继续。场景最小预设：需求确立 / 开发前 / 维护。'

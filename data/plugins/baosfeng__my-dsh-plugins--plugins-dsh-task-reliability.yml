@@ -1,0 +1,7 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-task-reliability
+name: baosfeng/my-dsh-plugins#dsh-task-reliability
+category: workflow
+tarball: https://github.com/baosfeng/my-dsh-plugins/releases/latest/download/dsh-task-reliability-0.1.2.tgz
+description:
+  en: 'Task reliability: auto-retry on model timeouts/failures, auto-continue unfinished tasks, completion verification, thinking-repeat interruption, resume after sleep or restart, autopilot mode and a remote trigger endpoint (npm: `dsh-task-reliability`).'
+  zh: '任务可靠性：模型超时/请求失败自动重试、任务未完成自动继续、独立完成度校验、思考重复检测打断、休眠/重启后任务自动恢复、自主决策模式、远程触发接口（npm: `dsh-task-reliability`）。'

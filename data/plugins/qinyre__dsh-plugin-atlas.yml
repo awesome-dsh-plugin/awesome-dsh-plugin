@@ -1,0 +1,6 @@
+url: https://github.com/qinyre/dsh-plugin-atlas
+name: qinyre/dsh-plugin-atlas
+category: session
+description:
+  en: 'Settings section for archived sessions: browse by workspace, search, batch unarchive with the sidebar updating live, and optional auto-archive rules (idle days, keep-last-N per workspace) with a dry-run preview — plus a left-edge turn rail for jumping between turns of long conversations and ↑/↓ input history in the composer.'
+  zh: 设置页的归档会话分区：按工作区分组浏览、搜索、批量取消归档，侧边栏实时恢复；自动归档规则（不活跃天数、每工作区保留条数）可选，执行前可试运行预览。另含长会话的左缘轮次刻度尺（悬停预览、点击跳转、Alt+↑/↓ 逐轮移动）与输入框 ↑/↓ 历史翻找。

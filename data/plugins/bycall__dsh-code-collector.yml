@@ -1,0 +1,16 @@
+# dshmarket submission entry for dsh-code-collector.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/bycall__dsh-code-collector.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch) ✓
+#   - repo must be >= 1 day old, >= 10 commits
+#   - filename must equal slugFor(url): <owner>__<repo>.yml
+#   - only keys: url, name, category, description, tarball (no `npm:` key — npm
+#     mapping is resolved automatically from the repository)
+url: https://github.com/bycall/dsh-code-collector
+name: dsh-code-collector
+category: ui
+description:
+  en: "Session code collector for DeepSeek Harness: a composer-side panel gathering every code block the model produced in the current session, with by-language / by-file views, per-file version history, live search, per-entry copy, copy-all, download-all as Markdown, and click-to-jump back to the exact turn (Alt+Shift+C)."
+  zh: "会话代码收集器：输入框右侧按钮一键汇总当前会话中模型产出的全部代码块，支持按语言/按文件双视图、同一文件的版本历史、实时搜索过滤、单条/全部复制、下载合并 Markdown，点击直接跳转到产出该代码的回合（Alt+Shift+C 快捷开关）。"

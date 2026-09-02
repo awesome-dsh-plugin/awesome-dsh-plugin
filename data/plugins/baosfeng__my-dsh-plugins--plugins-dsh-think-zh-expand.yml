@@ -1,0 +1,7 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-think-zh-expand
+name: baosfeng/my-dsh-plugins#dsh-think-zh-expand
+category: ui
+tarball: https://github.com/baosfeng/my-dsh-plugins/releases/download/dsh-think-zh-expand@v0.4.3/dsh-think-zh-expand-0.4.3.tgz
+description:
+  en: 'Thinking in Chinese: injects a system prompt so thoughts and replies stay in Chinese, expands the reasoning block by default with interactive collapse, and localizes UI labels (npm: `dsh-think-zh-expand`).'
+  zh: '思考增强：system-prompt 注入让思考与回复强制中文；思考内容默认展开显示、可交互折叠；界面英文标签中文化（npm: `dsh-think-zh-expand`）。'

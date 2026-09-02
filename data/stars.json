@@ -1487,7 +1487,7 @@
   "stars": 1,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/fgm-builds/dashr/tree/main/dashr": {
+ "https://github.com/pgmi-builds/dashr/tree/main/dashr": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
@@ -3307,10 +3307,6 @@
   "stars": 3,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tool-tavily-search": {
-  "stars": 3,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/Mombrane/dsh-subagent-monitor": {
   "stars": 16,
   "checkedAt": "2026-08-19"
@@ -4719,7 +4715,7 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/text2future/flowix/tree/main/app/flowix-dsh-host/bundles/dsh-flowix-memory": {
+ "https://github.com/text2future/flowix/tree/main/dsh-flowix-memory": {
   "stars": 320,
   "checkedAt": "2026-08-19"
  },
@@ -4783,11 +4779,7 @@
   "stars": 11,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review": {
-  "stars": 2,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/Tlyer233/dsh-vscode-review/tree/main/packages/dsh-review-changes": {
+ "https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review": {
   "stars": 2,
   "checkedAt": "2026-08-19"
  },
@@ -5973,6 +5965,10 @@
  },
  "https://github.com/zylzyqzz/dsh-mobile-pwa": {
   "stars": 0,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tavily": {
+  "stars": 3,
   "checkedAt": "2026-08-19"
  }
 }

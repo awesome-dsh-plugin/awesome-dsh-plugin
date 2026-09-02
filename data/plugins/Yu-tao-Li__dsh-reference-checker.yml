@@ -4,4 +4,4 @@ category: tools
 description:
   en: 'Reference verification for DeepSeek Harness (参考文献真实性检查器): the reference_checker model tool checks a paper''s bibliography (.pdf/.bib/.tex/.txt or pasted text) against Crossref, OpenAlex and arXiv, reports found / partial / not_found / error per entry, and emits corrected citations in the input''s style (APA, GB/T 7714, IEEE, Vancouver, MLA, Chicago, Harvard, ACS, BibTeX).'
   zh: 为 DeepSeek Harness 提供参考文献真实性检查：reference_checker 工具将论文（PDF/BibTeX/tex/文本/粘贴列表）的每条文献对照 Crossref / OpenAlex / arXiv 核对，逐条判定 found / partial / not_found / error，并按输入样式生成可直接替换回论文的更正版引用（APA、GB/T 7714、IEEE、Vancouver、MLA、Chicago、Harvard、ACS、BibTeX）。
-tarball: https://github.com/Yu-tao-Li/dsh-reference-checker/releases/latest/download/dsh-reference-checker-1.1.0.tgz
+tarball: https://github.com/Yu-tao-Li/dsh-reference-checker/releases/download/v1.1.0/dsh-reference-checker-1.1.0.tgz

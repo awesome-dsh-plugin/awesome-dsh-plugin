@@ -1,0 +1,6 @@
+url: https://github.com/Phant0Meow/dsh-meow-smooth
+name: Phant0Meow/dsh-meow-smooth
+category: ui
+description:
+  en: 'Mobile-first UX polish for the DSH Web UI: composer auto-fold, enter-as-newline on phones, compact sidebar/header/settings, zoom and overscroll lock, plus approval/question/completion notifications via in-page cards, Web Push, and webhook — zero dsh changes.'
+  zh: '手机优先的 DSH 前端体验优化：输入框自动折叠、手机回车换行、侧边栏/顶部栏/设置页压缩、禁缩放回弹，以及审批/提问/任务完成通知（页面卡片、Web Push、webhook）；零 dsh 本体改动。'

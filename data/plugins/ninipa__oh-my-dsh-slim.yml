@@ -1,0 +1,6 @@
+url: https://github.com/ninipa/oh-my-dsh-slim
+name: ninipa/oh-my-dsh-slim
+category: workflow
+description:
+  en: "Match your models and token budgets to each role, then let DSH delegate specialized subagents by task type. Covers architecture analysis, UI/UX, code implementation, codebase exploration, and documentation research, with automatic setup plus per-role reasoning effort and tool permissions."
+  zh: "合理搭配你的模型及 Token 额度，让 DSH 按任务类型自动委派专业子代理，覆盖架构分析、UI/UX、代码实现、代码库探索与文档调研。安装后自动配置，并支持按角色设置思考强度和工具权限。"

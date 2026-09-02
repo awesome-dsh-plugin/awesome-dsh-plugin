@@ -152,6 +152,14 @@ jobs:
           EFF=$(git log --diff-filter=A --format=%cI -1 -- .github/workflows/pr-gate.yml)
           echo "effective_from=${EFF:-1970-01-01T00:00:00Z}" >> "$GITHUB_OUTPUT"
 
+          # The checker reads the catalog AT THIS COMMIT to answer one
+          # question: is this entry's repository one we already list? A rename
+          # inside a repository we accepted long ago must not be re-judged as a
+          # new submission. It has to come from here rather than from the
+          # checkout, because the checkout is the PR — every repository the PR
+          # adds would look pre-existing.
+          echo "base=$BASE" >> "$GITHUB_OUTPUT"
+
       - name: Check submitted entries
         if: steps.pr.outputs.found == 'true' && steps.extract.outputs.none == 'false'
         id: check
@@ -164,6 +172,7 @@ jobs:
             --dir /tmp/prdata/data/plugins \
             --only-list /tmp/prdata/changed.txt \
             --pr-created "${{ steps.pr.outputs.created_at }}" \
+            --base "${{ steps.extract.outputs.base }}" \
             --json gate-result.json
 
       - name: Report result on the PR
@@ -181,10 +190,27 @@ jobs:
               github.rest.checks.create({ owner, repo, name: 'Submission gate', head_sha, status: 'completed', conclusion,
                 output: { title, summary: summary.slice(0, 65000) } })
 
-            if (process.env.NOTHING_TO_CHECK === 'true') {
-              await post('success', 'No entries changed', 'This PR does not add or modify any file under `data/plugins/`.')
-              return
-            }
+              // Read before the early return below, not after it. A PR that only
+              // MODIFIES entries has no added file, so it took that branch and
+              // reported "does not add or modify any file" — false, and it hid the
+              // very list #1348 taught us to surface. Defining it here covers both.
+              const modified = (() => {
+                try { return fs.readFileSync('/tmp/prdata/modified.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
+              })()
+              const modifiedNote = modified.length
+                ? `\n\n**This PR also rewrites ${modified.length} existing entr${modified.length === 1 ? 'y' : 'ies'}:** ${modified.map((m) => `\`${m}\``).join(', ')}. If any of those aren't the subject of this PR, that's an accidental edit — check before merging.`
+                : ''
+
+              if (process.env.NOTHING_TO_CHECK === 'true') {
+                await post(
+                  'success',
+                  modified.length === 0 ? 'No entries changed' : `No new entries; ${modified.length} modified`,
+                  (modified.length === 0
+                    ? 'This PR adds no file under `data/plugins/`.'
+                    : 'This PR adds no new entry under `data/plugins/`, so the age and commit floors have nothing to judge.') + modifiedNote,
+                )
+                return
+              }
 
             let result = null
             try { result = JSON.parse(fs.readFileSync('gate-result.json', 'utf8')) } catch {}
@@ -225,19 +251,44 @@ jobs:
             // have examined some. If it examined none, the two disagree and we
             // do not know whether the submission is sound — say that instead of
             // vouching for checks that never ran.
+            //
+            // But one cause of that disagreement is knowable from here, and
+            // blaming the gate for it sends the contributor to re-run a
+            // workflow that will fail identically forever. The extract step
+            // collects every changed path under data/plugins/ regardless of
+            // name, while check-submission.mjs reads only *.yml — so an entry
+            // file committed without its extension is counted, never parsed,
+            // and lands in this branch. #1477 sat here for 13 days being told
+            // to re-run the workflow. Name the real problem instead.
             if (result.checked === 0) {
+              const changed = (() => {
+                try { return fs.readFileSync('/tmp/prdata/changed.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
+              })()
+              const nonYml = changed.filter((f) => !f.endsWith('.yml'))
+              if (changed.length && nonYml.length === changed.length) {
+                await post('failure', `${nonYml.length} entry file(s) missing the .yml extension`,
+                  [
+                    'Every file this PR adds under `data/plugins/` is missing its `.yml` extension:',
+                    '',
+                    ...nonYml.map((f) => `- \`data/plugins/${f}\` → should be \`data/plugins/${f}.yml\``),
+                    '',
+                    'Entries are read with a `*.yml` glob, so a file named without the extension is',
+                    'skipped in silence: it is never parsed, never listed, and never checked. Nothing',
+                    'is wrong with the plugin — this is a filename.',
+                    '',
+                    '```bash',
+                    ...nonYml.map((f) => `git mv "data/plugins/${f}" "data/plugins/${f}.yml"`),
+                    'git commit -m "add the .yml extension" && git push',
+                    '```',
+                  ].join('\n'))
+                core.setFailed(`entry file(s) without .yml: ${nonYml.join(', ')}`)
+                return
+              }
               await post('failure', 'The gate checked nothing',
                 'This PR adds entries under `data/plugins/`, but the submission checker examined none of them, so no verdict was reached. Re-run the workflow; if it persists this is a bug in the gate, not in the submission.')
               core.setFailed('gate examined no entries despite changed files')
               return
             }
-
-            const modified = (() => {
-              try { return fs.readFileSync('/tmp/prdata/modified.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
-            })()
-            const modifiedNote = modified.length
-              ? `\n\n**This PR also rewrites ${modified.length} existing entr${modified.length === 1 ? 'y' : 'ies'}:** ${modified.map((m) => `\`${m}\``).join(', ')}. If any of those aren't the subject of this PR, that's an accidental edit — check before merging.`
-              : ''
 
             if (result.ok) {
               // An entry the checker could not reach is let through — a busy

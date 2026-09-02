@@ -2,5 +2,5 @@ url: https://github.com/drscrewdriver/dsh-input-traffic
 name: drscrewdriver/dsh-input-traffic
 category: ui
 description:
-  en: 'Three-tier now/next/later input planning dock for the DeepSeek Harness web GUI: a red/yellow/green priority strip replaces the busy-Enter queue, plain Enter queues to later, with freeze/resume and in-place multi-line editing.'
-  zh: '三档（now/next/later）输入规划 dock：以红/黄/绿色优先级条取代忙碌 Enter 排队栏，普通 Enter 排入 later，支持冻结/恢复与多行原位编辑。'
+  en: 'Three-tier now/next/later input planning dock for the DeepSeek Harness web GUI: a red/yellow/green priority strip replaces the busy-Enter queue, plain Enter queues to later, with in-place multi-line editing, drag reorder, and session-isolated freeze/resume; the freeze button bridges a separate plugin, [dsh-session-guard](https://github.com/drscrewdriver/dsh-session-guard) (installable from dsh-market), via stopNextTurn/resume RPC + composer lock for a real per-session lock, pairing with its global peak-hour auto-pause to stop sessions during DeepSeek''s high-cost windows and resume off-peak.'
+  zh: '三档（now/next/later）输入规划 dock：以红/黄/绿色优先级条取代忙碌 Enter 排队栏，普通 Enter 排入 later，支持多行原位编辑、拖拽排序与会话级冻结/恢复；冻结按钮经 stopNextTurn/resume RPC + 输入框锁定，桥接另一独立插件 [dsh-session-guard](https://github.com/drscrewdriver/dsh-session-guard)（可在 dsh-market 安装）实现按会话真实冻结锁定，并配合其高峰全局自动暂停，在 DeepSeek 高价时段停止会话、错峰自动恢复。'

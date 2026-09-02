@@ -1,0 +1,6 @@
+url: https://github.com/jimmyzhang219/dsh-plan-and-execute
+name: jimmyzhang219/dsh-plan-and-execute
+category: workflow
+description:
+  en: Plan-and-execute orchestration over ReactLoopAgent — turns a goal into reviewable steps with a web UI plan card.
+  zh: 基于 ReactLoopAgent 的 Plan-and-Execute 编排插件，将目标拆解为可审阅的步骤并以 Web UI 卡片呈现。

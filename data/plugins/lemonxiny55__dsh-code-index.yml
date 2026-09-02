@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-code-index
+name: lemonxiny55/dsh-code-index
+category: tools
+description:
+  en: 'Semantic repo index with tree-sitter symbol search + ranked repo map.'
+  zh: '语义仓库索引：基于 tree-sitter 的符号索引、带排名的符号搜索，以及注入系统提示词的限量自动更新仓库地图。'

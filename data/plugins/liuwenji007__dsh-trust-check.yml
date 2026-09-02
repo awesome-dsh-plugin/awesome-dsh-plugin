@@ -1,0 +1,6 @@
+url: https://github.com/liuwenji007/dsh-trust-check
+name: liuwenji007/dsh-trust-check
+category: security
+description:
+  en: Adds a Settings page and a CLI that statically scan installed DeepSeek Harness plugins for capabilities, literal destinations, install scripts, and prompt injections, then show a verdict you can acknowledge.
+  zh: 在设置页和 CLI 里对已安装的 DeepSeek Harness 插件做静态扫描，列出能力、字面量去向、安装脚本和提示注入，并给出可确认的裁决。

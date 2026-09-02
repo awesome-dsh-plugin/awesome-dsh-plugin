@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/memory-standard
+name: JohnXu22786/memory-standard
+category: memory
+description:
+  en: 'Memory Standard Protocol (mm) for DeepSeek Harness: layered MEMORY.md with hard budgets, frozen snapshots, mm:// URI interop, session-log digestion, mem_* tools and a standalone CLI.'
+  zh: 'DeepSeek Harness 记忆标准协议（mm）：分层 MEMORY.md 与硬性预算、冻结快照、mm:// URI 互认、会话日志摄取，附带 mem_* 工具与独立 CLI。'

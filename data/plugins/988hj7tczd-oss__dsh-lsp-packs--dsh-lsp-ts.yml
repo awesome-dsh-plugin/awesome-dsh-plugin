@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-ts
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-ts
+category: dev
+description:
+  en: 'TypeScript and JavaScript LSP configuration plugin for DeepSeek Harness using typescript-language-server.'
+  zh: '基于 typescript-language-server 为 DeepSeek Harness 提供 TypeScript 和 JavaScript 代码导航及语言服务配置。'

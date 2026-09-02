@@ -1,0 +1,6 @@
+url: https://github.com/yumm007/dsh-reveal-files
+name: yumm007/dsh-reveal-files
+category: ui
+description:
+  en: 'Turns each produced-file chip into a per-file menu: open the file, copy its path, reveal it in the native file browser, or open a terminal cd-ed into its directory.'
+  zh: '把每个产物文件卡片变成按文件操作的下拉菜单：打开文件、拷贝路径、在系统文件浏览器中定位，或打开终端并进入其目录。'

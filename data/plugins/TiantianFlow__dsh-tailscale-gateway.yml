@@ -1,6 +1,0 @@
-url: https://github.com/TiantianFlow/dsh-tailscale-gateway
-name: TiantianFlow/dsh-tailscale-gateway
-category: remote
-description:
-  en: Private Tailscale access for DeepSeek Harness Web that allowlists users from the trusted Tailscale-User-Login header that Serve injects, with a loopback-only gateway and guarded Serve setup.
-  zh: 为 DeepSeek Harness Web 提供私有 Tailscale 访问：用 Serve 注入的可信 Tailscale-User-Login 请求头做用户白名单，仅回环网关，受保护的 Serve 配置。

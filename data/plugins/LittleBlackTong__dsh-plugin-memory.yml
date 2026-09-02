@@ -2,5 +2,5 @@ url: https://github.com/LittleBlackTong/dsh-plugin-memory
 name: LittleBlackTong/dsh-plugin-memory
 category: memory
 description:
-  en: 'Long-term cross-session markdown memory with an LLM-Wiki structure and a SOUL.md persona, hard-injected at every session start, plus remember/recall/consolidate/forget workflows, an embedded memory skill and pack/unpack migration tooling.'
-  zh: '带 LLM Wiki 结构与 SOUL 人格文件的长期 markdown 记忆库：会话启动强制注入 boot 块，含 remember/recall/consolidate/forget 工作流、内嵌 memory 技能与 pack/unpack 迁移工具。'
+  en: 'Long-term cross-session markdown memory with an LLM-Wiki structure and a SOUL.md persona, hard-injected at every session start, plus remember/recall/consolidate/forget workflows, an embedded memory skill, pack/unpack migration tooling, and an idle-time first-person recall nudge that surfaces real memories in a companion voice.'
+  zh: '带 LLM Wiki 结构与 SOUL 人格文件的长期 markdown 记忆库：会话启动强制注入 boot 块，含 remember/recall/consolidate/forget 工作流、内嵌 memory 技能、pack/unpack 迁移工具，以及空闲时以第一人称主动追忆（recall nudge）的拟人化能力。'
