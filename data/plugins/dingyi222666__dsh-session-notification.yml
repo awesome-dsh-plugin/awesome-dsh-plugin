@@ -1,0 +1,6 @@
+url: https://github.com/dingyi222666/dsh-session-notification
+name: dingyi222666/dsh-session-notification
+category: notify
+description:
+  en: Notifications for four session states, with browser alerts and prompts.
+  zh: 会话完成等四种状态的通知响应，支持浏览器提示。

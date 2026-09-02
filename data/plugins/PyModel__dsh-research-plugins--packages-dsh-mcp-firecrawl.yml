@@ -1,0 +1,6 @@
+url: https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-mcp-firecrawl
+name: PyModel/dsh-research-plugins#dsh-mcp-firecrawl
+category: browser
+description:
+  en: 'Firecrawl MCP bridge: hosted Firecrawl MCP server with keyless search, scrape and parse; an API key unlocks the full tool surface including crawl and map.'
+  zh: '接入 Firecrawl 托管 MCP 服务：免密钥即可使用搜索、抓取与解析（有每日额度），配置 API Key 后解锁完整工具集，含爬取与站点地图。'

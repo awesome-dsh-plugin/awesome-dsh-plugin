@@ -1,0 +1,6 @@
+url: https://github.com/volcengine/OpenViking/tree/main/examples/dsh-memory-plugin
+name: volcengine/OpenViking#examples/dsh-memory-plugin
+category: memory
+description:
+  en: 'OpenViking memory and context bundle for DeepSeek Harness: pre-step auto-recall and profile injection, session capture, `viking://` URI guarding, and recall/write memory tools backed by an OpenViking server.'
+  zh: 面向 DeepSeek Harness 的 OpenViking 记忆与上下文插件：pre-step 自动召回与画像注入、会话捕获、`viking://` URI 防护，以及对接 OpenViking 服务端的 recall/write 记忆工具。

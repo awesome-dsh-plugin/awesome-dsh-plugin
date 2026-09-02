@@ -1,0 +1,6 @@
+url: https://github.com/qinyre/dsh-plugin-capabilities
+name: qinyre/dsh-plugin-capabilities
+category: dev
+description:
+  en: 'Skills & MCP section in Settings: browse, create, edit and delete skills with live directory watching, toggle loading of any on-disk skill through frontmatter policy keys, register local folders or GitHub repos as extra skill scan roots, edit the MCP server rows in the profile patch, import MCP config from Claude Code or Codex, and install from a curated market of skill repos and MCP servers.'
+  zh: 设置页的「技能与 MCP」分区：技能目录实时监听，可浏览、新建、编辑、删除技能，用 frontmatter 策略键开关任何落在磁盘上的技能；本地目录或 GitHub 仓库可注册为额外技能扫描根；profile 的 MCP 服务器行在页面上编辑，可从 Claude Code / Codex 配置导入；另带精选技能仓库与 MCP 服务器的市场。

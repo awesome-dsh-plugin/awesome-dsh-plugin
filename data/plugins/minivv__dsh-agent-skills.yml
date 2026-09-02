@@ -1,0 +1,6 @@
+url: https://github.com/minivv/dsh-agent-skills
+name: minivv/dsh-agent-skills
+category: dev
+description:
+  en: Browse, enable, disable, and manage Agent Skills from Claude Code, Codex, OpenCode, Gemini, and custom directories in the DSH settings panel.
+  zh: 在 DSH 设置面板中浏览、启用、停用和管理来自 Claude Code、Codex、OpenCode、Gemini 及自定义目录的 Agent Skills。

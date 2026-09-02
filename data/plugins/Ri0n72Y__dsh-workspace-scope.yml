@@ -1,0 +1,6 @@
+url: https://github.com/Ri0n72Y/dsh-workspace-scope
+name: Ri0n72Y/dsh-workspace-scope
+category: ui
+description:
+  en: 'Per-workspace Skill and MCP enablement for DeepSeek Harness: control which skills and MCP servers new sessions load, per project.'
+  zh: 按工作区（工程）启停 Skill 与 MCP：每个项目单独控制新会话加载哪些技能与 MCP 工具。

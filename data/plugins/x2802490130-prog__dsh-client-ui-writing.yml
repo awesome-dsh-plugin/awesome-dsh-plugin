@@ -1,0 +1,6 @@
+url: https://github.com/x2802490130-prog/dsh-client-ui-writing
+name: x2802490130-prog/dsh-client-ui-writing
+category: ui
+description:
+  en: 'Client-side writing panel for the Web UI: project volumes and stats, corpus library, full-text search, evolution version-chain diffs, and an SVG thread graph, shown only in writing-preset sessions.'
+  zh: Web 客户端「写作」面板：项目分卷与统计、书库与全文检索、设定演化版本链 diff、线索 SVG 图谱，仅在写作预设会话显示。

@@ -1,0 +1,6 @@
+url: https://github.com/J0ss077/dsh-always-require-tools-approval
+name: J0ss077/dsh-always-require-tools-approval
+category: security
+description:
+  en: 'Requires one-shot user approval before configured tools (default bash, pwsh) execute — gated tools pause and ask, everything else delegates, and a missing approval channel fails closed.'
+  zh: '在配置的工具（默认 bash、pwsh）执行前要求一次性用户审批：受控工具暂停并询问，其余委托执行，缺少审批渠道时默认拒绝。'

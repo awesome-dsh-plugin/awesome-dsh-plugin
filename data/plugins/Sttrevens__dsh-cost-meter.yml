@@ -1,0 +1,6 @@
+url: https://github.com/Sttrevens/dsh-cost-meter
+name: Sttrevens/dsh-cost-meter
+category: usage
+description:
+  en: 'Per-turn USD cost badge in the Web UI: session total in the header and per-turn cost in each message footer, with a hover breakdown.'
+  zh: Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。

@@ -1,0 +1,6 @@
+url: https://github.com/jinsiyu/dsh-auto-open-web
+name: jinsiyu/dsh-auto-open-web
+category: tools
+description:
+  en: DeepSeek Harness automatically opens browser plugins and includes a built-in WebView2 program to achieve a lightweight desktop experience.
+  zh: deepseek harness自动打开浏览器插件，内置WebView2程序实现轻量级桌面化。

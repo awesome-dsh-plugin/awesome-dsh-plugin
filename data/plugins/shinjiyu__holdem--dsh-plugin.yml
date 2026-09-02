@@ -1,0 +1,7 @@
+url: https://github.com/shinjiyu/holdem/tree/main/dsh-plugin
+name: shinjiyu/holdem#dsh-plugin
+category: fun
+tarball: https://github.com/shinjiyu/holdem/releases/download/v0.1.1/shinjiyu-dsh-holdem-0.1.0.tgz
+description:
+  en: Host tools for Texas Hold'em on kuroneko.chat — seat token, hosted/manual control, legal actions, and act loop for one GitHub identity.
+  zh: 连接 kuroneko.chat 德州扑克桌的 Host 工具：座位令牌、人控/托管切换、合法动作查询与行动循环（同一 GitHub 帐号一席）。

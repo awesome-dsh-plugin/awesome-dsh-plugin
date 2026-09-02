@@ -1,0 +1,6 @@
+url: https://github.com/cerebrixos-org/dsh-asimovbox
+name: cerebrixos-org/dsh-asimovbox
+category: tools
+description:
+  en: Connects DeepSeek Harness to AsimovBox for creating, updating, rendering, and finishing videos through API-key-authenticated tools.
+  zh: 通过 API 密钥认证的工具将 DeepSeek Harness 连接到 AsimovBox，用于创建、更新、渲染和完成视频。

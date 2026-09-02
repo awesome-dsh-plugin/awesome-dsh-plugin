@@ -1,0 +1,6 @@
+url: https://github.com/seven282/oss-prompt-optimizer
+name: seven282/oss-prompt-optimizer
+category: tools
+description:
+  en: 'One-click optimization of a raw instruction into a professional prompt: three output styles, situation-aware role/task/goal profiling, self-iterating learning (session memory + smart defaults + user overrides), /template for 21 sub-scenes with zero model calls, input-box ✨ one-click optimize/undo, prompt_optimize tool, auto-optimize hook and auto-detected zh/en documents.'
+  zh: '把原始指令一键优化为专业提示词——支持三种输出形态、情境感知画像、自迭代学习，以及 /template 等命令与一键工具/钩子/自动语言。'

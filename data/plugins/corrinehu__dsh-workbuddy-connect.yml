@@ -1,0 +1,6 @@
+url: https://github.com/corrinehu/dsh-workbuddy-connect
+name: corrinehu/dsh-workbuddy-connect
+category: model
+description:
+  en: Brings the models in the WorkBuddy desktop app straight into DeepSeek Harness — zero configuration in the DSH chat.
+  zh: 将 WorkBuddy 桌面 App 包含的模型自动接入 DeepSeek Harness，在 DSH 对话窗口里零配置使用。

@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-tool-csv
+name: omdsh-dev/dsh-tool-csv
+category: tools
+description:
+  en: Parse/query/aggregate/convert CSV (RFC 4180) with a zero-dependency state-machine parser.
+  zh: CSV 解析/查询/统计/转换（RFC 4180），零依赖状态机解析器。

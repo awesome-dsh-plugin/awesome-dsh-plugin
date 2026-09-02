@@ -1,0 +1,6 @@
+url: https://github.com/mrRisega/dsh-remote/tree/main/packages/dsh-remote-ui
+name: mrRisega/dsh-remote#dsh-remote-ui
+category: remote
+description:
+  en: 'Remote control for dsh web from a phone browser: the plugin adds an in-harness Settings panel (cloud/self-hosted mode tabs, account login, bridge start/stop, feedback) with same-origin /dsh-remote relay routes; the desktop bridge and self-hosted relay-router in this repo tunnel the local dsh web to a phone PWA with access-key auth, a live device list and optional traffic quotas.'
+  zh: '手机浏览器远程控制 dsh web：插件在设置页新增「远程控制」面板（云端/自建模式切换、账号登录、bridge 启停、反馈），并提供同源 /dsh-remote 路由代理 relay；仓库自带的电脑端 bridge 与自托管 relay-router 构成隧道，把本地 dsh web 以可安装 PWA 形式开放到手机：访问密钥认证、实时设备列表、可选流量配额。'

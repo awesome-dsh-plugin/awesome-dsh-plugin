@@ -1,0 +1,6 @@
+url: https://github.com/AngelosZou/dsh-pdf-reader
+name: AngelosZou/dsh-pdf-reader
+category: vision
+description:
+  en: 'A content-aware PDF reading plugin for vision models: profiles each page for figures (vector and raster), tables, formula risk and double-column layout, then applies content-aware hybrid extraction, rendering figure/table/formula pages as high-DPI region crops. Provides a low-resolution preview to understand the page layout, and renders a specified region at high resolution. Packaged as multiple tools for agents.'
+  zh: '面向视觉模型的内容感知 PDF 读取插件：逐页分析图（矢量与栅格）、表格、公式风险与双栏排版，基于内容识别进行混合提取，图表/公式页渲染成高 DPI 区域裁切。提供低清预览以理解页面概况并支持指定选区获取高清渲染。功能包装为多个工具供Agent使用。'

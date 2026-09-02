@@ -1,0 +1,7 @@
+url: https://github.com/baisama-cloud/dsh-stt-input
+name: baisama-cloud/dsh-stt-input
+category: voice
+description:
+  en: 'Speech-to-text voice input for the web UI: a mic button in the composer transcribes speech into the draft via the browser Web Speech API (zero-config) or an OpenAI-compatible Whisper API (OpenAI / Groq), with a selectable model and language in Settings.'
+  zh: Web UI 语音输入：输入框旁麦克风按钮语音转文字填入输入框；支持浏览器 Web Speech API 本地识别（零配置、无需密钥）与 OpenAI 兼容 Whisper API（OpenAI/Groq），模型与语言可在设置中选择。
+tarball: https://github.com/baisama-cloud/dsh-stt-input/releases/download/v0.1.0/dsh-stt-input-0.1.0.tgz

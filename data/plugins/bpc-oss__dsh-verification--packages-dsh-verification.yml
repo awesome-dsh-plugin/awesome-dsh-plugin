@@ -1,0 +1,6 @@
+url: https://github.com/bpc-oss/dsh-verification/tree/main/packages/dsh-verification
+name: bpc-oss/dsh-verification#dsh-verification
+category: workflow
+description:
+  en: 'Verification gate for DSH agents: every acceptance criterion must be backed by server-stamped real tool evidence before the completion gate lets a goal through (advisory audit, enforce gate, durable permits).'
+  zh: 'DSH agent 完成验证闸门：每条验收标准必须有服务端标记的真实工具证据才能完成（advisory 审计 / enforce 拦截 / 持久 permit）。'

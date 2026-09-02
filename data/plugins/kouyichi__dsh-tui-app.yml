@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-tui-app
+name: kouyichi/dsh-tui-app
+category: ui
+description:
+  en: 'Interactive terminal chat app for dsh: streaming conversation, tool cards, jobs panel, full-text search, trajectory replay, multi-session tabs, and A2A dispatch (Ink-based).'
+  zh: 'dsh 交互式终端聊天应用：流式对话、工具卡片、任务面板、全文搜索、轨迹回放、多会话标签与 A2A 派发（Ink 实现）。'

@@ -1,0 +1,6 @@
+url: https://github.com/jingzhao-l/iterate-plugin
+name: jingzhao-l/iterate-plugin
+category: workflow
+description:
+  en: 'Turns the iterate skill into an autonomous closed-loop harness — plan, parallel review, atomic fixes, validate, loop, auto-stop — plus a dry-run review-only mode and a meta-review that audits the report and emits a final review report.'
+  zh: '把 iterate 技能跑成自主闭环：规划、并行审查、原子修复、验证、循环、自动停止，并支持纯评审的 dry-run 模式与元评审最终报告。'

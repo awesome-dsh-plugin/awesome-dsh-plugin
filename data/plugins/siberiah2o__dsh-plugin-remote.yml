@@ -1,0 +1,6 @@
+url: https://github.com/siberiah2o/dsh-plugin-remote
+name: siberiah2o/dsh-plugin-remote
+category: remote
+description:
+  en: 'Remote access gateway for the DSH Web GUI: login auth plus an HTTP/WebSocket reverse proxy to the loopback server, no --trusted-host needed.'
+  zh: DSH Web 远程访问网关：登录鉴权 + 到本机服务的 HTTP/WebSocket 反向代理，无需 --trusted-host。

@@ -1,0 +1,6 @@
+url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-appearance-gallery
+name: wsxwj123/dsh-plugins#dsh-appearance-gallery
+category: theme
+description:
+  en: Fifteen curated theme families and nine complete dsh-web-ui skin replicas in one plugin behind a single settings entry, with CSS-only custom theme JSON, controlled custom skin-pack import via folder picker, preview, apply, delete and restore-default.
+  zh: 15 个精选主题家族 + 9 个完整 dsh-web-ui 皮肤复刻合并为单一插件、设置页单一入口，支持 CSS-only 自定义主题 JSON、受控自定义皮肤包导入（可直接选文件夹）、试穿、应用、删除与恢复默认。

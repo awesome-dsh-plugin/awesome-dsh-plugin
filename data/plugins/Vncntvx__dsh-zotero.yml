@@ -1,0 +1,6 @@
+url: https://github.com/Vncntvx/dsh-zotero
+name: Vncntvx/dsh-zotero
+category: tools
+description:
+  en: 'Zotero as an evidence store for agents: search your library, inspect metadata and notes, retrieve evidence passages, open source PDFs, and generate citations and bibliographies.'
+  zh: 面向 Agent 研究工作流的 Zotero 插件：搜索文献、查看元数据与笔记、提取与问题相关的证据段落、打开原文 PDF、生成引用与参考文献表。

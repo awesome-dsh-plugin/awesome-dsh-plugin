@@ -1,0 +1,7 @@
+url: https://github.com/d-dev0101/open-sea-skin
+name: d-dev0101/open-sea-skin
+category: theme
+tarball: https://github.com/d-dev0101/open-sea-skin/releases/download/v1.2.0/open-sea-skin-1.2.0.tgz
+description:
+  en: Realtime WebGPU ocean skin with quick controls for waves, daylight, glass opacity, and an automatic day cycle.
+  zh: 实时 WebGPU 海洋皮肤，可快捷调节波浪、日光、玻璃不透明度与自动昼夜循环。

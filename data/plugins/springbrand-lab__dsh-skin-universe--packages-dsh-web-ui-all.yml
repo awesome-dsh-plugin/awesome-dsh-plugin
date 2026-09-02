@@ -1,0 +1,6 @@
+url: https://github.com/springbrand-lab/dsh-skin-universe/tree/main/packages/dsh-web-ui-all
+name: springbrand-lab/dsh-skin-universe#dsh-web-ui-all
+category: ui
+description:
+  en: 'Web GUI bundle for DSH: a task board with cron scheduling, a Git branch graph, a file and change side panel, an SSH terminal with SFTP and port forwarding, QR-paired mobile remote control, a desktop companion, live token statistics, and five installable themes.'
+  zh: 'DSH Web GUI 全家桶：带定时调度的任务看板、Git 分支图、文件与变更侧栏、支持 SFTP 与端口转发的 SSH 终端、扫码配对的手机远程控制、桌面宠物、实时 token 统计，以及五套可安装主题。'

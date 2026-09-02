@@ -1,0 +1,6 @@
+url: https://github.com/limbo947/dsh-recall-plugin
+name: limbo947/dsh-recall-plugin
+category: session
+description:
+  en: 'Recall any user message: rolls the conversation (official session fork) and workspace files (per-message shadow git snapshots) back to before it, with a diff-preview confirmation panel.'
+  zh: 消息撤回：在用户消息旁加「撤回」按钮，把对话历史（官方会话 fork）与项目文件（逐消息影子 git 快照）一并回退到该消息发送之前，带差异预览确认面板。

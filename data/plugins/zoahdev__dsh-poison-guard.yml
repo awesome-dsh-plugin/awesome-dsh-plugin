@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-poison-guard
+name: zoahdev/dsh-poison-guard
+category: security
+description:
+  en: 'Pre-install supply-chain poison scanner for DSH plugins: AST (JS-X-Ray) + deobfuscation + regex heuristics, exits non-zero on findings for CI gating.'
+  zh: DSH 插件安装前投毒扫描：AST（JS-X-Ray）+ 去混淆解码 + 正则启发式，发现即非零退出，可作 CI 门禁。

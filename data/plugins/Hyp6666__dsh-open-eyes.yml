@@ -1,0 +1,6 @@
+url: https://github.com/Hyp6666/dsh-open-eyes
+name: Hyp6666/dsh-open-eyes
+category: vision
+description:
+  en: Vision bridge for text-only DeepSeek routes that analyzes attached and local images through configurable OpenAI Responses, Chat Completions, or Anthropic Messages endpoints while leaving image-capable routes native.
+  zh: 为纯文本 DeepSeek 路由提供视觉桥接：通过可配置的 OpenAI Responses、Chat Completions 或 Anthropic Messages 端点分析附件与本地图片，同时保持支持图片的路由走原生路径。

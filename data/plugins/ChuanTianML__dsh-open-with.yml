@@ -1,0 +1,7 @@
+url: https://github.com/ChuanTianML/dsh-open-with
+name: ChuanTianML/dsh-open-with
+category: ui
+tarball: https://github.com/ChuanTianML/dsh-open-with/releases/download/v0.2.1/dsh-open-with-0.2.1.tgz
+description:
+  en: Open the current registered Workspace from the Session Header or Workspace menu in a detected or configured editor, with hot re-detection and a remembered browser preference.
+  zh: 从 Session 页头或 Workspace 菜单用检测到或配置的编辑器打开当前已登记 Workspace，支持热重新检测和浏览器首选项记忆。

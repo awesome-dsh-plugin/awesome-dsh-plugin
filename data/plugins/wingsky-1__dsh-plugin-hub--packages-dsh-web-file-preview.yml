@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-web-file-preview
+name: wingsky-1/dsh-plugin-hub#packages/dsh-web-file-preview
+category: tools
+description:
+  en: 'Preview conversation file links in the web UI (images / text / Markdown / highlighted code / git diff) — click a link to open a preview modal instead of the desktop opener; loopback-fenced routes with weak ETag/304 caching and DOMPurify sanitization.'
+  zh: 在 web 端预览对话中的文件链接（图片 / 文本 / Markdown / 代码高亮 / git diff）：点击链接即可弹窗预览，替代桌面原生打开；loopback 围栏 + 弱 ETag/304 缓存 + DOMPurify 消毒。

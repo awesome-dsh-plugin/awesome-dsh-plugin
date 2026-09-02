@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-file-mention
+name: sunshaobei/dsh-file-mention
+category: ui
+description:
+  en: 'Codex-style @file/@folder mentions for the DSH web composer: workspace file/folder picker menu, plain-text colored mention tokens via the platform lexicon scan, and a nested-git-aware file index.'
+  zh: 'Codex 式 @文件/@文件夹提及插件：输入框弹出工作区文件与文件夹选择菜单，通过平台词法扫描插入纯文本着色提及 token，内置嵌套 git 感知的文件索引。'

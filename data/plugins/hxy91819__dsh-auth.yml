@@ -1,0 +1,6 @@
+url: https://github.com/hxy91819/dsh-auth
+name: hxy91819/dsh-auth
+category: security
+description:
+  en: Caddy forward_auth administrator login for DeepSeek Harness Web, with Argon2id passwords, revocable sessions, bilingual UI, and a native sidebar sign-out action.
+  zh: 通过 Caddy forward_auth 为 DeepSeek Harness Web 提供管理员登录，含 Argon2id 口令、可撤销会话、中英界面和侧栏原生退出。

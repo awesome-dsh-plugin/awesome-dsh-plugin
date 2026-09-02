@@ -1,0 +1,6 @@
+url: https://github.com/stuarthu/dsh-crew
+name: stuarthu/dsh-crew
+category: workflow
+description:
+  en: 'Runs work as a crew of role agents: a product manager writes the PRD or DoD, waits for your confirmation, then starts architect, engineer, QA and reviewers whose tool sets are locked per role, and shares work through files on disk.'
+  zh: 以角色团队的方式干活：产品经理先写 PRD 或 DoD 并等你确认，再启动架构师、工程师、QA 与各类评审；每个角色的工具集按角色锁定，彼此通过磁盘文件协作。

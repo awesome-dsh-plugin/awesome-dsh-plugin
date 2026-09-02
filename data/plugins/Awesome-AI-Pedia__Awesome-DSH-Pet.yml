@@ -1,0 +1,6 @@
+url: https://github.com/Awesome-AI-Pedia/Awesome-DSH-Pet
+name: Awesome-AI-Pedia/Awesome-DSH-Pet
+category: fun
+description:
+  en: Extensible desktop-pet plugin for the DSH Web GUI, with feed / play / character-switch menus and Codex 8x9 spritesheet characters.
+  zh: DSH Web GUI 的可扩展桌面宠物插件，支持投喂、玩耍、切换角色，并使用 Codex 8x9 spritesheet 添加自定义角色。

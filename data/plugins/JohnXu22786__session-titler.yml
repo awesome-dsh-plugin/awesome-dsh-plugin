@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/session-titler
+name: JohnXu22786/session-titler
+category: session
+description:
+  en: "Two-phase session captioning: instant keyword titles while the conversation is busy, then cheapest-budget-model refinement plus a one-line summary once it goes idle."
+  zh: "两阶段会话题词：会话进行中即时关键词题名，空闲后再调用最经济的预算模型精修，并附带一句话摘要。"

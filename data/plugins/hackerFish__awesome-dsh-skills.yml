@@ -1,0 +1,6 @@
+url: https://github.com/hackerFish/awesome-dsh-skills
+name: hackerFish/awesome-dsh-skills
+category: skill
+description:
+  en: '12 tested engineering skills (git commit, code review, test-first, plugin dev, debugging, changelog, PR review, task breakdown, and more): every SKILL.md passes a format validator aligned with the official skill rules plus an isolated load smoke test.'
+  zh: 12 个实测工程技能（git 提交、代码审查、测试优先、插件开发、排障、CHANGELOG、PR 审查、任务拆解等）：每个 SKILL.md 都通过对照官方规则的格式校验与隔离环境加载冒烟。

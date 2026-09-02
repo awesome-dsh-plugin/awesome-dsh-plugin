@@ -1,0 +1,6 @@
+url: https://github.com/future007s/dsh-peak-indicator
+name: future007s/dsh-peak-indicator
+category: ui
+description:
+  en: 'Session header badge showing DeepSeek peak/off-peak status, per-model token prices on hover, and real session/turn costs from actual usage.'
+  zh: '会话头部徽标：显示 DeepSeek 高峰/闲时状态、当前模型 token 单价，并按真实用量统计会话与每轮费用。'

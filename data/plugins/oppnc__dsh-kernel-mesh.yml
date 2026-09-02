@@ -1,0 +1,7 @@
+url: https://github.com/oppnc/dsh-kernel-mesh
+name: oppnc/dsh-kernel-mesh
+category: model
+tarball: https://github.com/oppnc/dsh-kernel-mesh/releases/latest/download/dsh-kernel-mesh.tgz
+description:
+  en: "Registers Kimi, Grok, Codex, and MiniMax as DeepSeek Harness model routes, vendor subagent recipes, and kernel_status / kernel_run / kernel_switch tools."
+  zh: "把 Kimi、Grok、Codex、MiniMax 注册成 DeepSeek Harness 的模型路由、各家子代理配方，以及 kernel_status / kernel_run / kernel_switch 工具。"

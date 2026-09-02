@@ -1,0 +1,6 @@
+url: https://github.com/Stylelinzzz/dsh-chat-history
+name: Stylelinzzz/dsh-chat-history
+category: ui
+description:
+  en: Adds a "History" conversation view tab listing the session's user messages as a clickable directory, with auto-paging and click-to-jump back into the chat.
+  zh: 在会话头部新增「目录」tab：把当前会话的用户消息整理成可点击的目录，自动翻页加载全部历史，点击即跳回对话并定位。

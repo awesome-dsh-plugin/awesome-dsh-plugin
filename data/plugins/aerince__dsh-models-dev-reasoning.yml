@@ -1,0 +1,6 @@
+url: https://github.com/aerince/dsh-models-dev-reasoning
+name: aerince/dsh-models-dev-reasoning
+category: theme
+description:
+  en: Adds models.dev reasoning levels to unconfigured third-party DeepSeek Harness models.
+  zh: 为未配置的第三方 DeepSeek Harness 模型添加 models.dev 推理级别支持。

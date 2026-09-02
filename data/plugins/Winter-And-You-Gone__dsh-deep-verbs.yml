@@ -1,0 +1,6 @@
+url: https://github.com/Winter-And-You-Gone/dsh-deep-verbs
+name: Winter-And-You-Gone/dsh-deep-verbs
+category: ui
+description:
+  en: "Rotates the model status line through a 53-phrase English/Chinese deep-theme pool: a random pick at turn start, event-driven switching on new thinking segments or tool calls (3s throttle), and a click on the status line toggles the language."
+  zh: "把内置 'Deep diving...' 思考状态行扩展为 53 条 deep 系英/中双语短语池：回合开场随机一条，随新思考段/工具调用事件轮换（最短间隔 3 秒），点击状态行切换中英文。"

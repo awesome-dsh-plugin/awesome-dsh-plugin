@@ -1,0 +1,6 @@
+url: https://github.com/Eternalloveone/dsh-palm/tree/main/packages/dsh-palm
+name: Eternalloveone/dsh-palm#dsh-palm
+category: ui
+description:
+  en: "Standalone mobile surface for dsh: scan-to-pair device trust, realtime SSE sync, task plan & background jobs, offline outbox, PWA; a native narrow-screen phone UI, not a desktop adaptation."
+  zh: "dsh 的独立手机端界面：扫码配对设备信任、实时 SSE 同步、任务清单与后台任务、离线发件箱、PWA；从零为窄屏设计的原生手机 UI，而非桌面适配。"

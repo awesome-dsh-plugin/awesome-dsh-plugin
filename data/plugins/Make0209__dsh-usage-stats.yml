@@ -1,0 +1,6 @@
+url: https://github.com/Make0209/dsh-usage-stats
+name: Make0209/dsh-usage-stats
+category: usage
+description:
+  en: 'GitHub-style usage heatmap dashboard: per-workspace turn counts and token spend (with cache-hit rate), DeepSeek account balance, and workspace aliases.'
+  zh: GitHub 风格用量热力图看板：按工作区统计使用次数与 Token 花费（含缓存命中率）、DeepSeek 账户余额查询、工作区别名管理。

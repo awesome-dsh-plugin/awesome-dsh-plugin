@@ -1,0 +1,6 @@
+url: https://github.com/baisama-cloud/dsh-galgame-generator
+name: baisama-cloud/dsh-galgame-generator
+category: fun
+description:
+  en: 'Galgame generator: give it a script document plus character/background/BGM/animation assets in the workspace (img_human/, img_bg/, audio/, img_cg/) and it builds a playable visual-novel web page with configurable save slots (`[存档 N]`, default 9), speaker-following sprites with multi-pose variant switching (`[表情]`), opening/ending/CG animations (`[op]`/`[ed]`/`[cg]`), BGM play/stop/volume control, and if-line branching.'
+  zh: 'Galgame 生成器：提供剧本文档与立绘/背景/音乐/动画素材（工作区 img_human/、img_bg/、audio/、img_cg/）即可生成可玩视觉小说网页，支持可配置存档槽位（`[存档 N]`，默认 9）、立绘自动跟随说话人并切换多表情立绘（`[表情]`）、开局/结束/CG 动画（`[op]`/`[ed]`/`[cg]`）、BGM 播放/停止/音量控制与 if 条件线分支。'

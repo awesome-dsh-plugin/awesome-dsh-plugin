@@ -1,0 +1,6 @@
+url: https://github.com/hg1048596-pixel/dsh-recall-unread
+name: hg1048596-pixel/dsh-recall-unread
+category: ui
+description:
+  en: Adds a strip above the composer to recall sent-but-unread (steering) text messages before the model reads them.
+  zh: 在输入框上方提供「未读消息」条带，可在模型读取前撤回已发送但尚未被读取的文字消息。

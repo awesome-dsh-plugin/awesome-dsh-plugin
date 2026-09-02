@@ -1,0 +1,18 @@
+# Entry for the awesome-dsh-plugin list (submission file).
+#
+# Install: copy this file into the awesome-dsh-plugin repo at
+#   data/plugins/Okkay712__DSH-dseyes.yml
+# then run `npm ci && node scripts/generate-readme.mjs` and open a PR.
+#
+# Review notes (per contributing.md):
+# - category `vision`: the plugin reads images for text-only models.
+# - Only description.en is required; zh is provided by us.
+# - The description states only what the plugin does (no marketing).
+# - Add the `dsh-plugin` topic to the repo (done via repo settings).
+# - Repo age >= 1 day and >= 10 commits are CI-checked automatically.
+url: https://github.com/Okkay712/DSH-dseyes
+name: Okkay712/DSH-dseyes
+category: vision
+description:
+  en: 'Native image attachments for text-only DeepSeek in the Web GUI: pasted or dropped images appear as thumbnails in the session, and before dispatch the host reads them with the free Zhipu GLM-4V-Flash vision API (glm-4v-flash fallback chain) and substitutes the description, so DeepSeek answers about the image while the original is kept in history.'
+  zh: '为纯文本 DeepSeek 提供原生图片上传体验：在 Web GUI 粘贴/拖入图片即以缩略图附件进入会话，发送前由 host 用免费智谱 GLM-4V-Flash 视觉 API（glm-4v-flash 降级链）读取并替换为文字描述，DeepSeek 据此回答，原图保留在聊天历史中。'

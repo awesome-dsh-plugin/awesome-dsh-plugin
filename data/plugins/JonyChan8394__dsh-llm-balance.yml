@@ -1,0 +1,6 @@
+url: https://github.com/JonyChan8394/dsh-llm-balance
+name: JonyChan8394/dsh-llm-balance
+category: usage
+description:
+  en: Multi-provider LLM API balances under the chat input, with presets for DeepSeek, OpenRouter and SiliconFlow.
+  zh: 聊天输入框下方显示多个 LLM API 账户余额，内置 DeepSeek、OpenRouter、SiliconFlow 预设。

@@ -1,0 +1,6 @@
+url: https://github.com/Yang-wudi/dsh-video-gen
+name: Yang-wudi/dsh-video-gen
+category: vision
+description:
+  en: 'Text-to-video and image-to-video generation via DashScope Wanx, Volcengine Seedance, Google Veo and OpenAI Sora, with tool results saved to the session workspace and a video gallery (grid, lightbox, download, delete) that survives DSH restarts.'
+  zh: 通过阿里通义万相、火山引擎 Seedance、Google Veo 与 OpenAI Sora 生成文生视频与图生视频，结果保存到会话工作区，内置视频画廊（网格、灯箱、下载、删除），DSH 重启后仍可播放。

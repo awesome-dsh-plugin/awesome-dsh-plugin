@@ -1,0 +1,7 @@
+url: https://github.com/wenheguo2/dsh-delegation-suite
+name: wenheguo2/dsh-delegation-suite
+category: model
+description:
+  en: 'Ranked subagent delegation: role-based model routing with failover, per-route reasoning effort, model-transparent labels, fork delegation, and a visual route editor.'
+  zh: '智能委派套件：按角色路由最强模型、失败自动互备、每个子代理可设思考强度、名字带模型标签、支持 fork 委派与可视化路由编辑。'
+tarball: https://github.com/wenheguo2/dsh-delegation-suite/releases/download/v1.0.0/dsh-delegation-suite-1.0.0.tgz

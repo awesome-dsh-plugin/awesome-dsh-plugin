@@ -1,0 +1,6 @@
+url: https://github.com/boogoo619/dsh-focus-overlay
+name: boogoo619/dsh-focus-overlay
+category: ui
+description:
+  en: Focus mode with a full-screen reading overlay that hides the header and composer and folds AI tool calls into summaries.
+  zh: 专注模式：全屏阅读视图，隐藏标题与输入区，把 AI 工具调用折叠成摘要。

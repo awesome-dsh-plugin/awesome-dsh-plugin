@@ -1,0 +1,7 @@
+url: https://github.com/hatsuyuki0103/oh-my-deepseek-harness
+name: hatsuyuki0103/oh-my-deepseek-harness
+category: skill
+description:
+  en: 'OMX-style workflow skills for DeepSeek Harness: deep-interview, ralplan, ralph, autopilot, team, code-review and 19 more, rewritten on native DSH tools, without vision skills.'
+  zh: 'OMX 风格工作流技能集：deep-interview、ralplan、ralph、autopilot、team、code-review 等 23 个技能，基于 DSH 原生工具重写，不含视觉技能。'
+tarball: https://github.com/hatsuyuki0103/oh-my-deepseek-harness/releases/latest/download/oh-my-deepseek-harness.tgz

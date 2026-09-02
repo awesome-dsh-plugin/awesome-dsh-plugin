@@ -1,0 +1,6 @@
+url: https://github.com/131CDA1/dsh-scrape-webpage
+name: 131CDA1/dsh-scrape-webpage
+category: browser
+description:
+  en: 'Fetches any http/https page and returns title, description, main text, heading outline and links, with stats (char/word counts, reading time, language) and top keywords; can download content images to the session workspace for vision analysis and dispatch them to registered analyzers via the scrape.imageAnalyzer service.'
+  zh: '抓取任意 http/https 网页，提取标题、描述、正文、标题结构与链接，输出字符/词数、阅读时长、语言等统计与高频关键词；支持下载内容图片到会话工作区供视觉分析，并通过 scrape.imageAnalyzer 服务分发给已注册的识图分析器。'

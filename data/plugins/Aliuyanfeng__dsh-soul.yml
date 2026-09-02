@@ -1,0 +1,6 @@
+url: https://github.com/Aliuyanfeng/dsh-soul
+name: Aliuyanfeng/dsh-soul
+category: ui
+description:
+  en: 'Personalization for the agent: a Web UI panel (about-you, reply style & tone, traits for headings/lists and emoji, output language, custom instructions) and `/soul` commands, with nickname/occupation/bio/style/traits/language compiled into a system prompt and re-injected into active sessions. Exposes `soulConfig` for other plugins and a `set_persona` tool the agent can call.'
+  zh: '为 Agent 提供个性化设置：Web 设置栏目（关于你、回复风格和语调、标题与列表 / 表情符号特质、输出语言、自定义指令）与 `/soul` 命令；昵称 / 职业 / 介绍 / 风格 / 特质 / 语言编译进提示词并推送给所有活动会话。向其他插件暴露 `soulConfig` 服务，并注册 Agent 可调用的 `set_persona` 工具。'

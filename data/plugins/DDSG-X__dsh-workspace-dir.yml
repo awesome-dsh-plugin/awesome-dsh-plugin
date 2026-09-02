@@ -1,0 +1,6 @@
+url: https://github.com/DDSG-X/dsh-workspace-dir
+name: DDSG-X/dsh-workspace-dir
+category: ui
+description:
+  en: Shows the current conversation's working directory in a draggable directory panel with adjustable opacity.
+  zh: 在可拖动、透明度可调的目录面板中显示当前对话的工作目录与文件列表。

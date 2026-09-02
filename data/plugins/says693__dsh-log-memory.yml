@@ -1,0 +1,6 @@
+url: https://github.com/says693/dsh-log-memory
+name: says693/dsh-log-memory
+category: fun
+description:
+  en: 'Popup guardian for session logs: opens with the Web UI on a configurable reminder interval (10 min-3 h), with one-click incremental backup of every session.jsonl(.zstd) under ~/.dsh/sessions in raw or readable chat-log format.'
+  zh: 会话日志守护弹窗：打开 Web 即提醒（间隔 10 分钟至 3 小时可调），一键增量备份 ~/.dsh/sessions 全部 session.jsonl(.zstd)，可选原始压缩或可读聊天记录两种格式，弹窗内可选备份文件夹。

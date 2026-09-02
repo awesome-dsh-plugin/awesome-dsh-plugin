@@ -1,0 +1,11 @@
+url: https://github.com/Yu-tao-Li/dsh-computer-use-win
+
+name: Yu-tao-Li/dsh-computer-use-win
+
+category: tools
+
+description:
+
+  en: 'Windows computer use for DeepSeek Harness: an MCP stdio server over a PowerShell UIA backend exposing 22 desktop tools (UIA tree, screenshots, typed input, OCR, window management, failsafe).'
+
+  zh: 为 DeepSeek Harness 提供 Windows 电脑操控：MCP stdio 服务器 + PowerShell UIA 后端，22 个桌面工具（UIA 树、截图、键鼠输入、OCR、窗口管理、急停保护）。

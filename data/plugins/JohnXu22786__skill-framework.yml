@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/skill-framework
+name: JohnXu22786/skill-framework
+category: skill
+description:
+  en: 'Bundles an engineering-methodology skill library as one Cordis plugin: 14 Agent Skills (planning, testing, debugging, review, delivery) registered on ctx.skills for DeepSeek Harness.'
+  zh: '以单个 Cordis 插件打包一整套工程方法论技能库：14 个 Agent Skills（规划、测试、排障、评审、交付）注册到 DeepSeek Harness 的 ctx.skills。'

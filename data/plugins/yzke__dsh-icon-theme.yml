@@ -1,0 +1,6 @@
+url: https://github.com/yzke/dsh-icon-theme
+name: yzke/dsh-icon-theme
+category: theme
+description:
+  en: Automatic and user-customizable Fluent-style icons for DSH Settings and sidebar actions, with offline SVG packs and original-icon preservation.
+  zh: 为 DSH 设置和侧边栏自动分配并支持自定义的 Fluent 风格图标，离线内置 SVG，默认保留插件原图标。

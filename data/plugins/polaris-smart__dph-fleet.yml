@@ -1,0 +1,6 @@
+url: https://github.com/polaris-smart/dph-fleet
+name: polaris-smart/dph-fleet
+category: remote
+description:
+  en: 'Decentralized multi-device fleet: mDNS LAN discovery, key pairing, and SSH direct execution across networks.'
+  zh: 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。

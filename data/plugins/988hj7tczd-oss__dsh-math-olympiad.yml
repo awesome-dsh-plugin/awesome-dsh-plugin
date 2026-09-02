@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-math-olympiad
+name: 988hj7tczd-oss/dsh-math-olympiad
+category: skill
+description:
+  en: "Competition math (IMO/Putnam/USAMO/AIME) solved with a pure-reasoning pass, an adversarial verifier in a fresh subagent context, and calibrated confidence output (high / medium / honest \"no confident solution\"); optional LaTeX-to-PDF rendering."
+  zh: "竞赛数学解题（IMO/Putnam/USAMO/AIME）：纯推理求解 + 新鲜上下文 subagent 对抗验证 + 校准信心输出（high / medium / 诚实「无把握解」）；可选 LaTeX 编译 PDF。"

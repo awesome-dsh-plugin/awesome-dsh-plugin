@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-archive-manager
+name: MichengAI/dsh-archive-manager
+category: session
+description:
+  en: Adds an archived-sessions page in Settings to search, restore, and delete archived DeepSeek Harness sessions by workspace.
+  zh: 在设置里增加已归档会话页，可按工作区搜索、恢复和删除已归档会话。

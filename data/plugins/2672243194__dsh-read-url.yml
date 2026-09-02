@@ -1,0 +1,6 @@
+url: https://github.com/2672243194/dsh-read-url
+name: 2672243194/dsh-read-url
+category: browser
+description:
+  en: 'Read any page as clean main content: charset auto-detect (GBK/GB2312/UTF-8/Big5), noise stripping, compact text/Markdown, offset continuation, optional SPA rendering, batch reads and site crawling.'
+  zh: '读取网页返回干净正文：中文编码自动识别（GBK/GB2312/UTF-8/Big5）、噪音过滤、紧凑文本/Markdown、offset 续读、可选 SPA 渲染、批量读取与整站爬取。'

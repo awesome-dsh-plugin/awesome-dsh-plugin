@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/command-scout
+name: JohnXu22786/command-scout
+category: tools
+description:
+  en: Scans a project's declared build commands — Makefile targets, package.json scripts, just recipes, deno tasks — and exposes them as ready-to-run agent tools.
+  zh: 扫描项目已声明的构建命令——Makefile 目标、package.json 脚本、just 配方、deno 任务——并作为可直接调用的 agent 工具暴露给智能体。

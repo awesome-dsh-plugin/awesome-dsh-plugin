@@ -1,0 +1,6 @@
+url: https://github.com/534119219/chicheng-cron
+name: 534119219/chicheng-cron
+category: workflow
+description:
+  en: 'Cron scheduler with a sidebar UI: run shell, Python or Node scripts, skills, or agent tasks on a schedule, with push notifications and session archiving.'
+  zh: '定时任务调度器：侧栏管理界面，按 cron 表达式或间隔执行脚本、技能与 Agent 任务，支持完成后推送通知与会话归档。'

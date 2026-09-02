@@ -1,0 +1,6 @@
+url: https://github.com/stevenx65/dsh-balance-plugin
+name: stevenx65/dsh-balance-plugin
+category: usage
+description:
+  en: DeepSeek balance and token usage in the web sidebar, with a today/all-time toggle and provider filtering.
+  zh: dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。

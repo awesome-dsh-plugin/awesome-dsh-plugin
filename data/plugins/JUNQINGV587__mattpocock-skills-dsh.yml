@@ -1,0 +1,6 @@
+url: https://github.com/JUNQINGV587/mattpocock-skills-dsh
+name: JUNQINGV587/mattpocock-skills-dsh
+category: skill
+description:
+  en: 'DSH bundle porting Matt Pocock''s 25 promoted engineering and productivity agent skills (grilling, TDD, code review, domain modeling, etc.).'
+  zh: '将 Matt Pocock 的 25 个精选工程与效率 Agent 技能（grilling、TDD、代码审查、领域建模等）移植为 DeepSeek Harness 插件包。'

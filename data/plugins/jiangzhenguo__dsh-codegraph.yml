@@ -1,0 +1,6 @@
+url: https://github.com/jiangzhenguo/dsh-codegraph
+name: jiangzhenguo/dsh-codegraph
+category: tools
+description:
+  en: 'DSH bundle that registers 13 native codegraph_* tools wrapping the codegraph CLI, so agents bootstrap, maintain, and query a pre-indexed code knowledge graph (symbol query, explore, node trail, callers/callees, impact, affected tests) instead of grepping files.'
+  zh: 'DSH 插件，注册 13 个原生 codegraph_* 工具包装 codegraph CLI，让代理初始化、维护并查询预索引的代码知识图谱（符号查询、区域探索、节点轨迹、callers/callees、影响分析、受影响测试），无需 grep 文件。'

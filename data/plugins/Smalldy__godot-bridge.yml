@@ -1,0 +1,6 @@
+url: https://github.com/Smalldy/godot-bridge
+name: Smalldy/godot-bridge
+category: tools
+description:
+  en: 'DSH↔Godot engine runtime bridge: launch and drive a running Godot 4.x game through its in-game TCP interaction server — 16 tools (runtime control via ~130 game commands, scene/UI inspection, GDScript eval, input simulation, screenshots, headless static ops, project editing, export, script validation, engine-path setup), replaces godot-mcp.'
+  zh: DSH↔Godot 引擎运行时控制桥：通过游戏内置 TCP 交互服务器启动并操控运行中的 Godot 4.x——16 个工具（约 130 条运行时命令、场景/UI 检查、GDScript eval、输入模拟、截图、headless 静态操作、项目编辑、导出、脚本编译检查、引擎路径设置），替代 godot-mcp。

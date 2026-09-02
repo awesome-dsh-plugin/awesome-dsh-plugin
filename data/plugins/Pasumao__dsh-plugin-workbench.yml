@@ -1,0 +1,6 @@
+url: https://github.com/Pasumao/dsh-plugin-workbench
+name: Pasumao/dsh-plugin-workbench
+category: ui
+description:
+  en: 'Adds a VS Code-style workspace file explorer to the dsh web GUI: file tree, editable preview with syntax highlighting, tabs, line numbers, right-click file operations, and inline image preview.'
+  zh: 为 dsh 网页添加 VS Code 风格工作区文件浏览器：文件树、可编辑预览（语法高亮、标签页、行号）、右键文件操作与图片内联预览。
