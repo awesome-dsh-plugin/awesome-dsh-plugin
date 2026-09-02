@@ -1,0 +1,10 @@
+# awesome-dsh-plugin catalog entry (data/plugins/JeremyWangCY__dsh-pc-pilot.yml)
+# Listing requirements met: public repo, age > 1 day, >= 10 commits, package.json declares dsh.bundle.
+url: https://github.com/JeremyWangCY/PC-Pilot
+name: dsh-pc-pilot
+owner: JeremyWangCY
+category: tools
+description:
+  en: "Windows computer-use for DeepSeek Harness: one 'computer' tool combining a UIA accessibility tree, PrintWindow screenshots, background synthetic-cursor input (UIA patterns / window messages, never steals focus) and real SendInput, with a codex-style click-through on-screen cursor indicator (soft blue glow, auto-hides after the turn)."
+  zh: "适用于 DeepSeek Harness 的 Windows 电脑操作插件：单一 computer 工具整合 UIA 无障碍树、PrintWindow 截图、后台合成输入（UIA 模式/窗口消息，不抢焦点）与真实 SendInput，并带 codex 风格点击穿透屏幕光标指示器（柔和蓝光，回合结束自动隐藏）。"
+tarball: https://github.com/JeremyWangCY/PC-Pilot/releases/download/v0.1.0-beta.1/dsh-pc-pilot-0.1.0-beta.1.tgz
