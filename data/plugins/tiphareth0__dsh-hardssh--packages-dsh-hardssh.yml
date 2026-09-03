@@ -1,5 +1,5 @@
-url: https://github.com/tiphareth0/dsh-hardssh
-name: tiphareth0/dsh-hardssh
+url: https://github.com/tiphareth0/dsh-hardssh/tree/master/packages/dsh-hardssh
+name: tiphareth0/dsh-hardssh#dsh-hardssh
 category: remote
 description:
   en: 'SSH workspace and operations for DeepSeek Harness: bind a server directory as a workspace whose fs/subprocess calls route to the remote host via cordis seam replacement, plus web terminal, file transfers, tunnels, cluster runs and host management.'
