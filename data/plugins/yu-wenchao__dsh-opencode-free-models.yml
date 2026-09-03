@@ -1,0 +1,6 @@
+url: https://github.com/yu-wenchao/dsh-opencode-free-models
+name: yu-wenchao/dsh-opencode-free-models
+category: model
+description:
+  en: "OpenCode Zen free models panel for DeepSeek Harness: auto-syncs free model list, zero-config provider registration, no API key required."
+  zh: "DeepSeek Harness 的 OpenCode Zen 免费模型面板：自动同步免费模型列表，零配置 provider 注册，无需 API Key。"
