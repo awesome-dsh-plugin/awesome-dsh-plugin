@@ -693,14 +693,23 @@ for (const loc of LOCALES) {
     // "conf…" is the one line a searcher reads before deciding to click. Prefer
     // ending on a sentence, else the last word; CJK has no spaces, so the word
     // fallback simply does not fire there and the hard cut stands.
-    const metaDesc = (() => {
-      if (desc.length <= 155) return desc
-      const head = desc.slice(0, 152)
+    const clampMeta = (s) => {
+      if (s.length <= 155) return s
+      const head = s.slice(0, 152)
       const stop = Math.max(head.lastIndexOf('. '), head.lastIndexOf('。'), head.lastIndexOf('；'), head.lastIndexOf('; '))
-      if (stop > 90) return desc.slice(0, stop + 1).trim()
+      if (stop > 90) return s.slice(0, stop + 1).trim()
       const space = head.lastIndexOf(' ')
       return (space > 90 ? head.slice(0, space) : head).trimEnd() + '…'
-    })()
+    }
+    // A twelve-character description is a fine list entry but a bare meta
+    // description — Bing flags 162 of them as too short. Below the threshold,
+    // wrap it in the locale's context sentence (what this is, what the page
+    // offers); at or above it, the description stands on its own as before.
+    const metaDesc = clampMeta(
+      desc.length < 60
+        ? loc.P_META_SHORT.replace('{DESC}', desc).replace('{NAME}', shortName(e.name)).replace('{CAT}', loc.categories[e.cat])
+        : desc,
+    )
 
     const short = shortName(e.name)
     const h1 = `<span class="owner">${esc(e.owner)}/</span><wbr><span class="name">${esc(short)}</span>`
@@ -812,9 +821,17 @@ ${readmeHtml}
       .replaceAll('__P_README_SECTION__', () => readmeSection)
       .replaceAll('__P_COMMENTS_SECTION__', () => commentsSection)
       .replaceAll('__LANG__', () => loc.htmlLang)
-      .replaceAll('__TITLE__', () => esc(loc.P_TITLE
-        .replace('{NAME}', e.name)
-        .replace('{CAT}', loc.categories[e.cat])))
+      // Compound entry names (owner/repo#subpath) push some titles past what a
+      // result page shows — Bing flags them and search engines truncate mid-
+      // name. Fall back through progressively shorter forms of the name until
+      // the title fits: full name, then without the owner, then the bare
+      // package name after '#' — which is what plugin-name queries actually
+      // contain. The owner stays in the URL and on the page either way.
+      .replaceAll('__TITLE__', () => {
+        const render = (n) => loc.P_TITLE.replace('{NAME}', n).replace('{CAT}', loc.categories[e.cat])
+        const candidates = [e.name, short, short.split('#').pop()]
+        return esc(render(candidates.find((n) => render(n).length <= 65) ?? candidates[candidates.length - 1]))
+      })
       .replaceAll('__DESC__', () => esc(metaDesc))
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => dHreflangs)

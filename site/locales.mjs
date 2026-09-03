@@ -55,6 +55,9 @@ export default [
     // category, and showing who wrote a plugin is worth more in a result list
     // than showing which of twenty categories it sits in.
     P_TITLE: '{NAME} — dsh plugin · {CAT}',
+    // Used only when an entry's one-line description is too short to stand
+    // alone as a meta description (Bing flags those). {DESC} is the original.
+    P_META_SHORT: '{DESC} · {NAME} is a DeepSeek Harness (dsh) plugin in {CAT}, with the install command, source links and community comments on this page.',
     COPY_LABEL: 'Copy install command',
     COPY_TEXT: 'copy install',
     categories: {
@@ -174,6 +177,9 @@ export default [
     CAT_TITLE: '{CAT} — {N} 个 dsh 插件',
     CAT_DESC: 'DeepSeek Harness（dsh）{CAT}插件共 {N} 个，包括 {TOP}。含安装命令、功能描述与仓库链接，持续更新。',
     P_TITLE: '{NAME} — dsh 插件 · {CAT}',
+    // 仅在条目一句话描述太短、不足以独立作为 meta description 时使用（Bing 会
+    // 标记这类页面）。{DESC} 为原始描述。
+    P_META_SHORT: '{DESC}——{NAME} 是 DeepSeek Harness（dsh）「{CAT}」类插件，本页提供安装命令、来源链接与社区评论。',
     COPY_LABEL: '复制安装命令',
     COPY_TEXT: '复制安装命令',
     categories: {
