@@ -3158,7 +3158,7 @@ description:
   zh: 一句话描述，以句号结尾。
 ```
 
-One file per plugin means two submissions never touch the same file, so PRs stop conflicting with each other. Run `node scripts/generate-readme.mjs` to refresh both READMEs, and commit the result.
+One file per plugin means two submissions never touch the same file, so PRs stop conflicting with each other. You can run `node scripts/generate-readme.mjs` to preview both READMEs locally; they are regenerated on `main` after merge, so you do not need to commit the outputs.
 
 Your repo must:
 
