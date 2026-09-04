@@ -1,6 +1,6 @@
-url: https://github.com/yu-wenchao/dsh-opencode-free-models
+url: https://github.com/yu-wenchao/dsh-opencode-free-models/tree/master/plugin/dsh-opencode-free-models
 name: yu-wenchao/dsh-opencode-free-models
 category: model
 description:
-  en: "OpenCode Zen free models panel for DeepSeek Harness: auto-syncs free model list, zero-config provider registration, no API key required."
-  zh: "DeepSeek Harness 的 OpenCode Zen 免费模型面板：自动同步免费模型列表，零配置 provider 注册，无需 API Key。"
+  en: Free model provider plugin for DSH with 20+ models including Gemini, MiMo, GLM, etc.
+  zh: DSH 免费模型插件，提供 20+ 模型包括 Gemini、MiMo、GLM 等。
