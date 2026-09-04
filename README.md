@@ -2018,6 +2018,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### Docs & Rendering
 
 - [3361805598-gif/dsh-md-annotator](https://github.com/3361805598-gif/dsh-md-annotator) - Markdown sidebar preview and source editor for dsh-better-sidebar, with block- and text-range annotations that can be sent to the conversation as structured revision requests.
+- [aduo-111/second-brain](https://github.com/aduo-111/second-brain) - Distills daily AI conversations (Doubao, ChatGPT, DeepSeek, Kimi) into structured Markdown notes in your Obsidian vault.
 - [AKS1st/dsh-mermaid](https://github.com/AKS1st/dsh-mermaid) - Render Mermaid code fences in DSH Web chat messages as lazy-loaded SVG diagrams with strict sanitization and light/dark theme follow.
 - [baconbao/dsh-mermaid-image-preview](https://github.com/baconbao/dsh-mermaid-image-preview) - Preview Mermaid diagrams as images via local rendering in DSH Web when the chat message contains a Mermaid fenced code block, and also allow integration with external rendering servers.
 - [baosfeng/my-dsh-plugins#dsh-mermaid-render](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-mermaid-render) - Renders mermaid/mmd code blocks in the conversation as chart cards with preview/code toggle; the engine is inlined so it works fully offline with no CDN (npm: `dsh-mermaid-render`).
