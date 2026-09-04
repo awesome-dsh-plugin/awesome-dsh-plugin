@@ -663,6 +663,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
 - [DeepTrial/dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) — 将符合条件的 shell 命令路由给 rtk，压缩工具输出并节省 token。
 - [dfycaly98931680/dsh-trajectory-governance](https://github.com/dfycaly98931680/dsh-trajectory-governance) — Agent 轨迹治理与异常诊断：把平铺会话日志重建为多分支轨迹树，识别循环死锁/无效重试/目标漂移，带成本归因的告警与一键中断/断点分支（官方 API），独立 GUI Tab。
+- [dingminhua/dsh-sub-cli#plugin](https://github.com/dingminhua/dsh-sub-cli/tree/main/plugin) — 在 DSH 中统一管理外部 Agent CLI（Codex 与 Claude Code 两家）：独立统一目录、每 CLI 三层模型路由（Provider / 模型 / 推理强度）、无头派发（cli_dispatch）与 Relay/Subagent 持续会话（Host 重启后通过 sessions.json reattach 同一 thread）。执行层硬 allowlist guard（仅允许 managed_cli_submit / report）+ 三通道 fail-loud 安装（适配 0.1.1 / 0.1.2 / 双通道皆无则拒启动）；turn-deadline 探测（3 / 5 / 10 分钟档）确保 CLI 卡死不拖累 host。
 - [dsh-plugins/dsh-auxiliary](https://github.com/dsh-plugins/dsh-auxiliary) — 为视觉理解、上下文压缩、审批审查、子代理、会话标题与图片生成提供独立的模型路由、工具与系统提示。
 - [duhu2000/qcc-mcp-oauth](https://github.com/duhu2000/qcc-mcp-oauth) — 一键 OAuth（PKCE）授权接入企查查 MCP 服务：动态注册客户端、token 自动刷新、动态配置 mcp-client 条目，一次授权覆盖全部企查查数据服务。
 - [Edge-Echo/dsh-mcp-bridge](https://github.com/Edge-Echo/dsh-mcp-bridge) — 精选 MCP 服务器全家桶：一键接入演示、记忆、文件系统、GitHub、Playwright、远程 HTTP 等服务器，自带连通性验证工具与 CI 检查。
