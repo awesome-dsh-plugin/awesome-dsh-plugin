@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-reply-language
+name: CAI-MH/dsh-reply-language
+category: identity
+description:
+  en: 'Force the model to write all replies in a chosen language (Simplified Chinese by default) via a system-prompt section, switchable anytime with a tool.'
+  zh: '通过系统提示词强制模型全程使用指定语言回复（默认中文简体），可用工具随时切换。'
