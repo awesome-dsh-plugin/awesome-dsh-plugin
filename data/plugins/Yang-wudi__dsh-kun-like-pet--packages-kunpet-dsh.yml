@@ -1,0 +1,7 @@
+# Kun Like 桌宠：DSH profile 插件（dsh.bundle 位于 packages/kunpet-dsh 子包）
+url: https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh
+name: Yang-wudi/dsh-kun-like-pet#kunpet-dsh
+category: fun
+description:
+  en: A Kun-Like desktop pet living in the corner of the DSH web UI; switches animations with agent state and plays a voice line on task completion.
+  zh: 住在 DSH Web 界面右下角的坤坤桌宠：随 Agent 状态切换动作，任务完成时播放「你干嘛~哎哟」。

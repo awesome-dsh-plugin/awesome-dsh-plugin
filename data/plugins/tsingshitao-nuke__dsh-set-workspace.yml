@@ -1,0 +1,6 @@
+url: https://github.com/tsingshitao-nuke/dsh-set-workspace
+name: tsingshitao-nuke/dsh-set-workspace
+category: session
+description:
+  en: 'Adds a Windows Explorer right-click action to open a folder as a DSH workspace, launching DSH if needed.'
+  zh: '给 Windows 文件管理器加右键项：把文件夹设为 DSH 工作区并切换到它，DSH 未运行会自动拉起。'

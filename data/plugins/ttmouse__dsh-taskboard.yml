@@ -1,0 +1,6 @@
+url: https://github.com/ttmouse/dsh-taskboard
+name: ttmouse/dsh-taskboard
+category: workflow
+description:
+  en: 'Full local-first issue board embedded in the DSH web GUI: Kanban / list / Gantt / workflow / dashboard views, AI chat per task, attachments and labels, auto-claim of todo tasks driven by dsh-routines — data lives in local SQLite (dsh plugin add @ttmouse/dsh-taskboard).'
+  zh: 内嵌于 DSH Web GUI 的完整本地优先任务看板：看板/列表/Gantt/工作流/仪表盘视图、任务 AI 对话、附件与标签、dsh-routines 驱动的待办自动认领——数据存本地 SQLite（dsh plugin add @ttmouse/dsh-taskboard）。

@@ -1,0 +1,6 @@
+url: https://github.com/pingg02/dsh-plugins/tree/main/dsh-quote-selection
+name: pingg02/dsh-plugins#dsh-quote-selection
+category: ui
+description:
+  en: Lets users quote selected conversation text with optional notes, then attaches the references to their next message.
+  zh: 引用选中的对话文本并添加可选备注，在发送下一条消息时自动附带引用内容。

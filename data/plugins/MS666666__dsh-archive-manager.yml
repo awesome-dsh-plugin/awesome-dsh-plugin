@@ -1,0 +1,6 @@
+url: https://github.com/MS666666/dsh-archive-manager
+name: MS666666/dsh-archive-manager
+category: market
+description:
+  en: 'Archive manager for DSH Web: list archived sessions in the Settings page and delete them for real, including their log, archive marker, and projection cache.'
+  zh: '归档管理：在设置页列出已归档会话，并可真正删除，连同会话日志、归档标记与投影缓存一并清理。'

@@ -1,0 +1,6 @@
+url: https://github.com/tnnevol/fn-os-apps/tree/main/plugins/dsh-codex-auth-plugin
+name: tnnevol/fn-os-apps#dsh-codex-auth-plugin
+category: identity
+description:
+  en: ChatGPT OAuth authentication and Codex account management for DeepSeek Harness, including model catalog and usage display.
+  zh: 为 DeepSeek Harness 提供 ChatGPT OAuth 登录和 Codex 账号管理，包括模型目录和用量展示。

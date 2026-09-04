@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dock-files
+name: AKS1st/dock-files
+category: ui
+description:
+  en: 'File explorer for the dock workbench: tree browsing of the session workspace with create/rename/copy-paste/delete, drag-and-drop import and paste of local files and clipboard images.'
+  zh: dock 系列文件浏览插件：侧边栏目录树浏览会话工作区，支持新建/重命名/复制粘贴/删除、拖放导入、粘贴本地文件与剪贴板图片。

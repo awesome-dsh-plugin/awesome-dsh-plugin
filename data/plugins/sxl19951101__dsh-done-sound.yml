@@ -1,0 +1,6 @@
+url: https://github.com/sxl19951101/dsh-done-sound
+name: sxl19951101/dsh-done-sound
+category: notify
+description:
+  en: 'Play different configurable sounds for five conversation events in the DeepSeek Harness web GUI: normal completion, interrupt, error, approval wait, and auto-retry success; each event has its own audio setting and bundled default, with auto-retry after errors using a configurable wait (10-300s), plus a community sound library.'
+  zh: 'DeepSeek Harness Web GUI 的不同触发情况可分别设置音频提醒：支持正常完成、中断、出错、等待确认、自动重连成功五种场景，每种场景都有独立音频配置和默认音效；出错后自动重连，等待时长可自定义（10-300 秒）；附带社区音色库下载。'

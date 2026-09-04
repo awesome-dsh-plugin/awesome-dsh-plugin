@@ -1,0 +1,6 @@
+url: https://github.com/TongaiLinC/dsh-mobile-access
+name: TongaiLinC/dsh-mobile-access
+category: remote
+description:
+  en: 'Mobile access plugin for the Web GUI: LAN/VPN access with a PC approval gate, network-mode switching and mobile UI adaptations.'
+  zh: 移动端访问插件：经局域网/VPN 访问 Web GUI，含 PC 审批门禁、网络模式切换与移动端 UI 适配。

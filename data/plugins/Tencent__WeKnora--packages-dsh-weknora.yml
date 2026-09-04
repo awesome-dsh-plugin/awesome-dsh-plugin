@@ -1,0 +1,6 @@
+url: https://github.com/Tencent/WeKnora/tree/main/packages/dsh-weknora
+name: Tencent/WeKnora#dsh-weknora
+category: tools
+description:
+  en: 'Four read-only tools over a WeKnora knowledge base: list knowledge bases, hybrid passage search, reassemble one document''s chunks in order, and WeKnora''s own cited RAG or ReAct-agent answer with a resumable session id.'
+  zh: '把 WeKnora 知识库接入 dsh 的四个只读工具：列出知识库、混合检索原文片段、按顺序还原单篇文档，以及直接取用 WeKnora 自己带引用的 RAG 或 ReAct agent 回答（含可续聊的 session id）。'

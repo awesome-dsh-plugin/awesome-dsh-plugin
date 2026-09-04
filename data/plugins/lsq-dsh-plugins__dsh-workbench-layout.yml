@@ -1,0 +1,6 @@
+url: https://github.com/lsq-dsh-plugins/dsh-workbench-layout
+name: lsq-dsh-plugins/dsh-workbench-layout
+category: ui
+description:
+  en: Rearranges DSH Web into a three-column workbench with file editing, Git views, Markdown preview, and workspace terminals.
+  zh: 将 DSH Web 重排为三栏工作台，提供文件编辑、Git 视图、Markdown 预览和工作区终端。

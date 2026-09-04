@@ -1,0 +1,6 @@
+url: https://github.com/Bob-Bo1/dsh-deepseek-balance
+name: Bob-Bo1/dsh-deepseek-balance
+category: usage
+description:
+  en: Shows DeepSeek API balance and local DSH Flash and Pro usage costs.
+  zh: 在 DSH 中查看 DeepSeek API 余额及本机 Flash 和 Pro 消费统计。

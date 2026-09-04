@@ -1,0 +1,6 @@
+url: https://github.com/CH4ACKO3/dsh-turn-fold
+name: CH4ACKO3/dsh-turn-fold
+category: ui
+description:
+  en: 'Codex-style turn folding for the DSH Web UI: keeps final answers visible, groups consecutive reasoning and tool activity, and shows configurable live duration, tool-call, and token metrics with multilingual summaries.'
+  zh: '面向 DSH Web UI 的 Codex 风格回合折叠：保留最终答复，合并连续的推理与工具活动，并以多语言摘要展示可配置的实时耗时、工具调用和 token 指标。'

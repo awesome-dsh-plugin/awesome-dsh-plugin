@@ -2,5 +2,5 @@ url: https://github.com/STARDUSTLC666/dsh-voice
 name: STARDUSTLC666/dsh-voice
 category: voice
 description:
-  en: 'Voice pair: free edge-tts neural speech synthesis + OpenAI-compatible ASR transcription.'
-  zh: 语音双件套：edge-tts 免费微软神经语音合成 + OpenAI 兼容 ASR 转写。
+  en: 'Voice tools: free edge-tts neural speech synthesis, OpenAI-compatible ASR transcription, voice list, batch voice preview and health self-check.'
+  zh: 语音五工具：edge-tts 免费微软神经语音合成、OpenAI 兼容 ASR 转写、音色清单、批量音色试听与健康自检。

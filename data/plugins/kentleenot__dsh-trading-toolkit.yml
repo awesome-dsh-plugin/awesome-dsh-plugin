@@ -1,0 +1,6 @@
+url: https://github.com/kentleenot/dsh-trading-toolkit
+name: kentleenot/dsh-trading-toolkit
+category: tools
+description:
+  en: 'A-share and US stock trading toolkit for DSH agents: realtime quotes, OHLCV klines, ADX three-state regime signals and simple backtest previews via EastMoney. Read-only, never places orders.'
+  zh: 'DSH agent 的 A股/美股交易工具箱：实时行情、OHLCV K线、ADX 三状态市场分类信号与简易回测预览，数据源东方财富。只读设计，永不下单。'

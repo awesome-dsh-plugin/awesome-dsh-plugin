@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/dsh-snippets
+name: taxueseek/dsh-snippets
+category: tools
+description:
+  en: 'Minimal snippet and command toolbox for DSH: five tools over a single human-editable JSONL file, zero UI, zero database, zero network, explicit save-only memory.'
+  zh: 'DSH 极简片段/命令工具箱：5 个工具，一个可手工编辑的 JSONL 文件，零 UI、零数据库、零网络，只有明确说存才存。'

@@ -1,0 +1,6 @@
+url: https://github.com/wbin0001/dsh-comfyui-canvas
+name: wbin0001/dsh-comfyui-canvas
+category: tools
+description:
+  en: "Embed your ComfyUI as a split-screen canvas tab in DSH Web and let the agent operate the live canvas: read/write workflows, edit nodes, wire links, run, fetch output images, batch-sweep parameters, attach images, inject text, and export API-format workflows."
+  zh: "把 ComfyUI 作为分屏画布标签嵌入 DSH Web，agent 实时操作活画布：读写工作流、改节点、连线、运行、取回出图、批量扫参、图片进画布、文本注入、导出 API 格式工作流。"

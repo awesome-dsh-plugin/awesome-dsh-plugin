@@ -1,0 +1,6 @@
+url: https://github.com/chiang21fcb/cn-linebreak
+name: chiang21fcb/cn-linebreak
+category: tools
+description:
+  en: 'Static HTML auditor for Chinese line-breaking: checks explicit-`<br>` orphan lines, keep-all CSS coverage, CJK line-start/line-end punctuation rules, and protected-phrase splits, then inserts <wbr> at natural breakpoints; exposes a cn_linebreak_audit tool for agents.'
+  zh: '中文网页文案断行静态审查与修复工具：检查显式 <br> 孤字行、keep-all 覆盖、标点禁则、保护词被拆等问题，并在自然停顿处自动插入 <wbr>；提供 cn_linebreak_audit 工具供代理调用。'

@@ -1,0 +1,7 @@
+url: https://github.com/ADWMC/helm-d/tree/main/packages/helmd
+name: ADWMC/helm-d#helmd
+category: security
+tarball: https://github.com/ADWMC/helm-d/releases/latest/download/helmd.tgz
+description:
+  en: 'Single-bundle security analysis plugin: bootstrap tool narrowing, a domain router, and 25 reverse-engineering tools covering APK, native binary, protocol, malware and LLM samples with on-demand reference docs.'
+  zh: '单包安全分析插件：引导期工具收敛、领域路由与 25 个逆向分析工具，覆盖 APK、原生二进制、协议、恶意样本与 LLM 场景，参考文档按需读取。'

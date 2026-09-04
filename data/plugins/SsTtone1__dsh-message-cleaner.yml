@@ -1,0 +1,6 @@
+url: https://github.com/SsTtone1/dsh-message-cleaner
+name: SsTtone1/dsh-message-cleaner
+category: ui
+description:
+  zh: "历史消息记录面板：按条删除、原位恢复与内置节点导航条，删除后工具调用卡片无遗留。"
+  en: "Conversation history panel: per-exchange delete, in-place restore and a built-in node rail, with no leftover tool-call cards after deletion."

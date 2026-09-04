@@ -1,0 +1,6 @@
+url: https://github.com/SuCriss/dsh-voice-control
+name: SuCriss/dsh-voice-control
+category: voice
+description:
+  en: 'Composer-integrated voice control: mic button beside the send button (Web Speech API push-to-talk, Chrome/Edge), optional auto-send, and automatic TTS playback of assistant replies with settle debounce and markdown cleanup. Dynamic voice list per browser/OS, zero dependencies.'
+  zh: 输入框集成声控：发送键旁麦克风语音输入（Web Speech API 推式识别，Chrome/Edge），可选自动发送；语音指令的回复自动朗读（1.5s 稳定去抖 + Markdown 口语化清洗），音色按浏览器/系统动态适配，零依赖。

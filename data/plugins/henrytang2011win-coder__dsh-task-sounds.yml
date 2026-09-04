@@ -1,0 +1,22 @@
+# dsh-task-sounds 的插件商店收录条目（提交用）
+#
+# 提交方式：向 awesome-dsh-plugin/awesome-dsh-plugin 仓库提 PR，
+# 新增一个文件 data/plugins/henrytang2011win-coder__dsh-task-sounds.yml
+# （内容即本文件，用户名已填好），然后按仓库 contributing.md 重新生成
+# README 一起提交。
+#
+# 注意：
+#   - name 是「owner/repo」，不是包名；url 必须与仓库完全一致
+#   - category 用 notify（通知与集成）—— 与本插件做的事相符
+#   - 描述含半角冒号加空格（": "）时必须加引号，否则 YAML 解析失败
+#   - npm 包不需要写在这里：构建时会对仓库做 npm 映射校验
+#     （先 npm publish，再提 PR）
+#   - CI 自动检查：仓库创建满 1 天、提交数 ≥ 10、package.json 声明
+#     dsh.bundle manifest（本包已声明）、仓库带 dsh-plugin topic
+---
+url: https://github.com/henrytang2011win-coder/dsh-task-sounds
+name: henrytang2011win-coder/dsh-task-sounds
+category: notify
+description:
+  en: 'Task-complete and question notification sounds for the DeepSeek Harness Web UI: a soft chime when the agent finishes a turn, a ding-dong when it asks you something (questions, plan reviews, approvals). Synthesized Web Audio, zero assets, mute toggle and volume slider in the session header and settings.'
+  zh: '任务完成与提问提示音：Agent 完成回合时播放一声轻快提示音，向你提问（普通提问/计划评审/权限确认）时播放叮咚声。Web Audio 实时合成、零资源零网络，会话头部带静音开关，设置页可调音量。'

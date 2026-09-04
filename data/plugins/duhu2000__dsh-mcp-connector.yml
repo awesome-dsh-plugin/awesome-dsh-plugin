@@ -1,0 +1,6 @@
+url: https://github.com/duhu2000/dsh-mcp-connector
+name: duhu2000/dsh-mcp-connector
+category: tools
+description:
+  en: 'DeepSeek Harness MCP Connector and MCP Server marketplace with a continuously updated registry of over one hundred MCP connectors. Discover, authorize, and manage connections in one place; supports OAuth 2.0 PKCE, API keys, stdio/HTTP, mcpServers JSON import, and tool and prompt discovery. Maintained by Qichacha/QCC.'
+  zh: 'DeepSeek Harness 的 MCP 连接器与 MCP Server 市场，注册表收录超百个 MCP 连接器并持续更新；统一发现、授权和连接管理，支持 OAuth 2.0 PKCE、API Key、stdio/HTTP、mcpServers JSON 导入，以及工具与 Prompt 发现；由企查查/QCC 团队维护。'

@@ -11,6 +11,17 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
+# Every iteration below starts with `git reset --hard`, which silently throws
+# away anything uncommitted in the working tree. That includes edits to this
+# very script: a fix being written here was destroyed mid-run, and because bash
+# re-reads a script while executing it, the run afterwards was following a file
+# that no longer existed on disk. Refuse to start unless the tree is clean.
+if [ -n "$(git status --porcelain)" ]; then
+  echo "working tree is not clean — commit or stash first (this script runs 'git reset --hard')"
+  git status --short | sed 's/^/  /'
+  exit 1
+fi
+
 for n in "$@"; do
   git checkout -q main && git fetch -q origin && git reset -q --hard origin/main
 
@@ -26,6 +37,20 @@ for n in "$@"; do
   git checkout -q -B "maint$n" FETCH_HEAD
 
   if ! git rebase origin/main >/dev/null 2>&1; then
+    # A stale fork usually carries several commits that each touch the two
+    # generated READMEs, so the rebase stops once per commit. Resolving once and
+    # calling `rebase --continue` a single time only clears the first stop: the
+    # second one made --continue return non-zero, and the script reported
+    # CONFLICT and handed back a branch that needed no human at all. #1873 was
+    # exactly this — four commits, three of them README regenerations, no real
+    # conflict anywhere. Keep resolving until the rebase finishes or something
+    # this script has no business deciding is left unmerged.
+    giveup=""
+    guard=0
+    while [ -d "$(git rev-parse --git-path rebase-merge)" ] || [ -d "$(git rev-parse --git-path rebase-apply)" ]; do
+    guard=$((guard + 1))
+    if [ "$guard" -gt 50 ]; then giveup="more than 50 conflicting commits"; break; fi
+
     # Generated files are regenerated below, so main's copy always wins.
     git checkout origin/main -- README.md README.zh.md 2>/dev/null
 
@@ -61,6 +86,20 @@ for n in "$@"; do
         // contributors'"'"' diffs and read as "this PR also touched unrelated
         // entries", which is the exact signal used to catch cross-entry damage.
         // Poisoning it is worse than an untidy file.
+        // Screenshots for entries that are no longer listed have to go. An old
+        // branch carries keys for entries main has since removed or renamed,
+        // and build-site refuses a key that matches no entry — "is not a
+        // listed entry URL". Two rebases came back red for exactly this and
+        // for nothing else, which reads to the contributor as their
+        // submission being broken. Their screenshots are untouched; only keys
+        // pointing at entries that do not exist are dropped.
+        const listed = new Set(
+          fs.readdirSync("data/plugins")
+            .filter((f) => f.endsWith(".yml"))
+            .map((f) => (fs.readFileSync("data/plugins/" + f, "utf8").match(/^url:\s*(\S+)/m) || [])[1])
+            .filter(Boolean),
+        )
+        for (const k of Object.keys(out)) if (!listed.has(k)) delete out[k]
         const order = [...Object.keys(ours).filter((k) => k in out), ...Object.keys(out).filter((k) => !(k in ours))]
         fs.writeFileSync("data/screenshots.json", JSON.stringify(Object.fromEntries(order.map((k) => [k, out[k]])), null, 1) + "\n")
       ' 2>/dev/null; then
@@ -73,16 +112,27 @@ for n in "$@"; do
     # contributor's branch — which is exactly what happened before this check
     # existed, to ten branches at once. Hand it back instead.
     if [ -n "$(git diff --name-only --diff-filter=U)" ]; then
-      echo "$n :: unresolved: $(git diff --name-only --diff-filter=U | tr '\n' ' ')"
-      git rebase --abort >/dev/null 2>&1; git checkout -f -q main
-      echo "$n :: CONFLICT (needs a human)"; continue
+      giveup="unresolved: $(git diff --name-only --diff-filter=U | tr '\n' ' ')"
+      break
     fi
 
     git add -A 2>/dev/null
-    git -c core.editor=true rebase --continue >/dev/null 2>&1 || {
+    if ! git -c core.editor=true rebase --continue >/dev/null 2>&1; then
+      # Once a commit's README churn is discarded in favour of main's copy the
+      # commit can have nothing left in it, and --continue refuses to create an
+      # empty commit. For a "regenerate README" commit that is the expected
+      # outcome, not a failure — drop it and carry on.
+      git -c core.editor=true rebase --skip >/dev/null 2>&1 || {
+        giveup="rebase --continue and --skip both failed"
+        break
+      }
+    fi
+    done
+
+    if [ -n "$giveup" ]; then
       git rebase --abort >/dev/null 2>&1; git checkout -f -q main
-      echo "$n :: CONFLICT (needs a human)"; continue
-    }
+      echo "$n :: CONFLICT ($giveup)"; continue
+    fi
   fi
 
   # The READMEs are generated, so main's copy is the only correct starting
@@ -94,6 +144,32 @@ for n in "$@"; do
   # GEN-FAIL "bad entry data", blaming the contributor's YAML for a staleness
   # this script had itself preserved.
   git checkout origin/main -- README.md README.zh.md 2>/dev/null
+
+  # Prune screenshots for entries that no longer exist. This has to run on
+  # every rebase, not only when screenshots.json conflicted: a branch that
+  # rebases cleanly keeps its own copy of the file verbatim, dead keys and all,
+  # and build-site then refuses it with "is not a listed entry URL". #1664 and
+  # #1044 both rebased clean and both came back red for four dead keys the
+  # contributor never touched. Contributor screenshots are untouched.
+  if [ -f data/screenshots.json ]; then
+    node -e '
+      const fs = require("fs")
+      let shots
+      try { shots = JSON.parse(fs.readFileSync("data/screenshots.json", "utf8")) } catch { process.exit(0) }
+      const listed = new Set(
+        fs.readdirSync("data/plugins")
+          .filter((f) => f.endsWith(".yml"))
+          .map((f) => (fs.readFileSync("data/plugins/" + f, "utf8").match(/^url:\s*(\S+)/m) || [])[1])
+          .filter(Boolean),
+      )
+      const dead = Object.keys(shots).filter((k) => !listed.has(k))
+      if (!dead.length) process.exit(0)
+      for (const k of dead) delete shots[k]
+      fs.writeFileSync("data/screenshots.json", JSON.stringify(shots, null, 1) + "\n")
+      console.error("      dropped " + dead.length + " screenshot key(s) for entries that no longer exist")
+    ' 2>&1
+    git add data/screenshots.json 2>/dev/null
+  fi
 
   node scripts/generate-readme.mjs >/dev/null 2>&1 || {
     git checkout -f -q main; echo "$n :: GEN-FAIL (bad entry data)"; continue
@@ -127,6 +203,20 @@ for n in "$@"; do
   if git grep -qE '^(<{7}|>{7}) ' -- 2>/dev/null; then
     echo "$n :: MARKERS (conflict markers in the result — refusing to push)"
     git grep -lE '^(<{7}|>{7}) ' -- 2>/dev/null | sed 's/^/      /'
+    git checkout -f -q main; continue
+  fi
+
+  # A submission changes entry data and the two generated READMEs. Nothing
+  # else. Forks taken before the CI landed carry a branch that *deletes*
+  # .github/workflows — ten open pull requests do this right now — and a clean
+  # rebase preserves that deletion, so rebasing one and merging it would take
+  # the repository's own CI down. pr-guard.yml catches it on the way in; this
+  # catches it on the way out, so a maintainer's rebase can never push a
+  # workflow deletion onto a contributor's branch either. Refuse and report.
+  stray=$(git diff origin/main --name-only | grep -vE '^(data/|README\.md$|README\.zh\.md$)' || true)
+  if [ -n "$stray" ]; then
+    echo "$n :: OUT-OF-SCOPE (touches files a submission has no business changing — refusing to push)"
+    echo "$stray" | sed 's/^/      /'
     git checkout -f -q main; continue
   fi
 

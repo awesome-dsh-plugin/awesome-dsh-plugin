@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-node-appearance
+name: Max-Null/dsh-node-appearance
+category: ui
+description:
+  en: 'Conversation node appearance for the DeepSeek Harness web GUI: configurable per-category and per-tool colors (left accent bar + tinted background), plus a show-thinking toggle; pure frontend rendering, takes effect instantly and persists to the DSH user settings file.'
+  zh: DeepSeek Harness Web GUI 会话节点外观插件：按节点类别/工具名可配置着色（左侧色条 + 淡色底），附带"显示思考过程"开关；纯前端渲染增强，改动即时生效并持久化到 DSH 用户设置文件。

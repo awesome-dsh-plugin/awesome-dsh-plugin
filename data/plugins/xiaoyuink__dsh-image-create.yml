@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyuink/dsh-image-create
+name: xiaoyuink/dsh-image-create
+category: tools
+description:
+  en: 'Text-to-image and image-to-image generation inside DSH through OpenAI-compatible endpoints, with an agent tool, multi-provider fallback, and a side-panel workspace with history.'
+  zh: '在 DSH 内直接文生图/图生图：对接 OpenAI 兼容图像接口，提供 Agent 生图工具、多供应商自动降级，以及带生成历史的侧栏工作台。'

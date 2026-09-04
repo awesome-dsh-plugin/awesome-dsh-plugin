@@ -1,0 +1,6 @@
+url: https://github.com/chrisx9z/dsh-chat-share
+name: chrisx9z/dsh-chat-share
+category: session
+description:
+  en: Share a selected chat segment as Markdown, HTML, or plain text; Header button, sidebar ... menu, and /share command.
+  zh: 将选中的聊天片段分享为 Markdown、HTML 或纯文本；支持 Header 按钮、侧边栏 ... 菜单与 /share 命令。

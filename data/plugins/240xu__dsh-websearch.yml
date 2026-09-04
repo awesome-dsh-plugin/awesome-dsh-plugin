@@ -1,0 +1,6 @@
+url: https://github.com/240xu/dsh-websearch
+name: 240xu/dsh-websearch
+category: browser
+description:
+  en: Aggregated web search provider that fans one query out to 11 engines (Exa, Parallel, DuckDuckGo, SearXNG, Brave, Tavily, Serper, Mojeek, DeepSeek, Anthropic, OpenAI) concurrently, URL-dedupes and merges the results. Ships a settings card for toggling backends, storing API keys in the credential store, and tuning concurrency and timeouts.
+  zh: 聚合网络搜索插件：一次查询并发分发到 11 个引擎（Exa、Parallel、DuckDuckGo、SearXNG、Brave、Tavily、Serper、Mojeek、DeepSeek、Anthropic、OpenAI），URL 去重后合并结果。设置面板卡片可开关后端、将 API Key 存入凭证库，并调整并发与超时。

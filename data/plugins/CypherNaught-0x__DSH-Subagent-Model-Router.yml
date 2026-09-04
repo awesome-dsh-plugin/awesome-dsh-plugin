@@ -1,0 +1,6 @@
+url: https://github.com/CypherNaught-0x/DSH-Subagent-Model-Router
+name: CypherNaught-0x/DSH-Subagent-Model-Router
+category: model
+description:
+  en: 'Routes delegated subagent work to configured models: a subagent_model tool whose model enum is the configured aliases, per-route tags and routing guidance injected into the tool schema and system prompt, a wait-for-subagents join tool returning terminal results from outstanding background children, active-model chips in the subagent header and catalog rows, and a Web settings page, namespace-scoped configuration tool, and guided setup skill.'
+  zh: 把委派给子代理的任务路由到配置好的模型：subagent_model 工具的 model 枚举即配置的别名，每条路由的标签与使用说明会注入工具 schema 与系统提示；wait-for-subagents 汇合工具等待未完成的可续跑后台子代理并返回其最终结果；在子代理头部与目录行显示当前模型标签；另有 Web 设置页、命名空间内的配置工具与引导设置技能用于管理路由。

@@ -1,7 +1,7 @@
 url: https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness
 name: jermaine123123/agent-context-editor#deepseek-harness
-category: ui
-tarball: https://github.com/jermaine123123/agent-context-editor/releases/download/v0.1.0-alpha.1/context-editor-deepseek-harness-0.1.1.tgz
+category: session
+tarball: https://github.com/jermaine123123/agent-context-editor/releases/download/v0.3.0/context-editor-deepseek-harness-0.3.0.tgz
 description:
-  en: Searchable and reversible management view for DeepSeek Harness reasoning and answer units, with type filters, batch actions, and sidecar-persisted hide state that preserves the original Session.
-  zh: 为 DeepSeek Harness 的 reasoning 与 answer 单元提供可搜索、可恢复的管理视图，支持类型筛选和批量操作，使用 sidecar 保存隐藏状态并保留原始 Session。
+  en: Agent Context Editor is a cross-agent plugin for manually excluding and editing AI conversation context. It also supports searching, filtering, selecting, hiding, restoring, and undoing conversation changes while preserving the original Session.
+  zh: Agent Context Editor 是一个可以手动排除和编辑 AI 对话上下文的跨 Agent 插件，同时支持搜索、筛选、选择、隐藏、恢复和撤销对话内容，并保留原始 Session。

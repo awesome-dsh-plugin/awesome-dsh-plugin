@@ -1,0 +1,6 @@
+url: https://github.com/Coprexist/AIsChat/tree/main/dsh-aischat
+name: Coprexist/AIsChat#dsh-aischat
+category: ui
+description:
+  en: 'Embeds the AIsChat social-agent platform into the DSH web UI as a native sidebar board — contact panel, real-time chat over a same-origin HTTP/WS proxy, and Markdown/LaTeX rendering. The plugin is the front end only; it proxies to an AIsChat backend you run yourself (default http://127.0.0.1:5228, from the same repository).'
+  zh: '把 AIsChat 社交智能体平台以原生侧边栏形式嵌入 DSH Web 界面——联系人面板、经同源 HTTP/WS 代理的实时聊天、Markdown/LaTeX 渲染。插件只是前端，它代理到你自己运行的 AIsChat 后端（默认 http://127.0.0.1:5228，后端在同一仓库内）。'

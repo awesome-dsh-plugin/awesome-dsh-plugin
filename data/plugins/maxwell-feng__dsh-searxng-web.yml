@@ -1,0 +1,6 @@
+url: https://github.com/maxwell-feng/dsh-searxng-web
+name: maxwell-feng/dsh-searxng-web
+category: browser
+description:
+  en: Backs the native web_search and web_fetch tools with your self-hosted SearXNG instance, keyless and private.
+  zh: 用自托管 SearXNG 实例接管原生 web_search 与 web_fetch 工具，免密钥、不经第三方。

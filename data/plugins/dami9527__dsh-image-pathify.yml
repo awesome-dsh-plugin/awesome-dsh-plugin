@@ -1,0 +1,6 @@
+url: https://github.com/dami9527/dsh-image-pathify
+name: dami9527/dsh-image-pathify
+category: vision
+description:
+  en: 'Lets text-only models handle pasted chat images, with a native vision experience, batch image viewing, and a built-in OpenAI-compatible analyze_image tool; vision-capable models are unaffected.'
+  zh: '让纯文本模型也能处理聊天贴图，提供原生视觉体验，支持批量看图，走内置 OpenAI 兼容识图工具 analyze_image；具备视觉能力的模型不受影响。'

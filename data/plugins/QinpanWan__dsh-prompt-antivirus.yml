@@ -1,0 +1,6 @@
+url: https://github.com/QinpanWan/dsh-prompt-antivirus
+name: QinpanWan/dsh-prompt-antivirus
+category: security
+description:
+  en: 'Global prompt-injection / context-virus defense for DeepSeek Harness: scans tool arguments, tool results, pre-model messages and the outbound stream; quarantine/block/monitor modes, canary trap, and an evolvable on-disk signature library with learn/import/export.'
+  zh: '全局提示注入 / 上下文病毒防御：扫描工具参数、工具结果、进模型前消息与出站流；隔离/阻断/监控三模式、金丝雀陷阱、可演进磁盘签名库（学习/导入/导出）。'

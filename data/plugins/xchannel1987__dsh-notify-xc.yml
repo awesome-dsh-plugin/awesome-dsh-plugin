@@ -1,0 +1,6 @@
+url: https://github.com/xchannel1987/dsh-notify-xc
+name: xchannel1987/dsh-notify-xc
+category: notify
+description:
+  en: 'System notifications for DeepSeek Harness: browser Notification API toasts when an agent finishes a task or needs your input, approval, or plan review; clicking a toast focuses the page and opens the owning session.'
+  zh: 'DeepSeek Harness 系统通知：agent 完成任务或需要你输入/批准/审阅计划时，通过浏览器 Notification API 弹出系统通知；点击气泡聚焦页面并打开对应会话。'

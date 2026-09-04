@@ -1,0 +1,6 @@
+url: https://github.com/symmetryseeker/dsh-akn-plugin
+name: symmetryseeker/dsh-akn-plugin
+category: memory
+description:
+  en: 'Local-first Agent Experience Network for DeepSeek Harness, distilling task-level experiences from traces and live manifests, grading by H0-H4 evidence, discovering by compatibility, and promoting only after explicit review.'
+  zh: DeepSeek Harness 的本地优先 Agent 经验网络：从 trace 与实时 Manifest 蒸馏任务级经验，按 H0-H4 证据分级、按兼容性发现，经显式审阅后才晋升。

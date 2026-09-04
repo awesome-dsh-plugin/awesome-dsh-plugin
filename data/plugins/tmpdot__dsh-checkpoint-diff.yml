@@ -1,0 +1,6 @@
+url: https://github.com/tmpdot/dsh-checkpoint-diff
+name: tmpdot/dsh-checkpoint-diff
+category: session
+description:
+  en: 'Browses checkpoints produced by dsh-checkpoint-rewind as a timeline of time nodes and shows per-file line diffs between any two of them, with trace replay from session logs (no snapshot producer needed) and preview-first workspace rollback with single-shot undo, via /diff and /rollback commands, a JSON HTTP API, and a GUI panel.'
+  zh: '把 dsh-checkpoint-rewind 产生的检查点变成时间线时间节点，任意两节点之间逐文件行级 diff；可从会话日志重放 trace 区间差异（无需快照生产者）；支持预览式工作区回滚与一次性撤销。提供 /diff、/rollback 命令、JSON HTTP API 与 GUI 面板。'
