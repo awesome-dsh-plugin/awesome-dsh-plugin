@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-feishu-task-recorder
+name: CAI-MH/dsh-feishu-task-recorder
+category: notify
+description:
+  en: 'Poll Feishu (Lark) chats through lark-cli, extract candidate tasks with a review workflow, and two-way sync them with the task-board plugin, with a floating browser panel.'
+  zh: '通过 lark-cli 轮询飞书会话，提取候选任务并逐条审核，与任务看板插件双向同步，含悬浮面板。'
