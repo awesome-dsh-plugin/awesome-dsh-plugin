@@ -70,6 +70,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
   - [Security & Permissions](#security--permissions)
   - [Remote & Mobile](#remote--mobile)
   - [Plugin Markets & Managers](#plugin-markets--managers)
+  - [dsh-insurance-experts](https://github.com/kevinchu1981/dsh-insurance-experts) — 4 个中文保险专家 DSH 插件：经营分析/公司分析/产品建议书/精算师
   - [Just for Fun](#just-for-fun)
 - [Badge](#badge)
 - [Disclaimer](#disclaimer)
