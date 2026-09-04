@@ -1,0 +1,6 @@
+url: https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-mission-control
+name: dennisrongo/dsh-plugins#dsh-mission-control
+category: ui
+description:
+  en: 'Fleet dashboard overlay for multiple dsh sessions: a live grid with per-session stats, a permission inbox with approve/deny, a command deck for steer/stop/fork/rename, and an activity feed with an error attention scan.'
+  zh: '面向多会话的机队仪表盘浮层：实时网格展示各会话统计，权限收件箱支持批准与拒绝，命令面板可转向、停止、派生、重命名会话，活动流附带错误扫描。'

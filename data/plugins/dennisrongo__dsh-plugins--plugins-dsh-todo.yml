@@ -1,0 +1,6 @@
+url: https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-todo
+name: dennisrongo/dsh-plugins#dsh-todo
+category: ui
+description:
+  en: 'Per-workspace todo list with a web GUI tab and a dsh-todo CLI; state lives in one SQLite database per project under <workspace>/.dsh, so GUI and terminal share one list.'
+  zh: '每工作区的待办清单，含 Web 标签页与 dsh-todo 命令行；状态存于 <workspace>/.dsh 下每项目一个 SQLite 数据库，图形界面与终端共享同一份列表。'
