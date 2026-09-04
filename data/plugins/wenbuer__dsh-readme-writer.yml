@@ -1,0 +1,6 @@
+url: https://github.com/wenbuer/dsh-readme-writer
+name: wenbuer/dsh-readme-writer
+category: skill
+description:
+  en: 'Adaptive GitHub README writer for DeepSeek Harness: detects image-capture capability (web browser or console/CLI terminal screenshot), then writes/optimizes README.md with relative-path screenshots and captions.'
+  zh: 'DeepSeek Harness 的自适应 GitHub README 撰写技能：先探测截图能力（网页或控制台/CLI 终端截屏），再写或优化 README.md，配相对路径截图与说明。'
