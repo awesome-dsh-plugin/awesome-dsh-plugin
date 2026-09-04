@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-cron
+name: GooDAnDReaDY/dsh-cron
+category: workflow
+description:
+  en: "Scheduled cron tasks and background automation for DeepSeek Harness: define recurring jobs with cron expressions, run agent sessions on a schedule, and manage job history from a settings panel."
+  zh: "DeepSeek Harness 的定时 cron 任务与后台自动化：使用 cron 表达式定义周期任务，按计划运行 Agent 会话，并从设置面板管理任务历史。"

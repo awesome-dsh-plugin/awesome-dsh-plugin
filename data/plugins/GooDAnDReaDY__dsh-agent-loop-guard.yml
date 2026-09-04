@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-agent-loop-guard
+name: GooDAnDReaDY/dsh-agent-loop-guard
+category: tools
+description:
+  en: "Runtime guard for DeepSeek Harness that detects tool-call and assistant-output loops, halts runaway agentic cycles, and surfaces a diagnostic card with loop depth and trigger context."
+  zh: "DeepSeek Harness 运行时守卫，检测工具调用与助手输出循环，停止失控的智能体周期，并显示包含循环深度和触发上下文的诊断卡片。"
