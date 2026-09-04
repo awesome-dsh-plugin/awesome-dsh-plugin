@@ -1,0 +1,6 @@
+url: https://github.com/UnknowCao/dsh-dock
+name: UnknowCao/dsh-dock
+category: tools
+description:
+  en: 'One-click desktop launcher: a prebuilt whale exe opens the DSH Web UI as a fullscreen Edge app (token health gate, cold-start card), and a sidebar More menu adds Settings/Reload/Full Exit that stops the server and closes the window.'
+  zh: '一键桌面启动器：预编译鲸鱼 exe 双击即全屏打开 DSH Web UI（token 健康闸、冷启动呼吸卡）；侧栏「更多」菜单提供 设置/重启/完全退出，退出自动关窗并停止服务器。'
