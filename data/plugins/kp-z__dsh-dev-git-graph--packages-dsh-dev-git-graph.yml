@@ -1,5 +1,5 @@
-url: https://github.com/kp-z/dsh-dev-git-graph
-name: kp-z/dsh-dev-git-graph
+url: https://github.com/kp-z/dsh-dev-git-graph/tree/main/packages/dsh-dev-git-graph
+name: kp-z/dsh-dev-git-graph#dsh-dev-git-graph
 category: git
 description:
   en: "A Git Graph tab for DSH Web: a faithful port of vscode-git-graph 1.30.0 that registers a native tab in the dsh-better-sidebar right rail (prerequisite), auto-binds to the session workspace, runs the full git operations (checkout/merge/rebase/push/tag/stash) directly on the host, and opens file diffs in the built-in DiffTab."
