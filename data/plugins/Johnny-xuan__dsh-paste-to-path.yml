@@ -2,5 +2,5 @@ url: https://github.com/Johnny-xuan/dsh-paste-to-path
 name: Johnny-xuan/dsh-paste-to-path
 category: tools
 description:
-  en: Paste, drop, or choose images, documents, archives, code, and other files in DSH, then review and manage them before sending them to the Agent.
-  zh: 在 DSH 中粘贴、拖入或选择图片、文档、压缩包、代码等文件，发送前统一查看和管理，再交给 Agent 处理。
+  en: 'A lightweight, general-purpose attachment Dock for DSH: paste, drop, or choose images, PDFs, documents, archives, code, and other files, review and manage them before sending, then pass them to the Agent as local paths. It gives non-image files a consistent attachment entry point.'
+  zh: 一个轻量、通用的 DSH 附件 Dock：支持粘贴、拖入或选择图片、PDF、文档、压缩包、代码等文件，发送前统一查看和管理，再以本地路径交给 Agent；解决非图片文件缺少统一附件入口的问题。
