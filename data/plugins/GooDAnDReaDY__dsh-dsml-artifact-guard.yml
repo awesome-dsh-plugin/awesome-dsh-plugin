@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard
+name: GooDAnDReaDY/dsh-dsml-artifact-guard
+category: tools
+description:
+  en: "Sanitizes DSML artifact protocol tags that leak into assistant output in DeepSeek Harness, preventing raw control markup from reaching the rendered conversation."
+  zh: "清理渗入 DeepSeek Harness 助手输出的 DSML artifact 协议标签，防止原始控制标记出现在渲染后的对话中。"
