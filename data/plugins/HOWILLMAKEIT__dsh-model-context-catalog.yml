@@ -1,0 +1,6 @@
+url: https://github.com/HOWILLMAKEIT/dsh-model-context-catalog
+name: HOWILLMAKEIT/dsh-model-context-catalog
+category: model
+description:
+  en: 'Route-level contextWindow catalog for llm-pi-ai models: a Settings page lists configured routes, stores the real window per route, and syncs it through the public Settings API so long sessions are no longer misjudged as context overflow.'
+  zh: '为 llm-pi-ai 模型维护路由级 contextWindow：设置页列出已配置路由、按路由保存真实窗口值，并经公开 Settings API 同步，避免长会话被误判为上下文溢出。'
