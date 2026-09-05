@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-xiuxian
+name: weibaohui/dsh-xiuxian
+category: fun
+description:
+  en: "Xianxia desktop pets linked to live agent sessions: MC pixel-style companions appear when subagents spawn (up to 3 on screen), with storage-bag collection, a right-click artifact menu, a pet gallery picker, and export to the Codex desktop-pet format."
+  zh: 修仙陪伴：随机唤醒《凡人修仙传》角色，MC 像素风桌宠与 agent 会话实时联动，子代理启动时化身宠物现身（最多 3 只同屏），支持储物袋收藏、右键法宝菜单、图鉴选宠，可导出 Codex 桌宠格式。
