@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-quality-review
+name: CAI-MH/dsh-quality-review
+category: agi
+description:
+  en: 'Audit each finished assistant turn with an independent reviewer model and steer the agent to fix failed output, with at most 2 review rounds per turn.'
+  zh: '每轮回复结束时用独立审查模型审核输出，判定不合格则引导 agent 修复，每轮最多追问 2 次。'
