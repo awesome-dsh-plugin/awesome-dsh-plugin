@@ -1,0 +1,6 @@
+url: https://github.com/Physicolor/dsh-lifeline
+name: Physicolor/dsh-lifeline
+category: ui
+description:
+  en: 'Right-side message navigation rail for DeepSeek Harness: per-message tick marks, hover-to-expand preview drawer, smooth jump to any historical message, star bookmarks, realtime slide animation with interrupt support, full session index with virtualization, dynamic panel avoidance, official --dsw-* token styling.'
+  zh: DeepSeek Harness 右侧消息导航轨道：逐条消息刻度、悬浮预览抽屉、平滑跳转、星标回看、实时平移动画（可打断）、完整会话索引与虚拟化、面板动态避让、官方 --dsw-* token 样式。

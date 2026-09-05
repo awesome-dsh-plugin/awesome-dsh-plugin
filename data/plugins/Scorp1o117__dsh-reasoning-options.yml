@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-reasoning-options
+name: Scorp1o117/dsh-reasoning-options
+category: model
+description:
+  en: Add missing reasoning-effort declarations to custom pi-ai models through DSH settings, enabling the native effort picker and handling models added later.
+  zh: 通过 DSH 设置为自定义 pi-ai 模型补充缺失的推理强度声明，启用原生强度选择器，并自动处理后续添加的模型。

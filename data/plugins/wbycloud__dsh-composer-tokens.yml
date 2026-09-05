@@ -1,0 +1,8 @@
+# Draft for a PR to awesome-dsh-plugin/awesome-dsh-plugin.
+# Official destination: data/plugins/wbycloud__dsh-composer-tokens.yml
+url: https://github.com/wbycloud/dsh-composer-tokens
+name: wbycloud/dsh-composer-tokens
+category: usage
+description:
+  en: Real-time token estimates for the DSH conversation composer, combining the current context baseline with the draft and showing exact or heuristic counts.
+  zh: 为 DSH 对话输入框实时估算 token 数，将当前上下文基线与草稿合并计算，并区分精确计数与启发式估算。

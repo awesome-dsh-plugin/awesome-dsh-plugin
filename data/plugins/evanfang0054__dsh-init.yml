@@ -1,0 +1,6 @@
+url: https://github.com/evanfang0054/dsh-init
+name: evanfang0054/dsh-init
+category: workflow
+description:
+  en: 'Claude Code style /init command and tool that writes a minimal CLAUDE.md and symlinks AGENTS.md to it.'
+  zh: 提供 Claude Code 风格的 /init 命令与工具，生成极简 CLAUDE.md，并将 AGENTS.md 以相对软链指向它。

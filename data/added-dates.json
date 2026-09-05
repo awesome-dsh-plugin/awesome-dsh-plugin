@@ -425,7 +425,7 @@
  "https://github.com/hccccc01333/dsh-excel-chat/tree/master/bundle": "2026-08-14",
  "https://github.com/jilian-dsh/dsh-rules-manager/tree/main/dsh-rules-manager": "2026-08-18",
  "https://github.com/lifeodyssey/dsh-compressor/tree/main/plugins/dsh-compressor": "2026-08-16",
- "https://github.com/reshuibuduo/TMCRA-Agent-Memory/tree/main/integrations/deepseek-harness-local": "2026-08-16",
+ "https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness": "2026-08-16",
  "https://github.com/s3yf1337/dsh-desktop/tree/main/bundle": "2026-08-16",
  "https://github.com/songoao25/dsh-bottom-info-bar/tree/main/plugin": "2026-08-16",
  "https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin": "2026-08-14",
@@ -442,7 +442,6 @@
  "https://github.com/No-PRM/dsh-explorer/tree/main/dsh-plugins/dsh-explorer": "2026-08-16",
  "https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github": "2026-08-17",
  "https://github.com/openma-ai/deepseek-harness-tui/tree/main/npm": "2026-08-14",
- "https://github.com/springbrand-lab/dsh-skin-universe/tree/main/packages/dsh-web-ui-all": "2026-08-17",
  "https://github.com/Tabbit-Browser/dsh-tabbit": "2026-08-21",
  "https://github.com/omdsh-dev/stent": "2026-08-13",
  "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tavily": "2026-08-15"

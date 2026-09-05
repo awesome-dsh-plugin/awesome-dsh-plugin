@@ -1,0 +1,6 @@
+url: https://github.com/Wenaixi/dsh-ponytail
+name: Wenaixi/dsh-ponytail
+category: skill
+description:
+  en: 'Port of DietrichGebert/ponytail v4.9.0: always-on lazy senior mode with a 7-rung ladder (YAGNI to minimal code), 6 skills for review, audit, debt, gain and help, with no empty tools.'
+  zh: 'DietrichGebert/ponytail v4.9.0 的 DSH 完整移植：常驻懒人 senior 模式与七阶梯子（YAGNI 到最小实现），含 6 个技能（评审、审计、债务、收益、帮助）且无空 tool。'

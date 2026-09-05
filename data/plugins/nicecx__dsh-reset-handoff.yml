@@ -1,0 +1,6 @@
+url: https://github.com/nicecx/dsh-reset-handoff
+name: nicecx/dsh-reset-handoff
+category: dev
+description:
+  en: 'Hands DSH reset requests to an external ops agent via a versioned JSON protocol: preflight snapshot, pre-restart maturity gate (no pending approvals, free disk, cooldown), restart, health check, and interrupted-work recovery, with the result delivered back to the requesting session.'
+  zh: '把 DSH 重置请求经带版本的 JSON 协议交给外部运维 agent：预检快照、重启前成熟度门禁（无待审批、磁盘充足、冷却期）、重启、健康检查与业务恢复，结果投递回发起会话。'

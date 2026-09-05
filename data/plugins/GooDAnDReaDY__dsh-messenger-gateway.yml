@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-messenger-gateway
+name: GooDAnDReaDY/dsh-messenger-gateway
+category: notify
+description:
+  en: "Telegram bridge for DeepSeek Harness: bidirectional sessions, conversation steering, home-channel routing, and TTS voice notes sent as Telegram audio messages."
+  zh: "DeepSeek Harness 的 Telegram 桥接：双向会话、对话引导、主频道路由，以及以 Telegram 语音消息发送的 TTS 语音笔记。"

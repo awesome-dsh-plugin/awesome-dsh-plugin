@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-settings-ui
+name: weibaohui/dsh-settings-ui
+category: ui
+description:
+  en: "Customizes the native settings window: preset or custom window sizes, fullscreen, background transparency, and theme, solid-color, or image backgrounds, with a floating ball for quick access; saved in the local browser."
+  zh: 设置界面自定义：调整原生设置窗口大小（全屏/预置大尺寸/自定义宽高）、背景透明度与背景（主题/自定义颜色/图片），悬浮球即开即调，存本机浏览器。

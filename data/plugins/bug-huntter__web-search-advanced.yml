@@ -1,0 +1,6 @@
+url: https://github.com/bug-huntter/web-search-advanced
+name: bug-huntter/web-search-advanced
+category: browser
+description:
+  en: 'Switchable web-search provider for DSH: native DeepSeek web search or an OpenAI-compatible custom backend, with a Settings card for provider, Base URL, model, API key and result limits.'
+  zh: 可切换的网页搜索提供方：内置 DeepSeek 原生搜索与 OpenAI 兼容自定义后端两种模式，并附设置卡片配置服务商、Base URL、模型、API Key 与搜索上限。

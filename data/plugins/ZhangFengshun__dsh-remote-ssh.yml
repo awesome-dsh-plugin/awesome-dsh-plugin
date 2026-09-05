@@ -1,0 +1,6 @@
+url: https://github.com/ZhangFengshun/dsh-remote-ssh
+name: ZhangFengshun/dsh-remote-ssh
+category: remote
+description:
+  en: "VSCode Remote-SSH-style development for DSH — connect to HPC and servers over SSH, read and edit remote files in the built-in Files tab, auto-SSH terminal, remote workspaces with single-roundtrip reads and result caching, and 12 session-aware remote_ssh_* model tools."
+  zh: "类 VSCode Remote-SSH 的 DSH 插件：SSH 连接超算/服务器，内置文件页签直读远程文件、终端页签自动 SSH，远程工作区配单往返合并读与结果缓存，含 12 个会话感知的 remote_ssh_* 模型工具。"

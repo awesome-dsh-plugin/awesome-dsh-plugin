@@ -1,0 +1,6 @@
+url: https://github.com/QWE13-ART/dsh-skill-folder
+name: QWE13-ART/dsh-skill-folder
+category: skill
+description:
+  en: 'Folds the DSH skill catalog prompt surface with KV-cache-stable rendering, BM25/bge-m3 hybrid skill search, and optional auto route hints.'
+  zh: '折叠 DSH 技能目录提示面：KV 缓存稳定渲染 + BM25/bge-m3 混合技能检索 + 可选自动路由提示。'

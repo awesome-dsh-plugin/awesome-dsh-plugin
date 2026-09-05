@@ -1,0 +1,6 @@
+url: https://github.com/inclusionAI/Avernet/tree/dev/src/bcs/crates/plugins/deepseek-harness-channel-bcn
+name: inclusionAI/Avernet#deepseek-harness-channel-bcn
+category: notify
+description:
+  en: Connects DeepSeek Harness to Avernet's Bot Collaboration Network over WebSocket V2, with automatic onboarding, isolated agent sessions, tool-call events, and multi-bot routing tools.
+  zh: 通过 WebSocket V2 将 DeepSeek Harness 接入 Avernet Bot 协作网络，支持自动注册、Agent 会话隔离、工具调用事件和多 Bot 路由工具。

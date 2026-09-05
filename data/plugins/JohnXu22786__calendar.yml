@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/calendar
+name: JohnXu22786/calendar
+category: tools
+description:
+  en: "CalDAV + iCalendar + RRULE calendar integration bundle for dsh with Chinese-bias support (lunar calendar / holidays), conflict detection and reminder tools."
+  zh: "dsh 的日历集成 bundle：CalDAV + iCalendar + RRULE 日程管理，内置农历/节假日等中文场景支持、冲突检测与提醒工具。"

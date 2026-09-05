@@ -1,0 +1,6 @@
+url: https://github.com/bainianlaoyao/dsh-codex-harness
+name: bainianlaoyao/dsh-codex-harness
+category: tools
+description:
+  en: 'Codex-shaped coding tools and an agent preset for DeepSeek Harness: exec_command, apply_patch, view_image, DSH-native collaboration tools, and OpenAI Chat Completions and Responses API routes.'
+  zh: 面向 DeepSeek Harness 的 Codex 风格编码工具与 agent 预设：exec_command、apply_patch、view_image、DSH 原生协作工具，以及 OpenAI Chat Completions 和 Responses API 路由。

@@ -1,0 +1,6 @@
+url: https://github.com/Rudyy898/dsh-drag-path
+name: Rudyy898/dsh-drag-path
+category: ui
+description:
+  en: 'Like Codex/Claude Code: drag any file or folder (no format limit) onto the DSH web page and its real absolute path is inserted into the composer instantly — no typing paths by hand. Workspace-first smart lookup, size checks, same-name picker, batch and clipboard paste support, Windows/macOS.'
+  zh: '像 Codex/Claude 一样：拖入任意格式文件或文件夹，真实绝对路径立即插入输入框，不用一个个打字。工作区优先智能定位、大小校验、同名弹候选选择器，支持批量拖入与粘贴，兼容 Windows/macOS。'

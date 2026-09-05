@@ -45,6 +45,27 @@ __HREFLANGS__
   src:url(/archivo-latin-ext.woff2) format('woff2');
   unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
 }
+/* Metric-matched fallback. While Archivo is still in flight, headings render
+   in this Arial (size-adjusted to Archivo's weight-800 advances - the h1 is
+   what drives layout) instead of whatever system-ui resolves to, so the swap
+   changes glyphs, not geometry. On Windows the Segoe UI fallback re-wrapped
+   the hero and shifted the whole card grid below it - the top remaining CLS
+   source in field data once the counters were fixed.
+
+   The ratio is against Arial REGULAR: local('Arial') grabs only the regular
+   face, and the synthetic bold the browser applies at weight 800 does not
+   widen advances. Measured in-browser on heading-length samples: Archivo@800
+   / synthetic-bold-Arial = 111.1%; Archivo ascent 88 and descent 21 per
+   100px em, divided by size-adjust. Verified: identical wrap heights across
+   15 width x text combinations, residual width delta 0.7%. */
+@font-face{
+  font-family:'Archivo Fallback';
+  src:local('Arial');
+  size-adjust:111.1%;
+  ascent-override:79.2%;
+  descent-override:18.9%;
+  line-gap-override:0%;
+}
 /* ── 纸墨朱砂 · warm paper + modern cards (design B, 2026-08) ── */
 :root{
   --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
@@ -52,7 +73,7 @@ __HREFLANGS__
   --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
   --on-cinnabar:#ffffff;
   --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
-  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --display:"Archivo","Archivo Fallback","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
   --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
 }
 @media (prefers-color-scheme: dark){
@@ -125,8 +146,10 @@ h1 em{font-style:normal;color:var(--cinnabar)}
 .market svg{color:var(--cinnabar);flex:none}
 .market .lead b{color:var(--cinnabar-deep)}
 .market .lead a:hover{text-decoration:underline;text-underline-offset:3px}
+/* min-width: same label swap as .cli .copy, same reason — see there. */
 .market .go{margin-left:auto;flex:none;font-weight:600;font-size:.82rem;color:var(--on-cinnabar);background:var(--cinnabar);
-  border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap}
+  border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap;
+  min-width:7rem;text-align:center}
 .market .go:hover{background:var(--cinnabar-deep)}
 
 /* ── chips ── */
@@ -196,9 +219,13 @@ li.hidden{display:none}
 .cli{display:flex;align-items:stretch;margin-top:.45rem;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;width:100%}
 .cli input{flex:1;min-width:0;width:100%;font-family:var(--mono);font-size:.7rem;color:var(--ink);
   background:var(--paper);border:none;outline:none;padding:.42rem .6rem}
+/* min-width reserves room for the "✓ copied" label this swaps to on click and
+   reverts from 1.2s later. That revert is past the 500ms window CLS forgives
+   after an interaction, so without it the button resizes and squeezes the
+   input beside it as an unexpected shift. Same reason as .market .go below. */
 .cli .copy{margin:0;border:none;border-left:1px solid var(--line-2);flex:none;display:flex;align-items:center;
   font-family:var(--mono);font-size:.68rem;color:var(--ink-3);background:var(--card);padding:0 .8rem;white-space:nowrap;
-  transition:all .15s ease}
+  min-width:5.5rem;justify-content:center;transition:all .15s ease}
 .cli .copy:hover,.cli .copy.done{color:var(--on-cinnabar);background:var(--cinnabar)}
 
 /* ── info panels ── */
@@ -262,14 +289,14 @@ __AD_HEAD__
     <div>
       <h1 translate="no">Awesome <em>DeepSeek Harness</em> Plugin</h1>
       <p class="tagline">__T_TAGLINE__</p>
-      <p class="count-line">__T_LISTING_PRE__ <span id="total">0</span> __T_LISTING_POST__ · <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">__T_WHATIS__</a></p>
+      <p class="count-line">__T_LISTING_PRE__ <span id="total">__CARD_COUNT__</span> __T_LISTING_POST__ · <a href="https://github.com/deepseek-ai/deepseek-harness" rel="noopener">__T_WHATIS__</a></p>
     </div>
   </div>
   <div class="wrap searchband">
     <div class="searchbar">
       <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
       <input id="q" type="search" autocomplete="off" spellcheck="false" name="plugin-search" placeholder="__SEARCH_PH__" aria-label="__SEARCH_PH__">
-      <span class="count" id="count" aria-live="polite">0 / 0</span>
+      <span class="count" id="count" aria-live="polite">__CARD_COUNT__ / __CARD_COUNT__</span>
     </div>
     <div class="market">
       <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>

@@ -1,0 +1,7 @@
+url: https://github.com/xfqz86/dsh-usage-stats
+name: xfqz86/dsh-usage-stats
+category: usage
+description:
+  en: Token usage statistics by model, session and date in a sidebar panel, plus OpenCode Go quota, DeepSeek balance and Z.ai quota monitoring.
+  zh: 在侧边栏按模型、会话与日期统计 token 用量，并监控 OpenCode Go 额度、DeepSeek 余额与 Z.ai 额度。
+tarball: https://github.com/xfqz86/dsh-usage-stats/releases/latest/download/xfqz86-dsh-usage-stats.tgz

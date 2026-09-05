@@ -1,0 +1,6 @@
+url: https://github.com/melt502/DSH-Session-Reference-UX-Patch
+name: melt502/DSH-Session-Reference-UX-Patch
+category: ui
+description:
+  en: Durable, reversible installer that patches DSH Desktop session-reference UX — workspace-prioritized @ candidates, title-first display, two-line menu layout, and sidebar drag-to-composer session references.
+  zh: 可回滚的 DSH Desktop 会话引用体验补丁安装器——@ 菜单当前工作区优先、标题优先展示、两行布局，以及侧边栏拖拽会话到输入区形成引用。

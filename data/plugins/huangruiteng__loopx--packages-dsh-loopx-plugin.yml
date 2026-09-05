@@ -1,0 +1,7 @@
+url: https://github.com/huangruiteng/loopx/tree/main/packages/dsh-loopx-plugin
+name: huangruiteng/loopx#dsh-loopx-plugin
+category: workflow
+description:
+  en: 'LoopX, a provider-neutral, local-first state kernel and control plane for long-horizon agents: keeps Goal, Todo, gate, evidence, quota, recovery, and handoff state above DeepSeek Harness, while the plugin bootstraps the CLI and skills, admits bounded same-session continuation, and adds a loopback GoalBar for the exact bound loop.'
+  zh: 'LoopX——面向长周期 Agent 的提供商中立、本地优先状态内核与控制平面：在 DeepSeek Harness 执行层之上持久化 Goal、Todo、门禁、证据、配额、恢复与交接状态；插件负责引导安装 CLI 与技能、准入有界的同会话续跑，并为精确绑定的工作循环提供本地 GoalBar。'
+tarball: https://github.com/huangruiteng/loopx/releases/download/dsh-loopx-plugin-v0.1.1-beta.4/dsh-loopx-plugin-0.1.1-beta.4.tgz

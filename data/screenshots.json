@@ -810,12 +810,6 @@
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/demo.gif",
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/social.png"
  ],
- "https://github.com/sjh9714/dsh-what-changed": [
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-zh.png",
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-worktree.png",
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-shell.png",
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel.png"
- ],
  "https://github.com/sjh9714/dsh-win32": [
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/market-card.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-persistent-sandboxed.png",
@@ -1358,5 +1352,9 @@
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/backup_EN.png",
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/import_EN.png",
   "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/delete-confirm_EN.png"
+ ],
+ "https://github.com/kenny2077/dsh-web-search-doubao": [
+  "https://raw.githubusercontent.com/kenny2077/dsh-web-search-doubao/main/docs/img/settings-card.png",
+  "https://raw.githubusercontent.com/kenny2077/dsh-web-search-doubao/main/docs/img/console.png"
  ]
 }

@@ -1,0 +1,6 @@
+url: https://github.com/lin-1259/dsh-desktop-linux-updater
+name: lin-1259/dsh-desktop-linux-updater
+category: usage
+description:
+  en: 'One-click update for the self-built Linux dsh-desktop: check fork releases, download the deb, swap the app and restart.'
+  zh: '桌面端 Linux 自建版一键更新：检查 fork release、下载 deb、替换应用目录并自动重启。'

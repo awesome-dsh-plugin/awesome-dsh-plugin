@@ -1,0 +1,7 @@
+url: https://github.com/miaomiao636/dsh-message-navigator
+name: miaomiao636/dsh-message-navigator
+category: ui
+tarball: https://github.com/miaomiao636/dsh-message-navigator/releases/download/v0.1.3/dsh-message-navigator-0.1.3.tgz
+description:
+  zh: "为 DeepSeek Harness Web UI 提供 Codex 风格的消息导航器：对话边缘为每条用户消息生成刻度，悬停或点击即可预览并平滑跳转到对应消息，自动加载完整历史记录。"
+  en: "Codex-style message navigator for the DeepSeek Harness Web UI: a tick per user message along the conversation edge, hover or click to preview and smooth-jump to the message, with full history auto-loading."

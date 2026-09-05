@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-plugin-marketplace
+name: Scorp1o117/dsh-plugin-marketplace
+category: market
+description:
+  en: Browse and search GitHub dsh-plugin repositories from Web UI Settings, sort by stars, and install plugins through the DSH CLI.
+  zh: 在 Web UI 设置页浏览和搜索 GitHub dsh-plugin 仓库，按 Star 排序，并通过 DSH CLI 安装插件。

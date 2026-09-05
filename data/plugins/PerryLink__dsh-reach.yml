@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-reach
+name: PerryLink/dsh-reach
+category: remote
+description:
+  en: Pushes DSH approval and question cards to IM channels (WeChat first) and answers them from chat, with a session console, per-channel security, and an open push service.
+  zh: 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。

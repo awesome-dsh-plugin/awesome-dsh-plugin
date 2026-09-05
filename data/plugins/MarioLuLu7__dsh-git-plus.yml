@@ -1,0 +1,6 @@
+url: https://github.com/MarioLuLu7/dsh-git-plus
+name: MarioLuLu7/dsh-git-plus
+category: git
+description:
+  en: 'DSH Source Control tab in dsh-better-sidebar that mirrors VS Code Git workflows.'
+  zh: 'dsh-better-sidebar 中的 DSH 源代码管理面板，尽量对齐 VS Code 的 Git 工作流。'
