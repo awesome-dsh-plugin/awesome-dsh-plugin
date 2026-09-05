@@ -1,0 +1,7 @@
+url: https://github.com/Crosery/dsh-drop
+name: Crosery/dsh-drop
+category: ui
+description:
+  en: 'Drag or paste files into the Web composer with one image-and-file preview rail; native PNG/JPEG/WebP/GIF keep the image attachment path, while other files reuse a matching local path or stream to Host staging and become @ references only at send time. Includes browser media/PDF and bounded text previews; Office and archives show identity cards, and unsent file entries are page-local.'
+  zh: '把文件拖入或粘贴进 Web 输入框，图片与文件共用预览栏；PNG/JPEG/WebP/GIF 保留出厂图片通道，其他文件优先引用匹配的本地路径，否则流式暂存到 Host，发送时才追加 @ 引用。提供浏览器媒体/PDF 和限长文本预览；Office 与压缩包显示身份卡，未发送文件清单仅保存在页面内。'
+tarball: https://github.com/Crosery/dsh-drop/releases/latest/download/dsh-drop.tgz
