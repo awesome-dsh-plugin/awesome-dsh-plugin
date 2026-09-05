@@ -2,5 +2,5 @@ url: https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/ds
 name: ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-repopanel
 category: git
 description:
-  en: Browse the GitHub issues and pull requests of a workspace's origin remote, filter and comment, close or reopen, and hand one to an agent as a task.
-  zh: 浏览工作区 origin 远端对应的 GitHub issue 与 pull request，筛选、评论、关闭或重开，并可交给 agent 变成任务。
+  en: Browse the GitHub issues and pull requests of a workspace's origin remote, filter and comment, close or reopen, and file one as a task on dsh-plugin-taskboard for an agent to claim.
+  zh: 浏览工作区 origin 远端对应的 GitHub issue 与 pull request，筛选、评论、关闭或重开，并可转成任务写到 dsh-plugin-taskboard 的看板上等 agent 领取。
