@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-ticktick
+name: PerryLink/dsh-ticktick
+category: tools
+description:
+  en: TickTick (Dida365) task bridge: a session-header task panel and curated agent tools over the official TickTick MCP endpoint.
+  zh: TickTick（滴答清单）任务桥：会话页头部任务面板与精选代理工具，走官方 TickTick MCP 端点。
