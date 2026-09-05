@@ -38,13 +38,34 @@ __HREFLANGS__
   src:url(/archivo-latin-ext.woff2) format('woff2');
   unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
 }
+/* Metric-matched fallback. While Archivo is still in flight, headings render
+   in this Arial (size-adjusted to Archivo's weight-800 advances - the h1 is
+   what drives layout) instead of whatever system-ui resolves to, so the swap
+   changes glyphs, not geometry. On Windows the Segoe UI fallback re-wrapped
+   the hero and shifted the whole card grid below it - the top remaining CLS
+   source in field data once the counters were fixed.
+
+   The ratio is against Arial REGULAR: local('Arial') grabs only the regular
+   face, and the synthetic bold the browser applies at weight 800 does not
+   widen advances. Measured in-browser on heading-length samples: Archivo@800
+   / synthetic-bold-Arial = 111.1%; Archivo ascent 88 and descent 21 per
+   100px em, divided by size-adjust. Verified: identical wrap heights across
+   15 width x text combinations, residual width delta 0.7%. */
+@font-face{
+  font-family:'Archivo Fallback';
+  src:local('Arial');
+  size-adjust:111.1%;
+  ascent-override:79.2%;
+  descent-override:18.9%;
+  line-gap-override:0%;
+}
 :root{
   --paper:#f6f2ea; --paper-2:#efe9dd; --card:#fffdf8; --line:#e0d8c8; --line-2:#cfc5b0;
   --ink:#2b2620; --ink-2:#5f574a; --ink-3:#8b8172;
   --cinnabar:#c0392b; --cinnabar-deep:#a12f22; --cinnabar-soft:#f7e5e2; --cinnabar-border:#e5c4be;
   --on-cinnabar:#ffffff;
   --sans:"Inter","SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
-  --display:"Archivo","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
+  --display:"Archivo","Archivo Fallback","Inter","PingFang SC","Noto Sans SC",system-ui,sans-serif;
   --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
 }
 @media (prefers-color-scheme: dark){
