@@ -1,0 +1,6 @@
+url: https://github.com/ZIye1208/dsh-github-mcp
+name: ZIye1208/dsh-github-mcp
+category: git
+description:
+  en: "Connects GitHub's official remote MCP server as a DSH plugin: stores the PAT in DSH's credential center (.credentials.yaml) via github_set_token, and exposes GitHub tools as mcp__github__*."
+  zh: "把 GitHub 官方远程 MCP server 封装为 DSH 插件：PAT 存入 DSH 凭据中心（.credentials.yaml），提供 github_set_token / github_token_status 模型工具，GitHub 工具以 mcp__github__* 形式可用。"
