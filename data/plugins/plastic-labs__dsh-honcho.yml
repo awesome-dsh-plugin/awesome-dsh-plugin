@@ -1,0 +1,6 @@
+url: https://github.com/plastic-labs/dsh-honcho
+name: plastic-labs/dsh-honcho
+category: memory
+description:
+  en: 'Honcho memory plugin by Plastic Labs: injects the user profile, session summary and relevant conclusions at session start, uploads each turn to Honcho in the background with secrets redacted, and adds honcho_search / honcho_chat / honcho_remember tools plus a /honcho status command; configured through the ~/.honcho/config.json shared with the other Honcho integrations, against hosted honcho.dev or a self-hosted instance.'
+  zh: '由 Plastic Labs 维护的 Honcho 记忆插件：会话启动时注入用户画像、会话摘要与相关结论，后台脱敏后逐轮上传对话到 Honcho，提供 honcho_search / honcho_chat / honcho_remember 工具及 /honcho 状态命令；通过与其他 Honcho 集成共用的 ~/.honcho/config.json 配置，支持托管的 honcho.dev 或自建实例。'

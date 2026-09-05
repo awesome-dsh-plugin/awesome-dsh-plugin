@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-budget
+name: PerryLink/dsh-budget
+category: usage
+description:
+  en: 'Per-plugin usage budgets and cost caps on the llm/stream waterfall: per-model usage accounting, session and monthly budgets with warn/block transitions, latency windows, and a carbon-footprint estimate.'
+  zh: '在 llm/stream 瀑布上做按插件粒度的用量预算与费用上限：按模型用量记账、会话与月度预算的预警/阻断、延迟窗口与碳足迹估算。'

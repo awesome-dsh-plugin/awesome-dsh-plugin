@@ -1,0 +1,6 @@
+url: https://github.com/duhu2000/dsh-data-cleaning-agent
+name: duhu2000/dsh-data-cleaning-agent
+category: tools
+description:
+  en: 'Clean, complete, profile, and deduplicate CSV/XLSX/JSON enterprise lists in DeepSeek Harness, with optional Qichacha MCP enrichment.'
+  zh: '在 DeepSeek Harness 中清洗、补全、画像和去重 CSV/XLSX/JSON 企业名单，并可选使用企查查 MCP 补全企业数据。'

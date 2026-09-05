@@ -1,0 +1,6 @@
+url: https://github.com/GreenLv/dsh-completion-guard
+name: GreenLv/dsh-completion-guard
+category: security
+description:
+  en: 'Keeps DSH agents from forgetting your requirements during long tasks. It saves important conditions and completion evidence locally, brings them back after context compaction or session resume, and stops partial work from being reported as the whole task done.'
+  zh: '避免 DSH Agent 在长任务中忘记你的要求：它会把重要条件和完成依据保存在本机，在上下文压缩或恢复会话后重新带回，防止漏掉关键限制，或只做完一部分就说整个任务已经完成。'

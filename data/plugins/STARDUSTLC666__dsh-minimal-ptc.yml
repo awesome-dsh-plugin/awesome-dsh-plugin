@@ -2,5 +2,5 @@ url: https://github.com/STARDUSTLC666/dsh-minimal-ptc
 name: STARDUSTLC666/dsh-minimal-ptc
 category: workflow
 description:
-  en: 'Minimal prompt x full PTC tools: one-line persona, Code Mode SDK, subagents, workflows, web search, and Windows Git Bash.'
-  zh: 极简提示词 × PTC 全量工具：一句人格、Code Mode SDK、子代理、工作流、联网搜索与 Windows Git Bash。
+  en: 'Minimal prompt x Web PTC capabilities: one-line persona, run_code SDK, subagents, Ralph, web search/fetch, and Windows Git Bash; the general-purpose workflow tool stays hidden.'
+  zh: '极简提示词 × Web PTC 能力：一句人格、run_code SDK、子代理、Ralph、网页搜索/抓取与 Windows Git Bash；通用 workflow 工具保持隐藏。'

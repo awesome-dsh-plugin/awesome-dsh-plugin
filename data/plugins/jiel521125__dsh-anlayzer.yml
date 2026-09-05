@@ -1,0 +1,6 @@
+url: https://github.com/jiel521125/dsh-anlayzer
+name: jiel521125/dsh-anlayzer
+category: tools
+description:
+  en: This plugin locates the root cause of a failed DeepSeek Harness agent session and produces a shareable diagnostic report.
+  zh: 此插件定位DeepSeek Harness代理会话失败的根本原因，并生成可共享的诊断报告。

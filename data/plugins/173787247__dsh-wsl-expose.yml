@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-expose
+name: 173787247/dsh-wsl-expose
+category: wsl
+description:
+  en: Advises or applies allowlisted Windows portproxy for a WSL listen port.
+  zh: 为 WSL 监听端口提供白名单 Windows portproxy 建议或应用。

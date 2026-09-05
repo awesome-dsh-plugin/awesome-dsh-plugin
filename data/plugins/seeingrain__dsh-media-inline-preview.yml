@@ -1,0 +1,6 @@
+url: https://github.com/seeingrain/dsh-media-inline-preview
+name: seeingrain/dsh-media-inline-preview
+category: ui
+description:
+  en: All-in-one inline media previewer for img/video/audio fences with streaming playback, ffmpeg transcoding fallback, lightbox, and trust-fenced LAN/mobile access.
+  zh: 全能内联媒体预览插件，支持 img/video/audio 围栏的流式播放、ffmpeg 转码回退、灯箱浏览及信任围栏局域网/移动端访问。

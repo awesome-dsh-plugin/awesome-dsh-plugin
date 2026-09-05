@@ -1,0 +1,6 @@
+url: https://github.com/xwh5/dsh-change-review
+name: xwh5/dsh-change-review
+category: ui
+description:
+  en: 'Session change-review for DeepSeek Harness: tracks write/edit tool calls and renders VS Code-style side-by-side diffs via diff2html, auto-following the theme, with subagent aggregation and one-click revert.'
+  zh: 'DSH 会话修改审查：追踪 write/edit 工具调用，集成 diff2html 实现 VS Code 风格 side-by-side diff，自动跟随主题，支持子代理聚合与一键撤回。'

@@ -1,0 +1,6 @@
+url: https://github.com/a23842/dsh-waste-market
+name: a23842/dsh-waste-market
+category: tools
+description:
+  en: 'A-share market dashboard for DeepSeek Harness: realtime market indices, stock screener with 13 technical signals and multi-strategy intersection, 7×24 multi-source news aggregation, watchlist with group management, market sentiment thermometer (limit-up ladder, breadth), K-line charts with MA/EXPMA/BOLL overlays, and sector/limit-up/longhu rankings.'
+  zh: 'DeepSeek Harness A 股行情面板：实时大盘指数、技术选股（13 项信号 + 多策略交叉）、7×24 多源快讯聚合、自选股分组管理、市场情绪温度计（连板梯队/涨跌家数）、K 线图（MA/EXPMA/BOLL 叠加）、板块榜/涨停池/龙虎榜。'

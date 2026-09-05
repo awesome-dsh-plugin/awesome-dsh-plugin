@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/net-debug
+name: JohnXu22786/net-debug
+category: tools
+description:
+  en: 'HTTP network debugging toolset for DeepSeek Harness: a general-purpose HTTP client with SSRF/private-network protection, per-session request history with replay, response inspection and HAR export - three dsh tools plus a zero-dependency CLI.'
+  zh: '为 DeepSeek Harness 打造的网络调试工具集：带 SSRF/私网防护的通用 HTTP 客户端、会话内请求历史与重放、响应检查与 HAR 导出——三个 dsh 工具外加零依赖 CLI。'

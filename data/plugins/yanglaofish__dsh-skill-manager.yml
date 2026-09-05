@@ -1,0 +1,6 @@
+url: https://github.com/yanglaofish/dsh-skill-manager
+name: yanglaofish/dsh-skill-manager
+category: skill
+description:
+  en: "Three-layer skill management for DeepSeek Harness: a library pool, per-workspace enablement whitelists, and per-session picks, with a Web settings panel, a conversation-embedded view, a skill file browser/editor, zip and folder import, and engine-load validation."
+  zh: "DeepSeek Harness 技能生命周期管理：技能库（纯技能池）、工作区启用白名单、会话勾选三层模型；Web 设置面板与对话页内嵌视图，支持技能文件浏览/编辑、zip 与文件夹批量导入、引擎实际加载校验。"

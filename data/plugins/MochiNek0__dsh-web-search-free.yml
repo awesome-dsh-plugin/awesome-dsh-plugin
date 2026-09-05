@@ -2,5 +2,5 @@ url: https://github.com/MochiNek0/dsh-web-search-free
 name: MochiNek0/dsh-web-search-free
 category: tools
 description:
-  en: "Free web search and content fetching plugin with multi-engine fallback across Tavily, Firecrawl, Jina, Exa and Brave."
-  zh: "免费的 Web 搜索与内容抓取插件，支持 Tavily、Firecrawl、Jina、Exa、Brave 多引擎轮询 fallback。"
+  en: "Replaces the default web search and fetch channel with eight free search engines including Tavily, Exa and Brave, tried in a configurable fallback order. Keys are entered in a settings card that also toggles the web_fetch tool."
+  zh: "把默认的 Web 搜索与抓取通道替换为 Tavily、Exa、Brave 等八个免费搜索引擎，按可配置的顺序依次 fallback。在设置卡片中填写各引擎 Key，并可开关 web_fetch 工具。"

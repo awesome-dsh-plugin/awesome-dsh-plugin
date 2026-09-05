@@ -1,0 +1,6 @@
+url: https://github.com/left0ver/dsh-file-review
+name: left0ver/dsh-file-review
+category: ui
+description:
+  en: 'Review agent file changes in a Diff panel, add comments for follow-up edits, and undo edited or newly created files.'
+  zh: '在 Diff 面板中审查 Agent 的文件改动、添加评论以继续修改，并撤销已编辑或新建的文件。'

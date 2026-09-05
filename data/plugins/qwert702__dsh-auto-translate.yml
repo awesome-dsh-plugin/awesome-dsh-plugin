@@ -1,0 +1,6 @@
+url: https://github.com/qwert702/dsh-auto-translate
+name: qwert702/dsh-auto-translate
+category: ui
+description:
+  en: 'Full-pipeline Chinese translation for the dsh web GUI: live translation of the model reasoning as it streams, in-place Chinese below each English reply, and one-line Chinese summaries for tool outputs and tool-call glosses — a standalone provider request that never enters the session transcript.'
+  zh: dsh 网页端全链路中文翻译：思考过程实时翻译、英文回复就地中文、工具输出中文摘要与工具调用注释；翻译为独立提供方请求，不进入会话上下文。

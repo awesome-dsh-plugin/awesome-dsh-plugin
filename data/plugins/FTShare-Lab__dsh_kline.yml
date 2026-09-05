@@ -1,0 +1,6 @@
+url: https://github.com/FTShare-Lab/dsh_kline
+name: FTShare-Lab/dsh_kline
+category: tools
+description:
+  en: Interactive K-line analysis for DeepSeek Harness with multi-market quotes, technical indicators, news, and fundamentals.
+  zh: 面向 DeepSeek Harness 的交互式 K 线分析，支持多市场行情、技术指标、新闻和基本面信息。

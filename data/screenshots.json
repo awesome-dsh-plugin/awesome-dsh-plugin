@@ -4,6 +4,11 @@
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-forge.png"
  ],
+ "https://github.com/jerryqx/dsh-xiaoyuzhou": [
+  "https://raw.githubusercontent.com/jerryqx/dsh-xiaoyuzhou/main/assets/screenshot-bar.png",
+  "https://raw.githubusercontent.com/jerryqx/dsh-xiaoyuzhou/main/assets/screenshot-mysubs.png",
+  "https://raw.githubusercontent.com/jerryqx/dsh-xiaoyuzhou/main/assets/screenshot-podcast.png"
+ ],
  "https://github.com/fengb3/dsh-session-icons": [
   "https://raw.githubusercontent.com/fengb3/dsh-session-icons/master/docs/screenshot.png"
  ],
@@ -805,12 +810,6 @@
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/demo.gif",
   "https://raw.githubusercontent.com/sjh9714/dsh-movein/main/docs/social.png"
  ],
- "https://github.com/sjh9714/dsh-what-changed": [
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-zh.png",
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-worktree.png",
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel-shell.png",
-  "https://raw.githubusercontent.com/sjh9714/dsh-what-changed/master/assets/panel.png"
- ],
  "https://github.com/sjh9714/dsh-win32": [
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/market-card.png",
   "https://raw.githubusercontent.com/sjh9714/dsh-win32/master/assets/shot-persistent-sandboxed.png",
@@ -842,7 +841,7 @@
  "https://github.com/superagents-lab/dsh-s1": [
   "https://raw.githubusercontent.com/superagents-lab/dsh-s1/main/assets/dsh-s1.png"
  ],
- "https://github.com/text2future/flowix/tree/main/app/flowix-dsh-host/bundles/dsh-flowix-memory": [
+ "https://github.com/text2future/flowix/tree/main/dsh-flowix-memory": [
   "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/home-write.png",
   "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/readme-agent.png",
   "https://raw.githubusercontent.com/text2future/flowix/main/docs/images/gh-detail-4.png",
@@ -958,7 +957,7 @@
   "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/installed-view.jpg",
   "https://raw.githubusercontent.com/yyyyukari/dsh-plugin-workshop/master/assets/sidebar-entry.jpg"
  ],
- "https://github.com/zdx8637-gitdog/dshmobile/tree/main/plugins/dshmobile-plugin": [
+ "https://github.com/zdx8637-gitdog/dshmobile/tree/main/plugins": [
   "https://raw.githubusercontent.com/zdx8637-gitdog/dshmobile/main/docs/images/plugin-panel.jpg",
   "https://raw.githubusercontent.com/zdx8637-gitdog/dshmobile/main/docs/images/phone-1.jpg",
   "https://raw.githubusercontent.com/zdx8637-gitdog/dshmobile/main/docs/images/phone-2.jpg",
@@ -1335,5 +1334,27 @@
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-album.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
+ ],
+ "https://github.com/yangdongzhen590/dsh-knj-workflow": [
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/task-detail.png",
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/workflow-editor.png",
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/new-task-modal.png"
+ ],
+ "https://github.com/yangdongzhen590/dsh-knj-menu": [
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-menu/main/assets/screenshots/menu-manager.png"
+ ],
+ "https://github.com/yangdongzhen590/dsh-knj-scheduler": [
+  "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-scheduler/main/assets/screenshots/scheduler-panel.png"
+ ],
+ "https://github.com/mienfong/dsh-session-mgr": [
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/session-manager_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/move-dialog_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/backup_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/import_EN.png",
+  "https://raw.githubusercontent.com/mienfong/dsh-session-mgr/main/docs/screenshots/delete-confirm_EN.png"
+ ],
+ "https://github.com/kenny2077/dsh-web-search-doubao": [
+  "https://raw.githubusercontent.com/kenny2077/dsh-web-search-doubao/main/docs/img/settings-card.png",
+  "https://raw.githubusercontent.com/kenny2077/dsh-web-search-doubao/main/docs/img/console.png"
  ]
 }

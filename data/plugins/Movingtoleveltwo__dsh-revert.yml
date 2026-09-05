@@ -1,0 +1,6 @@
+url: https://github.com/Movingtoleveltwo/dsh-revert
+name: Movingtoleveltwo/dsh-revert
+category: session
+description:
+  zh: "现代化对话回退与重试插件：纯 UI 图形化交互、原地 Prompt 微调、支持工作区与外部文件双引擎安全快照同步，完美解决分支重放断代问题。"
+  en: "A production-ready UI Rewind/Revert plugin for DSH. Features inline prompt editing and a flawless dual-engine state recovery system (Workspace ShadowGit + External Tracker) with full support for forked sessions."

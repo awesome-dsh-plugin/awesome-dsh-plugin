@@ -37,6 +37,10 @@ const NPM_MAP_FILE = 'data/npm-map.json'
 // strip the field from every entry whenever the probe is skipped.
 const TARBALLS_FILE = 'data/tarballs.json'
 const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSync(TARBALLS_FILE, 'utf8')) : {}
+// url -> data/plugins/<slug>.yml. The rest of this file works from entries
+// parsed out of the READMEs, which carry no file path; the added-date
+// derivation below needs one to ask git when an entry first appeared.
+const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -53,6 +57,25 @@ const CAT_IDS = ENTRY_CAT_IDS
 
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+
+// ── advertising ─────────────────────────────────────────────────────────────
+// One AdSense head tag, gated behind a build variable. Unset — the default —
+// emits nothing at all, so an unconfigured build is byte-identical to an
+// ad-free one and no third-party script is requested.
+//
+// Auto ads decide placement from this tag alone, so there is no slot markup to
+// write and no reserved height to get wrong. The publisher id is a `vars`
+// entry rather than a secret because it ships in the HTML either way.
+const ADSENSE_CLIENT = process.env.ADSENSE_CLIENT || ''
+const adHead = () =>
+  ADSENSE_CLIENT
+    ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT)}" crossorigin="anonymous"></script>\n`
+    : ''
+// The token sits on its own line in every template, so the match takes the
+// newline with it. Otherwise an unconfigured build leaves a blank line behind
+// and "identical to an ad-free build" stops being literally true — which is
+// the one claim about this feature worth being able to check by diffing.
+const AD_HEAD_TOKEN = '__AD_HEAD__\n'
 
 // Comments are deliberately opt-in. A half-configured widget would otherwise
 // turn every detail page into a broken third-party request, so fail loudly only
@@ -196,11 +219,37 @@ if (ordered.some((e) => !dates[e.url])) {
       if (m && !dates[m[1]]) dates[m[1]] = cur
     }
   }
-  const undated = ordered.filter((e) => !dates[e.url])
-  if (undated.length) {
-    // reachable only from a shallow clone or an unstamped uncommitted entry —
+  // Second source: the entry's own file under data/plugins/. The README line
+  // used to be the only ledger because the README was the only thing a
+  // submission touched. Since sync-readme.yml took over generation, a PR
+  // carries just the yml and the README line is written by a bot commit
+  // seconds after the merge — so during pr-check the line has no history at
+  // all, and after the merge its history is the bot's, not the author's.
+  //
+  // The yml is the better ledger anyway: one file per entry, added exactly
+  // once, never rewritten by a neighbour's regeneration. README history stays
+  // FIRST so that every date published before this change keeps the value it
+  // already had; this only fills in what that pass could not.
+  let stillUndated = ordered.filter((e) => !dates[e.url])
+  if (stillUndated.length) {
+    for (const e of stillUndated) {
+      const file = entryFiles[e.url]
+      if (!file) continue
+      try {
+        // Oldest "added" commit for that path. Not `-1`, which git applies
+        // before --reverse and would hand back the newest instead.
+        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        const iso = out[out.length - 1]
+        if (iso) dates[e.url] = new Date(iso).toISOString()
+      } catch { /* not committed yet — falls through to the error below */ }
+    }
+    stillUndated = ordered.filter((e) => !dates[e.url])
+  }
+  if (stillUndated.length) {
+    // reachable only from a shallow clone or a genuinely uncommitted entry —
     // stamping "now" here would make the output flap between runs
-    console.error(`no added-date derivable for: ${undated.map((e) => e.url).join(', ')}`)
+    console.error(`no added-date derivable for: ${stillUndated.map((e) => e.url).join(', ')}`)
     console.error('need full git history (fetch-depth: 0) and committed entries — refusing to build')
     process.exit(1)
   }
@@ -306,6 +355,14 @@ for (const e of ordered) {
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
   e.downloads = downloadsMap[e.url]?.downloads ?? null
+  // registry dist-tags.latest from probe-npm.mjs. null when not on npm, OR
+  // when probed but no latest tag was available. A published row whose map
+  // entry still lacks the `version` key has not been backfilled yet — after
+  // backfill the key is always present (string or null). Consumers: prefer
+  // `npm` for "on the registry"; treat missing/null version as "unknown",
+  // not as "github-only".
+  // Surfaced for dsh-market's discover list (dsh-market#348).
+  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
   e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
 }
 
@@ -465,6 +522,13 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    // Rendered server-side rather than left at 0 for the client to correct.
+    // The counters sit inside the search bar and the line under the hero; going
+    // from "0 / 0" to "2662 / 2662" on load widened both and reflowed the row
+    // around them, which is what made #count the single largest contributor to
+    // this site's CLS. Same number either way — it just arrives before paint.
+    .replaceAll('__CARD_COUNT__', () => String(N))
+    .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
@@ -508,6 +572,11 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      // A category page renders only its own rows, so its counters start from
+      // that number, not the site total. See the index block for why these are
+      // server-rendered.
+      .replaceAll('__CARD_COUNT__', () => String(n))
+      .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
@@ -632,14 +701,23 @@ for (const loc of LOCALES) {
     // "conf…" is the one line a searcher reads before deciding to click. Prefer
     // ending on a sentence, else the last word; CJK has no spaces, so the word
     // fallback simply does not fire there and the hard cut stands.
-    const metaDesc = (() => {
-      if (desc.length <= 155) return desc
-      const head = desc.slice(0, 152)
+    const clampMeta = (s) => {
+      if (s.length <= 155) return s
+      const head = s.slice(0, 152)
       const stop = Math.max(head.lastIndexOf('. '), head.lastIndexOf('。'), head.lastIndexOf('；'), head.lastIndexOf('; '))
-      if (stop > 90) return desc.slice(0, stop + 1).trim()
+      if (stop > 90) return s.slice(0, stop + 1).trim()
       const space = head.lastIndexOf(' ')
       return (space > 90 ? head.slice(0, space) : head).trimEnd() + '…'
-    })()
+    }
+    // A twelve-character description is a fine list entry but a bare meta
+    // description — Bing flags 162 of them as too short. Below the threshold,
+    // wrap it in the locale's context sentence (what this is, what the page
+    // offers); at or above it, the description stands on its own as before.
+    const metaDesc = clampMeta(
+      desc.length < 60
+        ? loc.P_META_SHORT.replace('{DESC}', desc).replace('{NAME}', shortName(e.name)).replace('{CAT}', loc.categories[e.cat])
+        : desc,
+    )
 
     const short = shortName(e.name)
     const h1 = `<span class="owner">${esc(e.owner)}/</span><wbr><span class="name">${esc(short)}</span>`
@@ -751,9 +829,17 @@ ${readmeHtml}
       .replaceAll('__P_README_SECTION__', () => readmeSection)
       .replaceAll('__P_COMMENTS_SECTION__', () => commentsSection)
       .replaceAll('__LANG__', () => loc.htmlLang)
-      .replaceAll('__TITLE__', () => esc(loc.P_TITLE
-        .replace('{NAME}', e.name)
-        .replace('{CAT}', loc.categories[e.cat])))
+      // Compound entry names (owner/repo#subpath) push some titles past what a
+      // result page shows — Bing flags them and search engines truncate mid-
+      // name. Fall back through progressively shorter forms of the name until
+      // the title fits: full name, then without the owner, then the bare
+      // package name after '#' — which is what plugin-name queries actually
+      // contain. The owner stays in the URL and on the page either way.
+      .replaceAll('__TITLE__', () => {
+        const render = (n) => loc.P_TITLE.replace('{NAME}', n).replace('{CAT}', loc.categories[e.cat])
+        const candidates = [e.name, short, short.split('#').pop()]
+        return esc(render(candidates.find((n) => render(n).length <= 65) ?? candidates[candidates.length - 1]))
+      })
       .replaceAll('__DESC__', () => esc(metaDesc))
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => dHreflangs)
@@ -763,6 +849,7 @@ ${readmeHtml}
       .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
+      .replaceAll(AD_HEAD_TOKEN, () => adHead())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
       .replaceAll('__P_SHORT__', () => esc(short))
       .replaceAll('__P_H1__', () => h1)
@@ -855,6 +942,9 @@ const registry = {
       // by parsing the command string is not a contract worth offering, so the
       // field is published directly. Omitted when absent, like `screenshots`.
       tarball: e.tarball ?? undefined,
+      // Current npm `latest` when known. null = github-only (`npm` null) or
+      // probed with no latest tag. Not the same signal as `downloads`.
+      version: e.version,
       stars: e.stars,
       downloads: e.downloads,
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),

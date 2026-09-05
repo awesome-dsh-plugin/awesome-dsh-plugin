@@ -1,0 +1,6 @@
+url: https://github.com/OMSociety/kimi-ppt-skill
+name: OMSociety/kimi-ppt-skill
+category: skill
+description:
+  zh: "内含 kimi-ppt 技能的 DSH 插件：本地生成 .pptx 完成 PPT 的创建、编辑与导出，Pillow 生成预览图；衍生自 MIT 项目 open-kimi-ppt-skill。"
+  en: "DSH plugin bundling the kimi-ppt skill: create, edit and export presentations as a locally generated .pptx with Pillow-rendered previews. Derived from the MIT open-kimi-ppt-skill."

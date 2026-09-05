@@ -1,0 +1,6 @@
+url: https://github.com/oxlyn/dsh-plugin-mgr
+name: oxlyn/dsh-plugin-mgr
+category: market
+description:
+  en: 'Card-style plugin manager in Settings: enable/disable each plugin through the profile patch layer, install-source details, npm update check with one-click update, uninstall, search, and load-error badges.'
+  zh: 设置页卡片式插件管理：经 profile 补丁层启停插件（跨重启保留）、安装来源详情、npm 更新检查与一键更新、卸载、搜索与加载失败标识。

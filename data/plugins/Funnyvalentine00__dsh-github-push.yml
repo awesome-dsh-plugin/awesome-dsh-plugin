@@ -1,0 +1,6 @@
+url: https://github.com/Funnyvalentine00/dsh-github-push
+name: Funnyvalentine00/dsh-github-push
+category: git
+description:
+  en: 'One-step GitHub uploader: initializes git, auto-creates or improves README, sets repository topics, and pushes a local project to GitHub.'
+  zh: '一键上传项目到 GitHub：自动初始化 git、生成或完善 README、设置仓库 topics，并推送本地项目。'

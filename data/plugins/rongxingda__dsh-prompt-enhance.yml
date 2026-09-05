@@ -1,0 +1,6 @@
+url: https://github.com/rongxingda/dsh-prompt-enhance
+name: rongxingda/dsh-prompt-enhance
+category: session
+description:
+  en: 'One-click prompt enhancement in the composer — rewrites the draft into a structured prompt (role and goal, executable steps, output format, acceptance criteria, edge cases) with before/after preview, fill-back, and undo. Never changes intent, never fabricates requirements.'
+  zh: '输入框一键提示词增强——把草稿改写为结构化提示词（角色与目标、可执行步骤、输出格式、验收标准、边界条件），支持前后对比、回填与一键撤销；不改变原意、不凭空编造需求。'
