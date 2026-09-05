@@ -3,4 +3,4 @@ name: nononononofish/dsh-region
 category: tools
 description:
   en: Tired of plugins getting stuck or failing to download? Just install this one — it auto-switches between the China mirror and the official npm source to keep downloads going, and has a panel for manual switching too. That's it!
-  zh: 在下载超时或失败时，于 npmmirror 国内镜像与官方 npm 源之间自动切换下载源，并附带 Web UI 可手动查看与切换。
+  zh: 还在为下插件卡住或失败而烦恼么？装它就完事——自动在国内镜像和官方源间换路续下，还带面板能手动切换。没啦！
