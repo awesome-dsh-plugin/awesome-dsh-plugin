@@ -3,4 +3,4 @@ name: songofhawk/dsh-alpha
 category: remote
 description:
   en: "Multi-machine, multi-agent orchestration and control plane for DSH: discovers Agents and workspaces across devices, routes tasks by machine, repository, capability, and load to local or remote Agent runtimes, streams progress and results, forwards approvals, and recovers durable tasks after disconnections."
-  zh: "DSH 的多机多 Agent 编排与控制平面：发现各设备上的 Agent 与工作区，按机器、仓库、能力和负载将任务路由到本地或远程 Agent Runtime，统一回传进度、审批与结果，并在断线后恢复持久任务。"
+  zh: "DSH 的多机多 Agent 编排与控制平台：发现各设备上的 Agent 与工作区，按机器、仓库、能力和负载将任务路由到本地或远程 Agent Runtime，统一回传进度、审批与结果，并在断线后恢复持久任务。"
