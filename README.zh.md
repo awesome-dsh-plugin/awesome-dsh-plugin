@@ -1119,7 +1119,7 @@ dsh plugin --profile web add dshmarket
 - [adoresever/graph-memory](https://github.com/adoresever/graph-memory) — DeepSeek Harness 的可追溯、可检索跨会话记忆：把对话知识沉淀为带类型的图节点（任务/技能/事件）与关系边。
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) — 面向 DeepSeek Harness 的模型驱动上下文裁剪插件，通过官方 compaction API 释放上下文空间。
 - [agentscope-ai/ReMe#typescript](https://github.com/agentscope-ai/ReMe/tree/main/typescript) — 将 DeepSeek Harness 接入 ReMe 本地优先、自进化的个人知识库：自动把已完成的主 Agent 对话沉淀为用户掌控的 Markdown 记忆，通过 reme_search 结合 BM25、可选向量检索和 wikilink 展开搜索对话与资料，并按日整理长期记忆。
-- [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — DSH 三层自动记忆引擎：缓存友好的精简注入与每轮 AI 自动沉淀，主动日历提醒与暖心问候，可继承其他 AI 工具的记忆。
+- [Aik358/dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) — 主动联想记忆插件：记忆不靠模型调用——Host 观察情境，在模型开口前经固定边界注入，前缀缓存全程命中。三层记忆自动沉淀（每轮子代理静默归档）、重复流程固化为技能 checklist，以及实验性的 Astra 式上下文管理：四段式交接账本 + PLAN.md 白板跨窗口续命，水位感知按官方 token 公式估算（窗口自动适配当前模型），memory_recall 支持 handoff/sessions 按需检索。本地 Markdown 存储、模型无关、零运行时依赖；词法 BM25 0GB 兜底，可选语义档（JS e5-small ~130MB / Python BGE-M3 int8）。面板「白板」页签实时可视；交接特性默认关闭（设置 → 自动化开启）。
 - [akslcw/dsh-negative-ledger](https://github.com/akslcw/dsh-negative-ledger) — 证据约束的负面知识账本：记录被证伪的路径（command_failed / file_missing）及其结果与前置条件证据，重复尝试时警告或拦截，证据变化后自动解除。
 - [AndyYang12345/dsh-butler-memory](https://github.com/AndyYang12345/dsh-butler-memory) — PostgreSQL 持久个人记忆：MCP 记忆工具 + 可查看记忆与候选的 Web 面板。
 - [aqsk-BLG/dsh-memory](https://github.com/aqsk-BLG/dsh-memory) — DeepSeek Harness 分层文件记忆，提供工作区隔离的 USER/MEMORY 笔记、后台沉淀与混合会话召回。
