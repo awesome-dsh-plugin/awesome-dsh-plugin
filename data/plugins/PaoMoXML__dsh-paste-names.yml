@@ -1,0 +1,6 @@
+url: https://github.com/PaoMoXML/dsh-paste-names
+name: PaoMoXML/dsh-paste-names
+category: ui
+description:
+  en: Paste non-image files or folders into the chat composer as native @path references, or drag them in as absolute paths, instead of the images-only error.
+  zh: 将非图片文件或文件夹以原生 @path 引用粘贴进聊天输入框，或拖放插入绝对路径，替代仅支持图片的报错。

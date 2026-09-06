@@ -1,0 +1,6 @@
+url: https://github.com/Heeweelee/dsh-session-plugin
+name: Heeweelee/dsh-session-plugin
+category: session
+description:
+  en: Recall previously sent messages in the input box with Up/Down, and archive a workspace session from its right-click menu.
+  zh: 在输入框内按 ↑/↓ 回填历史消息，并支持右键归档（隐藏）工作区会话。

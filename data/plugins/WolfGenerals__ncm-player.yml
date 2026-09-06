@@ -1,0 +1,6 @@
+url: https://github.com/WolfGenerals/ncm-player
+name: WolfGenerals/ncm-player
+category: ui
+description:
+  en: 'Floating NetEase Cloud Music player for DSH Web: draggable collapsible window with mini mode, playlist discovery with search and hot lists, synced lyrics with translations, persistent playback queue, QR-code or Cookie login, colors following the DSH skin theme.'
+  zh: '网易云音乐浮窗播放器：可拖拽/折叠浮窗与迷你条，歌单发现（搜索/热门歌单），逐行同步歌词与翻译，播放队列持久化，扫码或 Cookie 登录，颜色跟随 DSH 皮肤主题。'

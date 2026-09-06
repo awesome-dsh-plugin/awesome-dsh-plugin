@@ -1,0 +1,6 @@
+url: https://github.com/WindyPro-rourou/dsh-logcat
+name: WindyPro-rourou/dsh-logcat
+category: tools
+description:
+  en: 'Android real-device debugging workbench for the DSH Web GUI: auto-attached logcat with severity/keyword filters and crash snapshots, live on-device screen casting with remote tap/swipe/text control, memory/proc/frida reverse-engineering toolset, 30 agent tools.'
+  zh: 'DSH Web GUI 安卓实机调试工作台：自动附加 logcat 流（级别/关键词过滤、崩溃自动快照），真机屏幕实时投屏与远程点击/滑动/文字操控，内存/进程/frida 逆向工具链，30 个 agent 工具。'

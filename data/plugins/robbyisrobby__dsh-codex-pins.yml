@@ -1,0 +1,6 @@
+url: https://github.com/robbyisrobby/dsh-codex-pins
+name: robbyisrobby/dsh-codex-pins
+category: session
+description:
+  en: Splits the DeepSeek Harness sidebar into independently scrollable Pinned and Recents panes, and hides pinned sessions from Recents.
+  zh: 把 DeepSeek Harness 侧边栏分成可独立滚动的置顶栏和最近栏，置顶过的会话不再出现在最近列表里。

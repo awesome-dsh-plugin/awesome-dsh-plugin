@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-docker
+name: 173787247/dsh-wsl-docker
+category: wsl
+description:
+  en: Reports Docker CLI, context, and daemon reachability inside WSL.
+  zh: 报告 WSL 内 Docker CLI、context 与 daemon 是否可达。

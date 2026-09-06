@@ -1,0 +1,6 @@
+url: https://github.com/huang-chunc/dsh-user-message-timeline
+name: huang-chunc/dsh-user-message-timeline
+category: ui
+description:
+  en: 'User Message Timeline - floating pill rail with hover preview, click/drag jump and pagination, switchable left/right.'
+  zh: '对话内悬浮药丸导轨：等距药丸、悬停预览、点击/拖拽跳转、分页自动加载，开关在设置-插件-插件配置。'

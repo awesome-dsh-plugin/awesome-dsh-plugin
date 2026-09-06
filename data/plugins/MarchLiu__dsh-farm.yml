@@ -1,0 +1,6 @@
+url: https://github.com/MarchLiu/dsh-farm
+name: MarchLiu/dsh-farm
+category: dev
+description:
+  en: 'Service farm for DSH: register, start, stop and restart long-running project services, with agent tools (farm_status/start/stop/restart/logs/register), farm.yaml declarations and an overview drawer UI with live log follow, search and export.'
+  zh: 'DSH 服务农场：注册、启动、停止、重启长驻项目服务，提供 agent 工具（farm_status/start/stop/restart/logs/register）与 farm.yaml 声明式服务，总览抽屉支持按工作区分组、实时日志 follow、搜索与导出。'

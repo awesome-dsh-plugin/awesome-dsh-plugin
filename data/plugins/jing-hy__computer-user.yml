@@ -1,0 +1,6 @@
+url: https://github.com/jing-hy/computer-user
+name: jing-hy/computer-user
+category: tools
+description:
+  en: 'Windows-only computer use for DeepSeek Harness: captures the virtual screen and drives mouse & keyboard through 9 tools built on PowerShell and Win32 SendInput; pairs with picturereader so text-only models can complete the screenshot-analyze-act-verify loop fully locally.'
+  zh: '仅 Windows 的 DSH 电脑操作插件：以 PowerShell + Win32 SendInput 实现 9 个工具，截取虚拟屏幕并驱动鼠标键盘；配合 picturereader 让纯文本模型在本地完成「截图-分析-操作-验证」闭环。'

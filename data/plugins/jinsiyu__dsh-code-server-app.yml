@@ -1,0 +1,6 @@
+url: https://github.com/jinsiyu/dsh-code-server-app
+name: jinsiyu/dsh-code-server-app
+category: docs
+description:
+  en: Package and install code-server (the web version of VSCode) as a plugin within dsh to quickly achieve professional file editing.
+  zh: 将code-server（VSCode网页版）打包安装到dsh内的插件，快速实现专业的文件编辑。

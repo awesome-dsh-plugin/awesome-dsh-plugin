@@ -1,0 +1,6 @@
+url: https://github.com/Shyboy0499/dsh-git-tools
+name: Shyboy0499/dsh-git-tools
+category: git
+description:
+  en: Four dependency-free local git tools (status, diff, log, commit) for DeepSeek Harness operating on the session workspace.
+  zh: 为 DeepSeek Harness 提供四个零依赖本地 git 工具（status、diff、log、commit），作用于会话工作区。

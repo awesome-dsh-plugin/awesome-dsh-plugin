@@ -2,5 +2,5 @@ url: https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin
 name: taxueseek/argo#dsh-plugin
 category: tools
 description:
-  en: 'Search built for agents: multilingual coverage across web, academic, code, shopping, finance, news, and encyclopedias.'
-  zh: 专为 agent 打造的搜索工具：多语言，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。
+  en: 'Unified search with evidence verification for agents: 120+ engines with multilingual routing, vertical domains and structured modality cards, 10 MCP tools plus wide_research orchestration, and a fetch-verify loop that backfills evidence scores.'
+  zh: '面向 agent 的统一搜索与证据核验：120+ 引擎多语言路由，垂直域与结构化模态卡，10 个 MCP 工具与 wide_research 编排，fetch 核验回填证据分的证据闭环。'

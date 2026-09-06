@@ -1,0 +1,6 @@
+url: https://github.com/wenbin-wb/dsh-bridge
+name: wenbin-wb/dsh-bridge
+category: remote
+description:
+  zh: "DeepSeek Harness 远程与移动端接入插件：支持局域网二维码、Cloudflare/自建公网隧道，以及微信、QQ、飞书、Telegram 机器人实时交互与审批，内置访问安全门禁与防篡改控制。"
+  en: "Remote and mobile access for DeepSeek Harness: supports LAN QR code, Cloudflare/custom tunnels, and WeChat, QQ, Feishu, and Telegram bots with approval cards and security access guards."

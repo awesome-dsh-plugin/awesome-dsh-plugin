@@ -1,0 +1,9 @@
+# 放到 awesome-dsh-plugin 仓库的 data/plugins/SuCriss__dsh-leekbox.yml
+# （文件名 = <owner>__<repo>.yml）
+url: https://github.com/SuCriss/dsh-leekbox
+name: SuCriss/dsh-leekbox
+category: tools
+tarball: https://github.com/SuCriss/dsh-leekbox/releases/latest/download/dsh-leekbox.tgz
+description:
+  en: 'A-share market dashboard: realtime indices and quotes, market sentiment thermometer (up/down breadth, limit-up/limit-down/broken counts, consecutive-board ladder, limit-up pool), THS-style stock detail popups with candlestick K-line (forward-adjusted, MA5/10/20, volume, crosshair), persistent watchlist with realtime quotes, grouping and JSON/CSV import-export, ETF/convertible-bond/LOF boards, dual-mode screener (weighted signal score + 7-preset multi-strategy intersection), and a tri-source 7x24 news feed (Sina/Eastmoney/Jin10) with important-item highlighting.'
+  zh: '韭菜盒子：A股看盘助手——实时行情与大盘指数、市场情绪温度计（涨跌家数/涨停跌停炸板/连板梯队/涨停池）、同花顺式个股详情弹窗（前复权蜡烛图K线+MA均线+成交量+十字光标）、自选股实时行情持久化（分组、JSON/CSV导入导出）、ETF/可转债/LOF榜单、双模式条件选股（加权评分 + 7策略交叉选股）、新浪/东财/金十三源聚合7x24快讯（重要资讯标红）。'

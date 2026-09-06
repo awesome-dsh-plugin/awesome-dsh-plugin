@@ -1,0 +1,7 @@
+url: https://github.com/JasonQQ/dsh-btw-plugin
+name: JasonQQ/dsh-btw-plugin
+category: session
+description:
+  en: 'Codex-style /btw command: answer side questions in a conversation-seeded subagent (fork provider), rendered in the UI without entering the main session history.'
+  zh: 'Codex 风格 /btw 指令：在继承主会话上下文的子代理中回答附带问题，答案展示在界面里、不写入主会话历史。'
+tarball: https://github.com/JasonQQ/dsh-btw-plugin/releases/download/v0.1.0/jasonqq-dsh-btw-plugin-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/gjj-star/dsh-conversation-navigator
+name: gjj-star/dsh-conversation-navigator
+category: ui
+description:
+  en: 'Conversation navigator panel: turn-folded outline of the current session with per-step kind badges (assistant, tool, command, compaction, error), a hover bubble showing the full user question, a minimal mode that hides turn numbers for an all-badge view, keyword filter over user questions and assistant replies, click-to-jump with reading-position tracking, and load-earlier/load-all history paging.'
+  zh: 会话导航面板：按轮折叠的当前会话大纲与步次类型徽标（助手/工具/命令/压缩/出错），悬停气泡显示用户提问全文，可隐藏轮次号的极简徽标视图，仅检索提问与助手回复的关键词过滤，点击跳转与阅读位置跟踪，支持加载更早/加载全部历史分页。

@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-workspace
+name: 173787247/dsh-wsl-workspace
+category: wsl
+description:
+  en: Lists WSL distros and validates a Linux workspace path for DSH.
+  zh: 列出 WSL 发行版并校验可用于 DSH 的 Linux 工作区路径。

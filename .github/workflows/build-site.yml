@@ -29,10 +29,24 @@ permissions:
   pages: write
   id-token: write
 
-# docs/ is a pure function of main's tip, so an older run can only produce
-# stale output — supersede it rather than queueing it.
+# docs/ is a pure function of main's tip, so an older PUSH build can only
+# produce stale output — supersede it rather than queueing it.
+#
+# Two groups, not one, and the second group is the whole point. The nightly is
+# the only run that probes with PROBE_ALL and the only run that publishes the
+# catalog and update notes to npm, and a cancelled nightly does neither: the
+# cache-save post-steps are skipped along with everything after them, so a run
+# killed 47 minutes into the probe throws that work away instead of banking it.
+# A push shares nothing with that — it must not be able to cancel it.
+#
+# This was not theoretical. The 02:23 cron is routinely delayed hours into the
+# busy part of the day (2026-08-27 12:54, 2026-08-28 14:25), where the next
+# merge cancelled it mid-probe. Symptoms filed separately, one cause:
+#   #3512 — npm catalog frozen 2026-08-26 → 08-29, the two cancelled nights
+#   #3417, #3698 — detail-page READMEs stuck on their last good fetch, because
+#           readmes.json only ever advances in the cache the nightly saves
 concurrency:
-  group: build-site
+  group: build-site-${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && 'probe' || 'push' }}
   cancel-in-progress: true
 
 jobs:
@@ -48,6 +62,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          # Needed by the catalog publish below; harmless for the site build.
+          registry-url: https://registry.npmjs.org
       - run: npm ci
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
@@ -70,6 +86,35 @@ jobs:
             data/tarballs.json
           key: probe-data-v2-${{ github.run_id }}
           restore-keys: probe-data-v2-
+      # data/downloads.json gets its OWN cache entry rather than joining the
+      # list above. Two reasons, and the second is the whole point:
+      #
+      # 1. actions/cache derives its version from the `path` list, so adding a
+      #    file there invalidates every existing entry and forces the cold
+      #    start that comment warns about (#1673). A separate step has its own
+      #    version and leaves the other cache untouched.
+      #
+      # 2. Without a cache, downloads silently regressed to the committed
+      #    snapshot on every push build (#2797). The nightly refreshes the file
+      #    in the runner and deploys it, but this workflow never writes to the
+      #    repository — so the committed copy stayed frozen at 2026-08-19 and
+      #    each push build rebuilt docs/ from it, undoing the nightly. Live
+      #    counts ran ~42% under npm's own figures with no staleness signal.
+      #    Restoring the nightly's copy here is what makes the refresh stick.
+      - uses: actions/cache@v4
+        with:
+          path: data/downloads.json
+          key: downloads-v1-${{ github.run_id }}
+          restore-keys: downloads-v1-
+      # data/updates.json gets its own cache entry, NOT a line in the shared
+      # list above — same reasoning as downloads below: adding a path to the
+      # shared list derives a new cache version and forces every other probe
+      # into the cold start that spent a whole quota mid-run (#1673).
+      - uses: actions/cache@v4
+        with:
+          path: data/updates.json
+          key: updates-v1-${{ github.run_id }}
+          restore-keys: updates-v1-
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -78,6 +123,11 @@ jobs:
           # npm can never be stuck on a stale "not published" (see #487).
           # Push-triggered runs stay incremental.
           PROBE_ALL: ${{ (github.event_name == 'schedule' || inputs.probe_all) && '1' || '' }}
+          # Unset until the AdSense review clears this domain; while unset the
+          # build emits no ad markup and no third-party script, so the site is
+          # byte-identical to an ad-free one. A variable rather than a secret:
+          # the publisher id ships in the HTML either way.
+          ADSENSE_CLIENT: ${{ vars.ADSENSE_CLIENT }}
         run: |
           # Probing is for the nightly run and manual dispatch only. A push
           # build deploys what is already committed or cached; it does not go
@@ -91,13 +141,22 @@ jobs:
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes
-            # data/downloads.json, which is committed (see its own header) —
-            # deliberately absent from the cache `path:` list above, so it
-            # needs no entry there and touching it can never trigger the
-            # cold-start hazard that list's own comment warns about.
+            # data/downloads.json, which is committed AND now has its own cache
+            # entry above. It stays out of the shared `path:` list so that
+            # caching it cannot invalidate the other probes' cache; the
+            # committed copy remains the cold-start floor, and the cache is
+            # what carries a nightly refresh across the next push build.
             node scripts/probe-downloads.mjs
             node scripts/probe-stars.mjs
             node scripts/probe-readmes.mjs
+            # Update notes for the market's "what changed" dialog (#294): the
+            # latest release plus a short commit tail, probed here once a day
+            # so no end-user market ever has to ask GitHub itself — anonymous
+            # REST quota is shared per egress IP and already unreliable.
+            # data/updates.json is committed AND cached above (same shape as
+            # downloads), and absence of notes is a normal state downstream,
+            # so this probe never blocks the build.
+            node scripts/probe-updates.mjs
           else
             echo "push build with cached probe data — skipping probes"
           fi
@@ -105,9 +164,76 @@ jobs:
           # submission can 404 later without anyone touching the entry, and the
           # set is small enough that there is no reason to sample it (#1619).
           node scripts/probe-tarballs.mjs
+          # Same reasoning, same shape, for screenshots. The PR check validates
+          # that an image URL is well-formed and on GitHub's hosting, never that
+          # it resolves — so a dead link merged clean and published as a broken
+          # picture in the storefront. 41 of 773 were dead the first time anyone
+          # asked. Neither probe blocks the build: a dead URL is dropped from
+          # the published data, not turned into a failure.
+          node scripts/probe-screenshots.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+        # The concurrency split above means a push build and the nightly can now
+        # be in flight together, and Pages accepts one deployment at a time.
+        # Losing that race must not abort the nightly before the two publish
+        # steps below — they are the reason the run exists, and the site is
+        # about to be redeployed by whichever push won anyway.
+        # workflow_dispatch is here for the same reason schedule is, and it was
+        # left out by oversight: a dispatch runs the identical probe-and-publish
+        # path, so a failed deploy costs it the identical work. On 2026-09-05 a
+        # dispatched run spent 36 minutes probing, then died here on a 403 —
+        # the App installation quota had been drained by approving a batch of
+        # queued workflow runs — and took the cache-save post-steps and both
+        # npm publish steps down with it. Nothing was banked; the probe had to
+        # be redone from scratch.
+        #
+        # Deploying is never the reason a probe run exists. Losing the deploy
+        # to a transient 403 is recoverable by the next push; losing the probe
+        # is not.
+        continue-on-error: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+
+      # The same plugins.json, published to npm — see
+      # scripts/publish-catalog.mjs for why it has to exist in two places.
+      #
+      # AFTER the deploy, deliberately: the site is what people look at, and
+      # a registry outage must not be able to hold it up.
+      #
+      # Nightly and manual dispatch only. The script skips an unchanged
+      # catalog, and the note here used to read "the ordinary push build
+      # publishes nothing" on that basis — true on a quiet day, and wrong on
+      # exactly the days that matter. Every merged submission changes the
+      # catalog, so every push build earned a version: 46 releases went out
+      # over 2026-08-23/24, one per merged pull request, each one an npm
+      # notification to the maintainer.
+      #
+      # The site still deploys on every push, because a newly merged plugin
+      # should be visible right away. The npm copy is the market plugin's
+      # fallback source for hosts that cannot reach github.com; it being a few
+      # hours behind costs nothing, which is the same trade the probes above
+      # already make.
+      #
+      # Still no repository write: the version and the content hash are set
+      # in the runner's working copy and never committed, so the invariant at
+      # the top of this file holds.
+      - name: publish the catalog to npm
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        # Trusted publishing (OIDC) — the id-token permission above is what
+        # authorizes it, so there is no token to leak or rotate.
+        run: |
+          npm install -g npm@latest  # trusted publishing needs npm >= 11.5
+          node scripts/publish-catalog.mjs
+      # The update-notes payload, published to npm for the same reason as the
+      # catalog above — Pages IS GitHub, and the proxies that would carry it
+      # refuse non-github.com hostnames — but as its OWN package: notes are
+      # read only by a user who opened one dialog, so folding them into the
+      # catalog tarball would multiply every consumer's daily download for
+      # data most never request. See scripts/publish-updates.mjs.
+      - name: publish the update notes to npm
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          npm install -g npm@latest  # trusted publishing needs npm >= 11.5
+          node scripts/publish-updates.mjs

@@ -1,0 +1,7 @@
+url: https://github.com/tafcear/kimi-tide/tree/main/packages/dsh-kimi-tide
+name: tafcear/kimi-tide#dsh-kimi-tide
+category: model
+tarball: https://github.com/tafcear/kimi-tide/releases/latest/download/dsh-kimi-tide.tgz
+description:
+  en: "Per-step model router: named presets with ordered image/keyword-group rules route each agent step across every mounted provider and model, adding collaboration flows for image transcription, an image guard, a multi-plan quota panel, and per-step decision observability."
+  zh: "逐步模型路由器：以命名预设与带图/关键词组有序规则为每一步在全部已挂载模型间选路，附图像转述协作流、图像护栏、多 plan 配额面板与逐步决策可观测。"

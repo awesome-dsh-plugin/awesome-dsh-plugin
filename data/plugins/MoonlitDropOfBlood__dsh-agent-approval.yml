@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-agent-approval
+name: MoonlitDropOfBlood/dsh-agent-approval
+category: security
+description:
+  en: 'An independent approval subagent judges every sandbox escalation, with a configurable model and an audit log.'
+  zh: '由独立审批子代理裁决每次沙箱提权，可配置审批模型并带审计记录。'

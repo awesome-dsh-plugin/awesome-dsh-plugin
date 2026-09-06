@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-valley-meter
+name: uckkk/dsh-valley-meter
+category: ui
+description:
+  en: "Peak-Valley Meter (峰谷电表): live off-peak countdown on a 24h timeline with hourly spend blocks, official DeepSeek account balance, today's spend, 10 curated muted color presets (One Dark/Dracula/Nord/Tokyo Night/Gruvbox/Solarized, traditional Chinese & Pantone), minimal-by-default card, all-Chinese UI."
+  zh: "峰谷电表——波谷倒计时小组件：24 小时时间轴上的峰谷时段与按小时消耗方块阵列、官方账户余额、今日花费；内置 10 套沉稳配色预置（One Dark/Dracula/Nord/Tokyo Night/Gruvbox/Solarized + 中国传统色/潘通），默认极简卡片，全中文界面。"

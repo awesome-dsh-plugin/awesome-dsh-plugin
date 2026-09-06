@@ -1,0 +1,6 @@
+url: https://github.com/pan17/dsh-minimax-usage
+name: pan17/dsh-minimax-usage
+category: usage
+description:
+  en: Shows MiniMax Token Plan usage beside the DSH Web UI model selector with compact 5h/7d bars, click-to-refresh, automatic idle and heartbeat refreshes, and endpoint fallback. Reuses subscription keys configured under Settings → Model and appears only for MiniMax Token Plan providers.
+  zh: 在 DSH Web UI 模型选择器旁显示 MiniMax Token Plan 用量，以紧凑的 5h/7d 进度条展示，支持点击刷新、空闲与心跳自动刷新及接口回退；复用「设置 → 模型」中的订阅 Key，且仅在 MiniMax Token Plan provider 下显示。

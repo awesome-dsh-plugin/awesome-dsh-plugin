@@ -1,0 +1,7 @@
+url: https://github.com/yxv1203-collab/dsh-conversation-archive
+name: yxv1203-collab/dsh-conversation-archive
+category: session
+description:
+  en: Manage archived DSH sessions on Windows with search, batch restore and deletion, AI-assisted file retention, and verified local or network-directory backups.
+  zh: 在 Windows 上管理 DSH 已归档会话，支持搜索、批量取消归档与删除、AI 辅助文件保留，以及经过校验的本地或网络目录备份。
+tarball: https://github.com/yxv1203-collab/dsh-conversation-archive/releases/download/v1.0.0/dsh-conversation-archive-1.0.0.tgz

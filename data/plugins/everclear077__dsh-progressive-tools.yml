@@ -1,0 +1,6 @@
+url: https://github.com/everclear077/dsh-progressive-tools
+name: everclear077/dsh-progressive-tools
+category: tools
+description:
+  en: 'Cache-stable progressive tool discovery: a fixed tool_search and tool_dispatch surface on every request, in-memory catalog search, nested dispatch through the Harness pipeline, and a byte-stable native tool list across discovery.'
+  zh: 缓存稳定的渐进式工具发现：每次请求使用固定的 tool_search 与 tool_dispatch 工具面，从内存目录搜索后经 Harness 管线分发，发现过程中原生工具列表保持字节稳定。

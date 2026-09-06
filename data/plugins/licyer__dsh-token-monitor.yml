@@ -1,0 +1,6 @@
+url: https://github.com/licyer/dsh-token-monitor
+name: licyer/dsh-token-monitor
+category: usage
+description:
+  en: Header quota badge plus a usage tab tracking tokens and estimated cost per request across sessions, providers and models, with local SQLite history and cross-device import/export.
+  zh: 会话头部余量徽标 + 用量页签：按会话/供应商/模型统计 token 与预估费用，本地 SQLite 留存历史，支持跨设备导入导出。

@@ -1,0 +1,7 @@
+url: https://github.com/zoahdev/dsh-dep-audit
+name: zoahdev/dsh-dep-audit
+category: dev
+description:
+  en: 'Dependency supply-chain hygiene audit for dsh projects and profiles: peer-range resolvability, broken dist-tag detection (#2763 class), stale / missing-license / non-registry dependencies, and installed-vs-declared drift — CLI plus an agent-callable dep_audit tool.'
+  zh: 'dsh 项目与 profile 的依赖供应链卫生审计：peer 范围可解析性、坏 dist-tag 检测（#2763 类）、过期/缺许可证/非注册表来源依赖与安装版本漂移——CLI + agent 可调用 dep_audit 工具。'
+# listing updated 2026-08-19 (repo hardened to 10+ commits; submission gate)

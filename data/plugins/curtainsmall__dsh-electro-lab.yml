@@ -1,0 +1,6 @@
+url: https://github.com/curtainsmall/dsh-electro-lab
+name: curtainsmall/dsh-electro-lab
+category: tools
+description:
+  en: "Electrical and electronics calculation plugin for DeepSeek Harness: every computation runs through dedicated tools on self-describing complex value objects in SI base units, with an isolated calculation agent preset and a records panel that archives every solve on disk."
+  zh: "DSH 电气电子计算插件：所有计算都通过专用工具完成，基于 SI 基本单位的自描述复数值对象；附带隔离的计算智能体预设与记录面板，每次求解落盘存档。"

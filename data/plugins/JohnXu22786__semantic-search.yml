@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/semantic-search
+name: JohnXu22786/semantic-search
+category: tools
+description:
+  en: 'Local semantic code search for DeepSeek Harness: fragment-level symbol-aware indexing, offline lexical embeddings or an OpenAI-compatible endpoint, and hybrid vector + BM25 retrieval fused with RRF - three dsh tools plus a sema CLI.'
+  zh: '面向 DeepSeek Harness 的本地语义代码搜索：片段级符号感知索引、离线词法 embedding（或 OpenAI 兼容端点）、向量+BM25 混合检索并以 RRF 融合——三个 dsh 工具外加 sema CLI。'

@@ -1,0 +1,6 @@
+url: https://github.com/cayan0x/Lume
+name: cayan0x/Lume
+category: tools
+description:
+  zh: "DSH Desktop 增强插件：Codex 风格自适应任务协议（闲聊短版/任务完整版，按模型能力分流，连续失败自动纠偏，跨会话复盘回环）与人设系统——从微信/QQ 聊天记录一键蒸馏具名角色，语气、口头禅、回复篇幅锚定真实对话统计；长期记忆、风格纠偏自动捕获、认可语料摘录、记忆星图可视化、卡片导出导入。"
+  en: 'DSH Desktop enhancement plugin: adaptive Codex-style task protocol (compact for chat, full for tasks, model-aware branching, self-healing on repeated failures, cross-session review loop) plus a persona system — distill named characters from WeChat/QQ chat logs with tone, catchphrases and reply length anchored to real conversation stats; long-term memory, automatic style-correction capture, approved-reply corpus pinning, memory star map, and persona card export/import.'

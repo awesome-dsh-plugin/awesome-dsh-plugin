@@ -1,0 +1,6 @@
+url: https://github.com/wackyju2-beep/dsh-better
+name: wackyju2-beep/dsh-better
+category: tools
+description:
+  en: Archived-session management, task-stop notifications, an update checker, model routing (keyword rules + allowlist-gated model_route), multi-task scheduled triggers (heartbeats and fixed-time tasks), and a DeepSeek-style message scroll nav for the dsh web GUI.
+  zh: 归档会话管理、任务完成桌面通知、更新检查、模型路由（关键词规则 + 白名单门控 model_route）、多任务定时触发（心跳与定点任务），以及 DeepSeek 风格的消息滚动导航。

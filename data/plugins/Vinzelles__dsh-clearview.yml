@@ -1,0 +1,7 @@
+url: https://github.com/Vinzelles/dsh-clearview
+name: Vinzelles/dsh-clearview
+category: ui
+description:
+  en: 'Adds a Reading tab to the DSH web client that shows process steps and live reasoning in source order, collapses successful turns to the final answer, and keeps the original tabs, composer, and tooling intact.'
+  zh: '为 DSH Web 客户端新增「阅读」页签：按源顺序呈现过程步骤与实时思考，成功轮次收起只留最终回答，原有页签、输入框与工具保持不变。'
+tarball: https://github.com/Vinzelles/dsh-clearview/releases/download/v0.1.6/dsh-clearview-0.1.6.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/merenguesL/dsh-tool-normalizer
+name: merenguesL/dsh-tool-normalizer
+category: tools
+description:
+  en: Auto-healing middleware for model tool calls with a diagnostics dashboard.
+  zh: 模型工具调用自愈中间件与诊断看板。

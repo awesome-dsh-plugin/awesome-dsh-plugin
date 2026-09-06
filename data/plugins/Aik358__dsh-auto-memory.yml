@@ -2,5 +2,5 @@ url: https://github.com/Aik358/dsh-auto-memory
 name: Aik358/dsh-auto-memory
 category: memory
 description:
-  en: 'Cache-friendly three-layer memory for DSH: lean auto injection, per-turn AI consolidation, proactive calendar reminders and warm greetings, plus memory inheritance from other AI tools.'
-  zh: DSH 三层自动记忆引擎：缓存友好的精简注入与每轮 AI 自动沉淀，主动日历提醒与暖心问候，可继承其他 AI 工具的记忆。
+  en: 'Proactive associative memory for DSH: memories recall themselves without the model ever calling a tool. Host-side middleware watches the conversation, runs dual-track retrieval (NLP keywords + vector similarity), and injects at fixed boundaries — prefix-cache friendly. Three-layer auto-consolidation, a welcome tour with per-feature switches, recall review with full evidence, unattended mode for long batch jobs, AI greetings & daily reflections, calendar reminders, and cross-tool memory inheritance. Backends are user-selectable: built-in JS semantic tier (e5-small, ~130MB, default) or optional Python BGE-M3 int8 sidecar — lexical BM25 always-on as the 0GB floor.'
+  zh: 主动联想记忆插件：记忆不靠模型调用，自己被唤回——Host 观察情境，NLP 关键词 + 向量化双轨检索，固定边界注入不破坏前缀缓存。三层记忆自动沉淀、欢迎向导（每项功能当场开关）、唤起回顾（全证据可打分）、无人值守模式、AI 问候与每日反思、日历提醒、跨工具记忆继承。语义后端可自选：内置 JS 档（e5-small ~130MB，默认）或可选 Python BGE-M3 int8 sidecar，词法 BM25 0GB 永远兜底。

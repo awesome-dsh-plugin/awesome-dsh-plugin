@@ -2,5 +2,5 @@ url: https://github.com/Winter-And-You-Gone/dsh-turn-fold
 name: Winter-And-You-Gone/dsh-turn-fold
 category: ui
 description:
-  en: "Automatically folds tool calls into Think-segment groups and collapses each finished turn into a single header showing duration, token, throughput, and cache-hit metrics."
-  zh: "工具调用按 Think 段自动分组折叠；回合结束后整回合收成一个大组头，显示耗时/token/tok/s/缓存命中率指标。"
+  en: "A better fold bar: automatically folds tool calls and Think segments into step fold bars, and collapses each finished turn into a single turn header with live metrics (duration, TTFT, token, tok/s, cache hit) — only the final summary stays visible; customizable leading icons with animated poker cards built in (suit-cycling card animation while running, a deck when collapsed, a fan when expanded), a settings row for the official fold mode, compatible with both new and old DSH versions. Zero intrusion into DSH source."
+  zh: "更好的折叠栏：将工具调用与 Think 段自动折叠为步骤折叠栏，回合结束后整回合收拢为带实时指标（耗时/首字/token/tok/s/缓存命中）的回合折叠栏，只保留最终总结正文；前导图标可自定义，内置动态扑克牌（运行中花色循环卡牌动画、收起牌堆、展开扇形），提供官方折叠方式设置行，适配 DSH 新旧版本。零侵入 DSH 源码。"

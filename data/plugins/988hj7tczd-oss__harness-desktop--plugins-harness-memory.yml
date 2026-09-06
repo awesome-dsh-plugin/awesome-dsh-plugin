@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/harness-desktop/tree/main/plugins/harness-memory
+name: 988hj7tczd-oss/harness-desktop#plugins/harness-memory
+category: memory
+description:
+  en: 'Cross-session memory for DeepSeek Harness via the official storage domain: memories persist through ctx.storage (storageDomain table) and are injected into the system prompt through a registered section (memory:recall), with memory_save / memory_forget tools so the agent reads and writes its own memory (maxMemories configurable).'
+  zh: 跨会话记忆插件：用官方 ctx.storage 存储域持久化记忆，注册 system-prompt section（memory:recall）把记忆注入模型上下文，提供 memory_save / memory_forget 工具让 agent 自行存取记忆（maxMemories 可配置）。

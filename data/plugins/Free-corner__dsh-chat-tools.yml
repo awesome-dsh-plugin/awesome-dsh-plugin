@@ -1,0 +1,6 @@
+url: https://github.com/Free-corner/dsh-chat-tools
+name: Free-corner/dsh-chat-tools
+category: ui
+description:
+  en: Chat column width and alignment control, numbered question history with keyboard navigation and auto-load of older questions, and markdown outline rails for both the conversation and the file preview.
+  zh: 对话列宽度与位置调节、带序号与快捷键跳转的提问历史（支持自动加载更早提问），以及对话区和文件预览区的 Markdown 大纲目录。

@@ -1,0 +1,6 @@
+url: https://github.com/jueburenshu123/dsh-win-minimal
+name: jueburenshu123/dsh-win-minimal
+category: session
+description:
+  en: 'Windows minimal agent preset for DeepSeek Harness: fixed one-line persona, three tools, no runtime context.'
+  zh: Windows 极简模式 preset：单句 persona、三工具、无运行时上下文。

@@ -1,0 +1,6 @@
+url: https://github.com/starefinger/dsh-llm-qwen-local
+name: starefinger/dsh-llm-qwen-local
+category: model
+description:
+  en: 'LLM adapter plugin for locally deployed Qwen models behind a vLLM OpenAI-compatible endpoint, with per-model multimodal switch, fully configurable reasoning efforts, and a web settings page for editing the deployment from the frontend.'
+  zh: '面向 vLLM OpenAI 兼容端点上本地部署的 Qwen 模型的 LLM 适配器插件,支持按模型多模态开关、完全可配置的推理档位,以及可在前端编辑部署配置的 Web 设置页。'

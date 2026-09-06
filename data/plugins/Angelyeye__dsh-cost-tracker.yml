@@ -1,0 +1,6 @@
+url: https://github.com/Angelyeye/dsh-cost-tracker
+name: Angelyeye/dsh-cost-tracker
+category: usage
+description:
+  en: Tracks DeepSeek Harness LLM token usage and cost (CNY, peak/off-peak pricing) with a settings dashboard, agent tools, HTTP API and persistent storage.
+  zh: 统计 DeepSeek Harness 的 LLM Token 用量与花费（人民币、峰谷计价），提供设置面板、Agent 工具、HTTP 接口与持久化存储。

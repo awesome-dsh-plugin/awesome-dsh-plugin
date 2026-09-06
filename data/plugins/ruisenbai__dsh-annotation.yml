@@ -1,0 +1,7 @@
+url: https://github.com/ruisenbai/dsh-annotation
+name: ruisenbai/dsh-annotation
+category: session
+description:
+  en: 'Requires DSH 0.1.2-rc.1. Annotate selected text in finished assistant messages, then submit multiple drafts with official composer text and images as one Session user message; the model answers each annotation in order with hoverable reply chips.'
+  zh: '需要 DSH 0.1.2-rc.1。在已完成的助手消息中选中原文并添加多条注解，再与官方输入框文字和图片合并为一条会话用户消息；模型按顺序逐条回答，并用可悬浮的回复芯片关联原文。'
+tarball: https://github.com/ruisenbai/dsh-annotation/releases/latest/download/dsh-annotation.tgz

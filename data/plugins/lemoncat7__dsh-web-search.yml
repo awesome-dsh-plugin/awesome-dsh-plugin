@@ -1,0 +1,6 @@
+url: https://github.com/lemoncat7/dsh-web-search
+name: lemoncat7/dsh-web-search
+category: browser
+description:
+  en: Configurable web search for DeepSeek Harness using SearXNG, Wikipedia, Tavily, Brave, or Gemini, with per-client engine selection and bounded retries.
+  zh: 为 DeepSeek Harness 提供可配置联网搜索，支持 SearXNG、Wikipedia、Tavily、Brave 与 Gemini，并支持客户端引擎选择和受控重试。

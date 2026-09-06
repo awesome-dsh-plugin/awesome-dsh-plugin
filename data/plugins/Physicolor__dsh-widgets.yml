@@ -1,0 +1,6 @@
+url: https://github.com/Physicolor/dsh-widgets
+name: Physicolor/dsh-widgets
+category: ui
+description:
+  en: 'Right-hand widget rail for DeepSeek Harness Web UI: live session stats, task/context/heatmap/quote widgets, OpenCode Go quota, multi-column grid layouts (1/2/4 columns) with 2x4 long tiles, a continuous magnification wave, and per-instance sizing; widgets are installable, reorderable and resizable from Settings > Components.'
+  zh: 'DeepSeek Harness Web UI 右侧部件栏：实时会话统计、任务/上下文/热力图/引用部件、OpenCode Go 用量、多列网格布局（1/2/4 列）与 2x4 长切片、连续放大波浪与逐实例尺寸；部件可在设置页安装、排序与调整大小。'

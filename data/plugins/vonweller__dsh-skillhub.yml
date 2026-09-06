@@ -1,0 +1,6 @@
+url: https://github.com/vonweller/dsh-skillhub
+name: vonweller/dsh-skillhub
+category: skill
+description:
+  en: Browse the public skillhub.cn catalog and install selected skills into ~/.dsh/skills.
+  zh: 浏览 skillhub.cn 公开技能目录，并将选中的技能安装到 ~/.dsh/skills。

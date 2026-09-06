@@ -1,0 +1,6 @@
+url: https://github.com/Dayi-Z/memoripo
+name: Dayi-Z/memoripo
+category: memory
+description:
+  en: 'A living memory workbench for DeepSeek Harness: watch the Hindsight bank grow (7-day curve, recall heat, timeline) and manage knowledge pages and background tasks, with the local daemon auto-started by the plugin.'
+  zh: 'DeepSeek Harness 长记忆工作台：7 日增长曲线、召回热度与时间线一目了然，支持知识页面与后台任务管理；本地 Hindsight daemon 由插件自动拉起。'

@@ -1,0 +1,6 @@
+url: https://github.com/Frog755/dsh-wallpaper
+name: Frog755/dsh-wallpaper
+category: ui
+description:
+  en: 'Persistent image or MP4 wallpaper for the DSH Web profile: a wallpaper card under Settings -> General selects a local image or MP4 (up to 300 MB), tunes surface opacity and blur, compresses video locally to H.264 when ffmpeg/ffprobe are on PATH, stores media under ~/.dsh/wallpapers, and pins the Web server to port 9191 so the saved wallpaper survives restarts.'
+  zh: 'DSH Web 持久化背景图/视频插件：在 设置 -> 通用 中提供壁纸卡片，可选本地图片或 MP4（最大 300 MB），调节表层透明度与模糊；检测到 ffmpeg/ffprobe 时在本机把视频压缩为 H.264；媒体保存到 ~/.dsh/wallpapers；并将 Web 服务固定到 9191 端口以便重启后恢复壁纸。'

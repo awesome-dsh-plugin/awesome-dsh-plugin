@@ -2,5 +2,5 @@ url: https://github.com/STARDUSTLC666/dsh-hyperframes
 name: STARDUSTLC666/dsh-hyperframes
 category: skill
 description:
-  en: 'Five official HyperFrames by HeyGen skills: HTML video / CLI / registry / website-to-video / GSAP reference.'
-  zh: HyperFrames by HeyGen 官方移植技能五件套：HTML 写视频 / CLI / 注册表 / 网址转视频 / GSAP 参考。
+  en: 'Twenty HyperFrames by HeyGen skills synced from the official upstream (HTML video authoring, animation, keyframes, audio/music-to-video, CLI, registry, slideshow, talking-head recut, website/product/PR-to-video and more), plus a bundled-resource health check.'
+  zh: 同步 HyperFrames by HeyGen 官方上游的二十技能：HTML 写视频/动画/关键帧/音频与音乐转视频/CLI/注册表/幻灯片/口播重剪/网址·产品·PR 转视频等，附随包资源完整性自检。

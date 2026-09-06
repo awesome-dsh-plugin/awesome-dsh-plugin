@@ -1,0 +1,6 @@
+url: https://github.com/k-ying/dsh-vsceditor
+name: k-ying/dsh-vsceditor
+category: ui
+description:
+  en: Embeds a real VS Code editor (code-server, or your local desktop VS Code via the bundled bridge extension) as a GUI tab, following agent file edits live with red/green diffs and file locking.
+  zh: 在 GUI 页签中内嵌真实的 VS Code 编辑器（code-server，或通过自带 bridge 扩展连接本机桌面版 VS Code），红绿 diff 实时跟随 Agent 的文件改动，支持文件锁定。

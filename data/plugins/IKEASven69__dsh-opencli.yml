@@ -1,0 +1,7 @@
+url: https://github.com/IKEASven69/dsh-opencli
+name: IKEASven69/dsh-opencli
+category: browser
+tarball: https://github.com/IKEASven69/dsh-opencli/releases/download/v0.1.0/dsh-opencli-0.1.0.tgz
+description:
+  en: Drive your real logged-in browser through OpenCLI — browser primitives plus 170+ site adapters as deterministic one-shot commands, with in-session adapter authoring, a write-approval gate and a settings management panel.
+  zh: 经 OpenCLI 操纵登录态真实 Chrome——浏览器原语加 170+ 站点适配器的一步式确定性命令，支持会话内创作适配器、write 审批门与设置面板管理。

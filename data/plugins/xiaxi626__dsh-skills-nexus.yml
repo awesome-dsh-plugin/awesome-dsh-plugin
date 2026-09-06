@@ -1,0 +1,6 @@
+url: https://github.com/xiaxi626/dsh-skills-nexus
+name: xiaxi626/dsh-skills-nexus
+category: skill
+description:
+  en: Universal skill adapter that registers any GitHub repo containing a SKILL.md as a DSH skill by cloning and symlinking into the official skills root.
+  zh: 通用 skill 适配器，将含 SKILL.md 的 GitHub 仓库克隆并 symlink 到官方 skills 根目录，注册为 DSH skill。

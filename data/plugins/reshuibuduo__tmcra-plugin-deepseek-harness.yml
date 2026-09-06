@@ -1,0 +1,7 @@
+url: https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness
+name: reshuibuduo/tmcra-plugin-deepseek-harness
+category: memory
+description:
+  en: 'Cross-app project memory for DeepSeek Harness: recalls account-global and current-project evidence before each turn, writes user and assistant records separately, keeps failed writeback in a durable local outbox, and supports local Writer and organizer models.'
+  zh: 面向 DeepSeek Harness 的跨应用项目记忆：每轮前召回账户全局与当前项目证据，分别写入用户和助手记录，以本地持久发件箱保存失败写回，并支持配置本地 Writer 与整理模型。
+tarball: https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness/releases/download/v0.1.7/dsh-tmcra-memory-0.1.7.tgz

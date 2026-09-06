@@ -1,0 +1,6 @@
+url: https://github.com/xiaobai2017666/dsh-chrome-cdp
+name: xiaobai2017666/dsh-chrome-cdp
+category: browser
+description:
+  en: Chrome DevTools Protocol Plugin for DeepSeek Harness. Use chrome-remote-interface to connect to and control Chrome via CDP. The connection includes a graphical interface.
+  zh: Chrome DevTools Protocol 插件 for DeepSeek Harness。通过 chromremote-interface 以 CDP 连接并操控 Chrome。连接带有图形界面。

@@ -1,0 +1,6 @@
+url: https://github.com/WongYuYe/dsh-appshots
+name: WongYuYe/dsh-appshots
+category: vision
+description:
+  en: 'Codex-style Appshots for DSH Desktop: capture the frontmost macOS window with both Command keys and attach it to the current chat.'
+  zh: 给 DSH Desktop 用的 Codex 风格 Appshots：按两边 Command 捕获当前前台窗口，并附加到当前会话。

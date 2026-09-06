@@ -1,0 +1,6 @@
+url: https://github.com/huaxiren6/dsh-email-reader
+name: huaxiren6/dsh-email-reader
+category: tools
+description:
+  en: OAuth2-capable IMAP email reader for accounts where password authentication is disabled. Microsoft disabled Basic Auth for personal Outlook IMAP in 2024, so this plugin authenticates via refresh-token OAuth2 (XOAUTH2) with automatic token refresh, plus app-password login for Gmail through an optional local HTTP/SOCKS proxy. Registers list/read/search as ol_email_* so it can coexist with the market dsh-email plugin without tool-name clashes.
+  zh: 面向密码认证被禁用邮箱的 OAuth2 IMAP 读取插件：微软 2024 年起停用个人 Outlook 的 IMAP 基本认证，本插件改用 refresh-token OAuth2（XOAUTH2）自动续期，Gmail 走应用密码并可选本地 HTTP/SOCKS 代理；工具注册为 ol_email_*，可与市场版 dsh-email 共存不撞名。

@@ -1,0 +1,6 @@
+url: https://github.com/Kayungko/dsh-plugin-task-coordinator
+name: Kayungko/dsh-plugin-task-coordinator
+category: session
+description:
+  en: Cross-task coordination for DeepSeek Harness - list, inspect, spawn, message and steer top-level sessions from a supervisor agent.
+  zh: 跨任务协调：在监督代理中列出、查看、派生、发消息并引导顶层会话。

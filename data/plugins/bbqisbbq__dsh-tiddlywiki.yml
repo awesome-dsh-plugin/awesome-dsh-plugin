@@ -1,0 +1,6 @@
+url: https://github.com/bbqisbbq/dsh-tiddlywiki
+name: bbqisbbq/dsh-tiddlywiki
+category: memory
+description:
+  en: 'Runs TiddlyWiki 5 as the DSH persistent knowledge base: ten tiddlywiki_* agent tools (filtered search, read/write/batch/rename/delete, recent, tags, plus git sync with conflict resolve), a full TiddlyWiki editor embedded in the GUI center column, and a quick-note widget with draft auto-save — all backed by an auto-committing git repository.'
+  zh: '把 TiddlyWiki 5 变成 DSH 的持久知识库：十个 tiddlywiki_* 智能体工具（带过滤的检索、读写/批量/改名/删除、最近、标签，以及 git 同步与冲突解决），GUI 中央栏内嵌完整 TiddlyWiki 编辑器，快速笔记卡片支持草稿自动保存——全部由自动提交的 git 仓库支撑。'

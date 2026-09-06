@@ -1,0 +1,6 @@
+url: https://github.com/iguowz/dsh-cortex
+name: iguowz/dsh-cortexx
+category: workflow
+description:
+  en: DeepSeek-Harness plugin for multi-model orchestration with recursive task decomposition, dynamic routing, quality gates, failure recovery, and KPI reporting.
+  zh: DeepSeek-Harness 多模型编排插件，支持递归任务拆解、动态路由、质量门控、失败恢复与 KPI 报表。

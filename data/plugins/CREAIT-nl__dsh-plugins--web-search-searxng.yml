@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/web-search-searxng
+name: CREAIT-nl/dsh-plugins#web-search-searxng
+category: browser
+description:
+  en: 'Points web_search at a self-hosted SearXNG instance instead of the native route: pages until maxResults is satisfied, and reports degraded coverage when engines fail so a thin result set is not read as a thin web.'
+  zh: '把 web_search 指向自建的 SearXNG 实例而非原生搜索路由：自动翻页直到满足 maxResults，并在引擎失败时报告覆盖不全，避免把稀少的结果误读成网上本就没有内容。'

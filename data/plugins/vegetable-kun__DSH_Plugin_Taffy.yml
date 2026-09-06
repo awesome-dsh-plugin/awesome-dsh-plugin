@@ -1,0 +1,6 @@
+url: https://github.com/vegetable-kun/DSH_Plugin_Taffy
+name: vegetable-kun/DSH_Plugin_Taffy
+category: fun
+description:
+  en: 'A Taffy mood mascot for the DeepSeek Harness Web UI: the corner GIF reacts live to agent state — approval pending, approved, thinking, tool runs, interrupts, rejections and errors — with drag positioning, a middle-click console, per-mood locking and persisted appearance settings.'
+  zh: 'Taffy 表情包状态机：右下角表情实时联动 agent 状态——待审批、已批准、思考、工具执行、插话、被拒与出错各有专属表情；支持拖拽定位、中键控制台、表情锁定与外观设置持久化。'

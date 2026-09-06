@@ -1,0 +1,7 @@
+url: https://github.com/zhujunpeng12/dsh-memory-system
+name: zhujunpeng12/dsh-memory-system
+category: memory
+tarball: https://github.com/zhujunpeng12/dsh-memory-system/releases/download/v0.1.1/zhujunpeng12-dsh-memory-system-0.1.1.tgz
+description:
+  en: 'Local-first persistent memory for DeepSeek Harness: bounded pre-step hot-memory injection, exact and Chinese-bigram BM25 cold recall, six agent tools, approval-gated lease-lock writes with recovery receipts, and read-only governance and trajectory-review candidates.'
+  zh: '面向 DeepSeek Harness 的本地优先持久记忆：在 pre-step 注入有预算上限的热记忆，使用精确匹配与中文二元 BM25 召回冷层，提供六个 Agent 工具，并以审批门禁、租约锁、恢复回执和只读治理与轨迹复盘候选保护写入。'

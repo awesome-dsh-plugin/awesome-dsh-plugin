@@ -1,0 +1,7 @@
+url: https://github.com/UncleK/dsh-think-translate
+name: UncleK/dsh-think-translate
+category: ui
+description:
+  en: Display-layer translation for the DSH Web UI — thinking chains, task cards and answers in 8 target languages via local Ollama or Google/Bing, originals preserved.
+  zh: DSH Web 界面显示层翻译：将思考链、任务卡片与回答正文翻译为 8 种目标语言之一（本地 Ollama 或 Google/Bing，自动选择），原文完整保留。
+tarball: https://github.com/UncleK/dsh-think-translate/releases/download/v1.0.10/dsh-think-translate-1.0.10.tgz

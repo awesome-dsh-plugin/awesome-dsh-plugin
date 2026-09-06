@@ -1,0 +1,6 @@
+url: https://github.com/wx971025/dsh-openspec
+name: wx971025/dsh-openspec
+category: docs
+description:
+  en: Browse, preview, edit, and save files under the current project's openspec/ directory from a Web UI header panel that follows the session workspace.
+  zh: 在 Web UI 会话标题栏打开当前项目的 openspec/ 目录，浏览、预览、编辑并保存其中的文件，自动跟随会话工作区。

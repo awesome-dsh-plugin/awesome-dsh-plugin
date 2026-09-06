@@ -1,0 +1,6 @@
+url: https://github.com/MurasakiIzumi/dsh-ticker-jp
+name: MurasakiIzumi/dsh-ticker-jp
+category: ui
+description:
+  en: 'A floating Japanese-stock ticker for DeepSeek Harness: real-time Nikkei 225 and TOPIX ETF quotes from Yahoo Finance, with a customizable watchlist and display-name aliases.'
+  zh: 'DeepSeek Harness 的日股行情悬浮窗：通过 Yahoo Finance 实时显示日经225 与 TOPIX ETF 报价，支持自定义自选代码与显示别名。'

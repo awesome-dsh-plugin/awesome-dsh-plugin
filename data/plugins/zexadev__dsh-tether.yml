@@ -1,0 +1,6 @@
+url: https://github.com/zexadev/dsh-tether
+name: zexadev/dsh-tether
+category: remote
+description:
+  en: Use the dsh web UI on your dev machine from an Android or iOS phone, connected peer-to-peer across networks via iroh with no server in between.
+  zh: 用 Android/iOS 手机远程使用电脑上的 dsh 完整网页界面,经 iroh 跨网点对点直连,中间不经过任何服务器。

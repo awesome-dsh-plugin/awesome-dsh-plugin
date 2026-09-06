@@ -1,0 +1,6 @@
+url: https://github.com/Dkrillex/dsh-macos-pet
+name: Dkrillex/dsh-macos-pet
+category: ui
+description:
+  en: "macOS desk pet forked from anneheartrecord/dsh-desk-pet, in a real always-on-top window that covers fullscreen Spaces: the pose follows whatever the local DSH is doing across six states, the right-click menu is a real AppKit one carrying quiet mode and a session list, and seven skins ship with it. Two of the seven are drawn from geometry by a script in the repo rather than generated, so making a skin needs no image model and no API credits; the bundled skill still expands one photo into all eighteen poses on your own image tool and credentials. There is no Electron and nothing to install alongside it: the window is driven through ctypes on the Python that ships with macOS."
+  zh: "分叉自 anneheartrecord/dsh-desk-pet 的 macOS 桌宠，一个真的置顶窗口，全屏 Space 也盖得住：姿势跟着本地 DSH 在六种状态之间走，右键菜单是真的 AppKit 菜单，里面有免打扰和会话清单，随包带七套皮肤。七套里有两套是仓库中的脚本用几何画出来的，不是生成的，所以做一套皮肤不需要图像模型、也不烧 API 额度；自带的 skill 仍用你自己的画图工具和额度，把一张照片扩写成十八个姿势。没有 Electron，也不用另装任何东西：窗口是用 macOS 自带的那个 Python 经 ctypes 驱动的。"

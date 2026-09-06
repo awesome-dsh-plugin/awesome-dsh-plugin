@@ -1,0 +1,6 @@
+url: https://github.com/ChenYiming-aaa/dsh-ui-ux-pro-max
+name: ChenYiming-aaa/dsh-ui-ux-pro-max
+category: ui
+description:
+  en: 'Offline-first UI/UX design intelligence library for DeepSeek Harness: design_recommend, design_review and design_search tools with a built-in database of 84 design styles, 192 color palettes, 74 font pairings, 99 UX guidelines, 25 chart types and 22 tech stacks, Chinese-first with zero runtime dependencies.'
+  zh: '为 DeepSeek Harness 提供离线可用的 UI/UX 设计智能库：内置 84 种设计风格、192 个配色、74 组字体、99 条 UX 规范、25 种图表与 22 个技术栈，提供 design_recommend / design_review / design_search 三个工具，中文优先、零运行依赖。'

@@ -2,5 +2,5 @@ url: https://github.com/TikaFlow/dsh-model-reasoning
 name: TikaFlow/dsh-model-reasoning
 category: model
 description:
-  en: Automatically fills in reasoning-effort levels for models from unofficial (custom) providers, with data sourced from models.dev.
-  zh: 为所有非官方（自定义）提供商的模型自动填充推理级别，数据来自 models.dev。
+  en: Auto-fills reasoning-effort levels, context windows, output limits and image modality for models from unofficial (custom) providers, with data from models.dev.
+  zh: 为所有非官方（自定义）提供商的模型自动填充推理级别、最大上下文、输出上限与图片模态，数据来自 models.dev。

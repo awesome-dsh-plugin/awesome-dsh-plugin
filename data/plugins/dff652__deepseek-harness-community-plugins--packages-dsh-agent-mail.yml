@@ -1,0 +1,7 @@
+url: https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-agent-mail
+name: dff652/deepseek-harness-community-plugins#dsh-agent-mail
+category: tools
+description:
+  en: Connects DeepSeek Harness to a deployment-owned Agent Mail MCP server and exposes eleven messaging, claim, acknowledgement, diagnostics and approval-discovery tools with non-human approval execution denied.
+  zh: 将 DeepSeek Harness 连接到部署方管理的 Agent Mail MCP 服务，并提供十一个消息、认领、确认、诊断与审批发现工具，同时拒绝非人类身份执行审批。
+tarball: https://github.com/dff652/deepseek-harness-community-plugins/releases/download/dsh-agent-mail-v0.1.0/dff652-dsh-agent-mail-0.1.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/lninghaha/dsh-coding-remote-kit
+name: lninghaha/dsh-coding-remote-kit
+category: remote
+tarball: https://github.com/lninghaha/dsh-coding-remote-kit/releases/download/v0.4.0/dsh-coding-remote-kit-0.4.0.tgz
+description:
+  en: "Mobile pairing remote for DeepSeek Harness: E2EE companion over dual-plane allowlisted RPC (LAN, Tailscale, optional Cloudflare Quick Tunnel or self-hosted rendezvous)."
+  zh: "DeepSeek Harness 移动配对远程插件：双平面白名单 RPC 上的端到端加密 Companion（局域网、Tailscale，可选 Cloudflare Quick Tunnel 或自建 rendezvous）。"

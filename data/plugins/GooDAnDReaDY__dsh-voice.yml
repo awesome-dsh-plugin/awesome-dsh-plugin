@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-voice
+name: GooDAnDReaDY/dsh-voice
+category: voice
+description:
+  en: "Voice input for the web UI: dictation chunked by pauses and voice messages, each with its own provider fallback chain (Deepgram, Groq, HuggingFace, local whisper.cpp, or an OpenAI-compatible endpoint)."
+  zh: "Web UI 语音输入：按停顿分段的听写与语音消息，各自拥有独立的服务商回退链（Deepgram、Groq、HuggingFace、本地 whisper.cpp 或 OpenAI 兼容接口）。"
