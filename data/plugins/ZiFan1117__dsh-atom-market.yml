@@ -1,0 +1,6 @@
+url: https://github.com/ZiFan1117/dsh-atom-market
+name: ZiFan1117/dsh-atom-market
+category: tools
+description:
+  en: 'Software Atom Market for DeepSeek Harness — lets agents browse a shared store of contract-typed capability atoms: search atoms, read full manifests, validate submissions, draft new atoms (atom_search/atom_read/atom_validate/atom_draft); GitHub store as zero-config default source.'
+  zh: '把软件原子市场接入 DeepSeek Harness：Agent 可检索能力原子、读取完整契约、投稿前校验 manifest、起草新原子（atom_search/atom_read/atom_validate/atom_draft）；默认直连 GitHub 商店，零配置。'
