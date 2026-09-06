@@ -2,5 +2,5 @@ url: https://github.com/Aik358/dsh-auto-memory
 name: Aik358/dsh-auto-memory
 category: memory
 description:
-  en: 'Cache-friendly three-layer memory for DSH: lean auto injection, per-turn AI consolidation, proactive calendar reminders and warm greetings, plus memory inheritance from other AI tools.'
-  zh: DSH 三层自动记忆引擎：缓存友好的精简注入与每轮 AI 自动沉淀，主动日历提醒与暖心问候，可继承其他 AI 工具的记忆。
+  en: 'Proactive associative memory for DSH: zero-prompt recall injected at a fixed boundary before the model speaks — host-side contextual middleware keeps the prefix cache hot. Three-layer auto-consolidation (per-turn subagent filing), skill crystallization from repeated workflows, and experimental Astra-style context management: four-part handoff ledgers + a PLAN.md whiteboard that survive context-window switches, water-level sensing priced with the official token meter (window auto-follows the active model), and memory_recall scopes (handoff/sessions) for on-demand retrieval. Local Markdown storage, model-agnostic, zero runtime dependencies; lexical BM25 0GB floor with optional semantic tiers (JS e5-small ~130MB / Python BGE-M3 int8). Whiteboard tab live in the panel; handoff off by default (Settings → Automation).'
+  zh: 主动联想记忆插件：记忆不靠模型调用——Host 观察情境，在模型开口前经固定边界注入，前缀缓存全程命中。三层记忆自动沉淀（每轮子代理静默归档）、重复流程固化为技能 checklist，以及实验性的 Astra 式上下文管理：四段式交接账本 + PLAN.md 白板跨窗口续命，水位感知按官方 token 公式估算（窗口自动适配当前模型），memory_recall 支持 handoff/sessions 按需检索。本地 Markdown 存储、模型无关、零运行时依赖；词法 BM25 0GB 兜底，可选语义档（JS e5-small ~130MB / Python BGE-M3 int8）。面板「白板」页签实时可视；交接特性默认关闭（设置 → 自动化开启）。
