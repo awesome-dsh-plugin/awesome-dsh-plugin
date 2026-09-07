@@ -618,6 +618,7 @@ dsh plugin --profile web add dshmarket
 - [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 三件套全家桶：Windows 原生窗口（WebView2）+ DeepEye 视觉（GLM-4V-Flash）+ 语音输入（麦克风按钮），一条命令装齐。
 - [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。
 - [zizhongfeiyang/dsh-settings-drawer](https://github.com/zizhongfeiyang/dsh-settings-drawer) — 让你选择 DeepSeek Harness 设置页左侧导航要显示哪些栏目。
+- [zmm863-commits/dsh-desktop-pack](https://github.com/zmm863-commits/dsh-desktop-pack) — 泡泡猫 DSH 桌面版 — 开箱即用的 DeepSeek Harness 桌面客户端，预装 14 个插件，一键安装。含骰子大作战、文件上传、长期记忆、领域专家团、定时自动化、IM 接入、插件市场、深海女仆工坊主题。
 - [zmm863-commits/dsh-paperclip](https://github.com/zmm863-commits/dsh-paperclip) — 在 DSH Web 输入框添加回形针按钮：点击选择文件（支持拖拽），文件内容自动插入输入框。
 - [zoumutou/dsh-web-preview](https://github.com/zoumutou/dsh-web-preview) — 侧边网页预览面板：本地静态托管、Markdown/代码/图片预览、非静态项目一键运行（Cargo/npm/Go/Python）实时日志、文件直接拖入对话（保存到工作区）、网页元素标记批注、404 时工作区文件搜索、链接点击接管到侧边预览。
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — OpenPencil 设计预览与编辑插件。
