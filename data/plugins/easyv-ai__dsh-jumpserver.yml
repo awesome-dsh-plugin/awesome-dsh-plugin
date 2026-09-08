@@ -1,0 +1,6 @@
+url: https://github.com/easyv-ai/dsh-jumpserver
+name: easyv-ai/dsh-jumpserver
+category: security
+description:
+  en: 'Conversational JumpServer asset and permission management with 53 tools across 10 domains.'
+  zh: '通过对话管理 JumpServer 资产与权限，提供 53 个工具，覆盖 10 个领域。'
