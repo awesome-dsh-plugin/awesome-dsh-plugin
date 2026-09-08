@@ -1,0 +1,7 @@
+url: https://github.com/edisontaisite/codex-harness-control
+name: edisontaisite/codex-harness-control
+category: workflow
+tarball: https://github.com/edisontaisite/codex-harness-control/releases/download/v0.7.2/codex-harness-control-0.7.2.tgz
+description:
+  en: Coordinate existing Harness sessions from Codex with task dispatch, review receipts, and scheduled progress checks.
+  zh: 由 Codex 协调已有 Harness 会话，支持任务派发、验收回执和定时进度检查。
