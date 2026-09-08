@@ -1,0 +1,19 @@
+url: https://github.com/shengyvself/dsh-reading-pad
+name: shengyvself/dsh-reading-pad
+category: ui
+description:
+  en: >-
+    Immersive read-only reading panel for DeepSeek Harness. The model delivers
+    pre-formatted Markdown via the `reading_pad_send` tool into a better-sidebar
+    tab: three low-blue-light themes (Paper/Sepia/Night), 30em measure
+    typography, A-/A+ font sizing, scroll-position persistence, and read-only
+    chapter browsing of the current writing project. Rendering is a
+    dependency-free front-end M1 Markdown subset (GFM tables; all HTML escaped;
+    URL scheme whitelist). Requires the DSH-better-sidebar host; the manuscript
+    source additionally needs the writing workspace channel.
+  zh: >-
+    DSH 沉浸式只读阅读板：模型用 `reading_pad_send` 把已排版 Markdown 投递进
+    better-sidebar「📖 阅读板」tab——三套低蓝光主题（Paper/Sepia/Night）、30em
+    限宽排版、A⁻/A⁺ 字号、滚动位置持久化、当前写作工程章节只读浏览。渲染为无依赖
+    的纯前端 M1 Markdown 子集（支持 GFM 表格；HTML 全转义、URL 协议白名单）。
+    需要 DSH-better-sidebar 宿主；作品章节源另需写作工作台通道。
