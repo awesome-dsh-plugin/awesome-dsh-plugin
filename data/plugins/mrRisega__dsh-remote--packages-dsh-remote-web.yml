@@ -1,0 +1,6 @@
+url: https://github.com/mrRisega/dsh-remote/tree/main/packages/dsh-remote-web
+name: mrRisega/dsh-remote#dsh-remote-web
+category: remote
+description:
+  en: 'Remote control for dsh web from a phone browser, from anywhere (no public IP needed): hosted cloud relay works over 4G, or self-host the router; one command installs the desktop bridge and this in-harness Settings panel (cloud/self-hosted tabs, account login, bridge start/stop, feedback); HTTP/WebSocket tunnel through with access-key auth, live device list and optional traffic quotas.'
+  zh: '手机浏览器远程控制 dsh web，人在哪都能用（免公网 IP）：官方托管中继 4G 即用，也可自建 relay；一条命令安装电脑端 bridge 与设置页「远程控制」面板（云端/自建切换、账号登录、bridge 启停、反馈）；HTTP/WebSocket 隧道全量透传，访问密钥认证、实时设备列表、可选流量配额。'
