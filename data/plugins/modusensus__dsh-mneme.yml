@@ -2,5 +2,5 @@ url: https://github.com/modusensus/dsh-mneme
 name: modusensus/dsh-mneme
 category: memory
 description:
-  en: "Cross-session memory plugin for DeepSeek Harness: remembers across sessions, consolidates in the background (autoDream), and manages everything through an interactive memory library panel — SQLite storage with human-editable Markdown mirrors, offline semantic search, and a standalone external API and CLI."
-  zh: "DeepSeek Harness 跨会话记忆插件：跨会话记住用户与项目、后台 autoDream 自动巩固记忆、交互式记忆库面板统一管理（浏览/搜索/编辑/导入导出）——SQLite 存储配可人工编辑的 Markdown 镜像，支持离线语义检索、独立外部 API 与 CLI。"
+  en: "Cross-session memory plugin for DeepSeek Harness: remembers across sessions, consolidates in the background (autoDream), and manages everything through an interactive memory library panel — SQLite storage with human-editable Markdown mirrors, offline semantic search, feature-flag panel, light mode, and a standalone external API and CLI. v0.7.20 restored the heat-based self-evolving memory model (power-law decay + sleep demotion protection, opt-in)."
+  zh: "DeepSeek Harness 跨会话记忆插件：跨会话记住用户与项目、后台 autoDream 自动巩固记忆、交互式记忆库面板统一管理（浏览/搜索/编辑/导入导出）——SQLite 存储配可人工编辑的 Markdown 镜像，支持离线语义检索、功能开关面板、轻量模式、独立外部 API 与 CLI。v0.7.20 回归 heat 自进化记忆（幂律衰减 + sleep 降级保护，默认关可开）。"
