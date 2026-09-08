@@ -4,4 +4,4 @@ category: security
 tarball: https://github.com/azazo1/dsh-write-protect/releases/latest/download/dsh-write-protect.tgz
 description:
   en: Protect declared workspace subpaths such as .git from writes, and optionally grant extra writable roots under workspace-write.
-  zh: 为工作区指定子路径提供只读保护, 默认保护 .git, 并支持在 workspace-write 下声明额外可写根。
+  zh: 为工作区指定子路径提供只读保护 (例如 .git), 并支持在 workspace-write 下声明额外可写根。
