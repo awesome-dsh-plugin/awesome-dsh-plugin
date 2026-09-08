@@ -1831,6 +1831,7 @@ dsh plugin --profile web add dshmarket
 - [memorax-ai/dsh-patchouli](https://github.com/memorax-ai/dsh-patchouli) — 面向 DeepSeek Harness 的记忆与知识中台：在兼容插件之间路由 update、retrieve 和 subscribe 调用，并提供可选的事务化 Rust 后端。
 - [memorylake-ai/memorylake-harness#dsh-plugin](https://github.com/memorylake-ai/memorylake-harness/tree/main/dsh-plugin) — 将 Memory Lake 作为 dsh 的持久记忆层：基于 memorylake CLI 的 memory_search、memory_remember、memory_forget 三个工具，会话状态行，以及引导安装/诊断 skills，与 Claude Code、Codex 插件共享同一 ~/.memorylake 身份与记忆。
 - [mengxiaoxian/lookover#dsh-expmem](https://github.com/mengxiaoxian/lookover/tree/main/dsh-expmem) — 个人经验记忆：把真实解决过的问题存为带来源、可纠正、有适用条件的案例，新任务中自动召回复用，纠正与删除会级联影响后续召回。
+- [menotbobbybrown/dsh-plugin-memory](https://github.com/menotbobbybrown/dsh-plugin-memory) — DeepSeek Harness 持久化知识图谱与长期记忆引擎：支持语义向量检索及跨会话实体回忆。
 - [meyaomiao/dsh-graphmemory](https://github.com/meyaomiao/dsh-graphmemory) — DSH 知识图谱记忆：better-sidebar「记忆图谱」页签与独立看板 /graph-memory/app；抽取任务/技能/事件节点并跨会话召回，npm 包名为 dsh-graphmemory。
 - [MiHjy12138/dsh-memory-lite](https://github.com/MiHjy12138/dsh-memory-lite) — 给 DeepSeek Harness 的按需记忆库：会话日志提炼成分层 markdown（总览、索引与分主题明细），mem_query 只回命中条目而非整份索引。不每轮注入、零依赖，每条记忆都保留指回原对话的溯源标记。
 - [MineRPi/dsh-trilium](https://github.com/MineRPi/dsh-trilium) — 通过 ETAPI 把 Trilium 笔记库接入 agent，提供 20 个工具：记忆读写（remember/recall + 自动注入索引）、笔记管理（CRUD/克隆/属性/修订）、全文搜索、周报工作流、附件、日历笔记、备份导入，独立设置卡片，配置 0600 落盘。
@@ -2229,6 +2230,7 @@ dsh plugin --profile web add dshmarket
 - [maxmilian/dsh-odoo](https://github.com/maxmilian/dsh-odoo) — 经 JSON-RPC 的 Odoo 只读工具：服务器信息、模型字段自省，以及受限的 search_read——仅限白名单模型，且 domain 字段名不允许包含点号，因此无法沿关联关系穿透。草稿创建工具需显式开启 allowWrite 才会注册，且仅限 sale.order 与 project.task，草稿状态由插件强制。
 - [megatronyy/dsh-tradingagents](https://github.com/megatronyy/dsh-tradingagents) — /trading-agent 命令背后的 A 股多智能体分析，移植自 TradingAgents-AShare：14 个角色（分析师、多空辩论、风控、交易员）经 dsh 已配置的模型路由协作产出完整投研报告。
 - [Mekansm1/DSH-WebGIS](https://github.com/Mekansm1/DSH-WebGIS) — Conversational GIS for the DSH Web UI with local file and PostGIS querying, interactive maps, and spatial analysis.
+- [menotbobbybrown/dsh-plugin-mcp](https://github.com/menotbobbybrown/dsh-plugin-mcp) — DeepSeek Harness 通用 Model Context Protocol (MCP) 桥接插件：支持 stdio/sse/websocket 协议，具备 10k 休眠伸缩引擎、亚毫秒级 BM25 工具检索、动态 Token 预算管理及实时 Web UI 仪表盘。
 - [merenguesL/dsh-tool-normalizer](https://github.com/merenguesL/dsh-tool-normalizer) — 给工具调用加一层自愈：缺参数、错字段、路径越界在到达模型前自动修好，实测可见错误率从 7.95% 降到 2.20%。
 - [Meteor-system/dsh-codegraph](https://github.com/Meteor-system/dsh-codegraph) — 将当前工作区索引为关系图，向 agent 暴露一个工具 codegraph_explore（可达性、调用者、影响面），并在 Web 右侧栏提供图形面板。
 - [mimosa776/dsh-plugin-recommender](https://github.com/mimosa776/dsh-plugin-recommender) — 按职业/角色推荐 DSH 插件：询问用户是做什么的（程序员、设计师、写作、研究、运维、学生…），推荐适合的插件，并对每个插件做本地静态安全审计（危险代码模式 + 0-100 风险分）与口碑检查（npm 下载量 / GitHub 星数）。
@@ -2610,6 +2612,7 @@ dsh plugin --profile web add dshmarket
 - [maxiaovivi/dsh-cloak-browser](https://github.com/maxiaovivi/dsh-cloak-browser) — 基于 CloakBrowser 的原生浏览器工具：按 Agent 隔离会话，提供有界快照、ref 交互、截图与安全路由。
 - [maxwell-feng/dsh-searxng-web](https://github.com/maxwell-feng/dsh-searxng-web) — 用自托管 SearXNG 实例接管原生 web_search 与 web_fetch 工具，免密钥、不经第三方。
 - [maxwell-feng/dsh-tinyfish-search](https://github.com/maxwell-feng/dsh-tinyfish-search) — 基于 TinyFish 的网页搜索提供方：把内置 web_search 接到 TinyFish Search API，每次搜索一次 GET，不消耗模型调用。
+- [menotbobbybrown/dsh-plugin-browser](https://github.com/menotbobbybrown/dsh-plugin-browser) — DeepSeek Harness 原生无头及可视化 Chromium 浏览器自动化插件：支持 DOM 树提取、网页截图捕获及内置 SSRF 安全防护。
 - [MicroHEROX/dsh-exa-mcp](https://github.com/MicroHEROX/dsh-exa-mcp) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接接入托管的 Exa 搜索 MCP 端点（mcp.exa.ai）：web_search_exa 与 web_fetch_exa 工具，免费额度匿名可用，设置 EXA_API_KEY 可解锁更高限额。
 - [MicroHEROX/dsh-Kimi-WebBridge](https://github.com/MicroHEROX/dsh-Kimi-WebBridge) — 通过本地 Kimi WebBridge 守护进程驱动用户的真实浏览器：navigate、find-tab、snapshot、click、fill、evaluate、CDP、screenshot、network、upload、PDF 导出与标签管理工具，复用浏览器已登录会话。
 - [moguiyu/dsh-tavily#packages/dsh-tavily](https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tavily) — Tavily 多密钥搜索：支持密钥轮换/故障转移、用量仪表盘与设置卡片。
