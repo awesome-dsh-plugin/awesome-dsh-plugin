@@ -1,0 +1,6 @@
+url: https://github.com/AtWhuhu/dsh-devin-cli
+    name: AtWhuhu/dsh-devin-cli
+    category: model
+    description:
+      en: Connect local Devin CLI into DSH model provider via stdio ACP with web management.
+      zh: 通过 stdio ACP 将本机 Devin CLI 接入 DSH 模型提供方并提供可视化管理面板。
