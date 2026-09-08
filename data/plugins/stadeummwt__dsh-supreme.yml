@@ -1,0 +1,6 @@
+url: https://github.com/stadeummwt/dsh-supreme
+name: stadeummwt/dsh-supreme
+category: security
+description:
+  en: 'Governance suite of seven host-side policy plugins: cost and execution-class policy gates on model calls with UNKNOWN-cost hard denial, benchmark-informed routing with RM0-first cost-class selection, deterministic verification with evidence checks, a bounded note-ledger memory policy, and workflow limits — enforced through one dsh.bundle patch layer, with the pinned upstream harness left unpatched.'
+  zh: '七个宿主侧策略插件组成的治理套件：模型调用的成本与执行级策略门禁（UNKNOWN 成本硬拒绝）、基于基准证据的路由与 RM0-first 成本类选择、带证据检查的确定性验证、有界笔记账本记忆策略与工作流限制——通过单一 dsh.bundle 补丁层强制执行，上游 harness 本体保持零补丁。'
