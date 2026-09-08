@@ -1,0 +1,6 @@
+url: https://github.com/JustGenius-s/DSH-Plugs/tree/main/plugins/dsh-flow
+name: JustGenius-s/DSH-Plugs#dsh-flow
+category: workflow
+description:
+  en: 'Leader-plans / subagent-executes orchestration: /flow lays work out as a DAG dispatched to child agents, reshapes it with flow.patch, removes execution tools from the Leader, and draws the live graph in a Flow tab.'
+  zh: '主代理规划、子代理执行的编排：/flow 把工作排成 DAG 分派给子代理，可用 flow.patch 中途调整，主代理期间移除执行工具，Flow 标签页实时展示流程图。'

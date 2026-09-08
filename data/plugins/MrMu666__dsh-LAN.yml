@@ -1,0 +1,6 @@
+url: https://github.com/MrMu666/dsh-LAN
+name: MrMu666/dsh-LAN
+category: remote
+description:
+  en: 'Password-gated LAN access for the Web GUI: binds 0.0.0.0, auto-allows host firewall ports, injects mobile touch adaptation for phones, and re-exposes local-only privileged methods through a passcode proxy.'
+  zh: 'Web GUI 的口令门禁局域网访问：绑定 0.0.0.0、自动放行主机防火墙端口、为手机注入移动端触控适配，并通过口令代理重新暴露仅本机的特权方法。'

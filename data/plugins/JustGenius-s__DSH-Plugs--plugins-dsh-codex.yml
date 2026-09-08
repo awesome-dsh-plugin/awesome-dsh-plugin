@@ -1,0 +1,6 @@
+url: https://github.com/JustGenius-s/DSH-Plugs/tree/main/plugins/dsh-codex
+name: JustGenius-s/DSH-Plugs#dsh-codex
+category: ui
+description:
+  en: 'Codex-style shell for the Web UI: per-turn Worked-for collapsing, message navigation, a side panel with file tree / preview / diff, a login-shell PTY terminal, and a read-only git commit-graph panel.'
+  zh: 'Web UI 的 Codex 风格外壳：按轮次折叠的 Worked-for、消息导航、带文件树/预览/差异的侧面板、登录 shell PTY 终端，以及只读 git 提交图面板。'
