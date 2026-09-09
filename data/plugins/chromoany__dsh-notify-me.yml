@@ -1,0 +1,6 @@
+url: https://github.com/chromoany/dsh-notify-me
+name: chromoany/dsh-notify-me
+category: notify
+description:
+  en: 'Toasts, alert sounds and a tab-title marker in the DSH web GUI when the agent needs your input (approval, plan review, question) or a reply finishes in the background; toggleable in Settings, with zh/en alert text.'
+  zh: DSH Web 界面提醒插件：模型需要你操作（审批、方案确认、提问）或回复在后台完成时，弹出系统通知、提示音并标记标签页标题；可在设置页开关并切换中英文提醒文案。
