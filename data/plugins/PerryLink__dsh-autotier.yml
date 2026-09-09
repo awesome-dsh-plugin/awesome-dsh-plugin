@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-autotier
+name: PerryLink/dsh-autotier
+category: model
+description:
+  en: Automatic strong/cheap model-tier routing for DeepSeek Harness. An intent gate scores every turn from deterministic signals (rules, keywords, tool use, images) and lands it on the strong or cheap tier through the agent/request waterfall; complex work is planned on the strong tier and implemented on the cheap tier, simple work stays cheap. A deterministic guard denies high-risk tool calls while the cheap tier executes, and repeated failures escalate with a TTL fallback plus an effort-first ladder.
+  zh: 面向 DeepSeek Harness 的自动强弱档路由：意图门控用确定性信号（规则、关键词、工具使用、图像）为每个 turn 打分，经 agent/request 接缝落到强档或弱档；复杂任务由强档规划、弱档实施，简单任务全程弱档。确定性守卫在弱档执行时拒绝高危工具调用，连续失败按 TTL 自动升级并优先提升 effort。
