@@ -1,0 +1,6 @@
+url: https://github.com/easyv-ai/dsh-pve
+name: easyv-ai/dsh-pve
+category: security
+description:
+  en: 'Conversational Proxmox VE control with 232 tools across 13 domains.'
+  zh: '通过对话控制 Proxmox VE，提供 232 个工具，覆盖 13 个领域。'
