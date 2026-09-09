@@ -1,0 +1,6 @@
+url: https://github.com/UnknowCao/dsh-outlook
+name: UnknowCao/dsh-outlook
+category: identity
+description:
+  en: 'Zero-credential Outlook automation: 13 tools that drive the local desktop Outlook client via COM — search/read mail, drafts, reply/forward, calendar, address book, rooms, free/busy — plus a sidebar new-mail badge. No Graph API registration, no SMTP passwords; anything that leaves the machine passes a three-layer human approval gate.'
+  zh: '零凭据 Outlook 自动化：13 个工具通过 COM 直接驱动本地桌面 Outlook 客户端——搜信/读信/草稿/回复转发/日历/通讯录/会议室/忙闲查询——外加侧边栏新邮件角标。无需 Graph API 注册、无需 SMTP 密码；任何外发动作都过三层人工审批门。'
