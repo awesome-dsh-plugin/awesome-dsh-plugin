@@ -1,5 +1,5 @@
-url: https://github.com/ding112/MoneyPal
-name: ding112/dsh-moneypal
+url: https://github.com/ding112/MoneyPal/tree/main/packages/dsh-moneypal
+name: ding112/MoneyPal#dsh-moneypal
 category: tools
 description:
   en: Personal finance plugin for DSH with structured Beancount ledger tools.
