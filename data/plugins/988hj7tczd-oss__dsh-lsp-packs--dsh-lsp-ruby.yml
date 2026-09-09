@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-ruby
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-ruby
+category: dev
+description:
+  en: 'Ruby LSP configuration plugin for DeepSeek Harness using ruby-lsp.'
+  zh: '基于 ruby-lsp 为 DeepSeek Harness 提供 Ruby 代码导航和语言服务配置。'

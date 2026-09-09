@@ -1,0 +1,6 @@
+url: https://github.com/H1Kariiiiiii/dsh-desktop-launcher2
+name: H1Kariiiiiii/dsh-desktop-launcher2
+category: ui
+description:
+  en: 'One-click desktop launcher for DSH Web: creates a Windows .lnk with a WPF-style startup popup (progress + timeout), then opens the authenticated browser; plus a floating shutdown button that exits dsh gracefully via ctx.appExit.'
+  zh: '一键桌面启动器：Windows 快捷方式 + WPF 风格启动弹窗（进度与超时提示），启动 dsh web 并打开认证浏览器；右下角悬浮关机按钮，经 ctx.appExit 优雅退出 dsh 进程。'

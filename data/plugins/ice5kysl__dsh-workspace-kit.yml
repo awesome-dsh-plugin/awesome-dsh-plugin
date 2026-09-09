@@ -1,0 +1,6 @@
+url: https://github.com/ice5kysl/dsh-workspace-kit
+name: ice5kysl/dsh-workspace-kit
+category: ui
+description:
+  en: Workspace-first enhanced sidebar for dsh Web that shadows the built-in workspace browser at low priority (one-click toggle back to the official one) and adds soft workspace archive/restore, per-workspace SVG icons and accent colors, drag reorder and title/path/session-content search, plus a ⌘K Spotlight palette fuzzy-searching workspaces and sessions; the host half ships read-only workspace_find/workspace_list model tools and /workspace-find /workspace-list slash commands. Bilingual zh/en.
+  zh: 面向 dsh Web 的工作区优先增强侧栏：以低优先级 shadow 内置工作区浏览器（可一键切回官方版），提供软归档/恢复、每工作区 SVG 图标与强调色、拖拽排序与标题/路径/会话内容搜索；另提供 ⌘K Spotlight 面板模糊搜索工作区/会话；宿主侧附带只读 workspace_find/workspace_list 工具与 /workspace-find /workspace-list 斜杠命令（中英双语）。

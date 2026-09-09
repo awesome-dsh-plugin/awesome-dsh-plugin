@@ -1,0 +1,6 @@
+url: https://github.com/WuJiaoJue/dsh-herdr-site
+name: WuJiaoJue/dsh-herdr-site
+category: remote
+description:
+  en: 'Reports the dsh/cc-tui agent working, idle and blocked states to the Herdr terminal workspace manager over its custom-integration protocol, so a dsh pane gets state, panel jump and --wait support.'
+  zh: 通过 Herdr 自定义集成协议把 dsh/cc-tui agent 的 working / idle / blocked 状态上报给终端工作区管理器 Herdr，让 dsh 面板获得状态显示、面板跳转与 --wait 支持。

@@ -2,5 +2,5 @@ url: https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh
 name: Vladimir-Human/humanizer-ru#dsh
 category: skill
 description:
-  en: 'Cleans AI traces from Russian text: finds chatbot copy-paste artefacts (ChatGPT, Gemini, Grok, Perplexity, DeepSeek) and rewrites the text into natural prose on request; 39 regex markers with an evidence registry, offline, text-only bundle.'
-  zh: 清理俄语文本中的 AI 痕迹：识别聊天机器人复制粘贴残留（ChatGPT、Gemini、Grok、Perplexity、DeepSeek），并按需改写为自然行文；39 个正则标记配证据登记表，离线运行，纯文本 bundle。
+  en: 'Cleans AI traces from Russian text: finds chatbot copy-paste artefacts (ChatGPT, Gemini, Grok, Perplexity, DeepSeek), strips hidden text marks (zero-width characters, invisible layout; shadow scan catches markers split by invisibles), and rewrites the text into natural prose on request; 40 regex markers, 38 with full evidence-registry entries; 72 gates, 193 tests; offline, text-only bundle (binary metadata removal lives in scripts/).'
+  zh: '清理俄语文本中的 AI 痕迹：识别聊天机器人复制粘贴残留（ChatGPT、Gemini、Grok、Perplexity、DeepSeek），移除隐藏文本标记（零宽字符、隐形排版；影子扫描捕获被不可见字符拆分的标记），并按需求改写为自然行文；40 个正则标记，其中 38 个有完整证据登记；72 个门控，193 个测试；离线运行，纯文本 bundle（二进制元数据移除在 scripts/ 中）。'

@@ -182,7 +182,19 @@ jobs:
         # Losing that race must not abort the nightly before the two publish
         # steps below — they are the reason the run exists, and the site is
         # about to be redeployed by whichever push won anyway.
-        continue-on-error: ${{ github.event_name == 'schedule' }}
+        # workflow_dispatch is here for the same reason schedule is, and it was
+        # left out by oversight: a dispatch runs the identical probe-and-publish
+        # path, so a failed deploy costs it the identical work. On 2026-09-05 a
+        # dispatched run spent 36 minutes probing, then died here on a 403 —
+        # the App installation quota had been drained by approving a batch of
+        # queued workflow runs — and took the cache-save post-steps and both
+        # npm publish steps down with it. Nothing was banked; the probe had to
+        # be redone from scratch.
+        #
+        # Deploying is never the reason a probe run exists. Losing the deploy
+        # to a transient 403 is recoverable by the next push; losing the probe
+        # is not.
+        continue-on-error: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
 
       # The same plugins.json, published to npm — see
       # scripts/publish-catalog.mjs for why it has to exist in two places.

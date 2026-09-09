@@ -1,6 +1,6 @@
 url: https://github.com/xuexiaolei1997/dsh-plugin-stock-x
 name: xuexiaolei1997/dsh-plugin-stock-x
-category: market
+category: ui
 description:
-  en: Real-time multi-market stock quote, global indices, multi-period technical charts, capital flow and AI quantitative analysis.
-  zh: 跨市场实时行情、全球指数、多周期技术图表、主力资金流向与 AI 量化投研工作台。
+  en: 'Financial quantitative workbench and stock ticker: floating ball and drawer panel, real-time A/HK/US/global market quotes, multi-period K-lines and 5-day intraday charts, depth order book, capital flow, sector heat map, and AI investment research.'
+  zh: '全景金融量化工作台与股票盯盘：悬浮球与抽屉面板、A/港/美/全球指数实时行情、多周期K线与5日分时、五档盘口、资金流向、板块热点榜与AI投研诊断。'

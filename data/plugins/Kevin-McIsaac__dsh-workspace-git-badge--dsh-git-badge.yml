@@ -1,0 +1,6 @@
+url: https://github.com/Kevin-McIsaac/dsh-workspace-git-badge/tree/main/dsh-git-badge
+name: Kevin-McIsaac/dsh-workspace-git-badge#dsh-git-badge
+category: git
+description:
+  en: 'Git status badges for DSH: sidebar workspace-row badges and an input-row chip showing the current conversation''s workspace git state, with event-driven freshness over SSE.'
+  zh: 'DSH 的 Git 状态徽章：侧边栏工作区行徽章与输入行徽章，显示当前会话工作区的 git 状态，通过 SSE 事件驱动保持实时。'

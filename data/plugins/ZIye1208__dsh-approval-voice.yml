@@ -1,0 +1,6 @@
+url: https://github.com/ZIye1208/dsh-approval-voice
+name: ZIye1208/dsh-approval-voice
+category: notify
+description:
+  en: "Plays a chime and speaks a Chinese voice alert when an approval, question, or plan-review popup appears in the DSH web GUI, so you never miss a request."
+  zh: "DSH Web GUI 中出现审批、提问或计划审批弹窗时，播放提示音并中文语音播报，避免漏看待处理请求。"

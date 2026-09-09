@@ -1,0 +1,233 @@
+name: Held PR rescan
+
+# `held: author` never clears itself, and the batch merge filters the queue by
+# label. Put together, those two facts mean a submission that has been FIXED is
+# invisible: the author pushes the change, the label still says held, and the
+# next queue scan skips it. Nothing is broken and nobody is notified — it just
+# stops existing as far as the merge queue is concerned.
+#
+# That is not hypothetical. On 2026-09-07 a deliberate rescan of green +
+# `held: author` pull requests found 11 that had been ready for merge for a
+# while, several with the author pinging into silence:
+#
+#   #2233  fixed 2026-08-21, merged 2026-09-07  (17 days)
+#   #2881  fixed 2026-08-25, merged 2026-09-07  (13 days, author pinged 3x)
+#   #2179  fixed 2026-08-30, merged 2026-09-07  (8 days, author pinged 3x)
+#
+# The maintainer promised those authors this would become a standing step
+# rather than something someone has to remember. This is that step.
+#
+# It deliberately does NOT remove the label. The label encodes a human
+# judgement about the submission, and only a re-review can retire it — an
+# automatic unhold would merge things nobody re-read. All this job does is
+# maintain one issue listing the candidates, so the rescan starts from a list
+# instead of from memory.
+#
+# SECURITY: no checkout, no PR code, no npm. Reads metadata through the API and
+# edits one issue body.
+
+on:
+  schedule:
+    - cron: '19 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: read
+
+concurrency:
+  group: held-rescan
+  cancel-in-progress: true
+
+jobs:
+  rescan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        env:
+          # The marker that identifies this job's issue, so it can find and
+          # update the same one every day instead of opening a new one.
+          MARKER: '<!-- held-rescan -->'
+        with:
+          script: |
+            const { owner, repo } = context.repo
+            const MARKER = process.env.MARKER
+
+            // One page of 50 carries labels, the head commit's check runs, the
+            // last comments and the last commit date — everything the verdict
+            // below needs. Same cost discipline as pr-guard.yml: the REST
+            // equivalent would be several calls per pull request against a
+            // budget the submission gate depends on.
+            const query = `
+              query($owner:String!, $repo:String!, $cursor:String) {
+                repository(owner:$owner, name:$repo) {
+                  pullRequests(states:OPEN, first:50, after:$cursor) {
+                    pageInfo { hasNextPage endCursor }
+                    nodes {
+                      number title isDraft url
+                      author { login }
+                      labels(first:20) { nodes { name } }
+                      comments(last:30) { nodes { createdAt author { login } } }
+                      timelineItems(last:50, itemTypes:[LABELED_EVENT]) {
+                        nodes { ... on LabeledEvent { createdAt label { name } } }
+                      }
+                      commits(last:1) { nodes { commit {
+                        committedDate
+                        statusCheckRollup { state }
+                        checkSuites(first:20) { nodes { checkRuns(first:20) { nodes { name conclusion } } } }
+                      } } }
+                    }
+                  }
+                }
+              }`
+
+            const prs = []
+            let cursor = null
+            do {
+              const res = await github.graphql(query, { owner, repo, cursor })
+              const page = res.repository.pullRequests
+              prs.push(...page.nodes)
+              cursor = page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null
+            } while (cursor)
+            core.info(`${prs.length} open pull request(s)`)
+
+            // The clock is the moment `held: author` was applied, read from
+            // the timeline — not the last maintainer comment.
+            //
+            // The first version of this job identified maintainers by
+            // `authorAssociation`, and every row came back with no hold date.
+            // `author_association` is resolved against the *viewer*: an org
+            // membership that is private reads as MEMBER to the maintainer's
+            // own token and as something else to the Actions token, so the
+            // hold was never found and every author comment — including ones
+            // predating the hold — counted as movement. The label event has no
+            // such dependency, and it is the more honest clock anyway: the
+            // label is what took the pull request out of the merge queue.
+            const HELD = 'held: author'
+
+            const rows = []
+            for (const pr of prs) {
+              if (pr.isDraft) continue
+              if (!pr.labels.nodes.some((l) => l.name === 'held: author')) continue
+
+              const commit = pr.commits.nodes[0]?.commit
+              if (!commit) continue
+
+              const runs = new Map()
+              for (const s of commit.checkSuites.nodes)
+                for (const r of s.checkRuns.nodes) if (!runs.has(r.name)) runs.set(r.name, r.conclusion)
+              // `Submission gate` is the check that actually judges the
+              // submission, and it must be green. NEUTRAL is fail-open from an
+              // exhausted App quota, not a pass, so it is excluded here the
+              // same way it is excluded from a merge.
+              if (runs.get('Submission gate') !== 'SUCCESS') continue
+
+              // `check` is reported, NOT required. Requiring it hid the
+              // largest recoverable group in the queue: 21 held pull requests
+              // whose only red was the `READMEs match data/plugins` step —
+              // their branch carries a README snapshot taken before some later
+              // merge. Since #3832 the READMEs are generated on `main` and the
+              // maintainer regenerates them while merging, so that failure is
+              // an artefact of the branch being old, not something the author
+              // did or can usefully fix. Excluding those PRs meant an author
+              // could address every real objection and still never resurface.
+              //
+              // A red `check` can also mean awesome-lint or the stale-fork
+              // guard, which the author does have to fix — so the state is
+              // shown in its own column rather than silently filtered. This
+              // list is for human triage; over-inclusion costs a glance,
+              // silent exclusion costs weeks.
+              const check = runs.get('check') ?? 'none'
+
+              // Last application of the label, so that a hold re-applied
+              // after a first round of fixes restarts the clock rather than
+              // leaving the pull request permanently "moved".
+              const labelled = pr.timelineItems.nodes
+                .filter((e) => e?.label?.name === HELD)
+                .map((e) => Date.parse(e.createdAt))
+              if (!labelled.length) continue // labelled before the timeline window
+              const heldAt = Math.max(...labelled)
+
+              // "Something happened after the hold" = the author pushed, or
+              // the author said something. Either is a claim that the hold no
+              // longer applies, and either deserves a human re-read.
+              const pushedAt = Date.parse(commit.committedDate)
+              const spokeAt = pr.comments.nodes
+                .filter((c) => c.author?.login === pr.author?.login)
+                .map((c) => Date.parse(c.createdAt))
+                .filter((t) => t > heldAt)
+              const movedAt = Math.max(pushedAt > heldAt ? pushedAt : 0, ...spokeAt, 0)
+              if (!movedAt) continue
+
+              const pings = spokeAt.length
+              rows.push({
+                number: pr.number,
+                title: pr.title,
+                url: pr.url,
+                author: pr.author?.login ?? '?',
+                held: new Date(heldAt).toISOString().slice(0, 10),
+                moved: new Date(movedAt).toISOString().slice(0, 10),
+                days: Math.floor((Date.now() - movedAt) / 86400000),
+                pings,
+                check,
+              })
+            }
+
+            // Longest-waiting first: the ones at the top are the ones where
+            // somebody has been waiting the longest since they did what was
+            // asked.
+            rows.sort((a, b) => b.days - a.days)
+            core.info(`${rows.length} held pull request(s) have moved since the hold`)
+
+            const body = [
+              MARKER,
+              '',
+              'Open pull requests with a green `Submission gate` that still carry `held: author`',
+              'and have had a push or an author comment **since the label was applied**.',
+              '',
+              'Being listed here is not a verdict — it means the author believes the hold is',
+              'addressed and nobody has re-read it yet. The label is never removed automatically:',
+              'only a re-review can retire it. This list exists so the re-review starts from a',
+              'list instead of from memory.',
+              '',
+              'The `check` column is informational. A red `check` is most often just the',
+              '`READMEs match data/plugins` step on a branch whose README snapshot predates a',
+              'later merge — the maintainer regenerates those while merging, so it is not the',
+              'author\'s to fix. It can also be awesome-lint or the stale-fork guard, which are.',
+              '',
+              rows.length
+                ? [
+                    '| PR | author | held since | moved | waiting | pings | check |',
+                    '|---|---|---|---|---|---|---|',
+                    ...rows.map((r) =>
+                      `| [#${r.number}](${r.url}) ${r.title.replace(/\|/g, '\\|').slice(0, 60)} | @${r.author} | ${r.held} | ${r.moved} | ${r.days}d | ${r.pings} | ${r.check === 'SUCCESS' ? '✅' : '⚠️ ' + r.check.toLowerCase()} |`),
+                  ].join('\n')
+                : '_Nothing is waiting — every held pull request is still waiting on its author._',
+              '',
+              '---',
+              `<sub>Regenerated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC by [held-rescan.yml](https://github.com/${owner}/${repo}/blob/main/.github/workflows/held-rescan.yml).</sub>`,
+            ].join('\n')
+
+            const found = await github.rest.search.issuesAndPullRequests({
+              q: `repo:${owner}/${repo} is:issue is:open in:body "${MARKER}"`,
+              per_page: 1,
+            })
+            const existing = found.data.items[0]
+
+            if (!existing) {
+              // No issue when there is nothing to report: opening an empty
+              // tracker on a quiet day just adds a notification nobody needs.
+              if (!rows.length) return core.info('nothing to report, and no issue to update')
+              const created = await github.rest.issues.create({
+                owner, repo, title: 'Held pull requests that may have healed', body,
+              })
+              return core.info(`opened #${created.data.number}`)
+            }
+
+            // Edit only on a real change. This runs daily, and rewriting an
+            // identical body every morning would make the issue's own history
+            // useless for seeing when something actually moved.
+            const strip = (s) => s.replace(/<sub>Regenerated[\s\S]*$/, '').trim()
+            if (strip(existing.body ?? '') === strip(body)) return core.info('unchanged')
+            await github.rest.issues.update({ owner, repo, issue_number: existing.number, body })
+            core.info(`updated #${existing.number} (${rows.length} row(s))`)

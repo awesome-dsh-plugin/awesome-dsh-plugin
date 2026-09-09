@@ -2,5 +2,5 @@ url: https://github.com/modusensus/dsh-mneme
 name: modusensus/dsh-mneme
 category: memory
 description:
-  en: "Self-evolving AI memory engine with heat-powered decay (power-law forgetting), sleep consolidation, entity heat projection, and offline semantic search — memories grow, cool down, and fade just like a real brain."
-  zh: "AI 自进化记忆引擎：heat 热度模型驱动的记忆遗忘与巩固、sleep 深度维护、实体热投影、离线语义搜索 — 让 AI 的记忆像人脑一样会生长、会淡忘。"
+  en: "Cross-session memory plugin for DeepSeek Harness: remembers across sessions, consolidates in the background (autoDream), and manages everything through an interactive memory library panel — SQLite storage with human-editable Markdown mirrors, offline semantic search, and a standalone external API and CLI."
+  zh: "DeepSeek Harness 跨会话记忆插件：跨会话记住用户与项目、后台 autoDream 自动巩固记忆、交互式记忆库面板统一管理（浏览/搜索/编辑/导入导出）——SQLite 存储配可人工编辑的 Markdown 镜像，支持离线语义检索、独立外部 API 与 CLI。"

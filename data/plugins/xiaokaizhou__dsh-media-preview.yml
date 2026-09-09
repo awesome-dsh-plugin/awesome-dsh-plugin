@@ -1,0 +1,6 @@
+url: https://github.com/xiaokaizhou/dsh-media-preview
+name: xiaokaizhou/dsh-media-preview
+category: ui
+description:
+  en: 'Renders local audio/video paths as inline, playable previews in DSH chat: replaces paths with <audio>/<video> players backed by same-origin /api/media-preview/* route, with explicit error statuses.'
+  zh: '在 DSH 聊天记录中自动将本地音视频路径渲染为可播放预览：将路径替换为同源 /api/media-preview/* 路由支持的 <audio>/<video> 播放器，并返回明确的错误状态码。'

@@ -251,7 +251,39 @@ jobs:
             // have examined some. If it examined none, the two disagree and we
             // do not know whether the submission is sound — say that instead of
             // vouching for checks that never ran.
+            //
+            // But one cause of that disagreement is knowable from here, and
+            // blaming the gate for it sends the contributor to re-run a
+            // workflow that will fail identically forever. The extract step
+            // collects every changed path under data/plugins/ regardless of
+            // name, while check-submission.mjs reads only *.yml — so an entry
+            // file committed without its extension is counted, never parsed,
+            // and lands in this branch. #1477 sat here for 13 days being told
+            // to re-run the workflow. Name the real problem instead.
             if (result.checked === 0) {
+              const changed = (() => {
+                try { return fs.readFileSync('/tmp/prdata/changed.txt', 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) } catch { return [] }
+              })()
+              const nonYml = changed.filter((f) => !f.endsWith('.yml'))
+              if (changed.length && nonYml.length === changed.length) {
+                await post('failure', `${nonYml.length} entry file(s) missing the .yml extension`,
+                  [
+                    'Every file this PR adds under `data/plugins/` is missing its `.yml` extension:',
+                    '',
+                    ...nonYml.map((f) => `- \`data/plugins/${f}\` → should be \`data/plugins/${f}.yml\``),
+                    '',
+                    'Entries are read with a `*.yml` glob, so a file named without the extension is',
+                    'skipped in silence: it is never parsed, never listed, and never checked. Nothing',
+                    'is wrong with the plugin — this is a filename.',
+                    '',
+                    '```bash',
+                    ...nonYml.map((f) => `git mv "data/plugins/${f}" "data/plugins/${f}.yml"`),
+                    'git commit -m "add the .yml extension" && git push',
+                    '```',
+                  ].join('\n'))
+                core.setFailed(`entry file(s) without .yml: ${nonYml.join(', ')}`)
+                return
+              }
               await post('failure', 'The gate checked nothing',
                 'This PR adds entries under `data/plugins/`, but the submission checker examined none of them, so no verdict was reached. Re-run the workflow; if it persists this is a bug in the gate, not in the submission.')
               core.setFailed('gate examined no entries despite changed files')

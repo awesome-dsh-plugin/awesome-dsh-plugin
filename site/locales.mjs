@@ -55,6 +55,9 @@ export default [
     // category, and showing who wrote a plugin is worth more in a result list
     // than showing which of twenty categories it sits in.
     P_TITLE: '{NAME} — dsh plugin · {CAT}',
+    // Used only when an entry's one-line description is too short to stand
+    // alone as a meta description (Bing flags those). {DESC} is the original.
+    P_META_SHORT: '{DESC} · {NAME} is a DeepSeek Harness (dsh) plugin in {CAT}, with the install command, source links and community comments on this page.',
     COPY_LABEL: 'Copy install command',
     COPY_TEXT: 'copy install',
     categories: {
@@ -104,7 +107,7 @@ export default [
       GH_C: 'from GitHub (first run asks for allowBuilds approval — follow the hint, retry)',
       INSTALL_NOTE: 'Any plugin you install runs third-party code with your own permissions — it can read your files, use your credentials, and reach the network, and tool approvals don’t sandbox it. GitHub-sourced plugins also run build scripts at install time — pnpm blocks those until you allow them, so an install can stop with <code translate="no">ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED</code> or <code translate="no">ERR_PNPM_IGNORED_BUILDS</code>; dsh prints the exact key to add under <code translate="no">allowBuilds</code> in your profile’s <code translate="no">pnpm-workspace.yaml</code>, and the install works on the next run. Allowing a build is a trust decision: only install sources you trust, and pin a commit (<code translate="no">github:owner/repo#sha</code>).',
       CONTRIB: 'Get your plugin listed',
-      CONTRIB_BODY: 'Open a PR against <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> — one line each in every <code translate="no">README</code> language file; the site syncs automatically. Add the <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic to your repo too.',
+      CONTRIB_BODY: 'Open a PR against <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> — one YAML file under <code translate="no">data/plugins/</code> is the whole submission; the READMEs and this site regenerate automatically. Add the <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic to your repo too.',
       MOTTO: 'Into the Unknown',
       NOTAFF: 'Not affiliated with DeepSeek',
       DISCLAIMER: 'Plugins are developed by their respective authors; listing is not an endorsement. Installing runs third-party code — review the source and proceed at your own risk.',
@@ -174,6 +177,9 @@ export default [
     CAT_TITLE: '{CAT} — {N} 个 dsh 插件',
     CAT_DESC: 'DeepSeek Harness（dsh）{CAT}插件共 {N} 个，包括 {TOP}。含安装命令、功能描述与仓库链接，持续更新。',
     P_TITLE: '{NAME} — dsh 插件 · {CAT}',
+    // 仅在条目一句话描述太短、不足以独立作为 meta description 时使用（Bing 会
+    // 标记这类页面）。{DESC} 为原始描述。
+    P_META_SHORT: '{DESC}——{NAME} 是 DeepSeek Harness（dsh）「{CAT}」类插件，本页提供安装命令、来源链接与社区评论。',
     COPY_LABEL: '复制安装命令',
     COPY_TEXT: '复制安装命令',
     categories: {
@@ -223,7 +229,7 @@ export default [
       GH_C: 'GitHub 源码（首次需按提示配置 allowBuilds 构建授权后重试）',
       INSTALL_NOTE: '装任何插件都等于在你的机器上跑第三方代码，权限和你本人一样大——能读你的文件、用你的凭据、访问网络，工具审批管不到它。GitHub 来源的插件还会在安装时执行构建脚本——pnpm 默认拦截，所以安装可能停在 <code translate="no">ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED</code> 或 <code translate="no">ERR_PNPM_IGNORED_BUILDS</code>；dsh 会打印出需要添加的确切键名，把它加进该 profile 的 <code translate="no">pnpm-workspace.yaml</code> 的 <code translate="no">allowBuilds</code> 下，重跑一次即可装上。放行构建本身就是一次信任判断：请只安装可信来源，并尽量锁定 commit（<code translate="no">github:owner/repo#sha</code>）。',
       CONTRIB: '收录你的插件',
-      CONTRIB_BODY: '给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在每个 <code translate="no">README</code> 语言文件中各加一行，网站会自动同步。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。',
+      CONTRIB_BODY: '给 <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" rel="noopener">awesome-dsh-plugin</a> 提一个 PR：在 <code translate="no">data/plugins/</code> 下新增一个 YAML 文件就是完整投稿，README 与本站会自动重新生成。也请为你的仓库打上 <a href="https://github.com/topics/dsh-plugin" rel="noopener"><code translate="no">dsh-plugin</code></a> topic。',
       MOTTO: '探索未至之境',
       NOTAFF: '与 DeepSeek 无隶属关系',
       DISCLAIMER: '插件由各自作者开发维护，收录不构成背书；安装即运行第三方代码，请自行审阅源码、风险自担。',

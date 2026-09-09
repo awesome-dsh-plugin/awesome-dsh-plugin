@@ -1,0 +1,7 @@
+# entry for awesome-dsh-plugin submission — data/plugins/azure5100__huahua-dsh-chatroom.yml
+url: https://github.com/azure5100/huahua-dsh-chatroom
+name: azure5100/huahua-dsh-chatroom
+category: remote
+description:
+  en: 'Install-time patch guard for cross-machine DSH group chat: fixes dsh-weave rc.14 defects (inject crash, random UDP port, 4KB ack frame limit) with four idempotent patches, alongside setup, mechanism and ops docs for the dsh-chat x dsh-weave x dsh-bridge chatroom stack.'
+  zh: '跨机 DSH 群聊适配修复包：安装期自动对 dsh-weave rc.14 打四合一补丁（注入崩溃、随机端口、4KB ack 帧上限），并附带 dsh-chat x dsh-weave x dsh-bridge 聊天室的部署、机制与运维文档。'

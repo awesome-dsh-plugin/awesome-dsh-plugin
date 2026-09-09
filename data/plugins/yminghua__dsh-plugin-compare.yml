@@ -1,0 +1,6 @@
+url: https://github.com/yminghua/dsh-plugin-compare
+name: yminghua/dsh-plugin-compare
+category: dev
+description:
+  en: Compares existing DSH sessions or runs controlled A/B trials between agent presets, showing aligned timelines, paired metric deltas, explicit success checks, and exportable reports.
+  zh: 对比已有 DSH 会话，或在两套 Agent Preset 之间运行受控 A/B 试验，展示对齐时间线、配对指标差值、显式验收结果与可导出的报告。

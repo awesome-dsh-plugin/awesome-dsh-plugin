@@ -1,0 +1,7 @@
+url: https://github.com/JeremyWangCY/dsh-pc-pilot
+name: JeremyWangCY/dsh-pc-pilot
+category: tools
+description:
+  en: "Windows computer-use host plugin for DeepSeek Harness with UIA accessibility navigation, window screenshots, background-first synthetic input, and a virtual cursor overlay."
+  zh: "适用于 DeepSeek Harness 的 Windows 电脑控制宿主插件，整合 UIA 无障碍树、窗口截图、后台无感合成输入与屏幕虚拟光标指示器。"
+tarball: https://github.com/JeremyWangCY/dsh-pc-pilot/releases/download/v0.1.0-beta.1/dsh-pc-pilot-0.1.0-beta.1.tgz

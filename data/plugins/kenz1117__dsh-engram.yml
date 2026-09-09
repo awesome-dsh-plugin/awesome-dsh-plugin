@@ -1,0 +1,6 @@
+url: https://github.com/kenz1117/dsh-engram
+name: kenz1117/dsh-engram
+category: memory
+description:
+  en: 'Cross-session long-term memory: dual-scope user/project SQLite stores, FTS5 + offline local vector hybrid retrieval, 9 engram_* tools, per-turn automatic capture, a distillation flywheel, provenance audit, and a bilingual Settings memory-library panel.'
+  zh: '跨会话长期记忆：用户/项目双层 SQLite 分库、FTS5 与离线本地向量混合检索、9 个 engram_* 工具、逐轮自动摄取、蒸馏飞轮、来源审计，以及设置页中英双语的记忆库管理面板。'

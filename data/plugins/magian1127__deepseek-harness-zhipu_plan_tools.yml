@@ -1,0 +1,6 @@
+url: https://github.com/magian1127/deepseek-harness-zhipu_plan_tools
+name: magian1127/deepseek-harness-zhipu_plan_tools
+category: browser
+description:
+  en: 'Zhipu (GLM Coding Plan) web suite as native DSH providers and tools: rebinds the built-in web_search and web_fetch to Zhipu web search and Markdown page reading, optionally registers github_search_doc / github_get_repo_structure / github_read_file repo tools, and adds a settings card with toggles and a credential-ref field.'
+  zh: 智谱（GLM Coding Plan）三件套以原生 provider 与工具接入：内置 web_search / web_fetch 后端切换为智谱联网搜索与网页 Markdown 读取，可选注册 github_search_doc / github_get_repo_structure / github_read_file 开源仓库工具，附设置卡片配置开关与凭据引用名。

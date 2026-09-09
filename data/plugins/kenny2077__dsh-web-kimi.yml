@@ -1,0 +1,6 @@
+url: https://github.com/kenny2077/dsh-web-kimi
+name: kenny2077/dsh-web-kimi
+category: browser
+description:
+  en: 'Kimi Coding web search and web fetch providers for the DeepSeek Harness — one coding-plan key fills both ctx.web seams (POST /v1/search and /v1/fetch), a settings card in the GUI stores it via the credentials service, and the fallback chain reads the Kimi CLI config for zero-setup installs.'
+  zh: '为 DeepSeek Harness 提供 Kimi Coding 的网页搜索与网页抓取双提供方——一把 coding 计划密钥同时接入 ctx.web 的两条链路（/v1/search 与 /v1/fetch），设置卡片经凭据服务保存密钥，并回退读取 Kimi CLI 配置，安装即用。'

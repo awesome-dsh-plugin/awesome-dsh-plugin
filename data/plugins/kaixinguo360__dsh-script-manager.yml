@@ -1,0 +1,6 @@
+url: https://github.com/kaixinguo360/dsh-script-manager
+name: kaixinguo360/dsh-script-manager
+category: tools
+description:
+  en: "Custom script manager for DSH: turn verified operations into reusable scripts that run directly via /script or register as agent tools, with parameterized scripts, declared expected outcomes, and execution history."
+  zh: "DSH 自定义操作脚本管理器，将验证过的操作流程固化为可复用的脚本，用 /script 直接运行或注册为 Agent 工具，支持参数化脚本、执行预期声明、执行历史记录。"

@@ -1,0 +1,6 @@
+url: https://github.com/kobenfang/BigTimer
+name: kobenfang/BigTimer
+category: skill
+description:
+  en: 'Scheduled tasks and message push manager: cron scheduling with auto push to Feishu and multi-channel, dual-env (OpenClaw/DSH).'
+  zh: '定时任务与消息推送管家：统一管理 cron 调度，自动推送飞书/多端，兼容 OpenClaw 与 DSH 双环境。'

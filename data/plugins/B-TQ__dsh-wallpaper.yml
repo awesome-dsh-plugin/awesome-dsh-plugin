@@ -1,0 +1,6 @@
+url: https://github.com/B-TQ/dsh-wallpaper
+name: B-TQ/dsh-wallpaper
+category: theme
+description:
+  zh: "把本地视频/图片变成全屏动态壁纸，支持实时效果调节、壁纸切换与 Wallpaper Engine 工坊导入，设置自动保存永久生效。"
+  en: "Full-screen dynamic wallpaper from local videos and images, with live effect controls, wallpaper switching and Wallpaper Engine workshop import; settings persist automatically."

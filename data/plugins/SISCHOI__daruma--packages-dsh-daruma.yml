@@ -1,0 +1,6 @@
+url: https://github.com/SISCHOI/daruma/tree/main/packages/dsh-daruma
+name: SISCHOI/daruma#dsh-daruma
+category: model
+description:
+  en: 'Automatic failover and backup channels for flaky LLM subscriptions: rides after the in-box retry, trips a persistent circuit breaker on repeated 429/5xx or terminal errors, and switches the next request to another channel in your chain, with a web panel to pick the backup manually.'
+  zh: 'LLM 订阅抽风时的自动故障转移与备用渠道：在内置重试放弃后接管，对连续 429/5xx 或终止性错误跳闸持久化断路器，把下一个请求切到链上的其他渠道，并配有 Web 面板手动挑选备用渠道。'

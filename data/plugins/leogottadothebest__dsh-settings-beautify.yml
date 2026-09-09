@@ -1,0 +1,6 @@
+url: https://github.com/leogottadothebest/dsh-settings-beautify
+name: leogottadothebest/dsh-settings-beautify
+category: ui
+description:
+  en: 'Normalize the DSH settings UI onto one design language: unified typography, cards, controls, focus and motion across every settings page, including pages contributed by other plugins.'
+  zh: '将 DSH 设置界面归一为同一套设计语言：统一各设置页的排版、卡片、控件、焦点与动效，包括其他插件贡献的页面。'
