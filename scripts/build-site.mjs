@@ -238,8 +238,15 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+        let out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
           { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        // A canonical filename can first appear in a merge, whose diff the
+        // default log hides. Retry only missing dates so existing dates stay
+        // unchanged and ordinary entries do not pay for merge diff traversal.
+        if (!out.length) {
+          out = execSync(`git log --diff-merges=first-parent --no-patch --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+            { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        }
         const iso = out[out.length - 1]
         if (iso) dates[e.url] = new Date(iso).toISOString()
       } catch { /* not committed yet — falls through to the error below */ }
