@@ -1,0 +1,6 @@
+url: https://github.com/lumoping/dsh-todo-inbox
+name: lumoping/dsh-todo-inbox
+category: ui
+description:
+  en: 'Global cross-session todo inbox for DSH web: any session''s agent records human-action todos (merge MRs, approve work orders, reviews) via inbox_add/inbox_done/inbox_list; a sidebar entry shows a count badge and an expandable list to open and complete them, persisted to ~/.dsh/todo-inbox.json.'
+  zh: DSH Web 全局跨会话待办收件箱：任意会话的 agent 通过 inbox_add/inbox_done/inbox_list 登记等待人类处理的事项（合并 MR、审批工单、评审等）；侧边栏入口显示未完成数角标与可展开的待办列表，支持打开与完成，数据持久化到 ~/.dsh/todo-inbox.json。

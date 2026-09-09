@@ -1,0 +1,6 @@
+url: https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-wx-remote
+name: wwweljf/dsh-plugins#dsh-wx-remote
+category: remote
+description:
+  en: 'Continue an existing PC DSH session from WeChat: polls WeChat iLink messages, injects into a running session via followup or resumes a closed one, and sends the reply back. Supports /会话 to list/bind sessions and /新会话 to unbind. Requires the wechat-acp daemon; only allowlisted WeChat senders are handled (empty allowlist denies everyone).'
+  zh: '用微信继续 PC 端未完成的 DSH 会话：轮询微信 iLink 消息，运行中的会话直接注入、已关闭的自动续接，回复原文发回微信；支持 /会话 列出与绑定会话、/新会话 解绑。需配置 wechat-acp 守护进程；仅处理发送者白名单内的微信用户，未配置白名单时拒绝所有人。'

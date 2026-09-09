@@ -1,0 +1,6 @@
+url: https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-fault-diagnosis
+name: helllo-shijie/motor-hospital-plugins#motor-fault-diagnosis
+category: tools
+description:
+  en: 'Combines fault knowledge-base symptom-to-cause rules with similar past cases to rank candidate motor diagnoses with evidence terms and suggested extra tests.'
+  zh: '结合故障知识库症状-原因规则与相似历史案例，输出电机候选诊断排序、证据词与建议补测项。'

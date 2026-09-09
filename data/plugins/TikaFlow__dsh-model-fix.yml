@@ -1,5 +1,5 @@
-url: https://github.com/TikaFlow/dsh-model-reasoning
-name: TikaFlow/dsh-model-reasoning
+url: https://github.com/TikaFlow/dsh-model-fix
+name: TikaFlow/dsh-model-fix
 category: model
 description:
   en: Auto-fills reasoning-effort levels, context windows, output limits and image modality for models from unofficial (custom) providers, with data from models.dev.

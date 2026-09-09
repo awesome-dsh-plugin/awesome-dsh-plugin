@@ -2,5 +2,5 @@ url: https://github.com/duhu2000/dsh-tender-workbench
 name: duhu2000/dsh-tender-workbench
 category: workflow
 description:
-  en: 'Session-scoped tender workbench using user-authorized QCC MCP tools for tender and proposed-project search, rule screening, human review, and Excel/PDF reports.'
-  zh: '招投标智能体：通过用户自备授权的企查查 MCP 工具，在独立会话中查询标讯与拟建项目、执行规则筛选和人工复核，并导出 Excel/PDF 报告。'
+  en: 'Tender search and bid intelligence in DeepSeek Harness with proposed project search, rule screening, human review and Excel/PDF exports using user-authorized Qichacha MCP.'
+  zh: '招投标智能体：支持招投标搜索、招标查询、投标查询、标讯查询、拟建项目与项目筛选，辅助商机发现、人工复核及 Excel/PDF 导出，使用客户自备授权的企查查 MCP。'
