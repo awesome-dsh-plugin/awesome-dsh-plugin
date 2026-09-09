@@ -1,10 +1,10 @@
 # Submission entry for the awesome-dsh-plugin curated registry.
-# The list lives in data/plugins/<owner>__<repo>.yml — create a PR against
+# The list lives in data/plugins/<owner>__<repo>.yml 鈥?create a PR against
 # github.com/awesome-dsh-plugin/awesome-dsh-plugin with one file of this
 # shape. The READMEs are generated; never edit them by hand.
 url: https://github.com/Centaurea5547196/dsh-page-zoom
 name: Centaurea5547196/dsh-page-zoom
 category: ui
 description:
-  en: Floating page-zoom bar for the DSH Web UI with Ctrl+wheel and Ctrl+=/-/0 shortcuts (25%-300%, persisted in localStorage).
-  zh: DSH Web UI 页面缩放悬浮栏：Ctrl+滚轮与 Ctrl+=/-/0 快捷键，25%-300% 范围，缩放值本地持久化。
+  en: Page zoom for the DSH Web UI: Ctrl+wheel and Ctrl+=/-/0 shortcuts (25%-300%, persisted in localStorage); floating bar hidden by default.
+  zh: DSH Web UI 椤甸潰缂╂斁锛欳trl+婊氳疆涓?Ctrl+=/-/0 蹇嵎閿紝25%-300% 鑼冨洿锛岀缉鏀惧€兼湰鍦版寔涔呭寲锛涙偓娴爮榛樿闅愯棌銆?
