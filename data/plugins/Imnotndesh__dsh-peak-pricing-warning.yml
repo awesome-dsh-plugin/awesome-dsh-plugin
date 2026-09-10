@@ -2,5 +2,5 @@ url: https://github.com/Imnotndesh/dsh-peak-pricing-warning
 name: Imnotndesh/dsh-peak-pricing-warning
 category: ui
 description:
-  en: 'Shows a live DeepSeek peak/off-peak pricing badge beside the model selector with a countdown to the next rate change, and a session cost pill that prices the four billed token buckets at published list rates.'
-  zh: '在模型选择器旁显示 DeepSeek 峰谷定价徽标并倒计时到下一次调价，另有一个按已计费四类 token 桶与官方价格估算本次会话费用的费用胶囊。'
+  en: 'Shows DeepSeek peak/off-peak pricing status, a countdown to the next rate change, and the estimated session cost as inline text beside the model selector.'
+  zh: '在模型选择器旁以行内文字显示 DeepSeek 峰谷定价状态、距下一次调价的倒计时，以及本次会话的预估费用。'
