@@ -16,6 +16,7 @@ import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { firstAddedDate } from './lib/added-dates.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -238,10 +239,11 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
-          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
-        const iso = out[out.length - 1]
-        if (iso) dates[e.url] = new Date(iso).toISOString()
+        // Merge resolutions can introduce a path absent from both parents
+        // (e.g. #2662 renamed its entry files while merging). Default git log
+        // omits merge diffs and reports no addition even with full history.
+        const iso = firstAddedDate(file)
+        if (iso) dates[e.url] = iso
       } catch { /* not committed yet — falls through to the error below */ }
     }
     stillUndated = ordered.filter((e) => !dates[e.url])
