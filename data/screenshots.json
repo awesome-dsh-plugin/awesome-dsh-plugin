@@ -1,4 +1,11 @@
 {
+ "https://github.com/modusensus/dsh-mneme": [
+  "https://raw.githubusercontent.com/modusensus/dsh-mneme/main/images/screenshot-memories-en.png",
+  "https://raw.githubusercontent.com/modusensus/dsh-mneme/main/images/screenshot-entities-en.png",
+  "https://raw.githubusercontent.com/modusensus/dsh-mneme/main/images/screenshot-status-en.png",
+  "https://raw.githubusercontent.com/modusensus/dsh-mneme/main/images/screenshot-settings-en.png",
+  "https://raw.githubusercontent.com/modusensus/dsh-mneme/main/images/screenshot-help-en.png"
+ ],
  "https://github.com/anweat/dsh-context-console": [
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-trajectory.png",
   "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",
