@@ -2,5 +2,5 @@ url: https://github.com/modusensus/dsh-mneme
 name: modusensus/dsh-mneme
 category: memory
 description:
-  en: "The memory that dreams — cross-session memory for DeepSeek Harness: remembers you across sessions, auto-consolidates in its sleep (autoDream), parks conflicting memories for your review, and keeps a replayable audit trail. Offline-first: local semantic search, SQLite with human-editable Markdown mirrors, entity graph & an interactive memory panel plus an external API and CLI."
-  zh: "会做梦的记忆 — DeepSeek Harness 跨会话记忆插件：跨会话记住用户与项目、深夜 autoDream 自动巩固记忆、矛盾记忆自动挂起等你裁决、全程可回放审计。默认离线：本地语义检索，SQLite 配可人工编辑的 Markdown 镜像，支持实体图谱、交互式记忆库面板及独立外部 API 与 CLI。"
+  en: "The memory that dreams — cross-session memory for DeepSeek Harness: recalls you across sessions, auto-consolidates in its sleep (autoDream), freezes conflicting memories for your review, and keeps a replayable audit trail. Offline-first local semantic search over SQLite with human-editable Markdown mirrors, an entity graph, an interactive memory panel, plus an external API and CLI."
+  zh: "会做梦的记忆 — DeepSeek Harness 跨会话记忆插件：跨会话记住你与项目、深夜 autoDream 自动巩固记忆、冲突记忆先冻结待你裁决、全程可回放审计。默认离线：SQLite 配人工可编辑的 Markdown 镜像，提供本地语义检索、实体图谱、交互式记忆库面板及外部 API 与 CLI。"
