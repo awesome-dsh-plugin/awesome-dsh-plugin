@@ -238,7 +238,14 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+        // --diff-merges=first-parent: git log does not diff merge commits by
+        // default, so a file the merge itself introduced (a submission merged
+        // with --no-ff, or a batch merge) has no "added" commit at all and the
+        // build exited 1 for that entry, failing main and every open PR. With
+        // the flag the merge is the commit that adds the path, so %cI is the
+        // merge date — which is what the README ledger above already reports
+        // for the same entries (the merge and the README commit are seconds apart).
+        const out = execSync(`git log --diff-merges=first-parent --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
           { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
         const iso = out[out.length - 1]
         if (iso) dates[e.url] = new Date(iso).toISOString()
