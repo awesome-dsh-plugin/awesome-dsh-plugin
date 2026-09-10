@@ -2,5 +2,5 @@ url: https://github.com/Alan2Z/dsh-speak
 name: Alan2Z/dsh-speak
 category: voice
 description:
-  en: Voice-announce the final reply on Windows (SAPI5 natural voices) and macOS (system voice); skips reasoning and tool calls, one-line npm install.
-  zh: 语音播报 agent 最终回复：Windows SAPI5 自然语音 / macOS 系统语音，自动跳过思考与工具调用，npm 一行安装。
+  en: "Zero-dependency, event-driven voice announcement plugin: no extra model, no token cost. Speaks with the system's built-in natural voice, supporting both Windows and macOS; final-reply announcements, approval & question alerts, optional event announcements (turn end, command done, goal change, tool errors, todo updates), replayable final replies, and a bilingual visual settings page."
+  zh: "零外部依赖、事件驱动、无需额外模型、不消耗任何 token的语音播报插件。使用系统自带自然语音进行播报，支持win/mac双平台；最终回复、审批与提问提醒、可选事件播报（回合结束/命令完成/目标变更/工具出错/待办更新）、最终回复可重播、双语言可视化设置。"

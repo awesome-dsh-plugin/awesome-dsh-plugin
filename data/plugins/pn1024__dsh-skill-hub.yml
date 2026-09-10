@@ -1,0 +1,6 @@
+url: https://github.com/pn1024/dsh-skill-hub
+name: pn1024/dsh-skill-hub
+category: skill
+description:
+  en: Skill marketplace with aggregated search across SkillHub and ClawHub, in-app README preview, one-click install and uninstall, and a chat-input skill picker.
+  zh: 技能市场插件，聚合 SkillHub 与 ClawHub 双源搜索，支持站内 README 预览、一键安装卸载与聊天栏技能选择器。

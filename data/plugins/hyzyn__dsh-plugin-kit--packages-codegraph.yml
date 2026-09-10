@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/codegraph
+name: hyzyn/dsh-plugin-kit#codegraph
+category: tools
+description:
+  en: 'Code-graph integration for the DSH Web GUI: a "Codegraph" card in Settings → Plugins with index status, symbol search, callers / callees / impact views, and one-click sync / index; hosts the codegraph MCP server and injects a CodeGraph usage guideline into the system prompt. Requires the codegraph CLI.'
+  zh: 'DSH Web GUI 的 Codegraph 集成：设置 → 插件 中的「Codegraph」卡片提供索引状态、符号搜索、callers/callees/impact 查看与一键 sync/index；托管 codegraph MCP 服务器，并向 system prompt 注入 Codegraph 使用指引。需安装 codegraph CLI。'

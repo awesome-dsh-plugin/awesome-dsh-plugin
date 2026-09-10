@@ -1,0 +1,6 @@
+url: https://github.com/aosi526/dsh-workbuddy-xdpool
+name: aosi526/dsh-workbuddy-xdpool
+category: model
+description:
+  en: Merge every locally signed-in WorkBuddy account into DeepSeek Harness as one auto-failing-over model pool (multi-account rotation, live credits, and a model catalog showing per-model credit multipliers and free/night-discount tags).
+  zh: 把本机 WorkBuddy 桌面 App 登录过的所有账号自动并入 DSH 模型池：多账号轮换自动容错、实时积分，模型目录按模型标注积分倍率与限时免费 / 夜间折扣。

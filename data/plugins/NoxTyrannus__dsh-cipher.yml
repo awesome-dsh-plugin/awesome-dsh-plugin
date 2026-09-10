@@ -1,0 +1,6 @@
+url: https://github.com/NoxTyrannus/dsh-cipher
+name: NoxTyrannus/dsh-cipher
+category: memory
+description:
+  en: 'Cipher memory platform as a DSH bundle: four memory types (attention, experience, preference, cognitive) sedimented per turn by four memory agents, cross-session deterministic recall injected via systemPrompt.context, insight review kept out of user-facing output, per-session UNNI/LOOP modes with memory-driven auto-continuation, memory search/ingest tools, plus a settings page (SOUL editor) and an AgentPool panel.'
+  zh: '把 cipher 记忆平台原生带进 DSH：四类记忆每轮沉淀、跨会话确定性检索经 systemPrompt.context 注入、洞察复核只进沉淀、会话级 UNNI/LOOP 模式（记忆驱动自动续轮）、记忆检索/写入两个工具，以及设置页（SOUL 编辑器）与 AgentPool 面板。'

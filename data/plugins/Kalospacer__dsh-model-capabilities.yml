@@ -1,0 +1,7 @@
+url: https://github.com/Kalospacer/dsh-model-capabilities
+name: Kalospacer/dsh-model-capabilities
+category: model
+description:
+  en: 'Adds a settings page for declaring per-model reasoning efforts and vision support on pi-ai provider routes.'
+  zh: 在设置里新增「模型能力」一页，为每个模型声明思考档位与视觉能力。
+tarball: https://github.com/Kalospacer/dsh-model-capabilities/releases/download/v0.1.0/dsh-model-capabilities-0.1.0.tgz

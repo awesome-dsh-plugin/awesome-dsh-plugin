@@ -1,0 +1,6 @@
+url: https://github.com/zampie/request-frame-preview
+name: zampie/request-frame-preview
+category: dev
+description:
+  en: "Session-header button that previews and downloads the exact request frame DeepSeek Harness sends to the model: the full system prompt, the declared tools array, and the wire message array (system/user/assistant/tool-result) rebuilt from the session log via the same folds the agent loop reads."
+  zh: "会话头部按钮：预览并下载 DeepSeek Harness 真正发给模型的请求帧——完整 system prompt、声明的工具数组 tools 与 wire 消息数组（system/user/assistant/tool-result），按 agent loop 读取所用的同一会话折叠重建。"

@@ -1,0 +1,7 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-guardian
+name: baosfeng/my-dsh-plugins#dsh-guardian
+category: dev
+tarball: https://github.com/baosfeng/my-dsh-plugins/releases/latest/download/bsfeng-dsh-guardian-0.3.0.tgz
+description:
+  en: 'Plugin governance: new/updated plugins stage in a candidate area first, then hot-mount after startup — success promotes, failure auto-disables, repeated failures freeze, one-click safe mode, sidebar diagnostics panel (npm: `bsfeng-dsh-guardian`).'
+  zh: '插件治理：新装/更新插件先进候选区，启动完成后热挂载——成功自动转正，失败自动禁用，连续失败冻结，一键安全模式，侧边栏诊断面板（npm: `bsfeng-dsh-guardian`）。'

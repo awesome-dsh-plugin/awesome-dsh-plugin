@@ -1,0 +1,7 @@
+url: https://github.com/Harzva/dsh-control-plane
+name: Harzva/dsh-control-plane
+category: dev
+tarball: https://github.com/Harzva/dsh-control-plane/releases/latest/download/dsh-control-plane-0.1.0.tgz
+description:
+  en: "Local-first control plane for managing multiple DSH runtimes, profiles, presets, sessions, plans, and knowledge references."
+  zh: "面向本地优先管理多个 DSH Runtime、Profile、Preset、Session、计划和知识引用的控制平面。"

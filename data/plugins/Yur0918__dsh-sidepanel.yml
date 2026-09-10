@@ -1,0 +1,6 @@
+url: https://github.com/Yur0918/dsh-sidepanel
+name: Yur0918/dsh-sidepanel
+category: ui
+description:
+  en: A Codex-style right side panel for the DSH Web UI — session artifacts browser (live file tree, scan include, preview, reveal) plus a side chat that forks the current session with a model picker, human-pacing scheduled runs and smart send-to-bottom scrolling.
+  zh: DSH Web 界面的 Codex 式右侧面板——会话产物浏览（文件树、扫描收录、预览、访达定位）+ 继承当前会话上下文的侧聊，支持模型选择器、拟人化定时调用、发送吸顶与智能滚动。

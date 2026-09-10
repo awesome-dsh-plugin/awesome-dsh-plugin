@@ -1,0 +1,6 @@
+url: https://github.com/huanlanmie/dsh-mobile-access
+name: huanlanmie/dsh-mobile-access
+category: remote
+description:
+  en: A PIN-protected, chat-only mobile web client for DeepSeek Harness, served on an isolated port over LAN or a self-provided tunnel.
+  zh: 受 PIN 保护的 DeepSeek Harness 移动端对话界面，在独立端口上通过局域网或自备隧道访问。

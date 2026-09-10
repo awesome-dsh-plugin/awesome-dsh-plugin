@@ -1,0 +1,6 @@
+url: https://github.com/bill277048-hash/DSH-model-router
+name: bill277048-hash/DSH-model-router
+category: model
+description:
+  en: Rule-based multi-provider model routing for DeepSeek Harness with pre-first-token failover, cooldown circuit-breaking, usage accounting, and a status API.
+  zh: DeepSeek Harness 多供应商模型路由插件：规则路由 + 首 token 前无感故障切换 + cooldown 熔断 + 用量记账 + 状态接口。

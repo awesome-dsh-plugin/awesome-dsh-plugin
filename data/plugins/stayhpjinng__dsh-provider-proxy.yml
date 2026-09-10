@@ -1,0 +1,6 @@
+url: https://github.com/stayhpjinng/dsh-provider-proxy
+name: stayhpjinng/dsh-provider-proxy
+category: dev
+description:
+  en: 'Provider-scoped HTTP/HTTPS forward proxy for DeepSeek Harness: configure independent proxy URLs and enable/disable switches per LLM provider, with environment-variable references for proxy credentials and model discovery routing.'
+  zh: 'DeepSeek Harness 的按 Provider HTTP/HTTPS 代理：为每个 LLM Provider 独立配置代理地址和启停开关，支持通过环境变量引用代理凭据，并让模型发现请求使用对应 Provider 的代理。'

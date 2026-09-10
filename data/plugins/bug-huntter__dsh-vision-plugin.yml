@@ -1,0 +1,6 @@
+url: https://github.com/bug-huntter/dsh-vision-plugin
+name: bug-huntter/dsh-vision-plugin
+category: vision
+description:
+  en: 'Configurable image recognition for text-only DSH models: image messages are first transcribed by any OpenAI-compatible vision model (Base URL, model ID and key configured in a Settings section), then passed to the main model as text; image-input support is advertised while enabled.'
+  zh: 为纯文本 DSH 模型增加可配置识图能力：开启后图片消息先由任意 OpenAI 兼容视觉模型转写为文字描述，再交给主模型处理；设置页可配置 Base URL、Model ID 与密钥。

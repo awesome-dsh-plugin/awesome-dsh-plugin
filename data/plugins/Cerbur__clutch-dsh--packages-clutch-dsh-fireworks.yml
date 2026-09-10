@@ -1,0 +1,6 @@
+url: https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-fireworks
+name: Cerbur/clutch-dsh#clutch-dsh-fireworks
+category: fun
+description:
+  en: Adds a celebratory fireworks overlay to the DSH Web UI through a happy_fireworks agent tool.
+  zh: 通过 `happy_fireworks` Agent 工具为 DSH Web UI 增加庆祝礼花覆盖层。

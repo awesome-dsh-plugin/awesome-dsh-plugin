@@ -1,0 +1,6 @@
+url: https://github.com/ZiFan1117/bazidiy/tree/main/packages/ontology
+name: ZiFan1117/bazidiy#ontology
+category: tools
+description:
+  en: 'BaziDIY ontology plugin: deterministic bazi/wuxing/bead/style rules as DSH tools (calculate_bazi, propose_designs, generate_design, save_design, load_design), plus bracelet SVG rendering and a bead editor; no LLM calls inside execute.'
+  zh: '八字DIY 本体插件：把确定性八字/五行/珠子/款式规则暴露为 DSH 工具（calculate_bazi、propose_designs、generate_design、save/load_design），含手串 SVG 渲染与珠子编辑器；execute 内不调用模型。'

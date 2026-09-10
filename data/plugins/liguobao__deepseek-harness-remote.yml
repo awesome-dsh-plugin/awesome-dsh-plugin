@@ -4,4 +4,4 @@ category: remote
 description:
   en: 'Multi-device remote access for DeepSeek Harness: continue an active session from your phone, tablet, browser, or another computer over an end-to-end encrypted channel (Noise IK + adaptive relay/WebRTC transport), with device authorization, ApiProxy-only remote capabilities, and read-only file preview via dsh-file-viewer — no shell, remote desktop, or write access.'
   zh: 'DeepSeek Harness 多端远程访问：从手机、平板、浏览器或另一台电脑继续进行中的会话，端到端加密通道（Noise IK + 自适应 Relay/WebRTC 传输），设备授权管理；远程端仅开放 ApiProxy 能力，支持 dsh-file-viewer 只读文件预览，不提供 Shell、远程桌面或写入权限。'
-tarball: https://github.com/liguobao/deepseek-harness-remote/releases/latest/download/ds-harness-remote-0.3.19.tgz
+tarball: https://github.com/liguobao/deepseek-harness-remote/releases/download/v0.4.1/ds-harness-remote-0.4.1.tgz

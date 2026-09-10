@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-mask
+name: PerryLink/dsh-mask
+category: security
+description:
+  en: PII masking for DeepSeek Harness — anonymizes names, phones, emails, ids, and keys before requests and restores them at the display layer, keeping plaintext out of session logs.
+  zh: DeepSeek Harness 的 PII 脱敏：请求前匿名化姓名、电话、邮箱、证件与密钥，展示层还原，明文不进入会话日志。

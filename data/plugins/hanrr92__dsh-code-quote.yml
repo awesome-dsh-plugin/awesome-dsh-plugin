@@ -1,0 +1,7 @@
+url: https://github.com/hanrr92/dsh-code-quote
+name: hanrr92/dsh-code-quote
+category: ui
+description:
+  en: 'Composer code-quote collapse for the DSH Web UI: pasting a `path:line` header followed by code folds the input into one compact inline quote token (Ctrl+Z reverses it), and at send time the `agent/pre-step` hook injects the full pasted snapshot to the model as a separate context message.'
+  zh: '输入框代码引用折叠：粘贴「路径:行号 + 代码」时自动折叠为一行紧凑的引用 token（Ctrl+Z 可还原），发送时由 agent/pre-step 钩子将完整代码快照作为独立上下文消息注入给模型。'
+tarball: https://github.com/hanrr92/dsh-code-quote/releases/download/v0.3.3/dsh-code-quote-0.3.3.tgz

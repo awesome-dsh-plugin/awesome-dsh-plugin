@@ -1,0 +1,7 @@
+url: https://github.com/kiligzzz/dsh-ui-appearance
+name: kiligzzz/dsh-ui-appearance
+category: theme
+description:
+  en: A customized fork of TQSY114514/dsh-ui-appearance for theme palettes, wallpapers, and glassmorphism, with a layout fix for duplicate blank space alongside better-sidebar 0.18.0.
+  zh: 基于 TQSY114514/dsh-ui-appearance 的定制 fork，提供主题调色、壁纸与毛玻璃，并修复与 better-sidebar 0.18.0 共用时的重复留白。
+tarball: https://github.com/kiligzzz/dsh-ui-appearance/releases/download/v0.1.7/kiligzzz-dsh-ui-appearance-0.1.7.tgz

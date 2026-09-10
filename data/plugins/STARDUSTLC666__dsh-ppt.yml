@@ -2,5 +2,5 @@ url: https://github.com/STARDUSTLC666/dsh-ppt
 name: STARDUSTLC666/dsh-ppt
 category: docs
 description:
-  en: 'Presentation skill and tools: one sentence or one document to an HTML slideshow plus editable PPTX, with five built-in themes, default theme/language config and bilingual support.'
-  zh: 演示文稿技能与工具：一句话或一篇文档生成 HTML 放映与可编辑 PPTX，内置 5 套主题，可配置默认主题/语言，中英双语。
+  en: 'Presentation skill and tools: one sentence or one document to an HTML slideshow plus editable PPTX, seven layouts (incl. quote and native PPTX tables), speaker notes (HTML S-key panel and native notes slides), five built-in themes, default theme/language config and bilingual support.'
+  zh: 演示文稿技能与工具：一句话或一篇文档生成 HTML 放映与可编辑 PPTX，7 种页型（含金句与原生 PPTX 表格），演讲者备注（HTML 按 S 呼出 + PPTX 原生备注页），内置 5 套主题，可配置默认主题/语言，中英双语。

@@ -1,0 +1,6 @@
+url: https://github.com/mimosa776/dsh-plugin-recommender
+name: mimosa776/dsh-plugin-recommender
+category: tools
+description:
+  en: Role-based plugin recommender for DSH: asks the user's role (developer, designer, writer, researcher, ops, student...), recommends suitable plugins, and audits each with a local static security scan (dangerous code patterns + 0-100 risk score) and a reputation check (npm downloads / GitHub stars).
+  zh: 按职业/角色推荐 DSH 插件：询问用户是做什么的（程序员、设计师、写作、研究、运维、学生…），推荐适合的插件，并对每个插件做本地静态安全审计（危险代码模式 + 0-100 风险分）与口碑检查（npm 下载量 / GitHub 星数）。

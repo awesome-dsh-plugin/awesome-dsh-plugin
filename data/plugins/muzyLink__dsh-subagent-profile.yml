@@ -1,0 +1,6 @@
+url: https://github.com/muzyLink/dsh-subagent-profile
+name: muzyLink/dsh-subagent-profile
+category: workflow
+description:
+  en: Dispatch subagents with named profiles (model, reasoning effort, and tool scope per task), safety checks, cost estimation with savings comparison, and a full dispatch decision ledger.
+  zh: 子 Agent 派发插件：按任务选模型、推理强度与工具范围，存成命名方案随时复用；内置安全检查、成本估算与节省分析、完整派发决策台账。

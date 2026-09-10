@@ -1,0 +1,6 @@
+url: https://github.com/beartackler/dsh-bridge
+name: beartackler/dsh-bridge
+category: market
+description:
+  en: 'Slash commands ported from other coding agents (setup, connect, install, trust, browse, doctor, status, model, memory, compact, resume, review, mcp, init, suggest, improve, refactor), a zero-dependency static scanner for plugin source, and an in-repo catalog of audited plugin report cards that cite file-and-line evidence.'
+  zh: '从其他编码 Agent 移植过来的斜杠命令（setup、connect、install、trust、browse、doctor、status、model、memory、compact、resume、review、mcp、init、suggest、improve、refactor），一个零依赖的插件源码静态扫描器，以及一份内置的插件评级报告卡目录，每条结论都给出文件与行号级别的证据。'

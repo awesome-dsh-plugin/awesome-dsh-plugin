@@ -1,0 +1,6 @@
+url: https://github.com/xswt442-cmd/dsh-treekeeper
+name: xswt442-cmd/dsh-treekeeper
+category: dev
+description:
+  en: Reconciles a DSH host's Windows process tree with the available job ledger, flags unattributed and orphaned processes, and provides guarded tree termination.
+  zh: 将 DSH 宿主的 Windows 进程树与可用任务账本对照，标出未归属和孤儿进程，并提供受保护的进程树终止。

@@ -1,0 +1,6 @@
+url: https://github.com/Milbaxter/dsh-critique-loop
+name: Milbaxter/dsh-critique-loop
+category: workflow
+description:
+  en: Intercepts turn-stopping to force one critique-and-improve round after each completed turn before the agent stops.
+  zh: 在 Agent 轮次结束时拦截停机，强制执行一轮自我批评与改进再停机。

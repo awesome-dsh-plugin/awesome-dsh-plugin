@@ -1,0 +1,6 @@
+url: https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-wx-push
+name: wwweljf/dsh-plugins#dsh-wx-push
+category: workflow
+description:
+  en: 'Auto-send every DSH turn result to WeChat: listens for task completion, extracts the final assistant message and pushes it raw via the WeChat iLink bot (real delivery check, never fake success). Requires the wechat-acp daemon, a separately installed process you log into WeChat with.'
+  zh: 'DSH 会话任务结束后自动把结果原文推送到微信（iLink 直发，真实校验送达，失败如实报错）。需配置 wechat-acp 守护进程——一个需要另外安装并扫码登录微信的独立进程。'

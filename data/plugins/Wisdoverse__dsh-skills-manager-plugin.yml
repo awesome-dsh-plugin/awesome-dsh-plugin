@@ -1,0 +1,6 @@
+url: https://github.com/Wisdoverse/dsh-skills-manager-plugin
+name: Wisdoverse/dsh-skills-manager-plugin
+category: skill
+description:
+  en: Matches prompts to installed skills for automatic activation, applies skill-declared lifecycle hooks and tool policies, and manages GitHub-hosted skills from Settings or the skill_manager tool.
+  zh: 根据提示词自动激活已安装的 Skill，应用 Skill 声明的生命周期 Hook 与工具策略，并通过设置页或 skill_manager 工具管理 GitHub 托管的 Skill。

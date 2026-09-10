@@ -1,0 +1,6 @@
+url: https://github.com/KhaosGx/dsh-stop-service
+name: KhaosGx/dsh-stop-service
+category: dev
+description:
+  en: 'Service control panel in DSH Web settings: live host info (PID, versions, uptime, memory/CPU trends, active sessions), npm update banner, and a confirm-guarded graceful stop that warns when tasks are running and can wait for them to finish.'
+  zh: 'DSH Web 设置页的服务控制面板：实时宿主信息（PID、版本、运行时长、内存/CPU 趋势、活跃会话）、npm 更新提醒，以及带确认的优雅停止——任务运行时发出警告，也可等待任务结束后自动停止。'

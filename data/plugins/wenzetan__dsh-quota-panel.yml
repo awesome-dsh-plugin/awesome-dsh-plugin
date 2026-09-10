@@ -2,5 +2,5 @@ url: https://github.com/wenzetan/dsh-quota-panel
 name: wenzetan/dsh-quota-panel
 category: usage
 description:
-  en: Bottom-right quota capsule that auto-discovers every configured provider (DeepSeek, OpenRouter, SiliconFlow, GLM, one-api/new-api, coding plans) and shows balance or rolling 5-hour and weekly usage, with per-provider visibility, alert thresholds and proxy support.
-  zh: 右下角额度胶囊：自动发现所有已配置 Key 的供应商（DeepSeek、OpenRouter、SiliconFlow、GLM、one-api/new-api、各类 Coding 套餐），显示余额或 5 小时/周滚动用量，支持按供应商设置可见性、告警阈值与代理。
+  en: Bottom-right quota capsule that auto-discovers every configured provider (DeepSeek, OpenRouter, SiliconFlow, GLM, one-api/new-api, coding plans) and shows balance or rolling 5-hour and weekly usage, with per-provider visibility, alert thresholds and proxy support; also queries Volcengine Ark Agent Plan / Coding Plan usage via AK/SK-signed OpenAPI, and ChatGPT Plus/Pro subscription usage via in-plugin device-code login or the Codex CLI auth file.
+  zh: 右下角额度胶囊：自动发现所有已配置 Key 的供应商（DeepSeek、OpenRouter、SiliconFlow、GLM、one-api/new-api、各类 Coding 套餐），显示余额或 5 小时/周滚动用量，支持按供应商设置可见性、告警阈值与代理；另支持火山方舟 Agent Plan / Coding Plan 用量查询（AK/SK 签名 OpenAPI）与 ChatGPT Plus/Pro 订阅用量（插件内设备码登录，或读取 Codex CLI 登录态）。

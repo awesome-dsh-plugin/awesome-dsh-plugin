@@ -1,0 +1,6 @@
+url: https://github.com/jcaiagent7143-ui/linkdigest-mcp
+name: jcaiagent7143-ui/linkdigest-mcp
+category: tools
+description:
+  en: 'Turns a Xiaohongshu, Douyin, TikTok, YouTube or X link into text: transcript with timecodes, on-screen text, a description and OCR of every image, caption and metadata. Mounts the hosted MCP server over streamable HTTP.'
+  zh: '把小红书、抖音、TikTok、YouTube 或 X 链接转成文本：带时间戳的转写、屏幕文字、逐图描述与 OCR、正文与元数据。通过 streamable HTTP 挂载托管的 MCP 服务。'

@@ -1,0 +1,6 @@
+url: https://github.com/QuantumKuba/dsh-graphify-plugin
+name: QuantumKuba/dsh-graphify-plugin
+category: tools
+description:
+  en: "Native Graphify knowledge graph plugin providing 10 code intelligence tools, topological search, god nodes discovery, and PR blast radius triage."
+  zh: "为 DeepSeek Harness 提供原生 Graphify 知识图谱支持，包含 10 个代码智能工具、拓扑搜索、核心节点发现与 PR 影响分析。"

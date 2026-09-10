@@ -1,0 +1,8 @@
+url: https://github.com/AKUSH99/dsh-balance-chip
+name: AKUSH99/dsh-balance-chip
+category: usage
+description:
+  en: 'Live DeepSeek API balance in the sidebar footer plus an always-visible bottom-right pill: status dot and amount, refreshed every 60 seconds, the API key is read from the local credential store and never embedded.'
+  zh: 侧边栏底部与右下角常驻胶囊实时显示 DeepSeek API 余额：状态点加金额，每 60 秒自动刷新，密钥从本机凭证库读取。
+tarball: https://github.com/AKUSH99/dsh-balance-chip/releases/download/v1.0.1/dsh-balance-chip-1.0.1.tgz
+

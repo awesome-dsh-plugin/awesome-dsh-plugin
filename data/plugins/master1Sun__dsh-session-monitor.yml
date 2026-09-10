@@ -1,0 +1,7 @@
+url: https://github.com/master1Sun/dsh-session-monitor
+name: master1Sun/dsh-session-monitor
+category: tools
+description:
+  en: Monitor DSH session status, track session runtime information and support file preview.
+  zh: 监控 DSH 会话状态，跟踪会话运行信息，并支持文件预览。
+tarball: https://github.com/master1Sun/dsh-session-monitor/releases/download/v0.0.1/dsh-session-monitor-0.0.1.tgz

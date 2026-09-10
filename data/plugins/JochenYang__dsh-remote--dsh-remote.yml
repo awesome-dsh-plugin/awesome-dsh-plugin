@@ -1,0 +1,6 @@
+url: https://github.com/JochenYang/dsh-remote/tree/main/dsh-remote
+name: JochenYang/dsh-remote#dsh-remote
+category: remote
+description:
+  en: 'Use DSH from your phone anywhere: a self-hosted relay plus a desktop host plugin form a token-authenticated tunnel (order-preserving HTTP reverse proxy + WebSocket bridging) with QR pairing, an admin console for device/token management, and an injected mobile adaptation layer (full-width chat, full-screen settings sheet, sidebar drawer).'
+  zh: '随时随地用手机操作 DSH：自托管中继 + 桌面 host 插件组成令牌认证隧道（保序 HTTP 反向代理 + WebSocket 桥接），扫码配对、管理台可管理设备与令牌，并自动注入移动适配层（聊天全宽、设置弹窗全屏、侧栏抽屉化）。'

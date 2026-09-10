@@ -1,0 +1,7 @@
+url: https://github.com/NOirBRight/dsh-llm-assistant
+name: NOirBRight/dsh-llm-assistant
+category: ui
+tarball: https://github.com/NOirBRight/dsh-llm-assistant/releases/latest/download/dsh-llm-assistant-0.1.1.tgz
+description:
+  en: 'Resident Web overlay seat with its own assistant session: chat, images, reminders, a duty heartbeat, and on-demand read-only task reference.'
+  zh: 常驻 Web 席位，背后是独立助理会话：对话、图片、提醒、值班心跳，以及按需只读引用当前任务。

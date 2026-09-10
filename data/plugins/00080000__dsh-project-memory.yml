@@ -1,7 +1,7 @@
 url: https://github.com/00080000/dsh-project-memory
 name: 00080000/dsh-project-memory
 category: memory
-tarball: https://github.com/00080000/dsh-project-memory/releases/latest/download/dsh-project-memory-0.1.0.tgz
+tarball: https://github.com/00080000/dsh-project-memory/releases/download/v0.4.0/dsh-project-memory-0.4.0.tgz
 description:
-  zh: "为 DeepSeek Harness 提供的项目记忆插件：项目文件在读取时索引为可检索摘要，上下文失效后按需检索命中，无需重读文件，自带出处与 BM25 排序。"
-  en: "Project memory for DeepSeek Harness: project files are indexed into searchable summaries as they are read, so after context loss the agent retrieves hits on demand instead of re-reading files, with source citations and BM25 ranking."
+  zh: "为 DeepSeek Harness提供持久化的项目级记忆。专门针对项目开发，原生融合 dsh 任务系统，会话内任务清单与读过的文件自动沉淀为跨会话任务记录，任务↔文件自动关联——开发工作流可切换、可续接，无需重复梳理整个项目。文档与代码符号在读取时索引，无需全量预扫；针对不同语言的项目，支持可选功能增强。经验笔记自动去重，避免重复记录。所有数据召回附带出处可溯源。纯 JS、单依赖、静默运行、零操作成本。"
+  en: "Project memory for dsh with native task-system integration: session todos and file reads auto-condense into cross-session task records (task↔file links), so workflows are switchable and resumable without re-contextualizing. Read-time memory (no upfront scan): extracts code symbols, summarizes docs, and cross-links docs↔symbols; optional TS semantic enhancement (auto on when TS installed). Experience notes auto-dedup. Every recall includes a traceable citation. Pure JS, single dep, works out of the box, silent operation, zero overhead."
