@@ -1,5 +1,5 @@
-url: https://github.com/po-et/dsh-session-guard
-name: po-et/dsh-session-guard
+url: https://github.com/im-Captain/dsh-session-guard
+name: im-Captain/dsh-session-guard
 category: session
 description:
   en: 'Prevents concurrent-write session corruption: takes a per-session advisory lock on session start and every step, so a second dsh process fails loudly instead of writing a duplicate-seq gap; dead owners are taken over automatically.'

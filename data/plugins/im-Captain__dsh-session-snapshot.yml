@@ -1,5 +1,5 @@
-url: https://github.com/po-et/dsh-session-snapshot
-name: po-et/dsh-session-snapshot
+url: https://github.com/im-Captain/dsh-session-snapshot
+name: im-Captain/dsh-session-snapshot
 category: session
 description:
   en: 'Rolling, integrity-verified backups of each session at turn boundaries: verifies the log still loads before promoting a snapshot, never overwrites the last good one when a turn ends corrupt, and restores in one command even when dsh will not boot.'

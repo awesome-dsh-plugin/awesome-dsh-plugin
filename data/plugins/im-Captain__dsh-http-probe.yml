@@ -1,5 +1,5 @@
-url: https://github.com/po-et/dsh-http-probe
-name: po-et/dsh-http-probe
+url: https://github.com/im-Captain/dsh-http-probe
+name: im-Captain/dsh-http-probe
 category: tools
 description:
   en: 'Adds an http_probe tool for endpoint health checks: status code, latency and key response headers, using HEAD with GET fallback; response bodies are never downloaded.'
