@@ -238,8 +238,27 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
-          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        //
+        // --diff-merges=first-parent is what makes a merge-introduced entry
+        // visible. A maintainer's merge resolution can create both halves of an
+        // entry inside the merge commit — #2662 renamed the three
+        // wwweljf__dsh-plugins entries to their slug (…--plugins-dsh-*.yml)
+        // and wrote their README lines while merging — and `git log` shows no
+        // diff for a merge by default. So this lookup found nothing, README
+        // history had nothing either (those lines are in no non-merge commit),
+        // and the build refused to run for every entry that merge introduced:
+        // main was red from the moment it landed, and so was every pull
+        // request whose merge ref was built on top of it. With this flag the
+        // merge counts as the commit that added the path, which is exactly the
+        // date the ledger wants.
+        //
+        // The flag also makes merges emit their patch here, so the date lines
+        // have to be picked out instead of assuming every line is one:
+        // `new Date('+url: …')` throws, the catch below swallows it, and the
+        // entry lands back in "no added-date derivable" looking exactly like a
+        // shallow clone does.
+        const out = execSync(`git log --diff-merges=first-parent --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+          { encoding: 'utf8' }).split('\n').map((l) => l.trim()).filter((l) => /^\d{4}-\d{2}-\d{2}T/.test(l))
         const iso = out[out.length - 1]
         if (iso) dates[e.url] = new Date(iso).toISOString()
       } catch { /* not committed yet — falls through to the error below */ }
