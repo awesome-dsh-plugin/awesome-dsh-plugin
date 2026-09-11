@@ -2,5 +2,5 @@ url: https://github.com/zhengmz/dsh-auto-fold
 name: zhengmz/dsh-auto-fold
 category: ui
 description:
-  en: 'Implemented the missing auto-collapse functionality for DSH settings when the conversation display is set to "Compact" mode.'
-  zh: '补齐 DSH 设置对话显示 Compact 压缩时无法自动折叠的功能。'
+  en: 'Fills in the missing capability for DSH to auto-fold when the conversation display is set to Compact.'
+  zh: '补齐 DSH 在对话显示设为 Compact（紧凑）时无法自动折叠的能力。'
