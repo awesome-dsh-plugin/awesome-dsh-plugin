@@ -1,0 +1,13 @@
+# 提交到 awesome-dsh-plugin：PR 只需新增这一个文件
+#   路径: data/plugins/<owner>__dsh-branch-inbox-guard.yml
+#   （<owner> 换成你的 GitHub 用户名；文件名用双下划线连接 owner 与 repo）
+# 校验点见 contributing.md：url 必须与仓库完全一致；description.en 必填、以句号结尾、不含营销词；
+# 分类选最贴切的（本插件 = session；维护者可能微调，不会因此打回）。
+url: https://github.com/xine2009cn/dsh-branch-inbox-guard
+name: xine2009cn/dsh-branch-inbox-guard
+category: session
+description:
+  en: Removes the queued prompts a DSH fork child inherits from its parent, so the first turn in a new branch runs the prompt typed there instead of the parent's next one.
+  zh: 清除 DSH 分支会话从 fork 父会话继承来的排队提问，让分支的第一轮执行你在分支里输入的问题，而不是父会话的下一句。
+# 可选（推荐）：把预构建 tarball 附到 GitHub Release 后填这一行，市场会优先展示它而不是源码构建
+tarball: https://github.com/xine2009cn/dsh-branch-inbox-guard/releases/latest/download/dsh-branch-inbox-guard-0.1.0.tgz
