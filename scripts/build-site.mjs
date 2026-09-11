@@ -238,9 +238,19 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+        const added = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
           { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
-        const iso = out[out.length - 1]
+        // An entry that arrived through a merge commit has no --diff-filter=A
+        // row at all: `git log` does not walk a merge's diff unless asked to,
+        // so this filter cannot see the addition, and neither can the README
+        // pass above for the line that landed in the same merge. The oldest
+        // commit that touched the path IS that merge, so it answers the same
+        // question. Without this the build refuses over data it can date.
+        const touched = added.length
+          ? added
+          : execSync(`git log --format=%cI -- ${JSON.stringify(file)}`,
+            { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        const iso = touched[touched.length - 1]
         if (iso) dates[e.url] = new Date(iso).toISOString()
       } catch { /* not committed yet — falls through to the error below */ }
     }
