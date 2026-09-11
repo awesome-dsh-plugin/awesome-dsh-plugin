@@ -1,0 +1,6 @@
+url: https://github.com/sryimnoob123/dsh-tool-pwsh-safe
+name: sryimnoob123/dsh-tool-pwsh-safe
+category: tools
+description:
+  en: Runs PowerShell scripts through base64 encoding, so quotes, $, backslashes and CJK survive as written. Same sandbox channel as the built-in pwsh tool.
+  zh: 把 PowerShell 脚本 base64 编码后执行，引号、$、反斜杠、中文全部原样传递，免去转义地狱。走与内置 pwsh 工具相同的沙箱通道。
