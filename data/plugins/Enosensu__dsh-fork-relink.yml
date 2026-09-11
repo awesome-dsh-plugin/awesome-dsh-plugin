@@ -1,0 +1,6 @@
+url: https://github.com/Enosensu/dsh-fork-relink
+name: Enosensu/dsh-fork-relink
+category: session
+description:
+  en: "Fork companion that auto-relinks subagent session records to the forked child: listens for the official session/created event and rewrites only the durable parentSession header frame of cold subagent children (with trash backups), so forked conversations keep their subagent panel, agent routing, and descriptors — the whole subtree follows, filtered by what the fork seed references."
+  zh: "fork 伴随插件:官方 fork 发生后,自动把原会话的直接子 agent 记录头帧 parentSession 重链到新会话(仅重写头帧,其余帧字节原样,先备份到回收站),fork 出的对话完整保留子 agent 面板、代理路由与 descriptor 信息;按 fork 子会话 seed 的引用过滤,整棵子 agent 树统一跟随。零 UI、零路由、零依赖,与 AI 结对开发。"
