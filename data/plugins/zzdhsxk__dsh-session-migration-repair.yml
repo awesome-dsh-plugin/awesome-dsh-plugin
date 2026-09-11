@@ -1,0 +1,6 @@
+url: https://github.com/zzdhsxk/dsh-session-migration-repair
+name: zzdhsxk/dsh-session-migration-repair
+category: session
+description:
+  en: 'Repairs legacy DSH session logs that the current build refuses to migrate, recovering missing tool-call ids and names from the log itself and verifying each repair against the real v0 to v3 migration chain before writing.'
+  zh: '修复无法被当前 DSH 版本迁移的旧版会话日志：从日志自身恢复缺失的工具调用 id/name，写盘前先用真实 v0→v3 迁移链验证，修复前自动备份。'
