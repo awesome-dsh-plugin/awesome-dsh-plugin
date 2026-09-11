@@ -1357,4 +1357,13 @@
   "https://raw.githubusercontent.com/kenny2077/dsh-web-search-doubao/main/docs/img/settings-card.png",
   "https://raw.githubusercontent.com/kenny2077/dsh-web-search-doubao/main/docs/img/console.png"
  ]
+,
+  "https://github.com/wbin0001/dsh-comfyui-canvas": [
+    "https://raw.githubusercontent.com/wbin0001/dsh-comfyui-canvas/main/docs/screenshots/01-split-canvas-chat.png",
+    "https://raw.githubusercontent.com/wbin0001/dsh-comfyui-canvas/main/docs/screenshots/02-workflow-dunhuang.png",
+    "https://raw.githubusercontent.com/wbin0001/dsh-comfyui-canvas/main/docs/screenshots/03-output-grid.png",
+    "https://raw.githubusercontent.com/wbin0001/dsh-comfyui-canvas/main/docs/screenshots/04-gallery.png",
+    "https://raw.githubusercontent.com/wbin0001/dsh-comfyui-canvas/main/docs/screenshots/05-batch-portraits.png",
+    "https://raw.githubusercontent.com/wbin0001/dsh-comfyui-canvas/main/docs/screenshots/06-template-library.png"
+  ]
 }
