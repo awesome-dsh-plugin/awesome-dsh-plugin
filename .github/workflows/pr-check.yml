@@ -120,6 +120,8 @@ jobs:
           fi
       - name: awesome-lint
         run: npx awesome-lint
+      - name: Added-date regression tests
+        run: node --test scripts/added-dates.test.mjs
       - name: Build (locale parity, date derivation, templates)
         # probes are skipped on purpose: the build tolerates missing probe
         # data, and this keeps the check token-free and fork-safe.
