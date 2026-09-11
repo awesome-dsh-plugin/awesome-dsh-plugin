@@ -2,5 +2,5 @@ url: https://github.com/zhengmz/dsh-auto-fold
 name: zhengmz/dsh-auto-fold
 category: ui
 description:
-  en: 'Automatically loads the full conversation history when a session opens so the official native per-turn folding engages; active only in Compact mode and adds no fold rows of its own.'
-  zh: '打开会话自动加载全部历史，让官方原生回合折叠立即生效；仅在 Compact 模式生效，不新增折叠行。'
+  en: 'Implemented the missing auto-collapse functionality for DSH settings when the conversation display is set to "Compact" mode.'
+  zh: '补齐 DSH 设置对话显示 Compact 压缩时无法自动折叠的功能。'
