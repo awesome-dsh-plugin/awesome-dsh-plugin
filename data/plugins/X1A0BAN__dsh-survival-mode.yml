@@ -4,3 +4,4 @@ category: fun
 description:
   en: 'Survival mode: all sessions share one satiety/health pool — each model step burns satiety, starvation freezes tool calls until fed, with an MC mini-game for gathering food.'
   zh: 生存模式：全局共享一条饱食度与生命，模型每步思考消耗饱食度，饿死后全局工具被冻结，通过 MC 采集小游戏获取食物喂食复活。
+tarball: https://github.com/X1A0BAN/dsh-survival-mode/releases/latest/download/dsh-survival-mode.tgz
