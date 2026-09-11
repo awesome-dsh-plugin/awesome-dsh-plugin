@@ -1,0 +1,6 @@
+url: https://github.com/zpis666/dsh-context-budget
+name: zpis666/dsh-context-budget
+category: model
+description:
+  en: Adds per-route context window and compaction threshold fields to the Models settings page and a vendor-aware thinking-effort picker to the composer, writing llm-pi-ai capacities, reasoningEfforts, and a compaction-basic patch row.
+  zh: 在模型设置页为每个 pi-ai 路由新增上下文窗口与压缩阈值字段，并在输入框右下角按厂商提供思考强度选择器，写入 llm-pi-ai 容量、reasoningEfforts 与 compaction-basic 补丁行。
