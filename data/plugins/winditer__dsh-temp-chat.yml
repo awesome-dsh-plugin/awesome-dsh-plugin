@@ -1,5 +1,5 @@
-url: https://github.com/winditer/dsh-elf
-name: winditer/dsh-elf
+url: https://github.com/winditer/dsh-temp-chat
+name: winditer/dsh-temp-chat
 category: ui
 description:
   en: Floating translucent DeepSeek whale elf on the DSH page that opens a draggable, minimizable temporary chat window using the session model or a custom OpenAI-compatible endpoint, with real-time streaming.
