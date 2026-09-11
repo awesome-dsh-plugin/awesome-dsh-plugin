@@ -1,0 +1,7 @@
+url: https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-agent-mail-ui
+name: dff652/deepseek-harness-community-plugins#dsh-agent-mail-ui
+category: ui
+description:
+  en: Adds an Agent Mail inbox, recipient directory and task composer to DeepSeek Harness, with an optional connection wizard requiring a separately configured authenticated management host.
+  zh: 为 DeepSeek Harness 提供 Agent Mail 收件箱、收件人目录和任务编辑器；可选连接向导需另外配置带身份验证的管理宿主。
+tarball: https://github.com/dff652/deepseek-harness-community-plugins/releases/download/dsh-agent-mail-ui-v0.1.7/dff652-dsh-agent-mail-ui-0.1.7.tgz
