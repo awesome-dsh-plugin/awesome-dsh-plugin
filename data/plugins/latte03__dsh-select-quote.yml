@@ -1,0 +1,6 @@
+url: https://github.com/latte03/dsh-select-quote
+name: latte03/dsh-select-quote
+category: ui
+description:
+  en: 'Selects text in the conversation and carries it into the next message as a quoted block: a floating copy/add-to-task toolbar, quote cards inside the composer, and matching cards in the transcript.'
+  zh: '在对话中划词，把选中文本作为引用带进下一条消息：划词浮动工具条（复制 / 添加到任务）、输入框内的引用卡片，以及对话记录里对应的引用卡片。'
