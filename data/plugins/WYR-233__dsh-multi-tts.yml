@@ -2,16 +2,7 @@ url: https://github.com/WYR-233/dsh-multi-tts
 name: WYR-233/dsh-multi-tts
 category: voice
 description:
-  en: Per-reply read-aloud with a multi-provider settings page — MiniMax or any OpenAI-compatible /audio/speech endpoint, with voice, emotion, speed and model selection plus an auto-read toggle.
-  zh: 每条回复旁的朗读按钮与输入框自动朗读开关，设置页可选服务商与音色：MiniMax 或任意 OpenAI 兼容的 /audio/speech 端点，可调音色、情绪、语速与模型。
+  en: 'Per-reply read-aloud with a multi-provider settings page — MiniMax or any OpenAI-compatible /audio/speech endpoint, with voice, emotion, speed and model selection plus an auto-read toggle.'
+  zh: '每条回复旁的朗读按钮与输入框自动朗读开关，设置页可选服务商与音色：MiniMax 或任意 OpenAI 兼容的 /audio/speech 端点，可调音色、情绪、语速与模型。'
 tarball: https://github.com/WYR-233/dsh-multi-tts/releases/latest/download/dsh-multi-tts.tgz
 
----
-
-url: https://github.com/WYR-233/dsh-memory-lite
-name: WYR-233/dsh-memory-lite
-category: memory
-description:
-  en: Read-only enhancer for a file-based long-term memory library (markdown cards in git): a memory_find search tool, a small budgeted memory digest injected into the system prompt, and a settings page with library overview, health-check status and toggles.
-  zh: 面向「纯文件（markdown 卡片 + git）长期记忆库」的只读增强插件：memory_find 检索工具、一小段受预算约束的记忆库摘要注入，以及带概览/健康/开关的设置页。
-tarball: https://github.com/WYR-233/dsh-memory-lite/releases/latest/download/dsh-memory-lite.tgz
