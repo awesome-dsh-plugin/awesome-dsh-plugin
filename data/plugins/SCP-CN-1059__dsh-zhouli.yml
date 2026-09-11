@@ -2,5 +2,5 @@ url: https://github.com/SCP-CN-1059/dsh-zhouli
 name: SCP-CN-1059/dsh-zhouli
 category: tools
 description:
-  en: 'Looks up the 《周礼》 (Rites of Zhou) in a bundled 49,384-character corpus through one tool with seven actions, returning every passage with a stable 篇序.职官序 coordinate; the corpus also carries a per-office establishment index and collation between two Kanripo witnesses.'
-  zh: '提供检索《周礼》的工具：内置 49,384 字语料，七种检索动作，每条结果带稳定坐标（篇序.职官序）；语料另含职官员额索引与 Kanripo 两本互校勘记。'
+  en: 'Ships the Zhouli-mode agent preset, which runs a session in three phases (declaring roles on opening, citing authorities while working, a six-item self-audit at the close), plus one tool with seven actions over a bundled 49,384-character 《周礼》 corpus that returns every passage with a stable 篇序.职官序 coordinate, a per-office establishment index and collation between two Kanripo witnesses.'
+  zh: '主打「周礼模式」agent 预设：会话分三段依六官法度而行——开工「设官分职」、事中「依典援据」、收尾「岁终之会」依六计考成。另附 zhouli 工具，七种检索动作，检索内置 49,384 字《周礼》语料，每条结果带稳定坐标（篇序.职官序），含职官员额索引与 Kanripo 两本互校勘记。'
