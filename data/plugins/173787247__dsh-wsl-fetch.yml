@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-fetch
+name: 173787247/dsh-wsl-fetch
+category: wsl
+description:
+  en: 'Registers a wsl-proxy ctx.web fetch provider so official web_fetch uses undici ProxyAgent through HTTP(S)_PROXY instead of connecting from WSL to a DNS-pinned public IP (the official path that produces TypeError: fetch failed behind a Windows proxy).'
+  zh: '在 ctx.web 注册 wsl-proxy 抓取后端，让官方 web_fetch 经 HTTP(S)_PROXY 用 undici ProxyAgent 出网，避免官方实现在 WSL 里 DNS 钉死后直连公网 IP，从而在 Windows 代理后出现 TypeError: fetch failed。'

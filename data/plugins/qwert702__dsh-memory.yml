@@ -1,0 +1,6 @@
+url: https://github.com/qwert702/dsh-memory
+name: qwert702/dsh-memory
+category: memory
+description:
+  en: 'Project+global long-term memory for the dsh web GUI: split POST /items endpoints, tool-call context merged into memory items as compact summaries, with deduplication and session-scoped persistence.'
+  zh: dsh 网页端项目级+全局长期记忆：分拆 POST /items 路由避免路径冲突，多轮工具调用上下文压缩后存入记忆项，去重与会话级持久化。

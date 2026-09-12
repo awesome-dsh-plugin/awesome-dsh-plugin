@@ -1,0 +1,6 @@
+url: https://github.com/converk/dsh-tweaks/tree/main/plugins/turn-file-revert
+name: converk/dsh-tweaks#turn-file-revert
+category: ui
+description:
+  en: Adds a changed-file summary row to finished turns and reverts or reapplies the file changes of the latest turn in the session.
+  zh: 在每轮对话末尾补一行改动统计，并可撤回 / 重新应用本会话最后一轮的改动。

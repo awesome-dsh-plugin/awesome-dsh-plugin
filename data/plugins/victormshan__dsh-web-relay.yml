@@ -1,0 +1,6 @@
+url: https://github.com/victormshan/dsh-web-relay
+name: victormshan/dsh-web-relay
+category: ui
+description:
+  en: 'Three-party collaboration protocol for dsh: Step List state machine, five-tier review chain (Gemini/web/Claude Code/dialog/manual), alternatives adjudication, cross-restart resume with heartbeat, and capability persistence.'
+  zh: 'dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。'
