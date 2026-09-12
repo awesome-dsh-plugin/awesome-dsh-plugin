@@ -1,0 +1,7 @@
+url: https://github.com/KasenRi/dsh-orbit-browser-plugins/tree/main/packages/browser
+name: KasenRi/dsh-orbit-browser-plugins#browser
+category: browser
+description:
+  en: "Controlled browser automation for DeepSeek Harness: the agent_browser tool and BrowserAutomationService drive a real Chromium or Chrome page (or an explicit CDP endpoint) through the agent-browser CLI, with allowedDomains containment and per-call output limits."
+  zh: "DeepSeek Harness 的受控浏览器自动化：agent_browser 工具与 BrowserAutomationService 通过 agent-browser CLI 驱动真实 Chromium / Chrome 页面（或指定 CDP 端点），支持 allowedDomains 域名收敛与单次调用输出上限。"
+tarball: https://github.com/KasenRi/dsh-orbit-browser-plugins/releases/download/v0.3.0/kasenri-dsh-browser-0.1.0.tgz

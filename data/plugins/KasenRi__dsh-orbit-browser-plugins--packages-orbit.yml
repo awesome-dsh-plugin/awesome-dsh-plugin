@@ -1,0 +1,7 @@
+url: https://github.com/KasenRi/dsh-orbit-browser-plugins/tree/main/packages/orbit
+name: KasenRi/dsh-orbit-browser-plugins#orbit
+category: workflow
+description:
+  en: "Deterministic engineering orchestration runtime for DeepSeek Harness: the orbit_controller tool and OrbitService run Commander, Executor and Smart Watchdog children through PLAN, EXECUTE, EVALUATE, bounded correction and runtime recovery, with durable state in <project>/.cx/state.json."
+  zh: "DeepSeek Harness 的确定性工程编排运行时：orbit_controller 工具与 OrbitService 以 Commander / Executor / Smart Watchdog 子代理执行 PLAN、EXECUTE、EVALUATE、有界修正与运行时恢复，持久状态保存在 <project>/.cx/state.json。"
+tarball: https://github.com/KasenRi/dsh-orbit-browser-plugins/releases/download/v0.3.0/kasenri-dsh-orbit-0.3.0.tgz
