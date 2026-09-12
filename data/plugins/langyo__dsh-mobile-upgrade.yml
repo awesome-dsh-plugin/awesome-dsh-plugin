@@ -2,6 +2,6 @@ url: https://github.com/langyo/dsh-mobile-upgrade
 name: langyo/dsh-mobile-upgrade
 category: ui
 description:
-  en: 'Mobile UI fixes for the dsh web profile: composer upload, restart row, input-modality switches, narrow-screen drawer and settings tabs, a full-width model menu, and a stuck-request network chip.'
-  zh: dsh web profile 的手机端体验修复：输入框上传、重启行、输入模态开关、窄屏抽屉与设置标签、全宽模型菜单，以及卡住请求的网络状态芯片。
+  en: 'Requires DSH 0.1.5-rc.1. Mobile UI fixes for the dsh web profile: narrow-screen drawer and settings tabs, a full-width model menu, a stuck-request network chip, and a narrow-header collector that folds the lineage, subagent and background-job chips into one tappable sheet.'
+  zh: '需要 DSH 0.1.5-rc.1。dsh web profile 的手机端体验修复：窄屏抽屉与设置标签、全宽模型菜单、卡住请求的网络状态芯片，以及把会话层级、subagent 与后台任务芯片收进一张可点开面板的窄屏头部收纳器。'
 tarball: https://github.com/langyo/dsh-mobile-upgrade/releases/latest/download/dsh-mobile-upgrade.tgz
