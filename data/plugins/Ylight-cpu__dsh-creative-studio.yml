@@ -18,6 +18,6 @@ url: https://github.com/Ylight-cpu/dsh-creative-studio
 name: Ylight-cpu/dsh-creative-studio
 category: skill
 description:
-  en: Image and video production toolkit for DeepSeek Harness - background removal with quality tiers, local inpainting retouch, headline and logo compositing, batch platform-size exports, image QA reports, plus footage inventory, frame extraction, accurate cutting, transition joins, on-screen text, subtitle burn-in, music mixing with fades, smart cover-frame selection and platform-spec video exports; it provisions its own local Python runtime through a bundled bootstrap script.
-  zh: 面向 DeepSeek Harness 的美工与视频剪辑工具包——可分档抠图、局部重绘改图、标题与 logo 合成、平台规格批量导出、图片体检报告，以及素材通览、抽帧、精确裁切、转场拼接、屏幕文案、字幕烧入、配乐淡入淡出、智能封面选帧与平台规格视频导出；通过内置引导脚本自备本地 Python 运行时。
+  en: Image and video production toolkit for DeepSeek Harness - background removal with quality tiers, local inpainting retouch, headline and logo compositing, batch platform-size exports and image QA reports; for video, AI subject matting with background replacement (RVM ONNX, plus a chroma-key path), animated titles with fade/slide/typewriter/karaoke presets, 53 transitions with stylized variants, and light-effect and grading presets with LUT support, alongside footage inventory, accurate cutting, subtitle burn-in, music mixing and platform-spec exports; it provisions its own local Python runtime through a bundled bootstrap script.
+  zh: 面向 DeepSeek Harness 的美工与视频剪辑工具包——可分档抠图、局部重绘改图、标题与 logo 合成、平台规格批量导出与图片体检；视频侧含 AI 抠像换背景（RVM ONNX，另有绿幕色键路径）、淡入/滑入/打字机/卡拉OK 动效文字、53 种转场与风格化变体、光效与调色预设（支持 LUT），以及素材通览、精确裁切、字幕烧入、配乐混音与平台规格导出；通过内置引导脚本自备本地 Python 运行时。
 tarball: https://github.com/Ylight-cpu/dsh-creative-studio/releases/latest/download/dsh-creative-studio.tgz
