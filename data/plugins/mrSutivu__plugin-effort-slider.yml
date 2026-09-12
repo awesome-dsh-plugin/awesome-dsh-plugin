@@ -1,0 +1,6 @@
+url: https://github.com/mrSutivu/plugin-effort-slider
+name: mrSutivu/plugin-effort-slider
+category: ui
+description:
+  en: Notched reasoning-effort slider grouped with the model picker in the composer, with theme variables and English, French and Chinese labels.
+  zh: 与模型选择器连为一体的带刻度推理强度滑杆，位于输入框内，支持主题变量与中英法三语。

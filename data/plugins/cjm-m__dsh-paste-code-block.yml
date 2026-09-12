@@ -1,0 +1,6 @@
+url: https://github.com/cjm-m/dsh-paste-code-block
+name: cjm-m/dsh-paste-code-block
+category: ui
+description:
+  en: 'Cherry Studio-style paste: multi-line/indented/fenced text or code pasted into the DSH Web composer collapses into a bordered, collapsible, language-tagged card and is restored as a fenced code block on send.'
+  zh: 'Cherry Studio 式粘贴：把多行/缩进/围栏文本或代码粘进 DSH Web 输入框时收成带边框、可折叠、带语言标签的卡片，发送时还原为围栏代码块。'

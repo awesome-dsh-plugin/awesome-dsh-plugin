@@ -478,9 +478,6 @@
  "https://github.com/a903067276-rgb/dsh-file-mentions": [
   "https://raw.githubusercontent.com/a903067276-rgb/dsh-file-mentions/main/assets/screenshot.png"
  ],
- "https://github.com/a903067276-rgb/dsh-file-upload": [
-  "https://raw.githubusercontent.com/a903067276-rgb/dsh-file-upload/main/assets/screenshot.png"
- ],
  "https://github.com/a903067276-rgb/dsh-hud": [
   "https://raw.githubusercontent.com/a903067276-rgb/dsh-hud/main/assets/hud-panel.png"
  ],
@@ -1334,7 +1331,8 @@
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-album.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
- ],
+ ]
+,
  "https://github.com/yangdongzhen590/dsh-knj-workflow": [
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/task-detail.png",
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/workflow-editor.png",

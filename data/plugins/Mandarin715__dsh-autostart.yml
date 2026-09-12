@@ -1,0 +1,6 @@
+url: https://github.com/Mandarin715/dsh-autostart
+name: Mandarin715/dsh-autostart
+category: dev
+description:
+  en: 'Windows boot autostart and one-click restart for the DSH service, from inside DSH: a windowless HKCU-Run bootstrap entry, a restart button in the settings card, the current tokenised access URL, and an optional post-start hook.'
+  zh: Windows 平台的 DSH 服务开机自启与一键重启（都在 DSH 设置页内）：无窗口的 HKCU Run 登录项、设置页重启按钮、显示当前带 token 的访问地址，以及可选的服务启动后钩子。
