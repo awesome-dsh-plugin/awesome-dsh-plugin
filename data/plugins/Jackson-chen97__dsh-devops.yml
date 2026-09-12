@@ -2,5 +2,5 @@ url: https://github.com/Jackson-chen97/dsh-devops
 name: Jackson-chen97/dsh-devops
 category: dev
 description:
-  en: GitLab and Kubernetes monitoring for DSH: merge request and pipeline management, deployment and pod status with logs and events, webhook-triggered alerts, and a dashboard UI.
+  en: 'GitLab and Kubernetes monitoring for DSH: merge request and pipeline management, deployment and pod status with logs and events, webhook-triggered alerts, and a dashboard UI.'
   zh: 面向 DSH 的 GitLab 与 Kubernetes 监控：合并请求与流水线管理、部署与 Pod 状态（含日志与事件）、Webhook 告警，以及仪表盘界面。
