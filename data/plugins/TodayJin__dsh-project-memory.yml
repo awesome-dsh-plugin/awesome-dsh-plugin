@@ -1,0 +1,5 @@
+url: https://github.com/TodayJin/dsh-project-memory
+category: memory
+description:
+  en: "Per-project memory for DeepSeek Harness. Three Markdown files per workspace — PROJECT.md, DECISIONS.md and SESSIONS.md — are auto-created on the first step of any session in that workspace, re-read from disk and re-injected only when they change, and written back by classification through a memory_checkpoint tool, with a bounded end-of-turn nudge when a turn did work but recorded nothing. Adds a settings page (workspace list, live file view, edit, search, clear, forget) and a composer status chip showing that workspace's sync state. Zero dependencies — no vector store, no embeddings, and no model calls."
+  zh: "DeepSeek Harness 的项目记忆插件。每个工作区三份 Markdown 文件（PROJECT.md / DECISIONS.md / SESSIONS.md）：会话首个步骤自动创建、每个会话自动加载、按分类经 memory_checkpoint 工具写回，并在「干了实事却没记录」时给一次收尾提醒。附带设置界面（工作区列表 / 实时查看 / 编辑 / 搜索 / 清除 / 移除）与显示该工作区同步状态的输入框状态图标。零依赖——不含向量库、embedding 或模型调用。"
