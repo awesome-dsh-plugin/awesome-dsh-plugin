@@ -1,0 +1,11 @@
+{
+  "name": "dsh-widget-journey-west",
+  "url": "https://github.com/<你的用户名>/dsh-widget-journey-west",
+  "npm": "dsh-widget-journey-west",
+  "description": {
+    "en": "Journey to the West floating desktop pet: a frameless, transparent, always-on-top cartoon widget of Tang Monk and his disciples. Click to switch characters; idle plays a chasing scene.",
+    "zh": "西游师徒卡通桌面悬浮窗：无边框、透明、置顶。点击切换唐僧/孙悟空/猪八戒/沙僧/白龙马，静止自动播放追逐动画。"
+  },
+  "category": "widget",
+  "screenshots": []
+}
