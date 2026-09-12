@@ -1,0 +1,6 @@
+url: https://github.com/99galaxy/dsh-plugin-market
+name: 99galaxy/dsh-plugin-market
+category: market
+description:
+  en: 'Browse the awesome-dsh-plugin catalog from a page in DSH Settings: filter by category or by installed state, search by name or description, sort by stars, downloads, name or date added, and install a plugin into the current profile. A second tab lists what is already installed, and the catalog is cached locally for an hour with a mirror, a CDN and the npm registry as fallbacks when the official source is unreachable.'
+  zh: '在 DSH 设置页浏览 awesome-dsh-plugin 目录：按分类或已安装状态筛选，按名称或简介搜索，按 Star、下载量、名称或收录时间排序，一键把插件装进当前 profile。另一个标签页列出已安装的插件；目录在本地缓存一小时，官方源不可达时依次回退到镜像、CDN 与 npm registry。'
