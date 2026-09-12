@@ -1,0 +1,6 @@
+url: https://github.com/ShadowMiner/hermes-web-mcp
+name: ShadowMiner/hermes-web-mcp
+category: browser
+description:
+  en: "Keyless web powers for any MCP client: web_search, JS-rendered web_extract over dual CDP Chrome with proxy failover, and 7 real-browser page_* tools in an isolated context."
+  zh: "免密钥上网 MCP server：web_search、基于双 CDP Chrome 的 JS 渲染抓取（代理自动互备），以及 7 个隔离上下文真实浏览器 page_* 工具。"

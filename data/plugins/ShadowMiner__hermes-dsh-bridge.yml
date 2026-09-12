@@ -1,0 +1,6 @@
+url: https://github.com/ShadowMiner/hermes-dsh-bridge
+name: ShadowMiner/hermes-dsh-bridge
+category: tools
+description:
+  en: "Bidirectional bridge between Hermes Agent and DeepSeek Harness: dispatch_task with UI-visible sessions in the DSH sidebar, session mirroring, and 10 DSH-to-Hermes tools."
+  zh: "Hermes Agent 与 DeepSeek Harness 的双向桥：派单任务以 UI 可见会话出现在 DSH 侧边栏，支持会话镜像与 10 个 DSH→Hermes 工具。"
