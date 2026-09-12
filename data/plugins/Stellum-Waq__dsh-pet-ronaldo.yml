@@ -1,0 +1,6 @@
+url: https://github.com/Stellum-Waq/dsh-pet-ronaldo
+name: Stellum-Waq/dsh-pet-ronaldo
+category: fun
+description:
+  en: 'Cristiano Ronaldo desktop pet for the dsh web GUI: a chibi Portugal number 7 mascot in a bottom-right overlay whose animation follows the agent state — dribbling while tools run, thinking during a turn, waiting at approvals, diving on errors — and jumping in a SIU celebration with a host-process sound when a turn completes; it can be dragged, looks at the cursor on hover, dives on a triple click, and a settings panel manages several pets and imports custom spritesheets.'
+  zh: 'DSH Web 界面右下角的 C 罗桌宠：动画随 Agent 状态切换——工具执行中颠球、回合中思考、等待审批、出错假摔——回合完成时跳起 SIU 庆祝并由宿主进程播放提示音；支持拖动、悬停注视光标、连点三次假摔，设置面板可管理多只宠物并导入自定义 spritesheet。'
