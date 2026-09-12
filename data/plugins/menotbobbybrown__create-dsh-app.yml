@@ -1,0 +1,6 @@
+url: https://github.com/menotbobbybrown/create-dsh-app
+name: menotbobbybrown/create-dsh-app
+category: dev
+description:
+  en: '1-line interactive CLI project generator and scaffolder for DeepSeek Harness agents and plugin stacks.'
+  zh: 'DeepSeek Harness 智能体与插件技术栈一键式交互 CLI 项目生成与脚手架工具。'

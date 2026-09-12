@@ -1,0 +1,6 @@
+url: https://github.com/menotbobbybrown/dsh-plugin-mcp
+name: menotbobbybrown/dsh-plugin-mcp
+category: tools
+description:
+  en: 'Universal Model Context Protocol (MCP) bridge for DeepSeek Harness: connects agents to stdio/sse/websocket MCP servers with a 10k dormant scale engine, sub-millisecond BM25 tool search, dynamic token budgeting, and a real-time web UI dashboard.'
+  zh: 'DeepSeek Harness 通用 Model Context Protocol (MCP) 桥接插件：支持 stdio/sse/websocket 协议，具备 10k 休眠伸缩引擎、亚毫秒级 BM25 工具检索、动态 Token 预算管理及实时 Web UI 仪表盘。'
