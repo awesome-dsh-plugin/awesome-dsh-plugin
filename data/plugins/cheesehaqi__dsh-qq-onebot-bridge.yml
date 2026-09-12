@@ -2,5 +2,5 @@ url: https://github.com/cheesehaqi/dsh-qq-onebot-bridge
 name: cheesehaqi/dsh-qq-onebot-bridge
 category: notify
 description:
-  zh: '基于 OneBot v11 反向 WebSocket 的 QQ 双向桥：每群/每私聊用户独立会话、@引用语音转文字、私聊图片/动画表情识图、表情与贴纸工具。'
-  en: 'Bidirectional QQ bridge over OneBot v11 (reverse WebSocket): per-group and per-private-chat sessions, @-quoted voice speech-to-text, private image/animated-sticker viewing, face and sticker tools.'
+  zh: '基于 OneBot v11 反向 WebSocket 的 QQ 双向桥。v0.4.0「一切皆可调试」：每条消息一个 traceId、每个静默丢弃都有原因、控制台实时事件流与决策链、入站录制 + 沙箱离线回放 + 事件注入（全程不碰 QQ）——另有每群/每私聊独立会话、@引用语音转文字、私聊图片/动画表情识图、表情与贴纸工具。'
+  en: 'Bidirectional QQ bridge over OneBot v11 (reverse WebSocket). v0.4.0 "Everything Debuggable": a trace id on every message, a reason on every silent drop, a live decision-chain console, inbound recording with offline sandboxed dry-run replay and event injection (never touches QQ) — plus per-group/per-private sessions, @-quoted voice speech-to-text, private image/animated-sticker viewing, face and sticker tools.'
