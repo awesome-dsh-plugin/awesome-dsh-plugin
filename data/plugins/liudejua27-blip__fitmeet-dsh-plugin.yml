@@ -2,5 +2,5 @@ url: https://github.com/liudejua27-blip/fitmeet-dsh-plugin
 name: liudejua27-blip/fitmeet-dsh-plugin
 category: tools
 description:
-  en: Connects DeepSeek Harness to the FitMeet human network through per-user OAuth, exposing 12 tools for profile and people search, publishing, direct conversations, and messaging with preview-and-confirm guards for write actions.
-  zh: 通过每位用户独立的 OAuth 授权将 DeepSeek Harness 接入 FitMeet 人际网络，提供资料与找人、发布、私聊和消息的 12 个工具，并为写入操作保留预览与确认步骤。
+  en: Connects DeepSeek Harness to FitMeet through per-user OAuth with 17 tools for people search, gatherings, notifications, personal items, connection feedback, Hall publishing, and direct messages, with preview-and-confirm guards for write actions.
+  zh: 通过每位用户独立的 OAuth 授权将 DeepSeek Harness 接入 FitMeet，提供找人、组局查询、提醒、个人事项、连接反馈、大厅发布与私聊的 17 个工具，写入操作保留预览与确认步骤。
