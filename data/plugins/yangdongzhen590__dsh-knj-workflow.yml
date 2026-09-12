@@ -2,5 +2,5 @@ url: https://github.com/yangdongzhen590/dsh-knj-workflow
 name: yangdongzhen590/dsh-knj-workflow
 category: workflow
 description:
-  en: 'Config-driven development-task orchestration for DSH: create tasks bound to multi-stage workflows, run and resume them with per-stage persistence, and watch stage status in a sidebar progress bar.'
-  zh: '配置驱动的工作流与开发任务编排：任务绑定多阶段工作流，支持阶段级断点持久化、重跑与续跑，右侧栏可视化阶段进度。'
+  en: 'Config-driven development-task orchestration for DSH: graph workflows (task/gateway/human nodes) with per-stage persistence, plus an in-editor AI assistant that configures workflows through conversation with live validation.'
+  zh: '配置驱动的工作流与开发任务编排：图式工作流（任务/网关/人工审批节点）+ 阶段级断点持久化，内置 AI 助手在图编辑器中通过对话配置工作流，逐条校验实时应用到画布。'

@@ -81,10 +81,10 @@ jobs:
 
             const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
             // Oldest first. pulls.list answers newest-first, and only
-            // `speculative` was ever sorted (below) — so `urgent` inherited that
-            // order and MAX_RERUNS truncated its tail, which is exactly where
-            // the pull requests blocked longest live. #2146 sat on a "resubmit
-            // in about 24h" verdict for 119 hours: every pass re-ran twenty
+            // `speculative` was ever sorted (below) — so the blocked list
+            // inherited that order and MAX_RERUNS truncated its tail, which is
+            // exactly where the pull requests blocked longest live. #2146 sat
+            // on an "aged in" verdict for 119 hours: every pass re-ran twenty
             // newer submissions and stopped before reaching it. Twenty-two of
             // them were in that state on 2026-08-25, the oldest five days deep.
             prs.sort((a, b) => a.number - b.number)
@@ -101,7 +101,24 @@ jobs:
             }
             // Collected first, re-run second, so the cheap-and-urgent reasons
             // are never crowded out by the speculative one (see PASS_STALE).
-            const urgent = []
+            //
+            // Three tiers, not two. `blocking` and `revalidate` used to share
+            // one list sorted by PR number, which is fine until the gate file
+            // changes: then EVERY open verdict becomes stale at once, ~140 of
+            // them, and at 20 per pass they occupy the queue for two days.
+            // Stale entries are old PR numbers and aged-in ones are new, so
+            // ascending order put the whole backlog ahead of the submissions
+            // that are actually blocked — a plugin waiting only for its
+            // repository to turn one day old would wait two days instead of
+            // six hours, and the trigger would be a maintainer editing a
+            // comment in the gate script.
+            //
+            // The two are not equally urgent. `blocking` means nothing has
+            // vouched for this PR or the author is stuck behind a clock;
+            // `revalidate` means the verdict is probably still right and is
+            // being re-asked out of diligence. Diligence yields.
+            const blocking = []
+            const revalidate = []
             const speculative = []
             let requeued = 0
             for (const pr of prs) {
@@ -110,7 +127,7 @@ jobs:
               // and each iteration costs a listForRef. Stopping here makes the
               // sweep cheaper than the version that scanned every open PR to
               // build a list it was about to truncate.
-              if (urgent.length >= MAX) break
+              if (blocking.length >= MAX) break
 
               let gate, check
               try {
@@ -169,15 +186,19 @@ jobs:
               //    human re-check, which is not a control.
               const passStale = gate?.conclusion === 'success' && ranAt && (Date.now() - ranAt) > PASS_STALE_MS
 
-              if (never || stale || aged || unverified) urgent.push([pr, runId, never ? 'never gated' : stale ? 'verdict predates the current gate' : aged ? 'aged in' : 'gate failed open (neutral) — never verified'])
+              if (never) blocking.push([pr, runId, 'never gated'])
+              else if (unverified) blocking.push([pr, runId, 'gate failed open (neutral) — never verified'])
+              else if (aged) blocking.push([pr, runId, 'aged in'])
+              else if (stale) revalidate.push([pr, runId, 'verdict predates the current gate'])
               else if (passStale) speculative.push([pr, runId, `passing verdict is ${Math.round((Date.now() - ranAt) / 3600000)}h old`])
             }
 
-            // Urgent first: those PRs are blocked on the re-run, while a stale
-            // pass is only *possibly* wrong. Whatever budget is left goes to
-            // re-checking greens, oldest verdict first.
+            // Blocked first: those PRs cannot proceed without the re-run. Then
+            // re-validation of verdicts issued by gate code that no longer
+            // exists, then re-checking greens — both oldest verdict first.
+            revalidate.sort((a, b) => a[0].number - b[0].number)
             speculative.sort((a, b) => a[0].number - b[0].number)
-            for (const [pr, runId, why] of [...urgent, ...speculative]) {
+            for (const [pr, runId, why] of [...blocking, ...revalidate, ...speculative]) {
               if (requeued >= MAX) { core.info(`hit MAX_RERUNS=${MAX}, stopping`); break }
               core.info(`#${pr.number}: ${why}`)
               try {
@@ -189,7 +210,7 @@ jobs:
                 core.info(`#${pr.number}: could not re-run (${e.status})`)
               }
             }
-            core.info(`re-queued ${requeued} pull request(s) (${urgent.length} urgent, ${speculative.length} stale-pass candidates)`)
+            core.info(`re-queued ${requeued} pull request(s) (${blocking.length} blocked, ${revalidate.length} to re-validate, ${speculative.length} stale-pass candidates)`)
 
             } catch (e) {
               if (e.status === 403 || e.status === 429) core.warning(`API quota busy — skipping this pass (${e.status})`)

@@ -1,0 +1,6 @@
+url: https://github.com/vitas/dsh-model-pricing
+name: vitas/dsh-model-pricing
+category: model
+description:
+  en: 'Model pricing for the DSH settings page: per-1M-token prices from models.dev with the harness catalog overlaid, capability tags, cross-provider comparison, and a community promotion feed.'
+  zh: 'DSH 设置页中的模型价格表：基于 models.dev 的每 100 万 token 价格并叠加本地目录，含能力标签、跨供应商比价和社区促销信息源。'

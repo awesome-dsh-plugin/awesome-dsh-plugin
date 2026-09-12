@@ -238,8 +238,33 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+        let out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
           { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        // A canonical filename can first appear in a merge, whose diff the
+        // default log hides: `--diff-filter=A` cannot match a merge because
+        // git computes no diff for one unless asked. Merging #2662 renamed its
+        // three entry files to match their urls and regenerated their README
+        // lines inside the merge, so the files exist under those names in
+        // neither parent and the README pass above is blind to them too. Both
+        // ledgers came up empty and the build refused to run — correctly,
+        // since stamping "now" would make dates flap — which took main's site
+        // build down for three days and turned 130 unrelated pull requests red
+        // on a step no author controls.
+        //
+        // Retry only when the first lookup found nothing. That matters: asking
+        // for merge diffs up front would re-date every entry whose addition
+        // commit lives on a side branch, because the merge is newer than the
+        // commit that actually added it. `--first-parent` has the same defect
+        // for the same reason. Keeping this as a fallback is what makes the
+        // widening safe — an entry that already has an answer keeps it.
+        //
+        // Diagnosed independently, before the maintainer got to it, in #4708,
+        // #4709, #4786, #4821 and #4871; this is their fix, not a rewrite of
+        // it. #4821 named the cause down to the three renamed entries.
+        if (!out.length) {
+          out = execSync(`git log --diff-merges=first-parent --no-patch --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
+            { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+        }
         const iso = out[out.length - 1]
         if (iso) dates[e.url] = new Date(iso).toISOString()
       } catch { /* not committed yet — falls through to the error below */ }

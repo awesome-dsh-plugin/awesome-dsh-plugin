@@ -1,6 +1,0 @@
-url: https://github.com/ding112/MoneyPal
-name: ding112/dsh-moneypal
-category: tools
-description:
-  en: Personal finance plugin for DSH with structured Beancount ledger tools.
-  zh: 面向 DSH 的个人记账插件，基于结构化的beancount账本工具。
