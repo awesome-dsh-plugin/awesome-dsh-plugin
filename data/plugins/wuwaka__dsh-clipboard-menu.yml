@@ -1,0 +1,6 @@
+url: https://github.com/wuwaka/dsh-clipboard-menu
+name: wuwaka/dsh-clipboard-menu
+category: ui
+description:
+  en: 'Adds a right-click menu to DeepSeek Harness inside desktop shells that ship no context menu: cut, copy, paste and select all in the composer, copy and copy-as-plain-text on selected text elsewhere, and a search entry that opens the default browser with a configurable engine.'
+  zh: '在没有自带右键菜单的桌面外壳中为 DeepSeek Harness 补上右键菜单：输入框内的剪切、复制、粘贴、全选，别处选中文字的复制与复制为纯文本，以及用可配置引擎在默认浏览器中搜索。'
