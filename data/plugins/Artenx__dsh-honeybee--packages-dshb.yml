@@ -2,5 +2,5 @@ url: https://github.com/Artenx/dsh-honeybee/tree/main/packages/dshb
 name: Artenx/dsh-honeybee#dshb
 category: remote
 description:
-  en: Run DeepSeek Harness across multiple hosts and Docker containers from one web entry, with SSH/Docker execution worlds, a node registry, an auth gate, and a mobile-aware management UI.
-  zh: 一个 Web 入口同时驱动多台主机与 Docker 容器运行 DeepSeek Harness，含 SSH/Docker 执行世界、节点注册表、认证门禁与移动端管理 UI。
+  en: Routes DSH filesystem, shell, subprocess, and PTY operations to local, SSH, and Docker execution nodes, with a node registry, an authentication gate, and a mobile-aware management UI.
+  zh: 为 DSH 提供多节点执行路由，将文件系统、Shell、子进程和 PTY 操作分发到本地、SSH 与 Docker 执行节点，并包含节点注册表、认证门禁和移动端管理 UI。
