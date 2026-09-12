@@ -2,5 +2,5 @@ url: https://github.com/ouli-1242/dsh-plugin-tool-management
 name: ouli-1242/dsh-plugin-tool-management
 category: tools
 description:
-  en: 'MCP and Skills management for DeepSeek Harness in one settings page: enable or disable individual MCP tools, restart servers, create, import and toggle skills across all sources, apply global AGENTS.md presets, and manage archived sessions with retention, restore and conversation import or export.'
-  zh: 'DeepSeek Harness 的 MCP 与技能统一管理：在一个设置页里对单个 MCP 工具启停、重启服务，跨来源创建、导入、启停技能，应用全局 AGENTS.md 预设，并管理归档会话——保留期清理、批量恢复、对话导入导出。'
+  en: 'MCP, Skills and memory management for DeepSeek Harness in one settings panel: enable or disable individual MCP tools and restart servers, create, import and toggle skills across all sources, apply global AGENTS.md presets, manage archived sessions with retention, restore and transcript import or export, and keep scene memories as plain Markdown folders that are injected into the system prompt.'
+  zh: 'DeepSeek Harness 的 MCP、技能与记忆统一管理：在一个设置面板里对单个 MCP 工具启停、重启服务，跨来源创建、导入、启停技能，应用全局 AGENTS.md 预设，管理归档会话——保留期清理、批量恢复、对话导入导出，并把场景记忆存成普通 Markdown 目录、自动注入系统提示词。'
