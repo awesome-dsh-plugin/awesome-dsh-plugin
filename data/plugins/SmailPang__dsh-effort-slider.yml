@@ -1,0 +1,7 @@
+url: https://github.com/SmailPang/dsh-effort-slider
+name: SmailPang/dsh-effort-slider
+category: ui
+description:
+  en: Replaces the native DSH reasoning-level option list in place with a draggable Off, Low, High, and Max slider while preserving the official model-selection flow.
+  zh: 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
+tarball: https://github.com/SmailPang/dsh-effort-slider/releases/download/v0.1.1/dsh-effort-slider-0.1.1.tgz
