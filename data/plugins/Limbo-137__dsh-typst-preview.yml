@@ -1,0 +1,7 @@
+url: https://github.com/Limbo-137/dsh-typst-preview
+name: Limbo-137/dsh-typst-preview
+category: docs
+tarball: https://github.com/Limbo-137/dsh-typst-preview/releases/latest/download/dsh-typst-preview.tgz
+description:
+  en: "Typst live preview as a native right-Sidebar tab: clicking a .typ file opens a tab whose toolbar switches between the tinymist-rendered page and the highlighted source, with the preview page and its WebSocket served through the app's own origin."
+  zh: "原生右侧边栏里的 Typst 实时预览：点开 .typ 文件即得一个 tab，工具栏在 tinymist 渲染的页面与高亮源码之间切换；预览页面与其 WebSocket 都经应用自身 origin 提供。"
