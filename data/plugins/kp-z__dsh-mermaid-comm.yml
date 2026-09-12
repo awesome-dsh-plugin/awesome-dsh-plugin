@@ -1,0 +1,6 @@
+url: https://github.com/kp-z/dsh-mermaid-comm
+name: kp-z/dsh-mermaid-comm
+category: docs
+description:
+  en: Makes the AI default to Mermaid diagrams in development conversations — system prompt guidance, a mermaid_validate syntax-check tool with real-parser validation, and an output gate that auto-fixes or removes broken diagrams. Rendering via dsh-mermaid.
+  zh: 让 AI 在开发交流中默认用 Mermaid 图表达——系统提示引导、mermaid_validate 真解析语法校验工具，以及自动修复或摘除坏图的输出闸。渲染交给 dsh-mermaid。
