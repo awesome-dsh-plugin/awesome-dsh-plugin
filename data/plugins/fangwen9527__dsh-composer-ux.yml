@@ -1,0 +1,6 @@
+url: https://github.com/fangwen9527/dsh-composer-ux
+name: fangwen9527/dsh-composer-ux
+category: ui
+description:
+  en: Configurable send and newline keys, a custom composer context menu with a native-menu switch, settings-panel size memory, and automatic x-opencode-session header injection for OpenCode routes.
+  zh: 可配置发送/换行键位、自定义输入框右键菜单（可切回系统原生）、设置面板尺寸记忆，并为 OpenCode 路由自动注入 x-opencode-session 请求头。
