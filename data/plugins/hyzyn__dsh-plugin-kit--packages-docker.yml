@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/docker
+name: hyzyn/dsh-plugin-kit#docker
+category: ui
+description:
+  en: 'Docker container panel for the DSH Web GUI: containers (optionally including stopped), docker inspect details, logs, stats snapshots, image list and one-shot exec on the local machine or SSH hosts — read-only by default (mutations and exec are permission-gated), with a per-container terminal drawer embedded via the tty plugin.'
+  zh: 'DSH Web GUI 的 Docker 容器面板：本机或 SSH 主机上的容器列表（可选含已停止）、docker inspect 详情、日志、stats 快照、镜像列表与一次性 exec——默认只读（启停删与 exec 均需显式开启权限），可经 tty 插件在面板底部就地打开容器终端。'
