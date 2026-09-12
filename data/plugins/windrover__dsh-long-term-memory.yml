@@ -1,0 +1,6 @@
+url: https://github.com/windrover/dsh-long-term-memory
+name: windrover/dsh-long-term-memory
+category: memory
+description:
+  en: 'Layered deterministic long-term memory for DeepSeek Harness: CJK-aware BM25 recall (no embeddings), JSONL storage with user/global/workspace scopes, per-assembly context injection, auto-summarize and LLM/rule compression, 23-pattern threat scanning, write guards, atomic batch operations, portable export/import, and a Web UI with a memory panel and settings card.'
+  zh: 'DSH 分层确定性长期记忆：CJK 感知 BM25 召回（无向量嵌入），JSONL 存储含用户画像/全局/工作区三作用域，每轮上下文注入，自动总结与 LLM/规则压缩，23 组威胁模式扫描，写入护栏，原子批量操作，可移植导出/导入，以及带记忆面板与设置卡片的 Web 界面。'
