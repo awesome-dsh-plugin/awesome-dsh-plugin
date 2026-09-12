@@ -1,7 +1,7 @@
-url: https://github.com/IKEASven69/dsh-plugin/tree/main/plugins/dsh-depsec
-name: IKEASven69/dsh-plugin
+url: https://github.com/IKEASven69/dsh-trust-list
+name: IKEASven69/dsh-trust-list
 category: security
-tarball: https://github.com/IKEASven69/dsh-plugin/releases/download/v0.5.0/dsh-trust-list-0.5.0.tgz
+tarball: https://github.com/IKEASven69/dsh-trust-list/releases/download/v0.5.0/dsh-trust-list-0.5.0.tgz
 description:
   en: 'Dependency & plugin trust layer: when pnpm/npm block install scripts, grades every script PASS/WARN/BLOCK with file-line evidence (corpus-tested: 0 false blocks on npm top 1814 packages, 9/9 poisoning TTPs caught); four-dimension installed-plugin audit incl. SKILL.md prompt-injection content detection; version lock and post-install hash lock close the republish/tamper paths; one-click write-back to all four approval stores (pnpm 10/11, npm 12, bun); optional local classifier second pass.'
   zh: '依赖与插件的信任中间层：pnpm/npm 拦截 install 脚本时逐条证据分级放行（PASS/WARN/BLOCK + 文件行号；npm top 1814 包实测误拦截 0、九种投毒手法全拦截）；四维已装插件矩阵含 SKILL.md 提示注入内容检测；版本锁（升级换脚本即重审）与装后哈希锁（快照一键恢复）封杀重投毒路径；隔离与机械脱毒副本；一键写回 pnpm 10/11、npm 12、bun 四处放行清单；ed25519 签名规则 feed 以天级下发检测数据。'
