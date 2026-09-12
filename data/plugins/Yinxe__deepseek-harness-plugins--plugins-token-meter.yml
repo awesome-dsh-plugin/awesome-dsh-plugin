@@ -1,0 +1,7 @@
+url: https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/token-meter
+name: Yinxe/deepseek-harness-plugins#token-meter
+category: usage
+tarball: https://github.com/Yinxe/deepseek-harness-plugins/releases/latest/download/dshp-token-meter-latest.tgz
+description:
+  en: 'Unified token quota and usage statistics for dsh: multi-vendor rolling/payg quota with sidebar cards and provider ops, plus session-log token aggregation with trends, heatmap, and per-model breakdown.'
+  zh: 'DSH 额度与用量统计统一视图：多供应商滚动/按量额度（侧边栏卡片 + 供应商运维），外加会话日志 token 聚合（趋势、热力图、按模型拆分）。'
