@@ -1,0 +1,6 @@
+url: https://github.com/dd2673/dsh-wending-git-workbench
+name: dd2673/dsh-wending-git-workbench
+category: git
+description:
+  en: 'Codex-style Git workbench: workspace-scoped changes, diff, stage, commit, guarded branch operations, graph history, fetch, fast-forward pull, and upstream push through official plugin APIs.'
+  zh: Codex 风格 Git 工作台：工作区级更改、diff、暂存、提交、受守卫的分支操作、提交图谱、fetch、pull --ff-only 与经官方插件 API 的上游推送。

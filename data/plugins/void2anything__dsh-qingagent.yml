@@ -1,0 +1,6 @@
+url: https://github.com/void2anything/dsh-qingagent
+name: void2anything/dsh-qingagent
+category: docs
+description:
+  en: 'Writing bridge to the open-source QingAgent client: the agent drafts and revises documents through qing_ prefixed host tools, typeset on a rice-paper panel with mermaid, drawio, tables and KaTeX; edits stage as reviewable diffs and land only on commit, and it requires the QingAgent desktop app on the same machine.'
+  zh: 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。

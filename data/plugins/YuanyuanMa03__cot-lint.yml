@@ -1,0 +1,6 @@
+url: https://github.com/YuanyuanMa03/cot-lint
+name: YuanyuanMa03/cot-lint
+category: skill
+description:
+  en: 'Chain-of-thought leakage linter: zero-dependency CLI that finds AI-session residue in docs and comments (dead design citations, PR vantage, change narration, review choreography), shipping the cot-trim fixing skill as the installable bundle.'
+  zh: 思维链泄漏检测：零依赖 CLI 扫描 AI 留在文档与注释里的会话残留（死设计引用、PR 视角、变更叙述、评审编排），内置 cot-trim 语义修复技能包。

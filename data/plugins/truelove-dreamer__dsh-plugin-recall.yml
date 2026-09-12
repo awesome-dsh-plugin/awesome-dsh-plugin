@@ -1,0 +1,6 @@
+url: https://github.com/truelove-dreamer/dsh-plugin-recall
+name: truelove-dreamer/dsh-plugin-recall
+category: memory
+description:
+  en: 'Cross-session memory for the model: full-text search all past sessions (SQLite FTS5 via ctx.sessionQuery) and bring the strongest matching excerpts back into the current context.'
+  zh: 跨会话记忆：全文检索所有历史会话（复用 ctx.sessionQuery 的 SQLite FTS5 索引），把最强匹配片段带回当前上下文。

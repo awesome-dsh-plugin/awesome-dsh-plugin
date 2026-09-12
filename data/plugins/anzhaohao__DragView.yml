@@ -1,0 +1,6 @@
+url: https://github.com/anzhaohao/DragView
+name: anzhaohao/DragView
+category: ui
+description:
+  en: 'Drag-and-drop file attachments as Codex-style cards, with in-app PDF/text/video/audio previews and system-default opening for other formats.'
+  zh: '拖拽文件以 Codex 风格附件卡片呈现，支持 PDF/文本/音视频应用内预览，其余格式调用系统默认应用打开。'

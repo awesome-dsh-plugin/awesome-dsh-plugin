@@ -1,0 +1,6 @@
+url: https://github.com/stoneface10/dsh-codex-connect-plus
+name: stoneface10/dsh-codex-connect-plus
+category: model
+description:
+  en: Adds ChatGPT/Codex OAuth-backed Codex models and gpt-image-2 generation/editing to DSH without requiring an OpenAI Platform API key.
+  zh: 为 DSH 添加基于 ChatGPT/Codex OAuth 的 Codex 模型及 gpt-image-2 文生图和编辑能力，无需 OpenAI Platform API Key。

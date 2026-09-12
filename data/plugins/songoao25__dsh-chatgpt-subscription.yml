@@ -1,0 +1,6 @@
+url: https://github.com/songoao25/dsh-chatgpt-subscription
+name: songoao25/dsh-chatgpt-subscription
+category: model
+description:
+  en: Bind your ChatGPT account via official OAuth and chat with ChatGPT models inside DSH, using your Plus/Pro subscription quota.
+  zh: 通过官方 OAuth 绑定你的 ChatGPT 账号，在 DSH 内直接使用 ChatGPT 模型对话，消耗 Plus/Pro 订阅额度。

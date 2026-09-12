@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-pr-description
+name: 988hj7tczd-oss/dsh-pr-description
+category: tools
+description:
+  en: "Analyze the current branch diff and generate a Conventional Commits PR title, motivation/scheme/testing/risk description and a self-review checklist, write PR_DESCRIPTION.md, optionally open the PR via gh."
+  zh: "分析当前分支 diff，生成符合 Conventional Commits 的 PR 标题与动机/方案/影响/测试/风险描述和自审清单，输出 PR_DESCRIPTION.md，可选直接调用 gh 提 PR。"

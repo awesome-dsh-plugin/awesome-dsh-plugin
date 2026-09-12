@@ -1,0 +1,6 @@
+url: https://github.com/WizisCool/dsh-ears
+name: WizisCool/dsh-ears
+category: voice
+description:
+  en: 'Voice input plugin for DeepSeek Harness (dsh): a microphone button in the composer turns speech into a draft transcript, with a choice of speech-recognition backends, optional polish through dsh own LLM routes, and a native settings page.'
+  zh: '面向 DeepSeek Harness (dsh) 的语音输入插件：输入框的麦克风按钮把语音转成草稿文本，支持多种语音识别后端，可选经 dsh 自有 LLM 路由润色，并带原生设置页。'

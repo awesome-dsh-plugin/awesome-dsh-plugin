@@ -1,0 +1,6 @@
+url: https://github.com/Xiaofei-fei/dsh-prompt-history
+name: Xiaofei-fei/dsh-prompt-history
+category: ui
+description:
+  en: 'Terminal-style input for the DSH web composer: Up/Down prompt history (prefix search + Ctrl+R), selection toolbar (copy/quote), right-click paste, toggleable chat TOC.'
+  zh: '为 DSH Web 输入框提供类 Linux shell 的终端式输入：↑/↓ 提示词历史（前缀搜索 + Ctrl+R）、选中工具栏（复制/引用）、右键直接粘贴、可开关的会话目录。'

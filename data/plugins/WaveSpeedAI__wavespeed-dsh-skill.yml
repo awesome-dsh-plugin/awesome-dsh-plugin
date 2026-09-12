@@ -1,0 +1,6 @@
+url: https://github.com/WaveSpeedAI/wavespeed-dsh-skill
+name: WaveSpeedAI/wavespeed-dsh-skill
+category: skill
+description:
+  en: 'Generate and edit AI media (image, video, audio, 3D) with WaveSpeed models via the open-source wavespeed CLI: live catalog search, per-model input-schema introspection, local-file upload with @path markers, and price checks before running.'
+  zh: 通过开源 wavespeed CLI 用 WaveSpeed 模型生成与编辑 AI 媒体（图像、视频、音频、3D）：实时目录搜索、逐模型输入 schema 自省、@path 标记本地文件上传、运行前价格查询。

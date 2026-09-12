@@ -1,0 +1,6 @@
+url: https://github.com/penguin-oo/dsh-pathlink
+name: penguin-oo/dsh-pathlink
+category: ui
+description:
+  en: 'Ctrl+click file paths and links in chat: paths open their folder in the OS file manager (with the file selected), links open in a new browser tab.'
+  zh: 在对话中 Ctrl+点击文件路径与链接：路径在文件管理器中定位所在文件夹，链接在新标签页打开。

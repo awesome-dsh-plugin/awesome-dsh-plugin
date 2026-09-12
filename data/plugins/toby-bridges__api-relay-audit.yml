@@ -1,0 +1,6 @@
+url: https://github.com/toby-bridges/api-relay-audit
+name: toby-bridges/api-relay-audit
+category: security
+description:
+  en: Runs local security audits of AI API relays and LLM proxies from DeepSeek Harness, producing Markdown reports for prompt injection, model substitution signals, tool-call rewriting, error leakage, stream integrity, and profile-gated Web3 risks.
+  zh: 从 DeepSeek Harness 对 AI API 中转站和 LLM 代理运行本地安全审计，生成 Markdown 报告，覆盖提示词注入、模型替换信号、工具调用改写、错误泄漏、流完整性和按 profile 启用的 Web3 风险。

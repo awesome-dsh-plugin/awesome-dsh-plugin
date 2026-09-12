@@ -1,0 +1,6 @@
+url: https://github.com/kuun993/dsh-loop-engine
+name: kuun993/dsh-loop-engine
+category: dev
+description:
+  en: 'Adds a Settings "Loop engine" dropdown that switches which agent loop engine drives sessions — the built-in in-process driver or a hosted Claude Code, Codex, Pi, or Kimi Code engine — with no changes to the harness; the Kimi Code engine streams assistant text and thinking.'
+  zh: '在设置页增加「循环引擎」下拉，切换驱动会话的 agent 循环引擎——内置进程内驱动或托管的 Claude Code、Codex、Pi、Kimi Code 引擎——均无需改动 harness；其中 Kimi Code 引擎支持流式输出与思考。'

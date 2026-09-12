@@ -1,0 +1,6 @@
+url: https://github.com/Dylan37670/dsh-plugin-panel
+name: Dylan37670/dsh-plugin-panel
+category: market
+description:
+  en: In-app DSH plugin marketplace panel with curated and full catalogs, keyword and semantic search, Chinese translation, favorites, installed-state tracking, and install/update/uninstall via the official CLI.
+  zh: DSH 内置插件市场面板：精选与全量目录、关键词与语义搜索、中文翻译、收藏、已安装状态，以及通过官方命令安装、更新和卸载。

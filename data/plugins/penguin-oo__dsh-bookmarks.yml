@@ -1,0 +1,6 @@
+url: https://github.com/penguin-oo/dsh-bookmarks
+name: penguin-oo/dsh-bookmarks
+category: session
+description:
+  en: Bookmark assistant replies with notes and tags; browse every bookmark in one cross-session center and export to Markdown.
+  zh: 收藏 AI 回复（备注/标签），跨会话收藏中心（搜索/筛选/跳回会话），一键导出 Markdown。

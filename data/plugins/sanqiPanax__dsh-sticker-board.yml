@@ -1,0 +1,6 @@
+url: https://github.com/sanqiPanax/dsh-sticker-board
+name: sanqiPanax/dsh-sticker-board
+category: ui
+description:
+  en: 'Fridge-magnet quick-task stickers docked above the composer: one-click sends a preloaded prompt into the current session, grouped long-term/short-term.'
+  zh: 输入框上方的冰箱贴纸栏：把常用任务（科技新闻、GitHub 推荐等）做成贴纸，点击即向当前会话发送预置 prompt 并执行，按长期/短期分组。

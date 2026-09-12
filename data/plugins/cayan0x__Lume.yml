@@ -1,0 +1,6 @@
+url: https://github.com/cayan0x/Lume
+name: cayan0x/Lume
+category: tools
+description:
+  zh: "DSH Desktop 增强插件，给会话装上任务执行纪律与真实关系。纪律层：自适应协议分层（闲聊短版/任务完整版/推理模型精简版）、意图路由（问答/查找/讨论/诊断/执行五类分流，诊断不越权修复）、证据时效（引用日志与旧报错前先核对时间戳与因果）、真实工具结果验证（失败或结果未知不报完成）、连续失败自动纠偏与跨会话复盘回环、上下文压缩感知与状态重锚。人设层：从微信/QQ 聊天记录蒸馏具名角色（语气、口头禅、回复篇幅锚定真实对话统计）、长期记忆与临时记忆自动过期、纠偏自动转风格约定、认可回复摘录为语料、双向反馈随使用收敛、记忆星图可视化、角色卡导出导入。"
+  en: 'DSH Desktop enhancement plugin: task-execution discipline plus a real relationship, per session. Discipline: adaptive protocol tiers (short for chat / full for tasks / lean for reasoning models), intent routing across Q&A, lookup, discussion, diagnosis and execution (diagnosis never fixes unasked), evidence recency (verify timestamps and causality before citing logs or old errors), real tool-result verification (failed or unknown results are never reported as done), self-healing on repeated failures with a cross-session reflection loop, and compaction awareness that re-anchors state after the host condenses history. Persona: distill named characters from WeChat/QQ chat logs with tone, catchphrases and reply length anchored to real conversation statistics; long-term memory with automatic expiry for time-bound facts, corrections captured as style rules, approved replies pinned as corpus, two-way feedback that converges with use, memory star map, and persona card export/import.'

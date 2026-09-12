@@ -1,0 +1,6 @@
+url: https://github.com/Shiye-10Pages/dsh-memory-porter
+name: Shiye-10Pages/dsh-memory-porter
+category: memory
+description:
+  en: 'Brings your existing Claude / ChatGPT history into DSH: instant zero-token import of the memories.json inside a Claude export, local Claude Code transcripts with no export needed, and conversations distilled through the model you already configured in DSH. Every memory carries verbatim evidence checked against the source by code — a paraphrase is dropped and counted, and evidence found only in the assistant turns is always routed to review rather than stored.'
+  zh: '把你在 Claude / ChatGPT 里已有的历史搬进 DSH：Claude 导出包里的 memories.json 零 token 瞬时入库，本机 Claude Code 记录免导出直读，历史对话用你在 DSH 里已配好的模型提纯。每条记忆都带由代码回原文核对的逐字证据——转述会被丢弃并计数，只在 AI 回复里找到的证据一律转人工确认而非直接入库。'

@@ -1,0 +1,6 @@
+url: https://github.com/suomir1995/dsh-link-collect
+name: suomir1995/dsh-link-collect
+category: tools
+description:
+  en: 'Stores bookmarks as local Markdown files in a folder you choose, with a sidebar page for collections and links, library-wide search, automatic favicon downloads, and three agent tools.'
+  zh: '把收藏的链接存成你指定文件夹里的 Markdown 文件，带侧栏页面管理收藏夹与链接、全库搜索、自动抓取图标，以及三个 agent 工具。'

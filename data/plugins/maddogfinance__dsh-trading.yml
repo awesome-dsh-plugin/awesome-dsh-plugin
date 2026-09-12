@@ -1,0 +1,6 @@
+url: https://github.com/maddogfinance/dsh-trading
+name: maddogfinance/dsh-trading
+category: tools
+description:
+  en: 'Research-only trading workbench bundle: typed market-data provider seam with a CSV reference provider, multi-timeframe indicator regime snapshot and OHLCV tools, interactive chart cards in dsh web with provenance-gated model annotations, and a risk-guard denying execution-shaped tool calls at tools/pre-execute.'
+  zh: '只读交易研究工作台 bundle：带类型的行情数据接缝（含 CSV 参考数据源）、多周期指标 regime 快照与 OHLCV 工具、dsh web 交互式 K 线卡（模型标注需溯源并经价格区间校验）、以及在 tools/pre-execute 拦截下单形工具调用的 risk-guard。'

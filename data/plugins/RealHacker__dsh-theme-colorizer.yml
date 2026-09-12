@@ -1,0 +1,6 @@
+url: https://github.com/RealHacker/dsh-theme-colorizer
+name: realhacker/dsh-theme-colorizer
+category: ui                              
+description:
+  en: A Deepseek Harness plugin that gives its UI color themes.
+  zh: Deepseek Harness 的一款插件，可为其用户界面添加颜色主题。

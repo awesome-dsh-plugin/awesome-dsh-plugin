@@ -1,0 +1,7 @@
+# GitHub account connection plugin with a portable proxy/system-CA aware network layer.
+url: https://github.com/Moon-shiyue/dsh-github-connect
+name: Moon-shiyue/dsh-github-connect
+category: git
+description:
+  en: 'Connects your GitHub account to DSH agents from the composer GitHub button (OAuth device flow or personal access token) and lets them call the GitHub API through the github_api tool.'
+  zh: '在对话框左下角一键连接你的 GitHub 账号（OAuth 设备流或 Personal Access Token），之后 AI 可通过 github_api 工具读取和操作你的 GitHub。'

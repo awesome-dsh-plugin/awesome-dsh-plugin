@@ -1,0 +1,6 @@
+url: https://github.com/xswt442-cmd/dsh-instance-manager
+name: xswt442-cmd/dsh-instance-manager
+category: dev
+description:
+  en: 'Sidebar instance manager for DSH web: lists every local dsh instance on ports 3080-3129 (port, PID, uptime, live session count) and starts or gracefully stops them in one click, including Task-Manager-style stop of the current instance.'
+  zh: 侧边栏实例管理面板：统一列出本机 3080–3129 端口的全部 dsh web 实例（端口、PID、运行时长、会话数），一键启动或优雅停止任意实例，含当前实例的任务管理器式停止。

@@ -1,0 +1,6 @@
+url: https://github.com/SeaOf0/dsh-redteam-model
+name: SeaOf0/dsh-redteam-model
+category: security
+description:
+  zh: 面向授权安全研究的 DSH 合集：九个工作模式（redteam 总控、渗透测试、代码审计、二进制分析、攻防评估、免杀对抗、应急溯源、云安全攻防、CTF 解题）与十五个运行时插件，设置页管理台支持一键部署、安装、更新与卸载。
+  en: 'Authorized-security DSH collection: nine work modes (redteam coordinator, pentest, code audit, binary analysis, attack-defense, AV evasion, incident response, cloud security, CTF solving) and fifteen runtime plugins, managed from a settings page with one-click deploy, install, update and uninstall.'

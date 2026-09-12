@@ -1,0 +1,32 @@
+name: Decay scan
+
+# Weekly sweep of every listed entry: repos that are gone, archived, dormant,
+# or have dropped their dsh.bundle manifest. Findings land in a single
+# tracking issue for human review — the scan never removes anything itself.
+
+on:
+  schedule:
+    - cron: '41 3 * * 1' # Mondays, off the :00/:30 herd
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: decay-scan
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: node scripts/scan-decay.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}

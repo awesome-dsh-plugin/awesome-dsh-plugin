@@ -1,0 +1,6 @@
+url: https://github.com/Semidia/dsh-sampling-sliders
+name: Semidia/dsh-sampling-sliders
+category: ui
+description:
+  en: 'Model sampling sliders (temperature / maxTokens) in the composer: override every model request for all providers via the agent/request hook, with hot/persist modes.'
+  zh: 对话输入区的模型采样滑杆（temperature / maxTokens）：通过 agent/request 钩子对所有供应商的每次请求生效，支持热调/持久化两种模式。

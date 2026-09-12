@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-finance-data
+name: 863683348/dsh-plugin-finance-data
+category: tools
+description:
+  en: 'Finance data toolkit for DSH agents: number and currency formatting (incl. Chinese wan/yi units), return and CAGR math, valuation and profitability ratios, PV/FV, risk metrics, and a data-quality checklist.'
+  zh: 为 DSH agent 提供金融数据工具包：数字与货币格式化（含中文万/亿单位）、收益与年化计算、估值与盈利比率、现值/终值、风险指标与数据质量清单。

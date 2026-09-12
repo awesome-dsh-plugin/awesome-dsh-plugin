@@ -1,0 +1,6 @@
+url: https://github.com/Icstick/dsh-adaptive-context
+name: Icstick/dsh-adaptive-context
+category: memory
+description:
+  zh: "带治理的长期记忆：只追加证据账本、写入闸门、7 级权威声明与取代链，pre-step 按领域配额预算注入。"
+  en: "Governed long-term memory for DeepSeek Harness: append-only evidence ledger with write guards, 7-tier authority claims, supersede chains, and budgeted pre-step injection with per-domain quotas."

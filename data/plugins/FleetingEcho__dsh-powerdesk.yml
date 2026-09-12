@@ -1,0 +1,6 @@
+url: https://github.com/FleetingEcho/dsh-powerdesk
+name: FleetingEcho/dsh-powerdesk
+category: dev
+description:
+  en: 'A dockable IDE workbench for the DSH web UI: a GPU-accelerated terminal (restty renderer over a Rust PTY), a CodeMirror editor, a file explorer, notes, a sandboxed browser, and ripgrep content search.'
+  zh: 'DSH Web 界面的可停靠 IDE 工作台：GPU 加速终端（restty 渲染器 + Rust PTY）、CodeMirror 编辑器、文件浏览器、笔记、沙箱浏览器，以及基于 ripgrep 的内容搜索。'

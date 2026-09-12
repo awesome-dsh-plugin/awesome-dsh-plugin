@@ -1,0 +1,6 @@
+url: https://github.com/BananaSoldier01/dsh-tidychat
+name: BananaSoldier01/dsh-tidychat
+category: session
+description:
+  en: 'Fold completed turns down to their final conclusions, insert a divider line between thinking and text, and an adaptive left-edge navigation rail with hover summaries and click-to-jump; optional idle-time loading of earlier history and one-click diagnostic report to GitHub issues.'
+  zh: '已完成轮次自动折叠只留最终结论、思考与正文之间插入分隔线、自适应左缘定位条（悬停摘要 + 点击跳转）；可选空闲时自动加载更早历史，异常时可一键生成诊断报告提交 GitHub issue。'

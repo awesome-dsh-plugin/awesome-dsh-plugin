@@ -1,0 +1,6 @@
+url: https://github.com/HOWILLMAKEIT/dsh-model-context-catalog
+name: HOWILLMAKEIT/dsh-model-context-catalog
+category: model
+description:
+  en: 'Configure the contextWindow for models registered in dsh, so long sessions are no longer misjudged as context overflow.'
+  zh: '为 dsh 已注册的模型配置上下文窗口，避免长会话被误判为上下文溢出。'

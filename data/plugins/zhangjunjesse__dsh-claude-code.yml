@@ -1,0 +1,6 @@
+url: https://github.com/zhangjunjesse/dsh-claude-code
+name: zhangjunjesse/dsh-claude-code
+category: tools
+description:
+  en: 'Delegates a self-contained coding task to the local Claude Code subscription through the official Claude Agent SDK, and adds a session tab with live output, cost and remaining quota.'
+  zh: '把自包含的编码任务委派给本机 Claude Code 订阅执行（走官方 Claude Agent SDK），并在会话里新增一个标签页，实时显示输出、费用与剩余额度。'

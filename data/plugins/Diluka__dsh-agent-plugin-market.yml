@@ -1,0 +1,6 @@
+url: https://github.com/Diluka/dsh-agent-plugin-market
+name: Diluka/dsh-agent-plugin-market
+category: market
+description:
+  en: Manage Git-backed DSH plugin markets, installed agent skills and optional Codex hooks from the web settings page.
+  zh: 在网页设置页管理基于 Git 的 DSH 插件市场、已安装的 agent 技能和可选 Codex hooks。

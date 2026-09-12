@@ -1,0 +1,6 @@
+url: https://github.com/leavestring/awesome-dsh-background-plugin
+name: leavestring/awesome-dsh-background-plugin
+category: theme
+description:
+  en: 'DSH Web background settings: upload a local image or pick a preset ambiance, with live preview and persistent settings.'
+  zh: '为 DSH Web 设置背景：上传本地图片或选择预设氛围，实时预览且设置持久化。'

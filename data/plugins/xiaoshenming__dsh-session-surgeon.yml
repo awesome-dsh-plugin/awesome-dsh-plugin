@@ -1,0 +1,6 @@
+url: https://github.com/xiaoshenming/dsh-session-surgeon
+name: xiaoshenming/dsh-session-surgeon
+category: session
+description:
+  en: Repair DeepSeek Harness sessions that refuse to load, with a sidebar Session surgeon overlay and dry-run repair.
+  zh: 修好打不开的 DeepSeek Harness 会话，侧栏「会话医生」可查看对话并默认 dry-run 修复。

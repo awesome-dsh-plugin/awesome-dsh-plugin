@@ -1,0 +1,6 @@
+url: https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/evidence-first
+name: jinguanghai/deepseek-harness-forge-plugins#evidence-first
+category: dev
+description:
+  en: 'Evidence-first guard: warns the agent when it claims success without a matching tool-execution record in recent context.'
+  zh: '证据铁律守卫：模型声称成功但上下文中没有对应工具执行记录时，自动注入警告。'

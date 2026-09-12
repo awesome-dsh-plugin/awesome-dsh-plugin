@@ -1,0 +1,6 @@
+url: https://github.com/zoumutou/dsh-web-preview
+name: zoumutou/dsh-web-preview
+category: ui
+description:
+  en: 'Side web-preview panel: local static hosting, Markdown/code/image preview, one-click run of non-static projects (Cargo/npm/Go/Python) with live logs, drag files into the chat (saved to the workspace), element mark & annotate, workspace file search on 404, and link-click takeover into the side panel.'
+  zh: 侧边网页预览面板：本地静态托管、Markdown/代码/图片预览、非静态项目一键运行（Cargo/npm/Go/Python）实时日志、文件直接拖入对话（保存到工作区）、网页元素标记批注、404 时工作区文件搜索、链接点击接管到侧边预览。

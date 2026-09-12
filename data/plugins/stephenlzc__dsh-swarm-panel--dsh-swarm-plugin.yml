@@ -1,0 +1,6 @@
+url: https://github.com/stephenlzc/dsh-swarm-panel/tree/main/dsh-swarm-plugin
+name: stephenlzc/dsh-swarm-panel#dsh-swarm-plugin
+category: ui
+description:
+  en: Conversation Flow observability for DeepSeek Harness swarms, with topology, routed-message inspection, HITL pauses, Live follow, and child-session navigation.
+  zh: DeepSeek Harness swarm 的 Conversation Flow 可观测性，支持查看拓扑、检查路由消息、HITL 暂停、Live 跟随和子会话导航。

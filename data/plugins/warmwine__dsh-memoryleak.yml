@@ -1,0 +1,6 @@
+url: https://github.com/warmwine/dsh-memoryleak
+name: warmwine/dsh-memoryleak
+category: tools
+description:
+  en: 'Notes and todos as plain Markdown files in your workspace: type /ml plus a sentence to jot into today''s journal; todos come in three flavors — deadline, sleep-until-a-date (auto-wakes when due), and anytime; /ml view fuzzy-opens any file with a few keystrokes. Zero tokens throughout — nothing goes through the model, and your notes stay ordinary local files that git and any editor can read.'
+  zh: 把随手记和待办写进工作区的 Markdown 文件里：/ml 加一句话就记进当天日志；待办分三种——截止日、睡到某天自动唤醒、随时；/ml view 打几个字母就能模糊打开任意文件。全程零 token，不经过大模型；笔记就是普通的本地文件，git 和任何编辑器都能直接用。

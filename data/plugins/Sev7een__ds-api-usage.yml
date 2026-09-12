@@ -1,0 +1,6 @@
+url: https://github.com/Sev7een/ds-api-usage
+name: Sev7een/ds-api-usage
+category: usage
+description:
+  en: DeepSeek API balance and 24-hour usage dashboard in Settings, with estimated spend, token counts, request counts, and an hourly timeline.
+  zh: 在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。

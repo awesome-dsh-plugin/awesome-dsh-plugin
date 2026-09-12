@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-a11y-scan
+name: 988hj7tczd-oss/dsh-a11y-scan
+category: tools
+description:
+  en: "Native WCAG accessibility scanner: runs axe-core over local HTML files / build output / URLs and reports violations (rule id, impact, WCAG 2.1 mapping, element targeting, fix suggestions) as Markdown/HTML/JSON. Read-only, CI-able."
+  zh: "原生 WCAG 无障碍扫描工具：对本地 HTML / 构建产物 / URL 运行 axe-core，输出规则 id、impact、WCAG 2.1 映射、元素定位与修复建议（Markdown/HTML/JSON），只读可进 CI。"

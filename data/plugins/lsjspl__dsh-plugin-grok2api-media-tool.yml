@@ -1,0 +1,6 @@
+url: https://github.com/lsjspl/dsh-plugin-grok2api-media-tool
+name: lsjspl/dsh-plugin-grok2api-media-tool
+category: vision
+description:
+  en: Gives dsh the ability to generate images and videos through the grok2api API.
+  zh: 让 dsh 通过 grok2api 的 API 获得生成图片与视频能力。

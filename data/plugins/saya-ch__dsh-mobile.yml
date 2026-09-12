@@ -1,0 +1,6 @@
+url: https://github.com/saya-ch/dsh-mobile
+name: saya-ch/dsh-mobile
+category: remote
+description:
+  en: "Access DeepSeek Harness from the Android app or a mobile browser with secure LAN and remote connections, persistent device pairing, and a customizable mobile interface."
+  zh: "通过 Android App 或手机浏览器访问 DeepSeek Harness，支持安全局域网连接、远程访问、持久设备配对和可自定义移动界面。"

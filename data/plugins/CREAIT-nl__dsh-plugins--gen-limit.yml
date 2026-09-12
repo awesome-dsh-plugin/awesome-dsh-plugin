@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/gen-limit
+name: CREAIT-nl/dsh-plugins#gen-limit
+category: model
+description:
+  en: 'Per provider/model generation concurrency, with a settings card: a cap on how many sessions may stream at once, enforced at the stream and again at subagent spawn, where a fan-out past the cap waits in a FIFO queue instead of failing.'
+  zh: '按提供方/模型限制并发生成，并附带设置卡片：限定同时进行流式生成的会话数，在流式调用与子代理派生两处强制执行；超出上限的扇出会进入 FIFO 队列等待，而不是直接失败。'

@@ -1,0 +1,27 @@
+{
+  "name": "awesome-dsh-plugin",
+  "version": "0.1.0",
+  "description": "A curated list of DeepSeek Harness (dsh) plugins · DeepSeek Harness 插件精选列表",
+  "homepage": "https://awesome-dsh-plugin.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.git"
+  },
+  "license": "CC0-1.0",
+  "files": [
+    "README.md",
+    "README.zh.md"
+  ],
+  "keywords": [
+    "awesome",
+    "awesome-list",
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek"
+  ],
+  "devDependencies": {
+    "js-yaml": "^5.3.0",
+    "marked": "^18.0.9"
+  }
+}

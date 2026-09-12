@@ -1,0 +1,6 @@
+url: https://github.com/SenmuuuuW/dsh-whale-report
+name: SenmuuuuW/dsh-whale-report
+category: usage
+description:
+  en: 'DeepTrace — deterministic agent reports from session logs (daily/weekly/monthly/yearly/custom): cost & token breakdown, 8 insight rules, collaboration review, live provider balance, PDF/PNG/HTML export; read-only, never rewrites history.'
+  zh: '深迹 DeepTrace — 从会话日志生成日报/周报/月报/年报/自定义区间报告：成本与 Token 拆解、8 条确定性洞察、协作复盘、实时模型余额、PDF/PNG/HTML 导出；只读，绝不改写历史。'

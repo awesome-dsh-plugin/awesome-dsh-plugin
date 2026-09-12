@@ -1,0 +1,7 @@
+url: https://github.com/KarlOfLaw/dsh-goal-mode-enhance
+name: KarlOfLaw/dsh-goal-mode-enhance
+category: ui
+description:
+  en: 'Visual goal lifecycle for the DSH web UI: a composer dock to create, multiline-edit, pause, resume, complete and clear session goals with live round progress, plus a phase-dot composer entry and a settings-page goal overview.'
+  zh: '为 DSH Web 界面提供可视化的会话目标生命周期：composer 上方的目标栏支持创建、多行编辑、暂停、恢复、完成与清除并实时显示轮次进度，工具行入口带阶段色点，设置页提供目标总览。'
+tarball: https://github.com/KarlOfLaw/dsh-goal-mode-enhance/releases/download/v0.1.0/dsh-goal-mode-0.1.0.tgz

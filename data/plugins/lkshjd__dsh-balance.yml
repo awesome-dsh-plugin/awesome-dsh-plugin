@@ -1,0 +1,6 @@
+url: https://github.com/lkshjd/dsh-balance
+name: lkshjd/dsh-balance
+category: usage
+description:
+  en: 'Real-time DeepSeek account balance readout in the session header: host /api/balance route resolves the API key through the credentials seam (never sent to the browser), 60-second auto-poll plus manual refresh.'
+  zh: '会话标题栏实时显示 DeepSeek 账户余额：host 端 /api/balance 路由经凭据 seam 解析 API key（密钥绝不下发浏览器），60 秒自动轮询并支持手动刷新。'

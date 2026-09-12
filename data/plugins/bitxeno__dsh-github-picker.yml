@@ -1,0 +1,6 @@
+url: https://github.com/bitxeno/dsh-github-picker
+name: bitxeno/dsh-github-picker
+category: ui
+description:
+  en: 'Composer GitHub picker: click the GitHub icon at the bottom-right of the input box to search the workspace repository''s issues and pull requests via the gh CLI, and insert the reference as a URL or @owner/repo#number mention.'
+  zh: 输入框右下角 GitHub 图标打开当前仓库的 issue/PR 搜索弹窗，数据来自本机 gh CLI，点选即以 URL 或 @owner/repo#number 形式插入引用。

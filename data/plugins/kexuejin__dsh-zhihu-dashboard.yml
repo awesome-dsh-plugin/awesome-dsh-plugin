@@ -1,0 +1,6 @@
+url: https://github.com/kexuejin/dsh-zhihu-dashboard
+name: kexuejin/dsh-zhihu-dashboard
+category: tools
+description:
+  en: 'Zhihu (知乎) dashboard: hot list with trend arrows, follow feed (favorites/creations/followees), post tracking (question/keyword/person) with auto-briefs, and five agent tools (zhihu_search/hot/answer/global_search/followees).'
+  zh: 知乎面板：热榜（带趋势标记）、关注动态（收藏/创作/关注的人）、帖子追踪（问题/关键词/关注的人，支持自动创意简报），并提供 5 个对话工具（zhihu_search / hot / answer / global_search / followees）。

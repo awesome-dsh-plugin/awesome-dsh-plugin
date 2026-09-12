@@ -1,0 +1,6 @@
+url: https://github.com/CHplus0/dsh-shell-command
+name: CHplus0/dsh-shell-command
+category: tools
+description:
+  en: 'Claude Code-style shell integration: /! for single-command analysis and /terminal for interactive PTY sessions with on-demand history reference.'
+  zh: Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。

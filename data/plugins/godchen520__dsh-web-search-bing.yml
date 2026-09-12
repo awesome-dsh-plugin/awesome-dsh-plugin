@@ -1,0 +1,6 @@
+url: https://github.com/godchen520/dsh-web-search-bing
+name: godchen520/dsh-web-search-bing
+category: browser
+description:
+  en: 'Bing-backed web search provider for the built-in web_search tool: scrapes the public cn.bing.com HTML results page with no API key, reachable from mainland China, and keeps searches off the model''s own search quota. Endpoint configurable.'
+  zh: 为内置 web_search 工具提供 Bing 搜索源：直接解析 cn.bing.com 的公开 HTML 结果页，无需 API Key，国内可直连，搜索不再消耗模型自带的搜索额度。端点可配置。

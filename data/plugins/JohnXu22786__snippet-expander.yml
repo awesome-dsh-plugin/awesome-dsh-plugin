@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/snippet-expander
+name: JohnXu22786/snippet-expander
+category: tools
+description:
+  en: 'Expands #tag shorthand into snippet-library text before messages are sent; multi-library, aliases, variables and recursion guards.'
+  zh: '发送前把消息中的 #tag 展开为片段库配置的正文；支持多片段库、别名、变量占位符与递归防护。'

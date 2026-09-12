@@ -1,0 +1,6 @@
+url: https://github.com/Willmylife/dsh-dynamic-wallpaper
+name: Willmylife/dsh-dynamic-wallpaper
+category: theme
+description:
+  en: Animated wallpaper plugin with 8 canvas backgrounds (particles, meteors, starfield, waves, rain, bubbles, matrix, aurora) plus custom video import, and speed/density/opacity/blur sliders with localStorage persistence.
+  zh: 动态壁纸插件：8 种内置 Canvas 壁纸（粒子、流星雨、星际穿梭、波光、雨幕、气泡、字符雨、极光）加自定义视频背景，支持速度/密度/遮罩/模糊调节，配置持久化。

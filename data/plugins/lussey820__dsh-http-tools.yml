@@ -1,0 +1,6 @@
+url: https://github.com/lussey820/dsh-http-tools
+name: lussey820/dsh-http-tools
+category: tools
+description:
+  en: 'HTTP/API debugging toolset: full-control HTTP requests (method/headers/body/auth), curl command parsing and one-step execution, in-session request history with side-by-side response comparison, pagination-aware Link headers, and DeepSeek-branded UI cards (optional dsh-http-tools-ui).'
+  zh: HTTP/API 调试工具集：全参数 HTTP 请求（method/headers/body/auth）、curl 命令解析与一步执行、会话内请求历史与响应并排对比、分页 Link 头透出；配合可选 dsh-http-tools-ui 提供 DeepSeek 风格工具卡片。

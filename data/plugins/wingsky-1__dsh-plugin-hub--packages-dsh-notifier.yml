@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-notifier
+name: wingsky-1/dsh-plugin-hub#packages/dsh-notifier
+category: notify
+description:
+  en: 'Approval/completion/error event notifications: browser Notification plus native toasts (PowerShell WinRT on Windows, notify-send on Linux/macOS), quiet hours, same-kind error merging, and an independent switch for subagent completion.'
+  zh: 审批/完成/错误事件通知：浏览器 Notification + 系统原生 toast（Windows PowerShell WinRT、Linux/macOS notify-send），支持免打扰时段、同类错误合并、子代理完成独立开关。

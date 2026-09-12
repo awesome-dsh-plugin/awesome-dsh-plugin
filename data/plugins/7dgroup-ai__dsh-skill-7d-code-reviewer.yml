@@ -1,0 +1,6 @@
+url: https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer
+name: 7dgroup-ai/dsh-skill-7d-code-reviewer
+category: skill
+description:
+  en: 'Template-driven code review skill: five-step review flow, critical/medium/minor severity grading, four-dimension scoring (quality, security, performance, maintainability), dual text and HTML report output, and an on-demand reference knowledge base.'
+  zh: 模板驱动的代码审查技能：五步审查流程、严重/中等/轻微三级分级、四维评分（质量、安全、性能、可维护性），同时输出文本与 HTML 报告，内置按需加载的参考知识库。

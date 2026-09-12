@@ -1,0 +1,6 @@
+url: https://github.com/xiaoshi7915/dsh-kb-manager
+name: xiaoshi7915/dsh-kb-manager
+category: tools
+description:
+  en: 'Local knowledge base manager for DSH agents: multi-format import, CJK-aware chunking, sqlite-vec vector + BM25 hybrid search with bge-reranker-base rerank, snapshots, kbpack export/import and cross-KB search — 22 agent tools plus a Web panel.'
+  zh: 本地知识库管理：多格式导入、CJK 感知分块、sqlite-vec 向量 + BM25 混合检索与 bge-reranker-base 重排序、快照恢复、kbpack 导入导出与跨库检索，提供 22 个 agent 工具与 Web 面板。

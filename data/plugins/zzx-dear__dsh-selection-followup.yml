@@ -1,0 +1,6 @@
+url: https://github.com/zzx-dear/dsh-selection-followup
+name: zzx-dear/dsh-selection-followup
+category: ui
+description:
+  en: 'Select any text in a DSH chat reply to get a floating Follow-up/Copy pill: one click quotes the selection into the composer so you can type your own follow-up question, or copies it.'
+  zh: '选中聊天回复中的任意文字，浮出「追问/复制」气泡：一键把选中内容作为引用填入输入框（问题由你输入），或一键复制。另附安装与实现文档。'

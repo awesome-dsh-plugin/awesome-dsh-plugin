@@ -1,0 +1,6 @@
+url: https://github.com/Yiipu/dsh-agentmemory
+name: Yiipu/dsh-agentmemory
+category: memory
+description:
+  en: 'DSH ↔ agentmemory session-memory bridge: mirrors session lifecycle into a local agentmemory daemon (REST), exposes memory_recall / memory_remember tools, and injects a per-session memory context window via agent/pre-step.'
+  zh: DSH ↔ agentmemory 会话记忆桥：把会话生命周期镜像到本地 agentmemory 守护进程（REST），提供 memory_recall / memory_remember 工具，并通过 agent/pre-step 按会话注入记忆上下文窗口。

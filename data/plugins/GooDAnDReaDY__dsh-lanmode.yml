@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-lanmode
+name: GooDAnDReaDY/dsh-lanmode
+category: remote
+description:
+  en: "LAN and reverse-proxy access to the DeepSeek Harness web UI: returns the settings service on pages that are not localhost, fills in the web APIs a browser withholds over plain HTTP, and can open a listener of its own."
+  zh: "为 DeepSeek Harness 网页 UI 提供局域网与反向代理访问：在非 localhost 页面返回设置服务，补齐浏览器在纯 HTTP 下限制的 Web API，并可自行开启监听端口。"

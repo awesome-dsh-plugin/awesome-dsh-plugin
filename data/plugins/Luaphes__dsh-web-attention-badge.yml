@@ -1,0 +1,6 @@
+url: https://github.com/Luaphes/dsh-web-attention-badge
+name: Luaphes/dsh-web-attention-badge
+category: ui
+description:
+  en: 'Attention reminders: frame badge, tab-title count, and a status-colored whale favicon for sessions waiting for input or finished unopened.'
+  zh: 会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。

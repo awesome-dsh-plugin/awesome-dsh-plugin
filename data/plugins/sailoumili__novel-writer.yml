@@ -1,0 +1,6 @@
+url: https://github.com/sailoumili/novel-writer
+name: sailoumili/novel-writer
+category: workflow
+description:
+  en: 'Installs a multi-agent novel-writing preset for DeepSeek Harness: one conductor agent dispatches five specialized subagents — world-building, plotting, character management, prose writing, and QA review.'
+  zh: '为 DeepSeek Harness 安装一个多智能体小说创作预设：一个统筹队长派单五个专职子代理——架构世界、策划剧情、管理人物、执笔写文、质检复核。'

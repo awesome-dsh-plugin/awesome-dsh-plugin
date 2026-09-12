@@ -1,0 +1,6 @@
+url: https://github.com/452926826/dsh-ssh-logs
+name: 452926826/dsh-ssh-logs
+category: remote
+description:
+  en: Read and search bounded log output from allowlisted SSH servers and log roots without exposing arbitrary remote commands.
+  zh: 从白名单 SSH 服务器和日志根目录读取或搜索有界日志内容，不开放任意远程命令。

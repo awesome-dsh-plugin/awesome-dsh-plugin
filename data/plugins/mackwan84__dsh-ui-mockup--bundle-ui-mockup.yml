@@ -1,0 +1,6 @@
+url: https://github.com/mackwan84/dsh-ui-mockup/tree/main/bundle/ui-mockup
+name: mackwan84/dsh-ui-mockup#ui-mockup
+category: ui
+description:
+  en: Generates UI wireframes and high-fidelity mockups in DeepSeek Harness with selectable DashScope and Volcengine image providers.
+  zh: 在 DeepSeek Harness 中使用可切换的阿里云百炼与火山方舟图像服务生成 UI 线框图和高保真设计稿。

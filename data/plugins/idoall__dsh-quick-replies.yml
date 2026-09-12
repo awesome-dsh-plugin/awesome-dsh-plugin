@@ -1,0 +1,6 @@
+url: https://github.com/idoall/dsh-quick-replies
+name: idoall/dsh-quick-replies
+category: ui
+description:
+  en: 'Manageable one-tap text chips above the session composer; idle sessions queue the message and running sessions steer at the next safe boundary without rewriting the draft.'
+  zh: 在会话输入区上方提供可管理的一点即发文本 chip；空闲时 queue、运行中 steer，不改写草稿。

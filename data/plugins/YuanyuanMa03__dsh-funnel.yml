@@ -1,0 +1,6 @@
+url: https://github.com/YuanyuanMa03/dsh-funnel
+name: YuanyuanMa03/dsh-funnel
+category: tools
+description:
+  en: 'Ingestion-time tool-output curation: keeps error and warning lines plus head and tail, spills the full text to disk with a pointer the model can read back; covers every text tool, small results pass through untouched.'
+  zh: 摄入时点的工具输出治理：保留 error/warning 行与头尾，全文落盘留指针供模型按需读回；覆盖所有返回文本的工具，小结果原样通过。

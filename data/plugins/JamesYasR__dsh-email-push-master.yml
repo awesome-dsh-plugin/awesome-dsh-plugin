@@ -1,0 +1,6 @@
+url: https://github.com/JamesYasR/dsh-email-push-master
+name: JamesYasR/dsh-email-push-master
+category: notify
+description:
+  en: Email reminders from your DSH agent when you are away, with stable SMTP (no 535 retry loop), connect and idle timeouts, and a --check self-test.
+  zh: 你不在电脑前时由 agent 邮件提醒你：稳定 SMTP（不重试 535）、连接与空闲超时，并带 --check 自检。

@@ -1,0 +1,6 @@
+url: https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts
+name: ppy-web/dsh-plugin-xiaomi-mimo-tts
+category: voice
+description:
+  en: Adds Xiaomi MiMo text-to-speech controls for finalized assistant messages, with preset voices and custom voice design.
+  zh: 为 DSH Web 助手回复提供小米 MiMo 语音朗读，支持预置音色和自定义音色。

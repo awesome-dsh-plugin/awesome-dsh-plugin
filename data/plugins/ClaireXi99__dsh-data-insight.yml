@@ -1,0 +1,6 @@
+url: https://github.com/ClaireXi99/dsh-data-insight
+name: ClaireXi99/dsh-data-insight
+category: tools
+description:
+  en: 'Data analysis toolkit: CSV/TSV/JSON profiling, IQR and z-score anomaly detection, structured summarization with quality issues, and code-free filter/group/aggregate queries.'
+  zh: 数据分析工具包：CSV/TSV/JSON 数据画像、IQR 与 z-score 异常检测、带质量问题提示的结构化摘要、以及无需写代码的筛选/分组/聚合查询。

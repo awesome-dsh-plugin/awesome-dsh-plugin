@@ -1,0 +1,6 @@
+url: https://github.com/cindyguyuehu123/dsh-webchatlike
+name: cindyguyuehu123/dsh-webchatlike
+category: session
+description:
+  en: 'Bring the deepseek.com web/app chat experience to DSH: edit your prompt and regenerate answers in place, with a per-message <i/N> version pager (tree model, stable across conversations).'
+  zh: 更贴近 deepseek 网页版/App 的聊天体验：原位编辑提问、重新生成回复、每条消息带 <i/N> 版本翻页器（树状版本模型，跨对话保持稳定）。

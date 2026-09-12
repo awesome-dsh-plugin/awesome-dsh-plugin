@@ -1,0 +1,6 @@
+url: https://github.com/akqwpeter-prog/skill-bartender
+name: akqwpeter-prog/skill-bartender
+category: skill
+description:
+  en: Task-to-skill pairing meta-skill with a laziness ladder for minimal loading, a user-editable routing table, and a quarantine, SkillSpector scan, human-approval install flow.
+  zh: 任务到技能配对元技能：懒人阶梯最小化加载、可编辑路由表、隔离-SkillSpector 扫描-人工确认的安装流程。

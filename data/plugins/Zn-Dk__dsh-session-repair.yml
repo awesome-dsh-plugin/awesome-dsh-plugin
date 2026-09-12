@@ -1,0 +1,6 @@
+url: https://github.com/Zn-Dk/dsh-session-repair
+name: Zn-Dk/dsh-session-repair
+category: session
+description:
+  en: 'Diagnose and safely repair corrupted DSH session history: raw zstd/JSONL validation, tool-call ID repair, single-slot pre-repair backup, restore, and an audit trail.'
+  zh: 诊断并安全修复损坏的 DSH 会话历史：raw zstd/JSONL 校验、tool-call ID 修复、单槽 pre-repair 备份与恢复、审计记录。

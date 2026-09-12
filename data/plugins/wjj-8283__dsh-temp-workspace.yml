@@ -1,0 +1,6 @@
+url: https://github.com/wjj-8283/dsh-temp-workspace
+name: wjj-8283/dsh-temp-workspace
+category: session
+description:
+  en: "Temporary workspace for DSH web — one click creates a throwaway workspace whose conversations are deleted at the next restart (immediately or after a delay, optionally behind a confirm dialog). Pin a temp workspace to keep it: its files move into the folder you pick, its title becomes that folder's name, its conversations migrate, and a real host-level restart re-indexes them."
+  zh: "DSH web 临时工作区：一键创建一次性工作区，下次重启自动清空其全部对话（可立即/延迟删除，也可先弹确认框）。点击图钉可永久保留——文件移入所选文件夹、以文件夹名为标题、对话一并迁移，并触发真实的宿主级重启重新索引。"

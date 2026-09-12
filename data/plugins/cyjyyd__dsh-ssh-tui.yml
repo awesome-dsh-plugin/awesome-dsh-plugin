@@ -1,0 +1,6 @@
+url: https://github.com/cyjyyd/dsh-ssh-tui
+name: cyjyyd/dsh-ssh-tui
+category: ui
+description:
+  en: 'SSH-friendly DeepSeek Harness terminal: plain ANSI, incremental redraws, no browser.'
+  zh: 给跳板机和高延迟 SSH 用的 DeepSeek Harness 终端：纯 ANSI、增量重绘，不需要浏览器。

@@ -1,0 +1,6 @@
+url: https://github.com/HuiHuitie-zhu/dsh-check-update
+name: HuiHuitie-zhu/dsh-check-update
+category: dev
+description:
+  en: 'Update checker (npm edition): a settings page comparing local and latest versions of @deepseek-ai/dsh and every installed plugin, with a red-dot nav reminder and ready-made update commands.'
+  zh: 更新检查器（npm 版）：设置页对比 @deepseek-ai/dsh 与已装插件的本地/最新版本，有更新时导航红点提醒，并直接给出更新命令。

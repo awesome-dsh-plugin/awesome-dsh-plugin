@@ -1,0 +1,6 @@
+url: https://github.com/zmh2000829/dsh-web-search-multi
+name: zmh2000829/dsh-web-search-multi
+category: tools
+description:
+  en: Selectable SearXNG, Brave, Tavily, Gemini Search Grounding, or Wikipedia backend for the native web_search tool, with Web settings and no implicit fallback.
+  zh: 为原生 web_search 工具提供可选的 SearXNG、Brave、Tavily、Gemini 搜索溯源或 Wikipedia 后端，支持 Web 设置且不进行隐式回退。

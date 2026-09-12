@@ -1,0 +1,6 @@
+url: https://github.com/savageops/dsh-rich-tracking
+name: savageops/dsh-rich-tracking
+category: tools
+description:
+  en: 'Percent-progress scoreboard docked below the todo pill: tracking_write rows with evidence-bound percents, host-captured git checkpoints with before/after deltas, and pursue/align/dismiss actions that reach the agent as instructions.'
+  zh: 'todo 胶囊下方的进度记分板：百分比行必须带工件证据，检查点由宿主抓取 git 状态，pursue/align/dismiss 直接送达 agent 下一步。'

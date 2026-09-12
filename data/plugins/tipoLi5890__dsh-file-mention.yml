@@ -1,0 +1,6 @@
+url: https://github.com/tipoLi5890/dsh-file-mention
+name: tipoLi5890/dsh-file-mention
+category: ui
+description:
+  en: 'Session-scoped @file/@folder mentions in the composer with Git-aware indexing, drag-drop and paste managed uploads, and validated path markers.'
+  zh: 输入框内 session 范围的 @文件/@文件夹提及：Git 感知索引、拖放与粘贴受管上传、经校验的路径标记。

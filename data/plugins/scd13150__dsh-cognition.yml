@@ -1,0 +1,6 @@
+url: https://github.com/scd13150/dsh-cognition
+name: scd13150/dsh-cognition
+category: memory
+description:
+  en: 'Project memory for coding agents on DeepSeek Harness: similar past edits surface as precedents, out-of-scope edits are blocked, and cognition persists across sessions (47 upstream-verified fixes, gold-free 20-task run).'
+  zh: 给 DSH agent 的项目记忆:历史相似编辑作为先例出现、越界修改被 scope 锁拦下、认知跨会话持续积累(47 次上游验收修复、去 gold 化 20/20)。

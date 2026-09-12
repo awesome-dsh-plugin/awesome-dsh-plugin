@@ -1,0 +1,6 @@
+url: https://github.com/baixianger/dsh-bridge
+name: baixianger/dsh-bridge
+category: session
+description:
+  en: Local cross-session messaging for DSH agents, with discovery, cold-session wake-up delivery, and auditable message history.
+  zh: 面向 DSH Agent 的本地跨会话消息桥：支持会话发现、冷会话唤醒投递与可审计消息记录。

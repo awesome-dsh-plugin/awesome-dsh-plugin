@@ -1,0 +1,6 @@
+url: https://github.com/NagasakiSoyo-ui/dsh-llm-deepseek-vision
+name: NagasakiSoyo-ui/dsh-llm-deepseek-vision
+category: vision
+description:
+  en: 'Vision-augmented DeepSeek adapter: a vision-capable model describes image input, then a text-only DeepSeek model reasons over the description.'
+  zh: 视觉增强的 DeepSeek 适配器：由视觉模型把图片描述成文字，纯文本 DeepSeek 模型再基于描述推理。

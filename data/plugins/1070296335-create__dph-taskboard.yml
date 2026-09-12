@@ -1,0 +1,6 @@
+url: https://github.com/1070296335-create/dph-taskboard
+name: 1070296335-create/dph-taskboard
+category: ui
+description:
+  en: 'Session-based task board in the sidebar: drag sessions into todo/doing/review/done columns, create sessions with model and reasoning-effort selection, trash with restore, notes, export/import.'
+  zh: 侧边栏会话化任务看板：拖拽会话到待办/进行中/评审中/已完成四列，新建会话可选模型与推理强度，回收站可恢复，支持备注与导出导入。

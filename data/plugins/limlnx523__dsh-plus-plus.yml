@@ -1,0 +1,7 @@
+url: https://github.com/limlnx523/dsh-plus-plus
+name: limlnx523/dsh-plus-plus
+category: usage
+description:
+  en: "Adds a /dshpp slash command that reports session and token usage, cache-hit rate, and estimated cost from harness session logs; the repo also ships a CLI and local web console for lifecycle, provider, session, and plugin-security management."
+  zh: "新增 /dshpp 斜杠命令，从 Harness 会话日志汇总会话数与 token 用量、缓存命中率与估算成本；同仓库还附带用于生命周期、Provider、会话与插件安全管理的 CLI 与本地 Web 控制台。"
+# resubmit-health-check

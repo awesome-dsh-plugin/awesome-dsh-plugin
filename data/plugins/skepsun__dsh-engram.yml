@@ -1,0 +1,6 @@
+url: https://github.com/skepsun/dsh-engram
+name: skepsun/dsh-engram
+category: memory
+description:
+  en: Zero-LLM auto-capture and a symbolic \[ENGRAM\] index with progressive disclosure, an ESR-lite task/evidence protocol (esr_task / esr_node / esr_close / esr_link), and per-workspace usage telemetry with an offline recall benchmark (npm run eval).
+  zh: 零 LLM 自动捕获 + 符号化 \[ENGRAM\] 索引渐进披露，配 ESR-lite 任务/证据闭环（esr_task / esr_node / esr_close / esr_link）、按工作区的真实使用遥测与离线召回基准（npm run eval）。

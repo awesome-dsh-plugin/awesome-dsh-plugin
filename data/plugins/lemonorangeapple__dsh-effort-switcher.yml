@@ -1,0 +1,6 @@
+url: https://github.com/lemonorangeapple/dsh-effort-switcher
+name: lemonorangeapple/dsh-effort-switcher
+category: ui
+description:
+  en: 'A Codex-like effort switcher for Deepseek Harness.'
+  zh: '为DSH添加一个类似于Codex的推理强度切换器。'

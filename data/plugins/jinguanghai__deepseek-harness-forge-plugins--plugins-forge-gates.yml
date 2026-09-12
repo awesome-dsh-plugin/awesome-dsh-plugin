@@ -1,0 +1,6 @@
+url: https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-gates
+name: jinguanghai/deepseek-harness-forge-plugins#forge-gates
+category: tools
+description:
+  en: 'Real-compute verification gates: math simplification, logic proofs, regex validation, E-prover FOL, state-machine checks, and code repair, backed by Go-compiled binaries with prebuilt Windows executables.'
+  zh: 真实计算验证门：数学化简、逻辑证明、正则校验、E-prover 一阶逻辑、状态机检查与代码修复，由 Go 编译的二进制支撑（附 Windows 预编译产物）。

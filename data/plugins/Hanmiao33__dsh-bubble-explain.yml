@@ -1,0 +1,7 @@
+url: https://github.com/Hanmiao33/dsh-bubble-explain
+name: Hanmiao33/dsh-bubble-explain
+category: ui
+description:
+  en: "Select any text in a conversation and tap the Explain button to get a streaming Markdown explanation bubble, with recursive follow-up questions."
+  zh: "对话中框选任意文字后点击「解释」按钮，弹出 Markdown 实时流式解释气泡，支持递归追问。"
+tarball: "https://github.com/Hanmiao33/dsh-bubble-explain/releases/latest/download/dsh-external-bubble-explain.tgz"

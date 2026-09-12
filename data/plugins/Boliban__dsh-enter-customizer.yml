@@ -1,0 +1,6 @@
+url: https://github.com/Boliban/dsh-enter-customizer
+name: Boliban/dsh-enter-customizer
+category: session
+description:
+  en: Take over the system input shortcuts for the chat input box and configure behavior independently for each shortcut.
+  zh: 接管聊天输入框的回车等快捷键，每个快捷键的行为都能单独配置。

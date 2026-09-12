@@ -1,0 +1,6 @@
+url: https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board
+name: whyihaveyou/dsh-suite#plugin-team-board
+category: workflow
+description:
+  en: Shared multi-agent task board (create/claim/transition/query) over a Cordis service key.
+  zh: 多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。

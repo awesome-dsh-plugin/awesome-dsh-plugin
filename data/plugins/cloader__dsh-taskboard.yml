@@ -1,0 +1,6 @@
+url: https://github.com/cloader/dsh-taskboard
+name: cloader/dsh-taskboard
+category: workflow
+description:
+  en: 'Task board for DSH: create tasks with project and model assignment, run them manually or on cron schedules; new sessions in a project automatically pick up its todo tasks and move them to in-review when done.'
+  zh: dsh 的任务看板：创建任务时可指定项目与模型，支持手动执行及定时执行；项目内新建会话会自动拉取该项目的待办任务，完成后移至待验收。

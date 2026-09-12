@@ -1,0 +1,6 @@
+url: https://github.com/Islulua/dsh-code-navigator/tree/main/packages/code-navigator
+name: Islulua/dsh-code-navigator#code-navigator
+category: tools
+description:
+  en: Persistent C/C++, Python, and TypeScript definition navigation with a standalone workspace UI for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供持久化的 C/C++、Python 和 TypeScript 定义跳转及独立工作区界面。

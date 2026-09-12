@@ -1,0 +1,6 @@
+url: https://github.com/ayahunter/dsh-plugin-clinic
+name: ayahunter/dsh-plugin-clinic
+category: dev
+description:
+  en: 'Read-only health clinic for the installed DSH plugin set: loader health, dependency integrity, version compatibility, install-script risk, duplicates and patch integrity, delivered as a model tool, a Settings dashboard and JSON reports.'
+  zh: 已安装 DSH 插件集合的只读体检诊所：加载健康、依赖完整、版本兼容、安装脚本风险、重复与 patch 引用，交付模型工具、设置面板与 JSON 报告。

@@ -1,0 +1,6 @@
+url: https://github.com/meyaomiao/dsh-server-deck
+name: meyaomiao/dsh-server-deck
+category: remote
+description:
+  en: 'Server card dashboard for DSH: per-host status, CPU, memory, disk and latency, with one-click xterm.js SSH terminals; imports ~/.ssh/config and mounts as a better-sidebar tab or a standalone right drawer.'
+  zh: 'DSH 服务器卡片仪表盘：每台主机展示在线状态、CPU、内存、磁盘与延迟，点卡片进入 xterm.js SSH 终端；支持导入 ~/.ssh/config，挂载为 better-sidebar 页签或独立右侧抽屉。'

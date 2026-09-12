@@ -1,0 +1,6 @@
+url: https://github.com/MaxHou-infinity/dsh-scout
+name: MaxHou-infinity/dsh-scout
+category: tools
+description:
+  en: 'Evidence-driven company and job due-diligence for DSH: logs sources with evidence levels, adds evidence-bounded claims, verifies the legal entity against official registries, and renders a PROCEED/VERIFY/STOP report with a verification checklist and interview questions.'
+  zh: 证据驱动的公司与岗位尽调插件：登记带证据等级的来源、添加受证据边界约束的结论、用官方登记信息核验公司主体，并生成推进/核验/停止三态报告，附核验清单与面试问题。

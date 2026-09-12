@@ -1,0 +1,6 @@
+url: https://github.com/OK-wx/dsh-ocgo-lite
+name: OK-wx/dsh-ocgo-lite
+category: usage
+description:
+  en: 'OpenCode Go usage bar in the composer dock: rolling/weekly/monthly quota rings, DSH-session token & cost stats priced with live official rates, per-model and current-session scope breakdowns with live per-session updates, one-click API key copy.'
+  zh: 输入框下方常驻 OpenCode Go 用量条：5 小时/每周/每月配额圆环，DSH 会话 token 与花费统计（官方实时定价），支持按模型与按「本次会话」范围联动明细（本次会话实时更新），一键复制 API Key。

@@ -1,0 +1,6 @@
+url: https://github.com/lusblead/dsh-Kingdom
+name: lusblead/dsh-Kingdom
+category: workflow
+description:
+  en: 'Agent governance kingdom for DeepSeek Harness: territories, role bindings (bind/unbind/session with model/agent identity), and a plan→assign→execute→review task loop where Worker claims never auto-complete (Claim ≠ Fact), with a local GUI operations console.'
+  zh: 'DSH 里的 Agent 王国：领地、角色绑定/换届/会话归属（含模型/Agent 身份），plan→派发→执行→验收治理闭环（Worker 自述≠完成事实），附本地 GUI 操作台。'

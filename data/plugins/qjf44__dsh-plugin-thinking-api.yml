@@ -1,0 +1,6 @@
+url: https://github.com/qjf44/dsh-plugin-thinking-api
+name: qjf44/dsh-plugin-thinking-api
+category: model
+description:
+  en: 'One-click OpenAI-compatible API (CodeBuddy/vLLM/proxies) with thinking mode, avoiding developer-role content_filter rejection.'
+  zh: '一键接入 OpenAI 兼容 API（CodeBuddy、vLLM、各类代理）并开启思考模式，绕开第三方端点以 content_filter 拒绝 developer 角色的问题。'

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-background-agents
+name: PerryLink/dsh-background-agents
+category: workflow
+description:
+  en: 'Durable background child agents on the official subagent seam: start from any session, watch progress in the Web UI sidebar, message and interrupt any time, with per-child tool scoping, persona and delegation-depth caps.'
+  zh: 官方子代理接缝上的持久化后台子代理：任意会话中启动，Web 侧边栏看进度、随时留言与打断，支持按子代理限定工具、人格与委托深度。

@@ -1,0 +1,6 @@
+url: https://github.com/sakuraaa667/dsh-wallpaper-engine
+name: sakuraaa667/dsh-wallpaper-engine
+category: theme
+description:
+  en: 'Use wallpapers downloaded in Wallpaper Engine as the DeepSeek Harness web background: video wallpapers play in place, image wallpapers use the highest-resolution standalone artwork, with cover/contain fit modes and a 0-100 panel dimmer.'
+  zh: '将 Wallpaper Engine 中已下载的壁纸用作 DeepSeek Harness 的背景：视频壁纸原位播放，图片壁纸优先使用最高分辨率原图，支持铺满/完整显示适配与 0–100 面板暗化。'

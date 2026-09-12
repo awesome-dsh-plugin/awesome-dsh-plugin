@@ -1,0 +1,6 @@
+url: https://github.com/Alnita-M/dsh-Almost_Full_Access
+name: Alnita-M/dsh-Almost_Full_Access
+category: security
+description:
+  en: 'Permission mode between workspace-write and full access: shell commands are checked by deterministic rules and a subagent review; irreversible or system-level actions require explicit approval.'
+  zh: '介于 workspace-write 与 Full access 之间的权限模式：命令先经规则与子代理审查，不可逆或系统级操作需人工批准。'

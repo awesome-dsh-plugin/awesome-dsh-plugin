@@ -1,0 +1,6 @@
+url: https://github.com/KanoNoUta/dsh-captain
+name: KanoNoUta/dsh-captain
+category: workflow
+description:
+  en: GPT plans dependency DAGs, DeepSeek workers execute tasks with adaptive parallelism, and an optional GPT reviewer audits incremental Git diffs and drives repair rounds.
+  zh: GPT 规划依赖 DAG，DeepSeek Worker 自适应并行执行任务，可选 GPT Reviewer 审核增量 Git Diff 并驱动返工轮次。

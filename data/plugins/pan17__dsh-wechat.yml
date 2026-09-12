@@ -1,0 +1,6 @@
+url: https://github.com/pan17/dsh-wechat
+name: pan17/dsh-wechat
+category: remote
+description:
+  en: Bridges WeChat private chats into DeepSeek Harness as an in-process plugin over Tencent's iLink bot protocol, with two-way text, image, file and voice messaging, in-WeChat slash commands resolved through the native command registry, WeChat-side handling of approvals and agent questions, and proactive push through a send_wechat tool.
+  zh: 以进程内 Cordis 插件的形式，通过腾讯 iLink bot 协议把微信私聊桥接到 DeepSeek Harness——双向收发文本、图片、文件与语音，微信内 slash 命令经原生命令注册中心解析（DSH 新增命令零改动可用），支持在微信端处理审批与提问，并提供 send_wechat 工具主动推送。

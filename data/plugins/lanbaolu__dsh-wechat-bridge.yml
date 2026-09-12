@@ -1,0 +1,6 @@
+url: https://github.com/lanbaolu/dsh-wechat-bridge
+name: lanbaolu/dsh-wechat-bridge
+category: notify
+description:
+  en: 'Two-way WeChat bridge for DeepSeek Harness via the iLink protocol: bind your personal WeChat with a QR scan and chat with a local DSH agent from the chat box (text, images, voice-to-text, files); a web settings panel handles binding/start/stop/status, project-session binding continues the conversation on desktop, proactive wechat_notify pushes include throttling, and the pure-Node daemon runs on Windows/macOS/Linux.'
+  zh: 基于 iLink 协议的 DSH 微信双向桥：扫码绑定个人微信后在聊天框直接与本机 DSH Agent 对话（文字/图片/语音转文字/文件），Web 设置面板管理扫码绑定/启停/状态，支持绑定项目会话跨端续聊，agent 可主动 wechat_notify 推送（内置节流），纯 Node 守护进程，Windows/macOS/Linux 三端通用。

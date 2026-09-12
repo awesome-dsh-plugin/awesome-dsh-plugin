@@ -1,0 +1,6 @@
+url: https://github.com/Nixz0824/dsh-sound-cue
+name: Nixz0824/dsh-sound-cue
+category: notify
+description:
+  en: Short Web Audio cues when a session needs your attention (approval, question, or plan review) and when a task finishes. No popups or OS notifications.
+  zh: 会话需要你操作（审批、提问或计划确认）以及任务完成时播放不同的短提示音。Web Audio 现场合成，无弹窗、无系统通知。

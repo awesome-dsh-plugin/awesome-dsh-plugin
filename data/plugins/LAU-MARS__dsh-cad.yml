@@ -1,0 +1,6 @@
+url: https://github.com/LAU-MARS/dsh-cad
+name: LAU-MARS/dsh-cad
+category: tools
+description:
+  en: Views and builds CAD models (STL, OBJ, STEP, IGES, DXF, SVG) via cad_view/cad_info and OCCT parametric modeling tools, with an interactive viewer card and a resident CAD panel in the Web UI.
+  zh: 通过 cad_view/cad_info 与 OCCT 参数化建模工具查看和构建 CAD 模型（STL、OBJ、STEP、IGES、DXF、SVG），并在 Web UI 中提供交互式查看卡片与常驻 CAD 面板。

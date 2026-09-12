@@ -1,0 +1,6 @@
+url: https://github.com/fishxcode/dsh-plugin-deepseek-balance
+name: fishxcode/dsh-plugin-deepseek-balance
+category: usage
+description:
+  en: DeepSeek API balance, balance trend, and daily usage charts in DSH Web settings.
+  zh: 在 DSH Web 设置中展示 DeepSeek API 余额、余额趋势与每日用量图表。

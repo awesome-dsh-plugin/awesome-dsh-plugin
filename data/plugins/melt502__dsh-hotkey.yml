@@ -1,0 +1,6 @@
+url: https://github.com/melt502/dsh-hotkey
+name: melt502/dsh-hotkey
+category: usage
+description:
+  en: Configurable VS Code style keyboard shortcuts for the DSH web GUI, with a settings-page keybinding editor, conflict detection and JSON import/export.
+  zh: 为 DSH Web GUI 提供可配置的 VS Code 风格键盘快捷键，内置设置页改键、冲突检测与 JSON 导入导出。

@@ -1,0 +1,6 @@
+url: https://github.com/Viger1/dsh-design
+name: Viger1/dsh-design
+category: tools
+description:
+  en: Measures design rules on the rendered page rather than in the CSS — type-scale count, WCAG AA contrast against the real composited backdrop, spacing-grid drift, palette size, tap targets, and the tells of generated UI such as violet gradients caught by hue angle; ships a design-system skill.
+  zh: 在渲染后的页面上测量设计规则，而非解析 CSS——字号种类、与真实合成背景比对的 WCAG AA 对比度、间距栅格偏移、配色规模、点击区尺寸，以及「机器味指纹」（如按色相角度判定的紫色渐变）；内置 design-system 技能。

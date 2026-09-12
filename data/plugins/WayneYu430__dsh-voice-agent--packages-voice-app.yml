@@ -1,0 +1,6 @@
+url: https://github.com/WayneYu430/dsh-voice-agent/tree/master/packages/voice-app
+name: 'WayneYu430/dsh-voice-agent#voice-app'
+category: voice
+description:
+  en: 'A conversational voice frontend Agent for dsh: speak naturally over ByteDance Duplex, delegate requests to background tasks, and hear their asynchronous results reported by voice.'
+  zh: dsh 的对话式语音前端 Agent：通过 ByteDance Duplex 自然对话，把语音请求委派给后台任务，并用语音回报异步结果。

@@ -1,0 +1,26 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🛒 dsh-market — the plugin market app / 插件市场客户端
+    url: https://github.com/dsh-market/dsh-market/issues
+    about: >-
+      Install stuck on "installing", one-click setup failing, pnpm not found,
+      dark-mode or layout glitches, market search — anything you saw inside the
+      market UI belongs there, not here. / 安装卡住、一键安装组件失败、找不到
+      pnpm、深色模式显示异常、市场内搜索——凡是在市场界面里看到的问题都提到那边。
+  - name: 🐋 DeepSeek Harness — the harness itself / DSH 本体
+    url: https://github.com/deepseek-ai/deepseek-harness/issues
+    about: >-
+      dsh won't start, profiles, allowBuilds approvals, the Web UI's own
+      behaviour, plugin API questions. / dsh 起不来、profile、allowBuilds 授权、
+      Web UI 自身行为、插件 API 问题。
+  - name: 🧩 A specific plugin is broken / 某个插件坏了
+    url: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin#plugins
+    about: >-
+      Open it in the plugin's own repository — we curate the list, we don't
+      maintain the plugins. / 请到该插件自己的仓库提 issue：我们只做清单，不维护插件。
+  - name: ➕ Submitting a plugin? Open a pull request / 投稿插件请提 PR
+    url: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+    about: >-
+      Submissions go through a PR, not an issue — one line in each README. The
+      PR check verifies formatting for you. / 投稿走 PR 不走 issue：两份 README
+      各加一行，PR 检查会自动帮你验格式。

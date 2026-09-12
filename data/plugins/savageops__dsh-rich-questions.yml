@@ -1,0 +1,6 @@
+url: https://github.com/savageops/dsh-rich-questions
+name: savageops/dsh-rich-questions
+category: tools
+description:
+  en: 'Branching surveys in the web GUI: the ask_survey tool with per-option routing, hover insights, Mermaid diagrams, quick one-click answer templates, and resumable banked progress.'
+  zh: '网页端分支问卷：ask_survey 工具，按选项路由后续问题，悬停洞察、Mermaid 流程图、一键快速模板，答案可暂存续答。'

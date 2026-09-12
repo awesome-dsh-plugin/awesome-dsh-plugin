@@ -1,0 +1,6 @@
+url: https://github.com/Starfie1d1272/dsh-builtin-toggles
+name: Starfie1d1272/dsh-builtin-toggles
+category: dev
+description:
+  en: 'Evidence-backed inspector for DSH Web built-in capabilities: runtime/config provenance, compatibility and drift diagnostics, plus fail-closed controls for nine reviewed UI leaves.'
+  zh: DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。

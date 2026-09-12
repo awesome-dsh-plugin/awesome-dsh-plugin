@@ -1,0 +1,6 @@
+url: https://github.com/XieZongChen/dsh-md-notes
+name: XieZongChen/dsh-md-notes
+category: memory
+description:
+  en: 'A markdown notes manager for DSH: full **MD notes manager** and **MD notes editor**, quickly capture conversations into notes, maintain notes by **syncing to Git repositories**, and **bring notes into the conversation context**.'
+  zh: 'DSH 的 MD 笔记管理插件：提供完整的 **MD 笔记管理器** 和 **MD 笔记编辑器**，对话内容可快速记入笔记。笔记可 **同步 Git 仓库** 维护。对话时可将笔记 **加入上下文**。'

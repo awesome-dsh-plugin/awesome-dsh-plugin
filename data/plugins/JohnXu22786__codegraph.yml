@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/codegraph
+name: JohnXu22786/codegraph
+category: tools
+description:
+  en: 'Local code knowledge graph for agents: parse a codebase (Python/JS/TS/Go/Java/Rust) into a SQLite index and answer callers, callees, deps, dependents, impact and full-text questions over it.'
+  zh: '面向 agent 的本地代码知识图谱：把代码库（Python/JS/TS/Go/Java/Rust）解析进 SQLite 索引，回答调用者、被调用者、依赖、反向依赖、影响面与全文检索问题。'

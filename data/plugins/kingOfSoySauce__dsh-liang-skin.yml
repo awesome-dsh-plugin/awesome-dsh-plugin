@@ -1,0 +1,7 @@
+url: https://github.com/kingOfSoySauce/dsh-liang-skin
+name: kingOfSoySauce/dsh-liang-skin
+category: theme
+description:
+  en: Adaptive reasoning slider skin that maps each model's available reasoning efforts onto a 0–30 visual intensity scale, with synchronized portraits, background, and interface colors.
+  zh: 自适应推理等级滑块皮肤，将当前模型可用档位映射到 0–30 视觉强度，并同步人物、背景和界面配色。
+tarball: https://github.com/kingOfSoySauce/dsh-liang-skin/releases/download/v0.1.4/dsh-client-liang-intensity-skin-0.1.4.tgz

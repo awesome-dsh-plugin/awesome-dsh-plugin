@@ -1,0 +1,7 @@
+url: https://github.com/initial-d/dsh-plugin-mlquant-benchmark
+name: initial-d/dsh-plugin-mlquant-benchmark
+category: tools
+tarball: https://github.com/initial-d/dsh-plugin-mlquant-benchmark/releases/download/v0.1.0/dsh-plugin-mlquant-benchmark-0.1.0.tgz
+description:
+  en: DSH tools for reproducing and validating the ml-quant-trading protocol v1 CPU benchmark, then drafting an issue-ready report. Requires a local clone of initial-d/ml-quant-trading (set as the workspace or repoPath) plus Python and PyTorch; this plugin does not fetch the repository or install its dependencies.
+  zh: 用于复现并校验 ml-quant-trading protocol v1 CPU 基准测试，并生成可提交 issue 报告的 DSH 工具。需要本地 clone initial-d/ml-quant-trading，并将其设为 workspace 或 repoPath，同时自行准备 Python 和 PyTorch；本插件不会获取仓库或安装依赖。

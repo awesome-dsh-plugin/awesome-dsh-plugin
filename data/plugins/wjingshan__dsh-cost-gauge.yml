@@ -1,0 +1,6 @@
+url: https://github.com/wjingshan/dsh-cost-gauge
+name: wjingshan/dsh-cost-gauge
+category: usage
+description:
+  en: 'Floating cost dial for the DSH web GUI: a 24-hour rate dial with a model-colored needle, a balance ring with an alarm threshold, drag-to-resize, and a minimized status-lamp mode.'
+  zh: 'DSH Web 浮动花费表盘：24 小时费率弧 + 按模型着色的指针、带报警阈值的余额环，支持拖拽缩放与最小化状态灯模式。'

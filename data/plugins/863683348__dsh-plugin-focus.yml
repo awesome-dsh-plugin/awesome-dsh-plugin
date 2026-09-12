@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-focus
+name: 863683348/dsh-plugin-focus
+category: memory
+description:
+  en: 'Focus board for DeepSeek Harness agents: durable, model-maintained notes in the session workspace that pin the objective, constraints, and decisions across compaction and sessions, with automatic context injection, archive on clear, and an optional web panel.'
+  zh: 为 DeepSeek Harness agent 提供持久化专注板：在会话工作区维护目标、约束与决策笔记，跨压缩与会话存活，支持自动注入上下文、清空归档与可选 Web 面板。

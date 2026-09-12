@@ -1,0 +1,6 @@
+url: https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav
+name: SherUnlocked-4869/dsh-plugin-msg-nav
+category: ui
+description:
+  en: 'Conversation node navigation rail for the DSH Web UI: one dash per user message on the right edge, reading-position tracking, hover preview card, click-to-jump with highlight line, sliding window, and auto-hide.'
+  zh: 对话节点导航条：对话区右缘一列短横线节点对应每条用户消息，支持阅读位置跟踪、悬停预览卡片、点击跳转高亮、滑动窗口与自动隐藏。

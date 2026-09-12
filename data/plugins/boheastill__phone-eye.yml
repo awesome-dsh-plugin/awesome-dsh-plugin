@@ -1,0 +1,6 @@
+url: https://github.com/boheastill/phone-eye
+name: boheastill/phone-eye
+category: vision
+description:
+  en: "Let your AI agent see and operate a real Android phone: phone_look (vision + UI-tree fusion), tap/swipe/type, screenshot — over adb, for any MCP client."
+  zh: "让 AI 助手看见并操作真实安卓手机：phone_look（视觉+UI 树融合判读）、点击/滑动/输入、截图——经 adb，适用于任何 MCP 客户端。"

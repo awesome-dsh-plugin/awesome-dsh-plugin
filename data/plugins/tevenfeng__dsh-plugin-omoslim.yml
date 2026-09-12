@@ -1,0 +1,6 @@
+url: https://github.com/tevenfeng/dsh-plugin-omoslim
+name: tevenfeng/dsh-plugin-omoslim
+category: workflow
+description:
+  en: 'Installs an Orchestrator agent preset that plans and dispatches to model-pinned specialist subagents (explorer, oracle, librarian, designer, fixer, council), with named model profiles switched via an omoslim CLI and a Web inspector button showing the current subagent models.'
+  zh: '安装 Orchestrator 智能体预设：规划任务并分派给指定模型的专家子代理（explorer、oracle、librarian、designer、fixer、council），支持命名模型配置（用 omoslim CLI 切换）与 Web 端查看当前子代理模型的按钮。'

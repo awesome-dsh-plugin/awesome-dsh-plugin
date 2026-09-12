@@ -1,0 +1,6 @@
+url: https://github.com/QSWWLTN/dsh-UEAssetsOperator
+name: QSWWLTN/dsh-UEAssetsOperator
+category: tools
+description:
+  en: Unreal Engine .uasset inspection (resolve/registry/load) and restricted Blueprint node editing through built-in UE Python.
+  zh: 通过 Unreal 内置 Python 提供 .uasset 检查与受限蓝图节点编辑。

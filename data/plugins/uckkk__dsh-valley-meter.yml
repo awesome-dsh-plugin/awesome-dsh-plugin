@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-valley-meter
+name: uckkk/dsh-valley-meter
+category: ui
+description:
+  en: "Peak-Valley Meter (峰谷电表) — a tiny DeepSeek usage companion: a minimal balance badge above the composer, official balance refreshed every 5s so it's always in sight; hover to expand a 24h peak/valley timeline (orange=peak, blue=valley, glowing white marker at the current local time) so off-peak hours are obvious; independent spend metering, 10 curated muted color presets (One Dark/Dracula/Nord/Tokyo Night/Gruvbox/Solarized + traditional Chinese & Pantone) plus custom valley/peak colors, all-Chinese UI."
+  zh: "峰谷电表——DeepSeek 用量小助手：输入框上方一枚极简余额徽章，官方余额每 5 秒实时刷新，一眼看清还够不够用；悬停展开 24 小时峰谷时间轴（橙=峰时、蓝=谷时、白色发光指针标当前本地时刻），谷时省钱时段一目了然；今日消耗独立计费，10 套沉稳配色预置（One Dark/Dracula/Nord/Tokyo Night/Gruvbox/Solarized + 中国传统色/潘通）+ 谷/峰色自定义，全中文界面。"

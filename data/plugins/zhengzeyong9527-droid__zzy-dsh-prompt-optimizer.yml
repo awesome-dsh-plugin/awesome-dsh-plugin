@@ -1,0 +1,6 @@
+url: https://github.com/zhengzeyong9527-droid/zzy-dsh-prompt-optimizer
+name: zhengzeyong9527-droid/zzy-dsh-prompt-optimizer
+category: ui
+description:
+  en: Adds prompt optimization, cancellation, and undo controls to the DeepSeek Harness composer.
+  zh: 为 DeepSeek Harness 对话输入框提供提示词优化：优化过程中可取消，完成后可一键撤回。

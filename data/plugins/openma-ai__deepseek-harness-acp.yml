@@ -1,0 +1,6 @@
+url: https://github.com/openma-ai/deepseek-harness-acp
+name: openma-ai/deepseek-harness-acp
+category: notify
+description:
+  en: ACP profile plugin and standalone stdio server for using the full DSH agent from Zed and other ACP clients while sharing DSH credentials and sessions.
+  zh: ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。

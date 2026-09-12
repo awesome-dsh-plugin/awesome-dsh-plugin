@@ -1,0 +1,6 @@
+url: https://github.com/qwert702/dsh-token-viewer
+name: qwert702/dsh-token-viewer
+category: usage
+description:
+  en: 'CC Switch-style token consumption statistics for the dsh web GUI: per-request usage log, real-consumption hero, request-time-bucketed trend chart, per-model peak/off-peak list pricing, per-project and per-model stats, and account balance.'
+  zh: dsh 网页端 CC Switch 风格 Token 消耗统计：按请求的用量日志、真实消耗 Hero、按请求提交时间分桶的趋势图、按模型峰谷牌价计费、项目/模型统计与账户余额。

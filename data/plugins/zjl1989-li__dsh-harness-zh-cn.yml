@@ -1,0 +1,6 @@
+url: https://github.com/zjl1989-li/dsh-harness-zh-cn
+name: zjl1989-li/dsh-harness-zh-cn
+category: tools
+description:
+  en: 'Chinese localization for DeepSeek Harness: translates all system prompts, tool descriptions, and runtime contexts into Chinese at runtime via the system-prompt/assemble waterfall (1788 entries, zero source modification, uninstall restores English).'
+  zh: DeepSeek Harness 中文汉化插件：通过 system-prompt/assemble 瀑布钩子在运行时把全部系统提示词、工具描述与运行时上下文翻译成中文（1788 条译文，零源码修改，卸载即还原英文）。

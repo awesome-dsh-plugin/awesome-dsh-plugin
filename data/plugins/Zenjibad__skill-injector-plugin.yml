@@ -1,0 +1,6 @@
+url: https://github.com/Zenjibad/skill-injector-plugin
+name: Zenjibad/skill-injector-plugin
+category: skill
+description:
+  en: 'Auto-injects user-chosen skills into DSH sessions, either every prompt or once at session start, with a settings page and a composer indicator.'
+  zh: 在 DSH 会话中自动注入所选技能（如 caveman、ponytail）：每轮提示或仅在会话开始时，含设置页与输入区指示。

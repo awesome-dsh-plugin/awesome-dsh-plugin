@@ -1,0 +1,6 @@
+url: https://github.com/Cheng-cheng9669/dsh-cache-precision
+name: Cheng-cheng9669/dsh-cache-precision
+category: tools
+description:
+  en: Renders the built-in cache-hit percentage with three decimals and widens the composer stats line to prevent truncation.
+  zh: 把内置缓存命中率原位显示为 3 位小数，并加宽底部统计行避免内容被截断。

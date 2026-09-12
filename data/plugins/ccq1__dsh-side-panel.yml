@@ -1,0 +1,6 @@
+url: https://github.com/ccq1/dsh-side-panel
+name: ccq1/dsh-side-panel
+category: ui
+description:
+  en: Side panel with file browser, terminal, and Git review for quick file previews.
+  zh: 侧边栏集成文件浏览器、终端和 Git 审查，方便预览文件。

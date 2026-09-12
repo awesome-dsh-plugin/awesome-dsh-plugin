@@ -1,0 +1,6 @@
+url: https://github.com/Awu12277/dsh-stock-watch
+name: Awu12277/dsh-stock-watch
+category: fun
+description:
+  en: 'A-share watchlist real-time market monitoring plugin: a collapsible popup in the top-right corner of the DeepSeek Harness (DSH) web interface for real-time quote monitoring, group switching, intraday and candlestick (K-line) charts, and buy/sell target price settings.'
+  zh: A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。

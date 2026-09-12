@@ -1,0 +1,6 @@
+url: https://github.com/AngelosZou/graphlint/tree/main/integrations/dsh
+name: AngelosZou/graphlint#integrations/dsh
+category: dev
+description:
+  en: 'Dead-code detection for AI-generated codebases: graphlint builds a dependency graph, finds code unreachable from any entry point to enable codebase cleanup and functional‑effectiveness understanding, and exposes graphlint_query / graphlint_build / graphlint_config tools plus a graphlint skill to DSH agents.'
+  zh: 面向 AI 生成代码的死代码检测：graphlint 构建依赖图，定位从任何入口不可达的代码，以实现代码库清理和功能有效性理解，并为 DSH 智能体提供 graphlint_query / graphlint_build / graphlint_config 工具与 graphlint 技能。

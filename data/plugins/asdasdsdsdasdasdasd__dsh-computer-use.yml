@@ -1,0 +1,6 @@
+url: https://github.com/asdasdsdsdasdasdasd/dsh-computer-use
+name: asdasdsdsdasdasdasd/dsh-computer-use
+category: tools
+description:
+  en: 'Linux X11 computer use for DeepSeek Harness: 9 tools (screenshot, move/click/drag/scroll mouse, type, key combos) driven by a zero-dependency Python XTest helper — native-pixel coordinates, per-action verification, optional auto-observation screenshot.'
+  zh: Linux X11 电脑控制插件：9 个工具（截图、鼠标移动/点击/拖拽/滚轮、输入、快捷键），由零依赖 Python XTest 助手驱动——原生像素坐标、每次操作返回坐标校验、可选自动截图。

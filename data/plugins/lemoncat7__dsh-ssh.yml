@@ -1,0 +1,6 @@
+url: https://github.com/lemoncat7/dsh-ssh
+name: lemoncat7/dsh-ssh
+category: dev
+description:
+  en: SSH profiles, browser terminals, SFTP browsing, port forwarding, proxies, and session-scoped AI access for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供 SSH 配置、浏览器终端、SFTP 浏览、端口转发、代理与会话级 AI 访问。

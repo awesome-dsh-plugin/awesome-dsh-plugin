@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-tool-time
+name: omdsh-dev/dsh-tool-time
+category: tools
+description:
+  en: Strict ISO 8601 parsing, IANA timezone conversion, and UTC calendar arithmetic.
+  zh: 严格 ISO 8601 解析、IANA 时区转换、UTC 日历运算。

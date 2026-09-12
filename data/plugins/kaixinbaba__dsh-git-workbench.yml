@@ -1,0 +1,6 @@
+url: https://github.com/kaixinbaba/dsh-git-workbench
+name: kaixinbaba/dsh-git-workbench
+category: git
+description:
+  en: 'Git development workbench for DeepSeek Harness: captures branch, status, worktrees, stashes and recent commits, with commands, tools and a settings UI.'
+  zh: 'DeepSeek Harness Git 开发工作台：采集分支、状态、worktree、stash 和最近提交，并通过命令、工具与设置界面管理 Git 工作区。'

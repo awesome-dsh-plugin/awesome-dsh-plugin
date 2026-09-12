@@ -1,0 +1,6 @@
+url: https://github.com/StvLi/dsh-ros2
+name: StvLi/dsh-ros2
+category: tools
+description:
+  zh: "面向 DeepSeek Harness 的 ROS2 调试工具集与机器人状态视觉分析：节点/话题/服务/动作/接口/TF 枚举、全图拓扑 JSON、依赖检查，审批门控的构建与自定义消息骨架生成，GUI 截图与多模态视觉观察，以及无头 RViz2 离屏渲染（低模 + 直读像素 + GPU 直通，动作渲染 30Hz）与并行 VLM 实时分析。"
+  en: "ROS2 debugging toolset and robot-state vision analysis for DeepSeek Harness: node/topic/service/action/interface/TF enumeration, whole-graph topology JSON, rosdep checks, approval-gated builds and custom message scaffolding, GUI screenshots and multimodal vision observation, plus headless RViz2 offscreen rendering (low-poly meshes, direct pixel read, GPU passthrough - motion rendering at 30Hz) with parallel VLM realtime analysis."

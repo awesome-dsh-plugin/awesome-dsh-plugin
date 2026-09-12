@@ -1,0 +1,6 @@
+url: https://github.com/PeterBon/dsh-hooks
+name: PeterBon/dsh-hooks
+category: notify
+description:
+  en: 'Config-driven lifecycle hooks: event→command declarations in cordis.patch.yml, with Feishu card notifications and a QR scan-to-create bot setup.'
+  zh: 配置驱动生命周期 hooks：在 cordis.patch.yml 声明事件→命令，附飞书卡片通知与扫码一键创建机器人。

@@ -1,0 +1,6 @@
+url: https://github.com/Frog755/dsh-prompt-vault
+name: Frog755/dsh-prompt-vault
+category: ui
+description:
+  en: 'Prompt library above the DSH composer — a 📚 button expands a searchable panel to insert saved prompts into the draft with one click (appends, never overwrites), persisted in a host-side JSON file.'
+  zh: 输入框上方的提示词库：📚 按钮展开可搜索面板，点条目一键填入草稿（追加不覆盖）；数据以 JSON 文件保存在 Host 侧。

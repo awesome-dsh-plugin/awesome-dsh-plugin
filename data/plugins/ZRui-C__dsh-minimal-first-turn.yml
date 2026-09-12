@@ -1,0 +1,6 @@
+url: https://github.com/ZRui-C/dsh-minimal-first-turn
+name: ZRui-C/dsh-minimal-first-turn
+category: session
+description:
+  en: 'Minimal-compatible first turn for Web root sessions: starts with persistent bash and str_replace_editor, removes automatic workspace and skill context, then restores the selected preset after the first tool call or reply; includes a persistent composer toggle.'
+  zh: Web 根会话的首轮精简：先使用持久 bash 与 str_replace_editor，移除自动工作区和技能上下文；首次工具调用或回复后恢复所选预设，带持久 composer 开关。

@@ -1,0 +1,6 @@
+url: https://github.com/icetomoyo/dsh_workflow
+name: icetomoyo/dsh_workflow
+category: workflow
+description:
+  en: 'UltraCode-style multi-agent orchestration: a generatable, savable, governable, observable, resumable workflow layer.'
+  zh: 把 UltraCode 式多 Agent 调度带给 DSH：可生成、可保存、可治理、可观察、可恢复的 Workflow 层。

@@ -1,0 +1,6 @@
+url: https://github.com/liangxiaobing520/dsh-local-vector-memory
+name: liangxiaobing520/dsh-local-vector-memory
+category: memory
+description:
+  en: 'Fully local vector memory for DSH: local embeddings, SQLite storage, automatic recall injection, dedup with conflict detection, soft-delete recycle bin, online backup, and optional LLM extraction.'
+  zh: 'DSH 全本地向量记忆:本地 embedding、SQLite 存储、自动召回注入、去重与冲突检测、软删除回收站、在线备份,可选 LLM 提取。'

@@ -1,0 +1,6 @@
+url: https://github.com/bujue600-arch/dsh-testgen
+name: bujue600-arch/dsh-testgen
+category: dev
+description:
+  en: 'Automated unit-test generation: a /testgen command and generate_tests tool that scaffold, run, and fix tests until they pass (LLM + offline template generators; vitest/jest/mocha/node:test).'
+  zh: 自动化单元测试生成：/testgen 命令与 generate_tests 工具，生成、运行并修复测试直至通过（LLM 与离线模板双生成器；支持 vitest/jest/mocha/node:test）。

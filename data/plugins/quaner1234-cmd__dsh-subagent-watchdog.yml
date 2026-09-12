@@ -1,0 +1,6 @@
+url: https://github.com/quaner1234-cmd/dsh-subagent-watchdog
+name: quaner1234-cmd/dsh-subagent-watchdog
+category: workflow
+description:
+  en: Automatically continues a native continuable DSH subagent once when it ends with explicit max-tokens termination, then stops.
+  zh: 当原生可续接 DSH 子代理因明确的 max-tokens 终止时自动续接一次，然后停止介入。

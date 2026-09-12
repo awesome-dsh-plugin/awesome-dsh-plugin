@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-opencode-usage
+name: wingsky-1/dsh-plugin-hub#packages/dsh-opencode-usage
+category: usage
+description:
+  en: 'OpenCode Go plan usage floating pill: three-window consumption percentages (rolling/weekly/monthly) with mini area charts, backed by background sampling against the official /v1/usage API.'
+  zh: OpenCode Go 套餐用量悬浮框：三窗口（rolling/weekly/monthly）消耗百分比常驻展示，展开为迷你面积图；后台采样官方 /v1/usage 接口，零本地计算。

@@ -1,0 +1,13 @@
+# awesome-dsh-plugin submission entry
+# One file per plugin: data/plugins/<owner>__<repo>.yml
+# Schema: url, name, category, description.{en, zh}
+# Only description.en is required. Description must be factual (no marketing),
+# must end with a period, and any `: ` must be quoted.
+# https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+
+url: https://github.com/NoneadChina/dsh-nonead-universal-robots
+name: NoneadChina/dsh-nonead-universal-robots
+category: tools
+description:
+  en: "A DeepSeek Harness (DSH) plugin that lets you control Universal Robots (UR) collaborative arms directly from natural language, developed by Suzhou Nonead Robot Technology Co., Ltd. based on the same logic as the company's own nUR MCP Server. (Suzhou Nonead Robot Technology Co., Ltd.)"
+  zh: "让 DSH 用自然语言直接控制 Universal Robots（UR）机械臂的插件，由拓德科技（Nonead）基于自研的 nUR MCP Server 同源逻辑开发。（Suzhou Nonead Robot Technology Co., Ltd.）"

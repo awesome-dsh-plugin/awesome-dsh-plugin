@@ -1,0 +1,49 @@
+name: 📋 Problem with the list or the site / 清单或网站的问题
+description: A listed entry is wrong or dead, an entry is in the wrong category, or awesome-dsh-plugin.com is broken.
+labels: [list]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is **only** the curated list and its website.
+
+        Anything you saw **inside the plugin market UI** (install stuck on
+        "installing", one-click setup failing, `pnpm not found`, dark-mode
+        glitches) belongs in [dsh-market](https://github.com/dsh-market/dsh-market/issues).
+        A bug **inside a plugin** belongs in that plugin's own repository.
+
+        本仓库**只**维护插件清单和它的网站。在**市场界面里**看到的问题（安装卡住、
+        一键安装组件失败、找不到 pnpm、深色模式显示异常）请提到
+        [dsh-market](https://github.com/dsh-market/dsh-market/issues)；
+        **插件自身**的 bug 请到该插件的仓库提。
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem? / 问题类型
+      options:
+        - An entry's repository is gone, archived, or no longer installable / 条目的仓库没了、已归档或装不上了
+        - An entry is in the wrong category / 条目分类不对
+        - An entry's description is wrong or misleading / 条目描述有误或有误导
+        - Two entries are the same plugin / 两个条目是同一个插件
+        - awesome-dsh-plugin.com is broken / 网站有问题
+        - Something else about the list / 其他清单相关问题
+    validations:
+      required: true
+
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry? / 哪个条目
+      description: Paste the GitHub URL as it appears in the list. Leave blank for site problems.
+      placeholder: https://github.com/owner/repo
+  - type: textarea
+    id: detail
+    attributes:
+      label: What's wrong? / 具体问题
+      description: >-
+        For "not installable", paste what `dsh plugin --profile web add <pkg>`
+        printed. For site problems, include the page URL and a screenshot. /
+        「装不上」请贴出 `dsh plugin add` 的输出；网站问题请附页面地址和截图。
+    validations:
+      required: true

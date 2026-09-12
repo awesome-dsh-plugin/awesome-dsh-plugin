@@ -1,0 +1,6 @@
+url: https://github.com/NEVSTOP-LAB/dsh-approval-mode
+name: NEVSTOP-LAB/dsh-approval-mode
+category: security
+description:
+  en: 'Adds an approval-mode toggle next to the permission selector: default approval keeps per-call confirmation, bypass approval auto-approves every tool call while staying in Workspace Write.'
+  zh: '在权限下拉框旁增加「审批模式」开关：默认审批保留逐次确认，绕过审批自动放行所有工具调用，同时保持 Workspace Write 权限。'

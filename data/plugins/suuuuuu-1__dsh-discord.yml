@@ -1,0 +1,6 @@
+url: https://github.com/suuuuuu-1/dsh-discord
+name: suuuuuu-1/dsh-discord
+category: notify
+description:
+  en: 'Discord-native remote controller for DeepSeek Harness: drive persisted coding-agent sessions from DMs, mention-gated guild channels, and threads, with slash commands, progress updates, approvals, structured questions, and image and text attachments.'
+  zh: DeepSeek Harness 的 Discord 原生远程控制器：通过私信、需提及机器人的服务器频道及 Thread 操作持久化的编程 Agent Session，并支持斜杠命令、进度更新、工具审批、结构化问题、图片和文本附件。

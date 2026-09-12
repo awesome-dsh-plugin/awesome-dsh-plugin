@@ -1,0 +1,6 @@
+url: https://github.com/yflmq001/dsh-cost-tracker
+name: yflmq001/dsh-cost-tracker
+category: usage
+description:
+  en: Per-model token cost tracking with configurable cache-hit/miss, output and peak-window pricing, a live session cost bar, and unconfigured-model flags.
+  zh: 按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。

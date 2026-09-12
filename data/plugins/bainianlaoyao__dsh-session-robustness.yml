@@ -1,0 +1,6 @@
+url: https://github.com/bainianlaoyao/dsh-session-robustness
+name: bainianlaoyao/dsh-session-robustness
+category: session
+description:
+  en: 'After official llm-retry (n/5) gives up, keep retrying transient API failures (timeout, transport, rate-limit, 5xx, dropped SSE) on the same open step until success, cancel, or pause; AUTH, QUOTA, and user Stop are never retried.'
+  zh: 官方 llm-retry（n/5）耗尽后，对超时/传输/限流/5xx/SSE 断流等瞬时失败在同一打开 step 上继续重试直到成功、取消或暂停；认证失败、额度耗尽和用户停止不会重试。

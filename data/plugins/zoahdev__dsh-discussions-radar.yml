@@ -1,0 +1,7 @@
+url: https://github.com/zoahdev/dsh-discussions-radar
+name: zoahdev/dsh-discussions-radar
+category: dev
+description:
+  en: 'Official GitHub Discussions radar for DeepSeek Harness: list, filter and search the official boards (Ideas / Q&A / Show Your Plugins! / General / Announcements / Polls) — CLI plus an agent-callable discussions_radar tool, dsh-discussions-radar/v1 reports, zero runtime deps, read-only public API.'
+  zh: 'DeepSeek Harness 官方 Discussions 雷达：列出、筛选、搜索官方讨论区（Ideas / Q&A / Show Your Plugins! / General / Announcements / Polls）——CLI + agent 可调用 discussions_radar 工具，dsh-discussions-radar/v1 报告，零运行时依赖、只读公开 API。'
+# listing updated 2026-08-19 (repo hardened to 10+ commits; submission gate)

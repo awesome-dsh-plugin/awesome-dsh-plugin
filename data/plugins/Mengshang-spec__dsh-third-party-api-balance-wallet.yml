@@ -1,0 +1,6 @@
+url: https://github.com/Mengshang-spec/dsh-third-party-api-balance-wallet
+name: Mengshang-spec/dsh-third-party-api-balance-wallet
+category: usage
+description:
+  en: "Compact DSH wallet panel for a configurable third-party balance API."
+  zh: "第三方 API 接入 DSH 查询余额插件，提供紧凑的钱包余额面板。"

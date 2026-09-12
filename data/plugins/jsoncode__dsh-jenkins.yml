@@ -1,0 +1,6 @@
+url: https://github.com/jsoncode/dsh-jenkins
+name: jsoncode/dsh-jenkins
+category: tools
+description:
+  en: Manages multiple Jenkins servers and triggers jobs from a Settings page, model tools, or a per-workspace "Run Jenkins Job" entry, with a bilingual host + browser UI.
+  zh: 管理多台 Jenkins 服务器，支持从设置页、模型工具或工作区级「执行 Jenkins Job」入口触发构建，宿主 + 浏览器双端、界面中英双语。

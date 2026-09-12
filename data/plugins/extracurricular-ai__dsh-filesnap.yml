@@ -1,0 +1,6 @@
+url: https://github.com/extracurricular-ai/dsh-filesnap
+name: extracurricular-ai/dsh-filesnap
+category: session
+description:
+  en: 'Rewind a DeepSeek Harness conversation and its workspace together, without touching Git: every rewind is a fork, /redo reverses it, and a Rust engine snapshots in milliseconds.'
+  zh: 同步回退 DeepSeek Harness 的对话与工作区，不碰 Git：每次回退都是一个 fork，/redo 可撤销，Rust 引擎毫秒级快照。

@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-tool-json
+name: omdsh-dev/dsh-tool-json
+category: tools
+description:
+  en: JSON queries with a JMESPath subset.
+  zh: JMESPath 子集 JSON 查询。

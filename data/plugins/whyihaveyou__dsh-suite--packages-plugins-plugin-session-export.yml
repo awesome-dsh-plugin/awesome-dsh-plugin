@@ -1,0 +1,6 @@
+url: https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export
+name: whyihaveyou/dsh-suite#plugin-session-export
+category: session
+description:
+  en: Export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source.
+  zh: 把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。

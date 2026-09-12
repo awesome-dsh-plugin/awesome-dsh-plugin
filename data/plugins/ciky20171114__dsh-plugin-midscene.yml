@@ -1,0 +1,6 @@
+url: https://github.com/ciky20171114/dsh-plugin-midscene
+name: ciky20171114/dsh-plugin-midscene
+category: tools
+description:
+  en: AI UI automation via Midscene — android_ui and web_ui tools that tap, type, query, and assert on a real Android device or an already-running Chrome through the ctx.midscene seam.
+  zh: 基于 Midscene 的 AI UI 自动化——android_ui 与 web_ui 工具，通过 ctx.midscene seam 在真实 Android 设备或已运行的 Chrome 上完成点击、输入、查询与断言。

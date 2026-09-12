@@ -1,0 +1,6 @@
+url: https://github.com/zeshuochen/dsh-watch-video
+name: dsh-watch-video
+category: voice
+description:
+  en: 'Subtitle-first video transcription with SRT export, cancellable job controls, and a faster-whisper large-v3 fallback when subtitles are unavailable.'
+  zh: 字幕优先的视频转录，支持 SRT 导出与可取消任务控制；字幕不可用时回退到 faster-whisper `large-v3`。

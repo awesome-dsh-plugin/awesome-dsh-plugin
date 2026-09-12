@@ -1,0 +1,6 @@
+url: https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet
+name: skr311/dsh-codex-pet#dsh-codex-pet
+category: fun
+description:
+  en: Import Codex-style sprite-sheet pets and render them as a floating shell.overlay with a pet library, interactions, and agent-state linkage.
+  zh: 导入/上传 Codex 风格精灵图序列帧宠物，在 DSH Web GUI 以悬浮浮层渲染，含图库管理、交互与 Agent 状态联动。
