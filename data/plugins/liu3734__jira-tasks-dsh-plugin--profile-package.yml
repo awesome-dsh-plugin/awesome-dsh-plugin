@@ -1,0 +1,6 @@
+url: https://github.com/liu3734/jira-tasks-dsh-plugin/tree/main/profile-package
+name: liu3734/jira-tasks-dsh-plugin#profile-package
+category: ui
+description:
+  en: 'JIRA task panel under the DSH composer: per-workspace project key and optional JQL, listing the issues assigned to the current user with status, priority and issue-type chips, a total count, collapse and refresh, links to JIRA, plus a settings card for the base URL and token with a connection probe.'
+  zh: 'DSH 输入框下方的 JIRA 任务面板：按工作区配置项目 Key 与可选 JQL，展示指派给当前用户的问题，带状态、优先级与类型标签、总数徽标、收起与刷新、跳转 JIRA，并在设置页卡片配置 JIRA 地址与令牌（含连接测试）。'

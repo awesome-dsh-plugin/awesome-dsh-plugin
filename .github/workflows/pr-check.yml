@@ -83,11 +83,23 @@ jobs:
         # there for another purpose.
         run: |
           git fetch -q origin ${{ github.event.pull_request.base.sha }}
+          # Two shapes of "not where readEntries() looks", and the second was
+          # missed for two weeks. `^data/[^/]+\.yml$` catches one directory too
+          # SHALLOW (data/<owner>__<repo>.yml) but not one too DEEP: #3622
+          # landed data/plugins/data/plugins/<name>.yml and went fully green,
+          # its plugin absent from the list, the site and the market while its
+          # author had every reason to think it was published. readEntries()
+          # globs exactly data/plugins/*.yml, so anything at any other depth is
+          # equally invisible — match on that instead of on one wrong shape.
+          #
+          # The file was also invalid YAML, which nothing reported either:
+          # never being read means never being parsed. Two faults covering for
+          # each other is the shape to watch for here.
           misplaced=$(git diff --name-only --diff-filter=A ${{ github.event.pull_request.base.sha }}...HEAD -- data \
-            | grep -E '^data/[^/]+\.yml$' || true)
+            | grep -E '\.yml$' | grep -vE '^data/plugins/[^/]+\.yml$' || true)
           if [ -n "$misplaced" ]; then
             echo "$misplaced" | sed 's/^/  /'
-            echo "::error::Entry files must be added under data/plugins/, not directly in data/. readEntries() only globs data/plugins/*.yml, so a file placed here is never read: the READMEs regenerate without it, every other check passes, and merging the PR changes nothing. Move it with: git mv data/<file>.yml data/plugins/<file>.yml"
+            echo "::error::Entry files must be added as data/plugins/<owner>__<repo>.yml — exactly one level deep. readEntries() globs data/plugins/*.yml and is not recursive, so a file at any other path is never read: the READMEs regenerate without it, every other check passes, and merging the PR lists nothing. Move it with: git mv <file> data/plugins/<owner>__<repo>.yml"
             exit 1
           fi
       - name: READMEs match data/plugins

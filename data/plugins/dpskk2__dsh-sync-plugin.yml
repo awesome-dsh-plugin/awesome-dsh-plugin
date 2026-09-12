@@ -1,0 +1,6 @@
+url: https://github.com/dpskk2/dsh-sync-plugin
+name: dpskk2/dsh-sync-plugin
+category: session
+description:
+  en: Two-way sync of DSH sessions, workspace mappings, settings and patches between machines through your own private GitHub repo (API keys stay machine-local).
+  zh: 通过你自己的 GitHub 私有仓库,在多台电脑间双向同步 DSH 会话、工作区对应关系、设置与托管补丁(API 密钥留在本机)。
