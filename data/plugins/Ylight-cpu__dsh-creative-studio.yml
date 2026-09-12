@@ -1,0 +1,23 @@
+# Submission file for the awesome-dsh-plugin list.
+#
+# Destination in the target repository:
+#   data/plugins/Ylight-cpu__dsh-creative-studio.yml
+#
+# Rules this file follows (from contributing.md):
+#   * one YAML file per plugin; the READMEs are generated — never edit them by hand
+#   * description.en is required and must be accurate (reviewers check claims against the code)
+#   * no marketing words; the sentence ends with a period
+#   * do not hand-write an `npm:` key — npm linkage is picked up automatically
+#   * `tarball:` is recommended when the plugin is not on npm; the URL must be an
+#     https .tgz on GitHub Release hosting and the asset name stays version-free
+#     so `latest/download/` does not rot on the next release
+#   * CI also checks: repo declares dsh.bundle, repo is at least 1 day old,
+#     awesome-lint passes, and at most 3 entries per PR
+
+url: https://github.com/Ylight-cpu/dsh-creative-studio
+name: Ylight-cpu/dsh-creative-studio
+category: skill
+description:
+  en: Image and video production toolkit for DeepSeek Harness - background removal with quality tiers, local inpainting retouch, headline and logo compositing, batch platform-size exports, image QA reports, plus footage inventory, frame extraction, accurate cutting, transition joins, on-screen text, subtitle burn-in, music mixing with fades, smart cover-frame selection and platform-spec video exports; it provisions its own local Python runtime through a bundled bootstrap script.
+  zh: 面向 DeepSeek Harness 的美工与视频剪辑工具包——可分档抠图、局部重绘改图、标题与 logo 合成、平台规格批量导出、图片体检报告，以及素材通览、抽帧、精确裁切、转场拼接、屏幕文案、字幕烧入、配乐淡入淡出、智能封面选帧与平台规格视频导出；通过内置引导脚本自备本地 Python 运行时。
+tarball: https://github.com/Ylight-cpu/dsh-creative-studio/releases/latest/download/dsh-creative-studio.tgz
