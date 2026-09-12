@@ -1,0 +1,6 @@
+url: https://github.com/Mandarin715/dsh-autostart
+name: Mandarin715/dsh-autostart
+category: dev
+description:
+  en: 'Windows boot autostart and one-click restart for the DSH service, from inside DSH: a resident supervisor that outlives the host, so a failed restart cannot leave DSH down; DSH spawned attached to a hidden console the supervisor owns, so no console window appears; plus a restart button, the current tokenised access URL and an optional post-start hook.'
+  zh: Windows 平台的 DSH 服务开机自启与一键重启(都在 DSH 设置页内):由常驻看护进程启动 DSH,它活得比 DSH 久,因此重启失败不会让 DSH 停摆;DSH 依附在看护进程的隐藏控制台上,不再每条命令弹一个控制台窗口;另有设置页重启按钮、当前带 token 的访问地址与可选的服务启动后钩子。
