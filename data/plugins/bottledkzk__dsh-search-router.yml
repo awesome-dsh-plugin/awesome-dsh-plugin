@@ -1,0 +1,7 @@
+url: https://github.com/bottledkzk/dsh-search-router
+name: bottledkzk/dsh-search-router
+category: browser
+tarball: https://registry.npmjs.org/dsh-search-router/-/dsh-search-router-0.1.0.tgz
+description:
+  zh: "多后端搜索路由插件：将 DeepSeek 官方 / AnySearch / Bing / DuckDuckGo / SearXNG 统一包装为 web_search 的 router provider，支持即时切换、当前后端与回退链查询、失败自动回退 DeepSeek 官方搜索；设置面板中英文自适应并支持 Key 脱敏显示。"
+  en: "Multi-backend search router: wraps DeepSeek official / AnySearch / Bing / DuckDuckGo / SearXNG behind one web_search router provider, with live switching, status/fallback-chain visibility, automatic fallback to DeepSeek official search, and a bilingual settings panel with masked key display."
