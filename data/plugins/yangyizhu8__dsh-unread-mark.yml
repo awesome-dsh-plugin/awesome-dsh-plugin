@@ -1,0 +1,7 @@
+url: https://github.com/yangyizhu8/dsh-unread-mark
+name: yangyizhu8/dsh-unread-mark
+category: session
+tarball: https://github.com/yangyizhu8/dsh-unread-mark/releases/download/v0.1.0/dsh-unread-mark-0.1.0.tgz
+description:
+  en: "Session-row unread mark for DeepSeek Harness: the session menu gains Mark unread and Unmark, pinning a red dot before the session title that survives reload and opening until cleared, both entries disabled while the built-in green finished-unopened dot is present."
+  zh: "会话行未读标记：会话菜单新增「标记未读」「取消标记」，在会话标题前钉一个刷新与点开都不会消失的红点（与系统绿点区分），绿点存在时两项禁用，标记经服务端持久化。"
