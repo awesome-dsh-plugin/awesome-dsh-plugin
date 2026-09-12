@@ -1,0 +1,7 @@
+url: https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/mcwiki-search
+name: Yinxe/deepseek-harness-plugins#mcwiki-search
+category: tools
+tarball: https://github.com/Yinxe/deepseek-harness-plugins/releases/latest/download/dshp-mcwiki-search-latest.tgz
+description:
+  en: 'Query Chinese Minecraft Wiki (MediaWiki API) and convert raw wiki text into clean AI-readable output — search, page intro, full-page Markdown, and random entry; templates, references, images and cross-language links are stripped before reaching the model.'
+  zh: '查询中文 Minecraft Wiki（MediaWiki API），把搜索结果与页面全文完整转换为 AI 可直接阅读的干净文本——搜索、引言、全文 Markdown、随机条目；模板、引用、图片、跨语言链接等噪声在插件内部全部清洗完毕。'
