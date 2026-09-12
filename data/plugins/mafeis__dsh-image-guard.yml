@@ -1,0 +1,7 @@
+url: https://github.com/mafeis/dsh-image-guard
+name: mafeis/dsh-image-guard
+category: vision
+description:
+  en: 'Trims the oldest images from outgoing chat requests and, when the provider rejects the image count with HTTP 400, parses the limit from the error and retries with fewer images.'
+  zh: '裁剪即将发出请求中的历史图片，并在上游因图片数量返回 400 时解析该上限并按更少的图片重试。'
+tarball: https://github.com/mafeis/dsh-image-guard/releases/latest/download/dsh-image-guard.tgz
