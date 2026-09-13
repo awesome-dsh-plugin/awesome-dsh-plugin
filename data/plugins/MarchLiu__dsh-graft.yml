@@ -1,0 +1,6 @@
+url: https://github.com/MarchLiu/dsh-graft
+name: MarchLiu/dsh-graft
+category: productivity
+description:
+  en: 'Graft, forward and fork DSH sessions: read a slice of one session log, export it, fork at a turn boundary, or forward a selection into another session as a self-contained graft message.'
+  zh: '移植、转发与分叉 DSH 会话:读取会话日志切片并导出,在回合边界分叉会话,或将选中部分作为独立 graft 消息转发到另一会话(可为全新会话)。'
