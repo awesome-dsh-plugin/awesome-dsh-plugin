@@ -1,0 +1,7 @@
+url: https://github.com/XXXXXQ-0206/dsh-prompt-for-me
+name: XXXXXQ-0206/dsh-prompt-for-me
+category: ui
+tarball: https://github.com/XXXXXQ-0206/dsh-prompt-for-me/releases/latest/download/dsh-prompt-for-me.tgz
+description:
+  en: Adds a composer button that optimizes the current prompt or designs the next one from the current session and project context.
+  zh: 在输入栏添加按钮，可优化当前提示词，或结合会话与项目上下文设计下一步提示词。
