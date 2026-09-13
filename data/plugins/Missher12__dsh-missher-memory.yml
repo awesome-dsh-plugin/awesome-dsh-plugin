@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/dsh-missher-memory
+name: Missher12/dsh-missher-memory
+category: memory
+description:
+  en: Project-scoped local memory with review-before-recall, source references, reversible consolidation, and a portable Cordis service; the Harness adapter provides search and settings, with optional Brain integration.
+  zh: 按项目隔离的本地记忆，支持审核后检索、来源追溯、可回滚整理与通用 Cordis 服务；Harness 适配提供搜索和设置页，可选接入 Brain。
+tarball: https://github.com/Missher12/dsh-missher-memory/releases/download/v0.3.0-cordis.0/dsh-missher-memory-0.3.0-cordis.0.tgz

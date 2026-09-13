@@ -1,0 +1,5 @@
+url: https://github.com/leetom314/dsh-tiered-memory
+name: leetom314/dsh-tiered-memory
+category: memory
+description:
+  en: 'Tiered persistent memory (user/env/project) with per-tier char budgets and semantic query routing; full layers refuse writes instead of silently evicting.'

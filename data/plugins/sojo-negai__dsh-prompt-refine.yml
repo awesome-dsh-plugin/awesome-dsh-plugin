@@ -1,0 +1,5 @@
+url: https://github.com/sojo-negai/dsh-prompt-refine
+name: sojo-negai/dsh-prompt-refine
+category: tools
+description:
+  en: 'A ✨ button left of the send button: reads the draft and recent turns, asks the configured model for three suggestions each pairing an issue with a patch, lets you tick them individually with a live preview of the merged prompt, and writes the result back to the composer without sending.'

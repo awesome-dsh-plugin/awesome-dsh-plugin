@@ -1,0 +1,6 @@
+url: https://github.com/duyanta123/dsh-test-insight
+name: duyanta123/dsh-test-insight
+category: dev
+description:
+  en: 'Test-insight plugin that turns repository facts and change risk into evidence-backed test plans and isolated, reviewable test drafts.'
+  zh: '测试洞察插件：把仓库事实与变更风险转化为有证据支撑的测试计划与隔离、可人工审查的测试草稿。'

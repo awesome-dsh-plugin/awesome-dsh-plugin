@@ -1,0 +1,6 @@
+url: https://github.com/wild-River2016/dsh-xiaohe-canvas
+name: wild-River2016/dsh-xiaohe-canvas
+category: ui
+description:
+  en: Connects DeepSeek Harness to Xiaohe Canvas, letting you create nodes, build flows, and trigger AI image and video generation from chat.
+  zh: 将 DeepSeek Harness 接入小禾画布，支持在对话中创建节点、构建画布流程并触发 AI 生图和视频。

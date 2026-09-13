@@ -1,0 +1,7 @@
+url: https://github.com/CCYellowStar2/dsh-astrbot-ingress
+name: CCYellowStar2/dsh-astrbot-ingress
+category: remote
+tarball: https://github.com/CCYellowStar2/dsh-astrbot-ingress/releases/latest/download/dsh-astrbot-ingress.tgz
+description:
+  en: 'Drive a local DeepSeek Harness agent from QQ and other IM channels through AstrBot: send tasks with /dsh, continue by quoting or @-mentioning the bot, answer approvals and ask_user_question prompts from chat (in parallel with the DSH web UI), and get results, inline images and file cards back. Ships session / workspace / model / permission commands, /compact and /last recovery, three progress-display modes, and group-shared or per-user session scoping.'
+  zh: '把本机 DeepSeek Harness agent 接到 AstrBot，从 QQ 等 IM 渠道驱动它：用 /dsh 派活、引用或 @ 机器人续聊、在聊天里回答审批与 ask_user_question（与 DSH 网页并行），结果、内联图片与文件卡片发回。含会话 / 工作区 / 模型 / 权限命令、/compact 与 /last 找回、三档过程显示、整群共用或按人隔离的会话范围。'

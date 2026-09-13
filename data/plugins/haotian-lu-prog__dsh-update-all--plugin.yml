@@ -1,0 +1,6 @@
+url: https://github.com/haotian-lu-prog/dsh-update-all/tree/main/plugin
+name: haotian-lu-prog/dsh-update-all#plugin
+category: dev
+description:
+  en: 'Adds a Check for Updates row in Settings and a right-sidebar card that update the DSH CLI and every profile plugin, with npm channel selection (auto/stable/next/alpha), minimum release age, backups, one-click rollback and a test reminder for the badge and browser notification.'
+  zh: '在设置里加入「检查更新」入口和右侧边栏卡片，用于更新 DSH CLI 和所有 profile 插件；支持 npm 频道（auto/stable/next/alpha）、最小释出时间、备份、一键回滚，以及用于验证角标和浏览器通知的测试提醒。'
