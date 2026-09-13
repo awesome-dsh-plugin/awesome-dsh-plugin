@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-cert-mcp
+name: PerryLink/dsh-cert-mcp
+category: dev
+description:
+  en: 'Read-only MCP server exposing the dsh-plugin-certification registry: certification grades, snapshot dates, and five-dimension evidence for DeepSeek Harness plugins, over stdio with zero runtime dependencies.'
+  zh: 只读 MCP 服务器，暴露 dsh-plugin-certification 认证注册表：认证等级、快照日期与 DeepSeek Harness 插件五维证据，stdio 传输、零运行时依赖。
