@@ -2,5 +2,5 @@ url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-mcp-mana
 name: wingsky-1/dsh-plugin-hub#packages/dsh-mcp-manager
 category: tools
 description:
-  en: 'MCP server manager: side-panel with per-status server listing, stdio/streamable-http setup forms, mcpServers JSON import, exponential-backoff reconnect, and tools registered to the model as mcp__<server>__<tool>.'
-  zh: MCP 服务器管理器：侧边栏面板按状态分级展示服务器，支持 stdio/streamable-http 表单接入与 mcpServers JSON 导入，断线指数退避重连，工具以 mcp__<server>__<tool> 注册给模型。
+  en: 'MCP server manager (stdio / streamable-http): per-working-directory project and global config tiers; project-level MCP collapsed into 4 atomic tools through a middleware layer by default (`middleware: all` folds in global servers too, hot-switchable in the settings page); workspace isolation prevents cross-project interference; configs keep `${ENV}` references only, with no plaintext secrets on disk; runtime registration API for other plugins to inject MCP servers.'
+  zh: 'MCP 服务器管理器（stdio / streamable-http）：按工作目录分项目级/全局两级配置；项目级 MCP 默认经中间层收敛为 4 个原子工具（`middleware: all` 连同全局服务器一并收敛，设置页热切换）；工作空间隔离防串台；配置只存 `${ENV}` 引用、不落盘明文密钥；提供运行时注册接口供其他插件注入 MCP。'
