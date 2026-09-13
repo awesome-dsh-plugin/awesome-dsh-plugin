@@ -1,0 +1,6 @@
+url: https://github.com/Jueze-2019/dsh-redteam-mode/tree/main/packages/redteam-bundle
+name: Jueze-2019/dsh-redteam-mode#packages/redteam-bundle
+category: security
+description:
+  en: "Red-team engagement mode: send one target organization name and a four-role agent team (recon, vulnerability detection, exploitation, internal pivot) runs the engagement, landing every finding in a local SQLite fact base with a persistent right-side console (asset mapping, a five-stage attack chain, scoring targets, an evidence report and a cross-engagement POC/EXP knowledge base); ships 13 native skills and 48 redteam_* tools."
+  zh: "红队作战模式：只发一个靶标单位名称，四个角色（信息收集/漏洞检测/漏洞利用/内网渗透）的智能体团队自动推进演练，所有发现落进本机 SQLite 事实库，右侧常驻控制台看资产测绘、五阶段攻击链、得分目标、复现报告与跨靶标 POC/EXP 知识库；随包分发 13 个原生技能与 48 个 redteam_* 模型工具。"
