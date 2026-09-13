@@ -1,0 +1,16 @@
+# dshmarket submission entry for dsh-answer-reviewer.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/bycall__dsh-answer-reviewer.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch) ✓
+#   - repo must be >= 1 day old, >= 10 commits
+#   - filename must equal slugFor(url): <owner>__<repo>.yml
+#   - only keys: url, name, category, description, tarball (no `npm:` key — npm
+#     mapping is resolved automatically from the repository)
+url: https://github.com/bycall/dsh-answer-reviewer
+name: dsh-answer-reviewer
+category: agi
+description:
+  en: "Agentic answer reviewer for DeepSeek Harness: each final assistant turn is re-reviewed by a separate LLM graded 1-100; below-threshold scores steer the agent back with concrete feedback. Live config over a 127.0.0.1 HTTP server, plus a right-sidebar config tab via dsh-better-sidebar."
+  zh: "智能体回答审查器：每一轮 agent 的最终输出由独立 LLM 重新打分（1-100），低于阈值时携带具体反馈引导 agent 自我修正。配置经 127.0.0.1 本地 HTTP 服务实时修改，也支持 dsh-better-sidebar 侧栏配置页。"

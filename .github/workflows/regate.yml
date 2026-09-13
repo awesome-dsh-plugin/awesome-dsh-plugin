@@ -63,21 +63,38 @@ jobs:
             const runBySha = new Map()
             for (const r of runs.data.workflow_runs) if (!runBySha.has(r.head_sha)) runBySha.set(r.head_sha, r.id)
 
-            // When did the gate last change? Any verdict older than that was
-            // reached by code that is gone. Found the hard way: a gate bug fixed
-            // on 2026-08-17 left open PRs showing "all entries pass" for entries
-            // that the current gate rejects outright.
-            let gateChangedAt = 0
-            for (const path of ['.github/workflows/pr-gate.yml', 'scripts/check-submission.mjs']) {
-              try {
-                const { data } = await github.rest.repos.listCommits({ owner, repo, path, per_page: 1 })
-                const at = Date.parse(data[0]?.commit?.committer?.date ?? '')
-                if (at > gateChangedAt) gateChangedAt = at
-              } catch (e) {
-                if (e.status === 403 || e.status === 429) { core.warning('rate limited reading gate history'); break }
+            // When did a verdict's own code last change? Anything decided before
+            // that was decided by code that is gone. Found the hard way twice:
+            //
+            // - the gate: a bug fixed on 2026-08-17 left open PRs showing "all
+            //   entries pass" for entries the current gate rejects outright;
+            // - `check`: it builds the WHOLE catalog, so it fails for reasons
+            //   that have nothing to do with the pull request under it. From
+            //   2026-09-08 to 2026-09-12 an added-date derivation bug on main
+            //   (#4731) turned it red on every open PR at once.
+            const lastChange = async (paths, label) => {
+              let at = 0
+              for (const path of paths) {
+                try {
+                  const { data } = await github.rest.repos.listCommits({ owner, repo, path, per_page: 1 })
+                  const t = Date.parse(data[0]?.commit?.committer?.date ?? '')
+                  if (t > at) at = t
+                } catch (e) {
+                  if (e.status === 403 || e.status === 429) { core.warning(`rate limited reading ${label} history`); break }
+                }
               }
+              core.info(`${label} last changed: ${at ? new Date(at).toISOString() : 'unknown'}`)
+              return at
             }
-            core.info(`gate last changed: ${gateChangedAt ? new Date(gateChangedAt).toISOString() : 'unknown'}`)
+
+            const gateChangedAt = await lastChange(
+              ['.github/workflows/pr-gate.yml', 'scripts/check-submission.mjs'], 'gate')
+            // Every input `check` runs. `scripts/lib` is where the derivation
+            // fix landed, so a directory path is deliberate: listCommits accepts
+            // one and reports the newest commit touching anything beneath it.
+            const checkChangedAt = await lastChange(
+              ['.github/workflows/pr-check.yml', 'scripts/build-site.mjs',
+               'scripts/generate-readme.mjs', 'scripts/lib'], 'check')
 
             const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 })
             // Oldest first. pulls.list answers newest-first, and only
@@ -142,9 +159,49 @@ jobs:
               const runId = runBySha.get(pr.head.sha) ?? runIdFrom(check?.details_url)
               if (!runId) continue // nothing to re-trigger
 
-              // A failing `check` means the PR's own content is wrong; time
-              // will not fix that, and re-running just burns quota.
-              if (check && check.conclusion !== 'success') continue
+              // A failing `check` usually means the PR's own content is wrong;
+              // time will not fix that, and re-running just burns quota.
+              //
+              // Usually — but `check` also builds the whole catalog, so it goes
+              // red for things on main that the submitter cannot touch, and
+              // then this guard becomes a deadlock: the red skips the PR, the
+              // skip means nothing re-runs it, and the red never clears. That
+              // is not hypothetical. #4731 held `check` red on every open PR
+              // for four days; the sweep skipped all of them, so a submission
+              // blocked only on "repository is 0.7 days old — this check
+              // re-runs by itself and should clear in about 8h" (#4785) was
+              // still red three days later. Nothing but an author push could
+              // free it, and the author had been told not to push.
+              //
+              // So a red that predates the last change to the check's own code
+              // is stale evidence, exactly like a stale gate verdict, and is
+              // not allowed to veto the re-run. Self-limiting: the re-run
+              // restamps the check, so a PR that is genuinely broken fails
+              // again with a current timestamp and is skipped from then on.
+              //
+              // KNOW WHAT THE RE-RUN CAN AND CANNOT DO. `reRunWorkflow` replays
+              // the run's stored `head_sha`. For a `pull_request` event that is
+              // the merge commit GitHub resolved when the run was FIRST created,
+              // so the replay checks out the base as it stood then — not main as
+              // it stands now. Measured on #4725: attempt 2 started 2026-09-13
+              // against a head_sha dated 2026-09-09 and printed "3432 entries",
+              // the count from that day, then failed on the same #4731 bug that
+              // main had already fixed.
+              //
+              // Consequence, and it is the whole reason this paragraph exists:
+              // for a pull request whose merge commit falls INSIDE a bad window
+              // on main, a re-run cannot produce a true verdict. It re-fails,
+              // now with today's timestamp, and afterwards reads as "checked
+              // today, broken today" when it is neither. Only a new event — an
+              // author push, or a maintainer merging locally — resolves those.
+              // The re-run is still worth spending once, because the gate is a
+              // separate App check that DOES re-evaluate against current data,
+              // and refreshing the gate verdict is most of the value. Do not
+              // read a red `check` here as a statement about the submission
+              // without looking at what tree it ran on.
+              const checkRanAt = Date.parse(check?.completed_at ?? '')
+              const checkStale = checkChangedAt && (!checkRanAt || checkRanAt < checkChangedAt)
+              if (check && check.conclusion !== 'success' && !checkStale) continue
 
               // Three reasons to re-run, and only three.
               const ranAt = Date.parse(gate?.completed_at ?? '')
@@ -186,9 +243,19 @@ jobs:
               //    human re-check, which is not a control.
               const passStale = gate?.conclusion === 'success' && ranAt && (Date.now() - ranAt) > PASS_STALE_MS
 
+              // 5. `check` is red on evidence older than the code it ran. The
+              //    four reasons above all read the GATE's verdict, so a PR whose
+              //    gate is green and current but whose `check` went red during a
+              //    main-side outage matched none of them — it just sat there,
+              //    unmergeable and unexamined. It is blocking, not speculative:
+              //    a red check is the thing standing between the author and a
+              //    merge, and no one else is going to clear it.
+              const checkStaleRed = check && check.conclusion !== 'success' && checkStale
+
               if (never) blocking.push([pr, runId, 'never gated'])
               else if (unverified) blocking.push([pr, runId, 'gate failed open (neutral) — never verified'])
               else if (aged) blocking.push([pr, runId, 'aged in'])
+              else if (checkStaleRed) blocking.push([pr, runId, 'check failed before the current check code'])
               else if (stale) revalidate.push([pr, runId, 'verdict predates the current gate'])
               else if (passStale) speculative.push([pr, runId, `passing verdict is ${Math.round((Date.now() - ranAt) / 3600000)}h old`])
             }

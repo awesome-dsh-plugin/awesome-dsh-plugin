@@ -1,0 +1,7 @@
+url: https://github.com/uigdwunm/dsh-conversation-jump
+name: uigdwunm/dsh-conversation-jump
+category: ui
+tarball: https://github.com/uigdwunm/dsh-conversation-jump/releases/download/v0.1.5/dsh-conversation-jump-0.1.5.tgz
+description:
+  en: A rail of four circular buttons in the DSH Web conversation that step to the previous or next user message, or to the top or bottom, paging older history in automatically.
+  zh: 在 DSH Web 对话区提供一组圆形按钮，逐条跳到上一条或下一条用户消息，或直接到顶部与底部，并自动翻页加载更早历史。

@@ -1,5 +1,8 @@
 {
  "https://github.com/shengyvself/dsh-autoresume": "2026-08-18",
+ "https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-ding-sound": "2026-09-08T15:01:39.000Z",
+ "https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-wx-push": "2026-09-08T15:01:39.000Z",
+ "https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-wx-remote": "2026-09-08T15:01:39.000Z",
  "https://github.com/buhuikongpan/dsh-project-context": "2026-08-18",
  "https://github.com/01Virex/dsh-status-rotator": "2026-08-14",
  "https://github.com/030611/dsh-telemetry-redactor": "2026-08-14",
@@ -445,5 +448,13 @@
  "https://github.com/Tabbit-Browser/dsh-tabbit": "2026-08-21",
  "https://github.com/omdsh-dev/stent": "2026-08-13",
  "https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tavily": "2026-08-15",
- "https://github.com/polaris-smart/dsh-devices": "2026-08-19"
+ "https://github.com/polaris-smart/dsh-devices": "2026-08-19",
+ "https://github.com/ding112/MoneyPal/tree/main/packages/dsh-moneypal": "2026-09-07",
+ "https://github.com/pn1024/dsh-skill-market": "2026-09-04",
+ "https://github.com/Dayi-Z/dsh-learn-wiki": "2026-08-29",
+ "https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-notify": "2026-08-26",
+ "https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-guardian": "2026-08-26",
+ "https://github.com/winditer/dsh-temp-chat": "2026-08-19",
+ "https://github.com/agentscope-ai/ReMe/tree/main/integrations/dsh": "2026-08-27",
+ "https://github.com/v587d/capital-generation": "2026-08-16"
 }

@@ -1,0 +1,6 @@
+url: https://github.com/toustifer/dsh-harvest
+name: toustifer/dsh-harvest
+category: tools
+description:
+  en: "Multi-platform research and deep search pipeline: harvest_scout for parallel discovery across GitHub, Web, Twitter, Reddit, Xiaohongshu, Bilibili, and YouTube, harvest_deep_research for automated comprehensive research reports, plus extract, cross-source verification, and credibility auditing."
+  zh: "多平台调研与深度搜索流水线：harvest_scout 并行发现（覆盖 GitHub、Web、推特、Reddit、小红书、B站、YouTube 等通道），harvest_deep_research 自动化长篇综合研报生成，外加穿透抓取、跨源交叉验证与五维来源可信度审计。"

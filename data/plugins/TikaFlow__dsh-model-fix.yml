@@ -1,6 +1,7 @@
 url: https://github.com/TikaFlow/dsh-model-fix
 name: TikaFlow/dsh-model-fix
 category: model
+tarball: https://github.com/TikaFlow/dsh-model-fix/releases/latest/download/dsh-model-fix.tgz
 description:
-  en: Auto-fills reasoning-effort levels, context windows, output limits and image modality for models from unofficial (custom) providers, with data from models.dev.
-  zh: 为所有非官方（自定义）提供商的模型自动填充推理级别、最大上下文、输出上限与图片模态，数据来自 models.dev。
+  en: Auto-fills reasoning-efforts, context windows, output limits and image modality for models from unofficial (custom) providers, with data from models.dev. Also provides setting cards to control plugin's behavior.
+  zh: 为非官方（自定义）提供方的模型自动填充推理级别、最大上下文、输出上限与图片模态，数据来自 models.dev。同时提供了设置卡片以控制插件行为。

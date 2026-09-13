@@ -2,7 +2,6 @@ url: https://github.com/fewoot/dsh-whale-particles
 name: fewoot/dsh-whale-particles
 category: ui
 description:
-  en: 'Interactive dot-matrix background for the DSH web UI: particles form the DeepSeek whale or your transparent-PNG photo, each dot carries its own smooth force; mouse disturbs them and an auto screensaver mode sweeps 360-degree waves and full-screen breathing. '
-  zh: '给 DSH Web 加一个点阵互动背景:点阵可组成鲸鱼或你上传的透明 PNG 照片,每颗粒子有自己独立的平滑外力;既能手动随鼠标扰动,也能切换自动屏保模式(360° 任意方向扫波 + 全屏呼吸躁动),参数面板支持恢复默认。'
-# 非 npm 分发时加这行(tag 与 Release 一致):
-# tarball: https://github.com/fewoot/dsh-whale-particles/releases/download/v0.1.0/dsh-whale-particles-0.1.0.tgz
+  en: 'Dot-matrix backdrop for the DSH Web UI: the dots form the DeepSeek whale or a transparent PNG you import (alpha-masked), each dot carries its own low-frequency force and follows the cursor in manual mode, while an auto screensaver mode sweeps 360-degree waves and full-screen breathing across the artwork; sliders and toggles live under Settings > Plugins.'
+  zh: '给 DSH Web 加一层点阵背景:点阵可组成鲸鱼剪影,或导入透明 PNG 按 alpha 取主体;每颗粒子各自持有低频外力,手动模式下跟随光标扰动,自动屏保模式则用 360° 任意方向的扫波与全屏呼吸带动整幅图案;鼠标/自动与鲸鱼/照片在参数面板里切换,入口在 设置 → 插件。'
+tarball: https://github.com/fewoot/dsh-whale-particles/releases/download/v0.3.0/dsh-whale-particles-0.3.0.tgz

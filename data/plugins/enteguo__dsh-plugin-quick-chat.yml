@@ -1,0 +1,6 @@
+url: https://github.com/enteguo/dsh-plugin-quick-chat
+name: enteguo/dsh-plugin-quick-chat
+category: ui
+description:
+  en: Adds a Quick Chat entry to the Web UI sidebar that opens a floating chat window with its own model and reasoning-effort picker, optionally seeded with the current session's transcript, and keeps every side conversation in a resumable, renamable, deletable history.
+  zh: 在侧边栏加入「快速会话」入口，打开一个小窗对话，可切换模型与思考强度、可选携带当前主会话全文，历史可继续、重命名、删除。
