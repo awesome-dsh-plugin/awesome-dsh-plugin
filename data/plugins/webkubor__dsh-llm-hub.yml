@@ -1,0 +1,6 @@
+url: https://github.com/webkubor/dsh-llm-hub
+name: webkubor/dsh-llm-hub
+category: model
+description:
+  en: 'Wires model discovery and an account-balance row onto DSH''s official DeepSeek direct route (deepseek-official), which its adapter never hooked up: the Models page''s "Fetch available models" button now asks api.deepseek.com/models live instead of waiting for a release to refresh the built-in catalog, and the DeepSeek provider card renders the account balance, granted/topped-up split, and availability, refreshed from a same-origin route that refuses cross-site reads.'
+  zh: '给 DSH 的 DeepSeek 官方直连路由（deepseek-official）接上它的适配器一直没接的两件事：Models 页的「获取可用模型」按钮改为实时查询 api.deepseek.com/models，不必再等发版刷新内置目录；DeepSeek 的 provider 卡片上渲染账户余额、赠送/充值拆分与可用性，数据来自一条拒绝跨站读取的同源路由。'
