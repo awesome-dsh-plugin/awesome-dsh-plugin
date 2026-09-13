@@ -1,0 +1,6 @@
+url: https://github.com/tmeeli/dsh-auto-goal-resume
+name: tmeeli/dsh-auto-goal-resume
+category: session
+description:
+  en: "Automatically resumes active goal sessions after DSH restart; long-running tasks continue without a manual nudge."
+  zh: DSH 重启后自动续跑有活跃目标的会话,无需人工说「继续」。

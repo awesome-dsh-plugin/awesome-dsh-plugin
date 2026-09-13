@@ -1,0 +1,6 @@
+url: https://github.com/v587d/capital-generation
+name: v587d/capital-generation
+category: tools
+description:
+  en: 'China A-share financial data MCP server for the harness: 11 fin_data__* tools (quotes/K-lines/financials/calendar/special-data/announcements/EDB/reconcile/funds/indices) over THS free official REST (primary) + AKShare (fallback) + Wind (exclusive domains), with observable degradation, context-budget compression (result-side -72.2% measured), and an offline 10-year market-data lake; BYOK.'
+  zh: 中国 A 股金融数据 MCP server：11 个 fin_data__* 工具（行情/K线/财务/日历/特色数据/公告/EDB/对账/基金/指数），同花顺免费官方 REST 主干 + AKShare 兜底 + Wind 独家域，降级全程可观测；上下文压缩（实测结果侧 -72.2%）；离线 10 年数据湖；BYOK 零平台密钥。

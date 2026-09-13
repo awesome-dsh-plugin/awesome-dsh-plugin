@@ -3,6 +3,7 @@
 //   gone       repo 404
 //   archived   repo archived
 //   dormant    no push in DORMANT_MONTHS months
+//   subpath-gone  the entry's subdirectory is gone (repo alive, moved)
 //   unbundled  dsh.bundle no longer found anywhere in the tree
 //
 // Findings go into one tracking issue (created or updated in place, matched
@@ -195,9 +196,20 @@ async function hasBundle(repo, branch, sub) {
   // siblings' manifests say nothing about it: dsh-desktop-base and
   // dsh-skill-explorer both sit in repositories with dozens of bundled
   // packages, and neither is one of them.
+  // Two different failures hide behind one `false` here, and they need
+  // different handling, so tell them apart. A missing package.json at the
+  // subpath means the DIRECTORY is gone — the author restructured, and the
+  // bundle is usually alive and well one directory over. A package.json that
+  // is there but no longer declares dsh.bundle is the real unbundling.
+  //
+  // Reporting the first as "dsh.bundle no longer found in any package.json"
+  // sends the maintainer to open a deadline for the author when the actual fix
+  // is a one-line repoint that costs the author nothing. Both baosfeng
+  // subpaths sat on the wrong label for a week before someone chased them by
+  // hand: `plugins/dsh-notify` had simply become `plugins/dsh-my-notify`.
   if (sub) {
     const m = await manifest(repo, branch, `${sub}/package.json`)
-    if (m === false) return false
+    if (m === false) return 'subpath-gone'
     if (m === null) return null
     return Boolean(m?.dsh?.bundle)
   }
@@ -256,6 +268,12 @@ async function scan(entry, meta) {
 
   const bundled = await hasBundle(repo, m.branch, sub)
   if (bundled === null) return INCONCLUSIVE
+  if (bundled === 'subpath-gone') {
+    return {
+      kind: 'subpath-gone',
+      detail: `\`${sub}/\` no longer exists in the repository — the published install command points at \`#path:/${sub}\``,
+    }
+  }
   if (bundled === false) return { kind: 'unbundled', detail: 'dsh.bundle no longer found in any package.json' }
   return null
 }
@@ -295,6 +313,10 @@ for (let i = 0; i < entries.length; i += CONCURRENCY) {
 const KINDS = [
   ['gone', 'Repository gone (404)'],
   ['archived', 'Archived'],
+  // Above `unbundled` on purpose: this is the section a maintainer can usually
+  // clear the same day by repointing the url, while `unbundled` means opening
+  // a deadline and waiting a week.
+  ['subpath-gone', 'Subpath gone (repo alive, directory moved)'],
   ['unbundled', '`dsh.bundle` removed'],
   ['dormant', `Dormant (no push in ${DORMANT_MONTHS}+ months)`],
 ]
@@ -329,6 +351,8 @@ if (DRY) process.exit(0)
 const stamp = new Date().toISOString().slice(0, 10)
 const body = [
   `Weekly scan of every listed entry, ${stamp}. **Nothing has been removed** — each item below needs a human decision: remove the entry (delete its \`data/plugins/\` file and regenerate), or keep it and note why.`,
+  '',
+  '**Subpath gone** is the exception, and usually the cheapest section to clear: the repository is alive and the directory simply moved, so the fix is normally to repoint `url` / `name` / the filename at the new location rather than to remove anything. Renaming an entry file resets its derived added-date, so pin the new URL in `data/added-dates.json`, and check `data/screenshots.json` and `data/stars.json` for keys that still carry the old URL — a stale screenshots key fails the build outright.',
   '',
   ...KINDS.flatMap(([kind, label]) => {
     const rows = findings.filter((f) => f.kind === kind)

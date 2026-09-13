@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-resume-screening
+name: wangzhanchao883/dsh-resume-screening
+category: tools
+description:
+  en: 'Resume screening plugin for HR in DeepSeek Harness: ingest up to 100k Word/PDF/Excel resumes into one searchable library with skills / coarse categories / ingest time, auto-ingest & de-dupe new resumes, then screen by plain-language criteria — rule pre-filter in the database plus LLM fine-judge on the shortlisted few, CSV export.'
+  zh: '面向 HR 的简历筛选插件:把 Word/PDF/Excel 简历统一收进简历库建档(技能/粗分类/入库时间),新简历自动入库、重复自动去重;用大白话下指令即可筛选,硬性条件靠库内规则精准过滤,入围的少数人再由 LLM 精判适配度,结果可导出、可追溯。'

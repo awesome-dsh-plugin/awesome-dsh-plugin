@@ -1,0 +1,6 @@
+url: https://github.com/OTTTTTO/dsh-scheduled-send
+name: OTTTTTO/dsh-scheduled-send
+category: workflow
+description:
+  en: 'Scheduled send: fire a drafted message into the bound conversation as a normal user bubble at a set time. Runs host-side, so the browser can stay closed; per-session isolation and restart-safe redelivery.'
+  zh: '定时发送：到点将拟好的消息以正常用户气泡发送到绑定的会话。调度在服务端执行，关闭浏览器不影响发送；会话隔离、重启自动补发。'

@@ -1,0 +1,6 @@
+url: https://github.com/jiekesu967/dsh-markitdown
+name: jiekesu967/dsh-markitdown
+category: tools
+description:
+  en: Adds a markitdown tool that converts PDF, Word, Excel, PowerPoint, HTML, CSV, EPUB and URLs to Markdown, using a real Microsoft MarkItDown installation when one is reachable and a bundled dependency-free converter otherwise.
+  zh: 提供 markitdown 工具，把 PDF、Word、Excel、PowerPoint、HTML、CSV、EPUB 与网址转成 Markdown：能找到真实的 Microsoft MarkItDown 时驱动它，否则使用内置的零依赖转换器。
