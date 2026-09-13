@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-code-poem
+name: weibaohui/dsh-code-poem
+category: fun
+description:
+  en: "Code poetry: surfaces one of 4,598 classical Chinese poems, idioms or allusions as a reading card at session events (after each turn, or when a tool errors), with favorites and expandable annotations and backstories, styled as an ink-wash paper card."
+  zh: 代码如诗：4598 条古诗词、成语、龙文鞭影典故随机成笺，随会话事件自动浮现（回合结束/工具报错时送你一句），可 ❤ 收藏、展开看释义与故事，宣纸墨色的阅读卡片。
