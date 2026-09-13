@@ -1,0 +1,7 @@
+url: https://github.com/1014029855/dsh-codevault
+name: 1014029855/dsh-codevault
+category: memory
+tarball: https://github.com/1014029855/dsh-codevault/releases/latest/download/dsh-codevault.tgz
+description:
+  en: 'Reading archive for dsh: after reading open-source code, capture quick notes or write full deep notes that group into one card per repo / file / symbol, stored as an append-only log of Markdown notes you can open in Obsidian; query your history, browse recent reads, or search your own Obsidian vault and link related notes to a reading record. Nine tools, a /codevault command, and a code-reading skill.'
+  zh: "读开源代码后记一笔的档案：快记或深读笔记按 仓库/文件/符号 归并成一张卡，追加式落盘为可放进 Obsidian 的 Markdown 笔记；可检索历史、回看最近阅读，也能搜你自己 Obsidian 里的笔记、把相关笔记挂到阅读记录上。共 9 个工具、/codevault 命令与 code-reading 技能。"

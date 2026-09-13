@@ -1,0 +1,6 @@
+url: https://github.com/yybukn/dsh-table-attach
+name: yybukn/dsh-table-attach
+category: tools
+description:
+  en: 'Attach tables and documents (xlsx, csv, pdf, zip…) to the DSH composer via paste or drag-and-drop: files are saved into the session workspace and an @reference is inserted.'
+  zh: '把表格与文档（xlsx、csv、pdf、zip…）粘贴或拖拽进 DSH 输入框即可附加：文件会保存到会话工作区并插入 @引用。'

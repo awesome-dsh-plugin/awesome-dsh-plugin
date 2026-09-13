@@ -1,0 +1,7 @@
+url: https://github.com/Lichtspur/deepseek-style-theme
+name: Lichtspur/deepseek-style-theme
+category: theme
+description:
+  en: 'DeepSeek homepage-style theme skin for the dsh web GUI: fluid particle background, glass sidebar and composer, running-subagent progress panel, and DSTT peak-hour color modes.'
+  zh: '为 dsh web GUI 复刻 DeepSeek 官网风格的主题皮肤：流体粒子背景、玻璃拟态侧边栏与输入框、运行中子代理面板与 DSTT 高峰时段配色。'
+tarball: https://github.com/Lichtspur/deepseek-style-theme/releases/latest/download/dsh-external-dsh-deepseek-style-theme-1.39.0.tgz

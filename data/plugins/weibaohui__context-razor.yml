@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/context-razor
+name: weibaohui/context-razor
+category: memory
+description:
+  en: "Context trimmer: lists the current session's context entries with role, preview and ≈token estimate (cl100k), highlights over-threshold items, and removes selected entries exactly without LLM summarization."
+  zh: 上下文剃刀：把当前会话上下文逐条列出（角色/预览/≈token 估算），超阈值标红，勾选后不经 LLM 精确裁剪，删了什么一目了然。

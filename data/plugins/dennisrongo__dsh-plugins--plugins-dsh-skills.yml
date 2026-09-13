@@ -1,0 +1,6 @@
+url: https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-skills
+name: dennisrongo/dsh-plugins#dsh-skills
+category: skill
+description:
+  en: 'Skill provider that installs the whole @dennisrongo/skills catalog as one npm dependency, so skills install and update without cloning or linking directories.'
+  zh: '技能提供者：将整个 @dennisrongo/skills 目录作为一个 npm 依赖安装，无需克隆仓库或链接目录即可完成技能的安装与更新。'

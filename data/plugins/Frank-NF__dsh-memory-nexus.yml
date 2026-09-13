@@ -1,0 +1,6 @@
+url: https://github.com/Frank-NF/dsh-memory-nexus
+name: Frank-NF/dsh-memory-nexus
+category: memory
+description:
+  en: "Integrated memory and context management plugin: four-layer memory system (L2-L4), context compression/trimming/freezing, prompt orchestration, input box UI buttons, and enterprise security with role-based access control."
+  zh: 一体化记忆与上下文管控插件：四层记忆体系（L2–L4）、上下文压缩/裁剪/冻结、提示词编排、输入框 UI 按钮与角色权限控制的企业级安全。

@@ -1,0 +1,6 @@
+url: https://github.com/yjh051108/dsh-routing-suite
+name: yjh051108/dsh-routing-suite
+category: dev
+description:
+  en: 'One repository, three parts: a runtime injector for DSH plugin packages (inject, hot-reload, unload, promote a dev staging tool to the front, route self-heal, plus a settings-page plugin manager that lists, unloads and drags folders in to internalize), a task-aware reasoning-mode router agent preset (router-standard / router-spec / router-react), and a graded two-level task protocol whose six tools (commit_star, lock_stage, revise_do, edit_plan, mark_task, redteam_verdict) pin task state to disk. The injector implementation ships in-tree, so the install carries its own behaviour rather than a dependency list.'
+  zh: '一个仓库三件套：DSH 插件包的运行时注入器（注入、热重载、卸载、开发侧挂区一键转正、路由自愈，外带设置页插件管理：列出、卸载、拖入文件夹内化）、任务感知的思维模式路由 agent 预设（router-standard / router-spec / router-react）、以及分级两级任务协议（commit_star / lock_stage / revise_do / edit_plan / mark_task / redteam_verdict 六个工具，任务状态落盘）。注入器实现直接在库内，安装的是它自己的行为而不是一份依赖清单。'

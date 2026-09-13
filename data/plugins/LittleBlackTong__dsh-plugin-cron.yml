@@ -1,0 +1,6 @@
+url: https://github.com/LittleBlackTong/dsh-plugin-cron
+name: LittleBlackTong/dsh-plugin-cron
+category: workflow
+description:
+  en: 'Cron scheduler for agent tasks: create jobs by natural language or a sidebar UI, inject a user message into a new or fixed session on schedule to trigger a full agent turn, with run history, manual trigger, and live SSE sync.'
+  zh: 'Agent 任务定时调度器：自然语言或侧栏 UI 创建任务，到点向新建/固定会话注入 user 消息触发完整 agent turn，带执行历史、手动触发与 SSE 实时同步。'

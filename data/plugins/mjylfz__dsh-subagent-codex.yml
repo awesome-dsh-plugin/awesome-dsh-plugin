@@ -1,0 +1,6 @@
+url: https://github.com/mjylfz/dsh-subagent-codex
+name: mjylfz/dsh-subagent-codex
+category: tools
+description:
+  en: Adds a subagent_codex tool that delegates tasks to the local OpenAI Codex CLI, running the work in an isolated external process.
+  zh: 新增 subagent_codex 工具，把任务委派给本机 OpenAI Codex CLI 在独立外部进程中执行，与主对话完全隔离。

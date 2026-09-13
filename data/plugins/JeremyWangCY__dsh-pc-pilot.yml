@@ -1,0 +1,7 @@
+url: https://github.com/JeremyWangCY/dsh-pc-pilot
+name: JeremyWangCY/dsh-pc-pilot
+category: tools
+description:
+  en: "Windows computer-use for DeepSeek Harness. The computer tool uses ChatGPT Windows Computer Use action names, reusable window targets, UI Automation, occlusion-immune window screenshots, background-first verified input, and an isolated Chromium browser route."
+  zh: "适用于 DeepSeek Harness 的 Windows 电脑操作插件。computer 工具采用 ChatGPT Windows Computer Use 动作名称，支持可复用窗口目标、UIA 无障碍定位、遮挡免疫窗口截图、后台优先的验证输入和隔离 Chromium 浏览器通道。"
+tarball: https://github.com/JeremyWangCY/dsh-pc-pilot/releases/download/v0.3.1/dsh-pc-pilot-0.3.1.tgz

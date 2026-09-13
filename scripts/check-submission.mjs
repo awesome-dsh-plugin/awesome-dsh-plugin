@@ -399,7 +399,14 @@ async function check(entry) {
     const ageDays = (Date.now() - new Date(meta.body.created_at).getTime()) / 86400000
     if (ageDays < MIN_AGE_DAYS) {
       const hours = Math.ceil((MIN_AGE_DAYS - ageDays) * 24)
-      problems.push(`repository is ${ageDays.toFixed(1)} days old (needs ${MIN_AGE_DAYS}) — resubmit in about ${hours}h, nothing is held against a resubmission`)
+      // Do NOT tell people to resubmit. This is the only failure that time
+      // alone clears, and `regate.yml` re-runs the gate on exactly this
+      // wording every six hours (its `aged` rule matches /days old/), so the
+      // verdict flips on its own. The old text said "resubmit in about Nh",
+      // which sent authors off to close and reopen, or to force-push an empty
+      // commit, to buy something they already had. Leave the pull request
+      // alone and it goes green by itself.
+      problems.push(`repository is ${ageDays.toFixed(1)} days old (needs ${MIN_AGE_DAYS}) — nothing to do: this check re-runs by itself and should clear in about ${hours}h. No need to resubmit, push, or close and reopen; the age bar is the only thing failing here.`)
     }
   }
   return { problems, unverified }

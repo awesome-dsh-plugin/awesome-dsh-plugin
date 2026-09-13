@@ -1,0 +1,6 @@
+url: https://github.com/deepseekbluefish/dsh-screenshot-plugin
+name: deepseekbluefish/dsh-screenshot-plugin
+category: ui
+description:
+  en: 'WeChat-style in-app screenshot button: drag a region, fine-tune with 8 resize handles, Enter to capture and Esc to cancel; auto-numbered PNGs plus a [Shot N HH:mm] marker written into the composer. Windows-only, tested on DeepSeek Harness Desktop.'
+  zh: '微信式界面内截屏按钮：拖动框选、8 个手柄微调，Enter 确认截取、Esc 取消；PNG 自动编号保存，[Shot N HH:mm] 标记自动写入输入框。仅 Windows，已在 DeepSeek Harness Desktop 实测。'

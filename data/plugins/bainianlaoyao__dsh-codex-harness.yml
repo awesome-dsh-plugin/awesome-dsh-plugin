@@ -1,0 +1,6 @@
+url: https://github.com/bainianlaoyao/dsh-codex-harness
+name: bainianlaoyao/dsh-codex-harness
+category: model
+description:
+  en: 'Codex-shaped coding tools and agent presets for GPT models on DeepSeek Harness: exec_command, write_stdin, apply_patch and view_image, plus OpenAI Chat Completions and Responses API routes, bridged to DSH-native plan, ask, approval and compaction. Long-running commands become DSH background jobs with bounded head/tail output readable through job_output, and each subagent type can be pinned to its own preset, provider, model and reasoning effort.'
+  zh: '面向 DeepSeek Harness 上 GPT 模型的 Codex 风格编码工具与 agent 预设：exec_command、write_stdin、apply_patch、view_image，以及 OpenAI Chat Completions 与 Responses API 两条路由，并桥接 DSH 原生的计划、提问、审批与压缩。长命令注册为 DSH 后台作业，输出首尾有界，可用 job_output 读取；每种子代理类型可独立指定 Preset、Provider、Model 与 Reasoning effort。'

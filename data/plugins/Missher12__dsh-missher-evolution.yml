@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/dsh-missher-evolution
+name: Missher12/dsh-missher-evolution
+category: workflow
+description:
+  en: Records scoped workflow rules and correction reminders with bounded evidence, local settings, and optional Brain Hub integration.
+  zh: 根据有界证据记录限定范围的工作流规则与纠错提醒，提供本地设置并支持可选 Brain Hub 集成。
+tarball: https://github.com/Missher12/dsh-missher-evolution/releases/download/v0.7.0/dsh-missher-evolution-0.7.0.tgz

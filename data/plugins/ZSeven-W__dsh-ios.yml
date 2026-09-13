@@ -1,6 +1,6 @@
 url: https://github.com/ZSeven-W/dsh-ios
 name: ZSeven-W/dsh-ios
-category: dev
+category: remote
 description:
-  en: 'A live iOS Simulator — and a USB-connected iPhone — inside a DSH conversation: 21 agent tools to boot devices, build and run Xcode projects, drive the UI by accessibility identity, OCR text or list rows, read unified logs and inspect processes, backtraces and leaks, with a streaming sidebar panel you can tap, drag and rotate on.'
-  zh: '在 DSH 对话中运行 iOS 模拟器与 USB 连接的真机：21 个 agent 工具，可启动设备、构建运行 Xcode 工程、按无障碍标识 / OCR 文本 / 列表行驱动 UI、读取统一日志并查看进程、backtrace 与内存泄漏，并附带可点按、拖拽、旋转的实时侧边栏画面。'
+  en: 'A live iOS Simulator or USB-connected iPhone inside the conversation: 22 agent tools for booting, building, driving the UI by accessibility identity or OCR text, list-row actions and SwiftUI preview hot reload, plus a streaming sidebar panel you can tap and drag on.'
+  zh: '在对话里直接操作 iOS 模拟器或 USB 连接的 iPhone：22 个 Agent 工具用于启动、构建、按无障碍标识或 OCR 文本驱动 UI、列表行操作与 SwiftUI 预览热重载，并附带可点击拖拽的流式侧边栏面板。'

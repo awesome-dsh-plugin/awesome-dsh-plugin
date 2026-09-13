@@ -1,0 +1,6 @@
+url: https://github.com/balue8246-maker/dseyesopen
+name: balue8246-maker/dseyesopen
+category: vision
+description:
+  en: 'Vision bridge for text-only DeepSeek: send images (alone or mixed with text) and a fast tiny vision model describes them behind the scenes — the chat keeps the picture, DeepSeek sees only text. Pure plugin: uninstall restores everything.'
+  zh: '视觉桥：纯文本 DeepSeek 也能收图（单独发、图文混发均可），快速小识图模型后台描述，对话框里图还在、模型只见文字；纯插件，卸载即复原。'

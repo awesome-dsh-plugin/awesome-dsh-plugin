@@ -1,0 +1,6 @@
+url: https://github.com/qwert702/dsh-commander
+name: qwert702/dsh-commander
+category: tools
+description:
+  en: 'Commander mode for the dsh web GUI: a one-click session header button injects a protocol brief into the session, then parses and auto-executes task blocks in the model reply — separating the strategist loop from worker loops via a visible badge.'
+  zh: dsh 网页端指挥官模式：会话标题栏一键注入协议简报，解析模型回复中的任务块并自动执行，让策略层与执行层分离；通过徽章按钮激活/停用。

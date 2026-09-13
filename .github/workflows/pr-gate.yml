@@ -284,6 +284,59 @@ jobs:
                 core.setFailed(`entry file(s) without .yml: ${nonYml.join(', ')}`)
                 return
               }
+              // Second knowable cause, same shape as the extension one: the
+              // file is named right but is not valid YAML, so readEntries()
+              // drops it and --only-list then matches nothing. #4680 sat here
+              // for five days — its `zh:` line was mojibake (UTF-8 read as
+              // GBK) and the mangling ate the closing quote, leaving an
+              // unterminated scalar. Being told "re-run; this is a bug in the
+              // gate" sent the author to re-run a workflow that could only
+              // fail the same way forever. Parse them here and say which file
+              // and which line.
+              //
+              // github-script resolves `require` against the action's own
+              // directory, not the workspace, so js-yaml has to be reached by
+              // absolute path even though `npm ci` ran in this job. If that
+              // ever stops resolving, fall through to the generic message
+              // rather than throwing — a reporting step that crashes posts no
+              // check at all, which is strictly worse than a vague one.
+              let yaml = null
+              try { yaml = require(`${process.env.GITHUB_WORKSPACE}/node_modules/js-yaml`) } catch { /* fall through */ }
+              const unparsable = []
+              if (yaml) {
+                for (const f of changed.filter((f) => f.endsWith('.yml'))) {
+                  try {
+                    yaml.load(fs.readFileSync(`/tmp/prdata/data/plugins/${f}`, 'utf8'))
+                  } catch (e) {
+                    unparsable.push([f, String(e.message ?? e).split('\n')[0]])
+                  }
+                }
+              }
+              if (unparsable.length) {
+                await post('failure', `${unparsable.length} entry file(s) are not valid YAML`,
+                  [
+                    'The filenames are right, but the contents do not parse, so the entry is never',
+                    'read and never checked:',
+                    '',
+                    ...unparsable.map(([f, msg]) => `- \`data/plugins/${f}\` — ${msg}`),
+                    '',
+                    'A common cause is an encoding round-trip: a `zh:` description written in UTF-8,',
+                    'opened by an editor as GBK and saved back, comes out as mojibake — and the',
+                    'mangling often eats the closing `\'`, which is what the parser is complaining',
+                    'about. If your Chinese text looks like `缁?DeepSeek`, that is this.',
+                    '',
+                    'Check it locally before pushing:',
+                    '',
+                    '```bash',
+                    ...unparsable.map(([f]) => `node -e "require('js-yaml').load(require('fs').readFileSync('data/plugins/${f}','utf8'))"`),
+                    '```',
+                    '',
+                    'Nothing is wrong with the plugin — this is the entry file.',
+                  ].join('\n'))
+                core.setFailed(`unparsable entry file(s): ${unparsable.map(([f]) => f).join(', ')}`)
+                return
+              }
+
               await post('failure', 'The gate checked nothing',
                 'This PR adds entries under `data/plugins/`, but the submission checker examined none of them, so no verdict was reached. Re-run the workflow; if it persists this is a bug in the gate, not in the submission.')
               core.setFailed('gate examined no entries despite changed files')

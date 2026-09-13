@@ -1,0 +1,6 @@
+url: https://github.com/ZIye1208/dsh-github-mcp-hint
+name: ZIye1208/dsh-github-mcp-hint
+category: git
+description:
+  en: "GitHub MCP helper panel: shows copyable example prompts at Settings → Plugins → GitHub MCP (random 4 from a 30-example pool), visualizes a public user's repo star/fork/language, and adds the gh_repo_stats and gh_current_user model tools."
+  zh: "GitHub MCP 辅助面板：在「设置 → 插件 → GitHub MCP」展示可复制的示例提示（30 条示例池随机 4 条）、可视化公开仓库的星/fork/语言，并提供 gh_repo_stats / gh_current_user 模型工具。"

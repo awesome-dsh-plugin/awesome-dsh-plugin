@@ -1,0 +1,7 @@
+url: https://github.com/GuoMonth/dsh-deskwork/tree/senguo-query-v0.1.0-alpha.1/plugins/senguo-query
+name: GuoMonth/dsh-deskwork#senguo-query
+category: browser
+description:
+  en: 'Native Skill and read-only category query tool for Senguo wholesale PC pages; requires the DSH Deskwork task browser bridge and a user login.'
+  zh: '面向森果档口批发 PC 页面的原生 Skill 与只读类别查询工具，依赖 DSH Deskwork 任务浏览器接口及用户自行登录。'
+tarball: https://github.com/GuoMonth/dsh-deskwork/releases/download/senguo-query-v0.1.0-alpha.1/guomonth-dsh-senguo-query-0.1.0-alpha.1.tgz

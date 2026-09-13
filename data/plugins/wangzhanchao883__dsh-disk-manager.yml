@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-disk-manager
+name: wangzhanchao883/dsh-disk-manager
+category: tools
+description:
+  en: Scans the whole C drive and classifies every large folder into A/B/C/D/E/P (safe cache / relocatable / junction-movable / abandoned software / config-memory redline / personal files), then deletes, moves, or redirects on demand — with strong redline protection, dry-run preview and undo. Unknown software decided by LLM fallback + human confirmation.
+  zh: 扫描整 C 盘,把每个大空间按 A/B/C/D/E/P 分类(无忧缓存/官方可改址/可junction搬/冷废弃软件/配置记忆红线/个人文件),再按需删缓存/junction搬走/引导改址,带强红线保护、dry-run 预览与 undo。未知软件由 LLM 兜底 + 人工确认,动手前先预览、做完可回滚。

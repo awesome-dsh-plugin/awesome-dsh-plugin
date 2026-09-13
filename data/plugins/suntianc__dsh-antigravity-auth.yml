@@ -1,0 +1,6 @@
+url: https://github.com/suntianc/dsh-antigravity-auth
+name: suntianc/dsh-antigravity-auth
+category: model
+description:
+  en: Adds an unofficial Antigravity OAuth-backed LLM route, web search, image generation and editing, video understanding, quota status, and DSH Web settings controls.
+  zh: 通过非官方 Antigravity OAuth 通道提供 LLM 路由、网页搜索、图片生成与编辑、视频理解、配额状态和 DSH Web 设置控件。

@@ -1,0 +1,6 @@
+url: https://github.com/yu-wenchao/dsh-opencode-free-models/tree/master/plugin/dsh-opencode-free-models
+name: yu-wenchao/dsh-opencode-free-models#dsh-opencode-free-models
+category: model
+description:
+  en: Free model provider plugin for DSH with 20+ models including Gemini, MiMo, GLM, etc.
+  zh: DSH free model provider plugin with 20+ models including Gemini, MiMo, GLM, etc.

@@ -1,0 +1,7 @@
+url: https://github.com/WongYuYe/dsh-appshots
+name: WongYuYe/dsh-appshots
+category: vision
+tarball: https://github.com/WongYuYe/dsh-appshots/releases/latest/download/dsh-appshots.tgz
+description:
+  en: 'Codex-style window capture for DSH Desktop on macOS and Windows: press both Command keys (macOS) or both Ctrl keys (Windows), or the camera button, to grab the frontmost window, attach it to the current chat, and inject available window text as hidden context.'
+  zh: 给 DSH Desktop 用的窗口截图，支持 macOS 和 Windows：macOS 按两边 Command、Windows 按两边 Ctrl（或点输入框旁相机）捕获当前前台窗口并附加到会话，同时把可读的窗口文字注入为隐藏上下文。

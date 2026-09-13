@@ -2,6 +2,6 @@ url: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck
 name: FeatherHunter/dsh-mattpocock-skills-deck
 category: skill
 description:
-  en: 'Right-side details panel that turns the 25-skill Matt Pocock collection into a DSH quest board: wayfinder decision maps, per-issue triage / fix / discuss / execute actions, environment checks, cross-session handoff, hand-drawn Star History and BOM-tolerant skill probe.'
-  zh: 'Matt Pocock 25 项技能的 DSH 控制面板：右侧 details 列打开，含 wayfinder 决策地图、issue 行级 triage / 修复 / 讨论 / 执行按钮、环境检查、跨会话 handoff，手绘 Star History 与 BOM 兼容的探测。'
-tarball: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck/releases/download/v1.7.7/dsh-mattpocock-skills-deck-1.7.7.tgz
+  en: 'Matt Pocock skills deck: installs with all 25 engineering and productivity skills bundled (mattpocock/skills v1.2.3, zero manual setup: triage, grilling, wayfinder, handoff) in a right-side details panel. GitHub issues fully supported; Markdown files in preview; GitLab not currently supported. Hope it helps you turn ideas into reality, faster.'
+  zh: 'Matt Pocock 技能面板（DSH Deck）：安装即自带 25 个工程与效率技能（mattpocock/skills v1.2.3，triage、grilling、wayfinder、handoff 等），右侧面板直接调用，无需手动装技能。主力支持 GitHub issue；Markdown 本地文件为预览版；GitLab 暂不在支持范围。希望它能帮你把想法更快变成现实。'
+tarball: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck/releases/download/v1.7.14/dsh-mattpocock-skills-deck-1.7.14.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/yzxxy010/dsh-workspace-write-plus
+name: yzxxy010/dsh-workspace-write-plus
+category: security
+description:
+  en: Adds a workspace-write++ permission that keeps file tools inside the workspace while skipping the Windows process sandbox for wildcard-allowlisted executables such as Git Bash.
+  zh: 增加工作区修改++权限档，文件工具仍锁在工作区，可用通配符放行 Git Bash 等程序以跳过 Windows 进程沙箱。

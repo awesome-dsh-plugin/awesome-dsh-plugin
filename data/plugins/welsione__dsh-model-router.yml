@@ -1,0 +1,6 @@
+url: https://github.com/welsione/dsh-model-router
+name: welsione/dsh-model-router
+category: model
+description:
+  en: 'Unified model routing for DeepSeek Harness: one logical ModelID over multiple providers with first-token failover and cooldown, health-aware candidate ranking, three tiers (tier1/tier2/tier3) auto-selected by purpose, per-candidate reasoning effort, and a settings-page management panel.'
+  zh: '统一模型路由：一个逻辑 ModelID 汇聚多家供应商，首 token 前失败自动切换并冷却、健康度择优、按 purpose 三档分级（tier1/2/3）、每候选思考级别，设置面板自动保存即时生效。'

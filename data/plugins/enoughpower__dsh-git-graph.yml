@@ -1,0 +1,6 @@
+url: https://github.com/enoughpower/dsh-git-graph
+name: dsh-git-graph
+category: git
+description:
+  en: 'Git view for DeepSeek Harness: status, commit graph, branches, diff, staging/commit, push/pull and blame.'
+  zh: 'DeepSeek Harness 的 Git 视图：状态、提交图、分支、差异、暂存提交、推送拉取与逐行溯源。'

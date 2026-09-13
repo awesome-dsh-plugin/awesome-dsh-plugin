@@ -1,0 +1,6 @@
+url: https://github.com/cfanmaoli/kimi-webbridge-dsh
+name: cfanmaoli/kimi-webbridge-dsh
+category: browser
+description:
+  en: "Provisions the kimi-webbridge bridge daemon (auto-install with SHA-256 verification, auto-start) and registers a 25-action skill that drives the user's real browser through the local bridge."
+  zh: '自动安装并启动 kimi-webbridge 桥接守护进程（含 SHA-256 校验），注册一套 25 个动作的技能，通过本地桥接驱动用户的真实浏览器。'

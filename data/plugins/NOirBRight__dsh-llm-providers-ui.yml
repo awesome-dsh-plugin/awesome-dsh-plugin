@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-llm-providers-ui
+name: NOirBRight/dsh-llm-providers-ui
+category: ui
+description:
+  en: 'Mounted owner of the LLM Providers Settings page: provider cards, drag-reorder card order, and picker sort.'
+  zh: LLM Providers 设置页的挂载 owner：provider 卡片、拖拽排序与 picker 排序。

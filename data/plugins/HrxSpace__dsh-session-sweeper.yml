@@ -1,0 +1,7 @@
+url: https://github.com/HrxSpace/dsh-session-sweeper
+name: HrxSpace/dsh-session-sweeper
+category: session
+description:
+  en: Scan, view, and safely clean local AI terminal session histories (Claude Code, Codex CLI, WorkBuddy, DSH) from a settings card — quarantine-first with SHA-256 manifests, one-click restore, audit log, and phrase-confirmed hard delete.
+  zh: 会话清道夫：在 DSH 设置中扫描、查看并安全清理本机 AI 终端会话历史（Claude Code、Codex CLI、WorkBuddy、DSH），隔离优先、带 SHA-256 清单与一键整批恢复，彻底删除需输入确认短语。
+tarball: https://github.com/HrxSpace/dsh-session-sweeper/releases/download/v1.0.10/dsh-session-sweeper-1.0.10.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/fufuf-c/dsh-token
+name: fufuf-c/dsh-token
+category: usage
+description:
+  en: 'Local token usage and cost dashboard for DeepSeek Harness: four-segment token breakdown (miss/cache-hit/cache-write/output), cache savings estimate against the miss/hit price gap, per-session drill-down with context-growth curves and anomaly flags, global filters with shareable URLs, monthly budget progress with month-end projection, and day/month aggregate fast-path queries (O(days)) with incremental rescan.'
+  zh: DSH 本地 Token 用量与成本统计仪表盘：四段 Token 构成（未命中/缓存命中/缓存写入/输出）、按未命中与命中的价差估算缓存省钱、会话下钻（上下文增长曲线与异常激增标记）、全局筛选可分享 URL、月度预算环形进度与月底外推、日/月聚合快路径查询（O(天数)）+ 增量扫描。

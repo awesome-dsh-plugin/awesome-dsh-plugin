@@ -1,0 +1,5 @@
+url: https://github.com/lcestou/dsh-oh-my-claude
+name: lcestou/dsh-oh-my-claude
+category: model
+description:
+  en: "Claude Code CLI as an LLM provider for dsh: live model list, per-session resume, approval relay, images, a memory/rewind/changes panel, and workspaces on remote SSH boxes."

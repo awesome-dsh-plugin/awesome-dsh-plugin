@@ -1,0 +1,6 @@
+url: https://github.com/gitroomhq/postiz-agent/tree/main/plugins/dsh-postiz
+name: gitroomhq/postiz-agent#dsh-postiz
+category: tools
+description:
+  en: 'Connects DeepSeek Harness to Postiz over MCP: list connected social media channels, fetch per-platform posting rules, and schedule, draft, or publish posts to X, LinkedIn, Instagram, Facebook, Threads, TikTok, YouTube, Reddit, Bluesky, Mastodon, Discord, Slack, Telegram and more; adds a postiz workflow skill.'
+  zh: '通过 MCP 将 DeepSeek Harness 连接到 Postiz：列出已连接的社交媒体渠道、获取各平台发帖规则，并向 X、LinkedIn、Instagram、Facebook、Threads、TikTok、YouTube、Reddit、Bluesky、Mastodon、Discord、Slack、Telegram 等平台排期、存草稿或发布帖子；附带 postiz 工作流技能。'

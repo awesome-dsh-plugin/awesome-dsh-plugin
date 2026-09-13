@@ -1,0 +1,6 @@
+url: https://github.com/seeingrain/dsh-session-todos
+name: seeingrain/dsh-session-todos
+category: session
+description:
+  en: Floating todo panel for DSH sessions with server-side cross-device persistence and pending-task badges in the session list.
+  zh: 会话内悬浮待办面板，支持服务器端跨设备持久化及会话列表未完成任务图标。

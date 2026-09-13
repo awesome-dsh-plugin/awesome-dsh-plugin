@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-write-create-only
+name: better-er/dsh-write-create-only
+category: dev
+description:
+  en: 'Host-side guard that lets the write tool only create new files: when the target already exists it denies the call before execution and tells the model to use edit instead, applied to all sessions.'
+  zh: '纯 host 端守卫，让 write 工具只允许创建新文件：目标已存在时在执行前直接拒绝并提示改用 edit，全局所有会话生效。'

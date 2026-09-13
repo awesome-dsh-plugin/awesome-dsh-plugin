@@ -1,0 +1,6 @@
+url: https://github.com/xiaomujiang/dsh-user-question-nav
+name: xiaomujiang/dsh-user-question-nav
+category: ui
+description:
+  en: "ChatGPT-style question nav rail with up/down arrow buttons — per-question tick marks on the chat edge, hover-triggered drawer listing every user question with real-time search filter, one-click smooth-scroll jump, and active-question highlight synced to scroll position."
+  zh: "ChatGPT 风格问题导航胶囊，带 ⏫⏬ 上下箭头 — 对话区右侧逐条刻度尺，悬停展开抽屉列出全部用户问题，实时搜索过滤、一键平滑跳转、滚动同步高亮当前问题，会话切换自动重挂载。"

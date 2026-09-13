@@ -1,0 +1,6 @@
+url: https://github.com/evanfang0054/dsh-tailscale-console
+name: evanfang0054/dsh-tailscale-console
+category: remote
+description:
+  en: 'Tailscale remote-access operations panel for the dsh web GUI: health checks, HTTPS entry toggle via tailscale serve, macOS proxy bypass, relay server ops, and ACL snippet generation.'
+  zh: 'Tailscale 远程访问运维面板：健康检查、HTTPS 入口（tailscale serve）开关、macOS 代理绕过、中继服务器运维与 ACL 片段生成。'

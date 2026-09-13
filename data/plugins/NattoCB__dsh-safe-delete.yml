@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-safe-delete
+name: NattoCB/dsh-safe-delete
+category: security
+description:
+  en: Tools guard that moves agent-issued `rm` targets to the macOS Trash instead of deleting, with a shell-aware lexer covering compound and disguised commands; a switch in Settings → General turns it off.
+  zh: 工具守卫将 agent 执行的 rm 目标移入 macOS 废纸篓而非直接删除，shell 感知词法器覆盖复合与伪装命令；设置页通用设置中可随时关闭。

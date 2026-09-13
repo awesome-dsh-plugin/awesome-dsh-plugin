@@ -1,0 +1,6 @@
+url: https://github.com/icanfinish11/dsh-context-mode
+name: icanfinish11/dsh-context-mode
+category: session
+description:
+  en: 'DeepSeek Harness adapter for Context Mode: in-process ctx_* tools for sandboxed code execution and an FTS5 knowledge base, plus context-window routing guidance.'
+  zh: '为 DeepSeek Harness 适配 Context Mode：进程内 ctx_* 工具（沙箱代码执行与 FTS5 知识库），并注入上下文窗口路由指引。'

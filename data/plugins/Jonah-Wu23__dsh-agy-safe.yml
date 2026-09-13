@@ -1,0 +1,6 @@
+url: https://github.com/Jonah-Wu23/dsh-agy-safe
+name: Jonah-Wu23/dsh-agy-safe
+category: model
+description:
+  en: "Compliantly use your own Antigravity quota in dsh: bridges your local logged-in official Antigravity CLI (agy) session as the chat and subagent model provider."
+  zh: "合规地在 dsh 中使用你自己的 Antigravity 额度：将本机已登录的官方 Antigravity CLI（agy）会话桥接为主对话与子代理模型提供方。"

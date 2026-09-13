@@ -1,0 +1,6 @@
+url: https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-title
+name: Cerbur/clutch-dsh#clutch-dsh-title
+category: session
+description:
+  en: Configurable deterministic session titles for DeepSeek Harness from semantic prompt fields and templates.
+  zh: 基于语义 prompt 字段与自定义模板的 DeepSeek Harness 确定性会话标题生成插件。

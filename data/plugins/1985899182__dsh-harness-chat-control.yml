@@ -1,0 +1,6 @@
+url: https://github.com/1985899182/dsh-harness-chat-control
+name: 1985899182/dsh-harness-chat-control
+category: ui
+description:
+  en: Adds ChatGPT-style stop, edit-and-resend, native quote annotations, and an independent sidebar follow-up chat with model and image input for DeepSeek Harness Desktop.
+  zh: 为 DeepSeek Harness Desktop 增加接近 ChatGPT 的停止、编辑重发、原生引用注释，以及支持模型和图片输入的独立侧边栏追问对话。

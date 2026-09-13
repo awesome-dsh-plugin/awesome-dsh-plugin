@@ -1,0 +1,5 @@
+url: https://github.com/Canary-Builds/dsh-mobile-ui
+name: Canary-Builds/dsh-mobile-ui
+category: ui
+description:
+  en: Adds touch-friendly navigation, layout refinements, and standalone PWA styling to the existing DeepSeek Harness web interface.

@@ -16,6 +16,7 @@ import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { firstAddedDate } from './lib/added-dates.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -238,10 +239,24 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
-          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
-        const iso = out[out.length - 1]
-        if (iso) dates[e.url] = new Date(iso).toISOString()
+        // A canonical filename can first appear in a merge, whose diff the
+        // default log hides: `--diff-filter=A` cannot match a merge because
+        // git computes no diff for one unless asked. Merging #2662 renamed its
+        // three entry files to match their urls and regenerated their README
+        // lines inside the merge, so the files exist under those names in
+        // neither parent and the README pass above is blind to them too. Both
+        // ledgers came up empty and the build refused to run — correctly,
+        // since stamping "now" would make dates flap — which took main's site
+        // build down for four days and turned 130 unrelated pull requests red
+        // on a step no author controls.
+        //
+        // Diagnosed independently, before the maintainer got to it, in #4708,
+        // #4709, #4786, #4821 and #4871; #4821 named the cause down to the
+        // three renamed entries. The lookup itself now lives in
+        // lib/added-dates.mjs so #4756's regression tests can drive it —
+        // this path had no test at all when it took the site down.
+        const iso = firstAddedDate(file)
+        if (iso) dates[e.url] = iso
       } catch { /* not committed yet — falls through to the error below */ }
     }
     stillUndated = ordered.filter((e) => !dates[e.url])
@@ -355,6 +370,14 @@ for (const e of ordered) {
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
   e.downloads = downloadsMap[e.url]?.downloads ?? null
+  // registry dist-tags.latest from probe-npm.mjs. null when not on npm, OR
+  // when probed but no latest tag was available. A published row whose map
+  // entry still lacks the `version` key has not been backfilled yet — after
+  // backfill the key is always present (string or null). Consumers: prefer
+  // `npm` for "on the registry"; treat missing/null version as "unknown",
+  // not as "github-only".
+  // Surfaced for dsh-market's discover list (dsh-market#348).
+  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
   e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
 }
 
@@ -934,6 +957,9 @@ const registry = {
       // by parsing the command string is not a contract worth offering, so the
       // field is published directly. Omitted when absent, like `screenshots`.
       tarball: e.tarball ?? undefined,
+      // Current npm `latest` when known. null = github-only (`npm` null) or
+      // probed with no latest tag. Not the same signal as `downloads`.
+      version: e.version,
       stars: e.stars,
       downloads: e.downloads,
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),

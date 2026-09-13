@@ -1,0 +1,8 @@
+url: https://github.com/NattoCB/dsh-widget-center
+name: NattoCB/dsh-widget-center
+category: ui
+description:
+  en: >-
+    Native macOS desktop widgets for DSH: manage any number of widget instances — share quote tickers (5-provider fallback, trading-phase-aware throttling) and notes memos — each an independent NSPanel+WKWebView window spawned detached from the host, dragged anywhere, with a type-aware right-click menu. Instances are edited as cards in a three-view settings page (list / type picker / detail), and a market_quote model tool serves standardized quotes to any session. A Type Studio flow seeds a creation-mode session with an issue-template prompt for authoring new widget types.
+  zh: >-
+    DSH 原生 macOS 桌面小组件中心：管理任意多个 widget 实例——行情小窗（5 源 fallback、交易时段感知节流）与便签，每实例一个独立 NSPanel+WKWebView 窗口（detached 独立进程、任意拖动、类型感知右键菜单）。实例以三层视图（列表 / 类型选择 / 详情）在 DSH 设置页卡片式配置；market_quote 模型工具供任意会话拉标准化行情；Type Studio 一键创建「创造模式」空会话并预填 issue-template 模板，起草新的 widget type。

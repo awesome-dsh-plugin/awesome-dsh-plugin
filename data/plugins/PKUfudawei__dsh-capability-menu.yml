@@ -1,0 +1,6 @@
+url: https://github.com/PKUfudawei/dsh-capability-menu
+name: PKUfudawei/dsh-capability-menu
+category: tools
+description:
+  en: 'Prevents request context bloat in DeepSeek Harness: catalogs MCP tools and skills under ctx.capability, exposes them in exposed/progressive/blocked tiers, and invokes low-frequency ones on demand via meta_search/meta_invoke, with a visual settings tab.'
+  zh: 解决海量 MCP 工具/技能塞满请求、挤占上下文的问题：统一编目能力（ctx.capability），以常驻/按需/禁用三档控制暴露与执行，低频能力按需经 meta_search/meta_invoke 检索执行，并附可视化「能力菜单」设置页。
