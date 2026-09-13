@@ -1,0 +1,7 @@
+url: https://github.com/XXXXXQ-0206/dsh-session-delete
+name: XXXXXQ-0206/dsh-session-delete
+category: session
+tarball: https://github.com/XXXXXQ-0206/dsh-session-delete/releases/latest/download/dsh-session-delete.tgz
+description:
+  en: Moves sessions into a recycle bin from the sidebar, restores or permanently deletes them in batches, and refuses to delete active sessions.
+  zh: 在侧边栏将会话移入回收站，支持批量恢复和彻底删除，并拒绝删除活跃会话。
