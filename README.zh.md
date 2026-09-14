@@ -1752,6 +1752,7 @@ dsh plugin --profile web add dshmarket
 - [Harzva/dsh-obsidian](https://github.com/Harzva/dsh-obsidian) — 把本机项目接入 Obsidian：有界的 manifest 扫描、确定性的依赖/技术栈/主题边，通过 Local REST API 或 vault 文件系统把带 wiki 链接的笔记写入托管的 graph/ 命名空间。
 - [hccccc01333/dsh-excel-chat#bundle](https://github.com/hccccc01333/dsh-excel-chat/tree/master/bundle) — 在 DeepSeek Harness 里对话完成 Excel 工作：建表、编辑、修复公式、图表校验，每次编辑后自动体检公式。
 - [HCY7757/dsh-lexiforge](https://github.com/HCY7757/dsh-lexiforge) — 改写模型回复的语言包框架：A 为独立 LLM 改写，B 将 FTS5 术语检索注入改写请求，C 执行本地字典与正则规则，composite 按 B→A→C 等管线组合。附 GitHub 语言包市场、带路径/体积/文件类型校验的 ZIP 安装器，以及强制风险免责闸门。
+- [he-yufeng/dsh-tool-reading-map](https://github.com/he-yufeng/dsh-tool-reading-map) — 让 agent 在动一个陌生仓库之前，先拿到一份按优先级排序、覆盖率老实的仓库地图。
 - [heartleo/hn-cli#hacker-news](https://github.com/heartleo/hn-cli/tree/main/plugins/hacker-news) — 用于获取 Hacker News 榜单、讨论串、搜索和用户资料的工具。
 - [Hefulalala/dsh-remote-workspace](https://github.com/Hefulalala/dsh-remote-workspace) — SSH/SFTP 远程站点与远程工作区：像本地工作区一样管理远程连接与目录。
 - [hehetoshang/dsh-talebook-plugin](https://github.com/hehetoshang/dsh-talebook-plugin) — 在自托管 Talebook 书库上搜索、下载、上传和管理书籍与有声书，管理 Legado 书源及管理员操作；写入操作需经批准。
@@ -2855,6 +2856,7 @@ dsh plugin --profile web add dshmarket
 - [haoku123/dsh-blast-radius](https://github.com/haoku123/dsh-blast-radius) — 报告 agent 代码修改的语义波及面：哪些符号变了、谁在调用它们、其中哪些调用方没有测试覆盖。
 - [HaoyueQin/dsh-git-review](https://github.com/HaoyueQin/dsh-git-review) — DeepSeek Harness 会话审查标签页：工作区相对 HEAD 或任意两 ref 的变更，以可过滤文件树加双列差异呈现；泳道提交图带逐行追溯与单文件历史；三范围搜索；行内评论回写对话输入框；暂存、提交、分支、标签、贮藏与冲突操作全部设防。
 - [Harzva/dsh-pr-guardian](https://github.com/Harzva/dsh-pr-guardian) — 聚合本人创建的 PR 反馈，分页采集 GitHub 评论与审查，支持重点标记和 DSH 面板、CLI 共用的版本化本地处理进度。
+- [he-yufeng/dsh-tool-radar](https://github.com/he-yufeng/dsh-tool-radar) — 用活的合并与维护者证据，给一个 GitHub 仓库的对外贡献友好度打分。
 - [HeathHe/dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) — DSH Web 的 Git worktree 面板：将工作区侧栏替换为项目 → 主/关联 worktree → 会话分组，支持创建和删除 worktree、切换主分支，并在脏工作树与活跃会话保护下迁移可配置的项目内或全局存储位置。
 - [ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-repopanel](https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-repopanel) — 浏览工作区 origin 远端对应的 GitHub issue 与 pull request，筛选、评论、关闭或重开，并可转成任务写到 dsh-plugin-taskboard 的看板上等 agent 领取。
 - [JasonFreeLab/dsh-command-code-review](https://github.com/JasonFreeLab/dsh-command-code-review) — 注册 /code-review 斜杠命令，五个并行审查视角、逐发现置信度打分，同时支持拉取请求与本地代码审查。
