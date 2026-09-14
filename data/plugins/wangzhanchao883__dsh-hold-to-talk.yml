@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-hold-to-talk
+name: wangzhanchao883/dsh-hold-to-talk
+category: voice
+description:
+  en: 'Hold-to-talk speech-to-text in the composer: press and hold the mouse on the input box, speak, and the transcript is inserted into the draft on release; sliding up cancels. A live transcript is rendered in an overlay while holding, and recognition runs locally with SenseVoice via sherpa-onnx, so no API key is needed and audio never leaves the machine.'
+  zh: '输入框上的长按说话语音转文字：在输入框按住鼠标说话，松手把文字写入草稿，上滑取消；按住期间浮层显示实时字幕。识别在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。'
