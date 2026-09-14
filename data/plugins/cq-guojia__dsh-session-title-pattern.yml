@@ -1,0 +1,6 @@
+url: https://github.com/cq-guojia/dsh-session-title-pattern
+name: cq-guojia/dsh-session-title-pattern
+category: session
+description:
+  en: 'Manages dsh session titles in a unified "date | type | topic" format, where the type and topic are summarized by a model from the whole conversation.'
+  zh: 自动管理 dsh 会话标题，统一成「日期｜类型｜主题」的格式：类型与主题由模型对整段对话总结。
