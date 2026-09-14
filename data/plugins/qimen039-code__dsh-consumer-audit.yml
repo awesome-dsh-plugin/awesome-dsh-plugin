@@ -1,35 +1,7 @@
-# Market submission for awesome-dsh-plugin.
-#
-# Pre-filled for the GitHub account this machine is authenticated as
-# (gh auth status -> qimen039-code). If you publish under a different owner or a
-# different repository name, change it in THREE places: `url` below, `name`
-# below, and this file's own filename.
-#
-# Steps:
-#   1. Create the repository that `url` points at and push this package to its
-#      root. Add the `dsh-plugin` topic.
-#   2. Wait past the 1-day repo-age bar in contributing.md. CI checks it, and a
-#      repository created minutes before the PR is the one thing that will be
-#      rejected mechanically.
-#   3. Open ONE pull request against awesome-dsh-plugin/awesome-dsh-plugin that
-#      adds exactly this file as data/plugins/qimen039-code__dsh-consumer-audit.yml.
-#      Nothing else there needs editing; both READMEs are generated from
-#      data/plugins/*.yml.
-#
-# CI runs, in order: entry count (<=3) -> dsh.bundle present in the repo's
-# package.json -> repo age -> awesome-lint and the site build.
-#
-# `description.en` is read as a claim about the plugin and checked against the
-# code. It contains ": " so it is quoted, per contributing.md.
-
 url: https://github.com/qimen039-code/dsh-consumer-audit
 name: qimen039-code/dsh-consumer-audit
 category: dev
-# Prebuilt tarball so storefronts offer an install instead of a source build.
-# The asset name carries no version: latest/download/ resolves `latest` at request
-# time but takes the filename literally, so a versioned name would 404 on the next
-# release. Verified by fetching the URL and comparing the digest.
 tarball: https://github.com/qimen039-code/dsh-consumer-audit/releases/latest/download/dsh-consumer-audit.tgz
 description:
-  en: 'Audits a DSH profile for capabilities nothing consumes: it inventories the declared composition rows, counts how often each registered tool and skill appears in the session logs, keeps calls that were made apart from calls that delivered a result, and reports the ones with no observed consumer. Ships a skill that fixes the evidence-chain format for completion claims, and an evidence action that returns the real arguments and results of a capability''s calls.'
-  zh: '审计 DSH profile 里没有消费者的能力：清点已声明的组成行，统计每个已注册工具与 skill 在会话日志里出现的次数，把「发起过调用」与「结果真的送达」分开，报告没有观察到消费者的那些；并附一份固定「完成声明」证据链格式的 skill，以及一个返回真实调用参数与返回正文的 evidence 动作。'
+  en: 'Audits a DSH profile for capabilities nothing consumes: inventories the declared composition rows, counts how often each registered tool and skill is actually called in the session logs, separates calls that were made from calls that returned a result, and reports the ones with no observed consumer. Ships a skill that fixes the evidence-chain format for completion claims.'
+  zh: '审计 DSH profile 里没有消费者的能力：清点已声明的组成行，统计每个已注册工具与 skill 在会话日志里真正被调用的次数，把「发起过调用」与「返回了结果」分开，报告没有观察到消费者的那些；并附一份固定「完成声明」证据链格式的 skill。'
