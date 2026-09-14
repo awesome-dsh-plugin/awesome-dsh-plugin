@@ -1,0 +1,6 @@
+url: https://github.com/Flandern1211/dsh-task-time
+name: Flandern1211/dsh-task-time
+category: notify
+description:
+  en: 'Session-based task time management and reminders for DeepSeek Harness: plan time per session, continuous countdown (model-only runtime), interval reminders with system toast and UI cards, decision alerts when the model needs user input, task board with session jumping, and persistent local records.'
+  zh: DeepSeek Harness 会话级任务用时管理与提醒：为每个会话设置计划用时，仅模型运行时连续计时，定时提醒（系统通知 + 界面提醒卡），需要你决策时红色常驻提醒，任务面板支持点击跳转会话，本地记录持久化。

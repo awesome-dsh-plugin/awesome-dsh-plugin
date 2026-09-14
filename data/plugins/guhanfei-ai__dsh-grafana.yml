@@ -2,5 +2,5 @@ url: https://github.com/guhanfei-ai/dsh-grafana
 name: guhanfei-ai/dsh-grafana
 category: tools
 description:
-  en: 'Grafana dashboard editor: paste a dashboard URL, edit the JSON through conversation, and push it back over the HTTP API.'
-  zh: 'Grafana 大盘编辑器：粘贴大盘 URL，通过对话修改 JSON，再经 HTTP API 推回 Grafana。'
+  en: 'Conversational Grafana operations: inspect live dashboard data across named sources, then make safe, reviewable dashboard changes with approval and version checks.'
+  zh: '对话式 Grafana 运维：跨多个命名源站查看实时大盘数据，再通过审批与版本校验安全、可审阅地修改大盘。'

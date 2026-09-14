@@ -1,0 +1,6 @@
+url: https://github.com/DNAlec/dsh-auto-approve
+name: DNAlec/dsh-auto-approve
+category: security
+description:
+  en: Auto-approves or rejects tool calls with keywords and a judge-model criteria table; uncertainty uses the original Web approval dialog.
+  zh: 用关键词和审核模型审核表自动允许或拒绝工具调用，拿不准则交给原来的网页审批框。

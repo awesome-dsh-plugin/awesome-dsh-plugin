@@ -1,0 +1,5 @@
+url: https://github.com/leetom314/dsh-delivery-ledger
+name: leetom314/dsh-delivery-ledger
+category: workflow
+description:
+  en: 'Recurring task scheduler with an append-only delivery ledger: window-aligned dedup execution, failure/abandoned rows, and same-window retry redelivery.'

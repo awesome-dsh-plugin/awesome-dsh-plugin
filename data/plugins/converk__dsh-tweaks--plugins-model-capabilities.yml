@@ -1,0 +1,6 @@
+url: https://github.com/converk/dsh-tweaks/tree/main/plugins/model-capabilities
+name: converk/dsh-tweaks#model-capabilities
+category: model
+description:
+  en: Adds a reasoning-level editor with OpenAI and Anthropic protocol presets (llm-pi-ai), input-modality switches and a 1M/128K context and max-output preset to model rows in Settings.
+  zh: 在「设置 → 模型」的模型行里补上思考强度档位（llm-pi-ai，含 OpenAI / Anthropic 协议预置）、多模态开关和 1M/128K 上下文与最大输出快捷填入。

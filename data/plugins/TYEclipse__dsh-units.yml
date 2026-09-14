@@ -1,0 +1,6 @@
+url: https://github.com/TYEclipse/dsh-units
+name: TYEclipse/dsh-units
+category: tools
+description:
+  en: 'Unit conversion toolbox covering 20 categories — length, mass, temperature, area, volume (incl. US cooking units), speed, time, data sizes (decimal MB vs binary MiB), data transfer rates (Mbps vs MB/s), acceleration incl. g-force, illumination (lux / foot-candle), pressure, energy, angle, frequency, power incl. three horsepower definitions, force, torque, typography (px/pt/em/rem), and fuel economy (mpg ↔ L/100km). Two tools — convert_unit and list_units — zero runtime dependencies, pure arithmetic; each result includes the formula applied.'
+  zh: '单位换算工具箱：覆盖 20 个类别——长度、质量、温度、面积、体积（含美制烹饪单位）、速度、时长、数据大小（十进制 MB 与二进制 MiB）、数据传输速率（Mbps 与 MB/s）、加速度（含 g-force）、照度（lux 与英尺烛光）、压强、能量、角度、频率、功率（含三种马力定义）、力、扭矩、排版（px/pt/em/rem）与油耗（mpg ↔ L/100km）。提供 convert_unit 与 list_units 两个工具；零运行时依赖，纯算术实现，结果附带所用公式。'

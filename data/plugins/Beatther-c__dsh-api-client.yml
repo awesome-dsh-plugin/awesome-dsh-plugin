@@ -1,0 +1,6 @@
+url: https://github.com/Beatther-c/dsh-api-client
+name: Beatther-c/dsh-api-client
+category: tools
+description:
+  en: 'Agent-native API client for DeepSeek Harness: Postman-like debugging UI (request tree with context menus and full keyboard navigation, resizable sidebar, layered auto-generated header preview with per-item suppression and constant secret masking), six api_client_* agent tools sharing the same request core, redaction and audit chain with the human UI, Postman Collection v2.1 import with a migration report, environment variables with SecretRef indirection, and a fail-closed SSRF network policy.'
+  zh: DeepSeek Harness 的 Agent 原生 API Client：Postman 级调试 UI（右键菜单与完整键盘导航的请求树、可调宽侧栏、自动生成 Header 分层预览——逐项可停用、敏感值恒脱敏），六个 api_client_* Agent 工具与 Human UI 共用同一请求核心、脱敏与审计链，Postman Collection v2.1 导入附迁移报告，环境变量经 SecretRef 间接引用，SSRF 网络策略默认 fail-closed。
