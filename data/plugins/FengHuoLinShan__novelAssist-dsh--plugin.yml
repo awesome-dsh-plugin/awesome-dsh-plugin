@@ -1,0 +1,6 @@
+url: https://github.com/FengHuoLinShan/novelAssist-dsh/tree/main/plugin
+name: FengHuoLinShan/novelAssist-dsh#novelcraft-dsh
+category: workflow
+description:
+  en: 'Novel writing suite in one DSH bundle: 39 domain tools (deep import, 8 deterministic continuity detectors, outline/worldbuilding/context queries, approval-gated asset adoption), authenticated Connection RPC, and a web writing UI. Each book is a git vault of frontmatter files; adoption passes through DSH approval. Installs from npm as novelcraft-dsh.'
+  zh: '单 bundle 小说写作套件：39 个领域工具（深度导入、8 个确定性连续性检测器、大纲/世界观/上下文查询、经审批的资产采用）、认证 Connection RPC 与 Web 写作界面。每本书是一个由 frontmatter 文件组成的 git vault，采用步骤经 DSH 审批放行。npm 包名 novelcraft-dsh。'
