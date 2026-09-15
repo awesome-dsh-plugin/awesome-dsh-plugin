@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-live-token-stats
+name: drscrewdriver/dsh-live-token-stats
+category: usage
+description:
+  en: 'Live token status band under the DeepSeek Harness web composer: tokenises the model streaming output with the bundled official DeepSeek V4 BPE table and renders stream TPS, output tokens, stall time and first-token latency, then reconciles the local estimate against the provider usage once the step settles, so a slow stream is distinguishable from a stalled one. The live channel is a plugin-registered RPC endpoint that reuses the official connection Host/Origin check and browser auth. Maintained fork: the compiled output ships in the repository, so installing needs no build step and no pnpm build-script allowlist. Pure plugin, no DSH source changes.'
+  zh: '在 DeepSeek Harness Web 输入框下方实时渲染 token 状态带：用内置的 DeepSeek 官方 V4 词表对模型流式输出实时分词，显示流式 token/s、输出 token、已停顿时长与首字延迟，并在 step 结算后把本地估算与官方 usage 对账，用于判断生成是慢还是卡住。实时通道是插件自注册的 RPC 端点，复用官方 connection 的 Host/Origin 校验与浏览器鉴权。本仓为维护版 fork：构建产物随仓库提交，安装端零构建，也不需要 pnpm 的构建脚本白名单。纯插件自包含，不改 DSH 源码。'
