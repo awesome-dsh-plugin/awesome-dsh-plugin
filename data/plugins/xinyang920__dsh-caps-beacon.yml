@@ -1,0 +1,6 @@
+url: https://github.com/xinyang920/dsh-caps-beacon
+name: xinyang920/dsh-caps-beacon
+category: notify
+description:
+  en: 'Caps Lock LED status beacon: solid while a root agent runs, blinking when an approval or question is pending or a turn failed, off when idle.'
+  zh: Caps Lock 状态信标：根 agent 运行时常亮，等待审批/提问或任务出错时快闪，空闲时熄灭。
