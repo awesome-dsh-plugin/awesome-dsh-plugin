@@ -1,0 +1,6 @@
+url: https://github.com/dAI-aigc/dsh-wechat
+name: dAI-aigc/dsh-wechat
+category: notify
+description:
+  en: "WeChat bridge for DeepSeek Harness over Tencent's iLink bot channel: one session per contact, inbound text/images/files, and WeChat's native typing indicator while a turn runs."
+  zh: "基于腾讯 iLink 机器人通道的微信桥：每个联系人一个独立会话，支持入站文本/图片/文件，并在整轮运行期间显示微信原生“正在输入”。"
