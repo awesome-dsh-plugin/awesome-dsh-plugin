@@ -1,0 +1,6 @@
+url: https://github.com/enterhalf/dsh-session-colorful-unread-pin-jobs
+name: enterhalf/dsh-session-colorful-unread-pin-jobs
+category: ui
+description:
+  en: "Colors each session title in the DSH sidebar by state: unread (a blue gradient while the model is running, green once it has finished), pinned (yellow), and sessions holding live background shell jobs (purple); overlapping states are composed into a single left-to-right gradient in a fixed order. Also adds a \"Model updated\" sort mode, a \"since agent output\" column to the Deep-diving timer, and a settings section listing every unread session."
+  zh: "用颜色标记 DSH 侧栏每个会话标题的状态：未读（模型运行中＝蓝色渐变，已跑完＝绿色渐变）、置顶（黄色）、有存活后台 shell 任务（紫色）；多种状态并存时按固定语义顺序合成一条从左到右的渐变。另含侧栏第三排序模式「模型更新」、Deep diving 计时器的「距 agent 上次输出」第二列，以及集中查看全部未读会话的设置分节。"
