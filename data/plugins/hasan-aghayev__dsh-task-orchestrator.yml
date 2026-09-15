@@ -1,4 +1,5 @@
 url: https://github.com/hasan-aghayev/dsh-task-orchestrator
+tarball: https://github.com/hasan-aghayev/dsh-task-orchestrator/releases/download/v1.0.0/dsh-task-orchestrator-1.0.0.tgz
 name: hasan-aghayev/dsh-task-orchestrator
 category: workflow
 description:
