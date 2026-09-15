@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-context-compression-improved
+name: drscrewdriver/dsh-context-compression-improved
+category: session
+description:
+  en: 'Auditable tool-result context compression for DeepSeek Harness: choose a compression profile, set the Auto Compact trigger level, and toggle code-skeleton compression from one settings section. Exact DeepSeek V4 tokenizer measurement with same-revision count verification, and fail-open behaviour that keeps the original tool results on unsupported models.'
+  zh: 面向 DeepSeek Harness 的可审计工具结果上下文压缩：在同一设置区选择压缩 Profile、调整 Auto Compact 触发水位并开关代码骨架压缩。基于 DeepSeek V4 官方 tokenizer 的精确计量与同修订计数校验；非支持模型自动 fail-open，保留原始工具结果。
