@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-code-review
+name: MichengAI/dsh-code-review
+category: git
+description:
+  en: Adds /review to spawn an independent subagent that inspects a chosen Git scope and returns a findings report in the current conversation.
+  zh: 提供 /review，用独立子 Agent 审查所选 Git 范围，并把发现报告返回当前会话。
