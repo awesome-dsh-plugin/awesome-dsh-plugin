@@ -1,0 +1,7 @@
+url: https://github.com/LyaxZ/dsh-fonttune
+name: LyaxZ/dsh-fonttune
+category: ui
+tarball: https://github.com/LyaxZ/dsh-fonttune/releases/latest/download/dsh-fonttune.tgz
+description:
+  en: 'Font plugin for the DeepSeek Harness Web GUI: body and code font families, a separate font-size offset for each, a global font weight, and a West/CJK split picker.'
+  zh: 'DeepSeek Harness 字体插件：正文/代码字体族、正文与代码各自的字号偏移、字重，以及西文/中文分栏选择。'
