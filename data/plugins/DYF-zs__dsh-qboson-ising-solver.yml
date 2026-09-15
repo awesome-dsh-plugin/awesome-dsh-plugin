@@ -1,0 +1,6 @@
+url: https://github.com/DYF-zs/dsh-qboson-ising-solver
+name: DYF-zs/dsh-qboson-ising-solver
+category: tools
+description:
+  en: DeepSeek Harness plugin that exposes QBoson Kaiwu Ising solving as an agent-callable solve_ising tool.
+  zh: 将 QBoson Kaiwu 的 Ising 矩阵求解能力作为 solve_ising Agent Tool 接入 DeepSeek Harness。
