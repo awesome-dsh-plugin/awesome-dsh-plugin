@@ -2,5 +2,5 @@ url: https://github.com/Tkingxiao/dsh-any-background
 name: Tkingxiao/dsh-any-background
 category: theme
 description:
-  en: 'Custom theme plugin with video and image wallpapers, free positioning, and scale/fill modes. Extracts wallpaper colours and switches text to light or dark automatically. Per-area blur across 6 UI regions, per-area opacity, and one-click theme export/import.'
-  zh: 自定义主题插件：支持视频与图片壁纸、自由拖动位置与拉伸填充模式；从壁纸提取主色并自动切换明暗字体；六个界面区域的模糊分别可调，分区不透明度可调；主题一键导出与导入。
+  en: 'DeepSeek Harness appearance toolkit. Independently tune opacity + frosted-glass blur across 8 surfaces (main background, sidebar, cards & panels, inputs & controls, settings, conversation frame, trajectory view, produced/highlights — 9 with dsh-better-sidebar). Use any image or video as wallpaper with a drag-to-pan, scroll-to-zoom position editor and 5 layout modes (Fit/Fill/Stretch/Tile/Center); videos loop muted, survive refresh, and capture a live frame for preview, color extraction and framing. Rotate a pool of images (shuffle/order, every refresh/daily/weekly). Also: PS-style color wheel, one-click wallpaper color extraction, 6 presets + saved profiles, day/night auto switch, and full theme export/import.'
+  zh: DeepSeek Harness 外观一体化工具。对 8 个界面区域分别调节透明度与毛玻璃模糊（主背景、侧边栏、卡片面板、输入框与控件、设置面板、对话文本框、轨迹页、产出物/高亮内容；安装 dsh-better-sidebar 后为 9 个）。用任意图片或视频做壁纸，配有拖动平移、滚轮缩放的位置编辑器与 5 种布局模式（适应/填充/拉伸/平铺/居中）；视频静音循环播放、刷新不丢失，并自动截取一帧用于预览、取色与构图。把多张图片加入轮换池（随机/顺序，每次刷新/每天/每周）自动更换。还包含 PS 风格色轮、一键从壁纸提取主题色、6 套预设 + 命名配置、昼夜自动切换与主题一键导出导入。
