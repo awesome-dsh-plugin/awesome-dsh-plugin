@@ -136,7 +136,24 @@ const fresh = (entry) =>
   && entry.checkedAt
   && (Date.now() - new Date(entry.checkedAt).getTime()) / 86400000 <= RECHECK_DAYS
 
-const pending = urls.filter((url) => !fresh(map[url]))
+// Oldest first, not README order. The nightly probes every entry (PROBE_ALL),
+// but it runs on a 1,000-request hourly budget against a ~7,000-call workload
+// (two calls per repo), so it always runs out partway through — and every
+// entry past that point silently keeps its previous value, because probe()
+// swallows the failure and returns null. A fixed order therefore starves the
+// same tail every night. On 2026-09-15, 1,177 of 3,477 entries were still
+// frozen on a 2026-09-05 snapshot; one of them (mafeis/dsh-net-proxy, whose
+// author had since corrected their release notes) was reported to the market
+// as this script mangling UTF-8, when the copy was simply ten days old
+// (dsh-market#614). Ordering by checkedAt spends whatever budget there is on
+// the stalest entries, so a run cut short rotates the list over successive
+// nights instead of starving one end of it.
+//
+// Entries with no checkedAt — never probed, or listed since the last run —
+// sort first, which is what they need anyway.
+const pending = urls
+  .filter((url) => !fresh(map[url]))
+  .sort((a, b) => String(map[a]?.checkedAt ?? '').localeCompare(String(map[b]?.checkedAt ?? '')))
 console.log(`${urls.length} listed, ${pending.length} to probe${PROBE_ALL ? ' (PROBE_ALL)' : ''}`)
 
 const failed = []
