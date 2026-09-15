@@ -2,5 +2,5 @@ url: https://github.com/MichengAI/dsh-pua
 name: MichengAI/dsh-pua
 category: agi
 description:
-  en: Steers the agent to try another approach and verify results before claiming completion, with selectable styles, personas, and an optional verification loop.
-  zh: 促使 Agent 在失败后换方法，并在宣称完成前核验收据；可选风格与角色，并支持可选的验收循环。
+  en: 'Adds /pua to steer the agent to try another approach and verify results before claiming completion, with 15 company styles, persona modes, global and per-conversation settings, and an optional loop that continues until a verification command passes, the iteration limit is reached, or the user cancels.'
+  zh: '提供 /pua，在 Agent 失败后促使其换方法，并在宣称完成前核验收据；含 15 种公司风格、角色模式、全局与会话设置，以及可选验收循环（直到验收命令通过、达到迭代上限或用户取消）。'
