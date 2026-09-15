@@ -1,0 +1,6 @@
+url: https://github.com/xiazhi88/dshgo
+name: xiazhi88/dshgo
+category: remote
+description:
+  en: 'Exposes the loopback-only dsh web to your LAN and adds a LAN-access settings page with QR codes; pulls in dsh-web-mobile for the mobile layout. The same repository also ships an Android client.'
+  zh: '把只监听 127.0.0.1 的 dsh web 暴露到局域网，并在设置里加一个带二维码的「局域网访问」页签；同时引入 dsh-web-mobile 提供移动端布局。同一仓库还带一个 Android 客户端。'
