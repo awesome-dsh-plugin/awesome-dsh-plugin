@@ -1,0 +1,6 @@
+url: https://github.com/piaobo123/dafeiyu-buchibaifan
+name: piaobo123/dafeiyu-buchibaifan
+category: fun
+description:
+  en: 'Desktop pet for DSH: an always-on-top Windows fish that mirrors the agent state (idle, thinking, working, waiting, success, error), queries the DeepSeek account balance on click, and shows ask_user_question prompts in a desktop bubble that can raise the DSH page in the browser.'
+  zh: 'DSH 桌面桌宠：常驻 Windows 最上层的蓝色大肥鱼，镜像 Agent 状态（空闲/思考/干活/等待/完成/出错），点击查询 DeepSeek 账户余额，并在桌面气泡里提示 ask_user_question 待作答、可一键拉起浏览器中已打开的 DSH 页面。'
