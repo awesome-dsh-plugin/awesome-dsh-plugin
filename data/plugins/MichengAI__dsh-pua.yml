@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-pua
+name: MichengAI/dsh-pua
+category: agi
+description:
+  en: Steers the agent to try another approach and verify results before claiming completion, with selectable styles, personas, and an optional verification loop.
+  zh: 促使 Agent 在失败后换方法，并在宣称完成前核验收据；可选风格与角色，并支持可选的验收循环。
