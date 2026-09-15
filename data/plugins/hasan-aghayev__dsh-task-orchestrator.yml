@@ -1,0 +1,6 @@
+url: https://github.com/hasan-aghayev/dsh-task-orchestrator
+name: hasan-aghayev/dsh-task-orchestrator
+category: workflow
+description:
+  en: Plans complex DeepSeek Harness requests, assigns dependency-aware roles such as researcher, architect, backend, frontend, tester, or documentation worker, and sends the collected evidence to a final reviewer.
+  zh: 为复杂的 DeepSeek Harness 请求制定计划，按依赖分配 researcher、architect、backend、frontend、tester 或 documentation worker 角色，并将收集到的证据交给最终 reviewer。
