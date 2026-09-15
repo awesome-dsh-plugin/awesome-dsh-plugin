@@ -1,0 +1,6 @@
+url: https://github.com/menotbobbybrown/dsh-plugin-memory
+name: menotbobbybrown/dsh-plugin-memory
+category: memory
+description:
+  en: 'Persistent knowledge graph and long-term memory engine for DeepSeek Harness with semantic vector search and cross-session entity recall.'
+  zh: 'DeepSeek Harness 持久化知识图谱与长期记忆引擎：支持语义向量检索及跨会话实体回忆。'
