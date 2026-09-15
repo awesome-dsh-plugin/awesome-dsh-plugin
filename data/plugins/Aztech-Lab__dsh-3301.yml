@@ -3,4 +3,4 @@ name: Aztech-Lab/dsh-3301
 category: remote
 description:
   en: Password-optional LAN entry for the DSH Web GUI. DSH stays loopback-only while a settings-card plugin serves its HTTP and WebSocket traffic on port 3301, storing the password only as a scrypt verifier.
-  zh: DSH Web GUI 的可选口令局域网入口。插件在 3301 端口转发 HTTP 与 WebSocket。
+  zh: 将DSH Web GUI代理到3301端口供局域网访问。口令可选，无明文保存，初始3080端口保存回环不暴露。
