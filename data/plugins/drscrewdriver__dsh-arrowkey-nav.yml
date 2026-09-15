@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-arrowkey-nav
+name: drscrewdriver/dsh-arrowkey-nav
+category: ui
+description:
+  en: 'Arrow-key navigation for the DSH Web GUI: Up/Down switch sessions inside the current workspace and Left/Right switch workspaces, reading session identity from the client controllers rather than the DOM, and yielding the keys back to the composer while a draft is being edited.'
+  zh: DSH Web GUI 的方向键导航：上/下在当前工作区内切换会话，左/右切换工作区；会话身份来自客户端控制器而非 DOM；输入框存在草稿时把方向键交还给光标。
