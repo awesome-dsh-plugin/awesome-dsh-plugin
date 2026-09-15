@@ -1,0 +1,6 @@
+url: https://github.com/xrn1997/dsh-novel
+name: xrn1997/dsh-novel
+category: fun
+description:
+  en: 'Reads web novels in the DSH Web GUI: imports legado book sources with a per-source probe, searches across the enabled sources, keeps a shelf with reading progress, and scrolls chapters continuously with auto-prefetch; the same five operations are exposed to the agent as tools.'
+  zh: '在 DSH Web GUI 里读网络小说：导入 legado 书源并逐条探针实测，聚合搜索、书架与阅读进度，连续滚动阅读并自动预取下一章；同样的五个能力以工具形式提供给 agent。'
