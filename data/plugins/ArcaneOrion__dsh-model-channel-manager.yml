@@ -1,0 +1,6 @@
+url: https://github.com/ArcaneOrion/dsh-model-channel-manager
+name: ArcaneOrion/dsh-model-channel-manager
+category: model
+description:
+  en: 'Model channel manager: several provider/model candidates share one virtual route (roundrobin/<group>) with failover, retry, timeout and cooldown; a settings tab edits providers and groups, runs per-model speed tests and real single-model request tests, and a seven-day health panel aggregates latency, failures and upstream token usage (input, output, cache and reasoning).'
+  zh: 模型渠道管理：多个供应商/模型候选共享一条虚拟路由（roundrobin/组），带失败转移、重试、超时与冷却；设置页签可编辑供应商与轮询组、跑测速与单模型真实请求测试，健康面板聚合七天延迟、失败与上游 token 用量（输入、输出、缓存、推理）。
