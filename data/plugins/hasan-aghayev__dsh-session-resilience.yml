@@ -1,0 +1,6 @@
+url: https://github.com/hasan-aghayev/dsh-session-resilience
+name: hasan-aghayev/dsh-session-resilience
+category: session
+description:
+  en: 'Adds DSH restart and stop controls with token-aware reconnect and policy-based recovery for interrupted web sessions.'
+  zh: '为 DSH 增加重启和停止控制、基于令牌的重连，以及用于恢复中断 Web 会话的策略。'
