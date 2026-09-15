@@ -3050,6 +3050,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [xchannel1987/dsh-notify-xc](https://github.com/xchannel1987/dsh-notify-xc) - Browser notification plugin for DeepSeek Harness - system toasts when a task finishes, a run errors, or your input is needed (question / approval / plan review), click to open the session, per-type toggles, and no false 'done' while the main session waits on its subagents.
 - [xiaoshihou514/dsh-weixin](https://github.com/xiaoshihou514/dsh-weixin) - Connects dsh to Weixin, with arbitrary file sending support.
 - [xiaxingtianxia2-glitch/dsh-chime](https://github.com/xiaxingtianxia2-glitch/dsh-chime) - Task-completion chime for DeepSeek Harness, playing the original opencode sounds for done, question, plan-review and error events with zero external dependencies.
+- [xinyang920/dsh-caps-beacon](https://github.com/xinyang920/dsh-caps-beacon) - Turns the MacBook keyboard Caps Lock light into an agent status light: on while the agent works, flashing when it waits for your approval or answer, off when idle.
 - [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) - Connect a Feishu bot to DeepSeek Harness by scanning a QR code.
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) - Connect IM bots to DeepSeek Harness via QR codes or bot credentials (9 channels: Feishu, WeChat, DingTalk, WeCom, QQ, Slack, Telegram, Discord, and WhatsApp).
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) - Connect a Weixin bot to DeepSeek Harness by scanning a QR code.

@@ -3050,6 +3050,7 @@ dsh plugin --profile web add dshmarket
 - [xchannel1987/dsh-notify-xc](https://github.com/xchannel1987/dsh-notify-xc) — DSH 浏览器通知插件 - 任务完成 / 运行出错 / 需要你回答、批准、审阅计划时弹系统级通知，点击气泡直达会话，三类通知独立开关，主会话等子代理期间不误报完成。
 - [xiaoshihou514/dsh-weixin](https://github.com/xiaoshihou514/dsh-weixin) — 通过微信远程控制 DeepSeek Harness，支持任意文件传输。
 - [xiaxingtianxia2-glitch/dsh-chime](https://github.com/xiaxingtianxia2-glitch/dsh-chime) — 为 DeepSeek Harness 复刻 opencode 的任务完成提示音，完成、提问、计划待审、出错四种场景播放原始音效，零外部依赖。
+- [xinyang920/dsh-caps-beacon](https://github.com/xinyang920/dsh-caps-beacon) — 把 MacBook 键盘的 Caps Lock 指示灯变成 agent 状态灯：干活时常亮，等你审批或回答时快闪，空闲时熄灭。
 - [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) — 通过扫码把飞书机器人接入DeepSeek Harness。
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — 通过二维码或机器人凭据将 IM 机器人接入 DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord 和 WhatsApp 共 9 种渠道）。
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) — 通过微信扫码把微信机器人接入 DeepSeek Harness。
