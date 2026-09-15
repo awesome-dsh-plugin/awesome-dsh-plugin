@@ -1112,6 +1112,7 @@ dsh plugin --profile web add dshmarket
 - [lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — 编码订阅 OAuth，支持 SuperGrok / Grok Build、ChatGPT Plus Codex、Kimi Code、Claude Code，并提供可选 loopback OpenAI/Anthropic 网关：本地登录无需粘贴 token，支持 AUTH 刷新重试、grok-4.6 xhigh，并可与 API-key 路由共存。
 - [log-li/dsh-peakrate](https://github.com/log-li/dsh-peakrate) — 为模型选择器（每一行）与 composer 工具行显示峰谷倍率，按每个 provider 自己的时区与时段规则判定；实时目录由 host 经带信任围栏的路由下发。
 - [lovezi0/dsh-model-extension](https://github.com/lovezi0/dsh-model-extension) — 模型+ 设置页:按模型声明推理挡位、输入模态与兼容参数(走官方 settings 管线保存),支持 models.dev 元数据预填与 API 密钥管理。
+- [loyalchiiina/dsh-model-fold](https://github.com/loyalchiiina/dsh-model-fold) — 把模型选择菜单按来源（provider）分组：菜单先列出来源，点来源从右侧滑出子面板列出该来源的全部模型（默认），双击来源标题可切换为在列表内就地展开。
 - [lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — GitHub Copilot LLM 适配器：OAuth 设备码登录、从 Copilot API 动态发现模型、视觉模型图片输入支持（gpt-4.1、gpt-4o），以及 Chat Completions 与 Responses 双协议，按模型自动路由。
 - [MaRi23333/dsh-grok-kit](https://github.com/MaRi23333/dsh-grok-kit) — 面向符合资格的 SuperGrok 或 X Premium 订阅的非官方 Grok 集成：支持 grok-4.6 对话、主循环网页/X 搜索、共用 Grok CLI OAuth、可配模型显示，以及将 Imagine 图片保存到附件库或指定路径。
 - [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) — 非官方 Command Code 模型接入插件：注册 `commandcode` 路由，带实时模型目录与推理强度支持。
