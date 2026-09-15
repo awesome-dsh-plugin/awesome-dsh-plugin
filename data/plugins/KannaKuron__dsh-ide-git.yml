@@ -1,0 +1,6 @@
+url: https://github.com/KannaKuron/dsh-ide-git
+name: KannaKuron/dsh-ide-git
+category: git
+description:
+  en: 'JetBrains-style Git tool window for the sidebar: branch tree with ahead/behind badges, commit graph with text/author/date/path filters, per-file line diff, changes list and commit box, plus branch, tag and stash actions, merge, rebase, cherry-pick, reset and fetch/pull/push.'
+  zh: 侧边栏里的 JetBrains 风格 Git 工具窗口：带 ahead/behind 角标的分支树、可按文本/作者/日期/路径筛选的提交图谱、逐文件行级 diff、变更列表与提交框，以及分支、标签、贮藏操作和合并、变基、优选、重置、抓取/拉取/推送。
