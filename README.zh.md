@@ -2188,6 +2188,7 @@ dsh plugin --profile web add dshmarket
 - [jiewaigongxing/dsh-jiey-browser](https://github.com/jiewaigongxing/dsh-jiey-browser) — 通过 MCP 在 DeepSeek Harness 中驱动 Jiey 浏览器：导航、快照、操作、读取、截图与标签页管理，使用真实 Chromium 环境。
 - [JohnXu22786/browser-automation](https://github.com/JohnXu22786/browser-automation) — dsh 的真实浏览器自动化:基于 Playwright 的 MCP 服务,提供导航、点击、填写、输入、截图与带编号引用的无障碍快照操作,22 个 web_* 工具经 stdio 接入 Agent。
 - [kakajun/dsh-web-recorder](https://github.com/kakajun/dsh-web-recorder) — 网页操作录制器：录制用户引导会话中的真实点击、输入、导航与网络请求，生成 Markdown 操作时间线报告（report.md + events.jsonl），用于沉淀接口级 skill。
+- [KasenRi/dsh-browser](https://github.com/KasenRi/dsh-browser) — DeepSeek Harness 的受控浏览器自动化：agent_browser 工具与 BrowserAutomationService 通过 agent-browser CLI 驱动真实 Chromium / Chrome 页面（或指定 CDP 端点），支持 allowedDomains 域名收敛与单次调用输出上限。
 - [kenny2077/dsh-web-kimi](https://github.com/kenny2077/dsh-web-kimi) — 为 DeepSeek Harness 提供 Kimi Coding 的网页搜索与网页抓取双提供方——一把 coding 计划密钥同时接入 ctx.web 的两条链路（/v1/search 与 /v1/fetch），设置卡片经凭据服务保存密钥，并回退读取 Kimi CLI 配置，安装即用。
 - [kenny2077/dsh-web-search-doubao](https://github.com/kenny2077/dsh-web-search-doubao) — 为 DeepSeek Harness 提供豆包搜索（火山引擎）网络搜索提供方——把 web_search 的后端切换为独立的豆包搜索 API，密钥与计费独立（每月 500 次免费），并内置专用设置卡片，经凭据服务保存密钥。
 - [KKKneko/dsh-search-enhance](https://github.com/KKKneko/dsh-search-enhance) — 提供 Grok-compatible 网页搜索、保留来源分页、Context7 与 Exa 文档检索、有界网页提取、站点映射、离线研究计划和只读诊断。
@@ -2685,6 +2686,7 @@ dsh plugin --profile web add dshmarket
 - [Kaiji-Z/dsh-plugin-stardeck](https://github.com/Kaiji-Z/dsh-plugin-stardeck) — RTS 风格编排看板：用命令取代会话——常驻大副 agent 把舰长命令拆成带验收标准的任务书，侦察/工程/医疗/书记四类小队在隔离工作区执行，所有会话按发起命令索引归队。
 - [KanoNoUta/dsh-captain](https://github.com/KanoNoUta/dsh-captain) — GPT 规划依赖 DAG，DeepSeek Worker 自适应并行执行任务，可选 GPT Reviewer 审核增量 Git Diff 并驱动返工轮次。
 - [Karbo123/DSH-EvoResearch#evoresearch-plugin](https://github.com/Karbo123/DSH-EvoResearch/tree/main/packages/evoresearch-plugin) — 科研 agent 套件：长程目标控制（可审计证据链）、定时任务、多智能体专家团队、自进化科研记忆（FTS5 + RRF 召回）、科研项目工作区与自定义工作台界面。
+- [KasenRi/dsh-orbit](https://github.com/KasenRi/dsh-orbit) — DeepSeek Harness 的确定性工程编排运行时：orbit_controller 工具与 OrbitService 以 Commander / Executor / Smart Watchdog 子代理执行 PLAN、EXECUTE、EVALUATE、有界修正与运行时恢复，持久状态保存在 <project>/.cx/state.json。
 - [Kayungko/dsh-plugin-product-design](https://github.com/Kayungko/dsh-plugin-product-design) — 产品设计工作流套件：一个路由加九个 pd-* 技能，把想法从最小设计简报推进到视觉方向、证据化调研与审计、URL 克隆、前端构建与阻断式设计 QA 闸门。
 - [Kayungko/dsh-plugin-task-coordinator](https://github.com/Kayungko/dsh-plugin-task-coordinator) — 总控式工作流编排：确认闸门批量派发、团队编组、向运行中任务纠偏、等待收口与模型路线发现——11 个 task_* 工具加 /tasks 斜杠命令。
 - [KelaoHu/dsh-lowtide#dsh-lowtide](https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide) — lowtide（退潮）插件能够实现闲时自动批量跑任务——任务框架高度自定义，四种执行策略，L1–L3 半自动/全自动裁决，支持任务编辑与预检，Cordis 微内核集成，桌面网页端通用。
