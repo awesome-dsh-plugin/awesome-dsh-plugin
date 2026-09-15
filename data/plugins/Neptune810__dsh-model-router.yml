@@ -1,0 +1,6 @@
+url: https://github.com/Neptune810/dsh-model-router
+name: Neptune810/dsh-model-router
+category: model
+description:
+  en: Sets the DeepSeek flash model's reasoning effort per step — thinking off for short cheap prompts, low for a plain request, high for engineering work — and raises it only on repeated tool failures. The model itself never changes; effort max is opt-in.
+  zh: 按步骤设置 DeepSeek flash 模型的思考等级：短小的廉价请求关闭思考，普通请求用 low，工程类工作用 high，只有反复出现工具失败才继续升档。模型本身不会改变，max 档需要手动开启。
