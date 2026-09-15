@@ -1,0 +1,6 @@
+url: https://github.com/ankhishtar2-lang/dsh-sakurafrp
+name: ankhishtar2-lang/dsh-sakurafrp
+category: remote
+description:
+  en: "Manage the SakuraFrp phone-to-desktop link from the DSH interface - link status, mobile gateway switch, one-time pairing QR code, device revoke and gateway self-heal."
+  zh: "在 DSH 界面里管理 SakuraFrp 手机与电脑互通的插件：链路状态、移动网关开关、一次性配对二维码、设备撤销与网关自愈。"

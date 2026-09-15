@@ -1,0 +1,7 @@
+url: https://github.com/levodoubt/dsh-longtext-input
+name: levodoubt/dsh-longtext-input
+category: ui
+description:
+  en: 'Adds a Long text button to the composer tool row: write or paste the body in an editor overlay, and on save it is written to <workspace>/.dsh-longtext/<timestamp>_<title>.md and an @ path reference to that file is appended to the composer, leaving the conversation free of the long text itself.'
+  zh: '在输入框工具栏新增「长文本」按钮：在编辑器浮层里写或粘贴正文，保存后写入 <工作区>/.dsh-longtext/<时间戳>_<标题>.md，并把该文件的 @ 路径引用追加到输入框，让正文不进入对话。'
+tarball: https://github.com/levodoubt/dsh-longtext-input/releases/download/v1.0.0/dsh-longtext-input-1.0.0.tgz

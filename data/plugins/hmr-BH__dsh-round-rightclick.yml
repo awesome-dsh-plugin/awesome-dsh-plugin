@@ -1,0 +1,7 @@
+url: https://github.com/hmr-BH/dsh-round-rightclick
+name: hmr-BH/dsh-round-rightclick
+category: ui
+description:
+  en: Radial right-click menu on conversation turns in the DSH web GUI for forking a session from a chosen turn, interrupting generation, copying the working directory path or session ID, opening the working directory, and exporting session logs.
+  zh: 在 DSH Web 对话轮次上点击右键弹出的圆盘菜单：从此轮分叉出新会话、打断生成、复制工作目录路径与会话 ID、打开工作目录、导出会话日志。
+tarball: https://github.com/hmr-BH/dsh-round-rightclick/releases/download/v0.1.0/dsh-round-rightclick-0.1.0.tgz
