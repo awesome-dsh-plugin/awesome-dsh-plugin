@@ -1,0 +1,5 @@
+url: https://github.com/fashionmascherine-svg/formalswarm
+name: fashionmascherine-svg/formalswarm
+category: workflow
+description:
+  en: "Runs a thesis-antithesis-seal debate whose verdict is computed from real command exit codes and case counts, never from agent prose."
