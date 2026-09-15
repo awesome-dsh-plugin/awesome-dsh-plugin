@@ -1,0 +1,6 @@
+url: https://github.com/zhang24xiao/dsh-snippets
+name: zhang24xiao/dsh-snippets
+category: ui
+description:
+  en: 'Manages CSS and JS snippets for the DSH web GUI, injecting enabled CSS as style elements and running enabled JS in the page, with a sidebar-footer quick toggle, its own card under Settings - Plugins, and optional folder or Gist sync.'
+  zh: '管理 DSH Web 界面的 CSS 与 JS 代码片段：启用的 CSS 注入为 style 元素，启用的 JS 在页面内执行；提供侧栏底部快捷开关，设置里在「插件」下自带一张卡片，并可选本地文件夹监听与 Gist 同步。'
