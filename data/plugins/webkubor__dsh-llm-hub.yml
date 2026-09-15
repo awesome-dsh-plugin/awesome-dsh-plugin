@@ -1,0 +1,6 @@
+url: https://github.com/webkubor/dsh-llm-hub
+name: webkubor/dsh-llm-hub
+category: model
+description:
+  en: 'Fills in what the official pi-ai adapter leaves out on the Models page: gateway reachability probing with latency, one-click pull of the gateway model catalog with checkbox write-back into settings, DeepSeek balance and provider quota shown in place, and the protocol and endpoint each provider is actually wired to.'
+  zh: '补上官方 pi-ai 适配器在模型页缺的那半：网关可达性与延迟探测、一键拉取网关模型目录并勾选写回配置、DeepSeek 余额与各家配额就地常驻、每个 provider 实际接入的协议与地址。'
