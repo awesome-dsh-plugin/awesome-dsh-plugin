@@ -3425,7 +3425,7 @@ dsh plugin --profile web add dshmarket
 - [030611/dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — 在已配置遥测后端接收前，对 `session-telemetry/record` 导出副本中的已支持秘密模式进行脱敏。
 - [030611/dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt) — 把每轮工具计数与粗粒度验证信号写入本地 JSONL，不保存提示词、工具参数或结果正文。
 - [030611/qiushi-dsh-evidence-audit](https://github.com/030611/qiushi-dsh-evidence-audit) — 把工具结果与会话事件的 receipt 写入本地哈希链 JSONL，不保存提示词、工具参数、结果正文或原始会话 ID。
-- [0QwQ0/dsh-ui-auth](https://github.com/0QwQ0/dsh-ui-auth) — DeepSeek Harness Web UI 认证网关：登录门禁覆盖页面、/api、/plugins 与 WebSocket 升级；PBKDF2 口令哈希、HttpOnly SameSite 会话 Cookie、按源 IP 登录锁定；设置面板内置用户管理（普通用户仅可修改本人资料与密码，管理员可新增/删除用户、重置密码、调整角色）；模型配置与 API Key 仅管理员可修改；REST/列表接口与 WebSocket 事件流均按用户隔离；会话重启后免登录恢复；JSONL 审计日志；存储故障时保持 fail-closed。
+- [0QwQ0/dsh-ui-auth](https://github.com/0QwQ0/dsh-ui-auth) — DeepSeek Harness Web UI 认证网关：登录门禁覆盖页面、/api、/plugins 与 WebSocket 升级；PBKDF2 口令哈希、HttpOnly SameSite 会话 Cookie、按源 IP 登录锁定；邀请码注册；两步验证可用 TOTP 动态码或通行密钥（WebAuthn：一个账号可绑定多个密钥，手机可扫码添加，支持免用户名登录，改动登录因子前必须二次验证）；设置面板内置用户管理（普通用户可修改本人资料与密码并管理自己的 TOTP 与通行密钥，管理员可新增/删除用户、重置密码、管理邀请码、清除丢失设备的通行密钥）；模型配置与 API Key 仅管理员可修改；REST/列表接口与 WebSocket 事件流均按用户隔离；会话重启后免登录恢复；JSONL 审计日志；存储故障时保持 fail-closed。同时支持两条 DSH 传输线（0.1.1-rc.2 legacy 与 0.1.2+ modern），无需配置；因浏览器要求安全上下文，通行密钥需通过 localhost 或 HTTPS 访问。
 - [173787247/dsh-repeat-stop](https://github.com/173787247/dsh-repeat-stop) — 在可配置次数后硬拦截连续相同的工具调用，避免 Agent 原地空转。
 - [173787247/dsh-tool-budget](https://github.com/173787247/dsh-tool-budget) — 在达到可配置的会话级工具调用次数上限后，硬拦截后续工具调用。
 - [863683348/dsh-gov](https://github.com/863683348/dsh-gov) — Agent 治理套件：基于策略的工具门禁（allow/deny/ask，支持通配符与优先级）、结构化 JSONL 审计日志、基于宿主 token 计量的按 agent 配额，状态存于 $DSH_HOME/gov。
