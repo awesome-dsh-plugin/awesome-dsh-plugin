@@ -1,0 +1,6 @@
+url: https://github.com/GodCC6/dsh-claude-memory
+name: GodCC6/dsh-claude-memory
+category: memory
+description:
+  en: 'Read-only bridge that surfaces Claude Code''s existing project memory in DSH — git-root-aware resolution, credential redaction before injection, and an on-demand recall tool. Zero runtime dependencies.'
+  zh: '只读桥接 Claude Code 已有项目记忆到 DSH：按 git 仓库根解析、注入前脱敏、按需检索工具，零依赖。'

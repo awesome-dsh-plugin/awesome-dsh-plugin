@@ -1,0 +1,6 @@
+url: https://github.com/sidleo/llm-wiki/tree/main/packages/dsh
+name: sidleo/llm-wiki#dsh
+category: memory
+description:
+  en: 'Portable agent knowledge base in plain OKF v0.2 Markdown: 13 wiki_* read/write tools, progressive disclosure, backlinks, gated writes via AGENTS.md rules, auto index/log maintenance, linting, and named multi-bundle switching (session-level or global).'
+  zh: '纯 OKF v0.2 Markdown 的通用 agent 知识库：13 个 wiki_* 读写工具、渐进披露、backlinks、AGENTS.md 门控写入、index/log 自动维护、lint 体检，以及命名多目录 bundle 切换（会话级或全局）。'

@@ -478,9 +478,6 @@
  "https://github.com/a903067276-rgb/dsh-file-mentions": [
   "https://raw.githubusercontent.com/a903067276-rgb/dsh-file-mentions/main/assets/screenshot.png"
  ],
- "https://github.com/a903067276-rgb/dsh-file-upload": [
-  "https://raw.githubusercontent.com/a903067276-rgb/dsh-file-upload/main/assets/screenshot.png"
- ],
  "https://github.com/a903067276-rgb/dsh-hud": [
   "https://raw.githubusercontent.com/a903067276-rgb/dsh-hud/main/assets/hud-panel.png"
  ],
@@ -517,6 +514,9 @@
  ],
  "https://github.com/coolbreezecoin/dsh-wechat-mp": [
   "https://raw.githubusercontent.com/coolbreezecoin/dsh-wechat-mp/main/assets/demo.gif"
+ ],
+ "https://github.com/corrinehu/dsh-buddy-checkin": [
+  "https://raw.githubusercontent.com/corrinehu/dsh-buddy-checkin/main/assets/1.png"
  ],
  "https://github.com/corrinehu/dsh-chat-imagine": [
   "https://raw.githubusercontent.com/corrinehu/dsh-chat-imagine/main/assets/1.png",
@@ -1101,9 +1101,9 @@
  "https://github.com/WJZ-P/dsh-model-capabilities": [
   "https://raw.githubusercontent.com/WJZ-P/dsh-model-capabilities/main/assets/screenshots/01-model-input-selector.png"
  ],
- "https://github.com/winditer/dsh-elf": [
-  "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-elf.png",
-  "https://raw.githubusercontent.com/winditer/dsh-elf/main/assets/screenshot-chat.png"
+ "https://github.com/winditer/dsh-temp-chat": [
+  "https://raw.githubusercontent.com/winditer/dsh-temp-chat/main/assets/screenshot-elf.png",
+  "https://raw.githubusercontent.com/winditer/dsh-temp-chat/main/assets/screenshot-chat.png"
  ],
  "https://github.com/Frog755/dsh-client-auto-retry": [
   "https://raw.githubusercontent.com/Frog755/dsh-client-auto-retry/main/assets/demo.svg",
@@ -1334,7 +1334,8 @@
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-album.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-subs.png",
   "https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/main/assets/panel-mine-anchors.png"
- ],
+ ]
+,
  "https://github.com/yangdongzhen590/dsh-knj-workflow": [
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/task-detail.png",
   "https://raw.githubusercontent.com/yangdongzhen590/dsh-knj-workflow/main/assets/screenshots/workflow-editor.png",

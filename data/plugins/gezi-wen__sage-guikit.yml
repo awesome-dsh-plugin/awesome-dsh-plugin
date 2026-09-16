@@ -1,0 +1,6 @@
+url: https://github.com/gezi-wen/sage-guikit
+name: gezi-wen/sage-guikit
+category: tools
+description:
+  en: Windows desktop control exposed as native DSH tools - whole-screen and single-window capture (the window one goes through PrintWindow, so a covered window still captures), click, drag, typing, keyboard shortcuts, scrolling, window management, pixel and window polling, and UIA queries that can invoke a control or read its value instead of clicking coordinates. 11 tools over a PowerShell 7 child process; no MCP server, no resident process, no API key.
+  zh: 以 DSH 原生工具形式提供的 Windows 桌面控制——整屏与单窗口截图（单窗口走 PrintWindow，窗口被遮住也能抓）、点击、拖动、打字、按键、滚动、窗口管理、像素与窗口轮询，以及可直接 invoke 控件或读取控件值的 UIA 查询（不必点坐标）。11 个工具，跑在 PowerShell 7 子进程上；不需要 MCP 服务器、无常驻进程、无 API key。

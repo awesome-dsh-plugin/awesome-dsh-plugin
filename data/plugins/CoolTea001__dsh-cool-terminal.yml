@@ -1,0 +1,6 @@
+url: https://github.com/CoolTea001/dsh-cool-terminal
+name: CoolTea001/dsh-cool-terminal
+category: tools
+description:
+  en: 'Terminal plugin for DeepSeek Harness: stays in sync with the Workspace in real time, with isolated terminals that each keep their own command history.'
+  zh: 'DeepSeek Harness 终端插件，与工作区实时同步、终端隔离并单独记录历史命令。'

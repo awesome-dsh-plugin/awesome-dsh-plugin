@@ -279,10 +279,6 @@
   "stars": 11,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/a903067276-rgb/dsh-file-upload": {
-  "stars": 6,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/a903067276-rgb/dsh-hud": {
   "stars": 9,
   "checkedAt": "2026-08-19"
@@ -4399,24 +4395,12 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/songoao25/dsh-auto-compact": {
-  "stars": 1,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/songoao25/dsh-bottom-info-bar/tree/main/plugin": {
   "stars": 8,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/songoao25/dsh-chatgpt-subscription": {
   "stars": 2,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/songoao25/dsh-contract-drafting-agent": {
-  "stars": 1,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/songoao25/dsh-virtual-product-team": {
-  "stars": 5,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/SpookySandwich/dsh-plugin-smooth-stream": {
@@ -4907,7 +4891,7 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/v587d/capital-generation/tree/master/dsh-plugin": {
+ "https://github.com/v587d/capital-generation": {
   "stars": 2,
   "checkedAt": "2026-08-19"
  },

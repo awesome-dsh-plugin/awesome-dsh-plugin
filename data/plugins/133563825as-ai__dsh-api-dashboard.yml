@@ -1,0 +1,6 @@
+url: https://github.com/133563825as-ai/dsh-api-dashboard
+name: 133563825as-ai/dsh-api-dashboard
+category: usage
+description:
+  en: 'Multi-platform API balance and usage dashboard for the DSH web GUI: balances for DeepSeek, Zhipu GLM, Kimi, StepFun, SiliconFlow, MiniMax, OpenRouter, Novita and xAI under the composer, estimated per-session and per-subagent cost with DeepSeek peak/off-peak pricing, automatic discovery of relays configured in DSH settings, and an optional draggable whale widget.'
+  zh: 'DSH Web GUI 的多平台 API 余额与用量看板：在输入框下方显示 DeepSeek、智谱 GLM、Kimi、阶跃星辰、硅基流动、MiniMax、OpenRouter、Novita、xAI 的余额，估算本会话与子代理消耗并按 DeepSeek 峰谷计价，自动发现 DSH 设置里已配置的中转站，另有一个可拖拽的大肥鱼挂件。'

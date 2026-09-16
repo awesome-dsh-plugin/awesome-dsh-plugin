@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-updater
+name: zhengjy01/dsh-updater
+category: dev
+description:
+  en: "Track DeepSeek Harness's own releases and update in one click: reads the npm dist-tags and the GitHub changelog, shows every change between the running build and the target, grades the risk, then hands the install to a detached helper that backs the current install up with an atomic rename, runs npm, verifies what landed, relaunches, and rolls back when the new build does not come up."
+  zh: "跟踪 DSH 官方版本并一键更新：读取 npm dist-tags 与 GitHub 更新说明，列出当前版本到目标版本之间每一个版本的更新点，给出分级风险清单（预发布、破坏性变更措辞、本机多份安装与 PATH 不一致、插件 dsh.engines.dsh 兼容性、备份与回滚可用性），再把安装交给分离助手——用 rename 原子备份当前安装、执行 npm、校验落地结果、用原命令重启，新版本起不来就自动回滚。"

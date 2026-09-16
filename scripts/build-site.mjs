@@ -16,6 +16,7 @@ import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { firstAddedDate } from './lib/added-dates.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -211,13 +212,77 @@ if (process.env.SKIP_PUBLISH_CHECKS !== '1' && ordered.length && starsHave / ord
 if (ordered.some((e) => !dates[e.url])) {
   const log = execSync(`git log --reverse --date-order --format=%x01%cI -p -- ${LOCALES[0].readme}`,
     { encoding: 'utf8', maxBuffer: 1 << 28 })
+  // A `+` line is not by itself evidence of an addition. Editing an entry's
+  // description rewrites its README line, and the regeneration that follows
+  // shows the same URL as a removal AND a re-addition in one commit. When that
+  // rewritten line happens to be the first one the log ever shows, the entry
+  // gets dated to its last wording change.
+  //
+  // It happens whenever the original line arrived in a merge commit, whose diff
+  // `git log -p` does not emit — so the next REWRITE is the first visible `+`.
+  // Which means the bug fires precisely when a maintainer is working: merging a
+  // description update re-dates the entry it just touched. Measured on
+  // 2026-09-15, two entries moved to that day within one session
+  // (siyuan-codex-bridge 09-11 → 09-15, thinking-token-stat 09-06 → 09-15).
+  //
+  // So a commit that both removes and re-adds a URL is a MODIFICATION and may
+  // not claim the date; the entry is left for the yml ledger below, which knows
+  // when the entry's own file first appeared. Deliberately narrow: entries whose
+  // first visible `+` is a plain addition keep the value they already had
+  // published, even where the yml ledger would say something earlier.
+  const LINE = /^(-|\+)- \[[^\]]+\]\((https:\/\/github\.com\/[^)]+)\)\s*[-—]\s/
   let cur = null
-  for (const line of log.split('\n')) {
-    if (line.startsWith('\x01')) cur = new Date(line.slice(1).trim()).toISOString()
-    else if (line.startsWith('+') && !line.startsWith('+++')) {
-      const m = line.match(/^\+- \[[^\]]+\]\((https:\/\/github\.com\/[^)]+)\)\s*[-—]\s/)
-      if (m && !dates[m[1]]) dates[m[1]] = cur
+  // Within one commit's diff the `-` and its `+` can appear in either order, so
+  // both sides are collected first and judged once the commit ends.
+  let addedHere = new Set()
+  let removedHere = new Set()
+  const rewritten = new Set() // urls whose assigned commit was a rewrite
+  const flush = () => {
+    for (const url of addedHere) {
+      if (dates[url]) continue
+      dates[url] = cur
+      // Only when THIS commit supplied the date does its being a rewrite
+      // matter. A rewrite that lands after a genuine addition changes nothing,
+      // and flagging it would drag correct dates backwards.
+      if (removedHere.has(url)) rewritten.add(url)
     }
+    addedHere = new Set()
+    removedHere = new Set()
+  }
+  for (const line of log.split('\n')) {
+    if (line.startsWith('\x01')) {
+      flush()
+      cur = new Date(line.slice(1).trim()).toISOString()
+      continue
+    }
+    const m = line.match(LINE)
+    if (!m) continue
+    if (m[1] === '-') removedHere.add(m[2])
+    else addedHere.add(m[2])
+  }
+  flush()
+  // One `--name-only` pass builds the whole yml ledger, rather than a `git log`
+  // per entry, so the fallback below costs ~1.4s instead of minutes.
+  const ymlLog = execSync(
+    'git log --diff-merges=first-parent --diff-filter=A --format=%x01%cI --name-only -- data/plugins/',
+    { encoding: 'utf8', maxBuffer: 1 << 28 },
+  )
+  const ymlAdded = new Map()
+  let ymlCur = null
+  for (const line of ymlLog.split('\n')) {
+    if (line.startsWith('\x01')) { ymlCur = new Date(line.slice(1).trim()).toISOString(); continue }
+    // Newest → oldest, so later assignments overwrite earlier ones and the map
+    // settles on each file's oldest addition.
+    if (line.startsWith('data/plugins/')) ymlAdded.set(line, ymlCur)
+  }
+  // Only the rewritten ones consult it here — the rest keep whatever the README
+  // pass gave them, including the ~120 entries where the yml ledger would say
+  // something a day or two earlier. Those dates are already published, and
+  // re-dating them is a decision about published data, not a bug fix. This pass
+  // repairs the regression; it does not re-adjudicate the back catalogue.
+  for (const url of rewritten) {
+    const y = ymlAdded.get(entryFiles[url])
+    if (y && y < dates[url]) dates[url] = y
   }
   // Second source: the entry's own file under data/plugins/. The README line
   // used to be the only ledger because the README was the only thing a
@@ -238,10 +303,24 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
-          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
-        const iso = out[out.length - 1]
-        if (iso) dates[e.url] = new Date(iso).toISOString()
+        // A canonical filename can first appear in a merge, whose diff the
+        // default log hides: `--diff-filter=A` cannot match a merge because
+        // git computes no diff for one unless asked. Merging #2662 renamed its
+        // three entry files to match their urls and regenerated their README
+        // lines inside the merge, so the files exist under those names in
+        // neither parent and the README pass above is blind to them too. Both
+        // ledgers came up empty and the build refused to run — correctly,
+        // since stamping "now" would make dates flap — which took main's site
+        // build down for four days and turned 130 unrelated pull requests red
+        // on a step no author controls.
+        //
+        // Diagnosed independently, before the maintainer got to it, in #4708,
+        // #4709, #4786, #4821 and #4871; #4821 named the cause down to the
+        // three renamed entries. The lookup itself now lives in
+        // lib/added-dates.mjs so #4756's regression tests can drive it —
+        // this path had no test at all when it took the site down.
+        const iso = firstAddedDate(file)
+        if (iso) dates[e.url] = iso
       } catch { /* not committed yet — falls through to the error below */ }
     }
     stillUndated = ordered.filter((e) => !dates[e.url])

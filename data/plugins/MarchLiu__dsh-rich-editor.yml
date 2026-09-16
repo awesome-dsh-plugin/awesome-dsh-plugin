@@ -1,0 +1,6 @@
+url: https://github.com/MarchLiu/dsh-rich-editor
+name: MarchLiu/dsh-rich-editor
+category: ui
+description:
+  en: 'Rich Markdown notebook for the composer region: a tool-row toggle plus a CodeMirror editor card with Codex-style list editing, submitted through the conversation service.'
+  zh: '为输入区提供富 Markdown 笔记本：工具行开关加 CodeMirror 编辑卡片，支持 Codex 风格列表编辑，经会话服务提交。'

@@ -1,0 +1,6 @@
+url: https://github.com/Meteor-system/superpowers-for-dsh
+name: Meteor-system/superpowers-for-dsh
+category: skill
+description:
+  en: 'A DeepSeek Harness bundle of 14 obra/superpowers engineering skills with a native agent preset, automatic session bootstrap, and Windows sandbox compatibility.'
+  zh: '将 obra/superpowers 的 14 个工程技能打包为 DeepSeek Harness bundle，附原生 Agent 预设、自动会话引导和 Windows 沙箱兼容。'
