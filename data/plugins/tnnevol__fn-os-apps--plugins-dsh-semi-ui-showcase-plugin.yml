@@ -1,0 +1,6 @@
+url: https://github.com/tnnevol/fn-os-apps/tree/main/plugins/dsh-semi-ui-showcase-plugin
+name: tnnevol/fn-os-apps#dsh-semi-ui-showcase-plugin
+category: dev
+description:
+  en: 'Component checklist for the shared Semi Design package used by tnnevol DSH plugins, opened from a `Semi UI` button in a conversation header: 35 components plus a multi-account case page, organised into seven sidebar groups from inputs, forms, selectors and trees to tables, cards, overlays and feedback, each rendered live with a one-line description and a page outline, with light, dark and follow-system preview. Install from npm with `dsh plugin --profile web add @tnnevol/dsh-semi-ui-showcase`.'
+  zh: 'tnnevol 系列 DSH 插件共用的 Semi Design 组件检查页，从会话头部的 `Semi UI` 按钮进入：35 个组件加一个多账号案例页，按七个侧边分组组织，涵盖输入、表单、选择器、树、表格、卡片、浮层与反馈，逐个实渲并配一句话说明与页内目录，可切换浅色、深色与跟随系统预览。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-semi-ui-showcase`。'
