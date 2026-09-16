@@ -1,0 +1,6 @@
+url: https://github.com/EmotionG/dsh-llm-config
+name: EmotionG/dsh-llm-config
+category: model
+description:
+  en: 'Declare any number of LLM providers, each with its own endpoint, credential and per-model parameters (reasoning-effort vocabulary, image input, retry policy), across the OpenAI Chat, OpenAI Responses, Anthropic Messages and Google Gemini wire formats, configured from a settings page.'
+  zh: '在设置页配置任意数量的模型供应商：各自独立设置接口地址、密钥与逐模型参数（思考强度、图片输入、重试策略），支持 OpenAI Chat、OpenAI Responses、Anthropic Messages 与 Google Gemini 四种协议。'
