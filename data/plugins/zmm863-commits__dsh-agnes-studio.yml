@@ -1,0 +1,6 @@
+url: https://github.com/zmm863-commits/dsh-agnes-studio
+name: zmm863-commits/dsh-agnes-studio
+category: workflow
+description:
+  en: 'Agnes Studio — an all-in-one generation panel for the DSH web GUI: text-to-image, image-to-image, multi-image composition, text-to-video, image-to-video, script import, and storyboard assembly, with per-vendor routing across Agnes, DeepSeek, Qwen, Doubao, MiniMax, and Ollama. Renders as a global overlay so the conversation stays usable.'
+  zh: '泡泡猫的影视工具 — DSH Web GUI 的一体化生成面板：文生图、图生图、多图合成、文生视频、图生视频、剧本导入与故事板编排，并按模型名在 Agnes、DeepSeek、Qwen、豆包、MiniMax、Ollama 之间路由。以全局浮层呈现，不遮挡对话。'
