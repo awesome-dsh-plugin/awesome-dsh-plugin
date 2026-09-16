@@ -1,0 +1,6 @@
+url: https://github.com/wx-yss/dsh-composer-enter
+name: wx-yss/dsh-composer-enter
+category: session
+description:
+  en: Makes Enter insert a newline in the DSH 0.1.5 Web composer while Cmd/Ctrl+Enter keeps submitting messages.
+  zh: 让 DSH 0.1.5 Web 输入框使用 Enter 换行，同时保留 Cmd/Ctrl+Enter 提交消息。

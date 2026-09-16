@@ -1,0 +1,6 @@
+url: https://github.com/ouli-1242/dsh-plugin-tool-management
+name: ouli-1242/dsh-plugin-tool-management
+category: tools
+description:
+  en: 'One settings panel managing DSH MCP servers, skills, AGENTS.md presets, archived sessions and scene memory: per-tool toggles, skill import and trash, and scene memories kept as plain Markdown folders that are injected into the system prompt.'
+  zh: '一个设置面板统一管理 DSH 的 MCP、技能、AGENTS.md 预设、归档会话与场景记忆：单工具级启停、技能导入与回收、场景记忆以普通 Markdown 目录形式注入系统提示词。'

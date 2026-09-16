@@ -1,0 +1,6 @@
+url: https://github.com/ankhishtar2-lang/dsh-wallpaper-position
+name: ankhishtar2-lang/dsh-wallpaper-position
+category: theme
+description:
+  en: "Per-wallpaper offset for dsh-dream-skin - nudge the current wallpaper along X and Y in pixels from Settings, remembered separately for each image, URL or gradient."
+  zh: "dsh-dream-skin 的壁纸位移插件：在设置里按像素微调当前壁纸的 X 与 Y 偏移，图片、URL、渐变三类壁纸各自记忆。"

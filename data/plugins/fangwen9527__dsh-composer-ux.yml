@@ -1,0 +1,6 @@
+url: https://github.com/fangwen9527/dsh-composer-ux
+name: fangwen9527/dsh-composer-ux
+category: ui
+description:
+  en: 'Configurable send and newline keys, a custom composer context menu with a native-menu switch, a quick-command panel with built-in prompts and a per-prompt "always append on send" toggle, a prompt optimizer that rewrites the draft with a separate model call, settings-panel size memory, and automatic x-opencode-session header injection for OpenCode routes.'
+  zh: '可配置发送/换行键位、自定义输入框右键菜单（可切回系统原生）、快捷指令面板（内置提示词，每条可设「发送时自动附加」）、用另一次模型调用把草稿整理成清晰指令的提示词优化、设置面板尺寸记忆，并为 OpenCode 路由自动注入 x-opencode-session 请求头。'
