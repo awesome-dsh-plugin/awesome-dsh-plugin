@@ -1,0 +1,7 @@
+url: https://github.com/CZ-ZL/duo/tree/main/dsh-plugin
+name: CZ-ZL/duo#dsh-plugin
+category: dev
+description:
+  en: Evaluate supported Agent targets and compare candidate changes with custom evaluators, bounded budgets, traceable evidence and reusable history.
+  zh: 用自定义评估器评估支持的 Agent 目标，在预算内比较候选改动，保留可追溯证据并复用兼容历史。
+tarball: https://github.com/CZ-ZL/duo/releases/download/v0.6.1/dual-loop-dsh-plugin-0.6.1.tgz
