@@ -1,0 +1,6 @@
+url: https://github.com/mekos2772/dsh-plugin-mimi
+name: mekos2772/dsh-plugin-mimi
+category: fun
+description:
+  en: A Mimi desktop companion for DSH that follows work-session states with animated reactions and bubbles, provides a separate chat mode, and bundles Windows Computer Use for observing and controlling desktop windows.
+  zh: DSH 的 Mimi 桌面伴侣，跟随工作会话状态显示动画反应和气泡，提供独立聊天模式，并内置 Windows Computer Use 以观察和操作桌面窗口。
