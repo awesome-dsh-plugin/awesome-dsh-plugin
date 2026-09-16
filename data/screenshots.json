@@ -1360,6 +1360,7 @@
  ],
  "https://github.com/webkubor/dsh-llm-hub": [
   "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-piai-cards.png",
-  "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-deepseek-balance.png"
+  "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-deepseek-balance.png",
+  "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-availability.png"
  ]
 }
