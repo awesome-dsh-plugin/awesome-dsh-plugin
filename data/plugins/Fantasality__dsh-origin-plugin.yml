@@ -2,6 +2,6 @@ url: https://github.com/Fantasality/dsh-origin-plugin
 name: Fantasality/dsh-origin-plugin
 category: tools
 description:
-  en: 'Drive Origin scientific plotting from DeepSeek Harness AI chat via MCP: write data, plot line/scatter/column, export PNG/SVG.'
-  zh: '通过 MCP 在 DeepSeek Harness 对话里驱动 Origin 科学绘图：写数据、折线/散点/柱状图，导出 PNG/SVG。'
-tarball: https://github.com/Fantasality/dsh-origin-plugin/releases/download/v1.2.0/dsh-origin-plugin.tgz
+  en: 'Drive OriginLab Origin scientific plotting from AI chat via MCP: 62 tools. Modal-dialog watchdog, LabTalk safety gate, release/reconnect, fit with initial/fixed/weighted params, fine-grained plot and sheet edits, matrix tools, FigureSpec declarative YAML (diff-able and replayable), MCP Resources read-only snapshot, matplotlib-figure bridge, PowerPoint assembly with panel labels, Graph Gallery template search, EPS export, file-access whitelist, visual regression baseline, and editable OPJU delivery with deterministic readback verification.'
+  zh: '通过 MCP 在 AI 对话里驱动 OriginLab Origin 科学绘图与分析：62 个工具。模态对话框看门狗、LabTalk 破坏命令门禁、释放/重连、拟合初值/固定参数/加权、细粒度图与工作表编辑、矩阵工具、FigureSpec 声明式 YAML（可 diff 可重放）、MCP Resources 只读会话快照、matplotlib 图桥接、PowerPoint 组图、Graph Gallery 模板搜索、EPS 导出、文件访问白名单、视觉基准回归，以及带确定性反读验证的可编辑 OPJU 交付。'
+tarball: https://github.com/Fantasality/dsh-origin-plugin/releases/download/v2.6.1/dsh-origin-plugin-2.6.1.tar.gz
