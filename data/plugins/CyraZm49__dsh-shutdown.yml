@@ -1,0 +1,6 @@
+url: https://github.com/CyraZm49/dsh-shutdown
+name: CyraZm49/dsh-shutdown
+category: ui
+description:
+  en: 'Adds a floating shutdown button to the dsh web UI that stops the whole dsh web process from inside the app: the host route replies, then requests a graceful exit through the launcher channel so the plugin tree is disposed and the port released before the process ends.'
+  zh: '在 dsh Web 界面右下角加一个「关闭」悬浮按钮，从界面内关掉整个 dsh web 进程：后台路由先应答，再通过启动器通道请求优雅退出，先释放插件树、释放端口，然后进程才结束。'
