@@ -1,0 +1,6 @@
+url: https://github.com/huahai0202/dsh-better-archive
+name: huahai0202/dsh-better-archive
+category: session
+description:
+  en: Browse, search, sort, and group archived sessions by project in a Settings section and a right-Sidebar tab, with unarchive and confirmation-gated permanent deletion (single, per project, or all); sessions still in use are deleted at the next DSH restart.
+  zh: 在设置区和右侧 Sidebar 中浏览、搜索、排序并按项目分组已归档会话，支持取消归档与带确认门禁的永久删除（单个、按项目或全部）；仍在使用的会话会在下次 DSH 重启时完成删除。
