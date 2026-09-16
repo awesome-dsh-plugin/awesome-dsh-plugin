@@ -1253,6 +1253,7 @@ dsh plugin --profile web add dshmarket
 - [Han-Yao94/dsh-session-toolkit](https://github.com/Han-Yao94/dsh-session-toolkit) — 整合工具包：会话身份、全局/工作区提示词（含引用文件）、会话自动上线、免 UAC 网页重启、会话间消息。
 - [haoranwang0921/dsh-session-cleaner](https://github.com/haoranwang0921/dsh-session-cleaner) — 在 DSH Web GUI 设置页管理对话记录：可删除整个会话（归档并物理删除日志），或按用户消息分组浏览并删除单条消息（删除用户消息会级联删除其引发的助手与工具消息）。运行中与当前会话受保护。
 - [Harzva/dsh-restart-autoresume](https://github.com/Harzva/dsh-restart-autoresume) — 通过现有兼容的 dsh-restart Host 提供方，为符合条件的顶层会话增加确认式 DSH 重启与持久自动续作。
+- [hasan-aghayev/dsh-session-resilience](https://github.com/hasan-aghayev/dsh-session-resilience) — 为 DSH 增加重启和停止控制、基于令牌的重连，以及用于恢复中断 Web 会话的策略。
 - [heartmove/dsh-session-bridge](https://github.com/heartmove/dsh-session-bridge) — 会话桥：让当前 agent 直接用提示词驱动其它真实的 DSH 会话——跨工作区创建主会话、向任意会话发消息或注入 steering、等待并逐段读取回复（含思维链）、恢复离线会话、按名称或 id 跨工作区查找会话；还能用后台看门狗监控并调度主任务（卡住催办、偏离纠偏、卡死终止），一键归档会话。
 - [heartmove/dsh-side-chat](https://github.com/heartmove/dsh-side-chat) — 选中对话片段，在右侧面板的侧边聊天中提问（按会话隔离）；AI 回复可原文或摘要后带回主会话。
 - [Heeweelee/dsh-session-plugin](https://github.com/Heeweelee/dsh-session-plugin) — 在输入框内按 ↑/↓ 回填历史消息，并支持右键归档（隐藏）工作区会话。
