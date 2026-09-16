@@ -2,5 +2,5 @@ url: https://github.com/WuJiaoJue/dsh-later
 name: WuJiaoJue/dsh-later
 category: workflow
 description:
-  en: 'In-session scheduled messages on top of the dsh-schedule engine: an input-bar timer panel with smart time slots, a pending-send dock with per-item cancel and inline edit, a /later command that sends what you are typing at a chosen time as yourself, and sidebar pixel-clock presence — server-side scheduling keeps firing with the page closed.'
-  zh: '基于 dsh-schedule 引擎的会话内定时消息：输入框定时面板（智能时段/自定义时间）、待发送 dock（逐条取消与行内编辑）、把当前输入稍后以你身份发出的 /later 命令，以及侧栏像素时钟标识；调度在服务端执行，关掉网页也会准时触发。'
+  en: 'Scheduled reminders and delayed send for DSH: /later delivers what you type as yourself at the time you pick, while the timer panel (or /schedule) posts a reminder row — even with the page closed. (scheduled send / reminders / delayed send)'
+  zh: '给 DSH 加上定时提醒与延迟发送：一句话到点送达——/later 以你的身份发出，定时面板或 /schedule 发提醒行；关掉网页也准时触发。（定时发送 / 定时提醒 / 延迟发送 / 提醒）'
