@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-voice-alert
+name: loyalchiiina/dsh-voice-alert
+category: voice
+description:
+  en: 'Speaks or plays a sound at the end of every turn and plays a failure cue when a tool call or a turn errors. Ships 20 built-in effects (10 alert chimes + 10 nature sounds) and defaults to effect mode, so it needs no API key and no audio files; an optional Volcengine voice-clone route generates the three announcement clips in one click. Plays through winmm/waveOut as-is, never changing the system volume or mute state. Windows only.'
+  zh: '每个 turn 结束自动语音/音效提醒，出错时播失败提示；内置 20 个音效（提醒 10 + 大自然 10）且默认「音效」模式，零配置开箱即用、不需要任何 API Key 与音频文件；进阶可用火山「声音复刻」克隆自己的音色并一键生成三条播报语音；走 winmm/waveOut 原样播放，绝不改动系统音量或静音状态。仅 Windows。'
