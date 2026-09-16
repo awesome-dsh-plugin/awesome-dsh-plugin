@@ -1,0 +1,7 @@
+url: https://github.com/CZ-ZL/duo/tree/main/dsh-plugin
+name: CZ-ZL/duo#dsh-plugin
+category: dev
+description:
+  en: Try changes to Agent prompts and supported component settings within a budget, run custom evaluators, and compare results and costs before choosing what to keep.
+  zh: 让 Agent 在预算内尝试修改提示词或支持的组件配置，用自定义评估器比较结果与花费，再决定采用哪个版本。
+tarball: https://github.com/CZ-ZL/duo/releases/download/v0.6.2/dual-loop-dsh-plugin-0.6.2.tgz
