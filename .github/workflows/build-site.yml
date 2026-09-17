@@ -65,6 +65,7 @@ jobs:
           # Needed by the catalog publish below; harmless for the site build.
           registry-url: https://registry.npmjs.org
       - run: npm ci
+      - run: node --test scripts/download-window.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #

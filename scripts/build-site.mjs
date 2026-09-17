@@ -1026,6 +1026,9 @@ const registry = {
       version: e.version,
       stars: e.stars,
       downloads: e.downloads,
+      downloadsStart: downloadsMap[e.url]?.start ?? null,
+      downloadsEnd: downloadsMap[e.url]?.end ?? null,
+      downloadsCheckedAt: downloadsMap[e.url]?.checkedAt ?? null,
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
       // Optional, author-maintained (data/screenshots.json); omitted when
