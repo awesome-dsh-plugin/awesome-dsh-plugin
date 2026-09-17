@@ -1,0 +1,6 @@
+url: https://github.com/zlqd123/dsh-composer-keys
+name: zlqd123/dsh-composer-keys
+category: ui
+description:
+  en: 'Composer key remap for the DeepSeek Harness web UI: bind Enter, Ctrl/Cmd+Enter, Shift+Enter or any custom chord to the Send, Newline or Interrupt actions, with cross-action migration, durable persistence and native behavior preserved by default.'
+  zh: 'DeepSeek Harness Web 输入框键位自定义：把 Enter、Ctrl/Cmd+Enter、Shift+Enter 或任意组合键分配给发送、换行、打断三个动作，支持跨动作互斥迁移与持久化保存，默认保持 DSH 原生行为。'
