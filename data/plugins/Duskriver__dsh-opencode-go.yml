@@ -1,0 +1,6 @@
+url: https://github.com/Duskriver/dsh-opencode-go
+name: Duskriver/dsh-opencode-go
+category: model
+description:
+  en: 'OpenCode Go provider with live gateway model discovery, online models.dev capability metadata, session routing, and Web settings with subscription usage.'
+  zh: 'OpenCode Go 模型提供方，支持网关实时模型发现、models.dev 在线能力配置、会话路由，以及含订阅用量显示的 Web 设置页。'
