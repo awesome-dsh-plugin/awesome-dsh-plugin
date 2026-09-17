@@ -2,5 +2,5 @@ url: https://github.com/STARDUSTLC666/dsh-email
 name: STARDUSTLC666/dsh-email
 category: notify
 description:
-  en: IMAP/SMTP email tools (list/read/search/send/folders/attachment) with QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud presets, multi-account support and a send-approval gate.
-  zh: 邮件工具插件：IMAP/SMTP 收/发/搜/列文件夹/附件下载，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门。
+  en: IMAP/SMTP email tools (list/read/search/send/folders/attachment/health/watch/mark/reply) with since/until date-range filters, email_mark for read/unread/star/move, email_reply for reply/reply-all/forward with threading headers, QQ/163/126/Sina/Aliyun/Gmail/Outlook/iCloud presets, multi-account support, a send-approval gate, a web settings page and a whale-girl new-mail popup driven by the incremental email_watch checker.
+  zh: 邮件工具插件：含 email_watch 增量新邮件检查、email_mark（已读/未读/星标/移动文件夹）与 email_reply（回复/回复全部/转发，自动线程头+引文）的十工具，Web 设置页与鲸鱼娘递信新邮件弹窗，since/until 日期范围过滤，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门。

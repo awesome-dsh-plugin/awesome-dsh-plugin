@@ -1,0 +1,6 @@
+url: https://github.com/WuJiaoJue/dsh-suggest-ghost
+name: WuJiaoJue/dsh-suggest-ghost
+category: ui
+description:
+  en: 'Input prediction for the DSH Web GUI: after each turn an auxiliary LLM call suggests the next prompt rendered as ghost text in the empty input box, and history prefix completion fills in while typing, with Tab and arrow-key acceptance.'
+  zh: DSH Web 输入预测插件：回合结束后 LLM 生成下一条建议，输入框空草稿时以幽灵文本渲染，输入时按会话历史做前缀补全，Tab / 方向键采纳。

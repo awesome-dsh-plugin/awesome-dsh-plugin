@@ -2,5 +2,5 @@ url: https://github.com/elysia395/dsh-wallpaper-engine
 name: elysia395/dsh-wallpaper-engine
 category: theme
 description:
-  en: 'Wallpaper Engine backgrounds for the DSH web GUI: plays local Video/Web wallpapers behind the chat, renders Scene wallpapers as extracted static frames, and adds content-rating/type filters, custom uploads and an iOS-style liquid-glass settings window.'
-  zh: 'DSH 网页界面壁纸：把本机 Wallpaper Engine 的 Video/Web 壁纸实时播放到聊天界面后方，Scene 壁纸提取主纹理作为静态帧，支持内容分级/类型过滤、自定义壁纸上传与 iOS 液态玻璃设置窗口。'
+  en: 'Requires DeepSeek Harness 0.1.5-rc.1+ (DSH Desktop >= 2.0.7) and dsh-better-sidebar >= 0.19.0 - update both before installing or updating this plugin. Plays local Wallpaper Engine Video/Web wallpapers behind the chat, renders Scene wallpapers as extracted static frames, and adds content-rating/type filters, custom uploads and an iOS-style liquid-glass settings window.'
+  zh: '前置要求：DeepSeek Harness 0.1.5-rc.1+（DSH Desktop ≥ 2.0.7）且 dsh-better-sidebar ≥ 0.19.0，安装或更新本插件前请先更新两者。把本机 Wallpaper Engine 的 Video/Web 壁纸实时播放到聊天界面后方，Scene 壁纸由内置渲染器输出完整场景帧，支持内容分级/类型过滤、自定义壁纸上传与 iOS 液态玻璃设置窗口。'

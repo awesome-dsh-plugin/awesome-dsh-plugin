@@ -1,0 +1,6 @@
+url: https://github.com/iimaguest/phone-tunnel-pool
+name: iimaguest/phone-tunnel-pool
+category: remote
+description:
+  en: 'Self-healing Cloudflare quick-tunnel pool for the dsh web GUI: floating widget with QR phone access, generational rotation, chase service worker and prompt-free credential handoff.'
+  zh: '为 dsh web GUI 提供自愈式 Cloudflare 快速隧道池：浮窗控件、扫码手机访问、代际轮换、追踪 Service Worker，免提示凭据交接。'

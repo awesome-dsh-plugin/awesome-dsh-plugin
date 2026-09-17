@@ -1,0 +1,6 @@
+url: https://github.com/qixin-ai-data/dsh-qixin-insight-mcp-oauth
+name: qixin-ai-data/dsh-qixin-insight-mcp-oauth
+category: tools
+description:
+  en: 'Connects the Qixin Insight MCP server over OAuth 2.1 with PKCE as a single plugin entry, mounting its tools as mcp__qixin_insight__* with automatic token refresh and revocation on disconnect.'
+  zh: '通过 OAuth 2.1 + PKCE 授权接入启信慧眼 MCP 服务，以单条插件条目把它的工具挂载为 mcp__qixin_insight__*，token 到期前自动刷新，断开时吊销。'

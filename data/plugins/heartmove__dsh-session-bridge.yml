@@ -1,0 +1,6 @@
+url: https://github.com/heartmove/dsh-session-bridge
+name: heartmove/dsh-session-bridge
+category: session
+description:
+  en: "Session bridge for DeepSeek Harness: drive other real DSH sessions straight from your prompt — create top-level sessions in any workspace, message or steer any session, wait for replies and stream them segment-by-segment (chain-of-thought included), resume offline sessions, find sessions across workspaces, run a background watchdog that monitors and schedules a main task (nudge when stalled, correct drift, cancel when stuck), and archive sessions with one command."
+  zh: "会话桥：让当前 agent 直接用提示词驱动其它真实的 DSH 会话——跨工作区创建主会话、向任意会话发消息或注入 steering、等待并逐段读取回复（含思维链）、恢复离线会话、按名称或 id 跨工作区查找会话；还能用后台看门狗监控并调度主任务（卡住催办、偏离纠偏、卡死终止），一键归档会话。"

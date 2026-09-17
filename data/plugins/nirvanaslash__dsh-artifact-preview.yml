@@ -1,0 +1,6 @@
+url: https://github.com/nirvanaslash/dsh-artifact-preview
+name: nirvanaslash/dsh-artifact-preview
+category: ui
+description:
+  en: 'Adds a produced-files card row to the chat and a resizable split-screen preview panel for workspace artifacts (Markdown, source code, CSV, JSON, images, HTML), plus a localhost port preview.'
+  zh: '在对话中新增产出文件卡片行，并提供可拖拽分屏的产物预览面板，支持 Markdown、源码、CSV、JSON、图片、HTML，以及本地端口预览。'

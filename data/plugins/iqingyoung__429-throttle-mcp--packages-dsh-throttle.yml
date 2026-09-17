@@ -1,0 +1,6 @@
+url: https://github.com/iqingyoung/429-throttle-mcp/tree/main/packages/dsh-throttle
+name: iqingyoung/429-throttle-mcp#dsh-throttle
+category: tools
+description:
+  en: DeepSeek Harness rate-limiting plugin that prevents API 429 errors during long-running tasks, with task retrospectives.
+  zh: DeepSeek Harness 限流插件：长程任务自动控速避免 429，支持任务复盘。

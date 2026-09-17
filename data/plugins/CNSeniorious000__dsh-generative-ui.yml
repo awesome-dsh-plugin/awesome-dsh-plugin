@@ -1,0 +1,6 @@
+url: https://github.com/CNSeniorious000/dsh-generative-ui
+name: CNSeniorious000/dsh-generative-ui
+category: ui
+description:
+  en: Lets the AI insert streaming-generated UI into the conversation or a side panel, written in TSX — already one of the model's native languages, so there is no JSON schema to teach it. Rendered without flicker, state kept across frames with no hard remount, and a click in the card driving the next chat turn. Inline is where streaming matters most; the side Canvas is the more agentic shape. Cards get agentic capabilities of their own — run bash, curl, call the model, read and write files.
+  zh: 让 AI 在对话中或侧边栏里插入流式生成的 UI，以 TSX 书写——模型的母语之一，不必再教它一套 JSON schema。流式渲染不闪烁，状态跨帧保留、无硬刷新，对 UI 的点击直接驱动下一轮对话。inline 形态流式最重要，side canvas 形态更 agentic。卡片内部同样具备 agentic 能力——执行 bash、curl、调用模型、读写文件。

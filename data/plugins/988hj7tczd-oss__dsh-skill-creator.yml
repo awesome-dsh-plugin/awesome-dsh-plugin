@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-skill-creator
+name: 988hj7tczd-oss/dsh-skill-creator
+category: skill
+description:
+  en: "One-shot DSH skill (SKILL.md) generator: capture intent, draft, validate, package and distribute skills from inside a DeepSeek Harness session (skill_new / skill_validate / skill_package / skill_improve_description)."
+  zh: "一键生成 DSH 技能（SKILL.md）的 Cordis 插件：在会话内捕获意图、起草、校验、打包分发并优化技能描述（skill_new / skill_validate / skill_package / skill_improve_description）。"

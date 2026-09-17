@@ -1,0 +1,6 @@
+url: https://github.com/YEYEYEYESHIFU/dsh-split-screen
+name: YEYEYEYESHIFU/dsh-split-screen
+category: ui
+description:
+  en: Split-screen workspace for the DeepSeek Harness web GUI - chat with several agents side by side in panes that look and behave exactly like the stock conversation, with a compact TUI composer mode (Alt+T) and pane-focus shortcuts.
+  zh: DeepSeek Harness 网页端分屏工作区 - 多个会话并排聊天，面板观感与原生对话完全一致，支持 Alt+T 切换紧凑 TUI 输入模式与面板焦点快捷键。

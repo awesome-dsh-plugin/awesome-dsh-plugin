@@ -1,0 +1,6 @@
+url: https://github.com/savageops/dsh-rich-indexing
+name: savageops/dsh-rich-indexing
+category: session
+description:
+  en: 'Tiered compaction hub: replaces the single 80% compaction cliff with a configurable ladder (default 30/50/70/90) whose tiers escalate from gentle to maximum consolidation laws, folds a deterministic keyword index into every checkpoint so facts accumulate across cycles, and summarizes through a model chain — primary plus up to 3 fallbacks, each with its own reasoning effort. Adds a Compaction module sub-tab and a Settings card; toggling off always restores stock compaction.'
+  zh: '分级压缩中枢：把单一的 80% 压缩阈值换成可配置的阶梯（默认 30/50/70/90），逐级加强压缩力度；每次检查点都折叠入确定性关键词索引，让事实跨周期累积；摘要走模型链——主模型加最多 3 个回退，各自独立推理档位。附带 Compaction 模块子标签页与设置卡片；关闭插件始终恢复原版压缩。'

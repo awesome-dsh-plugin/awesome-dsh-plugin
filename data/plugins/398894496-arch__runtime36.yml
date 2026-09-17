@@ -2,5 +2,5 @@ url: https://github.com/398894496-arch/runtime36
 name: 398894496-arch/runtime36
 category: memory
 description:
-  en: Registers read-only DSH tools that route status, preference, correction, memory, project, search, and suggest against a local Obsidian vault.
-  zh: 注册只读 DSH 工具，对本地 Obsidian 库做状态、偏好、纠错、记忆、项目、搜索与建议路由。
+  en: Local Obsidian vault as the agent knowledge store, with read-only DSH tools that route status, preference, correction, memory, project, search, and suggest to the matching page.
+  zh: 把本地 Obsidian 库当作 Agent 知识库，并用只读 DSH 工具把状态、偏好、纠错、记忆、项目、搜索与建议路由到对应页面。

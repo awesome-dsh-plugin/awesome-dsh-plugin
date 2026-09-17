@@ -1,0 +1,6 @@
+url: https://github.com/dsboylw/LazyNoobsCockloft/tree/main/dsh-session-notes
+name: dsboylw/LazyNoobsCockloft#dsh-session-notes
+category: session
+description:
+  en: 'Per-session notes with 10 color labels, pinning everywhere (overview list, session menu, editor), a live-filterable all-notes overview, a quick session-switch menu, and an always-on bottom bar you can write into even when the session has no note - colored workspace badges, truncation with full-text hover, copy buttons everywhere.'
+  zh: '会话备注插件：10 色标签，置顶全链路（总览列表/会话菜单/编辑框），可实时筛选的全部备注总览，会话快速切换菜单，无备注也能直写的常驻底部栏——彩色工作区徽章、截断+悬停看全文、复制按钮遍布。'

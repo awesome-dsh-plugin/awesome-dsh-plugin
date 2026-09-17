@@ -1,0 +1,6 @@
+url: https://github.com/xuan666-lab/dsh-openrouter-provider-advisor
+name: xuan666-lab/dsh-openrouter-provider-advisor
+category: model
+description:
+  en: Ranks OpenRouter providers for the current DSH model by quantization, speed, cache-heavy price, context, and uptime, with one-click switching to help reduce token costs.
+  zh: 按量化、速度、缓存重度价格、上下文和可用率为当前 DSH 模型推荐 OpenRouter 供应商，并支持一键切换以帮助降低 token 成本。

@@ -1,0 +1,5 @@
+url: https://github.com/leetom314/dsh-risk-gate
+name: leetom314/dsh-risk-gate
+category: security
+description:
+  en: 'Semantic risk grading and progressive authorization: classifies tool calls into safe/risky/redline, asks before irreversible actions, auto-allows only approved-and-succeeded signatures.'

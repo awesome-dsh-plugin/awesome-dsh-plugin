@@ -1,0 +1,6 @@
+url: https://github.com/cuddly-guacamole/dsh-auto-approval-llm
+name: cuddly-guacamole/dsh-auto-approval-llm
+category: security
+description:
+  en: 'LLM-assisted auto approval with countdown fallback for the Auto permission preset: static rules, risk tiers, breaker and file audit.'
+  zh: 为 DSH Auto 权限档提供 LLM 辅助自动审批：静态规则、LLM 复审、风险分档、人工倒计时兜底、熔断与文件级审计。

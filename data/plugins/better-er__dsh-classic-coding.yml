@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-classic-coding
+name: better-er/dsh-classic-coding
+category: ui
+description:
+  en: 'Slides out a Monaco editor plus a lazy-loaded file-tree panel in the DSH Web conversation, so you can edit the local workspace inline without switching to an external editor.'
+  zh: '在 DSH 对话界面右侧滑出 Monaco 编辑器与文件树面板，直接在对话里编辑本地工作区代码，无需切到外部编辑器。'

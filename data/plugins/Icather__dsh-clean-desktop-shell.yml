@@ -2,5 +2,5 @@ url: https://github.com/Icather/dsh-clean-desktop-shell
 name: Icather/dsh-clean-desktop-shell
 category: ui
 description:
-  en: 'Clean desktop shell for DSH as a plugin: wraps your existing web profile in a native window, tray-managed backend start/restart/stop (progress dialogs), offline auto-reconnect, desktop shortcut and single instance. Windows + macOS.'
-  zh: 'DSH 插件形态的纯净桌面壳：为现有 web profile 套一层原生窗口，托盘管理后端启停/重启（带进度弹窗）、离线自动重连、桌面快捷方式与单实例，Windows + macOS 双平台。'
+  en: 'Clean desktop shell for DSH: launch by double-clicking a desktop shortcut like any normal desktop app, live backend monitoring with one-click tray start/restart/stop (progress dialogs), offline auto-reconnect, single instance. Reuses your existing web profile, no restyling of the web UI. Windows + macOS.'
+  zh: 'DSH 纯净桌面壳：双击桌面快捷方式即可像普通桌面软件一样启动；后端活性实时监测 + 托盘一键启停/重启（带进度弹窗）、离线自动重连、单实例。复用现有 web profile，不改动 web 界面。Windows + macOS 双平台。'

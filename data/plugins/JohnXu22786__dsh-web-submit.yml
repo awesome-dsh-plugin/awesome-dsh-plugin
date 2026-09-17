@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/dsh-web-submit
+name: JohnXu22786/dsh-web-submit
+category: tools
+description:
+  en: "Runs headless-style tasks through the live dsh web process (POST /x/headless + GET status + SSE events) so CLI-invoked sessions appear in the Web UI in real time."
+  zh: "把 CLI 提交的 headless 任务跑进正在运行的 dsh Web 进程（/x/headless + SSE 事件流），Web 界面实时可见进度。"

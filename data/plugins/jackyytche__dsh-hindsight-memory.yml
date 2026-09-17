@@ -1,0 +1,9 @@
+# awesome-dsh-plugin registry entry for dsh-hindsight-memory.
+# File goes to data/plugins/<OWNER>__dsh-hindsight-memory.yml in a PR against
+# https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+url: https://github.com/jackyytche/dsh-hindsight-memory
+name: jackyytche/dsh-hindsight-memory
+category: memory
+description:
+  en: 'Hindsight long-term memory for DeepSeek Harness: injects relevant memories before each turn and retains finished turns to a Hindsight bank.'
+  zh: '接入 Hindsight 长期记忆：每轮开始前自动注入相关记忆，回合结束后自动沉淀对话。'

@@ -1,0 +1,6 @@
+url: https://github.com/ph4310822/dsh-edex-jarvis-ui/tree/main/packages/bundle
+name: ph4310822/dsh-edex-jarvis-ui#bundle
+category: ui
+description:
+  en: 'JARVIS-style sci-fi HUD shell over the DSH web GUI: electric-cyan VITAL SIGNS / RT-MONITOR / RT-LOG left bar, POWER CORE gauges and a rotating RADAR scan disc on the right with up/down traffic chart, filesystem browser with file preview, and a terminal-styled composer with a JARVIS header strip that follows the active workspace.'
+  zh: '在 DSH Web 界面上叠加 JARVIS 风格科幻 HUD 外壳：电光青色 VITAL SIGNS 生命体征 / RT-MONITOR 实时监控 / RT-LOG 事件日志左栏，右侧 POWER CORE 能源核心仪表、旋转扫描的 RADAR 雷达盘与上下行流量图，左下文件系统浏览器（带文件预览），以及带 JARVIS 头部横幅、跟随当前工作区的终端风格输入框。'

@@ -1,0 +1,6 @@
+url: https://github.com/bigharm/dsh-agentnoodle
+name: bigharm/dsh-agentnoodle
+category: fun
+description:
+  en: 'Extensible AI-driven group-reaction narrative game framework for DeepSeek Harness: type one action and multiple NPCs each respond in their own chatroom message with avatar illustrations; worlds, locations, NPCs and feature extensions (e.g. a third-party drawing API for dynamic NPC expressions) are added and modified through the harness chat dialog without code.'
+  zh: 'DeepSeek Harness 插件：可扩展的 AI 群像聊天游戏框架。输入一个行动，多个 NPC 各自回应，每条反应独立成带头像插图的聊天室消息；世界、地点、NPC 与功能扩展（如接入第三方绘图 API 实现 NPC 动态表情动作）都可以在对话框里让 agent 直接添加修改，无需写代码。'

@@ -1,0 +1,9 @@
+# 提交到 awesome-dsh-plugin 仓库: data/plugins/Anna-la__token-stat.yml
+# 流程: fork awesome-dsh-plugin → 添加本文件 → npm ci && node scripts/generate-readme.mjs → PR
+# 注意: 描述含 ": " 需加引号(YAML 嵌套键问题)
+url: https://github.com/Anna-la/token-stat
+name: Anna-la/token-stat
+category: usage
+description:
+  en: 'Cumulative token usage tracking for DeepSeek Harness, with per-model and per-day breakdowns, a settings-page dashboard and an online-changeable data directory.'
+  zh: '统计 DeepSeek Harness 累计 token 用量并按模型/日期区分，附设置页用量看板，数据保存目录可在线更改。'

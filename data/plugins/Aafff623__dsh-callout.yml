@@ -1,0 +1,6 @@
+url: https://github.com/Aafff623/dsh-callout
+name: Aafff623/dsh-callout
+category: ui
+description:
+  en: 'GitHub-style alert cards for DSH assistant Markdown: a qualifying `> [!NOTE]`, TIP, IMPORTANT, WARNING, or CAUTION blockquote becomes a theme-aware card. Stored session content is left unchanged.'
+  zh: 把 DSH 助手 Markdown 里合格的 `> [!NOTE]`、TIP、IMPORTANT、WARNING、CAUTION 块引用渲染成跟随主题的 GitHub 风格提示卡片，不改会话存档。

@@ -1,0 +1,6 @@
+url: https://github.com/Flan246/dsh-latex-guard
+name: Flan246/dsh-latex-guard
+category: docs
+description:
+  en: "LaTeX and BibTeX guardrails for DeepSeek Harness: compile checks with automatic xelatex/lualatex detection, BibTeX entry deduplication and field filling from Crossref, and \\cite key audits against the .bib file."
+  zh: "为 DeepSeek Harness 提供的 LaTeX 与 BibTeX 检查工具：编译检查（自动识别 xelatex/lualatex），基于 Crossref 的 BibTeX 条目去重与字段补全，以及 \\cite 键与 .bib 文件的一致性审计。"

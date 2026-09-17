@@ -1,6 +1,0 @@
-url: https://github.com/ninipa/oh-my-dsh-slim/tree/main/npm-package
-name: ninipa/oh-my-dsh-slim#npm-package
-category: workflow
-description:
-  en: "Specialist subagent delegation preset (orchestrator + 5 roles: oracle/designer/fixer/explorer/librarian) that seeds itself into your DSH home — background-first delegation, JSON-driven models/effort/tool permissions, scoped MCP for research."
-  zh: "专家子代理委派预设（orchestrator + 5 角色），安装即自动播种——后台优先派发+完成通知，JSON 驱动模型/effort/工具权限，subagent_result 只读取回结果，调研角色带 MCP。"

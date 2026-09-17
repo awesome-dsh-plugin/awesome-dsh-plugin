@@ -1,0 +1,6 @@
+url: https://github.com/pure-craft/dsh-capability-panel
+name: pure-craft/dsh-capability-panel
+category: ui
+description:
+  en: See which skills and tools your agent can actually reach right now — true in-context state (loaded/truncated/evicted) and per-session switches.
+  zh: 看清 agent 此刻真正能触达哪些技能与工具——真实的在上下文状态(已加载/已截断/已挤出),并按会话开关。

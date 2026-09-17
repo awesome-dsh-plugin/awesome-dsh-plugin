@@ -2,5 +2,5 @@ url: https://github.com/darkings/dsh-agy-provider
 name: darkings/dsh-agy-provider
 category: model
 description:
-  en: 'DSH model provider for the locally authenticated AGY CLI, with Gemini/Claude model discovery, separated reasoning effort, DSH-owned tools, bounded context handling, and a Windows-safe stream transport.'
-  zh: '将本机已登录的 AGY CLI 接入 DSH 作为模型 Provider，支持 Gemini/Claude 模型发现、独立推理强度、DSH-owned 工具桥、受限上下文处理和 Windows 安全流式传输。'
+  en: 'DSH model provider for the locally authenticated AGY CLI: Gemini/Claude model discovery, independent reasoning effort, DSH-owned tools, bounded context and tool-result handling, and Windows-safe streaming. Report problems in GitHub Issues: https://github.com/darkings/dsh-agy-provider/issues.'
+  zh: '将本机已登录的 AGY CLI 接入 DSH 作为模型 Provider：支持 Gemini/Claude 模型发现、独立推理强度、DSH-owned 工具、受限上下文与工具结果管理、Windows 安全流式传输；如遇问题，请在 GitHub 提交 Issue：https://github.com/darkings/dsh-agy-provider/issues。'

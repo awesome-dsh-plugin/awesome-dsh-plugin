@@ -1,0 +1,6 @@
+url: https://github.com/yahoolcj/dsh-plugin-zerone
+name: yahoolcj/dsh-plugin-zerone
+category: skill
+description:
+  en: "ZERONE agent preset for DeepSeek Harness: 16 OMZ SDD workflow skills (grill, PRD/issue-driven coding, review, evolution) registered globally with zero install footprint."
+  zh: "DeepSeek Harness 的 ZERONE 模式：16 个 OMZ SDD 工作流技能（澄清/PRD/issue 驱动编码、审查、进化机制）全局注册，零落盘安装（技能内嵌，不写入用户目录）。"

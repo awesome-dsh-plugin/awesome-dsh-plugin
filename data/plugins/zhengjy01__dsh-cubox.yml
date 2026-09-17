@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-cubox
+name: zhengjy01/dsh-cubox
+category: tools
+description:
+  en: 'Cubox sync for DeepSeek Harness: scheduled sync of your bookmarks, an AI daily brief generated from your own prompt template straight into Obsidian, and per-card markdown export.'
+  zh: 'Cubox 收藏同步：定时同步收藏，按你的 prompt 用 LLM 生成今日收藏简报直接写入 Obsidian，可导出每张收藏为 Markdown。'

@@ -1,0 +1,6 @@
+url: https://github.com/loadingvx/deepseeh-harness-ultra-slash
+name: loadingvx/deepseeh-harness-ultra-slash
+category: ui
+description:
+  en: 'Separate slash-command group in the Web UI composer: /steer injects text on the agent''s next step without interrupting the turn, /new starts a blank session, /skill and /docs wrap /steer with post-turn skill or docs tasks, and custom /steer aliases are configurable in Settings.'
+  zh: '在 Web UI 输入框的斜杠菜单里单独一组插件命令：/steer 在模型下一步注入内容且不打断当前回合，/new 开启空白会话，/skill 与 /docs 在 /steer 基础上附加完成后写入 skill 或 docs，并可在设置里为常用 /steer 内容配置自定义快捷命令。'

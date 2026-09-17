@@ -1,0 +1,6 @@
+url: https://github.com/ListenJ/axiom-kb-dsh
+name: ListenJ/axiom-kb-dsh
+category: tools
+description:
+  en: "Knowledge base (Vault memory + knowledge graph) for dsh: kb__* tools for deterministic memory search/write, knowledge-graph nodes/edges/subgraph/traversal, document-to-graph ingestion and unified cross-store query (KAL) - no web-search tools."
+  zh: "为 dsh 提供知识库（Vault 记忆 + 知识图谱）：kb__* 工具覆盖确定性记忆检索/写入、知识图谱节点/边/子图/遍历、文档入图谱与跨存储统一查询（KAL），不含联网检索工具。"

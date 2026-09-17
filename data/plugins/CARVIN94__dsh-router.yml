@@ -1,0 +1,6 @@
+url: https://github.com/CARVIN94/dsh-router
+name: CARVIN94/dsh-router
+category: model
+description:
+  en: An AI routing gateway that runs as a DSH plugin. Adds a Routing System sidebar panel for suppliers, account pool, fallback combos and API keys, and serves an OpenAI-compatible endpoint at http://localhost:3080/v1.
+  zh: 以 DSH 插件形式运行的 AI 路由网关。侧边栏新增「路由系统」面板管理供应商、账号池、回退组合与 API 密钥，并在 http://localhost:3080/v1 提供 OpenAI 兼容端点。

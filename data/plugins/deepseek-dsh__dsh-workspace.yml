@@ -1,7 +1,7 @@
 url: https://github.com/deepseek-dsh/dsh-workspace
 name: deepseek-dsh/dsh-workspace
 category: usage
-tarball: https://github.com/deepseek-dsh/dsh-workspace/releases/latest/download/dsh-workspace-0.1.0.tgz
+tarball: https://github.com/deepseek-dsh/dsh-workspace/releases/download/v0.1.0/dsh-workspace-0.1.0.tgz
 description:
   en: 'Sidebar usage dashboard: DeepSeek balance and today''s cost, project file explorer, Git diff & history, built-in terminal, and one-click Harness updates.'
   zh: 侧边栏用量面板：DeepSeek 余额与今日费用、项目文件浏览、Git 变更与历史、内置终端，以及 Harness 一键更新。

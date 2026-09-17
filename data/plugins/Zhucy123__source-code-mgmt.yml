@@ -1,0 +1,6 @@
+url: https://github.com/Zhucy123/source-code-mgmt
+name: Zhucy123/source-code-mgmt
+category: git
+description:
+  en: 'Code management panel for the DSH web UI that handles everyday Git in five steps: ① env check auto-detects git/gh/ssh and one-click installs missing tools (gh mirror download sources speed up installs, Windows included) with check-update; ② SSH ed25519 key generation / connection tests plus one-click 443 config to bypass blocked port 22, with the Gitee personal token configured here; ③ repo status, side-by-side diffs, stage/commit, branch switching, history with revert/cherry-pick, one-click repo creation and push, auto-ignoring >100MB files; ④ lists all repos of your account for one-click clone; ⑤ five-step npm publish wizard. GitHub / Gitee dual-platform, with the UI switching between 中文 and English live.'
+  zh: 'DSH 网页界面的代码管理面板，五步搞定 Git 日常：① 环境检查自动检测 git/gh/ssh，缺工具一键安装（gh 支持镜像下载源加速，Windows 也可用）并带检查更新；② SSH ed25519 密钥生成/连接测试 + 一键写 443 配置绕过 22 端口封锁，Gitee 私人令牌在此配置；③ 查看仓库状态、并排 diff、暂存提交、切换分支、查看/回滚历史，一键新建仓库并推送，自动忽略超 100MB 文件；④ 列出账号名下所有远程仓库一键克隆；⑤ 五步发布 npm 包。支持 GitHub / Gitee 双平台，界面中英文跟随 DSH 设置实时切换。'

@@ -1,0 +1,6 @@
+url: https://github.com/sunnystarye-ui/dsh-plugin-text-quote
+name: sunnystarye-ui/dsh-plugin-text-quote
+category: ui
+description:
+  en: 'Codex-style text annotation for conversations: select text, add a quote with your comment, inject it into the composer, and expand sent annotations as a pill.'
+  zh: 'Codex 风格对话文字批注：选中原文加注释、引用进对话、发送后以「N 条注释」胶囊展开。'

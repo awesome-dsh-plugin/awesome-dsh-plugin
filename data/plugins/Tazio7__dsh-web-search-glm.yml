@@ -1,0 +1,6 @@
+url: https://github.com/Tazio7/dsh-web-search-glm
+name: Tazio7/dsh-web-search-glm
+category: tools
+description:
+  en: 'Web search provider powered by ZAI GLM MCP: search and fetch via Open BigModel API with credentials auto-injection from ~/.dsh/.credentials.yaml or environment variables — no API key in config files.'
+  zh: 基于智谱 GLM MCP 的网络搜索插件：通过 Open BigModel API 搜索和抓取网页内容，API Key 自动从 ~/.dsh/.credentials.yaml 或环境变量注入，配置文件中无需存放密钥。

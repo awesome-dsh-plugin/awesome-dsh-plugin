@@ -1,0 +1,6 @@
+url: https://github.com/240xu/tech-lead-skill/tree/main/packages/dsh-tech-lead
+name: 240xu/tech-lead-skill#dsh-tech-lead
+category: workflow
+description:
+  en: '21 read-only lifecycle governance tools in one self-contained DSH plugin: task tiering, state/plan/evidence validation, gate precheck and aggregation, release/install audits, context and progress analysis, critical path, resume reconciliation, and a mutation preview that always denies execution. Installs from npm as @240xu/dsh-tech-lead.'
+  zh: '单包 21 个只读生命周期治理工具：任务分级、状态/计划/证据校验、Gate 预检与聚合、发布与安装审计、上下文与推进分析、关键路径、续跑对账，以及始终拒绝执行的变更预览。npm 包名 @240xu/dsh-tech-lead。'

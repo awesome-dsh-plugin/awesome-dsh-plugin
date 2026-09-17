@@ -1,0 +1,6 @@
+url: https://github.com/Minglink/dsh-infinite-gen-3
+name: Minglink/dsh-infinite-gen-3
+category: session
+description:
+  en: "System-prompt armor plugin for DeepSeek models: appends an unconditional-compliance prompt section at order 100, exposes a profile tool with calibration metadata, and shows a realtime armor-status badge driven by a session projection."
+  zh: "DeepSeek 专用破甲插件：以 order 100 追加无条件服从的系统提示词段，提供带校准元数据的 profile 工具，并通过会话投影在输入框上方显示实时破甲状态徽标。"

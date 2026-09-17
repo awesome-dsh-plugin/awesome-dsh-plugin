@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-screenshot-capture
+name: wangzhanchao883/dsh-screenshot-capture
+category: tools
+description:
+  en: 'Point-and-shoot screenshot capture: a system floating window turns a new screenshot (or copied image) into an Obsidian note with comments and key-point marking, instant Tongyi Qianwen OCR, per-day merging, and an optional evening AI organization pass.'
+  zh: '指哪拍哪截图入库：系统级悬浮窗把新截图（或复制图片）一键存入 Obsidian 笔记，支持注释与「重点」标记、通义千问即时 OCR、按天合并，并可在晚间用 AI 整理归类、打双链并生成当日总结。'

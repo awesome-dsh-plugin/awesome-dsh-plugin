@@ -1,0 +1,6 @@
+url: https://github.com/wutian122/dsh-remote-shell
+name: wutian122/dsh-remote-shell
+category: identity
+description:
+  en: "Bundles the remote-shell skill for secure SSH, SFTP, Telnet, and WinRM remote operations, with an encrypted credential vault whose login and execution scripts never accept plaintext passwords."
+  zh: "打包 remote-shell 技能，提供安全的 SSH、SFTP、Telnet、WinRM 远程操作，内置加密凭证库，登录与执行脚本不接受明文密码。"

@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-lint-loop
+name: lemonxiny55/dsh-lint-loop
+category: tools
+description:
+  en: 'Zero-config lint feedback loop: lint_diagnostics / lint_workspace_errors / lint_fix tools driven by the eslint / biome / ruff already present in the repo (auto-detected from config files, repo-local node_modules/.bin resolved first, nothing bundled), plus an auto-injected post-edit findings delta wired to the harness fs/observed event — edit → lint → auto-repair with one lint_fix call for dsh agents.'
+  zh: '零配置 lint 反馈闭环：由仓库已有的 eslint / biome / ruff 驱动（从配置文件自动探测、优先解析仓库本地 node_modules/.bin、不捆绑任何 linter）提供 lint_diagnostics / lint_workspace_errors / lint_fix 工具，并订阅 harness 的 fs/observed 事件自动注入「本次编辑引入的发现增量」——为 dsh Agent 带来编辑→lint→一键自动修复的闭环体验。'

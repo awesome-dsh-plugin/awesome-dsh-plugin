@@ -1,6 +1,0 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-task-board
-name: zhu1090093659/dsh-web-ui#packages/dsh-task-board
-category: ui
-description:
-  en: 'Task board for the dsh web GUI: a sidebar multi-column kanban whose cards run in real DSH agent sessions and can also be scheduled with cron expressions, executed host-side even with the browser closed.'
-  zh: 侧边栏多列任务看板：卡片交给真实 DSH 智能体会话执行，支持 cron 定时（Host 侧到点执行，关浏览器也生效）。

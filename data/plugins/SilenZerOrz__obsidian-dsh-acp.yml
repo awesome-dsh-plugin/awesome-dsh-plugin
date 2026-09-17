@@ -1,0 +1,6 @@
+url: https://github.com/SilenZerOrz/obsidian-dsh-acp
+name: SilenZerOrz/obsidian-dsh-acp
+category: usage
+description:
+  en: 'ACP adapter to drive DeepSeek Harness from Obsidian Agent Client (and other ACP clients): list, resume and fork sessions, run the harness, and archive conversations.'
+  zh: '通过 Obsidian Agent Client（及其他 ACP 客户端）驱动 DeepSeek Harness 的 ACP 适配器：可列出、续接、派生会话，运行 Harness 并归档对话。'

@@ -1,0 +1,6 @@
+url: https://github.com/Bazley13/dsh-multi-model-orchestrator
+name: Bazley13/dsh-multi-model-orchestrator
+category: model
+description:
+  en: "Multi-model orchestrator: the main brain decomposes complex tasks and dispatches subtasks to GLM / Kimi / Qwen sub-agents by each model's strengths, with per-model token usage."
+  zh: "多模型主脑编排器：主模型将复杂任务拆解，按各模型优劣分派给 GLM / Kimi / Qwen 子代理执行，并按模型统计 token 用量。"

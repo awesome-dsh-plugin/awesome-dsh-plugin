@@ -1,0 +1,6 @@
+url: https://github.com/Wayne036/dsh-plugin-login-gate
+name: Wayne036/dsh-plugin-login-gate
+category: remote
+description:
+  en: Password-protected HTTPS login gate that lets LAN devices securely access the DeepSeek Harness web UI over the network.
+  zh: 密码登录的 HTTPS 闸门，让局域网设备安全地通过网络访问 DeepSeek Harness 的 Web 界面。

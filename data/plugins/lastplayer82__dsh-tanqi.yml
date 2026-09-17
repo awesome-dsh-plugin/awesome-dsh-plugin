@@ -1,0 +1,6 @@
+url: https://github.com/lastplayer82/dsh-tanqi
+name: lastplayer82/dsh-tanqi
+category: fun
+description:
+  en: 'AI-generated curiosity & trivia plugin for the dsh web GUI (Curio in the English UI): 「开始探奇」 generates a fresh batch of unexpected knowledge (excluding everything already seen), each item unfolds into two deeper layers plus similar knowledge points, and 「探奇清单」 keeps the full history (batch, items, layers, similar points) in browser storage. Reuses the host LLM channel with zero config; when no model is available, a DeepSeek API key can be pasted into the panel. Output language follows the DSH UI language (zh/en).'
+  zh: '为 dsh Web 界面生成冷知识与奇妙事实的插件（英文界面下名为 Curio）：「开始探奇」每次生成一批不重复主题（排除已见），每条可深入两层并展开类似知识点，「探奇清单」将全部历史（批次、条目、层级、类似点）保存在浏览器；优先复用宿主 LLM 通道，无需配置，无可用模型时可在面板填写 DeepSeek API Key；输出语言跟随 DSH 界面语言（中/英）。'

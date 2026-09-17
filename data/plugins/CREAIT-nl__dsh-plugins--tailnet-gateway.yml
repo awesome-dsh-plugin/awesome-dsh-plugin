@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/tailnet-gateway
+name: CREAIT-nl/dsh-plugins#tailnet-gateway
+category: remote
+description:
+  en: 'Identity-gated Tailscale access to the Web GUI with dsh still bound to loopback: a 127.0.0.1 proxy published by `tailscale serve` admits a request only when the Tailscale login it stamps is allowed, with an optional per-device allowlist, so the privileged /api methods behind the loopback check — Settings, Models, Plugins — answer without dsh being told to trust a remote host.'
+  zh: '在 dsh 仍绑定回环地址的前提下，为 Web 界面提供基于身份的 Tailscale 访问：由 `tailscale serve` 对外发布的 127.0.0.1 代理，仅当其标记的 Tailscale 登录账号在允许列表内时才放行请求，并可另按设备白名单限制；这样受回环检查保护的特权 /api 方法（设置、模型、插件）无需让 dsh 信任远程主机即可正常响应。'

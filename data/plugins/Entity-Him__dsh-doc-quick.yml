@@ -1,0 +1,6 @@
+url: https://github.com/Entity-Him/dsh-doc-quick
+name: Entity-Him/dsh-doc-quick
+category: docs
+description:
+  en: Drag documents into the dsh web chat; the agent reads them directly from the local filesystem and the right sidebar lists the outputs and file paths.
+  zh: 拖拽文档进 dsh Web 对话框，Agent 直读本地文件处理，右侧侧栏展示产出与文件路径。

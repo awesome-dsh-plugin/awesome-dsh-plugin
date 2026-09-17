@@ -1,0 +1,6 @@
+url: https://github.com/wszhoho/dsh-file-attachment
+name: wszhoho/dsh-file-attachment
+category: ui
+description:
+  en: "File attachments for the dsh web GUI: toolbar upload button (multi-select) plus drag-and-paste add files to the chat input; images follow the native draft-image flow, documents are saved into the session workspace and referenced by @path; configurable allowed file types; works in desktop and mobile browsers, including dsh prerelease builds (0.1.1-rc and 0.1.2-alpha)."
+  zh: "dsh web GUI 的文件附件插件：工具栏上传按钮（可多选）+ 拖拽/粘贴为输入框附加文件；图片走既有草稿图片流程，文档全文落盘到会话工作区 .dsh-file-attachment/ 并插入 @绝对路径引用；设置页可配置允许的上传类型；支持 PC 与移动端浏览器，兼容 dsh 预发布版本（0.1.1-rc、0.1.2-alpha，含 alpha.5）。"

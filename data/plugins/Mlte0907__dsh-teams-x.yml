@@ -1,0 +1,6 @@
+url: https://github.com/Mlte0907/dsh-teams-x
+name: Mlte0907/dsh-teams-x
+category: workflow
+description:
+  en: 'Orchestrates durable multi-agent teams from one DSH session: a captain spawns member subagents, drives a dependency-aware task DAG with quality gates, and coordinates through persistent mailboxes, with a live activity panel.'
+  zh: '把单个 DSH 会话编排成持久化多智能体团队：captain 生成成员子代理、驱动带质量门的依赖感知任务 DAG、通过持久邮箱协调，附带实时活动面板。'

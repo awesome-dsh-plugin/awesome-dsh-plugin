@@ -1,7 +1,0 @@
-url: https://github.com/yxqfg/phone-lens/tree/main/packages/lens-mate
-name: yxqfg/phone-lens#lens-mate
-category: vision
-tarball: https://github.com/yxqfg/phone-lens/releases/latest/download/phone-lens.tgz
-description:
-  en: Turn a phone camera into a live viewfinder and photo input for your dsh session, over LAN or USB.
-  zh: 把手机相机变成 dsh 会话的实时取景与拍照输入，经局域网或 USB 直连。

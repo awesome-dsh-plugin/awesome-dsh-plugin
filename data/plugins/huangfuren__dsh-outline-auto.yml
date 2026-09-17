@@ -1,0 +1,6 @@
+url: https://github.com/huangfuren/dsh-outline-auto
+name: huangfuren/dsh-outline-auto
+category: docs
+description:
+  en: 'Search, read and write an Outline knowledge base from conversations, with whitelist-guarded approval for every document write.'
+  zh: '在 DSH 对话中搜索、读取并安全读写用户自己的 Outline 知识库文档，写操作受白名单保护与审批约束。'

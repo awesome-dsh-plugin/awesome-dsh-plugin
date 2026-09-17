@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-grok-kit
+name: MaRi23333/dsh-grok-kit
+category: model
+description:
+  en: 'Unofficial Grok integration for eligible SuperGrok or X Premium subscriptions: grok-4.6 chat with main-loop web/X search, shared Grok CLI OAuth, configurable model visibility, and Imagine images saved to an attachment or chosen path.'
+  zh: '面向符合资格的 SuperGrok 或 X Premium 订阅的非官方 Grok 集成：支持 grok-4.6 对话、主循环网页/X 搜索、共用 Grok CLI OAuth、可配模型显示，以及将 Imagine 图片保存到附件库或指定路径。'

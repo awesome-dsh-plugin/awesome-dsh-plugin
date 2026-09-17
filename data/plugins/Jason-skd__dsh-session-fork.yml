@@ -2,5 +2,5 @@ url: https://github.com/Jason-skd/dsh-session-fork
 name: Jason-skd/dsh-session-fork
 category: session
 description:
-  en: 'Git-style conversation branching: adopt the current session as a branch, fork branches at any turn via /branch commands or the branch tab, and squash a branch back into another branch.'
-  zh: 'Git 式会话分支：把当前会话收编为分支，通过 /branch 命令或分支页签在任意轮次分叉，并把分支 squash 回另一条分支。'
+  en: 'Git-style conversation branching that mirrors how real programmers collaborate: a secretary root branch dispatches tasks to child branches with their own contexts, merging back only compressed summaries via squash or rebase; ships /branch commands, a branch tab, branch-to-branch messaging, and a governance baseline pairing each session branch with a git worktree.'
+  zh: 'Git 式会话分支，模拟真实程序员协作的并行开发：根分支充当秘书维持调度，子分支持有各自上下文并行工作，任务完成后仅以压缩摘要 squash/rebase 合并回来；提供 /branch 命令、分支页签、send_message_by_branch 跨分支消息，并附一份把会话分支绑定到 git worktree 的治理基线。'

@@ -2,5 +2,5 @@ url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-web-file
 name: wingsky-1/dsh-plugin-hub#packages/dsh-web-file-preview
 category: tools
 description:
-  en: 'Preview conversation file links in the web UI (images / text / Markdown / highlighted code / git diff) — click a link to open a preview modal instead of the desktop opener; loopback-fenced routes with weak ETag/304 caching and DOMPurify sanitization.'
-  zh: 在 web 端预览对话中的文件链接（图片 / 文本 / Markdown / 代码高亮 / git diff）：点击链接即可弹窗预览，替代桌面原生打开；loopback 围栏 + 弱 ETag/304 缓存 + DOMPurify 消毒。
+  en: 'Turns "open with the default application" file requests inside the conversation into the built-in right-Sidebar preview: the browser intercepts `POST /api/present.open` and calls `ctx.sidebarRight.openResource` with the official resource address grammar, so nothing is sent over the network and no renderer ships with the plugin; "show in file manager" is deliberately left untouched.'
+  zh: 把对话内「用默认应用打开」的文件请求转成官方右侧栏预览：浏览器端拦截 `POST /api/present.open`，按官方资源地址语法调用 `ctx.sidebarRight.openResource`，不产生网络请求、插件自身不再自带渲染器；「在文件管理器中显示」有意不接管。

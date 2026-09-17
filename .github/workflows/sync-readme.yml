@@ -1,0 +1,69 @@
+name: Sync READMEs from data/plugins
+
+# The READMEs are a generated artifact that happens to live in the repository,
+# because an awesome list has to BE a README. Requiring every contributor to
+# commit their own regeneration is what made the queue unmergeable: two
+# unrelated submissions in the same category touch the same generated lines, so
+# merging either one puts the other into conflict. On 2026-08-30 that was 218 of
+# 296 open pull requests — none of them in conflict over anything a human wrote.
+#
+# So the generation moves here. A PR carries only its data/plugins/*.yml; this
+# regenerates on main and commits the result. Contributors may still commit a
+# regeneration and nothing breaks — pr-check accepts either shape.
+#
+# Termination: the commit below pushes to main and re-triggers this workflow.
+# The second run regenerates, finds nothing changed, and exits without
+# committing. The bot guard makes that second run cheap rather than making it
+# correct — correctness comes from generate-readme.mjs being deterministic.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/plugins/**'
+      - 'scripts/generate-readme.mjs'
+      - 'scripts/lib/**'
+      - 'site/locales.mjs'
+
+# Unlike build-site.yml, this one DOES write to the repository — that is its
+# entire job. Kept as its own workflow with its own narrow permission rather
+# than relaxing the build, so "the build never writes to the repository" stays
+# true where it matters.
+permissions:
+  contents: write
+
+# Never two of these at once: both would regenerate the same file and the
+# second push would be rejected. Queue instead of cancelling — a cancelled run
+# leaves main with a stale README until the next merge happens to fix it.
+concurrency:
+  group: sync-readme
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Regenerate
+        run: node scripts/generate-readme.mjs
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md README.zh.md; then
+            echo "READMEs already match data/plugins — nothing to do."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md README.zh.md
+          # The added-date for a new entry derives from the commit that first
+          # added its line to the default-locale README (build-site.mjs), which
+          # is now this commit rather than the merge. Same day, seconds apart —
+          # but say so here, because the next person to read that derivation
+          # will wonder why every recent date points at a bot commit.
+          git commit -m 'chore: regenerate READMEs from data/plugins'
+          git push

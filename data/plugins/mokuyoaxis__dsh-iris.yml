@@ -1,0 +1,6 @@
+url: https://github.com/mokuyoaxis/dsh-iris
+name: mokuyoaxis/dsh-iris
+category: tools
+description:
+  en: 'Media and vision workspace for DeepSeek Harness: image, video and speech generation, image Q&A and element locating, long-image OCR, pixel diff, HTML-screenshot verification and video summarization, with DashScope and OpenAI-compatible providers, model pools and a workbench client.'
+  zh: '面向 DeepSeek Harness 的媒体与视觉工作台：文生图、图/文生视频、语音合成与转写、图像问答与元素定位、长图 OCR、像素比对、HTML 截图验证、视频摘要；支持 DashScope 与 OpenAI 兼容供应商，含模型池与工作台客户端。'

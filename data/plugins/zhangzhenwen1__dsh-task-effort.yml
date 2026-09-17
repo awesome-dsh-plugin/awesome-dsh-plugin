@@ -1,0 +1,6 @@
+url: https://github.com/zhangzhenwen1/dsh-task-effort
+name: zhangzhenwen1/dsh-task-effort
+category: dev
+description:
+  en: 'Auto-adjust model reasoning effort per task (off/low/high/max): task classification, [effort=...] markers, in-turn error escalation, DeepSeek peak-pricing-period capping with countdown notices, and manual-selection priority.'
+  zh: 根据任务自动调整模型推理档位（off/low/high/max）：任务分类判定、[effort=...] 显式标记、轮内出错升级、DeepSeek 高峰计价时段自动限档省钱并显示切换倒计时、GUI 手动选择优先。

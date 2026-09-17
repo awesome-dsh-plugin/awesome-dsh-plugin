@@ -1,0 +1,6 @@
+url: https://github.com/shengyvself/narrative-prompt-polish
+name: shengyvself/narrative-prompt-polish
+category: workflow
+description:
+  en: "One-click prompt polisher for the DSH composer: a ✨ button next to the message box opens a side-chat where an agent refines your rough draft over multiple turns, then you copy the result back. Replays the session prefix to hit the prompt cache, with a full → partial → none fallback for oversized or non-live sessions, per-call JSONL tracing, and a trust fence plus CAS write-back that refuses to overwrite a draft changed since the request. Requires omdsh-dev/DSH-better-sidebar (>=0.16.1); errors explicitly if it is missing rather than failing silently."
+  zh: "DSH 主输入框旁的 ✨ 一键提示词打磨：点击后在侧边对话中由 Agent 多轮改写草稿，再手动回填。复刻会话前缀以命中 prompt cache，超大或非 live 会话按 full → partial → none 降级；每次调用留 JSONL trace；API 路由带信任围栏，CAS 写回在草稿已变时拒绝覆盖。需先安装 omdsh-dev/DSH-better-sidebar（>=0.16.1），缺失时显式报错而非静默失效。"

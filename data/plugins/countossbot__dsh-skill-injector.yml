@@ -1,0 +1,6 @@
+url: https://github.com/countossbot/dsh-skill-injector
+name: countossbot/dsh-skill-injector
+category: skill
+description:
+  en: 'Auto-injects user-chosen skills into every DSH session, per prompt or once at session start, with a settings page, a composer indicator, and log-deduplicated session-start stamps; verified against DSH 0.1.3 source.'
+  zh: 自动把所选技能注入每个 DSH 会话：每轮提示或仅在会话开始时注入一次，带设置页与输入区指示条；会话开始盖戳按会话日志去重，API 对照 DSH 0.1.3 源码验证。

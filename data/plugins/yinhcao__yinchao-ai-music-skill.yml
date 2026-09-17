@@ -1,5 +1,5 @@
 url: https://github.com/yinhcao/yinchao-ai-music-skill
-name: yinhcao/yinchao-ai-music-skill
+name: yinhcao/yinchao-ai-music
 category: skill
 description:
   en: Generate complete AI songs and BGM from prompts or lyrics, with reference-audio creation and song extension.

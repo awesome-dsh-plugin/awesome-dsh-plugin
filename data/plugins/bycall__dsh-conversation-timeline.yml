@@ -1,0 +1,16 @@
+# dshmarket submission entry for dsh-conversation-timeline.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/bycall__dsh-conversation-timeline.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch) ✓
+#   - repo must be >= 1 day old, >= 10 commits
+#   - filename must equal slugFor(url): <owner>__<repo>.yml
+#   - only keys: url, name, category, description, tarball (no `npm:` key — npm
+#     mapping is resolved automatically from the repository)
+url: https://github.com/bycall/dsh-conversation-timeline
+name: dsh-conversation-timeline
+category: ui
+description:
+  en: "Conversation timeline dock bar for DeepSeek Harness: a turn-level timeline above the composer with user-prompt hover tooltips and click-to-jump back to the exact chat position."
+  zh: "对话时间线横条：输入框上方按轮次聚合的时间线，悬停显示该轮用户提示词，点击直接跳转到对话中的对应位置。"

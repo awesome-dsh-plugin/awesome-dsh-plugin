@@ -2,5 +2,5 @@ url: https://github.com/Sutera-Diffusus/dsh-whale-musume
 name: Sutera-Diffusus/dsh-whale-musume
 category: fun
 description:
-  en: 'A cute whale-girl desktop pet for the DeepSeek Harness Web UI: pat-to-raise growth, live work-state poses, 494 dialogue lines, 30 achievements and a built-in settings panel — all local, zero telemetry.'
-  zh: 元气鲸鱼娘桌宠：摸头养成、工作状态联动、494 条台词与 30 项成就，自带设置面板，全本地零遥测。
+  en: 'A whale-girl desktop pet for the DeepSeek Harness Web UI: pat-to-raise growth, work-state poses per tool type, 494 dialogue lines, 30 achievements, a growth diary, drag physics, theme sync and an accessibility mode. Chat-keyword sensing and API-balance care ship off and are opt-in; an optional weather mood calls Open-Meteo only after you name a city. No telemetry.'
+  zh: 元气鲸鱼娘桌宠：摸头养成、按工具类型联动的工作状态、494 条台词、30 项成就、成长日记、拖拽惯性、主题适配与无障碍模式。关键词感知与余额关心默认关闭、需手动开启；可选的天气心情只在你填了城市后才会请求 Open-Meteo。无遥测。

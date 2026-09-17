@@ -1,7 +1,7 @@
 url: https://github.com/hunter118/dsh-s7r
 name: hunter118/dsh-s7r
 category: ui
-tarball: https://github.com/hunter118/dsh-s7r/releases/download/v0.9.3/dsh-s7r-0.9.3.tgz
+tarball: https://github.com/hunter118/dsh-s7r/releases/download/v0.9.4/dsh-s7r-0.9.4.tgz
 description:
   en: "A retro macOS System 7-style workstation UI for DeepSeek Harness with desktop windows, Workspace and Agent management, Finder, Terminal, Monitor, context tools, and desk accessories."
   zh: "为 DeepSeek Harness 提供复古 macOS System 7 风格工作站界面，包含桌面窗口、工作区与 Agent 管理、Finder、终端、监视器、上下文工具和桌面附件。"

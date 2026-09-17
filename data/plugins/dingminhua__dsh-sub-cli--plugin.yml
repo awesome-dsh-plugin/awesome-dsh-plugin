@@ -1,0 +1,6 @@
+url: https://github.com/dingminhua/dsh-sub-cli/tree/main/plugin
+name: dingminhua/dsh-sub-cli#plugin
+category: tools
+description:
+  en: Install and call external Agent CLIs (Codex, Claude Code) from DSH without touching the system install. Each CLI gets its own Provider, model, reasoning effort and permission preset, callable directly or as a native subagent.
+  zh: 在 DSH 中安装并调用外部 Agent CLI（Codex、Claude Code），与系统原生安装完全隔离。每个 CLI 可独立预设 Provider、模型、推理强度与权限，既能像普通工具一样调用，也能像原生子代理一样被主控调度。

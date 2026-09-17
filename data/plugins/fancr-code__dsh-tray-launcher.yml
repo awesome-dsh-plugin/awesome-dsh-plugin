@@ -1,0 +1,6 @@
+url: https://github.com/fancr-code/dsh-tray-launcher
+name: fancr-code/dsh-tray-launcher
+category: dev
+description:
+  en: 'Windows system-tray launcher for dsh web: console-free background start (VBS/powershell chain), a tray menu with open UI / logs / icon presets / launch-at-login / restart Harness, one-click install and update of the bundled dsh-plugin-usage-meter, and a dsh plugin half that starts the tray together with the harness.'
+  zh: 'Windows 系统托盘启动器：无窗口后台启动 dsh web（VBS/powershell 链），托盘菜单支持打开界面、日志、图标预设、开机自启与重启 Harness，一键安装与更新内置的 dsh-plugin-usage-meter，并可作为 dsh 插件安装使托盘随 Harness 一起启动。'
