@@ -2,5 +2,5 @@ url: https://github.com/wszhoho/dsh-file-attachment
 name: wszhoho/dsh-file-attachment
 category: ui
 description:
-  en: "File attachments for the dsh web GUI: drag-and-drop / paste / upload files (multi-file); images and documents are saved into .dsh-file-attachment and sent via @absolute-path references (usable by text-only models); the input shows inline image thumbnails and file entries, chat-area images render as clickable zoomable thumbnails while files keep their chip style; on non-multimodal models images are auto-described by a configurable VLM whose Chinese description is backfilled into the draft; configurable allowed upload types for documents/code/config; works in desktop and mobile browsers."
-  zh: "文件附件：拖拽/粘贴/上传文件（支持多文件）；图片与文档统一落盘到 .dsh-file-attachment 并以 @绝对路径 引用发送（文本模型可正常使用）；输入框内联显示图片缩略图预览与文件条目，聊天区图片同样渲染为可点击放大的缩略图、文件保持芯片样式；非多模态模型下图片自动调用可配置 VLM 识别生成中文描述回填草稿；文档/代码/配置文件可上传类型可在设置页配置；支持 PC 与移动端浏览器"
+  en: "Drag-and-drop / paste / upload files and images; on non-multimodal models images are auto-described by a configured VLM."
+  zh: "拖拽/粘贴/上传文件和图片，非多模态模型下图片自动调用已配置 VLM 识别。"
