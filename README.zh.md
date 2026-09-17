@@ -2956,6 +2956,7 @@ dsh plugin --profile web add dshmarket
 - [margbug01/dsh-ma-plugins#dsh-librarian](https://github.com/margbug01/dsh-ma-plugins/tree/main/dsh-librarian) — 带行号证据和内存缓存的 GitHub 只读调研子代理。
 - [MarioLuLu7/dsh-git-plus](https://github.com/MarioLuLu7/dsh-git-plus) — dsh-better-sidebar 中的 DSH 源代码管理面板，尽量对齐 VS Code 的 Git 工作流。
 - [maxmilian/dsh-forge](https://github.com/maxmilian/dsh-forge) — 面向自建 Gitea / Forgejo 的只读工具，走两者共用的 REST API：实例信息、仓库列表、议题与 PR 搜索和读取、PR diff 与变更文件，以及 Actions 运行、任务与任务日志。工具元数据支持英文、繁体中文、简体中文与日文。
+- [mays-hi/dsh-git-idea](https://github.com/mays-hi/dsh-git-idea) — 把 Git 的日常操作搬进 DSH 会话：输入框旁的仓库 chip、分支树与提交图面板、变更与提交、提交详情，以及一个管理提交身份、git 位置和网络参数的设置页。
 - [MeghanBao/dsh-backstory](https://github.com/MeghanBao/dsh-backstory) — /backstory 命令与工具：为每一行标注最后改动它的 git 提交，以及写下它的 agent 轮次与提示词；数据取自按行持久化的账本（以内容哈希防漂移）、DSH-* 提交尾注或实时会话日志。
 - [meyaomiao/dsh-github-workbench](https://github.com/meyaomiao/dsh-github-workbench) — DSH 侧边栏 GitHub 工作台：远端目录树加 Issues / Pull requests / Actions 页签，支持建 Issue/PR、评论、编辑、关闭、merge/squash/rebase 与重跑或取消 CI；挂载为 better-sidebar 页签或独立右侧面板。
 - [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) — 在对话框左下角一键连接你的 GitHub 账号（OAuth 设备流或 Personal Access Token），之后 AI 可通过 github_api 工具读取和操作你的 GitHub。
