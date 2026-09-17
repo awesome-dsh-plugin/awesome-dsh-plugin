@@ -1,0 +1,7 @@
+url: https://github.com/598829314/oil-dsh-title
+name: 598829314/oil-dsh-title
+category: session
+description:
+  en: 'Maintains stable emoji session titles in DeepSeek Harness from recent user prompts.'
+  zh: '根据最近的用户消息，为 DeepSeek Harness 会话维护稳定的 emoji 标题。'
+tarball: https://github.com/598829314/oil-dsh-title/releases/latest/download/oil-dsh-title.tgz
