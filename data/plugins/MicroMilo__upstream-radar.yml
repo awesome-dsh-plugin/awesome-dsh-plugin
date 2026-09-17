@@ -1,6 +1,0 @@
-url: https://github.com/MicroMilo/upstream-radar
-name: MicroMilo/upstream-radar
-category: security
-description:
-  en: Watches DSH and plugin releases, retests exact published artifacts in disposable runners, publishes machine-readable compatibility evidence, and reconciles managed issues after fixes.
-  zh: 持续监控 DSH 与插件发布，在一次性隔离环境中复测精确发布物，发布机器可读的兼容性证据，并在修复后自动核对和关闭受管理的问题。

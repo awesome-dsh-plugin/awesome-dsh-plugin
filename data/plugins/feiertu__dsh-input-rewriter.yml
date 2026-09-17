@@ -1,6 +1,0 @@
-url: https://github.com/feiertu/dsh-input-rewriter
-name: feiertu/dsh-input-rewriter
-category: session
-description:
-  en: Type normally; about two seconds after you pause, it rewrites your draft into a version more likely to get a good answer, leaving pasted code, links and long text untouched and keeping multi-part questions numbered.
-  zh: 你只管正常打字，停下约两秒，它就把你刚写的话自动改写成更容易得到好答案的样子；贴进来的代码、网址、长文原样不动，一次问几件事也一件不漏、排好顺序。

@@ -1,0 +1,5 @@
+url: https://github.com/Mlte0907/dsh-brake
+name: Mlte0907/dsh-brake
+category: security
+description:
+  en: "Death-loop circuit breaker: detects method loops in agent sessions (repeated same-family tool calls) and injects warnings or denies execution."
