@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-composition-doctor
+name: lemonxiny55/dsh-composition-doctor
+category: dev
+description:
+  en: Read-only DSH and Cordis composition diagnostics, snapshots, diffs, and upgrade preflight.
+  zh: 只读的 DSH 与 Cordis 组合诊断、快照、差异分析和升级预检工具。
