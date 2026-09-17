@@ -2,5 +2,5 @@ url: https://github.com/tnnevol/fn-os-apps/tree/main/plugins/dsh-codebuddy-plugi
 name: tnnevol/fn-os-apps#dsh-codebuddy-plugin
 category: model
 description:
-  en: 'Tencent CodeBuddy model provider for DeepSeek Harness with browser OAuth sign-in and Web UI quota display; install from npm with `dsh plugin --profile web add @tnnevol/dsh-codebuddy`.'
-  zh: '为 DeepSeek Harness 接入腾讯 CodeBuddy 模型提供方，支持浏览器 OAuth 登录和 Web UI 用量显示；npm 安装：`dsh plugin --profile web add @tnnevol/dsh-codebuddy`。'
+  en: 'Tencent CodeBuddy model provider for DeepSeek Harness that signs in with browser OAuth instead of an API key, lists the CodeBuddy model catalog with the context, output, tool-calling, reasoning and image capabilities of each model, keeps multiple accounts with automatic failover to the next usable one, shows remaining quota in the composer with a token and credit usage panel, and completes automatable CodeBuddy growth tasks per account with an execution log. Install from npm with `dsh plugin --profile web add @tnnevol/dsh-codebuddy`.'
+  zh: '为 DeepSeek Harness 接入腾讯 CodeBuddy 模型：用浏览器 OAuth 登录替代 API Key，列出 CodeBuddy 模型目录及每个模型的上下文、输出、工具调用、推理与图片能力，支持多账号并在当前账号不可用时自动切换，在输入区显示额度余量并提供 Token 与积分用量面板，还能按账号完成可自动化的 CodeBuddy 成长任务并查看执行日志。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-codebuddy`。'
