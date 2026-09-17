@@ -1,0 +1,6 @@
+url: https://github.com/NoodleStormno/dsh-plugin-tic80
+name: NoodleStormno/dsh-plugin-tic80
+category: fun
+description:
+  en: 'TIC-80 fantasy console for DeepSeek Harness: 3-column embedded web player, 14 agent tools, live hot reload, and native CLI export.'
+  zh: 'DeepSeek Harness 的 TIC-80 虚拟游戏机插件：三栏嵌入式 Web 播放器、14 个 Agent 工具、实时热重载与原生 CLI 导出。'
