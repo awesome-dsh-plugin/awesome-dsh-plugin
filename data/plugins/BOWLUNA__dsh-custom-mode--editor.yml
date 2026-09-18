@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-custom-mode/tree/main/editor
+name: BOWLUNA/dsh-custom-mode#editor
+category: identity
+description:
+  en: 'Build and manage dsh agent modes from the settings page: start each one from the official standard / PTC / minimal / Cordis composition, toggle the plugin rows it mounts one by one, rename it, and edit its system prompt — a plain file the agent loop re-reads before every model step, so an edit applies to the running session on its next step. Rows left untouched stay byte-identical to the shipped ones, platform conditions included.'
+  zh: '在设置页里构建并管理 dsh 模式：每个模式以官方 standard / PTC / 极简 / Cordis 的组成为底子，逐行开关它挂载哪些插件、改模式名、编辑它的系统提示词——提示词是普通文件，agent loop 每次模型调用前重新读取，改完对正在运行的会话下一步即生效。没碰过的行与出厂行逐字节相同（含平台条件）。'

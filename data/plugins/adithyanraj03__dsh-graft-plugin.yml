@@ -1,0 +1,6 @@
+url: https://github.com/adithyanraj03/dsh-graft-plugin
+name: adithyanraj03/dsh-graft-plugin
+category: tools
+tarball: https://github.com/adithyanraj03/dsh-graft-plugin/releases/latest/download/dsh-graft-plugin-0.1.0.tgz
+description:
+  en: "Shows which graft index a dsh session is serving and whether it still matches the code, and gives the model graft_ask, graft_grep, graft_callers, graft_skeleton and graft_map as native tools."

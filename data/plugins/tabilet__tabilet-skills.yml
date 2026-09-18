@@ -1,0 +1,6 @@
+url: https://github.com/tabilet/tabilet-skills
+name: tabilet/tabilet-skills
+tarball: https://github.com/tabilet/tabilet-skills/releases/download/v1.4.0/tabilet-skills-1.4.0.tgz
+category: memory
+description:
+  en: Shared engineering skills, a read-only memory-bank dashboard, and workflow request previews for DSH.

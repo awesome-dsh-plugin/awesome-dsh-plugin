@@ -1,0 +1,6 @@
+url: https://github.com/1Ecc/dsh-lenovo-toolkit
+name: 1Ecc/dsh-lenovo-toolkit
+category: tools
+description:
+  en: "Lenovo laptop diagnostics for DSH: battery health on macOS and Windows, plus Windows device, performance, storage, app and Wi-Fi checks, user-confirmed maintenance actions, and battery warranty, parts, store and appointment helpers."
+  zh: "面向 DSH 的联想笔记本诊断工具集：支持 macOS 与 Windows 电池健康检测，以及 Windows 设备、性能、存储、应用和 Wi-Fi 检查、需用户确认的维护操作，并提供电池保修、备件、门店与预约辅助。"

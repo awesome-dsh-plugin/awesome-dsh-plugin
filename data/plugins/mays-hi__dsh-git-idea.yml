@@ -1,0 +1,6 @@
+url: https://github.com/mays-hi/dsh-git-idea
+name: mays-hi/dsh-git-idea
+category: git
+description:
+  en: 'A git panel inside the DSH session: a repository chip in the composer, a panel with the branch tree, commit graph, working tree and commit detail, and a Settings page for commit identity, git location and the network flags.'
+  zh: '把 Git 的日常操作搬进 DSH 会话：输入框旁的仓库 chip、分支树与提交图面板、变更与提交、提交详情，以及一个管理提交身份、git 位置和网络参数的设置页。'

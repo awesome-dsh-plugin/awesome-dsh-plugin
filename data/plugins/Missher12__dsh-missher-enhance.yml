@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/dsh-missher-enhance
+name: Missher12/dsh-missher-enhance
+category: ui
+description:
+  en: Adds usage statistics, a highlighted footer, piano navigation, projectless sessions, and model and document helpers to DeepSeek Harness.
+  zh: 为 DeepSeek Harness 增加使用统计、高亮底栏、钢琴键导航、无项目会话以及模型和文档辅助功能。
+tarball: https://github.com/Missher12/dsh-missher-enhance/releases/download/v0.1.0-rc.2/dsh-missher-enhance-0.1.0-rc.2.tgz

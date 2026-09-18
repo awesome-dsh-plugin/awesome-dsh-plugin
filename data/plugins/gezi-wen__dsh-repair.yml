@@ -1,0 +1,6 @@
+url: https://github.com/gezi-wen/dsh-repair
+name: gezi-wen/dsh-repair
+category: dev
+description:
+  en: 'Ships a skill plus six Node scripts for a DSH install that will not come up - walking the boot stages before readiness, the plugin dependency bridges and junctions under a profile, dead or duplicated plugin rows, and the upgrade path. The scripts are diagnostics first; the rebuild helper only writes when it is given --fix.'
+  zh: '携带一份技能加 6 个 Node 脚本，用来处理装完起不来的 DSH——沿 readiness 之前的引导阶段、profile 下的插件依赖桥与 junction、失效或重复的插件行、以及升级路径逐段排查。脚本默认只诊断，重建脚本只有显式加 --fix 才写盘。'

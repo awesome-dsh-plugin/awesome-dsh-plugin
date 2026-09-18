@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-key-limits
+name: GooDAnDReaDY/dsh-key-limits
+category: usage
+description:
+  en: 'Shows API-key and subscription quota limits in the DSH provider interface and settings.'
+  zh: '在 DSH 界面与设置中显示 API Key 和订阅账户的额度限制。'

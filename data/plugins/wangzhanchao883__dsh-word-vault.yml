@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-word-vault
+name: wangzhanchao883/dsh-word-vault
+category: tools
+description:
+  en: 'English word bank for one or more children: words marked on textbook or workbook photos (highlighter, red pen) are found by their marks, then translated and stored in a local SQLite bank with an occurrence count; the clipboard picker, the photo route and dictation all land in the same bank. High-frequency words surface by count, three correct answers in a row flag a word as learned, and any selection prints as a memory card set (a word split into chunks, real IPA per chunk, a mnemonic hook, an A4 sheet of eight) in HTML, PDF or Word, with a print-and-answer exam page whose four options are set against each other for meaning.'
+  zh: '一个或多个孩子的英语生词库：课本/作业照片上被荧光笔或红笔标出的词按标记找出来，翻译后进本机 SQLite，并累计出现次数；剪贴板点选、拍照、对话三种录入进的是同一本库。高频词按次数浮现，连对三次自动标记「已学会」；勾选任意若干词可出记忆卡（拆解块 + 每块真实 IPA 音标 + 荒诞梗，A4 每页 8 张），输出 HTML/PDF/Word，并可出一份四选项按词义互斥的打印试卷作答。'
