@@ -1,0 +1,6 @@
+url: https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/rules
+name: loulangogogo/dsh-plugins-loulan#rules
+category: session
+description:
+  en: 'Injects the rule files under $DSH_HOME/rules and <cwd>/.dsh/rules into the conversation at the first agent pre-step, re-injecting them after compaction.'
+  zh: '在首次 agent pre-step 读取 $DSH_HOME/rules 与 <cwd>/.dsh/rules 下的规则文件并注入会话，被 compaction 遮蔽后自动补回。'

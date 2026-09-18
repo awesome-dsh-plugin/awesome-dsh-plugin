@@ -1,0 +1,6 @@
+url: https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/mcp
+name: loulangogogo/dsh-plugins-loulan#mcp
+category: tools
+description:
+  en: 'Reads .mcp.json from the .dsh home and from the agent workspace, mounts every mcpServers entry into DSH, and adds an MCP tab in the Web UI for listing, adding and unloading servers.'
+  zh: '读取 .dsh 根目录与 agent 工作区里的 .mcp.json，把其中的 MCP server 挂载进 DSH；Web 界面增加「MCP」标签页，可查看、添加与卸载服务。'
