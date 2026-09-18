@@ -1,0 +1,6 @@
+url: https://github.com/cheesewoo/dsh-qqbot-dafeiyu
+name: cheesewoo/dsh-qqbot-dafeiyu
+category: identity
+description:
+  en: Connects a QQ Bot to DeepSeek Harness with per-peer sessions, group mention and keyword triggers, image generation and voice replies.
+  zh: 让 QQ 机器人接入 DeepSeek Harness：按会话隔离、群聊 @ 与关键词触发、生图与语音回复。
