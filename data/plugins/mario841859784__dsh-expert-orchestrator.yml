@@ -1,0 +1,6 @@
+url: https://github.com/mario841859784/dsh-expert-orchestrator
+name: mario841859784/dsh-expert-orchestrator
+category: agi
+description:
+  en: "Agent preset plugin for DeepSeek Harness that triages every request, delegates implementation to one of 78 bundled expert prompts, and schedules parallel work through a dependency-DAG taskboard and a file-based message bus before an independent review gate."
+  zh: "DeepSeek Harness 的 agent preset 插件，对每条请求先分诊、把实施委派给 78 名自带专家提示词之一，经依赖 DAG 任务板与落盘消息总线调度并行协作，交付前通过独立评审门禁。"
