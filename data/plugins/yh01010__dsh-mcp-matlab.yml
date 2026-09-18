@@ -2,5 +2,5 @@ url: https://github.com/yh01010/dsh-mcp-matlab
 name: yh01010/dsh-mcp-matlab
 category: tools
 description:
-  en: 'Bridges a local MATLAB MCP server into DSH: evaluate MATLAB code, run .m scripts and tests, and inspect installed toolboxes via mcp__matlab__* tools.'
-  zh: '将本地 MATLAB MCP server 桥接进 DSH，提供 mcp__matlab__* 工具：执行 MATLAB 代码、运行 .m 脚本与测试、查看已安装工具箱。'
+  en: 'Bridges a local MATLAB MCP server into DSH: evaluate MATLAB code, run .m scripts and tests, and inspect installed toolboxes via mcp__matlab__* tools. Requires MATLAB and the MathWorks MATLAB MCP Server binary, and a path edit after install — the plugin on its own registers no tools.'
+  zh: '将本地 MATLAB MCP server 桥接进 DSH，提供 mcp__matlab__* 工具：执行 MATLAB 代码、运行 .m 脚本与测试、查看已安装工具箱。需要自备 MATLAB 与 MathWorks 官方 MATLAB MCP Server 可执行文件，且安装后需填一次路径——只装插件不会出现工具。'
