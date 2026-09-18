@@ -1,0 +1,6 @@
+url: https://github.com/dengpeihua/dsh-browser-use
+name: dengpeihua/dsh-browser-use
+category: browser
+description:
+  en: Native DeepSeek Harness browser-agent plugin providing session-isolated Chromium automation with CDP and DOM tools.
+  zh: 为 DeepSeek Harness 提供会话隔离的 Chromium 自动化、CDP 与 DOM 工具的原生浏览器智能体插件。

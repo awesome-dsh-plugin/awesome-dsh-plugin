@@ -31,6 +31,7 @@
  */
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
+import { leastRecentlyChecked } from './lib/probe-order.mjs'
 
 const OUT_FILE = 'data/updates.json'
 // Release bodies are markdown written by authors for humans reading GitHub;
@@ -136,7 +137,9 @@ const fresh = (entry) =>
   && entry.checkedAt
   && (Date.now() - new Date(entry.checkedAt).getTime()) / 86400000 <= RECHECK_DAYS
 
-const pending = urls.filter((url) => !fresh(map[url]))
+// Least recently checked first: the nightly budget does not reach every repo
+// (see lib/probe-order.mjs), and README order would starve the same ones daily.
+const pending = leastRecentlyChecked(urls.filter((url) => !fresh(map[url])), map)
 console.log(`${urls.length} listed, ${pending.length} to probe${PROBE_ALL ? ' (PROBE_ALL)' : ''}`)
 
 const failed = []
