@@ -1,0 +1,6 @@
+url: https://github.com/codeOct/dsh-archive-manager
+name: codeOct/dsh-archive-manager
+category: session
+description:
+  en: 'Maintained fork of ChuShiZ/dsh-archive-manager fixing archived-session list always empty: unwraps sessionPersistence.list() snapshot objects (dsh 2.0.9+), in-process delete, faster browsing.'
+  zh: 'ChuShiZ/dsh-archive-manager 的维护分支，修复归档会话列表恒为空（dsh 2.0.9+ 的 sessionPersistence.list() 返回快照对象需解包），删除改进程内执行，浏览更快。'
