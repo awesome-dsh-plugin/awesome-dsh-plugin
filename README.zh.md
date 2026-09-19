@@ -1445,6 +1445,7 @@ dsh plugin --profile web add dshmarket
 - [liuyuelintop/dsh-conversation-exporter](https://github.com/liuyuelintop/dsh-conversation-exporter) — 将当前 DSH 对话或选定轮次导出为干净、易读的 Markdown。
 - [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) — 为 DSH 添加可配置的女仆鲸鱼娘人格：沉浸式扮演（称呼/自称/说话方式）、防出戏规则，以及借鉴 ALTM 的轻量分层记忆与按需召回。
 - [loulangogogo/dsh-plugins-loulan#rules](https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/rules) — 在首次 agent pre-step 读取 $DSH_HOME/rules 与 <cwd>/.dsh/rules 下的规则文件并注入会话，被 compaction 遮蔽后自动补回。
+- [loyalchiiina/dsh-archive-manager-favorites-patch](https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch) — 归档会话管理器的增强版（loyalchiiina 制作，基于 MichengAI 的 dsh-archive-manager）：在列表或侧栏菜单给归档会话加星收藏并提供「只看收藏」筛选与收藏置顶，侧栏菜单可置顶会话，按对话轮次排序归档列表（轮次由本地转录统计，不调用模型），按闲置天数一键自动归档闲置会话，一键删除未收藏会话（全部或当前筛选，带进度条），复制会话 ID 或转录文件路径，以及重整后的归档设置页排版。注意：安装用的包名是 dsh-archive-manager-plus，而 GitHub 仓库名沿用早期的 dsh-archive-manager-favorites-patch，两者不同。
 - [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) — 在 Web UI 与桌面客户端中删除 DSH 会话：头部危险按钮 + 会话行菜单项，风险确认弹窗，宿主端点与 agent 工具同步清理会话日志、投影缓存与工作区记账。
 - [LucienLL/dsh-session-status](https://github.com/LucienLL/dsh-session-status) — 为每个会话设置项目状态标签（内置进行中/已结项/搁置中+自定义标签，颜色可调），在侧栏、对话头部与悬停卡片中显示。
 - [LuckVd/dsh-btw](https://github.com/LuckVd/dsh-btw) — 每条已完成回答操作行上的侧问抽屉：追问在独立且自动归档的会话中进行，携带此前的已完成对话文本（只读，上限 48000 字符）作为参考，主会话零写入；模型默认继承主会话并可在抽屉内切换，附上下文占用圈。
