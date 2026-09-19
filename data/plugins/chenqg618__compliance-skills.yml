@@ -1,0 +1,6 @@
+url: https://github.com/chenqg618/compliance-skills
+name: chenqg618/compliance-skills
+category: skill
+description:
+  en: 'Mechanical document consistency checkers for contracts, invoices, tender and bidding documents, and ad copy: every finding quotes the source line and is recomputable, with no model and no network.'
+  zh: '合同、票据、招投标文件与广告文案的机械核对工具：每条结论都引用原文与行号、可由同一输入复算，不调用模型、不联网。'
