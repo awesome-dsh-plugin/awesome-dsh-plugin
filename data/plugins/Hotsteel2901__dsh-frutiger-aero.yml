@@ -1,0 +1,15 @@
+# Entry for awesome-dsh-plugin (and therefore for dsh-market, which reads the
+# same registry). Copy this file to `data/plugins/Hotsteel2901__dsh-frutiger-aero.yml`
+# in a fork of awesome-dsh-plugin/awesome-dsh-plugin and open a PR.
+#
+# `url` must match the repository exactly, `name` is the link text, `category`
+# must be one of the values listed in that repository's contributing guide.
+# `description.en` is the only required field; a maintainer will add the Chinese
+# if it is missing, but both are provided here.
+
+url: https://github.com/Hotsteel2901/dsh-frutiger-aero
+name: Hotsteel2901/dsh-frutiger-aero
+category: theme
+description:
+  en: 'Frutiger Aero skin for the DeepSeek Harness Web UI: frosted glass over a living sky-and-water wallpaper, aqua gloss on every control, and light and dark schemes built on the product''s own token graph. Also rebuilds the narrow-viewport layout for touch — an overlay drawer instead of a crushed conversation, a thumb-reachable dock, edge-swipe gestures and a keyboard-aware composer — and fixes the stock 680px reading-measure floor that clips the transcript on a phone.'
+  zh: 'DeepSeek Harness 网页界面的 Frutiger Aero 皮肤：会动的天空与水面壁纸之上是磨砂玻璃面板，所有控件都有水感高光，明暗两套方案建立在产品自身的 token 图谱上。同时重做窄屏布局以适配触屏——覆盖式抽屉取代被压窄的正文、拇指区的底部 dock、边缘滑动手势与感知键盘的输入框——并修掉原生 680px 阅读宽度下限导致手机端正文被裁切的问题。'
