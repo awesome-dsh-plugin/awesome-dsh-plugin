@@ -1,0 +1,6 @@
+url: https://github.com/ChaoJie0/dsh-tm-guard
+name: ChaoJie0/dsh-tm-guard
+category: security
+description:
+  en: 'Zero-intervention permission gate for DSH agents on macOS: auto-allows local writes made reversible by git or Time Machine, blocks network, package installs, process control and sensitive-path reads, with full audit logs.'
+  zh: 'macOS 上 DSH 智能体的零干预权限门：可经本地 git 或时间机器回滚的本地写操作自动放行，拦截网络、装包、进程控制与敏感路径读取，并记录完整审计日志。'
