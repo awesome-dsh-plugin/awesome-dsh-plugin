@@ -1,11 +1,8 @@
-# Entry for awesome-dsh-plugin (and therefore for dsh-market, which reads the
-# same registry). Copy this file to `data/plugins/Hotsteel2901__dsh-frutiger-aero.yml`
-# in a fork of awesome-dsh-plugin/awesome-dsh-plugin and open a PR.
+# dsh-frutiger-aero — Frutiger Aero skin for the DeepSeek Harness Web UI.
 #
-# `url` must match the repository exactly, `name` is the link text, `category`
-# must be one of the values listed in that repository's contributing guide.
-# `description.en` is the only required field; a maintainer will add the Chinese
-# if it is missing, but both are provided here.
+# `url` matches the repository exactly; `category: theme` follows the list's
+# category set. Both descriptions are provided (only `en` is required by the
+# contributing guide).
 
 url: https://github.com/Hotsteel2901/dsh-frutiger-aero
 name: Hotsteel2901/dsh-frutiger-aero
