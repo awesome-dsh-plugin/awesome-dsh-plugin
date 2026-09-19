@@ -1,0 +1,6 @@
+url: https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-ai-switch
+name: ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-ai-switch
+category: model
+description:
+  en: 'Pool AI provider accounts per platform and route them through a local loopback proxy that bridges the OpenAI, OpenAI-Responses, Anthropic and Gemini protocols, then write the proxy into Codex, Claude Code, Gemini CLI, Grok, OpenCode, OpenClaw and Hermes config files with snapshot-and-rollback safe writes; registers no agent tools.'
+  zh: '按平台把 AI 供应商账号组成算力池，经本地回环代理路由并在 OpenAI、OpenAI-Responses、Anthropic、Gemini 四种协议间桥接，再用带快照回滚的安全直写把代理写进 Codex、Claude Code、Gemini CLI、Grok、OpenCode、OpenClaw、Hermes 的配置文件；不注册任何 agent 工具。'
