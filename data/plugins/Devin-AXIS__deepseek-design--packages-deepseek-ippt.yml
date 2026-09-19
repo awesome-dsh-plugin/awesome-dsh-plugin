@@ -1,0 +1,6 @@
+url: https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ippt
+name: Devin-AXIS/deepseek-design#deepseek-ippt
+category: ui
+description:
+  en: 'Visual presentation studio with slide templates, page-by-page preview, direct element editing, selection-aware AI draft handoff, and PDF and PPTX export.'
+  zh: 可视化演示文稿工作室，支持幻灯片模板、逐页预览、元素编辑、选区级 AI 草稿衔接以及 PDF 和 PPTX 导出。
