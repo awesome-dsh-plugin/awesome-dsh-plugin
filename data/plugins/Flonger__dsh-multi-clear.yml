@@ -1,0 +1,7 @@
+url: https://github.com/Flonger/dsh-multi-clear
+name: Flonger/dsh-multi-clear
+category: usage
+description:
+  en: Multi-select clear (archive) workspace conversations and bulk-delete empty workspaces in the DSH sidebar. Workspace-level selection (tri-state), select-all, progress and failure reporting; delete keeps folders and session logs (sessions move to Ungrouped).
+  zh: 侧边栏多选清空(归档)工作区对话，并批量删除已清空的空工作区。支持会话行/工作区头行勾选、半选态、全选、二次确认与失败保留；删除工作区保留文件夹与日志，会话移至未分组。
+tarball: https://github.com/Flonger/dsh-multi-clear/releases/latest/download/dsh-multi-clear-0.1.0.tgz
