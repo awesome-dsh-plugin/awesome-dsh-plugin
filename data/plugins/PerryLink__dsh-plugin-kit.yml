@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-plugin-kit
+name: PerryLink/dsh-plugin-kit
+category: dev
+description:
+  en: 'Shared zero-runtime-dependency toolkit for the PerryLink DSH plugin family: a pluggable Provider seam, fail-closed approval and adaptive session-event gates, mechanical verify scripts, and shared sanitize/pricing/judge modules in one ESM + TypeScript package.'
+  zh: PerryLink DSH 插件家族共享的零运行时依赖工具包：可插拔 Provider 接缝、fail-closed 审批门与自适应会话事件门、机械化校验脚本，以及共享的 sanitize/pricing/judge 纯模块，合为一个 ESM + TypeScript 包。
