@@ -3930,7 +3930,6 @@ dsh plugin --profile web add dshmarket
 - [mingzeng21/dsh-stock-mentions](https://github.com/mingzeng21/dsh-stock-mentions) — 将 DSH 输出文本中的股票名称和代码转换为可点击按钮，并在侧边栏展示行情与资讯。
 - [Mrxieyong/dsh-mcp-market](https://github.com/Mrxieyong/dsh-mcp-market) — Web 侧边栏的 MCP 市场与管理面板：官方模板一键配置（Apifox 公有云/私有化、Apipost、MasterGo、Pixso）、粘贴完整 mcpServers JSON、我的服务增删改启停，热加载生效。
 - [MS666666/dsh-archive-manager](https://github.com/MS666666/dsh-archive-manager) — 归档管理：在设置页列出已归档会话，并可真正删除，连同会话日志、归档标记与投影缓存一并清理。
-- [loyalchiiina/dsh-archive-manager-favorites-patch](https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch) — 归档会话管理器的增强版（loyalchiiina 制作，基于 MichengAI 的 dsh-archive-manager）：在列表或侧栏菜单给归档会话加星收藏并提供「只看收藏」筛选与收藏置顶，侧栏菜单可置顶会话，按对话轮次排序归档列表（轮次由本地转录统计，不调用模型），按闲置天数一键自动归档闲置会话，一键删除未收藏会话（全部或当前筛选，带进度条），复制会话 ID 或转录文件路径，以及重整后的归档设置页排版。注意：安装用的包名是 dsh-archive-manager-plus，而 GitHub 仓库名沿用早期的 dsh-archive-manager-favorites-patch，两者不同。
 - [nanshan1995/DSH-Plugin-Market](https://github.com/nanshan1995/DSH-Plugin-Market) — 另一款 DSH 插件市场：精选目录 + GitHub 实时浏览、中英互通搜索、安装前 fail-closed 静态安全审计（拦截安装钩子），每个插件可直接查看 README 且乱码自动修复。
 - [nonentity303/dsh-plugin-manager](https://github.com/nonentity303/dsh-plugin-manager) — 插件管理器与救砖中心：按必要程度分组启停、多更新源（npm / 插件超市 / GitHub）、浏览器下载优先与目录自动安装、P2P 兜底、启动前自检与坏包隔离。
 - [Noob-stupid/dsh-plugin-hub](https://github.com/Noob-stupid/dsh-plugin-hub) — 插件管理面板：已安装插件一键启用/停用，内置 GitHub dsh-plugin 插件市场，支持详情查看与一键安装。
@@ -4012,6 +4011,7 @@ dsh plugin --profile web add dshmarket
 - [Little-Star888/dsh-pelican](https://github.com/Little-Star888/dsh-pelican) — 右下角鹈鹕环海骑行 SVG 动画，随代理状态在思考/完成间切换，回复完成时播放提示音并可选发送系统通知。
 - [liuwenji007/dsh-muyu](https://github.com/liuwenji007/dsh-muyu) — 右下角电子木鱼，默认是鲸鱼娘图包：敲头记功德，模型忙碌时自动敲；功德按会话存本机，可换自定义图源。
 - [Lolancier/v-manager-dsh-pet](https://github.com/Lolancier/v-manager-dsh-pet) — DSH Web UI 桌宠：内置 Vivi（芊芊）Live2D 形象，支持抚摸/喂食、每日小鱼干羁绊经济与情绪驱动表情。
+- [loyalchiiina/dsh-archive-manager-favorites-patch](https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch) — 归档会话管理器的增强版（loyalchiiina 制作，基于 MichengAI 的 dsh-archive-manager）：在列表或侧栏菜单给归档会话加星收藏并提供「只看收藏」筛选与收藏置顶，侧栏菜单可置顶会话，按对话轮次排序归档列表（轮次由本地转录统计，不调用模型），按闲置天数一键自动归档闲置会话，一键删除未收藏会话（全部或当前筛选，带进度条），复制会话 ID 或转录文件路径，以及重整后的归档设置页排版。注意：安装用的包名是 dsh-archive-manager-plus，而 GitHub 仓库名沿用早期的 dsh-archive-manager-favorites-patch，两者不同。
 - [lsjspl/dsh-reel](https://github.com/lsjspl/dsh-reel) — 基于 dsh 内置 Web 服务管理、浏览与播放本地媒体库，完美适配 PC 与移动端，支持手势上下滑动刷视频、即时拖拽秒播与实时转码。
 - [Lucasli2018/totoro-pet](https://github.com/Lucasli2018/totoro-pet) — 桌面宠物插件，常驻悬浮层养一只龙猫，点击互动并可在待机、睡觉、开心、进食等状态间切换。
 - [lucky8197/dsh-devquest](https://github.com/lucky8197/dsh-devquest) — 把开发变成 RPG：回合/工具/todo 积累 XP、27+ 成就徽章、等级与赛季。事件流驱动、纯函数计分——你的工作就是游戏。
