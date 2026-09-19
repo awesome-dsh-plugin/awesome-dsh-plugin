@@ -3656,6 +3656,7 @@ dsh plugin --profile web add dshmarket
 - [howmp/dsh-pentest](https://github.com/howmp/dsh-pentest) — 面向 DeepSeek Harness 的授权渗透模式：以探索链路记录目标、线索、资产与漏洞，并在 Web 中可视化展示。
 - [hxy91819/dsh-auth](https://github.com/hxy91819/dsh-auth) — 通过 Caddy forward_auth 为 DeepSeek Harness Web 提供管理员登录，含 Argon2id 口令、可撤销会话、中英界面和侧栏原生退出。
 - [iiiweiii/dsh-guardwall](https://github.com/iiiweiii/dsh-guardwall) — 在安装前体检本地、npm 与 GitHub 插件源码，运行时拦截命中配置阈值的高风险工具调用，审计输出中的密钥模式，并写入 HMAC 链式本地审计日志。
+- [iimaguest/dsh-sandbox-escalation-guard](https://github.com/iimaguest/dsh-sandbox-escalation-guard) — 不再提供当前会话根本无法授予的沙箱升级选项——这正是 GPT 系列模型每次工具调用都失败的原因。该系列会把工具 schema 里的可选属性全部填满，而 bash、write、edit 上这两个可选属性恰好是满权限会话永远用不到的：升级只接受严格宽于当前生效级别的取值，于是广告出去的两个值都会在任何执行发生前被拒。只发调用真正需要的属性的模型永远不会碰到它们，这就是它看起来像模型专有问题的原因。本插件按请求、依据会话实际模式收窄枚举；一个可授予级别都不剩时，连同该字段与升级说明一并移除；缓存 schema 或不按 schema 发起的调用会在 tools/pre-execute 被拒绝，并给出指明修复方式的说明。与 approveEscalation 使用同一梯度，并有防漂移测试。零依赖。
 - [ilharp/dsh-tool-approval](https://github.com/ilharp/dsh-tool-approval) — 手动审批模式（Manual/Ask Mode）。
 - [islibaodong/dsh-login](https://github.com/islibaodong/dsh-login) — 为 DSH Web 界面提供多用户登录网关：首次访问创建管理员账户，管理员在 GUI 设置面板中添加和管理用户，普通用户只能看到自己的会话，未登录访问重定向到 /login。
 - [J0ss077/dsh-always-require-tools-approval](https://github.com/J0ss077/dsh-always-require-tools-approval) — 在配置的工具（默认 bash、pwsh）执行前要求一次性用户审批：受控工具暂停并询问，其余委托执行，缺少审批渠道时默认拒绝。
