@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch
+name: loyalchiiina/dsh-archive-manager-favorites-patch
+category: session
+description:
+  en: 'Enhanced build of the archived-sessions manager (by loyalchiiina, based on MichengAI''s dsh-archive-manager): star favorite archived chats from the list or sidebar menu with a favorites-only filter and favorited-first ordering, pin sessions from the sidebar menu, sort archived chats by conversation turn count (computed locally from transcripts, no model calls), auto-archive idle chats after a configurable number of idle days, one-click delete of unfavorited chats (all or current filter, with a progress bar), copy a session ID or its transcript file path, and a reworked archived-settings layout. Note: the installable package is named dsh-archive-manager-plus, while this GitHub repo keeps its earlier dsh-archive-manager-favorites-patch name — the two names differ.'
+  zh: '归档会话管理器的增强版（loyalchiiina 制作，基于 MichengAI 的 dsh-archive-manager）：在列表或侧栏菜单给归档会话加星收藏并提供「只看收藏」筛选与收藏置顶，侧栏菜单可置顶会话，按对话轮次排序归档列表（轮次由本地转录统计，不调用模型），按闲置天数一键自动归档闲置会话，一键删除未收藏会话（全部或当前筛选，带进度条），复制会话 ID 或转录文件路径，以及重整后的归档设置页排版。注意：安装用的包名是 dsh-archive-manager-plus，而 GitHub 仓库名沿用早期的 dsh-archive-manager-favorites-patch，两者不同。'
