@@ -1,5 +1,5 @@
-url: https://github.com/chrisx9z/dsh-session-share
-name: chrisx9z/dsh-session-share
+url: https://github.com/chrisx9z/dsh-session-chat-share
+name: chrisx9z/dsh-session-chat-share
 category: session
 description:
   en: Share a selected chat segment as Markdown, HTML, TXT, or PNG; Session-header dialog with range or multi-select, redaction, tool calls, and subagent conversations, plus the /share command.
