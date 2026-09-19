@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-proactive/tree/main/packages/dsh-proactive
+name: dsh-proactive
+category: notify
+description:
+  en: 'Host-level proactive wake-ups for DeepSeek Harness: the model schedules its own alarms (once, recurring interval, or cron, with optional random jitter), cold sessions are woken on time by session resume, model-initiated follow-ups are gated by quiet hours and a daily delivery budget, silent wake turns end with proactive_silence and are folded out of model context as tombstones, and a web panel (settings section plus per-session tab, SSE live refresh) manages alarms and wake history.'
+  zh: '为 DeepSeek Harness 提供 host 级主动唤醒：模型用 proactive_set 给自己设定闹钟（单次 / 循环间隔 / cron，支持 jitter 随机抖动），到点自动唤醒冷会话执行心跳、定时提醒与任务跟进；安静时段与每日投递预算约束模型自主跟进，静默唤醒以 proactive_silence 收尾并把唤醒上下文折叠为墓碑，不污染长上下文；自带 Web 管理面板（设置页节 + 会话页签，SSE 实时刷新）管理闹钟与唤醒历史。'
