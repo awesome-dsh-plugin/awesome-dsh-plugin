@@ -1,0 +1,6 @@
+url: https://github.com/akvi0921/dsh-console-tap
+name: akvi0921/dsh-console-tap
+category: dev
+description:
+  en: 'Live console window inside the DSH Web UI: every command the agent runs, with its complete stdout/stderr (byte-exact, recovered from the official spill file beyond the in-memory window).'
+  zh: '在 DSH Web UI 里实时显示助手执行的每条命令及其完整 stdout/stderr 的悬浮控制台（超出官方内存窗口的部分用官方 spill 文件逐字节补齐）。'
