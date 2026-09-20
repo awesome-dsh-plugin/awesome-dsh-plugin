@@ -1,5 +1,5 @@
-url: https://github.com/huangfuren/dsh-outline-auto
-name: huangfuren/dsh-outline-auto
+url: https://github.com/huangfuren/dsh-outline
+name: huangfuren/dsh-outline
 category: docs
 description:
   en: 'Search, read and write an Outline knowledge base from conversations, with whitelist-guarded approval for every document write.'
