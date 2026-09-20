@@ -1396,6 +1396,7 @@ dsh plugin --profile web add dshmarket
 - [dsboylw/LazyNoobsCockloft#dsh-session-notes](https://github.com/dsboylw/LazyNoobsCockloft/tree/main/dsh-session-notes) — 会话备注 0.3.1：一个会话挂多条备注（1 2 3 按创建顺序编号），会话级颜色+置顶（弹窗标题行一键操作），复制挑选器（多条备注点哪条复制哪条），🗑 会话备注批量清理，兼容 DSH Desktop 0.8.2。
 - [dylan121322/dsh-session-unarchive](https://github.com/dylan121322/dsh-session-unarchive) — 从 Web GUI 侧栏查看已归档会话，并一键恢复到原工作区。
 - [Earnest02522/dsh-archive-manager](https://github.com/Earnest02522/dsh-archive-manager) — 归档会话管理器：按工作区分组查看已归档的会话，支持恢复（取消归档）与打开会话转录目录。
+- [EIGHTfs/dsh-session-migrate](https://github.com/EIGHTfs/dsh-session-migrate) — DSH 会话跨版本迁移：扫描旧版会话目录（v0 明文、.zstd 与 .zip 导出包），改写 header cwd 绑定目标工作区并落盘，打开会话时由持久化层自动完成版本升级；设置侧边栏（环境 / 导入 / 列表 / 转换）加 CLI（check / fix / import）。
 - [Enosensu/dsh-fork-relink](https://github.com/Enosensu/dsh-fork-relink) — DSH 的 fork 伴随插件:官方 fork 发生后,把原会话的直接子 agent 复制到 fork 出的新对话下(递归复制整棵子树,副本经官方 agent API 创建),每个副本留在磁盘上成为可被官方恢复路径唤醒的冷会话——新对话保留子代理面板,并能继续给这些子代理发消息;原件仍留在旧分支。
 - [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) — 按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。
 - [falling-ts/dsh-force-compact](https://github.com/falling-ts/dsh-force-compact) — llama-cpp qwen3.8-27b 低上下文时，强制上下文压缩插件，提示模型使用效率和使用流畅度，外加完善的压缩提示。
