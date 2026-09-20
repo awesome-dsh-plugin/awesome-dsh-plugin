@@ -2,5 +2,5 @@ url: https://github.com/zhuto666/dsh-compact-agents
 name: zhuto666/dsh-compact-agents
 category: session
 description:
-  en: 'Model-callable compact_agents tool that force-compacts context in every live session (main session, ordinary sub-agents and AgentTeams members alike), queues busy targets and compacts them when the turn ends, reports the shadowed node count and estimated tokens per target, and ships a browser form for the trigger ratio, retained ratio, controlled-phase output budget and auto-continue budget.'
-  zh: '模型可调用的 compact_agents 工具：强制压缩进程内所有活会话的上下文（主会话、普通子代理、AgentTeams 成员一视同仁），忙的目标自动排队、本轮结束立即补压，逐目标回报被遮蔽的节点数与估算 token 数；浏览器侧在设置里自成一页，提供触发阈值、保留比例、受控阶段输出预算与自动续写次数的编辑表单。'
+  en: 'Model-callable compact_agents tool that force-compacts context in every live session (main session, ordinary sub-agents and AgentTeams members alike), queues busy targets and compacts them when the turn ends, reports the shadowed node count and estimated tokens per target, and ships a browser form for the trigger ratio, retained ratio, controlled-phase output budget, auto-continue budget and an end-of-turn pre-compaction ratio that compacts near the trigger line once a turn ends, so a reply no longer opens with a wait for the summarizer.'
+  zh: '模型可调用的 compact_agents 工具：强制压缩进程内所有活会话的上下文（主会话、普通子代理、AgentTeams 成员一视同仁），忙的目标自动排队、本轮结束立即补压，逐目标回报被遮蔽的节点数与估算 token 数；浏览器侧在设置里自成一页，提供触发阈值、保留比例、受控阶段输出预算、自动续写次数与「回合结束预压」比例的编辑表单（一轮结束时上下文已接近触发线就先压一次，避免下一轮回答开头空等）。'
