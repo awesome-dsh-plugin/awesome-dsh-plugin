@@ -2,5 +2,5 @@ url: https://github.com/ranxianglei/billion-context
 name: ranxianglei/billion-context
 category: session
 description:
-  en: 'Official plugin of the billion-context project: a context-compression proxy that lets coding agents run for days, billions of tokens through one context window. Registers compress/decompress/acp_status as native dsh tools and routes model traffic through a local proxy that folds consumed conversation into reversible, prefix-cache-friendly summaries, keeping any OpenAI/Anthropic-compatible upstream within its context window.'
-  zh: 'billion-context 官方 dsh 插件：上下文压缩代理，让编码 agent 连续运行数天、十亿级 token 穿过同一个上下文窗口。将 compress/decompress/acp_status 注册为原生 dsh 工具，模型流量自动经本地代理把已消费对话折叠为可逆、前缀缓存友好的摘要，任意 OpenAI/Anthropic 兼容上游都不会撞上下文窗口。'
+  en: 'The official billion-context plugin: a state-of-the-art context-compression implementation that saves tokens (a 100K context is enough — ~97% token savings) and sustains month-long single sessions (billions of tokens).'
+  zh: 'billion-context官方版：目前最先进的上下文压缩插件实现，兼顾省token(100k上下文足矣,省97%token)和超长会话(数月级别几十亿token单会话)。'
