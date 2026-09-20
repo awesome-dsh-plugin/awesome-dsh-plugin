@@ -1,0 +1,6 @@
+url: https://github.com/Xinyuan-Gao/xy-dsh/tree/main/xy-dsh-question-nav
+name: Xinyuan-Gao/xy-dsh#xy-dsh-question-nav
+category: ui
+description:
+  en: 'Keeps the question you are currently on pinned above the composer, with a dropdown of every earlier question that scrolls the conversation back to that turn; questions folded into process groups are expanded first, and Escape, scrolling or clicking outside collapses the panel.'
+  zh: '在输入框上方常驻当前提问，另有按时间排列的历次提问下拉，点任意一条把对话视图回退到那一轮；被折进「过程」分组的提问会先自动展开，Esc、滚动或点击面板外即收起。'
