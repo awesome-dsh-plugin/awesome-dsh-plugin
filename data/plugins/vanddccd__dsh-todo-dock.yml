@@ -1,0 +1,6 @@
+url: https://github.com/vanddccd/dsh-todo-dock
+name: vanddccd/dsh-todo-dock
+category: ui
+description:
+  en: 'Replaces the built-in todo dock with a tri-segment progress rail (completed, in progress, pending), collapses finished items into a single summary row, and animates state changes with the transitions.dev motion-token scale. Reads only each todo content and status.'
+  zh: '把内置任务面板换成三段式进度轨（已完成、进行中、待办），已完成项折成一行汇总，状态切换的动效按 transitions.dev 的 motion-token 体系实现。只读任务的文本与状态，不解析其内容结构。'
