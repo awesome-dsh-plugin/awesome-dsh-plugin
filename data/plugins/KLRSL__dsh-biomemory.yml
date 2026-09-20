@@ -2,5 +2,5 @@ url: https://github.com/KLRSL/dsh-biomemory
 name: KLRSL/dsh-biomemory
 category: memory
 description:
-  en: 'Biomimetic memory system for DeepSeek Harness: plain-Markdown data layer, memory tools, frozen-snapshot injection, graded approval gating, structured audits, memory metabolism (dream), memory pins, semantic recall, /memory command, and cross-session retrieval.'
-  zh: 为 DeepSeek Harness 打造的生物仿生记忆系统：纯 Markdown 数据层、memory 工具、冻结快照注入、分级审批门、结构化审计、记忆代谢（dream）、记忆钉、语义检索、/memory 命令与跨会话召回。
+  en: 'Biomimetic memory system for DeepSeek Harness: a single SQLite store (node:sqlite, WAL) whose Markdown tree is kept as a read-only mirror; memory tools, frozen-snapshot injection at session start, graded approval gating, on-demand extraction of the current session, near-duplicate merging, an archive and supersede lifecycle, memory metabolism (dream), memory pins, semantic recall over local embeddings, and the /memory command.'
+  zh: 为 DeepSeek Harness 打造的生物仿生记忆系统：以单一 SQLite 库为唯一事实来源（node:sqlite，WAL），Markdown 树仅作只读镜像；含 memory 工具、会话启动时的冻结快照注入、分级审批门、按需把当前会话抽取成记忆、近重复合并、归档与取代生命周期、记忆代谢（dream）、记忆钉、基于本地嵌入的语义检索，以及 /memory 命令。
