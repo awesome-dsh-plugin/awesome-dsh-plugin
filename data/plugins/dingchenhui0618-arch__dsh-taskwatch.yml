@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-taskwatch
+name: dingchenhui0618-arch/dsh-taskwatch
+category: remote
+description:
+  en: 'Read-only task monitor for DeepSeek Harness, covering sessions, background jobs, subagents, goal rounds, workflows and pending approvals as a phone-friendly page and a GUI sidebar panel.'
+  zh: 'DSH 只读任务监控：以适配手机的只读页面和 GUI 侧边栏面板，覆盖会话、后台任务、子代理、目标轮次、工作流与待审批。'
