@@ -1,5 +1,5 @@
-url: https://github.com/modusensus/dsh-mneme
-name: modusensus/dsh-mneme
+url: https://github.com/slow-stack/dsh-mneme/tree/main/dsh-mneme
+name: slow-stack/dsh-mneme#dsh-mneme
 category: memory
 description:
   en: "The memory that dreams — cross-session memory for DeepSeek Harness: recalls you across sessions, auto-consolidates in its sleep (autoDream), freezes conflicting memories for your review, and keeps a replayable audit trail. Offline-first local semantic search over SQLite with human-editable Markdown mirrors, an entity graph, an interactive memory panel, plus an external API and CLI."
