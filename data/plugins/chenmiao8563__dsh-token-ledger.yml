@@ -1,0 +1,6 @@
+url: https://github.com/chenmiao8563/dsh-token-ledger
+name: chenmiao8563/dsh-token-ledger
+category: usage
+description:
+  en: 'Auditable token ledger for DeepSeek Harness: folds the durable session log into restart-safe totals, recomputes the same numbers from the raw logs and diffs them, and turns usage into a bill by workspace, session, model or vendor, exportable as CSV or JSON.'
+  zh: '可审计的 DSH token 账本：把持久化会话日志折算成重启安全的总量，可从原始日志重算并比对差异，并按工作区、会话、模型或厂商生成账单，可导出 CSV 或 JSON。'
