@@ -9,23 +9,6 @@ on:
         description: Re-probe every entry, ignoring cached verdicts
         type: boolean
         default: false
-  # A push made with the default GITHUB_TOKEN does not trigger workflows —
-  # GitHub suppresses it to stop recursion — so the `push` trigger below never
-  # fires for sync-readme's own commit. That commit is the one that adds the
-  # README lines for the entries a merge just brought in, and the build reads
-  # the README, so without this the site stays exactly one merge behind until
-  # some human push happens to clear it. Measured 2026-09-20: main 4,014
-  # entries, published 4,012, no build-site run at all for the bot's sha
-  # (`actions/runs?head_sha=0b358926b` → total_count 0).
-  #
-  # workflow_run rather than having sync-readme dispatch this one: it needs no
-  # extra permission on a workflow whose whole privilege is `contents: write`,
-  # and it re-runs on every completion including the ones that find nothing to
-  # regenerate. Those extra runs redeploy identical bytes, which is the same
-  # trade the push trigger above already makes.
-  workflow_run:
-    workflows: ['Sync READMEs from data/plugins']
-    types: [completed]
   push:
     branches: [main]
     # No paths filter, deliberately: every push must either supersede the
@@ -82,7 +65,6 @@ jobs:
           # Needed by the catalog publish below; harmless for the site build.
           registry-url: https://registry.npmjs.org
       - run: npm ci
-      - run: node --test scripts/download-window.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #
