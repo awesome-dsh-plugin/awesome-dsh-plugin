@@ -2,6 +2,6 @@ url: https://github.com/mikugui/dsh-session-eater
 name: mikugui/dsh-session-eater
 category: session
 description:
-  en: 'Clean up the DSH sidebar by dragging a conversation row onto the balance widget''s whale: it opens its mouth and eats the row, and the session directory is moved to a recycle bin instead of being deleted, so the list updates without a reload and the session can be brought back. Undo from the button at the right of the pill row, the persistent toast, or the eaten log in Settings; blank and currently-open sessions are refused with a reason. Settings also swaps in your own avatar, calibrates the mouth position by dragging, and rewrites every UI string.'
-  zh: 'DSH 侧边栏的会话清理：把会话行拖到余额挂件的小胖鱼身上，它张嘴吃掉——会话目录移入回收站而不是删除，列表里那一行立刻消失、无需刷新，之后还能捞回来。可从药丸行右侧的按钮、常驻回执或设置页的「最近吃掉」台账撤销；空白会话与当前打开的会话会被拒绝并说明原因。设置页还能换自己的形象、拖拽校准嘴的位置、改写全部界面文案。'
+  en: 'Clean up the DSH sidebar by dragging a conversation row onto the balance widget''s whale: it opens its mouth and eats the row, and the session directory is moved to a recycle bin instead of being deleted. Deletion asks for confirmation first and that prompt can be turned off in Settings; clicking the whale in the sidebar jumps straight to the plugin''s Settings section. Undo from the persistent toast or the 12-entry log in Settings; blank and currently-open sessions are refused with a reason. Settings also swaps in your own avatar, calibrates the mouth position by dragging, and rewrites every UI string.'
+  zh: 'DSH 侧边栏的会话清理：把会话行拖到余额挂件的小胖鱼身上，它张嘴吃掉 —— 会话目录移入回收站而不是删除。删除前会先问一句「确定要删除这个会话吗？」，这个确认可以在设置里关掉；点侧栏那条小鱼能直接跳到本插件的设置页。撤销走常驻回执或设置里 12 条持久台账；空白会话与当前打开的会话会被拒绝并说明原因。设置页还能换自己的形象、拖拽校准嘴的位置、改写全部界面文案。'
 tarball: https://github.com/mikugui/dsh-session-eater/releases/latest/download/dsh-session-eater.tgz
