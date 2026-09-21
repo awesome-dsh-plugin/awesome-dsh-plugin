@@ -4,6 +4,10 @@ name: pearjelly/deep-blend#bundle
 # subdirectory the url points at>`, and its example is `…/packages/my-plugin` → `owner/repo#my-plugin`.
 # A nicer label would have to come from renaming the directory, which the rest of the repository pins.
 category: tools
+# The release asset `tools/build-release-tarball.mjs` builds and `gh release` attaches. `latest/download/` plus a
+# name with no version in it is what keeps this URL alive across releases; `--check` on that tool fails if a
+# version ever appears in the asset name.
+tarball: https://github.com/pearjelly/deep-blend/releases/latest/download/deepblend-bundle.tgz
 description:
   # Quoted because it contains ": " — unquoted, the YAML parser trips on the colon.
   en: 'Render and iterate on Blender scenes from DSH: 16 tools for scene specs, previews, visual review and delivery renders, with immutable revisions and an approval gate.'
