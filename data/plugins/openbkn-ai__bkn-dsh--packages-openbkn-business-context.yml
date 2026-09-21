@@ -1,7 +1,5 @@
-# Ready-to-file submission for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
-# Copy to <fork>/data/plugins/openbkn-ai__bkn-dsh.yml and open a PR (one file = the whole submission).
-url: https://github.com/openbkn-ai/bkn-dsh
-name: openbkn-ai/bkn-dsh
+url: https://github.com/openbkn-ai/bkn-dsh/tree/main/packages/openbkn-business-context
+name: openbkn-ai/bkn-dsh#openbkn-business-context
 category: tools
 tarball: https://github.com/openbkn-ai/bkn-dsh/releases/download/openbkn-dsh-runtime-v0.1.6-alpha.2-openbkn.1/openbkn-dsh-business-context-0.1.5-rc.1.tgz
 description:
