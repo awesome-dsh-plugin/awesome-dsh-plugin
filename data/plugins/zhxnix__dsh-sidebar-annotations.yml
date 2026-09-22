@@ -1,0 +1,7 @@
+url: https://github.com/zhxnix/dsh-sidebar-annotations
+name: zhxnix/dsh-sidebar-annotations
+category: ui
+description:
+  en: Codex-style browser and mini-program element annotations that attach structured context to the DSH composer.
+  zh: 为 DSH 输入框提供类似 Codex 的网页与微信小程序元素注释，附带原文、定位和上下文。
+tarball: https://github.com/zhxnix/dsh-sidebar-annotations/releases/latest/download/dsh-sidebar-annotations.tgz
