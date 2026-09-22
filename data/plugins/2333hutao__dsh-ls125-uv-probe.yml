@@ -2,5 +2,5 @@ url: https://github.com/2333hutao/dsh-ls125-uv-probe
 name: 2333hutao/dsh-ls125-uv-probe
 category: skill
 description:
-  en: Provides a skill for the LinShang LS125 UV irradiance meter and its UVALED-X3 probe, carrying the reverse-engineered 9600 8N1 link (28-byte frames, CRC-16/MODBUS, poll and clear commands), a capture and decode toolchain, and a verified STM32F103 host firmware that reads the probe without the original meter.
-  zh: 为林上 LS125 紫外辐照计与 UVALED-X3 探头提供技能：逆向出的 9600 8N1 链路（28 字节帧、CRC-16/MODBUS、轮询与清零命令）、抓取解码工具链，以及已验证的 STM32F103 主机固件，可在脱离原装表的情况下读取探头。
+  en: 'Provides a skill for the LinShang LS125 UV irradiance meter and its UVALED-X3 probe: the reverse-engineered 9600 8N1 link (28-byte frames, CRC-16/MODBUS, poll and clear commands), a capture and decode toolchain, and a verified STM32F103 host firmware that reads the probe without the original meter. All code and documentation written by an AI agent (DeepSeek Harness).'
+  zh: '为林上 LS125 紫外辐照计与 UVALED-X3 探头提供技能：逆向出的 9600 8N1 链路（28 字节帧、CRC-16/MODBUS、轮询与清零命令）、抓取解码工具链，以及已验证的 STM32F103 主机固件，可在脱离原装表的情况下读取探头。全部代码与文档均由 AI agent（DeepSeek Harness）编写。'
