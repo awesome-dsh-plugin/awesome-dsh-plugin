@@ -1,0 +1,6 @@
+url: https://github.com/konglong87/dsh-skills-input
+name: konglong87/dsh-skills-input
+category: ui
+description:
+  en: 'Searches current-session user-invocable Skills in the DSH composer and inserts the selected slash command into the draft without sending.'
+  zh: '在 DSH composer 中搜索当前会话可手动调用的 Skill，并将所选斜杠命令写入草稿，不自动发送。'
