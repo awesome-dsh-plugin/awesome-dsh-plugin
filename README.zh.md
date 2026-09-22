@@ -242,7 +242,6 @@ dsh plugin --profile web add dshmarket
 - [Devin-AXIS/deepseek-design#deepseek-ivideo](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ivideo) — 可视化视频工作室，支持可编辑时间线、动画和素材控制、27 个模板、整段与选区级 AI 草稿衔接、校验、预览和导出。
 - [dhb861832993-star/pbr-render](https://github.com/dhb861832993-star/pbr-render) — 游戏美术 PBR 3D 模型预览：GLB/GLTF 带贴图纹理、IBL 环境光照、轨道控制，以及材质通道检查器（基础色/法线/粗糙度/金属度/AO/自发光/线框），标量通道按 PBR 规范以灰度显示，通过 pbr3d 围栏与 pbr_render 工具使用。
 - [DIAG5/dsh-better-input](https://github.com/DIAG5/dsh-better-input) — 输入体验增强插件，目前已实现语音输入、AI提示词润色（反覆盖保护、带差异预览的提示词优化）、跟随 DSH 界面语言自动切换中英文界面。
-- [dingyi222666/dsh-focus-chat](https://github.com/dingyi222666/dsh-focus-chat) — 「聚焦会话」精简视图，只关注最终产出结果。
 - [dingyi580/dsh-conversation-rail](https://github.com/dingyi580/dsh-conversation-rail) — 对话左缘的导航轨：一根杠一轮对话，杠长按该轮文字体量，悬停出提问与回答预览，点击跳转；杠来自 host 侧读整份会话日志折出的大纲，未加载进窗口的轮次也画得出来，点击时再翻页补历史。
 - [djs326/dsh-plugin-width-slider](https://github.com/djs326/dsh-plugin-width-slider) — DSH 桌面版多功能 UI 插件：对话宽度滑块（按下全屏预览、跟随窗口宽度）、思考块增强（思考/回复强制中文、展开收起、Markdown 渲染）、Open With 头部打开按钮、界面英文标签中文化、设置弹窗窗口化、会话删除与工作区分页。
 - [Dkrillex/dsh-macos-pet](https://github.com/Dkrillex/dsh-macos-pet) — 分叉自 anneheartrecord/dsh-desk-pet 的 macOS 桌宠，一个真的置顶窗口，全屏 Space 也盖得住：姿势跟着本地 DSH 在六种状态之间走，右键菜单是真的 AppKit 菜单，里面有免打扰和会话清单，随包带七套皮肤。七套里有两套是仓库中的脚本用几何画出来的，不是生成的，所以做一套皮肤不需要图像模型、也不烧 API 额度；自带的 skill 仍用你自己的画图工具和额度，把一张照片扩写成十八个姿势。没有 Electron，也不用另装任何东西：窗口是用 macOS 自带的那个 Python 经 ctypes 驱动的。
