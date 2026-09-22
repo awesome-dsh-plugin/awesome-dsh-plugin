@@ -1,5 +1,5 @@
-url: https://github.com/Jovan1666/dsh-commandcode-quota
-name: Jovan1666/dsh-commandcode-quota
+url: https://github.com/Jovan1666/commandcode-usage/tree/main/plugins/dsh
+name: Jovan1666/commandcode-usage#plugins/dsh
 category: usage
 description:
   en: 'Command Code plan quota in the DSH sidebar above Settings: 5-hour, weekly and monthly windows as used percentages with reset countdowns, a /quota command, and a zero-dependency CLI. It reads the key from your own provider route, so it needs no configuration and no other plugin.'

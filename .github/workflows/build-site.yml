@@ -155,7 +155,20 @@ jobs:
           # cache, so skipping the probes on a cold push build would publish
           # every entry with npm and downloads blank. Probing is slow; that is
           # cheaper than a wrong plugins.json.
-          if [ "${{ github.event_name }}" != "push" ] || [ ! -s data/npm-map.json ]; then
+          # Named events rather than "not push": when the only triggers were
+          # schedule, workflow_dispatch and push, the two spellings meant the
+          # same thing. They stopped meaning the same the moment a fourth
+          # trigger was added — `workflow_run` is not `push`, so every
+          # sync-readme completion ran the whole probe suite, and on
+          # 2026-09-22 one of those builds sat in this step for 40 minutes
+          # against the ~12 a deploy-only build takes. The concurrency group
+          # above and the publish conditions below were already written as an
+          # allowlist; this was the only denylist left.
+          case "${{ github.event_name }}" in
+            schedule|workflow_dispatch) full_probe=1 ;;
+            *) full_probe='' ;;
+          esac
+          if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes

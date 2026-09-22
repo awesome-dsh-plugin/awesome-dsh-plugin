@@ -1,0 +1,6 @@
+url: https://github.com/Marquez807/dsh-experience-memory
+name: Marquez807/dsh-experience-memory
+category: memory
+description:
+  en: 'Cross-session experience memory for DSH: a lesson reaches the model only with a verifiable source, the relevant ones are injected each turn, and what nobody uses is retired.'
+  zh: '跨会话经验记忆：只有带可核实出处的经验才会到达模型，相关的内容每轮注入，没人用的会被退役。'
