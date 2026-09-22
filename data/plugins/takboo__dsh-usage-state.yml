@@ -1,0 +1,6 @@
+url: https://github.com/takboo/dsh-usage-state
+name: takboo/dsh-usage-state
+category: usage
+description:
+  en: Shows the account balance or coding-plan quota (5h/7d/30d) of the provider behind the current model, in one line under the composer; display only, no cost accounting.
+  zh: 在输入框统计行下方一行显示当前模型所属供应商的账户余额或套餐额度（5h/7d/30d）；只做显示，不做成本统计。
