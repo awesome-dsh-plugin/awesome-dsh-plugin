@@ -2,5 +2,5 @@ url: https://github.com/shetengteng/dsh-lumina-tarot
 name: shetengteng/dsh-lumina-tarot
 category: fun
 description:
-  en: Draggable tarot card-back overlay for the harness shell, with four draw tools, four spreads, and in-conversation AI readings.
-  zh: 壳里可拖动的塔罗牌背悬浮层，带四套抽牌工具与四种牌阵，可在对话内由 AI 解读。
+  en: A draggable tarot card back floating in the corner of the shell — click to draw with the current spread, drag it where you like and it stays there, right-click for the four spreads, the last result and the history. Full 78-card deck with bilingual upright and reversed meanings, and a model that reads only the cards actually drawn, from the overlay or from a conversation.
+  zh: 可拖动的塔罗牌背悬浮在壳一角——点一下按当前牌阵抽牌，拖到喜欢的位置就停在那儿，右击可选四种牌阵、上次结果与历史。完整 78 张牌库，正逆位含义中英双语，模型只解读真正抽到的牌，悬浮层和对话里都能抽。
