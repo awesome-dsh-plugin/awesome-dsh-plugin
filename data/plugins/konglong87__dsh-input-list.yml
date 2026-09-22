@@ -1,6 +1,0 @@
-url: https://github.com/konglong87/dsh-input-list
-name: konglong87/dsh-input-list
-category: ui
-description:
-  en: 'Saved content list beside the DSH composer: add, edit, delete and persist reusable text, then append a selected item to the current draft without sending.'
-  zh: 输入框旁的常用内容列表：新增、编辑、删除并持久化可复用文本，点击条目追加到当前草稿，不自动发送。
