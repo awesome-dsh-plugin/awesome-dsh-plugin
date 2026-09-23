@@ -1,5 +1,5 @@
-url: https://github.com/aosi526/dsh-workbuddy-xdpool
-name: aosi526/dsh-workbuddy-xdpool
+url: https://github.com/XDTrees/dsh-workbuddy-xdpool
+name: XDTrees/dsh-workbuddy-xdpool
 category: model
 description:
   en: Merge every locally signed-in WorkBuddy account into DeepSeek Harness as one auto-failing-over model pool (multi-account rotation, live credits, and a model catalog showing per-model credit multipliers and free/night-discount tags).

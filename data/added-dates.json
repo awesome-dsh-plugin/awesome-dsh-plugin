@@ -198,7 +198,6 @@
  "https://github.com/czm15053/dsh-peer-link": "2026-08-14",
  "https://github.com/dfycaly98931680/dsh-trajectory-governance": "2026-08-14",
  "https://github.com/dhicoc/dsh-reverse-skill": "2026-08-14",
- "https://github.com/dingyi222666/dsh-focus-chat": "2026-08-13",
  "https://github.com/dingyi222666/dsh-session-notification": "2026-08-13",
  "https://github.com/disyli/dsh-tool-call-stats": "2026-08-14",
  "https://github.com/dk33333333/dsh-deepseek-quota-left": "2026-08-16",
@@ -465,5 +464,7 @@
  "https://github.com/ZiFan1117/bazidiy/tree/main/atoms/bazidiy.plugin/pkg": "2026-08-26",
  "https://github.com/huangfuren/dsh-outline": "2026-09-08",
  "https://github.com/Jovan1666/commandcode-usage/tree/main/plugins/dsh": "2026-09-19",
- "https://github.com/slow-stack/dsh-mneme/tree/main/dsh-mneme": "2026-08-14"
+ "https://github.com/slow-stack/dsh-mneme/tree/main/dsh-mneme": "2026-08-14",
+ "https://github.com/XDTrees/dsh-workbuddy-xdpool": "2026-09-04",
+ "https://github.com/VDERR/dsh-echocat-skill-panel": "2026-09-19"
 }

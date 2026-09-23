@@ -1,0 +1,6 @@
+url: https://github.com/Aliww2468/dsh-client-ui-aqua-patched
+name: Aliww2468/dsh-client-ui-aqua-patched
+category: theme
+description:
+  en: 'Aqua glassmorphism theme for the DeepSeek Harness web UI, forked from upstream and repaired to load on DSH 0.1.2-rc.1: mica and compatibility modes with adjustable blur and frost, fluid or wallpaper backdrop, background brightness, and a master switch that restores the stock UI.'
+  zh: 'Aqua 玻璃质感主题（上游分支，修复以适配 DSH 0.1.2-rc.1）：云母/兼容双模式、可调模糊与磨砂、流体/壁纸背景、背景亮度，以及一键还原原生界面的总开关。'

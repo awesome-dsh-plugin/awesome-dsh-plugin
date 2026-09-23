@@ -1,5 +1,5 @@
-url: https://github.com/VDERR/echocat-skill-panel-3.0
-name: VDERR/echocat-skill-panel-3.0
+url: https://github.com/VDERR/dsh-echocat-skill-panel
+name: VDERR/dsh-echocat-skill-panel
 category: skill
 description:
   en: 'Reports which skills each turn invoked (loaded by the model, typed as /name, or none) and manages the local skill directory: install from a pasted repository, folder, SKILL.md or zip address, set a Chinese display name in the skill meta.yaml, and remove a skill while keeping a backup.'
