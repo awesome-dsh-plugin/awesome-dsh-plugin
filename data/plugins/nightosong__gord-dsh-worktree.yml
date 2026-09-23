@@ -2,5 +2,5 @@ url: https://github.com/nightosong/gord-dsh-worktree
 name: nightosong/gord-dsh-worktree
 category: git
 description:
-  en: 'Git worktrees as five agent tools — list, create, inspect, remove, prune — plus a working-location picker on the New Session row and a Changes tab in the right sidebar that shows the uncommitted diff of the session directory file by file; the repository is resolved from the session directory, removal refuses uncommitted or untracked work, and the main worktree is never removable.'
-  zh: '把 git worktree 做成五个 agent 工具——列出、创建、查看、删除、清理——并在新会话行加一个工作位置选择器、在右侧边栏加一个变更标签页，逐文件显示会话目录里未提交的改动；仓库默认取自会话目录，删除时拒绝未提交或未跟踪改动，主工作树永不可删。'
+  en: 'Git worktrees as five agent tools — list, create, inspect, remove, prune — plus a working-location picker on the New Session row, a Changes tab in the right sidebar that shows the uncommitted diff of the session directory file by file, and a panel that lists archived sessions with unarchive and delete; the repository is resolved from the session directory, removal refuses uncommitted or untracked work, and the main worktree is never removable.'
+  zh: '把 git worktree 做成五个 agent 工具——列出、创建、查看、删除、清理——并在新会话行加一个工作位置选择器、在右侧边栏加一个变更标签页（逐文件显示会话目录里未提交的改动），还有一个列出已归档会话、可取消归档与删除的面板；仓库默认取自会话目录，删除时拒绝未提交或未跟踪改动，主工作树永不可删。'
