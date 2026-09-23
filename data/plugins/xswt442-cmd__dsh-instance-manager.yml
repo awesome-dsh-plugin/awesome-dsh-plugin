@@ -2,5 +2,5 @@ url: https://github.com/xswt442-cmd/dsh-instance-manager
 name: xswt442-cmd/dsh-instance-manager
 category: dev
 description:
-  en: 'Sidebar instance manager for DSH web: lists every local dsh instance on ports 3080-3129 (port, PID, uptime, live session count) and starts or gracefully stops them in one click, including Task-Manager-style stop of the current instance.'
-  zh: 侧边栏实例管理面板：统一列出本机 3080–3129 端口的全部 dsh web 实例（端口、PID、运行时长、会话数），一键启动或优雅停止任意实例，含当前实例的任务管理器式停止。
+  en: 'Instance manager for DSH Web: a Mini Utility Dock panel that lists every local dsh web instance the machine can see (port, PID, uptime, live session count, resident memory, version), starts a new instance on an automatically picked free port in 3080-3129 or on a port you name, opens a row in a new tab, and stops one or all of them through that instance’s own graceful shutdown (appExit). Rows also show what each instance is serving, and read-only instance logs and session summaries are one click away. Where a peer is configured, the same panel lists and queries instances on other machines over a bearer-authenticated link. Every route is loopback-guarded, and a browser-facing action must additionally pass the host’s own browser authentication.'
+  zh: 'DSH Web 实例管理器：Mini Utility Dock 面板列出本机可见的全部 dsh web 实例（端口、PID、运行时长、会话数、常驻内存、版本），可在 3080–3129 自动选一个空闲端口或按指定端口启动新实例、把某一行在新标签页打开，并通过目标实例自身的优雅退出停掉单个或全部实例。行内还显示每个实例在跑什么，只读的实例日志与会话概要一点即达。配置了 peer 时，同一个面板会通过带 bearer 鉴权的链路列出并查询其他机器上的实例。所有路由都做回环校验，面向浏览器的操作还要额外通过宿主自身的鉴权。'

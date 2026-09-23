@@ -1,0 +1,6 @@
+url: https://github.com/YuJunZhiXue/dsh-purge
+name: YuJunZhiXue/dsh-purge
+category: identity
+description:
+  en: Adds a Settings card to edit prompt-inject.md, manage AGENTS.md or CLAUDE.md rule sets, check for plugin updates, and apply or restore reversible local package updates.
+  zh: 在设置页编辑 prompt-inject.md、管理 AGENTS.md 或 CLAUDE.md 规则集、检查插件更新，并对本机包做可回滚的应用或还原。

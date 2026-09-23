@@ -1,0 +1,35 @@
+# This file is the entry for the DSH plugin catalog, ready to copy into a pull
+# request against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin at
+#
+#   data/plugins/tommyhedgerow__Mimir--preset-mimir-skin.yml
+#
+# WHY THE NAME HAS TWO HYPHENS AND NO SLASH BEFORE `mimir-skin`. Mimir is a
+# monorepo: the board is a real DSH plugin at `preset/mimir-skin/`, with its own
+# `package.json` declaring `dsh.bundle` and its own `cordis.patch.yml`, while the
+# repository root holds the Obsidian vault and the agent preset. The catalog's rule
+# for a subpackage is one entry file whose name is `<owner>__<repo>--<path>` with
+# every `/` turned into `-`, and a `url` that points at the subdirectory.
+#
+# The repository root itself does NOT qualify and must not be submitted: it declares
+# no `dsh.bundle`, because the preset is not a plugin — a preset row can mount the
+# board's host half and produces no browser bundle at all, which is why the board
+# ships as a package instead.
+#
+# WHAT IS CLAIMED HERE, and each of these is checkable in the repository:
+#   * one tool, `mimir_board`, registering into the tool registry (preset/mimir-skin/host.mjs)
+#   * a browser half that draws the board in the conversation (preset/mimir-skin/client.mjs)
+#   * `dsh.bundle` + `dsh.client` in preset/mimir-skin/package.json, with the
+#     `cordis.patch.yml` beside it
+#   * no runtime dependencies at all — the host half imports nothing, so there is
+#     no `dependencies` block to check and no peer range to get wrong
+#
+# The tarball asset is attached to every release by .github/workflows/release.yml,
+# under a version-free name so `latest/download` cannot rot.
+
+url: https://github.com/tommyhedgerow/Mimir/tree/main/preset/mimir-skin
+name: tommyhedgerow/Mimir#mimir-skin
+category: ui
+description:
+  en: "Publishes a lesson into the DSH conversation: the dependency spine, the question and the vault's drawings, drawn in the vault's own palette."
+  zh: '把一节课发布进 DSH 对话：依赖主干、题目与库里的图，用库自己的配色绘制。'
+tarball: https://github.com/tommyhedgerow/Mimir/releases/latest/download/dsh-mimir-skin.tgz

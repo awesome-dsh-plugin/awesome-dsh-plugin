@@ -1,0 +1,6 @@
+url: https://github.com/xswt442-cmd/dsh-ballast
+name: xswt442-cmd/dsh-ballast
+category: dev
+description:
+  en: 'Context-window attribution for DSH Web: a Mini Utility Dock panel that ranks the user messages, assistant turns, reasoning blocks and tool results of a session by the tokens each one occupies, so it is clear which entries hold the window. It also shows the share by entry type, the heaviest entries across the live sessions of the host, and, where the host provides them, provider usage and the estimated system/tools/messages composition. The panel is read-only: it does not estimate cost, modify a session, or trigger compaction.'
+  zh: 'DSH Web 的上下文窗口归因插件：Mini Utility Dock 面板按各自占用的 token 给会话内的用户消息、助手回复、推理块和工具结果排序，一眼看出窗口被哪些条目占住。面板还显示各条目类型的占比、本机各 live session 里最重的条目，并在宿主提供时显示 provider usage 与 system/tools/messages 的估算构成。面板只读：不估算费用、不修改会话、不触发 compaction。'

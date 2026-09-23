@@ -1,0 +1,5 @@
+url: https://github.com/fhidalgodev/dsh-odoo-sdd
+name: fhidalgodev/dsh-odoo-sdd
+category: workflow
+description:
+  en: "Spec-Driven Development pipeline for Odoo: 15 tools take a request from an immutable spec through architecture to module code or live configuration, then require a persisted verdict backed by evidence from a real Odoo instance, with fail-closed gates, human-approved batches in a declared environment, Odoo's own CSV/Excel importer, and a journal that reverses the data written through the plugin."

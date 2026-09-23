@@ -1,0 +1,6 @@
+url: https://github.com/ouli-1242/dsh-plugin-tool-management
+name: ouli-1242/dsh-plugin-tool-management
+category: tools
+description:
+  en: 'Manage DSH MCP, skills, scenes, memories, subagents, presets & archived sessions in one panel; per-domain context injection with visible adoption stats, and scene locking.'
+  zh: 'DSH 的 MCP、技能、场景、记忆、子智能体、提示词与归档会话，一个面板统一管理；五域各自注入上下文、采纳统计可见、场景可上锁。'

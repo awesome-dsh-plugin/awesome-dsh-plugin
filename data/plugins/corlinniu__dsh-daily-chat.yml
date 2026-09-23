@@ -1,0 +1,6 @@
+url: https://github.com/corlinniu/dsh-daily-chat
+name: corlinniu/dsh-daily-chat
+category: session
+description:
+  en: "Splits New Session in the DSH web sidebar into two modes: a 日常聊天 row opens a session on the `daily` agent preset the plugin installs into the harness home (persona, web search and fetch, ask-user and compaction — no files, shell, plan mode or subagents), inside its own daily-chat workspace whose sidebar region lists only those chats, while 开始工作 keeps the shipped coding agent; the built-in New Session button is hidden and every other New Session entry point follows the active mode, which is remembered in localStorage."
+  zh: 把 DSH Web 侧边栏的「新会话」拆成两种模式：「日常聊天」在专属工作区里用插件自己安装到 harness home 的 `daily` 预设开一个只有人格、网页检索/抓取、提问和上下文压缩的轻量会话（没有文件、Shell、计划模式和子代理），侧边栏只列这些日常会话；「开始工作」保持原有编码 Agent；原生「新会话」按钮被隐藏，其余「新会话」入口按当前模式路由，模式存在 localStorage。

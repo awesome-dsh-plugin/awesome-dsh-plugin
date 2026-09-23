@@ -1,0 +1,6 @@
+url: https://github.com/donghangxunlang-cmd/dsh-attention-health
+name: donghangxunlang-cmd/dsh-attention-health
+category: session
+description:
+  en: 'Content-degradation detection (thinking loops, output repetition) for DeepSeek Harness, with a continue-vs-handoff cost verdict and zero-model handoff documents.'
+  zh: 内容退化检测（思考打转、输出复读）+ 继续/交接成本裁决 + 零模型交接文档。

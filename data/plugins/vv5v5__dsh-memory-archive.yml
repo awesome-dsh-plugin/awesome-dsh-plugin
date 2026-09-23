@@ -1,0 +1,7 @@
+url: https://github.com/vv5v5/dsh-memory-archive
+name: vv5v5/dsh-memory-archive
+category: memory
+tarball: https://github.com/vv5v5/dsh-memory-archive/releases/latest/download/dsh-memory-archive.tgz
+description:
+  en: 'Memory archive and prompt viewer for DeepSeek Harness: read back what compaction folded out of context - browse past sessions or Tavern playthrough archives (summary, original text, state) with full-text search - and inspect the prompt each turn actually sent, listing every assembled system section with its order, character count, offset, hash and mutability, plus an assembly map, registry export, and honest diagnostics when a section is empty or its log cannot be read. Optionally provisions a roleplay agent preset.'
+  zh: '面向 DeepSeek Harness 的记忆库 + 提示词查看器：把被压缩折叠掉的内容重新变得取得到——浏览历史会话或 Tavern 周目归档（摘要、原文、状态）并全文检索；逐轮查看模型真正收到的提示词，列出每个 system 段落的顺序、字数、偏移、哈希与可变性，附装配地图、注册表导出，以及段落为空或日志读不出时的如实诊断。可选一键生成 RP preset。'

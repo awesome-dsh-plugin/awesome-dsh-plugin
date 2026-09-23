@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-tool-ast-grep
+name: Jaylor-Wang/dsh-tool-ast-grep
+category: tools
+description:
+  en: AST-based structural code search and syntax outline tool powered by ast-grep.
+  zh: 基于 ast-grep 的语法级 AST 代码结构检索与大纲提取工具。

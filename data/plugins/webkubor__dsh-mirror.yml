@@ -1,0 +1,6 @@
+url: https://github.com/webkubor/dsh-mirror
+name: webkubor/dsh-mirror
+category: memory
+description:
+  en: 'Make the AI remember how you think, not what you said: actively captures your principles, redlines, and working habits across sessions — with memory capacity, graceful decay, and human-readable reasoning for every entry. 0.7.0 brings an intuitive persona portrait with evidence tracing.'
+  zh: '让模型主动记下你的判断依据（原则/红线/工作方式），跨会话复用 —— 有容量上限、会遗忘、每条都说得出为什么记。0.7.0 重构为画像式速写，带证据追溯与红线硬约束，告别冷冰冰的数据库列表。'

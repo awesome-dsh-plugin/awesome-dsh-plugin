@@ -2,5 +2,5 @@ url: https://github.com/Nono-neko/dsh-browser
 name: Nono-neko/dsh-browser
 category: browser
 description:
-  en: 'Embedded browser for DSH Web and Desktop: multi-tab browsing via Puppeteer rendering proxy that bypasses X-Frame-Options, per-workspace tab persistence, workspace file preview, and agent tools (browser_open, browser_read).'
-  zh: DSH Web 与 Desktop 端的内置浏览器：通过 Puppeteer 渲染代理实现多标签浏览并绕过 X-Frame-Options，按工作区持久化标签，支持工作区文件预览，以及 agent 工具（browser_open、browser_read）。
+  en: 'An AI-native browser workspace for DeepSeek Harness (DSH), combining multi-tab browsing, live page annotations, lightweight code editing, workspace previews, and Agent-assisted iteration across Web and Desktop.'
+  zh: DSH Web 与 Desktop 端的内置浏览器：为 DeepSeek Harness (DSH) 提供的 AI 原生浏览器工作区，融合了多标签浏览、实时页面批注、轻量级代码编辑、工作区预览，以及跨网页和桌面的智能助手辅助迭代功能。

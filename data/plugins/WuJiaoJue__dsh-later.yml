@@ -1,0 +1,6 @@
+url: https://github.com/WuJiaoJue/dsh-later
+name: WuJiaoJue/dsh-later
+category: workflow
+description:
+  en: 'Scheduled reminders and delayed send for DSH: /later delivers what you type as yourself at the time you pick, while the timer panel (or /schedule) posts a reminder row — even with the page closed. (scheduled send / reminders / delayed send)'
+  zh: '给 DSH 加上定时提醒与延迟发送：一句话到点送达——/later 以你的身份发出，定时面板或 /schedule 发提醒行；关掉网页也准时触发。（定时发送 / 定时提醒 / 延迟发送 / 提醒）'

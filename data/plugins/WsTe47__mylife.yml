@@ -1,0 +1,7 @@
+url: https://github.com/WsTe47/mylife
+name: WsTe47/mylife
+category: memory
+tarball: https://github.com/WsTe47/mylife/releases/latest/download/mylife.tgz
+description:
+  en: 'A local-first personal state record and decision engine for dsh: keeps every input byte-for-byte with line-level provenance, argues against its own conclusions by generating defeaters first, ages each stored fact with its own TTL, and reports where a decision rests on nothing at all.'
+  zh: '本地优先的个人状态档案与决策引擎：逐字保留你的原始输入并精确到行地溯源，给出结论前先生成"证伪项"反驳自己，为每个事实单独设置有效期，并指出这个决定正建立在哪些空白之上。'

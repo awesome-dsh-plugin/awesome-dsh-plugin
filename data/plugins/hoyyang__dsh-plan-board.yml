@@ -1,0 +1,7 @@
+url: https://github.com/hoyyang/dsh-plan-board
+name: hoyyang/dsh-plan-board
+category: workflow
+tarball: https://github.com/hoyyang/dsh-plan-board/releases/download/v0.2.1/dsh-external-dsh-plan-board-0.2.1.tgz
+description:
+  en: 'Mind-map project planning with blocking drift protection: plans, modules and tasks as a dependency DAG with topological execution order, an agent position marker, a human approval gate on every board edit, git cross-checks, and evidence-gated task completion.'
+  zh: '思维导图式项目规划与防跑偏：计划→模块→任务 DAG 与拓扑执行序号、Agent 站位、改图人审门、git 交叉核对与证据门禁。'

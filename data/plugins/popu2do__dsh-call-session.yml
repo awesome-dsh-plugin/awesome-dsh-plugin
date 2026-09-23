@@ -1,0 +1,6 @@
+url: https://github.com/popu2do/dsh-call-session
+name: popu2do/dsh-call-session
+category: session
+description:
+  en: In-process cross-session communication, peer session creation, and shared blackboard for DeepSeek Harness.
+  zh: 面向 DeepSeek Harness 的进程内跨会话通信、对等会话创建与公共黑板插件。
