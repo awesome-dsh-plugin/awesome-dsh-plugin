@@ -1,0 +1,5 @@
+url: https://github.com/almazom/dsh-almazom-approve-escalate
+name: almazom/dsh-almazom-approve-escalate
+category: security
+description:
+  en: 'One-click Approve & escalate on the approval card: answers the pending request and switches the live session to a permission preset.'

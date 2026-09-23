@@ -1360,5 +1360,21 @@
   "https://github.com/ccch713/deepddw/tree/main/plugins/ddw-teams-panel": [
     "https://raw.githubusercontent.com/ccch713/deepddw/main/docs/images/ddw-teams-panel-settings.png",
     "https://raw.githubusercontent.com/ccch713/deepddw/main/docs/images/ddw-teams-panel-members.png"
+  ],
+  "https://github.com/enterhalf/dsh-session-colorful-unread-pin-jobs": [
+    "https://raw.githubusercontent.com/enterhalf/dsh-session-colorful-unread-pin-jobs/main/assets/screenshot-1-overview.png",
+    "https://raw.githubusercontent.com/enterhalf/dsh-session-colorful-unread-pin-jobs/main/assets/screenshot-2-menu.png",
+    "https://raw.githubusercontent.com/enterhalf/dsh-session-colorful-unread-pin-jobs/main/assets/screenshot-3-settings.png"
+  ],
+  "https://github.com/ShenpingDD/wooden-fish-dsh": [
+    "https://raw.githubusercontent.com/ShenpingDD/wooden-fish-dsh/main/docs/screenshots/ui-design-preview.png"
+  ],
+  "https://github.com/JimchengChina/dsh-action-outbox": [
+    "https://raw.githubusercontent.com/JimchengChina/dsh-action-outbox/main/assets/action-outbox-hero.jpg"
+  ],
+  "https://github.com/webkubor/dsh-llm-hub": [
+    "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-piai-cards.png",
+    "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-deepseek-balance.png",
+    "https://raw.githubusercontent.com/webkubor/dsh-llm-hub/main/docs/images/models-availability.png"
   ]
 }

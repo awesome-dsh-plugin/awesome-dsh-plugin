@@ -1,0 +1,6 @@
+url: https://github.com/YUEYUEXYS/dsh-think-ultra
+name: YUEYUEXYS/dsh-think-ultra
+category: model
+description:
+  en: "Pins every request to the native max-effort tier and adds a per-model/per-mode reasoning-depth panel with a 0-20 capability slider, isolated Velocity/Apex profiles, and offline reasoning toolboxes. Distributed as an obfuscated build; commercial use allowed, reverse engineering closed."
+  zh: "将每个请求固定到原生 max effort 档位，并提供按模型与模式隔离的推理深度面板：0-20 能力滑块、独立的迅流（Velocity）/极境（Apex）配置档与离线推理工具箱。以混淆构建交付，允许商用，禁止逆向。"

@@ -2,6 +2,6 @@ url: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck
 name: FeatherHunter/dsh-mattpocock-skills-deck
 category: skill
 description:
-  en: 'Matt Pocock skills deck: installs with all 25 engineering and productivity skills bundled (mattpocock/skills v1.2.3, zero manual setup: triage, grilling, wayfinder, handoff) in a right-side details panel. GitHub issues fully supported; Markdown files in preview; GitLab not currently supported. Hope it helps you turn ideas into reality, faster.'
-  zh: 'Matt Pocock 技能面板（DSH Deck）：安装即自带 25 个工程与效率技能（mattpocock/skills v1.2.3，triage、grilling、wayfinder、handoff 等），右侧面板直接调用，无需手动装技能。主力支持 GitHub issue；Markdown 本地文件为预览版；GitLab 暂不在支持范围。希望它能帮你把想法更快变成现实。'
-tarball: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck/releases/download/v1.7.14/dsh-mattpocock-skills-deck-1.7.14.tgz
+  en: 'Installs with 25 engineering and productivity skills bundled (mattpocock/skills v1.2.3), no manual skill installation needed. Built with 30 billion tokens. This plugin delivers 10x development efficiency on top of the original skills. GitHub issues are the main supported backend; Markdown is a preview; GitLab is not supported yet.'
+  zh: '安装即自带mattpocock/skills v1.2.3的25个工程与效率技能，无需手动装技能。300亿token打造。本插件在原始技能之上提供10倍的开发效率。主力支持GitHub issue；Markdown为预览版；GitLab暂不支持。'
+tarball: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck/releases/latest/download/dsh-mattpocock-skills-deck.tgz

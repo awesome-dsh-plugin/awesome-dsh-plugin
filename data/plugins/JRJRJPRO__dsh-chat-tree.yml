@@ -1,0 +1,6 @@
+url: https://github.com/JRJRJPRO/dsh-chat-tree
+name: JRJRJPRO/dsh-chat-tree
+category: session
+description:
+  en: Draws every branch of a conversation as a clickable tree beside the chat, with favorites, custom icons and colors, branch merge and split, rewind-aware layout, and Claude Code branches that keep their memory.
+  zh: 把一个对话的所有分支画成聊天区旁边的一棵可点击的树，支持收藏、自定义图标与颜色、分支合并与拆分、撤回感知的布局，以及带记忆的 Claude Code 分支。

@@ -1,0 +1,6 @@
+url: https://github.com/Nwflower/dsh-claude-style
+name: Nwflower/dsh-claude-style
+category: theme
+description:
+  en: Claude Code Desktop look-and-feel for the DSH Web GUI — ivory/warm-black dual canvas, clay accent, three-font typography, permission segmented control and brand switcher, via CSS overrides and client DOM overrides.
+  zh: 为 DSH Web GUI 复刻 Claude Code Desktop 的视觉与交互——象牙白/暖黑双画布、陶烬橙强调色、三字体排版、权限分段控件与品牌切换，以 CSS 覆盖与客户端 DOM override 实现。

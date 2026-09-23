@@ -35,6 +35,12 @@ permissions:
 # Never two of these at once: both would regenerate the same file and the
 # second push would be rejected. Queue instead of cancelling — a cancelled run
 # leaves main with a stale README until the next merge happens to fix it.
+#
+# Queueing alone is not enough. A queued run keeps the checkout it was
+# triggered with, so by the time it reaches the front, main has moved and its
+# push is rejected anyway — which is what stranded main on 2026-09-19. The job
+# below re-reads main's tip before every attempt; this group just keeps two
+# runs from racing into the same rejection.
 concurrency:
   group: sync-readme
   cancel-in-progress: false
@@ -44,26 +50,57 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
+      # main's tip, not the pushed commit. The concurrency group serialises
+      # these runs but does not move their checkouts: a queued run still holds
+      # the sha it was triggered on, which by then is an ancestor of main
+      # rather than its tip, and every push from one is rejected.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm ci
-      - name: Regenerate
-        run: node scripts/generate-readme.mjs
-      - name: Commit if changed
+      - name: Regenerate and commit
         run: |
-          if git diff --quiet -- README.md README.zh.md; then
-            echo "READMEs already match data/plugins — nothing to do."
-            exit 0
-          fi
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md README.zh.md
-          # The added-date for a new entry derives from the commit that first
-          # added its line to the default-locale README (build-site.mjs), which
-          # is now this commit rather than the merge. Same day, seconds apart —
-          # but say so here, because the next person to read that derivation
-          # will wonder why every recent date points at a bot commit.
-          git commit -m 'chore: regenerate READMEs from data/plugins'
-          git push
+
+          # Checking out main's tip narrows the race; it does not close it, so
+          # treat a rejected push as "main moved" and redo the work on top of
+          # where it moved to. generate-readme.mjs is deterministic and reads
+          # only data/plugins, so regenerating after a reset is the same
+          # operation, not a merge of two generated files.
+          for attempt in 1 2 3; do
+            git fetch origin main --quiet
+            git reset --hard origin/main --quiet
+            node scripts/generate-readme.mjs
+
+            if git diff --quiet -- README.md README.zh.md; then
+              echo "READMEs already match data/plugins — nothing to do."
+              exit 0
+            fi
+
+            git add README.md README.zh.md
+            # The added-date for a new entry derives from the commit that first
+            # added its line to the default-locale README (build-site.mjs), which
+            # is now this commit rather than the merge. Same day, seconds apart —
+            # but say so here, because the next person to read that derivation
+            # will wonder why every recent date points at a bot commit.
+            git commit -m 'chore: regenerate READMEs from data/plugins'
+
+            if git push; then
+              exit 0
+            fi
+            echo "push rejected — main moved, retrying on its new tip (attempt $attempt)"
+          done
+
+          # Three losses in a row is not the ordinary race. Fail loudly: main
+          # is left with entries its README does not list, and the build
+          # validates screenshot keys against those lines, so every push build
+          # fails until someone regenerates by hand. Eight hours of that on
+          # 2026-09-19 is why this loop exists.
+          echo "::error::Could not push regenerated READMEs after 3 attempts. \
+          main's READMEs are stale, which will fail every build until fixed: \
+          run 'node scripts/generate-readme.mjs' on main and push the result."
+          exit 1
