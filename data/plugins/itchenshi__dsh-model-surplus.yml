@@ -1,0 +1,6 @@
+url: https://github.com/itchenshi/dsh-model-surplus
+name: itchenshi/dsh-model-surplus
+category: usage
+description:
+  en: 'Shows the active model''s usage and remaining balance in the session header: OpenCode Go plan usage (rolling, weekly, monthly) with the selected model''s monthly cap, and DeepSeek account balance.'
+  zh: '在会话标题右侧显示当前模型的用量与余量：OpenCode Go 套餐用量、选中模型所对应的月上限，以及 DeepSeek 账户余额。'
