@@ -1,0 +1,6 @@
+url: https://github.com/hasan-aghayev/dsh-pet-companion
+name: hasan-aghayev/dsh-pet-companion
+category: fun
+description:
+  en: A floating DSH desktop companion with a WSLg-compatible Electron window, activity-aware pet animations, an active-session message composer, and local support for Hatch-Pet v2 atlases or transparent portraits.
+  zh: 通过兼容 WSLg 的 Electron 窗口显示 DSH 桌面宠物，随代理活动切换动画，并支持向当前会话发送消息、从本地文件夹加载 Hatch-Pet v2 精灵图集或透明肖像。
