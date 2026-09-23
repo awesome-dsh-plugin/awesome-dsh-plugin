@@ -1,0 +1,6 @@
+url: https://github.com/w2310670047-code/ai-eight-honors-eight-shames
+name: w2310670047-code/ai-eight-honors-eight-shames
+category: skill
+description:
+  en: 'DSH plugin that registers the ai-eight-honors-eight-shames skill: eight checkable working rules for coding agents (verify before calling, confirm ambiguity, cite evidence, reuse before creating, test before claiming done, follow local conventions, separate fact from inference, keep changes reversible) plus a ninth rule that logs each user request and the change made in two fixed report files at the workspace root.'
+  zh: '注册 ai-eight-honors-eight-shames skill 的 DSH 插件：面向编码代理的八条可核对工作准则（先查证再调用、有歧义先确认、业务规则给出处、先复用再新造、先测试再声称完成、按既有约定写、区分事实与推断、改动可回滚），外加第 9 条——用户每次提出需求或问题，都在工作区根的两份固定报告里成对记录诉求与改动。'
