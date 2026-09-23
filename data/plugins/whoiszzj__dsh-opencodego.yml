@@ -1,0 +1,6 @@
+url: https://github.com/whoiszzj/dsh-opencodego
+name: whoiszzj/dsh-opencodego
+category: model
+description:
+  en: 'OpenCode Go provider that measures model capability against the gateway instead of trusting declared metadata: every enabled model is probed for the protocols that answer and for the reasoning levels that work, and requests run through an ordered protocol fallback chain. Several OpenCode Go credentials can be stored and switched from the settings page.'
+  zh: '把 OpenCode Go 接入 DSH 的提供方插件：能力不靠声明而靠实测——每个启用的模型都真的问一次网关，确认哪些协议应答、思考档位哪些管用，请求走有序的协议回退链。可保存多把 OpenCode Go 密钥，在设置页里切换当前使用的那把。'
