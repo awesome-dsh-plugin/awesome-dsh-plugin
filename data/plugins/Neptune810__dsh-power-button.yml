@@ -1,0 +1,6 @@
+url: https://github.com/Neptune810/dsh-power-button
+name: Neptune810/dsh-power-button
+category: ui
+description:
+  en: 'Adds one draggable button to the DeepSeek Harness Web GUI that stops the running dsh web service immediately, remembers where it was dropped, and serves the stop over a POST-only loopback-guarded route.'
+  zh: '在 DeepSeek Harness Web 界面加一个可拖动按钮：按一下立刻结束正在运行的 dsh web 服务，会记住你放的位置，停止接口只接受 POST 且仅限本机回环访问。'
