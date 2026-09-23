@@ -1,0 +1,6 @@
+url: https://github.com/konglong87/dsh-skills-input
+name: konglong87/dsh-skills-input
+category: skill
+description:
+  en: 'DSH Skill selector and skill browser for the composer: search current-session user-invocable skills, view descriptions, and insert the /skill-name slash command into the draft without sending.'
+  zh: 'DSH Skill 选择器与技能浏览器：在 composer 输入框旁搜索当前会话可手动调用的 Skill，查看技能说明并插入 /skill-name 斜杠命令到草稿，不自动发送。'
