@@ -1,0 +1,6 @@
+url: https://github.com/itchenshi/dsh-gui-last-session
+name: itchenshi/dsh-gui-last-session
+category: session
+description:
+  en: 'Reopens the conversation you were last in after restarting DeepSeek Harness, by keeping a pointer file under the DSH home directory instead of patching engine files.'
+  zh: '重启 DeepSeek Harness 后自动回到最近一次对话；实现方式是在 DSH 数据目录里保存一个指针文件，不修改引擎文件。'

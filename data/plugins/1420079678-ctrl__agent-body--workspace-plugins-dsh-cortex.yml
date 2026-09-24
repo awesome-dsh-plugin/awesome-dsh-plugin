@@ -1,0 +1,7 @@
+url: https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-cortex
+name: 1420079678-ctrl/agent-body#dsh-cortex
+category: memory
+tarball: https://github.com/1420079678-ctrl/agent-body/releases/download/v0.1.1/dsh-external-dsh-cortex-0.1.1.tgz
+description:
+  zh: "Agent-Body 的记忆器官：静默 2 分钟进浅睡、5 分钟进深睡，深睡里用确定性规则把真实经历压成记忆卡（坑/打法/薄弱环节/未解决/事实），新命令进来按关键词召回并注入上下文；久未使用的卡按半衰期衰减后归档而非删除。同时对全身的稳态告警做降噪：窗口内重复只计数不刷屏，反复出现且从未自愈的收敛成已知稳态偏移并静默。巩固与召回都不调用模型。"
+  en: "The memory organ of Agent-Body: after 2 minutes of silence it enters light sleep and after 5 minutes deep sleep, where deterministic rules distil real experience into memory cards (pitfalls, playbooks, hotspots, unresolved issues, facts). Incoming commands recall related cards by keyword and inject them into context; cards unused for long decay on a half-life and are archived rather than deleted. It also de-noises body-wide homeostasis warnings: repeats inside a window are counted instead of re-printed, and a warning that keeps recurring without ever healing converges into a known steady-state offset and goes quiet. Consolidation and recall make no model calls."

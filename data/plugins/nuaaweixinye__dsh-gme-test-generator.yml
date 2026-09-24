@@ -1,0 +1,6 @@
+url: https://github.com/nuaaweixinye/dsh-gme-test-generator
+name: nuaaweixinye/dsh-gme-test-generator
+category: workflow
+description:
+  en: 'Drives the GME Test Agent from inside Harness: three tools list interface catalogs, start and repair autonomous test generation in a local Python backend, poll the task until review, and keep PR, skip and cleanup actions behind explicit user consent.'
+  zh: '在 Harness 内驱动 GME Test Agent：三个工具负责列出接口目录、在本地 Python 后端启动并修复自主测试生成、轮询任务直到待评审，并把创建 PR、跳过与清理等动作挡在用户显式同意之后。'

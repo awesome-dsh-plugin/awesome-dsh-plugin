@@ -17,6 +17,7 @@ import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
+import { slugOf, termOf } from './lib/terms.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -442,7 +443,11 @@ for (const e of ordered) {
   // not as "github-only".
   // Surfaced for dsh-market's discover list (dsh-market#348).
   e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
-  e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
+  // The detail-page path, the sitemap entry and the comment term all read
+  // this one derivation (scripts/lib/terms.mjs): the term is the join key a
+  // plugin's discussion is filed under, and it has to match the path the
+  // pages are published at, character for character.
+  e.slug = slugOf(e.url)
 }
 
 const hreflangs = [
@@ -842,7 +847,7 @@ for (const loc of LOCALES) {
       repoId: COMMENTS.repoId,
       category: COMMENTS.category,
       categoryId: COMMENTS.categoryId,
-      term: `plugin:${e.slug.toLowerCase()}`,
+      term: termOf(e.slug),
       lang: loc.giscusLang,
     } : null
     const commentsSection = commentsConfig ? `<section class="panel comments" aria-labelledby="${commentsId}-title">
