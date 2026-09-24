@@ -1,5 +1,5 @@
-url: https://github.com/ai-tools-mtl/Aurify
-name: ai-tools-mtl/Aurify
+url: https://github.com/ai-tools-mtl/Aurify/tree/main/packages/bundle-patent
+name: ai-tools-mtl/Aurify#bundle-patent
 category: tools
 description:
   en: Patent-writing gatekeeper for dsh - screens the idea against Chinese prior art first, then runs five-party alignment interviews, eight-chapter disclosure drafting, figures and simulation runs, deterministic review and docx/PDF export.
