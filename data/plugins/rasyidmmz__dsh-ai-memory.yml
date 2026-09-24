@@ -1,0 +1,6 @@
+url: https://github.com/rasyidmmz/dsh-ai-memory
+name: rasyidmmz/dsh-ai-memory
+category: memory
+description:
+  en: 'Memory bridge between DeepSeek Harness and ai-memory: runs ai-memory''s finalize-session when a DSH session ends, so the observations it already captured become searchable wiki pages. Skips subagents, queues concurrent session ends, and sweeps sessions abandoned by a forced restart.'
+  zh: 'DeepSeek Harness 与 ai-memory 之间的记忆桥梁：DSH 会话结束时调用 ai-memory 的 finalize-session，把已捕获的观察记录转成可检索的 wiki 页面。跳过子代理、排队处理并发结束的会话，并清扫因强制重启而遗留的会话。'
