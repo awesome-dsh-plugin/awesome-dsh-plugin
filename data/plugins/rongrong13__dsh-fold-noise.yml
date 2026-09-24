@@ -1,0 +1,6 @@
+url: https://github.com/rongrong13/dsh-fold-noise
+name: rongrong13/dsh-fold-noise
+category: ui
+description:
+  en: Collapses context injections, reasoning, and tool-call rows in the Web chat into one chip per run, leaving only the answer text; the running turn stays open and closes itself when it settles.
+  zh: 把 Web 对话里的注入上下文、思考过程与工具调用行按连续段收成一行胶囊，只留正文；当轮进行中自动展开，回答结束与历史会话自动闭合。
