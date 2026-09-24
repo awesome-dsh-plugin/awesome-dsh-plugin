@@ -1,0 +1,5 @@
+url: https://github.com/qvsix/dsh-antigravity-bridge
+name: qvsix/dsh-antigravity-bridge
+category: session
+description:
+  en: 'Read Google Antigravity SQLite conversations in DeepSeek Harness and import them as native sidebar sessions with list, read and import tools plus slash commands.'

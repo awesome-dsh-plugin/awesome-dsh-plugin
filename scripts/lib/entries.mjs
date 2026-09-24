@@ -162,6 +162,20 @@ export function validateEntries(entries) {
       problems.push(`${at}: filename must match the url — expected ${want}.yml`)
     }
     if (typeof e.name !== 'string' || !e.name.trim()) problems.push(`${at}: "name" is required`)
+    // `name` is the link text in the list, so a name written as owner/repo is a
+    // claim about which repository the link goes to. #5756 found six entries
+    // whose name named a different repository than their url — five of them a
+    // repository that does not exist — each publishing a link labelled one
+    // thing and pointing at another. Only the owner/repo form is checked: a
+    // bare display name ("Session Lens") makes no such claim, and the part
+    // after `#` is a free-form label for monorepo subpaths.
+    else if (e.name.split('#')[0].includes('/')) {
+      const named = e.name.split('#')[0].trim().toLowerCase()
+      const actual = e.url.replace(/^https:\/\/github\.com\//, '').split('/').slice(0, 2).join('/').toLowerCase()
+      if (named !== actual) {
+        problems.push(`${at}: "name" says ${e.name.split('#')[0].trim()} but the url is ${e.url.replace(/^https:\/\/github\.com\//, '').split('/').slice(0, 2).join('/')} — the name is the link text, so it must name the repository the link goes to`)
+      }
+    }
     if (!CAT_IDS.includes(e.category)) {
       problems.push(`${at}: "category" must be one of ${CAT_IDS.join(', ')} (got ${JSON.stringify(e.category)})`)
     }

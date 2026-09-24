@@ -1,0 +1,6 @@
+url: https://github.com/itchenshi/dsh-keys-setting
+name: itchenshi/dsh-keys-setting
+category: ui
+description:
+  en: 'Configures from the settings window''s General page whether Enter, Shift+Enter and Ctrl/Cmd+Enter send the message or insert a line break; the engine default is kept until you change it.'
+  zh: '在设置窗口的通用页配置 Enter、Shift+Enter、Ctrl/Cmd+Enter 是发送消息还是换行；未改动前完全保持引擎默认行为。'

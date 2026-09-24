@@ -1,0 +1,5 @@
+url: https://github.com/JoblessJoe/dsh-vitals
+name: JoblessJoe/dsh-vitals
+category: ui
+description:
+  en: Live btop-style CPU/memory/temperature/GPU monitor tab for the DeepSeek Harness web GUI.

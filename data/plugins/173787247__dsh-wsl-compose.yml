@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-compose
+name: 173787247/dsh-wsl-compose
+category: wsl
+description:
+  en: 'Docker Compose ps/logs; up/down double-gated.'
+  zh: 'Docker Compose：ps/logs；up/down 需双重确认。'

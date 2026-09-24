@@ -1,0 +1,6 @@
+url: https://github.com/itchenshi/dsh-opencode-go-path
+name: itchenshi/dsh-opencode-go-path
+category: model
+description:
+  en: 'Declares the wire protocol for the opencode-go route so models the installed catalog does not describe resolve, adds the DeepSeek V4.1 models to that route when they are missing, and attaches a per-conversation x-opencode-session header to OpenCode requests.'
+  zh: '为 opencode-go 路由声明 wire 协议，使目录未收录的模型可以正常使用；该路由缺少 DeepSeek V4.1 模型时自动补上，并为发往 OpenCode 的请求附加按会话的 x-opencode-session 头。'

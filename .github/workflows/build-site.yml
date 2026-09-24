@@ -184,9 +184,13 @@ jobs:
             # latest release plus a short commit tail, probed here once a day
             # so no end-user market ever has to ask GitHub itself — anonymous
             # REST quota is shared per egress IP and already unreliable.
-            # data/updates.json is committed AND cached above (same shape as
-            # downloads), and absence of notes is a normal state downstream,
-            # so this probe never blocks the build.
+            # data/updates.json is cache-only above (NOT committed — unlike
+            # stars/downloads, there is no committed floor), and absence of
+            # notes is a normal state downstream, so this probe must never
+            # block the build. probe-updates.mjs now exits 0 (leaving the file
+            # untouched) on a cold-cache + all-fail run instead of exit(1),
+            # which previously stranded the updates cache in a permanent miss
+            # and failed every nightly.
             node scripts/probe-updates.mjs
           else
             echo "push build with cached probe data — skipping probes"

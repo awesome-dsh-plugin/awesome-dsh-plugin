@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-k8s
+name: 173787247/dsh-wsl-k8s
+category: wsl
+description:
+  en: Read-only kubectl get / describe / logs for dsh on WSL.
+  zh: kubectl 只读：get / describe / logs。
