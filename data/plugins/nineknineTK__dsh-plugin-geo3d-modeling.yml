@@ -2,5 +2,5 @@ url: https://github.com/nineknineTK/dsh-plugin-geo3d-modeling
 name: nineknineTK/dsh-plugin-geo3d-modeling
 category: skill
 description:
-  en: 'Geological 3D modeling and 3D seismic processing workflow skill: SEG-Y volume parsing, CGCS2000 coordinate unification, fault representative line and exploration boundary shapefile output, multi-mine 3D geology platform and leadership reporting.'
-  zh: '地质三维建模与三维地震资料处理全流程技能：SEG-Y 数据体解析、CGCS2000 坐标统一（带带号）、断层代表线与勘探范围 shp 输出、多矿区三维地质平台与领导汇报交付。'
+  en: 'Geological 3D modeling and 3D seismic processing workflow skill: SEG-Y volume parsing, CGCS2000 coordinate unification, fault representative line and exploration boundary shapefile output, and multi-mine 3D geology platform building.'
+  zh: '地质三维建模与三维地震资料处理全流程技能：SEG-Y 数据体解析、CGCS2000 坐标统一（带带号）、断层代表线与勘探范围 shp 输出、多矿区三维地质平台建设。'
