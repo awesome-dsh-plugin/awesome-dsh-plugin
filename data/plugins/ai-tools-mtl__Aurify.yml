@@ -1,0 +1,6 @@
+url: https://github.com/ai-tools-mtl/Aurify
+name: ai-tools-mtl/Aurify
+category: tools
+description:
+  en: Patent-writing gatekeeper for dsh - screens the idea against Chinese prior art first, then runs five-party alignment interviews, eight-chapter disclosure drafting, figures and simulation runs, deterministic review and docx/PDF export.
+  zh: dsh 专利撰写把关人：动笔前先检索中国专利给出三档结论，再走五方对齐访谈、八章交底书、附图与仿真实验、七维审查与 docx/PDF 导出全流程。
