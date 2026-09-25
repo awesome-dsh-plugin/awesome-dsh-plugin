@@ -2,5 +2,5 @@ url: https://github.com/hbgdjb/dsh-mimo-quota
 name: hbgdjb/dsh-mimo-quota
 category: usage
 description:
-  en: Realtime model usage panel for DeepSeek Harness: tokens, cost, requests, trend and composition, with per-session and per-project drill-down and editable tiered pricing.
-  zh: DeepSeek Harness 实时用量面板：Token 统计、费用、请求数、趋势与构成，支持按会话/项目下钻与可编辑的分时段定价。
+  en: Model usage panel for DeepSeek Harness: automatic per-call accounting from session logs with real timestamps, full history and live increments, showing tokens, cost, requests, trend and model composition with per-model, per-project and per-session views and editable tiered pricing.
+  zh: MIMO Quota Panel —— DeepSeek Harness 的模型额度面板。装上即用，零配置：从会话事件日志逐调用自动记账（真实时间戳、全历史、实时增量），一屏展示 Token 用量、消费金额、请求次数、趋势波形、模型构成，支持按模型 / 粒度 / 时间范围 / 项目·对话 统计切换。内置可编辑定价，DeepSeek 峰谷价按记录时间自动套算，小米全系牌价开箱即用。
