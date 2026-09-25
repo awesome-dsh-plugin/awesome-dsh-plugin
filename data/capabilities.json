@@ -9643,18 +9643,6 @@
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/dingminhua/dsh-sub-cli/tree/main/plugin": {
-  "version": "0.1.2",
-  "spec": "github:dingminhua/dsh-sub-cli",
-  "capabilities": [
-   "shell",
-   "credentials",
-   "subagent"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/dingminhua/dsh-subagent-default-model/tree/main/plugin": {
   "version": "1.3.0",
   "spec": "github:dingminhua/dsh-subagent-default-model",
