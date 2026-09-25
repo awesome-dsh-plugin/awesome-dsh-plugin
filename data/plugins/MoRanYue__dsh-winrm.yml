@@ -1,0 +1,6 @@
+url: https://github.com/MoRanYue/dsh-winrm
+name: MoRanYue/dsh-winrm
+category: remote
+description:
+  en: 'Node.js fork of andyfan1094/dsh-winrm: the same WinRM host panel and seven agent tools, with the backend ported from Python/pywinrm to a native Node WinRM client so the machine running dsh needs no Python.'
+  zh: 'andyfan1094/dsh-winrm 的 Node.js 分支：同样的 WinRM 主机面板与七个 agent 工具，后端从 Python/pywinrm 移植到原生 Node WinRM 客户端，运行 dsh 的机器不再需要 Python。'
