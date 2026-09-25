@@ -1,0 +1,7 @@
+url: https://github.com/toddpan/dsh-webapi
+name: toddpan/dsh-webapi
+category: remote
+tarball: https://github.com/toddpan/dsh-webapi/releases/latest/download/dsh-web-service.tgz
+description:
+  en: 'Exposes DSH over HTTP: 47 routes (REST + SSE) covering workspaces, sessions (create/prompt, SSE streaming, history, stats, todos, cancel, ask-user Q&A), models and the global default model, providers, agent presets, settings namespaces, skills, and workspace files including resumable chunked upload — plus an OpenAI-compatible /chat/completions and a built-in OpenAPI 3.0 spec with a request page.'
+  zh: '把 DSH 暴露成 HTTP 服务：47 条路由（REST + SSE），覆盖工作区、会话（创建/提示、SSE 流式、历史、统计、任务清单、中止、问答）、模型与全局默认模型、提供方、Agent Preset、设置命名空间、技能与工作区文件（含分片续传上传），另有 OpenAI 兼容的 /chat/completions 与内置 OpenAPI 3.0 规范及调试页。'
