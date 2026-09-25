@@ -4,3 +4,4 @@ category: ui
 description:
   en: Restores the blue shimmering Deep diving turn status row that DSH 0.1.6 and earlier showed at the end of the transcript.
   zh: 恢复 DSH 0.1.6 及以前在对话流末尾显示的蓝色流光深度求索中回合状态行.
+tarball: https://github.com/azazo1/dsh-deep-diving-back/releases/latest/download/dsh-deep-diving-back.tgz
