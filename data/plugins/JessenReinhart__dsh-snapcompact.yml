@@ -1,0 +1,5 @@
+url: https://github.com/JessenReinhart/dsh-snapcompact
+name: JessenReinhart/dsh-snapcompact
+category: session
+description:
+  en: 'Bitmap-frame context compression plugin for DeepSeek Harness: renders discarded conversation history into pixel-font PNG frames for vision-capable models.'

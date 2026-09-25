@@ -206,6 +206,14 @@ jobs:
           # asked. Neither probe blocks the build: a dead URL is dropped from
           # the published data, not turned into a failure.
           node scripts/probe-screenshots.mjs
+          # Capability disclosure (#401): what each plugin touches — files,
+          # network, shell, credentials — scanned from the artifact a user
+          # would install. Runs every time, like the two probes above: it is
+          # incremental by RELEASE (a new npm version invalidates that entry's
+          # record) and by AGE for branch-sourced entries, so a normal push
+          # re-scans a handful. The scanner is pinned inside the script; it
+          # executes nothing from the scanned package and opens no sockets.
+          node scripts/probe-capabilities.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:

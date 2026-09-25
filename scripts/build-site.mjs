@@ -17,6 +17,7 @@ import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
+import { slugOf, termOf } from './lib/terms.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -177,6 +178,9 @@ const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('
 // already refuses to WRITE the file on a bad run, so whatever is on disk is
 // the last known-good result, or nothing yet.
 const downloadsMap = fs.existsSync('data/downloads.json') ? JSON.parse(fs.readFileSync('data/downloads.json', 'utf8')) : {}
+// Capability disclosure (#401), from probe-capabilities.mjs. An entry absent
+// here was NOT scanned — the surfaces print that as 未检出, never as clean.
+const capabilitiesMap = fs.existsSync('data/capabilities.json') ? JSON.parse(fs.readFileSync('data/capabilities.json', 'utf8')) : {}
 
 // Publishing is the last chance to notice that a data file arrived empty, and
 // the only one that matters to consumers: docs/ is deployed straight to Pages,
@@ -434,6 +438,9 @@ for (const e of ordered) {
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
   e.downloads = downloadsMap[e.url]?.downloads ?? null
+  e.capabilities = capabilitiesMap[e.url]?.capabilities ?? null
+  e.capabilityRedLines = capabilitiesMap[e.url]?.redLines ?? null
+  e.capabilityCheckedAt = capabilitiesMap[e.url]?.scannedAt ?? null
   // registry dist-tags.latest from probe-npm.mjs. null when not on npm, OR
   // when probed but no latest tag was available. A published row whose map
   // entry still lacks the `version` key has not been backfilled yet — after
@@ -442,7 +449,11 @@ for (const e of ordered) {
   // not as "github-only".
   // Surfaced for dsh-market's discover list (dsh-market#348).
   e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
-  e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
+  // The detail-page path, the sitemap entry and the comment term all read
+  // this one derivation (scripts/lib/terms.mjs): the term is the join key a
+  // plugin's discussion is filed under, and it has to match the path the
+  // pages are published at, character for character.
+  e.slug = slugOf(e.url)
 }
 
 const hreflangs = [
@@ -842,7 +853,7 @@ for (const loc of LOCALES) {
       repoId: COMMENTS.repoId,
       category: COMMENTS.category,
       categoryId: COMMENTS.categoryId,
-      term: `plugin:${e.slug.toLowerCase()}`,
+      term: termOf(e.slug),
       lang: loc.giscusLang,
     } : null
     const commentsSection = commentsConfig ? `<section class="panel comments" aria-labelledby="${commentsId}-title">
@@ -1029,6 +1040,14 @@ const registry = {
       downloadsStart: downloadsMap[e.url]?.start ?? null,
       downloadsEnd: downloadsMap[e.url]?.end ?? null,
       downloadsCheckedAt: downloadsMap[e.url]?.checkedAt ?? null,
+      // Capability disclosure (#401). Omitted entirely when the entry was not
+      // scanned, so a consumer cannot read "absent" as "empty" — the market
+      // renders a missing pair as 未检出 / not checked.
+      ...(capabilitiesMap[e.url] === undefined ? {} : {
+        capabilities: capabilitiesMap[e.url].capabilities,
+        capabilityRedLines: capabilitiesMap[e.url].redLines,
+        capabilityCheckedAt: capabilitiesMap[e.url].scannedAt,
+      }),
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
       // Optional, author-maintained (data/screenshots.json); omitted when

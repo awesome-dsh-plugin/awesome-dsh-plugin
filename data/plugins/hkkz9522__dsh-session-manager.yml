@@ -2,5 +2,5 @@ url: https://github.com/hkkz9522/dsh-session-manager
 name: hkkz9522/dsh-session-manager
 category: session
 description:
-  en: 'DSH Web session manager: delete, archive, move across workspaces, migrate preset; favorites, review-later, search, sort, priority, add tags and notes (manual / semi-automated). Suggestions are welcome on GitHub.'
-  zh: 'DSH Web 会话管理：删除、归档、跨工作区移动、迁移预设；收藏、待看、搜索、排序、设置优先级、添加（手动/半自动）标签和备注。欢迎至 GitHub 提意见。'
+  en: 'DSH Web session manager: delete, archive, move across workspaces, migrate preset; favorites, review-later, search, sort, priority, add tags and notes; bulk processing. Suggestions and feedback are welcome on GitHub.'
+  zh: 'DSH Web 会话管理：删除、归档、跨工作区移动、迁移预设；收藏、待看、搜索、排序、设置优先级，添加标签和备注；批量处理。欢迎至 GitHub 提意见。'

@@ -120,7 +120,35 @@ jobs:
         # over generated lines; 218 of 296 open PRs were stuck that way, none
         # over anything a human had written.
         run: |
-          if git diff --quiet ${{ github.event.pull_request.base.sha }}...HEAD -- README.md README.zh.md; then
+          # Compare against the PR's HEAD, not HEAD-as-checked-out.
+          #
+          # For a pull_request event, actions/checkout leaves the working tree
+          # on refs/pull/N/merge — the base branch with the PR merged in. Using
+          # it here made this step answer a different question than the one it
+          # asks: as soon as main advanced past the PR's base, the merge tree's
+          # READMEs differed from base.sha's READMEs, so a pull request that
+          # changed nothing but its own yml was still classified as "modifies
+          # the READMEs" and then failed the strict check below — because the
+          # merge tree is *legitimately* inconsistent for that shape: its
+          # READMEs still lack the entry the new yml adds, and regenerating
+          # from the merge tree fixes them, which is exactly what the strict
+          # check reads as a failure.
+          #
+          # Measured on #5796, 2026-09-24: `git diff --quiet <base>...<merge>`
+          # exits 1, `git diff --quiet <base>...<head>` exits 0. The failure
+          # message then tells the author to run generate-readme.mjs and commit
+          # the result, which cannot fix it — the next main commit re-breaks it.
+          # 18 of 96 open pull requests were sitting on that red.
+          head_sha=${{ github.event.pull_request.head.sha }}
+          # The head commit is a parent of the merge commit and normally already
+          # present under fetch-depth: 0; fetch it explicitly rather than
+          # assume, and fail loudly if it still will not resolve — a check that
+          # cannot tell whether the PR touched the READMEs must not pass.
+          git rev-parse -q --verify "$head_sha^{commit}" >/dev/null 2>&1 \
+            || git fetch -q origin "refs/pull/${{ github.event.pull_request.number }}/head" \
+            || { echo "::error::could not resolve the pull request's head commit ($head_sha)"; exit 1; }
+
+          if git diff --quiet ${{ github.event.pull_request.base.sha }}...$head_sha -- README.md README.zh.md; then
             echo "PR does not touch the generated READMEs — regenerating locally for the checks below."
             node scripts/generate-readme.mjs
             exit 0
@@ -134,6 +162,16 @@ jobs:
         run: npx awesome-lint
       - name: Added-date regression tests
         run: node --test scripts/added-dates.test.mjs
+      - name: Capability-disclosure tests
+        # Pure rules only — no downloads, no scanner, no token: which artifact
+        # an entry is scanned from, when a record is stale, and which fields of
+        # a scanner response are kept (the ranking ones are deliberately not).
+        run: node --test scripts/capabilities.test.mjs
+      - name: Discussion-adoption tests
+        # Pure rules only, no token and no network: the shapes they encode were
+        # read off the live repository (a hand-made thread, a thread the
+        # catalog's lowercasing era filed under another case).
+        run: node --test scripts/adopt-discussions.test.mjs
       - name: Build (locale parity, date derivation, templates)
         # probes are skipped on purpose: the build tolerates missing probe
         # data, and this keeps the check token-free and fork-safe.

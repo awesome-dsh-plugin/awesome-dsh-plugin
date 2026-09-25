@@ -3,3 +3,4 @@ name: JoblessJoe/dsh-vitals
 category: ui
 description:
   en: Live btop-style CPU/memory/temperature/GPU monitor tab for the DeepSeek Harness web GUI.
+  zh: 'DeepSeek Harness Web GUI 的实时监控标签页，以 btop 风格展示 CPU／内存／温度／GPU。'
