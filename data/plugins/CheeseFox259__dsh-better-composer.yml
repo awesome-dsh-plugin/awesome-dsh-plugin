@@ -1,0 +1,6 @@
+url: https://github.com/CheeseFox259/dsh-better-composer
+name: CheeseFox259/dsh-better-composer
+category: ui
+description:
+  en: 'Markdown visual enhancement, local completions, paste chip references, and a live context map for DSH Web Composer.'
+  zh: '为 DSH Web Composer 提供 Markdown 实时视觉呈现、本地补全、超长粘贴转引用及会话上下文地图。'
