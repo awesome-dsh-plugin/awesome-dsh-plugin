@@ -4,4 +4,4 @@ category: model
 description:
   en: 'Multi-account Google Gemini provider: smart quota balancing, seamless 429 failover with exponential cooldown, background health probing and a bilingual settings UI.'
   zh: '多账号 Google Gemini 提供商：智能额度均衡、429 指数退避无感切换、后台探活与中英双语设置页。'
-tarball: https://github.com/qikairo7/dsh-gemini-pool/releases/download/v0.5.0/dsh-gemini-pool-0.5.0.tgz
+tarball: https://github.com/qikairo7/dsh-gemini-pool/releases/download/v0.5.2/dsh-gemini-pool-0.5.2.tgz
