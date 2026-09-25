@@ -1,0 +1,6 @@
+url: https://github.com/lifangjin/dsh-paoding
+name: lifangjin/dsh-paoding
+category: workflow
+description:
+  en: 'Orchestration-mode preset generator for DSH: a lead agent delegates to four role helpers that carry only their own tools, configured per workspace through a web panel, with zero changes to the harness source.'
+  zh: DSH 编排模式预设生成器：主 agent 指挥，四个专职帮手各只带本行工具按需加载，按工作区配置，Web 面板点选，零 DSH 源码改动。
