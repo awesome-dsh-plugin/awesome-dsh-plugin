@@ -1,0 +1,6 @@
+url: https://github.com/jianghu-lao-yao/sh-volume-knob
+name: jianghu-lao-yao/sh-volume-knob
+category: voice
+description:
+  en: Speaker button beside the composer microphone — one click scrolls to the start of your newest question, marks it with a blinking caret and reads from there through the newest agent reply (dsh-tts, browser voice as fallback); press-and-drag-right picks any other reading start position on the page, press-and-drag-up opens a vertical mixer for in-page media volume and system output volume.
+  zh: 输入框话筒旁的扬声器按钮——单击翻到「你最新提问的开头」并闪烁光标，从那里读到最新回复结尾（走 dsh-tts，回退浏览器语音）；按住右滑可在页面上挑选任意朗读起点，按住上滑调出竖式混音台，分别控制页内媒体音量与系统输出音量。
