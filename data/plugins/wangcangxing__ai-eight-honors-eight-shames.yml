@@ -1,5 +1,5 @@
-url: https://github.com/w2310670047-code/ai-eight-honors-eight-shames
-name: w2310670047-code/ai-eight-honors-eight-shames
+url: https://github.com/wangcangxing/ai-eight-honors-eight-shames
+name: wangcangxing/ai-eight-honors-eight-shames
 category: skill
 description:
   en: 'DSH plugin that registers the ai-eight-honors-eight-shames skill: eight checkable working rules for coding agents (verify before calling, confirm ambiguity, cite evidence, reuse before creating, test before claiming done, follow local conventions, separate fact from inference, keep changes reversible) plus a ninth rule that logs each user request and the change made in two fixed report files at the workspace root.'
