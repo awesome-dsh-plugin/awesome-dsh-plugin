@@ -1,0 +1,6 @@
+url: https://github.com/taikaikaikai-pixel/dsh-codebuddy-plugin
+name: taikaikaikai-pixel/dsh-codebuddy-plugin
+category: model
+description:
+  en: Unofficial upstream bundle for DeepSeek Harness. CodeBuddy gateway with a runtime-synced model catalogue, per-model reasoning efforts, web search/fetch, image generation and a streaming credential bridge, plus TraeWork CN and Qoder CN subscription channels via local translation gateways and a key-type OpenAI-compatible provider registry, all managed from an accordion settings card.
+  zh: DeepSeek Harness 的非官方上游插件包：CodeBuddy 网关（模型目录动态同步、逐模型思考强度、联网搜索/抓取、生图、流式凭据桥），TraeWork CN 与 Qoder CN 两条订阅额度通道（本地 OpenAI 翻译网关），以及 key 型 OpenAI 兼容上游注册表，全部收在四区块手风琴设置卡里。
