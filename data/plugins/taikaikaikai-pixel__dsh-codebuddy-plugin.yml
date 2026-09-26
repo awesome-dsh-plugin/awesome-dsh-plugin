@@ -1,5 +1,5 @@
 url: https://github.com/taikaikaikai-pixel/dsh-codebuddy-plugin
-name: taikaikaikai-pixel/dsh-codebuddy-plugin
+name: dsh-tap
 category: model
 description:
   en: Unofficial upstream bundle for DeepSeek Harness. CodeBuddy gateway with a runtime-synced model catalogue, per-model reasoning efforts, web search/fetch, image generation and a streaming credential bridge, plus TraeWork CN and Qoder CN subscription channels via local translation gateways and a key-type OpenAI-compatible provider registry, all managed from an accordion settings card.
