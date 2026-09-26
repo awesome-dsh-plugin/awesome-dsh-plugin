@@ -2,5 +2,5 @@ url: https://github.com/NamesMT/dsh-home-hosted
 name: NamesMT/dsh-home-hosted
 category: dev
 description:
-  en: "Runs the home-hosted control panel from the pinned copy it ships, installs or removes that panel's boot entry (systemd, launchd, XDG autostart, Windows Run key or Task Scheduler), and manages the panel's servers, boot entry and UI from a dsh settings page and six agent tools."
-  zh: "用随包固定版本的依赖运行 home-hosted 控制面板，安装或移除其开机自启项（systemd、launchd、XDG autostart、Windows 运行键或任务计划程序），并通过 dsh 设置页与 6 个 agent 工具管理其服务器、自启项与界面。"
+  en: "Starts your dsh web server at boot through home-hosted: runs that panel from the pinned copy it ships, installs or removes the panel's boot entry (systemd, launchd, XDG autostart, Windows Run key or Task Scheduler), and manages the panel's servers, boot entry and UI from a dsh settings page and six agent tools."
+  zh: "通过 home-hosted 让 dsh web 随开机自动启动：用随包固定版本的依赖运行该面板，安装或移除其开机自启项（systemd、launchd、XDG autostart、Windows 运行键或任务计划程序），并通过 dsh 设置页与 6 个 agent 工具管理其服务器、自启项与界面。"
