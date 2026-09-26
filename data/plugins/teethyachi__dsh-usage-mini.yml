@@ -1,0 +1,6 @@
+url: https://github.com/teethyachi/dsh-usage-mini
+name: teethyachi/dsh-usage-mini
+category: usage
+description:
+  en: Floating usage window for DSH Web showing Claude and Codex subscription windows with reset countdowns, plus DeepSeek API spend and balance; display-only companion to dsh-cost-meter.
+  zh: DSH Web 悬浮用量小窗，显示 Claude、Codex 订阅用量窗口与重置倒计时，以及 DeepSeek API 今日花费与余额；只展示，是 dsh-cost-meter 的伴侣。

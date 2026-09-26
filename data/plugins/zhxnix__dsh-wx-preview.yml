@@ -1,0 +1,7 @@
+url: https://github.com/zhxnix/dsh-wx-preview
+name: zhxnix/dsh-wx-preview
+category: dev
+description:
+  en: Preview native WeChat Mini Programs in the DSH sidebar with a local runtime and WXML source locations.
+  zh: 在 DSH 右边栏预览原生微信小程序，提供本地运行时与 WXML 源码定位。
+tarball: https://github.com/zhxnix/dsh-wx-preview/releases/latest/download/dsh-wx-preview.tgz

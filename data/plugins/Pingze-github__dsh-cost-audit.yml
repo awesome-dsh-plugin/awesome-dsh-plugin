@@ -1,0 +1,6 @@
+url: https://github.com/Pingze-github/dsh-cost-audit
+name: Pingze-github/dsh-cost-audit
+category: usage
+description:
+  en: Shows token and CNY cost per turn and per session in the harness's own statistics form, a whole-account bill over 1/7/30-day windows with cost-per-unit-of-work trends, and an advisor that re-measures its own suggestions after you adopt them.
+  zh: 以 harness 自己的统计形态显示每轮与会话的 token 与人民币花费，提供 1/7/30 天窗口的全账号账单与「单位工作量花费」趋势，并给出会在你采纳后重新测量效果的建议。

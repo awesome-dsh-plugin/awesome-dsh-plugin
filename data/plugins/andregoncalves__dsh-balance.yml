@@ -1,0 +1,6 @@
+url: https://github.com/andregoncalves/dsh-balance
+name: andregoncalves/dsh-balance
+category: usage
+description:
+  en: 'Provider-aware account balance chip for the DSH sidebar, showing the active model provider balance for DeepSeek, OpenRouter, Moonshot/Kimi, Zhipu/GLM, and MiniMax, plus DeepSeek peak/off-peak status.'
+  zh: 'DSH 侧边栏的账户余额胶囊，跟随当前模型的服务商显示余额，支持 DeepSeek、OpenRouter、Moonshot/Kimi、Zhipu/GLM 与 MiniMax，并显示 DeepSeek 高峰/空闲时段。'

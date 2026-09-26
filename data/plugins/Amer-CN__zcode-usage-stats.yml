@@ -1,0 +1,6 @@
+url: https://github.com/Amer-CN/zcode-usage-stats
+name: Amer-CN/zcode-usage-stats
+category: usage
+description:
+  en: 'Token usage statistics panel for DeepSeek Harness: usage trends, model breakdown and activity heatmap, hand-written SVG, zero chart libraries.'
+  zh: 'DeepSeek Harness 的 Token 用量统计面板：用量趋势、模型用量与活跃热力图，手写 SVG，零图表库依赖。'

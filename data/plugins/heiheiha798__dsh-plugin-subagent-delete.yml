@@ -1,0 +1,7 @@
+url: https://github.com/heiheiha798/dsh-plugin-subagent-delete
+name: heiheiha798/dsh-plugin-subagent-delete
+category: session
+tarball: https://github.com/heiheiha798/dsh-plugin-subagent-delete/releases/download/v0.2.0/dsh-plugin-subagent-delete-0.2.0.tgz
+description:
+  en: Ownership-checked tools and HTTP routes to list, release and permanently delete subagent sessions, with automatic web UI refresh after deletion.
+  zh: 带归属校验的工具与 HTTP 路由，用于列出、释放和永久删除子代理会话，删除后自动刷新 web UI。

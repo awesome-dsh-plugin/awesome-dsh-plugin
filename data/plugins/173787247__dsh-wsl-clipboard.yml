@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-clipboard
+name: 173787247/dsh-wsl-clipboard
+category: wsl
+description:
+  en: Reads and writes the Windows clipboard from WSL.
+  zh: 从 WSL 读写 Windows 剪贴板。

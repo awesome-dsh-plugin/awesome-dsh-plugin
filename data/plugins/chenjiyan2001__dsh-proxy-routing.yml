@@ -1,0 +1,6 @@
+url: https://github.com/chenjiyan2001/dsh-proxy-routing
+name: chenjiyan2001/dsh-proxy-routing
+category: tools
+description:
+  en: 'Per-execution HTTP/SOCKS5 proxy routing for Agent fetches, LLM providers, and shell commands, with settings-backed hot reload, approval-gated controls, and credential-safe status.'
+  zh: 按每次执行为 Agent fetch、LLM provider 与 shell 命令路由 HTTP/SOCKS5 代理；支持 settings 热更新、审批门禁和凭据安全状态。

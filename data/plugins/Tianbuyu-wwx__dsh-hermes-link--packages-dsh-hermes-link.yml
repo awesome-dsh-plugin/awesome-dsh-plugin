@@ -1,0 +1,6 @@
+url: https://github.com/Tianbuyu-wwx/dsh-hermes-link/tree/main/packages/dsh-hermes-link
+name: Tianbuyu-wwx/dsh-hermes-link#dsh-hermes-link
+category: dev
+description:
+  en: 'Bidirectional Hermes ↔ DSH bridge: import Hermes sessions into DSH, consult Hermes, and receive Hermes-dispatched tasks as a single Cordis plugin.'
+  zh: 'Hermes 与 DSH 的双向桥接插件：将 Hermes 会话导入 DSH、咨询 Hermes，并以单一 Cordis 插件接收 Hermes 下发的任务。'

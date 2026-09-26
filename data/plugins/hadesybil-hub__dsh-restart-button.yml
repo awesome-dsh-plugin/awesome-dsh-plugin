@@ -1,0 +1,6 @@
+url: https://github.com/hadesybil-hub/dsh-restart-button
+name: hadesybil-hub/dsh-restart-button
+category: ui
+description:
+  en: Adds a restart button next to the shutdown button in the bottom-right of the DSH Web GUI; the server comes back up and the browser reopens.
+  zh: 在 DSH 网页界面右下角"关机"按钮旁新增一个"重启"按钮，点击并确认后重启 dsh web，服务器自动拉起并重新打开浏览器。

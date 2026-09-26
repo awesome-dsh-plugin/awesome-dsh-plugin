@@ -2,5 +2,5 @@ url: https://github.com/Aik358/dsh-auto-memory
 name: Aik358/dsh-auto-memory
 category: memory
 description:
-  en: 'Cache-friendly three-layer memory for DSH: lean auto injection, per-turn AI consolidation, proactive calendar reminders and warm greetings, plus memory inheritance from other AI tools.'
-  zh: DSH 三层自动记忆引擎：缓存友好的精简注入与每轮 AI 自动沉淀，主动日历提醒与暖心问候，可继承其他 AI 工具的记忆。
+  en: 'Proactive associative memory for DSH: zero-prompt recall injected at a fixed boundary, three-layer auto-consolidation, skill crystallization, and Astra-style context management - handoff ledgers and a PLAN whiteboard that survive context-window switches, water-level sensing with an auto-detected model window. Local Markdown storage, model-agnostic, zero deps; lexical 0GB floor with optional semantic tiers.'
+  zh: 主动联想记忆 + Astra 式上下文管理：自动唤回（固定边界注入，前缀缓存友好）/自动沉淀/技能固化/交接账本与 PLAN 白板跨窗口续命/水位感知（窗口自动适配当前模型）。本地 Markdown 存储，模型无关，零依赖；词法 0GB 兜底，可选语义档。

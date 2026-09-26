@@ -1,0 +1,7 @@
+url: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck
+name: FeatherHunter/dsh-mattpocock-skills-deck
+category: skill
+description:
+  en: 'Installs with 25 engineering and productivity skills bundled (mattpocock/skills v1.2.3), no manual skill installation needed. Built with 30 billion tokens. This plugin delivers 10x development efficiency on top of the original skills. GitHub issues are the main supported backend; Markdown is a preview; GitLab is not supported yet.'
+  zh: '安装即自带mattpocock/skills v1.2.3的25个工程与效率技能，无需手动装技能。300亿token打造。本插件在原始技能之上提供10倍的开发效率。主力支持GitHub issue；Markdown为预览版；GitLab暂不支持。'
+tarball: https://github.com/FeatherHunter/dsh-mattpocock-skills-deck/releases/latest/download/dsh-mattpocock-skills-deck.tgz

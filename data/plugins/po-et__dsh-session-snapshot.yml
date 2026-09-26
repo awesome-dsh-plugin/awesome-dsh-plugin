@@ -1,0 +1,6 @@
+url: https://github.com/po-et/dsh-session-snapshot
+name: po-et/dsh-session-snapshot
+category: session
+description:
+  en: 'Rolling, integrity-verified backups of each session at turn boundaries: verifies the log still loads before promoting a snapshot, never overwrites the last good one when a turn ends corrupt, and restores in one command even when dsh will not boot.'
+  zh: 在每个回合边界为会话滚动保留校验过的备份：提升快照前先确认日志仍可加载，回合结束时若已损坏则绝不覆盖上一份好副本，dsh 启动不了时也能一条命令恢复。

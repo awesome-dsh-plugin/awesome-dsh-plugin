@@ -1,0 +1,6 @@
+url: https://github.com/qq928820655/changmodel
+name: changmodel
+category: model
+description:
+  zh: "模型切换、模型能力配置、固定摘要模型、子 agent 角色路由与输入历史增强。"
+  en: "Model switching, model capability configuration, fixed compaction models, subagent routing, and input history enhancement."

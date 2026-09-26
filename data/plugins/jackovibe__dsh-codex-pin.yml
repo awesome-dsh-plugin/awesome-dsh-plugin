@@ -1,0 +1,7 @@
+url: https://github.com/jackovibe/dsh-codex-pin
+name: jackovibe/dsh-codex-pin
+category: session
+tarball: https://github.com/jackovibe/dsh-codex-pin/releases/download/v0.2.6/dsh-codex-pin-0.2.6.tgz
+description:
+  en: 'Pins sessions into a single Pinned section above every workspace group in the Web sidebar without touching the stored session order — the pin is a flag kept in the host settings document, and a right-click row menu adds rename, pin, fork, archive, delete and copy title or session id, with labels that follow the GUI language.'
+  zh: '把已置顶会话集中到 Web 侧边栏所有工作区分组之上的「已置顶」分区，且不改动存储的会话顺序——置顶是宿主 settings 文档里的一个标记；右键行菜单提供重命名、置顶、分叉、归档、删除、复制标题与会话 ID，文案跟随界面语言。'

@@ -1,0 +1,6 @@
+url: https://github.com/EIGHTfs/dsh-git-push
+name: EIGHTfs/dsh-git-push
+category: git
+description:
+  en: Git commit-and-push automation for DSH with pre-push auditing, rule-based quality scoring, SSH key generation, and a three-tab settings sidebar.
+  zh: DSH 的 git 提交推送自动化：提交前审计、规则质量评分、SSH 密钥生成与三选项卡设置侧边栏。

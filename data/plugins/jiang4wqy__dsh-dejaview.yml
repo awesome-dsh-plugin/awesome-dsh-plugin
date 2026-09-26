@@ -1,0 +1,6 @@
+url: https://github.com/jiang4wqy/dsh-dejaview
+name: jiang4wqy/dsh-dejaview
+category: market
+description:
+  en: Checks whether a similar dsh plugin already exists before you build one, searching the awesome-dsh-plugin registry and the dsh-plugin GitHub topic and returning ranked matches with evidence.
+  zh: 在动手写 dsh 插件前，检索 awesome-dsh-plugin 注册表与 dsh-plugin GitHub topic，判断是否已有相似插件，并返回带证据的排序结果。

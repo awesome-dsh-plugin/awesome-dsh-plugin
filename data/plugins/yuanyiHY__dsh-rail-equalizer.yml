@@ -1,0 +1,6 @@
+url: https://github.com/yuanyiHY/dsh-rail-equalizer
+name: yuanyiHY/dsh-rail-equalizer
+category: ui
+description:
+  en: 'System-audio visualizer for the turn navigator rail: the rail reacts in real time to whatever the default playback device is rendering, with four motion modes (spectrum, pulse, sway, travelling wave), a 16-band logarithmic spectrum from a 2048-point FFT on the host, and live sensitivity, strength, bass-punch and wave-speed controls. Audio is captured host-side through WASAPI loopback, so there is no permission prompt, no microphone and no screen capture. The browser half adds one attribute, one stylesheet, some CSS variables and a sidebar control row, and never patches the official component; switching it off removes the attribute, the stylesheet and the variables, returning the rail to its default styling. Windows only.'
+  zh: '轮次导航导轨的系统声音可视化：导轨实时跟随默认播放设备正在渲染的声音律动，提供频谱 / 脉动 / 摆动 / 行波四种运动方式，宿主端用 2048 点 FFT 切出 16 段对数频谱，灵敏度、强度、低频冲击与波速均可实时调节。音频走宿主端 WASAPI 回环采集，因此没有授权弹窗、不用麦克风、不录屏。浏览器半只添加一个属性、一张样式表、若干 CSS 变量和侧栏一行控件，绝不 patch 官方组件；关闭时移除属性、样式表与变量，导轨完全恢复默认样式。仅 Windows。'

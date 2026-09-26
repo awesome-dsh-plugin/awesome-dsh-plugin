@@ -1,0 +1,6 @@
+url: https://github.com/L3n3L/dsh-resume
+name: L3n3L/dsh-resume
+category: workflow
+description:
+  en: AI can write resume text, but templates may still look wrong, pages may overflow, whitespace may remain, and small edits can destabilize the layout. dsh-resume provides an end-to-end DSH workflow for truthful content refinement, template selection, A4 layout tuning, visual review, and tailored resume versions for different job-search scenarios.
+  zh: AI 写简历容易，但写完常会遇到模板不合适、排版溢出、页面留白过多，以及改一处导致全局变形等问题。dsh-resume 专注解决手动修改简历繁琐、低效的问题，让 DSH 覆盖从内容撰写、模板选择到排版调优的完整简历工作流，并支持针对不同求职场景产出合适的简历版本。

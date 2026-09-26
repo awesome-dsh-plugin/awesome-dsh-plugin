@@ -1,0 +1,6 @@
+url: https://github.com/yunxiyang/dsh-loop-continue
+name: yunxiyang/dsh-loop-continue
+category: agi
+description:
+  en: 'Resumes an agent turn that ended after narrating its next action without calling a tool: the guard replays the turn log on agent/turn-stopping, asks a judge model one true/false question, and steers the same turn to run one more step.'
+  zh: '续跑「叙述了下一步动作却没调用工具」就结束的 agent 轮次：插件在 agent/turn-stopping 回放该轮日志，让裁判模型回答一次 true/false，命中的话把同一轮再推进一步。'

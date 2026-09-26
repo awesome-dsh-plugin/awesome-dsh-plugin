@@ -1,0 +1,6 @@
+url: https://github.com/tuogusa/dsh-word-complete
+name: tuogusa/dsh-word-complete
+category: ui
+description:
+  en: 'Word auto-completion in the Web composer: prefix-matched suggestions sorted by closeness, arrow-key selection and Enter to confirm.'
+  zh: 输入框词自动补全：按前缀匹配与接近程度排序弹出当前会话词建议，↑/↓ 选择、回车确认。

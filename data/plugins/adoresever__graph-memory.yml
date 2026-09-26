@@ -1,0 +1,6 @@
+url: https://github.com/adoresever/graph-memory
+name: adoresever/graph-memory
+category: memory
+description:
+  en: Traceable, searchable cross-session memory for DeepSeek Harness — conversation knowledge as typed graph nodes (TASK/SKILL/EVENT) and typed edges.
+  zh: DeepSeek Harness 的可追溯、可检索跨会话记忆：把对话知识沉淀为带类型的图节点（任务/技能/事件）与关系边。

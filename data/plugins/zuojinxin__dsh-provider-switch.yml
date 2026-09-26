@@ -1,0 +1,6 @@
+url: https://github.com/zuojinxin/dsh-provider-switch
+name: zuojinxin/dsh-provider-switch
+category: model
+description:
+  en: Enable or disable model providers, search models in the selector, and rename provider display names.
+  zh: 供应商启停开关、模型选择器关键字搜索、供应商显示名内联重命名。

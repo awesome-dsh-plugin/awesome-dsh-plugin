@@ -1,0 +1,6 @@
+url: https://github.com/anze225-max/dsh-mimo-connect
+name: anze225-max/dsh-mimo-connect
+category: model
+description:
+  en: Brings the models included in the Xiaomi MiMo desktop app (free during beta) into DeepSeek Harness, with zero configuration in the DSH conversation window.
+  zh: 将 mimo桌面端包含的模型（内测有免费额度）自动接入 DeepSeek Harness，在 DSH 对话窗口里零配置使用。

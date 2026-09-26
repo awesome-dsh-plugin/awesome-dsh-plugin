@@ -1,0 +1,6 @@
+url: https://github.com/woosh2010/dsh-usage-dashboard
+name: woosh2010/dsh-usage-dashboard
+category: usage
+description:
+  en: 'DeepSeek Harness usage analytics dock on the composer: Beijing-time peak/valley pricing with all-day weekend valley rate, live balance, cross-session history, by-date drill-down and charts.'
+  zh: 'DSH 用量分析坞：输入框峰谷计费坞（周末全天谷时）、实时余额、跨会话历史、按日期下钻与图表。'

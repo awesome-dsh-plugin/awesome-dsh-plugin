@@ -1,0 +1,6 @@
+url: https://github.com/accpowered/dsh-auto-review
+name: accpowered/dsh-auto-review
+category: security
+description:
+  en: 'LLM approval answerer for sandbox escalations beyond workspace-write: a deterministic regex filter first, then a clean-context reviewer model; humans are asked only when it is unsure. Requires the bundled core patches.'
+  zh: '沙箱越权审批的 LLM 应答器：先过确定性正则过滤，再交给干净上下文的审核模型；拿不准才转人工。需要随附的核心补丁。'

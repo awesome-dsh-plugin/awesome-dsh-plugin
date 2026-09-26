@@ -1,0 +1,6 @@
+url: https://github.com/nightosong/gord-dsh-worktree
+name: nightosong/gord-dsh-worktree
+category: git
+description:
+  en: 'Git worktrees for DeepSeek Harness: five agent tools, a New Session picker that starts a session inside one, a sidebar tab for the uncommitted diff, a panel that unarchives or deletes archived sessions, and double-click rename. Removal refuses uncommitted or untracked changes and never removes the main worktree.'
+  zh: '为 DeepSeek Harness 管理 git worktree：五个 agent 工具、在新会话行直接开一个工作树会话的选择器、查看未提交 diff 的侧栏标签页、取消归档或删除归档会话的面板，以及双击重命名。删除时拒绝未提交或未跟踪改动，主工作树永不删除。'

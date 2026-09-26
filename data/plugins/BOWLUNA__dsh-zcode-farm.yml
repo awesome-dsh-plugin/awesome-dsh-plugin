@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-zcode-farm
+name: BOWLUNA/dsh-zcode-farm
+category: tools
+description:
+  en: 'Multi-instance ComfyUI orchestration: probes every configured ComfyUI endpoint for its GPU, free VRAM and queue depth, then dispatches a generation job to the idlest eligible instance. Ships three tools (comfyui_farm_status, comfyui_farm_pick, comfyui_farm_run). An instance is eligible only if it is reachable, has at least the requested free VRAM, and its queue is no deeper than the configured ceiling; eligible instances are ranked by free VRAM minus queue depth times a weight, so an idle shallow queue wins over a busy large one. Zero runtime dependencies. Optional retry on probe failure, because a single timeout across an SSH tunnel is not proof that an instance is down.'
+  zh: '多实例 ComfyUI 编排：探测每个已配置 ComfyUI 端点的 GPU、空闲显存与队列深度，再把生成任务派给最空闲且满足条件的实例。提供三个工具（comfyui_farm_status、comfyui_farm_pick、comfyui_farm_run）。一个实例只有在可达、空闲显存不低于要求、且队列不深于上限时才算候选；候选按「空闲显存 － 队列深 × 权重」排序，因此空闲的浅队列胜过忙碌的大显存。零运行时依赖。探测失败可选重试——跨 SSH 隧道的一次超时不足以证明实例已下线。'

@@ -1,0 +1,6 @@
+url: https://github.com/yushenghai1106/dsh-memory-plugin
+name: yushenghai1106/dsh-memory-plugin
+category: memory
+description:
+  zh: 为 DeepSeek Harness 提供人工记忆、自动对话保留以及图谱和向量排序召回的持久记忆插件。
+  en: Persistent memory for DeepSeek Harness with curated facts, automatic turn retention, and graph- and vector-ranked recall.

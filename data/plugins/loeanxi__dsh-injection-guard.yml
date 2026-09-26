@@ -1,0 +1,6 @@
+url: https://github.com/loeanxi/dsh-injection-guard
+name: loeanxi/dsh-injection-guard
+category: dev
+description:
+  en: 'Source-aware prompt injection guard for DSH: tracks untrusted turn context, detects injection signals, scores sensitive sinks, and blocks high-risk tool calls with explainable audit logs.'
+  zh: '面向 DSH 的来源感知提示词注入防护：跟踪 Turn 中的不可信上下文，检测注入信号，评估敏感 Sink，并通过可解释审计日志阻断高风险工具调用。'

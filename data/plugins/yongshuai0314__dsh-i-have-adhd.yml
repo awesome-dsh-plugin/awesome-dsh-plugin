@@ -1,0 +1,6 @@
+url: https://github.com/yongshuai0314/dsh-i-have-adhd
+name: yongshuai0314/dsh-i-have-adhd
+category: skill
+description:
+  en: 'Always-on ADHD-friendly output shaping: one system-prompt section makes replies action-first with numbered steps and concrete time estimates; adhd_on / adhd_off / adhd_status tools persist the mode across restarts.'
+  zh: '常驻的 ADHD 友好输出塑形：一个系统提示词区段让回复行动先行、步骤编号、时间估算具体；adhd_on / adhd_off / adhd_status 三个工具让模式跨重启保持。'

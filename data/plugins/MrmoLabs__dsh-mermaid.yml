@@ -1,0 +1,6 @@
+url: https://github.com/MrmoLabs/dsh-mermaid
+name: MrmoLabs/dsh-mermaid
+category: docs
+description:
+  en: Render Mermaid code fences as SVG diagrams with streaming support, diagram/code switching, fullscreen zoom and pan, SVG export, and a bundled same-origin runtime.
+  zh: 将 Mermaid 代码围栏渲染为 SVG 图表，支持流式输出、图形/代码切换、全屏缩放与拖拽、SVG 导出，以及内置的同源运行时。

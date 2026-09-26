@@ -1,0 +1,6 @@
+url: https://github.com/wjf1/dsh-commandcode
+name: wjf1/dsh-commandcode
+category: model
+description:
+  en: 'Command Code LLM provider plugin adapted for DSH-Desktop 0.7.1: registers a commandcode route, with a live model catalog, reasoning-effort support, and real-time plan usage display.'
+  zh: 'Command Code 模型接入插件，适配 DSH-Desktop 0.7.1，注册 commandcode 路由，带实时模型目录与推理强度支持，实时查看套餐用量。'

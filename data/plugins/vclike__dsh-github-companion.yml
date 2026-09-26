@@ -1,0 +1,6 @@
+url: https://github.com/vclike/dsh-github-companion
+name: vclike/dsh-github-companion
+category: git
+description:
+  en: '33 github_* tools covering REST reads, issue writes, Git data writes, private repo creation, and clone; in-process permission gate and cost-discipline companion skill; no gh CLI required.'
+  zh: '33 个 github_* 工具，覆盖 REST 读取、Issue 写入、Git 数据写入、私有仓库创建与克隆；附带进程内权限门与成本纪律伴生 skill，无需 gh CLI。'

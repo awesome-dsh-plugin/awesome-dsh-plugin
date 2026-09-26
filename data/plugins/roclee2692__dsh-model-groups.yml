@@ -1,0 +1,6 @@
+url: https://github.com/roclee2692/dsh-model-groups
+name: roclee2692/dsh-model-groups
+category: model
+description:
+  en: 'Grouped provider and manufacturer model selector for DeepSeek Harness, preserving provider/model routes and reasoning levels.'
+  zh: 'DeepSeek Harness 的平台与厂家折叠模型选择器，保留 provider/model 路由与思考等级。'

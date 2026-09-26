@@ -1,0 +1,6 @@
+url: https://github.com/lcthe/dsh-usage-monitor
+name: lcthe/dsh-usage-monitor
+category: usage
+description:
+  en: 'DSH Usage Monitor: auto-query provider credit balances and time-window limits from configured API keys, with input capsule and custom provider support.'
+  zh: 'DSH 用量监控：自动查询已配置 API Key 的供应商余额和时间窗口限制，支持输入框余量胶囊和自定义供应商。'

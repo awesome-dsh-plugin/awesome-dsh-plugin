@@ -1,0 +1,6 @@
+url: https://github.com/nguyenduclong-ict/dsh-session-progress
+name: nguyenduclong-ict/dsh-session-progress
+category: session
+description:
+  en: 'Session progress tracker: system prompt injection, live % calculation, and a slide-over drawer.'
+  zh: '会话任务进度跟踪：系统提示词注入、实时百分比计算与侧边抽屉面板。'

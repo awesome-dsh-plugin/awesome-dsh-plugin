@@ -1,0 +1,6 @@
+url: https://github.com/troytse/dsh-plugin-codegraph-project
+name: troytse/dsh-plugin-codegraph-project
+category: tools
+description:
+  en: "A CodeGraph tool scoped to the session's own indexed project, resolved from its workspace directory. One MCP server is launched through npx per project root and shared by every session working there; a project indexed mid-session is enabled without a restart, and the managed child process is reaped when the harness exits."
+  zh: "按会话自身的已索引项目提供 CodeGraph 工具，项目由 workspace 目录解析得出。每个项目根经 npx 启动一个 MCP 服务并被该项目下所有会话共享；会话中途建好索引即自动启用，无需重启；harness 退出时受管子进程被回收。"

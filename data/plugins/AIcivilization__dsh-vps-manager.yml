@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-vps-manager
+name: AIcivilization/dsh-vps-manager
+category: remote
+description:
+  en: 'Manage VPS servers over SSH key login: 21 zero-token /vps- commands (status queries, recipe installs with a plan and /vps-yes confirmation, reboot that waits for the machine to come back), an in-conversation terminal (xterm.js over ssh -tt) for interactive programs, 5 agent tools with risk-tiered confirmation, file backup with automatic restore and a firewall/SSH safety net, 29 built-in recipes, and a settings page for adding machines.'
+  zh: '通过 SSH 密钥登录管理 VPS：21 条不走模型的 /vps- 命令（查看状态、按菜谱安装并先出计划再用 /vps-yes 确认、重启并等机器回来），对话里的终端（xterm.js + ssh -tt，可运行菜单脚本等交互程序），5 个按风险分级确认的 agent 工具，改文件自动备份与还原、改防火墙和 SSH 前设自动恢复，29 条内置菜谱，以及添加机器的设置页。'

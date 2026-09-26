@@ -1,0 +1,6 @@
+url: https://github.com/Lzh3070/dsh-file-review-tab
+name: Lzh3070/dsh-file-review-tab
+category: ui
+description:
+  en: 'Review agent file changes as a dsh-better-sidebar sidebar tab or chat turn-tail row — line-level diffs and undo.'
+  zh: '把 agent 的文件改动审查放进 dsh-better-sidebar 侧边栏 Tab 或对话尾部行，支持行级 diff 与撤销。'

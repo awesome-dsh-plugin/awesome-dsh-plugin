@@ -1,0 +1,7 @@
+url: https://github.com/sandbaseai/dsh-plugin-store
+name: sandbaseai/dsh-plugin-store
+category: market
+tarball: https://github.com/sandbaseai/dsh-plugin-store/releases/download/v0.1.0-preview.5/sandbaseai-dsh-plugin-store-0.1.0-preview.5.tgz
+description:
+  en: Adds a native Store section to DSH Settings for catalog search, tag filtering, sorting, installation, and installed-plugin management.
+  zh: 在 DSH 设置中加入原生插件商店，支持目录搜索、标签筛选、排序、安装与已安装插件管理。

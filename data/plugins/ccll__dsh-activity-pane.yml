@@ -1,0 +1,6 @@
+url: https://github.com/ccll/dsh-activity-pane
+name: ccll/dsh-activity-pane
+category: ui
+description:
+  en: 'Activity overview pane for the DSH web UI: running, awaiting-response and recent sessions with child agents, progress, model and reasoning level in one sidebar pane.'
+  zh: DSH Web 活动会话总览窗格：将运行中、等待响应与近期活跃的会话集中到一个侧边窗格，含子代理层级、进度、模型与推理级别。

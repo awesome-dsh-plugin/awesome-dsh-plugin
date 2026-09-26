@@ -28,28 +28,197 @@ jobs:
         # (#502 would have silently removed 32 entries). Fail when the PR
         # drops more than 2 existing entries; genuine removals are rare and
         # a maintainer can land them directly.
+        #
+        # Counts entry FILES, not README lines. It used to count README lines,
+        # which stops working the moment a PR is allowed to omit the generated
+        # READMEs — a stale fork carrying only data/plugins/ would have shown
+        # +0/-0 and sailed through the one guard written to catch it.
+        # data/plugins/ is also the better signal: one file per entry, and the
+        # deletion is unambiguous rather than inferred from a diff of prose.
         run: |
           git fetch -q origin ${{ github.event.pull_request.base.sha }}
-          removed=$(git diff ${{ github.event.pull_request.base.sha }}...HEAD -- README.md \
-            | grep -cE '^-- \[.+\]\(https://github\.com/' || true)
-          added=$(git diff ${{ github.event.pull_request.base.sha }}...HEAD -- README.md \
-            | grep -cE '^\+- \[.+\]\(https://github\.com/' || true)
-          echo "entry lines: +$added -$removed"
+          removed=$(git diff --name-status --diff-filter=D ${{ github.event.pull_request.base.sha }}...HEAD -- data/plugins \
+            | grep -c '\.yml$' || true)
+          added=$(git diff --name-status --diff-filter=A ${{ github.event.pull_request.base.sha }}...HEAD -- data/plugins \
+            | grep -c '\.yml$' || true)
+          echo "entry files: +$added -$removed"
           if [ "$removed" -gt 2 ] && [ "$removed" -gt "$added" ]; then
-            echo "::error::This PR removes $removed existing entries — the fork looks stale. Sync it with upstream main (GitHub: 'Sync fork') and re-push; a single plugin submission should be +2/-0."
+            echo "::error::This PR deletes $removed existing entry files under data/plugins/ — the fork looks stale. Sync it with upstream main (GitHub: 'Sync fork') and re-push; a single plugin submission should be +1/-0."
+            exit 1
+          fi
+      - name: Every entry file ends in .yml
+        # readEntries() only reads *.yml, so a file that loses its extension is
+        # skipped in silence — and every other check still passes, because the
+        # regenerated READMEs omit the entry too and stay self-consistent. The
+        # stale-fork guard above misses it as well: renaming one entry away is
+        # -1/+1, under its "more than 2 removed" threshold.
+        #
+        # This is not hypothetical. #2495 fixed exactly this for
+        # zmm863-commits__dsh-paperclip, and days later #2140 — an unrelated
+        # submission based on a pre-#2495 main — carried the extensionless name
+        # back in and would have dropped that entry again on merge.
+        run: |
+          stray=$(find data/plugins -type f ! -name '*.yml' -print)
+          if [ -n "$stray" ]; then
+            echo "$stray" | sed 's/^/  /'
+            echo "::error::Files under data/plugins/ must end in .yml — anything else is silently skipped by readEntries() and drops the entry from the list without failing any other check."
+            exit 1
+          fi
+      - name: Entry files live in data/plugins/
+        # The mirror of the check above, and the same silent-skip failure seen
+        # from the other side: readEntries() globs data/plugins/*.yml, so a
+        # submission that lands its yml one directory up — data/<owner>__<repo>.yml
+        # — is never read. Every other check still passes for the same reason
+        # the extensionless case passed: the regenerated READMEs omit the entry
+        # too, so the tree is self-consistent and `--check` is happy. Merging it
+        # is a no-op that looks like a successful submission to everyone
+        # involved, including the contributor.
+        #
+        # #3914 did exactly this and went fully green. Found by hand while
+        # reviewing the merge queue, which is not a control.
+        #
+        # Scoped to files this PR adds: data/ legitimately holds non-entry
+        # files (npm-map.json, tarballs.json, screenshots.json, readmes.json),
+        # and a repo-wide find would fail on the first *.yml anyone ever parks
+        # there for another purpose.
+        run: |
+          git fetch -q origin ${{ github.event.pull_request.base.sha }}
+          # Two shapes of "not where readEntries() looks", and the second was
+          # missed for two weeks. `^data/[^/]+\.yml$` catches one directory too
+          # SHALLOW (data/<owner>__<repo>.yml) but not one too DEEP: #3622
+          # landed data/plugins/data/plugins/<name>.yml and went fully green,
+          # its plugin absent from the list, the site and the market while its
+          # author had every reason to think it was published. readEntries()
+          # globs exactly data/plugins/*.yml, so anything at any other depth is
+          # equally invisible — match on that instead of on one wrong shape.
+          #
+          # The file was also invalid YAML, which nothing reported either:
+          # never being read means never being parsed. Two faults covering for
+          # each other is the shape to watch for here.
+          misplaced=$(git diff --name-only --diff-filter=A ${{ github.event.pull_request.base.sha }}...HEAD -- data \
+            | grep -E '\.yml$' | grep -vE '^data/plugins/[^/]+\.yml$' || true)
+          if [ -n "$misplaced" ]; then
+            echo "$misplaced" | sed 's/^/  /'
+            echo "::error::Entry files must be added as data/plugins/<owner>__<repo>.yml — exactly one level deep. readEntries() globs data/plugins/*.yml and is not recursive, so a file at any other path is never read: the READMEs regenerate without it, every other check passes, and merging the PR lists nothing. Move it with: git mv <file> data/plugins/<owner>__<repo>.yml"
+            exit 1
+          fi
+      - name: A generated README row that lists nothing is not a submission
+        # The yml is the submission; README.md and README.zh.md are generated
+        # from data/plugins on main after the merge. So a pull request that
+        # changes a generated plugin row and touches no entry file cannot list
+        # anything — and it is not harmless, because everything else passes:
+        #
+        #   #5845 (2026-09-25) was opened as "Add heiheiha798/dsh-plugin-response-window".
+        #   That repository had been listed since 2026-08-27 (#3168), so its yml
+        #   added nothing; and the branch was cut from a main whose entry already
+        #   carried a zh translation the READMEs had not picked up yet, so the
+        #   only diff was a regeneration `main` produced by itself seconds later.
+        #   It went green. Merging it would have told its author their plugin was
+        #   listed while the pull request changed nothing at all.
+        #
+        #   The other shape is the one a first-time contributor hits: the yml was
+        #   written but never staged — `git commit -a` records modifications and
+        #   deletions, not new files — so the commit carries only a regeneration,
+        #   and the submission silently is not one.
+        #
+        # Scoped to lines that are actually plugin rows — `- [ … ](https://github.com/…)`
+        # — so a pull request that edits the hand-written region of the READMEs
+        # (the intro, the sponsor slot) is not caught here: only the generated
+        # section is machine-owned, and only it is evidence that someone meant to
+        # list a plugin.
+        #
+        # The head commit, not the checked-out merge ref: the merge tree is
+        # main + this PR, so a three-dot diff against it would report every entry
+        # main merged since the PR's base as if this PR had changed it.
+        run: |
+          head_sha=${{ github.event.pull_request.head.sha }}
+          git rev-parse -q --verify "$head_sha^{commit}" >/dev/null 2>&1 \
+            || git fetch -q origin "refs/pull/${{ github.event.pull_request.number }}/head" \
+            || { echo "::error::could not resolve the pull request's head commit ($head_sha)"; exit 1; }
+
+          # An entry file changed somewhere: this is a submission, or an edit to
+          # a listed one. Nothing to say.
+          if ! git diff --quiet ${{ github.event.pull_request.base.sha }}...$head_sha -- data/plugins; then
+            exit 0
+          fi
+
+          rows=$(git diff -U0 ${{ github.event.pull_request.base.sha }}...$head_sha -- README.md README.zh.md \
+            | grep -cE '^[+-]- \[[^]]+\]\(https://github\.com/' || true)
+          echo "plugin rows added or removed in the generated READMEs: $rows"
+          if [ "$rows" -gt 0 ]; then
+            echo "::error::This pull request changes a plugin row in the generated READMEs but adds or changes no file under data/plugins/, so merging it would list nothing. Two causes, both fixable: (1) the entry file never made it into the commit — if you created data/plugins/<owner>__<repo>.yml and used 'git commit -a', that new file was untracked and left behind, so run 'git add data/plugins/<owner>__<repo>.yml' and commit again; (2) the plugin is already listed, and what you are seeing is a README that lags its own data — that resolves itself on main and needs nothing from you. The READMEs are regenerated on main after merge: a pull request that only edits them cannot add an entry."
             exit 1
           fi
       - name: READMEs match data/plugins
-        # The READMEs are generated from data/plugins/*.yml. Editing them by
-        # hand would drift from the source of truth and get silently reverted
-        # by the next contributor's regeneration.
+        # Two shapes are accepted, and which one you get is the contributor's
+        # choice, not a rule they have to learn:
+        #
+        #   yml only          — the common case now. sync-readme.yml regenerates
+        #                       on main after the merge. Nothing to check here
+        #                       beyond "the generator runs", which the step
+        #                       below does by regenerating in the runner so
+        #                       awesome-lint and the build see a consistent tree.
+        #   yml + regenerated — still fine, still verified exactly as before.
+        #                       Must MATCH, so a hand-edited README is still
+        #                       caught rather than silently overwritten later.
+        #
+        # This is what unblocked the queue. Requiring the regeneration in the
+        # PR meant two unrelated submissions in one category always conflicted
+        # over generated lines; 218 of 296 open PRs were stuck that way, none
+        # over anything a human had written.
         run: |
+          # Compare against the PR's HEAD, not HEAD-as-checked-out.
+          #
+          # For a pull_request event, actions/checkout leaves the working tree
+          # on refs/pull/N/merge — the base branch with the PR merged in. Using
+          # it here made this step answer a different question than the one it
+          # asks: as soon as main advanced past the PR's base, the merge tree's
+          # READMEs differed from base.sha's READMEs, so a pull request that
+          # changed nothing but its own yml was still classified as "modifies
+          # the READMEs" and then failed the strict check below — because the
+          # merge tree is *legitimately* inconsistent for that shape: its
+          # READMEs still lack the entry the new yml adds, and regenerating
+          # from the merge tree fixes them, which is exactly what the strict
+          # check reads as a failure.
+          #
+          # Measured on #5796, 2026-09-24: `git diff --quiet <base>...<merge>`
+          # exits 1, `git diff --quiet <base>...<head>` exits 0. The failure
+          # message then tells the author to run generate-readme.mjs and commit
+          # the result, which cannot fix it — the next main commit re-breaks it.
+          # 18 of 96 open pull requests were sitting on that red.
+          head_sha=${{ github.event.pull_request.head.sha }}
+          # The head commit is a parent of the merge commit and normally already
+          # present under fetch-depth: 0; fetch it explicitly rather than
+          # assume, and fail loudly if it still will not resolve — a check that
+          # cannot tell whether the PR touched the READMEs must not pass.
+          git rev-parse -q --verify "$head_sha^{commit}" >/dev/null 2>&1 \
+            || git fetch -q origin "refs/pull/${{ github.event.pull_request.number }}/head" \
+            || { echo "::error::could not resolve the pull request's head commit ($head_sha)"; exit 1; }
+
+          if git diff --quiet ${{ github.event.pull_request.base.sha }}...$head_sha -- README.md README.zh.md; then
+            echo "PR does not touch the generated READMEs — regenerating locally for the checks below."
+            node scripts/generate-readme.mjs
+            exit 0
+          fi
+          echo "PR modifies the READMEs — they must match data/plugins/."
           if ! node scripts/generate-readme.mjs --check; then
-            echo "::error::The READMEs are generated from data/plugins/. Edit the YAML file, run 'node scripts/generate-readme.mjs', and commit both."
+            echo "::error::You committed README changes that do not match data/plugins/. Either run 'node scripts/generate-readme.mjs' and commit the result, or drop the README changes entirely — they are regenerated on main after merge either way."
             exit 1
           fi
       - name: awesome-lint
         run: npx awesome-lint
+      - name: Added-date regression tests
+        run: node --test scripts/added-dates.test.mjs
+      - name: Capability-disclosure tests
+        # Pure rules only — no downloads, no scanner, no token: which artifact
+        # an entry is scanned from, when a record is stale, and which fields of
+        # a scanner response are kept (the ranking ones are deliberately not).
+        run: node --test scripts/capabilities.test.mjs
+      - name: Discussion-adoption tests
+        # Pure rules only, no token and no network: the shapes they encode were
+        # read off the live repository (a hand-made thread, a thread the
+        # catalog's lowercasing era filed under another case).
+        run: node --test scripts/adopt-discussions.test.mjs
       - name: Build (locale parity, date derivation, templates)
         # probes are skipped on purpose: the build tolerates missing probe
         # data, and this keeps the check token-free and fork-safe.

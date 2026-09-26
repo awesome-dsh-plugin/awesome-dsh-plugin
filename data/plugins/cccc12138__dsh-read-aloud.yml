@@ -1,0 +1,6 @@
+url: https://github.com/cccc12138/dsh-read-aloud
+name: cccc12138/dsh-read-aloud
+category: voice
+description:
+  en: 'Adds a speaker button immediately right of the Like button on every finalized assistant reply; click it to hear the reply through the browser speech engine, and hover it for a speed and voice panel.'
+  zh: '在每条已定稿的助手回复里、紧挨点赞按钮右侧加一个小喇叭：点击用浏览器语音引擎朗读这条回复，鼠标悬停可调倍速与音色。'

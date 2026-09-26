@@ -1,0 +1,6 @@
+url: https://github.com/VanadisGithub/dsh-skill-evolution
+name: VanadisGithub/dsh-skill-evolution
+category: skill
+description:
+  en: Watches agent execution traces and fires an LLM review at every successful turn end when signals trip, crystallizing reusable workflows into registered skills that improve progressively with later runs.
+  zh: 观察 agent 执行轨迹，在每个成功回合结束时按信号触发 LLM 评审，把值得复用的工作流结晶为已注册技能，并随后续运行持续改进。

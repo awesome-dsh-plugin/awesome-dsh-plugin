@@ -1,0 +1,7 @@
+url: https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-ai-asset-hub
+name: dff652/deepseek-harness-community-plugins#dsh-ai-asset-hub
+category: tools
+description:
+  en: Connects DeepSeek Harness to a deployment-owned AI Asset Hub MCP server and exposes eight reviewed read-only asset tools.
+  zh: 将 DeepSeek Harness 连接到部署方管理的 AI Asset Hub MCP 服务，并提供八个经过审查的只读资产工具。
+tarball: https://github.com/dff652/deepseek-harness-community-plugins/releases/download/dsh-ai-asset-hub-v0.1.1/dff652-dsh-ai-asset-hub-0.1.1.tgz

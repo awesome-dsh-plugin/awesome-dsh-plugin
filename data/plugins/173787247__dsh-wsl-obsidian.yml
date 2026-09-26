@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-obsidian
+name: 173787247/dsh-wsl-obsidian
+category: wsl
+description:
+  en: 'Bridges a WSL dsh agent to a Windows Obsidian vault on NTFS: obsidian_status/list/search/read/write/append, plus obsidian:// open via the Windows app. Keep the vault under /mnt/<drive>/ so Obsidian can watch files; Linux-disk vaults via \\wsl$ are unreliable.'
+  zh: '把 WSL 里的 dsh agent 接到 Windows NTFS 上的 Obsidian vault：提供 obsidian_status/list/search/read/write/append，并用 obsidian:// 打开 Windows 版 Obsidian。vault 请放在 /mnt/<盘符>/ 下以便监视文件变更；放在 Linux 盘经 \\wsl$ 打开不可靠。'

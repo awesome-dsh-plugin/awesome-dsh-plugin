@@ -1,0 +1,6 @@
+url: https://github.com/uckkk/dsh-live-data
+name: uckkk/dsh-live-data
+category: tools
+description:
+  en: "Ten live-data tools over eight keyless public APIs: FX rates, weather, npm/PyPI versions, GitHub repo stats, Bilibili video stats, A-share/index/gold quotes, and IP geolocation. Tool defaults are configurable in settings."
+  zh: "10 个实时数据工具，覆盖 8 个免密钥公开接口：汇率、天气、npm/PyPI 包版本、GitHub 仓库信息、B站视频数据、A股/大盘/金价行情、IP 归属地；默认参数可在设置面板配置。"

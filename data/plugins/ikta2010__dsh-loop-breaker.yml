@@ -1,0 +1,7 @@
+url: https://github.com/ikta2010/dsh-loop-breaker
+name: ikta2010/dsh-loop-breaker
+category: tools
+tarball: https://github.com/ikta2010/dsh-loop-breaker/releases/latest/download/dsh-loop-breaker.tgz
+description:
+  en: 'Hard stop for runaway turns: blocks repeated identical tool calls and ends the turn when per-turn step or time budgets are exceeded.'
+  zh: '失控回合硬止损：拦截同一工具+同一参数的重复调用，单轮步数或时长超预算即结束本轮。'

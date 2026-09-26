@@ -1,0 +1,16 @@
+# dshmarket submission entry for dsh-answer-reviewer.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/bycall__dsh-answer-reviewer.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch) ✓
+#   - repo must be >= 1 day old, >= 10 commits
+#   - filename must equal slugFor(url): <owner>__<repo>.yml
+#   - only keys: url, name, category, description, tarball (no `npm:` key — npm
+#     mapping is resolved automatically from the repository)
+url: https://github.com/bycall/dsh-answer-reviewer
+name: dsh-answer-reviewer
+category: agi
+description:
+  en: "Agentic answer reviewer for DeepSeek Harness: each final assistant turn is re-reviewed by a separate LLM graded 1-100; below-threshold scores steer the agent back with concrete feedback. The score is shown as a chip on the answer's action row (green pass / red needs-work, with retry count and reason on hover). Live gate config over a 127.0.0.1 HTTP server, plus a collapsed dock above the composer and an optional right-sidebar tab via dsh-better-sidebar."
+  zh: "智能体回答审查器：每一轮 agent 的最终输出由独立 LLM 重新打分（1-100），低于阈值时携带具体反馈引导 agent 自我修正；评分以角标形式展示在该回答的操作行上（通过=绿、未达标=红，悬停可见重试次数与原因）。闸值配置经 127.0.0.1 本地 HTTP 服务实时修改，并支持输入框上方的折叠面板与 dsh-better-sidebar 侧栏配置页。"

@@ -1,0 +1,6 @@
+url: https://github.com/tangjx2007/dsh-audio-cue
+name: tangjx2007/dsh-audio-cue
+category: notify
+description:
+  en: 'Audio cues for DeepSeek Harness: a short synthesized sound when an agent needs confirmation, finishes a turn or a background job, or fails, with five sound packs, per-event toggles and volume, and do-not-disturb rules stored in the host settings document.'
+  zh: 'DeepSeek Harness 音效提示：智能体需要确认、回合完成、后台任务结束或失败时播放短提示音，内置 5 套音色、逐事件开关与音量、免打扰规则，配置存放在宿主设置文档。'

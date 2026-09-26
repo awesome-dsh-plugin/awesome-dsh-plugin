@@ -1,0 +1,6 @@
+url: https://github.com/Letter2025/dsh-task-worktree
+name: Letter2025/dsh-task-worktree
+category: git
+description:
+  en: 'Task-scoped git worktrees for DSH: durable per-repo manifest, worktree mode injects a creation instruction with your first message under an automatic worktree/ branch prefix, header badge instead of workspace clutter, and bring-back or force-remove cleanup.'
+  zh: '任务级 git worktree：per-repo manifest 持久保存；Worktree 模式在首条消息注入创建指引并统一 worktree/ 分支前缀，头部徽标替代工作区注册，支持带回主目录或强制删除收尾。'

@@ -1,0 +1,6 @@
+url: https://github.com/yx222yx/DSH-Feedback-Bridge
+name: yx222yx/DSH-Feedback-Bridge
+category: workflow
+description:
+  en: Turns DSH conversations into reviewable community feedback and, after confirmation, submits it to the official DeepSeek Harness Discussions.
+  zh: 将 DSH 对话整理为可审阅的社区反馈，并在确认后提交到 DeepSeek Harness 官方 Discussions。

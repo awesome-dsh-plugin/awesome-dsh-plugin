@@ -1,0 +1,6 @@
+url: https://github.com/H2O-MERO/dsh-git-sidebar
+name: H2O-MERO/dsh-git-sidebar
+category: git
+description:
+  en: 'VSCode-style uncommitted-changes sidebar docked to the right of the DSH web conversation page: staged / unstaged / untracked file groups, status badges, per-file +/− line counts, click-to-expand diff, rename as old → new, untracked content preview, and open with the system default application.'
+  zh: 停靠在 DSH Web 对话页右侧的 VSCode 风格未提交改动侧边栏：已暂存/更改/未跟踪三组文件、状态徽标与每文件 +/− 行数，点击展开单文件 diff，支持重命名显示、未跟踪文件内容预览及调用系统默认应用打开文件。

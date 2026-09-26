@@ -1,0 +1,6 @@
+url: https://github.com/Lixiuxiu559/AgentForge
+name: Lixiuxiu559/AgentForge
+category: workflow
+description:
+  en: 'One repository that installs as both a Claude Code plugin and a DSH plugin: six engineering skills (research, architecture scouting, implementation orchestration, three-axis diff review, complexity audit, mutation testing) plus one agentforge tool dispatching five subagents.'
+  zh: '同一个仓库同时可装为 Claude Code 插件与 DSH 插件：6 个工程技能（调研、架构侦察、实施编排、三轴 diff 评审、复杂度审计、突变测试），外加一个 agentforge 工具派发 5 个子 agent。'

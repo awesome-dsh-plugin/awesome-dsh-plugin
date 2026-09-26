@@ -1,0 +1,6 @@
+url: https://github.com/Ryuu-64/dsh-session-tools
+name: Ryuu-64/dsh-session-tools
+category: session
+description:
+  en: 'Gives the agent four session tools: start a new session, send a message into another one, list sessions with their state, and wait for another session''s turn to finish so its answer can be read back.'
+  zh: '给 AI 四个会话工具：新建会话、给别的会话发消息、列出会话及其状态，以及等另一个会话这一轮跑完并把它的回答取回来。'

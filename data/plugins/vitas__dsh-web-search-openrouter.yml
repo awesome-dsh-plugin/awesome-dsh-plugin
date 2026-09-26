@@ -1,0 +1,6 @@
+url: https://github.com/vitas/dsh-web-search-openrouter
+name: vitas/dsh-web-search-openrouter
+category: browser
+description:
+  en: 'Runs the built-in web_search tool server-side on an OpenRouter-compatible gateway, so search uses the same endpoint and key as the chat models: three request protocols, every citation shape parsed (including snippets recovered from the cited span), and a settings card with a live connection test.'
+  zh: '让内置 web_search 工具走 OpenRouter 兼容网关，与对话模型共用端点和密钥：支持三种请求协议，解析全部引用格式（含从引用区间还原摘要），并提供带实时连接测试的设置卡片。'

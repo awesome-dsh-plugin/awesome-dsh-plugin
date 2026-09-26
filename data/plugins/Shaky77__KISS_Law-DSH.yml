@@ -1,0 +1,6 @@
+url: https://github.com/Shaky77/KISS_Law-DSH
+name: Shaky77/KISS_Law-DSH
+category: security
+description:
+  en: "English edition of Weiwen's Law (KISS's Law): the first and only domain-agnostic white-box causal adjudication middleware for AI agents. Unlike domain-specific causal-inference tooling (statistics/economics/ML) or evidence-gated agent firewalls, it adjudicates *every* tool call along a deterministic structural causal chain (R->S->D->H->M) before execution - across any domain, with no training or per-domain tuning. It blocks destructive and credential-file operations, escalates repeated boundary violations, cuts faulting links until verified-fixed, and gives risk verdicts on un-auditable execution; runs fully local with zero API cost."
+  zh: "唯稳律（KISS's Law）英文版：业界首个且唯一的领域无关白箱因果裁决中间件。与领域特定的因果推断工具（统计/经济/机器学习）或「需提供因果证据」的代理防火墙不同，它在执行前对*每个*工具调用沿确定性结构因果链（R->S->D->H->M）裁决——适用任意领域，无需训练或按领域调参。拦截破坏性与凭据文件操作、对反复越界升级止损、故障环节切断至修复验证、不可审计执行给出风险判定；纯本地运行、零 API 成本。"

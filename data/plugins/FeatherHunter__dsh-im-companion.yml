@@ -1,0 +1,7 @@
+url: https://github.com/FeatherHunter/dsh-im-companion
+name: FeatherHunter/dsh-im-companion
+category: ui
+description:
+  en: "IM Companion for dsh-im: groups Feishu/WeChat/QQ bots by Agent in DSH workspaces and enhances DSH native session states (blue/orange/red rail markers for running, needs-review and error), with left badges, one-click filter, fleet overview and drag-to-move. Clean uninstall."
+  zh: "dsh-im辅助插件：创造助理/家的概念，把飞书/微信/QQ等机器人收进DSH工作区，并提供更多强大的扩展功能。增强DSH原生会话状态:哪些在执行任务、哪些在等你回复、哪些有异常。感谢使用🌹。"
+

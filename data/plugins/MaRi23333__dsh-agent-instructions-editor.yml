@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-agent-instructions-editor
+name: MaRi23333/dsh-agent-instructions-editor
+category: ui
+description:
+  en: 'Edit global and project instruction files in DeepSeek Harness settings, with project-chain discovery, byte-budget display, and save-conflict handling.'
+  zh: '在 DeepSeek Harness 设置页编辑全局和项目指令文件，提供项目指令链浏览、字节预算显示与保存冲突处理。'

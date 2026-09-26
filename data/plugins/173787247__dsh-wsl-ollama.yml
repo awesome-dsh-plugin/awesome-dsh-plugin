@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-ollama
+name: 173787247/dsh-wsl-ollama
+category: wsl
+description:
+  en: Local Ollama status / list / chat / embed for dsh on WSL.
+  zh: 本机 Ollama：status / list / chat / embed。

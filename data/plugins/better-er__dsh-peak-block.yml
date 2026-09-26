@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-peak-block
+name: better-er/dsh-peak-block
+category: usage
+description:
+  en: 'During Beijing working-day peak hours (default 09:00-12:00 and 14:00-18:00) it blocks official DeepSeek requests or reroutes them to a configured target provider; off-peak traffic flows to official as usual.'
+  zh: '北京时间工作日高峰时段拦截发往官方 provider 的请求，默认 09:00-12:00、14:00-18:00，可切到配置的中转目标或直接阻止并提示，非高峰正常走官方。'

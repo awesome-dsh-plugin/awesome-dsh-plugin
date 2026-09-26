@@ -1,0 +1,6 @@
+url: https://github.com/Edisonzszs/web-clone
+name: Edisonzszs/web-clone
+category: skill
+description:
+  en: 'Website cloning methodology skill: a real-source-first decision tree covering static sites, React/Vue/Next content sites and WebGL/Canvas-heavy fronts, mandatory verification of executable code quoted from second-hand AI analyses, and 13 zero-dependency Node scripts for CDP browser recon, asset/font harvesting, route crawling, sourcemap hunting and pixel-diff auditing.'
+  zh: '网站复刻方法论 skill：以「真源码至上」决策树覆盖静态站、React/Vue/Next 内容站与 WebGL/Canvas 重前端站，强制核对二手 AI 分析里的可执行代码，内置 13 个零依赖 Node 脚本（CDP 浏览器侦察、素材/字体抓取、路由爬取、source map 挖掘、像素 diff 审计）。'

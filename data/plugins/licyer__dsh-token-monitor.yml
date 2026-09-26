@@ -1,0 +1,6 @@
+url: https://github.com/licyer/dsh-token-monitor
+name: licyer/dsh-token-monitor
+category: usage
+description:
+  en: 'Header quota badge plus a usage-monitoring tab: live balance/quota remaining and reset countdown per provider, with requests, tokens (input/output/cache-read/cache-write), cache hit rate, estimated cost and average latency tracked per session, provider, model and client, stored locally in SQLite with cross-device import/export.'
+  zh: 会话头部余量徽标 + 用量监控页签：实时展示各供应商余额/额度余量与重置倒计时，按会话/供应商/模型/客户端统计请求量、Token（输入/输出/缓存读/缓存写）、缓存命中率、预估费用与平均时延，本地 SQLite 留存历史，支持跨设备导入导出。

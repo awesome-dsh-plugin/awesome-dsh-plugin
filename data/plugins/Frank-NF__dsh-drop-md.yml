@@ -1,0 +1,6 @@
+url: https://github.com/Frank-NF/dsh-drop-md
+name: Frank-NF/dsh-drop-md
+category: tools
+description:
+  en: "Drag-and-drop enhancer for the composer: drop .md/.txt/.markdown to inline small files into the draft or save large ones to .dsh-drop with @-references (Shift forces inline), and drop SKILL.md packages to validate frontmatter and install them to project/user skill roots with one click - effective immediately via the skill watcher."
+  zh: '输入框拖拽增强：.md/.txt 小文件全文插入草稿、大文件落盘为 @./.dsh-drop 引用（Shift 强制全文），SKILL.md 自动校验 frontmatter 并一键安装到项目/用户技能目录，写入即生效。'

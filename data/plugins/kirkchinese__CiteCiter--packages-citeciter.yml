@@ -1,0 +1,6 @@
+url: https://github.com/kirkchinese/CiteCiter/tree/main/packages/citeciter
+name: kirkchinese/CiteCiter#citeciter
+category: session
+description:
+  en: 'Select text in a committed DSH response to open an independent, persistent, read-only multi-turn Topic bound to source-session evidence and project files while the source Agent keeps running.'
+  zh: '选中 DSH 已提交回复中的文字，开启独立、持久、只读的多轮 Topic；Topic 绑定来源会话证据与项目文件，来源 Agent 可继续运行。'

@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-issue-reporter
+name: GooDAnDReaDY/dsh-issue-reporter
+category: dev
+description:
+  en: 'Collects and redacts DSH runtime diagnostics before filing structured issues in GitHub or Gitea.'
+  zh: '收集并脱敏 DSH 运行诊断信息，然后向 GitHub 或 Gitea 提交结构化问题报告。'

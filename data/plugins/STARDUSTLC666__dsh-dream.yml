@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-dream
+name: STARDUSTLC666/dsh-dream
+category: session
+description:
+  en: 'Dreaming for agents: replay recent conversations between sessions (dream_digest), reflect and write a dream journal (dream_save/journal/recall), and idempotently bridge recurring lessons into AGENTS.md (dream_bridge). Reads multi-frame zstd session archives with privacy masking on by default; six tools including a health self-check; zero runtime dependencies.'
+  zh: DSH 做梦插件：agent 在会话间隙回放近期对话（dream_digest）、反思并写入梦境日记（dream_save/journal/recall），高频教训幂等桥接进 AGENTS.md（dream_bridge）。多帧 zstd 会话读取，默认隐私脱敏，六工具含健康自检，零运行时依赖。

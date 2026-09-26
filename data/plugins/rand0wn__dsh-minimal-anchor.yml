@@ -1,0 +1,6 @@
+url: https://github.com/rand0wn/dsh-minimal-anchor
+name: rand0wn/dsh-minimal-anchor
+category: dev
+description:
+  en: Prunes the tool schema to a whitelist and injects a structural preamble on a session's first turn only, then passes every later turn through untouched.
+  zh: 只在会话首轮把工具清单裁剪到白名单并注入一段结构化前言，之后每一轮原样放行。

@@ -1,0 +1,6 @@
+url: https://github.com/Quinn2006/dsh-guise
+name: Quinn2006/dsh-guise
+category: ui
+description:
+  en: 'Persona wardrobe for DeepSeek Harness: save multiple personas, apply them globally or per workspace, with a master switch, an adjustable API balance guard, and a lazy token-loving tired mode that speaks on the agent''s behalf when quota runs out. Files-as-config, hot reload, zero dependencies.'
+  zh: '给 DSH 的 agent 穿上主人钦定的人设：多套人格随心换，全局或按工作区生效，内置人设库、总开关、余额预警与没电模式（80 句随机话术）。文件即配置、保存即生效、零依赖。'
