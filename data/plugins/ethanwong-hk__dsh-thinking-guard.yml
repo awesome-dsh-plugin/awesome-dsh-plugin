@@ -1,5 +1,5 @@
-url: https://github.com/lemssh77/dsh-thinking-guard
-name: lemssh77/dsh-thinking-guard
+url: https://github.com/ethanwong-hk/dsh-thinking-guard
+name: ethanwong-hk/dsh-thinking-guard
 category: dev
 description:
   en: 'Circuit breaker for idle agent turns: watches agent/assistant-stream and cancels a turn that produces only reasoning — no text and no tool call — after 45s, after 80000 reasoning characters, or on a degenerate repetition pattern (exact repeat unit, sentence-template repeat, sparse repeat, or 6-gram density). On trip it injects a continue instruction that requires the next action to be a tool call, and ships 11 regression cases plus per-gate tuning.'
