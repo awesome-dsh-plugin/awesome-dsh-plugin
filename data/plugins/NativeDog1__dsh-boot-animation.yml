@@ -1,0 +1,6 @@
+url: https://github.com/NativeDog1/dsh-boot-animation
+name: NativeDog1/dsh-boot-animation
+category: ui
+description:
+  en: 'Plays an intro full-frame on a new conversation, or every time you open the one you pinned. Four clips ship inside the plugin itself — embedded in code, with no separate video files — and an in-app library switches between them, previews the choice, and accepts your own clip. The pin button sits beside Settings.'
+  zh: '打开新对话、或每次打开你钉住的那个会话时，铺满窗口播放一段片头动画。插件自带四段片头，直接内嵌在代码里（不带独立的视频文件）；界面里的片库可切换、可预览，也能随时换成你自己的片子；设置旁一键钉住会话。'
