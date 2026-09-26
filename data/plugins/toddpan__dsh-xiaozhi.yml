@@ -1,0 +1,6 @@
+url: https://github.com/toddpan/dsh-xiaozhi
+name: toddpan/dsh-xiaozhi
+category: voice
+description:
+  en: 'Connect the Xiaozhi voice assistant to DSH Web as an MCP tool provider: 35 DSH Web endpoints woven into 16 voice-friendly tools, with a DSH Web settings page.'
+  zh: '把小智（Xiaozhi.me）语音助手接入 DSH Web：DSH 作为 MCP 工具提供方，把 35 个 DSH Web 接口封装成 16 个语音友好工具，自带 DSH Web 设置页。'
