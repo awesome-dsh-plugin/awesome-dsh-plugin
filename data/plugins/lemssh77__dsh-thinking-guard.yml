@@ -1,0 +1,6 @@
+url: https://github.com/lemssh77/dsh-thinking-guard
+name: lemssh77/dsh-thinking-guard
+category: dev
+description:
+  en: 'Circuit breaker for idle agent turns: watches agent/assistant-stream and cancels a turn that produces only reasoning — no text and no tool call — after 45s, after 80000 reasoning characters, or on a degenerate repetition pattern (exact repeat unit, sentence-template repeat, sparse repeat, or 6-gram density). On trip it injects a continue instruction that requires the next action to be a tool call, and ships 11 regression cases plus per-gate tuning.'
+  zh: '空转回合熔断器：监听 agent/assistant-stream，对只产出 reasoning、零文本零工具调用的回合实施三重熔断——45 秒无进展、单次思考超 80000 字符、或命中退化重复模式（精确重复单元/句模重复/稀疏复读/6-gram 密度）。熔断后注入继续指令，要求下一个动作必须是工具调用；附 11 个回归用例与逐档调参。'
