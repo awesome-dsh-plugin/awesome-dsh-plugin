@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-search
+name: 173787247/dsh-wsl-search
+category: wsl
+description:
+  en: Sandboxed ripgrep / fd / ast-grep under allowRoots.
+  zh: 沙箱 ripgrep / fd / ast-grep。

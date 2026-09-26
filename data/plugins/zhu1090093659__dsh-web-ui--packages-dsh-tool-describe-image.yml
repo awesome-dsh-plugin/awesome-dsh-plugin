@@ -1,0 +1,6 @@
+url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-tool-describe-image
+name: zhu1090093659/dsh-web-ui#packages/dsh-tool-describe-image
+category: vision
+description:
+  en: 'A `describe_image` vision tool for text-only models: images (local path, URL, attachment) go to a configurable OpenAI-compatible vision endpoint and only the returned text enters the session.'
+  zh: 给纯文本模型补视觉：describe_image 把本地路径/URL/附件图片交给可配置的 OpenAI 兼容视觉端点，进会话的只有返回文本。

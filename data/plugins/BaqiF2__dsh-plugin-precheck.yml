@@ -1,0 +1,6 @@
+url: https://github.com/BaqiF2/dsh-plugin-precheck
+name: BaqiF2/dsh-plugin-precheck
+category: security
+description:
+  en: 'Pre-install compatibility gate for DSH plugins: locks the resolved version, checks peer/engines declarations, dry-installs into an isolated DSH_HOME and boots it with a timeout, blocks on any failure, and restores the profile if the real install fails. Optionally intercepts dsh-market install/update clicks.'
+  zh: 'DSH 插件安装前兼容性门控：锁定解析版本、校验 peer/engines 声明、在隔离 DSH_HOME 中试装并限时试启动，任一失败即阻止；正式安装失败自动还原 profile。可选拦截 dsh-market 的安装/更新点击。'

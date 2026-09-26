@@ -1,0 +1,6 @@
+url: https://github.com/QianLuo-Ly/dsh-weather
+name: QianLuo-Ly/dsh-weather
+category: ui
+description:
+  en: 'Top-centered weather bar for the DSH Web UI: geolocation, current conditions, 12h/7d forecasts and severe-weather notifications via Open-Meteo (free, no API key).'
+  zh: 'DSH Web 顶部居中的天气栏：定位 + 当前天气 + 未来 12 小时/7 天预报与恶劣天气提醒，数据来自 Open-Meteo（免费、无需 API key）。'

@@ -1,0 +1,6 @@
+url: https://github.com/nikoart-liu/dsh-open-in-x
+name: nikoart-liu/dsh-open-in-x
+category: ui
+description:
+  en: Open DSH workspace directories in installed file managers, terminals, and supported editors from the Web UI.
+  zh: 从 DSH Web UI 使用已安装的文件管理器、终端和受支持的编辑器打开工作区目录。

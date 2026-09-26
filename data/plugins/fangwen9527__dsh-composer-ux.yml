@@ -1,0 +1,6 @@
+url: https://github.com/fangwen9527/dsh-composer-ux
+name: fangwen9527/dsh-composer-ux
+category: ui
+description:
+  en: 'Configurable send and newline keys, a composer context menu with three sources (leave it to DSH and other plugins / browser menu / plugin-styled custom menu), a quick-command panel with categorized prompt lists where each prompt can append on every send or only on the first message of a session, a create-and-move row at the bottom of each category, a prompt optimizer that rewrites the draft with a separate model call, settings-panel size memory, and automatic x-opencode-session header injection for OpenCode routes. Prompt lists live in a global ~/.dsh/quick-prompts.json that is independent of the session and the project.'
+  zh: '可配置发送/换行键位、输入框右键菜单三种来源（插件不介入 / 浏览器菜单 / 自定义样式菜单）、带分类的快捷指令面板（每条可设「每次发送都附加」或「仅在本会话第一条消息附加」，并有跨分类移动与新建）、用另一次模型调用把草稿整理成清晰指令的提示词优化、设置面板尺寸记忆，并为 OpenCode 路由自动注入 x-opencode-session 请求头。快捷指令存在全局文件 ~/.dsh/quick-prompts.json 里，与会话、项目无关。'

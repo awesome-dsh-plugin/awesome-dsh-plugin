@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/dsh-plugin-guard
+name: taxueseek/dsh-plugin-guard
+category: security
+description:
+  en: 'Static-only plugin gate and clinic for DSH: audit before install, hash-and-capability lock after install, local fingerprint peer search over GitHub topic:dsh-plugin, and mechanical detox. Never executes the target plugin.'
+  zh: 'DSH 插件的静态安全闸门与诊所：安装前静态审计、安装后哈希与能力锁定、本机指纹库与 GitHub dsh-plugin 主题的同类搜索、机械式剥离清理；永不执行目标插件。'

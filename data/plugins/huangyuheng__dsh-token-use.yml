@@ -1,0 +1,6 @@
+url: https://github.com/huangyuheng/dsh-token-use
+name: huangyuheng/dsh-token-use
+category: usage
+description:
+  en: 'Settings section that reports token usage: totals for input, output, cache read, cache write, reasoning and call count, with breakdowns by model, day, month and project plus a per-day trend chart for the last 30 days; history is rebuilt once on a worker thread and then kept current from live session events.'
+  zh: '设置中的 Token 用量面板：总量（输入/输出/缓存读/缓存写/推理/调用次数），按模型、按天、按月、按项目的明细，以及最近 30 天的按日趋势折线图；历史在 Worker 线程上一次性重建，之后由会话事件实时累加。'

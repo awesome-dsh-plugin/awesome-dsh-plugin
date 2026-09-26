@@ -1,0 +1,7 @@
+url: https://github.com/hgl011091/dsh-rss-monitor
+name: hgl011091/dsh-rss-monitor
+category: notify
+description:
+  en: 'Native RSS monitor for DeepSeek Harness: multi-source subscription, keyword filtering, scheduled polling with smart dedup, and email notifications for new items (HTML template with thumbnail cards), with SMTP passwords stored only in the credential store.'
+  zh: 'DeepSeek Harness 原生 RSS 订阅监控插件：多源订阅、关键词过滤、定时检查去重、新条目邮件通知（缩略图 HTML 模板），SMTP 密码走凭据库永不落盘，原生设置页四页签体验。'
+tarball: https://github.com/hgl011091/dsh-rss-monitor/releases/latest/download/dsh-rss-monitor.tgz

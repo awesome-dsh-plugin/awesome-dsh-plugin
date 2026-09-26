@@ -1,0 +1,6 @@
+url: https://github.com/wangtie-010101/wangtie-os
+name: wangtie-010101/wangtie-os
+category: dev
+description:
+  en: "Fullscreen business-app framework for DeepSeek Harness Web with a dark-sidebar workbench bundling a database connectivity tester and SQL query panel, a two-level knowledge base (bill and accounting) with local search and Word document ingestion, metadata environment comparison with alter-SQL generation, a data dictionary, agent log-search report demos, a system test-case runner, Evernote-style notes, developer utilities, and mini-games."
+  zh: "构建在 DeepSeek Harness Web 之上的全屏业务应用框架：深色侧边栏工作台，集成数据库连通测试与 SQL 查询、票据/会计二级知识库（本地检索与 Word 文档投喂）、元数据环境比对与变更 SQL 生成、数据字典、Agent 日志检索报告演示、系统测试用例执行、印象笔记风格记事本、常用开发工具与小游戏。"

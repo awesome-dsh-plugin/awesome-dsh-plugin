@@ -1,0 +1,6 @@
+url: https://github.com/ChuShiZ/dsh-archive-manager
+name: ChuShiZ/dsh-archive-manager
+category: session
+description:
+  en: 'Archived-session manager for DSH Web: workspace-grouped list, FTS5 full-text search over session content with per-session snippets, restore-and-open, and hard delete.'
+  zh: 归档会话管理插件：按工作区分组浏览，FTS5 全文检索会话内容并展示多条命中摘要，支持恢复并打开与彻底删除。

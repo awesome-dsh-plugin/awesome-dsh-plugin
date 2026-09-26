@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-dep-vuln-scan
+name: 988hj7tczd-oss/dsh-dep-vuln-scan
+category: tools
+description:
+  en: "Scan project lockfiles (npm/pnpm/yarn/pip/go/cargo/maven/gradle/...) against the free OSV API and report confirmed dependency vulnerabilities with fix versions and remediation commands."
+  zh: "扫描项目锁文件（npm/pnpm/yarn/pip/go/cargo/maven/gradle…）并对免费 OSV API 批量查询漏洞，输出「包 / 当前版本 / 漏洞 ID / 摘要 / CVSS / 修复版本」表格与修复命令。"

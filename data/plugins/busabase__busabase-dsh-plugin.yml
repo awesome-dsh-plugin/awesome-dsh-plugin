@@ -1,0 +1,6 @@
+url: https://github.com/busabase/busabase-dsh-plugin
+name: busabase/busabase-dsh-plugin
+category: memory
+description:
+  en: 'Connects DeepSeek Harness to Busabase: search workspace knowledge, work with structured records and apps, submit writes as reviewable ChangeRequests, and inspect results in live cards.'
+  zh: '把 DeepSeek Harness 接入 Busabase：检索工作区知识、操作结构化记录与应用、将写入提交为可审阅的 ChangeRequest，并在实时卡片中查看结果。'

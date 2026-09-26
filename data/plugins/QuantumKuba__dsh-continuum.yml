@@ -1,0 +1,6 @@
+url: https://github.com/QuantumKuba/dsh-continuum
+name: QuantumKuba/dsh-continuum
+category: memory
+description:
+  en: 'Persistent project memory, event-sourced task lifecycle, context budgeting, and cooperative multi-agent handoffs.'
+  zh: '持久化项目记忆、事件溯源的任务生命周期、上下文预算控制与多智能体协作交接。'

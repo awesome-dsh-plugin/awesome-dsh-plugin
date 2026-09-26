@@ -1,0 +1,7 @@
+url: https://github.com/master1Sun/dsh-prompt-library
+name: master1Sun/dsh-prompt-library
+category: skill
+description:
+  en: 'DSH Prompt Library plugin: prompt CRUD, tags & categories, import/export, AI polish, one-click clip selected text, sidebar and assistant bubble reminders.'
+  zh: 'DSH提示词库插件：支持提示词增删改查、分类标签、导入导出、AI智能优化、选中文本一键剪藏，附带侧边栏与词库助手气泡提醒。'
+tarball: https://github.com/master1Sun/dsh-prompt-library/releases/download/v0.9.1/dsh-prompt-library-0.9.1.tgz

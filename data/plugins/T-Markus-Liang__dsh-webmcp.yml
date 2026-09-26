@@ -1,0 +1,6 @@
+url: https://github.com/T-Markus-Liang/dsh-webmcp
+name: T-Markus-Liang/dsh-webmcp
+category: browser
+description:
+  en: 'WebMCP bridge: your agent discovers & calls site tools exposed over the W3C WebMCP protocol via a built-in headless Chromium.'
+  zh: 'WebMCP 桥接器：让 agent 通过内置无头 Chromium，发现并调用网站按 W3C WebMCP 协议暴露的站点工具。'

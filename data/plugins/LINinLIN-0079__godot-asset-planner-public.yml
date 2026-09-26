@@ -1,0 +1,6 @@
+url: https://github.com/LINinLIN-0079/godot-asset-planner-public
+name: LINinLIN-0079/godot-asset-planner-public
+category: dev
+description:
+  en: 'Unified Godot asset and project-goal management for DSH: godot_* model tools, a /gap REST surface, and a better-sidebar UI with asset manager, scene-tree viewer, and Git panel.'
+  zh: 'Godot 资产与项目目标统一管理：godot_* 模型工具 + /gap REST 路由 + better-sidebar 界面（资产管理器 / 场景树查看器 / Git 版本控制）。'

@@ -1,0 +1,8 @@
+# 提交到 awesome-dsh-plugin 仓库: data/plugins/faukwaa__dsh-gap-feed.yml
+# 流程: fork awesome-dsh-plugin → 添加本文件 → npm ci && node scripts/generate-readme.mjs → PR
+url: https://github.com/faukwaa/dsh-gap-feed
+name: faukwaa/dsh-gap-feed
+category: notify
+description:
+  en: During long agent thinking, posts a hot-news or reminder message directly into the conversation stream.
+  zh: agent 思考超时时，直接在对话流中推出一条今日头条热点或提醒消息。

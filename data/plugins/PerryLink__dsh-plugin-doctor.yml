@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-plugin-doctor
+name: PerryLink/dsh-plugin-doctor
+category: dev
+description:
+  en: 'Zero-dependency static and sandbox smoke detector for DSH plugins: package-structure gates, cordis contract scans, keyless headless smoke, and ecosystem-listing checks.'
+  zh: '零依赖的 DSH 插件静态检查与沙箱冒烟检测器：包结构门禁、cordis 契约扫描、无密钥无头冒烟，以及生态收录校验。'

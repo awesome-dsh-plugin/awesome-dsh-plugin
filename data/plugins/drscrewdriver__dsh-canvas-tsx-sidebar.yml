@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-canvas-tsx-sidebar
+name: drscrewdriver/dsh-canvas-tsx-sidebar
+category: ui
+description:
+  en: 'A dsh-better-sidebar tab that statically parses Qoder Canvas `*.canvas.tsx` files into structured pages in the DSH right sidebar (the source is never executed: no eval, no bundler, no sandbox iframe), with a file-viewer takeover for `.tsx` and a bundled Skill for authoring the format.'
+  zh: 'dsh-better-sidebar 扩展：把 Qoder Canvas `*.canvas.tsx` 静态解析为结构化页面渲染在右侧栏（不执行源码，无 eval / bundler / 沙箱 iframe），并附带 `.tsx` 文件查看器接管与一个教 LLM 写该格式的 Skill。'

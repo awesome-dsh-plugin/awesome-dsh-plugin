@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-plugin-runcat-inventory
+name: runcat-tommy/dsh-plugin-runcat-inventory
+category: dev
+description:
+  en: "Plugin inventory manager for DeepSeek Harness Web: table view of installed plugins with status filters, enable/disable switches applied via HMR, config viewer/copy, uninstall and npm update reminders."
+  zh: "DSH 插件总览（逃咪）：以表格视图管理已安装插件，支持状态过滤、HMR 热生效的启停开关、配置查看/复制、卸载与 npm 更新提醒。"

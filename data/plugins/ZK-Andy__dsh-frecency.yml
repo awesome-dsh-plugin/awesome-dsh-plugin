@@ -1,0 +1,6 @@
+url: https://github.com/ZK-Andy/dsh-frecency
+name: ZK-Andy/dsh-frecency
+category: tools
+description:
+  en: 'Resident-index grep for DeepSeek Harness that shadows the built-in grep/glob tools under the same names: repeated content searches hit an in-memory index ranked by access/modification frecency, and glob serves the built-in ripgrep semantics when available, falling back to the index otherwise.'
+  zh: '为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。'

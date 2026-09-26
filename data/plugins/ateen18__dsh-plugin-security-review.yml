@@ -1,0 +1,6 @@
+url: https://github.com/ateen18/dsh-plugin-security-review
+name: ateen18/dsh-plugin-security-review
+category: security
+description:
+  en: 'Pre-install static security review and runtime guard for dsh plugins: deobfuscation decoding, supply-chain checks, web one-click review/install/uninstall, and optional runtime tool-call guard.'
+  zh: 'DSH 插件安全审查与运行时守卫：安装前静态审查（反混淆解码、供应链检测）、Web 一键审查/安装/卸载，以及可选的运行时工具调用拦截。'

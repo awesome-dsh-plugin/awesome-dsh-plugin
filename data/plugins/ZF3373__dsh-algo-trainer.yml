@@ -1,0 +1,11 @@
+url: https://github.com/ZF3373/dsh-algo-trainer
+name: ZF3373/dsh-algo-trainer
+category: tools
+description:
+  en: >-
+    Algorithm learning toolkit syncing Codeforces and AtCoder submissions,
+    profiling weaknesses, generating AI training plans, and tracking
+    spaced-repetition reviews across a 114-lesson algorithm curriculum.
+  zh: >-
+    算法学习工具：同步 Codeforces 与 AtCoder 提交记录，分析弱项画像，
+    AI 生成训练计划，间隔复习排期，覆盖 114 课算法模板库。

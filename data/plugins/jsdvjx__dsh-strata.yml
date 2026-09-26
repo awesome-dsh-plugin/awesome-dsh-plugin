@@ -1,0 +1,6 @@
+url: https://github.com/jsdvjx/dsh-strata
+name: jsdvjx/dsh-strata
+category: ui
+description:
+  en: 'Session minimap in the scrollbar gutter: to-scale bands coloured by event kind, anchor dots for user messages and failures, auto-loading history at the top, a hover wall of every prompt in the session, and a three-step map scale switcher.'
+  zh: '滚动条槽位里的会话缩略图：按事件类型着色的等比色块、用户与失败锚点、滚到顶自动补载历史、悬停线索墙铺开全部发言，附近/中/全三档地图尺度切换。'

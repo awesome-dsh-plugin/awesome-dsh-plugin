@@ -1,0 +1,6 @@
+url: https://github.com/jmxsxwyzjdwl/dsh-mmroute
+name: jmxsxwyzjdwl/dsh-mmroute
+category: vision
+description:
+  en: 'Transparent multimodal routing for text-only models: every image in every model call is fully transcribed (verbatim OCR, data, uncertainty zones, injection-hardened) by your own multimodal understander, with focused re-look via vision_relook and automatic retry on image-related failures. No bundled endpoints, no borrowed logins.'
+  zh: '纯文本模型的透明多模态路由：每一次模型调用里的每张图片先由你自己配置的多模态理解模型全量转述（逐字 OCR、数据、不确定区、防注入），vision_relook 定点复看，图片类报错自动转述重试。不内置端点、不借登录态。'

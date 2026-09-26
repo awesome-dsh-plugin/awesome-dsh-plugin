@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-llm-openai-completions
+name: drscrewdriver/dsh-llm-openai-completions
+category: model
+description:
+  en: 'OpenAI-completions-compatible adapter for custom gateways (vLLM / LM Studio / self-hosted proxies): always role:"system", thinking driven by the model config, Qwen-style response split, and vision-model image input (single / multiple).'
+  zh: '面向自定义网关（vLLM / LM Studio / 自托管代理）的 OpenAI-completions 兼容适配器：始终 role:"system"、按模型配置驱动思考、Qwen 式 response 切分，并支持视觉模型图片输入（单图 / 多图）。'

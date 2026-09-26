@@ -1,0 +1,6 @@
+url: https://github.com/Bobnemimimmi/dsh-always-status-bar
+name: Bobnemimimmi/dsh-always-status-bar
+category: ui
+description:
+  en: 'Keeps the native per-message status line always visible without hovering — date and time on every message, run duration, TTFT, and tokens per second on assistant messages.'
+  zh: '原生消息状态栏无需悬停即可始终显示每条消息的日期时间，以及 Assistant 消息的用时、首 token、tok/s。'

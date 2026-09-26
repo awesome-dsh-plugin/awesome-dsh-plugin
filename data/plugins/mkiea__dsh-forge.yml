@@ -1,0 +1,6 @@
+url: https://github.com/mkiea/dsh-forge
+name: mkiea/dsh-forge
+category: dev
+description:
+  en: 'Plugin-combination analysis for the DeepSeek Harness: dependency trees, conflict detection, risk scoring with prediction, visualization, and combination simulation.'
+  zh: DeepSeek Harness 插件组合分析工具：依赖树、冲突检测、风险评估（含预测）、可视化与组合模拟。

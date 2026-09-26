@@ -1,0 +1,7 @@
+url: https://github.com/ruisenbai/dsh-annotation
+name: ruisenbai/dsh-annotation
+category: session
+description:
+  en: 'Requires DSH 0.1.6-alpha.2. Annotate completed assistant replies, submit multiple drafts with official composer text and attachments as one Session message, navigate linked model replies, and use Settings to hide selected reasoning or tool details without changing stored events.'
+  zh: '需要 DSH 0.1.6-alpha.2。在已完成的助手回复中选中原文并添加多条注解，再与官方输入框文字和附件合并为一条会话消息；可导航模型的关联回复，并在不修改已存储事件的前提下通过设置隐藏指定思考或工具详情。'
+tarball: https://github.com/ruisenbai/dsh-annotation/releases/latest/download/dsh-annotation.tgz

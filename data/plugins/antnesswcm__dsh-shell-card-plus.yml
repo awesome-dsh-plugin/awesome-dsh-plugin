@@ -1,0 +1,6 @@
+url: https://github.com/antnesswcm/dsh-shell-card-plus
+name: antnesswcm/dsh-shell-card-plus
+category: ui
+description:
+  en: 'Replaces the stock bash/pwsh terminal rows in the DSH web UI with shell command cards: long commands soft-wrap with line numbers instead of truncating, plus separate copy-command and copy-output buttons.'
+  zh: '用自定义 Shell 命令卡片替换 DSH Web 原版 bash/pwsh 工具行：长命令自动换行带行号不再截断，并提供独立的复制命令/复制输出按钮。'

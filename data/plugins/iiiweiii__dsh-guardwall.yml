@@ -1,0 +1,6 @@
+url: https://github.com/iiiweiii/dsh-guardwall
+name: iiiweiii/dsh-guardwall
+category: security
+description:
+  en: Vets local, npm, and GitHub plugin source before installation, blocks configured high-risk tool calls at runtime, audits output secret patterns, and writes HMAC-chained local audit logs.
+  zh: 在安装前体检本地、npm 与 GitHub 插件源码，运行时拦截命中配置阈值的高风险工具调用，审计输出中的密钥模式，并写入 HMAC 链式本地审计日志。

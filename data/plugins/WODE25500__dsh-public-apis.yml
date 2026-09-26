@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-public-apis
+name: WODE25500/dsh-public-apis
+category: tools
+description:
+  en: "The public-apis catalog wired into DeepSeek Harness: search 1716 free public APIs by keyword, category, auth, HTTPS or CORS and call any of them."
+  zh: "把 public-apis 目录接入 DeepSeek Harness：按关键词、分类、auth、https、cors 搜索 1716 个免费公共 API 并直接调用。"

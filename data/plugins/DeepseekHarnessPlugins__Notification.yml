@@ -1,0 +1,6 @@
+url: https://github.com/DeepseekHarnessPlugins/Notification
+name: DeepseekHarnessPlugins/Notification
+category: notify
+description:
+  en: 'Task-completion notifications: desktop alerts via macOS Notification Center and Windows Toast, plus mobile push through Bark, ntfy, ServerChan or any webhook when an agent run goes idle, errors or blocks.'
+  zh: 任务完成通知推送：代理转入空闲、出错或阻塞时，经 macOS 通知中心、Windows Toast 及 Bark、ntfy、Server酱、通用 Webhook 发送系统通知。

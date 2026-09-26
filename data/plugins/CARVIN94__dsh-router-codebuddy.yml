@@ -1,0 +1,6 @@
+url: https://github.com/CARVIN94/dsh-router-codebuddy
+name: CARVIN94/dsh-router-codebuddy
+category: model
+description:
+  en: CodeBuddy supplier plugin for dsh-router. Handles one account at a time with polling OAuth login and token refresh, leaving account selection, cooldown and check-in to dsh-router core.
+  zh: dsh-router 的 CodeBuddy 供应商插件。单账号负责轮询式 OAuth 登录与令牌刷新，选号、冷却与签到交由 dsh-router 核心处理。

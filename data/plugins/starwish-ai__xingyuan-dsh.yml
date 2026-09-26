@@ -1,0 +1,6 @@
+url: https://github.com/starwish-ai/xingyuan-dsh
+name: starwish-ai/xingyuan-dsh
+category: workflow
+description:
+  en: "Agent preset bundle for wish and task management: create wishes or tasks from conversation, opportunity-day check-ins, micro-actions, plus a memory store and progress charts in the web UI."
+  zh: "愿望与任务管理的 Agent Preset 组合包：在对话中创建愿望/任务、机会日打卡、微行动，并附带记忆存储与 Web 端进度图表。"

@@ -1,0 +1,6 @@
+url: https://github.com/yu502950715yang/dsh-use-wallpaper
+name: yu502950715yang/dsh-use-wallpaper
+category: theme
+description:
+  en: 'Renders Wallpaper Engine scene wallpapers in real time in the browser (three.js player plus a Rust/WASM CPU particle simulation) and plays video and web wallpapers, falling back to the preview image, with no Wallpaper Engine runtime required. Scans the local Steam workshop library (431960) by auto-detection or a manual path, and offers a settings panel for wallpaper selection, library and engine directories, glow, pause and quality.'
+  zh: '把本机 Wallpaper Engine 壁纸放到 dsh Web 界面背后：scene 壁纸在浏览器内实时渲染（three.js 播放器 + Rust/WASM CPU 粒子模拟），视频与 web 壁纸原样播放，其余回退 preview 图，不需要安装 Wallpaper Engine 运行时。壁纸库从 Steam 创意工坊目录（431960）自动探测或手动指定，设置面板可选壁纸、配壁纸库与引擎目录、调光晕与暂停/画质。'

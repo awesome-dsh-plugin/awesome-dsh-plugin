@@ -1,0 +1,6 @@
+url: https://github.com/SpookySandwich/dsh-plugin-no-workspace
+name: SpookySandwich/dsh-plugin-no-workspace
+category: session
+description:
+  en: Start and detach standalone chats without a mandatory workspace, keeping DSH's native workspace UI intact.
+  zh: 无需强制绑定工作区即可新建和分离独立会话，同时保留 DSH 原生的工作区界面。

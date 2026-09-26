@@ -1,0 +1,6 @@
+url: https://github.com/we39/dsh-pve
+name: we39/dsh-pve
+category: dev
+description:
+  en: 'Manage Proxmox VE through conversation: 116 read + 116 write tools covering VMs, containers, storage, nodes, clusters, backups and firewalls, with API-token or username/password (ticket) auth.'
+  zh: '通过对话管理 Proxmox VE：116 个只读 + 116 个写工具，覆盖虚拟机、容器、存储、节点、集群、备份与防火墙，支持 API Token 或用户名密码（ticket）鉴权。'

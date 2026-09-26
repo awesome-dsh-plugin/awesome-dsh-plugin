@@ -1,0 +1,6 @@
+url: https://github.com/xiaxingtianxia2-glitch/dsh-chime
+name: xiaxingtianxia2-glitch/dsh-chime
+category: notify
+description:
+  en: Task-completion chime for DeepSeek Harness, playing the original opencode sounds for done, question, plan-review and error events with zero external dependencies.
+  zh: 为 DeepSeek Harness 复刻 opencode 的任务完成提示音，完成、提问、计划待审、出错四种场景播放原始音效，零外部依赖。

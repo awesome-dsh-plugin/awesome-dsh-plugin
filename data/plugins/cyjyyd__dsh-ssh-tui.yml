@@ -1,0 +1,6 @@
+url: https://github.com/cyjyyd/dsh-ssh-tui
+name: cyjyyd/dsh-ssh-tui
+category: ui
+description:
+  en: 'Terminal UI for DeepSeek Harness on jump hosts and high-latency links: plain ANSI, incremental repaint, and a session that survives a dropped SSH connection (resume it from the log).'
+  zh: '跳板机与高延迟 SSH 上的 DeepSeek Harness 终端：纯 ANSI、增量重绘；SSH 掉线后会话不丢，可用 --resume 接回。'

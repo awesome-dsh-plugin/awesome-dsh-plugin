@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/think-level
+name: CREAIT-nl/dsh-plugins#think-level
+category: model
+description:
+  en: 'A thinking level stored per provider and model, so reasoning effort outlives the session it was set in and also reaches subagents, which dsh never asks. The in-session picker still wins, and a model with no row keeps its provider default.'
+  zh: '按提供方与模型保存思考等级：推理强度不再只属于设置它的那次会话，还会应用到 dsh 从不询问的子代理。会话内的手动选择依然优先，没有配置的模型保持提供方默认值。'

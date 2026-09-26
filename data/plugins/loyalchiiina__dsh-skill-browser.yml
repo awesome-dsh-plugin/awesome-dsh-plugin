@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-skill-browser
+name: loyalchiiina/dsh-skill-browser
+category: ui
+description:
+  en: "Browse the DSH skill library from a floating-ball panel: categories, Chinese descriptions, instant search, full SKILL.md viewer, and an automatic skill-failure ledger driven by tools/result events."
+  zh: "悬浮球面板直接浏览 DSH 技能库：两级分类、中文简介、实时搜索、SKILL.md 全文查看；内置失效台账自动登记（监听 tools/result 事件，成功/失败自动记录），支持一键恢复悬浮球默认位置。"

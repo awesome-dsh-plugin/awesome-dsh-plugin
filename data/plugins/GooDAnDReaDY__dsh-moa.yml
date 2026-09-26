@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-moa
+name: GooDAnDReaDY/dsh-moa
+category: tools
+description:
+  en: "Mixture-of-Agents plugin for DeepSeek Harness: a /moa slash command fans a prompt out to multiple models in parallel, merges their responses in a file workspace, and integrates with Live Canvas for visual output."
+  zh: "DeepSeek Harness 的混合智能体（MoA）插件：/moa 斜杠命令将提示词并发分发给多个模型，在文件工作区合并响应，并与 Live Canvas 集成以呈现可视化输出。"

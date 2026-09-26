@@ -1,0 +1,6 @@
+url: https://github.com/whoiszzj/dsh-opencodego
+name: whoiszzj/dsh-opencodego
+category: model
+description:
+  en: 'OpenCode Go provider that verifies a model against the gateway rather than treating a recommendation as a measurement: the models.dev protocol suggestion is probed before it is used, reasoning levels follow a measured contract, and requests run through an ordered protocol fallback chain. Context window, max output and image-input numbers are declared by a runtime-refreshed models.dev layer rather than probed, with operator overrides above both. Several OpenCode Go credentials can be stored and switched from the settings page.'
+  zh: '把 OpenCode Go 接入 DSH 的提供方插件：不把"推荐"当结论——models.dev 给的协议建议会先真的探一次确认再用，思考档位按实测契约确定，请求走有序的协议回退链。上下文、最大输出与图片输入的数字由运行期刷新的 models.dev 声明层提供而非探测，操作者覆盖排在两者之上。可保存多把 OpenCode Go 密钥，在设置页里切换当前使用的那把。'

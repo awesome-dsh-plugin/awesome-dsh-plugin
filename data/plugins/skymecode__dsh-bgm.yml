@@ -1,0 +1,7 @@
+url: https://github.com/skymecode/dsh-bgm
+name: skymecode/dsh-bgm
+category: fun
+description:
+  en: Maps locally analyzed system audio to music-reactive conversation effects, rhythm-game judgements, score and combo feedback, and optional RGB spectrum bars in DSH Web.
+  zh: 将本地分析的系统音频映射为 DSH Web 的对话律动、音游判定、分数与连击反馈，以及可选的 RGB 频谱柱。
+tarball: https://github.com/skymecode/dsh-bgm/releases/latest/download/dsh-bgm.tgz

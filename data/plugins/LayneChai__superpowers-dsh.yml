@@ -1,0 +1,6 @@
+url: https://github.com/LayneChai/superpowers-dsh
+name: LayneChai/superpowers-dsh
+category: skill
+description:
+  en: 'Superpowers for DeepSeek Harness: TDD, debugging, planning, and collaboration skills adapted from obra/superpowers, installed as a Cordis plugin registering 14 skills with zero runtime dependencies.'
+  zh: DeepSeek Harness 版 Superpowers 技能包：移植自 obra/superpowers 的 TDD、调试、规划与协作技能，以 Cordis 插件安装并注册 14 个技能（零运行时依赖）。

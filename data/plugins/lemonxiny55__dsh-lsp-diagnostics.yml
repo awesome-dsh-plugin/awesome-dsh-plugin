@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-lsp-diagnostics
+name: lemonxiny55/dsh-lsp-diagnostics
+category: tools
+description:
+  en: 'Real-time LSP diagnostics loop: lsp_diagnostics / lsp_workspace_errors / lsp_hover tools over headless stdio language servers (TypeScript/JavaScript + Python), plus an auto-injected post-edit diagnostics delta wired to the harness fs/observed event — Cursor-style edit → diagnostics → fix for dsh agents.'
+  zh: '实时 LSP 诊断闭环：通过无头 stdio 语言服务器（TypeScript/JavaScript + Python）提供 lsp_diagnostics / lsp_workspace_errors / lsp_hover 工具，并订阅 harness 的 fs/observed 事件自动注入「本次编辑引入的诊断增量」——为 dsh Agent 带来 Cursor 式的编辑→诊断→修复体验。'

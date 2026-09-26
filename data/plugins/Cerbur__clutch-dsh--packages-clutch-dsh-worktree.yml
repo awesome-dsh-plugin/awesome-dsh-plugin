@@ -1,0 +1,6 @@
+url: https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree
+name: Cerbur/clutch-dsh#clutch-dsh-worktree
+category: git
+description:
+  en: Adds a Worktree view to DSH Web UI that groups Sessions by Git worktree while keeping DSH as the source of truth.
+  zh: 为 DSH Web UI 增加按 Git Worktree 组织 Session 的视角，同时继续由 DSH 管理原始 Project 和 Session 数据。

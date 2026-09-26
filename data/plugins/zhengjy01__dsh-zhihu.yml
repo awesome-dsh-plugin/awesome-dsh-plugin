@@ -1,0 +1,11 @@
+# 提交到 awesome-dsh-plugin 的条目（放到该仓库 data/plugins/zhengjy01__dsh-zhihu.yml，文件名由 url 推导）。
+# 门槛（contributing.md 硬性）：仓库创建满 1 天 + 提交数 ≥ 10 + 带 dsh-plugin topic。
+# 本仓库 2026-09-12 创建，故需等到 2026-09-13 且补足提交后再提 PR。
+# 不要写 tarball：条目校验只接受 GitHub Release 托管的 .tgz（scripts/lib/entries.mjs 的
+# tarballProblem）；本插件已发 npm，市场会走 npm 预构建安装，无需 tarball。
+url: https://github.com/zhengjy01/dsh-zhihu
+name: zhengjy01/dsh-zhihu
+category: tools
+description:
+  en: "Zhihu (知乎) for DeepSeek Harness: wraps the local pyzhihu-cli as 18 zhihu_* tools — 14 read-only (search, hot list, question, answer, user, feed, topic, notifications, collections) plus 4 publishing tools that are not registered until readOnly is turned off — with a web panel in the sidebar for login, config and lookups."
+  zh: "为 DeepSeek Harness 提供知乎能力：包装本机 pyzhihu-cli 为 18 个 zhihu_* 工具——14 个只读（搜索/热榜/问题/回答/用户/推荐流/话题/通知/收藏夹）与 4 个发布类工具（readOnly 关闭前不注册）——并在侧栏提供 Web 面板做登录、配置与查询。"

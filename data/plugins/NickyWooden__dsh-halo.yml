@@ -1,0 +1,6 @@
+url: https://github.com/NickyWooden/dsh-halo
+name: NickyWooden/dsh-halo
+category: notify
+description:
+  en: 'One-click publish of DSH conversations as Markdown articles on a Halo CMS blog: confirm in the GUI, type the console password (never stored), and the Q&A record is created through the Halo REST API.'
+  zh: '一键将 DSH 对话发布为 Halo CMS 博客的 Markdown 文章：界面确认、输入控制台密码（永不存储），问答记录通过 Halo REST API 创建。'

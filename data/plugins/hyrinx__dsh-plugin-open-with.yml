@@ -1,0 +1,6 @@
+url: https://github.com/hyrinx/dsh-plugin-open-with
+name: hyrinx/dsh-plugin-open-with
+category: ui
+description:
+  en: 'Adds a capsule split-button to the conversation header: launch VS Code, terminal, or File Explorer at the current workspace directory in one click.'
+  zh: 在 DeepSeek Harness Web 会话头部添加胶囊拆分按钮，一键在当前工作区打开 VS Code、终端和文件资源管理器。

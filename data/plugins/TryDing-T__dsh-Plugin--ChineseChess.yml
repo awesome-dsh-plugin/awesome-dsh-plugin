@@ -1,0 +1,6 @@
+url: https://github.com/TryDing-T/dsh-Plugin--ChineseChess
+name: TryDing-T/dsh-Plugin--ChineseChess
+category: fun
+description:
+  en: 'Side-panel Xiangqi board for DSH: play as red while the current DSH model chooses black moves, with Host-side rule and revision checks.'
+  zh: DSH 侧边栏中国象棋棋盘：用户执红，当前 DSH 模型执黑，Host 负责棋规与局面版本校验。

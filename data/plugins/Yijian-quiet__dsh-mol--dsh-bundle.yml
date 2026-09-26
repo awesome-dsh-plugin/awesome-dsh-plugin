@@ -1,0 +1,6 @@
+url: https://github.com/Yijian-quiet/dsh-mol/tree/main/dsh-bundle
+name: Yijian-quiet/dsh-mol#dsh-bundle
+category: tools
+description:
+  en: "Registers the dsh-mol stdio MCP server, built on RDKit with no network access, into a DSH profile. It exposes 12 tools: three-level SMILES validation with human-readable diagnostics and character positions, molecular properties, drug-likeness and structural alerts, structure rendering to PNG/SVG, multi-molecule grids, format conversion (SMILES, InChI, InChIKey, MOL, SDF, formula), standardisation with a per-step change log, deduplication, SMARTS substructure matching, fingerprint similarity, and batch clean-up that reports every rejected row. The patch only registers the server; the tools live in this repository's Python package and must be installed first — the README gives a `pip install` route and a from-source route, and until the package is on PyPI the from-source one is what works."
+  zh: "把 dsh-mol 的 stdio MCP 服务（基于 RDKit，不联网）接进 DSH profile。它提供 12 个工具：三级 SMILES 校验（人话诊断 + 字符定位）、分子性质、类药性与结构警报、结构图渲染（PNG/SVG）、多分子拼图、格式互转（SMILES/InChI/InChIKey/MOL/SDF/分子式）、标准化（逐步记录改了什么）、去重、SMARTS 子结构匹配、指纹相似度，以及逐条报告失败行的批量清洗。本 patch 只负责注册服务；工具实现在本仓库的 Python 包中，需先安装——README 给了 pip 与源码两条路线，包上架 PyPI 之前，源码那条是可用的。"

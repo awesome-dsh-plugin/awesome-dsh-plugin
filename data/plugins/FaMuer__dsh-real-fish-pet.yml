@@ -1,0 +1,6 @@
+url: https://github.com/FaMuer/dsh-real-fish-pet
+name: FaMuer/dsh-real-fish-pet
+category: fun
+description:
+  en: A 3D-rendered whale desktop pet that swims around the lower-right corner of the dsh web UI and reacts to task events with attention animations and whale-call sounds.
+  zh: 在 dsh web 界面右下角游动的 3D 渲染鲸鱼桌面宠物，任务完成或出错时播放 attention 动画与鲸吟声。

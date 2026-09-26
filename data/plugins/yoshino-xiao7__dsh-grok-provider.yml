@@ -1,0 +1,6 @@
+url: https://github.com/yoshino-xiao7/dsh-grok-provider
+name: yoshino-xiao7/dsh-grok-provider
+category: model
+description:
+  en: 'Grok Build provider using the official CLI browser login, with dynamic account-visible models, streaming reasoning and tools, plus quota and model-capability settings.'
+  zh: Grok Build 模型接入插件：使用官方 CLI 浏览器登录，动态发现账号可见模型，支持流式推理、工具调用、额度与模型能力设置页。

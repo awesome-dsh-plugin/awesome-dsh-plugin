@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-cert-mcp
+name: PerryLink/dsh-cert-mcp
+category: dev
+description:
+  en: Read-only MCP server over the DSH plugin-certification registry, exposing a plugin certification grade, its snapshot and the five-dimension evidence behind it.
+  zh: '基于 DSH 插件认证登记的只读 MCP 服务，对外提供插件的认证等级、其快照以及支撑它的五维证据。'

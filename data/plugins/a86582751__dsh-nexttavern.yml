@@ -1,0 +1,7 @@
+url: https://github.com/a86582751/dsh-nexttavern
+name: a86582751/dsh-nexttavern
+category: fun
+description:
+  en: 'Roleplay workspace for DeepSeek Harness: import SillyTavern/TauriTavern character cards or author one from scratch through an interactive flow; turn a long TXT novel into a playable card with either an intensive or a coarse reading pass; the main agent consults worldbooks on demand, and prose is read in a dedicated tavern reader tab; explore multiple worldlines inside one conversation (regenerate, edit-and-send, explicit clone); scoped style presets with 16 built-in styles, a character agent cluster, a standalone decision card, and card or novel export; long stories hold together through a frozen settings prefix, a hard-cut context window, traceable director notes and keyword/semantic/hybrid recall, with embeddings either online or fully local. Targets Harness 0.1.2-alpha.3 and applies its documented compatibility patches.'
+  zh: '面向 DeepSeek Harness 的角色扮演工作台：人物卡可以导入（SillyTavern／TauriTavern），也可以从零交互式写出一张；长篇 TXT 能改编成可玩的角色卡，精读或粗颗粒度两种读法；主代理按剧情主动查阅世界书，正文在独立的酒馆阅读 TAB 中呈现；同一对话里探索多条世界线（重新生成、改后发送、显式分支）；带作用域的文风预设（16 种自带文风）、角色 Agent 集群、独立决策卡，以及角色卡或小说导出；长篇由固定设定前缀、硬切上下文窗口、可追溯导演笔记与关键词／语义／混合检索撑住，嵌入可用在线服务，也可完全本地运行。面向 Harness 0.1.2-alpha.3，安装需按文档应用显式兼容补丁。'
+tarball: https://github.com/a86582751/dsh-nexttavern/releases/download/v0.2.5/dsh-nexttavern.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/CZ-ZL/duo/tree/main/dsh-plugin
+name: CZ-ZL/duo#dsh-plugin
+category: dev
+description:
+  en: 'DSH plugin for bounded agent evaluation: compare an original with candidate prompt or supported configuration changes against user-supplied checks, record evidence and costs, and leave adoption to the user.'
+  zh: 'DSH 有界智能体评测插件：针对提示词或受支持的配置改动，用用户提供的检查比较原版与候选，记录证据和成本，由用户决定是否采用。'

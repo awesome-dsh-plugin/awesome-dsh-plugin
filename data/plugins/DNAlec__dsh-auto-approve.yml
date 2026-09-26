@@ -1,0 +1,12 @@
+url: https://github.com/DNAlec/dsh-auto-approve
+name: DNAlec/dsh-auto-approve
+category: security
+description:
+  en: >-
+    Automatic approval and review for tool calls that need approval: keyword buckets match red
+    lines without context, then a judge model classifies what was requested and sends it to
+    allow, reject or a human according to the matching row and risk level; a judgment that never
+    ran always goes to a human, and rejections tell the model why.
+  zh: >-
+    自动审批 / 自动审核需要审批的工具调用：先用关键词分桶做零上下文红线匹配，再交由审核模型判类别与风险等级，
+    按命中行与等级那一格决定自动允许、自动拒绝或转人工；判定没跑成固定转人工，自动拒绝会把原因回传给模型。

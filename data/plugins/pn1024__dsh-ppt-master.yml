@@ -1,0 +1,6 @@
+url: https://github.com/pn1024/dsh-ppt-master
+name: pn1024/dsh-ppt-master
+category: skill
+description:
+  en: 'AI-driven presentation workflow packaged as a dsh skill: generates editable PPTX decks and SVG snapshots from PDF, DOCX, URLs or Markdown, fills native PPTX templates, and enhances finished presentations.'
+  zh: 'AI 驱动的演示文稿工作流：从 PDF、DOCX、网址或 Markdown 生成可编辑 PPTX 与 SVG 快照，支持原生 PPTX 模板填充与成品演示文稿增强。'

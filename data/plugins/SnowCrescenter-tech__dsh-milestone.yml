@@ -2,5 +2,5 @@ url: https://github.com/SnowCrescenter-tech/dsh-milestone
 name: SnowCrescenter-tech/dsh-milestone
 category: ui
 description:
-  en: 'Right-side dot-timeline rail: jump between user messages.'
-  zh: 右侧圆点时间轴导航条，点击跳转到任意用户消息。
+  en: 'Git-style dot timeline on the right edge of the DSH web UI: one dot per user message, hover for content and metadata (time, turn, duration, TTFT, tokens), click to jump. Also adds a full-session message list, in-session and cross-session search, bookmarks with #msg= deep links, and keyboard navigation.'
+  zh: 'DSH Web UI 右侧的圆点时间轴：每条提问一个圆点，悬停查看内容与元信息（时间、轮次、耗时、TTFT、token），点击即跳转。附带全会话消息列表、站内与跨会话搜索、书签深链接（#msg=）和键盘导航。'

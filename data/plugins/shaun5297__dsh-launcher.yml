@@ -1,0 +1,6 @@
+url: https://github.com/shaun5297/dsh-launcher
+name: shaun5297/dsh-launcher
+category: workflow
+description:
+  en: 'One-click launcher for DeepSeek Harness: detects whether the backend is running, starts dsh web if needed, waits until ready, then opens the main page in a new Chrome window. Ships a cross-platform CLI (dsh-launcher start / open / status / make-shortcut) and the harness_launch agent tool.'
+  zh: 'DeepSeek Harness 一键启动器：检测后台是否在运行，未运行则启动 dsh web，等待就绪后在新 Chrome 窗口打开主页面。附带跨平台 CLI（dsh-launcher start / open / status / make-shortcut）与 harness_launch agent 工具。'

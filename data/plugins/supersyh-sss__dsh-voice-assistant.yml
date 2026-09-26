@@ -1,0 +1,6 @@
+url: https://github.com/supersyh-sss/dsh-voice-assistant
+name: supersyh-sss/dsh-voice-assistant
+category: voice
+description:
+  en: 'Voice assistant for dsh web: say the wake phrase (e.g. "小鲸") to activate hands-free dictation — what you say is transcribed and typed into the chat box automatically. Supports spoken edit commands (send, clear, new line, stop reading) and reads assistant replies aloud in Chinese. Speech recognition runs locally in-browser via sherpa-onnx WASM, so it works offline without an API key.'
+  zh: dsh web 语音助手：说出唤醒词（如「小鲸」）即可免手听写，说话内容自动转成文字填入输入框；支持口述编辑指令（发送、清空、换行、停止朗读），并可用中文朗读 AI 回复。语音识别基于 sherpa-onnx WASM 在浏览器本地运行，离线可用、无需 API Key。

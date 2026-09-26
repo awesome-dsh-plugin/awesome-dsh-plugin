@@ -2,5 +2,5 @@ url: https://github.com/01Virex/dsh-status-rotator
 name: 01Virex/dsh-status-rotator
 category: ui
 description:
-  en: Replaces the "Deep diving..." turn-status label with rotating meme-worthy phrases, with typewriter and gradient effects.
-  zh: 把回合状态那句 "Deep diving..." 替换成更有梗的自定义文案，按阶段轮换，支持打字机与流动渐变。
+  en: 'Rotates the dsh turn-status label through 1059 bilingual phrases with typewriter output, an animated rainbow gradient, danmaku, 12 toggleable theme packs, live placeholders and tab-title rotation. Two star packs ship disabled by default; the stargazer pack carries one phrase per stargazer, refreshed weekly by a workflow.'
+  zh: '把 dsh 回合状态行换成 1059 条中英文案的轮播：打字机输出、流动彩虹渐变、弹幕、12 个可开关的主题词库包、实时占位符与标签页标题轮换。两个 star 包默认关闭；星标者包每位星标者一条文案，由工作流每周刷新。'

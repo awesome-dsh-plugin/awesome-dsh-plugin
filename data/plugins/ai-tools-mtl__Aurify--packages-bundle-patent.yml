@@ -1,0 +1,6 @@
+url: https://github.com/ai-tools-mtl/Aurify/tree/main/packages/bundle-patent
+name: ai-tools-mtl/Aurify#bundle-patent
+category: tools
+description:
+  en: Patent-writing gatekeeper for dsh - screens the idea against Chinese prior art first, then runs five-party alignment interviews, eight-chapter disclosure drafting, figures and simulation runs, seven-dimension review and docx/PDF export. Skills work out of the box; the search, export and experiment tools come from a bundled Python MCP service that ships disabled - one line in ~/.dsh/patent-services.yaml enables it, and uvx fetches the wheel from PyPI.
+  zh: dsh 专利撰写把关人：动笔前先检索中国专利给出三档结论，再走五方对齐访谈、八章交底书、附图与仿真实验、七维审查与 docx/PDF 导出全流程。技能开箱即用；检索、导出与实验工具来自内置的 Python MCP 服务，默认关闭——在 ~/.dsh/patent-services.yaml 里开一行即启用，uvx 会从 PyPI 自动拉取。

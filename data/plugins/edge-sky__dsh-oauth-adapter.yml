@@ -1,0 +1,6 @@
+url: https://github.com/edge-sky/dsh-oauth-adapter
+name: edge-sky/dsh-oauth-adapter
+category: model
+description:
+  en: Provides an OAuth account page for DSH Web, currently supporting OpenAI Codex, GitHub Copilot, Anthropic, Kimi For Coding, OpenRouter, and xAI.
+  zh: 为 DSH Web 提供 OAuth 账号页面，目前支持 OpenAI Codex、GitHub Copilot、Anthropic、Kimi For Coding、OpenRouter 与 xAI。

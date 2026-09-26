@@ -1,0 +1,6 @@
+url: https://github.com/hherosoul/dsh-smart-charts
+name: hherosoul/dsh-smart-charts
+category: skill
+description:
+  en: "Smart Charts skill: turns CSV/TSV/TXT/XLSX/XLS/JSON data files into standalone interactive ECharts HTML - 32 chart types including offline maps, 3 themes, no CDN. A --profile data profile (per-column dtype, cardinality, missingness, samples, statistics, entity grain, insight signals) lets the agent read the data and pick the chart itself; each chart embeds a fact sheet (plot_stats + data_preview) whose numbers are the only quotable values. LLM transform code runs in a restricted sandbox (blacklist + AST whitelist + safe builtins); --doctor self-checks the Python environment. Fully offline, ECharts bundled."
+  zh: "智能图表 skill：把 CSV/TSV/TXT/XLSX/XLS/JSON 数据文件转为独立交互式 ECharts HTML——32 种图表（含离线地图）、3 套主题、无需 CDN。--profile 数据画像（每列 dtype/基数/缺失/样本/统计、实体粒度、洞察信号）让 agent 自己读懂数据并决定选型；每张图内置事实卡（plot_stats + data_preview），其数值是解读时唯一可引用的数字。LLM 转换代码在受限沙箱（黑名单 + AST 白名单 + 安全 builtins）中执行；--doctor 自检 Python 环境。ECharts 离线打包，完全无需联网。"

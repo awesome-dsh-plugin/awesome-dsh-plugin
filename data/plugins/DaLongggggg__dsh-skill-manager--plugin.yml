@@ -1,0 +1,6 @@
+url: https://github.com/DaLongggggg/dsh-skill-manager/tree/master/plugin
+name: DaLongggggg/dsh-skill-manager#plugin
+category: skill
+description:
+  en: 'Manage installed DeepSeek Harness skills from settings: list, search, view rendered docs, copy content, open the folder, soft-delete to a recoverable trash, and try a skill out.'
+  zh: '在设置中管理 DSH 已安装技能：列表、搜索、查看渲染后的文档、复制内容、打开文件夹、软删除到可恢复的回收站、立即试用。'
