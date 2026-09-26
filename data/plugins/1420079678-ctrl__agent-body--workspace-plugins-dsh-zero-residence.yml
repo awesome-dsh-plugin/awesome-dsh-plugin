@@ -1,0 +1,7 @@
+url: https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-zero-residence
+name: 1420079678-ctrl/agent-body#dsh-zero-residence
+category: usage
+tarball: https://github.com/1420079678-ctrl/agent-body/releases/download/v0.1.1/dsh-external-dsh-zero-residence-0.1.0.tgz
+description:
+  zh: "零驻留上下文引擎：体积大的工具输出被从活动上下文里驱逐到可查询的存储，只留下指针，需要时按原样逐字取回——于是每轮提示词 token 不再随对话长度增长。提供四个能力：zr_recall 按工具调用 id 或会话序号从持久会话日志里还原被遮蔽的原文（内容只是不驻留，从未丢失）、zr_ledger 给出注意力积分与三段成本分解、zr_compact 武装一次强制压缩、zr_fast 异步执行长命令并立即返回句柄。"
+  en: "A zero-residence context engine: large tool payloads are evicted from the live context into a queryable store, only pointers stay behind, and any payload can be reconstructed verbatim on demand — so per-turn prompt tokens stop growing with the transcript. It ships four capabilities: zr_recall rebuilds masked originals by tool-call id or session sequence from the persisted session log (the content is not resident, never lost), zr_ledger reports the attention integral and a three-part cost breakdown, zr_compact arms one forced compaction, and zr_fast runs long commands asynchronously and hands back a handle immediately."
