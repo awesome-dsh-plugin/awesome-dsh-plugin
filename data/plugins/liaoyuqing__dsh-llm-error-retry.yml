@@ -1,0 +1,7 @@
+url: https://github.com/liaoyuqing/dsh-llm-error-retry
+name: liaoyuqing/dsh-llm-error-retry
+category: model
+tarball: https://github.com/liaoyuqing/dsh-llm-error-retry/releases/latest/download/dsh-llm-error-retry.tgz
+description:
+  en: "LLM request retry plugin for DeepSeek Harness: when a model request fails with a configured HTTP status code, machine code, or provider field=value match, it sleeps for the per-rule delay and re-issues the request automatically, so subscription quota and rate-limit errors (429 / insufficient_quota) do not interrupt a run."
+  zh: "大模型请求重试插件：命中配置的 HTTP 状态码、机器码或 provider 返回字段=值时，按该条规则独立配置的时长休眠后自动重新请求，让订阅套餐的限额、限流报错（429 / insufficient_quota）不打断运行。"

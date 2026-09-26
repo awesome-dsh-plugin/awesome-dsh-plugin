@@ -1,0 +1,6 @@
+url: https://github.com/Andiii208/dsh-ultramath
+name: Andiii208/dsh-ultramath
+category: skill
+description:
+  en: 'Multi-agent workflow for math-modeling contests: the "UltraMath" preset runs a problem from reading through framework, derivation, coding, verification, paper and review, plus 4 single-stage role presets (mathematician, engineer, writer, reviewer) and 33 model-library skill docs.'
+  zh: '数学建模竞赛多 Agent 求解工作流：「UltraMath」主控预设一个预设跑通 读题→框架→推导→编码→验算→论文→审稿 全流程，另有 数学家/工程师/作家/审稿人 4 个单阶段角色预设与 33 篇模型库技能文档。'

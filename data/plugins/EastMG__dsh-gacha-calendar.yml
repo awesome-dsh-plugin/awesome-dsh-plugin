@@ -1,0 +1,6 @@
+url: https://github.com/EastMG/dsh-gacha-calendar
+name: EastMG/dsh-gacha-calendar
+category: ui
+description:
+  en: "Anime game banner and event schedule lookup: sidebar button with current banners, events, and countdowns for 11 gacha games, auto-refresh, and per-game selectable sources."
+  zh: "二游卡池/活动排期速查：侧边栏按钮展示 11 款二游的当期卡池与活动起止（含倒计时），支持自动刷新与各游戏独立来源切换。"

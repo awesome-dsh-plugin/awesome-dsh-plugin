@@ -1,0 +1,65 @@
+name: Adopt plugin discussions
+
+# A plugin's comment thread is readable by the widgets on three surfaces only
+# when it sits in the plugin category and its body carries giscus's `sha1`
+# marker (scripts/lib/adopt.mjs has the details and the measurements). A thread
+# created by hand in the GitHub UI has neither, so every surface shows an empty
+# box and giscus quietly opens a second thread beside it. This adopts such
+# threads: appends the marker, moves them into the category. Nothing is
+# deleted, merged or retitled.
+#
+# `discussion` catches a hand-made thread the moment it appears, which is the
+# only trigger that can. The weekly sweep runs the same rules over every
+# thread, which is what re-links threads whose repository was renamed — a
+# rename moves the catalog's slug, and with it the term the widgets ask for.
+#
+# GitHub's docs call discussion webhooks "public preview, subject to change".
+# If the event ever stops firing, the sweep still covers the backlog, so the
+# failure mode is a delay rather than a split conversation.
+
+on:
+  discussion:
+    types: [created]
+  schedule:
+    - cron: '17 4 * * 2' # Tuesdays, off the :00/:30 herd
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Report what would change, write nothing
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  discussions: write
+
+# A sweep and an event run editing the same discussion would race on the body,
+# and the second write would undo the first. Serialize instead of cancelling:
+# the event run is about a thread that just appeared, and a sweep that is
+# half-done is worse than one that waits.
+concurrency:
+  group: adopt-discussions
+  cancel-in-progress: false
+
+jobs:
+  adopt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Adopt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          THREAD: ${{ github.event.discussion.number }}
+        run: |
+          if [ -n "$THREAD" ]; then
+            node scripts/adopt-discussions.mjs --number="$THREAD"
+          elif [ "${{ inputs.dry_run }}" = "true" ]; then
+            node scripts/adopt-discussions.mjs --dry-run
+          else
+            node scripts/adopt-discussions.mjs
+          fi

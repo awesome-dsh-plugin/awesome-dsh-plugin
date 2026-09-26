@@ -1,0 +1,7 @@
+url: https://github.com/lpf20200901/dsh-memory-delta
+name: lpf20200901/dsh-memory-delta
+category: memory
+description:
+  en: Layered cross-session memory for DSH that pushes only what changed. The first round injects every active entry, later rounds push only added / updated / removed ones, and nothing at all is injected when nothing changed. Facts and decisions carry semantic keys (one active truth per key), the model may only write to an inbox that a human promotes, an entry can carry a review date that raises a one-time reminder when it comes due, search is relevance-ranked with Chinese matched by bigram, and a sidebar tab tells the lifecycle story instead of just listing files — entries are grouped into awaiting confirmation / in use / archived, viewable by type, tag or date, and the tab can promote a candidate, withdraw or archive a standing entry, restore an archived one and delete a candidate, alongside the global and workspace instruction files and the current injection size. A zero-dependency CLI ships with it, so the store is usable without DSH.
+  zh: 分层跨会话记忆，只推变化的部分：首轮注入全部有效条目，之后只推新增 / 已更新 / 已失效，没有任何变化时一个字都不注入。事实与决策带语义键（一个 key 只有一个有效结论），模型只能写收件箱、由人确认后才成为常驻事实；条目可以带复核时间，到期后提醒一次；检索按相关度排序，中文按 bigram 匹配；侧边栏页签不再只是列文件，而是讲清流程：条目按「待你确认 / 已在用 / 已归档」分组，可按类型、标签或日期三种维度查看，并能在界面上确认候选、撤回或归档常驻条目、取回已归档条目、删除候选，同时显示全局与工作区规范文件以及当前注入体积。附带零依赖 CLI，不装 DSH 也能用这套记忆库。
+tarball: https://github.com/lpf20200901/dsh-memory-delta/releases/download/v1.1.0/dsh-memory-delta-1.1.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/zeng6125-rgb/dsh-usage-heatmap
+name: zeng6125-rgb/dsh-usage-heatmap
+category: usage
+description:
+  en: 'Token usage dashboard in the DSH settings page: nine metric cards (total, today, yesterday, peak day, longest session, active-day streak, active days, sessions, subagent tokens), a GitHub-style daily/weekly/cumulative heatmap, and an activity insight list, aggregated locally from session logs and projection caches, keeping token history after a session is deleted.'
+  zh: 'DSH 设置页的 Token 用量看板：九宫指标卡（累计/今日/昨日/峰值日/最长会话/连续活跃/活跃天数/会话/子代理 Token）、GitHub 风格每日/每周/累计热力图与活动洞察，全部从本地会话日志与投影缓存聚合，会话被删后历史 token 仍然保留。'
+tarball: https://github.com/zeng6125-rgb/dsh-usage-heatmap/releases/latest/download/dsh-usage-heatmap.tgz

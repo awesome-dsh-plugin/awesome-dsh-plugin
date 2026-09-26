@@ -1,0 +1,7 @@
+url: https://github.com/xie129716/computer-user-vision
+name: xie129716/computer-user-vision
+category: tools
+tarball: https://github.com/xie129716/computer-user-vision/releases/latest/download/computer-user-vision.tgz
+description:
+  en: 'Windows computer use forked from computer-user: 13 computer_* tools that read the screen and drive the mouse and keyboard. Image-capable routes get the screenshot as a real image with an exact image-to-screen mapping, so no external OCR; elements return as UI Automation refs so a click lands on the exact control rectangle; Ctrl+Alt+Esc stops every call.'
+  zh: 'computer-user 分叉的 Windows 电脑操作插件：13 个 computer_* 工具，读取屏幕并驱动鼠标键盘。模型支持图像输入时截图直接作为图片返回，附精确的图像→屏幕映射，无需外接 OCR；控件以 UI Automation 引用返回，点击落在精确矩形上；Ctrl+Alt+Esc 可阻断所有调用。'

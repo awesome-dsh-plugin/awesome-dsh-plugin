@@ -1,0 +1,6 @@
+url: https://github.com/bakasbk/dsh-connect-comate
+name: bakasbk/dsh-connect-comate
+category: model
+description:
+  en: Connects the locally signed-in WPS Comate desktop account to DeepSeek Harness as a model provider, via a secure loopback shim.
+  zh: 通过安全回环 shim，将本机已登录的 WPS Comate 桌面端账号接入 DeepSeek Harness 作为模型来源。

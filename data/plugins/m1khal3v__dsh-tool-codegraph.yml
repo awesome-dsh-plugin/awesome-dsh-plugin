@@ -1,0 +1,6 @@
+url: https://github.com/m1khal3v/dsh-tool-codegraph
+name: m1khal3v/dsh-tool-codegraph
+category: tools
+description:
+  en: Wraps colbymchenry/codegraph into agent tools - status, search, callers/callees, impact, explore, and more.
+  zh: 将 colbymchenry/codegraph 封装到代理工具中 - status、search、callers/callees、impact、explore 等等。

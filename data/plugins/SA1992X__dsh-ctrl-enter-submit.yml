@@ -1,0 +1,6 @@
+url: https://github.com/SA1992X/dsh-ctrl-enter-submit
+name: SA1992X/dsh-ctrl-enter-submit
+category: ui
+description:
+  en: Makes plain Enter insert a newline in the composer and Ctrl/Cmd+Enter submit, toggleable in settings.
+  zh: 让对话框中普通 Enter 换行、Ctrl/Cmd+Enter 提交，可在设置中开关。

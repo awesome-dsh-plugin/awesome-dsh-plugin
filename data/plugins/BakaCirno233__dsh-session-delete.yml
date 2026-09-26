@@ -1,0 +1,6 @@
+url: https://github.com/BakaCirno233/dsh-session-delete
+name: BakaCirno233/dsh-session-delete
+category: session
+description:
+  en: 'Session management for DeepSeek Harness: list every stored session with its on-disk size, search by title, session id, kind tag, workspace or agent preset, and group them by age or by workspace. Permanently delete one or many at once — the log artifact, the workspace account entry and the search index rows — behind a two-step confirm, with a re-check after every deletion. Subagent sessions can be shown on demand; Side Chat threads stay hidden, and sessions live in the current app run are refused until restart.'
+  zh: 'DSH 会话管理：列出全部会话并显示各自的磁盘占用，可按标题、会话 ID、类型标签、工作区或 agent preset 搜索，并按时间或工作区分组。支持单个或批量永久删除——同时清除日志文件、工作区账目与搜索索引，删除前两步确认、删除后复验；可按需显示子代理会话，侧边对话线程始终隐藏，本次启动中活动的会话会被拒绝直到重启。'

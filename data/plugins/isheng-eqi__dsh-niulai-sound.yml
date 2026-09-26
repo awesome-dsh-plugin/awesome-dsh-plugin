@@ -1,0 +1,6 @@
+url: https://github.com/isheng-eqi/dsh-niulai-sound
+name: isheng-eqi/dsh-niulai-sound
+category: notify
+description:
+  en: 'Approval sound effects from the movie NiuLai: plays 「妈妈」 when user confirmation is requested, interrupts it and plays 「牛来！」 the moment the user approves; native Windows playback, zero external dependencies.'
+  zh: '牛来确认音：请求用户确认时播放「妈妈」，批准瞬间掐断并播放「牛来！」；梗源电影《牛来》，Windows 原生播放，零外部依赖。'

@@ -1,0 +1,6 @@
+url: https://github.com/mimateinn/dsh-i18n
+name: mimateinn/dsh-i18n
+category: ui
+description:
+  en: Adds 20 locales (Traditional Chinese HK/TW, Japanese, Korean, French, German, Spanish, Portuguese, Italian, Russian, Ukrainian, Polish, Dutch, Turkish, Arabic, Hindi, Indonesian, Vietnamese, Thai, Swedish) to the DeepSeek Harness Web UI, with hand-polished translations, runtime fallbacks, and automatic translation of market and third-party text.
+  zh: 为 DeepSeek Harness 界面新增 20 种语言（繁体中文香港/台湾、日语、韩语、法语、德语、西班牙语、葡萄牙语、意大利语、俄语、乌克兰语、波兰语、荷兰语、土耳其语、阿拉伯语、印地语、印尼语、越南语、泰语、瑞典语），逐条精译并带运行时兜底，另加自动翻译，把市场与第三方文本翻译成你的语言。

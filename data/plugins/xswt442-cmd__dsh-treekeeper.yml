@@ -1,0 +1,6 @@
+url: https://github.com/xswt442-cmd/dsh-treekeeper
+name: xswt442-cmd/dsh-treekeeper
+category: dev
+description:
+  en: 'Windows process-tree reconciler for the DSH host: samples the host process tree and the job ledger, attributes each process to the job that created it, flags unattributed and orphaned processes with a confidence level, and offers guarded termination of a whole tree. Termination is refused unless the target belongs to the DSH host tree, is re-sampled and re-checked immediately before the kill (creation time included), and contains no protected descendant, so an allowlisted PID cannot widen the kill scope.'
+  zh: 'DSH 宿主的 Windows 进程树对账插件：采样宿主进程树与任务账本，把每个进程归属到创建它的任务，并按置信度标出未归属与孤儿进程，同时提供受保护的整树终止。终止必须满足：目标归属于 DSH 宿主树、在动手前重新采样复核（含创建时间）、目标树内不含受保护后代，因此白名单 PID 不会扩大可杀范围。'

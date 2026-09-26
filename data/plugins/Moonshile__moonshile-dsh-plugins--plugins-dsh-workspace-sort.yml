@@ -1,0 +1,6 @@
+url: https://github.com/Moonshile/moonshile-dsh-plugins/tree/main/plugins/dsh-workspace-sort
+name: Moonshile/moonshile-dsh-plugins#dsh-workspace-sort
+category: ui
+description:
+  en: 'Re-sorts sidebar workspaces by last activity once per day; stable order within the day.'
+  zh: '侧边栏工作区每日按最近活动排序一次，当天顺序稳定。'

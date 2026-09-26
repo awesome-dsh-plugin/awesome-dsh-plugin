@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-defend
+name: PerryLink/dsh-defend
+category: security
+description:
+  en: Detects prompt-injection, jailbreak, and secret-leak patterns on the agent/pre-step, tools/pre-execute, and tools/post-execute seams with allow/ask/block tiers, sanitized defend/detection audit events, a defend_report tool, and a destructive-delete command guard.
+  zh: 在 agent/pre-step、tools/pre-execute、tools/post-execute 三个接缝检测提示词注入、越狱与密钥泄露，按 allow/ask/block 分层拦截，附脱敏 defend/detection 审计事件、defend_report 工具与危险删除命令门禁。

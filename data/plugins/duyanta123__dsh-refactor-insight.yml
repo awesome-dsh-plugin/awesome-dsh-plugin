@@ -1,0 +1,6 @@
+url: https://github.com/duyanta123/dsh-refactor-insight
+name: duyanta123/dsh-refactor-insight
+category: dev
+description:
+  en: 'Turn codebase smells into an executable, priority-ordered refactoring plan: file-length / deep-nesting / function-length / god-object heuristics plus a staged runbook (read-only, no auto-rewrite).'
+  zh: 重构入口诊断：把代码库坏味道（超长文件/深嵌套/超长函数/上帝对象）转成带定位、优先级与依赖顺序的重构计划（只读不自动改码）。

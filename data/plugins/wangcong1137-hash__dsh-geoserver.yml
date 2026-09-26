@@ -1,0 +1,6 @@
+url: https://github.com/wangcong1137-hash/dsh-geoserver
+name: wangcong1137-hash/dsh-geoserver
+category: tools
+description:
+  en: Read GeoServer WMS services and render map images in the dsh web GUI, with a settings card for server, username, and password.
+  zh: 在 dsh web GUI 中读取 GeoServer WMS 服务并渲染地图图像，带服务器地址、用户名和密码设置卡片。

@@ -1,0 +1,6 @@
+url: https://github.com/lhbsaa/dsh-visibridge
+name: lhbsaa/dsh-visibridge
+category: vision
+description:
+  en: 'Structured vision evidence (OCR/layout/semantics) plus a USB camera capture tool for a "shoot-look-adjust" debug loop; backends: Ollama, DeepSeek, Xiaomi.'
+  zh: '结构化视觉证据（OCR/版面/语义）+ USB 摄像头拍摄工具，支持"拍-看-改"调试闭环；后端支持 Ollama、DeepSeek、小米。'

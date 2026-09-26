@@ -2,5 +2,5 @@ url: https://github.com/LaoYueHanNi/dsh-token-usage
 name: LaoYueHanNi/dsh-token-usage
 category: usage
 description:
-  en: 'Per-request model token usage tracked to per-day JSONL files, with a stats page in Web settings: daily trend chart, per-model breakdown, and date/model filters.'
-  zh: 按请求持久化模型 token 用量，Web 设置「Token 用量」统计页：按日趋势图、按模型明细表、日期/模型筛选。
+  en: 'Detailed model usage and cost analysis, with per-session usage stats and usage queries for GLM, MiniMax, OpenCode Go, DeepSeek and more.'
+  zh: 详细的模型用量、费用分析，支持会话级用量统计，支持GLM、MiniMax、OpenCode Go、DS等用量查询。

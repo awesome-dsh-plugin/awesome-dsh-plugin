@@ -1,0 +1,6 @@
+url: https://github.com/jiaererw/dsh-plugin-chrome
+name: jiaererw/dsh-plugin-chrome
+category: browser
+description:
+  en: 'A visible Chrome window per DSH session: 16 chrome_* tools (open/status/close/navigate/tabs/snapshot/screenshot/click/click_at/fill/type/press_key/hover/scroll/evaluate/wait), a Chrome tab in the Web GUI with a live screencast view (screenshot-heartbeat fallback for idle pages), tab management, window controls and a screenshot history.'
+  zh: '每个 DSH 会话一个可见的 Chrome 窗口：16 个 chrome_* 工具（打开/状态/关闭/导航/标签/快照/截图/点击/坐标点击/填写/输入/按键/悬停/滚动/执行脚本/等待），Web GUI 的 Chrome 标签页提供实时画面流（静止页截图心跳兜底）、标签页管理、窗口控制与截图历史。'

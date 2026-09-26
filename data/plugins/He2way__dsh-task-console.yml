@@ -1,0 +1,7 @@
+url: https://github.com/He2way/dsh-task-console
+name: He2way/dsh-task-console
+category: ui
+description:
+  en: 'Flip the DSH page over to a glass task board showing live jobs, subagents and session state, with an infinite canvas that unrolls a card into draggable controls, embedded web-app frames, and a conversation box that edits the canvas.'
+  zh: '把 DSH 页面翻到背面变成玻璃任务台（会话 / 后台任务 / 子代理 / 工作区卡片），并提供无限画布：能把卡片拆成可拖动的控件、内嵌网页应用，还能用对话框直接改画布。'
+tarball: https://github.com/He2way/dsh-task-console/releases/latest/download/dsh-task-console.tgz

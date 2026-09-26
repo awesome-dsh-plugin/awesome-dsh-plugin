@@ -1,0 +1,6 @@
+url: https://github.com/CheeseFox259/dsh-better-composer
+name: CheeseFox259/dsh-better-composer
+category: ui
+description:
+  en: 'Markdown visual enhancement and session workbench for DSH Web Composer: live syntax presentation with caret-row source reveal, deterministic local completions and diagnostics; long pastes fold into persistent chips with inline context or file-mode delivery (@path across 50+ extensions) plus sidebar LLM rewrites (stop, preview diff, undo/redo); real-time context map with token gauge, composition breakdown, per-turn growth chart with anchor lines, in-place /compact, and turn forking.'
+  zh: 'DSH Web Composer 视觉增强与会话工作台：实时 Markdown 呈现与光标行源码还原、确定性本地补全与语法诊断；超长粘贴自动收纳为持久化引用 chip，支持直接内联或文件送达（支持 50+ 种扩展名），并在右栏抽屉提供大模型智能改写（支持中止、预览对比、应用与撤销重做）；集成实时上下文地图，包含 Token 仪表盘、构成穿透钻取、逐轮增长图与锚定刻线、一键 /compact 及会话分叉。'

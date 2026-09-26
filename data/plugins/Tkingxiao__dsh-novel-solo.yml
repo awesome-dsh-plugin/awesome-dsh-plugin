@@ -1,0 +1,6 @@
+url: https://github.com/Tkingxiao/dsh-novel-solo
+name: Tkingxiao/dsh-novel-solo
+category: workflow
+description:
+  en: '"Single-Core Writing" plugin for DeepSeek Harness: Thoroughly tool-streamlined and output-hardened for quantized small models, suitable for running long-novel pipelines locally with on-device models.'
+  zh: DeepSeek Harness 的「单核写作」插件：面向量化小模型做了充分的工具瘦身与输出加固，适合在本机用本地模型跑长篇小说流水线。

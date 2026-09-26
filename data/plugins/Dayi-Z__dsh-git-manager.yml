@@ -1,0 +1,6 @@
+url: https://github.com/Dayi-Z/dsh-git-manager
+name: Dayi-Z/dsh-git-manager
+category: git
+description:
+  en: 'A GitHub-connected visual git manager for DeepSeek Harness: guided GitHub-Flow steps, commit graph with PR/CI badges, one-click GitHub login, PR and issue management, and structured git tools for the agent. Renamed from gitcompass in 2.0.0.'
+  zh: '为 DeepSeek Harness 提供 GitHub 联动的可视化 Git 管理：引导式 GitHub Flow 步骤、带 PR/CI 徽章的提交图谱、一键 GitHub 登录、PR 与 issue 管理，以及面向 Agent 的结构化 Git 工具。2.0.0 起由 gitcompass 改名而来。'

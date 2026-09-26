@@ -1,0 +1,6 @@
+url: https://github.com/yanglingrise/dsh-erii-boot-splash
+name: yanglingrise/dsh-erii-boot-splash
+category: ui
+description:
+  en: Erii (Sakura) themed boot splash animation — falling sakura petals, a mint monster mascot with a blossom on its head, and a soft pink progress bar; fades out after ~3 seconds without blocking input.
+  zh: 绘梨衣（Sakura）主题启动加载动画——樱花瓣飘落、头戴樱花的小怪兽、粉色进度条，约 3 秒自动淡出且不阻挡操作。

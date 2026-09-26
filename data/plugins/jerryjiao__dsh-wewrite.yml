@@ -1,0 +1,6 @@
+url: https://github.com/jerryjiao/dsh-wewrite
+name: jerryjiao/dsh-wewrite
+category: workflow
+description:
+  en: 'WeChat official account AI writing pipeline: six-step article runs (topic, outline, draft, gates, render, images) with a launch brief contract, a hot-topic board with per-item AI digests, RRULE scheduling to the draft box, a workbench UI plus chat tools and a /wewrite command, and fail-closed host approval before any draft-box push.'
+  zh: '公众号 AI 写作管线：六步成文（选题、大纲、成稿、门禁、渲染、配图）+ 启动 brief 合同、热榜逐条 AI 速览、RRULE 定时推草稿箱、写作台与对话工具（/wewrite 命令与 @ 引用），推送草稿箱前经宿主审批 fail-closed 确认。'

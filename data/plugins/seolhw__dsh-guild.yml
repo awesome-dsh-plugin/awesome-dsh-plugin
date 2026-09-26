@@ -1,0 +1,6 @@
+url: https://github.com/seolhw/dsh-guild
+name: seolhw/dsh-guild
+category: notify
+description:
+  en: Discord-like communities in DSH with channels, roles and permissions, message search, and sharing or cloning of DSH sessions.
+  zh: 在 DSH 面板内建社区：文字、公告与话题频道，角色与频道级权限，消息搜索，并可分享和克隆 DSH 会话。

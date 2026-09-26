@@ -1,0 +1,6 @@
+url: https://github.com/HaoyueQin/dsh-deepseek-monitor
+name: HaoyueQin/dsh-deepseek-monitor
+category: usage
+description:
+  en: 'Official DeepSeek platform monitoring inside the provider card: a live balance chip left of the composer model name plus an expandable account-details panel with per-model monthly usage and a daily stacked chart.'
+  zh: '在官方供应商卡片内实时监控 DeepSeek 余额与开放平台用量——输入框工具行模型名称左侧的余额 chip，可展开的账户明细面板含按模型用量与每日堆叠图表。'

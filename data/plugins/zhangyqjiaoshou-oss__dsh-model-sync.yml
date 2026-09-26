@@ -1,0 +1,6 @@
+url: https://github.com/zhangyqjiaoshou-oss/dsh-model-sync
+name: zhangyqjiaoshou-oss/dsh-model-sync
+category: model
+description:
+  en: One-click/auto sync provider model lists against /v1/models endpoint.
+  zh: 一键同步 / 自动同步供应商模型列表，与 /v1/models 保持一致。

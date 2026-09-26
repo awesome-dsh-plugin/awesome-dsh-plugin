@@ -1,0 +1,6 @@
+url: https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/web-style
+name: Yinxe/deepseek-harness-plugins#web-style
+category: theme
+description:
+  en: 'Web appearance suite with a 7-theme gallery (each a full 122-token --dsw-* mapping) plus one-click switching persisted in settings, Material You wallpaper color extraction that generates a whole dynamic palette, and a global corner-radius control. Themes ride on the official look system as override layers instead of fighting it, so the official light/dark/auto row stays valid.'
+  zh: 'Web 外观定制套件：7 套主题画廊（每套 122 个 --dsw-* token 全量映射）+ 设置页一键切换并持久化，Material You 壁纸取色一键生成整套动态配色（可导出 MD3 令牌），另带全局圆角三档。主题以官方 overrideTokens 覆盖层叠加在官方亮/暗之上，官方外观行永远合法可用。'

@@ -1,0 +1,6 @@
+url: https://github.com/yanglaofish/dsh-proxy-pro
+name: yanglaofish/dsh-proxy-pro
+category: tools
+description:
+  en: "Routes model requests, web fetches/searches and spawned tools through the Windows system proxy or a custom address — idempotent kernel (reads never rebuild the dispatcher), header one-click toggle, per-URL route diagnosis and NTLM-aware 407 hints."
+  zh: "把模型请求、web 抓取/搜索与衍生工具统一路由到 Windows 系统代理或自定义地址——幂等内核（读操作不重组分发器）、头部一键开关、按 URL 路由诊断与 NTLM 认证提示。"

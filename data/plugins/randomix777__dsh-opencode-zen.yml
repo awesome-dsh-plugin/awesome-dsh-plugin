@@ -1,0 +1,6 @@
+url: https://github.com/randomix777/dsh-opencode-zen
+name: randomix777/dsh-opencode-zen
+category: model
+description:
+  en: 'Bring OpenCode Zen free models to DSH: 8 live-discovered providers with zero config, no API key; includes persistent quota tracker with rate-limit detection and reset countdown.'
+  zh: '把 OpenCode Zen 免费模型接入 DSH：8 个实时发现的免费模型，零配置无需 API key；内置持久化额度检测器，自动追踪 429 限流并显示重置倒计时。'

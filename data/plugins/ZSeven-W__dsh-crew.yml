@@ -1,0 +1,6 @@
+url: https://github.com/ZSeven-W/dsh-crew
+name: ZSeven-W/dsh-crew
+category: workflow
+description:
+  en: 'Dispatch work to DSH agents from Claude Code or Codex: native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge for vision and image generation.'
+  zh: '从 Claude Code / Codex 派发任务给 DSH Agent：原生子代理进度、按能力分层预设的宿主内工作会话，以及为纯文本 Harness 提供视觉与图像生成的多模态桥。'

@@ -1,0 +1,6 @@
+url: https://github.com/Pasumao/dsh-plugin-notify
+name: Pasumao/dsh-plugin-notify
+category: notify
+description:
+  en: 'Adds Windows-native toast notifications and a system tray icon to dsh: alerts when the agent finishes, stops, or errors, with a tray menu to reopen the web page or quit the background process.'
+  zh: 为 dsh 添加 Windows 原生 Toast 通知与系统托盘图标：agent 完成、停止或出错时弹通知，托盘菜单可重新打开网页或退出后台进程。

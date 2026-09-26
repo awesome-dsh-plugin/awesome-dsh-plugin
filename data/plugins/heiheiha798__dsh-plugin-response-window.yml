@@ -1,0 +1,6 @@
+url: https://github.com/heiheiha798/dsh-plugin-response-window
+name: heiheiha798/dsh-plugin-response-window
+category: ui
+description:
+  en: Web UI plugin that folds each staged response's think and tool calls into per-segment bounded, scrollable slide windows with a configurable height, keeping every intermediate response visible.
+  zh: Web UI 插件：以阶段性文字回复为界分段，把每段的 think 与工具调用收进限高可滚动、高度可配置的 slide 窗口，中间过程始终可见。

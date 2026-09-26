@@ -2,5 +2,5 @@ url: https://github.com/haoku123/dsh-voice
 name: haoku123/dsh-voice
 category: voice
 description:
-  en: 'Full-duplex voice mode for the Web UI: a composer mic (RMS endpoint detection) transcribes speech with whisper running locally in the browser, assistant replies stream back as spoken audio sentence-by-sentence, and speaking interrupts playback and the running turn (true barge-in). No API key.'
-  zh: Web UI 全双工语音对话：输入框麦克风（RMS 端点检测）配合浏览器本地 whisper 转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
+  en: 'Full-duplex voice mode for the Web UI: tap-to-toggle or hold-to-talk dictation (send key or `Ctrl`) with a live caption, host-side SenseVoice ASR via sherpa-onnx, sentence-by-sentence spoken replies, and speaking interrupts playback and the running turn (true barge-in). No API key.'
+  zh: 'Web UI 全双工语音对话：点按切换或按住说话（发送键或 `Ctrl`）并显示实时字幕，宿主端 SenseVoice（sherpa-onnx）转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。'

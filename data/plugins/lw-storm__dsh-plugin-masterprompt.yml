@@ -1,0 +1,6 @@
+url: https://github.com/lw-storm/dsh-plugin-masterprompt
+name: lw-storm/dsh-plugin-masterprompt
+category: identity
+description:
+  en: 'Per-conversation persona / master prompt plugin: create, edit, switch and delete persona templates from the composer toolbar, with highest-priority system-prompt injection, fixed interaction guardrails, subagent inheritance, new-conversation default, and local JSON persistence.'
+  zh: 每对话独立的人设 / 主提示词插件：在输入框工具栏创建、编辑、切换和删除人设模板，最高优先级系统提示注入，附带固定交互护栏、子代理继承、新对话默认继承与本地 JSON 持久化。

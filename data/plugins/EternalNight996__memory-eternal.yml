@@ -1,0 +1,6 @@
+url: https://github.com/EternalNight996/memory-eternal
+name: EternalNight996/memory-eternal
+category: memory
+description:
+  zh: "自研 DSH 记忆插件：SQLite 持久存储 + 数据库层审核守卫（enforceAudit）+ 审计日志。对话结束自动沉淀知识卡，Agent 经 memory_recall 按需召回，支持 Claude Code/Codex/Cursor 多智能体共享，零外部依赖。"
+  en: "Self-built DSH memory plugin: SQLite persistent storage + database-level audit guard (enforceAudit) + audit log. Auto-captures knowledge after conversations, agents recall via memory_recall, supports Claude Code/Codex/Cursor multi-agent sharing. Zero external dependencies."

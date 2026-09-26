@@ -1,0 +1,6 @@
+url: https://github.com/WJZ-P/dsh-model-capabilities
+name: WJZ-P/dsh-model-capabilities
+category: model
+description:
+  en: Adds an input-modality selector to custom model settings in the DeepSeek Harness Web UI.
+  zh: 为 DeepSeek Harness Web UI 的自定义模型设置添加输入模态选择器。

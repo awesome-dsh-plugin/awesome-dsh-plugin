@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/skills-management
+name: weibaohui/skills-management
+category: skill
+description:
+  en: "Skill marketplace and manager: manage skills from all local coding agents (10+ executors, incl. Claude Code and Codex) in one page and import them into the DSH skill library; built-in market of 6600+ skills, per-skill token-overhead stats, and model visibility control."
+  zh: 技能市场：一个页面管理本机所有 coding agent 的技能，一键收编进 DSH 用户库；内置 6600+ 技能市场，支持注入开销（≈token）统计与模型可见性治理。

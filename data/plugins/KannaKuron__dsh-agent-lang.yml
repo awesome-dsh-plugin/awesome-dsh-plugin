@@ -1,0 +1,6 @@
+url: https://github.com/KannaKuron/dsh-agent-lang
+name: KannaKuron/dsh-agent-lang
+category: model
+description:
+  en: 'Three independent language channels for model output — tool-call descriptions (every tool-call card title, including run_code in PTC-style presets), thinking, and replies — each set to follow the web GUI language, force a specific language, or turn off (default: only descriptions, following the GUI). One global runtime-context prompt directive on the host; the client half reports the GUI language; a Settings plugin card switches the modes.'
+  zh: '模型产出文本的三个语言通道——工具调用描述（所有工具调用卡片标题，含 PTC 类预设的 run_code）、思考与回复——各自可跟随网页界面语言、强制指定语言或关闭（默认仅描述通道跟随界面语言）。host 侧注入一条全局 runtime-context 提示指示，client 半上报界面语言，设置里的插件卡片负责切换。'

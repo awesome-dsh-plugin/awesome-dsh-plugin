@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/subtitle-studio
+name: JohnXu22786/subtitle-studio
+category: tools
+description:
+  en: "Multi-language subtitle translation workflow for dsh: SRT/VTT parsing, sentence-level LLM translation, bilingual merge, batched with resumable checkpoints."
+  zh: "多语言字幕翻译工作流：SRT/VTT 解析、逐句 LLM 翻译、双语合并；批量处理支持断点续跑。"

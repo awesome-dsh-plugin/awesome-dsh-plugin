@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-session-steward
+name: drscrewdriver/dsh-session-steward
+category: session
+description:
+  en: 'Session Steward for DSH: browse and bulk-prune the official session archive set, and run a four-gate health checkup (log integrity, projection cache, lossless JSON, cold read) that ends in a reversible, backup-first prescription. Never rewrites session logs.'
+  zh: 面向 DSH 的会话管家：浏览并批量清理官方会话归档集合，并对会话做四门体检（日志完整性 / 投影缓存 / 无损 JSON / 冷读），最终给出可逆、先备份的处方。不改写会话日志。

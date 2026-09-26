@@ -1,0 +1,6 @@
+url: https://github.com/nishit130/dsh-notification
+name: nishit130/dsh-notification
+category: notify
+description:
+  en: Desktop and webhook alerts on macOS, Linux and Windows when an agent finishes a turn, errors, or waits for approval — zero-dependency native notifications (osascript / notify-send / PowerShell toast) plus a Slack-compatible webhook, with a configurable minimum turn duration.
+  zh: '桌面与 webhook 通知：任务完成、出错或等待审批时提醒；零依赖，走系统自带的 osascript / notify-send / PowerShell toast，并支持 Slack 兼容的 webhook，可配置最短回合时长。'

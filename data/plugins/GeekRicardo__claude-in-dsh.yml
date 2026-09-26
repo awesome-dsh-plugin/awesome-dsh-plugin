@@ -1,0 +1,6 @@
+url: https://github.com/GeekRicardo/claude-in-dsh
+name: GeekRicardo/claude-in-dsh
+category: model
+description:
+  en: 'Hand a DSH web session to the locally installed Claude Code CLI: a per-session engine selector (DSH | Claude Code), Claude models and reasoning effort in the model seat, Claude permission modes in place of the access-mode selector, and permission requests, AskUserQuestion and ExitPlanMode routed to the native DSH approval, question and plan-review cards. The stream is written as native DSH session events, so the built-in transcript, tool cards and nested subagents render it; Claude slash commands merge into the command palette; the CLI is held by a detached broker, so plugin updates and DSH restarts do not interrupt a running turn.'
+  zh: '把一个 dsh web 会话交给本机 Claude Code CLI 驱动：输入框内的引擎选择器（DSH | Claude Code）按会话切换，模型座换成 Claude 的模型与 reasoning effort，访问模式换成 Claude 权限档；权限请求、AskUserQuestion、ExitPlanMode 分别接到 dsh 原生的审批卡、提问卡与计划审核卡。Claude 的流写成 dsh 原生会话事件，由内建转录、工具卡片与嵌套子 agent 渲染；斜杠命令并入命令面板；CLI 由独立 broker 持有，插件更新与 dsh 重启都不中断进行中的轮次。'

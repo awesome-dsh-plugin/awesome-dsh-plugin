@@ -1,0 +1,6 @@
+url: https://github.com/GeekRicardo/dsh-cordis-mcp
+name: GeekRicardo/dsh-cordis-mcp
+category: dev
+description:
+  en: 'Exposes the DSH dynamic-Cordis toolset to Claude Code over MCP (streamable HTTP on the existing web port, no new listener): ten tools to list, inspect, define, run, stop and permanently remove dynamic plugins in a live DSH session, with the same approval flow the GUI uses for packages that ship a client half. Bearer auth is mandatory — the token is configured on a DSH settings page, the endpoint answers 503 rather than serve without one, accepts loopback only and never emits CORS headers.'
+  zh: '把 DSH 的动态 Cordis 工具集以 MCP（streamable HTTP，挂在现有 web 端口上，不新开监听）暴露给 Claude Code：10 个工具，可列出、查看、定义、运行、停止与永久删除某个活 DSH 会话里的动态插件；含 client half 的包仍走 GUI 那套审批流。强制 Bearer 认证——token 在 DSH 设置页配置，未配置时端点直接 503 而不是降级放行，只接受回环访问，且永不返回 CORS 头。'

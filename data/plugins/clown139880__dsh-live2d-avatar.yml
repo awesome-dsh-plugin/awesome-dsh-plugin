@@ -1,0 +1,6 @@
+url: https://github.com/clown139880/dsh-live2d-avatar
+name: clown139880/dsh-live2d-avatar
+category: ui
+description:
+  en: 'Live2D avatar stage and desktop companion for DSH: bundled Haru sample, custom Cubism 2/3+ model loading with scale and position controls, a draggable in-page pet, an optional transparent always-on-top desktop pet window, per-conversation expression prompt control, and opt-in voice with self-hosted ASR/TTS.'
+  zh: 'DSH 的 Live2D 形象舞台与桌宠：内置 Haru 示例、自定义 Cubism 2/3+ 模型加载与缩放/位置控制、页面内可拖动桌宠、可选透明置顶桌面独立桌宠窗口、按对话授权的表情 control prompt，以及默认关闭、需自部署 ASR/TTS 的语音功能。'

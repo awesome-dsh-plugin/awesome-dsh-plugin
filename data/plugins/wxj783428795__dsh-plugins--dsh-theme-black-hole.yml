@@ -1,0 +1,7 @@
+url: https://github.com/wxj783428795/dsh-plugins/tree/main/dsh-theme-black-hole
+name: wxj783428795/dsh-plugins#dsh-theme-black-hole
+category: theme
+description:
+  en: 'A switchable WebGPU black-hole theme for the DeepSeek Harness Web UI that retains the built-in Dark palette and animates only the new-session background.'
+  zh: '适用于 DeepSeek Harness Web UI 的可切换 WebGPU 黑洞主题：沿用内置深色配色，仅在新会话页面显示动态背景。'
+tarball: https://github.com/wxj783428795/dsh-plugins/releases/latest/download/dsh-theme-black-hole.tgz

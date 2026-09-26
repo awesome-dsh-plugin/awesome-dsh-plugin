@@ -1,0 +1,6 @@
+url: https://github.com/libiwolve/dsh-experience-library
+name: libiwolve/dsh-experience-library
+category: skill
+description:
+  zh: "DSH 经验验证固化层：零 token 采集工具失败/重试/搜索信号，加工轮提炼成经三层检验的技能书，任务开局翻书复用。内置 10 本试验经验 + benchmark 数据（复杂任务成功率 100% vs 裸环境 60%）。"
+  en: "Experience validation layer for DSH: zero-token collection of tool-failure/retry/search signals, AI refinement into verified skill books (three-layer verification), looked up at task start. Ships 10 trial skills and benchmark data (complex-task success 100% vs 60% bare)."

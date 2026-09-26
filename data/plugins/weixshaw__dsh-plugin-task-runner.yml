@@ -1,0 +1,6 @@
+url: https://github.com/weixshaw/dsh-plugin-task-runner
+name: weixshaw/dsh-plugin-task-runner
+category: workflow
+description:
+  en: 'Task Runner mode for DeepSeek Harness: the main agent decomposes large tasks into independent subtasks, dispatches them to subagents (default local model) in fresh short contexts, and synthesizes results; concurrency and worker/orchestrator models are configurable in the settings panel.'
+  zh: '任务拆解模式：主代理把大任务拆成独立子任务，派给子代理（默认本地模型）在全新短上下文中执行并综合结果；并发数与模型可在设置面板图形化配置。'

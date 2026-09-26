@@ -2,5 +2,5 @@ url: https://github.com/Anionex/dsh-vision-toolkit
 name: Anionex/dsh-vision-toolkit
 category: vision
 description:
-  en: 'Vision tasks for text-only models: intent-aware image Q&A, long-screenshot OCR, UI reproduction, grounding, and pixel diff.'
-  zh: 让纯文本模型更好地做视觉任务：带意图的图片问答、长截图 OCR、UI 还原等。
+  en: 'Vision for text-only models: paste an image and the model switches to a Vision Toolkit variant for image Q&A, multi-image comparison, long-screenshot OCR, screenshot-to-UI reproduction, element grounding, and pixel diff. No API key by default — images are processed by the author-hosted free service, 100 per machine per day; configurable to your own provider.'
+  zh: '让纯文本模型处理视觉任务：粘贴图片后自动切换到 Vision Toolkit 变体，支持图片问答、多图比较、长截图 OCR、截图还原前端 UI、元素定位与像素对比。默认无需 API Key——图片经作者自建的免费服务处理，每台机器每天 100 张；也可改为指向自己的服务商。'

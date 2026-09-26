@@ -1,0 +1,6 @@
+url: https://github.com/Web0926/dsh-llm-verifier
+name: Web0926/dsh-llm-verifier
+category: git
+description:
+  en: Runs 3 or 5 coding-agent candidates in detached Git worktrees, validates their patches with project commands, ranks only passing candidates, and requires separate approval before applying the winner.
+  zh: 在独立 Git worktree 中运行 3 或 5 个编码智能体候选，用项目命令验证补丁，只对通过者排序，并在应用获胜补丁前要求再次批准。

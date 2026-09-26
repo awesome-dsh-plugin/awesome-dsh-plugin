@@ -1,0 +1,6 @@
+url: https://github.com/fourzkw/dsh-drawai
+name: fourzkw/dsh-drawai
+category: tools
+description:
+  en: 'An editable diagram canvas in the DSH sidebar plus two agent tools (diagram_read, diagram_apply) that read and edit the workspace in place, using native .drawio files: the canvas opens and saves them losslessly — cells it does not understand are preserved byte-for-byte — and a file-fingerprint revision powers optimistic locking against concurrent edits.'
+  zh: 'DSH 侧边栏的可编辑画布，加两个模型工具（diagram_read、diagram_apply），直接读写工作区、载体是原生 .drawio 文件：无损写回让画布读不懂的单元逐字节保留，文件指纹 revision 支撑起对并发编辑的乐观锁。'

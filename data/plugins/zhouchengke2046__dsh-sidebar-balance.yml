@@ -1,0 +1,6 @@
+url: https://github.com/zhouchengke2046/dsh-sidebar-balance
+name: zhouchengke2046/dsh-sidebar-balance
+category: usage
+description:
+  en: DeepSeek Harness plugin that shows the DeepSeek API account balance and OpenCode Go plan usage (consumption ring, hover details) in the sidebar footer, with adaptive polling and zh/en locale support.
+  zh: DSH Web 插件:在侧边栏底部显示 DeepSeek API 余额与 OpenCode Go 套餐用量(消耗圆环、悬浮详情),自适应轮询,支持中英文。

@@ -1,0 +1,6 @@
+url: https://github.com/Shaw529/dsh-token-saver
+name: Shaw529/dsh-token-saver
+category: usage
+description:
+  en: 'DeepSeek Harness plugin that aggressively saves tokens without affecting task quality: lossless head/tail truncation of tool results (default), grep-result folding, pressure-triggered dsh-compaction-basic delegation, and an LLM-summary CompactionEngine subclass for the aggressive mode. Saves 97.6% of input tokens on an 8-scenario synthetic suite, with all reductions routed through dsh event flow so model-visible = logged stays intact.'
+  zh: '为 DeepSeek Harness 设计的 token 节省插件：不损失任务效果。默认 conservative 档对工具结果做无损头尾裁剪与 grep 折叠；balanced 档在压力阈值委托 dsh-compaction-basic；aggressive 档以 LLM-summary 引擎子类化替换官方压缩。8 个合成场景累计节省 97.6% 输入 tokens，所有削减走 dsh 事件流，model-visible = logged 不变式仍成立。'

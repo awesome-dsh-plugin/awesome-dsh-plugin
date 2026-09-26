@@ -1,0 +1,6 @@
+url: https://github.com/WuJiaoJue/dsh-herdr-site
+name: WuJiaoJue/dsh-herdr-site
+category: remote
+description:
+  en: 'Teaches Herdr about DSH panes: reports agent working/idle/blocked state — including the blocked state DSH itself lacks — enabling panel jump and --wait. (Herdr integration / agent state display / panel jump)'
+  zh: '让 Herdr 认识 DSH 面板：把 agent 的 working/idle/blocked 状态报给 Herdr（含 DSH 本身没有的 blocked 等待态），支持面板跳转与 --wait。（状态上报 / 状态显示 / 终端集成 / 面板跳转）'

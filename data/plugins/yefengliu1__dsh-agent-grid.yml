@@ -1,0 +1,6 @@
+url: https://github.com/yefengliu1/dsh-agent-grid
+name: yefengliu1/dsh-agent-grid
+category: ui
+description:
+  en: 'Replaces the DSH sidebar with a fixed 2×4 board of eight standing agent seats; each seat shows its own status, latest tool call, reasoning and result, and a settings switch restores the stock sidebar at any time.'
+  zh: 把 DSH 侧栏换成固定的 2×4 八席看板，每席显示自己的状态、最近一次工具调用、思考与结果；设置里的开关可随时切回原生侧栏。

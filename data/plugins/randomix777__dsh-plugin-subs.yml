@@ -1,0 +1,6 @@
+url: https://github.com/randomix777/dsh-plugin-subs
+name: randomix777/dsh-plugin-subs
+category: model
+description:
+  en: OAuth sign-in for 9 subscription LLM providers (Claude, Codex, Grok, Antigravity, OpenRouter, Agnes AI, Qwen, Spark, ERNIE) with zero-config login and usage dashboards.
+  zh: 支持 Claude、Codex、Grok、Antigravity、OpenRouter、Agnes AI、Qwen、星火、文心一言共 9 个订阅账号的 OAuth 登录，零配置直连，内置用量看板。

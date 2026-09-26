@@ -1,0 +1,6 @@
+url: https://github.com/zhy5/dsh-wx-bridge
+name: zhy5/dsh-wx-bridge
+category: remote
+description:
+  en: 'Drive your local DSH from WeChat: a self-hosted iLink bridge over a persistent ACP session (context lives in DSH and is resumable), phone conversations grouped into the desktop workspace, with image recognition, file messages (Excel/Word/PDF, parsed by the agent itself) and voice transcripts. Access defaults to strict (only registered devices are served); the phone channel''s permission preset is wide by design - see the README security section before sharing the bot.'
+  zh: '手机微信驱动本机 DSH：自建 iLink 桥 + 常驻 ACP 原生会话（上下文归 DSH、可 resume），手机会话自动登记进桌面工作区；支持图片识别、直接发文件（Excel/Word/PDF，由会话里的 agent 自行解析）与语音转写。准入默认 strict（只服务已登记设备）；手机通道权限预设按设计放宽，详见 README 安全基线。'

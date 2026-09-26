@@ -1,0 +1,6 @@
+url: https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-memory
+name: w4xxx/dsh-xia-plugins#packages/gameassist-memory
+category: memory
+description:
+  en: 'Single-file persistent companion memory: interests, preferences, tasks, and past works summarized into the system prompt, with read/update tools.'
+  zh: '单文件持久陪伴记忆：把兴趣、偏好、任务与过往作品摘要注入系统提示词，提供读取与更新工具。'

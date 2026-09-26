@@ -1,0 +1,6 @@
+url: https://github.com/tr1v3r/dsh-ltm
+name: tr1v3r/dsh-ltm
+category: memory
+description:
+  en: Local SQLite long-term memory with CJK-aware search, BM25 and character n-gram cosine reranking, deduplication, and lifecycle management.
+  zh: 基于本地 SQLite 的长期记忆，支持 CJK 分词检索、BM25 与字符 n-gram 余弦重排、去重和生命周期管理。

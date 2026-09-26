@@ -1,0 +1,7 @@
+url: https://github.com/Harzva/dsh-pr-guardian
+name: Harzva/dsh-pr-guardian
+category: git
+description:
+  en: 'Authored pull request feedback inbox with paginated GitHub collection, priority favorites, and version-bound local progress shared by the DSH panel and CLI.'
+  zh: '聚合本人创建的 PR 反馈，分页采集 GitHub 评论与审查，支持重点标记和 DSH 面板、CLI 共用的版本化本地处理进度。'
+tarball: https://github.com/Harzva/dsh-pr-guardian/releases/download/v0.2.0-alpha.1/dsh-pr-guardian-0.2.0-alpha.1.tgz

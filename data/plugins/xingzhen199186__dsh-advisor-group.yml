@@ -1,0 +1,6 @@
+url: https://github.com/xingzhen199186/dsh-advisor-group
+name: xingzhen199186/dsh-advisor-group
+category: model
+description:
+  en: 'Consult multiple expert advisor models in a retro CRT chat-group card: one ask_advisors call runs an auto-deepen pipeline (driver deep-question, advisor relay, synthesis conclusion) with SSE streaming, 26 provider presets, a configurable daily quota, stop/resume, and optional advisor tool calling.'
+  zh: '主模型在专业/长尾/高风险或不确定问题上召集多个专家顾问模型，以复古 CRT 聊天组卡片展示：一次 ask_advisors 自动跑满自动深挖流水线（驱动模型追问、顾问接力、综合结论），真流式 SSE、26 个供应商预设、可配置每日配额、停止/继续，以及可选的顾问工具调用。'

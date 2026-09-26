@@ -1,0 +1,6 @@
+url: https://github.com/TuringCorp-net/mosaic-memory-compress
+name: TuringCorp-net/mosaic-memory-compress
+category: memory
+description:
+  en: 'Forgetting-curve in-place dialogue compression for DeepSeek Harness: recent turns stay verbatim, middle turns are structurally dehydrated (zero-LLM), ancient turns fold into a bounded summary pair — unbounded conversations on a bounded memory budget.'
+  zh: 为 DeepSeek Harness 提供基于自然遗忘曲线的就地对话压缩：近期对话逐字保留、中期结构化脱水（零 LLM 成本）、久远对话折叠为有界摘要对——有限记忆预算上的无限对话。

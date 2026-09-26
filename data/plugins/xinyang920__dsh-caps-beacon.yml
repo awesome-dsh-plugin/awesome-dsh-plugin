@@ -1,0 +1,6 @@
+url: https://github.com/xinyang920/dsh-caps-beacon
+name: xinyang920/dsh-caps-beacon
+category: notify
+description:
+  en: 'Turns the MacBook keyboard Caps Lock light into an agent status light: on while the agent works, flashing when it waits for your approval or answer, off when idle.'
+  zh: '把 MacBook 键盘的 Caps Lock 指示灯变成 agent 状态灯：干活时常亮，等你审批或回答时快闪，空闲时熄灭。'

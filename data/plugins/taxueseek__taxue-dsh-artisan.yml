@@ -1,0 +1,6 @@
+url: https://github.com/taxueseek/taxue-dsh-artisan
+name: taxueseek/taxue-dsh-artisan
+category: vision
+description:
+  en: 'Integrated visual creation toolchain for DSH: prompt reverse-engineering and audit optimization plus multi-provider image generation with async background rendering.'
+  zh: 'DSH 一体化视觉创作工具链：提示词反推与审计优化，多供应商生图，支持异步后台出图。'

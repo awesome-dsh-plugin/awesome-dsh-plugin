@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-codex-pet
+name: MichengAI/dsh-codex-pet
+category: fun
+description:
+  en: 'An in-page pet for DSH Web with multi-session task notifications and controls to open tasks, stop turns, and respond to supported approval and question requests.'
+  zh: 'DSH Web 页内宠物，提供多会话任务提醒，可打开任务、停止当前轮次，并处理受支持的审批和问答请求。'

@@ -1,0 +1,6 @@
+url: https://github.com/bainianlaoyao/dsh-llm-api-pool
+name: bainianlaoyao/dsh-llm-api-pool
+category: model
+description:
+  en: Pools several OpenCode Go API keys and hot-switches each request to the least-used one, with official usage and balance lookup plus a graphical settings page.
+  zh: 聚合多个 OpenCode Go API key，把每次请求热切换到用量最低的一个，并提供官方用量/余额查询与设置页图形化管理。
