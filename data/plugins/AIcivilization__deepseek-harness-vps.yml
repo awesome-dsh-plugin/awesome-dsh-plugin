@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/deepseek-harness-vps
+name: AIcivilization/deepseek-harness-vps
+category: remote
+description:
+  en: 'One-command VPS deployment for DeepSeek Harness: a zero-dependency login gateway (scrypt password, HMAC session cookie, rate limiting) that performs DSH session authentication server-side and proxies the native web UI, plus a browser setup wizard behind a one-time token, automatic HTTPS through Caddy, systemd supervision, DSH upgrades pinned to a verified version list with automatic rollback, and optional WireGuard-only access.'
+  zh: '一条命令把 DeepSeek Harness 部署到自有 VPS：零依赖登录网关（scrypt 密码、HMAC 会话 Cookie、限流）在服务端完成 DSH 会话认证并反向代理原生 Web 界面，另有一次性令牌保护的浏览器初始化向导、Caddy 自动 HTTPS、systemd 托管、按已验证版本列表升级 DSH 且失败自动回滚，以及可选的仅 WireGuard 可访问模式。'
