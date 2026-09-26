@@ -1,0 +1,6 @@
+url: https://github.com/YUNmengyuan/Herta-dsh
+name: YUNmengyuan/Herta-dsh
+category: identity
+description:
+  en: 'Installs Herta as a DeepSeek Harness agent: a preset carrying her persona and memory prompt sections, five memory and voice tools, a narrative layer that separates her thinking from what she says, 80 bundled voice clips, and two conversation views that render the session with her own components.'
+  zh: '把 Herta（黑塔）作为 DeepSeek Harness 智能体装入：携带人格与记忆提示词段的 preset、五个记忆与语音工具、区分内心与发言的叙述层、80 条随包语音，以及两个用她自己的组件渲染会话的对话视图。'
