@@ -2,5 +2,5 @@ url: https://github.com/Au1314/dsh-style-hub
 name: Au1314/dsh-style-hub
 category: theme
 description:
-  en: 'Theme studio for the DeepSeek Harness web GUI: eight switchable preset styles, accent and panel-translucency fine-tuning, and host-side wallpapers painted on the first frame.'
-  zh: 'DSH Web GUI 的主题工作室：八套可切换预设、强调色与面板透明度微调、宿主端壁纸，首帧即为所选风格。'
+  en: 'Theme studio for the DeepSeek Harness web GUI: eight switchable preset styles, accent and panel-translucency fine-tuning, host-side wallpapers painted on the first frame, and a one-click fix when the wallpaper-engine glass tint greys out light styles.'
+  zh: 'DSH Web GUI 主题工坊：可切换预设风格、强调色与面板透明度微调、宿主壁纸首帧绘制；wallpaper-engine 玻璃色把浅色主题洗灰时一键改为白色玻璃。'
