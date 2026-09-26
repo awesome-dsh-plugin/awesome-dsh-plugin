@@ -1,0 +1,6 @@
+url: https://github.com/pure-craft/dsh-capability-panel
+name: pure-craft/dsh-capability-panel
+category: ui
+description:
+  en: Manage MCP servers, skills, and tools for your agent — true in-context state (loaded/truncated/evicted) and per-session switches.
+  zh: 一站式管理 MCP 服务器、技能与工具——真实的在上下文状态(已加载/已截断/已挤出),并按会话开关。
