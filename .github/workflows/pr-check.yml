@@ -102,6 +102,53 @@ jobs:
             echo "::error::Entry files must be added as data/plugins/<owner>__<repo>.yml — exactly one level deep. readEntries() globs data/plugins/*.yml and is not recursive, so a file at any other path is never read: the READMEs regenerate without it, every other check passes, and merging the PR lists nothing. Move it with: git mv <file> data/plugins/<owner>__<repo>.yml"
             exit 1
           fi
+      - name: A generated README row that lists nothing is not a submission
+        # The yml is the submission; README.md and README.zh.md are generated
+        # from data/plugins on main after the merge. So a pull request that
+        # changes a generated plugin row and touches no entry file cannot list
+        # anything — and it is not harmless, because everything else passes:
+        #
+        #   #5845 (2026-09-25) was opened as "Add heiheiha798/dsh-plugin-response-window".
+        #   That repository had been listed since 2026-08-27 (#3168), so its yml
+        #   added nothing; and the branch was cut from a main whose entry already
+        #   carried a zh translation the READMEs had not picked up yet, so the
+        #   only diff was a regeneration `main` produced by itself seconds later.
+        #   It went green. Merging it would have told its author their plugin was
+        #   listed while the pull request changed nothing at all.
+        #
+        #   The other shape is the one a first-time contributor hits: the yml was
+        #   written but never staged — `git commit -a` records modifications and
+        #   deletions, not new files — so the commit carries only a regeneration,
+        #   and the submission silently is not one.
+        #
+        # Scoped to lines that are actually plugin rows — `- [ … ](https://github.com/…)`
+        # — so a pull request that edits the hand-written region of the READMEs
+        # (the intro, the sponsor slot) is not caught here: only the generated
+        # section is machine-owned, and only it is evidence that someone meant to
+        # list a plugin.
+        #
+        # The head commit, not the checked-out merge ref: the merge tree is
+        # main + this PR, so a three-dot diff against it would report every entry
+        # main merged since the PR's base as if this PR had changed it.
+        run: |
+          head_sha=${{ github.event.pull_request.head.sha }}
+          git rev-parse -q --verify "$head_sha^{commit}" >/dev/null 2>&1 \
+            || git fetch -q origin "refs/pull/${{ github.event.pull_request.number }}/head" \
+            || { echo "::error::could not resolve the pull request's head commit ($head_sha)"; exit 1; }
+
+          # An entry file changed somewhere: this is a submission, or an edit to
+          # a listed one. Nothing to say.
+          if ! git diff --quiet ${{ github.event.pull_request.base.sha }}...$head_sha -- data/plugins; then
+            exit 0
+          fi
+
+          rows=$(git diff -U0 ${{ github.event.pull_request.base.sha }}...$head_sha -- README.md README.zh.md \
+            | grep -cE '^[+-]- \[[^]]+\]\(https://github\.com/' || true)
+          echo "plugin rows added or removed in the generated READMEs: $rows"
+          if [ "$rows" -gt 0 ]; then
+            echo "::error::This pull request changes a plugin row in the generated READMEs but adds or changes no file under data/plugins/, so merging it would list nothing. Two causes, both fixable: (1) the entry file never made it into the commit — if you created data/plugins/<owner>__<repo>.yml and used 'git commit -a', that new file was untracked and left behind, so run 'git add data/plugins/<owner>__<repo>.yml' and commit again; (2) the plugin is already listed, and what you are seeing is a README that lags its own data — that resolves itself on main and needs nothing from you. The READMEs are regenerated on main after merge: a pull request that only edits them cannot add an entry."
+            exit 1
+          fi
       - name: READMEs match data/plugins
         # Two shapes are accepted, and which one you get is the contributor's
         # choice, not a rule they have to learn:

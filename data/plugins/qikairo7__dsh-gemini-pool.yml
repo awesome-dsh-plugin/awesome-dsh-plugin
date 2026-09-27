@@ -1,0 +1,7 @@
+url: https://github.com/qikairo7/dsh-gemini-pool
+name: qikairo7/dsh-gemini-pool
+category: model
+description:
+  en: 'Multi-account Google Gemini provider: picks the account with the most remaining quota, fails over on 429 with exponential cooldown, probes disabled accounts in the background, and ships a Chinese/English settings page.'
+  zh: '多账号 Google Gemini 提供商：按剩余额度挑选账号，遇 429 指数退避切换，后台探活已禁用账号，附中英双语设置页。'
+tarball: https://github.com/qikairo7/dsh-gemini-pool/releases/download/v0.5.3/dsh-gemini-pool-0.5.3.tgz

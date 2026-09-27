@@ -1,0 +1,6 @@
+url: https://github.com/mengqi1436/DSH-Rtk-rewrite
+name: mengqi1436/DSH-Rtk-rewrite
+category: dev
+description:
+  en: Replaces the web profile's pwsh shell executor with a subclass that rewrites every command through `rtk rewrite` before execution for token savings, running the original command unchanged on any rewrite failure (no equivalent, missing rtk, timeout) and keeping sandbox semantics intact.
+  zh: 将 web profile 的 pwsh shell 执行器替换为执行前经 `rtk rewrite` 透明改写的子类以节省 token，任何改写失败（无等价、rtk 缺失、超时）都原样执行且沙箱语义完整保留。

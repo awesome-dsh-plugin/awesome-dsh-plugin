@@ -1,0 +1,6 @@
+url: https://github.com/DanZai233/dsh-webask
+name: DanZai233/dsh-webask
+category: ui
+description:
+  en: 'Adds a button beside the composer and a global hotkey palette (default mod+shift+k) that hand one-off questions to a web chat instead of into the harness context: the draft is lifted out of the composer, copied to the clipboard and opened in the templated URL. Ships target-site presets (DeepSeek, Kimi, Qwen, 豆包, 腾讯元宝, GLM, Gemini), a local question history that can be re-opened, copied, or inserted back into the composer, and a settings tab for site, URL template, hotkey, clipboard and history.'
+  zh: '在输入框旁加一个按钮，并提供全局快捷键（默认 mod+shift+k）浮层，把一次性的小问题交给网页版对话而不是送进 harness 上下文：草稿会从输入框取出、复制到剪贴板并打开模板 URL。内置目标站点预设（DeepSeek、Kimi、Qwen、豆包、腾讯元宝、GLM、Gemini），带本地问题历史（可重新打开、复制或回填到输入框），以及设置页（站点、URL 模板、快捷键、剪贴板、历史）。'
