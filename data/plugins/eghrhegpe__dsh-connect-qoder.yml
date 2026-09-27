@@ -1,0 +1,6 @@
+url: https://github.com/eghrhegpe/dsh-connect-qoder
+name: eghrhegpe/dsh-connect-qoder
+category: model
+description:
+  en: Brings locally signed-in Qoder models (Qoder CN and Global) into DeepSeek Harness with zero configuration.
+  zh: 将本机已登录的 Qoder 模型（国内版与国际版）零配置接入 DeepSeek Harness。
