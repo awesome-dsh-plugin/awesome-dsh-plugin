@@ -1,0 +1,6 @@
+url: https://github.com/elangan1997-cmyk/dsh-canvas-suite/tree/main/canvas-workbench
+name: elangan1997-cmyk/dsh-canvas-suite#canvas-workbench
+category: ui
+description:
+  en: Pluggable design canvas inside DSH — standalone Excalidraw board, session image tools (edit, erase, background removal, OCR, vectorize, PSD/text rebuild), project asset library, and a Photoshop/Illustrator ⇄ canvas bridge.
+  zh: DSH 内的可插拔设计画布——独立 Excalidraw 画布、会话图片工具（修图、擦除、去背景、OCR、转矢量、PSD/文字重建）、项目素材库，以及 Photoshop/Illustrator ⇄ 画布桥接。
