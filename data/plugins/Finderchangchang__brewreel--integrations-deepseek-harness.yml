@@ -1,0 +1,6 @@
+url: https://github.com/Finderchangchang/brewreel/tree/main/integrations/deepseek-harness
+name: Finderchangchang/brewreel#dsh-brewreel
+category: skill
+description:
+  en: Makes 1080x1920 vertical promo videos from a storyboard JSON with 7 tools (doctor, setup, catalog, guide, validate, render, verify), rendered locally with Remotion.
+  zh: 从分镜 JSON 生成 1080×1920 竖版宣传片，含 7 个工具（doctor、setup、catalog、guide、validate、render、verify），用 Remotion 本地渲染。
