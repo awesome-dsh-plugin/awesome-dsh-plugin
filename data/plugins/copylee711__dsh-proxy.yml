@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-proxy
+name: copylee711/dsh-proxy
+category: tools
+description:
+  en: 'Network proxy settings page for DeepSeek Harness: set a global HTTP(S) proxy with bypass hosts, or give each LLM provider its own proxy or a direct connection; changes apply on save without a restart.'
+  zh: 'DeepSeek Harness 网络代理设置页：配置全局 HTTP(S) 代理及免代理主机，或为单个 LLM 提供商单独指定代理或直连；保存即生效，无需重启。'
