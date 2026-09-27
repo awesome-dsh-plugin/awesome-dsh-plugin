@@ -1,0 +1,6 @@
+url: https://github.com/kangtsang/dsh-worktree-space
+name: kangtsang/dsh-worktree-space
+category: git
+description:
+  en: Per-task Git worktrees across one or more repositories, outside the source tree so sessions run in parallel; finishing merges the branches back, removes the worktrees and files the task's documents.
+  zh: 为每个任务建立独立工作区目录，可包含多个 Git 仓库的 worktree 工作模式，多任务会话可以并行处理互不干扰；结束任务时把各分支合并回去、移除 worktree 并归档任务文档。
