@@ -1,0 +1,6 @@
+url: https://github.com/Astervolans/dsh-literature-search
+name: Astervolans/dsh-literature-search
+category: tools
+description:
+  en: 'PubMed and Google Scholar search tools for an agent: pubmed_search, pubmed_paper and pubmed_related over the official NCBI E-utilities (including elink related-articles), plus scholar_search and scholar_cite with MLA/APA/Chicago/Harvard/Vancouver/BibTeX output. Both backends share one paper shape, and a settings card configures keys, the Scholar backend and limits.'
+  zh: 面向 agent 的 PubMed 与 Google Scholar 检索工具：pubmed_search、pubmed_paper、pubmed_related（官方 NCBI E-utilities，含 elink 相关文献），以及 scholar_search 与 scholar_cite（MLA/APA/Chicago/Harvard/Vancouver/BibTeX 引用格式）。两个后端统一为同一种 paper 结构，并提供设置卡片配置 API key、Scholar 后端与各类上限。
