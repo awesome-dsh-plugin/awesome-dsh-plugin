@@ -1,0 +1,7 @@
+url: https://github.com/ZhaoZeW/dsh-rollback
+name: ZhaoZeW/dsh-rollback
+category: ui
+description:
+  en: 'TRAE-style conversation rollback rebuilt for DSH 0.1.7-rc.2: per-turn file checkpoints restore touched files and truncate the model context in place under the same session id. Adds a /rollback doctor framework-contract self-check, an affected-file diff preview computed against the current on-disk state so it stays correct after a restart, a one-click undo-last action with a Ctrl+Shift+Z shortcut, a setting for whether rolled-back messages stay hidden, and English UI text.'
+  zh: 'TRAE 式「回退到本轮对话发起前」：按轮次建立文件检查点，回滚工作区文件并在同一 session id 下原位截断模型上下文，已适配 DSH 0.1.7-rc.2。新增 /rollback doctor 契约自检、按当前磁盘状态实时计算的受影响文件 diff 预览（重启后依然准确）、一键「回退最近一轮」（快捷键 Ctrl+Shift+Z）、「回退后隐藏已回退消息」开关，以及英文界面文案。'
+tarball: https://github.com/ZhaoZeW/dsh-rollback/releases/latest/download/dsh-rollback.tgz
