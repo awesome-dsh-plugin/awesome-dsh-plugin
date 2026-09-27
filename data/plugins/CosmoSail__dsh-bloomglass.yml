@@ -1,0 +1,6 @@
+url: https://github.com/CosmoSail/dsh-bloomglass
+name: CosmoSail/dsh-bloomglass
+category: theme
+description:
+  en: 'Ten OKLCH Morandi palettes that adapt to light and dark, plus an optional uploaded wallpaper behind frosted glass panels, where surface colours take the configured glass opacity while text and border colours stay opaque; all controls live in one dedicated settings section.'
+  zh: '十套 OKLCH 莫兰迪配色，明暗自适应；可选上传一张壁纸铺满窗口，界面以磨砂玻璃叠上去——表面色按玻璃浓度转为半透明，文字与边框始终保持不透明。所有控制集中在一个独立设置栏。'
