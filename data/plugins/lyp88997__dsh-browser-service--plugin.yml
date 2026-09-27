@@ -1,0 +1,7 @@
+url: https://github.com/lyp88997/dsh-browser-service/tree/main/plugin
+name: lyp88997/dsh-browser-service#plugin
+category: browser
+tarball: https://github.com/lyp88997/dsh-browser-service/releases/download/v0.3.3/dsh-browser-cdp-0.3.3.tgz
+description:
+  en: 'Provider for the DSH browser seam: drives your own headless Chromium over CDP through a single-instance daemon on 127.0.0.1, with Bearer-token auth, a request whitelist and WebSocket-endpoint rewriting, instead of the built-in Electron browser.'
+  zh: 'DSH browser 接缝的 provider：用自建 headless Chromium 经 127.0.0.1 上的单例 CDP 守护进程驱动浏览器，带 Bearer token 鉴权、请求白名单与 WebSocket 地址改写，替代内置 Electron 浏览器。'
