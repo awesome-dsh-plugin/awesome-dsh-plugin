@@ -1,0 +1,6 @@
+url: https://github.com/EIGHTfs/dsh-session-conductor
+name: EIGHTfs/dsh-session-conductor
+category: session
+description:
+  en: 'Session management for DSH: archive/restore, batch & conditional delete, AI auto-rename, interrupted-session auto-resume, workspace grouping, undo last message, repair damaged session logs (seq-gap/EIO/dual-format), value analysis and full-text search — plus plan/closing template injection (system prompt + context).'
+  zh: 'DSH 会话管理增强：归档/恢复、批量与条件删除、AI 自动重命名、中断自动续跑、按工作区分组、撤回最后一条消息、三类损坏日志修复（seq-gap/EIO/双格式）、价值分析与全文搜索——另含方案/收尾模板注入（系统提示词 + 上下文）。'
