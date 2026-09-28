@@ -1,0 +1,12 @@
+url: https://github.com/MengXinSu/floor-limiter
+name: MengXinSu/floor-limiter
+category: session
+description:
+  en: >-
+    Floor-triggered session compaction: counts real user turns on the model surface and compacts
+    older history once they reach a threshold, keeping the newest N turns verbatim and collapsing
+    the rest into one summary. Checks before each turn; a turn that cannot be compacted safely is
+    skipped and retried later.
+  zh: >-
+    楼层触发的会话压缩：统计模型表面上的真实用户楼层，攒够阈值后把更早的历史压成一条摘要，
+    最近 N 层保持原文。每轮开始前检查；本轮压不了就跳过，下一轮重试。
