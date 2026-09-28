@@ -1,0 +1,7 @@
+url: https://github.com/zhouyiqing0304/dsh-my-browser
+name: zhouyiqing0304/dsh-my-browser
+category: browser
+description:
+  en: Drives the browser you are already using - a bundled MV3 extension gives the agent your real cookies, tabs and logins, opens visible windows you can watch and take over, and can snapshot, click, type, screenshot and evaluate JavaScript.
+  zh: 直接操作你正在使用的浏览器：内置 MV3 扩展让智能体沿用你真实的 Cookie、标签页与登录态，窗口可见、可随时接管，并支持页面快照、点击、输入、截图与 JavaScript 求值。
+tarball: https://github.com/zhouyiqing0304/dsh-my-browser/releases/latest/download/dsh-my-browser.tgz
