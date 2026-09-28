@@ -1,6 +1,0 @@
-url: https://github.com/flyhigao/dsh-file-download
-name: flyhigao/dsh-file-download
-category: ui
-description:
-  en: Adds a download button beside the reload control in DSH's document preview toolbar.
-  zh: 在 DSH 文档预览工具栏的刷新按钮旁添加文件下载按钮。
