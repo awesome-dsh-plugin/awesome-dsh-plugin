@@ -1,0 +1,14 @@
+url: https://github.com/MengXinSu/dsh-viya-memory
+name: MengXinSu/dsh-viya-memory
+category: memory
+description:
+  en: >-
+    Local long-term memory whose cards are plain Markdown files in an Obsidian vault you choose, so the
+    graph and backlinks work in Obsidian itself. Seven tools (save, search, read, update, link, forget,
+    stats); links are written into both cards or neither; deleting is two-step and soft by default; a write
+    is refused if the file changed on disk since it was read, and secrets are rejected before they land in a
+    vault that may sync.
+  zh: >-
+    本地长期记忆：卡片是纯 Markdown 文件，存在你自己指定的 Obsidian 库里，图谱和反链在 Obsidian 里直接可用。
+    七个工具（save / search / read / update / link / forget / stats）；关系边两边同时写或都不写；删除默认两步且为软删；
+    文件在读取后被改动过则拒绝覆盖，密钥特征在入库前被拦下。
