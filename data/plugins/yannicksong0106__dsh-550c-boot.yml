@@ -1,0 +1,7 @@
+url: https://github.com/yannicksong0106/dsh-550c-boot
+name: yannicksong0106/dsh-550c-boot
+category: ui
+description:
+  en: 'Full-screen 550C boot intro for DSH: a 4-second simple cut and a 16-second rewrite sequence, skippable by click or Esc, with four phosphor palettes. The host half injects the opening frame while the document is still parsing, so the built-in loading card never shows.'
+  zh: '给 DSH 加一段 550C 全屏开机片头：简易档 4 秒、完整档 16 秒覆写流程，点击或按 Esc 跳过，四套磷光配色。首帧由宿主半边在文档解析阶段注入，DSH 自带的 Loading 卡片不会露脸。'
+tarball: https://github.com/yannicksong0106/dsh-550c-boot/releases/latest/download/dsh-550c-boot.tgz
