@@ -1,0 +1,6 @@
+url: https://github.com/miqian-nomad/dsh-browser-playwright-codex
+name: miqian-nomad/dsh-browser-playwright-codex
+category: browser
+description:
+  en: 'Codex-style browser tool family for DSH: 23 Playwright tools (20 always on, 3 gated) that drive real pages through accessibility snapshots with stable element refs instead of guessed CSS selectors. It runs in its own visible, profile-backed window that stays quiet when minimized, remembers your logins, and stops for sign-ins, CAPTCHAs and native dialogs rather than confirming on your behalf. A URL allowlist, dialog suspension and a CDP method allowlist are mechanism-level and test-pinned, and arbitrary page JavaScript plus raw CDP access stay off by default.'
+  zh: 'DSH 的 Codex 风格浏览器工具族：23 个 Playwright 工具（20 个常驻、3 个闸门），用无障碍快照 + 稳定 ref 操作真实页面，而不是猜 CSS 选择器。它跑在自己的可见窗口里、带独立 profile，你最小化它就安静干活，登录一次一直记得；遇到登录、验证码和原生弹窗会停下来等你，绝不替你「确定」。URL 白名单、弹窗挂起与 CDP 方法白名单是机制级且有测试钉住，执行任意网页 JS 与裸 CDP 访问默认关闭。'
