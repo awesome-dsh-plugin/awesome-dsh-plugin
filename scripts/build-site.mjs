@@ -11,6 +11,7 @@
  * Usage: node scripts/build-site.mjs
  */
 import fs from 'node:fs'
+import { createHash } from 'node:crypto'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
@@ -559,12 +560,13 @@ function buildRows(loc, only, limit) {
 // and it costs a dozen characters of a budget that truncates around sixty.
 const shortName = (name) => (name.includes('/') ? name.slice(name.indexOf('/') + 1) : name)
 
-// One catalog per locale, shared by the homepage and every category page.
-// Category pages pass data-only and the client drops the other rows, so the
-// file is fetched once and then reused from cache. Strings for the card chrome
-// travel with it: they are locale-specific and must not be interpolated into
-// the page script, where an apostrophe would break the string.
-function catalogPayload(loc) {
+// One catalog per page. The homepage needs every category because its chips
+// filter in place; a category page only needs its own rows. Sharing the full
+// file made a small category download the whole list (~2 MB) to throw most of
+// it away. Card-chrome strings travel with the file: they are locale-specific
+// and must not be interpolated into the page script, where an apostrophe
+// would break the string.
+function catalogPayload(loc, only) {
   return {
     install: loc.strings.INSTALL_BTN,
     market: loc.strings.MENU_MARKET,
@@ -573,7 +575,7 @@ function catalogPayload(loc) {
     copy: loc.COPY_TEXT,
     copyLabel: loc.COPY_LABEL,
     dlTitle: loc.strings.P_DOWNLOADS,
-    items: ranked().map((e) => {
+    items: ranked(only).map((e) => {
       const short = shortName(e.name)
       return {
         cat: e.cat,
@@ -592,6 +594,13 @@ function catalogPayload(loc) {
       }
     }),
   }
+}
+
+// The query pins the CDN copy to this build. Pages caches the HTML briefly;
+// an unhashed catalog.json would keep serving the previous list after a deploy.
+function catalogHref(path, json) {
+  const v = createHash('sha256').update(json).digest('hex').slice(0, 8)
+  return `${path}?v=${v}`
 }
 
 // Highest-starred entries in a category, for its meta description. Stars come
@@ -645,6 +654,9 @@ function langRedirect(current) {
 const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
+  const catalog = catalogPayload(loc)
+  const catalogJson = JSON.stringify(catalog)
+  const catalogUrl = catalogHref(loc.urlPath + 'catalog.json', catalogJson)
   let page = master
   page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(jsonld(ORIGIN + loc.urlPath))}</script>`)
   page = page.replace(/(<ol class="dex" id="dex"[^>]*>)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, null, FALLBACK_CARDS)}\n\n  ${b}`)
@@ -662,19 +674,20 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
-    .replaceAll('__CATALOG__', () => loc.urlPath + 'catalog.json')
+    .replaceAll('__CATALOG__', () => catalogUrl)
     // Rendered server-side rather than left at 0 for the client to correct.
     // The counters sit inside the search bar and the line under the hero; going
     // from "0 / 0" to "2662 / 2662" on load widened both and reflowed the row
     // around them, which is what made #count the single largest contributor to
-    // this site's CLS. Same number either way — it just arrives before paint.
+    // this site's CLS. The hero total is the full list. The search counter
+    // starts at the baked slice so a no-JS visitor is not told every plugin is
+    // on the page; the script rewrites it to the full total before first paint.
     .replaceAll('__CARD_COUNT__', () => String(N))
+    .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
-  const catalog = catalogPayload(loc)
-  const catalogJson = JSON.stringify(catalog)
   fs.writeFileSync(loc.out.replace(/index\.html$/, 'catalog.json'), catalogJson)
   console.log(`catalog ${loc.code}: ${catalog.items.length} items, ${(catalogJson.length / 1024).toFixed(0)} KB`)
 }
@@ -689,9 +702,13 @@ const catJsonld = (url, id) => JSON.stringify({
   itemListElement: ordered.filter((e) => e.cat === id).map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 for (const loc of LOCALES) {
+  const catBytes = []
   for (const id of CAT_IDS) {
     const n = ordered.filter((e) => e.cat === id).length
     if (!n) continue
+    const catCatalog = catalogPayload(loc, id)
+    const catCatalogJson = JSON.stringify(catCatalog)
+    const catCatalogUrl = catalogHref(`${loc.urlPath}${id}/catalog.json`, catCatalogJson)
     const url = `${ORIGIN}${loc.urlPath}${id}/`
     const catHreflangs = [
       ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}${id}/">`),
@@ -718,16 +735,24 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
-      .replaceAll('__CATALOG__', () => loc.urlPath + 'catalog.json')
+      .replaceAll('__CATALOG__', () => catCatalogUrl)
       // A category page renders only its own rows, so its counters start from
       // that number, not the site total. See the index block for why these are
-      // server-rendered.
+      // server-rendered. The search counter starts at the baked slice.
       .replaceAll('__CARD_COUNT__', () => String(n))
+      .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, n)))
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
+    fs.writeFileSync(`${outDir}/catalog.json`, catCatalogJson)
+    catBytes.push(catCatalogJson.length)
+  }
+  if (catBytes.length) {
+    const min = Math.min(...catBytes)
+    const max = Math.max(...catBytes)
+    console.log(`category catalogs ${loc.code}: ${catBytes.length} files, ${(min / 1024).toFixed(0)}–${(max / 1024).toFixed(0)} KB`)
   }
 }
 

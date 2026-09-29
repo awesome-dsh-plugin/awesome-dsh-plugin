@@ -90,7 +90,7 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 ::selection{background:var(--cinnabar-soft);color:var(--ink)}
 :focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
-html{scrollbar-color:var(--line-2) transparent}
+html{scrollbar-color:var(--line-2) transparent;scrollbar-gutter:stable}
 body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none;touch-action:manipulation}
 button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
@@ -172,10 +172,10 @@ h1 em{font-style:normal;color:var(--cinnabar)}
 /* ── card grid ── */
 ol.dex{--dex-gap:1.05rem;--dex-min:19rem;list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--dex-min),1fr));gap:var(--dex-gap);padding-block:1.7rem 2.5rem}
 /* Windowed list (#6105). JS adds .virt and positions only the visible cards.
-   Until the catalog arrives the baked cards stay in the grid but hidden, so
-   they don't flash a full first screen and then jump. .legacy is the fetch-failed
-   path, which shows those baked cards and filters them in place. */
-html.js ol.dex:not(.virt):not(.legacy){visibility:hidden}
+   The baked cards stay visible until the catalog arrives. A min-height set
+   before first paint holds the panels and footer where the full list will be,
+   so they don't jump down when the window takes over. .legacy is the
+   fetch-failed path: those baked cards, filtered in place. */
 ol.dex.virt{display:block;position:relative;padding:0;margin-block:1.7rem 2.5rem}
 ol.dex.virt li.card{position:absolute;margin:0}
 li.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.25rem;
@@ -183,7 +183,7 @@ li.card{background:var(--card);border:1px solid var(--line);border-radius:14px;p
 li.card:hover{border-color:var(--line-2);box-shadow:0 3px 5px rgb(43 38 32 / .05),0 14px 34px rgb(43 38 32 / .08);transform:translateY(-2px)}
 li.card:has(.inst[open]){z-index:30}
 li.card .top{display:flex;align-items:baseline;gap:.5rem;min-width:0}
-li.card h3{font-size:.98rem;font-weight:680;letter-spacing:-.01em;overflow-wrap:anywhere;line-height:1.35}
+li.card h3{font-size:.98rem;font-weight:680;letter-spacing:-.01em;overflow-wrap:anywhere;line-height:1.35;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 li.card h3 a{transition:color .15s ease}
 li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
@@ -305,7 +305,7 @@ __AD_HEAD__
     <div class="searchbar">
       <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
       <input id="q" type="search" autocomplete="off" spellcheck="false" name="plugin-search" placeholder="__SEARCH_PH__" aria-label="__SEARCH_PH__">
-      <span class="count" id="count" aria-live="polite">__CARD_COUNT__ / __CARD_COUNT__</span>
+      <span class="count" id="count" aria-live="polite">__FALLBACK_COUNT__ / __CARD_COUNT__</span>
     </div>
     <div class="market">
       <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>
@@ -377,12 +377,63 @@ const urlParams = new URLSearchParams(location.search);
 // visitors and the first paint still have cards, and the document is not
 // thousands of nodes. With JS, catalog.json is the list and only the rows
 // that intersect the viewport stay mounted. `paint` / `refresh` are filled
-// in once that file loads; until then they no-op and the baked cards stay hidden.
+// in once that file loads; until then they no-op and the baked cards stay put.
 document.documentElement.classList.add('js');
 const dex = document.getElementById('dex');
 const count = document.getElementById('count');
 const noresult = document.getElementById('noresult');
 const total = document.getElementById('total');
+// No-JS markup says "24 / N" because only the first screen is in the document.
+// JS shows the whole list, so correct the counter before first paint — the
+// search bar must not reflow when the catalog arrives.
+const pageTotal = total.textContent.trim();
+count.textContent = `${pageTotal} / ${pageTotal}`;
+// Row slots use a fixed ceiling. The title clamps to two lines and the
+// description to three, so a later card cannot be taller than a full one, and
+// the footer can be reserved before the catalog arrives. The extra padding
+// matches the margin .virt applies later; clearing min-height then does not
+// move the footer.
+let seedRowH = 180;
+function linePx(cs, unitless) {
+  const n = parseFloat(cs.lineHeight);
+  if (n) return n;
+  return (parseFloat(cs.fontSize) || 16) * unitless;
+}
+function rowCeiling() {
+  const sample = dex.querySelector('li.card');
+  const root = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  if (!sample) return Math.ceil(12 * root);
+  const cs = getComputedStyle(sample);
+  const h3 = sample.querySelector('h3');
+  const para = sample.querySelector('p');
+  const foot = sample.querySelector('.foot');
+  const pad = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+  const gap = parseFloat(cs.rowGap) || parseFloat(cs.gap) || 0;
+  const h3h = h3 ? linePx(getComputedStyle(h3), 1.35) * 2 : 0;
+  const ph = para ? linePx(getComputedStyle(para), 1.55) * 3 : 0;
+  const fcs = foot ? getComputedStyle(foot) : null;
+  const footPad = fcs ? (parseFloat(fcs.paddingTop) || 0) + (parseFloat(fcs.paddingBottom) || 0) : 0;
+  let footInner = 0;
+  if (foot) for (const el of foot.children) if (el.offsetHeight > footInner) footInner = el.offsetHeight;
+  const border = (parseFloat(cs.borderTopWidth) || 0) + (parseFloat(cs.borderBottomWidth) || 0);
+  let tallest = 0;
+  for (const li of dex.querySelectorAll('li.card')) if (li.offsetHeight > tallest) tallest = li.offsetHeight;
+  return Math.max(tallest, Math.ceil(pad + gap * 2 + h3h + ph + footPad + footInner + border));
+}
+(function reserveList() {
+  seedRowH = rowCeiling();
+  const n = parseInt(pageTotal, 10);
+  if (!n || !dex.clientWidth) return;
+  const root = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  const cs = getComputedStyle(dex);
+  const gap = (parseFloat(cs.getPropertyValue('--dex-gap')) || 1.05) * root;
+  const minCol = (parseFloat(cs.getPropertyValue('--dex-min')) || 19) * root;
+  const cols = Math.max(1, Math.floor((dex.clientWidth + gap) / (minCol + gap)));
+  const rows = Math.ceil(n / cols);
+  const totalH = rows * seedRowH + (rows - 1) * gap;
+  const pad = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+  dex.style.minHeight = (totalH + pad) + 'px';
+})();
 let activeCat = urlParams.get('cat') || 'all';
 let query = (urlParams.get('q') || '').toLowerCase();
 let sortBy = urlParams.get('sort') || 'dl';
@@ -522,7 +573,10 @@ toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(
 // Catalog failed to load: keep the baked cards and filter those. The hero
 // counter stays at the full total the build wrote; this count is the slice.
 function bootLegacy() {
+  paint = () => {};
   dex.classList.add('legacy');
+  dex.style.minHeight = '';
+  dex.style.height = '';
   const items = [...dex.querySelectorAll('li.card')];
   const num = (li, k) => (k in li.dataset ? +li.dataset[k] : null);
   const by = {
@@ -557,7 +611,6 @@ function bootLegacy() {
 }
 
 function bootVirtual(data) {
-  dex.replaceChildren();
   const items = data.items.filter((e) => !fixedCat || e.cat === fixedCat);
   for (const e of items) {
     e.hay = `${e.owner}/${e.short} ${e.desc || ''} ${e.tag}`.toLowerCase();
@@ -569,9 +622,8 @@ function bootVirtual(data) {
   const mounted = new Map();
   let view = [];
   let gen = 0;
-  let rowH = 180;
+  let rowH = seedRowH;
   let lastKey = '';
-  let grown = 0;
   const OVERSCAN = 3;
 
   function hit(e) {
@@ -587,6 +639,7 @@ function bootVirtual(data) {
   function renderCard(item) {
     const li = document.createElement('li');
     li.className = 'card';
+    li.dataset.slug = item.slug;
     const top = document.createElement('div');
     top.className = 'top';
     const h3 = document.createElement('h3');
@@ -701,20 +754,44 @@ function bootVirtual(data) {
       end: Math.min(view.length, endRow * cols),
     };
   }
-  paint = () => {
+  function indexOfSlug(slug) {
+    for (let i = 0; i < view.length; i++) if (view[i].slug === slug) return i;
+    return -1;
+  }
+  paint = (pass = 0) => {
     if (!dex.clientWidth) return;
     const g = geometry();
-    const key = `${gen}|${g.cols}|${Math.round(g.cardW)}|${rowH}|${g.start}|${g.end}`;
+    // A focused card, or one with its install menu open, stays mounted when it
+    // scrolls out of the window. Unmounting it drops keyboard focus to the body.
+    const keep = [];
+    const active = document.activeElement;
+    const focused = active && active.closest ? active.closest('#dex li.card') : null;
+    const focusedSlug = focused ? focused.dataset.slug : '';
+    if (focusedSlug && indexOfSlug(focusedSlug) >= 0) keep.push(focusedSlug);
+    for (const d of dex.querySelectorAll('details.inst[open]')) {
+      const slug = d.closest('li.card')?.dataset.slug;
+      if (slug && indexOfSlug(slug) >= 0 && !keep.includes(slug)) keep.push(slug);
+    }
+    const key = `${gen}|${g.cols}|${Math.round(g.cardW)}|${rowH}|${g.start}|${g.end}|${keep.join(',')}`;
     if (key === lastKey) return;
     lastKey = key;
     dex.classList.add('virt');
+    dex.style.minHeight = '';
     dex.style.height = g.totalH + 'px';
-    const need = new Set();
+    const need = new Set(keep);
     for (let i = g.start; i < g.end; i++) need.add(view[i].slug);
     for (const [slug, node] of mounted) {
       if (!need.has(slug)) { node.remove(); mounted.delete(slug); }
     }
-    for (let i = g.start; i < g.end; i++) {
+    if (focused && !dex.contains(focused)) document.getElementById('q').focus();
+    const place = (node, i) => {
+      const row = Math.floor(i / g.cols);
+      const col = i % g.cols;
+      node.style.top = (row * g.stride) + 'px';
+      node.style.left = (col * (g.cardW + g.gap)) + 'px';
+      node.style.width = g.cardW + 'px';
+    };
+    const mountAt = (i) => {
       const item = view[i];
       let node = mounted.get(item.slug);
       if (!node) {
@@ -722,21 +799,23 @@ function bootVirtual(data) {
         mounted.set(item.slug, node);
         dex.appendChild(node);
       }
-      const row = Math.floor(i / g.cols);
-      const col = i % g.cols;
-      node.style.top = (row * g.stride) + 'px';
-      node.style.left = (col * (g.cardW + g.gap)) + 'px';
-      node.style.width = g.cardW + 'px';
+      place(node, i);
+    };
+    for (let i = g.start; i < g.end; i++) mountAt(i);
+    for (const slug of keep) {
+      const i = indexOfSlug(slug);
+      if (i >= 0 && (i < g.start || i >= g.end)) mountAt(i);
     }
-    // Only grow. A later row can be taller than the one we measured first
-    // (a long name wraps); shrinking would fight that and loop.
+    // Only grow, and keep growing when a newly mounted card is taller. A
+    // lifetime cap let a long title overlap the next row. Each pass adopts the
+    // current max; the card's own height does not depend on the slot, so this
+    // settles immediately. The pass limit only stops a runaway measurement.
     let max = 0;
     for (const node of mounted.values()) if (node.offsetHeight > max) max = node.offsetHeight;
-    if (max > rowH + 1 && grown < 3) {
-      grown++;
+    if (max > rowH + 1 && pass < 4) {
       rowH = max;
       lastKey = '';
-      paint();
+      paint(pass + 1);
     }
   };
   refresh = () => {
@@ -748,28 +827,42 @@ function bootVirtual(data) {
     lastKey = '';
     paint();
   };
+  // Swap only after the window is ready to paint. Clearing first meant a throw
+  // inside render left bootLegacy with an empty list. Observe after that paint
+  // so a failed render never leaves a virtual painter attached to the list.
+  dex.replaceChildren();
+  refresh();
   // Height changes are ours (the window sets it). Only a width change means the
-  // column count changed; reacting to height would repaint forever.
+  // column count changed; reacting to height would repaint forever. Ignore a
+  // few pixels so a classic scrollbar appearing at a column boundary cannot
+  // flip the column count back and forth.
   let lastWidth = dex.clientWidth;
   new ResizeObserver(() => {
     const w = dex.clientWidth;
-    if (w === lastWidth) return;
+    if (Math.abs(w - lastWidth) < 16) return;
     lastWidth = w;
-    rowH = 180;
-    grown = 0;
+    rowH = seedRowH;
     lastKey = '';
     paint();
   }).observe(dex);
   addEventListener('pageshow', () => { lastKey = ''; paint(); });
-  refresh();
 }
 
+const fallbackHTML = dex.innerHTML;
 fetch(dex.dataset.catalog).then((res) => {
   if (!res.ok) throw new Error(String(res.status));
   return res.json();
 }).then((data) => {
   if (!data || !Array.isArray(data.items)) throw new Error('catalog');
-  bootVirtual(data);
+  try {
+    bootVirtual(data);
+  } catch {
+    dex.classList.remove('virt');
+    dex.style.height = '';
+    dex.style.minHeight = '';
+    dex.innerHTML = fallbackHTML;
+    bootLegacy();
+  }
 }).catch(() => bootLegacy());
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
