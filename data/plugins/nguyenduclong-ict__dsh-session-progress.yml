@@ -2,5 +2,5 @@ url: https://github.com/nguyenduclong-ict/dsh-session-progress
 name: nguyenduclong-ict/dsh-session-progress
 category: session
 description:
-  en: 'Session progress tracker: system prompt injection, live % calculation, and a slide-over drawer.'
-  zh: '会话任务进度跟踪：系统提示词注入、实时百分比计算与侧边抽屉面板。'
+  en: 'Session progress tracking for DeepSeek Harness, without digging through the logs: the agent keeps a live nested checklist of the work — from a whole phase down to a single step — and every item carries a weight, so the ring and the % pill in the composer dock row always match reality. Hover it for the current activity, or open the Session Progress tab in the native right sidebar for the goal, the weighted checklist with per-item shares, the next steps and the working notes; when the session ends, the same checklist stands as a clean record of what got done.'
+  zh: '不用再翻日志，也能随时知道 DeepSeek Harness 的会话做到哪一步了：agent 维护一份实时嵌套清单——从整个阶段到单个步骤——每一项都带权重，所以输入框下方 dock 行的进度环与百分比胶囊始终反映真实进度。悬停可看当前活动，或打开原生右侧边栏的 Session Progress 标签页，查看目标、带单项占比的加权清单、后续步骤与工作备注；会话结束时，它就是一份清晰的工作记录。'
