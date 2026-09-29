@@ -2,6 +2,6 @@ url: https://github.com/xswt442-cmd/dsh-xswt-tauriapp/tree/main/plugins/dsh-desk
 name: xswt442-cmd/dsh-xswt-tauriapp#dsh-desktop-app
 category: ui
 description:
-  en: "Installer entry for the dsh-xswt-tauriapp desktop shell, a Tauri desktop shell for DeepSeek Harness: on the first dsh start after installation it downloads this platform's installer from the release, checks it against the release SHA256SUMS before writing it, and opens it with the system installer. It installs nothing itself and adds no UI to dsh."
-  zh: '桌面外壳 dsh-xswt-tauriapp（一个 Tauri 写的 DeepSeek Harness 桌面壳）的安装引导：安装后首次启动 dsh 时，从发布页下载本平台安装包，先比对 SHA256SUMS、校验通过才落盘，再交给系统安装器打开；插件自己不安装任何东西，也不给 dsh 加界面。'
+  en: 'Installer entry for the dsh-xswt-tauriapp desktop shell: on the first dsh start after installation it downloads the installer for this platform; verifies it against SHA256SUMS before writing it to disk; hands it to the system installer to run the installation.'
+  zh: '桌面外壳 dsh-xswt-tauriapp 的安装入口：安装后首次启动 dsh 时下载本平台安装包；比对 SHA256SUMS 通过后写入磁盘；交给系统安装器运行安装。'
 tarball: https://github.com/xswt442-cmd/dsh-xswt-tauriapp/releases/latest/download/dsh-xswt-tauriapp-plugin.tgz
