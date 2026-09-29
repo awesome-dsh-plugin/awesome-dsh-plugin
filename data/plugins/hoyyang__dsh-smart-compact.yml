@@ -1,0 +1,7 @@
+url: https://github.com/hoyyang/dsh-smart-compact
+name: hoyyang/dsh-smart-compact
+category: workflow
+tarball: https://github.com/hoyyang/dsh-smart-compact/releases/download/v0.5.3/dsh-smart-compact-0.5.3.tgz
+description:
+  zh: "DeepSeek Harness 的 Codex 式上下文窗口自动管理：零模型调用的无损换窗引擎，交接锚点任务定向、工作笔记跨压缩存活、归档内容逐字回查，笔记滞后自动 STALE 警示；一键换窗按钮与 /smart-compact 人工命令，三带自动换窗阈值可配，锚点强制脱敏，开箱即用零配置。"
+  en: "Codex-style context window auto-management for DeepSeek Harness: a lossless rollover engine with zero summarization model calls, task-oriented handoff anchors, working notes that survive compaction, verbatim recall of archived windows, and a stale-notes gate that downgrades to an explicit warning instead of vouching for outdated notes. One-click composer button plus /smart-compact command, three-band automatic rollover, mandatory anchor sanitization; works out of the box with zero configuration."
