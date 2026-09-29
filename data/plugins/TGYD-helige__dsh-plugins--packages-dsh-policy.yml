@@ -1,0 +1,6 @@
+url: https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-policy
+name: TGYD-helige/dsh-plugins#dsh-policy
+category: security
+description:
+  en: 'Apply configurable allow, deny, and approval rules to dsh tool calls, including shell command patterns.'
+  zh: '根据可配置的允许、拒绝和审批规则控制 dsh 工具调用，包括对 shell 命令的匹配。'
