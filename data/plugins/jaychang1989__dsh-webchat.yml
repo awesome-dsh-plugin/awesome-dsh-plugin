@@ -1,0 +1,6 @@
+url: https://github.com/jaychang1989/dsh-webchat
+name: jaychang1989/dsh-webchat
+category: browser
+description:
+  en: 'DeepSeek web chat inside DeepSeek Harness: drives chat.deepseek.com in a real browser with your DeepSeek web login (no API billing), and adds a sidebar chat panel plus the webchat_status / webchat_send / webchat_recover / webchat_import / webchat_transfer agent tools; a conversation can be distilled into a task brief and transferred into a new or existing harness session. Maintained fork of xmuwenxiang/dsh-web-chat retargeted at dsh 0.2.x.'
+  zh: '在 DeepSeek Harness 内使用 DeepSeek 网页聊天：用真实浏览器驱动 chat.deepseek.com，复用网页登录（无需 API 额度），提供侧边栏聊天面板与 webchat_status / webchat_send / webchat_recover / webchat_import / webchat_transfer 五个 agent 工具；对话可蒸馏成任务简报，转移到新的或已有的 harness 会话。xmuwenxiang/dsh-web-chat 的 dsh 0.2.x 维护分支。'
