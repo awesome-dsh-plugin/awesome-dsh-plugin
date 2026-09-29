@@ -1,0 +1,6 @@
+url: https://github.com/kyle123740/dsh-message-recall
+name: kyle123740/dsh-message-recall
+category: session
+description:
+  en: 'Adds hover Recall / Delete / Delete-onward actions to every message row: removes content from the model context and the transcript together via durable append-only tombstones, with an empty-content guard so old deletions can never break strict providers.'
+  zh: 给会话里的每条消息加上「撤回 / 删除 / 删除此处及之后」悬浮按钮：以 append-only 墓碑让内容同时从模型上下文与对话界面消失，带空内容兜底，旧删除不会打回严格校验的 provider。
