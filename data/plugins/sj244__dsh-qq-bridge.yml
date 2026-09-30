@@ -1,12 +1,3 @@
-# 提交给 awesome-dsh-plugin 的条目（本站仓库里留一份，方便以后更新描述/分类）。
-#
-# 怎么用：复制到 awesome-dsh-plugin 仓库，路径必须是
-#     data/plugins/sj244__dsh-qq-bridge.yml
-# 然后开 PR。一个 PR 就是一个文件；两个 README 由脚本从 data/plugins/*.yml 生成，**不要手改**。
-# 规范：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
-#
-# 分类依据：同类插件（dsh-qq-onebot-bridge、dsh-im-qq）都在 README 的
-# Notifications & Integrations 一节，对应 category: notify。
 url: https://github.com/sj244/dsh-qq-bridge
 name: sj244/dsh-qq-bridge
 category: notify
