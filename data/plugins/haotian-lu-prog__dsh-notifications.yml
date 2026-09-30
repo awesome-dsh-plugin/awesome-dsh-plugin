@@ -1,0 +1,6 @@
+url: https://github.com/haotian-lu-prog/dsh-notifications
+name: haotian-lu-prog/dsh-notifications
+category: notify
+description:
+  en: 'macOS menu bar status item for DeepSeek Harness: the whale mark plus the number of running agents, a pending question and approval count with Q/S markers, a sweeping attention effect while an event awaits an answer, click-to-focus of the already-open Chrome tab for this harness, and a Notifications page in Settings. Community fork of linbin-mk/dsh-notify covering DSH 0.1.7-rc.2 and 0.2.0-rc.1.'
+  zh: '适用于 macOS 的 DSH 菜单栏状态项：鲸鱼标志与运行中 Agent 数量、待处理提问/审批计数与 Q/S 标记、等待回答时的扫光提示、点击切到已打开的 Chrome 标签页，以及设置面板中的「通知」页；上游 dsh-notify 的社区分支，支持 DSH 0.1.7-rc.2 与 0.2.0-rc.1。'
