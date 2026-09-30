@@ -1,0 +1,6 @@
+url: https://github.com/xiangnan0811/dsh-clinepass
+name: xiangnan0811/dsh-clinepass
+category: model
+description:
+  en: "Connects ClinePass models to DeepSeek Harness through a dedicated settings page with section cards, status badges, and color-coded 5-hour, weekly, and monthly quota meters, in-page key saving, extra accounts that switch on HTTP 429 or 402, model selection, and a /cline command."
+  zh: "把 ClinePass 模型接入 DeepSeek Harness：专属设置页采用分区卡片、状态徽章以及 5 小时、周、月的彩色配额进度条，可在页面内保存密钥，额外账号在 HTTP 429 或 402 时切换，并支持模型选择和 /cline 命令。"
