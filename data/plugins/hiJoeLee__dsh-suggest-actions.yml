@@ -1,5 +1,3 @@
-# 提给 awesome-dsh-plugin 的收录条目，格式照它的 contributing.md。
-# 提 PR 时把这个文件原样放到那个仓库的 data/plugins/hiJoeLee__dsh-suggest-actions.yml。
 url: https://github.com/hiJoeLee/dsh-suggest-actions
 name: hiJoeLee/dsh-suggest-actions
 category: ui
