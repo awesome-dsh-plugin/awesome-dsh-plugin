@@ -1,6 +1,6 @@
-url: https://github.com/ctianye/dsh-gearbox
-name: ctianye/dsh-gearbox
+url: https://github.com/ctianye/dsh_gearbox
+name: ctianye/dsh_gearbox
 category: model
 description:
-  en: Reasoning-effort gear presets for third-party models: 16 vendor/model presets with per-mode custom wire values, written into dsh-llm-pi-ai with pre-write validation and per-rule rejection; per-model switching between OpenAI Chat Completions, OpenAI Responses and Anthropic Messages with automatic route regrouping; plus a composer Optimize button and a settings section that rewrite the input text with a model you pick.
-  zh: 第三方模型的思考档位预设：内置 16 组按「厂家 → 模型」组织的官方档位，支持自定义档位与逐模式传输值，校验后直写 llm-pi-ai 配置；支持按模型在 OpenAI Chat Completions、OpenAI Responses 与 Anthropic Messages 三种协议间切换并自动重新分组路由；输入框提供「优化提示词」按钮，用设置中指定的大模型改写当前内容。
+  en: "Reasoning-effort gear presets for third-party models: 16 vendor/model presets with per-mode custom wire values, written into dsh-llm-pi-ai with pre-write validation and per-rule rejection; per-model switching between OpenAI Chat Completions, OpenAI Responses and Anthropic Messages with automatic route regrouping; plus a composer Optimize button and a settings section that rewrite the input text with a model you pick."
+  zh: "第三方模型的思考档位预设：内置 16 组按「厂家 → 模型」组织的官方档位，支持自定义档位与逐模式传输值，校验后直写 llm-pi-ai 配置；支持按模型在 OpenAI Chat Completions、OpenAI Responses 与 Anthropic Messages 三种协议间切换并自动重新分组路由；输入框提供「优化提示词」按钮，用设置中指定的大模型改写当前内容。"
