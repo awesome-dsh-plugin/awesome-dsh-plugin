@@ -1,5 +1,5 @@
-url: https://github.com/cyh3436332528/dsh-float-chat/tree/main/plugin
-name: cyh3436332528/dsh-float-chat#plugin
+url: https://github.com/cyh3436332528/dsh-float-chat
+name: cyh3436332528/dsh-float-chat
 category: ui
 description:
   en: 'Pops the DSH side chat into a frameless, always-on-top Windows desktop window that can sit over any other application, with its own settings page for appearance, pinning, remembered geometry, opacity, ephemeral threads and cache cleanup.'
