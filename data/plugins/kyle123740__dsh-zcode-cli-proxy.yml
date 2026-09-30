@@ -1,0 +1,6 @@
+url: https://github.com/kyle123740/dsh-zcode-cli-proxy
+name: kyle123740/dsh-zcode-cli-proxy
+category: model
+description:
+  en: 'Relays the ZCode CLI (the client-bundled coding agent) into DeepSeek Harness as a model provider: resident app-server session with Start Plan account injection and per-request OAuth signing, real streaming, image input, session resume, one-shot CLI fallback and an optional HTTP gateway — burns ZCode Coding Plan quota with no API key.'
+  zh: '把 ZCode CLI（客户端自带 agent）接入 DeepSeek Harness 的反代插件：常驻 app-server 会话 + Start Plan 账户注入 + 每请求 OAuth 鉴权，真流式、图片输入、会话续接，另含一次性 CLI 兜底与 HTTP 网关通道，无需 API Key 直接烧 ZCode 计划额度。'
