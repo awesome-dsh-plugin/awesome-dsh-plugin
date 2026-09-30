@@ -1,0 +1,6 @@
+url: https://github.com/yusufameri/dsh-t3-session-ui
+name: yusufameri/dsh-t3-session-ui
+category: ui
+description:
+  en: 'Session-context surfaces ported from T3 Code: a session-row hover card showing machine, git branch, model, agent preset, approval policy and token usage, a status pill covering pending approval, awaiting input, working, error and subagent work, a provider and model chip, a per-session header strip, a lineage breadcrumb, row-menu actions that copy the context or run DSH compaction, and a preference row in DSH Settings for choosing which facts appear. Nothing is added to the composer.'
+  zh: '移植 T3 Code 的会话上下文界面：会话行悬浮卡显示机器、Git 分支、模型、代理预设、审批策略与 token 用量，状态标签覆盖待审批、等待输入、运行中、错误与子代理工作，另有提供方与模型标记、会话头部信息条、血缘面包屑、可复制上下文或执行 DSH 压缩的行菜单操作，以及位于 DSH 设置中用于选择显示哪些事实的偏好行。输入框区域不新增任何元素。'
