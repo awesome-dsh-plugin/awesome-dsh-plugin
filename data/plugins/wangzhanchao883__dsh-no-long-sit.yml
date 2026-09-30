@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-no-long-sit
+name: wangzhanchao883/dsh-no-long-sit
+category: fun
+description:
+  en: 'Desktop pet for DeepSeek Harness. A cat lives in the corner of the Web GUI, can be dragged anywhere with its position remembered, and loops one animated WebP per state (idle, rising, drinking, sleeping). Its first feature is a sit and water reminder: a 30-90 minute focus cycle ends in a centered popup with a triple chime; the later button shows one real sourced sedentary case and one dehydration case out of a built-in library of 17 entries; stopping produces a session report with worked time, completed rounds, successful interruptions, snoozes, suggested drinks and a good/mid/bad grade. The timer and the ledger live in the host half, so refreshing the page never loses a cycle, and the pet only appears while a DSH page is open. Cycle lengths, chime volume, pet opacity and the grade thresholds are configurable on the plugin settings page.'
+  zh: 'DSH 桌宠：猫猫住在 Web GUI 右下角，可拖到任意位置并记住位置，四个状态各一段循环动画（趴着/起身/抱杯喝水/睡着）。第一个功能是久坐与喝水提醒：30-90 分钟的专注周期结束后居中弹窗并响三声提示音；点「再等会」从内置的 17 条真实来源案例里展示 1 条久坐 + 1 条缺水案例；结束时给出本次工作时长、完成轮数、成功中断次数、再等会次数、建议喝水次数与好/中/差评价。计时与账本在宿主侧，刷新页面不丢；桌宠只在 DSH 页面打开时出现。周期时长、提示音音量、桌宠不透明度、评价阈值等都可在插件设置页调整。'
