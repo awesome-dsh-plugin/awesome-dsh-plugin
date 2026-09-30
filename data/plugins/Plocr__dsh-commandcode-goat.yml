@@ -1,0 +1,7 @@
+url: https://github.com/Plocr/dsh-commandcode-goat
+name: Plocr/dsh-commandcode-goat
+category: model
+description:
+  en: 'Command Code subscription tiers (Go / GOAT / Pro / Max) published as `llm-pi-ai` route profiles rather than an adapter: the live /provider/v1/models list and the plan page capability catalog are joined, each model lands on the OpenAI Chat, OpenAI Responses or Anthropic Messages route the gateway''s own supported endpoints call for, switching tier deletes the routes the previous one generated, and the same credential drives five-hour and weekly usage windows, credit balances and a web-search provider.'
+  zh: '把 Command Code 订阅档位（Go / GOAT / Pro / Max）发布为 `llm-pi-ai` 路由配置而非自写适配器：合并 /provider/v1/models 实时列表与套餐页能力目录，每个模型按网关自己声明的 supported endpoints 落到 OpenAI Chat、OpenAI Responses 或 Anthropic Messages 路由，切档时删除上一档生成的路由；同一凭据还提供 5 小时与每周用量窗口、credit 余额与联网搜索供应商。'
+tarball: https://github.com/Plocr/dsh-commandcode-goat/releases/latest/download/dsh-commandcode-goat.tgz
