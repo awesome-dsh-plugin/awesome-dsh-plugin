@@ -1,0 +1,6 @@
+url: https://github.com/songgms/dsh-git-graph
+name: songgms/dsh-git-graph
+category: git
+description:
+  en: 'Git Graph panel for DeepSeek Harness: commit topology, refs, commit details and per-file diffs, alongside the conversation.'
+  zh: 'DeepSeek Harness 的 Git 图谱面板：提交拓扑、引用、提交详情与逐文件差异，与对话同窗显示。'
