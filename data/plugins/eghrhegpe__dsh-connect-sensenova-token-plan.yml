@@ -2,5 +2,5 @@ url: https://github.com/eghrhegpe/dsh-connect-sensenova-token-plan
 name: eghrhegpe/dsh-connect-sensenova-token-plan
 category: usage
 description:
-  en: Shows SenseNova Token Plan credit pools, quota windows and per-model consumption in a Harness Web sidebar panel, and can optionally register an OpenAI-compatible provider from the panel.
-  zh: 在 Harness Web 侧边栏面板显示商汤 Token Plan 的积分池、额度窗口与各模型消耗，并可在面板内选配注册 OpenAI 兼容的推理 provider。
+  en: 'SenseNova Token Plan credit panel rendered as a config card on the Harness Plugins page: per-pool quota windows (5h and weekly), grant balance and per-model consumption from the SenseNova console API, with in-panel login and automatic token renewal. Three opt-in switches, off by default, register SenseNova models and the Xiaohuanxiong upstream as LLM providers and expose an image-generation tool to the agent.'
+  zh: '在 Harness 的 Plugins 页以插件卡显示商汤 SenseNova 控制台的 Token Plan 积分用量：各积分池额度窗口（5 小时与每周）、返赠余额与每模型消耗，支持面板内登录与令牌自动续期。另有三个默认关闭的可选开关，用于把商汤模型与小浣熊上游注册为 DSH 提供方，并向 agent 暴露出图工具。'
