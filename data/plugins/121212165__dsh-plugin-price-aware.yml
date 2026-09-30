@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-price-aware
+name: 121212165/dsh-plugin-price-aware
+category: usage
+description:
+  en: Budget gate and live pricing for the harness: per-model price tables, peak/off-peak, task pre-quotes and balance checks before big moves.

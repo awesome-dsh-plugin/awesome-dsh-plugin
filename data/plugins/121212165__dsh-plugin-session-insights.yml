@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-session-insights
+name: 121212165/dsh-plugin-session-insights
+category: usage
+description:
+  en: Cross-session analytics dashboard: per-day token trends, most expensive sessions and model distribution from real harness data.

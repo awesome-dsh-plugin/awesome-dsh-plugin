@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-error-radar
+name: 121212165/dsh-plugin-error-radar
+category: dev
+description:
+  en: Tool reliability radar over tool-trace sidecars: error rates, failure streaks and p95 latency per tool.

@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-transcript-search
+name: 121212165/dsh-plugin-transcript-search
+category: session
+description:
+  en: Full-text search across archived session transcripts with per-session grouping, snippet clipping and a session_search tool.

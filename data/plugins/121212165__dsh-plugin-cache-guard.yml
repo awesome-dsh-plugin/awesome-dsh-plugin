@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-cache-guard
+name: 121212165/dsh-plugin-cache-guard
+category: dev
+description:
+  en: Prefix-cache health guard: detects prompt-instability spikes in the usage stream and estimates tokens wasted per spike.

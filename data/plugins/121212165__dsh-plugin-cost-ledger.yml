@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-cost-ledger
+name: 121212165/dsh-plugin-cost-ledger
+category: usage
+description:
+  en: Persistent cost ledger for the DeepSeek Harness: per-call pricing into monthly JSONL, monthly reports, CSV export, and an agent-queryable ledger.

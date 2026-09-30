@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-spend-forecast
+name: 121212165/dsh-plugin-spend-forecast
+category: usage
+description:
+  en: Forecast spend from cost-ledger sidecars: daily rate on active days, month-end projection, and days until budget exhaustion.

@@ -1,0 +1,5 @@
+url: https://github.com/121212165/dsh-plugin-obsidian-push
+name: 121212165/dsh-plugin-obsidian-push
+category: docs
+description:
+  en: Push archived transcripts into an Obsidian vault as Markdown notes with YAML frontmatter and content-hash idempotence.
