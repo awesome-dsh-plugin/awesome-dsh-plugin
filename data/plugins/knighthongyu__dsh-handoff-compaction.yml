@@ -2,5 +2,5 @@ url: https://github.com/knighthongyu/dsh-handoff-compaction
 name: knighthongyu/dsh-handoff-compaction
 category: memory
 description:
-  en: 'Context compression with visually configurable token budgets: choose the handoff summary limit and recent-context size in the DSH plugin page, default to 8k + 16k, save across restarts, and keep full history searchable and readable. Friendly to small-context models.'
-  zh: '压缩上下文大小可视化配置：在 DSH 插件页分别设置交接摘要上限和最近上下文预算，默认 8k + 16k，保存后重启仍保留。对小上下文模型友好，长对话压缩后可继续推进任务，完整历史仍可搜索、读取和追溯。'
+  en: 'Context compression for small-context models: visually configure the compressed context budget, default to an 8k handoff + 16k recent context, and keep full history searchable.'
+  zh: '面向小上下文模型的 DSH 上下文压缩插件：压缩大小可视化配置，默认 8k 交接摘要 + 16k 最近上下文，完整历史仍可查询。'
