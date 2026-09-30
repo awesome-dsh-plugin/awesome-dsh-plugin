@@ -1,0 +1,6 @@
+url: https://github.com/apherchin/dsh-windows-session-notification
+name: apherchin/dsh-windows-session-notification
+category: notify
+description:
+  en: "Windows-only cross-session attention notifier: when a session finishes, waits for approval or asks a question while you are not viewing it, it raises an actionable Windows toast that jumps back to that session, plays a tiered sound and updates the taskbar badge. Notice state is kept per session and pruned when a session disappears."
+  zh: "仅 Windows 的跨会话提醒：会话完成、等待审批或向你提问、而你没有在看它时，弹出可点击跳回该会话的 Windows 通知，同时播放分档提示音并更新任务栏角标。未读状态按会话记录，并在会话消失时自动清理。"
