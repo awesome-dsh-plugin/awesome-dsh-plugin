@@ -1,0 +1,6 @@
+url: https://github.com/CCL9295/dsh-novel-platform
+name: CCL9295/dsh-novel-platform
+category: tools
+description:
+  en: "Web novel writing platform: a writing-desk panel (novels, chapters, world bible, outline) with a 7-step worldbuilding wizard, six chapter AI actions steered by bundled writing skills, settings-bible context injection with a consistency checker, 9 novel_* agent tools, and 16 bundled writing skills registered for chat use."
+  zh: "网文写作平台：写作台面板（作品、章节、世界设定集、大纲），含七步世界构建引导、六个由内置写作技能驱动的章节 AI 动作（润色、去AI味、审稿、文风、爽点、设定核查）、设定集常驻上下文、九个 novel_* 智能体工具，以及十六个注册进对话的写作技能。"
