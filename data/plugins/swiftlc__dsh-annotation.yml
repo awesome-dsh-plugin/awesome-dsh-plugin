@@ -1,0 +1,6 @@
+url: https://github.com/swiftlc/dsh-annotation
+name: swiftlc/dsh-annotation
+category: ui
+description:
+  en: Adds text selection annotation tools and annotation chips to the dsh web composer.
+  zh: 为 dsh Web 输入框增加选中文字标注工具和标注 chip。
