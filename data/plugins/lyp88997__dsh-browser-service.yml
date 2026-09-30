@@ -3,5 +3,5 @@ name: lyp88997/dsh-browser-service
 category: browser
 tarball: https://github.com/lyp88997/dsh-browser-service/releases/latest/download/dsh-browser-service.tgz
 description:
-  en: 'Adds the full browser tool surface to DSH (the 33 browser_* tools) by wiring the ctx.browser seam to a self-hosted headless Chromium over CDP: a single-instance daemon bound to 127.0.0.1 with Bearer-token auth, a request-path whitelist and WebSocket-endpoint rewriting, for hosts with no GUI libraries, no Electron and no root.'
-  zh: '为 DSH 挂出完整的浏览器工具面（33 个 browser_* 工具）：把 ctx.browser 接缝接到自管的 headless Chromium（经 127.0.0.1 上的单例 CDP 守护进程，带 Bearer token 鉴权、请求路径白名单与 WebSocket 地址改写），适合没有 GUI 库、没有 Electron、没有 root 的机器。'
+  en: 'Gives DSH the full 33-tool browser surface (ctx.browser seam -> a self-hosted headless Chromium over CDP: one 127.0.0.1 daemon with Bearer-token auth, request-path whitelist and WebSocket rewriting, no root/GUI/Electron needed), plus a web panel — a real page you can click, scroll and type in, operation/console/network logs with one-click cleanup, and a customizable window (border color, transparency, glass) — and two bundled global skills (browser, browser-runtime) that install themselves into $DSH_HOME/skills.'
+  zh: '为 DSH 挂出完整的浏览器工具面（33 个 browser_* 工具）：把 ctx.browser 接缝接到自管的 headless Chromium（经 127.0.0.1 单例 CDP 守护进程，带 Bearer token 鉴权、请求路径白名单与 WebSocket 地址改写，不需要 root / GUI 库 / Electron）；另带一个网页面板——可直接点、滚、打字的实时页面，操作/控制台/网络日志与一键清理，窗口外观（边框色、透明度、玻璃效果）可自定义——外加两份随包全局技能（browser、browser-runtime），装完自动落到 $DSH_HOME/skills。'
