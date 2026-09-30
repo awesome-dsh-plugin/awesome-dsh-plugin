@@ -1,5 +1,5 @@
-url: https://github.com/zangxx66/dsh-prompt-setting        # must match the repo exactly / 必须与仓库完全一致
-name: zangxx66/dsh-prompt-setting                          # link text shown in the list / 列表中显示的链接文字
+url: hhttps://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting        # must match the repo exactly / 必须与仓库完全一致
+name: zangxx66/dsh-prompt-setting#dsh-prompt-setting                          # link text shown in the list / 列表中显示的链接文字
 category: session                              # see the category list below / 见下方分类列表
 description:
   en: 'DeepSeek Harness Default System Prompt Management Plugin: Browse, search, and override the final system prompt assembled into each session round within the Web GUI "Settings".'
