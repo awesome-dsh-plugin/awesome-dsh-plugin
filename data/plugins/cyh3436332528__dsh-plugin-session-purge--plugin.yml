@@ -1,5 +1,5 @@
-url: https://github.com/cyh3436332528/dsh-plugin-session-purge
-name: cyh3436332528/dsh-plugin-session-purge
+url: https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin
+name: cyh3436332528/dsh-plugin-session-purge#plugin
 category: session
 description:
   en: 'Permanently delete a DSH session — not just archive it — cascading over its log directory, projection cache, workspace bookkeeping and child (subagent) sessions. Adds a settings-page panel that groups sessions by workspace with size, age and live/archived/child markers, supports filtering and batch deletion, and confirms each deletion inline below the row.'
