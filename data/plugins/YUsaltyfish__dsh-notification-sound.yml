@@ -1,0 +1,6 @@
+url: https://github.com/YUsaltyfish/dsh-notification-sound
+name: YUsaltyfish/dsh-notification-sound
+category: notify
+description:
+  en: Plays a Windows system sound when the agent opens a question dialog, when a tool asks for permission, and when a conversation turn ends, plus a fish_beep tool to trigger a sound on demand. Custom audio folders are supported.
+  zh: 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
