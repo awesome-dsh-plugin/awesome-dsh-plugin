@@ -1,0 +1,7 @@
+url: https://github.com/YangShen-SWE/dsh-plugin-simple-pet
+name: YangShen-SWE/dsh-plugin-simple-pet
+category: usage
+description:
+  en: A Windows desktop pet for DeepSeek API-key and account usage, showing the last-used route's balance with animated call feedback in DSH.
+  zh: 在 DSH 中统计 DeepSeek API Key 与账号调用，展示最近使用路由的余额，并以动画反馈调用的 Windows 桌宠。
+tarball: https://github.com/YangShen-SWE/dsh-plugin-simple-pet/releases/latest/download/dsh-plugin-simple-pet.tgz
