@@ -1,6 +1,7 @@
 url: https://github.com/Yu-tao-Li/dsh-read-image-view
 name: Yu-tao-Li/dsh-read-image-view
 category: ui
+tarball: https://github.com/Yu-tao-Li/dsh-read-image-view/releases/latest/download/dsh-read-image-view-0.3.3.tgz
 description:
-  en: 'Displays the images read in the conversation (read_image results) in the DSH Web GUI: a Read image row with a default-expanded message-style image card over a PS-style transparency checkerboard, merged read-N-images rows with side-by-side frames for multi-image requests, and an in-page full-resolution lightbox (zoom buttons, mouse wheel, 1:1 original size).'
-  zh: '用于展示对话中读取的图片（read_image 的结果）：在 DeepSeek Harness Web GUI 对话流中以专用 Read image 行呈现，默认展开的消息图片卡（透明棋盘格）+ 多图请求合并成"读取了 N 张图片"并排行 + 页面内全精度放大层（缩放按钮/滚轮/1:1 原始尺寸）。'
+  en: 'Displays read_image results in the DSH Web GUI: a DSH 0.2-compatible Read image row with a default-expanded message-style card over a PS-style transparency checkerboard, merged read-N-images rows within one user request, and an in-page full-resolution lightbox (zoom buttons, mouse wheel, 1:1 original size).'
+  zh: 用于在 DeepSeek Harness Web GUI 展示 read_image 结果：兼容 DSH 0.2 的专用 Read image 行，默认展开消息图片卡（透明棋盘格）+ 同一次请求的多图合并行 + 页面内全精度放大层（缩放按钮/滚轮/1:1 原始尺寸）。
