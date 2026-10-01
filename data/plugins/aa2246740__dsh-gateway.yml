@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-gateway"
+name: "aa2246740/dsh-gateway"
+category: "notify"
+description:
+  en: "Connects a DSH Host to Slack and Feishu using your own bot applications."
+  zh: "使用自建机器人应用，将一个 DSH Host 接入 Slack 和飞书。"
+tarball: "https://github.com/aa2246740/dsh-gateway/releases/download/v0.2.3/dsh-messaging-gateway-0.2.3.tgz"
