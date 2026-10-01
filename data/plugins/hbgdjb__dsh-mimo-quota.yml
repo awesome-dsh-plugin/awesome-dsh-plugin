@@ -1,0 +1,6 @@
+url: https://github.com/hbgdjb/dsh-mimo-quota
+name: hbgdjb/dsh-mimo-quota
+category: usage
+description:
+  en: 'Realtime model usage panel: tokens, cost, requests, trend and composition, with editable pricing.'
+  zh: '模型额度面板：自动统计 Token 用量、消费金额、请求次数与趋势构成，内置可编辑定价。'
