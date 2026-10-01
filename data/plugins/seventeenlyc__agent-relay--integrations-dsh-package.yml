@@ -1,0 +1,7 @@
+url: https://github.com/seventeenlyc/agent-relay/tree/main/integrations/dsh-package
+name: seventeenlyc/agent-relay#agent-relay-dsh
+category: workflow
+description:
+  en: "Cross-session handoff orchestration: six relay_* control tools, silent sidebar session materializer via session/create and session/prompt RPCs, DshHandoffHook for compaction/start and marker triggers, and a bundled agent-relay skill."
+  zh: "跨会话接力编排插件：提供 6 个 relay_* 控制工具、基于 session/create 与 session/prompt RPC 的侧边栏静默会话物化器、监听 compaction/start 与交接标记的自动触发钩子，以及内嵌的 agent-relay 技能。"
+tarball: https://github.com/seventeenlyc/agent-relay/releases/download/v0.1.0/agent-relay-dsh-0.1.0.tgz
