@@ -1,0 +1,6 @@
+url: https://github.com/MashedPotato817/dsh-git-plugin
+name: MashedPotato817/dsh-git-plugin
+category: git
+description:
+  en: 'Git workflow for DeepSeek Harness with five slash commands, four read-only Git tools, pre-commit checks and recoverable stash snapshots.'
+  zh: '为 DeepSeek Harness 提供五个 Git 斜杠命令、四个只读 Git 工具、提交前检查与可恢复的 stash 快照。'
