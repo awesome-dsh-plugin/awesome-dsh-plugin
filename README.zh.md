@@ -2707,7 +2707,7 @@ dsh plugin --profile web add dshmarket
 - [Nono-neko/dsh-browser](https://github.com/Nono-neko/dsh-browser) — DSH Web 与 Desktop 端的内置浏览器：为 DeepSeek Harness (DSH) 提供的 AI 原生浏览器工作区，融合了多标签浏览、实时页面批注、轻量级代码编辑、工作区预览，以及跨网页和桌面的智能助手辅助迭代功能。
 - [omdsh-dev/dsh-browser#packages/browser/bridge-browser](https://github.com/omdsh-dev/dsh-browser/tree/main/packages/browser/bridge-browser) — Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。
 - [OzzyDeng-JunDeng/dsh-keyless-search](https://github.com/OzzyDeng-JunDeng/dsh-keyless-search) — 为内置 web_search 工具注册免密钥搜索提供方：无需 API Key 即可使用，在 Tavily 与 Firecrawl 官方免密钥通道之间自动降级；若设置了 TAVILY_API_KEY 或 FIRECRAWL_API_KEY 会自动采用。另含两个 Bing 抓取后端，默认关闭。
-- [ParticleLight/dsh-browser-plus](https://github.com/ParticleLight/dsh-browser-plus) — 面向 DSH 的可见 Electron 浏览器：共享一个 BrowserWindow，提供隔离任务视图、显式人机交接、快照引用与原生导航工具、操作轨迹、按需页面缩略图，以及 keyed session 恢复，确保标签页切换和关闭可靠。
+- [ParticleLight/dsh-browser-plus](https://github.com/ParticleLight/dsh-browser-plus) — 面向 DSH 的可见 Electron 浏览器：共享一个 BrowserWindow，提供隔离任务视图、显式人机交接、快照引用与原生导航工具、操作轨迹、按需页面缩略图、可靠标签页切换与关闭的 keyed session 恢复，以及按站点清理 Cookie 的登录态维护能力。
 - [PartinGQAQ/dsh-web-search-zhipu](https://github.com/PartinGQAQ/dsh-web-search-zhipu) — GLM(智谱)网页搜索 provider——把 web_search 后端切到智谱 Anthropic 兼容端点的服务端搜索工具,直接复用你现有的 GLM 额度或 Coding Plan,替代 DeepSeek 官方搜索通道,并内置智谱私有响应格式的翻译层。
 - [platonai/dsh-browser4](https://github.com/platonai/dsh-browser4) — 安装 browser4-cli 运行时，并将 Browser4 技能集（browser4-cli、browser4-experience、browser4-plugin、scent-miner）注册到 DSH 技能库，提供面向自主 Agent、智能提取与大规模网页自动化的 AI 原生浏览器引擎。
 - [PyModel/dsh-research-plugins#dsh-mcp-firecrawl](https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-mcp-firecrawl) — 接入 Firecrawl 托管 MCP 服务：免密钥即可使用搜索、抓取与解析（有每日额度），配置 API Key 后解锁完整工具集，含爬取与站点地图。
