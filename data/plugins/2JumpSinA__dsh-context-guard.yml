@@ -1,0 +1,6 @@
+url: https://github.com/2JumpSinA/dsh-context-guard
+name: 2JumpSinA/dsh-context-guard
+category: session
+description:
+  en: 'DSH context-pressure guard: shows session occupancy, warns at 45% and 60% to write the handoff and start a new session, and at 45% auto-drafts the handoff block into your working directory. Registers no tool and injects no prompt, so it costs no context.'
+  zh: 'DSH 上下文守卫：显示会话占用，在 45% 与 60% 提醒你写交接、换新会话，并在 45% 起自动把交接草稿写进你的工作目录。不注册工具、不注入提示词，因此不消耗上下文。'
