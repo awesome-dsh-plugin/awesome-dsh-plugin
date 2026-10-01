@@ -1,0 +1,7 @@
+url: https://github.com/ltmroberthk915/dsh-computer-use
+name: ltmroberthk915/dsh-computer-use
+category: tools
+tarball: https://github.com/ltmroberthk915/dsh-computer-use/releases/latest/download/dsh-computer-use.tgz
+description:
+  en: 'Windows desktop computer use for DeepSeek Harness: 18 computer_* tools drive and read native apps through a C# worker compiled on first use by the compiler that ships with Windows, with Set-of-Marks grounding, UI Automation targeting, batched actions that stop at the first failure, four approval modes, a JSONL audit trail, and a human brake that is announced into the running session rather than discovered on the next turn.'
+  zh: '给 DSH 用的 Windows 桌面操控：18 个 computer_* 工具通过一个 C# worker 驱动并读取原生应用，worker 由 Windows 自带的编译器在首次使用时现场编译；支持 Set-of-Marks 定位、UI Automation 目标、遇错即停的批量动作、四档审批、JSONL 审计，以及会推送进运行中会话（而不是等下一轮才发现）的人为刹车。'
