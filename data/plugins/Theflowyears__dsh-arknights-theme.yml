@@ -1,0 +1,7 @@
+url: https://github.com/Theflowyears/dsh-arknights-theme
+name: Theflowyears/dsh-arknights-theme
+category: theme
+tarball: https://github.com/Theflowyears/dsh-arknights-theme/releases/download/v1.0.1/dsh-arknights-theme-1.0.1.tgz
+description:
+  en: 'Arknights theme for the DSH Web GUI: twelve full-screen wallpapers whose edge blur, feathering and glass opacity are computed per image; ink solved in OKLCH to hold WCAG AA; Rhodes Island iconography throughout; and approval and question cards signed with operator autographs.'
+  zh: '明日方舟主题：12 张整屏壁纸，边缘虚化、羽化与玻璃浓度按每张图分别计算；文字色以 OKLCH 求解并守住 WCAG AA 下限；界面图标换成罗德岛素材；授权卡与选项卡带干员签名。'
