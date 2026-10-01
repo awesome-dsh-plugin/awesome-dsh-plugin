@@ -1,0 +1,6 @@
+url: https://github.com/xiex16070-jpg/dsh-learn
+name: xiex16070-jpg/dsh-learn
+category: skill
+description:
+  en: 'Turns corrections, failures and fixes observed in the session event stream into pending lesson candidates, which the model promotes into ordinary DSH skills; an idle curator archives skills that stop being used. Makes no model calls of its own.'
+  zh: '把会话事件流里出现的纠正、失败与修法记成待确认的候选教训，由模型确认后写成普通的 DSH 技能；闲置时由 curator 归档不再使用的技能。自身不发起任何模型调用。'
