@@ -1,0 +1,6 @@
+url: https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy
+name: 2861292267/DSH-Official-WorkBuddy-Credit-Proxy
+category: model
+description:
+  en: 'Turns every locally signed-in WorkBuddy or CodeBuddy account into one failing-over model pool for DeepSeek Harness: weighted account selection, per-conversation stickiness, in-flight leases, credential and rate-limit circuit breaking, automatic daily check-in, and a card showing live credits plus per-request queue time and output speed.'
+  zh: '把本机已登录的 WorkBuddy / CodeBuddy 账号合并成一条自动故障转移的模型池接入 DSH：加权选号、会话粘性、在途租约、凭据与限流熔断、每日自动签到，卡片显示实时积分与每次请求的排队时长和输出速度。'
