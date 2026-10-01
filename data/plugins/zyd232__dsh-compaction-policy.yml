@@ -2,5 +2,5 @@ url: https://github.com/zyd232/dsh-compaction-policy
 name: zyd232/dsh-compaction-policy
 category: session
 description:
-  en: 'Per-route compaction trigger control for DeepSeek Harness: automatic compaction keeps a large fixed reserve for the model reply, so on a smaller context window it can fire near half-full instead of at the configured ratio; this plugin answers the automatic pressure check first and only lets the native compaction logic run once the configured trigger is reached. It wraps the running compaction engine, so it changes when compaction happens, not what a compaction keeps.'
-  zh: '按 provider/model 控制 DeepSeek Harness 自动压缩的触发时机：自动压缩会为模型回复保留一大块固定余量，窗口不大时就可能半满出头就压缩，而不是按配置的比例；本插件先接管每次自动压力检查，只有达到设定触发点才交回原生压缩逻辑。它包装正在运行的压缩引擎，改变的是压缩发生的时间点，而不是一次压缩保留多少历史。'
+  en: 'Stops DeepSeek Harness from compacting (summarizing) your conversation far too early. By default, compaction can start when a smaller context window is only about half full; this plugin makes it wait until the context reaches the share you set (80% by default), configurable per provider/model. It changes only when compaction happens — what a summary ends up keeping is still DSH’s decision.'
+  zh: '让 DeepSeek Harness 不再过早压缩对话（把早期内容总结掉）。默认行为下，上下文窗口不大的模型（十几万 token 那种）常常在半满出头就开始压缩；装上它之后，压缩会等你设定的比例（默认 80%）到了才发生，并且可以按 provider/model 分别设置。它只改“什么时候压缩”，一次压缩保留哪些内容仍由 DSH 决定。'
