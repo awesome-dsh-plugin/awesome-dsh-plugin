@@ -1,0 +1,6 @@
+url: https://github.com/zyd232/dsh-compaction-policy
+name: zyd232/dsh-compaction-policy
+category: session
+description:
+  en: 'Per-route compaction trigger control for DeepSeek Harness: the built-in automatic compaction reserves a fixed 65,536-token headroom, so on smaller context windows it fires near half-full instead of at the configured ratio; this plugin answers the automatic pressure check first and only lets the native compaction logic run once the configured trigger is reached. It wraps the running compaction engine, so it changes when compaction happens, not what a compaction keeps. Verified on DSH 0.2.0-rc.2.'
+  zh: '按 provider/model 控制 DeepSeek Harness 自动压缩的触发时机：原生自动压缩固定预留 65536 token 余量，窗口不大时会在半满出头就压缩，而不是按配置的比例；本插件先接管每次自动压力检查，只有达到设定触发点才交回原生压缩逻辑。它包装正在运行的压缩引擎，改变的是压缩发生的时间点，而不是一次压缩保留多少历史。已在 DSH 0.2.0-rc.2 上验证。'
