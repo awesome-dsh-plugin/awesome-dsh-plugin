@@ -1,0 +1,6 @@
+url: https://github.com/acdsh4869/dsh-DeepSeek-chat
+name: acdsh4869/dsh-DeepSeek-chat
+category: ui
+description:
+  en: 'Adds a native sidebar menu item in DSH that opens chat.deepseek.com in a standalone browser window with persistent login, and supports bidirectional text selection transfer between DSH and the web page.'
+  zh: '在 DSH 左侧边栏添加原生菜单项，一键打开 chat.deepseek.com 独立窗口（登录态持久化），支持 DSH 与网页端双向划词互传。'
