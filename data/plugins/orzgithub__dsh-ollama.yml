@@ -1,0 +1,6 @@
+url: https://github.com/orzgithub/dsh-ollama
+name: orzgithub/dsh-ollama
+category: model
+description:
+  en: Use local Ollama in DSH with Ollama native API and params support.
+  zh: 在DSH中使用带有原生API和参数设置的Ollama。
