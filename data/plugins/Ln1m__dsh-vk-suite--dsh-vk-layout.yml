@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-vk-suite/tree/main/dsh-vk-layout
+name: Ln1m/dsh-vk-suite#dsh-vk-layout
+category: ui
+description:
+  en: 'Layout shell that hosts the left and right column tabs, the settings page and overlay seats.'
+  zh: '布局骨架：承载左栏与右栏 Tab、设置页与浮层座位。'

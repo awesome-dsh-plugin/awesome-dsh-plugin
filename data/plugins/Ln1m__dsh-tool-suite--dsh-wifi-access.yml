@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-tool-suite/tree/main/dsh-wifi-access
+name: Ln1m/dsh-tool-suite#dsh-wifi-access
+category: remote
+description:
+  en: 'Host half of mobile access: a reverse proxy on port 3081 plus a status query tool.'
+  zh: '移动端访问 host 侧：3081 反代加状态查询工具。'
