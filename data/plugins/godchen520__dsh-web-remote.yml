@@ -2,5 +2,5 @@ url: https://github.com/godchen520/dsh-web-remote
 name: godchen520/dsh-web-remote
 category: remote
 description:
-  en: 'Access DSH from your phone or anywhere: Cloudflare Quick Tunnel public link, LAN HTTP/HTTPS direct access with an auto-generated self-signed certificate, token auth, gzip compression, a floating phone-icon panel with QR codes, configurable public URL and LAN port, and WeChat / Feishu / Telegram bot channels with per-channel health monitoring and session-completion push.'
-  zh: 手机/外网远程访问 DSH：Cloudflare Quick Tunnel 公网链接、局域网 HTTP/HTTPS 直连（自动生成自签名证书）、token 鉴权、gzip 压缩、常驻手机图标面板（一键复制/二维码）、可配置公网链接与局域网端口，以及微信 / 飞书 / Telegram 机器人通道，支持分通道健康监测与会话完成推送。
+  en: 'Access DSH from your phone or anywhere: Cloudflare Quick Tunnel public link, LAN HTTP/HTTPS direct access with an auto-generated self-signed certificate, token auth, gzip compression, a floating phone-icon panel with QR codes, configurable public URL and LAN port, and WeChat / Feishu / Telegram bot channels with per-channel health monitoring and session-completion push. Targets DSH 0.2.x (also works on 0.1.2-rc.1+).'
+  zh: 手机/外网远程访问 DSH：Cloudflare Quick Tunnel 公网链接、局域网 HTTP/HTTPS 直连（自动生成自签名证书）、token 鉴权、gzip 压缩、常驻手机图标面板（一键复制/二维码）、可配置公网链接与局域网端口，以及微信 / 飞书 / Telegram 机器人通道，支持分通道健康监测与会话完成推送。适配 DSH 0.2.x（0.1.2-rc.1+ 亦可用）。
