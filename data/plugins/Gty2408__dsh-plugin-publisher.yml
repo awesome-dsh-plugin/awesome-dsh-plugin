@@ -1,0 +1,5 @@
+url: https://github.com/Gty2408/dsh-plugin-publisher
+name: Gty2408/dsh-plugin-publisher
+category: dev
+description:
+  en: 'Publish a DSH plugin to GitHub and submit it to the plugin marketplace, from a settings page inside DSH. Validates the manifest, initialises the repository, creates the GitHub repo, pushes, and opens the listing pull request.'
