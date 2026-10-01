@@ -1,0 +1,58 @@
+# Submission template for awesome-dsh-plugin
+#
+# WHERE THIS GOES
+#   In a fork of https://github.com/awesome-dsh-plugin/awesome-dsh-plugin, create
+#   the file:
+#
+#       data/plugins/<owner>__<repo>.yml
+#
+#   The filename uses a DOUBLE UNDERSCORE between owner and repo. For example,
+#   if your repository is https://github.com/gty/dsh-word-translate then the
+#   file is:
+#
+#       data/plugins/gty__dsh-word-translate.yml
+#
+#   Do NOT edit either README in that repo. They are generated from
+#   data/plugins/*.yml and regenerated on main after your PR merges.
+#
+# ---------------------------------------------------------------------------
+# COPY EVERYTHING BELOW THIS LINE INTO THE NEW .yml FILE
+# ---------------------------------------------------------------------------
+
+url: https://github.com/Gty2408/dsh-word-translate
+name: Gty2408/dsh-word-translate
+category: ui
+description:
+  en: 'Right-click selected English in the DSH Web UI for a bundled offline dictionary (part of speech, phonetics, Collins rating, exam tags and frequency rank), a context-aware AI translation, and speech playback. Translations are saved to a searchable, draggable history panel that doubles as a persistent cache.'
+  zh: '在 DSH Web 界面里选中英文右键：内置离线词典（词性、音标、柯林斯星级、考试标签、词频排名）、结合上下文的 AI 翻译、语音朗读。翻译结果自动存进可搜索、可拖动的记录浮层，同时充当持久缓存。'
+
+# ---------------------------------------------------------------------------
+# NOTES — read before submitting, then delete this comment block
+# ---------------------------------------------------------------------------
+#
+# 1. Replace OWNER/REPO in BOTH `url` and `name` with your real repository.
+#    The `url` must match the repository exactly, or CI rejects it.
+#
+# 2. `category` — `ui` is correct here. The full valid set is:
+#      agi ui usage theme model identity session memory tools wsl browser
+#      vision voice docs skill workflow git notify dev security remote
+#      market fun
+#    Do NOT use `theme` — that category is reserved for themes/skins and is
+#    routed into the market's dedicated Themes tab.
+#
+# 3. The `en` value is QUOTED. A description containing ": " must be quoted or
+#    YAML parses it as a nested key and CI fails. This one has none, but quoting
+#    is harmless and protects against later edits.
+#
+# 4. Descriptions must be ACCURATE — maintainers check claims against the code.
+#    Everything asserted above is verifiable in this repository:
+#      - offline dictionary: data/dict.json (26,974 entries, built from ECDICT)
+#      - Collins rating / exam tags / frequency: lib/dictionary.js
+#      - context-aware AI translation: lib/index.js
+#      - speech playback: lib/client.js (SpeechSynthesis)
+#      - searchable draggable history: lib/client.js + lib/history.js
+#    Do not add superlatives or marketing words; the guide explicitly forbids
+#    them ("no superlatives or marketing").
+#
+# 5. `description.zh` is optional — a maintainer will add it if missing. It is
+#    included here because this plugin is written for Chinese-speaking learners.
