@@ -2,5 +2,5 @@ url: https://github.com/Mvyvn/dsh-desktop-notify
 name: Mvyvn/dsh-desktop-notify
 category: notify
 description:
-  en: Sends Windows toast or Linux D-Bus desktop notifications for DSH agent events (task completion, questions, denied approvals, settled subagents/goals/jobs), silences only the session you are currently viewing, and jumps back to that session on click.
-  zh: 为 DSH 的任务完成、等待输入、审批被拒、后台子代理/目标/任务结算等事件发送 Windows Toast 或 Linux D-Bus 桌面通知，只静默你正在查看的那个会话，点击通知可跳回该会话。
+  en: Notifies you about 11 configurable DSH agent events (task completion, questions, denied approvals, background subagents/goals/jobs, team tasks, context compaction, triggered schedules, plugin startup and permission changes) as browser Web Notifications through a bundled service worker, falling back to Windows toast or Linux D-Bus, with three silence levels and click-to-open.
+  zh: 为 11 类可配置的 DSH agent 事件（任务完成、提问、审批被拒、后台子代理/目标/任务、团队任务、上下文压缩、定时任务触发、插件挂载、权限变更）发送桌面通知，优先走自带 Service Worker 的浏览器 Web Notification，降级到 Windows Toast 或 Linux D-Bus，支持三档静默与点击跳转。
