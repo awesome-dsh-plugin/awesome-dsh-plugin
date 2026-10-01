@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-skillhub"
+name: "aa2246740/dsh-skillhub"
+category: "skill"
+description:
+  en: "Browses and manages user skills already on disk in DSH and supported agent home directories."
+  zh: "浏览和管理 DSH 及受支持 Agent 主目录中已有的用户技能。"
+tarball: "https://github.com/aa2246740/dsh-skillhub/releases/download/v1.0.4/dsh-skillhub-1.0.4.tgz"
