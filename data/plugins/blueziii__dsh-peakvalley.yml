@@ -1,0 +1,6 @@
+url: https://github.com/blueziii/dsh-peakvalley
+name: blueziii/dsh-peakvalley
+category: ui
+description:
+  en: 'Composer-dock badge showing DeepSeek peak/off-peak pricing on a China-holiday-aware Beijing-time calendar (off-peak costs half the peak rate); auto-hides for non-DeepSeek models and cycles seven readouts on click.'
+  zh: '输入栏下方显示峰谷时段徽标：按中国法定节假日日历计算北京时间峰谷（空闲时段价格为高峰一半），非 DeepSeek 模型自动隐藏，点击循环切换 7 种显示内容。'
