@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-compact-saviour"
+name: "aa2246740/dsh-compact-saviour"
+category: "session"
+description:
+  en: "Uses a dedicated model for context compaction rescue and adds manual compaction to the native context popup."
+  zh: "使用专用模型处理上下文压缩恢复，并在原生上下文弹窗提供手动压缩。"
+tarball: "https://github.com/aa2246740/dsh-compact-saviour/releases/download/v0.2.6/dsh-compact-saviour-0.2.6.tgz"
