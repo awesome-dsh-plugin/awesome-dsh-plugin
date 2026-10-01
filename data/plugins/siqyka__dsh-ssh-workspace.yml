@@ -1,0 +1,6 @@
+url: https://github.com/siqyka/dsh-ssh-workspace
+name: siqyka/dsh-ssh-workspace
+category: security
+description:
+  en: Use a directory on an SSH host as a DSH workspace — hosts management, directory browser, five agent tools.
+  zh: 通过SSH方式，将远程主机的文件夹当成DSH的工作区，可以在本地DSH控制远程主机工作目录，不需要手动同步、不需要挂载驱动、不需要装任何第三方文件系统
