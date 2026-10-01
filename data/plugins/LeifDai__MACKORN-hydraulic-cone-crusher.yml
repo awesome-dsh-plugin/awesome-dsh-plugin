@@ -1,0 +1,6 @@
+url: https://github.com/LeifDai/MACKORN-hydraulic-cone-crusher
+name: LeifDai/MACKORN-hydraulic-cone-crusher
+category: tools
+description:
+  en: 'Cone crusher selection and crushing-plant design for MACKORN NH/NS single-cylinder hydraulic cone crushers: requirement-form intake, equipment selection, plant configuration, proposal generation, product-size simulation and field-data calibration. 19 tools, 6 skills, an MCP server, no runtime dependencies.'
+  zh: 'MACKORN NH/NS 单缸液压圆锥破碎机的选型与破碎筛分生产线设计：需求表录入、设备选型、整线配置、方案书生成、产品粒度仿真与实测标定。19 个工具、6 个技能、一个 MCP 服务器，零运行时依赖。'
