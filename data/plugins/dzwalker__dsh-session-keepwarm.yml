@@ -1,0 +1,6 @@
+url: https://github.com/dzwalker/dsh-session-keepwarm
+name: dzwalker/dsh-session-keepwarm
+category: session
+description:
+  en: 'Keeps the most recently used sessions resident in the browser so switching back reuses the already loaded history instead of re-reading it; the number of resident sessions is configurable and the plugin can be switched off.'
+  zh: '让浏览器最近用过的会话保持常驻：切走再切回来直接复用已加载的历史、不再重新读取；常驻数量可配置，并可整体关闭。'
